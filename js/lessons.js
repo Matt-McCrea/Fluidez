@@ -102,6 +102,21 @@
     return items;
   }
 
+  // Verbs worth showing as full conjugation tables for a tense — the common
+  // ones that are ACTUALLY irregular in that tense (engine-checked, so it never
+  // shows a "regular" verb under the irregulars tabs).
+  var IRR_CANDIDATES = ['ser', 'estar', 'ir', 'haber', 'tener', 'hacer', 'poder',
+    'querer', 'decir', 'venir', 'poner', 'saber', 'salir', 'dar', 'ver',
+    'conocer', 'pedir', 'dormir', 'volver', 'pensar', 'jugar'];
+  function isIrregularInTense(inf, tk) {
+    var v = E.verbByInf(inf); if (!v) return false;
+    var twin = { inf: v.inf, en: v.en, type: v.type };
+    return E.conjugate(v, tk).join('|') !== E.conjugate(twin, tk).join('|');
+  }
+  function irregularsFor(tk) {
+    return IRR_CANDIDATES.filter(function (inf) { return isIrregularInTense(inf, tk); }).slice(0, 8);
+  }
+
   // ---- doc → lesson ---------------------------------------------------------
   function tenseLesson(doc, level) {
     var tk = doc.key;
@@ -111,11 +126,13 @@
       { h: isSimple ? 'The endings' : 'Model conjugation', html: endingsTable(tk) },
       { h: 'When to use it', html: '<ul>' + doc.when.map(function (w) { return '<li>' + w + '</li>'; }).join('') + '</ul>' }
     ];
+    var irr = irregularsFor(tk);
     return {
       id: tk, level: level, title: doc.title, summary: doc.summary,
       sections: sections,
       pitfalls: doc.irregulars || [],
       examples: doc.examples || [],
+      conjTabs: irr.length ? { tense: tk, verbs: irr } : null,   // tabbed conjugations
       recall: recallFor(tk, doc.title.split(' (')[0])
     };
   }

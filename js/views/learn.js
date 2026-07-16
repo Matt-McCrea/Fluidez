@@ -6,7 +6,31 @@
  * repetition so the *concept* resurfaces on later days.
  * ========================================================================== */
 window.StageLearn = (function () {
-  var UI = window.UI, S = window.SRS, C = window.Checker;
+  var UI = window.UI, S = window.SRS, C = window.Checker, E = window.ENGINE;
+
+  // One verb conjugated in one tense: a two-column (person, form) table.
+  function verbTable(inf, tk) {
+    var v = E.verbByInf(inf); if (!v) return '';
+    var persons = E.personsFor(tk), forms = E.conjugate(v, tk);
+    var html = '<table class="conj-table"><thead><tr><th></th><th>' + inf + '</th></tr></thead><tbody>';
+    persons.forEach(function (p, i) { html += '<tr><td class="person">' + p + '</td><td>' + forms[i] + '</td></tr>'; });
+    return html + '</tbody></table>';
+  }
+  // A tabbed widget: [{label, html}]. First tab shown by default.
+  function tabsWidget(items) {
+    var wrap = UI.el('div', 'tabs'), bar = UI.el('div', 'tab-bar'), body = UI.el('div', 'tab-body');
+    items.forEach(function (it, i) {
+      var b = UI.el('button', 'tab-btn' + (i === 0 ? ' active' : ''), it.label); b.type = 'button';
+      b.addEventListener('click', function () {
+        Array.prototype.forEach.call(bar.children, function (c) { c.classList.remove('active'); });
+        b.classList.add('active'); body.innerHTML = it.html;
+      });
+      bar.appendChild(b);
+    });
+    body.innerHTML = items.length ? items[0].html : '';
+    wrap.appendChild(bar); wrap.appendChild(body);
+    return wrap;
+  }
 
   function contrastTable(rows) {
     var html = '<table class="contrast-table"><thead><tr><th>Español</th><th>English</th><th></th></tr></thead><tbody>';
@@ -42,6 +66,12 @@ window.StageLearn = (function () {
         ex.appendChild(UI.el('div', 'ex', '<span class="ex-es">' + e.es + '</span><span class="ex-en">' + e.en + '</span>'));
       });
       wrap.appendChild(ex);
+    }
+    if (l.conjTabs && l.conjTabs.verbs.length) {   // irregular conjugations under tabs
+      wrap.appendChild(UI.el('h3', null, 'Irregular verbs in this tense (tap each)'));
+      wrap.appendChild(tabsWidget(l.conjTabs.verbs.map(function (inf) {
+        return { label: inf, html: verbTable(inf, l.conjTabs.tense) };
+      })));
     }
     return wrap;
   }
