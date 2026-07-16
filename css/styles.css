@@ -337,3 +337,9 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
   .grammar-index { position:static; flex-direction:row; flex-wrap:wrap; max-height:none; }
   .grammar-link { flex:0 0 auto; }
 }
+
+/* ---- lesson catalogue (collapsible vocab/verb lists in progress) ---- */
+.catalog-more { margin:6px 0 4px; }
+.catalog-more > summary { cursor:pointer; font-size:.95rem; color:var(--muted); text-transform:uppercase;
+  letter-spacing:.05em; font-weight:700; padding:8px 0; }
+.catalog-more[open] > summary { color:var(--text); }
