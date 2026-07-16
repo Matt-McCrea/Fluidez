@@ -30,23 +30,38 @@ window.Session = (function () {
   // progress in order, one per session; finish them all and it rotates as
   // review). Everything else is gated to your current level — you only meet
   // passages/cloze/writing built from grammar you've been taught.
+  function lessonById(id) {
+    var lessons = window.GRAMMAR_LESSONS || [];
+    for (var i = 0; i < lessons.length; i++) if (lessons[i].id === id) return lessons[i];
+    return null;
+  }
+
   function buildContext() {
     var day = dayNumber();
-    var pr = window.Profile ? window.Profile.params() : { unlockAll: false, produceStyle: 'full' };
+    var pr = window.Profile ? window.Profile.params() : { name: 'standard', unlockAll: false, produceStyle: 'full' };
+    var prog = loadProg();
     var lessons = window.GRAMMAR_LESSONS || [];
-    var studied = loadProg().studied || {};
+    var studied = prog.studied || {};
 
-    var lesson = null;
-    for (var i = 0; i < lessons.length; i++) {
-      if (!studied[lessons[i].id]) { lesson = lessons[i]; break; }
+    var focus, lesson = null, level;
+
+    if (pr.name === 'beginner' && window.Curriculum) {
+      // paced path: grammar/vocab/verb/practice days, grammar spaced out
+      var seq = window.Curriculum.seq();
+      var di = prog.beginnerDay || 0;
+      focus = seq[Math.min(di, seq.length - 1)] || { type: 'practice' };
+      if (focus.type === 'grammar') lesson = lessonById(focus.id);
+      level = 1;
+      lessons.forEach(function (l) { if (studied[l.id]) level = Math.max(level, l.level || 1); });
+      if (lesson) level = Math.max(level, lesson.level || 1);
+    } else {
+      // standard / refresher: a grammar lesson every session (next unstudied)
+      for (var i = 0; i < lessons.length; i++) { if (!studied[lessons[i].id]) { lesson = lessons[i]; break; } }
+      if (lesson) { level = lesson.level || 1; }
+      else { lesson = lessons[day % Math.max(1, lessons.length)] || null; level = 99; }
+      focus = lesson ? { type: 'grammar', id: lesson.id } : { type: 'practice' };
+      if (pr.unlockAll) level = 99;            // refresher: all content from day one
     }
-    var level;
-    if (lesson) { level = lesson.level || 1; }
-    else {                                     // syllabus complete → rotate, all levels open
-      lesson = lessons[day % Math.max(1, lessons.length)] || null;
-      level = 99;
-    }
-    if (pr.unlockAll) level = 99;              // refresher: all content from day one
     function atLevel(arr) { return arr.filter(function (x) { return (x.level || 1) <= level; }); }
 
     var passages = atLevel(window.PASSAGES || []);
@@ -73,6 +88,8 @@ window.Session = (function () {
     return {
       day: day,
       level: level,
+      profile: pr.name,
+      focus: focus,
       dateLabel: new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' }),
       lesson: lesson,
       passage: passages.length ? passages[day % passages.length] : null,
@@ -80,6 +97,27 @@ window.Session = (function () {
       writeTasks: produce,
       results: {}
     };
+  }
+
+  // Short label for a day's teaching focus (used on the intro + complete cards).
+  var CAT_LABEL = {
+    greetings: 'Greetings', people: 'People & family', food: 'Food & drink', home: 'Home',
+    time: 'Time & days', numbers: 'Numbers', colors: 'Colours', places: 'Places',
+    travel: 'Travel', body: 'The body', nature: 'Nature & weather', adjectives: 'Describing things',
+    weather: 'Weather', clothing: 'Clothing', animals: 'Animals', questions: 'Question words',
+    connectors: 'Linking words', common: 'Everyday words', school: 'School', health: 'Health',
+    shopping: 'Shopping', sports: 'Sports', kitchen: 'Kitchen', work: 'Work'
+  };
+  function focusLabel(ctx) {
+    var f = ctx.focus || { type: 'grammar' };
+    if (f.type === 'grammar') return ctx.lesson ? ctx.lesson.title : 'A grammar lesson';
+    if (f.type === 'vocab') return 'New words · ' + ((CAT_LABEL[f.cat] || f.cat) + (f.part ? ' ' + f.part : ''));
+    if (f.type === 'verbs') return 'New verbs · ' + f.verbs.slice(0, 3).join(', ') + (f.verbs.length > 3 ? '…' : '');
+    return 'Practice & review day';
+  }
+  function focusVerb(ctx) {           // the verb used in the intro checklist line
+    var f = ctx.focus || {};
+    return f.type === 'vocab' ? 'Learn' : (f.type === 'verbs' ? 'Meet' : (f.type === 'practice' ? 'Consolidate' : 'Learn'));
   }
 
   // ---- progress / streak -------------------------------------------------
@@ -112,12 +150,15 @@ window.Session = (function () {
     wrap.appendChild(UI.el('p', 'muted', 'A short, complete workout for your Spanish — review, a grammar lesson, reading, applying it in context, and writing your own. About 15–20 minutes.'));
     if (p.streak) wrap.appendChild(UI.el('div', 'streak-badge', '🔥 ' + p.streak + '-day streak'));
 
+    var learnIco = ctx.focus && ctx.focus.type === 'vocab' ? '📇'
+      : (ctx.focus && ctx.focus.type === 'verbs' ? '🔤'
+      : (ctx.focus && ctx.focus.type === 'practice' ? '🔁' : '📖'));
     var list = UI.el('ol', 'stage-list');
     var meta = [
       ['🔁', 'Repasar', 'Review what\'s due (and meet a few new words)'],
-      ['📖', 'Aprender', ctx.lesson ? ctx.lesson.title : 'A grammar lesson'],
+      [learnIco, 'Aprender', focusLabel(ctx)],
       ['👂', 'Comprender', ctx.passage ? '“' + ctx.passage.title + '”' : 'Read & understand'],
-      ['🧩', 'Aplicar', 'Use the grammar in real sentences'],
+      ['🧩', 'Aplicar', 'Use what you know in real sentences'],
       ['✍️', 'Producir', 'Write your own Spanish']
     ];
     meta.forEach(function (m) {
@@ -145,14 +186,15 @@ window.Session = (function () {
     var body = UI.el('div', 'stage-body');
     host.appendChild(body);
     stage.run(body, ctx, function () {
-      // completing the Learn stage advances the syllabus — but a slow profile
-      // repeats each lesson `syllabusPace` times before it counts as studied.
-      if (stage.key === 'learn' && ctx.lesson) {
+      if (stage.key === 'learn') {
         var p = loadProg();
-        var pr = window.Profile ? window.Profile.params() : { syllabusPace: 1 };
-        p.studied = p.studied || {}; p.studyCount = p.studyCount || {};
-        p.studyCount[ctx.lesson.id] = (p.studyCount[ctx.lesson.id] || 0) + 1;
-        if (p.studyCount[ctx.lesson.id] >= (pr.syllabusPace || 1)) p.studied[ctx.lesson.id] = 1;
+        var pr = window.Profile ? window.Profile.params() : { name: 'standard' };
+        if (pr.name === 'beginner') {          // paced path: step through the curriculum
+          p.beginnerDay = (p.beginnerDay || 0) + 1;
+          if (ctx.focus && ctx.focus.type === 'grammar' && ctx.lesson) { p.studied = p.studied || {}; p.studied[ctx.lesson.id] = 1; }
+        } else if (ctx.lesson) {               // standard/refresher: a grammar lesson each day
+          p.studied = p.studied || {}; p.studied[ctx.lesson.id] = 1;
+        }
         saveProg(p);
       }
       idx++; runStage();
@@ -170,7 +212,7 @@ window.Session = (function () {
     var r = ctx.results;
     var lines = [];
     if (r.review) lines.push('Reviewed <b>' + r.review.seen + '</b> items (' + r.review.correct + ' correct)');
-    if (ctx.lesson) lines.push('Learned <b>' + ctx.lesson.title + '</b>');
+    lines.push('Focus: <b>' + focusLabel(ctx) + '</b>');
     if (r.comprehend) lines.push('Comprehension: <b>' + r.comprehend.correct + '/' + r.comprehend.total + '</b>');
     if (r.apply) lines.push('Applied grammar: <b>' + r.apply.correct + '/' + r.apply.total + '</b>');
     if (r.produce) lines.push('Wrote <b>' + r.produce.done + '</b> pieces of your own Spanish');

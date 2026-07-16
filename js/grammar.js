@@ -9,7 +9,7 @@ window.Grammar = (function () {
 
   function loadProg() { try { return JSON.parse(localStorage.getItem('fluidez.progress')) || {}; } catch (e) { return {}; } }
 
-  function render(host, back) {
+  function render(host, back, openId) {
     UI.clear(host);
     var lessons = window.GRAMMAR_LESSONS || [];
     var studied = loadProg().studied || {};
@@ -41,9 +41,9 @@ window.Grammar = (function () {
         '<span class="gl-title">' + l.title + '</span><span class="gl-level muted">L' + (l.level || 1) + '</span>';
       row.addEventListener('click', function () { showDoc(l); });
       list.appendChild(row);
-      if (i === 0) row.classList.add('active');
     });
-    if (lessons.length) showDoc(lessons[0]);
+    var start = openId ? (lessons.filter(function (l) { return l.id === openId; })[0] || lessons[0]) : lessons[0];
+    if (start) showDoc(start);
   }
 
   return { render: render };

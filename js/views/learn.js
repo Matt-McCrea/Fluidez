@@ -46,19 +46,77 @@ window.StageLearn = (function () {
     return wrap;
   }
 
+  var CAT_LABEL = {
+    greetings: 'Greetings & courtesy', people: 'People & family', food: 'Food & drink',
+    numbers: 'Numbers', time: 'Time & days', colors: 'Colours', places: 'Places',
+    home: 'Home & objects', body: 'The body', nature: 'Nature & weather', adjectives: 'Describing things',
+    travel: 'Travel & transport', weather: 'Weather', clothing: 'Clothing', animals: 'Animals',
+    questions: 'Question words', connectors: 'Linking words', common: 'Everyday words',
+    school: 'School', health: 'Health', shopping: 'Shopping', sports: 'Sports', kitchen: 'Kitchen', work: 'Work'
+  };
+  function listTable(rows) {
+    return '<table class="contrast-table"><tbody>' + rows.map(function (r) {
+      return '<tr><td class="es">' + r[0] + '</td><td>' + r[1] + '</td></tr>';
+    }).join('') + '</tbody></table>';
+  }
+
+  // Dispatch on the day's focus (beginners get vocab/verb/practice days too;
+  // standard/refresher always get a grammar lesson).
   function run(host, ctx, done) {
+    var f = ctx.focus || { type: 'grammar' };
+    if (f.type === 'vocab') return teachVocab(host, ctx, f, done);
+    if (f.type === 'verbs') return teachVerbs(host, ctx, f, done);
+    if (f.type === 'practice') return teachPractice(host, ctx, done);
     var l = ctx.lesson;
     if (!l) { done(); return; }
     var wrap = fillLesson(UI.el('div', 'panel lesson'), l);
-    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheck(host, ctx, done); }));
+    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, (l.recall || []).slice(), 'grammar', done); }));
     host.appendChild(wrap);
   }
 
-  // Active recall of the lesson's key points before moving on (retrieval beats
-  // re-reading), then enrol them so they come back in future reviews.
-  function quickCheck(host, ctx, done) {
-    var l = ctx.lesson;
-    var items = (l.recall || []).slice();
+  // ---- vocab day ----
+  function teachVocab(host, ctx, f, done) {
+    var words = (f.words || []).map(function (es) {
+      var w = (window.VOCAB || []).filter(function (v) { return v.es === es; })[0];
+      return w || { es: es, en: '' };
+    });
+    var wrap = UI.el('div', 'panel');
+    wrap.appendChild(UI.el('h1', null, 'New words · ' + (CAT_LABEL[f.cat] || f.cat)));
+    wrap.appendChild(UI.el('p', 'muted', 'Learn these by meaning first. They join your review deck straight away.'));
+    wrap.appendChild(UI.el('div', null, listTable(words.map(function (w) { return [w.es, w.en]; }))));
+    words.forEach(function (w) { S.enrol('v:' + w.es); });
+    var check = words.slice(0, 6).map(function (w) { return { id: 'v:' + w.es, front: w.es, back: w.en }; });
+    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, check, 'vocab', done); }));
+    host.appendChild(wrap);
+  }
+
+  // ---- verbs day ----
+  function teachVerbs(host, ctx, f, done) {
+    var verbs = (f.verbs || []).map(function (inf) { return window.ENGINE.verbByInf(inf); }).filter(Boolean);
+    var wrap = UI.el('div', 'panel');
+    wrap.appendChild(UI.el('h1', null, 'New verbs'));
+    wrap.appendChild(UI.el('p', 'muted', 'Meet these verbs by meaning. You\'ll conjugate them in the Aplicar and Producir stages as you learn each tense.'));
+    wrap.appendChild(UI.el('div', null, listTable(verbs.map(function (v) { return [v.inf, v.en]; }))));
+    verbs.forEach(function (v) { S.enrol('vm:' + v.inf); });
+    var check = verbs.map(function (v) { return { id: 'vm:' + v.inf, front: v.inf, back: v.en }; });
+    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, check, 'verb', done); }));
+    host.appendChild(wrap);
+  }
+
+  // ---- practice day (no new content) ----
+  function teachPractice(host, ctx, done) {
+    var wrap = UI.el('div', 'panel');
+    wrap.appendChild(UI.el('h1', null, 'Practice & review day'));
+    wrap.appendChild(UI.el('p', 'doc-summary', 'No new grammar today — a day to let what you\'ve met settle. Your review deck, the reading, and the exercises below all draw on things you already know.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Little and often beats cramming. Take it easy and enjoy noticing how much you already recognise.'));
+    wrap.appendChild(UI.nextBtn('Continuar →', done));
+    host.appendChild(wrap);
+  }
+
+  // Active recall over a set of items, enrolling them into review. `kind` tags
+  // the error-log entries. Shared by grammar recall, vocab days and verb days.
+  function quickCheckItems(host, items, kind, done) {
+    items = (items || []).slice();
     if (!items.length) { done(); return; }
 
     UI.clear(host);
@@ -107,7 +165,7 @@ window.StageLearn = (function () {
         revealed = true; fb.textContent = it.back; fb.className = 'feedback reveal';
         reveal.textContent = 'Next →';
         if (window.ErrorLog) window.ErrorLog.record({   // already SRS; log for the weak-spots view
-          id: it.id, front: it.front, back: it.back, kind: 'grammar', source: 'learn', reviewable: false });
+          id: it.id, front: it.front, back: it.back, kind: kind || 'grammar', source: 'learn', reviewable: false });
       });
     }
     show();

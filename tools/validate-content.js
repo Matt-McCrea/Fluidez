@@ -167,27 +167,30 @@ const strip = h => String(h).replace(/<[^>]+>/g, '');
   });
 }
 
-// ---------- topics ("talk about X") -----------------------------------------
+// ---------- topics ("talk about X") — each has leveled prompts ---------------
 {
   const seen = new Set();
   (window.TOPICS || []).forEach(t => {
     const tag = `topic "${t.id}"`;
     ok(!seen.has(t.id), `${tag}: duplicate id`); seen.add(t.id);
-    ok(t.topic && t.prompt, `${tag}: needs topic + prompt`);
-    ok(t.level >= 1 && t.level <= 5, `${tag}: bad level ${t.level}`);
-    ok((t.constraints || []).length >= 1, `${tag}: needs >=1 constraint`);
-    ok((t.models || []).length >= 1, `${tag}: needs >=1 model`);
-    (t.constraints || []).forEach(c => {
-      if (c.tense) {
-        ok(VALID_TENSES.has(c.tense), `${tag}: bad tense "${c.tense}"`);
-        ok((TENSE_LEVEL[c.tense] || 1) <= t.level, `${tag}: tense ${c.tense} is level ${TENSE_LEVEL[c.tense]}, topic is ${t.level}`);
-      }
-      if (c.inf) ok(!!E.verbByInf(c.inf), `${tag}: verb "${c.inf}" not in dataset`);
-    });
-    (t.models || []).forEach(m => {
-      const r = C.checkWriting(t, m);
-      ok(r.allPass, `${tag}: model "${m}" fails its own constraints ` +
-        `(${r.results.filter(x => !x.pass).map(x => strip(x.label)).join('; ')})`);
+    ok(t.topic && Array.isArray(t.prompts) && t.prompts.length >= 1, `${tag}: needs topic + prompts[]`);
+    (t.prompts || []).forEach((pr, pi) => {
+      const ptag = `${tag} prompt[${pi}]`;
+      ok(pr.prompt && pr.level >= 1 && pr.level <= 5, `${ptag}: needs prompt + valid level`);
+      ok((pr.constraints || []).length >= 1, `${ptag}: needs >=1 constraint`);
+      ok((pr.models || []).length >= 1, `${ptag}: needs >=1 model`);
+      (pr.constraints || []).forEach(c => {
+        if (c.tense) {
+          ok(VALID_TENSES.has(c.tense), `${ptag}: bad tense "${c.tense}"`);
+          ok((TENSE_LEVEL[c.tense] || 1) <= pr.level, `${ptag}: tense ${c.tense} is level ${TENSE_LEVEL[c.tense]}, prompt is ${pr.level}`);
+        }
+        if (c.inf) ok(!!E.verbByInf(c.inf), `${ptag}: verb "${c.inf}" not in dataset`);
+      });
+      (pr.models || []).forEach(m => {
+        const r = C.checkWriting(pr, m);
+        ok(r.allPass, `${ptag}: model "${m}" fails its own constraints ` +
+          `(${r.results.filter(x => !x.pass).map(x => strip(x.label)).join('; ')})`);
+      });
     });
   });
 }

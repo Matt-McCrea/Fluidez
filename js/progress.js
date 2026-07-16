@@ -47,12 +47,15 @@ window.Progress = (function () {
     lessons.forEach(function (l, i) {
       var state = studied[l.id] ? 'done' : (i === nextIdx ? 'current' : 'locked');
       var mark = state === 'done' ? '✓' : (state === 'current' ? '●' : '○');
-      var row = UI.el('div', 'syl-row ' + state);
+      var row = UI.el('button', 'syl-row ' + state);
+      row.type = 'button';
       row.innerHTML = '<span class="syl-mark">' + mark + '</span><span class="syl-title">' + l.title +
-        '</span><span class="syl-level muted">L' + (l.level || 1) + '</span>';
+        '</span><span class="syl-level muted">L' + (l.level || 1) + ' ›</span>';
+      row.addEventListener('click', function () { window.App.go('grammar', l.id); });  // jump to any lesson freely
       syl.appendChild(row);
     });
     wrap.appendChild(syl);
+    wrap.appendChild(UI.el('p', 'muted small', 'Tap any lesson to read it — you can move around freely.'));
 
     // ---- SRS box distribution (single-hue magnitude bars) ----
     wrap.appendChild(UI.el('h3', null, 'Memory strength'));

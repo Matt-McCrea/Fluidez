@@ -36,6 +36,12 @@ window.StageReview = (function () {
         items.push({ id: r.id, front: r.front, back: r.back, kind: 'grammar', enrolledOnly: true });
       });
     });
+    // verb meanings taught on a "verbs day" (only after they've been enrolled)
+    (window.VERBS || []).forEach(function (v) {
+      items.push(recog
+        ? { id: 'vm:' + v.inf, front: v.inf, back: v.en, kind: 'verb', enrolledOnly: true }
+        : { id: 'vm:' + v.inf, front: v.en, back: v.inf, kind: 'verb', enrolledOnly: true });
+    });
     if (Capture) Capture.cards().forEach(function (c) {
       items.push(recog ? { id: c.id, front: c.back, back: c.front, kind: 'capture' } : c);
     });
