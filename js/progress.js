@@ -85,45 +85,74 @@ window.Progress = (function () {
     var lessons = window.GRAMMAR_LESSONS || [];
     var nextIdx = lessons.findIndex(function (l) { return !studied[l.id]; });
     function reRender() { render(host, back); }
+    var beginner = window.Profile && window.Profile.current() === 'beginner';
 
-    wrap.appendChild(UI.el('h3', null, 'Grammar lessons'));
-    wrap.appendChild(UI.el('p', 'muted small', 'Tap a lesson to take it — taught in full, then quizzed. Do them in any order.'));
-    var syl = UI.el('div', 'syllabus');
-    lessons.forEach(function (l, i) {
-      var state = studied[l.id] ? 'done' : (i === nextIdx ? 'current' : 'locked');
-      var mark = state === 'done' ? '✓' : (state === 'current' ? '●' : '○');
-      var row = UI.el('button', 'syl-row ' + state); row.type = 'button';
-      row.innerHTML = '<span class="syl-mark">' + mark + '</span><span class="syl-title">' + l.title +
-        '</span><span class="syl-level muted">L' + (l.level || 1) + ' ›</span>';
-      row.addEventListener('click', function () { window.LessonRun.run({ type: 'grammar', id: l.id }, reRender); });
-      syl.appendChild(row);
-    });
-    wrap.appendChild(syl);
-    wrap.appendChild(UI.el('p', 'muted small', 'Reading only? The <b>Gramática</b> tab shows the same lessons as reference.'));
+    wrap.appendChild(UI.el('h3', null, 'Lessons'));
+    wrap.appendChild(UI.el('p', 'muted small', 'Tap a lesson to take it — taught in full, then quizzed. Do them in any order. (The <b>Gramática</b> tab shows the grammar lessons as read-only reference.)'));
 
-    // vocabulary lessons (collapsible) — every category, easiest first
-    var vd = UI.el('details', 'catalog-more');
-    vd.appendChild(UI.el('summary', null, 'Vocabulary lessons'));
-    var vlist = UI.el('div', 'syllabus');
-    vocabLessons().forEach(function (v) {
-      var row = UI.el('button', 'syl-row'); row.type = 'button';
-      row.innerHTML = '<span class="syl-mark">📇</span><span class="syl-title">' + v.title + '</span><span class="syl-level muted">' + v.words.length + ' ›</span>';
-      row.addEventListener('click', function () { window.LessonRun.run({ type: 'vocab', cat: v.cat, words: v.words }, reRender); });
-      vlist.appendChild(row);
-    });
-    vd.appendChild(vlist); wrap.appendChild(vd);
+    if (beginner) {
+      // one long list, in the beginner's curriculum order (no type split)
+      var seq = (window.Curriculum ? window.Curriculum.seq() : []);
+      var curDay = (p.beginnerDay || 0);
+      var flat = UI.el('div', 'syllabus');
+      seq.forEach(function (d, i) {
+        if (d.type === 'practice') return;         // nothing to "take" on a practice day
+        var focus, mark, title, meta;
+        if (d.type === 'grammar') {
+          var l = lessons.filter(function (x) { return x.id === d.id; })[0] || { title: d.id, level: 1 };
+          focus = { type: 'grammar', id: d.id };
+          mark = studied[d.id] ? '✓' : (i === curDay ? '●' : '📖');
+          title = l.title; meta = 'L' + (l.level || 1) + ' ›';
+        } else if (d.type === 'vocab') {
+          focus = { type: 'vocab', cat: d.cat, words: d.words };
+          mark = (i === curDay ? '●' : '📇'); title = 'New words · ' + label(d.cat) + (d.part ? ' ' + d.part : ''); meta = d.words.length + ' ›';
+        } else {
+          focus = { type: 'verbs', verbs: d.verbs };
+          mark = (i === curDay ? '●' : '🔤'); title = 'Verbs · ' + d.verbs.slice(0, 3).join(', ') + (d.verbs.length > 3 ? '…' : ''); meta = d.verbs.length + ' ›';
+        }
+        var row = UI.el('button', 'syl-row' + (i === curDay ? ' current' : '')); row.type = 'button';
+        row.innerHTML = '<span class="syl-mark">' + mark + '</span><span class="syl-title">' + title + '</span><span class="syl-level muted">' + meta + '</span>';
+        row.addEventListener('click', function () { window.LessonRun.run(focus, reRender); });
+        flat.appendChild(row);
+      });
+      wrap.appendChild(flat);
 
-    // verb lessons (collapsible)
-    var rd = UI.el('details', 'catalog-more');
-    rd.appendChild(UI.el('summary', null, 'Verb lessons'));
-    var rlist = UI.el('div', 'syllabus');
-    verbLessons().forEach(function (grp, gi) {
-      var row = UI.el('button', 'syl-row'); row.type = 'button';
-      row.innerHTML = '<span class="syl-mark">🔤</span><span class="syl-title">' + grp.slice(0, 4).join(', ') + (grp.length > 4 ? '…' : '') + '</span><span class="syl-level muted">' + grp.length + ' ›</span>';
-      row.addEventListener('click', function () { window.LessonRun.run({ type: 'verbs', verbs: grp }, reRender); });
-      rlist.appendChild(row);
-    });
-    rd.appendChild(rlist); wrap.appendChild(rd);
+    } else {
+      // standard/refresher: grammar lessons first, then vocab & verbs below
+      var syl = UI.el('div', 'syllabus');
+      lessons.forEach(function (l, i) {
+        var state = studied[l.id] ? 'done' : (i === nextIdx ? 'current' : 'locked');
+        var mark = state === 'done' ? '✓' : (state === 'current' ? '●' : '○');
+        var row = UI.el('button', 'syl-row ' + state); row.type = 'button';
+        row.innerHTML = '<span class="syl-mark">' + mark + '</span><span class="syl-title">' + l.title +
+          '</span><span class="syl-level muted">L' + (l.level || 1) + ' ›</span>';
+        row.addEventListener('click', function () { window.LessonRun.run({ type: 'grammar', id: l.id }, reRender); });
+        syl.appendChild(row);
+      });
+      wrap.appendChild(syl);
+
+      var vd = UI.el('details', 'catalog-more');
+      vd.appendChild(UI.el('summary', null, 'Vocabulary lessons'));
+      var vlist = UI.el('div', 'syllabus');
+      vocabLessons().forEach(function (v) {
+        var row = UI.el('button', 'syl-row'); row.type = 'button';
+        row.innerHTML = '<span class="syl-mark">📇</span><span class="syl-title">' + v.title + '</span><span class="syl-level muted">' + v.words.length + ' ›</span>';
+        row.addEventListener('click', function () { window.LessonRun.run({ type: 'vocab', cat: v.cat, words: v.words }, reRender); });
+        vlist.appendChild(row);
+      });
+      vd.appendChild(vlist); wrap.appendChild(vd);
+
+      var rd = UI.el('details', 'catalog-more');
+      rd.appendChild(UI.el('summary', null, 'Verb lessons'));
+      var rlist = UI.el('div', 'syllabus');
+      verbLessons().forEach(function (grp) {
+        var row = UI.el('button', 'syl-row'); row.type = 'button';
+        row.innerHTML = '<span class="syl-mark">🔤</span><span class="syl-title">' + grp.slice(0, 4).join(', ') + (grp.length > 4 ? '…' : '') + '</span><span class="syl-level muted">' + grp.length + ' ›</span>';
+        row.addEventListener('click', function () { window.LessonRun.run({ type: 'verbs', verbs: grp }, reRender); });
+        rlist.appendChild(row);
+      });
+      rd.appendChild(rlist); wrap.appendChild(rd);
+    }
 
     // ---- SRS box distribution (single-hue magnitude bars) ----
     wrap.appendChild(UI.el('h3', null, 'Memory strength'));
