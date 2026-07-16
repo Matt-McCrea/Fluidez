@@ -39,6 +39,7 @@ window.SRS = (function () {
   }
 
   function isDue(id) { var it = state(id); return !!it && it.due <= today(); }
+  function boxOf(id) { var it = state(id); return it ? it.box : 0; }   // 0 = new / fragile
 
   // Build a review batch from a candidate pool.
   //   pool        : [{ id, ... }]   (any objects carrying a stable `id`)
@@ -71,7 +72,7 @@ window.SRS = (function () {
   }
 
   return {
-    enrol: enrol, grade: grade, isDue: isDue, isEnrolled: isEnrolled,
+    enrol: enrol, grade: grade, isDue: isDue, isEnrolled: isEnrolled, boxOf: boxOf,
     batch: batch, dueCount: dueCount, enrolledCount: enrolledCount, today: today
   };
 })();

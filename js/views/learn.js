@@ -90,6 +90,17 @@ window.StageLearn = (function () {
     }).join('') + '</tbody></table>';
   }
 
+  // Quick-check direction: production (type the Spanish) for standard/refresher;
+  // recognition (Spanish shown, give the English) for beginners — matching how
+  // their brand-new words start in the graduated daily review.
+  function qcDir() {
+    var d = window.Profile ? window.Profile.params().reviewDirection : 'en2es';
+    return d === 'en2es' ? 'en2es' : 'es2en';
+  }
+  function qcItem(id, es, en) {
+    return qcDir() === 'es2en' ? { id: id, front: es, back: en } : { id: id, front: en, back: es };
+  }
+
   // Dispatch on the day's focus (beginners get vocab/verb/practice days too;
   // standard/refresher always get a grammar lesson).
   function run(host, ctx, done) {
@@ -115,7 +126,7 @@ window.StageLearn = (function () {
     wrap.appendChild(UI.el('p', 'muted', 'Learn these by meaning first. They join your review deck straight away.'));
     wrap.appendChild(UI.el('div', null, listTable(words.map(function (w) { return [w.es, w.en]; }))));
     words.forEach(function (w) { S.enrol('v:' + w.es); });
-    var check = words.slice(0, 6).map(function (w) { return { id: 'v:' + w.es, front: w.es, back: w.en }; });
+    var check = words.slice(0, 6).map(function (w) { return qcItem('v:' + w.es, w.es, w.en); });
     wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, check, 'vocab', done); }));
     host.appendChild(wrap);
   }
@@ -128,7 +139,7 @@ window.StageLearn = (function () {
     wrap.appendChild(UI.el('p', 'muted', 'Meet these verbs by meaning. You\'ll conjugate them in the Aplicar and Producir stages as you learn each tense.'));
     wrap.appendChild(UI.el('div', null, listTable(verbs.map(function (v) { return [v.inf, v.en]; }))));
     verbs.forEach(function (v) { S.enrol('vm:' + v.inf); });
-    var check = verbs.map(function (v) { return { id: 'vm:' + v.inf, front: v.inf, back: v.en }; });
+    var check = verbs.map(function (v) { return qcItem('vm:' + v.inf, v.inf, v.en); });
     wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, check, 'verb', done); }));
     host.appendChild(wrap);
   }

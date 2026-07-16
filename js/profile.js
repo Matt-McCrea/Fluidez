@@ -37,7 +37,9 @@ window.Profile = (function () {
     beginner: {
       name: 'beginner', label: 'Beginner',
       newPerDay: 3, reviewBatchMax: 10,
-      reviewDirection: 'es2en', reviewMode: 'choice',
+      // graduated: new words come as ES→EN recognition (multiple choice), then
+      // flip to EN→ES production (typed) once they've stuck (SRS box ≥ 2).
+      reviewDirection: 'graduated', reviewMode: 'choice',
       orderedVocab: true, vocabCats: BEGINNER_CATS,
       syllabusPace: 3, unlockAll: false,
       applyMode: 'wordbank', produceStyle: 'guided'

@@ -32,7 +32,8 @@ window.Practice = (function () {
     ['Society', ['society', 'bureaucracy']]
   ];
 
-  var dir = (window.Profile && window.Profile.params().reviewDirection) || 'en2es';
+  // default drill direction: recognition for beginners, production otherwise
+  var dir = (window.Profile && window.Profile.current() === 'beginner') ? 'es2en' : 'en2es';
 
   function loadTL() { try { return JSON.parse(localStorage.getItem(TLKEY)) || {}; } catch (e) { return {}; } }
   function saveTL(o) { try { localStorage.setItem(TLKEY, JSON.stringify(o)); } catch (e) {} }
