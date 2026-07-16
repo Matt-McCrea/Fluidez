@@ -16,31 +16,25 @@ window.StageLearn = (function () {
     return html + '</tbody></table>';
   }
 
-  function run(host, ctx, done) {
-    var l = ctx.lesson;
-    if (!l) { done(); return; }
-
-    var wrap = UI.el('div', 'panel lesson');
+  // Render a lesson's teaching content into `wrap` (no buttons). Shared with the
+  // Grammar reference view so lessons read identically wherever they appear.
+  function fillLesson(wrap, l) {
     wrap.appendChild(UI.el('h1', null, l.title));
     wrap.appendChild(UI.el('p', 'doc-summary', l.summary));
-
     (l.sections || []).forEach(function (s) {
       wrap.appendChild(UI.el('h3', null, s.h));
       wrap.appendChild(UI.el('div', 'lesson-body', s.html));
     });
-
     if (l.contrasts && l.contrasts.length) {
       wrap.appendChild(UI.el('h3', null, 'Same words, different meaning'));
       wrap.appendChild(UI.el('div', null, contrastTable(l.contrasts)));
     }
-
     if (l.pitfalls && l.pitfalls.length) {
       wrap.appendChild(UI.el('h3', null, 'Watch out'));
       var ul = UI.el('ul', 'pitfalls');
       l.pitfalls.forEach(function (p) { ul.appendChild(UI.el('li', null, p)); });
       wrap.appendChild(ul);
     }
-
     if (l.examples && l.examples.length) {
       wrap.appendChild(UI.el('h3', null, 'In use'));
       var ex = UI.el('div', 'examples');
@@ -49,7 +43,13 @@ window.StageLearn = (function () {
       });
       wrap.appendChild(ex);
     }
+    return wrap;
+  }
 
+  function run(host, ctx, done) {
+    var l = ctx.lesson;
+    if (!l) { done(); return; }
+    var wrap = fillLesson(UI.el('div', 'panel lesson'), l);
     wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheck(host, ctx, done); }));
     host.appendChild(wrap);
   }
@@ -113,5 +113,5 @@ window.StageLearn = (function () {
     show();
   }
 
-  return { key: 'learn', label: 'Aprender', icon: '📖', run: run };
+  return { key: 'learn', label: 'Aprender', icon: '📖', run: run, fillLesson: fillLesson };
 })();

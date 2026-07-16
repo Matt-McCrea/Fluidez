@@ -78,6 +78,14 @@ return home when done:
 - **Tus errores** (`js/errorlog.js`) — every miss (cloze/short/review reveals) is
   logged; reviewable ones enrol into the SRS and get an on-demand drill deck
   (`js/deck.js`). Feeds daily Review too.
+- **Practicar** (`js/practice.js`) — focused drilling, not the whole session:
+  **Hablar de…** topic prompts (`data/topics.js`) that elicit connected
+  sentences with the live constraint checklist; **Vocabulario** drills by
+  category / your captured words / idioms in either direction; and a shortcut
+  out to the Español app for fast flashcards.
+- **Gramática** (`js/grammar.js`) — browse every lesson as reference, any time,
+  regardless of syllabus progress (rendered by the same code as the daily Learn
+  stage; studied lessons are ticked).
 - **Recursos** (`js/resources.js` + `data/resources.js`) — curated input &
   reference links (edit the data file freely).
 

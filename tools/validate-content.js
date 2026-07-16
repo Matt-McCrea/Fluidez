@@ -20,7 +20,7 @@ const fs = require('fs'), path = require('path');
 global.window = {};
 function load(rel) { (0, eval)(fs.readFileSync(path.join(__dirname, '..', rel), 'utf8')); }
 ['data/verbs.js', 'data/vocab.js', 'data/idioms.js', 'data/grammar-docs.js', 'data/grammar.js',
- 'data/passages.js', 'data/apply.js', 'data/writing.js', 'data/resources.js',
+ 'data/passages.js', 'data/apply.js', 'data/writing.js', 'data/topics.js', 'data/resources.js',
  'js/engine.js', 'js/lessons.js', 'js/checker.js'].forEach(load);
 
 const E = window.ENGINE, C = window.Checker;
@@ -164,6 +164,31 @@ const strip = h => String(h).replace(/<[^>]+>/g, '');
   (window.IDIOMS || []).forEach((x, i) => {
     ok(x.es && x.en, `idiom[${i}]: missing es/en`);
     ok(!seenI.has(x.es), `idiom duplicate "${x.es}"`); seenI.add(x.es);
+  });
+}
+
+// ---------- topics ("talk about X") -----------------------------------------
+{
+  const seen = new Set();
+  (window.TOPICS || []).forEach(t => {
+    const tag = `topic "${t.id}"`;
+    ok(!seen.has(t.id), `${tag}: duplicate id`); seen.add(t.id);
+    ok(t.topic && t.prompt, `${tag}: needs topic + prompt`);
+    ok(t.level >= 1 && t.level <= 5, `${tag}: bad level ${t.level}`);
+    ok((t.constraints || []).length >= 1, `${tag}: needs >=1 constraint`);
+    ok((t.models || []).length >= 1, `${tag}: needs >=1 model`);
+    (t.constraints || []).forEach(c => {
+      if (c.tense) {
+        ok(VALID_TENSES.has(c.tense), `${tag}: bad tense "${c.tense}"`);
+        ok((TENSE_LEVEL[c.tense] || 1) <= t.level, `${tag}: tense ${c.tense} is level ${TENSE_LEVEL[c.tense]}, topic is ${t.level}`);
+      }
+      if (c.inf) ok(!!E.verbByInf(c.inf), `${tag}: verb "${c.inf}" not in dataset`);
+    });
+    (t.models || []).forEach(m => {
+      const r = C.checkWriting(t, m);
+      ok(r.allPass, `${tag}: model "${m}" fails its own constraints ` +
+        `(${r.results.filter(x => !x.pass).map(x => strip(x.label)).join('; ')})`);
+    });
   });
 }
 

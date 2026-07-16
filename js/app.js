@@ -23,6 +23,8 @@ window.App = (function () {
       case 'errors':    window.Hub.renderErrors(host, back); break;
       case 'resources': window.Resources.render(host, back); break;
       case 'write':     window.WriteSpace.render(host, back); break;
+      case 'grammar':   window.Grammar.render(host, back); break;
+      case 'practice':  window.Practice.render(host, back); break;
       case 'home':
       default:          window.Hub.render(host); break;
     }

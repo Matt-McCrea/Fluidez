@@ -40,6 +40,15 @@ window.Hub = (function () {
     return b;
   }
 
+  // A hub card that opens an external app in a new tab.
+  function extCard(icon, title, sub, url) {
+    var a = UI.el('a', 'hub-card');
+    a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+    a.innerHTML = '<span class="hub-ico">' + icon + '</span><span class="hub-title">' + title + '</span>' +
+      '<span class="hub-sub muted">' + sub + '</span>';
+    return a;
+  }
+
   function render(host) {
     UI.clear(host);
     var p = loadProg();
@@ -64,11 +73,14 @@ window.Hub = (function () {
     var grid = UI.el('div', 'hub-grid');
     var errN = window.ErrorLog ? window.ErrorLog.list().filter(function (e) { return e.reviewable; }).length : 0;
     var capN = window.Capture ? window.Capture.count() : 0;
+    grid.appendChild(card('🧩', 'Practicar', 'drills, vocab & topics', 'practice'));
+    grid.appendChild(card('📖', 'Gramática', 'browse every lesson', 'grammar'));
     grid.appendChild(card('📊', 'Tu progreso', 'streak, syllabus & stats', 'progress'));
     grid.appendChild(card('✍️', 'Escribir', 'free writing & journal', 'write'));
     grid.appendChild(card('➕', 'Añadir palabras', capN + ' captured', 'capture'));
     grid.appendChild(card('🩹', 'Tus errores', errN + ' to review', 'errors'));
     grid.appendChild(card('📚', 'Recursos', 'podcasts & references', 'resources'));
+    grid.appendChild(extCard('⚡', 'Español · drills', 'fast flashcards & conjugation ↗', 'https://matt-mccrea.github.io/Espanol-/'));
     host.appendChild(grid);
 
     // ---- profile switcher ----
