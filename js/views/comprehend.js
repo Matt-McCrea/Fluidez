@@ -6,7 +6,7 @@
  * "noticing the gap" mechanism that drives acquisition.
  * ========================================================================== */
 window.StageComprehend = (function () {
-  var UI = window.UI, C = window.Checker, E = window.ENGINE;
+  var UI = window.UI, C = window.Checker;
 
   function run(host, ctx, done) {
     var p = ctx.passage;
@@ -73,9 +73,7 @@ window.StageComprehend = (function () {
             if (answered) return; answered = true;
             var right = oi === q.answer;
             if (right) correct++;
-            else if (window.ErrorLog) window.ErrorLog.record({   // weak-spot tally, not a review card
-              id: 'err:mcq:' + E.normalize(q.q), front: q.q, back: q.options[q.answer],
-              kind: 'comprehension', source: 'comprehend-mcq', reviewable: false });
+            // comprehension answers are context-dependent — not logged as errors
             b.classList.add(right ? 'right' : 'wrong');
             if (!right) opts.children[q.answer].classList.add('right');
             setTimeout(function () { i++; show(); }, right ? 500 : 1400);
@@ -112,9 +110,7 @@ window.StageComprehend = (function () {
           fb.textContent = ans;
           fb.className = 'feedback reveal';
           reveal.textContent = 'Next →';
-          if (window.ErrorLog) window.ErrorLog.record({
-            id: 'err:short:' + E.normalize(q.q), front: q.q, back: ans,
-            kind: 'error', source: 'comprehend-short', reviewable: true });
+          // comprehension answers are context-dependent — not logged as errors
         });
 
       } else if (q.type === 'translate') {
