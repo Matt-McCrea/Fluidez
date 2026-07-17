@@ -18,11 +18,54 @@ window.Session = (function () {
   function dayNumber() {
     return Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
   }
-  function rotate(arr, day, count, stride) {
-    if (!arr.length) return [];
-    var out = [], start = (day * (stride || 1)) % arr.length;
-    for (var i = 0; i < Math.min(count, arr.length); i++) out.push(arr[(start + i) % arr.length]);
+  function shuffle(a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  function sample(arr, n) { return shuffle(arr).slice(0, n); }   // n random items
+  function pick(arr) { return arr.length ? arr[Math.floor(Math.random() * arr.length)] : null; }
+
+  // ---- align content to the day's focus (use what was just taught) --------
+  var E = window.ENGINE;
+  function passageUsesFocus(p, focus) {
+    var a = E.analyzeSentence(p.text);
+    if (focus.type === 'grammar')
+      return a.verbs.some(function (v) { return v.analyses.some(function (x) { return x.tense === focus.id; }); }) ||
+             a.compounds.some(function (c) { return c.parts.some(function (x) { return x.tense === focus.id; }); });
+    if (focus.type === 'verbs')
+      return a.verbs.some(function (v) { return v.analyses.some(function (x) { return focus.verbs.indexOf(x.inf) !== -1; }); });
+    if (focus.type === 'vocab') {
+      var t = ' ' + p.text.toLowerCase() + ' ';
+      return (focus.words || []).some(function (w) {
+        var noun = w.toLowerCase().replace(/^(el |la |los |las |un |una )/, '');
+        return t.indexOf(noun) !== -1;
+      });
+    }
+    return false;
+  }
+  function clozeMatchesFocus(it, focus) {
+    if (focus.type === 'grammar') return it.tense === focus.id;
+    if (focus.type === 'verbs') return focus.verbs.indexOf(it.inf) !== -1;
+    return false;
+  }
+  function writeMatchesFocus(t, focus) {
+    if (focus.type !== 'grammar') return false;
+    return (t.constraints || []).some(function (c) {
+      return (c.type === 'anyVerbInTense' || c.type === 'verbFormAny') && c.tense === focus.id;
+    });
+  }
+  // random n from the focus-aligned items, topped up with other items to reach n
+  function sampleAligned(pool, focus, n, matchFn) {
+    var yes = pool.filter(function (x) { return matchFn(x, focus); });
+    var no = pool.filter(function (x) { return !matchFn(x, focus); });
+    var out = sample(yes, n);
+    if (out.length < n) out = out.concat(sample(no, n - out.length));
     return out;
+  }
+  function preferAligned(arr, focus, fn) {
+    var a = arr.filter(function (t) { return fn(t, focus); });
+    return a.length ? a : arr;
   }
 
   // Build today's content bundle.
@@ -70,20 +113,27 @@ window.Session = (function () {
 
     // Produce: 'guided' (beginner) = a build + a translation, with scaffolding.
     // 'full' = also open free-writing and, from level 2+, a connected paragraph.
+    // Content is SAMPLED AT RANDOM each session so the story, sentences and
+    // prompts vary every time — the focus (which lesson) stays put; the
+    // practice around it is fresh.
     var builds = writes.filter(function (t) { return t.type === 'build'; });
     var trans = writes.filter(function (t) { return t.type === 'translate'; });
     var frees = writes.filter(function (t) { return t.type === 'write'; });
     var paras = writes.filter(function (t) { return t.type === 'paragraph'; });
     var produce;
     if (pr.produceStyle === 'guided') {
-      produce = [].concat(rotate(builds, day, 1, 1)).concat(rotate(trans, day, 1, 1));
+      produce = [].concat(sample(builds, 1)).concat(sample(preferAligned(trans, focus, writeMatchesFocus), 1));
     } else {
       produce = []
-        .concat(rotate(builds, day, 1, 1))
-        .concat(rotate(trans, day, 1, 1))
-        .concat(rotate(frees, day, 2, 2))
-        .concat(level >= 2 ? rotate(paras, day, 1, 1) : []);
+        .concat(sample(builds, 1))
+        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), 1))
+        .concat(sample(preferAligned(frees, focus, writeMatchesFocus), 2))
+        .concat(level >= 2 ? sample(preferAligned(paras, focus, writeMatchesFocus), 1) : []);
     }
+
+    // Story prefers a passage that USES today's focus; cloze prefers items in
+    // today's tense/verbs — topped up with level-appropriate items to fill out.
+    var storyPool = passages.filter(function (p) { return passageUsesFocus(p, focus); });
 
     return {
       day: day,
@@ -92,8 +142,8 @@ window.Session = (function () {
       focus: focus,
       dateLabel: new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' }),
       lesson: lesson,
-      passage: passages.length ? passages[day % passages.length] : null,
-      applyItems: rotate(apply, day, 6, 3),
+      passage: pick(storyPool.length ? storyPool : passages),
+      applyItems: sampleAligned(apply, focus, 6, clozeMatchesFocus),
       writeTasks: produce,
       results: {}
     };
@@ -115,11 +165,6 @@ window.Session = (function () {
     if (f.type === 'verbs') return 'New verbs · ' + f.verbs.slice(0, 3).join(', ') + (f.verbs.length > 3 ? '…' : '');
     return 'Practice & review day';
   }
-  function focusVerb(ctx) {           // the verb used in the intro checklist line
-    var f = ctx.focus || {};
-    return f.type === 'vocab' ? 'Learn' : (f.type === 'verbs' ? 'Meet' : (f.type === 'practice' ? 'Consolidate' : 'Learn'));
-  }
-
   // ---- progress / streak -------------------------------------------------
   function loadProg() { try { return JSON.parse(localStorage.getItem(PKEY)) || {}; } catch (e) { return {}; } }
   function saveProg(o) { try { localStorage.setItem(PKEY, JSON.stringify(o)); } catch (e) {} }
