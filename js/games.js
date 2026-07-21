@@ -23,9 +23,11 @@
 window.Games = (function () {
   var UI = window.UI, E = window.ENGINE, S = window.SRS;
   var BEST_KEY = 'fluidez.gameBest';
-  var ROUND_LEN = 12, CONTRARRELOJ_SECONDS = 90;
+  var CONTRARRELOJ_SECONDS = 90;
 
   function isBeginner() { return !!(window.Profile && window.Profile.current() === 'beginner'); }
+  // Round length is one of Phase 7's consolidated per-mode knobs (js/profile.js).
+  function roundLen() { return window.Profile ? window.Profile.params().roundLength : 12; }
   function loadBest() { try { return JSON.parse(localStorage.getItem(BEST_KEY)) || {}; } catch (e) { return {}; } }
   function saveBest(o) { try { localStorage.setItem(BEST_KEY, JSON.stringify(o)); } catch (e) {} }
   function bestFor(key) { return loadBest()[key] || 0; }
@@ -91,7 +93,7 @@ window.Games = (function () {
 
     function updateScore() {
       scoreRow.textContent = tranquilo
-        ? (seen + ' / ' + Math.min(ROUND_LEN, pool.length))
+        ? (seen + ' / ' + Math.min(roundLen(), pool.length))
         : (correct + ' correct · ' + seen + ' seen' + (bestFor(bestKey) ? ' · best ' + bestFor(bestKey) : ''));
     }
     function tick() {
@@ -103,7 +105,7 @@ window.Games = (function () {
     if (!tranquilo) { tick(); timerId = setInterval(tick, 250); }
 
     function nextItem() {
-      if (tranquilo && seen >= Math.min(ROUND_LEN, pool.length)) { finish(); return; }
+      if (tranquilo && seen >= Math.min(roundLen(), pool.length)) { finish(); return; }
       if (idx >= pool.length) { pool = E.shuffle(items.slice()); idx = 0; }   // recycle
       var item = pool[idx++];
       renderItem(itemHost, item, function (good) {
@@ -208,7 +210,7 @@ window.Games = (function () {
     var getTranquilo = modeToggle(wrap, function () {});
     var go = UI.el('button', 'primary-btn', 'Empezar →'); go.type = 'button';
     go.addEventListener('click', function () {
-      var source = content === 'vocab' ? vocabPairSource() : conjPairSource(isBeginner() ? ['presente'] : ['presente', 'preterito']);
+      var source = content === 'vocab' ? vocabPairSource() : conjPairSource(window.Profile ? window.Profile.tenses() : ['presente']);
       runEmparejar(host, source, getTranquilo(), content);
     });
     wrap.appendChild(go);
@@ -339,9 +341,13 @@ window.Games = (function () {
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(exitHeader('Opción múltiple'));
     wrap.appendChild(UI.el('p', 'muted', 'Choose the right answer from a few options.'));
-    var sub = 'meaning';
-    var modes = [['meaning', 'Significado'], ['article', 'Artículo'], ['conj', 'Conjugación']];
-    if (!isBeginner()) modes.push(['prep', 'Por / Para']);
+    // Article/gender drills are pushed early for beginners — noun gender is
+    // one of the first things worth drilling hard, per the brief's beginner
+    // polish (recognition, articles, etc. up front).
+    var sub = isBeginner() ? 'article' : 'meaning';
+    var modes = isBeginner()
+      ? [['article', 'Artículo'], ['meaning', 'Significado'], ['conj', 'Conjugación'], ['prep', 'Por / Para']]
+      : [['meaning', 'Significado'], ['article', 'Artículo'], ['conj', 'Conjugación'], ['prep', 'Por / Para']];
     wrap.appendChild(UI.el('h3', null, 'Qué practicar'));
     var seg = UI.el('div', 'segmented');
     modes.forEach(function (o) {
@@ -356,7 +362,7 @@ window.Games = (function () {
       var items;
       if (sub === 'meaning') items = mcqMeaningItems();
       else if (sub === 'article') items = mcqArticleItems();
-      else if (sub === 'conj') items = mcqConjItems(isBeginner() ? ['presente'] : ['presente', 'preterito', 'imperfecto']);
+      else if (sub === 'conj') items = mcqConjItems(window.Profile ? window.Profile.tenses() : ['presente']);
       else items = mcqPrepositionItems();
       runOpcion(host, items, getTranquilo(), sub);
     });
@@ -434,8 +440,7 @@ window.Games = (function () {
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(exitHeader('Conjugación rápida'));
     wrap.appendChild(UI.el('p', 'muted', 'Infinitive + person + tense → type the form. Engine-graded.'));
-    var allTenses = E.TENSES.map(function (t) { return t.key; });
-    var tenses = isBeginner() ? allTenses.filter(function (k) { return ['presente', 'preterito', 'imperfecto'].indexOf(k) !== -1; }) : allTenses;
+    var tenses = window.Profile ? window.Profile.tenses() : E.TENSES.map(function (t) { return t.key; });
     var chosen = {};
     wrap.appendChild(UI.el('h3', null, 'Tenses'));
     var tchips = UI.el('div', 'chip-row');
@@ -588,8 +593,9 @@ window.Games = (function () {
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(exitHeader('¿Cuál va aquí?'));
     wrap.appendChild(UI.el('p', 'muted', 'The classic traps — pick the one that actually goes here.'));
-    var modes = [['ser-estar', 'Ser / Estar']];
-    if (!isBeginner()) { modes.push(['por-para', 'Por / Para'], ['preterite-imperfect', 'Pretérito / Imperfecto'], ['subj', 'Subjuntivo / Indicativo']); }
+    var LABELS = { 'ser-estar': 'Ser / Estar', 'por-para': 'Por / Para', 'preterite-imperfect': 'Pretérito / Imperfecto', subj: 'Subjuntivo / Indicativo' };
+    var allowed = window.Profile ? window.Profile.params().cualPairs : ['ser-estar'];
+    var modes = allowed.map(function (k) { return [k, LABELS[k]]; });
     var sub = modes[0][0];
     wrap.appendChild(UI.el('h3', null, 'Which pair'));
     var seg = UI.el('div', 'segmented');

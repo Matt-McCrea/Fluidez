@@ -5,12 +5,14 @@
  * two are noise before there's enough data to fill them.
  *
  * Every round except Puntos débiles and Siguiente paso draws from a fixed
- * Due / Focus / Stretch mix (see RATIOS): Due is genuinely scheduled review
- * (SRS.duePriority, read-only — this is a supplementary round, not the once-
- * daily Repasar stage, so it must NOT reschedule anything), Focus is whatever
- * the chosen option narrows to (a theme, a tense, or nothing for the default),
- * and Stretch is brand-new material. If a bucket can't be filled its share is
- * redistributed to the others rather than padding with trivially-known items.
+ * Due / Focus / Stretch mix (each mode's bucketRatios, consolidated in
+ * js/profile.js along with every other mode difference — see Phase 7): Due
+ * is genuinely scheduled review (SRS.duePriority, read-only — this is a
+ * supplementary round, not the once-daily Repasar stage, so it must NOT
+ * reschedule anything), Focus is whatever the chosen option narrows to (a
+ * theme, a tense, or nothing for the default), and Stretch is brand-new
+ * material. If a bucket can't be filled its share is redistributed to the
+ * others rather than padding with trivially-known items.
  *
  * Puntos débiles pulls the worst items from the error log and the leech list
  * directly, ordered by miss count — no mixing. Siguiente paso surfaces the
@@ -21,12 +23,6 @@
  * ========================================================================== */
 window.Selector = (function () {
   var UI = window.UI, S = window.SRS;
-
-  var RATIOS = {
-    standard: { due: 0.50, focus: 0.30, stretch: 0.20 },
-    beginner: { due: 0.65, focus: 0.25, stretch: 0.10 },
-    refresher: { due: 0.40, focus: 0.30, stretch: 0.30 }
-  };
 
   var CAT_LABEL = {
     greetings: 'Greetings', people: 'People & family', food: 'Food & drink', home: 'Home',
@@ -55,8 +51,7 @@ window.Selector = (function () {
 
   // ---- the fixed 3-bucket mix ----------------------------------------------
   function mix(pool, focusPool, total) {
-    var prName = window.Profile ? window.Profile.params().name : 'standard';
-    var ratios = RATIOS[prName] || RATIOS.standard;
+    var ratios = window.Profile ? window.Profile.params().bucketRatios : { due: 0.5, focus: 0.3, stretch: 0.2 };
     var wantDue = Math.round(total * ratios.due);
     var wantFocus = Math.round(total * ratios.focus);
     var wantStretch = Math.max(0, total - wantDue - wantFocus);
@@ -251,7 +246,7 @@ window.Selector = (function () {
   // Reuses the Más menu's row styling (.mas-list/.mas-row) — same shape
   // (icon, title + subtitle, chevron), no need for a parallel set of classes.
   function renderChooser(container) {
-    var beginner = isBeginner();
+    var visible = function (key) { return !window.Profile || window.Profile.selectorVisible(key); };
     var list = UI.el('div', 'mas-list');
     function row(icon, title, sub, onTap) {
       var b = UI.el('button', 'mas-row'); b.type = 'button';
@@ -259,11 +254,11 @@ window.Selector = (function () {
       b.addEventListener('click', function () { window.Shell.openOverlay(); onTap(document.getElementById('stage-host')); });
       list.appendChild(b);
     }
-    row('🔀', 'Repaso inteligente', 'A mixed round — due items, plus a bit of new material', function (host) { runMixed(host, null, 'Repaso inteligente'); });
-    row('🏷️', 'Por tema', 'Pick a theme to focus this round on', function (host) { showThemePicker(host); });
-    if (!beginner) row('📖', 'Gramática', 'Pick a tense or concept to drill', function (host) { showTensePicker(host); });
-    if (!beginner) row('🩹', 'Puntos débiles', 'Your worst items, ordered by miss count', function (host) { runWeakSpots(host); });
-    row('🎯', 'Siguiente paso', 'What to test next to progress', function (host) { showFrontier(host); });
+    if (visible('inteligente')) row('🔀', 'Repaso inteligente', 'A mixed round — due items, plus a bit of new material', function (host) { runMixed(host, null, 'Repaso inteligente'); });
+    if (visible('tema')) row('🏷️', 'Por tema', 'Pick a theme to focus this round on', function (host) { showThemePicker(host); });
+    if (visible('gramatica')) row('📖', 'Gramática', 'Pick a tense or concept to drill', function (host) { showTensePicker(host); });
+    if (visible('debiles')) row('🩹', 'Puntos débiles', 'Your worst items, ordered by miss count', function (host) { runWeakSpots(host); });
+    if (visible('siguiente')) row('🎯', 'Siguiente paso', 'What to test next to progress', function (host) { showFrontier(host); });
     container.appendChild(list);
   }
 

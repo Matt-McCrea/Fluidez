@@ -25,6 +25,13 @@ window.Profile = (function () {
     'clothing', 'animals', 'questions', 'connectors', 'common', 'school',
     'health', 'shopping', 'sports', 'kitchen', 'work'];
 
+  // Reduced tense set for a true beginner (present + the two core pasts);
+  // everyone else works with the full ordered list. Shared by the
+  // Conjugación rápida game and the Conjugación drill in Practicar so
+  // neither has to keep its own copy.
+  var CORE_TENSES = ['presente', 'preterito', 'imperfecto'];
+  function fullTenseSet() { return (window.ENGINE ? window.ENGINE.TENSES : []).map(function (t) { return t.key; }); }
+
   var PROFILES = {
     standard: {
       name: 'standard', label: 'Standard',
@@ -32,7 +39,14 @@ window.Profile = (function () {
       reviewDirection: 'en2es', reviewMode: 'type',
       orderedVocab: false, vocabCats: null,
       syllabusPace: 1, unlockAll: false,
-      applyMode: 'type', produceStyle: 'full'
+      applyMode: 'type', produceStyle: 'full',
+      // Phase 3's Due/Focus/Stretch mix for on-demand practice rounds.
+      bucketRatios: { due: 0.50, focus: 0.30, stretch: 0.20 },
+      tenses: function () { return fullTenseSet(); },
+      defaultGameMode: 'tranquilo',
+      selectors: ['inteligente', 'tema', 'gramatica', 'debiles', 'siguiente'],
+      cualPairs: ['ser-estar', 'por-para', 'preterite-imperfect', 'subj'],
+      roundLength: 12
     },
     beginner: {
       name: 'beginner', label: 'Beginner',
@@ -42,7 +56,15 @@ window.Profile = (function () {
       reviewDirection: 'graduated', reviewMode: 'choice',
       orderedVocab: true, vocabCats: BEGINNER_CATS,
       syllabusPace: 3, unlockAll: false,
-      applyMode: 'wordbank', produceStyle: 'guided'
+      applyMode: 'wordbank', produceStyle: 'guided',
+      bucketRatios: { due: 0.65, focus: 0.25, stretch: 0.10 },
+      tenses: function () { return CORE_TENSES; },
+      defaultGameMode: 'tranquilo',
+      // Gramática and Puntos débiles are noise before there's enough data to
+      // fill them; article drills (Opción múltiple) and ser/estar stay in.
+      selectors: ['inteligente', 'tema', 'siguiente'],
+      cualPairs: ['ser-estar'],
+      roundLength: 8
     },
     refresher: {
       name: 'refresher', label: 'Refresher',
@@ -50,7 +72,13 @@ window.Profile = (function () {
       reviewDirection: 'en2es', reviewMode: 'type',
       orderedVocab: false, vocabCats: null,
       syllabusPace: 1, unlockAll: true,
-      applyMode: 'type', produceStyle: 'full'
+      applyMode: 'type', produceStyle: 'full',
+      bucketRatios: { due: 0.40, focus: 0.30, stretch: 0.30 },
+      tenses: function () { return fullTenseSet(); },
+      defaultGameMode: 'tranquilo',
+      selectors: ['inteligente', 'tema', 'gramatica', 'debiles', 'siguiente'],
+      cualPairs: ['ser-estar', 'por-para', 'preterite-imperfect', 'subj'],
+      roundLength: 12
     }
   };
 
@@ -79,6 +107,8 @@ window.Profile = (function () {
     catRank: function (cat) { var c = PROFILES[current].vocabCats; var i = c ? c.indexOf(cat) : -1; return i === -1 ? 999 : i; },
     reviewCap: function () { return capFor(current); },
     capFor: capFor,
-    setCap: function (name, n) { if (!PROFILES[name]) return; var o = loadCaps(); o[name] = Math.max(1, Math.round(n)); saveCaps(o); }
+    setCap: function (name, n) { if (!PROFILES[name]) return; var o = loadCaps(); o[name] = Math.max(1, Math.round(n)); saveCaps(o); },
+    tenses: function () { return PROFILES[current].tenses(); },
+    selectorVisible: function (key) { return PROFILES[current].selectors.indexOf(key) !== -1; }
   };
 })();

@@ -18,16 +18,9 @@
 window.Drills = (function () {
   var UI = window.UI, E = window.ENGINE, S = window.SRS;
 
-  // Beginner sees a reduced tense set (present + the two core pasts); everyone
-  // else gets the full ordered list. Mirrors the roadmap the two apps share.
-  var BEGINNER_TENSES = ['presente', 'preterito', 'imperfecto'];
-  function tenseKeys() {
-    var all = E.TENSES.map(function (t) { return t.key; });
-    if (window.Profile && window.Profile.current() === 'beginner') {
-      return all.filter(function (k) { return BEGINNER_TENSES.indexOf(k) !== -1; });
-    }
-    return all;
-  }
+  // Per-mode tense set, consolidated in js/profile.js (Phase 7) — beginner
+  // gets present + the two core pasts, everyone else the full ordered list.
+  function tenseKeys() { return window.Profile ? window.Profile.tenses() : E.TENSES.map(function (t) { return t.key; }); }
 
   function backToTab() { window.Shell.closeOverlay(); window.Shell.refresh('practicar'); }
 
