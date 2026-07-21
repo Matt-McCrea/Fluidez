@@ -28,11 +28,12 @@ window.Profile = (function () {
     'clothing', 'animals', 'questions', 'connectors', 'common', 'school',
     'health', 'shopping', 'sports', 'kitchen', 'work'];
 
-  // Reduced tense set for a true beginner (present + the two core pasts);
-  // everyone else works with the full ordered list. Shared by the
-  // Conjugación rápida game and the Conjugación drill in Practicar so
-  // neither has to keep its own copy.
-  var CORE_TENSES = ['presente', 'preterito', 'imperfecto'];
+  // A beginner's tense set is NOT a fixed list — it's exactly the tenses
+  // their daily curriculum has actually taught so far (see
+  // introducedTenseKeys() below), so every quiz/game they meet stays at
+  // their level as they progress. 'presente' is the day-one fallback,
+  // before their first grammar lesson has landed. Everyone else works with
+  // the full ordered list.
   function fullTenseSet() { return (window.ENGINE ? window.ENGINE.TENSES : []).map(function (t) { return t.key; }); }
 
   var PROFILES = {
@@ -60,7 +61,7 @@ window.Profile = (function () {
       syllabusPace: 3, unlockAll: false,
       applyMode: 'wordbank', produceStyle: 'guided',
       bucketRatios: { due: 0.65, focus: 0.25, stretch: 0.10 },
-      tenses: function () { return CORE_TENSES; },
+      tenses: function () { return introducedTenseKeys(); },
       defaultGameMode: 'tranquilo',
       // Gramática and Puntos débiles are noise before there's enough data to
       // fill them; article drills (Opción múltiple) and ser/estar stay in.
@@ -113,6 +114,21 @@ window.Profile = (function () {
       if (key.indexOf('verbs:') === 0) key.slice(6).split(',').forEach(function (inf) { set[inf] = 1; });
     });
     return set;
+  }
+
+  // The tenses a beginner has actually been taught so far, in the order the
+  // daily session sets prog.studied[<tenseKey>] for a grammar-focus day
+  // (true for both the automatic curriculum pace and any on-demand
+  // LessonRun). A completely fresh profile (day one, before its first
+  // grammar lesson) falls back to just 'presente' — the one thing that's
+  // unconditionally lesson #1 for every mode — rather than an empty list,
+  // which would leave every conjugation game with nothing to show.
+  function introducedTenseKeys() {
+    var prog = loadProg(), studied = prog.studied || {}, out = [];
+    Object.keys(studied).forEach(function (id) {
+      if (window.ENGINE && window.ENGINE.TENSE_LABEL[id]) out.push(id);
+    });
+    return out.length ? out : ['presente'];
   }
 
   // Session review cap per mode is adjustable in Ajustes — an override here
