@@ -172,6 +172,31 @@ window.SRS = (function () {
     return shuffle(chosen.concat(spotChecks)).concat(freshChosen);
   }
 
+  // Read-only priority ordering (most overdue, then weakest ease) over a pool,
+  // with no side effects — no jitter reschedule, no state change. Used by the
+  // on-demand content selectors (Practicar) to pull a SUBSET of due items into
+  // a mixed round without disturbing the real due schedule that the once-daily
+  // Repasar stage (batch(), above) relies on.
+  function duePriority(pool, n) {
+    var s = load();
+    var due = pool.filter(function (it) { var st = s[it.id]; return st && !st.leech && !st.dominado && st.due <= today(); });
+    due.sort(function (a, b) {
+      var sa = s[a.id], sb = s[b.id];
+      var oa = today() - sa.due, ob = today() - sb.due;
+      if (oa !== ob) return ob - oa;
+      return sa.box - sb.box;
+    });
+    return n == null ? due : due.slice(0, n);
+  }
+
+  // Never-enrolled items from a pool — the "brand new" half of a Stretch bucket.
+  function freshItems(pool, n, doShuffle) {
+    var s = load();
+    var fresh = pool.filter(function (it) { return !s[it.id]; });
+    if (doShuffle !== false) shuffle(fresh);
+    return n == null ? fresh : fresh.slice(0, n);
+  }
+
   function dueCount(pool) {
     return pool.reduce(function (n, it) { return n + (isDue(it.id) ? 1 : 0); }, 0);
   }
@@ -185,6 +210,7 @@ window.SRS = (function () {
   return {
     enrol: enrol, grade: grade, isDue: isDue, isEnrolled: isEnrolled, boxOf: boxOf,
     isDominado: isDominado, isLeech: isLeech,
-    batch: batch, dueCount: dueCount, enrolledCount: enrolledCount, today: today
+    batch: batch, duePriority: duePriority, freshItems: freshItems,
+    dueCount: dueCount, enrolledCount: enrolledCount, today: today
   };
 })();

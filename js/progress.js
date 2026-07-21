@@ -218,5 +218,5 @@ window.Progress = (function () {
     host.appendChild(wrap);
   }
 
-  return { render: render };
+  return { render: render, vocabLessons: vocabLessons, verbLessons: verbLessons };
 })();

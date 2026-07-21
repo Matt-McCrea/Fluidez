@@ -52,7 +52,7 @@ window.StageReview = (function () {
       items.push({
         id: 'vt:' + it.inf + ':' + it.tense,
         front: pick.text.replace('___', '＿＿＿') + '  [' + pick.inf + ']', back: ans,
-        kind: 'verb-tense', fixed: true, enrolledOnly: true, hint: E.TENSE_LABEL[pick.tense]
+        kind: 'verb-tense', tense: pick.tense, fixed: true, enrolledOnly: true, hint: E.TENSE_LABEL[pick.tense]
       });
     });
     if (Capture) Capture.cards().forEach(function (c) {                 // {front:en, back:es, hint}
@@ -200,5 +200,5 @@ window.StageReview = (function () {
     show();
   }
 
-  return { key: 'review', label: 'Repasar', icon: '🔁', run: run };
+  return { key: 'review', label: 'Repasar', icon: '🔁', run: run, pool: pool };
 })();
