@@ -11,7 +11,7 @@ window.Hub = (function () {
     var items = [];
     (window.VOCAB || []).forEach(function (w) {
       if (window.Profile && !window.Profile.catAllowed(w.cat)) return;
-      items.push({ id: 'v:' + w.es });
+      items.push({ id: 'v:' + w.es + ':meaning' });
     });
     (window.IDIOMS || []).forEach(function (x) { items.push({ id: 'i:' + x.es }); });
     (window.GRAMMAR_LESSONS || []).forEach(function (l) {

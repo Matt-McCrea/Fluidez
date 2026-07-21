@@ -28,7 +28,7 @@ window.Profile = (function () {
   var PROFILES = {
     standard: {
       name: 'standard', label: 'Standard',
-      newPerDay: 4, reviewBatchMax: 12,
+      newPerDay: 4, reviewBatchMax: 20,
       reviewDirection: 'en2es', reviewMode: 'type',
       orderedVocab: false, vocabCats: null,
       syllabusPace: 1, unlockAll: false,
@@ -36,7 +36,7 @@ window.Profile = (function () {
     },
     beginner: {
       name: 'beginner', label: 'Beginner',
-      newPerDay: 3, reviewBatchMax: 10,
+      newPerDay: 3, reviewBatchMax: 12,
       // graduated: new words come as ES→EN recognition (multiple choice), then
       // flip to EN→ES production (typed) once they've stuck (SRS box ≥ 2).
       reviewDirection: 'graduated', reviewMode: 'choice',
@@ -46,7 +46,7 @@ window.Profile = (function () {
     },
     refresher: {
       name: 'refresher', label: 'Refresher',
-      newPerDay: 12, reviewBatchMax: 16,
+      newPerDay: 12, reviewBatchMax: 30,
       reviewDirection: 'en2es', reviewMode: 'type',
       orderedVocab: false, vocabCats: null,
       syllabusPace: 1, unlockAll: true,
@@ -63,12 +63,22 @@ window.Profile = (function () {
 
   var current = resolve();
 
+  // Session review cap per mode is adjustable in Ajustes — an override here
+  // takes precedence over the PROFILES default above.
+  var CAPKEY = 'fluidez.caps';
+  function loadCaps() { try { return JSON.parse(localStorage.getItem(CAPKEY)) || {}; } catch (e) { return {}; } }
+  function saveCaps(o) { try { localStorage.setItem(CAPKEY, JSON.stringify(o)); } catch (e) {} }
+  function capFor(name) { var o = loadCaps(); return (PROFILES[name] && o[name] != null) ? o[name] : (PROFILES[name] ? PROFILES[name].reviewBatchMax : 0); }
+
   return {
     params: function () { return PROFILES[current]; },
     current: function () { return current; },
     all: function () { return Object.keys(PROFILES).map(function (k) { return PROFILES[k]; }); },
     set: function (name) { if (PROFILES[name]) { current = name; try { localStorage.setItem(KEY, name); } catch (e) {} } },
     catAllowed: function (cat) { var c = PROFILES[current].vocabCats; return !c || c.indexOf(cat) !== -1; },
-    catRank: function (cat) { var c = PROFILES[current].vocabCats; var i = c ? c.indexOf(cat) : -1; return i === -1 ? 999 : i; }
+    catRank: function (cat) { var c = PROFILES[current].vocabCats; var i = c ? c.indexOf(cat) : -1; return i === -1 ? 999 : i; },
+    reviewCap: function () { return capFor(current); },
+    capFor: capFor,
+    setCap: function (name, n) { if (!PROFILES[name]) return; var o = loadCaps(); o[name] = Math.max(1, Math.round(n)); saveCaps(o); }
   };
 })();

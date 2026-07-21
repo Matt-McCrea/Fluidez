@@ -125,8 +125,8 @@ window.StageLearn = (function () {
     wrap.appendChild(UI.el('h1', null, 'New words · ' + (CAT_LABEL[f.cat] || f.cat)));
     wrap.appendChild(UI.el('p', 'muted', 'Learn these by meaning first. They join your review deck straight away.'));
     wrap.appendChild(UI.el('div', null, listTable(words.map(function (w) { return [w.es, w.en]; }))));
-    words.forEach(function (w) { S.enrol('v:' + w.es); });
-    var check = words.slice(0, 6).map(function (w) { return qcItem('v:' + w.es, w.es, w.en); });
+    words.forEach(function (w) { S.enrol('v:' + w.es + ':meaning'); });
+    var check = words.slice(0, 6).map(function (w) { return qcItem('v:' + w.es + ':meaning', w.es, w.en); });
     wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, check, 'vocab', done); }));
     host.appendChild(wrap);
   }

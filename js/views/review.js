@@ -22,7 +22,7 @@ window.StageReview = (function () {
     var items = [];
     (window.VOCAB || []).forEach(function (w, idx) {
       if (!P.catAllowed(w.cat)) return;
-      items.push({ id: 'v:' + w.es, es: w.es, en: w.en, kind: 'vocab', cat: w.cat, rank: P.catRank(w.cat), idx: idx });
+      items.push({ id: 'v:' + w.es + ':meaning', es: w.es, en: w.en, kind: 'vocab', cat: w.cat, rank: P.catRank(w.cat), idx: idx });
     });
     (window.IDIOMS || []).forEach(function (x) {
       items.push({ id: 'i:' + x.es, es: x.es, en: x.en, lit: x.lit || null, kind: 'idiom' });
@@ -34,6 +34,26 @@ window.StageReview = (function () {
     });
     (window.VERBS || []).forEach(function (v) {
       items.push({ id: 'vm:' + v.inf, es: v.inf, en: v.en, kind: 'verb', enrolledOnly: true });
+    });
+    // conjugation-in-context, scheduled per (lemma, tense) — a different real
+    // sentence is drawn each time this pair comes up, but the id (and so the
+    // schedule) is stable per verb+tense, not per sentence.
+    var seenPairs = {};
+    (window.APPLY_ITEMS || []).forEach(function (it) {
+      if (it.type !== 'cloze') return;
+      var key = it.inf + '|' + it.tense;
+      if (seenPairs[key]) return; seenPairs[key] = 1;
+      var group = (window.APPLY_ITEMS || []).filter(function (x) { return x.type === 'cloze' && x.inf === it.inf && x.tense === it.tense; });
+      var pick = group[Math.floor(Math.random() * group.length)];
+      var v = E.verbByInf(pick.inf);
+      var idx = E.personsFor(pick.tense).indexOf(pick.person);
+      var ans = v ? E.conjugate(v, pick.tense)[idx] : null;
+      if (!ans) return;
+      items.push({
+        id: 'vt:' + it.inf + ':' + it.tense,
+        front: pick.text.replace('___', '＿＿＿') + '  [' + pick.inf + ']', back: ans,
+        kind: 'verb-tense', fixed: true, enrolledOnly: true, hint: E.TENSE_LABEL[pick.tense]
+      });
     });
     if (Capture) Capture.cards().forEach(function (c) {                 // {front:en, back:es, hint}
       items.push({ id: c.id, es: c.back, en: c.front, hint: c.hint || null, kind: 'capture' });
@@ -60,7 +80,7 @@ window.StageReview = (function () {
     if (pr.orderedVocab) {
       all.sort(function (a, b) { return (a.rank == null ? 500 : a.rank) - (b.rank == null ? 500 : b.rank) || (a.idx || 0) - (b.idx || 0); });
     }
-    var batch = S.batch(all, pr.reviewBatchMax, pr.newPerDay, !pr.orderedVocab);
+    var batch = S.batch(all, P.reviewCap(), pr.newPerDay, !pr.orderedVocab);
     batch.forEach(function (it) { S.enrol(it.id); });
 
     // recognition distractors: other English glosses of the same kind

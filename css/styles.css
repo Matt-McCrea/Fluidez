@@ -127,6 +127,7 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .kind-badge[data-kind="idiom"] { background:#c77d0a; }
 .kind-badge[data-kind="grammar"] { background:#5b6ff0; }
 .kind-badge[data-kind="verb"] { background:#8a4fb8; }
+.kind-badge[data-kind="verb-tense"] { background:#8a4fb8; }
 .kind-badge[data-kind="capture"] { background:#0e8a8a; }
 .kind-badge[data-kind="error"] { background:#c0392b; }
 .card-front { font-size:1.9rem; font-weight:700; margin:6px 0 20px; min-height:2.2rem; }
@@ -441,3 +442,8 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 @media (max-width:640px) {
   .bottom-nav-btn { font-size:.64rem; }
 }
+
+/* ---- Ajustes: session-cap fields ---- */
+.cap-row { display:flex; gap:14px; margin-top:6px; }
+.cap-field { flex:1; }
+.cap-field .answer-input { width:100%; max-width:none; text-align:left; }

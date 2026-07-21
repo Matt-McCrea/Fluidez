@@ -7,13 +7,17 @@
  * Transforms rewrite a sentence per an instruction (tense/person/negation).
  * ========================================================================== */
 window.StageApply = (function () {
-  var UI = window.UI, E = window.ENGINE, C = window.Checker;
+  var UI = window.UI, E = window.ENGINE, C = window.Checker, S = window.SRS;
 
   function clozeAnswer(item) {
     var v = E.verbByInf(item.inf);
     var idx = E.personsFor(item.tense).indexOf(item.person);
     return v && idx >= 0 ? E.conjugate(v, item.tense)[idx] : null;
   }
+
+  // Conjugation-in-context, scheduled per (lemma, tense) — see js/srs.js.
+  function tenseId(it) { return 'vt:' + it.inf + ':' + it.tense; }
+  function gradeTense(it, good) { if (it.type === 'cloze' && S) { S.enrol(tenseId(it)); S.grade(tenseId(it), good); } }
 
   // Log a revealed item into the error log so it resurfaces in review.
   function logMiss(it, answer) {
@@ -75,6 +79,7 @@ window.StageApply = (function () {
           if (answered) return; answered = true;
           var right = opt === answer;
           b.classList.add(right ? 'right' : 'wrong');
+          gradeTense(it, right);
           if (!right) {
             Array.prototype.forEach.call(bank.children, function (c) { if (c.textContent === answer) c.classList.add('right'); });
             if (window.ErrorLog) window.ErrorLog.record({ id: 'err:cloze:' + E.normalize(it.text), front: it.text.replace('___', '＿＿＿') + '   [' + it.inf + ']', back: answer, kind: 'error', source: 'apply-cloze', reviewable: true });
@@ -152,6 +157,7 @@ window.StageApply = (function () {
         var r = C.checkExact(input.value, answer);
         if (r.pass) {
           locked = true;
+          gradeTense(it, true);
           fb.innerHTML = '¡Correcto!<br>' + explain();
           fb.className = 'feedback good';
           setTimeout(function () { locked = false; next(true); }, 900);
@@ -164,6 +170,7 @@ window.StageApply = (function () {
         if (locked) return;
         if (revealed) { next(false); return; }
         revealed = true;
+        gradeTense(it, false);
         fb.innerHTML = explain();
         fb.className = 'feedback reveal';
         reveal.textContent = 'Next →';

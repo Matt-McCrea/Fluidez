@@ -11,8 +11,8 @@ window.Settings = (function () {
   var UI = window.UI;
   // Every key Fluidez writes to localStorage. Keep this in sync by hand —
   // there's no build step to derive it automatically.
-  var KEYS = ['fluidez.srs', 'fluidez.progress', 'fluidez.errors', 'fluidez.captured',
-    'fluidez.journal', 'fluidez.profile', 'fluidez.theme', 'fluidez.topicLevel'];
+  var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.errors', 'fluidez.captured',
+    'fluidez.journal', 'fluidez.profile', 'fluidez.theme', 'fluidez.topicLevel', 'fluidez.caps'];
 
   function exportData() {
     var out = { app: 'fluidez', exportedAt: new Date().toISOString(), data: {} };
@@ -88,6 +88,27 @@ window.Settings = (function () {
     importWrap.appendChild(fileInput);
     importWrap.appendChild(status);
     wrap.appendChild(importWrap);
+
+    if (window.Profile) {
+      wrap.appendChild(UI.el('h3', null, 'Tope de repaso'));
+      wrap.appendChild(UI.el('p', 'muted',
+        'The most items Repasar will show in one session, per mode. When more are due than this, the highest-priority ones (leeches, then most overdue) are chosen and the rest are pushed a few days out — never a growing backlog.'));
+      var capRow = UI.el('div', 'cap-row');
+      window.Profile.all().forEach(function (pf) {
+        var field = UI.el('div', 'cap-field');
+        field.appendChild(UI.el('label', 'field-label', pf.label));
+        var input = UI.el('input', 'answer-input'); input.type = 'number'; input.min = '1'; input.max = '200';
+        input.value = String(window.Profile.capFor(pf.name));
+        input.addEventListener('change', function () {
+          var n = parseInt(input.value, 10);
+          if (n > 0) window.Profile.setCap(pf.name, n);
+          input.value = String(window.Profile.capFor(pf.name));
+        });
+        field.appendChild(input);
+        capRow.appendChild(field);
+      });
+      wrap.appendChild(capRow);
+    }
 
     var home = UI.el('button', 'ghost-btn', '← Más');
     home.type = 'button'; home.style.marginTop = '24px';

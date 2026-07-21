@@ -38,10 +38,13 @@ window.Practice = (function () {
   function topicLevel(id) { return loadTL()[id] || 1; }
 
   function pairsToCards(pairs, kind) {
+    // vocab shares the same schedule as the daily Review stage (the meaning
+    // aspect — see js/srs.js); idioms keep their own separate id.
     return pairs.map(function (p) {
+      var id = kind === 'vocab' ? 'v:' + p.es + ':meaning' : kind.charAt(0) + ':' + p.es;
       return dir === 'es2en'
-        ? { id: kind.charAt(0) + ':' + p.es, front: p.es, back: p.en, kind: kind, hint: p.hint }
-        : { id: kind.charAt(0) + ':' + p.es, front: p.en, back: p.es, kind: kind, hint: p.hint };
+        ? { id: id, front: p.es, back: p.en, kind: kind, hint: p.hint }
+        : { id: id, front: p.en, back: p.es, kind: kind, hint: p.hint };
     });
   }
   function capturedCards() {
