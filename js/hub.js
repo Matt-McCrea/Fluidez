@@ -1,6 +1,6 @@
 /* ============================================================================
  * HUB — the shared review-pool helper (used by the Inicio status strip) and
- * the "Tus errores" deck, reached from the Progreso tab.
+ * the "Tus errores" deck, reached from the Lecciones tab.
  * ========================================================================== */
 window.Hub = (function () {
   var UI = window.UI, S = window.SRS;

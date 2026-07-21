@@ -4,19 +4,20 @@
  * débiles, Siguiente paso. Beginner mode shows only 1, 2 and 5 — the other
  * two are noise before there's enough data to fill them.
  *
- * Every round except Puntos débiles and Siguiente paso draws from a fixed
- * Due / Focus / Stretch mix (each mode's bucketRatios, consolidated in
+ * Only Repaso inteligente (the no-specific-focus default) draws from the
+ * fixed Due / Focus / Stretch mix (each mode's bucketRatios, consolidated in
  * js/profile.js along with every other mode difference — see Phase 7): Due
  * is genuinely scheduled review (SRS.duePriority, read-only — this is a
  * supplementary round, not the once-daily Repasar stage, so it must NOT
- * reschedule anything), Focus is whatever the chosen option narrows to (a
- * theme, a tense, or nothing for the default), and Stretch is brand-new
- * material. If a bucket can't be filled its share is redistributed to the
- * others rather than padding with trivially-known items.
+ * reschedule anything), and Stretch is brand-new material. Por tema and
+ * Gramática are deliberately NOT mixed — once you've picked a theme or a
+ * tense, the round is only that theme's words or that tense's conjugations/
+ * usage, with no other vocab pulled in, so practising "comida" actually
+ * drills comida.
  *
  * Puntos débiles pulls the worst items from the error log and the leech list
- * directly, ordered by miss count — no mixing. Siguiente paso surfaces the
- * next 1-3 items just beyond the learner's frontier (curriculum order for
+ * directly, ordered by miss count — no mixing either. Siguiente paso surfaces
+ * the next 1-3 items just beyond the learner's frontier (curriculum order for
  * beginner, mastery-derived for standard/refresher) with a reason shown, and
  * hands off to the existing LessonRun for whichever is tapped, since a
  * genuinely new grammar/vocab/verb focus needs teaching, not cold drilling.
@@ -114,19 +115,26 @@ window.Selector = (function () {
     runDeck(host, title, cards, 'Nothing to practise here yet — come back once you\'ve met a few things.');
   }
 
+  // Por tema and Gramática are meant to drill ONLY the chosen theme/tense —
+  // no due/stretch vocab mixed in (that's what Repaso inteligente is for).
+  function runFocusOnly(host, focusPool, title) {
+    var cards = UI.shuffle((focusPool || []).slice()).map(toCard);
+    runDeck(host, title, cards, 'Nothing to practise here yet — come back once you\'ve met a few things.');
+  }
+
   // ---- Por tema -------------------------------------------------------------
   function showThemePicker(host) {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h2', null, 'Por tema'));
-    wrap.appendChild(UI.el('p', 'muted', 'Pick a theme — most of this round will draw on it.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Pick a theme — this round is only that theme\'s words.'));
     var pool = masterPool();
     var byCat = {};
     pool.forEach(function (it) { if (it.kind === 'vocab') (byCat[it.cat] = byCat[it.cat] || []).push(it); });
     var chips = UI.el('div', 'chip-row');
     Object.keys(byCat).sort(function (a, b) { return label(a).localeCompare(label(b)); }).forEach(function (cat) {
       var c = UI.el('button', 'topic-chip', label(cat) + ' · ' + byCat[cat].length); c.type = 'button';
-      c.addEventListener('click', function () { runMixed(host, byCat[cat], 'Por tema · ' + label(cat)); });
+      c.addEventListener('click', function () { runFocusOnly(host, byCat[cat], 'Por tema · ' + label(cat)); });
       chips.appendChild(c);
     });
     wrap.appendChild(chips);
@@ -140,7 +148,7 @@ window.Selector = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h2', null, 'Gramática'));
-    wrap.appendChild(UI.el('p', 'muted', 'Pick a tense or concept — its conjugations and usage contrasts together.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Pick a tense or concept — this round is only its conjugations and usage contrasts, no other vocab mixed in.'));
     var pool = masterPool();
     var studied = (loadProg().studied || {});
     // Refresher ("everything unlocked from day one") can drill any tense or
@@ -156,7 +164,7 @@ window.Selector = (function () {
       if (!focusPool.length) return;
       any = true;
       var c = UI.el('button', 'topic-chip', l.title + ' · ' + focusPool.length); c.type = 'button';
-      c.addEventListener('click', function () { runMixed(host, focusPool, 'Gramática · ' + l.title); });
+      c.addEventListener('click', function () { runFocusOnly(host, focusPool, 'Gramática · ' + l.title); });
       chips.appendChild(c);
     });
     if (!any) wrap.appendChild(UI.el('p', 'muted', 'Nothing to drill yet — this fills in as you meet grammar in your daily session.'));

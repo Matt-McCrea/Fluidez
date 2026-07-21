@@ -1,10 +1,11 @@
 /* ============================================================================
  * SHELL — the tab-bar navigation shell.
  *
- * Five persistent tabs (Inicio, Practicar, Progreso, Palabras, Más), each
+ * Five persistent tabs (Inicio, Practicar, Lecciones, Palabras, Más), each
  * mounted ONCE into its own container and toggled with a CSS class rather
  * than cleared and rebuilt — so switching tabs is instant and each tab keeps
- * its scroll position and internal state. Inicio and Progreso re-render their
+ * its scroll position and internal state. Inicio and Lecciones (internally
+ * still keyed "progreso" — same module, just relabelled) re-render their
  * content every time you switch to them (their stats can go stale); the
  * others keep whatever they last showed.
  *
@@ -20,7 +21,7 @@ window.Shell = (function () {
   var TAB_META = {
     inicio:    { icon: '🏠', label: 'Inicio' },
     practicar: { icon: '🧩', label: 'Practicar' },
-    progreso:  { icon: '📊', label: 'Progreso' },
+    progreso:  { icon: '📊', label: 'Lecciones' },
     palabras:  { icon: '➕', label: 'Palabras' },
     mas:       { icon: '⋯', label: 'Más' }
   };

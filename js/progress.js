@@ -1,5 +1,5 @@
 /* ============================================================================
- * PROGRESS — "Tu progreso": makes invisible progress visible.
+ * PROGRESS — the "Lecciones" tab: makes invisible progress visible.
  * Stat tiles, syllabus status, an SRS box distribution (single-hue magnitude
  * bars), a 10-week activity heatmap (single-hue presence over time), and your
  * weak spots from the error log. All data comes from localStorage — nothing
@@ -67,7 +67,7 @@ window.Progress = (function () {
     UI.clear(host);
     var p = loadProg(), srs = loadSrs();
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, 'Tu progreso'));
+    wrap.appendChild(UI.el('h1', null, 'Lecciones'));
 
     // ---- stat tiles ----
     var ids = Object.keys(srs);
