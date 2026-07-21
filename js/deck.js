@@ -5,11 +5,18 @@
  * SRS on each answer; a miss re-queues at the end. Calls onDone(stats) when the
  * queue is exhausted. (The daily Review stage keeps its own copy for its extra
  * session bookkeeping.)
+ *
+ * opts (optional):
+ *   logErrors — record the first miss of each card into the error log (so it
+ *               resurfaces in Puntos débiles), the way the daily Review stage
+ *               does. Ported drills / on-demand rounds pass this; the plain
+ *               errors-deck (already made of error cards) does not.
  * ========================================================================== */
 window.Deck = (function () {
   var UI = window.UI, E = window.ENGINE, S = window.SRS, C = window.Checker;
 
-  function run(host, cards, onDone) {
+  function run(host, cards, onDone, opts) {
+    opts = opts || {};
     var queue = E.shuffle(cards.slice());
     var seen = 0, correct = 0, missed = {};
     if (!queue.length) { onDone({ seen: 0, correct: 0 }); return; }
@@ -44,7 +51,13 @@ window.Deck = (function () {
     function advance(good) {
       queue.shift(); seen++;
       if (good) { correct++; S.grade(cur.id, !missed[cur.id]); }
-      else { S.grade(cur.id, false); missed[cur.id] = 1; queue.push(cur); }
+      else {
+        S.grade(cur.id, false);
+        if (opts.logErrors && !missed[cur.id] && window.ErrorLog && cur.kind !== 'error') {
+          window.ErrorLog.record({ id: cur.id, front: cur.front, back: cur.back, kind: cur.kind, source: 'drill', hint: cur.hint, reviewable: false });
+        }
+        missed[cur.id] = 1; queue.push(cur);
+      }
       show();
     }
     function markGood() { if (locked) return; locked = true; feedback.textContent = '¡Correcto! ' + cur.back; feedback.className = 'feedback good'; setTimeout(function () { advance(true); }, 350); }

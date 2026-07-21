@@ -36,6 +36,10 @@ window.Practice = (function () {
     wrap.appendChild(UI.el('h3', null, 'Practicar (elige un modo)'));
     if (window.Selector) window.Selector.renderChooser(wrap);
 
+    // ---- fast drills ported from Español (conjugation + flashcards) ----
+    wrap.appendChild(UI.el('h3', null, 'Ejercicios rápidos'));
+    if (window.Drills) window.Drills.renderSection(wrap);
+
     host.appendChild(wrap);
   }
 
