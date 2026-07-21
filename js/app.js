@@ -25,6 +25,7 @@ window.App = (function () {
       case 'write':     window.WriteSpace.render(host, back); break;
       case 'grammar':   window.Grammar.render(host, back, arg); break;
       case 'practice':  window.Practice.render(host, back); break;
+      case 'settings':  window.Settings.render(host, back); break;
       case 'home':
       default:          window.Hub.render(host); break;
     }

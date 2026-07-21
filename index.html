@@ -2,8 +2,19 @@
 <html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Fluidez — Spanish, every day</title>
+
+  <!-- PWA / installable -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0e7c86">
+
+  <!-- iOS home-screen app (iOS ignores the manifest icons/display mode) -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Fluidez">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -54,8 +65,11 @@
   <script src="js/grammar.js"></script>
   <script src="js/practice.js"></script>
   <script src="js/lessonrun.js"></script>
+  <script src="js/settings.js"></script>
   <!-- orchestrator + router (last) -->
   <script src="js/session.js"></script>
   <script src="js/app.js"></script>
+  <!-- PWA install/update (independent of the app's own view stack) -->
+  <script src="js/pwa.js"></script>
 </body>
 </html>

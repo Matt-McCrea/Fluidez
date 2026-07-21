@@ -18,11 +18,22 @@
 
 * { box-sizing:border-box; }
 html, body { margin:0; height:100%; }
+html { -webkit-text-size-adjust:100%; }
 body {
   background:var(--bg); color:var(--text);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-size:17px; line-height:1.55;
+  overscroll-behavior:none;               /* kill iOS rubber-band scroll on the shell */
 }
+
+/* ---- touch polish (installed-app feel on iOS) ---- */
+button, a, input, textarea, .hub-card { touch-action:manipulation; }   /* no double-tap-to-zoom delay */
+button, .hub-card { -webkit-user-select:none; user-select:none; }      /* no text-selection on long-press */
+input, textarea { -webkit-user-select:text; user-select:text; }
+/* 44px is Apple's minimum comfortable tap target (HIG). Exempts .accent-btn —
+   a dense row of small insert keys where 44px squares would overflow narrow
+   phones; that row is a deliberate exception, not an oversight. */
+button:not(.accent-btn) { min-height:44px; }
 .hidden { display:none !important; }
 .muted { color:var(--muted); font-size:.92em; }
 .small { font-size:.88em; }
@@ -31,7 +42,7 @@ b { font-weight:650; }
 /* ---- header ---- */
 .app-header {
   display:flex; align-items:center; gap:20px;
-  padding:14px 26px; background:var(--panel); border-bottom:1px solid var(--border);
+  padding:calc(14px + env(safe-area-inset-top)) 26px 14px; background:var(--panel); border-bottom:1px solid var(--border);
   position:sticky; top:0; z-index:10;
 }
 .brand { font-weight:750; font-size:1.2rem; display:flex; align-items:baseline; gap:9px; }
@@ -45,7 +56,16 @@ b { font-weight:650; }
 .icon-btn { margin-left:auto; border:none; background:transparent; cursor:pointer; font-size:1.25rem; }
 
 /* ---- layout ---- */
-.app-main { max-width:840px; margin:0 auto; padding:30px 24px 80px; }
+.app-main { max-width:840px; margin:0 auto; padding:30px 24px calc(80px + env(safe-area-inset-bottom)); }
+
+/* ---- PWA update banner ---- */
+.sw-update-banner {
+  position:fixed; left:50%; bottom:calc(18px + env(safe-area-inset-bottom));
+  transform:translateX(-50%); z-index:100;
+  background:var(--accent); color:#fff; font-weight:650; font-size:.92rem;
+  padding:11px 20px; border-radius:999px; box-shadow:var(--shadow); cursor:pointer;
+  white-space:nowrap;
+}
 .panel {
   background:var(--panel); border:1px solid var(--border); border-radius:var(--radius);
   box-shadow:var(--shadow); padding:30px 34px; margin-bottom:22px;

@@ -80,6 +80,7 @@ window.Hub = (function () {
     grid.appendChild(card('➕', 'Añadir palabras', capN + ' captured', 'capture'));
     grid.appendChild(card('🩹', 'Tus errores', errN + ' to review', 'errors'));
     grid.appendChild(card('📚', 'Recursos', 'podcasts & references', 'resources'));
+    grid.appendChild(card('⚙️', 'Ajustes', 'export / import your data', 'settings'));
     grid.appendChild(extCard('⚡', 'Español · drills', 'fast flashcards & conjugation ↗', 'https://matt-mccrea.github.io/Espanol-/'));
     host.appendChild(grid);
 
