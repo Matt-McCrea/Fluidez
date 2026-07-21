@@ -191,20 +191,38 @@ window.Games = (function () {
   }
 
   // ===========================================================================
-  // 1. EMPAREJAR — matching pairs (ES↔EN vocab, or verb form ↔ person+tense)
+  // 1. EMPAREJAR — matching pairs (ES↔EN vocab, or verb form ↔ meaning)
   // ===========================================================================
   function vocabPairSource() {
     return (window.VOCAB || []).filter(function (w) { return window.Profile ? (window.Profile.catAllowed(w.cat) || w.userWord) : true; })
       .map(function (w) { return { id: 'v:' + w.es + ':meaning', a: w.es, b: w.en, kind: 'vocab' }; });
   }
-  function conjPairSource(tenses) {
-    var out = [];
-    (window.VERBS || []).forEach(function (v) {
-      tenses.forEach(function (tk) {
-        var forms = E.conjugate(v, tk);
-        forms.forEach(function (form, i) { if (form) out.push({ id: 'vt:' + v.inf + ':' + tk, a: form, b: conjPrompt(v, tk, i), kind: 'verb-tense' }); });
+  // Naively sampling (verb, tense, person) triples at random tends to land a
+  // whole board on the same tense by chance — and when the tense doesn't
+  // vary, the English side is just the subject pronoun ("I", "you", "we"...),
+  // so the puzzle reduces to pronoun-elimination and never actually tests
+  // conjugation. Holding the PERSON fixed and deliberately varying the TENSE
+  // for each verb makes the English clues genuinely distinct in meaning
+  // ("I speak" / "I spoke" / "I used to speak") and forces real tense
+  // knowledge. Generated fresh per page, so each page mixes different
+  // verbs/persons but always keeps this same-person, mixed-tense structure.
+  function conjPairSourceMixed(tenses, count) {
+    var simple = (tenses || []).filter(function (tk) { return tk !== 'imperativo'; });
+    if (!simple.length) simple = ['presente'];
+    var verbs = E.shuffle((window.VERBS || []).slice());
+    var out = [], vi = 0, guard = 0;
+    while (out.length < count && guard < verbs.length * 4 + 20) {
+      guard++;
+      var v = verbs[vi % verbs.length]; vi++;
+      var personIdx = Math.floor(Math.random() * 6);   // fixed for this verb's whole contribution
+      var pickedTenses = E.shuffle(simple.slice()).slice(0, Math.min(simple.length, 3 + Math.floor(Math.random() * 2)));
+      pickedTenses.forEach(function (tk) {
+        if (out.length >= count) return;
+        var form = E.conjugate(v, tk)[personIdx];
+        if (!form) return;
+        out.push({ id: 'vt:' + v.inf + ':' + tk, a: form, b: conjPrompt(v, tk, personIdx), kind: 'verb-tense' });
       });
-    });
+    }
     return out;
   }
 
@@ -212,7 +230,7 @@ window.Games = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(exitHeader('Emparejar'));
-    wrap.appendChild(UI.el('p', 'muted', 'Tap one from each side to match them. Español on the left, English on the right.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Tap one from each side to match them. Español on the left, English on the right. Match them all and the next board deals automatically.'));
     var content = 'vocab';
     wrap.appendChild(UI.el('h3', null, 'Contenido'));
     var seg1 = UI.el('div', 'segmented');
@@ -226,63 +244,97 @@ window.Games = (function () {
     var getTranquilo = modeToggle(wrap, function () {});
     var go = UI.el('button', 'primary-btn', 'Empezar →'); go.type = 'button';
     go.addEventListener('click', function () {
-      var source = content === 'vocab' ? vocabPairSource() : conjPairSource(window.Profile ? window.Profile.tenses() : ['presente']);
-      runEmparejar(host, source, getTranquilo(), content);
+      var tenses = window.Profile ? window.Profile.tenses() : ['presente'];
+      var vocabSource = content === 'vocab' ? vocabPairSource() : null;
+      // A page generator, not a flat pool — the conj source is regenerated
+      // per page so every new board gets a fresh same-person/mixed-tense set.
+      var dealPage = content === 'vocab'
+        ? function (n) { return UI.sample ? UI.sample(vocabSource, Math.min(n, vocabSource.length)) : E.shuffle(vocabSource.slice()).slice(0, n); }
+        : function (n) { return conjPairSourceMixed(tenses, n); };
+      runEmparejar(host, dealPage, getTranquilo(), content);
     });
     wrap.appendChild(go);
     host.appendChild(wrap);
   }
 
-  function runEmparejar(host, source, tranquilo, submode) {
-    var N = 12;   // a bigger board — a longer round, not a quick 6-pair skim
-    var picks = UI.sample ? UI.sample(source, Math.min(N, source.length)) : E.shuffle(source.slice()).slice(0, Math.min(N, source.length));
-    if (!picks.length) { showEmparejarSetup(host); return; }
-    var leftCards = [], rightCards = [];
-    picks.forEach(function (p, i) {
-      leftCards.push({ uid: i + 'a', pairId: i, text: p.a, item: p });
-      rightCards.push({ uid: i + 'b', pairId: i, text: p.b, item: p });
-    });
-    E.shuffle(leftCards); E.shuffle(rightCards);
+  var EMPAREJAR_PAGE = 6;   // a small board per page — clears fast, then deals the next automatically
+
+  function runEmparejar(host, dealPage, tranquilo, submode) {
+    var bestKey = 'emparejar:' + submode;
+    var totalMatched = 0, pagesDone = 0;
+    var endTime = tranquilo ? null : Date.now() + CONTRARRELOJ_SECONDS * 1000;
+    var timerId = null, finished = false;
 
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(exitHeader('Emparejar'));
+    var head = UI.el('div', 'stage-head');
+    head.appendChild(UI.el('span', 'eyebrow', 'Emparejar' + (tranquilo ? '' : ' · Contrarreloj')));
+    var right = UI.el('span', 'stage-count');
+    var timerEl = UI.el('span', 'game-timer');
+    var finishB = UI.el('button', 'ghost-btn small', 'Terminar'); finishB.type = 'button'; finishB.style.marginTop = '0';
+    finishB.addEventListener('click', function () { finishEmparejar(); });
+    var exitB = UI.el('button', 'ghost-btn small', '✕ salir'); exitB.type = 'button'; exitB.style.marginTop = '0';
+    exitB.addEventListener('click', function () { if (timerId) clearInterval(timerId); backToTab(); });
+    right.appendChild(timerEl); right.appendChild(UI.el('span', null, '  '));
+    if (tranquilo) { right.appendChild(finishB); right.appendChild(UI.el('span', null, '  ')); }
+    right.appendChild(exitB);
+    head.appendChild(right);
+    wrap.appendChild(head);
+
     var stats = UI.el('div', 'muted small game-score');
     wrap.appendChild(stats);
     var columns = UI.el('div', 'match-columns');
-    var leftCol = UI.el('div', 'match-col');
-    var rightCol = UI.el('div', 'match-col');
-    columns.appendChild(leftCol); columns.appendChild(rightCol);
     wrap.appendChild(columns);
     host.appendChild(wrap);
 
-    var open = [], matched = {}, attempts = {}, foundPairs = 0, startTime = Date.now();
-    function render() {
-      stats.textContent = foundPairs + ' / ' + picks.length + ' pares';
+    function tick() {
+      var remain = Math.max(0, endTime - Date.now());
+      timerEl.textContent = '⏱ ' + Math.ceil(remain / 1000) + 's';
+      if (remain <= 0) finishEmparejar();
     }
-    var els = {};
-    function addCard(c, col) {
-      var b = UI.el('button', 'match-card'); b.type = 'button'; b.textContent = c.text;
-      b.addEventListener('click', function () { onTap(c, b); });
-      els[c.uid] = b;
-      col.appendChild(b);
+    if (!tranquilo) { tick(); timerId = setInterval(tick, 250); }
+
+    var open, matched, attempts, foundPairs, els, picks;
+    function dealNewPage() {
+      picks = dealPage(EMPAREJAR_PAGE);
+      if (!picks.length) { finishEmparejar(); return; }
+      open = []; matched = {}; attempts = {}; foundPairs = 0; els = {};
+      UI.clear(columns);
+      var leftCol = UI.el('div', 'match-col');
+      var rightCol = UI.el('div', 'match-col');
+      columns.appendChild(leftCol); columns.appendChild(rightCol);
+      var leftCards = [], rightCards = [];
+      picks.forEach(function (p, i) {
+        leftCards.push({ uid: i + 'a', pairId: i, text: p.a, item: p });
+        rightCards.push({ uid: i + 'b', pairId: i, text: p.b, item: p });
+      });
+      E.shuffle(leftCards); E.shuffle(rightCards);
+      function addCard(c, col) {
+        var b = UI.el('button', 'match-card'); b.type = 'button'; b.textContent = c.text;
+        b.addEventListener('click', function () { onTap(c, b); });
+        els[c.uid] = b;
+        col.appendChild(b);
+      }
+      leftCards.forEach(function (c) { addCard(c, leftCol); });
+      rightCards.forEach(function (c) { addCard(c, rightCol); });
+      renderStats();
     }
-    leftCards.forEach(function (c) { addCard(c, leftCol); });
-    rightCards.forEach(function (c) { addCard(c, rightCol); });
-    render();
+    function renderStats() {
+      stats.textContent = totalMatched + ' pares emparejados' + (pagesDone ? ' · tablero ' + (pagesDone + 1) : '');
+    }
 
     function onTap(c, el) {
-      if (matched[c.pairId] || el.classList.contains('open') || open.length === 2) return;
+      if (finished || matched[c.pairId] || el.classList.contains('open') || open.length === 2) return;
       el.classList.add('open');
       open.push(c);
       if (open.length === 2) {
         if (open[0].pairId === open[1].pairId) {
-          matched[c.pairId] = true; foundPairs++;
+          matched[c.pairId] = true; foundPairs++; totalMatched++;
           open.forEach(function (o) { els[o.uid].classList.add('matched'); });
           var missedFirst = (attempts[c.pairId] || 0) > 0;
           grade(open[0].item, !missedFirst);
-          open = []; render();
-          if (foundPairs === picks.length) setTimeout(finishEmparejar, 400);
+          open = []; renderStats();
+          if (foundPairs === picks.length) { pagesDone++; setTimeout(dealNewPage, 450); }
         } else {
           attempts[open[0].pairId] = (attempts[open[0].pairId] || 0) + 1;
           attempts[open[1].pairId] = (attempts[open[1].pairId] || 0) + 1;
@@ -293,20 +345,22 @@ window.Games = (function () {
     }
 
     function finishEmparejar() {
+      if (finished) return; finished = true;
+      if (timerId) { clearInterval(timerId); timerId = null; }
       UI.clear(host);
-      var seconds = Math.round((Date.now() - startTime) / 1000);
-      var bestKey = 'emparejar:' + submode;
-      var isNewBest = !tranquilo && setBest(bestKey, Math.max(0, 999 - seconds));
+      var isNewBest = !tranquilo && setBest(bestKey, totalMatched);
       var done = UI.el('div', 'panel intro complete');
       done.appendChild(UI.el('div', 'big-check', '✓'));
-      done.appendChild(UI.el('h2', null, '¡Emparejado!'));
-      done.appendChild(UI.el('p', null, picks.length + ' pares en ' + seconds + 's' + (isNewBest ? ' — ¡nuevo récord!' : '')));
+      done.appendChild(UI.el('h2', null, tranquilo ? 'Listo' : '¡Tiempo!'));
+      done.appendChild(UI.el('p', null, totalMatched + ' pares emparejados' + (tranquilo ? '' : (isNewBest ? ' — ¡nuevo récord!' : ' · récord: ' + bestFor(bestKey)))));
       var again = UI.el('button', 'primary-btn', 'Jugar de nuevo'); again.type = 'button';
       again.addEventListener('click', function () { showEmparejarSetup(host); });
       var back = UI.el('button', 'ghost-btn', '← Juegos'); back.type = 'button'; back.addEventListener('click', backToTab);
       done.appendChild(again); done.appendChild(back);
       host.appendChild(done);
     }
+
+    dealNewPage();
   }
 
   // ===========================================================================
@@ -334,14 +388,29 @@ window.Games = (function () {
       return { id: 'v:' + w.es + ':gender', front: bare + '  (' + w.en + ')', back: correct, options: E.shuffle([correct].concat(E.shuffle(wrong).slice(0, 3))), kind: 'gender' };
     });
   }
+  // Distractors are the SAME verb and SAME person in OTHER tenses, not other
+  // persons in the same tense. The English prompt already names the subject
+  // ("I speak") — if the wrong options were just other persons of that one
+  // tense, the whole question reduces to picking the right pronoun, never
+  // testing whether you actually know the tense. With tense-varied options
+  // ("hablo" vs "hablé" vs "hablaba") you have to know which one "I speak"
+  // actually means.
   function mcqConjItems(tenses) {
+    var simple = (tenses || []).filter(function (tk) { return tk !== 'imperativo'; });
+    if (simple.length < 2) simple = tenses;
     var out = [];
     (window.VERBS || []).forEach(function (v) {
-      tenses.forEach(function (tk) {
+      simple.forEach(function (tk) {
         var forms = E.conjugate(v, tk);
         forms.forEach(function (form, i) {
           if (!form) return;
-          var others = E.shuffle(forms.filter(function (f) { return f !== form; })).slice(0, 3);
+          var others = [];
+          E.shuffle(simple.filter(function (t) { return t !== tk; })).forEach(function (otk) {
+            if (others.length >= 3) return;
+            var f = E.conjugate(v, otk)[i];
+            if (f && f !== form && others.indexOf(f) === -1) others.push(f);
+          });
+          if (!others.length) return;   // not enough tense variety to make a real question
           out.push({ id: 'vt:' + v.inf + ':' + tk, front: conjPrompt(v, tk, i), back: form, options: E.shuffle([form].concat(others)), kind: 'verb-tense' });
         });
       });
