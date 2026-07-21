@@ -38,6 +38,18 @@ window.Games = (function () {
   var exitAll = null;
   function backToTab() { render(document.getElementById('stage-host'), exitAll); }
 
+  // A natural English phrase for a conjugated form ("he ate", "we will speak")
+  // instead of a grammatical label (infinitive · person · tense) — matching
+  // the form to what it actually MEANS is the useful skill; the label just
+  // asks you to have memorised terminology. Used by every conjugation-based
+  // game and drill. A marker is appended when English can't distinguish the
+  // form from another Spanish one without more context (subjunctive mood,
+  // which "you" a command addresses).
+  function conjPrompt(v, tk, i) {
+    var p = E.enPhrase(v, tk, i);
+    return p.text + (p.marker ? ' (' + p.marker + ')' : '');
+  }
+
   function logMiss(item) {
     if (!window.ErrorLog || !item.id) return;
     window.ErrorLog.record({ id: item.id, front: item.front, back: item.back, kind: item.kind || 'game', source: 'game', hint: item.hint || null, reviewable: false });
@@ -189,8 +201,8 @@ window.Games = (function () {
     var out = [];
     (window.VERBS || []).forEach(function (v) {
       tenses.forEach(function (tk) {
-        var forms = E.conjugate(v, tk), persons = E.personsFor(tk);
-        forms.forEach(function (form, i) { if (form) out.push({ id: 'vt:' + v.inf + ':' + tk, a: form, b: v.inf + ' · ' + persons[i] + ' · ' + E.TENSE_LABEL[tk], kind: 'verb-tense' }); });
+        var forms = E.conjugate(v, tk);
+        forms.forEach(function (form, i) { if (form) out.push({ id: 'vt:' + v.inf + ':' + tk, a: form, b: conjPrompt(v, tk, i), kind: 'verb-tense' }); });
       });
     });
     return out;
@@ -326,11 +338,11 @@ window.Games = (function () {
     var out = [];
     (window.VERBS || []).forEach(function (v) {
       tenses.forEach(function (tk) {
-        var forms = E.conjugate(v, tk), persons = E.personsFor(tk);
+        var forms = E.conjugate(v, tk);
         forms.forEach(function (form, i) {
           if (!form) return;
           var others = E.shuffle(forms.filter(function (f) { return f !== form; })).slice(0, 3);
-          out.push({ id: 'vt:' + v.inf + ':' + tk, front: v.inf + ' · ' + persons[i] + ' · ' + E.TENSE_LABEL[tk], back: form, options: E.shuffle([form].concat(others)), kind: 'verb-tense' });
+          out.push({ id: 'vt:' + v.inf + ':' + tk, front: conjPrompt(v, tk, i), back: form, options: E.shuffle([form].concat(others)), kind: 'verb-tense' });
         });
       });
     });
@@ -403,7 +415,7 @@ window.Games = (function () {
   }
 
   // ===========================================================================
-  // 3. CONJUGACIÓN RÁPIDA — infinitive + person + tense → the form, typed
+  // 3. CONJUGACIÓN RÁPIDA — an English phrase → the conjugated form, typed
   // ===========================================================================
   function conjRapidaItems(tenses, scope) {
     var verbs = (window.VERBS || []).slice();
@@ -412,8 +424,8 @@ window.Games = (function () {
     var out = [];
     verbs.forEach(function (v) {
       tenses.forEach(function (tk) {
-        var forms = E.conjugate(v, tk), persons = E.personsFor(tk);
-        forms.forEach(function (form, i) { if (form) out.push({ id: 'vt:' + v.inf + ':' + tk, front: v.inf + '  ·  ' + E.TENSE_LABEL[tk] + '  ·  ' + persons[i], back: form, kind: 'verb-tense' }); });
+        var forms = E.conjugate(v, tk);
+        forms.forEach(function (form, i) { if (form) out.push({ id: 'vt:' + v.inf + ':' + tk, front: conjPrompt(v, tk, i), back: form, kind: 'verb-tense' }); });
       });
     });
     return out;
@@ -448,7 +460,7 @@ window.Games = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(exitHeader('Conjugación rápida'));
-    wrap.appendChild(UI.el('p', 'muted', 'Infinitive + person + tense → type the form. Engine-graded.'));
+    wrap.appendChild(UI.el('p', 'muted', 'An English phrase → type the matching Spanish form. Engine-graded.'));
     var tenses = window.Profile ? window.Profile.tenses() : E.TENSES.map(function (t) { return t.key; });
     var chosen = {};
     wrap.appendChild(UI.el('h3', null, 'Tenses'));
@@ -646,7 +658,7 @@ window.Games = (function () {
     }
     row('🃏', 'Emparejar', 'Matching pairs — vocab or verb forms', showEmparejarSetup);
     row('☑️', 'Opción múltiple', 'Meaning, article, conjugation, por/para', showOpcionSetup);
-    row('⚡', 'Conjugación rápida', 'Infinitive + person + tense → the form', showConjRapidaSetup);
+    row('⚡', 'Conjugación rápida', 'An English phrase → the matching form', showConjRapidaSetup);
     row('🧩', 'Frase revuelta', 'Reorder the shuffled words', showFraseSetup);
     row('🎯', '¿Cuál va aquí?', 'The classic minimal-pair traps', showCualSetup);
     wrap.appendChild(list);

@@ -24,6 +24,14 @@ window.Drills = (function () {
 
   function backToTab() { window.Shell.closeOverlay(); window.Shell.refresh('practicar'); }
 
+  // A natural English phrase for a conjugated form ("he ate") instead of a
+  // grammatical label (infinitive · person · tense) — matching the form to
+  // what it MEANS is the useful skill, not reading terminology off a label.
+  function conjPrompt(v, tk, i) {
+    var p = E.enPhrase(v, tk, i);
+    return p.text + (p.marker ? ' (' + p.marker + ')' : '');
+  }
+
   // ---- conjugation drill ---------------------------------------------------
   function buildConjCards(tenses, scope) {
     var verbs = (window.VERBS || []).slice();
@@ -32,12 +40,12 @@ window.Drills = (function () {
     var cards = [];
     verbs.forEach(function (v) {
       tenses.forEach(function (tk) {
-        var forms = E.conjugate(v, tk), persons = E.personsFor(tk);
+        var forms = E.conjugate(v, tk);
         forms.forEach(function (form, i) {
           if (!form) return;
           cards.push({
             id: 'vt:' + v.inf + ':' + tk,           // shared with the daily Aplicar schedule
-            front: v.inf + '  ·  ' + E.TENSE_LABEL[tk] + '  ·  ' + persons[i],
+            front: conjPrompt(v, tk, i),
             back: form, kind: 'conj', hint: null
           });
         });
@@ -127,8 +135,8 @@ window.Drills = (function () {
     else if (kind === 'verbs') (window.VERBS || []).forEach(function (v) { out.push({ front: v.inf, back: v.en, kind: 'verb' }); });
     else if (kind === 'idioms') (window.IDIOMS || []).forEach(function (x) { out.push({ front: x.es, back: x.en, kind: 'idiom', hint: x.lit || null }); });
     else if (kind === 'conj') (window.VERBS || []).forEach(function (v) {
-      var forms = E.conjugate(v, tense), persons = E.personsFor(tense);
-      forms.forEach(function (form, i) { if (form) out.push({ front: v.inf + ' · ' + persons[i], back: form, kind: 'conj' }); });
+      var forms = E.conjugate(v, tense);
+      forms.forEach(function (form, i) { if (form) out.push({ front: conjPrompt(v, tense, i), back: form, kind: 'conj' }); });
     });
     return out;
   }
