@@ -23,7 +23,7 @@
  * genuinely new grammar/vocab/verb focus needs teaching, not cold drilling.
  * ========================================================================== */
 window.Selector = (function () {
-  var UI = window.UI, S = window.SRS;
+  var UI = window.UI, S = window.SRS, E = window.ENGINE;
 
   var CAT_LABEL = {
     greetings: 'Greetings', people: 'People & family', food: 'Food & drink', home: 'Home',
@@ -144,6 +144,41 @@ window.Selector = (function () {
   }
 
   // ---- Gramática --------------------------------------------------------
+  // Concept lessons' recall ids don't share the lesson's own id (data/
+  // grammar.js predates this filter-by-prefix pattern) — e.g. the
+  // "ser-estar" lesson's recall cards are "g:serestar:...", not
+  // "g:ser-estar:...". Without this map those four concepts never matched
+  // anything and silently never appeared as a Gramática chip at all.
+  var CONCEPT_RECALL_PREFIX = {
+    'ser-estar': 'serestar', 'gender-articles': 'gender',
+    'preterite-imperfect': 'pretimp', 'por-para': 'porpara'
+  };
+
+  // A natural English phrase for a conjugated form ("he ate") instead of a
+  // grammar label — matches the convention already used by the games/drills.
+  function conjPrompt(v, tk, i) {
+    var p = E.enPhrase(v, tk, i);
+    return p.text + (p.marker ? ' (' + p.marker + ')' : '');
+  }
+
+  // Comprehensive drill content for a real tense: EVERY verb, EVERY person —
+  // not the single deduped card per verb that StageReview.pool() carries
+  // (that pool exists to keep the daily SRS schedule to one entry per
+  // (verb, tense), not to represent everything worth drilling). All forms of
+  // the same (verb, tense) still share that one SRS id, so answering any of
+  // its 6 persons genuinely grades the same underlying mastery record.
+  function tenseConjCards(tk) {
+    var out = [];
+    (window.VERBS || []).forEach(function (v) {
+      var forms = E.conjugate(v, tk);
+      forms.forEach(function (form, i) {
+        if (!form) return;
+        out.push({ id: 'vt:' + v.inf + ':' + tk, front: conjPrompt(v, tk, i), back: form, kind: 'verb-tense', fixed: true });
+      });
+    });
+    return out;
+  }
+
   function showTensePicker(host) {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
@@ -158,9 +193,11 @@ window.Selector = (function () {
     var chips = UI.el('div', 'chip-row');
     var any = false;
     (window.GRAMMAR_LESSONS || []).filter(function (l) { return unlockAll || studied[l.id]; }).forEach(function (l) {
-      var focusPool = pool.filter(function (it) {
-        return (it.kind === 'verb-tense' && it.tense === l.id) || (it.kind === 'grammar' && it.id.indexOf('g:' + l.id + ':') === 0);
-      });
+      var recallPrefix = CONCEPT_RECALL_PREFIX[l.id] || l.id;
+      var recallCards = pool.filter(function (it) { return it.kind === 'grammar' && it.id.indexOf('g:' + recallPrefix + ':') === 0; });
+      // A real tense (not a hand-written concept like ser/estar) gets every
+      // verb in every person — genuinely comprehensive, not a small sample.
+      var focusPool = E.TENSE_LABEL[l.id] ? recallCards.concat(tenseConjCards(l.id)) : recallCards;
       if (!focusPool.length) return;
       any = true;
       var c = UI.el('button', 'topic-chip', l.title + ' · ' + focusPool.length); c.type = 'button';
