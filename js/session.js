@@ -18,49 +18,43 @@ window.Session = (function () {
   function dayNumber() {
     return Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
   }
-  function shuffle(a) {
-    a = a.slice();
-    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
-    return a;
-  }
-  function sample(arr, n) { return shuffle(arr).slice(0, n); }   // n random items
-  function pick(arr) { return arr.length ? arr[Math.floor(Math.random() * arr.length)] : null; }
+  // sample/pick take an optional rng (see buildContext: seeded & reproducible
+  // the first time a lesson is seen, plain Math.random on every repeat).
+  function sample(arr, n, rng) { return UI.sample(arr, n, rng); }
+  function pick(arr, rng) { return UI.pick(arr, rng); }
 
   // ---- align content to the day's focus (use what was just taught) --------
   var E = window.ENGINE;
   function passageUsesFocus(p, focus) {
-    var a = E.analyzeSentence(p.text);
-    if (focus.type === 'grammar')
+    if (focus.type === 'grammar' && E.CONCEPTS[focus.id]) return E.CONCEPTS[focus.id].matchesText(p.text);
+    if (focus.type === 'grammar') {
+      var a = E.analyzeSentence(p.text);
       return a.verbs.some(function (v) { return v.analyses.some(function (x) { return x.tense === focus.id; }); }) ||
              a.compounds.some(function (c) { return c.parts.some(function (x) { return x.tense === focus.id; }); });
-    if (focus.type === 'verbs')
-      return a.verbs.some(function (v) { return v.analyses.some(function (x) { return focus.verbs.indexOf(x.inf) !== -1; }); });
-    if (focus.type === 'vocab') {
-      var t = ' ' + p.text.toLowerCase() + ' ';
-      return (focus.words || []).some(function (w) {
-        var noun = w.toLowerCase().replace(/^(el |la |los |las |un |una )/, '');
-        return t.indexOf(noun) !== -1;
-      });
     }
+    if (focus.type === 'verbs') return E.matchesVerbGroup(p.text, focus.verbs) >= 1;
+    if (focus.type === 'vocab') return E.matchesVocabWords(p.text, focus.words) >= 1;
     return false;
   }
   function clozeMatchesFocus(it, focus) {
+    if (focus.type === 'grammar' && E.CONCEPTS[focus.id]) return E.CONCEPTS[focus.id].matchesCloze(it);
     if (focus.type === 'grammar') return it.tense === focus.id;
     if (focus.type === 'verbs') return focus.verbs.indexOf(it.inf) !== -1;
     return false;
   }
   function writeMatchesFocus(t, focus) {
     if (focus.type !== 'grammar') return false;
+    if (E.CONCEPTS[focus.id]) return E.CONCEPTS[focus.id].matchesConstraints(t.constraints);
     return (t.constraints || []).some(function (c) {
       return (c.type === 'anyVerbInTense' || c.type === 'verbFormAny') && c.tense === focus.id;
     });
   }
-  // random n from the focus-aligned items, topped up with other items to reach n
-  function sampleAligned(pool, focus, n, matchFn) {
+  // n items from the focus-aligned items, topped up with other items to reach n
+  function sampleAligned(pool, focus, n, matchFn, rng) {
     var yes = pool.filter(function (x) { return matchFn(x, focus); });
     var no = pool.filter(function (x) { return !matchFn(x, focus); });
-    var out = sample(yes, n);
-    if (out.length < n) out = out.concat(sample(no, n - out.length));
+    var out = sample(yes, n, rng);
+    if (out.length < n) out = out.concat(sample(no, n - out.length, rng));
     return out;
   }
   function preferAligned(arr, focus, fn) {
@@ -111,24 +105,29 @@ window.Session = (function () {
     var apply = atLevel(window.APPLY_ITEMS || []);
     var writes = atLevel(window.WRITING_TASKS || []);
 
+    // The FIRST time a grammar lesson is seen (not yet in `studied`), its
+    // content is picked with a seed derived from the lesson id — reproducible
+    // if you reload mid-session, but distinct lesson to lesson. Once you've
+    // studied it and come back around to it again (review rotation), selection
+    // is plain Math.random so repeats don't feel identical every time.
+    var firstTime = (focus.type === 'grammar' && lesson) ? !studied[lesson.id] : false;
+    var rng = firstTime ? UI.seededRandom(lesson.id) : Math.random;
+
     // Produce: 'guided' (beginner) = a build + a translation, with scaffolding.
     // 'full' = also open free-writing and, from level 2+, a connected paragraph.
-    // Content is SAMPLED AT RANDOM each session so the story, sentences and
-    // prompts vary every time — the focus (which lesson) stays put; the
-    // practice around it is fresh.
     var builds = writes.filter(function (t) { return t.type === 'build'; });
     var trans = writes.filter(function (t) { return t.type === 'translate'; });
     var frees = writes.filter(function (t) { return t.type === 'write'; });
     var paras = writes.filter(function (t) { return t.type === 'paragraph'; });
     var produce;
     if (pr.produceStyle === 'guided') {
-      produce = [].concat(sample(builds, 1)).concat(sample(preferAligned(trans, focus, writeMatchesFocus), 1));
+      produce = [].concat(sample(builds, 1, rng)).concat(sample(preferAligned(trans, focus, writeMatchesFocus), 1, rng));
     } else {
       produce = []
-        .concat(sample(builds, 1))
-        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), 1))
-        .concat(sample(preferAligned(frees, focus, writeMatchesFocus), 2))
-        .concat(level >= 2 ? sample(preferAligned(paras, focus, writeMatchesFocus), 1) : []);
+        .concat(sample(builds, 1, rng))
+        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), 1, rng))
+        .concat(sample(preferAligned(frees, focus, writeMatchesFocus), 2, rng))
+        .concat(level >= 2 ? sample(preferAligned(paras, focus, writeMatchesFocus), 1, rng) : []);
     }
 
     // Story prefers a passage that USES today's focus; cloze prefers items in
@@ -142,8 +141,8 @@ window.Session = (function () {
       focus: focus,
       dateLabel: new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' }),
       lesson: lesson,
-      passage: pick(storyPool.length ? storyPool : passages),
-      applyItems: sampleAligned(apply, focus, 6, clozeMatchesFocus),
+      passage: pick(storyPool.length ? storyPool : passages, rng),
+      applyItems: sampleAligned(apply, focus, 6, clozeMatchesFocus, rng),
       writeTasks: produce,
       results: {}
     };

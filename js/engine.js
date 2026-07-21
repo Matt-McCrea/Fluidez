@@ -531,6 +531,101 @@ window.ENGINE = (function () {
     return { text: text, tokens: toks, verbs: verbs, compounds: compounds };
   }
 
+  // ---- concept-lesson matching --------------------------------------------
+  // Four lessons in the syllabus aren't a single conjugation tense (ser/estar,
+  // gender & articles, preterite-vs-imperfect, por/para), so passages/cloze/
+  // writing tasks can't be matched by comparing a `tense` field directly.
+  // This gives each one a real definition of "relevant content" — used by both
+  // the daily session (to align today's story/practice to the day's lesson)
+  // and on-demand lesson-taking — plus a safe, self-consistent fallback
+  // writing task for when the matched pool comes up empty.
+  var CONCEPTS = {
+    'ser-estar': {
+      label: 'ser vs. estar',
+      matchesText: function (text) {
+        var a = analyzeSentence(text);
+        return a.verbs.some(function (v) { return v.analyses.some(function (x) { return x.inf === 'ser' || x.inf === 'estar'; }); });
+      },
+      matchesCloze: function (it) { return it.inf === 'ser' || it.inf === 'estar'; },
+      matchesConstraints: function (cs) {
+        return (cs || []).some(function (c) { return (c.type === 'verbFormAny' || c.type === 'verbForm') && (c.inf === 'ser' || c.inf === 'estar'); });
+      },
+      fallbackWrites: function () { return [
+        { prompt: 'Describe someone or something using “ser” (identity, characteristics).', hint: 'Use “es” or “soy”.',
+          constraints: [{ type: 'verbFormAny', inf: 'ser', tense: 'presente' }, { type: 'minWords', n: 5 }],
+          models: ['Mi hermana es muy simpática.'] },
+        { prompt: 'Say how someone feels or where something is, using “estar”.', hint: 'Use “está” or “estoy”.',
+          constraints: [{ type: 'verbFormAny', inf: 'estar', tense: 'presente' }, { type: 'minWords', n: 5 }],
+          models: ['Estoy muy cansado y quiero dormir.'] }
+      ]; }
+    },
+    'gender-articles': {
+      label: 'gender & articles',
+      matchesText: function () { return true; },        // gender/articles are present in any Spanish text
+      matchesCloze: function () { return false; },       // no verb-conjugation cloze applies to this concept
+      matchesConstraints: function () { return false; },
+      fallbackWrites: function () { return [
+        { prompt: 'Describe three objects around you, including their correct article (el/la/un/una).', hint: 'Pay attention to noun gender.',
+          constraints: [{ type: 'minWords', n: 8 }], models: ['Veo una mesa, un libro y una ventana.'] }
+      ]; }
+    },
+    'preterite-imperfect': {
+      label: 'preterite vs. imperfect',
+      matchesText: function (text) {
+        var a = analyzeSentence(text);
+        var has = function (t) { return a.verbs.some(function (v) { return v.analyses.some(function (x) { return x.tense === t; }); }); };
+        return has('preterito') && has('imperfecto');
+      },
+      matchesCloze: function (it) { return it.tense === 'preterito' || it.tense === 'imperfecto'; },
+      matchesConstraints: function (cs) {
+        return (cs || []).some(function (c) { return c.type === 'anyVerbInTense' && (c.tense === 'preterito' || c.tense === 'imperfecto'); });
+      },
+      fallbackWrites: function () { return [
+        { prompt: 'Tell a short story contrasting a background situation and an interrupting event.', hint: 'imperfecto for the background, pretérito for the event.',
+          constraints: [{ type: 'anyVerbInTense', tense: 'imperfecto' }, { type: 'anyVerbInTense', tense: 'preterito' }, { type: 'minWords', n: 12 }],
+          models: ['Yo dormía tranquilamente en mi habitación cuando de repente llegaste tú a casa.'] }
+      ]; }
+    },
+    'por-para': {
+      label: 'por vs. para',
+      matchesText: function (text) { return /\bpor\b/i.test(text) || /\bpara\b/i.test(text); },
+      matchesCloze: function () { return false; },        // cloze is verb-conjugation only, no por/para mechanic
+      matchesConstraints: function (cs) {
+        return (cs || []).some(function (c) {
+          return (c.type === 'containsWord' && /^(por|para)$/i.test(c.word)) ||
+                 (c.type === 'containsAny' && (c.words || []).some(function (w) { return /^(por|para)$/i.test(w); }));
+        });
+      },
+      fallbackWrites: function () { return [
+        { prompt: 'Write a sentence using “para” to express a purpose or destination.', hint: 'para + infinitive/noun.',
+          constraints: [{ type: 'containsWord', word: 'para' }, { type: 'minWords', n: 5 }], models: ['Estudio español para viajar a España.'] },
+        { prompt: 'Write a sentence using “por” to express a cause, duration, or exchange.', hint: 'por + reason/duration.',
+          constraints: [{ type: 'containsWord', word: 'por' }, { type: 'minWords', n: 5 }], models: ['Caminé por el parque durante una hora.'] }
+      ]; }
+    }
+  };
+
+  // ---- vocab/verb-group matching (for vocab & verb lessons) ---------------
+  // Both return a COUNT (not a boolean) so callers can require "at least K
+  // matches" — a passage that merely mentions one word/verb in passing isn't
+  // a good story for that lesson; one that uses several clearly is.
+  function matchesVerbGroup(text, infs) {
+    var a = analyzeSentence(text), n = 0;
+    a.verbs.forEach(function (v) {
+      if (v.analyses.some(function (x) { return infs.indexOf(x.inf) !== -1; })) n++;
+    });
+    return n;
+  }
+  function matchesVocabWords(text, words) {
+    var t = ' ' + deaccent(text.toLowerCase()) + ' ';
+    var n = 0;
+    (words || []).forEach(function (w) {
+      var noun = deaccent(w.toLowerCase().replace(/^(el |la |los |las |un |una )/, ''));
+      if (t.indexOf(noun) !== -1) n++;
+    });
+    return n;
+  }
+
   return {
     PERSONS: PERSONS,
     IMP_PERSONS: IMP_PERSONS,
@@ -555,6 +650,9 @@ window.ENGINE = (function () {
     tokenize: tokenize,
     analyzeToken: analyzeToken,
     analyzeSentence: analyzeSentence,
-    isParticiple: isParticiple
+    isParticiple: isParticiple,
+    CONCEPTS: CONCEPTS,
+    matchesVerbGroup: matchesVerbGroup,
+    matchesVocabWords: matchesVocabWords
   };
 })();
