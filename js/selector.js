@@ -143,9 +143,13 @@ window.Selector = (function () {
     wrap.appendChild(UI.el('p', 'muted', 'Pick a tense or concept — its conjugations and usage contrasts together.'));
     var pool = masterPool();
     var studied = (loadProg().studied || {});
+    // Refresher ("everything unlocked from day one") can drill any tense or
+    // concept, not just what's been taught so far; standard/beginner still
+    // fill in as the daily syllabus introduces each one.
+    var unlockAll = !!(window.Profile && window.Profile.params().unlockAll);
     var chips = UI.el('div', 'chip-row');
     var any = false;
-    (window.GRAMMAR_LESSONS || []).filter(function (l) { return studied[l.id]; }).forEach(function (l) {
+    (window.GRAMMAR_LESSONS || []).filter(function (l) { return unlockAll || studied[l.id]; }).forEach(function (l) {
       var focusPool = pool.filter(function (it) {
         return (it.kind === 'verb-tense' && it.tense === l.id) || (it.kind === 'grammar' && it.id.indexOf('g:' + l.id + ':') === 0);
       });

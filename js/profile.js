@@ -45,8 +45,7 @@ window.Profile = (function () {
       tenses: function () { return fullTenseSet(); },
       defaultGameMode: 'tranquilo',
       selectors: ['inteligente', 'tema', 'gramatica', 'debiles', 'siguiente'],
-      cualPairs: ['ser-estar', 'por-para', 'preterite-imperfect', 'subj'],
-      roundLength: 12
+      cualPairs: ['ser-estar', 'por-para', 'preterite-imperfect', 'subj']
     },
     beginner: {
       name: 'beginner', label: 'Beginner',
@@ -63,8 +62,7 @@ window.Profile = (function () {
       // Gramática and Puntos débiles are noise before there's enough data to
       // fill them; article drills (Opción múltiple) and ser/estar stay in.
       selectors: ['inteligente', 'tema', 'siguiente'],
-      cualPairs: ['ser-estar'],
-      roundLength: 8
+      cualPairs: ['ser-estar']
     },
     refresher: {
       name: 'refresher', label: 'Refresher',
@@ -77,8 +75,7 @@ window.Profile = (function () {
       tenses: function () { return fullTenseSet(); },
       defaultGameMode: 'tranquilo',
       selectors: ['inteligente', 'tema', 'gramatica', 'debiles', 'siguiente'],
-      cualPairs: ['ser-estar', 'por-para', 'preterite-imperfect', 'subj'],
-      roundLength: 12
+      cualPairs: ['ser-estar', 'por-para', 'preterite-imperfect', 'subj']
     }
   };
 

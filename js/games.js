@@ -8,12 +8,13 @@
  *
  * Two modes on every game, chosen on the round-start screen:
  *   Tranquilo    — untimed, no score pressure, no timer shown. The default
- *                  everywhere (the only default in beginner mode).
+ *                  everywhere (the only default in beginner mode). No fixed
+ *                  round length — the pool recycles indefinitely and you tap
+ *                  "Terminar" whenever you want to stop and see the summary.
  *   Contrarreloj — 90 seconds, points for correct answers, a personal best
  *                  stored per game+submode. Selectable in every mode, never
- *                  pre-selected.
- * Round length is 10-15 items in Tranquilo (12, fixed); Contrarreloj runs
- * until the clock ends, recycling the item pool if it's exhausted first.
+ *                  pre-selected. Runs until the clock ends, recycling the
+ *                  item pool if it's exhausted first.
  *
  * Misses are logged to the error log AS THEY HAPPEN (the same convention the
  * daily session and drills use), so by the time the round-end screen offers
@@ -26,8 +27,6 @@ window.Games = (function () {
   var CONTRARRELOJ_SECONDS = 90;
 
   function isBeginner() { return !!(window.Profile && window.Profile.current() === 'beginner'); }
-  // Round length is one of Phase 7's consolidated per-mode knobs (js/profile.js).
-  function roundLen() { return window.Profile ? window.Profile.params().roundLength : 12; }
   function loadBest() { try { return JSON.parse(localStorage.getItem(BEST_KEY)) || {}; } catch (e) { return {}; } }
   function saveBest(o) { try { localStorage.setItem(BEST_KEY, JSON.stringify(o)); } catch (e) {} }
   function bestFor(key) { return loadBest()[key] || 0; }
@@ -79,9 +78,13 @@ window.Games = (function () {
     head.appendChild(UI.el('span', 'eyebrow', title + (tranquilo ? '' : ' · Contrarreloj')));
     var right = UI.el('span', 'stage-count');
     var timerEl = UI.el('span', 'game-timer');
+    var finishB = UI.el('button', 'ghost-btn small', 'Terminar'); finishB.type = 'button'; finishB.style.marginTop = '0';
+    finishB.addEventListener('click', finish);
     var exitB = UI.el('button', 'ghost-btn small', '✕ salir'); exitB.type = 'button'; exitB.style.marginTop = '0';
     exitB.addEventListener('click', function () { if (timerId) clearInterval(timerId); backToTab(); });
-    right.appendChild(timerEl); right.appendChild(UI.el('span', null, '  ')); right.appendChild(exitB);
+    right.appendChild(timerEl); right.appendChild(UI.el('span', null, '  '));
+    if (tranquilo) { right.appendChild(finishB); right.appendChild(UI.el('span', null, '  ')); }
+    right.appendChild(exitB);
     head.appendChild(right);
     wrap.appendChild(head);
 
@@ -92,9 +95,7 @@ window.Games = (function () {
     host.appendChild(wrap);
 
     function updateScore() {
-      scoreRow.textContent = tranquilo
-        ? (seen + ' / ' + Math.min(roundLen(), pool.length))
-        : (correct + ' correct · ' + seen + ' seen' + (bestFor(bestKey) ? ' · best ' + bestFor(bestKey) : ''));
+      scoreRow.textContent = correct + ' correct · ' + seen + ' seen' + (!tranquilo && bestFor(bestKey) ? ' · best ' + bestFor(bestKey) : '');
     }
     function tick() {
       var remain = Math.max(0, endTime - Date.now());
@@ -104,8 +105,10 @@ window.Games = (function () {
     }
     if (!tranquilo) { tick(); timerId = setInterval(tick, 250); }
 
+    // No fixed round length — the pool just recycles for as long as you want
+    // to keep going; Tranquilo ends only when you tap Terminar, Contrarreloj
+    // only when the clock runs out.
     function nextItem() {
-      if (tranquilo && seen >= Math.min(roundLen(), pool.length)) { finish(); return; }
       if (idx >= pool.length) { pool = E.shuffle(items.slice()); idx = 0; }   // recycle
       var item = pool[idx++];
       renderItem(itemHost, item, function (good) {
@@ -145,12 +148,13 @@ window.Games = (function () {
 
   // Mode picker shared by every game's setup screen.
   function modeToggle(container, onChange) {
-    var tranquilo = true;
+    var def = window.Profile ? window.Profile.params().defaultGameMode : 'tranquilo';
+    var tranquilo = def === 'tranquilo';
     var bar = UI.el('div', 'profile-bar muted');
     bar.appendChild(UI.el('span', null, 'Modo:'));
     var seg = UI.el('div', 'segmented');
     [['tranquilo', 'Tranquilo'], ['contrarreloj', 'Contrarreloj']].forEach(function (o) {
-      var b = UI.el('button', 'seg' + (o[0] === 'tranquilo' ? ' active' : ''), o[1]); b.type = 'button';
+      var b = UI.el('button', 'seg' + (o[0] === def ? ' active' : ''), o[1]); b.type = 'button';
       b.addEventListener('click', function () {
         tranquilo = o[0] === 'tranquilo';
         Array.prototype.forEach.call(seg.children, function (x) { x.classList.remove('active'); });
@@ -196,7 +200,7 @@ window.Games = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(exitHeader('Emparejar'));
-    wrap.appendChild(UI.el('p', 'muted', 'Tap two cards to match them. 6 pairs a round.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Tap one from each side to match them. Español on the left, English on the right.'));
     var content = 'vocab';
     wrap.appendChild(UI.el('h3', null, 'Contenido'));
     var seg1 = UI.el('div', 'segmented');
@@ -218,23 +222,26 @@ window.Games = (function () {
   }
 
   function runEmparejar(host, source, tranquilo, submode) {
-    var N = 6;
+    var N = 12;   // a bigger board — a longer round, not a quick 6-pair skim
     var picks = UI.sample ? UI.sample(source, Math.min(N, source.length)) : E.shuffle(source.slice()).slice(0, Math.min(N, source.length));
     if (!picks.length) { showEmparejarSetup(host); return; }
-    var cards = [];
+    var leftCards = [], rightCards = [];
     picks.forEach(function (p, i) {
-      cards.push({ uid: i + 'a', pairId: i, text: p.a, item: p });
-      cards.push({ uid: i + 'b', pairId: i, text: p.b, item: p });
+      leftCards.push({ uid: i + 'a', pairId: i, text: p.a, item: p });
+      rightCards.push({ uid: i + 'b', pairId: i, text: p.b, item: p });
     });
-    cards = E.shuffle(cards);
+    E.shuffle(leftCards); E.shuffle(rightCards);
 
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(exitHeader('Emparejar'));
     var stats = UI.el('div', 'muted small game-score');
     wrap.appendChild(stats);
-    var grid = UI.el('div', 'match-grid');
-    wrap.appendChild(grid);
+    var columns = UI.el('div', 'match-columns');
+    var leftCol = UI.el('div', 'match-col');
+    var rightCol = UI.el('div', 'match-col');
+    columns.appendChild(leftCol); columns.appendChild(rightCol);
+    wrap.appendChild(columns);
     host.appendChild(wrap);
 
     var open = [], matched = {}, attempts = {}, foundPairs = 0, startTime = Date.now();
@@ -242,12 +249,14 @@ window.Games = (function () {
       stats.textContent = foundPairs + ' / ' + picks.length + ' pares';
     }
     var els = {};
-    cards.forEach(function (c) {
+    function addCard(c, col) {
       var b = UI.el('button', 'match-card'); b.type = 'button'; b.textContent = c.text;
       b.addEventListener('click', function () { onTap(c, b); });
       els[c.uid] = b;
-      grid.appendChild(b);
-    });
+      col.appendChild(b);
+    }
+    leftCards.forEach(function (c) { addCard(c, leftCol); });
+    rightCards.forEach(function (c) { addCard(c, rightCol); });
     render();
 
     function onTap(c, el) {
