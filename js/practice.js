@@ -5,11 +5,9 @@
  *   • Gramática    — drill a tense in context (cloze), types-to-answer.
  *   • Vocabulario  — themed word sets (grouped so quizzes aren't tiny), your
  *                   captured words, or the idioms, in either direction.
- *   • A shortcut out to the Español app for fast flashcard/conjugation drills.
  * ========================================================================== */
 window.Practice = (function () {
   var UI = window.UI, E = window.ENGINE;
-  var ESPANOL_URL = 'https://matt-mccrea.github.io/Espanol-/';
   var TLKEY = 'fluidez.topicLevel';
 
   // Themed vocab groups (pool several categories so every quiz has enough words).
@@ -130,20 +128,13 @@ window.Practice = (function () {
     }
     wrap.appendChild(chips);
 
-    // ---- external drills ----
-    wrap.appendChild(UI.el('h3', null, 'Fast drills'));
-    var esp = UI.el('a', 'resource-item'); esp.href = ESPANOL_URL; esp.target = '_blank'; esp.rel = 'noopener noreferrer';
-    esp.innerHTML = '<span class="res-label">Español — vocab & conjugation drills ↗</span><span class="res-note muted">the companion app: rapid flashcards, quizzes and full conjugation tables</span>';
-    wrap.appendChild(esp);
-
-    var home = UI.el('button', 'ghost-btn', '← Inicio'); home.type = 'button'; home.addEventListener('click', back);
-    wrap.appendChild(home);
     host.appendChild(wrap);
   }
 
-  function backToMenu() { render(document.getElementById('stage-host'), function () { window.App.go('home'); }); }
+  function backToMenu() { window.Shell.closeOverlay(); window.Shell.refresh('practicar'); }
 
   function startCards(cards, title) {
+    window.Shell.openOverlay(false);
     var host = document.getElementById('stage-host');
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
@@ -161,6 +152,7 @@ window.Practice = (function () {
   }
 
   function startTopic(t) {
+    window.Shell.openOverlay(false);
     var host = document.getElementById('stage-host');
     var lvl = Math.min(topicLevel(t.id), t.prompts.length);
     var pr = t.prompts[lvl - 1];

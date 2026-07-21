@@ -85,9 +85,6 @@ window.Capture = (function () {
     }
     renderList();
 
-    var home = UI.el('button', 'ghost-btn', '← Inicio'); home.type = 'button';
-    home.addEventListener('click', back);
-    wrap.appendChild(home);
     host.appendChild(wrap);
     esIn.focus();
   }

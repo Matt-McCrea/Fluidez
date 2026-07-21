@@ -26,7 +26,7 @@ window.Resources = (function () {
       wrap.appendChild(list);
     });
 
-    var home = UI.el('button', 'ghost-btn', '← Inicio'); home.type = 'button'; home.addEventListener('click', back);
+    var home = UI.el('button', 'ghost-btn', '← Más'); home.type = 'button'; home.addEventListener('click', back);
     wrap.appendChild(home);
     host.appendChild(wrap);
   }

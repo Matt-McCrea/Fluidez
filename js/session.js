@@ -217,6 +217,10 @@ window.Session = (function () {
     setProgress(0, 1);
   }
 
+  function pauseToShell() {
+    if (window.Shell) { window.Shell.closeOverlay(); window.Shell.go('inicio'); }
+  }
+
   function runStage() {
     var all = stages();
     if (idx >= all.length) { renderComplete(); return; }
@@ -225,7 +229,12 @@ window.Session = (function () {
     var stage = all[idx];
     var head = UI.el('div', 'stage-head');
     head.appendChild(UI.el('span', 'eyebrow', stage.icon + '  ' + stage.label));
-    head.appendChild(UI.el('span', 'stage-count', 'Paso ' + (idx + 1) + ' / ' + all.length));
+    var right = UI.el('span', 'stage-count');
+    right.appendChild(UI.el('span', null, 'Paso ' + (idx + 1) + ' / ' + all.length + '  '));
+    var exitB = UI.el('button', 'ghost-btn small', '✕ pausar'); exitB.type = 'button'; exitB.style.marginTop = '0';
+    exitB.addEventListener('click', pauseToShell);
+    right.appendChild(exitB);
+    head.appendChild(right);
     host.appendChild(head);
     var body = UI.el('div', 'stage-body');
     host.appendChild(body);
@@ -280,5 +289,11 @@ window.Session = (function () {
     renderIntro();
   }
 
-  return { start: start };
+  return {
+    start: start,
+    resume: function () { host = document.getElementById('stage-host'); bar = document.getElementById('session-progress-fill'); if (idx >= 0 && ctx) runStage(); else start(); },
+    isActive: function () { return idx >= 0 && idx < stages().length; },
+    currentStageIndex: function () { return idx; },
+    stageCount: function () { return stages().length; }
+  };
 })();

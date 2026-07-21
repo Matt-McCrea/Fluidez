@@ -84,7 +84,7 @@ window.Progress = (function () {
     var studied = p.studied || {};
     var lessons = window.GRAMMAR_LESSONS || [];
     var nextIdx = lessons.findIndex(function (l) { return !studied[l.id]; });
-    function reRender() { render(host, back); }
+    function reRender() { window.Shell.closeOverlay(); render(host, back); }
     var beginner = window.Profile && window.Profile.current() === 'beginner';
 
     wrap.appendChild(UI.el('h3', null, 'Lessons'));
@@ -112,7 +112,7 @@ window.Progress = (function () {
         }
         var row = UI.el('button', 'syl-row' + (i === curDay ? ' current' : '')); row.type = 'button';
         row.innerHTML = '<span class="syl-mark">' + mark + '</span><span class="syl-title">' + title + '</span><span class="syl-level muted">' + meta + '</span>';
-        row.addEventListener('click', function () { window.LessonRun.run(focus, reRender); });
+        row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run(focus, reRender); });
         flat.appendChild(row);
       });
       wrap.appendChild(flat);
@@ -126,7 +126,7 @@ window.Progress = (function () {
         var row = UI.el('button', 'syl-row ' + state); row.type = 'button';
         row.innerHTML = '<span class="syl-mark">' + mark + '</span><span class="syl-title">' + l.title +
           '</span><span class="syl-level muted">L' + (l.level || 1) + ' ›</span>';
-        row.addEventListener('click', function () { window.LessonRun.run({ type: 'grammar', id: l.id }, reRender); });
+        row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run({ type: 'grammar', id: l.id }, reRender); });
         syl.appendChild(row);
       });
       wrap.appendChild(syl);
@@ -137,7 +137,7 @@ window.Progress = (function () {
       vocabLessons().forEach(function (v) {
         var row = UI.el('button', 'syl-row'); row.type = 'button';
         row.innerHTML = '<span class="syl-mark">📇</span><span class="syl-title">' + v.title + '</span><span class="syl-level muted">' + v.words.length + ' ›</span>';
-        row.addEventListener('click', function () { window.LessonRun.run({ type: 'vocab', cat: v.cat, words: v.words }, reRender); });
+        row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run({ type: 'vocab', cat: v.cat, words: v.words }, reRender); });
         vlist.appendChild(row);
       });
       vd.appendChild(vlist); wrap.appendChild(vd);
@@ -148,7 +148,7 @@ window.Progress = (function () {
       verbLessons().forEach(function (grp) {
         var row = UI.el('button', 'syl-row'); row.type = 'button';
         row.innerHTML = '<span class="syl-mark">🔤</span><span class="syl-title">' + grp.slice(0, 4).join(', ') + (grp.length > 4 ? '…' : '') + '</span><span class="syl-level muted">' + grp.length + ' ›</span>';
-        row.addEventListener('click', function () { window.LessonRun.run({ type: 'verbs', verbs: grp }, reRender); });
+        row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run({ type: 'verbs', verbs: grp }, reRender); });
         rlist.appendChild(row);
       });
       rd.appendChild(rlist); wrap.appendChild(rd);
@@ -215,8 +215,6 @@ window.Progress = (function () {
       }
     }
 
-    var home = UI.el('button', 'ghost-btn', '← Inicio'); home.type = 'button'; home.addEventListener('click', back);
-    wrap.appendChild(UI.el('div', null, '')); wrap.appendChild(home);
     host.appendChild(wrap);
   }
 

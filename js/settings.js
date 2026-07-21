@@ -89,7 +89,7 @@ window.Settings = (function () {
     importWrap.appendChild(status);
     wrap.appendChild(importWrap);
 
-    var home = UI.el('button', 'ghost-btn', '← Inicio');
+    var home = UI.el('button', 'ghost-btn', '← Más');
     home.type = 'button'; home.style.marginTop = '24px';
     home.addEventListener('click', back);
     wrap.appendChild(home);

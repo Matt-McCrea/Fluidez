@@ -17,7 +17,7 @@ window.Grammar = (function () {
     var head = UI.el('div', 'panel');
     head.appendChild(UI.el('h1', null, 'Gramática'));
     head.appendChild(UI.el('p', 'muted', 'Every lesson, always open — read or revise any point whenever you like.'));
-    var homeTop = UI.el('button', 'ghost-btn', '← Inicio'); homeTop.type = 'button'; homeTop.addEventListener('click', back);
+    var homeTop = UI.el('button', 'ghost-btn', '← Más'); homeTop.type = 'button'; homeTop.addEventListener('click', back);
     head.appendChild(homeTop);
     host.appendChild(head);
 

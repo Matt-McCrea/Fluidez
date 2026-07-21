@@ -1,6 +1,6 @@
 /* ============================================================================
- * HUB — the home screen (launcher) and the "Tus errores" view.
- * The session stays immersive; everything else is reached from here.
+ * HUB — the shared review-pool helper (used by the Inicio status strip) and
+ * the "Tus errores" deck, reached from the Progreso tab.
  * ========================================================================== */
 window.Hub = (function () {
   var UI = window.UI, S = window.SRS;
@@ -22,84 +22,6 @@ window.Hub = (function () {
     return items;
   }
 
-  function loadProg() { try { return JSON.parse(localStorage.getItem('fluidez.progress')) || {}; } catch (e) { return {}; } }
-
-  function nextLesson() {
-    var studied = loadProg().studied || {};
-    var lessons = window.GRAMMAR_LESSONS || [];
-    for (var i = 0; i < lessons.length; i++) if (!studied[lessons[i].id]) return lessons[i];
-    return null;
-  }
-
-  function card(icon, title, sub, view) {
-    var b = UI.el('button', 'hub-card');
-    b.type = 'button';
-    b.innerHTML = '<span class="hub-ico">' + icon + '</span><span class="hub-title">' + title + '</span>' +
-      '<span class="hub-sub muted">' + sub + '</span>';
-    b.addEventListener('click', function () { window.App.go(view); });
-    return b;
-  }
-
-  // A hub card that opens an external app in a new tab.
-  function extCard(icon, title, sub, url) {
-    var a = UI.el('a', 'hub-card');
-    a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
-    a.innerHTML = '<span class="hub-ico">' + icon + '</span><span class="hub-title">' + title + '</span>' +
-      '<span class="hub-sub muted">' + sub + '</span>';
-    return a;
-  }
-
-  function render(host) {
-    UI.clear(host);
-    var p = loadProg();
-    var due = S.dueCount(reviewPool());
-    var nl = nextLesson();
-
-    var head = UI.el('div', 'hub-head panel');
-    head.appendChild(UI.el('div', 'eyebrow', '🌊 Fluidez'));
-    head.appendChild(UI.el('h1', null, p.streak ? '🔥 ' + p.streak + '-day streak' : '¡Hola! Ready to practise?'));
-    head.appendChild(UI.el('p', 'muted',
-      (due ? due + ' item' + (due === 1 ? '' : 's') + ' due · ' : '') +
-      (nl ? 'Next lesson: ' + nl.title : 'Syllabus complete — you\'re in review mode 🎓')));
-    host.appendChild(head);
-
-    var start = UI.el('button', 'hub-start');
-    start.type = 'button';
-    start.innerHTML = '<span class="hub-ico">▶</span><span><b>Empezar la sesión de hoy</b><br>' +
-      '<span class="muted">Review · lesson · reading · apply · write — about 15–20 min</span></span>';
-    start.addEventListener('click', function () { window.App.go('session'); });
-    host.appendChild(start);
-
-    var grid = UI.el('div', 'hub-grid');
-    var errN = window.ErrorLog ? window.ErrorLog.list().filter(function (e) { return e.reviewable; }).length : 0;
-    var capN = window.Capture ? window.Capture.count() : 0;
-    grid.appendChild(card('🧩', 'Practicar', 'drills, vocab & topics', 'practice'));
-    grid.appendChild(card('📖', 'Gramática', 'browse every lesson', 'grammar'));
-    grid.appendChild(card('📊', 'Tu progreso', 'streak, syllabus & stats', 'progress'));
-    grid.appendChild(card('✍️', 'Escribir', 'free writing & journal', 'write'));
-    grid.appendChild(card('➕', 'Añadir palabras', capN + ' captured', 'capture'));
-    grid.appendChild(card('🩹', 'Tus errores', errN + ' to review', 'errors'));
-    grid.appendChild(card('📚', 'Recursos', 'podcasts & references', 'resources'));
-    grid.appendChild(card('⚙️', 'Ajustes', 'export / import your data', 'settings'));
-    grid.appendChild(extCard('⚡', 'Español · drills', 'fast flashcards & conjugation ↗', 'https://matt-mccrea.github.io/Espanol-/'));
-    host.appendChild(grid);
-
-    // ---- profile switcher ----
-    if (window.Profile) {
-      var pr = UI.el('div', 'profile-bar muted');
-      pr.appendChild(UI.el('span', null, 'Mode:'));
-      var seg = UI.el('div', 'segmented');
-      window.Profile.all().forEach(function (pf) {
-        var b = UI.el('button', 'seg' + (window.Profile.current() === pf.name ? ' active' : ''), pf.label);
-        b.type = 'button';
-        b.addEventListener('click', function () { window.Profile.set(pf.name); render(host); });
-        seg.appendChild(b);
-      });
-      pr.appendChild(seg);
-      host.appendChild(pr);
-    }
-  }
-
   // ---- "Tus errores" view -------------------------------------------------
   function renderErrors(host, back) {
     UI.clear(host);
@@ -109,7 +31,7 @@ window.Hub = (function () {
 
     if (!cards.length) {
       wrap.appendChild(UI.el('p', 'muted', 'Nothing to review — no logged mistakes right now. Nicely done. Misses from cloze, short answers and review show up here to drill.'));
-      var h = UI.el('button', 'ghost-btn', '← Inicio'); h.type = 'button'; h.addEventListener('click', back);
+      var h = UI.el('button', 'ghost-btn', '← Volver'); h.type = 'button'; h.addEventListener('click', back);
       wrap.appendChild(h); host.appendChild(wrap); return;
     }
 
@@ -121,10 +43,10 @@ window.Hub = (function () {
     window.Deck.run(deckHost, cards, function (stats) {
       UI.clear(deckHost);
       deckHost.appendChild(UI.el('h2', null, 'Listo — ' + stats.correct + ' / ' + stats.seen));
-      var h = UI.el('button', 'ghost-btn', '← Inicio'); h.type = 'button'; h.addEventListener('click', back);
+      var h = UI.el('button', 'ghost-btn', '← Volver'); h.type = 'button'; h.addEventListener('click', back);
       deckHost.appendChild(h);
     });
   }
 
-  return { render: render, renderErrors: renderErrors, reviewPool: reviewPool };
+  return { renderErrors: renderErrors, reviewPool: reviewPool };
 })();

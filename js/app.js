@@ -1,7 +1,9 @@
 /* ============================================================================
- * APP — shell + router. The home hub is the launcher; the daily session and
- * the other areas (progress, capture, errors, resources, free writing) are
- * views mounted into #stage-host. `App.go(view)` switches between them.
+ * APP — theme toggle + the small set of full-screen overlays that live
+ * outside the tab bar (the daily session, the error deck, games). Everything
+ * else is a tab, owned by window.Shell. `App.go(view)` is the seam every
+ * overlay-triggering click still calls; it opens/closes the overlay and then
+ * hands off to the view's own module.
  * ========================================================================== */
 window.App = (function () {
   var THEME_KEY = 'fluidez.theme';
@@ -12,22 +14,27 @@ window.App = (function () {
     document.getElementById('theme-toggle').textContent = t === 'dark' ? '☀️' : '🌙';
   }
 
+  function backToShell() { window.Shell.closeOverlay(); window.Shell.go('inicio'); }
+
   function go(view, arg) {
-    var back = function () { go('home'); };
-    // the progress bar belongs to the session only
-    header.classList.toggle('in-session', view === 'session');
     switch (view) {
-      case 'session':   window.Session.start(); break;
-      case 'progress':  window.Progress.render(host, back); break;
-      case 'capture':   window.Capture.render(host, back); break;
-      case 'errors':    window.Hub.renderErrors(host, back); break;
-      case 'resources': window.Resources.render(host, back); break;
-      case 'write':     window.WriteSpace.render(host, back); break;
-      case 'grammar':   window.Grammar.render(host, back, arg); break;
-      case 'practice':  window.Practice.render(host, back); break;
-      case 'settings':  window.Settings.render(host, back); break;
+      case 'session':
+        window.Shell.openOverlay(true);
+        if (window.Session.isActive()) window.Session.resume(); else window.Session.start();
+        break;
+      case 'errors':
+        window.Shell.openOverlay(false);
+        window.Hub.renderErrors(host, backToShell);
+        break;
+      case 'games':
+        window.Shell.openOverlay(false);
+        window.Games.render(host, backToShell);
+        break;
       case 'home':
-      default:          window.Hub.render(host); break;
+      default:
+        window.Shell.closeOverlay();
+        window.Shell.go('inicio');
+        break;
     }
   }
 
@@ -43,11 +50,11 @@ window.App = (function () {
       try { localStorage.setItem(THEME_KEY, next); } catch (e) {}
       applyTheme(next);
     });
-    // clicking the brand returns home
+    // clicking the brand returns to Inicio
     var brand = document.querySelector('.brand');
     if (brand) { brand.style.cursor = 'pointer'; brand.addEventListener('click', function () { go('home'); }); }
 
-    go('home');
+    window.Shell.init();
   });
 
   return { go: go };
