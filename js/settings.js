@@ -1,18 +1,21 @@
 /* ============================================================================
  * SETTINGS (Ajustes) — export / import your data.
  *
- * iOS gives a home-screen web app its OWN storage sandbox, separate from
- * Safari's. Progress made in Safari will NOT appear once you install to the
- * home screen (and vice versa) — export from Safari, install, then import
- * once, on first launch. This is also the app's only backup: everything here
- * lives in localStorage on one device with nothing else keeping a copy.
+ * There's no server — every install (a browser tab, an iOS home-screen app,
+ * a Mac "Add to Dock" app) keeps its own separate localStorage sandbox, even
+ * on the same device. Moving your progress from one install to another
+ * (phone → Mac, Safari → home screen, one person's install → their other
+ * device) is always: export on the source, send yourself the file, import on
+ * the destination. This is also the app's only backup — nothing here is
+ * stored anywhere else.
  * ========================================================================== */
 window.Settings = (function () {
   var UI = window.UI;
   // Every key Fluidez writes to localStorage. Keep this in sync by hand —
   // there's no build step to derive it automatically.
   var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.errors', 'fluidez.captured',
-    'fluidez.userWords', 'fluidez.journal', 'fluidez.profile', 'fluidez.theme', 'fluidez.topicLevel', 'fluidez.caps'];
+    'fluidez.userWords', 'fluidez.journal', 'fluidez.profile', 'fluidez.theme', 'fluidez.topicLevel', 'fluidez.caps',
+    'fluidez.gameBest'];
 
   function exportData() {
     var out = { app: 'fluidez', exportedAt: new Date().toISOString(), data: {} };
@@ -50,8 +53,7 @@ window.Settings = (function () {
 
     wrap.appendChild(UI.el('h3', null, 'Exportar / importar datos'));
     wrap.appendChild(UI.el('p', 'muted',
-      'A home-screen install keeps its own storage, separate from Safari. ' +
-      'Export here before installing, then import once inside the installed app. ' +
+      'Every install (phone, Mac, browser tab) keeps its own separate copy of your progress — moving it from one to another means exporting here, sending yourself the file (AirDrop, Files, email, whatever\'s easiest), and importing it on the other one. ' +
       'This file is also your only backup — nothing here is stored anywhere else.'));
 
     var exportBtn = UI.el('button', 'primary-btn', 'Exportar datos (.json)');
