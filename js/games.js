@@ -209,7 +209,8 @@ window.Games = (function () {
   function conjPairSourceMixed(tenses, count) {
     var simple = (tenses || []).filter(function (tk) { return tk !== 'imperativo'; });
     if (!simple.length) simple = ['presente'];
-    var verbs = E.shuffle((window.VERBS || []).slice());
+    var verbs = E.shuffle((window.Profile ? window.Profile.conjugableVerbs() : (window.VERBS || [])).slice());
+    if (!verbs.length) return [];
     var out = [], vi = 0, guard = 0;
     while (out.length < count && guard < verbs.length * 4 + 20) {
       guard++;
@@ -399,7 +400,7 @@ window.Games = (function () {
     var simple = (tenses || []).filter(function (tk) { return tk !== 'imperativo'; });
     if (simple.length < 2) simple = tenses;
     var out = [];
-    (window.VERBS || []).forEach(function (v) {
+    (window.Profile ? window.Profile.conjugableVerbs() : (window.VERBS || [])).forEach(function (v) {
       simple.forEach(function (tk) {
         var forms = E.conjugate(v, tk);
         forms.forEach(function (form, i) {
@@ -487,7 +488,7 @@ window.Games = (function () {
   // 3. CONJUGACIÓN RÁPIDA — an English phrase → the conjugated form, typed
   // ===========================================================================
   function conjRapidaItems(tenses, scope) {
-    var verbs = (window.VERBS || []).slice();
+    var verbs = (window.Profile ? window.Profile.conjugableVerbs() : (window.VERBS || [])).slice();
     if (scope === 'regular') verbs = verbs.filter(function (v) { return !E.isIrregular(v); });
     else if (scope === 'irregular') verbs = verbs.filter(function (v) { return E.isIrregular(v); });
     var out = [];

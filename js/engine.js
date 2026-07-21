@@ -28,7 +28,8 @@ window.ENGINE = (function () {
     { key: 'presubj',     label: 'Presente de subjuntivo',       group: 'subjunctive' },
     { key: 'impsubj',     label: 'Imperfecto de subjuntivo',     group: 'subjunctive' },
     { key: 'perfsubj',    label: 'Pretérito perfecto de subj.',  group: 'subjunctive' },
-    { key: 'imperativo',  label: 'Imperativo (afirmativo)',      group: 'imperative' }
+    { key: 'imperativo',  label: 'Imperativo (afirmativo)',      group: 'imperative' },
+    { key: 'impneg',      label: 'Imperativo (negativo)',        group: 'imperative' }
   ];
   var TENSE_LABEL = {};
   TENSES.forEach(function (t) { TENSE_LABEL[t.key] = t.label; });
@@ -134,13 +135,28 @@ window.ENGINE = (function () {
       ];
     }
 
+    // Negative imperative: entirely subjunctive-based, including tú — the
+    // one person that has its own special form in the affirmative
+    // (¡Habla! vs ¡No hables!). Every other person is already subjunctive-
+    // shaped in the affirmative too, so only tú actually changes form.
+    if (tenseKey === 'impneg') {
+      var nsubj = conjugate(v, 'presubj');
+      return [
+        'no ' + nsubj[1],   // tú
+        'no ' + nsubj[2],   // usted
+        'no ' + nsubj[3],   // nosotros
+        'no ' + nsubj[4],   // vosotros
+        'no ' + nsubj[5]    // ustedes
+      ];
+    }
+
     // Simple tenses: use stored irregular forms when present, else regular.
     if (v.forms && v.forms[tenseKey]) return v.forms[tenseKey].slice();
     return regular(v, tenseKey);
   }
 
   function personsFor(tenseKey) {
-    return tenseKey === 'imperativo' ? IMP_PERSONS : PERSONS;
+    return (tenseKey === 'imperativo' || tenseKey === 'impneg') ? IMP_PERSONS : PERSONS;
   }
 
   function isIrregular(v) {
@@ -265,6 +281,16 @@ window.ENGINE = (function () {
       } else {
         phrase = reattach(head, rest) + '!';
         marker = impPerson;
+      }
+      return { text: phrase + qualifierSuffix, marker: marker };
+    }
+    if (tenseKey === 'impneg') {
+      var impNegPerson = EN_IMP_PERSONS[personIdx];
+      if (impNegPerson === 'nosotros') {
+        phrase = "let's not " + bq.base + '!';
+      } else {
+        phrase = "don't " + reattach(head, rest) + '!';
+        marker = impNegPerson;
       }
       return { text: phrase + qualifierSuffix, marker: marker };
     }

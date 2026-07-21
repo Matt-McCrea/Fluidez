@@ -39,7 +39,21 @@ window.Selector = (function () {
 
   function loadProg() { try { return JSON.parse(localStorage.getItem('fluidez.progress')) || {}; } catch (e) { return {}; } }
   function isBeginner() { return !!(window.Profile && window.Profile.current() === 'beginner'); }
-  function masterPool() { return window.StageReview ? window.StageReview.pool() : []; }
+  // Beginner: strip conjugation cards (vt:) for verbs never introduced, so
+  // Repaso inteligente's Stretch bucket can't hand a beginner a never-met
+  // verb's conjugation. Verb-MEANING cards (vm:) are untouched — that's the
+  // vocab-quiz exemption, meeting a meaning fresh is fine.
+  function masterPool() {
+    var pool = window.StageReview ? window.StageReview.pool() : [];
+    if (!isBeginner() || !window.Profile) return pool;
+    var introduced = {};
+    window.Profile.conjugableVerbs().forEach(function (v) { introduced[v.inf] = 1; });
+    return pool.filter(function (it) {
+      if (it.kind !== 'verb-tense') return true;
+      var inf = it.id.split(':')[1];
+      return !!introduced[inf];
+    });
+  }
 
   // Flatten a master-pool item into a plain {front, back} card for Deck.run.
   // Fixed cards (grammar recall, verb-tense, error log) already carry front/
@@ -169,7 +183,7 @@ window.Selector = (function () {
   // its 6 persons genuinely grades the same underlying mastery record.
   function tenseConjCards(tk) {
     var out = [];
-    (window.VERBS || []).forEach(function (v) {
+    (window.Profile ? window.Profile.conjugableVerbs() : (window.VERBS || [])).forEach(function (v) {
       var forms = E.conjugate(v, tk);
       forms.forEach(function (form, i) {
         if (!form) return;

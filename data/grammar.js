@@ -119,6 +119,36 @@ window.CONCEPT_LESSONS = [
     { id: 'g:porpara:goal', front: '“for” pointing to a goal/deadline', back: 'para' },
     { id: 'g:porpara:cause', front: '“for” meaning a cause/in exchange', back: 'por' }
   ]
+},
+
+{
+  id: 'impneg', title: 'Imperativo negativo', level: 4,
+  summary: 'Negative commands ("don\'t speak!") are built entirely from the present subjunctive — including tú, which has its own special form in the affirmative but switches to the subjunctive here.',
+  sections: [
+    { h: 'How it forms', html: 'Take the <b>presente de subjuntivo</b> form for the person you\'re addressing and put <b>no</b> in front: <i>no hables, no hable, no hablemos, no habléis, no hablen</i>.' },
+    { h: 'The one thing that changes', html: '<ul><li>Affirmative tú has its own form: <i>¡Habla!</i>, <i>¡Ven!</i></li><li>Negative tú switches to the subjunctive: <i>¡No hables!</i>, <i>¡No vengas!</i></li><li>Every other person (usted, nosotros, vosotros, ustedes) is already subjunctive-shaped in the affirmative too, so those don\'t change between positive and negative.</li></ul>' },
+    { h: 'When to use it', html: '<ul><li>Telling someone not to do something: <i>No corras.</i></li><li>Group instructions: <i>No lleguéis tarde.</i></li></ul>' }
+  ],
+  contrasts: [
+    { es: 'Habla más despacio.', en: 'Speak more slowly.', note: 'affirmative tú — its own irregular form' },
+    { es: 'No hables tan rápido.', en: 'Don\'t speak so fast.', note: 'negative tú — subjunctive form instead' },
+    { es: 'Ven aquí.', en: 'Come here.', note: 'affirmative tú, irregular' },
+    { es: 'No vengas tarde.', en: 'Don\'t come late.', note: 'negative tú, subjunctive' }
+  ],
+  pitfalls: [
+    'Negative tú is NOT the same shape as affirmative tú: <i>¡Habla!</i> but <i>¡No hables!</i> — saying <i>no habla</i> is a very common mistake.',
+    'Object pronouns attach to the END in the affirmative (<i>¡Dímelo!</i>) but come BEFORE the verb in the negative (<i>¡No me lo digas!</i>).'
+  ],
+  examples: [
+    { es: 'No hables con la boca llena.', en: 'Don\'t speak with your mouth full.' },
+    { es: 'No comas tanto azúcar.', en: 'Don\'t eat so much sugar.' },
+    { es: 'No vayáis solos.', en: 'Don\'t go alone (you all).' }
+  ],
+  recall: [
+    { id: 'g:impneg:mood', front: 'Negative commands (no hables, no coma, no vayamos) are built from which mood?', back: 'subjuntivo' },
+    { id: 'g:impneg:tu', front: 'Negative tú command of "hablar" — no ___', back: 'hables' },
+    { id: 'g:impneg:nosotros', front: 'Negative nosotros command of "comer" ("let\'s not eat") — no ___', back: 'comamos' }
+  ]
 }
 
 ];

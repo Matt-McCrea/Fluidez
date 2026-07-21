@@ -6,7 +6,10 @@
  *   beginner   — recognition-first, heavy support: Spanish→English multiple
  *                choice, word-bank cloze, vocab introduced easiest-first and
  *                gated to everyday categories, grammar taught slowly (a lesson
- *                repeats before it advances), guided (not open) production.
+ *                repeats before it advances), guided (not open) production,
+ *                conjugation quizzes/games restricted to verbs actually met
+ *                so far (conjugableVerbs()) — plain vocab flashcards/quizzes
+ *                are exempt, since meeting a verb's meaning there is fine.
  *   refresher  — for rusty ex-speakers: everything unlocked from day one,
  *                bigger review batches, typed production, paragraphs & free
  *                writing to the fore.
@@ -88,6 +91,30 @@ window.Profile = (function () {
 
   var current = resolve();
 
+  // ---- beginner: restrict CONJUGATION content to verbs actually met -------
+  // Seeing a verb once (its meaning, in a vocab flashcard/quiz) isn't enough
+  // to expect someone to conjugate it — that's a different, harder skill.
+  // conjugableVerbs() is what every conjugation-drilling surface (games,
+  // Practicar's Conjugación drill, the Gramática/Repaso pools) should
+  // iterate INSTEAD of window.VERBS directly; plain vocabulary flashcards/
+  // quizzes (meeting a verb's MEANING) are deliberately exempt and keep
+  // reading window.VERBS as before.
+  function loadProg() { try { return JSON.parse(localStorage.getItem('fluidez.progress')) || {}; } catch (e) { return {}; } }
+  function introducedVerbInfs() {
+    var prog = loadProg(), set = {};
+    if (window.Curriculum) {
+      var seq = window.Curriculum.seq(), day = prog.beginnerDay || 0;
+      for (var i = 0; i < Math.min(day, seq.length); i++) {
+        if (seq[i].type === 'verbs') seq[i].verbs.forEach(function (inf) { set[inf] = 1; });
+      }
+    }
+    var studied = prog.studied || {};
+    Object.keys(studied).forEach(function (key) {
+      if (key.indexOf('verbs:') === 0) key.slice(6).split(',').forEach(function (inf) { set[inf] = 1; });
+    });
+    return set;
+  }
+
   // Session review cap per mode is adjustable in Ajustes — an override here
   // takes precedence over the PROFILES default above.
   var CAPKEY = 'fluidez.caps';
@@ -106,6 +133,12 @@ window.Profile = (function () {
     capFor: capFor,
     setCap: function (name, n) { if (!PROFILES[name]) return; var o = loadCaps(); o[name] = Math.max(1, Math.round(n)); saveCaps(o); },
     tenses: function () { return PROFILES[current].tenses(); },
-    selectorVisible: function (key) { return PROFILES[current].selectors.indexOf(key) !== -1; }
+    selectorVisible: function (key) { return PROFILES[current].selectors.indexOf(key) !== -1; },
+    conjugableVerbs: function () {
+      var all = window.VERBS || [];
+      if (current !== 'beginner') return all;
+      var set = introducedVerbInfs();
+      return all.filter(function (v) { return set[v.inf]; });
+    }
   };
 })();

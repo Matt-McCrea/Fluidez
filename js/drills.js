@@ -34,7 +34,7 @@ window.Drills = (function () {
 
   // ---- conjugation drill ---------------------------------------------------
   function buildConjCards(tenses, scope) {
-    var verbs = (window.VERBS || []).slice();
+    var verbs = (window.Profile ? window.Profile.conjugableVerbs() : (window.VERBS || [])).slice();
     if (scope === 'regular') verbs = verbs.filter(function (v) { return !E.isIrregular(v); });
     else if (scope === 'irregular') verbs = verbs.filter(function (v) { return E.isIrregular(v); });
     var cards = [];
@@ -132,9 +132,13 @@ window.Drills = (function () {
       if (window.Profile && !window.Profile.catAllowed(w.cat) && !w.userWord) return;
       out.push({ front: w.es, back: w.en, kind: 'vocab' });
     });
+    // Meeting a verb's MEANING here is fine even if it hasn't been taught
+    // yet — that's a legitimate way to first come across it — so this stays
+    // on the full list regardless of mode.
     else if (kind === 'verbs') (window.VERBS || []).forEach(function (v) { out.push({ front: v.inf, back: v.en, kind: 'verb' }); });
     else if (kind === 'idioms') (window.IDIOMS || []).forEach(function (x) { out.push({ front: x.es, back: x.en, kind: 'idiom', hint: x.lit || null }); });
-    else if (kind === 'conj') (window.VERBS || []).forEach(function (v) {
+    // Conjugation IS restricted for beginner — same reasoning as the games.
+    else if (kind === 'conj') (window.Profile ? window.Profile.conjugableVerbs() : (window.VERBS || [])).forEach(function (v) {
       var forms = E.conjugate(v, tense);
       forms.forEach(function (form, i) { if (form) out.push({ front: conjPrompt(v, tense, i), back: form, kind: 'conj' }); });
     });
