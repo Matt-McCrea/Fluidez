@@ -460,3 +460,10 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .flashcard.flipped { border-left-color:var(--good); background:var(--panel); }
 .flashcard.flipped .flash-face { color:var(--good); }
 .flashcard .flash-hint { min-height:1.1em; }
+
+/* ---- Palabras: add form extras + add-from-anywhere chip ---- */
+.check-line { display:flex; align-items:center; gap:8px; margin:8px 0; font-size:.9rem; color:var(--muted); }
+.check-line input { width:auto; min-height:0; }
+.mini-btn.add-chip { border-color:var(--accent); color:var(--accent); }
+.mini-btn.add-chip.done { border-color:var(--good); color:var(--good); opacity:1; }
+.gloss-item .add-chip { margin-left:4px; vertical-align:middle; }

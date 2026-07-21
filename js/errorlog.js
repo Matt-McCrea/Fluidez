@@ -25,6 +25,9 @@ window.ErrorLog = (function () {
     s[e.id] = {
       id: e.id, front: e.front, back: e.back, kind: e.kind || 'error',
       source: e.source || '', hint: e.hint || null,
+      // es/en when the miss was a vocabulary pair — lets "add to Palabras"
+      // offer the right orientation from a weak-spots row.
+      es: e.es || (prev && prev.es) || null, en: e.en || (prev && prev.en) || null,
       reviewable: !!e.reviewable,
       count: (prev ? prev.count : 0) + 1,
       lastDay: S ? S.today() : 0

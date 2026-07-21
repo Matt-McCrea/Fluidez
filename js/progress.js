@@ -205,6 +205,8 @@ window.Progress = (function () {
         row.appendChild(UI.el('span', 'weak-front', e.front));
         row.appendChild(UI.el('span', 'weak-back muted', e.back));
         row.appendChild(UI.el('span', 'weak-count', '×' + e.count));
+        // add-from-anywhere: save a missed vocab pair into Palabras
+        if (e.es && e.en && window.UserWords) row.appendChild(window.UserWords.addChip(e.es, e.en, 'mios'));
         top.appendChild(row);
       });
       wrap.appendChild(top);

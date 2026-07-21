@@ -64,22 +64,32 @@ window.SRS = (function () {
     };
   }
 
-  // One-time, additive migration: renames the old single vocab id (`v:<es>`)
-  // to the new meaning-aspect id (`v:<es>:meaning`), and backfills the new
-  // streak/graduation fields on every existing record with neutral defaults.
-  // Every other id shape (idioms, grammar recall, verb meaning, capture,
-  // errors) is untouched.
+  // One-time, additive migration, run until the stored schema marker is current:
+  //   v2 — rename the old single vocab id (`v:<es>`) to the meaning-aspect id
+  //        (`v:<es>:meaning`), and backfill the new streak/graduation fields.
+  //   v3 — rename legacy captured-word ids (`cap:<es>`) to the same unified
+  //        vocab id (`v:<es>:meaning`) now that user words merge into VOCAB,
+  //        so a captured word's review history carries over intact.
+  // If both an old and a renamed id exist, the more-progressed (higher box)
+  // record wins so no streak is lost. Every other id shape is untouched.
+  var SCHEMA_CURRENT = '3';
   function migrate(s) {
     var done = null;
     try { done = localStorage.getItem(SCHEMA_KEY); } catch (e) {}
-    if (done === '2') return s;
+    if (done === SCHEMA_CURRENT) return s;
     var out = {};
+    function place(id, rec) {
+      rec = fillDefaults(rec);
+      if (!out[id] || (rec.box || 0) > (out[id].box || 0)) out[id] = rec;
+    }
     Object.keys(s).forEach(function (id) {
-      var newId = /^v:/.test(id) && !/:(meaning|gender)$/.test(id) ? id + ':meaning' : id;
-      out[newId] = fillDefaults(s[id]);
+      var newId = id;
+      if (/^cap:/.test(id)) newId = 'v:' + id.slice(4) + ':meaning';
+      else if (/^v:/.test(id) && !/:(meaning|gender)$/.test(id)) newId = id + ':meaning';
+      place(newId, s[id]);
     });
     save(out);
-    try { localStorage.setItem(SCHEMA_KEY, '2'); } catch (e) {}
+    try { localStorage.setItem(SCHEMA_KEY, SCHEMA_CURRENT); } catch (e) {}
     return out;
   }
 

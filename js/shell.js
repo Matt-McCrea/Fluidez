@@ -123,7 +123,7 @@ window.Shell = (function () {
       case 'inicio':    renderInicio(host); break;
       case 'practicar': window.Practice.render(host, toInicio); break;
       case 'progreso':  window.Progress.render(host, toInicio); break;
-      case 'palabras':  window.Capture.render(host, toInicio); break;
+      case 'palabras':  window.UserWords.render(host, toInicio); break;
       case 'mas':       showMasMenu(host); break;
     }
   }

@@ -12,7 +12,7 @@ window.Settings = (function () {
   // Every key Fluidez writes to localStorage. Keep this in sync by hand —
   // there's no build step to derive it automatically.
   var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.errors', 'fluidez.captured',
-    'fluidez.journal', 'fluidez.profile', 'fluidez.theme', 'fluidez.topicLevel', 'fluidez.caps'];
+    'fluidez.userWords', 'fluidez.journal', 'fluidez.profile', 'fluidez.theme', 'fluidez.topicLevel', 'fluidez.caps'];
 
   function exportData() {
     var out = { app: 'fluidez', exportedAt: new Date().toISOString(), data: {} };

@@ -20,7 +20,10 @@ window.StageComprehend = (function () {
     if (p.gloss && p.gloss.length) {
       var g = UI.el('div', 'gloss');
       p.gloss.forEach(function (w) {
-        g.appendChild(UI.el('span', 'gloss-item', '<b>' + w.es + '</b> ' + w.en));
+        var item = UI.el('span', 'gloss-item', '<b>' + w.es + '</b> ' + w.en + ' ');
+        // add-from-anywhere: drop a glossed word straight into your Palabras
+        if (window.UserWords) item.appendChild(window.UserWords.addChip(w.es, w.en, 'mios'));
+        g.appendChild(item);
       });
       wrap.appendChild(g);
     }

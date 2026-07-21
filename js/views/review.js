@@ -15,13 +15,13 @@
  * ========================================================================== */
 window.StageReview = (function () {
   var UI = window.UI, E = window.ENGINE, S = window.SRS, C = window.Checker;
-  var Capture = window.Capture, ErrorLog = window.ErrorLog, P = window.Profile;
+  var ErrorLog = window.ErrorLog, P = window.Profile;
 
   // Language-neutral pool: pair cards carry {es,en}; grammar/error are fixed.
   function pool() {
     var items = [];
     (window.VOCAB || []).forEach(function (w, idx) {
-      if (!P.catAllowed(w.cat)) return;
+      if (!P.catAllowed(w.cat) && !w.userWord) return;   // your own words are never gated out
       items.push({ id: 'v:' + w.es + ':meaning', es: w.es, en: w.en, kind: 'vocab', cat: w.cat, rank: P.catRank(w.cat), idx: idx });
     });
     (window.IDIOMS || []).forEach(function (x) {
@@ -54,9 +54,6 @@ window.StageReview = (function () {
         front: pick.text.replace('___', '＿＿＿') + '  [' + pick.inf + ']', back: ans,
         kind: 'verb-tense', tense: pick.tense, fixed: true, enrolledOnly: true, hint: E.TENSE_LABEL[pick.tense]
       });
-    });
-    if (Capture) Capture.cards().forEach(function (c) {                 // {front:en, back:es, hint}
-      items.push({ id: c.id, es: c.back, en: c.front, hint: c.hint || null, kind: 'capture' });
     });
     if (ErrorLog) ErrorLog.cards().forEach(function (c) {               // {front, back, hint} — fixed
       items.push({ id: c.id, front: c.front, back: c.back, hint: c.hint || null, kind: 'error', fixed: true });
@@ -115,7 +112,7 @@ window.StageReview = (function () {
       else {
         S.grade(cur.id, false);
         if (!missed[cur.id] && ErrorLog && cur.kind !== 'error') {
-          ErrorLog.record({ id: cur.id, front: R.front, back: R.back, kind: cur.kind, source: 'review', hint: R.hint, reviewable: false });
+          ErrorLog.record({ id: cur.id, front: R.front, back: R.back, kind: cur.kind, source: 'review', hint: R.hint, reviewable: false, es: cur.es || null, en: cur.en || null });
         }
         missed[cur.id] = 1; queue.push(cur);
       }

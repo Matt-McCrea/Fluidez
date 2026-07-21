@@ -10,14 +10,13 @@ window.Hub = (function () {
   function reviewPool() {
     var items = [];
     (window.VOCAB || []).forEach(function (w) {
-      if (window.Profile && !window.Profile.catAllowed(w.cat)) return;
+      if (window.Profile && !window.Profile.catAllowed(w.cat) && !w.userWord) return;
       items.push({ id: 'v:' + w.es + ':meaning' });
     });
     (window.IDIOMS || []).forEach(function (x) { items.push({ id: 'i:' + x.es }); });
     (window.GRAMMAR_LESSONS || []).forEach(function (l) {
       (l.recall || []).forEach(function (r) { if (S.isEnrolled(r.id)) items.push({ id: r.id }); });
     });
-    if (window.Capture) window.Capture.cards().forEach(function (c) { items.push({ id: c.id }); });
     if (window.ErrorLog) window.ErrorLog.cards().forEach(function (c) { items.push({ id: c.id }); });
     return items;
   }
