@@ -213,6 +213,24 @@ window.Session = (function () {
     });
     wrap.appendChild(list);
     wrap.appendChild(UI.nextBtn('Empezar →', function () { idx = 0; runStage(); }));
+
+    // Refresher: a rusty ex-speaker often already knows today's grammar
+    // lesson cold — let them mark it done without taking it, so tomorrow's
+    // session (or an immediate re-render, if they want to skip a run of
+    // them) picks the next one in the syllabus instead.
+    var pr = window.Profile ? window.Profile.params() : { name: 'standard' };
+    if (pr.name === 'refresher' && ctx.focus && ctx.focus.type === 'grammar' && ctx.lesson) {
+      var skipB = UI.el('button', 'ghost-btn', 'Saltar esta lección →'); skipB.type = 'button';
+      skipB.addEventListener('click', function () {
+        var pp = loadProg();
+        pp.studied = pp.studied || {}; pp.studied[ctx.lesson.id] = 1;
+        saveProg(pp);
+        ctx = buildContext();
+        renderIntro();
+      });
+      wrap.appendChild(skipB);
+    }
+
     host.appendChild(wrap);
     setProgress(0, 1);
   }
