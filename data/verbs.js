@@ -494,5 +494,51 @@ window.VERBS = [
   presente:['valgo','vales','vale','valemos','valéis','valen'],
   futuro:['valdré','valdrás','valdrá','valdremos','valdréis','valdrán'],
   condicional:['valdría','valdrías','valdría','valdríamos','valdríais','valdrían'],
-  presubj:['valga','valgas','valga','valgamos','valgáis','valgan'] } }
+  presubj:['valga','valgas','valga','valgamos','valgáis','valgan'] } },
+
+/* -- reflexive: daily routine (the engine conjugates these like their base
+      verb and adds the reflexive pronoun itself — see js/engine.js) -------- */
+{ inf:'despertarse', en:'to wake up', type:'ar', forms:{
+  presente:['despierto','despiertas','despierta','despertamos','despertáis','despiertan'],
+  presubj:['despierte','despiertes','despierte','despertemos','despertéis','despierten'] } },
+{ inf:'levantarse', en:'to get up', type:'ar' },
+{ inf:'ducharse', en:'to shower', type:'ar' },
+{ inf:'bañarse', en:'to bathe', type:'ar' },
+{ inf:'lavarse', en:'to wash (oneself)', type:'ar' },
+{ inf:'cepillarse', en:'to brush (teeth/hair)', type:'ar' },
+{ inf:'vestirse', en:'to get dressed', type:'ir', ger:'vistiendo', forms:{
+  presente:['visto','vistes','viste','vestimos','vestís','visten'],
+  preterito:['vestí','vestiste','vistió','vestimos','vestisteis','vistieron'],
+  presubj:['vista','vistas','vista','vistamos','vistáis','vistan'] } },
+{ inf:'peinarse', en:'to comb one\'s hair', type:'ar' },
+{ inf:'afeitarse', en:'to shave', type:'ar' },
+{ inf:'maquillarse', en:'to put on makeup', type:'ar' },
+{ inf:'acostarse', en:'to go to bed', type:'ar', forms:{
+  presente:['acuesto','acuestas','acuesta','acostamos','acostáis','acuestan'],
+  presubj:['acueste','acuestes','acueste','acostemos','acostéis','acuesten'] } },
+{ inf:'dormirse', en:'to fall asleep', type:'ir', ger:'durmiendo', forms:{
+  presente:['duermo','duermes','duerme','dormimos','dormís','duermen'],
+  preterito:['dormí','dormiste','durmió','dormimos','dormisteis','durmieron'],
+  presubj:['duerma','duermas','duerma','durmamos','durmáis','duerman'] } },
+{ inf:'sentarse', en:'to sit down', type:'ar', forms:{
+  presente:['siento','sientas','sienta','sentamos','sentáis','sientan'],
+  presubj:['siente','sientes','siente','sentemos','sentéis','sienten'] } },
+{ inf:'sentirse', en:'to feel', type:'ir', ger:'sintiendo', forms:{
+  presente:['siento','sientes','siente','sentimos','sentís','sienten'],
+  preterito:['sentí','sentiste','sintió','sentimos','sentisteis','sintieron'],
+  presubj:['sienta','sientas','sienta','sintamos','sintáis','sientan'] } },
+{ inf:'quedarse', en:'to stay / to remain', type:'ar' },
+{ inf:'prepararse', en:'to get ready', type:'ar' },
+{ inf:'relajarse', en:'to relax', type:'ar' },
+{ inf:'ponerse', en:'to put on (clothing) / to become', type:'er', part:'puesto', forms:{
+  presente:['pongo','pones','pone','ponemos','ponéis','ponen'],
+  preterito:['puse','pusiste','puso','pusimos','pusisteis','pusieron'],
+  futuro:['pondré','pondrás','pondrá','pondremos','pondréis','pondrán'],
+  condicional:['pondría','pondrías','pondría','pondríamos','pondríais','pondrían'],
+  presubj:['ponga','pongas','ponga','pongamos','pongáis','pongan'] }, tuCmd:'pon' },
+{ inf:'irse', en:'to leave / to go away', type:'ir', ger:'yendo', forms:{
+  presente:['voy','vas','va','vamos','vais','van'],
+  preterito:['fui','fuiste','fue','fuimos','fuisteis','fueron'],
+  imperfecto:['iba','ibas','iba','íbamos','ibais','iban'],
+  presubj:['vaya','vayas','vaya','vayamos','vayáis','vayan'] }, tuCmd:'ve' }
 ];

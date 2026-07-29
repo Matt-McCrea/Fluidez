@@ -82,11 +82,13 @@ window.ENGINE = (function () {
   }
 
   function participle(v) {
+    if (/(arse|erse|irse)$/.test(v.inf)) return participle({ inf: v.inf.slice(0, -2), part: v.part });
     if (v.part) return v.part;
     return stemOf(v.inf) + (vowelOf(v.inf) === 'ar' ? 'ado' : 'ido');
   }
 
   function gerund(v) {
+    if (/(arse|erse|irse)$/.test(v.inf)) return gerund({ inf: v.inf.slice(0, -2), ger: v.ger });
     if (v.ger) return v.ger;
     return stemOf(v.inf) + (vowelOf(v.inf) === 'ar' ? 'ando' : 'iendo');
   }
@@ -101,8 +103,11 @@ window.ENGINE = (function () {
     return END[tenseKey][vt].map(function (e) { return stem + e; });
   }
 
-  // Returns an array of conjugated forms for the given tense.
-  function conjugate(v, tenseKey) {
+  // Returns an array of conjugated forms for the given tense, for a verb
+  // whose OWN infinitive is what's conjugated directly (never called with a
+  // reflexive "-se" infinitive — see conjugate() below, which resolves that
+  // before delegating here).
+  function conjugateBase(v, tenseKey) {
     // Compound tenses: haber + past participle (fully rule-based).
     if (HABER[tenseKey]) {
       var p = participle(v);
@@ -111,7 +116,7 @@ window.ENGINE = (function () {
 
     // Imperfect subjunctive: derived from 3rd-person-plural preterite.
     if (tenseKey === 'impsubj') {
-      var base = conjugate(v, 'preterito')[5].replace(/ron$/, '');
+      var base = conjugateBase(v, 'preterito')[5].replace(/ron$/, '');
       return [
         base + 'ra',
         base + 'ras',
@@ -124,8 +129,8 @@ window.ENGINE = (function () {
 
     // Affirmative imperative (own person set).
     if (tenseKey === 'imperativo') {
-      var pres = conjugate(v, 'presente');
-      var subj = conjugate(v, 'presubj');
+      var pres = conjugateBase(v, 'presente');
+      var subj = conjugateBase(v, 'presubj');
       return [
         v.tuCmd || pres[2],              // tú
         subj[2],                         // usted
@@ -140,7 +145,7 @@ window.ENGINE = (function () {
     // (¡Habla! vs ¡No hables!). Every other person is already subjunctive-
     // shaped in the affirmative too, so only tú actually changes form.
     if (tenseKey === 'impneg') {
-      var nsubj = conjugate(v, 'presubj');
+      var nsubj = conjugateBase(v, 'presubj');
       return [
         'no ' + nsubj[1],   // tú
         'no ' + nsubj[2],   // usted
@@ -153,6 +158,78 @@ window.ENGINE = (function () {
     // Simple tenses: use stored irregular forms when present, else regular.
     if (v.forms && v.forms[tenseKey]) return v.forms[tenseKey].slice();
     return regular(v, tenseKey);
+  }
+
+  // ---- reflexive verbs (levantarse, sentarse, irse…) -----------------------
+  // Stored in verbs.js with their "-se" infinitive; conjugated exactly like
+  // the base verb (levantar) with the reflexive pronoun added — never a
+  // separate, hand-typed set of forms.
+  function isReflexivo(inf) { return /(arse|erse|irse)$/.test(inf); }
+  function reflexiveBase(inf) { return inf.slice(0, -2); }
+
+  var REFLEX_PRON = ['me', 'te', 'se', 'nos', 'os', 'se'];       // aligned with PERSONS
+  var STRONG_V = 'aeoáéó', WEAK_V = 'iuíú', ALL_V = 'aeiouáéíóúü';
+  var ACCENT_MAP = { a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú' };
+
+  // Adds a written accent to the vowel in the penultimate syllable-nucleus of
+  // an unaccented word, to preserve its stress once an enclitic pronoun is
+  // attached — the word is now stressed on the antepenultimate syllable,
+  // which in Spanish always takes a written accent (levanta+te -> levántate,
+  // siente+te -> siéntate). Only used for affirmative-imperative reflexives.
+  function addStressAccent(word) {
+    var nuclei = [], i = 0;
+    while (i < word.length) {
+      if (ALL_V.indexOf(word[i].toLowerCase()) !== -1) {
+        var start = i;
+        while (i < word.length && ALL_V.indexOf(word[i].toLowerCase()) !== -1) i++;
+        nuclei.push([start, i]);
+      } else i++;
+    }
+    if (nuclei.length < 2) return word;
+    var target = nuclei[nuclei.length - 2];
+    var chunk = word.slice(target[0], target[1]);
+    var idxInChunk = 0;
+    if (chunk.length === 2) {
+      var c0 = chunk[0].toLowerCase(), c1 = chunk[1].toLowerCase();
+      if (STRONG_V.indexOf(c0) !== -1 && WEAK_V.indexOf(c1) !== -1) idxInChunk = 0;
+      else if (WEAK_V.indexOf(c0) !== -1 && STRONG_V.indexOf(c1) !== -1) idxInChunk = 1;
+      else idxInChunk = chunk.length - 1;
+    }
+    var pos = target[0] + idxInChunk;
+    var accented = ACCENT_MAP[word[pos].toLowerCase()] || word[pos];
+    return word.slice(0, pos) + accented + word.slice(pos + 1);
+  }
+
+  // Applies the reflexive pronoun to already-conjugated base forms.
+  function reflexivize(forms, tenseKey, baseInf) {
+    if (tenseKey === 'imperativo') {
+      return forms.map(function (f, i) {
+        if (!f) return f;
+        if (i === 2) return addStressAccent(f.slice(0, -1)) + 'nos';   // nosotros: -mos -> -mo + nos
+        if (i === 3) {                                                  // vosotros: drop -d, + os
+          var stem = f.slice(0, -1);
+          return (vowelOf(baseInf) === 'ir' ? accentLastVowel(stem) : stem) + 'os';
+        }
+        return addStressAccent(f) + (i === 0 ? 'te' : 'se');            // tú / usted / ustedes
+      });
+    }
+    if (tenseKey === 'impneg') {
+      var pron = ['te', 'se', 'nos', 'os', 'se'];
+      return forms.map(function (f, i) { return f ? f.replace(/^no /, 'no ' + pron[i] + ' ') : f; });
+    }
+    // every other tense: the pronoun word goes before the (possibly two-word,
+    // compound) form — PERSONS-aligned, same order as REFLEX_PRON.
+    return forms.map(function (f, i) { return f ? REFLEX_PRON[i] + ' ' + f : f; });
+  }
+
+  // Returns an array of conjugated forms for the given tense.
+  function conjugate(v, tenseKey) {
+    if (isReflexivo(v.inf)) {
+      var baseInf = reflexiveBase(v.inf);
+      var baseV = { inf: baseInf, forms: v.forms, part: v.part, ger: v.ger, tuCmd: v.tuCmd, en: v.en };
+      return reflexivize(conjugateBase(baseV, tenseKey), tenseKey, baseInf);
+    }
+    return conjugateBase(v, tenseKey);
   }
 
   function personsFor(tenseKey) {
@@ -475,14 +552,21 @@ window.ENGINE = (function () {
     _idx = {}; _partIdx = {}; _haberIdx = {};
     var haber = verbByInf('haber');
     window.VERBS.forEach(function (v) {
+      // Index the BARE conjugation (before the reflexive pronoun is added) —
+      // a learner types "me levanto" as two separate tokens, so the token
+      // that actually needs to be recognised as a verb form is "levanto",
+      // not the two-word "me levanto". The true (reflexive) infinitive is
+      // still what gets reported for the match.
+      var reflexive = isReflexivo(v.inf);
+      var baseV = reflexive ? { inf: reflexiveBase(v.inf), forms: v.forms, part: v.part, ger: v.ger, tuCmd: v.tuCmd, en: v.en } : v;
       TENSES.forEach(function (t) {
         var persons = personsFor(t.key);
-        conjugate(v, t.key).forEach(function (form, i) {
+        conjugateBase(baseV, t.key).forEach(function (form, i) {
           var lw = form.toLowerCase();
           if (lw.indexOf(' ') === -1) {
             var k = deaccent(lw);
             (_idx[k] = _idx[k] || []).push({
-              inf: v.inf, tense: t.key, person: persons[i], form: form, type: vowelOf(v.inf)
+              inf: v.inf, tense: t.key, person: persons[i], form: form, type: vowelOf(baseV.inf)
             });
           } else {                                   // compound: haber + participle
             var part = deaccent(lw.split(' ').pop());
@@ -667,6 +751,8 @@ window.ENGINE = (function () {
     participle: participle,
     gerund: gerund,
     isIrregular: isIrregular,
+    isReflexivo: isReflexivo,
+    reflexiveBase: reflexiveBase,
     personsFor: personsFor,
     verbByInf: verbByInf,
     normalize: normalize,
