@@ -1,5 +1,39 @@
 # Content generation brief — Fluidez v2
 
+## Before anything: check you are on the right baseline
+
+This work lives on the branch **`pcic-architecture`**, not on `main`. `main` is
+the working app and is deliberately being left alone.
+
+```
+git checkout pcic-architecture
+```
+
+`main` still has the old 200-verb `data/verbs.js`, no `data/taxonomy.js`, no
+strand lessons and three gates instead of four. Generating against it would
+produce a thousand lessons on the wrong baseline — the precise failure this
+rebuild exists to prevent.
+
+The derived inputs under `spec/` are **gitignored**, so they exist only in a
+working directory where they have been built. If `spec/pcic.json` is missing:
+
+```
+node tools/harvest/pcic.js && node tools/harvest/syllabus.js \
+  && node tools/harvest/build-vocab.js
+```
+
+**Then confirm the baseline before writing anything** — all four must print ✅:
+
+```
+node tools/validate-content.js && node tools/test-checker.js \
+  && node tools/lint-spanish.js && node tools/audit-verbs.js
+```
+
+If they do not, you are on the wrong branch or the spec has not been built.
+Stop and fix that first; do not start generating.
+
+---
+
 **Run this with a fast model (Sonnet), low effort, in a FRESH session.** Nothing
 below requires the design conversation that produced it; dragging that context
 along is pure cost. Read `tools/ARCHITECTURE_V2.md` first for the why.
