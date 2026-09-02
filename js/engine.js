@@ -84,23 +84,176 @@ window.ENGINE = (function () {
   function participle(v) {
     if (/(arse|erse|irse)$/.test(v.inf)) return participle({ inf: v.inf.slice(0, -2), part: v.part });
     if (v.part) return v.part;
-    return stemOf(v.inf) + (vowelOf(v.inf) === 'ar' ? 'ado' : 'ido');
+    if (v.like && v.inf.slice(-v.like.length) === v.like) { var lb = verbByInf(v.like); if (lb) return prefixForms(v.inf, v.like, [participle(lb)])[0]; }
+    var pvt = vowelOf(v.inf), pstem = stemOf(v.inf);
+    if (pvt === 'ar') return pstem + 'ado';
+    // a/e/o-final stems accent the i: leído, caído, oído (but incluido, construido)
+    if (/[aeo]$/.test(pstem)) return pstem + 'ído';
+    return pstem + 'ido';
   }
 
   function gerund(v) {
     if (/(arse|erse|irse)$/.test(v.inf)) return gerund({ inf: v.inf.slice(0, -2), ger: v.ger });
     if (v.ger) return v.ger;
-    return stemOf(v.inf) + (vowelOf(v.inf) === 'ar' ? 'ando' : 'iendo');
+    if (v.like && v.inf.slice(-v.like.length) === v.like) { var gb = verbByInf(v.like); if (gb) return prefixForms(v.inf, v.like, [gerund(gb)])[0]; }
+    var gvt = vowelOf(v.inf), gstem = stemOf(v.inf);
+    if (gvt === 'ar') return gstem + 'ando';
+    // -ir stem-changers take their weaker vowel: sentir>sintiendo, dormir>durmiendo
+    if (gvt === 'ir' && v.stem && SECONDARY[v.stem]) gstem = changeLastVowel(gstem, SECONDARY[v.stem]);
+    // a vowel-final stem turns the i to y: leyendo, incluyendo, cayendo
+    if (isVowel(gstem.charAt(gstem.length - 1)) && !/[gq]u$/.test(gstem)) return gstem + 'yendo';
+    return gstem + 'iendo';
+  }
+
+  /* ==========================================================================
+   * MORPHOLOGY — the systematic patterns of Spanish conjugation.
+   *
+   * Previously `regular()` was stem + ending with no adjustment, so EVERY
+   * verb that deviates in a predictable way had to carry hand-typed `forms`.
+   * That is unmaintainable at the scale of a full A1-C1 course, and it fails
+   * silently: a -zar verb added without `forms` yields "actualizé" and the
+   * engine — being the authority the validators trust — reports no error.
+   *
+   * These patterns are RULES, not irregularities. Encoding them here means a
+   * new verb usually needs only { inf, en, type } plus, for a stem-changer,
+   * one `stem` field. Genuinely irregular verbs (ser, ir, tener…) keep their
+   * explicit `forms`, which always win: see conjugateBase().
+   *
+   * Covered:
+   *   orthographic  buscar>busqué  llegar>llegué  realizar>realicé
+   *                 averiguar>averigüé  vencer>venzo  coger>cojo  seguir>sigo
+   *   inchoative    conocer>conozco  conducir>conduzco   (vowel + cer/cir)
+   *   -uir          incluir>incluyo, incluyó, incluyendo
+   *   vowel stems   leer>leyó/leíste/leído/leyendo   caer, oír
+   *   stem changes  e>ie (pensar) · o>ue (contar) · e>i (pedir) · u>ue (jugar)
+   *                 with the -ir verbs' second change in the subjunctive
+   *                 nosotros/vosotros, 3rd-person preterite and gerund
+   *                 (sentir>sintamos/sintió/sintiendo, dormir>durmió)
+   * ======================================================================== */
+
+  var VOWELS = 'aeiouáéíóú';
+  function isVowel(c) { return VOWELS.indexOf(c) >= 0; }
+
+  // Replace the LAST vowel of a stem — where every Spanish stem change lands.
+  // The u of a "gu"/"qu" digraph is a spelling device, not a vowel, and must be
+  // skipped: seguir's stem change is e>i giving "sigu-" (hence sigo, siguió),
+  // never "segi-".
+  function changeLastVowel(stem, target) {
+    for (var i = stem.length - 1; i >= 0; i--) {
+      if (!isVowel(stem[i])) continue;
+      if (stem[i] === 'u' && i > 0 && (stem[i - 1] === 'g' || stem[i - 1] === 'q')) continue;
+      return stem.slice(0, i) + target + stem.slice(i + 1);
+    }
+    return stem;
+  }
+
+  // -ir stem-changers make a second, weaker change where the first cannot apply.
+  // 'í' and 'ú' are the -iar/-uar accent classes (enviar>envío, continuar>continúo):
+  // the stem vowel takes a written accent in the boot rather than diphthongising,
+  // so their "secondary" is themselves. Those verbs are all -ar, so the -ir
+  // secondary path below never applies to them.
+  var SECONDARY = { ie: 'i', ue: 'u', i: 'i', 'í': 'í', 'ú': 'ú' };
+
+  // Which persons take the stem change: the "boot" — yo, tú, él, ellos.
+  function inBoot(idx) { return idx === 0 || idx === 1 || idx === 2 || idx === 5; }
+
+  function stemFor(v, base, tenseKey, idx, vt) {
+    var sc = v.stem;
+    if (!sc || !SECONDARY[sc]) return base;
+    var second = SECONDARY[sc];
+    if (tenseKey === 'presente') return inBoot(idx) ? changeLastVowel(base, sc) : base;
+    if (tenseKey === 'presubj') {
+      if (inBoot(idx)) return changeLastVowel(base, sc);
+      // -ir verbs also change in nosotros/vosotros, to the weaker vowel
+      return vt === 'ir' ? changeLastVowel(base, second) : base;
+    }
+    // -ir verbs only: 3rd person preterite (pidió, durmieron)
+    if (tenseKey === 'preterito' && vt === 'ir' && (idx === 2 || idx === 5)) {
+      return changeLastVowel(base, second);
+    }
+    return base;
+  }
+
+  /* Prefixing a base verb's forms. The one wrinkle is stress: a monosyllabic
+   * form ending in a vowel, n or s (ten, pon, ven, vi, ves) becomes the final
+   * stressed syllable of a longer word and must take a written accent —
+   * ten > mantén, pon > propón, vi > preví. */
+  function prefixForms(inf, likeInf, forms) {
+    var pre = inf.slice(0, inf.length - likeInf.length);
+    if (!pre) return forms.slice();
+    return forms.map(function (f) {
+      if (!f) return f;
+      return f.split(' ').map(function (word, i) {
+        if (i > 0) return word;                              // "he comido" -> prefix the first only
+        // Monosyllable? One vowel, or a vowel pair that is a diphthong (which
+        // needs a weak i/u). "vio" is one syllable and takes the accent when
+        // prefixed (previó); "veo" is a hiatus, two syllables, and does not.
+        var vg = word.match(/[aeiou]+/g) || [];
+        var mono = word.length <= 3 && !/[áéíóú]/.test(word) &&
+                   (isVowel(word.charAt(word.length - 1)) || /[ns]$/.test(word)) &&
+                   vg.length === 1 && (vg[0].length === 1 || /[iu]/.test(vg[0]));
+        return pre + (mono ? accentLastVowel(word) : word);
+      }).join(' ');
+    });
+  }
+
+  function likeTuCmd(v) {
+    if (!v.like) return null;
+    var b = verbByInf(v.like);
+    if (!b || !b.tuCmd) return null;
+    return prefixForms(v.inf, v.like, [b.tuCmd])[0];
+  }
+
+  var ZC_RE = /[aeiou]c(er|ir)$/;          // conocer, parecer, conducir -> -zc-
+  var UIR_RE = /[^gq]uir$/;                // incluir, construir (not seguir/delinquir)
+
+  /* Join stem and ending, applying the sound-preserving spelling changes.
+   * Returns the finished form. */
+  function joinForm(stem, ending, inf, vt) {
+    var e0 = ending.charAt(0);
+    var front = (e0 === 'e' || e0 === 'é' || e0 === 'i' || e0 === 'í');
+    var back = (e0 === 'a' || e0 === 'á' || e0 === 'o' || e0 === 'ó');
+
+    if (vt === 'ar') {
+      // -ar verbs adjust before a FRONT vowel (preterite yo, all of the subjunctive)
+      if (front) {
+        if (/gu$/.test(stem)) return stem.slice(0, -2) + 'gü' + ending;   // averiguar
+        if (/c$/.test(stem))  return stem.slice(0, -1) + 'qu' + ending;   // buscar
+        if (/g$/.test(stem))  return stem + 'u' + ending;                 // llegar
+        if (/z$/.test(stem))  return stem.slice(0, -1) + 'c' + ending;    // realizar
+      }
+    } else {
+      // -er/-ir verbs adjust before a BACK vowel (present yo, all of the subjunctive)
+      if (back) {
+        if (ZC_RE.test(inf) && /c$/.test(stem)) return stem.slice(0, -1) + 'zc' + ending;
+        if (/qu$/.test(stem)) return stem.slice(0, -2) + 'c' + ending;    // delinquir
+        if (/gu$/.test(stem)) return stem.slice(0, -1) + ending;          // seguir -> sigo
+        if (/g$/.test(stem))  return stem.slice(0, -1) + 'j' + ending;    // coger -> cojo
+        if (/c$/.test(stem))  return stem.slice(0, -1) + 'z' + ending;    // vencer -> venzo
+      }
+      // stems ending in a vowel: the unstressed i of an ending becomes y
+      // (leyó, incluyeron) and otherwise takes an accent (leíste, oímos)
+      if (isVowel(stem.charAt(stem.length - 1)) && !/[gq]u$/.test(stem)) {
+        if (ending === 'ió') return stem + 'yó';
+        if (ending === 'ieron') return stem + 'yeron';
+        if (UIR_RE.test(inf) && (back || e0 === 'e')) return stem + 'y' + ending;
+        // a/e/o-final stems accent the i; u-final ones do not (incluiste)
+        if (/[aeo]$/.test(stem) && e0 === 'i') return stem + 'í' + ending.slice(1);
+      }
+    }
+    return stem + ending;
   }
 
   function regular(v, tenseKey) {
     var vt = vowelOf(v.inf);
     if (tenseKey === 'futuro' || tenseKey === 'condicional') {
-      var base = deaccent(v.inf);   // oír→oir (oiré, not oíré)
-      return END[tenseKey].all.map(function (e) { return base + e; });
+      var fbase = deaccent(v.inf);   // oír→oir (oiré, not oíré)
+      return END[tenseKey].all.map(function (e) { return fbase + e; });
     }
-    var stem = stemOf(v.inf);
-    return END[tenseKey][vt].map(function (e) { return stem + e; });
+    var base = stemOf(v.inf);
+    return END[tenseKey][vt].map(function (e, idx) {
+      return joinForm(stemFor(v, base, tenseKey, idx, vt), e, v.inf, vt);
+    });
   }
 
   // Returns an array of conjugated forms for the given tense, for a verb
@@ -132,7 +285,7 @@ window.ENGINE = (function () {
       var pres = conjugateBase(v, 'presente');
       var subj = conjugateBase(v, 'presubj');
       return [
-        v.tuCmd || pres[2],              // tú
+        v.tuCmd || likeTuCmd(v) || pres[2],   // tú
         subj[2],                         // usted
         subj[3],                         // nosotros
         v.inf.slice(0, -1) + 'd',        // vosotros
@@ -157,6 +310,17 @@ window.ENGINE = (function () {
 
     // Simple tenses: use stored irregular forms when present, else regular.
     if (v.forms && v.forms[tenseKey]) return v.forms[tenseKey].slice();
+    // A prefixed compound of an irregular verb (mantener < tener, proponer <
+    // poner, atraer < traer) inflects exactly like its base. Deriving that
+    // beats re-typing the paradigm for each of the dozens of such verbs.
+    // `like` is prefixing, so it only holds when the infinitive literally ends
+    // with its base: mantener < tener, proponer < poner. "reducir" is NOT
+    // "conducir" with a prefix — those share a Latin root, not a paradigm — so
+    // guard it rather than silently producing "reduciconduje".
+    if (v.like && v.inf.length > v.like.length && v.inf.slice(-v.like.length) === v.like) {
+      var baseV = verbByInf(v.like);
+      if (baseV) return prefixForms(v.inf, v.like, conjugateBase(baseV, tenseKey));
+    }
     return regular(v, tenseKey);
   }
 
@@ -226,7 +390,7 @@ window.ENGINE = (function () {
   function conjugate(v, tenseKey) {
     if (isReflexivo(v.inf)) {
       var baseInf = reflexiveBase(v.inf);
-      var baseV = { inf: baseInf, forms: v.forms, part: v.part, ger: v.ger, tuCmd: v.tuCmd, en: v.en };
+      var baseV = { inf: baseInf, forms: v.forms, part: v.part, ger: v.ger, tuCmd: v.tuCmd, en: v.en, stem: v.stem, like: v.like };
       return reflexivize(conjugateBase(baseV, tenseKey), tenseKey, baseInf);
     }
     return conjugateBase(v, tenseKey);
@@ -558,7 +722,7 @@ window.ENGINE = (function () {
       // not the two-word "me levanto". The true (reflexive) infinitive is
       // still what gets reported for the match.
       var reflexive = isReflexivo(v.inf);
-      var baseV = reflexive ? { inf: reflexiveBase(v.inf), forms: v.forms, part: v.part, ger: v.ger, tuCmd: v.tuCmd, en: v.en } : v;
+      var baseV = reflexive ? { inf: reflexiveBase(v.inf), forms: v.forms, part: v.part, ger: v.ger, tuCmd: v.tuCmd, en: v.en, stem: v.stem, like: v.like } : v;
       TENSES.forEach(function (t) {
         var persons = personsFor(t.key);
         conjugateBase(baseV, t.key).forEach(function (form, i) {

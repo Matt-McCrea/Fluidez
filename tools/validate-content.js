@@ -59,7 +59,14 @@ const NOUN_HOMOGRAPHS = new Set([
   'bajada', 'apoyo', 'duda', 'falta', 'juego', 'lucha', 'marcha', 'nota',
   'pena', 'prueba', 'regalo', 'reserva', 'saludo', 'vuelta', 'reparto',
   'aumento', 'ahorro', 'consumo', 'reforma', 'demanda', 'oferta', 'reparo',
-  'peso', 'gobierno', 'mando', 'cargo', 'encuentro', 'fomento', 'rechazo'
+  'peso', 'gobierno', 'mando', 'cargo', 'encuentro', 'fomento', 'rechazo',
+  // surfaced when the verb set grew from 200 to 460: more verbs means more
+  // nouns shadowed by a conjugated form. Run tools/find-homographs.js after
+  // any verb addition and add the genuine nouns here.
+  'soluciones', 'funciones', 'proyecto', 'casa', 'regalo', 'centro', 'queja',
+  'proceso', 'marca', 'medio', 'medios', 'género', 'artículo', 'artículos',
+  'público', 'práctico', 'práctica', 'ópera', 'ampliación', 'reserva',
+  'estudios', 'contratos', 'programas', 'negocios', 'cambios', 'viajes'
 ]);
 const DETERMINERS = new Set([
   'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas',
@@ -70,7 +77,16 @@ const DETERMINERS = new Set([
   'aquel', 'aquella', 'aquellos', 'aquellas'
 ]);
 function isNounHere(toks, i) {
-  return NOUN_HOMOGRAPHS.has(toks[i]) && i > 0 && DETERMINERS.has(toks[i - 1]);
+  if (!NOUN_HOMOGRAPHS.has(toks[i]) || i < 1) return false;
+  var prev = toks[i - 1];
+  if (DETERMINERS.has(prev)) return true;
+  // Bare plurals take no article ("negocia soluciones justas"), so also accept
+  // the object position: directly after a finite verb. Spanish does not put two
+  // conjugated verbs side by side without a conjunction, so a word there is a
+  // noun. Membership of NOUN_HOMOGRAPHS still does the real gating — "la había
+  // comido" is untouched because "comido" is not on that list.
+  var pa = E.analyzeToken(prev) || [];
+  return pa.some(function (a) { return a.tense !== 'imperativo'; });
 }
 
 // tense key -> syllabus level (concept lessons don't gate tenses)

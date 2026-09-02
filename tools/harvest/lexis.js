@@ -33,7 +33,7 @@ function expandParens(w) {
 
 function clean(w) {
   let c = w.toLowerCase().replace(/\//g, ' ').replace(/\s+/g, ' ')
-    .replace(/^[¿¡"'\s]+|[.,;:!?"'\s]+$/g, '').trim();
+    .replace(/^[¿¡"'()\[\]\s]+|[.,;:!?"'()\[\]\s]+$/g, '').trim();
   // "el / la guía" collapses to "el la guía" — strip the stacked articles
   let prev;
   do { prev = c; c = c.replace(/^(el|la|los|las|un|una|unos|unas)\s+/, ''); } while (c !== prev);

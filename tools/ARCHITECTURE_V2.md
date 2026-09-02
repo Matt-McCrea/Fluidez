@@ -113,9 +113,29 @@ theme tags onto ~20k items later would be miserable.
 
 ## Order of work
 
-1. Schema + validators for the new layers, strands, probes and tags.
-2. One vertical slice: a single C1 function lesson, generated and rendered.
-3. Prune the ladder against what the slice teaches us.
-4. Bulk generation, gated by `validate-content.js` + `test-checker.js`.
-5. Placement, skip checks, sequence-position progression.
-6. Themed tracks (falls out of the tags, if they were set in step 1).
+1. ~~Schema + validators for the new layers, strands, probes and tags.~~ done
+2. ~~One vertical slice: a function lesson, rendered.~~ done — plus a discourse
+   and a genre lesson, so all three new shapes are exercised by real content.
+3. ~~The palette: morphology rules, verbs, vocabulary.~~ engine + 457 verbs done;
+   ~560 verbs and ~3,700 glosses remain, queued in `spec/`.
+4. Prune the ladder against what the slices teach us.
+5. Bulk generation, gated by the four gates.
+6. Placement, skip checks, sequence-position progression.
+7. Themed tracks (falls out of the tags, set in step 1).
+
+**Phase 0 of any generation run is the palette.** The verb and vocabulary sets
+must exist before lessons are written, or every lesson is capped at the
+vocabulary of a beginner course — the exact failure the rebuild is for.
+
+## The gates
+
+| Gate | What it protects |
+|---|---|
+| `validate-content.js` | schema, taxonomy references, levels, probes, register coherence |
+| `test-checker.js` | every model answer satisfies its own constraints |
+| `lint-spanish.js` | accent errors in prose, adjudicated against engine paradigms |
+| `audit-verbs.js` | verb classification, scored against 11,834 real sentences |
+
+The engine is the authority the first three trust, which is why the fourth
+exists: a verb filed in the wrong class makes the engine confidently wrong and
+every other gate certifies the result.
