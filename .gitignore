@@ -1,2 +1,6 @@
 .DS_Store
 node_modules/
+
+# harvested third-party specs (regenerate with tools/harvest/pcic.js)
+spec/
+tools/harvest/cache/

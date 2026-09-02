@@ -137,6 +137,24 @@
     };
   }
 
+  /* Strand lessons author their checks as `probes` — a richer shape carrying
+   * mcq and cloze as well as plain recall, because the same items also drive
+   * placement and the pre-lesson skip check. Everything downstream (the SRS
+   * deck, the hub, games, the review stage) speaks the simple {id, front, back}
+   * `recall` shape, so derive it here rather than teaching four call sites a
+   * second vocabulary. */
+  function withRecall(l) {
+    if (l.recall || !l.probes) return l;
+    var out = Object.create(null);
+    Object.keys(l).forEach(function (k) { out[k] = l[k]; });
+    out.recall = l.probes.map(function (p) {
+      if (p.kind === 'mcq') return { id: p.id, front: p.q, back: p.options[p.answer] };
+      if (p.kind === 'cloze') return { id: p.id, front: p.text, back: p.accept[0] };
+      return { id: p.id, front: p.front, back: p.back };
+    });
+    return out;
+  }
+
   function build() {
     var docs = {};
     (window.GRAMMAR || []).forEach(function (d) { docs[d.key] = d; });
@@ -152,6 +170,9 @@
     (window.CONCEPT_LESSONS || []).forEach(function (c) {
       if (!SYLLABUS.some(function (s) { return s.id === c.id; })) lessons.push(c);
     });
+    // Strand lessons (function / discourse / genre — data/strand-lessons.js)
+    // carry their own level and PCIC provenance, so they need no SYLLABUS entry.
+    (window.STRAND_LESSONS || []).forEach(function (l) { lessons.push(withRecall(l)); });
     return lessons;
   }
 

@@ -53,6 +53,40 @@ window.StageLearn = (function () {
       wrap.appendChild(UI.el('h3', null, 'Same words, different meaning'));
       wrap.appendChild(UI.el('div', null, contrastTable(l.contrasts)));
     }
+    if (l.exponents && l.exponents.length) {
+      // A function lesson's exponents are grouped BY REGISTER, because the
+      // register contrast is the teaching point — an ungrouped list would read
+      // as a vocabulary dump and teach the wrong thing.
+      wrap.appendChild(UI.el('h3', null, 'Ways to say it — by register'));
+      var order = (window.REGISTERS || []).map(function (r) { return r.id; });
+      var groups = {};
+      l.exponents.forEach(function (e) { (groups[e.register] = groups[e.register] || []).push(e); });
+      order.filter(function (r) { return groups[r]; }).forEach(function (r) {
+        var meta = (window.REGISTERS || []).filter(function (x) { return x.id === r; })[0] || { label: r, note: '' };
+        wrap.appendChild(UI.el('h4', 'register-head', meta.label +
+          (meta.note ? ' <span class="muted">— ' + meta.note + '</span>' : '')));
+        wrap.appendChild(UI.el('div', null, contrastTable(groups[r].map(function (e) {
+          return { es: e.es, en: e.en, note: e.note || '' };
+        }))));
+      });
+    }
+    if (l.moves && l.moves.length) {
+      wrap.appendChild(UI.el('h3', null, 'How the text is built'));
+      l.moves.forEach(function (m, i) {
+        wrap.appendChild(UI.el('h4', 'register-head', (i + 1) + '. ' + m.h));
+        wrap.appendChild(UI.el('div', 'lesson-body', m.html));
+      });
+    }
+    if (l.model && l.model.text) {
+      wrap.appendChild(UI.el('h3', null, 'A model' + (l.model.title ? ' — ' + l.model.title : '')));
+      wrap.appendChild(UI.el('div', 'lesson-body model-text', l.model.text));
+    }
+    if (l.checklist && l.checklist.length) {
+      wrap.appendChild(UI.el('h3', null, 'Before you send it'));
+      var cl = UI.el('ul', 'pitfalls');
+      l.checklist.forEach(function (c) { cl.appendChild(UI.el('li', null, c)); });
+      wrap.appendChild(cl);
+    }
     if (l.pitfalls && l.pitfalls.length) {
       wrap.appendChild(UI.el('h3', null, 'Watch out'));
       var ul = UI.el('ul', 'pitfalls');

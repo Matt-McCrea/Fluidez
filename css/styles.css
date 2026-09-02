@@ -480,3 +480,14 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 }
 .match-card.open { border-color:var(--accent); background:var(--panel); }
 .match-card.matched { opacity:.35; border-color:var(--good); cursor:default; pointer-events:none; }
+
+/* ---- strand lessons: register groups, genre models ----------------------- */
+.register-head{
+  margin:18px 0 6px; font-size:14px; font-weight:700; letter-spacing:.02em;
+  color:var(--accent); text-transform:uppercase;
+}
+.register-head .muted{ font-weight:400; text-transform:none; letter-spacing:0; }
+.model-text{
+  padding:14px 16px; background:var(--panel-2); border-left:3px solid var(--accent);
+  border-radius:0 var(--radius) var(--radius) 0; white-space:pre-wrap; line-height:1.6;
+}

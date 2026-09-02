@@ -19,6 +19,16 @@
  *   { type:'minWords', n:6 } | { type:'maxWords', n:20 }
  *   { type:'question' } | { type:'negation' }
  *   { type:'regex', pattern:'\\bque\\b', label:'uses “que”' }
+ *
+ * B2/C1 content asserts things the list above cannot express, so:
+ *   { type:'connectorFrom', class:'contraargumentativo', n:1 }
+ *   { type:'avoidsAny', words:['o sea','vale'] }      register: no colloquialisms
+ *   { type:'avoidsPerson', person:'tú' }              register: formal address
+ *   { type:'subjunctiveAfter', trigger:'para que' }   a trigger governs a mood
+ *   { type:'cliticCluster' }                          se lo, me la, dármelo
+ *   { type:'sePassive' }                              se construyó, se dice que
+ *   { type:'distinctTenses', n:3 }                    narrative range
+ *   { type:'minSentences', n:4 }
  * Any spec may add an explicit `label` to override the generated one.
  * ========================================================================== */
 window.Checker = (function () {
@@ -144,6 +154,89 @@ window.Checker = (function () {
       case 'regex': {
         label = label || ('matches pattern');
         pass = new RegExp(c.pattern, c.flags || 'i').test(rawText);
+        break;
+      }
+
+      /* ---- B2/C1 constraints ------------------------------------------- */
+
+      case 'connectorFrom': {                  // uses a discourse marker of a class
+        var klass = (window.CONNECTORS || []).filter(function (k) { return k.id === c.class; })[0];
+        var need = c.n || 1;
+        label = label || ('use ' + (need > 1 ? need + ' markers' : 'a marker') +
+                          ' of type <b>' + (klass ? klass.label.toLowerCase() : c.class) + '</b>');
+        if (!klass) { pass = false; detail = 'unknown connector class'; break; }
+        var hay = deacLower(rawText);
+        var found = klass.items.filter(function (it) { return hay.indexOf(deacLower(it.es)) !== -1; });
+        pass = found.length >= need;
+        detail = found.length ? found.map(function (f) { return f.es; }).join(', ') : '';
+        break;
+      }
+
+      case 'avoidsAny': {                      // register: none of these appear
+        label = label || ('avoid: ' + c.words.map(function (w) { return '“' + w + '”'; }).join(', '));
+        var bad = c.words.filter(function (w) { return deacLower(rawText).indexOf(deacLower(w)) !== -1; });
+        pass = bad.length === 0;
+        if (!pass) detail = 'found ' + bad.join(', ');
+        break;
+      }
+
+      case 'avoidsPerson': {                   // register: e.g. no tú in a formal text
+        label = label || ('do not address anyone as <b>' + c.person + '</b>');
+        pass = !someVerb(analysis, function (a) { return a.person === c.person; });
+        break;
+      }
+
+      case 'subjunctiveAfter': {               // a trigger governs the subjunctive
+        label = label || ('use the subjunctive after “<b>' + c.trigger + '</b>”');
+        var tks = analysis.tokens || [], trig = words(c.trigger), at = -1;
+        for (var ti = 0; ti + trig.length <= tks.length && at < 0; ti++) {
+          var hit = true;
+          for (var tj = 0; tj < trig.length; tj++) if (deacLower(tks[ti + tj]) !== deacLower(trig[tj])) { hit = false; break; }
+          if (hit) at = ti + trig.length - 1;
+        }
+        if (at < 0) { pass = false; detail = '“' + c.trigger + '” not used yet'; break; }
+        var span = c.within || 8;
+        pass = analysis.verbs.some(function (w) {
+          return w.index > at && w.index <= at + span &&
+                 w.analyses.some(function (a) { return /subj$/.test(a.tense); });
+        });
+        if (!pass) detail = 'no subjunctive follows it';
+        break;
+      }
+
+      case 'cliticCluster': {                  // two object pronouns together
+        label = label || 'use a double object pronoun (se lo, me la, dármelo)';
+        pass = /\b(me|te|se|nos|os)\s+(lo|la|los|las|le|les)\b/i.test(rawText) ||
+               /\w{2,}(me|te|se|nos|os)(lo|la|los|las)\b/i.test(rawText);
+        break;
+      }
+
+      case 'sePassive': {                      // se + 3rd person (se dice, se construyó)
+        label = label || 'use a “se” construction (se dice, se construyó)';
+        var tk = analysis.tokens || [];
+        pass = analysis.verbs.some(function (w) {
+          var prev = tk[w.index - 1], prev2 = tk[w.index - 2];
+          if (prev !== 'se' && prev2 !== 'se') return false;
+          return w.analyses.some(function (a) {
+            return (a.person === 'él/ella' || a.person === 'ellos') && a.tense !== 'imperativo';
+          });
+        });
+        break;
+      }
+
+      case 'distinctTenses': {                 // narrative range
+        var present = tensesPresent(analysis), count = Object.keys(present).length;
+        label = label || ('use at least <b>' + c.n + '</b> different tenses');
+        pass = count >= c.n;
+        detail = count + ' so far';
+        break;
+      }
+
+      case 'minSentences': {
+        var sents = (rawText.match(/[^.!?…]*[.!?…]+/g) || []).filter(function (x) { return /\w/.test(x); }).length;
+        label = label || ('at least <b>' + c.n + '</b> sentences');
+        pass = sents >= c.n;
+        if (!pass) detail = sents + ' so far';
         break;
       }
 
