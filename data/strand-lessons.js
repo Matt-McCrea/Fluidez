@@ -9006,6 +9006,471 @@ window.STRAND_LESSONS = [
     { id: 'p:faltacerteza:cloze', kind: 'cloze', text: 'No estoy seguro de que ___ (ser) buena idea.', accept: ['sea'] },
     { id: 'p:faltacerteza:recall', kind: 'recall', front: 'Me parece que / parece que / supongo que — indicative or subjunctive?', back: 'indicative — they present the guess as a proposition, not a doubted fact' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 function, wave 2 of 5: obligation, ability, and the start of
+ * the gustos/deseos/sentimientos cluster (seq 283-357).
+ * ========================================================================== */
+{
+  id: 'fn-obligacion-necesidad-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:420', 'funciones:B1:423', 'funciones:B1:424'],
+  title: 'Expresar obligación y necesidad',
+  summary: 'No puedes hablar alto states an obligation by denying its opposite — the prohibition IS the obligation, just phrased as something you may not do rather than something you must.',
+  sections: [
+    { h: 'Impersonal: es obligatorio/necesario', html: 'States the obligation with no one named as responsible: <i>Es obligatorio llevar casco</i>, <i>Es necesario que todos firmen</i> (subjunctive after <i>que</i>).' },
+    { h: 'Debes + infinitivo', html: 'Direct, addressed obligation: <i>Hay cosas que debes saber</i>, <i>No debes hablar así</i>.' },
+    { h: 'No puedes + infinitivo: obligation via prohibition', html: 'Framing an obligation as what is NOT allowed states the same rule from the other side: <i>En los hospitales no puedes hablar alto</i> = it is obligatory not to.' }
+  ],
+  exponents: [
+    { es: 'Es obligatorio llevar el cinturón de seguridad.', en: "It's mandatory to wear a seatbelt.", register: 'formal', note: 'impersonal — no one named' },
+    { es: 'Hay cosas que debes saber antes de firmar.', en: 'There are things you need to know before signing.', register: 'coloquial' },
+    { es: 'En los hospitales no puedes hablar alto.', en: "In hospitals you can't talk loudly.", register: 'coloquial', note: 'prohibition = obligation not to' },
+    { es: 'Es necesario que todos los socios voten.', en: 'It is necessary for all members to vote.', register: 'formal', note: 'que + subjuntivo' }
+  ],
+  pitfalls: [
+    'A prohibition (<i>no puedes/no debes</i>) and an obligation are two sides of the same coin — <i>no puedes hablar alto</i> means it IS obligatory to stay quiet.',
+    '<i>Es necesario/obligatorio que</i> + a clause takes the subjunctive, like most impersonal expressions of necessity.'
+  ],
+  examples: [
+    { es: 'No debes dejar la puerta abierta por la noche.', en: 'You must not leave the door open at night.' },
+    { es: 'Es necesario reservar con antelación.', en: "It's necessary to book in advance." },
+    { es: 'No puedes entrar sin identificación.', en: "You can't enter without ID." }
+  ],
+  probes: [
+    { id: 'p:oblignecesid:prohibicion', kind: 'mcq', q: '"En la biblioteca no puedes hablar alto" significa:',
+      options: ['está prohibido, pero no es obligación', 'es obligatorio guardar silencio', 'es opcional'], answer: 1 },
+    { id: 'p:oblignecesid:subjuntivo', kind: 'mcq', q: '"Es necesario que todos ___." (votar)',
+      options: ['votan', 'voten', 'votarán'], answer: 1 },
+    { id: 'p:oblignecesid:cloze', kind: 'cloze', text: 'Hay cosas que ___ (deber) saber.', accept: ['debes'] },
+    { id: 'p:oblignecesid:recall', kind: 'recall', front: 'How does "no puedes hablar alto" express an obligation?', back: 'by prohibiting the opposite — the obligation is to stay quiet' }
+  ]
+},
+
+{
+  id: 'fn-has-oido-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:438', 'funciones:B1:439', 'funciones:B1:440'],
+  title: '¿Has oído...?',
+  summary: 'Oír hablar de is not the same as oír — one asks whether news of an event reached you, the other asks whether you have ever come across a name at all, and Unamuno is not something that "happened" to you the way an accident is.',
+  sections: [
+    { h: '¿Has oído + noun?', html: 'Asks whether a piece of news reached you: <i>¿Habéis oído la noticia?</i>' },
+    { h: '¿Has oído que + clause?', html: 'Reports the content of the news directly: <i>¿Has oído que Rosa ha tenido un accidente?</i>' },
+    { h: '¿Has oído hablar de + noun?', html: 'A different question entirely — not "did news reach you" but "have you ever come across this name/topic": <i>¿Has oído hablar de Unamuno?</i>' }
+  ],
+  exponents: [
+    { es: '¿Habéis oído la noticia?', en: 'Have you all heard the news?', register: 'coloquial' },
+    { es: '¿Has oído que han cerrado la tienda de la esquina?', en: "Have you heard they've closed the corner shop?", register: 'coloquial' },
+    { es: '¿Has oído hablar de Unamuno?', en: 'Have you heard of Unamuno?', register: 'neutral', note: 'general familiarity, not a specific piece of news' },
+    { es: '¿Ha oído usted hablar de esta empresa?', en: 'Have you heard of this company?', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>¿Has oído hablar de X?</i> asks about general familiarity with a name/topic; <i>¿Has oído que...?</i> asks about a specific, recent piece of news — they are not interchangeable.'
+  ],
+  examples: [
+    { es: '¿Has oído hablar de este escritor?', en: 'Have you heard of this writer?' },
+    { es: '¿Habéis oído que van a cerrar la calle mañana?', en: "Have you heard they're closing the street tomorrow?" },
+    { es: '¿Has oído el último rumor?', en: 'Have you heard the latest rumor?' }
+  ],
+  probes: [
+    { id: 'p:hasoido:diferencia', kind: 'mcq', q: '¿Cuál pregunta por familiaridad general, no por una noticia reciente?',
+      options: ['¿Has oído la noticia?', '¿Has oído hablar de Unamuno?', '¿Has oído que se ha ido?'], answer: 1 },
+    { id: 'p:hasoido:registro', kind: 'mcq', q: 'Se lo preguntas a un cliente:',
+      options: ['¿Has oído hablar de esto?', '¿Ha oído usted hablar de esto?', '¿Oíste esto?'], answer: 1 },
+    { id: 'p:hasoido:cloze', kind: 'cloze', text: '¿Has oído ___ de este autor? (hablar)', accept: ['hablar'] },
+    { id: 'p:hasoido:recall', kind: 'recall', front: 'What does ¿has oído hablar de X? ask, that ¿has oído que...? does not?', back: 'general familiarity with a name/topic, not a specific piece of news' }
+  ]
+},
+
+{
+  id: 'fn-habilidad-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:485', 'funciones:B1:486', 'funciones:B1:487', 'funciones:B1:488'],
+  title: 'Expresar habilidad para hacer algo',
+  summary: 'Ser un genio para algo and ser un desastre para algo sit at opposite ends of the same scale as soy bueno/malo en — Spanish has a whole ladder of ability claims, and picking the wrong rung either undersells you or sounds like bragging.',
+  sections: [
+    { h: 'Sé algo/poco/un poco de + noun', html: 'A modest claim of partial knowledge: <i>Sé algo de bricolaje</i> — "I know a bit about DIY," not full mastery.' },
+    { h: 'Soy bueno/malo en/para', html: 'The standard middle-ground claim: <i>Es muy bueno para las matemáticas</i>, <i>No soy bueno en los deportes</i>.' },
+    { h: 'Soy un genio/desastre para', html: 'The two extremes, both hyperbolic: <i>Sonia es un genio para la informática</i>, <i>Soy un desastre para los números de teléfono</i>.' },
+    { h: 'Lo hago bien/mal', html: 'A simpler, no-frills verdict on how you perform: <i>Me gusta cocinar y no lo hago mal.</i>' }
+  ],
+  exponents: [
+    { es: 'Sé algo de electricidad, pero no mucho.', en: "I know a bit about electricity, but not much.", register: 'coloquial' },
+    { es: 'Es muy buena para los idiomas.', en: "She's very good with languages.", register: 'neutral' },
+    { es: 'Soy un desastre para los nombres.', en: "I'm terrible with names.", register: 'coloquial', note: 'hyperbolic — the low extreme' },
+    { es: 'Domina varios idiomas con fluidez.', en: 'He is fluent in several languages.', register: 'formal', note: 'a more formal way to state a strong ability' }
+  ],
+  pitfalls: [
+    '<i>Genio/desastre</i> are hyperbolic, not literal — save them for emphasis, not a measured self-assessment.',
+    '<i>Bueno en</i> and <i>bueno para</i> are both correct; <i>para</i> is slightly more common with skills/subjects, <i>en</i> with activities.'
+  ],
+  examples: [
+    { es: 'Es un genio para las matemáticas.', en: "He's a genius at maths." },
+    { es: 'No lo hago nada mal, la verdad.', en: "I don't do too badly, actually." },
+    { es: 'Sé un poco de cocina italiana.', en: 'I know a bit about Italian cooking.' }
+  ],
+  probes: [
+    { id: 'p:habilidad:extremo', kind: 'mcq', q: '¿Cuál es una afirmación EXAGERADA, no una valoración medida?',
+      options: ['Soy bueno en matemáticas.', 'Soy un genio para las matemáticas.', 'Sé algo de matemáticas.'], answer: 1 },
+    { id: 'p:habilidad:modesta', kind: 'mcq', q: '¿Cuál es la afirmación más modesta?',
+      options: ['Soy un genio.', 'Sé algo de esto.', 'Lo domino completamente.'], answer: 1 },
+    { id: 'p:habilidad:cloze', kind: 'cloze', text: 'No soy bueno ___ los deportes. (en)', accept: ['en'] },
+    { id: 'p:habilidad:recall', kind: 'recall', front: 'Which two ability expressions are hyperbolic, not literal?', back: 'ser un genio / ser un desastre para algo' }
+  ]
+},
+
+{
+  id: 'fn-aversion-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:552', 'funciones:B1:554', 'funciones:B1:557', 'funciones:B1:560'],
+  title: 'Expresar aversión',
+  summary: 'Odio and me molesta look like they sit on the same scale, but odiar is a flat, absolute rejection while molestar grades — something can molestar un poco or molestar muchísimo, a dial odiar simply does not have.',
+  sections: [
+    { h: 'Odio / No soporto: absolute rejection', html: 'Both state strong aversion with no grading: <i>Odio madrugar</i>, <i>No soporto que me griten</i> (subjunctive with <i>que</i>).' },
+    { h: 'Me molesta: gradable', html: 'Unlike <i>odiar</i>, <i>molestar</i> takes a degree adverb: <i>Me molesta un poco</i>, <i>me molesta muchísimo</i>.' },
+    { h: '¡Qué horror!: a reaction, not a statement', html: 'An exclamatory reaction rather than a description of your own feeling — often about something someone else described.' }
+  ],
+  exponents: [
+    { es: 'Odio hacer cola.', en: 'I hate queuing.', register: 'coloquial' },
+    { es: 'No soporto que me interrumpan cuando hablo.', en: "I can't stand being interrupted when I talk.", register: 'coloquial', note: 'que + subjuntivo' },
+    { es: 'Me molesta bastante el ruido de las obras.', en: 'The construction noise bothers me quite a bit.', register: 'neutral', note: 'gradable, unlike odiar' },
+    { es: 'Me resulta profundamente desagradable esa actitud.', en: 'I find that attitude deeply unpleasant.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Odiar/no soportar</i> are absolute — do not grade them with <i>un poco</i>; <i>molestar</i> is the one that takes degree adverbs.',
+    '<i>Que</i> + a clause after any of these takes the subjunctive: <i>no soporto que me griten</i>, not <i>*que me gritan</i>.'
+  ],
+  examples: [
+    { es: 'No soporto la impuntualidad.', en: "I can't stand lateness." },
+    { es: 'Me molesta mucho que llegues tarde sin avisar.', en: "It really bothers me when you're late without warning." },
+    { es: '¡Qué horror, qué mal lo pasasteis!', en: 'How awful, you had such a bad time!' }
+  ],
+  probes: [
+    { id: 'p:aversion:gradable', kind: 'mcq', q: '¿Cuál se puede graduar con "un poco" o "muchísimo"?',
+      options: ['Odio...', 'Me molesta...', 'No soporto...'], answer: 1 },
+    { id: 'p:aversion:subjuntivo', kind: 'mcq', q: '"No soporto que me ___." (gritar)',
+      options: ['gritan', 'griten', 'gritarán'], answer: 1 },
+    { id: 'p:aversion:cloze', kind: 'cloze', text: '___ hacer cola. (odio)', accept: ['Odio', 'odio'] },
+    { id: 'p:aversion:recall', kind: 'recall', front: 'Which of odiar/no soportar/molestar is gradable with degree adverbs?', back: 'molestar' }
+  ]
+},
+
+{
+  id: 'fn-preferencia-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:573', 'funciones:B1:574', 'funciones:B1:575', 'funciones:B1:576'],
+  title: 'Expresar preferencia',
+  summary: 'Prefiero X a Y needs a, never que — the exact opposite of the comparative que learned earlier — which is why prefiero el cine al teatro trips up learners who default to the more familiar comparison pattern.',
+  sections: [
+    { h: 'Prefiero X a Y', html: 'The preposition here is always <i>a</i>, never <i>que</i>: <i>Prefiero el cine al teatro</i>, <i>Preferiría vivir bien a vivir mucho</i>.' },
+    { h: 'Prefiero que + subjuntivo', html: 'When the preference concerns someone ELSE\'s action: <i>Prefiero que empieces tú</i>.' },
+    { h: 'Me gusta/interesa más que + subjuntivo', html: 'A softer alternative to <i>prefiero que</i>, same subjunctive requirement: <i>Les gusta más que vayas tú</i>.' },
+    { h: 'Lo que más/menos me gusta es/son', html: 'Singles out the top or bottom of a whole set: <i>Lo que más me gusta es el pescado.</i>' }
+  ],
+  exponents: [
+    { es: 'Prefiero el pescado a la carne.', en: 'I prefer fish to meat.', register: 'coloquial', note: 'a, never que' },
+    { es: 'Prefiero que decidas tú.', en: "I'd rather you decided.", register: 'coloquial', note: 'que + subjuntivo — someone else\'s action' },
+    { es: 'Lo que más me gusta de este trabajo es el horario.', en: 'What I like most about this job is the schedule.', register: 'neutral' },
+    { es: 'El equipo directivo prefiere que los informes se entreguen antes del viernes.', en: 'Management prefers reports to be submitted before Friday.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Preferir</i> compares with <i>a</i>, never <i>que</i>: <i>prefiero esto a aquello</i>, not <i>*prefiero esto que aquello</i> — the opposite of the más/menos...que pattern.',
+    '<i>Prefiero que</i> and <i>me gusta más que</i> both need the subjunctive because they concern someone ELSE\'s action, not a simple comparison of things.'
+  ],
+  examples: [
+    { es: 'Prefiero quedarme en casa a salir con este tiempo.', en: 'I\'d rather stay home than go out in this weather.' },
+    { es: 'Me interesa más que participes tú en el proyecto.', en: "I'm more interested in you taking part in the project." },
+    { es: 'Lo que menos me gusta son las mañanas de lunes.', en: 'What I like least is Monday mornings.' }
+  ],
+  probes: [
+    { id: 'p:preferenciab1:preposicion', kind: 'mcq', q: '"Prefiero el cine ___ teatro."',
+      options: ['que el', 'al', 'que al'], answer: 1 },
+    { id: 'p:preferenciab1:subjuntivo', kind: 'mcq', q: '"Prefiero que tú ___." (decidir)',
+      options: ['decides', 'decidas', 'decidirás'], answer: 1 },
+    { id: 'p:preferenciab1:cloze', kind: 'cloze', text: 'Prefiero el té ___ café. (a, not que)', accept: ['al'] },
+    { id: 'p:preferenciab1:recall', kind: 'recall', front: 'What preposition does preferir X ___ Y use?', back: 'a — never que' }
+  ]
+},
+
+{
+  id: 'fn-no-me-importa-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:582', 'funciones:B1:583', 'funciones:B1:584'],
+  title: 'No me importa (indiferencia)',
+  summary: 'No me importa can take a single noun, an "o" pair of options, an infinitive, or a whole que-clause — the same shape of indifference stretched over four different grammatical objects, always with the subjunctive once a clause is involved.',
+  sections: [
+    { h: 'A noun, or a choice between two', html: '<i>No me importa el resultado del partido</i>; offered a choice, <i>Té o café, no me importa</i>.' },
+    { h: 'An infinitive, or a choice between two', html: '<i>No me importa suspender el examen</i>; <i>No me importa ver la tele o ir al cine</i> — either is fine.' },
+    { h: 'A que-clause: subjunctive', html: '<i>No me importa que vayamos o no</i> — the clause takes the subjunctive.' },
+    { h: 'Me da igual: the everyday equivalent', html: 'Interchangeable with <i>no me importa</i> in casual speech.' }
+  ],
+  exponents: [
+    { es: 'No me importa el resultado, solo participar.', en: "I don't care about the result, just taking part.", register: 'coloquial' },
+    { es: 'Té o café, me da igual.', en: 'Tea or coffee, I don\'t mind.', register: 'coloquial' },
+    { es: 'No me importa que vengan o no.', en: "I don't mind whether they come or not.", register: 'neutral', note: 'que + subjuntivo' },
+    { es: 'Me resulta indiferente el resultado de la votación.', en: 'The outcome of the vote is a matter of indifference to me.', register: 'formal' }
+  ],
+  pitfalls: [
+    'A que-clause after <i>no me importa</i> always takes the subjunctive, even though the sentence expresses indifference rather than doubt.',
+    '<i>Me da igual</i> is the everyday spoken twin of <i>no me importa</i> — interchangeable in casual contexts.'
+  ],
+  examples: [
+    { es: 'No me importa lo que piensen los demás.', en: "I don't care what other people think." },
+    { es: 'Me da igual si llueve o no.', en: "I don't mind whether it rains or not." },
+    { es: 'No me importa esperar un rato más.', en: "I don't mind waiting a bit longer." }
+  ],
+  probes: [
+    { id: 'p:noimporta:subjuntivo', kind: 'mcq', q: '"No me importa que ___ o no." (venir)',
+      options: ['vienen', 'vengan', 'vendrán'], answer: 1 },
+    { id: 'p:noimporta:equivalente', kind: 'mcq', q: '¿Cuál es el equivalente coloquial de "no me importa"?',
+      options: ['Me da igual.', 'Me importa mucho.', 'Me da pena.'], answer: 0 },
+    { id: 'p:noimporta:cloze', kind: 'cloze', text: 'Té o café, no me ___. (importa)', accept: ['importa'] },
+    { id: 'p:noimporta:recall', kind: 'recall', front: 'The everyday spoken twin of "no me importa"', back: 'me da igual' }
+  ]
+},
+
+{
+  id: 'fn-expresar-deseos-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:601', 'funciones:B1:602', 'funciones:B1:605', 'funciones:B1:606', 'funciones:B1:607', 'funciones:B1:610',
+         'funciones:B1:613', 'funciones:B1:616', 'funciones:B1:617', 'funciones:B1:618'],
+  title: 'Expresar deseos',
+  summary: 'Ojalá needs no verb of wishing at all — the word itself carries the whole force of a wish, which is why que + subjuntivo alone (que te mejores) can do the same job with even less machinery.',
+  sections: [
+    { h: 'Quiero que + subjuntivo', html: 'A direct wish about someone else\'s action: <i>Queremos que vengáis los dos.</i>' },
+    { h: 'Softened wishes: conditional forms', html: '<i>Me apetecería(n)</i>, <i>Querría/Me encantaría</i> + infinitive soften a wish into something less like a demand: <i>Me encantaría hacer un viaje por el Caribe.</i>' },
+    { h: 'Sueño con / Mi sueño es', html: 'A stronger, more aspirational register: <i>Sueño con vivir junto al mar.</i>' },
+    { h: 'Ojalá and bare que + subjuntivo: wishes with no verb of wishing', html: '<i>Ojalá (que) + subjuntivo</i> and a bare <i>Que + subjuntivo</i> both carry a wish with no main verb at all: <i>Ojalá que volvamos a vernos pronto</i>, <i>Que te mejores</i> (fixed formula, said to someone unwell).' }
+  ],
+  exponents: [
+    { es: 'Quiero que vengas a mi fiesta de cumpleaños.', en: 'I want you to come to my birthday party.', register: 'coloquial' },
+    { es: 'Me encantaría vivir un tiempo en otro país.', en: "I'd love to live abroad for a while.", register: 'neutral', note: 'softened wish, conditional' },
+    { es: 'Ojalá que nos volvamos a ver pronto.', en: 'I hope we see each other again soon.', register: 'coloquial' },
+    { es: 'Esperamos que disfrute de su estancia con nosotros.', en: 'We hope you enjoy your stay with us.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Ojalá</i> always takes the subjunctive and needs no other verb — <i>Ojalá llueva</i>, never <i>*Ojalá va a llover</i>.',
+    'A bare <i>Que + subjuntivo</i> (<i>Que te mejores</i>, <i>Que te vaya bien</i>) is a fixed wish formula, not a fragment missing its main clause.',
+    '<i>Querría/Me encantaría</i> soften a wish the same way the conditional softens a request — useful when the wish involves someone else.'
+  ],
+  examples: [
+    { es: 'Me apetece mucho ver esa película.', en: 'I really feel like watching that film.' },
+    { es: 'Sueño con recorrer toda Sudamérica.', en: 'I dream of travelling all over South America.' },
+    { es: 'Que tengas un buen viaje.', en: 'Have a good trip.' }
+  ],
+  probes: [
+    { id: 'p:deseosb1:ojala', kind: 'mcq', q: '"Ojalá ___ buen tiempo mañana." (hacer)',
+      options: ['hace', 'haga', 'hará'], answer: 1 },
+    { id: 'p:deseosb1:formula', kind: 'mcq', q: 'A alguien que está enfermo le dices:',
+      options: ['Que te mejores.', 'Ojalá te mejoras.', 'Espero que te mejoras.'], answer: 0 },
+    { id: 'p:deseosb1:cloze', kind: 'cloze', text: '___ nos veamos pronto. (ojalá que)', accept: ['Ojalá que', 'ojalá que', 'Ojalá', 'ojalá'] },
+    { id: 'p:deseosb1:recall', kind: 'recall', front: 'What mood does ojalá always take, with no other verb needed?', back: 'the subjunctive' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-planes-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:632', 'funciones:B1:633', 'funciones:B1:634', 'funciones:B1:635', 'funciones:B1:636'],
+  title: 'Preguntar por planes e intenciones',
+  summary: '¿En qué estás pensando? and ¿piensas ir al sur? use the same verb, pensar, for two completely different questions — one asks what occupies your mind right now, the other asks about a concrete future plan.',
+  sections: [
+    { h: '¿Piensas + infinitivo?', html: 'Asks directly about a planned action: <i>¿Piensas ir de vacaciones al sur?</i>' },
+    { h: '¿Estás pensando en...?', html: 'Asks about something being considered, not yet decided: <i>Entonces, ¿estás pensando en cambiar de trabajo?</i>' },
+    { h: '¿En qué estás pensando?', html: 'A genuinely open question about what occupies someone\'s mind — not necessarily about plans at all.' },
+    { h: '¿Tu intención es/Tienes la intención de + infinitivo?', html: 'More formal, explicit ways to ask about intent: <i>¿Tienes intención de quedarte?</i>' }
+  ],
+  exponents: [
+    { es: '¿Piensas ir a la boda de Marta?', en: "Are you planning on going to Marta's wedding?", register: 'coloquial' },
+    { es: '¿Estás pensando en cambiar de trabajo?', en: 'Are you thinking about changing jobs?', register: 'coloquial' },
+    { es: '¿Tienes la intención de quedarte más tiempo?', en: 'Do you intend to stay longer?', register: 'neutral' },
+    { es: '¿Cuál es su intención respecto al proyecto?', en: 'What is your intention regarding the project?', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>¿En qué estás pensando?</i> asks what is on someone\'s mind in general — it is not automatically a question about future plans, unlike <i>¿piensas + infinitivo?</i>',
+    '<i>Tener la intención de</i> is more explicit and slightly more formal than the everyday <i>pensar + infinitivo</i>.'
+  ],
+  examples: [
+    { es: '¿Piensas quedarte todo el verano?', en: 'Are you planning to stay all summer?' },
+    { es: '¿Tu intención es terminar la carrera este año?', en: 'Is your intention to finish your degree this year?' },
+    { es: '¿En qué estás pensando? Te veo distraído.', en: "What's on your mind? You seem distracted." }
+  ],
+  probes: [
+    { id: 'p:pregplanesb1:abierta', kind: 'mcq', q: '¿Cuál NO pregunta necesariamente por un plan futuro?',
+      options: ['¿Piensas ir al sur?', '¿En qué estás pensando?', '¿Tienes intención de quedarte?'], answer: 1 },
+    { id: 'p:pregplanesb1:formal', kind: 'mcq', q: '¿Cuál es más formal?',
+      options: ['¿Piensas quedarte?', '¿Tienes intención de quedarte?', '¿Qué piensas hacer?'], answer: 1 },
+    { id: 'p:pregplanesb1:cloze', kind: 'cloze', text: '¿___ pensando en cambiar de coche? (estás)', accept: ['Estás', 'estás'] },
+    { id: 'p:pregplanesb1:recall', kind: 'recall', front: 'Does ¿en qué estás pensando? always ask about future plans?', back: 'no — it is an open question about what is on someone\'s mind' }
+  ]
+},
+
+{
+  id: 'fn-expresar-planes-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:648', 'funciones:B1:649', 'funciones:B1:650', 'funciones:B1:651', 'funciones:B1:652'],
+  title: 'Expresar planes e intenciones (incluso frustrados)',
+  summary: 'Pensaba quedarme en casa, pero me llamó Carlota y fuimos al cine reports a plan that never happened — the imperfecto sets up the intention, pero introduces what actually occurred, and the plan itself simply evaporates without needing to be cancelled explicitly.',
+  sections: [
+    { h: 'Pienso / Estoy pensando en + infinitivo', html: '<i>Pienso</i> states a firmer plan; <i>estoy pensando en</i> a plan still being considered: <i>Este verano pienso ir al sur</i> vs <i>Estoy pensando en cambiar de coche.</i>' },
+    { h: 'Mi intención es / Tengo la intención de', html: 'More explicit, slightly more formal statements of intent.' },
+    { h: 'Frustrated plans: imperfecto + pero + what happened', html: 'A plan that fell through uses the IMPERFECTO for the original intention, then <i>pero</i> introduces the indefinido event that overrode it: <i>Pensaba quedarme en casa, pero me llamó Carlota y fuimos al cine.</i>' }
+  ],
+  exponents: [
+    { es: 'Este verano pienso ir de vacaciones al sur de España.', en: "This summer I'm planning to go on holiday to the south of Spain.", register: 'coloquial' },
+    { es: 'Estoy pensando en apuntarme a un curso de italiano.', en: "I'm thinking about signing up for an Italian course.", register: 'coloquial' },
+    { es: 'Tengo la intención de terminar el informe esta semana.', en: 'I intend to finish the report this week.', register: 'neutral' },
+    { es: 'Pensaba salir temprano, pero se me hizo tarde.', en: 'I meant to leave early, but I ran out of time.', register: 'neutral', note: 'imperfecto (plan) + pero + what actually happened' }
+  ],
+  pitfalls: [
+    'A frustrated plan needs the IMPERFECTO for the original intention (<i>pensaba, iba a</i>) — the plain preterite there would misleadingly suggest it happened.',
+    '<i>Pienso + infinitivo</i> sounds like a firmer commitment than <i>estoy pensando en + infinitivo</i>, which still allows for a change of mind.'
+  ],
+  examples: [
+    { es: 'No pienso hablar con él después de lo que dijo.', en: "I don't intend to speak to him after what he said." },
+    { es: 'Mi intención es quedarme aquí al menos dos meses más.', en: 'My intention is to stay here at least two more months.' },
+    { es: 'Íbamos a ir a la playa, pero empezó a llover.', en: 'We were going to go to the beach, but it started raining.' }
+  ],
+  probes: [
+    { id: 'p:expplanesb1:frustrado', kind: 'mcq', q: '¿Qué tiempo marca el plan ORIGINAL en un plan frustrado?',
+      options: ['el pretérito indefinido', 'el imperfecto', 'el futuro'], answer: 1 },
+    { id: 'p:expplanesb1:firmeza', kind: 'mcq', q: '¿Cuál suena más firme?',
+      options: ['Estoy pensando en ir.', 'Pienso ir.', 'Podría ir.'], answer: 1 },
+    { id: 'p:expplanesb1:cloze', kind: 'cloze', text: '___ quedarme en casa, pero salió el sol. (imperfecto de pensar)', accept: ['Pensaba'] },
+    { id: 'p:expplanesb1:recall', kind: 'recall', front: 'What structure reports a plan that never happened?', back: 'imperfecto (the plan) + pero + indefinido (what actually happened)' }
+  ]
+},
+
+{
+  id: 'fn-contento-encantado-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:675', 'funciones:B1:676', 'funciones:B1:677'],
+  title: 'Estoy contento / encantado...',
+  summary: 'Contento con names what you are happy WITH, contento de names what you are happy TO (be/do), and only the second can take a que-clause about someone else — three prepositions doing three distinct jobs behind what looks like one simple phrase.',
+  sections: [
+    { h: 'Contento con + noun', html: 'What you are pleased WITH: <i>Está muy contenta con su trabajo.</i>' },
+    { h: 'Contento de + infinitivo', html: 'What you are pleased TO be/do (same subject): <i>Estamos encantados de estar aquí.</i>' },
+    { h: 'Contento de que + subjuntivo', html: 'Pleased about someone ELSE\'s situation: <i>Luis está contento de que vuelvas a vivir aquí.</i>' }
+  ],
+  exponents: [
+    { es: 'Está muy contento con el resultado.', en: "He's very happy with the result.", register: 'coloquial' },
+    { es: 'Estamos encantados de estar aquí con vosotros.', en: "We're delighted to be here with you.", register: 'neutral' },
+    { es: 'Estoy contenta de que hayas venido.', en: "I'm glad you came.", register: 'coloquial', note: 'que + subjuntivo — someone else\'s action' },
+    { es: 'Nos sentimos muy satisfechos con la colaboración establecida.', en: 'We are very satisfied with the collaboration established.', register: 'formal' }
+  ],
+  pitfalls: [
+    'Only <i>contento DE que</i> takes a que-clause about someone else — <i>contento con</i> takes just a noun, never a clause.',
+    '<i>Contento de + infinitivo</i> requires the SAME subject for both verbs; a different subject needs <i>de que + subjuntivo</i>.'
+  ],
+  examples: [
+    { es: 'Estamos muy contentos con el nuevo piso.', en: "We're very happy with the new flat." },
+    { es: 'Está encantada de trabajar aquí.', en: "She's delighted to work here." },
+    { es: 'Estoy contento de que todo saliera bien.', en: "I'm glad everything went well." }
+  ],
+  probes: [
+    { id: 'p:contentob1:preposicion', kind: 'mcq', q: '"Está contenta ___ su nuevo trabajo." (noun)',
+      options: ['de', 'con', 'en'], answer: 1 },
+    { id: 'p:contentob1:subjuntivo', kind: 'mcq', q: '"Estoy contento de que ___." (venir, tú)',
+      options: ['vienes', 'vengas', 'vendrás'], answer: 1 },
+    { id: 'p:contentob1:cloze', kind: 'cloze', text: 'Estamos encantados ___ estar aquí. (de)', accept: ['de'] },
+    { id: 'p:contentob1:recall', kind: 'recall', front: 'Which preposition (con/de) is used when the noun names WHAT you are happy about?', back: 'con' }
+  ]
+},
+
+{
+  id: 'fn-me-alegro-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:681', 'funciones:B1:682', 'funciones:B1:683'],
+  title: 'Me alegro',
+  summary: 'Me alegro un montón grades exactly like an amount would — un montón, mucho, muchísimo — while me alegro de que only ever reaches for the subjunctive, no matter how happy the news makes you.',
+  sections: [
+    { h: 'Graded with a quantifier', html: '<i>Me alegro un montón</i>, <i>me alegro mucho</i> — degree words modify how much, not what.' },
+    { h: 'Cuando/si + indicative', html: 'A recurring or conditional trigger for happiness: <i>Me alegro cuando vienes a visitarme.</i>' },
+    { h: 'De que + subjuntivo', html: 'The reason for the joy, as someone else\'s fact: <i>Me alegro de que estés bien.</i>' }
+  ],
+  exponents: [
+    { es: 'Me alegro un montón por vosotros.', en: "I'm so happy for you all.", register: 'coloquial' },
+    { es: 'Me alegro mucho de que hayáis podido venir.', en: "I'm really glad you were able to come.", register: 'neutral', note: 'que + subjuntivo' },
+    { es: 'Me alegro cuando os veo felices.', en: 'It makes me happy when I see you all happy.', register: 'coloquial' },
+    { es: 'Nos complace enormemente que haya aceptado la propuesta.', en: 'We are delighted that you have accepted the proposal.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Me alegro de que</i> always takes the subjunctive, regardless of how certain or true the good news actually is.',
+    '<i>Me alegro cuando/si</i> uses the indicative — a different structure from <i>de que</i>, not interchangeable with it.'
+  ],
+  examples: [
+    { es: 'Me alegro muchísimo de que te hayan dado el trabajo.', en: "I'm so glad you got the job." },
+    { es: 'Me alegro siempre que puedo ayudar.', en: 'I\'m always glad when I can help.' },
+    { es: 'Nos alegramos de que la operación fuera un éxito.', en: 'We were glad the operation was a success.' }
+  ],
+  probes: [
+    { id: 'p:mealegrob1:subjuntivo', kind: 'mcq', q: '"Me alegro de que ___ bien." (estar)',
+      options: ['estás', 'estés', 'estarás'], answer: 1 },
+    { id: 'p:mealegrob1:cuando', kind: 'mcq', q: '"Me alegro cuando ___." (venir, tú — hecho habitual)',
+      options: ['vienes', 'vengas', 'vendrás'], answer: 0 },
+    { id: 'p:mealegrob1:cloze', kind: 'cloze', text: 'Me alegro ___ montón. (un)', accept: ['un'] },
+    { id: 'p:mealegrob1:recall', kind: 'recall', front: 'Me alegro cuando/si vs me alegro de que — which uses the indicative?', back: 'cuando/si' }
+  ]
+},
+
+{
+  id: 'fn-tristeza-afliccion-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:698', 'funciones:B1:699', 'funciones:B1:700', 'funciones:B1:707', 'funciones:B1:710', 'funciones:B1:711', 'funciones:B1:714'],
+  title: 'Expresar tristeza y aflicción',
+  summary: 'Me pongo triste cuando... describes a RECURRING reaction, not a one-off feeling — ponerse marks a change of state each time the trigger happens, distinct from just stating estoy triste as a current fact.',
+  sections: [
+    { h: 'A current state', html: '<i>Estoy (+ cuantificador) + triste/deprimido/mal</i>, <i>Me encuentro deprimido</i> — describing how you are right now.' },
+    { h: 'A reaction, each time', html: '<i>Me pongo triste cuando/si/al + infinitivo</i> describes a RECURRING change of state triggered by something: <i>Me pongo triste cuando escucho esta canción.</i>' },
+    { h: 'Sympathy for someone else\'s situation', html: '<i>Me da pena/lástima que + subjuntivo</i>, <i>¡Qué pena/lástima que + subjuntivo!</i>, <i>Es una pena/lástima que + subjuntivo</i> — all reacting to someone else\'s bad situation, all subjunctive.' }
+  ],
+  exponents: [
+    { es: 'Últimamente estoy un poco deprimido.', en: "I've been feeling a bit down lately.", register: 'coloquial' },
+    { es: 'Me pongo triste cuando pienso en ello.', en: 'It makes me sad when I think about it.', register: 'coloquial', note: 'recurring reaction, not a one-off state' },
+    { es: 'Es una pena que os tengáis que ir tan pronto.', en: "It's a shame you have to leave so soon.", register: 'neutral', note: 'que + subjuntivo' },
+    { es: 'Lamento profundamente su pérdida.', en: 'I am deeply sorry for your loss.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Me pongo triste</i> marks a recurring CHANGE of state each time the trigger happens; <i>estoy triste</i> just states a current fact.',
+    'Every que-clause after these sympathy expressions (<i>es una pena que, me da pena que</i>) takes the subjunctive.'
+  ],
+  examples: [
+    { es: 'Me encuentro un poco mal desde ayer.', en: "I haven't been feeling great since yesterday." },
+    { es: '¡Qué lástima que no puedas venir!', en: "What a shame you can't come!" },
+    { es: 'Me da mucha pena verla así.', en: 'It makes me very sad to see her like that.' }
+  ],
+  probes: [
+    { id: 'p:tristezaafliccion:recurrente', kind: 'mcq', q: '¿Cuál describe una reacción que se repite CADA VEZ que ocurre algo?',
+      options: ['Estoy triste.', 'Me pongo triste cuando la veo.', 'Me encuentro mal.'], answer: 1 },
+    { id: 'p:tristezaafliccion:subjuntivo', kind: 'mcq', q: '"Es una pena que no ___ venir." (poder)',
+      options: ['puedes', 'puedas', 'podrás'], answer: 1 },
+    { id: 'p:tristezaafliccion:cloze', kind: 'cloze', text: 'Me pongo triste ___ escucho esta canción. (cuando)', accept: ['cuando'] },
+    { id: 'p:tristezaafliccion:recall', kind: 'recall', front: 'Estoy triste vs me pongo triste — which marks a recurring reaction?', back: 'me pongo triste' }
+  ]
+},
+
+{
+  id: 'fn-me-duele-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:704', 'funciones:B1:705', 'funciones:B1:706'],
+  title: 'Me duele (emocional)',
+  summary: 'Me duele su actitud reuses the exact same construction that hurts physically (me duele la cabeza) for an emotional wound, with the same reversed subject-experiencer logic: the attitude is what hurts, you are simply on the receiving end.',
+  sections: [
+    { h: 'Me duele + noun', html: 'The thing/situation that causes emotional pain is the subject, you the indirect object — same grammar as the physical sense: <i>Me duele su actitud.</i>' },
+    { h: 'Me duele + infinitivo', html: 'The pain comes from your OWN inability to do something: <i>Me duele no poder ayudarte.</i>' },
+    { h: 'Me duele que + subjuntivo', html: 'The pain comes from someone ELSE\'s action: <i>Me duele que me hables así.</i>' }
+  ],
+  exponents: [
+    { es: 'Me duele mucho tu actitud hacia mí.', en: "Your attitude towards me really hurts.", register: 'coloquial' },
+    { es: 'Me duele no poder hacer más por ellos.', en: "It pains me that I can't do more for them.", register: 'neutral' },
+    { es: 'Me duele que no confíes en mí.', en: "It hurts that you don't trust me.", register: 'coloquial', note: 'que + subjuntivo' },
+    { es: 'Nos duele profundamente esta decisión.', en: 'This decision pains us deeply.', register: 'formal' }
+  ],
+  pitfalls: [
+    'This emotional <i>me duele</i> follows the same reversed grammar as the physical sense — the CAUSE is the subject, you are the indirect object, not "I hurt about X."',
+    'A que-clause here takes the subjunctive, just like the physical <i>me duele que</i> would if it took one.'
+  ],
+  examples: [
+    { es: 'Me duele mucho verte así.', en: 'It really hurts me to see you like this.' },
+    { es: 'Le dolió que nadie lo felicitara.', en: 'It hurt him that no one congratulated him.' },
+    { es: 'Nos duele su silencio.', en: 'Their silence hurts us.' }
+  ],
+  probes: [
+    { id: 'p:meduelob1:sujeto', kind: 'mcq', q: '"Me duele su actitud" — ¿qué es el sujeto gramatical?',
+      options: ['yo', 'su actitud', 'me'], answer: 1 },
+    { id: 'p:meduelob1:subjuntivo', kind: 'mcq', q: '"Me duele que no me ___." (llamar, tú)',
+      options: ['llamas', 'llames', 'llamarás'], answer: 1 },
+    { id: 'p:meduelob1:cloze', kind: 'cloze', text: 'Me duele no ___ ayudarte. (poder)', accept: ['poder'] },
+    { id: 'p:meduelob1:recall', kind: 'recall', front: 'In "me duele su actitud", who/what is the grammatical subject?', back: 'su actitud — the cause, not the person feeling it' }
+  ]
 }
 
 ];
