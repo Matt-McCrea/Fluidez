@@ -90,7 +90,9 @@ no passages gives the learner a lesson and then three empty stages.
 5. **Tag everything**: `cefr`, `level`, `pcic`, and `theme` where the content is
    about something. `level` must be one of that band's gates. **These decide
    which level section shows the item** — wrong tags hide it, they do not just
-   misfile it.
+   misfile it. This applies to passages, apply items and writing tasks too:
+   none of the existing 937 carry a `theme`, so none of them can ever appear in
+   a themed track. Do not add to that backlog.
 
 ## 4. Inputs
 
@@ -191,10 +193,37 @@ definition, not a translation (`la sequía — un periodo largo sin lluvia`); at
 C1 there is none, so the passage must carry itself. This comes from
 `glossLang` in `data/taxonomy.js`.
 
-Each passage needs `gloss` and 3–5 questions mixing `mcq`, `short` and exactly
-one `translate` whose line appears **verbatim** in the text. At B2/C1 the `mcq`
-questions should test inference and attitude — what the writer implies, which
-position is being reported — not fact retrieval.
+Each passage needs `gloss`, a **`theme`** from `data/taxonomy.js`, and 3–5
+questions mixing `mcq`, `short` and exactly one `translate` whose line appears
+**verbatim** in the text. At B2/C1 the `mcq` questions should test inference and
+attitude — what the writer implies, which position is being reported — not fact
+retrieval.
+
+### Variety — the failure the gates cannot see
+
+The B1 batch passed all four gates and was correct, level-appropriate Spanish.
+It was also **the same passage 81 times**: 73% contained "Antes de …", 49%
+"espera que", 31% "dudaba que", and a fifth used all three. The topics varied;
+the sentence architecture did not, because each text was built around a grammar
+point rather than around something to say. A learner meets the frame, not the
+language.
+
+```
+node tools/variety.js B1
+```
+
+reports over-used frames, length against the band's target, theme coverage and
+verb range. **Run it before calling a batch done.** Rules that follow from it:
+
+- **No syntactic frame in more than a quarter of a level's passages.** If you
+  need the pluscuamperfecto in twenty texts, reach it twenty different ways —
+  not "Antes de X, había Y" twenty times.
+- **Write to the length band.** B1 passages currently average 94 words against
+  a 100–160 target; A1 averages 72 against 30–60. Count.
+- **Vary the verbs.** `data/verbs.js` holds 1,004. The B1 apply items drill 51,
+  and lean on `terminar`, `llegar`, `decir`, `tener`. Aim for at least one
+  distinct verb per two items.
+- **Start differently.** Ten of the 81 B1 passages open "Después de".
 
 Spread them across the 20 themes in `data/taxonomy.js`. The existing ones
 cluster on everyday life; `politica`, `economia`, `medios`, `ciencia` and
@@ -217,8 +246,10 @@ wrong however advanced its vocabulary looks.**
 Work in batches of 10–15 items. After each batch:
 
 1. run all four gates and fix everything before continuing;
-2. re-run `node tools/todo.js` to see what remains;
-3. report: what you added, gate status, and any unit you **skipped** with the
+2. for practice material, run `node tools/variety.js <level>` — correct is not
+   the same as varied, and the gates only check correct;
+3. re-run `node tools/todo.js` to see what remains;
+4. report: what you added, gate status, and any unit you **skipped** with the
    reason. Skipping beats inventing — if a unit's `spec` points are too thin to
    teach (`teaches` < 3, or all entries are structural headings like "Forma"),
    skip and say so.
