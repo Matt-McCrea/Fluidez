@@ -1418,5 +1418,7 @@ window.VERBS = [
 { inf:'sobrevivir', en:'to survive', type:'ir' },
 { inf:'notar', en:'to notice', type:'ar' },
 { inf:'extrañar', en:'to miss (a person/place), to find strange', type:'ar' },
-{ inf:'desconectar', en:'to disconnect, to unplug', type:'ar' }
+{ inf:'desconectar', en:'to disconnect, to unplug', type:'ar' },
+{ inf:'apetecer', en:'to feel like, to fancy (dative, like gustar)', type:'er' },
+{ inf:'decepcionar', en:'to disappoint', type:'ar' }
 ];

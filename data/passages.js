@@ -2448,6 +2448,244 @@ window.PASSAGES = [
     { type: 'short', q: '¿Cuántos años lleva abierta la panadería desde la crisis? (una palabra)', accept: ['cinco', 'cinco años'] },
     { type: 'translate', line: 'Es admirable que un negocio tan pequeño haya conseguido resistir mientras otros más grandes cerraban.', model: 'It is admirable that such a small business has managed to survive while bigger ones were closing.' }
   ]
+},
+
+{
+  id: 'operacion-rodilla', title: 'La operación de rodilla', level: 4,
+  text: 'Después de meses de dolor, mi tío por fin decidió operarse la rodilla la semana pasada. El cirujano le recomendó que hiciera fisioterapia durante al menos dos meses después de la operación. Antes de la cirugía, mi tío ya había probado varios tratamientos sin cirugía, pero ninguno funcionó bien. Ahora camina con muletas y espera que su recuperación vaya más rápido de lo normal. Es importante que descanse lo suficiente, aunque a él le cuesta mucho quedarse quieto. Sus hijos esperan que para las vacaciones de verano ya pueda caminar sin ayuda.',
+  gloss: [
+    { es: 'cirujano', en: 'surgeon' },
+    { es: 'muletas', en: 'crutches' },
+    { es: 'quedarse quieto', en: 'to stay still' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué se operó el tío?', options: ['La rodilla', 'El brazo', 'La espalda'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le recomendó el cirujano?', options: ['Que hiciera fisioterapia', 'Que dejara de caminar', 'Que viajara'], answer: 0 },
+    { type: 'short', q: '¿Con qué camina ahora? (una palabra)', accept: ['muletas'] },
+    { type: 'translate', line: 'Antes de la cirugía, mi tío ya había probado varios tratamientos sin cirugía, pero ninguno funcionó bien.', model: 'Before the surgery, my uncle had already tried several non-surgical treatments, but none worked well.' }
+  ]
+},
+
+{
+  id: 'apellido-historia', title: 'Un apellido con historia', level: 5,
+  text: 'Cuando Sofía empezó a investigar el origen de su apellido, descubrió que su familia había llegado desde Italia hace más de cien años. Para cuando terminó la investigación, ya habrá encontrado documentos de al menos cinco generaciones distintas. Al principio, dudaba que encontrara información tan antigua, pero un archivo local guardaba registros sorprendentes. Sus abuelos nunca le habían contado estos detalles porque, según ellos, no eran importantes. Ahora Sofía siente que entiende mejor quién es y de dónde viene su familia. Espera que sus hijos también quieran conocer esta historia algún día.',
+  gloss: [
+    { es: 'apellido', en: 'surname' },
+    { es: 'archivo', en: 'archive' },
+    { es: 'registros', en: 'records' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿De dónde había llegado la familia de Sofía?', options: ['Italia', 'Francia', 'Portugal'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dudaba Sofía al principio?', options: ['Que encontrara información tan antigua', 'Que su apellido fuera italiano', 'Que sus abuelos supieran algo'], answer: 0 },
+    { type: 'short', q: '¿Cuántas generaciones encontró documentadas? (una palabra)', accept: ['cinco'] },
+    { type: 'translate', line: 'Sus abuelos nunca le habían contado estos detalles porque, según ellos, no eran importantes.', model: "Her grandparents had never told her these details because, according to them, they weren't important." }
+  ]
+},
+
+{
+  id: 'jubilacion-directora', title: 'La jubilación de la directora', level: 4,
+  text: 'Después de treinta y cinco años en la misma empresa, la directora de recursos humanos se jubila este viernes. Sus compañeros organizaron una fiesta sorpresa y esperan que ella se emocione mucho al verla. Antes de jubilarse, la directora ya había formado a la persona que ocupará su puesto. Es raro que alguien se quede tanto tiempo en la misma empresa hoy en día, comentó uno de los empleados más jóvenes. La directora dice que echará de menos a sus compañeros, pero que está lista para disfrutar de su tiempo libre. Espera que la nueva directora cuide tan bien del equipo como ella lo hizo.',
+  gloss: [
+    { es: 'se jubila', en: 'is retiring' },
+    { es: 'echará de menos', en: 'will miss' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántos años lleva la directora en la empresa?', options: ['Treinta y cinco', 'Veinte', 'Diez'], answer: 0 },
+    { type: 'mcq', q: '¿Qué había hecho la directora antes de jubilarse?', options: ['Formar a su sucesor', 'Despedir a su equipo', 'Cambiar de empresa'], answer: 0 },
+    { type: 'short', q: '¿Qué organizaron sus compañeros? (dos palabras)', accept: ['fiesta sorpresa', 'una fiesta sorpresa'] },
+    { type: 'translate', line: 'Antes de jubilarse, la directora ya había formado a la persona que ocupará su puesto.', model: 'Before retiring, the director had already trained the person who will take her position.' }
+  ]
+},
+
+{
+  id: 'excursionistas-perdidos', title: 'Perdidos en la montaña', level: 5,
+  text: 'Dos excursionistas se perdieron el fin de semana pasado en la sierra y pasaron la noche sin refugio. Para cuando los encontró el equipo de rescate, ya habrán pasado casi veinticuatro horas desde la última llamada. Los rescatadores dudaban que sobrevivieran a las bajas temperaturas de la noche, pero por suerte llevaban ropa de abrigo. Antes de perderse, habían seguido un sendero que no aparecía en el mapa. Ahora piden que se mejoren las señales de la ruta para evitar accidentes similares. Los excursionistas dicen que esta experiencia ha cambiado la forma en que se preparan para futuras excursiones.',
+  gloss: [
+    { es: 'excursionistas', en: 'hikers' },
+    { es: 'rescatadores', en: 'rescuers' },
+    { es: 'sendero', en: 'trail, path' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué les pasó a los excursionistas?', options: ['Se perdieron en la sierra', 'Se rompieron una pierna', 'Perdieron el autobús'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dudaban los rescatadores?', options: ['Que sobrevivieran a las bajas temperaturas', 'Que encontraran el camino solos', 'Que llevaran comida'], answer: 0 },
+    { type: 'short', q: '¿Qué piden ahora para evitar accidentes? (dos palabras)', accept: ['mejorar las señales', 'que se mejoren las señales'] },
+    { type: 'translate', line: 'Los excursionistas dicen que esta experiencia ha cambiado la forma en que se preparan para futuras excursiones.', model: 'The hikers say this experience has changed the way they prepare for future hikes.' }
+  ]
+},
+
+{
+  id: 'rebajas-enero', title: 'Las rebajas de enero', level: 4,
+  text: 'Cada año, miles de personas hacen cola desde muy temprano el primer día de las rebajas de enero. Este año, muchas tiendas pidieron que los clientes reservaran cita previa para evitar aglomeraciones. Antes de esta medida, las tiendas nunca habían tenido que controlar tanto el número de clientes dentro. Algunos compradores se quejaron porque preferían la experiencia tradicional de entrar cuando quisieran. Es comprensible que las tiendas busquen maneras de organizar mejor las rebajas, opinó una clienta habitual. Al final, la mayoría reconoce que este sistema, aunque distinto, funcionó bastante bien.',
+  gloss: [
+    { es: 'rebajas', en: 'sales (discounts)' },
+    { es: 'aglomeraciones', en: 'crowds' },
+    { es: 'clienta habitual', en: 'regular customer' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pidieron muchas tiendas este año?', options: ['Que los clientes reservaran cita previa', 'Que pagaran más caro', 'Que compraran menos'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué se quejaron algunos compradores?', options: ['Porque preferían la experiencia tradicional', 'Porque los precios subieron', 'Porque las tiendas cerraron pronto'], answer: 0 },
+    { type: 'short', q: '¿Qué opinó una clienta habitual? (dos palabras)', accept: ['es comprensible', 'comprensible'] },
+    { type: 'translate', line: 'Antes de esta medida, las tiendas nunca habían tenido que controlar tanto el número de clientes dentro.', model: 'Before this measure, stores had never had to control the number of customers inside so much.' }
+  ]
+},
+
+{
+  id: 'cuadro-robado', title: 'El cuadro robado', level: 5,
+  text: 'Hace treinta años, un cuadro famoso desapareció de un museo europeo sin dejar ninguna pista. Para sorpresa de todos, la policía anunció ayer que ya habrá recuperado la obra completa antes del fin de semana. Los investigadores dudaban que el cuadro siguiera en buen estado después de tanto tiempo escondido. Un coleccionista privado lo había comprado sin saber que era robado, según la policía. Los expertos del museo esperan que la restauración no dañe más el cuadro de lo que ya está. Sin este golpe de suerte, la obra probablemente habría permanecido perdida para siempre.',
+  gloss: [
+    { es: 'pista', en: 'clue, lead' },
+    { es: 'coleccionista', en: 'collector' },
+    { es: 'golpe de suerte', en: 'stroke of luck' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pasó con el cuadro hace treinta años?', options: ['Desapareció de un museo', 'Se quemó', 'Se vendió'], answer: 0 },
+    { type: 'mcq', q: '¿Quién había comprado el cuadro sin saberlo?', options: ['Un coleccionista privado', 'Otro museo', 'El propio ladrón'], answer: 0 },
+    { type: 'short', q: '¿Qué esperan los expertos del museo? (dos palabras)', accept: ['que no dañe', 'no dañar el cuadro'] },
+    { type: 'translate', line: 'Sin este golpe de suerte, la obra probablemente habría permanecido perdida para siempre.', model: 'Without this stroke of luck, the work would probably have remained lost forever.' }
+  ]
+},
+
+{
+  id: 'retiro-silencio', title: 'Un retiro de silencio', level: 4,
+  text: 'El mes pasado, mi vecina decidió pasar una semana entera en un monasterio en completo silencio. Sus amigos no esperaban que aguantara tanto tiempo sin hablar con nadie. Antes de este retiro, ella nunca había practicado la meditación de forma seria. Los monjes le pidieron que dejara el móvil en la entrada durante toda la semana. Es curioso que, después de tantos días de silencio, se sintiera más tranquila que nunca en su vida diaria. Ahora recomienda a todo el mundo que pruebe esta experiencia al menos una vez.',
+  gloss: [
+    { es: 'monasterio', en: 'monastery' },
+    { es: 'monjes', en: 'monks' },
+    { es: 'aguantara', en: '(that she) would put up with / last' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde pasó la semana la vecina?', options: ['En un monasterio', 'En un hotel', 'En la playa'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le pidieron los monjes?', options: ['Que dejara el móvil en la entrada', 'Que ayunara toda la semana', 'Que no durmiera'], answer: 0 },
+    { type: 'short', q: '¿Qué nunca había practicado antes en serio? (una palabra)', accept: ['meditación', 'la meditación'] },
+    { type: 'translate', line: 'Es curioso que, después de tantos días de silencio, se sintiera más tranquila que nunca en su vida diaria.', model: 'It is curious that, after so many days of silence, she felt calmer than ever in her daily life.' }
+  ]
+},
+
+{
+  id: 'playa-desaparecida', title: 'La playa que desapareció', level: 4,
+  text: 'Después de una fuerte tormenta, gran parte de la arena de la playa de mi pueblo desapareció en solo una noche. El ayuntamiento pidió que los vecinos no se acercaran a la zona hasta que fuera segura. Antes de la tormenta, esta playa ya había perdido arena varias veces por culpa del cambio climático. Los científicos esperan que las nuevas barreras de piedra protejan mejor la costa en el futuro. Es triste que un lugar tan bonito pueda cambiar tanto en tan poco tiempo. Los vecinos más mayores dicen que nunca habían visto algo tan grave en su vida.',
+  gloss: [
+    { es: 'tormenta', en: 'storm' },
+    { es: 'arena', en: 'sand' },
+    { es: 'barreras', en: 'barriers' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué desapareció en la playa?', options: ['Gran parte de la arena', 'Todos los bares', 'El paseo marítimo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pidió el ayuntamiento?', options: ['Que los vecinos no se acercaran a la zona', 'Que cerraran el pueblo', 'Que evacuaran las casas'], answer: 0 },
+    { type: 'short', q: '¿Por qué había perdido arena la playa antes? (dos palabras)', accept: ['cambio climático', 'el cambio climático'] },
+    { type: 'translate', line: 'Los vecinos más mayores dicen que nunca habían visto algo tan grave en su vida.', model: 'The older residents say they had never seen anything so serious in their lives.' }
+  ]
+},
+
+{
+  id: 'banco-cerrado', title: 'El banco que cerró sin avisar', level: 5,
+  text: 'La semana pasada, la única sucursal bancaria del pueblo cerró sus puertas sin ningún aviso previo. Para cuando los vecinos protestaron frente al edificio, el banco ya habrá trasladado todo el personal a la ciudad más cercana. Muchos ancianos del pueblo dudan que puedan hacer sus gestiones fácilmente por internet, ya que casi nadie les enseñó a usarlo. El alcalde pidió que el banco cambiara la decisión, pero de momento no ha recibido respuesta. Es lamentable que las zonas rurales pierdan cada vez más servicios básicos como este. Sin una solución rápida, muchos vecinos habrían tenido que viajar una hora para hacer cualquier trámite.',
+  gloss: [
+    { es: 'sucursal', en: 'branch (of a bank)' },
+    { es: 'gestiones', en: 'errands, paperwork' },
+    { es: 'trámite', en: 'procedure' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué hizo la sucursal bancaria?', options: ['Cerró sin aviso previo', 'Cambió de horario', 'Contrató más personal'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pidió el alcalde?', options: ['Que el banco cambiara la decisión', 'Que subieran los impuestos', 'Que abrieran otra sucursal'], answer: 0 },
+    { type: 'short', q: '¿Qué dudan muchos ancianos que puedan hacer? (dos palabras)', accept: ['gestiones por internet', 'hacer gestiones por internet'] },
+    { type: 'translate', line: 'Sin una solución rápida, muchos vecinos habrían tenido que viajar una hora para hacer cualquier trámite.', model: 'Without a quick solution, many residents would have had to travel an hour to do any paperwork.' }
+  ]
+},
+
+{
+  id: 'noticias-falsas-familia', title: 'Noticias falsas en la familia', level: 4,
+  text: 'Últimamente, mi abuelo comparte muchas noticias falsas que encuentra en internet sin comprobar si son verdad. Mi madre le pidió que fuera más cuidadoso antes de compartir cualquier cosa con toda la familia. Antes de tener un teléfono inteligente, mi abuelo nunca había tenido acceso a tanta información, buena y mala. Es normal que a su generación le cueste distinguir las fuentes fiables de las que no lo son. Mis primos y yo esperamos que, poco a poco, aprenda a verificar lo que lee. Mientras tanto, intentamos explicarle con paciencia por qué algunas noticias no pueden ser ciertas.',
+  gloss: [
+    { es: 'comprobar', en: 'to check, to verify' },
+    { es: 'fuentes fiables', en: 'reliable sources' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué comparte el abuelo sin comprobar?', options: ['Noticias falsas', 'Fotos de familia', 'Recetas de cocina'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le pidió la madre?', options: ['Que fuera más cuidadoso al compartir', 'Que dejara de usar internet', 'Que comprara un teléfono nuevo'], answer: 0 },
+    { type: 'short', q: '¿Qué esperan los primos que aprenda el abuelo? (una palabra)', accept: ['verificar'] },
+    { type: 'translate', line: 'Antes de tener un teléfono inteligente, mi abuelo nunca había tenido acceso a tanta información, buena y mala.', model: 'Before having a smartphone, my grandfather had never had access to so much information, good and bad.' }
+  ]
+},
+
+{
+  id: 'ahorrar-jubilacion', title: 'Ahorrar para la jubilación', level: 5,
+  text: 'A los treinta años, Marta empezó a ahorrar una parte de su sueldo cada mes para su jubilación. Su asesor financiero le recomendó que invirtiera en varios productos distintos para reducir el riesgo. Antes de recibir este consejo, Marta nunca había pensado seriamente en su futuro económico a largo plazo. Muchos jóvenes de su generación dudan que la pensión pública sea suficiente para vivir bien. Es inteligente que la gente empiece a ahorrar cuanto antes, aunque parezca pronto. Marta espera que, dentro de treinta años, esta decisión temprana le haya cambiado la vida por completo.',
+  gloss: [
+    { es: 'asesor financiero', en: 'financial advisor' },
+    { es: 'riesgo', en: 'risk' },
+    { es: 'a largo plazo', en: 'in the long term' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Para qué empezó a ahorrar Marta?', options: ['Para su jubilación', 'Para un coche', 'Para un viaje'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le recomendó su asesor financiero?', options: ['Que invirtiera en varios productos distintos', 'Que gastara más', 'Que dejara de trabajar'], answer: 0 },
+    { type: 'short', q: '¿Qué dudan muchos jóvenes sobre la pensión pública? (dos palabras)', accept: ['que sea suficiente', 'sea suficiente'] },
+    { type: 'translate', line: 'Muchos jóvenes de su generación dudan que la pensión pública sea suficiente para vivir bien.', model: 'Many young people her age doubt that the public pension will be enough to live well.' }
+  ]
+},
+
+{
+  id: 'debate-electoral', title: 'El debate que nadie vio venir', level: 5,
+  text: 'Durante el debate electoral de anoche, dos candidatos que normalmente evitan discutir se enfrentaron directamente por primera vez. Los espectadores no esperaban que el debate se pusiera tan tenso desde el principio. Para cuando terminó, millones de personas ya habrán visto el debate en directo o en redes sociales. Los analistas dudan que este momento cambie mucho el resultado final de las elecciones. Algunos periodistas creen que un debate más largo habría permitido hablar más de las propuestas. Es evidente que este tipo de enfrentamientos generan mucho más interés que los discursos tradicionales.',
+  gloss: [
+    { es: 'se enfrentaron', en: 'confronted each other' },
+    { es: 'tenso', en: 'tense' },
+    { es: 'discursos', en: 'speeches' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pasó en el debate de anoche?', options: ['Dos candidatos se enfrentaron directamente', 'Un candidato no se presentó', 'Se canceló el debate'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dudan los analistas?', options: ['Que el debate cambie mucho el resultado', 'Que la gente lo haya visto', 'Que haya otro debate'], answer: 0 },
+    { type: 'short', q: '¿Qué generan estos enfrentamientos según el texto? (una palabra)', accept: ['interés', 'mucho interés'] },
+    { type: 'translate', line: 'Algunos periodistas creen que un debate más largo habría permitido hablar más de las propuestas.', model: 'Some journalists believe a longer debate would have allowed more discussion of the proposals.' }
+  ]
+},
+
+{
+  id: 'dieta-sin-carne', title: 'Una dieta sin carne', level: 5,
+  text: 'Hace un año, mi hermano decidió dejar de comer carne por razones tanto de salud como medioambientales. Al principio, mis padres dudaban que pudiera mantener esta dieta sin que le faltaran nutrientes importantes. Antes de este cambio, mi hermano nunca había cocinado casi nada, así que tuvo que aprender muchas recetas nuevas. Su médico le recomendó que tomara suplementos de vitamina B12, algo común en dietas sin carne. Es admirable que haya mantenido esta decisión durante todo un año sin rendirse. Ahora toda la familia prueba más recetas vegetarianas gracias a él.',
+  gloss: [
+    { es: 'medioambientales', en: 'environmental' },
+    { es: 'nutrientes', en: 'nutrients' },
+    { es: 'sin rendirse', en: 'without giving up' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué decidió dejar de comer el hermano?', options: ['Carne', 'Pescado', 'Verduras'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dudaban los padres al principio?', options: ['Que pudiera mantener la dieta sin faltarle nutrientes', 'Que le gustara la comida vegetariana', 'Que cocinara bien'], answer: 0 },
+    { type: 'short', q: '¿Qué le recomendó el médico que tomara? (una palabra)', accept: ['b12', 'vitamina b12', 'suplementos'] },
+    { type: 'translate', line: 'Es admirable que haya mantenido esta decisión durante todo un año sin rendirse.', model: 'It is admirable that he has stuck with this decision for a whole year without giving up.' }
+  ]
+},
+
+{
+  id: 'torneo-ajedrez', title: 'El torneo de ajedrez', level: 5,
+  text: 'El fin de semana pasado, mi sobrina de doce años ganó su primer torneo de ajedrez contra jugadores mucho mayores que ella. Para la final del campeonato regional, ya habrá jugado más de veinte partidas en total. Sus rivales no esperaban que una niña tan joven jugara con tanta estrategia y paciencia. Antes de este torneo, había practicado todos los días durante casi dos horas con su entrenador. Es impresionante que alguien tan joven haya llegado tan lejos en tan poco tiempo. Toda la familia espera que siga jugando y que algún día compita a nivel internacional.',
+  gloss: [
+    { es: 'torneo', en: 'tournament' },
+    { es: 'partidas', en: 'games (matches)' },
+    { es: 'entrenador', en: 'coach' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué ganó la sobrina el fin de semana pasado?', options: ['Su primer torneo de ajedrez', 'Una carrera', 'Un premio de música'], answer: 0 },
+    { type: 'mcq', q: '¿Qué no esperaban sus rivales?', options: ['Que jugara con tanta estrategia y paciencia', 'Que llegara a tiempo', 'Que se rindiera pronto'], answer: 0 },
+    { type: 'short', q: '¿Cuántas horas practicaba al día con su entrenador? (una palabra)', accept: ['dos', 'dos horas'] },
+    { type: 'translate', line: 'Es impresionante que alguien tan joven haya llegado tan lejos en tan poco tiempo.', model: 'It is impressive that someone so young has come so far in such a short time.' }
+  ]
+},
+
+{
+  id: 'aprender-decir-no', title: 'Aprender a decir que no', level: 4,
+  text: 'Durante años, Pablo aceptaba todos los planes de sus amigos aunque no le apeteciera salir. Su psicóloga le recomendó que empezara a decir que no cuando realmente no quisiera hacer algo. Antes de este cambio, Pablo nunca había expresado sus verdaderos sentimientos por miedo a decepcionar a los demás. Al principio, algunos amigos se sorprendieron de que rechazara planes por primera vez. Es sano que las personas aprendan a poner límites sin sentirse culpables, explica su psicóloga. Ahora Pablo se siente mucho más tranquilo y sus amistades, curiosamente, no han cambiado nada.',
+  gloss: [
+    { es: 'apeteciera', en: '(that he) felt like' },
+    { es: 'poner límites', en: 'to set boundaries' },
+    { es: 'culpables', en: 'guilty' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué hacía Pablo durante años?', options: ['Aceptaba todos los planes aunque no le apeteciera', 'Rechazaba todos los planes', 'Vivía solo, sin amigos'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le recomendó su psicóloga?', options: ['Que empezara a decir que no', 'Que dejara de ver a sus amigos', 'Que se mudara de ciudad'], answer: 0 },
+    { type: 'short', q: '¿Qué no habían cambiado según el texto? (una palabra)', accept: ['amistades', 'sus amistades'] },
+    { type: 'translate', line: 'Antes de este cambio, Pablo nunca había expresado sus verdaderos sentimientos por miedo a decepcionar a los demás.', model: 'Before this change, Pablo had never expressed his true feelings for fear of disappointing others.' }
+  ]
 }
 
 ];
