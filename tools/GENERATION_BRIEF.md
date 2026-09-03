@@ -66,6 +66,14 @@ Plus practice material, which is a separate axis and is **the larger gap**:
 
 ### Order of work
 
+0. **Back-tag the existing practice material with themes** — 190 passages and
+   325 writing tasks carry none, so none can appear in a themed track. One word
+   each, from the 20 themes in `data/taxonomy.js`, chosen by reading the text.
+   **This cannot be derived**: the diagnostic words are often untagged legacy
+   vocabulary (`la ley`, `el gobierno` have no theme) or absent entirely
+   (`protesta`, `votar`), and PCIC files `sociedad` under `economia`, so a
+   word-matching heuristic tags a passage about water policy as `vivienda`.
+   Apply items do not need a theme — they are grammar drills.
 1. **Finish A1 and A2 lessons** (47) — small, and a learner meets them first.
 2. **B1 lessons** (99), then **B1 practice material**.
 3. **B2 lessons** (164) and **B2 practice material**.
