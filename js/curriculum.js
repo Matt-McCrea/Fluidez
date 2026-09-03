@@ -17,10 +17,9 @@
 window.Curriculum = (function () {
   var E = window.ENGINE;
 
-  var VOCAB_ORDER = ['greetings', 'people', 'food', 'numbers', 'time', 'colors',
-    'places', 'home', 'body', 'nature', 'adjectives', 'travel', 'weather',
-    'clothing', 'animals', 'questions', 'connectors', 'common', 'school',
-    'health', 'shopping', 'sports', 'kitchen', 'work'];
+  // Category order is derived from the vocabulary itself (see
+  // data/taxonomy.js). It was a hardcoded list, which silently produced no
+  // vocab days at all for the ~3,600 PCIC entries filed under theme ids.
   var VERB_PRIORITY = ['hablar', 'trabajar', 'estudiar', 'necesitar', 'comprar',
     'comer', 'beber', 'vivir', 'aprender', 'escribir', 'ser', 'estar', 'tener',
     'ir', 'hacer', 'poder', 'querer', 'decir', 'ver', 'dar'];
@@ -32,7 +31,8 @@ window.Curriculum = (function () {
     var byCat = {};
     (window.VOCAB || []).forEach(function (w) { (byCat[w.cat] = byCat[w.cat] || []).push(w.es); });
     var vocabDays = [];
-    VOCAB_ORDER.forEach(function (c) {
+    var order = window.TAXONOMY ? window.TAXONOMY.vocabOrder(window.VOCAB || []) : Object.keys(byCat);
+    order.forEach(function (c) {
       if (!byCat[c]) return;
       var parts = chunk(byCat[c], 12);
       parts.forEach(function (words, i) { vocabDays.push({ type: 'vocab', cat: c, words: words, part: parts.length > 1 ? i + 1 : 0 }); });

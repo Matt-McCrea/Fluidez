@@ -129,7 +129,7 @@ window.Drills = (function () {
   function buildFlashDeck(kind, tense) {
     var out = [];
     if (kind === 'vocab') (window.VOCAB || []).forEach(function (w) {
-      if (window.Profile && !window.Profile.catAllowed(w.cat) && !w.userWord) return;
+      if (window.Profile && !window.Profile.wordAllowed(w)) return;
       out.push({ front: w.es, back: w.en, kind: 'vocab' });
     });
     // Meeting a verb's MEANING here is fine even if it hasn't been taught

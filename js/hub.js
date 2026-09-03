@@ -10,7 +10,7 @@ window.Hub = (function () {
   function reviewPool() {
     var items = [];
     (window.VOCAB || []).forEach(function (w) {
-      if (window.Profile && !window.Profile.catAllowed(w.cat) && !w.userWord) return;
+      if (window.Profile && !window.Profile.wordAllowed(w)) return;
       items.push({ id: 'v:' + w.es + ':meaning' });
     });
     (window.IDIOMS || []).forEach(function (x) { items.push({ id: 'i:' + x.es }); });

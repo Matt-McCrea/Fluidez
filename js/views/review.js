@@ -21,7 +21,7 @@ window.StageReview = (function () {
   function pool() {
     var items = [];
     (window.VOCAB || []).forEach(function (w, idx) {
-      if (!P.catAllowed(w.cat) && !w.userWord) return;   // your own words are never gated out
+      if (!P.wordAllowed(w)) return;                     // your own words are never gated out
       items.push({ id: 'v:' + w.es + ':meaning', es: w.es, en: w.en, kind: 'vocab', cat: w.cat, rank: P.catRank(w.cat), idx: idx });
     });
     (window.IDIOMS || []).forEach(function (x) {

@@ -57,7 +57,7 @@ window.Profile = (function () {
       // graduated: new words come as ES→EN recognition (multiple choice), then
       // flip to EN→ES production (typed) once they've stuck (SRS box ≥ 2).
       reviewDirection: 'graduated', reviewMode: 'choice',
-      orderedVocab: true, vocabCats: BEGINNER_CATS,
+      orderedVocab: true, vocabCats: BEGINNER_CATS, maxCefr: 'A2',
       syllabusPace: 3, unlockAll: false,
       applyMode: 'wordbank', produceStyle: 'guided',
       bucketRatios: { due: 0.65, focus: 0.25, stretch: 0.10 },
@@ -144,7 +144,35 @@ window.Profile = (function () {
     all: function () { return Object.keys(PROFILES).map(function (k) { return PROFILES[k]; }); },
     set: function (name) { if (PROFILES[name]) { current = name; try { localStorage.setItem(KEY, name); } catch (e) {} } },
     catAllowed: function (cat) { var c = PROFILES[current].vocabCats; return !c || c.indexOf(cat) !== -1; },
-    catRank: function (cat) { var c = PROFILES[current].vocabCats; var i = c ? c.indexOf(cat) : -1; return i === -1 ? 999 : i; },
+    // Ordering falls back to the derived category order (data/taxonomy.js) so
+    // the PCIC themes sort sensibly instead of all landing on 999.
+    catRank: function (cat) {
+      var c = PROFILES[current].vocabCats;
+      var i = c ? c.indexOf(cat) : -1;
+      if (i !== -1) return i;
+      var order = window.TAXONOMY ? window.TAXONOMY.vocabOrder(window.VOCAB || []) : [];
+      var j = order.indexOf(cat);
+      return j === -1 ? 999 : (c ? c.length : 0) + j;
+    },
+    /* Gate a WORD rather than its category.
+     *
+     * `vocabCats` is a whitelist of the original 24 category names, so once the
+     * PCIC vocabulary arrived under theme ids it excluded all ~3,600 of them —
+     * a beginner would never have met a single word of the real syllabus. A
+     * word that carries a CEFR level is judged on that instead; legacy words
+     * with no level keep the old category behaviour. */
+    wordAllowed: function (w) {
+      if (!w) return false;
+      if (w.userWord) return true;
+      var p = PROFILES[current];
+      if (w.cefr && p.maxCefr) {
+        var BANDS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+        return BANDS.indexOf(w.cefr) <= BANDS.indexOf(p.maxCefr);
+      }
+      if (w.cefr) return true;
+      var c = p.vocabCats;
+      return !c || c.indexOf(w.cat) !== -1;
+    },
     reviewCap: function () { return capFor(current); },
     capFor: capFor,
     setCap: function (name, n) { if (!PROFILES[name]) return; var o = loadCaps(); o[name] = Math.max(1, Math.round(n)); saveCaps(o); },

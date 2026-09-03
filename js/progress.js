@@ -36,7 +36,8 @@ window.Progress = (function () {
   function vocabLessons() {
     var byCat = {};
     (window.VOCAB || []).forEach(function (w) { (byCat[w.cat] = byCat[w.cat] || []).push(w.es); });
-    var cats = VOCAB_ORDER.filter(function (c) { return byCat[c]; });
+    var cats = (window.TAXONOMY ? window.TAXONOMY.vocabOrder(window.VOCAB || []) : [])
+      .filter(function (c) { return byCat[c]; });
     Object.keys(byCat).forEach(function (c) { if (cats.indexOf(c) === -1) cats.push(c); });
     var out = [];
     cats.forEach(function (c) {

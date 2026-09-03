@@ -142,6 +142,11 @@ in `data/strand-lessons.js` like every other strand, NOT in `data/grammar.js`
 (which keeps only the original hand-written concept lessons). `js/lessons.js`
 merges them into the syllabus. Template: `gr-demostrativos-a2`.
 
+**`lexis` — do not author.** A vocabulary day is derived from `data/vocab.js`
+by `js/curriculum.js`: words, themes, levels, gender and collocations all come
+from the harvest. The only lexis work is filling English glosses from
+`spec/vocab-queue.json` (`known:false`) and `spec/collocation-queue.json`.
+
 **`genre`** — `moves` (≥2, the rhetorical structure in order), `model` (a real
 text of the genre, 120–250 words), `checklist` (≥2 pre-send checks). No
 `exponents`.
@@ -152,6 +157,15 @@ placement, the pre-lesson skip check, and the mastery gate — so they must test
 (`front`/`back`), `mcq` (`q`, `options`, `answer` index), `cloze` (`text` with
 `___`, `accept` array). Ids start `p:` and are globally unique. A probe a
 learner could pass without the lesson is a wasted probe.
+
+### Reachability — check this after any batch
+
+A lesson or word that no code path selects is not content. `js/curriculum.js`
+derives its category order from the vocabulary itself (`TAXONOMY.vocabOrder`),
+and `Profile.wordAllowed()` gates by CEFR level rather than by a category
+whitelist. Both were hardcoded lists that silently hid ~3,600 words. If you add
+a new theme, category or strand, confirm it appears in those two paths before
+declaring a batch done.
 
 ## Register — the one place to be careful
 
@@ -196,10 +210,28 @@ answerable by a strong B1 learner, it is wrong regardless of its vocabulary.
 ## Not yet done (do not assume these exist)
 
 - The session does not yet *choose* a strand lesson as a day's focus
-  (`js/selector.js`, `js/session.js`).
-- `js/profile.js` still uses the old beginner/standard/refresher profiles;
-  the LEVELS/SUPPORT split in `data/taxonomy.js` is not wired in.
+  (`js/selector.js`, `js/session.js`). Strand lessons are merged into
+  `window.GRAMMAR_LESSONS` and render correctly, but nothing schedules them.
+- `js/profile.js` still uses beginner/standard/refresher rather than the
+  LEVELS/SUPPORT split in `data/taxonomy.js`. Vocabulary gating within it IS
+  now CEFR-aware (`Profile.wordAllowed`), so a beginner meets A1-A2 words.
 - Per-level accent theming is declared in taxonomy but nothing sets
   `data-level` on the document yet.
 - Placement, skip checks and sequence-position progression are designed
-  (probes exist) but not built.
+  (probes exist on every lesson) but not built.
+- Enclitic parsing covers imperatives only; `decírselo` and other
+  infinitive/gerund attachments still return nothing, because infinitives are
+  not in the morphological index.
+
+## Coverage as of this brief
+
+| strand | units in the syllabus | written |
+|---|---|---|
+| function | 379 | 44 (A1-A2 essentially complete) |
+| discourse | 79 | 18 |
+| genre | 100 | 9 |
+| grammar | 255 | 1 (template only) |
+| notion | 258 | 1 (template only) |
+
+Grammar and notion are the large gaps at every level, and were blocked until
+now — do not assume A1/A2 is finished because its function lessons are.

@@ -194,7 +194,7 @@ window.Games = (function () {
   // 1. EMPAREJAR — matching pairs (ES↔EN vocab, or verb form ↔ meaning)
   // ===========================================================================
   function vocabPairSource() {
-    return (window.VOCAB || []).filter(function (w) { return window.Profile ? (window.Profile.catAllowed(w.cat) || w.userWord) : true; })
+    return (window.VOCAB || []).filter(function (w) { return window.Profile ? window.Profile.wordAllowed(w) : true; })
       .map(function (w) { return { id: 'v:' + w.es + ':meaning', a: w.es, b: w.en, kind: 'vocab' }; });
   }
   // Naively sampling (verb, tense, person) triples at random tends to land a

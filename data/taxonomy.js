@@ -98,8 +98,13 @@ window.STRANDS = [
     blocks: ['sections', 'exponents', 'contrasts', 'pitfalls', 'examples'] },
   { id: 'genre',     label: 'Géneros',    inventory: 'generos_discursivos',
     blocks: ['sections', 'moves', 'model', 'checklist', 'examples'] },
+  // NOT an authored lesson type. A lexis day is DERIVED from data/vocab.js by
+  // js/curriculum.js — the words, their themes, levels, gender and
+  // collocations all come from the harvest, so there is nothing to write.
+  // Listed here so the strand vocabulary is complete; the generation brief
+  // says explicitly not to author these.
   { id: 'lexis',     label: 'Léxico',     inventory: 'nociones_especificas',
-    blocks: ['words', 'collocations', 'examples'] }
+    derived: true, blocks: ['words', 'collocations', 'examples'] }
 ];
 
 /* ---- REGISTER — the axis a function lesson actually teaches -------------
@@ -160,6 +165,40 @@ window.TAXONOMY = (function () {
       var n = parseInt(section, 10);
       return window.THEMES.filter(function (t) { return t.n === n; })[0] || null;
     },
-    codes: function () { return window.LEVELS.map(function (l) { return l.code; }); }
+    codes: function () { return window.LEVELS.map(function (l) { return l.code; }); },
+
+    /* The order vocabulary categories are taught in.
+     *
+     * This used to be a hardcoded list of 24 category names duplicated in
+     * js/curriculum.js and js/progress.js. When the PCIC vocabulary landed —
+     * 3,599 entries filed under the 20 theme ids — the curriculum iterated the
+     * old list and produced no vocab days for any of them, so almost the whole
+     * lexicon was unreachable. Deriving the order from the data means a new
+     * theme or category is picked up automatically.
+     *
+     * Order: CEFR band first (untagged legacy words count as A1, since they are
+     * the beginner core), then the deliberate beginner sequence for the old
+     * categories, then PCIC theme order. */
+    vocabOrder: function (vocab) {
+      var LEGACY = ['greetings', 'people', 'food', 'numbers', 'time', 'colors',
+        'places', 'home', 'body', 'nature', 'adjectives', 'travel', 'weather',
+        'clothing', 'animals', 'questions', 'connectors', 'common', 'school',
+        'health', 'shopping', 'sports', 'kitchen', 'work'];
+      var BANDS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+      var stats = {};
+      (vocab || []).forEach(function (w) {
+        var lvl = BANDS.indexOf(w.cefr || 'A1');
+        if (lvl < 0) lvl = 0;
+        var st = stats[w.cat] || (stats[w.cat] = { cat: w.cat, min: 99 });
+        if (lvl < st.min) st.min = lvl;
+      });
+      return Object.keys(stats).map(function (c) {
+        var legacy = LEGACY.indexOf(c);
+        var theme = themeById[c] ? themeById[c].n : 99;
+        return { cat: c, min: stats[c].min, legacy: legacy === -1 ? 99 : legacy, theme: theme };
+      }).sort(function (a, b) {
+        return a.min - b.min || a.legacy - b.legacy || a.theme - b.theme || a.cat.localeCompare(b.cat);
+      }).map(function (x) { return x.cat; });
+    }
   };
 })();
