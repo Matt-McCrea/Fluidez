@@ -8151,6 +8151,406 @@ window.STRAND_LESSONS = [
     { id: 'p:focal:cloze', kind: 'cloze', text: '___ el partido por lluvia. (se + suspender)', accept: ['Se ha suspendido', 'se ha suspendido'] },
     { id: 'p:focal:recall', kind: 'recall', front: 'What does the impersonal se + verb structure focus attention on?', back: 'the event itself — it removes the agent from view' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 genre, the "Muestras de géneros" and "Macrofunción expositiva"
+ * units per tools/todo.js. Three units (306, 386, 388) are the PCIC's own
+ * "Nivel B2" worked samples, filed under B1 by the harvester because that is
+ * where the surrounding inventory numbering placed them — the content itself
+ * is clearly more advanced than its B1 siblings, so those three are tagged
+ * cefr: 'B2' here to put them in front of the right learners (rule 5: wrong
+ * level tags hide content, they don't just misfile it).
+ * ========================================================================== */
+{
+  id: 'gn-reconocer-generos-orales-b1', strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  pcic: ['generos_discursivos:B1:5', 'generos_discursivos:B1:6', 'generos_discursivos:B1:18', 'generos_discursivos:B1:19'],
+  title: 'Reconocer géneros orales: boletín, deportes, contestador',
+  summary: 'A radio broadcast never announces "this is now the weather" — it just switches into a fixed opening formula ("y ahora, la previsión del tiempo") and the vocabulary that follows, and recognizing that shift is what lets you tune in mid-sentence and know exactly what kind of information is coming.',
+  sections: [
+    { h: 'Every genre announces itself', html: 'Before the content even starts, a fixed opening formula tells you what is coming: <i>la previsión del tiempo</i>, <i>pasamos a la información deportiva</i>, <i>en este momento no puedo atenderle</i>. Recognizing the formula lets you anticipate the vocabulary before you have processed the details.' },
+    { h: 'Each genre has its own vocabulary set', html: 'A weather bulletin runs on temperature, sky and precipitation words (<i>despejado, chubascos, temperaturas de..., viento moderado</i>); a sports commentary runs on score and match-event words (<i>venció, el minuto noventa, un partido muy disputado</i>); an answering-machine message runs on a fixed three-part shape: apology for absence, invitation to leave a message, closing.' }
+  ],
+  moves: [
+    { h: 'Reconocer la fórmula de apertura', html: 'Identifica la frase fija que anuncia el género antes de que empiece el contenido: <i>y ahora, la previsión del tiempo</i>, <i>pasamos a deportes</i>.' },
+    { h: 'Anticipar el tipo de información', html: 'Una vez reconocido el género, sabes qué escuchar: números y condiciones (tiempo), resultados y jugadas (deportes), o una disculpa y una invitación a dejar un mensaje (contestador).' }
+  ],
+  model: {
+    title: 'Un boletín de radio',
+    text: 'Y ahora, la previsión del tiempo. Para mañana se esperan cielos despejados en la mitad norte, con temperaturas que rondarán los veinte grados. En el sur, en cambio, no se descartan chubascos aislados por la tarde, con vientos moderados del oeste.\n\nY pasamos a la información deportiva. El Atlético venció ayer por dos a uno en un partido muy disputado, con gol decisivo en el minuto noventa. Mañana el Real Madrid recibe al Barcelona en un partido que promete emociones fuertes.'
+  },
+  checklist: [
+    '¿Identificaste el género por su fórmula de apertura, antes de procesar todo el contenido?',
+    '¿Coincide el vocabulario con lo que esperarías de ese género (tiempo, deportes, mensaje de contestador)?'
+  ],
+  examples: [
+    { es: 'Mañana, sol y temperaturas suaves en toda la región.', en: 'Tomorrow, sun and mild temperatures across the region.' },
+    { es: 'El equipo local ganó por tres a cero.', en: 'The home team won three to nil.' },
+    { es: 'En estos momentos no puedo atenderle. Deje su mensaje después de la señal.', en: 'I cannot take your call right now. Leave your message after the tone.' }
+  ],
+  probes: [
+    { id: 'p:genorales:formula', kind: 'mcq', q: '"Y ahora, la previsión del tiempo" anuncia:',
+      options: ['un mensaje de contestador', 'un boletín meteorológico', 'una entrevista'], answer: 1 },
+    { id: 'p:genorales:vocab', kind: 'mcq', q: '"Venció por dos a uno en el minuto noventa" pertenece a:',
+      options: ['un comentario deportivo', 'un boletín meteorológico', 'una carta personal'], answer: 0 },
+    { id: 'p:genorales:cloze', kind: 'cloze', text: 'En este momento no puedo ___. Deje su mensaje. (atender + le)', accept: ['atenderle', 'atenderla'] },
+    { id: 'p:genorales:recall', kind: 'recall', front: 'What tells you a genre\'s type before you process its full content?', back: 'its fixed opening formula' }
+  ]
+},
+
+{
+  id: 'gn-llamada-transaccional-b1', strand: 'genre', cefr: 'B1', level: 3, theme: 'viajes',
+  pcic: ['generos_discursivos:B1:188', 'generos_discursivos:B1:192', 'generos_discursivos:B1:194', 'generos_discursivos:B1:199',
+         'generos_discursivos:B1:201', 'generos_discursivos:B1:203', 'generos_discursivos:B1:208', 'generos_discursivos:B1:210',
+         'generos_discursivos:B1:212', 'generos_discursivos:B1:214', 'generos_discursivos:B1:219', 'generos_discursivos:B1:222',
+         'generos_discursivos:B1:224', 'generos_discursivos:B1:227', 'generos_discursivos:B1:228', 'generos_discursivos:B1:232',
+         'generos_discursivos:B1:234'],
+  title: 'La llamada telefónica transaccional (B1)',
+  summary: 'A booking call does not end the instant you have the answer you called for — it closes through its own small ritual (mutual satisfaction, a turn-passing word, a topic-boundary phrase, one last chance to reopen something), and skipping straight to "adiós" after getting the information reads as abrupt even in a task-only call.',
+  sections: [
+    { h: 'A longer shape than a quick question', html: 'Unlike a short informational call, a transactional B1 call compares OPTIONS: it asks and gives information, weighs advantages and disadvantages, asks for and gives advice, then asks for and states a preference — a small negotiation, not just a lookup.' },
+    { h: 'The closing ritual', html: 'Closing runs through several small moves: mutual satisfaction (<i>Perfecto, muchas gracias</i>), a turn-passing word (<i>pues</i>, <i>de acuerdo</i>), a topic-boundary phrase signaling nothing more is needed (<i>nada más, lo dicho</i>), a last chance to reopen something forgotten, and only then the actual goodbye.' }
+  ],
+  moves: [
+    { h: 'Saludo e identificación', html: '<i>Hola, buenos días, llamaba para...</i> — identify yourself and the reason for the call up front.' },
+    { h: 'Buscar y dar información', html: '<i>¿Tienen habitaciones libres para el fin de semana? —Sí, nos quedan dos tipos.</i>' },
+    { h: 'Identificar opciones, pedir y dar consejo', html: '<i>¿Cuál me recomienda? —Yo diría que la doble con vistas al mar, por el mismo precio casi.</i>' },
+    { h: 'Preguntar y expresar preferencias', html: '<i>¿Cuál prefiere? —Prefiero la que da al mar.</i>' },
+    { h: 'Cierre: satisfacción, paso de turno, límite de tema, despedida', html: '<i>Perfecto, muchas gracias. —De nada. —Pues nada más, lo dicho. —Vale, de acuerdo. —Bien, hasta luego.</i>' }
+  ],
+  model: {
+    title: 'Reservando una habitación',
+    text: '—Hotel Miramar, buenos días.\n—Hola, buenos días. Llamaba para preguntar si tienen habitaciones libres para el fin de semana.\n—Sí, nos quedan dos tipos: una doble estándar y una doble con vistas al mar.\n—¿Y cuál me recomienda?\n—Yo diría que la de vistas al mar, porque el precio es casi el mismo y la diferencia merece la pena.\n—De acuerdo, entonces prefiero esa. ¿Qué precio tiene?\n—Ochenta euros la noche, desayuno incluido.\n—Perfecto, muchas gracias, me la quedo.\n—Estupendo. ¿Necesita algo más?\n—No, nada más, lo dicho. Muchas gracias.\n—De nada. Que tenga un buen día.\n—Igualmente, adiós.'
+  },
+  checklist: [
+    '¿Te identificaste y dijiste el motivo de la llamada al principio?',
+    '¿Comparaste al menos dos opciones, con sus ventajas o inconvenientes?',
+    '¿Pediste o diste una preferencia clara, no solo información?',
+    '¿Cerraste la llamada con los movimientos esperados (satisfacción, límite de tema, despedida), no solo colgando?'
+  ],
+  examples: [
+    { es: 'Llamaba para preguntar si tienen mesa libre para esta noche.', en: "I was calling to ask if you have a table free tonight." },
+    { es: '¿Cuál me recomienda, la básica o la completa?', en: 'Which do you recommend, the basic or the full one?' },
+    { es: 'Pues nada más, lo dicho. Muchas gracias.', en: "Well, that's it then. Thanks very much." }
+  ],
+  probes: [
+    { id: 'p:llamadatrans:cierre', kind: 'mcq', q: '¿Qué falta si cuelgas justo después de obtener el precio?',
+      options: ['nada, ya tienes la información', 'el ritual de cierre (satisfacción, límite de tema, despedida)', 'volver a preguntar el precio'], answer: 1 },
+    { id: 'p:llamadatrans:consejo', kind: 'mcq', q: '¿Cuál pide consejo?',
+      options: ['¿Cuál me recomienda?', '¿Cuánto cuesta?', 'Adiós.'], answer: 0 },
+    { id: 'p:llamadatrans:cloze', kind: 'cloze', text: '—¿Necesita algo más? —No, ___, lo dicho.', accept: ['nada más', 'nada'] },
+    { id: 'p:llamadatrans:recall', kind: 'recall', front: 'Name two of the small closing moves before the actual goodbye', back: 'mutual satisfaction, a turn-passing word, a topic-boundary phrase (any two)' }
+  ]
+},
+
+{
+  id: 'gn-presentacion-publica-b1', strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  pcic: ['generos_discursivos:B1:239', 'generos_discursivos:B1:243', 'generos_discursivos:B1:250', 'generos_discursivos:B1:253',
+         'generos_discursivos:B1:265', 'generos_discursivos:B1:267', 'generos_discursivos:B1:269', 'generos_discursivos:B1:271',
+         'generos_discursivos:B1:273', 'generos_discursivos:B1:277', 'generos_discursivos:B1:279', 'generos_discursivos:B1:285',
+         'generos_discursivos:B1:288', 'generos_discursivos:B1:290', 'generos_discursivos:B1:297', 'generos_discursivos:B1:301',
+         'generos_discursivos:B1:304', 'generos_discursivos:B1:340', 'generos_discursivos:B1:342', 'generos_discursivos:B1:345',
+         'generos_discursivos:B1:349', 'generos_discursivos:B1:353'],
+  title: 'Una presentación pública (B1)',
+  summary: 'A talk that opens with "hoy voy a hablar de..." is not wrong, exactly, but a talk that opens with a surprising fact, a quick anecdote, or a question earns attention before the topic is even named — the shape of a presentation is not just what you say, but the order you decide to say it in.',
+  sections: [
+    { h: 'Before the content: control the room', html: 'A presentation opens with saludos, thanks to the audience, and quick housekeeping — how long it will take, and when questions are welcome (<i>al final de cada punto</i>, <i>al final de la charla</i>, <i>en cualquier momento</i>).' },
+    { h: 'Earning attention before naming the topic', html: 'Several techniques delay the bare topic statement to hook the audience first: <i>relatar un hecho de interés</i>, <i>aportar un ejemplo</i>, <i>hacer una pregunta</i>, <i>comenzar con una cita</i>, <i>comenzar con una afirmación sorprendente</i>, or tie the topic to current events.' },
+    { h: 'Contextualize, then map the talk', html: 'Only after the hook does the topic get named, followed immediately by a roadmap of how the talk is organized: <i>Primero hablaré de..., después de..., finalmente...</i>' },
+    { h: 'Closing: summary, then a memorable exit', html: 'The body ends with a summary using fixed markers (<i>en conclusión, en resumen</i>), then a genuine closing move — a call to action, a sincere compliment to the audience, humor, or a fitting quote — before the actual goodbye (<i>pues, nada más; si no tienen más preguntas...</i>).' }
+  ],
+  moves: [
+    { h: 'Saludos y agradecimiento', html: '<i>Buenos días a todos, muchas gracias por estar aquí.</i>' },
+    { h: 'Gancho inicial', html: 'Una pregunta, un dato sorprendente o una breve anécdota, antes de nombrar el tema: <i>¿Sabíais que...?</i>' },
+    { h: 'Contextualización y sumario', html: '<i>Como sabéis, el tema de esta charla es... Primero hablaré de X, después de Y, finalmente de Z.</i>' },
+    { h: 'Desarrollo', html: 'Exposición, narración o descripción del contenido central, siguiendo el sumario anunciado.' },
+    { h: 'Cierre y despedida', html: 'Resumen con marcadores (<i>en conclusión, en resumen</i>), turno de preguntas si procede, y una salida memorable antes de <i>pues, nada más</i>.' }
+  ],
+  model: {
+    title: 'Charla: el reciclaje en nuestro barrio',
+    text: 'Buenos días a todos, y muchas gracias por estar aquí un sábado por la mañana. ¿Sabíais que solo el treinta por ciento de lo que tiramos en este barrio se recicla de verdad? A mí ese dato me sorprendió mucho, y por eso quiero hablaros hoy del reciclaje. Primero, hablaré de por qué reciclamos tan poco; después, de lo que hacen otros barrios; y finalmente, de tres ideas sencillas que podemos cambiar esta misma semana.\n\nEmpecemos por el porqué. La mayoría de la gente no separa la basura simplemente porque no sabe cómo hacerlo bien...\n\n[desarrollo]\n\nEn conclusión, reciclar bien no es difícil, solo requiere un poco de información y de costumbre. Os animo a probar estas tres ideas esta misma semana. Si no tenéis ninguna duda más, pues nada más, muchas gracias por vuestra atención.'
+  },
+  checklist: [
+    '¿Empezaste con un gancho (pregunta, dato, anécdota) antes de nombrar el tema?',
+    '¿Anunciaste el sumario de la charla antes de desarrollarla?',
+    '¿Resumiste con marcadores de conclusión antes de despedirte?',
+    '¿Terminaste con algo memorable, no solo "eso es todo"?'
+  ],
+  examples: [
+    { es: '¿Sabíais que el treinta por ciento de la basura se recicla de verdad?', en: 'Did you know only thirty percent of waste actually gets recycled?' },
+    { es: 'Primero hablaré de X, después de Y, y finalmente de Z.', en: "I'll first talk about X, then Y, and finally Z." },
+    { es: 'En conclusión, reciclar bien no es difícil.', en: "In conclusion, recycling well isn't hard." }
+  ],
+  probes: [
+    { id: 'p:presb1:gancho', kind: 'mcq', q: '¿Cuál es un buen gancho inicial?',
+      options: ['Hoy voy a hablar del reciclaje.', '¿Sabíais que solo se recicla el treinta por ciento?', 'El tema es el reciclaje.'], answer: 1 },
+    { id: 'p:presb1:sumario', kind: 'mcq', q: '¿Qué movimiento anuncia la estructura de la charla?',
+      options: ['el sumario del desarrollo', 'la despedida', 'el saludo'], answer: 0 },
+    { id: 'p:presb1:cloze', kind: 'cloze', text: '___, reciclar bien no es difícil. (marcador de conclusión)', accept: ['En conclusión', 'en conclusión'] },
+    { id: 'p:presb1:recall', kind: 'recall', front: 'Name three hook techniques used before naming the topic', back: 'an anecdote, an example, a question, a quote, or a surprising statement (any three)' }
+  ]
+},
+
+{
+  id: 'gn-presentacion-publica-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  pcic: ['generos_discursivos:B1:357', 'generos_discursivos:B1:368', 'generos_discursivos:B1:371', 'generos_discursivos:B1:383',
+         'generos_discursivos:B1:390', 'generos_discursivos:B1:406', 'generos_discursivos:B1:409', 'generos_discursivos:B1:418',
+         'generos_discursivos:B1:421', 'generos_discursivos:B1:425', 'generos_discursivos:B1:429', 'generos_discursivos:B1:458',
+         'generos_discursivos:B1:471'],
+  title: 'Una presentación pública (B2)',
+  summary: 'A B2 talk adds a whole move a B1 one does not need — argumentación — and checks in with the audience mid-flow with a rhetorical question (¿Podríamos añadir algo más?), treating the presentation less like a monologue and more like a conversation the audience is simply not interrupting.',
+  sections: [
+    { h: 'A richer opening toolkit', html: 'Beyond the B1 hooks, a B2 presentation can use a physical OBJECT as an attention-getter (<i>utilizar un objeto</i>), and its contextualization is more elaborate: <i>Muchos de ustedes seguramente conocerán... Sin embargo, quisiera presentar algunos datos que, tal vez, sean una novedad.</i>' },
+    { h: 'Argumentación, not just exposición-narración', html: 'Where a B1 talk mainly exposes or narrates, a B2 one can build an actual ARGUMENT — a claim supported by reasoning — and check its own reasoning aloud with a rhetorical question: <i>¿Podríamos añadir algo más?</i>' },
+    { h: 'Signposting the visual support', html: 'A B2 talk explicitly points the audience to slides or documents: <i>Como pueden ver en la pantalla / transparencia / sus documentos...</i> — something a B1 talk rarely does out loud.' },
+    { h: 'A more varied closing register', html: 'Where B1 closes with <i>en conclusión, en resumen</i>, B2 has a wider set: <i>resumiendo, en definitiva, en suma</i>.' }
+  ],
+  moves: [
+    { h: 'Saludos, agradecimiento, control de la comunicación', html: 'Igual que en B1, pero con más detalle sobre el apoyo documental disponible.' },
+    { h: 'Gancho ampliado', html: 'Un objeto, una cita, un dato de actualidad — con una contextualización que reconoce lo que la audiencia ya sabe antes de añadir algo nuevo.' },
+    { h: 'Desarrollo: exposición-narración y argumentación', html: 'El cuerpo puede incluir un tramo puramente argumentativo, con una pregunta retórica de control: <i>¿Podríamos añadir algo más?</i>' },
+    { h: 'Cierre variado', html: 'Resumen con un marcador más formal (<i>resumiendo, en definitiva, en suma</i>), turno de preguntas, y una salida memorable.' }
+  ],
+  model: {
+    title: 'Charla: el teletrabajo, cinco años después',
+    text: 'Buenos días a todos. Antes de empezar, quiero enseñarles algo. (Muestra un cuaderno de notas.) Esto era mi oficina en 2020: una libreta y una mesa de cocina. Muchos de ustedes seguramente conocerán las cifras generales sobre el teletrabajo. Sin embargo, quisiera presentar algunos datos que, tal vez, sean una novedad, como pueden ver en la pantalla.\n\nMi argumento hoy es que el teletrabajo no ha cumplido lo que prometía. Primero, los datos muestran que la productividad apenas ha cambiado. Segundo, el aislamiento social ha aumentado de forma notable. Y tercero, la frontera entre el trabajo y la vida personal se ha vuelto más difícil de trazar, no más fácil. ¿Podríamos añadir algo más? Sin duda, pero estos tres puntos bastan para cuestionar el entusiasmo inicial.\n\nResumiendo, el teletrabajo trajo libertad, pero también un coste que rara vez se menciona. Si no tienen más preguntas, en definitiva, muchas gracias por su atención.'
+  },
+  checklist: [
+    '¿Usaste un recurso de apertura más elaborado (objeto, dato de actualidad) que reconoce lo que la audiencia ya sabe?',
+    '¿Incluiste un tramo de argumentación real, no solo exposición o narración?',
+    '¿Señalaste explícitamente el apoyo visual ("como pueden ver en...")?',
+    '¿Cerraste con un marcador más formal (resumiendo, en definitiva, en suma)?'
+  ],
+  examples: [
+    { es: 'Muchos de ustedes seguramente conocerán estas cifras.', en: 'Many of you will probably already know these figures.' },
+    { es: '¿Podríamos añadir algo más?', en: 'Could we add anything else?' },
+    { es: 'Resumiendo, el teletrabajo trajo libertad, pero también un coste.', en: 'To sum up, remote work brought freedom, but also a cost.' }
+  ],
+  probes: [
+    { id: 'p:presb2:argumentacion', kind: 'mcq', q: '¿Qué movimiento distingue a una presentación B2 de una B1?',
+      options: ['el saludo inicial', 'la argumentación', 'la despedida'], answer: 1 },
+    { id: 'p:presb2:pregunta', kind: 'mcq', q: '"¿Podríamos añadir algo más?" es:',
+      options: ['una pregunta retórica de control', 'una despedida', 'un saludo'], answer: 0 },
+    { id: 'p:presb2:cloze', kind: 'cloze', text: '___, el teletrabajo trajo libertad, pero también un coste. (resumiendo)', accept: ['Resumiendo', 'resumiendo'] },
+    { id: 'p:presb2:recall', kind: 'recall', front: 'Name two B2 closing markers beyond en conclusión/en resumen', back: 'resumiendo, en definitiva, en suma (any two)' }
+  ]
+},
+
+{
+  id: 'gn-carta-personal-b1', strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  pcic: ['generos_discursivos:B1:506', 'generos_discursivos:B1:529', 'generos_discursivos:B1:532', 'generos_discursivos:B1:536',
+         'generos_discursivos:B1:539', 'generos_discursivos:B1:543', 'generos_discursivos:B1:546', 'generos_discursivos:B1:550'],
+  title: 'La carta personal (B1)',
+  summary: 'A personal letter does not just start talking — it opens the conversation (who you are, what has been happening), THEN states why you are actually writing, and only then gets to the content: skip that ordering and a letter reads like it started mid-thought.',
+  sections: [
+    { h: 'Opening: greeting and self-presentation', html: 'A short greeting formula (<i>Hola, / ¿Qué tal? / Querido + nombre</i>, followed by a comma or two question marks) opens the letter, followed by a general check-in that re-establishes the relationship before anything else.' },
+    { h: 'Stating why you are writing', html: 'After the check-in, name the specific reason for this letter or reference an earlier one: <i>Te escribo porque...</i>, <i>Gracias por tu última carta...</i> — then briefly anticipate what the letter will cover.' },
+    { h: 'Closing: conclusion, farewell, signature', html: 'A short wrap-up, a fixed farewell (<i>Un abrazo, Besos, Hasta pronto</i>), then just your name — no formal signature block.' }
+  ],
+  moves: [
+    { h: 'Saludo y presentación', html: '<i>Hola Marta, ¿qué tal estás? Espero que muy bien.</i>' },
+    { h: 'Motivo de la carta', html: '<i>Te escribo porque tengo una noticia que contarte...</i>' },
+    { h: 'Anticipación del contenido', html: 'Una frase breve que introduce de qué va a tratar el resto de la carta.' },
+    { h: 'Conclusión, despedida y firma', html: '<i>Bueno, no te cuento más por ahora. Un abrazo muy fuerte, Ana</i>' }
+  ],
+  model: {
+    title: 'Carta a una amiga',
+    text: 'Madrid, 14 de marzo\n\nQuerida Marta,\n\n¿Qué tal estás? Espero que muy bien, y que el nuevo trabajo vaya como esperabas.\n\nTe escribo porque tengo una noticia que contarte: ¡por fin nos hemos mudado! Encontramos un piso pequeño pero muy luminoso cerca del centro, y llevamos ya dos semanas instalándonos. Te cuento todos los detalles en las próximas líneas...\n\n[cuerpo de la carta]\n\nBueno, no te cuento más por ahora, que esto se está haciendo muy largo. Espero verte pronto, quizás en verano si vienes por aquí.\n\nUn abrazo muy fuerte,\nAna'
+  },
+  checklist: [
+    '¿Abriste con un saludo y un breve check-in antes de entrar en el motivo?',
+    '¿Dijiste claramente por qué escribes esta carta?',
+    '¿Cerraste con una despedida fija y tu nombre, sin firma formal?'
+  ],
+  examples: [
+    { es: '¿Qué tal estás? Espero que muy bien.', en: 'How are you? I hope you\'re doing well.' },
+    { es: 'Te escribo porque tengo una noticia que contarte.', en: 'I\'m writing because I have some news to tell you.' },
+    { es: 'Un abrazo muy fuerte, Ana', en: 'Big hug, Ana' }
+  ],
+  probes: [
+    { id: 'p:cartapersonal:orden', kind: 'mcq', q: '¿Qué va PRIMERO en una carta personal?',
+      options: ['el motivo de la carta', 'el saludo y el check-in', 'la despedida'], answer: 1 },
+    { id: 'p:cartapersonal:cierre', kind: 'mcq', q: '¿Cuál es un cierre típico de carta personal?',
+      options: ['Atentamente,', 'Un abrazo,', 'Reciba un cordial saludo,'], answer: 1 },
+    { id: 'p:cartapersonal:cloze', kind: 'cloze', text: '___ Marta, ¿qué tal estás? (saludo informal + coma)', accept: ['Querida', 'querida'] },
+    { id: 'p:cartapersonal:recall', kind: 'recall', front: 'What comes right after the greeting, before the reason for writing?', back: 'a general check-in that re-establishes the relationship' }
+  ]
+},
+
+{
+  id: 'gn-carta-solicitud-trabajo-b2', strand: 'genre', cefr: 'B2', level: 6, theme: 'trabajo',
+  pcic: ['generos_discursivos:B1:551', 'generos_discursivos:B1:559', 'generos_discursivos:B1:570', 'generos_discursivos:B1:581',
+         'generos_discursivos:B1:586', 'generos_discursivos:B1:590', 'generos_discursivos:B1:593', 'generos_discursivos:B1:598',
+         'generos_discursivos:B1:602', 'generos_discursivos:B1:606', 'generos_discursivos:B1:609', 'generos_discursivos:B1:615',
+         'generos_discursivos:B1:618', 'generos_discursivos:B1:623', 'generos_discursivos:B1:631', 'generos_discursivos:B1:636'],
+  title: 'La carta de solicitud de trabajo',
+  summary: 'Ofrecerse is its own move, separate from referencing the ad and separate from listing your qualifications — a job application letter does not just describe you, it explicitly puts you forward as the answer, which is the one sentence a purely descriptive cover letter often forgets to write.',
+  sections: [
+    { h: 'Header: full contact block, both sides', html: 'Unlike a personal letter, this one opens with a formal block: your name and contact details (phone, fax, email), then the company\'s name/department, place and date, and often an <i>Asunto</i> (subject) and <i>Referencia</i> (job reference number) line.' },
+    { h: 'Formal salutation, with a colon', html: '<i>Estimado Sr. García:</i> or, with no named contact, <i>Muy Sr. mío:</i> / <i>Señores:</i> — always a colon, never a comma.' },
+    { h: 'The four-move body', html: 'Referirse al anuncio (where you saw the position advertised) → ofrecerse (explicitly put yourself forward — this move is easy to skip and shouldn\'t be) → indicar formación y experiencia → solicitar una entrevista.' },
+    { h: 'Closing: conclusion, farewell, signature, attachment note', html: 'A brief conclusion, a formal farewell (<i>Atentamente,</i> / <i>Reciba un cordial saludo,</i>), your signature, and often an <i>Anejo:</i> note listing what you have attached (e.g., your CV).' }
+  ],
+  moves: [
+    { h: 'Encabezamiento y saludo formal', html: 'Tus datos, los de la empresa, fecha, asunto/referencia, y <i>Estimado Sr./Sra. + apellido:</i>' },
+    { h: 'Referirse al anuncio', html: '<i>En respuesta a su anuncio publicado el 3 de marzo en...</i>' },
+    { h: 'Ofrecerse', html: '<i>Me gustaría presentar mi candidatura para el puesto de...</i> — the explicit move that puts you forward.' },
+    { h: 'Indicar formación y experiencia', html: 'Un resumen breve, no exhaustivo, de lo más relevante para el puesto.' },
+    { h: 'Solicitar una entrevista', html: '<i>Quedo a su disposición para una entrevista en el momento que consideren oportuno.</i>' },
+    { h: 'Cierre, firma y anejo', html: '<i>Atentamente, [firma] Anejo: currículum vitae</i>' }
+  ],
+  model: {
+    title: 'Solicitud de un puesto de traductora',
+    text: 'Laura Gómez Ruiz\nTel.: 612 345 678 · correo: laura.gomez@email.com\n\nEditorial Marte, S. L.\nDepartamento de Recursos Humanos\n\nBarcelona, 10 de mayo\n\nAsunto: solicitud de puesto de traductora\nRef.: oferta n.º 2291\n\nEstimados señores:\n\nEn respuesta a su anuncio publicado el pasado 3 de mayo, me gustaría presentar mi candidatura para el puesto de traductora de inglés-español que ofrecen.\n\nSoy licenciada en Traducción e Interpretación y cuento con cuatro años de experiencia en traducción editorial, especialmente en literatura contemporánea. Actualmente colaboro con dos editoriales como traductora autónoma.\n\nQuedo a su disposición para una entrevista en el momento que consideren oportuno.\n\nAtentamente,\nLaura Gómez Ruiz\n\nAnejo: currículum vitae'
+  },
+  checklist: [
+    '¿Incluiste el encabezamiento completo (tus datos, los de la empresa, fecha, asunto)?',
+    '¿Te referiste al anuncio antes de ofrecerte?',
+    '¿Hay una frase explícita que te presenta como candidato/a, no solo una descripción de tu experiencia?',
+    '¿Solicitaste una entrevista y cerraste de forma formal, con firma y anejo?'
+  ],
+  examples: [
+    { es: 'En respuesta a su anuncio publicado el pasado 3 de mayo...', en: 'In response to your advertisement published on 3 May...' },
+    { es: 'Me gustaría presentar mi candidatura para el puesto de...', en: "I would like to put myself forward for the position of..." },
+    { es: 'Quedo a su disposición para una entrevista.', en: 'I remain available for an interview.' }
+  ],
+  probes: [
+    { id: 'p:cartatrabajo:ofrecerse', kind: 'mcq', q: '¿Cuál es el movimiento "ofrecerse"?',
+      options: ['Vi su anuncio en el periódico.', 'Me gustaría presentar mi candidatura para el puesto.', 'Atentamente,'], answer: 1 },
+    { id: 'p:cartatrabajo:puntuacion', kind: 'mcq', q: '¿Qué sigue a "Estimado Sr. García"?',
+      options: ['una coma', 'dos puntos', 'nada'], answer: 1 },
+    { id: 'p:cartatrabajo:cloze', kind: 'cloze', text: '___: currículum vitae. (lo que se adjunta)', accept: ['Anejo', 'anejo'] },
+    { id: 'p:cartatrabajo:recall', kind: 'recall', front: 'The four moves of the body, in order', back: 'referirse al anuncio · ofrecerse · indicar formación y experiencia · solicitar entrevista' }
+  ]
+},
+
+{
+  id: 'gn-composicion-escrita-b1', strand: 'genre', cefr: 'B1', level: 4, theme: null,
+  pcic: ['generos_discursivos:B1:638', 'generos_discursivos:B1:641', 'generos_discursivos:B1:648', 'generos_discursivos:B1:654',
+         'generos_discursivos:B1:656', 'generos_discursivos:B1:659', 'generos_discursivos:B1:668'],
+  title: 'La composición escrita (B1)',
+  summary: 'A B1 composition is built or told, not argued — narrate an anecdote or describe a route or a person, contextualize it in a couple of sentences, and close it off with a fixed marker; the whole shape is closer to the spoken anecdote already met than to an essay with a thesis.',
+  sections: [
+    { h: 'Title first', html: 'A short, specific title, not a full sentence: <i>Un fin de semana inolvidable</i>, not <i>Voy a contar lo que pasó un fin de semana</i>.' },
+    { h: 'Contextualize, then develop one of two ways', html: 'A couple of sentences set the scene, then the body does ONE of two things at B1: <b>narración</b> (tell an anecdote, using the imperfecto/indefinido contract already met) or <b>descripción</b> (describe a route step by step, or a person\'s appearance and character).' },
+    { h: 'Closing markers', html: 'A short close with a fixed marker: <i>en conclusión, en fin</i>.' }
+  ],
+  moves: [
+    { h: 'Título', html: 'Un título breve y concreto.' },
+    { h: 'Contextualización', html: 'Dos o tres frases que sitúan el tema.' },
+    { h: 'Desarrollo: narración o descripción', html: 'Una anécdota contada en orden, o una ruta/persona descrita con detalle.' },
+    { h: 'Cierre', html: '<i>En conclusión...</i> / <i>En fin...</i>, una frase final breve.' }
+  ],
+  model: {
+    title: 'Un fin de semana inolvidable',
+    text: 'El pasado fin de semana fui de excursión a la sierra con unos amigos, algo que llevábamos planeando desde hacía meses.\n\nSalimos muy temprano el sábado. Hacía un poco de frío, pero el cielo estaba despejado. Caminamos durante casi cuatro horas por un sendero precioso, entre pinos, hasta llegar a un mirador con unas vistas espectaculares. Allí comimos y descansamos un rato. De repente, empezó a llover, así que tuvimos que bajar más rápido de lo previsto y llegamos al coche completamente empapados.\n\nEn fin, no salió como habíamos planeado, pero fue uno de los fines de semana que más he disfrutado en mucho tiempo.'
+  },
+  checklist: [
+    '¿Tiene la composición un título breve y concreto?',
+    '¿Contextualizaste el tema en dos o tres frases antes de desarrollarlo?',
+    '¿Usaste correctamente el imperfecto (fondo) y el indefinido (hechos) si narraste una anécdota?',
+    '¿Cerraste con un marcador de conclusión (en conclusión, en fin)?'
+  ],
+  examples: [
+    { es: 'El pasado fin de semana fui de excursión a la sierra.', en: 'Last weekend I went hiking in the mountains.' },
+    { es: 'Caminamos durante casi cuatro horas por un sendero precioso.', en: 'We walked for almost four hours along a beautiful trail.' },
+    { es: 'En fin, no salió como habíamos planeado.', en: "Well, it didn't turn out as planned." }
+  ],
+  probes: [
+    { id: 'p:compb1:desarrollo', kind: 'mcq', q: '¿Cuáles son las dos opciones de desarrollo en una composición B1?',
+      options: ['narración o descripción', 'tesis y argumentos', 'diálogo y monólogo'], answer: 0 },
+    { id: 'p:compb1:cierre', kind: 'mcq', q: '¿Cuál es un marcador de conclusión B1?',
+      options: ['en fin', 'por ejemplo', 'sin embargo'], answer: 0 },
+    { id: 'p:compb1:cloze', kind: 'cloze', text: '___, no salió como habíamos planeado. (marcador de cierre)', accept: ['En fin', 'en fin'] },
+    { id: 'p:compb1:recall', kind: 'recall', front: 'Should a B1 composition title be a full sentence or a short phrase?', back: 'a short, specific phrase, not a full sentence' }
+  ]
+},
+
+{
+  id: 'gn-composicion-argumentativa-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  pcic: ['generos_discursivos:B1:672', 'generos_discursivos:B1:682', 'generos_discursivos:B1:685', 'generos_discursivos:B1:691',
+         'generos_discursivos:B1:693', 'generos_discursivos:B1:695', 'generos_discursivos:B1:697', 'generos_discursivos:B1:699',
+         'generos_discursivos:B1:701', 'generos_discursivos:B1:715'],
+  title: 'La composición argumentativa (B2)',
+  summary: 'A B2 composition adds two moves a B1 one never needs — contraargumento and refutación — because at this level defending a position means acknowledging the strongest objection to it BEFORE knocking it down, not just piling up your own reasons.',
+  sections: [
+    { h: 'A thesis, defended with structure', html: 'After title and contextualization, the composition anticipates its own shape (<i>Voy a defender que..., por tres razones</i>), states a clear <b>tesis</b>, then develops it through numbered arguments: <i>argumento 1.º, 2.º, 3.º</i>.' },
+    { h: 'Contraargumento and refutación: the B2 addition', html: 'Where a B1 text just narrates or describes, this one must acknowledge the strongest objection to its own thesis (<i>contraargumento</i>) and then answer it (<i>refutación</i>) — conceding a real point before showing why the thesis still holds.' },
+    { h: 'Closing register', html: '<i>Finalmente, en conclusión, para terminar</i>.' }
+  ],
+  moves: [
+    { h: 'Título y contextualización', html: 'Un título y un par de frases que sitúan el debate.' },
+    { h: 'Anticipación y tesis', html: '<i>Voy a defender que..., por tres razones fundamentales.</i>' },
+    { h: 'Argumentos 1.º, 2.º, 3.º', html: 'Cada uno con su propia razón y, si procede, un ejemplo.' },
+    { h: 'Contraargumento y refutación', html: 'La objeción más fuerte, reconocida honestamente, seguida de por qué no invalida la tesis.' },
+    { h: 'Cierre', html: '<i>Finalmente / en conclusión / para terminar</i>, una síntesis breve.' }
+  ],
+  model: {
+    title: '¿Deberían prohibirse los coches en el centro de las ciudades?',
+    text: 'Voy a defender que sí deberían prohibirse, por tres razones fundamentales.\n\nEn primer lugar, la calidad del aire mejora de forma medible allí donde se han aplicado restricciones similares. En segundo lugar, el espacio liberado permite ampliar aceras y zonas verdes, lo que beneficia directamente a peatones y ciclistas. En tercer lugar, el transporte público, si se refuerza a la vez, ofrece una alternativa real, no solo simbólica.\n\nSe podría objetar que esta medida perjudica al pequeño comercio del centro, al reducir el acceso de clientes en coche. Es una preocupación legítima, respaldada por algunos estudios a corto plazo. Sin embargo, la experiencia de varias ciudades europeas muestra que, pasado el primer año, el comercio se recupera e incluso mejora, porque un centro más habitable atrae a más gente a pie.\n\nPara terminar, los beneficios superan con claridad al coste inicial, siempre que la medida vaya acompañada de un transporte público sólido.'
+  },
+  checklist: [
+    '¿Planteaste una tesis clara y la anticipaste antes de desarrollarla?',
+    '¿Desarrollaste al menos dos o tres argumentos numerados?',
+    '¿Reconociste honestamente el contraargumento más fuerte antes de refutarlo?',
+    '¿Cerraste con un marcador B2 (finalmente, en conclusión, para terminar)?'
+  ],
+  examples: [
+    { es: 'Voy a defender que sí, por tres razones fundamentales.', en: "I'm going to argue that yes, for three main reasons." },
+    { es: 'Se podría objetar que esta medida perjudica al pequeño comercio.', en: 'One could object that this measure harms small businesses.' },
+    { es: 'Para terminar, los beneficios superan con claridad al coste inicial.', en: 'To conclude, the benefits clearly outweigh the initial cost.' }
+  ],
+  probes: [
+    { id: 'p:compargb2:contraarg', kind: 'mcq', q: '¿Qué hace el contraargumento?',
+      options: ['repite la tesis', 'reconoce la objeción más fuerte', 'cierra el texto'], answer: 1 },
+    { id: 'p:compargb2:refutacion', kind: 'mcq', q: '¿Qué viene justo DESPUÉS del contraargumento?',
+      options: ['la tesis', 'la refutación', 'el título'], answer: 1 },
+    { id: 'p:compargb2:cloze', kind: 'cloze', text: '___, los beneficios superan al coste inicial. (marcador de cierre B2)', accept: ['Para terminar', 'para terminar'] },
+    { id: 'p:compargb2:recall', kind: 'recall', front: 'What two moves does a B2 argumentative composition have that a B1 narrative one does not?', back: 'contraargumento and refutación' }
+  ]
+},
+
+{
+  id: 'gn-exponer-tema-b1', strand: 'genre', cefr: 'B1', level: 4, theme: 'viajes',
+  pcic: ['generos_discursivos:B1:925', 'generos_discursivos:B1:926', 'generos_discursivos:B1:934', 'generos_discursivos:B1:936',
+         'generos_discursivos:B1:937', 'generos_discursivos:B1:938', 'generos_discursivos:B1:939', 'generos_discursivos:B1:941',
+         'generos_discursivos:B1:942', 'generos_discursivos:B1:943', 'generos_discursivos:B1:945', 'generos_discursivos:B1:946',
+         'generos_discursivos:B1:948', 'generos_discursivos:B1:960', 'generos_discursivos:B1:961', 'generos_discursivos:B1:962'],
+  title: 'Exponer un tema: presente, ejemplos y esquemas',
+  summary: 'Explaining Copenhagen runs almost entirely in the present tense — not because nothing happened in the past, but because exposition describes what is generally, currently true, the same durative present already met, now doing the work of an entire genre.',
+  sections: [
+    { h: 'The tense: present throughout', html: 'Exposition describes standing facts, so it runs in the present indicative: <i>Copenhague es la capital..., la ciudad tiene un millón de habitantes...</i> — not because nothing is being narrated, but because these facts hold generally, now.' },
+    { h: 'Opening and developing a subtopic', html: 'A new point can open with a <b>definición</b> (<i>Una sirena es una mezcla de mujer y pez</i>), a general statement, a rhetorical question (<i>¿Qué más podemos decir de Copenhague?</i>), or straight into an example. Developing or closing that same point reaches for <b>clasificación</b> (<i>Hay varias clases: primero..., segundo...</i>), <b>reformulación</b> (<i>es decir</i>), further examples, a <b>resumen</b> (<i>para resumir</i>), or an <b>analogía</b> (<i>se parece a, es como</i>).' },
+    { h: 'Typographic structure', html: 'Written exposition leans on visual organization a spoken talk cannot: bullet points and numbered lists, and italics, bold, capitals, underlining, parentheses or dashes to mark emphasis or asides.' }
+  ],
+  moves: [
+    { h: 'Presentación o definición general del tema', html: '<i>Copenhague, como sabéis, es la capital de Dinamarca...</i>' },
+    { h: 'Desarrollo', html: 'Subtemas ordenados, cada uno abierto con una definición, un dato o una pregunta retórica, y desarrollado con clasificación, ejemplos o una analogía.' },
+    { h: 'Conclusión', html: 'Una síntesis breve que recoge los subtemas tratados: <i>En conclusión, Copenhague es una ciudad muy interesante...</i>' }
+  ],
+  model: {
+    title: 'Copenhague',
+    text: 'Copenhague, como sabéis, es la capital de Dinamarca y es mi ciudad. Es el centro comercial más importante de Dinamarca.\n\nLa ciudad tiene un millón de habitantes y está dividida en dos zonas. Las dos zonas son islas: una muy grande y otra pequeña. Las dos islas están unidas por puentes. La zona comercial y turística está en la isla grande. Los habitantes de Copenhague y los turistas pueden pasear por las calles y por los jardines, que son muy bonitos e interesantes. Hay también muchos edificios importantes, por ejemplo: la catedral de Nuestra Señora, del siglo XII; el palacio de Charlottenborg, del siglo XVII, que ahora es la Academia de las Artes; el antiguo palacio real, que ahora es el Parlamento de Dinamarca; el Museo Thorvaldsen de esculturas; el Teatro Real; la Biblioteca Real, etc.\n\n¿Qué más podemos decir de Copenhague? Sobre todo, que tiene muchos jardines siempre verdes. Como no hace mucho calor se puede pasear por los jardines todo el año, pero si llueve hay que llevar impermeable o paraguas. Muchos son del siglo XIX y el más famoso es el Tívoli, que también es un parque de atracciones.\n\nEn conclusión, Copenhague es una ciudad muy interesante, se pueden visitar museos y edificios históricos, visitar tiendas y pasear por los jardines.'
+  },
+  checklist: [
+    '¿Se mantiene el presente de indicativo a lo largo de toda la exposición?',
+    '¿Cada subtema se abre con una definición, un dato o una pregunta retórica?',
+    '¿Usaste ejemplificación, clasificación o analogía para desarrollar los subtemas?',
+    '¿Cierra el texto con una conclusión que recoge lo tratado?'
+  ],
+  examples: [
+    { es: 'Una sirena es una mezcla de mujer y pez.', en: 'A mermaid is a mix of woman and fish.' },
+    { es: 'Hay varias clases: primero, los edificios históricos; segundo, los jardines.', en: 'There are several kinds: first, historic buildings; second, gardens.' },
+    { es: '¿Qué más podemos decir de Copenhague?', en: 'What else can we say about Copenhagen?' }
+  ],
+  probes: [
+    { id: 'p:exponer:tiempo', kind: 'mcq', q: '¿Qué tiempo verbal domina una exposición de tema?',
+      options: ['pretérito indefinido', 'presente de indicativo', 'imperativo'], answer: 1 },
+    { id: 'p:exponer:apertura', kind: 'mcq', q: '¿Cuál abre un subtema?',
+      options: ['una definición o pregunta retórica', 'la firma', 'el saludo'], answer: 0 },
+    { id: 'p:exponer:cloze', kind: 'cloze', text: 'Se parece a un gato pequeño, ___ un gato pequeño. (analogía)', accept: ['es como'] },
+    { id: 'p:exponer:recall', kind: 'recall', front: 'Name three ways to develop a subtopic in an exposition', back: 'clasificación, reformulación, ejemplificación, resumen, or analogía (any three)' }
+  ]
 }
 
 ];
