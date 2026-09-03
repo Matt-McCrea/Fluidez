@@ -7851,6 +7851,306 @@ window.STRAND_LESSONS = [
     { id: 'p:narrar:cloze', kind: 'cloze', text: 'De repente, alguien ___ a correr. (empezar)', accept: ['empezó'] },
     { id: 'p:narrar:recall', kind: 'recall', front: 'The five-part shape of a spoken anecdote, in order', back: 'situación inicial · complicación · acción · resolución · situación final' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 grammar/notion/discourse, the small units per tools/todo.js
+ * (function and genre, the bulk of B1, come in later batches).
+ * Skipped: disc-b1-los-valores-modales-de-la-entonacion (seq 464) — the same
+ * reasoning already on record for disc-a1-entonacion (seq 75): pure pitch
+ * and phonetic phenomena (entonación, alargamientos fónicos, pronunciación
+ * enfática), which a text app with no audio cannot teach. Its one
+ * text-representable overlap, acento de insistencia ("y no Pedro"), is
+ * already covered by dc-focalizacion-b1 below.
+ * ========================================================================== */
+{
+  id: 'gr-cuantificadores-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:133', 'gramatica:B1:134', 'gramatica:B1:135', 'gramatica:B1:136', 'gramatica:B1:137', 'gramatica:B1:138',
+         'gramatica:B1:139', 'gramatica:B1:142', 'gramatica:B1:143', 'gramatica:B1:144', 'gramatica:B1:145',
+         'gramatica:B1:153', 'gramatica:B1:154', 'gramatica:B1:156'],
+  title: 'Cuantificadores B1: cada, alguien/algo/alguno, más de',
+  summary: 'Alguien and algo never change form — they already commit to "person" or "thing" — while alguno only makes that same choice by taking on a gender, which is exactly the kind of small distinction that separates an intermediate quantifier system from a beginner one.',
+  sections: [
+    { h: 'Cada: invariable and distributive', html: '<i>Cada</i> never changes for gender or number and treats a group one member at a time: <i>cada uno por su camino</i>, <i>Reparte una hoja a cada alumno</i>.' },
+    { h: 'Alguien, algo, alguno: three ways to be indefinite', html: '<i>Alguien</i> (invariable) always means a PERSON; <i>algo</i> (invariable) always means a THING. <i>Alguno/alguna</i> can mean either, but agrees in gender — and there is a subtle first/second-mention difference: <i>Ha venido alguien</i> (someone, unspecified) vs <i>Ha venido alguno</i> (one of a known group already in mind).' },
+    { h: 'Más/menos de + number, not que', html: 'Before a NUMBER, the comparative uses <i>de</i>, not <i>que</i>: <i>Cuesta más de 20 euros</i>, never <i>*más que 20 euros</i>.' },
+    { h: 'Poco, un poco, algo: three degrees of "a little"', html: 'These are not interchangeable: <i>poco</i> leans negative (not enough — <i>Lee poco</i>, he doesn\'t read much), <i>un poco</i> is neutral/positive (a small amount — <i>Lee un poco</i>, he reads a bit), <i>algo</i> softens further still (<i>Lee algo</i>).' }
+  ],
+  contrasts: [
+    { es: 'Ha venido alguien.', en: 'Someone has come.', note: 'unspecified — first mention' },
+    { es: 'Ha venido alguno.', en: 'One of them has come.', note: 'refers back to a known group — second mention' },
+    { es: 'Cuesta más de 20 euros.', en: 'It costs more than 20 euros.', note: 'de before a number, never que' },
+    { es: 'Lee poco. / Lee un poco.', en: "He doesn't read much. / He reads a bit.", note: 'poco leans negative; un poco is neutral' }
+  ],
+  pitfalls: [
+    'Before a number, the comparative always takes <i>de</i>: <i>más de 20 euros</i>, not <i>*más que 20 euros</i>.',
+    '<i>Alguien/algo</i> never agree with anything; only <i>alguno/alguna</i> does, because it is the one that can point at either a person or a thing depending on context.',
+    '<i>Cada</i> is always singular and invariable, even when it distributes over a large group: <i>cada uno</i>, never <i>*cada unos</i>.'
+  ],
+  examples: [
+    { es: 'Cada uno pagó su parte de la cuenta.', en: 'Each person paid their share of the bill.' },
+    { es: '¿Hay alguien en casa?', en: 'Is anyone home?' },
+    { es: 'El vuelo se retrasó más de dos horas.', en: 'The flight was delayed more than two hours.' }
+  ],
+  probes: [
+    { id: 'p:cuantb1:masde', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['más que 20 euros', 'más de 20 euros', 'más 20 euros'], answer: 1 },
+    { id: 'p:cuantb1:alguienalgo', kind: 'mcq', q: '"Is there anyone there?" —',
+      options: ['¿Hay algo?', '¿Hay alguien?', '¿Hay alguno?'], answer: 1 },
+    { id: 'p:cuantb1:cloze', kind: 'cloze', text: '___ uno recibió un regalo. (each — invariable)', accept: ['Cada', 'cada'] },
+    { id: 'p:cuantb1:recall', kind: 'recall', front: 'Which of alguien/algo/alguno is the only one that agrees in gender?', back: 'alguno/alguna' }
+  ]
+},
+
+{
+  id: 'gr-condicional-simple-b1', strand: 'grammar', cefr: 'B1', level: 4, theme: null,
+  pcic: ['gramatica:B1:417', 'gramatica:B1:418', 'gramatica:B1:419', 'gramatica:B1:420', 'gramatica:B1:421', 'gramatica:B1:422',
+         'gramatica:B1:423', 'gramatica:B1:424', 'gramatica:B1:425', 'gramatica:B1:426'],
+  title: 'El condicional simple',
+  summary: '¿Podrías ayudarme? is not really about hypothetical possibility — the conditional here just makes a request softer, the same way English "could" outperforms "can" for politeness, and this courtesy use is more common in speech than the tense\'s textbook "would" meaning.',
+  sections: [
+    { h: 'Form: infinitive + endings', html: 'Regular verbs add <i>-ía, -ías, -ía, -íamos, -íais, -ían</i> to the full infinitive: <i>hablaría, comería, viviría</i>. The irregular stems are exactly the same ones the future tense uses (next lesson) — if you know one, you know the other.' },
+    { h: 'Condicional de cortesía', html: 'Softens a request or question: <i>¿Podrías ayudarme?</i> is gentler than <i>¿Puedes ayudarme?</i>.' },
+    { h: 'Condicional de modestia', html: 'Softens an opinion, making it sound less like a flat assertion: <i>Yo diría que eso no era así</i> — "I would say," not "I say."' },
+    { h: 'Suggestion with modal verbs', html: '<i>Deberías/podrías + infinitivo</i> gives advice more gently than a bare imperative: <i>Deberías acostarte, es tarde</i>.' }
+  ],
+  contrasts: [
+    { es: '¿Puedes ayudarme?', en: 'Can you help me?', note: 'direct' },
+    { es: '¿Podrías ayudarme?', en: 'Could you help me?', note: 'condicional de cortesía — softer' },
+    { es: 'Deberías descansar más.', en: 'You should rest more.', note: 'advice, gentler than an imperative' }
+  ],
+  pitfalls: [
+    'The irregular condicional stems are identical to the future\'s — <i>tendr-, pondr-, saldr-, sabr-, querr-, podr-, har-, dir-</i> — only the endings differ.',
+    'Condicional de cortesía is about SOCIAL softening, not genuine uncertainty — <i>¿Podrías...?</i> is still a real request, just a gentler one.'
+  ],
+  examples: [
+    { es: '¿Te importaría cerrar la puerta?', en: 'Would you mind closing the door?' },
+    { es: 'Yo no diría eso delante de ella.', en: "I wouldn't say that in front of her." },
+    { es: 'Deberíamos salir ya, se hace tarde.', en: "We should leave now, it's getting late." }
+  ],
+  probes: [
+    { id: 'p:condsimp:cortesia', kind: 'mcq', q: '¿Cuál es la petición más suave?',
+      options: ['¿Puedes venir?', '¿Podrías venir?', '¡Ven!'], answer: 1 },
+    { id: 'p:condsimp:irregular', kind: 'mcq', q: 'Condicional de "tener":',
+      options: ['tenería', 'tendría', 'teniría'], answer: 1 },
+    { id: 'p:condsimp:cloze', kind: 'cloze', text: 'Yo ___ (decir) que tiene razón. (modestia)', accept: ['diría'] },
+    { id: 'p:condsimp:recall', kind: 'recall', front: 'The condicional\'s irregular stems are shared with which other tense?', back: 'the future (futuro imperfecto)' }
+  ]
+},
+
+{
+  id: 'gr-futuro-imperfecto-b1', strand: 'grammar', cefr: 'B1', level: 4, theme: null,
+  pcic: ['gramatica:B1:406', 'gramatica:B1:407', 'gramatica:B1:408', 'gramatica:B1:409', 'gramatica:B1:410', 'gramatica:B1:411',
+         'gramatica:B1:412', 'gramatica:B1:413', 'gramatica:B1:416'],
+  title: 'El futuro imperfecto',
+  summary: 'Serán las once does not predict a future clock — it guesses about RIGHT NOW, which is the future tense\'s other job: not just what will happen, but how confident an educated guess about the present sounds.',
+  sections: [
+    { h: 'Form: infinitive + endings', html: 'Regular verbs add <i>-é, -ás, -á, -emos, -éis, -án</i> to the full infinitive: <i>hablaré, comeré, viviré</i>. A dozen common verbs shorten or alter the infinitive stem before adding these same endings: <i>tendré, pondré, saldré, sabré, querré, podré, haré, diré</i>.' },
+    { h: 'Acciones futuras absolutas', html: 'The plain future prediction: <i>Iré mañana</i>.' },
+    { h: 'Futuro de probabilidad', html: 'Guessing about the PRESENT, not the future: <i>Serán las once</i> ("It must be about eleven") — a guess made right now, with no future time involved at all.' }
+  ],
+  contrasts: [
+    { es: 'Iré a la fiesta mañana.', en: "I'll go to the party tomorrow.", note: 'plain future prediction' },
+    { es: '¿Qué hora es? —No sé, serán las once.', en: '"What time is it?" "I don\'t know, it must be about eleven."', note: 'futuro de probabilidad — a guess about NOW' },
+    { es: 'Estará en casa; no contesta el móvil.', en: "He's probably at home; he's not answering his phone.", note: 'probability, present time' }
+  ],
+  pitfalls: [
+    'Futuro de probabilidad talks about the PRESENT — do not read <i>estará en casa</i> as "he will be home" (future); it means "he\'s probably home" (now).',
+    'The irregular stems never add the regular endings to the full infinitive — <i>tener</i> loses its <i>e</i> (<i>tendré</i>, not <i>*teneré</i>).'
+  ],
+  examples: [
+    { es: 'El año que viene viviremos en Chile.', en: "Next year we'll live in Chile." },
+    { es: '¿Quién llama a estas horas? Será tu hermano.', en: "Who's calling at this hour? It's probably your brother." },
+    { es: 'No te preocupes, todo saldrá bien.', en: "Don't worry, everything will turn out fine." }
+  ],
+  probes: [
+    { id: 'p:futimp:probabilidad', kind: 'mcq', q: '"Tendrá unos cuarenta años" habla de:',
+      options: ['el futuro', 'una suposición sobre el presente', 'una orden'], answer: 1 },
+    { id: 'p:futimp:irregular', kind: 'mcq', q: 'Futuro de "salir":',
+      options: ['saliré', 'saldré', 'salré'], answer: 1 },
+    { id: 'p:futimp:cloze', kind: 'cloze', text: 'El año que viene ___ (vivir) en Chile.', accept: ['viviremos'] },
+    { id: 'p:futimp:recall', kind: 'recall', front: 'What does the "futuro de probabilidad" actually talk about?', back: 'the present — a guess made right now, not a future event' }
+  ]
+},
+
+{
+  id: 'gr-complementos-modificadores-b1', strand: 'grammar', cefr: 'B1', level: 5, theme: null,
+  pcic: ['gramatica:B1:564', 'gramatica:B1:565', 'gramatica:B1:566'],
+  title: 'La chica de los ojos azules, la construcción del edificio',
+  summary: 'La chica de los ojos azules is not optional decoration the way a normal adjective phrase is — leave off "azules" and the sentence breaks, because with an inalienable-possession noun like ojos, the phrase exists only to say WHICH feature you mean.',
+  sections: [
+    { h: 'Restrictive PP with inalienable possession', html: 'A prepositional phrase built on a body-part or inherent-feature noun is not optional the way a normal modifier is: <i>la chica de los ojos azules</i> needs its adjective — <i>*la chica de los ojos</i> alone is incomplete, because merely having eyes distinguishes no one.' },
+    { h: 'Complementos argumentales', html: 'Some nouns derived from verbs need their own prepositional phrase to complete their meaning, echoing the verb\'s object: <i>la construcción del edificio</i> ("building the building") — <i>del edificio</i> is not possession, it is the argument construir would have taken.' },
+    { h: 'Aposición explicativa: set off by commas', html: 'Unlike the specificative apposition already met (<i>mi hermano Juan</i>, no commas, narrows down WHICH brother), an EXPLICATIVE apposition adds non-essential information and is set off by commas: <i>Juan, mi hermano, es ingeniero</i> — Juan already identifies who; "mi hermano" just adds a fact about him.' }
+  ],
+  contrasts: [
+    { es: 'la chica de los ojos azules', en: 'the girl with blue eyes', note: 'correct — the adjective is required with an inalienable-possession noun' },
+    { es: '*la chica de los ojos', en: '(incomplete)', note: 'having eyes distinguishes no one — the phrase needs its restrictive adjective' },
+    { es: 'Juan, mi hermano, es ingeniero.', en: 'Juan, my brother, is an engineer.', note: 'explicative apposition, commas — Juan already identifies who; the rest just adds information' }
+  ],
+  pitfalls: [
+    'A "de + body part" phrase needs a restrictive adjective to mean anything specific — <i>de los ojos azules</i>, not a bare <i>de los ojos</i>.',
+    'Explicative apposition (extra, droppable information) takes commas; specificative apposition (which narrows down who/what) does not — compare <i>mi hermano Juan</i> (no commas, tells you WHICH brother) with <i>Juan, mi hermano,</i> (commas, just adds a fact).'
+  ],
+  examples: [
+    { es: 'El hombre del sombrero negro es mi tío.', en: 'The man in the black hat is my uncle.' },
+    { es: 'La destrucción del bosque preocupa a todos.', en: 'The destruction of the forest worries everyone.' },
+    { es: 'Mi jefa, una mujer muy exigente, llega siempre a las ocho.', en: 'My boss, a very demanding woman, always arrives at eight.' }
+  ],
+  probes: [
+    { id: 'p:complmod:restrictivo', kind: 'mcq', q: '¿Cuál es una frase completa?',
+      options: ['la chica de los ojos', 'la chica de los ojos azules', 'la chica de ojos'], answer: 1 },
+    { id: 'p:complmod:aposicion', kind: 'mcq', q: '¿Cuál lleva comas?',
+      options: ['mi hermano Juan', 'Juan, mi hermano,', 'mi hermano el Juan'], answer: 1 },
+    { id: 'p:complmod:cloze', kind: 'cloze', text: 'La construcción ___ edificio duró dos años. (del)', accept: ['del'] },
+    { id: 'p:complmod:recall', kind: 'recall', front: 'Explicative vs specificative apposition — which one takes commas?', back: 'explicative (adds non-essential information)' }
+  ]
+},
+
+{
+  id: 'nt-acabado-b1', strand: 'notion', cefr: 'B1', level: 4, theme: null,
+  pcic: ['nociones_generales:B1:737', 'nociones_generales:B1:738', 'nociones_generales:B1:739', 'nociones_generales:B1:740'],
+  title: 'Acabado: el resultado de una acción terminada',
+  summary: 'La pared está pintada does not describe an action — it describes what the world looks like AFTER one, and Spanish marks that finished-result state with estar + participio, the same construction already met for cansado/aburrido, now applied to any completed process.',
+  sections: [
+    { h: 'The process vs. its finished result', html: 'A verb like <i>pintar, proteger, envolver</i> names a PROCESS; <i>estar + participio</i> names the STATE that process leaves behind once it is done: <i>Pintan la pared</i> (they are painting it, process) → <i>La pared está pintada</i> (finished — the state, not the action).' },
+    { h: 'Quedar as an alternative', html: '<i>Quedar + participio</i> works the same way, often stressing that the result is now settled or final: <i>El asunto quedó resuelto</i>.' }
+  ],
+  exponents: [
+    { es: 'El paquete ya está envuelto.', en: 'The package is already wrapped.', register: 'neutral', note: 'estar + participio — the finished state, not the act of wrapping' },
+    { es: 'La pared está recién pintada.', en: 'The wall has just been painted.', register: 'neutral', note: 'result of a completed process' },
+    { es: 'Los muebles están bien protegidos del sol.', en: 'The furniture is well protected from the sun.', register: 'neutral', note: 'agrees with muebles — plural, masculine' },
+    { es: 'El contrato quedó firmado ayer.', en: 'The contract was signed (and settled) yesterday.', register: 'neutral', note: 'quedar + participio — emphasizes finality' }
+  ],
+  contrasts: [
+    { es: 'Están pintando la pared.', en: 'They are painting the wall.', note: 'the process, in progress' },
+    { es: 'La pared está pintada.', en: 'The wall is painted.', note: 'the finished result — a state, not an action' }
+  ],
+  pitfalls: [
+    'Do not confuse the acabado state (<i>está pintada</i>) with the progressive (<i>está pintando</i>) — one describes a finished result, the other an action still happening.',
+    'The participle here always agrees with the noun, like any adjective: <i>los muebles protegidos</i>, <i>la pared pintada</i>.'
+  ],
+  examples: [
+    { es: 'Los regalos ya están envueltos.', en: 'The presents are already wrapped.' },
+    { es: 'El puente quedó terminado en 2020.', en: 'The bridge was completed in 2020.' },
+    { es: '¿Está protegido el ordenador contra virus?', en: 'Is the computer protected against viruses?' }
+  ],
+  probes: [
+    { id: 'p:acabado:estado', kind: 'mcq', q: '"La pared ___ pintada." (estado, ya terminado)',
+      options: ['es', 'está', 'hay'], answer: 1 },
+    { id: 'p:acabado:proceso', kind: 'mcq', q: '¿Cuál describe la ACCIÓN en curso, no el resultado?',
+      options: ['La pared está pintada.', 'Están pintando la pared.', 'La pared quedó pintada.'], answer: 1 },
+    { id: 'p:acabado:cloze', kind: 'cloze', text: 'Los regalos ya están ___. (envolver — participio, plural)', accept: ['envueltos'] },
+    { id: 'p:acabado:recall', kind: 'recall', front: 'What does estar/quedar + participio describe — the process or its result?', back: 'the result — a finished state' }
+  ]
+},
+
+{
+  id: 'dc-intensificacion-discurso-b1', strand: 'discourse', cefr: 'B1', level: 4, theme: null,
+  pcic: ['tacticas_pragmaticas:B1:151', 'tacticas_pragmaticas:B1:152', 'tacticas_pragmaticas:B1:153', 'tacticas_pragmaticas:B1:154', 'tacticas_pragmaticas:B1:155'],
+  title: 'Intensificar: el más... de, -ísimo, kilómetros y kilómetros',
+  summary: 'Repeating a word (kilómetros y kilómetros) intensifies exactly like -ísimo does, just by a completely different mechanism — piling up the word itself instead of piling up morphology onto it.',
+  sections: [
+    { h: 'Superlativo comparativo de excelencia', html: '<i>El/la más... de</i> singles someone or something out from a whole group: <i>Joaquín es, sin duda, el más antipático de la clase</i>.' },
+    { h: 'Superlativo absoluto: -ísimo', html: 'No comparison group needed — just maximum degree: <i>guapísimo, buenísimo</i>.' },
+    { h: 'Enumeración and repetition as intensifiers', html: 'Listing several actions of the same kind, or literally repeating a word, intensifies by sheer accumulation: <i>He hecho el desayuno, he hecho la comida, he hecho la cena. ¡Estoy cansado de cocinar!</i>; <i>Recorrimos kilómetros y kilómetros antes de llegar a la playa</i>.' }
+  ],
+  exponents: [
+    { es: 'Es, sin duda, la más inteligente de todo el equipo.', en: 'She is, without doubt, the smartest on the whole team.', register: 'neutral' },
+    { es: '¡Esta tarta está buenísima!', en: 'This cake is amazing!', register: 'coloquial' },
+    { es: 'He llamado, he escrito, he insistido... y nada.', en: "I've called, I've written, I've insisted... and nothing.", register: 'coloquial', note: 'enumeration as intensification' },
+    { es: 'Caminamos horas y horas sin encontrar el refugio.', en: 'We walked for hours and hours without finding the shelter.', register: 'neutral', note: 'repetition (word y mismo word) as intensification' }
+  ],
+  pitfalls: [
+    'The repeated-word intensifier (<i>kilómetros y kilómetros</i>) is not literal counting — it means "a very great number/amount," not exactly two units.',
+    '-ísimo already carries maximum force; do not add <i>muy</i> in front of it (<i>*muy buenísimo</i>) — the same rule met for elative adjectives.'
+  ],
+  examples: [
+    { es: 'Fue, con diferencia, el mejor concierto del año.', en: 'It was, by far, the best concert of the year.' },
+    { es: 'Estoy cansadísimo después del viaje.', en: "I'm exhausted after the trip." },
+    { es: 'Lloró y lloró sin parar.', en: 'She cried and cried without stopping.' }
+  ],
+  probes: [
+    { id: 'p:intdisc:excelencia', kind: 'mcq', q: '"Joaquín es el ___ antipático de la clase." (superlativo comparativo)',
+      options: ['muy', 'más', 'tan'], answer: 1 },
+    { id: 'p:intdisc:absoluto', kind: 'mcq', q: '¿Cuál es un superlativo absoluto?',
+      options: ['el más guapo', 'guapísimo', 'tan guapo'], answer: 1 },
+    { id: 'p:intdisc:cloze', kind: 'cloze', text: 'Caminamos horas y ___ sin parar. (repetición intensificadora)', accept: ['horas'] },
+    { id: 'p:intdisc:recall', kind: 'recall', front: 'Besides -ísimo, what other mechanism intensifies by pure accumulation?', back: 'repeating or enumerating the same word/action (kilómetros y kilómetros)' }
+  ]
+},
+
+{
+  id: 'dc-intensificar-acuerdo-desacuerdo-b1', strand: 'discourse', cefr: 'B1', level: 5, theme: null,
+  pcic: ['tacticas_pragmaticas:B1:156', 'tacticas_pragmaticas:B1:157', 'tacticas_pragmaticas:B1:158', 'tacticas_pragmaticas:B1:159'],
+  title: 'Intensificar el acuerdo o el desacuerdo: claro, claro',
+  summary: 'Saying claro, claro is stronger than claro alone — repetition is the whole mechanism here, no new word or grammar needed, and the same doubling works exactly as well for disagreement (no, no) as for agreement.',
+  sections: [
+    { h: 'Repetition as intensification', html: 'Doubling a short agreement/disagreement word amplifies it with no change of vocabulary: <i>claro, claro</i> (definitely, absolutely) is stronger than a single <i>claro</i>; <i>no, no</i> similarly intensifies a plain <i>no</i>.' },
+    { h: 'Fixed exclamations', html: 'A small set of fixed reactions do the same intensifying job as a whole phrase: <i>¡Qué va!</i> (strong disagreement — "no way"), <i>¡Cómo no!</i> (emphatic agreement — "of course").' }
+  ],
+  exponents: [
+    { es: '—¿Vienes a la fiesta? —Claro, claro, allí estaré.', en: '"Are you coming to the party?" "Of course, of course, I\'ll be there."', register: 'coloquial', note: 'doubled claro — stronger than one' },
+    { es: '—¿Fuiste tú quien lo rompió? —No, no, yo no fui.', en: '"Was it you who broke it?" "No, no, it wasn\'t me."', register: 'coloquial', note: 'doubled no — emphatic denial' },
+    { es: '—¿Crees que ganará? —¡Qué va! No tiene ninguna posibilidad.', en: '"Do you think he\'ll win?" "No way! He doesn\'t stand a chance."', register: 'coloquial' },
+    { es: '—¿Me ayudas? —¡Cómo no!', en: '"Will you help me?" "Of course!"', register: 'coloquial' },
+    { es: 'Sin duda alguna, es la mejor opción.', en: 'Without any doubt, it is the best option.', register: 'formal', note: 'the same intensifying job, in a more measured, formal register' }
+  ],
+  pitfalls: [
+    'Doubling <i>claro/no</i> is purely about intensity, not a different meaning — <i>claro, claro</i> still means "yes, of course," just more emphatically.',
+    '<i>¡Qué va!</i> disagrees; do not confuse it with agreement exclamations like <i>¡Cómo no!</i>, which mean the opposite.'
+  ],
+  examples: [
+    { es: '—¿Te gustó la película? —Sí, sí, muchísimo.', en: '"Did you like the film?" "Yes, yes, very much."' },
+    { es: '—¿Es difícil el examen? —¡Qué va! Es bastante fácil.', en: '"Is the exam hard?" "No way! It\'s pretty easy."' },
+    { es: '—¿Puedo pasar? —¡Cómo no, adelante!', en: '"May I come in?" "Of course, go ahead!"' }
+  ],
+  probes: [
+    { id: 'p:intacuerdo:repeticion', kind: 'mcq', q: '¿Qué hace más fuerte una afirmación como "claro, claro" frente a "claro"?',
+      options: ['un cambio de significado', 'la repetición', 'un tono formal'], answer: 1 },
+    { id: 'p:intacuerdo:quéva', kind: 'mcq', q: '"¡Qué va!" expresa:',
+      options: ['acuerdo fuerte', 'desacuerdo fuerte', 'duda'], answer: 1 },
+    { id: 'p:intacuerdo:cloze', kind: 'cloze', text: '—¿Vienes? —___, ___, allí estaré. (claro repetido)', accept: ['Claro, claro', 'claro, claro'] },
+    { id: 'p:intacuerdo:recall', kind: 'recall', front: 'A fixed exclamation for emphatic AGREEMENT ("of course!")', back: '¡Cómo no!' }
+  ]
+},
+
+{
+  id: 'dc-focalizacion-b1', strand: 'discourse', cefr: 'B1', level: 5, theme: null,
+  pcic: ['tacticas_pragmaticas:B1:182', 'tacticas_pragmaticas:B1:183', 'tacticas_pragmaticas:B1:184', 'tacticas_pragmaticas:B1:185', 'tacticas_pragmaticas:B1:186', 'tacticas_pragmaticas:B1:187'],
+  title: 'Focalización: solo, sobre todo, ¡qué bien habla!',
+  summary: 'Sólo voy yo narrows the sentence down to one fact — that it is only me going, nobody else — and Spanish has a small toolkit of words and structures whose entire job is to point at which piece of the sentence matters.',
+  sections: [
+    { h: 'Excluyentes: solamente, solo', html: 'Restricts to exactly one thing, excluding everything else: <i>Solo voy yo</i> — nobody else is going.' },
+    { h: 'Particularizadores: sobre todo', html: 'Singles out the main case within a broader category, without excluding the rest: <i>Me gusta leer, sobre todo libros de viajes</i> — travel books are the favorite, but not the only thing read.' },
+    { h: 'Cuantificadores decrecientes in focus', html: 'A modest quantifier like <i>un poco</i> can itself become the focused, important piece of information: <i>Estudio un poco</i> (as opposed to a lot, or not at all).' },
+    { h: 'Estructuras reflejas: se + verb', html: 'The impersonal/passive <i>se</i> focuses on the EVENT, removing the agent from view entirely: <i>Se ha suspendido el partido</i> — who suspended it is not the point.' },
+    { h: 'Converting a statement into an exclamation with qué', html: '<i>¡Qué + adverb + verb!</i> or <i>¡Qué + noun + adjective!</i> turns a plain assertion into a focused, exclaimed one: <i>¡Qué bien habla español!</i>, <i>¡Qué amigo más simpático tienes!</i>' }
+  ],
+  exponents: [
+    { es: 'Solo voy yo a la reunión.', en: "I'm the only one going to the meeting.", register: 'neutral' },
+    { es: 'Me gustan los deportes, sobre todo el fútbol.', en: 'I like sports, especially football.', register: 'neutral' },
+    { es: 'Se ha suspendido el partido por lluvia.', en: 'The match has been suspended due to rain.', register: 'neutral', note: 'se impersonal — focuses on the event, no agent named' },
+    { es: '¡Qué bien habla español!', en: 'He speaks Spanish so well!', register: 'coloquial' },
+    { es: '¡Qué amigo más simpático tienes!', en: 'What a nice friend you have!', register: 'coloquial' }
+  ],
+  pitfalls: [
+    '<i>Sobre todo</i> singles out the main case WITHOUT excluding the rest; <i>solo/solamente</i> excludes everything else — do not use them interchangeably.',
+    'The <i>qué + noun + adjective</i> exclamation needs <i>más</i> or <i>tan</i> before the adjective when both appear: <i>¡Qué amigo más simpático!</i>, not a bare <i>*¡Qué amigo simpático!</i> for this exclamatory force.'
+  ],
+  examples: [
+    { es: 'Solamente hablé con ella cinco minutos.', en: 'I only spoke with her for five minutes.' },
+    { es: 'Trabajamos mucho, sobre todo en diciembre.', en: 'We work a lot, especially in December.' },
+    { es: '¡Qué rápido has llegado!', en: "You got here so fast!" }
+  ],
+  probes: [
+    { id: 'p:focal:excluyente', kind: 'mcq', q: '"Solo voy yo" significa:',
+      options: ['voy yo, entre otros', 'voy únicamente yo, nadie más', 'no sé si voy'], answer: 1 },
+    { id: 'p:focal:particularizador', kind: 'mcq', q: '"Sobre todo" — ¿excluye el resto o no?',
+      options: ['sí, lo excluye todo', 'no, solo destaca el caso principal', 'siempre es negativo'], answer: 1 },
+    { id: 'p:focal:cloze', kind: 'cloze', text: '___ el partido por lluvia. (se + suspender)', accept: ['Se ha suspendido', 'se ha suspendido'] },
+    { id: 'p:focal:recall', kind: 'recall', front: 'What does the impersonal se + verb structure focus attention on?', back: 'the event itself — it removes the agent from view' }
+  ]
 }
 
 ];
