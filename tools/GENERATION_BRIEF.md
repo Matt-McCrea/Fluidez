@@ -249,8 +249,38 @@ them wrong hides the lesson rather than misfiling it.
 Grammar and notion are the large gaps at every level, and were blocked until
 now — do not assume A1/A2 is finished because its function lessons are.
 
-**There are also no B2 or C1 passages, cloze items or writing tasks at all.**
-Those files (`data/passages.js`, `data/apply.js`, `data/writing.js`) stop at
-level 5, so the top two levels currently have lessons and vocabulary but
-nothing to read or practise on. Passages at B2 take a Spanish-language
-glossary and at C1 no gloss at all (`glossLang` in `data/taxonomy.js`).
+### Practice material — a separate axis from lessons
+
+`data/passages.js`, `data/apply.js` and `data/writing.js` feed the Comprender,
+Aplicar and Producir stages of every session. They are NOT lessons, and the
+1,071 figure above does not include them. Current state, by level gate:
+
+| | A1 | A2 | B1 | B2 | C1 |
+|---|---|---|---|---|---|
+| passages | 87 | 22 | **11** | **0** | **0** |
+| apply (cloze) | 118 | 163 | 61 | **0** | **0** |
+| writing | 156 | 91 | 28 | **0** | **0** |
+
+B2 and C1 have nothing at all: a learner there gets a lesson and then three
+empty stages. **B1 is nearly as bad** — 11 passages is under a fortnight before
+they repeat, against 251 lessons the level will eventually hold. A2 passages
+(22) are thin for the same reason.
+
+Targets, as a floor, so a level does not repeat itself inside a few weeks:
+
+| | A1 | A2 | B1 | B2 | C1 |
+|---|---|---|---|---|---|
+| passages | have enough | +40 | +70 | +80 | +80 |
+| apply | have enough | have enough | +80 | +120 | +120 |
+| writing | have enough | have enough | +50 | +80 | +80 |
+
+Passage length and glossing come from the level (`data/taxonomy.js`): A1 30-60
+words, A2 60-100, B1 100-160, B2 200-300, C1 320-450. **The glossary language
+changes**: English through B1, **Spanish at B2**, and none at all at C1 — so a
+C1 passage has to carry itself without a crutch. Spread passages across the 20
+themes rather than clustering on everyday life; at B2/C1 the themes that carry
+real register (`politica`, `economia`, `medios`, `ciencia`) are the ones with
+no coverage at all today.
+
+Each passage still needs its `gloss`, 3-5 questions mixing `mcq`, `short` and
+exactly one `translate` whose line appears verbatim in the text.
