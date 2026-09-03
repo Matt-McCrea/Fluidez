@@ -1703,6 +1703,580 @@ window.STRAND_LESSONS = [
     { id: 'p:sensacionesfisicas:recall', kind: 'recall',
       front: 'In "me duele X", what is the grammatical subject?', back: 'X (the body part), not the person' }
   ]
+},
+
+/* ============================================================================
+ * BATCH 4 — seq 177-195 of spec/syllabus-draft.json (A2 function, "Influir
+ * en el interlocutor" and "Relacionarse socialmente").
+ * Skipped: func-a2-de-forma-atenuada (177, the 33-item version — a
+ * different syllabus entry happens to share this exact id with 178) — spec
+ * conflates softened orders, asking a favor, asking for help, asking
+ * permission, inviting and declining, and warning. Needs splitting.
+ * func-a2-establecer-la-comunicacion (192) and its "reaccionar" sibling
+ * (193) — mostly duplicate the A1 establecer-comunicacion lesson; their one
+ * new item (¿Dígame?) is folded into fn-responder-telefono-a2 below, which
+ * already covers answering a call.
+ * ========================================================================== */
+{
+  id: 'fn-pedir-objetos-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:270', 'funciones:A2:271', 'funciones:A2:272', 'funciones:A2:273'],
+  title: 'Pedir un objeto',
+  summary: 'A direct command for a physical thing ("Dame la sal") is rare in practice — Spanish almost always softens the request into a question, and "por favor" is doing less work than the question form itself.',
+  sections: [
+    { h: 'A question, not a command', html: 'Turning the request into a question — <i>¿Puedes darme...?</i>, <i>¿Me traes...?</i>, <i>¿Me das...?</i> — is the default softening, more than adding <i>por favor</i> alone.' },
+    { h: 'Hiding the request inside a statement', html: 'The most indirect version does not ask at all: <i>No tengo bolígrafo</i> states a problem and lets the listener offer, without you ever framing it as a request.' }
+  ],
+  exponents: [
+    { es: '¿Puedes darme otra servilleta?', en: 'Can you give me another napkin?', register: 'coloquial', note: 'tú, question softens the command' },
+    { es: '¿Me trae otra cerveza, por favor?', en: 'Could you bring me another beer, please?', register: 'formal', note: 'usted, typical to waitstaff' },
+    { es: '¿Nos trae la cuenta?', en: 'Could you bring us the bill?', register: 'formal', note: 'usted' },
+    { es: '¿Me das un vaso de agua?', en: 'Can you give me a glass of water?', register: 'coloquial' },
+    { es: 'No tengo bolígrafo.', en: "I don't have a pen.", register: 'coloquial', note: 'covert request — states the problem, asks nothing directly' }
+  ],
+  pitfalls: [
+    'The covert version (<i>No tengo bolígrafo</i>) only works if the context makes the request obvious — used with no context, it just sounds like a complaint.'
+  ],
+  examples: [
+    { es: '—¿Puedes darme el móvil un momento? —Claro, toma.', en: '—Can you give me the phone for a second? —Sure, here.' },
+    { es: '¿Me trae la carta, por favor?', en: 'Could you bring me the menu, please?' },
+    { es: 'No tengo cambio...', en: "I don't have any change..." }
+  ],
+  probes: [
+    { id: 'p:pedirobjetos:pregunta', kind: 'mcq',
+      q: '¿Cuál es la forma habitual de pedir algo, más que un imperativo directo?',
+      options: ['Dame la sal.', '¿Me das la sal?', 'Sal.'], answer: 1 },
+    { id: 'p:pedirobjetos:encubierta', kind: 'mcq',
+      q: 'Quieres que alguien te preste un bolígrafo, sin pedirlo directamente. ¿Qué dices?',
+      options: ['¿Me das un bolígrafo?', 'No tengo bolígrafo.', 'Dame un bolígrafo.'], answer: 1 },
+    { id: 'p:pedirobjetos:cloze', kind: 'cloze',
+      text: '¿Nos ___ la cuenta?', accept: ['trae'] },
+    { id: 'p:pedirobjetos:recall', kind: 'recall',
+      front: 'The default way to soften a request for an object', back: 'turn it into a question' }
+  ]
+},
+
+{
+  id: 'fn-acceder-peticion-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:286', 'funciones:A2:287', 'funciones:A2:289', 'funciones:A2:290'],
+  title: 'Acceder a una petición',
+  summary: 'Agreeing to do what someone asks has a scale from unreserved to hedged to evasive — the same short words (vale, bueno) shift meaning depending on whether they stand alone or come loaded with a "pero" or a "no sé".',
+  sections: [
+    { h: 'Unreserved', html: '<i>Sí, claro</i> and a bare <i>Vale</i> agree cleanly, no hesitation implied.' },
+    { h: 'With reservations, or evading', html: '<i>Bueno, vale</i> (with a heavier, slower "bueno") signals reluctance even while agreeing. <i>Bueno, no sé...</i> avoids a real answer — technically not a refusal, but not agreement either.' }
+  ],
+  exponents: [
+    { es: '—¿Puedo pedirte un favor? —Sí, sí, claro.', en: '—Can I ask you a favour? —Yes, of course.', register: 'neutral', note: 'unreserved, warm' },
+    { es: '—Ordena el despacho antes de irte, por favor. —Vale.', en: '—Tidy the office before you leave, please. —OK.', register: 'coloquial', note: 'bare vale — clean agreement' },
+    { es: '—Tienes que limpiar la cocina. —Bueno, vale.', en: '—You have to clean the kitchen. —Fine, OK.', register: 'coloquial', note: 'the slower "bueno" signals reluctance' },
+    { es: '—¿Me ayudas mañana a pintar la casa? —Bueno, no sé...', en: "—Will you help me paint the house tomorrow? —Well, I don't know...", register: 'coloquial', note: 'evasive — avoids a real answer' }
+  ],
+  pitfalls: [
+    '<i>Bueno, vale</i> and a bare <i>Vale</i> are not the same commitment — the extra <i>bueno</i> is doing the work of a sigh.'
+  ],
+  examples: [
+    { es: '—¿Puedes ayudarme con las maletas? —Sí, claro, sin problema.', en: '—Can you help me with the suitcases? —Yes, of course, no problem.' },
+    { es: '—¿Vienes a la reunión? —Bueno, vale, pero llegaré tarde.', en: "—Are you coming to the meeting? —Fine, OK, but I'll be late." },
+    { es: '—¿Me prestas dinero? —Bueno, no sé, tengo que pensarlo.', en: "—Will you lend me money? —Well, I don't know, I have to think about it." }
+  ],
+  probes: [
+    { id: 'p:acceder:sinreservas', kind: 'mcq',
+      q: '¿Cuál acepta SIN ninguna reserva?',
+      options: ['Bueno, vale.', 'Sí, sí, claro.', 'Bueno, no sé...'], answer: 1 },
+    { id: 'p:acceder:evasiva', kind: 'mcq',
+      q: '¿Cuál NO es realmente un sí ni un no?',
+      options: ['Vale.', 'Bueno, no sé...', 'Sí, claro.'], answer: 1 },
+    { id: 'p:acceder:cloze', kind: 'cloze',
+      text: '—Tienes que limpiar la cocina. —___, vale.', accept: ['Bueno', 'bueno'] },
+    { id: 'p:acceder:recall', kind: 'recall',
+      front: 'Adding this word before "vale" turns clean agreement into reluctant agreement', back: 'bueno' }
+  ]
+},
+
+{
+  id: 'fn-negarse-peticion-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:292', 'funciones:A2:293', 'funciones:A2:295'],
+  title: 'Negarse a una petición',
+  summary: 'Refusing has a courteous version, cushioned with an apology and a reason, and a blunt one that states the refusal outright — the difference is not the content of your no but whether you soften the blow first.',
+  sections: [
+    { h: 'Courteous: cushion first', html: '<i>Lo siento, pero...</i> + a reason cushions the refusal — the apology comes before the actual no.' },
+    { h: 'Blunt: no cushioning', html: '<i>No quiero</i>/<i>No puedo</i> alone states the refusal outright, with no apology and often no reason.' }
+  ],
+  exponents: [
+    { es: '—Tienes que terminar esto hoy. —Lo siento, pero no puedo. No tengo tiempo.', en: "—You have to finish this today. —I'm sorry, but I can't. I don't have time.", register: 'neutral', note: 'apology + reason — courteous' },
+    { es: '—Perdona, ¿puedes venir un momento? —Lo siento, no puedo. Tengo que trabajar.', en: "—Excuse me, can you come for a moment? —I'm sorry, I can't. I have to work.", register: 'neutral' },
+    { es: '—Siéntate. —No quiero sentarme.', en: "—Sit down. —I don't want to sit down.", register: 'coloquial', note: 'blunt, no cushioning' },
+    { es: '—Tienes que ir a ver a tu abuela. —No puedo ir.', en: "—You have to go see your grandmother. —I can't go.", register: 'coloquial', note: 'flat refusal, no apology' }
+  ],
+  pitfalls: [
+    'A justification makes even a blunt refusal land softer — <i>No puedo</i> alone can sound curt; adding a reason, even briefly, helps.'
+  ],
+  examples: [
+    { es: '—¿Puedes quedarte hasta tarde? —Lo siento, pero tengo una cita.', en: "—Can you stay late? —I'm sorry, but I have an appointment." },
+    { es: '—Cómetelo todo. —No quiero.', en: "—Eat it all up. —I don't want to." },
+    { es: '—¿Me prestas el coche? —No puedo, lo necesito yo.', en: "—Will you lend me the car? —I can't, I need it myself." }
+  ],
+  probes: [
+    { id: 'p:negarse:cortes', kind: 'mcq',
+      q: '¿Cuál es la forma cortés de negarte?',
+      options: ['No quiero.', 'Lo siento, pero no puedo.', 'No.'], answer: 1 },
+    { id: 'p:negarse:tajante', kind: 'mcq',
+      q: '¿Cuál es tajante, sin disculpa?',
+      options: ['Lo siento, no puedo.', 'No quiero.', 'Lo siento, pero...'], answer: 1 },
+    { id: 'p:negarse:cloze', kind: 'cloze',
+      text: 'Lo siento, ___ no puedo.', accept: ['pero'] },
+    { id: 'p:negarse:recall', kind: 'recall',
+      front: 'What softens a refusal before the actual "no"?', back: 'an apology (lo siento)' }
+  ]
+},
+
+{
+  id: 'fn-proponer-sugerir-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:307', 'funciones:A2:308', 'funciones:A2:309', 'funciones:A2:310', 'funciones:A2:311', 'funciones:A2:312'],
+  title: 'Proponer y sugerir',
+  summary: 'Proposing an activity uses ordinary questions, not a special grammar — "¿Vamos a bailar?" is literally asking about a shared future action, and it works precisely because it includes you both.',
+  sections: [
+    { h: 'A shared "we"', html: 'Most proposals use <i>nosotros</i> (<i>vamos, quedamos, tomamos</i>) — grammatically including yourself commits you too, which makes it a genuine proposal, not an order.' },
+    { h: 'Softer openers', html: '<i>¿Por qué no...?</i> and <i>¿Qué tal si...?</i> wrap the same idea in a frame that sounds like problem-solving or a casual thought, rather than a flat suggestion.' }
+  ],
+  exponents: [
+    { es: '¿Vamos a bailar?', en: 'Shall we go dancing?', register: 'coloquial', note: 'nosotros — includes both of you' },
+    { es: '¿Vienes al gimnasio?', en: 'Are you coming to the gym?', register: 'coloquial', note: 'invites by asking if they will join YOUR plan' },
+    { es: '¿Quedamos el viernes?', en: 'Shall we meet up on Friday?', register: 'neutral', note: 'quedar — the standard verb for arranging to meet' },
+    { es: '¿Por qué no vamos a comer?', en: "Why don't we go eat?", register: 'coloquial', note: 'frames the proposal as removing an obstacle' },
+    { es: '¿Qué tal si vamos al cine esta tarde?', en: 'How about we go to the cinema this afternoon?', register: 'neutral', note: 'qué tal si — softer opener' }
+  ],
+  pitfalls: [
+    '<i>¿Vienes a...?</i> proposes something that is already YOUR plan, inviting them to join — it is not neutral between the two of you the way <i>¿vamos?</i> is.'
+  ],
+  examples: [
+    { es: '¿Quedamos en tu casa a las ocho?', en: 'Shall we meet at your place at eight?' },
+    { es: '¿Por qué no cambias de trabajo?', en: "Why don't you change jobs?" },
+    { es: '¿Tomamos algo después?', en: 'Shall we grab a drink afterwards?' }
+  ],
+  probes: [
+    { id: 'p:proponer:incluir', kind: 'mcq',
+      q: '¿Cuál incluye a las dos personas en la propuesta?',
+      options: ['¿Vienes al cine?', '¿Vamos al cine?', 'Ve al cine.'], answer: 1 },
+    { id: 'p:proponer:verbo', kind: 'mcq',
+      q: '¿Qué verbo es el estándar para proponer quedar con alguien?',
+      options: ['Encontrar', 'Quedar', 'Ver'], answer: 1 },
+    { id: 'p:proponer:cloze', kind: 'cloze',
+      text: '¿___ tal si vamos al cine?', accept: ['Qué', 'qué'] },
+    { id: 'p:proponer:recall', kind: 'recall',
+      front: 'Grammatical person most proposals use, to include yourself too', back: 'nosotros' }
+  ]
+},
+
+{
+  id: 'fn-aceptar-invitacion-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:320', 'funciones:A2:322', 'funciones:A2:323', 'funciones:A2:325', 'funciones:A2:326'],
+  title: 'Aceptar una invitación: con y sin reservas',
+  summary: 'Accepting an invitation cleanly and accepting it with a condition attached use nearly the same words — the difference is a single "pero" that turns full acceptance into a qualified one.',
+  sections: [
+    { h: 'Clean acceptance', html: '<i>Vale</i>, <i>De acuerdo</i>, <i>Encantado</i> all accept outright, with nothing held back.' },
+    { h: 'One word changes everything', html: 'Add <i>pero</i> and a condition — <i>Sí, pero más tarde</i> — and the same acceptance becomes conditional. You have still said yes, just not unconditionally.' }
+  ],
+  exponents: [
+    { es: '—¿Vienes a cenar a casa? —Sí, vale, de acuerdo.', en: '—Are you coming for dinner? —Yes, OK, sounds good.', register: 'coloquial', note: 'clean, unreserved acceptance' },
+    { es: 'Vale, ¿por qué no?', en: 'OK, why not?', register: 'coloquial', note: 'clean acceptance, slightly more enthusiastic' },
+    { es: 'Encantado.', en: "I'd be delighted.", register: 'neutral', note: 'set formula, warmer than a bare vale' },
+    { es: '—¿Vienes a tomar algo con nosotros? —Sí, pero más tarde.', en: '—Are you coming for a drink with us? —Yes, but later.', register: 'neutral', note: 'accepted, with a condition attached' },
+    { es: 'Bueno, vale, pero a las seis volvemos.', en: "Fine, OK, but we're back by six.", register: 'coloquial', note: 'accepted, with a condition attached' }
+  ],
+  pitfalls: [
+    'A condition after <i>pero</i> is still a yes — do not read <i>Sí, pero más tarde</i> as a soft no; the invitation is accepted, just on your terms.'
+  ],
+  examples: [
+    { es: '—¿Te apuntas al plan? —¡Encantado!', en: "—Are you in on the plan? —I'd love to!" },
+    { es: '—¿Vienes a la boda? —Vale, ¿por qué no?', en: '—Are you coming to the wedding? —OK, why not?' },
+    { es: 'Sí, pero solo si terminamos pronto.', en: 'Yes, but only if we finish early.' }
+  ],
+  probes: [
+    { id: 'p:aceptar:limpia', kind: 'mcq',
+      q: '¿Cuál acepta SIN ninguna condición?',
+      options: ['Sí, pero más tarde.', 'Vale, ¿por qué no?', 'Bueno, vale, pero...'], answer: 1 },
+    { id: 'p:aceptar:condicion', kind: 'mcq',
+      q: '—¿Vienes a tomar algo? —Sí, pero más tarde. ¿Aceptó o rechazó?',
+      options: ['Aceptó, con una condición', 'Rechazó', 'No respondió'], answer: 0 },
+    { id: 'p:aceptar:cloze', kind: 'cloze',
+      text: 'Bueno, vale, ___ a las seis volvemos.', accept: ['pero'] },
+    { id: 'p:aceptar:recall', kind: 'recall',
+      front: 'The single word that turns full acceptance into conditional acceptance', back: 'pero' }
+  ]
+},
+
+{
+  id: 'fn-aconsejar-a2', strand: 'function', cefr: 'A2', level: 2, theme: 'salud',
+  pcic: ['funciones:A2:335', 'funciones:A2:336', 'funciones:A2:337', 'funciones:A2:338', 'funciones:A2:340'],
+  title: 'Aconsejar',
+  summary: 'Advice ranges from a gentle option (puedes) through a personal push (tienes que) to an impersonal rule (hay que) — the impersonal version advises without pointing at anyone, which is often what makes it land better.',
+  sections: [
+    { h: 'A scale of directness', html: '<i>Puedes</i> offers an option; <i>tienes que</i> pushes personally; <i>hay que</i> and <i>es necesario</i> state a general rule that names no one — useful when direct advice would feel like criticism.' },
+    { h: 'Imperative plus reason', html: 'A bare command (<i>Come más</i>) can sound blunt alone; adding the reason (<i>Estás muy delgado</i>) turns it into advice rather than an order.' }
+  ],
+  exponents: [
+    { es: 'Puedes escuchar la radio.', en: 'You could listen to the radio.', register: 'coloquial', note: 'puedes — a gentle option, not a push' },
+    { es: 'Tienes que trabajar menos.', en: 'You need to work less.', register: 'coloquial', note: 'tienes que — a direct, personal push' },
+    { es: 'Hay que descansar.', en: 'One needs to rest.', register: 'neutral', note: 'hay que — impersonal, aimed at no one in particular' },
+    { es: 'Come más. Estás muy delgado.', en: "Eat more. You're very thin.", register: 'coloquial', note: 'imperative — direct advice, softened by the reason after' },
+    { es: 'Es necesario hacer un poco de ejercicio todos los días.', en: "It's necessary to do a bit of exercise every day.", register: 'neutral', note: 'impersonal, works in writing too' }
+  ],
+  pitfalls: [
+    '<i>Tienes que</i> aims squarely at the listener — reach for <i>hay que</i> instead if you want the advice to feel less personal.'
+  ],
+  examples: [
+    { es: '¿Por qué no vas al médico?', en: "Why don't you go to the doctor?" },
+    { es: 'Es importante dormir bien.', en: "It's important to sleep well." },
+    { es: 'Hay que estudiar más para aprobar.', en: 'One needs to study more to pass.' }
+  ],
+  probes: [
+    { id: 'p:aconsejar:impersonal', kind: 'mcq',
+      q: '¿Cuál da un consejo SIN señalar directamente al oyente?',
+      options: ['Tienes que dormir más.', 'Hay que dormir más.', 'Duerme más.'], answer: 1 },
+    { id: 'p:aconsejar:suave', kind: 'mcq',
+      q: '¿Cuál es la opción MÁS suave, casi solo una sugerencia?',
+      options: ['Tienes que ir.', 'Puedes ir.', 'Ve.'], answer: 1 },
+    { id: 'p:aconsejar:cloze', kind: 'cloze',
+      text: '___ que descansar.', accept: ['Hay', 'hay'] },
+    { id: 'p:aconsejar:recall', kind: 'recall',
+      front: 'Which form of advice names no one in particular?', back: 'hay que / es necesario (impersonal)' }
+  ]
+},
+
+{
+  id: 'fn-ofrecerse-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:343', 'funciones:A2:344', 'funciones:A2:345'],
+  title: 'Ofrecerse para hacer algo',
+  summary: 'Offering help can be as short as a two-word question — the offer itself does the work; you rarely need more than "¿Te ayudo?" to make a genuine offer.',
+  sections: [
+    { h: 'Short is normal', html: 'None of these need padding — a bare <i>¿Te ayudo?</i> is a complete, genuine offer, not an abrupt one.' },
+    { h: 'Offering vs asking about need', html: '<i>¿Te ayudo?</i> puts you forward as the helper; <i>¿Necesitas ayuda?</i> asks about their situation first, which can feel less presumptuous.' }
+  ],
+  exponents: [
+    { es: '¿Te ayudo?', en: 'Shall I help you?', register: 'coloquial', note: 'the shortest, most direct offer' },
+    { es: '¿Puedo ayudarte?', en: 'Can I help you?', register: 'neutral', note: 'slightly more formal phrasing, same offer' },
+    { es: '¿Necesitas ayuda?', en: 'Do you need help?', register: 'neutral', note: 'asks about their need rather than offering directly' }
+  ],
+  pitfalls: [
+    'Waiting to be asked before offering help can read as indifferent — Spanish culture leans toward offering unprompted in obvious situations (heavy bags, a struggling parent).'
+  ],
+  examples: [
+    { es: '—¿Te ayudo con las maletas? —Sí, gracias.', en: '—Shall I help you with the suitcases? —Yes, thanks.' },
+    { es: '¿Puedo ayudarte con algo?', en: 'Can I help you with anything?' },
+    { es: 'Veo que tienes mucho trabajo. ¿Necesitas ayuda?', en: 'I see you have a lot of work. Do you need help?' }
+  ],
+  probes: [
+    { id: 'p:ofrecerse:corto', kind: 'mcq',
+      q: '¿Cuál es la forma más corta y directa de ofrecer ayuda?',
+      options: ['¿Necesitas ayuda?', '¿Te ayudo?', '¿Puedo ayudarte con algo?'], answer: 1 },
+    { id: 'p:ofrecerse:necesidad', kind: 'mcq',
+      q: '¿Cuál pregunta primero por SU situación, en vez de ofrecerte directamente?',
+      options: ['¿Te ayudo?', '¿Necesitas ayuda?', '¿Puedo?'], answer: 1 },
+    { id: 'p:ofrecerse:cloze', kind: 'cloze',
+      text: '¿___ ayudarte?', accept: ['Puedo', 'puedo'] },
+    { id: 'p:ofrecerse:recall', kind: 'recall',
+      front: 'The shortest, most direct way to offer help', back: '¿Te ayudo?' }
+  ]
+},
+
+{
+  id: 'fn-presentar-alguien-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:369', 'funciones:A2:370', 'funciones:A2:372', 'funciones:A2:351'],
+  title: 'Presentar a alguien',
+  summary: 'Introducing someone shifts noticeably between friends and a professional setting: te presento vs le presento, first name vs surname-plus-title, and how much you explain about who they are.',
+  sections: [
+    { h: 'Te vs le', html: '<i>Te presento a...</i> in an informal setting; <i>Le presento a...</i> when at least one person is addressed as usted.' },
+    { h: 'How much context', html: 'Informally, a first name plus relationship is enough (<i>mi hermana Luisa</i>). Formally, surname, title and role earn their place (<i>la Sra. Lodeiro, nuestra nueva directora comercial</i>).' }
+  ],
+  exponents: [
+    { es: 'Te presento a Luis.', en: 'This is Luis.', register: 'coloquial', note: 'te — informal, first name' },
+    { es: 'Te presento a mi hermana Luisa.', en: 'This is my sister Luisa.', register: 'coloquial', note: 'adds the relationship, informal' },
+    { es: 'Te presento a Eloy. Es un amigo mío.', en: "This is Eloy. He's a friend of mine.", register: 'coloquial' },
+    { es: 'Le presento a la Sra. Lodeiro, nuestra nueva directora comercial.', en: 'May I introduce Mrs Lodeiro, our new sales director.', register: 'formal', note: 'le — usted register, surname + title + role' }
+  ],
+  pitfalls: [
+    'Formal introductions use the surname with a title (<i>Sra. Lodeiro</i>), never the bare first name — mixing register (<i>Le presento a Ana</i>) undercuts the formality.'
+  ],
+  examples: [
+    { es: '—Te presento a mi amigo Carlos. —Hola, encantado.', en: '—This is my friend Carlos. —Hi, pleased to meet you.' },
+    { es: 'Le presento a mi colega, el Sr. Ruiz.', en: 'May I introduce my colleague, Mr Ruiz.' },
+    { es: 'Querido Antonio:', en: 'Dear Antonio,' }
+  ],
+  probes: [
+    { id: 'p:presentaralguien:registro', kind: 'mcq',
+      q: 'Presentas a tu jefe a un cliente importante. ¿Qué usas?',
+      options: ['Te presento a...', 'Le presento a...', 'Este es...'], answer: 1 },
+    { id: 'p:presentaralguien:contexto', kind: 'mcq',
+      q: '¿Cuál añade la relación con la persona?',
+      options: ['Te presento a Luis.', 'Te presento a mi hermana Luisa.', 'Hola, Luis.'], answer: 1 },
+    { id: 'p:presentaralguien:cloze', kind: 'cloze',
+      text: '___ presento a la Sra. Lodeiro.', accept: ['Le', 'le'] },
+    { id: 'p:presentaralguien:recall', kind: 'recall',
+      front: 'Formal introductions use surname + title, never just the ___', back: 'first name' }
+  ]
+},
+
+{
+  id: 'fn-responder-saludo-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:354', 'funciones:A2:355', 'funciones:A2:356'],
+  title: 'Responder a un saludo',
+  summary: 'A2 responses to "how are you" all bounce the question back — the shape (adjective, gracias, ¿y tú?) is fixed enough that you can answer on autopilot and still sound natural.',
+  sections: [
+    { h: 'Always bounce it back', html: 'A response to "how are you" is not complete without returning the question — <i>¿y tú?/¿y usted?</i> is expected, not optional politeness.' },
+    { h: 'Match their register', html: 'Answer usted with usted, tú with tú — the greeting sets the register for the whole exchange, not just the question.' }
+  ],
+  exponents: [
+    { es: '—¿Qué tal? —Muy bien, gracias, ¿y tú?', en: '—How are you? —Very well, thanks, and you?', register: 'coloquial', note: 'tú, bounces the question back' },
+    { es: '—¿Cómo está usted? —Muy bien. Y usted, ¿cómo está?', en: '—How are you? —Very well. And you?', register: 'formal', note: 'usted mirrors the register used to greet you' },
+    { es: 'Bien. Y tú, ¿qué tal?', en: "Good. And you, how's it going?", register: 'coloquial' }
+  ],
+  pitfalls: [
+    'Skipping <i>¿y tú?</i> can read as uninterested — the question is a two-way ritual, not really information-seeking.'
+  ],
+  examples: [
+    { es: '—Hola, ¿qué tal? —Bien, ¿y tú?', en: '—Hi, how are you? —Good, and you?' },
+    { es: '—Buenos días, ¿cómo está usted? —Muy bien, gracias.', en: '—Good morning, how are you? —Very well, thank you.' },
+    { es: '—¿Cómo estás? —Regular, la verdad.', en: '—How are you? —So-so, to be honest.' }
+  ],
+  probes: [
+    { id: 'p:respondersaludo:reciprocidad', kind: 'mcq',
+      q: '—¿Qué tal? ¿Qué falta en esta respuesta: "Muy bien, gracias."?',
+      options: ['Nada, está completa', 'Devolver la pregunta: ¿y tú?', 'Un saludo'], answer: 1 },
+    { id: 'p:respondersaludo:registro', kind: 'mcq',
+      q: 'Te saluda alguien con "¿cómo está usted?" ¿Cómo respondes?',
+      options: ['Bien, ¿y tú?', 'Bien. Y usted, ¿cómo está?', 'Bien, ¿y vosotros?'], answer: 1 },
+    { id: 'p:respondersaludo:cloze', kind: 'cloze',
+      text: 'Muy bien, gracias, ¿y ___?', accept: ['tú', 'usted'] },
+    { id: 'p:respondersaludo:recall', kind: 'recall',
+      front: 'A response to "how are you" is incomplete without doing what?', back: 'bouncing the question back' }
+  ]
+},
+
+{
+  id: 'fn-dirigirse-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:361', 'funciones:A2:362', 'funciones:A2:363'],
+  title: 'Dirigirse a alguien (A2)',
+  summary: 'Getting a stranger\'s attention politely almost always needs a word first — perdón, oiga, oye — except in the one setting where the exchange itself makes the attention-getter unnecessary, like a cashier stating a price.',
+  sections: [
+    { h: 'Oiga vs oye', html: '<i>Oiga</i> (usted) and <i>oye</i> (tú) both mean roughly "hey, excuse me" — the choice is purely about who you are addressing.' },
+    { h: 'When you need nothing at all', html: 'In an already-open exchange, like a cashier naming a price, no attention-getter is needed — the transaction itself is the opening.' }
+  ],
+  exponents: [
+    { es: 'Perdone, ¿sabe dónde está la estación?', en: 'Excuse me, do you know where the station is?', register: 'formal', note: 'perdone — usted' },
+    { es: 'Oye, ¿tienes hora?', en: 'Hey, do you have the time?', register: 'coloquial', note: 'oye — tú, casual' },
+    { es: 'Oiga, perdone, ¿sabe dónde hay un restaurante mexicano por aquí?', en: "Excuse me, do you know if there's a Mexican restaurant around here?", register: 'formal', note: 'oiga + perdone stacked — extra polite' },
+    { es: 'Siete euros, por favor.', en: 'Seven euros, please.', register: 'neutral', note: 'no attention-getter needed — the transaction itself opens the exchange' }
+  ],
+  pitfalls: [
+    '<i>Oye/oiga</i> alone can sound abrupt — stacking it with <i>perdona/perdone</i> softens it, especially with a stranger.'
+  ],
+  examples: [
+    { es: 'Perdona, ¿te importa si me siento aquí?', en: 'Excuse me, do you mind if I sit here?' },
+    { es: 'Oiga, se le ha caído esto.', en: 'Excuse me, you dropped this.' },
+    { es: '—Dos cafés, por favor. —Marchando.', en: '—Two coffees, please. —Coming right up.' }
+  ],
+  probes: [
+    { id: 'p:dirigirse2:oigaoye', kind: 'mcq',
+      q: 'Te diriges a un desconocido mayor, con respeto. ¿Qué usas?',
+      options: ['Oye', 'Oiga', '¿Qué tal?'], answer: 1 },
+    { id: 'p:dirigirse2:sintratamiento', kind: 'mcq',
+      q: 'Un cajero dice el precio directamente, sin llamar la atención antes. ¿Por qué no lo necesita?',
+      options: ['Porque es de mala educación', 'Porque la transacción ya está abierta', 'Porque no conoce al cliente'], answer: 1 },
+    { id: 'p:dirigirse2:cloze', kind: 'cloze',
+      text: '___, ¿sabe dónde está la estación?', accept: ['Perdone', 'perdone'] },
+    { id: 'p:dirigirse2:recall', kind: 'recall',
+      front: 'Attention-getter for tú, equivalent to formal "oiga"', back: 'oye' }
+  ]
+},
+
+{
+  id: 'fn-disculparse-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:381', 'funciones:A2:382', 'funciones:A2:383'],
+  title: 'Disculparse',
+  summary: 'Apologizing scales from a quick "perdona" to a heavier "lo siento muchísimo" — and naming exactly what you are sorry for with "siento + infinitive" makes the apology land as sincere rather than reflexive.',
+  sections: [
+    { h: 'A scale of weight', html: '<i>Perdona/e</i> is light, for everyday bumps; <i>Lo siento (muchísimo)</i> carries more weight, for something that actually caused harm or inconvenience.' },
+    { h: 'Naming what you regret', html: '<i>Siento + infinitive</i> attaches the apology to a specific thing, which reads as more sincere than a bare <i>lo siento</i>.' }
+  ],
+  exponents: [
+    { es: 'Lo siento mucho.', en: "I'm very sorry.", register: 'neutral' },
+    { es: 'Perdona.', en: 'Sorry.', register: 'coloquial', note: 'tú, light, everyday' },
+    { es: 'Perdone.', en: 'Sorry.', register: 'formal', note: 'usted equivalent of perdona' },
+    { es: 'Siento llegar tarde.', en: 'Sorry for being late.', register: 'neutral', note: 'siento + infinitive names exactly what you regret' }
+  ],
+  pitfalls: [
+    'A bare <i>Perdona</i> for something serious can sound dismissive — match the weight of the apology to the offense.'
+  ],
+  examples: [
+    { es: 'Perdona, no te había visto.', en: "Sorry, I hadn't seen you." },
+    { es: 'Lo siento muchísimo, ha sido culpa mía.', en: "I'm so sorry, it was my fault." },
+    { es: 'Siento no haber llamado antes.', en: "Sorry I didn't call earlier." }
+  ],
+  probes: [
+    { id: 'p:disculparse:peso', kind: 'mcq',
+      q: '¿Cuál es la disculpa MÁS ligera, para un tropiezo sin importancia?',
+      options: ['Lo siento muchísimo.', 'Perdona.', 'Siento haberte hecho esperar tanto.'], answer: 1 },
+    { id: 'p:disculparse:especifico', kind: 'mcq',
+      q: '¿Cuál nombra EXACTAMENTE lo que sientes?',
+      options: ['Lo siento.', 'Perdona.', 'Siento llegar tarde.'], answer: 2 },
+    { id: 'p:disculparse:cloze', kind: 'cloze',
+      text: '___ llegar tarde.', accept: ['Siento', 'siento'] },
+    { id: 'p:disculparse:recall', kind: 'recall',
+      front: 'Structure that names exactly what you are apologizing for', back: 'siento + infinitivo' }
+  ]
+},
+
+{
+  id: 'fn-felicitar-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:392', 'funciones:A2:394', 'funciones:A2:395', 'funciones:A2:397', 'funciones:A2:398'],
+  title: 'Felicitar',
+  summary: 'Felicidades and enhorabuena are not fully interchangeable: felicidades marks a date (a birthday, a holiday), while enhorabuena marks an achievement someone earned.',
+  sections: [
+    { h: 'A date vs an achievement', html: '<i>Felicidades</i> marks an occasion on the calendar (a birthday, a holiday); <i>Enhorabuena</i> marks something someone achieved (passing an exam, a promotion, a new baby).' }
+  ],
+  exponents: [
+    { es: '¡Feliz cumpleaños!', en: 'Happy birthday!', register: 'coloquial', note: 'felicidades-family — marks a date' },
+    { es: '¡Felicidades!', en: 'Congratulations! / Happy birthday!', register: 'neutral', note: 'a date — a birthday, a holiday' },
+    { es: '¡Felices fiestas!', en: 'Happy holidays!', register: 'coloquial' },
+    { es: '¡Enhorabuena!', en: 'Congratulations!', register: 'neutral', note: 'marks an achievement — earned, not just a date' }
+  ],
+  pitfalls: [
+    "Saying <i>Felicidades</i> for someone's new job undersells it — that is an achievement, so <i>Enhorabuena</i> fits better."
+  ],
+  examples: [
+    { es: '—He aprobado el examen. —¡Enhorabuena!', en: '—I passed the exam. —Congratulations!' },
+    { es: '¡Feliz cumpleaños! Muchas felicidades.', en: 'Happy birthday! Many congratulations.' },
+    { es: '¡Enhorabuena por el bebé!', en: 'Congratulations on the baby!' }
+  ],
+  probes: [
+    { id: 'p:felicitar:tipo', kind: 'mcq',
+      q: 'Un amigo ha conseguido un ascenso en el trabajo. ¿Qué le dices?',
+      options: ['¡Felicidades!', '¡Enhorabuena!', '¡Felices fiestas!'], answer: 1 },
+    { id: 'p:felicitar:fecha', kind: 'mcq',
+      q: 'Es el cumpleaños de tu amiga. ¿Qué le dices?',
+      options: ['¡Enhorabuena!', '¡Felicidades!', '¡Buen provecho!'], answer: 1 },
+    { id: 'p:felicitar:cloze', kind: 'cloze',
+      text: '¡___ cumpleaños!', accept: ['Feliz', 'feliz'] },
+    { id: 'p:felicitar:recall', kind: 'recall',
+      front: 'Word for congratulating an ACHIEVEMENT, not a date', back: 'Enhorabuena' }
+  ]
+},
+
+{
+  id: 'fn-buenos-deseos-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:401', 'funciones:A2:403', 'funciones:A2:404', 'funciones:A2:406', 'funciones:A2:407'],
+  title: 'Formular buenos deseos',
+  summary: 'Spanish has a fixed good wish for surprisingly specific moments — before a trip, before someone eats — and using the wrong one, or none at all, leaves a small social gap a native speaker would have filled.',
+  sections: [
+    { h: 'A fixed phrase for the moment', html: 'Spanish marks specific moments with a set formula — leaving on a trip, sitting down to eat — where English often says nothing at all.' },
+    { h: 'Que aproveche, even to strangers', html: 'Wishing <i>que aproveche</i> to someone eating nearby, even a stranger, is normal and expected, not intrusive.' }
+  ],
+  exponents: [
+    { es: '¡Mucha suerte!', en: 'Good luck!', register: 'coloquial' },
+    { es: '¡Buen viaje!', en: 'Have a good trip!', register: 'neutral', note: 'said as someone leaves on a trip' },
+    { es: '¡Felices vacaciones!', en: 'Happy holidays! (enjoy your time off)', register: 'coloquial' },
+    { es: '¡Que aproveche!', en: 'Enjoy your meal!', register: 'neutral', note: 'said to someone about to eat, even by a stranger nearby' },
+    { es: 'Buen provecho.', en: 'Enjoy your meal.', register: 'formal', note: 'the more formal equivalent of que aproveche' }
+  ],
+  pitfalls: [
+    'Saying nothing as someone leaves on a trip or starts a meal leaves a small, noticeable gap where a Spanish speaker would expect a set phrase.'
+  ],
+  examples: [
+    { es: '—Me voy de viaje mañana. —¡Buen viaje!', en: "—I'm going on a trip tomorrow. —Have a good trip!" },
+    { es: 'Que aproveche, ¡buen provecho!', en: 'Enjoy your meal!' },
+    { es: '¡Mucha suerte en el examen!', en: 'Good luck on the exam!' }
+  ],
+  probes: [
+    { id: 'p:buenosdeseos:viaje', kind: 'mcq',
+      q: 'Un amigo sale de viaje. ¿Qué le dices?',
+      options: ['¡Buen provecho!', '¡Buen viaje!', '¡Enhorabuena!'], answer: 1 },
+    { id: 'p:buenosdeseos:comida', kind: 'mcq',
+      q: 'Alguien empieza a comer cerca de ti. ¿Qué es normal decir, aunque no lo conozcas?',
+      options: ['¡Buen viaje!', '¡Que aproveche!', '¡Mucha suerte!'], answer: 1 },
+    { id: 'p:buenosdeseos:cloze', kind: 'cloze',
+      text: '¡___ viaje!', accept: ['Buen', 'buen'] },
+    { id: 'p:buenosdeseos:recall', kind: 'recall',
+      front: 'Formal equivalent of "¡que aproveche!"', back: 'Buen provecho.' }
+  ]
+},
+
+{
+  id: 'fn-responder-telefono-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:430', 'funciones:A2:439', 'funciones:A2:440', 'funciones:A2:442',
+         'funciones:A2:446', 'funciones:A2:448', 'funciones:A2:451', 'funciones:A2:453'],
+  title: 'Contestar el teléfono',
+  summary: 'Answering the phone in Spanish runs through a small, fixed set of moves — confirm identity, ask who\'s calling if unclear, ask them to wait, or redirect if it\'s a wrong number or the person is unavailable — and each has its own set phrase.',
+  sections: [
+    { h: 'Picking up and confirming', html: '<i>¿Dígame?</i> opens a call. If they ask for you by name, confirm with <i>Sí, soy yo</i>.' },
+    { h: 'When you do not recognize the caller', html: '<i>¿De parte de quién?</i> asks who is calling, politely, once — not "who are you" bluntly, but "on behalf of whom".' },
+    { h: 'Redirecting the call', html: 'Four fixed outcomes: ask them to wait (<i>Un momento, por favor</i>), say it\'s the wrong number (<i>No, se equivoca</i>), say the person is unavailable (<i>Ahora no puede ponerse</i>), or offer to take a message (<i>¿Quiere dejar un recado?</i>).' }
+  ],
+  exponents: [
+    { es: '¿Dígame?', en: 'Hello? (answering the phone)', register: 'formal', note: 'the standard, slightly formal way to pick up' },
+    { es: '—¿Está Antonio? —Sí, soy yo.', en: '—Is Antonio there? —Yes, speaking.', register: 'neutral', note: 'confirming your own identity' },
+    { es: '—¿Está Carlota? —¿De parte de quién?', en: "—Is Carlota there? —Who's calling, please?", register: 'formal', note: 'polite, not blunt' },
+    { es: 'Un momento, por favor.', en: 'One moment, please.', register: 'neutral' },
+    { es: 'No, se equivoca.', en: 'No, you have the wrong number.', register: 'formal' },
+    { es: 'Ahora no puede ponerse.', en: "He/she can't come to the phone right now.", register: 'neutral' },
+    { es: '¿Quiere dejar un recado?', en: 'Would you like to leave a message?', register: 'formal', note: 'usted — standard phone courtesy' }
+  ],
+  pitfalls: [
+    '<i>¿De parte de quién?</i> is the polite phrasing — a bare <i>¿Quién eres?</i> on the phone sounds unexpectedly blunt.',
+    'Confirming identity is <i>Sí, soy yo</i>, not <i>Sí, yo</i> alone — same rule as face to face.'
+  ],
+  examples: [
+    { es: '—¿Puedo hablar con la señora Martínez, por favor? —Un momento, por favor.', en: '—Could I speak with Mrs Martínez, please? —One moment, please.' },
+    { es: '—¿Está Rodrigo? —Ahora no puede ponerse, ¿quiere dejar un recado?', en: "—Is Rodrigo there? —He can't come to the phone right now, would you like to leave a message?" },
+    { es: 'Lo siento, no, no es aquí.', en: "Sorry, no, this isn't the right number." }
+  ],
+  probes: [
+    { id: 'p:respondertelefono:identidad', kind: 'mcq',
+      q: '—¿Está Antonio? ¿Cómo confirmas que eres tú?',
+      options: ['Sí, yo.', 'Sí, soy yo.', 'Es él.'], answer: 1 },
+    { id: 'p:respondertelefono:quien', kind: 'mcq',
+      q: 'No reconoces la voz de quien llama. ¿Qué preguntas, con educación?',
+      options: ['¿Quién eres?', '¿De parte de quién?', '¿Qué quieres?'], answer: 1 },
+    { id: 'p:respondertelefono:cloze', kind: 'cloze',
+      text: 'Ahora no puede ___.', accept: ['ponerse'] },
+    { id: 'p:respondertelefono:recall', kind: 'recall',
+      front: 'Polite offer when the person called for is not available', back: '¿Quiere dejar un recado?' }
+  ]
+},
+
+{
+  id: 'fn-reaccionar-relato-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:460', 'funciones:A2:461', 'funciones:A2:463'],
+  title: 'Reaccionar al inicio de un relato',
+  summary: 'Before someone tells you something, they often ask permission first — "¿te cuento una cosa?" — and your answer either opens the floor or closes it, politely, with a reason.',
+  sections: [
+    { h: 'Opening the floor', html: '<i>Sí, claro</i> grants permission to start; <i>¿Sí?</i> mid-story keeps inviting more, without you saying anything substantive.' },
+    { h: 'Closing it politely', html: 'Declining still needs a reason — <i>Lo siento mucho, es que...</i> softens turning someone away from telling their story.' }
+  ],
+  exponents: [
+    { es: '—¿Te cuento una cosa? —Sí, claro.', en: '—Can I tell you something? —Yes, of course.', register: 'coloquial', note: 'opens the floor' },
+    { es: '—Ayer, en la calle, vi un accidente. —¿Sí?', en: '—Yesterday, in the street, I saw an accident. —Really?', register: 'coloquial', note: '¿Sí? invites them to continue, mid-story' },
+    { es: '—¿Quieres saber una cosa? —Lo siento mucho, es que tengo prisa.', en: "—Do you want to know something? —I'm sorry, it's just that I'm in a hurry.", register: 'neutral', note: 'politely closes the floor, with a reason' }
+  ],
+  pitfalls: [
+    'A bare <i>No</i> to "¿te cuento una cosa?" reads as rude — the refusal needs the apology-plus-reason shape, same as declining any other request.'
+  ],
+  examples: [
+    { es: '—¿Sabes qué ha pasado? —¿Sí? Cuéntame.', en: '—Do you know what happened? —Really? Tell me.' },
+    { es: '—Oye, ¿te cuento una cosa? —Sí, claro, dime.', en: '—Hey, can I tell you something? —Yes, of course, go ahead.' },
+    { es: 'Lo siento, es que ahora no puedo, luego te escucho.', en: "Sorry, I can't right now, I'll listen later." }
+  ],
+  probes: [
+    { id: 'p:reaccionarrelato:abrir', kind: 'mcq',
+      q: '—¿Te cuento una cosa? ¿Cómo le das permiso para seguir?',
+      options: ['Sí, claro.', 'No sé.', '¿De verdad?'], answer: 0 },
+    { id: 'p:reaccionarrelato:mitad', kind: 'mcq',
+      q: 'Te están contando algo y quieres que sigan, sin decir nada nuevo. ¿Qué dices?',
+      options: ['¿Sí?', 'Vale.', 'Ya está.'], answer: 0 },
+    { id: 'p:reaccionarrelato:cloze', kind: 'cloze',
+      text: 'Lo siento mucho, ___ que tengo prisa.', accept: ['es'] },
+    { id: 'p:reaccionarrelato:recall', kind: 'recall',
+      front: 'A polite refusal to hear a story still needs what, after the apology?', back: 'a reason (es que...)' }
+  ]
 }
 
 ];
