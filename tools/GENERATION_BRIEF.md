@@ -43,6 +43,30 @@ official syllabus that has already been harvested and levelled. You are not
 designing anything. Every decision that needed judgement has been made and is
 expressed either as a schema the validator enforces or as a rule below.
 
+## What is left, and in what order
+
+A1–A2 lessons are largely written and have been reviewed. **B1 is not**: it has
+45 of its 251 lessons and no function, discourse or genre lessons at all. B2 and
+C1 have three lessons between them and no practice material whatsoever.
+
+| | grammar | notion | function | discourse | genre | **missing** |
+|---|---|---|---|---|---|---|
+| A1 | 21 | 2 | 3 | 1 | 5 | 32 |
+| A2 | 38 | 9 | 5 | 0 | 11 | 63 |
+| B1 | 30 | 38 | **99** | 16 | 23 | **206** |
+| B2 | 60 | 74 | 122 | 22 | 27 | **305** |
+| C1 | 60 | 78 | 106 | 23 | 25 | **292** |
+
+Work in this order:
+
+1. **B1 lessons** (206) — the level is half-built and a learner can reach it today.
+2. **B2 and C1 lessons** (597).
+3. **Practice material for B1, B2 and C1** — see the targets below. Without it
+   the upper levels give a learner a lesson and then three empty stages.
+
+Do not start B2 before B1 is complete. A learner walks the ladder in order, and
+a gap at B1 is reached long before anything at C1 is.
+
 ## Absolute rules
 
 1. **Append only.** Never edit `js/`, `tools/`, or existing entries. Never add a
@@ -88,24 +112,27 @@ tiempo"* and no gate could see it. The engine now also parses enclitic forms
 (dímelo, ayúdame, levantaos), so the writing checker can finally see the
 imperatives the app teaches.
 
-## Phase 0 — build the palette FIRST
+## Phase 0 — the palette is built
 
-Do not start lessons until the vocabulary and verbs exist. A generator obeying
-rule 4 with only the starter verb set will produce a thousand lessons written in
-beginner Spanish, which is exactly the outcome this rebuild is meant to prevent.
+Verbs and vocabulary come before lessons, because a generator told "every verb
+you conjugate must exist in `data/verbs.js`" and given only beginner verbs will
+write a thousand lessons in beginner Spanish. That work is essentially done —
+**1,004 verbs and 5,812 vocabulary entries**, with gender, themes, CEFR levels
+and collocations derived from the harvest. What remains:
 
-1. **Verbs** — work through `spec/verb-queue.json` into `data/verbs.js`. Most
-   need only `{ inf, en, type }`; the morphology layer derives orthographic
-   changes (`realizar>realicé`, `coger>cojo`, `conocer>conozco`,
-   `incluir>incluyo`). Add `stem: 'ie'|'ue'|'i'|'í'|'ú'` for a stem-changer and
-   `like: 'tener'` for a prefixed compound (`mantener`, `proponer`, `atraer`).
-   **`node tools/audit-verbs.js` checks your classification against 11,834
-   sentences of real Spanish** and fails on a verb nothing supports — so
-   misfiling one is caught by evidence, not by review. Run it every batch.
-2. **Vocabulary** — `spec/vocab-queue.json` holds ~3,700 non-verb entries with
-   the Spanish, theme, CEFR level, part of speech, gender (83% resolved, with
-   its evidence recorded) and collocations already derived. **Only the English
-   gloss is missing.** Do not re-derive the rest and do not change `es`.
+- `spec/verb-queue.json` — 3 verbs. Add with `{ inf, en, type }` plus `stem`
+  for a stem-changer or `like` for a prefixed compound;
+  **`node tools/audit-verbs.js` checks your classification against 11,834 real
+  sentences** and fails on one nothing supports.
+- `spec/vocab-queue.json` — 32 entries still marked `known:false`, needing only
+  an English gloss. Do not change `es`, and do not re-derive gender or theme.
+- `spec/collocation-queue.json` — **2,263 collocations** with no vocabulary
+  entry to hang from (`ser alto`, `llevar gafas`, `desempeñar un cargo`). Add
+  them as vocabulary entries; only `en` is missing. These matter most at B2/C1,
+  where the collocation IS the unit of vocabulary.
+
+If you add a verb or a word, re-run `node tools/harvest/build-vocab.js` and
+`node tools/harvest/fix-vocab.js --write` so the derived fields stay in step.
 
 ## Do NOT generate these — they are derived by script
 
@@ -236,51 +263,80 @@ gate: a learner at B1 sees only material at or below gate 5. So a lesson's
 `cefr` and `level` are not decoration — they decide who ever sees it. Getting
 them wrong hides the lesson rather than misfiling it.
 
-## Coverage as of this brief
+## Writing for B2 and C1 — what actually makes it harder
 
-| strand | units in the syllabus | written |
-|---|---|---|
-| function | 379 | 44 (A1-A2 essentially complete) |
-| discourse | 79 | 18 |
-| genre | 100 | 9 |
-| grammar | 255 | 1 (template only) |
-| notion | 258 | 1 (template only) |
+The single failure to avoid is **content that is longer rather than harder**. A
+C1 lesson is not a B1 lesson with more words. If a strong B1 learner could
+answer your C1 item, it is wrong however advanced its vocabulary looks.
 
-Grammar and notion are the large gaps at every level, and were blocked until
-now — do not assume A1/A2 is finished because its function lessons are.
+What genuinely raises the level:
 
-### Practice material — a separate axis from lessons
+- **Register and its consequences.** At B2 the exponents of a function stop
+  being interchangeable; at C1 the choice carries social meaning that a wrong
+  pick actively breaks. This is why `registerContrast` is enforced on function
+  and discourse lessons.
+- **Subordination and mood.** Concessives, consecutives, conditionals beyond
+  `si + presente`, sequence of tenses, the subjunctive in relative and
+  adverbial clauses.
+- **Discourse.** Cohesion across sentences, reformulation, mitigation, reported
+  speech, the argumentative connectors in `data/connectors.js`.
+- **Connotation.** Words that differ in nuance rather than denotation, and the
+  collocations already derived into `data/vocab.js`.
+
+## Practice material — the shapes you have
 
 `data/passages.js`, `data/apply.js` and `data/writing.js` feed the Comprender,
-Aplicar and Producir stages of every session. They are NOT lessons, and the
-1,071 figure above does not include them. Current state, by level gate:
+Aplicar and Producir stages. **The views for B2/C1-specific exercise types do
+not exist**, so use the shapes that are implemented and make the CONTENT
+harder inside them:
+
+| file | permitted types |
+|---|---|
+| `passages.js` | questions: `mcq`, `short`, `translate` |
+| `apply.js` | `cloze`, `transform` |
+| `writing.js` | `build`, `translate`, `write`, `paragraph` |
+
+`transform` is where reformulation lives — *"rewrite with `de ahí que`"*,
+*"say this without naming who is responsible"*. `paragraph` plus the B2/C1
+constraints is where argument lives. Those constraints exist and are checked:
+
+```
+connectorFrom {class}   avoidsAny {words}     avoidsPerson {person}
+subjunctiveAfter {trigger}   cliticCluster    sePassive
+distinctTenses {n}      minSentences {n}
+```
+
+So an argumentative C1 task is a `paragraph` with, say, `connectorFrom:
+contraargumentativo`, `subjunctiveAfter: 'aunque'`, `avoidsPerson: 'tú'` and
+`minSentences: 5`. A formal-register task is `write` with `avoidsPerson: 'tú'`
+and `avoidsAny` of colloquialisms. Every model answer must satisfy its own
+constraints — `test-checker.js` enforces that.
+
+### Passage targets and how they change by level
 
 | | A1 | A2 | B1 | B2 | C1 |
 |---|---|---|---|---|---|
-| passages | 87 | 22 | **11** | **0** | **0** |
-| apply (cloze) | 118 | 163 | 61 | **0** | **0** |
-| writing | 156 | 91 | 28 | **0** | **0** |
+| have | 87 | 22 | 11 | 0 | 0 |
+| add | — | +40 | +70 | +80 | +80 |
+| length | 30–60 | 60–100 | 100–160 | 200–300 | 320–450 |
+| glossary | English | English | English | **Spanish** | **none** |
 
-B2 and C1 have nothing at all: a learner there gets a lesson and then three
-empty stages. **B1 is nearly as bad** — 11 passages is under a fortnight before
-they repeat, against 251 lessons the level will eventually hold. A2 passages
-(22) are thin for the same reason.
+The glossary language is the important one. **At B2 the gloss is a Spanish
+definition, not a translation** (`la sequía — un periodo largo sin lluvia`), and
+**at C1 there is none at all** — so a C1 passage must carry itself. This comes
+from `glossLang` in `data/taxonomy.js`.
 
-Targets, as a floor, so a level does not repeat itself inside a few weeks:
+Also add per level: **apply** +80 B1, +120 B2, +120 C1; **writing** +50 B1,
++80 B2, +80 C1.
 
-| | A1 | A2 | B1 | B2 | C1 |
-|---|---|---|---|---|---|
-| passages | have enough | +40 | +70 | +80 | +80 |
-| apply | have enough | have enough | +80 | +120 | +120 |
-| writing | have enough | have enough | +50 | +80 | +80 |
+Spread passages across the 20 themes in `data/taxonomy.js`. The existing ones
+cluster on everyday life, and the themes that carry real register at B2/C1 —
+`politica`, `economia`, `medios`, `ciencia`, `naturaleza` — have no coverage at
+all. Tag every passage with its `theme` and `cefr`: they decide which level
+section ever shows it.
 
-Passage length and glossing come from the level (`data/taxonomy.js`): A1 30-60
-words, A2 60-100, B1 100-160, B2 200-300, C1 320-450. **The glossary language
-changes**: English through B1, **Spanish at B2**, and none at all at C1 — so a
-C1 passage has to carry itself without a crutch. Spread passages across the 20
-themes rather than clustering on everyday life; at B2/C1 the themes that carry
-real register (`politica`, `economia`, `medios`, `ciencia`) are the ones with
-no coverage at all today.
+Each passage still needs `gloss`, and 3–5 questions mixing `mcq`, `short` and
+exactly one `translate` whose line appears verbatim in the text. At B2/C1 the
+`mcq` questions should test inference and attitude — what the writer implies,
+which of two positions is being reported — not fact retrieval.
 
-Each passage still needs its `gloss`, 3-5 questions mixing `mcq`, `short` and
-exactly one `translate` whose line appears verbatim in the text.
