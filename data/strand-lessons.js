@@ -7165,6 +7165,103 @@ window.STRAND_LESSONS = [
     { id: 'p:orafin:cloze', kind: 'cloze', text: 'Necesito gafas ___ leer.', accept: ['para'] },
     { id: 'p:orafin:recall', kind: 'recall', front: 'When the subject of the purpose-action is the same as the main subject, what follows para?', back: 'the bare infinitive — para + infinitivo' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — A1 function/discourse/genre, remaining outstanding units per
+ * tools/todo.js.
+ *
+ * Skipped: func-a1-expresar-aprobacion-y-desaprobacion (seq 61) — 3 of its 4
+ * spec points are paralinguistic gestures (nodding, head-shaking, tongue
+ * clicks), not Spanish text; consistent with the identical reasoning already
+ * recorded for this unit in BATCH 1 above.
+ * disc-a1-entonacion (seq 75) — already explicitly skipped above (BATCH 2):
+ * intonation contours don't fit the register-contrast exponent model and
+ * this is a text app with no audio. Nothing new to add.
+ * genr-a1-generos-de-transmision-oral (seq 78) — already explicitly skipped
+ * above (BATCH 2): its real content is already covered by the function
+ * lessons and the transactional-conversation genre lesson. Nothing new to
+ * add.
+ *
+ * func-a1-pedir-informacion (seq 57) and func-a1-dar-informacion (seq 59)
+ * are NOT skips: fn-pedir-informacion-a1 and fn-dar-informacion-a1 above
+ * already teach persona/lugar/nacionalidad/cantidad/hora/razón (and
+ * finalidad), tagged with the CHILD pcic ids under each category — but
+ * neither ever tagged the "Cosa" (thing) category, so todo.js still counts
+ * both units outstanding at the category-header level. The lesson below
+ * fills that one real gap (asking and saying what a thing is) and tags the
+ * header ids, closing both units without re-teaching what is already
+ * written.
+ * ========================================================================== */
+{
+  id: 'fn-preguntar-decir-cosa-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  pcic: ['funciones:A1:15', 'funciones:A1:16', 'funciones:A1:54', 'funciones:A1:55'],
+  title: 'Preguntar y decir qué es algo',
+  summary: 'Asking what an unnamed thing IS uses the neuter esto/eso — you cannot yet agree a gender with something you have not identified — and the answer is a plain declarative sentence, no different in shape from any other statement of fact.',
+  sections: [
+    { h: 'Asking: the neuter esto/eso', html: 'Pointing at something you cannot name yet, you ask <i>¿Qué es esto?</i> (close to you) or <i>¿Qué es eso?</i> (close to the listener) — the neuter form, because until the thing is named it has no gender to agree with.' },
+    { h: 'Answering: a plain statement', html: 'The answer is a normal declarative sentence naming the thing: <i>Es mi móvil</i>, <i>Es un diccionario de español</i>. Once it is named, any demonstrative that follows takes its real gender: <i>este diccionario</i>, not <i>esto diccionario</i>.' },
+    { h: 'Register: pointing casually vs. asking a stranger', html: 'Among friends you just point and ask; with a stranger you soften it first: <i>Perdone, ¿sabe usted qué es esto?</i> — the usted form and the opening <i>perdone</i> do the polite work.' }
+  ],
+  exponents: [
+    { es: '¿Qué es esto?', en: "What's this?", register: 'coloquial', note: 'casual, said while pointing, among friends or family' },
+    { es: 'Perdone, ¿sabe usted qué es esto?', en: 'Excuse me, do you know what this is?', register: 'formal', note: 'usted — asking a stranger politely' },
+    { es: 'Es mi móvil.', en: "It's my phone.", register: 'neutral' },
+    { es: 'Es un diccionario de español.', en: "It's a Spanish dictionary.", register: 'neutral' }
+  ],
+  pitfalls: [
+    'Use the neuter <i>esto/eso</i>, never <i>este/esta</i>, when you do not yet know what the thing is — once it is named, agree the gender normally: <i>esto</i> → <i>este diccionario</i>.',
+    'The answer needs its own article like any noun would (<i>un diccionario</i>), except for the special cases already learned (profession/nationality nouns after <i>ser</i>, which take none).'
+  ],
+  examples: [
+    { es: '—¿Qué es esto? —Es un bolígrafo.', en: "—What's this? —It's a pen." },
+    { es: '—Perdone, ¿sabe usted qué es eso? —Es un mapa de la ciudad.', en: '—Excuse me, do you know what that is? —It\'s a map of the city.' },
+    { es: '—¿Qué es eso que tienes ahí? —Es mi pasaporte.', en: "—What's that you've got there? —It's my passport." }
+  ],
+  probes: [
+    { id: 'p:cosa:neutro', kind: 'mcq', q: 'Señalas un objeto sin nombrarlo. ¿Qué preguntas?',
+      options: ['¿Qué es este?', '¿Qué es esto?', '¿Qué es esta?'], answer: 1 },
+    { id: 'p:cosa:registro', kind: 'mcq', q: 'Le preguntas a un desconocido, con educación, qué es un objeto.',
+      options: ['¿Qué es esto?', 'Perdone, ¿sabe usted qué es esto?', 'Oye, ¿qué es esto?'], answer: 1 },
+    { id: 'p:cosa:cloze', kind: 'cloze', text: '—¿Qué es esto? —___ mi móvil.', accept: ['Es', 'es'] },
+    { id: 'p:cosa:recall', kind: 'recall', front: 'Why esto/eso and not este/ese when asking what something is?', back: 'the thing has no name yet, so it has no gender to agree with — the neuter is used until it is identified' }
+  ]
+},
+
+{
+  id: 'fn-valorar-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  pcic: ['funciones:A1:95', 'funciones:A1:96', 'funciones:A1:97', 'funciones:A1:98', 'funciones:A1:99'],
+  title: 'Valorar: bien, mal, regular',
+  summary: 'A fixed little scale of one-word verdicts — bien, mal, regular, así así — handles most quick evaluations in speech; when you need to grade a specific quality, es + muy/bastante/un poco + adjective takes over, and that version works in writing too.',
+  sections: [
+    { h: 'The quick scale', html: 'Asked how something was, four fixed answers cover most of the range: <i>(muy/bastante) bien</i>, <i>(muy/bastante) mal</i>, <i>regular</i> (so-so — not "usual", a false friend), <i>así, así</i> (also so-so, more casual).' },
+    { h: 'Grading a specific quality', html: 'To evaluate one quality precisely rather than give a general verdict, use <i>es</i> + a degree word + adjective: <i>Es (muy/bastante/un poco) + adjetivo</i> — <i>Esta camisa es bastante fea</i>, <i>El ejercicio es un poco difícil</i>. Unlike the quick verdicts, this works fine in writing, not just conversation.' },
+    { h: 'A note on gesture', html: 'In speech these short verdicts are often paired with a nod, a head-shake, or a hand-wobble for <i>así así</i> — but the gesture adds nothing you need to type or read; the words alone carry the meaning here.' }
+  ],
+  exponents: [
+    { es: '—¿Qué tal la excursión? —Muy bien.', en: '—How was the trip? —Very good.', register: 'coloquial' },
+    { es: '—¿Qué tal el examen? —Bastante mal.', en: '—How was the exam? —Pretty bad.', register: 'coloquial' },
+    { es: '—¿Qué tal? —Regular, la verdad.', en: '—How\'s it going? —So-so, to be honest.', register: 'coloquial', note: 'regular here means "so-so", not "usual" — a false friend for English speakers' },
+    { es: '—¿Te gustó la película? —Así, así.', en: '—Did you like the film? —So-so.', register: 'coloquial' },
+    { es: 'El Museo del Prado es muy interesante.', en: 'The Prado Museum is very interesting.', register: 'neutral', note: 'a graded evaluation of one quality, fine in writing too' }
+  ],
+  pitfalls: [
+    '<i>Regular</i> as a verdict means "so-so" — do not read it as "usual/regular" the way English would.',
+    'The quick one-word verdicts (<i>bien, mal, regular, así así</i>) are conversational; for a written evaluation, use the graded <i>es + adjetivo</i> pattern instead.'
+  ],
+  examples: [
+    { es: '—¿Qué tal el viaje? —Muy bien, gracias.', en: '—How was the trip? —Very good, thanks.' },
+    { es: 'Esta camisa es bastante fea.', en: 'This shirt is pretty ugly.' },
+    { es: 'El ejercicio es un poco difícil.', en: 'The exercise is a little difficult.' }
+  ],
+  probes: [
+    { id: 'p:valorar:falsofriend', kind: 'mcq', q: '"Regular" como valoración significa:',
+      options: ['usual, normal', 'así así, ni bien ni mal', 'muy bien'], answer: 1 },
+    { id: 'p:valorar:escrito', kind: 'mcq', q: 'Estás escribiendo una reseña — ¿qué estructura usas?',
+      options: ['Regular.', 'Así, así.', 'Es muy interesante.'], answer: 2 },
+    { id: 'p:valorar:cloze', kind: 'cloze', text: 'El ejercicio es un poco ___. (difficult)', accept: ['difícil'] },
+    { id: 'p:valorar:recall', kind: 'recall', front: 'The four quick one-word verdicts for "how was it?"', back: 'bien, mal, regular, así así' }
+  ]
 }
 
 ];
