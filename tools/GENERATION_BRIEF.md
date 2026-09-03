@@ -209,19 +209,32 @@ answerable by a strong B1 learner, it is wrong regardless of its vocabulary.
 
 ## Not yet done (do not assume these exist)
 
-- The session does not yet *choose* a strand lesson as a day's focus
-  (`js/selector.js`, `js/session.js`). Strand lessons are merged into
-  `window.GRAMMAR_LESSONS` and render correctly, but nothing schedules them.
-- `js/profile.js` still uses beginner/standard/refresher rather than the
-  LEVELS/SUPPORT split in `data/taxonomy.js`. Vocabulary gating within it IS
-  now CEFR-aware (`Profile.wordAllowed`), so a beginner meets A1-A2 words.
-- Per-level accent theming is declared in taxonomy but nothing sets
-  `data-level` on the document yet.
 - Placement, skip checks and sequence-position progression are designed
-  (probes exist on every lesson) but not built.
+  (probes exist on every lesson) but not built: the session still finds the
+  next lesson by walking the syllabus for the first unstudied one.
+- The B2/C1 apply and produce modes have no views. `applyMode: 'register'` and
+  `'reformular'` and `produceStyle: 'extended'` are carried on the level as
+  `applyModeTarget`/`produceStyleTarget` and fall back to typing.
+- `SUPPORT` (guided/standard/fast) is declared in `data/taxonomy.js` but is not
+  yet a separate control; each level currently fixes its own scaffolding.
 - Enclitic parsing covers imperatives only; `decírselo` and other
   infinitive/gerund attachments still return nothing, because infinitives are
   not in the morphological index.
+
+## What the app does with what you write
+
+Every authored lesson goes in `data/strand-lessons.js` and needs no
+registration anywhere: `js/lessons.js` merges it in and **derives the teaching
+order** from its own `level`, `strand` and title — level first, then strand
+(grammar and notion before the functions that use them, discourse and genre
+after). `window.SYLLABUS` and `window.GRAMMAR_LESSONS` are both built from
+that, so a new lesson takes its place in the ladder automatically.
+
+The app is divided into **A1-C1 level sections** (`js/profile.js`, generated
+from `window.LEVELS`), each with its own accent colour and its own content
+gate: a learner at B1 sees only material at or below gate 5. So a lesson's
+`cefr` and `level` are not decoration — they decide who ever sees it. Getting
+them wrong hides the lesson rather than misfiling it.
 
 ## Coverage as of this brief
 
@@ -235,3 +248,9 @@ answerable by a strong B1 learner, it is wrong regardless of its vocabulary.
 
 Grammar and notion are the large gaps at every level, and were blocked until
 now — do not assume A1/A2 is finished because its function lessons are.
+
+**There are also no B2 or C1 passages, cloze items or writing tasks at all.**
+Those files (`data/passages.js`, `data/apply.js`, `data/writing.js`) stop at
+level 5, so the top two levels currently have lessons and vocabulary but
+nothing to read or practise on. Passages at B2 take a Spanish-language
+glossary and at C1 no gloss at all (`glossLang` in `data/taxonomy.js`).

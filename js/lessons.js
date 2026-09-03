@@ -202,7 +202,16 @@
     });
   }
 
-  window.GRAMMAR_LESSONS = build();
-  window.SYLLABUS = buildSyllabus(window.GRAMMAR_LESSONS);
+  /* The session walks GRAMMAR_LESSONS to find the next unstudied lesson, so the
+   * ARRAY has to be in teaching order — deriving a separate SYLLABUS list and
+   * leaving the array in build order would teach a B2 function lesson as
+   * lesson 18, ahead of every A1 one. Order the array itself. */
+  var built = build();
+  var syllabus = buildSyllabus(built);
+  var byId = {};
+  built.forEach(function (l) { byId[l.id] = l; });
+  window.GRAMMAR_LESSONS = syllabus.map(function (s) { return byId[s.id]; })
+    .filter(function (l) { return !!l; });
+  window.SYLLABUS = syllabus;
   window.SEED_SYLLABUS = SEED;
 })();
