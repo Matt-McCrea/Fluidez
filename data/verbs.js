@@ -1426,5 +1426,10 @@ window.VERBS = [
 { inf:'agradecer', en:'to thank, to be grateful for', type:'er' },
 { inf:'sospechar', en:'to suspect', type:'ar' },
 { inf:'verter', en:'to pour, to dump (waste)', type:'er', stem:'ie' },
-{ inf:'reflejar', en:'to reflect', type:'ar' }
+{ inf:'reflejar', en:'to reflect', type:'ar' },
+{ inf:'retrasarse', en:'to be delayed, to run late', type:'ar' },
+{ inf:'optar', en:'to opt (for), to choose', type:'ar' },
+{ inf:'comprometerse', en:'to commit (to something)', type:'er' },
+{ inf:'motivar', en:'to motivate', type:'ar' },
+{ inf:'bromear', en:'to joke around', type:'ar' }
 ];
