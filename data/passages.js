@@ -569,7 +569,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'tienda-segunda-mano-verbos19', title: 'Una tienda de segunda mano', level: 1,
+  id: 'tienda-segunda-mano-verbos19', title: 'Una tienda de segunda mano', level: 4,
   text: 'Mis vecinos venden ropa que ya no usan en una tienda de segunda mano. Deben clasificar cada prenda antes de ponerla en la tienda. Cuando alguien pregunta por un precio, el dueño siempre responde con amabilidad. Yo comprendo por qué la gente prefiere comprar ropa de segunda mano: es más barata y mejor para el planeta. Los fines de semana, corro por el mercadillo buscando gangas antes de que se agoten. Al final del día, el dueño responde a todos los mensajes pendientes.',
   gloss: [
     { es: 'la segunda mano', en: 'secondhand' },

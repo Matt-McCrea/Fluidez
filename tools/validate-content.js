@@ -66,7 +66,13 @@ const NOUN_HOMOGRAPHS = new Set([
   'soluciones', 'funciones', 'proyecto', 'casa', 'regalo', 'centro', 'queja',
   'proceso', 'marca', 'medio', 'medios', 'género', 'artículo', 'artículos',
   'público', 'práctico', 'práctica', 'ópera', 'ampliación', 'reserva',
-  'estudios', 'contratos', 'programas', 'negocios', 'cambios', 'viajes'
+  'estudios', 'contratos', 'programas', 'negocios', 'cambios', 'viajes',
+  // surfaced adding spec/verb-queue.json's B1-C1 batch (coser, nevar,
+  // alegrarse, informar): their subjunctive forms shadow everyday nouns.
+  'cosa', 'cosas', 'nieve', 'alegre', 'informe',
+  // same batch, second pass (temer, moler, tramitar): more everyday nouns
+  // shadowed.
+  'tema', 'muela', 'trámite'
 ]);
 const DETERMINERS = new Set([
   'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas',
@@ -74,12 +80,25 @@ const DETERMINERS = new Set([
   'nuestro', 'nuestra', 'nuestros', 'nuestras',
   'vuestro', 'vuestra', 'vuestros', 'vuestras',
   'este', 'esta', 'estos', 'estas', 'ese', 'esa', 'esos', 'esas',
-  'aquel', 'aquella', 'aquellos', 'aquellas'
+  'aquel', 'aquella', 'aquellos', 'aquellas',
+  // genuine determiner contractions (de+el, a+el) — not quantifiers, so this
+  // does not touch the "never widen to todo/mucho/poco/cada" guidance below.
+  'del', 'al'
+]);
+// A few genuine noun readings that neither determiner-adjacency nor the
+// finite-verb-object heuristic below catches: a quantifier ("cada cosa"),
+// an intervening adjective ("pequeñas cosas"), or a determiner-less mass
+// noun after a verb of occurrence ("caer nieve", like "hacer sol"). Exact
+// two-token phrases only, not a general rule — widening DETERMINERS to
+// quantifiers would gate real verbs ("todos dicen", "cada vez que compra").
+const SAFE_NOUN_PHRASES = new Set([
+  'cada cosa', 'pequeñas cosas', 'caer nieve', 'cada trámite', 'tanto trámite'
 ]);
 function isNounHere(toks, i) {
   if (!NOUN_HOMOGRAPHS.has(toks[i]) || i < 1) return false;
   var prev = toks[i - 1];
   if (DETERMINERS.has(prev)) return true;
+  if (SAFE_NOUN_PHRASES.has(prev + ' ' + toks[i])) return true;
   // Bare plurals take no article ("negocia soluciones justas"), so also accept
   // the object position: directly after a finite verb. Spanish does not put two
   // conjugated verbs side by side without a conjunction, so a word there is a

@@ -93,12 +93,19 @@ if (!only || only === 'strand') (window.STRAND_LESSONS || []).forEach(l => {
 });
 
 /* ---- lint ---------------------------------------------------------------- */
+// Words that are correct exactly as accented but whose DEACCENTED form
+// collides with a form the engine also generates for an unrelated verb —
+// "fábricas" (factories, noun) vs "fabricas" (you manufacture, fabricar).
+// Both spellings are real Spanish; the engine only proves the second one
+// exists, not that the first is wrong. Add here — never by deleting the
+// accent — when a genuinely correct word gets flagged this way.
+const KNOWN_CORRECT = new Set(['fábricas']);
 const accentErrors = [], unknown = new Map();
 let tokens = 0;
 texts.forEach(({ where, text }) => {
   E.tokenize(text).forEach(w => {
     tokens++;
-    if (lex.has(w)) return;
+    if (lex.has(w) || KNOWN_CORRECT.has(w)) return;
     const cands = engineDeac.get(deac(w));
     if (cands && cands.size) accentErrors.push({ where, got: w, expected: [...cands].join(' / ') });
     else {

@@ -62,9 +62,31 @@ window.VERBS.forEach(v => formsOf(v, v.stem).forEach(w => {
   if (!OTHERS.has(w)) OTHERS.set(w, new Set());
   OTHERS.get(w).add(v.inf);
 }));
+// Corpus words that exactly spell a WRONG hypothetical stem-class form of a
+// specific verb but are actually an unrelated common word (an adjective, a
+// noun) — not evidence about that verb's real class. "cortar" is genuinely
+// regular; the corpus's "cierto" (certain) only LOOKS like its hypothetical
+// e>ie yo-form. Scoped to the exact (verb, word) pair, never blanket, so it
+// can never hide real evidence about some OTHER verb — "herido" is
+// genuinely herir's participle, once herir is in the dataset; this only
+// blinds heredar's own audit to that coincidence.
+const FALSE_EVIDENCE = new Map([
+  ['cortar', new Set(['cierto', 'ciertas', 'cierta'])],
+  ['cortarse', new Set(['cierto', 'ciertas', 'cierta'])],
+  ['pintar', new Set(['puente', 'puentes'])],
+  ['pintarse', new Set(['puente', 'puentes'])],
+  ['portarse', new Set(['puerto', 'puertas', 'puerta'])],
+  ['heredar', new Set(['herido', 'heridas', 'herida'])],
+  ['pudrirse', new Set(['piedra', 'piedras'])],
+  ['partir', new Set(['puerto', 'puertas', 'puerta'])],
+  ['partirse', new Set(['puerto', 'puertas', 'puerta'])],
+  ['frotar', new Set(['frito', 'fritas'])],
+  ['desertar', new Set(['desierto', 'desierta'])]
+]);
 function evidenceFor(set, inf) {
   return [...set].filter(w => {
     if (!corpus.has(w)) return false;
+    if (FALSE_EVIDENCE.has(inf) && FALSE_EVIDENCE.get(inf).has(w)) return false;
     const owners = OTHERS.get(w);
     return !owners || (owners.size === 1 && owners.has(inf));
   });
