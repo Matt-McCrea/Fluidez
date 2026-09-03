@@ -1501,6 +1501,9 @@ window.VERBS = window.VERBS.concat([
 { inf:'temblar', en:'to tremble, to shake', type:'ar', stem:'ie' },
 { inf:'filtrar', en:'to filter, to leak', type:'ar' },
 { inf:'repoblar', en:'to repopulate, to reforest', type:'ar', stem:'ue' },
-{ inf:'reforestar', en:'to reforest', type:'ar' }
+{ inf:'reforestar', en:'to reforest', type:'ar' },
+
+/* -- surfaced while writing A2 function lessons on gustar-family verbs --- */
+{ inf:'interesar', en:'to interest, to be of interest', type:'ar' }
 
 ]);

@@ -1136,6 +1136,573 @@ window.STRAND_LESSONS = [
     { id: 'p:describirlugar:recall', kind: 'recall',
       front: 'Verb that introduces an inventory of what a place contains', back: 'hay' }
   ]
+},
+
+/* ============================================================================
+ * BATCH 3 — seq 161-176 of spec/syllabus-draft.json (A2 function).
+ * Skipped: func-a2-valorar (164) — spec conflates ~8 distinct PCIC
+ * subsections (valorar, acuerdo, desacuerdo, certeza, conocimiento,
+ * obligación, capacidad...), same problem as its A1 counterpart. Needs
+ * splitting before authoring.
+ * ========================================================================== */
+{
+  id: 'fn-identificar-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:9', 'funciones:A2:10', 'funciones:A2:11'],
+  title: 'Identificar (A2)',
+  summary: 'Two new ways to identify at A2: naming just the adjective when the noun is already clear ("El azul", not "El jersey azul"), and fronting "a mí/a ti/a Mario" to identify WHO likes or feels something before the verb even appears.',
+  sections: [
+    { h: 'Dropping the repeated noun', html: 'Once the noun is established, keep only the article and the adjective: <i>—¿Cuál prefiere? —El azul.</i> Repeating <i>el jersey azul</i> sounds unnaturally formal.' },
+    { h: 'Naming who, before the verb', html: 'Verbs like <i>gustar</i> put the person who feels something in front, marked with <i>a</i>: <i>A mí me encanta viajar en avión.</i> This <i>a mí/a ti/a Mario</i> is not optional filler — it is how you identify or contrast who you mean.' }
+  ],
+  exponents: [
+    { es: '—¿Cuál prefiere? —El azul.', en: '—Which do you prefer? —The blue one.', register: 'neutral', note: 'noun dropped once established' },
+    { es: 'A mí me encanta viajar en avión.', en: 'I love travelling by plane.', register: 'coloquial', note: 'a mí identifies who, before the verb — enthusiastic, personal' },
+    { es: 'A ellas les gusta levantarse pronto.', en: 'They (f) like getting up early.', register: 'neutral', note: 'identifying a specific pair of people, third person' },
+    { es: '—¿A quién le gusta la música clásica? —A Mario y a Cristina.', en: '—Who likes classical music? —Mario and Cristina.', register: 'neutral', note: 'a + nombre propio — identifying by name' }
+  ],
+  pitfalls: [
+    "The article still agrees with the dropped noun's gender/number: <i>el azul</i> (jersey, masc.) but <i>la azul</i> (camisa, fem.).",
+    '<i>A mí/a ti/a él...</i> before <i>gustar</i>-type verbs does not replace <i>me/te/le</i> — both appear together: <i>A mí me gusta</i>, never just <i>A mí gusta</i>.'
+  ],
+  examples: [
+    { es: '—¿Qué camisa te gusta? —La roja.', en: '—Which shirt do you like? —The red one.' },
+    { es: 'A mí no me gusta el pescado, pero a él sí.', en: "I don't like fish, but he does." },
+    { es: '¿A quién le toca pagar?', en: "Whose turn is it to pay?" }
+  ],
+  probes: [
+    { id: 'p:identificara2:elipsis', kind: 'mcq',
+      q: '—¿Cuál quieres? (ya sabéis que habláis de jerséis) ¿Cómo respondes de forma natural?',
+      options: ['Quiero el jersey azul.', 'Quiero el azul.', 'Quiero azul.'], answer: 1 },
+    { id: 'p:identificara2:ami', kind: 'mcq',
+      q: '¿Cuál identifica a la persona ANTES del verbo?',
+      options: ['Me gusta el cine.', 'A mí me gusta el cine.', 'Gusta el cine.'], answer: 1 },
+    { id: 'p:identificara2:cloze', kind: 'cloze',
+      text: 'A ellas ___ gusta levantarse pronto.', accept: ['les'] },
+    { id: 'p:identificara2:recall', kind: 'recall',
+      front: 'When the noun is already clear, keep only the article and the ___', back: 'adjective' }
+  ]
+},
+
+{
+  id: 'fn-pedir-informacion-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:33', 'funciones:A2:36', 'funciones:A2:38', 'funciones:A2:40',
+         'funciones:A2:42', 'funciones:A2:44', 'funciones:A2:47', 'funciones:A2:49'],
+  title: 'Pedir información (A2)',
+  summary: 'A2 sharpens the A1 question-word set with more precise tools: distinguishing qué from cuál, asking for a category rather than a name, and offering a straight choice with "o".',
+  sections: [
+    { h: 'Qué vs cuál', html: '<i>Qué</i> asks for a definition or category (<i>¿Qué vino prefieres?</i> — which kind); <i>cuál</i> asks to pick from a known set (<i>¿Cuál es tu comida preferida?</i> — which one, out of your options).' },
+    { h: 'Asking for a type', html: '<i>¿Qué tipo/clase de...?</i> asks for a category, not a specific item: <i>¿Qué tipo de música te gusta?</i> expects "rock" or "clásica", not a song title.' },
+    { h: 'Offering a straight choice', html: '<i>¿Prefieres... o...?</i> puts two named options in the question itself, which narrows the possible answers to those two.' }
+  ],
+  exponents: [
+    { es: '¿Con quién vives?', en: 'Who do you live with?', register: 'neutral', note: 'persona + preposición' },
+    { es: '¿De quién son esos libros?', en: 'Whose books are those?', register: 'neutral', note: 'asking who owns something' },
+    { es: '¿Qué vino prefieres?', en: 'What/which wine do you prefer?', register: 'neutral', note: 'qué — category or definition' },
+    { es: '¿Cuál es tu comida preferida?', en: 'What is your favourite food?', register: 'neutral', note: 'cuál — pick from a known set' },
+    { es: '¿Qué tipo de música te gusta?', en: 'What type of music do you like?', register: 'coloquial', note: 'asking for a category, casual chat' },
+    { es: '¿Prefieres este o aquel?', en: 'Do you prefer this one or that one?', register: 'coloquial', note: 'straight two-option choice' }
+  ],
+  pitfalls: [
+    '<i>Qué</i> and <i>cuál</i> are not interchangeable: <i>¿Cuál es tu color favorito?</i> is right; <i>*¿Qué es tu color favorito?</i> sounds foreign.',
+    '<i>¿Qué tipo de...?</i> expects a category as an answer ("rock", "de aventura") — answering with one specific item misses the question.'
+  ],
+  examples: [
+    { es: '¿Cuándo es tu cumpleaños?', en: 'When is your birthday?' },
+    { es: '¿Para qué necesitas el español?', en: 'What do you need Spanish for?' },
+    { es: '¿Cómo vienes a clase?', en: 'How do you get to class?' }
+  ],
+  probes: [
+    { id: 'p:pedirinfoa2:quecual', kind: 'mcq',
+      q: '"¿___ es tu color favorito?" (elegir entre opciones conocidas)',
+      options: ['Qué', 'Cuál', 'Cómo'], answer: 1 },
+    { id: 'p:pedirinfoa2:tipo', kind: 'mcq',
+      q: '—¿Qué tipo de música te gusta? ¿Cuál es una respuesta correcta?',
+      options: ['El rock.', 'Una canción de Shakira.', 'El cantante.'], answer: 0 },
+    { id: 'p:pedirinfoa2:cloze', kind: 'cloze',
+      text: '¿___ quién vives?', accept: ['Con', 'con'] },
+    { id: 'p:pedirinfoa2:recall', kind: 'recall',
+      front: 'Question word for picking one out of a KNOWN set of options', back: 'cuál' }
+  ]
+},
+
+{
+  id: 'fn-dar-informacion-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:72', 'funciones:A2:74', 'funciones:A2:76', 'funciones:A2:78', 'funciones:A2:80'],
+  title: 'Dar información (A2)',
+  summary: 'Answering fully at A2 means matching the shape of the question: a place answer needs a locative phrase, a time answer a temporal one, a manner answer an adverb — and getting the category right matters as much as the words.',
+  sections: [
+    { h: 'Match the question type', html: 'A place question wants a place phrase (<i>—¿Dónde vives? —Cerca de la estación</i>), not a full sentence restating the verb. Time, manner and reason answers work the same way — answer in kind.' },
+    { h: 'Time expressions', html: 'Frequency and time answers use a wide toolkit: <i>la semana pasada</i>, <i>nunca</i>, <i>todos los días</i>, <i>desde hace dos años</i>, <i>cuando...</i>. Picking the right one signals whether something is a habit, a one-off, or ongoing.' }
+  ],
+  exponents: [
+    { es: '—¿Con quién vives? —Con mis padres.', en: '—Who do you live with? —With my parents.', register: 'neutral', note: 'person answer, matches the preposition asked' },
+    { es: '—¿Qué vino te gusta más? —Prefiero la cerveza.', en: '—What wine do you like best? —I prefer beer.', register: 'coloquial', note: 'a full declarative answer' },
+    { es: '—¿Dónde está tu casa? —Cerca de la estación.', en: '—Where is your house? —Near the station.', register: 'neutral', note: 'place answer, no full sentence needed' },
+    { es: '—¿Cómo vienes a clase? —En metro.', en: '—How do you get to class? —By metro.', register: 'coloquial', note: 'manner answer, short' },
+    { es: 'Vivo aquí desde hace dos años.', en: "I've lived here for two years.", register: 'neutral', note: 'ongoing time span' }
+  ],
+  pitfalls: [
+    'A place question does not need a full sentence back — <i>Cerca de la estación</i> answers <i>¿Dónde vives?</i> completely; adding <i>Vivo cerca de la estación</i> is not wrong, just more formal.',
+    '<i>Nunca</i> needs no <i>no</i> when it starts the answer, but keeps it if it follows the verb: <i>Nunca hago deporte</i> / <i>No hago deporte nunca.</i>'
+  ],
+  examples: [
+    { es: '—¿Para quién es? —Para Elena. Mañana es su cumpleaños.', en: "—Who's it for? —For Elena. It's her birthday tomorrow." },
+    { es: '—¿Haces deporte? —No, nunca.', en: '—Do you play sports? —No, never.' },
+    { es: 'Leo todos los días antes de dormir.', en: 'I read every day before going to sleep.' }
+  ],
+  probes: [
+    { id: 'p:darinfoa2:lugar', kind: 'mcq',
+      q: '—¿Dónde está tu casa? ¿Cuál es una respuesta natural?',
+      options: ['Cerca de la estación.', 'Sí, está.', 'Es mi casa.'], answer: 0 },
+    { id: 'p:darinfoa2:frecuencia', kind: 'mcq',
+      q: '"Vivo aquí ___ hace dos años." (tiempo continuo)',
+      options: ['desde', 'hace', 'desde hace'], answer: 2 },
+    { id: 'p:darinfoa2:cloze', kind: 'cloze',
+      text: '—¿Haces deporte? —No, ___.', accept: ['nunca'] },
+    { id: 'p:darinfoa2:recall', kind: 'recall',
+      front: 'A place question expects an answer in what shape?', back: 'a locative phrase, not a full sentence' }
+  ]
+},
+
+{
+  id: 'fn-acuerdo-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:121', 'funciones:A2:122', 'funciones:A2:123', 'funciones:A2:124'],
+  title: 'Expresar acuerdo (A2)',
+  summary: 'A2 agreement adds "sí" as an opener and lets you frame it as your own belief ("yo también creo que") rather than a bare echo — more visible commitment than the A1 repetition trick.',
+  sections: [
+    { h: 'Opening with sí', html: 'A2 agreement almost always opens with <i>Sí,</i> before the actual agreement — a small but consistent marker that A1\'s bare repetition lacks.' },
+    { h: 'Framing it as belief', html: '<i>Yo también creo que...</i> does more work than repeating the opinion: it says you arrived at the same view independently, not just that you are nodding along.' }
+  ],
+  exponents: [
+    { es: 'Sí, es verdad.', en: "Yes, that's true.", register: 'coloquial' },
+    { es: 'Sí, para mí también es la mejor película que han hecho.', en: "Yes, for me too, it's the best film they've made.", register: 'neutral', note: 'para mí también — repeats the opinion, adds your stance' },
+    { es: 'Sí, yo también creo que Isabel es muy inteligente.', en: 'Yes, I also think Isabel is very intelligent.', register: 'neutral', note: 'yo también creo que — frames it as your own belief' },
+    { es: '—Esto es muy difícil. —Sí, estoy de acuerdo.', en: '—This is very hard. —Yes, I agree.', register: 'neutral', note: 'fixed formula, works in most settings' }
+  ],
+  pitfalls: [
+    '<i>Para mí también</i> and <i>yo también creo que</i> both agree, but the second is stronger — it restates the claim as your own thought, not just a matching reaction.'
+  ],
+  examples: [
+    { es: '—El español es más fácil que el alemán. —Sí, es verdad.', en: "—Spanish is easier than German. —Yes, that's true." },
+    { es: '—Me parece un poco caro. —Sí, para mí también.', en: '—It seems a bit expensive to me. —Yes, for me too.' },
+    { es: 'Sí, estoy de acuerdo contigo.', en: 'Yes, I agree with you.' }
+  ],
+  probes: [
+    { id: 'p:acuerdoa2:abrir', kind: 'mcq',
+      q: '¿Con qué palabra suele empezar el acuerdo en A2?',
+      options: ['No', 'Sí', 'Bueno'], answer: 1 },
+    { id: 'p:acuerdoa2:creoque', kind: 'mcq',
+      q: '¿Cuál expresa que TÚ también llegaste a la misma opinión, no solo que la repites?',
+      options: ['Sí, es verdad.', 'Sí, yo también creo que...', 'Vale.'], answer: 1 },
+    { id: 'p:acuerdoa2:cloze', kind: 'cloze',
+      text: 'Sí, estoy de ___.', accept: ['acuerdo'] },
+    { id: 'p:acuerdoa2:recall', kind: 'recall',
+      front: 'Fixed agreement formula that works in almost any setting', back: 'Estoy de acuerdo.' }
+  ]
+},
+
+{
+  id: 'fn-posibilidad-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:143', 'funciones:A2:144', 'funciones:A2:145'],
+  title: 'Expresar posibilidad',
+  summary: 'Three ways to say something might be true, each committing a little differently: quizá stands alone as a guess, es probable frames it almost like a judgement, and puede ser answers someone else\'s claim without confirming it.',
+  sections: [
+    { h: 'A guess vs an answer', html: '<i>Quizá</i> can open a sentence on its own, offering a guess nobody asked for. <i>Es probable</i> and <i>puede ser</i> normally respond to something someone else just said.' },
+    { h: 'How much you commit', html: '<i>Es probable</i> sounds close to agreement; <i>puede ser</i> is the most hedged of the three — it leaves real room for doubt.' }
+  ],
+  exponents: [
+    { es: 'Está un poco triste, quizá ha recibido una mala noticia.', en: "She's a bit sad, maybe she got some bad news.", register: 'neutral', note: 'quizá — a guess, offered unprompted' },
+    { es: '—La vida en el campo es mejor que en la ciudad. —Sí, es probable.', en: "—Life in the countryside is better than in the city. —Yes, it's probably true.", register: 'neutral', note: 'es probable — almost a judgement' },
+    { es: '—Me ha dicho Isabel que tus vecinos van a vender el piso. —Sí, puede ser.', en: "—Isabel told me your neighbours are going to sell the flat. —Yes, could be.", register: 'coloquial', note: 'puede ser — noncommittal response to someone else\'s claim' }
+  ],
+  pitfalls: [
+    '<i>Quizá(s)</i> can trigger the subjunctive in more formal registers later on, but at this level it is fine with the indicative, as shown here.'
+  ],
+  examples: [
+    { es: 'Quizá llueva mañana.', en: 'Maybe it will rain tomorrow.' },
+    { es: '—¿Vendrá Marta a la fiesta? —Es probable.', en: '—Will Marta come to the party? —Probably.' },
+    { es: '—Creo que se han mudado. —Puede ser, no lo sé seguro.', en: "—I think they've moved. —Could be, I don't know for sure." }
+  ],
+  probes: [
+    { id: 'p:posibilidada2:sinpreguntar', kind: 'mcq',
+      q: '¿Cuál puedes usar para ofrecer una idea sin que nadie te pregunte?',
+      options: ['Es probable.', 'Puede ser.', 'Quizá...'], answer: 2 },
+    { id: 'p:posibilidada2:hedge', kind: 'mcq',
+      q: '¿Cuál dice MENOS, dejando más espacio para la duda?',
+      options: ['Es probable.', 'Puede ser.', 'Es verdad.'], answer: 1 },
+    { id: 'p:posibilidada2:cloze', kind: 'cloze',
+      text: '—¿Vendrá Marta? —Es ___.', accept: ['probable'] },
+    { id: 'p:posibilidada2:recall', kind: 'recall',
+      front: 'Word that can open a sentence on its own with an unprompted guess', back: 'quizá(s)' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-conocimiento-a2', strand: 'function', cefr: 'A2', level: 2, theme: 'educacion',
+  pcic: ['funciones:A2:152', 'funciones:A2:153', 'funciones:A2:154'],
+  title: 'Preguntar por el conocimiento de algo',
+  summary: 'Asking whether someone knows something splits the same way saber/conocer does: sabes for facts and skills, conoces for people and places, and has aprendido/estudiado for something learned formally.',
+  sections: [
+    { h: 'Same split as saber/conocer', html: 'The question mirrors the statement: <i>¿sabes...?</i> for facts/skills, <i>¿conoces...?</i> for people/places.' },
+    { h: 'A third option: formal study', html: '<i>¿Has aprendido/estudiado...?</i> asks specifically about something learned through study, distinct from general familiarity.' }
+  ],
+  exponents: [
+    { es: '¿No sabéis bien los verbos?', en: "Don't you (all) know the verbs well?", register: 'coloquial', note: 'sabéis — vosotros, casual classroom register' },
+    { es: '¿Conoces bien a Marcos?', en: 'Do you know Marcos well?', register: 'neutral', note: 'conocer + person' },
+    { es: '¿No has estudiado latín?', en: "Haven't you studied Latin?", register: 'neutral', note: 'formal learning, present perfect' }
+  ],
+  pitfalls: [
+    'A negative question here (<i>¿No sabéis...?</i>) is not really hostile — it often signals mild surprise, not accusation.'
+  ],
+  examples: [
+    { es: '¿Sabes cocinar paella?', en: 'Do you know how to cook paella?' },
+    { es: '¿Conoces un poco el juego?', en: 'Do you know the game a bit?' },
+    { es: '¿Has aprendido mucho este año?', en: 'Have you learned a lot this year?' }
+  ],
+  probes: [
+    { id: 'p:preguntarconocimiento:cual', kind: 'mcq',
+      q: '"¿___ bien a Marcos?" (una persona)',
+      options: ['Sabes', 'Conoces', 'Has estudiado'], answer: 1 },
+    { id: 'p:preguntarconocimiento:cual2', kind: 'mcq',
+      q: '"¿___ cocinar paella?" (una habilidad)',
+      options: ['Sabes', 'Conoces', 'Tienes'], answer: 0 },
+    { id: 'p:preguntarconocimiento:cloze', kind: 'cloze',
+      text: '¿No ___ estudiado latín?', accept: ['has'] },
+    { id: 'p:preguntarconocimiento:recall', kind: 'recall',
+      front: 'Question form for something learned specifically through formal study', back: '¿Has aprendido/estudiado...?' }
+  ]
+},
+
+{
+  id: 'fn-expresar-conocimiento-a2', strand: 'function', cefr: 'A2', level: 2, theme: 'educacion',
+  pcic: ['funciones:A2:159', 'funciones:A2:160', 'funciones:A2:161', 'funciones:A2:162', 'funciones:A2:163', 'funciones:A2:164'],
+  title: 'Expresar conocimiento',
+  summary: 'Claiming to know something at A2 adds a hedge almost every native speaker uses: not "sé" or "conozco" alone, but qualified with "un poco", "bastante" or "muy bien" — an unqualified claim can sound like overconfidence.',
+  sections: [
+    { h: 'Hedging how much you know', html: 'Un poco, bastante and muy bien slot into the same spot with saber and conocer, moving the claim along one scale — from barely to thoroughly.' },
+    { h: 'Sé vs saben, and who', html: 'Match the verb ending to who has the knowledge; the hedge word does not change, only the claim\'s honesty about scope.' }
+  ],
+  exponents: [
+    { es: 'Sé un poco de Historia Medieval.', en: 'I know a bit about medieval history.', register: 'neutral', note: 'saber + un poco de — hedged fact' },
+    { es: 'Saben que es inglesa.', en: "They know she's English.", register: 'neutral', note: 'saber + que — knowing a fact' },
+    { es: 'Conozco un poco el país.', en: 'I know the country a little.', register: 'coloquial', note: 'conocer + un poco — hedged familiarity' },
+    { es: 'Conocemos muy bien a Álvaro.', en: 'We know Álvaro very well.', register: 'neutral', note: 'conocer + muy bien — the other end of the same scale' },
+    { es: 'He aprendido la historia del país.', en: "I've learned the country's history.", register: 'neutral', note: 'through study' }
+  ],
+  pitfalls: [
+    'An unhedged <i>Sé español</i> or <i>Conozco España</i> can sound like a stronger claim than intended — native speakers hedge by default.'
+  ],
+  examples: [
+    { es: 'Sabe bastante de vinos.', en: 'She knows quite a lot about wine.' },
+    { es: 'No conozco muy bien esta ciudad.', en: "I don't know this city very well." },
+    { es: 'Han aprendido mucho vocabulario este curso.', en: "They've learned a lot of vocabulary this course." }
+  ],
+  probes: [
+    { id: 'p:expresarconocimiento:hedge', kind: 'mcq',
+      q: '¿Cuál suena más natural para decir que sabes un poco sobre historia?',
+      options: ['Sé Historia.', 'Sé un poco de Historia.', 'Historia sé.'], answer: 1 },
+    { id: 'p:expresarconocimiento:saberconocer', kind: 'mcq',
+      q: '"___ muy bien a Álvaro." (una persona)',
+      options: ['Sabemos', 'Conocemos', 'Aprendemos'], answer: 1 },
+    { id: 'p:expresarconocimiento:cloze', kind: 'cloze',
+      text: 'Sé un poco ___ Historia Medieval.', accept: ['de'] },
+    { id: 'p:expresarconocimiento:recall', kind: 'recall',
+      front: 'Native speakers usually add this kind of word before claiming to know something', back: 'a hedge (un poco, bastante, muy bien)' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-gustos-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:189', 'funciones:A2:190', 'funciones:A2:191'],
+  title: 'Preguntar por gustos e intereses',
+  summary: 'Asking about likes uses gustar-family verbs backwards from English: the thing liked is the grammatical subject, and the person is marked with te/le/os — get the agreement wrong and the sentence breaks, not just sounds odd.',
+  sections: [
+    { h: 'The thing liked is the subject', html: 'In <i>¿Te gusta el cine?</i>, <i>el cine</i> is grammatically the subject — that is why the verb changes to plural when several things are liked: <i>¿Te gustan los animales?</i>' },
+    { h: 'Le is ambiguous on purpose', html: '<i>Le interesa</i> could mean "it interests him", "her" or "you (usted)" — context or an added <i>a él/a ella/a usted</i> resolves it.' }
+  ],
+  exponents: [
+    { es: '¿Te gusta jugar al tenis?', en: 'Do you like playing tennis?', register: 'coloquial', note: 'tú, casual' },
+    { es: '¿Le interesa la política?', en: 'Is he/she interested in politics? / Are you (usted) interested in politics?', register: 'formal', note: 'le — usted or a third person' },
+    { es: '¿Qué tipo de música te gusta?', en: 'What type of music do you like?', register: 'coloquial' }
+  ],
+  pitfalls: [
+    'Match the verb to the THING liked, not the person: <i>Me gusta el libro</i> (singular) but <i>Me gustan los libros</i> (plural) — the person (<i>me</i>) never changes the verb form.'
+  ],
+  examples: [
+    { es: '¿Qué te gusta hacer en tu tiempo libre?', en: 'What do you like doing in your free time?' },
+    { es: '¿Le interesan los documentales?', en: 'Is he/she interested in documentaries?' },
+    { es: '¿Qué tipo de cine os interesa?', en: 'What type of film are you (all) interested in?' }
+  ],
+  probes: [
+    { id: 'p:preguntargustos:concordancia', kind: 'mcq',
+      q: '"¿Te ___ los animales?" (varios animales)',
+      options: ['gusta', 'gustan', 'gustas'], answer: 1 },
+    { id: 'p:preguntargustos:sujeto', kind: 'mcq',
+      q: 'En "¿Te gusta el cine?", ¿cuál es el sujeto gramatical?',
+      options: ['Te', 'el cine', 'gusta'], answer: 1 },
+    { id: 'p:preguntargustos:cloze', kind: 'cloze',
+      text: '¿___ interesa la política? (a usted)', accept: ['Le', 'le'] },
+    { id: 'p:preguntargustos:recall', kind: 'recall',
+      front: 'What determines whether gustar is singular or plural?', back: 'the thing liked (the grammatical subject), not the person' }
+  ]
+},
+
+{
+  id: 'fn-expresar-gustos-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:195', 'funciones:A2:196', 'funciones:A2:197', 'funciones:A2:198',
+         'funciones:A2:199', 'funciones:A2:200', 'funciones:A2:201', 'funciones:A2:202'],
+  title: 'Expresar gustos e intereses',
+  summary: 'Gustar, encantar and interesar sit on a scale of intensity, not just synonyms for "like" — encantar commits much more than gustar, and choosing the wrong one either undersells or overclaims how you feel.',
+  sections: [
+    { h: 'A scale, not synonyms', html: '<i>Gustar</i> is the everyday default; <i>encantar</i> commits much more (closer to "love" than "like"); <i>interesar</i> is about curiosity, which is not the same as enjoyment.' },
+    { h: 'Feeling vs description', html: '<i>Me interesa el cine</i> describes YOUR reaction; <i>El cine es interesante</i> describes the THING — both are true statements but make a different claim.' }
+  ],
+  exponents: [
+    { es: 'A nosotros no nos gusta nada la exposición.', en: "We don't like the exhibition at all.", register: 'neutral', note: 'gustar — the baseline, here negated strongly' },
+    { es: 'Me encantan los coches.', en: 'I love cars.', register: 'coloquial', note: 'encantar — much stronger than gustar, enthusiastic' },
+    { es: 'Me interesa mucho conocer otras culturas.', en: "I'm very interested in learning about other cultures.", register: 'neutral', note: 'interesar — curiosity, not necessarily pleasure' },
+    { es: 'Aprender español es interesante.', en: 'Learning Spanish is interesting.', register: 'neutral', note: 'ser interesante — describing the thing itself, not your feeling' }
+  ],
+  pitfalls: [
+    'Do not reach for <i>encantar</i> as a plain synonym of <i>gustar</i> — using it for something merely fine oversells your enthusiasm.'
+  ],
+  examples: [
+    { es: 'Nos encanta comer fuera los fines de semana.', en: 'We love eating out at weekends.' },
+    { es: 'No me interesa el cine comercial.', en: "I'm not interested in commercial cinema." },
+    { es: '¡Qué interesante!', en: 'How interesting!' }
+  ],
+  probes: [
+    { id: 'p:expresargustos:escala', kind: 'mcq',
+      q: '¿Cuál expresa MÁS entusiasmo?',
+      options: ['Me gusta el chocolate.', 'Me encanta el chocolate.', 'Me interesa el chocolate.'], answer: 1 },
+    { id: 'p:expresargustos:sentirdescribir', kind: 'mcq',
+      q: '¿Cuál describe la COSA, no tu reacción?',
+      options: ['Me interesa el cine.', 'El cine es interesante.', 'Me gusta el cine.'], answer: 1 },
+    { id: 'p:expresargustos:cloze', kind: 'cloze',
+      text: 'Nos ___ los coches.', accept: ['encantan'] },
+    { id: 'p:expresargustos:recall', kind: 'recall',
+      front: 'Verb that expresses curiosity rather than enjoyment', back: 'interesar' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-preferencias-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:205', 'funciones:A2:206', 'funciones:A2:207', 'funciones:A2:208', 'funciones:A2:209'],
+  title: 'Preguntar por preferencias',
+  summary: 'Asking someone to choose can offer them the field wide open, a specific pair, or a category — and matching the question shape to what you actually want to know keeps the answer useful.',
+  sections: [
+    { h: 'Wide open vs narrowed', html: '<i>¿Qué libro prefieren?</i> leaves the field open; naming two options (<i>...el zumo de naranja o el zumo de limón?</i>) narrows the possible answers to those two.' },
+    { h: 'Favourite is not the same as preferred', html: '<i>¿Cuál es tu... favorito/preferido?</i> asks for the single best, without necessarily comparing two named things in the question.' }
+  ],
+  exponents: [
+    { es: '¿Qué libro prefieren?', en: 'Which book do they/you (plural) prefer?', register: 'neutral', note: 'open — any book' },
+    { es: '¿Cuál prefieres: el zumo de naranja o el zumo de limón?', en: 'Which do you prefer: orange juice or lemon juice?', register: 'neutral', note: 'a specific pair named in the question' },
+    { es: '¿Prefieres té o café?', en: 'Do you prefer tea or coffee?', register: 'coloquial', note: 'quick, everyday choice' },
+    { es: '¿Qué tipo de ropa prefieres: elegante o informal?', en: 'What type of clothes do you prefer: smart or casual?', register: 'neutral', note: 'category, still narrowed to two' },
+    { es: '¿Cuál es tu color favorito?', en: 'What is your favourite colour?', register: 'coloquial', note: 'asks for the single best, not a comparison' }
+  ],
+  pitfalls: [
+    'If you name two options with <i>o</i>, a natural answer picks one of THEM — answering with a third thing technically answers a different, wider question.'
+  ],
+  examples: [
+    { es: '¿Qué preferís: ver la tele o ir al cine?', en: 'What do you prefer: watching TV or going to the cinema?' },
+    { es: '¿Qué corbata le gusta más?', en: 'Which tie does he/she like best?' },
+    { es: '¿Quiénes son tus escritores preferidos?', en: 'Who are your favourite writers?' }
+  ],
+  probes: [
+    { id: 'p:preguntarpreferencias:abierta', kind: 'mcq',
+      q: '¿Cuál deja el campo abierto, sin limitar las opciones?',
+      options: ['¿Té o café?', '¿Qué libro prefieres?', '¿Prefieres este o aquel?'], answer: 1 },
+    { id: 'p:preguntarpreferencias:favorito', kind: 'mcq',
+      q: '¿Cuál pide UN solo elemento, no una comparación entre dos?',
+      options: ['¿Cuál es tu color favorito?', '¿Prefieres el rojo o el azul?', '¿Qué tipo de música prefieres?'], answer: 0 },
+    { id: 'p:preguntarpreferencias:cloze', kind: 'cloze',
+      text: '¿___ es tu color favorito?', accept: ['Cuál', 'cuál'] },
+    { id: 'p:preguntarpreferencias:recall', kind: 'recall',
+      front: 'Naming two options with "o" narrows the answer to just those ___', back: 'two' }
+  ]
+},
+
+{
+  id: 'fn-preferencia-comparativa-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:212', 'funciones:A2:213', 'funciones:A2:214'],
+  title: 'Me gusta / interesa más...',
+  summary: 'A bare "me gusta más" states a preference in isolation; adding "que" turns it into an explicit comparison — the same words, but one leaves the alternative implicit and the other names it.',
+  sections: [
+    { h: 'Stated alone vs compared', html: '<i>Me gusta más el té</i> is a preference with the alternative left unsaid; <i>Me gusta más el té que el café</i> makes the comparison explicit.' },
+    { h: 'Nouns and infinitives, same pattern', html: 'The <i>X que Y</i> pattern works whether X/Y are nouns (<i>el té que el café</i>) or infinitives (<i>leer que escribir</i>) — do not mix a noun with an infinitive on either side.' }
+  ],
+  exponents: [
+    { es: 'Me gusta más el té.', en: 'I prefer tea.', register: 'coloquial', note: 'preference stated alone, alternative implicit' },
+    { es: 'Me gusta más el té que el café.', en: 'I prefer tea to coffee.', register: 'neutral', note: 'que names the explicit alternative' },
+    { es: 'Me gusta más leer que escribir.', en: 'I prefer reading to writing.', register: 'neutral', note: 'comparing two infinitives' },
+    { es: 'Nos interesa más ir de excursión a Granada.', en: "We're more interested in going on a trip to Granada.", register: 'neutral', note: 'interesar works the same way' }
+  ],
+  pitfalls: [
+    'Do not add <i>más</i> a second time: <i>*Me gusta más el té más que el café</i> is wrong — <i>más</i> appears once.'
+  ],
+  examples: [
+    { es: 'Me interesa más la literatura que el cine.', en: "I'm more interested in literature than in cinema." },
+    { es: '¿Te gusta más el verano o el invierno?', en: 'Do you prefer summer or winter?' },
+    { es: 'Nos gusta más caminar que coger el coche.', en: 'We prefer walking to taking the car.' }
+  ],
+  probes: [
+    { id: 'p:preferenciacomparativa:que', kind: 'mcq',
+      q: '"Me gusta más el té ___ el café." (comparación explícita)',
+      options: ['y', 'que', 'o'], answer: 1 },
+    { id: 'p:preferenciacomparativa:infinitivo', kind: 'mcq',
+      q: '¿Cuál compara dos infinitivos correctamente?',
+      options: ['Me gusta más leer que escribiendo.', 'Me gusta más leer que escribir.', 'Me gusta más leo que escribo.'], answer: 1 },
+    { id: 'p:preferenciacomparativa:cloze', kind: 'cloze',
+      text: 'Me gusta más el té ___ el café.', accept: ['que'] },
+    { id: 'p:preferenciacomparativa:recall', kind: 'recall',
+      front: 'Word that turns a stated preference into an explicit comparison', back: 'que' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-deseos-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:215', 'funciones:A2:216', 'funciones:A2:217', 'funciones:A2:218'],
+  title: 'Preguntar por deseos',
+  summary: 'Two ways to ask what someone wants sit at different levels of directness: "¿quieres...?" asks plainly, while "¿te gustaría...?" wraps the same question in the conditional, which softens it into more of an invitation.',
+  sections: [
+    { h: 'Plain vs softened', html: '<i>¿Quieres...?</i> asks plainly. <i>¿Te gustaría...?</i>, built on the conditional, reads as more of an invitation than a demand for an answer right now.' }
+  ],
+  exponents: [
+    { es: '¿Quieres ir a París?', en: 'Do you want to go to Paris?', register: 'coloquial', note: 'direct, plain question' },
+    { es: '¿Os gustaría tener una casa más grande?', en: 'Would you (all) like to have a bigger house?', register: 'neutral', note: 'conditional — softer, more hypothetical' },
+    { es: '¿Qué quieres hacer mañana?', en: 'What do you want to do tomorrow?', register: 'coloquial' }
+  ],
+  pitfalls: [
+    '<i>¿Te gustaría?</i> is not just more polite <i>querer</i> — it also frames the thing asked about as hypothetical, not necessarily about to happen.'
+  ],
+  examples: [
+    { es: '¿Quieres un café?', en: 'Do you want a coffee?' },
+    { es: '¿Te gustaría venir a la fiesta?', en: 'Would you like to come to the party?' },
+    { es: '¿Qué te gustaría hacer este verano?', en: 'What would you like to do this summer?' }
+  ],
+  probes: [
+    { id: 'p:preguntardeseos:suave', kind: 'mcq',
+      q: '¿Cuál suena más como una invitación que una pregunta directa?',
+      options: ['¿Quieres ir a París?', '¿Te gustaría ir a París?', '¿Vas a ir a París?'], answer: 1 },
+    { id: 'p:preguntardeseos:que', kind: 'mcq',
+      q: '"¿___ quieres hacer mañana?"',
+      options: ['Cómo', 'Qué', 'Cuál'], answer: 1 },
+    { id: 'p:preguntardeseos:cloze', kind: 'cloze',
+      text: '¿Te ___ tener una casa más grande?', accept: ['gustaría'] },
+    { id: 'p:preguntardeseos:recall', kind: 'recall',
+      front: 'Verb form that softens a question into more of an invitation', back: 'gustaría (condicional)' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-estado-animo-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:226', 'funciones:A2:227', 'funciones:A2:228'],
+  title: 'Preguntar por el estado de ánimo',
+  summary: 'Three near-identical ways to ask how someone is doing — the differences are so small that any one works almost everywhere, which itself is worth knowing: you rarely need to overthink this greeting.',
+  sections: [
+    { h: 'Nearly interchangeable', html: '<i>¿Qué tal estás?</i> and <i>¿Cómo estás?</i> ask the same thing; either works in almost any casual-to-neutral setting.' },
+    { h: 'One with a different job', html: '<i>¿Estás bien?</i> is not a general greeting — it checks for a specific problem, usually after noticing something (a face, a tone, an absence).' }
+  ],
+  exponents: [
+    { es: '¿Qué tal estás?', en: 'How are you?', register: 'coloquial' },
+    { es: '¿Cómo estás?', en: 'How are you?', register: 'neutral' },
+    { es: '¿Estás bien?', en: 'Are you OK?', register: 'coloquial', note: 'checks specifically for a problem, not a general update' }
+  ],
+  pitfalls: [
+    'Asking <i>¿Estás bien?</i> as a plain greeting can sound like you noticed something is wrong — save it for when you actually did.'
+  ],
+  examples: [
+    { es: '—Hola, ¿qué tal estás? —Bien, ¿y tú?', en: '—Hi, how are you? —Good, and you?' },
+    { es: '—¿Cómo estás hoy? —Un poco cansado.', en: '—How are you today? —A bit tired.' },
+    { es: 'Te veo pálido. ¿Estás bien?', en: 'You look pale. Are you OK?' }
+  ],
+  probes: [
+    { id: 'p:preguntarestadoanimo:diferente', kind: 'mcq',
+      q: '¿Cuál NO es un simple saludo, sino que comprueba si algo va mal?',
+      options: ['¿Cómo estás?', '¿Qué tal estás?', '¿Estás bien?'], answer: 2 },
+    { id: 'p:preguntarestadoanimo:cloze', kind: 'cloze',
+      text: '¿___ tal estás?', accept: ['Qué', 'qué'] },
+    { id: 'p:preguntarestadoanimo:mcq2', kind: 'mcq',
+      q: 'Ves a un amigo con mala cara. ¿Qué le preguntas?',
+      options: ['¿Qué tal estás?', '¿Estás bien?', '¿Cómo te llamas?'], answer: 1 },
+    { id: 'p:preguntarestadoanimo:recall', kind: 'recall',
+      front: 'This question checks for a specific problem, not a general update', back: '¿Estás bien?' }
+  ]
+},
+
+{
+  id: 'fn-alegria-satisfaccion-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:229', 'funciones:A2:230', 'funciones:A2:231'],
+  title: 'Expresar alegría y satisfacción',
+  summary: 'A short exclamation reacts to news in the moment; "estoy contento" states your ongoing state — the choice is about whether you are reacting to something just said or describing how you generally feel.',
+  sections: [
+    { h: 'Reaction vs state', html: '<i>¡Muy bien!</i> and <i>¡Qué bien!</i> react to something just said; <i>Estoy contento</i> describes how you generally feel right now, independent of any specific news.' }
+  ],
+  exponents: [
+    { es: '¡Muy bien!', en: 'Great!', register: 'coloquial', note: 'reacting to news just heard' },
+    { es: '¡Qué bien!', en: 'How nice!', register: 'coloquial', note: 'reacting to news just heard' },
+    { es: 'Estoy contento.', en: "I'm happy.", register: 'neutral', note: 'states an ongoing state, not a reaction' }
+  ],
+  pitfalls: [
+    'Using <i>Estoy contento</i> to react to someone else\'s news sounds slightly flat — the exclamations do that job better.'
+  ],
+  examples: [
+    { es: '—He aprobado el examen. —¡Qué bien!', en: '—I passed the exam. —How nice!' },
+    { es: 'Estoy muy contento con mi nuevo trabajo.', en: "I'm very happy with my new job." },
+    { es: '—Nos vamos de vacaciones. —¡Muy bien!', en: "—We're going on holiday. —Great!" }
+  ],
+  probes: [
+    { id: 'p:alegriasatisfaccion:reaccion', kind: 'mcq',
+      q: 'Un amigo te da una buena noticia. ¿Qué dices?',
+      options: ['Estoy contento.', '¡Qué bien!', 'Soy feliz.'], answer: 1 },
+    { id: 'p:alegriasatisfaccion:estado', kind: 'mcq',
+      q: 'Describes cómo te sientes en general, no una reacción. ¿Cuál usas?',
+      options: ['¡Muy bien!', 'Estoy contento.', '¡Qué bien!'], answer: 1 },
+    { id: 'p:alegriasatisfaccion:cloze', kind: 'cloze',
+      text: '—He aprobado. —¡Qué ___!', accept: ['bien'] },
+    { id: 'p:alegriasatisfaccion:recall', kind: 'recall',
+      front: 'Phrase that states your general state, not a reaction to news', back: 'Estoy contento.' }
+  ]
+},
+
+{
+  id: 'fn-sensaciones-fisicas-a2', strand: 'function', cefr: 'A2', level: 2, theme: 'salud',
+  pcic: ['funciones:A2:245', 'funciones:A2:246', 'funciones:A2:248', 'funciones:A2:249', 'funciones:A2:250', 'funciones:A2:251'],
+  title: 'Expresar sensaciones físicas',
+  summary: 'Physical sensations split across two different verb patterns: tener + noun for named cravings (sed, hambre, frío, sueño) and doler working backwards like gustar, where the body part is the grammatical subject, not the person.',
+  sections: [
+    { h: 'Tener + noun', html: '<i>Tengo sed/hambre/frío/calor/sueño</i> — a fixed set of nouns after <i>tener</i>, not adjectives. Never <i>*estoy sed</i>.' },
+    { h: 'Doler works like gustar', html: '<i>Me duele el estómago</i> — the body part is the grammatical subject, so it agrees with the verb: singular body part, singular <i>duele</i>; plural, <i>duelen</i>. The person stays marked with <i>me/te/le</i>, never changing the verb.' }
+  ],
+  exponents: [
+    { es: 'Tengo sed.', en: "I'm thirsty.", register: 'coloquial', note: 'tener + noun — a named physical need' },
+    { es: 'Estoy cansado.', en: "I'm tired.", register: 'neutral', note: 'estar + adjective' },
+    { es: 'Me duele el estómago.', en: 'My stomach hurts.', register: 'coloquial', note: 'doler works like gustar — el estómago is the subject' },
+    { es: 'Me duelen los pies.', en: 'My feet hurt.', register: 'coloquial', note: 'plural subject, plural verb — same pattern as gustar' },
+    { es: 'Tiene dolor de cabeza.', en: 'He/she has a headache.', register: 'neutral', note: 'tener dolor de + body part' }
+  ],
+  pitfalls: [
+    'Do not say <i>*Estoy dolor</i> or <i>*Tengo duele</i> — <i>doler</i> is a full verb (like gustar) and <i>dolor</i> a noun (used with <i>tener</i>); they do not mix.',
+    'Match <i>duele/duelen</i> to the body part, not to how many people are in pain: <i>Nos duele la cabeza</i> (one head each, still singular <i>duele</i> per person mentioned).'
+  ],
+  examples: [
+    { es: 'Tengo mucho sueño hoy.', en: "I'm very sleepy today." },
+    { es: 'Estoy enfermo, no puedo ir a trabajar.', en: "I'm sick, I can't go to work." },
+    { es: '¡Ay! Me duele la espalda.', en: 'Ouch! My back hurts.' }
+  ],
+  probes: [
+    { id: 'p:sensacionesfisicas:tenerestar', kind: 'mcq',
+      q: '"___ mucha sed."',
+      options: ['Estoy', 'Tengo', 'Soy'], answer: 1 },
+    { id: 'p:sensacionesfisicas:doler', kind: 'mcq',
+      q: '"Me ___ los pies." (varios pies)',
+      options: ['duele', 'duelen', 'dueles'], answer: 1 },
+    { id: 'p:sensacionesfisicas:cloze', kind: 'cloze',
+      text: 'Me ___ el estómago.', accept: ['duele'] },
+    { id: 'p:sensacionesfisicas:recall', kind: 'recall',
+      front: 'In "me duele X", what is the grammatical subject?', back: 'X (the body part), not the person' }
+  ]
 }
 
 ];
