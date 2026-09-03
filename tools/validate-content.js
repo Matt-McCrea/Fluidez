@@ -110,7 +110,7 @@ function isNounHere(toks, i) {
 
 // tense key -> syllabus level (concept lessons don't gate tenses)
 const TENSE_LEVEL = {};
-(window.SYLLABUS || []).forEach(s => { if (E.TENSES.some(t => t.key === s.id)) TENSE_LEVEL[s.id] = s.level; });
+(window.SEED_SYLLABUS || window.SYLLABUS || []).forEach(s => { if (E.TENSES.some(t => t.key === s.id)) TENSE_LEVEL[s.id] = s.level; });
 const VALID_TENSES = new Set(E.TENSES.map(t => t.key));
 const strip = h => String(h).replace(/<[^>]+>/g, '');
 
@@ -314,7 +314,7 @@ function checkProbes(l, tag) {
 // ---------- lessons & syllabus ----------------------------------------------
 {
   const lessons = window.GRAMMAR_LESSONS || [];
-  ok(lessons.length >= (window.SYLLABUS || []).length, 'syllabus ids missing lessons: got ' + lessons.length);
+  ok(lessons.length >= (window.SEED_SYLLABUS || []).length, 'syllabus ids missing lessons: got ' + lessons.length);
   const ids = new Set(), recallIds = new Set();
   lessons.forEach(l => {
     ok(!ids.has(l.id), `lesson duplicate id "${l.id}"`); ids.add(l.id);
@@ -333,7 +333,7 @@ function checkProbes(l, tag) {
       ok(r.front && r.back, `recall "${r.id}": missing front/back`);
     });
   });
-  (window.SYLLABUS || []).forEach(s =>
+  (window.SEED_SYLLABUS || []).forEach(s =>
     ok(ids.has(s.id), `syllabus id "${s.id}" has no lesson`));
 }
 

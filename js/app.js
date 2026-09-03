@@ -50,6 +50,8 @@ window.App = (function () {
       try { localStorage.setItem(THEME_KEY, next); } catch (e) {}
       applyTheme(next);
     });
+    // paint the accent of the level you are studying (data/taxonomy.js)
+    if (window.Profile && window.Profile.applyTheme) window.Profile.applyTheme();
     // clicking the brand returns to Inicio
     var brand = document.querySelector('.brand');
     if (brand) { brand.style.cursor = 'pointer'; brand.addEventListener('click', function () { go('home'); }); }

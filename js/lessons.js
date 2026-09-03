@@ -14,7 +14,14 @@
 (function () {
   var E = window.ENGINE;
 
-  var SYLLABUS = [
+  /* The legacy tense ladder. This is a SEED, not the syllabus: it exists to
+   * give the 18 hand-written tense/concept lessons a level and a deliberate
+   * order, since they carry neither themselves. Everything authored since
+   * (data/strand-lessons.js) carries its own cefr/level/strand, so the real
+   * teaching order is DERIVED from the lessons below — see buildSyllabus().
+   * Three competing notions of "the order" (this list, spec/syllabus-draft.json
+   * and the strand lessons' own tags) was one source of confusion too many. */
+  var SEED = [
     // Level 1 — the foundations
     { id: 'presente', level: 1 },
     { id: 'ser-estar', level: 1 },
@@ -162,13 +169,13 @@
     (window.CONCEPT_LESSONS || []).forEach(function (c) { concepts[c.id] = c; });
 
     var lessons = [];
-    SYLLABUS.forEach(function (s) {
+    SEED.forEach(function (s) {
       if (docs[s.id]) lessons.push(tenseLesson(docs[s.id], s.level));
       else if (concepts[s.id]) { concepts[s.id].level = s.level; lessons.push(concepts[s.id]); }
     });
     // any concept lessons not named in SYLLABUS are appended (nothing lost)
     (window.CONCEPT_LESSONS || []).forEach(function (c) {
-      if (!SYLLABUS.some(function (s) { return s.id === c.id; })) lessons.push(c);
+      if (!SEED.some(function (s) { return s.id === c.id; })) lessons.push(c);
     });
     // Strand lessons (function / discourse / genre — data/strand-lessons.js)
     // carry their own level and PCIC provenance, so they need no SYLLABUS entry.
@@ -176,6 +183,26 @@
     return lessons;
   }
 
+  /* The teaching order, derived from the lessons themselves: level first, then
+   * strand (form before the functions that use it, discourse and genre after),
+   * then the seed order for the legacy ladder, then title. A new lesson takes
+   * its place automatically — nothing to maintain by hand. */
+  var STRAND_RANK = { grammar: 0, notion: 1, function: 2, discourse: 3, genre: 4 };
+  function buildSyllabus(lessons) {
+    var seedIdx = {};
+    SEED.forEach(function (s, i) { seedIdx[s.id] = i; });
+    return lessons.slice().sort(function (a, b) {
+      return (a.level || 1) - (b.level || 1) ||
+             (STRAND_RANK[a.strand || 'grammar'] || 0) - (STRAND_RANK[b.strand || 'grammar'] || 0) ||
+             (seedIdx[a.id] === undefined ? 999 : seedIdx[a.id]) -
+             (seedIdx[b.id] === undefined ? 999 : seedIdx[b.id]) ||
+             String(a.title).localeCompare(String(b.title));
+    }).map(function (l) {
+      return { id: l.id, level: l.level || 1, strand: l.strand || 'grammar', cefr: l.cefr || null };
+    });
+  }
+
   window.GRAMMAR_LESSONS = build();
-  window.SYLLABUS = SYLLABUS;
+  window.SYLLABUS = buildSyllabus(window.GRAMMAR_LESSONS);
+  window.SEED_SYLLABUS = SEED;
 })();

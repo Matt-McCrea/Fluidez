@@ -491,3 +491,17 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
   padding:14px 16px; background:var(--panel-2); border-left:3px solid var(--accent);
   border-radius:0 var(--radius) var(--radius) 0; white-space:pre-wrap; line-height:1.6;
 }
+
+/* ---- level accents ---------------------------------------------------------
+ * One colour per CEFR level, so the app looks different where you are. The
+ * values are set inline from data/taxonomy.js (Profile.applyTheme), and these
+ * rules are the static fallback plus the level badge on the switcher.
+ * -------------------------------------------------------------------------- */
+:root[data-level="A1"]{ --accent:#2f8f5b; --accent-2:#3fae70; }
+:root[data-level="A2"]{ --accent:#2d7fb8; --accent-2:#3f9ed6; }
+:root[data-level="B1"]{ --accent:#0e7c86; --accent-2:#12a0ad; }
+:root[data-level="B2"]{ --accent:#8a5cd6; --accent-2:#a77ce8; }
+:root[data-level="C1"]{ --accent:#b8543f; --accent-2:#d4715a; }
+
+.profile-bar .segmented .seg{ font-variant-numeric:tabular-nums; }
+.profile-bar .segmented .seg.active{ background:var(--accent); color:#fff; border-color:var(--accent); }

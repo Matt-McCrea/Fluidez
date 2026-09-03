@@ -97,7 +97,7 @@ window.Shell = (function () {
 
     if (window.Profile) {
       var pr = UI.el('div', 'profile-bar muted');
-      pr.appendChild(UI.el('span', null, 'Mode:'));
+      pr.appendChild(UI.el('span', null, 'Nivel:'));
       var seg = UI.el('div', 'segmented');
       window.Profile.all().forEach(function (pf) {
         var b = UI.el('button', 'seg' + (window.Profile.current() === pf.name ? ' active' : ''), pf.label);

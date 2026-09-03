@@ -36,58 +36,83 @@ window.Profile = (function () {
   // the full ordered list.
   function fullTenseSet() { return (window.ENGINE ? window.ENGINE.TENSES : []).map(function (t) { return t.key; }); }
 
-  var PROFILES = {
-    standard: {
-      name: 'standard', label: 'Standard',
-      newPerDay: 4, reviewBatchMax: 20,
-      reviewDirection: 'en2es', reviewMode: 'type',
-      orderedVocab: false, vocabCats: null,
-      syllabusPace: 1, unlockAll: false,
-      applyMode: 'type', produceStyle: 'full',
-      // Phase 3's Due/Focus/Stretch mix for on-demand practice rounds.
-      bucketRatios: { due: 0.50, focus: 0.30, stretch: 0.20 },
-      tenses: function () { return fullTenseSet(); },
-      defaultGameMode: 'tranquilo',
-      selectors: ['inteligente', 'tema', 'gramatica', 'debiles', 'siguiente'],
-      cualPairs: ['ser-estar', 'por-para', 'preterite-imperfect', 'subj']
-    },
-    beginner: {
-      name: 'beginner', label: 'Beginner',
-      newPerDay: 3, reviewBatchMax: 12,
-      // graduated: new words come as ES→EN recognition (multiple choice), then
-      // flip to EN→ES production (typed) once they've stuck (SRS box ≥ 2).
-      reviewDirection: 'graduated', reviewMode: 'choice',
-      orderedVocab: true, vocabCats: BEGINNER_CATS, maxCefr: 'A2',
-      syllabusPace: 3, unlockAll: false,
-      applyMode: 'wordbank', produceStyle: 'guided',
-      bucketRatios: { due: 0.65, focus: 0.25, stretch: 0.10 },
-      tenses: function () { return introducedTenseKeys(); },
-      defaultGameMode: 'tranquilo',
-      // Gramática and Puntos débiles are noise before there's enough data to
-      // fill them; article drills (Opción múltiple) and ser/estar stay in.
-      selectors: ['inteligente', 'tema', 'siguiente'],
-      cualPairs: ['ser-estar']
-    },
-    refresher: {
-      name: 'refresher', label: 'Refresher',
-      newPerDay: 12, reviewBatchMax: 30,
-      reviewDirection: 'en2es', reviewMode: 'type',
-      orderedVocab: false, vocabCats: null,
-      syllabusPace: 1, unlockAll: true,
-      applyMode: 'type', produceStyle: 'full',
-      bucketRatios: { due: 0.40, focus: 0.30, stretch: 0.30 },
-      tenses: function () { return fullTenseSet(); },
-      defaultGameMode: 'tranquilo',
-      selectors: ['inteligente', 'tema', 'gramatica', 'debiles', 'siguiente'],
-      cualPairs: ['ser-estar', 'por-para', 'preterite-imperfect', 'subj']
-    }
-  };
+  /* ---- the levels -----------------------------------------------------------
+   * One profile per CEFR level, generated from window.LEVELS (data/taxonomy.js)
+   * so the pacing knobs and the level ladder cannot drift apart.
+   *
+   * This replaces the old beginner/standard/refresher trio, which was a level
+   * system wearing a learner-type label: "beginner" was A1 with scaffolding and
+   * "refresher" was "start further up". What genuinely varies independently is
+   * SUPPORT (how much scaffolding), which stays a separate axis.
+   * ------------------------------------------------------------------------ */
+  var BANDS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+
+  function buildProfiles() {
+    var out = {};
+    (window.LEVELS || []).forEach(function (L, i) {
+      var maxGate = L.levels[L.levels.length - 1];
+      var early = i <= 1;                       // A1/A2 follow the paced curriculum
+      out[L.code] = {
+        name: L.code, label: L.label, cefr: L.code,
+        gates: L.levels.slice(), maxGate: maxGate,
+        accent: L.accent, accent2: L.accent2,
+        passageWords: L.passageWords, glossLang: L.glossLang,
+        newPerDay: L.newPerDay, reviewBatchMax: L.reviewBatchMax,
+        reviewDirection: L.reviewDirection, reviewMode: L.reviewMode,
+        // js/views/apply.js knows 'wordbank'; 'register' and 'reformular' are
+        // B2/C1 modes whose views do not exist yet, so they type for now.
+        applyMode: L.applyMode === 'bank' ? 'wordbank' : 'type',
+        applyModeTarget: L.applyMode,
+        produceStyle: L.produceStyle === 'extended' ? 'full' : L.produceStyle,
+        produceStyleTarget: L.produceStyle,
+        // vocabulary is gated by CEFR now, not by a category whitelist
+        orderedVocab: early, vocabCats: null, maxCefr: L.code,
+        syllabusPace: L.code === 'A1' ? 3 : 1,
+        unlockAll: false,
+        usesCurriculum: early,
+        bucketRatios: early ? { due: 0.65, focus: 0.25, stretch: 0.10 }
+                            : { due: 0.50, focus: 0.30, stretch: 0.20 },
+        tenses: early ? introducedTenseKeys : fullTenseSet,
+        defaultGameMode: 'tranquilo',
+        selectors: early ? ['inteligente', 'tema', 'siguiente']
+                         : ['inteligente', 'tema', 'gramatica', 'debiles', 'siguiente'],
+        cualPairs: early ? ['ser-estar']
+                         : ['ser-estar', 'por-para', 'preterite-imperfect', 'subj']
+      };
+    });
+    return out;
+  }
+
+  var PROFILES = buildProfiles();
+
+  // Old links and saved settings (?p=beginner, localStorage) still resolve.
+  var LEGACY = { beginner: 'A1', standard: 'B1', refresher: 'B2' };
+
+  function canon(v) {
+    if (!v) return null;
+    var up = String(v).toUpperCase();
+    if (PROFILES[up]) return up;
+    return LEGACY[String(v).toLowerCase()] || null;
+  }
 
   function resolve() {
-    var m = (location.search.match(/[?&]p=([a-z]+)/) || [])[1];
-    if (m && PROFILES[m]) { try { localStorage.setItem(KEY, m); } catch (e) {} return m; }
-    try { var s = localStorage.getItem(KEY); if (s && PROFILES[s]) return s; } catch (e) {}
-    return 'standard';
+    var m = (location.search.match(/[?&]p=([a-zA-Z0-9]+)/) || [])[1];
+    var c = canon(m);
+    if (c) { try { localStorage.setItem(KEY, c); } catch (e) {} return c; }
+    try { c = canon(localStorage.getItem(KEY)); if (c) return c; } catch (e) {}
+    return 'A1';
+  }
+
+  // Paint the level's accent on the document so the whole app is colour-coded
+  // by where you are. The palette lives with the levels in data/taxonomy.js.
+  function applyTheme(code) {
+    var p = PROFILES[code]; if (!p || typeof document === 'undefined') return;
+    var r = document.documentElement;
+    r.setAttribute('data-level', code);
+    if (r.style && r.style.setProperty) {
+      r.style.setProperty('--accent', p.accent);
+      r.style.setProperty('--accent-2', p.accent2);
+    }
   }
 
   var current = resolve();
@@ -142,7 +167,12 @@ window.Profile = (function () {
     params: function () { return PROFILES[current]; },
     current: function () { return current; },
     all: function () { return Object.keys(PROFILES).map(function (k) { return PROFILES[k]; }); },
-    set: function (name) { if (PROFILES[name]) { current = name; try { localStorage.setItem(KEY, name); } catch (e) {} } },
+    set: function (name) {
+      var c = canon(name); if (!c) return;
+      current = c; applyTheme(c);
+      try { localStorage.setItem(KEY, c); } catch (e) {}
+    },
+    applyTheme: function () { applyTheme(current); },
     catAllowed: function (cat) { var c = PROFILES[current].vocabCats; return !c || c.indexOf(cat) !== -1; },
     // Ordering falls back to the derived category order (data/taxonomy.js) so
     // the PCIC themes sort sensibly instead of all landing on 999.

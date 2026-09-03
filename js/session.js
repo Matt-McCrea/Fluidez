@@ -82,7 +82,7 @@ window.Session = (function () {
 
     var focus, lesson = null, level;
 
-    if (pr.name === 'beginner' && window.Curriculum) {
+    if (pr.usesCurriculum && window.Curriculum) {
       // paced path: grammar/vocab/verb/practice days, grammar spaced out
       var seq = window.Curriculum.seq();
       var di = prog.beginnerDay || 0;
@@ -97,8 +97,11 @@ window.Session = (function () {
       if (lesson) { level = lesson.level || 1; }
       else { lesson = lessons[day % Math.max(1, lessons.length)] || null; level = 99; }
       focus = lesson ? { type: 'grammar', id: lesson.id } : { type: 'practice' };
-      if (pr.unlockAll) level = 99;            // refresher: all content from day one
+      if (pr.unlockAll) level = 99;
     }
+    // Never offer content above the level you are studying: a B1 learner should
+    // not meet C1 passages just because the lesson ladder ran ahead.
+    if (pr.maxGate) level = Math.min(level, pr.maxGate);
     function atLevel(arr) { return arr.filter(function (x) { return (x.level || 1) <= level; }); }
 
     var passages = atLevel(window.PASSAGES || []);
