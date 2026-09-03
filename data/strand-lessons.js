@@ -7722,6 +7722,135 @@ window.STRAND_LESSONS = [
     { id: 'p:oi:cloze', kind: 'cloze', text: '___ rompieron las gafas a Ana. (dativo posesivo)', accept: ['Le', 'le'] },
     { id: 'p:oi:recall', kind: 'recall', front: 'With a gustar-type verb, is the OI pronoun optional when "a + person" is already stated?', back: 'no — it is required (reduplication), never optional' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — A2 function/genre, remaining outstanding units per tools/todo.js.
+ *
+ * Skipped: func-a2-formular-buenos-deseos (seq 191) — fn-buenos-deseos-a2
+ * above already teaches all five concrete phrase categories (suerte, viaje,
+ * vacaciones, aproveche, provecho) via their child pcic ids; the only
+ * untagged ids for this unit are the bare category headers, with no
+ * distinct content of their own beyond what those exponents already cover.
+ * genr-a2-generos-de-transmision-oral (seq 209) — the same taxonomy-header
+ * situation already documented and skipped for its A1 counterpart (seq 78):
+ * face-to-face and phone conversations, instructions and public
+ * presentations each already have their own dedicated lesson elsewhere
+ * (gn-conversacion-transaccional-a1, fn-responder-telefono-a2,
+ * gn-instrucciones-a2, gn-presentacion-publica-a2).
+ * ========================================================================== */
+{
+  id: 'fn-atenuar-orden-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:261', 'funciones:A2:262', 'funciones:A2:263'],
+  title: 'Pedir algo de forma atenuada',
+  summary: 'Three ways to soften an instruction without changing what you are actually asking for: tack on por favor, turn it into a question with ¿puedes/podrías?, or remove the person altogether with hay que — each buys a little more distance from a bare command.',
+  sections: [
+    { h: 'Imperative + softener', html: 'The simplest move: keep the imperative, add <i>por favor</i>. It is still grammatically a direct command — the softening is entirely social, not structural: <i>Envía esto por fax, por favor</i>.' },
+    { h: '¿Puedes/podrías + infinitivo?', html: 'Reframing the instruction as a question about ability is the most common everyday softener: <i>¿Puedes venir un momento, por favor?</i> (<i>tú</i>) or, more formally, <i>¿Podría venir un momento?</i> (<i>usted</i>, conditional).' },
+    { h: 'Hay que + infinitivo: no one named', html: 'Stating a necessity with <i>hay que</i> names no one as responsible — softer than pointing at a specific person with <i>tienes que</i>: <i>Hay que comprar carne, fruta y verduras; no tenemos nada en casa</i>.' }
+  ],
+  exponents: [
+    { es: 'Envía esto por fax, por favor.', en: 'Please send this by fax.', register: 'neutral', note: 'imperativo + atenuador — still a direct command, softened only in tone' },
+    { es: '¿Puedes venir un momento, por favor?', en: 'Can you come here a moment, please?', register: 'coloquial', note: 'tú — the everyday softened request' },
+    { es: '¿Podría venir un momento, por favor?', en: 'Could you come here a moment, please?', register: 'formal', note: 'usted, conditional — the more distant equivalent' },
+    { es: 'Hay que comprar carne y fruta; no tenemos nada en casa.', en: "We need to buy meat and fruit; we don't have anything at home.", register: 'neutral', note: 'names no one in particular as responsible' }
+  ],
+  pitfalls: [
+    'Adding <i>por favor</i> to an imperative softens the TONE, not the grammar — it is still a direct command, unlike the question forms.',
+    '<i>Hay que</i> never names who must do something; use <i>tienes que/tiene que</i> when you mean one specific person.'
+  ],
+  examples: [
+    { es: '¿Puedes cerrar la ventana, por favor?', en: 'Can you close the window, please?' },
+    { es: 'Hay que terminar esto antes de las cinco.', en: 'This needs to be finished before five.' },
+    { es: '¿Podría bajar un poco el volumen?', en: 'Could you turn the volume down a little?' }
+  ],
+  probes: [
+    { id: 'p:atenuarorden:softener', kind: 'mcq', q: '¿Cuál sigue siendo gramaticalmente un imperativo directo, solo que más educado?',
+      options: ['¿Puedes venir?', 'Ven, por favor.', 'Hay que venir.'], answer: 1 },
+    { id: 'p:atenuarorden:register', kind: 'mcq', q: 'Se lo pides a tu jefe, con mucha educación:',
+      options: ['¿Puedes venir un momento?', '¿Podría venir un momento?', 'Ven un momento.'], answer: 1 },
+    { id: 'p:atenuarorden:cloze', kind: 'cloze', text: '___ que comprar fruta. (no se nombra a nadie)', accept: ['Hay', 'hay'] },
+    { id: 'p:atenuarorden:recall', kind: 'recall', front: 'Which softened request names no one as responsible?', back: 'hay que + infinitivo' }
+  ]
+},
+
+{
+  id: 'fn-saludar-escrito-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:348', 'funciones:A2:349', 'funciones:A2:350', 'funciones:A2:351'],
+  title: 'Saludar por escrito: Querido/a...',
+  summary: 'The spoken greetings you already know do not transfer to a letter or card — Querido/a + name opens it instead, agreeing with whoever you are writing TO, and its punctuation (a comma) is a different animal from the formal opener\'s colon.',
+  sections: [
+    { h: 'Spoken greetings do not work on paper', html: '<i>Hola, ¿qué tal?</i> is for speech. A written note or letter needs its own opener.' },
+    { h: 'Querido/a + nombre', html: 'Opens an informal letter, card or message: <i>Querido Antonio,</i> / <i>Querida Marta,</i>. The ending agrees with the PERSON YOU ARE ADDRESSING, not with you — a man writes <i>Querida Ana</i> to a woman.' },
+    { h: 'The formal counterpart, for contrast', html: 'A business or institutional letter instead opens with <i>Estimado/a</i> + title, followed by a COLON, not a comma: <i>Estimado señor Pérez:</i>.' }
+  ],
+  exponents: [
+    { es: 'Querido Antonio,', en: 'Dear Antonio,', register: 'coloquial', note: 'informal letter/card opener — comma, not a colon' },
+    { es: 'Querida Marta,', en: 'Dear Marta,', register: 'coloquial', note: 'agrees with the addressee, a woman' },
+    { es: 'Estimado señor Pérez:', en: 'Dear Mr Pérez:', register: 'formal', note: 'business/institutional letters — a colon follows, not a comma' },
+    { es: 'Hola, ¿qué tal?', en: 'Hi, how are you?', register: 'coloquial', note: 'the spoken equivalent — does not double as a written opener' }
+  ],
+  pitfalls: [
+    '<i>Querido/a</i> agrees with the gender of the PERSON YOU ARE WRITING TO, never with your own.',
+    'A formal opener takes a colon (<i>Estimado señor Pérez:</i>); an informal one takes a comma (<i>Querido Antonio,</i>) — do not mix the punctuation.',
+    'The spoken greeting <i>Hola, ¿qué tal?</i> does not work as the first line of a letter or card.'
+  ],
+  examples: [
+    { es: 'Querida abuela,\n¿Qué tal estás?', en: 'Dear grandma,\nHow are you?' },
+    { es: 'Estimada señora López:\nLe escribo para...', en: "Dear Mrs López:\nI'm writing to..." },
+    { es: 'Querido Marcos, ¡cuánto tiempo!', en: 'Dear Marcos, it\'s been so long!' }
+  ],
+  probes: [
+    { id: 'p:saludoescrito:genero', kind: 'mcq', q: 'Un hombre le escribe una carta informal a su amiga Sara. Empieza con:',
+      options: ['Querido Sara,', 'Querida Sara,', 'Estimada Sara,'], answer: 1 },
+    { id: 'p:saludoescrito:puntuacion', kind: 'mcq', q: '¿Qué signo sigue a "Estimado señor Pérez"?',
+      options: ['una coma', 'dos puntos', 'ninguno'], answer: 1 },
+    { id: 'p:saludoescrito:cloze', kind: 'cloze', text: '___ Antonio, (carta informal)', accept: ['Querido', 'querido'] },
+    { id: 'p:saludoescrito:recall', kind: 'recall', front: 'Does Querido/a agree with the writer or the person addressed?', back: 'the person addressed' }
+  ]
+},
+
+{
+  id: 'gn-narrar-anecdota-a2', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  pcic: ['generos_discursivos:A2:276', 'generos_discursivos:A2:277', 'generos_discursivos:A2:278', 'generos_discursivos:A2:279',
+         'generos_discursivos:A2:280', 'generos_discursivos:A2:281', 'generos_discursivos:A2:283', 'generos_discursivos:A2:285',
+         'generos_discursivos:A2:293', 'generos_discursivos:A2:302'],
+  title: 'Contar una anécdota',
+  summary: 'A spoken anecdote has a five-part shape as fixed as a joke\'s setup and punchline, and it runs on a tense contract: imperfecto paints the background, indefinido moves the plot — mix them up and the story loses its shape even if every verb is correctly conjugated.',
+  sections: [
+    { h: 'The tense contract', html: 'Imperfecto describes the unchanging backdrop (<i>era muy temprano, había una mujer, la señora era muy guapa</i>); indefinido reports the events that actually move the story forward (<i>fui, nadé, desperté, empezó, fuimos, llamamos, sacó</i>). Losing this contrast — using indefinido throughout — flattens a story into a list.' },
+    { h: 'Pausing to describe or quote', html: 'A narrative stops its forward motion twice: to DESCRIBE someone or something (<i>La señora era muy guapa. Era rubia, tenía el pelo largo...</i>) or to quote DIRECT SPEECH (<i>Me dijo: «¿Eres española?». Yo dije: «No, soy inglesa»</i>). Both are insertions — the plot pauses, then resumes.' },
+    { h: 'Verbs and connectors that mark the turn', html: '<i>Empezar a + infinitivo</i> marks the start of a new action (<i>empezó a mover los brazos</i>). <i>De repente</i> and <i>entonces</i> are the two workhorse connectors that mark the pivot from calm to complication and from complication to response.' }
+  ],
+  moves: [
+    { h: 'Situación inicial', html: 'Set the scene: who, where, when, what the background was. All in imperfecto (plus scene-setting present, if the anecdote opens by placing you in your life now): <i>Vivo en Barcelona. El lunes pasado fui a la playa... Era muy temprano.</i>' },
+    { h: 'Complicación', html: 'Something disrupts the calm — this is where indefinido or an <i>empezar a</i> periphrasis usually appears: <i>De repente, una persona empezó a mover los brazos dentro del agua.</i>' },
+    { h: 'Acción', html: 'What you (or someone) did in response: <i>Entonces, nos levantamos la mujer y yo y fuimos cerca del agua para ayudar.</i>' },
+    { h: 'Resolución', html: 'How it was resolved: <i>Llamamos al socorrista, vino y sacó a la persona del agua.</i>' },
+    { h: 'Situación final', html: 'A closing comment, often summing up or reflecting: <i>Total, que no pasó nada, pero ¡qué susto!</i>' }
+  ],
+  model: {
+    title: 'Un susto en la playa',
+    text: 'Vivo en Barcelona. El lunes pasado fui a la playa, está cerca de mi casa. Era muy temprano, así que nadé, tomé un poco el sol y me dormí. Cuando desperté, había una mujer a mi lado. La señora era muy guapa. Era rubia, tenía el pelo largo y los ojos verdes. Yo me senté en la toalla, ella se sentó en una silla más pequeña que mi bolso. Me dijo: «¿Eres española?». Yo dije: «No, soy inglesa». De repente, una persona empezó a mover los brazos dentro del agua. Entonces, nos levantamos la mujer y yo y fuimos cerca del agua para ayudar. Como estábamos lejos, llamamos al socorrista, vino y sacó a la persona del agua. Total, que no pasó nada, pero ¡qué susto!'
+  },
+  checklist: [
+    '¿Usaste el imperfecto para describir el fondo y el indefinido para los hechos que avanzan la historia?',
+    '¿Hay al menos una pausa descriptiva o un fragmento de estilo directo?',
+    '¿Sigue la historia las cinco partes: situación inicial, complicación, acción, resolución, situación final?'
+  ],
+  examples: [
+    { es: 'Era muy temprano, así que nadé y tomé el sol.', en: 'It was very early, so I swam and sunbathed.' },
+    { es: 'De repente, alguien empezó a gritar.', en: 'Suddenly, someone started shouting.' },
+    { es: 'Me dijo: «¿Eres española?». Yo dije: «No, soy inglesa».', en: 'She said to me: "Are you Spanish?" I said: "No, I\'m English."' }
+  ],
+  probes: [
+    { id: 'p:narrar:tiempo', kind: 'mcq', q: '"La señora ___ muy guapa." (descripción de fondo)',
+      options: ['fue', 'era', 'ha sido'], answer: 1 },
+    { id: 'p:narrar:orden', kind: 'mcq', q: '¿Qué parte viene justo después de la complicación?',
+      options: ['situación inicial', 'acción', 'situación final'], answer: 1 },
+    { id: 'p:narrar:cloze', kind: 'cloze', text: 'De repente, alguien ___ a correr. (empezar)', accept: ['empezó'] },
+    { id: 'p:narrar:recall', kind: 'recall', front: 'The five-part shape of a spoken anecdote, in order', back: 'situación inicial · complicación · acción · resolución · situación final' }
+  ]
 }
 
 ];
