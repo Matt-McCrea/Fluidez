@@ -1413,5 +1413,10 @@ window.VERBS = [
 
 { inf:'quejarse', en:'to complain', type:'ar' },
 { inf:'reencontrarse', en:'to meet again, to be reunited', type:'ar', like:'encontrarse' },
-{ inf:'animar', en:'to encourage, to cheer up', type:'ar' }
+{ inf:'animar', en:'to encourage, to cheer up', type:'ar' },
+{ inf:'criticar', en:'to criticize', type:'ar' },
+{ inf:'sobrevivir', en:'to survive', type:'ir' },
+{ inf:'notar', en:'to notice', type:'ar' },
+{ inf:'extrañar', en:'to miss (a person/place), to find strange', type:'ar' },
+{ inf:'desconectar', en:'to disconnect, to unplug', type:'ar' }
 ];

@@ -2243,6 +2243,211 @@ window.PASSAGES = [
     { type: 'short', q: '¿Cuántos visitantes habrán pasado para el segundo mes? (una cifra)', accept: ['cien mil', 'más de cien mil'] },
     { type: 'translate', line: 'El director está seguro de que habría sido un error no organizar esta muestra.', model: 'The director is sure it would have been a mistake not to organize this exhibition.' }
   ]
+},
+
+{
+  id: 'dejar-fumar', title: 'Dejar de fumar', level: 5,
+  text: 'Después de veinte años fumando, mi padre por fin decidió dejarlo. Al principio, el médico le recomendó que usara chicles especiales para controlar las ganas de fumar. Mi madre está encantada de que por fin haya tomado esta decisión, aunque sabe que no será fácil. Antes de dejarlo, mi padre ya había intentado parar dos veces sin éxito. Esta vez, quiere que toda la familia le ayude a mantenerse firme. Es normal que los primeros meses sean los más difíciles, según los expertos. Ojalá que esta vez sea la definitiva, porque su salud ha mejorado mucho desde que dejó de fumar.',
+  gloss: [
+    { es: 'chicles', en: 'chewing gum' },
+    { es: 'las ganas de', en: 'the urge to' },
+    { es: 'mantenerse firme', en: 'to stay strong/resolute' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué decidió hacer el padre?', options: ['Dejar de fumar', 'Empezar a fumar', 'Dejar de beber'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le recomendó el médico?', options: ['Que usara chicles especiales', 'Que hiciera ejercicio', 'Que viajara'], answer: 0 },
+    { type: 'short', q: '¿Cuántas veces había intentado dejarlo antes? (una palabra)', accept: ['dos', 'dos veces'] },
+    { type: 'translate', line: 'Antes de dejarlo, mi padre ya había intentado parar dos veces sin éxito.', model: 'Before quitting, my father had already tried to stop twice without success.' }
+  ]
+},
+
+{
+  id: 'cambio-caracter', title: 'Un cambio de carácter', level: 4,
+  text: 'Desde que empezó a hacer yoga, mi hermana ha cambiado mucho de carácter. Antes se enfadaba por cualquier cosa, pero ahora es mucho más tranquila. Sus amigos dudaban que un simple cambio de rutina pudiera transformarla tanto. Ella dice que es importante que la gente encuentre algo que le ayude a calmarse. Mis padres esperan que yo también pruebe el yoga algún día, aunque de momento prefiero correr. Antes de este cambio, mi hermana discutía con todos por pequeñeces. Ahora, incluso en situaciones difíciles, mantiene la calma casi siempre.',
+  gloss: [
+    { es: 'pequeñeces', en: 'trivial things' },
+    { es: 'mantiene la calma', en: 'keeps calm' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué ha cambiado en la hermana?', options: ['Su carácter', 'Su trabajo', 'Su casa'], answer: 0 },
+    { type: 'mcq', q: '¿Qué esperan los padres?', options: ['Que el narrador pruebe el yoga', 'Que la hermana deje el yoga', 'Que se muden'], answer: 0 },
+    { type: 'short', q: '¿Qué hace la hermana ahora para calmarse? (una palabra)', accept: ['yoga'] },
+    { type: 'translate', line: 'Sus amigos dudaban que un simple cambio de rutina pudiera transformarla tanto.', model: 'Her friends doubted that a simple change in routine could transform her so much.' }
+  ]
+},
+
+{
+  id: 'desperdicio-comida', title: 'El desperdicio de comida', level: 5,
+  text: 'Cada año, las familias españolas tiran a la basura miles de toneladas de comida en buen estado. Para finales de este año, varias ciudades ya habrán aprobado leyes que obligan a los supermercados a donar los alimentos que no venden. Muchos expertos dudan que estas leyes solucionen el problema por completo, pero creen que es un buen primer paso. Si las familias planificaran mejor sus compras semanales, se reduciría bastante el desperdicio. Algunas organizaciones piden que se enseñe en las escuelas a aprovechar mejor los alimentos. Ojalá que estas iniciativas hayan cambiado la situación dentro de unos años.',
+  gloss: [
+    { es: 'toneladas', en: 'tons' },
+    { es: 'donar', en: 'to donate' },
+    { es: 'desperdicio', en: 'waste' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tiran las familias españolas cada año?', options: ['Miles de toneladas de comida', 'Ropa vieja', 'Muebles'], answer: 0 },
+    { type: 'mcq', q: '¿Qué piden algunas organizaciones?', options: ['Que se enseñe a aprovechar los alimentos', 'Que se cierren los supermercados', 'Que se prohíba cocinar'], answer: 0 },
+    { type: 'short', q: '¿Qué obligan las nuevas leyes a hacer a los supermercados? (una palabra)', accept: ['donar'] },
+    { type: 'translate', line: 'Si las familias planificaran mejor sus compras semanales, se reduciría bastante el desperdicio.', model: 'If families planned their weekly shopping better, food waste would be reduced quite a bit.' }
+  ]
+},
+
+{
+  id: 'nuevo-hobby-ceramica', title: 'Un nuevo hobby: la cerámica', level: 4,
+  text: 'Hace seis meses, Julia empezó a ir a clases de cerámica los sábados por la mañana. Al principio, sus manos no sabían cómo controlar el barro y todo le salía torcido. La profesora le recomendó que practicara en casa con una pequeña rueda que se compró después. Julia nunca había hecho nada parecido antes, pero ahora dice que es la actividad que más disfruta de toda la semana. Sus amigos esperan que algún día venda sus piezas, aunque ella todavía no se atreve. Es probable que el próximo mes empiece un curso más avanzado para mejorar su técnica.',
+  gloss: [
+    { es: 'el barro', en: 'clay' },
+    { es: 'torcido', en: 'crooked' },
+    { es: 'no se atreve', en: 'does not dare' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué clases empezó a tomar Julia?', options: ['Cerámica', 'Pintura', 'Cocina'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le recomendó la profesora?', options: ['Que practicara en casa', 'Que dejara las clases', 'Que comprara más barro'], answer: 0 },
+    { type: 'short', q: '¿Qué esperan sus amigos que haga algún día? (una palabra)', accept: ['vender', 'venda'] },
+    { type: 'translate', line: 'Julia nunca había hecho nada parecido antes, pero ahora dice que es la actividad que más disfruta de toda la semana.', model: 'Julia had never done anything like it before, but now she says it is the activity she enjoys most all week.' }
+  ]
+},
+
+{
+  id: 'pedido-perdido', title: 'Un pedido que nunca llegó', level: 4,
+  text: 'El mes pasado, Diego compró unos auriculares por internet, pero el paquete nunca llegó a su casa. Cuando escribió a la empresa, le pidieron que esperara dos semanas más antes de reclamar el dinero. Diego estaba furioso porque ya había esperado casi un mes sin ninguna explicación clara. Finalmente, un empleado le confirmó que el paquete se había perdido durante el transporte. Es normal que este tipo de errores ocurra alguna vez, le explicaron, pero Diego seguía muy enfadado. Al final, le devolvieron el dinero y le ofrecieron un descuento para la próxima compra.',
+  gloss: [
+    { es: 'auriculares', en: 'headphones' },
+    { es: 'reclamar', en: 'to claim, to demand' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué compró Diego por internet?', options: ['Unos auriculares', 'Un teléfono', 'Un libro'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le pidió la empresa al principio?', options: ['Que esperara dos semanas más', 'Que cancelara el pedido', 'Que pagara otra vez'], answer: 0 },
+    { type: 'short', q: '¿Qué le pasó al paquete? (dos palabras)', accept: ['se perdió', 'se había perdido'] },
+    { type: 'translate', line: 'Diego estaba furioso porque ya había esperado casi un mes sin ninguna explicación clara.', model: 'Diego was furious because he had already waited almost a month with no clear explanation.' }
+  ]
+},
+
+{
+  id: 'nochebuena-familia', title: 'La cena de Nochebuena', level: 4,
+  text: 'Cada Nochebuena, toda la familia de Marta se reúne en casa de sus abuelos para cenar juntos. Este año, su abuela pidió que todos llegaran una hora antes para ir juntos a la misa del gallo. Marta no es religiosa, pero respeta que sus abuelos quieran mantener esta tradición tan importante para ellos. Antes de la cena, ya habían preparado la mesa con la vajilla especial que solo usan una vez al año. Es bonito que, aunque no todos crean lo mismo, la familia siga uniéndose por estas fechas. Marta espera que sus futuros hijos también vivan esta tradición algún día.',
+  gloss: [
+    { es: 'la misa del gallo', en: "midnight Mass (Christmas Eve)" },
+    { es: 'vajilla', en: 'dinnerware, tableware' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde se reúne la familia de Marta en Nochebuena?', options: ['En casa de sus abuelos', 'En un restaurante', 'En la iglesia'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pidió la abuela este año?', options: ['Que llegaran una hora antes', 'Que no fueran a la misa', 'Que cenaran solos'], answer: 0 },
+    { type: 'short', q: '¿Qué usan solo una vez al año? (una palabra)', accept: ['vajilla', 'la vajilla'] },
+    { type: 'translate', line: 'Es bonito que, aunque no todos crean lo mismo, la familia siga uniéndose por estas fechas.', model: "It's nice that, even though not everyone believes the same thing, the family keeps coming together at this time of year." }
+  ]
+},
+
+{
+  id: 'telescopio-espacial', title: 'El telescopio que cambió la astronomía', level: 5,
+  text: 'Cuando lanzaron el nuevo telescopio espacial, muchos científicos dudaban que las primeras imágenes fueran tan claras como prometían. Para el final del primer año, el telescopio ya habrá enviado miles de fotografías de galaxias nunca vistas antes. Los astrónomos creen que este descubrimiento habría sido imposible con la tecnología de hace solo diez años. Es fascinante que un instrumento tan pequeño pueda ver tan lejos en el universo. El equipo espera que estas imágenes ayuden a entender mejor cómo se formaron las primeras estrellas. Ojalá que este proyecto haya inspirado a una nueva generación de científicos.',
+  gloss: [
+    { es: 'lanzaron', en: 'they launched' },
+    { es: 'galaxias', en: 'galaxies' },
+    { es: 'el universo', en: 'the universe' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué dudaban muchos científicos al principio?', options: ['Que las imágenes fueran tan claras como prometían', 'Que el telescopio funcionara', 'Que costara tanto dinero'], answer: 0 },
+    { type: 'mcq', q: '¿Qué espera el equipo?', options: ['Que las imágenes ayuden a entender las primeras estrellas', 'Que el telescopio se rompa', 'Que nadie vea las fotos'], answer: 0 },
+    { type: 'short', q: '¿Qué ha fotografiado el telescopio? (una palabra)', accept: ['galaxias'] },
+    { type: 'translate', line: 'Los astrónomos creen que este descubrimiento habría sido imposible con la tecnología de hace solo diez años.', model: 'Astronomers believe this discovery would have been impossible with the technology from just ten years ago.' }
+  ]
+},
+
+{
+  id: 'elecciones-renidas', title: 'Las elecciones más reñidas en años', level: 5,
+  text: 'Las últimas elecciones municipales han sido las más reñidas de los últimos veinte años. Para cuando se cierren todos los colegios electorales, millones de ciudadanos ya habrán votado en todo el país. Los analistas dudan que se sepa el resultado final esa misma noche, debido a lo ajustado de las encuestas. Muchos votantes esperan que el nuevo ayuntamiento resuelva por fin el problema del transporte público. Algunos creen que campañas menos agresivas habrían generado más confianza en la política. Sea cual sea el resultado, está claro que la participación ha aumentado mucho respecto a las elecciones anteriores.',
+  gloss: [
+    { es: 'reñidas', en: 'closely contested' },
+    { es: 'colegios electorales', en: 'polling stations' },
+    { es: 'encuestas', en: 'polls' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo han sido las últimas elecciones?', options: ['Las más reñidas en veinte años', 'Muy tranquilas', 'Sin ningún interés'], answer: 0 },
+    { type: 'mcq', q: '¿Qué esperan muchos votantes?', options: ['Que se resuelva el problema del transporte', 'Que suban los impuestos', 'Que se cancelen las elecciones'], answer: 0 },
+    { type: 'short', q: '¿Qué ha aumentado respecto a elecciones anteriores? (una palabra)', accept: ['participación', 'la participación'] },
+    { type: 'translate', line: 'Algunos creen que campañas menos agresivas habrían generado más confianza en la política.', model: 'Some believe that less aggressive campaigns would have generated more trust in politics.' }
+  ]
+},
+
+{
+  id: 'empezar-otro-pais', title: 'Empezar de nuevo en otro país', level: 4,
+  text: 'Cuando Ana se mudó a Alemania hace tres años, apenas hablaba una palabra de alemán. Sus compañeros de trabajo le recomendaron que se apuntara a clases intensivas cuanto antes. Antes de mudarse, Ana ya había vivido en dos países diferentes, pero nunca se había sentido tan perdida como al principio. Poco a poco, empezó a sentirse parte de su nueva ciudad, aunque a veces todavía extraña su cultura de origen. Es normal que cueste tanto adaptarse cuando cambias de idioma y de costumbres al mismo tiempo. Ahora Ana se siente orgullosa de la persona en la que se ha convertido gracias a esta experiencia.',
+  gloss: [
+    { es: 'apenas', en: 'barely, hardly' },
+    { es: 'extraña', en: 'misses (something/someone)' },
+    { es: 'costumbres', en: 'customs, habits' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿A qué país se mudó Ana?', options: ['Alemania', 'Francia', 'Italia'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le recomendaron sus compañeros de trabajo?', options: ['Que se apuntara a clases intensivas', 'Que volviera a su país', 'Que cambiara de trabajo'], answer: 0 },
+    { type: 'short', q: '¿Cuántos países había vivido antes Ana? (una palabra)', accept: ['dos'] },
+    { type: 'translate', line: 'Antes de mudarse, Ana ya había vivido en dos países diferentes, pero nunca se había sentido tan perdida como al principio.', model: 'Before moving, Ana had already lived in two different countries, but she had never felt as lost as at the beginning.' }
+  ]
+},
+
+{
+  id: 'osos-pirineos', title: 'Los osos que vuelven a los Pirineos', level: 5,
+  text: 'Hace treinta años, casi no quedaban osos pardos en los Pirineos, pero la población ha crecido gracias a varios programas de protección. Para el próximo censo, los expertos ya habrán contado más de setenta ejemplares en la zona. Algunos ganaderos temen que los osos ataquen a sus animales, aunque los estudios muestran que estos casos son raros. Los ecologistas esperan que este éxito anime a proteger otras especies en peligro de extinción. Sin estos programas, los osos probablemente habrían desaparecido de la región para siempre. Ahora, ver un oso en libertad ya no es algo tan extraordinario como antes.',
+  gloss: [
+    { es: 'osos pardos', en: 'brown bears' },
+    { es: 'ganaderos', en: 'livestock farmers' },
+    { es: 'en peligro de extinción', en: 'endangered' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué ha pasado con la población de osos en los Pirineos?', options: ['Ha crecido', 'Ha desaparecido', 'No ha cambiado'], answer: 0 },
+    { type: 'mcq', q: '¿Qué temen algunos ganaderos?', options: ['Que los osos ataquen a sus animales', 'Que los osos destruyan sus casas', 'Que se vayan a otra región'], answer: 0 },
+    { type: 'short', q: '¿Cuántos osos habrán contado los expertos para el próximo censo? (una cifra)', accept: ['más de setenta', 'setenta', '70'] },
+    { type: 'translate', line: 'Sin estos programas, los osos probablemente habrían desaparecido de la región para siempre.', model: 'Without these programs, the bears would probably have disappeared from the region forever.' }
+  ]
+},
+
+{
+  id: 'tramite-interminable', title: 'Un trámite interminable', level: 4,
+  text: 'Desde hace dos meses, Laura intenta conseguir una cita para renovar su documento de identidad, pero no lo consigue. El funcionario le recomendó que lo intentara por internet a primera hora de la mañana. Antes de este problema, Laura nunca había tenido que tratar con tanta burocracia para algo tan sencillo. Es frustrante que un trámite que debería tardar diez minutos se convierta en semanas de espera. Sus amigos esperan que las oficinas contraten a más personal para solucionar el problema pronto. Al final, Laura consiguió una cita gracias a la ayuda de un vecino que trabaja en la administración.',
+  gloss: [
+    { es: 'trámite', en: 'bureaucratic procedure' },
+    { es: 'renovar', en: 'to renew' },
+    { es: 'burocracia', en: 'bureaucracy' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué intenta conseguir Laura?', options: ['Una cita para renovar su documento', 'Un trabajo nuevo', 'Un préstamo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le recomendó el funcionario?', options: ['Que lo intentara por internet a primera hora', 'Que fuera en persona', 'Que esperara un año'], answer: 0 },
+    { type: 'short', q: '¿Quién la ayudó al final? (una palabra)', accept: ['vecino', 'un vecino'] },
+    { type: 'translate', line: 'Es frustrante que un trámite que debería tardar diez minutos se convierta en semanas de espera.', model: 'It is frustrating that a process that should take ten minutes turns into weeks of waiting.' }
+  ]
+},
+
+{
+  id: 'influencer-desconecta', title: 'La influencer que dejó las redes', level: 4,
+  text: 'Después de cinco años publicando contenido todos los días, Carla decidió dejar las redes sociales por completo. Sus seguidores no esperaban que tomara una decisión tan drástica de la noche a la mañana. Antes de este cambio, Carla ya había notado que pasaba más tiempo mirando el móvil que disfrutando de su vida real. Muchos la criticaron, pero otros entienden que necesitara desconectar para cuidar su salud mental. Es importante que las personas hablen más de este tipo de problemas, dijo Carla en su último vídeo. Ahora trabaja como profesora de yoga y dice que nunca ha sido tan feliz.',
+  gloss: [
+    { es: 'seguidores', en: 'followers' },
+    { es: 'de la noche a la mañana', en: 'overnight' },
+    { es: 'salud mental', en: 'mental health' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué decidió hacer Carla?', options: ['Dejar las redes sociales', 'Cambiar de trabajo', 'Mudarse de ciudad'], answer: 0 },
+    { type: 'mcq', q: '¿Qué había notado Carla antes de este cambio?', options: ['Que pasaba más tiempo en el móvil que viviendo', 'Que ganaba poco dinero', 'Que sus seguidores la criticaban'], answer: 0 },
+    { type: 'short', q: '¿En qué trabaja Carla ahora? (dos palabras)', accept: ['profesora de yoga', 'profesora yoga'] },
+    { type: 'translate', line: 'Muchos la criticaron, pero otros entienden que necesitara desconectar para cuidar su salud mental.', model: 'Many criticized her, but others understand that she needed to disconnect to take care of her mental health.' }
+  ]
+},
+
+{
+  id: 'panaderia-crisis', title: 'El pequeño negocio que resistió la crisis', level: 5,
+  text: 'Cuando empezó la crisis económica, muchos pensaban que la panadería del barrio de Pedro no sobreviviría ni un año. Antes de esa época difícil, Pedro nunca había tenido que reducir el horario de su negocio. Los vecinos pidieron que mantuviera los precios bajos, y Pedro decidió hacerlo aunque ganara menos dinero durante un tiempo. Es admirable que un negocio tan pequeño haya conseguido resistir mientras otros más grandes cerraban. Ahora, cinco años después, la panadería sigue abierta y Pedro espera que sus hijos continúen el negocio familiar algún día.',
+  gloss: [
+    { es: 'panadería', en: 'bakery' },
+    { es: 'sobreviviría', en: 'would survive' },
+    { es: 'admirable', en: 'admirable' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tipo de negocio tiene Pedro?', options: ['Una panadería', 'Una librería', 'Una farmacia'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pidieron los vecinos?', options: ['Que mantuviera los precios bajos', 'Que cerrara el negocio', 'Que subiera los precios'], answer: 0 },
+    { type: 'short', q: '¿Cuántos años lleva abierta la panadería desde la crisis? (una palabra)', accept: ['cinco', 'cinco años'] },
+    { type: 'translate', line: 'Es admirable que un negocio tan pequeño haya conseguido resistir mientras otros más grandes cerraban.', model: 'It is admirable that such a small business has managed to survive while bigger ones were closing.' }
+  ]
 }
 
 ];
