@@ -232,6 +232,25 @@ verb range. **Run it before calling a batch done.** Rules that follow from it:
   and lean on `terminar`, `llegar`, `decir`, `tener`. Aim for at least one
   distinct verb per two items.
 - **Start differently.** Ten of the 81 B1 passages open "Después de".
+- **Vary the sentence count.** All 81 are 5–7 sentences, mean exactly 6.0.
+  That uniformity is itself the tell: they were built to a template.
+
+**Reach a tense more than one way.** A passage goes formulaic when the writer
+picks the easiest trigger for the grammar it must show. 49 of the 81 B1
+passages reached the pluscuamperfecto through *"Antes de X, había Y"*. Spread
+across these instead — no route more than a couple of times per batch:
+
+| tense | routes |
+|---|---|
+| pluscuamperfecto | *Cuando llegué, ya…* · *Nunca había…hasta que* · *Para entonces…* · *Me dijo que había…* · *Era la primera vez que…* · *Si lo hubiera sabido* · relative clause: *el piso que habían comprado* |
+| imperfecto de subjuntivo | *Si tuviera…* · *Ojalá…* · *Me pidió que…* · *Como si…* · *Aunque fuera…* · *Buscaba a alguien que…* · *Fue una pena que…* |
+| presente de subjuntivo | *Cuando termine…* · *Para que…* · *Aunque no sea…* · *No creo que…* · *Quienquiera que…* · *Hasta que no…* · an imperative + *que* |
+| futuro perfecto | *Para diciembre ya…* · *Habrá salido, porque no contesta* (conjecture) · *En cuanto haya terminado* |
+| condicional perfecto | *Habría ido, pero…* · reported speech: *dijo que habría…* · *Yo que tú, habría…* |
+
+The conjecture uses (*habrá salido* = "he must have left") are worth reaching
+for: they are the ones learners never meet, and they cannot be produced by a
+time-marker template.
 
 Spread them across the 20 themes in `data/taxonomy.js`. The existing ones
 cluster on everyday life; `politica`, `economia`, `medios`, `ciencia` and
