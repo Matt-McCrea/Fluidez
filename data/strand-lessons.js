@@ -2724,6 +2724,140 @@ window.STRAND_LESSONS = [
     { id: 'p:atenuacion1a2:recall', kind: 'recall',
       front: 'Impersonal word that softens a request by removing "yo" entirely', back: 'se' }
   ]
+},
+
+/* ============================================================================
+ * BATCH 6 — seq 208-211 of spec/syllabus-draft.json (A2 genre). Finishes A2.
+ * Same harvester duplicate-id bug as the A1 genre range: 208/211 are both
+ * "generos-de-transmision-escrita" (two adjacent PCIC sections cataloging
+ * the same short written text types) and 209/210 both "generos-de-
+ * transmision-oral". Consolidated: the written catalogs merge into one
+ * lesson (gn-generos-escritos-a2, like its A1 counterpart); the oral catalog
+ * is mostly conversation types already covered by function lessons
+ * (transactional shopping, phone calls), so only its two genuinely new,
+ * genre-shaped items become their own lessons: giving instructions, and a
+ * short public presentation.
+ * ========================================================================== */
+{
+  id: 'gn-generos-escritos-a2', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  pcic: ['generos_discursivos:A2:67', 'generos_discursivos:A2:76', 'generos_discursivos:A2:77',
+         'generos_discursivos:A2:78', 'generos_discursivos:A2:82', 'generos_discursivos:A2:83', 'generos_discursivos:A2:86'],
+  title: 'Textos breves de cada día (A2)',
+  summary: 'A2 extends the A1 catalog of short texts with genres that carry more running prose — a horoscope, a weather report, a short news item, a recipe — each still built to be skimmed for its one relevant piece, not read start to finish like a story.',
+  sections: [
+    { h: 'More prose, same shape', html: "A2 texts (horóscopos, recetas, noticias) have more connected sentences than A1's bare lists and forms, but they still follow a predictable shape you can exploit — a recipe lists ingredients then steps, a horoscope is one paragraph per sign, a weather report follows the days of the week." },
+    { h: 'Predictable, not surprising', html: 'These genres are chosen specifically because they are predictable — you already know roughly what a job advert or a weather forecast will say before you read it, which is what lets you read fast.' }
+  ],
+  moves: [
+    { h: 'Anticipar el contenido', html: 'Antes de leer, predice qué va a decir el texto según su tipo: una receta tendrá ingredientes y pasos; un horóscopo, predicciones por signo.' },
+    { h: 'Leer solo tu parte', html: 'En un horóscopo, lees solo tu signo. En una receta, si ya sabes cocinar, saltas a los pasos. No hace falta leer género por género.' }
+  ],
+  model: {
+    title: 'Horóscopo: Piscis',
+    text: 'Esta semana viene cargada de energía positiva. En el trabajo, es un buen momento para proponer nuevas ideas: alguien importante te va a escuchar. En el amor, si tienes pareja, dedicadle más tiempo; si estás soltero, es posible que conozcas a alguien interesante en una reunión con amigos. Cuida tu salud: duerme al menos ocho horas y bebe mucha agua.'
+  },
+  checklist: [
+    '¿Identificaste el tipo de texto antes de leer?',
+    '¿Leíste solo la parte que te interesaba (tu signo, la sección relevante)?'
+  ],
+  examples: [
+    { es: 'Mañana, temperaturas suaves y algo de sol por la tarde.', en: 'Tomorrow, mild temperatures and some sun in the afternoon.' },
+    { es: 'Se busca camarero con experiencia. Jornada completa.', en: 'Waiter wanted with experience. Full time.' },
+    { es: 'Añade la cebolla y sofríe cinco minutos.', en: 'Add the onion and fry for five minutes.' }
+  ],
+  probes: [
+    { id: 'p:generosescritosa2:predecir', kind: 'mcq',
+      q: 'Vas a leer una receta. ¿Qué esperas encontrar?',
+      options: ['Ingredientes y pasos', 'Un horóscopo', 'Una oferta de trabajo'], answer: 0 },
+    { id: 'p:generosescritosa2:tuparte', kind: 'mcq',
+      q: 'Lees un horóscopo. ¿Qué parte necesitas leer?',
+      options: ['Todos los signos', 'Solo tu signo', 'Solo el título'], answer: 1 },
+    { id: 'p:generosescritosa2:cloze', kind: 'cloze',
+      text: 'Añade la cebolla y ___ cinco minutos.', accept: ['sofríe'] },
+    { id: 'p:generosescritosa2:recall', kind: 'recall',
+      front: 'Why are genres like horoscopes and job ads good for fast reading?', back: 'they are predictable — you already know roughly what they will say' }
+  ]
+},
+
+{
+  id: 'gn-instrucciones-a2', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  pcic: ['generos_discursivos:A2:55'],
+  title: 'Dar instrucciones breves',
+  summary: 'Instructions have their own shape: a short setup naming the goal, then steps in strict order, almost always in the imperative — skipping the order or mixing tenses turns clear instructions into a puzzle.',
+  sections: [
+    { h: 'Order is the content', html: 'Unlike a story, where you can often reorder events for effect, instructions have exactly one correct order — the sequencing markers (primero, luego, después, por último) are not decoration, they carry the instruction itself.' },
+    { h: 'The imperative default', html: 'Instructions default to the imperative (<i>Aprieta, gira, añade</i>) — tú or usted depending on who you are instructing, consistent throughout, not mixed mid-text.' }
+  ],
+  moves: [
+    { h: 'Objetivo', html: 'Una frase breve que dice qué se va a conseguir: "Para encender la lavadora..."' },
+    { h: 'Pasos en orden', html: 'Cada paso, uno detrás de otro, con marcadores de secuencia y verbos en imperativo.' }
+  ],
+  model: {
+    title: 'Cómo usar la cafetera',
+    text: 'Para hacer un café, sigue estos pasos. Primero, llena el depósito de agua. Luego, pon el café molido en el filtro. Después, coloca la jarra en su sitio y enciende la máquina. Por último, espera dos minutos y ya puedes servir el café.'
+  },
+  checklist: [
+    '¿Dijiste el objetivo antes de los pasos?',
+    '¿Usaste marcadores de secuencia y el imperativo de forma consistente?'
+  ],
+  examples: [
+    { es: 'Primero, abre la aplicación.', en: 'First, open the app.' },
+    { es: 'Aprieta el botón rojo durante tres segundos.', en: 'Press the red button for three seconds.' },
+    { es: 'Por último, guarda los cambios.', en: 'Finally, save the changes.' }
+  ],
+  probes: [
+    { id: 'p:instruccionesa2:orden', kind: 'mcq',
+      q: '¿Qué pasa si cambias el orden de los pasos en unas instrucciones?',
+      options: ['Nada, el orden no importa', 'Pueden dejar de funcionar', 'Suena más formal'], answer: 1 },
+    { id: 'p:instruccionesa2:modo', kind: 'mcq',
+      q: '¿Qué modo verbal es el estándar para dar instrucciones?',
+      options: ['Indicativo', 'Imperativo', 'Subjuntivo'], answer: 1 },
+    { id: 'p:instruccionesa2:cloze', kind: 'cloze',
+      text: '___, llena el depósito de agua.', accept: ['Primero', 'primero'] },
+    { id: 'p:instruccionesa2:recall', kind: 'recall',
+      front: 'What do sequencing markers (primero, luego...) carry in an instruction text?', back: 'part of the instruction itself, not just decoration' }
+  ]
+},
+
+{
+  id: 'gn-presentacion-publica-a2', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  pcic: ['generos_discursivos:A2:56'],
+  title: 'Una presentación pública breve',
+  summary: 'A short presentation on a familiar topic has three moves that almost never change — introduce the topic, develop two or three points, close — and visual support (a photo, a slide) carries some of the weight so your spoken Spanish does not have to.',
+  sections: [
+    { h: 'Three moves, reliably', html: 'Introduction, development, closing — almost every short presentation follows this shape, which makes it easy to plan even with limited vocabulary.' },
+    { h: 'Let the visual do some work', html: 'A photo or simple slide can carry a name, a place, a number — freeing your spoken Spanish to focus on connecting ideas rather than listing facts.' }
+  ],
+  moves: [
+    { h: 'Introducción', html: 'Presenta el tema en una frase: "Hoy os voy a hablar de..."' },
+    { h: 'Desarrollo', html: 'Dos o tres puntos principales, cada uno con una idea clara — no una lista larga de datos.' },
+    { h: 'Cierre', html: 'Una frase que resume o cierra: "Y esto es todo lo que quería contaros."' }
+  ],
+  model: {
+    title: 'Mi ciudad',
+    text: 'Hoy os voy a hablar de mi ciudad, Valencia. Primero, Valencia está en la costa este de España y tiene un clima muy agradable. Además, es famosa por su comida, especialmente la paella. Por último, tiene una arquitectura muy moderna, como la Ciudad de las Artes y las Ciencias. Y esto es todo lo que quería contaros sobre mi ciudad.'
+  },
+  checklist: [
+    '¿Presentaste el tema con una frase clara al principio?',
+    '¿Cerraste la presentación en vez de terminar de repente?'
+  ],
+  examples: [
+    { es: 'Hoy os voy a hablar de mi familia.', en: "Today I'm going to tell you about my family." },
+    { es: 'Además, es un lugar muy tranquilo.', en: "Also, it's a very peaceful place." },
+    { es: 'Y esto es todo lo que quería contaros.', en: "And that's all I wanted to tell you." }
+  ],
+  probes: [
+    { id: 'p:presentacionpublicaa2:estructura', kind: 'mcq',
+      q: '¿Cuáles son las tres partes de una presentación breve?',
+      options: ['Introducción, desarrollo, cierre', 'Saludo, pregunta, respuesta', 'Título, imagen, fecha'], answer: 0 },
+    { id: 'p:presentacionpublicaa2:visual', kind: 'mcq',
+      q: '¿Para qué sirve el apoyo visual en una presentación breve?',
+      options: ['Para decorar', 'Para llevar parte de la información y aliviar el español hablado', 'No sirve para nada'], answer: 1 },
+    { id: 'p:presentacionpublicaa2:cloze', kind: 'cloze',
+      text: 'Hoy os voy a ___ de mi ciudad.', accept: ['hablar'] },
+    { id: 'p:presentacionpublicaa2:recall', kind: 'recall',
+      front: 'The three reliable moves of a short public presentation', back: 'introducción, desarrollo, cierre' }
+  ]
 }
 
 ];
