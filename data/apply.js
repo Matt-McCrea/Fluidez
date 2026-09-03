@@ -435,6 +435,73 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'Mi hermana ___ (ser) muy simpática con todo el mundo.', inf: 'ser', tense: 'presente', person: 'él/ella', en: 'My sister is very nice to everyone.' },
   { type: 'cloze', level: 1, text: 'Ahora mismo, nosotros ___ (estar) muy cansados.', inf: 'estar', tense: 'presente', person: 'nosotros', en: 'Right now, we are very tired.' },
   { type: 'cloze', level: 2, text: 'De niña, ella ___ (jugar) en el parque cada tarde.', inf: 'jugar', tense: 'imperfecto', person: 'él/ella', en: 'As a child, she used to play in the park every afternoon.' },
-  { type: 'cloze', level: 2, text: 'Ayer nosotros ___ (decidir) cambiar de casa.', inf: 'decidir', tense: 'preterito', person: 'nosotros', en: 'Yesterday we decided to change houses.' }
+  { type: 'cloze', level: 2, text: 'Ayer nosotros ___ (decidir) cambiar de casa.', inf: 'decidir', tense: 'preterito', person: 'nosotros', en: 'Yesterday we decided to change houses.' },
+
+  // ==== batch: B1 (levels 4-5) — subjunctive, imperative, compound tenses ====
+
+  // ---- level 4: presente de subjuntivo ----
+  { type: 'cloze', level: 4, text: 'Mis padres quieren que yo ___ (estudiar) medicina.', inf: 'estudiar', tense: 'presubj', person: 'yo', en: 'My parents want me to study medicine.' },
+  { type: 'cloze', level: 4, text: 'Es importante que tú ___ (llegar) temprano a la entrevista.', inf: 'llegar', tense: 'presubj', person: 'tú', en: "It's important that you arrive early to the interview." },
+  { type: 'cloze', level: 4, text: 'Ojalá que ella ___ (aprobar) el examen de conducir.', inf: 'aprobar', tense: 'presubj', person: 'él/ella', en: 'I hope she passes the driving test.' },
+  { type: 'cloze', level: 4, text: 'El profesor espera que nosotros ___ (entregar) el trabajo a tiempo.', inf: 'entregar', tense: 'presubj', person: 'nosotros', en: 'The teacher hopes we hand in the work on time.' },
+  { type: 'cloze', level: 4, text: 'Prefiero que vosotros ___ (decidir) juntos el destino del viaje.', inf: 'decidir', tense: 'presubj', person: 'vosotros', en: 'I prefer that you all decide the trip destination together.' },
+  { type: 'cloze', level: 4, text: 'No creo que ellos ___ (saber) toda la verdad.', inf: 'saber', tense: 'presubj', person: 'ellos', en: "I don't think they know the whole truth." },
+
+  // ---- level 4: imperfecto de subjuntivo ----
+  { type: 'cloze', level: 4, text: 'Si yo ___ (tener) más tiempo libre, viajaría por Sudamérica.', inf: 'tener', tense: 'impsubj', person: 'yo', en: 'If I had more free time, I would travel around South America.' },
+  { type: 'cloze', level: 4, text: 'Mi madre quería que tú la ___ (llamar) todos los domingos.', inf: 'llamar', tense: 'impsubj', person: 'tú', en: 'My mother wanted you to call her every Sunday.' },
+  { type: 'cloze', level: 4, text: 'Si ella ___ (saber) conducir, iría en coche al trabajo.', inf: 'saber', tense: 'impsubj', person: 'él/ella', en: 'If she knew how to drive, she would go to work by car.' },
+  { type: 'cloze', level: 4, text: 'Si nosotros ___ (ganar) la lotería, compraríamos una casa.', inf: 'ganar', tense: 'impsubj', person: 'nosotros', en: 'If we won the lottery, we would buy a house.' },
+  { type: 'cloze', level: 4, text: 'El director pidió que vosotros ___ (terminar) el informe antes del viernes.', inf: 'terminar', tense: 'impsubj', person: 'vosotros', en: 'The director asked you all to finish the report before Friday.' },
+  { type: 'cloze', level: 4, text: 'Si ellos ___ (venir) a la fiesta, la pasaríamos genial.', inf: 'venir', tense: 'impsubj', person: 'ellos', en: 'If they came to the party, we would have a great time.' },
+
+  // ---- level 4: imperativo ----
+  { type: 'cloze', level: 4, text: '___ (cerrar) la puerta cuando salgas, por favor.', inf: 'cerrar', tense: 'imperativo', person: 'tú', en: 'Close the door when you leave, please.' },
+  { type: 'cloze', level: 4, text: '___ (firmar) aquí, por favor.', inf: 'firmar', tense: 'imperativo', person: 'usted', en: 'Sign here, please.' },
+  { type: 'cloze', level: 4, text: '___ (empezar) la reunión sin más demora.', inf: 'empezar', tense: 'imperativo', person: 'nosotros', en: "Let's start the meeting without further delay." },
+  { type: 'cloze', level: 4, text: '___ (escuchar) con atención las instrucciones.', inf: 'escuchar', tense: 'imperativo', person: 'vosotros', en: 'Listen carefully to the instructions.' },
+  { type: 'cloze', level: 4, text: '___ (pasar) por la puerta principal, por favor.', inf: 'pasar', tense: 'imperativo', person: 'ustedes', en: 'Go through the main door, please.' },
+
+  // ---- level 4: pluscuamperfecto ----
+  { type: 'cloze', level: 4, text: 'Antes de ese trabajo, yo nunca ___ (viajar) al extranjero.', inf: 'viajar', tense: 'plusc', person: 'yo', en: 'Before that job, I had never traveled abroad.' },
+  { type: 'cloze', level: 4, text: 'Cuando te conocí, tú ya ___ (viajar) por diez países.', inf: 'viajar', tense: 'plusc', person: 'tú', en: 'When I met you, you had already traveled through ten countries.' },
+  { type: 'cloze', level: 4, text: 'Cuando llegó la policía, el ladrón ya ___ (salir) del banco.', inf: 'salir', tense: 'plusc', person: 'él/ella', en: 'When the police arrived, the thief had already left the bank.' },
+  { type: 'cloze', level: 4, text: 'Antes de ese verano, nosotros nunca ___ (viajar) tan lejos.', inf: 'viajar', tense: 'plusc', person: 'nosotros', en: "Before that summer, we had never traveled so far." },
+  { type: 'cloze', level: 4, text: 'Cuando os conocimos, vosotros ya ___ (terminar) la carrera.', inf: 'terminar', tense: 'plusc', person: 'vosotros', en: 'When we met you all, you had already finished your degree.' },
+  { type: 'cloze', level: 4, text: 'Cuando llegamos al cine, la película ya ___ (empezar).', inf: 'empezar', tense: 'plusc', person: 'él/ella', en: 'When we got to the cinema, the film had already started.' },
+
+  // ---- level 5: futuro perfecto ----
+  { type: 'cloze', level: 5, text: 'Para las nueve, yo ya ___ (terminar) el informe.', inf: 'terminar', tense: 'futperf', person: 'yo', en: 'By nine, I will have finished the report.' },
+  { type: 'cloze', level: 5, text: 'Para el año que viene, tú ya ___ (acabar) la carrera.', inf: 'acabar', tense: 'futperf', person: 'tú', en: 'By next year, you will have finished your degree.' },
+  { type: 'cloze', level: 5, text: 'Para diciembre, ella ya ___ (cambiar) de trabajo.', inf: 'cambiar', tense: 'futperf', person: 'él/ella', en: 'By December, she will have changed jobs.' },
+  { type: 'cloze', level: 5, text: 'Para entonces, nosotros ya ___ (terminar) el proyecto.', inf: 'terminar', tense: 'futperf', person: 'nosotros', en: 'By then, we will have finished the project.' },
+  { type: 'cloze', level: 5, text: 'Cuando volváis, vosotros ya ___ (aprender) mucho español.', inf: 'aprender', tense: 'futperf', person: 'vosotros', en: 'By the time you all come back, you will have learned a lot of Spanish.' },
+  { type: 'cloze', level: 5, text: 'Para el viernes, ellos ya ___ (entregar) el proyecto.', inf: 'entregar', tense: 'futperf', person: 'ellos', en: 'By Friday, they will have handed in the project.' },
+
+  // ---- level 5: condicional perfecto ----
+  { type: 'cloze', level: 5, text: 'Sin tu ayuda, yo no ___ (conseguir) el trabajo.', inf: 'conseguir', tense: 'condperf', person: 'yo', en: "Without your help, I wouldn't have gotten the job." },
+  { type: 'cloze', level: 5, text: 'En mi lugar, tú ___ (hacer) lo mismo.', inf: 'hacer', tense: 'condperf', person: 'tú', en: 'In my place, you would have done the same.' },
+  { type: 'cloze', level: 5, text: 'Con más tiempo, ella ___ (terminar) el proyecto mejor.', inf: 'terminar', tense: 'condperf', person: 'él/ella', en: 'With more time, she would have finished the project better.' },
+  { type: 'cloze', level: 5, text: 'Sin el tráfico, nosotros ___ (llegar) mucho antes.', inf: 'llegar', tense: 'condperf', person: 'nosotros', en: 'Without the traffic, we would have arrived much earlier.' },
+  { type: 'cloze', level: 5, text: 'Con más práctica, vosotros ___ (mejorar) mucho más.', inf: 'mejorar', tense: 'condperf', person: 'vosotros', en: 'With more practice, you all would have improved much more.' },
+  { type: 'cloze', level: 5, text: 'Sin ese error, ellos ___ (ganar) el partido.', inf: 'ganar', tense: 'condperf', person: 'ellos', en: 'Without that mistake, they would have won the match.' },
+
+  // ---- level 5: pretérito perfecto de subjuntivo ----
+  { type: 'cloze', level: 5, text: 'Espero que yo ___ (aprobar) el examen de conducir.', inf: 'aprobar', tense: 'perfsubj', person: 'yo', en: 'I hope I have passed the driving test.' },
+  { type: 'cloze', level: 5, text: 'Ojalá que tú ___ (llegar) bien a casa.', inf: 'llegar', tense: 'perfsubj', person: 'tú', en: 'I hope you have arrived home safely.' },
+  { type: 'cloze', level: 5, text: 'Dudo que ella ya ___ (terminar) el informe.', inf: 'terminar', tense: 'perfsubj', person: 'él/ella', en: "I doubt she has finished the report yet." },
+  { type: 'cloze', level: 5, text: 'Es una pena que nosotros no ___ (poder) verte esta vez.', inf: 'poder', tense: 'perfsubj', person: 'nosotros', en: "It's a shame we haven't been able to see you this time." },
+  { type: 'cloze', level: 5, text: 'Me alegro de que vosotros ___ (aprobar) todos los exámenes.', inf: 'aprobar', tense: 'perfsubj', person: 'vosotros', en: 'I\'m glad you all have passed all the exams.' },
+  { type: 'cloze', level: 5, text: 'No creo que ellos ___ (llegar) todavía.', inf: 'llegar', tense: 'perfsubj', person: 'ellos', en: "I don't think they have arrived yet." },
+
+  // ---- transforms: level 4-5 ----
+  { type: 'transform', level: 4, instruction: 'Rewrite as a wish using "Ojalá que…" + subjunctive:', from: 'Ella gana el premio.', to: 'Ojalá que ella gane el premio.', en: 'I hope she wins the prize.' },
+  { type: 'transform', level: 4, instruction: 'Rewrite as an usted command:', from: 'Usted firma aquí.', to: 'Firme aquí.', en: 'Sign here.' },
+  { type: 'transform', level: 4, instruction: 'Rewrite in the pluscuamperfecto (already done before another past action):', from: 'Nosotros terminamos el trabajo antes de la reunión.', to: 'Nosotros habíamos terminado el trabajo antes de la reunión.', en: 'We had finished the work before the meeting.' },
+  { type: 'transform', level: 4, instruction: 'Rewrite as a nosotros command ("Let\'s..."):', from: 'Nosotros empezamos ahora.', to: 'Empecemos ahora.', en: "Let's start now." },
+  { type: 'transform', level: 4, instruction: 'Rewrite as a vosotros command:', from: 'Vosotros leéis las instrucciones.', to: 'Leed las instrucciones.', en: 'Read the instructions.' },
+  { type: 'transform', level: 5, instruction: 'Rewrite in the futuro perfecto (will have done by then):', from: 'Ellos terminan el proyecto.', to: 'Ellos habrán terminado el proyecto.', en: 'They will have finished the project.' },
+  { type: 'transform', level: 5, instruction: 'Rewrite in the condicional perfecto (would have done):', from: 'Yo acepto la oferta.', to: 'Yo habría aceptado la oferta.', en: 'I would have accepted the offer.' },
+  { type: 'transform', level: 5, instruction: 'Rewrite as a hope using "Ojalá que…" + pretérito perfecto de subjuntivo:', from: 'Ella llega a tiempo.', to: 'Ojalá que ella haya llegado a tiempo.', en: 'I hope she has arrived on time.' }
 
 ];
