@@ -9867,6 +9867,421 @@ window.STRAND_LESSONS = [
     { id: 'p:pedirfavor:cloze', kind: 'cloze', text: '¿Te ___ acompañarme? (importaría)', accept: ['importaría'] },
     { id: 'p:pedirfavor:recall', kind: 'recall', front: 'What does ¿te importa/importaría...? frame the favor as?', back: 'a possible inconvenience — extra polite' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 function, wave 4 of 5: asking for help/permission,
+ * prohibiting, offering/rejecting, and warning/reproaching/consoling
+ * (seq 374-443).
+ * ========================================================================== */
+{
+  id: 'fn-ayuda-atenuada-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:1012', 'funciones:B1:1013', 'funciones:B1:1014', 'funciones:B1:1015', 'funciones:B1:1016', 'funciones:B1:1017', 'funciones:B1:1018', 'funciones:B1:1019'],
+  title: 'Pedir ayuda de forma atenuada',
+  summary: '¿Coges tú la caja grande? asks for help without ever using the word "help" — a plain question about what the other person will do, softer than any explicit request could be.',
+  sections: [
+    { h: 'Ayúdame + softener', html: 'The bare imperative, softened with <i>por favor</i> and a justification: <i>Ayúdame, por favor. Es que no puedo mover esta mesa.</i>' },
+    { h: '¿Te importa/importaría / ¿Puedes/Podrías + ayudarme a...?', html: 'The standard softened-question family, from casual to more polite.' },
+    { h: 'A plain question about the future: covert help-asking', html: 'No mention of "help" at all — just ask what they will do: <i>¿Coges tú la caja grande?</i> implies you would like them to.' },
+    { h: 'Necesito que me ayudes a...', html: 'States the need directly, subjunctive because it is about someone else\'s action.' }
+  ],
+  exponents: [
+    { es: '¿Puedes ayudarme a mover este mueble, por favor?', en: 'Can you help me move this piece of furniture, please?', register: 'coloquial' },
+    { es: '¿Te importaría ayudarme con estos ejercicios?', en: 'Would you mind helping me with these exercises?', register: 'neutral' },
+    { es: '¿Coges tú la caja grande?', en: 'Will you grab the big box?', register: 'coloquial', note: 'no mention of "help" — a plain question implies the request' },
+    { es: 'Necesito que me ayude a redactar este documento.', en: 'I need you to help me draft this document.', register: 'formal' }
+  ],
+  pitfalls: [
+    'A plain question about what someone will do (<i>¿coges tú la caja?</i>) can BE a request for help, with no explicit mention of helping at all.',
+    '<i>Necesito que</i> + a clause always takes the subjunctive.'
+  ],
+  examples: [
+    { es: '¿Me echas una mano con esto?', en: 'Can you give me a hand with this?' },
+    { es: 'Necesito que me ayudes a entender este contrato.', en: 'I need you to help me understand this contract.' },
+    { es: '¿Te importa echarme una mano un momento?', en: 'Do you mind giving me a hand for a moment?' }
+  ],
+  probes: [
+    { id: 'p:ayudaatenuada:cubierta', kind: 'mcq', q: '¿Cuál pide ayuda SIN mencionar la palabra "ayudar"?',
+      options: ['Ayúdame, por favor.', '¿Coges tú la caja grande?', '¿Puedes ayudarme?'], answer: 1 },
+    { id: 'p:ayudaatenuada:subjuntivo', kind: 'mcq', q: '"Necesito que me ___ con esto." (ayudar, tú)',
+      options: ['ayudas', 'ayudes', 'ayudarás'], answer: 1 },
+    { id: 'p:ayudaatenuada:cloze', kind: 'cloze', text: '¿Te ___ ayudarme a hacer esto? (importaría)', accept: ['importaría'] },
+    { id: 'p:ayudaatenuada:recall', kind: 'recall', front: 'What makes ¿coges tú la caja? a request for help, with no explicit mention of it?', back: 'context — a plain question about a future action implies you want them to do it' }
+  ]
+},
+
+{
+  id: 'fn-pedir-ayuda-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:1009', 'funciones:B1:1011', 'funciones:B1:1020'],
+  title: 'Pedir ayuda: directa, atenuada y encubierta',
+  summary: '¿Puedes escribirla tú? does the SAME job as ¡Ayúdame! — asking someone to act — but by describing your OWN problem first and letting them offer, it never sounds like a request at all.',
+  sections: [
+    { h: 'Three levels of directness', html: 'Direct: <i>¡Ayúdame!</i> — the bare imperative. Atenuada: <i>¿Puedes/Podrías ayudarme?</i> — softened into a question (previous lesson). Encubierta: describe the problem and let the offer of help follow naturally.' },
+    { h: 'Encubierta: hiding the request inside a complaint', html: '<i>Tengo que escribir una carta para mañana, pero es muy tarde</i> — stating the problem invites <i>¿Puedes escribirla tú?</i> without ever directly asking.' }
+  ],
+  exponents: [
+    { es: '¡Ayúdame, por favor!', en: 'Help me, please!', register: 'coloquial', note: 'de forma directa' },
+    { es: '¿Podrías ayudarme un momento?', en: 'Could you help me for a moment?', register: 'neutral', note: 'de forma atenuada' },
+    { es: 'Tengo que terminar esto para mañana y no llego.', en: "I have to finish this by tomorrow and I won't make it.", register: 'coloquial', note: 'de forma encubierta — states the problem, invites an offer' },
+    { es: '¡Ayúdeme, por favor!', en: 'Help me, please!', register: 'formal' }
+  ],
+  pitfalls: [
+    'The covert form never directly asks for anything — it describes a problem and relies on the listener to offer, a subtler move than even the softened question.'
+  ],
+  examples: [
+    { es: '¡Ayúdame con esto, que no puedo sola!', en: "Help me with this, I can't do it alone!" },
+    { es: 'No sé cómo voy a terminar esto a tiempo.', en: "I don't know how I'm going to finish this in time." },
+    { es: '¿Podrías echarme una mano con la mudanza?', en: 'Could you give me a hand with the move?' }
+  ],
+  probes: [
+    { id: 'p:pedirayuda:encubierta', kind: 'mcq', q: '¿Cuál es la forma ENCUBIERTA de pedir ayuda?',
+      options: ['¡Ayúdame!', '¿Puedes ayudarme?', 'No sé cómo voy a terminar esto a tiempo.'], answer: 2 },
+    { id: 'p:pedirayuda:directa', kind: 'mcq', q: '¿Cuál es la forma más DIRECTA?',
+      options: ['¡Ayúdame!', '¿Te importaría ayudarme?', 'Tengo un problema...'], answer: 0 },
+    { id: 'p:pedirayuda:cloze', kind: 'cloze', text: '¡___ , por favor! (ayúdame)', accept: ['Ayúdame', 'ayúdame'] },
+    { id: 'p:pedirayuda:recall', kind: 'recall', front: 'How does the covert (encubierta) form ask for help?', back: 'by describing the problem and letting the other person offer, without asking directly' }
+  ]
+},
+
+{
+  id: 'fn-pedir-permiso-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:1079', 'funciones:B1:1080', 'funciones:B1:1081', 'funciones:B1:1083', 'funciones:B1:1086'],
+  title: 'Pedir permiso',
+  summary: '¿Se puede fumar? asks about a general rule with the impersonal se, while ¿Me dejas fumar? asks a specific PERSON for their specific permission — the same question about smoking, aimed at completely different targets.',
+  sections: [
+    { h: '¿Se puede + infinitivo?: asking about the rule', html: 'Impersonal — asks whether something is generally allowed, not whether one person permits it: <i>¿Se puede fumar aquí?</i>' },
+    { h: '¿Podría + infinitivo?: asking for personal permission, formally', html: '<i>Perdona, ¿podría llegar más tarde mañana? Es que tengo que llevar a mi hijo al médico.</i> — softened with the conditional and followed by a justification.' },
+    { h: '¿Te molesta/importa...? and ¿Me dejas/dejarías...?', html: 'Asking a specific person, from casual (<i>¿me dejas...?</i>) to more tentative (<i>¿me dejarías...?</i>, conditional).' }
+  ],
+  exponents: [
+    { es: '¿Se puede aparcar aquí?', en: 'Is parking allowed here?', register: 'neutral', note: 'impersonal — about the rule, not one person' },
+    { es: '¿Me dejas usar tu ordenador un momento?', en: 'Will you let me use your computer for a moment?', register: 'coloquial' },
+    { es: '¿Te importaría que abriera la ventana?', en: 'Would you mind if I opened the window?', register: 'neutral', note: 'que + subjuntivo' },
+    { es: 'Perdone, ¿podría ausentarme unos minutos?', en: 'Excuse me, could I step out for a few minutes?', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>¿Se puede?</i> asks about the general RULE; asking one specific person needs <i>¿me dejas/dejarías...?</i> instead.',
+    'A clause after <i>¿te importaría que...?</i> takes the subjunctive: <i>que abriera</i>, not the indicative.'
+  ],
+  examples: [
+    { es: '¿Se puede pagar con tarjeta?', en: 'Can you pay by card?' },
+    { es: '¿Me dejarías salir un poco antes hoy?', en: 'Would you let me leave a bit early today?' },
+    { es: '¿Te molesta si pongo música?', en: 'Do you mind if I put some music on?' }
+  ],
+  probes: [
+    { id: 'p:pedirpermisob1:regla', kind: 'mcq', q: '¿Cuál pregunta por la REGLA general, no por el permiso de una persona?',
+      options: ['¿Me dejas fumar?', '¿Se puede fumar aquí?', '¿Te importa que fume?'], answer: 1 },
+    { id: 'p:pedirpermisob1:subjuntivo', kind: 'mcq', q: '"¿Te importaría que ___ la ventana?" (abrir, yo)',
+      options: ['abro', 'abriera', 'abro'], answer: 1 },
+    { id: 'p:pedirpermisob1:cloze', kind: 'cloze', text: '¿___ puede aparcar aquí? (se)', accept: ['Se', 'se'] },
+    { id: 'p:pedirpermisob1:recall', kind: 'recall', front: '¿Se puede...? vs ¿me dejas...? — which asks a specific person?', back: '¿me dejas...?' }
+  ]
+},
+
+{
+  id: 'fn-prohibir-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:1118', 'funciones:B1:1119', 'funciones:B1:1120', 'funciones:B1:1121', 'funciones:B1:1122', 'funciones:B1:1123', 'funciones:B1:1124'],
+  title: 'Prohibir',
+  summary: 'No tocar is grammatically an infinitive standing alone as a command — a sign format that names no one and needs no conjugation, the impersonal extreme of a whole scale that runs from se prohíbe down to a bare no + subjuntivo aimed at one person.',
+  sections: [
+    { h: 'Impersonal, written prohibition', html: '<i>Se prohíbe + noun/infinitivo/que...</i>, <i>Está prohibido + infinitivo</i>, <i>No está permitido + infinitivo</i> — the register of official signs.' },
+    { h: 'Everyday spoken prohibition', html: '<i>No (se) puede + infinitivo</i>, <i>No debes + infinitivo</i> — softer, conversational.' },
+    { h: 'The sign-only extremes', html: '<i>No + infinitivo</i> (<i>No tocar</i>) as a bare label needs no subject or conjugation at all; <i>No + subjuntivo</i> (<i>No fumes aquí</i>) is aimed directly at one person, a negative imperative.' }
+  ],
+  exponents: [
+    { es: 'Se prohíbe aparcar en esta zona.', en: 'Parking is prohibited in this area.', register: 'formal', note: 'official sign register' },
+    { es: 'No puedes entrar sin invitación.', en: "You can't come in without an invitation.", register: 'coloquial' },
+    { es: 'No fumes aquí, por favor.', en: "Don't smoke here, please.", register: 'coloquial', note: 'no + subjuntivo — aimed at one person' },
+    { es: 'No está permitido el acceso sin identificación.', en: 'Access without identification is not permitted.', register: 'formal' }
+  ],
+  pitfalls: [
+    'A bare <i>No + infinitivo</i> sign (<i>No tocar, No fumar</i>) is the impersonal extreme, needing no subject; do not confuse it with the negative imperative <i>No + subjuntivo</i> (<i>No fumes</i>), which is aimed at one specific person.',
+    '<i>Se prohíbe que + subjuntivo</i> takes the subjunctive when a full clause follows.'
+  ],
+  examples: [
+    { es: 'No se pueden hacer fotografías en la sala.', en: 'Photographs are not allowed in the room.' },
+    { es: 'Está prohibido dar de comer a los animales.', en: 'Feeding the animals is prohibited.' },
+    { es: 'No tocar.', en: 'Do not touch.' }
+  ],
+  probes: [
+    { id: 'p:prohibirb1:sinsujeto', kind: 'mcq', q: '¿Cuál es un letrero sin sujeto ni conjugación?',
+      options: ['No fumes.', 'No fumar.', 'No debes fumar.'], answer: 1 },
+    { id: 'p:prohibirb1:persona', kind: 'mcq', q: '¿Cuál se dirige a UNA persona concreta?',
+      options: ['Se prohíbe fumar.', 'No fumes aquí.', 'Está prohibido fumar.'], answer: 1 },
+    { id: 'p:prohibirb1:cloze', kind: 'cloze', text: '___ prohíbe aparcar aquí. (se)', accept: ['Se', 'se'] },
+    { id: 'p:prohibirb1:recall', kind: 'recall', front: 'What does a bare "No + infinitivo" sign need — a subject, a conjugated verb, or neither?', back: 'neither — it stands alone' }
+  ]
+},
+
+{
+  id: 'fn-ofrecer-invitar-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1163', 'funciones:B1:1164', 'funciones:B1:1165'],
+  title: 'Ofrecer e invitar',
+  summary: 'Pruébalo, está buenísimo does not describe what will happen if you try it — it IS the invitation, an imperative doing the work a longer "would you like to try it?" would take twice as many words to do.',
+  sections: [
+    { h: '¿Te apetece + noun/infinitivo?', html: 'The standard offer question: <i>¿Te apetece un café?</i>, <i>¿Te apetece tomar algo?</i>' },
+    { h: 'The bare imperative as an offer', html: 'A direct imperative, often followed by a reason, IS the invitation: <i>Ven con nosotras. Vamos al cine.</i>, <i>Pruébalo. Está buenísimo.</i>' },
+    { h: 'Doubled imperative for warmth', html: '<i>Siéntate, siéntate</i> — repetition here signals welcoming insistence, not urgency.' }
+  ],
+  exponents: [
+    { es: '¿Te apetece un café?', en: 'Do you feel like a coffee?', register: 'coloquial' },
+    { es: 'Ven con nosotros, vamos a dar una vuelta.', en: "Come with us, we're going for a walk.", register: 'coloquial', note: 'the imperative itself is the invitation' },
+    { es: 'Siéntate, siéntate, estás en tu casa.', en: 'Sit down, sit down, make yourself at home.', register: 'coloquial', note: 'doubled — warmth, not urgency' },
+    { es: '¿Le apetecería acompañarnos a cenar?', en: 'Would you like to join us for dinner?', register: 'formal' }
+  ],
+  pitfalls: [
+    'A doubled imperative in this context (<i>siéntate, siéntate</i>) signals warm insistence, the opposite tone from the urgent doubling met earlier (<i>¡corre, corre!</i>) — context decides which.'
+  ],
+  examples: [
+    { es: '¿Os apetece salir esta noche?', en: 'Do you all feel like going out tonight?' },
+    { es: 'Coge lo que quieras, hay de sobra.', en: "Take whatever you like, there's plenty." },
+    { es: 'Pasa, pasa, no te quedes en la puerta.', en: "Come in, come in, don't stand at the door." }
+  ],
+  probes: [
+    { id: 'p:ofrecerinvitarb1:imperativo', kind: 'mcq', q: '"Pruébalo, está buenísimo" es:',
+      options: ['una orden', 'una invitación', 'una pregunta'], answer: 1 },
+    { id: 'p:ofrecerinvitarb1:doblado', kind: 'mcq', q: '¿Qué transmite "siéntate, siéntate" en este contexto?',
+      options: ['urgencia', 'calidez/insistencia amable', 'enfado'], answer: 1 },
+    { id: 'p:ofrecerinvitarb1:cloze', kind: 'cloze', text: '¿Te ___ un café? (apetece)', accept: ['apetece'] },
+    { id: 'p:ofrecerinvitarb1:recall', kind: 'recall', front: 'Can a bare imperative function as an invitation, with no question at all?', back: 'yes — pruébalo, ven con nosotros, etc.' }
+  ]
+},
+
+{
+  id: 'fn-rechazar-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1193', 'funciones:B1:1195', 'funciones:B1:1197', 'funciones:B1:1198', 'funciones:B1:1199', 'funciones:B1:1200'],
+  title: 'Rechazar una propuesta, ofrecimiento o invitación',
+  summary: 'Every one of these declines leans on es que — the excuse is not decoration, it is the part that keeps a rejection from sounding like a flat, personal no, and dropping it is what makes a refusal feel cold.',
+  sections: [
+    { h: 'Thanking, then declining', html: '<i>(No,) (no,) muchísimas gracias</i>, <i>(No,) lo siento</i> — soften the no before or as you say it.' },
+    { h: 'Es que...: the obligatory excuse', html: '<i>Pues es que tengo que estudiar</i> — the excuse is not optional politeness, it is what keeps the refusal from sounding personal.' },
+    { h: 'Prefiero + excuse', html: '<i>Prefiero quedarme en casa, gracias. Tengo mucho trabajo.</i> — reframes the refusal as a preference, with its own justification.' }
+  ],
+  exponents: [
+    { es: 'No, muchas gracias, pero no puedo.', en: "No, thank you very much, but I can't.", register: 'coloquial' },
+    { es: 'Pues es que tengo mucho trabajo esta semana.', en: 'Well, it\'s just that I have a lot of work this week.', register: 'coloquial', note: 'es que — the obligatory excuse' },
+    { es: '¡Qué pena! No puedo, lo siento de verdad, ya he quedado.', en: "What a shame! I can't, I'm really sorry, I already have plans.", register: 'coloquial' },
+    { es: 'Lamento no poder aceptar la invitación en esta ocasión.', en: 'I regret that I am unable to accept the invitation on this occasion.', register: 'formal' }
+  ],
+  pitfalls: [
+    'Dropping the <i>es que...</i> excuse makes a refusal sound blunter and more personal than intended — it is almost never optional in a polite decline.',
+    '<i>Pues no</i> alone, without an excuse, reads as noticeably curt — reserve it for very casual contexts.'
+  ],
+  examples: [
+    { es: 'No, gracias, prefiero no beber esta noche.', en: "No thanks, I'd rather not drink tonight." },
+    { es: 'Es que ya tengo otro compromiso a esa hora.', en: "It's just that I already have another commitment at that time." },
+    { es: 'No puedo ir, lo siento mucho.', en: "I can't go, I'm very sorry." }
+  ],
+  probes: [
+    { id: 'p:rechazarb1:excusa', kind: 'mcq', q: '¿Qué hace "es que..." en un rechazo cortés?',
+      options: ['nada, es relleno', 'evita que suene como un no personal', 'lo hace más brusco'], answer: 1 },
+    { id: 'p:rechazarb1:brusco', kind: 'mcq', q: '¿Cuál suena más BRUSCO, sin excusa?',
+      options: ['Pues no.', 'Pues es que tengo trabajo.', 'Lo siento, no puedo, es que...'], answer: 0 },
+    { id: 'p:rechazarb1:cloze', kind: 'cloze', text: 'No puedo, ___ ya he quedado. (es que)', accept: ['es que'] },
+    { id: 'p:rechazarb1:recall', kind: 'recall', front: 'Is the "es que..." excuse in a polite refusal usually optional?', back: 'no — it is almost always expected, not just decoration' }
+  ]
+},
+
+{
+  id: 'fn-advertir-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1225', 'funciones:B1:1226', 'funciones:B1:1227'],
+  title: 'Advertir',
+  summary: 'Tienes fiebre, así que no te levantes states a fact FIRST and lets the consequence follow — a warning built as cause and effect, more persuasive than a bare command because it explains itself before it orders anything.',
+  sections: [
+    { h: '(Ten) cuidado con + noun', html: 'The standard warning formula: <i>¡Cuidado con esos cristales!</i>' },
+    { h: 'A bare imperative as warning', html: '<i>No te subas ahí</i> — direct, no explanation needed if the danger is obvious.' },
+    { h: 'Fact + consequence', html: 'States the reason FIRST, then the warning follows as its natural consequence: <i>Tienes fiebre, así que no te levantes</i>, <i>Ese cuchillo corta mucho, te puedes hacer daño.</i>' }
+  ],
+  exponents: [
+    { es: '¡Cuidado con el escalón!', en: 'Watch out for the step!', register: 'coloquial' },
+    { es: 'No toques eso, está muy caliente.', en: "Don't touch that, it's very hot.", register: 'coloquial' },
+    { es: 'Está lloviendo mucho, así que ten cuidado al conducir.', en: "It's raining hard, so be careful driving.", register: 'neutral', note: 'cause, then consequence' },
+    { es: 'Le informamos de que el suelo puede estar resbaladizo.', en: 'We inform you that the floor may be slippery.', register: 'formal' }
+  ],
+  pitfalls: [
+    'The fact-then-consequence structure explains itself BEFORE ordering anything — reversing the order (just the imperative, with no reason) can sound abrupt when the danger is not obvious.'
+  ],
+  examples: [
+    { es: 'Cuidado con el perro, a veces muerde.', en: 'Watch out for the dog, it sometimes bites.' },
+    { es: 'Está muy resbaladizo, así que ten cuidado.', en: "It's very slippery, so be careful." },
+    { es: 'No cruces ahí, no hay semáforo.', en: "Don't cross there, there's no traffic light." }
+  ],
+  probes: [
+    { id: 'p:advertirb1:causaconsecuencia', kind: 'mcq', q: '¿Cuál explica el motivo ANTES de advertir?',
+      options: ['¡Cuidado!', 'Tienes fiebre, así que no te levantes.', 'No te subas ahí.'], answer: 1 },
+    { id: 'p:advertirb1:formula', kind: 'mcq', q: '"___ con el perro." (cuidado)',
+      options: ['Cuidado', 'Cuida', 'Cuidando'], answer: 0 },
+    { id: 'p:advertirb1:cloze', kind: 'cloze', text: '___ con esos cristales. (cuidado)', accept: ['Cuidado', 'cuidado'] },
+    { id: 'p:advertirb1:recall', kind: 'recall', front: 'What structure explains a warning before giving it?', back: 'a fact/cause, followed by así que + the warning as consequence' }
+  ]
+},
+
+{
+  id: 'fn-reprochar-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1237', 'funciones:B1:1238', 'funciones:B1:1239'],
+  title: 'Reprochar',
+  summary: 'Reproaching reuses the exact approval/disapproval grammar met earlier — me parece mal, está mal — turned on a specific person\'s specific habit, which is what separates a reproach from a general judgment about right and wrong.',
+  sections: [
+    { h: 'Me parece (muy) mal que + subjuntivo', html: 'Aimed at a specific recurring behavior: <i>Me parece mal que nunca me hagas regalos.</i>' },
+    { h: 'Está (muy) mal / No está bien + que + subjuntivo', html: 'The impersonal judgment, now pointed at the listener\'s own action: <i>Está muy mal que no me cuentes tus problemas.</i>' }
+  ],
+  exponents: [
+    { es: 'Me parece mal que llegues siempre tarde.', en: "I think it's wrong that you're always late.", register: 'coloquial' },
+    { es: 'Está muy mal que no me hayas avisado.', en: "It's really not okay that you didn't let me know.", register: 'coloquial' },
+    { es: 'No está bien que hables así de tus compañeros.', en: "It's not right to talk about your colleagues like that.", register: 'neutral' },
+    { es: 'No resulta admisible que se repita esta situación.', en: 'It is not acceptable for this situation to happen again.', register: 'formal' }
+  ],
+  pitfalls: [
+    'A reproach targets a specific, recurring behavior of the LISTENER — a que-clause about a general truth is closer to a plain opinion than a reproach.',
+    'All three formulas take the subjunctive after <i>que</i>.'
+  ],
+  examples: [
+    { es: 'Me parece fatal que no hayas llamado en toda la semana.', en: "I think it's terrible you haven't called all week." },
+    { es: 'No está bien que rompas tus promesas.', en: "It's not right to break your promises." },
+    { es: 'Está mal que trates así a la gente.', en: "It's wrong to treat people like that." }
+  ],
+  probes: [
+    { id: 'p:reprocharb1:subjuntivo', kind: 'mcq', q: '"Me parece mal que nunca me ___ regalos." (hacer)',
+      options: ['haces', 'hagas', 'harás'], answer: 1 },
+    { id: 'p:reprocharb1:reproche', kind: 'mcq', q: '¿Cuál es un REPROCHE, no una opinión general?',
+      options: ['Está mal mentir.', 'Está muy mal que no me cuentes tus problemas.', 'Mentir es incorrecto.'], answer: 1 },
+    { id: 'p:reprocharb1:cloze', kind: 'cloze', text: 'No está bien que ___ (llegar) siempre tarde.', accept: ['llegues'] },
+    { id: 'p:reprocharb1:recall', kind: 'recall', front: 'What makes these formulas a reproach rather than a general opinion?', back: 'they target a specific, recurring behavior of the listener' }
+  ]
+},
+
+{
+  id: 'fn-tranquilizar-consolar-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1258', 'funciones:B1:1259', 'funciones:B1:1260', 'funciones:B1:1261'],
+  title: 'Tranquilizar y consolar',
+  summary: 'Every one of these is a negative imperative aimed at STOPPING a feeling or action — no te preocupes, no llores — the grammar of consolation in Spanish is almost entirely about telling the distress itself to stop.',
+  sections: [
+    { h: 'Negative imperatives aimed at the feeling', html: '<i>No te preocupes</i>, <i>No te enfades</i>, <i>No llores</i> — each tells the emotion or its expression to stop, rather than describing comfort abstractly.' },
+    { h: 'No pasa nada: minimizing the problem', html: 'Downplays the situation itself, separate from addressing the listener\'s feeling.' }
+  ],
+  exponents: [
+    { es: 'No te preocupes, todo va a salir bien.', en: "Don't worry, everything is going to be fine.", register: 'coloquial' },
+    { es: 'No llores, ya pasó.', en: "Don't cry, it's over now.", register: 'coloquial' },
+    { es: 'No pasa nada, son cosas que pasan.', en: "It's okay, these things happen.", register: 'coloquial' },
+    { es: 'No se preocupe, nos ocuparemos de todo.', en: "Don't worry, we'll take care of everything.", register: 'formal' }
+  ],
+  pitfalls: [
+    'These negative imperatives target the FEELING or its expression directly (stop crying, stop worrying) — a more direct move than an abstract reassurance would be.'
+  ],
+  examples: [
+    { es: 'No te pongas así, seguro que se soluciona.', en: "Don't get like that, I'm sure it'll work out." },
+    { es: 'No es para tanto, tranquila.', en: "It's not such a big deal, relax." },
+    { es: 'No te enfades, no fue mi intención.', en: "Don't be angry, it wasn't my intention." }
+  ],
+  probes: [
+    { id: 'p:tranquilizarb1:imperativo', kind: 'mcq', q: '¿Qué tipo de estructura es "no te preocupes"?',
+      options: ['un imperativo negativo', 'una pregunta', 'un sustantivo'], answer: 0 },
+    { id: 'p:tranquilizarb1:minimizar', kind: 'mcq', q: '¿Cuál minimiza el PROBLEMA en sí, no el sentimiento?',
+      options: ['No llores.', 'No pasa nada.', 'No te enfades.'], answer: 1 },
+    { id: 'p:tranquilizarb1:cloze', kind: 'cloze', text: 'No te ___ (preocupar), todo saldrá bien.', accept: ['preocupes'] },
+    { id: 'p:tranquilizarb1:recall', kind: 'recall', front: 'What grammatical form does Spanish consolation lean on most?', back: 'the negative imperative, aimed directly at the feeling' }
+  ]
+},
+
+{
+  id: 'fn-animar-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1274', 'funciones:B1:1275', 'funciones:B1:1276'],
+  title: 'Animar',
+  summary: '¡Come un poco más, hombre! adds hombre not to name a man but to soften a push — a filler vocative that works on anyone, doing for encouragement what por favor does for a request.',
+  sections: [
+    { h: 'Imperative + hombre/mujer', html: 'A vocative filler that softens a push into something friendlier, regardless of who is being addressed: <i>¡Come un poco más, hombre!</i>' },
+    { h: 'Bare imperative encouragement', html: '<i>¡Hazlo!</i>, <i>¡Salta!</i>, <i>¡No tengas miedo!</i> — direct, energetic.' },
+    { h: 'Minimizing the risk', html: '<i>No pasa nada</i>, <i>No hay peligro</i> — remove the obstacle to acting, rather than pushing directly.' }
+  ],
+  exponents: [
+    { es: '¡Prueba, hombre, no te va a pasar nada!', en: "Go on, try it, nothing's going to happen to you!", register: 'coloquial', note: 'hombre — filler vocative, works regardless of gender' },
+    { es: '¡Anímate, seguro que te va a encantar!', en: "Go for it, I'm sure you'll love it!", register: 'coloquial' },
+    { es: 'No hay peligro, ya lo he hecho yo antes.', en: "There's no danger, I've done it before.", register: 'neutral' },
+    { es: 'Le animamos a presentar su candidatura.', en: 'We encourage you to submit your application.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Hombre</i> as a filler here is not literally about gender — it softens the push regardless of who is being addressed, much like English "come on."'
+  ],
+  examples: [
+    { es: '¡Venga, hazlo, no seas miedoso!', en: "Come on, do it, don't be scared!" },
+    { es: 'No pasa nada si te sale mal, inténtalo.', en: "It's fine if it goes wrong, give it a try." },
+    { es: '¡Salta, que yo te sujeto!', en: "Jump, I've got you!" }
+  ],
+  probes: [
+    { id: 'p:animarb1:hombre', kind: 'mcq', q: '"¡Come un poco más, hombre!" — el "hombre" aquí:',
+      options: ['identifica al oyente como varón', 'suaviza el empujón, sin importar el género', 'es un error'], answer: 1 },
+    { id: 'p:animarb1:minimizar', kind: 'mcq', q: '¿Cuál elimina el obstáculo en lugar de empujar directamente?',
+      options: ['¡Hazlo!', 'No hay peligro.', '¡Salta!'], answer: 1 },
+    { id: 'p:animarb1:cloze', kind: 'cloze', text: '¡Anímate, ___! (hombre/mujer, coloquial)', accept: ['hombre', 'mujer'] },
+    { id: 'p:animarb1:recall', kind: 'recall', front: 'What is hombre doing in ¡come un poco más, hombre!?', back: 'softening the push as a filler vocative, not naming the listener\'s gender' }
+  ]
+},
+
+{
+  id: 'fn-responder-disculpa-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1349', 'funciones:B1:1350', 'funciones:B1:1351', 'funciones:B1:1352', 'funciones:B1:1353'],
+  title: 'Responder a una disculpa',
+  summary: 'No tiene importancia and no importa both wave off an apology, but tiene importancia works with the impersonal usted-friendly SE-less form while the whole family shares one job: closing the incident before it needs a second sentence.',
+  sections: [
+    { h: 'A small family of dismissals', html: '<i>No importa</i>, <i>No es nada</i>, <i>No pasa nada</i>, <i>No tiene importancia</i> — near-synonyms, all minimizing the apologized-for issue rather than formally "accepting" it.' },
+    { h: 'No te preocupes', html: 'Shifts from the incident itself to reassuring the person who apologized.' }
+  ],
+  exponents: [
+    { es: 'No pasa nada, tranquilo.', en: "It's fine, don't worry.", register: 'coloquial' },
+    { es: 'No importa, de verdad.', en: "It doesn't matter, really.", register: 'coloquial' },
+    { es: 'No te preocupes, son cosas que pasan.', en: "Don't worry, these things happen.", register: 'coloquial' },
+    { es: 'No tiene la menor importancia.', en: "It's really not a problem at all.", register: 'formal' }
+  ],
+  pitfalls: [
+    'None of these formally "accept" an apology the way English "apology accepted" would — they all work by minimizing the issue itself, a subtly different move.'
+  ],
+  examples: [
+    { es: '—Perdona el retraso. —No pasa nada.', en: '"Sorry for being late." "It\'s fine."' },
+    { es: '—Siento haberte molestado. —No es nada.', en: '"Sorry to bother you." "It\'s nothing."' },
+    { es: '—Disculpe las molestias. —No tiene importancia.', en: '"Sorry for the inconvenience." "It\'s no trouble at all."' }
+  ],
+  probes: [
+    { id: 'p:responderdisculpab1:funcion', kind: 'mcq', q: '¿Qué hacen estas respuestas — aceptar formalmente o minimizar?',
+      options: ['aceptan formalmente la disculpa', 'minimizan el problema', 'piden más explicación'], answer: 1 },
+    { id: 'p:responderdisculpab1:registro', kind: 'mcq', q: '¿Cuál es la más formal?',
+      options: ['No pasa nada.', 'No tiene la menor importancia.', 'No importa.'], answer: 1 },
+    { id: 'p:responderdisculpab1:cloze', kind: 'cloze', text: '—Perdona. —No ___ nada. (pasa)', accept: ['pasa'] },
+    { id: 'p:responderdisculpab1:recall', kind: 'recall', front: 'Do these responses formally "accept" an apology?', back: 'no — they minimize the issue itself, a different move' }
+  ]
+},
+
+{
+  id: 'fn-brindis-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1369', 'funciones:B1:1370', 'funciones:B1:1371'],
+  title: 'Proponer un brindis',
+  summary: 'Por + noun is the whole toast — no verb, just the preposition and whoever or whatever is being honored, which is why "por el nuevo presidente" needs nothing else to function as a complete toast.',
+  sections: [
+    { h: 'Por + noun: the whole toast', html: 'No verb needed — <i>por</i> alone frames who or what is being honored: <i>Por el nuevo presidente.</i>' },
+    { h: '¡A tu/vuestra salud!', html: 'A fixed formula wishing health, addressed to one person (<i>tu</i>) or several (<i>vuestra</i>).' },
+    { h: '¡Chinchín!', html: 'The purely festive sound accompanying the clink of glasses — no content, just ritual.' }
+  ],
+  exponents: [
+    { es: 'Por los novios, ¡felicidades!', en: 'To the newlyweds, congratulations!', register: 'coloquial' },
+    { es: '¡A tu salud!', en: 'To your health!', register: 'coloquial' },
+    { es: '¡Chinchín!', en: 'Cheers!', register: 'coloquial' },
+    { es: 'Brindemos por el éxito de este proyecto.', en: "Let's raise a toast to the success of this project.", register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Por + noun</i> is a complete toast with no verb — do not feel the need to add one.'
+  ],
+  examples: [
+    { es: 'Por muchos años más juntos.', en: 'To many more years together.' },
+    { es: '¡A vuestra salud, chicos!', en: 'To your health, everyone!' },
+    { es: 'Por este nuevo comienzo.', en: 'To this new beginning.' }
+  ],
+  probes: [
+    { id: 'p:brindisb1:sinverbo', kind: 'mcq', q: '¿Necesita verbo "Por el nuevo presidente"?',
+      options: ['sí', 'no, por sí solo es un brindis completo', 'solo en pasado'], answer: 1 },
+    { id: 'p:brindisb1:formula', kind: 'mcq', q: '¿Cuál es la fórmula fija para desear salud a un grupo?',
+      options: ['¡A tu salud!', '¡A vuestra salud!', '¡Chinchín!'], answer: 1 },
+    { id: 'p:brindisb1:cloze', kind: 'cloze', text: '___ los novios. (por)', accept: ['Por', 'por'] },
+    { id: 'p:brindisb1:recall', kind: 'recall', front: 'Does por + noun need a verb to work as a toast?', back: 'no' }
+  ]
 }
 
 ];
