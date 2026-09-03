@@ -659,6 +659,483 @@ window.STRAND_LESSONS = [
     { id: 'p:establecercom:recall', kind: 'recall',
       front: 'Response to being called that means "I\'m listening," not literal agreement', back: '¿Sí?' }
   ]
+},
+
+/* ============================================================================
+ * BATCH 2 — seq 70-86 of spec/syllabus-draft.json.
+ * Skipped: disc-a1-entonacion (75) — intonation contours don't fit the
+ * register-contrast exponent model (pitch, not formality), and this is a
+ * text app with no audio.
+ * genr-a1-generos-de-transmision-oral (78) — spec is mostly cross-references
+ * and classification labels; its real content is already covered by the
+ * function lessons (saludar, pedir/dar información) and by the richer
+ * transactional-conversation genre lesson below.
+ * The genre range (77-86) has a harvester bug: four ids repeat 2-3 times
+ * each because "Elementos lingüísticos" / "Proceso prototípico" / "Géneros
+ * de transmisión escrita" are leaf names reused across different PCIC
+ * subsections (describing people vs objects vs places; two adjacent
+ * written-genre inventories). Consolidated into 5 lessons by actual
+ * subsection rather than authoring 10 thin or duplicate ones:
+ *   77+79 -> gn-generos-escritos-a1 (both are catalogs of the same short
+ *            written text types, from two adjacent PCIC sections)
+ *   80    -> gn-conversacion-transaccional-a1 (rich on its own — 24 spec
+ *            items describing a full move structure)
+ *   81+82, 83+84, 85+86 -> one description genre per topic (person / object
+ *            / place), each pairing its "elementos lingüísticos" (the
+ *            toolkit) with its "proceso prototípico" (the structure) —
+ *            they are two halves of one lesson, and the PCIC's own worked
+ *            examples (Carlinhos, the tomato, Andrea's house) become the
+ *            models.
+ * ========================================================================== */
+{
+  id: 'fn-silencio-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  pcic: ['funciones:A1:469', 'funciones:A1:470', 'funciones:A1:471'],
+  title: 'Pedir silencio',
+  summary: 'Asking for quiet ranges from a wordless "shh" to a polite fixed phrase — the choice signals how much authority or courtesy the moment calls for.',
+  sections: [
+    { h: 'The bare minimum', html: '<i>¡Shhh!</i> is not really a word — it is a sound, understood everywhere, and blunt. Fine among friends, risky with strangers or superiors.' },
+    { h: 'Adding courtesy', html: '<i>Silencio, por favor</i> turns the same request into something you could say to a room of strangers — a teacher, a librarian, a guide.' }
+  ],
+  exponents: [
+    { es: '¡Shhh!', en: 'Shh!', register: 'coloquial', note: 'a sound, not a word — blunt, among friends' },
+    { es: 'Silencio, por favor.', en: 'Quiet, please.', register: 'neutral', note: 'polite enough for a classroom or library' },
+    { es: '¡Shhh! Silencio, por favor.', en: 'Shh! Quiet, please.', register: 'coloquial', note: 'combines both — still leads with the blunt shush' }
+  ],
+  pitfalls: [
+    'A bare <i>¡Shhh!</i> at a stranger can read as rude — add <i>por favor</i> if you do not know them.'
+  ],
+  examples: [
+    { es: '—¡Shhh! Está durmiendo el bebé.', en: '—Shh! The baby is sleeping.' },
+    { es: 'Silencio, por favor, va a empezar la película.', en: 'Quiet, please, the film is about to start.' },
+    { es: 'La profesora dice: "Silencio, por favor."', en: 'The teacher says: "Quiet, please."' }
+  ],
+  probes: [
+    { id: 'p:silencio:registro', kind: 'mcq',
+      q: 'Estás en una biblioteca con desconocidos. ¿Qué dices?',
+      options: ['¡Shhh!', 'Silencio, por favor.', '¡Cállate!'], answer: 1 },
+    { id: 'p:silencio:minimo', kind: 'mcq',
+      q: '¿Cuál de estas NO es realmente una palabra, sino un sonido?',
+      options: ['Silencio', '¡Shhh!', 'Por favor'], answer: 1 },
+    { id: 'p:silencio:cloze', kind: 'cloze',
+      text: 'Silencio, ___ favor.', accept: ['por'] },
+    { id: 'p:silencio:recall', kind: 'recall',
+      front: 'Polite way to ask a room of strangers for quiet', back: 'Silencio, por favor.' }
+  ]
+},
+
+{
+  id: 'dc-conectores-a1', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
+  pcic: ['tacticas_pragmaticas:A1:8', 'tacticas_pragmaticas:A1:9', 'tacticas_pragmaticas:A1:10',
+         'tacticas_pragmaticas:A1:11', 'tacticas_pragmaticas:A1:12', 'tacticas_pragmaticas:A1:13'],
+  title: 'Conectores',
+  summary: 'A handful of small words do the heavy lifting of connected speech: adding a fact, turning against the last one, explaining it, giving an example, or just checking the listener is still there.',
+  sections: [
+    { h: 'Adding and contrasting', html: '<i>Y</i> adds; <i>pero</i> turns against what came before. <i>También</i> adds a matching fact; <i>tampoco</i> its negative twin.' },
+    { h: 'Explaining and illustrating', html: '<i>Porque</i> gives the reason. <i>Por ejemplo</i> narrows a general claim to one concrete case.' },
+    { h: 'Checking contact', html: 'Tags like <i>¿no?</i> and <i>¿eh?</i> turn a statement into an invitation to agree — they check the listener is still following, not really asking a question.' }
+  ],
+  exponents: [
+    { es: 'Tengo dos hermanos y una hermana.', en: 'I have two brothers and a sister.', register: 'neutral', note: 'y — adding' },
+    { es: 'Tengo un hijo, pero no estoy casado.', en: "I have a son, but I'm not married.", register: 'neutral', note: 'pero — contrast' },
+    { es: 'Estudio español porque quiero viajar a Bolivia.', en: 'I study Spanish because I want to travel to Bolivia.', register: 'neutral', note: 'porque — reason' },
+    { es: 'Me gusta el cine, por ejemplo las películas españolas.', en: 'I like cinema, for example Spanish films.', register: 'neutral', note: 'por ejemplo — illustrating' },
+    { es: 'Hace frío hoy, ¿no?', en: "It's cold today, isn't it?", register: 'coloquial', note: '¿no? — checking the listener agrees' }
+  ],
+  pitfalls: [
+    '<i>También</i> pairs with something positive; its negative twin is <i>tampoco</i>, not <i>*no también</i>.',
+    '¿no?/¿eh? do not expect a real answer — they are a nod, asking the listener to stay with you.'
+  ],
+  examples: [
+    { es: 'Yo también soy médico.', en: 'I am a doctor too.' },
+    { es: 'Yo tampoco voy.', en: "I'm not going either." },
+    { es: 'Estudio español porque me gusta, y también porque necesito el trabajo.', en: 'I study Spanish because I like it, and also because I need it for work.' }
+  ],
+  probes: [
+    { id: 'p:conectores:tampoco', kind: 'mcq',
+      q: '—No me gusta el café. — ¿Cómo continúas?',
+      options: ['Yo también.', 'Yo tampoco.', 'Yo no.'], answer: 1 },
+    { id: 'p:conectores:porque', kind: 'mcq',
+      q: '"Estudio español ___ quiero viajar." (razón)',
+      options: ['pero', 'y', 'porque'], answer: 2 },
+    { id: 'p:conectores:cloze', kind: 'cloze',
+      text: 'Hace frío hoy, ¿___?', accept: ['no'] },
+    { id: 'p:conectores:recall', kind: 'recall',
+      front: 'Word that narrows a general claim to one concrete case', back: 'por ejemplo' }
+  ]
+},
+
+{
+  id: 'dc-deixis-espacial-a1', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
+  pcic: ['tacticas_pragmaticas:A1:20', 'tacticas_pragmaticas:A1:21', 'tacticas_pragmaticas:A1:23',
+         'tacticas_pragmaticas:A1:24', 'tacticas_pragmaticas:A1:26'],
+  title: 'Deixis espacial',
+  summary: 'Deixis is language that only means something relative to where the speaker is standing: "here" moves when you do, and "aquel" points at something neither of you is near. Get the anchor point wrong and the words point at nothing.',
+  sections: [
+    { h: 'Three distances', html: '<i>Aquí</i> (here, by me), <i>ahí</i> (there, by you), <i>allí</i> (over there, far from both). The three-way split has no single-word English equivalent — English collapses ahí/allí into "there".' },
+    { h: 'Coming and going', html: '<i>Ir</i> moves away from the speaker\'s here; <i>venir</i> moves toward it. Same trip, opposite verb, because the anchor changed — on the phone, <i>¿vienes?</i> invites the other person toward where YOU are.' },
+    { h: 'Contrastive yo', html: 'Spanish usually drops subject pronouns, but <i>yo</i> reappears to contrast you with someone else: <i>Yo me llamo Elena, ¿y tú?</i> — without <i>yo</i> the contrast disappears.' }
+  ],
+  exponents: [
+    { es: 'Aquí, ahí, allí.', en: 'Here, there, over there.', register: 'neutral', note: 'three-way distance split, no single-word English match' },
+    { es: 'Voy a trabajar en coche.', en: 'I go to work by car.', register: 'neutral', note: "ir — away from the speaker's here" },
+    { es: 'Este libro, ese libro, aquel libro.', en: 'This book, that book, that book over there.', register: 'neutral', note: 'closeness to speaker/listener, not just distance' },
+    { es: '—¿Qué es eso? —Un rotulador.', en: '—What is that? —A marker pen.', register: 'coloquial', note: 'eso — neuter, for something not yet named' },
+    { es: 'Yo me llamo Elena, ¿y tú?', en: "I'm called Elena, and you?", register: 'neutral', note: 'yo reappears only to contrast with the other person' }
+  ],
+  pitfalls: [
+    "<i>Ir</i> and <i>venir</i> are not simply \"go\" and \"come\" — they depend on the SPEAKER's position, which can flip mid-conversation.",
+    'The neuter <i>eso/esto</i> is for something you have not yet named — once you name it, switch to the gendered form: <i>eso</i> → <i>ese rotulador</i>.'
+  ],
+  examples: [
+    { es: '—¿Dónde estás? —Aquí, en la oficina.', en: '—Where are you? —Here, in the office.' },
+    { es: 'Ahí tienes el periódico, encima de la mesa.', en: "There's the newspaper, on the table." },
+    { es: 'Mira, este es mi hermano.', en: 'Look, this is my brother.' }
+  ],
+  probes: [
+    { id: 'p:espacial:distancia', kind: 'mcq',
+      q: 'Tu amigo está lejos de los dos, señalando algo que ninguno tiene cerca. ¿Qué dice?',
+      options: ['Aquí', 'Ahí', 'Allí'], answer: 2 },
+    { id: 'p:espacial:irvenir', kind: 'mcq',
+      q: 'Hablas por teléfono con tu amigo: "¿___ a mi casa esta noche?"',
+      options: ['Vas', 'Vienes', 'Vas a ir'], answer: 1 },
+    { id: 'p:espacial:cloze', kind: 'cloze',
+      text: '—¿Qué es ___? —Un rotulador.', accept: ['eso'] },
+    { id: 'p:espacial:recall', kind: 'recall',
+      front: 'Subject pronoun that reappears only to contrast yourself with someone else', back: 'yo' }
+  ]
+},
+
+{
+  id: 'dc-rematizacion-a1', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
+  pcic: ['tacticas_pragmaticas:A1:41', 'tacticas_pragmaticas:A1:42', 'tacticas_pragmaticas:A1:43',
+         'tacticas_pragmaticas:A1:45', 'tacticas_pragmaticas:A1:46'],
+  title: 'Rematización: la información nueva al final',
+  summary: 'Spanish tends to put the NEW piece of information last, not first — "Soy María" rather than "María soy", and "Hay un libro en la mesa" rather than naming the book before announcing it exists. Getting the order backwards does not break grammar, but it garbles what you are actually telling the listener.',
+  sections: [
+    { h: 'Naming yourself or the day', html: 'To identify or locate, the subject often comes AFTER the verb: <i>Soy María</i>, not <i>María soy</i>; <i>Es lunes</i>, not <i>Lunes es</i>. The verb sets up the slot; the noun fills it as new information.' },
+    { h: 'Introducing something for the first time', html: '<i>Hay + un/una + noun</i> announces something exists before you can talk about it: <i>Hay un libro en la mesa</i>. Once introduced, it gets the definite article: <i>El libro está en la mesa.</i>' }
+  ],
+  exponents: [
+    { es: 'Soy María.', en: "I'm María.", register: 'neutral', note: 'subject after verb — identifying' },
+    { es: 'Es lunes.', en: "It's Monday.", register: 'neutral', note: 'subject after verb — locating in time' },
+    { es: '—¿Quién es esa? —Es María.', en: "—Who's that? —It's María.", register: 'coloquial', note: 'casual, pointing at someone by name' },
+    { es: 'Hay un libro en la mesa.', en: 'There is a book on the table.', register: 'neutral', note: 'hay + indefinite article — introducing something new' },
+    { es: 'Es una película muy interesante.', en: "It's a very interesting film.", register: 'coloquial', note: 'a spoken reaction — indefinite article on first mention' }
+  ],
+  pitfalls: [
+    'Putting the new information first is not "wrong" grammatically, but it changes what stands out: <i>María soy</i> sounds like you are correcting someone else\'s guess, not simply introducing yourself.',
+    'Use <i>hay + indefinite article</i> to introduce something; once introduced, switch to the definite article and the verb <i>estar</i>: <i>Hay un gato en el jardín... El gato está durmiendo.</i>'
+  ],
+  examples: [
+    { es: 'Hay una farmacia cerca de aquí.', en: "There's a pharmacy near here." },
+    { es: '¿Por qué llora tu hermano?', en: 'Why is your brother crying?' },
+    { es: '¿Dónde está Rosa?', en: 'Where is Rosa?' }
+  ],
+  probes: [
+    { id: 'p:rematizacion:orden', kind: 'mcq',
+      q: 'Te preguntan quién eres. ¿Cuál suena más natural?',
+      options: ['María soy.', 'Soy María.', 'Yo María soy.'], answer: 1 },
+    { id: 'p:rematizacion:hay', kind: 'mcq',
+      q: 'Presentas algo por primera vez: "___ un libro en la mesa."',
+      options: ['El', 'Un', 'Hay un'], answer: 2 },
+    { id: 'p:rematizacion:cloze', kind: 'cloze',
+      text: 'Hay ___ farmacia cerca de aquí.', accept: ['una'] },
+    { id: 'p:rematizacion:recall', kind: 'recall',
+      front: 'Word order rule: new information usually goes ___ in the sentence', back: 'last, after the verb' }
+  ]
+},
+
+{
+  id: 'dc-negacion-a1', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
+  pcic: ['tacticas_pragmaticas:A1:68', 'tacticas_pragmaticas:A1:69', 'tacticas_pragmaticas:A1:71', 'tacticas_pragmaticas:A1:72'],
+  title: 'Tipos de negación',
+  summary: 'A bare "no" does several different jobs — answering a question, catching your own mistake, contradicting someone else\'s claim, or simply agreeing with a negative one. The word is the same each time; only repetition and context tell them apart.',
+  sections: [
+    { h: 'Answering directly', html: '<i>—¿Eres griego? —No.</i> A plain no answers the question; adding the correct fact makes it a full answer: <i>No, soy italiano.</i>' },
+    { h: 'Catching yourself', html: '<i>No es así.</i> is the fixed way to correct your own slip mid-sentence, before anyone else has to.' },
+    { h: 'Repeating the no', html: 'To contradict someone\'s claim OR to agree with their negative one, Spanish doubles the <i>no</i>: <i>—Madrid está en la costa. —No, no está en la costa.</i> and <i>—No es difícil. —No, no es difícil.</i> look identical in form but do opposite jobs — one corrects, one agrees.' }
+  ],
+  exponents: [
+    { es: '—¿Eres griego? —No.', en: '—Are you Greek? —No.', register: 'neutral', note: 'direct answer' },
+    { es: 'No, soy italiano.', en: "No, I'm Italian.", register: 'neutral', note: 'direct answer with the correct fact added' },
+    { es: 'No es así.', en: "That's not right.", register: 'coloquial', note: 'self-correction, mid-sentence' },
+    { es: '—Madrid está en la costa. —No, no está en la costa.', en: "—Madrid is on the coast. —No, it isn't.", register: 'neutral', note: 'doubled no — correcting a false claim' },
+    { es: '—No es difícil. —No, no es difícil.', en: "—It isn't hard. —No, it isn't.", register: 'coloquial', note: 'doubled no — but here it AGREES, same form as the correction above' }
+  ],
+  pitfalls: [
+    'The doubled <i>no, no...</i> looks identical whether you are CORRECTING a false claim or AGREEING with a true negative one — only what came before tells you which.',
+    '<i>No es así</i> is a fixed phrase for self-correction — do not build it word by word from other negatives.'
+  ],
+  examples: [
+    { es: '—¿Eres griego? —No, soy italiano.', en: "—Are you Greek? —No, I'm Italian." },
+    { es: 'Perdón, no es así, es al revés.', en: "Sorry, that's not right, it's the other way round." },
+    { es: '—El examen es el jueves. —No, no es el jueves, es el viernes.', en: "—The exam is on Thursday. —No, it isn't, it's on Friday." }
+  ],
+  probes: [
+    { id: 'p:negacion:directa', kind: 'mcq',
+      q: '—¿Eres griego? ¿Cómo respondes si no lo eres?',
+      options: ['Sí.', 'No.', 'Es así.'], answer: 1 },
+    { id: 'p:negacion:autocorregir', kind: 'mcq',
+      q: 'Te equivocas al hablar y te corriges. ¿Qué dices?',
+      options: ['No es así.', 'No, no.', 'Es que no.'], answer: 0 },
+    { id: 'p:negacion:doblenegacion', kind: 'cloze',
+      text: '—Madrid está en la costa. —No, no ___ en la costa.', accept: ['está'] },
+    { id: 'p:negacion:recall', kind: 'recall',
+      front: 'The doubled "no, no..." can mean two opposite things: correcting OR ___ a negative claim', back: 'agreeing with' }
+  ]
+},
+
+{
+  id: 'dc-atenuacion-2persona-a1', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
+  pcic: ['tacticas_pragmaticas:A1:86', 'tacticas_pragmaticas:A1:87', 'tacticas_pragmaticas:A1:90', 'tacticas_pragmaticas:A1:91'],
+  title: 'Atenuación: usted y "creo que"',
+  summary: 'Two simple, early tools soften how directly you come across: switching tú for usted keeps a respectful distance, and starting an opinion with "creo que" makes it sound like a guess rather than a fact.',
+  sections: [
+    { h: 'Usted keeps distance', html: 'Using <i>usted</i> instead of <i>tú</i> signals respect or social distance — with someone older, a stranger, or in a formal setting: <i>¿A qué se dedica usted?</i>' },
+    { h: 'Creo que softens an opinion', html: 'Stating something as fact can sound blunt; <i>creo que</i> + statement frames it as your view, easier for the listener to disagree with: <i>Creo que es muy difícil</i> rather than <i>Es muy difícil.</i>' }
+  ],
+  exponents: [
+    { es: '¿A qué se dedica usted?', en: 'What do you do (for a living)?', register: 'formal', note: 'usted — respect or distance with a stranger/elder' },
+    { es: 'Creo que es muy difícil.', en: "I think it's very difficult.", register: 'neutral', note: 'creo que softens a flat statement into an opinion' },
+    { es: 'Creo que Sinead es irlandesa.', en: 'I think Sinead is Irish.', register: 'neutral', note: 'still softened, even about a simple fact' },
+    { es: 'Por favor.', en: 'Please.', register: 'neutral', note: 'a ritual softener with almost any request' }
+  ],
+  pitfalls: [
+    '<i>Usted</i> takes THIRD-person verb forms even though it means "you": <i>¿A qué se dedica usted?</i>, not mixing it with a tú-conjugated verb.',
+    '<i>Creo que</i> softens even things you are fairly sure of — it is a courtesy, not a sign of real doubt.'
+  ],
+  examples: [
+    { es: 'Buenos días, ¿a qué se dedica usted?', en: 'Good morning, what do you do?' },
+    { es: 'Creo que el examen es el jueves, pero no estoy seguro.', en: "I think the exam is on Thursday, but I'm not sure." },
+    { es: 'Por favor, ¿tiene usted hora?', en: 'Excuse me, do you have the time?' }
+  ],
+  probes: [
+    { id: 'p:atenuacion2p:usted', kind: 'mcq',
+      q: 'Hablas con el director de la empresa, a quien no conoces. ¿Qué dices?',
+      options: ['¿A qué te dedicas?', '¿A qué se dedica usted?', '¿Qué haces?'], answer: 1 },
+    { id: 'p:atenuacion2p:creoque', kind: 'mcq',
+      q: '¿Cuál suena más suave al dar una opinión?',
+      options: ['Es muy difícil.', 'Creo que es muy difícil.', 'Seguro que es difícil.'], answer: 1 },
+    { id: 'p:atenuacion2p:cloze', kind: 'cloze',
+      text: '___ que es muy difícil.', accept: ['Creo', 'creo'] },
+    { id: 'p:atenuacion2p:recall', kind: 'recall',
+      front: 'Pronoun that signals respect or distance instead of tú', back: 'usted' }
+  ]
+},
+
+{
+  id: 'gn-generos-escritos-a1', strand: 'genre', cefr: 'A1', level: 1, theme: null,
+  pcic: ['generos_discursivos:A1:11', 'generos_discursivos:A1:15', 'generos_discursivos:A1:16',
+         'generos_discursivos:A1:60', 'generos_discursivos:A1:62', 'generos_discursivos:A1:63', 'generos_discursivos:A1:64'],
+  title: 'Textos breves de cada día',
+  summary: 'A1 is mostly about READING these texts, not writing them: a bus ticket, a note on the fridge, a hotel sign, a menu. Each has its own shape, and the skill is recognizing the shape fast enough to find the one fact you need without reading every word.',
+  sections: [
+    { h: 'Recognize the shape first', html: 'A <i>horario</i> (schedule) is a grid of times; a <i>nota</i> (note) is two or three handwritten lines; a <i>cartel</i> (sign) is a single instruction in large letters. You know what kind of text it is before you read a single word — use that.' },
+    { h: 'Scan, do not read', html: 'None of these texts need reading start to finish. A menu: find the dish. A schedule: find the time. A form: find the box. Reading every word wastes the one advantage a short text gives you — speed.' }
+  ],
+  moves: [
+    { h: 'Identificar el tipo de texto', html: 'Antes de leer, mira el formato: ¿es una lista de horas (horario), una instrucción corta (cartel), un mensaje a mano (nota) o un menú? La forma ya te dice qué tipo de información vas a encontrar.' },
+    { h: 'Buscar solo el dato necesario', html: 'No leas todo. Busca el número, la hora o la palabra que necesitas y para ahí — un billete de tren no se lee como una carta.' }
+  ],
+  model: {
+    title: 'Nota en la nevera',
+    text: 'Marta:\n\nHe ido al supermercado. Vuelvo a las 6.\nHay pasta en la nevera para la comida.\nLlama si necesitas algo.\n\nUn beso,\nAna'
+  },
+  checklist: [
+    '¿Reconoces el tipo de texto por su formato antes de leer las palabras?',
+    '¿Encontraste el dato que buscabas sin leer todo el texto?'
+  ],
+  examples: [
+    { es: 'Horario: L-V 9:00-14:00 y 16:00-20:00. Sáb 9:00-14:00.', en: 'Schedule: Mon-Fri 9:00-14:00 and 16:00-20:00. Sat 9:00-14:00.' },
+    { es: 'PROHIBIDO FUMAR', en: 'NO SMOKING' },
+    { es: 'Menú del día: 12 €. Primero, segundo, postre y bebida.', en: 'Set menu: €12. Starter, main, dessert and a drink.' }
+  ],
+  probes: [
+    { id: 'p:generosescritos:tipo', kind: 'mcq',
+      q: 'Ves un texto con solo horas y días en una tabla. ¿Qué tipo de texto es?',
+      options: ['Una nota', 'Un horario', 'Una carta'], answer: 1 },
+    { id: 'p:generosescritos:buscar', kind: 'mcq',
+      q: 'Necesitas saber el precio del menú del día. ¿Qué haces?',
+      options: ['Leo todo el menú de arriba a abajo', 'Busco directamente el número con el símbolo €', 'Pregunto sin mirar el menú'], answer: 1 },
+    { id: 'p:generosescritos:cloze', kind: 'cloze',
+      text: '___ FUMAR (en un cartel)', accept: ['PROHIBIDO', 'Prohibido'] },
+    { id: 'p:generosescritos:recall', kind: 'recall',
+      front: 'The A1 reading skill for short texts: recognize the ___ before reading the words', back: 'shape / format' }
+  ]
+},
+
+{
+  id: 'gn-conversacion-transaccional-a1', strand: 'genre', cefr: 'A1', level: 1, theme: 'compras',
+  pcic: ['generos_discursivos:A1:91', 'generos_discursivos:A1:96', 'generos_discursivos:A1:99', 'generos_discursivos:A1:102',
+         'generos_discursivos:A1:115', 'generos_discursivos:A1:117', 'generos_discursivos:A1:122', 'generos_discursivos:A1:125',
+         'generos_discursivos:A1:129', 'generos_discursivos:A1:134', 'generos_discursivos:A1:138', 'generos_discursivos:A1:140',
+         'generos_discursivos:A1:162'],
+  title: 'La conversación transaccional: comprar algo',
+  summary: 'Buying something face to face — a ticket, a coffee, a souvenir — follows a shape almost as fixed as a letter: greet, state what you want, examine it, agree the price, pay, say thanks, close. Skipping a move (paying without a thank-you, leaving without a clear goodbye) reads as abrupt even when every word was correct.',
+  sections: [
+    { h: 'Why it has a shape', html: 'A transaction is a genre of its own, spoken not written, but with the same predictable moves every time — which is exactly what lets both people move fast without confusion.' },
+    { h: 'The middle: options and preferences', html: 'Between asking and paying, most transactions have a middle where you compare: <i>¿Cuál me recomienda?</i>, <i>Prefiero el más pequeño</i>. Skipping this and just pointing at the first thing works, but sounds rushed.' },
+    { h: 'Closing, not just paying', html: 'The transaction is not over at the payment. A short close — thanks both ways, a goodbye — is expected. Silence after paying reads as cold.' }
+  ],
+  moves: [
+    { h: 'Saludo y apertura', html: '<i>Hola, buenos días.</i> Abre el contacto antes de pedir nada.' },
+    { h: 'Buscar y dar información', html: 'El cliente pregunta lo que necesita; el vendedor responde: <i>—¿Tiene camisetas de la selección? —Sí, están allí.</i>' },
+    { h: 'Identificar opciones y preferencias', html: '—¿Cuál prefiere, la azul o la roja? —La azul, por favor.' },
+    { h: 'Examinar y acordar la compra', html: 'El cliente mira el producto y decide; los dos acuerdan el precio: <i>—¿Cuánto es? —Doce euros.</i>' },
+    { h: 'Pago e intercambio', html: 'Se entrega el dinero y el producto (y el recibo), en cualquier orden.' },
+    { h: 'Agradecimiento y cierre', html: '<i>—Gracias. —A usted. Adiós.</i> Las gracias van en las dos direcciones antes de despedirse.' }
+  ],
+  model: {
+    title: 'Comprando un recuerdo',
+    text: '—Hola, buenos días.\n—Buenos días. ¿Le puedo ayudar?\n—Sí, busco un recuerdo para mi hermana.\n—Tenemos estos imanes y estas tazas. ¿Qué prefiere?\n—Prefiero los imanes, son más pequeños para el viaje.\n—Muy bien. ¿Cuántos quiere?\n—Tres, por favor. ¿Cuánto es?\n—Son nueve euros.\n—Aquí tiene.\n—Gracias. Aquí tiene su cambio y el recibo.\n—Muchas gracias. Adiós.\n—Adiós, que tenga un buen día.'
+  },
+  checklist: [
+    '¿Empezaste con un saludo antes de pedir lo que necesitas?',
+    '¿Preguntaste o diste tu preferencia entre opciones?',
+    '¿Confirmaste el precio antes de pagar?',
+    '¿Dijiste gracias y te despediste al final?'
+  ],
+  examples: [
+    { es: '¿Le puedo ayudar?', en: 'Can I help you?' },
+    { es: 'Prefiero el más pequeño.', en: 'I prefer the smaller one.' },
+    { es: 'Aquí tiene su cambio y el recibo.', en: 'Here is your change and the receipt.' }
+  ],
+  probes: [
+    { id: 'p:transaccional:orden', kind: 'mcq',
+      q: '¿Qué mueve normalmente va DESPUÉS de pagar?',
+      options: ['Saludar', 'Preguntar el precio', 'Dar las gracias y despedirse'], answer: 2 },
+    { id: 'p:transaccional:preferencia', kind: 'mcq',
+      q: 'El vendedor te ofrece dos opciones. ¿Cómo respondes?',
+      options: ['Prefiero la azul.', '¿Cuánto es?', 'Adiós.'], answer: 0 },
+    { id: 'p:transaccional:cloze', kind: 'cloze',
+      text: '—Gracias. —A usted. ___.', accept: ['Adiós', 'adiós'] },
+    { id: 'p:transaccional:recall', kind: 'recall',
+      front: 'A transaction is not finished right after paying — what move still needs to happen?', back: 'thanks and a closing goodbye' }
+  ]
+},
+
+{
+  id: 'gn-describir-persona-a1', strand: 'genre', cefr: 'A1', level: 1, theme: null,
+  pcic: ['generos_discursivos:A1:167', 'generos_discursivos:A1:168', 'generos_discursivos:A1:169', 'generos_discursivos:A1:170',
+         'generos_discursivos:A1:176', 'generos_discursivos:A1:178', 'generos_discursivos:A1:179', 'generos_discursivos:A1:182'],
+  title: 'Describir a una persona',
+  summary: 'A description of a person at A1 follows a fixed camera move: name and place them first, then zoom from general build to specific detail — and it leans on just three simple present-tense verbs: ser for what they permanently are, tener for a feature named as a possession, and llevar for what they are wearing today.',
+  sections: [
+    { h: 'Anchor first, then zoom in', html: 'Start general: who they are and where they fit (<i>Carlinhos es un estudiante brasileño</i>). Only then move to specific, visible detail (<i>Es moreno, alto y tiene ojos negros</i>) — general to particular, never the reverse.' },
+    { h: 'Three verbs, three jobs', html: '<b>Ser</b> for lasting qualities (<i>es alto, es simpático</i>). <b>Tener</b> for a feature named as a possession (<i>tiene ojos negros</i>). <b>Llevar</b> for what they have on today, which could change tomorrow (<i>lleva una camiseta roja</i>).' },
+    { h: 'Adjective position', html: 'Descriptive adjectives normally follow the noun in this kind of text: <i>una camiseta roja</i>, not <i>una roja camiseta</i>.' }
+  ],
+  moves: [
+    { h: 'Anclaje', html: 'Nombra a la persona y su lugar: quién es y de dónde, en una frase simple con <i>ser</i>.' },
+    { h: 'Aspectualización', html: 'Añade los rasgos, del más general (aspecto físico) al más concreto (ropa de hoy, carácter).' }
+  ],
+  model: {
+    title: 'Mi compañero de clase',
+    text: 'Carlinhos es un estudiante brasileño. Él y yo estamos en la clase de español. Es moreno, alto y tiene ojos negros. Hoy lleva unos pantalones blancos y una camiseta roja. Es muy guapo y simpático.'
+  },
+  checklist: [
+    '¿Empezaste con quién es la persona, no con su ropa?',
+    '¿Usaste ser para lo permanente y llevar para la ropa de hoy?'
+  ],
+  examples: [
+    { es: 'Ella es alta y tiene el pelo rizado.', en: 'She is tall and has curly hair.' },
+    { es: 'Hoy lleva una chaqueta azul.', en: 'Today he/she is wearing a blue jacket.' },
+    { es: 'Es un chico muy simpático.', en: 'He is a very nice guy.' }
+  ],
+  probes: [
+    { id: 'p:describirpersona:orden', kind: 'mcq',
+      q: '¿Cómo empieza normalmente una descripción de una persona?',
+      options: ['Con la ropa que lleva hoy', 'Con quién es y de dónde', 'Con su carácter'], answer: 1 },
+    { id: 'p:describirpersona:verbo', kind: 'mcq',
+      q: '"Hoy ___ una camiseta roja." (ropa de hoy)',
+      options: ['es', 'tiene', 'lleva'], answer: 2 },
+    { id: 'p:describirpersona:cloze', kind: 'cloze',
+      text: 'Carlinhos ___ un estudiante brasileño.', accept: ['es'] },
+    { id: 'p:describirpersona:recall', kind: 'recall',
+      front: 'The order of description: from general to ___', back: 'particular / specific' }
+  ]
+},
+
+{
+  id: 'gn-describir-objeto-a1', strand: 'genre', cefr: 'A1', level: 1, theme: null,
+  pcic: ['generos_discursivos:A1:209', 'generos_discursivos:A1:210', 'generos_discursivos:A1:211',
+         'generos_discursivos:A1:212', 'generos_discursivos:A1:215', 'generos_discursivos:A1:216', 'generos_discursivos:A1:217'],
+  title: 'Describir un objeto',
+  summary: 'Describing an object follows the same general-to-particular shape as describing a person, but the toolkit shrinks to what things, not people, can do: they exist, they have qualities, and they cost money — no wardrobe, no character.',
+  sections: [
+    { h: 'Anchor, then add detail', html: 'Name what it is and its most defining quality first (<i>El tomate es rojo</i>), then add a concrete, checkable detail (<i>1 kg cuesta 2 euros</i>).' },
+    { h: 'Existence and quality', html: 'Two small verb jobs cover almost everything: <i>hay</i> for something existing (<i>Hay tomates en el mercado</i>) and <i>ser/estar</i> for what it is like (<i>Es rojo</i>, <i>Está maduro</i>).' }
+  ],
+  moves: [
+    { h: 'Anclaje', html: 'Nombra el objeto y su rasgo más definitorio, normalmente con ser.' },
+    { h: 'Aspectualización', html: 'Añade un detalle concreto y verificable: precio, tamaño, material.' }
+  ],
+  model: {
+    title: 'El tomate',
+    text: 'El tomate es rojo. Es redondo y bastante grande. En mi supermercado 1 kg cuesta 2 euros. Es un ingrediente muy común en la cocina española.'
+  },
+  checklist: [
+    '¿Nombraste el objeto y su cualidad principal primero?',
+    '¿Añadiste un dato concreto (precio, tamaño...) después?'
+  ],
+  examples: [
+    { es: 'La mesa es de madera y es muy grande.', en: 'The table is made of wood and is very big.' },
+    { es: 'Hay un libro nuevo en la estantería.', en: "There's a new book on the shelf." },
+    { es: 'Este teléfono es pequeño y cuesta cien euros.', en: 'This phone is small and costs a hundred euros.' }
+  ],
+  probes: [
+    { id: 'p:describirobjeto:existencia', kind: 'mcq',
+      q: '¿Qué verbo usas para decir que algo existe en un lugar?',
+      options: ['Ser', 'Hay', 'Tener'], answer: 1 },
+    { id: 'p:describirobjeto:orden', kind: 'mcq',
+      q: '¿Qué va primero al describir un objeto?',
+      options: ['Un dato concreto como el precio', 'Qué es y su cualidad principal', 'El nombre de la tienda'], answer: 1 },
+    { id: 'p:describirobjeto:cloze', kind: 'cloze',
+      text: 'El tomate ___ rojo.', accept: ['es'] },
+    { id: 'p:describirobjeto:recall', kind: 'recall',
+      front: 'Verb used to state that something exists in a place', back: 'hay' }
+  ]
+},
+
+{
+  id: 'gn-describir-lugar-a1', strand: 'genre', cefr: 'A1', level: 1, theme: 'vivienda',
+  pcic: ['generos_discursivos:A1:242', 'generos_discursivos:A1:243', 'generos_discursivos:A1:244',
+         'generos_discursivos:A1:245', 'generos_discursivos:A1:251', 'generos_discursivos:A1:252'],
+  title: 'Describir un lugar',
+  summary: 'Describing a place adds a third verb job to the same general-to-particular shape: after naming the place and its overall quality, hay introduces what is inside it, room by room or object by object.',
+  sections: [
+    { h: 'Anchor, then inventory', html: 'Start with what the place is and its main quality (<i>La casa de Andrea es grande</i>), then use <i>hay</i> to list what is in it (<i>Hay un baño, una cocina...</i>).' },
+    { h: 'Locating within the place', html: 'Once a room or object has been introduced with <i>hay</i>, you can say more about it using <i>ser/estar</i>: <i>La habitación es un poco pequeña, pero hay una cama...</i>' }
+  ],
+  moves: [
+    { h: 'Anclaje', html: 'Nombra el lugar y su cualidad principal, con ser.' },
+    { h: 'Aspectualización: inventario', html: 'Usa hay para listar lo que contiene, y añade detalles sobre cada parte.' }
+  ],
+  model: {
+    title: 'La casa de Andrea',
+    text: 'La casa de Andrea es grande. Hay un baño, una cocina, un salón, un cuarto de estar y una habitación. La habitación es un poco pequeña, pero hay una cama, una mesa, una silla y un armario. El armario es blanco y muy grande.'
+  },
+  checklist: [
+    '¿Nombraste el lugar y su cualidad principal antes del inventario?',
+    '¿Usaste hay para introducir cada parte del lugar?'
+  ],
+  examples: [
+    { es: 'El parque es tranquilo. Hay muchos árboles y un lago pequeño.', en: 'The park is peaceful. There are lots of trees and a small lake.' },
+    { es: 'Mi oficina es pequeña, pero hay una ventana grande.', en: 'My office is small, but there is a big window.' },
+    { es: 'En la cocina hay una nevera, un horno y una mesa.', en: 'In the kitchen there is a fridge, an oven and a table.' }
+  ],
+  probes: [
+    { id: 'p:describirlugar:hay', kind: 'mcq',
+      q: '¿Qué palabra usas para listar lo que hay dentro de un lugar?',
+      options: ['Es', 'Hay', 'Está'], answer: 1 },
+    { id: 'p:describirlugar:orden', kind: 'mcq',
+      q: '¿Qué va primero al describir un lugar?',
+      options: ['La lista de lo que contiene', 'El lugar y su cualidad principal', 'El precio'], answer: 1 },
+    { id: 'p:describirlugar:cloze', kind: 'cloze',
+      text: '___ un baño, una cocina y un salón.', accept: ['Hay', 'hay'] },
+    { id: 'p:describirlugar:recall', kind: 'recall',
+      front: 'Verb that introduces an inventory of what a place contains', back: 'hay' }
+  ]
 }
 
 ];
