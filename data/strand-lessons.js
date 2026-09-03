@@ -9471,6 +9471,402 @@ window.STRAND_LESSONS = [
     { id: 'p:meduelob1:cloze', kind: 'cloze', text: 'Me duele no ___ ayudarte. (poder)', accept: ['poder'] },
     { id: 'p:meduelob1:recall', kind: 'recall', front: 'In "me duele su actitud", who/what is the grammatical subject?', back: 'su actitud — the cause, not the person feeling it' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 function, wave 3 of 5: the rest of the gustos/deseos/
+ * sentimientos cluster, plus the first two "influir en el interlocutor"
+ * units (seq 358-371).
+ * ========================================================================== */
+{
+  id: 'fn-placer-diversion-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:725', 'funciones:B1:726', 'funciones:B1:727', 'funciones:B1:728'],
+  title: 'Expresar placer y diversión',
+  summary: 'Lo paso bien tracks the overall EXPERIENCE, not any single action within it — you can reírse mucho and still say lo pasé fatal if the rest of the night went wrong, because the two verbs are judging different things.',
+  sections: [
+    { h: 'Me río / me divierto: specific reactions', html: '<i>Me río + cuantificador</i> tracks laughter specifically; <i>me divierto</i> tracks enjoyment more broadly: <i>Nos reímos mucho</i>, <i>Me divertí muchísimo en la fiesta.</i>' },
+    { h: 'Lo paso bien/mal: the whole experience', html: 'A verdict on the EXPERIENCE overall, not one reaction within it: <i>Me lo estoy pasando estupendamente</i>, <i>Lo pasamos fatal en el concierto</i> — even if some specific moments were fine.' },
+    { h: 'Es divertido que + subjuntivo', html: 'Judging someone else\'s action as fun: <i>Es divertidísimo que nos contéis estas anécdotas.</i>' }
+  ],
+  exponents: [
+    { es: 'El otro día nos reímos muchísimo viendo esa película.', en: 'The other day we laughed so much watching that film.', register: 'coloquial' },
+    { es: 'Me lo pasé genial en la boda de mi prima.', en: "I had a great time at my cousin's wedding.", register: 'coloquial' },
+    { es: 'Es divertidísimo que siempre tengáis alguna anécdota.', en: "It's so much fun that you always have some story.", register: 'coloquial', note: 'que + subjuntivo' },
+    { es: 'Disfrutamos enormemente de la velada.', en: 'We thoroughly enjoyed the evening.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Lo paso bien/mal</i> judges the WHOLE experience, not a single moment within it — you can laugh a lot and still say <i>lo pasé fatal</i> if other things went wrong.',
+    'A que-clause after <i>es divertido</i> takes the subjunctive, like other evaluative expressions.'
+  ],
+  examples: [
+    { es: 'Lo pasamos muy bien jugando al fútbol.', en: 'We had a great time playing football.' },
+    { es: '¿Te divertiste en la fiesta?', en: 'Did you have fun at the party?' },
+    { es: 'Es muy divertido que cuentes las cosas así.', en: "It's really funny how you tell things." }
+  ],
+  probes: [
+    { id: 'p:placerdiv:experiencia', kind: 'mcq', q: '¿Cuál juzga la experiencia ENTERA, no un momento concreto?',
+      options: ['Me reí mucho.', 'Lo pasé fatal.', 'Me divertí con esa parte.'], answer: 1 },
+    { id: 'p:placerdiv:subjuntivo', kind: 'mcq', q: '"Es divertido que nos ___ esas historias." (contar)',
+      options: ['contáis', 'contéis', 'contaréis'], answer: 1 },
+    { id: 'p:placerdiv:cloze', kind: 'cloze', text: 'Me lo ___ estupendamente. (pasé)', accept: ['pasé'] },
+    { id: 'p:placerdiv:recall', kind: 'recall', front: 'Lo paso bien vs me río — which judges the whole experience?', back: 'lo paso bien' }
+  ]
+},
+
+{
+  id: 'fn-aburrimiento-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:736', 'funciones:B1:737', 'funciones:B1:738', 'funciones:B1:741'],
+  title: 'Expresar aburrimiento',
+  summary: 'Me aburro and me aburre look like the same verb used two ways, and they are — reflexive for how YOU feel, transitive for what CAUSES it — the identical pattern already met with encantar and doler.',
+  sections: [
+    { h: 'Me aburro: how you feel', html: 'Reflexive, describing your own state: <i>Me aburro los domingos por la tarde.</i>' },
+    { h: 'Me aburre: what causes it', html: 'The "backwards" gustar-type pattern: the boring thing is the subject, you are the indirect object: <i>Me aburre esta película.</i>' },
+    { h: 'Estoy aburrido / ¡Qué rollo!', html: '<i>Estoy aburrido</i> states the plain current state; <i>¡Qué rollo!</i> is the casual exclamation for something tedious.' }
+  ],
+  exponents: [
+    { es: 'Me aburro muchísimo los domingos por la tarde.', en: 'I get so bored on Sunday afternoons.', register: 'coloquial' },
+    { es: 'Me aburre bastante esta serie.', en: 'This series bores me quite a bit.', register: 'coloquial', note: 'the thing is the subject — same pattern as encantar/doler' },
+    { es: '¡Qué rollo de reunión!', en: 'What a boring meeting!', register: 'coloquial' },
+    { es: 'La conferencia resultó considerablemente tediosa.', en: 'The lecture turned out to be considerably tedious.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Me aburro</i> (reflexive, how you feel) and <i>me aburre</i> (the cause is the subject) are not interchangeable — check which one is doing the "being boring."',
+    '¡Qué rollo! is strongly colloquial — do not use it in writing or with strangers.'
+  ],
+  examples: [
+    { es: 'Se aburren en clase de historia.', en: 'They get bored in history class.' },
+    { es: 'Me aburren las reuniones tan largas.', en: 'Long meetings bore me.' },
+    { es: 'Estoy un poco aburrido, ¿hacemos algo?', en: "I'm a bit bored, shall we do something?" }
+  ],
+  probes: [
+    { id: 'p:aburrimientob1:reflexivo', kind: 'mcq', q: '¿Cuál describe TU propio estado?',
+      options: ['Me aburre la clase.', 'Me aburro en clase.', 'La clase aburre.'], answer: 1 },
+    { id: 'p:aburrimientob1:causa', kind: 'mcq', q: '"___ mucho esta película." (aburrir — la película es la causa)',
+      options: ['Me aburro', 'Me aburre', 'Aburrido'], answer: 1 },
+    { id: 'p:aburrimientob1:cloze', kind: 'cloze', text: '¡Qué ___! (rollo)', accept: ['rollo'] },
+    { id: 'p:aburrimientob1:recall', kind: 'recall', front: 'Me aburro vs me aburre — which one has the boring thing as its subject?', back: 'me aburre' }
+  ]
+},
+
+{
+  id: 'fn-enfado-indignacion-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:760', 'funciones:B1:761', 'funciones:B1:762', 'funciones:B1:763', 'funciones:B1:764', 'funciones:B1:765', 'funciones:B1:766', 'funciones:B1:767'],
+  title: 'Expresar enfado e indignación',
+  summary: 'Enfadadísimo already sits at the top of the scale, exactly like an elative adjective — piling muy in front of it would be exactly as redundant as saying "very furious-est," because the -ísimo suffix has already used up all the intensity there is.',
+  sections: [
+    { h: 'A current state, at different intensities', html: '<i>Estoy enfadado</i>, <i>estoy furioso</i> (stronger), <i>estoy furiosísimo/enfadadísimo</i> (maximum, via -ísimo — never combine with <i>muy</i>), <i>estoy de mal humor</i> (a mood, not aimed at anyone specific).' },
+    { h: 'A change of state', html: '<i>Me pongo furioso/de mal humor cuando...</i>, <i>me enfado cuando...</i> — a recurring reaction, the same <i>ponerse</i> pattern already met for sadness.' },
+    { h: 'Gustar-type and absolute rejection', html: '<i>Me molesta</i> (gradable, "backwards" grammar), <i>no soporto</i> (absolute, no grading) both extend to anger, not just annoyance.' }
+  ],
+  exponents: [
+    { es: 'Está bastante enfadado con Marta.', en: "He's quite angry with Marta.", register: 'coloquial' },
+    { es: 'Estoy furiosísimo con esta situación.', en: "I'm absolutely furious about this situation.", register: 'coloquial', note: '-ísimo already at maximum — never add muy' },
+    { es: 'Se enfada cuando la comparan con Ana.', en: 'She gets angry when people compare her to Ana.', register: 'coloquial' },
+    { es: 'Nos indigna profundamente esta decisión.', en: 'This decision deeply outrages us.', register: 'formal' }
+  ],
+  pitfalls: [
+    'An -ísimo form (<i>furiosísimo, enfadadísimo</i>) is already at maximum intensity — never combine it with <i>muy</i>.',
+    '<i>Me enfado/me pongo furioso cuando...</i> describes a RECURRING reaction; <i>estoy enfadado</i> states the current state.'
+  ],
+  examples: [
+    { es: 'Me puse furioso cuando descubrí que todo era mentira.', en: 'I got furious when I found out it was all a lie.' },
+    { es: 'Le molesta que tomemos decisiones sin hablar con él.', en: "It bothers him when we make decisions without talking to him." },
+    { es: 'No soporto que me mientan a la cara.', en: "I can't stand being lied to to my face." }
+  ],
+  probes: [
+    { id: 'p:enfadoindig:isimo', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['muy furiosísimo', 'furiosísimo', 'muy muy furioso'], answer: 1 },
+    { id: 'p:enfadoindig:cambio', kind: 'mcq', q: '¿Cuál describe una reacción que se repite?',
+      options: ['Estoy enfadado.', 'Me enfado cuando me mienten.', 'Estoy de mal humor.'], answer: 1 },
+    { id: 'p:enfadoindig:cloze', kind: 'cloze', text: 'Le molesta que ___ (tomar, nosotros) decisiones sin él.', accept: ['tomemos'] },
+    { id: 'p:enfadoindig:recall', kind: 'recall', front: 'Can furiosísimo combine with muy?', back: 'no — -ísimo already marks maximum intensity' }
+  ]
+},
+
+{
+  id: 'fn-miedo-ansiedad-preocupacion-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:776', 'funciones:B1:777', 'funciones:B1:778', 'funciones:B1:781', 'funciones:B1:784', 'funciones:B1:787', 'funciones:B1:788'],
+  title: 'Expresar miedo, ansiedad y preocupación',
+  summary: 'Tengo miedo and me da miedo describe the same fear from two different grammatical angles — one puts YOU as the one who has it, the other puts the frightening thing as the cause, the same subject-flip already familiar from encantar and doler.',
+  sections: [
+    { h: 'Tengo miedo: you as the owner of the fear', html: '<i>Tengo (mucho) miedo</i>, <i>Tengo miedo a las alturas / de que pase algo</i> (subjunctive with a clause).' },
+    { h: 'Me da miedo: the cause as subject', html: 'The reversed pattern: <i>Me da miedo la oscuridad</i>, <i>Me da miedo que conduzcas tan rápido</i> (subjunctive).' },
+    { h: 'Estoy preocupado/asustado', html: 'A state, gradable with intensifiers: <i>Está preocupadísimo</i>, <i>Estaban un poco asustadas.</i>' },
+    { h: 'Me preocupa', html: 'The gustar-type pattern for worry specifically: <i>Me preocupa su salud</i>, <i>me preocupa que no llame.</i>' }
+  ],
+  exponents: [
+    { es: 'Tengo mucho miedo a las arañas.', en: "I'm very afraid of spiders.", register: 'coloquial' },
+    { es: 'Me da miedo que conduzcas tan rápido.', en: "It scares me that you drive so fast.", register: 'coloquial', note: 'que + subjuntivo, cause as subject' },
+    { es: 'Está preocupadísimo por los exámenes.', en: "He's extremely worried about the exams.", register: 'coloquial' },
+    { es: 'Nos preocupa profundamente la situación actual.', en: 'We are deeply concerned about the current situation.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Tengo miedo</i> (you own the fear) and <i>me da miedo</i> (the thing causes it) both work, but check which noun is doing the agreeing — <i>me dan miedo las arañas</i> is plural because <i>arañas</i> is the subject.',
+    '<i>Me preocupa que</i> and <i>me da miedo que</i> both take the subjunctive.'
+  ],
+  examples: [
+    { es: 'Tenía mucho miedo antes del examen.', en: 'I was very scared before the exam.' },
+    { es: 'Me preocupa que no haya llamado todavía.', en: "It worries me that he hasn't called yet." },
+    { es: '¡Qué miedo pasé anoche con la tormenta!', en: 'I was so scared last night with the storm!' }
+  ],
+  probes: [
+    { id: 'p:miedoansiedad:concordancia', kind: 'mcq', q: '"Me ___ miedo las arañas." (dar — concuerda con arañas)',
+      options: ['da', 'dan', 'das'], answer: 1 },
+    { id: 'p:miedoansiedad:subjuntivo', kind: 'mcq', q: '"Me preocupa que no ___." (llamar, él)',
+      options: ['llama', 'llame', 'llamará'], answer: 1 },
+    { id: 'p:miedoansiedad:cloze', kind: 'cloze', text: 'Está ___ por los exámenes. (preocupadísimo)', accept: ['preocupadísimo'] },
+    { id: 'p:miedoansiedad:recall', kind: 'recall', front: 'In me da miedo la oscuridad, what agrees with the verb?', back: 'la oscuridad — the cause, as the grammatical subject' }
+  ]
+},
+
+{
+  id: 'fn-empatia-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:808', 'funciones:B1:809', 'funciones:B1:810', 'funciones:B1:811', 'funciones:B1:812', 'funciones:B1:815'],
+  title: 'Expresar empatía',
+  summary: 'Entiendo que estés enfadado is not neutral information about your understanding — it validates the OTHER person\'s feeling, and the subjunctive marks exactly that: you are not asserting a fact, you are acknowledging their state.',
+  sections: [
+    { h: 'Minimal acknowledgment', html: '<i>Ya, ya</i>, <i>Claro, claro</i> — brief, repeated tokens showing you are following along and agree with the feeling.' },
+    { h: 'Explicit understanding', html: '<i>(Sí, sí,) lo entiendo (perfectamente)</i> — a fuller statement of empathy.' },
+    { h: 'Reacting with the other person\'s emotion', html: '<i>¡Qué bien/pena/miedo/horror...!</i> — borrowing the reaction words already met, now used to share IN someone else\'s feeling, not describe your own situation.' },
+    { h: 'Entiendo que + subjuntivo', html: 'Validates the other person\'s feeling as reasonable: <i>Entiendo que estés enfadado.</i>' }
+  ],
+  exponents: [
+    { es: 'Ya, ya, entiendo cómo te sientes.', en: 'Yeah, yeah, I understand how you feel.', register: 'coloquial' },
+    { es: 'Entiendo que estés enfadado con ellos.', en: "I understand you're angry with them.", register: 'neutral', note: 'que + subjuntivo — validates the feeling' },
+    { es: '¡Qué horror, lo siento muchísimo!', en: 'How awful, I\'m so sorry!', register: 'coloquial' },
+    { es: 'Comprendo perfectamente su preocupación.', en: 'I completely understand your concern.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Entiendo que</i> + subjunctive validates a FEELING as reasonable, not a fact — a different use from <i>entiendo que</i> + indicative, which would just report understanding a piece of information.',
+    '<i>Ya, ya</i> and <i>claro, claro</i> only work as spoken, minimal empathy tokens — too casual for writing.'
+  ],
+  examples: [
+    { es: 'Siento mucho lo que te ha pasado.', en: "I'm so sorry about what happened to you." },
+    { es: 'Entiendo perfectamente que necesites tiempo.', en: 'I completely understand that you need time.' },
+    { es: '—Perdí el vuelo. —¡Qué horror!', en: '"I missed my flight." "How awful!"' }
+  ],
+  probes: [
+    { id: 'p:empatiab1:subjuntivo', kind: 'mcq', q: '"Entiendo que ___ enfadado." (estar)',
+      options: ['estás', 'estés', 'estarás'], answer: 1 },
+    { id: 'p:empatiab1:minima', kind: 'mcq', q: '¿Cuál es un token mínimo de empatía, muy coloquial?',
+      options: ['Ya, ya.', 'Comprendo su preocupación.', 'Siento mucho lo ocurrido.'], answer: 0 },
+    { id: 'p:empatiab1:cloze', kind: 'cloze', text: 'Entiendo que ___ (estar) triste.', accept: ['estés'] },
+    { id: 'p:empatiab1:recall', kind: 'recall', front: 'What does entiendo que + subjunctive do that + indicative would not?', back: 'validates the other person\'s feeling as reasonable, rather than just reporting a fact' }
+  ]
+},
+
+{
+  id: 'fn-espero-esperanza-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:828', 'funciones:B1:829', 'funciones:B1:830', 'funciones:B1:831', 'funciones:B1:832', 'funciones:B1:833'],
+  title: 'Espero... / Expresar esperanza',
+  summary: 'Espero llegar a tiempo and espero que llegues a tiempo look almost identical but split exactly on WHO does the arriving — same subject takes the infinitive, different subject forces que + subjuntivo, the same rule that runs through querer, preferir and the whole hoping/wanting family.',
+  sections: [
+    { h: 'Espero + infinitivo: same subject', html: '<i>Espero llegar a tiempo</i> — I hope (that I) arrive on time.' },
+    { h: 'Espero que + subjuntivo: different subject', html: '<i>Espero que estés bien</i> — the hoping and the hoped-for event belong to different people.' },
+    { h: 'Espero que sí/no: a short answer', html: 'Answering a question about hope with no full clause: <i>—¿Aprobarás? —Espero que sí.</i>' },
+    { h: 'Ojalá: the more intense cousin', html: '<i>¡Ojalá!</i> alone, or <i>Ojalá (que) + subjuntivo</i>, expresses a more heartfelt hope than <i>espero que</i>: <i>Ojalá no llueva mañana.</i>' }
+  ],
+  exponents: [
+    { es: 'Espero llegar a tiempo a la reunión.', en: 'I hope I make it to the meeting on time.', register: 'coloquial', note: 'same subject — infinitive' },
+    { es: 'Espero que te mejores pronto.', en: 'I hope you get better soon.', register: 'coloquial', note: 'different subject — subjuntivo' },
+    { es: '—¿Va a salir bien? —Espero que sí.', en: '"Is it going to work out?" "I hope so."', register: 'coloquial' },
+    { es: 'Confiamos en que la situación mejore pronto.', en: 'We trust the situation will improve soon.', register: 'formal', note: 'confiar en que — a more formal cousin of esperar que' }
+  ],
+  pitfalls: [
+    'Same subject for both verbs → infinitive (<i>espero llegar</i>); different subjects → <i>que</i> + subjunctive (<i>espero que llegues</i>) — the same rule as querer/preferir.',
+    '<i>Ojalá</i> carries more emotional weight than <i>espero que</i>, even though both take the subjunctive.'
+  ],
+  examples: [
+    { es: 'Espero terminar el proyecto esta semana.', en: 'I hope to finish the project this week.' },
+    { es: 'Ojalá que todo salga bien.', en: 'I hope everything goes well.' },
+    { es: '—¿Crees que lloverá? —Espero que no.', en: '"Do you think it will rain?" "I hope not."' }
+  ],
+  probes: [
+    { id: 'p:esperoesperanza:mismosujeto', kind: 'mcq', q: '"Espero ___ a tiempo." (mismo sujeto — llegar)',
+      options: ['que llego', 'llegar', 'que llegue'], answer: 1 },
+    { id: 'p:esperoesperanza:distintosujeto', kind: 'mcq', q: '"Espero que ___ pronto." (tú, mejorar)',
+      options: ['mejoras', 'mejores', 'mejorarás'], answer: 1 },
+    { id: 'p:esperoesperanza:cloze', kind: 'cloze', text: '—¿Aprobarás? —Espero que ___. (sí)', accept: ['sí', 'si'] },
+    { id: 'p:esperoesperanza:recall', kind: 'recall', front: 'What decides infinitive vs que + subjunctive after espero?', back: 'whether the subject of hoping and the subject of the hoped-for event are the same person' }
+  ]
+},
+
+{
+  id: 'fn-sorpresa-extraneza-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:864', 'funciones:B1:867', 'funciones:B1:870', 'funciones:B1:871', 'funciones:B1:873', 'funciones:B1:874', 'funciones:B1:875', 'funciones:B1:876'],
+  title: 'Expresar sorpresa y extrañeza',
+  summary: '¿En serio? and ¿Ah sí? both ask for confirmation of surprising news, but ¿Ah sí? carries a faint edge of skepticism the plainer ¿En serio? does not — the same surprise, filtered through slightly different attitudes.',
+  sections: [
+    { h: 'Me sorprende / me extraña', html: 'The gustar-type pattern again: the surprising thing is the subject: <i>Me sorprende que no haya llamado.</i>' },
+    { h: 'Es increíble/raro/extraño que', html: 'An impersonal evaluation of the surprising fact, subjunctive after <i>que</i>.' },
+    { h: 'Quick reactions', html: '<i>¡Qué sorpresa!</i>, <i>¡Qué raro!</i>, <i>¡No me lo puedo creer!</i> — exclamatory, no clause needed.' },
+    { h: 'Confirmation questions, three flavors', html: '<i>¿De verdad?</i> (neutral), <i>¿En serio?</i> (coloquial), <i>¿Ah sí?</i> (coloquial, a faint edge of skepticism).' }
+  ],
+  exponents: [
+    { es: 'Me sorprende que no te haya llamado todavía.', en: "I'm surprised he hasn't called you yet.", register: 'neutral', note: 'que + subjuntivo' },
+    { es: '¡No me lo puedo creer!', en: "I can't believe it!", register: 'coloquial' },
+    { es: '—Se casa el mes que viene. —¿En serio?', en: '"He\'s getting married next month." "Seriously?"', register: 'coloquial' },
+    { es: 'Resulta cuando menos sorprendente esta decisión.', en: 'This decision is, to say the least, surprising.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>¿Ah sí?</i> carries a faint edge of skepticism that <i>¿en serio?</i> and <i>¿de verdad?</i> do not — tone matters here.',
+    'A que-clause after <i>me sorprende/me extraña/es raro</i> takes the subjunctive.'
+  ],
+  examples: [
+    { es: 'Es muy raro que no haya contestado.', en: "It's very strange he hasn't answered." },
+    { es: '¡Qué sorpresa verte por aquí!', en: 'What a surprise to see you here!' },
+    { es: '—Ha dejado el trabajo. —¿De verdad?', en: '"He\'s quit his job." "Really?"' }
+  ],
+  probes: [
+    { id: 'p:sorpresaextraneza:subjuntivo', kind: 'mcq', q: '"Me sorprende que no ___." (llamar, él)',
+      options: ['llama', 'llame', 'llamará'], answer: 1 },
+    { id: 'p:sorpresaextraneza:esceptico', kind: 'mcq', q: '¿Cuál de estas preguntas suena ligeramente escéptica?',
+      options: ['¿De verdad?', '¿Ah sí?', '¿En serio?'], answer: 1 },
+    { id: 'p:sorpresaextraneza:cloze', kind: 'cloze', text: '¡No me lo puedo ___! (creer)', accept: ['creer'] },
+    { id: 'p:sorpresaextraneza:recall', kind: 'recall', front: 'Which confirmation question carries a faint edge of skepticism?', back: '¿Ah sí?' }
+  ]
+},
+
+{
+  id: 'fn-admiracion-orgullo-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:889', 'funciones:B1:890', 'funciones:B1:891', 'funciones:B1:892'],
+  title: 'Expresar admiración y orgullo',
+  summary: '¡Es increíble cómo toca el piano! packages a whole embedded question — cómo toca el piano — inside an exclamation, admiring not just THAT she plays but HOW she does it.',
+  sections: [
+    { h: '¡Qué + adjective!', html: 'A direct exclamation of admiration: <i>¡Qué guapo!</i>, <i>¡Qué grande!</i>, <i>¡Qué maravilla!</i>' },
+    { h: 'Es increíble/impresionante + embedded question', html: 'Admiring HOW something is done, not just that it happened: <i>¡Es increíble cómo toca el piano!</i>' },
+    { h: 'Estoy impresionado con', html: 'A more measured statement of admiration, naming its cause: <i>Estoy impresionado con la entrevista que ha realizado.</i>' }
+  ],
+  exponents: [
+    { es: '¡Qué maravilla de casa!', en: 'What a wonderful house!', register: 'coloquial' },
+    { es: '¡Es increíble cómo cocina!', en: "It's incredible how well he cooks!", register: 'coloquial', note: 'embedded question — admires the HOW' },
+    { es: 'Estoy muy impresionado con tu trabajo.', en: "I'm very impressed with your work.", register: 'neutral' },
+    { es: 'Nos parece digno de admiración su esfuerzo.', en: 'We find their effort admirable.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Es increíble cómo/qué/cuánto...</i> admires the MANNER or DEGREE of something, not just the bare fact — do not collapse it into a plain <i>es increíble que</i>.',
+    '¡Qué + noun/adjective! needs no verb at all — do not add one.'
+  ],
+  examples: [
+    { es: '¡Qué bien tocas la guitarra!', en: 'You play the guitar so well!' },
+    { es: 'Es impresionante lo rápido que aprende.', en: "It's amazing how fast he learns." },
+    { es: 'Estamos muy orgullosos de tu esfuerzo.', en: "We're very proud of your effort." }
+  ],
+  probes: [
+    { id: 'p:admiracionorgullo:embedded', kind: 'mcq', q: '¿Cuál admira CÓMO se hace algo, no solo que ocurra?',
+      options: ['¡Qué bien!', '¡Es increíble cómo toca el piano!', 'Estoy contento.'], answer: 1 },
+    { id: 'p:admiracionorgullo:sinverbo', kind: 'mcq', q: '¿Cuál necesita verbo?',
+      options: ['¡Qué maravilla!', 'Estoy impresionado.', '¡Qué grande!'], answer: 1 },
+    { id: 'p:admiracionorgullo:cloze', kind: 'cloze', text: 'Estoy impresionado ___ tu trabajo. (con)', accept: ['con'] },
+    { id: 'p:admiracionorgullo:recall', kind: 'recall', front: 'What does "es increíble cómo toca el piano" admire, that "es increíble que toque" would not?', back: 'the manner/degree — HOW she plays, not just the bare fact that she does' }
+  ]
+},
+
+{
+  id: 'fn-afecto-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:900', 'funciones:B1:901', 'funciones:B1:902', 'funciones:B1:903', 'funciones:B1:904'],
+  title: 'Expresar afecto',
+  summary: 'Me caes bien uses exactly the gustar-type reversal one more time — the PERSON you like is the subject, YOU are the indirect object — which is why it agrees with them (me caen bien tus amigos) and not with you.',
+  sections: [
+    { h: 'Me caes bien/mal/fatal: first impressions and rapport', html: 'The gustar-type pattern for how someone strikes you: <i>Tu hermano me cae bien</i>, <i>Los vecinos me caen fatal.</i> Agrees with the PERSON, not with you.' },
+    { h: 'Te quiero: love, graded', html: '<i>Te quiero (muchísimo)</i> — direct, graded with an intensifier.' },
+    { h: 'Estoy enamorado de / me enamoro de', html: 'A state (<i>estoy enamorado de ti</i>) vs the event of falling into it (<i>me enamoré de él en cuanto lo vi</i>).' },
+    { h: 'Cariño: a term of address', html: 'Used directly to address someone affectionately, not to describe a feeling: <i>Cariño, ¿estás listo?</i>' }
+  ],
+  exponents: [
+    { es: 'Tu hermano me cae genial.', en: 'I really like your brother.', register: 'coloquial', note: 'caer bien — agrees with the person, not with you' },
+    { es: 'Te quiero muchísimo.', en: 'I love you so much.', register: 'coloquial' },
+    { es: 'Me enamoré de ella nada más verla.', en: 'I fell in love with her the moment I saw her.', register: 'neutral' },
+    { es: 'Cariño, ¿ya estás listo?', en: 'Darling, are you ready yet?', register: 'coloquial' }
+  ],
+  pitfalls: [
+    '<i>Me caes bien</i> agrees with the PERSON being liked, not with the speaker — <i>me caen bien tus amigos</i>, plural, because <i>amigos</i> is plural.',
+    '<i>Estoy enamorado de</i> (a state) and <i>me enamoro de</i> (the event of falling in love) are not interchangeable — check whether you mean the ongoing state or the moment it started.'
+  ],
+  examples: [
+    { es: 'Me caes muy bien, de verdad.', en: 'I really like you, honestly.' },
+    { es: 'Está profundamente enamorado de ella.', en: "He's deeply in love with her." },
+    { es: 'Nos enamoramos en un viaje a Portugal.', en: 'We fell in love on a trip to Portugal.' }
+  ],
+  probes: [
+    { id: 'p:afectob1:concordancia', kind: 'mcq', q: '"Tus amigos me ___ genial." (caer)',
+      options: ['cae', 'caen', 'caes'], answer: 1 },
+    { id: 'p:afectob1:estadoevento', kind: 'mcq', q: '¿Cuál describe el MOMENTO en que empezó, no el estado?',
+      options: ['Estoy enamorado de ti.', 'Me enamoré de ti en la fiesta.', 'Sigo enamorado.'], answer: 1 },
+    { id: 'p:afectob1:cloze', kind: 'cloze', text: '___, ¿estás listo? (término de cariño)', accept: ['Cariño', 'cariño'] },
+    { id: 'p:afectob1:recall', kind: 'recall', front: 'In me caes bien, what agrees with the verb — the speaker or the person liked?', back: 'the person liked' }
+  ]
+},
+
+{
+  id: 'fn-ordenar-directo-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:942', 'funciones:B1:943', 'funciones:B1:944'],
+  title: 'Dar una orden de forma directa',
+  summary: 'Corre, corre repeats the plain imperative rather than intensifying it with an adverb — the doubling itself carries the urgency, the same mechanism already met for claro, claro and no, no.',
+  sections: [
+    { h: 'The plain imperative', html: '<i>Siéntese</i>, <i>No vuelvas tarde</i>, <i>Cuando llegues a Córdoba, llámame</i> — often chained as a sequence of steps: <i>Pele las patatas, córtelas y fríalas.</i>' },
+    { h: 'Doubled imperative for urgency', html: 'Repeating the command intensifies it, the same way <i>claro, claro</i> intensifies agreement: <i>¡Corre, corre!</i>, <i>¡Ven, ven!</i>' },
+    { h: 'Debes + infinitivo as a softer directive', html: 'Slightly less blunt than a bare imperative, still direct: <i>Debéis terminar el trabajo lo antes posible.</i>' }
+  ],
+  exponents: [
+    { es: 'Cuando llegues a la estación, avísame.', en: 'When you get to the station, let me know.', register: 'coloquial' },
+    { es: '¡Corre, corre, que llegamos tarde!', en: "Run, run, we're going to be late!", register: 'coloquial', note: 'doubled imperative — urgency' },
+    { es: 'Pele las patatas y córtelas en dados.', en: 'Peel the potatoes and cut them into cubes.', register: 'formal', note: 'usted — recipe/instruction register' },
+    { es: 'Debéis entregar el informe antes del viernes.', en: 'You must submit the report before Friday.', register: 'neutral' }
+  ],
+  pitfalls: [
+    'A doubled imperative (<i>corre, corre</i>) intensifies urgency through repetition, not through a stronger verb.',
+    'Instructions (recipes, manuals) commonly use the usted imperative even when addressing one person casually — a register convention, not a sign of distance.'
+  ],
+  examples: [
+    { es: 'No vuelvas tarde esta noche.', en: "Don't come home late tonight." },
+    { es: '¡Ven, ven, tienes que ver esto!', en: 'Come, come, you have to see this!' },
+    { es: 'Añada la sal y remueva bien.', en: 'Add the salt and stir well.' }
+  ],
+  probes: [
+    { id: 'p:ordendirecto:doblado', kind: 'mcq', q: '¿Qué transmite un imperativo doblado como "corre, corre"?',
+      options: ['una orden más educada', 'urgencia', 'una pregunta'], answer: 1 },
+    { id: 'p:ordendirecto:receta', kind: 'mcq', q: '¿Qué forma es típica de recetas e instrucciones escritas?',
+      options: ['tú', 'usted', 'vosotros'], answer: 1 },
+    { id: 'p:ordendirecto:cloze', kind: 'cloze', text: 'Cuando ___ (llegar, tú) a Córdoba, llámame.', accept: ['llegues'] },
+    { id: 'p:ordendirecto:recall', kind: 'recall', front: 'How does Spanish intensify an urgent command through repetition?', back: 'doubling the imperative (corre, corre / ven, ven)' }
+  ]
+},
+
+{
+  id: 'fn-pedir-favor-b1', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  pcic: ['funciones:B1:969', 'funciones:B1:970', 'funciones:B1:971', 'funciones:B1:972', 'funciones:B1:973', 'funciones:B1:974', 'funciones:B1:975'],
+  title: 'Pedir un favor',
+  summary: 'Tengo que pedirte una cosa announces the request BEFORE making it, buying a beat of preparation the direct ¿me haces un favor? skips entirely — a small extra move for a bigger ask.',
+  sections: [
+    { h: 'The direct favor question', html: '<i>¿Puedes/Podrías hacerme un favor?</i>, <i>¿Me haces un favor?</i> — jumps straight to the request.' },
+    { h: '¿Te importa/importaría...?', html: 'Frames the favor as a possible inconvenience, extra polite: <i>¿Les importaría hacerme un favor?</i>' },
+    { h: 'Necesito que + subjuntivo', html: 'States the need directly, subjunctive because it concerns someone else\'s action: <i>Necesito que me hagas un favor.</i>' },
+    { h: 'Announcing the request first', html: 'For a bigger or more awkward ask, warn first: <i>Tengo que pedirte una cosa... ¿Podrías...? Es que...</i> — announcement, then request, then justification.' }
+  ],
+  exponents: [
+    { es: '¿Me haces un favor?', en: 'Can you do me a favor?', register: 'coloquial' },
+    { es: '¿Te importaría acompañarme al médico?', en: 'Would you mind coming with me to the doctor?', register: 'neutral', note: 'frames it as a possible inconvenience' },
+    { es: 'Necesito que me eches una mano con esto.', en: 'I need you to give me a hand with this.', register: 'coloquial', note: 'que + subjuntivo' },
+    { es: '¿Le importaría hacerme un favor?', en: 'Would you mind doing me a favor?', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Necesito que</i> + a clause about someone else always takes the subjunctive.',
+    'Announcing a request first (<i>tengo que pedirte una cosa...</i>) is reserved for bigger or more awkward favors — using it for something trivial can sound oddly heavy.'
+  ],
+  examples: [
+    { es: '¿Podrías hacerme el favor de bajar la música?', en: 'Could you do me the favor of turning the music down?' },
+    { es: 'Mira, tengo que pedirte una cosa. ¿Podrías prestarme el coche?', en: 'Look, I need to ask you something. Could you lend me the car?' },
+    { es: 'Necesito que me ayudes a mover estas cajas.', en: 'I need you to help me move these boxes.' }
+  ],
+  probes: [
+    { id: 'p:pedirfavor:subjuntivo', kind: 'mcq', q: '"Necesito que me ___ una mano." (echar)',
+      options: ['echas', 'eches', 'echarás'], answer: 1 },
+    { id: 'p:pedirfavor:anuncio', kind: 'mcq', q: '¿Qué hace "tengo que pedirte una cosa" antes de la petición real?',
+      options: ['nada, es la petición', 'anuncia que viene algo importante', 'cierra la conversación'], answer: 1 },
+    { id: 'p:pedirfavor:cloze', kind: 'cloze', text: '¿Te ___ acompañarme? (importaría)', accept: ['importaría'] },
+    { id: 'p:pedirfavor:recall', kind: 'recall', front: 'What does ¿te importa/importaría...? frame the favor as?', back: 'a possible inconvenience — extra polite' }
+  ]
 }
 
 ];
