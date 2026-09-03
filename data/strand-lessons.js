@@ -8551,6 +8551,461 @@ window.STRAND_LESSONS = [
     { id: 'p:exponer:cloze', kind: 'cloze', text: 'Se parece a un gato pequeño, ___ un gato pequeño. (analogía)', accept: ['es como'] },
     { id: 'p:exponer:recall', kind: 'recall', front: 'Name three ways to develop a subtopic in an exposition', back: 'clasificación, reformulación, ejemplificación, resumen, or analogía (any three)' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 function, wave 1 of 5: the opinion/agreement cluster
+ * (seq 266-281 of spec/syllabus-draft.json).
+ * ========================================================================== */
+{
+  id: 'fn-respuesta-afirmativa-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:68', 'funciones:B1:69', 'funciones:B1:70'],
+  title: 'Corregir con no... sino',
+  summary: 'No... sino does not just say something is wrong, it swaps the wrong piece for the right one in a single breath — Gijón no está en Cantabria, sino en Asturias replaces "Cantabria" with "Asturias" without ever needing a second sentence.',
+  sections: [
+    { h: 'Emphatic reassertion', html: 'Reinforcing a correction with emphatic intonation (written in capitals for a text app): <i>—Gijón está en Cantabria. —Gijón está en ASTURIAS.</i>' },
+    { h: 'Repetition for intensity', html: 'Repeating <i>no</i> intensifies a denial the way repeating <i>claro</i> intensifies agreement: <i>No, no, no está en Cantabria.</i>' },
+    { h: 'No... sino: swap in one breath', html: '<i>No + [enunciado negado] + sino + [lo correcto]</i> replaces the wrong element without a second sentence: <i>Gijón no está en Cantabria, sino en Asturias.</i>' }
+  ],
+  exponents: [
+    { es: 'Gijón no está en Cantabria, sino en Asturias.', en: "Gijón isn't in Cantabria, it's in Asturias.", register: 'neutral', note: 'no...sino — swaps the wrong element for the right one' },
+    { es: 'No, no, no está en Cantabria.', en: 'No, no, it is not in Cantabria.', register: 'coloquial', note: 'repeated no — intensifies the denial' },
+    { es: '—Vive en Bilbao. —Vive en SEVILLA.', en: '"He lives in Bilbao." "He lives in SEVILLE."', register: 'coloquial', note: 'emphatic intonation reasserts the correct fact' }
+  ],
+  pitfalls: [
+    '<i>Sino</i> (one word) introduces the correction after a negated statement; do not confuse it with <i>si no</i> (two words, "if not").',
+    '<i>No... sino</i> needs the FIRST part negated — it replaces one specific element, not the whole sentence.'
+  ],
+  examples: [
+    { es: 'No es profesor, sino investigador.', en: "He isn't a teacher, he's a researcher." },
+    { es: 'No fue ayer, sino anteayer.', en: 'It wasn\'t yesterday, it was the day before.' },
+    { es: 'No quiero café, sino té.', en: "I don't want coffee, I want tea." }
+  ],
+  probes: [
+    { id: 'p:respafirm:sino', kind: 'mcq', q: '"Gijón no está en Cantabria, ___ en Asturias."',
+      options: ['si no', 'sino', 'pero'], answer: 1 },
+    { id: 'p:respafirm:repeticion', kind: 'mcq', q: '¿Qué intensifica una negación por repetición?',
+      options: ['No, no, no está en Cantabria.', 'Puede que no esté en Cantabria.', 'No está en Cantabria, creo.'], answer: 0 },
+    { id: 'p:respafirm:cloze', kind: 'cloze', text: 'No es médico, ___ enfermero.', accept: ['sino'] },
+    { id: 'p:respafirm:recall', kind: 'recall', front: 'Sino (one word) vs si no (two words) — which introduces a correction?', back: 'sino (one word)' }
+  ]
+},
+
+{
+  id: 'fn-pedir-opinion-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:126', 'funciones:B1:129', 'funciones:B1:130', 'funciones:B1:131', 'funciones:B1:132'],
+  title: 'Pedir opinión',
+  summary: 'En tu opinión and según tú both ask what someone thinks, but they front-load the question differently — según tú puts the SOURCE of the view first, which is subtly more pointed than simply asking what someone thinks in general.',
+  sections: [
+    { h: 'The bare question', html: '<i>¿Tú qué piensas?</i>, <i>¿Te parece que...?</i> — the direct way to ask, tú register.' },
+    { h: 'Fronting the source of the opinion', html: '<i>En tu opinión</i> / <i>Desde tu punto de vista</i> + question puts the framing first: <i>En tu opinión, ¿cuáles son las dos mejores películas del año?</i> <i>Según tú</i> does the same, more pointedly: <i>Según tú, ¿quién debe ganar?</i>' },
+    { h: 'Tagging a question onto your own statement', html: 'State your view, then invite theirs: <i>Me parece que vamos a llegar tarde. ¿Tú qué crees?</i>' }
+  ],
+  exponents: [
+    { es: '¿Tú qué piensas?', en: 'What do you think?', register: 'coloquial' },
+    { es: '¿Te parece que deberíamos esperar?', en: 'Do you think we should wait?', register: 'neutral' },
+    { es: 'Según tú, ¿quién debe ganar el partido?', en: 'In your view, who should win the match?', register: 'coloquial', note: 'según tú fronts the source of the opinion' },
+    { es: '¿Usted qué opina al respecto?', en: 'What is your view on this?', register: 'formal', note: 'usted — the formal equivalent of ¿tú qué piensas?' }
+  ],
+  pitfalls: [
+    '<i>Según tú</i> is more pointed than <i>en tu opinión</i> — it can sound like you are challenging the other person\'s view, not just asking for it.',
+    'These are all TÚ-register forms except the usted version — do not default to <i>¿tú qué piensas?</i> with someone you would otherwise address formally.'
+  ],
+  examples: [
+    { es: 'En tu opinión, ¿qué deberíamos hacer?', en: 'In your opinion, what should we do?' },
+    { es: '¿A ti qué te parece la propuesta?', en: 'What do you think of the proposal?' },
+    { es: '¿Qué opina usted de la nueva ley?', en: 'What is your view on the new law?' }
+  ],
+  probes: [
+    { id: 'p:pedopinb1:fuente', kind: 'mcq', q: '¿Cuál pone la FUENTE de la opinión primero, de forma más directa?',
+      options: ['¿Tú qué piensas?', 'Según tú, ¿quién debe ganar?', '¿Te parece bien?'], answer: 1 },
+    { id: 'p:pedopinb1:registro', kind: 'mcq', q: 'Se lo preguntas a tu jefe:',
+      options: ['¿Tú qué piensas?', '¿Qué opina usted?', '¿A ti qué te parece?'], answer: 1 },
+    { id: 'p:pedopinb1:cloze', kind: 'cloze', text: '___ tu punto de vista, ¿qué deberíamos hacer? (desde)', accept: ['Desde', 'desde'] },
+    { id: 'p:pedopinb1:recall', kind: 'recall', front: 'Which opinion-question fronts the source and sounds more pointed than "en tu opinión"?', back: 'según tú' }
+  ]
+},
+
+{
+  id: 'fn-dar-opinion-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:138', 'funciones:B1:139', 'funciones:B1:140', 'funciones:B1:141', 'funciones:B1:142'],
+  title: 'Dar una opinión',
+  summary: 'No creo que tengas razón takes the subjunctive after it, and not because doubt itself demands one — the NEGATIVE of an opinion verb (no creo, no pienso, no me parece) is what triggers it, the same mechanism that turns dudo que into a fixed subjunctive trigger.',
+  sections: [
+    { h: 'The standard openers', html: '<i>En mi opinión</i>, <i>Desde mi punto de vista</i>, <i>(A mí) me parece que</i>, <i>(Yo) pienso que</i> — all followed by the indicative, since a positive opinion states something as your view of the facts.' },
+    { h: 'Negating the opinion verb: subjunctive follows', html: 'Negate the OPINION VERB itself — <i>no creo, no pienso, no me parece</i> — and the clause that follows switches to the subjunctive: <i>No creo que tengas razón</i>, <i>A mí no me parece que eso sea importante</i>.' }
+  ],
+  exponents: [
+    { es: 'En mi opinión, deberíamos esperar un poco más.', en: 'In my opinion, we should wait a bit longer.', register: 'neutral' },
+    { es: 'Me parece que te equivocas.', en: "I think you're mistaken.", register: 'coloquial' },
+    { es: 'Desde mi punto de vista, la decisión fue acertada.', en: 'From my point of view, the decision was the right one.', register: 'formal', note: 'more measured framing, common in written argument' },
+    { es: 'No creo que tengas razón.', en: "I don't think you're right.", register: 'coloquial', note: 'negated opinion verb — subjunctive follows' }
+  ],
+  pitfalls: [
+    'A POSITIVE opinion verb (<i>creo, pienso, me parece</i>) takes the indicative; negate it and the following clause switches to the subjunctive — <i>creo que tienes razón</i> vs <i>no creo que tengas razón</i>.',
+    '<i>Desde mi punto de vista</i> is more measured/written than <i>me parece que</i>, which is closer to everyday speech.'
+  ],
+  examples: [
+    { es: 'Pensamos que es mejor quedar mañana.', en: "We think it's better to meet tomorrow." },
+    { es: 'A mí no me parece que eso sea tan grave.', en: "I don't think that's so serious." },
+    { es: 'En mi opinión, el libro es mejor que la película.', en: 'In my opinion, the book is better than the film.' }
+  ],
+  probes: [
+    { id: 'p:daropinb1:subjuntivo', kind: 'mcq', q: '"No creo que ___ razón." (tener)',
+      options: ['tienes', 'tengas', 'tendrás'], answer: 1 },
+    { id: 'p:daropinb1:indicativo', kind: 'mcq', q: '"Me parece que ___ razón." (tener, opinión positiva)',
+      options: ['tengas', 'tienes', 'tener'], answer: 1 },
+    { id: 'p:daropinb1:cloze', kind: 'cloze', text: '___ mi punto de vista, fue un error. (desde)', accept: ['Desde', 'desde'] },
+    { id: 'p:daropinb1:recall', kind: 'recall', front: 'What triggers the subjunctive after an opinion verb like creer/pensar/parecer?', back: 'negating the opinion verb itself (no creo, no pienso, no me parece)' }
+  ]
+},
+
+{
+  id: 'fn-pedir-valoracion-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:150', 'funciones:B1:151', 'funciones:B1:152', 'funciones:B1:155', 'funciones:B1:158'],
+  title: 'Pedir valoración',
+  summary: '¿Qué tal? alone in a fitting room asks for a verdict on how something looks on you — the whole question is compressed into two words, and only the situation supplies what is actually being judged.',
+  sections: [
+    { h: '¿Qué tal? alone', html: 'In the right context — trying on clothes, showing something off — <i>¿Qué tal?</i> needs no object at all: <i>—¿Qué tal? —Te quedan muy bien.</i>' },
+    { h: '¿Qué tal está + noun?', html: 'Asking for a verdict on a specific thing: <i>¿Qué tal está esta revista?</i>, <i>¿Qué tal está ese hotel?</i>' },
+    { h: '¿Qué te parece / te parece bien-mal / te parece buena idea', html: 'Three ways to ask for a reaction to a plan or proposal, from neutral to more pointed: <i>¿Qué te parece el plan?</i>, <i>¿Te parece bien salir a las ocho?</i>, <i>¿Te parece buena idea que vengamos todos?</i> (subjunctive after <i>que</i>).' }
+  ],
+  exponents: [
+    { es: '—¿Qué tal? —Te quedan muy bien.', en: '"How do they look?" "They look great on you."', register: 'coloquial', note: 'no object needed — context supplies it' },
+    { es: '¿Qué tal está ese hotel?', en: 'What\'s that hotel like?', register: 'neutral' },
+    { es: '¿Te parece bien que quedemos a las ocho?', en: 'Is it okay with you if we meet at eight?', register: 'coloquial', note: 'que + subjuntivo' },
+    { es: '¿Le parece bien el horario propuesto?', en: 'Is the proposed schedule alright with you?', register: 'formal', note: 'usted — asking a client or colleague for a verdict' }
+  ],
+  pitfalls: [
+    'A clause after <i>te parece bien/mal que...</i> or <i>te parece buena idea que...</i> takes the SUBJUNCTIVE: <i>que vengamos</i>, not <i>que venimos</i>.',
+    'Bare <i>¿Qué tal?</i> only works when the situation makes clear what is being judged — in writing or out of context, name the thing instead.'
+  ],
+  examples: [
+    { es: '¿Qué tal está la comida?', en: "How's the food?" },
+    { es: '¿Qué te parece si vamos al cine?', en: 'What do you think about going to the cinema?' },
+    { es: '¿Te parece buena idea invitarlos a los dos?', en: 'Do you think it\'s a good idea to invite both of them?' }
+  ],
+  probes: [
+    { id: 'p:pedvalb1:subjuntivo', kind: 'mcq', q: '"¿Te parece bien que ___ mañana?" (empezar)',
+      options: ['empezamos', 'empecemos', 'empezaremos'], answer: 1 },
+    { id: 'p:pedvalb1:sinobjeto', kind: 'mcq', q: 'Te pruebas un abrigo y preguntas:',
+      options: ['¿Qué tal está el abrigo que me pruebo?', '¿Qué tal?', '¿Te parece un abrigo?'], answer: 1 },
+    { id: 'p:pedvalb1:cloze', kind: 'cloze', text: '¿Qué tal ___ ese hotel? (está)', accept: ['está'] },
+    { id: 'p:pedvalb1:recall', kind: 'recall', front: 'What mood follows "te parece bien/mal que..."?', back: 'the subjunctive' }
+  ]
+},
+
+{
+  id: 'fn-aprobacion-desaprobacion-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:208', 'funciones:B1:211', 'funciones:B1:214'],
+  title: 'Expresar aprobación y desaprobación (B1)',
+  summary: 'The A1 scale of bien/mal/regular only ever evaluated things already named — B1 adds the machinery to approve or disapprove of an ACTION itself, and that action, once turned into a que-clause, needs the subjunctive: me parece muy mal que llegues tarde.',
+  sections: [
+    { h: 'Me parece (muy) mal/bien', html: 'Judging a noun, an action (infinitive) or a whole situation: <i>Me parece muy bien tu decisión</i>, <i>Me parece mal que no avises</i> (subjunctive — a clause, not a simple fact).' },
+    { h: 'Está (muy) mal/bien', html: 'A more impersonal judgment of an action: <i>Está muy bien ayudar a los demás</i>, <i>Está mal que mientas</i>.' },
+    { h: '¡Qué mal/bien...!', html: 'An exclamatory, more emotional version of the same judgment: <i>¡Qué bien que hayas venido!</i>, <i>¡Qué mal lo hiciste!</i>' }
+  ],
+  exponents: [
+    { es: 'Me parece muy bien que hayas decidido estudiar más.', en: "I think it's great that you've decided to study more.", register: 'neutral', note: 'que + subjuntivo — judging an action' },
+    { es: 'Está mal que no avises cuando llegas tarde.', en: "It's wrong not to warn people when you're running late.", register: 'neutral' },
+    { es: '¡Qué bien que hayas venido!', en: "I'm so glad you came!", register: 'coloquial', note: 'exclamatory, emotional version' },
+    { es: '¡Qué mal lo has hecho!', en: 'You did that so badly!', register: 'coloquial' }
+  ],
+  pitfalls: [
+    'Judging an ACTION with a que-clause (<i>me parece mal que..., está mal que...</i>) always takes the subjunctive, unlike judging a simple noun.',
+    '¡Qué bien/mal! is more emotionally charged than <i>me parece bien/mal</i> — reserve it for genuine reactions, not measured feedback.'
+  ],
+  examples: [
+    { es: 'Me parece fatal que hayan cancelado el vuelo sin avisar.', en: "I think it's awful that they cancelled the flight without warning." },
+    { es: 'Está muy bien que participes en el proyecto.', en: "It's great that you're taking part in the project." },
+    { es: '¡Qué bien que por fin lo hayáis conseguido!', en: "It's great that you've finally managed it!" }
+  ],
+  probes: [
+    { id: 'p:aprobb1:subjuntivo', kind: 'mcq', q: '"Me parece mal que no ___." (avisar)',
+      options: ['avisas', 'avises', 'avisarás'], answer: 1 },
+    { id: 'p:aprobb1:exclamativo', kind: 'mcq', q: '¿Cuál es la reacción más emocional?',
+      options: ['Me parece bien.', '¡Qué bien!', 'Está bien.'], answer: 1 },
+    { id: 'p:aprobb1:cloze', kind: 'cloze', text: 'Está mal que ___ (mentir).', accept: ['mientas'] },
+    { id: 'p:aprobb1:recall', kind: 'recall', front: 'What mood follows me parece bien/mal QUE + [an action]?', back: 'the subjunctive' }
+  ]
+},
+
+{
+  id: 'fn-posicionarse-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:221', 'funciones:B1:224', 'funciones:B1:227'],
+  title: 'Posicionarse a favor o en contra',
+  summary: 'Estar a favor and estar de acuerdo sound similar but answer different questions — a favor/en contra takes a SIDE on an issue, while de acuerdo agrees or disagrees with a specific claim, and the two do not always line up.',
+  sections: [
+    { h: 'Taking a side: a favor / en contra', html: '<i>(No) estoy a favor de + noun/inf</i>, <i>(No) estoy en contra de que + subjuntivo</i> — this positions you on an ISSUE, not necessarily on one person\'s specific statement.' },
+    { h: 'Agreeing with a claim: de acuerdo', html: '<i>Estoy de acuerdo con...</i> tracks agreement with a specific claim or person, distinct from taking a broader side.' },
+    { h: '¡Bien hecho/dicho!', html: 'A short, warm approval of what someone DID or SAID: <i>¡Bien dicho!</i> — praising the delivery, not just agreeing with the content.' }
+  ],
+  exponents: [
+    { es: 'Estoy a favor de reducir la jornada laboral.', en: "I'm in favor of shortening the working day.", register: 'neutral' },
+    { es: 'Estoy en contra de que se privatice la sanidad.', en: "I'm against healthcare being privatized.", register: 'neutral', note: 'en contra de que + subjuntivo' },
+    { es: 'Estoy de acuerdo con lo que has dicho.', en: 'I agree with what you said.', register: 'coloquial' },
+    { es: '¡Bien dicho!', en: 'Well said!', register: 'coloquial', note: 'praises the delivery, not just the content' }
+  ],
+  pitfalls: [
+    'Estar a favor/en contra positions you on the broader ISSUE; estar de acuerdo tracks a specific claim — you can be a favor of an idea in general while disagreeing with how someone just phrased it.',
+    '<i>En contra de que</i> + a clause takes the subjunctive, like most <i>que</i>-clauses expressing a stance.'
+  ],
+  examples: [
+    { es: '¿Estás a favor o en contra de la propuesta?', en: 'Are you for or against the proposal?' },
+    { es: 'No estoy de acuerdo con esa decisión.', en: "I don't agree with that decision." },
+    { es: '¡Bien hecho, lo conseguiste!', en: 'Well done, you did it!' }
+  ],
+  probes: [
+    { id: 'p:posicionar:diferencia', kind: 'mcq', q: '¿Cuál posiciona sobre un TEMA en general, no sobre una afirmación concreta?',
+      options: ['Estoy de acuerdo con eso.', 'Estoy a favor de esa medida.', 'Estoy de acuerdo contigo.'], answer: 1 },
+    { id: 'p:posicionar:subjuntivo', kind: 'mcq', q: '"Estoy en contra de que se ___ la ley." (cambiar)',
+      options: ['cambia', 'cambie', 'cambiará'], answer: 1 },
+    { id: 'p:posicionar:cloze', kind: 'cloze', text: '¡Bien ___! (praising something someone SAID)', accept: ['dicho'] },
+    { id: 'p:posicionar:recall', kind: 'recall', front: 'Estar a favor/en contra vs estar de acuerdo — which tracks a broader issue?', back: 'estar a favor/en contra' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-si-acuerdo-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:228', 'funciones:B1:229', 'funciones:B1:230'],
+  title: 'Preguntar si se está de acuerdo',
+  summary: '¿Piensas lo mismo que yo? checks alignment before you have even stated your view — a different move from ¿tú qué piensas?, which asks for an opinion with nothing yet on the table to agree or disagree with.',
+  sections: [
+    { h: 'Checking alignment', html: '<i>¿Piensas igual / lo mismo que + person?</i> asks whether someone shares a view already implied or just stated: <i>¿Piensas lo mismo que yo?</i>' },
+    { h: 'Opening the floor after stating a fact', html: 'After reporting what someone said or a piece of news, invite a reaction: <i>Salvador ha dicho que es mejor trabajar en grupos grandes. ¿Tú qué opinas?</i>' }
+  ],
+  exponents: [
+    { es: '¿Piensas lo mismo que yo?', en: 'Do you think the same as me?', register: 'coloquial' },
+    { es: '¿Tú qué opinas?', en: 'What do you think?', register: 'coloquial' },
+    { es: '¿A ti qué te parece?', en: 'What do you make of it?', register: 'coloquial' },
+    { es: '¿Coincide usted con esta valoración?', en: 'Do you agree with this assessment?', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>¿Piensas lo mismo que yo?</i> presupposes you already have a view on the table — it checks alignment, it does not open a neutral question the way <i>¿tú qué piensas?</i> does.'
+  ],
+  examples: [
+    { es: 'Creo que deberíamos cancelarlo. ¿Piensas lo mismo?', en: 'I think we should cancel it. Do you think the same?' },
+    { es: 'El jefe ha anunciado cambios en el equipo. ¿Tú qué opinas?', en: 'The boss has announced changes to the team. What do you think?' },
+    { es: '¿A ti qué te parece la nueva política de la empresa?', en: 'What do you make of the company\'s new policy?' }
+  ],
+  probes: [
+    { id: 'p:pregacuerdo:alineacion', kind: 'mcq', q: '¿Cuál PRESUPONE que ya has dado tu opinión?',
+      options: ['¿Tú qué opinas?', '¿Piensas lo mismo que yo?', '¿A ti qué te parece?'], answer: 1 },
+    { id: 'p:pregacuerdo:registro', kind: 'mcq', q: 'Se lo preguntas a un cliente, formalmente:',
+      options: ['¿Piensas lo mismo?', '¿Coincide usted con esta valoración?', '¿Tú qué crees?'], answer: 1 },
+    { id: 'p:pregacuerdo:cloze', kind: 'cloze', text: '¿___ lo mismo que yo? (piensas)', accept: ['Piensas', 'piensas'] },
+    { id: 'p:pregacuerdo:recall', kind: 'recall', front: 'What does ¿piensas lo mismo que yo? check, that ¿tú qué piensas? does not?', back: 'alignment with a view already on the table' }
+  ]
+},
+
+{
+  id: 'fn-estoy-de-acuerdo-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:246', 'funciones:B1:247', 'funciones:B1:248', 'funciones:B1:249'],
+  title: '(Yo) estoy de acuerdo',
+  summary: 'Estar de acuerdo takes con for a person or thing and en for an action or clause — the same con/en split that runs through the whole family of agreement expressions, and mixing them up is the single most common preposition slip at this level.',
+  sections: [
+    { h: 'Con + person/thing', html: '<i>Estoy de acuerdo contigo</i>, <i>estoy de acuerdo con la nueva ley</i> — <i>con</i> before a person or a noun.' },
+    { h: 'En + infinitive or clause', html: '<i>Estoy de acuerdo en participar en el proyecto</i> (infinitive — same subject), <i>estoy de acuerdo en que deberíamos cuidar más el medio ambiente</i> (clause, indicative or subjunctive depending on what is being agreed to).' }
+  ],
+  exponents: [
+    { es: 'Estoy de acuerdo contigo.', en: 'I agree with you.', register: 'coloquial' },
+    { es: 'Estoy de acuerdo con la nueva ley.', en: 'I agree with the new law.', register: 'neutral' },
+    { es: 'Estoy de acuerdo en participar en el proyecto.', en: "I agree to take part in the project.", register: 'neutral', note: 'en + infinitivo — same subject' },
+    { es: 'Coincido plenamente con su planteamiento.', en: 'I fully concur with your position.', register: 'formal' }
+  ],
+  pitfalls: [
+    'Use <i>con</i> before a PERSON or a NOUN (<i>de acuerdo contigo, con la ley</i>); use <i>en</i> before an INFINITIVE or a CLAUSE (<i>de acuerdo en participar, en que...</i>).',
+    'Never say <i>*de acuerdo a</i> — that preposition is a calque from English, not standard Spanish.'
+  ],
+  examples: [
+    { es: 'Estoy de acuerdo con vosotros en casi todo.', en: 'I agree with you all on almost everything.' },
+    { es: 'Estoy de acuerdo en que hay que cambiar el horario.', en: 'I agree that the schedule needs to change.' },
+    { es: '¿Estás de acuerdo con esta decisión?', en: 'Do you agree with this decision?' }
+  ],
+  probes: [
+    { id: 'p:estoyacuerdo:preposicion', kind: 'mcq', q: '"Estoy de acuerdo ___ ir mañana." (infinitivo)',
+      options: ['con', 'en', 'de'], answer: 1 },
+    { id: 'p:estoyacuerdo:preposicion2', kind: 'mcq', q: '"Estoy de acuerdo ___ la propuesta." (nombre)',
+      options: ['en', 'con', 'a'], answer: 1 },
+    { id: 'p:estoyacuerdo:cloze', kind: 'cloze', text: 'Estoy de acuerdo ___ ti. (contigo)', accept: ['con'] },
+    { id: 'p:estoyacuerdo:recall', kind: 'recall', front: 'De acuerdo + con vs + en — which goes before a person/noun, which before an infinitive/clause?', back: 'con → person/noun; en → infinitive/clause' }
+  ]
+},
+
+{
+  id: 'fn-no-estoy-de-acuerdo-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:295', 'funciones:B1:296', 'funciones:B1:297', 'funciones:B1:298'],
+  title: '(Yo) no estoy de acuerdo',
+  summary: 'The same con/en split from agreeing carries straight over to disagreeing — negating estar de acuerdo does not change which preposition goes where, it just flips the polarity of the whole phrase.',
+  sections: [
+    { h: 'Same prepositions, negated', html: '<i>No estoy de acuerdo con + persona/SN</i>, <i>no estoy de acuerdo en + infinitivo/que + cláusula</i> — the con/en split from the previous lesson is unchanged; only <i>no</i> is added.' }
+  ],
+  exponents: [
+    { es: 'No estoy de acuerdo contigo en esto.', en: "I don't agree with you on this.", register: 'coloquial' },
+    { es: 'No estoy de acuerdo con tu último comentario.', en: "I don't agree with your last comment.", register: 'neutral' },
+    { es: 'No estoy de acuerdo en que cambiemos de profesor.', en: "I don't agree with changing teachers.", register: 'neutral' },
+    { es: 'Discrepo respetuosamente de esa valoración.', en: 'I respectfully disagree with that assessment.', register: 'formal' }
+  ],
+  pitfalls: [
+    'The con/en split is identical to <i>estoy de acuerdo</i> — negating it does not change which preposition goes where.',
+    '<i>Discrepar</i> is the more formal, written equivalent of <i>no estar de acuerdo</i> — useful in a report or letter, too abrupt-sounding in casual speech.'
+  ],
+  examples: [
+    { es: 'No estoy de acuerdo con ir a la playa todo el mes.', en: "I don't agree with going to the beach for the whole month." },
+    { es: 'No estamos de acuerdo en absoluto.', en: "We don't agree at all." },
+    { es: 'Discrepo de la conclusión del informe.', en: 'I disagree with the report\'s conclusion.' }
+  ],
+  probes: [
+    { id: 'p:noacuerdo:preposicion', kind: 'mcq', q: '"No estoy de acuerdo ___ que cambiemos de profesor." (cláusula)',
+      options: ['con', 'en', 'de'], answer: 1 },
+    { id: 'p:noacuerdo:formal', kind: 'mcq', q: '¿Cuál es la versión más formal/escrita de "no estoy de acuerdo"?',
+      options: ['Qué va.', 'Discrepo.', 'Ni de coña.'], answer: 1 },
+    { id: 'p:noacuerdo:cloze', kind: 'cloze', text: 'No estoy de acuerdo ___ tu comentario. (con)', accept: ['con'] },
+    { id: 'p:noacuerdo:recall', kind: 'recall', front: 'Does negating estar de acuerdo change the con/en preposition rule?', back: 'no — the same split applies, just negated' }
+  ]
+},
+
+{
+  id: 'fn-mostrar-escepticismo-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:329', 'funciones:B1:330', 'funciones:B1:331', 'funciones:B1:332'],
+  title: 'Mostrar escepticismo',
+  summary: 'Dudo que is a hard subjunctive trigger — no exceptions — while ¿tú crees? does the same skeptical work with no grammar at all, just a question thrown back at the speaker\'s own claim.',
+  sections: [
+    { h: 'Hedging with no real content', html: '<i>Bueno, depende</i> and <i>Pues... supongo...</i> signal skepticism through hesitation itself, without committing to a position.' },
+    { h: 'Throwing the claim back as a question', html: '<i>¿Tú crees?</i> questions what was just said with minimal words — genuinely doubtful, not just curious.' },
+    { h: 'Dudo que: a hard subjunctive trigger', html: '<i>(Yo) dudo que</i> + subjuntivo states doubt directly and ALWAYS takes the subjunctive, no exceptions: <i>Dudo que haya una solución fácil.</i>' }
+  ],
+  exponents: [
+    { es: '—¿Vamos a llegar a tiempo? —Bueno, depende.', en: '"Are we going to arrive on time?" "Well, it depends."', register: 'coloquial' },
+    { es: '—Va a salir bien. —Pues... supongo...', en: '"It\'s going to work out." "Well... I suppose..."', register: 'coloquial' },
+    { es: '—Estoy segura de que vamos a aprobar. —¿Tú crees?', en: '"I\'m sure we\'re going to pass." "You think?"', register: 'coloquial' },
+    { es: 'Dudo que haya una solución tan sencilla.', en: "I doubt there's such a simple solution.", register: 'neutral', note: 'que + subjuntivo, always' }
+  ],
+  pitfalls: [
+    '<i>Dudo que</i> takes the subjunctive with no exceptions — unlike <i>creo que</i>, its polarity does not change the rule.',
+    '<i>¿Tú crees?</i> as a skeptical echo is genuinely doubtful, not a neutral request for confirmation — tone and context carry the meaning.'
+  ],
+  examples: [
+    { es: '—Todo va a salir perfecto. —Bueno, depende.', en: '"Everything is going to go perfectly." "Well, it depends."' },
+    { es: 'Dudo que llegue a tiempo con este tráfico.', en: "I doubt he'll arrive on time with this traffic." },
+    { es: '—Nadie se va a dar cuenta. —¿Tú crees?', en: '"No one is going to notice." "You think?"' }
+  ],
+  probes: [
+    { id: 'p:esceptic:subjuntivo', kind: 'mcq', q: '"Dudo que ___ una solución fácil." (haber)',
+      options: ['hay', 'haya', 'habrá'], answer: 1 },
+    { id: 'p:esceptic:eco', kind: 'mcq', q: '¿Cuál cuestiona lo que acaba de decir el otro, con pocas palabras?',
+      options: ['¿Tú crees?', 'Bueno, depende.', 'Dudo que sea así.'], answer: 0 },
+    { id: 'p:esceptic:cloze', kind: 'cloze', text: 'Dudo que ___ (ser) tan fácil.', accept: ['sea'] },
+    { id: 'p:esceptic:recall', kind: 'recall', front: 'Does dudo que ever take the indicative?', back: 'no — always the subjunctive' }
+  ]
+},
+
+{
+  id: 'fn-contraargumento-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:339', 'funciones:B1:340', 'funciones:B1:341', 'funciones:B1:342'],
+  title: 'Presentar un contraargumento',
+  summary: 'Every one of these formulas concedes something FIRST — tienes razón, es cierto, es verdad — before the pero ever arrives, which is exactly what separates a contraargument from a flat contradiction: you have to grant the point before you can turn it.',
+  sections: [
+    { h: 'Concede, then pero/aunque', html: '<i>Tienes razón, pero/aunque...</i> — grant the point fully before turning it.' },
+    { h: 'Concede with cierto, then turn', html: '<i>Sí, es cierto, pero/sin embargo...</i> — a slightly more formal concession.' },
+    { h: 'Concede with también', html: '<i>Sí, pero también es verdad/cierto que...</i> — adds a second, competing fact rather than flatly denying the first.' },
+    { h: 'Concede, then por otra parte', html: '<i>Sí, pero/aunque por otra parte...</i> — signals a different angle on the same issue.' }
+  ],
+  exponents: [
+    { es: 'Tienes razón, pero deberían preguntar antes de decidir.', en: "You're right, but they should ask before deciding.", register: 'coloquial' },
+    { es: 'Sí, es cierto, pero es un problema más político que social.', en: "Yes, that's true, but it's more a political than a social problem.", register: 'neutral' },
+    { es: 'Sí, pero también es cierto que tú nunca lo has intentado.', en: "Yes, but it's also true that you've never tried it.", register: 'coloquial' },
+    { es: 'Sí, aunque, por otra parte, hay que tener en cuenta el coste.', en: 'Yes, although, on the other hand, the cost has to be considered.', register: 'formal' }
+  ],
+  pitfalls: [
+    'A contraargument always CONCEDES first — skipping straight to <i>pero</i> without granting anything reads as a flat contradiction, a different, blunter move.',
+    '<i>Por otra parte</i> signals a different ANGLE, not necessarily a stronger objection — it broadens the issue rather than attacking the original point directly.'
+  ],
+  examples: [
+    { es: 'Es cierto que es caro, pero también dura mucho más.', en: "It's true that it's expensive, but it also lasts much longer." },
+    { es: 'Tienes razón en lo del precio, aunque la calidad lo justifica.', en: "You're right about the price, although the quality justifies it." },
+    { es: 'Sí, pero por otra parte, no todos pueden permitírselo.', en: 'Yes, but on the other hand, not everyone can afford it.' }
+  ],
+  probes: [
+    { id: 'p:contraarg:concesion', kind: 'mcq', q: '¿Qué hace un contraargumento ANTES de introducir pero?',
+      options: ['niega el punto contrario', 'concede el punto contrario', 'cambia de tema'], answer: 1 },
+    { id: 'p:contraarg:diferencia', kind: 'mcq', q: '¿Cuál es una contradicción directa, SIN concesión?',
+      options: ['Tienes razón, pero...', 'No, eso no es así.', 'Sí, es cierto, pero...'], answer: 1 },
+    { id: 'p:contraarg:cloze', kind: 'cloze', text: 'Sí, es cierto, ___ es un problema más complejo. (pero)', accept: ['pero'] },
+    { id: 'p:contraarg:recall', kind: 'recall', front: 'What must a contraargument do before its "pero"?', back: 'concede the other person\'s point' }
+  ]
+},
+
+{
+  id: 'fn-certeza-evidencia-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:350', 'funciones:B1:352', 'funciones:B1:353', 'funciones:B1:354', 'funciones:B1:356', 'funciones:B1:359', 'funciones:B1:362'],
+  title: 'Expresar certeza y evidencia',
+  summary: 'Every expression of certainty here takes the indicative — está claro que es así, no dudo que lo hará — because stating something as CERTAIN is stating it as a fact, and facts get the indicative; doubt it, and the mood flips (next lesson).',
+  sections: [
+    { h: 'Stating your own certainty', html: '<i>Estoy (totalmente/completamente) seguro de que...</i>, <i>Seguro que...</i> (looser, more common in speech), <i>Sé qué/quién/cuándo...</i> — direct knowledge.' },
+    { h: 'Stating something as objectively certain', html: '<i>(No) es cierto/verdad que...</i>, <i>Está claro/Es evidente que...</i>, <i>Está demostrado que...</i> — framing the claim as fact, not opinion.' },
+    { h: 'No dudo...: denying doubt', html: '<i>No dudo que...</i> — a strong affirmation through the negative of doubt itself.' },
+    { h: 'All indicative', html: 'Every one of these takes the INDICATIVE after <i>que</i>, because certainty presents its content as fact.' }
+  ],
+  exponents: [
+    { es: 'Estoy totalmente seguro de que esta no es la carretera.', en: "I'm completely sure this isn't the road.", register: 'neutral' },
+    { es: 'Seguro que vuelve pronto.', en: "He's sure to be back soon.", register: 'coloquial' },
+    { es: 'Está claro que se equivocó.', en: "It's clear he made a mistake.", register: 'neutral' },
+    { es: 'Está demostrado que el ejercicio mejora el ánimo.', en: "It's a proven fact that exercise improves mood.", register: 'formal', note: 'appeals to established evidence' }
+  ],
+  pitfalls: [
+    'Every certainty expression here takes the INDICATIVE — <i>es evidente que ES así</i>, not <i>*que sea así</i>.',
+    '<i>Seguro que</i> (no <i>de</i>) is the loose, spoken version of <i>estoy seguro de que</i> — do not mix the two constructions into <i>*seguro de que que...</i>'
+  ],
+  examples: [
+    { es: 'Sé perfectamente quién va a aprobar el examen.', en: 'I know exactly who is going to pass the exam.' },
+    { es: 'No es verdad que hayan cancelado el vuelo.', en: "It's not true that they've cancelled the flight." },
+    { es: 'No dudo que lo conseguirás.', en: "I don't doubt you'll manage it." }
+  ],
+  probes: [
+    { id: 'p:certeza:modo', kind: 'mcq', q: '"Está claro que ___ razón." (tener)',
+      options: ['tenga', 'tiene', 'tuviera'], answer: 1 },
+    { id: 'p:certeza:looseform', kind: 'mcq', q: '¿Cuál es la forma más suelta y hablada de "estoy seguro de que vuelve"?',
+      options: ['Seguro que vuelve.', 'Seguro de que vuelve.', 'Es seguro vuelve.'], answer: 0 },
+    { id: 'p:certeza:cloze', kind: 'cloze', text: 'Está demostrado que el ejercicio ___ (mejorar) el ánimo.', accept: ['mejora'] },
+    { id: 'p:certeza:recall', kind: 'recall', front: 'What mood follows every certainty expression in this lesson?', back: 'the indicative' }
+  ]
+},
+
+{
+  id: 'fn-falta-certeza-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:375', 'funciones:B1:378', 'funciones:B1:381', 'funciones:B1:382', 'funciones:B1:385', 'funciones:B1:386'],
+  title: 'Expresar falta de certeza y evidencia',
+  summary: 'Me parece que and dudo que sit right next to each other on the doubt scale but land on opposite sides of the mood divide — parecer states a weak claim as if it were fact (indicative), while dudar states doubt about the fact itself (subjunctive).',
+  sections: [
+    { h: 'Weak claims: still indicative', html: '<i>Me parece que...</i>, <i>Parece que...</i>, <i>Supongo que...</i> present a GUESS, but grammatically still as a proposition — indicative follows: <i>Me parece que el lunes es fiesta.</i>' },
+    { h: 'Denying certainty: subjunctive', html: '<i>No estoy (muy/completamente) seguro de que...</i>, <i>No está claro/No es evidente que...</i> negate a certainty verb — subjunctive follows, the mirror of the previous lesson.' },
+    { h: 'Dudar: always subjunctive', html: '<i>Dudo (de) que...</i> — doubt about the fact itself, always subjunctive, positive or negative: <i>Dudo que pueda conseguirlo.</i>' }
+  ],
+  exponents: [
+    { es: 'Me parece que el lunes que viene es fiesta.', en: 'I think next Monday is a holiday.', register: 'coloquial', note: 'weak claim — still indicative' },
+    { es: 'Supongo que nos reconocerá cuando nos vea.', en: "I imagine he'll recognize us when he sees us.", register: 'coloquial' },
+    { es: 'No estoy muy seguro de que sea buena idea.', en: "I'm not too sure that's a good idea.", register: 'neutral', note: 'negated certainty — subjunctive' },
+    { es: 'No está claro que el proyecto vaya a salir adelante.', en: "It isn't clear the project will go ahead.", register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Me parece / parece / supongo que</i> keep the INDICATIVE even though they express a guess — they present the guess AS a proposition, not as something doubted.',
+    'Negating a certainty verb (<i>no estoy seguro, no está claro</i>) DOES trigger the subjunctive, unlike the plain <i>me parece que</i> family — do not treat all "uncertain" expressions the same.',
+    '<i>Dudar</i> takes the subjunctive whether positive or negative — <i>dudo que</i> and (rarer) <i>no dudo que</i> behave differently, but <i>dudo que</i> itself never varies.'
+  ],
+  examples: [
+    { es: 'Dudo que pueda conseguirlo para mañana.', en: "I doubt he can get it done by tomorrow." },
+    { es: 'No es evidente que esa sea la mejor solución.', en: "It isn't obvious that's the best solution." },
+    { es: 'Parece que va a llover esta tarde.', en: "It looks like it's going to rain this afternoon." }
+  ],
+  probes: [
+    { id: 'p:faltacerteza:parece', kind: 'mcq', q: '"Me parece que ___ fiesta." (ser — presente)',
+      options: ['sea', 'es', 'será'], answer: 1 },
+    { id: 'p:faltacerteza:dudar', kind: 'mcq', q: '"Dudo que lo ___." (conseguir)',
+      options: ['consigue', 'consiga', 'conseguirá'], answer: 1 },
+    { id: 'p:faltacerteza:cloze', kind: 'cloze', text: 'No estoy seguro de que ___ (ser) buena idea.', accept: ['sea'] },
+    { id: 'p:faltacerteza:recall', kind: 'recall', front: 'Me parece que / parece que / supongo que — indicative or subjunctive?', back: 'indicative — they present the guess as a proposition, not a doubted fact' }
+  ]
 }
 
 ];
