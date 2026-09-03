@@ -6784,6 +6784,387 @@ window.STRAND_LESSONS = [
     { id: 'p:modifadv:cloze', kind: 'cloze', text: 'rápida → rápida___. (-mente adverb)', accept: ['mente'] },
     { id: 'p:modifadv:recall', kind: 'recall', front: 'When coordinating two -mente adverbs, which one keeps the suffix?', back: 'only the last one' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — A1 grammar, remaining outstanding units per tools/todo.js
+ * (skipped: none — every unit below had ≥3 teachable spec points)
+ * ========================================================================== */
+{
+  id: 'gr-demostrativos-distribucion-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:135', 'gramatica:A1:136', 'gramatica:A1:137'],
+  title: 'Los demostrativos: dónde van en la frase',
+  summary: 'A demonstrative always sits in front of its noun, never after — and it never shares that noun with an article. The two rules are really one: the demonstrative already does the article\'s job of pointing out which thing you mean.',
+  sections: [
+    { h: 'Always before the noun', html: 'Spanish word order does not let the demonstrative float: <i>este libro</i>, never <i>*libro este</i> as a neutral statement (that order exists only as an emphatic, spoken aside, not the default).' },
+    { h: 'Never with an article', html: 'A demonstrative already picks the noun out, so an article in front of it is redundant and wrong: <i>este libro</i>, never <i>*el este libro</i>. English speakers do not make this mistake, but learners coming from a language with double-marking sometimes do.' }
+  ],
+  contrasts: [
+    { es: 'este libro', en: 'this book', note: 'demonstrative immediately before the noun' },
+    { es: '*el este libro', en: '(wrong)', note: 'no article — the demonstrative already marks the noun as identified' },
+    { es: 'esa mesa', en: 'that table', note: 'same rule, no article needed' }
+  ],
+  pitfalls: [
+    'A demonstrative and an article never stack on the same noun: <i>*el este libro</i> is wrong, just <i>este libro</i>.',
+    'Neutral spoken and written Spanish places the demonstrative before the noun; putting it after (<i>el libro este</i>) is a colloquial, slightly dismissive aside, not the default word order.'
+  ],
+  examples: [
+    { es: 'Este libro es de mi hermana.', en: 'This book is my sister\'s.' },
+    { es: 'Esa camisa te queda muy bien.', en: 'That shirt looks great on you.' },
+    { es: 'Aquellos edificios son del siglo XIX.', en: 'Those buildings are from the 19th century.' }
+  ],
+  probes: [
+    { id: 'p:demdist:articulo', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['el este libro', 'este libro', 'este el libro'], answer: 1 },
+    { id: 'p:demdist:orden', kind: 'mcq', q: '¿Dónde va el demostrativo en una frase neutra?',
+      options: ['después del sustantivo', 'antes del sustantivo', 'da igual'], answer: 1 },
+    { id: 'p:demdist:cloze', kind: 'cloze', text: '___ mesa es nueva. (this — no article)', accept: ['Esta', 'esta'] },
+    { id: 'p:demdist:recall', kind: 'recall', front: 'Can a demonstrative combine with an article on the same noun?', back: 'no — never; the demonstrative already identifies the noun' }
+  ]
+},
+
+{
+  id: 'gr-relativo-que-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:261', 'gramatica:A1:262', 'gramatica:A1:263', 'gramatica:A1:264', 'gramatica:A1:265'],
+  title: 'El relativo que',
+  summary: 'Que is the one relative pronoun every beginner needs: it never changes form, it can stand for a person or a thing, and it can be the subject or the direct object of its own clause — three separate jobs done by one invariable word.',
+  sections: [
+    { h: 'One word, no agreement', html: '<i>Que</i> never changes for gender or number, unlike English "who/which/that": <i>el libro que leo</i>, <i>la profesora que tengo</i>, <i>las casas que veo</i> — same word every time.' },
+    { h: 'Identifying the noun', html: 'It introduces a clause that tells you WHICH one: <i>la profesora que tengo</i> singles out a specific teacher, distinguishing her from others. Without the clause, <i>la profesora</i> alone would not say which.' },
+    { h: 'Subject or direct object', html: '<i>Que</i> can be the subject of its clause (<i>el libro que <b>está</b> en la mesa</i> — the book, and it is on the table) or the direct object (<i>el libro que <b>lee</b></i> — the book, and she reads it). Its antecedent — the noun it refers back to — is always required.' }
+  ],
+  contrasts: [
+    { es: 'la casa que tiene tres habitaciones', en: 'the house that has three rooms', note: 'que as subject of tiene' },
+    { es: 'la profesora que tengo', en: 'the teacher (that) I have', note: 'que as direct object of tengo — English can drop "that", Spanish cannot drop que' },
+    { es: 'el libro que lee es muy interesante', en: 'the book (that) he is reading is very interesting', note: 'que never optional in Spanish' }
+  ],
+  pitfalls: [
+    'English often drops "that/which" (<i>the book I read</i>); Spanish never drops <i>que</i> — <i>*el libro leo</i> is not a sentence.',
+    '<i>Que</i> needs a stated antecedent right before it — it cannot start a clause with nothing to point back to.',
+    'Do not confuse this relative <i>que</i> with the conjunction <i>que</i> after verbs like <i>creo que...</i> — same word, different job.'
+  ],
+  examples: [
+    { es: 'La profesora que tengo me gusta mucho.', en: 'I really like the teacher I have.' },
+    { es: 'Vivo en una casa que tiene tres habitaciones.', en: 'I live in a house that has three rooms.' },
+    { es: 'El libro que lee es muy interesante.', en: 'The book he is reading is very interesting.' }
+  ],
+  probes: [
+    { id: 'p:queRel:invariable', kind: 'mcq', q: '¿Cuál es correcto para "the houses that I see"?',
+      options: ['las casas ques veo', 'las casas que veo', 'las casas quien veo'], answer: 1 },
+    { id: 'p:queRel:obligatorio', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['El libro leo es bueno.', 'El libro que leo es bueno.', 'El libro el que leo es bueno.'], answer: 1 },
+    { id: 'p:queRel:cloze', kind: 'cloze', text: 'La casa ___ tiene tres habitaciones es cara.', accept: ['que'] },
+    { id: 'p:queRel:recall', kind: 'recall', front: 'Does que change for gender or number?', back: 'no — it is invariable' }
+  ]
+},
+
+{
+  id: 'gr-adverbios-afirmacion-negacion-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:301', 'gramatica:A1:302', 'gramatica:A1:303'],
+  title: 'Sí, no, también, tampoco',
+  summary: 'Spanish stacks two negatives without cancelling them out — no tengo hermanos ni hermanas needs its no even though ni already means "nor" — and tampoco is the negative echo of también, not just "no" said twice.',
+  sections: [
+    { h: 'Sí and no', html: '<i>Sí</i> affirms, <i>no</i> negates — but <i>no</i> also has a second, non-negating role as filler before a question tag: <i>No soy alemán</i> (negation) vs <i>No, no soy alemán</i> (the first <i>no</i> is the actual negative answer, spoken as its own beat).' },
+    { h: 'También: agreeing with a positive', html: '<i>También</i> echoes a positive statement: <i>—Tengo hambre. —Yo también.</i> ("Me too.")' },
+    { h: 'Tampoco: agreeing with a negative', html: '<i>Tampoco</i> is the negative twin of <i>también</i> — you use it to agree with a NEGATIVE statement, not <i>no...también</i>: <i>—No tengo hambre. —Yo tampoco.</i> ("Me neither.")' }
+  ],
+  contrasts: [
+    { es: '—Tengo hambre. —Yo también.', en: '"I\'m hungry." "Me too."', note: 'también agrees with a positive' },
+    { es: '—No tengo hambre. —Yo tampoco.', en: '"I\'m not hungry." "Me neither."', note: 'tampoco agrees with a negative — never *yo no también' },
+    { es: 'No tengo hermanos.', en: "I don't have any siblings.", note: 'plain negation' }
+  ],
+  pitfalls: [
+    'Do not agree with a negative statement using <i>también</i> — <i>*yo no también</i> is wrong; the word you want is <i>tampoco</i>.',
+    '<i>Tampoco</i> already carries the negation — do not add a second <i>no</i> before the verb when tampoco follows it: <i>Yo tampoco</i>, or <i>No fumo tampoco</i>.'
+  ],
+  examples: [
+    { es: '—¿Te gusta el café? —Sí, mucho.', en: '"Do you like coffee?" "Yes, a lot."' },
+    { es: '—Estudio español. —Yo también.', en: '"I\'m studying Spanish." "Me too."' },
+    { es: '—No como carne. —Yo tampoco.', en: '"I don\'t eat meat." "Me neither."' }
+  ],
+  probes: [
+    { id: 'p:afneg:tampoco', kind: 'mcq', q: '"I don\'t like it either" — de acuerdo con "No me gusta":',
+      options: ['A mí también.', 'A mí tampoco.', 'A mí no también.'], answer: 1 },
+    { id: 'p:afneg:tambien', kind: 'mcq', q: '"Me too" — de acuerdo con "Tengo sed":',
+      options: ['Yo tampoco.', 'Yo también.', 'Yo sí no.'], answer: 1 },
+    { id: 'p:afneg:cloze', kind: 'cloze', text: '—No tengo coche. —Yo ___.', accept: ['tampoco'] },
+    { id: 'p:afneg:recall', kind: 'recall', front: 'What word agrees with a NEGATIVE statement ("me neither")?', back: 'tampoco' }
+  ]
+},
+
+{
+  id: 'gr-adverbios-lugar-tiempo-cantidad-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:291', 'gramatica:A1:292', 'gramatica:A1:293', 'gramatica:A1:294', 'gramatica:A1:295', 'gramatica:A1:296', 'gramatica:A1:297', 'gramatica:A1:298', 'gramatica:A1:299'],
+  title: 'Adverbios de lugar, tiempo y cantidad',
+  summary: 'Three small adverb systems that beginners mix up for different reasons: aquí/ahí/allí track a three-way space parallel to the demonstratives, mucho and muy are not interchangeable despite both meaning "very/a lot", and bien/mal describe HOW something is done, never what it IS.',
+  sections: [
+    { h: 'Place: aquí, ahí, allí', html: 'These track the same three-way distance as <i>este/ese/aquel</i>: <i>aquí</i> = where I am, <i>ahí</i> = where you are, <i>allí</i> = away from both. <i>Cerca</i>/<i>lejos</i> intensify with <i>muy</i>: <i>muy cerca</i>, <i>muy lejos</i>.' },
+    { h: 'Time: ahora, hoy, mañana', html: '<i>Ahora</i> (now), <i>hoy</i> (today) and <i>mañana</i> (tomorrow) are the basic deictic time words, anchored to the moment of speaking.' },
+    { h: 'Quantity: poco, mucho, bastante — and mucho vs muy', html: '<i>Poco/mucho/bastante</i> modify a VERB and go after it: <i>duermo poco</i>, <i>estudio mucho</i>. The trap is <b>mucho vs muy</b>: <i>mucho</i> modifies a verb or stands with a noun (<i>estudio mucho</i>, <i>mucho café</i>); <i>muy</i> modifies an adjective or another adverb (<i>muy bonito</i>, <i>muy bien</i>) and can never stand alone before a verb.' },
+    { h: 'Manner: bien, mal', html: '<i>Bien</i> and <i>mal</i> describe HOW an action is done or how something turns out, and go after the verb: <i>Está bien</i> (it\'s fine/she\'s well), <i>Canta mal</i> (he sings badly). They never describe what a thing IS — that job belongs to adjectives (<i>bueno/malo</i>).' }
+  ],
+  contrasts: [
+    { es: 'Vivo aquí. / Siéntate ahí. / Aquello está allí.', en: 'I live here. / Sit there. / That is over there.', note: 'the three-way place system, parallel to este/ese/aquel' },
+    { es: 'Es muy bonito.', en: "It's very pretty.", note: 'muy + adjective' },
+    { es: '*Es mucho bonito.', en: '(wrong)', note: 'mucho cannot modify an adjective — that is muy\'s job' },
+    { es: 'Estudio mucho. / Duermo poco.', en: 'I study a lot. / I sleep little.', note: 'mucho/poco modify the verb, placed after it' }
+  ],
+  pitfalls: [
+    '<i>Muy</i> modifies adjectives and adverbs; <i>mucho</i> modifies verbs and nouns. <i>*muy bonito</i> is right, <i>*mucho bonito</i> is wrong.',
+    '<i>Bien/mal</i> describe an action or a state, never a noun\'s inherent quality — "a good book" is <i>un libro bueno</i>, not <i>*un libro bien</i>.',
+    'Quantity adverbs like <i>mucho, poco, bastante</i> normally follow the verb they modify: <i>trabajo mucho</i>, not <i>*mucho trabajo</i> as a verb modifier (that word order instead makes <i>mucho</i> describe a noun).'
+  ],
+  examples: [
+    { es: 'Vivo muy cerca de aquí.', en: 'I live very close to here.' },
+    { es: 'Hoy trabajo mucho, pero mañana descanso.', en: 'Today I\'m working a lot, but tomorrow I\'m resting.' },
+    { es: 'Canta muy bien y toca la guitarra bastante bien también.', en: 'She sings very well and plays the guitar quite well too.' }
+  ],
+  probes: [
+    { id: 'p:advltc:muymucho', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Es mucho interesante.', 'Es muy interesante.', 'Es muy mucho interesante.'], answer: 1 },
+    { id: 'p:advltc:lugar', kind: 'mcq', q: 'Tu amigo está a tu lado. Señalas su silla y dices:',
+      options: ['Siéntate aquí.', 'Siéntate ahí.', 'Siéntate allí.'], answer: 1 },
+    { id: 'p:advltc:cloze', kind: 'cloze', text: 'Duermo ___. (poco/mucho — "very little")', accept: ['muy poco'] },
+    { id: 'p:advltc:recall', kind: 'recall', front: 'muy vs mucho — which modifies an adjective/adverb, which a verb/noun?', back: 'muy → adjective/adverb; mucho → verb/noun' }
+  ]
+},
+
+{
+  id: 'gr-presente-indicativo-valores-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:322', 'gramatica:A1:326', 'gramatica:A1:327', 'gramatica:A1:328', 'gramatica:A1:329', 'gramatica:A1:330'],
+  title: 'El presente: de qué habla realmente',
+  summary: 'The Spanish present does two jobs English splits into two tenses: it reports what is true right now (estamos en clase) and what is generally true (vivo en Madrid) — with no "-ing" form to separate them, so context alone tells you which.',
+  sections: [
+    { h: 'Regular forms, three conjugations', html: 'The three patterns come from the infinitive ending: <i>-ar</i> (<i>trabajo, trabajas, trabaja...</i>), <i>-er</i> (<i>como, comes, come...</i>), <i>-ir</i> (<i>vivo, vives, vive...</i>). Vocabulary and full paradigms are drilled elsewhere; this lesson is about what the tense MEANS.' },
+    { h: 'Present actual: happening right now', html: '<i>Estamos en clase de español</i> — true at this exact moment. Spanish uses the plain present for this, where English would say "we are (in class)".' },
+    { h: 'Present durative: generally true', html: '<i>Vivo en Madrid</i> — true in general, not just at this instant; it does not mean "I am living in Madrid right now as we speak" specifically, but as an ongoing fact about your life. The same form covers habits (<i>trabajo los lunes</i>) and standing facts alike.' }
+  ],
+  contrasts: [
+    { es: 'Estudio español.', en: 'I study Spanish. / I am studying Spanish.', note: 'one Spanish form covers both English present tenses' },
+    { es: 'Vivo en Madrid.', en: 'I live in Madrid.', note: 'durative — a standing fact, not this instant' },
+    { es: 'Estamos en clase de español ahora mismo.', en: 'We are in Spanish class right now.', note: 'present actual — true at the moment of speaking' }
+  ],
+  pitfalls: [
+    'Do not look for a separate "-ing" form: Spanish has no grammatical requirement to mark ongoing action differently from habitual fact — <i>estudio</i> covers "I study" and "I am studying" alike.',
+    'The present tense reaching into the future ("I\'m starting tomorrow" = <i>empiezo mañana</i>) is a separate, later topic — do not assume the present always means "now".'
+  ],
+  examples: [
+    { es: 'Trabajo en un hospital.', en: 'I work in a hospital.' },
+    { es: '¿Qué haces ahora mismo?', en: 'What are you doing right now?' },
+    { es: 'Mis padres viven en Sevilla desde hace veinte años.', en: 'My parents have been living in Seville for twenty years.' }
+  ],
+  probes: [
+    { id: 'p:presval:actual', kind: 'mcq', q: '"We are in class right now" — el valor del presente aquí es:',
+      options: ['durativo (hecho general)', 'actual (ahora mismo)', 'ninguno de los dos'], answer: 1 },
+    { id: 'p:presval:durativo', kind: 'mcq', q: '"Vivo en Madrid" — el valor es:',
+      options: ['actual, solo en este momento', 'durativo, un hecho general', 'futuro'], answer: 1 },
+    { id: 'p:presval:cloze', kind: 'cloze', text: '¿Qué ___ ahora mismo? (haces — presente)', accept: ['haces'] },
+    { id: 'p:presval:recall', kind: 'recall', front: 'Does Spanish have a separate form for "I am studying" vs "I study"?', back: 'no — the same present tense form covers both' }
+  ]
+},
+
+{
+  id: 'gr-infinitivo-usos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:374', 'gramatica:A1:375', 'gramatica:A1:376', 'gramatica:A1:377', 'gramatica:A1:378', 'gramatica:A1:379'],
+  title: 'El infinitivo: cuándo se usa solo',
+  summary: 'The infinitive is Spanish\'s "verb as a noun": it can answer a question on its own, be the subject of a sentence, or be the direct object of another verb — jobs English usually hands to the -ing form (studying is fun), not the bare infinitive.',
+  sections: [
+    { h: 'Form', html: 'Every Spanish verb has one of three infinitive endings: <i>-ar</i> (<i>estudiar</i>), <i>-er</i> (<i>comer</i>), <i>-ir</i> (<i>vivir</i>). This is the citation form — the one you look up in a dictionary.' },
+    { h: 'Standing alone as an answer', html: 'A bare infinitive can answer a question with no preposition needed: <i>—¿Qué haces? —Estudiar.</i> ("Studying." / "I\'m studying.")' },
+    { h: 'As subject or direct object', html: 'The infinitive acts like a noun: as subject, <i>Estudiar español es divertido</i> ("Studying Spanish is fun" — English needs -ing here, Spanish just uses the infinitive); as direct object after another verb, <i>Me gusta estudiar español</i>, <i>Quiero ir a España</i>.' }
+  ],
+  contrasts: [
+    { es: 'Estudiar español es divertido.', en: 'Studying Spanish is fun.', note: 'infinitive as subject — English needs -ing, Spanish does not' },
+    { es: 'Me gusta estudiar español.', en: 'I like studying Spanish.', note: 'infinitive as direct object of gustar' },
+    { es: '—¿Qué haces los domingos? —Leer.', en: '"What do you do on Sundays?" "Read."', note: 'bare infinitive as a standalone answer' }
+  ],
+  pitfalls: [
+    'Do not translate English "-ing" with a Spanish gerund when it is acting as a noun (subject or object) — Spanish uses the infinitive there: <i>Estudiar es importante</i>, not <i>*Estudiando es importante</i>.',
+    'The infinitive after another verb (<i>quiero ir, me gusta estudiar</i>) never conjugates — only the first verb agrees with the subject.'
+  ],
+  examples: [
+    { es: 'Aprender un idioma nuevo requiere tiempo.', en: 'Learning a new language takes time.' },
+    { es: 'Quiero viajar a Argentina el año que viene.', en: 'I want to travel to Argentina next year.' },
+    { es: '—¿Qué prefieres, quedarte o salir? —Salir.', en: '"What do you prefer, staying in or going out?" "Going out."' }
+  ],
+  probes: [
+    { id: 'p:infusos:sujeto', kind: 'mcq', q: '"Reading is fun" — ¿cuál es correcto?',
+      options: ['Leyendo es divertido.', 'Leer es divertido.', 'Lee es divertido.'], answer: 1 },
+    { id: 'p:infusos:objeto', kind: 'mcq', q: '"I like traveling" — ¿cuál es correcto?',
+      options: ['Me gusta viajando.', 'Me gusta viajar.', 'Me gusta viajo.'], answer: 1 },
+    { id: 'p:infusos:cloze', kind: 'cloze', text: '—¿Qué haces? —___. (Studying — respuesta corta)', accept: ['Estudiar', 'estudiar'] },
+    { id: 'p:infusos:recall', kind: 'recall', front: 'How does Spanish express "Studying is fun" — gerund or infinitive?', back: 'infinitive: Estudiar es divertido' }
+  ]
+},
+
+{
+  id: 'gr-participio-adjetival-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:380', 'gramatica:A1:381', 'gramatica:A1:382', 'gramatica:A1:383'],
+  title: 'El participio como adjetivo',
+  summary: 'Estoy cansado looks like a fixed phrase until you meet a woman who says estoy cansada — the participle here is not glued to the verb, it is an adjective agreeing with whoever is speaking, exactly like any other -o/-a adjective.',
+  sections: [
+    { h: 'Regular forms', html: 'Add <i>-ado</i> to <i>-ar</i> verbs and <i>-ido</i> to <i>-er/-ir</i> verbs: <i>cansar → cansado</i>, <i>aburrir → aburrido</i>, <i>comer → comido</i>.' },
+    { h: 'Agreement when used as an adjective', html: 'Used with <i>estar</i> to describe a state, the participle agrees in gender and number with the subject just like any adjective: <i>Estoy cansado</i> (a man) / <i>Estoy cansada</i> (a woman) / <i>Estamos cansados</i>.' },
+    { h: 'Adjectival value', html: 'In this use the participle describes a resulting STATE, not an action in progress — <i>la puerta está cerrada</i> describes how the door currently is, not someone closing it.' }
+  ],
+  contrasts: [
+    { es: 'Estoy cansado.', en: "I'm tired.", note: 'speaker is male — participle agrees like an adjective' },
+    { es: 'Estoy cansada.', en: "I'm tired.", note: 'speaker is female — same participle, feminine ending' },
+    { es: 'Estamos aburridos.', en: "We're bored.", note: 'plural agreement, same pattern' }
+  ],
+  pitfalls: [
+    'A participle used with <i>estar</i> is not frozen in the masculine singular — it agrees exactly like an adjective: <i>cansado/cansada/cansados/cansadas</i>.',
+    'This adjectival participle describes a resulting state (<i>la ventana está abierta</i> — it currently is open), not the action of opening it.'
+  ],
+  examples: [
+    { es: 'Mi hermana está muy cansada hoy.', en: 'My sister is very tired today.' },
+    { es: 'Los niños están aburridos.', en: 'The children are bored.' },
+    { es: 'La tienda está cerrada los domingos.', en: 'The shop is closed on Sundays.' }
+  ],
+  probes: [
+    { id: 'p:partadj:agree', kind: 'mcq', q: 'María dice: "Estoy muy ___." (tired)',
+      options: ['cansado', 'cansada', 'cansando'], answer: 1 },
+    { id: 'p:partadj:plural', kind: 'mcq', q: '"We are bored" (grupo mixto) —',
+      options: ['Estamos aburrido.', 'Estamos aburridos.', 'Estamos aburriendo.'], answer: 1 },
+    { id: 'p:partadj:cloze', kind: 'cloze', text: 'La puerta está ___. (cerrar — participio, femenino)', accept: ['cerrada'] },
+    { id: 'p:partadj:recall', kind: 'recall', front: 'When a participle follows estar to describe a state, does it agree with the subject?', back: 'yes — in gender and number, like any adjective' }
+  ]
+},
+
+{
+  id: 'gr-atributo-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:458', 'gramatica:A1:459', 'gramatica:A1:460'],
+  title: 'El atributo con ser',
+  summary: 'After ser, whatever comes next — a noun or an adjective — must agree with the subject, the same rule wearing two different masks depending on whether you are naming a category (Mario es cocinero) or describing a quality (el hijo es rubio).',
+  sections: [
+    { h: 'The attribute agrees with the subject', html: 'Whatever follows <i>ser</i> to characterize the subject — its <b>atributo</b> — agrees with it in gender and number: <i>Mis compañeras son alemanas</i> (feminine plural subject, feminine plural attribute).' },
+    { h: 'A noun as attribute', html: 'The attribute can be a profession, nationality or category noun: <i>Mario es cocinero</i>. No article is needed with an unmodified profession or nationality noun after <i>ser</i>.' },
+    { h: 'An adjective as attribute', html: 'Or it can be a describing adjective: <i>El hijo de Marta es rubio</i>. Same agreement rule either way — noun or adjective, it tracks the subject.' }
+  ],
+  contrasts: [
+    { es: 'Mario es cocinero.', en: 'Mario is a cook.', note: 'attribute is a profession noun, no article' },
+    { es: 'Mis compañeras son alemanas.', en: 'My colleagues are German.', note: 'feminine plural noun subject, feminine plural attribute' },
+    { es: 'El hijo de Marta es rubio.', en: "Marta's son is blond.", note: 'attribute is an adjective, agrees with the subject' }
+  ],
+  pitfalls: [
+    'Do not add an article before an unmodified profession or nationality noun after <i>ser</i>: <i>Mario es cocinero</i>, not <i>*Mario es un cocinero</i> (the article appears only when the noun is modified: <i>Mario es un cocinero excelente</i>).',
+    'The attribute must agree with the SUBJECT, not with the nearest noun — in <i>El hijo de Marta es rubio</i>, <i>rubio</i> agrees with <i>el hijo</i> (masculine), not with <i>Marta</i> (feminine).'
+  ],
+  examples: [
+    { es: 'Somos profesores de español.', en: 'We are Spanish teachers.' },
+    { es: 'Esta película es aburrida.', en: 'This film is boring.' },
+    { es: 'Sus padres son muy simpáticos.', en: 'Her parents are very nice.' }
+  ],
+  probes: [
+    { id: 'p:atributo:agree', kind: 'mcq', q: '"Mis hermanas son ___." (German)',
+      options: ['alemán', 'alemanas', 'alemanes'], answer: 1 },
+    { id: 'p:atributo:articulo', kind: 'mcq', q: '"Mario is a cook" (sin adjetivo) —',
+      options: ['Mario es un cocinero.', 'Mario es cocinero.', 'Mario es el cocinero.'], answer: 1 },
+    { id: 'p:atributo:cloze', kind: 'cloze', text: 'El hijo de Marta es ___. (rubio — concuerda con "el hijo")', accept: ['rubio'] },
+    { id: 'p:atributo:recall', kind: 'recall', front: 'The atributo after ser agrees with what?', back: 'the subject — in gender and number' }
+  ]
+},
+
+{
+  id: 'gr-objeto-directo-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:461', 'gramatica:A1:462', 'gramatica:A1:463'],
+  title: 'El objeto directo',
+  summary: 'Tengo dos hermanos has no preposition before "dos hermanos" even though it names people — the personal a that marks a specific person as direct object does not appear with tener and an indefinite quantity, one of the first exceptions learners meet.',
+  sections: [
+    { h: 'Direct object of a person', html: 'A specific, individual person as direct object normally takes the personal <i>a</i> (<i>Veo a María</i>) — but with <i>tener</i> plus an INDEFINITE number of people, no <i>a</i> appears: <i>Tengo dos hermanos</i>, not <i>*Tengo a dos hermanos</i>.' },
+    { h: 'Direct object of a thing', html: 'A thing as direct object never takes <i>a</i>: <i>No tengo teléfono</i>.' },
+    { h: 'A whole clause as direct object', html: 'The direct object can be an entire subordinate clause introduced by <i>que</i>: <i>Creo que Barcelona es una ciudad muy bonita</i> — everything after <i>creo</i> is what you believe, functioning as one big direct object.' }
+  ],
+  contrasts: [
+    { es: 'Tengo dos hermanos.', en: 'I have two brothers.', note: 'tener + indefinite person: no personal a' },
+    { es: 'No tengo teléfono.', en: "I don't have a phone.", note: 'direct object is a thing: never takes a' },
+    { es: 'Creo que Barcelona es una ciudad muy bonita.', en: 'I think (that) Barcelona is a very pretty city.', note: 'a whole que-clause as direct object' }
+  ],
+  pitfalls: [
+    'Do not add personal <i>a</i> after <i>tener</i> with an indefinite quantity of people: <i>tengo dos hermanos</i>, not <i>*tengo a dos hermanos</i> (the a returns once the person is specific: <i>conozco a tu hermano</i>).',
+    'English can drop "that" before a reported clause ("I think Barcelona is pretty"); Spanish cannot drop <i>que</i> — <i>creo que...</i> always needs it.'
+  ],
+  examples: [
+    { es: 'Tengo tres primos en Chile.', en: 'I have three cousins in Chile.' },
+    { es: '¿Tienes coche?', en: 'Do you have a car?' },
+    { es: 'Creo que es una buena idea.', en: 'I think it\'s a good idea.' }
+  ],
+  probes: [
+    { id: 'p:objdir:tener', kind: 'mcq', q: '"I have two sisters" —',
+      options: ['Tengo a dos hermanas.', 'Tengo dos hermanas.', 'Tengo las dos hermanas.'], answer: 1 },
+    { id: 'p:objdir:cosa', kind: 'mcq', q: '"I don\'t have a car" —',
+      options: ['No tengo a coche.', 'No tengo coche.', 'No tengo el coche.'], answer: 1 },
+    { id: 'p:objdir:cloze', kind: 'cloze', text: 'Creo ___ es una ciudad bonita.', accept: ['que'] },
+    { id: 'p:objdir:recall', kind: 'recall', front: 'Does "tengo dos hermanos" take personal a?', back: 'no — tener + indefinite number of people never takes a' }
+  ]
+},
+
+{
+  id: 'gr-oraciones-actitud-hablante-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:484', 'gramatica:A1:485', 'gramatica:A1:486', 'gramatica:A1:487'],
+  title: 'Tipos de oración según la actitud del hablante',
+  summary: 'The same fact — Ana llama por teléfono — can be stated, denied or questioned, and Spanish marks the difference almost entirely with punctuation and word order rather than a different verb form, which is why the question marks at both ends of a Spanish question are not decorative.',
+  sections: [
+    { h: 'Enunciativas: stating a fact', html: 'Declarative sentences state something as true (affirmative) or false (negative): <i>Soy español</i> / <i>No soy español</i>. <i>No</i> goes directly before the verb.' },
+    { h: 'Interrogativas totales: yes/no questions', html: 'A "total" question asks for a yes/no answer and often just adds intonation and question marks to a statement\'s word order: <i>¿Te llamas Ana?</i> — literally the same words as a statement, marked as a question.' },
+    { h: 'Interrogativas parciales: wh-questions', html: 'A "partial" question asks about ONE piece of information using a question word (<i>qué, cuándo, dónde, quién...</i>), which moves to the front: <i>¿Cuándo vienes?</i>' }
+  ],
+  contrasts: [
+    { es: 'Soy español. / No soy español.', en: "I'm Spanish. / I'm not Spanish.", note: 'enunciativa afirmativa / negativa' },
+    { es: '¿Te llamas Ana?', en: 'Is your name Ana?', note: 'interrogativa total — yes/no answer' },
+    { es: '¿Cuándo vienes?', en: 'When are you coming?', note: 'interrogativa parcial — asks for one specific piece of information' }
+  ],
+  pitfalls: [
+    'Spanish questions need the opening ¿ as well as the closing ? — omitting it is a spelling error, not a stylistic choice.',
+    'A "total" question (yes/no) does not need a question word; a "partial" question always has one, and that word moves to the very front of the sentence.'
+  ],
+  examples: [
+    { es: '¿Hablas inglés?', en: 'Do you speak English?' },
+    { es: '¿Dónde vives?', en: 'Where do you live?' },
+    { es: 'No trabajo los sábados.', en: "I don't work on Saturdays." }
+  ],
+  probes: [
+    { id: 'p:oratipo:total', kind: 'mcq', q: '"¿Vives en Madrid?" es una interrogativa...',
+      options: ['parcial', 'total', 'enunciativa'], answer: 1 },
+    { id: 'p:oratipo:parcial', kind: 'mcq', q: '"¿Dónde vives?" es una interrogativa...',
+      options: ['total', 'parcial', 'enunciativa'], answer: 1 },
+    { id: 'p:oratipo:cloze', kind: 'cloze', text: '___ te llamas? (¿Cómo)', accept: ['¿Cómo', 'Cómo'] },
+    { id: 'p:oratipo:recall', kind: 'recall', front: 'What distinguishes a "total" question from a "partial" one?', back: 'total asks yes/no with no question word; partial asks for one specific piece of information with a question word' }
+  ]
+},
+
+{
+  id: 'gr-oraciones-finales-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:531', 'gramatica:A1:532', 'gramatica:A1:533', 'gramatica:A1:534', 'gramatica:A1:535', 'gramatica:A1:536', 'gramatica:A1:537', 'gramatica:A1:538'],
+  title: 'Oraciones finales: para + infinitivo',
+  summary: 'Para + infinitive states a purpose, and the one thing to track is WHO performs the infinitive\'s action: when it is the same person as the main subject, the infinitive alone is correct — no separate clause needed, unlike English "so that" constructions.',
+  sections: [
+    { h: 'Purpose: utility', html: '<i>Para + infinitivo</i> answers "what for?": <i>El boli es para escribir</i> — an object\'s purpose or utility.' },
+    { h: 'Same-subject purpose: agentive', html: 'When the person doing the main action is also the one who will do the purpose-action, use <i>para + infinitivo</i> directly, no separate subject needed: <i>Estudio español para trabajar en México</i> — I study, and I will work; same "I".' },
+    { h: 'Non-agentive purpose', html: '<i>Para + infinitivo</i> also covers a thing\'s function without any agent doing the second action, purely descriptive: <i>El boli es para escribir</i> — the pen doesn\'t "do" the writing itself, but its purpose is defined this way.' }
+  ],
+  contrasts: [
+    { es: 'Estudio español para trabajar en México.', en: 'I study Spanish (in order) to work in Mexico.', note: 'same subject for both verbs — para + infinitivo' },
+    { es: 'Tengo un libro para aprender español.', en: 'I have a book to learn Spanish with.', note: 'purpose of an object' },
+    { es: 'El boli es para escribir.', en: 'The pen is for writing.', note: 'function/utility, no specific agent' }
+  ],
+  pitfalls: [
+    'When the subject of both actions is the same person, Spanish uses <i>para + infinitivo</i>, never a conjugated clause: <i>para trabajar</i>, not <i>*para que trabajo</i> (that pattern, with a different subject and the subjunctive, is a later, more advanced structure).',
+    'Do not confuse purpose <i>para</i> ("in order to") with the destination/deadline uses of <i>para</i> learned separately (<i>para Madrid, para el lunes</i>) — this lesson is specifically about the "in order to" sense before an infinitive.'
+  ],
+  examples: [
+    { es: 'Trabajo los fines de semana para ganar dinero extra.', en: 'I work weekends to earn extra money.' },
+    { es: 'Necesito gafas para leer.', en: 'I need glasses to read.' },
+    { es: 'Vengo a España para aprender español.', en: 'I\'m coming to Spain to learn Spanish.' }
+  ],
+  probes: [
+    { id: 'p:orafin:mismosujeto', kind: 'mcq', q: '"I study to work in Mexico" (mismo sujeto) —',
+      options: ['Estudio para que trabajo en México.', 'Estudio para trabajar en México.', 'Estudio para trabaja en México.'], answer: 1 },
+    { id: 'p:orafin:utilidad', kind: 'mcq', q: '"The pen is for writing" —',
+      options: ['El boli es para escribe.', 'El boli es para escribir.', 'El boli es para escribiendo.'], answer: 1 },
+    { id: 'p:orafin:cloze', kind: 'cloze', text: 'Necesito gafas ___ leer.', accept: ['para'] },
+    { id: 'p:orafin:recall', kind: 'recall', front: 'When the subject of the purpose-action is the same as the main subject, what follows para?', back: 'the bare infinitive — para + infinitivo' }
+  ]
 }
 
 ];
