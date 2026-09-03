@@ -502,6 +502,53 @@ window.APPLY_ITEMS = [
   { type: 'transform', level: 4, instruction: 'Rewrite as a vosotros command:', from: 'Vosotros leéis las instrucciones.', to: 'Leed las instrucciones.', en: 'Read the instructions.' },
   { type: 'transform', level: 5, instruction: 'Rewrite in the futuro perfecto (will have done by then):', from: 'Ellos terminan el proyecto.', to: 'Ellos habrán terminado el proyecto.', en: 'They will have finished the project.' },
   { type: 'transform', level: 5, instruction: 'Rewrite in the condicional perfecto (would have done):', from: 'Yo acepto la oferta.', to: 'Yo habría aceptado la oferta.', en: 'I would have accepted the offer.' },
-  { type: 'transform', level: 5, instruction: 'Rewrite as a hope using "Ojalá que…" + pretérito perfecto de subjuntivo:', from: 'Ella llega a tiempo.', to: 'Ojalá que ella haya llegado a tiempo.', en: 'I hope she has arrived on time.' }
+  { type: 'transform', level: 5, instruction: 'Rewrite as a hope using "Ojalá que…" + pretérito perfecto de subjuntivo:', from: 'Ella llega a tiempo.', to: 'Ojalá que ella haya llegado a tiempo.', en: 'I hope she has arrived on time.' },
+
+  // ==== batch: B1 (levels 4-5), wave 2 — more verbs, more variety ====
+
+  // ---- level 4: presente de subjuntivo ----
+  { type: 'cloze', level: 4, text: 'Es necesario que yo ___ (entregar) la solicitud antes del lunes.', inf: 'entregar', tense: 'presubj', person: 'yo', en: "It's necessary that I hand in the application before Monday." },
+  { type: 'cloze', level: 4, text: 'Mis amigos esperan que tú ___ (venir) a la boda.', inf: 'venir', tense: 'presubj', person: 'tú', en: 'My friends hope you come to the wedding.' },
+  { type: 'cloze', level: 4, text: 'Dudo que él ___ (decir) toda la verdad.', inf: 'decir', tense: 'presubj', person: 'él/ella', en: "I doubt he's telling the whole truth." },
+  { type: 'cloze', level: 4, text: 'Es posible que nosotros ___ (cambiar) de casa este año.', inf: 'cambiar', tense: 'presubj', person: 'nosotros', en: "It's possible we'll move house this year." },
+  { type: 'cloze', level: 4, text: 'No es seguro que ellos ___ (aceptar) la oferta.', inf: 'aceptar', tense: 'presubj', person: 'ellos', en: "It's not certain they will accept the offer." },
+
+  // ---- level 4: imperfecto de subjuntivo ----
+  { type: 'cloze', level: 4, text: 'Si yo ___ (poder) elegir, viviría en la costa.', inf: 'poder', tense: 'impsubj', person: 'yo', en: 'If I could choose, I would live on the coast.' },
+  { type: 'cloze', level: 4, text: 'Mi jefe esperaba que tú ___ (resolver) el problema rápido.', inf: 'resolver', tense: 'impsubj', person: 'tú', en: 'My boss hoped you would solve the problem quickly.' },
+  { type: 'cloze', level: 4, text: 'Si ella ___ (construir) su propia casa, sería más grande.', inf: 'construir', tense: 'impsubj', person: 'él/ella', en: 'If she built her own house, it would be bigger.' },
+  { type: 'cloze', level: 4, text: 'Si nosotros ___ (reducir) los gastos, ahorraríamos más.', inf: 'reducir', tense: 'impsubj', person: 'nosotros', en: 'If we reduced expenses, we would save more.' },
+  { type: 'cloze', level: 4, text: 'El profesor pidió que ellos ___ (corregir) sus propios errores.', inf: 'corregir', tense: 'impsubj', person: 'ellos', en: 'The teacher asked them to correct their own mistakes.' },
+
+  // ---- level 4: imperativo ----
+  { type: 'cloze', level: 4, text: '___ (comprar) el pan de camino a casa.', inf: 'comprar', tense: 'imperativo', person: 'tú', en: 'Buy the bread on your way home.' },
+  { type: 'cloze', level: 4, text: '___ (escribir) su nombre completo aquí.', inf: 'escribir', tense: 'imperativo', person: 'usted', en: 'Write your full name here.' },
+  { type: 'cloze', level: 4, text: '___ (limpiar) vuestra habitación antes de salir.', inf: 'limpiar', tense: 'imperativo', person: 'vosotros', en: 'Clean your room before you go out.' },
+  { type: 'cloze', level: 4, text: '___ (elegir) la opción que prefieran.', inf: 'elegir', tense: 'imperativo', person: 'ustedes', en: 'Choose the option you prefer.' },
+
+  // ---- level 4: pluscuamperfecto ----
+  { type: 'cloze', level: 4, text: 'Antes de aquel año, yo nunca ___ (comprar) un coche.', inf: 'comprar', tense: 'plusc', person: 'yo', en: 'Before that year, I had never bought a car.' },
+  { type: 'cloze', level: 4, text: 'Cuando la conocí, ella ya ___ (publicar) su primer libro.', inf: 'publicar', tense: 'plusc', person: 'él/ella', en: 'When I met her, she had already published her first book.' },
+  { type: 'cloze', level: 4, text: 'Antes de mudarnos, nosotros nunca ___ (vivir) en una ciudad grande.', inf: 'vivir', tense: 'plusc', person: 'nosotros', en: 'Before moving, we had never lived in a big city.' },
+  { type: 'cloze', level: 4, text: 'Cuando llegamos, ellos ya ___ (limpiar) toda la casa.', inf: 'limpiar', tense: 'plusc', person: 'ellos', en: 'When we arrived, they had already cleaned the whole house.' },
+
+  // ---- level 5: futuro perfecto ----
+  { type: 'cloze', level: 5, text: 'Para junio, yo ya ___ (aprender) a conducir.', inf: 'aprender', tense: 'futperf', person: 'yo', en: 'By June, I will have learned to drive.' },
+  { type: 'cloze', level: 5, text: 'Para entonces, ella ya ___ (construir) la casa.', inf: 'construir', tense: 'futperf', person: 'él/ella', en: 'By then, she will have built the house.' },
+  { type: 'cloze', level: 5, text: 'Para el próximo año, nosotros ya ___ (invertir) en el negocio.', inf: 'invertir', tense: 'futperf', person: 'nosotros', en: 'By next year, we will have invested in the business.' },
+  { type: 'cloze', level: 5, text: 'Para el lunes, ellos ya ___ (elegir) al nuevo director.', inf: 'elegir', tense: 'futperf', person: 'ellos', en: 'By Monday, they will have chosen the new director.' },
+
+  // ---- level 5: condicional perfecto ----
+  { type: 'cloze', level: 5, text: 'Sin el consejo de mi hermano, yo no ___ (elegir) esta carrera.', inf: 'elegir', tense: 'condperf', person: 'yo', en: "Without my brother's advice, I wouldn't have chosen this degree." },
+  { type: 'cloze', level: 5, text: 'Con más cuidado, tú no ___ (romper) el jarrón.', inf: 'romper', tense: 'condperf', person: 'tú', en: "With more care, you wouldn't have broken the vase." },
+  { type: 'cloze', level: 5, text: 'Con más presupuesto, nosotros ___ (construir) un edificio más grande.', inf: 'construir', tense: 'condperf', person: 'nosotros', en: 'With more budget, we would have built a bigger building.' },
+  { type: 'cloze', level: 5, text: 'Sin ese apoyo, ellos no ___ (lograr) el objetivo.', inf: 'lograr', tense: 'condperf', person: 'ellos', en: "Without that support, they wouldn't have achieved the goal." },
+
+  // ---- level 5: pretérito perfecto de subjuntivo ----
+  { type: 'cloze', level: 5, text: 'Ojalá que yo ___ (elegir) bien esta vez.', inf: 'elegir', tense: 'perfsubj', person: 'yo', en: 'I hope I have chosen well this time.' },
+  { type: 'cloze', level: 5, text: 'Espero que tú ___ (escribir) la carta ya.', inf: 'escribir', tense: 'perfsubj', person: 'tú', en: 'I hope you have already written the letter.' },
+  { type: 'cloze', level: 5, text: 'No creo que él ___ (decir) la verdad.', inf: 'decir', tense: 'perfsubj', person: 'él/ella', en: "I don't think he has told the truth." },
+  { type: 'cloze', level: 5, text: 'Me alegro de que vosotros ___ (aprender) tanto este curso.', inf: 'aprender', tense: 'perfsubj', person: 'vosotros', en: "I'm glad you all have learned so much this course." },
+  { type: 'cloze', level: 5, text: 'Dudo que ellos ___ (construir) el puente a tiempo.', inf: 'construir', tense: 'perfsubj', person: 'ellos', en: "I doubt they have built the bridge on time." }
 
 ];
