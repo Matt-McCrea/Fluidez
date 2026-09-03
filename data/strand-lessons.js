@@ -1566,7 +1566,9 @@ window.STRAND_LESSONS = [
   title: 'Preguntar por deseos',
   summary: 'Two ways to ask what someone wants sit at different levels of directness: "¿quieres...?" asks plainly, while "¿te gustaría...?" wraps the same question in the conditional, which softens it into more of an invitation.',
   sections: [
-    { h: 'Plain vs softened', html: '<i>¿Quieres...?</i> asks plainly. <i>¿Te gustaría...?</i>, built on the conditional, reads as more of an invitation than a demand for an answer right now.' }
+    { h: 'Plain vs softened', html: '<i>¿Quieres...?</i> asks plainly. <i>¿Te gustaría...?</i>, built on the conditional, reads as more of an invitation than a demand for an answer right now.' },
+    { h: 'gustaría agrees with the THING, not the person', html: '<i>Gustar</i> keeps its backwards grammar in the conditional: <i>¿Te gustaría un café?</i> but <i>¿Te gustarían unas vacaciones?</i> — the verb follows what is wanted, while <i>te</i> never changes.' },
+    { h: 'Answering', html: 'A bare <i>sí</i> can sound curt. <i>Sí, me encantaría</i> accepts warmly; <i>La verdad es que no me apetece mucho</i> declines without a flat no.' }
   ],
   exponents: [
     { es: '¿Quieres ir a París?', en: 'Do you want to go to Paris?', register: 'coloquial', note: 'direct, plain question' },
@@ -1637,7 +1639,9 @@ window.STRAND_LESSONS = [
   title: 'Expresar alegría y satisfacción',
   summary: 'A short exclamation reacts to news in the moment; "estoy contento" states your ongoing state — the choice is about whether you are reacting to something just said or describing how you generally feel.',
   sections: [
-    { h: 'Reaction vs state', html: '<i>¡Muy bien!</i> and <i>¡Qué bien!</i> react to something just said; <i>Estoy contento</i> describes how you generally feel right now, independent of any specific news.' }
+    { h: 'Reaction vs state', html: '<i>¡Muy bien!</i> and <i>¡Qué bien!</i> react to something just said; <i>Estoy contento</i> describes how you generally feel right now, independent of any specific news.' },
+    { h: 'The ¡Qué…! pattern', html: 'One frame covers most reactions: <b>¡Qué + noun or adjective!</b> — <i>¡Qué bien!</i>, <i>¡Qué alegría!</i>, <i>¡Qué suerte!</i>. No verb is needed, and no article before the noun: <i>*¡Qué una suerte!</i> is wrong.' },
+    { h: 'Saying what you are pleased about', html: 'Add <b>con</b> for a thing (<i>Estoy contento con el resultado</i>) or <b>de que</b> + subjunctive for an event (<i>Me alegro de que hayas venido</i>).' }
   ],
   exponents: [
     { es: '¡Muy bien!', en: 'Great!', register: 'coloquial', note: 'reacting to news just heard' },
@@ -2132,7 +2136,9 @@ window.STRAND_LESSONS = [
   title: 'Felicitar',
   summary: 'Felicidades and enhorabuena are not fully interchangeable: felicidades marks a date (a birthday, a holiday), while enhorabuena marks an achievement someone earned.',
   sections: [
-    { h: 'A date vs an achievement', html: '<i>Felicidades</i> marks an occasion on the calendar (a birthday, a holiday); <i>Enhorabuena</i> marks something someone achieved (passing an exam, a promotion, a new baby).' }
+    { h: 'A date vs an achievement', html: '<i>Felicidades</i> marks an occasion on the calendar (a birthday, a holiday); <i>Enhorabuena</i> marks something someone achieved (passing an exam, a promotion, a new baby).' },
+    { h: 'Naming what you are congratulating', html: 'Both take <b>por</b> + the thing: <i>Enhorabuena por el ascenso</i>, <i>Felicidades por tu santo</i>. With a verb it is <i>por</i> + infinitive: <i>Enhorabuena por haber aprobado</i>.' },
+    { h: 'Always plural', html: '<i>Felicidades</i> and <i>felicitaciones</i> exist only in the plural — there is no <i>*felicidad</i> as a greeting, though <i>la felicidad</i> is the ordinary noun for happiness.' }
   ],
   exponents: [
     { es: '¡Feliz cumpleaños!', en: 'Happy birthday!', register: 'coloquial', note: 'felicidades-family — marks a date' },
@@ -2624,7 +2630,9 @@ window.STRAND_LESSONS = [
   title: 'La negación con refuerzo',
   summary: 'Todavía and time expressions like "en toda la semana" only make grammatical sense in a negative sentence — used in an affirmative one, they simply do not work, unlike English "still" or "all week" which are neutral either way.',
   sections: [
-    { h: 'Negative-only expressions', html: '<i>*Juan ha llegado todavía</i> and <i>*Ha venido por aquí en toda la semana</i> are simply ungrammatical — these expressions require a negative verb, unlike English "still" or "all week", which work in either polarity.' }
+    { h: 'Negative-only expressions', html: '<i>*Juan ha llegado todavía</i> and <i>*Ha venido por aquí en toda la semana</i> are simply ungrammatical — these expressions require a negative verb, unlike English "still" or "all week", which work in either polarity.' },
+    { h: 'The same class', html: '<i>nunca</i>, <i>jamás</i>, <i>en mi vida</i>, <i>en absoluto</i> and <i>ni siquiera</i> behave the same way: they reinforce a negative and cannot stand in an affirmative sentence.' },
+    { h: 'Two negatives are required, not forbidden', html: 'When the reinforcing word comes AFTER the verb, Spanish needs <i>no</i> as well: <i>No he visto nunca ese programa</i>. Move it in front and the <i>no</i> disappears: <i>Nunca he visto ese programa</i>. Both are correct; <i>*He visto nunca</i> is not.' }
   ],
   exponents: [
     { es: 'Juan no ha llegado todavía.', en: "Juan hasn't arrived yet.", register: 'neutral', note: 'todavía + negative — the only grammatical order here' },
@@ -2951,6 +2959,3830 @@ window.STRAND_LESSONS = [
       options: ['¿Qué es este?', '¿Qué es esto?', '¿Qué es esta?'], answer: 1 },
     { id: 'p:dem:agree', kind: 'cloze', text: '___ casas de allí son muy antiguas. (lejos de los dos)', accept: ['Aquellas', 'aquellas'] },
     { id: 'p:dem:recall', kind: 'recall', front: 'Which demonstrative marks nearness to the LISTENER?', back: 'ese / esa / esos / esas' }
+  ]
+},
+
+/* ============================================================================
+ * BATCH — A1 grammar, seq 1-15 of spec/syllabus-draft.json (skipped: seq 8-9
+ * los-demostrativos / los-demostrativos-valores-significado, already taught
+ * in full by gr-demostrativos-a2)
+ * ========================================================================== */
+{
+  id: 'gr-nombres-propios-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:1', 'gramatica:A1:2', 'gramatica:A1:4', 'gramatica:A1:5', 'gramatica:A1:9', 'gramatica:A1:10'],
+  title: 'Nombres propios: con o sin artículo',
+  summary: 'First names, surnames and most country names drop the article a common noun would need — but El Salvador always keeps its own, and there is no rule to guess which countries do: you learn them one by one.',
+  sections: [
+    { h: 'The default: no article', html: 'First names and surnames stand alone: <i>María vive en España</i>, never <i>*la María vive en *la España</i>. This is the opposite of French or Italian, where the article often survives with a name.' },
+    { h: 'The exception that never drops it', html: '<b>El Salvador</b> carries its article everywhere, even mid-sentence with a preposition: <i>Vengo de El Salvador</i>, not <i>*Vengo de Salvador</i>. A handful of other countries traditionally take one too (<i>la India</i>, <i>el Perú</i>), though usage is loosening.' },
+    { h: 'Titles bring the article back', html: '<i>Señor/señora</i> + surname takes the article when you talk ABOUT someone in the third person — <i>El señor Fernández no está</i> — but not when you address them directly: <i>Buenos días, señor Fernández.</i>' }
+  ],
+  contrasts: [
+    { es: 'María es profesora.', en: 'María is a teacher.', note: 'no article with a first name' },
+    { es: '*La María es profesora.', en: '(wrong)', note: 'this reading is dialectal/colloquial at best, not the neutral standard' },
+    { es: 'Vengo de El Salvador.', en: 'I come from El Salvador.', note: 'the one country whose article is never optional' },
+    { es: 'El señor Fernández llegó tarde. / Buenos días, señor Fernández.', en: 'Mr Fernández arrived late. / Good morning, Mr Fernández.', note: 'article in third-person reference, none in direct address' }
+  ],
+  pitfalls: [
+    'Never put <i>el/la</i> in front of a bare first name or surname — <i>*la María</i>, <i>*el Fernández</i> are wrong in neutral Spanish.',
+    '<i>El Salvador</i> is a name, not "Salvador with an article stuck on" — drop the article and you have named something else entirely.',
+    'Title + surname takes the article only when talking about the person, never when speaking to them directly.'
+  ],
+  examples: [
+    { es: 'Antonio trabaja con María en Madrid.', en: 'Antonio works with María in Madrid.' },
+    { es: 'Nací en El Salvador y crecí en México.', en: 'I was born in El Salvador and grew up in Mexico.' },
+    { es: 'La señora García todavía no ha llegado.', en: 'Mrs García hasn\'t arrived yet.' }
+  ],
+  probes: [
+    { id: 'p:nprop:salvador', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Vengo de Salvador.', 'Vengo de El Salvador.', 'Vengo del Salvador.'], answer: 1 },
+    { id: 'p:nprop:nombre', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['La María vive aquí.', 'María vive aquí.', 'Una María vive aquí.'], answer: 1 },
+    { id: 'p:nprop:titulo', kind: 'cloze', text: '___ señor Fernández no está en la oficina.', accept: ['El', 'el'] },
+    { id: 'p:nprop:recall', kind: 'recall', front: 'The one country whose article is NEVER dropped', back: 'El Salvador' }
+  ]
+},
+
+{
+  id: 'gr-genero-sustantivos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:19', 'gramatica:A1:21', 'gramatica:A1:22', 'gramatica:A1:24', 'gramatica:A1:25'],
+  title: 'El género de los sustantivos',
+  summary: '-o is masculine and -a is feminine most of the time, but the pattern breaks often enough — la moto, el día, el mapa — that guessing purely by ending will eventually embarrass you.',
+  sections: [
+    { h: 'The default pattern', html: 'Most nouns follow <b>-o → masculine</b>, <b>-a → feminine</b>: <i>el libro</i>, <i>la mesa</i>. Consonant endings give no reliable clue by themselves — <i>el árbol</i>, <i>la catedral</i>, <i>el corazón</i>, <i>la solución</i> — so those are learned with their article, though <i>-ción/-sión/-dad/-tud</i> are reliably feminine.' },
+    { h: 'The famous exceptions', html: '<i>La moto</i>, <i>la foto</i>, <i>la radio</i> LOOK masculine but are feminine — they are shortened forms of longer feminine words (<i>motocicleta</i>, <i>fotografía</i>, <i>radiodifusión</i>) and keep the original gender. <i>El día</i>, <i>el mapa</i>, <i>el planeta</i> go the other way: Greek-origin words in <i>-ma</i> that look feminine but are masculine.' },
+    { h: 'Heteronimia: a completely different word', html: 'Some pairs mark gender with an entirely different word rather than a changed ending: <i>el hombre / la mujer</i>, <i>el padre / la madre</i>, <i>el toro / la vaca</i>.' }
+  ],
+  contrasts: [
+    { es: 'el libro / la mesa', en: 'the book / the table', note: 'the reliable -o/-a default' },
+    { es: 'la moto, la foto, la radio', en: 'the motorbike, the photo, the radio', note: 'look masculine, are feminine — shortened from feminine words' },
+    { es: 'el día, el mapa, el planeta', en: 'the day, the map, the planet', note: 'look feminine, are masculine — Greek -ma origin' },
+    { es: 'el hombre / la mujer', en: 'the man / the woman', note: 'heteronimia: a different word entirely, not a changed ending' }
+  ],
+  pitfalls: [
+    '<i>La moto/foto/radio</i> is one of the first things learners get wrong the OTHER way, saying <i>*el moto</i> — memorize this trio as exceptions.',
+    'Words in <i>-ma</i> of Greek origin (<i>el problema, el tema, el programa, el sistema</i>) are masculine despite ending in -a.',
+    'A consonant ending tells you nothing reliable except for the endings <i>-ción/-sión/-dad/-tud</i>, which are always feminine.'
+  ],
+  examples: [
+    { es: 'Vino en moto y sacó una foto del mapa.', en: 'He came by motorbike and took a photo of the map.' },
+    { es: 'El problema tiene una solución sencilla.', en: 'The problem has a simple solution.' },
+    { es: 'Mi padre y mi madre viven en Sevilla.', en: 'My father and mother live in Seville.' }
+  ],
+  probes: [
+    { id: 'p:gensus:moto', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['el moto', 'la moto', 'los motos'], answer: 1 },
+    { id: 'p:gensus:dia', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['la día', 'el día', 'los día'], answer: 1 },
+    { id: 'p:gensus:cloze', kind: 'cloze', text: 'Tengo un problema con ___ programa.', accept: ['el'] },
+    { id: 'p:gensus:recall', kind: 'recall', front: 'Three feminine nouns that look masculine (end in -o)', back: 'la moto, la foto, la radio' }
+  ]
+},
+
+{
+  id: 'gr-numero-sustantivos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:37', 'gramatica:A1:38', 'gramatica:A1:39', 'gramatica:A1:40', 'gramatica:A1:41'],
+  title: 'El plural de los sustantivos',
+  summary: 'Spanish pluralizes by ending: a vowel just takes -s, a consonant needs the fuller -es, and a word already stressed on its last syllable needs both -es and a spelling adjustment.',
+  sections: [
+    { h: 'Vowel-final: add -s', html: '<i>mesa → mesas</i>, <i>libro → libros</i>, <i>café → cafés</i>. This is the large majority of Spanish nouns.' },
+    { h: 'Consonant-final: add -es', html: '<i>hotel → hoteles</i>, <i>ciudad → ciudades</i>, <i>reloj → relojes</i>. Adding a bare -s here (<i>*hotels</i>) is the single most common plural error at this level.' },
+    { h: 'Stressed on the last syllable: also -es', html: 'A word ending in a stressed vowel + consonant, or a one-syllable word ending in a consonant, still takes <i>-es</i> and drops its written accent because the stress no longer falls on the last syllable: <i>autobús → autobuses</i>, <i>inglés → ingleses</i>, <i>francés → franceses</i>.' }
+  ],
+  contrasts: [
+    { es: 'la mesa / las mesas', en: 'the table(s)', note: 'vowel + s' },
+    { es: 'el hotel / los hoteles', en: 'the hotel(s)', note: 'consonant + es, never bare -s' },
+    { es: 'el autobús / los autobuses', en: 'the bus(es)', note: 'stressed final syllable: +es, accent drops' },
+    { es: 'el inglés / los ingleses', en: 'the English person / people', note: 'same pattern with a nationality' }
+  ],
+  pitfalls: [
+    'A consonant-final noun always takes the full <i>-es</i>, never a bare <i>-s</i>: <i>hoteles</i>, not <i>*hotels</i>.',
+    'Words like <i>autobús</i> and <i>inglés</i> lose their written accent in the plural, because <i>-es</i> adds a syllable and the stress is no longer on the last one.',
+    '<i>Lápiz → lápices</i>: a final <i>-z</i> becomes <i>-c</i> before adding <i>-es</i>, a spelling rule, not an exception to the pattern.'
+  ],
+  examples: [
+    { es: 'Compré dos billetes de autobús para los ingleses.', en: 'I bought two bus tickets for the English people.' },
+    { es: 'Hay tres hoteles cerca de la estación.', en: 'There are three hotels near the station.' },
+    { es: 'Necesito dos lápices y una goma.', en: 'I need two pencils and an eraser.' }
+  ],
+  probes: [
+    { id: 'p:numsus:hotel', kind: 'mcq', q: 'Plural de "hotel":',
+      options: ['hotels', 'hoteles', 'hotele'], answer: 1 },
+    { id: 'p:numsus:autobus', kind: 'mcq', q: 'Plural de "autobús":',
+      options: ['autobuses', 'autobúses', 'autobuss'], answer: 0 },
+    { id: 'p:numsus:cloze', kind: 'cloze', text: 'Plural de "lápiz": lápi___', accept: ['ces'] },
+    { id: 'p:numsus:recall', kind: 'recall', front: 'A word ending in a consonant takes which plural ending?', back: '-es (never bare -s)' }
+  ]
+},
+
+{
+  id: 'gr-adjetivos-calificativos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:45', 'gramatica:A1:46', 'gramatica:A1:47'],
+  title: 'Adjetivos calificativos',
+  summary: 'A descriptive adjective can sit right after its noun or, with ser, stand on its own as the predicate — and unlike a possessive, the article lets it stand completely alone, meaning "the [adjective] one."',
+  sections: [
+    { h: 'Two positions, one meaning', html: 'As a complement it follows the noun directly: <i>el chico guapo</i>. As the attribute of <i>ser</i>, it stands after the verb: <i>El chico es guapo</i>. Both describe the same quality.' },
+    { h: 'The article can carry it alone', html: 'Because <i>el/la</i> already marks gender and number, you can drop the noun and keep just the adjective: <i>el guapo</i> means "the handsome one." A possessive cannot do this — <i>*mi guapo</i> is not a way to say "my handsome one"; you must keep the noun: <i>mi hijo guapo</i>.' },
+    { h: 'Superlatives', html: 'The absolute superlative adds <i>-ísimo/-ísima</i>: <i>guapo → guapísimo</i>. <i>Muy</i> + adjective does the same job less formally: <i>muy guapo</i>.' }
+  ],
+  contrasts: [
+    { es: 'el chico guapo', en: 'the handsome boy', note: 'adjective as noun complement' },
+    { es: 'El chico es guapo.', en: 'The boy is handsome.', note: 'adjective as the attribute of ser' },
+    { es: 'el guapo', en: 'the handsome one', note: 'article alone can carry the adjective — the noun is understood' },
+    { es: '*mi guapo', en: '(impossible for "my handsome one")', note: 'a possessive cannot drop the noun the way an article can' }
+  ],
+  pitfalls: [
+    'An article can stand in for a dropped noun (<i>el guapo</i>); a possessive cannot — keep the noun after a possessive.',
+    '<i>Guapísimo</i> and <i>muy guapo</i> say the same thing at different registers; do not combine them (<i>*muy guapísimo</i>).',
+    'Adjective and noun must agree in gender and number even across the verb <i>ser</i>: <i>La chica es guapa</i>, not <i>*guapo</i>.'
+  ],
+  examples: [
+    { es: 'Mi hermana es muy inteligente.', en: 'My sister is very intelligent.' },
+    { es: 'De los dos jerséis, prefiero el rojo.', en: 'Of the two sweaters, I prefer the red one.' },
+    { es: 'Es un restaurante carísimo.', en: 'It\'s a really expensive restaurant.' }
+  ],
+  probes: [
+    { id: 'p:adjcal:articulo', kind: 'mcq', q: '"De los dos coches, me gusta ___." (el rojo, not mentioning "coche" again)',
+      options: ['mi rojo', 'el rojo', 'un rojo'], answer: 1 },
+    { id: 'p:adjcal:agree', kind: 'mcq', q: '"Mi hermana es muy ___." (intelligent, feminine)',
+      options: ['inteligento', 'inteligente', 'inteligenta'], answer: 1 },
+    { id: 'p:adjcal:cloze', kind: 'cloze', text: 'Es un restaurante car___. (very expensive, absolute superlative)', accept: ['ísimo'] },
+    { id: 'p:adjcal:recall', kind: 'recall', front: 'What can stand in for a dropped noun that a possessive cannot?', back: 'the article (el/la + adjective)' }
+  ]
+},
+
+{
+  id: 'gr-genero-adjetivo-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:50', 'gramatica:A1:51', 'gramatica:A1:52', 'gramatica:A1:53'],
+  title: 'El género del adjetivo',
+  summary: 'Most adjectives change for gender only if they end in -o; a consonant-ending adjective is normally invariable — except a nationality adjective, which always marks feminine even starting from a consonant.',
+  sections: [
+    { h: 'The -o/-a pattern', html: 'Adjectives ending in <i>-o</i> change to <i>-a</i> for feminine: <i>alto → alta</i>, <i>bonito → bonita</i>.' },
+    { h: 'Consonant endings: usually invariable', html: 'An adjective ending in a consonant is normally the SAME for both genders: <i>feliz</i>, <i>azul</i>, <i>joven</i> — <i>un hombre feliz</i>, <i>una mujer feliz</i>.' },
+    { h: 'The exception: nationality', html: 'Gentilicios (nationality/origin adjectives) break the invariable-consonant rule and add <i>-a</i> for feminine even from a consonant: <i>español → española</i>, <i>alemán → alemana</i>, <i>francés → francesa</i>.' }
+  ],
+  contrasts: [
+    { es: 'un chico alto / una chica alta', en: 'a tall boy / a tall girl', note: '-o/-a pattern' },
+    { es: 'un hombre feliz / una mujer feliz', en: 'a happy man / a happy woman', note: 'consonant ending: invariable' },
+    { es: 'un chico español / una chica española', en: 'a Spanish boy / a Spanish girl', note: 'gentilicio breaks the invariable-consonant rule' },
+    { es: 'un profesor alemán / una profesora alemana', en: 'a German (male/female) teacher', note: 'same exception, and loses its accent once -a is added' }
+  ],
+  pitfalls: [
+    'Do not add <i>-a</i> to a regular consonant-ending adjective: <i>*feliza</i>, <i>*azula</i> are wrong.',
+    'DO add <i>-a</i> to a nationality adjective from a consonant: <i>español/española</i>, <i>alemán/alemana</i> — this is the one systematic exception.',
+    'Nationality adjectives ending in an accented vowel + consonant (<i>alemán, francés</i>) lose the written accent once <i>-a</i> is added: <i>alemana</i>, not <i>*alemána</i>.'
+  ],
+  examples: [
+    { es: 'Mi vecina es una mujer muy feliz.', en: 'My neighbour is a very happy woman.' },
+    { es: 'La profesora es alemana y el profesor es francés.', en: 'The teacher (f) is German and the teacher (m) is French.' },
+    { es: 'Tiene los ojos azules y el pelo corto.', en: 'She has blue eyes and short hair.' }
+  ],
+  probes: [
+    { id: 'p:genadj:invar', kind: 'mcq', q: '"Mi vecina es muy ___." (happy)',
+      options: ['feliza', 'feliz', 'felizo'], answer: 1 },
+    { id: 'p:genadj:gentilicio', kind: 'mcq', q: '"La profesora es ___." (German, feminine)',
+      options: ['alemán', 'alemana', 'alemano'], answer: 1 },
+    { id: 'p:genadj:cloze', kind: 'cloze', text: 'Ella es franc___. (French, feminine)', accept: ['esa'] },
+    { id: 'p:genadj:recall', kind: 'recall', front: 'Which type of consonant-ending adjective DOES change for feminine?', back: 'gentilicios (nationality: español/española, alemán/alemana)' }
+  ]
+},
+
+{
+  id: 'gr-articulo-definido-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:72', 'gramatica:A1:74', 'gramatica:A1:75', 'gramatica:A1:78', 'gramatica:A1:80', 'gramatica:A1:81'],
+  title: 'El artículo definido: distribución',
+  summary: 'El/la/los/las sits at the very front of its noun phrase, which is exactly why it can never appear next to a possessive or demonstrative — Spanish allows only one "pointer" at the front at a time.',
+  sections: [
+    { h: 'Front of the phrase, and alone there', html: 'The definite article opens its noun phrase and cannot share that position with a possessive or demonstrative: <i>*el mi hermana</i>, <i>*la este libro</i> are both impossible. Spanish uses either the article or the possessive/demonstrative, never both.' },
+    { h: 'Contractions are obligatory', html: '<i>a + el → al</i>, <i>de + el → del</i>, with no exception: <i>Voy al banco</i>, <i>Vengo del trabajo</i>. This does not apply when "El" is part of a proper name: <i>Voy a El Salvador</i>, not <i>*Voy al Salvador</i>.' },
+    { h: 'Required before gustar-type nouns', html: 'Where English uses a bare noun, Spanish keeps the article: <i>Me gusta LA paella</i>, not <i>*Me gusta paella</i>. Dropping the article here is a very visible learner error.' }
+  ],
+  contrasts: [
+    { es: 'mi hermana', en: 'my sister', note: 'possessive alone, no article' },
+    { es: '*el mi hermana', en: '(impossible)', note: 'article and possessive never combine' },
+    { es: 'Voy al banco. / Voy a El Salvador.', en: 'I\'m going to the bank. / I\'m going to El Salvador.', note: 'contraction is obligatory, except when El is part of a name' },
+    { es: 'Me gusta la paella.', en: 'I like paella.', note: 'Spanish keeps the article where English drops it' }
+  ],
+  pitfalls: [
+    'Never combine the definite article with a possessive or demonstrative — pick one pointer, not two.',
+    '<i>a + el</i> and <i>de + el</i> ALWAYS contract to <i>al/del</i>, except when "El" opens a proper name like El Salvador or El Cairo.',
+    'Do not drop the article before a noun after <i>gustar</i>-type verbs just because English would: <i>me gusta el chocolate</i>, not <i>*me gusta chocolate</i>.'
+  ],
+  examples: [
+    { es: 'Vamos al cine y luego al restaurante.', en: 'We\'re going to the cinema and then to the restaurant.' },
+    { es: 'Vengo del trabajo cansadísimo.', en: 'I\'m coming from work absolutely exhausted.' },
+    { es: 'A los niños les gusta el chocolate.', en: 'The children like chocolate.' }
+  ],
+  probes: [
+    { id: 'p:artdef:combina', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['el mi libro', 'mi libro', 'el mi el libro'], answer: 1 },
+    { id: 'p:artdef:contrae', kind: 'mcq', q: '"Vengo ___ trabajo."',
+      options: ['de el', 'del', 'de al'], answer: 1 },
+    { id: 'p:artdef:gustar', kind: 'cloze', text: 'Me gusta ___ chocolate.', accept: ['el'] },
+    { id: 'p:artdef:recall', kind: 'recall', front: 'Which two prepositions ALWAYS contract with "el"?', back: 'a (→al) and de (→del)' }
+  ]
+},
+
+{
+  id: 'gr-articulo-indefinido-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:99', 'gramatica:A1:101', 'gramatica:A1:104', 'gramatica:A1:105'],
+  title: 'El artículo indefinido: un, una, unos, unas',
+  summary: 'Un/una introduces something for the first time — which is exactly why it refuses to appear next to a demonstrative or a numeral: those already do the "pointing out" job themselves.',
+  sections: [
+    { h: 'First mention', html: '<i>Un/una/unos/unas</i> presents something the listener does not yet know about: <i>Hay un banco en la plaza</i>. Once it is known, later mentions switch to the definite article: <i>El banco cierra a las ocho</i>.' },
+    { h: 'Incompatible with other pointers', html: 'A demonstrative or numeral already identifies which thing you mean, so the indefinite article cannot stack with them: <i>*un este libro</i>, <i>*un dos libros</i> are both wrong.' },
+    { h: 'Not with proper nouns', html: 'Because a name is already unique, it does not take <i>un/una</i> in its ordinary use: <i>*Vive en una España</i> is wrong (though <i>un Madrid distinto</i> — "a different Madrid" — is possible as a figurative, reinterpreted use).' }
+  ],
+  contrasts: [
+    { es: 'Hay un banco en la plaza.', en: 'There is a bank in the square.', note: 'first mention, new information' },
+    { es: 'El banco cierra a las ocho.', en: 'The bank closes at eight.', note: 'now known — definite article' },
+    { es: '*un este libro / *un dos libros', en: '(both impossible)', note: 'indefinite article cannot combine with a demonstrative or numeral' },
+    { es: 'Tengo dos hermanos.', en: 'I have two brothers.', note: 'the numeral alone already does the job an indefinite article would' }
+  ],
+  pitfalls: [
+    'Never stack <i>un/una</i> with a demonstrative or a numeral — choose one.',
+    'A first mention needs the indefinite article; a second mention of the same thing switches to the definite article.',
+    'Proper nouns do not normally take <i>un/una</i> — a name is already unique enough.'
+  ],
+  examples: [
+    { es: '—¿Hay una farmacia cerca? —Sí, hay una farmacia en esta calle.', en: '—Is there a pharmacy nearby? —Yes, there\'s a pharmacy on this street.' },
+    { es: 'Tengo tres hermanas y un hermano.', en: 'I have three sisters and one brother.' },
+    { es: 'Vi una película anoche; la película era muy larga.', en: 'I saw a film last night; the film was very long.' }
+  ],
+  probes: [
+    { id: 'p:artindef:mencion', kind: 'mcq', q: 'Primera mención: "Hay ___ banco en la plaza."',
+      options: ['el', 'un', 'este'], answer: 1 },
+    { id: 'p:artindef:segunda', kind: 'mcq', q: 'Segunda mención, ya conocido: "___ banco cierra a las ocho."',
+      options: ['Un', 'El', 'Unos'], answer: 1 },
+    { id: 'p:artindef:numeral', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['un dos libros', 'dos libros', 'unos dos libros de'], answer: 1 },
+    { id: 'p:artindef:recall', kind: 'recall', front: 'A NEW thing gets which article? A KNOWN thing gets which?', back: 'indefinite (un/una) for new; definite (el/la) once known' }
+  ]
+},
+
+{
+  id: 'gr-posesivos-distribucion-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:148', 'gramatica:A1:149', 'gramatica:A1:150', 'gramatica:A1:151'],
+  title: 'Los posesivos átonos: dónde van',
+  summary: 'Mi, tu, su and the rest of the short possessives must sit glued to the front of their noun — unlike English "mine," they can never stand alone, so asking whose something is takes a completely different question.',
+  sections: [
+    { h: 'Always in front, never after', html: 'The short possessive comes immediately before its noun: <i>mi libro</i>, never <i>*libro mi</i>.' },
+    { h: 'Cannot stand alone', html: 'English "mine" needs no noun. Spanish\'s short possessive always does — you cannot say <i>*es mi</i> to mean "it\'s mine." Asking whose something is uses a different construction entirely: <i>¿De quién es esto?</i>' },
+    { h: 'One pointer, not two', html: 'Because the possessive already sits at the front, it cannot combine with the article there too: <i>mi camisa</i>, never <i>*la mi camisa</i>. An adjective can still follow the noun without trouble: <i>mi camisa roja</i>.' }
+  ],
+  contrasts: [
+    { es: 'mi libro', en: 'my book', note: 'possessive immediately before the noun' },
+    { es: '*libro mi', en: '(impossible)', note: 'never after the noun' },
+    { es: '—¿De quién es este libro? —Es mío.', en: '—Whose book is this? —It\'s mine.', note: 'a DIFFERENT (tonic) form is used to stand alone — see the next lesson' },
+    { es: 'mi camisa roja', en: 'my red shirt', note: 'possessive + noun + adjective is fine; possessive + article is not' }
+  ],
+  pitfalls: [
+    'The short possessive can never follow its noun and can never stand completely alone the way English "mine" does.',
+    'To ask whose something is, use <i>¿De quién es…?</i>, not a literal translation of "whose."',
+    'Never combine the article with a possessive: <i>mi libro</i>, not <i>*el mi libro</i>.'
+  ],
+  examples: [
+    { es: '¿Dónde está mi teléfono?', en: 'Where is my phone?' },
+    { es: '—¿De quién son estas llaves? —Son mías.', en: '—Whose keys are these? —They\'re mine.' },
+    { es: 'Nuestra casa tiene un jardín pequeño.', en: 'Our house has a small garden.' }
+  ],
+  probes: [
+    { id: 'p:posdis:orden', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['libro mi', 'mi libro', 'el mi libro'], answer: 1 },
+    { id: 'p:posdis:cuyo', kind: 'mcq', q: '"¿___ es este libro?" (asking whose)',
+      options: ['Cuyo', 'De quién', 'Quién'], answer: 1 },
+    { id: 'p:posdis:cloze', kind: 'cloze', text: '¿Dónde está ___ teléfono?', accept: ['mi'] },
+    { id: 'p:posdis:recall', kind: 'recall', front: 'How do you ask whose something is in Spanish?', back: '¿De quién es...?' }
+  ]
+},
+
+{
+  id: 'gr-posesivos-forma-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:143', 'gramatica:A1:144', 'gramatica:A1:145', 'gramatica:A1:146'],
+  title: 'Los posesivos: formas',
+  summary: 'Mi/tu/su only ever mark whether there is one owned thing or several — for the NUMBER OF OWNERS you need nuestro/vuestro\'s fuller forms, and su alone cannot tell you if the owner is one person or a crowd.',
+  sections: [
+    { h: 'mi, tu, su: agree only with what is owned', html: 'These change for the number of the thing owned, never for gender: <i>mi libro / mis libros</i>, <i>tu casa / tus casas</i>. They stay the same whether one person owns it or several — <i>su casa</i> could be his, hers, yours (usted), or theirs.' },
+    { h: 'nuestro, vuestro: agree for gender AND number', html: 'These mark that the OWNER is "we" or "you-all," and they agree fully with the thing owned: <i>nuestro libro, nuestra casa, nuestros libros, nuestras casas</i>.' },
+    { h: 'Resolving su\'s ambiguity', html: 'When context does not make the owner clear, replace <i>su</i> with <i>de él / de ella / de usted / de ellos / de ellas / de ustedes</i>: <i>la casa de ella</i> instead of the ambiguous <i>su casa</i>.' }
+  ],
+  contrasts: [
+    { es: 'mi libro / mis libros', en: 'my book / my books', note: 'changes only for the thing owned' },
+    { es: 'su casa', en: 'his / her / your / their house', note: 'genuinely ambiguous without context' },
+    { es: 'nuestra casa / nuestras casas', en: 'our house / our houses', note: 'agrees in both gender and number' },
+    { es: 'la casa de ella (not su casa)', en: 'her house', note: 'used to resolve the ambiguity of su' }
+  ],
+  pitfalls: [
+    '<i>Mi/tu/su</i> never change for gender — <i>*mia libro</i> does not exist.',
+    '<i>Su</i> is ambiguous between "his," "her," "your" (usted) and "their" — use <i>de él/de ella/de ellos</i> etc. when it matters.',
+    'Only <i>nuestro/vuestro</i> mark gender; do not extend that pattern to <i>mi/tu/su</i>.'
+  ],
+  examples: [
+    { es: 'Nuestra profesora es muy paciente.', en: 'Our teacher is very patient.' },
+    { es: 'Sus padres viven en Chile — los de ella, no los de él.', en: 'Her parents live in Chile — hers, not his.' },
+    { es: '¿Tienes tus llaves y tu cartera?', en: 'Do you have your keys and your wallet?' }
+  ],
+  probes: [
+    { id: 'p:posfor:genero', kind: 'mcq', q: '¿Cuál es correcto? (mi + casa, femenino)',
+      options: ['mia casa', 'mi casa', 'mis casa'], answer: 1 },
+    { id: 'p:posfor:nuestro', kind: 'mcq', q: '"___ profesora es muy paciente." (our, feminine)',
+      options: ['Nuestro', 'Nuestra', 'Nuestros'], answer: 1 },
+    { id: 'p:posfor:ambiguo', kind: 'mcq', q: 'Para evitar la ambigüedad de "su casa", dices:',
+      options: ['la su casa', 'la casa de ella', 'casa suya de ella'], answer: 1 },
+    { id: 'p:posfor:recall', kind: 'recall', front: 'Which two possessives agree in BOTH gender and number?', back: 'nuestro/nuestra and vuestro/vuestra' }
+  ]
+},
+
+{
+  id: 'gr-cuantificadores-no-universales-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:170', 'gramatica:A1:171', 'gramatica:A1:172'],
+  title: 'Poco y mucho',
+  summary: 'Poco and mucho both agree with what they quantify when they sit in front of a noun, but freeze into the plain masculine form the moment they modify a verb or adjective instead.',
+  sections: [
+    { h: 'Before a noun: full agreement', html: '<i>poco/poca/pocos/pocas</i> and <i>mucho/mucha/muchos/muchas</i> agree in gender and number with the noun that follows: <i>poco tiempo</i>, <i>pocas ganas</i>, <i>muchos amigos</i>, <i>mucha suerte</i>.' },
+    { h: 'Before a verb or adjective: frozen', html: 'Used adverbially — modifying a verb or an adjective rather than a noun — <i>mucho/poco</i> never changes: <i>Trabaja mucho</i>, <i>Está muy cansado</i> (here <i>mucho</i> shortens to <i>muy</i> before an adjective).' },
+    { h: 'Muy vs mucho', html: '<i>Muy</i> goes before an adjective or adverb (<i>muy cansado, muy rápido</i>); <i>mucho</i> goes before a noun or after a verb (<i>mucho trabajo, trabaja mucho</i>). Mixing them up — <i>*muy trabajo</i>, <i>*mucho cansado</i> — is one of the most common A1 errors.' }
+  ],
+  contrasts: [
+    { es: 'Tengo pocos amigos aquí.', en: 'I have few friends here.', note: 'agrees with the plural masculine noun' },
+    { es: 'Tengo poca hambre.', en: 'I\'m not very hungry.', note: 'agrees with the feminine noun' },
+    { es: 'Trabaja mucho.', en: 'She works a lot.', note: 'adverbial, invariable' },
+    { es: 'Está muy cansada.', en: 'She is very tired.', note: 'muy before an adjective, not mucho' }
+  ],
+  pitfalls: [
+    '<i>Mucho/poco</i> agree with a following NOUN but never change when modifying a verb or adjective.',
+    'Use <i>muy</i>, not <i>mucho</i>, directly before an adjective or adverb: <i>muy cansado</i>, not <i>*mucho cansado</i>.',
+    '<i>Mucho calor, mucha hambre, mucho tiempo</i> — these mass-noun idioms with <i>tener/hacer</i> still take the full agreeing form.'
+  ],
+  examples: [
+    { es: 'Hace mucho calor y tengo mucha sed.', en: 'It\'s very hot and I\'m very thirsty.' },
+    { es: 'Tiene poco tiempo pero muchas ganas de aprender.', en: 'He has little time but a lot of enthusiasm to learn.' },
+    { es: 'Habla muy despacio pero entiende mucho.', en: 'She speaks very slowly but understands a lot.' }
+  ],
+  probes: [
+    { id: 'p:cuantno:agree', kind: 'mcq', q: '"Tengo ___ hambre." (a lot, hambre is feminine)',
+      options: ['mucho', 'mucha', 'muy'], answer: 1 },
+    { id: 'p:cuantno:muyvsmucho', kind: 'mcq', q: '"Está ___ cansado."',
+      options: ['mucho', 'muy', 'muya'], answer: 1 },
+    { id: 'p:cuantno:adverbial', kind: 'cloze', text: 'Ella trabaja ___. (a lot, modifying the verb)', accept: ['mucho'] },
+    { id: 'p:cuantno:recall', kind: 'recall', front: 'Before an ADJECTIVE, do you use muy or mucho?', back: 'muy' }
+  ]
+},
+
+{
+  id: 'gr-numerales-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:165', 'gramatica:A1:166', 'gramatica:A1:167', 'gramatica:A1:168'],
+  title: 'Los numerales: cardinales y ordinales',
+  summary: 'Cardinal numbers barely change — only uno and its compounds adjust for gender — but ordinals from primero to décimo agree like any adjective, and primero/tercero drop their -o before a masculine singular noun.',
+  sections: [
+    { h: 'Cardinals: mostly invariable', html: 'Numbers do not agree with what they count, with one exception: <i>uno</i> becomes <i>un</i> before a masculine noun and <i>una</i> before a feminine one, and this carries into compounds — <i>veintiún libros</i>, <i>treinta y una casas</i>.' },
+    { h: 'Ordinals: agree like adjectives', html: '<i>primero, segundo, tercero…</i> agree in gender and number with their noun: <i>la segunda vez</i>, <i>los primeros días</i>.' },
+    { h: 'Apocope of primero and tercero', html: 'Before a masculine singular noun, <i>primero</i> and <i>tercero</i> drop their final <i>-o</i>: <i>el primer día</i>, <i>el tercer piso</i> — never <i>*el primero día</i>. This is the exact same shortening pattern as <i>uno → un</i>.' }
+  ],
+  contrasts: [
+    { es: 'un libro / una casa', en: 'one book / one house', note: 'uno agrees for gender before the noun' },
+    { es: 'veintiún euros', en: 'twenty-one euros', note: 'the same shortening survives inside a compound number' },
+    { es: 'la segunda vez / los primeros días', en: 'the second time / the first days', note: 'ordinals agree fully, like adjectives' },
+    { es: 'el primer día / el tercer piso', en: 'the first day / the third floor', note: 'apocope before a masculine singular noun' }
+  ],
+  pitfalls: [
+    '<i>Primero</i> and <i>tercero</i> shorten to <i>primer/tercer</i> only before a MASCULINE SINGULAR noun — <i>la primera vez</i> keeps its full form.',
+    'Cardinal numbers other than <i>uno</i> and its compounds never agree: <i>dos casas</i>, <i>tres libros</i>, no gender change.',
+    'Do not confuse the apocope of <i>primero/tercero</i> with the same pattern in <i>uno → un</i> — they are the same rule, applied to different words.'
+  ],
+  examples: [
+    { es: 'Vivo en el tercer piso, la primera puerta a la derecha.', en: 'I live on the third floor, the first door on the right.' },
+    { es: 'Tengo veintiún años y un hermano.', en: 'I am twenty-one and have one brother.' },
+    { es: 'Es la segunda vez que visito esta ciudad.', en: 'It\'s the second time I\'ve visited this city.' }
+  ],
+  probes: [
+    { id: 'p:numeral:apocope', kind: 'mcq', q: '"Vivo en el ___ piso." (third, before masculine singular)',
+      options: ['tercero', 'tercer', 'tercera'], answer: 1 },
+    { id: 'p:numeral:femenino', kind: 'mcq', q: '"Es la ___ vez." (first, feminine — no apocope)',
+      options: ['primer', 'primero', 'primera'], answer: 2 },
+    { id: 'p:numeral:uno', kind: 'cloze', text: 'Tengo veinti___ años. (21, before "años", masculine)', accept: ['ún'] },
+    { id: 'p:numeral:recall', kind: 'recall', front: 'primero and tercero shorten before which kind of noun?', back: 'masculine singular (el primer día, el tercer piso)' }
+  ]
+},
+
+{
+  id: 'gr-pronombre-se-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:217', 'gramatica:A1:218', 'gramatica:A1:219', 'gramatica:A1:220'],
+  title: 'El pronombre se: usos reflexivos',
+  summary: 'Se has one invariable form for every third-person subject, singular or plural — and Spanish leans on reflexive verbs like peinarse and levantarse in everyday routines where English would never add "myself."',
+  sections: [
+    { h: 'One pronoun per person', html: 'A reflexive verb takes a pronoun matching its subject: <i>me levanto, te levantas, se levanta, nos levantamos, os levantáis, se levantan</i>. Only the third person uses the special form <i>se</i>; the others reuse the ordinary object pronouns <i>me/te/nos/os</i>.' },
+    { h: 'Se covers both singular and plural', html: 'Unlike <i>me/te/nos/os</i>, <i>se</i> does not change between <i>él se levanta</i> and <i>ellos se levantan</i> — the verb ending alone carries the number.' },
+    { h: 'Not always "-self" in English', html: 'Many Spanish reflexive verbs describe a daily routine where English uses no reflexive at all: <i>peinarse</i> (to comb one\'s hair), <i>dormirse</i> (to fall asleep), <i>quedarse</i> (to stay). The Spanish "self" is grammatical, not always a translated meaning.' }
+  ],
+  contrasts: [
+    { es: 'Me levanto a las siete.', en: 'I get up at seven.', note: 'first person: me, not se' },
+    { es: 'Ella se levanta a las siete.', en: 'She gets up at seven.', note: 'third person singular: se' },
+    { es: 'Ellos se levantan a las siete.', en: 'They get up at seven.', note: 'third person plural: still se, unchanged' },
+    { es: 'Me peino todas las mañanas.', en: 'I comb my hair every morning.', note: 'reflexive in Spanish, no "myself" needed in English' }
+  ],
+  pitfalls: [
+    '<i>Se</i> never changes for number — there is no <i>*ses</i> for plural subjects.',
+    'Do not expect every Spanish reflexive verb to translate with "-self" in English; many describe ordinary routines.',
+    'This reflexive <i>se</i> is a different thing from the impersonal/passive <i>se</i> (as in <i>se habla español</i>) — a separate later topic.'
+  ],
+  examples: [
+    { es: '¿A qué hora te acuestas normalmente?', en: 'What time do you normally go to bed?' },
+    { es: 'Los niños se duchan antes de cenar.', en: 'The children shower before dinner.' },
+    { es: 'Nos quedamos en casa este fin de semana.', en: 'We\'re staying home this weekend.' }
+  ],
+  probes: [
+    { id: 'p:prse:persona', kind: 'mcq', q: '"Ella ___ levanta temprano."',
+      options: ['me', 'se', 'te'], answer: 1 },
+    { id: 'p:prse:numero', kind: 'mcq', q: '"Ellos ___ duchan por la mañana."',
+      options: ['se', 'ses', 'sen'], answer: 0 },
+    { id: 'p:prse:cloze', kind: 'cloze', text: 'Yo ___ peino todas las mañanas.', accept: ['me'] },
+    { id: 'p:prse:recall', kind: 'recall', front: 'Which reflexive pronoun form covers BOTH singular and plural third person?', back: 'se' }
+  ]
+},
+
+{
+  id: 'gr-pronombre-sujeto-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:193', 'gramatica:A1:196', 'gramatica:A1:200', 'gramatica:A1:201', 'gramatica:A1:202'],
+  title: 'Los pronombres sujeto',
+  summary: 'Spanish routinely drops its subject pronoun because the verb ending already says who is speaking — you keep yo/tú/él mainly to contrast one person against another, which is why constant yo-yo-yo sounds foreign.',
+  sections: [
+    { h: 'The forms', html: '<i>yo, tú, él/ella/usted, nosotros/nosotras, vosotros/vosotras, ellos/ellas/ustedes</i>. Only the first person has no gender split; every other has one, or a formal/informal split (<i>tú</i> vs <i>usted</i>).' },
+    { h: 'Omission is the default', html: 'Because the verb ending already identifies the person (<i>trabajo</i> can only be "I work"), the subject pronoun is usually left out: <i>Trabajo en un hospital</i>, not <i>*Yo trabajo en un hospital</i> as the neutral, unmarked version.' },
+    { h: 'When you DO keep it: contrast', html: 'The pronoun reappears to contrast one person with another: <i>Yo prefiero café, ella prefiere té.</i> Without that contrast, adding it sounds like unnecessary emphasis, the classic "foreign accent" of over-translating English.' }
+  ],
+  contrasts: [
+    { es: 'Trabajo en un hospital.', en: 'I work at a hospital.', note: 'neutral — no pronoun needed' },
+    { es: '*Yo trabajo en un hospital.', en: '(unnecessary emphasis, not neutral)', note: 'grammatically fine but reads as marked/emphatic, or foreign, without a reason' },
+    { es: 'Yo prefiero café, ella prefiere té.', en: 'I prefer coffee, she prefers tea.', note: 'contrast justifies keeping both pronouns' },
+    { es: 'Llueve.', en: 'It\'s raining.', note: 'impersonal verbs have no subject pronoun at all — not even "it"' }
+  ],
+  pitfalls: [
+    'Do not translate English\'s obligatory "I/you/he" word for word — constant subject pronouns are the most common tell of a non-native speaker.',
+    'Impersonal expressions (<i>llueve, hay, es tarde</i>) have no subject pronoun to add, unlike English\'s empty "it."',
+    '<i>Usted/ustedes</i> take a THIRD-person verb form even though they mean "you" — <i>usted trabaja</i>, not <i>*usted trabajas</i>.'
+  ],
+  examples: [
+    { es: '¿De dónde eres? Soy de Chile.', en: 'Where are you from? I\'m from Chile.' },
+    { es: 'Nosotros vamos al cine, ¿y vosotros?', en: 'We\'re going to the cinema, and you (all)?' },
+    { es: 'Usted tiene razón, señora.', en: 'You are right, madam.' }
+  ],
+  probes: [
+    { id: 'p:prsuj:omision', kind: 'mcq', q: 'Forma más natural y neutra:',
+      options: ['Yo trabajo en un banco.', 'Trabajo en un banco.', 'Yo, trabajo en un banco.'], answer: 1 },
+    { id: 'p:prsuj:contraste', kind: 'mcq', q: '¿Cuándo SÍ conviene usar el pronombre sujeto?',
+      options: ['Siempre, para ser claro', 'Para contrastar dos personas', 'Nunca en español'], answer: 1 },
+    { id: 'p:prsuj:usted', kind: 'cloze', text: 'Usted ___ razón. (tener, tercera persona)', accept: ['tiene'] },
+    { id: 'p:prsuj:recall', kind: 'recall', front: 'Why can Spanish drop its subject pronouns so freely?', back: 'the verb ending already identifies the person' }
+  ]
+},
+
+/* ============================================================================
+ * BATCH — A1 notion, seq 36-44 of spec/syllabus-draft.json (skipped: seq 35
+ * presencia-ausencia, already taught in full by nt-existencia-a1)
+ * ========================================================================== */
+{
+  id: 'nt-cantidad-numerica-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:25', 'nociones_generales:A1:26', 'nociones_generales:A1:27'],
+  title: 'Cantidad numérica: cardinales y ordinales',
+  summary: 'A cardinal number states an exact count; an ordinal states a position in a sequence — and the two are easy to mix up because "cuatro" (four) and "cuarto" (fourth) differ by a single letter.',
+  sections: [
+    { h: 'Cardinals count', html: 'Cardinal numbers answer "how many": <i>Tengo 18 años</i>, <i>Somos cinco</i>. Spanish marks thousands with a period, not a comma: <i>150.000 habitantes</i>.' },
+    { h: 'Ordinals place', html: 'Ordinals answer "which one in order": <i>Vivimos en el cuarto piso</i> (the fourth floor) — not <i>*el cuatro piso</i>, which would just be nonsense arithmetic sitting where a position belongs.' },
+    { h: 'Comparing without a number', html: '<i>Muy</i>, <i>más</i> and <i>menos</i> intensify or compare with no number at all: <i>muy alto</i>, <i>más grande</i>.' }
+  ],
+  exponents: [
+    { es: 'Tengo 18 años.', en: 'I am 18.', register: 'neutral', note: 'cardinal — exact count' },
+    { es: 'Vivimos en el cuarto piso.', en: 'We live on the fourth floor.', register: 'neutral', note: 'ordinal — position, not count' },
+    { es: 'Mi ciudad tiene 150.000 habitantes.', en: 'My city has 150,000 inhabitants.', register: 'neutral', note: 'period marks thousands in Spanish, not a comma' },
+    { es: 'Es mucho más grande que la mía.', en: "It's much bigger than mine.", register: 'neutral', note: 'más for comparison, with no number involved' }
+  ],
+  contrasts: [
+    { es: 'cuatro personas', en: 'four people', note: 'cardinal — counting' },
+    { es: 'el cuarto piso', en: 'the fourth floor', note: 'ordinal — position; a single letter separates it from "cuatro"' }
+  ],
+  pitfalls: [
+    'Do not say <i>*el cuatro piso</i> for "the fourth floor" — that names four floors, not the fourth one. Use the ordinal <i>cuarto</i>.',
+    'Spanish uses a period for thousands and a comma for decimals — the reverse of English: <i>1.500,50</i> means one thousand five hundred point five zero.'
+  ],
+  examples: [
+    { es: '—¿Cuántos años tienes? —Tengo veinte años.', en: '—How old are you? —I\'m twenty.' },
+    { es: 'Es la tercera vez que visito Lima.', en: "It's the third time I've visited Lima." },
+    { es: 'Somos cinco en mi familia.', en: 'There are five of us in my family.' }
+  ],
+  probes: [
+    { id: 'p:cantnum:ordinal', kind: 'mcq', q: '"Vivimos en el ___ piso." (4th)',
+      options: ['cuatro', 'cuarto', 'cuartro'], answer: 1 },
+    { id: 'p:cantnum:cardinal', kind: 'mcq', q: '"Somos ___ en mi familia." (5, exact count)',
+      options: ['quinto', 'cinco', 'cinco personas de'], answer: 1 },
+    { id: 'p:cantnum:cloze', kind: 'cloze', text: 'Mi ciudad tiene 150___000 habitantes.', accept: ['.'] },
+    { id: 'p:cantnum:recall', kind: 'recall', front: 'cuatro vs cuarto — which one names a POSITION?', back: 'cuarto (ordinal)' }
+  ]
+},
+
+{
+  id: 'nt-cantidad-relativa-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:28', 'nociones_generales:A1:29', 'nociones_generales:A1:30', 'nociones_generales:A1:31', 'nociones_generales:A1:32', 'nociones_generales:A1:33'],
+  title: 'Cantidad relativa: más, menos, bastante',
+  summary: 'Where a cardinal number states a precise figure, más, menos and más o menos move a quantity up, down, or into a rough estimate — without ever naming an exact number.',
+  sections: [
+    { h: 'Up or down, with no number', html: '<i>Más</i> and <i>menos</i> shift a quantity without stating it exactly: <i>Más pan, por favor</i>, <i>Tengo menos tiempo hoy</i>.' },
+    { h: 'Turning a number into a guess', html: '<i>Más o menos</i> placed before a figure turns it into an approximation: <i>Tiene más o menos 25.000 habitantes</i> — "give or take."' },
+    { h: 'Bastante and poco', html: '<i>Bastante</i> (quite a lot / enough) and <i>poco</i> (little) sit between "much" and "not much": <i>Tengo bastante dinero</i>, <i>Hay poca gente hoy</i>.' }
+  ],
+  exponents: [
+    { es: 'Más pan, por favor.', en: 'More bread, please.', register: 'neutral', note: 'más with no number stated' },
+    { es: 'Tiene más o menos 25.000 habitantes.', en: 'It has roughly 25,000 inhabitants.', register: 'neutral', note: 'turns an exact figure into an estimate' },
+    { es: 'Tengo bastante dinero en el bolso.', en: 'I have quite a lot of money in my bag.', register: 'neutral' },
+    { es: 'Hay mucha gente en la plaza.', en: 'There are a lot of people in the square.', register: 'neutral', note: '"gente" is always singular in Spanish' }
+  ],
+  contrasts: [
+    { es: 'Tiene 25.000 habitantes.', en: 'It has 25,000 inhabitants.', note: 'exact — a cardinal number' },
+    { es: 'Tiene más o menos 25.000 habitantes.', en: 'It has roughly 25,000 inhabitants.', note: 'approximate — más o menos softens the number' }
+  ],
+  pitfalls: [
+    '<i>Gente</i> ("people") is grammatically singular in Spanish: <i>mucha gente</i>, never <i>*muchos gente</i>.',
+    'Asking a price uses <i>ser/costar</i>, not <i>hay</i>: <i>¿Cuánto es?</i>, not <i>*¿Cuánto hay?</i>'
+  ],
+  examples: [
+    { es: '—¿Cuánta gente hay en la fiesta? —Bastante.', en: '—How many people are at the party? —Quite a few.' },
+    { es: 'Necesito un poco más de tiempo.', en: 'I need a little more time.' },
+    { es: 'Este pueblo tiene más o menos mil habitantes.', en: 'This town has roughly a thousand inhabitants.' }
+  ],
+  probes: [
+    { id: 'p:cantrel:gente', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['muchos gente', 'mucha gente', 'mucho gente'], answer: 1 },
+    { id: 'p:cantrel:aproximado', kind: 'mcq', q: 'Para decir "aproximadamente 25.000" usas:',
+      options: ['casi 25.000', 'más o menos 25.000', 'poco 25.000'], answer: 1 },
+    { id: 'p:cantrel:cloze', kind: 'cloze', text: '___ pan, por favor. (more)', accept: ['Más', 'más'] },
+    { id: 'p:cantrel:recall', kind: 'recall', front: 'Is "gente" (people) singular or plural in Spanish grammar?', back: 'singular (mucha gente)' }
+  ]
+},
+
+{
+  id: 'nt-tamano-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:42', 'nociones_generales:A1:43', 'nociones_generales:A1:44'],
+  title: 'Tamaño: grande, pequeño y las medidas',
+  summary: 'Size in Spanish runs on paired opposites — grande/pequeño, largo/corto, alto/bajo — and the same word alto or bajo can describe a person\'s height or a shelf\'s position, so context decides which.',
+  sections: [
+    { h: 'The basic pairs', html: '<i>grande/pequeño</i> (big/small), <i>largo/corto</i> (long/short), <i>alto/bajo</i> (tall or high / short or low), <i>rápido/lento</i> (fast/slow), <i>delgado/gordo</i> (thin/fat).' },
+    { h: 'Alto and bajo do double duty', html: '<i>Alto</i> and <i>bajo</i> describe a PERSON\'s height (<i>Juan es muy alto</i>) and equally an OBJECT\'s height or position (<i>el estante de arriba está muy alto</i>) — the same word, no separate vocabulary needed.' },
+    { h: 'Actual measurement', html: 'When a description is not precise enough, Spanish switches to <i>metro(s)</i>/<i>kilómetro(s)</i>: <i>Mide dos metros</i>.' }
+  ],
+  exponents: [
+    { es: 'Mi hermano es muy alto.', en: 'My brother is very tall.', register: 'neutral', note: 'alto describing a person' },
+    { es: 'El estante está muy alto.', en: 'The shelf is very high up.', register: 'neutral', note: 'the same word describing an object\'s position' },
+    { es: 'Es un pueblo muy pequeño.', en: "It's a very small town.", register: 'neutral' },
+    { es: 'Mide casi dos metros.', en: "He's nearly two metres tall.", register: 'neutral', note: 'a precise measurement, not just "alto"' }
+  ],
+  contrasts: [
+    { es: 'Juan es alto.', en: 'Juan is tall.', note: 'height of a person' },
+    { es: 'El precio es alto.', en: 'The price is high.', note: 'same word, a completely different kind of "high"' }
+  ],
+  pitfalls: [
+    '<i>Alto/bajo</i> apply to people, objects, prices and sound volume alike — do not hunt for a separate word each time.',
+    'A rough description (<i>alto, grande</i>) and an exact one (<i>dos metros</i>) are not interchangeable when precision actually matters — use the measurement.'
+  ],
+  examples: [
+    { es: 'La mesa es demasiado larga para esta habitación.', en: 'The table is too long for this room.' },
+    { es: 'Prefiero un coche pequeño y rápido.', en: 'I prefer a small, fast car.' },
+    { es: '¿Cuánto mide tu hermano? Mide 1,90.', en: 'How tall is your brother? He\'s 1.90m.' }
+  ],
+  probes: [
+    { id: 'p:tamano:doble', kind: 'mcq', q: '¿Qué palabra describe TANTO la altura de una persona COMO la de un estante?',
+      options: ['grande', 'alto', 'largo'], answer: 1 },
+    { id: 'p:tamano:opuesto', kind: 'mcq', q: 'Opuesto de "rápido":',
+      options: ['bajo', 'lento', 'corto'], answer: 1 },
+    { id: 'p:tamano:cloze', kind: 'cloze', text: 'Mi hermano ___ casi dos metros. (measures)', accept: ['mide'] },
+    { id: 'p:tamano:recall', kind: 'recall', front: 'Which word covers both a person\'s height AND an object\'s position?', back: 'alto / bajo' }
+  ]
+},
+
+{
+  id: 'nt-localizacion-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:66', 'nociones_generales:A1:67', 'nociones_generales:A1:68'],
+  title: 'Localización: dónde está algo',
+  summary: 'Placing something at a physical spot always takes estar, never ser — and aquí/allí frame that place relative to where the speaker is actually standing, not some fixed point on a map.',
+  sections: [
+    { h: 'Estar, not ser', html: 'Locating a known place or thing uses <i>estar</i>: <i>Tikal está en Guatemala</i>, never <i>*Tikal es en Guatemala</i>. Confusing this with <i>ser</i> is one of the most persistent A1 errors.' },
+    { h: 'Aquí and allí are relative to the speaker', html: '<i>Aquí</i> (here) marks the speaker\'s own position; <i>allí</i> (there) marks anywhere else. In Spanish America, <i>acá/allá</i> often replace them, with a looser, less exact sense of place.' },
+    { h: 'Cerca and lejos', html: 'Distance is relative too: <i>cerca</i> (near) and <i>lejos</i> (far) say nothing exact — they only make sense compared to some reference point.' }
+  ],
+  exponents: [
+    { es: 'Tikal está en Guatemala.', en: 'Tikal is in Guatemala.', register: 'neutral', note: 'estar, not ser, for physical location' },
+    { es: 'Ven aquí un momento.', en: 'Come here a moment.', register: 'coloquial', note: 'aquí is relative to the speaker' },
+    { es: 'El museo está muy lejos.', en: 'The museum is very far.', register: 'neutral' },
+    { es: 'Acá todo es más tranquilo.', en: "Here everything's calmer.", register: 'coloquial', note: 'acá — the Spanish-American equivalent of aquí' }
+  ],
+  contrasts: [
+    { es: 'Tikal está en Guatemala.', en: 'Tikal is in Guatemala.', note: 'correct — estar locates' },
+    { es: '*Tikal es en Guatemala.', en: '(wrong)', note: 'ser cannot be used to physically locate something' }
+  ],
+  pitfalls: [
+    'Never use <i>ser</i> to say where a specific, known thing IS physically located — that job belongs to <i>estar</i>.',
+    '<i>Aquí/allí</i> always mean "near me" / "not near me" — they shift depending on who is speaking and where.'
+  ],
+  examples: [
+    { es: '—¿Dónde está la biblioteca? —Está allí, al lado del banco.', en: '—Where is the library? —It\'s over there, next to the bank.' },
+    { es: 'Mi casa está muy cerca de la estación.', en: 'My house is very close to the station.' },
+    { es: 'El aeropuerto está lejos del centro.', en: 'The airport is far from the centre.' }
+  ],
+  probes: [
+    { id: 'p:local:serestar', kind: 'mcq', q: '"Tikal ___ en Guatemala."',
+      options: ['es', 'está', 'hay'], answer: 1 },
+    { id: 'p:local:relativo', kind: 'mcq', q: '"Aquí" significa:',
+      options: ['un lugar fijo en el mapa', 'cerca de quien habla', 'siempre lejos'], answer: 1 },
+    { id: 'p:local:cloze', kind: 'cloze', text: 'El museo ___ muy lejos.', accept: ['está'] },
+    { id: 'p:local:recall', kind: 'recall', front: 'Which verb physically locates something — ser or estar?', back: 'estar' }
+  ]
+},
+
+{
+  id: 'nt-posicion-relativa-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:71', 'nociones_generales:A1:72', 'nociones_generales:A1:73', 'nociones_generales:A1:74', 'nociones_generales:A1:75', 'nociones_generales:A1:76', 'nociones_generales:A1:77'],
+  title: 'Posición relativa: cerca de, al lado de',
+  summary: 'Almost every phrase for relative position ends in de — that "de" is what lets it attach to a specific landmark, so dropping it leaves the phrase floating with nothing to be near.',
+  sections: [
+    { h: 'The X + de + landmark pattern', html: '<i>cerca de</i>, <i>lejos de</i>, <i>al lado de</i>, <i>al final de</i>, <i>en el centro de</i> — all of them need <i>de</i> before the thing they are relative to: <i>cerca DE la estación</i>, never <i>*cerca la estación</i>.' },
+    { h: 'Cardinal directions follow the same pattern', html: '<i>al norte de</i>, <i>al sur de</i>, <i>al este de</i>, <i>al oeste de</i> all take <i>de</i> too: <i>al norte de España</i>.' },
+    { h: 'En and entre', html: '<i>En</i> places something inside or on a spot (<i>en la cartera</i>); <i>entre</i> places it between two things (<i>entre el supermercado y la cafetería</i>) and needs both reference points named.' }
+  ],
+  exponents: [
+    { es: 'Mi casa está cerca de la estación.', en: 'My house is near the station.', register: 'neutral' },
+    { es: 'El banco está al lado del hotel.', en: 'The bank is next to the hotel.', register: 'neutral', note: 'al lado de + el = del' },
+    { es: 'Hay una calle pequeña entre el supermercado y la cafetería.', en: "There's a small street between the supermarket and the café.", register: 'neutral' },
+    { es: 'Las llaves están en la cartera.', en: 'The keys are in the bag.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'cerca de la estación', en: 'near the station', note: 'correct — de links the position to its landmark' },
+    { es: '*cerca la estación', en: '(wrong)', note: 'de can never be dropped from these compound prepositions' }
+  ],
+  pitfalls: [
+    'Never drop the <i>de</i>: it is <i>cerca DE</i>, <i>lejos DE</i>, <i>al lado DE</i> — not just <i>cerca</i>, <i>lejos</i>, <i>al lado</i> in front of a noun.',
+    '<i>Entre</i> always needs two things named (<i>entre X y Y</i>); it cannot be used with only one landmark the way <i>cerca de</i> can.'
+  ],
+  examples: [
+    { es: 'El parque está al final de esta calle.', en: 'The park is at the end of this street.' },
+    { es: 'Vivimos en el centro de la ciudad.', en: 'We live in the city centre.' },
+    { es: 'Sevilla está al sur de Madrid.', en: 'Seville is south of Madrid.' }
+  ],
+  probes: [
+    { id: 'p:posrel:de', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['cerca la estación', 'cerca de la estación', 'cerca en la estación'], answer: 1 },
+    { id: 'p:posrel:entre', kind: 'mcq', q: '"Hay una farmacia ___ el banco ___ la librería."',
+      options: ['entre / con', 'entre / y', 'cerca / y'], answer: 1 },
+    { id: 'p:posrel:cloze', kind: 'cloze', text: 'El banco está al lado ___ hotel. (del/de el)', accept: ['del'] },
+    { id: 'p:posrel:recall', kind: 'recall', front: 'What word do almost all relative-position phrases need before their landmark?', back: 'de' }
+  ]
+},
+
+{
+  id: 'nt-movimiento-estabilidad-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:89', 'nociones_generales:A1:90', 'nociones_generales:A1:91', 'nociones_generales:A1:92', 'nociones_generales:A1:93'],
+  title: 'Movimiento: ir, venir, viajar',
+  summary: 'Ir and venir both translate as "to go/come," but they point in opposite directions relative to the speaker — get them backwards and you have just told someone to come to a place you are not in.',
+  sections: [
+    { h: 'Ir: away from here', html: '<i>Ir</i> describes movement away from where the speaker currently is: <i>Voy a tu casa</i> (said from my own house).' },
+    { h: 'Venir: toward here (or there)', html: '<i>Venir</i> describes movement TOWARD the speaker\'s position, or toward the position of whoever you are imagining yourself with: <i>Ven a mi casa</i> — never <i>*Ve a mi casa</i>, which would mean "go" away from where you both are.' },
+    { h: 'Manner of movement', html: 'The way you travel is marked with <i>a/en</i>: <i>a pie</i>, <i>en coche</i>, <i>en metro</i>, <i>en tren</i>, <i>en avión</i>.' }
+  ],
+  exponents: [
+    { es: 'Normalmente voy a pie al trabajo.', en: 'I normally walk to work.', register: 'neutral' },
+    { es: '¿Vienes a la fiesta esta noche?', en: 'Are you coming to the party tonight?', register: 'coloquial', note: 'venir — movement toward the speaker' },
+    { es: 'Prefiero viajar en tren.', en: 'I prefer to travel by train.', register: 'neutral' },
+    { es: 'Salimos de casa a las ocho y llegamos a las nueve.', en: 'We leave home at eight and arrive at nine.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¿Vienes a mi fiesta?', en: 'Are you coming to my party?', note: 'venir — toward the speaker\'s own event' },
+    { es: '¿Vas a la fiesta de Ana?', en: 'Are you going to Ana\'s party?', note: 'ir — a party the speaker is not hosting or attending from' }
+  ],
+  pitfalls: [
+    'Use <i>venir</i>, not <i>ir</i>, when inviting someone TO where you already are: <i>Ven aquí</i>, not <i>*Ve aquí</i>.',
+    'Manner of transport takes <i>en</i> for vehicles (<i>en coche, en tren</i>) but <i>a</i> for on foot (<i>a pie</i>), not <i>*en pie</i>.'
+  ],
+  examples: [
+    { es: '—¿Vienes conmigo al cine? —Sí, ahora voy.', en: "—Are you coming with me to the cinema? —Yes, I'm coming now." },
+    { es: 'Mis padres vienen a visitarme el sábado.', en: 'My parents are coming to visit me on Saturday.' },
+    { es: 'Salgo de casa temprano y entro a trabajar a las nueve.', en: 'I leave home early and start work at nine.' }
+  ],
+  probes: [
+    { id: 'p:movest:direccion', kind: 'mcq', q: 'Estás en tu casa. Invitas a un amigo: "___ a mi casa esta tarde."',
+      options: ['Ve', 'Ven', 'Vas'], answer: 1 },
+    { id: 'p:movest:manera', kind: 'mcq', q: '"Voy al trabajo ___ pie."',
+      options: ['en', 'a', 'con'], answer: 1 },
+    { id: 'p:movest:cloze', kind: 'cloze', text: '¿___ conmigo al cine? (are you coming)', accept: ['vienes', 'Vienes'] },
+    { id: 'p:movest:recall', kind: 'recall', front: 'Which verb, ir or venir, moves TOWARD the speaker?', back: 'venir' }
+  ]
+},
+
+{
+  id: 'nt-orientacion-direccion-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:102', 'nociones_generales:A1:103', 'nociones_generales:A1:104', 'nociones_generales:A1:105'],
+  title: 'Orientación: pedir y dar direcciones',
+  summary: 'Giving street directions in Spanish rests on three fixed phrases — todo recto, a la derecha, a la izquierda — combined with an ordinal to count which street you mean.',
+  sections: [
+    { h: 'The three building blocks', html: '<i>Todo recto</i> (straight ahead), <i>a la derecha</i> (to the right), <i>a la izquierda</i> (to the left) cover almost every direction you will ever give or receive.' },
+    { h: 'Counting streets with ordinals', html: 'Combine a direction with an ordinal to be precise: <i>la segunda calle a la derecha</i> ("the second street on the right"), reusing the ordinals from <i>cantidad numérica</i>.' },
+    { h: 'Asking', html: '<i>¿Dónde está…?</i> is the standard way to ask for a location before someone gives you the directions.' }
+  ],
+  exponents: [
+    { es: '¿Dónde está la calle Velázquez?', en: 'Where is Velázquez street?', register: 'neutral' },
+    { es: 'Todo recto y luego la segunda calle a la derecha.', en: 'Straight ahead and then the second street on the right.', register: 'neutral' },
+    { es: 'Gira a la izquierda en el semáforo.', en: 'Turn left at the traffic light.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'a la derecha', en: 'to the right', note: 'derecha — noun-like, the direction' },
+    { es: 'Tienes derecho a preguntar.', en: 'You have the right to ask.', note: 'derecho — a completely different word, "a right"; do not confuse the spelling' }
+  ],
+  pitfalls: [
+    '<i>Derecha</i> (direction) and <i>derecho</i> (a legal right, or "straight" as in <i>todo derecho</i> — a regional variant of <i>todo recto</i>) are easy to confuse in spelling; keep them apart.',
+    'Directions almost always chain an ordinal onto <i>a la derecha/izquierda</i> — bare directions without a street count are vague.'
+  ],
+  examples: [
+    { es: '—¿Dónde está el banco? —Todo recto, y está a la izquierda.', en: '—Where is the bank? —Straight ahead, and it\'s on the left.' },
+    { es: 'Es la tercera calle a la derecha, justo después de la plaza.', en: 'It\'s the third street on the right, just after the square.' },
+    { es: 'Sigue todo recto hasta el semáforo.', en: 'Keep going straight until the traffic light.' }
+  ],
+  probes: [
+    { id: 'p:orient:recto', kind: 'mcq', q: '"Straight ahead" en español:',
+      options: ['a la derecha', 'todo recto', 'al final'], answer: 1 },
+    { id: 'p:orient:ordinal', kind: 'mcq', q: '"The second street on the right":',
+      options: ['la segunda calle a la derecha', 'la dos calle a la derecha', 'la calle segunda derecha'], answer: 0 },
+    { id: 'p:orient:cloze', kind: 'cloze', text: 'Gira a la ___ en el semáforo. (left)', accept: ['izquierda'] },
+    { id: 'p:orient:recall', kind: 'recall', front: 'Three fixed phrases for giving directions', back: 'todo recto, a la derecha, a la izquierda' }
+  ]
+},
+
+{
+  id: 'nt-origen-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:115', 'nociones_generales:A1:116', 'nociones_generales:A1:117'],
+  title: 'Origen: ser + nacionalidad, ser de',
+  summary: 'Two constructions cover where someone is from — ser + a nationality adjective states it as a quality, ser de + place states it as a source — and only the second one works for a city with no adjective of its own.',
+  sections: [
+    { h: 'Ser + nationality adjective', html: '<i>Es cubano</i> treats the origin as a quality, agreeing like any adjective: <i>es cubana</i> for a woman, <i>son cubanos</i> for a group.' },
+    { h: 'Ser de + place', html: '<i>Soy de Sevilla</i> states the SOURCE directly. This is the only option for places with no adjective form — nobody says <i>*es sevillano</i> as reliably as they say <i>es de Sevilla</i>, and it always works, city or country alike.' },
+    { h: 'Asking', html: '<i>¿De dónde eres?</i> is the standard question — note the accented <i>dónde</i>, since it is a real question word here, not the plain <i>donde</i> of a relative clause.' }
+  ],
+  exponents: [
+    { es: 'Luis Alberto es cubano.', en: 'Luis Alberto is Cuban.', register: 'neutral', note: 'nationality as an adjective' },
+    { es: 'Soy de Sevilla.', en: "I'm from Seville.", register: 'neutral', note: 'ser de + place — works for any place, adjective or not' },
+    { es: '—¿De dónde eres? —Soy de Perú.', en: "—Where are you from? —I'm from Peru.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Es cubano.', en: 'He is Cuban.', note: 'nationality adjective — agrees like any other adjective' },
+    { es: 'Es de La Habana.', en: "He's from Havana.", note: 'ser de — the only option for a city, which has no adjective form in ordinary speech' }
+  ],
+  pitfalls: [
+    'Nationality adjectives are NOT capitalized in Spanish, unlike English: <i>es cubano</i>, not <i>*es Cubano</i>.',
+    'A nationality adjective must agree in gender with the person: <i>es cubana</i> for a woman.',
+    '<i>Ser de</i> + place always works, even where no adjective exists — reach for it whenever you are unsure.'
+  ],
+  examples: [
+    { es: 'Mi profesora es mexicana.', en: 'My teacher (f) is Mexican.' },
+    { es: '¿De dónde son ustedes?', en: 'Where are you (all) from?' },
+    { es: 'Somos de un pueblo pequeño cerca de Bogotá.', en: "We're from a small town near Bogotá." }
+  ],
+  probes: [
+    { id: 'p:origen:mayuscula', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Es Cubano.', 'es cubano.', 'Es cubano.'], answer: 2 },
+    { id: 'p:origen:agree', kind: 'mcq', q: '"Mi profesora es ___." (Mexican, feminine)',
+      options: ['mexicano', 'mexicana', 'mexicanos'], answer: 1 },
+    { id: 'p:origen:cloze', kind: 'cloze', text: '¿De ___ eres?', accept: ['dónde'] },
+    { id: 'p:origen:recall', kind: 'recall', front: 'Which construction works for a CITY with no adjective form?', back: 'ser de + place (es de La Habana)' }
+  ]
+},
+
+{
+  id: 'nt-referencias-generales-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:119', 'nociones_generales:A1:120', 'nociones_generales:A1:121', 'nociones_generales:A1:122', 'nociones_generales:A1:123', 'nociones_generales:A1:124', 'nociones_generales:A1:125', 'nociones_generales:A1:126', 'nociones_generales:A1:127', 'nociones_generales:A1:128'],
+  title: 'Referencias temporales: la hora, los días',
+  summary: 'Telling the time and naming days both run on a small, fixed set of building blocks — but Spanish counts the last twenty minutes of the hour DOWN toward the next one, a habit English speakers never expect.',
+  sections: [
+    { h: 'Telling the time', html: '<i>Es la una</i> is the one exception (singular); every other hour is plural: <i>Son las dos</i>. Quarters and halves use <i>y</i> going up (<i>y cuarto, y media</i>) and <i>menos</i> going down toward the next hour (<i>las diez menos veinte</i> = 9:40, not 10:20).' },
+    { h: 'Days of the week', html: '<i>El</i> + day names a specific occurrence with no extra preposition: <i>El jueves voy al teatro</i> — Spanish needs no word for "on" the way English does.' },
+    { h: 'Parts of the day', html: '<i>Por la mañana/tarde/noche</i> is the peninsular pattern; Spanish America commonly says <i>en la mañana/tarde/noche</i> instead — both are correct, just regionally split.' }
+  ],
+  exponents: [
+    { es: '—¿Qué hora es? —Son las nueve y cuarto.', en: "—What time is it? —It's a quarter past nine.", register: 'neutral' },
+    { es: 'Son las diez menos veinte.', en: "It's twenty to ten.", register: 'neutral', note: 'counts down toward the NEXT hour, not the current one' },
+    { es: 'El fin de semana no trabajo.', en: "I don't work on weekends.", register: 'neutral' },
+    { es: 'Nos vemos por la tarde.', en: 'See you in the afternoon.', register: 'neutral', note: '"en la tarde" in much of Spanish America' }
+  ],
+  contrasts: [
+    { es: 'Es la una.', en: "It's one o'clock.", note: 'singular — the one exception' },
+    { es: 'Son las dos.', en: "It's two o'clock.", note: 'plural — every other hour' }
+  ],
+  pitfalls: [
+    '<i>Menos</i> + minutes counts toward the NEXT hour: <i>las diez menos veinte</i> is 9:40, not 10:20.',
+    'Do not add a preposition before <i>el</i> + day of the week: <i>el lunes</i> alone means "on Monday" — <i>*en el lunes</i> is wrong.',
+    'Only <i>una</i> takes the singular <i>es</i>; every other hour takes the plural <i>son</i>.'
+  ],
+  examples: [
+    { es: 'El sábado por la mañana voy al mercado.', en: 'On Saturday morning I go to the market.' },
+    { es: 'La reunión es a mediodía.', en: 'The meeting is at midday.' },
+    { es: '—¿A qué hora cierra? —A las nueve y media.', en: '—What time does it close? —At half past nine.' }
+  ],
+  probes: [
+    { id: 'p:refgen:menos', kind: 'mcq', q: '"Son las diez menos veinte" son las:',
+      options: ['10:20', '9:40', '10:40'], answer: 1 },
+    { id: 'p:refgen:singular', kind: 'mcq', q: '"___ la una." (it\'s one o\'clock)',
+      options: ['Son', 'Es', 'Está'], answer: 1 },
+    { id: 'p:refgen:dia', kind: 'cloze', text: '___ jueves voy al teatro. (on Thursday, no extra preposition)', accept: ['El', 'el'] },
+    { id: 'p:refgen:recall', kind: 'recall', front: 'Which hour takes the singular "es" instead of "son"?', back: 'la una (one o\'clock)' }
+  ]
+},
+
+/* ---------------------------------------------------------------------------
+ * seq 45-47 (futuro, pasado, presente) merged into one lesson: all three are
+ * the SAME time-marker pattern (el + day, en + month, mañana/hoy/ayer) with
+ * 3-4 items each — the real teaching point is that the marker never carries
+ * the tense, so splitting them into three near-identical thin lessons would
+ * hide that point rather than teach it.
+ * ------------------------------------------------------------------------ */
+{
+  id: 'nt-tiempo-futuro-presente-pasado-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:137', 'nociones_generales:A1:138', 'nociones_generales:A1:141',
+         'nociones_generales:A1:142', 'nociones_generales:A1:144', 'nociones_generales:A1:145'],
+  title: 'Futuro, presente y pasado: los mismos marcadores',
+  summary: 'El + day, en + month and hoy/mañana/ayer locate an event in time — but the marker word itself never says WHEN: only the verb tense does, and the exact same "el jueves" can point forward or backward depending on it.',
+  sections: [
+    { h: 'One set of markers, three time frames', html: '<i>El + [día]</i> and <i>en + [mes/estación]</i> work identically for the future, the present routine, or the past — <i>el jueves</i> and <i>en enero</i> carry no built-in tense of their own.' },
+    { h: 'The verb carries the tense, not the marker', html: '<i>El jueves voy al teatro</i> (future, said before Thursday) and <i>El jueves fui al teatro</i> (past, said after Thursday) use the identical marker <i>el jueves</i> — only the verb, <i>voy</i> vs <i>fui</i>, tells you which.' },
+    { h: 'The three words that DO commit on their own', html: '<i>Hoy</i>, <i>mañana</i> and <i>ayer</i> are the exception: they fix the time frame by themselves, which is why they combine naturally with present, near-future and past respectively — <i>Hoy trabajo</i>, <i>Mañana trabajo</i>, <i>Ayer trabajé</i>.' }
+  ],
+  exponents: [
+    { es: 'El jueves voy al teatro.', en: "I'm going to the theatre on Thursday.", register: 'neutral', note: 'a future event, using the present tense to talk about it — very common at A1' },
+    { es: 'Ahora vivo en Lisboa.', en: 'I live in Lisbon now.', register: 'neutral', note: 'presente — ahora fixes it as current' },
+    { es: 'El miércoles pasado fui al médico.', en: 'Last Wednesday I went to the doctor.', register: 'neutral', note: 'the same "el + día" marker, now clearly past thanks to fui and "pasado"' },
+    { es: 'En invierno hace mucho frío aquí.', en: "It's very cold here in winter.", register: 'neutral', note: 'en + estación works for a general truth, any time frame' }
+  ],
+  contrasts: [
+    { es: 'El jueves voy al teatro.', en: "I'm going to the theatre on Thursday.", note: 'future — voy' },
+    { es: 'El jueves fui al teatro.', en: 'On Thursday I went to the theatre.', note: 'past — fui; the marker "el jueves" is identical in both' }
+  ],
+  pitfalls: [
+    'Do not expect <i>el + día</i> or <i>en + mes</i> to tell you the tense — they do not. Watch the verb.',
+    'Only <i>hoy, mañana, ayer</i> fix a time frame on their own; everything else depends on the surrounding verb.',
+    'At A1, the near future is very often expressed with the plain present tense (<i>El jueves voy…</i>), not a special future form.'
+  ],
+  examples: [
+    { es: 'Hoy no tenemos clase, pero mañana sí.', en: "We don't have class today, but we do tomorrow." },
+    { es: 'Ayer llovió todo el día.', en: 'Yesterday it rained all day.' },
+    { es: 'En verano vamos siempre a la playa.', en: 'In summer we always go to the beach.' }
+  ],
+  probes: [
+    { id: 'p:tfpp:marcador', kind: 'mcq', q: '"El jueves voy al teatro" y "El jueves fui al teatro" — ¿qué cambia el tiempo?',
+      options: ['la palabra "jueves"', 'el verbo', 'nada, son iguales'], answer: 1 },
+    { id: 'p:tfpp:fijo', kind: 'mcq', q: '¿Cuál de estas palabras SIEMPRE indica un momento fijo por sí sola?',
+      options: ['el lunes', 'en enero', 'ayer'], answer: 2 },
+    { id: 'p:tfpp:cloze', kind: 'cloze', text: '___ no tenemos clase, pero mañana sí. (today)', accept: ['Hoy', 'hoy'] },
+    { id: 'p:tfpp:recall', kind: 'recall', front: 'What actually carries the tense in "el jueves voy/fui al teatro"?', back: 'the verb, not the day marker' }
+  ]
+},
+
+{
+  id: 'nt-duracion-transcurso-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:174', 'nociones_generales:A1:175', 'nociones_generales:A1:176', 'nociones_generales:A1:177', 'nociones_generales:A1:178'],
+  title: 'Duración: antes, después, empezar, terminar',
+  summary: 'Antes and después order two events against each other, while empezar and terminar frame the edges of a single one — and each of those two verbs insists on its own preposition, a or de, which do not swap.',
+  sections: [
+    { h: 'Ordering two events', html: '<i>Antes</i> (before) and <i>después</i> (after) place one event relative to another: <i>Antes de cenar, me ducho</i>.' },
+    { h: 'Marking the edges of one event', html: '<i>Empezar a</i> + infinitive marks the start; <i>terminar de</i> + infinitive marks the end. The prepositions are fixed and different: <i>Empiezo A trabajar a las nueve</i>, <i>Termino DE trabajar a las cinco</i>.' },
+    { h: 'How much time it takes', html: 'The quantifiers from cantidad relativa reapply to time: <i>mucho/poco/bastante tiempo</i> — <i>Tardo poco tiempo en llegar</i>.' }
+  ],
+  exponents: [
+    { es: 'Antes de dormir, leo un rato.', en: 'Before sleeping, I read for a while.', register: 'neutral' },
+    { es: 'Después del trabajo, voy al gimnasio.', en: 'After work, I go to the gym.', register: 'neutral' },
+    { es: 'Empiezo a trabajar a las nueve.', en: 'I start working at nine.', register: 'neutral', note: 'empezar A + infinitive' },
+    { es: 'Termino de trabajar a las cinco.', en: 'I finish working at five.', register: 'neutral', note: 'terminar DE + infinitive' }
+  ],
+  contrasts: [
+    { es: 'Empiezo a trabajar a las nueve.', en: 'I start working at nine.', note: 'empezar takes A' },
+    { es: 'Termino de trabajar a las cinco.', en: 'I finish working at five.', note: 'terminar takes DE — the opposite preposition' }
+  ],
+  pitfalls: [
+    '<i>Empezar</i> takes <i>a</i>; <i>terminar</i> takes <i>de</i> — they do not share a preposition, and swapping them (<i>*empezar de</i>, <i>*terminar a</i>) is a common slip.',
+    '<i>Antes</i> and <i>después</i> need <i>de</i> before a following infinitive or noun: <i>antes DE cenar</i>, not <i>*antes cenar</i>.'
+  ],
+  examples: [
+    { es: 'Antes de salir, cierro las ventanas.', en: 'Before going out, I close the windows.' },
+    { es: 'La película empieza a las ocho y termina a las diez.', en: 'The film starts at eight and finishes at ten.' },
+    { es: 'Tardo bastante tiempo en preparar la cena.', en: 'It takes me quite a while to make dinner.' }
+  ],
+  probes: [
+    { id: 'p:durtrans:empezar', kind: 'mcq', q: '"Empiezo ___ trabajar a las nueve."',
+      options: ['de', 'a', 'en'], answer: 1 },
+    { id: 'p:durtrans:terminar', kind: 'mcq', q: '"Termino ___ trabajar a las cinco."',
+      options: ['a', 'de', 'en'], answer: 1 },
+    { id: 'p:durtrans:cloze', kind: 'cloze', text: '___ de dormir, leo un rato. (before)', accept: ['Antes', 'antes'] },
+    { id: 'p:durtrans:recall', kind: 'recall', front: 'empezar A vs terminar ___', back: 'DE' }
+  ]
+},
+
+{
+  id: 'nt-frecuencia-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:179', 'nociones_generales:A1:180', 'nociones_generales:A1:181', 'nociones_generales:A1:182'],
+  title: 'Frecuencia: siempre, a veces, nunca',
+  summary: 'Siempre and nunca sit at opposite ends of a scale that normalmente and a veces fill in between — and nunca needs a "no" of its own only when it lands AFTER the verb, not before.',
+  sections: [
+    { h: 'The scale', html: '<i>Siempre</i> (always) → <i>normalmente</i> (usually) → <i>a veces</i> (sometimes) → <i>nunca</i> (never) — a descending order of how often something happens.' },
+    { h: 'Nunca and double negation', html: 'Placed BEFORE the verb, <i>nunca</i> needs nothing else: <i>Nunca como pescado</i>. Placed AFTER the verb, Spanish adds <i>no</i> before it — this is not a contradiction, it is the normal Spanish double negative: <i>No como nunca pescado</i>.' },
+    { h: 'Position', html: 'These adverbs usually sit right before the verb they describe: <i>Siempre desayuno cereales</i>, <i>A veces se levanta tarde</i>.' }
+  ],
+  exponents: [
+    { es: 'Siempre desayuno cereales.', en: 'I always have cereal for breakfast.', register: 'neutral' },
+    { es: 'Nunca como pescado.', en: 'I never eat fish.', register: 'neutral', note: 'nunca before the verb — no extra "no" needed' },
+    { es: 'No como nunca pescado.', en: 'I never eat fish.', register: 'neutral', note: 'same meaning, nunca after the verb — now "no" is required' },
+    { es: 'A veces voy de vacaciones en septiembre.', en: 'Sometimes I go on holiday in September.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Nunca como pescado.', en: 'I never eat fish.', note: 'nunca before verb: no "no" needed' },
+    { es: 'No como nunca pescado.', en: 'I never eat fish.', note: 'nunca after verb: "no" required before the verb — the Spanish double negative' }
+  ],
+  pitfalls: [
+    'Spanish doubles the negative when <i>nunca</i> follows the verb — this is correct grammar, not an error, unlike in English.',
+    'Do not translate the English scale word for word; <i>normalmente</i> sits closer to "usually" than to "normally" in tone.'
+  ],
+  examples: [
+    { es: 'Normalmente me levanto a las siete.', en: 'I usually get up at seven.' },
+    { es: 'A veces cenamos fuera los viernes.', en: 'Sometimes we eat out on Fridays.' },
+    { es: 'Mi hermano nunca desayuna.', en: 'My brother never has breakfast.' }
+  ],
+  probes: [
+    { id: 'p:frecuen:doble', kind: 'mcq', q: '¿Cuál es correcto? (nunca DESPUÉS del verbo)',
+      options: ['Como nunca pescado.', 'No como nunca pescado.', 'Nunca no como pescado.'], answer: 1 },
+    { id: 'p:frecuen:simple', kind: 'mcq', q: '¿Cuál es correcto? (nunca ANTES del verbo)',
+      options: ['Nunca como pescado.', 'No nunca como pescado.', 'Nunca no como pescado.'], answer: 0 },
+    { id: 'p:frecuen:cloze', kind: 'cloze', text: '___ me levanto a las siete. (usually)', accept: ['Normalmente', 'normalmente'] },
+    { id: 'p:frecuen:recall', kind: 'recall', front: 'When does nunca need an extra "no"?', back: 'when it comes AFTER the verb' }
+  ]
+},
+
+{
+  id: 'nt-visibilidad-vision-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:221', 'nociones_generales:A1:222', 'nociones_generales:A1:223'],
+  title: 'Visibilidad: claro, oscuro y los colores',
+  summary: 'Claro and oscuro describe both LIGHT — a bright or dim room — and COLOUR SHADE — light blue versus dark blue — with the exact same pair of words doing two different jobs.',
+  sections: [
+    { h: 'Claro and oscuro: two jobs, one pair of words', html: '<i>Una habitación clara</i> is a bright room; <i>el pelo oscuro</i> is dark hair — same words, lighting in one case, shade in the other. Combined with a colour they mean "light/dark [colour]": <i>azul claro</i>, <i>azul oscuro</i>.' },
+    { h: 'The basic colours', html: '<i>rojo, amarillo, azul, verde, naranja, marrón, blanco, negro, gris</i> — most agree like regular adjectives (<i>roja, rojos, rojas</i>).' },
+    { h: 'Ver vs escuchar', html: '<i>Ver</i> covers sight generally, including "watching" television or a film: <i>ver la televisión</i>, not a separate word for "watch." <i>Escuchar</i> is the active counterpart for sound.' }
+  ],
+  exponents: [
+    { es: 'Tiene los ojos claros.', en: 'She has light-coloured eyes.', register: 'neutral', note: 'claro describing shade' },
+    { es: 'Esta habitación es muy oscura.', en: 'This room is very dark.', register: 'neutral', note: 'oscuro describing light level' },
+    { es: 'Prefiero el azul claro al azul oscuro.', en: 'I prefer light blue to dark blue.', register: 'neutral' },
+    { es: 'No me gusta ver la televisión por la noche.', en: "I don't like watching television at night.", register: 'neutral', note: 'ver, not a separate word for "watch"' }
+  ],
+  contrasts: [
+    { es: 'una habitación clara', en: 'a bright room', note: 'claro describing light level' },
+    { es: 'el pelo claro', en: 'light-coloured hair', note: 'the same word describing colour shade instead' }
+  ],
+  pitfalls: [
+    'Do not hunt for a separate word for "watch" — Spanish uses <i>ver</i> for watching TV or a film, the same verb as plain "to see."',
+    '<i>Claro/oscuro</i> placed after a colour always mean "light/dark," never a separate colour of their own.'
+  ],
+  examples: [
+    { es: 'Su nuevo coche es de color verde oscuro.', en: 'Her new car is dark green.' },
+    { es: '¿Prefieres una habitación clara o más oscura?', en: 'Do you prefer a bright room or a darker one?' },
+    { es: 'Me gusta escuchar música mientras cocino.', en: 'I like listening to music while I cook.' }
+  ],
+  probes: [
+    { id: 'p:vision:dosusos', kind: 'mcq', q: '"Tiene el pelo claro" — ¿de qué habla?',
+      options: ['de la luz de la habitación', 'del color del pelo', 'de la vista'], answer: 1 },
+    { id: 'p:vision:vertv', kind: 'mcq', q: '"To watch television" en español:',
+      options: ['mirar la televisión', 'ver la televisión', 'observar la televisión'], answer: 1 },
+    { id: 'p:vision:cloze', kind: 'cloze', text: 'Prefiero el azul ___ al azul oscuro. (light)', accept: ['claro'] },
+    { id: 'p:vision:recall', kind: 'recall', front: 'What TWO different things can "claro/oscuro" describe?', back: 'light level (of a room) and colour shade' }
+  ]
+},
+
+{
+  id: 'nt-edad-vejez-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:236', 'nociones_generales:A1:237', 'nociones_generales:A1:238', 'nociones_generales:A1:239'],
+  title: 'Edad: tener + años',
+  summary: 'Age in Spanish is something you HAVE, never something you ARE — tener + number + años is the only pattern, and reaching for ser the way English "I am 20" suggests produces nonsense.',
+  sections: [
+    { h: 'Tener, not ser', html: '<i>Tengo veinte años</i> — age is possessed. <i>*Soy veinte años</i> does not exist; <i>ser</i> has no role here at all.' },
+    { h: 'Nuevo and viejo', html: '<i>Nuevo/viejo</i> (new/old) apply to things straightforwardly; used of people they can sound blunt, so <i>mayor</i> ("older," softer) is often preferred in polite reference to age.' },
+    { h: 'Age-linked words for a person', html: '<i>Niño</i> (child), <i>chico</i> (young person/boy), <i>señor</i> (an older man, or simply a polite "sir/gentleman") sketch roughly where someone sits on the age scale without a number.' }
+  ],
+  exponents: [
+    { es: '—¿Cuántos años tienes? —Tengo veinte años.', en: "—How old are you? —I'm twenty.", register: 'neutral', note: 'tener, not ser' },
+    { es: 'Es un edificio muy viejo.', en: "It's a very old building.", register: 'neutral', note: 'viejo applied to a thing, no issue' },
+    { es: 'Mi abuelo ya es mayor.', en: "My grandfather is elderly now.", register: 'neutral', note: 'mayor — softer than viejo when talking about a person' },
+    { es: 'Es un señor muy amable.', en: "He's a very kind gentleman.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Tengo veinte años.', en: "I'm twenty.", note: 'correct — tener' },
+    { es: '*Soy veinte años.', en: '(impossible)', note: 'ser is never used for age' }
+  ],
+  pitfalls: [
+    'Age is always <i>tener</i> + number + <i>años</i> — never <i>ser</i>. This is one of the very first, very sticky A1 errors.',
+    'Calling a person directly <i>viejo/vieja</i> can sound rude; <i>mayor</i> is the polite, neutral alternative.'
+  ],
+  examples: [
+    { es: 'Mi hija tiene cinco años.', en: 'My daughter is five.' },
+    { es: 'Este coche es muy viejo, tiene veinte años.', en: "This car is very old, it's twenty years old." },
+    { es: 'Los niños de esa clase tienen siete u ocho años.', en: 'The children in that class are seven or eight.' }
+  ],
+  probes: [
+    { id: 'p:edad:verbo', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Soy veinte años.', 'Tengo veinte años.', 'Estoy veinte años.'], answer: 1 },
+    { id: 'p:edad:mayor', kind: 'mcq', q: 'Forma más educada de referirse a la edad avanzada de alguien:',
+      options: ['viejo', 'mayor', 'antiguo'], answer: 1 },
+    { id: 'p:edad:cloze', kind: 'cloze', text: 'Mi hija ___ cinco años.', accept: ['tiene'] },
+    { id: 'p:edad:recall', kind: 'recall', front: 'Which verb does Spanish use for age — ser or tener?', back: 'tener' }
+  ]
+},
+
+{
+  id: 'nt-accesibilidad-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:244', 'nociones_generales:A1:245', 'nociones_generales:A1:246'],
+  title: 'Accesibilidad: entrada, salida, abrir, cerrar',
+  summary: 'Entrada and salida name the fixed points where you get in or out; abrir/cerrar name the action of changing access; and estar abierto/cerrado — with estar, not ser — names the resulting, changeable state.',
+  sections: [
+    { h: 'The nouns: fixed points', html: '<i>Entrada</i> (entrance) and <i>salida</i> (exit) name the physical points themselves: <i>La salida está al fondo</i>.' },
+    { h: 'The verbs: the action', html: '<i>Abrir/cerrar</i> describe the act of changing access: <i>La tienda abre a las nueve.</i>' },
+    { h: 'The state: estar, not ser', html: 'Whether something IS open or closed right now is a temporary condition, so it takes <i>estar</i>: <i>La tienda está abierta</i>, never <i>*es abierta</i> in this everyday sense.' }
+  ],
+  exponents: [
+    { es: 'La entrada está a la izquierda.', en: 'The entrance is on the left.', register: 'neutral' },
+    { es: 'La tienda abre a las nueve y cierra a las ocho.', en: 'The shop opens at nine and closes at eight.', register: 'neutral' },
+    { es: 'Está cerrado los domingos.', en: "It's closed on Sundays.", register: 'neutral', note: 'estar for the current, changeable state' }
+  ],
+  contrasts: [
+    { es: 'La tienda abre a las nueve.', en: 'The shop opens at nine.', note: 'the ACTION of opening' },
+    { es: 'La tienda está abierta.', en: 'The shop is open.', note: 'the resulting STATE, with estar' }
+  ],
+  pitfalls: [
+    '<i>Abierto/cerrado</i> describing whether something is currently accessible takes <i>estar</i>, because it can change — not <i>ser</i>.',
+    '<i>Entrada</i> can also mean a ticket (<i>una entrada de cine</i>) — context decides which sense is meant.'
+  ],
+  examples: [
+    { es: '—¿A qué hora cierra el museo? —Cierra a las seis.', en: '—What time does the museum close? —It closes at six.' },
+    { es: 'Hoy está cerrado por vacaciones.', en: "It's closed today for the holidays." },
+    { es: 'La salida de emergencia está al final del pasillo.', en: 'The emergency exit is at the end of the corridor.' }
+  ],
+  probes: [
+    { id: 'p:acces:estado', kind: 'mcq', q: '"La tienda ___ cerrada los domingos."',
+      options: ['es', 'está', 'hay'], answer: 1 },
+    { id: 'p:acces:accion', kind: 'mcq', q: '"La tienda ___ a las nueve." (the action of opening)',
+      options: ['está abierta', 'abre', 'es abierta'], answer: 1 },
+    { id: 'p:acces:cloze', kind: 'cloze', text: 'La ___ está al final del pasillo. (exit)', accept: ['salida'] },
+    { id: 'p:acces:recall', kind: 'recall', front: 'Which verb, ser or estar, describes whether a shop is currently open?', back: 'estar' }
+  ]
+},
+
+{
+  id: 'nt-evaluacion-general-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:249', 'nociones_generales:A1:250', 'nociones_generales:A1:251', 'nociones_generales:A1:252'],
+  title: 'Evaluación general: bueno, malo, bien',
+  summary: 'Bueno/malo evaluate a NOUN and agree with it like any adjective; bien/mal evaluate how you ARE or how something is DONE and never change — confusing the two produces "estoy bueno," which does not mean what a beginner thinks it means.',
+  sections: [
+    { h: 'Bueno / malo: adjectives', html: 'They describe a noun and agree in gender and number: <i>un buen libro</i> (note the shortened <i>buen</i> before a masculine singular noun), <i>una película mala</i>.' },
+    { h: 'Bien / mal: adverbs', html: 'Invariable, they describe how you feel or how something is done: <i>Estoy bien</i>, <i>Canta muy bien</i>. They never agree with anything, because they are not describing a noun.' },
+    { h: 'The trap: estar bueno vs estar bien', html: '<i>Estoy bien</i> means "I\'m well." <i>Estoy bueno</i>, said of oneself, colloquially means something closer to "I\'m good-looking/hot" — not remotely the same message, and a classic beginner slip.' }
+  ],
+  exponents: [
+    { es: 'Es un buen libro.', en: "It's a good book.", register: 'neutral', note: 'bueno shortens to buen before a masculine singular noun' },
+    { es: '—¿Cómo estás? —Estoy bien, gracias.', en: '—How are you? —I\'m well, thanks.', register: 'neutral', note: 'bien — the correct way to say you are well' },
+    { es: 'Canta muy bien.', en: 'She sings very well.', register: 'neutral', note: 'bien describing HOW the action is done' },
+    { es: 'Regular, no muy bien.', en: "So-so, not great.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Estoy bien.', en: "I'm well.", note: 'correct — how you feel' },
+    { es: 'Estoy bueno.', en: '(colloquially: "I look good/hot")', note: 'a different, unintended message — not the way to say you feel well' }
+  ],
+  pitfalls: [
+    'Never use <i>bueno</i> where you mean "well" — <i>estoy bien</i>, not <i>*estoy bueno</i>, unless you really do mean the colloquial sense.',
+    '<i>Bueno</i> shortens to <i>buen</i> only before a masculine singular noun: <i>un buen libro</i>, but <i>una buena idea</i> keeps its full form.'
+  ],
+  examples: [
+    { es: 'Es una buena idea.', en: "It's a good idea." },
+    { es: 'La comida está muy buena hoy.', en: 'The food is very good today.' },
+    { es: '—¿Qué tal el examen? —Regular.', en: '—How was the exam? —So-so.' }
+  ],
+  probes: [
+    { id: 'p:evalgen:sentirse', kind: 'mcq', q: '"How are you?" — "I\'m well":',
+      options: ['Estoy bueno.', 'Estoy bien.', 'Soy bien.'], answer: 1 },
+    { id: 'p:evalgen:apocope', kind: 'mcq', q: '"Es un ___ libro."',
+      options: ['bueno', 'buen', 'buena'], answer: 1 },
+    { id: 'p:evalgen:cloze', kind: 'cloze', text: 'Canta muy ___. (well, describing how she sings)', accept: ['bien'] },
+    { id: 'p:evalgen:recall', kind: 'recall', front: 'To say you FEEL well, do you use bueno or bien?', back: 'bien' }
+  ]
+},
+
+{
+  id: 'nt-valor-precio-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:256', 'nociones_generales:A1:257', 'nociones_generales:A1:258'],
+  title: 'Valor, precio: costar, barato, caro',
+  summary: 'Costar and pagar split the money question in two — costar is what the ITEM does (it costs a figure), pagar is what the PERSON does (they hand over money) — and only costar answers "how much is it?"',
+  sections: [
+    { h: 'Costar: the item states its price', html: '<i>¿Cuánto cuesta?</i> is the standard way to ask a price; the item is the grammatical subject of <i>costar</i>: <i>Este libro cuesta quince euros.</i>' },
+    { h: 'Barato and caro: judging the figure', html: 'These adjectives judge whether the price is high or low: <i>Es muy caro</i>, <i>Es bastante barato</i>.' },
+    { h: 'Pagar: what the person does', html: '<i>Pagar</i> is the buyer\'s action, not the price itself: <i>Pago veinte euros</i> means "I hand over twenty euros," and cannot be used to ask a price.' }
+  ],
+  exponents: [
+    { es: '—¿Cuánto cuesta esto? —Cuesta diez euros.', en: '—How much is this? —It costs ten euros.', register: 'neutral' },
+    { es: 'Es muy caro para lo que es.', en: "It's very expensive for what it is.", register: 'neutral' },
+    { es: 'Este mercado tiene precios baratos.', en: 'This market has cheap prices.', register: 'neutral' },
+    { es: 'Pagué treinta euros por la entrada.', en: 'I paid thirty euros for the ticket.', register: 'neutral', note: 'pagar — the buyer\'s action' }
+  ],
+  contrasts: [
+    { es: '¿Cuánto cuesta?', en: 'How much is it?', note: 'costar — asking the price, correct' },
+    { es: '*¿Cuánto pagas?', en: '(does not ask a price)', note: 'pagar names the buyer\'s action, not the item\'s price' }
+  ],
+  pitfalls: [
+    'To ask a price, use <i>¿Cuánto cuesta/es?</i> — not a question built on <i>pagar</i>, which describes the buyer\'s action, not the item\'s price.',
+    '<i>Caro/barato</i> judge a price as high or low; they do not state a figure themselves.'
+  ],
+  examples: [
+    { es: '—¿Cuánto cuestan estos zapatos? —Cuestan cuarenta euros.', en: '—How much are these shoes? —They cost forty euros.' },
+    { es: 'En este barrio todo es más caro.', en: 'Everything is more expensive in this neighbourhood.' },
+    { es: 'Al final pagué menos de lo que pensaba.', en: 'In the end I paid less than I expected.' }
+  ],
+  probes: [
+    { id: 'p:valprec:preguntar', kind: 'mcq', q: 'Para preguntar el precio de algo, dices:',
+      options: ['¿Cuánto pagas?', '¿Cuánto cuesta?', '¿Cuánto es caro?'], answer: 1 },
+    { id: 'p:valprec:sujeto', kind: 'mcq', q: '"Este libro ___ quince euros." (the book is the subject)',
+      options: ['paga', 'cuesta', 'compra'], answer: 1 },
+    { id: 'p:valprec:cloze', kind: 'cloze', text: 'Es muy ___ para lo que es. (expensive)', accept: ['caro'] },
+    { id: 'p:valprec:recall', kind: 'recall', front: 'Which verb names the ITEM\'s price, and which names the BUYER\'s action?', back: 'costar (item) vs pagar (buyer)' }
+  ]
+},
+
+/* ============================================================================
+ * BATCH — A2 grammar, seq 90-132 of spec/syllabus-draft.json (a targeted
+ * subset: comparatives, article/quantifier usage beyond A1 distribution,
+ * interrogatives/exclamatives, the clitic pronoun system, and the two basic
+ * clause connectors si/porque. The eight tense-FORM units at this level
+ * (presente irregular, imperfecto, indefinido, perfecto, imperativo,
+ * gerundio, infinitivo, participio) are deferred: their usage contrast is
+ * already taught by data/grammar.js's preterite-imperfect concept lesson,
+ * and raw conjugation is drilled directly from data/verbs.js by the engine.
+ * ========================================================================== */
+{
+  id: 'gr-comparativo-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:64', 'gramatica:A2:65', 'gramatica:A2:66', 'gramatica:A2:67'],
+  title: 'Comparativos: superioridad, igualdad, inferioridad',
+  summary: 'Every ordinary comparison in Spanish is built from three frames — más...que, tan...como, menos...que — but a handful of everyday adjectives refuse the pattern and use their own irregular comparative word instead.',
+  sections: [
+    { h: 'The three frames', html: '<b>Superiority:</b> <i>más + adjetivo/sustantivo + que</i> — <i>más alto que</i>. <b>Equality:</b> <i>tan + adjetivo + como</i> (or <i>tanto/a/os/as + sustantivo + como</i>) — <i>tan alto como</i>, <i>tanta paciencia como</i>. <b>Inferiority:</b> <i>menos...que</i> — <i>menos caro que</i>.' },
+    { h: 'The irregulars', html: '<i>Bueno/malo</i> do not take <i>más</i>: <i>mejor</i> (better) and <i>peor</i> (worse) replace <i>*más bueno</i> and <i>*más malo</i> outright.' },
+    { h: 'Grande and pequeño: two comparatives each', html: 'These have BOTH a regular form for physical size (<i>más grande</i>, <i>más pequeño</i>) and an irregular one reserved for AGE (<i>mayor</i>, <i>menor</i>): <i>mi hermano mayor</i> (my older brother), but <i>esta casa es más grande</i> (this house is bigger).' }
+  ],
+  contrasts: [
+    { es: 'Este libro es mejor que el otro.', en: 'This book is better than the other.', note: 'mejor, never *más bueno' },
+    { es: 'Soy tan alto como tú.', en: 'I am as tall as you.', note: 'equality: tan...como' },
+    { es: 'Mi hermano mayor vive en Lima.', en: 'My older brother lives in Lima.', note: 'mayor for AGE' },
+    { es: 'Esta casa es más grande que la mía.', en: 'This house is bigger than mine.', note: 'más grande for physical SIZE — a different word from mayor' }
+  ],
+  pitfalls: [
+    'Never say <i>*más bueno</i> or <i>*más malo</i> — <i>mejor/peor</i> are the only comparatives for <i>bueno/malo</i>.',
+    '<i>Mayor/menor</i> compare AGE; <i>más grande/más pequeño</i> compare physical SIZE — do not use one for the other\'s job.',
+    'Equality with an adjective uses <i>tan</i>; equality with a noun uses <i>tanto/a/os/as</i>, which must agree — <i>tanta gente como</i>, not <i>*tan gente como</i>.'
+  ],
+  examples: [
+    { es: 'Este piso es tan caro como el del centro.', en: 'This flat is as expensive as the one downtown.' },
+    { es: 'Tengo menos tiempo que antes.', en: 'I have less time than before.' },
+    { es: 'Ella es mayor que yo, pero yo soy más alto.', en: 'She is older than me, but I am taller.' }
+  ],
+  probes: [
+    { id: 'p:comparat:irregular', kind: 'mcq', q: '"Este restaurante es ___ que el otro." (better)',
+      options: ['más bueno', 'mejor', 'más bien'], answer: 1 },
+    { id: 'p:comparat:edad', kind: 'mcq', q: '"Mi hermano ___ vive en Lima." (older, age)',
+      options: ['más grande', 'mayor', 'más viejo'], answer: 1 },
+    { id: 'p:comparat:cloze', kind: 'cloze', text: 'Soy ___ alto como tú.', accept: ['tan'] },
+    { id: 'p:comparat:recall', kind: 'recall', front: 'Comparatives of bueno and malo', back: 'mejor, peor (never más bueno/más malo)' }
+  ]
+},
+
+{
+  id: 'gr-articulo-definido-valores-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:85', 'gramatica:A2:86', 'gramatica:A2:87', 'gramatica:A2:88', 'gramatica:A2:89'],
+  title: 'El artículo definido: usos más allá de "the"',
+  summary: 'Beyond simply meaning "the," the definite article marks something the situation already makes obvious, states a fact about a whole category, and can replace a possessive with body parts — jobs English hands to entirely different words.',
+  sections: [
+    { h: 'Deictic: obvious from the situation', html: 'A first mention can still take <i>el/la</i> if the thing is visibly present or contextually obvious: <i>¿Puedes cerrar la puerta?</i> — nobody had to mention the door first; it is simply there.' },
+    { h: 'Generic value', html: 'The article states something about an ENTIRE category, not one specific member of it: <i>El curso es interesante</i> can mean "courses (in general) are interesting" as much as "the course is." English usually drops the article for this generic sense; Spanish keeps it.' },
+    { h: 'Standing in for a possessive', html: 'With body parts, Spanish typically uses the article where English uses a possessive: <i>Me duele la cabeza</i>, not <i>*Me duele mi cabeza</i> — the reflexive/object pronoun already shows whose head it is.' }
+  ],
+    contrasts: [
+    { es: 'Me duele la cabeza.', en: 'My head hurts.', note: 'correct — article, not possessive' },
+    { es: '*Me duele mi cabeza.', en: '(unnatural)', note: 'doubling the possession is redundant once "me" already marks whose head it is' }
+  ],
+  pitfalls: [
+    'Do not add a possessive to a body part already marked by a reflexive/object pronoun: <i>me lavo las manos</i>, not <i>*me lavo mis manos</i>.',
+    'A generic statement about a whole category still takes the article in Spanish, where English often drops it: <i>Los perros son leales</i> ("Dogs are loyal"), not a bare noun.'
+  ],
+  examples: [
+    { es: 'Se rompió la pierna esquiando.', en: 'He broke his leg skiing.' },
+    { es: 'El chocolate engorda.', en: 'Chocolate is fattening.' },
+    { es: '¿Me pasas la sal?', en: 'Can you pass me the salt?' }
+  ],
+  probes: [
+    { id: 'p:artdefval:cuerpo', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Me duele mi cabeza.', 'Me duele la cabeza.', 'Me duele una cabeza.'], answer: 1 },
+    { id: 'p:artdefval:generico', kind: 'mcq', q: '"El chocolate engorda" habla de:',
+      options: ['un chocolate concreto', 'el chocolate en general', 'ningún chocolate'], answer: 1 },
+    { id: 'p:artdefval:cloze', kind: 'cloze', text: '¿Me pasas ___ sal? (the salt, visible on the table)', accept: ['la'] },
+    { id: 'p:artdefval:recall', kind: 'recall', front: 'What does the article usually replace with body parts?', back: 'a possessive (me duele la cabeza, not mi cabeza)' }
+  ]
+},
+
+{
+  id: 'gr-articulo-indefinido-valores-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:109', 'gramatica:A2:110', 'gramatica:A2:111', 'gramatica:A2:112', 'gramatica:A2:113'],
+  title: 'El artículo indefinido: valor aproximativo',
+  summary: 'Unos/unas placed before a number does not mean "some of them" — it softens the number into an estimate, "around twenty," and the same mechanism lets the article replace a possessive the way la/el does with body parts.',
+  sections: [
+    { h: 'Approximation before a number', html: '<i>Unas veinte personas</i> means "around twenty people," not a random subset of some twenty people. This is the same indefinite article, doing an entirely different job than "a/an."' },
+    { h: 'Un/una with body parts', html: 'Parallel to the definite article, the indefinite one also replaces a possessive when the exact identity does not matter: <i>Me duele un dedo</i> ("one of my fingers hurts"), not <i>*me duele mi dedo</i>.' },
+    { h: 'Nominalizing ellipsis', html: 'Once the noun has been named, <i>un/una</i> can carry the sentence alone: <i>Hay dos ventanas; una está rota</i> — "one [of them]" needs no repeated noun.' }
+  ],
+    contrasts: [
+    { es: 'unas veinte personas', en: 'around twenty people', note: 'approximation — the real number is close to twenty' },
+    { es: 'veinte personas', en: 'twenty people', note: 'exact' }
+  ],
+  pitfalls: [
+    '<i>Unos/unas</i> before a number always signals "approximately," never "some (but not all) of."',
+    'Like the definite article, the indefinite one also replaces a possessive with body parts when identity is not the point: <i>un dedo</i>, not <i>*mi dedo</i>, when it does not matter which finger.'
+  ],
+  examples: [
+    { es: 'Cuesta unos treinta euros.', en: 'It costs around thirty euros.' },
+    { es: 'Me ha salido una mancha en la camisa.', en: 'I\'ve got a stain on my shirt.' },
+    { es: 'Compré tres libros; uno era en español.', en: 'I bought three books; one was in Spanish.' }
+  ],
+  probes: [
+    { id: 'p:artindval:aproximado', kind: 'mcq', q: '"Había unas veinte personas" significa:',
+      options: ['exactamente veinte', 'aproximadamente veinte', 'menos de veinte'], answer: 1 },
+    { id: 'p:artindval:cuerpo', kind: 'mcq', q: '¿Cuál es correcto? (no importa cuál dedo)',
+      options: ['Me duele mi dedo.', 'Me duele un dedo.', 'Me duele el mi dedo.'], answer: 1 },
+    { id: 'p:artindval:cloze', kind: 'cloze', text: 'Cuesta ___ treinta euros. (around)', accept: ['unos'] },
+    { id: 'p:artindval:recall', kind: 'recall', front: '"unos/unas" + a number means what?', back: 'approximately (not "some of")' }
+  ]
+},
+
+{
+  id: 'gr-nombres-escuetos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:124', 'gramatica:A2:125', 'gramatica:A2:126'],
+  title: 'Nombres escuetos: sin artículo ni cuantificador',
+  summary: 'Dropping every determiner — no article, no number, nothing — turns a noun into an unspecified amount: a bare singular for something uncountable, a bare plural for countable things taken in no particular quantity.',
+  sections: [
+    { h: 'Bare singular: mass nouns', html: 'An uncountable noun with no determiner at all names an unspecified amount: <i>Bebe agua</i> ("she drinks water" — no particular quantity in mind).' },
+    { h: 'Bare plural: countable nouns', html: 'A countable noun in the bare plural means "more than one, number unspecified": <i>Escribe cartas</i> ("she writes letters" — an unstated number of them).' },
+    { h: 'Where it breaks down', html: 'Some verbs need a properly "delimited" subject and reject a fully bare noun there: <i>*Gente llegó tarde</i> sounds off; Spanish prefers <i>Llegó gente tarde</i> (verb first) or adds a determiner.' }
+  ],
+    contrasts: [
+    { es: 'Bebe agua.', en: 'She drinks water.', note: 'bare singular — mass, unspecified amount' },
+    { es: 'Bebe el agua.', en: 'She drinks the water.', note: 'specific, known water — a completely different claim' }
+  ],
+  pitfalls: [
+    'A bare noun opening a sentence as its subject can sound odd with certain verbs — Spanish often prefers to put the verb first instead: <i>Llegó gente</i>, not <i>*Gente llegó</i>.',
+    'Dropping the determiner changes the meaning from something specific to something unspecified — it is a real grammatical choice, not free variation.'
+  ],
+  examples: [
+    { es: 'No tengo dinero esta semana.', en: "I don't have money this week." },
+    { es: 'Compramos fruta en el mercado.', en: 'We buy fruit at the market.' },
+    { es: 'Hay estudiantes en el pasillo.', en: 'There are students in the corridor.' }
+  ],
+  probes: [
+    { id: 'p:escuetos:masa', kind: 'mcq', q: '"She drinks water" (unspecified amount):',
+      options: ['Bebe el agua.', 'Bebe agua.', 'Bebe una agua.'], answer: 1 },
+    { id: 'p:escuetos:orden', kind: 'mcq', q: 'Más natural:',
+      options: ['Gente llegó tarde.', 'Llegó gente tarde.', 'La gente llegó tarde nunca.'], answer: 1 },
+    { id: 'p:escuetos:cloze', kind: 'cloze', text: 'No tengo ___ esta semana. (money, unspecified amount)', accept: ['dinero'] },
+    { id: 'p:escuetos:recall', kind: 'recall', front: 'A bare PLURAL noun (no article, no number) means what?', back: 'more than one, unspecified how many' }
+  ]
+},
+
+{
+  id: 'gr-interrogativos-exclamativos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:277', 'gramatica:A2:279', 'gramatica:A2:281', 'gramatica:A2:285', 'gramatica:A2:286', 'gramatica:A2:287'],
+  title: 'Interrogativos y exclamativos: qué, cuál, cómo',
+  summary: '¿Qué? asks for a definition or description; ¿cuál? asks you to pick from a set that is already understood — English collapses both into "what," which is exactly why Spanish learners blur them, especially when asking someone\'s name.',
+  sections: [
+    { h: 'Qué: open-ended', html: '<i>¿Qué es esto?</i> asks what something IS, with no assumed set of options — it wants a definition or description.' },
+    { h: 'Cuál: pick from a set', html: '<i>¿Cuál prefieres, el rojo o el azul?</i> asks you to choose among known options. Famously, <i>¿Cuál es tu nombre?</i> — not <i>*¿Qué es tu nombre?</i> — is how Spanish asks your name, treating it as one answer selected from all possible names.' },
+    { h: 'The same words, exclamative', html: 'Drop the question and add feeling, and <i>qué</i> becomes an exclamation with no change of form: <i>¡Qué bonito!</i>, <i>¡Qué bien!</i>, <i>¡Qué bonito es!</i> — with an adjective, an adverb, or a full copular clause.' }
+  ],
+    contrasts: [
+    { es: '¿Qué es Luis?', en: 'What does Luis do (profession)?', note: 'open definition — asking what category he falls into' },
+    { es: '¿Cuál es tu nombre?', en: "What's your name?", note: 'cuál — selecting among possible names, not defining "name" itself' }
+  ],
+  pitfalls: [
+    '"What is your name?" is <i>¿Cuál es tu nombre?</i> in Spanish, never <i>*¿Qué es tu nombre?</i>',
+    'The exclamative <i>qué</i> never changes form for gender or number — <i>¡Qué bonitas!</i> uses the plural adjective, not a plural qué.'
+  ],
+  examples: [
+    { es: '¿Cuál de estos dos coches te gusta más?', en: 'Which of these two cars do you like more?' },
+    { es: '¡Qué difícil es este examen!', en: 'This exam is so hard!' },
+    { es: '¿Qué haces los fines de semana?', en: 'What do you do on weekends?' }
+  ],
+  probes: [
+    { id: 'p:interexcl:nombre', kind: 'mcq', q: '"What\'s your name?" en español:',
+      options: ['¿Qué es tu nombre?', '¿Cuál es tu nombre?', '¿Cómo es tu nombre?'], answer: 1 },
+    { id: 'p:interexcl:eleccion', kind: 'mcq', q: '"___ prefieres, este o aquel?" (choosing between two)',
+      options: ['Qué', 'Cuál', 'Cómo'], answer: 1 },
+    { id: 'p:interexcl:cloze', kind: 'cloze', text: '¡___ bien cocinas! (exclamative "how well")', accept: ['Qué', 'qué'] },
+    { id: 'p:interexcl:recall', kind: 'recall', front: 'qué vs cuál — which one asks you to CHOOSE from known options?', back: 'cuál' }
+  ]
+},
+
+{
+  id: 'gr-cuantificadores-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:176', 'gramatica:A2:177', 'gramatica:A2:178', 'gramatica:A2:183', 'gramatica:A2:184', 'gramatica:A2:185'],
+  title: 'Cuantificadores: todo, otro, demasiado, nada',
+  summary: 'Todo needs a determiner riding along with it — todos LOS días, never a bare "todo días" — while otro flatly refuses one, because otro already does the determiner\'s job by itself.',
+  sections: [
+    { h: 'Todo: needs a companion determiner', html: '<i>Todo/toda/todos/todas</i> must combine with an article, possessive or demonstrative before a noun: <i>todos los días</i>, <i>todos mis amigos</i> — never a bare <i>*todo días</i>. Alone, without a noun, it can answer a question directly: <i>—¿Comiste algo? —Todo.</i>' },
+    { h: 'Otro: never takes an article', html: '<i>Otro café</i>, never <i>*un otro café</i> — a direct calque from English "another" that does not work in Spanish. <i>Otro</i> already carries the indefinite sense that <i>un</i> would add.' },
+    { h: 'Demasiado and nada', html: '<i>Demasiado</i> agrees when it quantifies a noun (<i>demasiada gente</i>) but freezes when it modifies a verb or adjective (<i>habla demasiado</i>, <i>es demasiado caro</i>) — the same agree/freeze split as <i>mucho/poco</i>. <i>Nada</i> sits at the negative pole and, like <i>nunca</i>, needs <i>no</i> before the verb if it follows it: <i>No sé nada</i>.' }
+  ],
+    contrasts: [
+    { es: '¿Me das otro café?', en: 'Can I have another coffee?', note: 'correct — otro alone' },
+    { es: '*¿Me das un otro café?', en: '(wrong — calque from English "another")', note: 'otro never takes an article' }
+  ],
+  pitfalls: [
+    'Never put an article before <i>otro</i> — this is one of the most persistent transfer errors from English "another."',
+    '<i>Todo</i> before a countable noun needs a determiner riding with it; it cannot stand alone in front of the noun.'
+  ],
+  examples: [
+    { es: 'Todas mis amigas viven cerca.', en: 'All my friends live nearby.' },
+    { es: 'Prueba otra vez.', en: 'Try again (another time).' },
+    { es: 'Este examen es demasiado difícil.', en: 'This exam is too difficult.' }
+  ],
+  probes: [
+    { id: 'p:cuant:otro', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['un otro café', 'otro café', 'el otro un café'], answer: 1 },
+    { id: 'p:cuant:todo', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['todo días', 'todos los días', 'todo los días'], answer: 1 },
+    { id: 'p:cuant:cloze', kind: 'cloze', text: 'Este examen es ___ difícil. (too, modifying the adjective — invariable)', accept: ['demasiado'] },
+    { id: 'p:cuant:recall', kind: 'recall', front: 'Does "otro" ever take an article in Spanish?', back: 'no — never (otro café, not un otro café)' }
+  ]
+},
+
+{
+  id: 'gr-pronombres-atonos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:231', 'gramatica:A2:232', 'gramatica:A2:233', 'gramatica:A2:240', 'gramatica:A2:241', 'gramatica:A2:244'],
+  title: 'Pronombres átonos: OD y OI',
+  summary: 'Me, te, nos and os do double duty as both direct and indirect object, but the third person splits — lo/la/los/las for the direct object, le/les for the indirect — which is exactly where confusion, and le doubling as lo, starts.',
+  sections: [
+    { h: 'Shared forms: 1st and 2nd person', html: '<i>Me, te, nos, os</i> work identically whether the pronoun is a direct or an indirect object: <i>me ve</i> (sees me, OD), <i>me da el libro</i> (gives me the book, OI).' },
+    { h: 'Third person splits', html: 'Direct object: <i>lo/la/los/las</i>, agreeing in gender and number with what they replace. Indirect object: <i>le/les</i>, with no gender distinction at all.' },
+    { h: 'Le becomes se before lo/la/los/las', html: 'When both an indirect and a direct object pronoun combine in the third person, <i>le/les</i> is replaced by <i>se</i>: <i>Le doy el libro → Se lo doy</i>, never <i>*Le lo doy</i>.' }
+  ],
+    contrasts: [
+    { es: 'Le doy el libro.', en: 'I give him/her the book.', note: 'le alone — no direct object pronoun yet' },
+    { es: 'Se lo doy.', en: 'I give it to him/her.', note: 'le → se, forced by the following lo' }
+  ],
+  pitfalls: [
+    '<i>*Le lo doy</i> is always wrong — <i>le/les</i> becomes <i>se</i> immediately before <i>lo/la/los/las</i>, with no exception.',
+    'The direct-object pronoun must agree in gender with what it replaces (<i>lo</i> for masculine, <i>la</i> for feminine); the indirect-object <i>le/les</i> never changes for gender.'
+  ],
+  examples: [
+    { es: '¿Me prestas el coche? — Sí, te lo presto.', en: '—Will you lend me the car? —Yes, I\'ll lend it to you.' },
+    { es: 'No los he visto desde ayer.', en: "I haven't seen them since yesterday." },
+    { es: 'Se lo expliqué dos veces.', en: 'I explained it to them/him/her twice.' }
+  ],
+  probes: [
+    { id: 'p:pratonos:sele', kind: 'mcq', q: '"Le doy el libro" + "lo" combinados:',
+      options: ['Le lo doy.', 'Se lo doy.', 'Lo le doy.'], answer: 1 },
+    { id: 'p:pratonos:genero', kind: 'mcq', q: '"¿Conoces a María?" — "Sí, ___ conozco."',
+      options: ['lo', 'la', 'le'], answer: 1 },
+    { id: 'p:pratonos:cloze', kind: 'cloze', text: '¿Me prestas el coche? — Sí, te ___ presto.', accept: ['lo'] },
+    { id: 'p:pratonos:recall', kind: 'recall', front: 'What does "le/les" become right before lo/la/los/las?', back: 'se' }
+  ]
+},
+
+{
+  id: 'gr-pronombres-tonicos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:252', 'gramatica:A2:253', 'gramatica:A2:255', 'gramatica:A2:256'],
+  title: 'Pronombres tónicos: mí, ti, conmigo',
+  summary: 'After a preposition, yo and tú switch to the special forms mí and ti — and con fuses with them into two irregular words, conmigo and contigo, that no ordinary rule for combining a preposition with a pronoun would predict.',
+  sections: [
+    { h: 'Mí and ti after a preposition', html: 'Most prepositions take the tonic forms <i>mí</i> and <i>ti</i> instead of <i>yo/tú</i>: <i>para mí</i>, <i>sin ti</i>, <i>de mí</i>. Every other person keeps its subject-pronoun shape (<i>para él</i>, <i>para nosotros</i>).' },
+    { h: 'Con + mí/ti: irregular fusion', html: '<i>Con</i> does not combine normally — it fuses into <i>conmigo</i> and <i>contigo</i>, single irregular words. <i>*con mí</i> and <i>*con ti</i> simply do not exist.' },
+    { h: 'Doubling for emphasis', html: 'A tonic pronoun after <i>a</i> often accompanies the unstressed one for contrast or clarity, rather than replacing it: <i>A mí me gusta el café, a ti te gusta el té</i> — both pronouns appear together.' }
+  ],
+    contrasts: [
+    { es: '¿Vienes conmigo?', en: 'Are you coming with me?', note: 'correct — the fused irregular form' },
+    { es: '*¿Vienes con mí?', en: '(does not exist)', note: 'con never combines with mí the ordinary way' }
+  ],
+  pitfalls: [
+    '<i>Conmigo/contigo</i> are irregular, fused words — never write or say <i>*con mí</i>, <i>*con ti</i>.',
+    'When you use the tonic pronoun for emphasis (<i>a mí, a ti</i>), the unstressed pronoun (<i>me, te</i>) still has to appear too — the tonic form does not replace it.'
+  ],
+  examples: [
+    { es: '¿Hay algún mensaje para mí?', en: 'Is there any message for me?' },
+    { es: 'No puedo vivir sin ti.', en: "I can't live without you." },
+    { es: 'A ella le encanta el jazz; a mí, el rock.', en: 'She loves jazz; I love rock.' }
+  ],
+  probes: [
+    { id: 'p:prtonicos:conmigo', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['con mí', 'conmigo', 'con yo'], answer: 1 },
+    { id: 'p:prtonicos:preposicion', kind: 'mcq', q: '"Este regalo es para ___." (you, singular informal)',
+      options: ['tú', 'ti', 'te'], answer: 1 },
+    { id: 'p:prtonicos:cloze', kind: 'cloze', text: 'No puedo vivir sin ___. (you)', accept: ['ti'] },
+    { id: 'p:prtonicos:recall', kind: 'recall', front: 'What are the irregular fused forms of con + mí/ti?', back: 'conmigo, contigo' }
+  ]
+},
+
+{
+  id: 'gr-condicionales-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:574', 'gramatica:A2:575', 'gramatica:A2:576', 'gramatica:A2:577'],
+  title: 'Condicionales: si + presente',
+  summary: 'At this level a si-clause stays entirely in the indicative — a real, open condition takes the present tense in both halves, with no subjunctive involved yet, and the word "si" itself is easy to confuse in spelling with "sí."',
+  sections: [
+    { h: 'The pattern', html: 'A real, open possibility: <i>si + presente de indicativo</i>, and the main clause also in the present (or an imperative): <i>Si quieres ir al cine, puedes comprar la entrada por Internet.</i>' },
+    { h: 'Si vs sí', html: '<i>Si</i> (if — the conjunction) never carries a written accent. <i>Sí</i> (yes; or the emphatic/reflexive pronoun) always does. They sound identical but are spelled differently and mean unrelated things.' }
+  ],
+    contrasts: [
+    { es: 'Si quieres, vamos.', en: 'If you want, we\'ll go.', note: 'si — the conjunction, no accent' },
+    { es: '—¿Vamos? —Sí, vamos.', en: '—Shall we go? —Yes, let\'s go.', note: 'sí — "yes," always accented' }
+  ],
+  pitfalls: [
+    '<i>Si</i> (if) is never accented; <i>sí</i> (yes) always is — this is a common written error, not a matter of pronunciation.',
+    'At this level, keep both halves of a real condition in the present indicative — do not reach for the subjunctive yet.'
+  ],
+  examples: [
+    { es: 'Si no entiendes, pregúntame.', en: "If you don't understand, ask me." },
+    { es: 'Si tienes tiempo esta tarde, llámame.', en: 'If you have time this afternoon, call me.' },
+    { es: 'Si hace buen tiempo, vamos a la playa.', en: "If the weather's good, we're going to the beach." }
+  ],
+  probes: [
+    { id: 'p:condic:acento', kind: 'mcq', q: '"Si quieres" (if) — ¿lleva acento?',
+      options: ['sí, siempre', 'no, nunca', 'solo en preguntas'], answer: 1 },
+    { id: 'p:condic:tiempo', kind: 'mcq', q: '"Si ___ (llover), no salimos." (real condition, present)',
+      options: ['llueve', 'llover', 'llovería'], answer: 0 },
+    { id: 'p:condic:cloze', kind: 'cloze', text: '___ tienes hambre, hay fruta. (if)', accept: ['Si', 'si'] },
+    { id: 'p:condic:recall', kind: 'recall', front: 'Does "si" (if) carry a written accent?', back: 'no — never (sí with an accent means "yes")' }
+  ]
+},
+
+{
+  id: 'gr-causales-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:558', 'gramatica:A2:559', 'gramatica:A2:560', 'gramatica:A2:561', 'gramatica:A2:562'],
+  title: 'Causales: porque, como, por',
+  summary: 'Porque and como state the exact same cause-effect logic, but only their position is interchangeable — como must open the sentence, porque almost always follows the result it explains.',
+  sections: [
+    { h: 'Porque: after the result', html: '<i>No he venido porque estaba enfermo</i> — the cause follows the effect it explains, and this is by far the most common order.' },
+    { h: 'Como: before the result', html: '<i>Como estaba enfermo, no he venido</i> says exactly the same thing, but <i>como</i> must open the sentence — you cannot move it to the end the way <i>porque</i> stays at the end.' },
+    { h: 'Por + noun/infinitive: no full clause needed', html: 'When the cause is short, <i>por</i> attaches directly to a noun or infinitive rather than a full clause: <i>Trabajo por dinero</i>, <i>No vino por el mal tiempo</i>.' }
+  ],
+    contrasts: [
+    { es: 'Como tengo hambre, voy a comer.', en: 'Since I\'m hungry, I\'m going to eat.', note: 'como opens the sentence' },
+    { es: 'Voy a comer porque tengo hambre.', en: "I'm going to eat because I'm hungry.", note: 'porque — same logic, opposite order' }
+  ],
+  pitfalls: [
+    '<i>Como</i> (cause) MUST open the sentence — <i>*Voy a comer, como tengo hambre</i> does not work; switch to <i>porque</i> if the cause comes second.',
+    'Do not confuse causal <i>como</i> with <i>como</i> meaning "like/as" (<i>Habla como un experto</i>) — same word, unrelated function, decided entirely by context.'
+  ],
+  examples: [
+    { es: 'Como no tenía dinero, no fui al concierto.', en: "Since I didn't have money, I didn't go to the concert." },
+    { es: 'Llegamos tarde porque hubo un accidente.', en: 'We arrived late because there was an accident.' },
+    { es: 'Lo hizo por amor, no por obligación.', en: 'She did it out of love, not obligation.' }
+  ],
+  probes: [
+    { id: 'p:causal:posicion', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Voy a comer, como tengo hambre.', 'Como tengo hambre, voy a comer.', 'Tengo hambre como voy a comer.'], answer: 1 },
+    { id: 'p:causal:conector', kind: 'mcq', q: '"Llegamos tarde ___ hubo un accidente."',
+      options: ['como', 'porque', 'si'], answer: 1 },
+    { id: 'p:causal:cloze', kind: 'cloze', text: '___ no tenía dinero, no fui. (since, opening the sentence)', accept: ['Como', 'como'] },
+    { id: 'p:causal:recall', kind: 'recall', front: 'Which causal connector MUST open the sentence — porque or como?', back: 'como' }
+  ]
+},
+
+/* ============================================================================
+ * BATCH — A2 notion, seq 136-160 of spec/syllabus-draft.json, wave 1 of 2
+ * (several thin sibling units merged: cualidad-general + formas-y-figuras
+ * share "ser de + material" and physical description; posicion-relativa +
+ * distancia share the de-marked position pattern)
+ * ========================================================================== */
+{
+  id: 'nt-existencia-inexistencia-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:3', 'nociones_generales:A2:4', 'nociones_generales:A2:5'],
+  title: 'Existencia, inexistencia: no hay ningún, nacer y morir',
+  summary: 'Denying existence needs haber together with ningún, nadie or nada — all built the same negative way — and nacer/morir mark the two edges of existence itself, its start and its end.',
+  sections: [
+    { h: 'Denying existence', html: '<i>No hay ningún/ninguna</i> + noun states flatly that nothing of that kind exists: <i>No hay ninguna farmacia en esta calle.</i> <i>Ningún/ninguna</i> stays SINGULAR even where English expects a plural ("there aren\'t any pharmacies").' },
+    { h: 'No hay nadie / nada', html: 'The fully impersonal negatives follow the same <i>hay</i> pattern: <i>No hay nadie en casa</i>, <i>No hay nada en la nevera</i>.' },
+    { h: 'The edges of existence', html: '<i>Nacer</i> (to be born) and <i>morir</i> (to die) frame existence itself, the beginning and the end that <i>hay</i> only ever describes in the middle.' }
+  ],
+  exponents: [
+    { es: 'No hay ninguna farmacia en esta calle.', en: "There isn't a single pharmacy on this street.", register: 'neutral', note: 'ningún/ninguna — singular, even for "not any"' },
+    { es: 'No hay nadie en la oficina.', en: "There's nobody in the office.", register: 'neutral' },
+    { es: 'Mi abuelo nació en 1940 y murió en 2015.', en: 'My grandfather was born in 1940 and died in 2015.', register: 'neutral' },
+    { es: 'Estoy seguro de que es verdad.', en: "I'm sure it's true.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'No hay ninguna farmacia.', en: "There isn't a single pharmacy.", note: 'ningún/ninguna — always singular' },
+    { es: '*No hay ningunas farmacias.', en: '(wrong)', note: 'ningún/ninguna do not pluralize this way' }
+  ],
+  pitfalls: [
+    '<i>Ningún/ninguna</i> stays singular even when denying something you would count in the plural in English.',
+    'Like <i>nunca</i>, these negatives need <i>no</i> before the verb when they themselves come after it: <i>No hay nada</i>, but <i>Nada hay</i> (rare, literary) needs no extra <i>no</i>.'
+  ],
+  examples: [
+    { es: 'No hay ningún problema.', en: "There's no problem at all." },
+    { es: '¿Nació en España o en México?', en: 'Was he born in Spain or in Mexico?' },
+    { es: 'Es probable que llueva esta tarde.', en: "It's likely to rain this afternoon." }
+  ],
+  probes: [
+    { id: 'p:existinex:singular', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['No hay ningunas farmacias.', 'No hay ninguna farmacia.', 'No hay ningún farmacias.'], answer: 1 },
+    { id: 'p:existinex:extremos', kind: 'mcq', q: 'Los dos verbos que marcan el principio y el fin de la existencia:',
+      options: ['nacer, morir', 'empezar, terminar', 'ser, estar'], answer: 0 },
+    { id: 'p:existinex:cloze', kind: 'cloze', text: 'No hay ___ en la oficina. (nobody)', accept: ['nadie'] },
+    { id: 'p:existinex:recall', kind: 'recall', front: 'Is "ningún/ninguna" ever plural?', back: 'no — always singular, even for "not any"' }
+  ]
+},
+
+{
+  id: 'nt-cualidad-material-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:12', 'nociones_generales:A2:13', 'nociones_generales:A2:213', 'nociones_generales:A2:214', 'nociones_generales:A2:215'],
+  title: 'Cualidad y material: ser de + material',
+  summary: 'Ser de + material names what something is made from — the exact same "ser de" pattern that states a person\'s origin now states an object\'s composition, with no article and no exception.',
+  sections: [
+    { h: 'Ser de + material', html: '<i>La camisa es de algodón</i> — no article between <i>de</i> and the material, just like <i>ser de</i> + place for a person\'s origin.' },
+    { h: 'Shape', html: 'Basic shape description uses <i>ser</i> + adjective: <i>Es redondo</i>, <i>Es cuadrado</i>.' },
+    { h: 'Texture and other senses', html: '<i>Fuerte, seco, limpio, sucio</i> describe how something feels; <i>ruido</i> and <i>oír</i> cover what it sounds like — the description of an object is rarely just visual.' }
+  ],
+  exponents: [
+    { es: '¿De qué color es? — Es azul.', en: '—What colour is it? —It\'s blue.', register: 'neutral' },
+    { es: 'La mesa es de madera.', en: 'The table is made of wood.', register: 'neutral', note: 'ser de + material, no article' },
+    { es: 'Este pan está muy seco.', en: 'This bread is very dry.', register: 'neutral' },
+    { es: 'He oído un ruido extraño.', en: "I've heard a strange noise.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'La mesa es de madera.', en: 'The table is made of wood.', note: 'material — ser de, no article' },
+    { es: 'Soy de México.', en: "I'm from Mexico.", note: 'the identical construction, stating origin instead of material' }
+  ],
+  pitfalls: [
+    'Never insert an article between <i>de</i> and the material: <i>es de algodón</i>, not <i>*es de un algodón</i>.',
+    'Object description in Spanish routinely reaches beyond sight — texture (<i>seco, limpio</i>) and sound (<i>ruido</i>) are just as natural as colour or shape.'
+  ],
+  examples: [
+    { es: 'Esta silla es de plástico y aquella es de metal.', en: 'This chair is plastic and that one is metal.' },
+    { es: 'El anillo es de plata, no de oro.', en: "The ring is silver, not gold." },
+    { es: 'La sopa está muy rica.', en: 'The soup is delicious.' }
+  ],
+  probes: [
+    { id: 'p:cualmat:construccion', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['es de un algodón', 'es de algodón', 'es un algodón'], answer: 1 },
+    { id: 'p:cualmat:paralelo', kind: 'mcq', q: '"La mesa es de madera" usa la misma estructura que:',
+      options: ['Soy de México.', 'Estoy en México.', 'Tengo madera.'], answer: 0 },
+    { id: 'p:cualmat:cloze', kind: 'cloze', text: 'El anillo es de ___. (silver)', accept: ['plata'] },
+    { id: 'p:cualmat:recall', kind: 'recall', front: 'Does "ser de + material" take an article?', back: 'no — es de algodón, never es de un algodón' }
+  ]
+},
+
+{
+  id: 'nt-cambio-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:209', 'nociones_generales:A2:210', 'nociones_generales:A2:211'],
+  title: 'Cambio: cambiar por, cambiar de',
+  summary: 'Cambiar splits into two prepositions with two different jobs — cambiar POR swaps one thing for another, cambiar DE simply switches which one you have, with no exchange implied at all.',
+  sections: [
+    { h: 'Cambiar por: an exchange', html: 'One thing replaces another, typically of the same kind: <i>Quería cambiar euros por pesos</i> — money for money.' },
+    { h: 'Cambiar de: switching, no exchange', html: 'No swap is implied, just a change: <i>cambiar de país</i>, <i>cambiar de casa</i>. No article follows <i>de</i> here either.' }
+  ],
+  exponents: [
+    { es: 'Quería cambiar euros por pesos.', en: 'I wanted to exchange euros for pesos.', register: 'neutral', note: 'cambiar por — a real exchange' },
+    { es: 'Cambiamos de piso el mes pasado.', en: 'We moved flats last month.', register: 'neutral', note: 'cambiar de — no exchange, just a switch' },
+    { es: 'Tuvo que cambiar de opinión.', en: 'She had to change her mind.', register: 'neutral' },
+    { es: '¿Dónde puedo cambiar dólares por euros?', en: 'Where can I exchange dollars for euros?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Cambié euros por dólares.', en: 'I exchanged euros for dollars.', note: 'cambiar POR — a genuine exchange' },
+    { es: 'Voy a cambiar de trabajo.', en: "I'm going to change jobs.", note: 'cambiar DE — simply switching, no "exchange" implied' }
+  ],
+  pitfalls: [
+    '<i>Cambiar de</i> + noun never takes an article: <i>cambiar de casa</i>, not <i>*cambiar de una casa</i> or <i>*cambiar de la casa</i>.',
+    'Do not use <i>por</i> when there is no actual exchange happening — a job change is <i>cambiar de trabajo</i>, not <i>*cambiar trabajo por trabajo</i>.'
+  ],
+  examples: [
+    { es: '¿Dónde puedo cambiar dinero por aquí?', en: 'Where can I exchange money around here?' },
+    { es: 'Cambiamos de piso el mes pasado.', en: 'We moved (changed flats) last month.' },
+    { es: 'Tuvo que cambiar de opinión.', en: 'She had to change her mind.' }
+  ],
+  probes: [
+    { id: 'p:cambio:por', kind: 'mcq', q: '"Cambié mi coche viejo ___ uno nuevo." (exchange)',
+      options: ['de', 'por', 'a'], answer: 1 },
+    { id: 'p:cambio:de', kind: 'mcq', q: '"Voy a cambiar ___ trabajo." (just switching)',
+      options: ['por', 'de', 'con'], answer: 1 },
+    { id: 'p:cambio:cloze', kind: 'cloze', text: 'Cambiamos ___ piso el mes pasado. (de)', accept: ['de'] },
+    { id: 'p:cambio:recall', kind: 'recall', front: 'cambiar POR vs cambiar DE — which one implies a real exchange?', back: 'cambiar por' }
+  ]
+},
+
+{
+  id: 'nt-necesidad-obligacion-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:22', 'nociones_generales:A2:23', 'nociones_generales:A2:24'],
+  title: 'Necesidad: necesitar, es necesario',
+  summary: 'Necesitar makes YOU the subject who needs something; es necesario makes the THING or ACTION itself the subject that is needed — the identical fact, stated from two different grammatical directions.',
+  sections: [
+    { h: 'Necesitar: the person needs', html: '<i>Necesito dinero</i>, <i>Necesito descansar</i> — the person doing the needing is the grammatical subject.' },
+    { h: 'Es necesario: the need itself is stated', html: '<i>Es necesario descansar</i> says the same thing impersonally — nobody in particular is named as needing it, just that it is necessary.' },
+    { h: 'Tener suerte: a different idea entirely', html: '<i>Tener suerte</i> means "to be lucky," not "to need luck" — do not confuse it with the necessity pattern above.' }
+  ],
+  exponents: [
+    { es: 'Necesito descansar un poco.', en: 'I need to rest a little.', register: 'neutral', note: 'necesitar — personal subject' },
+    { es: 'Es necesario reservar con antelación.', en: 'It is necessary to book in advance.', register: 'neutral', note: 'impersonal — same idea, no subject named' },
+    { es: 'Necesitamos más información.', en: 'We need more information.', register: 'neutral' },
+    { es: 'Tuvimos mucha suerte con el tiempo.', en: 'We were very lucky with the weather.', register: 'neutral', note: 'tener suerte — unrelated to necessity' }
+  ],
+  contrasts: [
+    { es: 'Necesito descansar.', en: 'I need to rest.', note: 'the person is the subject' },
+    { es: 'Es necesario descansar.', en: 'It is necessary to rest.', note: 'impersonal — the same idea, no one named' }
+  ],
+  pitfalls: [
+    '<i>Tener suerte</i> means "to be lucky" — it has nothing to do with necessity, despite using <i>tener</i> like <i>necesitar</i>-adjacent expressions.',
+    'Do not add a personal subject to <i>es necesario</i> at this level; keep it impersonal + infinitive.'
+  ],
+  examples: [
+    { es: 'Necesitamos más tiempo para terminar.', en: 'We need more time to finish.' },
+    { es: 'Es necesario reservar con antelación.', en: 'It is necessary to book in advance.' },
+    { es: 'Tuvimos mucha suerte con el tiempo.', en: 'We were very lucky with the weather.' }
+  ],
+  probes: [
+    { id: 'p:necesid:impersonal', kind: 'mcq', q: 'Versión impersonal de "Necesito descansar":',
+      options: ['Tengo que descansar necesario.', 'Es necesario descansar.', 'Necesario es descansar yo.'], answer: 1 },
+    { id: 'p:necesid:suerte', kind: 'mcq', q: '"Tener suerte" significa:',
+      options: ['necesitar algo', 'ser afortunado', 'tener prisa'], answer: 1 },
+    { id: 'p:necesid:cloze', kind: 'cloze', text: '___ reservar con antelación. (it is necessary)', accept: ['Es necesario', 'es necesario'] },
+    { id: 'p:necesid:recall', kind: 'recall', front: 'necesitar vs es necesario — which one names a personal subject?', back: 'necesitar' }
+  ]
+},
+
+{
+  id: 'nt-cantidad-relativa-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:34', 'nociones_generales:A2:35', 'nociones_generales:A2:36'],
+  title: 'Cantidad relativa: envases, tallas y medidas',
+  summary: 'A container word — botella de, paquete de, caja de — turns an uncountable noun into something you can count, and Spanish clothing sizes run on their own small, fixed vocabulary separate from ordinary numbers.',
+  sections: [
+    { h: 'Container + de: making the uncountable countable', html: '<i>Una botella de agua</i>, <i>un paquete de arroz</i>, <i>una caja de galletas</i> — the container supplies the "one," the <i>de</i>-phrase supplies what it holds.' },
+    { h: 'Talla vs número', html: 'Clothes take <i>talla</i> (<i>la talla grande/mediana</i>, or a number: <i>la 42</i>); shoes take <i>número</i> (<i>el número 38</i>) — the two words are not interchangeable.' },
+    { h: 'Measurement verbs', html: '<i>Pesar</i> (to weigh) and <i>medir</i> (to measure) name the property directly: <i>Pesa dos kilos</i>, <i>Mide metro noventa</i>.' }
+  ],
+  exponents: [
+    { es: 'Compré una botella de aceite y una barra de pan.', en: 'I bought a bottle of oil and a loaf of bread.', register: 'neutral' },
+    { es: '¿Qué talla usas? — La mediana.', en: '—What size do you wear? —Medium.', register: 'neutral', note: 'talla — clothing' },
+    { es: 'Uso el número 38 de zapato.', en: 'I take a size 38 shoe.', register: 'neutral', note: 'número — footwear' },
+    { es: 'El paquete pesa casi un kilo.', en: 'The package weighs almost a kilo.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Uso la talla 42.', en: 'I wear a size 42 (clothes).', note: 'talla — clothing' },
+    { es: 'Uso el número 38.', en: 'I wear a size 38 (shoes).', note: 'número — footwear, a different word entirely' }
+  ],
+  pitfalls: [
+    'Do not use <i>talla</i> for shoes or <i>número</i> for clothes — Spanish keeps the two size systems lexically separate.',
+    'A container word needs <i>de</i> before what it holds: <i>una botella de agua</i>, not <i>*una botella agua</i>.'
+  ],
+  examples: [
+    { es: 'Compré un paquete de café y una barra de pan.', en: 'I bought a packet of coffee and a loaf of bread.' },
+    { es: '¿Qué talla usas? — La mediana.', en: '—What size do you wear? —Medium.' },
+    { es: 'El paquete pesa casi un kilo.', en: 'The package weighs almost a kilo.' }
+  ],
+  probes: [
+    { id: 'p:cantrelA2:talla', kind: 'mcq', q: '¿Cuál se usa para zapatos?',
+      options: ['talla', 'número', 'tamaño'], answer: 1 },
+    { id: 'p:cantrelA2:envase', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['una botella agua', 'una botella de agua', 'una botella del agua'], answer: 1 },
+    { id: 'p:cantrelA2:cloze', kind: 'cloze', text: 'El paquete ___ casi un kilo. (weighs)', accept: ['pesa'] },
+    { id: 'p:cantrelA2:recall', kind: 'recall', front: 'talla vs número — which is for shoes?', back: 'número' }
+  ]
+},
+
+{
+  id: 'nt-posicion-relativa-distancia-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:78', 'nociones_generales:A2:79', 'nociones_generales:A2:80', 'nociones_generales:A2:86', 'nociones_generales:A2:87'],
+  title: 'Posición: dentro, fuera, alrededor — y la distancia',
+  summary: 'Dentro/fuera, debajo/encima and delante/detrás all extend A1\'s cerca de/lejos de pattern with the same obligatory "de," while desde…hasta frames a distance as a span between two explicitly named points.',
+  sections: [
+    { h: 'More position pairs, same pattern', html: '<i>Dentro (de)</i>, <i>fuera (de)</i>, <i>debajo (de)</i>, <i>encima (de)</i> (or <i>arriba de</i> in much of Spanish America), <i>delante (de)</i>, <i>detrás (de)</i>, <i>alrededor (de)</i> — every one of these follows the A1 rule: <i>de</i> links it to its landmark.' },
+    { h: 'Desde…hasta: a distance with two ends', html: '<i>¿Cuántos kilómetros hay desde aquí hasta Valencia?</i> names both endpoints of the distance explicitly.' },
+    { h: 'Posture as position', html: '<i>Estar sentado</i> (sitting) and <i>estar/ir de pie</i> (standing) describe a person\'s position by their posture.' }
+  ],
+  exponents: [
+    { es: 'Había cuatro sillas alrededor de la mesa.', en: 'There were four chairs around the table.', register: 'neutral' },
+    { es: 'Vive en las afueras de la ciudad.', en: 'She lives on the outskirts of the city.', register: 'neutral' },
+    { es: '¿Cuántos kilómetros hay desde aquí hasta Valencia?', en: 'How many kilometres is it from here to Valencia?', register: 'neutral' },
+    { es: 'El gato está debajo de la cama.', en: 'The cat is under the bed.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Hay 50 metros desde la estación hasta mi casa.', en: 'It\'s 50 metres from the station to my house.', note: 'desde...hasta — both endpoints named' },
+    { es: '¿Qué distancia hay entre el hotel y el aeropuerto?', en: 'How far is it between the hotel and the airport?', note: 'entre X y Y — an equivalent way to frame the same span' }
+  ],
+  pitfalls: [
+    'Every position word in this set still needs <i>de</i> before its landmark — the A1 rule never relaxes.',
+    '<i>Desde</i> needs a starting point and <i>hasta</i> an ending point; using only one without the other leaves the distance half-stated.'
+  ],
+  examples: [
+    { es: 'Había cuatro sillas alrededor de la mesa.', en: 'There were four chairs around the table.' },
+    { es: 'Vive en las afueras de la ciudad, no en el centro.', en: 'She lives on the outskirts of the city, not downtown.' },
+    { es: 'El gato está debajo de la cama.', en: 'The cat is under the bed.' }
+  ],
+  probes: [
+    { id: 'p:posdist:de', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['dentro la caja', 'dentro de la caja', 'dentro en la caja'], answer: 1 },
+    { id: 'p:posdist:extremos', kind: 'mcq', q: '"___ la estación ___ mi casa hay 50 metros."',
+      options: ['Desde / hasta', 'Entre / de', 'De / en'], answer: 0 },
+    { id: 'p:posdist:cloze', kind: 'cloze', text: 'El gato está ___ de la cama. (under)', accept: ['debajo'] },
+    { id: 'p:posdist:recall', kind: 'recall', front: 'What two words does "desde…hasta" require?', back: 'a starting point and an ending point, both named' }
+  ]
+},
+
+{
+  id: 'nt-movimiento-estabilidad-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:94', 'nociones_generales:A2:95', 'nociones_generales:A2:96', 'nociones_generales:A2:97', 'nociones_generales:A2:98'],
+  title: 'Movimiento: subir, bajar, andar, quedarse',
+  summary: 'Subir and bajar move vertically or board and alight a vehicle, while quedarse breaks the whole pattern by describing NOT moving — staying put is still filed under "movement" in Spanish\'s own way of dividing up the world.',
+  sections: [
+    { h: 'Subir / bajar: two jobs each', html: 'Vertical movement (<i>subir las escaleras</i>) and boarding/alighting a vehicle (<i>subir al autobús</i>, <i>bajar del tren</i>) share the same two verbs — context decides which sense is meant.' },
+    { h: 'Different paces on foot', html: '<i>Andar/caminar</i> (to walk), <i>pasear</i> (to stroll, for leisure), <i>correr</i> (to run) — the purpose changes the verb, not just the speed.' },
+    { h: 'Quedarse: the stillness pole', html: '<i>Quedarse</i> (to stay) is the deliberate opposite of every verb above: <i>El domingo me quedé en casa</i>.' }
+  ],
+  exponents: [
+    { es: 'El transporte público es muy bueno en esta ciudad.', en: 'Public transport is very good in this city.', register: 'neutral' },
+    { es: 'Sube al autobús por la puerta delantera.', en: 'Get on the bus through the front door.', register: 'neutral', note: 'subir — boarding' },
+    { es: 'Nos gusta pasear por el parque.', en: 'We like to stroll through the park.', register: 'neutral' },
+    { es: 'El domingo me quedé en casa.', en: 'On Sunday I stayed home.', register: 'neutral', note: 'quedarse — the stillness pole' }
+  ],
+  contrasts: [
+    { es: 'Sube al autobús.', en: 'She gets on the bus.', note: 'subir — boarding, not literally "climbing"' },
+    { es: 'Sube las escaleras.', en: 'She goes up the stairs.', note: 'the same verb, literal vertical movement' }
+  ],
+  pitfalls: [
+    '<i>Subir/bajar</i> a vehicle uses <i>a/de</i>: <i>subir AL tren</i>, <i>bajar DEL tren</i> — not the bare verb alone.',
+    '<i>Pasear</i> implies leisure, not urgency — do not use it for a purposeful, timed walk somewhere.'
+  ],
+  examples: [
+    { es: 'Bajamos del autobús en la próxima parada.', en: 'We get off the bus at the next stop.' },
+    { es: 'Nos gusta pasear por el parque los domingos.', en: 'We like to stroll through the park on Sundays.' },
+    { es: 'El autobús no pasa por el centro los festivos.', en: "The bus doesn't go through the centre on public holidays." }
+  ],
+  probes: [
+    { id: 'p:movestA2:vehiculo', kind: 'mcq', q: '"Bajamos ___ autobús en la próxima parada."',
+      options: ['al', 'del', 'en el'], answer: 1 },
+    { id: 'p:movestA2:opuesto', kind: 'mcq', q: 'Opuesto de "salir/moverse":',
+      options: ['pasear', 'quedarse', 'correr'], answer: 1 },
+    { id: 'p:movestA2:cloze', kind: 'cloze', text: 'El domingo me ___ en casa. (stayed)', accept: ['quedé'] },
+    { id: 'p:movestA2:recall', kind: 'recall', front: 'What TWO different jobs do subir/bajar cover?', back: 'vertical movement AND boarding/alighting a vehicle' }
+  ]
+},
+
+{
+  id: 'nt-orientacion-direccion-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:106', 'nociones_generales:A2:107', 'nociones_generales:A2:108', 'nociones_generales:A2:109', 'nociones_generales:A2:110'],
+  title: 'Orientación: llevar, traer, seguir, cruzar',
+  summary: 'Llevar and traer split exactly the way ir and venir do — llevar moves something away from here, traer moves it toward here — so if you already have ir/venir sorted, the same logic carries straight over.',
+  sections: [
+    { h: 'Llevar: away, like ir', html: '<i>Llévale esto a tu hermano</i> — the object moves away from the speaker\'s position, just as <i>ir</i> does.' },
+    { h: 'Traer: toward here, like venir', html: '<i>Tráeme el libro</i> — the object moves TOWARD the speaker, mirroring <i>venir</i> exactly.' },
+    { h: 'The rest of the direction toolkit', html: '<i>Seguir</i> (keep going), <i>cruzar</i> (cross), <i>girar</i> (turn), and <i>coger la primera/segunda calle</i> (take the first/second street) build out the A1 direction-giving set.' }
+  ],
+  exponents: [
+    { es: 'Llévale esto a tu hermano.', en: 'Take this to your brother.', register: 'coloquial', note: 'llevar — away, like ir' },
+    { es: 'Tráeme el libro, por favor.', en: 'Bring me the book, please.', register: 'neutral', note: 'traer — toward the speaker, like venir' },
+    { es: 'Sigue todo recto hasta la plaza.', en: 'Keep going straight until the square.', register: 'neutral' },
+    { es: 'Cruza el puente y después gira a la izquierda.', en: 'Cross the bridge and then turn left.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Llévale esto a tu hermano.', en: 'Take this to your brother.', note: 'llevar — away from the speaker, like ir' },
+    { es: 'Tráeme el libro, por favor.', en: 'Bring me the book, please.', note: 'traer — toward the speaker, like venir' }
+  ],
+  pitfalls: [
+    'If you have <i>ir</i> vs <i>venir</i> straight, apply the identical logic to <i>llevar</i> vs <i>traer</i> — the direction rule is the same, just with an object instead of a person moving.',
+    '<i>Seguir todo recto</i> reuses <i>todo recto</i> from A1 — do not invent a new phrase for "keep going straight."'
+  ],
+  examples: [
+    { es: 'Sigue todo recto hasta la plaza.', en: 'Keep going straight until the square.' },
+    { es: 'Cruza el puente y después gira a la izquierda.', en: 'Cross the bridge and then turn left.' },
+    { es: '¿Puedes traerme un vaso de agua?', en: 'Can you bring me a glass of water?' }
+  ],
+  probes: [
+    { id: 'p:orientA2:direccion', kind: 'mcq', q: 'Estás en la fiesta. Le pides a un amigo que traiga algo aquí: "___me el pastel."',
+      options: ['Lleva', 'Trae', 'Lleve'], answer: 1 },
+    { id: 'p:orientA2:paralelo', kind: 'mcq', q: '"Llevar" se comporta como:',
+      options: ['venir', 'ir', 'estar'], answer: 1 },
+    { id: 'p:orientA2:cloze', kind: 'cloze', text: 'Cruza el puente y después ___ a la izquierda. (turn)', accept: ['gira'] },
+    { id: 'p:orientA2:recall', kind: 'recall', front: 'llevar behaves like which verb — ir or venir?', back: 'ir (away from the speaker)' }
+  ]
+},
+
+{
+  id: 'nt-referencias-generales-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:129', 'nociones_generales:A2:130', 'nociones_generales:A2:133', 'nociones_generales:A2:135', 'nociones_generales:A2:136'],
+  title: 'Referencias temporales: desde, hasta, durante',
+  summary: 'Desde frames a stretch of time by its starting point, hasta by its end, and durante by its whole length with no endpoints at all — three different ways to talk about the same span of time.',
+  sections: [
+    { h: 'Time chunks', html: '<i>Cuarto de hora</i> (quarter of an hour), <i>media hora</i> (half an hour) chunk time the same way container words chunk quantity.' },
+    { h: 'Desde, hasta, durante', html: '<i>Trabajo desde las nueve hasta las cinco</i> names both ends of a span. <i>Trabajé durante ocho horas</i> states the LENGTH of the span with no endpoints mentioned at all.' },
+    { h: 'Named occasions', html: '<i>En vacaciones</i>, <i>en Semana Santa</i>, <i>en Navidad</i> reuse the A1 <i>en + [período]</i> pattern for specific festivities.' }
+  ],
+  exponents: [
+    { es: 'Esperé un cuarto de hora pero no vino.', en: "I waited a quarter of an hour but she didn't come.", register: 'neutral' },
+    { es: 'Trabajo desde las nueve hasta las cinco.', en: 'I work from nine to five.', register: 'neutral' },
+    { es: 'Estaremos de viaje durante toda la Semana Santa.', en: "We'll be travelling throughout Easter week.", register: 'neutral' },
+    { es: 'No tengo mucho tiempo antes de la reunión.', en: "I don't have much time before the meeting.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Trabajo desde las nueve hasta las cinco.', en: 'I work from nine to five.', note: 'two endpoints named' },
+    { es: 'Trabajé durante ocho horas.', en: 'I worked for eight hours.', note: 'the length alone, no endpoints' }
+  ],
+  pitfalls: [
+    '<i>Desde</i> needs a starting point; <i>hasta</i> needs an ending point — using either alone leaves the span incomplete.',
+    '<i>Durante</i> states duration without committing to when it started or ended — do not add <i>desde/hasta</i> to it redundantly.'
+  ],
+  examples: [
+    { es: 'Esperé un cuarto de hora pero no vino.', en: 'I waited a quarter of an hour but she didn\'t come.' },
+    { es: 'Estaremos de viaje durante toda la Semana Santa.', en: "We'll be travelling throughout Easter week." },
+    { es: 'No tengo mucho tiempo antes de la reunión.', en: "I don't have much time before the meeting." }
+  ],
+  probes: [
+    { id: 'p:refgenA2:desdehasta', kind: 'mcq', q: '"Trabajo ___ las nueve ___ las cinco."',
+      options: ['de / a', 'desde / hasta', 'desde / a'], answer: 1 },
+    { id: 'p:refgenA2:durante', kind: 'mcq', q: '"Trabajé ___ ocho horas." (no endpoints, just the length)',
+      options: ['desde', 'durante', 'hasta'], answer: 1 },
+    { id: 'p:refgenA2:cloze', kind: 'cloze', text: 'Esperé un ___ de hora. (quarter)', accept: ['cuarto'] },
+    { id: 'p:refgenA2:recall', kind: 'recall', front: 'Which time word states a LENGTH with no start/end points?', back: 'durante' }
+  ]
+},
+
+/* ---------------------------------------------------------------------------
+ * A2 notion, wave 2 of 2: seq 148-160 (finalizacion + inicio + duracion-
+ * transcurso merged — a single event's three edges, thin apart, one whole
+ * together; evaluacion-general + conformidad merged — agreement particles
+ * are a kind of evaluative response)
+ * ------------------------------------------------------------------------ */
+{
+  id: 'nt-anterioridad-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:186', 'nociones_generales:A2:187', 'nociones_generales:A2:188'],
+  title: 'Anterioridad: acabar de, ya, todavía no',
+  summary: 'Acabar de + infinitive marks something that JUST happened, and ya/todavía no sit at opposite ends of the same scale — whether an expected event has arrived yet or is still pending.',
+  sections: [
+    { h: 'Acabar de + infinitivo', html: 'Marks an action completed a moment ago, relative to now: <i>Tu jefa acaba de llamar</i> — "your boss has just called."' },
+    { h: 'Ya vs todavía no', html: '<i>Ya</i> confirms something has already happened: <i>Ya hemos visto esa exposición</i>. <i>Todavía no</i> says it is still pending: <i>Todavía no he probado la paella</i>.' },
+    { h: 'Seguir + gerundio', html: 'Marks something still ongoing, unbroken since it started: <i>Sigue lloviendo</i> — "it\'s still raining."' }
+  ],
+  exponents: [
+    { es: 'Tu jefa acaba de llamar.', en: 'Your boss has just called.', register: 'neutral', note: 'acabar de — just happened' },
+    { es: 'Ya hemos visto esa exposición.', en: "We've already seen that exhibition.", register: 'neutral', note: 'ya — confirms it happened' },
+    { es: 'Todavía no he probado la paella.', en: "I haven't tried paella yet.", register: 'neutral', note: 'todavía no — still pending' },
+    { es: 'Sigue trabajando en el mismo sitio.', en: 'He\'s still working in the same place.', register: 'neutral', note: 'seguir + gerundio — unbroken continuity' }
+  ],
+  contrasts: [
+    { es: 'Ya hemos comido.', en: "We've already eaten.", note: 'confirmed — it happened' },
+    { es: 'Todavía no hemos comido.', en: "We haven't eaten yet.", note: 'the near-opposite — still pending' }
+  ],
+  pitfalls: [
+    '<i>Acabar de</i> only frames something as JUST finished relative to the reference point — do not use it for a distant past event.',
+    '<i>Ya</i> and <i>todavía no</i> sit at opposite ends of one scale; mixing them up reverses whether something has happened.'
+  ],
+  examples: [
+    { es: 'Acabamos de llegar; danos un momento.', en: "We've just arrived; give us a moment." },
+    { es: '¿Ya has terminado los deberes?', en: 'Have you finished your homework yet?' },
+    { es: 'Todavía no sé qué voy a hacer este verano.', en: "I still don't know what I'm going to do this summer." }
+  ],
+  probes: [
+    { id: 'p:anterior:acabar', kind: 'mcq', q: '"Your boss has just called":',
+      options: ['Tu jefa llamó.', 'Tu jefa acaba de llamar.', 'Tu jefa ya llamaba.'], answer: 1 },
+    { id: 'p:anterior:escala', kind: 'mcq', q: '"Todavía no he probado la paella" significa que:',
+      options: ['ya la probé', 'aún no la he probado', 'nunca la probaré'], answer: 1 },
+    { id: 'p:anterior:cloze', kind: 'cloze', text: '¿___ has terminado los deberes? (already)', accept: ['Ya', 'ya'] },
+    { id: 'p:anterior:recall', kind: 'recall', front: 'ya vs todavía no — which one confirms something already happened?', back: 'ya' }
+  ]
+},
+
+{
+  id: 'nt-inicio-duracion-fin-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:190', 'nociones_generales:A2:191', 'nociones_generales:A2:193', 'nociones_generales:A2:194', 'nociones_generales:A2:199', 'nociones_generales:A2:200'],
+  title: 'Inicio, duración y fin de una acción',
+  summary: 'Empezar a marks the start, durar states how long something lasts with no preposition at all before the length, and terminar de marks the end — three verbs tracing one single action from its first moment to its last.',
+  sections: [
+    { h: 'Inicio: empezar a', html: '<i>Empiezo a trabajar a las nueve</i> — the same <i>empezar a</i> + infinitive from the A1 duración lesson, now paired with its opposite number.' },
+    { h: 'Duración: durar', html: '<i>Durar</i> takes the length DIRECTLY, no preposition: <i>La película dura casi tres horas</i>, not <i>*dura de tres horas</i> or <i>*dura por tres horas</i>.' },
+    { h: 'Fin: terminar de, hasta, morir', html: '<i>Termino de trabajar a las cinco</i> closes an activity; <i>hasta</i> marks an endpoint (<i>Estará en Londres hasta el verano</i>); <i>morir</i> is the specific, final end of a life.' }
+  ],
+  exponents: [
+    { es: 'Empiezo a trabajar a las nueve.', en: 'I start work at nine.', register: 'neutral' },
+    { es: 'La excursión dura todo el día.', en: 'The excursion lasts the whole day.', register: 'neutral', note: 'durar — no preposition before the length' },
+    { es: 'Termino de trabajar a las cinco.', en: 'I finish work at five.', register: 'neutral' },
+    { es: 'Estará en Londres hasta el verano.', en: "He'll be in London until summer.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'La película dura casi tres horas.', en: 'The film lasts almost three hours.', note: 'durar — no preposition before the length' },
+    { es: '*La película dura de tres horas.', en: '(wrong)', note: 'durar never takes a preposition here' }
+  ],
+  pitfalls: [
+    '<i>Durar</i> attaches the length directly, with no preposition: <i>dura tres horas</i>, never <i>*dura de/por tres horas</i>.',
+    '<i>Terminar</i> still takes <i>de</i> before an infinitive, exactly as at A1: <i>terminar DE trabajar</i>.'
+  ],
+  examples: [
+    { es: '¿Cuánto dura el viaje en tren?', en: 'How long does the train journey take?' },
+    { es: 'La reunión duró toda la mañana.', en: 'The meeting lasted all morning.' },
+    { es: 'Empezó a llover justo cuando salimos.', en: 'It started raining just as we left.' }
+  ],
+  probes: [
+    { id: 'p:inidurfin:durar', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['dura de tres horas', 'dura tres horas', 'dura por tres horas'], answer: 1 },
+    { id: 'p:inidurfin:tres', kind: 'mcq', q: 'Los tres verbos/marcadores para inicio, duración y fin de UNA acción:',
+      options: ['empezar a / durar / terminar de', 'nacer / vivir / morir', 'ir / estar / venir'], answer: 0 },
+    { id: 'p:inidurfin:cloze', kind: 'cloze', text: 'Termino ___ trabajar a las cinco.', accept: ['de'] },
+    { id: 'p:inidurfin:recall', kind: 'recall', front: 'Does "durar" take a preposition before the length of time?', back: 'no — dura tres horas, directly' }
+  ]
+},
+
+{
+  id: 'nt-frecuencia-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:204', 'nociones_generales:A2:205', 'nociones_generales:A2:206', 'nociones_generales:A2:207'],
+  title: 'Frecuencia: veces al día, todos los meses',
+  summary: 'A number + vez/veces + al or a la + [period] states an exact frequency, while todos los/todas las + [period] states a blanket, exceptionless one — and which preposition contracts depends on the period noun\'s gender.',
+  sections: [
+    { h: 'Counting occurrences', html: '<i>[número] + vez/veces + al/a la + [período]</i> gives an exact count: <i>dos veces a la semana</i>, <i>una vez al mes</i>.' },
+    { h: 'Al vs a la', html: '<i>Al</i> (a + el) goes with masculine periods (<i>al día, al mes, al año</i>); <i>a la</i> goes with the one common feminine period, <i>semana</i>.' },
+    { h: 'Todos los / todas las: no exceptions', html: 'A blanket frequency with no gaps: <i>todos los meses, todas las semanas</i> — every single one, not just often.' }
+  ],
+  exponents: [
+    { es: 'Voy a la piscina dos veces a la semana.', en: 'I go to the pool twice a week.', register: 'neutral' },
+    { es: 'Como fuera una vez al mes.', en: 'I eat out once a month.', register: 'neutral', note: 'al — masculine period' },
+    { es: 'Voy al gimnasio todos los días.', en: 'I go to the gym every day.', register: 'neutral', note: 'blanket, no exceptions' },
+    { es: 'Escucho música todo el tiempo.', en: 'I listen to music all the time.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Voy dos veces a la semana.', en: 'I go twice a week.', note: 'exact count' },
+    { es: 'Voy todas las semanas.', en: 'I go every single week.', note: 'blanket, unbroken — a different claim than "often"' }
+  ],
+  pitfalls: [
+    '<i>Al</i> (masculine: día, mes, año) vs <i>a la</i> (feminine: semana) — the contraction depends on the period noun\'s gender.',
+    '<i>Todos los/todas las</i> claims NO exceptions; do not use it loosely to mean merely "often."'
+  ],
+  examples: [
+    { es: 'Llamo a mis padres una vez a la semana.', en: 'I call my parents once a week.' },
+    { es: 'Tenemos clase todos los lunes y miércoles.', en: 'We have class every Monday and Wednesday.' },
+    { es: 'Algunas veces desayuno fuera de casa.', en: 'Sometimes I have breakfast out.' }
+  ],
+  probes: [
+    { id: 'p:frecuenA2:contraccion', kind: 'mcq', q: '"Voy al gimnasio tres veces ___ semana."',
+      options: ['al', 'a la', 'a el'], answer: 1 },
+    { id: 'p:frecuenA2:sinexcep', kind: 'mcq', q: '"Todos los lunes" implica:',
+      options: ['la mayoría de los lunes', 'cada lunes sin excepción', 'algunos lunes'], answer: 1 },
+    { id: 'p:frecuenA2:cloze', kind: 'cloze', text: 'Como fuera una vez ___ mes. (al)', accept: ['al'] },
+    { id: 'p:frecuenA2:recall', kind: 'recall', front: 'Why does "semana" take "a la" but "mes" takes "al"?', back: 'semana is feminine, mes is masculine' }
+  ]
+},
+
+{
+  id: 'nt-visibilidad-color-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:224', 'nociones_generales:A2:225', 'nociones_generales:A2:232', 'nociones_generales:A2:233', 'nociones_generales:A2:234'],
+  title: 'Visibilidad y color: vistas, luz, vino tinto',
+  summary: 'Vistas names what you can see FROM somewhere and luz names how much light is available — two related but distinct notions — and Spanish keeps one fixed exception in its colour vocabulary: red wine is never rojo.',
+  sections: [
+    { h: 'Vistas: the view', html: '<i>Una habitación con vistas al mar</i> — <i>vistas</i> (plural) names the panorama itself, not the act of seeing it.' },
+    { h: 'Luz: how much light', html: '<i>El apartamento tiene mucha luz</i> — quantity of natural light, distinct from a view.' },
+    { h: 'The fixed exception: vino tinto', html: 'Red wine is <i>vino tinto</i>, never <i>*vino rojo</i> — one of Spanish\'s few lexicalized colour exceptions, learned as a fixed phrase.' }
+  ],
+  exponents: [
+    { es: 'Hemos reservado una habitación con vistas al mar.', en: "We've booked a room with sea views.", register: 'neutral' },
+    { es: 'El apartamento tiene mucha luz.', en: 'The apartment gets a lot of light.', register: 'neutral' },
+    { es: 'Mira, te presento a mi hermano.', en: 'Look, this is my brother.', register: 'coloquial', note: 'mirar — an intentional glance, not general sight' },
+    { es: 'Prefiero el vino tinto al blanco.', en: 'I prefer red wine to white.', register: 'neutral', note: 'tinto, never rojo, for red wine' }
+  ],
+  contrasts: [
+    { es: 'una habitación con vistas', en: 'a room with a view', note: 'vistas — the panorama' },
+    { es: 'una habitación con mucha luz', en: 'a room with a lot of light', note: 'luz — a completely different property' }
+  ],
+  pitfalls: [
+    'Red wine is always <i>vino tinto</i> — <i>*vino rojo</i> does not exist in ordinary Spanish.',
+    '<i>Vistas</i> is a plural noun even for a single view: <i>habitación con vistas</i>, not <i>*con vista</i> in this fixed phrase.'
+  ],
+  examples: [
+    { es: 'Desde la terraza hay unas vistas preciosas.', en: 'There are beautiful views from the terrace.' },
+    { es: 'Esta cocina no tiene mucha luz natural.', en: "This kitchen doesn't have much natural light." },
+    { es: 'Voy a pintar la pared de azul claro.', en: "I'm going to paint the wall light blue." }
+  ],
+  probes: [
+    { id: 'p:visioncol:vino', kind: 'mcq', q: 'Red wine:',
+      options: ['vino rojo', 'vino tinto', 'vino colorado'], answer: 1 },
+    { id: 'p:visioncol:dos', kind: 'mcq', q: '¿Cuál palabra describe la CANTIDAD de luz natural?',
+      options: ['vistas', 'luz', 'mirar'], answer: 1 },
+    { id: 'p:visioncol:cloze', kind: 'cloze', text: 'Voy a ___ la pared de azul. (paint)', accept: ['pintar'] },
+    { id: 'p:visioncol:recall', kind: 'recall', front: 'What is the Spanish word for "red wine"?', back: 'vino tinto (never vino rojo)' }
+  ]
+},
+
+{
+  id: 'nt-edad-vejez-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:240', 'nociones_generales:A2:241', 'nociones_generales:A2:242', 'nociones_generales:A2:243'],
+  title: 'Edad: adulto, joven, mayor, antiguo',
+  summary: 'Antiguo and moderno shift the young/old opposition onto THINGS, where an "antiguo" object is often admired rather than dismissed — the opposite connotation calling a PERSON viejo can carry.',
+  sections: [
+    { h: 'People: joven, mayor', html: '<i>Joven</i> (young) and <i>mayor</i> (older — the A1-established polite alternative to <i>viejo</i>) describe people\'s age directly.' },
+    { h: 'Things: antiguo, moderno', html: '<i>Antiguo</i> can mean simply "old" but often carries a positive, "vintage" or "antique" connotation an object can wear with pride — <i>un coche antiguo</i> is admired, not dismissed the way <i>un hombre viejo</i> might sound.' },
+    { h: 'Adulto: a life stage', html: '<i>Adulto</i> names a stage of life (adulthood), not a comparison — it does not pair with <i>más/menos</i> the way <i>joven/mayor</i> can.' }
+  ],
+  exponents: [
+    { es: 'Es un chico muy joven todavía.', en: "He's still a very young guy.", register: 'neutral' },
+    { es: 'Mi vecino es una persona mayor.', en: 'My neighbour is an elderly person.', register: 'neutral' },
+    { es: 'Tiene un coche antiguo precioso.', en: 'He has a beautiful vintage car.', register: 'neutral', note: 'antiguo — admiring, not dismissive' },
+    { es: 'Ya es un adulto responsable.', en: "He's a responsible adult now.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'un coche antiguo', en: 'a vintage car', note: 'admired — antiguo carries a positive connotation for things' },
+    { es: 'un hombre viejo', en: 'an old man', note: 'blunter than "mayor" when said of a person directly' }
+  ],
+  pitfalls: [
+    '<i>Mayor</i> applies to people (and animals); do not use it for THINGS — an old building is <i>antiguo</i>, not <i>*mayor</i>.',
+    '<i>Antiguo</i> often has a positive "vintage" flavour for objects that <i>viejo</i>, applied to a person, does not share.'
+  ],
+  examples: [
+    { es: 'El centro histórico tiene edificios muy antiguos.', en: 'The old town has very old buildings.' },
+    { es: 'Mis abuelos ya son personas mayores.', en: 'My grandparents are elderly now.' },
+    { es: 'De adulto quiere ser médico.', en: 'As an adult he wants to be a doctor.' }
+  ],
+  probes: [
+    { id: 'p:edadvejA2:cosas', kind: 'mcq', q: '"Old" hablando de un EDIFICIO:',
+      options: ['mayor', 'antiguo', 'adulto'], answer: 1 },
+    { id: 'p:edadvejA2:personas', kind: 'mcq', q: '"Old" hablando de una PERSONA, de forma educada:',
+      options: ['antiguo', 'mayor', 'viejo'], answer: 1 },
+    { id: 'p:edadvejA2:cloze', kind: 'cloze', text: 'Tiene un coche ___ precioso. (vintage)', accept: ['antiguo'] },
+    { id: 'p:edadvejA2:recall', kind: 'recall', front: 'Which word for "old" applies to THINGS, not people — mayor or antiguo?', back: 'antiguo' }
+  ]
+},
+
+{
+  id: 'nt-evaluacion-conformidad-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:253', 'nociones_generales:A2:254', 'nociones_generales:A2:269', 'nociones_generales:A2:270'],
+  title: 'Evaluación y conformidad: mejor, vale, está bien',
+  summary: 'Mejor/peor judges by comparing one thing against another, while vale/está bien/claro simply signal AGREEMENT with no evaluation at all — two different jobs that beginners often blur into one vague "good."',
+  sections: [
+    { h: 'Mejor/peor: comparative judgement', html: 'Reprising the comparative from A2 grammar, <i>mejor/peor</i> rank one thing against another: <i>Esta opción es mejor.</i>' },
+    { h: 'Vale, está bien, claro: agreement, not evaluation', html: 'These respond to a PROPOSAL, not a quality question: <i>—¿Quedamos a las ocho? —Vale.</i> None of them judge how good something is.' },
+    { h: 'Interesar/importar: the gustar pattern', html: 'Like <i>gustar</i>, these are impersonal — the thing interesting or mattering is the grammatical subject: <i>Me interesa la historia</i>, <i>No me importa el precio</i>.' }
+  ],
+  exponents: [
+    { es: 'Esta opción es mejor que la otra.', en: 'This option is better than the other.', register: 'neutral' },
+    { es: '—¿Quedamos a las ocho? —Vale.', en: '—Shall we meet at eight? —OK.', register: 'coloquial', note: 'agreement, not a quality judgement' },
+    { es: 'Me interesa mucho la historia.', en: "I'm very interested in history.", register: 'neutral', note: 'interesar — gustar pattern' },
+    { es: 'No me importa el precio.', en: "I don't mind the price.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Está bien.', en: "It's fine.", note: 'can be evaluative — judging quality' },
+    { es: 'Vale.', en: 'OK.', note: 'purely agreement — does not judge quality at all' }
+  ],
+  pitfalls: [
+    '<i>Vale</i> agrees to a proposal — it does not answer "how was it?" the way <i>estuvo bien</i> would.',
+    '<i>Interesar/importar</i> follow the <i>gustar</i> pattern: the interesting THING is the subject, not the interested person.'
+  ],
+  examples: [
+    { es: '—¿Vamos al cine esta noche? —Claro, vale.', en: '—Shall we go to the cinema tonight? —Sure, OK.' },
+    { es: 'A mi hermano no le interesa el fútbol.', en: 'My brother isn\'t interested in football.' },
+    { es: 'Este restaurante es mejor que el de ayer.', en: "This restaurant is better than yesterday's." }
+  ],
+  probes: [
+    { id: 'p:evalconf:vale', kind: 'mcq', q: '"Vale" responde a:',
+      options: ['una pregunta de calidad', 'una propuesta', 'una descripción'], answer: 1 },
+    { id: 'p:evalconf:interesar', kind: 'mcq', q: '"Me interesa la historia" — ¿qué es el sujeto gramatical?',
+      options: ['yo', 'la historia', 'interesar'], answer: 1 },
+    { id: 'p:evalconf:cloze', kind: 'cloze', text: 'No me ___ el precio. (mind/matter)', accept: ['importa'] },
+    { id: 'p:evalconf:recall', kind: 'recall', front: 'Does "vale" evaluate quality, or just signal agreement?', back: 'just agreement' }
+  ]
+},
+
+{
+  id: 'nt-expresion-verbal-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:286', 'nociones_generales:A2:287', 'nociones_generales:A2:288', 'nociones_generales:A2:289'],
+  title: 'Expresión verbal: preguntar, contestar, decir',
+  summary: 'Preguntar and contestar are a matched pair, one initiating and one responding, while decir is the general-purpose verb for everything in between — and it only ever reports statements, never questions.',
+  sections: [
+    { h: 'Preguntar: initiating', html: '<i>Preguntar</i> reports a question, and needs <i>si</i> to report a yes/no question: <i>Le pregunté si venía</i> ("I asked him if he was coming").' },
+    { h: 'Contestar/responder: responding', html: 'The matched counterpart: <i>Contestó que sí</i> ("He answered yes").' },
+    { h: 'Decir: the general case', html: '<i>Decir</i> reports STATEMENTS: <i>Dijo que venía</i>. It cannot report a question — that job belongs to <i>preguntar</i> alone.' }
+  ],
+  exponents: [
+    { es: 'Le pregunté si venía a la fiesta.', en: 'I asked her if she was coming to the party.', register: 'neutral' },
+    { es: 'Contestó que no tenía tiempo.', en: "She answered that she didn't have time.", register: 'neutral' },
+    { es: 'Dijo que llegaría tarde.', en: "He said he'd arrive late.", register: 'neutral' },
+    { es: 'Hazme una pregunta si no entiendes.', en: "Ask me a question if you don't understand.", register: 'neutral', note: 'hacer una pregunta — a noun-based alternative to preguntar' }
+  ],
+  contrasts: [
+    { es: 'Le pregunté si venía.', en: 'I asked him if he was coming.', note: 'preguntar — reports a question, needs si' },
+    { es: '*Le dije si venía.', en: '(does not report a question this way)', note: 'decir cannot introduce a reported question with si the way preguntar does' }
+  ],
+  pitfalls: [
+    'Do not use <i>decir</i> to report a question — <i>preguntar</i> is required, with <i>si</i> for a yes/no question.',
+    '<i>Hacer una pregunta</i> and <i>preguntar</i> both work; do not mix them into <i>*hacer preguntar</i>.'
+  ],
+  examples: [
+    { es: '¿Puedo hacerte una pregunta?', en: 'Can I ask you a question?' },
+    { es: 'Nos preguntó de dónde éramos.', en: 'She asked us where we were from.' },
+    { es: 'Todavía no me ha contestado.', en: "She still hasn't answered me." }
+  ],
+  probes: [
+    { id: 'p:exprverb:reportar', kind: 'mcq', q: '"I asked if she was coming":',
+      options: ['Le dije si venía.', 'Le pregunté si venía.', 'Le contesté si venía.'], answer: 1 },
+    { id: 'p:exprverb:pareja', kind: 'mcq', q: 'El verbo pareja de "preguntar":',
+      options: ['decir', 'contestar', 'hablar'], answer: 1 },
+    { id: 'p:exprverb:cloze', kind: 'cloze', text: '¿Puedo hacerte una ___? (question)', accept: ['pregunta'] },
+    { id: 'p:exprverb:recall', kind: 'recall', front: 'Which verb, decir or preguntar, can report a QUESTION?', back: 'preguntar' }
+  ]
+},
+
+/* ============================================================================
+ * BATCH — B1 grammar, wave 1 of 2: the subjunctive system and its main
+ * triggers (desiderative/doubt/value-judgment presente de subjuntivo, cuando
+ * + subjuntivo for the future, condicionales and concesivas), plus imperative
+ * pragmatics and clitic-pronoun combination. The raw indicative tense-form
+ * units (futuro imperfecto, condicional simple, imperfecto, indefinido,
+ * perfecto, pluscuamperfecto forms) are deferred for the same reason as at
+ * A2: usage is what a lesson can teach that engine-driven drilling cannot.
+ * ========================================================================== */
+{
+  id: 'gr-presente-subjuntivo-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:466', 'gramatica:B1:467', 'gramatica:B1:469', 'gramatica:B1:471', 'gramatica:B1:474', 'gramatica:B1:475'],
+  title: 'El subjuntivo: cuándo aparece',
+  summary: 'The present subjunctive is not a mood you reach for when a sentence "feels uncertain" — it is the form a specific, learnable family of triggers demands automatically: wishes, doubt, and impersonal value judgments, whether or not you personally feel unsure.',
+  sections: [
+    { h: 'Building the form fast', html: '-Ar verbs take -e endings, -er/-ir verbs take -a endings — the opposite vowel from the indicative. Any irregular <i>yo</i>-form of the present indicative carries straight over: <i>tener→tengo→tenga</i>, <i>hacer→hago→haga</i>. A short list is fully irregular: <i>sea, esté, dé, vaya, sepa, haya</i>.' },
+    { h: 'Desiderativo: wishing for someone else', html: '<i>Quiero que vengas</i> needs the subjunctive because the subject of "come" is DIFFERENT from the subject of "want." When both subjects are the same person, Spanish drops <i>que</i> entirely and uses the infinitive instead: <i>Quiero venir</i>, never <i>*Quiero que venga yo</i>.' },
+    { h: 'Duda: the affirm/negate flip', html: '<i>Creo que viene</i> (indicative — asserting) flips to <i>No creo que venga</i> (subjunctive) the instant you negate the opinion verb. The same flip happens with <i>es verdad que</i> vs <i>no es verdad que</i>.' },
+    { h: 'Juicio de valor: impersonal judgments', html: '<i>Es una pena que no vengan</i>, <i>Es importante que lo sepas</i> — an impersonal value judgment about a fact always triggers the subjunctive in the clause that follows.' }
+  ],
+  contrasts: [
+    { es: 'Creo que viene.', en: 'I think she\'s coming.', note: 'indicative — a plain assertion' },
+    { es: 'No creo que venga.', en: "I don't think she's coming.", note: 'subjunctive — negating the opinion verb triggers it' },
+    { es: 'Quiero venir.', en: 'I want to come.', note: 'same subject — infinitive, no que' },
+    { es: 'Quiero que vengas.', en: 'I want you to come.', note: 'different subjects — que + subjunctive is now obligatory' }
+  ],
+  pitfalls: [
+    'When both clauses share the same subject, use the infinitive, not <i>que</i> + subjunctive: <i>Quiero venir</i>, never <i>*Quiero que venga yo</i>.',
+    'Negating an opinion verb (<i>creer, pensar, ser verdad</i>) flips its complement clause from indicative to subjunctive — this affirm/negate flip is the single most common thing B1 learners get wrong.',
+    'An impersonal value judgment (<i>es importante, es una pena, es normal</i>) + <i>que</i> always takes the subjunctive, regardless of how certain the underlying fact is.'
+  ],
+  examples: [
+    { es: 'Espero que te mejores pronto.', en: 'I hope you get better soon.' },
+    { es: 'Dudo que llegue a tiempo con este tráfico.', en: "I doubt he'll arrive on time with this traffic." },
+    { es: 'Es normal que estés nervioso el primer día.', en: "It's normal to be nervous on the first day." }
+  ],
+  probes: [
+    { id: 'p:presubj:flip', kind: 'mcq', q: '"No creo que ___ a tiempo." (llegar)',
+      options: ['llega', 'llegue', 'llegará'], answer: 1 },
+    { id: 'p:presubj:sujeto', kind: 'mcq', q: '"Quiero ___ pronto." (same subject — to leave)',
+      options: ['que salga', 'salir', 'que salgo'], answer: 1 },
+    { id: 'p:presubj:cloze', kind: 'cloze', text: 'Es importante que lo ___. (saber, tú)', accept: ['sepas'] },
+    { id: 'p:presubj:recall', kind: 'recall', front: 'What happens to the subjunctive trigger when you negate "creo que"?', back: 'it starts triggering it — creo que takes the indicative, no creo que takes the subjunctive' }
+  ]
+},
+
+{
+  id: 'gr-imperativo-valores-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:516', 'gramatica:B1:517', 'gramatica:B1:518', 'gramatica:B1:519'],
+  title: 'El imperativo: más allá de la orden',
+  summary: 'A command form covers a plea, a piece of advice, and a warm invitation just as often as an actual order — tone and context, not the grammar itself, decide which of the four you are hearing.',
+  sections: [
+    { h: 'Ruego: a plea', html: 'Softened almost always by <i>por favor</i>: <i>Perdóname, por favor.</i> The grammar is identical to an order; only the softening makes it a plea.' },
+    { h: 'Sugerencia: advice, not authority', html: '<i>Acuéstate pronto</i> from a friend reads as advice, not a command — the relationship between speaker and listener decides the force, not the verb form.' },
+    { h: 'Aceptación e invitación', html: '<i>—¿Se puede? —Sí, claro, pasa, pasa.</i> Doubling the imperative here signals warmth, not literal repetition of the instruction.' },
+    { h: 'Orden: the "default" reading, but only one of four', html: 'A genuine order is just one use among several — assuming every imperative is bossy misreads a large share of everyday Spanish.' }
+  ],
+  contrasts: [
+    { es: 'Perdóname, por favor.', en: 'Forgive me, please.', note: 'ruego — softened plea' },
+    { es: '¡Cállate ahora mismo!', en: 'Be quiet right now!', note: 'orden — a genuine command, tone carries the difference' }
+  ],
+  pitfalls: [
+    'Do not assume every imperative is an order — context and tone decide whether it is a plea, advice, an invitation, or a command.',
+    'Doubling an imperative (<i>pasa, pasa</i>) signals warmth or emphasis, not that the instruction needs repeating.'
+  ],
+  examples: [
+    { es: 'Prueba esto, seguro que te gusta.', en: "Try this, I'm sure you'll like it." },
+    { es: '—¿Puedo sentarme? —Claro, siéntate, siéntate.', en: '—Can I sit down? —Of course, sit, sit.' },
+    { es: 'Ten cuidado con el escalón.', en: 'Watch out for the step.' }
+  ],
+  probes: [
+    { id: 'p:impval:funcion', kind: 'mcq', q: '"Acuéstate pronto" dicho por un amigo es:',
+      options: ['una orden estricta', 'un consejo', 'una amenaza'], answer: 1 },
+    { id: 'p:impval:doblado', kind: 'mcq', q: '"Pasa, pasa" (repetido) transmite:',
+      options: ['calidez / insistencia amable', 'enfado', 'una orden militar'], answer: 0 },
+    { id: 'p:impval:cloze', kind: 'cloze', text: '___ cuidado con el escalón. (ten, tú)', accept: ['Ten', 'ten'] },
+    { id: 'p:impval:recall', kind: 'recall', front: 'Name two functions of the imperative besides giving an order', back: 'ruego (plea), sugerencia (advice), invitación (invitation)' }
+  ]
+},
+
+{
+  id: 'gr-pronombres-combinados-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:207', 'gramatica:B1:208', 'gramatica:B1:209', 'gramatica:B1:210'],
+  title: 'Combinación de pronombres átonos: te lo, se lo',
+  summary: 'When an indirect and a direct object pronoun stack, the indirect always comes first — te lo doy, never lo te doy — and once combined, the pair moves as a single inseparable unit, whether attached to an infinitive or standing before a conjugated verb.',
+  sections: [
+    { h: 'Fixed order: OI before OD', html: '<i>Te las di</i>, <i>Me lo dio</i> — the indirect-object clitic always precedes the direct-object one; the reverse order is simply ungrammatical.' },
+    { h: 'Se lo, generalized', html: 'The A2 rule (<i>le/les → se</i> before <i>lo/la/los/las</i>) applies throughout: <i>Se lo di a Juan</i>, never <i>*Le lo di</i> — and often the clitic <i>se lo</i> is required even when "a Juan" is already stated.' },
+    { h: 'The pair never splits', html: 'With a periphrasis (infinitive or gerund attached to a conjugated verb), both clitics move together, either both before the conjugated verb or both attached to the end: <i>Se lo voy a decir</i> / <i>Voy a decírselo</i> — never <i>*Le voy a decirlo</i>, splitting the pair across the two verbs.' }
+  ],
+  contrasts: [
+    { es: 'Se lo voy a decir.', en: "I'm going to tell it to him.", note: 'both clitics before the conjugated verb' },
+    { es: 'Voy a decírselo.', en: "I'm going to tell it to him.", note: 'both clitics attached to the infinitive instead — but still together' },
+    { es: '*Le voy a decirlo.', en: '(wrong)', note: 'the pair has been split across the two verbs — never allowed' }
+  ],
+  pitfalls: [
+    'OI and OD clitics form an inseparable pair once combined — they must move together, never split across a periphrasis.',
+    '<i>Le/les</i> becomes <i>se</i> immediately before <i>lo/la/los/las</i>, with no exceptions, even when the indirect object is already named elsewhere in the sentence.'
+  ],
+  examples: [
+    { es: '¿Me prestas tu coche? — Sí, te lo presto.', en: '—Will you lend me your car? —Yes, I\'ll lend it to you.' },
+    { es: 'Se lo expliqué a mis padres ayer.', en: 'I explained it to my parents yesterday.' },
+    { es: 'Está explicándomelo todo con mucha paciencia.', en: "She's explaining it all to me very patiently." }
+  ],
+  probes: [
+    { id: 'p:pcombin:orden', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Lo te di.', 'Te lo di.', 'Di te lo.'], answer: 1 },
+    { id: 'p:pcombin:separar', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Le voy a decirlo.', 'Se lo voy a decir.', 'Lo le voy a decir.'], answer: 1 },
+    { id: 'p:pcombin:cloze', kind: 'cloze', text: '¿Me prestas tu coche? — Sí, te ___ presto.', accept: ['lo'] },
+    { id: 'p:pcombin:recall', kind: 'recall', front: 'Once OI and OD clitics combine, can they ever be split across a periphrasis?', back: 'no — they always move together' }
+  ]
+},
+
+{
+  id: 'gr-condicionales-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:772', 'gramatica:B1:773', 'gramatica:B1:774', 'gramatica:B1:775', 'gramatica:B1:776'],
+  title: 'Condicionales reales: si + futuro, si + imperativo',
+  summary: 'A real, open condition can now pair si + presente with a main clause in the future or the imperative, not only the present — but the si-clause itself never takes a future-tense verb, an absolute rule that survives every other change to the sentence.',
+  sections: [
+    { h: 'Extending the A2 pattern', html: 'Beyond <i>si + presente, presente</i> (A2), the main clause can now be in the future — <i>Si tengo tiempo, iré</i> — or an imperative — <i>Si puedes, ayúdame</i>.' },
+    { h: 'The one rule that never changes', html: 'Whatever tense the main clause takes, the <i>si</i>-clause itself STAYS in the present indicative: <i>*Si vendrá Carlota</i> is always wrong; it must be <i>Si viene Carlota</i>.' }
+  ],
+  contrasts: [
+    { es: 'Si tengo tiempo, voy.', en: 'If I have time, I go.', note: 'A2 pattern — present in both halves' },
+    { es: 'Si tengo tiempo, iré.', en: 'If I have time, I\'ll go.', note: 'B1 extension — future in the main clause' },
+    { es: 'Si puedes, ayúdame.', en: 'If you can, help me.', note: 'imperative main clause' },
+    { es: '*Si vendrá Carlota, iremos al cine.', en: '(wrong)', note: 'si never takes a future-tense verb, regardless of the main clause' }
+  ],
+  pitfalls: [
+    '<i>Si</i> is never followed by a future-tense verb, in any variant of a real condition — this rule has no exceptions.',
+    'The main clause has three possible shapes at this level (present, future, imperative); the <i>si</i>-clause has exactly one (present indicative).'
+  ],
+  examples: [
+    { es: 'Si llueve mañana, cancelaremos la excursión.', en: "If it rains tomorrow, we'll cancel the trip." },
+    { es: 'Si no entiendes algo, pregúntame sin problema.', en: "If you don't understand something, just ask me." },
+    { es: 'Si apruebo el examen, celebraré con mis amigos.', en: "If I pass the exam, I'll celebrate with my friends." }
+  ],
+  probes: [
+    { id: 'p:condicB1:nuncafuturo', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Si vendrá Carlota, iremos.', 'Si viene Carlota, iremos.', 'Si venga Carlota, iremos.'], answer: 1 },
+    { id: 'p:condicB1:apodosis', kind: 'mcq', q: '"Si tengo tiempo, ___." (I\'ll go — future)',
+      options: ['voy', 'iré', 'iba'], answer: 1 },
+    { id: 'p:condicB1:cloze', kind: 'cloze', text: 'Si ___ (poder), ayúdame.', accept: ['puedes'] },
+    { id: 'p:condicB1:recall', kind: 'recall', front: 'Does the si-clause itself EVER take the future tense?', back: 'no — never, regardless of the main clause' }
+  ]
+},
+
+{
+  id: 'gr-concesivas-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:797', 'gramatica:B1:798', 'gramatica:B1:799', 'gramatica:B1:800'],
+  title: 'Concesivas: aunque + indicativo',
+  summary: 'Aunque introduces a fact that should have blocked the main clause but did not — and at this level it stays firmly in the indicative, because the conceded fact is presented as real and known, not merely possible.',
+  sections: [
+    { h: 'The logic: obstacle, but anyway', html: '<i>Aunque me encuentro mal, voy al trabajo</i> concedes a genuine obstacle (feeling unwell) and states that it did not stop the result (going to work anyway).' },
+    { h: 'Indicative marks it as a known fact', html: 'Using the indicative after <i>aunque</i> signals the speaker treats the conceded fact as TRUE, not hypothetical — <i>Aunque está lloviendo, pienso ir a correr</i> asserts that it really is raining.' },
+    { h: 'Position', html: 'Unlike <i>como</i> (causal), <i>aunque</i> can open the sentence or interrupt it mid-way, with no restriction.' }
+  ],
+  contrasts: [
+    { es: 'Aunque me encuentro mal, voy al trabajo.', en: "Although I feel unwell, I'm going to work.", note: 'a real, known fact conceded' },
+    { es: 'Voy al trabajo aunque me encuentro mal.', en: "I'm going to work although I feel unwell.", note: 'the same logic, aunque now mid-sentence' }
+  ],
+  pitfalls: [
+    'Indicative after <i>aunque</i> at this level always means the conceded fact is treated as TRUE — a separate subjunctive use for merely possible facts belongs to a later level, not this one.',
+    'Do not confuse <i>aunque</i> (concession) with <i>como</i> (cause) — they answer different questions entirely, even though both can open a sentence.'
+  ],
+  examples: [
+    { es: 'Aunque no tengo mucho dinero, voy a hacer el viaje.', en: "Although I don't have much money, I'm going to take the trip." },
+    { es: 'El plan sigue en pie aunque hace mal tiempo.', en: "The plan still stands even though the weather's bad." },
+    { es: 'Aunque estudié mucho, no aprobé el examen.', en: "Although I studied a lot, I didn't pass the exam." }
+  ],
+  probes: [
+    { id: 'p:concesB1:modo', kind: 'mcq', q: '"Aunque ___ (llover), pienso salir." (a real, known fact — it IS raining)',
+      options: ['llueve', 'llueva', 'lloverá'], answer: 0 },
+    { id: 'p:concesB1:logica', kind: 'mcq', q: '"Aunque" introduce:',
+      options: ['una causa', 'un obstáculo que no impide el resultado', 'una condición'], answer: 1 },
+    { id: 'p:concesB1:cloze', kind: 'cloze', text: '___ estudié mucho, no aprobé. (although)', accept: ['Aunque', 'aunque'] },
+    { id: 'p:concesB1:recall', kind: 'recall', front: 'What does indicative (not subjunctive) after "aunque" signal at this level?', back: 'the conceded fact is treated as real/known' }
+  ]
+},
+
+{
+  id: 'gr-temporales-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:725', 'gramatica:B1:727', 'gramatica:B1:728', 'gramatica:B1:730', 'gramatica:B1:731', 'gramatica:B1:732'],
+  title: 'Temporales: cuando + subjuntivo para el futuro',
+  summary: 'Cuando takes the indicative for a fact that already happened or happens habitually, but switches to the subjunctive the instant the event is still in the future — one of the single most important rules in the entire Spanish subjunctive system.',
+  sections: [
+    { h: 'Cuando + indicativo: past or habitual', html: 'A completed or habitual event stays indicative: <i>Cuando llegué, lo vi</i> (past fact), <i>Me fui cuando llegaron</i> (a real, completed sequence).' },
+    { h: 'Cuando + subjuntivo: not yet real', html: 'A future event — one that has not happened yet at the moment of speaking — switches <i>cuando</i> to the subjunctive: <i>Te llamaré cuando llegue</i>, never <i>*cuando llegaré</i>. The future-tense main clause does NOT pull the subjunctive clause into the future tense too.' },
+    { h: 'The same rule spreads to other time connectors', html: '<i>En cuanto</i> (as soon as), <i>hasta que</i> (until) and <i>mientras</i> (while), when they point to the future, follow the identical indicative/subjunctive split as <i>cuando</i>.' }
+  ],
+  contrasts: [
+    { es: 'Cuando llegué, lo vi.', en: 'When I arrived, I saw him.', note: 'past fact — indicative' },
+    { es: 'Te llamaré cuando llegue.', en: "I'll call you when I arrive.", note: 'future, not yet real — subjunctive, even though the main clause is future' },
+    { es: '*Te llamaré cuando llegaré.', en: '(wrong)', note: 'cuando never takes the future tense for a future event' }
+  ],
+  pitfalls: [
+    'A future-tense main clause never pulls <i>cuando</i> into the future tense too — the subordinate clause takes the SUBJUNCTIVE instead, never the future indicative.',
+    'This same indicative/subjunctive split extends to <i>en cuanto, hasta que, mientras</i> whenever they refer to a future, not-yet-real event.'
+  ],
+  examples: [
+    { es: 'Avísame en cuanto tengas noticias.', en: "Let me know as soon as you have news." },
+    { es: 'Esperaré aquí hasta que vuelvas.', en: "I'll wait here until you come back." },
+    { es: 'Cuando era niño, vivía en Bogotá.', en: 'When I was a child, I lived in Bogotá.' }
+  ],
+  probes: [
+    { id: 'p:temporB1:futuro', kind: 'mcq', q: '"Te llamaré cuando ___ a casa." (llegar, evento futuro)',
+      options: ['llego', 'llegaré', 'llegue'], answer: 2 },
+    { id: 'p:temporB1:pasado', kind: 'mcq', q: '"Cuando ___ (llegar) ayer, lo vi." (hecho pasado)',
+      options: ['llegué', 'llegue', 'llegaré'], answer: 0 },
+    { id: 'p:temporB1:cloze', kind: 'cloze', text: 'Avísame en cuanto ___ (tener) noticias.', accept: ['tengas'] },
+    { id: 'p:temporB1:recall', kind: 'recall', front: 'What mood does "cuando" take for a FUTURE, not-yet-real event?', back: 'subjunctive (never the future indicative)' }
+  ]
+},
+
+/* ---------------------------------------------------------------------------
+ * B1 grammar, wave 2 of 2: the remaining connector/clause-structure topics —
+ * consequence, comparison, cause refined, relative clauses, interrogatives
+ * with a preposition, and subordinate clauses standing in for a subject/object
+ * (which generalizes the same-subject/different-subject rule from wave 1's
+ * subjunctive lesson beyond just "querer").
+ * ------------------------------------------------------------------------ */
+{
+  id: 'gr-consecutivas-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:778', 'gramatica:B1:779', 'gramatica:B1:780', 'gramatica:B1:781', 'gramatica:B1:782'],
+  title: 'Consecutivas: entonces, así que, o sea que',
+  summary: 'Entonces, así que and o sea que all state a result that follows from what was just said — the same cause-effect link as porque/como, but read in the opposite direction, from cause toward its consequence.',
+  sections: [
+    { h: 'Stating a plain result', html: '<i>No había entradas, así que no la vimos</i> — the second clause follows necessarily from the first.' },
+    { h: 'O sea que: reformulating', html: '<i>Tengo mucho trabajo, o sea que no podré salir</i> — <i>o sea que</i> draws out the implication of what was just said, almost restating it as a conclusion.' },
+    { h: 'Entonces: connector and discourse marker', html: 'Beyond pure consequence, <i>entonces</i> also confirms a shared plan in conversation: <i>Entonces quedamos mañana, ¿no?</i> — closer to "so, [we\'re agreed]" than a strict logical result.' }
+  ],
+    contrasts: [
+    { es: 'Estaba enfermo, por eso no vino. (causal → consecutive)', en: 'He was ill, that\'s why he didn\'t come.', note: 'stating the cause first, then the effect' },
+    { es: 'No vino porque estaba enfermo. (consecutive → causal)', en: "He didn't come because he was ill.", note: 'same relationship, reversed direction and connector' }
+  ],
+  pitfalls: [
+    'Consecutivas state cause THEN effect; causales (porque/como) can state either order — do not assume the connector always fixes the sentence order.',
+    'These connectors always take the indicative — nothing here triggers the subjunctive.'
+  ],
+  examples: [
+    { es: 'Perdimos el tren, así que tuvimos que esperar dos horas.', en: 'We missed the train, so we had to wait two hours.' },
+    { es: 'No conozco la ciudad, o sea que no puedo ayudarte con eso.', en: "I don't know the city, so I can't help you with that." },
+    { es: 'Entonces, ¿al final vienes o no?', en: 'So, are you coming in the end or not?' }
+  ],
+  probes: [
+    { id: 'p:consecB1:orden', kind: 'mcq', q: '¿Cuál conector marca la CONSECUENCIA, no la causa?',
+      options: ['porque', 'así que', 'como'], answer: 1 },
+    { id: 'p:consecB1:modo', kind: 'mcq', q: '"No había entradas, así que no la ___." (ver)',
+      options: ['vimos', 'veamos', 'veríamos'], answer: 0 },
+    { id: 'p:consecB1:cloze', kind: 'cloze', text: 'Tengo mucho trabajo, o sea ___ no podré salir.', accept: ['que'] },
+    { id: 'p:consecB1:recall', kind: 'recall', front: 'Do consecutive connectors (así que, entonces) trigger the subjunctive?', back: 'no — always indicative' }
+  ]
+},
+
+{
+  id: 'gr-comparativas-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:787', 'gramatica:B1:789', 'gramatica:B1:791', 'gramatica:B1:793', 'gramatica:B1:795'],
+  title: 'Comparativas: igual de... que, más de',
+  summary: 'Spanish distinguishes más QUE (comparing two things) from más DE (a numeric ceiling) — a difference English\'s single "more than" completely erases, and mixing the two up is a real, gate-checkable error.',
+  sections: [
+    { h: 'Igual de + adjetivo + que', html: 'Emphasizes the equality of an intensity: <i>Es igual de listo que cualquiera</i> — a slightly stronger claim than plain <i>tan listo como</i>.' },
+    { h: 'Más que: comparing two things', html: '<i>Trabaja más que yo</i> — the second term of the comparison is another entity (a person, a thing).' },
+    { h: 'Más de: a numeric ceiling', html: '<i>Cuesta más de 20 euros</i> — here <i>de</i> introduces a NUMBER, not another entity being compared. <i>No cuesta más de 20 euros</i> caps it as an exclusive limit.' }
+  ],
+    contrasts: [
+    { es: 'Sabe más que yo.', en: 'He knows more than I do.', note: 'más QUE — comparing to another entity' },
+    { es: 'Cuesta más de 20 euros.', en: 'It costs more than 20 euros.', note: 'más DE — a ceiling on a number, not a comparison' }
+  ],
+  pitfalls: [
+    'Never use <i>más que</i> directly before a bare number — <i>*más que 20 euros</i> is wrong; that is exclusively <i>más de</i>\'s job.',
+    '<i>Más de</i> introduces a NUMBER; <i>más que</i> introduces the second entity in a comparison — they are not interchangeable.'
+  ],
+  examples: [
+    { es: 'Hay más de cien personas en la sala.', en: 'There are more than a hundred people in the room.' },
+    { es: 'Este piso es igual de caro que el otro.', en: 'This flat is just as expensive as the other one.' },
+    { es: 'Corre más que cualquiera del equipo.', en: 'He runs more than anyone on the team.' }
+  ],
+  probes: [
+    { id: 'p:comparatB1:dede', kind: 'mcq', q: '"Cuesta más ___ 20 euros." (a number, ceiling)',
+      options: ['que', 'de', 'como'], answer: 1 },
+    { id: 'p:comparatB1:que', kind: 'mcq', q: '"Sabe más ___ yo." (comparing to another person)',
+      options: ['de', 'que', 'como'], answer: 1 },
+    { id: 'p:comparatB1:cloze', kind: 'cloze', text: 'Hay más ___ cien personas. (de, before a number)', accept: ['de'] },
+    { id: 'p:comparatB1:recall', kind: 'recall', front: 'Before a NUMBER, is it "más que" or "más de"?', back: 'más de' }
+  ]
+},
+
+{
+  id: 'gr-causales-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:750', 'gramatica:B1:751', 'gramatica:B1:752', 'gramatica:B1:753'],
+  title: 'Causales: como, por + infinitivo',
+  summary: 'Por + infinitive packs an entire cause clause into three words — lo hizo así por no saber otra manera says exactly what porque no sabía otra manera would, only more compactly, and without a conjugated verb of its own.',
+  sections: [
+    { h: 'Como: reprised from A2', html: '<i>Como no venías, empecé a cenar</i> — still opens the sentence, still indicative.' },
+    { h: 'Por + infinitivo: a compact cause', html: '<i>Lo hizo así por no saber otra manera</i> — no full clause, no conjugated verb, just <i>por</i> + infinitive standing in for an entire <i>porque</i>-clause.' },
+    { h: 'Always indicative', html: 'Every causal connector at this level — <i>como, porque, por</i> — takes the indicative; nothing here triggers the subjunctive.' }
+  ],
+    contrasts: [
+    { es: 'Lo hizo por no saber otra manera.', en: "He did it because he didn't know any other way.", note: 'compact — por + infinitive' },
+    { es: 'Lo hizo porque no sabía otra manera.', en: "He did it because he didn't know any other way.", note: 'the same meaning, spelled out as a full clause' }
+  ],
+  pitfalls: [
+    'Do not confuse causal <i>por + infinitivo</i> (a REASON) with <i>para + infinitivo</i> (a PURPOSE, from A1/A2) — <i>por</i> looks backward to a cause, <i>para</i> looks forward to a goal.',
+    '<i>Por</i> + infinitive requires that the subject of the cause is the SAME as the main clause\'s subject; otherwise use a full <i>porque</i>-clause.'
+  ],
+  examples: [
+    { es: 'Perdió el tren por llegar tarde.', en: 'He missed the train because he arrived late.' },
+    { es: 'Como no tenía llave, tuve que esperar fuera.', en: "Since I didn't have a key, I had to wait outside." },
+    { es: 'Le castigaron por mentir a sus padres.', en: 'He was punished for lying to his parents.' }
+  ],
+  probes: [
+    { id: 'p:causalB1:porpara', kind: 'mcq', q: '"Lo hizo así ___ no saber otra manera." (cause, compact)',
+      options: ['para', 'por', 'a'], answer: 1 },
+    { id: 'p:causalB1:sujeto', kind: 'mcq', q: '"Perdió el tren ___ llegar tarde." (same subject cause)',
+      options: ['porque', 'por', 'como'], answer: 1 },
+    { id: 'p:causalB1:cloze', kind: 'cloze', text: '___ no venías, empecé a cenar. (since, opening the sentence)', accept: ['Como', 'como'] },
+    { id: 'p:causalB1:recall', kind: 'recall', front: 'por + infinitivo (cause) vs para + infinitivo — what does para mark instead?', back: 'purpose/goal, not cause' }
+  ]
+},
+
+{
+  id: 'gr-relativas-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:689', 'gramatica:B1:690', 'gramatica:B1:691', 'gramatica:B1:692', 'gramatica:B1:695'],
+  title: 'Oraciones de relativo: que, quien, donde',
+  summary: 'A relative clause with que either PINS DOWN which thing you mean, with no comma, or simply ADDS extra information about something already identified, set off by commas — the same word que, two structurally different jobs.',
+  sections: [
+    { h: 'Especificativa: no comma, restricts', html: '<i>El coche que compré es rojo</i> — the clause tells you WHICH car; removing it changes which car is meant.' },
+    { h: 'Explicativa: comma, adds extra', html: '<i>Mi coche, que es rojo, está en el garaje</i> — the referent is already fully identified (<i>mi coche</i>); the clause just adds a fact about it and could be dropped without losing the reference.' },
+    { h: 'Que, quien, donde', html: '<i>Que</i> is the all-purpose relative, for things and people alike. <i>Quien/quienes</i> is reserved for people, mainly after a preposition or inside an explicative clause — it does not open a plain specificative clause the way <i>que</i> does. <i>Donde</i> replaces <i>que</i> for places.' }
+  ],
+    contrasts: [
+    { es: 'El coche que compré es rojo.', en: 'The car I bought is red.', note: 'no commas — restricts which car is meant' },
+    { es: 'Mi coche, que es rojo, está en el garaje.', en: 'My car, which is red, is in the garage.', note: 'commas — the car is already identified, this is just extra' }
+  ],
+  pitfalls: [
+    '<i>Quien/quienes</i> does not normally open a plain, comma-free specificative clause: prefer <i>que</i> even for people — <i>el chico que vive aquí</i>, not <i>*el chico quien vive aquí</i>.',
+    'Dropping the commas around an explicative clause turns it into a specificative one and can change what the sentence actually claims.'
+  ],
+  examples: [
+    { es: 'Los libros que me prestaste son excelentes.', en: 'The books you lent me are excellent.' },
+    { es: 'Ana, que vive en Chile, viene a visitarnos en verano.', en: 'Ana, who lives in Chile, is coming to visit us in summer.' },
+    { es: 'No conozco a nadie que hable seis idiomas.', en: 'I don\'t know anyone who speaks six languages.' }
+  ],
+  probes: [
+    { id: 'p:relativB1:tipo', kind: 'mcq', q: '"El coche que compré es rojo" (sin comas) es:',
+      options: ['explicativa', 'especificativa', 'ninguna de las dos'], answer: 1 },
+    { id: 'p:relativB1:quien', kind: 'mcq', q: '¿Cuál es más natural?',
+      options: ['el chico quien vive aquí', 'el chico que vive aquí', 'el chico a quien vive aquí'], answer: 1 },
+    { id: 'p:relativB1:cloze', kind: 'cloze', text: 'Este es el pueblo ___ nací. (where)', accept: ['donde'] },
+    { id: 'p:relativB1:recall', kind: 'recall', front: 'especificativa vs explicativa — which one uses commas?', back: 'explicativa (adds extra info about an already-identified thing)' }
+  ]
+},
+
+{
+  id: 'gr-interrogativos-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:264', 'gramatica:B1:265', 'gramatica:B1:269', 'gramatica:B1:273', 'gramatica:B1:275'],
+  title: 'Interrogativos: qué, quién, cuál + preposición',
+  summary: 'A question word preceded by a preposition moves that preposition to the very front of the question, exactly where English would strand it at the end — ¿Con quién trabajas?, never a Spanish sentence ending in "with."',
+  sections: [
+    { h: 'The preposition always fronts', html: '<i>¿Con qué escribes?</i>, <i>¿A qué juegas?</i>, <i>¿Con quién trabajas?</i> — Spanish never strands a preposition at the end of a question the way English does with "who…with?"' },
+    { h: 'A quién for a personal object', html: 'Asking about a person as a direct or indirect object needs the personal <i>a</i> fronted along with <i>quién</i>: <i>¿A quién ves?</i>, <i>¿A quién le das el libro?</i>' },
+    { h: 'Cuál still never precedes a noun directly', html: 'Reinforcing the A2 rule: <i>*¿Cuál libro quieres?</i> is wrong — use <i>¿Qué libro quieres?</i> when a noun follows directly; <i>cuál</i> stands alone, selecting from an implied set.' }
+  ],
+    contrasts: [
+    { es: '¿Con quién trabajas?', en: 'Who do you work with?', note: 'correct — the preposition moves to the front' },
+    { es: '*¿Quién trabajas con?', en: '(wrong — a direct calque of English word order)', note: 'Spanish never leaves the preposition stranded at the end' }
+  ],
+  pitfalls: [
+    '<i>Cuál/cuáles</i> is never directly followed by a noun — <i>*cuál libro</i> is wrong; use <i>qué libro</i> instead.',
+    'Never strand a preposition at the end of a Spanish question the way English does — it must move to the front with the question word.'
+  ],
+  examples: [
+    { es: '¿De qué habla la película?', en: 'What is the film about?' },
+    { es: '¿Para quién es este regalo?', en: 'Who is this present for?' },
+    { es: '¿Cuál de estas dos opciones prefieres?', en: 'Which of these two options do you prefer?' }
+  ],
+  probes: [
+    { id: 'p:interrogB1:frontear', kind: 'mcq', q: '"Who do you work with?" en español:',
+      options: ['¿Quién trabajas con?', '¿Con quién trabajas?', '¿Trabajas con quién?'], answer: 1 },
+    { id: 'p:interrogB1:cualnoun', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['¿Cuál libro quieres?', '¿Qué libro quieres?', '¿Cuáles libro quieres?'], answer: 1 },
+    { id: 'p:interrogB1:cloze', kind: 'cloze', text: '¿___ quién es este regalo? (for)', accept: ['Para', 'para'] },
+    { id: 'p:interrogB1:recall', kind: 'recall', front: 'Where does the preposition go in a Spanish question — start or end?', back: 'the start, always fronted with the question word' }
+  ]
+},
+
+{
+  id: 'gr-subordinadas-sustantivas-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:662', 'gramatica:B1:664', 'gramatica:B1:668', 'gramatica:B1:672', 'gramatica:B1:674'],
+  title: 'Subordinadas sustantivas: infinitivo o que + verbo',
+  summary: 'A subordinate clause standing in for a subject or object can be a bare infinitive for a general claim, or a full que + subjunctive clause about someone specific — the exact same same-subject/different-subject rule from the subjunctive lesson, now shown to reach far beyond just "querer."',
+  sections: [
+    { h: 'Infinitivo: generic or same-subject', html: '<i>Leer ayuda a mejorar el vocabulario</i> makes a claim about reading IN GENERAL, no one in particular. <i>Me da miedo hablar</i> uses the infinitive because the person afraid and the person who would speak are the same "me."' },
+    { h: 'Que + subjuntivo: a specific, different subject', html: '<i>Me encanta que me llames</i> is about YOUR calling, not mine — two different people, so the infinitive is no longer possible and <i>que</i> + subjunctive takes over, exactly the same pattern as <i>querer que</i>.' },
+    { h: 'The rule generalizes', html: 'This is not a special case of <i>querer</i> — it is a GENERAL rule for any clause functioning as a subject or object: same subject → infinitive; different subject, with the right kind of trigger verb → que + subjunctive.' }
+  ],
+    contrasts: [
+    { es: 'Me encanta ir al cine.', en: 'I love going to the cinema.', note: 'same subject — infinitive' },
+    { es: 'Me encanta que me llames.', en: 'I love it when you call me.', note: 'different subjects — que + subjunctive' }
+  ],
+  pitfalls: [
+    'This is the identical same-subject/different-subject rule from the presente de subjuntivo lesson — apply it to ANY clause acting as a subject or object, not only after <i>querer</i>.',
+    '<i>Es seguro/es verdad que</i> (certainty) takes the indicative; <i>es posible/es probable que</i> (uncertainty) takes the subjunctive — the impersonal expression itself decides the mood.'
+  ],
+  examples: [
+    { es: 'Nos preocupa que no haya llamado todavía.', en: "It worries us that he hasn't called yet." },
+    { es: 'Es probable que llueva esta tarde.', en: "It's likely to rain this afternoon." },
+    { es: 'Prefiero quedarme en casa hoy.', en: 'I prefer to stay home today.' }
+  ],
+  probes: [
+    { id: 'p:subsustB1:mismosujeto', kind: 'mcq', q: '"Me da miedo ___." (hablar en público, mismo sujeto)',
+      options: ['que hable', 'hablar', 'que hablo'], answer: 1 },
+    { id: 'p:subsustB1:distinto', kind: 'mcq', q: '"Me encanta ___." (that you call me, distinto sujeto)',
+      options: ['llamarme', 'que me llames', 'que me llamas'], answer: 1 },
+    { id: 'p:subsustB1:cloze', kind: 'cloze', text: 'Es probable que ___ (llover) esta tarde.', accept: ['llueva'] },
+    { id: 'p:subsustB1:recall', kind: 'recall', front: 'When the subject of both clauses is the SAME, do you use the infinitive or que + subjunctive?', back: 'the infinitive' }
+  ]
+},
+
+/* ============================================================================
+ * BATCH — B1 notion, batch A of several (existence/quality/epistemic cluster).
+ * B1 notion has 61 syllabus units; thin, closely-related siblings are merged
+ * throughout, following the precedent set at A1/A2.
+ * ========================================================================== */
+{
+  id: 'nt-existencia-disponibilidad-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:1', 'nociones_generales:B1:2', 'nociones_generales:B1:14', 'nociones_generales:B1:15', 'nociones_generales:B1:31', 'nociones_generales:B1:32'],
+  title: 'Existencia y disponibilidad: vacío, libre, ocupado',
+  summary: 'Vacío/lleno describe whether a space has anything in it at all; libre/ocupado describe whether that space is AVAILABLE to you — two genuinely different questions, since a full train can still have a free seat.',
+  sections: [
+    { h: 'Existence itself', html: '<i>Existir</i> states bare existence: <i>Esa palabra no existe en español</i>. <i>Crear/destruir/construir</i> mark the two directions of bringing something into or out of existence.' },
+    { h: 'Vacío/lleno: contents', html: 'Whether a space HAS anything in it: <i>La sala está llena</i>, <i>El vaso está vacío</i>.' },
+    { h: 'Libre/ocupado: availability', html: 'A completely different question — whether something is available for USE: <i>Hay una silla libre</i> can be true even in a full room, because "full of people" and "no free seats" are not the same fact.' }
+  ],
+  exponents: [
+    { es: 'Esa palabra no existe en español.', en: "That word doesn't exist in Spanish.", register: 'neutral' },
+    { es: 'La sala estaba llena, pero encontramos una silla libre.', en: 'The room was full, but we found a free chair.', register: 'neutral', note: 'full of people AND a free seat — not a contradiction' },
+    { es: 'El baño está ocupado.', en: 'The bathroom is occupied.', register: 'neutral' },
+    { es: 'He perdido las llaves, no las encuentro.', en: "I've lost my keys, I can't find them.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'La sala está llena.', en: 'The room is full.', note: 'about CONTENTS — how many people are in it' },
+    { es: 'Hay una silla libre.', en: 'There\'s a free chair.', note: 'about AVAILABILITY — a different fact, can be true even in a full room' }
+  ],
+  pitfalls: [
+    '<i>Lleno/vacío</i> and <i>libre/ocupado</i> answer different questions — do not treat them as synonyms.',
+    '<i>(Des)aparecer</i> and <i>perder/encontrar</i> both describe presence flickering in and out, but from different grammatical angles: the thing disappears vs. you lose it.'
+  ],
+  examples: [
+    { es: 'El día de la presentación hubo bastante público.', en: 'On the day of the presentation there was quite an audience.' },
+    { es: 'Estoy preparado para la entrevista.', en: "I'm ready for the interview." },
+    { es: 'No tiene tiempo libre esta semana.', en: "He doesn't have free time this week." }
+  ],
+  probes: [
+    { id: 'p:existdisp:distincion', kind: 'mcq', q: '"La sala está llena" y "hay una silla libre" — ¿son contradictorios?',
+      options: ['sí, siempre', 'no, pueden ser ambos ciertos', 'solo a veces'], answer: 1 },
+    { id: 'p:existdisp:existir', kind: 'mcq', q: '"Esa palabra no ___ en español."',
+      options: ['está', 'existe', 'hay'], answer: 1 },
+    { id: 'p:existdisp:cloze', kind: 'cloze', text: 'El baño está ___. (occupied)', accept: ['ocupado'] },
+    { id: 'p:existdisp:recall', kind: 'recall', front: 'lleno/vacío vs libre/ocupado — which pair is about AVAILABILITY?', back: 'libre/ocupado' }
+  ]
+},
+
+{
+  id: 'nt-cualidad-generalidad-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:44', 'nociones_generales:B1:45', 'nociones_generales:B1:47', 'nociones_generales:B1:48', 'nociones_generales:B1:115', 'nociones_generales:B1:116'],
+  title: 'Cualidad y generalidad: tipo, forma, en general',
+  summary: 'Parecer (to seem) and parecerse a (to resemble) share a root but describe two unrelated things — one is your IMPRESSION of something, the other is a physical LIKENESS to something else — and mixing them up is a common, gate-checkable slip.',
+  sections: [
+    { h: 'Sorting: cualidad, clase, tipo', html: '<i>Es una persona con muchas cualidades</i>; <i>no me gusta ese tipo de botas</i> — naming the category something falls into.' },
+    { h: 'Forma and resemblance', html: '<i>¿Qué forma tiene?</i> asks about shape. <i>Parecer</i> states an impression (<i>parece cansado</i> — "he seems tired"); <i>parecerse a</i> states a resemblance to someone/something else (<i>se parece a su padre</i> — "he looks like his father"). Same root, different jobs.' },
+    { h: 'Stepping back: en general, mayoría', html: '<i>En general</i> and <i>la mayoría</i> shift from one example to the typical or dominant case: <i>En general, prefiero el té</i>.' }
+  ],
+  exponents: [
+    { es: 'Es una persona con muchas cualidades.', en: 'She\'s a person with a lot of good qualities.', register: 'neutral' },
+    { es: 'Parece cansado hoy.', en: 'He seems tired today.', register: 'neutral', note: 'parecer — an impression' },
+    { es: 'Se parece mucho a su padre.', en: 'He looks a lot like his father.', register: 'neutral', note: 'parecerse a — a resemblance' },
+    { es: 'En general, la gente aquí es muy amable.', en: 'In general, people here are very kind.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Parece cansado.', en: 'He seems tired.', note: 'parecer — an impression about him, right now' },
+    { es: 'Se parece a su padre.', en: 'He looks like his father.', note: 'parecerse a — a lasting physical resemblance' }
+  ],
+  pitfalls: [
+    '<i>Parecer</i> (to seem) and <i>parecerse a</i> (to resemble) are NOT interchangeable, despite sharing a root — check whether you mean an impression or a likeness.',
+    '<i>En general</i> makes a claim about the typical case — do not use it to describe one specific instance.'
+  ],
+  examples: [
+    { es: '¿Qué forma tiene ese edificio? — Es redondo.', en: '—What shape is that building? —It\'s round.' },
+    { es: 'La mayoría de mis amigos viven fuera del país.', en: 'Most of my friends live abroad.' },
+    { es: 'Es una novela muy original, no se parece a nada que haya leído.', en: "It's a very original novel, it's not like anything I've read." }
+  ],
+  probes: [
+    { id: 'p:cualgen:parecer', kind: 'mcq', q: '"He looks like his mother":',
+      options: ['Parece a su madre.', 'Se parece a su madre.', 'Parece su madre.'], answer: 1 },
+    { id: 'p:cualgen:impresion', kind: 'mcq', q: '"He seems tired" (an impression, not a resemblance):',
+      options: ['Se parece cansado.', 'Parece cansado.', 'Es parecido cansado.'], answer: 1 },
+    { id: 'p:cualgen:cloze', kind: 'cloze', text: '___, prefiero el té al café. (in general)', accept: ['En general', 'en general'] },
+    { id: 'p:cualgen:recall', kind: 'recall', front: 'parecer vs parecerse a — which one states a physical resemblance?', back: 'parecerse a' }
+  ]
+},
+
+{
+  id: 'nt-certeza-realidad-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:70', 'nociones_generales:B1:71', 'nociones_generales:B1:75', 'nociones_generales:B1:76', 'nociones_generales:B1:92', 'nociones_generales:B1:94'],
+  title: 'Certeza e incertidumbre: seguro, tal vez, imaginario',
+  summary: 'Es evidente commits fully to a fact, tal vez floats a possibility with none at all — but a lo mejor, despite belonging to that same doubt family, unusually keeps the indicative, one of the classic B1 subjunctive exceptions.',
+  sections: [
+    { h: 'Full commitment: certeza', html: '<i>Es evidente</i>, <i>está claro</i>, <i>es imposible</i> all state a fact (or its impossibility) with full confidence — indicative, matching the certainty rule from the subjunctive lesson.' },
+    { h: 'Hedging: incertidumbre', html: '<i>Dudar</i>, <i>posiblemente</i>, <i>tal vez</i> spread across a scale of doubt — most of this family pulls the following verb into the subjunctive.' },
+    { h: 'The exception: a lo mejor', html: 'Despite meaning almost the same as <i>tal vez</i>, <i>a lo mejor</i> conventionally keeps the INDICATIVE: <i>A lo mejor viene</i>, not <i>*a lo mejor venga</i> — a well-known irregularity in the doubt family.' },
+    { h: 'Realidad, ficción, imaginación', html: 'The same certainty/uncertainty scale reappears applied to what is real: <i>real</i>, <i>imaginario</i>, <i>realista</i>, <i>soñar/imaginar</i>.' }
+  ],
+  exponents: [
+    { es: 'Está claro que no va a venir.', en: "It's clear he's not coming.", register: 'neutral', note: 'certainty — indicative' },
+    { es: 'Tal vez llueva esta tarde.', en: 'It might rain this afternoon.', register: 'neutral', note: 'tal vez — commonly subjunctive' },
+    { es: 'A lo mejor viene más tarde.', en: 'He might come later.', register: 'coloquial', note: 'a lo mejor — the exception, keeps the indicative' },
+    { es: 'Ese personaje es completamente imaginario.', en: 'That character is entirely fictional.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Tal vez venga mañana.', en: 'He might come tomorrow.', note: 'tal vez — commonly pulls the subjunctive' },
+    { es: 'A lo mejor viene mañana.', en: 'He might come tomorrow.', note: 'a lo mejor — nearly the same meaning, but keeps the indicative' }
+  ],
+  pitfalls: [
+    '<i>A lo mejor</i> is a doubt expression that unusually takes the indicative, not the subjunctive its meaning would suggest — memorize it as the exception.',
+    'Do not confuse <i>real</i> (real, actual) with <i>realista</i> (realistic, in the sense of "sensible/practical") — the two are not synonyms.'
+  ],
+  examples: [
+    { es: 'Es evidente que ha estudiado mucho.', en: "It's evident he's studied a lot." },
+    { es: 'Dudo que tengamos tiempo para todo.', en: "I doubt we'll have time for everything." },
+    { es: 'De niño soñaba con ser piloto.', en: 'As a child he dreamed of being a pilot.' }
+  ],
+  probes: [
+    { id: 'p:certreal:excepcion', kind: 'mcq', q: '"A lo mejor ___ mañana." (venir)',
+      options: ['viene', 'venga', 'vendría'], answer: 0 },
+    { id: 'p:certreal:tal vez', kind: 'mcq', q: '"Tal vez ___ esta tarde." (llover — comúnmente subjuntivo)',
+      options: ['llueve', 'llueva', 'lloverá'], answer: 1 },
+    { id: 'p:certreal:cloze', kind: 'cloze', text: 'Está claro que no va a ___. (venir)', accept: ['venir'] },
+    { id: 'p:certreal:recall', kind: 'recall', front: 'Which doubt expression unusually keeps the indicative?', back: 'a lo mejor' }
+  ]
+},
+
+{
+  id: 'nt-necesidad-obligacion-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:105', 'nociones_generales:B1:106', 'nociones_generales:B1:107', 'nociones_generales:B1:108', 'nociones_generales:B1:110'],
+  title: 'Necesidad y obligación: depender de, ser obligatorio',
+  summary: 'Depender de makes an outcome hinge on something entirely outside your control, while ser obligatorio states a flat, impersonal, often official requirement — both stronger and colder than the everyday necesitar from A2.',
+  sections: [
+    { h: 'Depender de: contingency', html: 'The outcome is not fixed — it hinges on something else: <i>Depende del tiempo que haga</i> ("it depends on the weather").' },
+    { h: 'Ser obligatorio: an official requirement', html: 'Carries a legal or regulatory flavour that plain <i>necesario</i> lacks: <i>Es obligatorio llevar casco</i>. <i>Necesariamente/obligatoriamente</i> are the matching adverbs.' },
+    { h: '(In)evitable and por suerte', html: '<i>Inevitable</i> asks whether something can be avoided at all; <i>por suerte</i> is the flip side of pure necessity — luck rather than requirement.' }
+  ],
+  exponents: [
+    { es: 'Depende del tiempo que haga el sábado.', en: 'It depends on the weather on Saturday.', register: 'neutral' },
+    { es: 'Es obligatorio llevar casco en la obra.', en: "It's mandatory to wear a helmet on the site.", register: 'neutral', note: 'obligatorio — an official, regulatory flavour' },
+    { es: 'Era inevitable que pasara esto tarde o temprano.', en: 'It was inevitable that this would happen sooner or later.', register: 'neutral' },
+    { es: 'Por suerte, no llovió el día de la boda.', en: 'Luckily, it didn\'t rain on the wedding day.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Es necesario reservar con antelación.', en: 'It is necessary to book in advance.', note: 'A2 — a general recommendation' },
+    { es: 'Es obligatorio llevar casco.', en: "It's mandatory to wear a helmet.", note: 'B1 — a stronger, official/legal requirement' }
+  ],
+  pitfalls: [
+    'Reach for <i>obligatorio</i>, not <i>necesario</i>, when talking about rules, laws or regulations — it carries an official flavour <i>necesario</i> does not.',
+    '<i>Depender de</i> always needs <i>de</i> before what the outcome hinges on: <i>depende del tiempo</i>, not <i>*depende el tiempo</i>.'
+  ],
+  examples: [
+    { es: 'Todo depende de si consigo el visado a tiempo.', en: "It all depends on whether I get the visa in time." },
+    { es: 'En este país, votar no es obligatorio.', en: 'In this country, voting is not mandatory.' },
+    { es: 'Por suerte, encontramos aparcamiento enseguida.', en: 'Luckily, we found parking right away.' }
+  ],
+  probes: [
+    { id: 'p:necobligB1:preposicion', kind: 'mcq', q: '"Todo ___ del tiempo." (depende)',
+      options: ['depende', 'depende de', 'depende en'], answer: 1 },
+    { id: 'p:necobligB1:oficial', kind: 'mcq', q: 'Palabra con connotación oficial/legal:',
+      options: ['necesario', 'obligatorio', 'útil'], answer: 1 },
+    { id: 'p:necobligB1:cloze', kind: 'cloze', text: '___ suerte, no llovió. (luckily)', accept: ['Por', 'por'] },
+    { id: 'p:necobligB1:recall', kind: 'recall', front: 'Which word for necessity carries a legal/regulatory flavour?', back: 'obligatorio' }
+  ]
+},
+
+{
+  id: 'nt-acontecimiento-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:62', 'nociones_generales:B1:63', 'nociones_generales:B1:64', 'nociones_generales:B1:65'],
+  title: 'Acontecimiento: tener lugar, celebrarse',
+  summary: 'Tener lugar is the formal way to say an event happens — a cousin to hay, but for EVENTS rather than things — and it never actually uses hay itself, a substitution beginners often reach for by mistake.',
+  sections: [
+    { h: 'Ser + lugar / tener lugar: formal register', html: '<i>Los primeros Juegos Olímpicos fueron en Atenas</i>; <i>La reunión tuvo lugar el día 15</i> — both name where/when an event happened, in a formal, written register.' },
+    { h: 'Pasar: the everyday equivalent', html: '<i>¿Qué ha pasado?</i>, <i>Aquí nunca pasa nada</i> — the neutral, spoken-register verb for "to happen."' },
+    { h: 'Celebrar(se): a planned occurrence', html: '<i>La boda se celebró el sábado</i> — reflexive when the event itself is the grammatical subject, marking that the occurrence was by design, not accident.' }
+  ],
+  exponents: [
+    { es: 'La reunión tuvo lugar el día 15.', en: 'The meeting took place on the 15th.', register: 'formal', note: 'tener lugar — formal register' },
+    { es: '¿Qué ha pasado aquí?', en: 'What has happened here?', register: 'neutral', note: 'pasar — the everyday equivalent' },
+    { es: 'La boda se celebró en el jardín.', en: 'The wedding was held in the garden.', register: 'neutral', note: 'celebrarse — a planned occurrence' },
+    { es: 'El concierto se ha cancelado.', en: 'The concert has been cancelled.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'La reunión tuvo lugar el día 15.', en: 'The meeting took place on the 15th.', note: 'correct — formal' },
+    { es: '*Hay la reunión el día 15.', en: '(wrong)', note: 'hay does not work this way for a scheduled event' }
+  ],
+  pitfalls: [
+    'Do not use <i>hay</i> to say an event takes place — <i>tener lugar</i>, <i>ser</i>, or <i>pasar</i> are the correct choices; <i>hay</i> simply does not fit here.',
+    '<i>Celebrarse</i> implies the event was planned — do not use it for something accidental or unplanned; <i>pasar</i> covers that instead.'
+  ],
+  examples: [
+    { es: 'El festival se celebra todos los años en julio.', en: 'The festival is held every year in July.' },
+    { es: 'La ceremonia tendrá lugar en el auditorio principal.', en: 'The ceremony will take place in the main auditorium.' },
+    { es: 'Nunca pasa nada interesante en este pueblo.', en: 'Nothing interesting ever happens in this town.' }
+  ],
+  probes: [
+    { id: 'p:aconteci:tenerlugar', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Hay la reunión el día 15.', 'La reunión tuvo lugar el día 15.', 'La reunión hay el día 15.'], answer: 1 },
+    { id: 'p:aconteci:registro', kind: 'mcq', q: 'Más informal/hablado para "to happen":',
+      options: ['tener lugar', 'pasar', 'celebrarse'], answer: 1 },
+    { id: 'p:aconteci:cloze', kind: 'cloze', text: 'La boda se ___ en el jardín. (was celebrated)', accept: ['celebró'] },
+    { id: 'p:aconteci:recall', kind: 'recall', front: 'What verb NEVER works to say an event "takes place"?', back: 'hay' }
+  ]
+},
+
+/* ---------------------------------------------------------------------------
+ * B1 notion, batch B: the quantity/measurement cluster (11 syllabus units,
+ * several of them short and closely related, merged into 4 fuller lessons).
+ * ------------------------------------------------------------------------ */
+{
+  id: 'nt-cantidad-numerica-relativa-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:129', 'nociones_generales:B1:130', 'nociones_generales:B1:133', 'nociones_generales:B1:139', 'nociones_generales:B1:141', 'nociones_generales:B1:145'],
+  title: 'Cantidad: en total, por ciento, la mayoría de',
+  summary: 'La mayoría behaves grammatically like a container word from A2 — it needs de before the group it refers to, exactly like un grupo de or una botella de — so la mayoría chilenos is as wrong as una botella agua.',
+  sections: [
+    { h: 'En total: summing up', html: 'After counting, <i>en total</i> gives the final figure: <i>¿Cuánto es en total?</i>, <i>Había 150 personas en total</i>.' },
+    { h: 'Por ciento: proportion out of a hundred', html: '<i>[número] + por ciento</i>: <i>Los precios subieron un 1,6%.</i>' },
+    { h: 'La mayoría de: needs its "de"', html: '<i>La mayoría de los chilenos</i> — like <i>todos los</i> and container words, <i>la mayoría</i> cannot attach directly to a bare noun.' },
+    { h: 'Casi todo, casi nada, solo', html: '<i>Casi todo/casi nada/casi nadie</i> sit near the extremes of a scale; <i>solo/solamente</i> restricts to exactly one case.' }
+  ],
+  exponents: [
+    { es: '¿Cuánto es en total?', en: 'How much is it altogether?', register: 'neutral' },
+    { es: 'Los precios subieron un 1,6% el año pasado.', en: 'Prices rose 1.6% last year.', register: 'neutral' },
+    { es: 'La mayoría de mis compañeros ya se han ido.', en: 'Most of my colleagues have already left.', register: 'neutral', note: 'mayoría + de, like a container word' },
+    { es: 'No ha comido casi nada hoy.', en: "He's barely eaten anything today.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'la mayoría de los chilenos', en: 'most Chileans', note: 'correct — de is obligatory before the group' },
+    { es: '*la mayoría chilenos', en: '(wrong)', note: 'exactly the same error as *una botella agua' }
+  ],
+  pitfalls: [
+    '<i>La mayoría</i> always needs <i>de</i> before the group, just like the A2 container words — never attach it directly to a bare plural noun.',
+    '<i>Solo</i> (only, adverb) has traditionally carried an accent to distinguish it from <i>solo</i> (alone, adjective) — modern spelling drops it in almost all contexts, but be aware both spellings exist in older texts.'
+  ],
+  examples: [
+    { es: 'Solamente vinieron diez personas a la reunión.', en: 'Only ten people came to the meeting.' },
+    { es: 'La mayoría de los estudiantes aprobó el examen.', en: 'Most of the students passed the exam.' },
+    { es: 'Casi nadie sabía la respuesta correcta.', en: 'Almost nobody knew the correct answer.' }
+  ],
+  probes: [
+    { id: 'p:cantnumrel:mayoria', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['la mayoría chilenos', 'la mayoría de los chilenos', 'la mayoría de chilenos'], answer: 1 },
+    { id: 'p:cantnumrel:porciento', kind: 'mcq', q: '"Prices rose 1.6%":',
+      options: ['Los precios subieron un 1,6%.', 'Los precios subieron 1,6% total.', 'Los precios subieron con 1,6%.'], answer: 0 },
+    { id: 'p:cantnumrel:cloze', kind: 'cloze', text: '¿Cuánto es en ___? (altogether)', accept: ['total'] },
+    { id: 'p:cantnumrel:recall', kind: 'recall', front: 'What does "la mayoría" need before the group it refers to?', back: 'de (la mayoría de los...)' }
+  ]
+},
+
+{
+  id: 'nt-aumento-proporcion-grado-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:157', 'nociones_generales:B1:158', 'nociones_generales:B1:166', 'nociones_generales:B1:167', 'nociones_generales:B1:177', 'nociones_generales:B1:178'],
+  title: 'Aumento y proporción: subida, la mitad, sobre todo',
+  summary: 'Subida and bajada name a CHANGE as a noun where aumentar/disminuir name it as a verb — the same fact, different part of speech — and fractions like la mitad and un tercio need "de" before the group, exactly like la mayoría.',
+  sections: [
+    { h: 'Verb and matching noun', html: '<i>Aumentar/disminuir</i> (verbs) pair with <i>subida/bajada</i> (nouns): <i>Los precios aumentaron</i> / <i>una subida de los precios</i> say the same thing in different grammatical shapes.' },
+    { h: 'Fractions: needs de', html: '<i>La mitad, el doble, un cuarto, un tercio</i> + <i>de</i> + the group: <i>la mitad de los adultos</i>, <i>un tercio de los jóvenes</i> — the same pattern as <i>la mayoría de</i>.' },
+    { h: 'Grado: intensity', html: '<i>Sobre todo</i> singles out the standout case within a general statement: <i>Me gustan los deportes de equipo, sobre todo el baloncesto</i>. <i>¡Qué interesante!</i> and the suffixes <i>-ísimo/-ito</i> intensify from the other direction.' }
+  ],
+  exponents: [
+    { es: 'Hubo una subida de los precios este mes.', en: 'There was a rise in prices this month.', register: 'neutral', note: 'subida — the noun form of aumentar' },
+    { es: 'La mitad de los adultos no hace suficiente ejercicio.', en: 'Half of adults don\'t get enough exercise.', register: 'neutral' },
+    { es: 'Un tercio de los jóvenes vive todavía con sus padres.', en: 'A third of young people still live with their parents.', register: 'neutral' },
+    { es: 'Me gustan los deportes de equipo, sobre todo el baloncesto.', en: 'I like team sports, especially basketball.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Los precios aumentaron un 10%.', en: 'Prices rose 10%.', note: 'aumentar — verb' },
+    { es: 'Hubo una subida del 10% en los precios.', en: 'There was a 10% rise in prices.', note: 'subida — the same fact, as a noun' }
+  ],
+  pitfalls: [
+    'Fractions (<i>la mitad, un tercio, un cuarto</i>) need <i>de</i> before the group, just like <i>la mayoría</i> — never attach them directly to a bare noun.',
+    '<i>Sobre todo</i> means "especially, in particular," picking out one standout case — do not read it as a literal "above everything."'
+  ],
+  examples: [
+    { es: 'El doble de gente vino este año que el año pasado.', en: 'Twice as many people came this year as last year.' },
+    { es: 'Los sombreros tienen un 10% de descuento.', en: 'The hats have a 10% discount.' },
+    { es: '¡Qué difícil fue ese examen!', en: 'That exam was so hard!' }
+  ],
+  probes: [
+    { id: 'p:aumprop:fraccion', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['la mitad adultos', 'la mitad de los adultos', 'la mitad de adultos'], answer: 1 },
+    { id: 'p:aumprop:nounverb', kind: 'mcq', q: 'La forma NOMINAL de "aumentar":',
+      options: ['subida', 'aumentado', 'aumentoso'], answer: 0 },
+    { id: 'p:aumprop:cloze', kind: 'cloze', text: 'Me gustan los deportes, ___ todo el fútbol. (especially)', accept: ['sobre'] },
+    { id: 'p:aumprop:recall', kind: 'recall', front: 'What preposition do fractions (la mitad, un tercio) need before the group?', back: 'de' }
+  ]
+},
+
+{
+  id: 'nt-medidas-tamano-superficie-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:188', 'nociones_generales:B1:192', 'nociones_generales:B1:195', 'nociones_generales:B1:206', 'nociones_generales:B1:207'],
+  title: 'Medidas: medir, tamaño, metros cuadrados',
+  summary: 'Medir does triple duty — a person\'s height, an object\'s length, and an area\'s size — the same verb serving three different kinds of measurement, while caber is a completely separate, irregular verb about whether something FITS.',
+  sections: [
+    { h: 'Medir: one verb, three uses', html: '<i>Mido 1,70</i> (a person\'s height), <i>la mesa mide dos metros</i> (an object\'s length), <i>el jardín mide 200 metros cuadrados</i> (an area\'s size) — all the same verb.' },
+    { h: 'Tamaño and superficie as nouns', html: '<i>De tamaño grande/pequeño/mediano</i> describes size generally; <i>superficie/zona/espacio</i> describe area and room specifically, with <i>metros cuadrados</i> for exact figures.' },
+    { h: 'Caber: fitting, not measuring', html: '<i>No cabe, es demasiado grande</i> — <i>caber</i> (irregular: <i>quepo, cabes, cabe…</i>) judges whether something FITS a space, a different question from what its measurements are.' }
+  ],
+  exponents: [
+    { es: 'Mido 1,70 m.', en: "I'm 1.70m tall.", register: 'neutral' },
+    { es: 'La mesa mide dos metros de largo.', en: 'The table is two metres long.', register: 'neutral' },
+    { es: 'El jardín mide 200 metros cuadrados.', en: 'The garden is 200 square metres.', register: 'neutral' },
+    { es: 'El sofá no cabe por la puerta.', en: "The sofa doesn't fit through the door.", register: 'neutral', note: 'caber — fitting, not measuring' }
+  ],
+  contrasts: [
+    { es: 'El armario mide dos metros de alto.', en: 'The wardrobe is two metres tall.', note: 'medir — a fact about its measurements' },
+    { es: 'El armario no cabe en esta habitación.', en: "The wardrobe doesn't fit in this room.", note: 'caber — a judgement about a specific space, unrelated to the exact measurement' }
+  ],
+  pitfalls: [
+    '<i>Caber</i> is irregular (<i>quepo, cabes, cabe, cabemos, cabéis, caben</i>) and means "to fit" — do not confuse it with <i>medir</i>, which states a measurement without judging whether it fits anywhere.',
+    'Area is always stated in <i>metros cuadrados</i>, never bare <i>metros</i> — dropping "cuadrados" turns an area into a length.'
+  ],
+  examples: [
+    { es: '¿Cuánto mides? — Mido 1,80.', en: '—How tall are you? —I\'m 1.80m.' },
+    { es: 'Este piso tiene poco espacio para tantos muebles.', en: "This flat doesn't have much space for so much furniture." },
+    { es: 'No cabemos todos en un solo coche.', en: "We don't all fit in one car." }
+  ],
+  probes: [
+    { id: 'p:medidastam:cuadrados', kind: 'mcq', q: '"The garden is 200 square metres":',
+      options: ['El jardín mide 200 metros.', 'El jardín mide 200 metros cuadrados.', 'El jardín tiene 200 metros.'], answer: 1 },
+    { id: 'p:medidastam:caber', kind: 'mcq', q: '"El sofá no ___ por la puerta." (fits)',
+      options: ['mide', 'cabe', 'tiene'], answer: 1 },
+    { id: 'p:medidastam:cloze', kind: 'cloze', text: '¿Cuánto ___? — Mido 1,80. (are you)', accept: ['mides'] },
+    { id: 'p:medidastam:recall', kind: 'recall', front: 'medir vs caber — which one judges whether something FITS a space?', back: 'caber' }
+  ]
+},
+
+{
+  id: 'nt-temperatura-velocidad-volumen-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:213', 'nociones_generales:B1:216', 'nociones_generales:B1:220', 'nociones_generales:B1:200', 'nociones_generales:B1:201', 'nociones_generales:B1:209'],
+  title: 'Temperatura, velocidad y volumen: grados, km por hora',
+  summary: 'Estar a + number + grados states a temperature the exact same way estar a + number + kilómetros states a distance — one "estar a" pattern reused across several completely different kinds of measurement.',
+  sections: [
+    { h: 'Temperatura: estar a + grados', html: '<i>Estamos a 30 grados</i>, <i>tres grados bajo cero</i> ("bajo cero" always attached when below freezing). <i>Calentar(se)/enfriar(se)</i> and <i>(des)congelar/hervir</i> name the processes.' },
+    { h: 'Velocidad: a + km por hora', html: '<i>Iba a 100 kilómetros por hora</i>; <i>deprisa/rápidamente/lentamente</i> describe pace without a number; <i>poco a poco</i> marks a gradual pace.' },
+    { h: 'Volumen y capacidad', html: '<i>Lleno/vacío</i> reprised for containers specifically; <i>llenar/vaciar</i> are the matching verbs; <i>caber</i> reappears to judge whether a volume fits inside a container.' }
+  ],
+  exponents: [
+    { es: 'Hoy estamos a 30 grados.', en: "Today it's 30 degrees.", register: 'neutral', note: 'estar a — the same pattern as distance' },
+    { es: 'Anoche cayeron tres grados bajo cero.', en: 'Last night it dropped to three below zero.', register: 'neutral' },
+    { es: 'Iba a 100 kilómetros por hora cuando lo pararon.', en: 'He was going 100 km/h when they stopped him.', register: 'neutral' },
+    { es: 'Llena la botella hasta arriba.', en: 'Fill the bottle to the top.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Estamos a 30 grados.', en: "It's 30 degrees.", note: 'estar a — temperature' },
+    { es: 'Granada está a 30 kilómetros.', en: 'Granada is 30 kilometres away.', note: 'the identical estar a pattern, reused for distance' }
+  ],
+  pitfalls: [
+    'Below-zero temperatures always need <i>bajo cero</i> attached — <i>tres grados bajo cero</i>, never bare <i>tres grados</i> for a negative temperature.',
+    '<i>Rápido</i> is an adjective; <i>rápidamente/deprisa</i> are the adverbs that actually modify a verb — do not use the bare adjective adverbially.'
+  ],
+  examples: [
+    { es: 'La leche está a punto de hervir.', en: 'The milk is about to boil.' },
+    { es: 'Conducía demasiado deprisa por la ciudad.', en: 'He was driving too fast through the city.' },
+    { es: 'El vaso está medio vacío, no medio lleno.', en: "The glass is half empty, not half full." }
+  ],
+  probes: [
+    { id: 'p:tempvelvol:bajocero', kind: 'mcq', q: '"Three degrees below zero":',
+      options: ['tres grados', 'tres grados bajo cero', 'bajo tres grados cero'], answer: 1 },
+    { id: 'p:tempvelvol:patron', kind: 'mcq', q: '"Estamos a 30 grados" usa el mismo patrón que:',
+      options: ['Granada está a 30 kilómetros.', 'Granada es 30 kilómetros.', 'Granada tiene 30 kilómetros.'], answer: 0 },
+    { id: 'p:tempvelvol:cloze', kind: 'cloze', text: 'Iba a 100 kilómetros por ___. (per hour)', accept: ['hora'] },
+    { id: 'p:tempvelvol:recall', kind: 'recall', front: 'What grammatical pattern do temperature and distance share?', back: 'estar a + [número] + [unidad]' }
+  ]
+},
+
+/* ---------------------------------------------------------------------------
+ * B1 notion, batch C: position/location/movement cluster (6 syllabus units,
+ * merged into 3 lessons).
+ * ------------------------------------------------------------------------ */
+{
+  id: 'nt-localizacion-posicion-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:271', 'nociones_generales:B1:273', 'nociones_generales:B1:289', 'nociones_generales:B1:291', 'nociones_generales:B1:296', 'nociones_generales:B1:298'],
+  title: 'Localización y posición: junto a, al fondo, en ninguna parte',
+  summary: 'En ninguna parte and en todas partes push the A1 aquí/allí system to its two extremes — nowhere and everywhere — while junto a, al fondo and en el medio give the fine-grained position vocabulary a described room actually needs.',
+  sections: [
+    { h: 'The extremes: ninguna parte, todas partes', html: '<i>No lo he visto en ninguna parte</i> ("I haven\'t seen it anywhere"); <i>Había gente por todas partes</i> ("people were everywhere") — pushing <i>aquí/allí</i> to their logical limits.' },
+    { h: 'Fine-grained position', html: '<i>Junto a</i> (right next to, closer than <i>al lado de</i>), <i>en el medio (de)</i> (in the middle), <i>al fondo (de)</i> (at the back/far end), <i>en los alrededores (de)</i> (in the surrounding area) — all still take <i>de</i> before their landmark, following the A1/A2 rule.' },
+    { h: 'Céntrico, interior, exterior', html: 'Descriptive adjectives for WHERE something sits within a larger whole: <i>un piso céntrico</i> (centrally located), <i>en el interior/exterior (de)</i>.' }
+  ],
+  exponents: [
+    { es: 'No lo he visto en ninguna parte.', en: "I haven't seen it anywhere.", register: 'neutral' },
+    { es: 'Había gente por todas partes.', en: 'There were people everywhere.', register: 'neutral' },
+    { es: 'Está junto a la ventana.', en: "It's right next to the window.", register: 'neutral' },
+    { es: 'Estamos al fondo del pasillo.', en: "We're at the end of the corridor.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'No lo he visto en ninguna parte.', en: "I haven't seen it anywhere.", note: 'the negative extreme' },
+    { es: 'Había gente por todas partes.', en: 'There were people everywhere.', note: 'the positive extreme — same underlying structure' }
+  ],
+  pitfalls: [
+    'Every fine-grained position word here still takes <i>de</i> before its landmark, exactly as at A1/A2 — the rule never relaxes as the vocabulary grows.',
+    '<i>Junto a</i> implies closer proximity than <i>al lado de</i> — they are near-synonyms, not identical.'
+  ],
+  examples: [
+    { es: '¿En qué zona vives?', en: 'What area do you live in?' },
+    { es: 'El lado izquierdo del edificio está en obras.', en: 'The left side of the building is under construction.' },
+    { es: 'La estación está en los alrededores del centro.', en: 'The station is on the outskirts of downtown.' }
+  ],
+  probes: [
+    { id: 'p:localposB1:extremos', kind: 'mcq', q: '"I haven\'t seen it anywhere":',
+      options: ['No lo he visto en todas partes.', 'No lo he visto en ninguna parte.', 'No lo he visto en alguna parte.'], answer: 1 },
+    { id: 'p:localposB1:de', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['al fondo pasillo', 'al fondo del pasillo', 'al fondo en el pasillo'], answer: 1 },
+    { id: 'p:localposB1:cloze', kind: 'cloze', text: 'Está ___ a la ventana. (right next to)', accept: ['junto'] },
+    { id: 'p:localposB1:recall', kind: 'recall', front: 'What are the two extremes on the aquí/allí scale?', back: 'en ninguna parte (nowhere) / en todas partes (everywhere)' }
+  ]
+},
+
+{
+  id: 'nt-distancia-movimiento-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:317', 'nociones_generales:B1:319', 'nociones_generales:B1:331', 'nociones_generales:B1:333', 'nociones_generales:B1:336', 'nociones_generales:B1:340'],
+  title: 'Distancia y movimiento: acercarse, alejarse, caerse',
+  summary: 'Acercarse a and alejarse de are a matched, opposite pair — moving toward or away from a fixed point — and both take a specific, non-interchangeable preposition, a distinction the A1 ir/venir logic doesn\'t fully cover.',
+  sections: [
+    { h: 'Distancia: estar a + number', html: 'Reprising the A2 pattern: <i>Está a 300 metros</i>, <i>¿A cuánto está Sevilla de Madrid?</i>' },
+    { h: 'Acercarse a / alejarse de', html: 'A matched opposite pair, each with its own fixed preposition: <i>acercarse A</i> algo, <i>alejarse DE</i> algo — swapping the prepositions is ungrammatical, not just unusual.' },
+    { h: 'The movement-verb toolkit', html: '<i>Moverse/pararse</i> (move/stop), <i>caerse/levantarse</i> (fall/get up), <i>saltar</i> (jump), <i>montar en bicicleta/en moto/a caballo</i> (ride — note the change from <i>en</i> to <i>a</i> for horses), <i>dar una vuelta</i> (go for a stroll/spin).' }
+  ],
+  exponents: [
+    { es: 'El coche se acercaba lentamente a la casa.', en: 'The car was slowly approaching the house.', register: 'neutral', note: 'acercarse A' },
+    { es: 'Se alejó de la puerta sin decir nada.', en: 'He moved away from the door without saying anything.', register: 'neutral', note: 'alejarse DE' },
+    { es: 'Se cayó de la bicicleta pero no se hizo daño.', en: "He fell off his bike but wasn't hurt.", register: 'neutral' },
+    { es: 'Vamos a dar una vuelta por el parque.', en: "Let's go for a stroll through the park.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Se acercó a la ventana.', en: 'He approached the window.', note: 'acercarse takes A' },
+    { es: 'Se alejó de la ventana.', en: 'He moved away from the window.', note: 'alejarse takes DE — the opposite preposition, not interchangeable' }
+  ],
+  pitfalls: [
+    '<i>Acercarse</i> and <i>alejarse</i> each demand their OWN preposition — <i>*acercarse de</i> and <i>*alejarse a</i> are both wrong.',
+    '<i>Montar</i> takes <i>en</i> for wheeled/mechanical transport (<i>en bicicleta, en moto</i>) but <i>a</i> for an animal (<i>a caballo</i>) — a small but real exception.'
+  ],
+  examples: [
+    { es: '¿A cuánto está el aeropuerto del centro?', en: 'How far is the airport from downtown?' },
+    { es: 'El barco se acercaba al puerto poco a poco.', en: 'The boat was gradually approaching the port.' },
+    { es: 'Hicimos una pausa antes de seguir conduciendo.', en: 'We took a break before continuing to drive.' }
+  ],
+  probes: [
+    { id: 'p:distmov:preposicion', kind: 'mcq', q: '"Se alejó ___ la puerta."',
+      options: ['a', 'de', 'en'], answer: 1 },
+    { id: 'p:distmov:montar', kind: 'mcq', q: '"Montar ___ caballo" (a diferencia de en bicicleta)',
+      options: ['en', 'a', 'con'], answer: 1 },
+    { id: 'p:distmov:cloze', kind: 'cloze', text: 'El coche se ___ lentamente a la casa. (was approaching)', accept: ['acercaba'] },
+    { id: 'p:distmov:recall', kind: 'recall', front: 'Which preposition does "acercarse" take, and which does "alejarse" take?', back: 'acercarse A, alejarse DE' }
+  ]
+},
+
+{
+  id: 'nt-orientacion-orden-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:371', 'nociones_generales:B1:373', 'nociones_generales:B1:375', 'nociones_generales:B1:391', 'nociones_generales:B1:393', 'nociones_generales:B1:395'],
+  title: 'Orientación y orden: seguir por, primero, luego',
+  summary: 'Seguir/continuar/subir/bajar all take por before naming the route itself — seguir POR la autopista — while primero, luego, a continuación and finalmente sequence a series of steps in exactly the order they name.',
+  sections: [
+    { h: 'Naming the route: X por Y', html: '<i>Seguir/continuar/cruzar/subir/bajar</i> + <i>por</i> + the route: <i>Tienen que continuar por la autopista</i>, <i>Hay que bajar por un camino</i>.' },
+    { h: 'Ir/conducir por la derecha/izquierda', html: 'Which SIDE you drive or walk on: <i>En este país se conduce por la derecha</i>.' },
+    { h: 'Sequencing steps', html: '<i>Primero, luego, a continuación, finalmente/por último</i> order a series of actions; <i>en primer/segundo/último lugar</i> does the identical job in a more formal register.' },
+    { h: 'Orden and cola as nouns', html: '<i>Una cola de gente</i> (a queue); <i>(des)ordenado/(des)organizado</i> judge whether things ARE in order; <i>(des)ordenar/(des)organizar</i> are the matching verbs for putting them that way.' }
+  ],
+  exponents: [
+    { es: 'Tienen que continuar por la autopista hasta la salida 12.', en: 'You need to continue on the motorway to exit 12.', register: 'neutral', note: 'continuar POR + route' },
+    { es: 'En este país se conduce por la derecha.', en: 'In this country people drive on the right.', register: 'neutral' },
+    { es: 'Primero cortamos la cebolla, luego la sofreímos.', en: 'First we chop the onion, then we sauté it.', register: 'neutral' },
+    { es: 'Había una cola enorme para entrar.', en: 'There was a huge queue to get in.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Primero, luego, finalmente...', en: 'First, then, finally...', note: 'the everyday sequencing set' },
+    { es: 'En primer lugar, en segundo lugar...', en: 'In the first place, in the second place...', note: 'the same job, a more formal register' }
+  ],
+  pitfalls: [
+    'Naming a specific route always needs <i>por</i>: <i>seguir POR la autopista</i>, not <i>*seguir la autopista</i>.',
+    'Do not mix the everyday sequencing set (<i>primero, luego</i>) with the formal one (<i>en primer lugar</i>) within the same piece of writing — pick a register and stay consistent.'
+  ],
+  examples: [
+    { es: 'Sube por esa calle y gira a la derecha.', en: 'Go up that street and turn right.' },
+    { es: 'A continuación, os explico cómo funciona.', en: "Next, I'll explain how it works." },
+    { es: 'Mi escritorio está siempre muy desordenado.', en: 'My desk is always very messy.' }
+  ],
+  probes: [
+    { id: 'p:orientorden:por', kind: 'mcq', q: '"Sube ___ esa calle."',
+      options: ['a', 'por', 'en'], answer: 1 },
+    { id: 'p:orientorden:secuencia', kind: 'mcq', q: 'Registro más formal para secuenciar:',
+      options: ['primero, luego', 'en primer lugar, en segundo lugar', 'y, y'], answer: 1 },
+    { id: 'p:orientorden:cloze', kind: 'cloze', text: 'Mi escritorio está muy ___. (messy)', accept: ['desordenado'] },
+    { id: 'p:orientorden:recall', kind: 'recall', front: 'What preposition follows seguir/continuar/subir/bajar before naming a route?', back: 'por' }
+  ]
+},
+
+/* ---------------------------------------------------------------------------
+ * B1 notion, batch D: the large time cluster (11 syllabus units, merged into
+ * 3 lessons — reprising the A1/A2 futuro/presente/pasado merge pattern, and
+ * extending the "lifecycle of an action" merge to five stages).
+ * ------------------------------------------------------------------------ */
+{
+  id: 'nt-tiempo-referencias-futuro-pasado-presente-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:414', 'nociones_generales:B1:415', 'nociones_generales:B1:465', 'nociones_generales:B1:466', 'nociones_generales:B1:454', 'nociones_generales:B1:447', 'nociones_generales:B1:448', 'nociones_generales:B1:451'],
+  title: 'El tiempo: siglos, décadas y el presente que dura',
+  summary: 'Llevar + gerundio states how long a situation has continued right up to now — llevo un año trabajando aquí — a construction with no direct English equivalent, built from a verb that everywhere else just means "to carry."',
+  sections: [
+    { h: 'Bigger units of time', html: '<i>Segundo, década, siglo</i> extend the A1/A2 calendar vocabulary: <i>Fue en el siglo XX</i>, <i>la década de los cincuenta</i>.' },
+    { h: 'Pushing mañana/ayer one step further', html: '<i>Pasado mañana</i> (the day after tomorrow), <i>anteayer</i> (the day before yesterday) — extending <i>mañana/ayer</i> one more day out in either direction.' },
+    { h: 'Llevar + gerundio: ongoing duration', html: '<i>Llevo un año trabajando aquí</i> states that a situation started in the past and is STILL true now — genuinely different from <i>Trabajé un año aquí</i>, which is closed and finished.' },
+    { h: 'Actualmente, últimamente', html: '<i>Actualmente</i> means "currently/nowadays" — a false friend, NOT "actually." <i>Últimamente</i> means "lately."' }
+  ],
+  exponents: [
+    { es: 'La Edad Media duró varios siglos.', en: 'The Middle Ages lasted several centuries.', register: 'neutral' },
+    { es: 'Llevo un año trabajando en esta empresa.', en: "I've been working at this company for a year.", register: 'neutral', note: 'llevar + gerundio — ongoing up to now' },
+    { es: 'Actualmente vivo en Barcelona.', en: 'Currently I live in Barcelona.', register: 'neutral', note: 'actualmente = currently, NOT "actually"' },
+    { es: 'Últimamente tengo mucho trabajo.', en: "Lately I've had a lot of work.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Llevo un año trabajando aquí.', en: "I've been working here for a year.", note: 'ongoing — started a year ago and continues now' },
+    { es: 'Trabajé un año aquí.', en: 'I worked here for a year.', note: 'closed, finished — no longer true' }
+  ],
+  pitfalls: [
+    '<i>Actualmente</i> is a false friend: it means "currently/nowadays," never "actually" (which is <i>en realidad</i> or <i>de hecho</i>).',
+    '<i>Llevar</i> + gerundio needs the DURATION stated directly (<i>llevo un año</i>), not a starting-point construction grafted on top.'
+  ],
+  examples: [
+    { es: 'Pasado mañana empiezan las vacaciones.', en: 'The holidays start the day after tomorrow.' },
+    { es: 'Anteayer me encontré con un viejo amigo.', en: "The day before yesterday I ran into an old friend." },
+    { es: 'Todavía no he leído ese libro.', en: "I still haven't read that book." }
+  ],
+  probes: [
+    { id: 'p:tiemporef:llevar', kind: 'mcq', q: '"I\'ve been living here for two years":',
+      options: ['Vivo aquí desde dos años.', 'Llevo dos años viviendo aquí.', 'Vivo dos años aquí.'], answer: 1 },
+    { id: 'p:tiemporef:falsofriend', kind: 'mcq', q: '"Actualmente" significa:',
+      options: ['actually', 'currently / nowadays', 'eventually'], answer: 1 },
+    { id: 'p:tiemporef:cloze', kind: 'cloze', text: '___ mañana empiezan las vacaciones. (the day after)', accept: ['Pasado', 'pasado'] },
+    { id: 'p:tiemporef:recall', kind: 'recall', front: 'llevar + gerundio vs the simple past — which one describes something STILL true now?', back: 'llevar + gerundio' }
+  ]
+},
+
+{
+  id: 'nt-ciclo-accion-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:532', 'nociones_generales:B1:534', 'nociones_generales:B1:548', 'nociones_generales:B1:549', 'nociones_generales:B1:538', 'nociones_generales:B1:541', 'nociones_generales:B1:513', 'nociones_generales:B1:519'],
+  title: 'El ciclo de una acción: empezar, seguir, dejar de',
+  summary: 'Seguir + gerundio says an action is STILL going; dejar de + infinitive says it has STOPPED — the same event\'s continuation and interruption, described from opposite ends of one single scale running from start to finish.',
+  sections: [
+    { h: 'Inicio: comenzar, al principio', html: '<i>El curso comenzará el día diez</i>; <i>al principio no me di cuenta</i> — marking the very start.' },
+    { h: 'Continuación: seguir/continuar + gerundio', html: '<i>Sigo yendo al gimnasio</i> — the gerund, not the infinitive, after <i>seguir</i> for "still doing something." <i>Todavía</i> and <i>sin parar</i> reinforce continuity.' },
+    { h: 'Finalización: dejar de + infinitivo', html: '<i>Dejar de</i> + infinitive means "to stop doing X" — a completely different verb from bare <i>dejar</i> ("to leave/let"): <i>Ha dejado de fumar</i> ("He\'s quit smoking").' },
+    { h: 'Posterioridad: X después, al día siguiente', html: '<i>Unos días después</i>, <i>al día siguiente</i>, <i>dos años más tarde</i> — all name a point AFTER a reference event, without pinning it to the calendar.' }
+  ],
+  exponents: [
+    { es: 'El curso comenzará el día diez.', en: 'The course will start on the 10th.', register: 'neutral' },
+    { es: 'Sigo yendo al gimnasio tres veces por semana.', en: "I'm still going to the gym three times a week.", register: 'neutral', note: 'seguir + gerundio, not infinitive' },
+    { es: 'Ha dejado de fumar por fin.', en: "He's finally quit smoking.", register: 'neutral', note: 'dejar de + infinitivo — to stop doing something' },
+    { es: 'Nos vimos de nuevo dos años más tarde.', en: 'We saw each other again two years later.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Sigo yendo al gimnasio.', en: "I'm still going to the gym.", note: 'continuing' },
+    { es: 'He dejado de ir al gimnasio.', en: "I've stopped going to the gym.", note: 'the opposite pole — stopped' }
+  ],
+  pitfalls: [
+    '<i>Dejar de</i> + infinitive means "to stop doing X" — do not confuse it with bare <i>dejar</i> ("to leave" or "to let/allow").',
+    '<i>Seguir</i> is followed by the GERUND for "still doing," never the infinitive: <i>sigo yendo</i>, not <i>*sigo ir</i>.'
+  ],
+  examples: [
+    { es: 'Al principio me costó mucho adaptarme.', en: 'At first it was very hard for me to adjust.' },
+    { es: 'El concierto acabó pasada la medianoche.', en: 'The concert ended past midnight.' },
+    { es: 'Nos vimos poco tiempo después de la boda.', en: 'We saw each other shortly after the wedding.' }
+  ],
+  probes: [
+    { id: 'p:ciclo:dejarde', kind: 'mcq', q: '"He\'s quit smoking":',
+      options: ['Ha dejado fumar.', 'Ha dejado de fumar.', 'Ha dejado a fumar.'], answer: 1 },
+    { id: 'p:ciclo:seguir', kind: 'mcq', q: '"I\'m still studying Spanish":',
+      options: ['Sigo estudiar español.', 'Sigo estudiando español.', 'Sigo a estudiar español.'], answer: 1 },
+    { id: 'p:ciclo:cloze', kind: 'cloze', text: 'Nos vimos dos años más ___. (later)', accept: ['tarde'] },
+    { id: 'p:ciclo:recall', kind: 'recall', front: 'dejar vs dejar de — which one means "to stop doing something"?', back: 'dejar de + infinitivo' }
+  ]
+},
+
+{
+  id: 'nt-puntualidad-retraso-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:524', 'nociones_generales:B1:526', 'nociones_generales:B1:528', 'nociones_generales:B1:530'],
+  title: 'Puntualidad y retraso: llegar a tiempo, con retraso',
+  summary: 'Retraso describes the SCHEDULE slipping — a train, a flight, a meeting — while tener prisa describes the PERSON\'s own hurry; the two often show up together but state genuinely different facts.',
+  sections: [
+    { h: 'Puntual, llegar a tiempo', html: '<i>El tren llegó puntual</i>; <i>por suerte pudimos llegar a tiempo</i> — both describe arrival matching the expected time.' },
+    { h: 'Retraso: the schedule slips', html: '<i>El avión salió con retraso</i> — <i>retraso</i> is a noun naming the delay itself, always paired with <i>salir/llegar/venir con retraso</i>.' },
+    { h: 'Tardar: how long something takes', html: '<i>Has tardado mucho</i> ("you took a long time") states duration, not lateness against a schedule.' },
+    { h: 'Tener prisa: the person\'s hurry', html: 'A separate fact from <i>retraso</i> — this is about the PERSON needing to hurry, not the timetable slipping.' }
+  ],
+  exponents: [
+    { es: 'El tren llegó puntual, ni un minuto tarde.', en: 'The train arrived punctually, not a minute late.', register: 'neutral' },
+    { es: 'El avión salió con retraso por la niebla.', en: 'The plane left late because of the fog.', register: 'neutral', note: 'retraso — the schedule slipping' },
+    { es: 'Has tardado mucho en contestar.', en: 'You took a long time to reply.', register: 'neutral', note: 'tardar — duration, not necessarily lateness' },
+    { es: 'Date prisa, que llegamos tarde.', en: "Hurry up, we're going to be late.", register: 'coloquial', note: 'tener/darse prisa — the person\'s own urgency' }
+  ],
+  contrasts: [
+    { es: 'El vuelo salió con retraso.', en: 'The flight left late.', note: 'about the SCHEDULE' },
+    { es: 'Tengo mucha prisa.', en: "I'm in a big hurry.", note: 'about the PERSON — a related but different fact' }
+  ],
+  pitfalls: [
+    '<i>Retraso</i> is about a schedule or timetable slipping; <i>tener prisa</i> is about a person\'s own urgency — they often co-occur but are not the same claim.',
+    '<i>Tardar</i> states how long something takes, without necessarily implying it was late against any particular schedule.'
+  ],
+  examples: [
+    { es: 'Lamentamos el retraso de este vuelo.', en: 'We apologize for the delay of this flight.' },
+    { es: '¿Cuánto se tarda en llegar al centro?', en: 'How long does it take to get downtown?' },
+    { es: 'No tengas prisa, todavía hay tiempo.', en: "Don't rush, there's still time." }
+  ],
+  probes: [
+    { id: 'p:puntretraso:sustantivo', kind: 'mcq', q: '"The plane left late":',
+      options: ['El avión salió con prisa.', 'El avión salió con retraso.', 'El avión salió puntual.'], answer: 1 },
+    { id: 'p:puntretraso:distincion', kind: 'mcq', q: '"Retraso" y "tener prisa" — ¿son lo mismo?',
+      options: ['sí, sinónimos exactos', 'no, describen cosas distintas', 'solo en el pasado'], answer: 1 },
+    { id: 'p:puntretraso:cloze', kind: 'cloze', text: '¿Cuánto se ___ en llegar? (does it take)', accept: ['tarda'] },
+    { id: 'p:puntretraso:recall', kind: 'recall', front: 'Does "retraso" describe the schedule or the person?', back: 'the schedule (tener prisa describes the person)' }
+  ]
+},
+
+/* ---------------------------------------------------------------------------
+ * B1 notion, batch E: physical properties and the five senses (11 syllabus
+ * units, merged into 3 lessons).
+ * ------------------------------------------------------------------------ */
+{
+  id: 'nt-formas-materia-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:689', 'nociones_generales:B1:691', 'nociones_generales:B1:695', 'nociones_generales:B1:761', 'nociones_generales:B1:763', 'nociones_generales:B1:766'],
+  title: 'Formas y materia: círculo, estar hecho de',
+  summary: 'Estar hecho de + material states composition directly, one grammatical step further than the A2 ser de pattern, and pairs naturally with the shape vocabulary — círculo, cuadrado, triángulo — needed to describe any object fully.',
+  sections: [
+    { h: 'Naming shapes', html: '<i>Círculo, cuadrado, rectángulo, triángulo</i> as nouns, with matching adjectives <i>rectangular, triangular</i>. <i>Horizontal, vertical, diagonal</i> describe orientation; <i>plano/recto</i> describe flatness/straightness.' },
+    { h: 'Tener forma de, parecer', html: '<i>Tiene forma de estrella</i> ("it\'s star-shaped"); <i>parece una montaña</i> — reprising B1\'s <i>parecer</i> for a visual impression.' },
+    { h: 'Estar hecho de: naming the material', html: 'A step beyond A2\'s <i>ser de</i>: <i>Está hecho de acero</i>, <i>está hecho de algodón</i>. <i>Sintético/natural</i> classify the material\'s origin.' }
+  ],
+  exponents: [
+    { es: 'La mesa tiene forma rectangular.', en: 'The table is rectangular.', register: 'neutral' },
+    { es: 'Esa nube parece un elefante.', en: 'That cloud looks like an elephant.', register: 'coloquial' },
+    { es: 'El anillo está hecho de plata.', en: 'The ring is made of silver.', register: 'neutral', note: 'estar hecho de — parallel to ser de' },
+    { es: 'Esta tela es sintética, no natural.', en: 'This fabric is synthetic, not natural.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'La mesa es de madera.', en: 'The table is (made) of wood.', note: 'A2 pattern — ser de' },
+    { es: 'La mesa está hecha de madera.', en: 'The table is made of wood.', note: 'B1 — estar hecho de, near-synonymous, slightly more explicit about the making' }
+  ],
+  pitfalls: [
+    '<i>Estar hecho de</i> and <i>ser de</i> are near-synonyms for material — both are correct, and neither takes an article before the material.',
+    'Do not confuse <i>plano</i> (flat) with <i>plan</i> (a plan) — related in spelling, unrelated in meaning.'
+  ],
+  examples: [
+    { es: 'Dibujó un triángulo perfecto sin regla.', en: 'She drew a perfect triangle without a ruler.' },
+    { es: 'El puente tiene una estructura de acero y hormigón.', en: 'The bridge has a steel and concrete structure.' },
+    { es: 'Este jersey está hecho de lana pura.', en: 'This jumper is made of pure wool.' }
+  ],
+  probes: [
+    { id: 'p:formmat:hecho', kind: 'mcq', q: '"The ring is made of silver":',
+      options: ['El anillo es hecho de plata.', 'El anillo está hecho de plata.', 'El anillo hace de plata.'], answer: 1 },
+    { id: 'p:formmat:forma', kind: 'mcq', q: '"It\'s star-shaped":',
+      options: ['Tiene forma de estrella.', 'Es forma estrella.', 'Parece de estrella.'], answer: 0 },
+    { id: 'p:formmat:cloze', kind: 'cloze', text: 'Esta tela es ___, no natural. (synthetic)', accept: ['sintética'] },
+    { id: 'p:formmat:recall', kind: 'recall', front: '"Estar hecho de" is a B1 parallel to which A2 construction?', back: 'ser de + material' }
+  ]
+},
+
+{
+  id: 'nt-textura-consistencia-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:710', 'nociones_generales:B1:711', 'nociones_generales:B1:713', 'nociones_generales:B1:729', 'nociones_generales:B1:730', 'nociones_generales:B1:746', 'nociones_generales:B1:747'],
+  title: 'Textura y consistencia: duro, blando, húmedo',
+  summary: 'Húmedo and mojado both mean roughly "wet," but húmedo names a lasting condition (a humid climate) while mojado names a temporary, often accidental state (wet from rain) — the same distinction estar/ser draws elsewhere in the language.',
+  sections: [
+    { h: 'Consistency opposites', html: '<i>Sólido/líquido</i>, <i>duro/blando</i> (hard/soft), <i>frágil</i> (fragile), <i>flexible</i> — the basic vocabulary for how something responds to pressure or force. <i>Romper(se)</i> is what happens when a fragile thing fails.' },
+    { h: 'Texture: how it feels to the touch', html: '<i>Suave</i> (smooth/soft to touch), <i>liso</i> (smooth, unwrinkled), <i>rizado</i> (curly, textured) — <i>tocar</i> is the verb for checking by touch.' },
+    { h: 'Húmedo vs mojado', html: '<i>Húmedo</i> describes a lasting condition — <i>un clima húmedo</i>. <i>Mojado</i> describes a temporary, often accidental state — <i>estoy mojado</i> after being caught in the rain. <i>Secar(se)</i> is the process of losing that wetness.' }
+  ],
+  exponents: [
+    { es: 'Esta almohada es muy blanda.', en: 'This pillow is very soft.', register: 'neutral' },
+    { es: 'El jarrón es frágil, ten cuidado.', en: 'The vase is fragile, be careful.', register: 'neutral' },
+    { es: 'El clima aquí es muy húmedo.', en: "The climate here is very humid.", register: 'neutral', note: 'húmedo — a lasting condition' },
+    { es: 'Estoy empapado, salí sin paraguas.', en: "I'm soaked, I went out without an umbrella.", register: 'coloquial', note: 'mojado/empapado — temporary, accidental' }
+  ],
+  contrasts: [
+    { es: 'Vivo en una zona muy húmeda.', en: 'I live in a very humid area.', note: 'húmedo — a lasting climate condition' },
+    { es: 'Tengo la ropa mojada.', en: 'My clothes are wet.', note: 'mojado — a temporary, accidental state' }
+  ],
+  pitfalls: [
+    '<i>Húmedo</i> (lasting condition, like a climate) and <i>mojado</i> (temporary, accidental wetness) are not interchangeable, even though both translate as "wet."',
+    '<i>Suave</i> can describe texture (soft to touch), taste, sound, or personality — context decides which sense is meant, similar to <i>fuerte</i>.'
+  ],
+  examples: [
+    { es: 'La toalla todavía está húmeda.', en: 'The towel is still damp.' },
+    { es: 'Este material es muy resistente y flexible.', en: 'This material is very tough and flexible.' },
+    { es: 'Tiene el pelo liso y muy suave.', en: 'She has smooth, very soft hair.' }
+  ],
+  probes: [
+    { id: 'p:textcons:humedomojado', kind: 'mcq', q: '"un clima ___" (lasting condition)',
+      options: ['mojado', 'húmedo', 'empapado'], answer: 1 },
+    { id: 'p:textcons:fragil', kind: 'mcq', q: '"El jarrón es ___, ten cuidado." (fragile)',
+      options: ['duro', 'frágil', 'flexible'], answer: 1 },
+    { id: 'p:textcons:cloze', kind: 'cloze', text: 'Esta almohada es muy ___. (soft)', accept: ['blanda'] },
+    { id: 'p:textcons:recall', kind: 'recall', front: 'húmedo vs mojado — which one names a temporary, accidental state?', back: 'mojado' }
+  ]
+},
+
+{
+  id: 'nt-sentidos-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:777', 'nociones_generales:B1:780', 'nociones_generales:B1:804', 'nociones_generales:B1:808', 'nociones_generales:B1:825', 'nociones_generales:B1:828', 'nociones_generales:B1:835', 'nociones_generales:B1:845'],
+  title: 'Los sentidos: ver, oír, saber a, oler a',
+  summary: 'Saber and oler both switch meaning entirely when followed by a: saber a almendra ("to taste of almond") and oler a gas ("to smell of gas") have nothing to do with "to know" or "to smell (an action)" — the preposition changes the verb\'s whole job.',
+  sections: [
+    { h: 'Visión: ver bien/mal, luminoso', html: '<i>El salón es muy luminoso</i> (bright, full of light); <i>ver bien/mal/nada</i> judges the QUALITY of visibility, not just whether you see something.' },
+    { h: 'Audición: oír bien/mal, en voz alta/baja', html: 'The same <i>bien/mal</i> pattern applies to hearing: <i>se oía muy mal</i>. <i>En voz alta</i> (loudly) / <i>en voz baja</i> (quietly) describe HOW something is said.' },
+    { h: 'Sabor: saber a + [cosa]', html: '<i>Saber a</i> — a completely different verb use from "to know": <i>Sabe a pescado</i> ("It tastes of fish"). <i>Tener sabor a</i> is the equivalent built from a noun instead.' },
+    { h: 'Olor: oler a + [cosa]', html: 'The identical pattern for smell: <i>Huele a gas</i> ("It smells of gas") — irregular present <i>huelo, hueles, huele…</i>.' }
+  ],
+  exponents: [
+    { es: 'El salón es muy luminoso.', en: 'The living room gets a lot of light.', register: 'neutral' },
+    { es: 'Se oía muy mal, tuvieron que cancelar el concierto.', en: 'The sound was very bad, they had to cancel the concert.', register: 'neutral' },
+    { es: 'Esta salsa sabe a ajo.', en: 'This sauce tastes of garlic.', register: 'neutral', note: 'saber A — nothing to do with "to know"' },
+    { es: 'Huele a gas en la cocina.', en: "It smells of gas in the kitchen.", register: 'neutral', note: 'oler A' }
+  ],
+  contrasts: [
+    { es: 'No sé la respuesta.', en: "I don't know the answer.", note: 'saber — "to know," ordinary meaning' },
+    { es: 'Sabe a almendra.', en: 'It tastes of almond.', note: 'saber A — an entirely different meaning, taste' }
+  ],
+  pitfalls: [
+    '<i>Saber a</i> and <i>oler a</i> switch these verbs to an entirely different meaning (taste/smell of something) — do not read them as the ordinary "to know" or bare "to smell."',
+    '<i>En voz alta</i> means "aloud/loudly"; do not confuse it with <i>alto</i> describing height or price.'
+  ],
+  examples: [
+    { es: 'No se veía nada, estaba todo oscuro.', en: "You couldn't see anything, it was all dark." },
+    { es: 'Habla en voz baja, el bebé está durmiendo.', en: 'Speak quietly, the baby is sleeping.' },
+    { es: 'Este helado no sabe a nada.', en: "This ice cream doesn't taste of anything." }
+  ],
+  probes: [
+    { id: 'p:sentidosB1:sabera', kind: 'mcq', q: '"It tastes of fish":',
+      options: ['Sabe pescado.', 'Sabe a pescado.', 'Sabe de pescado.'], answer: 1 },
+    { id: 'p:sentidosB1:olera', kind: 'mcq', q: '"It smells of gas":',
+      options: ['Huele gas.', 'Huele a gas.', 'Huele de gas.'], answer: 1 },
+    { id: 'p:sentidosB1:cloze', kind: 'cloze', text: 'Habla en voz ___, el bebé duerme. (quietly)', accept: ['baja'] },
+    { id: 'p:sentidosB1:recall', kind: 'recall', front: 'What does "a" do to the meaning of saber and oler?', back: 'switches them to "taste/smell OF something" — an unrelated meaning' }
+  ]
+},
+
+/* ---------------------------------------------------------------------------
+ * B1 notion, batch F (final): evaluation and cognition cluster (13 syllabus
+ * units, merged into 5 lessons). Completes all 61 B1 notion units.
+ * ------------------------------------------------------------------------ */
+{
+  id: 'nt-edad-vejez-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:860', 'nociones_generales:B1:861', 'nociones_generales:B1:862', 'nociones_generales:B1:863'],
+  title: 'Edad: cumplir años, aniversario',
+  summary: 'Cumplir + [number] + años is how Spanish marks a birthday landmark — cumple treinta años, "she\'s turning thirty" — a specific verb for the event of aging a year, distinct from simply tener + años.',
+  sections: [
+    { h: 'Cumplir años: the event of turning a year older', html: '<i>Cumple treinta años el sábado</i> — <i>cumplir</i> marks the moment of reaching that age, not just having it.' },
+    { h: 'Aniversario', html: 'Marks a yearly recurrence of any event, not only birthdays: <i>su aniversario de boda</i>.' },
+    { h: 'Parecer + age category', html: '<i>Parece un adolescente</i> ("he looks like a teenager") reprises B1\'s <i>parecer</i> for an impression, now applied to apparent age.' }
+  ],
+  exponents: [
+    { es: 'Mi hermana cumple veinte años mañana.', en: 'My sister turns twenty tomorrow.', register: 'neutral', note: 'cumplir — the event of turning a year older' },
+    { es: 'Celebramos su aniversario de boda.', en: "We celebrated their wedding anniversary.", register: 'neutral' },
+    { es: 'Con esa ropa parece un adolescente.', en: 'In those clothes he looks like a teenager.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Tiene treinta años.', en: 'She is thirty.', note: 'a static fact — her current age' },
+    { es: 'Cumple treinta años el sábado.', en: "She's turning thirty on Saturday.", note: 'the EVENT of reaching that age' }
+  ],
+  pitfalls: [
+    '<i>Cumplir años</i> marks the EVENT of a birthday, not the static fact of an age — do not use it interchangeably with <i>tener</i>.',
+    '<i>Aniversario</i> can mark any yearly recurrence, not only birthdays — do not assume it always means "birthday."'
+  ],
+  examples: [
+    { es: '¿Cuántos años cumples este año?', en: 'How old are you turning this year?' },
+    { es: 'El próximo mes cumplimos diez años de casados.', en: "Next month we'll have been married ten years." },
+    { es: 'Aunque tiene sesenta, parece mucho más joven.', en: "Although she's sixty, she looks much younger." }
+  ],
+  probes: [
+    { id: 'p:edadvejB1:cumplir', kind: 'mcq', q: '"She\'s turning thirty tomorrow":',
+      options: ['Tiene treinta años mañana.', 'Cumple treinta años mañana.', 'Es treinta años mañana.'], answer: 1 },
+    { id: 'p:edadvejB1:aniversario', kind: 'mcq', q: '"Aniversario" se refiere solo a cumpleaños:',
+      options: ['verdadero', 'falso — puede ser cualquier evento anual', 'solo en plural'], answer: 1 },
+    { id: 'p:edadvejB1:cloze', kind: 'cloze', text: '¿Cuántos años ___ este año? (are you turning)', accept: ['cumples'] },
+    { id: 'p:edadvejB1:recall', kind: 'recall', front: 'cumplir años vs tener años — which marks the EVENT of a birthday?', back: 'cumplir años' }
+  ]
+},
+
+{
+  id: 'nt-evaluacion-valor-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:890', 'nociones_generales:B1:891', 'nociones_generales:B1:893', 'nociones_generales:B1:904', 'nociones_generales:B1:905', 'nociones_generales:B1:907'],
+  title: 'Evaluación y precio: parecerle, estar a, rebajas',
+  summary: 'Parecerle (a alguien) algo follows the exact gustar pattern — me parece caro, "it seems expensive to me" — making the person who holds the opinion the indirect object, never the grammatical subject.',
+  sections: [
+    { h: 'Parecerle: the gustar pattern for opinions', html: '<i>Me parece muy divertido</i> — the THING is the subject, the PERSON is the indirect object, exactly like <i>gustar</i>. <i>Encontrar</i> and <i>ver</i> work the same way with a direct object instead: <i>Lo encuentro un poco caro</i>.' },
+    { h: 'Rich vocabulary for strong reactions', html: '<i>Un desastre</i>, <i>una maravilla</i>, <i>buenísimo/malísimo</i>, <i>fatal/fenomenal</i> — Spanish reaches for concrete, vivid words rather than piling up "very."' },
+    { h: 'Valor, precio: estar a', html: '<i>¿A cuánto están las manzanas?</i> asks a fluctuating price (like fruit or currency); <i>estar de rebajas/en oferta</i> marks something discounted.' }
+  ],
+  exponents: [
+    { es: 'Me parece muy interesante ese museo.', en: 'That museum seems very interesting to me.', register: 'neutral', note: 'parecerle — gustar pattern' },
+    { es: 'Lo encuentro un poco caro para lo que es.', en: "I find it a bit expensive for what it is.", register: 'neutral' },
+    { es: 'Este trabajo ha sido un desastre.', en: 'This job has been a disaster.', register: 'coloquial' },
+    { es: '¿A cuánto están las manzanas hoy?', en: 'How much are apples today?', register: 'neutral', note: 'estar a — fluctuating price' }
+  ],
+  contrasts: [
+    { es: 'Me gusta este museo.', en: 'I like this museum.', note: 'gustar — a straightforward preference' },
+    { es: 'Me parece muy interesante este museo.', en: 'This museum seems very interesting to me.', note: 'parecer — an evaluative judgement, same grammatical pattern' }
+  ],
+  pitfalls: [
+    '<i>Parecerle</i> follows the <i>gustar</i> pattern exactly — the person is the indirect object (<i>me, te, le…</i>), never the subject.',
+    '<i>Estar a</i> is for FLUCTUATING prices (fruit, currency, stocks); a fixed price uses <i>costar/ser</i> instead.'
+  ],
+  examples: [
+    { es: '¿Qué te parece la propuesta?', en: 'What do you think of the proposal?' },
+    { es: 'Estas zapatillas están de oferta esta semana.', en: 'These trainers are on sale this week.' },
+    { es: 'Nos parece perfecto el plan.', en: 'The plan seems perfect to us.' }
+  ],
+  probes: [
+    { id: 'p:evalvalB1:parecer', kind: 'mcq', q: '"It seems very expensive to me":',
+      options: ['Yo parezco muy caro.', 'Me parece muy caro.', 'Parezco que es caro.'], answer: 1 },
+    { id: 'p:evalvalB1:estara', kind: 'mcq', q: '¿Cuándo se usa "estar a" para el precio?',
+      options: ['precio fijo', 'precio que fluctúa (fruta, moneda)', 'nunca con precios'], answer: 1 },
+    { id: 'p:evalvalB1:cloze', kind: 'cloze', text: '¿Qué te ___ la propuesta? (parecer)', accept: ['parece'] },
+    { id: 'p:evalvalB1:recall', kind: 'recall', front: 'In "me parece caro," is "me" the subject or the object?', back: 'the object — the price/thing is the subject, exactly like gustar' }
+  ]
+},
+
+{
+  id: 'nt-conformidad-correccion-precision-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:934', 'nociones_generales:B1:936', 'nociones_generales:B1:940', 'nociones_generales:B1:941', 'nociones_generales:B1:949', 'nociones_generales:B1:951'],
+  title: 'Conformidad y corrección: aceptar, error, claro',
+  summary: 'Está bien así, gracias closes a transaction politely — it declines further help without rejecting what\'s been offered — while corregir un error and repasar name the two-step process of catching and reviewing a mistake.',
+  sections: [
+    { h: 'Conformidad: closing politely', html: '<i>Está bien así, gracias</i> and <i>nada más, gracias</i> are fixed ways to say "that\'s enough / that\'s all," declining further help without rejecting what was offered.' },
+    { h: 'Corrección: error, corregir, repasar', html: '<i>Corregir un error</i> names the act of fixing a mistake; <i>repasar</i> is the broader check-over that catches errors in the first place.' },
+    { h: 'Precisión y claridad', html: '<i>Claro/sencillo/complicado</i> judge how easy something is to follow; <i>(des)orden/(des)organización</i> reprise B1\'s <i>ordenado/organizado</i> pair for how well-structured something is.' }
+  ],
+  exponents: [
+    { es: '—¿Algo más? —No, está bien así, gracias.', en: '—Anything else? —No, that\'s fine, thanks.', register: 'neutral', note: 'closing politely, declining further help' },
+    { es: 'Corrigió el error antes de entregar el informe.', en: 'She fixed the mistake before handing in the report.', register: 'neutral' },
+    { es: 'La explicación es muy clara.', en: 'The explanation is very clear.', register: 'neutral' },
+    { es: 'Su discurso fue bastante complicado de seguir.', en: 'Her speech was fairly complicated to follow.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Está bien así, gracias.', en: "That's fine, thanks.", note: 'declining more, politely' },
+    { es: 'Nada más, gracias.', en: "Nothing else, thanks.", note: 'a near-synonym, equally polite' }
+  ],
+  pitfalls: [
+    '<i>Está bien así</i> is a fixed closing phrase — do not analyze it word by word; it functions as a set unit meaning "that\'s enough."',
+    '<i>Repasar</i> is broader than <i>corregir</i> — you repasar (review) BEFORE you find something to corregir (fix).'
+  ],
+  examples: [
+    { es: 'Deberías repasar el texto antes de enviarlo.', en: 'You should review the text before sending it.' },
+    { es: 'Es un error muy común entre estudiantes.', en: "It's a very common mistake among students." },
+    { es: 'Su habitación está siempre muy desorganizada.', en: 'Her room is always very disorganized.' }
+  ],
+  probes: [
+    { id: 'p:confcorrprec:cerrar', kind: 'mcq', q: '"That\'s fine, thanks" (declining further help):',
+      options: ['Está bien así, gracias.', 'Está mal, gracias.', 'Está bien, no.'], answer: 0 },
+    { id: 'p:confcorrprec:orden', kind: 'mcq', q: '¿Cuál va primero, lógicamente?',
+      options: ['corregir, luego repasar', 'repasar, luego corregir', 'da igual el orden'], answer: 1 },
+    { id: 'p:confcorrprec:cloze', kind: 'cloze', text: 'La explicación es muy ___. (clear)', accept: ['clara'] },
+    { id: 'p:confcorrprec:recall', kind: 'recall', front: 'Which comes first, logically: repasar or corregir?', back: 'repasar (review) — that\'s how you find what to corregir' }
+  ]
+},
+
+{
+  id: 'nt-exito-utilidad-importancia-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:966', 'nociones_generales:B1:969', 'nociones_generales:B1:977', 'nociones_generales:B1:988', 'nociones_generales:B1:1000', 'nociones_generales:B1:1009'],
+  title: 'Éxito, utilidad e importancia: servir para, dar igual',
+  summary: 'Servir para names what something is FOR; ser bueno en/para names what a PERSON is good at — two structurally similar "for" constructions that describe an object\'s purpose and a person\'s ability respectively.',
+  sections: [
+    { h: 'Éxito: ganar, perder, conseguir', html: '<i>Ganar/perder</i> a competition; <i>intentar/conseguir</i> mark the attempt and the achievement as two separate steps.' },
+    { h: 'Utilidad: servir para, funcionar', html: '<i>¿Para qué sirve esto?</i> asks an object\'s purpose; <i>funcionar</i> asks whether it actually works.' },
+    { h: 'Capacidad: ser bueno en/para/con', html: '<i>Es bueno en matemáticas</i>, <i>es un genio para los idiomas</i> — three prepositions (<i>en, para, con</i>) all appear, each fixed to particular contexts.' },
+    { h: 'Importancia y normalidad', html: '<i>Me da igual</i> ("I don\'t mind / it\'s all the same to me") follows the <i>gustar</i> pattern; <i>normal/raro/extraño</i> judge how unusual something is.' }
+  ],
+  exponents: [
+    { es: '¿Para qué sirve este botón?', en: 'What is this button for?', register: 'neutral' },
+    { es: 'Es muy buena en matemáticas.', en: "She's very good at maths.", register: 'neutral' },
+    { es: '¡Me da igual ir al cine o quedarnos en casa!', en: "I don't mind whether we go to the cinema or stay home!", register: 'coloquial', note: 'dar igual — gustar pattern' },
+    { es: 'Es bastante raro que llegue tarde, normalmente es puntual.', en: "It's quite unusual for him to be late, he's usually punctual.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Sirve para abrir botellas.', en: "It's for opening bottles.", note: 'servir para — an object\'s purpose' },
+    { es: 'Es bueno para los idiomas.', en: "He's good at languages.", note: 'ser bueno para — a person\'s ability, a different subject entirely' }
+  ],
+  pitfalls: [
+    '<i>Servir para</i> (an object\'s purpose) and <i>ser bueno para</i> (a person\'s ability) share the preposition <i>para</i> but describe completely different kinds of subject.',
+    '<i>Dar igual</i> follows the <i>gustar</i> pattern — the person who doesn\'t mind is the indirect object: <i>me da igual</i>, not <i>*yo doy igual</i>.'
+  ],
+  examples: [
+    { es: 'Intentaron ganar el concurso pero no lo consiguieron.', en: 'They tried to win the contest but didn\'t manage it.' },
+    { es: 'Esta aplicación no funciona bien en mi teléfono.', en: "This app doesn't work well on my phone." },
+    { es: 'No me importa mucho el resultado.', en: "The result doesn't matter much to me." }
+  ],
+  probes: [
+    { id: 'p:exitutilB1:servirpara', kind: 'mcq', q: '"What is this for?":',
+      options: ['¿Para qué es esto?', '¿Para qué sirve esto?', 'ambas son correctas'], answer: 2 },
+    { id: 'p:exitutilB1:bueno', kind: 'mcq', q: '"She\'s good at maths":',
+      options: ['Es buena en matemáticas.', 'Es buena de matemáticas.', 'Es buena por matemáticas.'], answer: 0 },
+    { id: 'p:exitutilB1:cloze', kind: 'cloze', text: '¡Me da ___ ir al cine o no! (I don\'t mind)', accept: ['igual'] },
+    { id: 'p:exitutilB1:recall', kind: 'recall', front: 'servir para vs ser bueno para — which one describes a PERSON\'s ability?', back: 'ser bueno para/en' }
+  ]
+},
+
+{
+  id: 'nt-reflexion-expresion-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  pcic: ['nociones_generales:B1:1025', 'nociones_generales:B1:1027', 'nociones_generales:B1:1030', 'nociones_generales:B1:1049', 'nociones_generales:B1:1055', 'nociones_generales:B1:1059'],
+  title: 'Reflexión y expresión: darse cuenta de, contar un chiste',
+  summary: 'Darse cuenta de means "to realize/become aware," and it is reflexive — you cannot simply "cuenta" something the way you might expect from the bare verb contar, which instead means "to tell/count."',
+  sections: [
+    { h: 'Cognitive verbs', html: '<i>Entender/comprender</i> (to understand) are close synonyms; <i>conocer</i> (A1) contrasts with both — knowing a fact is different from knowing a person or place. <i>Adivinar</i> (to guess correctly), <i>suponer</i> (to assume) fill out the family.' },
+    { h: 'Darse cuenta de: realizing', html: 'Reflexive and fixed: <i>Me di cuenta de mi error demasiado tarde</i> — "de" is obligatory before what was realized.' },
+    { h: 'Verbal expression: contar, gritar, callado', html: '<i>Contar un chiste/un cuento/una historia</i> — "to tell" a joke, story; <i>gritar</i> (to shout) and <i>callado</i> (quiet, silent) sit at opposite ends of volume.' },
+    { h: 'Written/sent communication', html: '<i>Escribir/mandar/enviar un correo</i>; <i>dejar un mensaje/un recado</i> reprise and extend the A2/B1 communication vocabulary.' }
+  ],
+  exponents: [
+    { es: 'No entiendo bien esta explicación.', en: "I don't understand this explanation well.", register: 'neutral' },
+    { es: 'Me di cuenta de mi error demasiado tarde.', en: 'I realized my mistake too late.', register: 'neutral', note: 'darse cuenta DE — obligatory preposition' },
+    { es: 'Siempre cuenta unos chistes buenísimos.', en: 'He always tells really good jokes.', register: 'coloquial' },
+    { es: 'Se quedó callado durante toda la reunión.', en: 'He stayed quiet through the whole meeting.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Cuento el dinero.', en: 'I count the money.', note: 'contar — "to count"' },
+    { es: 'Cuento una historia.', en: 'I tell a story.', note: 'contar — "to tell," an unrelated meaning of the same verb' }
+  ],
+  pitfalls: [
+    '<i>Darse cuenta de</i> is reflexive and always takes <i>de</i> before what was realized — never <i>*dar cuenta</i> alone with this meaning.',
+    '<i>Contar</i> means both "to count" and "to tell (a story)" — context decides; do not assume one fixed translation.'
+  ],
+  examples: [
+    { es: '¿Te has dado cuenta de que ya es tarde?', en: 'Have you realized it\'s already late?' },
+    { es: 'Supongo que llegará en una hora.', en: "I suppose he'll arrive in an hour." },
+    { es: 'Le dejé un recado en el contestador.', en: 'I left him a message on the answering machine.' }
+  ],
+  probes: [
+    { id: 'p:reflexpr:darsecuenta', kind: 'mcq', q: '"I realized my mistake":',
+      options: ['Di cuenta mi error.', 'Me di cuenta de mi error.', 'Me di cuenta mi error.'], answer: 1 },
+    { id: 'p:reflexpr:contar', kind: 'mcq', q: '"Cuento una historia" significa:',
+      options: ['I count a story', 'I tell a story', 'I count on a story'], answer: 1 },
+    { id: 'p:reflexpr:cloze', kind: 'cloze', text: 'Le dejé un ___ en el contestador. (message)', accept: ['recado', 'mensaje'] },
+    { id: 'p:reflexpr:recall', kind: 'recall', front: 'What preposition does "darse cuenta" always need?', back: 'de' }
+  ]
+},
+
+/* ============================================================================
+ * BATCH — B1 grammar, wave 3 (final): verbal periphrases, impersonal/reflexive
+ * se, modal adverbs, relative/interrogative adverb contrast, the
+ * algo/alguien/alguno vs nada/nadie/ninguno system, and the article's
+ * anaphoric uses. This closes out the highest-value remaining B1 grammar
+ * units; only raw tense-conjugation-form units stay deferred, per the
+ * rationale given at the top of wave 1.
+ * ========================================================================== */
+{
+  id: 'gr-perifrasis-verbales-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:593', 'gramatica:B1:594', 'gramatica:B1:595', 'gramatica:B1:596'],
+  title: 'Perífrasis verbales: soler, volver a, dejar de',
+  summary: 'A verbal periphrasis is two verbs acting as ONE — you can never ask "what?" of the first verb the way you can of an ordinary transitive one, which is the test that separates soler + infinitive from an everyday verb + object.',
+  sections: [
+    { h: 'The test: can you ask "what"?', html: '<i>Tengo que viajar</i> cannot answer <i>¿Qué tengo?</i> — the infinitive is not an object, it is part of a single verbal unit with <i>tener que</i>. Compare <i>Deseo viajar</i>, which genuinely CAN be replaced by <i>Lo deseo</i> — a real object, not a periphrasis.' },
+    { h: 'Soler: habitual action', html: '<i>Suelo desayunar temprano</i> — states what you usually do, with no equivalent single verb in English.' },
+    { h: 'Volver a: repetition', html: '<i>Volvió a llamar</i> — "he called again," repeating an action from scratch.' },
+    { h: 'Dejar de: interruption', html: '<i>Dejó de fumar</i> — "he stopped smoking," reprising the B1 notion lesson\'s same construction from the grammar side.' }
+  ],
+  contrasts: [
+    { es: 'Tengo que viajar por trabajo.', en: 'I have to travel for work.', note: 'periphrasis — cannot ask *¿Qué tengo?' },
+    { es: 'Deseo viajar por trabajo.', en: 'I wish to travel for work.', note: 'NOT a periphrasis — "Lo deseo" genuinely works, viajar is a real object here' }
+  ],
+  pitfalls: [
+    'Not every verb + infinitive pair is a periphrasis — the test is whether the first verb keeps its full, independent meaning (not a periphrasis) or has bleached into a pure grammatical marker (a periphrasis).',
+    '<i>Soler</i> only really works in the present and imperfect — it sounds odd in most other tenses.'
+  ],
+  examples: [
+    { es: 'Solemos cenar sobre las nueve.', en: 'We usually have dinner around nine.' },
+    { es: 'Volví a leer el correo tres veces.', en: 'I read the email again three times.' },
+    { es: 'Dejamos de hablar cuando entró el jefe.', en: 'We stopped talking when the boss came in.' }
+  ],
+  probes: [
+    { id: 'p:perifr:test', kind: 'mcq', q: '¿Cuál de estas frases NO es una perífrasis? ("Lo deseo" funciona como sustituto)',
+      options: ['Tengo que viajar.', 'Deseo viajar.', 'Suelo viajar.'], answer: 1 },
+    { id: 'p:perifr:soler', kind: 'mcq', q: '"We usually have dinner at nine":',
+      options: ['Cenamos que a las nueve.', 'Solemos cenar a las nueve.', 'Dejamos cenar a las nueve.'], answer: 1 },
+    { id: 'p:perifr:cloze', kind: 'cloze', text: 'Volví a ___ el correo. (leer, repetir la acción)', accept: ['leer'] },
+    { id: 'p:perifr:recall', kind: 'recall', front: 'What test tells a periphrasis apart from an ordinary verb + object?', back: 'whether you can ask "¿qué?" of the first verb — if yes, not a periphrasis' }
+  ]
+},
+
+{
+  id: 'gr-ser-impersonal-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:598', 'gramatica:B1:599', 'gramatica:B1:601', 'gramatica:B1:607'],
+  title: 'Ser impersonal: es de noche, es una pena que',
+  summary: 'Ser builds a whole family of subjectless time and value expressions — es de noche, es tarde — and when the value judgment takes a full clause, that clause switches to the subjunctive, exactly as the presente de subjuntivo lesson predicts.',
+  sections: [
+    { h: 'Time with no subject at all', html: '<i>Es de noche</i>, <i>Es tarde</i> — <i>ser</i> here has no grammatical subject naming anything; the expression simply states a fact about the time of day.' },
+    { h: 'Value judgment + que + subjuntivo', html: '<i>Es una pena que no vengan a la fiesta</i> — the impersonal value judgment forces the subjunctive in its complement clause, the same rule from the core subjunctive lesson, now shown with <i>ser</i> specifically.' },
+    { h: 'Profession and fluctuating price, with de/a', html: '<i>Trabaja de camarero</i> (an eventual, not permanent, profession) and <i>está a dos euros</i> (a fluctuating price) both modify the plain <i>ser/estar</i> pattern with a preposition.' }
+  ],
+  contrasts: [
+    { es: 'Es una pena que no vengan.', en: "It's a shame they're not coming.", note: 'value judgment — subjunctive, same rule as always' },
+    { es: 'Es verdad que no vienen.', en: "It's true they're not coming.", note: 'certainty — indicative instead' }
+  ],
+  pitfalls: [
+    'Impersonal <i>ser</i> expressions of time (<i>es tarde, es de noche</i>) have no subject to look for — do not hunt for one.',
+    'A value-judgment <i>ser</i> expression (<i>es una pena, es normal, es lógico</i>) + <i>que</i> ALWAYS triggers the subjunctive, regardless of how certain the underlying fact is.'
+  ],
+  examples: [
+    { es: 'Ya es de noche, deberíamos volver.', en: "It's already dark out, we should head back." },
+    { es: 'Es normal que estés cansado después de un viaje así.', en: "It's normal to be tired after a trip like that." },
+    { es: 'De joven trabajó de camarero varios veranos.', en: 'As a young man he worked as a waiter for several summers.' }
+  ],
+  probes: [
+    { id: 'p:serimperB1:modo', kind: 'mcq', q: '"Es una pena que no ___." (venir, ellos)',
+      options: ['vienen', 'vengan', 'vendrán'], answer: 1 },
+    { id: 'p:serimperB1:sujeto', kind: 'mcq', q: '"Es tarde" — ¿cuál es el sujeto gramatical?',
+      options: ['tarde', 'ninguno — es impersonal', 'yo'], answer: 1 },
+    { id: 'p:serimperB1:cloze', kind: 'cloze', text: 'Trabaja ___ camarero los veranos. (as, eventual profession)', accept: ['de'] },
+    { id: 'p:serimperB1:recall', kind: 'recall', front: 'Does an impersonal value-judgment "es + adjetivo + que" trigger subjunctive or indicative?', back: 'subjunctive' }
+  ]
+},
+
+{
+  id: 'gr-se-multiuso-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:650', 'gramatica:B1:651', 'gramatica:B1:203', 'gramatica:B1:205', 'gramatica:B1:206'],
+  title: 'Se: recíproco, impersonal, meteorológico',
+  summary: 'The same little word se marks two people doing something TO EACH OTHER (se quieren), and also erases the subject entirely so nobody in particular is doing anything (en este restaurante se come bien) — two structurally different jobs behind one spelling.',
+  sections: [
+    { h: 'Se recíproco: each other', html: '<i>Se quieren mucho</i> — "they love each other." It admits the reinforcement <i>el uno al otro</i> for extra clarity: <i>Se ayudan el uno al otro</i>.' },
+    { h: 'Se impersonal / pasiva refleja: nobody in particular', html: '<i>En este restaurante se come muy bien</i> — no one specific is named as the eater; the sentence reports a general fact about the restaurant. The verb agrees with a following noun if there is one: <i>Se venden pisos</i> (plural verb, plural subject).' },
+    { h: 'Meteorológicos: no subject to look for at all', html: '<i>Llueve</i>, <i>Nieva</i> — these verbs are grammatically subjectless; there is no "it" hiding anywhere, unlike English.' }
+  ],
+  contrasts: [
+    { es: 'Se quieren mucho.', en: 'They love each other.', note: 'recíproco — TWO people, acting on each other' },
+    { es: 'En este restaurante se come muy bien.', en: 'You eat very well at this restaurant.', note: 'impersonal — NO ONE in particular named' }
+  ],
+  pitfalls: [
+    'Se impersonal/pasiva refleja and se recíproco look identical but do completely different jobs — check whether there are two people acting on each other, or no one named at all.',
+    'Weather verbs (<i>llover, nevar</i>) never take a subject pronoun, not even <i>ello</i> — Spanish has no equivalent of English\'s empty "it."'
+  ],
+  examples: [
+    { es: 'Se escriben todas las semanas.', en: 'They write to each other every week.' },
+    { es: 'Aquí se habla español e inglés.', en: 'Spanish and English are spoken here.' },
+    { es: 'Está nevando desde esta mañana.', en: "It's been snowing since this morning." }
+  ],
+  probes: [
+    { id: 'p:semultiB1:tipo', kind: 'mcq', q: '"Se quieren mucho" — ¿qué tipo de "se" es?',
+      options: ['impersonal', 'recíproco', 'reflexivo'], answer: 1 },
+    { id: 'p:semultiB1:impersonal', kind: 'mcq', q: '"En este restaurante se come bien" — ¿quién come?',
+      options: ['el restaurante', 'nadie en concreto', 'el camarero'], answer: 1 },
+    { id: 'p:semultiB1:cloze', kind: 'cloze', text: 'Aquí se ___ español. (is spoken)', accept: ['habla'] },
+    { id: 'p:semultiB1:recall', kind: 'recall', front: 'Does a weather verb like "llover" ever take a subject pronoun in Spanish?', back: 'no — it is grammatically subjectless' }
+  ]
+},
+
+{
+  id: 'gr-modalidad-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:348', 'gramatica:B1:349', 'gramatica:B1:350', 'gramatica:B1:351'],
+  title: 'Modalidad: posiblemente, seguramente, probablemente',
+  summary: 'These adverbs of doubt sit on a scale from near-certainty to genuine uncertainty, and — like a lo mejor — several of them can take EITHER mood depending on how confident the speaker actually feels, not a fixed grammatical rule.',
+  sections: [
+    { h: 'A scale of doubt', html: '<i>Seguramente</i> (fairly confident) → <i>probablemente</i> → <i>posiblemente</i> (least confident) — all roughly equivalent to <i>es probable que…</i>' },
+    { h: 'Mood follows confidence, not a fixed rule', html: 'Unlike <i>dudo que</i> (always subjunctive) or <i>a lo mejor</i> (always indicative), these adverbs can take either mood: <i>Seguramente no está</i> (indicative — fairly sure) or <i>Seguramente no esté</i> (subjunctive — less sure). The choice itself communicates the speaker\'s confidence.' },
+    { h: 'Standalone, answering a question', html: 'These adverbs can also stand alone as a complete, hedged answer: <i>—¿Vendrá? —Posiblemente.</i>' }
+  ],
+  contrasts: [
+    { es: 'Seguramente no está en casa.', en: "He's probably not home.", note: 'indicative — fairly confident' },
+    { es: 'Seguramente no esté en casa.', en: "He's probably not home.", note: 'subjunctive — the same adverb, slightly less confident' }
+  ],
+  pitfalls: [
+    'Unlike most doubt expressions, these adverbs let the SPEAKER choose the mood to signal how confident they feel — there is no single fixed rule to memorize here.',
+    'Do not confuse this flexible group with <i>a lo mejor</i> (always indicative) or <i>dudo que</i> (always subjunctive), which have no such freedom.'
+  ],
+  examples: [
+    { es: 'Posiblemente lleguemos un poco tarde.', en: 'We might arrive a bit late.' },
+    { es: '—¿Crees que aprobará? —Probablemente.', en: '—Do you think she\'ll pass? —Probably.' },
+    { es: 'Seguramente ya lo sepa.', en: 'He probably already knows.' }
+  ],
+  probes: [
+    { id: 'p:modalB1:escala', kind: 'mcq', q: 'Adverbio con MÁS confianza:',
+      options: ['posiblemente', 'seguramente', 'quizá'], answer: 1 },
+    { id: 'p:modalB1:libertad', kind: 'mcq', q: '¿Puede "probablemente" ir con indicativo Y subjuntivo?',
+      options: ['sí, según la confianza del hablante', 'no, siempre subjuntivo', 'no, siempre indicativo'], answer: 0 },
+    { id: 'p:modalB1:cloze', kind: 'cloze', text: '—¿Vendrá? —___. (possibly, standalone)', accept: ['Posiblemente', 'posiblemente'] },
+    { id: 'p:modalB1:recall', kind: 'recall', front: 'What does the choice of mood (indicative vs subjunctive) signal after these adverbs?', back: "the speaker's degree of confidence" }
+  ]
+},
+
+{
+  id: 'gr-adverbios-relativos-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:370', 'gramatica:B1:371', 'gramatica:B1:373', 'gramatica:B1:374'],
+  title: 'Como, cuando, donde: relativos vs interrogativos',
+  summary: 'The exact same three words — como, cuando, donde — serve as unaccented relative connectors inside a statement and as accented question/exclamation words: the accent alone signals which job they are doing.',
+  sections: [
+    { h: 'Unaccented: relative connectors', html: 'As relatives, these words connect a clause to an antecedent, with NO written accent: <i>Lo he hecho como dijiste</i>, <i>Me fui cuando llegaron</i>.' },
+    { h: 'Accented: questions and exclamations', html: 'The identical words, now stressed and accented, open a question or exclamation: <i>¿Cómo lo hiciste?</i>, <i>¿Cuándo llegaron?</i>, <i>¡Cómo llueve!</i>' },
+    { h: 'Adónde: only for movement', html: '<i>Adónde</i> (as one word) is reserved for verbs of movement asking a destination: <i>¿Adónde vas?</i> — <i>dónde</i> alone covers static location.' }
+  ],
+  contrasts: [
+    { es: 'Lo he hecho como dijiste.', en: 'I did it the way you said.', note: 'relative — no accent' },
+    { es: '¿Cómo lo hiciste?', en: 'How did you do it?', note: 'interrogative — accented, a different word in writing' }
+  ],
+  pitfalls: [
+    'The accent is not decorative — it is the ONLY thing distinguishing a relative <i>como/cuando/donde</i> from an interrogative or exclamative one in writing.',
+    '<i>Adónde</i> only works with movement verbs; a static location question uses plain <i>dónde</i>, never <i>adónde</i>.'
+  ],
+  examples: [
+    { es: 'Vive donde vivía su abuela.', en: 'He lives where his grandmother used to live.' },
+    { es: '¿Dónde has dejado las llaves?', en: 'Where have you left the keys?' },
+    { es: '¿Adónde va este autobús?', en: 'Where does this bus go?' }
+  ],
+  probes: [
+    { id: 'p:advrelB1:acento', kind: 'mcq', q: '"Lo hice ___ dijiste." (relativo, sin acento)',
+      options: ['cómo', 'como', 'komo'], answer: 1 },
+    { id: 'p:advrelB1:interrog', kind: 'mcq', q: '"How did you do it?" (interrogativo)',
+      options: ['¿Como lo hiciste?', '¿Cómo lo hiciste?', '¿Coma lo hiciste?'], answer: 1 },
+    { id: 'p:advrelB1:cloze', kind: 'cloze', text: '¿___ va este autobús? (where to, movement)', accept: ['Adónde', 'adónde'] },
+    { id: 'p:advrelB1:recall', kind: 'recall', front: 'What is the ONLY written difference between relative and interrogative como/cuando/donde?', back: 'the accent mark' }
+  ]
+},
+
+{
+  id: 'gr-indefinidos-negativos-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:140', 'gramatica:B1:143', 'gramatica:B1:145', 'gramatica:B1:136'],
+  title: 'Algo, alguien, alguno — nada, nadie, ninguno',
+  summary: 'Alguien/nadie only ever refer to a PERSON with no gender variation, while alguno/ninguno agree in gender and specifically pick one member OUT of an already-known group — three grammatically different tools for three different jobs.',
+  sections: [
+    { h: 'Algo / nada: things, invariable', html: 'Never change form: <i>¿Quieres algo?</i>, <i>No quiero nada</i>.' },
+    { h: 'Alguien / nadie: people, invariable', html: 'Also never change form, but refer only to a person: <i>¿Hay alguien ahí?</i>, <i>No hay nadie</i>.' },
+    { h: 'Alguno / ninguno: picking from a known group', html: 'These DO agree in gender/number, and specifically select from a group already established in the conversation: <i>—¿Tienes hermanos? —Sí, tengo alguno</i> (picking from the category "brothers," second mention) vs a first mention of a person, which uses <i>alguien</i> instead.' },
+    { h: 'Cada: distributive, invariable', html: '<i>Cada uno por su camino</i>, <i>reparte una hoja a cada alumno</i> — considers the members of a group one by one, and never changes form.' }
+  ],
+  contrasts: [
+    { es: '¿Conoces a alguien aquí?', en: 'Do you know anyone here?', note: 'alguien — a person, first mention, no group established yet' },
+    { es: '¿Conoces a alguno de mis amigos?', en: 'Do you know any of my friends?', note: 'alguno — selecting from an already-named group ("mis amigos")' }
+  ],
+  pitfalls: [
+    '<i>Alguien/nadie</i> never change form; <i>alguno/ninguno</i> always agree in gender and number — do not mix the two systems.',
+    '<i>Alguno</i> shortens to <i>algún</i> before a masculine singular noun (<i>algún día</i>), the same apocope pattern as <i>uno→un</i> and <i>primero→primer</i>.'
+  ],
+  examples: [
+    { es: 'No he visto a nadie en todo el día.', en: "I haven't seen anyone all day." },
+    { es: '¿Tienes algún libro sobre este tema?', en: 'Do you have any book on this topic?' },
+    { es: 'Cada estudiante recibió su propio horario.', en: 'Each student received their own schedule.' }
+  ],
+  probes: [
+    { id: 'p:indefnegB1:invariable', kind: 'mcq', q: '¿Cuál NUNCA cambia de forma?',
+      options: ['alguno', 'ninguno', 'nadie'], answer: 2 },
+    { id: 'p:indefnegB1:apocope', kind: 'mcq', q: '"¿Tienes ___ libro sobre esto?" (algún, apocopado)',
+      options: ['alguno', 'algún', 'alguna'], answer: 1 },
+    { id: 'p:indefnegB1:cloze', kind: 'cloze', text: '___ estudiante recibió su horario. (each)', accept: ['Cada', 'cada'] },
+    { id: 'p:indefnegB1:recall', kind: 'recall', front: 'Which pair agrees in gender/number, and which stays invariable — alguno/ninguno or alguien/nadie?', back: 'alguno/ninguno agree; alguien/nadie are invariable' }
+  ]
+},
+
+{
+  id: 'gr-articulo-anaforico-escuetos-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:57', 'gramatica:B1:58', 'gramatica:B1:96', 'gramatica:B1:97'],
+  title: 'El artículo anafórico y los nombres escuetos',
+  summary: 'The definite article can point back to something only ASSOCIATED with what was already mentioned, not literally named before — mention a trip and el barco ("the boat") can appear with the article, even though no boat was named yet.',
+  sections: [
+    { h: 'Anaphoric: pointing back to what was named', html: '<i>Cogió un libro y miró el índice</i> — <i>el índice</i> is definite because every book has one; the article points back to a PART of what was just introduced.' },
+    { h: 'Associative: pointing back to what is implied', html: '<i>Viajaremos a Marruecos. El viaje será en barco</i> — <i>el viaje</i> was never named as a noun before, but it is clearly implied by "viajaremos."' },
+    { h: 'Nombres escuetos: syntactic limits', html: 'A bare noun (no article, no quantifier) cannot normally stand as the PREVERBAL subject: <i>*Niños juegan en el patio</i> is odd; Spanish prefers <i>En el patio juegan niños</i>, with the bare noun AFTER the verb instead.' }
+  ],
+  contrasts: [
+    { es: 'Cogió un libro y miró el índice.', en: 'She picked up a book and looked at the index.', note: 'anaphoric — el índice, a part of what was just named' },
+    { es: 'Viajaremos a Marruecos. El viaje será largo.', en: "We'll travel to Morocco. The trip will be long.", note: 'associative — el viaje was implied, not literally named yet' }
+  ],
+  pitfalls: [
+    'A bare noun (no article/quantifier) resists standing as the subject BEFORE its verb — move the verb first instead: <i>Llegó gente</i>, not <i>*Gente llegó</i>.',
+    'The associative article requires only that the referent be inferable from what was said, not literally pre-named — this is subtler than the ordinary "second mention" rule.'
+  ],
+  examples: [
+    { es: 'Compramos una casa; el jardín es enorme.', en: 'We bought a house; the garden is huge.' },
+    { es: 'Fuimos a un restaurante muy caro. El camarero fue encantador.', en: 'We went to a very expensive restaurant. The waiter was lovely.' },
+    { es: 'En la reunión surgieron problemas inesperados.', en: 'Unexpected problems came up at the meeting.' }
+  ],
+  probes: [
+    { id: 'p:artanaf:asociativo', kind: 'mcq', q: '"Viajaremos a Marruecos. ___ viaje será en barco." — ¿por qué "el"?',
+      options: ['segunda mención literal', 'asociado a "viajaremos", aunque no se nombró antes', 'es genérico'], answer: 1 },
+    { id: 'p:artanaf:escueto', kind: 'mcq', q: 'Más natural:',
+      options: ['Niños juegan en el patio.', 'En el patio juegan niños.', 'Los niños juegan niños.'], answer: 1 },
+    { id: 'p:artanaf:cloze', kind: 'cloze', text: 'Compramos una casa; ___ jardín es enorme.', accept: ['el'] },
+    { id: 'p:artanaf:recall', kind: 'recall', front: 'Can a bare noun with no determiner stand as a PREVERBAL subject?', back: 'not comfortably — Spanish prefers verb-first order instead' }
+  ]
+},
+
+/* ---------------------------------------------------------------------------
+ * B1 grammar, wave 4 (final for this level): pluscuamperfecto — a genuinely
+ * new tense concept, not a form-drill refinement — plus the dative possessive
+ * and elative/adverb modifiers. This closes out B1 grammar's highest-value
+ * remaining units.
+ * ------------------------------------------------------------------------ */
+{
+  id: 'gr-pluscuamperfecto-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:432', 'gramatica:B1:433', 'gramatica:B1:434', 'gramatica:B1:435'],
+  title: 'Pretérito pluscuamperfecto: había hablado',
+  summary: 'The pluscuamperfecto marks a past event that had already finished BEFORE another past event — cuando llegamos, ya se había ido — Spanish\'s equivalent of English\'s "had done," and it never stands alone without that second past reference point.',
+  sections: [
+    { h: 'Form: haber (imperfecto) + participio', html: '<i>Había/habías/había/habíamos/habíais/habían</i> + participle: <i>había hablado, había comido, había vivido</i>. It reuses whatever irregular participles you already know: <i>había hecho, había dicho, había escrito, había vuelto</i>.' },
+    { h: 'Meaning: anteriority to another past point', html: 'It always relates TWO past events, placing one before the other: <i>Cuando llegamos, ya se había ido</i> — the leaving happened before the arriving, both in the past.' },
+    { h: 'It never stands alone', html: 'Unlike the simple past tenses, pluscuamperfecto needs a second past-tense anchor, explicit or clearly implied — it does not simply mean "a long time ago" by itself.' }
+  ],
+  contrasts: [
+    { es: 'Cuando llegamos, ya se había ido.', en: 'When we arrived, he had already left.', note: 'pluscuamperfecto — he left BEFORE we arrived' },
+    { es: 'Cuando llegamos, se fue.', en: 'When we arrived, he left.', note: 'indefinido — he left AT that moment, not before it' }
+  ],
+  pitfalls: [
+    'Pluscuamperfecto always needs a second past-tense reference point — it cannot be used to simply mean "a long time ago" on its own.',
+    'Do not confuse it with <i>hace mucho tiempo</i>, which expresses distance from NOW, not anteriority to another past event.'
+  ],
+  examples: [
+    { es: 'Ya habíamos cenado cuando llamó.', en: 'We had already had dinner when he called.' },
+    { es: 'Nunca había visto un lugar tan bonito.', en: "I'd never seen such a beautiful place." },
+    { es: 'Se dio cuenta de que había cometido un error.', en: 'He realized he had made a mistake.' }
+  ],
+  probes: [
+    { id: 'p:pluscuamB1:orden', kind: 'mcq', q: '"Cuando llegamos, ya se había ido" — ¿qué pasó primero?',
+      options: ['llegamos', 'se había ido', 'pasaron a la vez'], answer: 1 },
+    { id: 'p:pluscuamB1:forma', kind: 'mcq', q: 'Pluscuamperfecto de "hacer", 1.ª persona singular:',
+      options: ['he hecho', 'había hecho', 'habría hecho'], answer: 1 },
+    { id: 'p:pluscuamB1:cloze', kind: 'cloze', text: 'Nunca ___ visto un lugar tan bonito. (había)', accept: ['había'] },
+    { id: 'p:pluscuamB1:recall', kind: 'recall', front: 'Can pluscuamperfecto stand alone without a second past reference point?', back: 'no — it always relates to another past event' }
+  ]
+},
+
+{
+  id: 'gr-posesivo-dativo-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:116', 'gramatica:B1:117', 'gramatica:B1:119'],
+  title: 'El dativo posesivo: le cortaron el pelo',
+  summary: 'With inalienable possession — body parts, close belongings someone else is handling — Spanish routinely swaps a possessive adjective for an indirect-object pronoun: le cortaron el pelo, never cortaron su pelo, because the "owner" is grammatically the person AFFECTED by the action.',
+  sections: [
+    { h: 'The substitution', html: '<i>Le cortaron el pelo al cero</i> — never <i>*Cortaron su pelo al cero</i>. The bare article (<i>el pelo</i>) plus a dative pronoun (<i>le</i>) replaces what a possessive would do in English.' },
+    { h: 'Generalizing the A2 rule', html: 'This extends A2\'s <i>me duele la cabeza</i> pattern to any verb where someone acts on another person\'s body or belongings: <i>¿Te hago la cama?</i>, <i>Me han reparado el coche</i>.' },
+    { h: 'When the tonic possessive survives: contrast', html: 'A possessive still appears in its full, tonic form specifically for CONTRAST: <i>Este cuadro no es el tuyo, es el mío</i> — distinguishing one owner from another, a different job than inalienable possession.' }
+  ],
+  contrasts: [
+    { es: 'Le cortaron el pelo al cero.', en: 'They shaved his head.', note: 'correct — dative pronoun + bare article' },
+    { es: '*Cortaron su pelo al cero.', en: '(sounds foreign)', note: 'a possessive here reads as a direct, unnatural translation from English' }
+  ],
+  pitfalls: [
+    'Whenever someone else acts ON a body part or closely-held possession, reach for the dative pronoun (<i>me/te/le/nos/os/les</i>) + bare article — not a possessive adjective.',
+    'The tonic possessive (<i>el mío, el tuyo</i>) survives specifically for CONTRAST between owners — a different function from the inalienable-possession rule.'
+  ],
+  examples: [
+    { es: '¿Te reviso el motor mientras esperas?', en: 'Shall I check your engine while you wait?' },
+    { es: 'Le rompieron el brazo jugando al rugby.', en: 'They broke his arm playing rugby.' },
+    { es: 'Ese abrigo no es el mío, es el suyo.', en: "That coat isn't mine, it's hers." }
+  ],
+  probes: [
+    { id: 'p:posdatB1:sustitucion', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Cortaron su pelo al cero.', 'Le cortaron el pelo al cero.', 'Cortaron el su pelo al cero.'], answer: 1 },
+    { id: 'p:posdatB1:contraste', kind: 'mcq', q: '"Ese abrigo no es el mío, es ___." (contraste — hers)',
+      options: ['su', 'el suyo', 'suyo'], answer: 1 },
+    { id: 'p:posdatB1:cloze', kind: 'cloze', text: '¿___ reviso el motor? (shall I [check] your...)', accept: ['te', 'Te'] },
+    { id: 'p:posdatB1:recall', kind: 'recall', front: 'With inalienable possession, what replaces the possessive adjective?', back: 'a dative pronoun (me/te/le...) + the bare article' }
+  ]
+},
+
+{
+  id: 'gr-modificadores-adverbios-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:583', 'gramatica:B1:584', 'gramatica:B1:585', 'gramatica:B1:586'],
+  title: 'Modificadores: el doble de, -mente, elativos',
+  summary: 'An elative adjective like enorme or gigantesco already sits at the top of its own scale — piling muy in front of it (*muy enorme) is exactly as redundant as English "very gigantic," since the word has nowhere higher left to climb.',
+  sections: [
+    { h: 'Multiplicativos', html: '<i>El doble de, el triple de</i> reprise B1\'s proportion vocabulary: <i>Cuesta el doble de lo que pensaba</i>.' },
+    { h: 'Elativos: incompatible with muy', html: '<i>Enorme, gigantesco, precioso, magnífico</i> already carry a built-in superlative force — <i>*muy enorme</i> is redundant, exactly like the <i>-ísimo</i> forms cannot combine with <i>muy</i> either.' },
+    { h: '-mente adverbs', html: 'Built from the FEMININE form of the adjective + <i>-mente</i>: <i>rápida → rápidamente</i>, <i>cuidadosa → cuidadosamente</i>. When two <i>-mente</i> adverbs are coordinated, only the LAST one keeps the suffix: <i>Habló clara y directamente</i>, not <i>*claramente y directamente</i>.' }
+  ],
+  contrasts: [
+    { es: 'Es un lugar enorme.', en: "It's an enormous place.", note: 'correct — enorme already at the top of its scale' },
+    { es: '*Es un lugar muy enorme.', en: '(redundant)', note: 'muy adds nothing an elative adjective doesn\'t already have' }
+  ],
+  pitfalls: [
+    'Never combine <i>muy</i> with an elative adjective (<i>enorme, gigantesco, precioso, magnífico</i>) — the redundancy is the same as English "very gigantic."',
+    'When coordinating two <i>-mente</i> adverbs, drop the suffix from all but the last one: <i>clara y directamente</i>, never <i>*claramente y directamente</i>.'
+  ],
+  examples: [
+    { es: 'El nuevo modelo cuesta el doble de caro.', en: 'The new model costs twice as much.' },
+    { es: 'Nos explicó todo lenta y claramente.', en: 'He explained everything slowly and clearly.' },
+    { es: 'Fue una experiencia realmente increíble.', en: 'It was a truly incredible experience.' }
+  ],
+  probes: [
+    { id: 'p:modifadv:elativo', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['muy enorme', 'enorme', 'muy muy enorme'], answer: 1 },
+    { id: 'p:modifadv:coordinar', kind: 'mcq', q: '"Slowly and clearly" (coordinando dos -mente):',
+      options: ['lentamente y claramente', 'lenta y claramente', 'lento y claramente'], answer: 1 },
+    { id: 'p:modifadv:cloze', kind: 'cloze', text: 'rápida → rápida___. (-mente adverb)', accept: ['mente'] },
+    { id: 'p:modifadv:recall', kind: 'recall', front: 'When coordinating two -mente adverbs, which one keeps the suffix?', back: 'only the last one' }
   ]
 }
 
