@@ -1852,6 +1852,138 @@ window.WRITING_TASKS = [
       { type: 'containsAny', words: ['porque', 'pero', 'y', 'también'] },
       { type: 'minWords', n: 30 }
     ],
-    models: ['Mirando atrás, habría estudiado algo diferente porque me interesa mucho la tecnología. También habría buscado experiencia antes de terminar la universidad, pero no puedo cambiar el pasado. Aun así, me gusta pensar en estas posibilidades.'] }
+    models: ['Mirando atrás, habría estudiado algo diferente porque me interesa mucho la tecnología. También habría buscado experiencia antes de terminar la universidad, pero no puedo cambiar el pasado. Aun así, me gusta pensar en estas posibilidades.'] },
+
+  // ==== batch 2: B1 (levels 4-5), final wave — build ====
+  { id: 'b-hope-rest-vosotros', type: 'build', level: 4, en: 'I hope you (vosotros) rest well.',
+    answer: 'Espero que descanséis bien.' },
+  { id: 'b-open-window-usted', type: 'build', level: 4, en: 'Open the window, please. (usted)',
+    answer: 'Abra la ventana, por favor.' },
+  { id: 'b-had-written-b1', type: 'build', level: 4, en: 'I had already written the letter.',
+    answer: 'Yo ya había escrito la carta.' },
+  { id: 'b-would-have-called-b1', type: 'build', level: 5, en: 'She would have called earlier.',
+    answer: 'Ella habría llamado antes.' },
+  { id: 'b-will-have-finished-course', type: 'build', level: 5, en: 'By July, they will have finished the course.',
+    answer: 'Para julio, ellos habrán terminado el curso.' },
+
+  // ==== batch 2: B1 (levels 4-5), final wave — translate ====
+  { id: 't-recommend-sleep-b1', type: 'translate', level: 4,
+    prompt: 'Translate: "I recommend that you (tú) sleep more."',
+    hint: 'te recomiendo que + subjunctive.',
+    constraints: [
+      { type: 'regex', pattern: 'recomiendo que', label: 'start with "te recomiendo que"' },
+      { type: 'anyVerbInTense', tense: 'presubj' }
+    ],
+    models: ['Te recomiendo que duermas más.'] },
+
+  { id: 't-doubt-know-answer', type: 'translate', level: 4,
+    prompt: 'Translate: "I doubt that they know the answer."',
+    hint: 'dudo que + subjunctive.',
+    constraints: [
+      { type: 'regex', pattern: 'dudo que', label: 'start with "dudo que"' },
+      { type: 'anyVerbInTense', tense: 'presubj' }
+    ],
+    models: ['Dudo que sepan la respuesta.'] },
+
+  { id: 't-if-had-money-b1', type: 'translate', level: 4,
+    prompt: 'Translate: "If I had more money, I would buy a house."',
+    hint: 'imperfect subjunctive + conditional.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'impsubj' },
+      { type: 'anyVerbInTense', tense: 'condicional' }
+    ],
+    models: ['Si tuviera más dinero, compraría una casa.'] },
+
+  { id: 't-had-arrived-before-call', type: 'translate', level: 4,
+    prompt: 'Translate: "By the time she called, I had already arrived."',
+    hint: 'pluscuamperfecto.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'plusc' }
+    ],
+    models: ['Cuando ella llamó, yo ya había llegado.'] },
+
+  { id: 't-will-have-read-book', type: 'translate', level: 5,
+    prompt: 'Translate: "By Friday, I will have read the whole book."',
+    hint: 'futuro perfecto.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'futperf' },
+      { type: 'person', person: 'yo' }
+    ],
+    models: ['Para el viernes, habré leído todo el libro.'] },
+
+  { id: 't-would-have-stayed-longer', type: 'translate', level: 5,
+    prompt: 'Translate: "With better weather, we would have stayed longer."',
+    hint: 'condicional perfecto (reflexive quedarse).',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'condperf' },
+      { type: 'person', person: 'nosotros' }
+    ],
+    models: ['Con mejor tiempo, nos habríamos quedado más tiempo.'] },
+
+  // ==== batch 2: B1 (levels 4-5), final wave — write ====
+  { id: 'w-advice-sleep', type: 'write', level: 4,
+    prompt: 'Give advice to a friend who can\'t sleep well, starting with "Te sugiero que…".',
+    hint: 'Subjunctive after sugerir que.',
+    constraints: [
+      { type: 'regex', pattern: 'sugiero que', label: 'start with "te sugiero que"' },
+      { type: 'anyVerbInTense', tense: 'presubj' }
+    ],
+    models: ['Te sugiero que dejes el móvil antes de dormir.', 'Te sugiero que apagues las luces antes.'] },
+
+  { id: 'w-command-vosotros-wait', type: 'write', level: 4,
+    prompt: 'Give a vosotros command telling a group to wait here.',
+    hint: 'vosotros imperative.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'imperativo' },
+      { type: 'minWords', n: 2 }
+    ],
+    models: ['Esperad aquí, por favor.'] },
+
+  { id: 'w-plusc-life-event', type: 'write', level: 4,
+    prompt: 'Say something you had never done before a specific moment in your life.',
+    hint: 'pluscuamperfecto.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'plusc' }
+    ],
+    models: ['Antes de ese verano, nunca había viajado sola.', 'Antes de mudarme, nunca había vivido lejos de mi familia.'] },
+
+  { id: 'w-futperf-career-decade', type: 'write', level: 5,
+    prompt: 'Say something you will have accomplished in your career in ten years.',
+    hint: 'habré + participio.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'futperf' },
+      { type: 'person', person: 'yo' }
+    ],
+    models: ['Dentro de diez años, habré logrado mis objetivos profesionales.'] },
+
+  { id: 'w-condperf-someone-else', type: 'write', level: 5,
+    prompt: 'Say what you would have decided in someone else\'s situation.',
+    hint: 'habría + participio.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'condperf' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['En su situación, yo habría tomado la misma decisión.'] },
+
+  // ==== batch 2: B1 (levels 4-5), final wave — paragraph ====
+  { id: 'p-plusc-memory', type: 'paragraph', level: 4,
+    prompt: 'Write a paragraph about a memory: what had already happened before something surprising occurred.',
+    hint: 'pluscuamperfecto, several times; connect ideas.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'plusc' },
+      { type: 'containsAny', words: ['porque', 'pero', 'y', 'cuando'] },
+      { type: 'minWords', n: 30 }
+    ],
+    models: ['Antes de aquel día, nunca había visto algo tan extraño. Ya habíamos terminado de cenar cuando escuchamos un ruido fuerte fuera. Salimos a mirar, pero no encontramos nada, y nunca supimos qué había sido.'] },
+
+  { id: 'p-perfsubj-hopes', type: 'paragraph', level: 5,
+    prompt: 'Write a paragraph expressing hopes about things that may have already happened, using pretérito perfecto de subjuntivo.',
+    hint: 'haya + participio, several times; connect ideas.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'perfsubj' },
+      { type: 'containsAny', words: ['porque', 'pero', 'y', 'también'] },
+      { type: 'minWords', n: 30 }
+    ],
+    models: ['Espero que todo haya salido bien en tu entrevista de trabajo. También espero que hayas dormido bien porque sé que estabas nerviosa. Ojalá que ya te hayan llamado con buenas noticias, pero si no, seguro que llegará pronto.'] }
 
 ];
