@@ -1420,5 +1420,11 @@ window.VERBS = [
 { inf:'extrañar', en:'to miss (a person/place), to find strange', type:'ar' },
 { inf:'desconectar', en:'to disconnect, to unplug', type:'ar' },
 { inf:'apetecer', en:'to feel like, to fancy (dative, like gustar)', type:'er' },
-{ inf:'decepcionar', en:'to disappoint', type:'ar' }
+{ inf:'decepcionar', en:'to disappoint', type:'ar' },
+{ inf:'durar', en:'to last', type:'ar' },
+{ inf:'denunciar', en:'to report (a crime), to denounce', type:'ar' },
+{ inf:'agradecer', en:'to thank, to be grateful for', type:'er' },
+{ inf:'sospechar', en:'to suspect', type:'ar' },
+{ inf:'verter', en:'to pour, to dump (waste)', type:'er', stem:'ie' },
+{ inf:'reflejar', en:'to reflect', type:'ar' }
 ];

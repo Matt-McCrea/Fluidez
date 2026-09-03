@@ -2686,6 +2686,245 @@ window.PASSAGES = [
     { type: 'short', q: '¿Qué no habían cambiado según el texto? (una palabra)', accept: ['amistades', 'sus amistades'] },
     { type: 'translate', line: 'Antes de este cambio, Pablo nunca había expresado sus verdaderos sentimientos por miedo a decepcionar a los demás.', model: 'Before this change, Pablo had never expressed his true feelings for fear of disappointing others.' }
   ]
+},
+
+{
+  id: 'piso-compartido', title: 'El piso compartido', level: 4,
+  text: 'Cuando Laura empezó a buscar piso en la ciudad, sus padres le recomendaron que compartiera vivienda con otras personas para ahorrar dinero. Antes de mudarse, Laura nunca había vivido con desconocidos, así que tenía muchas dudas. Sus nuevas compañeras de piso le pidieron que respetara ciertas normas básicas, como limpiar la cocina después de cocinar. Es normal que al principio cueste adaptarse a vivir con gente nueva, le explicó una de ellas. Con el tiempo, Laura descubrió que sus compañeras se habían convertido en buenas amigas. Ahora espera que esta convivencia dure hasta que termine sus estudios.',
+  gloss: [
+    { es: 'desconocidos', en: 'strangers' },
+    { es: 'normas', en: 'rules' },
+    { es: 'convivencia', en: 'living together' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le recomendaron los padres de Laura?', options: ['Que compartiera vivienda con otras personas', 'Que viviera sola', 'Que se quedara en casa'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le pidieron sus compañeras de piso?', options: ['Que respetara ciertas normas básicas', 'Que pagara todo el alquiler', 'Que se mudara pronto'], answer: 0 },
+    { type: 'short', q: '¿En qué se convirtieron las compañeras de piso? (dos palabras)', accept: ['buenas amigas', 'en buenas amigas'] },
+    { type: 'translate', line: 'Con el tiempo, Laura descubrió que sus compañeras se habían convertido en buenas amigas.', model: 'Over time, Laura discovered that her flatmates had become good friends.' }
+  ]
+},
+
+{
+  id: 'compra-falsa-internet', title: 'Una compra que no era lo que parecía', level: 5,
+  text: 'El mes pasado, Iván compró unas zapatillas deportivas muy baratas en una página web desconocida. Cuando llegó el paquete, descubrió que las zapatillas eran falsas y de muy mala calidad. Para cuando intentó reclamar, la página web ya habrá desaparecido de internet sin dejar rastro. Iván dudaba que pudiera recuperar su dinero, pero decidió denunciarlo de todas formas. Los expertos en seguridad recomiendan que la gente compre solo en páginas web conocidas y de confianza. Una tienda oficial le habría costado más, pero le habría ahorrado todos estos problemas.',
+  gloss: [
+    { es: 'rastro', en: 'trace' },
+    { es: 'denunciarlo', en: 'to report it' },
+    { es: 'de confianza', en: 'trustworthy' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué descubrió Iván cuando llegó el paquete?', options: ['Que las zapatillas eran falsas', 'Que el paquete estaba vacío', 'Que había pagado dos veces'], answer: 0 },
+    { type: 'mcq', q: '¿Qué recomiendan los expertos en seguridad?', options: ['Comprar solo en páginas web conocidas', 'No comprar nunca por internet', 'Pagar siempre en efectivo'], answer: 0 },
+    { type: 'short', q: '¿Qué decidió hacer Iván de todas formas? (una palabra)', accept: ['denunciarlo', 'denunciar'] },
+    { type: 'translate', line: 'Una tienda oficial le habría costado más, pero le habría ahorrado todos estos problemas.', model: 'An official shop would have cost him more, but it would have saved him all these problems.' }
+  ]
+},
+
+{
+  id: 'examen-fecha-cambiada', title: 'El examen que cambió de fecha', level: 4,
+  text: 'La semana pasada, la universidad anunció que el examen final se cambiaba de fecha por un problema técnico. Muchos estudiantes se alegraron de que les dieran una semana más para estudiar. Antes de este cambio, algunos ya habían empezado a estudiar de forma muy intensiva, casi sin dormir. El profesor pidió que todos revisaran el nuevo horario en la plataforma online. Es comprensible que algunos estudiantes se sintieran confundidos con tantos cambios de última hora. Al final, la mayoría agradeció tener más tiempo para prepararse mejor.',
+  gloss: [
+    { es: 'plataforma', en: 'platform' },
+    { es: 'de última hora', en: 'last-minute' },
+    { es: 'agradeció', en: 'was grateful for' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué se cambió la fecha del examen?', options: ['Por un problema técnico', 'Porque el profesor estaba enfermo', 'Porque nevó mucho'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pidió el profesor?', options: ['Que todos revisaran el nuevo horario', 'Que dejaran de estudiar', 'Que cambiaran de aula'], answer: 0 },
+    { type: 'short', q: '¿Qué agradeció la mayoría al final? (dos palabras)', accept: ['más tiempo', 'tener más tiempo'] },
+    { type: 'translate', line: 'Es comprensible que algunos estudiantes se sintieran confundidos con tantos cambios de última hora.', model: "It's understandable that some students felt confused with so many last-minute changes." }
+  ]
+},
+
+{
+  id: 'teletrabajo-permanente', title: 'El teletrabajo permanente', level: 5,
+  text: 'Después de la pandemia, muchas empresas decidieron que sus empleados podrían seguir trabajando desde casa para siempre. Antes de este cambio, casi nadie en la empresa de Marcos había trabajado nunca fuera de la oficina. Al principio, algunos jefes dudaban que la gente fuera igual de productiva sin supervisión directa. Para el final del primer año, la empresa ya habrá ahorrado bastante dinero en gastos de oficina. Los empleados esperan que esta flexibilidad se mantenga aunque cambien de director en el futuro. Sin esta medida, muchos empleados probablemente habrían buscado trabajo en otra empresa.',
+  gloss: [
+    { es: 'supervisión', en: 'supervision' },
+    { es: 'gastos', en: 'expenses' },
+    { es: 'flexibilidad', en: 'flexibility' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué decidieron muchas empresas después de la pandemia?', options: ['Que los empleados podrían seguir trabajando desde casa', 'Que todos volvieran a la oficina', 'Que se redujeran los sueldos'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dudaban algunos jefes al principio?', options: ['Que la gente fuera igual de productiva sin supervisión', 'Que los empleados quisieran trabajar desde casa', 'Que la empresa ahorrara dinero'], answer: 0 },
+    { type: 'short', q: '¿En qué habrá ahorrado dinero la empresa? (dos palabras)', accept: ['gastos de oficina', 'en gastos de oficina'] },
+    { type: 'translate', line: 'Sin esta medida, muchos empleados probablemente habrían buscado trabajo en otra empresa.', model: 'Without this measure, many employees would probably have looked for work at another company.' }
+  ]
+},
+
+{
+  id: 'alergia-tardia', title: 'Una alergia descubierta tarde', level: 5,
+  text: 'Durante años, Elena sufría dolores de estómago sin que ningún médico encontrara la causa exacta. Finalmente, un especialista le recomendó que hiciera unas pruebas específicas de alergias a ciertos alimentos. Antes de este diagnóstico, Elena nunca había relacionado sus síntomas con algo que comía habitualmente. Resultó que era alérgica al gluten, algo que nadie había sospechado antes. Es increíble que haya tardado tantos años en descubrir algo tan importante para su salud. Ahora sigue una dieta especial y dice que se siente mucho mejor que antes.',
+  gloss: [
+    { es: 'diagnóstico', en: 'diagnosis' },
+    { es: 'alérgica', en: 'allergic' },
+    { es: 'el gluten', en: 'gluten' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le recomendó el especialista?', options: ['Que hiciera pruebas de alergias a ciertos alimentos', 'Que dejara de comer del todo', 'Que tomara más medicinas'], answer: 0 },
+    { type: 'mcq', q: '¿A qué resultó ser alérgica Elena?', options: ['Al gluten', 'A los lácteos', 'Al marisco'], answer: 0 },
+    { type: 'short', q: '¿Cómo se siente Elena ahora? (una palabra)', accept: ['mejor', 'mucho mejor'] },
+    { type: 'translate', line: 'Es increíble que haya tardado tantos años en descubrir algo tan importante para su salud.', model: 'It is incredible that it took her so many years to discover something so important for her health.' }
+  ]
+},
+
+{
+  id: 'vacuna-a-tiempo', title: 'La vacuna que llegó a tiempo', level: 5,
+  text: 'Cuando empezó la epidemia, los científicos dudaban que pudieran desarrollar una vacuna eficaz en menos de un año. Sin embargo, para sorpresa de todos, los laboratorios ya habrán completado las pruebas necesarias antes de lo esperado. Muchos gobiernos habían invertido grandes cantidades de dinero en la investigación desde el principio. Los expertos creen que sin esa inversión temprana, el proceso habría tardado mucho más tiempo. Ahora esperan que esta experiencia sirva para prepararse mejor ante futuras epidemias. Es admirable que la ciencia haya logrado algo así en tan poco tiempo.',
+  gloss: [
+    { es: 'epidemia', en: 'epidemic' },
+    { es: 'eficaz', en: 'effective' },
+    { es: 'inversión', en: 'investment' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué dudaban los científicos al principio?', options: ['Que pudieran desarrollar la vacuna en menos de un año', 'Que la epidemia fuera grave', 'Que la gente se vacunara'], answer: 0 },
+    { type: 'mcq', q: '¿Qué habían hecho muchos gobiernos desde el principio?', options: ['Invertir grandes cantidades de dinero', 'Cerrar las fronteras', 'Ignorar la epidemia'], answer: 0 },
+    { type: 'short', q: '¿Para qué esperan que sirva esta experiencia? (dos palabras)', accept: ['prepararse mejor', 'para prepararse mejor'] },
+    { type: 'translate', line: 'Los expertos creen que sin esa inversión temprana, el proceso habría tardado mucho más tiempo.', model: 'Experts believe that without that early investment, the process would have taken much longer.' }
+  ]
+},
+
+{
+  id: 'rio-con-peces', title: 'El río que volvió a tener peces', level: 5,
+  text: 'Hace veinte años, el río que cruza mi ciudad estaba tan contaminado que no vivía ningún pez en sus aguas. Las autoridades locales pidieron que las fábricas cercanas dejaran de verter residuos directamente al agua. Antes de esta ley, muchas empresas nunca habían tenido que preocuparse por el impacto ambiental de sus actividades. Es sorprendente que, después de tantos años de limpieza, el río haya vuelto a tener vida. Los pescadores de la zona esperan que pronto se pueda pescar allí de nuevo. Ahora, ver patos y peces en el río ya no sorprende a nadie.',
+  gloss: [
+    { es: 'contaminado', en: 'polluted' },
+    { es: 'residuos', en: 'waste' },
+    { es: 'impacto ambiental', en: 'environmental impact' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo estaba el río hace veinte años?', options: ['Muy contaminado', 'Muy limpio', 'Seco'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pidieron las autoridades locales?', options: ['Que las fábricas dejaran de verter residuos', 'Que se cerraran las fábricas', 'Que se prohibiera pescar'], answer: 0 },
+    { type: 'short', q: '¿Qué ya no sorprende a nadie ahora? (dos palabras)', accept: ['patos y peces', 'ver patos y peces'] },
+    { type: 'translate', line: 'Es sorprendente que, después de tantos años de limpieza, el río haya vuelto a tener vida.', model: 'It is surprising that, after so many years of cleanup, the river has come back to life.' }
+  ]
+},
+
+{
+  id: 'podcast-famoso', title: 'El podcast que se hizo famoso', level: 4,
+  text: 'Hace dos años, dos amigas empezaron a grabar un podcast sobre historia desde el salón de una de ellas. Nadie esperaba que un proyecto tan sencillo se convirtiera en uno de los más escuchados del país. Antes de este éxito, ambas ya habían intentado otros proyectos que no funcionaron tan bien. Ahora reciben mensajes de oyentes de toda Latinoamérica y España, algo que nunca imaginaron. Es emocionante que la gente comparta sus propias historias familiares después de cada episodio. Esperan que este proyecto les permita dejar sus trabajos actuales el próximo año.',
+  gloss: [
+    { es: 'oyentes', en: 'listeners' },
+    { es: 'episodio', en: 'episode' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Sobre qué tema es el podcast?', options: ['Historia', 'Cocina', 'Deportes'], answer: 0 },
+    { type: 'mcq', q: '¿Qué reciben ahora las amigas?', options: ['Mensajes de oyentes de toda Latinoamérica y España', 'Premios internacionales', 'Ofertas de trabajo en televisión'], answer: 0 },
+    { type: 'short', q: '¿Qué esperan poder dejar el próximo año? (dos palabras)', accept: ['sus trabajos', 'sus trabajos actuales'] },
+    { type: 'translate', line: 'Antes de este éxito, ambas ya habían intentado otros proyectos que no funcionaron tan bien.', model: 'Before this success, both of them had already tried other projects that did not work out so well.' }
+  ]
+},
+
+{
+  id: 'mural-barrio', title: 'Un mural en el barrio', level: 4,
+  text: 'El ayuntamiento pidió a varios artistas locales que pintaran un mural en la fachada de un edificio abandonado. Antes de este proyecto, esa pared llevaba años cubierta de pintadas sin ningún sentido artístico. Algunos vecinos dudaban que un mural pudiera cambiar realmente el aspecto del barrio. Sin embargo, después de dos semanas de trabajo, el resultado sorprendió a todos por su belleza y color. Es maravilloso que el arte pueda transformar así un espacio olvidado, comentó una vecina emocionada. Ahora el mural se ha convertido en un lugar popular para hacerse fotos.',
+  gloss: [
+    { es: 'fachada', en: 'facade' },
+    { es: 'pintadas', en: 'graffiti' },
+    { es: 'olvidado', en: 'forgotten' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pidió el ayuntamiento a los artistas locales?', options: ['Que pintaran un mural', 'Que limpiaran el edificio', 'Que lo derribaran'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dudaban algunos vecinos?', options: ['Que un mural pudiera cambiar el aspecto del barrio', 'Que los artistas terminaran a tiempo', 'Que el ayuntamiento pagara el proyecto'], answer: 0 },
+    { type: 'short', q: '¿En qué se ha convertido el mural ahora? (dos palabras)', accept: ['lugar popular', 'un lugar popular'] },
+    { type: 'translate', line: 'Sin embargo, después de dos semanas de trabajo, el resultado sorprendió a todos por su belleza y color.', model: 'However, after two weeks of work, the result surprised everyone with its beauty and color.' }
+  ]
+},
+
+{
+  id: 'referendum-local', title: 'El referéndum local', level: 4,
+  text: 'El próximo domingo, los vecinos de mi pueblo votarán en un referéndum para decidir si se construye un nuevo polideportivo. El alcalde pidió que todos los ciudadanos participaran, independientemente de su opinión. Antes de convocar la votación, el ayuntamiento ya había organizado varias reuniones informativas para explicar el proyecto. Algunos vecinos dudan que el pueblo necesite realmente una instalación tan grande y cara. Es importante que la decisión final refleje lo que quiere la mayoría, según explicó el alcalde. El resultado se conocerá esa misma noche, después de contar todos los votos.',
+  gloss: [
+    { es: 'polideportivo', en: 'sports center' },
+    { es: 'convocar', en: 'to call (a vote)' },
+    { es: 'instalación', en: 'facility' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué decidirán los vecinos en el referéndum?', options: ['Si se construye un nuevo polideportivo', 'Quién será el próximo alcalde', 'Si suben los impuestos'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pidió el alcalde?', options: ['Que todos los ciudadanos participaran', 'Que nadie votara', 'Que se cancelara el referéndum'], answer: 0 },
+    { type: 'short', q: '¿Cuándo se conocerá el resultado? (dos palabras)', accept: ['esa misma noche', 'esa noche'] },
+    { type: 'translate', line: 'Es importante que la decisión final refleje lo que quiere la mayoría, según explicó el alcalde.', model: 'It is important that the final decision reflect what the majority wants, the mayor explained.' }
+  ]
+},
+
+{
+  id: 'boda-dos-religiones', title: 'Una boda de dos religiones', level: 5,
+  text: 'Cuando Laila y David decidieron casarse, tuvieron que organizar una boda que respetara las tradiciones de sus dos religiones diferentes. Sus familias dudaban al principio que fuera posible combinar ambas ceremonias sin problemas. Antes de la boda, la pareja ya había hablado con líderes religiosos de ambas comunidades para pedir consejo. Para el día de la boda, ya habrán preparado dos ceremonias distintas seguidas de una gran celebración conjunta. Es bonito que el amor pueda unir tradiciones tan diferentes, dijo la madre de Laila entre lágrimas. Ahora ambas familias esperan que esta boda sirva de ejemplo para otras parejas parecidas.',
+  gloss: [
+    { es: 'ceremonias', en: 'ceremonies' },
+    { es: 'líderes religiosos', en: 'religious leaders' },
+    { es: 'entre lágrimas', en: 'in tears' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tuvieron que organizar Laila y David?', options: ['Una boda que respetara sus dos religiones', 'Una boda muy pequeña', 'Una boda sin familia'], answer: 0 },
+    { type: 'mcq', q: '¿Con quién había hablado la pareja antes de la boda?', options: ['Con líderes religiosos de ambas comunidades', 'Con un abogado', 'Con un fotógrafo'], answer: 0 },
+    { type: 'short', q: '¿Qué esperan las familias que haga esta boda? (dos palabras)', accept: ['servir de ejemplo', 'que sirva de ejemplo'] },
+    { type: 'translate', line: 'Es bonito que el amor pueda unir tradiciones tan diferentes, dijo la madre de Laila entre lágrimas.', model: "It is lovely that love can unite such different traditions, Laila's mother said in tears." }
+  ]
+},
+
+{
+  id: 'amigos-por-internet', title: 'Amigos por internet', level: 4,
+  text: 'Hace cinco años, Marta conoció a su mejor amiga actual en un foro de internet sobre libros. Al principio, sus padres dudaban que una amistad así pudiera ser tan real como una hecha en persona. Antes de conocerse en persona, ya habían hablado todos los días durante casi dos años. Cuando por fin se vieron cara a cara, sintieron como si ya se conocieran de toda la vida. Es curioso que, hoy en día, muchas amistades importantes empiecen de esta forma tan distinta. Ahora viven en países diferentes, pero siguen hablando casi todos los días.',
+  gloss: [
+    { es: 'foro', en: 'forum' },
+    { es: 'cara a cara', en: 'face to face' },
+    { es: 'amistades', en: 'friendships' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde conoció Marta a su mejor amiga?', options: ['En un foro de internet sobre libros', 'En la universidad', 'En un viaje'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dudaban los padres de Marta al principio?', options: ['Que una amistad así pudiera ser tan real', 'Que Marta leyera tanto', 'Que se conocieran algún día'], answer: 0 },
+    { type: 'short', q: '¿Cuánto tiempo habían hablado antes de conocerse en persona? (dos palabras)', accept: ['dos años', 'casi dos años'] },
+    { type: 'translate', line: 'Es curioso que, hoy en día, muchas amistades importantes empiecen de esta forma tan distinta.', model: 'It is curious that, nowadays, many important friendships start in this very different way.' }
+  ]
+},
+
+{
+  id: 'tienda-solo-efectivo', title: 'La tienda que solo acepta efectivo', level: 4,
+  text: 'En pleno centro de la ciudad, todavía existe una tienda de ultramarinos que solo acepta pagos en efectivo. El dueño explica que nunca ha querido depender de las tarjetas ni de las comisiones de los bancos. Muchos clientes jóvenes se sorprenden de que un negocio pueda funcionar así en pleno siglo veintiuno. Antes de esta política, el dueño ya había probado a instalar un datáfono, pero decidió quitarlo pronto. Es interesante que algunos clientes prefieran pagar en efectivo precisamente por esta rareza. El dueño espera que su nieto continúe con esta tradición cuando se jubile.',
+  gloss: [
+    { es: 'ultramarinos', en: 'grocery store' },
+    { es: 'comisiones', en: 'fees' },
+    { es: 'datáfono', en: 'card reader' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué acepta esta tienda como pago?', options: ['Solo efectivo', 'Solo tarjeta', 'Solo transferencias'], answer: 0 },
+    { type: 'mcq', q: '¿Qué había probado el dueño antes?', options: ['Instalar un datáfono', 'Cerrar la tienda', 'Subir los precios'], answer: 0 },
+    { type: 'short', q: '¿Quién espera el dueño que continúe la tradición? (una palabra)', accept: ['nieto', 'su nieto'] },
+    { type: 'translate', line: 'Muchos clientes jóvenes se sorprenden de que un negocio pueda funcionar así en pleno siglo veintiuno.', model: 'Many young customers are surprised that a business can operate like this in the middle of the twenty-first century.' }
+  ]
+},
+
+{
+  id: 'volver-pais-veinte-anos', title: 'Volver al país después de veinte años', level: 5,
+  text: 'Después de veinte años viviendo en el extranjero, Carlos por fin decidió volver a vivir a su país de origen. Sus amigos de la infancia no esperaban que cambiara tan poco a pesar del tiempo. Antes de este regreso, Carlos ya había visitado el país varias veces de vacaciones, pero nunca para quedarse. Al principio, le costó reconocer algunas calles que habían cambiado completamente. Para cuando lleve un año viviendo allí de nuevo, ya habrá recuperado casi todas sus antiguas costumbres. Es emocionante que, después de tanto tiempo fuera, todavía sienta ese lugar como su verdadero hogar.',
+  gloss: [
+    { es: 'en el extranjero', en: 'abroad' },
+    { es: 'el regreso', en: 'the return' },
+    { es: 'costumbres', en: 'habits, customs' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto tiempo vivió Carlos en el extranjero?', options: ['Veinte años', 'Diez años', 'Cinco años'], answer: 0 },
+    { type: 'mcq', q: '¿Qué no esperaban sus amigos de la infancia?', options: ['Que cambiara tan poco', 'Que volviera algún día', 'Que trajera regalos'], answer: 0 },
+    { type: 'short', q: '¿Qué le costó reconocer al principio? (una palabra)', accept: ['calles', 'algunas calles'] },
+    { type: 'translate', line: 'Es emocionante que, después de tanto tiempo fuera, todavía sienta ese lugar como su verdadero hogar.', model: 'It is moving that, after so much time away, he still feels that place is his true home.' }
+  ]
+},
+
+{
+  id: 'club-lectura-inesperado', title: 'Un club de lectura inesperado', level: 4,
+  text: 'Mi vecino de setenta años, que nunca había leído una novela en su vida, decidió apuntarse a un club de lectura del barrio. Al principio, los demás miembros dudaban que fuera a durar más de una reunión. Antes de este club, mi vecino solo leía el periódico y algún artículo de vez en cuando. Ahora lee un libro entero cada dos semanas y siempre tiene opiniones muy interesantes que compartir. Es bonito que nunca sea demasiado tarde para descubrir una nueva afición, dice siempre con una sonrisa. El grupo espera que él recomiende el próximo libro que van a leer juntos.',
+  gloss: [
+    { es: 'apuntarse', en: 'to sign up' },
+    { es: 'afición', en: 'hobby' },
+    { es: 'de vez en cuando', en: 'now and then' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿A qué decidió apuntarse el vecino de setenta años?', options: ['A un club de lectura del barrio', 'A un gimnasio', 'A clases de baile'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dudaban los demás miembros al principio?', options: ['Que fuera a durar más de una reunión', 'Que supiera leer bien', 'Que tuviera tiempo libre'], answer: 0 },
+    { type: 'short', q: '¿Cada cuánto lee un libro entero ahora? (dos palabras)', accept: ['dos semanas', 'cada dos semanas'] },
+    { type: 'translate', line: 'Es bonito que nunca sea demasiado tarde para descubrir una nueva afición, dice siempre con una sonrisa.', model: 'It is lovely that it is never too late to discover a new hobby, he always says with a smile.' }
+  ]
 }
 
 ];
