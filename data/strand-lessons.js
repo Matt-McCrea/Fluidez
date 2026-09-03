@@ -7262,6 +7262,466 @@ window.STRAND_LESSONS = [
     { id: 'p:valorar:cloze', kind: 'cloze', text: 'El ejercicio es un poco ___. (difficult)', accept: ['difícil'] },
     { id: 'p:valorar:recall', kind: 'recall', front: 'The four quick one-word verdicts for "how was it?"', back: 'bien, mal, regular, así así' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — A2 grammar, seq 89-128 of spec/syllabus-draft.json.
+ * Skipped: gram-a2-cuantificadores-propios (seq 103) — a pure taxonomy
+ * header (numerals / universal / non-universal / gradative / ordinal
+ * quantifiers); every one of those children already has its own dedicated
+ * lesson (gr-numerales-a1, gr-cuantificadores-a2, gr-cuantificadores-
+ * no-universales-a1, and gr-comparativos-a2 below for gradativos). Nothing
+ * new to teach under the header itself.
+ * ========================================================================== */
+{
+  id: 'gr-masculino-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:28', 'gramatica:A2:29', 'gramatica:A2:30'],
+  title: 'Más sustantivos masculinos: colores y casos aislados',
+  summary: 'A color word naming the COLOR ITSELF, not describing a noun, is always masculine — el rosa, el naranja — which is a different fact from whether that same word changes for gender when it describes something, which most basic colors do not.',
+  sections: [
+    { h: 'Colors as nouns', html: 'When a color word names the color itself rather than describing something, it is masculine: <i>El rosa es un color muy suave</i>, <i>Prefiero el azul al verde</i>. This holds regardless of the color\'s behavior as an adjective.' },
+    { h: 'Reinforcing -ma nouns', html: 'The Greek-origin <i>-ma</i> nouns already met (<i>el problema, el tema, el programa, el sistema</i>) belong to this same masculine-despite-appearances family.' },
+    { h: 'Isolated cases', html: '<i>El día</i> does not even fit the <i>-ma</i> pattern — it is simply memorized as its own exception, alongside the handful already learned.' }
+  ],
+  contrasts: [
+    { es: 'El rosa es un color muy suave.', en: 'Pink is a very soft color.', note: 'rosa as a noun (the color itself) — masculine' },
+    { es: 'Una camisa rosa.', en: 'A pink shirt.', note: 'rosa as an adjective — invariable, a separate fact from the noun\'s gender' },
+    { es: 'El día empieza a las siete.', en: 'The day starts at seven.', note: 'isolated masculine exception' }
+  ],
+  pitfalls: [
+    'A color used as a noun (naming the color) is masculine even though many basic color words look like they could take either gender.',
+    'Do not confuse a color\'s gender AS A NOUN with its (usually invariable) behavior as an adjective — two separate questions.'
+  ],
+  examples: [
+    { es: 'El naranja combina bien con el azul.', en: 'Orange goes well with blue.' },
+    { es: 'El problema no tiene una solución fácil.', en: "The problem doesn't have an easy solution." },
+    { es: 'Mi color favorito es el verde.', en: 'My favorite color is green.' }
+  ],
+  probes: [
+    { id: 'p:masc2:color', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['la rosa es un color suave', 'el rosa es un color suave', 'los rosa es un color suave'], answer: 1 },
+    { id: 'p:masc2:ma', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['la problema', 'el problema', 'los problema'], answer: 1 },
+    { id: 'p:masc2:cloze', kind: 'cloze', text: '___ día empieza a las siete.', accept: ['El', 'el'] },
+    { id: 'p:masc2:recall', kind: 'recall', front: 'Is a color word, used as a noun for the color itself, masculine or feminine?', back: 'masculine — el rosa, el naranja, el verde' }
+  ]
+},
+
+{
+  id: 'gr-articulo-definido-distribucion-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:82', 'gramatica:A2:83', 'gramatica:A2:84', 'gramatica:A2:90', 'gramatica:A2:91', 'gramatica:A2:93', 'gramatica:A2:94'],
+  title: 'El artículo definido: el agua, jugar al tenis, todos los libros',
+  summary: 'El agua looks masculine but is not — Spanish swaps la for el only to avoid two stressed a-sounds colliding, and the noun stays feminine underneath, as its plural (las aguas) immediately reveals.',
+  sections: [
+    { h: 'El before a stressed a-', html: 'A feminine noun starting with a STRESSED <i>a-</i> sound takes <i>el</i> in the singular purely to avoid the clash of <i>la agua</i>: <i>el agua, el aula</i>. It is still feminine — the plural reverts to <i>las</i> and any adjective stays feminine: <i>el agua fría, las aguas frías</i>.' },
+    { h: 'Obligatory with leisure activities', html: 'Naming a sport or game as what you play always keeps the article: <i>Juego al tenis</i>, never <i>*Juego tenis</i>.' },
+    { h: 'Position with todo and a numeral', html: '<i>Todo</i> goes BEFORE the article, never after: <i>todos los libros</i>, not <i>*los todos libros</i>. A numeral can follow the article without trouble: <i>los dos amigos</i>.' }
+  ],
+  contrasts: [
+    { es: 'el agua fría / las aguas frías', en: 'the cold water / the cold waters', note: 'still feminine — el is only there to avoid the a-a clash' },
+    { es: 'Juego al fútbol los sábados.', en: 'I play football on Saturdays.', note: 'jugar a + article is obligatory' },
+    { es: 'todos los libros', en: 'all the books', note: 'todo before the article, never after' }
+  ],
+  pitfalls: [
+    'El before a stressed a- does not make the noun masculine — check the plural or an adjective if you are unsure: <i>el águila negra</i>, not <i>*el águila negro</i>.',
+    '<i>Todo</i> can never follow the article it combines with: <i>*los todos libros</i> is always wrong.',
+    'Naming a sport/game after <i>jugar a</i> drops the article only informally in some regions — the neutral, taught form keeps it: <i>jugar al tenis</i>.'
+  ],
+  examples: [
+    { es: 'El agua de este río está muy fría.', en: 'The water in this river is very cold.' },
+    { es: '¿Juegas al ajedrez?', en: 'Do you play chess?' },
+    { es: 'Invité a todos los compañeros de la clase.', en: 'I invited all the classmates.' }
+  ],
+  probes: [
+    { id: 'p:artdefdist:genero', kind: 'mcq', q: '"El agua está muy ___." (cold, femenino)',
+      options: ['frío', 'fría', 'fríos'], answer: 1 },
+    { id: 'p:artdefdist:jugar', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Juego tenis.', 'Juego al tenis.', 'Juego un tenis.'], answer: 1 },
+    { id: 'p:artdefdist:todo', kind: 'cloze', text: '___ los libros están aquí. (all)', accept: ['Todos', 'todos'] },
+    { id: 'p:artdefdist:recall', kind: 'recall', front: 'Does el agua change agua\'s gender to masculine?', back: 'no — still feminine (las aguas, el agua fría); el only avoids the a-a clash' }
+  ]
+},
+
+{
+  id: 'gr-posesivos-tonicos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:152', 'gramatica:A2:153', 'gramatica:A2:154', 'gramatica:A2:156', 'gramatica:A2:158', 'gramatica:A2:159', 'gramatica:A2:160', 'gramatica:A2:162'],
+  title: 'Los posesivos tónicos: mío, tuyo, suyo',
+  summary: 'Unlike mi/tu/su, which only ever track what is owned, the tónico forms mío/tuyo/suyo agree in BOTH gender and number — and they can do something the short forms never can: stand in for the noun entirely, with just an article, or answer a question completely alone.',
+  sections: [
+    { h: 'A second, fuller set of forms', html: '<i>Mío/a/os/as, tuyo/a/os/as, suyo/a/os/as</i> — one owner, agreeing in gender and number with the thing owned, the way <i>nuestro/vuestro</i> already did.' },
+    { h: 'Standing in for the noun', html: 'With the article and no noun, these replace a whole noun phrase: <i>Ese abrigo no está mal, pero prefiero el mío</i> ("mine") — <i>el mío</i> means "my [abrigo]" without repeating the word.' },
+    { h: 'Bare, as a one-word answer', html: 'Answering a direct question, the tónico form can stand completely alone, no article: <i>—¿De quién es este libro? —Mío.</i>' }
+  ],
+  contrasts: [
+    { es: 'mi libro', en: 'my book', note: 'átono — before the noun, only agrees in number' },
+    { es: 'el libro mío / el mío', en: 'my book / mine', note: 'tónico — after the noun, or replacing it with the article' },
+    { es: '—¿De quién es esto? —Mío.', en: '—Whose is this? —Mine.', note: 'bare tónico, no article, as a short answer' }
+  ],
+  pitfalls: [
+    'To replace a noun entirely ("mine"), the tónico form needs its article: <i>el mío</i>, not a bare <i>mío</i> — the article drops only in a short answer to a direct question.',
+    'Never combine the article with an átono possessive: <i>el mi libro</i> is always wrong — that combination belongs to the tónico system (<i>el mío</i>), not the átono one.'
+  ],
+  examples: [
+    { es: 'Mi coche es azul; el tuyo es rojo.', en: 'My car is blue; yours is red.' },
+    { es: '—¿Estas llaves son tuyas? —Sí, son mías.', en: '—Are these keys yours? —Yes, they\'re mine.' },
+    { es: 'Nuestra casa es pequeña, pero la suya es enorme.', en: 'Our house is small, but theirs is huge.' }
+  ],
+  probes: [
+    { id: 'p:poston:sustitucion', kind: 'mcq', q: '"Ese abrigo no está mal, pero prefiero ___." (mine)',
+      options: ['mi', 'el mío', 'mío'], answer: 1 },
+    { id: 'p:poston:respuesta', kind: 'mcq', q: '—¿De quién es este libro? —___',
+      options: ['El mío.', 'Mío.', 'Mi.'], answer: 1 },
+    { id: 'p:poston:cloze', kind: 'cloze', text: 'Mi coche es azul; ___ es rojo. (yours)', accept: ['el tuyo'] },
+    { id: 'p:poston:recall', kind: 'recall', front: 'Unlike mi/tu/su, what do the tónico possessives (mío/tuyo/suyo) agree in?', back: 'both gender AND number' }
+  ]
+},
+
+{
+  id: 'gr-comparativos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:188', 'gramatica:A2:189', 'gramatica:A2:190'],
+  title: 'Comparativos: más... que, tan... como',
+  summary: 'Tan and tanto both build an equality comparison, but they are not interchangeable: tan stands before an adjective or adverb, while tanto is the one that touches a noun — and only then does it need to agree.',
+  sections: [
+    { h: 'Superiority and inferiority: más/menos... que', html: '<i>Más/menos</i> + adjective, adverb or noun + <i>que</i>: <i>Juan es más alto que yo</i>, <i>Tengo menos tiempo que tú</i>.' },
+    { h: 'Equality with an adjective or adverb: tan... como', html: '<i>Tan</i> + adjective/adverb + <i>como</i>, always invariable: <i>Juan es tan alto como yo</i>.' },
+    { h: 'Equality with a noun or a verb: tanto... como', html: 'As a determiner before a noun, <i>tanto</i> agrees: <i>tanto dinero, tanta gente, tantos libros, tantas casas</i> + <i>como</i>. Modifying a VERB instead, it stays invariable: <i>Juan corre tanto como yo</i>.' }
+  ],
+  contrasts: [
+    { es: 'Juan es más alto que yo.', en: "Juan is taller than me.", note: 'superiority, adjective' },
+    { es: 'Juan es tan alto como yo.', en: 'Juan is as tall as me.', note: 'equality — tan before an adjective, invariable' },
+    { es: 'Tengo tantos libros como tú.', en: 'I have as many books as you.', note: 'equality — tanto agrees with the noun it quantifies' },
+    { es: 'Juan corre tanto como yo.', en: 'Juan runs as much as I do.', note: 'tanto modifying the verb correr — invariable here' }
+  ],
+  pitfalls: [
+    '<i>Tan</i> never goes directly before a noun — that is <i>tanto/a/os/as</i>\'s job: <i>tanta gente</i>, not <i>*tan gente</i>.',
+    '<i>Tanto</i> agrees only when it quantifies a noun (<i>tantos libros</i>); modifying a verb it never changes (<i>corre tanto</i>).'
+  ],
+  examples: [
+    { es: 'Este examen es más difícil que el anterior.', en: 'This exam is harder than the previous one.' },
+    { es: 'No tengo tanto dinero como pensaba.', en: "I don't have as much money as I thought." },
+    { es: 'Ella trabaja tanto como su hermano.', en: 'She works as much as her brother.' }
+  ],
+  probes: [
+    { id: 'p:compar:tan', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['tan gente', 'tanta gente', 'tanto gente'], answer: 1 },
+    { id: 'p:compar:tanto', kind: 'mcq', q: '"Juan corre ___ como yo." (as much)',
+      options: ['tanto', 'tan', 'tantos'], answer: 0 },
+    { id: 'p:compar:cloze', kind: 'cloze', text: 'Juan es ___ alto ___ yo. (as tall as)', accept: ['tan alto como', 'tan...como'] },
+    { id: 'p:compar:recall', kind: 'recall', front: 'tan vs tanto — which goes before an adjective/adverb, which before a noun?', back: 'tan → adjective/adverb (invariable); tanto/a/os/as → noun (agrees)' }
+  ]
+},
+
+{
+  id: 'gr-preterito-imperfecto-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:340', 'gramatica:A2:341', 'gramatica:A2:342', 'gramatica:A2:343', 'gramatica:A2:344', 'gramatica:A2:345'],
+  title: 'El pretérito imperfecto',
+  summary: 'The imperfect sets a scene or describes a habit with no interest in when it started or finished — Mi madre era alta says nothing about when she stopped being tall, because that question does not apply to the imperfect at all.',
+  sections: [
+    { h: 'Form: almost entirely regular', html: '<i>-ar</i> verbs take <i>-aba</i> (<i>hablaba, hablabas, hablaba, hablábamos, hablabais, hablaban</i>); <i>-er/-ir</i> verbs take <i>-ía</i> (<i>comía, vivía</i>). Only THREE verbs are irregular: <i>ser</i> (<i>era</i>), <i>ir</i> (<i>iba</i>), <i>ver</i> (<i>veía</i>).' },
+    { h: 'Descriptive value', html: 'Sets a scene — people, objects, places, time, weather — with the action viewed as an unbounded backdrop: <i>Mi madre era alta</i>, <i>Tenía un coche rojo</i>, <i>Eran las cinco</i>, <i>Era invierno</i>.' },
+    { h: 'Habitual value', html: 'A repeated or cyclical past action — "used to": <i>Iba todos los días al colegio</i>.' }
+  ],
+  contrasts: [
+    { es: 'Mi madre era alta.', en: 'My mother was tall.', note: 'description, no start/end in view' },
+    { es: 'Eran las cinco cuando llegó.', en: 'It was five o\'clock when he arrived.', note: 'imperfecto sets the backdrop; a different tense (next lesson) marks the single completed event' },
+    { es: 'Iba todos los días al colegio.', en: 'I used to go to school every day.', note: 'habitual/cyclical' }
+  ],
+  pitfalls: [
+    'Only <i>ser, ir</i> and <i>ver</i> are irregular in the imperfect — every other verb, however irregular elsewhere, is fully regular here.',
+    'The imperfect never marks when an action started or ended — that job belongs to a different past tense, covered separately.'
+  ],
+  examples: [
+    { es: 'Cuando era niño, vivía en Sevilla.', en: 'When I was a child, I lived in Seville.' },
+    { es: 'Hacía mucho calor aquel verano.', en: 'It was very hot that summer.' },
+    { es: 'Todos los domingos comíamos en casa de mis abuelos.', en: "Every Sunday we used to eat at my grandparents' house." }
+  ],
+  probes: [
+    { id: 'p:impf:irregular', kind: 'mcq', q: '¿Cuáles son los ÚNICOS tres verbos irregulares en imperfecto?',
+      options: ['tener, hacer, estar', 'ser, ir, ver', 'ser, estar, haber'], answer: 1 },
+    { id: 'p:impf:valor', kind: 'mcq', q: '"Mi madre era alta" — ¿qué valor tiene el imperfecto aquí?',
+      options: ['acción puntual y acabada', 'descripción, sin principio ni fin', 'una orden'], answer: 1 },
+    { id: 'p:impf:cloze', kind: 'cloze', text: 'De niño, ___ (vivir) en Sevilla.', accept: ['vivía'] },
+    { id: 'p:impf:recall', kind: 'recall', front: 'The imperfect of ir', back: 'iba, ibas, iba, íbamos, ibais, iban' }
+  ]
+},
+
+{
+  id: 'gr-preterito-indefinido-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:346', 'gramatica:A2:347', 'gramatica:A2:348', 'gramatica:A2:349', 'gramatica:A2:350', 'gramatica:A2:352'],
+  title: 'El pretérito indefinido',
+  summary: 'Where the imperfect refuses to say when something started or ended, the indefinido is built entirely around that boundary: it reports a completed action viewed as a single whole, anchored to one point in the past — Fui a su casa, and that visit is over.',
+  sections: [
+    { h: 'Form: regular endings', html: '<i>-ar</i>: <i>hablé, hablaste, habló, hablamos, hablasteis, hablaron</i>. <i>-er/-ir</i> share endings: <i>comí, comiste, comió...</i> / <i>viví, viviste, vivió...</i>' },
+    { h: 'Root-changing irregulars', html: 'A group of common verbs keeps a special stem and a shared set of endings (<i>-e, -iste, -o, -imos, -isteis, -ieron</i>): <i>tener → tuve</i>, <i>estar → estuve</i>, <i>hacer → hice</i> (but <i>hizo</i>, with a spelling change <i>c→z</i> before <i>o</i>, to keep the "s" sound).' },
+    { h: 'Fully irregular verbs', html: '<i>Ser</i> and <i>ir</i> share EXACTLY the same forms (<i>fui, fuiste, fue, fuimos, fuisteis, fueron</i>) — only context tells them apart. <i>Ver</i> (<i>vi, viste, vio...</i>) and <i>dar</i> (<i>di, diste, dio...</i>) take no written accent despite feeling like they should.' },
+    { h: 'Value', html: 'A perfective action: complete, viewed as a whole, framed at one specific point in the past: <i>Fui a su casa ayer</i>.' }
+  ],
+  contrasts: [
+    { es: 'Fui a Roma en 2019.', en: 'I went to Rome in 2019.', note: 'a completed, bounded event' },
+    { es: 'Fui profesor durante diez años.', en: 'I was a teacher for ten years — fui, from ser.', note: 'ser and ir share this exact form; only context disambiguates' },
+    { es: 'Ayer hizo mucho frío.', en: 'It was very cold yesterday — hizo, from hacer.', note: 'c→z spelling shift before o' }
+  ],
+  pitfalls: [
+    '<i>Ser</i> and <i>ir</i> are identical in the indefinido — <i>fui</i> could mean "I was" or "I went"; only the rest of the sentence tells you which.',
+    '<i>Di</i> and <i>vi</i> carry no written accent, even though they are short — do not add one by analogy with other tenses.',
+    'The root-changing group (<i>tuve, estuve, hice...</i>) never takes the regular <i>-í/-iste/-ió</i> endings — they share their own special set.'
+  ],
+  examples: [
+    { es: '¿Dónde estuviste el fin de semana?', en: 'Where were you this weekend?' },
+    { es: 'Hice la maleta y me fui al aeropuerto.', en: 'I packed my bag and left for the airport.' },
+    { es: 'Vi esa película el mes pasado.', en: 'I saw that film last month.' }
+  ],
+  probes: [
+    { id: 'p:indef:serir', kind: 'mcq', q: '"Fui a Barcelona" — ¿de qué verbo viene "fui" aquí?',
+      options: ['ser', 'ir', 'los dos son posibles sin más contexto'], answer: 1 },
+    { id: 'p:indef:hizo', kind: 'mcq', q: '"Ayer ___ mucho frío." (hacer)',
+      options: ['hació', 'hizo', 'hació'], answer: 1 },
+    { id: 'p:indef:cloze', kind: 'cloze', text: '¿Dónde ___ (estar) tú anoche?', accept: ['estuviste'] },
+    { id: 'p:indef:recall', kind: 'recall', front: 'Which two verbs are IDENTICAL to each other in the pretérito indefinido?', back: 'ser and ir (fui, fuiste, fue...)' }
+  ]
+},
+
+{
+  id: 'gr-preterito-perfecto-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:353', 'gramatica:A2:354', 'gramatica:A2:355', 'gramatica:A2:356', 'gramatica:A2:357', 'gramatica:A2:358', 'gramatica:A2:359', 'gramatica:A2:360', 'gramatica:A2:361'],
+  title: 'El pretérito perfecto: haber + participio',
+  summary: 'He estado en tu casa is not about when the visit happened — it is about the fact still being true of a stretch of time that reaches all the way to now, which is exactly what separates this tense from the indefinido\'s closed, dated past.',
+  sections: [
+    { h: 'Form', html: 'Present of <i>haber</i> (<i>he, has, ha, hemos, habéis, han</i>) + past participle, which never agrees here and is never separated from <i>haber</i> by another word: <i>he trabajado, ha comido</i>. Regular participles: <i>-ado/-ido</i>. Strong irregulars: <i>hecho, escrito, visto</i> (and the others already met as adjectives: <i>dicho, puesto, vuelto, roto</i>).' },
+    { h: 'Value: relevance to now', html: 'A past action whose effect or relevance is still felt: <i>He estado en tu casa</i> — the fact of having been there still holds, whenever it happened.' },
+    { h: 'Time frame still open', html: 'It pairs naturally with a marker whose stretch of time has not yet closed, explicit (<i>hoy, este año, ya, todavía no</i>) or implicit (<i>esta mañana, alguna vez</i>, <i>estas Navidades</i>, <i>en septiembre</i> — of the current year).' }
+  ],
+  contrasts: [
+    { es: 'He comido en ese restaurante varias veces.', en: "I've eaten at that restaurant several times.", note: 'relevance now — no specific closed date' },
+    { es: 'Comí allí el año pasado.', en: 'I ate there last year.', note: 'indefinido — a closed, dated event (contrast lesson above)' },
+    { es: 'Todavía no he terminado.', en: "I haven't finished yet.", note: 'todavía no — the time frame (now) is still open' }
+  ],
+  pitfalls: [
+    'No word ever comes between <i>haber</i> and its participle: <i>he trabajado</i>, never <i>*he ya trabajado</i>.',
+    'The participle after <i>haber</i> never agrees with anything, unlike the same participle used as an adjective (<i>estoy cansada</i> vs <i>he estado cansada</i> — <i>estado</i> itself does not change).',
+    'Irregular participles (<i>hecho, escrito, visto, dicho, puesto, vuelto, roto</i>) must be memorized — they do not follow the regular -ado/-ido pattern.'
+  ],
+  examples: [
+    { es: '¿Has estado alguna vez en Argentina?', en: 'Have you ever been to Argentina?' },
+    { es: 'Este año hemos viajado mucho.', en: "We've travelled a lot this year." },
+    { es: 'Todavía no ha llegado.', en: "He hasn't arrived yet." }
+  ],
+  probes: [
+    { id: 'p:perf:participio', kind: 'mcq', q: '"He ___ una carta." (escribir)',
+      options: ['escribido', 'escrito', 'escribió'], answer: 1 },
+    { id: 'p:perf:orden', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['He ya comido.', 'He comido ya.', 'Ya he comido.'], answer: 2 },
+    { id: 'p:perf:cloze', kind: 'cloze', text: '¿___ (estar) tú alguna vez en Chile?', accept: ['Has estado', 'has estado'] },
+    { id: 'p:perf:recall', kind: 'recall', front: 'What does the pretérito perfecto mark that the indefinido does not?', back: 'relevance to now — a still-open time frame, not a closed, dated event' }
+  ]
+},
+
+{
+  id: 'gr-imperativo-forma-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:363', 'gramatica:A2:365', 'gramatica:A2:366', 'gramatica:A2:367'],
+  title: 'El imperativo afirmativo: forma',
+  summary: 'The tú imperative borrows the present indicative he/she form (habla = "she speaks" and "speak!" look identical), while usted borrows a completely different shape from the subjunctive — the same instruction, two unrelated-looking words.',
+  sections: [
+    { h: 'Tú and vosotros: regular', html: '<i>Tú</i> takes the 3rd-person singular of the present indicative: <i>habla, come, escribe</i>. <i>Vosotros</i> replaces the infinitive\'s final <i>-r</i> with <i>-d</i>: <i>hablad, comed, escribid</i>.' },
+    { h: 'Common irregular tú forms', html: 'A short, memorized list: <i>di</i> (decir), <i>haz</i> (hacer), <i>pon</i> (poner), <i>sal</i> (salir), <i>ve</i> (ir), <i>ven</i> (venir), <i>sé</i> (ser), <i>ten</i> (tener).' },
+    { h: 'Usted/ustedes: a different shape entirely', html: 'These borrow the present SUBJUNCTIVE form: <i>hable (usted), coman (ustedes)</i> — this looks like <i>tú</i>\'s form for -ar verbs by coincidence (<i>habla</i> vs <i>hable</i> differ by one letter) but diverges clearly for -er/-ir verbs (<i>come</i> vs <i>coma</i>).' },
+    { h: 'Enclitic pronouns', html: 'Object pronouns attach to the END of an affirmative imperative, adding a written accent if the stress would otherwise move: <i>Cómpralo, Dale el libro, Levántate</i>.' }
+  ],
+  contrasts: [
+    { es: 'Habla más despacio. (tú)', en: 'Speak more slowly.', note: '3rd-person present indicative shape' },
+    { es: 'Hable más despacio. (usted)', en: 'Speak more slowly.', note: 'subjunctive shape — one letter different from tú here, but not with -er/-ir verbs' },
+    { es: 'Come la fruta. / Coma la fruta.', en: 'Eat the fruit. (tú / usted)', note: 'the -er/-ir gap between the two forms is clear here' }
+  ],
+  pitfalls: [
+    'Do not assume usted always looks like tú with an -e — that only happens to coincide for -ar verbs; -er/-ir verbs make the difference obvious (<i>come</i> vs <i>coma</i>).',
+    'The written accent on an imperative with an attached pronoun is not optional spelling: <i>cómpralo</i>, never <i>compralo</i>.',
+    'The eight irregular tú forms (<i>di, haz, pon, sal, ve, ven, sé, ten</i>) must be memorized — they do not follow the "3rd-person present" rule.'
+  ],
+  examples: [
+    { es: 'Abre la ventana, por favor.', en: 'Open the window, please.' },
+    { es: 'Pase usted, por favor.', en: 'Please come in.' },
+    { es: 'Dime la verdad.', en: 'Tell me the truth.' }
+  ],
+  probes: [
+    { id: 'p:imper2:tu', kind: 'mcq', q: '"Speak more slowly" (tú) —',
+      options: ['Hable más despacio.', 'Habla más despacio.', 'Hablas más despacio.'], answer: 1 },
+    { id: 'p:imper2:usted', kind: 'mcq', q: '"Eat the fruit" (usted) —',
+      options: ['Come la fruta.', 'Coma la fruta.', 'Comes la fruta.'], answer: 1 },
+    { id: 'p:imper2:cloze', kind: 'cloze', text: 'Compra el pan → ___. (it — el pan, imperativo con pronombre enclítico)', accept: ['Cómpralo', 'cómpralo'] },
+    { id: 'p:imper2:recall', kind: 'recall', front: 'Which present tense does the usted imperative borrow its form from?', back: 'the present subjunctive' }
+  ]
+},
+
+{
+  id: 'gr-gerundio-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:392', 'gramatica:A2:393', 'gramatica:A2:394', 'gramatica:A2:395', 'gramatica:A2:396'],
+  title: 'El gerundio: -ando, -iendo',
+  summary: 'Estoy estudiando pins an action to this exact moment in a way the plain present cannot — estudio español is true in general, but only the gerund periphrasis insists it is happening as you speak.',
+  sections: [
+    { h: 'Form', html: 'Invariable — never agrees with anything. <i>-ar → -ando</i> (<i>hablando</i>); <i>-er/-ir → -iendo</i> (<i>comiendo, viviendo</i>).' },
+    { h: 'Estar + gerundio: in progress right now', html: 'This periphrasis sharpens the present into "happening right now": <i>Está escuchando música</i> is stronger than the plain <i>escucha música</i>, which could describe a general habit instead.' },
+    { h: 'Enclitic pronouns need an accent', html: 'Object pronouns attach to the end, always adding a written accent to preserve the original stress: <i>Está escuchándola</i>, <i>Está escribiéndole una carta</i>.' }
+  ],
+  contrasts: [
+    { es: 'Escucho música los domingos.', en: 'I listen to music on Sundays.', note: 'plain present — could be habitual' },
+    { es: 'Estoy escuchando música ahora mismo.', en: 'I am listening to music right now.', note: 'progressive — in progress at this exact moment' },
+    { es: 'Está escuchándola.', en: 'She is listening to it.', note: 'enclitic pronoun forces a written accent' }
+  ],
+  pitfalls: [
+    'The gerundio never agrees with anything — no gender, no number, unlike the participle.',
+    'A pronoun attached to a gerundio always needs a written accent to keep the stress where it was: <i>escuchándola</i>, not <i>escuchandola</i>.'
+  ],
+  examples: [
+    { es: 'Estamos aprendiendo español.', en: 'We are learning Spanish.' },
+    { es: '¿Qué estás haciendo?', en: 'What are you doing?' },
+    { es: 'Le está escribiendo una carta a su abuela.', en: "She is writing a letter to her grandmother." }
+  ],
+  probes: [
+    { id: 'p:gerundio:forma', kind: 'mcq', q: '"comer" — gerundio:',
+      options: ['comando', 'comiendo', 'comendo'], answer: 1 },
+    { id: 'p:gerundio:progresivo', kind: 'mcq', q: '"Ahora mismo" sugiere:',
+      options: ['presente simple', 'estar + gerundio', 'pretérito'], answer: 1 },
+    { id: 'p:gerundio:cloze', kind: 'cloze', text: 'Está escuchándo___. (it — la música)', accept: ['la'] },
+    { id: 'p:gerundio:recall', kind: 'recall', front: 'Does the gerundio ever agree in gender or number?', back: 'no — it is always invariable' }
+  ]
+},
+
+{
+  id: 'gr-restrictivos-nominales-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:408', 'gramatica:A2:409', 'gramatica:A2:410'],
+  title: 'La casa mía, una película apasionante, calle Alcalá',
+  summary: 'Wanting to say "the house of me" for possession, English logic fails outright in Spanish — la casa de mí does not exist; the possessive itself has to change shape (la casa mía), which is the same tónico form met in the previous lesson doing yet another job.',
+  sections: [
+    { h: 'No "de + pronoun" for possession', html: 'Where you might expect <i>de mí/de ti</i> after a noun to mean possession, Spanish instead uses the tónico possessive: <i>la casa mía</i> (or simply <i>mi casa</i>), never <i>*la casa de mí</i>.' },
+    { h: 'Descriptive forms acting as ordinary adjectives', html: 'Some verb-derived descriptive forms behave exactly like any other adjective — agreeing, placed after the noun: <i>una película apasionante</i> (thrilling), <i>un actor conocido</i> (well-known), <i>unas películas apasionantes</i>.' },
+    { h: 'Apposition: no linking word at all', html: 'Identifying a common noun with a proper name needs no preposition between them: <i>mi hermano Juan</i>, <i>calle Alcalá</i>, <i>el teatro Albéniz</i> — not <i>*mi hermano de Juan</i>.' }
+  ],
+  contrasts: [
+    { es: 'la casa mía', en: 'my house (emphatic/contrastive)', note: 'correct — tónico possessive' },
+    { es: '*la casa de mí', en: '(does not exist)', note: 'this construction is simply not available in Spanish' },
+    { es: 'mi hermano Juan', en: 'my brother Juan', note: 'apposition — no de' }
+  ],
+  pitfalls: [
+    'Never reach for <i>de mí/de ti</i> to mean possession after a noun — that gap is filled by the tónico possessive (<i>la casa mía</i>) or simply the átono one before the noun (<i>mi casa</i>).',
+    'Apposition (a common noun + a proper name that identifies it) takes no linking preposition: <i>calle Alcalá</i>, not <i>*la calle de Alcalá</i> in this naming sense (that phrase with <i>de</i> would mean something else — a street connected to a person named Alcalá).'
+  ],
+  examples: [
+    { es: 'Ese coche no es mío; el coche mío es el azul.', en: "That's not my car; my car is the blue one." },
+    { es: 'Es una historia realmente conmovedora.', en: "It's a truly moving story." },
+    { es: 'Vive en la calle Goya, cerca del museo.', en: 'She lives on Goya Street, near the museum.' }
+  ],
+  probes: [
+    { id: 'p:restrnom:posesivo', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['la casa de mí', 'la casa mía', 'la casa de yo'], answer: 1 },
+    { id: 'p:restrnom:aposicion', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['mi hermano de Juan', 'mi hermano Juan', 'mi hermano el Juan'], answer: 1 },
+    { id: 'p:restrnom:cloze', kind: 'cloze', text: 'Vive en ___ Goya. (calle — sin preposición)', accept: ['calle'] },
+    { id: 'p:restrnom:recall', kind: 'recall', front: 'How does Spanish say "the house of mine" for emphasis?', back: 'la casa mía — never la casa de mí' }
+  ]
+},
+
+{
+  id: 'gr-nucleo-verbal-tipos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:434', 'gramatica:A2:438', 'gramatica:A2:446'],
+  title: 'Tipos de verbo: predicativo, auxiliar, copulativo',
+  summary: 'A copulative verb like ser or estar never takes a direct object — it takes an ATTRIBUTE instead — which is the single fact that explains why "Ana es simpática" cannot be reshaped the way "Ana tiene un coche" can.',
+  sections: [
+    { h: 'Predicativos: carry their own meaning', html: 'Most verbs are predicativos — they mean something on their own and typically take a direct object: <i>escribir una carta, trabajar</i>.' },
+    { h: 'Auxiliares: contribute grammar, not meaning', html: 'These add no meaning of their own; they combine with a non-finite form to build a periphrasis: <i>haber + participio</i> (<i>he trabajado</i>), <i>estar + gerundio</i> (<i>estoy trabajando</i>), <i>ir a + infinitivo</i> (<i>voy a trabajar</i>).' },
+    { h: 'Copulativos: link, they do not act', html: '<i>Ser, estar</i> and <i>parecer</i> connect the subject to an ATTRIBUTE describing it, not to a direct object: <i>Ana es simpática</i>, never <i>*Ana tiene simpática</i>.' }
+  ],
+  contrasts: [
+    { es: 'Escribo una carta.', en: 'I write a letter.', note: 'predicativo + direct object' },
+    { es: 'He escrito una carta.', en: "I've written a letter.", note: 'auxiliar (haber) + predicativo' },
+    { es: 'Ana es simpática.', en: 'Ana is nice.', note: 'copulativo + attribute, never a direct object' }
+  ],
+  pitfalls: [
+    'A copulative verb (<i>ser, estar, parecer</i>) never takes a direct object — only an attribute agreeing with the subject.',
+    'An auxiliary verb never stands alone as the whole predicate; it always needs its non-finite partner (a participle, gerund, or infinitive).'
+  ],
+  examples: [
+    { es: 'Mi hermana trabaja en un banco.', en: 'My sister works at a bank.' },
+    { es: 'Vamos a viajar el mes que viene.', en: "We're going to travel next month." },
+    { es: 'Este plato parece delicioso.', en: 'This dish looks delicious.' }
+  ],
+  probes: [
+    { id: 'p:nucleo:copulativo', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['Ana tiene simpática.', 'Ana es simpática.', 'Ana hace simpática.'], answer: 1 },
+    { id: 'p:nucleo:auxiliar', kind: 'mcq', q: 'En "he trabajado", ¿qué papel tiene "he"?',
+      options: ['predicativo', 'auxiliar', 'copulativo'], answer: 1 },
+    { id: 'p:nucleo:cloze', kind: 'cloze', text: 'Este plato ___ delicioso. (parecer)', accept: ['parece'] },
+    { id: 'p:nucleo:recall', kind: 'recall', front: 'What does a copulative verb connect the subject to?', back: 'an attribute — never a direct object' }
+  ]
+},
+
+{
+  id: 'gr-verbos-predicativos-tipos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:435', 'gramatica:A2:436', 'gramatica:A2:437'],
+  title: 'Verbos que funcionan al revés: encantar, doler',
+  summary: 'Me encanta el chocolate does not mean "I" is doing anything — the chocolate is the grammatical subject and must agree with the verb, while "I" sits in the indirect object, the mirror image of how English builds "I love chocolate."',
+  sections: [
+    { h: 'Ordinary transitive and intransitive verbs', html: 'Most verbs either take a direct object (<i>escribir algo, regalar algo a alguien</i>) or do not (<i>correr, nacer, crecer</i>) — the subject is simply whoever does the action, as expected.' },
+    { h: 'Verbs that flip subject and experiencer', html: 'A small "psychological" class — <i>encantar</i> (liking), <i>doler</i> (physical sensation) — puts the thing or cause as the SUBJECT and the person who feels it as an INDIRECT OBJECT: <i>Me encanta el chocolate</i> is closer to "chocolate is delightful to me" than to "I love chocolate."' },
+    { h: 'The verb agrees with the cause, not the person', html: 'Because the cause is the subject, the verb must agree with IT: <i>Me encanta el chocolate</i> (singular) but <i>Me encantan los chocolates</i> (plural) — the person (<i>me</i>) never changes the verb\'s form.' }
+  ],
+  contrasts: [
+    { es: 'Como una manzana.', en: 'I eat an apple.', note: 'ordinary transitive — yo is the subject, manzana the object' },
+    { es: 'Me encanta el chocolate.', en: 'I love chocolate.', note: 'reversed — chocolate is the subject, me the indirect object' },
+    { es: 'Me duelen los pies.', en: 'My feet hurt.', note: 'plural subject (los pies) forces the plural verb duelen' }
+  ],
+  pitfalls: [
+    'Never force <i>encantar/doler</i>-type verbs into an English subject-verb-object shape: <i>*Yo encanto el chocolate</i> is wrong.',
+    'The verb agrees with the thing causing the feeling, not with the person who feels it — check the NOUN\'s number, not the pronoun\'s.'
+  ],
+  examples: [
+    { es: 'A mi hermano le encanta el fútbol.', en: 'My brother loves football.' },
+    { es: '¿Te duele la cabeza?', en: 'Does your head hurt?' },
+    { es: 'Estos zapatos nuevos me duelen mucho.', en: 'These new shoes hurt me a lot.' }
+  ],
+  probes: [
+    { id: 'p:verbpredtipos:agree', kind: 'mcq', q: '"Me ___ los pies." (doler — plural)',
+      options: ['duele', 'duelen', 'dueles'], answer: 1 },
+    { id: 'p:verbpredtipos:estructura', kind: 'mcq', q: 'En "Me encanta el chocolate", ¿qué es "el chocolate"?',
+      options: ['objeto directo', 'sujeto', 'objeto indirecto'], answer: 1 },
+    { id: 'p:verbpredtipos:cloze', kind: 'cloze', text: 'A mi hermano le ___ (encantar) los perros.', accept: ['encantan'] },
+    { id: 'p:verbpredtipos:recall', kind: 'recall', front: 'With encantar/doler, does the verb agree with the person or the thing/cause?', back: 'the thing/cause — it is the grammatical subject' }
+  ]
+},
+
+{
+  id: 'gr-objeto-indirecto-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:468', 'gramatica:A2:469', 'gramatica:A2:470', 'gramatica:A2:471', 'gramatica:A2:472', 'gramatica:A2:473'],
+  title: 'El objeto indirecto',
+  summary: 'Robaron la cartera a muchas personas treats the victim as an indirect object, not a direct one — a mismatch with English "they robbed many people" that shows up across a whole family of Spanish patterns: reception, loss, and possession all route through the same OI pronoun.',
+  sections: [
+    { h: 'Marked by a, replaced by a pronoun', html: 'The indirect object is introduced by <i>a</i> and can be replaced or doubled by <i>me/te/le/nos/os/les</i>: <i>He escrito una postal a mis padres → Les he escrito una postal</i>.' },
+    { h: 'Dativo de recepción', html: 'Who receives something: <i>Te doy los ejercicios a ti</i>.' },
+    { h: 'Dativo de separación', html: 'Who LOSES something — the victim of a theft or removal is grammatically the indirect object, not the direct one: <i>Robaron la cartera a muchas personas</i> (the wallet is the direct object; the people robbed are indirect).' },
+    { h: 'Dativo posesivo', html: 'Replaces a possessive for something done to a body part or belonging: <i>Le rompieron las gafas a Ana</i>, <i>Me duele la cabeza</i>, <i>Me preparo el desayuno</i> (reflexive — done for oneself).' },
+    { h: 'Reduplication', html: 'With <i>gustar</i>-type verbs, the pronoun is required even when "a + person" is also stated — this is not redundancy, it is the rule: <i>A mí me encanta comer fuera</i>.' }
+  ],
+  contrasts: [
+    { es: 'Robaron la cartera a muchas personas.', en: 'They stole the wallet from many people.', note: 'the people robbed are indirect object — a mismatch with the English direct-object phrasing' },
+    { es: 'Le rompieron las gafas a Ana.', en: "Ana's glasses got broken.", note: 'dativo posesivo — Ana is indirect object, not "her glasses"' },
+    { es: 'A mí me encanta comer fuera.', en: 'I love eating out.', note: 'reduplication — me is required even with a mí stated' }
+  ],
+  pitfalls: [
+    'With <i>gustar/encantar</i>-type verbs, the indirect object pronoun is never optional just because "a + person" is already there — that is reduplication, and it is compulsory.',
+    'The person affected by a theft or loss is grammatically an INDIRECT object in Spanish (<i>a muchas personas</i>), even where English would make them the direct object of the verb.'
+  ],
+  examples: [
+    { es: '¿Me puedes dar tu número?', en: 'Can you give me your number?' },
+    { es: 'Se me han perdido las llaves.', en: "I've lost my keys." },
+    { es: 'A los niños les encantan los animales.', en: 'Children love animals.' }
+  ],
+  probes: [
+    { id: 'p:oi:separacion', kind: 'mcq', q: '"Robaron la cartera a muchas personas" — "a muchas personas" es:',
+      options: ['objeto directo', 'objeto indirecto', 'sujeto'], answer: 1 },
+    { id: 'p:oi:reduplicacion', kind: 'mcq', q: '¿Cuál es correcto?',
+      options: ['A mí encanta comer fuera.', 'A mí me encanta comer fuera.', 'Me encanta yo comer fuera.'], answer: 1 },
+    { id: 'p:oi:cloze', kind: 'cloze', text: '___ rompieron las gafas a Ana. (dativo posesivo)', accept: ['Le', 'le'] },
+    { id: 'p:oi:recall', kind: 'recall', front: 'With a gustar-type verb, is the OI pronoun optional when "a + person" is already stated?', back: 'no — it is required (reduplication), never optional' }
+  ]
 }
 
 ];
