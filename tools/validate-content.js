@@ -179,8 +179,12 @@ function checkStrandBlocks(l) {
       ok(REGISTER_IDS.has(e.register), `${et}: unknown register "${e.register}"`);
       regs.add(e.register);
     });
-    // the teaching point IS the register contrast, so one register is not a lesson
-    ok(regs.size >= 2, `${tag}: exponents span only one register (${[...regs]}) — a function lesson must contrast at least two`);
+    // For function and discourse the teaching point IS the register contrast,
+    // so one register is not a lesson. A notion lesson's exponents are
+    // grammatical means, not social choices, and carry no such requirement.
+    if (strand.registerContrast) {
+      ok(regs.size >= 2, `${tag}: exponents span only one register (${[...regs]}) — a ${l.strand} lesson must contrast at least two`);
+    }
   }
   if (l.moves !== undefined) {
     ok(Array.isArray(l.moves) && l.moves.length >= 2, `${tag}: genre needs >=2 moves`);
@@ -189,8 +193,45 @@ function checkStrandBlocks(l) {
   if (l.model !== undefined) ok(l.model && l.model.text && l.model.text.length > 40, `${tag}: model text too short`);
   if (l.checklist !== undefined) ok(Array.isArray(l.checklist) && l.checklist.length >= 2, `${tag}: checklist needs >=2 items`);
   if (l.exponents) checkRegisterCoherence(l);
+  // address consistency across every piece of connected prose in the lesson
+  const proseBits = [];
+  if (l.model && l.model.text) proseBits.push(['model', l.model.text]);
+  (l.examples || []).forEach((e, i) => proseBits.push([`example[${i}]`, e.es]));
+  (l.exponents || []).forEach((e, i) => proseBits.push([`exponent[${i}]`, e.es]));
+  proseBits.forEach(([where, txt]) => {
+    const m = addressMix(txt);
+    ok(!m, `${tag} ${where}: mixes tú (${m ? m.tu.join(', ') : ''}) and vosotros (${m ? m.vos.join(', ') : ''}) address`);
+  });
   if (l.words !== undefined) ok(Array.isArray(l.words) && l.words.length >= 1, `${tag}: words must be a non-empty array`);
   if (l.collocations !== undefined) ok(Array.isArray(l.collocations), `${tag}: collocations must be an array`);
+}
+
+/* ---------- address consistency -------------------------------------------
+ * A text that addresses one reader as "tú" must not slip into "vosotros". The
+ * A2 horoscope model read "si tienes pareja, dedicadle más tiempo" — a
+ * vosotros imperative among tú forms — and no gate could see it: dedicadle is
+ * a perfectly good Spanish word, so the accent linter passed it, and nothing
+ * else looked at person agreement ACROSS a text.
+ *
+ * Only tú vs vosotros is checked. Usted takes third-person forms that are
+ * identical to "he/she", so a mixture with usted cannot be told from ordinary
+ * narration and would only produce noise.
+ *
+ * Proper nouns are skipped: "París" happens to spell a vosotros form. */
+function addressMix(text) {
+  if (!text) return null;
+  const raw = String(text);
+  // a token capitalised anywhere in the text is treated as a name, not a verb
+  const caps = new Set((raw.match(/\b[A-ZÁÉÍÓÚÑ][a-záéíóúñü]+/g) || []).map(w => w.toLowerCase()));
+  const only = (tok, person) => {
+    if (caps.has(tok)) return false;
+    const a = E.analyzeToken(tok);
+    return a.length > 0 && a.every(x => x.person === person);
+  };
+  const toks = E.tokenize(raw);
+  const tu = [...new Set(toks.filter(t => only(t, 'tú')))];
+  const vos = [...new Set(toks.filter(t => only(t, 'vosotros')))];
+  return (tu.length && vos.length) ? { tu, vos } : null;
 }
 
 /* ---------- register coherence -------------------------------------------
@@ -319,6 +360,8 @@ function checkProbes(l, tag) {
         ok(q.model, `${qt}: missing model`);
       } else ok(false, `${qt}: unknown type "${q.type}"`);
     });
+    { const m = addressMix(p.text);
+      ok(!m, `${tag}: mixes tú (${m ? m.tu.join(', ') : ''}) and vosotros (${m ? m.vos.join(', ') : ''}) address`); }
     // level gate: every recognized verb form must be usable at this level
     const ptoks = E.tokenize(p.text);
     ptoks.forEach((tok, ti) => {
@@ -411,9 +454,26 @@ function checkProbes(l, tag) {
 // ---------- vocab & idioms ---------------------------------------------------
 {
   const seenV = new Set();
+  const GENDERS = new Set(['m', 'f', 'c']);
   (window.VOCAB || []).forEach((w, i) => {
     ok(w.es && w.en && w.cat, `vocab[${i}]: missing es/en/cat`);
     ok(!seenV.has(w.es), `vocab duplicate "${w.es}"`); seenV.add(w.es);
+    checkTags(w, `vocab[${i}] "${w.es}"`);
+    if (w.gender !== undefined) {
+      ok(GENDERS.has(w.gender), `vocab "${w.es}": bad gender "${w.gender}"`);
+      // the article a noun is taught with must agree with its recorded gender
+      const art = String(w.es).match(/^(el|la|los|las) /);
+      if (art) ok((/^(el|los)$/.test(art[1]) ? 'm' : 'f') === w.gender || w.gender === 'c',
+        `vocab "${w.es}": article disagrees with gender "${w.gender}"`);
+    }
+    if (w.collocations !== undefined) {
+      ok(Array.isArray(w.collocations) && w.collocations.length >= 1 &&
+         w.collocations.every(c => typeof c === 'string' && c.trim()),
+        `vocab "${w.es}": collocations must be a non-empty array of strings`);
+      // a comma or bracket means the PCIC notation was mis-parsed into a list
+      (w.collocations || []).forEach(c => ok(!/[(),/]/.test(c),
+        `vocab "${w.es}": malformed collocation "${c}"`));
+    }
   });
   const seenI = new Set();
   (window.IDIOMS || []).forEach((x, i) => {

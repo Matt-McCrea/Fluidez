@@ -34,8 +34,10 @@ const haveVocab = new Set((window.VOCAB || []).map(v =>
 const haveVerbs = new Set((window.VERBS || []).map(v => v.inf));
 
 /* ---- gender ------------------------------------------------------------- */
+// -sis is deliberately absent: crisis and tesis are feminine but análisis and
+// énfasis are masculine, so it is not derivable. Better "unclear" than wrong.
 const FEM_ENDINGS = [/ción$/, /sión$/, /zón$/, /dad$/, /tad$/, /tud$/, /umbre$/,
-  /ez$/, /eza$/, /icie$/, /itis$/, /sis$/, /ncia$/, /anza$/, /ura$/];
+  /ez$/, /eza$/, /icie$/, /itis$/, /ncia$/, /anza$/, /ura$/];
 const MASC_ENDINGS = [/aje$/, /or$/, /ambre$/, /án$/, /ón$/, /ismo$/, /miento$/, /ado$/];
 // Greek -ma nouns and the classic -o/-a exceptions
 const MASC_MA = new Set(['problema', 'sistema', 'tema', 'programa', 'idioma', 'clima',
@@ -106,8 +108,10 @@ function articleFor(pattern, word) {
  *
  * Evidence beats morphology: a word observed with an article somewhere in the
  * corpus is a noun, whatever it looks like. */
-const ADJ_ENDINGS = [/oso$/, /osa$/, /able$/, /ible$/, /ivo$/, /iva$/, /ante$/,
-  /iente$/, /ico$/, /ica$/, /í$/, /án$/, /ario$/, /aria$/, /il$/];
+// -ico, -ante and -iente are too noisy to use: músico, habitante, dependiente,
+// informático and oriente are all nouns. Only endings that are reliably
+// adjectival are kept; anything else falls through to "noun".
+const ADJ_ENDINGS = [/oso$/, /osa$/, /able$/, /ible$/, /ivo$/, /iva$/, /í$/, /il$/];
 function posOf(word, hasArticleEvidence) {
   const w = word.toLowerCase();
   if (w.indexOf(' ') !== -1) {
@@ -164,6 +168,30 @@ spec.filter(i => i.inventory === 'nociones_especificas').forEach(i => {
   });
 });
 
+/* Most collocations are verb+noun ("desempeñar ~ un cargo"), so they hang off a
+ * verb headword and never reach a vocabulary entry. They are still content —
+ * "ser alto", "llevar gafas" are core A1 — so queue them in their own right
+ * rather than losing them. Only the English gloss is missing. */
+{
+  const placed = new Set();
+  [...entries.values()].forEach(e => (e.collocations || []).forEach(c => placed.add(c)));
+  const loose = [];
+  spec.filter(i => i.inventory === 'nociones_especificas' && ['A1','A2','B1','B2','C1'].indexOf(i.level) >= 0).forEach(i => {
+    const theme = T.themeByPcicSection(i.section || '');
+    LEX.collocations(i.pattern).forEach(c => {
+      if (placed.has(c) || !theme) return;
+      placed.add(c);
+      loose.push({ es: c, en: null, cat: theme.id, cefr: i.level, theme: theme.id, pcic: [i.id] });
+    });
+  });
+  fs.writeFileSync(path.join(ROOT, 'spec', 'collocation-queue.json'), JSON.stringify({
+    generated: new Date().toISOString().slice(0, 10),
+    note: 'Collocations with no vocabulary entry to hang from. Add as vocab entries; only `en` is missing.',
+    count: loose.length, entries: loose
+  }, null, 1));
+  console.log('  -> ' + loose.length + ' unplaced collocations written to spec/collocation-queue.json');
+}
+
 const all = [...entries.values()];
 const todo = all.filter(e => !e.known);
 // verbs belong in data/verbs.js, where the engine can conjugate them
@@ -177,9 +205,13 @@ fs.writeFileSync(path.join(ROOT, 'spec', 'verb-queue.json'), JSON.stringify({
 }, null, 1));
 fs.writeFileSync(path.join(ROOT, 'spec', 'vocab-queue.json'), JSON.stringify({
   generated: new Date().toISOString().slice(0, 10),
-  note: 'Spanish side derived from the PCIC. `en` is null and must be authored; everything else is settled.',
+  note: 'Spanish side derived from the PCIC. Entries with known:false still need an English gloss; everything else is settled.',
   total: all.length, alreadyInApp: all.length - todo.length, toWrite: lexTodo.length,
-  entries: lexTodo
+  // Every derived non-verb entry, `known` marking those already in the app.
+  // Writing the COMPLETE set rather than only the outstanding one keeps the
+  // file useful after generation: tools/harvest/fix-vocab.js needs the derived
+  // gender and collocations for entries that have already been written.
+  entries: all.filter(e => e.pos !== 'verb')
 }, null, 1));
 
 /* ---- report -------------------------------------------------------------- */

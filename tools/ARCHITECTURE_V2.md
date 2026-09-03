@@ -37,7 +37,7 @@ Derived syllabus: **1,071 lessons + 575 vocab days ≈ 1,646 lesson-days**
 | Layer | What | Count |
 |---|---|---|
 | **Level** | A1 · A2 · B1 · B2 · C1 | 5 |
-| **Strand** | grammar · function · discourse · genre · lexis | 5 |
+| **Strand** | grammar · function · discourse · notion · genre · lexis | 6 |
 | **Lesson** | one teaching unit in a strand at a level | ~1,646 |
 | **Item** | generated exercises attached to a lesson | ~15–25k |
 
@@ -135,6 +135,9 @@ vocabulary of a beginner course — the exact failure the rebuild is for.
 | `test-checker.js` | every model answer satisfies its own constraints |
 | `lint-spanish.js` | accent errors in prose, adjudicated against engine paradigms |
 | `audit-verbs.js` | verb classification, scored against 11,834 real sentences |
+
+`validate-content.js` also checks address consistency (tú vs vosotros across a
+text) and that a noun's article agrees with its recorded gender.
 
 The engine is the authority the first three trust, which is why the fourth
 exists: a verb filed in the wrong class makes the engine confidently wrong and

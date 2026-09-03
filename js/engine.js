@@ -765,17 +765,103 @@ window.ENGINE = (function () {
 
   // All analyses for one token. `accentExact` flags whether the accents matched
   // the canonical form (so the checker can nudge on "comio" vs "comió").
-  function analyzeToken(tok) {
-    ensureIndex();
-    var t = tok.toLowerCase();
-    var list = (_idx[deaccent(t)] || []).map(function (a) {
+  /* ---- enclitic pronouns ---------------------------------------------------
+   * Spanish attaches object pronouns to the END of an infinitive, a gerund or
+   * an affirmative imperative: dímelo, ayúdame, levántate, decírselo. The index
+   * holds only bare forms, so none of those were recognised at all — which
+   * meant the writing checker could not see the very forms the imperative
+   * lessons teach, and the accent linter could not check their (obligatory)
+   * written accent.
+   *
+   * Stripping is only safe with the accent rule that comes with it. Attaching a
+   * clitic shifts the stress, so the accent becomes obligatory unless the base
+   * is a monosyllabic imperative: dame and dime need none, ayúdame and dedícale
+   * do. Without that test "tomate" (the vegetable) would parse as tomar + te,
+   * and "chocolate", "gente", "parte" and every other -te noun with it.
+   * ------------------------------------------------------------------------ */
+  var CLITICS = ['me', 'te', 'se', 'lo', 'la', 'le', 'nos', 'os', 'los', 'las', 'les'];
+  var MONO_IMPERATIVES = { da: 1, di: 1, ve: 1, ven: 1, pon: 1, sal: 1, ten: 1, haz: 1, se: 1, oye: 1 };
+  // Ordinary words that a monosyllabic imperative plus one clitic happens to
+  // spell. Without these, "dios" parses as di+os and "vela" as ve+la.
+  var CLITIC_STOPLIST = { dios: 1, vela: 1, velas: 1, velo: 1, velos: 1, dale: 1, dalia: 1, tenor: 1 };
+  // Attachment is legal on an affirmative imperative, an infinitive and a
+  // gerund. Only the imperative is handled: infinitives are not in the index,
+  // and neither infinitives nor gerunds carry a person, which is what the
+  // consumers of this (the writing checker, the address-consistency gate)
+  // actually need. "decírselo" therefore still returns nothing.
+
+  function stripClitics(t) {
+    var out = [];                                  // [{ base, clitics }]
+    for (var i = 0; i < CLITICS.length; i++) {
+      var c1 = CLITICS[i];
+      if (t.length <= c1.length + 1 || t.slice(-c1.length) !== c1) continue;
+      var b1 = t.slice(0, -c1.length);
+      out.push({ base: b1, clitics: [c1] });
+      for (var j = 0; j < CLITICS.length; j++) {   // two pronouns: dá-me-lo
+        var c2 = CLITICS[j];
+        if (b1.length <= c2.length + 1 || b1.slice(-c2.length) !== c2) continue;
+        out.push({ base: b1.slice(0, -c2.length), clitics: [c2, c1] });
+      }
+    }
+    return out;
+  }
+
+  function analyzeBare(t) {
+    return (_idx[deaccent(t)] || []).map(function (a) {
       return { inf: a.inf, tense: a.tense, person: a.person, form: a.form,
                type: a.type, accentExact: a.form.toLowerCase() === t };
     });
+  }
+
+  function analyzeToken(tok) {
+    ensureIndex();
+    var t = tok.toLowerCase();
+    var list = analyzeBare(t);
     if (FUNCTION_WORDS[t]) {
       list = list.filter(function (a) { return a.accentExact; });
     }
-    return list;
+    if (list.length) return list;
+
+    if (CLITIC_STOPLIST[t]) return [];
+    var accented = /[áéíóú]/.test(t);
+    var found = [], seen = {};
+    stripClitics(t).forEach(function (cand) {
+      var single = cand.clitics.length === 1;
+      // the vosotros imperative drops its -d before os: levantad + os > levantaos
+      var vosOs = single && cand.clitics[0] === 'os';
+      // For -os the vosotros imperative DROPS its -d (sentad + os > sentaos), so
+      // only the restored-d form is valid. Trying the bare base too would parse
+      // the participle "sentados" as sentad + os. The one exception is irse,
+      // whose form keeps the d: idos.
+      var bases;
+      if (vosOs) {
+        bases = [{ b: deaccent(cand.base) + 'd', free: true }];
+        if (deaccent(cand.base) === 'id') bases.push({ b: 'id', free: true });
+      } else {
+        bases = [{ b: cand.base, free: false }, { b: deaccent(cand.base), free: false }];
+      }
+      bases.forEach(function (x) {
+        analyzeBare(x.b).forEach(function (a) {
+          if (a.tense !== 'imperativo') return;
+          // vosotros + os is inherently reflexive (levantaos, sentaos, idos).
+          // Without this, "correos" parses as corred + os and the post office
+          // becomes an imperative.
+          if (vosOs && !/(arse|erse|irse)$/.test(a.inf)) return;
+          // an unaccented token can only be a monosyllabic imperative (dame,
+          // hazlo) or the -os vosotros form, which never takes one (levantaos)
+          // A vosotros imperative ends in -d and is stressed on that syllable,
+          // so attaching one clitic leaves the stress penultimate and no accent
+          // is written: dedicadle, dadme, vendedlo.
+          var vosD = a.person === 'vosotros' && /d$/.test(x.b) && single;
+          if (!accented && !x.free && !vosD && !MONO_IMPERATIVES[deaccent(x.b)]) return;
+          var k = a.inf + a.person + cand.clitics.join('');
+          if (seen[k]) return; seen[k] = 1;
+          found.push({ inf: a.inf, tense: a.tense, person: a.person, form: a.form,
+                       type: a.type, accentExact: true, clitics: cand.clitics });
+        });
+      });
+    });
+    return found;
   }
 
   function isParticiple(tok) { ensureIndex(); return !!_partIdx[deaccent(tok.toLowerCase())]; }

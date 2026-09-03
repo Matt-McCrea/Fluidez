@@ -2754,7 +2754,7 @@ window.STRAND_LESSONS = [
   ],
   model: {
     title: 'Horóscopo: Piscis',
-    text: 'Esta semana viene cargada de energía positiva. En el trabajo, es un buen momento para proponer nuevas ideas: alguien importante te va a escuchar. En el amor, si tienes pareja, dedicadle más tiempo; si estás soltero, es posible que conozcas a alguien interesante en una reunión con amigos. Cuida tu salud: duerme al menos ocho horas y bebe mucha agua.'
+    text: 'Esta semana viene cargada de energía positiva. En el trabajo, es un buen momento para proponer nuevas ideas: alguien importante te va a escuchar. En el amor, si tienes pareja, dedícale más tiempo; si estás soltero, es posible que conozcas a alguien interesante en una reunión con amigos. Cuida tu salud: duerme al menos ocho horas y bebe mucha agua.'
   },
   checklist: [
     '¿Identificaste el tipo de texto antes de leer?',
@@ -2857,6 +2857,100 @@ window.STRAND_LESSONS = [
       text: 'Hoy os voy a ___ de mi ciudad.', accept: ['hablar'] },
     { id: 'p:presentacionpublicaa2:recall', kind: 'recall',
       front: 'The three reliable moves of a short public presentation', back: 'introducción, desarrollo, cierre' }
+  ]
+},
+
+/* ---------------------------------------------------------------------------
+ * NOTION — A1. Existence and presence. The `notion` strand teaches the
+ * LINGUISTIC MEANS for a semantic category (nociones generales), so its
+ * exponents are grammatical choices rather than social ones — which is why it
+ * carries no register-contrast requirement in data/taxonomy.js.
+ * ------------------------------------------------------------------------ */
+{
+  id: 'nt-existencia-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  pcic: ['nociones_generales:A1:1', 'nociones_generales:A1:6', 'nociones_generales:A1:7',
+         'nociones_generales:A1:8'],
+  title: 'Existencia y presencia: hay, estar, tener',
+  summary: 'Spanish splits one English idea — "there is / it is there" — across three verbs, and picks between them by whether the thing is NEW to the conversation or already known. Choosing wrongly is the single most persistent A1 error, and it survives well into B1.',
+  sections: [
+    { h: 'The rule', html: '<b>hay</b> introduces something for the first time — it is always followed by an indefinite (<i>un</i>, <i>dos</i>, <i>mucha</i>) or nothing at all. <b>está</b> locates something already identified — so it follows <i>el</i>, <i>la</i>, a name or a possessive. New thing → <i>hay</i>. Known thing → <i>está</i>.' },
+    { h: 'Why "hay un" but never "hay el"', html: '<i>Hay</i> announces existence, and you cannot announce something the listener already knows about. <i>Hay una farmacia</i> ✓. <i>*Hay la farmacia</i> ✗ — if the pharmacy is already known, you want <i>La farmacia está en esta calle</i>.' },
+    { h: 'tener for possession', html: 'Where the existence belongs to somebody, Spanish uses <b>tener</b>: <i>Mi barrio tiene dos farmacias</i> puts the neighbourhood in the subject, <i>En mi barrio hay dos farmacias</i> just reports the fact.' },
+    { h: 'con and sin', html: 'Presence and absence of an accompanying thing use <b>con</b> / <b>sin</b>, with no verb at all: <i>Sin azúcar, por favor.</i>' }
+  ],
+  exponents: [
+    { es: 'En mi barrio hay dos farmacias.', en: 'There are two pharmacies in my neighbourhood.', register: 'neutral', note: 'hay + a number: new information' },
+    { es: 'Hay mucha gente en la calle.', en: 'There are a lot of people in the street.', register: 'neutral', note: 'hay + quantifier' },
+    { es: 'La farmacia está en esta calle.', en: 'The pharmacy is on this street.', register: 'neutral', note: 'estar + definite: already known' },
+    { es: 'Luisa no está aquí.', en: "Luisa isn't here.", register: 'neutral', note: 'a named person is always known — never "no hay Luisa"' },
+    { es: 'Mi casa tiene tres habitaciones.', en: 'My house has three rooms.', register: 'neutral', note: 'tener: the existence belongs to a possessor' },
+    { es: 'Sin azúcar, por favor.', en: 'Without sugar, please.', register: 'neutral', note: 'absence with no verb at all' }
+  ],
+  contrasts: [
+    { es: 'Hay un banco en la plaza.', en: 'There is a bank in the square.', note: 'new — the listener did not know of it' },
+    { es: 'El banco está en la plaza.', en: 'The bank is in the square.', note: 'known — we were already talking about the bank' },
+    { es: '*Hay el banco en la plaza.', en: '(impossible)', note: 'hay cannot take a definite article' },
+    { es: '*No hay Luisa aquí.', en: '(impossible)', note: 'a name is definite — use "Luisa no está aquí"' }
+  ],
+  pitfalls: [
+    '<i>Hay</i> never changes for number: <i>hay una farmacia</i>, <i>hay dos farmacias</i>. Saying <i>*han dos farmacias</i> is a common and very audible error.',
+    'Never put a definite article, a name or a possessive after <i>hay</i>. If you can say "the" in English, you want <i>estar</i>.',
+    '<i>Hay</i> is impersonal — it has no subject. <i>*Mi barrio hay dos farmacias</i> is wrong; either <i>En mi barrio hay…</i> or <i>Mi barrio tiene…</i>.'
+  ],
+  examples: [
+    { es: '—¿Hay una farmacia por aquí? —Sí, la farmacia está al lado del banco.', en: '—Is there a pharmacy near here? —Yes, the pharmacy is next to the bank.' },
+    { es: 'En esta calle no hay ningún restaurante.', en: 'There is no restaurant on this street.' },
+    { es: 'Mi habitación tiene una ventana muy grande.', en: 'My room has a very big window.' }
+  ],
+  probes: [
+    { id: 'p:exist:new', kind: 'mcq', q: 'Es la primera vez que lo mencionas: "___ un banco en la plaza."',
+      options: ['Hay', 'Está', 'Tiene'], answer: 0 },
+    { id: 'p:exist:known', kind: 'mcq', q: 'Ya hablabais del banco: "El banco ___ en la plaza."',
+      options: ['hay', 'está', 'tiene'], answer: 1 },
+    { id: 'p:exist:name', kind: 'cloze', text: 'Luisa no ___ aquí.', accept: ['está'] },
+    { id: 'p:exist:recall', kind: 'recall', front: 'After hay, which article is impossible — el/la or un/una?', back: 'el/la (hay takes only indefinites)' }
+  ]
+},
+
+/* ---------------------------------------------------------------------------
+ * GRAMMAR — A2. Grammar-strand lessons live here alongside the other strands,
+ * not in data/grammar.js: js/lessons.js merges STRAND_LESSONS into the
+ * syllabus, and this file is where the PCIC tags and probes belong.
+ * data/grammar.js keeps only the original hand-written concept lessons.
+ * ------------------------------------------------------------------------ */
+{
+  id: 'gr-demostrativos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A1:128', 'gramatica:A1:131', 'gramatica:A1:132', 'gramatica:A1:133'],
+  title: 'Los demostrativos: este, ese, aquel',
+  summary: 'English points twice — this and that. Spanish points three times, and the third one matters: este is near me, ese is near you, aquel is near neither of us. The system tracks the LISTENER, not just distance, which is why choosing by metres alone goes wrong.',
+  sections: [
+    { h: 'Three distances, not two', html: '<b>este</b> = close to the speaker. <b>ese</b> = close to the person you are talking to. <b>aquel</b> = away from both. In a shop, the shirt in your hand is <i>esta</i>, the one in the assistant\'s hand is <i>esa</i>, the one across the room is <i>aquella</i>.' },
+    { h: 'Forms', html: 'Each agrees with its noun: <i>este/esta/estos/estas</i>, <i>ese/esa/esos/esas</i>, <i>aquel/aquella/aquellos/aquellas</i>. They go before the noun: <i>este libro</i>, <i>aquellas casas</i>.' },
+    { h: 'The neuter: esto, eso, aquello', html: 'When you do not know what the thing IS, or you are pointing at a whole situation rather than an object, use the invariable neuter: <i>¿Qué es esto?</i>, <i>Eso no es verdad</i>. It has no plural and never takes a noun after it.' }
+  ],
+  contrasts: [
+    { es: 'Este libro es mío.', en: 'This book is mine.', note: 'in my hands' },
+    { es: 'Ese libro es interesante.', en: 'That book is interesting.', note: 'in yours, or next to you' },
+    { es: 'Aquel libro de allí es muy caro.', en: 'That book over there is very expensive.', note: 'far from us both' },
+    { es: '¿Qué es esto?', en: 'What is this?', note: 'neuter — you do not yet know what the thing is, so it has no gender' }
+  ],
+  pitfalls: [
+    'Do not choose by distance alone: <i>ese</i> is about the LISTENER. Something a metre away but next to them is <i>ese</i>, not <i>este</i>.',
+    'The neuter forms <i>esto/eso/aquello</i> never take a noun. <i>*esto libro</i> is wrong — once you name the thing you know its gender, so it is <i>este libro</i>.',
+    'Spanish no longer writes an accent on éste/ése; modern spelling uses <i>este</i>, <i>ese</i> for both the adjective and the pronoun.'
+  ],
+  examples: [
+    { es: '—¿Cuál prefiere, esta camisa o esa? —Aquella del escaparate.', en: '—Which do you prefer, this shirt or that one? —The one in the window.' },
+    { es: 'Esto no me gusta nada.', en: "I don't like this at all." },
+    { es: 'En aquella época no había teléfonos móviles.', en: 'In those days there were no mobile phones.' }
+  ],
+  probes: [
+    { id: 'p:dem:listener', kind: 'mcq', q: 'El libro está en las manos de tu interlocutor. ¿Cómo lo llamas?',
+      options: ['este libro', 'ese libro', 'aquel libro'], answer: 1 },
+    { id: 'p:dem:neuter', kind: 'mcq', q: 'No sabes qué es el objeto. ¿Qué preguntas?',
+      options: ['¿Qué es este?', '¿Qué es esto?', '¿Qué es esta?'], answer: 1 },
+    { id: 'p:dem:agree', kind: 'cloze', text: '___ casas de allí son muy antiguas. (lejos de los dos)', accept: ['Aquellas', 'aquellas'] },
+    { id: 'p:dem:recall', kind: 'recall', front: 'Which demonstrative marks nearness to the LISTENER?', back: 'ese / esa / esos / esas' }
   ]
 }
 

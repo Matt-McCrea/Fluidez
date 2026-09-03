@@ -73,12 +73,20 @@ expressed either as a schema the validator enforces or as a rule below.
 | `spec/syllabus-draft.json` | 1,071 lesson units + 575 vocab days, each carrying the `spec` patterns and `examples` it must teach |
 | `data/taxonomy.js` | LEVELS, STRANDS, REGISTERS, THEMES — the only legal tag values |
 | `data/connectors.js` | 72 discourse markers in 12 PCIC classes |
-| `data/strand-lessons.js` | **Three worked templates — read these before writing anything** |
-| `spec/verb-queue.json` | ~560 verbs the syllabus needs and `data/verbs.js` lacks |
-| `spec/vocab-queue.json` | ~3,700 vocabulary entries needing only an English gloss |
+| `data/strand-lessons.js` | **Five worked templates, one per strand — read these before writing anything** |
+| `spec/verb-queue.json` | verbs the syllabus needs and `data/verbs.js` lacks |
+| `spec/vocab-queue.json` | every derived vocabulary entry; `known:false` marks those still to write |
+| `spec/collocation-queue.json` | ~1,850 collocations with no vocabulary entry to hang from — add as entries, only `en` is missing |
 
-The three seed lessons are the specification by example: `fn-acuerdo-b2`
-(function), `dc-atenuacion-c1` (discourse), `gn-reclamacion-b2` (genre).
+The seed lessons are the specification by example: `fn-acuerdo-b2` (function),
+`dc-atenuacion-c1` (discourse), `gn-reclamacion-b2` (genre),
+`nt-existencia-a1` (notion), `gr-demostrativos-a2` (grammar).
+
+**Address consistency is now checked.** A text addressing one reader as tú must
+not slip into vosotros — an A2 model read *"si tienes pareja, dedicadle más
+tiempo"* and no gate could see it. The engine now also parses enclitic forms
+(dímelo, ayúdame, levantaos), so the writing checker can finally see the
+imperatives the app teaches.
 
 ## Phase 0 — build the palette FIRST
 
@@ -122,6 +130,17 @@ the PCIC supplies the Spanish, you supply the English, the register and the
 `note`.
 
 **`discourse`** — `exponents` and `pitfalls`. No `contrasts`.
+
+**`notion`** — `exponents`, `contrasts`, `pitfalls`. These teach the linguistic
+means for a semantic category (existence, quantity, space, time, quality), so
+their exponents are grammatical choices, not social ones: **no register
+contrast is required** and `neutral` throughout is correct. Template:
+`nt-existencia-a1`.
+
+**`grammar`** — `contrasts` and `pitfalls`, no `exponents`. Grammar lessons go
+in `data/strand-lessons.js` like every other strand, NOT in `data/grammar.js`
+(which keeps only the original hand-written concept lessons). `js/lessons.js`
+merges them into the syllabus. Template: `gr-demostrativos-a2`.
 
 **`genre`** — `moves` (≥2, the rhetorical structure in order), `model` (a real
 text of the genre, 120–250 words), `checklist` (≥2 pre-send checks). No

@@ -65,14 +65,23 @@ function collocations(pattern) {
   if (p.indexOf('~') < 0) return [];
   const segs = stripNotes(p).split('~').map(s => s.trim()).filter(Boolean);
   if (segs.length < 2) return [];
-  let combos = [segs[0]];
+  // the head can carry alternatives too: "llevar/tener ~ barba"
+  let combos = segs[0].split('/').map(x => x.trim()).filter(Boolean);
   segs.slice(1).forEach(seg => {
     const alts = seg.split('/').map(s => s.trim()).filter(Boolean);
     const next = [];
     combos.forEach(c => alts.forEach(a => next.push((c + ' ' + a).replace(/\s+/g, ' ').trim())));
     combos = next.slice(0, 12);                     // guard against a blow-up
   });
-  return [...new Set(combos.filter(c => c.split(/\s+/).length <= 6))];
+  // The inventory also uses commas to write plain LISTS ("pasaporte, carné de
+   // identidad"), which are not collocation frames. Anything that comes out
+   // still carrying a comma, a bracket or a slash is a mis-parse, not a
+   // collocation, and is dropped rather than shipped.
+  return [...new Set(combos.filter(c => {
+    if (/[(),/]/.test(c)) return false;
+    const n = c.split(/\s+/).length;
+    return n >= 2 && n <= 6;
+  }))];
 }
 
 module.exports = { headwords, collocations };

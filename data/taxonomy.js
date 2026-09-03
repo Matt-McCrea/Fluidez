@@ -71,18 +71,31 @@ window.SUPPORT = [
   { code: 'fast',     label: 'Fast',     hintsAlways: false, bankFallback: false, paceRepeat: 1 }
 ];
 
-/* ---- STRANDS — the five kinds of thing a lesson can teach --------------
- * Mapped one-to-one onto the PCIC inventories they are derived from. `blocks`
- * lists the optional lesson sections that are meaningful for that strand; the
- * validator uses it to reject a genre lesson carrying `exponents`, and so on.
- * ========================================================================== */
+/* ---- STRANDS — the kinds of thing a lesson can teach --------------------
+ * One per PCIC inventory. `notion` (nociones generales) and `lexis` (nociones
+ * específicas) come from DIFFERENT inventories and are not the same thing: a
+ * notion lesson teaches the linguistic means for a semantic category —
+ * existence, quantity, space, time, quality — while lexis is topical
+ * vocabulary. Conflating them left 258 syllabus units with no valid strand.
+ *
+ * `registerContrast` marks the strands whose whole point is the social choice
+ * between forms, and whose exponents must therefore span at least two
+ * registers. A notion lesson's exponents are grammatical means (haber vs
+ * estar vs tener), not social ones, so it carries no such requirement.
+ * `blocks` lists the lesson sections meaningful for a strand; the validator
+ * rejects a genre lesson carrying `exponents`, and so on.
+ * ------------------------------------------------------------------------ */
 window.STRANDS = [
   { id: 'grammar',   label: 'Gramática',  inventory: 'gramatica',
     blocks: ['sections', 'contrasts', 'pitfalls', 'examples'] },
   { id: 'function',  label: 'Funciones',  inventory: 'funciones',
-    blocks: ['sections', 'exponents', 'contrasts', 'pitfalls', 'examples'] },
+    blocks: ['sections', 'exponents', 'contrasts', 'pitfalls', 'examples'],
+    registerContrast: true },
   { id: 'discourse', label: 'Discurso',   inventory: 'tacticas_pragmaticas',
-    blocks: ['sections', 'exponents', 'pitfalls', 'examples'] },
+    blocks: ['sections', 'exponents', 'pitfalls', 'examples'],
+    registerContrast: true },
+  { id: 'notion',    label: 'Nociones',   inventory: 'nociones_generales',
+    blocks: ['sections', 'exponents', 'contrasts', 'pitfalls', 'examples'] },
   { id: 'genre',     label: 'Géneros',    inventory: 'generos_discursivos',
     blocks: ['sections', 'moves', 'model', 'checklist', 'examples'] },
   { id: 'lexis',     label: 'Léxico',     inventory: 'nociones_especificas',
