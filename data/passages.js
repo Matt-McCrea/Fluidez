@@ -2045,6 +2045,204 @@ window.PASSAGES = [
     { type: 'short', q: '¿Qué podrán hacer los abuelos cuando terminen de pagar la casa? (una palabra)', accept: ['viajar', 'viajar juntos'] },
     { type: 'translate', line: 'Ojalá que esta nueva etapa les traiga mucha felicidad.', model: 'I hope this new stage brings them much happiness.' }
   ]
+},
+
+{
+  id: 'rana-amazonia', title: 'Un descubrimiento inesperado', level: 4,
+  text: 'La semana pasada, un grupo de científicos anunció que habían descubierto una nueva especie de rana en la selva amazónica. Los investigadores llevaban meses buscando pruebas de que existía, pero nadie esperaba encontrarla tan rápido. Es posible que esta especie ayude a entender mejor cómo los anfibios se adaptan al cambio climático. El equipo espera que el gobierno proteja la zona donde la encontraron, porque muchas otras especies desconocidas podrían vivir allí también. Antes de este viaje, los científicos ya habían explorado otras partes de la selva sin éxito. Ahora quieren que más gobiernos financien este tipo de investigación, porque cada especie perdida representa información que nunca podremos recuperar.',
+  gloss: [
+    { es: 'anfibios', en: 'amphibians' },
+    { es: 'especie', en: 'species' },
+    { es: 'financien', en: '(that they) fund' },
+    { es: 'sin éxito', en: 'without success' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué descubrieron los científicos?', options: ['Una nueva especie de rana', 'Un nuevo tipo de selva', 'Una especie de pájaro'], answer: 0 },
+    { type: 'mcq', q: '¿Qué esperan los científicos que haga el gobierno?', options: ['Que financie otro viaje', 'Que proteja la zona', 'Que cierre la selva'], answer: 1 },
+    { type: 'short', q: '¿Dónde encontraron la rana? (una palabra)', accept: ['amazonia', 'selva', 'amazónica'] },
+    { type: 'translate', line: 'Antes de este viaje, los científicos ya habían explorado otras partes de la selva sin éxito.', model: 'Before this trip, the scientists had already explored other parts of the jungle without success.' }
+  ]
+},
+
+{
+  id: 'ley-vivienda', title: 'Una nueva ley de vivienda', level: 4,
+  text: 'El gobierno ha propuesto una nueva ley para controlar el precio de los alquileres en las grandes ciudades. Muchos ciudadanos están contentos porque llevan años pidiendo que se haga algo. Sin embargo, algunos propietarios se oponen y dicen que la ley reducirá la oferta de pisos disponibles. Antes de presentar la ley, el gobierno ya había consultado a varios expertos en economía. Es probable que el parlamento debata la propuesta durante todo el mes que viene. Los partidos de la oposición piden que se estudien también otras soluciones, como construir más vivienda pública. Nadie sabe todavía si la ley conseguirá bajar los precios de verdad.',
+  gloss: [
+    { es: 'alquileres', en: 'rents' },
+    { es: 'propietarios', en: 'landlords' },
+    { es: 'oferta', en: 'supply' },
+    { es: 'vivienda pública', en: 'public housing' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué propone la nueva ley?', options: ['Controlar el precio de los alquileres', 'Eliminar los impuestos', 'Construir más carreteras'], answer: 0 },
+    { type: 'mcq', q: '¿Qué piden los partidos de la oposición?', options: ['Que se estudien otras soluciones', 'Que se elimine la ley', 'Que suban los alquileres'], answer: 0 },
+    { type: 'short', q: '¿Quién se opone a la ley? (una palabra)', accept: ['propietarios', 'los propietarios'] },
+    { type: 'translate', line: 'Antes de presentar la ley, el gobierno ya había consultado a varios expertos en economía.', model: 'Before presenting the law, the government had already consulted several economics experts.' }
+  ]
+},
+
+{
+  id: 'periodico-digital', title: 'El fin de un periódico centenario', level: 5,
+  text: 'Ayer se anunció que el periódico más antiguo de la ciudad dejará de publicarse en papel a partir de enero. Para entonces, la empresa ya habrá despedido a la mitad de su plantilla. Muchos lectores lamentan la noticia, aunque reconocen que hace años que preferían leer las noticias en el móvil. Los expertos creen que la empresa habría evitado esta crisis con una mejor estrategia digital. Los periodistas más jóvenes esperan que la marca sobreviva solo en internet, aunque dudan que consiga los mismos ingresos que antes. Ojalá que este cambio no signifique el final de un periodismo local de calidad.',
+  gloss: [
+    { es: 'plantilla', en: 'staff' },
+    { es: 'ingresos', en: 'income, revenue' },
+    { es: 'periodismo', en: 'journalism' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pasará con el periódico a partir de enero?', options: ['Dejará de publicarse en papel', 'Subirá el precio', 'Cambiará de nombre'], answer: 0 },
+    { type: 'mcq', q: '¿Qué esperan los periodistas más jóvenes?', options: ['Que la marca sobreviva en internet', 'Que el periódico cierre del todo', 'Que vuelva a imprimirse pronto'], answer: 0 },
+    { type: 'short', q: '¿Dónde prefieren leer las noticias muchos lectores? (una palabra)', accept: ['móvil', 'el móvil'] },
+    { type: 'translate', line: 'Los expertos creen que la empresa habría evitado esta crisis con una mejor estrategia digital.', model: 'Experts believe the company would have avoided this crisis with a better digital strategy.' }
+  ]
+},
+
+{
+  id: 'incendio-pueblo', title: 'Un incendio cerca del pueblo', level: 4,
+  text: 'El fin de semana pasado, un incendio forestal se acercó peligrosamente al pueblo donde vive mi tía. Los bomberos pidieron que todos los vecinos abandonaran sus casas por seguridad. Antes de que llegaran las llamas, muchas familias ya habían salido con lo más importante. Mi tía dice que nunca había visto algo tan aterrador en su vida. Los expertos creen que la sequía de este verano ha empeorado la situación mucho. Ahora esperan que llueva pronto para que el fuego se apague del todo. Aunque el pueblo está a salvo, muchos árboles y animales han muerto en el incendio.',
+  gloss: [
+    { es: 'incendio', en: 'fire' },
+    { es: 'bomberos', en: 'firefighters' },
+    { es: 'sequía', en: 'drought' },
+    { es: 'a salvo', en: 'safe' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pidieron los bomberos?', options: ['Que los vecinos abandonaran sus casas', 'Que apagaran las luces', 'Que llamaran a la policía'], answer: 0 },
+    { type: 'mcq', q: '¿Qué creen los expertos que empeoró la situación?', options: ['La sequía del verano', 'La lluvia', 'El viento fuerte'], answer: 0 },
+    { type: 'short', q: '¿Qué esperan ahora los expertos? (dos palabras)', accept: ['que llueva', 'llueva pronto'] },
+    { type: 'translate', line: 'Mi tía dice que nunca había visto algo tan aterrador en su vida.', model: 'My aunt says she had never seen anything so terrifying in her life.' }
+  ]
+},
+
+{
+  id: 'subida-precios', title: 'La subida de precios en el supermercado', level: 5,
+  text: 'Este mes, los precios de los alimentos básicos han subido más que en los últimos diez años. Para finales de año, muchas familias ya habrán reducido su gasto en comida considerablemente. Los economistas dudan que esta subida se deba solo a la guerra en otros países; también influyen los costes de producción y transporte. Algunos creen que una mejor planificación habría evitado parte de esta subida. Las asociaciones de consumidores piden que se controlen los precios de los productos esenciales. Muchos ciudadanos habrían preferido pequeñas subidas graduales en vez de este cambio tan repentino.',
+  gloss: [
+    { es: 'alimentos', en: 'food' },
+    { es: 'gasto', en: 'spending' },
+    { es: 'subida', en: 'increase, rise' },
+    { es: 'repentino', en: 'sudden' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto han subido los precios este mes?', options: ['Más que en los últimos diez años', 'Un poco menos que el año pasado', 'No han cambiado'], answer: 0 },
+    { type: 'mcq', q: '¿Qué piden las asociaciones de consumidores?', options: ['Que se controlen los precios esenciales', 'Que bajen los impuestos', 'Que cierren los supermercados'], answer: 0 },
+    { type: 'short', q: '¿Qué habrían preferido muchos ciudadanos? (dos palabras)', accept: ['subidas graduales', 'pequeñas subidas graduales'] },
+    { type: 'translate', line: 'Algunos creen que una mejor planificación habría evitado parte de esta subida.', model: 'Some believe that better planning would have prevented part of this increase.' }
+  ]
+},
+
+{
+  id: 'cambio-carrera-b1', title: 'Un cambio de carrera a los cuarenta', level: 4,
+  text: 'A los cuarenta años, Marcos decidió dejar su trabajo de abogado para dedicarse a la cocina. Sus padres no entendían por qué quería empezar de cero después de tantos años de estudios. Antes de tomar la decisión, Marcos ya había ahorrado suficiente dinero para vivir un año sin trabajar. Es importante que las personas hagan lo que realmente les hace felices, decía siempre a sus amigos. Al principio, algunos dudaban que un abogado pudiera convertirse en buen cocinero tan rápido. Ahora, dos años después, Marcos dirige su propio restaurante y espera que sus padres visiten pronto para probar su comida.',
+  gloss: [
+    { es: 'abogado', en: 'lawyer' },
+    { es: 'empezar de cero', en: 'to start from scratch' },
+    { es: 'ahorrado', en: 'saved (money)' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué decidió hacer Marcos a los cuarenta años?', options: ['Dejar su trabajo de abogado', 'Estudiar derecho', 'Mudarse a otro país'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dudaban algunos al principio?', options: ['Que pudiera convertirse en buen cocinero', 'Que tuviera suficiente dinero', 'Que sus padres lo apoyaran'], answer: 0 },
+    { type: 'short', q: '¿Qué dirige Marcos ahora? (dos palabras)', accept: ['su propio restaurante', 'un restaurante'] },
+    { type: 'translate', line: 'Antes de tomar la decisión, Marcos ya había ahorrado suficiente dinero para vivir un año sin trabajar.', model: 'Before making the decision, Marcos had already saved enough money to live a year without working.' }
+  ]
+},
+
+{
+  id: 'maraton-lesion', title: 'El maratón que casi no corrió', level: 5,
+  text: 'Dos semanas antes del maratón, Sara se lesionó la rodilla entrenando. Para el día de la carrera, ya habrá pasado un mes desde la lesión, así que los médicos le dijeron que corriera con cuidado. Al principio, Sara dudaba que pudiera terminar los cuarenta y dos kilómetros sin parar. Sus amigos esperan que haya recuperado toda su fuerza para entonces. Los médicos creen que un descanso más largo habría acelerado la recuperación. Aun así, ella está decidida a cruzar la meta, aunque tenga que caminar los últimos kilómetros.',
+  gloss: [
+    { es: 'lesionó', en: 'injured' },
+    { es: 'rodilla', en: 'knee' },
+    { es: 'meta', en: 'finish line' },
+    { es: 'aun así', en: 'even so' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le pasó a Sara dos semanas antes del maratón?', options: ['Se lesionó la rodilla', 'Perdió sus zapatillas', 'Se resfrió'], answer: 0 },
+    { type: 'mcq', q: '¿Qué esperan sus amigos?', options: ['Que haya recuperado toda su fuerza', 'Que abandone la carrera', 'Que se lesione de nuevo'], answer: 0 },
+    { type: 'short', q: '¿Cuántos kilómetros tiene el maratón? (un número)', accept: ['42', 'cuarenta y dos'] },
+    { type: 'translate', line: 'Los médicos creen que un descanso más largo habría acelerado la recuperación.', model: 'The doctors believe that a longer rest would have sped up the recovery.' }
+  ]
+},
+
+{
+  id: 'huelga-profesores', title: 'La huelga de profesores', level: 4,
+  text: 'Esta semana, los profesores de varios institutos empezaron una huelga para pedir mejores condiciones de trabajo. Los sindicatos exigen que el gobierno contrate a más personal y que reduzca el número de alumnos por clase. Antes de decidir la huelga, los profesores ya habían intentado negociar durante meses sin ningún resultado. Muchos padres apoyan la protesta, aunque también les preocupa que sus hijos pierdan clases importantes. El ministro de educación pidió que las dos partes volvieran a la mesa de negociación cuanto antes. Nadie sabe todavía cuánto tiempo durará la huelga.',
+  gloss: [
+    { es: 'huelga', en: 'strike' },
+    { es: 'sindicatos', en: 'unions' },
+    { es: 'alumnos', en: 'students' },
+    { es: 'negociación', en: 'negotiation' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué empezaron la huelga los profesores?', options: ['Para pedir mejores condiciones de trabajo', 'Para pedir vacaciones más largas', 'Para cambiar de instituto'], answer: 0 },
+    { type: 'mcq', q: '¿Qué exigen los sindicatos?', options: ['Más personal y menos alumnos por clase', 'Menos vacaciones', 'Salarios más bajos'], answer: 0 },
+    { type: 'short', q: '¿Qué pidió el ministro de educación? (dos palabras)', accept: ['volver a negociar', 'la negociación'] },
+    { type: 'translate', line: 'Antes de decidir la huelga, los profesores ya habían intentado negociar durante meses sin ningún resultado.', model: 'Before deciding on the strike, the teachers had already tried negotiating for months with no result.' }
+  ]
+},
+
+{
+  id: 'vuelo-cancelado', title: 'Un vuelo cancelado en el último momento', level: 4,
+  text: 'Cuando Elena y su marido llegaron al aeropuerto, ya habían facturado las maletas cuando anunciaron que su vuelo se cancelaba por mal tiempo. La aerolínea les pidió que esperaran en una sala especial mientras buscaban una solución. Elena estaba furiosa porque llevaban meses planeando ese viaje a Portugal. Es normal que la gente se enfade en estas situaciones, dijo el empleado, intentando calmarla. Finalmente, les ofrecieron un vuelo para el día siguiente y una noche gratis en un hotel cercano. Aunque perdieron un día de vacaciones, Elena reconoce que la aerolínea gestionó bien el problema.',
+  gloss: [
+    { es: 'facturado', en: 'checked in (luggage)' },
+    { es: 'aerolínea', en: 'airline' },
+    { es: 'gestionó', en: 'handled' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué se canceló el vuelo?', options: ['Por mal tiempo', 'Por un problema técnico', 'Por una huelga'], answer: 0 },
+    { type: 'mcq', q: '¿Qué les ofreció la aerolínea?', options: ['Un vuelo al día siguiente y un hotel gratis', 'Un reembolso completo', 'Nada'], answer: 0 },
+    { type: 'short', q: '¿Adónde viajaban Elena y su marido? (una palabra)', accept: ['portugal', 'a portugal'] },
+    { type: 'translate', line: 'Elena estaba furiosa porque llevaban meses planeando ese viaje a Portugal.', model: 'Elena was furious because they had spent months planning that trip to Portugal.' }
+  ]
+},
+
+{
+  id: 'amistad-reencuentro', title: 'Una amistad de toda la vida', level: 5,
+  text: 'Cuando Rosa y Carmen se reencontraron después de veinte años, ambas habían cambiado mucho. Para entonces, Rosa ya se había casado dos veces y Carmen nunca se había mudado del pueblo donde nacieron. Al principio, dudaban que todavía tuvieran algo en común. Sin embargo, en cuanto empezaron a hablar, se dieron cuenta de que la conexión seguía intacta. Rosa dice que, para el próximo verano, ya habrán organizado un viaje juntas, algo que llevaban años prometiéndose. Espera que esta vez cumplan la promesa de verdad.',
+  gloss: [
+    { es: 'reencontraron', en: 'met again' },
+    { es: 'mudado', en: 'moved (house)' },
+    { es: 'prometiéndose', en: 'promising each other' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto tiempo pasó antes de que Rosa y Carmen se reencontraran?', options: ['Veinte años', 'Diez años', 'Cinco años'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dudaban al principio?', options: ['Que todavía tuvieran algo en común', 'Que se reconocieran', 'Que vivieran cerca'], answer: 0 },
+    { type: 'short', q: '¿Qué planean organizar para el próximo verano? (una palabra)', accept: ['viaje', 'un viaje'] },
+    { type: 'translate', line: 'Sin embargo, en cuanto empezaron a hablar, se dieron cuenta de que la conexión seguía intacta.', model: 'However, as soon as they started talking, they realized the connection was still intact.' }
+  ]
+},
+
+{
+  id: 'calefaccion-averia', title: 'Problemas con la calefacción', level: 4,
+  text: 'Desde hace una semana, la calefacción del edificio no funciona bien y varios vecinos se han quejado al administrador. Antes de este invierno, ya habían tenido problemas parecidos, pero nunca tan graves. El administrador espera que la empresa de mantenimiento venga a revisar el sistema esta misma semana. Algunos vecinos piden que se instale un sistema completamente nuevo, aunque eso costaría mucho dinero. Mientras tanto, muchas familias usan estufas eléctricas para no pasar frío por las noches. Todos esperan que el problema se resuelva antes de que lleguen las temperaturas más bajas del año.',
+  gloss: [
+    { es: 'calefacción', en: 'heating' },
+    { es: 'administrador', en: 'building manager' },
+    { es: 'estufas', en: 'heaters' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué problema tiene el edificio?', options: ['La calefacción no funciona bien', 'Se ha ido la luz', 'Hay una gotera'], answer: 0 },
+    { type: 'mcq', q: '¿Qué piden algunos vecinos?', options: ['Que se instale un sistema nuevo', 'Que bajen el alquiler', 'Que cambien de administrador'], answer: 0 },
+    { type: 'short', q: '¿Qué usan las familias para no pasar frío? (dos palabras)', accept: ['estufas eléctricas', 'estufas electricas'] },
+    { type: 'translate', line: 'El administrador espera que la empresa de mantenimiento venga a revisar el sistema esta misma semana.', model: 'The building manager hopes the maintenance company will come to check the system this very week.' }
+  ]
+},
+
+{
+  id: 'exposicion-arte-urbano', title: 'La exposición que nadie esperaba', level: 5,
+  text: 'Cuando el museo anunció una exposición sobre arte urbano, muchos críticos dudaban que atrajera a mucho público. Sin embargo, para el segundo mes, ya habrán pasado más de cien mil visitantes por las salas. Antes de esta exposición, el museo nunca había dedicado tanto espacio a artistas jóvenes y desconocidos. Los organizadores esperan que este éxito anime a otros museos a arriesgarse con propuestas parecidas. Algunos puristas todavía piensan que el grafiti no debería estar en un museo, pero la mayoría del público no está de acuerdo. El director está seguro de que habría sido un error no organizar esta muestra.',
+  gloss: [
+    { es: 'exposición', en: 'exhibition' },
+    { es: 'puristas', en: 'purists' },
+    { es: 'muestra', en: 'exhibit, show' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Sobre qué es la exposición?', options: ['Arte urbano', 'Pintura clásica', 'Fotografía histórica'], answer: 0 },
+    { type: 'mcq', q: '¿Qué esperan los organizadores?', options: ['Que el éxito anime a otros museos', 'Que la exposición termine pronto', 'Que suban las entradas'], answer: 0 },
+    { type: 'short', q: '¿Cuántos visitantes habrán pasado para el segundo mes? (una cifra)', accept: ['cien mil', 'más de cien mil'] },
+    { type: 'translate', line: 'El director está seguro de que habría sido un error no organizar esta muestra.', model: 'The director is sure it would have been a mistake not to organize this exhibition.' }
+  ]
 }
 
 ];

@@ -1409,5 +1409,9 @@ window.VERBS = [
 { inf:'temblar', en:'to tremble, to shake', type:'ar', stem:'ie' },
 { inf:'filtrar', en:'to filter', type:'ar' },
 { inf:'repoblar', en:'to repopulate, to reforest', type:'ar', stem:'ue' },
-{ inf:'reforestar', en:'to reforest', type:'ar' }
+{ inf:'reforestar', en:'to reforest', type:'ar' },
+
+{ inf:'quejarse', en:'to complain', type:'ar' },
+{ inf:'reencontrarse', en:'to meet again, to be reunited', type:'ar', like:'encontrarse' },
+{ inf:'animar', en:'to encourage, to cheer up', type:'ar' }
 ];
