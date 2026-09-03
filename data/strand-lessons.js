@@ -10282,6 +10282,386 @@ window.STRAND_LESSONS = [
     { id: 'p:brindisb1:cloze', kind: 'cloze', text: '___ los novios. (por)', accept: ['Por', 'por'] },
     { id: 'p:brindisb1:recall', kind: 'recall', front: 'Does por + noun need a verb to work as a toast?', back: 'no' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 function, wave 5 of 5 (final): the rest of "relacionarse
+ * socialmente" and all of "estructurar el discurso" (seq 448-461). This
+ * closes every outstanding B1 function unit.
+ * ========================================================================== */
+{
+  id: 'fn-buenos-deseos-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1384', 'funciones:B1:1385', 'funciones:B1:1386', 'funciones:B1:1387', 'funciones:B1:1392', 'funciones:B1:1396'],
+  title: 'Formular buenos deseos: dos formas, un mismo deseo',
+  summary: 'Que te diviertas and Diviértete wish the exact same thing through two different structures — a subjunctive wish and a bare imperative — and the choice between them is purely stylistic, not a difference in politeness or meaning.',
+  sections: [
+    { h: 'Que + subjuntivo: a wish, grammatically', html: '<i>Que te diviertas</i>, <i>Que descanses</i> — the bare wish-formula already met, applied to leaving/resting.' },
+    { h: 'The imperative alternative', html: 'The identical wish, phrased as a command instead: <i>Diviértete</i>, <i>Descansa</i>, <i>Cuídate</i> — not literally an order, just a different grammatical shape for the same goodwill.' },
+    { h: 'Specific occasions', html: 'When someone is ill: <i>Que te mejores/recuperes</i>. When someone travels: the <i>buen viaje</i> family already met, reinforced here.' }
+  ],
+  exponents: [
+    { es: 'Que te diviertas mucho en la fiesta.', en: 'Have a great time at the party.', register: 'coloquial', note: 'que + subjuntivo' },
+    { es: 'Descansa, te lo mereces.', en: 'Get some rest, you deserve it.', register: 'coloquial', note: 'imperative — same wish, different shape' },
+    { es: 'Que te mejores pronto.', en: 'Get well soon.', register: 'neutral' },
+    { es: 'Le deseamos una pronta recuperación.', en: 'We wish you a speedy recovery.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Que + subjuntivo</i> and the bare imperative here express the SAME wish — neither is more polite than the other, they are simply two grammatical shapes for it.'
+  ],
+  examples: [
+    { es: 'Cuídate mucho por allí.', en: 'Take good care of yourself over there.' },
+    { es: 'Que descanses, mañana es un día largo.', en: 'Sleep well, tomorrow is a long day.' },
+    { es: 'Que te mejores, te echamos de menos en la oficina.', en: 'Get well soon, we miss you at the office.' }
+  ],
+  probes: [
+    { id: 'p:buenosdeseosb1:equivalencia', kind: 'mcq', q: '¿"Diviértete" y "Que te diviertas" significan cosas distintas?',
+      options: ['sí, diviértete es más formal', 'no, expresan el mismo deseo de dos formas', 'sí, que te diviertas es una orden'], answer: 1 },
+    { id: 'p:buenosdeseosb1:enfermo', kind: 'mcq', q: 'A alguien que está enfermo le dices:',
+      options: ['Que te diviertas.', 'Que te mejores.', 'Buen viaje.'], answer: 1 },
+    { id: 'p:buenosdeseosb1:cloze', kind: 'cloze', text: '___ mucho en la fiesta. (que te diviertas)', accept: ['Que te diviertas', 'que te diviertas'] },
+    { id: 'p:buenosdeseosb1:recall', kind: 'recall', front: 'Two grammatical shapes for the same good wish', back: 'que + subjuntivo, and the bare imperative' }
+  ]
+},
+
+{
+  id: 'fn-responder-felicitaciones-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1409', 'funciones:B1:1410', 'funciones:B1:1411'],
+  title: 'Responder a felicitaciones y buenos deseos',
+  summary: 'Tú, también echoes a wish back without repeating the verb at all — the whole reply rides on the pronoun switching from tú to the listener, minimal words doing maximal work.',
+  sections: [
+    { h: 'Igualmente: the all-purpose echo', html: 'Works for almost any good wish, no matter its exact grammar: <i>—Feliz Navidad. —Igualmente.</i>' },
+    { h: 'Tú, también / Para ti, también', html: 'Echoes the wish back by shifting the pronoun, with no need to repeat the verb: <i>—Que te diviertas. —Tú, también.</i>' }
+  ],
+  exponents: [
+    { es: '—Feliz año nuevo. —Igualmente.', en: '"Happy New Year." "Same to you."', register: 'coloquial' },
+    { es: '—Que descanses. —Tú también.', en: '"Sleep well." "You too."', register: 'coloquial' },
+    { es: '—Felices fiestas. —Para ti también.', en: '"Happy holidays." "And to you."', register: 'coloquial' },
+    { es: 'Igualmente, gracias por sus buenos deseos.', en: 'Likewise, thank you for your kind wishes.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Igualmente</i> works for almost any wish; <i>tú/para ti también</i> need the pronoun to match who is being echoed — check number/formality (<i>vosotros también, para ustedes también</i>).'
+  ],
+  examples: [
+    { es: '—Feliz cumpleaños. —Muchas gracias, igualmente.', en: '"Happy birthday." "Thank you, same to you."' },
+    { es: '—Buen fin de semana. —Igualmente, ¡hasta el lunes!', en: '"Have a good weekend." "You too, see you Monday!"' },
+    { es: '—Que tengas suerte. —Tú también la vas a necesitar.', en: '"Good luck." "You\'ll need it too."' }
+  ],
+  probes: [
+    { id: 'p:respfelicitb1:igualmente', kind: 'mcq', q: '—Feliz Navidad. —___',
+      options: ['Igualmente.', 'De nada.', 'No pasa nada.'], answer: 0 },
+    { id: 'p:respfelicitb1:pronombre', kind: 'mcq', q: '—Que te diviertas. — ¿Cuál devuelve el deseo?',
+      options: ['Tú también.', 'Lo siento.', 'Claro que sí.'], answer: 0 },
+    { id: 'p:respfelicitb1:cloze', kind: 'cloze', text: '—Que descanses. — ___ también. (tú)', accept: ['Tú', 'tú'] },
+    { id: 'p:respfelicitb1:recall', kind: 'recall', front: 'The all-purpose echo for almost any good wish', back: 'igualmente' }
+  ]
+},
+
+{
+  id: 'fn-despedida-escrita-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1429', 'funciones:B1:1430', 'funciones:B1:1431', 'funciones:B1:1432'],
+  title: 'Despedirse por escrito',
+  summary: 'Un beso, and Le saluda atentamente, sit at opposite ends of the same job — closing a piece of writing — and the distance between them is the whole span of Spanish register, from a text to a sibling to a letter to a stranger.',
+  sections: [
+    { h: 'Casual written closings', html: '<i>¡Hasta pronto!</i>, <i>Un beso,</i>, <i>Abrazos,</i> — for messages, cards, informal letters, always followed by a comma.' },
+    { h: 'The formal written closing', html: '<i>(Le saluda) atentamente,</i> — the standard formal sign-off, already met in the job-application letter.' }
+  ],
+  exponents: [
+    { es: 'Un beso, nos vemos pronto.', en: 'A kiss, see you soon.', register: 'coloquial' },
+    { es: 'Abrazos, cuídate mucho.', en: 'Hugs, take good care.', register: 'coloquial' },
+    { es: '¡Hasta pronto! Escríbeme cuando puedas.', en: 'See you soon! Write to me when you can.', register: 'neutral' },
+    { es: 'Le saluda atentamente,', en: 'Yours sincerely,', register: 'formal' }
+  ],
+  pitfalls: [
+    'These written closings run along the same register scale as everything else — <i>un beso/abrazos</i> for people you are close to, <i>atentamente</i> for anyone you would address as usted.'
+  ],
+  examples: [
+    { es: 'Un beso muy fuerte, te echo de menos.', en: 'A big kiss, I miss you.' },
+    { es: 'Abrazos a toda la familia.', en: 'Hugs to the whole family.' },
+    { es: 'Quedo a su disposición. Le saluda atentamente,', en: 'I remain at your disposal. Yours sincerely,' }
+  ],
+  probes: [
+    { id: 'p:despedidaescritab1:registro', kind: 'mcq', q: 'Le escribes a un desconocido en una carta formal:',
+      options: ['Un beso,', 'Le saluda atentamente,', 'Abrazos,'], answer: 1 },
+    { id: 'p:despedidaescritab1:informal', kind: 'mcq', q: '¿Cuál es informal, para un amigo cercano?',
+      options: ['Le saluda atentamente,', 'Un beso,', 'Reciba un cordial saludo,'], answer: 1 },
+    { id: 'p:despedidaescritab1:cloze', kind: 'cloze', text: '___ atentamente, (le saluda)', accept: ['Le saluda', 'le saluda'] },
+    { id: 'p:despedidaescritab1:recall', kind: 'recall', front: 'The standard formal written closing', back: '(Le saluda) atentamente,' }
+  ]
+},
+
+{
+  id: 'fn-responder-estado-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1484', 'funciones:B1:1485', 'funciones:B1:1486', 'funciones:B1:1487', 'funciones:B1:1488', 'funciones:B1:1489', 'funciones:B1:1490', 'funciones:B1:1492'],
+  title: 'Responder cuando preguntan cómo van las cosas',
+  summary: 'Así así reuses the exact evaluative scale already met for judging things, now turned on your own life in general — the same "so-so" that judges a film also judges how things are going for you.',
+  sections: [
+    { h: 'Signaling everything is fine', html: '<i>(Muy) bien, gracias, ¿y a ti?</i> — always bounces the question back, the same ritual met with basic greetings.' },
+    { h: 'Signaling something is not fine', html: '<i>Bueno... ¿y a ti?</i>, <i>(Bueno), así así. Y a ti, ¿qué tal?</i> — hedges before turning the question around.' },
+    { h: 'Signaling improvement', html: '<i>Mucho mejor, gracias, ¿y a ti?</i> — explicitly marks a change from a previously bad state.' },
+    { h: 'Opening with news attached', html: '<i>Bien, gracias: mañana me voy de vacaciones</i> — the standard answer, extended into an opener for actual news.' }
+  ],
+  exponents: [
+    { es: 'Muy bien, gracias, ¿y a ti?', en: 'Very well, thanks, and you?', register: 'coloquial' },
+    { es: 'Bueno... así así. ¿Y a ti, qué tal?', en: "Well... so-so. And you, how are things?", register: 'coloquial', note: 'signals something is not fine' },
+    { es: 'Mucho mejor, gracias, ¿y a ti?', en: 'Much better, thanks, and you?', register: 'coloquial' },
+    { es: 'Muy bien, gracias: mañana empiezo las vacaciones.', en: 'Very well, thanks: tomorrow I start my holidays.', register: 'neutral' }
+  ],
+  pitfalls: [
+    'The question always bounces back (<i>¿y a ti?</i>) — answering without returning it can read as uninterested, the same ritual already met with basic greetings.',
+    '<i>Así así</i> here judges your GENERAL situation, not one specific thing — reusing the same "so-so" scale met for evaluating a film or exam.'
+  ],
+  examples: [
+    { es: '—¿Qué tal la familia? —Muy bien, gracias, ¿y la tuya?', en: '"How\'s the family?" "Very well, thanks, and yours?"' },
+    { es: 'Bueno, regular. Con mucho trabajo estos días.', en: "Well, so-so. Very busy these days." },
+    { es: 'Mucho mejor que la semana pasada, la verdad.', en: 'Much better than last week, honestly.' }
+  ],
+  probes: [
+    { id: 'p:responderestadob1:mejora', kind: 'mcq', q: '¿Cuál marca una MEJORA respecto a antes?',
+      options: ['Muy bien, gracias.', 'Mucho mejor, gracias.', 'Así así.'], answer: 1 },
+    { id: 'p:responderestadob1:reciprocidad', kind: 'mcq', q: '¿Qué falta en "Muy bien, gracias." como respuesta completa?',
+      options: ['nada', 'devolver la pregunta: ¿y a ti?', 'una disculpa'], answer: 1 },
+    { id: 'p:responderestadob1:cloze', kind: 'cloze', text: 'Bueno... ___ así. (así — así así)', accept: ['así'] },
+    { id: 'p:responderestadob1:recall', kind: 'recall', front: 'Does así así here evaluate one specific thing or your general situation?', back: 'your general situation' }
+  ]
+},
+
+{
+  id: 'fn-introducir-tema-relato-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1514', 'funciones:B1:1515', 'funciones:B1:1516'],
+  title: 'Introducir el tema de un relato',
+  summary: '¿Sabes qué ha pasado? asks a question with a foregone answer — you already know they will say no, and the point is not the question, it is the runway it gives you before you start telling the story.',
+  sections: [
+    { h: '¿Sabes qué ha pasado?: a rhetorical opener', html: 'Not a genuine question — it announces that a story is coming, buying you the floor.' },
+    { h: 'Escucha, por favor', html: 'A direct request for attention before starting, more explicit than the rhetorical question.' },
+    { h: '(Oye), tengo que contarte una cosa', html: 'States directly that there is something to tell, often checking availability first: <i>¿tienes tiempo?</i>' }
+  ],
+  exponents: [
+    { es: '¿Sabes qué ha pasado? No te lo vas a creer.', en: "You know what happened? You won't believe it.", register: 'coloquial' },
+    { es: 'Oye, tengo que contarte una cosa, ¿tienes un momento?', en: 'Hey, I need to tell you something, do you have a moment?', register: 'coloquial' },
+    { es: 'Escucha un momento, por favor, es importante.', en: "Listen for a moment, please, it's important.", register: 'neutral' },
+    { es: 'Permítame que le cuente lo que ha ocurrido.', en: 'Allow me to tell you what has happened.', register: 'formal' }
+  ],
+  pitfalls: [
+    '¿Sabes qué ha pasado? is rhetorical — the speaker does not expect a real answer, only the floor to continue.'
+  ],
+  examples: [
+    { es: '¿Sabes qué pasó ayer en la oficina?', en: 'You know what happened yesterday at the office?' },
+    { es: 'Escucha, tengo que contarte algo increíble.', en: 'Listen, I have to tell you something incredible.' },
+    { es: 'Oye, ¿tienes un minuto? Quiero contarte una cosa.', en: 'Hey, do you have a minute? I want to tell you something.' }
+  ],
+  probes: [
+    { id: 'p:introtemarelato:retorica', kind: 'mcq', q: '¿"¿Sabes qué ha pasado?" espera una respuesta real?',
+      options: ['sí, es una pregunta genuina', 'no, es retórica, anuncia que viene una historia', 'solo por teléfono'], answer: 1 },
+    { id: 'p:introtemarelato:disponibilidad', kind: 'mcq', q: '¿Cuál comprueba disponibilidad antes de empezar?',
+      options: ['¿Sabes qué ha pasado?', 'Oye, tengo que contarte una cosa, ¿tienes tiempo?', 'Escucha.'], answer: 1 },
+    { id: 'p:introtemarelato:cloze', kind: 'cloze', text: '¿___ qué ha pasado? (sabes)', accept: ['Sabes', 'sabes'] },
+    { id: 'p:introtemarelato:recall', kind: 'recall', front: 'What is the real function of ¿sabes qué ha pasado?', back: 'to claim the floor and announce a story is coming, not to ask a genuine question' }
+  ]
+},
+
+{
+  id: 'fn-seguir-relato-interes-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1539', 'funciones:B1:1540', 'funciones:B1:1541', 'funciones:B1:1542', 'funciones:B1:1543', 'funciones:B1:1544'],
+  title: 'Indicar que se sigue el relato con interés',
+  summary: 'Vaya says almost nothing on its own — no content, no opinion — and that emptiness is exactly the point: it signals you are listening without pulling focus away from whoever is telling the story.',
+  sections: [
+    { h: 'Minimal continuers', html: '<i>Sí, sí, claro</i>, <i>Sí, ya</i> — brief tokens that keep the storyteller going without adding content.' },
+    { h: 'Vaya: content-free but attentive', html: 'A single word that shows you are following, with no opinion of its own — deliberately empty so it never steals the floor.' },
+    { h: 'Confirmation questions', html: '<i>¿De verdad?</i>, <i>¿En serio?</i> — genuine engagement, not skepticism, when said with the right intonation while listening to a story.' },
+    { h: 'Reacting with the story\'s emotion', html: '<i>¡Qué bien!</i>, <i>¡Qué horror!</i> — mirrors the emotional tone of what is being told.' }
+  ],
+  exponents: [
+    { es: 'Sí, sí, claro, sigue, sigue.', en: 'Yes, yes, of course, go on, go on.', register: 'coloquial' },
+    { es: '—Se estropeó el coche. —Vaya.', en: '"The car broke down." "Oh no."', register: 'coloquial', note: 'content-free but attentive' },
+    { es: '¿En serio? ¿Y qué pasó después?', en: 'Seriously? And what happened next?', register: 'coloquial' },
+    { es: '¡Qué horror, cuánto lo siento!', en: 'How awful, I\'m so sorry!', register: 'coloquial' },
+    { es: 'Entiendo, continúe, por favor.', en: 'I understand, please continue.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Vaya</i> deliberately carries almost no content — its whole job is to signal attention without taking the floor from the storyteller.',
+    'Said with genuine interest, <i>¿de verdad?/¿en serio?</i> here show engagement, not the skepticism the same words could carry elsewhere.'
+  ],
+  examples: [
+    { es: 'Sí, ya, sigue contando.', en: 'Yeah, I know, keep going.' },
+    { es: '¿De verdad? No me lo esperaba.', en: "Really? I wasn't expecting that." },
+    { es: '—Y entonces perdí las llaves. —Vaya, qué mal.', en: '"And then I lost the keys." "Oh no, that\'s terrible."' }
+  ],
+  probes: [
+    { id: 'p:seguirrelatob1:vacio', kind: 'mcq', q: '¿Qué contenido aporta "Vaya" como reacción?',
+      options: ['una opinión fuerte', 'casi ninguno — solo muestra atención', 'una corrección'], answer: 1 },
+    { id: 'p:seguirrelatob1:enserio', kind: 'mcq', q: 'Con tono de interés genuino, "¿en serio?" muestra:',
+      options: ['escepticismo', 'compromiso con el relato', 'aburrimiento'], answer: 1 },
+    { id: 'p:seguirrelatob1:cloze', kind: 'cloze', text: '—Se estropeó el coche. —___. (vaya)', accept: ['Vaya', 'vaya'] },
+    { id: 'p:seguirrelatob1:recall', kind: 'recall', front: 'Why is "vaya" a good listener-continuer word?', back: 'it carries almost no content of its own, so it never steals the floor from the storyteller' }
+  ]
+},
+
+{
+  id: 'fn-controlar-atencion-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1551', 'funciones:B1:1552', 'funciones:B1:1553', 'funciones:B1:1554', 'funciones:B1:1555', 'funciones:B1:1556',
+         'funciones:B1:1557', 'funciones:B1:1558', 'funciones:B1:1559', 'funciones:B1:1560', 'funciones:B1:1561'],
+  title: 'Controlar la atención del interlocutor',
+  summary: 'A phone call has its own dedicated vocabulary for a problem face-to-face conversation never has — the connection itself can fail, and ¿se ha cortado? checks for a technical break that ¿no me entiendes? never needs to ask about.',
+  sections: [
+    { h: 'Checking understanding face-to-face', html: '<i>¿(Me) entiendes, (no)?</i>, tag questions <i>¿no?/¿sí?</i>, the attention-grabbers <i>mira/oye</i>, and the simple <i>¿eh?</i> asking someone to repeat.' },
+    { h: 'Phone-specific: checking the connection itself', html: 'A whole extra layer only phones need: <i>¿Me oyes?</i>, <i>No se oye bien</i>, <i>¿Se ha cortado?</i>, the classic <i>¿Oiga? ¿Me oye? No se oye nada</i>, and <i>Te oigo fatal, ¿me oyes?</i>' }
+  ],
+  exponents: [
+    { es: 'Mira, esto es importante, ¿me entiendes?', en: 'Look, this is important, do you understand?', register: 'coloquial' },
+    { es: '¿Me oyes bien? Se corta un poco.', en: "Can you hear me okay? It's cutting out a bit.", register: 'coloquial', note: 'phone-specific — checking the connection' },
+    { es: '¿Oiga? ¿Me oye? No se oye nada.', en: 'Hello? Can you hear me? I can\'t hear anything.', register: 'neutral' },
+    { es: '¿Me sigue usted?', en: 'Are you following me?', register: 'formal' }
+  ],
+  pitfalls: [
+    'Phone-specific attention-checks (<i>¿me oyes?, se ha cortado, no se oye nada</i>) address a TECHNICAL problem, distinct from face-to-face comprehension checks (<i>¿me entiendes?</i>).'
+  ],
+  examples: [
+    { es: 'Oye, ¿sigues ahí? No te oigo.', en: "Hey, are you still there? I can't hear you." },
+    { es: '¿Eh? Perdona, no te he oído bien.', en: "Huh? Sorry, I didn't hear you well." },
+    { es: 'Te oigo fatal, ¿me oyes tú a mí?', en: "I can hardly hear you, can you hear me?" }
+  ],
+  probes: [
+    { id: 'p:controlaratencionb1:telefono', kind: 'mcq', q: '¿Cuál es ESPECÍFICO de una llamada telefónica?',
+      options: ['¿Me entiendes?', '¿Se ha cortado?', 'Mira, esto es importante.'], answer: 1 },
+    { id: 'p:controlaratencionb1:cara', kind: 'mcq', q: '¿Cuál funciona cara a cara?',
+      options: ['No se oye bien.', '¿Me entiendes, no?', '¿Oiga?'], answer: 1 },
+    { id: 'p:controlaratencionb1:cloze', kind: 'cloze', text: '¿Me ___ bien? Se corta un poco. (oyes)', accept: ['oyes'] },
+    { id: 'p:controlaratencionb1:recall', kind: 'recall', front: 'What kind of problem do phone-specific attention-checks address?', back: 'a technical connection problem, not comprehension' }
+  ]
+},
+
+{
+  id: 'fn-introducir-hecho-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1564', 'funciones:B1:1565', 'funciones:B1:1566'],
+  title: 'Introducir un hecho dentro de un relato',
+  summary: 'Entonces and de repente both move a story forward, but they mark opposite kinds of transition — entonces links one event to the next in sequence, while de repente breaks the sequence with something nobody saw coming.',
+  sections: [
+    { h: 'Entonces: the next link in the chain', html: 'Marks the next event following naturally from what came before: <i>Y entonces vimos que había humo en la cocina.</i>' },
+    { h: 'De repente/de pronto: breaking the sequence', html: 'Marks something UNEXPECTED, interrupting the flow rather than continuing it: the same word already met opening a narrative\'s complicación.' },
+    { h: 'Pues: a neutral connector to just get started', html: 'A low-content filler that simply moves the story along: <i>Pues fui a la playa, tomé el sol y me dormí.</i>' }
+  ],
+  exponents: [
+    { es: 'Y entonces me di cuenta de que había perdido las llaves.', en: 'And then I realized I had lost my keys.', register: 'coloquial' },
+    { es: 'De repente, se apagaron todas las luces.', en: 'Suddenly, all the lights went out.', register: 'coloquial', note: 'breaks the expected sequence' },
+    { es: 'Pues nada, salí de casa como siempre y...', en: 'Well, so, I left home as usual and...', register: 'coloquial' },
+    { es: 'Acto seguido, se procedió a evacuar el edificio.', en: 'Immediately afterward, the building was evacuated.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Entonces</i> continues the expected chain of events; <i>de repente/de pronto</i> specifically breaks it with something unforeseen — do not use them interchangeably.'
+  ],
+  examples: [
+    { es: 'De pronto, alguien llamó a la puerta.', en: 'Suddenly, someone knocked at the door.' },
+    { es: 'Entonces decidimos volver a casa.', en: 'So then we decided to go home.' },
+    { es: 'Pues resulta que llegamos tarde al aeropuerto.', en: 'So, it turns out we arrived late at the airport.' }
+  ],
+  probes: [
+    { id: 'p:introducirhechob1:secuencia', kind: 'mcq', q: '¿Cuál continúa la secuencia esperada de hechos?',
+      options: ['de repente', 'entonces', 'de pronto'], answer: 1 },
+    { id: 'p:introducirhechob1:ruptura', kind: 'mcq', q: '¿Cuál marca algo INESPERADO?',
+      options: ['entonces', 'de repente', 'pues'], answer: 1 },
+    { id: 'p:introducirhechob1:cloze', kind: 'cloze', text: '___ , se apagaron las luces. (de repente)', accept: ['De repente', 'de repente'] },
+    { id: 'p:introducirhechob1:recall', kind: 'recall', front: 'Entonces vs de repente — which one breaks the expected sequence?', back: 'de repente / de pronto' }
+  ]
+},
+
+{
+  id: 'fn-destacar-elemento-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1572', 'funciones:B1:1573', 'funciones:B1:1574'],
+  title: 'Destacar un elemento por escrito',
+  summary: 'Es importante tener claro nuestro objetivo highlights through WORDS, while bold, italics and bullet points highlight through the PAGE ITSELF — two entirely different toolkits for the same job of telling a reader what matters most.',
+  sections: [
+    { h: 'Es importante + infinitivo', html: 'Flags something as significant through the words themselves: <i>Es importante tener claro nuestro objetivo.</i>' },
+    { h: 'Typographic emphasis', html: 'Written Spanish also highlights visually — MAYÚSCULAS, <i>cursiva</i>, <b>negrita</b>, subrayado, viñetas and numbered outlines — tools already met in the expository genre lesson, now framed as a function of their own: marking what matters without adding words.' }
+  ],
+  exponents: [
+    { es: 'Es importante revisar el documento antes de enviarlo.', en: "It's important to check the document before sending it.", register: 'neutral' },
+    { es: 'Sobre todo, no olvides confirmar la reserva.', en: 'Above all, don\'t forget to confirm the reservation.', register: 'coloquial' },
+    { es: 'Recuerda: LA REUNIÓN ES A LAS NUEVE, no a las diez.', en: 'Remember: THE MEETING IS AT NINE, not ten.', register: 'coloquial', note: 'capitals as visual emphasis' },
+    { es: 'Cabe destacar especialmente este punto.', en: 'This point especially deserves emphasis.', register: 'formal' }
+  ],
+  pitfalls: [
+    'Typographic emphasis (capitals, bold, underlining) works only in writing — it has no spoken equivalent, unlike <i>es importante</i> or <i>sobre todo</i>, which work in both.'
+  ],
+  examples: [
+    { es: 'Es importante no llegar tarde el primer día.', en: "It's important not to be late on the first day." },
+    { es: 'En particular, cuidado con el segundo párrafo.', en: 'In particular, watch out for the second paragraph.' },
+    { es: 'El plazo termina el viernes: escríbelo en mayúsculas para que se vea.', en: "The deadline is Friday: write it in capitals so it stands out." }
+  ],
+  probes: [
+    { id: 'p:destacarelementob1:tipografico', kind: 'mcq', q: '¿Cuál marca énfasis SOLO por escrito, sin equivalente hablado?',
+      options: ['Es importante...', 'Sobre todo...', 'MAYÚSCULAS'], answer: 2 },
+    { id: 'p:destacarelementob1:palabras', kind: 'mcq', q: '¿Cuál destaca algo a través de las PALABRAS, no del formato?',
+      options: ['negrita', 'Es importante tener claro esto.', 'subrayado'], answer: 1 },
+    { id: 'p:destacarelementob1:cloze', kind: 'cloze', text: 'Es ___ revisar el documento. (importante)', accept: ['importante'] },
+    { id: 'p:destacarelementob1:recall', kind: 'recall', front: 'Name two typographic tools for written emphasis', back: 'capitals, italics, bold, underlining, bullets, or numbered outlines (any two)' }
+  ]
+},
+
+{
+  id: 'fn-interrumpir-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1590', 'funciones:B1:1591', 'funciones:B1:1592'],
+  title: 'Interrumpir',
+  summary: 'Perdona, pero, ¿puedo...? apologizes BEFORE breaking in, not after — the apology comes first precisely because interrupting is the one social move that needs permission asked in advance, not forgiveness sought afterward.',
+  sections: [
+    { h: 'Asking for a small opening', html: '<i>Un momento, ¿puedo decir una cosa?</i>, <i>...(solo) una cosa...</i> — both minimize the interruption, framing it as brief.' },
+    { h: 'Apologizing first', html: '<i>Perdona/Lo siento, pero, ¿puedo...?</i> — the apology comes BEFORE the interruption itself, not after.' }
+  ],
+  exponents: [
+    { es: 'Un momento, ¿puedo decir una cosa?', en: 'One moment, can I say something?', register: 'coloquial' },
+    { es: 'Perdona, solo una cosa: ¿a qué hora es la reunión?', en: 'Sorry, just one thing: what time is the meeting?', register: 'coloquial' },
+    { es: 'Lo siento, pero, ¿puedo añadir algo?', en: 'Sorry, but may I add something?', register: 'neutral' },
+    { es: 'Disculpe que le interrumpa, pero es urgente.', en: 'Excuse the interruption, but it\'s urgent.', register: 'formal' }
+  ],
+  pitfalls: [
+    'The apology in a polite interruption comes BEFORE breaking in, not as a repair afterward — <i>perdona, pero...</i>, not a bare interruption followed by sorry.'
+  ],
+  examples: [
+    { es: 'Perdón, ¿puedo decir algo rápido?', en: 'Sorry, can I say something quick?' },
+    { es: 'Solo una cosa antes de que sigas.', en: 'Just one thing before you continue.' },
+    { es: 'Disculpa, ¿me dejas añadir un dato?', en: 'Excuse me, can I add a piece of information?' }
+  ],
+  probes: [
+    { id: 'p:interrumpirb1:orden', kind: 'mcq', q: '¿Cuándo va la disculpa en una interrupción educada?',
+      options: ['después de interrumpir', 'antes de interrumpir', 'no hace falta'], answer: 1 },
+    { id: 'p:interrumpirb1:minimizar', kind: 'mcq', q: '¿Cuál minimiza la interrupción como algo breve?',
+      options: ['...solo una cosa...', '¿Puedo hablar toda la reunión?', 'Cállate.'], answer: 0 },
+    { id: 'p:interrumpirb1:cloze', kind: 'cloze', text: 'Perdona, ___, ¿puedo decir algo? (pero)', accept: ['pero'] },
+    { id: 'p:interrumpirb1:recall', kind: 'recall', front: 'Does the apology in a polite interruption come before or after breaking in?', back: 'before' }
+  ]
+},
+
+{
+  id: 'fn-concluir-relato-b1', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  pcic: ['funciones:B1:1615', 'funciones:B1:1616', 'funciones:B1:1617', 'funciones:B1:1618', 'funciones:B1:1619'],
+  title: 'Concluir un relato',
+  summary: 'Al final tells you how the story turned out; en resumen tells you what to remember from it — two closing markers that both say "I am finishing now" while doing genuinely different jobs on the way out.',
+  sections: [
+    { h: 'Al final / Finalmente: how it turned out', html: 'Marks the outcome of the story itself: <i>Al final, todo se solucionó.</i>' },
+    { h: 'En conclusión / En resumen: what to take away', html: 'Marks a summary of the point, not just the last event — already met in the written composition lessons, now for spoken storytelling.' },
+    { h: 'Para terminar: a neutral closing signal', html: 'Simply flags that the story is wrapping up, with no particular content of its own.' }
+  ],
+  exponents: [
+    { es: 'Al final, todo salió mejor de lo esperado.', en: 'In the end, everything turned out better than expected.', register: 'coloquial' },
+    { es: 'Y bueno, para terminar, eso fue lo que pasó.', en: 'And well, to wrap up, that\'s what happened.', register: 'coloquial' },
+    { es: 'En resumen, fue un día bastante caótico.', en: 'In short, it was a pretty chaotic day.', register: 'neutral' },
+    { es: 'En conclusión, el incidente quedó resuelto sin mayores consecuencias.', en: 'In conclusion, the incident was resolved without further consequences.', register: 'formal' }
+  ],
+  pitfalls: [
+    '<i>Al final/finalmente</i> reports the OUTCOME of events; <i>en conclusión/en resumen</i> distills the POINT of the story — they are not interchangeable closers.'
+  ],
+  examples: [
+    { es: 'Finalmente conseguimos coger el último tren.', en: 'We finally managed to catch the last train.' },
+    { es: 'En resumen, fue una tarde para el recuerdo.', en: 'In short, it was an afternoon to remember.' },
+    { es: 'Para terminar, os diré que no volveré a hacerlo.', en: "To wrap up, I'll just say I won't do it again." }
+  ],
+  probes: [
+    { id: 'p:concluirrelatob1:desenlace', kind: 'mcq', q: '¿Cuál marca el DESENLACE de los hechos, no un resumen?',
+      options: ['En resumen', 'Al final', 'En conclusión'], answer: 1 },
+    { id: 'p:concluirrelatob1:resumen', kind: 'mcq', q: '¿Cuál distila la IDEA principal del relato?',
+      options: ['Al final', 'De repente', 'En resumen'], answer: 2 },
+    { id: 'p:concluirrelatob1:cloze', kind: 'cloze', text: '___, todo salió bien. (al final)', accept: ['Al final', 'al final'] },
+    { id: 'p:concluirrelatob1:recall', kind: 'recall', front: 'Al final/finalmente vs en conclusión/en resumen — which reports the outcome, which distills the point?', back: 'al final/finalmente → outcome; en conclusión/en resumen → the point/summary' }
+  ]
 }
 
 ];
