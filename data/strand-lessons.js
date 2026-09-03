@@ -2277,6 +2277,453 @@ window.STRAND_LESSONS = [
     { id: 'p:reaccionarrelato:recall', kind: 'recall',
       front: 'A polite refusal to hear a story still needs what, after the apology?', back: 'a reason (es que...)' }
   ]
+},
+
+/* ============================================================================
+ * BATCH 5 — seq 196-207 of spec/syllabus-draft.json (A2 discourse).
+ * ========================================================================== */
+{
+  id: 'dc-mantenimiento-referente-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:3', 'tacticas_pragmaticas:A2:4', 'tacticas_pragmaticas:A2:5',
+         'tacticas_pragmaticas:A2:6', 'tacticas_pragmaticas:A2:7'],
+  title: 'Mantener el referente sin repetir',
+  summary: 'Once you have named something, Spanish gives you several ways to keep talking about it without saying the word again — a pronoun, a demonstrative, the definite article, or simply dropping the verb — and switching between them keeps a paragraph from sounding like a list.',
+  sections: [
+    { h: 'A toolkit, not one rule', html: 'Pronoun, demonstrative, definite article, dropped verb, exact repetition — five different tools do the same underlying job: pointing back at something without re-explaining it.' },
+    { h: 'Un becomes el', html: 'The first mention of a new thing is usually indefinite (<i>un sofá</i>); as soon as you refer back to that SAME thing, it becomes definite (<i>el sofá</i>) — the shift itself signals "the one I just mentioned".' }
+  ],
+  exponents: [
+    { es: 'Emilia viaja a menudo a Málaga. Allí viven sus padres.', en: 'Emilia often travels to Málaga. Her parents live there.', register: 'neutral', note: 'allí — an adverb standing in for the place just named' },
+    { es: 'Ayer vi a María y luego, a Juan.', en: 'Yesterday I saw María and then, Juan.', register: 'coloquial', note: 'the verb "vi" is dropped the second time — understood from context' },
+    { es: 'Quiero comprar un sofá. El sofá tiene que ser muy cómodo.', en: 'I want to buy a sofa. The sofa has to be very comfortable.', register: 'neutral', note: 'indefinite un sofá becomes definite el sofá on second mention' },
+    { es: 'Fui con un amigo a Alicante y mi amigo se quedó allí todo el verano.', en: 'I went to Alicante with a friend and my friend stayed there all summer.', register: 'coloquial', note: 'the possessive (mi amigo) picks up the noun already mentioned' },
+    { es: 'Aquí Marta tuvo un accidente. El accidente fue muy grave.', en: 'Marta had an accident here. The accident was very serious.', register: 'neutral', note: 'exact lexical repetition — plain, but always available' }
+  ],
+  pitfalls: [
+    'Exact repetition is not wrong, but overusing it while pronouns and articles are available makes a passage sound like a report, not a story.'
+  ],
+  examples: [
+    { es: 'Compré un libro. El libro es muy interesante.', en: 'I bought a book. The book is very interesting.' },
+    { es: 'Vi a mi hermano en la calle y luego, a mi prima.', en: 'I saw my brother in the street and then, my cousin.' },
+    { es: 'Nací en Sevilla. Allí pasé toda mi infancia.', en: 'I was born in Seville. I spent all my childhood there.' }
+  ],
+  probes: [
+    { id: 'p:mantenimientoreferente:articulo', kind: 'mcq',
+      q: '"Quiero comprar un sofá. ___ sofá tiene que ser cómodo." (segunda mención)',
+      options: ['Un', 'El', 'Este'], answer: 1 },
+    { id: 'p:mantenimientoreferente:elipsis', kind: 'mcq',
+      q: '"Ayer vi a María y luego, a Juan." ¿Qué se ha omitido la segunda vez?',
+      options: ['El sujeto', 'El verbo (vi)', 'El objeto'], answer: 1 },
+    { id: 'p:mantenimientoreferente:cloze', kind: 'cloze',
+      text: 'Nací en Sevilla. ___ pasé toda mi infancia.', accept: ['Allí', 'allí'] },
+    { id: 'p:mantenimientoreferente:recall', kind: 'recall',
+      front: 'What happens to the article when you refer back to something already introduced?', back: 'it becomes definite (un -> el)' }
+  ]
+},
+
+{
+  id: 'dc-estructuradores-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:14', 'tacticas_pragmaticas:A2:16', 'tacticas_pragmaticas:A2:17',
+         'tacticas_pragmaticas:A2:18', 'tacticas_pragmaticas:A2:19'],
+  title: 'Marcadores estructuradores',
+  summary: 'A short set of words does the work of a numbered list in speech — primero, luego, por último — plus a marker borrowed from commands (oye) that grabs attention rather than ordering steps.',
+  sections: [
+    { h: 'Ordering steps', html: '<i>Primero</i> (start), <i>luego/después</i> (continuing), <i>por último</i> (closing) — a spoken substitute for numbering.' },
+    { h: 'From command to contact marker', html: '<i>Oye/oiga</i> and <i>mira/mire</i> are literally imperatives ("listen", "look"), but their job here is not an instruction — it is opening or redirecting the listener\'s attention.' }
+  ],
+  exponents: [
+    { es: 'Primero tengo que comprar fruta, luego necesito ir a la carnicería.', en: 'First I have to buy fruit, then I need to go to the butcher\'s.', register: 'neutral', note: 'primero...luego — sequencing' },
+    { es: 'Por último, cerramos la tienda a las ocho.', en: 'Finally, we close the shop at eight.', register: 'neutral', note: 'por último — closing a sequence' },
+    { es: 'Está enfermo. Por eso no ha venido.', en: "He's sick. That's why he hasn't come.", register: 'neutral', note: 'por eso — consequence' },
+    { es: 'Entonces, quedamos a las 10.', en: "So, we're meeting at 10.", register: 'coloquial', note: 'entonces — drawing a practical conclusion' },
+    { es: 'Oye, ¿tienes un momento?', en: 'Hey, have you got a moment?', register: 'coloquial', note: 'oye — a command form recycled as an attention-getter' }
+  ],
+  pitfalls: [
+    '<i>Entonces</i> as a filler ("so...") is casual — in writing or formal speech, <i>por lo tanto</i> or <i>por eso</i> reads better.'
+  ],
+  examples: [
+    { es: 'Primero, entra por aquí; luego, sube las escaleras; por último, gira a la derecha.', en: 'First, come in this way; then, go up the stairs; finally, turn right.' },
+    { es: 'No tenía dinero. Por eso no fui.', en: "I didn't have money. That's why I didn't go." },
+    { es: 'Mira, yo creo que deberías hablar con ella.', en: 'Look, I think you should talk to her.' }
+  ],
+  probes: [
+    { id: 'p:estructuradores:orden', kind: 'mcq',
+      q: '¿Cuál marca el CIERRE de una secuencia de pasos?',
+      options: ['Primero', 'Luego', 'Por último'], answer: 2 },
+    { id: 'p:estructuradores:origen', kind: 'mcq',
+      q: '"Oye" y "mira" son originalmente formas de qué modo verbal?',
+      options: ['Indicativo', 'Imperativo', 'Subjuntivo'], answer: 1 },
+    { id: 'p:estructuradores:cloze', kind: 'cloze',
+      text: 'Está enfermo. Por ___ no ha venido.', accept: ['eso'] },
+    { id: 'p:estructuradores:recall', kind: 'recall',
+      front: 'Word that opens a sequence of steps', back: 'primero' }
+  ]
+},
+
+{
+  id: 'dc-deixis-espacial-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:28', 'tacticas_pragmaticas:A2:29', 'tacticas_pragmaticas:A2:30'],
+  title: 'Deixis espacial (A2)',
+  summary: "Beyond aquí/ahí/allí, A2 adds a direction-pair that's easy to get backwards — llevar vs traer — and demonstratives used mid-conversation to sort out exactly which object someone means.",
+  sections: [
+    { h: 'Llevar vs traer', html: '<i>Traer</i> moves something TOWARD the speaker\'s here (<i>tráeme eso</i>); <i>llevar</i> moves it AWAY, same logic as the ir/venir split. Mixing them up points the object the wrong direction.' },
+    { h: 'Sorting out "which one"', html: 'A quick este/ese exchange resolves ambiguity live — the listener\'s <i>¿Este?</i> checks their guess against the speaker\'s original <i>ese</i>.' }
+  ],
+  exponents: [
+    { es: 'María vive cerca (de aquí).', en: 'María lives near (here).', register: 'neutral', note: "cerca/lejos anchored to the speaker's here" },
+    { es: '¿Nos puede traer más pan, por favor?', en: 'Could you bring us more bread, please?', register: 'formal', note: "traer — movement TOWARD the speaker's here" },
+    { es: '—¿Puedo ver ese bolígrafo? —¿Este? —Sí, ese.', en: '—Can I see that pen? —This one? —Yes, that one.', register: 'coloquial', note: 'sorting out which object, live in conversation' }
+  ],
+  pitfalls: [
+    "<i>Traer</i> and <i>llevar</i> follow the same anchor logic as venir/ir — get the speaker's position wrong and the verb points backwards."
+  ],
+  examples: [
+    { es: '¿Puedes llevar esto a la cocina?', en: 'Can you take this to the kitchen?' },
+    { es: 'Tráeme el periódico, por favor.', en: 'Bring me the newspaper, please.' },
+    { es: '—¿Cuál te gusta? —Ese de ahí.', en: '—Which one do you like? —That one there.' }
+  ],
+  probes: [
+    { id: 'p:deixisespaciala2:llevartraer', kind: 'mcq',
+      q: 'Estás en la cocina y quieres que alguien te dé algo desde el salón. ¿Qué dices?',
+      options: ['¿Me lo llevas?', '¿Me lo traes?', '¿Me lo vas?'], answer: 1 },
+    { id: 'p:deixisespaciala2:sorting', kind: 'mcq',
+      q: '—¿Puedo ver ese bolígrafo? —¿Este? El otro responde para confirmar: "Sí, ___."',
+      options: ['este', 'ese', 'aquel'], answer: 1 },
+    { id: 'p:deixisespaciala2:cloze', kind: 'cloze',
+      text: 'María vive ___ de aquí.', accept: ['cerca'] },
+    { id: 'p:deixisespaciala2:recall', kind: 'recall',
+      front: 'Verb for moving something TOWARD the speaker', back: 'traer' }
+  ]
+},
+
+{
+  id: 'dc-deixis-personal-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:36', 'tacticas_pragmaticas:A2:37', 'tacticas_pragmaticas:A2:38', 'tacticas_pragmaticas:A2:39'],
+  title: 'Deixis personal',
+  summary: 'Spanish has three small ways to bring "the person" into sharper focus without changing the basic sentence: making a dropped subject pronoun reappear to point blame, doubling a pronoun to spotlight who receives something, and using a possessive that assumes shared knowledge rather than introducing something new.',
+  sections: [
+    { h: 'Bringing yourself into focus', html: 'Spanish normally drops subject pronouns; letting <i>yo</i> reappear does real work — usually resolving who exactly did something, sometimes pointedly ("it was ME, not you").' },
+    { h: 'Doubling to spotlight', html: '<i>A ti te doy...</i> repeats the same person twice (<i>a ti</i> and <i>te</i>) — redundant information-wise, but it puts weight on WHO receives the action.' },
+    { h: 'Possession instead of "the"', html: '<i>Me duele la cabeza</i> uses <i>me</i>, not <i>mi cabeza duele</i> — the dative pronoun carries the possession that English puts on the noun itself.' }
+  ],
+  exponents: [
+    { es: 'Yo he hecho la cena.', en: 'I made dinner (and not someone else).', register: 'coloquial', note: 'the subject pronoun reappears to resolve ambiguity or point at yourself specifically' },
+    { es: 'A ti te doy los ejercicios.', en: "To YOU I'm giving the exercises.", register: 'coloquial', note: 'a ti + te — doubled, spotlighting the recipient' },
+    { es: 'Me duele la cabeza.', en: 'My head hurts.', register: 'neutral', note: 'dative of possession — me stands in for "mi cabeza"' },
+    { es: '¿Dónde está mi bolso?', en: 'Where is my bag?', register: 'coloquial', note: 'mi assumes the listener already knows which bag' }
+  ],
+  pitfalls: [
+    'The dative-of-possession pattern (<i>me duele la cabeza</i>) never adds a possessive too — <i>*me duele mi cabeza</i> doubles up on the same information.'
+  ],
+  examples: [
+    { es: 'A mí me gusta el jazz, a él no.', en: "I like jazz, he doesn't." },
+    { es: 'Me rompí la pierna esquiando.', en: 'I broke my leg skiing.' },
+    { es: '¿Has visto mi bolso?', en: 'Have you seen my bag?' }
+  ],
+  probes: [
+    { id: 'p:deixispersonal:doblado', kind: 'mcq',
+      q: '¿Cuál es la forma "doblada" (redundante pero enfática) de dar algo a alguien?',
+      options: ['Te doy los ejercicios.', 'A ti te doy los ejercicios.', 'Doy los ejercicios.'], answer: 1 },
+    { id: 'p:deixispersonal:posesion', kind: 'mcq',
+      q: '"Me duele ___ cabeza." (NO usa posesivo)',
+      options: ['mi', 'la', 'una'], answer: 1 },
+    { id: 'p:deixispersonal:cloze', kind: 'cloze',
+      text: '___ he hecho la cena, no tú.', accept: ['Yo', 'yo'] },
+    { id: 'p:deixispersonal:recall', kind: 'recall',
+      front: 'In "me duele la cabeza", what carries the meaning of possession?', back: 'me (the dative pronoun)' }
+  ]
+},
+
+{
+  id: 'dc-deixis-temporal-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:32', 'tacticas_pragmaticas:A2:33'],
+  title: 'Deixis temporal',
+  summary: 'Time words like antes, después and entonces only make sense relative to a reference point that shifts with context — "después" means something different depending on when you say it, unlike a fixed date.',
+  sections: [
+    { h: 'Relative to the moment of speaking', html: '<i>Antes, después, entonces, ayer, anoche</i> only mean something once you know WHEN they were said — "ayer" said on a Tuesday means Monday, said on a Friday means Thursday.' },
+    { h: 'Locuciones: antes de / después de', html: '<i>Antes de</i> and <i>después de</i> + infinitive or noun sequence two events relative to each other, not to any fixed calendar date.' }
+  ],
+  exponents: [
+    { es: 'Después te llamo.', en: "I'll call you afterward.", register: 'coloquial', note: 'después — relative to now, the moment of speaking' },
+    { es: 'Ayer fuimos al cine.', en: 'Yesterday we went to the cinema.', register: 'neutral', note: 'anchored to today, whenever today is' },
+    { es: 'Antes de salir, cierra la ventana.', en: 'Before leaving, close the window.', register: 'neutral', note: 'antes de + infinitive — a relative sequence, not a fixed time' },
+    { es: 'Desde este momento, quedas avisado.', en: 'From this moment on, consider yourself warned.', register: 'formal', note: 'desde + a point anchored to now' }
+  ],
+  pitfalls: [
+    'Reported speech later shifts these words: something said as <i>ayer</i> becomes <i>el día anterior</i> once you report it later — the anchor point moved.'
+  ],
+  examples: [
+    { es: 'Antes vivía en Madrid; ahora vivo en Sevilla.', en: 'I used to live in Madrid; now I live in Seville.' },
+    { es: 'Anoche no pude dormir.', en: "I couldn't sleep last night." },
+    { es: 'Nos vemos después de comer.', en: 'See you after eating.' }
+  ],
+  probes: [
+    { id: 'p:deixistemporal:relativo', kind: 'mcq',
+      q: '¿Por qué "ayer" no siempre significa el mismo día?',
+      options: ['Es un error común', 'Depende de cuándo se dice', 'Solo se usa en pasado'], answer: 1 },
+    { id: 'p:deixistemporal:locucion', kind: 'mcq',
+      q: '"___ de salir, cierra la ventana." (secuencia relativa)',
+      options: ['Antes', 'Ayer', 'Entonces'], answer: 0 },
+    { id: 'p:deixistemporal:cloze', kind: 'cloze',
+      text: '___ te llamo.', accept: ['Después', 'después'] },
+    { id: 'p:deixistemporal:recall', kind: 'recall',
+      front: 'Time words like antes/después/ayer are anchored to what?', back: 'the moment of speaking' }
+  ]
+},
+
+{
+  id: 'dc-rematizacion-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:49', 'tacticas_pragmaticas:A2:50', 'tacticas_pragmaticas:A2:51'],
+  title: 'Rematización (A2): posesión, cantidad y preguntas',
+  summary: 'The A1 rule (new information last) extends to two more cases: stating whose something is, and giving a quantity — both put the actual answer, not the topic, at the end of the sentence.',
+  sections: [
+    { h: 'Whose and how many', html: 'Asked "¿de quién es esto?", the natural answer is <i>Es mi libro</i>, not <i>Mi libro es esto</i> — the possessor is the new information, so it comes after the verb.' },
+    { h: 'Questions keep the pattern', html: 'Even in a question, the subject often follows the verb once a question word is fronted: <i>¿Cuándo llega María?</i>, not <i>¿Cuándo María llega?</i>' }
+  ],
+  exponents: [
+    { es: 'Es mi libro.', en: "It's my book.", register: 'neutral', note: 'possession — the new fact (whose) goes last' },
+    { es: 'Son quince.', en: 'There are fifteen.', register: 'coloquial', note: 'quantity — the number is the new information' },
+    { es: '¿Cuándo llega María?', en: 'When does María arrive?', register: 'neutral', note: 'question word stays fronted, but the subject (María) still follows the verb' }
+  ],
+  pitfalls: [
+    'This is not optional style — <i>¿Cuándo María llega?</i> sounds foreign to a native speaker, even though every word is correct Spanish.'
+  ],
+  examples: [
+    { es: '—¿De quién es este abrigo? —Es de Marta.', en: "—Whose coat is this? —It's Marta's." },
+    { es: '—¿Cuántos años tienes? —Son veinte.', en: '—How old are you? —Twenty.' },
+    { es: '¿Para qué viaja Jaime a Barcelona?', en: 'What is Jaime travelling to Barcelona for?' }
+  ],
+  probes: [
+    { id: 'p:rematizaciona2:posesion', kind: 'mcq',
+      q: '—¿De quién es esto? ¿Cuál es la respuesta más natural?',
+      options: ['Mi libro es esto.', 'Es mi libro.', 'Esto mi libro es.'], answer: 1 },
+    { id: 'p:rematizaciona2:pregunta', kind: 'mcq',
+      q: '¿Cuál suena natural?',
+      options: ['¿Cuándo María llega?', '¿Cuándo llega María?', '¿María cuándo llega?'], answer: 1 },
+    { id: 'p:rematizaciona2:cloze', kind: 'cloze',
+      text: '—¿Cuántos años tienes? —___ veinte.', accept: ['Son', 'son'] },
+    { id: 'p:rematizaciona2:recall', kind: 'recall',
+      front: 'In a question with a fronted question word, where does the subject usually go?', back: 'after the verb' }
+  ]
+},
+
+{
+  id: 'dc-tematizacion-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:52', 'tacticas_pragmaticas:A2:53', 'tacticas_pragmaticas:A2:54'],
+  title: 'Tematización',
+  summary: 'Where rematización pushes new information to the end, tematización does the opposite: it moves something already known to the FRONT, and Spanish signals this fronting with a doubled pronoun or a shift from indefinite to definite article.',
+  sections: [
+    { h: 'Fronting with a double', html: 'Moving <i>a mí</i> to the front is not enough alone — Spanish also keeps the pronoun (<i>me</i>) in its usual spot: <i>A mí me encanta</i>, never just <i>A mí encanta</i>.' },
+    { h: 'Definite because it is assumed known', html: '<i>El comienzo del curso</i> uses the definite article not because it was mentioned before in THIS conversation, but because a course starting is common shared knowledge — tematización can rest on what people generally know, not just what was just said.' }
+  ],
+  exponents: [
+    { es: 'A mí me encanta bailar.', en: 'I love dancing.', register: 'coloquial', note: 'a mí fronted, doubled by me — the topic moves up front' },
+    { es: 'El comienzo del curso ha sido difícil.', en: 'The start of the course has been hard.', register: 'neutral', note: 'el, not un — treated as known, already part of the shared context' },
+    { es: '¿Has visto mi bolso?', en: 'Have you seen my bag?', register: 'coloquial', note: 'mi assumes you both already know which bag exists' }
+  ],
+  pitfalls: [
+    'Dropping the doubled pronoun after fronting (<i>*A mí encanta bailar</i>) is a common error — the fronted phrase and the pronoun work together, not as alternatives.'
+  ],
+  examples: [
+    { es: 'A nosotros nos parece bien.', en: 'It seems fine to us.' },
+    { es: 'La llegada del avión se retrasó una hora.', en: "The plane's arrival was delayed an hour." },
+    { es: '¿Dónde has dejado las llaves?', en: 'Where did you leave the keys?' }
+  ],
+  probes: [
+    { id: 'p:tematizacion:doblado', kind: 'mcq',
+      q: '¿Cuál está bien formado?',
+      options: ['A mí encanta bailar.', 'A mí me encanta bailar.', 'Mí me encanta bailar.'], answer: 1 },
+    { id: 'p:tematizacion:articulo', kind: 'mcq',
+      q: '¿Por qué "el comienzo del curso" usa artículo definido sin mención previa?',
+      options: ['Es un error', 'Es conocimiento compartido, general', 'Siempre se usa "el" con "comienzo"'], answer: 1 },
+    { id: 'p:tematizacion:cloze', kind: 'cloze',
+      text: 'A nosotros ___ parece bien.', accept: ['nos'] },
+    { id: 'p:tematizacion:recall', kind: 'recall',
+      front: 'Fronting a topic like "a mí" requires keeping this in its usual place too', back: 'the pronoun (me/te/le/nos...)' }
+  ]
+},
+
+{
+  id: 'dc-interrogativos-neutros-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:57', 'tacticas_pragmaticas:A2:58', 'tacticas_pragmaticas:A2:59',
+         'tacticas_pragmaticas:A2:60', 'tacticas_pragmaticas:A2:61', 'tacticas_pragmaticas:A2:62'],
+  title: 'Preguntas con función neutra',
+  summary: 'Not every question seeks real information — a question can be a request, an offer, a command, a note to yourself, or a teacher checking what you know, and only context tells these apart, since the grammar looks identical.',
+  sections: [
+    { h: 'Same shape, different jobs', html: 'All five of these are grammatically ordinary questions — the difference is entirely in what they DO: seek information, think aloud, test, request permission, offer, or command.' },
+    { h: 'Only context tells them apart', html: 'Nothing in <i>¿Un café?</i> marks it as an offer rather than a genuine question about coffee\'s existence — only the situation (you\'re holding a pot, standing near a guest) makes the meaning obvious.' }
+  ],
+  exponents: [
+    { es: '¿Dónde he puesto las llaves?', en: 'Where did I put the keys?', register: 'coloquial', note: 'a deliberative question — talking to yourself, not really asking anyone' },
+    { es: 'A ver, Alejo, ¿cuál es la capital de España?', en: 'Right then, Alejo, what is the capital of Spain?', register: 'neutral', note: 'exam question — the asker already knows the answer' },
+    { es: '¿Puedo abrir la ventana?', en: 'Can I open the window?', register: 'neutral', note: 'permission, phrased as a question' },
+    { es: '¿Un café?', en: 'Coffee?', register: 'coloquial', note: 'an offer, not a request for information' },
+    { es: '¿Me das el pan?', en: 'Can you pass the bread?', register: 'coloquial', note: 'a command, softened into a question' }
+  ],
+  pitfalls: [
+    'A deliberative question (<i>¿Dónde he puesto las llaves?</i>) does not expect an answer from anyone present — answering it can come across as presumptuous unless you clearly are being asked.'
+  ],
+  examples: [
+    { es: '¿Se puede fumar aquí?', en: 'Can you smoke here?' },
+    { es: '¿Te ayudo con eso?', en: 'Shall I help with that?' },
+    { es: 'A ver, ¿quién sabe la respuesta?', en: 'Right then, who knows the answer?' }
+  ],
+  probes: [
+    { id: 'p:interrogativosneutros:deliberativa', kind: 'mcq',
+      q: '"¿Dónde he puesto las llaves?" ¿A quién se dirige realmente esta pregunta?',
+      options: ['A otra persona', 'A nadie en particular — pensando en voz alta', 'Al profesor'], answer: 1 },
+    { id: 'p:interrogativosneutros:examen', kind: 'mcq',
+      q: '"A ver, Alejo, ¿cuál es la capital de España?" ¿Qué tipo de pregunta es?',
+      options: ['Real', 'De examen', 'Retórica'], answer: 1 },
+    { id: 'p:interrogativosneutros:cloze', kind: 'cloze',
+      text: '¿___ abrir la ventana?', accept: ['Puedo', 'puedo'] },
+    { id: 'p:interrogativosneutros:recall', kind: 'recall',
+      front: 'What tells apart a genuine question from an offer, a command, or an exam question?', back: 'context, not the grammar' }
+  ]
+},
+
+{
+  id: 'dc-interrogativos-orientados-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:64', 'tacticas_pragmaticas:A2:66'],
+  title: 'Preguntas orientadas',
+  summary: 'Some questions are not neutral at all — an echo question repeats what surprised you, and a rhetorical question already assumes an answer, expecting agreement rather than information.',
+  sections: [
+    { h: 'Echoing what surprised you', html: 'Repeating the last word or phrase as a question (<i>¿Un caftán?</i>) signals surprise or asks for confirmation — you heard it, you just cannot quite believe it or want it repeated.' },
+    { h: 'A question that assumes its answer', html: 'A negative question like <i>¿No conoces a Cristina?</i> is not neutral — it leans toward expecting "yes, I do" and often carries mild surprise that you would not.' }
+  ],
+  exponents: [
+    { es: '—Este verano he comprado un caftán. —¿Un caftán?', en: '—This summer I bought a caftan. —A caftan?', register: 'coloquial', note: 'echo question — repeats the surprising word, asks for confirmation/clarification' },
+    { es: '¿No conoces a Cristina?', en: "You don't know Cristina?", register: 'coloquial', note: 'rhetorical/confirmative — expects "yes you do" or genuine surprise, not new information' },
+    { es: 'Hace frío, ¿verdad?', en: "It's cold, isn't it?", register: 'neutral', note: 'a confirmative tag — expects agreement, safe in any setting' }
+  ],
+  pitfalls: [
+    'An echo question is not a request for NEW information — it repeats what was already said, so answering with unrelated new facts misses the point.'
+  ],
+  examples: [
+    { es: '—Me caso el mes que viene. —¿Te casas?', en: "—I'm getting married next month. —You're getting married?" },
+    { es: '¿No has visto la última película de Almodóvar?', en: "Haven't you seen Almodóvar's latest film?" },
+    { es: '—He dejado el trabajo. —¿Que has dejado el trabajo?', en: "—I've quit my job. —You've quit your job?" }
+  ],
+  probes: [
+    { id: 'p:interrogativosorientados:eco', kind: 'mcq',
+      q: '—He comprado un caftán. —¿Un caftán? ¿Qué función tiene esta pregunta?',
+      options: ['Pide información nueva', 'Repite lo que sorprendió, pide confirmación', 'Es un examen'], answer: 1 },
+    { id: 'p:interrogativosorientados:retorica', kind: 'mcq',
+      q: '"¿No conoces a Cristina?" ¿Qué espera el que pregunta?',
+      options: ['Información nueva', 'Que digas que sí la conoces', 'Ninguna respuesta'], answer: 1 },
+    { id: 'p:interrogativosorientados:cloze', kind: 'cloze',
+      text: '—Me caso el mes que viene. —¿___ casas?', accept: ['Te', 'te'] },
+    { id: 'p:interrogativosorientados:recall', kind: 'recall',
+      front: 'A question that repeats what surprised you, asking for confirmation', back: 'an echo question' }
+  ]
+},
+
+{
+  id: 'dc-negacion-refuerzo-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:75', 'tacticas_pragmaticas:A2:76'],
+  title: 'La negación con refuerzo',
+  summary: 'Todavía and time expressions like "en toda la semana" only make grammatical sense in a negative sentence — used in an affirmative one, they simply do not work, unlike English "still" or "all week" which are neutral either way.',
+  sections: [
+    { h: 'Negative-only expressions', html: '<i>*Juan ha llegado todavía</i> and <i>*Ha venido por aquí en toda la semana</i> are simply ungrammatical — these expressions require a negative verb, unlike English "still" or "all week", which work in either polarity.' }
+  ],
+  exponents: [
+    { es: 'Juan no ha llegado todavía.', en: "Juan hasn't arrived yet.", register: 'neutral', note: 'todavía + negative — the only grammatical order here' },
+    { es: 'No ha venido por aquí en toda la semana.', en: "He hasn't been by here all week.", register: 'coloquial', note: 'en toda la semana forces a negative reading' },
+    { es: 'Cecilia no ha estado aquí en diez años.', en: "Cecilia hasn't been here in ten years.", register: 'neutral' }
+  ],
+  pitfalls: [
+    'Do not translate English "still" directly into <i>todavía</i> in an affirmative sentence — <i>*ha llegado todavía</i> is not natural Spanish.'
+  ],
+  examples: [
+    { es: 'No he terminado todavía.', en: "I haven't finished yet." },
+    { es: 'No ha llovido en todo el mes.', en: "It hasn't rained all month." },
+    { es: 'No la he visto en dos años.', en: "I haven't seen her in two years." }
+  ],
+  probes: [
+    { id: 'p:negacionrefuerzo:gramatical', kind: 'mcq',
+      q: '¿Cuál es gramatical?',
+      options: ['Juan ha llegado todavía.', 'Juan no ha llegado todavía.', 'Juan todavía ha llegado.'], answer: 1 },
+    { id: 'p:negacionrefuerzo:tiempo', kind: 'mcq',
+      q: '"No ha venido por aquí ___ la semana." (refuerzo de la negación)',
+      options: ['toda', 'todavía', 'nunca'], answer: 0 },
+    { id: 'p:negacionrefuerzo:cloze', kind: 'cloze',
+      text: 'No he terminado ___.', accept: ['todavía'] },
+    { id: 'p:negacionrefuerzo:recall', kind: 'recall',
+      front: 'Unlike English "still", todavía in this pattern requires what?', back: 'a negative verb' }
+  ]
+},
+
+{
+  id: 'dc-atenuacion-acto-indirecto-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:96', 'tacticas_pragmaticas:A2:97', 'tacticas_pragmaticas:A2:98'],
+  title: 'Actos de habla indirectos',
+  summary: 'A command dressed as a question ("¿me das el pan?"), or as a plain statement of fact ("aquí hace frío"), is often more polite than the direct version — the listener has to infer what you want, which itself is the courtesy.',
+  sections: [
+    { h: 'A statement that means a request', html: '<i>Aquí hace frío</i> says nothing about what you want directly — it reports a fact and trusts the listener to draw the obvious conclusion.' },
+    { h: 'Imperatives that stopped being commands', html: '<i>Perdona/e</i> is grammatically an imperative ("forgive me") but functions purely as a courtesy word now — nobody hears it as an actual instruction.' }
+  ],
+  exponents: [
+    { es: '¿Me das el pan?', en: 'Can you pass the bread?', register: 'coloquial', note: 'grammatically a question, functionally a command' },
+    { es: 'Aquí hace frío.', en: "It's cold in here.", register: 'neutral', note: 'a statement of fact, functioning as a request to close a window or turn up the heat' },
+    { es: 'Perdona.', en: 'Excuse me.', register: 'coloquial', note: 'a lexicalized imperative — no longer really a command, just a courtesy formula' }
+  ],
+  pitfalls: [
+    'These indirect forms only work because the listener infers the real intent — in a context where the inference is not obvious, they can simply be misunderstood as literal statements or questions.'
+  ],
+  examples: [
+    { es: '¿Puedes cerrar la puerta?', en: 'Can you close the door?' },
+    { es: 'Esta sopa está un poco sosa.', en: 'This soup is a bit bland.' },
+    { es: 'Perdone, ¿le importa moverse un poco?', en: 'Excuse me, would you mind moving over a little?' }
+  ],
+  probes: [
+    { id: 'p:atenuacionactoindirecto:funcion', kind: 'mcq',
+      q: '"¿Me das el pan?" ¿Qué es, gramaticalmente y funcionalmente?',
+      options: ['Pregunta real', 'Pregunta con función de orden', 'Oferta'], answer: 1 },
+    { id: 'p:atenuacionactoindirecto:aseveracion', kind: 'mcq',
+      q: '"Aquí hace frío" dicho al lado de una ventana abierta. ¿Qué pide realmente?',
+      options: ['Información sobre el clima', 'Que cierren la ventana', 'Que se vayan'], answer: 1 },
+    { id: 'p:atenuacionactoindirecto:cloze', kind: 'cloze',
+      text: '¿___ das el pan?', accept: ['Me', 'me'] },
+    { id: 'p:atenuacionactoindirecto:recall', kind: 'recall',
+      front: 'A statement of fact used to make an indirect request', back: 'aseveración (e.g. "aquí hace frío")' }
+  ]
+},
+
+{
+  id: 'dc-atenuacion-1apersona-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  pcic: ['tacticas_pragmaticas:A2:93', 'tacticas_pragmaticas:A2:94'],
+  title: 'Atenuación: impersonal se y hay',
+  summary: 'Two impersonal structures let you make a request or give an order without naming yourself as the one asking, or the listener as the one being told — "se" hides the asker, "hay que" hides the target of the obligation.',
+  sections: [
+    { h: 'Se hides the speaker', html: 'Asking <i>¿Yo puedo pasar?</i> centers yourself; <i>¿Se puede pasar?</i> asks the same thing through an impersonal structure, less exposed.' },
+    { h: 'Hay que hides the target', html: '<i>Tú tienes que estudiar más</i> points at the listener; <i>Hay que estudiar más</i> states the same obligation as a general rule aimed at no one in particular.' }
+  ],
+  exponents: [
+    { es: '¿Se puede?', en: 'May I? (literally: can one?)', register: 'formal', note: 'se — softens "can I" by removing "yo" entirely' },
+    { es: '¿Se puede pasar?', en: 'May I come in?', register: 'formal' },
+    { es: 'Hay que estudiar más.', en: 'One needs to study more.', register: 'neutral', note: 'hay que — softens an order by naming no target' },
+    { es: 'Hay que llevar corbata.', en: 'A tie is required.', register: 'neutral', note: 'states a rule with no one singled out' }
+  ],
+  pitfalls: [
+    'These impersonal forms do not change the actual meaning or urgency — they only remove the explicit "yo" or "tú", making the same request or order less pointed.'
+  ],
+  examples: [
+    { es: '¿Se puede fumar aquí?', en: 'Is smoking allowed here?' },
+    { es: 'Hay que llegar puntual.', en: 'One must arrive on time.' },
+    { es: 'Aquí no se puede aparcar.', en: "You can't park here." }
+  ],
+  probes: [
+    { id: 'p:atenuacion1a2:se', kind: 'mcq',
+      q: '¿Cuál pide permiso sin nombrarte a ti mismo?',
+      options: ['¿Yo puedo pasar?', '¿Se puede pasar?', '¿Puedo yo pasar?'], answer: 1 },
+    { id: 'p:atenuacion1a2:hayque', kind: 'mcq',
+      q: '¿Cuál da una orden SIN señalar directamente al oyente?',
+      options: ['Tienes que estudiar más.', 'Hay que estudiar más.', 'Estudia más.'], answer: 1 },
+    { id: 'p:atenuacion1a2:cloze', kind: 'cloze',
+      text: '___ que llevar corbata.', accept: ['Hay', 'hay'] },
+    { id: 'p:atenuacion1a2:recall', kind: 'recall',
+      front: 'Impersonal word that softens a request by removing "yo" entirely', back: 'se' }
+  ]
 }
 
 ];
