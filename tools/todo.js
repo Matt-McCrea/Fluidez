@@ -28,18 +28,21 @@ const syl = require(path.join(ROOT, 'spec', 'syllabus-draft.json'));
  * unit, whatever the author called the lesson. */
 const specById = new Map();
 spec.forEach(i => specById.set(i.id, i));
-/* A unit is a section > subsection > leaf triple, matching how syllabus.js
- * clustered them. Matching on the subsection alone was too coarse: one lesson
- * on the present tense would mark every tense in "9.1 Tiempos verbales" done. */
-const unitKey = (inventory, section, subsection, leaf) =>
-  [inventory, section || '', subsection || '', leaf || ''].join('||');
+/* A unit is inventory > LEVEL > section > subsection > leaf. The level is
+ * essential: the PCIC spirals, so "1.2.3 Reformuladores" exists at B2 and
+ * again at C1 with different content, and they are two units. Without it, a
+ * C1 lesson marked the B2 unit done and the tool under-reported the work.
+ * Matching on the subsection alone was also too coarse — one lesson on the
+ * present tense would close every tense in "9.1 Tiempos verbales". */
+const unitKey = (inventory, level, section, subsection, leaf) =>
+  [inventory, level || '', section || '', subsection || '', leaf || ''].join('||');
 
 const written = new Map();                       // unit key -> [lesson ids]
 (window.STRAND_LESSONS || []).forEach(l => {
   (l.pcic || []).forEach(id => {
     const it = specById.get(id);
     if (!it) return;
-    const k = unitKey(it.inventory, it.section, it.subsection, it.path[0]);
+    const k = unitKey(it.inventory, it.level, it.section, it.subsection, it.path[0]);
     if (!written.has(k)) written.set(k, new Set());
     written.get(k).add(l.id);
   });
@@ -51,7 +54,7 @@ const INV = { grammar: 'gramatica', notion: 'nociones_generales', function: 'fun
 const units = syl.lessons
   .filter(u => INV[u.type])
   .map(u => {
-    const k = unitKey(INV[u.type], u.source.section, u.source.subsection, u.source.leaf);
+    const k = unitKey(INV[u.type], u.cefr, u.source.section, u.source.subsection, u.source.leaf);
     return Object.assign({}, u, { key: k, done: written.has(k) });
   });
 
