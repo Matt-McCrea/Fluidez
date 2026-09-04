@@ -3580,5 +3580,229 @@ window.PASSAGES = [
     { type: 'translate', line: 'El fin de semana ya pude salir a caminar un poco por el barrio.', model: 'By the weekend I was already able to go out and walk a little around the neighborhood.' }
   ]
 }
+,
+{
+  id: 'aeropuerto-retraso-a2', title: 'Un retraso en el aeropuerto', level: 2, theme: 'viajes',
+  text: 'El mes pasado viajamos a Portugal y nuestro vuelo se retrasó tres horas. Al principio no sabíamos por qué, pero después anunciaron un problema técnico en el avión. Mis hijos se aburrieron mucho esperando en la sala del aeropuerto. Compramos unos libros en la tienda y jugamos varios juegos para pasar el tiempo. Finalmente, el avión despegó y llegamos a Lisboa ya de noche. A pesar del retraso, disfrutamos mucho de las vacaciones.',
+  gloss: [
+    { es: 'se retrasó', en: 'was delayed' },
+    { es: 'despegó', en: 'took off' },
+    { es: 'a pesar de', en: 'despite' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto se retrasó el vuelo?', options: ['Tres horas', 'Una hora', 'Todo el día'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hicieron para pasar el tiempo?', options: ['Compraron libros y jugaron', 'Durmieron en el suelo', 'Se quejaron con el personal'], answer: 0 },
+    { type: 'short', q: '¿A qué ciudad llegaron? (una palabra)', accept: ['lisboa'] },
+    { type: 'translate', line: 'A pesar del retraso, disfrutamos mucho de las vacaciones.', model: 'Despite the delay, we enjoyed the vacation a lot.' }
+  ]
+},
+
+{
+  id: 'hotel-vista-mar-a2', title: 'Un hotel con vistas al mar', level: 3, theme: 'viajes',
+  text: 'Para nuestro aniversario, reservamos un hotel pequeño frente al mar. La habitación era sencilla, pero tenía un balcón enorme donde desayunábamos cada mañana. El primer día, caminamos por la playa y comimos pescado fresco en un restaurante local. El dueño del hotel nos recomendó una ruta poco conocida por los acantilados cercanos. Caminaremos esa ruta mañana temprano, cuando todavía no hace demasiado calor. Ha sido, sin duda, uno de los viajes más bonitos que hemos hecho juntos.',
+  gloss: [
+    { es: 'el balcón', en: 'the balcony' },
+    { es: 'los acantilados', en: 'the cliffs' },
+    { es: 'sin duda', en: 'without a doubt' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tenía la habitación?', options: ['Un balcón enorme', 'Una piscina privada', 'Una cocina'], answer: 0 },
+    { type: 'mcq', q: '¿Qué les recomendó el dueño?', options: ['Una ruta por los acantilados', 'Un restaurante caro', 'Una excursión en barco'], answer: 0 },
+    { type: 'short', q: '¿Cuándo caminarán la ruta? (dos palabras)', accept: ['mañana temprano'] },
+    { type: 'translate', line: 'Ha sido, sin duda, uno de los viajes más bonitos que hemos hecho juntos.', model: 'It has been, without a doubt, one of the loveliest trips we have taken together.' }
+  ]
+},
+
+{
+  id: 'reunion-antiguos-companeros-a2', title: 'Una reunión de antiguos compañeros', level: 2, theme: 'relaciones',
+  text: 'El sábado pasado organicé una cena con mis antiguos compañeros de instituto. No nos veíamos desde hace más de diez años y algunos casi no los reconocí. Hablamos durante horas sobre lo que había hecho cada uno con su vida. Un compañero ahora vive en otro país y trabaja como profesor de español. Otra compañera se casó el año pasado y espera su primer hijo. Al final de la noche, prometimos no esperar tanto tiempo para vernos otra vez.',
+  gloss: [
+    { es: 'el instituto', en: 'high school' },
+    { es: 'reconocí', en: 'I recognized' },
+    { es: 'espera', en: 'is expecting' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto tiempo hacía que no se veían?', options: ['Más de diez años', 'Cinco años', 'Un año'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hace ahora un compañero?', options: ['Trabaja como profesor de español', 'Es médico', 'Vive en el mismo barrio'], answer: 0 },
+    { type: 'short', q: '¿Qué esperó una compañera el año pasado? (una palabra)', accept: ['casarse', 'un hijo'] },
+    { type: 'translate', line: 'Al final de la noche, prometimos no esperar tanto tiempo para vernos otra vez.', model: 'At the end of the night, we promised not to wait so long to see each other again.' }
+  ]
+},
+
+{
+  id: 'nuevo-sobrino-a2', title: 'La llegada de mi sobrino', level: 2, theme: 'relaciones',
+  text: 'Hace dos semanas nació mi primer sobrino y toda la familia está muy feliz. Fui al hospital el mismo día para conocerlo y llevé un regalo pequeño. Mi hermana estaba cansada, pero muy contenta con su nuevo hijo. El bebé duerme casi todo el día y solo llora cuando tiene hambre. El próximo fin de semana, toda la familia se reunirá en casa de mis padres para celebrarlo. No puedo esperar a verlo crecer poco a poco.',
+  gloss: [
+    { es: 'el sobrino', en: 'the nephew' },
+    { es: 'el bebé', en: 'the baby' },
+    { es: 'celebrarlo', en: 'to celebrate it' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cuándo nació el sobrino?', options: ['Hace dos semanas', 'Ayer', 'El mes pasado'], answer: 0 },
+    { type: 'mcq', q: '¿Cuándo llora el bebé?', options: ['Cuando tiene hambre', 'Todo el tiempo', 'Solo por la noche'], answer: 0 },
+    { type: 'short', q: '¿Dónde se reunirá la familia este fin de semana? (tres palabras)', accept: ['casa de mis padres', 'en casa de padres'] },
+    { type: 'translate', line: 'No puedo esperar a verlo crecer poco a poco.', model: "I can't wait to see him grow up little by little." }
+  ]
+},
+
+{
+  id: 'entrenador-equipo-a2', title: 'El nuevo entrenador del equipo', level: 3, theme: 'ocio',
+  text: 'Ahora mismo, el equipo de fútbol de mi hijo tiene un entrenador nuevo. Al principio, los niños estaban un poco nerviosos porque el entrenador anterior era muy querido. Sin embargo, el nuevo entrenador organiza los entrenamientos de forma diferente y más divertida. Cada semana, enseña una técnica nueva y deja tiempo para jugar partidos cortos. Mi hijo dice que ha aprendido más en las últimas semanas que en todo el año pasado. El sábado jugarán su primer partido con el nuevo entrenador.',
+  gloss: [
+    { es: 'el entrenador', en: 'the coach' },
+    { es: 'querido', en: 'well-liked' },
+    { es: 'los entrenamientos', en: 'the training sessions' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué estaban nerviosos los niños al principio?', options: ['El entrenador anterior era muy querido', 'El equipo perdió muchos partidos', 'Cambiaron de campo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hace el nuevo entrenador cada semana?', options: ['Enseña una técnica nueva', 'Cambia a los jugadores', 'Cancela el entrenamiento'], answer: 0 },
+    { type: 'short', q: '¿Cuándo jugarán su primer partido? (una palabra)', accept: ['sábado', 'el sábado'] },
+    { type: 'translate', line: 'Mi hijo dice que ha aprendido más en las últimas semanas que en todo el año pasado.', model: 'My son says he has learned more in the last few weeks than in all of last year.' }
+  ]
+},
+
+{
+  id: 'club-lectura-a2', title: 'Mi club de lectura', level: 2, theme: 'ocio',
+  text: 'Hace seis meses me apunté a un club de lectura en la biblioteca del barrio. Cada mes leemos un libro diferente y después nos reunimos para hablar de él. Al principio me daba un poco de vergüenza opinar delante de tanta gente. Ahora ya conozco a todos y espero con ganas la reunión cada mes. El mes pasado leímos una novela histórica que me gustó mucho. Ahora vamos a leer un libro de un autor sudamericano.',
+  gloss: [
+    { es: 'me apunté', en: 'I signed up' },
+    { es: 'vergüenza', en: 'embarrassment' },
+    { es: 'sudamericano', en: 'South American' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde es el club de lectura?', options: ['En la biblioteca del barrio', 'En una librería', 'En su casa'], answer: 0 },
+    { type: 'mcq', q: '¿Qué sintió al principio?', options: ['Un poco de vergüenza', 'Mucho aburrimiento', 'Miedo'], answer: 0 },
+    { type: 'short', q: '¿Qué leyeron el mes pasado? (dos palabras)', accept: ['novela histórica'] },
+    { type: 'translate', line: 'Ahora ya conozco a todos y espero con ganas la reunión cada mes.', model: 'Now I already know everyone and I look forward to the meeting every month.' }
+  ]
+},
+
+{
+  id: 'primer-dia-universidad-a2', title: 'Mi primer día en la universidad', level: 2, theme: 'educacion',
+  text: 'Hoy fue mi primer día en la universidad y estaba muy nerviosa. No conocía a nadie en mi clase de biología, así que me senté sola al principio. Una compañera se acercó y me preguntó si podía sentarse a mi lado. Hablamos durante toda la clase y descubrimos que vivimos en el mismo barrio. Después de clase, fuimos juntas a la cafetería para tomar algo. Creo que hoy hice mi primera amiga de la universidad.',
+  gloss: [
+    { es: 'la biología', en: 'biology' },
+    { es: 'se acercó', en: 'came over' },
+    { es: 'la cafetería', en: 'the cafeteria' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo se sentía el primer día?', options: ['Muy nerviosa', 'Muy tranquila', 'Aburrida'], answer: 0 },
+    { type: 'mcq', q: '¿Qué descubrieron las dos compañeras?', options: ['Que viven en el mismo barrio', 'Que tienen el mismo profesor favorito', 'Que estudian lo mismo'], answer: 0 },
+    { type: 'short', q: '¿Adónde fueron después de clase? (una palabra)', accept: ['cafetería', 'a la cafetería'] },
+    { type: 'translate', line: 'Creo que hoy hice mi primera amiga de la universidad.', model: 'I think today I made my first friend at university.' }
+  ]
+},
+
+{
+  id: 'beca-estudios-a2', title: 'Una beca para estudiar fuera', level: 3, theme: 'educacion',
+  text: 'El año pasado pedí una beca para estudiar un semestre en otro país. El proceso fue largo: tuve que escribir una carta, conseguir buenas notas y esperar varios meses. Cuando recibí la noticia de que había ganado la beca, llamé a mis padres inmediatamente. El próximo semestre viajaré a Alemania para estudiar ingeniería en una universidad nueva. Todavía no hablo alemán muy bien, así que empezaré clases el mes que viene. Estoy nerviosa, pero también muy emocionada por esta oportunidad.',
+  gloss: [
+    { es: 'la beca', en: 'the scholarship' },
+    { es: 'las notas', en: 'the grades' },
+    { es: 'la oportunidad', en: 'the opportunity' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tuvo que hacer para pedir la beca?', options: ['Escribir una carta y conseguir buenas notas', 'Pagar una matrícula', 'Aprobar un examen de idiomas'], answer: 0 },
+    { type: 'mcq', q: '¿Adónde viajará el próximo semestre?', options: ['A Alemania', 'A Francia', 'A Italia'], answer: 0 },
+    { type: 'short', q: '¿Qué estudiará allí? (una palabra)', accept: ['ingeniería'] },
+    { type: 'translate', line: 'Estoy nerviosa, pero también muy emocionada por esta oportunidad.', model: 'I am nervous, but also very excited about this opportunity.' }
+  ]
+},
+
+{
+  id: 'entrevista-radio-a2', title: 'Una entrevista en la radio', level: 3, theme: 'medios',
+  text: 'La semana pasada me invitaron a hablar en un programa de radio local sobre mi trabajo. Estaba muy nerviosa porque nunca había hablado en la radio antes. El presentador me hizo preguntas sencillas sobre mi negocio y mis planes futuros. Después del programa, varias personas me escribieron porque habían escuchado la entrevista. Algunos incluso vinieron a mi tienda esa misma semana. Creo que fue una experiencia muy buena para dar a conocer mi trabajo.',
+  gloss: [
+    { es: 'el presentador', en: 'the host' },
+    { es: 'el negocio', en: 'the business' },
+    { es: 'dar a conocer', en: 'to make known' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué estaba nerviosa?', options: ['Nunca había hablado en la radio antes', 'No sabía qué decir', 'No le gustaba hablar en público'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hicieron algunas personas después del programa?', options: ['Vinieron a su tienda', 'Le escribieron cartas', 'La llamaron por teléfono'], answer: 0 },
+    { type: 'short', q: '¿Sobre qué le preguntó el presentador? (dos palabras)', accept: ['su negocio', 'planes futuros'] },
+    { type: 'translate', line: 'Creo que fue una experiencia muy buena para dar a conocer mi trabajo.', model: 'I think it was a very good experience to make my work known.' }
+  ]
+},
+
+{
+  id: 'reforma-cocina-a2', title: 'La reforma de la cocina', level: 3, theme: 'vivienda',
+  text: 'Hace un mes empezamos una reforma pequeña en la cocina de casa. Los obreros llegaron temprano cada día y trabajaron con mucho cuidado. Al principio, comíamos en el salón porque la cocina estaba llena de polvo y herramientas. La reforma costó más de lo que esperábamos, pero el resultado final vale la pena. Cambiamos los muebles antiguos por otros más modernos y pintamos las paredes de blanco. La semana que viene invitaremos a nuestros amigos a ver la cocina nueva.',
+  gloss: [
+    { es: 'los obreros', en: 'the workers' },
+    { es: 'el polvo', en: 'the dust' },
+    { es: 'vale la pena', en: 'is worth it' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde comían mientras duraba la reforma?', options: ['En el salón', 'En un restaurante', 'En casa de un vecino'], answer: 0 },
+    { type: 'mcq', q: '¿De qué color pintaron las paredes?', options: ['Blanco', 'Azul', 'Gris'], answer: 0 },
+    { type: 'short', q: '¿Qué costó más de lo esperado? (una palabra)', accept: ['la reforma', 'reforma'] },
+    { type: 'translate', line: 'La reforma costó más de lo que esperábamos, pero el resultado final vale la pena.', model: 'The renovation cost more than we expected, but the final result is worth it.' }
+  ]
+},
+
+{
+  id: 'huerto-comunitario-a2', title: 'Un huerto comunitario', level: 2, theme: 'naturaleza',
+  text: 'Hace poco, los vecinos de mi calle decidimos crear un huerto comunitario en un terreno vacío. Cada familia cuida una pequeña parte y plantamos verduras y hierbas diferentes. Los sábados por la mañana, varios vecinos se reúnen para regar las plantas juntos. Mi hija de siete años ahora sabe reconocer varias verduras solo por sus hojas. La semana pasada cosechamos los primeros tomates y los compartimos entre todos. El huerto ha unido mucho más a los vecinos de la calle.',
+  gloss: [
+    { es: 'el huerto', en: 'the (vegetable) garden' },
+    { es: 'el terreno', en: 'the plot of land' },
+    { es: 'cosechamos', en: 'we harvested' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde crearon el huerto?', options: ['En un terreno vacío', 'En el parque', 'Detrás de la escuela'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hacen los vecinos los sábados?', options: ['Riegan las plantas juntos', 'Venden verduras', 'Limpian la calle'], answer: 0 },
+    { type: 'short', q: '¿Qué cosecharon la semana pasada? (una palabra)', accept: ['tomates'] },
+    { type: 'translate', line: 'El huerto ha unido mucho más a los vecinos de la calle.', model: 'The garden has brought the neighbors on the street much closer together.' }
+  ]
+},
+
+{
+  id: 'sequia-campo-a2', title: 'La sequía en el campo', level: 3, theme: 'naturaleza',
+  text: 'Ha sido un verano muy seco y los agricultores de la zona están preocupados. Mi tío, que tiene un pequeño huerto, dice que nunca había visto tan poca lluvia en junio. El gobierno prometió ayuda económica para los agricultores más afectados por la sequía. Mientras tanto, muchos vecinos han empezado a usar menos agua en casa para ayudar. Los meteorólogos creen que va a llover más en las próximas semanas. Todos en el pueblo hablan del tema cada vez que se encuentran.',
+  gloss: [
+    { es: 'la sequía', en: 'the drought' },
+    { es: 'los agricultores', en: 'the farmers' },
+    { es: 'los meteorólogos', en: 'the meteorologists' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué prometió el gobierno?', options: ['Ayuda económica para los agricultores', 'Construir un pantano nuevo', 'Bajar los impuestos'], answer: 0 },
+    { type: 'mcq', q: '¿Qué han empezado a hacer muchos vecinos?', options: ['Usar menos agua en casa', 'Mudarse a otra ciudad', 'Comprar agua embotellada'], answer: 0 },
+    { type: 'short', q: '¿Qué tiene el tío de la narradora? (dos palabras)', accept: ['un huerto', 'pequeño huerto'] },
+    { type: 'translate', line: 'Mi tío, que tiene un pequeño huerto, dice que nunca había visto tan poca lluvia en junio.', model: 'My uncle, who has a small vegetable garden, says he had never seen so little rain in June.' }
+  ]
+},
+
+{
+  id: 'empresa-quiebra-a2', title: 'Una empresa en dificultades', level: 3, theme: 'economia',
+  text: 'La empresa donde trabaja mi vecino ha tenido problemas económicos durante los últimos meses. Las ventas bajaron mucho después de que un competidor grande abrió cerca de la fábrica. El director explicó a todos los empleados la situación en una reunión larga. Algunos compañeros de mi vecino perdieron su trabajo, pero él pudo quedarse con un sueldo menor. La empresa espera recuperarse el próximo año con un plan nuevo de ventas. Mi vecino dice que, de momento, prefiere tener un trabajo aunque gana menos dinero.',
+  gloss: [
+    { es: 'el competidor', en: 'the competitor' },
+    { es: 'el sueldo', en: 'the salary' },
+    { es: 'recuperarse', en: 'to recover' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué bajaron las ventas?', options: ['Un competidor grande abrió cerca', 'Subieron los precios', 'Cerraron una tienda'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le pasó al vecino?', options: ['Se quedó con un sueldo menor', 'Perdió su trabajo', 'Lo ascendieron'], answer: 0 },
+    { type: 'short', q: '¿Cuándo espera recuperarse la empresa? (tres palabras)', accept: ['el próximo año', 'próximo año'] },
+    { type: 'translate', line: 'Mi vecino dice que, de momento, prefiere tener un trabajo aunque gana menos dinero.', model: 'My neighbor says that, for now, he prefers to have a job even if he earns less money.' }
+  ]
+},
+
+{
+  id: 'debate-parque-a2', title: 'Un debate sobre el parque', level: 3, theme: 'politica',
+  text: 'El ayuntamiento organizó una reunión pública para hablar sobre el futuro de un terreno vacío del barrio. Algunos vecinos quieren un parque con árboles y bancos, mientras que otros prefieren un aparcamiento nuevo. Durante la reunión, cada persona tuvo dos minutos para dar su opinión frente a todos. Una vecina mayor explicó que el barrio necesita más zonas verdes para los niños y los mayores. Al final, el ayuntamiento prometió estudiar las dos opciones antes de decidir. La próxima reunión será dentro de un mes.',
+  gloss: [
+    { es: 'el ayuntamiento', en: 'the city council' },
+    { es: 'el aparcamiento', en: 'the parking lot' },
+    { es: 'las zonas verdes', en: 'green spaces' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Para qué organizó el ayuntamiento la reunión?', options: ['Para hablar del futuro de un terreno vacío', 'Para hablar de impuestos', 'Para presentar al nuevo alcalde'], answer: 0 },
+    { type: 'mcq', q: '¿Qué explicó la vecina mayor?', options: ['Que el barrio necesita más zonas verdes', 'Que faltan aparcamientos', 'Que el terreno es peligroso'], answer: 0 },
+    { type: 'short', q: '¿Cuánto tiempo tuvo cada persona para opinar? (dos palabras)', accept: ['dos minutos'] },
+    { type: 'translate', line: 'Al final, el ayuntamiento prometió estudiar las dos opciones antes de decidir.', model: 'In the end, the city council promised to study both options before deciding.' }
+  ]
+}
 
 ];
