@@ -10759,5 +10759,319 @@ window.STRAND_LESSONS = [
       front: 'Alargar una vocal (noo, buenoo) al hablar suele señalar...', back: 'vacilación / que se busca la palabra' }
   ]
 }
+,
+/* ============================================================================
+ * BATCH — B2 grammar, first 9 of 18 outstanding units.
+ * ========================================================================== */
+{
+  id: 'gr-el-que-relativos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:248', 'gramatica:B2:249', 'gramatica:B2:250', 'gramatica:B2:251',
+         'gramatica:B2:252', 'gramatica:B2:254', 'gramatica:B2:256', 'gramatica:B2:257'],
+  title: 'El que, la que, los que, las que: el relativo tras preposición',
+  summary: 'Plain "que" cannot follow a preposition in careful Spanish — "la persona que hablé" is not standard for "the person I spoke to". Once a preposition is involved, the article has to reappear and agree with what it points back to: el que, la que, los que, las que.',
+  sections: [
+    { h: 'Why the article comes back', html: 'Bare <i>que</i> after a preposition sounds foreign: <b>*la chica de que te hablé</b>. Spanish reinserts an article that agrees with the antecedent in gender and number: <i>la chica de <b>la que</b> te hablé</i>, <i>los amigos con <b>los que</b> viajé</i>.' },
+    { h: 'With no antecedent at all', html: 'When nothing precedes it, <i>el que</i> works like "whoever/the one who": <i>He dejado mi dirección para <b>el que</b> le interese</i>. Here the gender defaults to masculine unless context specifies otherwise.' },
+    { h: 'As a plain subject or object, no preposition', html: '<i>El que</i> can also open a sentence on its own, standing for a person or thing already understood: <i><b>El que</b> asistió ayer a la cena fue el menos indicado.</i> This "the one who" reading needs no preposition at all.' },
+    { h: 'Object of a person: a la que vs que', html: 'When the antecedent is a person and the relative is a direct object, the personal <i>a</i> triggers <i>a la que</i> (or plain <i>que</i> without it, slightly less careful): <i>La chica <b>a la que</b> he visto</i> / <i>La chica que he visto</i> — both current, the first more explicit about who did what to whom.' }
+  ],
+  contrasts: [
+    { es: 'La casa de la que te hablé está en venta.', en: 'The house I told you about is for sale.', note: 'preposition + article + que, agreeing with "casa" (fem.)' },
+    { es: 'Los chicos de los que te hablé llegan mañana.', en: 'The guys I told you about arrive tomorrow.', note: 'same pattern, masculine plural' },
+    { es: 'He dejado mi dirección para el que le interese.', en: "I've left my address for whoever is interested.", note: 'no antecedent — "el que" means "whoever"' },
+    { es: 'La chica a la que he visto no era María.', en: "The girl I saw wasn't María.", note: 'personal a + la que for a human direct object' }
+  ],
+  pitfalls: [
+    'A bare <i>que</i> right after a preposition (<i>*la chica de que te hablé</i>) is a very common learner error — the article must return: <i>de la que</i>.',
+    'The article in <i>el/la/los/las que</i> agrees with the ANTECEDENT, not with the preposition or with any other noun nearby.',
+    'Without an antecedent, <i>el que</i> defaults masculine (<i>el que quiera, que hable</i>) even when the eventual referent could be anyone.'
+  ],
+  examples: [
+    { es: 'El lápiz con el que escribo fue un regalo de mi abuela.', en: 'The pencil I write with was a gift from my grandmother.' },
+    { es: 'Las personas de las que te hablé llegan esta tarde.', en: "The people I told you about arrive this afternoon." },
+    { es: 'El que llega tarde se queda sin sitio.', en: 'Whoever arrives late is left without a seat.' }
+  ],
+  probes: [
+    { id: 'p:elque:prep', kind: 'mcq', q: '"La empresa ___ trabajo es pequeña." (para la que trabajo)',
+      options: ['que', 'la que', 'para la que'], answer: 2 },
+    { id: 'p:elque:noantecedent', kind: 'mcq', q: '¿Qué significa "El que llegue primero, gana"?',
+      options: ['Solo una persona específica gana', 'Quienquiera que llegue primero gana', 'Nadie puede ganar'], answer: 1 },
+    { id: 'p:elque:cloze', kind: 'cloze', text: 'La casa de ___ te hablé es enorme. (fem.)', accept: ['la que'] },
+    { id: 'p:elque:recall', kind: 'recall', front: 'Tras preposición, ¿"que" solo o con artículo?', back: 'con artículo: de la que, con el que, para los que…' }
+  ]
+},
+
+{
+  id: 'gr-que-explicativo-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:244', 'gramatica:B2:245', 'gramatica:B2:246'],
+  title: '"Que" explicativo: la coma que añade, no que elige',
+  summary: 'Between commas, "que" stops selecting which one you mean and starts adding a comment about someone or something already fully identified — the difference between "the friends who came" (which ones?) and "my friends, who came,..." (all of them, plus a remark).',
+  sections: [
+    { h: 'Specificative vs explicative', html: 'Without commas, <i>que</i> narrows down which referent you mean: <i>los amigos que vinieron</i> (only the ones who came, as opposed to others). With commas, it adds a side comment about a referent already fully identified: <i>mis amigos, que vinieron todos,…</i> — you already know who "mis amigos" are.' },
+    { h: 'The antecedent can be a pronoun', html: 'Explicative <i>que</i> is the one construction where the antecedent can be a stressed personal pronoun: <i>Yo, <b>que</b> soy su mejor amigo, lo sé.</i> A specificative clause cannot attach to <i>yo</i> this way — there is only one "yo".' },
+    { h: 'What explicative que cannot do', html: 'It resists dropping its antecedent and resists standing alone the way <i>el que</i> can — it always leans on something already named, set off by commas on one or both sides.' }
+  ],
+  contrasts: [
+    { es: 'Esa chica, que es mi vecina, es muy simpática.', en: 'That girl, who is my neighbor, is very nice.', note: 'a comment about a girl already identified' },
+    { es: 'La chica que vive al lado es mi vecina.', en: 'The girl who lives next door is my neighbor.', note: 'specificative — picks out WHICH girl, no commas' },
+    { es: 'Yo, que soy su mejor amigo, lo sé.', en: 'I, who am his best friend, know it.', note: 'explicative que with a stressed pronoun antecedent' }
+  ],
+  pitfalls: [
+    'The comma is not decoration: removing it from an explicative clause can change who you are talking about, or make the sentence read as picking one out of several.',
+    'Explicative <i>que</i> needs an antecedent already named right before it — it cannot be used the way <i>el que</i> is, to mean "whoever".'
+  ],
+  examples: [
+    { es: 'Mi hermano, que vive en Bogotá, viene a visitarnos en verano.', en: 'My brother, who lives in Bogotá, is coming to visit us in summer.' },
+    { es: 'El informe, que ya has leído, no menciona esos datos.', en: 'The report, which you have already read, does not mention that data.' },
+    { es: 'Tú, que sabes de esto, deberías opinar.', en: 'You, who know about this, should give your opinion.' }
+  ],
+  probes: [
+    { id: 'p:queexpl:comma', kind: 'mcq', q: '¿Cuál distingue ENTRE varios hermanos posibles?',
+      options: ['Mi hermano, que vive en Bogotá, viene a visitarnos.', 'El hermano que vive en Bogotá viene a visitarnos.', 'Ambas por igual'], answer: 1 },
+    { id: 'p:queexpl:pronoun', kind: 'mcq', q: '¿Qué antecedente admite el "que" explicativo pero no el especificativo?',
+      options: ['un sustantivo común', 'un pronombre tónico (yo, tú)', 'un nombre propio'], answer: 1 },
+    { id: 'p:queexpl:cloze', kind: 'cloze', text: 'Mi jefa, ___ es muy exigente, aprobó el proyecto. (comment, not selection)', accept: ['que'] },
+    { id: 'p:queexpl:recall', kind: 'recall', front: 'Explicative "que" between commas: does it SELECT or COMMENT on the antecedent?', back: 'comments — the antecedent is already fully identified' }
+  ]
+},
+
+{
+  id: 'gr-quien-quienes-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:259', 'gramatica:B2:260', 'gramatica:B2:261', 'gramatica:B2:262'],
+  title: 'Quien / quienes: solo para personas',
+  summary: '"Quien" does everything "el que" does when the antecedent is human, but it is pickier: it never refers to things, it agrees only in number (not gender), and as a subject it never takes a preposition.',
+  sections: [
+    { h: 'Agrees in number only', html: '<i>Quien</i> becomes <i>quienes</i> for plural, full stop — there is no separate feminine form: <i>el amigo/la amiga de quien te hablé</i>, <i>los amigos/las amigas de quienes te hablé</i>.' },
+    { h: 'With and without an antecedent', html: 'With one: <i>Ese profesor, de <b>quien</b> me hablaste, es horrible.</i> Without one, it means "whoever": <i>He dejado mi dirección para <b>quien</b> le interese.</i>' },
+    { h: 'Subject needs no preposition; complement does', html: 'As a bare subject, <i>quien</i> stands alone: <i><b>Quien</b> tiene razón es él.</i> As a complement it needs one: <i>La persona a <b>quien</b> me dirigí no supo responderme.</i>' }
+  ],
+  contrasts: [
+    { es: 'Quien tiene razón es él.', en: 'The one who is right is him.', note: 'bare subject, no preposition' },
+    { es: 'La persona a quien me dirigí no supo responderme.', en: 'The person I approached did not know how to answer me.', note: 'complement — needs "a"' },
+    { es: 'Quienes lleguen tarde no podrán entrar.', en: 'Whoever arrives late will not be able to come in.', note: 'plural, no antecedent, generic "whoever"' },
+    { es: '*El libro de quien te hablé.', en: '(wrong)', note: 'quien is for PEOPLE only — a book needs "el que" or "que"' }
+  ],
+  pitfalls: [
+    '<i>Quien</i> never refers to a thing. For an object, use <i>el que/la que</i> or plain <i>que</i>.',
+    'It has no feminine form — do not reach for a nonexistent <i>*quiena</i>.',
+    'As a subject with no preposition, <i>quien</i> needs nothing extra; the mistake is adding an unnecessary <i>el</i> or <i>que</i> in front of it.'
+  ],
+  examples: [
+    { es: 'Quienes hayan terminado pueden salir.', en: 'Those who have finished may leave.' },
+    { es: 'Ese es el compañero de quien te hablé la semana pasada.', en: "That's the colleague I told you about last week." },
+    { es: 'Para quien quiera aprender, aquí tiene toda la información.', en: 'For whoever wants to learn, here is all the information.' }
+  ],
+  probes: [
+    { id: 'p:quien:thing', kind: 'mcq', q: '¿Cuál es incorrecta?', options: ['El coche del que te hablé.', 'El coche de quien te hablé.', 'El coche que compré ayer.'], answer: 1 },
+    { id: 'p:quien:subject', kind: 'mcq', q: '¿Cuál necesita preposición delante?', options: ['Quien tiene razón es él.', 'La persona a quien me dirigí.', 'Ninguna de las dos'], answer: 1 },
+    { id: 'p:quien:cloze', kind: 'cloze', text: '___ lleguen tarde no podrán entrar. (plural)', accept: ['Quienes', 'quienes'] },
+    { id: 'p:quien:recall', kind: 'recall', front: '¿"Quien" puede referirse a cosas?', back: 'no — solo a personas' }
+  ]
+},
+
+{
+  id: 'gr-orden-interrogativos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:284', 'gramatica:B2:285', 'gramatica:B2:286', 'gramatica:B2:287'],
+  title: 'El orden en las preguntas: lo que puede moverse',
+  summary: 'A Spanish question puts more in front of the verb than a beginner rule of thumb suggests, and once the question word is placed, everything after the verb has real freedom of order. B2 is where those two facts stop being noise and start being usable.',
+  sections: [
+    { h: 'What can go before the verb', html: 'Not just the interrogative itself: an adverb of frequency can sit between subject and verb even in a question — <i>¿Quién <b>a menudo</b> hace ejercicio?</i> — a word order that would be unnatural in a statement.' },
+    { h: 'After the verb, order is loose', html: 'Once the interrogative and verb are placed, what follows can shuffle relatively freely without changing the core meaning: <i>¿De quién habla mal la gente?</i> and <i>¿Por qué Luis no dijo nada?</i> both front-load the wh-word and let the rest fall where it reads best.' },
+    { h: 'Two question words at once', html: 'Interrogatives can coordinate: <i>¿Dónde y cuándo os conocisteis?</i> asks for both pieces of information in one question, both words fronted together.' },
+    { h: 'Echo questions: interrogative LAST', html: 'When you did not hear or cannot believe what was said, the interrogative moves to the END instead of the front — an echo question: <i>¿Ella ha dicho <b>qué</b>?</i> ("She said WHAT?"), quoting back the missing piece.' }
+  ],
+  contrasts: [
+    { es: '¿Quién a menudo hace ejercicio?', en: 'Who often exercises?', note: 'frequency adverb between subject slot and verb' },
+    { es: '¿Por qué Luis no dijo nada?', en: "Why didn't Luis say anything?", note: 'subject after the question word, free postverbal order' },
+    { es: '¿Dónde y cuándo os conocisteis?', en: 'Where and when did you meet?', note: 'two coordinated interrogatives, both fronted' },
+    { es: '—Voy a Perú. —¿Vas adónde?', en: "—I'm going to Peru. —You're going WHERE?", note: 'echo question — interrogative at the end, asking for repetition' }
+  ],
+  pitfalls: [
+    'An echo question is not a normal information question — it repeats back what was just said, with the interrogative in the position of the surprising word, at the end.',
+    'Coordinating two interrogatives (<i>dónde y cuándo</i>) needs both words fronted together, not one fronted and one left in place.'
+  ],
+  examples: [
+    { es: '¿Quién normalmente llega primero?', en: 'Who usually arrives first?' },
+    { es: '¿Cómo y por qué cambió de opinión?', en: 'How and why did they change their mind?' },
+    { es: '—Se casa el sábado. —¿Se casa cuándo?', en: "—She's getting married Saturday. —She's getting married WHEN?" }
+  ],
+  probes: [
+    { id: 'p:ordeninterr:echo', kind: 'mcq', q: 'No oíste bien y repites la pregunta con el interrogativo al final. ¿Cómo se llama esto?',
+      options: ['Pregunta directa', 'Pregunta eco', 'Pregunta retórica'], answer: 1 },
+    { id: 'p:ordeninterr:coord', kind: 'mcq', q: '¿Cuál pregunta por DOS cosas a la vez?',
+      options: ['¿Dónde y cuándo os conocisteis?', '¿Dónde os conocisteis?', '¿Cuándo os conocisteis?'], answer: 0 },
+    { id: 'p:ordeninterr:cloze', kind: 'cloze', text: '—Llega mañana. —¿Llega ___? (pregunta eco)', accept: ['cuándo'] },
+    { id: 'p:ordeninterr:recall', kind: 'recall', front: 'En una pregunta eco, ¿dónde va el interrogativo?', back: 'al final, no al principio' }
+  ]
+},
+
+{
+  id: 'gr-adverbios-frecuencia-topico-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:336', 'gramatica:B2:337', 'gramatica:B2:338', 'gramatica:B2:339',
+         'gramatica:B2:340', 'gramatica:B2:341', 'gramatica:B2:346'],
+  title: 'Adverbios de frecuencia y el adverbio-tópico',
+  summary: 'Not all frequency adverbs behave alike: some can be intensified with "muy" and some flatly cannot, and one special class — personalmente and its family — steps outside the sentence entirely to flag whose opinion is coming.',
+  sections: [
+    { h: 'Indeterminate frequency: gradable', html: '<i>Habitualmente, frecuentemente, raramente</i> describe a pattern without a fixed count, and they accept degree: <i>muy raramente</i>. They move freely: <i>raramente voy</i> / <i>voy raramente</i>.' },
+    { h: 'Determinate frequency: not gradable', html: '<i>Diariamente, anualmente</i> name a FIXED interval, so grading them makes no sense: <b>*muy diariamente</b> is ungrammatical the way "*very daily" is in English. They still move: <i>voy diariamente</i> / <i>diariamente voy</i>.' },
+    { h: 'The adverb-as-topic: personalmente', html: '<i>Personalmente</i> and similar words do not describe the action at all — they flag that what follows is the speaker\'s own take, and they sit in a parenthetical position, often set off by commas: <i>Personalmente, a mí me gustan más los gatos.</i>' }
+  ],
+  contrasts: [
+    { es: 'Voy al cine raramente. / Raramente voy al cine.', en: 'I rarely go to the cinema.', note: 'gradable, free position' },
+    { es: 'Muy raramente salgo entre semana.', en: 'Very rarely do I go out on weekdays.', note: 'gradation possible with indeterminate frequency' },
+    { es: 'Voy al gimnasio diariamente.', en: 'I go to the gym daily.', note: 'fixed interval — not gradable' },
+    { es: 'Personalmente, no comparto esa opinión.', en: 'Personally, I don\'t share that opinion.', note: 'topic adverb — marks whose view follows, parenthetical' }
+  ],
+  pitfalls: [
+    '<i>*Muy diariamente</i> and <i>*muy anualmente</i> are wrong: determinate-frequency adverbs name a fixed count, which cannot be "more" or "less".',
+    '<i>Personalmente</i> is not commenting on HOW something was done — unlike <i>correctamente</i> it does not modify the verb\'s manner, it flags the speaker\'s stance.'
+  ],
+  examples: [
+    { es: 'Frecuentemente llegamos tarde a las reuniones.', en: 'We frequently arrive late to meetings.' },
+    { es: 'El informe se publica anualmente.', en: 'The report is published annually.' },
+    { es: 'Personalmente, creo que deberíamos esperar.', en: 'Personally, I think we should wait.' }
+  ],
+  probes: [
+    { id: 'p:advfrec:grad', kind: 'mcq', q: '¿Cuál admite grado ("muy ___")?', options: ['diariamente', 'raramente', 'anualmente'], answer: 1 },
+    { id: 'p:advfrec:wrong', kind: 'mcq', q: '¿Cuál es incorrecta?', options: ['muy raramente', 'muy diariamente', 'muy frecuentemente'], answer: 1 },
+    { id: 'p:advfrec:topico', kind: 'cloze', text: '___, no estoy de acuerdo con la decisión. (marca tu opinión personal)', accept: ['Personalmente', 'personalmente'] },
+    { id: 'p:advfrec:recall', kind: 'recall', front: '¿Por qué "personalmente" no es un adverbio de modo normal?', back: 'no describe CÓMO se hizo algo — marca de quién es la opinión' }
+  ]
+},
+
+{
+  id: 'gr-adverbios-evaluativos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:342', 'gramatica:B2:343', 'gramatica:B2:344', 'gramatica:B2:345'],
+  title: 'Adverbios evaluativos: un comentario sobre toda la frase',
+  summary: 'Words like "desgraciadamente" and "necesariamente" do not describe an action — they pass judgement on the whole sentence, from outside it, and can move almost anywhere without changing what they mean.',
+  sections: [
+    { h: 'Necessity and obligation', html: '<i>Necesariamente, inevitablemente, forzosamente</i> comment that something is bound to be so: <i>Necesariamente tiene que ser el lunes.</i> They can open the sentence, sit mid-sentence, or close it — the meaning barely shifts.' },
+    { h: 'Emotive judgement of the speaker', html: '<i>Afortunadamente, desgraciadamente, lamentablemente</i> tell you how the SPEAKER feels about the fact, not how the action was carried out: <i>Desgraciadamente no puedo hacer nada.</i>' },
+    { h: 'Evaluating how the subject acted', html: 'A third group judges the SUBJECT\'s performance: <i>inteligentemente, generosamente, correctamente</i> — <i>Inteligentemente, esperó a tener todos los datos</i> says the WAITING was a smart move, not merely that it happened calmly.' }
+  ],
+  contrasts: [
+    { es: 'Necesariamente tiene que ser el lunes.', en: 'It necessarily has to be Monday.', note: 'obligation — no way around it' },
+    { es: 'Desgraciadamente, no puedo hacer nada.', en: 'Unfortunately, I can\'t do anything.', note: "the speaker's feeling about the whole situation" },
+    { es: 'Inteligentemente, guardó una copia antes de enviarlo.', en: 'Smartly, she kept a copy before sending it.', note: "judges the subject's action as wise" },
+    { es: 'Ella respondió correctamente.', en: 'She answered correctly.', note: 'manner, NOT evaluative — this describes HOW, not a judgement on the choice' }
+  ],
+  pitfalls: [
+    'Do not confuse an evaluative adverb with a manner adverb that happens to look similar: <i>correctamente</i> can be either — "she answered correctly" (manner) vs, fronted and set off, "Correctamente, decidió esperar" (evaluative: waiting WAS the right call).',
+    'These adverbs comment on the fact as a whole, so they read naturally at the front, in the middle set off by commas, or at the end — position is a matter of emphasis, not grammar.'
+  ],
+  examples: [
+    { es: 'Afortunadamente, llegamos a tiempo.', en: 'Fortunately, we arrived on time.' },
+    { es: 'Lamentablemente, el vuelo se canceló.', en: 'Unfortunately, the flight was cancelled.' },
+    { es: 'Generosamente, compartió todo lo que tenía.', en: 'Generously, he shared everything he had.' }
+  ],
+  probes: [
+    { id: 'p:advevaluativo:tipo', kind: 'mcq', q: '"Desgraciadamente no llegamos a tiempo" — ¿qué evalúa el adverbio?',
+      options: ['Cómo llegamos', 'El sentimiento del hablante sobre el hecho', 'La velocidad'], answer: 1 },
+    { id: 'p:advevaluativo:sujeto', kind: 'mcq', q: '"Inteligentemente, esperó los resultados" — ¿qué se juzga?',
+      options: ['Que esperar fue una decisión acertada', 'Que esperó con calma', 'Que es una persona inteligente en general'], answer: 0 },
+    { id: 'p:advevaluativo:cloze', kind: 'cloze', text: '___, tiene que terminarse hoy. (obligación ineludible)', accept: ['Necesariamente', 'necesariamente'] },
+    { id: 'p:advevaluativo:recall', kind: 'recall', front: 'An evaluative adverb like "desgraciadamente" comments on...', back: 'the whole fact/sentence, from the speaker\'s viewpoint — not the manner of the action' }
+  ]
+},
+
+{
+  id: 'gr-adverbios-enunciacion-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:357', 'gramatica:B2:358', 'gramatica:B2:359'],
+  title: 'Adverbios de enunciación: comentar sobre las propias palabras',
+  summary: 'A small set of adverbs talk about the DISCOURSE itself rather than the world — they narrow down a claim, correct a slip, or wrap up what has been said. They are the connective tissue of a well-organised explanation.',
+  sections: [
+    { h: 'Narrowing down: concretamente, exactamente', html: 'These pinpoint exactly which part of what was just said matters: <i>Necesitamos ayuda, concretamente con la logística.</i> They zoom in rather than adding new information.' },
+    { h: 'Correcting or clarifying: precisamente, casualmente', html: 'A speaker uses these to fine-tune or correct a previous statement on the fly: <i>Llegó, casualmente, el mismo día que yo</i> flags a coincidence worth noting inside the sentence itself.' },
+    { h: 'Wrapping up: resumidamente, en resumen', html: 'These signal that a summary is coming, distilling everything said before into one line: <i>Resumidamente, el proyecto se retrasó por falta de presupuesto.</i>' }
+  ],
+  contrasts: [
+    { es: 'Necesitamos mejorar, concretamente, la atención al cliente.', en: 'We need to improve, specifically, customer service.', note: 'narrows down which part of a general claim' },
+    { es: 'Precisamente por eso no fui.', en: "That's precisely why I didn't go.", note: 'reinforces the exact reason, ruling out others' },
+    { es: 'Resumidamente, el plan no funcionó.', en: 'In short, the plan didn\'t work.', note: 'flags a summary of everything said before' }
+  ],
+  pitfalls: [
+    'These adverbs comment on the WORDING or structure of what is being said, not on the event itself — they belong to the level of the conversation, not the level of the facts.',
+    '<i>Casualmente</i> means "by coincidence", not "casually" — a classic false friend for English speakers.'
+  ],
+  examples: [
+    { es: 'Exactamente, eso es lo que quería decir.', en: "Exactly, that's what I meant." },
+    { es: 'Casualmente, nos encontramos en la misma cola.', en: 'By coincidence, we ended up in the same line.' },
+    { es: 'En resumen, necesitamos más tiempo y más presupuesto.', en: 'In summary, we need more time and more budget.' }
+  ],
+  probes: [
+    { id: 'p:advenunc:falsefriend', kind: 'mcq', q: '"Casualmente" significa...', options: ['de manera informal', 'por casualidad', 'siempre'], answer: 1 },
+    { id: 'p:advenunc:resumen', kind: 'mcq', q: '¿Cuál introduce un resumen de lo dicho antes?', options: ['Concretamente', 'Resumidamente', 'Precisamente'], answer: 1 },
+    { id: 'p:advenunc:cloze', kind: 'cloze', text: '___, el problema es el presupuesto, no el tiempo. (pinpoint exactly)', accept: ['Concretamente', 'concretamente', 'Exactamente', 'exactamente'] },
+    { id: 'p:advenunc:recall', kind: 'recall', front: 'Adverbios de enunciación comentan sobre...', back: 'las propias palabras / el discurso, no sobre el mundo' }
+  ]
+},
+
+{
+  id: 'gr-relativo-donde-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:379', 'gramatica:B2:380', 'gramatica:B2:381', 'gramatica:B2:383'],
+  title: 'Donde como relativo: lugares sin repetir "en el que"',
+  summary: '"Donde" does the job of "en el/la que" for places, but more compactly — and it is the one relative that survives with no antecedent at all, since "the place where" is so often left unsaid.',
+  sections: [
+    { h: 'Specificative: which place', html: '<i>Donde</i> narrows down a place already named: <i>Este es el lugar <b>donde</b> nos conocimos</i>, equivalent to <i>en el que nos conocimos</i> but shorter.' },
+    { h: 'No antecedent needed', html: 'Unlike most relatives, <i>donde</i> works perfectly with nothing before it: <i>Quedamos <b>donde</b> la última vez</i> — "where" stands in for the whole idea of "the place".' },
+    { h: 'Explicative: an aside about a place', html: 'Set off by commas, it adds a comment about a place already identified: <i>Estudié allí, <b>donde</b> está la plaza.</i>' }
+  ],
+  contrasts: [
+    { es: 'Este es el lugar donde nos conocimos.', en: 'This is the place where we met.', note: 'equivalent to "en el que", more compact' },
+    { es: 'Quedamos donde la última vez.', en: "Let's meet where we did last time.", note: 'no antecedent at all — donde carries the whole idea of "place"' },
+    { es: 'Vivo en Toledo, donde nació mi madre.', en: 'I live in Toledo, where my mother was born.', note: 'explicative — an aside about a place already named' }
+  ],
+  pitfalls: [
+    '<i>Donde</i> replaces <i>en el que/en la que/en los que/en las que</i> — do not stack them: <i>*el lugar donde en el que</i> is redundant.',
+    'It only ever refers to a PLACE. For time, cause or other relations, other relatives (<i>cuando</i>, <i>por lo que</i>) are needed.'
+  ],
+  examples: [
+    { es: 'Ese es el restaurante donde celebramos tu cumpleaños.', en: "That's the restaurant where we celebrated your birthday." },
+    { es: 'Volví al pueblo donde pasé mi infancia.', en: 'I went back to the village where I spent my childhood.' },
+    { es: 'Nos vemos donde siempre.', en: 'See you at the usual place.' }
+  ],
+  probes: [
+    { id: 'p:reldonde:equiv', kind: 'mcq', q: '"El lugar donde nos vimos" equivale a...', options: ['el lugar en el que nos vimos', 'el lugar que nos vimos', 'el lugar cual nos vimos'], answer: 0 },
+    { id: 'p:reldonde:noantecedent', kind: 'mcq', q: '¿Cuál NO necesita antecedente expreso?', options: ['que', 'donde', 'el que'], answer: 1 },
+    { id: 'p:reldonde:cloze', kind: 'cloze', text: 'Este es el pueblo ___ nací.', accept: ['donde'] },
+    { id: 'p:reldonde:recall', kind: 'recall', front: '¿"Donde" puede usarse sin antecedente?', back: 'sí — es de los pocos relativos que no lo necesitan' }
+  ]
+},
+
+{
+  id: 'gr-condicional-compuesto-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:460', 'gramatica:B2:462', 'gramatica:B2:463', 'gramatica:B2:464', 'gramatica:B2:465'],
+  title: 'El condicional compuesto: habría + participio',
+  summary: 'The compound conditional does for the past what the simple conditional does for the present: guesses, unreal conditions and reported plans, but all placed one step further back — something that WOULD HAVE happened, not would happen.',
+  sections: [
+    { h: 'Form', html: '<i>Habría/habrías/habría/habríamos/habríais/habrían</i> + past participle. Fully regular from <i>haber</i> in the conditional, whatever the main verb.' },
+    { h: 'A guess about the past', html: 'Just as the simple conditional guesses about the present (<i>serían las diez</i>), the compound form guesses about something already finished by a given point: <i>Habrían salido de casa</i> — "they must have already left".' },
+    { h: 'Reported speech, one step back', html: 'Inside reported speech, it reports what WOULD HAVE happened by the time of the reporting: <i>Dijo que <b>habría venido</b></i> — his coming was to be already finished by then.' },
+    { h: 'Unreal conditions in the past', html: 'Paired with the pluperfect subjunctive, it is the standard past unreal conditional: <i>Si hubiera podido, <b>habría ido</b>.</i>' },
+    { h: 'Wishes with the "if" left unsaid', html: 'The protasis can vanish entirely, leaving only the wish: <i>Yo <b>habría ido</b> al médico</i> implies "(if I had been you) I would have gone" without ever saying so.' }
+  ],
+  contrasts: [
+    { es: 'Habrían salido de casa hace una hora.', en: 'They must have left home an hour ago.', note: 'conjecture about a completed past event' },
+    { es: 'Dijo que habría terminado para el viernes.', en: 'He said he would have finished by Friday.', note: 'reported anteriority — future-in-the-past, but completed' },
+    { es: 'Si hubiera podido, habría ido.', en: 'If I had been able to, I would have gone.', note: 'standard past unreal conditional' },
+    { es: 'Yo habría ido al médico.', en: 'I would have gone to the doctor.', note: 'implied "in your place" — no protasis stated' }
+  ],
+  pitfalls: [
+    'Do not confuse the compound conditional (<i>habría ido</i>, "would have gone") with the pluperfect subjunctive (<i>hubiera ido</i>, "had gone") — they pair up in the same sentence but are not interchangeable.',
+    'Spoken Spanish sometimes substitutes <i>hubiera</i> for <i>habría</i> in the main clause of unreal conditionals (<i>si hubiera podido, hubiera ido</i>) — common, but the standard form for the result clause is <i>habría</i>.'
+  ],
+  examples: [
+    { es: 'Con más tiempo, habría revisado el informe otra vez.', en: 'With more time, I would have checked the report again.' },
+    { es: 'Me dijo que ya habría hablado con el jefe para esa fecha.', en: 'She told me she would have already spoken to the boss by that date.' },
+    { es: 'Habría sido más fácil avisar antes.', en: 'It would have been easier to let us know beforehand.' }
+  ],
+  probes: [
+    { id: 'p:condcompuesto:form', kind: 'mcq', q: 'El condicional compuesto se forma con...', options: ['habría + participio', 'había + participio', 'hubiera + participio'], answer: 0 },
+    { id: 'p:condcompuesto:reported', kind: 'mcq', q: '"Dijo que ___ (terminar) para el viernes" — anterioridad respecto al pasado',
+      options: ['terminaría', 'habría terminado', 'terminara'], answer: 1 },
+    { id: 'p:condcompuesto:cloze', kind: 'cloze', text: 'Si lo hubiera sabido, ___ (avisar) antes.', accept: ['habría avisado'] },
+    { id: 'p:condcompuesto:recall', kind: 'recall', front: 'El condicional compuesto = ¿conjetura sobre qué momento?', back: 'un hecho ya terminado en el pasado' }
+  ]
+}
 
 ];
