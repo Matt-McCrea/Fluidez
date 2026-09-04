@@ -66,22 +66,45 @@ Plus practice material, which is a separate axis and is **the larger gap**:
 
 ### Order of work
 
-0. **Back-tag the existing practice material with themes** — 190 passages and
-   325 writing tasks carry none, so none can appear in a themed track. One word
-   each, from the 20 themes in `data/taxonomy.js`, chosen by reading the text.
-   **This cannot be derived**: the diagnostic words are often untagged legacy
-   vocabulary (`la ley`, `el gobierno` have no theme) or absent entirely
-   (`protesta`, `votar`), and PCIC files `sociedad` under `economia`, so a
-   word-matching heuristic tags a passage about water policy as `vivienda`.
-   Apply items do not need a theme — they are grammar drills.
-1. **Finish A1 and A2 lessons** (47) — small, and a learner meets them first.
-2. **B1 lessons** (99), then **B1 practice material**.
-3. **B2 lessons** (164) and **B2 practice material**.
-4. **C1 lessons** (153) and **C1 practice material**.
+**0. Back-tag the existing practice material with themes.** 190 passages and
+325 writing tasks carry none, so none can appear in a themed track. One word
+each, from the 20 themes in `data/taxonomy.js`, chosen by reading the text.
+**This cannot be derived**: the diagnostic words are often untagged legacy
+vocabulary (`la ley`, `el gobierno` have no theme) or absent entirely
+(`protesta`, `votar`), and the PCIC files `sociedad` under `economia`, so a
+word-matching heuristic tags a passage about water policy as `vivienda`. Apply
+items do not need a theme — they are grammar drills.
 
-Finish a level before starting the next. A learner walks the ladder in order,
-so a hole at B1 is reached long before anything at C1. A level with lessons but
-no passages gives the learner a lesson and then three empty stages.
+**1. Regenerate the 49 formulaic B1 passages — and report before going on.**
+B1 hit its target of 81 passages and 49 of them reach the pluscuamperfecto
+through the same move, *"Antes de X, había Y"*. They are correct Spanish and
+substantially the same text. Replace them (this is the one place the
+append-only rule is deliberately set aside), using `spec/genre-samples.json`
+for models and the route table below for variety.
+
+Then run `node tools/variety.js B1` and **report the frame percentages**.
+
+This is deliberately first, and it is a test rather than a chore: if real
+models and an explicit variety rule fix it here, the same approach is safe for
+the 160 B2/C1 passages that follow. If the frames are still over 25%, stop and
+say so — something in the method is wrong and writing 160 more the same way
+would waste the effort.
+
+**2. Close the stragglers.** Two lesson units (one A1 discourse, one B1
+discourse) and A2 passages, which sit at 22 against a target of 62.
+
+**3. B2 — lessons (83), then practice material** (80 passages, 120 apply, 80
+writing). **Stop after the B2 practice material and report** with three sample
+passages. This is the first content written entirely to the upper-level rules —
+Spanish-language glossaries, 200–300 words, inference questions — and whether
+it is genuinely B2 or B1 with harder words is not something any gate can see.
+
+**4. C1 — lessons (88), then practice material** (80 passages, 120 apply, 80
+writing).
+
+Finish a level before starting the next: a learner walks the ladder in order,
+so a hole at B2 is reached long before anything at C1, and a level with lessons
+but no passages gives them a lesson and then three empty stages.
 
 ## 3. Absolute rules
 
