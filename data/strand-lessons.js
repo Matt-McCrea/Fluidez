@@ -12234,5 +12234,518 @@ window.STRAND_LESSONS = [
       back: 'it claims the fact is still relevant now — a complaint or a state that persists' }
   ]
 }
+,
+/* ============================================================================
+ * BATCH — B2 function, first 14 of 44 outstanding units.
+ * ========================================================================== */
+{
+  id: 'fn-preguntar-con-prudencia-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:50', 'funciones:B2:51', 'funciones:B2:52'],
+  title: 'Preguntar con prudencia: pedir permiso para preguntar',
+  summary: 'Before an intrusive question, a piece of advice, or a criticism, Spanish often asks permission to speak at all — a small ritual that buys goodwill before the actual content lands.',
+  sections: [
+    { h: 'Why ask permission to ask', html: 'A question that might be awkward, personal or unwelcome (about money, a relationship, a mistake) reads much better preceded by a request to ask it at all: <i>¿Puedo hacerte una pregunta indiscreta?</i> softens whatever comes next.' },
+    { h: 'The same move for advice or criticism', html: 'The identical formula works before advice or a comment the listener has not asked for: <i>¿Puedo darte un consejo?</i>, <i>¿Puedo decir(te) algo?</i> — it is not really a yes/no question, it is a courtesy pause.' },
+    { h: '¿Me dejas...? — a warmer, more informal variant', html: '<i>¿Me dejas decirte algo?</i> asks permission the same way, but with the intimacy of "dejar" (to let/allow) rather than the more neutral "poder" — reserved for closer relationships.' }
+  ],
+  exponents: [
+    { es: '¿Puedo hacerte una pregunta un poco indiscreta?', en: 'Can I ask you a slightly personal question?', register: 'neutral', note: 'the standard cushion before a private question' },
+    { es: '¿Podría preguntarle por qué tomó esa decisión?', en: 'Might I ask why you made that decision?', register: 'formal', note: 'condicional + usted, in a professional or formal setting' },
+    { es: '¿Te puedo decir una cosa?', en: 'Can I tell you something?', register: 'coloquial', note: 'everyday cushion before an opinion or comment' },
+    { es: '¿Me dejas que te haga un comentario?', en: 'Will you let me make a comment?', register: 'coloquial', note: '"dejar" — warmer, more intimate than "poder"' }
+  ],
+  contrasts: [
+    { es: '¿Puedo hacerte una pregunta indiscreta?', en: 'Can I ask you a personal question?', note: 'neutral cushion, works in most situations' },
+    { es: '¿Podría preguntarle si está usted casado?', en: 'Might I ask if you are married?', note: 'formal — usted, condicional' },
+    { es: '¿Te puedo preguntar algo?', en: 'Can I ask you something?', note: 'plain coloquial version, no special softening beyond the question itself' }
+  ],
+  pitfalls: [
+    'This is a genuine request for permission in form only — almost nobody answers "no"; refusing to answer the cushion question itself would be unusual and confrontational.',
+    'The formal register (<i>podría + usted</i>) is expected in professional interviews, medical consultations, or with strangers — using the plain <i>puedo</i> there can read as too direct.'
+  ],
+  examples: [
+    { es: '¿Puedo darte un consejo? No sé si es el momento de tomar esa decisión.', en: 'Can I give you some advice? I\'m not sure this is the time to make that decision.' },
+    { es: '¿Podría preguntarle dónde trabaja actualmente?', en: 'Might I ask where you currently work?' },
+    { es: '¿Me dejas decirte algo, aunque no te vaya a gustar?', en: 'Will you let me tell you something, even though you might not like it?' }
+  ],
+  probes: [
+    { id: 'p:prudencia:register', kind: 'mcq', q: '¿Cuál usarías en una entrevista formal con un desconocido?',
+      options: ['¿Te puedo preguntar algo?', '¿Podría preguntarle algo?', '¿Me dejas que te pregunte algo?'], answer: 1 },
+    { id: 'p:prudencia:function', kind: 'mcq', q: '¿Para qué sirve "¿Puedo hacerte una pregunta indiscreta?"?',
+      options: ['Para pedir permiso literal, esperando un "no"', 'Para suavizar una pregunta potencialmente incómoda', 'Para cambiar de tema'], answer: 1 },
+    { id: 'p:prudencia:cloze', kind: 'cloze', text: '¿Me ___ decirte algo importante? (informal, "let me")', accept: ['dejas'] },
+    { id: 'p:prudencia:recall', kind: 'recall', front: 'Antes de un consejo no pedido, ¿qué fórmula suaviza?', back: '¿Puedo darte un consejo?' }
+  ]
+},
+
+{
+  id: 'fn-cuestionar-informacion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:119', 'funciones:B2:120', 'funciones:B2:121'],
+  title: 'Cuestionar la información: dudar en voz alta',
+  summary: 'Beyond simply asking for confirmation, Spanish has a register for open incredulity — questioning not just WHETHER something is true, but how the other person can possibly claim it is.',
+  sections: [
+    { h: 'Exclamation + question: real disbelief', html: '<i>¡¿De verdad que...?!</i> and <i>¡¿En serio?!</i>, written with both marks, carry genuine surprise or doubt, not a neutral request for information — the punctuation mirrors a rising, incredulous intonation.' },
+    { h: 'Challenging the speaker directly', html: '<i>¿Cómo puedes decir/afirmar/asegurar que…?</i> does not question the fact so much as challenge the OTHER PERSON\'s right or basis to claim it — confrontational by nature.' },
+    { h: 'Questioning your own certainty', html: '<i>¿Cómo puedo estar seguro/a de que…?</i> turns the same structure inward, expressing the speaker\'s own doubt rather than challenging someone else.' }
+  ],
+  exponents: [
+    { es: '¡¿De verdad que se lo dijiste sin avisarme?!', en: 'You seriously told him without warning me?!', register: 'coloquial', note: 'strong disbelief, informal' },
+    { es: '¿Cómo puedes afirmar eso sin ninguna prueba?', en: 'How can you claim that without any proof?', register: 'neutral', note: 'challenging the basis of a claim' },
+    { es: '¿Cómo puedo estar segura de que me está diciendo la verdad?', en: 'How can I be sure you\'re telling me the truth?', register: 'formal', note: 'usted — expresses the speaker\'s own doubt, more measured tone' },
+    { es: '¡¿En serio piensas que va a funcionar?!', en: 'You seriously think this is going to work?!', register: 'coloquial', note: 'incredulity, informal' }
+  ],
+  contrasts: [
+    { es: '¿Es cierto que renunciaste?', en: 'Is it true that you resigned?', note: 'neutral request for confirmation' },
+    { es: '¡¿De verdad renunciaste sin decirme nada?!', en: 'You seriously resigned without telling me anything?!', note: 'incredulous, emotionally charged' },
+    { es: '¿Cómo puedes decir que no te importa?', en: 'How can you say you don\'t care?', note: 'directly challenges the other person' }
+  ],
+  pitfalls: [
+    'The double punctuation <i>¡¿…?!</i> is not decorative — it signals a specific intonation of disbelief, and using it for a plain question reads as needlessly dramatic.',
+    '<i>¿Cómo puedes decir que…?</i> is confrontational by design — it questions the other person\'s standing to make the claim, not just the claim itself, and can escalate a conversation.'
+  ],
+  examples: [
+    { es: '¡¿En serio que se ha ido sin avisar?!', en: 'She seriously left without telling anyone?!' },
+    { es: '¿Cómo puedes asegurar que fue culpa mía?', en: 'How can you claim it was my fault?' },
+    { es: '¿Cómo puedo estar seguro de que esto es verdad?', en: 'How can I be sure this is true?' }
+  ],
+  probes: [
+    { id: 'p:cuestionar:tono', kind: 'mcq', q: '"¡¿De verdad que dijo eso?!" transmite...', options: ['una pregunta neutra', 'incredulidad, sorpresa fuerte', 'indiferencia'], answer: 1 },
+    { id: 'p:cuestionar:confronta', kind: 'mcq', q: '¿Cuál cuestiona directamente al OTRO, no solo al hecho?', options: ['¿Es verdad que se fue?', '¿Cómo puedes decir que no pasó nada?', '¿Se ha confirmado la noticia?'], answer: 1 },
+    { id: 'p:cuestionar:cloze', kind: 'cloze', text: '¿Cómo puedo estar ___ de que dice la verdad? (certain)', accept: ['segura', 'seguro'] },
+    { id: 'p:cuestionar:recall', kind: 'recall', front: '¿Qué marca especial de puntuación se usa para incredulidad fuerte?', back: '¡¿…?! (exclamación + interrogación combinadas)' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-encubierta-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:115', 'funciones:B2:116', 'funciones:B2:117', 'funciones:B2:118'],
+  title: 'Preguntar de forma encubierta: sin preguntar directamente',
+  summary: 'Instead of asking outright, Spanish often hints at a question by reporting a rumour and leaving space for the other person to confirm or deny it — a gossip-friendly, indirect way to fish for confirmation.',
+  sections: [
+    { h: 'Attributing the claim to a source', html: '<i>He oído que…</i>, <i>Dicen que…</i>, <i>Me han contado que…</i> distance the speaker from the claim — you are not asserting it yourself, just reporting what you heard, which invites the listener to correct or confirm.' },
+    { h: '¿eh/no? — a wink built into the sentence', html: 'Tagging a statement with <i>¿eh?</i> or <i>¿no?</i>, often with a knowing tone or a smile, turns a simple observation into an implied question loaded with complicity or irony: <i>Fin de semana romántico, ¿eh?</i>' }
+  ],
+  exponents: [
+    { es: 'He oído que ayer hubo problemas en la oficina.', en: 'I heard there were problems at the office yesterday.', register: 'neutral', note: 'reports a rumour, invites confirmation without asking directly' },
+    { es: 'Dicen que te vas a trabajar a Japón.', en: "They say you're going to work in Japan.", register: 'coloquial', note: 'impersonal "dicen" — fishing for confirmation' },
+    { es: 'Me han comentado que Rodríguez cambia de trabajo.', en: "I've heard Rodríguez is changing jobs.", register: 'neutral', note: 'slightly more formal source-attribution' },
+    { es: 'Fin de semana romántico, ¿eh?', en: 'Romantic weekend, huh?', register: 'coloquial', note: 'implies complicity/teasing, invites the listener to fill in details' }
+  ],
+  contrasts: [
+    { es: '¿Es verdad que te vas a Japón?', en: 'Is it true you\'re going to Japan?', note: 'direct question' },
+    { es: 'Dicen que te vas a Japón.', en: "They say you're going to Japan.", note: 'indirect — same fishing purpose, softer approach' },
+    { es: '¿Fuiste al cine con alguien?', en: 'Did you go to the cinema with someone?', note: 'direct question' },
+    { es: 'Cine con compañía, ¿eh?', en: 'Cinema with company, huh?', note: 'teasing, indirect, invites elaboration' }
+  ],
+  pitfalls: [
+    'Reporting a source (<i>he oído, dicen</i>) does not commit the speaker to believing it — it is a deliberately non-committal way of raising the topic, useful precisely because it leaves an easy exit for both parties.',
+    'The <i>¿eh?/¿no?</i> tag depends heavily on tone and context; in writing it can be ambiguous whether it reads as playful or accusatory.'
+  ],
+  examples: [
+    { es: 'He oído que el proyecto se ha cancelado.', en: "I've heard the project has been cancelled." },
+    { es: 'Se dice que va a haber cambios en la dirección.', en: 'There\'s talk of changes in management.' },
+    { es: 'Muy callado hoy, ¿eh?', en: 'Very quiet today, huh?' }
+  ],
+  probes: [
+    { id: 'p:encubierta:funcion', kind: 'mcq', q: '¿Para qué sirve "Dicen que te vas a Japón" en vez de preguntar directamente?',
+      options: ['Para afirmar un hecho seguro', 'Para invitar a confirmar/negar sin preguntar directamente', 'Para dar una orden'], answer: 1 },
+    { id: 'p:encubierta:eh', kind: 'mcq', q: '"Fin de semana romántico, ¿eh?" implica...', options: ['sorpresa neutra', 'complicidad o ironía', 'desacuerdo'], answer: 1 },
+    { id: 'p:encubierta:cloze', kind: 'cloze', text: '___ que ayer hubo problemas. (I heard)', accept: ['He oído'] },
+    { id: 'p:encubierta:recall', kind: 'recall', front: '¿Compromete el hablante a creer la información "he oído que..."?', back: 'no — es una forma no comprometida de sacar el tema' }
+  ]
+},
+
+{
+  id: 'fn-pedir-confirmacion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:105', 'funciones:B2:106', 'funciones:B2:107', 'funciones:B2:108',
+         'funciones:B2:109', 'funciones:B2:110', 'funciones:B2:111', 'funciones:B2:112', 'funciones:B2:113'],
+  title: 'Pedir confirmación: ¿es verdad que...?',
+  summary: 'A wide toolkit for double-checking something you have already heard or guessed — from a plain "is it true" to a tag question that expects agreement, and a formal register for professional settings.',
+  sections: [
+    { h: 'Direct confirmation checks', html: '<i>¿Es verdad/cierto que…?</i> and <i>¿Es verdad eso de que…?</i> ask straightforwardly whether a specific claim holds — the second, with <i>eso de que</i>, distances the claim slightly, as if it were something floating around rather than the speaker\'s own assertion.' },
+    { h: 'Tag questions expecting agreement', html: '<i>…, ¿no es cierto/así?</i> and <i>…, ¿sí o no?</i> follow a statement and press for a yes/no answer, closer to English "isn\'t that right?" — they assume the speaker is probably correct.' },
+    { h: 'Formal confirmation requests', html: '<i>¿Podría confirmarme…?</i> and <i>Necesitaría saber/confirmar si…</i> belong to professional or service contexts — checking in with an airline, a hotel, an office.' },
+    { h: 'Confirming by restating', html: '<i>¿Quieres decir que…?</i> checks understanding by rephrasing what the other person just said, making sure you got it right before responding.' }
+  ],
+  exponents: [
+    { es: '¿Es verdad que tu hermana se casa con Óscar?', en: 'Is it true your sister is marrying Óscar?', register: 'neutral', note: 'plain confirmation request' },
+    { es: 'Lo has visto, ¿no es cierto?', en: 'You saw it, isn\'t that right?', register: 'neutral', note: 'tag question, expects agreement' },
+    { es: '¿Podría confirmarme la hora de llegada del vuelo?', en: 'Could you confirm the flight\'s arrival time for me?', register: 'formal', note: 'service/professional context' },
+    { es: '¿Quieres decir que prefieres ir solo?', en: 'Do you mean you\'d rather go alone?', register: 'neutral', note: 'confirming by rephrasing' },
+    { es: '¿Fue ayer o no?', en: 'Was it yesterday or not?', register: 'coloquial', note: 'blunt, direct — sí o no pattern' }
+  ],
+  contrasts: [
+    { es: '¿Es verdad que dimitió?', en: 'Is it true he resigned?', note: 'neutral direct question' },
+    { es: 'Dimitió, ¿no es así?', en: 'He resigned, didn\'t he?', note: 'tag question, expects "yes"' },
+    { es: '¿Podría confirmarme si la reserva sigue en pie?', en: 'Could you confirm whether the reservation still stands?', note: 'formal, service context' },
+    { es: '¿Quieres decir que ya no vienes?', en: 'Do you mean you\'re not coming after all?', note: 'checks understanding of what was just said' }
+  ],
+  pitfalls: [
+    '<i>¿No crees/piensas que…?</i> looks like a plain question but is a leading one — it steers the listener toward agreeing, unlike a neutral <i>¿Crees que…?</i>',
+    'The formal register (<i>¿Podría confirmarme…?</i>) is expected with strangers or in service interactions; using tag questions like <i>¿no es así?</i> there can feel presumptuous.'
+  ],
+  examples: [
+    { es: '¿Es cierto eso de que se muda a otra ciudad?', en: 'Is it true that he\'s moving to another city?' },
+    { es: 'Necesitaría confirmar si el paquete ya salió del almacén.', en: 'I would need to confirm whether the package has left the warehouse.' },
+    { es: 'Llegaste tarde, ¿sí o no?', en: 'Did you arrive late or not?' }
+  ],
+  probes: [
+    { id: 'p:pedirconf:formal', kind: 'mcq', q: '¿Cuál usarías al llamar a una aerolínea?', options: ['¿Fue ayer o no?', '¿Podría confirmarme la hora del vuelo?', 'Lo sabes, ¿no?'], answer: 1 },
+    { id: 'p:pedirconf:tag', kind: 'mcq', q: '"Lo viste, ¿no es cierto?" espera principalmente...', options: ['una respuesta de "sí"', 'una respuesta de "no"', 'ninguna respuesta'], answer: 0 },
+    { id: 'p:pedirconf:cloze', kind: 'cloze', text: '¿___ decir que no vas a venir? (paraphrase check)', accept: ['Quieres'] },
+    { id: 'p:pedirconf:recall', kind: 'recall', front: '¿Qué tipo de pregunta espera que el otro confirme lo que ya crees?', back: 'una tag question — …, ¿no es cierto/así?' }
+  ]
+},
+
+{
+  id: 'fn-confirmar-info-previa-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:123', 'funciones:B2:124', 'funciones:B2:125'],
+  title: 'Confirmar información previa: claro que sí',
+  summary: 'Answering a confirmation request has its own set of emphatic formulas — stronger and more assured than a plain "sí", removing any doubt the question implied.',
+  sections: [
+    { h: '(Pues) claro que...', html: 'Repeats back the verb from the question with <i>claro que</i> in front, confirming firmly and slightly correcting any implied doubt: <i>—¿Le has dado la dirección? —Pues claro que se la he dado.</i>' },
+    { h: 'Por supuesto que sí/no', html: 'A more formal-sounding but still common way to confirm firmly, working equally for a positive or negative confirmation: <i>—¿Me dejarás solo? —Por supuesto que no.</i>' },
+    { h: 'No hay duda de que...', html: 'Reinforces the confirmation with certainty language, often preceded by <i>sí, sí</i> or <i>no, no</i> for emphasis: <i>Sí, sí, no hay duda de que sabe lo que hace.</i>' }
+  ],
+  exponents: [
+    { es: 'Pues claro que se la he dado.', en: 'Of course I gave it to her.', register: 'coloquial', note: 'repeats the verb, firm confirmation' },
+    { es: 'Por supuesto que no te dejaré solo.', en: "Of course I won't leave you alone.", register: 'neutral', note: 'works for negative confirmation too' },
+    { es: 'Sí, sí, no hay duda de que tiene razón.', en: "Yes, yes, there's no doubt he's right.", register: 'neutral', note: 'doubled sí for emphasis + certainty phrase' }
+  ],
+  contrasts: [
+    { es: 'Sí, se lo dije.', en: 'Yes, I told him.', note: 'plain confirmation' },
+    { es: 'Pues claro que se lo dije.', en: 'Of course I told him.', note: 'firmer, implies "how could you doubt it"' },
+    { es: 'Por supuesto que sí.', en: 'Of course.', note: 'standalone, strongly affirmative' }
+  ],
+  pitfalls: [
+    '<i>Pues claro que...</i> can sound mildly indignant, as if the question should not have needed asking — appropriate among people who know each other, less so in a first formal exchange.',
+    '<i>Por supuesto que no</i> confirms a NEGATIVE — do not confuse it with a refusal of the question itself.'
+  ],
+  examples: [
+    { es: '—¿Vendrás a la boda? —Por supuesto que sí.', en: '—Will you come to the wedding? —Of course.' },
+    { es: '—¿Se lo has contado? —Pues claro que se lo he contado.', en: '—Have you told her? —Of course I have.' },
+    { es: 'No hay duda de que este es el mejor camino.', en: 'There is no doubt this is the best way.' }
+  ],
+  probes: [
+    { id: 'p:confirmarprevia:tono', kind: 'mcq', q: '"Pues claro que sí" suena...', options: ['dudoso', 'firme, casi obvio', 'formal y distante'], answer: 1 },
+    { id: 'p:confirmarprevia:negativo', kind: 'mcq', q: '"Por supuesto que no" confirma...', options: ['una afirmación', 'una negación', 'ninguna de las dos'], answer: 1 },
+    { id: 'p:confirmarprevia:cloze', kind: 'cloze', text: 'Sí, sí, no hay ___ de que tiene razón. (doubt)', accept: ['duda'] },
+    { id: 'p:confirmarprevia:recall', kind: 'recall', front: '¿Qué palabra suele repetirse al confirmar con "claro que"?', back: 'el verbo de la pregunta original' }
+  ]
+},
+
+{
+  id: 'fn-expresar-acuerdo-parcial-general-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:263', 'funciones:B2:264', 'funciones:B2:265', 'funciones:B2:279', 'funciones:B2:280', 'funciones:B2:281', 'funciones:B2:282'],
+  title: 'Estar de acuerdo con matices: parcial, en general, con eso',
+  summary: 'Full agreement is rarely the whole truth of a conversation. B2 adds the vocabulary for agreeing with PART of an idea, or in general terms, without signing off on every detail.',
+  sections: [
+    { h: 'Estoy de acuerdo con/en + lo específico', html: '<i>Estoy de acuerdo con eso</i> points at one particular claim, not the whole conversation; <i>de acuerdo en lo de que + indic./subj.</i> attaches agreement to one clause specifically.' },
+    { h: 'En líneas generales: broad but not total', html: '<i>En líneas generales estoy de acuerdo</i> signals overall agreement while leaving room for reservations about details — a common, diplomatic opener before a "pero".' },
+    { h: 'Partial agreement, explicitly marked', html: '<i>Estoy de acuerdo con gran parte de…</i>, <i>(pero solo) en parte</i>, and <i>No estoy del todo de acuerdo</i> all mark a fraction of agreement rather than the whole — useful for disagreeing gently.' }
+  ],
+  exponents: [
+    { es: 'Estoy de acuerdo con eso que dices.', en: 'I agree with what you\'re saying there.', register: 'coloquial', note: 'points at one specific point' },
+    { es: 'En líneas generales, estoy de acuerdo con tu propuesta.', en: 'Broadly speaking, I agree with your proposal.', register: 'neutral', note: 'overall agreement, room for detail objections' },
+    { es: 'Estoy de acuerdo con gran parte de tus argumentos.', en: 'I agree with much of your reasoning.', register: 'neutral', note: 'quantifies the agreement' },
+    { es: 'No estoy del todo de acuerdo, la verdad.', en: "I'm not entirely in agreement, to be honest.", register: 'neutral', note: 'softened partial disagreement' }
+  ],
+  contrasts: [
+    { es: 'Estoy totalmente de acuerdo.', en: 'I completely agree.', note: 'full agreement, for comparison' },
+    { es: 'En líneas generales estoy de acuerdo, pero tengo dudas sobre el plazo.', en: 'Broadly I agree, but I have doubts about the deadline.', note: 'partial — sets up an objection' },
+    { es: 'Estoy de acuerdo solo en parte.', en: 'I only partly agree.', note: 'explicitly limits the agreement' }
+  ],
+  pitfalls: [
+    '<i>En líneas generales</i> is a diplomatic hedge — using it and then not following with any objection can read as odd, since it sets up an expectation of "but".',
+    '<i>Estoy de acuerdo con eso</i> without further specification can be ambiguous about WHICH part of a long previous turn is being agreed with — in careful speech, name the specific point.'
+  ],
+  examples: [
+    { es: '—¿Qué opinas del plan? —En líneas generales, estoy de acuerdo.', en: '—What do you think of the plan? —Broadly speaking, I agree.' },
+    { es: 'Estoy de acuerdo en lo de que necesitamos más tiempo.', en: 'I agree that we need more time.' },
+    { es: 'Comparto casi todo lo que dices, aunque no estoy del todo de acuerdo con el final.', en: "I share almost everything you're saying, though I don't entirely agree with the ending." }
+  ],
+  probes: [
+    { id: 'p:acuerdoparcial:hedge', kind: 'mcq', q: '"En líneas generales estoy de acuerdo" suele preceder a...', options: ['una objeción o matiz', 'un rechazo total', 'nada más, es una afirmación cerrada'], answer: 0 },
+    { id: 'p:acuerdoparcial:cantidad', kind: 'mcq', q: '¿Cuál expresa MÁS acuerdo?', options: ['Estoy de acuerdo en parte.', 'Estoy de acuerdo con gran parte de tus argumentos.', 'No estoy del todo de acuerdo.'], answer: 1 },
+    { id: 'p:acuerdoparcial:cloze', kind: 'cloze', text: 'No estoy del ___ de acuerdo con esa decisión.', accept: ['todo'] },
+    { id: 'p:acuerdoparcial:recall', kind: 'recall', front: '¿Qué expresión limita explícitamente el acuerdo a una fracción?', back: 'estoy de acuerdo (solo) en parte / con gran parte de' }
+  ]
+},
+
+{
+  id: 'fn-expresar-acuerdo-rotundo-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:269', 'funciones:B2:270', 'funciones:B2:271', 'funciones:B2:272', 'funciones:B2:273',
+         'funciones:B2:274', 'funciones:B2:275', 'funciones:B2:276', 'funciones:B2:277'],
+  title: 'Expresar acuerdo rotundo: sin ninguna duda',
+  summary: 'The strong end of the agreement scale — used when hedging would undersell how obvious the point seems. Several formulas exist for exactly this, from the casual to the near-formal.',
+  sections: [
+    { h: 'Exclamatory, immediate confirmations', html: '<i>¡Por supuesto!</i>, <i>Desde luego (que sí/no)</i>, <i>(Pues) claro (que sí/no)</i> — short, punchy, and delivered fast, often as the very first word of the reply.' },
+    { h: 'Certainty-language reinforcements', html: '<i>Sin duda (alguna)</i>, <i>Totalmente/completamente/absolutamente de acuerdo</i> add explicit certainty vocabulary rather than relying on tone alone.' },
+    { h: 'Validating the other person', html: '<i>Tienes toda la razón</i> goes further than agreeing with a claim — it credits the OTHER PERSON with being right, which reads as warmer and more personal than agreeing with the idea itself.' },
+    { h: 'Sí, sí, eso es...', html: 'Doubling <i>sí</i> before confirming (<i>Sí, sí, eso es verdad/cierto/evidente</i>) adds emphasis through repetition, very common in fast spoken exchanges.' }
+  ],
+  exponents: [
+    { es: '¡Por supuesto! No hay ninguna duda.', en: 'Of course! There\'s no doubt at all.', register: 'coloquial', note: 'fast, exclamatory' },
+    { es: 'Desde luego que sí, cuenta conmigo.', en: 'Of course, count on me.', register: 'neutral', note: 'slightly more measured than ¡Por supuesto!' },
+    { es: 'Estoy absolutamente de acuerdo con esa propuesta.', en: 'I completely agree with that proposal.', register: 'formal', note: 'explicit certainty vocabulary, professional register' },
+    { es: 'Tienes toda la razón, debí avisarte antes.', en: "You're completely right, I should have told you sooner.", register: 'coloquial', note: 'validates the person, not just the claim' },
+    { es: 'Sin duda alguna, es la mejor opción.', en: 'Without a doubt, it\'s the best option.', register: 'formal', note: 'works in both spoken and written argument' }
+  ],
+  contrasts: [
+    { es: 'Estoy de acuerdo.', en: 'I agree.', note: 'plain baseline, for comparison' },
+    { es: '¡Claro que sí! Totalmente de acuerdo.', en: 'Of course! Completely agree.', note: 'stacked emphasis, very strong' },
+    { es: 'Sin duda alguna, tienes razón.', en: 'Without any doubt, you\'re right.', note: 'written or spoken, formal-leaning' }
+  ],
+  pitfalls: [
+    '<i>Tienes toda la razón</i> is warmer and more personal than <i>Eso es verdad</i> — it credits the person, useful for smoothing over a previous disagreement.',
+    'These formulas are for STRONG agreement — using them for lukewarm agreement oversells the sentiment and can sound insincere.'
+  ],
+  examples: [
+    { es: '—Deberíamos cancelarlo. —Sin duda, es lo más sensato.', en: "—We should cancel it. —No doubt, that's the sensible thing." },
+    { es: 'Claro que sí, cuenta con mi apoyo.', en: 'Of course, you have my support.' },
+    { es: 'Tienes toda la razón, no lo había pensado así.', en: "You're absolutely right, I hadn't thought of it that way." }
+  ],
+  probes: [
+    { id: 'p:acuerdorotundo:persona', kind: 'mcq', q: '¿Cuál valida a la PERSONA, no solo la idea?', options: ['Sin duda alguna.', 'Tienes toda la razón.', 'Estoy de acuerdo.'], answer: 1 },
+    { id: 'p:acuerdorotundo:formal', kind: 'mcq', q: '¿Cuál es más apropiada en un informe escrito?', options: ['¡Claro que sí!', 'Estoy absolutamente de acuerdo con esta conclusión.', 'Sí, sí, eso está claro.'], answer: 1 },
+    { id: 'p:acuerdorotundo:cloze', kind: 'cloze', text: '___ duda alguna, es la mejor solución. (without)', accept: ['Sin'] },
+    { id: 'p:acuerdorotundo:recall', kind: 'recall', front: '¿Qué expresión de acuerdo rotundo elogia a la persona, no la idea?', back: 'Tienes toda la razón' }
+  ]
+},
+
+{
+  id: 'fn-expresar-desacuerdo-rotundo-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:320', 'funciones:B2:321', 'funciones:B2:322', 'funciones:B2:323',
+         'funciones:B2:324', 'funciones:B2:325', 'funciones:B2:326', 'funciones:B2:327', 'funciones:B2:328'],
+  title: 'Expresar desacuerdo rotundo: en absoluto',
+  summary: 'The mirror image of strong agreement — flat, unhedged rejection of a claim, from a measured written register down to a direct, almost confrontational spoken one.',
+  sections: [
+    { h: '¡En absoluto! and no...en absoluto', html: '<i>¡En absoluto!</i> alone rejects a suggestion completely; <i>No estoy en absoluto de acuerdo</i> does the same with the verb spelled out — both are unhedged, no room for "maybe".' },
+    { h: 'Denying the other person is right', html: '<i>No tienes ninguna razón</i> and <i>Estás (muy) equivocado</i> go past disagreeing with the claim to directly telling the other person they are wrong — confrontational, best reserved for people who can take it.' },
+    { h: 'Rejecting the truth-value directly', html: '<i>No, no, eso no es verdad/cierto/evidente</i> and <i>No, no, eso no está claro</i> attack the claim\'s truth or clarity specifically, doubled <i>no</i> for emphasis, mirroring the doubled <i>sí</i> of agreement.' },
+    { h: 'Reacting with disbelief', html: '<i>¿Pero cómo puedes decir eso?</i> pushes back by questioning how the other person could even make the claim — emotionally loaded, common in an argument that has gotten personal.' }
+  ],
+  exponents: [
+    { es: '¡En absoluto! No pienso hacerlo así.', en: 'Absolutely not! I\'m not doing it that way.', register: 'coloquial', note: 'blunt, immediate rejection' },
+    { es: 'No estoy en absoluto de acuerdo con ese análisis.', en: 'I don\'t agree with that analysis at all.', register: 'formal', note: 'measured but unhedged, professional register' },
+    { es: 'Estás muy equivocado si piensas eso.', en: 'You are very mistaken if you think that.', register: 'coloquial', note: 'confrontational, targets the person directly' },
+    { es: 'No, no, eso no es cierto.', en: "No, no, that's not true.", register: 'neutral', note: 'doubled no, rejects the claim\'s truth' },
+    { es: '¿Pero cómo puedes decir eso?', en: 'But how can you say that?', register: 'coloquial', note: 'emotionally charged pushback' }
+  ],
+  contrasts: [
+    { es: 'No estoy de acuerdo.', en: "I don't agree.", note: 'plain baseline, for comparison' },
+    { es: '¡En absoluto! Me parece un error total.', en: 'Absolutely not! I think it\'s a complete mistake.', note: 'stacked, unhedged rejection' },
+    { es: 'Estás equivocado.', en: "You're wrong.", note: 'targets the person, more confrontational than rejecting just the idea' }
+  ],
+  pitfalls: [
+    '<i>Estás equivocado</i> and <i>No tienes ninguna razón</i> attack the PERSON\'s correctness, not just their claim — reserve them for situations where directness is welcome, not a first professional disagreement.',
+    'In writing or formal speech, <i>No estoy en absoluto de acuerdo con...</i> stays measured; the exclamatory spoken forms (<i>¡En absoluto!</i>) do not transfer well to formal register.'
+  ],
+  examples: [
+    { es: 'No, no, eso no está claro en absoluto.', en: "No, no, that's not clear at all." },
+    { es: '¿Pero cómo puedes decir que no me importa?', en: 'But how can you say I don\'t care?' },
+    { es: 'Estoy completamente en desacuerdo con esa medida.', en: 'I completely disagree with that measure.' }
+  ],
+  probes: [
+    { id: 'p:desacuerdorotundo:persona', kind: 'mcq', q: '¿Cuál ataca directamente a la persona, no solo a la idea?', options: ['No estoy de acuerdo.', 'Estás muy equivocado.', 'Eso no es cierto.'], answer: 1 },
+    { id: 'p:desacuerdorotundo:formal', kind: 'mcq', q: '¿Cuál es más apropiada en un contexto profesional?', options: ['¡En absoluto!', 'No estoy en absoluto de acuerdo con esa propuesta.', '¿Pero cómo puedes decir eso?'], answer: 1 },
+    { id: 'p:desacuerdorotundo:cloze', kind: 'cloze', text: 'No, no, eso no es ___ . (true)', accept: ['verdad', 'cierto'] },
+    { id: 'p:desacuerdorotundo:recall', kind: 'recall', front: '¿Qué fórmula de desacuerdo mirror-a el "Sí, sí" del acuerdo enfático?', back: 'No, no, eso no es verdad/cierto' }
+  ]
+},
+
+{
+  id: 'fn-expresar-certeza-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:366', 'funciones:B2:367', 'funciones:B2:368', 'funciones:B2:369'],
+  title: 'Estoy absolutamente seguro/convencido: certeza total',
+  summary: 'Reinforcing certainty is not just about adding "muy" — Spanish has specific intensifiers (absolutamente, firmemente, del todo) that pair with seguro/convencido and a family of complement structures for exactly what you are certain about.',
+  sections: [
+    { h: 'The intensifiers', html: '<i>Absolutamente, firmemente, del todo</i> each intensify <i>seguro</i> or <i>convencido</i> — <i>firmemente</i> leans toward a conviction held despite pressure, <i>del todo</i> toward completeness, <i>absolutamente</i> is the most general and strongest.' },
+    { h: 'What follows: noun, infinitive, or que-clause', html: 'The certainty can attach to a noun (<i>seguro de su amor</i>), an infinitive when the subject is the same (<i>convencidos de ganar</i>), or a full clause (<i>convencido de que…</i>).' },
+    { h: 'Certainty about a WH-question', html: 'It can also attach to an embedded question rather than a statement: <i>Estamos absolutamente seguros de quién ha sido</i> — certain about the answer to "who did it", not asserting the answer itself in the main clause.' }
+  ],
+  exponents: [
+    { es: 'Estoy absolutamente seguro de que fue la decisión correcta.', en: 'I am absolutely certain it was the right decision.', register: 'neutral', note: 'certainty + que-clause' },
+    { es: 'Estamos firmemente convencidos de que este plan funcionará.', en: 'We are firmly convinced this plan will work.', register: 'formal', note: '"firmemente" — conviction under pressure' },
+    { es: 'Estoy del todo segura de haber cerrado la puerta.', en: 'I am completely sure I locked the door.', register: 'neutral', note: 'infinitivo compuesto — same subject, past action' },
+    { es: 'Estamos seguros de quién ha sido.', en: 'We are certain who did it.', register: 'neutral', note: 'certainty about an embedded question' }
+  ],
+  contrasts: [
+    { es: 'Estoy seguro de que tiene razón.', en: "I'm sure he's right.", note: 'plain certainty, for comparison' },
+    { es: 'Estoy absolutamente convencido de que tiene razón.', en: "I am absolutely convinced he's right.", note: 'stronger, more emphatic' },
+    { es: 'Estoy segurísimo de haber estado aquí antes.', en: "I'm quite sure I've been here before.", note: 'infinitivo compuesto — certainty about a past action by the same subject' }
+  ],
+  pitfalls: [
+    'When the subject of the certainty and of the action are the same, the infinitive (usually compound, <i>haber + participio</i>, for a past action) is more natural than a subjunctive clause: <i>seguro de haber estado</i>, not <i>*seguro de que haya estado</i>.',
+    '<i>Firmemente convencido</i> implies the conviction has withstood some challenge or doubt — using it for a casual, uncontested fact overstates the situation.'
+  ],
+  examples: [
+    { es: 'Está absolutamente convencida de su talento.', en: 'She is absolutely convinced of her talent.' },
+    { es: 'Estamos seguros de por qué ocurrió el accidente.', en: 'We are certain about why the accident happened.' },
+    { es: 'Estoy firmemente convencido de que hicimos lo correcto.', en: 'I am firmly convinced we did the right thing.' }
+  ],
+  probes: [
+    { id: 'p:certezab2:infinitivo', kind: 'mcq', q: 'Mismo sujeto, acción pasada: "Estoy seguro de ___ (estar) aquí antes."',
+      options: ['que estuve', 'haber estado', 'esté'], answer: 1 },
+    { id: 'p:certezab2:matiz', kind: 'mcq', q: '¿Qué intensificador sugiere que la certeza resistió alguna duda o presión?', options: ['del todo', 'firmemente', 'absolutamente'], answer: 1 },
+    { id: 'p:certezab2:cloze', kind: 'cloze', text: 'Estamos seguros de ___ ha sido. (who)', accept: ['quién'] },
+    { id: 'p:certezab2:recall', kind: 'recall', front: '¿Puede "seguro de" ir seguido de una pregunta indirecta (quién, dónde...)?', back: 'sí — seguro de quién/dónde/cuándo ha sido' }
+  ]
+},
+
+{
+  id: 'fn-invitar-hipotesis-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:395', 'funciones:B2:396', 'funciones:B2:397'],
+  title: 'Invitar a formular una hipótesis: ¿qué harías si...?',
+  summary: 'Getting someone to speculate needs a question built around a conditional, not a plain present — and asking about the past uses the compound forms so the timing lines up correctly.',
+  sections: [
+    { h: 'Hypothesis about the present/future', html: 'A question with the verb in the simple conditional invites a hypothetical answer: <i>¿Qué casa comprarías, si las dos costaran lo mismo?</i> — the "si" clause sets the imagined scenario, imperfect subjunctive.' },
+    { h: 'Hypothesis about the past', html: 'For "what would you have done", the compound conditional in the question pairs with pluperfect subjunctive in the "si" clause: <i>¿Habrías cambiado algo, si hubieras tenido más tiempo?</i>' },
+    { h: 'Speculating without "si" at all: futuro perfecto', html: 'A bare question in the futuro perfecto invites a guess about something already finished, with no conditional clause needed: <i>Hay quince mensajes en el contestador. ¿Qué habrá pasado?</i>' }
+  ],
+  exponents: [
+    { es: '¿Con quién te irías de viaje, si pudieras elegir a cualquiera?', en: 'Who would you travel with, if you could choose anyone?', register: 'coloquial', note: 'condicional simple + imperfecto de subjuntivo, everyday chat' },
+    { es: '¿Qué habría hecho usted en mi lugar?', en: 'What would you have done in my place?', register: 'formal', note: 'usted — inviting a hypothesis from a superior or stranger' },
+    { es: '¿Qué habrá pasado para que llegue tan tarde?', en: 'What could have happened for him to be so late?', register: 'neutral', note: 'futuro perfecto — pure conjecture, no "si"' },
+    { es: 'Si hubiera estudiado medicina, ¿dónde trabajaría ahora?', en: 'If she had studied medicine, where would she be working now?', register: 'neutral', note: 'past condition, present hypothetical result' }
+  ],
+  contrasts: [
+    { es: '¿Qué harías si ganaras la lotería?', en: 'What would you do if you won the lottery?', note: 'present/future hypothesis' },
+    { es: '¿Qué habrías hecho si hubieras ganado la lotería el año pasado?', en: 'What would you have done if you had won the lottery last year?', note: 'past hypothesis, fully unreal' },
+    { es: '¿Qué habrá pasado?', en: 'What could have happened?', note: 'pure speculation, no explicit condition' }
+  ],
+  pitfalls: [
+    'Mixing timeframes (a present conditional with a pluperfect "si" clause, or vice versa) is a very common error — the tense of the question and the tense of the "si" clause must match the same time frame.',
+    'The futuro perfecto question needs no "si" clause at all — adding one is redundant, since the form itself already carries the conjecture.'
+  ],
+  examples: [
+    { es: '¿Qué dirías si te ofrecieran el puesto?', en: 'What would you say if they offered you the job?' },
+    { es: '¿Habrías aceptado, si hubieras sabido las condiciones?', en: 'Would you have accepted, if you had known the terms?' },
+    { es: 'No contesta el teléfono. ¿Dónde estará?', en: "He's not answering the phone. Where could he be?" }
+  ],
+  probes: [
+    { id: 'p:hipotesis:tiempo', kind: 'mcq', q: '"¿Qué ___ (hacer), si tuvieras más tiempo?" (hipótesis presente)',
+      options: ['harías', 'habrías hecho', 'hicieras'], answer: 0 },
+    { id: 'p:hipotesis:pasado', kind: 'mcq', q: '"¿Qué habrías hecho, si lo ___ (saber) antes?" (hipótesis pasada)',
+      options: ['sabías', 'supieras', 'hubieras sabido'], answer: 2 },
+    { id: 'p:hipotesis:cloze', kind: 'cloze', text: 'No contesta. ¿Qué le ___ pasado? (conjecture, futuro perfecto)', accept: ['habrá'] },
+    { id: 'p:hipotesis:recall', kind: 'recall', front: '¿Necesita "si" una pregunta especulativa en futuro perfecto?', back: 'no' }
+  ]
+},
+
+{
+  id: 'fn-falta-obligacion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:430', 'funciones:B2:431', 'funciones:B2:432'],
+  title: 'Expresar falta de obligación: no hace falta que...',
+  summary: 'Telling someone they do NOT need to do something is its own function, distinct from a plain negative command — it reassures rather than forbids.',
+  sections: [
+    { h: 'No es imprescindible/indispensable', html: 'Formal register — states plainly that something, while perhaps useful, is not strictly required: <i>No es imprescindible que vayas.</i>' },
+    { h: 'No hace falta que...', html: 'The everyday, most common way to say something isn\'t necessary, always followed by subjunctive since it concerns a hypothetical action: <i>No hace falta que seas mayor de edad para entrar.</i>' },
+    { h: 'No tienes/hay por qué + infinitivo', html: 'A slightly different flavour — not just "unnecessary" but "there is no reason to": <i>No tienes por qué disculparte.</i> Often reassures someone who feels obligated or guilty.' }
+  ],
+  exponents: [
+    { es: 'No es imprescindible que asistas a la reunión.', en: "It isn't essential for you to attend the meeting.", register: 'formal', note: 'formal, professional register' },
+    { es: 'No hace falta que traigas nada, ya tenemos comida.', en: "You don't need to bring anything, we already have food.", register: 'coloquial', note: 'the everyday default' },
+    { es: 'No tienes por qué disculparte, no fue culpa tuya.', en: "You don't have to apologize, it wasn't your fault.", register: 'coloquial', note: 'reassures, removes a felt obligation' },
+    { es: 'No hay por qué ocultarlo.', en: 'There\'s no reason to hide it.', register: 'neutral', note: 'impersonal — no specific subject' }
+  ],
+  contrasts: [
+    { es: 'No hace falta que vengas.', en: "You don't need to come.", note: 'simply removes a requirement' },
+    { es: 'No puedes venir.', en: "You can't come.", note: 'prohibition — very different meaning' },
+    { es: 'No tienes por qué sentirte culpable.', en: "You have no reason to feel guilty.", note: 'reassures about an emotional obligation, not a task' }
+  ],
+  pitfalls: [
+    'Do not confuse "removing an obligation" with prohibition — <i>no hace falta que vengas</i> means coming is optional, not forbidden.',
+    '<i>No hace falta que</i> always takes the subjunctive, since it concerns something that has not (necessarily) happened.'
+  ],
+  examples: [
+    { es: 'No hace falta que llegues tan temprano.', en: 'You don\'t need to arrive so early.' },
+    { es: 'No es indispensable tener experiencia previa.', en: 'Prior experience isn\'t essential.' },
+    { es: 'No tienes por qué explicarme nada.', en: "You don't have to explain anything to me." }
+  ],
+  probes: [
+    { id: 'p:faltaobligacion:modo', kind: 'mcq', q: '"No hace falta que ___ (venir)."', options: ['vienes', 'vengas', 'vendrás'], answer: 1 },
+    { id: 'p:faltaobligacion:vsprohibicion', kind: 'mcq', q: '¿"No hace falta que vengas" prohíbe venir?', options: ['sí', 'no, solo dice que no es obligatorio', 'depende del contexto'], answer: 1 },
+    { id: 'p:faltaobligacion:cloze', kind: 'cloze', text: 'No tienes ___ qué disculparte. (por)', accept: ['por'] },
+    { id: 'p:faltaobligacion:recall', kind: 'recall', front: '¿Qué expresión reasegura a alguien que se siente culpable sin motivo?', back: 'No tienes por qué + infinitivo' }
+  ]
+},
+
+{
+  id: 'fn-no-tengo-ni-idea-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:475', 'funciones:B2:476', 'funciones:B2:477'],
+  title: 'No tengo ni idea: desconocimiento enfático',
+  summary: 'A stronger, more colloquial way to say "I don\'t know" than the plain "no sé" — and one that can attach to a noun, an embedded question, or a whole clause.',
+  sections: [
+    { h: 'A stronger "no sé"', html: '<i>No tengo ni idea</i> is emphatic — it insists on total lack of knowledge, not just uncertainty, and reads as more colloquial and expressive than plain <i>no sé</i>.' },
+    { h: 'What follows: noun, question, or clause', html: 'It can attach to a noun or infinitive (<i>ni idea de la hora</i>), an embedded question (<i>ni idea de si/dónde/cómo…</i>), or a full clause with <i>que</i> (<i>ni idea de que…</i>), always taking subjunctive when the "que" clause expresses something the speaker did not know was even the case.' },
+    { h: 'Past ignorance: tenía ni idea', html: 'The imperfect (<i>no tenía ni idea</i>) reports past ignorance, often about something the speaker has since found out — common when recounting a surprise.' }
+  ],
+  exponents: [
+    { es: 'No tengo ni idea de qué hora es.', en: 'I have no idea what time it is.', register: 'coloquial', note: 'ni idea + embedded question' },
+    { es: 'No tenía ni idea de que estuvieras aquí.', en: 'I had no idea you were here.', register: 'coloquial', note: 'past ignorance, subjunctive after que' },
+    { es: 'No tengo ni idea de cocina.', en: 'I know nothing about cooking.', register: 'coloquial', note: 'ni idea + noun' },
+    { es: 'Desconozco los motivos de esa decisión.', en: 'I am not aware of the reasons behind that decision.', register: 'formal', note: 'the formal counterpart — desconocer, not ni idea, in a report or official reply' }
+  ],
+  contrasts: [
+    { es: 'No sé qué hora es.', en: "I don't know what time it is.", note: 'plain, neutral' },
+    { es: 'No tengo ni idea de qué hora es.', en: 'I have absolutely no idea what time it is.', note: 'emphatic, more colloquial' },
+    { es: 'No tenía ni idea de que hubiera estado tan mal.', en: 'I had no idea he had been doing so badly.', note: 'past, subjunctive — reported surprise' }
+  ],
+  pitfalls: [
+    '<i>No tengo ni idea</i> is markedly colloquial — in a formal report or written argument, <i>desconozco</i> or plain <i>no sé</i> fits better.',
+    'A <i>que</i>-clause after <i>ni idea de</i> almost always takes the subjunctive, since it frames the fact as something the speaker was unaware of, not asserting it directly.'
+  ],
+  examples: [
+    { es: 'No tengo ni idea de dónde dejé las llaves.', en: 'I have no idea where I left my keys.' },
+    { es: 'No teníamos ni idea de que se hubiera mudado.', en: 'We had no idea he had moved.' },
+    { es: '¿Vendrá mañana? Ni idea.', en: 'Is he coming tomorrow? No idea.' }
+  ],
+  probes: [
+    { id: 'p:niidea:registro', kind: 'mcq', q: '¿En qué contexto es más natural "no tengo ni idea"?', options: ['un informe formal', 'una conversación entre amigos', 'una carta oficial'], answer: 1 },
+    { id: 'p:niidea:modo', kind: 'mcq', q: '"No tenía ni idea de que ___ (estar) tan mal." — hecho que se ignoraba', options: ['estaba', 'estuviera', 'está'], answer: 1 },
+    { id: 'p:niidea:cloze', kind: 'cloze', text: 'No tengo ni ___ de dónde está. (idea)', accept: ['idea'] },
+    { id: 'p:niidea:recall', kind: 'recall', front: '¿"No tengo ni idea" es más o menos enfático que "no sé"?', back: 'más enfático' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-habilidad-b2', strand: 'function', cefr: 'B2', level: 6, theme: 'educacion',
+  pcic: ['funciones:B2:480', 'funciones:B2:481', 'funciones:B2:482', 'funciones:B2:483', 'funciones:B2:484'],
+  title: 'Preguntar por la habilidad: ¿se te da bien...?',
+  summary: 'Beyond a plain "¿sabes...?", Spanish has several ways to ask whether someone has a knack for something — including a gustar-type construction that puts the SKILL, not the person, as the grammatical subject.',
+  sections: [
+    { h: 'tener facilidad para, ser hábil para', html: '<i>¿Tienes facilidad para las lenguas?</i> and <i>¿Eres hábil para los negocios?</i> ask about a natural aptitude, phrased with the person as subject.' },
+    { h: '¿Eres capaz de + infinitivo?', html: 'Asks about capability for a SPECIFIC action, often testing a limit: <i>¿Eres capaz de ver una película de tres horas sin levantarte?</i>' },
+    { h: 'Se te da bien/mal — gustar pattern', html: 'The most colloquial option flips the grammar: the SKILL is the subject, the person is the indirect object — <i>¿Se te dan bien los idiomas?</i> literally "do languages give themselves well to you".' }
+  ],
+  exponents: [
+    { es: '¿Tienes facilidad para los idiomas?', en: 'Do you have a knack for languages?', register: 'neutral', note: 'natural aptitude, person as subject' },
+    { es: '¿Eres capaz de terminar esto en una hora?', en: 'Are you able to finish this in an hour?', register: 'neutral', note: 'capability for a specific task' },
+    { es: '¿Se te da bien el bricolaje?', en: 'Are you good at DIY?', register: 'coloquial', note: 'gustar-type construction, very common in speech' },
+    { es: '¿Eres hábil para los negocios?', en: 'Are you skilled at business?', register: 'formal', note: 'more formal-leaning phrasing' }
+  ],
+  contrasts: [
+    { es: '¿Sabes cocinar?', en: 'Do you know how to cook?', note: 'plain skill question, A1-level' },
+    { es: '¿Se te da bien cocinar?', en: 'Are you good at cooking?', note: 'asks about proficiency, not just knowledge' },
+    { es: '¿Eres capaz de cocinar para veinte personas?', en: 'Are you able to cook for twenty people?', note: 'tests a specific, demanding capability' }
+  ],
+  pitfalls: [
+    'In <i>se te da(n) bien/mal</i>, the verb agrees with the SKILL (singular or plural), not with the person — <i>se te dan bien los idiomas</i> (plural "idiomas"), not <i>*se te da bien los idiomas</i>.',
+    '<i>¿Eres capaz de...?</i> can sound like a challenge or a doubt about the person\'s ability, depending on tone — softer alternatives exist if that is not the intent.'
+  ],
+  examples: [
+    { es: '¿Qué tal se te da el dibujo?', en: 'How good are you at drawing?' },
+    { es: 'Tiene mucha facilidad para explicar cosas complicadas.', en: 'She has a real knack for explaining complicated things.' },
+    { es: '¿Eres capaz de mantener la calma en situaciones difíciles?', en: 'Are you able to stay calm in difficult situations?' }
+  ],
+  probes: [
+    { id: 'p:habilidadb2:concordancia', kind: 'mcq', q: '"¿Se te ___ bien los números?" (concordancia con "los números", plural)',
+      options: ['da', 'dan', 'das'], answer: 1 },
+    { id: 'p:habilidadb2:sujeto', kind: 'mcq', q: 'En "se te dan bien los idiomas", ¿cuál es el sujeto gramatical?', options: ['tú', 'los idiomas', 'se'], answer: 1 },
+    { id: 'p:habilidadb2:cloze', kind: 'cloze', text: '¿___ capaz de terminarlo hoy? (are you)', accept: ['Eres'] },
+    { id: 'p:habilidadb2:recall', kind: 'recall', front: '¿Qué tipo de verbo es "dar" en "se te da bien"?', back: 'como gustar — el objeto/actividad es el sujeto gramatical' }
+  ]
+}
 
 ];
