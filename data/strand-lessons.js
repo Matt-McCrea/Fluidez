@@ -10663,5 +10663,101 @@ window.STRAND_LESSONS = [
     { id: 'p:concluirrelatob1:recall', kind: 'recall', front: 'Al final/finalmente vs en conclusión/en resumen — which reports the outcome, which distills the point?', back: 'al final/finalmente → outcome; en conclusión/en resumen → the point/summary' }
   ]
 }
+,
+/* ---------------------------------------------------------------------------
+ * DISCOURSE — A1/B1 stragglers. Both leaves are "2.4. Los valores modales de
+ * la entonación y de otros elementos suprasegmentales" (tacticas_pragmaticas)
+ * — intonation and stress carrying meaning on their own. Text can still teach
+ * this: mark the contour (arrow, capitals, letter-stretch) the way any
+ * Spanish coursebook does, and test recognition rather than production.
+ * ------------------------------------------------------------------------ */
+{
+  id: 'dc-entonacion-a1', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
+  pcic: ['tacticas_pragmaticas:A1:77', 'tacticas_pragmaticas:A1:78', 'tacticas_pragmaticas:A1:79',
+         'tacticas_pragmaticas:A1:80', 'tacticas_pragmaticas:A1:81'],
+  title: 'La entonación: la voz también pregunta',
+  summary: 'The same three words can be a statement or a question depending on nothing but pitch — Spanish has no “do you” to signal it. Beginners who only read the words, never the shape of the voice, miss whether a sentence just told them something or asked them something.',
+  sections: [
+    { h: 'A statement falls', html: 'A plain statement ends on a <b>falling</b> pitch (↓): <i>Es alemán ↓.</i> The voice drops on the last syllable, the same way it does in English.' },
+    { h: 'A yes/no question rises', html: 'A question that can be answered <i>sí/no</i> ends <b>rising</b> (↑), whatever the register: <i>¿Tienes hambre ↑?</i> between friends, <i>¿Es usted el nuevo director ↑?</i> with a stranger. Without that rise, either is heard as a statement, not a question.' },
+    { h: 'A question word falls', html: 'A question that already carries <b>qué, dónde, cómo, cuándo</b> etc. does not need the rise — it falls again (↓): <i>¿Qué hora es ↓?</i> Adding a rise here is not wrong, but it signals extra interest or surprise, not plain information-seeking.' }
+  ],
+  exponents: [
+    { es: 'Es alemán. ↓', en: "He's German. (statement)", register: 'neutral', note: 'falling — asserts a fact' },
+    { es: '¿Tienes hambre? ↑', en: 'Are you hungry? (yes/no question, tú)', register: 'coloquial', note: 'rising — the only signal that this is a question at all' },
+    { es: '¿Es usted el nuevo director? ↑', en: 'Are you the new director? (yes/no question, usted)', register: 'formal', note: 'the rise marks a yes/no question in any register' },
+    { es: '¿Qué hora es? ↓', en: "What time is it? (plain information question)", register: 'neutral', note: 'falling despite the question mark — the question word already marks it as a question' }
+  ],
+  pitfalls: [
+    'A yes/no question written with <i>¿…?</i> but read with a <b>falling</b> voice is heard as a statement read aloud, not a real question — the question mark on the page is not enough.',
+    'Rising a <b>question-word</b> question (<i>¿dónde vives ↑?</i>) does not make it wrong, but it adds a layer of surprise or particular interest that a flat information request (<i>¿dónde vives ↓?</i>) does not have.'
+  ],
+  examples: [
+    { es: 'Vive en Madrid. ↓', en: 'He lives in Madrid.' },
+    { es: '¿Vive en Madrid? ↑', en: 'Does he live in Madrid?' },
+    { es: '¿Dónde vive? ↓', en: 'Where does he live?' }
+  ],
+  probes: [
+    { id: 'p:entoa1:si-no', kind: 'mcq',
+      q: 'Para convertir "Es alemán." en una pregunta de sí/no, la voz debe...',
+      options: ['bajar al final', 'subir al final', 'quedarse igual'], answer: 1 },
+    { id: 'p:entoa1:qword', kind: 'mcq',
+      q: '¿Qué hora es? — sin ningún matiz de sorpresa, ¿qué entonación es la neutra?',
+      options: ['Ascendente', 'Descendente', 'Ninguna: no varía'], answer: 1 },
+    { id: 'p:entoa1:statement', kind: 'mcq',
+      q: '"Vive en Madrid." dicho como afirmación simple lleva un tonema...',
+      options: ['ascendente', 'descendente', 'plano'], answer: 1 },
+    { id: 'p:entoa1:recall', kind: 'recall',
+      front: 'Pregunta de sí/no (¿Tienes hambre?) — ¿tonema ascendente o descendente?', back: 'ascendente' }
+  ]
+},
+
+{
+  id: 'dc-entonacion-b1', strand: 'discourse', cefr: 'B1', level: 5, theme: null,
+  pcic: ['tacticas_pragmaticas:B1:199', 'tacticas_pragmaticas:B1:200', 'tacticas_pragmaticas:B1:201',
+         'tacticas_pragmaticas:B1:202', 'tacticas_pragmaticas:B1:203', 'tacticas_pragmaticas:B1:204',
+         'tacticas_pragmaticas:B1:205'],
+  title: 'Más allá de las palabras: pausas, alargamientos y énfasis',
+  summary: 'At B1 the voice starts doing work the words alone do not: an order sharpened by a falling tone, a stretched vowel that buys thinking time, a stressed syllable that corrects who did what. None of this changes the words on the page, so a learner who only reads misses half the message.',
+  sections: [
+    { h: 'A falling command', html: 'An imperative said with a hard <b>falling</b> tone (↓) reads as an order, not a request: <i>¡Ven aquí ↓!</i> The same words with a gentler contour sound like an invitation instead.' },
+    { h: 'Stretching a sound', html: 'Lengthening a vowel or consonant (<i>alargamiento fónico</i>) — written informally as <i>noo</i>, <i>bueno</i> — signals hesitation, reluctance or a search for the right word, the way English speakers stretch “weeeell”.' },
+    { h: 'Filling a silence', html: 'Sounds like <i>esteee</i> or <i>mmm</i> are not verbal filler in the sloppy sense — they hold the turn while the speaker keeps thinking, and their function is entirely about NOT giving up the floor.' },
+    { h: 'Stressing to correct or intensify', html: 'Extra stress on one word — written here in CAPITALS — either corrects a wrong assumption (<i>JUAN llamó</i>, not someone else) or intensifies a judgement (<i>Es LENTO</i>, worse than merely slow).' }
+  ],
+  exponents: [
+    { es: '¡Ven aquí ↓!', en: 'Come here! (a real order)', register: 'coloquial', note: 'falling tone turns an invitation into a command' },
+    { es: 'Noo sé qué decirte.', en: "Weeell, I don't know what to tell you.", register: 'coloquial', note: 'stretched vowel = hesitation, reluctance' },
+    { es: 'Esteee… ¿qué te quería yo decir?', en: 'Um… what was I going to tell you?', register: 'coloquial', note: 'holds the turn while thinking, does not cede it' },
+    { es: 'Mmm… María, ¿dónde te habías metido?', en: 'Hmm… María, where have you been hiding?', register: 'coloquial', note: 'same turn-holding function as esteee' },
+    { es: 'JUAN llamó, no Pedro.', en: 'JUAN called, not Pedro.', register: 'neutral', note: 'acento de insistencia — corrects who did it' },
+    { es: 'Es LENTO.', en: "He's SLOW.", register: 'coloquial', note: 'stress intensifies a negative judgement beyond the plain word' }
+  ],
+  pitfalls: [
+    'The acento de insistencia (<i>JUAN llamó</i>) is not about volume — it is about contrast: it implies someone else was wrongly assumed to have done it.',
+    'Alargamientos and filled pauses (<i>esteee, mmm</i>) are not signs of a weak vocabulary; native speakers use them constantly to hold a turn while formulating a thought.',
+    'A falling ¡Ven aquí ↓! from a stranger reads as rude; the same falling tone from a parent to a child, or between close friends, is completely ordinary.'
+  ],
+  examples: [
+    { es: 'Esteee… no sé si es buena idea.', en: 'Um… I don\'t know if it\'s a good idea.' },
+    { es: '—¿Quién rompió el jarrón? —MARÍA lo rompió, no yo.', en: '—Who broke the vase? —MARÍA broke it, not me.' },
+    { es: 'La respuesta fue larguísimaaa.', en: 'The answer was reaaally long.' }
+  ],
+  probes: [
+    { id: 'p:entob1:orden', kind: 'mcq',
+      q: '¡Ven aquí! dicho con tonema fuertemente descendente suena como...',
+      options: ['una invitación amable', 'una orden', 'una pregunta'], answer: 1 },
+    { id: 'p:entob1:insistencia', kind: 'mcq',
+      q: '"JUAN llamó" (con énfasis en Juan) implica que...',
+      options: ['Juan llamó dos veces', 'alguien pensaba que había llamado otra persona', 'Juan no llamó en realidad'], answer: 1 },
+    { id: 'p:entob1:pausa', kind: 'mcq',
+      q: '¿Para qué sirve decir "esteee…" o "mmm…" al hablar?',
+      options: ['Para ceder la palabra al otro', 'Para mantener el turno mientras se piensa', 'Para terminar la conversación'], answer: 1 },
+    { id: 'p:entob1:intensif', kind: 'cloze',
+      text: 'Es LENTO (con énfasis) no significa solo "lento" — significa "___ lento".', accept: ['muy', 'demasiado'] },
+    { id: 'p:entob1:recall', kind: 'recall',
+      front: 'Alargar una vocal (noo, buenoo) al hablar suele señalar...', back: 'vacilación / que se busca la palabra' }
+  ]
+}
 
 ];
