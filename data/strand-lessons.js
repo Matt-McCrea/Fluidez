@@ -11073,5 +11073,308 @@ window.STRAND_LESSONS = [
     { id: 'p:condcompuesto:recall', kind: 'recall', front: 'El condicional compuesto = ¿conjetura sobre qué momento?', back: 'un hecho ya terminado en el pasado' }
   ]
 }
+,
+/* ============================================================================
+ * BATCH — B2 grammar, remaining 9 of 18 outstanding units.
+ * ========================================================================== */
+{
+  id: 'gr-futuro-perfecto-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:454', 'gramatica:B2:456', 'gramatica:B2:457', 'gramatica:B2:458'],
+  title: 'El futuro perfecto: habré + participio',
+  summary: 'Two unrelated-looking jobs share one form: marking that something will be finished before a future point, and guessing about something that has probably already happened. Both are "anteriority" — just anchored to a different moment.',
+  sections: [
+    { h: 'Form', html: '<i>Habré/habrás/habrá/habremos/habréis/habrán</i> + past participle.' },
+    { h: 'Finished before a future point', html: 'The core value: something will be OVER by the time another future event happens. <i>Cuando lleguemos, ya se <b>habrá ido</b>.</i> — his leaving precedes our arrival, both still in the future from now.' },
+    { h: 'A guess about the recent past', html: 'Just as the simple future guesses about the present (<i>serán las diez</i>), the compound form guesses about something already finished: <i><b>Habrá tenido</b> problemas con el tráfico</i> — "he must have run into traffic" (right now, we do not know for sure).' },
+    { h: 'Everyday substitutes', html: 'In speech, <i>ya lo terminé</i> or <i>voy a haberlo terminado</i> often replace the more formal <i>lo habré terminado</i> — the future perfect survives strongest in writing and in the conjecture use.' }
+  ],
+  contrasts: [
+    { es: 'Para cuando llegues, ya habré salido.', en: 'By the time you arrive, I will have already left.', note: 'finished before a stated future point' },
+    { es: 'Habrá tenido un problema con el coche.', en: 'He must have had some car trouble.', note: 'conjecture about the recent past, not a true future' },
+    { es: 'A estas horas, ya habrán aterrizado.', en: 'By now, they must have landed.', note: 'conjecture anchored to the present moment' }
+  ],
+  pitfalls: [
+    'The conjecture use is about NOW, said with uncertainty — it is easy to mistranslate as a plain future ("he will have had") when it really means "he must have had" in the present.',
+    'Do not confuse this with the compound conditional (<i>habría tenido</i>) — futuro perfecto guesses from a present vantage point; the conditional perfect guesses from a PAST one.'
+  ],
+  examples: [
+    { es: 'Para diciembre, habremos terminado la obra.', en: 'By December, we will have finished the renovation.' },
+    { es: 'No contesta — habrá perdido el móvil otra vez.', en: "He's not answering — he must have lost his phone again." },
+    { es: 'Cuando vuelvas, ya habré hecho la compra.', en: 'By the time you get back, I will have already done the shopping.' }
+  ],
+  probes: [
+    { id: 'p:futperf:conjetura', kind: 'mcq', q: '"Habrá salido ya" significa...', options: ['saldrá en el futuro', 'probablemente ya salió', 'nunca saldrá'], answer: 1 },
+    { id: 'p:futperf:vs-condperf', kind: 'mcq', q: '¿Cuál se usa para especular sobre AHORA, no sobre el pasado?', options: ['habría salido', 'habrá salido', 'había salido'], answer: 1 },
+    { id: 'p:futperf:cloze', kind: 'cloze', text: 'Para cuando lleguemos, la película ya ___ (empezar).', accept: ['habrá empezado'] },
+    { id: 'p:futperf:recall', kind: 'recall', front: 'Futuro perfecto = anterioridad respecto a...', back: 'un punto futuro (o conjetura sobre el pasado reciente desde el presente)' }
+  ]
+},
+
+{
+  id: 'gr-impsubj-valores-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:492', 'gramatica:B2:496', 'gramatica:B2:497', 'gramatica:B2:498',
+         'gramatica:B2:499', 'gramatica:B2:500'],
+  title: 'El imperfecto de subjuntivo: más allá del "si tuviera"',
+  summary: 'B1 introduces "si tuviera" and stops there. B2 adds the register choice between -ra and -se, the "quisiera" of polite requests, doubt-adverbs that force it even outside a hypothesis, and its role standing in for the present subjunctive once a reported sentence is set in the past.',
+  sections: [
+    { h: 'Two forms, one register split', html: 'Every verb has both a <i>-ra</i> form (<i>hablara, tuviera</i>) and a <i>-se</i> form (<i>hablase, tuviese</i>), fully interchangeable in meaning. <i>-ra</i> dominates in speech everywhere; <i>-se</i> reads as more formal or literary, common in writing.' },
+    { h: 'Imperfecto de cortesía', html: 'A small set of verbs — above all <i>querer</i> — use the imperfect subjunctive to soften a request into pure politeness, with no hypothesis at all: <i><b>Quisiera</b> ver ese abrigo</i> is softer than <i>quiero</i>, and gentler even than the conditional <i>querría</i>.' },
+    { h: 'Forced by doubt-adverbs', html: 'Adverbs of doubt (<i>quizá, tal vez</i>) can pull the following verb into the subjunctive even in an independent sentence, no "que" involved: <i>Tal vez <b>fuera</b> ella.</i> Note that <i>a lo mejor</i> and <i>igual</i> never do this — <i>*a lo mejor vaya</i> is wrong; those two always take the indicative.' },
+    { h: 'Sequence of tense: reported commands and requests', html: 'When the reporting verb is in the past, a subordinate clause that would be present subjunctive in isolation shifts to imperfect subjunctive: <i>Dijo que <b>fuera</b> mañana</i> — the original command ("ve mañana") is now reported from a past vantage point.' }
+  ],
+  contrasts: [
+    { es: 'Si tuviera tiempo, iría. / Si tuviese tiempo, iría.', en: "If I had time, I'd go.", note: 'identical meaning, -ra vs -se register' },
+    { es: 'Quisiera hacerle una pregunta.', en: "I'd like to ask you a question.", note: 'pure courtesy, no hypothesis' },
+    { es: 'Tal vez lloviera esta tarde.', en: 'Maybe it would rain this afternoon.', note: 'doubt-adverb forcing subjunctive with no "que"' },
+    { es: 'A lo mejor llueve esta tarde.', en: 'Maybe it will rain this afternoon.', note: '"a lo mejor" always takes the indicative — *a lo mejor llueva is wrong' },
+    { es: 'Me pidió que la llamara al llegar.', en: 'She asked me to call her when I arrived.', note: 'sequence of tense: present subjunctive shifted to imperfect after a past reporting verb' }
+  ],
+  pitfalls: [
+    '<i>A lo mejor</i> and <i>igual</i> look like doubt-adverbs but never trigger the subjunctive — only <i>quizá(s)</i>, <i>tal vez</i> and <i>posiblemente</i> do.',
+    'The <i>-ra</i>/<i>-se</i> choice is register, not meaning — do not present one as "more correct" than the other.',
+    'Sequence of tense is automatic, not optional: a present-tense subjunctive trigger reported from the past almost always pulls its subordinate clause back to the imperfect subjunctive.'
+  ],
+  examples: [
+    { es: 'Quisiera reservar una mesa para dos.', en: "I'd like to book a table for two." },
+    { es: 'Le pedí que me avisara si pasaba algo.', en: 'I asked her to let me know if anything happened.' },
+    { es: 'Quizá tuviera razón, después de todo.', en: 'Maybe she was right, after all.' }
+  ],
+  probes: [
+    { id: 'p:impsubjvalores:cortesia', kind: 'mcq', q: '¿Cuál es más cortés para pedir algo?', options: ['Quiero ver ese abrigo.', 'Quisiera ver ese abrigo.', 'Voy a ver ese abrigo.'], answer: 1 },
+    { id: 'p:impsubjvalores:alomejor', kind: 'mcq', q: '¿Cuál NO exige subjuntivo?', options: ['Tal vez ___', 'Quizá ___', 'A lo mejor ___'], answer: 2 },
+    { id: 'p:impsubjvalores:secuencia', kind: 'cloze', text: 'Me dijo que ___ (venir) mañana. (orden reportada desde el pasado)', accept: ['viniera', 'viniese'] },
+    { id: 'p:impsubjvalores:recall', kind: 'recall', front: '-ra vs -se: ¿diferencia de significado o de registro?', back: 'registro — -se es más formal/literario, mismo significado' }
+  ]
+},
+
+{
+  id: 'gr-perfsubj-valores-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:502', 'gramatica:B2:505', 'gramatica:B2:506'],
+  title: 'El pretérito perfecto de subjuntivo: haya + participio',
+  summary: 'The subjunctive mirror of "he hablado": an action finished but still relevant now, whenever the sentence needs the subjunctive mood. Its other job is quietly replacing the present subjunctive in time clauses that point at a future completion.',
+  sections: [
+    { h: 'Form', html: '<i>Haya/hayas/haya/hayamos/hayáis/hayan</i> + past participle — the exact subjunctive counterpart of <i>he/has/ha… hablado</i>.' },
+    { h: 'The subjunctive version of "he terminado"', html: 'Wherever the indicative would use the present perfect for a finished action still relevant now, a subjunctive trigger calls for this instead: <i>No es verdad que <b>haya escrito</b> esa carta</i> — corresponds to the indicative <i>ha escrito</i>.' },
+    { h: 'Replacing the present subjunctive for future completion', html: 'In time clauses pointing at a future moment, <i>haya + participio</i> marks that the action will be DONE by then, where plain present subjunctive would only mark that it happens: <i>Cuando se <b>haya marchado</b>, avisamos a sus padres</i> — once she has left (not merely "when she leaves").' }
+  ],
+  contrasts: [
+    { es: 'No creo que haya terminado todavía.', en: "I don't think he has finished yet.", note: 'subjunctive mirror of "ha terminado"' },
+    { es: 'Cuando hayas terminado, avísame.', en: 'Let me know once you have finished.', note: 'future completion, not just future action' },
+    { es: 'Cuando termines, avísame.', en: 'Let me know when you finish.', note: 'plain future action, no emphasis on completion' }
+  ],
+  pitfalls: [
+    'Do not use plain present subjunctive where the meaning is specifically about COMPLETION by a future point — <i>cuando hayas terminado</i> and <i>cuando termines</i> are both correct but say slightly different things.',
+    'This tense is for the SAME time frame as the indicative present perfect — do not reach for the pluperfect subjunctive (<i>hubiera terminado</i>) when the relevant frame is "up to now", not "before some other past event".'
+  ],
+  examples: [
+    { es: 'Espero que hayas dormido bien.', en: 'I hope you slept well.' },
+    { es: 'En cuanto haya salido el sol, salimos.', en: 'As soon as the sun has come up, we\'ll leave.' },
+    { es: 'Dudo que se haya dado cuenta.', en: "I doubt he's noticed." }
+  ],
+  probes: [
+    { id: 'p:perfsubjvalores:mirror', kind: 'mcq', q: 'Versión subjuntiva de "Ana ha llegado" tras "no creo que..."', options: ['Ana llegue', 'Ana haya llegado', 'Ana llegara'], answer: 1 },
+    { id: 'p:perfsubjvalores:completion', kind: 'mcq', q: '¿Cuál enfatiza que la acción estará TERMINADA?', options: ['Cuando llegues, avísame.', 'Cuando hayas llegado, avísame.', 'Ambas por igual'], answer: 1 },
+    { id: 'p:perfsubjvalores:cloze', kind: 'cloze', text: 'Espero que ya ___ (comer) algo. (subjuntivo, tú)', accept: ['hayas comido'] },
+    { id: 'p:perfsubjvalores:recall', kind: 'recall', front: 'Pretérito perfecto de subjuntivo = versión subjuntiva de qué tiempo indicativo?', back: 'pretérito perfecto (he hablado)' }
+  ]
+},
+
+{
+  id: 'gr-pluscuamsubj-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:508', 'gramatica:B2:510', 'gramatica:B2:511'],
+  title: 'El pretérito pluscuamperfecto de subjuntivo: hubiera/hubiese + participio',
+  summary: 'The deepest past the subjunctive reaches: something that had already happened before another past moment, whenever the sentence needs the subjunctive mood rather than the indicative "había hablado".',
+  sections: [
+    { h: 'Form', html: '<i>Hubiera/hubieras/hubiera/hubiéramos/hubierais/hubieran</i> + past participle — or, equally correct, the <i>-se</i> set: <i>hubiese, hubieses…</i>.' },
+    { h: 'The subjunctive mirror of "había hablado"', html: 'Anywhere a subjunctive trigger governs a clause that would otherwise need the pluperfect indicative, this is the form: <i>Dudaba que <b>hubiera terminado</b> a tiempo</i> — corresponds to the indicative <i>había terminado</i>.' },
+    { h: 'Its other, very common job: unreal conditionals', html: 'Paired with the compound conditional, it is the standard way to talk about something that did not happen: <i>Si lo <b>hubiera sabido</b>, habría venido.</i> This use is so frequent that learners often meet the form here before meeting it as a plain subjunctive mirror at all.' }
+  ],
+  contrasts: [
+    { es: 'No sabía que ya hubieras llegado.', en: "I didn't know you had already arrived.", note: 'subjunctive mirror of "habías llegado" — reporting a fact she doubted or hadn\'t registered' },
+    { es: 'Si hubiera llegado antes, habría visto el principio.', en: 'If I had arrived earlier, I would have seen the beginning.', note: 'unreal past condition' },
+    { es: 'Ojalá hubiera podido ir.', en: 'I wish I had been able to go.', note: 'regret about something that never happened' }
+  ],
+  pitfalls: [
+    'This tense always looks BACK from another past point, never from the present — do not use it where the pretérito perfecto de subjuntivo (<i>haya hablado</i>) is what the timeframe actually calls for.',
+    'In spoken Spanish, <i>hubiera</i> sometimes replaces <i>habría</i> in the result clause of an unreal conditional (<i>si hubiera sabido, hubiera venido</i>) — widespread, but the clause with "si" is always <i>hubiera/hubiese</i>, never <i>habría</i>.'
+  ],
+  examples: [
+    { es: 'Me sorprendió que no hubieran avisado antes.', en: "I was surprised they hadn't given notice earlier." },
+    { es: 'Si hubiese estudiado más, habría aprobado.', en: 'If I had studied more, I would have passed.' },
+    { es: 'Ojalá lo hubiéramos sabido a tiempo.', en: "I wish we had known in time." }
+  ],
+  probes: [
+    { id: 'p:pluscuamsubj:mirror', kind: 'mcq', q: 'Versión subjuntiva de "había llegado" tras "dudaba que..."', options: ['llegara', 'hubiera llegado', 'haya llegado'], answer: 1 },
+    { id: 'p:pluscuamsubj:condicional', kind: 'cloze', text: 'Si lo ___ (saber), te lo habría dicho.', accept: ['hubiera sabido', 'hubiese sabido'] },
+    { id: 'p:pluscuamsubj:ojala', kind: 'mcq', q: '"Ojalá hubiera podido ir" expresa...', options: ['un deseo para el futuro', 'un arrepentimiento sobre algo que no pasó', 'una orden'], answer: 1 },
+    { id: 'p:pluscuamsubj:recall', kind: 'recall', front: 'Pluscuamperfecto de subjuntivo = versión subjuntiva de qué tiempo indicativo?', back: 'pluscuamperfecto (había hablado)' }
+  ]
+},
+
+{
+  id: 'gr-concordancia-sn-verbo-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:575', 'gramatica:B2:576', 'gramatica:B2:577', 'gramatica:B2:578'],
+  title: 'Concordancia del sujeto con el verbo: los casos difíciles',
+  summary: 'Most subject-verb agreement is automatic. Four situations are not: a collective noun that can take either number, a list of things that gets a singular verb, subjects joined by "o" or "ni", and a compound subject that native speakers feel as ONE thing.',
+  sections: [
+    { h: 'Collective nouns: both numbers are heard', html: 'A word like <i>grupo</i> or <i>gente</i> names many people but is grammatically singular — yet Spanish tolerates the verb agreeing with the sense (plural) as well as the form (singular): <i>Vino / vinieron un grupo de estudiantes.</i> Both are used; the plural feels more colloquial.' },
+    { h: 'Enumerations default to singular', html: 'When several things are listed and the sentence generalises over all of them together, the verb often stays singular even though there is more than one referent: <i>Me da miedo la oscuridad, la noche, las arañas y las serpientes</i> — one shared feeling, so one verb.' },
+    { h: '"O" and "ni": singular or plural, both correct', html: 'Subjects joined by <i>o</i> ("either/or") or <i>ni…ni</i> ("neither/nor") can take a singular verb (treating the possibilities as mutually exclusive) or a plural one (treating them together): <i>Vendrá/vendrán mi padre o mi madre.</i>' },
+    { h: 'Two nouns felt as one thing: singular', html: 'When a coordinated pair is understood as a single unit rather than two separate items, the verb goes singular: <i>La entrada y salida de coches es constante</i> — "entrada y salida" is one process, not two.' }
+  ],
+  contrasts: [
+    { es: 'La mayoría de la gente piensa lo mismo. / La mayoría de la gente piensan lo mismo.', en: 'Most people think the same.', note: 'collective noun — singular is more careful, plural more colloquial' },
+    { es: 'Me encanta el cine, el teatro y la música.', en: 'I love cinema, theatre and music.', note: 'enumeration, singular verb summarising the whole list' },
+    { es: 'No vendrá ni mi padre ni mi madre. / No vendrán ni mi padre ni mi madre.', en: 'Neither my father nor my mother will come.', note: 'ni…ni — both numbers accepted' },
+    { es: 'El ir y venir de la gente no me deja concentrarme.', en: "People's coming and going doesn't let me concentrate.", note: 'two actions felt as a single, unified process — singular' }
+  ],
+  pitfalls: [
+    'Neither option is "wrong" for collectives and for <i>o/ni</i> subjects — this is genuine free variation, not a case with one correct answer.',
+    'The "felt as one thing" singular (<i>entrada y salida</i>) is about MEANING, not just proximity: two coordinated nouns stay plural by default unless they clearly form a single concept.'
+  ],
+  examples: [
+    { es: 'El equipo llegó tarde. / El equipo llegaron tarde.', en: 'The team arrived late.' },
+    { es: 'Me preocupa el ruido, el tráfico y la contaminación de esta ciudad.', en: "The noise, traffic and pollution in this city worry me." },
+    { es: 'Iré yo o irá mi hermano.', en: "Either I'll go or my brother will."}
+  ],
+  probes: [
+    { id: 'p:concordancia:colectivo', kind: 'mcq', q: '¿Cuál es aceptable para "el equipo" como sujeto?', options: ['El equipo llegó tarde.', 'El equipo llegaron tarde.', 'Ambas'], answer: 2 },
+    { id: 'p:concordancia:enumeracion', kind: 'mcq', q: '"Me da miedo la oscuridad, la noche y las arañas" — ¿por qué el verbo está en singular?', options: ['Error gramatical', 'El sentimiento es uno solo, aunque haya varios elementos', 'Falta concordancia'], answer: 1 },
+    { id: 'p:concordancia:cloze', kind: 'cloze', text: 'No vendrá ni mi padre ni mi ___ hoy. (plural or singular verb both fine — fill the noun)', accept: ['madre'] },
+    { id: 'p:concordancia:recall', kind: 'recall', front: 'Con un sustantivo colectivo (grupo, gente), ¿el verbo debe ir siempre en singular?', back: 'no — ambos números son aceptables' }
+  ]
+},
+
+{
+  id: 'gr-complementos-sa-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:587', 'gramatica:B2:588', 'gramatica:B2:589', 'gramatica:B2:590'],
+  title: 'Complementos del adjetivo: difícil de, interesado en',
+  summary: 'Many adjectives need a fixed preposition to attach their complement — and once that complement is a full clause rather than an infinitive, choosing indicative or subjunctive after it carries real meaning.',
+  sections: [
+    { h: 'Adjective + preposition + infinitive', html: 'A fixed preposition links the adjective to what follows: <i>difícil <b>de</b> leer</i>, <i>partidario <b>de</b> un cambio</i>, <i>interesado <b>en</b> asistir</i>. The preposition is not optional and does not always match English ("interested IN" but "difficult TO read", not "difficult OF read").' },
+    { h: 'The complement can be a whole clause', html: 'Instead of an infinitive, a full subordinate clause can follow the same preposition: <i>interesado en <b>que vengas</b></i> — "interested in you coming", not just "interested in coming".' },
+    { h: 'Mood inside that clause is not automatic', html: 'When the subject of the adjective and of the subordinate clause differ, the subjunctive is normal (<i>interesado en que vengas</i> — someone else\'s coming). When they are the same, an infinitive is far more natural than a subjunctive clause with the same subject.' }
+  ],
+  contrasts: [
+    { es: 'Este texto es difícil de entender.', en: 'This text is difficult to understand.', note: 'fixed preposition "de" after "difícil"' },
+    { es: 'Estoy interesado en asistir al curso.', en: 'I am interested in attending the course.', note: 'same subject — infinitive' },
+    { es: 'Estoy interesado en que asistas al curso.', en: 'I am interested in you attending the course.', note: 'different subject — subjunctive clause' },
+    { es: '*Estoy interesado de asistir.', en: '(wrong)', note: 'wrong preposition — "interesado" takes "en", not "de"' }
+  ],
+  pitfalls: [
+    'The preposition is lexical, not predictable from English — learn it with the adjective: <i>difícil de</i>, <i>partidario de</i>, <i>interesado en</i>, <i>capaz de</i>.',
+    'Reaching for a subjunctive clause when the subject is the same on both sides (<i>*interesado en que yo asista</i>, said by the same "yo") is unnatural — use the infinitive instead.'
+  ],
+  examples: [
+    { es: 'Es difícil de explicar en pocas palabras.', en: "It's hard to explain in a few words." },
+    { es: 'Estamos encantados de que hayas venido.', en: "We're delighted that you've come." },
+    { es: 'Es partidaria de escuchar todas las opiniones antes de decidir.', en: 'She is in favour of hearing every opinion before deciding.' }
+  ],
+  probes: [
+    { id: 'p:compladj:prep', kind: 'mcq', q: '"Estoy interesado ___ el proyecto."', options: ['de', 'en', 'a'], answer: 1 },
+    { id: 'p:compladj:mood', kind: 'mcq', q: '"Estoy interesado en que tú ___ (venir)."', options: ['vienes', 'vengas', 'venir'], answer: 1 },
+    { id: 'p:compladj:cloze', kind: 'cloze', text: 'Este ejercicio es difícil ___ resolver.', accept: ['de'] },
+    { id: 'p:compladj:recall', kind: 'recall', front: 'Cuando el sujeto es el mismo en ambas partes, ¿infinitivo o subjuntivo?', back: 'infinitivo' }
+  ]
+},
+
+{
+  id: 'gr-complemento-preposicional-regido-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:636', 'gramatica:B2:637', 'gramatica:B2:638', 'gramatica:B2:639'],
+  title: 'Verbos con preposición fija: decidirse a, contar con',
+  summary: 'A large set of verbs demand a specific preposition before their complement, and swapping it can quietly change the meaning: "contar" alone means to count or to tell, "contar con" means to rely on.',
+  sections: [
+    { h: 'Verb + fixed preposition + infinitive', html: 'The complement can be an infinitive: <i>decidirse <b>a</b> ir</i>, <i>tardar <b>en</b> llegar</i>, <i>consistir <b>en</b> esperar</i>. The preposition belongs to the verb, memorised as a unit.' },
+    { h: '...or a whole clause', html: 'The same preposition can introduce a full subordinate clause instead: <i>contar <b>con</b> que vengas</i> — "counting on you coming", with the same "con" as the infinitive version.' },
+    { h: 'The preposition can change the meaning entirely', html: '<i>Contar algo</i> is to tell something; <i>contar con algo/alguien</i> is to rely on it. <i>Darse cuenta de algo</i> is to realise something; there is no plain <i>*darse cuenta algo</i>. <i>Reparar en algo</i> is to notice it — very different from bare <i>reparar algo</i>, "to repair something".' }
+  ],
+  contrasts: [
+    { es: 'Me decidí a cambiar de trabajo.', en: 'I made up my mind to change jobs.', note: '"decidirse a" + infinitive' },
+    { es: 'Cuento contigo para el proyecto.', en: "I'm counting on you for the project.", note: '"contar con" = to rely on' },
+    { es: 'Te voy a contar una historia.', en: "I'm going to tell you a story.", note: 'plain "contar" = to tell/count — different meaning, no preposition' },
+    { es: 'No reparó en el detalle más importante.', en: 'He didn\'t notice the most important detail.', note: '"reparar en" = to notice, unrelated to "reparar" (to repair)' }
+  ],
+  pitfalls: [
+    'These prepositions are not predictable from English and not interchangeable — learn each verb with its own preposition as a fixed unit.',
+    'Dropping the preposition can produce a real but different verb (<i>contar</i> vs <i>contar con</i>; <i>reparar</i> vs <i>reparar en</i>) rather than an obvious error — which is what makes these mistakes hard to self-correct by ear.'
+  ],
+  examples: [
+    { es: 'No me di cuenta de que ya era tarde.', en: "I didn't realise it was already late." },
+    { es: 'Puedes contar con que te ayudemos.', en: 'You can count on us helping you.' },
+    { es: 'Se negó a firmar el contrato.', en: 'He refused to sign the contract.' }
+  ],
+  probes: [
+    { id: 'p:compregido:meaning', kind: 'mcq', q: '"Contar CON alguien" significa...', options: ['contarle una historia', 'confiar en esa persona', 'contar cuántas personas hay'], answer: 1 },
+    { id: 'p:compregido:prep', kind: 'mcq', q: '"Me decidí ___ estudiar medicina."', options: ['de', 'a', 'en'], answer: 1 },
+    { id: 'p:compregido:cloze', kind: 'cloze', text: 'No se dio cuenta ___ su error hasta el final.', accept: ['de'] },
+    { id: 'p:compregido:recall', kind: 'recall', front: '"Reparar" vs "reparar en": ¿mismo significado?', back: 'no — reparar = arreglar; reparar en = darse cuenta de/notar' }
+  ]
+},
+
+{
+  id: 'gr-subordinadas-lugar-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:824', 'gramatica:B2:827', 'gramatica:B2:828', 'gramatica:B2:830', 'gramatica:B2:832', 'gramatica:B2:834'],
+  title: 'Oraciones subordinadas de lugar: donde con indicativo o subjuntivo',
+  summary: 'Clauses of place built on "donde" work exactly like the more famous time clauses with "cuando": indicative for a place you know, subjunctive for one you do not — plus a small set of prepositions that pin down origin, destination or direction.',
+  sections: [
+    { h: 'Known place: indicative', html: 'When the place is identified or already known to the speaker, the verb after <i>donde</i> stays indicative: <i>Sigue hasta <b>donde hay</b> una torre alta</i> — a specific, known tower.' },
+    { h: 'Unknown or unspecified place: subjunctive', html: 'When the place is not yet identified — whichever it turns out to be — the subjunctive marks that uncertainty: <i>Sigue hasta <b>donde veas</b> una torre alta</i> — wherever you happen to see one.' },
+    { h: 'Prepositions narrow down the kind of place', html: '<i>De/desde donde</i> marks origin, <i>a donde/adonde</i> marks destination, <i>hacia donde</i> marks direction, <i>por donde</i> marks the route passed through: <i>Vengo <b>de donde</b> imaginas</i>, <i>Gira <b>hacia donde</b> te indique la señal</i>, <i>Pasa <b>por donde</b> están ellos</i>.' },
+    { h: 'Generalising: "wherever, no matter where"', html: 'With no antecedent, indicative gives a universal truth (<i><b>Donde hay</b> bondad no hay injusticias</i>) while subjunctive gives an open possibility for any future case (<i><b>Donde haya</b> bondad habrá justicia</i>).' }
+  ],
+  contrasts: [
+    { es: 'Voy donde tú dices.', en: "I'm going where you say.", note: 'known destination — indicative' },
+    { es: 'Voy donde tú digas.', en: "I'll go wherever you say.", note: 'unspecified — subjunctive, "wherever that turns out to be"' },
+    { es: 'Comenzaremos el viaje desde donde se ve el mar.', en: "We'll start the trip from where you can see the sea.", note: 'known point of origin — indicative' },
+    { es: 'Comenzaremos desde donde se vea el mar.', en: "We'll start from wherever you can see the sea.", note: 'first spot that qualifies, not yet fixed — subjunctive' }
+  ],
+  pitfalls: [
+    'The indicative/subjunctive choice here tracks the same logic as time clauses with <i>cuando</i> — known and specific vs open and unspecified, not "the place exists" vs "it doesn\'t".',
+    'The prepositions are not interchangeable: <i>de donde</i> (origin) and <i>adonde</i> (destination) point in opposite directions.'
+  ],
+  examples: [
+    { es: 'Aparca donde puedas.', en: 'Park wherever you can.' },
+    { es: 'Volvimos por donde habíamos venido.', en: 'We went back the way we had come.' },
+    { es: 'Iremos adonde nos digan.', en: "We'll go wherever they tell us." }
+  ],
+  probes: [
+    { id: 'p:sublugar:modo', kind: 'mcq', q: '"Vive donde ___ (nacer) su abuela." — un lugar conocido y específico', options: ['nació', 'naciera', 'nazca'], answer: 0 },
+    { id: 'p:sublugar:incierto', kind: 'mcq', q: '"Iremos donde tú ___ (decidir)." — todavía no se sabe cuál', options: ['decides', 'decidas', 'decidiste'], answer: 1 },
+    { id: 'p:sublugar:prep', kind: 'cloze', text: 'Ven por ___ vine yo. (misma ruta)', accept: ['donde'] },
+    { id: 'p:sublugar:recall', kind: 'recall', front: 'En cláusulas de lugar con "donde", ¿qué modo marca un lugar aún no identificado?', back: 'subjuntivo' }
+  ]
+},
+
+{
+  id: 'gr-subordinadas-modo-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:835', 'gramatica:B2:836', 'gramatica:B2:837', 'gramatica:B2:838'],
+  title: 'Oraciones subordinadas de modo: como y según',
+  summary: 'Same pattern as time and place clauses, applied to HOW something is done: indicative when the manner is known, subjunctive when it is left open to whoever is acting.',
+  sections: [
+    { h: 'Known manner: indicative', html: '<i>Lo haré según <b>dices</b></i> — you have already told me how, and I will follow that exact manner.' },
+    { h: 'Unspecified manner: subjunctive', html: '<i>Lo haré según <b>digas</b></i> — however you end up telling me, whatever that turns out to be; <i>Lo hago como <b>digas</b></i> works the same way.' },
+    { h: 'Como vs según', html: 'Both introduce manner clauses and follow the same indicative/subjunctive split; <i>según</i> leans slightly more formal and often implies "in accordance with" a source, while <i>como</i> is the general-purpose word for "the way that".' }
+  ],
+  contrasts: [
+    { es: 'Lo hice como me explicaste.', en: 'I did it the way you explained to me.', note: 'known, already-given manner — indicative' },
+    { es: 'Lo haré como tú digas.', en: "I'll do it however you say.", note: 'not yet specified — subjunctive' },
+    { es: 'Según dicen, va a llover.', en: 'According to what people say, it\'s going to rain.', note: 'reporting a known source — indicative' }
+  ],
+  pitfalls: [
+    'The same known/unknown logic governs <i>como</i> and <i>según</i> as governs <i>cuando</i> and <i>donde</i> — treat all of them as one family rather than memorising each separately.',
+    '<i>Según</i> can also mean "depending on" with a noun (<i>según el día</i>) — that use has nothing to do with the mood choice discussed here.'
+  ],
+  examples: [
+    { es: 'Cocínalo como te guste.', en: 'Cook it however you like.' },
+    { es: 'Actuó según le habían indicado.', en: 'He acted as he had been instructed.' },
+    { es: 'Hazlo como mejor te parezca.', en: 'Do it however seems best to you.' }
+  ],
+  probes: [
+    { id: 'p:submodo:conocido', kind: 'mcq', q: '"Lo hago como tú ___ (decir)." — ya me lo dijiste', options: ['dices', 'digas', 'dirías'], answer: 0 },
+    { id: 'p:submodo:abierto', kind: 'mcq', q: '"Hazlo como ___ (querer)." — lo que sea que quieras, aún no lo sé', options: ['quieres', 'quieras', 'quisiste'], answer: 1 },
+    { id: 'p:submodo:cloze', kind: 'cloze', text: 'Según ___ (decir, ellos), el proyecto va bien. (fuente conocida)', accept: ['dicen'] },
+    { id: 'p:submodo:recall', kind: 'recall', front: 'En cláusulas de modo, ¿qué activa el subjuntivo?', back: 'que la manera todavía no esté especificada/conocida' }
+  ]
+}
 
 ];
