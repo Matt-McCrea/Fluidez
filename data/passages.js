@@ -9,7 +9,7 @@
 window.PASSAGES = [
 
 {
-  id: 'rutina', title: 'La rutina de Marta', level: 1,
+  id: 'rutina', title: 'La rutina de Marta', level: 1, theme: 'trabajo',
   text: 'Marta vive en Sevilla. Todos los días se levanta a las siete y desayuna café con tostadas. Trabaja en una tienda de ropa en el centro. Al mediodía come con sus compañeros en un bar cerca del trabajo. Por la tarde estudia inglés porque quiere viajar a Londres. Los fines de semana visita a su familia y pasea por el río.',
   gloss: [
     { es: 'se levanta', en: 'she gets up' },
@@ -26,7 +26,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'viaje', title: 'Un viaje a la montaña', level: 2,
+  id: 'viaje', title: 'Un viaje a la montaña', level: 2, theme: 'viajes',
   text: 'El verano pasado, mis amigos y yo fuimos a los Pirineos. Salimos muy temprano porque el camino era largo. Mientras conducíamos, escuchábamos música y hablábamos de todo. Cuando llegamos, hacía frío y llovía un poco, pero estábamos muy contentos. Pasamos tres días en una casa pequeña y cocinamos juntos cada noche. Fue un viaje que nunca voy a olvidar.',
   gloss: [
     { es: 'el verano pasado', en: 'last summer' },
@@ -43,7 +43,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'mercado', title: 'En el mercado', level: 1,
+  id: 'mercado', title: 'En el mercado', level: 1, theme: 'compras',
   text: 'Hoy Diego está en el mercado. Es sábado y hay mucha gente. Diego busca fruta fresca para preparar una cena especial esta noche. Compra manzanas, naranjas y un poco de pescado. El pescado es para su madre, que viene a cenar. Diego paga con tarjeta porque no tiene dinero en efectivo. Cuando llega a casa, está cansado pero contento.',
   gloss: [
     { es: 'hay mucha gente', en: 'there are many people' },
@@ -59,7 +59,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'oficina', title: 'Un día en la oficina', level: 1,
+  id: 'oficina', title: 'Un día en la oficina', level: 1, theme: 'trabajo',
   text: 'Pablo trabaja en una oficina grande en el centro de la ciudad. Todos los días llega a las nueve y saluda a sus compañeros. Prepara un café y organiza sus tareas antes de empezar. A las dos, come con su equipo en la cafetería. Por la tarde escribe correos y asiste a reuniones importantes. Pablo es una persona muy organizada y siempre termina su trabajo a tiempo. A las seis, sale de la oficina y camina a casa porque vive cerca.',
   gloss: [
     { es: 'la oficina', en: 'the office' },
@@ -76,7 +76,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'parque', title: 'Un sábado en el parque', level: 1,
+  id: 'parque', title: 'Un sábado en el parque', level: 1, theme: 'ocio',
   text: 'Es sábado y hace buen tiempo. Lucía y su hermano van al parque por la mañana. Ella lleva su perro y él lleva una pelota. En el parque hay mucha gente porque el sol brilla mucho. Los niños juegan y los adultos hablan sentados en un banco. Lucía y su hermano caminan media hora y después toman un helado en un puesto cerca de la entrada. A ellos les gusta mucho el parque porque es tranquilo y bonito.',
   gloss: [
     { es: 'hace buen tiempo', en: 'the weather is nice' },
@@ -93,7 +93,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'estudiante', title: 'La vida de un estudiante', level: 1,
+  id: 'estudiante', title: 'La vida de un estudiante', level: 1, theme: 'educacion',
   text: 'Sofía es estudiante de biología en la universidad. Vive en un piso pequeño con dos compañeras de clase. Cada mañana desayuna rápido y toma el autobús a las ocho. Las clases empiezan a las nueve y terminan a la una. Después, Sofía come en la cafetería y estudia en la biblioteca por dos horas. Por la noche, prefiere leer un libro o hablar con su familia por teléfono. Los fines de semana, ella y sus amigas van al cine o cocinan juntas.',
   gloss: [
     { es: 'el piso', en: 'the apartment' },
@@ -110,7 +110,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'cocina', title: 'La cena de esta noche', level: 1,
+  id: 'cocina', title: 'La cena de esta noche', level: 1, theme: 'alimentacion',
   text: 'Por la noche, Andrés prepara la cena para sus padres. Primero, lava las verduras y pone el pollo en una sartén. Después, añade un poco de aceite y pone el arroz en el agua hirviendo. Mientras cocina, escucha música y baila un poco en la cocina. Su madre llega a las ocho y pregunta si necesita ayuda. Andrés responde que no, porque ya casi está listo. Cuando su padre llega, todos se sientan a la mesa y comen juntos. Es una cena sencilla, pero está muy rica.',
   gloss: [
     { es: 'la sartén', en: 'the frying pan' },
@@ -127,7 +127,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'cumpleanos', title: 'El cumpleaños de mi abuela', level: 2,
+  id: 'cumpleanos', title: 'El cumpleaños de mi abuela', level: 2, theme: 'relaciones',
   text: 'El sábado pasado fue el cumpleaños de mi abuela y toda la familia llegó a su casa. Mi madre cocinó un pollo al horno y mi tía preparó una tarta de chocolate. Mis primos trajeron flores y las pusieron en la mesa. Cuando mi abuela llegó del jardín, todos cantamos y ella rió mucho. Después de la cena, bailamos y contamos historias hasta muy tarde. Fue una noche muy especial para toda la familia.',
   gloss: [
     { es: 'al horno', en: 'baked / in the oven' },
@@ -144,7 +144,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'ninez', title: 'Mi niñez en el pueblo', level: 2,
+  id: 'ninez', title: 'Mi niñez en el pueblo', level: 2, theme: 'identidad',
   text: 'Cuando era niño, vivía en un pueblo pequeño cerca de la montaña. Todos los días caminaba a la escuela con mis hermanos porque no teníamos coche. Mi abuelo trabajaba en el campo y siempre nos traía fruta fresca. Por las tardes, jugábamos en la calle con los vecinos hasta que oscurecía. Mi madre cocinaba platos deliciosos y toda la familia comía junta. Los veranos eran largos y tranquilos, y yo era muy feliz en aquella época.',
   gloss: [
     { es: 'el pueblo', en: 'the village' },
@@ -161,7 +161,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'lunes-dificil', title: 'Un lunes difícil', level: 2,
+  id: 'lunes-dificil', title: 'Un lunes difícil', level: 2, theme: 'trabajo',
   text: 'Ayer fue un día difícil para Marcos. Se levantó tarde porque el despertador no sonó. Corrió al autobús pero lo perdió por dos minutos. Por eso, llegó tarde al trabajo y su jefe no estaba muy contento. Durante la mañana, Marcos perdió unos documentos importantes y tuvo que buscarlos por toda la oficina. Al mediodía, comió rápido y volvió a su escritorio. Por la tarde, encontró los documentos debajo de una silla y respiró tranquilo. Al final, todo salió bien.',
   gloss: [
     { es: 'el despertador', en: 'the alarm clock' },
@@ -178,7 +178,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'regalo-hermana', title: 'Un regalo para mi hermana', level: 2,
+  id: 'regalo-hermana', title: 'Un regalo para mi hermana', level: 2, theme: 'compras',
   text: 'Compré un regalo para mi hermana porque cumple años mañana. Fui a la tienda por la mañana y busqué algo especial durante una hora. Al final, encontré un libro de fotos por su precio y por su calidad. Pagué por el regalo con tarjeta y salí de la tienda contenta. Caminé por el centro para llegar a casa y pasé por el parque. Puse el regalo en papel azul, su color favorito, encima de la mesa.',
   gloss: [
     { es: 'cumple años', en: 'has a birthday' },
@@ -195,7 +195,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'planes-verano', title: 'Planes para el verano', level: 3,
+  id: 'planes-verano', title: 'Planes para el verano', level: 3, theme: 'viajes',
   text: 'En verano, mi familia y yo viajaremos a la costa por dos semanas. Ya hemos reservado un apartamento cerca de la playa y hemos comprado los billetes de tren. Mi hermano nunca ha visitado esa ciudad, así que estará muy emocionado. Comeremos mariscos frescos y nadaremos todos los días. Si hace buen tiempo, también haremos una excursión a las montañas cercanas. Sé que será algo inolvidable porque llevamos años esperando estas vacaciones.',
   gloss: [
     { es: 'hemos reservado', en: 'we have reserved' },
@@ -212,7 +212,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'entrevista', title: 'La entrevista de trabajo', level: 3,
+  id: 'entrevista', title: 'La entrevista de trabajo', level: 3, theme: 'trabajo',
   text: 'Mañana Elena tendrá una entrevista de trabajo muy importante. Ya ha preparado sus respuestas y ha comprado un traje nuevo para la ocasión. Ella preferiría llegar una hora antes para estar tranquila. Su amiga le ha dicho que sería buena idea practicar las preguntas más comunes. Si todo va bien, Elena podrá empezar el trabajo el próximo mes. Ella sabe que sería un cambio importante en su vida, pero está lista para el reto.',
   gloss: [
     { es: 'la entrevista', en: 'the interview' },
@@ -229,7 +229,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'reunion-familiar', title: 'La reunión familiar que casi no fue', level: 4,
+  id: 'reunion-familiar', title: 'La reunión familiar que casi no fue', level: 4, theme: 'relaciones',
   text: 'Cuando llegamos a casa de mis abuelos, ya habían empezado a comer sin nosotros. Mi madre se enfadó un poco porque queríamos llegar juntos. Mi abuela explicó que ellos no habían recibido nuestro mensaje porque su teléfono no funcionaba. Yo dudaba que fuera un problema serio, pero preferí no discutir más. Espero que la próxima reunión sea más tranquila y que todos lleguemos a la misma hora. Ojalá que mi abuela compre un teléfono nuevo pronto.',
   gloss: [
     { es: 'se enfadó', en: 'got upset' },
@@ -246,7 +246,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'un-dia-normal-verbos1', title: 'Un día normal', level: 1,
+  id: 'un-dia-normal-verbos1', title: 'Un día normal', level: 1, theme: 'trabajo',
   text: 'Marta trabaja en una tienda de ropa cerca de su casa. Por la mañana, habla con sus compañeros mientras organiza la ropa nueva. A mediodía, come un bocadillo rápido y bebe un café con leche. Por la tarde, estudia inglés en una academia porque quiere viajar a Londres el próximo año. Después de clase, habla con su profesor sobre gramática y bebe un poco de agua antes de volver a casa. Le gusta su rutina porque combina el trabajo y el estudio.',
   gloss: [
     { es: 'un bocadillo', en: 'a sandwich' },
@@ -263,7 +263,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'clase-espanol-verbos2', title: 'Mi clase de español', level: 1,
+  id: 'clase-espanol-verbos2', title: 'Mi clase de español', level: 1, theme: 'educacion',
   text: 'Soy estudiante de español y vivo en un piso pequeño cerca de la universidad. Cada semana aprendo palabras nuevas y escribo un texto corto para practicar. Mi profesora está muy contenta con mi progreso porque soy muy constante. Los lunes escribimos diálogos en parejas y aprendemos expresiones útiles. Vivimos momentos divertidos en clase, aunque a veces estoy un poco nerviosa antes de hablar. Aun así, sé que aprendo mucho cada día.',
   gloss: [
     { es: 'constante', en: 'consistent' },
@@ -280,7 +280,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'excursion-montana-verbos3', title: 'Una excursión a la montaña', level: 2,
+  id: 'excursion-montana-verbos3', title: 'Una excursión a la montaña', level: 2, theme: 'naturaleza',
   text: 'El sábado pasado fuimos de excursión a la montaña. Tuvimos que salir muy temprano porque el camino era largo. Al llegar, hubo un poco de niebla, pero pudimos ver el paisaje cuando el sol salió. Hicimos una parada para comer bocadillos y descansar las piernas. Mi hermano no pudo terminar la ruta completa porque tenía una rodilla lesionada, así que volvimos juntos más despacio. Aun así, todos hicimos un esfuerzo grande y tuvimos un día inolvidable.',
   gloss: [
     { es: 'la excursión', en: 'the hike' },
@@ -297,7 +297,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'conversacion-amigas-verbos4', title: 'Una conversación entre amigas', level: 1,
+  id: 'conversacion-amigas-verbos4', title: 'Una conversación entre amigas', level: 1, theme: 'relaciones',
   text: 'Cuando Elena y Marta se ven, siempre hablan durante horas. Elena dice que quiere cambiar de trabajo pronto, pero no sabe cuál elegir. Marta le da algunos consejos porque conoce bien el sector. A veces, Elena no ve las cosas con claridad y quiere una segunda opinión. Marta siempre dice la verdad, aunque a veces es difícil de escuchar. Al final, Elena sabe que puede confiar en su amiga y le da las gracias por su sinceridad.',
   gloss: [
     { es: 'cambiar de trabajo', en: 'to change jobs' },
@@ -314,7 +314,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'fiesta-sorpresa-verbos5', title: 'Una fiesta sorpresa', level: 2,
+  id: 'fiesta-sorpresa-verbos5', title: 'Una fiesta sorpresa', level: 2, theme: 'relaciones',
   text: 'Para el cumpleaños de Sara, sus amigos vinieron a casa una hora antes y pusieron globos por todo el salón. Alguien trajo un pastel enorme y lo puso encima de la mesa con mucho cuidado. Cuando Sara salió de la ducha, casi se cayó de la sorpresa al ver a todos allí. Sus amigos vinieron de varias ciudades solo para esa noche. Al final, nadie salió de la fiesta antes de la medianoche.',
   gloss: [
     { es: 'los globos', en: 'the balloons' },
@@ -331,7 +331,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'noche-restaurante-verbos6', title: 'Una noche en el restaurante', level: 1,
+  id: 'noche-restaurante-verbos6', title: 'Una noche en el restaurante', level: 1, theme: 'alimentacion',
   text: 'Cuando vamos a ese restaurante, siempre pedimos el mismo plato porque es delicioso. El camarero sirve la comida muy rápido y siempre oye bien nuestros pedidos, incluso cuando hay mucho ruido. Mi abuelo dice que se muere de hambre si tarda mucho la comida, así que siempre pide primero. Después de cenar, dormimos muy bien porque comemos temprano. A veces, si la música está muy alta, no oigo bien lo que dice mi hermana.',
   gloss: [
     { es: 'el camarero', en: 'the waiter' },
@@ -348,7 +348,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'meta-personal-verbos7', title: 'Una meta personal', level: 1,
+  id: 'meta-personal-verbos7', title: 'Una meta personal', level: 1, theme: 'ocio',
   text: 'Diego sigue un plan estricto para conseguir su objetivo: correr una maratón en los próximos meses. Prefiere entrenar por la mañana porque se siente con más energía. A veces repite el mismo circuito varias veces para mejorar su tiempo. Sus amigos prefieren acompañarlo los fines de semana, aunque no siguen el mismo ritmo. Diego siente que, poco a poco, consigue avanzar hacia su objetivo. Si sigue así, seguro que consigue terminar la carrera sin problemas.',
   gloss: [
     { es: 'una meta', en: 'a goal' },
@@ -365,7 +365,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'nuevo-vecino-verbos8', title: 'El nuevo vecino', level: 1,
+  id: 'nuevo-vecino-verbos8', title: 'El nuevo vecino', level: 1, theme: 'relaciones',
   text: 'Conozco a mi nuevo vecino desde hace una semana y ya nos reímos mucho juntos. Él lee todas las noches antes de dormir y cree que es la mejor forma de relajarse. Los fines de semana, construye muebles de madera en su garaje como afición. Para mí, no es un trabajo fácil, pero él se ríe y dice que le encanta. Cuando leemos juntos en el parque, siempre construimos conversaciones interesantes sobre libros.',
   gloss: [
     { es: 'desde hace una semana', en: 'for a week now' },
@@ -382,7 +382,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'trabajo-traductora-verbos9', title: 'El trabajo de una traductora', level: 1,
+  id: 'trabajo-traductora-verbos9', title: 'El trabajo de una traductora', level: 1, theme: 'trabajo',
   text: 'Clara traduce documentos legales para una empresa internacional. Piensa mucho antes de traducir cada frase porque el significado tiene que ser exacto. La empresa produce manuales técnicos en varios idiomas y Clara traduce la mayoría al español. A veces, conduce hasta la oficina central para reunirse con el equipo. Sus compañeros piensan que es muy meticulosa, y ella parece disfrutar de cada proyecto nuevo. Aunque el trabajo parece sencillo, en realidad requiere mucha concentración.',
   gloss: [
     { es: 'los documentos legales', en: 'legal documents' },
@@ -399,7 +399,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'primer-dia-oficina-verbos10', title: 'El primer día en la oficina', level: 1,
+  id: 'primer-dia-oficina-verbos10', title: 'El primer día en la oficina', level: 1, theme: 'trabajo',
   text: 'Hoy empiezo un trabajo nuevo y estoy un poco nerviosa. La reunión comienza a las nueve y todos entienden que soy nueva en el equipo. Antes de salir, siempre cierro bien la puerta de mi despacho. A veces no entiendo todos los términos técnicos, pero pregunto sin miedo. Mi jefe dice que, si me pierdo con algún proceso, siempre puedo pedir ayuda. Espero no perder la concentración durante mi primera semana.',
   gloss: [
     { es: 'el despacho', en: 'the office (room)' },
@@ -416,7 +416,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'fotos-antiguas-verbos11', title: 'Fotos antiguas', level: 1,
+  id: 'fotos-antiguas-verbos11', title: 'Fotos antiguas', level: 1, theme: 'relaciones',
   text: 'Cada vez que vuelvo a casa de mis padres, encuentro cajas llenas de fotos antiguas. Mi madre siempre cuenta historias sobre cada foto y recuerda hasta el más mínimo detalle. Me muestra fotos de mi infancia y no recuerdo casi nada de esa época. Mi padre encuentra siempre una excusa para mostrarnos su foto favorita del ejército. Cuando volvemos a mirar el álbum juntos, contamos historias divertidas durante horas.',
   gloss: [
     { es: 'cajas llenas de', en: 'boxes full of' },
@@ -433,7 +433,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'partido-domingo-verbos12', title: 'El partido del domingo', level: 1,
+  id: 'partido-domingo-verbos12', title: 'El partido del domingo', level: 1, theme: 'ocio',
   text: 'Los domingos, mi hijo juega al fútbol en el parque con sus amigos. Siempre llegamos temprano para buscar un buen sitio y nos sentamos cerca del campo. Las entradas para los partidos profesionales cuestan bastante, así que preferimos ver los partidos locales gratis. Cuando mi hijo juega bien, todos nos sentamos más cerca para animar al equipo. Después del partido, buscamos un sitio para comer algo juntos.',
   gloss: [
     { es: 'el sitio', en: 'the spot' },
@@ -450,7 +450,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'reparacion-coche-verbos13', title: 'La reparación del coche', level: 1,
+  id: 'reparacion-coche-verbos13', title: 'La reparación del coche', level: 1, theme: 'servicios',
   text: 'Cada vez que mi coche se rompe, lo llevo al mismo taller de confianza. El mecánico abre el capó, saca las piezas dañadas y las toca con cuidado para ver el problema. Al final, siempre pago con tarjeta porque es más rápido. A veces, mi hermano rompe cosas sin querer, como el espejo lateral del coche, y también paga la reparación. Menos mal que el mecánico abre el taller también los sábados.',
   gloss: [
     { es: 'el taller de confianza', en: 'the trusted repair shop' },
@@ -467,7 +467,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'noticia-cientifica-verbos14', title: 'Una noticia científica', level: 1,
+  id: 'noticia-cientifica-verbos14', title: 'Una noticia científica', level: 1, theme: 'ciencia',
   text: 'Un grupo de científicos descubre una nueva especie de pez en el océano. La noticia cubre la primera página de muchos periódicos. Los investigadores llevan meses estudiando esa zona del mar y no dejan de sorprenderse con cada hallazgo. Un periodista llama al equipo para pedir una entrevista, pero el jefe del proyecto deja esa tarea a su compañera. La nieve cubre las montañas cercanas mientras el equipo sigue trabajando sin descanso.',
   gloss: [
     { es: 'una especie', en: 'a species' },
@@ -484,7 +484,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'cita-con-amigas-verbos15', title: 'Una cita con amigas', level: 1,
+  id: 'cita-con-amigas-verbos15', title: 'Una cita con amigas', level: 1, theme: 'relaciones',
   text: 'Todos los viernes, quedo con mis amigas para tomar algo en el centro. Siempre espero un poco porque alguna llega tarde. Cuando entramos en el café, buscamos la mesa de siempre cerca de la ventana. A veces pasamos horas hablando de todo un poco. Necesito estos momentos porque me ayudan a desconectar de la semana. Al final, siempre quedamos para la semana siguiente antes de despedirnos.',
   gloss: [
     { es: 'tomar algo', en: 'to grab a drink' },
@@ -501,7 +501,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'clases-fotografia-verbos16', title: 'Clases de fotografía', level: 1,
+  id: 'clases-fotografia-verbos16', title: 'Clases de fotografía', level: 1, theme: 'arte',
   text: 'Me gusta mucho la fotografía, así que tomo un curso los sábados por la mañana. El profesor nos ayuda a entender la luz y usamos cámaras diferentes cada semana. Miramos las fotos de otros estudiantes para aprender juntos. A mis compañeros les gusta mucho tomar fotos de paisajes, mientras que yo prefiero los retratos. El profesor siempre nos ayuda con paciencia cuando no entendemos algo.',
   gloss: [
     { es: 'la luz', en: 'the light' },
@@ -518,7 +518,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'tienda-electronica-verbos17', title: 'Una tienda de electrónica', level: 1,
+  id: 'tienda-electronica-verbos17', title: 'Una tienda de electrónica', level: 1, theme: 'compras',
   text: 'Cuando algo se rompe en casa, siempre compramos el repuesto en la misma tienda de electrónica. El dependiente pregunta primero qué necesitamos y después nos ayuda a elegir. A veces cambiamos de opinión varias veces antes de decidir. Mi pareja gana bastante dinero, así que no nos preocupa mucho el precio. Cuando terminamos de comprar, siempre preguntamos si hay garantía. Al final, terminamos contentos con la compra.',
   gloss: [
     { es: 'el repuesto', en: 'the replacement part' },
@@ -535,7 +535,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'noche-cultural-verbos18', title: 'Una noche cultural', level: 1,
+  id: 'noche-cultural-verbos18', title: 'Una noche cultural', level: 1, theme: 'arte',
   text: 'Esta semana, un grupo de amigos viaja a un pueblo pequeño para un festival cultural. Por la noche, la gente canta y baila en la plaza principal. Nosotros caminamos por las calles estrechas mientras escuchamos la música. Un restaurante local cocina platos tradicionales para todos los visitantes. A mí me encanta bailar, aunque mis amigos prefieren solo mirar y cantar las canciones conocidas. Después del festival, caminamos de vuelta al hotel bajo las estrellas.',
   gloss: [
     { es: 'la plaza principal', en: 'the main square' },
@@ -552,7 +552,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'tienda-segunda-mano-verbos19', title: 'Una tienda de segunda mano', level: 4,
+  id: 'tienda-segunda-mano-verbos19', title: 'Una tienda de segunda mano', level: 4, theme: 'compras',
   text: 'Mis vecinos venden ropa que ya no usan en una tienda de segunda mano. Deben clasificar cada prenda antes de ponerla en la tienda. Cuando alguien pregunta por un precio, el dueño siempre responde con amabilidad. Yo comprendo por qué la gente prefiere comprar ropa de segunda mano: es más barata y mejor para el planeta. Los fines de semana, corro por el mercadillo buscando gangas antes de que se agoten. Al final del día, el dueño responde a todos los mensajes pendientes.',
   gloss: [
     { es: 'la segunda mano', en: 'secondhand' },
@@ -569,7 +569,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'mudanza-piso-nuevo-verbos20', title: 'Mudanza a un piso nuevo', level: 1,
+  id: 'mudanza-piso-nuevo-verbos20', title: 'Mudanza a un piso nuevo', level: 1, theme: 'vivienda',
   text: 'Cuando decidimos mudarnos, metemos todo en cajas grandes con mucho cuidado. El portero del edificio nos permite usar el ascensor de servicio para subir los muebles. Cada semana recibimos alguna caja nueva de la tienda de decoración. Mi pareja decide dónde va cada mueble y yo meto las cosas pequeñas en su sitio. El ascensor no permite subir más de cuatro personas a la vez, así que subimos por turnos.',
   gloss: [
     { es: 'el portero', en: 'the doorman' },
@@ -586,7 +586,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'rutina-familiar-verbos21', title: 'La rutina familiar', level: 1,
+  id: 'rutina-familiar-verbos21', title: 'La rutina familiar', level: 1, theme: 'relaciones',
   text: 'En mi familia, desayunamos todos juntos antes de partir hacia el trabajo o la escuela. Por la noche, cenamos siempre a la misma hora para hablar de nuestro día. A veces ocurre algo curioso durante la cena y todos nos reímos mucho. Creo que no existe una rutina perfecta, pero la nuestra funciona bien para todos. Cuando alguien sale a viajar, siempre desayunamos un poco antes para despedirnos con calma.',
   gloss: [
     { es: 'hacia', en: 'towards' },
@@ -603,7 +603,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'cena-vecinos-verbos22', title: 'Una cena con los vecinos', level: 1,
+  id: 'cena-vecinos-verbos22', title: 'Una cena con los vecinos', level: 1, theme: 'relaciones',
   text: 'Cada mes, invitamos a los vecinos a cenar en casa. Yo preparo el plato principal y ellos traen el postre. Cuando llegan, siempre saludamos con un abrazo porque ya somos buenos amigos. A veces olvido comprar algún ingrediente, pero mis vecinos me ayudan sin problema. Todos disfrutamos mucho de esas noches porque hablamos de todo un poco. Al final, nunca olvidamos organizar la próxima cena antes de despedirnos.',
   gloss: [
     { es: 'el plato principal', en: 'the main course' },
@@ -620,7 +620,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'clases-verano-verbos23', title: 'Clases de verano', level: 1,
+  id: 'clases-verano-verbos23', title: 'Clases de verano', level: 1, theme: 'educacion',
   text: 'Todos los veranos, mi hija regresa al mismo campamento junto al lago. Por la mañana, nada en el lago con los otros niños. Por la tarde, dibuja en su cuaderno y aprende técnicas nuevas con la profesora de arte. Antes de irse, siempre firmamos un papel con las normas del campamento. Al volver a casa, ella lava su ropa deportiva ella misma porque quiere ser más independiente. Cada año regresamos al mismo sitio porque a todos nos encanta.',
   gloss: [
     { es: 'el campamento', en: 'the camp' },
@@ -637,7 +637,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'proyecto-comunitario-verbos24', title: 'Un proyecto comunitario', level: 1,
+  id: 'proyecto-comunitario-verbos24', title: 'Un proyecto comunitario', level: 1, theme: 'politica',
   text: 'Los vecinos del barrio limpian el parque juntos una vez al mes. Todos participan porque creen que un barrio limpio depende del esfuerzo de todos. Cada persona promete ayudar al menos una hora, y así el grupo logra terminar rápido. El resultado depende mucho de cuántos vecinos participan ese día. Al final, siempre logramos dejar el parque impecable, y los niños prometen no tirar basura al suelo.',
   gloss: [
     { es: 'el esfuerzo', en: 'the effort' },
@@ -654,7 +654,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'reunion-vecinos-verbos25', title: 'Una reunión de vecinos', level: 1,
+  id: 'reunion-vecinos-verbos25', title: 'Una reunión de vecinos', level: 1, theme: 'vivienda',
   text: 'Cada mes asistimos a la reunión de vecinos para hablar de los problemas del edificio. A veces discutimos mucho sobre pequeñas cosas, pero al final siempre llegamos a un acuerdo. Nunca sé qué va a suceder en esas reuniones porque siempre me sorprende algún vecino con una queja nueva. El portero esconde las llaves extra en un cajón especial por seguridad. Me sorprende ver cuántos detalles pequeños pueden generar tanta discusión.',
   gloss: [
     { es: 'llegar a un acuerdo', en: 'to reach an agreement' },
@@ -671,7 +671,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'reto-cocina-verbos26', title: 'Un reto de cocina', level: 1,
+  id: 'reto-cocina-verbos26', title: 'Un reto de cocina', level: 1, theme: 'alimentacion',
   text: 'Mis amigos y yo compartimos una receta nueva cada semana en un grupo de mensajes. Yo siempre añado un ingrediente diferente para hacerla más interesante. Mi amigo insiste en que la receta original es mejor sin cambios. A veces no resisto la tentación y añado demasiada pimienta. Todos cumplimos con la regla de probar la receta antes del domingo. Al final, compartimos fotos de nuestros platos y comentamos los resultados.',
   gloss: [
     { es: 'un grupo de mensajes', en: 'a messaging group' },
@@ -688,7 +688,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'terapia-grupo-verbos27', title: 'Una terapia de grupo', level: 1,
+  id: 'terapia-grupo-verbos27', title: 'Una terapia de grupo', level: 1, theme: 'salud',
   text: 'En la terapia de grupo, cada persona admite sus miedos sin vergüenza. La psicóloga escucha con atención y ayuda a definir mejor cada problema. Muchos participantes sufren de ansiedad, pero se sienten mejor al compartirlo con otros. Al final de cada sesión, la psicóloga manda una pequeña tarea para practicar en casa. Escuchar las historias de otros ayuda a definir lo que uno mismo necesita cambiar.',
   gloss: [
     { es: 'sin vergüenza', en: 'without shame' },
@@ -705,7 +705,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'boda-presupuesto-verbos28', title: 'El presupuesto de la boda', level: 1,
+  id: 'boda-presupuesto-verbos28', title: 'El presupuesto de la boda', level: 1, theme: 'relaciones',
   text: 'Laura y Carlos planean su boda para el próximo verano y organizan cada detalle con cuidado. Ahorran un poco de dinero cada mes para no gastar más de lo necesario. Deciden alquilar un salón pequeño porque prefieren gastar en comida y música. Laura organiza las invitaciones mientras Carlos planea el menú con el restaurante. Los dos juntos ahorran suficiente para no pedir ningún préstamo. Al final, gastan exactamente el dinero previsto.',
   gloss: [
     { es: 'el presupuesto', en: 'the budget' },
@@ -722,7 +722,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'startup-nueva-verbos29', title: 'Una startup nueva', level: 1,
+  id: 'startup-nueva-verbos29', title: 'Una startup nueva', level: 1, theme: 'trabajo',
   text: 'Ana gestiona una pequeña startup de tecnología y administra el presupuesto con mucho cuidado. Cada mes contrata a una persona nueva si el proyecto crece. Antes de firmar cualquier acuerdo, siempre negocia las condiciones con calma. Para las reuniones importantes, reserva una sala tranquila en el centro. Su equipo confía en ella porque gestiona bien los conflictos y negocia soluciones justas para todos. Contratar a la persona correcta es, según Ana, la decisión más importante de la empresa.',
   gloss: [
     { es: 'el acuerdo', en: 'the agreement' },
@@ -739,7 +739,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'nuevo-portatil-verbos30', title: 'Un ordenador portátil nuevo', level: 1,
+  id: 'nuevo-portatil-verbos30', title: 'Un ordenador portátil nuevo', level: 1, theme: 'ciencia',
   text: 'Cuando compro un ordenador nuevo, siempre instalo mis programas favoritos primero. Después, configuro las opciones de privacidad y conecto todos mis dispositivos. Actualizo el sistema operativo cada semana para evitar problemas de seguridad. Al final, reciclo el ordenador viejo en un punto limpio en vez de tirarlo a la basura. Mi hermano también configura su portátil de la misma manera y conecta todo con cuidado.',
   gloss: [
     { es: 'los dispositivos', en: 'the devices' },
@@ -756,7 +756,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'clinica-veterinaria-verbos31', title: 'La clínica veterinaria', level: 1,
+  id: 'clinica-veterinaria-verbos31', title: 'La clínica veterinaria', level: 1, theme: 'salud',
   text: 'En la clínica, el veterinario vacuna a los cachorros nuevos cada mañana. Antes de operar a un animal, siempre respira hondo para mantener la calma. Los animales descansan en una jaula tranquila después de cada operación. El veterinario cura heridas pequeñas casi todos los días. Después de un día largo, él también necesita descansar un poco. Su equipo opera con mucho cuidado y siempre vacuna según el calendario recomendado.',
   gloss: [
     { es: 'los cachorros', en: 'the puppies' },
@@ -773,7 +773,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'equipo-disenio-verbos32', title: 'Un equipo de diseño', level: 1,
+  id: 'equipo-disenio-verbos32', title: 'Un equipo de diseño', level: 1, theme: 'trabajo',
   text: 'Sara diseña la interfaz de una aplicación nueva mientras su compañero programa las funciones principales. Juntos desarrollan el proyecto durante varios meses antes de lanzarlo. Cuando algo no funciona bien, los usuarios reclaman rápido en las redes sociales. El equipo vota cada semana qué función mejorar primero. Sara también diseña los colores y las tipografías con mucho gusto. Al final, todos votan por el diseño final antes de publicarlo.',
   gloss: [
     { es: 'la interfaz', en: 'the interface' },
@@ -790,7 +790,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'debate-medioambiente-verbos33', title: 'Un debate sobre el medio ambiente', level: 1,
+  id: 'debate-medioambiente-verbos33', title: 'Un debate sobre el medio ambiente', level: 1, theme: 'naturaleza',
   text: 'En clase, los estudiantes debaten sobre cómo las fábricas contaminan los ríos cercanos. Cada uno opina de forma diferente sobre las soluciones posibles. Algunos vecinos protestan frente al ayuntamiento porque quieren leyes más estrictas. Una señora mayor llora al pensar en el estado del río antes de la contaminación. El profesor opina que hablar del tema en clase ayuda a crear conciencia. Al final del debate, todos coinciden en que las fábricas contaminan demasiado.',
   gloss: [
     { es: 'las fábricas', en: 'the factories' },
@@ -807,7 +807,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'rutina-manana-verbos34', title: 'La rutina de la mañana', level: 1,
+  id: 'rutina-manana-verbos34', title: 'La rutina de la mañana', level: 1, theme: 'trabajo',
   text: 'Todos los días madrugo mucho porque empiezo a trabajar muy temprano. Antes de salir, siempre cargo mi teléfono y descargo las noticias del día para leerlas en el metro. Por la noche, apago todas las luces de la casa y mi pareja calienta el horno para preparar la cena. Los fines de semana, madrugamos menos y cargamos las pilas para la semana siguiente. Antes de dormir, siempre apago el móvil para descansar mejor.',
   gloss: [
     { es: 'el metro', en: 'the subway' },
@@ -824,7 +824,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'reunion-inversores-verbos35', title: 'Una reunión con inversores', level: 1,
+  id: 'reunion-inversores-verbos35', title: 'Una reunión con inversores', level: 1, theme: 'economia',
   text: 'Antes de la reunión, alguien enciende el proyector y prueba la presentación. Los inversores quieren saber si la empresa invierte bien su dinero. El director elige cuidadosamente cada palabra de su discurso porque sabe que están evaluando el proyecto. Su asistente corrige los últimos errores en las diapositivas antes de empezar. Nadie quiere despedir a nadie, pero todos saben que la empresa necesita crecer rápido para convencer a los inversores. Al final, el equipo elige presentar los datos con mucha calma.',
   gloss: [
     { es: 'los inversores', en: 'the investors' },
@@ -841,7 +841,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'directora-orquesta-verbos36', title: 'La directora de orquesta', level: 1,
+  id: 'directora-orquesta-verbos36', title: 'La directora de orquesta', level: 1, theme: 'arte',
   text: 'Elena dirige una orquesta pequeña desde hace cinco años. Exige mucha disciplina a los músicos, pero siempre sonríe cuando el ensayo sale bien. Antes de cada concierto, envía un mensaje de ánimo a todo el grupo. Elena anda por el escenario revisando cada instrumento antes de empezar. Sus músicos dicen que ella dirige con pasión y exige lo mejor de cada uno, aunque siempre sonríe con cariño al final del concierto.',
   gloss: [
     { es: 'la orquesta', en: 'the orchestra' },
@@ -858,7 +858,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'anillo-familia-verbos37', title: 'Un anillo de familia', level: 1,
+  id: 'anillo-familia-verbos37', title: 'Un anillo de familia', level: 1, theme: 'relaciones',
   text: 'Un anillo antiguo vale mucho para mi familia, aunque no vale mucho dinero en el mercado. Mi abuela siempre dice que las cosas más valiosas no siempre valen una fortuna. Para ella, los recuerdos valen mucho más que cualquier joya cara. Cuando le pregunto cuánto vale exactamente, ella se ríe y responde que un recuerdo así no tiene precio.',
   gloss: [
     { es: 'el anillo', en: 'the ring' },
@@ -875,7 +875,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'primer-dia-vecindario-vocab1', title: 'El primer día en el vecindario', level: 1,
+  id: 'primer-dia-vecindario-vocab1', title: 'El primer día en el vecindario', level: 1, theme: 'relaciones',
   text: 'Cuando Marta conoce a su vecina nueva, la saluda con un alegre buenos días. La vecina responde hola y dice que está encantada de conocerla. Marta le pregunta si necesita ayuda, y ella contesta que sí, por favor. Al terminar, Marta se disculpa diciendo perdón por la prisa, y la vecina responde de nada, muchas gracias por todo. Por la noche, ambas se despiden con un simple buenas noches. Al día siguiente, se dicen adiós y prometen tomar un café juntas pronto.',
   gloss: [
     { es: 'encantada de conocerla', en: 'pleased to meet her' },
@@ -892,7 +892,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'retrato-familia-vocab2', title: 'Un retrato de familia', level: 1,
+  id: 'retrato-familia-vocab2', title: 'Un retrato de familia', level: 1, theme: 'relaciones',
   text: 'En esta foto se ve a toda la familia reunida en el jardín. El padre sonríe al lado de la madre, que sostiene a la niña pequeña. El hijo mayor, un niño curioso, mira la cámara con atención. Al fondo, se ve al hermano de la madre con su amiga y su amigo del trabajo. Todos dicen que el hombre y la mujer que aparecen en el centro son los abuelos, aunque nadie los conoce personalmente.',
   gloss: [
     { es: 'reunida', en: 'gathered' },
@@ -909,7 +909,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'boda-familiar-vocab3', title: 'Una boda familiar', level: 2,
+  id: 'boda-familiar-vocab3', title: 'Una boda familiar', level: 2, theme: 'relaciones',
   text: 'En la boda de mi hermana, vino mucha gente de toda la familia. Mi tío bailó toda la noche con mi tía, y mis primos jugaban cerca de la piscina. El abuelo y la abuela se sentaron juntos para ver a los novios. Incluso vino el jefe de mi hermana, además de varios vecinos de toda la vida. Al final, el esposo de mi tía dio un discurso muy emotivo sobre su esposa y su familia.',
   gloss: [
     { es: 'los novios', en: 'the bride and groom' },
@@ -926,7 +926,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'abuelos-nietos-vocab4', title: 'Los abuelos y sus nietos', level: 1,
+  id: 'abuelos-nietos-vocab4', title: 'Los abuelos y sus nietos', level: 1, theme: 'relaciones',
   text: 'Cada domingo, mis abuelos reciben la visita de sus nietos. Mi primo es el nieto mayor y siempre ayuda a poner la mesa. Mi prima, la nieta menor, prefiere jugar con el perro del jardín. Los abuelos dicen que sus nietos son su mayor alegría. Cuando los nietos se van, la casa se queda muy silenciosa, y los abuelos ya esperan el próximo domingo.',
   gloss: [
     { es: 'la visita', en: 'the visit' },
@@ -943,7 +943,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'desayuno-saludable-vocab5', title: 'Un desayuno saludable', level: 1,
+  id: 'desayuno-saludable-vocab5', title: 'Un desayuno saludable', level: 1, theme: 'alimentacion',
   text: 'Todas las mañanas, preparo un desayuno saludable con huevo, pan y fruta fresca. Bebo un vaso de leche y, a veces, también un café pequeño. Para el almuerzo, prefiero comida ligera como pollo o pescado con verdura. Como una manzana entera casi todos los días porque me da energía. Nunca bebo mucha agua por la mañana, pero sí bebo bastante durante el resto del día. La carne roja la como solo una vez por semana.',
   gloss: [
     { es: 'saludable', en: 'healthy' },
@@ -960,7 +960,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'cena-especial-vocab6', title: 'Una cena especial', level: 2,
+  id: 'cena-especial-vocab6', title: 'Una cena especial', level: 2, theme: 'alimentacion',
   text: 'Para la cena especial de esta noche, preparo arroz con queso y verduras. Mis invitados prefieren beber vino tinto, aunque a mi hermano le gusta más la cerveza fría. No añado azúcar a ningún plato salado, solo lo uso en el postre. El desayuno de mañana es más ligero porque hoy cenamos mucho. Normalmente, el almuerzo es la comida más importante del día, pero hoy la cena gana ese honor.',
   gloss: [
     { es: 'tinto', en: 'red (wine)' },
@@ -977,7 +977,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'numeros-loteria-vocab7', title: 'Los números de la lotería', level: 1,
+  id: 'numeros-loteria-vocab7', title: 'Los números de la lotería', level: 1, theme: 'ocio',
   text: 'Cada semana, mi padre juega a la lotería con los mismos números: tres, siete y nueve. Compra un billete que cuesta diez euros y sueña con ganar cien mil euros algún día. Mi madre prefiere jugar con cinco números diferentes: uno, dos, cuatro, seis y ocho. Nunca ganan más de mil euros, pero siguen jugando cada semana con ilusión. Para ellos, jugar es más divertido que ganar.',
   gloss: [
     { es: 'la lotería', en: 'the lottery' },
@@ -994,7 +994,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'carrera-escolar-vocab8', title: 'Una carrera escolar', level: 1,
+  id: 'carrera-escolar-vocab8', title: 'Una carrera escolar', level: 1, theme: 'educacion',
   text: 'En la carrera de la escuela, mi hijo siempre quiere ser el primero en cruzar la línea de llegada. Actualmente, corre contra diez compañeros de su clase. Su amigo, que suele llegar último, entrena mucho para mejorar su posición. El profesor dice que lo importante no es ser el primero, sino terminar la carrera con esfuerzo. Al final, mi hijo llega segundo, y su amigo ya no llega último.',
   gloss: [
     { es: 'la línea de llegada', en: 'the finish line' },
@@ -1011,7 +1011,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'planificador-semanal-vocab9', title: 'Mi planificador semanal', level: 2,
+  id: 'planificador-semanal-vocab9', title: 'Mi planificador semanal', level: 2, theme: 'trabajo',
   text: 'Cada día, apunto mis tareas en un planificador para organizar la semana. Hoy tengo una reunión importante, y mañana empiezo un proyecto nuevo. Ayer terminé un informe que llevaba todo el mes preparando. Ahora reviso mi calendario cada hora para no olvidar nada. Nunca dejo tareas para el último minuto, aunque a veces necesito más de un año para completar proyectos grandes. Siempre digo que la organización es la clave del éxito.',
   gloss: [
     { es: 'apunto', en: 'I jot down' },
@@ -1028,7 +1028,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'cuadro-pintor-vocab10', title: 'El cuadro del pintor', level: 1,
+  id: 'cuadro-pintor-vocab10', title: 'El cuadro del pintor', level: 1, theme: 'arte',
   text: 'El pintor mezcla azul y amarillo para conseguir verde. En su estudio, tiene botes de pintura roja, negra y blanca por todas partes. Para el cielo del cuadro, usa un gris suave, y para las flores, elige rosa y naranja brillante. El marco del cuadro es marrón oscuro, casi del mismo color que la mesa de trabajo. Cuando termina, todos dicen que los colores del cuadro parecen reales.',
   gloss: [
     { es: 'el estudio', en: 'the studio' },
@@ -1045,7 +1045,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'un-dia-por-la-ciudad-vocab11', title: 'Un día por la ciudad', level: 1,
+  id: 'un-dia-por-la-ciudad-vocab11', title: 'Un día por la ciudad', level: 1, theme: 'compras',
   text: 'Hoy salgo temprano de casa y camino por la calle principal de la ciudad. Primero, paso por el mercado para comprar fruta fresca. Después, entro en una tienda cerca de la escuela para comprar un regalo. Al mediodía, como en un restaurante pequeño cerca de la estación de tren. Por la tarde, visito el hospital para acompañar a un amigo, y luego voy directo al trabajo. Antes de volver a casa, paso por el aeropuerto a recoger a mi hermano, que llega de otro país.',
   gloss: [
     { es: 'acompañar', en: 'to accompany' },
@@ -1062,7 +1062,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'paseo-domingo-vocab12', title: 'Un paseo de domingo', level: 1,
+  id: 'paseo-domingo-vocab12', title: 'Un paseo de domingo', level: 1, theme: 'ocio',
   text: 'Los domingos, me gusta pasear por el parque cerca de casa. Después, paso por la iglesia del barrio, aunque no siempre entro. Cerca de allí, hay un edificio antiguo que ahora es un museo muy visitado. Si tengo tiempo, veo una película en el cine o paseo hasta la biblioteca para leer un rato. De camino a casa, paso por el banco para sacar dinero y por la panadería para comprar pan fresco. Por la tarde, trabajo un poco en mi oficina en casa.',
   gloss: [
     { es: 'pasear', en: 'to stroll' },
@@ -1079,7 +1079,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'organizando-casa-vocab13', title: 'Organizando la casa', level: 1,
+  id: 'organizando-casa-vocab13', title: 'Organizando la casa', level: 1, theme: 'vivienda',
   text: 'Hoy organizo toda la casa porque llegan invitados esta tarde. Limpio la cocina y el baño con cuidado. En la habitación principal, cambio las sábanas de la cama y ordeno la mesa y las sillas. Busco la llave de la puerta principal porque siempre se pierde en algún cajón. Abro la ventana para dejar entrar aire fresco. Al final, leo un libro tranquilo en el sofá y contesto el teléfono cuando suena.',
   gloss: [
     { es: 'las sábanas', en: 'the sheets' },
@@ -1096,7 +1096,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'reforma-vecindario-vocab14', title: 'La reforma del vecindario', level: 1,
+  id: 'reforma-vecindario-vocab14', title: 'La reforma del vecindario', level: 1, theme: 'vivienda',
   text: 'Los vecinos del vecindario ahorran dinero cada mes para pagar una reforma del edificio. La comunidad de vecinos decide qué arreglar primero: el tejado o la fachada. Alguien guarda todos los papeles importantes en una carpeta especial. Mi reloj marca las nueve cuando empieza la reunión de la comunidad. Todos traen ropa cómoda porque después ayudan a limpiar el patio. Al final, todos están contentos con los cambios en el vecindario.',
   gloss: [
     { es: 'el tejado', en: 'the roof' },
@@ -1113,7 +1113,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'clase-yoga-vocab15', title: 'Una clase de yoga', level: 1,
+  id: 'clase-yoga-vocab15', title: 'Una clase de yoga', level: 1, theme: 'cuerpo',
   text: 'En la clase de yoga, primero movemos la cabeza suavemente de un lado a otro. Después, estiramos los brazos y las piernas con calma. El profesor nos enseña a respirar hondo y a sentir el corazón latir más despacio. Cerramos los ojos y relajamos la cara poco a poco. Al final, ponemos las manos sobre el pecho y sentimos cada parte del cuerpo, desde el pie hasta la cabeza.',
   gloss: [
     { es: 'suavemente', en: 'gently' },
@@ -1130,7 +1130,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'atardecer-playa-vocab16', title: 'Un atardecer en la playa', level: 1,
+  id: 'atardecer-playa-vocab16', title: 'Un atardecer en la playa', level: 1, theme: 'naturaleza',
   text: 'Por la tarde, el sol baja poco a poco y pinta el cielo de naranja. El mar está tranquilo y solo se mueve un poco de viento suave. Cerca de la orilla, hay un árbol solitario con una flor amarilla creciendo cerca de sus raíces en la tierra. Cuando cae la noche, la luna aparece despacio en el cielo. Si hace frío, alguien enciende fuego en la arena para calentarse.',
   gloss: [
     { es: 'la orilla', en: 'the shore' },
@@ -1147,7 +1147,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'comprando-piso-vocab17', title: 'Comprando un piso', level: 1,
+  id: 'comprando-piso-vocab17', title: 'Comprando un piso', level: 1, theme: 'vivienda',
   text: 'Buscamos un piso grande para toda la familia, pero los pisos grandes son muy caros. Encontramos uno pequeño y bonito, aunque un poco viejo. El agente dice que no es fácil encontrar algo bueno y barato al mismo tiempo. Visitamos otro piso nuevo, pero nos parece feo en el exterior. Al final, decidir es difícil, pero preferimos algo pequeño y barato antes que algo grande y malo por dentro.',
   gloss: [
     { es: 'el agente', en: 'the agent' },
@@ -1164,7 +1164,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'maraton-ciudad-vocab18', title: 'La maratón de la ciudad', level: 1,
+  id: 'maraton-ciudad-vocab18', title: 'La maratón de la ciudad', level: 1, theme: 'ocio',
   text: 'Los corredores rápidos terminan la maratón en poco tiempo, mientras los más lentos tardan mucho más. Algunos se sienten fuertes al principio, pero al final del recorrido largo se sienten débiles y cansados. Otros prefieren un recorrido más corto para no sufrir tanto. Al cruzar la línea final, unos están felices y otros están tristes porque no consiguen su objetivo. Las botellas de agua están vacías al final, y las calles están llenas de público a pesar del frío de la mañana.',
   gloss: [
     { es: 'los corredores', en: 'the runners' },
@@ -1181,7 +1181,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'entrevista-trabajo-vocab19', title: 'Una entrevista de trabajo', level: 2,
+  id: 'entrevista-trabajo-vocab19', title: 'Una entrevista de trabajo', level: 2, theme: 'trabajo',
   text: 'Antes de la entrevista, pienso en las preguntas típicas: qué experiencia tengo, por qué quiero el puesto y cómo resuelvo problemas. El entrevistador también pregunta dónde estudié y cuándo empecé mi carrera. A veces pregunta cuánto tiempo llevo en el sector y cuál de mis proyectos es el más importante. Al final, pregunta quién soy aparte del trabajo, y esa pregunta me sorprende más que las demás.',
   gloss: [
     { es: 'el entrevistador', en: 'the interviewer' },
@@ -1198,7 +1198,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'decision-dificil-vocab20', title: 'Una decisión difícil', level: 1,
+  id: 'decision-dificil-vocab20', title: 'Una decisión difícil', level: 1, theme: 'trabajo',
   text: 'Quiero cambiar de trabajo porque necesito un reto nuevo, pero también me da miedo dejar la seguridad de mi puesto actual. Aunque el sueldo nuevo es mejor, sin embargo, el horario es más largo. Mientras pienso en la decisión, hablo con mi familia para escuchar otras opiniones. Además, considero que la ubicación de la oficina nueva está más lejos de casa. Entonces, decido esperar un poco más antes de tomar la decisión final.',
   gloss: [
     { es: 'un reto', en: 'a challenge' },
@@ -1215,7 +1215,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'guia-turistica-vocab21', title: 'Una guía turística', level: 1,
+  id: 'guia-turistica-vocab21', title: 'Una guía turística', level: 1, theme: 'viajes',
   text: 'Aquí, cerca del hotel, hay muy poca gente por la mañana, pero allí, en el centro, hay mucho turismo todo el año. Recomiendo comer aquí porque la comida está muy bien, aunque hay menos variedad que en otros restaurantes. Si prefieres estar lejos del ruido, aquella zona es mejor, aunque queda un poco más lejos del centro. Todo el mundo dice que la vista de allí es la mejor de la ciudad, aunque a mí no me parece mal ninguna parte.',
   gloss: [
     { es: 'el turismo', en: 'tourism' },
@@ -1232,7 +1232,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'casa-vacia-vocab22', title: 'Una casa vacía', level: 1,
+  id: 'casa-vacia-vocab22', title: 'Una casa vacía', level: 1, theme: 'vivienda',
   text: 'Cuando llego a casa y no hay nadie, siento algo extraño en el silencio. A veces pienso que alguien va a aparecer de repente, pero no pasa nada. Prefiero cuando hay alguien esperándome, incluso si es solo el gato. Si necesito algo, no tengo a nadie cerca para pedir ayuda, así que aprendo a resolver todo solo.',
   gloss: [
     { es: 'el silencio', en: 'the silence' },
@@ -1249,7 +1249,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'primer-dia-escuela-vocab23', title: 'El primer día de escuela', level: 1,
+  id: 'primer-dia-escuela-vocab23', title: 'El primer día de escuela', level: 1, theme: 'educacion',
   text: 'Antes de empezar las clases, mi hija prepara su mochila con mucho cuidado. Mete un cuaderno nuevo, dos lápices y un bolígrafo azul. También lleva una goma y una regla por si acaso. En clase, la profesora escribe en la pizarra mientras los niños escuchan con atención desde su escritorio. Al final del día, mi hija guarda todo en la mochila otra vez y vuelve a casa contenta.',
   gloss: [
     { es: 'por si acaso', en: 'just in case' },
@@ -1266,7 +1266,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'semana-dificil-salud-vocab24', title: 'Una semana difícil de salud', level: 1,
+  id: 'semana-dificil-salud-vocab24', title: 'Una semana difícil de salud', level: 1, theme: 'salud',
   text: 'Esta semana cuido mi salud porque tengo mucho estrés en el trabajo. El lunes, siento un dolor de cabeza fuerte y voy a la farmacia a comprar medicina. El martes, tengo fiebre y sospecho que es gripe, así que descanso todo el día. El miércoles, tengo una cita médica con el dentista para revisar una muela. Mi seguro médico cubre casi todo, menos la terapia para la ansiedad, que pago aparte. Al final de la semana, me siento mucho mejor.',
   gloss: [
     { es: 'sospecho', en: 'I suspect' },
@@ -1283,7 +1283,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'chequeo-anual-vocab25', title: 'El chequeo anual', level: 1,
+  id: 'chequeo-anual-vocab25', title: 'El chequeo anual', level: 1, theme: 'salud',
   text: 'Cada año, hago un chequeo médico completo para revisar mi salud general. El médico revisa mi corazón, mis pulmones y me hace análisis de sangre. El chequeo anual me ayuda a detectar cualquier problema a tiempo. Aunque me siento bien, siempre voy al chequeo porque prefiero prevenir antes que curar. Después del chequeo del año, el médico dice que todo está perfecto.',
   gloss: [
     { es: 'los pulmones', en: 'the lungs' },
@@ -1300,7 +1300,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'rebajas-tienda-vocab26', title: 'Las rebajas de la tienda', level: 1,
+  id: 'rebajas-tienda-vocab26', title: 'Las rebajas de la tienda', level: 1, theme: 'compras',
   text: 'Durante las rebajas, la tienda ofrece un buen descuento en varias marcas conocidas. Reviso el precio antes de comprar para asegurarme de que es una oferta real. Después de pagar, siempre guardo el recibo por si necesito devolver algo. Mi marca favorita de zapatos tiene un descuento del cincuenta por ciento esta semana. Comparo precios en varias tiendas antes de decidir dónde comprar.',
   gloss: [
     { es: 'las rebajas', en: 'the sales' },
@@ -1317,7 +1317,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'deportes-favoritos-vocab27', title: 'Los deportes favoritos', level: 1,
+  id: 'deportes-favoritos-vocab27', title: 'Los deportes favoritos', level: 1, theme: 'ocio',
   text: 'Mi hijo juega al fútbol en el equipo de la escuela y tiene un partido cada sábado. Mi hija prefiere el baloncesto porque le gusta jugar en equipo con sus amigas. Yo prefiero la natación, aunque de vez en cuando también juego al tenis con mi pareja. Los fines de semana, toda la familia va al gimnasio juntos. Cuando llueve, los niños juegan con la pelota en el salón, aunque no siempre les dejo.',
   gloss: [
     { es: 'de vez en cuando', en: 'every now and then' },
@@ -1334,7 +1334,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'horario-semanal-vocab-time2', title: 'Mi horario semanal', level: 1,
+  id: 'horario-semanal-vocab-time2', title: 'Mi horario semanal', level: 1, theme: 'trabajo',
   text: 'Los lunes y los martes trabajo temprano porque tengo reuniones importantes. Los miércoles suelo llegar un poco más tarde a la oficina. Los jueves y los viernes son mis días más tranquilos de la semana. Los sábados me despierto tarde y disfruto de la mañana sin prisa. Los domingos, en cambio, me levanto temprano para hacer deporte antes de empezar la semana otra vez.',
   gloss: [
     { es: 'suelo llegar', en: 'I usually arrive' },
@@ -1351,7 +1351,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'examen-final-vocab-adj3', title: 'El examen final', level: 1,
+  id: 'examen-final-vocab-adj3', title: 'El examen final', level: 1, theme: 'educacion',
   text: 'Antes del examen final, mi hermana está muy nerviosa porque no estudia lo suficiente. Yo, en cambio, me siento tranquilo porque practico cada día. Ella dice que está aburrida de estudiar tanto, pero sabe que debe seguir. Nuestro padre está muy ocupado con el trabajo, pero siempre encuentra tiempo para ayudarnos. Cuando llegan las notas, mi hermana se pone enferma de los nervios, pero al final está sorprendida y orgullosa de su resultado. Yo también estoy agradecido y emocionado por terminar el curso.',
   gloss: [
     { es: 'lo suficiente', en: 'enough' },
@@ -1368,7 +1368,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'viaje-tren-vocab-travel', title: 'Un viaje en tren', level: 1,
+  id: 'viaje-tren-vocab-travel', title: 'Un viaje en tren', level: 1, theme: 'viajes',
   text: 'Para ir a la boda de mi prima, compro un billete de tren en vez de coger el avión. Prefiero el tren al autobús porque es más cómodo para llevar la maleta grande. Antes de salir, reviso el mapa para saber cómo llegar del tren al hotel. Mi coche se queda en el garaje porque no quiero conducir tan lejos. Al llegar, el hotel está cerca de la estación, así que camino con la maleta sin problema.',
   gloss: [
     { es: 'en vez de', en: 'instead of' },
@@ -1385,7 +1385,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'cambio-tiempo-vocab-weather', title: 'Un cambio de tiempo repentino', level: 1,
+  id: 'cambio-tiempo-vocab-weather', title: 'Un cambio de tiempo repentino', level: 1, theme: 'naturaleza',
   text: 'Esta mañana, el cielo está lleno de nubes grises y parece que se acerca una tormenta. Se oye un trueno lejano y el viento sopla más fuerte. Por la noche, empieza a caer nieve ligera en las montañas cercanas. Al amanecer, una niebla espesa cubre todo el valle y apenas se ve nada. Los conductores van más despacio por la niebla y evitan salir si hay tormenta.',
   gloss: [
     { es: 'se acerca', en: 'is approaching' },
@@ -1402,7 +1402,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'preparando-maleta-vocab-clothing', title: 'Preparando la maleta', level: 1,
+  id: 'preparando-maleta-vocab-clothing', title: 'Preparando la maleta', level: 1, theme: 'viajes',
   text: 'Para mi próximo trabajo en otra ciudad, meto dos camisas y unos pantalones oscuros en la maleta. También llevo un vestido elegante por si hay una cena formal. No olvido los zapatos cómodos para caminar por la ciudad. Como hace frío, añado un abrigo grueso encima de todo. Al final, cierro la maleta y compruebo que llevo toda la ropa necesaria para la semana.',
   gloss: [
     { es: 'de negocios', en: 'business (trip)' },
@@ -1419,7 +1419,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'visita-granja-vocab-animals', title: 'Una visita a la granja', level: 1,
+  id: 'visita-granja-vocab-animals', title: 'Una visita a la granja', level: 1, theme: 'naturaleza',
   text: 'En la granja, los niños ven vacas, ovejas y un caballo grande cerca del establo. Un perro guardián corre por el campo mientras un gato duerme tranquilo al sol. Un pájaro canta desde un árbol cercano y un ratón pequeño se esconde dentro de la paja. El guía explica que, aunque parece un zoológico, no hay leones ni osos en la granja, solo animales de campo. En el estanque, los niños ven peces de colores nadando tranquilamente.',
   gloss: [
     { es: 'el establo', en: 'the stable' },
@@ -1436,7 +1436,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'lavando-platos-vocab-kitchen', title: 'Lavando los platos', level: 1,
+  id: 'lavando-platos-vocab-kitchen', title: 'Lavando los platos', level: 1, theme: 'vivienda',
   text: 'Después de cenar, lavo la sartén, los cuchillos y los tenedores con cuidado. Seco cada plato y cada cuchara antes de guardarlos en el armario. Uso un cuchillo afilado para cortar la fruta y un tenedor pequeño para el postre. La sartén necesita un lavado especial porque se pega la comida. Al final, guardo todo: platos, cucharas, tenedores y cuchillos, cada cosa en su sitio.',
   gloss: [
     { es: 'secar', en: 'to dry' },
@@ -1453,7 +1453,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'semana-trabajo-vocab-work', title: 'Una semana de trabajo intenso', level: 1,
+  id: 'semana-trabajo-vocab-work', title: 'Una semana de trabajo intenso', level: 1, theme: 'trabajo',
   text: 'El lunes tengo una reunión larga para hablar del nuevo proyecto. El martes escribo un informe detallado sobre los resultados del mes. Mi hija, mientras tanto, prepara un examen importante para la escuela. Ella siempre saca buena nota porque estudia mucho. Al final de la semana, presento el proyecto en otra reunión y espero recibir buenas noticias sobre el informe.',
   gloss: [
     { es: 'detallado', en: 'detailed' },
@@ -1470,7 +1470,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'problemas-ordenador-vocab-tech1', title: 'Problemas con el ordenador', level: 1,
+  id: 'problemas-ordenador-vocab-tech1', title: 'Problemas con el ordenador', level: 1, theme: 'ciencia',
   text: 'Esta mañana, mi ordenador no enciende y la pantalla se queda negra. Reviso el wifi de casa, pero el problema no es la conexión. Olvido la contraseña de mi correo electrónico y tardo un rato en recuperarla. Instalo una actualización del navegador y, por suerte, todo empieza a funcionar mejor. Antes de seguir, guardo una copia de seguridad de cada archivo importante. Mi hija, mientras tanto, revisa una aplicación nueva de una red social en su móvil.',
   gloss: [
     { es: 'recuperarla', en: 'to recover it' },
@@ -1487,7 +1487,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'videollamada-trabajo-vocab-tech2', title: 'Una reunión virtual de trabajo', level: 1,
+  id: 'videollamada-trabajo-vocab-tech2', title: 'Una reunión virtual de trabajo', level: 1, theme: 'trabajo',
   text: 'Cada semana, tengo una reunión virtual con mi equipo por videollamada. Antes de empezar, reviso mi correo y borro todo el correo basura que recibo. Me preocupa la privacidad de mis datos personales, así que reviso bien cada aplicación nueva. En la reunión, hablamos de un proyecto que usa inteligencia artificial para mejorar el algoritmo de recomendaciones. Al final, todos estamos de acuerdo en que la tecnología nos ayuda mucho, aunque a veces preferimos hablar en persona.',
   gloss: [
     { es: 'borro', en: 'I delete' },
@@ -1504,7 +1504,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'planificacion-financiera-vocab-fin1', title: 'La planificación financiera', level: 1,
+  id: 'planificacion-financiera-vocab-fin1', title: 'La planificación financiera', level: 1, theme: 'economia',
   text: 'Cada mes, pago la hipoteca y el seguro del coche antes que cualquier otro gasto. Reviso mi presupuesto para saber cuánto ahorro me queda después de pagar el alquiler y las facturas. Pienso en abrir una inversión pequeña para el futuro, aunque todavía tengo una deuda del préstamo del coche. También pago un impuesto especial por trabajar de forma independiente. Mi salario cubre todo esto, pero ahorro poco para la jubilación.',
   gloss: [
     { es: 'el gasto', en: 'the expense' },
@@ -1521,7 +1521,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'declaracion-impuestos-vocab-fin2', title: 'La declaración de impuestos', level: 1,
+  id: 'declaracion-impuestos-vocab-fin2', title: 'La declaración de impuestos', level: 1, theme: 'economia',
   text: 'Cada año, en primavera, preparo la declaración del impuesto sobre la renta. Reúno todos mis documentos de salario y gastos del año anterior. El proceso me parece complicado, así que pido ayuda a un gestor. El impuesto sobre la renta depende de cuánto gano durante el año. Cuando termino, siento un gran alivio porque ya no tengo que pensar en ello hasta el año siguiente.',
   gloss: [
     { es: 'la declaración', en: 'the tax return' },
@@ -1538,7 +1538,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'buscando-empleo-vocab-career1', title: 'Buscando un nuevo empleo', level: 1,
+  id: 'buscando-empleo-vocab-career1', title: 'Buscando un nuevo empleo', level: 1, theme: 'trabajo',
   text: 'Después de mi despido, empiezo a buscar un nuevo empleo con calma. Actualizo mi currículum y lo envío a varias empresas de la ciudad. En la entrevista, pregunto por el horario y el sueldo antes de firmar cualquier contrato. Un amigo en el sindicato me avisa de una huelga que puede afectar mi próximo trabajo. Al final, una empresa pequeña me ofrece un ascenso rápido, y decido aceptar sin dudarlo. Mi antiguo cliente favorito incluso me felicita por el cambio.',
   gloss: [
     { es: 'avisa', en: 'warns' },
@@ -1555,7 +1555,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'formacion-profesional-vocab-career2', title: 'La formación profesional', level: 1,
+  id: 'formacion-profesional-vocab-career2', title: 'La formación profesional', level: 1, theme: 'educacion',
   text: 'Después de un período de desempleo, decido invertir en mi formación profesional. Empiezo una especialización en marketing digital mientras busco trabajo. Muchos amigos prefieren el teletrabajo porque permite mejor equilibrio con la jornada laboral. Un amigo emprendedor decide crear su propia startup en vez de buscar empleo tradicional. Solicito una beca para pagar el posgrado, porque la maestría es cara. Al final, encuentro un puesto excelente y compito bien en el mercado laboral gracias a mi nueva formación.',
   gloss: [
     { es: 'el equilibrio', en: 'the balance' },
@@ -1572,7 +1572,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'dia-profesiones-vocab-professions', title: 'Un día en distintas profesiones', level: 1,
+  id: 'dia-profesiones-vocab-professions', title: 'Un día en distintas profesiones', level: 1, theme: 'trabajo',
   text: 'El médico y la médica del centro de salud atienden a muchos pacientes cada día. El profesor y la profesora de mi hijo preparan clases interesantes para los niños. Un abogado ayuda a mi vecino con un problema legal, mientras un ingeniero diseña un puente nuevo en la ciudad. El cocinero del restaurante prepara platos deliciosos, y el camarero los sirve con una sonrisa. Un policía vigila la calle principal, y un estudiante universitario estudia en la biblioteca hasta tarde.',
   gloss: [
     { es: 'atienden', en: 'they see (patients)' },
@@ -1589,7 +1589,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'etapas-pareja-vocab-relationships', title: 'Las etapas de una pareja', level: 1,
+  id: 'etapas-pareja-vocab-relationships', title: 'Las etapas de una pareja', level: 1, theme: 'relaciones',
   text: 'Después de varios años juntos, mi pareja y yo decidimos casarnos, y ahora planeamos la boda. Muchas parejas hoy prefieren una convivencia larga antes del matrimonio oficial. Mi hermana, en cambio, vive un momento difícil: su matrimonio termina en divorcio después de diez años. Otra amiga espera un bebé y disfruta mucho de su embarazo. Sabemos que la crianza de un hijo no es fácil, pero queremos formar una familia pronto.',
   gloss: [
     { es: 'la etapa', en: 'the stage' },
@@ -1606,7 +1606,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'noticias-locales-vocab-society', title: 'Las noticias locales', level: 1,
+  id: 'noticias-locales-vocab-society', title: 'Las noticias locales', level: 1, theme: 'medios',
   text: 'Las noticias de hoy hablan mucho sobre el cambio climático y sus efectos en el medio ambiente. El gobierno local propone una nueva ley contra la contaminación de los ríos. Muchos vecinos apoyan el reciclaje y participan en una manifestación pacífica para pedir más medidas. La política del ayuntamiento también afecta la economía de la ciudad porque decide invertir en energía limpia. La ciudadanía en general apoya estos cambios, aunque algunos piensan que el proceso es demasiado lento.',
   gloss: [
     { es: 'los efectos', en: 'the effects' },
@@ -1623,7 +1623,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'tramites-oficina-vocab-bureaucracy', title: 'Trámites en la oficina', level: 1,
+  id: 'tramites-oficina-vocab-bureaucracy', title: 'Trámites en la oficina', level: 1, theme: 'servicios',
   text: 'Para conseguir el permiso de residencia, primero necesito varios documentos que prueban mi identidad y mi nacionalidad. Odio la burocracia, pero entiendo que cada trámite tiene su motivo. En la oficina, firmo cada documento con mi firma digital para ahorrar tiempo. El funcionario revisa todo con calma antes de aceptar mi solicitud. Al final, después de tanto trámite, consigo el permiso de residencia y respiro tranquilo.',
   gloss: [
     { es: 'prueban', en: 'prove' },
@@ -1640,7 +1640,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'ser-estar-contraste', title: 'Ser y estar: dos maneras de ser', level: 1,
+  id: 'ser-estar-contraste', title: 'Ser y estar: dos maneras de ser', level: 1, theme: 'caracter',
   text: 'Mi amiga Laura es alta, morena y muy inteligente; esas son características que no cambian. Pero hoy Laura está cansada porque trabaja mucho los fines de semana. Ser describe quién es alguien de forma permanente, mientras que estar describe cómo se encuentra en un momento concreto. Por ejemplo, Madrid es la capital de España, pero ahora mismo está lloviendo allí. Otro ejemplo: mi hermano es médico, y también está muy ocupado esta semana en el hospital. Aprender cuándo usar ser y cuándo usar estar es clave para hablar bien español.',
   gloss: [
     { es: 'de forma permanente', en: 'permanently' },
@@ -1657,7 +1657,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'por-para-contraste', title: 'Por y para: dos preposiciones, un dolor de cabeza', level: 2,
+  id: 'por-para-contraste', title: 'Por y para: dos preposiciones, un dolor de cabeza', level: 2, theme: 'educacion',
   text: 'Estudio español para conseguir un mejor trabajo, y también para viajar sin problemas. Uso para cuando hablo de un objetivo o un destino: un tren sale para Madrid a las ocho. En cambio, uso por para hablar de una causa o un intercambio: perdí el autobús por llegar tarde. También digo gracias por tu ayuda, porque agradezco lo que alguien hizo por mí. Caminamos por el parque durante una hora, sin destino fijo. Con práctica, la diferencia entre por y para deja de ser un problema.',
   gloss: [
     { es: 'el objetivo', en: 'the goal' },
@@ -1674,7 +1674,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'preterito-imperfecto-contraste', title: 'Cuando el pasado se encuentra con el pasado', level: 2,
+  id: 'preterito-imperfecto-contraste', title: 'Cuando el pasado se encuentra con el pasado', level: 2, theme: 'identidad',
   text: 'Cuando era niño, vivía en un pueblo pequeño y todos los días caminaba a la escuela. Pero un día, todo cambió: mis padres decidieron mudarse a la ciudad. Antes de esa mudanza, yo jugaba en la calle con mis amigos todas las tardes; ese día, en cambio, hicimos las maletas y nos despedimos de todos. El imperfecto describe cómo era mi vida en general, mientras que el pretérito cuenta el momento exacto en que algo cambió. Todavía recuerdo ese último día en el pueblo con mucha nostalgia.',
   gloss: [
     { es: 'la mudanza', en: 'the move' },
@@ -1708,7 +1708,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'ropa-invierno', title: 'Ropa para el invierno', level: 1,
+  id: 'ropa-invierno', title: 'Ropa para el invierno', level: 1, theme: 'compras',
   text: 'Marta necesita ropa nueva para el invierno. Va a una tienda grande en el centro con su hermana. Primero, busca un abrigo grueso y unos zapatos cómodos. Después, mira unas camisas de muchos colores: azul, verde y negro. El vestido rojo es bonito, pero es un poco caro. Al final, compra el abrigo y los zapatos. Paga con tarjeta y sale muy contenta de la tienda.',
   gloss: [
     { es: 'el abrigo', en: 'the coat' },
@@ -1725,7 +1725,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'dia-medico', title: 'Una visita al médico', level: 1,
+  id: 'dia-medico', title: 'Una visita al médico', level: 1, theme: 'salud',
   text: 'Pablo no se siente bien y decide ir al médico. En la sala de espera, hay muchas personas y Pablo espera media hora. La médica escucha su corazón y pregunta sobre sus síntomas. Pablo tiene un poco de fiebre y le duele la cabeza. La médica dice que necesita descansar y beber mucha agua. También recomienda una medicina para la fiebre. Pablo da las gracias y vuelve a casa a descansar.',
   gloss: [
     { es: 'la sala de espera', en: 'the waiting room' },
@@ -1742,7 +1742,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'oficina-tecnologia', title: 'Un problema con el ordenador', level: 1,
+  id: 'oficina-tecnologia', title: 'Un problema con el ordenador', level: 1, theme: 'ciencia',
   text: 'Ana trabaja en una oficina moderna y usa el ordenador todo el día. Hoy, su ordenador no funciona bien y la pantalla está negra. Ana llama a un compañero que entiende de tecnología. Él mira el ordenador y dice que necesita una actualización. Instala el programa nuevo y todo funciona otra vez. Ana da las gracias y guarda sus archivos importantes. Ahora puede terminar su trabajo sin problemas.',
   gloss: [
     { es: 'la pantalla', en: 'the screen' },
@@ -1759,7 +1759,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'videollamada-abuela', title: 'Una videollamada con la abuela', level: 1,
+  id: 'videollamada-abuela', title: 'Una videollamada con la abuela', level: 1, theme: 'relaciones',
   text: 'Todos los domingos, Elena hace una videollamada con su abuela. Su abuela vive lejos, en otra ciudad, y no puede visitarla mucho. Durante la llamada, hablan de la familia y de la semana. La abuela pregunta por los estudios de Elena y ella responde con detalles. A veces, ven fotos juntas y se ríen mucho. La conexión no es siempre perfecta, pero las dos disfrutan mucho el tiempo juntas. Para Elena, esta hora es muy especial.',
   gloss: [
     { es: 'la videollamada', en: 'the video call' },
@@ -1776,7 +1776,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'mudanza', title: 'La mudanza', level: 2,
+  id: 'mudanza', title: 'La mudanza', level: 2, theme: 'vivienda',
   text: 'El mes pasado, Diego y su pareja alquilaron un piso nuevo cerca del centro. Pagaron un buen precio y firmaron el contrato en una semana. Sus amigos los ayudaron a llevar las cajas y los muebles todo el sábado. Por la tarde, pidieron pizza y bailaron con música toda la noche. Diego estaba muy cansado, pero también estaba feliz porque por fin tenían más espacio. Al final del día, todos brindaron por la nueva casa.',
   gloss: [
     { es: 'alquilaron', en: 'they rented' },
@@ -1793,7 +1793,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'primer-trabajo', title: 'Mi primer trabajo', level: 2,
+  id: 'primer-trabajo', title: 'Mi primer trabajo', level: 2, theme: 'trabajo',
   text: 'Cuando tenía dieciocho años, conseguí mi primer trabajo en un restaurante pequeño. Trabajaba los fines de semana y ganaba poco dinero, pero aprendía mucho. El dueño era muy paciente y me enseñaba todos los días. Al principio, tenía miedo de cometer errores, pero poco a poco gané confianza. Un día, serví una mesa muy grande yo solo y todo salió perfecto. Ese trabajo me enseñó el valor del esfuerzo y todavía recuerdo esa época con cariño.',
   gloss: [
     { es: 'el dueño', en: 'the owner' },
@@ -1810,7 +1810,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'compra-para-regalo', title: 'Un regalo por su cumpleaños', level: 2,
+  id: 'compra-para-regalo', title: 'Un regalo por su cumpleaños', level: 2, theme: 'compras',
   text: 'Fui a la ciudad por la mañana para comprar un regalo para mi mejor amiga. Caminé por muchas tiendas durante dos horas buscando algo perfecto. Al final, compré un libro por su precio y por su tema, porque a ella le encanta la historia. Pagué por el regalo y guardé el recibo con cuidado. Salí de la tienda contenta y caminé para la estación de tren. Para mí, elegir un buen regalo siempre es un placer.',
   gloss: [
     { es: 'el recibo', en: 'the receipt' },
@@ -1827,7 +1827,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'mudanza-futuro', title: 'Planes para mudarnos', level: 3,
+  id: 'mudanza-futuro', title: 'Planes para mudarnos', level: 3, theme: 'vivienda',
   text: 'El año que viene, mi pareja y yo nos mudaremos a otra ciudad por su nuevo trabajo. Ya hemos buscado varios pisos por internet y hemos hablado con una agencia inmobiliaria. Necesitaremos vender algunos muebles porque el piso nuevo será más pequeño. Mis padres nos ayudarán con la mudanza y mis amigos organizarán una despedida antes de irnos. Sé que será un cambio grande, pero también será una aventura nueva. Estoy segura de que nos adaptaremos rápido a la nueva vida.',
   gloss: [
     { es: 'la agencia inmobiliaria', en: 'the real estate agency' },
@@ -1844,7 +1844,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'nueva-dieta', title: 'Un cambio de hábitos', level: 3,
+  id: 'nueva-dieta', title: 'Un cambio de hábitos', level: 3, theme: 'salud',
   text: 'Últimamente, María ha decidido cuidar más su salud. Ya ha empezado a comer mejor y ha dejado el azúcar por completo. A partir de mañana, hará ejercicio tres veces por semana y dormirá ocho horas cada noche. También beberá más agua y menos café. Su médica dice que, si sigue así, se sentirá mucho más fuerte en pocos meses. María está muy motivada porque sabe que estos pequeños cambios traerán grandes resultados.',
   gloss: [
     { es: 'últimamente', en: 'lately' },
@@ -1861,7 +1861,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'ascenso-trabajo', title: 'Un posible ascenso', level: 3,
+  id: 'ascenso-trabajo', title: 'Un posible ascenso', level: 3, theme: 'trabajo',
   text: 'Mi jefa me ha dicho que podría tener un ascenso en los próximos meses. Si tomo el puesto nuevo, tendré más responsabilidad y ganaré un sueldo mejor. También viajaría más por trabajo, algo que me gustaría mucho. Ya he hablado con mi familia y ellos me han apoyado totalmente. Todavía no he decidido nada, pero creo que diré que sí. Sería un paso importante en mi carrera.',
   gloss: [
     { es: 'el ascenso', en: 'the promotion' },
@@ -1878,7 +1878,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'reciclaje-barrio', title: 'Un proyecto de reciclaje', level: 3,
+  id: 'reciclaje-barrio', title: 'Un proyecto de reciclaje', level: 3, theme: 'naturaleza',
   text: 'El próximo mes, los vecinos de mi barrio empezarán un proyecto de reciclaje. Ya hemos hablado con el ayuntamiento y hemos recibido permiso para poner contenedores nuevos. Cada familia reciclará papel, vidrio y plástico por separado. Los niños ayudarán a explicar el proyecto a los vecinos mayores. Creemos que, con nuestro esfuerzo, reduciremos mucho la basura del barrio. Será un cambio pequeño, pero muy importante para el medio ambiente.',
   gloss: [
     { es: 'el ayuntamiento', en: 'city hall' },
@@ -1895,7 +1895,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'boda-preparativos', title: 'Los preparativos de la boda', level: 4,
+  id: 'boda-preparativos', title: 'Los preparativos de la boda', level: 4, theme: 'relaciones',
   text: 'Laura y Carlos se casan el próximo mes y todavía quedan muchas cosas por organizar. Laura espera que su hermana elija un buen vestido para la ceremonia. Carlos insiste en que todos lleguen temprano para las fotos. Los padres de Laura ya habían pagado el salón antes de reservar el catering. Ahora, quieren que el fotógrafo diga la hora exacta. Ojalá que no llueva ese día, porque la fiesta será en el jardín. ¡Que todo salga perfecto!',
   gloss: [
     { es: 'la ceremonia', en: 'the ceremony' },
@@ -1912,7 +1912,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'nuevo-jefe', title: 'El nuevo jefe', level: 4,
+  id: 'nuevo-jefe', title: 'El nuevo jefe', level: 4, theme: 'trabajo',
   text: 'Cuando el nuevo jefe llegó, ya habíamos terminado el proyecto más difícil del año. Aun así, quiere que todos lleguemos antes de las nueve y que enviemos un informe cada viernes. Muchos compañeros temen que el jefe cambie las reglas que ya conocíamos. Yo prefiero esperar antes de opinar; espero que sea justo con todos. Si tuviera una queja, hablaría con él directamente. Por ahora, prefiero que tengamos paciencia y que creamos en el proceso.',
   gloss: [
     { es: 'las reglas', en: 'the rules' },
@@ -1929,7 +1929,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'boda-futuro-perfecto', title: 'Para cuando llegue el verano', level: 5,
+  id: 'boda-futuro-perfecto', title: 'Para cuando llegue el verano', level: 5, theme: 'relaciones',
   text: 'Para cuando llegue el verano, ya habré terminado mis estudios y habré empezado a buscar trabajo. Mis padres esperan que para entonces yo también haya ahorrado algo de dinero. Si hubiera empezado antes, habría encontrado un trabajo mejor, pero no me arrepiento del camino que elegí. Para el próximo año, habremos organizado la boda de mi hermana y yo habré terminado de pagar mi coche. Ojalá que para esa fecha todos hayamos logrado nuestras metas.',
   gloss: [
     { es: 'para entonces', en: 'by then' },
@@ -1946,7 +1946,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'reforma-casa-l5', title: 'Cuando terminen la reforma', level: 5,
+  id: 'reforma-casa-l5', title: 'Cuando terminen la reforma', level: 5, theme: 'vivienda',
   text: 'Cuando los obreros terminen la reforma, mis padres ya habrán vivido seis meses en un piso alquilado. Habrían preferido quedarse en su casa durante las obras, pero era imposible por el ruido. Espero que para entonces hayan elegido bien los muebles nuevos, porque gastaron mucho dinero en el proyecto. Si hubiéramos planeado mejor el presupuesto, no habríamos tenido tantos problemas con los pagos. Aun así, estoy segura de que, cuando todo termine, habrán logrado la casa de sus sueños.',
   gloss: [
     { es: 'los obreros', en: 'the workers' },
@@ -1963,7 +1963,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'carrera-deportiva-l5', title: 'La carrera que casi ganó', level: 5,
+  id: 'carrera-deportiva-l5', title: 'La carrera que casi ganó', level: 5, theme: 'ocio',
   text: 'Cuando sonó el disparo de salida, Marta ya se había preparado durante meses para esa carrera. A mitad de camino, pensó que habría llegado primera si no se hubiera caído cerca del río. Sus entrenadores esperaban que, para el final de la temporada, ella hubiera ganado esa carrera, y casi lo consiguió. Si hubiera descansado un poco menos, probablemente no habría logrado clasificarse. Al terminar, sus amigos le dijeron que siempre habrá otra oportunidad.',
   gloss: [
     { es: 'el disparo de salida', en: 'the starting gun' },
@@ -1980,7 +1980,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'jubilacion-planes-l5', title: 'Cuando llegue la jubilación', level: 5,
+  id: 'jubilacion-planes-l5', title: 'Cuando llegue la jubilación', level: 5, theme: 'trabajo',
   text: 'Cuando mi abuelo deje de trabajar el próximo año, habrá trabajado más de cuarenta años en la misma empresa. Él dice que, si hubiera empezado su propio negocio, quizás habría ganado más dinero, pero también habría tenido mucho más estrés. Sus compañeros esperan que, para su fiesta de despedida, todos hayan preparado algo especial. Mi abuela cree que, para entonces, ya habrán terminado de pagar la casa y podrán viajar juntos por fin. Ojalá que esta nueva etapa les traiga mucha felicidad.',
   gloss: [
     { es: 'la empresa', en: 'the company' },
@@ -1997,7 +1997,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'periodico-digital', title: 'El fin de un periódico centenario', level: 5,
+  id: 'periodico-digital', title: 'El fin de un periódico centenario', level: 5, theme: 'medios',
   text: 'Ayer se anunció que el periódico más antiguo de la ciudad dejará de publicarse en papel a partir de enero. Para entonces, la empresa ya habrá despedido a la mitad de su plantilla. Muchos lectores lamentan la noticia, aunque reconocen que hace años que preferían leer las noticias en el móvil. Los expertos creen que la empresa habría evitado esta crisis con una mejor estrategia digital. Los periodistas más jóvenes esperan que la marca sobreviva solo en internet, aunque dudan que consiga los mismos ingresos que antes. Ojalá que este cambio no signifique el final de un periodismo local de calidad.',
   gloss: [
     { es: 'plantilla', en: 'staff' },
@@ -2013,7 +2013,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'subida-precios', title: 'La subida de precios en el supermercado', level: 5,
+  id: 'subida-precios', title: 'La subida de precios en el supermercado', level: 5, theme: 'economia',
   text: 'Este mes, los precios de los alimentos básicos han subido más que en los últimos diez años. Para finales de año, muchas familias ya habrán reducido su gasto en comida considerablemente. Los economistas dudan que esta subida se deba solo a la guerra en otros países; también influyen los costes de producción y transporte. Algunos creen que una mejor planificación habría evitado parte de esta subida. Las asociaciones de consumidores piden que se controlen los precios de los productos esenciales. Muchos ciudadanos habrían preferido pequeñas subidas graduales en vez de este cambio tan repentino.',
   gloss: [
     { es: 'alimentos', en: 'food' },
@@ -2030,7 +2030,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'maraton-lesion', title: 'El maratón que casi no corrió', level: 5,
+  id: 'maraton-lesion', title: 'El maratón que casi no corrió', level: 5, theme: 'ocio',
   text: 'Dos semanas antes del maratón, Sara se lesionó la rodilla entrenando. Para el día de la carrera, ya habrá pasado un mes desde la lesión, así que los médicos le dijeron que corriera con cuidado. Al principio, Sara dudaba que pudiera terminar los cuarenta y dos kilómetros sin parar. Sus amigos esperan que haya recuperado toda su fuerza para entonces. Los médicos creen que un descanso más largo habría acelerado la recuperación. Aun así, ella está decidida a cruzar la meta, aunque tenga que caminar los últimos kilómetros.',
   gloss: [
     { es: 'lesionó', en: 'injured' },
@@ -2047,7 +2047,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'vuelo-cancelado', title: 'Un vuelo cancelado en el último momento', level: 4,
+  id: 'vuelo-cancelado', title: 'Un vuelo cancelado en el último momento', level: 4, theme: 'viajes',
   text: 'Cuando Elena y su marido llegaron al aeropuerto, ya habían facturado las maletas cuando anunciaron que su vuelo se cancelaba por mal tiempo. La aerolínea les pidió que esperaran en una sala especial mientras buscaban una solución. Elena estaba furiosa porque llevaban meses planeando ese viaje a Portugal. Es normal que la gente se enfade en estas situaciones, dijo el empleado, intentando calmarla. Finalmente, les ofrecieron un vuelo para el día siguiente y una noche gratis en un hotel cercano. Aunque perdieron un día de vacaciones, Elena reconoce que la aerolínea gestionó bien el problema.',
   gloss: [
     { es: 'facturado', en: 'checked in (luggage)' },
@@ -2063,7 +2063,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'amistad-reencuentro', title: 'Una amistad de toda la vida', level: 5,
+  id: 'amistad-reencuentro', title: 'Una amistad de toda la vida', level: 5, theme: 'relaciones',
   text: 'Cuando Rosa y Carmen se reencontraron después de veinte años, ambas habían cambiado mucho. Para entonces, Rosa ya se había casado dos veces y Carmen nunca se había mudado del pueblo donde nacieron. Al principio, dudaban que todavía tuvieran algo en común. Sin embargo, en cuanto empezaron a hablar, se dieron cuenta de que la conexión seguía intacta. Rosa dice que, para el próximo verano, ya habrán organizado un viaje juntas, algo que llevaban años prometiéndose. Espera que esta vez cumplan la promesa de verdad.',
   gloss: [
     { es: 'reencontraron', en: 'met again' },
@@ -2079,7 +2079,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'cambio-caracter', title: 'Un cambio de carácter', level: 4,
+  id: 'cambio-caracter', title: 'Un cambio de carácter', level: 4, theme: 'caracter',
   text: 'Desde que empezó a hacer yoga, mi hermana ha cambiado mucho de carácter. Antes se enfadaba por cualquier cosa, pero ahora es mucho más tranquila. Sus amigos dudaban que un simple cambio de rutina pudiera transformarla tanto. Ella dice que es importante que la gente encuentre algo que le ayude a calmarse. Mis padres esperan que yo también pruebe el yoga algún día, aunque de momento prefiero correr. Antes de este cambio, mi hermana discutía con todos por pequeñeces. Ahora, incluso en situaciones difíciles, mantiene la calma casi siempre.',
   gloss: [
     { es: 'pequeñeces', en: 'trivial things' },
@@ -2094,7 +2094,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'desperdicio-comida', title: 'El desperdicio de comida', level: 5,
+  id: 'desperdicio-comida', title: 'El desperdicio de comida', level: 5, theme: 'alimentacion',
   text: 'Cada año, las familias españolas tiran a la basura miles de toneladas de comida en buen estado. Para finales de este año, varias ciudades ya habrán aprobado leyes que obligan a los supermercados a donar los alimentos que no venden. Muchos expertos dudan que estas leyes solucionen el problema por completo, pero creen que es un buen primer paso. Si las familias planificaran mejor sus compras semanales, se reduciría bastante el desperdicio. Algunas organizaciones piden que se enseñe en las escuelas a aprovechar mejor los alimentos. Ojalá que estas iniciativas hayan cambiado la situación dentro de unos años.',
   gloss: [
     { es: 'toneladas', en: 'tons' },
@@ -2110,7 +2110,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'nuevo-hobby-ceramica', title: 'Un nuevo hobby: la cerámica', level: 4,
+  id: 'nuevo-hobby-ceramica', title: 'Un nuevo hobby: la cerámica', level: 4, theme: 'arte',
   text: 'Hace seis meses, Julia empezó a ir a clases de cerámica los sábados por la mañana. Al principio, sus manos no sabían cómo controlar el barro y todo le salía torcido. La profesora le recomendó que practicara en casa con una pequeña rueda que se compró después. Julia nunca había hecho nada parecido antes, pero ahora dice que es la actividad que más disfruta de toda la semana. Sus amigos esperan que algún día venda sus piezas, aunque ella todavía no se atreve. Es probable que el próximo mes empiece un curso más avanzado para mejorar su técnica.',
   gloss: [
     { es: 'el barro', en: 'clay' },
@@ -2126,7 +2126,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'pedido-perdido', title: 'Un pedido que nunca llegó', level: 4,
+  id: 'pedido-perdido', title: 'Un pedido que nunca llegó', level: 4, theme: 'compras',
   text: 'El mes pasado, Diego compró unos auriculares por internet, pero el paquete nunca llegó a su casa. Cuando escribió a la empresa, le pidieron que esperara dos semanas más antes de reclamar el dinero. Diego estaba furioso porque ya había esperado casi un mes sin ninguna explicación clara. Finalmente, un empleado le confirmó que el paquete se había perdido durante el transporte. Es normal que este tipo de errores ocurra alguna vez, le explicaron, pero Diego seguía muy enfadado. Al final, le devolvieron el dinero y le ofrecieron un descuento para la próxima compra.',
   gloss: [
     { es: 'auriculares', en: 'headphones' },
@@ -2141,7 +2141,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'telescopio-espacial', title: 'El telescopio que cambió la astronomía', level: 5,
+  id: 'telescopio-espacial', title: 'El telescopio que cambió la astronomía', level: 5, theme: 'ciencia',
   text: 'Cuando lanzaron el nuevo telescopio espacial, muchos científicos dudaban que las primeras imágenes fueran tan claras como prometían. Para el final del primer año, el telescopio ya habrá enviado miles de fotografías de galaxias nunca vistas antes. Los astrónomos creen que este descubrimiento habría sido imposible con la tecnología de hace solo diez años. Es fascinante que un instrumento tan pequeño pueda ver tan lejos en el universo. El equipo espera que estas imágenes ayuden a entender mejor cómo se formaron las primeras estrellas. Ojalá que este proyecto haya inspirado a una nueva generación de científicos.',
   gloss: [
     { es: 'lanzaron', en: 'they launched' },
@@ -2157,7 +2157,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'elecciones-renidas', title: 'Las elecciones más reñidas en años', level: 5,
+  id: 'elecciones-renidas', title: 'Las elecciones más reñidas en años', level: 5, theme: 'politica',
   text: 'Las últimas elecciones municipales han sido las más reñidas de los últimos veinte años. Para cuando se cierren todos los colegios electorales, millones de ciudadanos ya habrán votado en todo el país. Los analistas dudan que se sepa el resultado final esa misma noche, debido a lo ajustado de las encuestas. Muchos votantes esperan que el nuevo ayuntamiento resuelva por fin el problema del transporte público. Algunos creen que campañas menos agresivas habrían generado más confianza en la política. Sea cual sea el resultado, está claro que la participación ha aumentado mucho respecto a las elecciones anteriores.',
   gloss: [
     { es: 'reñidas', en: 'closely contested' },
@@ -2173,7 +2173,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'osos-pirineos', title: 'Los osos que vuelven a los Pirineos', level: 5,
+  id: 'osos-pirineos', title: 'Los osos que vuelven a los Pirineos', level: 5, theme: 'naturaleza',
   text: 'Hace treinta años, casi no quedaban osos pardos en los Pirineos, pero la población ha crecido gracias a varios programas de protección. Para el próximo censo, los expertos ya habrán contado más de setenta ejemplares en la zona. Algunos ganaderos temen que los osos ataquen a sus animales, aunque los estudios muestran que estos casos son raros. Los ecologistas esperan que este éxito anime a proteger otras especies en peligro de extinción. Sin estos programas, los osos probablemente habrían desaparecido de la región para siempre. Ahora, ver un oso en libertad ya no es algo tan extraordinario como antes.',
   gloss: [
     { es: 'osos pardos', en: 'brown bears' },
@@ -2189,7 +2189,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'apellido-historia', title: 'Un apellido con historia', level: 5,
+  id: 'apellido-historia', title: 'Un apellido con historia', level: 5, theme: 'identidad',
   text: 'Cuando Sofía empezó a investigar el origen de su apellido, descubrió que su familia había llegado desde Italia hace más de cien años. Para cuando terminó la investigación, ya habrá encontrado documentos de al menos cinco generaciones distintas. Al principio, dudaba que encontrara información tan antigua, pero un archivo local guardaba registros sorprendentes. Sus abuelos nunca le habían contado estos detalles porque, según ellos, no eran importantes. Ahora Sofía siente que entiende mejor quién es y de dónde viene su familia. Espera que sus hijos también quieran conocer esta historia algún día.',
   gloss: [
     { es: 'apellido', en: 'surname' },
@@ -2205,7 +2205,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'cuadro-robado', title: 'El cuadro robado', level: 5,
+  id: 'cuadro-robado', title: 'El cuadro robado', level: 5, theme: 'arte',
   text: 'Hace treinta años, un cuadro famoso desapareció de un museo europeo sin dejar ninguna pista. Para sorpresa de todos, la policía anunció ayer que ya habrá recuperado la obra completa antes del fin de semana. Los investigadores dudaban que el cuadro siguiera en buen estado después de tanto tiempo escondido. Un coleccionista privado lo había comprado sin saber que era robado, según la policía. Los expertos del museo esperan que la restauración no dañe más el cuadro de lo que ya está. Sin este golpe de suerte, la obra probablemente habría permanecido perdida para siempre.',
   gloss: [
     { es: 'pista', en: 'clue, lead' },
@@ -2221,7 +2221,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'banco-cerrado', title: 'El banco que cerró sin avisar', level: 5,
+  id: 'banco-cerrado', title: 'El banco que cerró sin avisar', level: 5, theme: 'servicios',
   text: 'La semana pasada, la única sucursal bancaria del pueblo cerró sus puertas sin ningún aviso previo. Para cuando los vecinos protestaron frente al edificio, el banco ya habrá trasladado todo el personal a la ciudad más cercana. Muchos ancianos del pueblo dudan que puedan hacer sus gestiones fácilmente por internet, ya que casi nadie les enseñó a usarlo. El alcalde pidió que el banco cambiara la decisión, pero de momento no ha recibido respuesta. Es lamentable que las zonas rurales pierdan cada vez más servicios básicos como este. Sin una solución rápida, muchos vecinos habrían tenido que viajar una hora para hacer cualquier trámite.',
   gloss: [
     { es: 'sucursal', en: 'branch (of a bank)' },
@@ -2237,7 +2237,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'debate-electoral', title: 'El debate que nadie vio venir', level: 5,
+  id: 'debate-electoral', title: 'El debate que nadie vio venir', level: 5, theme: 'politica',
   text: 'Durante el debate electoral de anoche, dos candidatos que normalmente evitan discutir se enfrentaron directamente por primera vez. Los espectadores no esperaban que el debate se pusiera tan tenso desde el principio. Para cuando terminó, millones de personas ya habrán visto el debate en directo o en redes sociales. Los analistas dudan que este momento cambie mucho el resultado final de las elecciones. Algunos periodistas creen que un debate más largo habría permitido hablar más de las propuestas. Es evidente que este tipo de enfrentamientos generan mucho más interés que los discursos tradicionales.',
   gloss: [
     { es: 'se enfrentaron', en: 'confronted each other' },
@@ -2253,7 +2253,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'compra-falsa-internet', title: 'Una compra que no era lo que parecía', level: 5,
+  id: 'compra-falsa-internet', title: 'Una compra que no era lo que parecía', level: 5, theme: 'compras',
   text: 'El mes pasado, Iván compró unas zapatillas deportivas muy baratas en una página web desconocida. Cuando llegó el paquete, descubrió que las zapatillas eran falsas y de muy mala calidad. Para cuando intentó reclamar, la página web ya habrá desaparecido de internet sin dejar rastro. Iván dudaba que pudiera recuperar su dinero, pero decidió denunciarlo de todas formas. Los expertos en seguridad recomiendan que la gente compre solo en páginas web conocidas y de confianza. Una tienda oficial le habría costado más, pero le habría ahorrado todos estos problemas.',
   gloss: [
     { es: 'rastro', en: 'trace' },
@@ -2269,7 +2269,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'vacuna-a-tiempo', title: 'La vacuna que llegó a tiempo', level: 5,
+  id: 'vacuna-a-tiempo', title: 'La vacuna que llegó a tiempo', level: 5, theme: 'salud',
   text: 'Cuando empezó la epidemia, los científicos dudaban que pudieran desarrollar una vacuna eficaz en menos de un año. Sin embargo, para sorpresa de todos, los laboratorios ya habrán completado las pruebas necesarias antes de lo esperado. Muchos gobiernos habían invertido grandes cantidades de dinero en la investigación desde el principio. Los expertos creen que sin esa inversión temprana, el proceso habría tardado mucho más tiempo. Ahora esperan que esta experiencia sirva para prepararse mejor ante futuras epidemias. Es admirable que la ciencia haya logrado algo así en tan poco tiempo.',
   gloss: [
     { es: 'epidemia', en: 'epidemic' },
@@ -2285,7 +2285,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'mural-barrio', title: 'Un mural en el barrio', level: 4,
+  id: 'mural-barrio', title: 'Un mural en el barrio', level: 4, theme: 'arte',
   text: 'El ayuntamiento pidió a varios artistas locales que pintaran un mural en la fachada de un edificio abandonado. Antes de este proyecto, esa pared llevaba años cubierta de pintadas sin ningún sentido artístico. Algunos vecinos dudaban que un mural pudiera cambiar realmente el aspecto del barrio. Sin embargo, después de dos semanas de trabajo, el resultado sorprendió a todos por su belleza y color. Es maravilloso que el arte pueda transformar así un espacio olvidado, comentó una vecina emocionada. Ahora el mural se ha convertido en un lugar popular para hacerse fotos.',
   gloss: [
     { es: 'fachada', en: 'facade' },
@@ -2301,7 +2301,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'club-lectura-inesperado', title: 'Un club de lectura inesperado', level: 4,
+  id: 'club-lectura-inesperado', title: 'Un club de lectura inesperado', level: 4, theme: 'ocio',
   text: 'Mi vecino de setenta años, que nunca había leído una novela en su vida, decidió apuntarse a un club de lectura del barrio. Al principio, los demás miembros dudaban que fuera a durar más de una reunión. Antes de este club, mi vecino solo leía el periódico y algún artículo de vez en cuando. Ahora lee un libro entero cada dos semanas y siempre tiene opiniones muy interesantes que compartir. Es bonito que nunca sea demasiado tarde para descubrir una nueva afición, dice siempre con una sonrisa. El grupo espera que él recomiende el próximo libro que van a leer juntos.',
   gloss: [
     { es: 'apuntarse', en: 'to sign up' },
@@ -2317,7 +2317,7 @@ window.PASSAGES = [
 },
 
 {
-  id: 'dos-carreras', title: 'Estudiar dos carreras a la vez', level: 5,
+  id: 'dos-carreras', title: 'Estudiar dos carreras a la vez', level: 5, theme: 'educacion',
   text: 'Cuando Rubén decidió estudiar Medicina y Filosofía al mismo tiempo, muchos amigos dudaban que pudiera con las dos carreras juntas. Para cuando termine ambas, ya habrá pasado casi ocho años estudiando sin apenas descanso. Sus padres nunca habían visto a nadie combinar dos carreras tan diferentes entre sí. Los profesores de filosofía dudan que muchos estudiantes de ciencias aprecien realmente su asignatura. Rubén cree que ambas carreras tienen más relación de la que la gente imagina al principio. Sin su enorme disciplina, probablemente habría abandonado una de las dos hace tiempo.',
   gloss: [
     { es: 'apenas', en: 'hardly, barely' },
