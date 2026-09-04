@@ -3163,5 +3163,422 @@ window.PASSAGES = [
     { type: 'translate', line: 'Los gobiernos que financian el proyecto esperan que, para cuando concluya la misión, se hayan tomado decisiones más informadas sobre el cambio climático.', model: 'The governments funding the project hope that, by the time the mission concludes, more informed decisions will have been made about climate change.' }
   ]
 }
+,
+{
+  id: 'dolor-muela-a2', title: 'Un dolor de muela', level: 2, theme: 'cuerpo',
+  text: 'Anoche me dolía mucho una muela y no pude dormir bien. Por la mañana llamé al dentista y, por suerte, tenía una hora libre a las diez. Cuando llegué, el dentista miró mi boca con cuidado y dijo que tenía una caries pequeña. Me puso una inyección para no sentir dolor y arregló la muela en veinte minutos. Después, me explicó que debía cepillarme los dientes tres veces al día. Salí de la consulta sin dolor y muy contenta.',
+  gloss: [
+    { es: 'la muela', en: 'the molar' },
+    { es: 'una caries', en: 'a cavity' },
+    { es: 'la inyección', en: 'the injection' },
+    { es: 'cepillarme', en: 'to brush (my teeth)' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué no pudo dormir bien?', options: ['Le dolía una muela', 'Tenía fiebre', 'Hacía mucho calor'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le puso el dentista antes de arreglar la muela?', options: ['Una inyección', 'Una venda', 'Nada'], answer: 0 },
+    { type: 'short', q: '¿Cuántas veces al día debe cepillarse los dientes? (una palabra)', accept: ['tres'] },
+    { type: 'translate', line: 'Salí de la consulta sin dolor y muy contenta.', model: 'I left the appointment without pain and very happy.' }
+  ]
+},
+
+{
+  id: 'espalda-cansada-a2', title: 'La espalda cansada', level: 2, theme: 'cuerpo',
+  text: 'Después de mudarnos, me dolía mucho la espalda porque cargué muchas cajas pesadas. Mi pareja me recomendó descansar y no levantar nada más ese día. Por la tarde, me puse hielo en la espalda durante quince minutos y me sentí un poco mejor. Al día siguiente, fui a una clase de estiramientos que organiza el gimnasio del barrio. La profesora nos enseñó a mover el cuerpo despacio y a respirar bien. Ahora hago esos ejercicios cada mañana antes de trabajar.',
+  gloss: [
+    { es: 'cargué', en: 'I carried' },
+    { es: 'el hielo', en: 'ice' },
+    { es: 'los estiramientos', en: 'stretches' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué le dolía la espalda?', options: ['Cargó muchas cajas pesadas', 'Durmió mal', 'Hizo mucho deporte'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hizo por la tarde para sentirse mejor?', options: ['Se puso hielo en la espalda', 'Tomó una pastilla', 'Se acostó todo el día'], answer: 0 },
+    { type: 'short', q: '¿Dónde es la clase de estiramientos? (dos palabras)', accept: ['el gimnasio', 'gimnasio del barrio'] },
+    { type: 'translate', line: 'Ahora hago esos ejercicios cada mañana antes de trabajar.', model: 'Now I do those exercises every morning before working.' }
+  ]
+},
+
+{
+  id: 'timido-fiesta-a2', title: 'El chico tímido de la fiesta', level: 2, theme: 'caracter',
+  text: 'En la fiesta de cumpleaños de Marta, un chico nuevo se quedó solo en una esquina. Era muy tímido y no hablaba con nadie, aunque parecía simpático. Marta se acercó y le preguntó cómo se llamaba y de dónde era. Poco a poco, el chico empezó a hablar más y contó historias muy divertidas sobre su ciudad. Al final de la noche, ya se reía con todos los invitados. Marta pensó que a veces solo hace falta un poco de paciencia para conocer a alguien.',
+  gloss: [
+    { es: 'la esquina', en: 'the corner' },
+    { es: 'tímido', en: 'shy' },
+    { es: 'hace falta', en: 'it takes' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo era el chico nuevo?', options: ['Muy tímido', 'Muy hablador', 'Muy antipático'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le preguntó Marta?', options: ['Cómo se llamaba y de dónde era', 'Si quería bailar', 'Su número de teléfono'], answer: 0 },
+    { type: 'short', q: '¿Cómo estaba el chico al final de la noche? (una palabra)', accept: ['contento', 'se reía'] },
+    { type: 'translate', line: 'Marta pensó que a veces solo hace falta un poco de paciencia para conocer a alguien.', model: 'Marta thought that sometimes it just takes a little patience to get to know someone.' }
+  ]
+},
+
+{
+  id: 'jefa-exigente-a2', title: 'Una jefa muy exigente', level: 2, theme: 'caracter',
+  text: 'Mi nueva jefa es muy exigente, pero también es justa con todo el equipo. El primer día, revisó mi trabajo con mucho detalle y me hizo varias preguntas difíciles. Al principio pensé que era demasiado estricta, pero después entendí que solo quería enseñarnos bien. Cuando cometo un error, me lo explica con paciencia en vez de enfadarse. Mis compañeros dicen que, gracias a ella, todos trabajan mejor ahora. Con el tiempo, empecé a admirar su forma de dirigir el equipo.',
+  gloss: [
+    { es: 'exigente', en: 'demanding' },
+    { es: 'estricta', en: 'strict' },
+    { es: 'dirigir', en: 'to lead, to manage' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es la nueva jefa?', options: ['Exigente pero justa', 'Muy antipática', 'Poco organizada'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hace la jefa cuando alguien comete un error?', options: ['Lo explica con paciencia', 'Se enfada mucho', 'No dice nada'], answer: 0 },
+    { type: 'short', q: '¿Qué piensan los compañeros del equipo ahora? (tres palabras)', accept: ['trabajan mejor ahora', 'todos trabajan mejor'] },
+    { type: 'translate', line: 'Con el tiempo, empecé a admirar su forma de dirigir el equipo.', model: 'Over time, I started to admire her way of leading the team.' }
+  ]
+},
+
+{
+  id: 'noticia-television-a2', title: 'Una noticia en la televisión', level: 3, theme: 'medios',
+  text: 'Anoche vi una noticia interesante en la televisión sobre un nuevo parque en el centro de la ciudad. El periodista explicó que el ayuntamiento va a construir un parque grande con árboles y una zona de juegos para niños. También mostró imágenes de cómo será el parque terminado. Mis vecinos y yo estamos muy contentos porque ahora no hay ningún parque cerca de nuestras casas. La noticia dijo que las obras empezarán el mes que viene. Espero poder llevar a mis hijos allí pronto.',
+  gloss: [
+    { es: 'el periodista', en: 'the journalist' },
+    { es: 'la zona de juegos', en: 'the play area' },
+    { es: 'las obras', en: 'the construction works' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Sobre qué fue la noticia?', options: ['Un nuevo parque en el centro', 'Un accidente de tráfico', 'El tiempo de mañana'], answer: 0 },
+    { type: 'mcq', q: '¿Qué mostró el periodista?', options: ['Imágenes de cómo será el parque', 'Fotos antiguas de la ciudad', 'Un mapa del metro'], answer: 0 },
+    { type: 'short', q: '¿Cuándo empezarán las obras? (tres palabras)', accept: ['el mes que viene', 'mes que viene'] },
+    { type: 'translate', line: 'La noticia dijo que las obras empezarán el mes que viene.', model: 'The news said the construction works will start next month.' }
+  ]
+},
+
+{
+  id: 'periodico-local-a2', title: 'El periódico del barrio', level: 3, theme: 'medios',
+  text: 'Cada domingo compro el periódico local en el quiosco de la esquina. Me gusta leer las noticias del barrio porque hablan de asuntos que conozco bien. La semana pasada, el periódico publicó un artículo sobre una tienda que va a cerrar después de cuarenta años abierta. Los vecinos han escrito muchas cartas al periódico para expresar su tristeza. El director del periódico dijo que publicará más artículos sobre el tema en las próximas semanas. Creo que es importante apoyar a los periódicos pequeños del barrio.',
+  gloss: [
+    { es: 'el quiosco', en: 'the newsstand' },
+    { es: 'las cartas', en: 'the letters' },
+    { es: 'apoyar', en: 'to support' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde compra el periódico la narradora?', options: ['En el quiosco de la esquina', 'En el supermercado', 'Por internet'], answer: 0 },
+    { type: 'mcq', q: '¿Sobre qué fue el artículo de la semana pasada?', options: ['Una tienda que va a cerrar', 'Un nuevo restaurante', 'Las elecciones locales'], answer: 0 },
+    { type: 'short', q: '¿Cuántos años lleva abierta la tienda? (dos palabras)', accept: ['cuarenta años'] },
+    { type: 'translate', line: 'Los vecinos han escrito muchas cartas al periódico para expresar su tristeza.', model: 'The neighbors have written many letters to the newspaper to express their sadness.' }
+  ]
+},
+
+{
+  id: 'cita-banco-a2', title: 'Una cita en el banco', level: 2, theme: 'servicios',
+  text: 'Ayer tuve que ir al banco para abrir una cuenta nueva. Pedí cita por internet y me atendieron a la hora exacta, sin esperar mucho. El empleado me explicó todas las opciones y me ayudó a rellenar los papeles necesarios. Le pregunté sobre las comisiones y él respondió con mucha claridad. Al final, salí del banco con mi tarjeta nueva y un folleto con toda la información. Todo el proceso duró menos de media hora.',
+  gloss: [
+    { es: 'la cuenta', en: 'the (bank) account' },
+    { es: 'las comisiones', en: 'the fees' },
+    { es: 'el folleto', en: 'the brochure' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Para qué fue al banco?', options: ['Para abrir una cuenta nueva', 'Para pedir un préstamo', 'Para cambiar dinero'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo pidió la cita?', options: ['Por internet', 'Por teléfono', 'En persona'], answer: 0 },
+    { type: 'short', q: '¿Cuánto duró todo el proceso? (tres palabras)', accept: ['menos de media hora', 'media hora'] },
+    { type: 'translate', line: 'Le pregunté sobre las comisiones y él respondió con mucha claridad.', model: 'I asked him about the fees and he answered very clearly.' }
+  ]
+},
+
+{
+  id: 'correos-paquete-a2', title: 'Un paquete perdido', level: 3, theme: 'servicios',
+  text: 'La semana pasada envié un paquete importante desde la oficina de correos. Pagué un poco más para que llegara rápido, pero después de cinco días todavía no había llegado. Llamé a la oficina y me dijeron que revisarían el problema. Al día siguiente, me informaron que el paquete se había quedado en otra ciudad por error. Por suerte, lo enviaron de nuevo y llegó dos días después sin ningún daño. La empleada me pidió disculpas y me devolvió parte del dinero que pagué.',
+  gloss: [
+    { es: 'la oficina de correos', en: 'the post office' },
+    { es: 'el daño', en: 'the damage' },
+    { es: 'pedir disculpas', en: 'to apologize' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pasó con el paquete?', options: ['Se quedó en otra ciudad por error', 'Se rompió', 'Nunca lo enviaron'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le devolvió la empleada?', options: ['Parte del dinero', 'El paquete completo', 'Un regalo'], answer: 0 },
+    { type: 'short', q: '¿Cuántos días tardó en llegar el paquete al final? (tres palabras)', accept: ['siete días', 'cinco más dos'] },
+    { type: 'translate', line: 'Por suerte, lo enviaron de nuevo y llegó dos días después sin ningún daño.', model: 'Luckily, they sent it again and it arrived two days later with no damage.' }
+  ]
+},
+
+{
+  id: 'robot-limpieza-a2', title: 'El robot que limpia solo', level: 2, theme: 'ciencia',
+  text: 'Mi hermano compró un pequeño robot que limpia el suelo de la casa. Al principio, no confiaba mucho en la máquina porque parecía muy simple. El robot conoce toda la casa gracias a un mapa que hace la primera vez que funciona. Cada mañana, empieza a limpiar solo mientras mi hermano está en el trabajo. Cuando la batería está baja, vuelve solo a su base para cargarse. Ahora mi hermano dice que no puede vivir sin él.',
+  gloss: [
+    { es: 'confiaba', en: 'he trusted' },
+    { es: 'el mapa', en: 'the map' },
+    { es: 'la base', en: 'the (charging) base' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué compró el hermano?', options: ['Un robot que limpia el suelo', 'Un televisor nuevo', 'Un coche eléctrico'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hace el robot cuando la batería está baja?', options: ['Vuelve solo a su base', 'Se apaga sin más', 'Pide ayuda'], answer: 0 },
+    { type: 'short', q: '¿Cuándo limpia el robot? (tres palabras)', accept: ['cada mañana', 'mientras está trabajo'] },
+    { type: 'translate', line: 'Ahora mi hermano dice que no puede vivir sin él.', model: "Now my brother says he can't live without it." }
+  ]
+},
+
+{
+  id: 'app-idiomas-a2', title: 'Una aplicación para aprender idiomas', level: 3, theme: 'ciencia',
+  text: 'Hace tres meses empecé a usar una aplicación para aprender francés en mi teléfono. Cada día practico durante quince minutos antes de desayunar. La aplicación corrige mis errores al momento y me muestra qué palabras debo repasar. Al principio me costaba entender la pronunciación, pero ahora reconozco muchas palabras al escucharlas. Mis amigos dicen que he mejorado mucho desde que empecé. La próxima semana viajaré a París y quiero practicar todo lo que he aprendido.',
+  gloss: [
+    { es: 'repasar', en: 'to review' },
+    { es: 'la pronunciación', en: 'the pronunciation' },
+    { es: 'reconozco', en: 'I recognize' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué idioma aprende con la aplicación?', options: ['Francés', 'Alemán', 'Italiano'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le costaba al principio?', options: ['Entender la pronunciación', 'Escribir las palabras', 'Encontrar tiempo'], answer: 0 },
+    { type: 'short', q: '¿Adónde viajará la próxima semana? (una palabra)', accept: ['parís', 'a parís'] },
+    { type: 'translate', line: 'La aplicación corrige mis errores al momento y me muestra qué palabras debo repasar.', model: 'The app corrects my mistakes right away and shows me which words I should review.' }
+  ]
+},
+
+{
+  id: 'precio-verduras-a2', title: 'El precio de las verduras', level: 2, theme: 'economia',
+  text: 'Esta semana, las verduras del mercado cuestan más que el mes pasado. El vendedor me explicó que la sequía afectó a muchas granjas de la región. Compré menos tomates de lo normal porque quería ahorrar un poco de dinero. Mi vecina me dijo que ella ahora compra verduras congeladas porque son más baratas. Creo que los precios van a bajar pronto, porque a todos nos afecta esta subida. De momento, intento cocinar con lo que tengo en casa.',
+  gloss: [
+    { es: 'la sequía', en: 'the drought' },
+    { es: 'la granja', en: 'the farm' },
+    { es: 'congeladas', en: 'frozen' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué subieron los precios de las verduras?', options: ['La sequía afectó a las granjas', 'Hubo una huelga', 'Cerraron el mercado'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hace ahora la vecina?', options: ['Compra verduras congeladas', 'No compra verduras', 'Cultiva su propia comida'], answer: 0 },
+    { type: 'short', q: '¿Qué compró de menos la narradora? (una palabra)', accept: ['tomates'] },
+    { type: 'translate', line: 'Creo que los precios van a bajar pronto, porque a todos nos afecta esta subida.', model: 'I think prices are going to go down soon, because this increase affects all of us.' }
+  ]
+},
+
+{
+  id: 'sueldo-nuevo-a2', title: 'Un aumento de sueldo', level: 3, theme: 'economia',
+  text: 'Después de dos años en la empresa, mi jefe me ofreció un aumento de sueldo. Al principio no podía creerlo porque no lo esperaba tan pronto. El aumento no es muy grande, pero significará mucho para mi familia. Con ese dinero extra, podré ahorrar un poco cada mes para las vacaciones de verano. También quiero guardar algo para una emergencia, como me recomendó mi padre. Mi jefe dijo que el aumento empezará a partir del próximo mes.',
+  gloss: [
+    { es: 'el aumento', en: 'the raise' },
+    { es: 'guardar', en: 'to save, to put aside' },
+    { es: 'la emergencia', en: 'the emergency' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le ofreció el jefe?', options: ['Un aumento de sueldo', 'Más vacaciones', 'Un ascenso'], answer: 0 },
+    { type: 'mcq', q: '¿Para qué quiere ahorrar dinero?', options: ['Para las vacaciones de verano', 'Para comprar un coche', 'Para un viaje de trabajo'], answer: 0 },
+    { type: 'short', q: '¿Cuándo empezará el aumento? (tres palabras)', accept: ['el próximo mes', 'próximo mes'] },
+    { type: 'translate', line: 'Al principio no podía creerlo porque no lo esperaba tan pronto.', model: "At first I couldn't believe it because I wasn't expecting it so soon." }
+  ]
+},
+
+{
+  id: 'alcalde-nuevo-a2', title: 'El nuevo alcalde', level: 2, theme: 'politica',
+  text: 'El mes pasado, el pueblo eligió a un alcalde nuevo después de muchos años con el mismo. Mucha gente votó porque quería cambios en el transporte público. El nuevo alcalde prometió construir más autobuses y mejorar las calles del centro. Algunos vecinos están contentos con la promesa, pero otros creen que no se va a cumplir tan rápido. La semana pasada, el alcalde organizó una reunión para escuchar las opiniones de todos. Ahora esperamos ver si los cambios llegan pronto.',
+  gloss: [
+    { es: 'el alcalde', en: 'the mayor' },
+    { es: 'votó', en: 'voted' },
+    { es: 'se cumpla', en: '(that it) will be fulfilled' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué votó mucha gente?', options: ['Quería cambios en el transporte público', 'Quería más impuestos', 'Quería un parque nuevo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué organizó el alcalde la semana pasada?', options: ['Una reunión para escuchar opiniones', 'Una fiesta', 'Un partido de fútbol'], answer: 0 },
+    { type: 'short', q: '¿Qué prometió mejorar el alcalde? (dos palabras)', accept: ['las calles', 'los autobuses'] },
+    { type: 'translate', line: 'Algunos vecinos están contentos con la promesa, pero otros creen que no se va a cumplir tan rápido.', model: 'Some neighbors are happy with the promise, but others think it will not be kept so quickly.' }
+  ]
+}
+,
+{
+  id: 'museo-arte-a2', title: 'Una visita al museo', level: 2, theme: 'arte',
+  text: 'El sábado pasado fui al museo de arte con mi hermana. Vimos varios cuadros de pintores españoles y también una sala nueva de fotografía. A mi hermana le gustó mucho un cuadro grande de un paisaje con montañas y un río. Yo preferí las fotografías en blanco y negro de la ciudad antigua. Compramos dos postales en la tienda del museo antes de salir. Al final del día, decidimos volver otra vez el próximo mes.',
+  gloss: [
+    { es: 'los pintores', en: 'the painters' },
+    { es: 'el paisaje', en: 'the landscape' },
+    { es: 'las postales', en: 'the postcards' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le gustó a la hermana?', options: ['Un cuadro de un paisaje', 'Una escultura', 'Un cuadro de animales'], answer: 0 },
+    { type: 'mcq', q: '¿Qué prefirió la narradora?', options: ['Las fotografías en blanco y negro', 'Los cuadros modernos', 'Las esculturas'], answer: 0 },
+    { type: 'short', q: '¿Qué compraron en la tienda del museo? (una palabra)', accept: ['postales'] },
+    { type: 'translate', line: 'Al final del día, decidimos volver otra vez el próximo mes.', model: 'At the end of the day, we decided to come back again next month.' }
+  ]
+},
+
+{
+  id: 'clase-guitarra-a2', title: 'Mi primera clase de guitarra', level: 2, theme: 'arte',
+  text: 'Ayer tuve mi primera clase de guitarra en una academia de música cerca de casa. El profesor me enseñó a sujetar el instrumento y a tocar tres acordes básicos. Al principio, mis dedos me dolían un poco porque no estaba acostumbrada a las cuerdas. Practiqué durante media hora antes de cenar y ya podía tocar una canción sencilla. Mi familia me escuchó y todos aplaudieron al final. Espero seguir aprendiendo más canciones cada semana.',
+  gloss: [
+    { es: 'sujetar', en: 'to hold' },
+    { es: 'los acordes', en: 'the chords' },
+    { es: 'las cuerdas', en: 'the strings' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le enseñó el profesor?', options: ['A sujetar el instrumento y tocar acordes', 'A leer música', 'A cantar'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué le dolían los dedos?', options: ['No estaba acostumbrada a las cuerdas', 'Tocó demasiado fuerte', 'Se hizo daño antes'], answer: 0 },
+    { type: 'short', q: '¿Cuánto tiempo practicó? (dos palabras)', accept: ['media hora'] },
+    { type: 'translate', line: 'Mi familia me escuchó y todos aplaudieron al final.', model: 'My family listened to me and everyone applauded at the end.' }
+  ]
+},
+
+{
+  id: 'boda-religiosa-a2', title: 'Una boda en la iglesia', level: 2, theme: 'religion',
+  text: 'El sábado pasado fui a la boda de mi primo en una iglesia muy antigua. La ceremonia duró casi una hora y el cura habló sobre el amor y la paciencia. Muchos invitados lloraron cuando los novios dijeron sus votos delante de todos. Después de la ceremonia, salimos a la plaza y tiramos arroz a la pareja. Por la noche, celebramos con una gran cena y bailamos hasta muy tarde. Fue una boda muy bonita y emocionante.',
+  gloss: [
+    { es: 'el cura', en: 'the priest' },
+    { es: 'los votos', en: 'the vows' },
+    { es: 'tiramos arroz', en: 'we threw rice' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde fue la boda?', options: ['En una iglesia antigua', 'En un jardín', 'En un restaurante'], answer: 0 },
+    { type: 'mcq', q: '¿Sobre qué habló el cura?', options: ['El amor y la paciencia', 'La familia', 'El trabajo'], answer: 0 },
+    { type: 'short', q: '¿Qué tiraron a la pareja? (una palabra)', accept: ['arroz'] },
+    { type: 'translate', line: 'Muchos invitados lloraron cuando los novios dijeron sus votos delante de todos.', model: 'Many guests cried when the newlyweds said their vows in front of everyone.' }
+  ]
+},
+
+{
+  id: 'templo-viaje-a2', title: 'Un templo antiguo', level: 3, theme: 'religion',
+  text: 'Durante mi viaje a Asia, visité un templo muy antiguo en la montaña. Un monje nos explicó la historia del lugar y las tradiciones de la comunidad. Antes de entrar, tuvimos que quitarnos los zapatos y hablar en voz baja. El silencio del templo me pareció muy especial después de tanto ruido en la ciudad. Compré un pequeño recuerdo para mi abuela, que siempre habla de religión y filosofía. Fue una de las experiencias más tranquilas de todo el viaje.',
+  gloss: [
+    { es: 'el monje', en: 'the monk' },
+    { es: 'en voz baja', en: 'quietly, in a low voice' },
+    { es: 'el recuerdo', en: 'the souvenir' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tuvieron que hacer antes de entrar?', options: ['Quitarse los zapatos', 'Pagar una entrada', 'Esperar una hora'], answer: 0 },
+    { type: 'mcq', q: '¿Qué compró para su abuela?', options: ['Un pequeño recuerdo', 'Un libro', 'Ropa tradicional'], answer: 0 },
+    { type: 'short', q: '¿Quién les explicó la historia del templo? (una palabra)', accept: ['un monje', 'monje'] },
+    { type: 'translate', line: 'El silencio del templo me pareció muy especial después de tanto ruido en la ciudad.', model: 'The silence of the temple seemed very special to me after so much noise in the city.' }
+  ]
+},
+
+{
+  id: 'perro-perdido-a2', title: 'El perro perdido', level: 2, theme: 'naturaleza',
+  text: 'Ayer por la tarde, un perro pequeño apareció en nuestro jardín sin dueño. Le dimos agua y un poco de comida mientras pensábamos qué hacer. Mi hijo hizo carteles con una foto del perro y los puso por todo el barrio. Dos días después, una vecina llamó porque reconoció al perro en uno de los carteles. La familia del perro vino a buscarlo y nos dieron las gracias muchas veces. Mi hijo estaba un poco triste, pero contento de haber ayudado.',
+  gloss: [
+    { es: 'sin dueño', en: 'without an owner' },
+    { es: 'los carteles', en: 'the posters' },
+    { es: 'reconoció', en: 'recognized' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde apareció el perro?', options: ['En el jardín', 'En la calle', 'En el parque'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hizo el hijo?', options: ['Hizo carteles con una foto', 'Llamó a la policía', 'Se quedó con el perro'], answer: 0 },
+    { type: 'short', q: '¿Cuándo llamó la vecina? (tres palabras)', accept: ['dos días después'] },
+    { type: 'translate', line: 'La familia del perro vino a buscarlo y nos dieron las gracias muchas veces.', model: "The dog's family came to get him and thanked us many times." }
+  ]
+},
+
+{
+  id: 'tormenta-noche-a2', title: 'Una tormenta por la noche', level: 2, theme: 'naturaleza',
+  text: 'Anoche hubo una tormenta muy fuerte con mucho viento y lluvia. Los truenos eran tan fuertes que mi hija pequeña se despertó asustada. La abracé y le expliqué que las tormentas no duran mucho tiempo. Nos sentamos juntas cerca de la ventana y contamos los segundos entre el rayo y el trueno. Poco a poco, la tormenta se alejó y mi hija se durmió otra vez. Por la mañana, el cielo estaba limpio y el jardín olía a lluvia.',
+  gloss: [
+    { es: 'los truenos', en: 'the thunder' },
+    { es: 'asustada', en: 'scared' },
+    { es: 'el rayo', en: 'the lightning' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué se despertó la hija?', options: ['Los truenos eran muy fuertes', 'Tenía una pesadilla', 'Hacía mucho calor'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hicieron juntas cerca de la ventana?', options: ['Contaron los segundos entre el rayo y el trueno', 'Leyeron un cuento', 'Cantaron canciones'], answer: 0 },
+    { type: 'short', q: '¿Cómo estaba el cielo por la mañana? (una palabra)', accept: ['limpio'] },
+    { type: 'translate', line: 'Poco a poco, la tormenta se alejó y mi hija se durmió otra vez.', model: 'Little by little, the storm moved away and my daughter fell asleep again.' }
+  ]
+},
+
+{
+  id: 'primera-cita-a2', title: 'Nuestra primera cita', level: 2, theme: 'relaciones',
+  text: 'Hace dos años, conocí a mi pareja en la boda de un amigo común. Hablamos toda la noche y, al final, me pidió mi número de teléfono. Una semana después, quedamos para tomar un café en el centro de la ciudad. Estaba muy nerviosa, pero la conversación fue fácil desde el primer minuto. Después del café, caminamos por el parque durante casi dos horas. Aquella tarde supe que quería seguir conociendo a esa persona.',
+  gloss: [
+    { es: 'un amigo común', en: 'a mutual friend' },
+    { es: 'quedamos', en: 'we arranged to meet' },
+    { es: 'aquella tarde', en: 'that afternoon' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde se conocieron?', options: ['En la boda de un amigo común', 'En el trabajo', 'En la universidad'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hicieron después del café?', options: ['Caminaron por el parque', 'Fueron al cine', 'Cenaron juntos'], answer: 0 },
+    { type: 'short', q: '¿Cuánto tiempo caminaron por el parque? (tres palabras)', accept: ['casi dos horas'] },
+    { type: 'translate', line: 'Aquella tarde supe que quería seguir conociendo a esa persona.', model: 'That afternoon I knew I wanted to keep getting to know that person.' }
+  ]
+},
+
+{
+  id: 'abuela-recetas-a2', title: 'Las recetas de mi abuela', level: 3, theme: 'identidad',
+  text: 'Cuando era pequeña, pasaba muchas tardes en la cocina con mi abuela. Ella me enseñaba a preparar platos que había aprendido de su propia madre. Nunca escribía las cantidades exactas porque decía que la cocina se aprende con las manos. El año pasado decidí escribir sus recetas en un cuaderno antes de que se olvidaran. Ahora cocino esos platos para mi propia familia y siento que ella sigue presente. Creo que la comida guarda una parte importante de quiénes somos.',
+  gloss: [
+    { es: 'las cantidades', en: 'the quantities' },
+    { es: 'el cuaderno', en: 'the notebook' },
+    { es: 'presente', en: 'present' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué decidió hacer el año pasado?', options: ['Escribir las recetas en un cuaderno', 'Abrir un restaurante', 'Viajar con su abuela'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué no escribía la abuela las cantidades?', options: ['Decía que se aprende con las manos', 'No sabía escribir', 'No le gustaba compartir recetas'], answer: 0 },
+    { type: 'short', q: '¿De quién aprendió la abuela sus recetas? (dos palabras)', accept: ['su madre', 'de su madre'] },
+    { type: 'translate', line: 'Creo que la comida guarda una parte importante de quiénes somos.', model: 'I think food holds an important part of who we are.' }
+  ]
+},
+
+{
+  id: 'primer-piso-solo-a2', title: 'Mi primer piso solo', level: 2, theme: 'vivienda',
+  text: 'El mes pasado me mudé a mi primer piso completamente solo. Al principio, la casa vacía me pareció un poco extraña sin ruido de nadie más. Compré muebles poco a poco porque no quería gastar todo el dinero de golpe. Mis padres me regalaron una mesa vieja que tenían guardada en su casa. Cada fin de semana, invito a mis amigos a cenar para tener más ambiente en casa. Ahora ya me siento como en casa de verdad.',
+  gloss: [
+    { es: 'vacía', en: 'empty' },
+    { es: 'de golpe', en: 'all at once' },
+    { es: 'guardada', en: 'stored, kept' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué compró muebles poco a poco?', options: ['No quería gastar todo el dinero de golpe', 'No tenía tiempo', 'No le gustaban los muebles nuevos'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le regalaron sus padres?', options: ['Una mesa vieja', 'Un sofá', 'Una televisión'], answer: 0 },
+    { type: 'short', q: '¿Qué hace cada fin de semana? (tres palabras)', accept: ['invita a amigos', 'invita amigos cenar'] },
+    { type: 'translate', line: 'Ahora ya me siento como en casa de verdad.', model: 'Now I already feel truly at home.' }
+  ]
+},
+
+{
+  id: 'examen-conducir-a2', title: 'El examen de conducir', level: 3, theme: 'educacion',
+  text: 'La semana pasada hice mi examen de conducir por segunda vez. La primera vez, me puse muy nerviosa y cometí varios errores pequeños. Esta vez, practiqué mucho más con mi padre los fines de semana. El examinador me pidió aparcar el coche entre dos líneas, algo que siempre me costaba. Por suerte, esta vez lo hice bien y aprobé el examen sin problemas. Ahora podré conducir sola y ya no dependeré tanto de mis padres.',
+  gloss: [
+    { es: 'el examinador', en: 'the examiner' },
+    { es: 'aparcar', en: 'to park' },
+    { es: 'dependeré', en: 'I will depend' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pasó la primera vez que hizo el examen?', options: ['Cometió varios errores pequeños', 'No se presentó', 'Aprobó fácilmente'], answer: 0 },
+    { type: 'mcq', q: '¿Con quién practicó los fines de semana?', options: ['Con su padre', 'Con una amiga', 'Con un profesor privado'], answer: 0 },
+    { type: 'short', q: '¿Qué le costaba siempre? (una palabra)', accept: ['aparcar'] },
+    { type: 'translate', line: 'Ahora podré conducir sola y ya no dependeré tanto de mis padres.', model: 'Now I will be able to drive alone and I will no longer depend so much on my parents.' }
+  ]
+},
+
+{
+  id: 'compra-online-a2', title: 'Una compra por internet', level: 2, theme: 'compras',
+  text: 'La semana pasada compré unos zapatos nuevos por internet. Elegí mi talla habitual, pero cuando llegó el paquete, los zapatos me quedaban pequeños. Escribí a la tienda para pedir un cambio de talla y me respondieron el mismo día. Me explicaron que podía devolver los zapatos gratis en cualquier oficina de correos. Envié el paquete de vuelta y, cinco días después, recibí el par correcto. En general, quedé muy contenta con el servicio de la tienda.',
+  gloss: [
+    { es: 'la talla', en: 'the size' },
+    { es: 'el cambio', en: 'the exchange' },
+    { es: 'devolver', en: 'to return' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué problema tuvo con los zapatos?', options: ['Le quedaban pequeños', 'Eran de otro color', 'Llegaron rotos'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde podía devolver los zapatos?', options: ['En cualquier oficina de correos', 'Solo en la tienda física', 'No podía devolverlos'], answer: 0 },
+    { type: 'short', q: '¿Cuántos días tardó en recibir el par correcto? (una palabra)', accept: ['cinco'] },
+    { type: 'translate', line: 'En general, quedé muy contenta con el servicio de la tienda.', model: 'In general, I was very happy with the store\'s service.' }
+  ]
+},
+
+{
+  id: 'cena-vegetariana-a2', title: 'Una cena vegetariana', level: 2, theme: 'alimentacion',
+  text: 'El viernes pasado invité a unos amigos a cenar y decidí cocinar solo platos vegetarianos. Uno de mis amigos no come carne desde hace varios años, así que preparé la cena pensando en él. Preparé una sopa de verduras, un plato de arroz con champiñones y una ensalada grande. Todos probaron los platos y, para mi sorpresa, les gustó mucho la comida. Un amigo incluso pidió la receta de la sopa para hacerla en su casa. Creo que voy a cocinar así más a menudo.',
+  gloss: [
+    { es: 'los champiñones', en: 'the mushrooms' },
+    { es: 'la receta', en: 'the recipe' },
+    { es: 'a menudo', en: 'often' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué cocinó solo platos vegetarianos?', options: ['Un amigo no come carne', 'No tenía carne en casa', 'Era más barato'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pidió un amigo?', options: ['La receta de la sopa', 'Más ensalada', 'El postre'], answer: 0 },
+    { type: 'short', q: '¿Qué preparó con champiñones? (una palabra)', accept: ['arroz'] },
+    { type: 'translate', line: 'Todos probaron los platos y, para mi sorpresa, les gustó mucho la comida.', model: 'Everyone tried the dishes and, to my surprise, they really liked the food.' }
+  ]
+},
+
+{
+  id: 'gripe-invierno-a2', title: 'La gripe de invierno', level: 2, theme: 'salud',
+  text: 'La semana pasada tuve la gripe y no pude ir a trabajar durante tres días. Al principio solo tenía un poco de dolor de garganta, pero después me subió la fiebre. Mi madre me trajo una sopa recién hecha y me dijo que debía descansar todo lo posible. Tomé la medicina que me recetó el médico dos veces al día. Poco a poco, la fiebre bajó y empecé a sentirme mejor. El fin de semana ya pude salir a caminar un poco por el barrio.',
+  gloss: [
+    { es: 'la garganta', en: 'the throat' },
+    { es: 'la fiebre', en: 'the fever' },
+    { es: 'recetó', en: 'prescribed' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántos días no pudo trabajar?', options: ['Tres días', 'Una semana', 'Un día'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le trajo su madre?', options: ['Sopa caliente', 'Medicina extra', 'Fruta'], answer: 0 },
+    { type: 'short', q: '¿Cuántas veces al día tomó la medicina? (dos palabras)', accept: ['dos veces'] },
+    { type: 'translate', line: 'El fin de semana ya pude salir a caminar un poco por el barrio.', model: 'By the weekend I was already able to go out and walk a little around the neighborhood.' }
+  ]
+}
 
 ];
