@@ -20,7 +20,7 @@ If `spec/pcic.json` is missing, the derived inputs are gitignored and must be
 rebuilt:
 
 ```
-node tools/harvest/pcic.js && node tools/harvest/syllabus.js && node tools/harvest/build-vocab.js
+node tools/harvest/pcic.js && node tools/harvest/syllabus.js && node tools/harvest/build-vocab.js && node tools/harvest/samples.js
 ```
 
 All four gates must print ✅ before you write anything:
@@ -111,6 +111,7 @@ no passages gives the learner a lesson and then three empty stages.
 | `data/taxonomy.js` | LEVELS, STRANDS, REGISTERS, the 20 THEMES — the only legal tag values |
 | `data/connectors.js` | 72 discourse markers in the PCIC's own 12 classes |
 | `data/strand-lessons.js` | **five worked templates, one per strand — read before writing** |
+| `spec/genre-samples.json` | **304 sample texts the Plan Curricular prints to illustrate its own genres** — 155 at B1–C1. Read these before writing passages |
 | `spec/verb-queue.json` | 3 verbs still missing |
 | `spec/vocab-queue.json` | 32 entries needing an English gloss (`known:false`) |
 | `spec/collocation-queue.json` | **2,263 collocations** to add as vocabulary entries; only `en` is missing |
@@ -234,6 +235,22 @@ verb range. **Run it before calling a batch done.** Rules that follow from it:
 - **Start differently.** Ten of the 81 B1 passages open "Después de".
 - **Vary the sentence count.** All 81 are 5–7 sentences, mean exactly 6.0.
   That uniformity is itself the tell: they were built to a template.
+
+**Read the Cervantes samples before you write.** `spec/genre-samples.json`
+holds 304 texts the Plan Curricular prints to show what its genres look like —
+41 argumentative, 83 descriptive (people, places, objects), 22 narrative, 18
+expository, plus public presentations and written compositions, each tagged
+with its level. Filter to the genre and level you are writing and read three.
+
+They are **models, not content**: short illustrative excerpts inside a
+reference work, some quoted from published authors. Imitate the register, the
+way information is ordered, the way a description moves from general to
+particular. Do not ship them verbatim, and note they average ~50 words, so they
+model *structure*, not length.
+
+Not using them is the likely reason the B1 passages came out formulaic: asked
+to write a B1 text with no example of one, the writer builds a template around
+the level's headline grammar.
 
 **Reach a tense more than one way.** A passage goes formulaic when the writer
 picks the easiest trigger for the grammar it must show. 49 of the 81 B1
