@@ -11376,5 +11376,426 @@ window.STRAND_LESSONS = [
     { id: 'p:submodo:recall', kind: 'recall', front: 'En cláusulas de modo, ¿qué activa el subjuntivo?', back: 'que la manera todavía no esté especificada/conocida' }
   ]
 }
+,
+/* ============================================================================
+ * BATCH — B2 notion, all 10 outstanding units.
+ * ========================================================================== */
+{
+  id: 'nt-peso-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'compras',
+  pcic: ['nociones_generales:B2:248', 'nociones_generales:B2:249', 'nociones_generales:B2:250',
+         'nociones_generales:B2:251', 'nociones_generales:B2:252'],
+  title: 'El peso: tonelada, carga, pesarse',
+  summary: 'Weight vocabulary beyond the kilogram of A1 shopping lists: bulk units for freight, the exact/approximate distinction that matters in a contract, and the reflexive pesarse for weighing yourself rather than an object.',
+  sections: [
+    { h: 'Units of bulk', html: 'A <b>tonelada</b> (tonne, 1000 kg) and a <b>carga</b> (a load — the amount one vehicle or animal carries) describe weight at industrial or transport scale, not kitchen scale.' },
+    { h: 'Exact vs approximate', html: 'A weight can be given as <i>peso exacto</i> (precise, for a contract or a scale reading) or <i>peso aproximado</i> (a working estimate) — the distinction matters whenever money or shipping depends on it.' },
+    { h: 'pesarse: weighing YOURSELF', html: 'Plain <i>pesar</i> is transitive (<i>pesar la maleta</i>, to weigh the suitcase); the reflexive <b>pesarse</b> is what you do to yourself, on a bathroom scale: <i>Me peso cada lunes.</i>' },
+    { h: '(des)cargar', html: '<b>Cargar</b> is to load weight onto something; <b>descargar</b> is to take it off. Both apply to trucks, ships, and — figuratively — to batteries and files.' }
+  ],
+  exponents: [
+    { es: 'El barco transporta miles de toneladas de grano.', en: 'The ship carries thousands of tonnes of grain.', register: 'neutral', note: 'tonelada — bulk unit' },
+    { es: 'Cada camión lleva una carga completa de madera.', en: 'Each truck carries a full load of wood.', register: 'neutral', note: 'carga — what one vehicle carries' },
+    { es: 'El peso exacto se confirma en la báscula del almacén.', en: 'The exact weight is confirmed on the warehouse scale.', register: 'neutral', note: 'peso exacto vs aproximado' },
+    { es: 'Me peso todos los lunes por la mañana.', en: 'I weigh myself every Monday morning.', register: 'neutral', note: 'pesarse — reflexive, weighing oneself' },
+    { es: 'Tardaron dos horas en descargar el camión.', en: 'It took them two hours to unload the truck.', register: 'neutral', note: 'descargar — the opposite of cargar' }
+  ],
+  contrasts: [
+    { es: 'Pesé la maleta antes de salir.', en: 'I weighed the suitcase before leaving.', note: 'transitive pesar — an object' },
+    { es: 'Me peso una vez a la semana.', en: 'I weigh myself once a week.', note: 'reflexive pesarse — oneself' },
+    { es: 'El peso exacto es 42,3 kilos.', en: 'The exact weight is 42.3 kilos.', note: 'precise figure' },
+    { es: 'El peso aproximado ronda los 40 kilos.', en: 'The approximate weight is around 40 kilos.', note: 'working estimate' }
+  ],
+  pitfalls: [
+    '<i>Pesar</i> without <i>se</i> always needs an object (you weigh something); with <i>se</i>, the subject weighs itself.',
+    '<i>Carga</i> is the load itself, not the act of loading — the act is <i>cargar</i> (or the noun <i>la carga</i> used differently in context, usually clear from what follows it).'
+  ],
+  examples: [
+    { es: 'El camión llevaba una carga de casi diez toneladas.', en: 'The truck was carrying a load of almost ten tonnes.' },
+    { es: '¿Cuál es el peso aproximado del paquete?', en: 'What is the approximate weight of the package?' },
+    { es: 'Descargaron la mercancía en menos de una hora.', en: 'They unloaded the goods in under an hour.' }
+  ],
+  probes: [
+    { id: 'p:peso:reflexivo', kind: 'mcq', q: '"___ cada mañana antes de desayunar." (a ti mismo)',
+      options: ['Peso', 'Me peso', 'Cargo'], answer: 1 },
+    { id: 'p:peso:unidad', kind: 'mcq', q: 'Para el peso de un barco de mercancías se usa...', options: ['el kilo', 'la tonelada', 'el gramo'], answer: 1 },
+    { id: 'p:peso:cloze', kind: 'cloze', text: 'Terminaron de ___ el camión en dos horas. (quitar la carga)', accept: ['descargar'] },
+    { id: 'p:peso:recall', kind: 'recall', front: '¿Diferencia entre "pesar algo" y "pesarse"?', back: 'pesar algo = un objeto; pesarse = a uno mismo' }
+  ]
+},
+
+{
+  id: 'nt-posicion-absoluta-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'cuerpo',
+  pcic: ['nociones_generales:B2:283', 'nociones_generales:B2:284', 'nociones_generales:B2:285',
+         'nociones_generales:B2:286', 'nociones_generales:B2:287', 'nociones_generales:B2:288'],
+  title: 'Posición absoluta: tumbado, de rodillas, del revés',
+  summary: 'Beyond "sitting" and "standing", Spanish has a precise vocabulary for exactly how a body or object is oriented in space — vocabulary a novel or a set of instructions leans on constantly.',
+  sections: [
+    { h: 'Body postures', html: '<b>Tumbado</b> (lying down), <b>de rodillas</b> (kneeling), <b>boca arriba/abajo</b> (face up/down) describe a body\'s posture with precision a beginner "sentado/de pie" pair cannot reach.' },
+    { h: 'Straight or bent', html: '<b>Recto/derecho</b> (straight) and <b>doblado</b> (bent) apply to bodies, limbs and objects alike: <i>estar de pie recto</i>, <i>el brazo doblado</i>.' },
+    { h: 'Inside out, back to front', html: '<b>Del derecho</b> (the right way) and <b>del revés</b> (inside out / back to front) describe an object\'s orientation, most often clothing: <i>Se ha puesto la camiseta del revés.</i>' },
+    { h: 'Orientation in space', html: '<b>Vertical, horizontal, diagonal</b> classify how something is positioned in the abstract, from a shelf to a diagram: <i>en posición horizontal</i>.' }
+  ],
+  exponents: [
+    { es: 'Estaba tumbada en la hierba, leyendo.', en: 'She was lying on the grass, reading.', register: 'neutral', note: 'tumbado — lying down' },
+    { es: 'El niño se puso de rodillas para buscar el juguete.', en: 'The boy knelt down to look for the toy.', register: 'neutral', note: 'de rodillas — kneeling' },
+    { es: 'Duerme boca abajo, nunca boca arriba.', en: 'He sleeps face down, never face up.', register: 'neutral', note: 'boca arriba/abajo' },
+    { es: 'Se ha puesto la camiseta del revés.', en: 'He put his T-shirt on inside out.', register: 'neutral', note: 'del revés — inside out' },
+    { es: 'Coloca el cuadro en posición horizontal, no vertical.', en: 'Put the picture in a horizontal position, not vertical.', register: 'neutral', note: 'orientation vocabulary' }
+  ],
+  contrasts: [
+    { es: 'Está tumbado en el sofá.', en: 'He is lying on the sofa.', note: 'horizontal posture' },
+    { es: 'Está de rodillas frente al altar.', en: 'She is kneeling in front of the altar.', note: 'a specific, deliberate posture' },
+    { es: 'Lleva la etiqueta del revés.', en: 'The label is inside out.', note: 'orientation of an object, not a body' },
+    { es: 'Puso el cuadro en diagonal, no en horizontal.', en: 'She placed the picture diagonally, not horizontally.', note: 'abstract spatial orientation' }
+  ],
+  pitfalls: [
+    '<i>Del revés</i> is about an object worn or placed the wrong way round (inside out, back to front); it does not describe a body posture.',
+    '<i>Recto/derecho</i> as "straight" (posture) is a different sense from <i>derecho</i> meaning "right" (the direction) — context disambiguates.'
+  ],
+  examples: [
+    { es: 'El paciente tenía que permanecer tumbado boca arriba.', en: 'The patient had to stay lying face up.' },
+    { es: 'Colócate recto, con la espalda derecha.', en: 'Stand up straight, with your back straight.' },
+    { es: 'Llevas el jersey del revés.', en: 'Your sweater is on inside out.' }
+  ],
+  probes: [
+    { id: 'p:posabs:tumbado', kind: 'mcq', q: '¿Qué postura describe "tumbado"?', options: ['de pie', 'sentado', 'acostado/echado'], answer: 2 },
+    { id: 'p:posabs:revés', kind: 'mcq', q: '"Del revés" describe...', options: ['una postura corporal', 'la orientación incorrecta de una prenda u objeto', 'una dirección (izquierda/derecha)'], answer: 1 },
+    { id: 'p:posabs:cloze', kind: 'cloze', text: 'Se arrodilló, quedando ___ ante la puerta. (posture)', accept: ['de rodillas'] },
+    { id: 'p:posabs:recall', kind: 'recall', front: '"Boca arriba" vs "boca abajo"', back: 'face up vs face down' }
+  ]
+},
+
+{
+  id: 'nt-anticipacion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'trabajo',
+  pcic: ['nociones_generales:B2:586', 'nociones_generales:B2:587', 'nociones_generales:B2:588',
+         'nociones_generales:B2:589', 'nociones_generales:B2:590', 'nociones_generales:B2:591',
+         'nociones_generales:B2:592'],
+  title: 'Anticipación: adelantar, con tiempo, por adelantado',
+  summary: 'Doing something earlier than planned has its own family of expressions in Spanish, separate from the simple future — a clock can BE adelantado, a meeting can GET adelantada, and money can be paid por adelantado, each a different grammatical shape for the same idea.',
+  sections: [
+    { h: 'madrugar: getting up early', html: '<b>Madrugar</b> means specifically to get up very early, not just "to be early" in general — it is tied to the start of the day.' },
+    { h: 'adelantar: moving something earlier', html: '<b>Adelantar</b> is transitive: you move a clock, a meeting or a deadline to an earlier point. <i>He adelantado el reloj</i>, <i>Tuvimos que adelantar la cita.</i>' },
+    { h: 'estar adelantado: the resulting state', html: 'Once something has been moved earlier, it IS ahead: <i>Tu reloj está adelantado</i> — the clock now shows a later time than it should.' },
+    { h: 'Fixed phrases: con tiempo, por adelantado, antes de tiempo', html: '<b>Con tiempo</b> = with enough time to spare; <b>por adelantado</b> = paid/done in advance; <b>antes de tiempo/antes de la hora</b> = ahead of the expected moment, sometimes prematurely.' }
+  ],
+  exponents: [
+    { es: 'Tuve que madrugar para coger el primer vuelo.', en: 'I had to get up very early to catch the first flight.', register: 'neutral', note: 'madrugar' },
+    { es: 'Hemos adelantado la reunión al lunes.', en: "We've moved the meeting up to Monday.", register: 'neutral', note: 'adelantar — moving something earlier' },
+    { es: 'Creo que tu reloj está adelantado diez minutos.', en: 'I think your watch is ten minutes fast.', register: 'neutral', note: 'estar adelantado — resulting state' },
+    { es: 'Sal de casa con tiempo si quieres llegar puntual.', en: 'Leave home with plenty of time if you want to arrive on time.', register: 'neutral', note: 'con tiempo' },
+    { es: 'Hay que pagar el depósito por adelantado.', en: 'The deposit has to be paid in advance.', register: 'neutral', note: 'por adelantado' },
+    { es: 'El bebé nació antes de tiempo.', en: 'The baby was born prematurely.', register: 'neutral', note: 'antes de tiempo' }
+  ],
+  contrasts: [
+    { es: 'Adelanté la cita al martes.', en: 'I moved the appointment up to Tuesday.', note: 'transitive — you move something' },
+    { es: 'La cita está adelantada.', en: 'The appointment has been moved earlier.', note: 'resulting state — it now IS earlier' },
+    { es: 'Llegó antes de tiempo, sin avisar.', en: 'He arrived early, without warning.', note: 'unexpectedly ahead of schedule' },
+    { es: 'Pagamos el alquiler por adelantado.', en: 'We pay the rent in advance.', note: 'paid before it is due, as a rule/system' }
+  ],
+  pitfalls: [
+    '<i>Adelantar</i> (to move earlier) and <i>estar adelantado</i> (to be ahead as a state) are related but not the same construction — one is an action, the other a result.',
+    '<i>Antes de tiempo</i> often carries a hint of "prematurely" or "too soon" (a birth, a departure) rather than neutral earliness — <i>con tiempo</i> is the neutral, positive phrase for planning ahead.'
+  ],
+  examples: [
+    { es: 'Ganamos tiempo saliendo antes del tráfico.', en: 'We gained time by leaving before the traffic.' },
+    { es: 'El vuelo salió antes de la hora prevista.', en: 'The flight left ahead of the scheduled time.' },
+    { es: 'Reserva el hotel por adelantado para conseguir mejor precio.', en: 'Book the hotel in advance to get a better price.' }
+  ],
+  probes: [
+    { id: 'p:anticip:transitivo', kind: 'mcq', q: '"___ la reunión al lunes." (moverla antes)', options: ['Adelanté', 'Adelanto', 'Estoy adelantado'], answer: 0 },
+    { id: 'p:anticip:estado', kind: 'mcq', q: '"Mi reloj ___ cinco minutos." (estado resultante)', options: ['adelanta', 'está adelantado', 'adelantó'], answer: 1 },
+    { id: 'p:anticip:cloze', kind: 'cloze', text: 'Hay que pagar el primer mes ___. (in advance)', accept: ['por adelantado'] },
+    { id: 'p:anticip:recall', kind: 'recall', front: '"Con tiempo" vs "antes de tiempo" — ¿cuál suena a "demasiado pronto/prematuro"?', back: 'antes de tiempo' }
+  ]
+},
+
+{
+  id: 'nt-permanencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'trabajo',
+  pcic: ['nociones_generales:B2:683', 'nociones_generales:B2:684', 'nociones_generales:B2:685', 'nociones_generales:B2:686'],
+  title: 'Permanencia: estable, fijo, sobrevivir',
+  summary: 'Talking about what LASTS — a job, a home, a relationship — draws on a small, high-value set of adjectives and verbs that come up constantly in real conversations about stability and endurance.',
+  sections: [
+    { h: 'estabilidad and its adjectives', html: '<b>Estabilidad</b> is the noun; <b>permanente, estable, fijo</b> are near-synonyms as adjectives, each with its own favourite collocation: <i>un trabajo estable</i>, <i>una residencia fija</i>, <i>un contrato permanente</i>.' },
+    { h: 'inmortal: the extreme case', html: '<b>Inmortal</b> pushes permanence to its limit — not just lasting a long time, but never ending at all, used both literally (myth, religion) and hyperbolically (fame, a memory).' },
+    { h: 'sobrevivir and resistir', html: '<b>Sobrevivir</b> is to outlast a threat or hardship; <b>resistir</b> is to hold up under pressure without necessarily facing death — a company can <i>resistir</i> a crisis without anyone\'s life being at stake.' }
+  ],
+  exponents: [
+    { es: 'Después de años de esfuerzo, por fin tiene un trabajo estable.', en: 'After years of effort, she finally has a stable job.', register: 'neutral', note: 'estable — collocates with trabajo' },
+    { es: 'Necesitamos una residencia fija para solicitar el permiso.', en: 'We need a fixed address to apply for the permit.', register: 'neutral', note: 'fijo — collocates with residencia' },
+    { es: 'Su fama parece inmortal, décadas después.', en: 'His fame seems immortal, decades later.', register: 'neutral', note: 'inmortal — hyperbolic use' },
+    { es: 'La empresa sobrevivió a la crisis financiera.', en: 'The company survived the financial crisis.', register: 'neutral', note: 'sobrevivir a — outlasting a threat' },
+    { es: 'El puente resistió el terremoto sin daños.', en: 'The bridge withstood the earthquake without damage.', register: 'neutral', note: 'resistir — holding up under pressure' }
+  ],
+  contrasts: [
+    { es: 'Tiene un contrato permanente.', en: 'She has a permanent contract.', note: 'permanente — official, formal stability' },
+    { es: 'Busca una relación estable.', en: 'He is looking for a stable relationship.', note: 'estable — general stability, not necessarily official' },
+    { es: 'La empresa sobrevivió a la crisis.', en: 'The company survived the crisis.', note: 'came through a threat that could have ended it' },
+    { es: 'El material resiste altas temperaturas.', en: 'The material withstands high temperatures.', note: 'holds up under stress, no mortal threat implied' }
+  ],
+  pitfalls: [
+    '<i>Sobrevivir</i> implies the thing COULD have ended (a company, a species, a relationship); <i>resistir</i> is broader and does not always imply that risk.',
+    '<i>Fijo</i> leans toward a location or a schedule (<i>hora fija, residencia fija</i>); <i>estable</i> leans toward a condition or situation (<i>trabajo estable, economía estable</i>) — the two overlap but are not always interchangeable.'
+  ],
+  examples: [
+    { es: 'Después de mudarse tantas veces, quiere una casa fija.', en: 'After moving so many times, she wants a permanent home.' },
+    { es: 'La especie ha logrado sobrevivir gracias a su capacidad de adaptación.', en: 'The species has managed to survive thanks to its ability to adapt.' },
+    { es: 'La estabilidad económica del país mejoró este año.', en: "The country's economic stability improved this year." }
+  ],
+  probes: [
+    { id: 'p:permanencia:colocacion', kind: 'mcq', q: '¿Qué adjetivo va mejor con "trabajo"?', options: ['estable', 'inmortal', 'asqueroso'], answer: 0 },
+    { id: 'p:permanencia:sobrevivir', kind: 'mcq', q: '"Sobrevivir a algo" implica...', options: ['que la cosa podría haber terminado/desaparecido', 'que la cosa es aburrida', 'que la cosa es nueva'], answer: 0 },
+    { id: 'p:permanencia:cloze', kind: 'cloze', text: 'El edificio ___ el terremoto sin sufrir daños. (withstood)', accept: ['resistió'] },
+    { id: 'p:permanencia:recall', kind: 'recall', front: '"Fijo" suele referirse a...', back: 'un lugar u horario que no cambia' }
+  ]
+},
+
+{
+  id: 'nt-repeticion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:628', 'nociones_generales:B2:629', 'nociones_generales:B2:630',
+         'nociones_generales:B2:631', 'nociones_generales:B2:633', 'nociones_generales:B2:634',
+         'nociones_generales:B2:635', 'nociones_generales:B2:636', 'nociones_generales:B2:638'],
+  title: 'Repetición: rutina, ciclo, una y otra vez',
+  summary: 'Beyond otra vez, Spanish has a rich family for talking about things that repeat: cycles that renew themselves, rhythms, habits that shade into vices, and phrases for insisting or starting over.',
+  sections: [
+    { h: 'Nouns for a repeating pattern', html: '<b>Rutina</b> (a routine), <b>hábito</b> (a habit), <b>vicio</b> (a bad habit/vice), <b>manía</b> (a quirky, obsessive habit) name repetition with different judgement built in — from neutral to negative.' },
+    { h: 'ciclo, ritmo', html: 'A <b>ciclo</b> is a pattern that closes and starts again (seasons, an economic cycle); a <b>ritmo</b> is the pace or beat at which something recurs.' },
+    { h: 'Adjectives: rutinario, repetitivo, cíclico, rítmico', html: 'Each pairs with a specific kind of noun: <i>un procedimiento rutinario</i>, <i>un trabajo repetitivo</i>, <i>un proceso cíclico</i>, <i>un sonido rítmico</i>.' },
+    { h: 'Phrases for repeating', html: '<b>Una vez más</b> (once more), <b>una y otra vez</b> (over and over), <b>de nuevo/nuevamente</b> (again) — all common, with <i>nuevamente</i> reading slightly more formal than <i>de nuevo</i>.' },
+    { h: 'insistir, imitar, recrear', html: '<b>Insistir</b> is to repeat an argument or request; <b>imitar</b> copies an existing thing; <b>recrear</b> deliberately rebuilds something from the past.' }
+  ],
+  exponents: [
+    { es: 'Fumar es un vicio difícil de dejar.', en: 'Smoking is a hard vice to give up.', register: 'neutral', note: 'vicio — negative repeated habit' },
+    { es: 'Tiene la manía de revisar el móvil cada cinco minutos.', en: 'He has the quirk of checking his phone every five minutes.', register: 'neutral', note: 'manía — obsessive quirk' },
+    { es: 'El ciclo económico atraviesa fases de crecimiento y recesión.', en: 'The economic cycle goes through phases of growth and recession.', register: 'neutral', note: 'ciclo' },
+    { es: 'Lo intentamos una y otra vez hasta que funcionó.', en: 'We tried over and over until it worked.', register: 'neutral', note: 'fixed phrase for repeated attempts' },
+    { es: 'El museo ha querido recrear el ambiente del siglo XIX.', en: 'The museum wanted to recreate the atmosphere of the 19th century.', register: 'neutral', note: 'recrear — deliberately rebuild' },
+    { es: 'Insistió en la misma idea durante toda la reunión.', en: 'He kept insisting on the same idea throughout the meeting.', register: 'neutral', note: 'insistir en' }
+  ],
+  contrasts: [
+    { es: 'Tiene el hábito de correr cada mañana.', en: 'He has the habit of running every morning.', note: 'hábito — neutral, often positive' },
+    { es: 'Tiene el vicio de fumar a escondidas.', en: 'He has the vice of smoking on the sly.', note: 'vicio — negatively judged' },
+    { es: 'Es una manía suya, no le des importancia.', en: "It's just a quirk of his, don't read too much into it.", note: 'manía — personal, slightly obsessive, often harmless' },
+    { es: 'Un trabajo repetitivo puede resultar agotador.', en: 'A repetitive job can be exhausting.', note: 'repetitivo — judged tedious' }
+  ],
+  pitfalls: [
+    '<i>Hábito, vicio</i> and <i>manía</i> are not interchangeable — they carry different judgements (neutral, negative, quirky) even when describing the same kind of repeated behaviour.',
+    '<i>Nuevamente</i> and <i>de nuevo</i> both mean "again", but <i>nuevamente</i> reads more formal/written; <i>de nuevo</i> is the everyday choice.'
+  ],
+  examples: [
+    { es: 'El ritmo de la música invitaba a bailar.', en: 'The rhythm of the music invited people to dance.' },
+    { es: 'Perdí todo el documento y tuve que empezar de nuevo.', en: 'I lost the whole document and had to start over.' },
+    { es: 'La banda imita el estilo de los grandes clásicos.', en: 'The band imitates the style of the great classics.' }
+  ],
+  probes: [
+    { id: 'p:repeticion:juicio', kind: 'mcq', q: '¿Cuál de estas palabras es negativa?', options: ['hábito', 'vicio', 'ritmo'], answer: 1 },
+    { id: 'p:repeticion:ciclo', kind: 'mcq', q: '¿Qué palabra describe un patrón que se cierra y vuelve a empezar?', options: ['manía', 'ciclo', 'insistencia'], answer: 1 },
+    { id: 'p:repeticion:cloze', kind: 'cloze', text: 'Lo intentó ___ hasta lograrlo. (over and over)', accept: ['una y otra vez'] },
+    { id: 'p:repeticion:recall', kind: 'recall', front: '"Manía" vs "vicio": ¿cuál es más grave/negativo?', back: 'vicio — manía es más una rareza personal, no necesariamente dañina' }
+  ]
+},
+
+{
+  id: 'nt-simultaneidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:552', 'nociones_generales:B2:553', 'nociones_generales:B2:554',
+         'nociones_generales:B2:555', 'nociones_generales:B2:556'],
+  title: 'Simultaneidad: mientras tanto, a la vez, coincidir',
+  summary: 'Two things happening at once needs more than "y" — Spanish marks simultaneity explicitly, whether two events overlap by coincidence or a speaker deliberately signals that one thing is happening while another goes on elsewhere.',
+  sections: [
+    { h: 'coincidir, coincidencia', html: '<b>Coincidir</b> is for events, opinions or schedules that happen to line up: <i>coincidir en el tiempo</i>, <i>coincidencia de gustos</i> — the overlap is often unplanned.' },
+    { h: 'simultáneo, simultáneamente, a la vez', html: '<b>Simultáneo</b> describes two things designed or happening to run in parallel (<i>una traducción simultánea</i>); <b>a la vez</b> is the everyday equivalent of "at the same time": <i>Estudia y trabaja a la vez.</i>' },
+    { h: 'mientras tanto, entretanto', html: 'These connect two clauses across a stretch of time — one thing happens WHILE another continues elsewhere: <i>Entretanto los recién casados disfrutaban de su luna de miel.</i> <i>Mientras tanto</i> is the more everyday of the pair.' }
+  ],
+  exponents: [
+    { es: 'Nuestros horarios coinciden los martes.', en: 'Our schedules coincide on Tuesdays.', register: 'neutral', note: 'coincidir — schedules lining up' },
+    { es: 'Descubrimos una coincidencia de gustos musicales.', en: 'We discovered a coincidence in musical taste.', register: 'neutral', note: 'coincidencia' },
+    { es: 'La traducción simultánea permite seguir la conferencia en tiempo real.', en: 'Simultaneous translation lets you follow the conference in real time.', register: 'neutral', note: 'simultáneo' },
+    { es: 'Estudia y trabaja a la vez.', en: 'She studies and works at the same time.', register: 'neutral', note: 'a la vez — everyday phrase' },
+    { es: 'Yo preparaba la cena; mientras tanto, ella ponía la mesa.', en: 'I was making dinner; meanwhile, she was setting the table.', register: 'neutral', note: 'mientras tanto — connects two ongoing actions' }
+  ],
+  contrasts: [
+    { es: 'Nuestras vacaciones coincidieron por casualidad.', en: 'Our holidays coincided by chance.', note: 'unplanned overlap' },
+    { es: 'Organizaron los dos eventos simultáneamente a propósito.', en: 'They organized both events simultaneously on purpose.', note: 'deliberate parallel timing' },
+    { es: 'Cocina y escucha música a la vez.', en: 'He cooks and listens to music at the same time.', note: 'two actions by the same person' },
+    { es: 'Yo hacía las maletas; entretanto, él llamaba un taxi.', en: 'I was packing; meanwhile, he was calling a taxi.', note: 'two different people, parallel actions' }
+  ],
+  pitfalls: [
+    '<i>A la vez</i> usually describes the SAME subject doing two things at once; <i>mientras tanto/entretanto</i> more often connect two DIFFERENT subjects\' actions across two clauses.',
+    '<i>Coincidir</i> leans toward chance overlap; <i>simultáneo</i> leans toward designed, engineered parallel timing — do not swap them where the nuance matters.'
+  ],
+  examples: [
+    { es: 'Los dos vuelos coinciden en la misma puerta de embarque.', en: 'The two flights coincide at the same boarding gate.' },
+    { es: 'No se puede hacer todo a la vez.', en: "You can't do everything at once." },
+    { es: 'Ella terminaba su turno; mientras tanto, yo empezaba el mío.', en: 'She was finishing her shift; meanwhile, I was starting mine.' }
+  ],
+  probes: [
+    { id: 'p:simultaneidad:coincidir', kind: 'mcq', q: '"Coincidir" implica normalmente...', options: ['algo planeado con precisión', 'una casualidad', 'algo obligatorio'], answer: 1 },
+    { id: 'p:simultaneidad:mismosujeto', kind: 'mcq', q: '¿Cuál describe a la MISMA persona haciendo dos cosas?', options: ['a la vez', 'mientras tanto', 'entretanto'], answer: 0 },
+    { id: 'p:simultaneidad:cloze', kind: 'cloze', text: 'Yo cocinaba; ___, él limpiaba la casa. (meanwhile)', accept: ['mientras tanto', 'entretanto'] },
+    { id: 'p:simultaneidad:recall', kind: 'recall', front: '"Simultáneo" vs "coincidir": ¿cuál sugiere diseño/intención?', back: 'simultáneo' }
+  ]
+},
+
+{
+  id: 'nt-limpieza-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'vivienda',
+  pcic: ['nociones_generales:B2:884', 'nociones_generales:B2:885', 'nociones_generales:B2:886',
+         'nociones_generales:B2:887', 'nociones_generales:B2:888', 'nociones_generales:B2:889'],
+  title: 'Limpieza: mancha, ensuciar, limpiar a fondo',
+  summary: 'A vocabulary set that moves past the A1 "limpio/sucio" pair into how dirt gets there, how strongly it registers with the speaker, and the precise ways of removing it.',
+  sections: [
+    { h: 'suciedad, mancha', html: '<b>Suciedad</b> is dirt in general; a <b>mancha</b> is one specific, localised stain — a coffee mancha, a grass mancha.' },
+    { h: 'asqueroso: strong disgust', html: 'Far past "sucio", <b>asqueroso</b> conveys visceral disgust — reserved for genuinely repulsive dirt or filth, not mild untidiness.' },
+    { h: 'manchar(se), ensuciar(se)', html: 'Both take the reflexive when the dirt lands on the subject itself: <i>Me manché la camisa</i>, <i>Se ensució las manos</i>. Without <i>se</i>, the subject dirties something else.' },
+    { h: 'Ways of cleaning', html: '<b>Limpiar a fondo/en profundidad</b> (a thorough clean), <b>limpiar por completo</b> (entirely), <b>limpiar en seco</b> (dry-clean) — each names a specific method or thoroughness, not just "to clean".' }
+  ],
+  exponents: [
+    { es: 'Tiene una mancha de café en la camisa.', en: 'He has a coffee stain on his shirt.', register: 'neutral', note: 'mancha — a specific stain' },
+    { es: 'El baño de la gasolinera estaba asqueroso.', en: 'The gas station bathroom was disgusting.', register: 'neutral', note: 'asqueroso — strong disgust' },
+    { es: 'Se manchó los pantalones jugando en el barro.', en: 'He got his trousers dirty playing in the mud.', register: 'neutral', note: 'mancharse — reflexive' },
+    { es: 'Hay que limpiar la cocina a fondo este fin de semana.', en: 'We need to give the kitchen a thorough clean this weekend.', register: 'neutral', note: 'limpiar a fondo' },
+    { es: 'Este abrigo solo se puede limpiar en seco.', en: 'This coat can only be dry-cleaned.', register: 'neutral', note: 'limpiar en seco' }
+  ],
+  contrasts: [
+    { es: 'La cocina estaba un poco sucia.', en: 'The kitchen was a little dirty.', note: 'mild — sucio' },
+    { es: 'El suelo del baño público estaba asqueroso.', en: 'The public bathroom floor was disgusting.', register: 'neutral', note: 'strong revulsion — asqueroso' },
+    { es: 'Manché el mantel con vino.', en: 'I stained the tablecloth with wine.', note: 'transitive — I dirtied something else' },
+    { es: 'Me manché la camisa con vino.', en: 'I got wine on my own shirt.', note: 'reflexive — it happened to me/my own clothing' }
+  ],
+  pitfalls: [
+    '<i>Asqueroso</i> is a strong word — using it for ordinary untidiness sounds exaggerated; reserve it for genuine filth or disgust.',
+    '<i>Limpiar en seco</i> is specifically dry-cleaning (a technique), not just "cleaning quickly" or "cleaning without water" in a loose sense.'
+  ],
+  examples: [
+    { es: 'Eliminar esa mancha de vino tinto no va a ser fácil.', en: "Getting that red wine stain out won't be easy." },
+    { es: 'El personal de limpieza pasa cada noche.', en: 'The cleaning staff come by every night.' },
+    { es: 'Antes de mudarnos, limpiamos el piso en profundidad.', en: 'Before moving in, we gave the flat a deep clean.' }
+  ],
+  probes: [
+    { id: 'p:limpieza:reflexivo', kind: 'mcq', q: '"___ las manos jugando con tierra." (a sí mismo)', options: ['Manchó', 'Se manchó', 'Ensució'], answer: 1 },
+    { id: 'p:limpieza:intensidad', kind: 'mcq', q: '¿Cuál expresa más asco que "sucio"?', options: ['manchado', 'asqueroso', 'limpio'], answer: 1 },
+    { id: 'p:limpieza:cloze', kind: 'cloze', text: 'Este vestido solo se puede limpiar en ___. (dry-clean)', accept: ['seco'] },
+    { id: 'p:limpieza:recall', kind: 'recall', front: '¿"Mancha" es la suciedad en general o algo específico?', back: 'algo específico y localizado' }
+  ]
+},
+
+{
+  id: 'nt-adecuacion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'trabajo',
+  pcic: ['nociones_generales:B2:931', 'nociones_generales:B2:932', 'nociones_generales:B2:933'],
+  title: 'Adecuación: adaptarse, apropiado',
+  summary: 'A compact set for saying that something fits its purpose or its context — a period of adjustment, an appropriate choice, the ongoing process of adapting to something new.',
+  sections: [
+    { h: 'adaptación: the process', html: '<b>Adaptación</b> names the process of adjusting, often with a time frame attached: <i>un periodo de adaptación</i> is the stretch during which fit is not yet complete.' },
+    { h: 'apropiado: judging the fit', html: '<b>Apropiado</b> judges whether something suits a specific context — clothing for an occasion, a word for a register, a tool for a job.' },
+    { h: 'adaptarse a: the ongoing verb', html: '<b>Adaptarse a</b> is reflexive and always takes <i>a</i> before what one is adjusting to: <i>adaptarse al horario, adaptarse al clima.</i>' }
+  ],
+  exponents: [
+    { es: 'El primer mes fue un periodo de adaptación difícil.', en: 'The first month was a difficult adjustment period.', register: 'neutral', note: 'adaptación + periodo de' },
+    { es: 'No llevaba ropa apropiada para la entrevista.', en: "He wasn't wearing appropriate clothes for the interview.", register: 'neutral', note: 'apropiado — judging fit' },
+    { es: 'Le costó adaptarse al nuevo horario de trabajo.', en: 'He found it hard to adjust to the new work schedule.', register: 'neutral', note: 'adaptarse a + fixed preposition' }
+  ],
+  contrasts: [
+    { es: 'Se adaptó rápido a la vida en la ciudad.', en: 'She adapted quickly to city life.', note: 'ongoing process, reflexive verb' },
+    { es: 'Ese comentario no fue muy apropiado.', en: 'That comment was not very appropriate.', note: 'a judgement about a single instance' },
+    { es: 'Necesitan un periodo de adaptación antes de rendir al máximo.', en: 'They need an adjustment period before performing at their best.', note: 'adaptación as a noun with duration' }
+  ],
+  pitfalls: [
+    '<i>Adaptarse</i> always takes <i>a</i> before its complement — dropping the preposition (<i>*adaptarse el clima</i>) is a common error.',
+    '<i>Apropiado</i> judges fit to a CONTEXT, not general quality — "apropiado" is not simply a synonym for "bueno".'
+  ],
+  examples: [
+    { es: 'Es importante elegir el tono apropiado según la ocasión.', en: 'It is important to choose the right tone for the occasion.' },
+    { es: 'Los animales se adaptan a su entorno con el tiempo.', en: 'Animals adapt to their environment over time.' },
+    { es: 'Tras un breve periodo de adaptación, empezó a sentirse cómoda.', en: 'After a brief adjustment period, she began to feel comfortable.' }
+  ],
+  probes: [
+    { id: 'p:adecuacion:prep', kind: 'mcq', q: '"Adaptarse ___ nuevo entorno."', options: ['al', 'del', 'en el'], answer: 0 },
+    { id: 'p:adecuacion:apropiado', kind: 'mcq', q: '"Apropiado" evalúa...', options: ['la calidad general de algo', 'si algo encaja con un contexto específico', 'la cantidad de algo'], answer: 1 },
+    { id: 'p:adecuacion:cloze', kind: 'cloze', text: 'Necesita un periodo de ___ antes de sentirse cómodo. (adjustment)', accept: ['adaptación'] },
+    { id: 'p:adecuacion:recall', kind: 'recall', front: '¿Qué preposición exige siempre "adaptarse"?', back: 'a' }
+  ]
+},
+
+{
+  id: 'nt-interes-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'educacion',
+  pcic: ['nociones_generales:B2:961', 'nociones_generales:B2:962', 'nociones_generales:B2:963',
+         'nociones_generales:B2:964', 'nociones_generales:B2:965'],
+  title: 'Interés: motivación, aburrir, centro de interés',
+  summary: 'The vocabulary of engagement and its opposite — what grabs attention, what a class or a book is built around, and the flat verb that says something simply fails to hold anyone\'s attention.',
+  sections: [
+    { h: 'aburrimiento vs motivación', html: 'The two poles of this notion: <b>aburrimiento</b> (boredom) and <b>motivación</b> (the drive that keeps someone engaged) name opposite states, not degrees of the same thing.' },
+    { h: 'sorprendente, entretenido', html: '<b>Sorprendente</b> holds attention through surprise; <b>entretenido</b> holds it through enjoyment — a film can be one, the other, or both.' },
+    { h: 'centro de interés, falta de interés', html: 'A <b>centro de interés</b> is whatever a lesson, book or conversation is organised around; <b>falta de interés</b> is simply the absence of engagement, milder than <i>aburrimiento</i>.' },
+    { h: 'aburrir: the plain verb', html: '<b>Aburrir</b> works like <i>gustar</i> — the thing that bores takes the subject slot, the bored person takes the indirect object: <i>Me aburre oír siempre lo mismo.</i>' }
+  ],
+  exponents: [
+    { es: '¡Esto es un aburrimiento!', en: 'This is so boring!', register: 'coloquial', note: 'aburrimiento — exclamatory, informal' },
+    { es: 'Necesita más motivación para terminar el proyecto.', en: 'He needs more motivation to finish the project.', register: 'neutral', note: 'motivación' },
+    { es: 'Fue un giro de la trama muy sorprendente.', en: 'It was a very surprising plot twist.', register: 'neutral', note: 'sorprendente' },
+    { es: 'Me aburre oír siempre lo mismo.', en: 'It bores me to always hear the same thing.', register: 'neutral', note: 'aburrir — gustar-type verb' },
+    { es: 'Está muy motivado con el nuevo proyecto.', en: 'He is very motivated by the new project.', register: 'neutral', note: 'estar motivado' }
+  ],
+  contrasts: [
+    { es: 'Noté cierta falta de interés en la clase.', en: 'I noticed a certain lack of interest in the class.', note: 'mild — falta de interés' },
+    { es: 'Los alumnos mostraban un aburrimiento total.', en: 'The students showed total boredom.', note: 'stronger — aburrimiento' },
+    { es: 'Esta novela es muy entretenida.', en: 'This novel is very entertaining.', note: 'holds attention through enjoyment' },
+    { es: 'El final fue sorprendente, nadie lo esperaba.', en: 'The ending was surprising, no one expected it.', note: 'holds attention through the unexpected' }
+  ],
+  pitfalls: [
+    '<i>Aburrir</i> follows the <i>gustar</i> pattern — the bored PERSON is the indirect object, not the subject: <i>Me aburre</i>, not <i>*Yo aburro</i> (which would mean "I bore others").',
+    '<i>Falta de interés</i> and <i>aburrimiento</i> differ in intensity — do not treat them as fully interchangeable.'
+  ],
+  examples: [
+    { es: 'El centro de interés de la unidad es el medio ambiente.', en: "The unit's central topic is the environment." },
+    { es: 'Le aburren las películas demasiado largas.', en: 'Overly long films bore him.' },
+    { es: 'Su falta de interés en el proyecto era evidente.', en: 'Her lack of interest in the project was obvious.' }
+  ],
+  probes: [
+    { id: 'p:interes:gustar', kind: 'mcq', q: '"___ (a mí) las reuniones largas."', options: ['Aburro', 'Me aburren', 'Aburren'], answer: 1 },
+    { id: 'p:interes:intensidad', kind: 'mcq', q: '¿Cuál es más fuerte?', options: ['falta de interés', 'aburrimiento total', 'son iguales'], answer: 1 },
+    { id: 'p:interes:cloze', kind: 'cloze', text: 'Está muy ___ con su nuevo trabajo. (motivated)', accept: ['motivado', 'motivada'] },
+    { id: 'p:interes:recall', kind: 'recall', front: '¿"Aburrir" se conjuga como "gustar"?', back: 'sí — el sujeto es la cosa aburrida, el objeto indirecto la persona' }
+  ]
+},
+
+{
+  id: 'nt-facilidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'educacion',
+  pcic: ['nociones_generales:B2:1019', 'nociones_generales:B2:1020', 'nociones_generales:B2:1021',
+         'nociones_generales:B2:1022', 'nociones_generales:B2:1023', 'nociones_generales:B2:1024'],
+  title: 'Facilidad y dificultad: complejo, facilitar, con facilidad',
+  summary: 'Beyond fácil/difícil, this notion covers the noun for how complicated something is, the verbs that actively make things easier or harder, and the fixed phrases for having a knack — or not — for something.',
+  sections: [
+    { h: 'complejidad, simplicidad', html: 'The abstract nouns behind <i>complejo</i> and <i>simple</i>: <b>complejidad</b> (complexity) and <b>simplicidad</b> (simplicity) name the QUALITY, not the individual case.' },
+    { h: 'complejo, duro', html: '<b>Complejo</b> describes something with many interacting parts, harder to grasp than merely <i>difícil</i>; <b>duro</b> leans toward something demanding effort or endurance, often emotionally.' },
+    { h: 'facilitar, complicar', html: 'These are the ACTIVE verbs: <b>facilitar</b> makes something easier for someone else; <b>complicar</b> makes it harder — both take a direct object, the thing being made easy or hard.' },
+    { h: 'tener facilidad para, hacer algo con facilidad', html: '<b>Tener facilidad(es) para/con algo</b> describes a personal knack; <b>hacer algo con facilidad/dificultad</b> describes how smoothly a specific action went.' }
+  ],
+  exponents: [
+    { es: 'La complejidad del sistema sorprendió a los técnicos.', en: 'The complexity of the system surprised the technicians.', register: 'neutral', note: 'complejidad — abstract noun' },
+    { es: 'Es un proceso complejo, con muchas variables.', en: 'It is a complex process, with many variables.', register: 'neutral', note: 'complejo' },
+    { es: 'Esta aplicación facilita mucho el trabajo diario.', en: 'This app makes daily work a lot easier.', register: 'neutral', note: 'facilitar + objeto' },
+    { es: 'Tiene mucha facilidad para los idiomas.', en: 'She has a real knack for languages.', register: 'neutral', note: 'tener facilidad para' },
+    { es: 'Resolvió el problema con facilidad.', en: 'He solved the problem with ease.', register: 'neutral', note: 'hacer algo con facilidad' }
+  ],
+  contrasts: [
+    { es: 'El examen fue difícil.', en: 'The exam was difficult.', note: 'plain difficulty' },
+    { es: 'El examen fue muy complejo, con preguntas de varios temas a la vez.', en: 'The exam was very complex, with questions on several topics at once.', note: 'complejo — many interacting parts, not just "hard"' },
+    { es: 'Facilitó el acceso a la información.', en: 'She made access to the information easier.', note: 'active — someone made it easier' },
+    { es: 'Complicó el proceso innecesariamente.', en: 'He complicated the process unnecessarily.', note: 'active opposite of facilitar' }
+  ],
+  pitfalls: [
+    '<i>Complejo</i> is not simply a fancier word for <i>difícil</i> — it specifically implies many interacting parts, not just effort required.',
+    '<i>Facilitar</i> and <i>complicar</i> always need someone or something doing the facilitating/complicating — they describe an action, not a state.'
+  ],
+  examples: [
+    { es: 'La nueva ley pretende simplificar los trámites.', en: 'The new law aims to simplify the paperwork.' },
+    { es: 'Le resultó difícil, aunque a otros les parecía sencillo.', en: 'He found it hard, even though others found it simple.' },
+    { es: 'Aprende con dificultad, pero no se rinde.', en: 'She learns with difficulty, but doesn\'t give up.' }
+  ],
+  probes: [
+    { id: 'p:facilidad:complejo', kind: 'mcq', q: '"Complejo" implica sobre todo...', options: ['muchas partes interrelacionadas', 'que requiere mucho tiempo', 'que es caro'], answer: 0 },
+    { id: 'p:facilidad:verbo', kind: 'mcq', q: '¿Cuál hace que algo sea MÁS fácil para otra persona?', options: ['complicar', 'facilitar', 'resistir'], answer: 1 },
+    { id: 'p:facilidad:cloze', kind: 'cloze', text: 'Tiene mucha ___ para las matemáticas. (a knack)', accept: ['facilidad'] },
+    { id: 'p:facilidad:recall', kind: 'recall', front: '"Tener facilidad para algo" describe...', back: 'una habilidad/talento personal para esa cosa' }
+  ]
+}
 
 ];
