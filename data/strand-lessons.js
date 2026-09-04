@@ -11796,6 +11796,443 @@ window.STRAND_LESSONS = [
     { id: 'p:facilidad:cloze', kind: 'cloze', text: 'Tiene mucha ___ para las matemáticas. (a knack)', accept: ['facilidad'] },
     { id: 'p:facilidad:recall', kind: 'recall', front: '"Tener facilidad para algo" describe...', back: 'una habilidad/talento personal para esa cosa' }
   ]
+},
+
+/* ============================================================================
+ * C1 DISCOURSE — batch 1 of 2. Reformulation, quotation, covert quotation and
+ * dialogic mitigation: the things a C1 speaker does to a proposition after
+ * stating it, or to someone else's before disagreeing with it.
+ * ========================================================================== */
+
+{
+  id: 'dc-reformuladores-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:22', 'tacticas_pragmaticas:C1:23',
+         'tacticas_pragmaticas:C1:24', 'tacticas_pragmaticas:C1:25'],
+  title: 'Reformuladores: volver a decirlo mejor',
+  summary: 'A reformulador announces that what follows replaces what preceded — and the class you pick tells the listener WHY you are saying it again: to explain it, to sum it up, to correct yourself, or to declare the whole preceding discussion irrelevant. Choosing the wrong class is not a style slip; it misreports your own intention.',
+  sections: [
+    { h: 'Four jobs, not one', html: 'Spanish separates what English blurs into "I mean". <b>Explicativos</b> (<i>es decir</i>, <i>o sea</i>, <i>dicho de otro modo</i>) restate the same content more clearly. <b>Recapitulativos</b> (<i>en resumidas cuentas</i>, <i>al fin y al cabo</i>) compress several points into a conclusion. <b>Rectificativos</b> (<i>mejor dicho</i>, <i>más bien</i>) withdraw what you just said and replace it. <b>De distanciamiento</b> (<i>en todo caso</i>, <i>de cualquier modo</i>) declare the preceding argument beside the point.' },
+    { h: 'The distancing ones are the C1 move', html: '<i>De todos modos</i> and <i>en cualquier caso</i> do something no English "anyway" quite does: they concede that everything said so far may be true and rule it irrelevant to the conclusion. <i>—Es caro, y además está lejos. —En cualquier caso, es la única opción que tenemos.</i> The objections are not answered; they are set aside.' },
+    { h: 'Rectifying is not hedging', html: '<i>Mejor dicho</i> replaces; it does not soften. <i>Llegó tarde, mejor dicho, no llegó</i> withdraws "late" and asserts something stronger. Learners often reach for it when they mean <i>bueno</i> or <i>en realidad</i>, which weaken rather than replace.' },
+    { h: 'Register spread', html: '<i>O sea</i> is heavily colloquial and, overused, marks a speaker as vague. <i>Es decir</i> is neutral and safe anywhere. <i>Dicho de otro modo</i> and <i>en otras palabras</i> belong to writing and prepared speech. <i>Esto es</i> is markedly formal and almost only written.' }
+  ],
+  exponents: [
+    { es: 'O sea, que no vienes.', en: "So, you're not coming.", register: 'coloquial',
+      note: 'explicativo; very frequent in speech and easy to overuse' },
+    { es: 'Es decir, tendremos que empezar de nuevo.', en: 'That is, we will have to start again.', register: 'neutral',
+      note: 'the safe default explicativo' },
+    { es: 'Dicho de otro modo, el plan no se sostiene.', en: 'Put another way, the plan does not hold up.', register: 'escrito',
+      note: 'prepared speech and writing' },
+    { es: 'Llegó tarde; mejor dicho, no llegó.', en: 'He arrived late — or rather, he did not arrive.', register: 'neutral',
+      note: 'rectificativo: withdraws and replaces, does not soften' },
+    { es: 'Más bien diría lo contrario.', en: 'I would say rather the opposite.', register: 'neutral',
+      note: 'rectifies someone else, gently' },
+    { es: 'En resumidas cuentas, no salió como esperábamos.', en: 'In short, it did not turn out as we hoped.', register: 'neutral',
+      note: 'recapitulativo' },
+    { es: 'Al fin y al cabo, nadie le obligó a firmar.', en: 'After all, nobody forced him to sign.', register: 'coloquial',
+      note: 'recapitulativo that appeals to something obvious' },
+    { es: 'En cualquier caso, la decisión ya está tomada.', en: 'In any case, the decision has already been made.', register: 'neutral',
+      note: 'de distanciamiento: concedes the argument and rules it irrelevant' },
+    { es: 'Esto es, el contrato quedó sin efecto.', en: 'That is to say, the contract was void.', register: 'escrito',
+      note: 'markedly formal, almost only written' }
+  ],
+  pitfalls: [
+    '<i>O sea</i> is not a neutral <i>es decir</i>. In an interview or a report it reads as imprecise; used every second sentence it reads as a filler.',
+    '<i>Mejor dicho</i> REPLACES what you said. If you only want to soften it, you want <i>bueno</i>, <i>en realidad</i> or <i>más o menos</i> — reaching for <i>mejor dicho</i> tells the listener your first statement was wrong.',
+    'The distancing reformuladores (<i>en todo caso</i>, <i>de cualquier modo</i>) do not answer an objection. Using one where an answer is expected can read as evasive, which is sometimes exactly the intention — but know which you are doing.'
+  ],
+  examples: [
+    { es: 'El informe está incompleto; es decir, no podemos presentarlo el lunes.', en: 'The report is incomplete; that is, we cannot submit it on Monday.' },
+    { es: '—Es caro y está lejos. —De todos modos, no tenemos otra opción.', en: '—It is expensive and far away. —Even so, we have no other option.' },
+    { es: 'Fue un malentendido; mejor dicho, nadie se molestó en preguntar.', en: 'It was a misunderstanding — or rather, nobody bothered to ask.' },
+    { es: 'Al fin y al cabo, la culpa no fue solo suya.', en: 'After all, it was not only his fault.' }
+  ],
+  probes: [
+    { id: 'p:reform:class', kind: 'mcq',
+      q: 'Quieres retirar lo que acabas de decir y sustituirlo. ¿Qué usas?',
+      options: ['es decir', 'mejor dicho', 'en resumidas cuentas'], answer: 1 },
+    { id: 'p:reform:distancia', kind: 'mcq',
+      q: '«—Es caro y está lejos. —___, es la única opción.» Concedes los argumentos pero los declaras irrelevantes.',
+      options: ['O sea', 'En cualquier caso', 'Esto es'], answer: 1 },
+    { id: 'p:reform:registro', kind: 'mcq',
+      q: '¿Cuál NO usarías en un informe escrito?',
+      options: ['dicho de otro modo', 'o sea', 'es decir'], answer: 1 },
+    { id: 'p:reform:cloze', kind: 'cloze',
+      text: 'Llegó tarde; ___ dicho, no llegó.', accept: ['mejor'] },
+    { id: 'p:reform:recall', kind: 'recall',
+      front: 'The four classes of reformulador', back: 'explicativo · recapitulativo · rectificativo · de distanciamiento' }
+  ]
+},
+
+{
+  id: 'dc-estilo-indirecto-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:79', 'tacticas_pragmaticas:C1:80', 'tacticas_pragmaticas:C1:81',
+         'tacticas_pragmaticas:C1:83', 'tacticas_pragmaticas:C1:84', 'tacticas_pragmaticas:C1:85'],
+  title: 'Estilo indirecto: el verbo que interpreta',
+  summary: 'Reporting speech at C1 is not a mechanical shift of tenses and pronouns. The announcing verb you choose — dijo, aclaró, reprochó, advirtió, soltó — tells the listener how to take what follows, and that judgment is yours, not the original speaker\'s. Report neutrally and you have chosen too; you have chosen not to comment.',
+  sections: [
+    { h: 'The verb carries your reading', html: 'Every announcing verb beyond <i>decir</i> adds an interpretation the original speaker never signed up to. <i>Me aclaró que no vendría</i> presents it as clearing something up; <i>me reprochó que no fuera</i> as an accusation; <i>me advirtió que no fuera</i> as a warning; <i>me soltó que no vendría</i> makes it abrupt and unwelcome. Same words reported, four different events.' },
+    { h: 'Verbs that cannot report', html: 'Some verbs only introduce direct speech: you can <i>cantar</i>, <i>recitar</i> or <i>pronunciar</i> words, but not <i>cantar que</i> something is the case. <i>*Le cantó que era morena</i> is not Spanish; it has to be <i>Le cantó: «Eres morena»</i>.' },
+    { h: 'Correlation of marks', html: 'The shift is systematic: <i>vino</i> and <i>venga</i> both become <i>había venido</i> / <i>viniera</i> under a past announcing verb. Deixis moves with it — <i>mañana</i> becomes <i>al día siguiente</i>, <i>aquí</i> becomes <i>allí</i> — and failing to move it is the commonest sign of a report assembled word by word.' },
+    { h: 'Smuggling your opinion in', html: 'A preposed adjective or an evaluative noun phrase inserts your verdict into a report that otherwise looks neutral: <i>Alberto me dijo que lo llamara</i> becomes <i>el canalla de Alberto me dijo que lo llamara</i>. Interjections do not survive intact — they are absorbed into the clause: <i>María dijo: «¡Ay, qué susto!»</i> reports as <i>María dijo que ay, qué susto</i>.' }
+  ],
+  exponents: [
+    { es: 'Me dijo que llegaría al día siguiente.', en: 'He told me he would arrive the next day.', register: 'neutral',
+      note: 'the neutral report; note mañana > al día siguiente' },
+    { es: 'Me aclaró que no había firmado nada.', en: 'He clarified that he had not signed anything.', register: 'neutral',
+      note: 'presents the utterance as resolving a doubt' },
+    { es: 'Me advirtió que no volviera a llamar.', en: 'He warned me not to call again.', register: 'neutral',
+      note: 'advertir + subjunctive: the report is a warning' },
+    { es: 'Me reprochó que no hubiera ido a la reunión.', en: 'He reproached me for not having gone to the meeting.', register: 'formal',
+      note: 'reprochar makes the reported words an accusation' },
+    { es: 'Me soltó que ya se encargaría otro.', en: 'He came out with the line that someone else would deal with it.', register: 'coloquial',
+      note: 'soltar marks the utterance as blunt and unwelcome' },
+    { es: 'El canalla de Alberto me dijo que lo llamara hoy mismo.', en: 'That swine Alberto told me to call him this very day.', register: 'coloquial',
+      note: 'the evaluative phrase is the reporter\'s verdict, not the speaker\'s' },
+    { es: 'Los abajo firmantes hacen constar que no fueron informados.', en: 'The undersigned state that they were not informed.', register: 'escrito',
+      note: 'hacer constar: the reporting formula of official writing' }
+  ],
+  pitfalls: [
+    'Deixis has to move with the tense. <i>Me dijo que venía mañana</i> only works if <i>mañana</i> is still in the future when you speak; otherwise it is <i>al día siguiente</i>.',
+    'An imperative reported becomes the subjunctive, not an infinitive: <i>«Llámame»</i> → <i>me dijo que lo llamara</i>, never <i>*me dijo llamarlo</i>.',
+    'Choosing a loaded announcing verb is a claim you are making. <i>Reprochar</i>, <i>soltar</i> and <i>insinuar</i> will be read as your characterisation, and in writing you can be held to it.'
+  ],
+  examples: [
+    { es: 'La ministra aclaró que la medida no afectaría a los contratos vigentes.', en: 'The minister clarified that the measure would not affect existing contracts.' },
+    { es: 'Nos advirtieron que no dejáramos nada de valor en el coche.', en: 'They warned us not to leave anything valuable in the car.' },
+    { es: 'Le reprochó que hubiera tomado la decisión sin consultar a nadie.', en: 'She reproached him for having taken the decision without consulting anyone.' }
+  ],
+  probes: [
+    { id: 'p:indir:verbo', kind: 'mcq',
+      q: 'Quieres presentar lo dicho como una acusación. ¿Qué verbo anunciador usas?',
+      options: ['aclarar', 'reprochar', 'observar'], answer: 1 },
+    { id: 'p:indir:restric', kind: 'mcq',
+      q: '¿Cuál es imposible en estilo indirecto?',
+      options: ['Le dijo que era morena.', 'Le cantó que era morena.', 'Le repitió que era morena.'], answer: 1 },
+    { id: 'p:indir:cloze', kind: 'cloze',
+      text: '«Llámame mañana.» → Me dijo que lo ___ al día siguiente.', accept: ['llamara'] },
+    { id: 'p:indir:deixis', kind: 'mcq',
+      q: 'Informas hoy de algo dicho la semana pasada sobre el día siguiente. ¿Qué usas?',
+      options: ['mañana', 'al día siguiente', 'hoy'], answer: 1 },
+    { id: 'p:indir:recall', kind: 'recall',
+      front: 'A reported imperative goes into which mood?', back: 'the subjunctive (me dijo que lo llamara)' }
+  ]
+},
+
+{
+  id: 'dc-citas-encubiertas-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:86', 'tacticas_pragmaticas:C1:87', 'tacticas_pragmaticas:C1:88',
+         'tacticas_pragmaticas:C1:89', 'tacticas_pragmaticas:C1:90', 'tacticas_pragmaticas:C1:91'],
+  title: 'Citas encubiertas: decirlo sin responder de ello',
+  summary: 'Spanish can mark information as second-hand without any verb of saying at all — most strikingly by putting a present or future event into the imperfect. "Ernesto llegaba mañana" says the same as "llegará", except that the speaker is passing on what they were told and declines to vouch for it. This is invisible to a learner who reads the imperfect as a past tense.',
+  sections: [
+    { h: 'The imperfect that is not past', html: '<i>Ernesto llegaba mañana de París.</i> The event is in the future; the imperfect is doing something else entirely. It marks the statement as reported — I was told this — and quietly withholds the speaker\'s commitment. Compare <i>Ernesto llegará mañana</i>, which the speaker asserts.' },
+    { h: 'The same trick over a past event', html: 'It works over the preterite too: <i>Ernesto llegó ayer. Comía con Julia y se quedaba en su casa.</i> The first sentence is asserted; the two imperfects are relayed. A listener hears exactly where the speaker\'s own knowledge stops.' },
+    { h: 'Naming the source without naming it', html: '<i>según me dicen</i>, <i>según parece</i>, <i>por lo visto</i>, <i>al parecer</i>, <i>en palabras de</i> all attribute without committing. <i>Por lo visto</i> and <i>al parecer</i> are the workhorses of Spanish journalism for exactly this reason.' },
+    { h: 'Conceding a quotation in order to reject it', html: 'The future can quote an opinion and grant it before objecting: <i>—Marta es muy lista. —Será muy lista, pero no ha resuelto el problema.</i> <i>Será</i> here is not future at all; it concedes what the other person said. <i>Aunque</i> + subjunctive does the same work: <i>Aunque sea muy tarde, tenemos que terminarlo.</i>' }
+  ],
+  exponents: [
+    { es: 'Ernesto llegaba mañana de París.', en: 'Ernesto is arriving from Paris tomorrow (or so I am told).', register: 'coloquial',
+      note: 'imperfect for a future event: relayed, not vouched for' },
+    { es: 'Comía con Julia y se quedaba en su casa.', en: 'He had lunch with Julia and stayed at her place (apparently).', register: 'coloquial',
+      note: 'imperfect over a past event, marking it second-hand' },
+    { es: 'Ya han terminado, según me dicen.', en: 'They have finished, so I am told.', register: 'neutral' },
+    { es: 'Por lo visto, la reunión se ha aplazado.', en: 'Apparently the meeting has been postponed.', register: 'neutral',
+      note: 'the everyday evidential; extremely common' },
+    { es: 'Al parecer, no se informó a los afectados.', en: 'It appears the affected parties were not informed.', register: 'escrito',
+      note: 'the press formula for an unconfirmed claim' },
+    { es: 'En palabras del propio autor, se trata de un experimento.', en: "In the author's own words, it is an experiment.", register: 'escrito' },
+    { es: 'Será muy lista, pero no ha resuelto el problema.', en: 'She may well be clever, but she has not solved the problem.', register: 'neutral',
+      note: 'concessive future: quotes the claim and grants it before objecting' },
+    { es: 'Aunque sea muy tarde, tenemos que terminarlo.', en: 'Even if it is very late, we have to finish it.', register: 'neutral',
+      note: 'aunque + subjunctive concedes a point already made by someone else' }
+  ],
+  pitfalls: [
+    'The relaying imperfect is not a past tense and must not be translated as one. <i>Ernesto llegaba mañana</i> is about tomorrow.',
+    'It carries a real disclaimer. If you assert something yourself and use it, you will be heard as distancing yourself from your own statement — and later as having hedged deliberately.',
+    '<i>Será muy lista, pero…</i> is not a prediction. Reading it as future is the commonest misparse of this construction; the clue is that a <i>pero</i> is almost always coming.'
+  ],
+  examples: [
+    { es: 'Por lo visto, el examen se ha adelantado una semana.', en: 'Apparently the exam has been brought forward by a week.' },
+    { es: '—El piso es una ganga. —Será una ganga, pero a mí me parece carísimo.', en: '—The flat is a bargain. —It may be a bargain, but it looks very expensive to me.' },
+    { es: 'Según me dicen, el tren salía a las seis.', en: 'I am told the train leaves at six.' }
+  ],
+  probes: [
+    { id: 'p:cita:imperf', kind: 'mcq',
+      q: '«Ernesto llegaba mañana de París.» ¿Qué añade el imperfecto?',
+      options: ['Que ya llegó', 'Que el hablante lo ha oído y no lo garantiza', 'Que llegará más tarde de lo previsto'], answer: 1 },
+    { id: 'p:cita:concesivo', kind: 'mcq',
+      q: '«—Marta es muy lista. —___ muy lista, pero no ha resuelto el problema.»',
+      options: ['Es', 'Será', 'Sería'], answer: 1 },
+    { id: 'p:cita:cloze', kind: 'cloze',
+      text: '___ lo visto, la reunión se ha aplazado.', accept: ['Por', 'por'] },
+    { id: 'p:cita:recall', kind: 'recall',
+      front: 'Two ways to relay information without vouching for it, with no verb of saying',
+      back: 'the imperfect (llegaba mañana) and por lo visto / al parecer / según me dicen' }
+  ]
+},
+
+{
+  id: 'dc-atenuacion-dialogica-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:313', 'tacticas_pragmaticas:C1:314',
+         'tacticas_pragmaticas:C1:315', 'tacticas_pragmaticas:C1:316'],
+  title: 'Atenuación dialógica: discrepar sin romper nada',
+  summary: 'Disagreement in Spanish is almost never delivered flat. It is prefaced — by a partial agreement, an admission of ignorance, or an apology for what is about to be said — and the preface is not decoration: it is what keeps the exchange open. Skipping it does not sound direct, it sounds hostile.',
+  sections: [
+    { h: 'Agree partially, then turn', html: 'The standard move grants something before withdrawing it: <i>No, no es eso exactamente, es que…</i>, <i>Sí, bueno, pero…</i>, <i>Yo no digo que esté mal, pero yo no lo haría.</i> That last frame is worth learning whole: <i>no digo que</i> + subjunctive denies an accusation you have not been given, then states the objection.' },
+    { h: 'Plead ignorance rather than assert error', html: 'Instead of "you are wrong", C1 Spanish reaches for <i>No sé, la verdad es que yo no diría eso</i> or <i>Puede que me equivoque, pero…</i>. The speaker relocates the disagreement into their own uncertainty. It is a fiction and everyone knows it; declining to use it is what gets noticed.' },
+    { h: 'Minimising the other person\'s claim', html: '<i>Bueno, no creas</i>, <i>hombre, tanto como eso no</i> and <i>no es para tanto</i> shrink a claim rather than contradicting it. <i>—La carretera estará sin asfaltar. —Bueno, no creas, está bastante bien.</i>' },
+    { h: 'Apologising in advance', html: 'Formal registers preface the disagreement outright: <i>Sin ánimo de contradecirle, creo que se equivoca</i>, <i>Con todos mis respetos</i>, <i>Si me permite la observación</i>. These are stronger than they look — they announce that disagreement is coming and make it impossible to take as an accident.' }
+  ],
+  exponents: [
+    { es: 'Bueno, no creas, está bastante bien.', en: "Well, I wouldn't say so — it's rather good.", register: 'coloquial',
+      note: 'minimises the claim instead of contradicting it' },
+    { es: 'Hombre, tanto como eso no.', en: 'Come on, not to that extent.', register: 'coloquial' },
+    { es: 'No, no es eso exactamente, es que lo necesito para mañana.', en: "No, that's not quite it — the thing is I need it for tomorrow.", register: 'neutral',
+      note: 'partial agreement as a preface to the real point' },
+    { es: 'Yo no digo que esté mal, pero yo no lo haría.', en: "I'm not saying it's wrong, but I wouldn't do it.", register: 'neutral',
+      note: 'no digo que + subjunctive: denies an accusation not yet made' },
+    { es: 'No sé, la verdad es que yo no lo diría así.', en: "I don't know — honestly, I wouldn't put it like that.", register: 'neutral',
+      note: 'relocates the disagreement into the speaker\'s own uncertainty' },
+    { es: 'Puede que me equivoque, pero los datos no cuadran.', en: "I may be wrong, but the figures don't add up.", register: 'neutral' },
+    { es: 'Sin ánimo de contradecirle, creo que hay un error.', en: 'Without wishing to contradict you, I think there is an error.', register: 'formal',
+      note: 'announces the disagreement before making it' },
+    { es: 'Si me permite la observación, el cálculo no es correcto.', en: 'If I may make an observation, the calculation is not correct.', register: 'formal' }
+  ],
+  pitfalls: [
+    'A bare <i>no estoy de acuerdo</i> is grammatically perfect and pragmatically abrupt. In a meeting it will be heard as a challenge to the person, not the claim.',
+    '<i>No digo que</i> takes the <b>subjunctive</b>: <i>no digo que esté mal</i>, never <i>*no digo que está mal</i>.',
+    '<i>Sin ánimo de contradecirle</i> is not neutral politeness — it is a formal flag that disagreement follows. Used among friends it sounds sarcastic, which may be the point, but know that it will land that way.'
+  ],
+  examples: [
+    { es: '—Creo que deberíamos aplazarlo. —No sé, la verdad es que yo lo haría ya.', en: '—I think we should postpone it. —I don\'t know, honestly I would do it now.' },
+    { es: 'Puede que me equivoque, pero esa cifra no coincide con el informe anterior.', en: 'I may be wrong, but that figure does not match the previous report.' },
+    { es: 'Yo no digo que sea imposible, pero necesitaríamos el doble de tiempo.', en: 'I am not saying it is impossible, but we would need twice the time.' }
+  ],
+  probes: [
+    { id: 'p:atdial:subj', kind: 'cloze',
+      text: 'Yo no digo que ___ mal, pero yo no lo haría. (estar)', accept: ['esté'] },
+    { id: 'p:atdial:registro', kind: 'mcq',
+      q: 'En una reunión formal, ¿cómo introduces un desacuerdo?',
+      options: ['Hombre, tanto como eso no.', 'Sin ánimo de contradecirle, creo que hay un error.', 'No estoy de acuerdo.'], answer: 1 },
+    { id: 'p:atdial:minimizar', kind: 'mcq',
+      q: '«—La carretera estará sin asfaltar. —___, está bastante bien arreglada.»',
+      options: ['Bueno, no creas', 'Desde luego', 'Por supuesto'], answer: 0 },
+    { id: 'p:atdial:recall', kind: 'recall',
+      front: 'Three ways to preface a disagreement in Spanish',
+      back: 'partial agreement (no es eso exactamente) · claimed uncertainty (no sé, puede que me equivoque) · advance apology (sin ánimo de contradecirle)' }
+  ]
+},
+
+{
+  id: 'dc-metaforas-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:147', 'tacticas_pragmaticas:C1:148',
+         'tacticas_pragmaticas:C1:149', 'tacticas_pragmaticas:C1:150', 'tacticas_pragmaticas:C1:151'],
+  title: 'Metáforas: el juicio escondido en la gramática',
+  summary: 'Spanish carries evaluation in constructions, not just in adjectives. "Marta es un plomo" is not a description with a colourful noun — the indefinite article plus an evaluative noun IS the judgment, and there is no neutral way to say it. Learners who translate the words and miss the frame produce Spanish that is grammatical and expressionless.',
+  sections: [
+    { h: 'un + evaluative noun', html: 'The frame <b>ser + un/una + noun</b> converts a noun into a verdict on a person: <i>es un plomo</i> (a bore), <i>es un lince</i> (sharp), <i>es una fiera</i> (formidable), <i>es un gallina</i> (a coward). Note <i>un gallina</i> keeps the masculine article for a man even though <i>gallina</i> is feminine — the article agrees with the person, not the noun.' },
+    { h: 'como si + imperfect subjunctive', html: 'Comparative metaphor takes the subjunctive obligatorily: <i>Estaba tan modosita como si nunca hubiera roto un plato.</i> The construction asserts that the comparison is counterfactual — <i>como si</i> + indicative is not an option, and getting it wrong destroys the irony the frame exists to carry.' },
+    { h: 'Frozen metaphors', html: 'A large part of everyday Spanish is metaphor that has stopped being felt as such: <i>morirse de risa</i>, <i>llover a mares</i>, <i>tomar el pelo</i>, <i>tener los pies en la tierra</i>, <i>costar un ojo de la cara</i>. These are not optional colour; a C1 speaker who avoids them sounds translated.' },
+    { h: 'Exclamative frames', html: '<i>¡Qué rollo!</i>, <i>¡vaya tela!</i>, <i>¡menudo lío!</i> package an evaluation with no verb at all. <i>Vaya</i> and <i>menudo</i> are almost always ironic in this frame: <i>¡menudo negocio!</i> means the deal was terrible.' }
+  ],
+  exponents: [
+    { es: 'Marta es un plomo.', en: 'Marta is a crashing bore.', register: 'coloquial',
+      note: 'ser + un + evaluative noun; the frame is the judgment' },
+    { es: 'Ese chico es un lince para los números.', en: 'That lad is razor-sharp with figures.', register: 'coloquial' },
+    { es: 'Es un gallina, no se atreve a decírselo.', en: "He's a coward, he doesn't dare tell her.", register: 'coloquial',
+      note: 'masculine article for a man despite the feminine noun' },
+    { es: '¡Menudo lío has organizado!', en: 'What a mess you have made!', register: 'coloquial',
+      note: 'menudo in this frame is ironic — it means the opposite of small' },
+    { es: 'Estaba tan modosita como si nunca hubiera roto un plato.', en: 'She looked as demure as if butter would not melt.', register: 'neutral',
+      note: 'como si takes the imperfect subjunctive, obligatorily' },
+    { es: 'Nos costó un ojo de la cara.', en: 'It cost us an arm and a leg.', register: 'neutral' },
+    { es: 'Hay que tener los pies en la tierra.', en: 'One has to keep one\'s feet on the ground.', register: 'neutral' },
+    { es: 'El informe es, por así decirlo, un ejercicio de optimismo.', en: 'The report is, so to speak, an exercise in optimism.', register: 'escrito',
+      note: 'por así decirlo flags the metaphor as deliberate — the written register\'s way of being pointed' }
+  ],
+  pitfalls: [
+    '<i>Como si</i> is never followed by the indicative. <i>*Como si no sabe</i> is wrong; it is <i>como si no supiera</i>.',
+    'The article in <i>ser un/una + noun</i> agrees with the PERSON, not the noun: a man is <i>un gallina</i>, a woman <i>una gallina</i>.',
+    'Frozen metaphors do not translate word for word and cannot be improvised. <i>*Llover gatos y perros</i> means nothing; it is <i>llover a mares</i> or <i>a cántaros</i>.'
+  ],
+  examples: [
+    { es: 'No le pidas ayuda, es un plomo y no para de quejarse.', en: 'Do not ask him for help, he is a bore and never stops complaining.' },
+    { es: 'Nos miró como si no entendiera nada.', en: 'He looked at us as if he understood nothing.' },
+    { es: 'La reforma ha costado un ojo de la cara y aún no ha terminado.', en: 'The refurbishment has cost a fortune and is still not finished.' }
+  ],
+  probes: [
+    { id: 'p:metaf:comosi', kind: 'cloze',
+      text: 'Nos miró como si no ___ nada. (entender)', accept: ['entendiera', 'entendiese'] },
+    { id: 'p:metaf:articulo', kind: 'mcq',
+      q: 'Hablando de un hombre cobarde, ¿cómo se dice?',
+      options: ['es una gallina', 'es un gallina', 'es gallina'], answer: 1 },
+    { id: 'p:metaf:menudo', kind: 'mcq',
+      q: '«¡Menudo negocio has hecho!» ¿Qué significa normalmente?',
+      options: ['Que el negocio fue excelente', 'Que el negocio fue pésimo', 'Que el negocio fue pequeño'], answer: 1 },
+    { id: 'p:metaf:recall', kind: 'recall',
+      front: 'Which mood does “como si” require?', back: 'the imperfect subjunctive (como si no supiera)' }
+  ]
+},
+
+{
+  id: 'dc-ironia-c1', strand: 'discourse', cefr: 'C1', level: 10, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:152', 'tacticas_pragmaticas:C1:153', 'tacticas_pragmaticas:C1:154',
+         'tacticas_pragmaticas:C1:155', 'tacticas_pragmaticas:C1:156', 'tacticas_pragmaticas:C1:158'],
+  title: 'Indicadores de ironía: cómo se marca que no lo dices en serio',
+  summary: 'Irony is the last thing a learner acquires and the first thing that isolates them if they miss it. Spanish marks it — with unfinished sentences, with a contradiction between the words and an obvious fact, with praise nobody could mean. Recognising the markers matters more than producing them: the cost of hearing "Gracias por tu ayuda" straight is high.',
+  sections: [
+    { h: 'The suspended sentence', html: 'Trailing off is the commonest marker. <i>—Tendrías que decirle a Javier que te ayude. —Sí, como viene tanto…</i> The unspoken second half carries the meaning, and the intonation falls away rather than closing. In writing it appears as suspension points; the listener is expected to complete it and understand that the completion is negative.' },
+    { h: 'Contradiction in terms', html: 'A word placed against a fact that flatly contradicts it: <i>El libro ha costado una nimiedad: 800 euros.</i> Nothing in the grammar signals irony; the collision between <i>nimiedad</i> and the figure does all of it. This is the marker most often missed by learners, because each half is unremarkable.' },
+    { h: 'Praise that cannot be meant', html: '<i>Gracias por tu ayuda, no sé qué habría hecho sin ti</i> said to someone who did nothing. <i>¡Enhorabuena, eres un as para los negocios!</i> after a bad deal. The frame is ordinary congratulation; only the situation marks it. Spanish uses this far more readily than English, and among friends it is affectionate rather than cutting.' },
+    { h: 'Exclamative frames and generalisations', html: '<i>¡Pues vaya negocio que has hecho!</i> — <i>vaya</i> plus a positive noun is reliably ironic. So are sweeping toasts to the obvious: <i>¡Vivan las personas inteligentes!</i> after someone has done something foolish.' }
+  ],
+  exponents: [
+    { es: 'Sí, como viene tanto…', en: 'Right, since he comes round so often…', register: 'coloquial',
+      note: 'suspended sentence; the unsaid half carries the meaning' },
+    { es: '¡Pues vaya negocio que has hecho!', en: 'Well, what a fine deal you have made!', register: 'coloquial',
+      note: 'vaya + positive noun is reliably ironic' },
+    { es: 'Gracias por tu ayuda, no sé qué habría hecho sin ti.', en: "Thanks for your help, I don't know what I'd have done without you.", register: 'coloquial',
+      note: 'praise nobody could mean; among friends this is affectionate' },
+    { es: 'Ha costado una nimiedad: ochocientos euros.', en: 'It cost a trifle: eight hundred euros.', register: 'neutral',
+      note: 'contradictio in terminis — the figure does the work' },
+    { es: '¡Vivan las personas inteligentes!', en: 'Three cheers for intelligent people!', register: 'coloquial',
+      note: 'a generalisation aimed at one person who has just done something stupid' },
+    { es: 'Enhorabuena, eres un as para los negocios.', en: 'Congratulations, you are a genius at business.', register: 'coloquial' },
+    { es: 'No deja de ser curioso que el informe apareciera justo después.', en: 'It is not without interest that the report appeared just afterwards.', register: 'escrito',
+      note: 'written irony works by understatement: litotes plus a pointed fact' },
+    { es: 'Cabe felicitar a los responsables por su extraordinaria previsión.', en: 'One must congratulate those responsible for their extraordinary foresight.', register: 'escrito',
+      note: 'the formal register\'s irony: exaggerated praise in a context that refutes it' }
+  ],
+  pitfalls: [
+    'Irony is not signalled by any word you can look up. If you have understood every word and the sentence still makes no sense against the facts, assume irony before assuming you misheard.',
+    'The suspended sentence has no written equivalent in English punctuation habits. Trailing off mid-clause is normal and deliberate in Spanish speech, not a failure to finish.',
+    'Producing irony in a language you are still learning is risky in formal settings: <i>cabe felicitar…</i> read straight is a compliment, and if your listener is not sure you meant it ironically, they will assume you did not.'
+  ],
+  examples: [
+    { es: '—Ha vuelto a llegar tarde. —Sí, es puntualísimo, ya lo sabes.', en: '—He has arrived late again. —Yes, he is extremely punctual, as you know.' },
+    { es: 'La reunión duró cuatro horas y resolvimos, cómo no, absolutamente nada.', en: 'The meeting lasted four hours and we resolved, needless to say, absolutely nothing.' },
+    { es: 'No deja de ser llamativo que nadie recordara ese detalle.', en: 'It is striking that nobody remembered that detail.' }
+  ],
+  probes: [
+    { id: 'p:ironia:contra', kind: 'mcq',
+      q: '«Ha costado una nimiedad: ochocientos euros.» ¿Qué marca la ironía?',
+      options: ['El verbo costar', 'La contradicción entre "nimiedad" y la cifra', 'El uso del pretérito'], answer: 1 },
+    { id: 'p:ironia:vaya', kind: 'mcq',
+      q: '«¡Pues vaya negocio que has hecho!» significa que el negocio fue…',
+      options: ['excelente', 'malo', 'pequeño'], answer: 1 },
+    { id: 'p:ironia:suspendida', kind: 'mcq',
+      q: '«—Deberías pedírselo a Javier. —Sí, como viene tanto…» ¿Qué implica la frase suspendida?',
+      options: ['Que Javier viene mucho y ayudará', 'Que Javier no viene casi nunca', 'Que Javier vendrá pronto'], answer: 1 },
+    { id: 'p:ironia:recall', kind: 'recall',
+      front: 'The written register marks irony chiefly by which device?',
+      back: 'understatement (litotes) set against a pointed fact — no deja de ser curioso que…' }
+  ]
+},
+
+{
+  id: 'dc-imperfecto-modal-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:271', 'tacticas_pragmaticas:C1:272',
+         'tacticas_pragmaticas:C1:273', 'tacticas_pragmaticas:C1:274'],
+  title: 'El imperfecto que no habla del pasado',
+  summary: 'Beyond narration, the imperfect does jobs that have nothing to do with past time: it excuses, it registers surprise, it softens a request. "¡Y yo qué sabía!" is not a statement about what you once knew — it is a defence. These uses are frequent in speech and almost never taught, so learners hear a past tense and lose the speaker\'s attitude entirely.',
+  sections: [
+    { h: 'Imperfecto de excusa', html: '<i>¡Y yo qué sabía!</i> — "How was I supposed to know!" The imperfect relocates the speaker to the moment before the problem, where their ignorance was reasonable. It is a defence against blame, not a report.' },
+    { h: 'Imperfecto de sorpresa', html: 'Meeting an expectation that has been overturned: <i>Anda, estabas aquí; ¿no te habías ido?</i> or <i>¿Tú no tenías un examen?</i> The imperfect marks what the speaker had assumed, and the surprise lies in the gap between that and what they now see. With disapproval it becomes an accusation dressed as a question.' },
+    { h: 'Imperfecto de cortesía', html: '<i>Quería preguntarle una cosa</i>, <i>Venía a ver si…</i> — the wish is present, and the imperfect puts distance between the speaker and their own request, which makes it easier to refuse. Compare the blunt <i>Quiero preguntarle una cosa</i>.' },
+    { h: 'Como + futuro perfecto', html: 'Conjecture and warning combine: <i>Como se haya olvidado, no llegamos.</i> The compound future here is not future time at all — it guesses at something already done, and <i>como</i> makes the guess a threat or a fear rather than a neutral supposition.' }
+  ],
+  exponents: [
+    { es: '¡Y yo qué sabía!', en: 'How was I supposed to know!', register: 'coloquial',
+      note: 'imperfecto de excusa: a defence, not a report' },
+    { es: 'Anda, estabas aquí; ¿no te habías ido?', en: 'Oh, you were here — hadn\'t you left?', register: 'coloquial',
+      note: 'imperfecto de sorpresa: marks the overturned expectation' },
+    { es: '¿Tú no tenías un examen mañana?', en: "Didn't you have an exam tomorrow?", register: 'coloquial',
+      note: 'surprise with reproach — an accusation shaped as a question' },
+    { es: 'Yo venía a ver si podían atenderme.', en: 'I was coming to see whether you could see me.', register: 'neutral',
+      note: 'imperfecto de cortesía: distances the speaker from their own request' },
+    { es: 'Quería preguntarle una cosa.', en: 'I wanted to ask you something.', register: 'formal',
+      note: 'the standard polite opener; the present would be blunt' },
+    { es: 'Como se haya olvidado, no llegamos a tiempo.', en: 'If he has forgotten, we will not make it in time.', register: 'neutral',
+      note: 'como + futuro perfecto/subjunctive: conjecture as a threat' },
+    { es: 'Le escribía para interesarme por el estado del expediente.', en: 'I am writing to enquire about the status of the file.', register: 'escrito',
+      note: 'the epistolary imperfect — present in meaning, distanced in form' }
+  ],
+  pitfalls: [
+    'None of these is a past tense. Translating <i>quería preguntarle</i> as "I wanted to ask you" loses that the wish is present and the imperfect is politeness.',
+    '<i>¿Tú no tenías un examen?</i> is rarely a genuine question about the past. Answering it as one — <i>sí, lo tenía</i> — misses that you are being told to go and study.',
+    'The courtesy imperfect belongs to requests and openings. Used for a firm statement it makes you sound unsure of your own position.'
+  ],
+  examples: [
+    { es: '—Has puesto sal dos veces. —¡Y yo qué sabía que ya la habías puesto!', en: '—You put salt in twice. —How was I supposed to know you already had!' },
+    { es: 'Buenos días, quería consultarle una duda sobre la factura.', en: 'Good morning, I wanted to ask you about a query on the invoice.' },
+    { es: 'Como no hayan salido ya, llegarán tardísimo.', en: 'If they have not left already, they will arrive terribly late.' }
+  ],
+  probes: [
+    { id: 'p:impmod:excusa', kind: 'mcq',
+      q: '«¡Y yo qué sabía!» ¿Qué hace el hablante?',
+      options: ['Informa de lo que sabía antes', 'Se defiende de una acusación', 'Pregunta por una información'], answer: 1 },
+    { id: 'p:impmod:cortesia', kind: 'mcq',
+      q: 'Entras en una oficina a pedir algo. ¿Cuál suena mejor?',
+      options: ['Quiero preguntarle una cosa.', 'Quería preguntarle una cosa.', 'Querré preguntarle una cosa.'], answer: 1 },
+    { id: 'p:impmod:cloze', kind: 'cloze',
+      text: 'Anda, ___ aquí; ¿no te habías ido? (estar, tú)', accept: ['estabas'] },
+    { id: 'p:impmod:recall', kind: 'recall',
+      front: 'Three jobs the imperfect does that have nothing to do with past time',
+      back: 'excuse (¡y yo qué sabía!) · surprise (¿tú no tenías examen?) · courtesy (quería preguntarle)' }
+  ]
+},
+
+{
+  id: 'dc-indefinido-perfecto-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:275', 'tacticas_pragmaticas:C1:276',
+         'tacticas_pragmaticas:C1:277', 'tacticas_pragmaticas:C1:278'],
+  title: 'Indefinido o perfecto: acercar y alejar lo ocurrido',
+  summary: 'The rule learners are taught — perfecto for today, indefinido for finished time — is the default, not the whole system. A speaker who breaks it is doing something: pulling a distant event into the present to claim it still matters, or pushing a recent one away to close it off. At C1 the deviation is the message.',
+  sections: [
+    { h: 'The default, and why it is only a default', html: '<i>Hoy he comido fuera</i> / <i>Ayer comí fuera</i> is the peninsular norm: the perfect for a period including now, the preterite for one that does not. Everything below is a deliberate departure from it, and native speakers make these departures constantly.' },
+    { h: 'Pulling the distant close', html: '<i>El año pasado no he ido a ningún sitio de vacaciones.</i> The time expression is finished, so the rule says <i>fui</i>. The perfect claims the fact is still live — the speaker is complaining about a state that persists, not reporting a completed year.' },
+    { h: 'Pushing the recent away', html: '<i>Hace un momento fui a su despacho y no estaba.</i> By the rule this should be <i>he ido</i>. The preterite closes the episode off: it is over, nothing follows from it, and the speaker has moved on. Used of something the listener hoped was still open, it is a way of ending the conversation.' },
+    { h: 'Where the choice does not exist', html: 'Across most of Spanish America, and in the north-west and parts of the south of Spain, the compound perfect is rare or absent and <i>fui</i> covers both. A learner who has internalised the peninsular rule will hear those speakers as making errors; they are not. The distinction described here is a feature of central and southern peninsular usage.' }
+  ],
+  exponents: [
+    { es: 'Hoy he comido fuera.', en: 'I ate out today.', register: 'neutral',
+      note: 'the default: a period that includes now' },
+    { es: 'Ayer comí fuera.', en: 'I ate out yesterday.', register: 'neutral',
+      note: 'the default: a closed period' },
+    { es: 'El año pasado no he ido a ningún sitio de vacaciones.', en: "Last year I didn't go anywhere on holiday.", register: 'coloquial',
+      note: 'perfect over a closed period: the complaint is still live' },
+    { es: 'Hace un momento fui a su despacho y no estaba.', en: 'A moment ago I went to his office and he was not there.', register: 'coloquial',
+      note: 'preterite over a recent event: the episode is closed' },
+    { es: 'Siempre he pensado que fue un error.', en: 'I have always thought it was a mistake.', register: 'neutral',
+      note: 'the two together: a persisting opinion about a closed event' },
+    { es: 'La comisión ha resuelto hoy el expediente iniciado en marzo.', en: 'The commission has today resolved the file opened in March.', register: 'escrito',
+      note: 'the written register keeps the default strictly; deviations read as errors' }
+  ],
+  pitfalls: [
+    'This is a matter of what the speaker is doing, not of time alone. Correcting <i>el año pasado no he ido</i> to <i>no fui</i> removes the complaint and leaves a bare fact.',
+    'Do not export the peninsular contrast to Latin American speech. In much of the Americas <i>fui</i> covers both, and hearing that as an error is a listening failure, not theirs.',
+    'In formal writing keep the default. The expressive uses belong to speech, and in a report they will be read as carelessness rather than nuance.'
+  ],
+  examples: [
+    { es: 'Este mes no he parado un solo día.', en: 'I have not stopped a single day this month.' },
+    { es: '—¿Has hablado con ella? —Hablé esta mañana, pero ya está todo resuelto.', en: '—Have you spoken to her? —I spoke this morning, but it is all sorted now.' },
+    { es: 'Siempre he creído que aquella decisión nos costó muy cara.', en: 'I have always believed that that decision cost us dearly.' }
+  ],
+  probes: [
+    { id: 'p:indperf:acercar', kind: 'mcq',
+      q: '«El año pasado no he ido a ningún sitio.» ¿Por qué el perfecto y no el indefinido?',
+      options: ['Es un error', 'El hablante presenta la queja como todavía vigente', 'El año pasado no ha terminado'], answer: 1 },
+    { id: 'p:indperf:alejar', kind: 'mcq',
+      q: '«Hace un momento ___ a su despacho y no estaba.» El hablante quiere dar el episodio por cerrado.',
+      options: ['he ido', 'fui', 'iba'], answer: 1 },
+    { id: 'p:indperf:variedad', kind: 'mcq',
+      q: 'Un hablante de Buenos Aires dice «hoy fui al médico». ¿Qué ocurre?',
+      options: ['Es un error de concordancia temporal', 'Es el uso normal de su variedad', 'Está alejando el episodio deliberadamente'], answer: 1 },
+    { id: 'p:indperf:recall', kind: 'recall',
+      front: 'What does using the perfect over a closed period achieve?',
+      back: 'it claims the fact is still relevant now — a complaint or a state that persists' }
+  ]
 }
 
 ];

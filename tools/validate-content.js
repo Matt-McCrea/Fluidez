@@ -250,7 +250,12 @@ function addressMix(text) {
  * The second check is consistency: the same exponent tagged two ways in two
  * lessons means at least one is wrong, and finding that needs no judgement. */
 const TU_MARKERS = /\b(tú|te|ti|tu|tus|contigo|vosotros|os|vuestro|vuestra)\b/i;
-const USTED_MARKERS = /\b(usted|ustedes|su|sus|le|les|suyo|sírvase|ruego|agradecería|quisiera)\b/i;
+/* Markers that PROVE usted address. "su", "le" and "les" are deliberately
+ * absent: they are third-person far more often than they are usted, so
+ * including them flagged "nadie le obligó a firmar" (nobody forced HIM) and
+ * "se quedaba en su casa" (at HER place) as formal. A check that fires on
+ * correct content is worse than no check. */
+const USTED_MARKERS = /\b(usted|ustedes|sírvase|agradecería|quisiera)\b/i;
 const COLLOQUIAL_TELLS = /\b(tío|tía|vale|o sea|hombre|mujer|venga|joder|guay|pues sí|qué va|ni de coña)\b/i;
 const FORMAL_TELLS = /\b(estimado|atentamente|le ruego|me dirijo|expuesto|cordialmente|sírvase|no obstante|por cuanto)\b/i;
 const exponentRegister = new Map();
