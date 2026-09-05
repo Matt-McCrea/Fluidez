@@ -86,32 +86,32 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción descriptiva: objetos** · 15 pts · `generos_discursivos A1 § 3.2. Macrofunción descriptiva: obj`  — gn-describir-objeto-a1
 - [x] **Macrofunción descriptiva: lugares** · 16 pts · `generos_discursivos A1 § 3.3. Macrofunción descriptiva: lug`  — gn-describir-lugar-a1
 
-## A2 — lessons (75/86 done)
+## A2 — lessons (85/86 done)
 
-### A2 · grammar (17/21)
-- [ ] **Clases de sustantivos** · 9 pts · `gramatica A2 § 1.1. Clases de sustantivos`
+### A2 · grammar (21/21)
+- [x] **Clases de sustantivos** · 9 pts · `gramatica A2 § 1.1. Clases de sustantivos`  — gr-sustantivos-especiales-a2
 - [x] **El género de los sustantivos** · 11 pts · `gramatica A2 § 1.2. El género de los sustantivos`  — gr-masculino-a2
 - [x] **Grados del adjetivo** · 9 pts · `gramatica A2 § 2.5. Grados del adjetivo`  — gr-comparativo-a2
 - [x] **El artículo definido** · 17 pts · `gramatica A2 § 3.1. El artículo definido`  — gr-articulo-definido-valores-a2
 - [x] **El artículo indefinido** · 16 pts · `gramatica A2 § 3.2. El artículo indefinido`  — gr-articulo-indefinido-valores-a2
 - [x] **Ausencia de determinación: los nombres escuetos** · 3 pts · `gramatica A2 § 3.3. Ausencia de determinación: lo`  — gr-nombres-escuetos-a2
-- [ ] **Los demostrativos — Valores / significado** · 4 pts · `gramatica A2 § `
+- [x] **Los demostrativos — Valores / significado** · 4 pts · `gramatica A2 § `  — gr-demostrativos-valores-a2
 - [x] **Los posesivos** · 12 pts · `gramatica A2 § `  — gr-posesivos-tonicos-a2
 - [x] **Cuantificadores propios** · 18 pts · `gramatica A2 § 6.1. Cuantificadores propios`  — gr-cuantificadores-a2
 - [x] **El pronombre personal** · 40 pts · `gramatica A2 § 7.1. El pronombre personal`  — gr-pronombres-atonos-a2
 - [x] **Los interrogativos** · 8 pts · `gramatica A2 § 7.3. Los interrogativos`  — gr-interrogativos-exclamativos-a2
 - [x] **Los exclamativos** · 4 pts · `gramatica A2 § 7.4. Los exclamativos`  — gr-interrogativos-exclamativos-a2
-- [ ] **Adverbios nucleares o de predicado** · 16 pts · `gramatica A2 § 8.2. Adverbios nucleares o de pred`
+- [x] **Adverbios nucleares o de predicado** · 16 pts · `gramatica A2 § 8.2. Adverbios nucleares o de pred`  — gr-adverbios-circunstanciales-a2
 - [x] **Tiempos verbales de indicativo** · 31 pts · `gramatica A2 § 9.1. Tiempos verbales de indicativ`  — gr-preterito-imperfecto-a2
 - [x] **El imperativo** · 12 pts · `gramatica A2 § 9.3. El imperativo`  — gr-imperativo-forma-a2
 - [x] **Formas no personales del verbo** · 18 pts · `gramatica A2 § 9.4. Formas no personales del verb`  — gr-gerundio-a2
 - [x] **Complementos y modificadores** · 8 pts · `gramatica A2 § 10.2. Complementos y modificadores`  — gr-restrictivos-nominales-a2
 - [x] **El núcleo** · 24 pts · `gramatica A2 § 12.1. El núcleo`  — gr-nucleo-verbal-tipos-a2
 - [x] **Complementos** · 11 pts · `gramatica A2 § 12.2. Complementos`  — gr-objeto-indirecto-a2
-- [ ] **Tipos de oraciones simples** · 10 pts · `gramatica A2 § 13.3. Tipos de oraciones simples`
+- [x] **Tipos de oraciones simples** · 10 pts · `gramatica A2 § 13.3. Tipos de oraciones simples`  — gr-oraciones-simples-a2
 - [x] **Oraciones subordinadas adverbiales** · 75 pts · `gramatica A2 § 15.3. Oraciones subordinadas adver`  — gr-condicionales-a2
 
-### A2 · notion (17/18)
+### A2 · notion (18/18)
 - [x] **Existencia, inexistencia** · 9 pts · `nociones_generales A2 § 1.1. Existencia, inexistencia`  — nt-existencia-inexistencia-a2
 - [x] **Cualidad general** · 3 pts · `nociones_generales A2 § 1.4. Cualidad general`  — nt-cualidad-material-a2
 - [x] **Necesidad, contingencia, obligación** · 3 pts · `nociones_generales A2 § 1.8. Necesidad, contingencia, obli`  — nt-necesidad-obligacion-a2
@@ -121,7 +121,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Movimiento, estabilidad** · 8 pts · `nociones_generales A2 § 3.5. Movimiento, estabilidad`  — nt-movimiento-estabilidad-a2
 - [x] **Orientación, dirección** · 5 pts · `nociones_generales A2 § 3.6. Orientación, dirección`  — nt-orientacion-direccion-a2
 - [x] **Referencias generales** · 8 pts · `nociones_generales A2 § 4.1. Referencias generales`  — nt-referencias-generales-a2
-- [ ] **Localización en el tiempo** · 15 pts · `nociones_generales A2 § 4.2. Localización en el tiempo`
+- [x] **Localización en el tiempo** · 15 pts · `nociones_generales A2 § 4.2. Localización en el tiempo`  — nt-localizacion-tiempo-a2
 - [x] **Aspectos de desarrollo** · 29 pts · `nociones_generales A2 § 4.3. Aspectos de desarrollo`  — nt-cambio-a2
 - [x] **Formas y figuras** · 13 pts · `nociones_generales A2 § 5.1. Formas y figuras`  — nt-cualidad-material-a2
 - [x] **Visibilidad, visión** · 3 pts · `nociones_generales A2 § 5.8. Visibilidad, visión`  — nt-visibilidad-color-a2
@@ -131,11 +131,11 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Conformidad** · 3 pts · `nociones_generales A2 § 6.7. Conformidad`  — nt-evaluacion-conformidad-a2
 - [x] **Expresión verbal** · 4 pts · `nociones_generales A2 § 7.2. Expresión verbal`  — nt-expresion-verbal-a2
 
-### A2 · function (31/32)
+### A2 · function (32/32)
 - [x] **Identificar** · 5 pts · `funciones A2 § 1.1. Identificar`  — fn-identificar-a2
 - [x] **Pedir información** · 20 pts · `funciones A2 § 1.2. Pedir información`  — fn-pedir-informacion-a2
 - [x] **Dar información** · 10 pts · `funciones A2 § 1.3. Dar información`  — fn-dar-informacion-a2
-- [ ] **Valorar** · 43 pts · `funciones A2 § 2.4. Valorar`
+- [x] **Valorar** · 43 pts · `funciones A2 § 2.4. Valorar`  — fn-valorar-a2
 - [x] **Expresar acuerdo** · 4 pts · `funciones A2 § 2.9. Expresar acuerdo`  — fn-acuerdo-a2
 - [x] **Expresar posibilidad** · 3 pts · `funciones A2 § 2.16. Expresar posibilidad`  — fn-posibilidad-a2
 - [x] **Preguntar por el conocimiento de algo** · 3 pts · `funciones A2 § 2.19. Preguntar por el conocimient`  — fn-preguntar-conocimiento-a2
@@ -174,14 +174,14 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **La expresión de la negación** · 4 pts · `tacticas_pragmaticas A2 § 1.7. La expresión de la negación`  — dc-negacion-refuerzo-a2
 - [x] **Cortesía verbal atenuadora** · 7 pts · `tacticas_pragmaticas A2 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-acto-indirecto-a2
 
-### A2 · genre (3/8)
-- [ ] **Lista alfabética de géneros orales y escritos** · 32 pts · `generos_discursivos A2 § 1.1. Lista alfabética de géneros o`
+### A2 · genre (7/8)
+- [ ] **Lista alfabética de géneros orales y escritos** · 32 pts · `generos_discursivos A2 § 1.1. Lista alfabética de géneros o`  — SKIPPED: all 32 spec points are bare genre names with zero worked examples, a pure taxonomy with nothing to teach (see batch comment in data/strand-lessons.js above gr-sustantivos-especiales-a2)
 - [x] **Géneros de transmisión oral** · 6 pts · `generos_discursivos A2 § 1.2. Géneros de transmisión oral`  — gn-instrucciones-a2
 - [x] **Géneros de transmisión escrita** · 21 pts · `generos_discursivos A2 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-a2
-- [ ] **Conversación transaccional (Nivel A2)** · 47 pts · `generos_discursivos A2 § 2.1.1. Conversación transaccional `
-- [ ] **Macrofunción descriptiva: personas** · 22 pts · `generos_discursivos A2 § 3.1. Macrofunción descriptiva: per`
-- [ ] **Macrofunción descriptiva: objetos** · 18 pts · `generos_discursivos A2 § 3.2. Macrofunción descriptiva: obj`
-- [ ] **Macrofunción descriptiva: lugares** · 18 pts · `generos_discursivos A2 § 3.3. Macrofunción descriptiva: lug`
+- [x] **Conversación transaccional (Nivel A2)** · 47 pts · `generos_discursivos A2 § 2.1.1. Conversación transaccional `  — gn-conversacion-transaccional-a2
+- [x] **Macrofunción descriptiva: personas** · 22 pts · `generos_discursivos A2 § 3.1. Macrofunción descriptiva: per`  — gn-describir-persona-a2
+- [x] **Macrofunción descriptiva: objetos** · 18 pts · `generos_discursivos A2 § 3.2. Macrofunción descriptiva: obj`  — gn-describir-objeto-a2
+- [x] **Macrofunción descriptiva: lugares** · 18 pts · `generos_discursivos A2 § 3.3. Macrofunción descriptiva: lug`  — gn-describir-lugar-a2
 - [x] **Macrofunción narrativa** · 29 pts · `generos_discursivos A2 § 3.4. Macrofunción narrativa`  — gn-narrar-anecdota-a2
 
 ## B1 — lessons (135/175 done)

@@ -13350,6 +13350,416 @@ window.STRAND_LESSONS = [
     { id: 'p:subadjA1:cloze', kind: 'cloze', text: 'La amiga ___ viene conmigo se llama Ana.', accept: ['que'] },
     { id: 'p:subadjA1:recall', kind: 'recall', front: '¿Cambia "que" según género o número del antecedente?', back: 'No, es invariable' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — A2 stragglers (WORKLIST.md, section A2). Skipped: "Lista alfabética
+ * de géneros orales y escritos" (generos_discursivos A2 § 1.1) — all 32
+ * spec points are bare genre names with zero worked examples (conversaciones
+ * telefónicas, horóscopos, embalajes...), a pure taxonomy with nothing to
+ * teach; the two sibling subsections that DO have content (transmisión oral,
+ * transmisión escrita) are already covered by gn-instrucciones-a2 and
+ * gn-generos-escritos-a2.
+ * ========================================================================== */
+{
+  id: 'gr-sustantivos-especiales-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:13', 'gramatica:A2:14', 'gramatica:A2:15', 'gramatica:A2:16', 'gramatica:A2:17', 'gramatica:A2:18'],
+  title: 'Nombres propios con artículo fijo y nombres eventivos',
+  summary: 'A handful of proper-noun classes carry their article as part of the name itself — a city, an institution, a subject — and one class of common noun, the "eventive" ones, names something that happens rather than something that exists, which is why it pairs naturally with a date or a time.',
+  sections: [
+    { h: 'Place names with a built-in article', html: 'Some place names include the article as part of the name and never drop it: <i>La Coruña</i>, <i>El Escorial</i>, <i>La Habana</i>. Unlike an ordinary noun, you cannot strip the article off — <i>*Vivo en Coruña</i> names a different, wrong place.' },
+    { h: 'Institutions, subjects, time periods', html: 'Institution names capitalize every key word (<i>Instituto Cervantes</i>, <i>Universidad Complutense</i>). A subject or discipline is capitalized when it names the field of study (<i>Estudio Física</i>, <i>Estudio Medicina</i>). Named time periods behave like proper nouns too, usually with no article: <i>Pascua</i>, <i>Nochevieja</i>.' },
+    { h: 'Eventive common nouns', html: 'Nouns like <i>accidente</i> and <i>concierto</i> name something that HAPPENS at a point in time, not an object — they combine naturally with a date or <i>hubo/tuvo lugar</i>: <i>Hubo un accidente ayer</i>, <i>El concierto es el sábado</i>.' }
+  ],
+  contrasts: [
+    { es: 'Vivo en La Coruña.', en: 'I live in La Coruña.', note: 'the article is part of the name — never dropped' },
+    { es: 'Estudio Medicina en la Universidad Complutense.', en: 'I study Medicine at the Complutense University.', note: 'subject name + institution name, both capitalized' },
+    { es: 'El accidente fue el martes por la tarde.', en: 'The accident was on Tuesday afternoon.', note: 'eventive noun — names something that happened at a time' }
+  ],
+  pitfalls: [
+    'Do not treat <i>La Coruña</i> as "Coruña with an article stuck on" — dropping it produces a wrong or at best strange place name, unlike the optional article on ordinary countries.',
+    'A subject name loses its capital and its special status once used generically: <i>Me gusta la física</i> (physics in general) vs <i>Estudio Física</i> (the subject as a named course).',
+    '<i>Nochevieja</i> and <i>Pascua</i> take no article, unlike an ordinary calendar noun — <i>en Nochevieja</i>, not <i>*en la Nochevieja</i>.'
+  ],
+  examples: [
+    { es: 'Nací en La Habana pero estudié en Madrid.', en: 'I was born in Havana but studied in Madrid.' },
+    { es: 'El Instituto Cervantes tiene sedes en muchos países.', en: 'The Instituto Cervantes has branches in many countries.' },
+    { es: 'Hubo un concierto muy bueno el viernes.', en: 'There was a very good concert on Friday.' }
+  ],
+  probes: [
+    { id: 'p:sustespecialesA2:articulo', kind: 'mcq', q: '¿Cuál es correcta?',
+      options: ['Vivo en Coruña.', 'Vivo en La Coruña.', 'Vivo en la Coruña, sin mayúscula.'], answer: 1 },
+    { id: 'p:sustespecialesA2:eventivo', kind: 'mcq', q: '¿Cuál es un nombre "eventivo" (nombra algo que ocurre)?',
+      options: ['mesa', 'accidente', 'ventana'], answer: 1 },
+    { id: 'p:sustespecialesA2:cloze', kind: 'cloze', text: 'Estudio ___ en la universidad. (Medicina, con mayúscula)', accept: ['Medicina'] },
+    { id: 'p:sustespecialesA2:recall', kind: 'recall', front: 'Nombre de lugar cuyo artículo nunca se quita', back: 'La Coruña / El Escorial / La Habana' }
+  ]
+},
+
+{
+  id: 'gr-demostrativos-valores-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:98'],
+  title: 'Los demostrativos: uso anafórico y temporal',
+  summary: 'Beyond pointing at something in the room, a demonstrative can point BACK at something already named in the conversation, or mark a stretch of time as the one you are in right now. Neither use has anything to do with physical distance, which is why the A1 near/far system does not explain them.',
+  sections: [
+    { h: 'Anaphoric use: pointing back at a word', html: 'A demonstrative can refer back to something just mentioned, standing in for it: <i>Luis hizo una señal a Antonio, pero este no la vio</i> — "este" (this one) picks out Antonio, the more recently named person, without repeating his name.' },
+    { h: 'Temporal deictic use: "this" stretch of time', html: '<i>Esta tarde</i>, <i>este año</i> mark the current unit of time from the speaker\'s "now" — not physical closeness, but which slice of the calendar you are standing inside.' },
+    { h: 'Confirming an object already discussed', html: '<i>Ese</i> can confirm or reject something already under discussion rather than pointing at a new object: <i>—¿Es este? —No, ese no es.</i>' }
+  ],
+  contrasts: [
+    { es: 'Luis hizo una señal a Antonio, pero este no la vio.', en: "Luis signalled to Antonio, but the latter didn't see it.", note: 'anaphoric — "este" = Antonio, the closer-mentioned name' },
+    { es: 'Esta tarde voy al cine.', en: "This afternoon I'm going to the cinema.", note: 'temporal deictic — the current afternoon, not a nearby object' },
+    { es: '—¿Es este? —No, ese no es.', en: '—Is it this one? —No, that\'s not it.', note: 'confirming/rejecting something already discussed' }
+  ],
+  pitfalls: [
+    'The anaphoric "este/esta" refers to whichever noun was named LAST, not the most important one — in <i>Luis hizo una señal a Antonio, pero este no la vio</i>, "este" is Antonio, not Luis.',
+    '<i>Esta tarde</i> is not about spatial nearness at all; do not explain it with the A1 "in my hand vs in yours" rule, which only applies to physical pointing.'
+  ],
+  examples: [
+    { es: 'Este año no vamos a ir a la playa.', en: "This year we're not going to the beach." },
+    { es: 'Ana llamó a Marta, pero esta no contestó.', en: "Ana called Marta, but she (Marta) didn't answer." },
+    { es: '—¿Quieres esta camisa? —No, esa no me gusta.', en: '—Do you want this shirt? —No, I don\'t like that one.' }
+  ],
+  probes: [
+    { id: 'p:demvaloresA2:anafora', kind: 'mcq', q: '"Ana llamó a Marta, pero esta no contestó." ¿A quién se refiere "esta"?',
+      options: ['A Ana', 'A Marta', 'A ninguna de las dos'], answer: 1 },
+    { id: 'p:demvaloresA2:temporal', kind: 'mcq', q: '"Esta tarde voy al cine" — ¿qué marca "esta" aquí?',
+      options: ['Cercanía física', 'El momento actual del calendario', 'Que ya pasó'], answer: 1 },
+    { id: 'p:demvaloresA2:cloze', kind: 'cloze', text: 'Luis llamó a Pedro, pero ___ no contestó. (anafórico)', accept: ['este', 'éste'] },
+    { id: 'p:demvaloresA2:recall', kind: 'recall', front: 'Uso de un demostrativo para referirse a algo ya nombrado, sin señalar físicamente', back: 'uso anafórico' }
+  ]
+},
+
+{
+  id: 'gr-adverbios-circunstanciales-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:304', 'gramatica:A2:305', 'gramatica:A2:306', 'gramatica:A2:307', 'gramatica:A2:308',
+         'gramatica:A2:309', 'gramatica:A2:310', 'gramatica:A2:311', 'gramatica:A2:312', 'gramatica:A2:313'],
+  title: 'Adverbios circunstanciales: lugar, tiempo y cantidad',
+  summary: 'These adverbs are optional — a sentence works without them — which is exactly why they carry so much of the concrete detail in a description: where, in what order, how much. Two of them, nunca and nada, have a second job as negative-polarity words that must pair with "no" when they follow the verb.',
+  sections: [
+    { h: 'Place: often with "de"', html: '<i>Dentro, fuera, arriba, abajo, delante, detrás, lejos, cerca</i> combine with <i>de</i> to attach to a noun: <i>dentro de la caja</i>, <i>cerca de casa</i>. Alone, they modify the whole sentence: <i>Vive cerca.</i>' },
+    { h: 'Time: sequence and distance from now', html: '<i>Primero, luego, después</i> order events; <i>antes/después de</i> attach to a moment; <i>la semana pasada, ayer</i> fix a point relative to now.' },
+    { h: 'Negative polarity: nunca and nada', html: 'After the verb, both need <i>no</i> in front of it: <i>No he estado nunca en Ecuador</i>, <i>No me gusta nada</i>. Before the verb, <i>no</i> disappears: <i>Nunca he estado en Ecuador.</i>' }
+  ],
+  contrasts: [
+    { es: 'El banco está cerca.', en: 'The bank is close by.', note: 'adverb alone, modifies the whole sentence' },
+    { es: 'El banco está cerca de mi casa.', en: 'The bank is close to my house.', note: 'adverb + de + noun' },
+    { es: 'Nunca he estado en Ecuador.', en: "I've never been to Ecuador.", note: 'before the verb — no "no" needed' },
+    { es: 'No he estado nunca en Ecuador.', en: "I've never been to Ecuador.", note: 'after the verb — "no" is obligatory' }
+  ],
+  pitfalls: [
+    '<i>Nunca</i> and <i>nada</i> need <i>no</i> when they come AFTER the verb: <i>*He estado nunca</i> is wrong; it must be <i>No he estado nunca</i> or <i>Nunca he estado</i>.',
+    'Do not drop <i>de</i> before a noun: <i>cerca de casa</i>, not <i>*cerca casa</i>.',
+    '<i>Nada</i> as an adverb ("not at all") is a different job from <i>nada</i> the pronoun ("nothing") — <i>No me gusta nada</i> can mean either "I don\'t like it at all" or "I don\'t like anything", disambiguated only by context.'
+  ],
+  examples: [
+    { es: 'El supermercado está lejos de aquí.', en: 'The supermarket is far from here.' },
+    { es: 'Primero cenamos y luego vimos una película.', en: 'First we had dinner and then we watched a film.' },
+    { es: 'No me gusta nada este plan.', en: "I don't like this plan at all." }
+  ],
+  probes: [
+    { id: 'p:advcircA2:polaridad', kind: 'mcq', q: '¿Cuál es correcta?',
+      options: ['He estado nunca en Perú.', 'Nunca he estado en Perú.', 'He nunca estado en Perú.'], answer: 1 },
+    { id: 'p:advcircA2:preposicion', kind: 'mcq', q: '¿Cuál es correcta?',
+      options: ['Vivo cerca casa.', 'Vivo cerca de casa.', 'Vivo de cerca casa.'], answer: 1 },
+    { id: 'p:advcircA2:cloze', kind: 'cloze', text: 'No me gusta ___ esta idea. (en absoluto)', accept: ['nada'] },
+    { id: 'p:advcircA2:recall', kind: 'recall', front: 'Regla de "no" con nunca/nada cuando van DESPUÉS del verbo', back: 'obligatorio: no + verbo + nunca/nada' }
+  ]
+},
+
+{
+  id: 'gr-oraciones-simples-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:492', 'gramatica:A2:493', 'gramatica:A2:494', 'gramatica:A2:495',
+         'gramatica:A2:496', 'gramatica:A2:497', 'gramatica:A2:498'],
+  title: 'Tipos de oraciones simples: disyuntivas, exclamativas, reflexivas, impersonales',
+  summary: 'Four new sentence types this level: a question offering a choice, an exclamation, an instruction dressed as a statement, a verb whose action folds back on its own subject, and the strange case of "hacer" describing weather or elapsed time with no subject doing anything at all.',
+  sections: [
+    { h: 'Disyuntivas and exclamativas', html: 'A <b>disyuntiva</b> question offers a choice with <i>o</i>: <i>¿Prefieres té o café?</i> An <b>exclamativa</b> expresses a reaction rather than asking or stating: <i>¡Estoy cansado!</i>, <i>¡Qué difícil!</i>' },
+    { h: 'Exhortativas: an instruction, not really a question', html: '<i>Habla con él</i> looks like a plain statement in the imperative but functions as an instruction — this is the same form as a command, so tone of voice, not grammar, marks it apart from other declaratives.' },
+    { h: 'Reflexivas: the action returns to the subject', html: '<i>Me ducho por la mañana</i> — the subject showers ITSELF; the reflexive pronoun (<i>me, te, se...</i>) shows the action lands back on whoever did it.' },
+    { h: 'Impersonales with hacer', html: '<i>Hacer</i> for weather or elapsed time takes NO subject and stays fixed in the third person singular: <i>Hace frío</i>, <i>Hace dos días que estoy aquí</i>. Some Latin American varieties personalize it (<i>Hacen dos días</i>), but the neutral standard keeps it invariable.' }
+  ],
+  contrasts: [
+    { es: '¿Prefieres té o café?', en: 'Do you prefer tea or coffee?', note: 'disyuntiva — offers a choice' },
+    { es: '¡Qué difícil!', en: 'How difficult!', note: 'exclamativa — a reaction, not a question or statement' },
+    { es: 'Me ducho por la mañana.', en: 'I shower in the morning.', note: 'reflexiva — action returns to the subject' },
+    { es: 'Hace dos días que estoy aquí.', en: "I've been here for two days.", note: 'impersonal — hacer has no subject, stays singular' }
+  ],
+  pitfalls: [
+    '<i>Hacer</i> for elapsed time never agrees with the number that follows it: <i>*Hacen dos días</i> is a regional variant, not the neutral standard — keep it <i>Hace dos días</i> regardless.',
+    'Do not confuse a reflexive verb with a passive one: <i>Me ducho</i> is "I shower myself", not "I am showered" — the subject and the one acted on are the same person.',
+    'An exhortativa is grammatically identical to a plain statement in some forms — <i>Habla con él</i> is only recognizably an instruction from context and tone, so written text needs other cues (an exclamation mark, a preceding request) to signal it.'
+  ],
+  examples: [
+    { es: '¿Vienes en tren o en coche?', en: 'Are you coming by train or by car?' },
+    { es: '¡Qué calor hace hoy!', en: "It's so hot today!" },
+    { es: 'Los niños se lavan las manos antes de comer.', en: 'The children wash their hands before eating.' }
+  ],
+  probes: [
+    { id: 'p:orasimpleA2:tipo', kind: 'mcq', q: '"¿Prefieres té o café?" es una oración...',
+      options: ['exclamativa', 'disyuntiva', 'exhortativa'], answer: 1 },
+    { id: 'p:orasimpleA2:hacer', kind: 'mcq', q: '¿Cuál es la forma estándar neutra?',
+      options: ['Hacen tres años que vivo aquí.', 'Hace tres años que vivo aquí.', 'Hago tres años que vivo aquí.'], answer: 1 },
+    { id: 'p:orasimpleA2:cloze', kind: 'cloze', text: 'Los niños ___ lavan las manos. (reflexivo)', accept: ['se'] },
+    { id: 'p:orasimpleA2:recall', kind: 'recall', front: '¿Con cuántas personas concuerda "hacer" para el tiempo transcurrido, en el estándar neutro?', back: 'siempre tercera persona singular, invariable' }
+  ]
+},
+
+{
+  id: 'nt-localizacion-tiempo-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  pcic: ['nociones_generales:A2:148', 'nociones_generales:A2:149', 'nociones_generales:A2:150', 'nociones_generales:A2:151',
+         'nociones_generales:A2:152', 'nociones_generales:A2:154', 'nociones_generales:A2:155', 'nociones_generales:A2:156',
+         'nociones_generales:A2:157', 'nociones_generales:A2:158', 'nociones_generales:A2:160', 'nociones_generales:A2:161',
+         'nociones_generales:A2:162'],
+  title: 'Situar en el tiempo: presente, pasado y futuro próximo',
+  summary: 'A2 adds a toolkit of set phrases for placing an action relative to now, and the hardest part is that the same word family works differently depending on direction: "hace" alone marks a point back in the past, but "desde hace" marks a stretch that is STILL GOING — a distinction English does not make the same way.',
+  sections: [
+    { h: 'Present: this stretch of time, right now', html: '<i>Esta mañana/tarde/noche/semana, este mes/año</i> mark the current unit; <i>estar + gerundio</i> marks the action in progress at this instant (<i>Está hablando por teléfono</i>); <i>en este momento</i> is the more explicit version.' },
+    { h: '"Hace" vs "desde hace": a point vs a stretch still open', html: '<i>Hace cinco minutos</i> marks a completed point in the past ("five minutes ago"). <i>Desde hace dos meses</i> marks a stretch that started then and is STILL TRUE now: <i>Estudio español desde hace dos meses</i> — I am still studying it.' },
+    { h: 'Past: exact and relative', html: 'Exact: a date (<i>el 15 de abril de 1998</i>) or a year (<i>en 1963</i>). Relative to now: <i>la semana/el mes/el año pasado</i>, <i>hace + [tiempo]</i> for how long ago, and plain <i>antes</i> for "previously", contrasting with how things are now.' },
+    { h: 'Near future: the same "this" words, redirected', html: 'The very same <i>esta tarde, este año</i> that marked the present can point to the near future instead — direction comes from context, not the words themselves. <i>La semana/el mes/el año que viene</i> and <i>ir a + infinitivo</i> mark it more explicitly.' }
+  ],
+  exponents: [
+    { es: 'Esta mañana estoy muy cansada.', en: "This morning I'm very tired.", register: 'neutral', note: 'present — current unit of time' },
+    { es: 'Ha llegado hace cinco minutos.', en: 'He/she arrived five minutes ago.', register: 'neutral', note: 'hace = a completed point back in the past' },
+    { es: 'Estudio español desde hace dos meses.', en: "I've been studying Spanish for two months.", register: 'neutral', note: 'desde hace = a stretch that is still true now' },
+    { es: 'Eva nació en 1963.', en: 'Eva was born in 1963.', register: 'neutral' },
+    { es: 'Antes no me gustaba la fruta.', en: "I didn't use to like fruit.", register: 'neutral', note: 'antes contrasts explicitly with how things are now' },
+    { es: 'Este año no vamos a ir a la playa.', en: "This year we're not going to the beach.", register: 'neutral', note: 'the same "this" word, redirected to the near future' },
+    { es: 'La semana que viene tengo un examen.', en: 'Next week I have an exam.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Ha llegado hace cinco minutos.', en: 'He arrived five minutes ago.', note: 'hace alone — a finished point in the past' },
+    { es: 'Vive en Madrid desde hace cinco años.', en: "He's lived in Madrid for five years.", note: 'desde hace — a stretch still ongoing now' },
+    { es: 'Esta tarde voy a tomar un café.', en: "This afternoon I'm going to have a coffee.", note: '"esta tarde" said in the morning — points to the near future' }
+  ],
+  pitfalls: [
+    'Do not use bare <i>hace</i> where the situation is still true now — <i>*Vivo en Madrid hace cinco años</i> should be <i>desde hace cinco años</i> or <i>Vivo en Madrid hace cinco años</i> reworded as <i>Hace cinco años que vivo en Madrid</i>.',
+    '<i>Esta tarde</i> and its family point at present OR near future depending only on when you say them — there is no separate future word, so context (what else is in the sentence) must disambiguate.',
+    'Latin American usage sometimes personalizes <i>hacer</i> for elapsed time (<i>hacen dos años</i>); the neutral standard keeps it invariable: <i>hace dos años</i>.'
+  ],
+  examples: [
+    { es: 'En este momento no tengo trabajo.', en: "Right now I don't have a job." },
+    { es: 'La semana pasada estuve en Sevilla.', en: 'Last week I was in Seville.' },
+    { es: 'El mes que viene empiezo un curso nuevo.', en: "Next month I'm starting a new course." }
+  ],
+  probes: [
+    { id: 'p:loctiempoA2:hacevsdesde', kind: 'mcq', q: '"Vivo aquí ___ tres años" (todavía vivo aquí)',
+      options: ['hace', 'desde hace', 'antes'], answer: 1 },
+    { id: 'p:loctiempoA2:direccion', kind: 'mcq', q: 'Dicho por la mañana: "Esta tarde voy al médico." ¿A qué apunta "esta tarde"?',
+      options: ['Al pasado', 'Al futuro próximo', 'A ahora mismo'], answer: 1 },
+    { id: 'p:loctiempoA2:cloze', kind: 'cloze', text: 'Llegó ___ diez minutos. (hace/ago)', accept: ['hace'] },
+    { id: 'p:loctiempoA2:recall', kind: 'recall', front: '"Hace" + tiempo = punto terminado; "___ hace" + tiempo = todavía dura', back: 'desde hace' }
+  ]
+},
+
+{
+  id: 'fn-valorar-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  pcic: ['funciones:A2:102', 'funciones:A2:103', 'funciones:A2:104', 'funciones:A2:105', 'funciones:A2:106', 'funciones:A2:107'],
+  title: 'Valorar: intensificadores y exclamaciones',
+  summary: 'A2 grades the A1 verdicts with intensity words and adds a purely exclamatory register: "demasiado" and "nada" push an evaluation up or down, while "¡Qué + adjetivo!" reacts on the spot without even a verb.',
+  sections: [
+    { h: 'Grading with demasiado / muy', html: '<i>Demasiado</i> means "more than wanted" — a criticism, unlike <i>muy</i> which is neutral intensity: <i>Los pantalones son demasiado largos</i> (a problem) vs <i>son muy largos</i> (just a fact).' },
+    { h: 'Emphatic negation: no es nada + adjetivo', html: '<i>No es nada fácil</i> intensifies a negative evaluation — stronger than a plain <i>no es fácil</i>, closer to "not remotely easy".' },
+    { h: 'Reacting without a verb: ¡Qué + adjetivo!', html: '<i>¡Qué barato!</i>, <i>¡Qué rico!</i> react instantly, no verb needed. Add a verb for a specific action: <i>¡Qué bien canta!</i> ("how well he sings!").' }
+  ],
+  exponents: [
+    { es: 'Esto está muy bien.', en: 'This is very good.', register: 'neutral', note: 'SN + está + grado + bien/mal' },
+    { es: 'Los pantalones son demasiado largos.', en: 'The trousers are too long.', register: 'neutral', note: 'demasiado = more than wanted, a criticism' },
+    { es: 'La solución no es nada fácil.', en: "The solution isn't easy at all.", register: 'coloquial', note: 'no es nada + adj = emphatic negative evaluation' },
+    { es: '¡Qué barato!', en: 'How cheap!', register: 'coloquial', note: 'reaction, no verb needed' },
+    { es: '¡Qué bien canta!', en: 'How well he sings!', register: 'coloquial', note: '¡Qué bien/mal + verbo!' },
+    { es: '¡Estupendo!', en: 'Wonderful!', register: 'neutral', note: 'fixed positive reaction, works in speech and writing' }
+  ],
+  contrasts: [
+    { es: 'Esta catedral es muy bonita.', en: 'This cathedral is very pretty.', note: 'muy = neutral intensity' },
+    { es: 'Esta catedral no es muy bonita.', en: "This cathedral isn't very pretty.", note: 'a mild, understated criticism' },
+    { es: 'Esta bebida no es nada fuerte.', en: "This drink isn't strong at all.", note: 'no es nada = stronger, more emphatic' }
+  ],
+  pitfalls: [
+    '<i>Demasiado</i> is never neutral praise — it always signals "more than is good/wanted". <i>Es demasiado alto</i> is a complaint about height, not a compliment.',
+    '<i>¡Qué + adjetivo!</i> needs no verb at all; adding one changes the pattern to <i>¡Qué bien/mal + verbo!</i>, which is a different exponent, not an optional extra.',
+    '<i>No es nada + adjetivo</i> intensifies the NEGATIVE — it is not a soft or polite way of disagreeing.'
+  ],
+  examples: [
+    { es: 'Este ejercicio no es nada difícil.', en: "This exercise isn't difficult at all." },
+    { es: '¡Qué caro está todo!', en: 'How expensive everything is!' },
+    { es: 'La película está bastante mal.', en: "The film isn't very good." }
+  ],
+  probes: [
+    { id: 'p:valorarA2:demasiado', kind: 'mcq', q: '"Los pantalones son ___ largos" (una queja, más de lo que quieres)',
+      options: ['muy', 'demasiado', 'bastante'], answer: 1 },
+    { id: 'p:valorarA2:registro', kind: 'mcq', q: '¿Cuál reacciona sin necesidad de verbo?',
+      options: ['Esto está muy bien.', '¡Qué barato!', 'No es nada fácil.'], answer: 1 },
+    { id: 'p:valorarA2:cloze', kind: 'cloze', text: 'Esta bebida no es ___ fuerte. (en absoluto)', accept: ['nada'] },
+    { id: 'p:valorarA2:recall', kind: 'recall', front: '¿"Demasiado" es neutro o siempre implica un problema?', back: 'siempre implica un problema — más de lo deseado' }
+  ]
+},
+
+{
+  id: 'gn-conversacion-transaccional-a2', strand: 'genre', cefr: 'A2', level: 2, theme: 'compras',
+  pcic: ['generos_discursivos:A2:88', 'generos_discursivos:A2:92', 'generos_discursivos:A2:93', 'generos_discursivos:A2:100',
+         'generos_discursivos:A2:101', 'generos_discursivos:A2:103', 'generos_discursivos:A2:104', 'generos_discursivos:A2:105',
+         'generos_discursivos:A2:107', 'generos_discursivos:A2:108', 'generos_discursivos:A2:109', 'generos_discursivos:A2:111',
+         'generos_discursivos:A2:113', 'generos_discursivos:A2:116', 'generos_discursivos:A2:120', 'generos_discursivos:A2:123',
+         'generos_discursivos:A2:130', 'generos_discursivos:A2:133', 'generos_discursivos:A2:137', 'generos_discursivos:A2:155',
+         'generos_discursivos:A2:161'],
+  title: 'La conversación transaccional en la tienda de ropa',
+  summary: 'The A1 transaction was a straight line: ask, pay, leave. A2 opens a real middle: the seller offers options and asks your opinion of each, you try things on, you compare two choices before deciding — and the whole exchange can close with a bit of small talk that has nothing to do with the purchase at all.',
+  sections: [
+    { h: 'A middle with real choices', html: 'Unlike A1, the seller does not just answer your question — they show options and ask for your reaction: <i>Tenemos estos modelos. ¿Le gustan?</i>, <i>¿Cómo le quedan?</i> You are expected to compare, not just accept the first thing shown.' },
+    { h: 'Trying on and confirming', html: '<i>¿Puedo probármelos?</i> asks permission; after trying, a size or fit is confirmed factually: <i>Sí, es la talla 40.</i>' },
+    { h: 'Small talk before goodbye', html: 'The transaction does not end the instant money changes hands. A short exchange unrelated to the purchase — usually the weather — closes it before the final goodbye: <i>A ver si se pasa este frío. —Sí, porque ¡vaya invierno!</i>' }
+  ],
+  moves: [
+    { h: 'Saludo y petición inicial', html: '<i>—Buenos días. —Buenos días, ¿qué desea? —Quería un jersey.</i>' },
+    { h: 'Concretar características', html: 'El vendedor pregunta color y talla; el cliente responde con datos concretos: <i>—¿Y cómo lo quiere? —Blanco y de lana. —¿Qué talla tiene? —La 40.</i>' },
+    { h: 'Mostrar opciones y comparar', html: 'El vendedor ofrece varios modelos y pide una reacción; el cliente compara antes de decidir: <i>—Tenemos estos modelos. ¿Le gustan? —Me gustan estos dos. ¿Cuál me recomienda?</i>' },
+    { h: 'Probar y confirmar', html: '<i>—¿Puedo probármelos? —Sí, por supuesto. El probador está ahí enfrente.</i> Después, se confirma la talla o el ajuste.' },
+    { h: 'Decisión, precio y pago', html: '<i>—Entonces, ¿se lleva usted este? —Sí, me llevo este. —¿Cuánto cuesta? —90 euros.</i>' },
+    { h: 'Cierre: charla breve y despedida', html: 'Antes de despedirse, un comentario breve sin relación con la compra (normalmente el tiempo), y luego el adiós de ambas partes.' }
+  ],
+  model: {
+    title: 'Comprando un jersey',
+    text: '—Buenos días.\n—Buenos días, ¿qué desea?\n—Quería un jersey.\n—¿Y cómo lo quiere?\n—Pues..., blanco y de lana.\n—¿Qué talla tiene?\n—La 40.\n—Tenemos estos modelos. ¿Le gustan?\n—Pues, me gustan estos dos. ¿Cuál me recomienda?\n—Los dos son bonitos. ¿Cómo le quedan?\n—¿Puedo probármelos?\n—Sí, por supuesto. El probador está ahí enfrente.\n—Prefiero el más moderno.\n—Entonces, ¿se lleva usted este?\n—Sí, me llevo este.\n—A ver. Sí, es la talla 40. ¿Cuánto cuesta?\n—90 euros.\n—Muy bien. Aquí tiene, 90 euros.\n—Acompáñeme a la caja, por favor. Aquí tiene su jersey y el recibo.\n—Muchas gracias.\n—A ver si se pasa este frío.\n—Sí, porque ¡vaya invierno!\n—Pues, lo dicho, ¡que tenga un buen día!\n—Hasta luego, buenos días.'
+  },
+  checklist: [
+    '¿El vendedor ofrece opciones y pide tu reacción, no solo responde preguntas?',
+    '¿Comparas al menos dos opciones antes de decidir?',
+    '¿Confirmas la talla o el ajuste antes de pagar?',
+    '¿Cierras con un comentario breve (el tiempo) antes de despedirte?'
+  ],
+  examples: [
+    { es: '—Tenemos estos modelos. ¿Le gustan? —Me gustan estos dos. ¿Cuál me recomienda?', en: '—We have these models. Do you like them? —I like these two. Which do you recommend?' },
+    { es: '¿Puedo probármelos?', en: 'Can I try them on?' },
+    { es: 'A ver si se pasa este frío. —Sí, porque ¡vaya invierno!', en: 'Hopefully this cold spell passes. —Yes, what a winter!' }
+  ],
+  probes: [
+    { id: 'p:convtransA2:media', kind: 'mcq', q: '¿Qué añade la A2 frente a la conversación transaccional de A1?',
+      options: ['Nada, es idéntica', 'Comparar opciones y pequeña charla al cerrar', 'Solo el saludo inicial'], answer: 1 },
+    { id: 'p:convtransA2:probador', kind: 'mcq', q: '¿Cómo se pide permiso para probarse algo?',
+      options: ['Quiero probármelo ya.', '¿Puedo probármelos?', 'Pruébeme esto.'], answer: 1 },
+    { id: 'p:convtransA2:cloze', kind: 'cloze', text: '¿Cuánto ___? (preguntar el precio)', accept: ['cuesta'] },
+    { id: 'p:convtransA2:recall', kind: 'recall', front: 'Tema típico de la charla breve antes de despedirse', back: 'el tiempo (el frío, el calor...)' }
+  ]
+},
+
+{
+  id: 'gn-describir-persona-a2', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  pcic: ['generos_discursivos:A2:188', 'generos_discursivos:A2:189', 'generos_discursivos:A2:190', 'generos_discursivos:A2:191',
+         'generos_discursivos:A2:204', 'generos_discursivos:A2:205'],
+  title: 'Describir a una persona: comparar y narrar un momento',
+  summary: 'A2 adds two moves to the A1 anchor-then-detail shape: relating the person to someone else by comparison, and dropping in a brief narrated moment — using preterite and imperfect together — inside what is otherwise a present-tense description.',
+  sections: [
+    { h: 'A third move: relating', html: 'After the general and the specific, A2 adds comparison: <i>Me parezco un poco a Shakira, pero ella es más guapa.</i> This closes the description by placing the person against something the reader already knows.' },
+    { h: 'A narrative dropped inside', html: 'A single past anecdote can interrupt the present-tense description without derailing it, using the imperfect for background and the preterite for the one-off event: <i>cuando llegué hacía frío y mis compañeros de piso me regalaron una chaqueta.</i>' },
+    { h: 'Habitual present, descriptive imperfect', html: 'The present describes what is generally true now (<i>tengo muchos amigos</i>); the imperfect, when it appears, describes how things WERE at the moment the anecdote is set (<i>hacía frío</i>), not a habit.' }
+  ],
+  moves: [
+    { h: 'Anclaje', html: 'Nombre, nacionalidad y una frase de ubicación: <i>Me llamo Carla, soy italiana y estudio español en La Coruña.</i>' },
+    { h: 'Aspectualización', html: 'De lo físico a lo general, con una anécdota breve incrustada en pasado: <i>Siempre llevo pantalones y chaqueta porque aquí llueve bastante y tengo frío (cuando llegué hacía frío y mis compañeros de piso me regalaron una chaqueta muy bonita).</i>' },
+    { h: 'Puesta en relación', html: 'Cierra comparando a la persona con alguien conocido: <i>Me parezco un poco a Shakira, pero ella es más guapa.</i>' }
+  ],
+  model: {
+    title: 'Carla',
+    text: 'Me llamo Carla, soy italiana y estudio español en La Coruña. Soy alta, rubia, delgada y un poco tímida, pero tengo muchos amigos en la escuela. Siempre llevo pantalones y chaqueta porque aquí llueve bastante y tengo frío (cuando llegué hacía frío y mis compañeros de piso me regalaron una chaqueta muy bonita). Me parezco un poco a Shakira, pero ella es más guapa.'
+  },
+  checklist: [
+    '¿Terminaste la descripción comparando a la persona con alguien o algo conocido?',
+    '¿La anécdota en pasado usa el pretérito para el hecho y el imperfecto para el fondo?',
+    '¿No convertiste toda la descripción en pasado — el presente sigue siendo la base?'
+  ],
+  examples: [
+    { es: 'Se parece mucho a su padre, aunque tiene los ojos de su madre.', en: 'He looks a lot like his father, though he has his mother\'s eyes.' },
+    { es: 'Cuando la conocí, llevaba el pelo mucho más corto.', en: 'When I met her, she had much shorter hair.' },
+    { es: 'Es tan simpático como parece en las fotos.', en: 'He\'s as nice as he seems in photos.' }
+  ],
+  probes: [
+    { id: 'p:descpersonaA2:relacion', kind: 'mcq', q: '¿Qué mueve añade la A2 al final de la descripción?',
+      options: ['Repetir el nombre', 'Comparar con alguien conocido', 'Dar el precio de la ropa'], answer: 1 },
+    { id: 'p:descpersonaA2:tiempos', kind: 'mcq', q: 'En la anécdota "cuando llegué hacía frío", ¿qué tiempo describe el fondo?',
+      options: ['pretérito (llegué)', 'imperfecto (hacía)', 'presente'], answer: 1 },
+    { id: 'p:descpersonaA2:cloze', kind: 'cloze', text: 'Me ___ un poco a mi madre. (parecerse)', accept: ['parezco'] },
+    { id: 'p:descpersonaA2:recall', kind: 'recall', front: 'Tercer movimiento que añade la A2 tras anclaje y aspectualización', back: 'puesta en relación (comparar)' }
+  ]
+},
+
+{
+  id: 'gn-describir-objeto-a2', strand: 'genre', cefr: 'A2', level: 2, theme: 'alimentacion',
+  pcic: ['generos_discursivos:A2:225', 'generos_discursivos:A2:226', 'generos_discursivos:A2:227', 'generos_discursivos:A2:228'],
+  title: 'Describir un objeto: partes, una anécdota y una comparación',
+  summary: 'A2 breaks the object into its PARTS rather than stopping at one quality, drops in a one-off personal anecdote about it, and closes by relating it to a wider category — the same anclaje/aspectualización/puesta-en-relación shape as describing a person, applied to a thing.',
+  sections: [
+    { h: 'From one quality to its parts', html: 'A1 named a single quality (<i>El tomate es rojo</i>); A2 breaks the object down: <i>Tiene piel, carne y semillas. La piel es suave y la carne es blanda.</i>' },
+    { h: 'A narrated exception', html: 'A brief personal anecdote, in the past, can justify a claim: <i>Una vez, yo comí las semillas y tuve mucho dolor de estómago, nunca he comido semillas otra vez.</i> Preterite for the one-off events, in sequence.' },
+    { h: 'Relating to a category', html: 'Close by placing the object within a wider group it belongs to: <i>Es tan sano como las frutas con azúcar y tiene muchas vitaminas.</i>' }
+  ],
+  moves: [
+    { h: 'Anclaje', html: 'Qué es y su rasgo principal: <i>El tomate es una fruta sin azúcar. Tiene forma redonda y es rojo oscuro.</i>' },
+    { h: 'Aspectualización: partes y anécdota', html: 'Desglosa el objeto en partes y, si aporta algo, incluye una anécdota breve en pasado: <i>La gente no come las semillas porque son duras. Una vez, yo comí las semillas y tuve mucho dolor de estómago.</i>' },
+    { h: 'Puesta en relación', html: 'Compáralo con la categoría a la que pertenece: <i>Es tan sano como las frutas con azúcar y tiene muchas vitaminas.</i>' }
+  ],
+  model: {
+    title: 'El tomate',
+    text: 'El tomate es una fruta sin azúcar. Tiene forma redonda y es rojo oscuro. Tiene piel, carne y semillas. La piel es suave y la carne es blanda. La gente no come las semillas porque son duras. Una vez, yo comí las semillas y tuve mucho dolor de estómago, nunca he comido semillas otra vez. La gente come el tomate con lechuga, en las ensaladas; también hay tomate frito y zumo de tomate. Es tan sano como las frutas con azúcar y tiene muchas vitaminas.'
+  },
+  checklist: [
+    '¿Desglosaste el objeto en sus partes, no solo una cualidad general?',
+    '¿La anécdota, si la hay, usa el pretérito para los hechos puntuales?',
+    '¿Terminaste relacionando el objeto con una categoría más amplia?'
+  ],
+  examples: [
+    { es: 'La silla tiene cuatro patas, un asiento y un respaldo de madera.', en: 'The chair has four legs, a seat and a wooden back.' },
+    { es: 'Una vez se me rompió y tuve que arreglarla yo mismo.', en: 'Once it broke and I had to fix it myself.' },
+    { es: 'Es tan resistente como cualquier mueble de metal.', en: "It's as sturdy as any metal piece of furniture." }
+  ],
+  probes: [
+    { id: 'p:descobjetoA2:desglose', kind: 'mcq', q: '¿Qué añade la A2 frente a nombrar solo una cualidad?',
+      options: ['Nada más', 'Desglosar el objeto en sus partes', 'Solo el precio'], answer: 1 },
+    { id: 'p:descobjetoA2:anecdota', kind: 'mcq', q: 'En la anécdota del tomate, ¿qué tiempo verbal narra el hecho puntual?',
+      options: ['presente', 'pretérito (comí, tuve)', 'imperfecto'], answer: 1 },
+    { id: 'p:descobjetoA2:cloze', kind: 'cloze', text: 'El tomate ___ piel, carne y semillas. (tener)', accept: ['tiene'] },
+    { id: 'p:descobjetoA2:recall', kind: 'recall', front: 'Movimiento final que relaciona el objeto con su categoría', back: 'puesta en relación' }
+  ]
+},
+
+{
+  id: 'gn-describir-lugar-a2', strand: 'genre', cefr: 'A2', level: 2, theme: 'vivienda',
+  pcic: ['generos_discursivos:A2:259', 'generos_discursivos:A2:260', 'generos_discursivos:A2:261', 'generos_discursivos:A2:262'],
+  title: 'Describir un lugar: recorrido, anécdota y comparación',
+  summary: 'A2 turns the A1 inventory ("hay un baño, una cocina...") into a guided walk through the space using spatial deixis (a la derecha, al fondo), adds a brief narrated memory of arriving, and closes by comparing the place to others the writer knows.',
+  sections: [
+    { h: 'A guided walk, not just a list', html: 'Instead of just listing rooms, A2 walks the reader through the space using position words: <i>Todo recto y a la derecha está el baño... A la izquierda están el dormitorio... Al fondo hay una silla.</i>' },
+    { h: 'A memory of first arriving', html: 'A brief past narrative — how the place felt on first seeing it — sits naturally at the anchor: <i>Cuando lo vi por primera vez no me gustó porque no había luz, pero ahora me gusta.</i> Imperfect for the ongoing state, contrast for how things changed.' },
+    { h: 'Comparing to other places', html: 'Close by relating the place to others: <i>Las casas de mis amigos son más grandes, pero no viven solos. A mí me gusta vivir solo.</i>' }
+  ],
+  moves: [
+    { h: 'Anclaje con memoria', html: 'Qué es y su cualidad principal, con una nota de cómo era al llegar: <i>Vivo en un apartamento en la calle Cádiz. Cuando lo vi por primera vez no me gustó porque no había luz, pero ahora me gusta.</i>' },
+    { h: 'Aspectualización: recorrido', html: 'Guía al lector por el espacio con deixis espacial: <i>Todo recto y a la derecha está, primero, el baño y, después, la cocina. A la izquierda están el dormitorio y el cuarto de estar.</i>' },
+    { h: 'Puesta en relación', html: 'Compara con otros lugares conocidos: <i>Las casas de mis amigos son más grandes, pero no viven solos. A mí me gusta vivir solo.</i>' }
+  ],
+  model: {
+    title: 'Mi apartamento',
+    text: 'Vivo en un apartamento en la calle Cádiz. Cuando lo vi por primera vez no me gustó porque no había luz, pero ahora me gusta. Es bastante pequeño, pero está bien comunicado. Después de abrir la puerta hay un pasillo. Todo recto y a la derecha está, primero, el baño y, después, la cocina. A la izquierda están el dormitorio y el cuarto de estar. En el cuarto de estar como y estudio. A la derecha de la puerta hay una mesa redonda y dos sillas y a la izquierda hay un armario. Al fondo hay una silla y una mesa cuadrada. Las casas de mis amigos son más grandes, pero no viven solos. A mí me gusta vivir solo.'
+  },
+  checklist: [
+    '¿Guiaste al lector con palabras de posición (a la derecha, al fondo), no solo una lista?',
+    '¿Incluiste, si aporta algo, un recuerdo de cómo era el lugar al llegar?',
+    '¿Terminaste comparando el lugar con otros conocidos?'
+  ],
+  examples: [
+    { es: 'Al fondo del pasillo, a la izquierda, está mi habitación.', en: 'At the end of the hallway, on the left, is my room.' },
+    { es: 'Cuando lo alquilamos estaba muy descuidado, pero ahora está muy bien.', en: 'When we rented it it was very run-down, but now it\'s in great shape.' },
+    { es: 'Es más pequeño que mi piso anterior, pero está mejor situado.', en: 'It\'s smaller than my previous flat, but better located.' }
+  ],
+  probes: [
+    { id: 'p:desclugarA2:recorrido', kind: 'mcq', q: '¿Qué usa la A2 para guiar al lector por el espacio?',
+      options: ['Solo una lista con "hay"', 'Deixis espacial (a la derecha, al fondo)', 'El precio del alquiler'], answer: 1 },
+    { id: 'p:desclugarA2:memoria', kind: 'mcq', q: '"Cuando lo vi por primera vez no me gustó" — ¿qué tiempo describe el estado inicial?',
+      options: ['presente', 'imperfecto (no había, no me gustaba)', 'futuro'], answer: 1 },
+    { id: 'p:desclugarA2:cloze', kind: 'cloze', text: 'Al fondo ___ una silla y una mesa. (haber)', accept: ['hay'] },
+    { id: 'p:desclugarA2:recall', kind: 'recall', front: 'Qué añade la A2 al final, tras el recorrido por el lugar', back: 'una comparación con otros lugares conocidos' }
+  ]
 }
 
 ];
