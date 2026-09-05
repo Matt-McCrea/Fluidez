@@ -1558,5 +1558,14 @@ window.VERBS = [
 { inf:'bromear', en:'to joke around', type:'ar' },
 { inf:'negarse', en:'to refuse', type:'ar', stem:'ie' },
 { inf:'renunciar', en:'to resign, to give up (a right)', type:'ar' },
-{ inf:'pronunciarse', en:'to state a position, to take a stance', type:'ar' }
+{ inf:'pronunciarse', en:'to state a position, to take a stance', type:'ar' },
+{ inf:'ceder', en:'to give in, to yield', type:'er' },
+{ inf:'discrepar', en:'to disagree', type:'ar' },
+{ inf:'coincidir', en:'to coincide, to agree', type:'ir' },
+{ inf:'justificar', en:'to justify', type:'ar' },
+{ inf:'argumentar', en:'to argue, to make a case', type:'ar' },
+{ inf:'persistir', en:'to persist', type:'ir' },
+{ inf:'desafiar', en:'to defy, to challenge', type:'ar', forms:{
+  presente:['desafío','desafías','desafía','desafiamos','desafiáis','desafían'],
+  presubj:['desafíe','desafíes','desafíe','desafiemos','desafiéis','desafíen'] } }
 ];

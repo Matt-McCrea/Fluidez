@@ -579,6 +579,19 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'La asociación ___ (denunciar) públicamente las condiciones del centro la próxima semana.', inf: 'denunciar', tense: 'futuro', person: 'él/ella', en: 'The association will publicly denounce the center\'s conditions next week.' },
 
   { type: 'transform', level: 6, instruction: 'Rewrite using "de ahí que" + subjunctive to state a consequence:', from: 'El puente estaba en mal estado. Por eso lo cerraron.', to: 'El puente estaba en mal estado, de ahí que lo cerraran.', en: 'The bridge was in poor condition, hence why they closed it.' },
-  { type: 'transform', level: 7, instruction: 'Rewrite avoiding "tú" — address the reader formally with "usted":', from: 'Si tienes alguna duda, puedes escribirnos cuando quieras.', to: 'Si tiene alguna duda, puede escribirnos cuando quiera.', en: 'If you have any doubts, you may write to us whenever you like.' }
+  { type: 'transform', level: 7, instruction: 'Rewrite avoiding "tú" — address the reader formally with "usted":', from: 'Si tienes alguna duda, puedes escribirnos cuando quieras.', to: 'Si tiene alguna duda, puede escribirnos cuando quiera.', en: 'If you have any doubts, you may write to us whenever you like.' },
+
+  /* ---- B2 apply, batch 3 of 12 ---- */
+  { type: 'cloze', level: 6, text: 'Al final, la dirección ___ (ceder) a las peticiones de los empleados.', inf: 'ceder', tense: 'preterito', person: 'él/ella', en: 'In the end, management gave in to the employees\' requests.' },
+  { type: 'cloze', level: 6, text: 'Yo, en su lugar, ___ (discrepar) abiertamente de esa decisión.', inf: 'discrepar', tense: 'condicional', person: 'yo', en: "In their place, I would openly disagree with that decision." },
+  { type: 'cloze', level: 6, text: 'Es curioso que nuestras opiniones ___ (coincidir) tan pocas veces.', inf: 'coincidir', tense: 'presubj', person: 'ellos', en: 'It\'s odd that our opinions coincide so rarely.' },
+  { type: 'cloze', level: 7, text: 'Antes de multarla, la autoridad exigió que la empresa ___ (justificar) el retraso.', inf: 'justificar', tense: 'impsubj', person: 'él/ella', en: 'Before fining it, the authority demanded that the company justify the delay.' },
+  { type: 'cloze', level: 7, text: 'El abogado ___ (argumentar) mañana ante el tribunal que el contrato era nulo.', inf: 'argumentar', tense: 'futuro', person: 'él/ella', en: 'The lawyer will argue before the court tomorrow that the contract was void.' },
+  { type: 'cloze', level: 6, text: 'Aunque todos se lo desaconsejaran, ella ___ (persistir) en su idea inicial.', inf: 'persistir', tense: 'preterito', person: 'él/ella', en: 'Although everyone advised her against it, she persisted with her original idea.' },
+  { type: 'cloze', level: 7, text: 'Nadie esperaba que el pequeño sindicato ___ (desafiar) tan abiertamente a la dirección.', inf: 'desafiar', tense: 'perfsubj', person: 'él/ella', en: 'Nobody expected the small union to have so openly defied management.' },
+  { type: 'cloze', level: 6, text: 'Para cuando se retire, ella ___ (ceder) su puesto a alguien de confianza.', inf: 'ceder', tense: 'futperf', person: 'él/ella', en: 'By the time she retires, she will have handed over her position to someone she trusts.' },
+
+  { type: 'transform', level: 7, instruction: 'Rewrite using a double object pronoun (cliticCluster: "se lo/se la"):', from: 'El comité comunicó la decisión a los afectados.', to: 'El comité se la comunicó.', en: 'The committee communicated it to them.' },
+  { type: 'transform', level: 6, instruction: 'Rewrite with at least three distinct tenses, narrating past, present relevance and a future consequence:', from: 'Cerraron la fábrica.', to: 'Cerraron la fábrica hace un año, la zona sigue deprimida, y muchos vecinos habrán tenido que mudarse para entonces.', en: 'They closed the factory a year ago, the area is still depressed, and many residents will likely have had to move by now.' }
 
 ];
