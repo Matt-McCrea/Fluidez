@@ -31,38 +31,32 @@ node tools/validate-content.js && node tools/test-checker.js && node tools/lint-
 
 If they do not, you are on the wrong branch or the spec is not built. Stop.
 
-## 2. What is left
+## 2. What is left — WORKLIST.md
 
-**Do not guess, and do not work through `spec/syllabus-draft.json` from the
-top — most of A1 and A2 is already written.** Ask:
+**`WORKLIST.md` in the repo root is the record.** Every lesson and every batch
+of practice material is a line in it. Work the unticked lines; **tick a line in
+the same commit as the work it describes.**
+
+It is hand-maintained on purpose. Progress used to be inferred — by resolving
+the PCIC ids a lesson cites back to syllabus units — and that inference was
+wrong three times in three different ways, always optimistically. The cause was
+that `syllabus.js` chopped the inventory more finely than lessons are written:
+*Expresar acuerdo* at B2 is one lesson, and the syllabus made four units of it,
+so writing it left three "outstanding". A list you tick cannot drift.
+
+A lesson item is one **(level, strand, subsection)** of the Plan Curricular,
+with the number of specification points it must teach and where to find them in
+`spec/pcic.json`.
 
 ```
-node tools/todo.js                  # summary by level and strand
-node tools/todo.js B1 function      # the actual units, with their PCIC source
-node tools/todo.js --practice       # the passage / apply / writing gap
+731 lesson items   312 written   419 to go
+  A1   59/64      A2   75/86     B1  135/175
+  B2   38/204     C1    5/202
+56 practice-material batches outstanding
 ```
 
-`todo.js` matches syllabus units to written lessons through the PCIC ids each
-lesson records, so it lists only what is genuinely missing. Re-run it after
-every batch; it is the definition of done.
-
-As of writing: **463 lesson units outstanding of 1,071.**
-
-| level | grammar | notion | function | discourse | genre | total |
-|---|---|---|---|---|---|---|
-| A1 | 11 | 0 | 4 | 1 | 1 | 17 |
-| A2 | 20 | 0 | 6 | 0 | 4 | 30 |
-| B1 | 14 | 1 | **66** | 4 | 14 | **99** |
-| B2 | 33 | 11 | **92** | 9 | 19 | **164** |
-| C1 | 34 | 13 | **79** | 11 | 16 | **153** |
-
-Plus practice material, which is a separate axis and is **the larger gap**:
-
-| | A1 | A2 | B1 | B2 | C1 |
-|---|---|---|---|---|---|
-| passages | 87 ✓ | 22 → 62 | 11 → 81 | **0 → 80** | **0 → 80** |
-| apply | 118 ✓ | 163 ✓ | 61 → 141 | **0 → 120** | **0 → 120** |
-| writing | 156 ✓ | 91 ✓ | 28 → 78 | **0 → 80** | **0 → 80** |
+Do not regenerate the file. `node tools/worklist.js --force` rewrites it and
+loses every tick.
 
 ### Order of work
 
@@ -315,7 +309,7 @@ Work in batches of 10–15 items. After each batch:
 1. run all four gates and fix everything before continuing;
 2. for practice material, run `node tools/variety.js <level>` — correct is not
    the same as varied, and the gates only check correct;
-3. re-run `node tools/todo.js` to see what remains;
+3. tick the lines you finished in `WORKLIST.md`, in the same commit;
 4. report: what you added, gate status, and any unit you **skipped** with the
    reason. Skipping beats inventing — if a unit's `spec` points are too thin to
    teach (`teaches` < 3, or all entries are structural headings like "Forma"),

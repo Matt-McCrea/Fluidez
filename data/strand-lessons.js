@@ -12747,5 +12747,458 @@ window.STRAND_LESSONS = [
     { id: 'p:habilidadb2:recall', kind: 'recall', front: '¿Qué tipo de verbo es "dar" en "se te da bien"?', back: 'como gustar — el objeto/actividad es el sujeto gramatical' }
   ]
 }
+,
+/* ============================================================================
+ * BATCH — B2 function, 12 more (memory cluster + feelings cluster).
+ * ========================================================================== */
+{
+  id: 'fn-preguntar-recordar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:500', 'funciones:B2:501', 'funciones:B2:502', 'funciones:B2:503'],
+  title: 'Preguntar si se recuerda: ¿te acuerdas de que...?',
+  summary: 'Four different questions for checking someone\'s memory, each with a slightly different shape: a shared past event, a specific task, a general fact, and the looser "does this ring a bell".',
+  sections: [
+    { h: '¿Recuerdas/Te acuerdas de que...?', html: 'Checks a shared memory of an EVENT: <i>¿Te acuerdas de que vinimos a cenar aquí hace un par de años?</i> — always with <i>que</i> + a full clause about something that happened.' },
+    { h: '¿Te has acordado de...?', html: 'Asks whether a specific task or fact was kept in mind, often something that needed doing: <i>¿Te has acordado de comprar la comida para el gato?</i>' },
+    { h: '¿Has olvidado...?', html: 'A more pointed version, sometimes mildly accusatory, implying the thing SHOULD be remembered: <i>¿Has olvidado cómo me llamo?</i>' },
+    { h: '¿Te suena...?', html: 'The loosest option — asks whether something rings a bell at all, without requiring full recall: <i>¿Te suena su cara?</i> works even for vague, partial recognition.' }
+  ],
+  exponents: [
+    { es: '¿Te acuerdas de que fuimos juntos a ese concierto?', en: 'Do you remember that we went to that concert together?', register: 'coloquial', note: 'shared event, everyday tone' },
+    { es: '¿Se ha acordado usted de traer los documentos?', en: 'Did you remember to bring the documents?', register: 'formal', note: 'usted — a task, professional context' },
+    { es: '¿Has olvidado ya nuestro trato?', en: 'Have you already forgotten our agreement?', register: 'neutral', note: 'slightly pointed, implies it should be remembered' },
+    { es: '¿Te suena este nombre?', en: 'Does this name ring a bell?', register: 'coloquial', note: 'loose recognition, no full recall needed' }
+  ],
+  contrasts: [
+    { es: '¿Te acuerdas de que quedamos el viernes?', en: 'Do you remember we arranged to meet on Friday?', note: 'a shared past event' },
+    { es: '¿Te has acordado de llamar al médico?', en: 'Did you remember to call the doctor?', note: 'a specific task' },
+    { es: '¿Te suena esta canción?', en: 'Does this song ring a bell?', note: 'vague recognition, not full recall' }
+  ],
+  pitfalls: [
+    '<i>¿Has olvidado...?</i> can sound like a mild reproach — softer alternatives (<i>¿te acuerdas de...?</i>) avoid that edge when none is intended.',
+    '<i>¿Te suena?</i> only asks about recognition, not full memory — a "sí" answer does not mean the person can recall details.'
+  ],
+  examples: [
+    { es: '¿Te acuerdas de que te lo dije la semana pasada?', en: 'Do you remember I told you last week?' },
+    { es: '¿Te has acordado de reservar la mesa?', en: 'Did you remember to book the table?' },
+    { es: '¿No te suena esa melodía?', en: "Doesn't that tune ring a bell?" }
+  ],
+  probes: [
+    { id: 'p:pregrecordar:matiz', kind: 'mcq', q: '¿Cuál pregunta implica un ligero reproche?', options: ['¿Te suena?', '¿Has olvidado nuestro trato?', '¿Te acuerdas de aquel día?'], answer: 1 },
+    { id: 'p:pregrecordar:tarea', kind: 'mcq', q: '¿Cuál se usa para preguntar por una TAREA pendiente?', options: ['¿Te has acordado de comprar el pan?', '¿Te suena esa cara?', '¿Te acuerdas de que fuimos juntos?'], answer: 0 },
+    { id: 'p:pregrecordar:cloze', kind: 'cloze', text: '¿___ acuerdas de que quedamos ayer? (tú)', accept: ['Te'] },
+    { id: 'p:pregrecordar:recall', kind: 'recall', front: '¿Qué expresión pide solo un reconocimiento vago, no un recuerdo completo?', back: '¿Te suena...?' }
+  ]
+},
+
+{
+  id: 'fn-expresar-recordar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:508'],
+  title: 'Expresar que se recuerda: recuerdo, me acuerdo de',
+  summary: 'The plain, general way to confirm you remember something — the everyday default before reaching for the more specific "me suena" or "no he olvidado" families.',
+  sections: [
+    { h: 'Recordar vs acordarse de', html: '<i>Recordar</i> is transitive, no preposition: <i>Recuerdo aquel verano.</i> <i>Acordarse</i> is reflexive and needs <i>de</i>: <i>Me acuerdo de aquel verano.</i> Both are fully standard and interchangeable in meaning.' },
+    { h: 'The everyday baseline', html: 'Where <i>me suena</i> signals vague recognition and <i>no he olvidado</i> insists emphatically, <i>recuerdo/me acuerdo de</i> is the plain, unmarked way to state a clear memory.' }
+  ],
+  exponents: [
+    { es: 'Recuerdo perfectamente aquella tarde.', en: 'I remember that afternoon perfectly.', register: 'neutral', note: 'recordar — transitive, no preposition' },
+    { es: 'Me acuerdo de todo lo que pasó.', en: 'I remember everything that happened.', register: 'coloquial', note: 'acordarse de — reflexive, everyday' },
+    { es: 'Recuerdo bien su nombre.', en: 'I remember his name well.', register: 'formal', note: 'works equally in formal contexts, unmarked' }
+  ],
+  contrasts: [
+    { es: 'Recuerdo su cara.', en: 'I remember his face.', note: 'recordar — no preposition' },
+    { es: 'Me acuerdo de su cara.', en: 'I remember his face.', note: 'acordarse de — same meaning, different construction' },
+    { es: '*Recuerdo de su cara.', en: '(wrong)', note: 'recordar never takes "de"' }
+  ],
+  pitfalls: [
+    'Mixing the two constructions (<i>*recuerdo de</i>, <i>*me acuerdo su cara</i> without "de") is a very common error — each verb has its own fixed pattern.'
+  ],
+  examples: [
+    { es: 'Todavía recuerdo cómo empezó todo.', en: 'I still remember how it all started.' },
+    { es: 'Me acuerdo perfectamente de esa conversación.', en: 'I remember that conversation perfectly.' },
+    { es: 'Recordamos ese viaje con mucho cariño.', en: 'We remember that trip very fondly.' }
+  ],
+  probes: [
+    { id: 'p:exprrecordar:prep', kind: 'mcq', q: '¿Cuál es correcta?', options: ['Recuerdo de su cara.', 'Me acuerdo de su cara.', 'Ambas'], answer: 1 },
+    { id: 'p:exprrecordar:transitivo', kind: 'mcq', q: '"Recordar" es...', options: ['reflexivo, con "de"', 'transitivo, sin preposición', 'siempre impersonal'], answer: 1 },
+    { id: 'p:exprrecordar:cloze', kind: 'cloze', text: 'Me acuerdo ___ ese día perfectamente. (de)', accept: ['de'] },
+    { id: 'p:exprrecordar:recall', kind: 'recall', front: '¿"Recordar" lleva preposición?', back: 'no — es transitivo directo' }
+  ]
+},
+
+{
+  id: 'fn-me-suena-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:516', 'funciones:B2:517', 'funciones:B2:518'],
+  title: 'Me suena: reconocimiento parcial',
+  summary: '"Me suena" works like "gustar" — the familiar thing is the grammatical subject — and it can attach to a noun, a past infinitive, or a whole clause, always meaning partial, uncertain recognition rather than full recall.',
+  sections: [
+    { h: '+ SN: a noun rings a bell', html: 'The simplest form: <i>Me suena su cara.</i>, <i>Esta película me suena.</i> — the noun is the subject, agreeing with "suena/suenan".' },
+    { h: '+ infinitivo compuesto: a vague memory of doing something', html: '<i>Me suena haber estado aquí antes</i> — a fuzzy sense of having done something, without full certainty.' },
+    { h: '+ que: a vague memory of a fact', html: '<i>Me suena que ese tema lo lleva alguien del departamento de Lucía</i> — reports a half-remembered fact, hedged, not asserted with confidence.' }
+  ],
+  exponents: [
+    { es: 'Su nombre me suena, pero no recuerdo de qué.', en: 'His name rings a bell, but I can\'t remember from where.', register: 'coloquial', note: '+ SN, everyday hedge' },
+    { es: 'Me suena haber leído algo sobre esto.', en: 'I have a vague memory of having read something about this.', register: 'neutral', note: '+ infinitivo compuesto' },
+    { es: 'Me suena que la reunión se cambió de fecha.', en: 'I have a vague memory that the meeting got rescheduled.', register: 'neutral', note: '+ que — a half-remembered fact' }
+  ],
+  contrasts: [
+    { es: 'Recuerdo perfectamente su cara.', en: 'I remember his face perfectly.', note: 'full, confident recall' },
+    { es: 'Su cara me suena.', en: 'His face rings a bell.', note: 'partial, uncertain recognition — much weaker claim' }
+  ],
+  pitfalls: [
+    'Like <i>gustar</i>, the verb agrees with the THING that sounds familiar, not with the person: <i>me suenan esas caras</i> (plural), not <i>*me suena esas caras</i>.',
+    '<i>Me suena</i> is always a hedge — do not use it where you actually mean confident recall; it undersells certainty on purpose.'
+  ],
+  examples: [
+    { es: 'Esa canción me suena de algo.', en: 'That song rings a bell somehow.' },
+    { es: 'Me suena que ya habíamos hablado de esto.', en: "I have a vague sense we'd already talked about this." },
+    { es: 'El apellido me suena, pero no ubico a la persona.', en: "The surname rings a bell, but I can't place the person." }
+  ],
+  probes: [
+    { id: 'p:mesuena:concordancia', kind: 'mcq', q: '"Esas caras me ___ de algo." (plural)', options: ['suena', 'suenan', 'suenen'], answer: 1 },
+    { id: 'p:mesuena:certeza', kind: 'mcq', q: '"Me suena" expresa...', options: ['certeza total', 'reconocimiento parcial, inseguro', 'ignorancia completa'], answer: 1 },
+    { id: 'p:mesuena:cloze', kind: 'cloze', text: 'Me suena ___ estado aquí antes. (haber)', accept: ['haber'] },
+    { id: 'p:mesuena:recall', kind: 'recall', front: '¿"Suena" concuerda con la persona o con la cosa reconocida?', back: 'con la cosa reconocida (como gustar)' }
+  ]
+},
+
+{
+  id: 'fn-no-he-olvidado-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:512', 'funciones:B2:513', 'funciones:B2:514'],
+  title: 'No he olvidado: insistir en que se recuerda',
+  summary: 'A more emphatic and assertive way to claim memory than plain "recuerdo" — often used specifically to counter a suggestion that you might have forgotten, or to promise you never will.',
+  sections: [
+    { h: '+ SN/infinitivo: a specific thing not forgotten', html: '<i>No me he olvidado en absoluto de ella.</i> — the negation carries the emphasis, reinforced by <i>en absoluto</i>.' },
+    { h: '+ que: a fact not forgotten', html: '<i>No me he olvidado de que el informe tiene que estar terminado la semana que viene</i> — reassures that a deadline or obligation is still in mind.' },
+    { h: '+ qué/cómo/cuándo: never forgetting the details', html: '<i>Nunca olvidaré cómo se portaron tus padres conmigo</i> — often carries emotional weight, promising a memory will last.' }
+  ],
+  exponents: [
+    { es: 'No me he olvidado de ti en absoluto.', en: "I haven't forgotten you at all.", register: 'coloquial', note: 'emphatic, personal' },
+    { es: 'No me he olvidado de que la entrega es mañana.', en: "I haven't forgotten the deadline is tomorrow.", register: 'neutral', note: 'reassures about an obligation' },
+    { es: 'Nunca olvidaré cómo nos ayudaron aquel día.', en: 'I will never forget how they helped us that day.', register: 'formal', note: 'emotionally weighty, works in a formal speech or toast' }
+  ],
+  contrasts: [
+    { es: 'Recuerdo la fecha.', en: 'I remember the date.', note: 'plain, unmarked' },
+    { es: 'No he olvidado la fecha.', en: "I haven't forgotten the date.", note: 'emphatic — implies someone doubted you would remember' }
+  ],
+  pitfalls: [
+    'This construction is most natural as a REPLY to a doubt or reminder — using it out of the blue, with nothing to push back against, can sound oddly defensive.'
+  ],
+  examples: [
+    { es: 'No he olvidado tu cumpleaños, tranquila.', en: "I haven't forgotten your birthday, don't worry." },
+    { es: 'No nos hemos olvidado de que nos prometiste ayuda.', en: "We haven't forgotten you promised us help." },
+    { es: 'Jamás olvidaré ese momento.', en: 'I will never forget that moment.' }
+  ],
+  probes: [
+    { id: 'p:nohesolvidado:uso', kind: 'mcq', q: '"No me he olvidado de ti" se usa típicamente...', options: ['espontáneamente, sin motivo', 'como respuesta a una duda o reproche', 'para pedir disculpas'], answer: 1 },
+    { id: 'p:nohesolvidado:emocional', kind: 'mcq', q: '¿Cuál lleva más carga emocional?', options: ['Recuerdo la fecha.', 'Nunca olvidaré cómo me ayudaron.', 'No lo he olvidado.'], answer: 1 },
+    { id: 'p:nohesolvidado:cloze', kind: 'cloze', text: 'No me he olvidado ___ tu cumpleaños. (de)', accept: ['de'] },
+    { id: 'p:nohesolvidado:recall', kind: 'recall', front: '¿Qué palabra suele reforzar "no me he olvidado"?', back: 'en absoluto' }
+  ]
+},
+
+{
+  id: 'fn-expresar-no-recordar-general-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:524', 'funciones:B2:528', 'funciones:B2:531'],
+  title: 'Expresar que no se recuerda: tres formas generales',
+  summary: 'Three near-synonymous everyday phrases for admitting a memory failure — the choice between them is mostly a matter of habit and rhythm, not meaning.',
+  sections: [
+    { h: 'No recuerdo / No me acuerdo de', html: 'The plain negatives of the "remembering" verbs from earlier — <i>recordar</i> transitive, <i>acordarse de</i> reflexive.' },
+    { h: 'He olvidado', html: 'Frames the gap as something that WAS known and has since slipped away, rather than simply never having stuck: <i>He olvidado su número.</i>' },
+    { h: 'Me he olvidado de', html: 'The reflexive counterpart, often for a task rather than a fact: <i>Me he olvidado de llamarla.</i>' }
+  ],
+  exponents: [
+    { es: 'No recuerdo su apellido.', en: "I don't remember his surname.", register: 'neutral', note: 'recordar negado' },
+    { es: 'No me acuerdo de nada de esa noche.', en: "I don't remember anything about that night.", register: 'coloquial', note: 'acordarse negado' },
+    { es: 'He olvidado por completo la contraseña.', en: "I've completely forgotten the password.", register: 'neutral', note: 'olvidar — something known, now lost' },
+    { es: 'Me he olvidado de llamar al dentista.', en: "I forgot to call the dentist.", register: 'coloquial', note: 'a task left undone' }
+  ],
+  contrasts: [
+    { es: 'No recuerdo esa canción.', en: "I don't remember that song.", note: 'never fully retained, or lost — ambiguous' },
+    { es: 'He olvidado esa canción.', en: "I've forgotten that song.", note: 'implies it WAS known and has since faded' }
+  ],
+  pitfalls: [
+    'These three are close to interchangeable in everyday use — do not overstate a difference in meaning where the real difference is register and habit.'
+  ],
+  examples: [
+    { es: 'No me acuerdo de dónde puse las llaves.', en: "I can't remember where I put the keys." },
+    { es: 'He olvidado el nombre de la calle.', en: "I've forgotten the name of the street." },
+    { es: 'Se me olvidó por completo la cita.', en: 'I completely forgot about the appointment.' }
+  ],
+  probes: [
+    { id: 'p:norecordargeneral:matiz', kind: 'mcq', q: '"He olvidado su número" implica que...', options: ['nunca lo supo', 'lo supo y ya no lo recuerda', 'lo recuerda perfectamente'], answer: 1 },
+    { id: 'p:norecordargeneral:reflexivo', kind: 'mcq', q: '¿Cuál necesita "de"?', options: ['No recuerdo', 'Me he olvidado', 'Ambas por igual'], answer: 1 },
+    { id: 'p:norecordargeneral:cloze', kind: 'cloze', text: 'Me he olvidado ___ traer el paraguas. (de)', accept: ['de'] },
+    { id: 'p:norecordargeneral:recall', kind: 'recall', front: '¿Son sinónimos casi intercambiables "no recuerdo", "no me acuerdo de" y "he olvidado"?', back: 'sí, en el uso cotidiano' }
+  ]
+},
+
+{
+  id: 'fn-no-recuerdo-elaborado-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:525', 'funciones:B2:526', 'funciones:B2:527'],
+  title: 'No recuerdo / no me acuerdo de: con infinitivo, que y preguntas',
+  summary: 'The plain forgetting phrase can attach to three different structures — a past action of your own, a fact you doubt, or an embedded question — each with its own construction.',
+  sections: [
+    { h: '+ infinitivo compuesto: your own past action', html: '<i>No me acuerdo de haber hablado con él</i> — the subject of remembering and of the action are the same, so the infinitive (not a clause) is natural.' },
+    { h: '+ que: denying a claimed fact, subjunctive', html: '<i>No recuerdo que vistiera de una forma especial</i> — the subjunctive marks that the speaker is not asserting the fact, just failing to recall it, often gently contradicting someone else\'s claim.' },
+    { h: '+ embedded question', html: '<i>No se acordaba de qué habían dicho</i> — the gap is about a specific detail (what, who, when), not the whole event.' }
+  ],
+  exponents: [
+    { es: 'No me acuerdo de haber firmado ese papel.', en: "I don't remember having signed that paper.", register: 'coloquial', note: '+ infinitivo compuesto, same subject' },
+    { es: 'No recuerdo que dijera eso exactamente.', en: "I don't remember him saying that exactly.", register: 'neutral', note: '+ que, subjunctive — gently disputes a claim' },
+    { es: 'No me acuerdo de dónde dejé el coche.', en: "I don't remember where I left the car.", register: 'coloquial', note: '+ embedded question' }
+  ],
+  contrasts: [
+    { es: 'No recuerdo haber dicho eso.', en: "I don't remember saying that.", note: 'same subject — infinitive' },
+    { es: 'No recuerdo que él dijera eso.', en: "I don't remember him saying that.", note: 'different subject — subjunctive clause' }
+  ],
+  pitfalls: [
+    'When the subject is the SAME on both sides, the infinitive is far more natural than a clause with a repeated subject — <i>no recuerdo haber ido</i>, not the clumsier <i>*no recuerdo que yo fuera</i>.',
+    'The <i>que</i>-clause almost always takes the subjunctive here, since it is framed as something the speaker cannot confirm, not a fact being asserted.'
+  ],
+  examples: [
+    { es: 'No me acuerdo de haber cerrado la ventana.', en: "I don't remember closing the window." },
+    { es: 'No recuerdo que hiciera tanto frío ese día.', en: "I don't remember it being that cold that day." },
+    { es: 'No se acordaba de cómo había llegado hasta allí.', en: "He couldn't remember how he had gotten there." }
+  ],
+  probes: [
+    { id: 'p:norecuerdoelab:sujeto', kind: 'mcq', q: 'Mismo sujeto: "No recuerdo ___ (decir) eso."', options: ['que dije', 'haber dicho', 'que diga'], answer: 1 },
+    { id: 'p:norecuerdoelab:modo', kind: 'mcq', q: 'Sujeto distinto: "No recuerdo que él lo ___ (decir)."', options: ['dijo', 'dijera', 'ha dicho'], answer: 1 },
+    { id: 'p:norecuerdoelab:cloze', kind: 'cloze', text: 'No me acuerdo de ___ (haber) hablado con ella.', accept: ['haber'] },
+    { id: 'p:norecuerdoelab:recall', kind: 'recall', front: 'Con sujeto distinto, ¿qué modo lleva la cláusula con "que" tras "no recuerdo"?', back: 'subjuntivo' }
+  ]
+},
+
+{
+  id: 'fn-expresar-hartazgo-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:750', 'funciones:B2:751', 'funciones:B2:752', 'funciones:B2:753',
+         'funciones:B2:754', 'funciones:B2:755', 'funciones:B2:756', 'funciones:B2:757', 'funciones:B2:758', 'funciones:B2:759'],
+  title: 'Expresar hartazgo: ¡ya está bien!',
+  summary: 'A rich, mostly colloquial family for "I\'ve had enough" — verbs that take the source of annoyance as subject (gustar-pattern), and exclamations that demand something stop right now.',
+  sections: [
+    { h: 'estar harto/aburrido de que + subjuntivo', html: 'States the fed-up state directly: <i>Estoy harto de que me pregunte lo mismo.</i> Always subjunctive after "de que", since it is about a recurring, generic irritation.' },
+    { h: 'cansar(se), hartar(se): gustar pattern available', html: '<i>Me cansa</i> and <i>me harto de</i> both work, but <i>cansar</i> and <i>hartar</i> can also flip to a gustar-type construction with the irritant as subject: <i>Ese tipo de programas me cansa.</i>' },
+    { h: 'Exclamations demanding it stop', html: '<i>¡No puedo más!</i>, <i>¡No lo aguanto más!</i>, <i>¡Ya está bien!</i>, <i>¡Basta ya!</i> — all abrupt, all colloquial, used to cut off a situation on the spot.' },
+    { h: 'Basta ya de / Ya está bien de + noun/infinitive', html: 'These name specifically WHAT should stop: <i>¡Basta ya de protestar!</i>, <i>¡Ya está bien de que nos traten así!</i>' }
+  ],
+  exponents: [
+    { es: 'Estoy harto de que siempre llegues tarde.', en: "I'm sick of you always arriving late.", register: 'coloquial', note: 'estar harto de que + subjuntivo' },
+    { es: 'Ya me he cansado de repetir lo mismo.', en: "I've grown tired of repeating the same thing.", register: 'neutral', note: 'cansarse de' },
+    { es: '¡Ya está bien, hombre! ¡No puedo más!', en: "That's enough! I can't take it anymore!", register: 'coloquial', note: 'exclamatory, cutting the situation off' },
+    { es: '¡Basta ya de excusas!', en: 'Enough with the excuses!', register: 'coloquial', note: 'names the specific thing that must stop' },
+    { es: 'La situación resulta ya insostenible para todos los implicados.', en: 'The situation has become unsustainable for everyone involved.', register: 'formal', note: 'formal equivalent for a written complaint, no exclamation' }
+  ],
+  contrasts: [
+    { es: 'Estoy un poco cansado de esto.', en: "I'm a bit tired of this.", note: 'mild, understated' },
+    { es: '¡No puedo más!', en: "I can't take it anymore!", note: 'urgent, at the breaking point' },
+    { es: '¡Basta ya de mentiras!', en: 'Enough with the lies!', note: 'names exactly what must stop' }
+  ],
+  pitfalls: [
+    'These exclamatory forms are strongly colloquial and emotionally charged — in a formal complaint or written report, reach for calmer phrasing (<i>resulta insostenible, no es aceptable</i>) instead.',
+    '<i>Estar harto de que</i> always takes the subjunctive — the source of annoyance is framed as a recurring pattern, not a single fact.'
+  ],
+  examples: [
+    { es: 'Estoy harta de que nadie me escuche.', en: "I'm sick of nobody listening to me." },
+    { es: '¡Ya basta de discutir por tonterías!', en: 'Enough arguing over nonsense!' },
+    { es: 'Ese ruido constante me desespera.', en: 'That constant noise drives me to despair.' }
+  ],
+  probes: [
+    { id: 'p:hartazgo:modo', kind: 'mcq', q: '"Estoy harto de que ___ (llegar) tarde."', options: ['llegas', 'llegues', 'llegarás'], answer: 1 },
+    { id: 'p:hartazgo:registro', kind: 'mcq', q: '¿Cuál usarías en una queja formal por escrito?', options: ['¡Basta ya!', 'La situación resulta insostenible.', '¡No puedo más!'], answer: 1 },
+    { id: 'p:hartazgo:cloze', kind: 'cloze', text: '¡___ ya de excusas! (enough)', accept: ['Basta'] },
+    { id: 'p:hartazgo:recall', kind: 'recall', front: '¿Qué estructura usan "basta ya de" y "ya está bien de" para nombrar la causa?', back: 'de + sustantivo/infinitivo (o "de que" + subjuntivo)' }
+  ]
+},
+
+{
+  id: 'fn-expresar-nerviosismo-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:802', 'funciones:B2:803', 'funciones:B2:804', 'funciones:B2:805', 'funciones:B2:806', 'funciones:B2:807'],
+  title: 'Expresar nerviosismo: me pone nervioso, pierdo la paciencia',
+  summary: 'Nervousness has its own gustar-type verbs (poner nervioso, desesperar) and its own exclamations — distinct from simple fear or worry, this is about agitation building toward losing composure.',
+  sections: [
+    { h: 'me pone nervioso/histérico + que', html: 'A gustar-type construction where the irritating situation is the subject: <i>Me pone histérico que no me avises cuando vas a llegar tarde.</i>' },
+    { h: 'desesperar(se)', html: 'Works both reflexively (<i>me desespero</i>, the person as subject) and gustar-style (<i>me desespera</i>, the cause as subject) — both common, slightly different focus.' },
+    { h: 'perder la paciencia / el control', html: 'Names the moment composure breaks: <i>De repente perdió la paciencia y se fue.</i>' },
+    { h: 'Exclamations', html: '<i>¡Qué nervioso estoy!</i> and <i>¡Qué nervios!</i> announce the state directly, common right before or during a stressful moment.' }
+  ],
+  exponents: [
+    { es: 'Me pone nervioso que no contestes los mensajes.', en: 'It makes me nervous when you don\'t answer messages.', register: 'coloquial', note: 'gustar-type + que' },
+    { es: 'Me desespera la lentitud de este trámite.', en: 'The slowness of this process is driving me to despair.', register: 'neutral', note: 'desesperar — cause as subject' },
+    { es: 'Perdí la paciencia después de una hora esperando.', en: 'I lost my patience after an hour of waiting.', register: 'neutral', note: 'perder la paciencia' },
+    { es: '¡Qué nervios tengo antes del examen!', en: "I'm so nervous before the exam!", register: 'coloquial', note: 'exclamatory' },
+    { es: 'La incertidumbre generó una notable inquietud entre los presentes.', en: 'The uncertainty caused noticeable unease among those present.', register: 'formal', note: 'formal, written equivalent — no exclamation, no gustar-verb' }
+  ],
+  contrasts: [
+    { es: 'Estoy un poco nervioso.', en: "I'm a bit nervous.", note: 'mild' },
+    { es: '¡Qué nervios! No puedo ni hablar.', en: "So nervous! I can't even speak.", note: 'intense, exclamatory' },
+    { es: 'Perdí totalmente el control de la situación.', en: 'I completely lost control of the situation.', note: 'nervousness escalated into losing composure' }
+  ],
+  pitfalls: [
+    '<i>Poner nervioso</i> and <i>desesperar</i> both take the SOURCE of nervousness as grammatical subject, like <i>gustar</i> — do not make the nervous person the subject of these verbs.',
+    'These formulas describe agitation/anxiety, not physical fear — for genuine fear, other functions (expressing fear) apply instead.'
+  ],
+  examples: [
+    { es: 'Me ponen nerviosa las entrevistas de trabajo.', en: 'Job interviews make me nervous.' },
+    { es: 'Se desespera cuando algo no sale como planeó.', en: 'He gets desperate when something doesn\'t go as planned.' },
+    { es: '¡Qué nervioso estoy antes de hablar en público!', en: 'I get so nervous before speaking in public!' }
+  ],
+  probes: [
+    { id: 'p:nerviosismo:sujeto', kind: 'mcq', q: '"___ ponen nervioso los exámenes." (a mí)', options: ['Yo', 'Me', 'Mi'], answer: 1 },
+    { id: 'p:nerviosismo:registro', kind: 'mcq', q: '¿Cuál es más formal?', options: ['¡Qué nervios!', 'Me pone histérico.', 'La situación generó cierta inquietud.'], answer: 2 },
+    { id: 'p:nerviosismo:cloze', kind: 'cloze', text: 'Perdí la ___ después de esperar tanto. (patience)', accept: ['paciencia'] },
+    { id: 'p:nerviosismo:recall', kind: 'recall', front: '¿"Poner nervioso" sigue el patrón de qué verbo famoso?', back: 'gustar' }
+  ]
+},
+
+{
+  id: 'fn-expresar-alivio-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:824', 'funciones:B2:825', 'funciones:B2:826', 'funciones:B2:827'],
+  title: 'Expresar alivio: ¡menos mal!',
+  summary: 'Relief has a small set of exclamations, from the everyday "menos mal" to the more explicitly religious "gracias a Dios" — used even by non-religious speakers as a fixed expression.',
+  sections: [
+    { h: '¡Qué alivio!', html: 'Names the feeling directly, works in both speech and writing: <i>¡Qué alivio saber que llegaron bien!</i>' },
+    { h: '¡Menos mal!', html: 'The most everyday, colloquial relief exclamation — literally "less bad", used constantly in speech.' },
+    { h: '¡Gracias a Dios!', html: 'A fixed expression of relief that has become secular in everyday use — atheist and religious speakers alike say it without necessarily meaning it literally.' },
+    { h: 'Me siento (más) aliviado', html: 'The calmer, descriptive way to state relief, common in more measured or written contexts.' }
+  ],
+  exponents: [
+    { es: '¡Menos mal que llegaste a tiempo!', en: "Thank goodness you arrived on time!", register: 'coloquial', note: 'the everyday default' },
+    { es: '¡Gracias a Dios, todo salió bien!', en: 'Thank God, everything turned out fine!', register: 'coloquial', note: 'fixed expression, used regardless of belief' },
+    { es: 'Me siento mucho más aliviada después de hablar con el médico.', en: 'I feel much more relieved after talking to the doctor.', register: 'neutral', note: 'calmer, descriptive' },
+    { es: 'La confirmación supuso un notable alivio para toda la familia.', en: 'The confirmation was a great relief to the whole family.', register: 'formal', note: 'written, formal register' }
+  ],
+  contrasts: [
+    { es: '¡Qué alivio!', en: 'What a relief!', note: 'general exclamation' },
+    { es: '¡Menos mal!', en: 'Thank goodness!', note: 'most colloquial, most frequent in speech' },
+    { es: 'Me siento aliviado.', en: 'I feel relieved.', note: 'measured, descriptive — not exclamatory' }
+  ],
+  pitfalls: [
+    '<i>¡Gracias a Dios!</i> is used as a fixed idiom by speakers of all beliefs, much like English "thank God" — it does not necessarily signal religious conviction.'
+  ],
+  examples: [
+    { es: '¡Menos mal que no llovió al final!', en: "Thank goodness it didn't rain after all!" },
+    { es: '¡Qué alivio, ya terminamos!', en: "What a relief, we're finally done!" },
+    { es: 'Todos sintieron un gran alivio al conocer la noticia.', en: 'Everyone felt great relief on hearing the news.' }
+  ],
+  probes: [
+    { id: 'p:alivio:frecuente', kind: 'mcq', q: '¿Cuál es la más frecuente y coloquial?', options: ['Me siento aliviado.', '¡Menos mal!', 'Supuso un notable alivio.'], answer: 1 },
+    { id: 'p:alivio:secular', kind: 'mcq', q: '¿Usan "¡Gracias a Dios!" solo las personas religiosas?', options: ['sí', 'no, es una expresión fija de uso general', 'solo en contextos formales'], answer: 1 },
+    { id: 'p:alivio:cloze', kind: 'cloze', text: '¡___ mal que trajiste el paraguas! (menos)', accept: ['Menos'] },
+    { id: 'p:alivio:recall', kind: 'recall', front: '¿Cuál de las expresiones de alivio es la más formal/escrita?', back: 'supuso un (gran) alivio / me siento aliviado' }
+  ]
+},
+
+{
+  id: 'fn-expresar-decepcion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:837', 'funciones:B2:838', 'funciones:B2:839', 'funciones:B2:840'],
+  title: 'Expresar decepción: ¡qué decepción!',
+  summary: 'Disappointment ranges from a calm "estoy decepcionado" to the sharper, angrier "¡qué rabia!" — and the gustar-type verb decepcionar/desilusionar puts the disappointing thing as the grammatical subject.',
+  sections: [
+    { h: 'Estoy decepcionado/desilusionado', html: 'The calm, descriptive baseline — states the feeling without extra emotional charge.' },
+    { h: '¡Qué decepción/desilusión!', html: 'An exclamation naming the feeling directly, more emotionally present than the plain statement.' },
+    { h: '¡Qué rabia!', html: 'Sharper — mixes disappointment with real frustration or anger, stronger than mere decepción.' },
+    { h: 'Me desilusiona/decepciona + que', html: 'The gustar-type construction: the disappointing FACT is the subject, the disappointed person the indirect object, subjunctive after "que": <i>Me ha decepcionado muchísimo que se lo hayas dicho.</i>' }
+  ],
+  exponents: [
+    { es: 'Estoy bastante decepcionado con el resultado.', en: "I'm quite disappointed with the result.", register: 'neutral', note: 'calm baseline' },
+    { es: '¡Qué decepción, esperaba mucho más!', en: 'What a disappointment, I expected so much more!', register: 'coloquial', note: 'exclamatory, direct' },
+    { es: '¡Qué rabia que hayan cancelado el concierto!', en: "So frustrating that they cancelled the concert!", register: 'coloquial', note: 'stronger — frustration mixed in' },
+    { es: 'Me decepciona que no hayan cumplido su palabra.', en: "It disappoints me that they didn't keep their word.", register: 'neutral', note: 'gustar-type + subjuntivo' }
+  ],
+  contrasts: [
+    { es: 'Estoy un poco decepcionado.', en: "I'm a bit disappointed.", note: 'mild, measured' },
+    { es: '¡Qué rabia!', en: 'So frustrating!', note: 'stronger, edged with anger' },
+    { es: 'Su actitud me ha decepcionado profundamente.', en: 'His attitude has deeply disappointed me.', note: 'formal-leaning, written register' }
+  ],
+  pitfalls: [
+    '<i>¡Qué rabia!</i> carries more anger than plain disappointment — using it for a mild letdown overstates the emotion.',
+    '<i>Decepcionar/desilusionar</i> follow the gustar pattern: the disappointing thing is the subject, and a "que" clause after them takes the subjunctive.'
+  ],
+  examples: [
+    { es: 'Me decepcionó mucho su respuesta.', en: 'His answer disappointed me a lot.' },
+    { es: '¡Qué desilusión, no ganamos!', en: "What a letdown, we didn't win!" },
+    { es: 'Está desilusionada con el nuevo trabajo.', en: 'She is disappointed with the new job.' }
+  ],
+  probes: [
+    { id: 'p:decepcion:intensidad', kind: 'mcq', q: '¿Cuál expresa más enfado, no solo decepción?', options: ['Estoy decepcionado.', '¡Qué rabia!', 'Me desilusiona un poco.'], answer: 1 },
+    { id: 'p:decepcion:modo', kind: 'mcq', q: '"Me decepciona que no ___ (venir)."', options: ['vienen', 'vengan', 'vendrán'], answer: 1 },
+    { id: 'p:decepcion:cloze', kind: 'cloze', text: '¡Qué ___, esperaba más! (decepción)', accept: ['decepción'] },
+    { id: 'p:decepcion:recall', kind: 'recall', front: '¿Qué patrón verbal sigue "decepcionar/desilusionar"?', back: 'como gustar — la cosa decepcionante es el sujeto' }
+  ]
+},
+
+{
+  id: 'fn-expresar-resignacion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:842', 'funciones:B2:843', 'funciones:B2:844', 'funciones:B2:845',
+         'funciones:B2:846', 'funciones:B2:847', 'funciones:B2:848'],
+  title: 'Expresar resignación: no hay nada que hacer',
+  summary: 'Accepting that nothing more can be done has its own set of fixed phrases — from a flat statement that a situation has no solution, to the shrugging "otra vez será" and "¡qué le vamos a hacer!"',
+  sections: [
+    { h: 'Estoy resignado a...', html: 'States the resigned state directly, followed by an infinitive naming what is being accepted: <i>Ya estoy resignado a vivir así.</i>' },
+    { h: 'Declaring the situation unsolvable', html: '<i>Está todo perdido</i>, <i>Esto no tiene solución/arreglo</i>, <i>No hay nada que hacer</i> — all flatly close off further effort.' },
+    { h: 'Shrugging phrases', html: '<i>Otra vez será</i> (maybe next time), <i>¡En fin!</i> (well, anyway), <i>¡Qué le vamos a hacer!</i> (what can you do) — softer, almost philosophical acceptance, common in everyday speech.' }
+  ],
+  exponents: [
+    { es: 'Ya estoy resignada a llegar siempre tarde con este tráfico.', en: 'I\'ve resigned myself to always being late with this traffic.', register: 'coloquial', note: 'estar resignado a + infinitivo' },
+    { es: 'Esto no tiene arreglo, hay que aceptarlo.', en: "There's no fixing this, we have to accept it.", register: 'neutral', note: 'flat closure' },
+    { es: 'En fin, otra vez será.', en: 'Well, maybe next time.', register: 'coloquial', note: 'shrugging, philosophical' },
+    { es: 'La dirección ha asumido que la situación no tiene solución a corto plazo.', en: 'Management has accepted that the situation has no short-term solution.', register: 'formal', note: 'written, institutional register' }
+  ],
+  contrasts: [
+    { es: 'Vamos a intentarlo de nuevo.', en: "Let's try again.", note: 'not resigned — still hopeful' },
+    { es: 'No hay nada que hacer, ya está decidido.', en: "There's nothing to be done, it's already decided.", note: 'flatly resigned' },
+    { es: '¡Qué le vamos a hacer!', en: 'What can you do!', note: 'shrugging acceptance, softer tone' }
+  ],
+  pitfalls: [
+    '<i>¡Qué le vamos a hacer!</i> and <i>Otra vez será</i> read as mild and almost cheerful resignation — they are not appropriate for genuinely serious losses, where they would sound flippant.'
+  ],
+  examples: [
+    { es: 'No hay nada que hacer, el vuelo ya salió.', en: "There's nothing to be done, the flight has already left." },
+    { es: 'Está resignado a no conseguir el ascenso este año.', en: "He's resigned to not getting the promotion this year." },
+    { es: 'Otra vez será, ya lo intentaremos el año que viene.', en: "Maybe next time, we'll try again next year." }
+  ],
+  probes: [
+    { id: 'p:resignacion:tono', kind: 'mcq', q: '¿Cuál es más ligera/casi cómica, no apta para pérdidas graves?', options: ['No hay nada que hacer.', '¡Qué le vamos a hacer!', 'Esto no tiene solución.'], answer: 1 },
+    { id: 'p:resignacion:estructura', kind: 'mcq', q: '"Estoy resignado ___ perder el partido." (preposición)', options: ['de', 'a', 'con'], answer: 1 },
+    { id: 'p:resignacion:cloze', kind: 'cloze', text: 'No hay nada que ___. (hacer)', accept: ['hacer'] },
+    { id: 'p:resignacion:recall', kind: 'recall', front: '¿Qué expresión sugiere "quizás la próxima vez"?', back: 'Otra vez será' }
+  ]
+},
+
+{
+  id: 'fn-expresar-arrepentimiento-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:850', 'funciones:B2:851', 'funciones:B2:852'],
+  title: 'Expresar arrepentimiento: es una pena que...',
+  summary: 'Regret about a past action or missed opportunity uses subjunctive throughout — the compound and imperfect forms let the regret reach back to something already finished.',
+  sections: [
+    { h: 'Siento/Lamento que + subjuntivo', html: 'The direct statement of regret, with the compound subjunctive for something already done: <i>Lamento que no lo hubiéramos pensado a tiempo.</i>' },
+    { h: 'Es una pena/lástima que...', html: 'Frames the regret as a shame or waste rather than a personal fault: <i>Es una lástima que lo hayamos tirado.</i>' },
+    { h: '¡Qué pena/lástima que...!', html: 'The exclamatory version, more emotionally present: <i>¡Qué pena que no hayamos reservado a tiempo!</i>' }
+  ],
+  exponents: [
+    { es: 'Siento mucho no haberte avisado antes.', en: "I'm very sorry I didn't warn you sooner.", register: 'neutral', note: 'siento + infinitivo compuesto, same subject' },
+    { es: 'Lamentamos profundamente lo ocurrido.', en: 'We deeply regret what happened.', register: 'formal', note: 'formal register, common in official apologies' },
+    { es: 'Es una pena que no hayamos podido ir.', en: "It's a shame we couldn't go.", register: 'neutral', note: 'es una pena/lástima que + subjuntivo compuesto' },
+    { es: '¡Qué lástima que se cancelara la boda!', en: 'What a shame the wedding got cancelled!', register: 'coloquial', note: 'exclamatory, emotionally direct' }
+  ],
+  contrasts: [
+    { es: 'Siento no haber ido.', en: "I'm sorry I didn't go.", note: 'same subject as the regretting party — infinitive' },
+    { es: 'Es una pena que no fueras.', en: "It's a shame you didn't go.", note: 'different subject — subjunctive clause' }
+  ],
+  pitfalls: [
+    'When the regretting person and the person who acted are the same, the compound infinitive is more natural than a clause: <i>siento no haber ido</i>, not <i>*siento que no fui</i>.',
+    '<i>Lamentar</i> reads more formal than <i>sentir</i> — appropriate for written apologies and official contexts.'
+  ],
+  examples: [
+    { es: 'Siento no haberlo sabido antes.', en: "I'm sorry I didn't know sooner." },
+    { es: 'Es una pena que se perdiera esa oportunidad.', en: 'It\'s a shame that opportunity was lost.' },
+    { es: 'Lamento mucho las molestias ocasionadas.', en: 'I deeply regret the inconvenience caused.' }
+  ],
+  probes: [
+    { id: 'p:arrepentimiento:sujeto', kind: 'mcq', q: 'Mismo sujeto: "Siento no ___ (llamar) antes."', options: ['haber llamado', 'que llamé', 'llame'], answer: 0 },
+    { id: 'p:arrepentimiento:registro', kind: 'mcq', q: '¿Cuál es más formal?', options: ['¡Qué pena!', 'Lamentamos profundamente lo ocurrido.', 'Es una pena, ¿no?'], answer: 1 },
+    { id: 'p:arrepentimiento:cloze', kind: 'cloze', text: 'Es una ___ que no hayamos ido. (pena/lástima)', accept: ['pena', 'lástima'] },
+    { id: 'p:arrepentimiento:recall', kind: 'recall', front: '¿"Lamentar" o "sentir": cuál es más formal?', back: 'lamentar' }
+  ]
+}
 
 ];

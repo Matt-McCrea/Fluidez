@@ -1,0 +1,880 @@
+# Fluidez worklist
+
+Every lesson and every batch of practice material still to write. **Tick a line
+when the work is committed.** This file is the record — nothing recomputes it,
+so it cannot drift the way the inferred counts did.
+
+One lesson item = one (level, strand, subsection) from the Plan Curricular.
+`pts` is how many specification points it has to teach; the source column is
+where to find them in `spec/pcic.json`.
+
+Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
+
+## A1 — lessons (59/64 done)
+
+### A1 · grammar (18/22)
+- [x] **Clases de sustantivos** · 12 pts · `gramatica A1 § 1.1. Clases de sustantivos`  — gr-nombres-propios-a1
+- [x] **El género de los sustantivos** · 7 pts · `gramatica A1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-a1
+- [x] **El número de los sustantivos** · 5 pts · `gramatica A1 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-a1
+- [x] **Clases de adjetivos** · 12 pts · `gramatica A1 § 2.1. Clases de adjetivos`  — gr-adjetivos-calificativos-a1
+- [x] **El género del adjetivo** · 4 pts · `gramatica A1 § 2.2. El género del adjetivo`  — gr-genero-adjetivo-a1
+- [x] **El artículo definido** · 16 pts · `gramatica A1 § 3.1. El artículo definido`  — gr-articulo-definido-a1
+- [x] **El artículo indefinido** · 7 pts · `gramatica A1 § 3.2. El artículo indefinido`  — gr-articulo-indefinido-a1
+- [x] **Los demostrativos** · 11 pts · `gramatica A1 § `  — gr-demostrativos-a2
+- [x] **Los posesivos — Distribución sintáctica** · 10 pts · `gramatica A1 § `  — gr-posesivos-distribucion-a1
+- [x] **Cuantificadores propios** · 11 pts · `gramatica A1 § 6.1. Cuantificadores propios`  — gr-cuantificadores-no-universales-a1
+- [x] **El pronombre personal** · 28 pts · `gramatica A1 § 7.1. El pronombre personal`  — gr-pronombre-se-a1
+- [x] **Los relativos** · 5 pts · `gramatica A1 § 7.2. Los relativos`  — gr-relativo-que-a1
+- [ ] **Los interrogativos** · 11 pts · `gramatica A1 § 7.3. Los interrogativos`
+- [x] **Adverbios nucleares o de predicado** · 17 pts · `gramatica A1 § 8.2. Adverbios nucleares o de pred`  — gr-adverbios-afirmacion-negacion-a1
+- [x] **Tiempos verbales de indicativo** · 9 pts · `gramatica A1 § 9.1. Tiempos verbales de indicativ`  — gr-presente-indicativo-valores-a1
+- [x] **Formas no personales del verbo** · 10 pts · `gramatica A1 § 9.4. Formas no personales del verb`  — gr-infinitivo-usos-a1
+- [ ] **El núcleo** · 11 pts · `gramatica A1 § 12.1. El núcleo`
+- [x] **Complementos** · 7 pts · `gramatica A1 § 12.2. Complementos`  — gr-atributo-a1
+- [x] **Tipos de oraciones simples** · 13 pts · `gramatica A1 § 13.3. Tipos de oraciones simples`  — gr-oraciones-actitud-hablante-a1
+- [ ] **Oraciones subordinadas sustantivas** · 6 pts · `gramatica A1 § 15.1. Oraciones subordinadas susta`
+- [ ] **Oraciones subordinadas adjetivas o de relativo** · 6 pts · `gramatica A1 § 15.2. Oraciones subordinadas adjet`
+- [x] **Oraciones subordinadas adverbiales** · 17 pts · `gramatica A1 § 15.3. Oraciones subordinadas adver`  — gr-oraciones-finales-a1
+
+### A1 · notion (17/17)
+- [x] **Presencia, ausencia** · 9 pts · `nociones_generales A1 § 1.2. Presencia, ausencia`  — nt-existencia-a1
+- [x] **Cantidad numérica** · 5 pts · `nociones_generales A1 § 2.1. Cantidad numérica`  — nt-cantidad-numerica-a1
+- [x] **Cantidad relativa** · 6 pts · `nociones_generales A1 § 2.2. Cantidad relativa`  — nt-cantidad-relativa-a1
+- [x] **Medidas** · 11 pts · `nociones_generales A1 § 2.6. Medidas`  — nt-tamano-a1
+- [x] **Localización** · 7 pts · `nociones_generales A1 § 3.1. Localización`  — nt-localizacion-a1
+- [x] **Posición relativa** · 7 pts · `nociones_generales A1 § 3.3. Posición relativa`  — nt-posicion-relativa-a1
+- [x] **Movimiento, estabilidad** · 5 pts · `nociones_generales A1 § 3.5. Movimiento, estabilidad`  — nt-movimiento-estabilidad-a1
+- [x] **Orientación, dirección** · 4 pts · `nociones_generales A1 § 3.6. Orientación, dirección`  — nt-orientacion-direccion-a1
+- [x] **Origen** · 3 pts · `nociones_generales A1 § 3.8. Origen`  — nt-origen-a1
+- [x] **Referencias generales** · 10 pts · `nociones_generales A1 § 4.1. Referencias generales`  — nt-referencias-generales-a1
+- [x] **Localización en el tiempo** · 11 pts · `nociones_generales A1 § 4.2. Localización en el tiempo`  — nt-tiempo-futuro-presente-pasado-a1
+- [x] **Aspectos de desarrollo** · 21 pts · `nociones_generales A1 § 4.3. Aspectos de desarrollo`  — nt-duracion-transcurso-a1
+- [x] **Visibilidad, visión** · 5 pts · `nociones_generales A1 § 5.8. Visibilidad, visión`  — nt-visibilidad-vision-a1
+- [x] **Edad, vejez** · 4 pts · `nociones_generales A1 § 5.13. Edad, vejez`  — nt-edad-vejez-a1
+- [x] **Accesibilidad** · 3 pts · `nociones_generales A1 § 5.14. Accesibilidad`  — nt-accesibilidad-a1
+- [x] **Evaluación general** · 13 pts · `nociones_generales A1 § 6.1. Evaluación general`  — nt-evaluacion-general-a1
+- [x] **Valor, precio** · 3 pts · `nociones_generales A1 § 6.2. Valor, precio`  — nt-valor-precio-a1
+
+### A1 · function (12/13)
+- [x] **Identificar** · 11 pts · `funciones A1 § 1.1. Identificar`  — fn-identificar-a1
+- [x] **Pedir información** · 20 pts · `funciones A1 § 1.2. Pedir información`  — fn-actividad-a1
+- [x] **Dar información** · 19 pts · `funciones A1 § 1.3. Dar información`  — fn-corregir-informacion-a1
+- [x] **Valorar** · 30 pts · `funciones A1 § 2.4. Valorar`  — fn-valorar-a1
+- [ ] **Expresar aprobación y desaprobación** · 4 pts · `funciones A1 § 2.5. Expresar aprobación y desapro`
+- [x] **Expresar acuerdo** · 3 pts · `funciones A1 § 2.9. Expresar acuerdo`  — fn-acuerdo-a1
+- [x] **Expresar desacuerdo** · 3 pts · `funciones A1 § 2.10. Expresar desacuerdo`  — fn-desacuerdo-a1
+- [x] **Expresar desconocimiento** · 4 pts · `funciones A1 § 2.21. Expresar desconocimiento`  — fn-desconocimiento-a1
+- [x] **Dirigirse a alguien** · 17 pts · `funciones A1 § 5.3. Dirigirse a alguien`  — fn-dirigirse-a1
+- [x] **Responder a una presentación** · 3 pts · `funciones A1 § 5.5. Responder a una presentación`  — fn-responder-presentacion-a1
+- [x] **Despedirse** · 5 pts · `funciones A1 § 5.21. Despedirse`  — fn-despedirse-a1
+- [x] **Establecer la comunicación y reaccionar** · 13 pts · `funciones A1 § 6.1. Establecer la comunicación y `  — fn-establecer-comunicacion-a1
+- [x] **Pedir a alguien que guarde silencio** · 3 pts · `funciones A1 § 6.23. Pedir a alguien que guarde s`  — fn-silencio-a1
+
+### A1 · discourse (6/6)
+- [x] **Marcadores del discurso** · 10 pts · `tacticas_pragmaticas A1 § 1.2. Marcadores del discurso`  — dc-conectores-a1
+- [x] **La deixis** · 8 pts · `tacticas_pragmaticas A1 § 1.3. La deixis`  — dc-deixis-espacial-a1
+- [x] **Desplazamiento en el orden de los elementos oracionales** · 8 pts · `tacticas_pragmaticas A1 § 1.4. Desplazamiento en el orden de`  — dc-rematizacion-a1
+- [x] **La expresión de la negación** · 6 pts · `tacticas_pragmaticas A1 § 1.7. La expresión de la negación`  — dc-negacion-a1
+- [x] **Los valores modales de la entonación y de otros elementos ** · 5 pts · `tacticas_pragmaticas A1 § 2.4. Los valores modales de la ent`  — dc-entonacion-a1
+- [x] **Cortesía verbal atenuadora** · 6 pts · `tacticas_pragmaticas A1 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-2persona-a1
+
+### A1 · genre (6/6)
+- [x] **Lista alfabética de géneros orales y escritos** · 18 pts · `generos_discursivos A1 § 1.1. Lista alfabética de géneros o`  — gn-generos-escritos-a1
+- [x] **Géneros de transmisión escrita** · 9 pts · `generos_discursivos A1 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-a1
+- [x] **Conversación transaccional (Nivel A2)** · 24 pts · `generos_discursivos A1 § 2.1.1. Conversación transaccional `  — gn-conversacion-transaccional-a1
+- [x] **Macrofunción descriptiva: personas** · 20 pts · `generos_discursivos A1 § 3.1. Macrofunción descriptiva: per`  — gn-describir-persona-a1
+- [x] **Macrofunción descriptiva: objetos** · 15 pts · `generos_discursivos A1 § 3.2. Macrofunción descriptiva: obj`  — gn-describir-objeto-a1
+- [x] **Macrofunción descriptiva: lugares** · 16 pts · `generos_discursivos A1 § 3.3. Macrofunción descriptiva: lug`  — gn-describir-lugar-a1
+
+## A2 — lessons (75/86 done)
+
+### A2 · grammar (17/21)
+- [ ] **Clases de sustantivos** · 9 pts · `gramatica A2 § 1.1. Clases de sustantivos`
+- [x] **El género de los sustantivos** · 11 pts · `gramatica A2 § 1.2. El género de los sustantivos`  — gr-masculino-a2
+- [x] **Grados del adjetivo** · 9 pts · `gramatica A2 § 2.5. Grados del adjetivo`  — gr-comparativo-a2
+- [x] **El artículo definido** · 17 pts · `gramatica A2 § 3.1. El artículo definido`  — gr-articulo-definido-valores-a2
+- [x] **El artículo indefinido** · 16 pts · `gramatica A2 § 3.2. El artículo indefinido`  — gr-articulo-indefinido-valores-a2
+- [x] **Ausencia de determinación: los nombres escuetos** · 3 pts · `gramatica A2 § 3.3. Ausencia de determinación: lo`  — gr-nombres-escuetos-a2
+- [ ] **Los demostrativos — Valores / significado** · 4 pts · `gramatica A2 § `
+- [x] **Los posesivos** · 12 pts · `gramatica A2 § `  — gr-posesivos-tonicos-a2
+- [x] **Cuantificadores propios** · 18 pts · `gramatica A2 § 6.1. Cuantificadores propios`  — gr-cuantificadores-a2
+- [x] **El pronombre personal** · 40 pts · `gramatica A2 § 7.1. El pronombre personal`  — gr-pronombres-atonos-a2
+- [x] **Los interrogativos** · 8 pts · `gramatica A2 § 7.3. Los interrogativos`  — gr-interrogativos-exclamativos-a2
+- [x] **Los exclamativos** · 4 pts · `gramatica A2 § 7.4. Los exclamativos`  — gr-interrogativos-exclamativos-a2
+- [ ] **Adverbios nucleares o de predicado** · 16 pts · `gramatica A2 § 8.2. Adverbios nucleares o de pred`
+- [x] **Tiempos verbales de indicativo** · 31 pts · `gramatica A2 § 9.1. Tiempos verbales de indicativ`  — gr-preterito-imperfecto-a2
+- [x] **El imperativo** · 12 pts · `gramatica A2 § 9.3. El imperativo`  — gr-imperativo-forma-a2
+- [x] **Formas no personales del verbo** · 18 pts · `gramatica A2 § 9.4. Formas no personales del verb`  — gr-gerundio-a2
+- [x] **Complementos y modificadores** · 8 pts · `gramatica A2 § 10.2. Complementos y modificadores`  — gr-restrictivos-nominales-a2
+- [x] **El núcleo** · 24 pts · `gramatica A2 § 12.1. El núcleo`  — gr-nucleo-verbal-tipos-a2
+- [x] **Complementos** · 11 pts · `gramatica A2 § 12.2. Complementos`  — gr-objeto-indirecto-a2
+- [ ] **Tipos de oraciones simples** · 10 pts · `gramatica A2 § 13.3. Tipos de oraciones simples`
+- [x] **Oraciones subordinadas adverbiales** · 75 pts · `gramatica A2 § 15.3. Oraciones subordinadas adver`  — gr-condicionales-a2
+
+### A2 · notion (17/18)
+- [x] **Existencia, inexistencia** · 9 pts · `nociones_generales A2 § 1.1. Existencia, inexistencia`  — nt-existencia-inexistencia-a2
+- [x] **Cualidad general** · 3 pts · `nociones_generales A2 § 1.4. Cualidad general`  — nt-cualidad-material-a2
+- [x] **Necesidad, contingencia, obligación** · 3 pts · `nociones_generales A2 § 1.8. Necesidad, contingencia, obli`  — nt-necesidad-obligacion-a2
+- [x] **Cantidad relativa** · 19 pts · `nociones_generales A2 § 2.2. Cantidad relativa`  — nt-cantidad-relativa-a2
+- [x] **Posición relativa** · 11 pts · `nociones_generales A2 § 3.3. Posición relativa`  — nt-posicion-relativa-distancia-a2
+- [x] **Distancia** · 3 pts · `nociones_generales A2 § 3.4. Distancia`  — nt-posicion-relativa-distancia-a2
+- [x] **Movimiento, estabilidad** · 8 pts · `nociones_generales A2 § 3.5. Movimiento, estabilidad`  — nt-movimiento-estabilidad-a2
+- [x] **Orientación, dirección** · 5 pts · `nociones_generales A2 § 3.6. Orientación, dirección`  — nt-orientacion-direccion-a2
+- [x] **Referencias generales** · 8 pts · `nociones_generales A2 § 4.1. Referencias generales`  — nt-referencias-generales-a2
+- [ ] **Localización en el tiempo** · 15 pts · `nociones_generales A2 § 4.2. Localización en el tiempo`
+- [x] **Aspectos de desarrollo** · 29 pts · `nociones_generales A2 § 4.3. Aspectos de desarrollo`  — nt-cambio-a2
+- [x] **Formas y figuras** · 13 pts · `nociones_generales A2 § 5.1. Formas y figuras`  — nt-cualidad-material-a2
+- [x] **Visibilidad, visión** · 3 pts · `nociones_generales A2 § 5.8. Visibilidad, visión`  — nt-visibilidad-color-a2
+- [x] **Color** · 4 pts · `nociones_generales A2 § 5.12. Color`  — nt-visibilidad-color-a2
+- [x] **Edad, vejez** · 4 pts · `nociones_generales A2 § 5.13. Edad, vejez`  — nt-edad-vejez-a2
+- [x] **Evaluación general** · 16 pts · `nociones_generales A2 § 6.1. Evaluación general`  — nt-evaluacion-conformidad-a2
+- [x] **Conformidad** · 3 pts · `nociones_generales A2 § 6.7. Conformidad`  — nt-evaluacion-conformidad-a2
+- [x] **Expresión verbal** · 4 pts · `nociones_generales A2 § 7.2. Expresión verbal`  — nt-expresion-verbal-a2
+
+### A2 · function (31/32)
+- [x] **Identificar** · 5 pts · `funciones A2 § 1.1. Identificar`  — fn-identificar-a2
+- [x] **Pedir información** · 20 pts · `funciones A2 § 1.2. Pedir información`  — fn-pedir-informacion-a2
+- [x] **Dar información** · 10 pts · `funciones A2 § 1.3. Dar información`  — fn-dar-informacion-a2
+- [ ] **Valorar** · 43 pts · `funciones A2 § 2.4. Valorar`
+- [x] **Expresar acuerdo** · 4 pts · `funciones A2 § 2.9. Expresar acuerdo`  — fn-acuerdo-a2
+- [x] **Expresar posibilidad** · 3 pts · `funciones A2 § 2.16. Expresar posibilidad`  — fn-posibilidad-a2
+- [x] **Preguntar por el conocimiento de algo** · 3 pts · `funciones A2 § 2.19. Preguntar por el conocimient`  — fn-preguntar-conocimiento-a2
+- [x] **Expresar conocimiento** · 6 pts · `funciones A2 § 2.20. Expresar conocimiento`  — fn-expresar-conocimiento-a2
+- [x] **Preguntar por gustos e intereses** · 21 pts · `funciones A2 § 3.1. Preguntar por gustos e intere`  — fn-preguntar-gustos-a2
+- [x] **Expresar gustos e intereses** · 8 pts · `funciones A2 § 3.2. Expresar gustos e intereses`  — fn-expresar-gustos-a2
+- [x] **Preguntar por preferencias** · 5 pts · `funciones A2 § 3.4. Preguntar por preferencias`  — fn-preguntar-preferencias-a2
+- [x] **Expresar preferencia** · 4 pts · `funciones A2 § 3.5. Expresar preferencia`  — fn-preferencia-comparativa-a2
+- [x] **Preguntar por deseos** · 4 pts · `funciones A2 § 3.7. Preguntar por deseos`  — fn-preguntar-deseos-a2
+- [x] **Preguntar por el estado de ánimo** · 3 pts · `funciones A2 § 3.11. Preguntar por el estado de á`  — fn-preguntar-estado-animo-a2
+- [x] **Expresar alegría y satisfacción** · 3 pts · `funciones A2 § 3.12. Expresar alegría y satisfacc`  — fn-alegria-satisfaccion-a2
+- [x] **Expresar sensaciones físicas** · 7 pts · `funciones A2 § 3.30. Expresar sensaciones físicas`  — fn-sensaciones-fisicas-a2
+- [x] **Dar una orden o instrucción** · 33 pts · `funciones A2 § 4.1. Dar una orden o instrucción`  — fn-atenuar-orden-a2
+- [x] **Pedir objetos** · 5 pts · `funciones A2 § 4.3. Pedir objetos`  — fn-pedir-objetos-a2
+- [x] **Responder a una orden, petición o ruego** · 11 pts · `funciones A2 § 4.7. Responder a una orden, petici`  — fn-acceder-peticion-a2
+- [x] **Proponer y sugerir** · 6 pts · `funciones A2 § 4.13. Proponer y sugerir`  — fn-proponer-sugerir-a2
+- [x] **Aceptar una propuesta, ofrecimiento o invitación** · 9 pts · `funciones A2 § 4.16. Aceptar una propuesta, ofrec`  — fn-aceptar-invitacion-a2
+- [x] **Aconsejar** · 6 pts · `funciones A2 § 4.18. Aconsejar`  — fn-aconsejar-a2
+- [x] **Ofrecerse para hacer algo** · 3 pts · `funciones A2 § 4.23. Ofrecerse para hacer algo`  — fn-ofrecerse-a2
+- [x] **Saludar** · 20 pts · `funciones A2 § 5.1. Saludar`  — fn-presentar-alguien-a2
+- [x] **Responder a un saludo** · 3 pts · `funciones A2 § 5.2. Responder a un saludo`  — fn-responder-saludo-a2
+- [x] **Dirigirse a alguien** · 3 pts · `funciones A2 § 5.3. Dirigirse a alguien`  — fn-dirigirse-a2
+- [x] **Disculparse** · 3 pts · `funciones A2 § 5.10. Disculparse`  — fn-disculparse-a2
+- [x] **Felicitar** · 9 pts · `funciones A2 § 5.16. Felicitar`  — fn-felicitar-a2
+- [x] **Formular buenos deseos** · 9 pts · `funciones A2 § 5.17. Formular buenos deseos`  — fn-buenos-deseos-a2
+- [x] **Establecer la comunicación y reaccionar** · 18 pts · `funciones A2 § 6.1. Establecer la comunicación y `  — fn-responder-telefono-a2
+- [x] **Preguntar por una persona y responder** · 17 pts · `funciones A2 § 6.3. Preguntar por una persona y r`  — fn-responder-telefono-a2
+- [x] **Introducir el tema del relato y reaccionar** · 5 pts · `funciones A2 § 6.8. Introducir el tema del relato`  — fn-reaccionar-relato-a2
+
+### A2 · discourse (7/7)
+- [x] **Mantenimiento del referente y del hilo discursivo** · 5 pts · `tacticas_pragmaticas A2 § 1.1. Mantenimiento del referente y`  — dc-mantenimiento-referente-a2
+- [x] **Marcadores del discurso** · 6 pts · `tacticas_pragmaticas A2 § 1.2. Marcadores del discurso`  — dc-estructuradores-a2
+- [x] **La deixis** · 12 pts · `tacticas_pragmaticas A2 § 1.3. La deixis`  — dc-deixis-espacial-a2
+- [x] **Desplazamiento en el orden de los elementos oracionales** · 7 pts · `tacticas_pragmaticas A2 § 1.4. Desplazamiento en el orden de`  — dc-rematizacion-a2
+- [x] **Valores ilocutivos de los enunciados interrogativos** · 10 pts · `tacticas_pragmaticas A2 § 1.6. Valores ilocutivos de los enu`  — dc-interrogativos-neutros-a2
+- [x] **La expresión de la negación** · 4 pts · `tacticas_pragmaticas A2 § 1.7. La expresión de la negación`  — dc-negacion-refuerzo-a2
+- [x] **Cortesía verbal atenuadora** · 7 pts · `tacticas_pragmaticas A2 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-acto-indirecto-a2
+
+### A2 · genre (3/8)
+- [ ] **Lista alfabética de géneros orales y escritos** · 32 pts · `generos_discursivos A2 § 1.1. Lista alfabética de géneros o`
+- [x] **Géneros de transmisión oral** · 6 pts · `generos_discursivos A2 § 1.2. Géneros de transmisión oral`  — gn-instrucciones-a2
+- [x] **Géneros de transmisión escrita** · 21 pts · `generos_discursivos A2 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-a2
+- [ ] **Conversación transaccional (Nivel A2)** · 47 pts · `generos_discursivos A2 § 2.1.1. Conversación transaccional `
+- [ ] **Macrofunción descriptiva: personas** · 22 pts · `generos_discursivos A2 § 3.1. Macrofunción descriptiva: per`
+- [ ] **Macrofunción descriptiva: objetos** · 18 pts · `generos_discursivos A2 § 3.2. Macrofunción descriptiva: obj`
+- [ ] **Macrofunción descriptiva: lugares** · 18 pts · `generos_discursivos A2 § 3.3. Macrofunción descriptiva: lug`
+- [x] **Macrofunción narrativa** · 29 pts · `generos_discursivos A2 § 3.4. Macrofunción narrativa`  — gn-narrar-anecdota-a2
+
+## B1 — lessons (135/175 done)
+
+### B1 · grammar (18/23)
+- [ ] **Clases de sustantivos** · 7 pts · `gramatica B1 § 1.1. Clases de sustantivos`
+- [ ] **El género de los sustantivos** · 5 pts · `gramatica B1 § 1.2. El género de los sustantivos`
+- [ ] **El número de los sustantivos** · 4 pts · `gramatica B1 § 1.3. El número de los sustantivos`
+- [x] **El artículo definido** · 19 pts · `gramatica B1 § 3.1. El artículo definido`  — gr-articulo-anaforico-escuetos-b1
+- [x] **Ausencia de determinación: los nombres escuetos** · 3 pts · `gramatica B1 § 3.3. Ausencia de determinación: lo`  — gr-articulo-anaforico-escuetos-b1
+- [x] **Los posesivos** · 13 pts · `gramatica B1 § `  — gr-posesivo-dativo-b1
+- [x] **Cuantificadores propios** · 28 pts · `gramatica B1 § 6.1. Cuantificadores propios`  — gr-indefinidos-negativos-b1
+- [x] **El pronombre personal** · 33 pts · `gramatica B1 § 7.1. El pronombre personal`  — gr-pronombres-combinados-b1
+- [x] **Los interrogativos** · 13 pts · `gramatica B1 § 7.3. Los interrogativos`  — gr-interrogativos-b1
+- [ ] **Adverbios nucleares o de predicado** · 19 pts · `gramatica B1 § 8.2. Adverbios nucleares o de pred`
+- [x] **Adverbios del modus** · 6 pts · `gramatica B1 § 8.4. Adverbios del modus`  — gr-modalidad-b1
+- [x] **Adverbios relativos e interrogativos** · 7 pts · `gramatica B1 § 8.8. Adverbios relativos e interro`  — gr-adverbios-relativos-b1
+- [x] **Tiempos verbales de indicativo** · 51 pts · `gramatica B1 § 9.1. Tiempos verbales de indicativ`  — gr-pluscuamperfecto-b1
+- [x] **Tiempos verbales de subjuntivo** · 14 pts · `gramatica B1 § 9.2. Tiempos verbales de subjuntiv`  — gr-presente-subjuntivo-b1
+- [x] **El imperativo** · 8 pts · `gramatica B1 § 9.3. El imperativo`  — gr-imperativo-valores-b1
+- [ ] **Formas no personales del verbo** · 17 pts · `gramatica B1 § 9.4. Formas no personales del verb`
+- [x] **Complementos y modificadores** · 5 pts · `gramatica B1 § 10.2. Complementos y modificadores`  — gr-complementos-modificadores-b1
+- [x] **Complementos y modificadores** · 6 pts · `gramatica B1 § 11.2. Complementos y modificadores`  — gr-modificadores-adverbios-b1
+- [x] **El núcleo** · 21 pts · `gramatica B1 § 12.1. El núcleo`  — gr-perifrasis-verbales-b1
+- [x] **Tipos de oraciones simples** · 9 pts · `gramatica B1 § 13.3. Tipos de oraciones simples`  — gr-se-multiuso-b1
+- [x] **Oraciones subordinadas sustantivas** · 14 pts · `gramatica B1 § 15.1. Oraciones subordinadas susta`  — gr-subordinadas-sustantivas-b1
+- [x] **Oraciones subordinadas adjetivas o de relativo** · 11 pts · `gramatica B1 § 15.2. Oraciones subordinadas adjet`  — gr-relativas-b1
+- [x] **Oraciones subordinadas adverbiales** · 78 pts · `gramatica B1 § 15.3. Oraciones subordinadas adver`  — gr-condicionales-b1
+
+### B1 · notion (48/48)
+- [x] **Existencia, inexistencia** · 6 pts · `nociones_generales B1 § 1.1. Existencia, inexistencia`  — nt-existencia-disponibilidad-b1
+- [x] **Presencia, ausencia** · 6 pts · `nociones_generales B1 § 1.2. Presencia, ausencia`  — nt-existencia-disponibilidad-b1
+- [x] **Disponibilidad, no disponibilidad** · 4 pts · `nociones_generales B1 § 1.3. Disponibilidad, no disponibil`  — nt-existencia-disponibilidad-b1
+- [x] **Cualidad general** · 6 pts · `nociones_generales B1 § 1.4. Cualidad general`  — nt-cualidad-generalidad-b1
+- [x] **Acontecimiento** · 4 pts · `nociones_generales B1 § 1.5. Acontecimiento`  — nt-acontecimiento-b1
+- [x] **Certeza, incertidumbre** · 7 pts · `nociones_generales B1 § 1.6. Certeza, incertidumbre`  — nt-certeza-realidad-b1
+- [x] **Realidad, ficción** · 5 pts · `nociones_generales B1 § 1.7. Realidad, ficción`  — nt-certeza-realidad-b1
+- [x] **Necesidad, contingencia, obligación** · 6 pts · `nociones_generales B1 § 1.8. Necesidad, contingencia, obli`  — nt-necesidad-obligacion-b1
+- [x] **Generalidad, especificidad** · 3 pts · `nociones_generales B1 § 1.9. Generalidad, especificidad`  — nt-cualidad-generalidad-b1
+- [x] **Cantidad numérica** · 5 pts · `nociones_generales B1 § 2.1. Cantidad numérica`  — nt-cantidad-numerica-relativa-b1
+- [x] **Cantidad relativa** · 8 pts · `nociones_generales B1 § 2.2. Cantidad relativa`  — nt-cantidad-numerica-relativa-b1
+- [x] **Aumento, disminución** · 3 pts · `nociones_generales B1 § 2.3. Aumento, disminución`  — nt-aumento-proporcion-grado-b1
+- [x] **Proporción** · 3 pts · `nociones_generales B1 § 2.4. Proporción`  — nt-aumento-proporcion-grado-b1
+- [x] **Grado** · 4 pts · `nociones_generales B1 § 2.5. Grado`  — nt-aumento-proporcion-grado-b1
+- [x] **Medidas** · 37 pts · `nociones_generales B1 § 2.6. Medidas`  — nt-medidas-tamano-superficie-b1
+- [x] **Localización** · 7 pts · `nociones_generales B1 § 3.1. Localización`  — nt-localizacion-posicion-b1
+- [x] **Posición relativa** · 11 pts · `nociones_generales B1 § 3.3. Posición relativa`  — nt-localizacion-posicion-b1
+- [x] **Distancia** · 5 pts · `nociones_generales B1 § 3.4. Distancia`  — nt-distancia-movimiento-b1
+- [x] **Movimiento, estabilidad** · 14 pts · `nociones_generales B1 § 3.5. Movimiento, estabilidad`  — nt-distancia-movimiento-b1
+- [x] **Orientación, dirección** · 7 pts · `nociones_generales B1 § 3.6. Orientación, dirección`  — nt-orientacion-orden-b1
+- [x] **Orden** · 8 pts · `nociones_generales B1 § 3.7. Orden`  — nt-orientacion-orden-b1
+- [x] **Referencias generales** · 14 pts · `nociones_generales B1 § 4.1. Referencias generales`  — nt-tiempo-referencias-futuro-pasado-presente-b1
+- [x] **Localización en el tiempo** · 27 pts · `nociones_generales B1 § 4.2. Localización en el tiempo`  — nt-tiempo-referencias-futuro-pasado-presente-b1
+- [x] **Aspectos de desarrollo** · 46 pts · `nociones_generales B1 § 4.3. Aspectos de desarrollo`  — nt-ciclo-accion-b1
+- [x] **Formas y figuras** · 11 pts · `nociones_generales B1 § 5.1. Formas y figuras`  — nt-formas-materia-b1
+- [x] **Consistencia, resistencia** · 5 pts · `nociones_generales B1 § 5.3. Consistencia, resistencia`  — nt-textura-consistencia-b1
+- [x] **Textura** · 3 pts · `nociones_generales B1 § 5.4. Textura`  — nt-textura-consistencia-b1
+- [x] **Acabado** · 4 pts · `nociones_generales B1 § 5.5. Acabado`  — nt-acabado-b1
+- [x] **Humedad, sequedad** · 5 pts · `nociones_generales B1 § 5.6. Humedad, sequedad`  — nt-textura-consistencia-b1
+- [x] **Materia** · 6 pts · `nociones_generales B1 § 5.7. Materia`  — nt-formas-materia-b1
+- [x] **Visibilidad, visión** · 6 pts · `nociones_generales B1 § 5.8. Visibilidad, visión`  — nt-sentidos-b1
+- [x] **Audibilidad, audición** · 9 pts · `nociones_generales B1 § 5.9. Audibilidad, audición`  — nt-sentidos-b1
+- [x] **Sabor** · 6 pts · `nociones_generales B1 § 5.10. Sabor`  — nt-sentidos-b1
+- [x] **Olor** · 4 pts · `nociones_generales B1 § 5.11. Olor`  — nt-sentidos-b1
+- [x] **Color** · 3 pts · `nociones_generales B1 § 5.12. Color`  — nt-sentidos-b1
+- [x] **Edad, vejez** · 4 pts · `nociones_generales B1 § 5.13. Edad, vejez`  — nt-edad-vejez-b1
+- [x] **Evaluación general** · 15 pts · `nociones_generales B1 § 6.1. Evaluación general`  — nt-evaluacion-valor-b1
+- [x] **Valor, precio** · 5 pts · `nociones_generales B1 § 6.2. Valor, precio`  — nt-evaluacion-valor-b1
+- [x] **Conformidad** · 4 pts · `nociones_generales B1 § 6.7. Conformidad`  — nt-conformidad-correccion-precision-b1
+- [x] **Corrección** · 3 pts · `nociones_generales B1 § 6.8. Corrección`  — nt-conformidad-correccion-precision-b1
+- [x] **Precisión, claridad** · 4 pts · `nociones_generales B1 § 6.9. Precisión, claridad`  — nt-conformidad-correccion-precision-b1
+- [x] **Éxito, logro** · 5 pts · `nociones_generales B1 § 6.11. Éxito, logro`  — nt-exito-utilidad-importancia-b1
+- [x] **Utilidad, uso** · 3 pts · `nociones_generales B1 § 6.12. Utilidad, uso`  — nt-exito-utilidad-importancia-b1
+- [x] **Capacidad, competencia** · 3 pts · `nociones_generales B1 § 6.13. Capacidad, competencia`  — nt-exito-utilidad-importancia-b1
+- [x] **Importancia** · 3 pts · `nociones_generales B1 § 6.14. Importancia`  — nt-exito-utilidad-importancia-b1
+- [x] **Normalidad** · 3 pts · `nociones_generales B1 § 6.15. Normalidad`  — nt-exito-utilidad-importancia-b1
+- [x] **Reflexión, conocimiento** · 8 pts · `nociones_generales B1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-expresion-b1
+- [x] **Expresión verbal** · 12 pts · `nociones_generales B1 § 7.2. Expresión verbal`  — nt-reflexion-expresion-b1
+
+### B1 · function (57/79)
+- [ ] **Identificar** · 8 pts · `funciones B1 § 1.1. Identificar`
+- [ ] **Pedir información** · 19 pts · `funciones B1 § 1.2. Pedir información`
+- [x] **Dar información** · 21 pts · `funciones B1 § 1.3. Dar información`  — fn-respuesta-afirmativa-b1
+- [x] **Pedir opinión** · 26 pts · `funciones B1 § 2.1. Pedir opinión`  — fn-pedir-opinion-b1
+- [x] **Dar una opinión** · 5 pts · `funciones B1 § 2.2. Dar una opinión`  — fn-dar-opinion-b1
+- [x] **Pedir valoración** · 11 pts · `funciones B1 § 2.3. Pedir valoración`  — fn-pedir-valoracion-b1
+- [ ] **Valorar** · 15 pts · `funciones B1 § 2.4. Valorar`
+- [x] **Expresar aprobación y desaprobación** · 9 pts · `funciones B1 § 2.5. Expresar aprobación y desapro`  — fn-aprobacion-desaprobacion-b1
+- [x] **Posicionarse a favor o en contra** · 7 pts · `funciones B1 § 2.6. Posicionarse a favor o en con`  — fn-posicionarse-b1
+- [x] **Preguntar si se está de acuerdo** · 3 pts · `funciones B1 § 2.7. Preguntar si se está de acuer`  — fn-preguntar-si-acuerdo-b1
+- [x] **Expresar acuerdo** · 17 pts · `funciones B1 § 2.9. Expresar acuerdo`  — fn-estoy-de-acuerdo-b1
+- [x] **Expresar desacuerdo** · 19 pts · `funciones B1 § 2.10. Expresar desacuerdo`  — fn-no-estoy-de-acuerdo-b1
+- [x] **Mostrar escepticismo** · 4 pts · `funciones B1 § 2.11. Mostrar escepticismo`  — fn-mostrar-escepticismo-b1
+- [x] **Presentar un contraargumento** · 4 pts · `funciones B1 § 2.12. Presentar un contraargumento`  — fn-contraargumento-b1
+- [x] **Expresar certeza y evidencia** · 15 pts · `funciones B1 § 2.13. Expresar certeza y evidencia`  — fn-certeza-evidencia-b1
+- [x] **Expresar falta de certeza y evidencia** · 12 pts · `funciones B1 § 2.14. Expresar falta de certeza y `  — fn-falta-certeza-b1
+- [ ] **Expresar posibilidad** · 8 pts · `funciones B1 § 2.16. Expresar posibilidad`
+- [x] **Expresar obligación y necesidad** · 5 pts · `funciones B1 § 2.17. Expresar obligación y necesi`  — fn-obligacion-necesidad-b1
+- [x] **Preguntar por el conocimiento de algo** · 8 pts · `funciones B1 § 2.19. Preguntar por el conocimient`  — fn-has-oido-b1
+- [ ] **Expresar conocimiento** · 8 pts · `funciones B1 § 2.20. Expresar conocimiento`
+- [ ] **Expresar desconocimiento** · 7 pts · `funciones B1 § 2.21. Expresar desconocimiento`
+- [x] **Expresar habilidad para hacer algo** · 4 pts · `funciones B1 § 2.23. Expresar habilidad para hace`  — fn-habilidad-b1
+- [ ] **Preguntar por gustos e intereses** · 16 pts · `funciones B1 § 3.1. Preguntar por gustos e intere`
+- [ ] **Expresar gustos e intereses** · 3 pts · `funciones B1 § 3.2. Expresar gustos e intereses`
+- [x] **Expresar aversión** · 9 pts · `funciones B1 § 3.3. Expresar aversión`  — fn-aversion-b1
+- [ ] **Preguntar por preferencias** · 4 pts · `funciones B1 § 3.4. Preguntar por preferencias`
+- [x] **Expresar preferencia** · 4 pts · `funciones B1 § 3.5. Expresar preferencia`  — fn-preferencia-b1
+- [x] **Expresar indiferencia o ausencia de preferencia** · 5 pts · `funciones B1 § 3.6. Expresar indiferencia o ausen`  — fn-no-me-importa-b1
+- [ ] **Preguntar por deseos** · 8 pts · `funciones B1 § 3.7. Preguntar por deseos`
+- [x] **Expresar deseos** · 18 pts · `funciones B1 § 3.8. Expresar deseos`  — fn-expresar-deseos-b1
+- [x] **Preguntar por planes e intenciones** · 5 pts · `funciones B1 § 3.9. Preguntar por planes e intenc`  — fn-preguntar-planes-b1
+- [x] **Expresar planes e intenciones** · 6 pts · `funciones B1 § 3.10. Expresar planes e intencione`  — fn-expresar-planes-b1
+- [ ] **Preguntar por el estado de ánimo** · 6 pts · `funciones B1 § 3.11. Preguntar por el estado de á`
+- [x] **Expresar alegría y satisfacción** · 14 pts · `funciones B1 § 3.12. Expresar alegría y satisfacc`  — fn-contento-encantado-b1
+- [x] **Expresar tristeza y aflicción** · 17 pts · `funciones B1 § 3.13. Expresar tristeza y aflicció`  — fn-tristeza-afliccion-b1
+- [x] **Expresar placer y diversión** · 4 pts · `funciones B1 § 3.14. Expresar placer y diversión`  — fn-placer-diversion-b1
+- [x] **Expresar aburrimiento** · 7 pts · `funciones B1 § 3.15. Expresar aburrimiento`  — fn-aburrimiento-b1
+- [x] **Expresar enfado e indignación** · 8 pts · `funciones B1 § 3.17. Expresar enfado e indignació`  — fn-enfado-indignacion-b1
+- [x] **Expresar miedo, ansiedad y preocupación** · 13 pts · `funciones B1 § 3.18. Expresar miedo, ansiedad y p`  — fn-miedo-ansiedad-preocupacion-b1
+- [x] **Expresar empatía** · 8 pts · `funciones B1 § 3.20. Expresar empatía`  — fn-empatia-b1
+- [x] **Expresar esperanza** · 6 pts · `funciones B1 § 3.22. Expresar esperanza`  — fn-espero-esperanza-b1
+- [x] **Expresar sorpresa y extrañeza** · 13 pts · `funciones B1 § 3.27. Expresar sorpresa y extrañez`  — fn-sorpresa-extraneza-b1
+- [x] **Expresar admiración y orgullo** · 4 pts · `funciones B1 § 3.28. Expresar admiración y orgull`  — fn-admiracion-orgullo-b1
+- [x] **Expresar afecto** · 5 pts · `funciones B1 § 3.29. Expresar afecto`  — fn-afecto-b1
+- [ ] **Expresar sensaciones físicas** · 12 pts · `funciones B1 § 3.30. Expresar sensaciones físicas`
+- [x] **Dar una orden o instrucción** · 25 pts · `funciones B1 § 4.1. Dar una orden o instrucción`  — fn-ordenar-directo-b1
+- [x] **Pedir un favor** · 10 pts · `funciones B1 § 4.2. Pedir un favor`  — fn-pedir-favor-b1
+- [ ] **Pedir objetos** · 13 pts · `funciones B1 § 4.3. Pedir objetos`
+- [x] **Pedir ayuda** · 12 pts · `funciones B1 § 4.4. Pedir ayuda`  — fn-ayuda-atenuada-b1
+- [ ] **Responder a una orden, petición o ruego** · 16 pts · `funciones B1 § 4.7. Responder a una orden, petici`
+- [x] **Pedir permiso** · 8 pts · `funciones B1 § 4.8. Pedir permiso`  — fn-pedir-permiso-b1
+- [x] **Prohibir** · 7 pts · `funciones B1 § 4.11. Prohibir`  — fn-prohibir-b1
+- [ ] **Proponer y sugerir** · 14 pts · `funciones B1 § 4.13. Proponer y sugerir`
+- [x] **Ofrecer e invitar** · 3 pts · `funciones B1 § 4.14. Ofrecer e invitar`  — fn-ofrecer-invitar-b1
+- [ ] **Aceptar una propuesta, ofrecimiento o invitación** · 10 pts · `funciones B1 § 4.16. Aceptar una propuesta, ofrec`
+- [x] **Rechazar una propuesta, ofrecimiento o invitación** · 8 pts · `funciones B1 § 4.17. Rechazar una propuesta, ofre`  — fn-rechazar-b1
+- [ ] **Aconsejar** · 10 pts · `funciones B1 § 4.18. Aconsejar`
+- [x] **Advertir** · 3 pts · `funciones B1 § 4.19. Advertir`  — fn-advertir-b1
+- [x] **Reprochar** · 3 pts · `funciones B1 § 4.21. Reprochar`  — fn-reprochar-b1
+- [x] **Tranquilizar y consolar** · 4 pts · `funciones B1 § 4.24. Tranquilizar y consolar`  — fn-tranquilizar-consolar-b1
+- [x] **Animar** · 3 pts · `funciones B1 § 4.25. Animar`  — fn-animar-b1
+- [ ] **Saludar** · 27 pts · `funciones B1 § 5.1. Saludar`
+- [ ] **Responder a un saludo** · 4 pts · `funciones B1 § 5.2. Responder a un saludo`
+- [ ] **Disculparse** · 3 pts · `funciones B1 § 5.10. Disculparse`
+- [x] **Responder a una disculpa** · 5 pts · `funciones B1 § 5.11. Responder a una disculpa`  — fn-responder-disculpa-b1
+- [x] **Proponer un brindis** · 3 pts · `funciones B1 § 5.15. Proponer un brindis`  — fn-brindis-b1
+- [ ] **Felicitar** · 8 pts · `funciones B1 § 5.16. Felicitar`
+- [x] **Formular buenos deseos** · 14 pts · `funciones B1 § 5.17. Formular buenos deseos`  — fn-buenos-deseos-b1
+- [x] **Responder a felicitaciones y buenos deseos** · 3 pts · `funciones B1 § 5.18. Responder a felicitaciones y`  — fn-responder-felicitaciones-b1
+- [x] **Despedirse** · 10 pts · `funciones B1 § 5.21. Despedirse`  — fn-despedida-escrita-b1
+- [ ] **Preguntar por una persona y responder** · 45 pts · `funciones B1 § 6.3. Preguntar por una persona y r`
+- [x] **Preguntar por el estado general de las cosas y responder** · 11 pts · `funciones B1 § 6.6. Preguntar por el estado gener`  — fn-responder-estado-b1
+- [x] **Introducir el tema del relato y reaccionar** · 10 pts · `funciones B1 § 6.8. Introducir el tema del relato`  — fn-introducir-tema-relato-b1
+- [x] **Indicar que se sigue el relato con interés** · 6 pts · `funciones B1 § 6.9. Indicar que se sigue el relat`  — fn-seguir-relato-interes-b1
+- [x] **Controlar la atención del interlocutor** · 11 pts · `funciones B1 § 6.10. Controlar la atención del in`  — fn-controlar-atencion-b1
+- [x] **Introducir un hecho** · 3 pts · `funciones B1 § 6.11. Introducir un hecho`  — fn-introducir-hecho-b1
+- [x] **Destacar un elemento** · 4 pts · `funciones B1 § 6.15. Destacar un elemento`  — fn-destacar-elemento-b1
+- [x] **Interrumpir** · 3 pts · `funciones B1 § 6.21. Interrumpir`  — fn-interrumpir-b1
+- [x] **Concluir el relato** · 5 pts · `funciones B1 § 6.26. Concluir el relato`  — fn-concluir-relato-b1
+
+### B1 · discourse (3/10)
+- [ ] **Mantenimiento del referente y del hilo discursivo** · 9 pts · `tacticas_pragmaticas B1 § 1.1. Mantenimiento del referente y`
+- [ ] **Marcadores del discurso** · 15 pts · `tacticas_pragmaticas B1 § 1.2. Marcadores del discurso`
+- [ ] **La deixis** · 13 pts · `tacticas_pragmaticas B1 § 1.3. La deixis`
+- [ ] **Desplazamiento en el orden de los elementos oracionales** · 8 pts · `tacticas_pragmaticas B1 § 1.4. Desplazamiento en el orden de`
+- [ ] **Valores ilocutivos de los enunciados interrogativos** · 12 pts · `tacticas_pragmaticas B1 § 1.6. Valores ilocutivos de los enu`
+- [ ] **La expresión de la negación** · 4 pts · `tacticas_pragmaticas B1 § 1.7. La expresión de la negación`
+- [x] **Intensificación o refuerzo** · 12 pts · `tacticas_pragmaticas B1 § 2.1. Intensificación o refuerzo`  — dc-intensificacion-discurso-b1
+- [x] **Focalización** · 9 pts · `tacticas_pragmaticas B1 § 2.3. Focalización`  — dc-focalizacion-b1
+- [x] **Los valores modales de la entonación y de otros elementos ** · 7 pts · `tacticas_pragmaticas B1 § 2.4. Los valores modales de la ent`  — dc-entonacion-b1
+- [ ] **Cortesía verbal atenuadora** · 15 pts · `tacticas_pragmaticas B1 § 3.1. Cortesía verbal atenuadora`
+
+### B1 · genre (9/15)
+- [x] **Lista alfabética de géneros orales y escritos** · 47 pts · `generos_discursivos B1 § 1.1. Lista alfabética de géneros o`  — gn-reconocer-generos-orales-b1
+- [ ] **Géneros de transmisión oral** · 17 pts · `generos_discursivos B1 § 1.2. Géneros de transmisión oral`
+- [ ] **Géneros de transmisión escrita** · 25 pts · `generos_discursivos B1 § 1.3. Géneros de transmisión escrit`
+- [x] **Conversación transaccional telefónica (Nivel B1)** · 17 pts · `generos_discursivos B1 § 2.1.1. Conversación transaccional `  — gn-llamada-transaccional-b1
+- [x] **Presentación pública (Nivel B1)** · 30 pts · `generos_discursivos B1 § 2.2.1. Presentación pública (Nivel`  — gn-presentacion-publica-b1
+- [x] **Presentación pública (Nivel B2)** · 33 pts · `generos_discursivos B1 § 2.2.2. Presentación pública (Nivel`  — gn-presentacion-publica-b2
+- [x] **Carta personal (Nivel B1)** · 13 pts · `generos_discursivos B1 § 2.3.1. Carta personal (Nivel B1)`  — gn-carta-personal-b1
+- [x] **Carta de solicitud de trabajo (Nivel B2)** · 22 pts · `generos_discursivos B1 § 2.3.2. Carta de solicitud de traba`  — gn-carta-solicitud-trabajo-b2
+- [x] **Composición escrita (Nivel B1)** · 7 pts · `generos_discursivos B1 § 2.4.1. Composición escrita (Nivel `  — gn-composicion-escrita-b1
+- [x] **Composición escrita (Nivel B2)** · 12 pts · `generos_discursivos B1 § 2.4.2. Composición escrita (Nivel `  — gn-composicion-argumentativa-b2
+- [ ] **Macrofunción descriptiva: personas** · 29 pts · `generos_discursivos B1 § 3.1. Macrofunción descriptiva: per`
+- [ ] **Macrofunción descriptiva: objetos** · 23 pts · `generos_discursivos B1 § 3.2. Macrofunción descriptiva: obj`
+- [ ] **Macrofunción descriptiva: lugares** · 21 pts · `generos_discursivos B1 § 3.3. Macrofunción descriptiva: lug`
+- [ ] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`
+- [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
+
+## B2 — lessons (38/204 done)
+
+### B2 · grammar (11/26)
+- [ ] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`
+- [ ] **El artículo definido** · 7 pts · `gramatica B2 § 3.1. El artículo definido`
+- [ ] **El artículo indefinido** · 14 pts · `gramatica B2 § 3.2. El artículo indefinido`
+- [ ] **Ausencia de determinación: los nombres escuetos** · 4 pts · `gramatica B2 § 3.3. Ausencia de determinación: lo`
+- [ ] **Los posesivos** · 8 pts · `gramatica B2 § `
+- [ ] **Cuantificadores propios** · 26 pts · `gramatica B2 § 6.1. Cuantificadores propios`
+- [ ] **El pronombre personal** · 26 pts · `gramatica B2 § 7.1. El pronombre personal`
+- [x] **Los relativos** · 21 pts · `gramatica B2 § 7.2. Los relativos`  — gr-el-que-relativos-b2
+- [x] **Los interrogativos** · 11 pts · `gramatica B2 § 7.3. Los interrogativos`  — gr-orden-interrogativos-b2
+- [ ] **Los exclamativos** · 9 pts · `gramatica B2 § 7.4. Los exclamativos`
+- [ ] **Adverbios nucleares o de predicado** · 28 pts · `gramatica B2 § 8.2. Adverbios nucleares o de pred`
+- [x] **Adverbios externos al dictum** · 11 pts · `gramatica B2 § 8.3. Adverbios externos al dictum`  — gr-adverbios-frecuencia-topico-b2
+- [x] **Adverbios del modus** · 7 pts · `gramatica B2 § 8.4. Adverbios del modus`  — gr-adverbios-enunciacion-b2
+- [x] **Adverbios relativos e interrogativos** · 7 pts · `gramatica B2 § 8.8. Adverbios relativos e interro`  — gr-relativo-donde-b2
+- [x] **Tiempos verbales de indicativo** · 30 pts · `gramatica B2 § 9.1. Tiempos verbales de indicativ`  — gr-condicional-compuesto-b2
+- [x] **Tiempos verbales de subjuntivo** · 32 pts · `gramatica B2 § 9.2. Tiempos verbales de subjuntiv`  — gr-impsubj-valores-b2
+- [ ] **El imperativo** · 7 pts · `gramatica B2 § 9.3. El imperativo`
+- [ ] **Formas no personales del verbo** · 18 pts · `gramatica B2 § 9.4. Formas no personales del verb`
+- [ ] **Complementos y modificadores** · 9 pts · `gramatica B2 § 10.2. Complementos y modificadores`
+- [x] **Concordancia del SN con el verbo** · 4 pts · `gramatica B2 § 10.4. Concordancia del SN con el v`  — gr-concordancia-sn-verbo-b2
+- [x] **Complementos y modificadores** · 5 pts · `gramatica B2 § 11.2. Complementos y modificadores`  — gr-complementos-sa-b2
+- [ ] **El núcleo** · 14 pts · `gramatica B2 § 12.1. El núcleo`
+- [x] **Complementos** · 15 pts · `gramatica B2 § 12.2. Complementos`  — gr-complemento-preposicional-regido-b2
+- [ ] **Oraciones subordinadas sustantivas** · 13 pts · `gramatica B2 § 15.1. Oraciones subordinadas susta`
+- [ ] **Oraciones subordinadas adjetivas o de relativo** · 25 pts · `gramatica B2 § 15.2. Oraciones subordinadas adjet`
+- [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica B2 § 15.3. Oraciones subordinadas adver`  — gr-subordinadas-lugar-b2
+
+### B2 · notion (7/53)
+- [ ] **Existencia, inexistencia** · 7 pts · `nociones_generales B2 § 1.1. Existencia, inexistencia`
+- [ ] **Presencia, ausencia** · 11 pts · `nociones_generales B2 § 1.2. Presencia, ausencia`
+- [ ] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales B2 § 1.3. Disponibilidad, no disponibil`
+- [ ] **Cualidad general** · 12 pts · `nociones_generales B2 § 1.4. Cualidad general`
+- [ ] **Acontecimiento** · 4 pts · `nociones_generales B2 § 1.5. Acontecimiento`
+- [ ] **Certeza, incertidumbre** · 15 pts · `nociones_generales B2 § 1.6. Certeza, incertidumbre`
+- [ ] **Realidad, ficción** · 8 pts · `nociones_generales B2 § 1.7. Realidad, ficción`
+- [ ] **Necesidad, contingencia, obligación** · 4 pts · `nociones_generales B2 § 1.8. Necesidad, contingencia, obli`
+- [ ] **Generalidad, especificidad** · 11 pts · `nociones_generales B2 § 1.9. Generalidad, especificidad`
+- [ ] **Cantidad numérica** · 5 pts · `nociones_generales B2 § 2.1. Cantidad numérica`
+- [ ] **Cantidad relativa** · 10 pts · `nociones_generales B2 § 2.2. Cantidad relativa`
+- [ ] **Aumento, disminución** · 6 pts · `nociones_generales B2 § 2.3. Aumento, disminución`
+- [ ] **Proporción** · 8 pts · `nociones_generales B2 § 2.4. Proporción`
+- [ ] **Grado** · 7 pts · `nociones_generales B2 § 2.5. Grado`
+- [x] **Medidas** · 46 pts · `nociones_generales B2 § 2.6. Medidas`  — nt-peso-b2
+- [ ] **Localización** · 6 pts · `nociones_generales B2 § 3.1. Localización`
+- [x] **Posición absoluta** · 6 pts · `nociones_generales B2 § 3.2. Posición absoluta`  — nt-posicion-absoluta-b2
+- [ ] **Posición relativa** · 17 pts · `nociones_generales B2 § 3.3. Posición relativa`
+- [ ] **Distancia** · 9 pts · `nociones_generales B2 § 3.4. Distancia`
+- [ ] **Movimiento, estabilidad** · 26 pts · `nociones_generales B2 § 3.5. Movimiento, estabilidad`
+- [ ] **Orientación, dirección** · 13 pts · `nociones_generales B2 § 3.6. Orientación, dirección`
+- [ ] **Orden** · 10 pts · `nociones_generales B2 § 3.7. Orden`
+- [ ] **Origen** · 4 pts · `nociones_generales B2 § 3.8. Origen`
+- [ ] **Referencias generales** · 19 pts · `nociones_generales B2 § 4.1. Referencias generales`
+- [ ] **Localización en el tiempo** · 32 pts · `nociones_generales B2 § 4.2. Localización en el tiempo`
+- [x] **Aspectos de desarrollo** · 137 pts · `nociones_generales B2 § 4.3. Aspectos de desarrollo`  — nt-anticipacion-b2
+- [ ] **Formas y figuras** · 14 pts · `nociones_generales B2 § 5.1. Formas y figuras`
+- [ ] **Consistencia, resistencia** · 14 pts · `nociones_generales B2 § 5.3. Consistencia, resistencia`
+- [ ] **Textura** · 5 pts · `nociones_generales B2 § 5.4. Textura`
+- [ ] **Acabado** · 5 pts · `nociones_generales B2 § 5.5. Acabado`
+- [ ] **Humedad, sequedad** · 10 pts · `nociones_generales B2 § 5.6. Humedad, sequedad`
+- [ ] **Materia** · 10 pts · `nociones_generales B2 § 5.7. Materia`
+- [ ] **Visibilidad, visión** · 21 pts · `nociones_generales B2 § 5.8. Visibilidad, visión`
+- [ ] **Audibilidad, audición** · 12 pts · `nociones_generales B2 § 5.9. Audibilidad, audición`
+- [ ] **Sabor** · 4 pts · `nociones_generales B2 § 5.10. Sabor`
+- [ ] **Olor** · 6 pts · `nociones_generales B2 § 5.11. Olor`
+- [ ] **Color** · 12 pts · `nociones_generales B2 § 5.12. Color`
+- [ ] **Edad, vejez** · 16 pts · `nociones_generales B2 § 5.13. Edad, vejez`
+- [x] **Limpieza** · 6 pts · `nociones_generales B2 § 5.15. Limpieza`  — nt-limpieza-b2
+- [ ] **Evaluación general** · 16 pts · `nociones_generales B2 § 6.1. Evaluación general`
+- [ ] **Valor, precio** · 10 pts · `nociones_generales B2 § 6.2. Valor, precio`
+- [x] **Adecuación** · 3 pts · `nociones_generales B2 § 6.6. Adecuación`  — nt-adecuacion-b2
+- [ ] **Corrección** · 6 pts · `nociones_generales B2 § 6.8. Corrección`
+- [ ] **Precisión, claridad** · 6 pts · `nociones_generales B2 § 6.9. Precisión, claridad`
+- [x] **Interés** · 5 pts · `nociones_generales B2 § 6.10. Interés`  — nt-interes-b2
+- [ ] **Éxito, logro** · 6 pts · `nociones_generales B2 § 6.11. Éxito, logro`
+- [ ] **Utilidad, uso** · 8 pts · `nociones_generales B2 § 6.12. Utilidad, uso`
+- [ ] **Capacidad, competencia** · 9 pts · `nociones_generales B2 § 6.13. Capacidad, competencia`
+- [ ] **Importancia** · 6 pts · `nociones_generales B2 § 6.14. Importancia`
+- [ ] **Normalidad** · 6 pts · `nociones_generales B2 § 6.15. Normalidad`
+- [x] **Facilidad** · 6 pts · `nociones_generales B2 § 6.16. Facilidad`  — nt-facilidad-b2
+- [ ] **Reflexión, conocimiento** · 16 pts · `nociones_generales B2 § 7.1. Reflexión, conocimiento`
+- [ ] **Expresión verbal** · 23 pts · `nociones_generales B2 § 7.2. Expresión verbal`
+
+### B2 · function (19/96)
+- [ ] **Identificar** · 7 pts · `funciones B2 § 1.1. Identificar`
+- [x] **Pedir información** · 23 pts · `funciones B2 § 1.2. Pedir información`  — fn-preguntar-con-prudencia-b2
+- [ ] **Dar información** · 27 pts · `funciones B2 § 1.3. Dar información`
+- [x] **Pedir confirmación** · 17 pts · `funciones B2 § 1.4. Pedir confirmación`  — fn-cuestionar-informacion-b2
+- [x] **Confirmar la información previa** · 3 pts · `funciones B2 § 1.5. Confirmar la información prev`  — fn-confirmar-info-previa-b2
+- [ ] **Pedir opinión** · 10 pts · `funciones B2 § 2.1. Pedir opinión`
+- [ ] **Dar una opinión** · 7 pts · `funciones B2 § 2.2. Dar una opinión`
+- [ ] **Pedir valoración** · 14 pts · `funciones B2 § 2.3. Pedir valoración`
+- [ ] **Valorar** · 18 pts · `funciones B2 § 2.4. Valorar`
+- [ ] **Expresar aprobación y desaprobación** · 4 pts · `funciones B2 § 2.5. Expresar aprobación y desapro`
+- [x] **Expresar acuerdo** · 31 pts · `funciones B2 § 2.9. Expresar acuerdo`  — fn-acuerdo-b2
+- [x] **Expresar desacuerdo** · 27 pts · `funciones B2 § 2.10. Expresar desacuerdo`  — fn-expresar-desacuerdo-rotundo-b2
+- [ ] **Mostrar escepticismo** · 6 pts · `funciones B2 § 2.11. Mostrar escepticismo`
+- [ ] **Presentar un contraargumento** · 7 pts · `funciones B2 § 2.12. Presentar un contraargumento`
+- [x] **Expresar certeza y evidencia** · 10 pts · `funciones B2 § 2.13. Expresar certeza y evidencia`  — fn-expresar-certeza-b2
+- [ ] **Expresar falta de certeza y evidencia** · 7 pts · `funciones B2 § 2.14. Expresar falta de certeza y `
+- [x] **Invitar a formular una hipótesis** · 3 pts · `funciones B2 § 2.15. Invitar a formular una hipót`  — fn-invitar-hipotesis-b2
+- [ ] **Expresar posibilidad** · 14 pts · `funciones B2 § 2.16. Expresar posibilidad`
+- [x] **Expresar falta de obligación o de necesidad** · 3 pts · `funciones B2 § 2.18. Expresar falta de obligación`  — fn-falta-obligacion-b2
+- [ ] **Preguntar por el conocimiento de algo** · 6 pts · `funciones B2 § 2.19. Preguntar por el conocimient`
+- [ ] **Expresar conocimiento** · 7 pts · `funciones B2 § 2.20. Expresar conocimiento`
+- [x] **Expresar desconocimiento** · 10 pts · `funciones B2 § 2.21. Expresar desconocimiento`  — fn-no-tengo-ni-idea-b2
+- [x] **Preguntar por la habilidad para hacer algo** · 5 pts · `funciones B2 § 2.22. Preguntar por la habilidad p`  — fn-preguntar-habilidad-b2
+- [ ] **Expresar habilidad para hacer algo** · 7 pts · `funciones B2 § 2.23. Expresar habilidad para hace`
+- [x] **Preguntar si se recuerda o se ha olvidado** · 4 pts · `funciones B2 § 2.24. Preguntar si se recuerda o s`  — fn-preguntar-recordar-b2
+- [x] **Expresar que se recuerda** · 11 pts · `funciones B2 § 2.25. Expresar que se recuerda`  — fn-expresar-recordar-b2
+- [x] **Expresar que no se recuerda** · 10 pts · `funciones B2 § 2.26. Expresar que no se recuerda`  — fn-expresar-no-recordar-general-b2
+- [ ] **Expresar gustos e intereses** · 17 pts · `funciones B2 § 3.2. Expresar gustos e intereses`
+- [ ] **Expresar aversión** · 7 pts · `funciones B2 § 3.3. Expresar aversión`
+- [ ] **Expresar preferencia** · 4 pts · `funciones B2 § 3.5. Expresar preferencia`
+- [ ] **Preguntar por deseos** · 5 pts · `funciones B2 § 3.7. Preguntar por deseos`
+- [ ] **Expresar deseos** · 13 pts · `funciones B2 § 3.8. Expresar deseos`
+- [ ] **Preguntar por planes e intenciones** · 11 pts · `funciones B2 § 3.9. Preguntar por planes e intenc`
+- [ ] **Expresar planes e intenciones** · 9 pts · `funciones B2 § 3.10. Expresar planes e intencione`
+- [ ] **Expresar alegría y satisfacción** · 13 pts · `funciones B2 § 3.12. Expresar alegría y satisfacc`
+- [ ] **Expresar tristeza y aflicción** · 10 pts · `funciones B2 § 3.13. Expresar tristeza y aflicció`
+- [ ] **Expresar placer y diversión** · 7 pts · `funciones B2 § 3.14. Expresar placer y diversión`
+- [ ] **Expresar aburrimiento** · 4 pts · `funciones B2 § 3.15. Expresar aburrimiento`
+- [x] **Expresar hartazgo** · 10 pts · `funciones B2 § 3.16. Expresar hartazgo`  — fn-expresar-hartazgo-b2
+- [ ] **Expresar enfado e indignación** · 8 pts · `funciones B2 § 3.17. Expresar enfado e indignació`
+- [ ] **Expresar miedo, ansiedad y preocupación** · 11 pts · `funciones B2 § 3.18. Expresar miedo, ansiedad y p`
+- [x] **Expresar nerviosismo** · 6 pts · `funciones B2 § 3.19. Expresar nerviosismo`  — fn-expresar-nerviosismo-b2
+- [ ] **Expresar empatía** · 6 pts · `funciones B2 § 3.20. Expresar empatía`
+- [x] **Expresar alivio** · 4 pts · `funciones B2 § 3.21. Expresar alivio`  — fn-expresar-alivio-b2
+- [ ] **Expresar esperanza** · 3 pts · `funciones B2 § 3.22. Expresar esperanza`
+- [x] **Expresar decepción** · 4 pts · `funciones B2 § 3.23. Expresar decepción`  — fn-expresar-decepcion-b2
+- [x] **Expresar resignación** · 7 pts · `funciones B2 § 3.24. Expresar resignación`  — fn-expresar-resignacion-b2
+- [x] **Expresar arrepentimiento** · 3 pts · `funciones B2 § 3.25. Expresar arrepentimiento`  — fn-expresar-arrepentimiento-b2
+- [ ] **Expresar vergüenza** · 7 pts · `funciones B2 § 3.26. Expresar vergüenza`
+- [ ] **Expresar sorpresa y extrañeza** · 12 pts · `funciones B2 § 3.27. Expresar sorpresa y extrañez`
+- [ ] **Expresar admiración y orgullo** · 7 pts · `funciones B2 § 3.28. Expresar admiración y orgull`
+- [ ] **Expresar afecto** · 7 pts · `funciones B2 § 3.29. Expresar afecto`
+- [ ] **Expresar sensaciones físicas** · 17 pts · `funciones B2 § 3.30. Expresar sensaciones físicas`
+- [ ] **Dar una orden o instrucción** · 23 pts · `funciones B2 § 4.1. Dar una orden o instrucción`
+- [ ] **Pedir un favor** · 6 pts · `funciones B2 § 4.2. Pedir un favor`
+- [ ] **Pedir objetos** · 12 pts · `funciones B2 § 4.3. Pedir objetos`
+- [ ] **Pedir ayuda** · 10 pts · `funciones B2 § 4.4. Pedir ayuda`
+- [ ] **Responder a una orden, petición o ruego** · 29 pts · `funciones B2 § 4.7. Responder a una orden, petici`
+- [ ] **Pedir permiso** · 5 pts · `funciones B2 § 4.8. Pedir permiso`
+- [ ] **Dar permiso** · 12 pts · `funciones B2 § 4.9. Dar permiso`
+- [ ] **Denegar permiso** · 6 pts · `funciones B2 § 4.10. Denegar permiso`
+- [ ] **Prohibir** · 4 pts · `funciones B2 § 4.11. Prohibir`
+- [ ] **Rechazar una prohibición** · 6 pts · `funciones B2 § 4.12. Rechazar una prohibición`
+- [ ] **Proponer y sugerir** · 13 pts · `funciones B2 § 4.13. Proponer y sugerir`
+- [ ] **Aceptar una propuesta, ofrecimiento o invitación** · 13 pts · `funciones B2 § 4.16. Aceptar una propuesta, ofrec`
+- [ ] **Rechazar una propuesta, ofrecimiento o invitación** · 8 pts · `funciones B2 § 4.17. Rechazar una propuesta, ofre`
+- [ ] **Aconsejar** · 6 pts · `funciones B2 § 4.18. Aconsejar`
+- [ ] **Advertir** · 6 pts · `funciones B2 § 4.19. Advertir`
+- [ ] **Amenazar** · 3 pts · `funciones B2 § 4.20. Amenazar`
+- [ ] **Reprochar** · 7 pts · `funciones B2 § 4.21. Reprochar`
+- [ ] **Ofrecerse para hacer algo** · 6 pts · `funciones B2 § 4.23. Ofrecerse para hacer algo`
+- [ ] **Tranquilizar y consolar** · 12 pts · `funciones B2 § 4.24. Tranquilizar y consolar`
+- [ ] **Animar** · 10 pts · `funciones B2 § 4.25. Animar`
+- [ ] **Saludar** · 24 pts · `funciones B2 § 5.1. Saludar`
+- [ ] **Responder a un saludo** · 5 pts · `funciones B2 § 5.2. Responder a un saludo`
+- [ ] **Dirigirse a alguien** · 3 pts · `funciones B2 § 5.3. Dirigirse a alguien`
+- [ ] **Dar la bienvenida a alguien** · 3 pts · `funciones B2 § 5.8. Dar la bienvenida a alguien`
+- [ ] **Disculparse** · 8 pts · `funciones B2 § 5.10. Disculparse`
+- [ ] **Responder a una disculpa** · 4 pts · `funciones B2 § 5.11. Responder a una disculpa`
+- [ ] **Agradecer** · 5 pts · `funciones B2 § 5.12. Agradecer`
+- [ ] **Formular buenos deseos** · 11 pts · `funciones B2 § 5.17. Formular buenos deseos`
+- [ ] **Enviar y transmitir saludos, recuerdos** · 6 pts · `funciones B2 § 5.19. Enviar y transmitir saludos,`
+- [ ] **Despedirse** · 13 pts · `funciones B2 § 5.21. Despedirse`
+- [ ] **Preguntar por una persona y responder** · 21 pts · `funciones B2 § 6.3. Preguntar por una persona y r`
+- [ ] **Preguntar por el estado general de las cosas y responder** · 11 pts · `funciones B2 § 6.6. Preguntar por el estado gener`
+- [ ] **Solicitar que comience un relato y reaccionar** · 8 pts · `funciones B2 § 6.7. Solicitar que comience un rel`
+- [ ] **Introducir el tema del relato y reaccionar** · 15 pts · `funciones B2 § 6.8. Introducir el tema del relato`
+- [ ] **Indicar que se sigue el relato con interés** · 6 pts · `funciones B2 § 6.9. Indicar que se sigue el relat`
+- [ ] **Destacar un elemento** · 3 pts · `funciones B2 § 6.15. Destacar un elemento`
+- [ ] **Cerrar una digresión** · 3 pts · `funciones B2 § 6.19. Cerrar una digresión`
+- [ ] **Rechazar un tema o aspecto del tema** · 5 pts · `funciones B2 § 6.20. Rechazar un tema o aspecto d`
+- [ ] **Interrumpir** · 6 pts · `funciones B2 § 6.21. Interrumpir`
+- [ ] **Pedir a alguien que guarde silencio** · 3 pts · `funciones B2 § 6.23. Pedir a alguien que guarde s`
+- [ ] **Indicar que se desea continuar el discurso** · 4 pts · `funciones B2 § 6.25. Indicar que se desea continu`
+- [ ] **Concluir el relato** · 10 pts · `funciones B2 § 6.26. Concluir el relato`
+- [ ] **Introducir un nuevo tema** · 9 pts · `funciones B2 § 6.27. Introducir un nuevo tema`
+
+### B2 · discourse (0/13)
+- [ ] **Mantenimiento del referente y del hilo discursivo** · 10 pts · `tacticas_pragmaticas B2 § 1.1. Mantenimiento del referente y`
+- [ ] **Marcadores del discurso** · 19 pts · `tacticas_pragmaticas B2 § 1.2. Marcadores del discurso`
+- [ ] **La deixis** · 5 pts · `tacticas_pragmaticas B2 § 1.3. La deixis`
+- [ ] **Desplazamiento en el orden de los elementos oracionales** · 16 pts · `tacticas_pragmaticas B2 § 1.4. Desplazamiento en el orden de`
+- [ ] **Procedimientos de cita** · 14 pts · `tacticas_pragmaticas B2 § 1.5. Procedimientos de cita`
+- [ ] **Valores ilocutivos de los enunciados interrogativos** · 14 pts · `tacticas_pragmaticas B2 § 1.6. Valores ilocutivos de los enu`
+- [ ] **La expresión de la negación** · 7 pts · `tacticas_pragmaticas B2 § 1.7. La expresión de la negación`
+- [ ] **Significados interpretados** · 4 pts · `tacticas_pragmaticas B2 § 1.8. Significados interpretados`
+- [ ] **Intensificación o refuerzo** · 21 pts · `tacticas_pragmaticas B2 § 2.1. Intensificación o refuerzo`
+- [ ] **Focalización** · 9 pts · `tacticas_pragmaticas B2 § 2.3. Focalización`
+- [ ] **Los valores modales de la entonación y de otros elementos ** · 11 pts · `tacticas_pragmaticas B2 § 2.4. Los valores modales de la ent`
+- [ ] **Desplazamiento de la perspectiva temporal** · 5 pts · `tacticas_pragmaticas B2 § 2.5. Desplazamiento de la perspect`
+- [ ] **Cortesía verbal atenuadora** · 31 pts · `tacticas_pragmaticas B2 § 3.1. Cortesía verbal atenuadora`
+
+### B2 · genre (1/16)
+- [x] **Lista alfabética de géneros orales y escritos** · 49 pts · `generos_discursivos B2 § 1.1. Lista alfabética de géneros o`  — gn-reclamacion-b2
+- [ ] **Géneros de transmisión oral** · 20 pts · `generos_discursivos B2 § 1.2. Géneros de transmisión oral`
+- [ ] **Géneros de transmisión escrita** · 29 pts · `generos_discursivos B2 § 1.3. Géneros de transmisión escrit`
+- [ ] **Conversación transaccional telefónica (Nivel B1)** · 26 pts · `generos_discursivos B2 § 2.1.1. Conversación transaccional `
+- [ ] **Presentación pública (Nivel B1)** · 43 pts · `generos_discursivos B2 § 2.2.1. Presentación pública (Nivel`
+- [ ] **Presentación pública (Nivel B2)** · 39 pts · `generos_discursivos B2 § 2.2.2. Presentación pública (Nivel`
+- [ ] **Carta personal (Nivel B1)** · 18 pts · `generos_discursivos B2 § 2.3.1. Carta personal (Nivel B1)`
+- [ ] **Carta de solicitud de trabajo (Nivel B2)** · 40 pts · `generos_discursivos B2 § 2.3.2. Carta de solicitud de traba`
+- [ ] **Composición escrita (Nivel B1)** · 11 pts · `generos_discursivos B2 § 2.4.1. Composición escrita (Nivel `
+- [ ] **Composición escrita (Nivel B2)** · 19 pts · `generos_discursivos B2 § 2.4.2. Composición escrita (Nivel `
+- [ ] **Macrofunción descriptiva: personas** · 27 pts · `generos_discursivos B2 § 3.1. Macrofunción descriptiva: per`
+- [ ] **Macrofunción descriptiva: objetos** · 25 pts · `generos_discursivos B2 § 3.2. Macrofunción descriptiva: obj`
+- [ ] **Macrofunción descriptiva: lugares** · 24 pts · `generos_discursivos B2 § 3.3. Macrofunción descriptiva: lug`
+- [ ] **Macrofunción narrativa** · 29 pts · `generos_discursivos B2 § 3.4. Macrofunción narrativa`
+- [ ] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`
+- [ ] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`
+
+## C1 — lessons (5/202 done)
+
+### C1 · grammar (0/28)
+- [ ] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`
+- [ ] **El número de los sustantivos** · 6 pts · `gramatica C1 § 1.3. El número de los sustantivos`
+- [ ] **Clases de adjetivos** · 15 pts · `gramatica C1 § 2.1. Clases de adjetivos`
+- [ ] **El artículo definido** · 11 pts · `gramatica C1 § 3.1. El artículo definido`
+- [ ] **El artículo indefinido** · 8 pts · `gramatica C1 § 3.2. El artículo indefinido`
+- [ ] **Ausencia de determinación: los nombres escuetos** · 5 pts · `gramatica C1 § 3.3. Ausencia de determinación: lo`
+- [ ] **Los demostrativos — Valores / significado** · 7 pts · `gramatica C1 § `
+- [ ] **Los posesivos — Valores / significado** · 6 pts · `gramatica C1 § `
+- [ ] **Cuantificadores propios** · 31 pts · `gramatica C1 § 6.1. Cuantificadores propios`
+- [ ] **El pronombre personal** · 47 pts · `gramatica C1 § 7.1. El pronombre personal`
+- [ ] **Los relativos** · 25 pts · `gramatica C1 § 7.2. Los relativos`
+- [ ] **Los interrogativos** · 7 pts · `gramatica C1 § 7.3. Los interrogativos`
+- [ ] **Los exclamativos** · 6 pts · `gramatica C1 § 7.4. Los exclamativos`
+- [ ] **Adverbios nucleares o de predicado** · 26 pts · `gramatica C1 § 8.2. Adverbios nucleares o de pred`
+- [ ] **Adverbios externos al dictum** · 5 pts · `gramatica C1 § 8.3. Adverbios externos al dictum`
+- [ ] **Adverbios conjuntivos** · 5 pts · `gramatica C1 § 8.5. Adverbios conjuntivos`
+- [ ] **Tiempos verbales de indicativo** · 21 pts · `gramatica C1 § 9.1. Tiempos verbales de indicativ`
+- [ ] **Tiempos verbales de subjuntivo** · 23 pts · `gramatica C1 § 9.2. Tiempos verbales de subjuntiv`
+- [ ] **El imperativo** · 9 pts · `gramatica C1 § 9.3. El imperativo`
+- [ ] **Formas no personales del verbo** · 16 pts · `gramatica C1 § 9.4. Formas no personales del verb`
+- [ ] **Complementos y modificadores** · 10 pts · `gramatica C1 § 10.2. Complementos y modificadores`
+- [ ] **Complementos y modificadores** · 6 pts · `gramatica C1 § 11.2. Complementos y modificadores`
+- [ ] **El núcleo** · 23 pts · `gramatica C1 § 12.1. El núcleo`
+- [ ] **Complementos** · 13 pts · `gramatica C1 § 12.2. Complementos`
+- [ ] **Concordancia** · 10 pts · `gramatica C1 § 13.1. Concordancia`
+- [ ] **Oraciones subordinadas sustantivas** · 11 pts · `gramatica C1 § 15.1. Oraciones subordinadas susta`
+- [ ] **Oraciones subordinadas adjetivas o de relativo** · 24 pts · `gramatica C1 § 15.2. Oraciones subordinadas adjet`
+- [ ] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica C1 § 15.3. Oraciones subordinadas adver`
+
+### C1 · notion (0/57)
+- [ ] **Existencia, inexistencia** · 17 pts · `nociones_generales C1 § 1.1. Existencia, inexistencia`
+- [ ] **Presencia, ausencia** · 17 pts · `nociones_generales C1 § 1.2. Presencia, ausencia`
+- [ ] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales C1 § 1.3. Disponibilidad, no disponibil`
+- [ ] **Cualidad general** · 9 pts · `nociones_generales C1 § 1.4. Cualidad general`
+- [ ] **Acontecimiento** · 5 pts · `nociones_generales C1 § 1.5. Acontecimiento`
+- [ ] **Certeza, incertidumbre** · 13 pts · `nociones_generales C1 § 1.6. Certeza, incertidumbre`
+- [ ] **Realidad, ficción** · 17 pts · `nociones_generales C1 § 1.7. Realidad, ficción`
+- [ ] **Necesidad, contingencia, obligación** · 12 pts · `nociones_generales C1 § 1.8. Necesidad, contingencia, obli`
+- [ ] **Generalidad, especificidad** · 13 pts · `nociones_generales C1 § 1.9. Generalidad, especificidad`
+- [ ] **Cantidad numérica** · 4 pts · `nociones_generales C1 § 2.1. Cantidad numérica`
+- [ ] **Cantidad relativa** · 13 pts · `nociones_generales C1 § 2.2. Cantidad relativa`
+- [ ] **Aumento, disminución** · 11 pts · `nociones_generales C1 § 2.3. Aumento, disminución`
+- [ ] **Proporción** · 5 pts · `nociones_generales C1 § 2.4. Proporción`
+- [ ] **Grado** · 11 pts · `nociones_generales C1 § 2.5. Grado`
+- [ ] **Medidas** · 71 pts · `nociones_generales C1 § 2.6. Medidas`
+- [ ] **Localización** · 8 pts · `nociones_generales C1 § 3.1. Localización`
+- [ ] **Posición absoluta** · 12 pts · `nociones_generales C1 § 3.2. Posición absoluta`
+- [ ] **Posición relativa** · 19 pts · `nociones_generales C1 § 3.3. Posición relativa`
+- [ ] **Distancia** · 12 pts · `nociones_generales C1 § 3.4. Distancia`
+- [ ] **Movimiento, estabilidad** · 36 pts · `nociones_generales C1 § 3.5. Movimiento, estabilidad`
+- [ ] **Orientación, dirección** · 11 pts · `nociones_generales C1 § 3.6. Orientación, dirección`
+- [ ] **Orden** · 8 pts · `nociones_generales C1 § 3.7. Orden`
+- [ ] **Origen** · 5 pts · `nociones_generales C1 § 3.8. Origen`
+- [ ] **Referencias generales** · 15 pts · `nociones_generales C1 § 4.1. Referencias generales`
+- [ ] **Localización en el tiempo** · 35 pts · `nociones_generales C1 § 4.2. Localización en el tiempo`
+- [ ] **Aspectos de desarrollo** · 160 pts · `nociones_generales C1 § 4.3. Aspectos de desarrollo`
+- [ ] **Formas y figuras** · 12 pts · `nociones_generales C1 § 5.1. Formas y figuras`
+- [ ] **Consistencia, resistencia** · 16 pts · `nociones_generales C1 § 5.3. Consistencia, resistencia`
+- [ ] **Textura** · 9 pts · `nociones_generales C1 § 5.4. Textura`
+- [ ] **Acabado** · 10 pts · `nociones_generales C1 § 5.5. Acabado`
+- [ ] **Humedad, sequedad** · 17 pts · `nociones_generales C1 § 5.6. Humedad, sequedad`
+- [ ] **Materia** · 8 pts · `nociones_generales C1 § 5.7. Materia`
+- [ ] **Visibilidad, visión** · 17 pts · `nociones_generales C1 § 5.8. Visibilidad, visión`
+- [ ] **Audibilidad, audición** · 20 pts · `nociones_generales C1 § 5.9. Audibilidad, audición`
+- [ ] **Sabor** · 4 pts · `nociones_generales C1 § 5.10. Sabor`
+- [ ] **Olor** · 7 pts · `nociones_generales C1 § 5.11. Olor`
+- [ ] **Color** · 7 pts · `nociones_generales C1 § 5.12. Color`
+- [ ] **Edad, vejez** · 14 pts · `nociones_generales C1 § 5.13. Edad, vejez`
+- [ ] **Accesibilidad** · 6 pts · `nociones_generales C1 § 5.14. Accesibilidad`
+- [ ] **Limpieza** · 6 pts · `nociones_generales C1 § 5.15. Limpieza`
+- [ ] **Evaluación general** · 16 pts · `nociones_generales C1 § 6.1. Evaluación general`
+- [ ] **Valor, precio** · 15 pts · `nociones_generales C1 § 6.2. Valor, precio`
+- [ ] **Calidad** · 3 pts · `nociones_generales C1 § 6.4. Calidad`
+- [ ] **Aceptabilidad** · 10 pts · `nociones_generales C1 § 6.5. Aceptabilidad`
+- [ ] **Adecuación** · 9 pts · `nociones_generales C1 § 6.6. Adecuación`
+- [ ] **Conformidad** · 7 pts · `nociones_generales C1 § 6.7. Conformidad`
+- [ ] **Corrección** · 14 pts · `nociones_generales C1 § 6.8. Corrección`
+- [ ] **Precisión, claridad** · 15 pts · `nociones_generales C1 § 6.9. Precisión, claridad`
+- [ ] **Interés** · 10 pts · `nociones_generales C1 § 6.10. Interés`
+- [ ] **Éxito, logro** · 26 pts · `nociones_generales C1 § 6.11. Éxito, logro`
+- [ ] **Utilidad, uso** · 20 pts · `nociones_generales C1 § 6.12. Utilidad, uso`
+- [ ] **Capacidad, competencia** · 11 pts · `nociones_generales C1 § 6.13. Capacidad, competencia`
+- [ ] **Importancia** · 5 pts · `nociones_generales C1 § 6.14. Importancia`
+- [ ] **Normalidad** · 11 pts · `nociones_generales C1 § 6.15. Normalidad`
+- [ ] **Facilidad** · 4 pts · `nociones_generales C1 § 6.16. Facilidad`
+- [ ] **Reflexión, conocimiento** · 28 pts · `nociones_generales C1 § 7.1. Reflexión, conocimiento`
+- [ ] **Expresión verbal** · 21 pts · `nociones_generales C1 § 7.2. Expresión verbal`
+
+### C1 · function (0/91)
+- [ ] **Identificar** · 8 pts · `funciones C1 § 1.1. Identificar`
+- [ ] **Pedir información** · 19 pts · `funciones C1 § 1.2. Pedir información`
+- [ ] **Dar información** · 29 pts · `funciones C1 § 1.3. Dar información`
+- [ ] **Pedir confirmación** · 19 pts · `funciones C1 § 1.4. Pedir confirmación`
+- [ ] **Confirmar la información previa** · 4 pts · `funciones C1 § 1.5. Confirmar la información prev`
+- [ ] **Pedir opinión** · 11 pts · `funciones C1 § 2.1. Pedir opinión`
+- [ ] **Dar una opinión** · 4 pts · `funciones C1 § 2.2. Dar una opinión`
+- [ ] **Valorar** · 3 pts · `funciones C1 § 2.4. Valorar`
+- [ ] **Expresar aprobación y desaprobación** · 9 pts · `funciones C1 § 2.5. Expresar aprobación y desapro`
+- [ ] **Expresar acuerdo** · 21 pts · `funciones C1 § 2.9. Expresar acuerdo`
+- [ ] **Expresar desacuerdo** · 20 pts · `funciones C1 § 2.10. Expresar desacuerdo`
+- [ ] **Mostrar escepticismo** · 3 pts · `funciones C1 § 2.11. Mostrar escepticismo`
+- [ ] **Presentar un contraargumento** · 4 pts · `funciones C1 § 2.12. Presentar un contraargumento`
+- [ ] **Expresar certeza y evidencia** · 10 pts · `funciones C1 § 2.13. Expresar certeza y evidencia`
+- [ ] **Expresar falta de certeza y evidencia** · 7 pts · `funciones C1 § 2.14. Expresar falta de certeza y `
+- [ ] **Invitar a formular una hipótesis** · 4 pts · `funciones C1 § 2.15. Invitar a formular una hipót`
+- [ ] **Expresar posibilidad** · 3 pts · `funciones C1 § 2.16. Expresar posibilidad`
+- [ ] **Expresar obligación y necesidad** · 6 pts · `funciones C1 § 2.17. Expresar obligación y necesi`
+- [ ] **Expresar falta de obligación o de necesidad** · 4 pts · `funciones C1 § 2.18. Expresar falta de obligación`
+- [ ] **Preguntar por el conocimiento de algo** · 7 pts · `funciones C1 § 2.19. Preguntar por el conocimient`
+- [ ] **Expresar conocimiento** · 4 pts · `funciones C1 § 2.20. Expresar conocimiento`
+- [ ] **Expresar desconocimiento** · 5 pts · `funciones C1 § 2.21. Expresar desconocimiento`
+- [ ] **Expresar habilidad para hacer algo** · 5 pts · `funciones C1 § 2.23. Expresar habilidad para hace`
+- [ ] **Preguntar si se recuerda o se ha olvidado** · 3 pts · `funciones C1 § 2.24. Preguntar si se recuerda o s`
+- [ ] **Expresar que se recuerda** · 5 pts · `funciones C1 § 2.25. Expresar que se recuerda`
+- [ ] **Expresar que no se recuerda** · 6 pts · `funciones C1 § 2.26. Expresar que no se recuerda`
+- [ ] **Expresar gustos e intereses** · 10 pts · `funciones C1 § 3.2. Expresar gustos e intereses`
+- [ ] **Expresar aversión** · 5 pts · `funciones C1 § 3.3. Expresar aversión`
+- [ ] **Preguntar por preferencias** · 4 pts · `funciones C1 § 3.4. Preguntar por preferencias`
+- [ ] **Expresar preferencia** · 3 pts · `funciones C1 § 3.5. Expresar preferencia`
+- [ ] **Expresar indiferencia o ausencia de preferencia** · 5 pts · `funciones C1 § 3.6. Expresar indiferencia o ausen`
+- [ ] **Expresar deseos** · 7 pts · `funciones C1 § 3.8. Expresar deseos`
+- [ ] **Expresar planes e intenciones** · 5 pts · `funciones C1 § 3.10. Expresar planes e intencione`
+- [ ] **Preguntar por el estado de ánimo** · 9 pts · `funciones C1 § 3.11. Preguntar por el estado de á`
+- [ ] **Expresar alegría y satisfacción** · 8 pts · `funciones C1 § 3.12. Expresar alegría y satisfacc`
+- [ ] **Expresar tristeza y aflicción** · 9 pts · `funciones C1 § 3.13. Expresar tristeza y aflicció`
+- [ ] **Expresar placer y diversión** · 3 pts · `funciones C1 § 3.14. Expresar placer y diversión`
+- [ ] **Expresar hartazgo** · 3 pts · `funciones C1 § 3.16. Expresar hartazgo`
+- [ ] **Expresar enfado e indignación** · 6 pts · `funciones C1 § 3.17. Expresar enfado e indignació`
+- [ ] **Expresar miedo, ansiedad y preocupación** · 10 pts · `funciones C1 § 3.18. Expresar miedo, ansiedad y p`
+- [ ] **Expresar nerviosismo** · 7 pts · `funciones C1 § 3.19. Expresar nerviosismo`
+- [ ] **Expresar empatía** · 5 pts · `funciones C1 § 3.20. Expresar empatía`
+- [ ] **Expresar alivio** · 4 pts · `funciones C1 § 3.21. Expresar alivio`
+- [ ] **Expresar esperanza** · 6 pts · `funciones C1 § 3.22. Expresar esperanza`
+- [ ] **Expresar decepción** · 3 pts · `funciones C1 § 3.23. Expresar decepción`
+- [ ] **Expresar resignación** · 4 pts · `funciones C1 § 3.24. Expresar resignación`
+- [ ] **Expresar arrepentimiento** · 7 pts · `funciones C1 § 3.25. Expresar arrepentimiento`
+- [ ] **Expresar vergüenza** · 7 pts · `funciones C1 § 3.26. Expresar vergüenza`
+- [ ] **Expresar sorpresa y extrañeza** · 14 pts · `funciones C1 § 3.27. Expresar sorpresa y extrañez`
+- [ ] **Expresar admiración y orgullo** · 3 pts · `funciones C1 § 3.28. Expresar admiración y orgull`
+- [ ] **Expresar afecto** · 3 pts · `funciones C1 § 3.29. Expresar afecto`
+- [ ] **Expresar sensaciones físicas** · 16 pts · `funciones C1 § 3.30. Expresar sensaciones físicas`
+- [ ] **Dar una orden o instrucción** · 29 pts · `funciones C1 § 4.1. Dar una orden o instrucción`
+- [ ] **Pedir un favor** · 8 pts · `funciones C1 § 4.2. Pedir un favor`
+- [ ] **Pedir objetos** · 7 pts · `funciones C1 § 4.3. Pedir objetos`
+- [ ] **Pedir ayuda** · 6 pts · `funciones C1 § 4.4. Pedir ayuda`
+- [ ] **Repetir una orden previa o presupuesta** · 4 pts · `funciones C1 § 4.6. Repetir una orden previa o pr`
+- [ ] **Responder a una orden, petición o ruego** · 19 pts · `funciones C1 § 4.7. Responder a una orden, petici`
+- [ ] **Pedir permiso** · 4 pts · `funciones C1 § 4.8. Pedir permiso`
+- [ ] **Dar permiso** · 9 pts · `funciones C1 § 4.9. Dar permiso`
+- [ ] **Rechazar una prohibición** · 3 pts · `funciones C1 § 4.12. Rechazar una prohibición`
+- [ ] **Proponer y sugerir** · 7 pts · `funciones C1 § 4.13. Proponer y sugerir`
+- [ ] **Ofrecer e invitar** · 3 pts · `funciones C1 § 4.14. Ofrecer e invitar`
+- [ ] **Solicitar confirmación de una propuesta previa** · 5 pts · `funciones C1 § 4.15. Solicitar confirmación de un`
+- [ ] **Aceptar una propuesta, ofrecimiento o invitación** · 8 pts · `funciones C1 § 4.16. Aceptar una propuesta, ofrec`
+- [ ] **Rechazar una propuesta, ofrecimiento o invitación** · 5 pts · `funciones C1 § 4.17. Rechazar una propuesta, ofre`
+- [ ] **Aconsejar** · 6 pts · `funciones C1 § 4.18. Aconsejar`
+- [ ] **Advertir** · 4 pts · `funciones C1 § 4.19. Advertir`
+- [ ] **Amenazar** · 4 pts · `funciones C1 § 4.20. Amenazar`
+- [ ] **Reprochar** · 8 pts · `funciones C1 § 4.21. Reprochar`
+- [ ] **Ofrecerse para hacer algo** · 10 pts · `funciones C1 § 4.23. Ofrecerse para hacer algo`
+- [ ] **Tranquilizar y consolar** · 11 pts · `funciones C1 § 4.24. Tranquilizar y consolar`
+- [ ] **Animar** · 10 pts · `funciones C1 § 4.25. Animar`
+- [ ] **Saludar** · 23 pts · `funciones C1 § 5.1. Saludar`
+- [ ] **Responder a un saludo** · 8 pts · `funciones C1 § 5.2. Responder a un saludo`
+- [ ] **Dirigirse a alguien** · 3 pts · `funciones C1 § 5.3. Dirigirse a alguien`
+- [ ] **Disculparse** · 7 pts · `funciones C1 § 5.10. Disculparse`
+- [ ] **Responder a una disculpa** · 3 pts · `funciones C1 § 5.11. Responder a una disculpa`
+- [ ] **Agradecer** · 7 pts · `funciones C1 § 5.12. Agradecer`
+- [ ] **Responder a un agradecimiento** · 5 pts · `funciones C1 § 5.13. Responder a un agradecimient`
+- [ ] **Dar el pésame** · 4 pts · `funciones C1 § 5.14. Dar el pésame`
+- [ ] **Felicitar** · 10 pts · `funciones C1 § 5.16. Felicitar`
+- [ ] **Despedirse** · 8 pts · `funciones C1 § 5.21. Despedirse`
+- [ ] **Preguntar por el estado general de las cosas y responder** · 47 pts · `funciones C1 § 6.6. Preguntar por el estado gener`
+- [ ] **Introducir el tema del relato y reaccionar** · 9 pts · `funciones C1 § 6.8. Introducir el tema del relato`
+- [ ] **Indicar que se sigue el relato con interés** · 3 pts · `funciones C1 § 6.9. Indicar que se sigue el relat`
+- [ ] **Controlar la atención del interlocutor** · 4 pts · `funciones C1 § 6.10. Controlar la atención del in`
+- [ ] **Destacar un elemento** · 4 pts · `funciones C1 § 6.15. Destacar un elemento`
+- [ ] **Pedir a alguien que guarde silencio** · 4 pts · `funciones C1 § 6.23. Pedir a alguien que guarde s`
+- [ ] **Introducir un nuevo tema** · 3 pts · `funciones C1 § 6.27. Introducir un nuevo tema`
+- [ ] **Proponer el cierre** · 3 pts · `funciones C1 § 6.28. Proponer el cierre`
+
+### C1 · discourse (5/12)
+- [ ] **Mantenimiento del referente y del hilo discursivo** · 7 pts · `tacticas_pragmaticas C1 § 1.1. Mantenimiento del referente y`
+- [x] **Marcadores del discurso** · 19 pts · `tacticas_pragmaticas C1 § 1.2. Marcadores del discurso`  — dc-reformuladores-c1
+- [ ] **La deixis** · 9 pts · `tacticas_pragmaticas C1 § 1.3. La deixis`
+- [ ] **Desplazamiento en el orden de los elementos oracionales** · 11 pts · `tacticas_pragmaticas C1 § 1.4. Desplazamiento en el orden de`
+- [x] **Procedimientos de cita** · 15 pts · `tacticas_pragmaticas C1 § 1.5. Procedimientos de cita`  — dc-estilo-indirecto-c1
+- [ ] **Valores ilocutivos de los enunciados interrogativos** · 11 pts · `tacticas_pragmaticas C1 § 1.6. Valores ilocutivos de los enu`
+- [ ] **La expresión de la negación** · 13 pts · `tacticas_pragmaticas C1 § 1.7. La expresión de la negación`
+- [x] **Significados interpretados** · 12 pts · `tacticas_pragmaticas C1 § 1.8. Significados interpretados`  — dc-metaforas-c1
+- [ ] **Intensificación o refuerzo** · 37 pts · `tacticas_pragmaticas C1 § 2.1. Intensificación o refuerzo`
+- [ ] **Focalización** · 9 pts · `tacticas_pragmaticas C1 § 2.3. Focalización`
+- [x] **Desplazamiento de la perspectiva temporal** · 9 pts · `tacticas_pragmaticas C1 § 2.5. Desplazamiento de la perspect`  — dc-imperfecto-modal-c1
+- [x] **Cortesía verbal atenuadora** · 30 pts · `tacticas_pragmaticas C1 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-c1
+
+### C1 · genre (0/14)
+- [ ] **Lista alfabética de géneros orales y escritos** · 51 pts · `generos_discursivos C1 § 1.1. Lista alfabética de géneros o`
+- [ ] **Géneros de transmisión oral** · 20 pts · `generos_discursivos C1 § 1.2. Géneros de transmisión oral`
+- [ ] **Géneros de transmisión escrita** · 20 pts · `generos_discursivos C1 § 1.3. Géneros de transmisión escrit`
+- [ ] **Presentación pública (Nivel C1)** · 34 pts · `generos_discursivos C1 § 2.2.1. Presentación pública (Nivel`
+- [ ] **Presentación pública (Nivel C2)** · 35 pts · `generos_discursivos C1 § 2.2.2. Presentación pública (Nivel`
+- [ ] **Carta comercial (Nivel C1)** · 36 pts · `generos_discursivos C1 § 2.3.1. Carta comercial (Nivel C1)`
+- [ ] **Composición escrita (Nivel C1)** · 8 pts · `generos_discursivos C1 § 2.4.1. Composición escrita (Nivel `
+- [ ] **Trabajo de tipo académico (Nivel C1)** · 11 pts · `generos_discursivos C1 § 2.4.2. Trabajo de tipo académico (`
+- [ ] **Macrofunción descriptiva: personas** · 28 pts · `generos_discursivos C1 § 3.1. Macrofunción descriptiva: per`
+- [ ] **Macrofunción descriptiva: objetos** · 25 pts · `generos_discursivos C1 § 3.2. Macrofunción descriptiva: obj`
+- [ ] **Macrofunción descriptiva: lugares** · 26 pts · `generos_discursivos C1 § 3.3. Macrofunción descriptiva: lug`
+- [ ] **Macrofunción narrativa** · 26 pts · `generos_discursivos C1 § 3.4. Macrofunción narrativa`
+- [ ] **Macrofunción expositiva** · 40 pts · `generos_discursivos C1 § 3.5. Macrofunción expositiva`
+- [ ] **Macrofunción argumentativa** · 50 pts · `generos_discursivos C1 § 3.6. Macrofunción argumentativa`
+
+## Practice material
+
+Passages carry a `theme` and a level-appropriate glossary: English to B1,
+a **Spanish definition** at B2, **none** at C1. Lengths: A1 30–60, A2 60–100,
+B1 100–160, B2 200–300, C1 320–450 words.
+
+### passages
+- [x] A1 — 87/87
+- [x] A2 — 62/62
+- [x] B1 — 81/81
+- [ ] B2 — batch of 10 (0/80 written)
+- [ ] B2 — batch of 10 (10/80 written)
+- [ ] B2 — batch of 10 (20/80 written)
+- [ ] B2 — batch of 10 (30/80 written)
+- [ ] B2 — batch of 10 (40/80 written)
+- [ ] B2 — batch of 10 (50/80 written)
+- [ ] B2 — batch of 10 (60/80 written)
+- [ ] B2 — batch of 10 (70/80 written)
+- [ ] C1 — batch of 10 (0/80 written)
+- [ ] C1 — batch of 10 (10/80 written)
+- [ ] C1 — batch of 10 (20/80 written)
+- [ ] C1 — batch of 10 (30/80 written)
+- [ ] C1 — batch of 10 (40/80 written)
+- [ ] C1 — batch of 10 (50/80 written)
+- [ ] C1 — batch of 10 (60/80 written)
+- [ ] C1 — batch of 10 (70/80 written)
+
+### apply
+- [x] A1 — 118/118
+- [x] A2 — 163/163
+- [x] B1 — 141/141
+- [ ] B2 — batch of 10 (0/120 written)
+- [ ] B2 — batch of 10 (10/120 written)
+- [ ] B2 — batch of 10 (20/120 written)
+- [ ] B2 — batch of 10 (30/120 written)
+- [ ] B2 — batch of 10 (40/120 written)
+- [ ] B2 — batch of 10 (50/120 written)
+- [ ] B2 — batch of 10 (60/120 written)
+- [ ] B2 — batch of 10 (70/120 written)
+- [ ] B2 — batch of 10 (80/120 written)
+- [ ] B2 — batch of 10 (90/120 written)
+- [ ] B2 — batch of 10 (100/120 written)
+- [ ] B2 — batch of 10 (110/120 written)
+- [ ] C1 — batch of 10 (0/120 written)
+- [ ] C1 — batch of 10 (10/120 written)
+- [ ] C1 — batch of 10 (20/120 written)
+- [ ] C1 — batch of 10 (30/120 written)
+- [ ] C1 — batch of 10 (40/120 written)
+- [ ] C1 — batch of 10 (50/120 written)
+- [ ] C1 — batch of 10 (60/120 written)
+- [ ] C1 — batch of 10 (70/120 written)
+- [ ] C1 — batch of 10 (80/120 written)
+- [ ] C1 — batch of 10 (90/120 written)
+- [ ] C1 — batch of 10 (100/120 written)
+- [ ] C1 — batch of 10 (110/120 written)
+
+### writing
+- [x] A1 — 156/156
+- [x] A2 — 91/91
+- [x] B1 — 78/78
+- [ ] B2 — batch of 10 (0/80 written)
+- [ ] B2 — batch of 10 (10/80 written)
+- [ ] B2 — batch of 10 (20/80 written)
+- [ ] B2 — batch of 10 (30/80 written)
+- [ ] B2 — batch of 10 (40/80 written)
+- [ ] B2 — batch of 10 (50/80 written)
+- [ ] B2 — batch of 10 (60/80 written)
+- [ ] B2 — batch of 10 (70/80 written)
+- [ ] C1 — batch of 10 (0/80 written)
+- [ ] C1 — batch of 10 (10/80 written)
+- [ ] C1 — batch of 10 (20/80 written)
+- [ ] C1 — batch of 10 (30/80 written)
+- [ ] C1 — batch of 10 (40/80 written)
+- [ ] C1 — batch of 10 (50/80 written)
+- [ ] C1 — batch of 10 (60/80 written)
+- [ ] C1 — batch of 10 (70/80 written)
+
