@@ -1140,6 +1140,8 @@ window.VERBS = [
   preterito:['sugerí','sugeriste','sugirió','sugerimos','sugeristeis','sugirieron'],
   presubj:['sugiera','sugieras','sugiera','sugiramos','sugiráis','sugieran'] } },
 { inf:'amenazar', en:'to threaten', type:'ar' },
+{ inf:'suponer', en:'to suppose, to assume', type:'er', like:'poner' },
+{ inf:'tratarse', en:'to be about (a matter)', type:'ar' },
 { inf:'exportar', en:'to export', type:'ar' },
 { inf:'avisar', en:'to warn, to notify', type:'ar' },
 { inf:'fabricar', en:'to manufacture', type:'ar' },

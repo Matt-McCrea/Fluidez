@@ -17623,6 +17623,577 @@ window.STRAND_LESSONS = [
     { id: 'p:expresionverbalB2:cloze', kind: 'cloze', text: 'El informe ___ tres problemas principales. (destacar)', accept: ['destaca'] },
     { id: 'p:expresionverbalB2:recall', kind: 'recall', front: '¿Por qué conviene variar el verbo de habla más allá de "decir"?', back: 'porque cada verbo aporta información que "decir" deja plana' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 function, part 1 (WORKLIST.md, section B2 · function, § 1.1-2.23)
+ * ========================================================================== */
+{
+  id: 'fn-identificar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:4', 'funciones:B2:5', 'funciones:B2:6', 'funciones:B2:9', 'funciones:B2:10'],
+  title: 'Identificar: el/los que, lo de, se trata de',
+  summary: 'B2 identifies through nominalized fragments — "los de la camiseta roja", "lo de ir a ese restaurante" — that name a group or a whole topic without repeating the noun, plus the formal frame "se trata de" for introducing what something IS.',
+  sections: [
+    { h: 'El/los + de + SN: identifying by an attached detail', html: '<i>Los de la camiseta roja</i> identifies people by one visible detail, dropping the noun ("los [chicos] de la camiseta roja"). Very productive in speech.' },
+    { h: 'Lo/eso de + [topic]: nominalizing a whole matter', html: '<i>Lo de ir a ese restaurante</i> turns a whole plan/topic into a noun phrase you can then comment on: <i>Lo de ir a ese restaurante me parece estupendo.</i>' },
+    { h: 'Se trata de: formally introducing what something is', html: '<i>Se trata de una figura muy importante</i> is the standard, slightly formal way to identify or explain what a referent is.' }
+  ],
+  exponents: [
+    { es: 'Los de la camiseta roja están jugando mejor.', en: "The ones in the red shirts are playing better.", register: 'coloquial' },
+    { es: 'Lo de ir a ese restaurante me parece estupendo.', en: "The idea of going to that restaurant seems great to me.", register: 'coloquial' },
+    { es: 'Se trata de una figura muy importante en la historia del país.', en: "It's about a very important figure in the country's history.", register: 'formal' },
+    { es: 'Busco una maleta azul que tiene dos asas de cuero.', en: "I'm looking for a blue suitcase that has two leather handles.", register: 'neutral' },
+    { es: 'Ana es la chica de quien te hablé.', en: "Ana is the girl I told you about.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Los chicos de la camiseta roja juegan bien.', en: 'The boys in the red shirts play well.', note: 'full noun phrase' },
+    { es: 'Los de la camiseta roja juegan bien.', en: 'The ones in the red shirts play well.', note: 'noun dropped, "los" alone identifies the group' }
+  ],
+  pitfalls: [
+    '<i>Lo de + [topic]</i> is not the same as a plain <i>eso</i> — it packages a whole matter (an action, a plan, a piece of news) as a discussable noun, more specific than a bare pronoun.',
+    '<i>Se trata de</i> is impersonal — it never takes a personal subject: <i>*Él se trata de...</i> is wrong; only <i>Se trata de...</i>.'
+  ],
+  examples: [
+    { es: 'Esos del centro no tienen nada de luz.', en: 'Those [flats] downtown get no light at all.' },
+    { es: 'Son los de siempre, protestando otra vez.', en: "It's the usual crowd, complaining again." },
+    { es: 'Esa es la casa en la que nació Galdós.', en: "That's the house where Galdós was born." }
+  ],
+  probes: [
+    { id: 'p:identificarB2:losde', kind: 'mcq', q: '¿Qué sustituye "los" en "los de la camiseta roja"?',
+      options: ['Nada, es un artículo suelto', 'Un sustantivo elidido (chicos/jugadores)', 'Un verbo'], answer: 1 },
+    { id: 'p:identificarB2:lodenominaliza', kind: 'mcq', q: '¿Qué hace "lo de" en "lo de ir a ese restaurante"?',
+      options: ['Nombraliza todo un plan/tema', 'Repite el sustantivo', 'Niega la frase'], answer: 0 },
+    { id: 'p:identificarB2:cloze', kind: 'cloze', text: '___ trata de un problema grave. (se)', accept: ['Se', 'se'] },
+    { id: 'p:identificarB2:recall', kind: 'recall', front: 'Frase formal para introducir qué es algo', back: 'se trata de' }
+  ]
+},
+
+{
+  id: 'fn-dar-informacion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:80', 'funciones:B2:84', 'funciones:B2:87', 'funciones:B2:90', 'funciones:B2:91',
+         'funciones:B2:92', 'funciones:B2:93', 'funciones:B2:95', 'funciones:B2:96', 'funciones:B2:99'],
+  title: 'Dar información: corregir con matiz, modo y finalidad',
+  summary: 'B2 gives information with a full toolkit of subordinate clauses (manner, purpose, cause) and, crucially, several distinct ways to CORRECT a previous statement — from a softened modal verb to intonation itself carrying the correction.',
+  sections: [
+    { h: 'Manner, purpose, cause clauses', html: '<i>Como me diga el jefe</i> (manner), <i>para que hablaras con él</i> (purpose, subjunctive), <i>debido a que...</i> / <i>ya que...</i> (cause) structure a fuller answer than a bare fact.' },
+    { h: 'Softening a correction with a modal verb', html: '<i>No pudo llegar tarde, porque la vi...</i> uses <i>poder</i> to soften the correction — less confrontational than a flat "no llegó tarde".' },
+    { h: 'Two-step corrections', html: '<i>No, no es eso exactamente, es que...</i> and <i>No es que..., lo que pasa es que...</i> first reject the premise gently, then supply the real explanation.' },
+    { h: 'Correcting with emphatic intonation', html: 'A flat denial can be intensified purely through intonation, marked in writing by capitals or repetition: <i>¡NO está en París!</i>' }
+  ],
+  exponents: [
+    { es: 'No pudo llegar tarde, porque la vi en su despacho a las ocho.', en: "She can't have arrived late, because I saw her in her office at eight.", register: 'neutral', note: 'modal verb softens the correction' },
+    { es: 'No, no es eso exactamente, es que hay que pagar un 15% por adelantado.', en: "No, that's not quite it, it's just that you have to pay 15% up front.", register: 'coloquial' },
+    { es: 'No es que no queramos entregarlo, lo que pasa es que vamos con retraso.', en: "It's not that we don't want to hand it in, it's just that we're running late.", register: 'coloquial' },
+    { es: 'No solo no ha llovido, sino que ha hecho un tiempo magnífico.', en: 'Not only has it not rained, but the weather has been wonderful.', register: 'formal' },
+    { es: 'Cambié de colegio debido a que mis padres se trasladaron a Madrid.', en: 'I changed schools because my parents moved to Madrid.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'No, no está en París.', en: "No, it isn't in Paris.", note: 'plain correction' },
+    { es: '¡No, no, NO está en París!', en: "No, no, it's NOT in Paris!", note: 'intonation/repetition intensifies the correction' }
+  ],
+  pitfalls: [
+    'The two-step corrections (<i>no es eso exactamente, es que...</i>) exist to soften a correction socially — skipping straight to the correction can read as blunt or confrontational.',
+    'Purpose <i>para que</i> always takes the subjunctive; cause <i>debido a que/ya que</i> takes the indicative — do not swap the moods.'
+  ],
+  examples: [
+    { es: 'He cogido dinero, por si queremos salir por la noche.', en: "I've taken some money, in case we want to go out at night." },
+    { es: 'Creo que te equivocas; es su prima, no su hermana.', en: "I think you're mistaken; she's his cousin, not his sister." },
+    { es: '¡Claro que está en Frankfurt!', en: 'Of course it is in Frankfurt!' }
+  ],
+  probes: [
+    { id: 'p:darinfoB2:suavizada', kind: 'mcq', q: '¿Cuál corrige de forma MÁS suave?',
+      options: ['¡NO fue así!', 'No pudo ser así, porque...', 'Te equivocas completamente.'], answer: 1 },
+    { id: 'p:darinfoB2:finalidad', kind: 'mcq', q: '"Se lo conté para que ___ con él." (hablar, finalidad)',
+      options: ['habla', 'hable', 'hablará'], answer: 1 },
+    { id: 'p:darinfoB2:cloze', kind: 'cloze', text: 'No es que no quiera, ___ que pasa es que estoy ocupado.', accept: ['lo'] },
+    { id: 'p:darinfoB2:recall', kind: 'recall', front: '¿Qué modo lleva "debido a que/ya que" (causa)?', back: 'indicativo' }
+  ]
+},
+
+{
+  id: 'fn-pedir-opinion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:133', 'funciones:B2:134', 'funciones:B2:135', 'funciones:B2:136', 'funciones:B2:137'],
+  title: 'Pedir opinión: qué opinas de que + subjuntivo',
+  summary: '"¿Qué opinas de que + subjuntivo?" asks for a view on someone else\'s action or a state of affairs, not on a thing — the subjunctive marks that the object of the question is an event, mirroring the same fork already met with gustar-type verbs.',
+  sections: [
+    { h: 'Qué piensas/opinas de + [topic]', html: 'The default frame for asking an opinion: <i>¿Tú qué piensas de lo de aumentar las ayudas?</i>' },
+    { h: 'Qué opinas de que + subjuntivo', html: 'When asking about someone else\'s action or a state of affairs rather than a thing: <i>¿Qué opinas de que hayan decidido abrir una sucursal tan lejos?</i>' },
+    { h: 'Consideras/Opinas que...?', html: 'A direct, slightly more formal way to ask for a stance: <i>¿Consideras que deberíamos ir?</i>' }
+  ],
+  exponents: [
+    { es: '¿Qué te parece lo de las obras en la oficina?', en: 'What do you think about the office renovations?', register: 'coloquial' },
+    { es: '¿Qué opinas de que hayan decidido abrir una sucursal tan lejos?', en: 'What do you think about them deciding to open a branch so far away?', register: 'neutral', note: 'opinas de que + subjuntivo — an action, not a thing' },
+    { es: '¿Consideras que deberíamos ir?', en: 'Do you think we should go?', register: 'formal' },
+    { es: '¿Tú qué piensas de lo de aumentar las ayudas al Tercer Mundo?', en: 'What do you think about increasing aid to the Third World?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¿Qué opinas del nuevo horario?', en: 'What do you think of the new schedule?', note: 'a thing — no subjunctive' },
+    { es: '¿Qué opinas de que hayan cambiado el horario?', en: 'What do you think about them changing the schedule?', note: 'an action via que — subjunctive' }
+  ],
+  pitfalls: [
+    'The subjunctive appears when <i>que</i> introduces an ACTION (usually someone else\'s), not when the object of opinion is a plain noun.',
+    '<i>Considerar</i> in this frame reads more formal than <i>pensar/opinar</i> — reserve it for more careful or written registers.'
+  ],
+  examples: [
+    { es: '¿Qué opinas de lo que ha pasado?', en: 'What do you think about what happened?' },
+    { es: '¿Consideráis que es buena idea?', en: 'Do you think it\'s a good idea?' },
+    { es: '¿Qué piensas de que se casen tan jóvenes?', en: 'What do you think about them getting married so young?' }
+  ],
+  probes: [
+    { id: 'p:pediropinionB2:modo', kind: 'mcq', q: '"¿Qué opinas de que ___ (decidir) abrir otra sucursal?"',
+      options: ['han decidido', 'hayan decidido', 'decidieron'], answer: 1 },
+    { id: 'p:pediropinionB2:registro', kind: 'mcq', q: '¿Cuál es más formal?',
+      options: ['¿Qué te parece?', '¿Consideras que...?', '¿Tú qué piensas?'], answer: 1 },
+    { id: 'p:pediropinionB2:cloze', kind: 'cloze', text: '¿Qué opinas ___ que hayan cambiado de opinión? (de)', accept: ['de'] },
+    { id: 'p:pediropinionB2:recall', kind: 'recall', front: '¿Cuándo lleva subjuntivo "qué opinas de que...?"?', back: 'cuando introduce la acción de otra persona' }
+  ]
+},
+
+{
+  id: 'fn-dar-opinion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:143', 'funciones:B2:144', 'funciones:B2:145', 'funciones:B2:146', 'funciones:B2:147', 'funciones:B2:148'],
+  title: 'Dar una opinión: a mi modo de ver, considero que, yo diría que',
+  summary: 'B2 grades the confidence of an opinion through its verb — "veo que" reports something you observe as near-fact, "yo diría que" hedges toward a guess — six frames on a spectrum from assertive to tentative, all before the actual content of the opinion.',
+  sections: [
+    { h: 'Assertive frames', html: '<i>Considero que, opino que</i> state a view fairly directly and are common in both speech and writing.' },
+    { h: 'Reporting what seems observed: veo que', html: '<i>Veo que vamos lentos, pero por buen camino</i> frames the opinion as an observation, close to fact.' },
+    { h: 'Hedging toward a guess: yo diría que', html: 'The most tentative of the frames — signals you are not fully certain, inviting disagreement more than the others.' },
+    { h: 'A mi modo de ver / según', html: '<i>A mi modo de ver</i> flags the view as explicitly personal; <i>según + [source]</i> attributes a view to someone else before you comment on it.' }
+  ],
+  exponents: [
+    { es: 'A mi modo de ver, la solución es evidente.', en: 'The way I see it, the solution is obvious.', register: 'formal' },
+    { es: 'Consideramos que deberían adoptarse medidas más eficaces.', en: 'We believe more effective measures should be adopted.', register: 'formal' },
+    { es: 'Veo que vamos lentos, pero por buen camino.', en: "I can see we're going slowly, but on the right track.", register: 'neutral' },
+    { es: 'Yo diría que esas medidas han sido realmente eficaces.', en: "I'd say those measures have been really effective.", register: 'coloquial', note: 'the most tentative frame' },
+    { es: 'Según los científicos, la vacuna no estará lista pronto.', en: 'According to scientists, the vaccine won\'t be ready soon.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Considero que es la mejor opción.', en: 'I consider it the best option.', note: 'assertive' },
+    { es: 'Yo diría que es la mejor opción.', en: "I'd say it's the best option.", note: 'hedged, more tentative, invites disagreement' }
+  ],
+  pitfalls: [
+    'These frames are not interchangeable in confidence level — opening a strong argument with <i>yo diría que</i> undersells your own claim.',
+    '<i>Según + [source]</i> attributes the view to someone ELSE — do not use it to introduce your own opinion, which is what <i>a mi modo de ver</i> is for.'
+  ],
+  examples: [
+    { es: 'A mi modo de ver, el proyecto necesita más tiempo.', en: 'The way I see it, the project needs more time.' },
+    { es: 'Nosotros opinamos que el sistema debe mejorar.', en: 'We think the system needs to improve.' },
+    { es: 'No creo que sea tan sencillo como parece.', en: "I don't think it's as simple as it looks." }
+  ],
+  probes: [
+    { id: 'p:daropinionB2:tentativo', kind: 'mcq', q: '¿Cuál es la frase MÁS tentativa/menos segura?',
+      options: ['Considero que...', 'Yo diría que...', 'Opino que...'], answer: 1 },
+    { id: 'p:daropinionB2:atribucion', kind: 'mcq', q: '¿Cuál atribuye la opinión a OTRA persona/fuente?',
+      options: ['A mi modo de ver...', 'Según los expertos...', 'Yo opino que...'], answer: 1 },
+    { id: 'p:daropinionB2:cloze', kind: 'cloze', text: 'A mi modo de ___, la decisión fue correcta. (ver)', accept: ['ver'] },
+    { id: 'p:daropinionB2:recall', kind: 'recall', front: '¿Qué frase reporta una opinión como si fuera casi una observación de hecho?', back: 'veo que...' }
+  ]
+},
+
+{
+  id: 'fn-pedir-valoracion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:161', 'funciones:B2:162', 'funciones:B2:165', 'funciones:B2:168', 'funciones:B2:171', 'funciones:B2:172', 'funciones:B2:174'],
+  title: 'Pedir valoración: ¿qué tal estuvo?, ¿cómo lo ves?',
+  summary: 'Asking how something WENT (¿qué tal estuvo?) is a different question from asking for an opinion on a future or hypothetical action (¿qué te parecería que...?), and both differ again from "¿cómo lo ves?", which asks specifically for a personal read on a situation.',
+  sections: [
+    { h: '¿Qué tal/Cómo + estuvo/fue/ha ido?', html: 'Asks how a past event went: <i>¿Qué tal estuvo la reunión?</i>, <i>¿Cómo ha ido la excursión?</i>' },
+    { h: '¿Qué te parecería que + subjuntivo?', html: 'Asks for a reaction to a hypothetical or proposed action: <i>¿Qué te parecería que nos fuéramos a vivir a Costa Rica?</i>' },
+    { h: '¿Cómo lo ves?', html: 'Asks specifically for a personal read/take on a situation, more informal than <i>¿qué opinas?</i>: <i>¿Tú cómo lo ves?</i>' }
+  ],
+  exponents: [
+    { es: '¿Qué tal estuvo la reunión?', en: 'How was the meeting?', register: 'coloquial' },
+    { es: '¿Qué le parecería que dedicáramos más tiempo a esta oferta?', en: 'How would you feel about us devoting more time to this offer?', register: 'formal', note: 'hypothetical action — subjunctive; usted form' },
+    { es: '¿Te parece bien lo de comer fuera?', en: 'Are you okay with eating out?', register: 'coloquial' },
+    { es: '¿Cómo lo ves? Dicen que van a contratar a Marta.', en: 'What do you make of it? They say they\'re going to hire Marta.', register: 'coloquial' },
+    { es: '¿Cómo ven lo de que hayan retrasado la firma?', en: 'What do you make of them delaying the signing?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¿Qué tal estuvo la reunión?', en: 'How was the meeting?', note: 'asks about something already past' },
+    { es: '¿Qué te parecería que cambiáramos de reunión?', en: 'How would you feel if we changed the meeting?', note: 'asks about a hypothetical/proposed action' }
+  ],
+  pitfalls: [
+    '<i>¿Qué tal estuvo?</i> asks about something FINISHED — using it for a hypothetical proposal is the wrong tense/frame; that needs <i>¿qué te parecería que...?</i>',
+    '<i>¿Cómo lo ves?</i> is markedly informal — in a formal report or meeting, <i>¿qué opina usted?</i> fits better.'
+  ],
+  examples: [
+    { es: '¿Cómo fue lo de la reunión de ayer?', en: 'How did yesterday\'s meeting go?' },
+    { es: '¿Te parecería una mala idea que no anunciáramos la visita?', en: 'Would it seem like a bad idea to you if we didn\'t announce the visit?' },
+    { es: '¿Qué le parece a usted el nuevo plan?', en: 'What do you think of the new plan?' }
+  ],
+  probes: [
+    { id: 'p:pedirvalorB2:pasado', kind: 'mcq', q: '¿Cuál pregunta por algo ya TERMINADO?',
+      options: ['¿Qué tal estuvo la excursión?', '¿Qué te parecería que fuéramos?', 'Ambas'], answer: 0 },
+    { id: 'p:pedirvalorB2:modo', kind: 'mcq', q: '"¿Qué te parecería que ___ (mudarnos) de ciudad?"',
+      options: ['nos mudamos', 'nos mudáramos', 'nos mudaremos'], answer: 1 },
+    { id: 'p:pedirvalorB2:cloze', kind: 'cloze', text: '¿Cómo lo ___? (ver, tú)', accept: ['ves'] },
+    { id: 'p:pedirvalorB2:recall', kind: 'recall', front: '¿Qué frase pide una opinión sobre algo ya pasado?', back: '¿qué tal estuvo/fue...?' }
+  ]
+},
+
+{
+  id: 'fn-valorar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:190', 'funciones:B2:191', 'funciones:B2:192', 'funciones:B2:193', 'funciones:B2:194'],
+  title: 'Valorar: lo veo/lo encuentro + adjetivo',
+  summary: '"Lo veo/lo encuentro + adjective" evaluates something already mentioned without repeating it, and the fuller frame "es/me parece/me resulta + adjective + que + subjuntivo" is the single most productive B2 evaluation pattern, accepting six different verbs before the same subjunctive clause.',
+  sections: [
+    { h: 'Lo veo / lo encuentro + adjetivo', html: 'A compact way to evaluate something already named: <i>Lo encuentro una estupidez</i>, <i>Lo veo un problema</i> — "lo" stands in for the thing.' },
+    { h: 'Es/me parece/veo/encuentro/considero/me resulta + que + subjuntivo', html: 'Six near-synonymous verbs all take the same shape when what follows is someone else\'s action: <i>Me parecería muy bien que aprovecharas esa oportunidad.</i>' },
+    { h: 'Salió/fue/ha ido + adverb', html: 'For reporting how an event turned out: <i>La operación ha ido muy bien</i>, <i>La parte teórica le salió fatal.</i>' }
+  ],
+  exponents: [
+    { es: 'La operación ha ido muy bien.', en: 'The operation went very well.', register: 'neutral' },
+    { es: 'Lo encuentro una estupidez, la verdad.', en: "I find it a stupid idea, honestly.", register: 'coloquial' },
+    { es: 'Es una suerte que te hayan dado esa oportunidad.', en: "It's lucky they gave you that opportunity.", register: 'neutral' },
+    { es: 'Que esa empresa haya crecido tan rápido nos resulta sospechoso.', en: "That company having grown so fast strikes us as suspicious.", register: 'formal' },
+    { es: 'Me parece excelente lo del cambio de imagen.', en: "I think the rebranding is excellent.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Lo veo normal.', en: 'I see it as normal.', note: 'compact — "lo" stands in for a thing already named' },
+    { es: 'Me parece normal que se enfaden.', en: "I think it's normal for them to be upset.", note: 'fuller frame + que + subjuntivo for someone else\'s action' }
+  ],
+  pitfalls: [
+    'All six verbs (<i>ser, parecer, ver, encontrar, considerar, resultar</i>) share the SAME grammar in this frame — do not treat any as an exception needing a different construction.',
+    '<i>Lo encuentro/lo veo</i> needs an antecedent already established — do not open a conversation with it with nothing for "lo" to refer to.'
+  ],
+  examples: [
+    { es: 'La parte teórica le salió fatal, pero aprobó igual.', en: 'The theory part went terribly for him, but he passed anyway.' },
+    { es: 'Todavía no quieren hacer pública la noticia, lo encuentro normal.', en: "They still don't want to make the news public, I find that normal." },
+    { es: 'Nos parece un error que no lo hayan consultado antes.', en: 'We think it\'s a mistake that they didn\'t consult about it beforehand.' }
+  ],
+  probes: [
+    { id: 'p:valorarB2:seisverbos', kind: 'mcq', q: '¿Cuál de estos NO comparte la misma estructura que los demás?',
+      options: ['me parece que', 'me resulta que', 'me gusta que'], answer: 2 },
+    { id: 'p:valorarB2:modo', kind: 'mcq', q: '"Me parecería muy bien que ___ (aprovechar) esa oportunidad."',
+      options: ['aprovechas', 'aprovecharas', 'aprovecharás'], answer: 1 },
+    { id: 'p:valorarB2:cloze', kind: 'cloze', text: 'Lo ___ una estupidez. (encontrar)', accept: ['encuentro'] },
+    { id: 'p:valorarB2:recall', kind: 'recall', front: '¿Cuántos verbos comparten la estructura "___ + que + subjuntivo" para valorar?', back: 'seis: ser, parecer, ver, encontrar, considerar, resultar' }
+  ]
+},
+
+{
+  id: 'fn-aprobacion-desaprobacion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:217', 'funciones:B2:218', 'funciones:B2:219', 'funciones:B2:220'],
+  title: 'Expresar aprobación y desaprobación: no deberías haberlo hecho',
+  summary: 'B2\'s disapproval reaches into the past with the compound conditional — "no deberías haberlo hecho" judges an action already finished, which the simple "no deberías hacerlo" cannot do since it still points at the future.',
+  sections: [
+    { h: 'Me parece / está + adjective + que', html: '<i>Nos pareció fatal que te fueras así</i>, <i>Estuvo fatal que no te disculparas</i> — both need <i>que</i> + subjunctive since they evaluate someone\'s past action.' },
+    { h: '¡Qué mal/bien...!', html: 'The exclamatory register reacts to news with immediate approval or disapproval: <i>¡Qué mal lo de Rita!</i>' },
+    { h: 'No deberías/tendrías que + infinitivo compuesto', html: 'Disapproval of a FINISHED action needs the compound infinitive: <i>No deberías haberlo hecho</i> — the simple infinitive would misleadingly point at the future.' }
+  ],
+  exponents: [
+    { es: 'Nos pareció fatal que te fueras así, sin avisar.', en: 'We thought it was terrible that you left like that, without warning.', register: 'neutral' },
+    { es: '¡Qué mal que no fueras! ¡Qué vergüenza!', en: "How awful that you didn't go! What a shame!", register: 'coloquial' },
+    { es: 'No deberías haberlo hecho sin consultarnos.', en: "You shouldn't have done it without consulting us.", register: 'neutral' },
+    { es: 'Estuvo fatal que no te disculparas después de la pelea.', en: 'It was awful that you didn\'t apologize after the fight.', register: 'neutral' },
+    { es: 'No tendríais que haber dicho nada.', en: "You (all) shouldn't have said anything.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'No deberías hacerlo.', en: "You shouldn't do it.", note: 'simple infinitive — points at the future, advice not yet acted on' },
+    { es: 'No deberías haberlo hecho.', en: "You shouldn't have done it.", note: 'compound infinitive — judges an action already finished' }
+  ],
+  pitfalls: [
+    'Using the simple infinitive (<i>no deberías hacerlo</i>) to disapprove of something ALREADY DONE is a common error — the compound form (<i>haberlo hecho</i>) is what marks the action as past.',
+    'The exclamatory <i>¡Qué mal/bien...!</i> reacts to news in the moment — it is more emotionally immediate than the flatter <i>me pareció mal que...</i>'
+  ],
+  examples: [
+    { es: '¡Qué bien que por fin te hayan ascendido!', en: "How great that they've finally promoted you!" },
+    { es: 'No tendrías que haberle hablado así.', en: "You shouldn't have talked to him like that." },
+    { es: 'Está fatal que no le hayan avisado a tiempo.', en: "It's awful that they didn't warn him in time." }
+  ],
+  probes: [
+    { id: 'p:aprobdesaprobB2:compuesto', kind: 'mcq', q: '¿Cuál desaprueba una acción YA TERMINADA correctamente?',
+      options: ['No deberías hacerlo.', 'No deberías haberlo hecho.', 'No debes hacerlo.'], answer: 1 },
+    { id: 'p:aprobdesaprobB2:modo', kind: 'mcq', q: '"Nos pareció fatal que te ___ (ir) así."',
+      options: ['fuiste', 'fueras', 'irás'], answer: 1 },
+    { id: 'p:aprobdesaprobB2:cloze', kind: 'cloze', text: 'No deberías haberlo ___. (hacer, participio)', accept: ['hecho'] },
+    { id: 'p:aprobdesaprobB2:recall', kind: 'recall', front: '¿Qué forma verbal marca que la desaprobación es sobre una acción PASADA?', back: 'el infinitivo compuesto (haberlo hecho)' }
+  ]
+},
+
+{
+  id: 'fn-escepticismo-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:333', 'funciones:B2:334', 'funciones:B2:335', 'funciones:B2:336', 'funciones:B2:337', 'funciones:B2:338'],
+  title: 'Mostrar escepticismo: si tú lo dices, no lo veo tan claro',
+  summary: '"Si tú lo dices" is a masterclass in polite doubt — it grammatically agrees with nothing while visibly withholding belief, letting the speaker avoid an open confrontation while still making the skepticism unmistakable.',
+  sections: [
+    { h: 'Ya: minimal acknowledgment, maximal doubt', html: 'A bare <i>Ya</i> in response to a claim acknowledges you heard it while implying you do not fully buy it, especially followed by a deflating comment.' },
+    { h: 'Si tú lo dices: refusing to co-sign', html: 'This hands responsibility for the claim entirely back to the speaker — it neither confirms nor denies, which IS the skepticism.' },
+    { h: 'No lo veo (tan) claro / lo dudo', html: 'More direct expressions of doubt, still softer than an outright "no lo creo".' }
+  ],
+  exponents: [
+    { es: '-Me han dicho que van a subirnos el sueldo. -Ya. A mí también me lo dijeron el año pasado.', en: '-They told me we\'re getting a raise. -Right. They told me that last year too.', register: 'coloquial', note: 'ya — minimal, deflating acknowledgment' },
+    { es: '-Juanma está estudiando mucho más. -Si tú lo dices.', en: '-Juanma is studying a lot more. -If you say so.', register: 'coloquial', note: 'hands responsibility back, neither confirms nor denies' },
+    { es: 'Bueno, yo no lo veo tan claro.', en: "Well, I'm not so sure.", register: 'neutral' },
+    { es: 'Eso es bastante dudoso.', en: "That's quite doubtful.", register: 'formal' },
+    { es: 'Yo lo dudo, la verdad.', en: 'I doubt it, honestly.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'No lo creo.', en: "I don't believe it.", note: 'direct disbelief' },
+    { es: 'Si tú lo dices.', en: 'If you say so.', note: 'withholds belief without directly contradicting' }
+  ],
+  pitfalls: [
+    '<i>Si tú lo dices</i> is not agreement — it is a polite way of NOT agreeing while avoiding open conflict; treating it as confirmation misreads the tone.',
+    'A bare <i>Ya</i> can be neutral acknowledgment OR skeptical, depending entirely on tone and what follows — context (and here, a deflating follow-up) is what marks it skeptical.'
+  ],
+  examples: [
+    { es: 'Bueno, según se mire. Los demás tampoco colaboraron mucho.', en: 'Well, depends how you look at it. The others didn\'t help much either.' },
+    { es: 'No sé, yo lo veo bastante dudoso.', en: "I don't know, I find it pretty doubtful." },
+    { es: '-Va a llegar a tiempo. -Si tú lo dices.', en: "-He'll arrive on time. -If you say so." }
+  ],
+  probes: [
+    { id: 'p:escepticismoB2:situdices', kind: 'mcq', q: '"Si tú lo dices" ¿es una confirmación?',
+      options: ['Sí, plena', 'No, evita confirmar sin contradecir abiertamente', 'Es una pregunta'], answer: 1 },
+    { id: 'p:escepticismoB2:ya', kind: 'mcq', q: '¿Puede "Ya" sonar escéptico?',
+      options: ['Nunca', 'Sí, según el tono y lo que sigue', 'Solo por escrito'], answer: 1 },
+    { id: 'p:escepticismoB2:cloze', kind: 'cloze', text: 'Yo no lo veo tan ___. (claro)', accept: ['claro'] },
+    { id: 'p:escepticismoB2:recall', kind: 'recall', front: '¿Qué hace "si tú lo dices" con la responsabilidad de la afirmación?', back: 'se la devuelve enteramente al hablante original' }
+  ]
+},
+
+{
+  id: 'fn-contraargumento-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:343', 'funciones:B2:344', 'funciones:B2:345', 'funciones:B2:346', 'funciones:B2:347', 'funciones:B2:348', 'funciones:B2:349'],
+  title: 'Presentar un contraargumento: sí, pero...',
+  summary: 'Every counter-argument frame here does the same two-step move — concede a point, THEN pivot with "pero" — and the choice of concession ("puede que tengas razón" vs "no dudo que...") signals exactly how much ground you are giving up before you take it back.',
+  sections: [
+    { h: 'Small concessions: bueno/ya, de acuerdo + pero', html: 'The lightest concessions, barely pausing before the pivot: <i>Ya, pero exigen saber tres idiomas.</i>' },
+    { h: 'Conceding the other person might be right', html: '<i>Puede que tengas razón, pero...</i> concedes more explicitly before pivoting — a stronger acknowledgment than a bare "ya".' },
+    { h: 'No dudo que..., pero / no obstante...', html: 'The most formal concession, explicitly stating you do not doubt the premise before introducing the objection.' },
+    { h: 'Sí, pero al mismo tiempo...', html: 'Rather than opposing, this adds a second consideration that complicates the first: not a flat contradiction, but a "yes, and also".' }
+  ],
+  exponents: [
+    { es: 'Ya, pero exigen saber tres idiomas y yo solo hablo dos.', en: 'Right, but they require three languages and I only speak two.', register: 'coloquial' },
+    { es: 'De acuerdo, pero también hay que pensar en el dinero.', en: 'Agreed, but we also have to think about the money.', register: 'neutral' },
+    { es: 'Puede que tengas razón, pero no me apetece.', en: "You might be right, but I don't feel like it.", register: 'coloquial' },
+    { es: 'No dudo que la mayoría estén contentos, pero mi experiencia ha sido horrorosa.', en: "I don't doubt most people are happy, but my experience has been terrible.", register: 'formal' },
+    { es: 'Sí, tenemos que protestar, pero al mismo tiempo hay que proponer una alternativa.', en: 'Yes, we have to protest, but at the same time we need to propose an alternative.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Ya, pero...', en: 'Right, but...', note: 'a minimal, almost automatic concession' },
+    { es: 'No dudo que tengas razón, pero...', en: "I don't doubt you're right, but...", note: 'a fuller, more formal concession before the pivot' }
+  ],
+  pitfalls: [
+    'Skipping the concession and going straight to <i>pero</i> reads as more combative — the concession is what makes these frames diplomatic, not decorative.',
+    '<i>Sí, pero al mismo tiempo...</i> is not a contradiction — it adds a second, complicating consideration rather than opposing the first claim.'
+  ],
+  examples: [
+    { es: 'Puede que no tengan razón, pero está claro que se quieren.', en: "They might not be right, but it's clear they love each other." },
+    { es: 'Sí, pero no se puede olvidar que él también le trató mal.', en: "Yes, but we can't forget that he treated her badly too." },
+    { es: 'Bueno, pero exigen mucha experiencia previa.', en: 'Well, but they require a lot of prior experience.' }
+  ],
+  probes: [
+    { id: 'p:contraargumentoB2:estructura', kind: 'mcq', q: '¿Qué estructura común comparten todas estas frases?',
+      options: ['Negar directamente', 'Conceder primero, luego pivotar con "pero"', 'Cambiar de tema'], answer: 1 },
+    { id: 'p:contraargumentoB2:formal', kind: 'mcq', q: '¿Cuál es la concesión MÁS formal?',
+      options: ['Ya, pero...', 'No dudo que..., pero...', 'Bueno, pero...'], answer: 1 },
+    { id: 'p:contraargumentoB2:cloze', kind: 'cloze', text: 'Puede que ___ (tener) razón, pero no me convence. (tú)', accept: ['tengas'] },
+    { id: 'p:contraargumentoB2:recall', kind: 'recall', front: '¿Qué logra conceder antes de contraargumentar?', back: 'suaviza el desacuerdo, lo hace menos confrontativo' }
+  ]
+},
+
+{
+  id: 'fn-falta-certeza-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:387', 'funciones:B2:388', 'funciones:B2:389', 'funciones:B2:391', 'funciones:B2:392', 'funciones:B2:393'],
+  title: 'Expresar falta de certeza y evidencia: tengo mis dudas sobre',
+  summary: '"Tengo la sensación/impresión de que" reports a hunch with no evidence claimed at all, distinct from "tengo mis dudas sobre", which specifically flags doubt about a particular claim rather than offering an alternative guess.',
+  sections: [
+    { h: 'No estoy (del todo) seguro/convencido de que + subjuntivo', html: 'The direct way to flag uncertainty about a specific claim: <i>No estoy del todo seguro de que oyeran el timbre.</i>' },
+    { h: 'Impressions with no claimed evidence', html: '<i>Tengo la sensación/impresión de que...</i> reports a hunch, explicitly NOT based on evidence.' },
+    { h: 'Doubt about a specific matter', html: '<i>Tengo (mis) dudas sobre/acerca de...</i> flags doubt about one particular thing, not a general uncertain feeling.' },
+    { h: 'Softening with a parenthetical: supongo, imagino', html: 'Adding <i>supongo, imagino, digo yo</i> after a statement softens its certainty after the fact: <i>Tendremos el trabajo el martes, supongo.</i>' }
+  ],
+  exponents: [
+    { es: 'No estoy del todo seguro de que oyeran el timbre.', en: "I'm not entirely sure they heard the doorbell.", register: 'neutral' },
+    { es: 'Tengo la impresión de que la reunión va a ser tensa.', en: 'I have the impression the meeting is going to be tense.', register: 'neutral' },
+    { es: 'Tengo mis dudas sobre el resultado de la votación.', en: 'I have my doubts about the outcome of the vote.', register: 'neutral' },
+    { es: 'Tendremos terminado el trabajo el martes, supongo.', en: "We'll have the work finished by Tuesday, I suppose.", register: 'coloquial' },
+    { es: 'Es dudoso que esa vacuna sea eficaz en todos los pacientes.', en: "It's doubtful that vaccine is effective in all patients.", register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Tengo la impresión de que no vendrá.', en: 'I have the feeling he won\'t come.', note: 'a hunch, no evidence claimed' },
+    { es: 'Tengo mis dudas sobre si vendrá.', en: "I have my doubts about whether he'll come.", note: 'doubt about one specific matter' }
+  ],
+  pitfalls: [
+    '<i>Tengo la sensación/impresión de que</i> explicitly disclaims evidence — do not use it to introduce a claim you actually want to argue for with reasons.',
+    'A trailing <i>supongo/imagino</i> softens a whole preceding statement — placing it mid-sentence changes what exactly is being hedged.'
+  ],
+  examples: [
+    { es: 'No estamos del todo convencidos de que sea el candidato ideal.', en: "We're not entirely convinced he's the ideal candidate." },
+    { es: 'Imagino que sabe lo que hace.', en: 'I imagine he knows what he\'s doing.' },
+    { es: 'Yo diría que ayer la vi en la facultad.', en: "I'd say I saw her at the university yesterday." }
+  ],
+  probes: [
+    { id: 'p:faltacertezaB2:evidencia', kind: 'mcq', q: '¿Qué frase declara EXPLÍCITAMENTE que no hay evidencia?',
+      options: ['Tengo mis dudas sobre esto.', 'Tengo la impresión de que...', 'No estoy seguro de que...'], answer: 1 },
+    { id: 'p:faltacertezaB2:modo', kind: 'mcq', q: '"No estoy seguro de que ___ (oír) el timbre."',
+      options: ['oyeron', 'oyeran', 'oirán'], answer: 1 },
+    { id: 'p:faltacertezaB2:cloze', kind: 'cloze', text: 'Tengo mis ___ sobre el resultado. (dudas)', accept: ['dudas'] },
+    { id: 'p:faltacertezaB2:recall', kind: 'recall', front: '¿Qué hace un "supongo" al final de una frase?', back: 'suaviza/matiza la certeza de todo lo dicho antes' }
+  ]
+},
+
+{
+  id: 'fn-posibilidad-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:406', 'funciones:B2:407', 'funciones:B2:409', 'funciones:B2:411', 'funciones:B2:412', 'funciones:B2:413',
+         'funciones:B2:416', 'funciones:B2:417', 'funciones:B2:418', 'funciones:B2:419'],
+  title: 'Expresar posibilidad: el futuro y condicional de conjetura',
+  summary: 'B2 extends B1\'s possibility system with the compound future and the conditional both used for CONJECTURE about the past — "se habrá caído de la moto" guesses at a past event with the same confidence a plain statement would carry, no possibility word needed at all.',
+  sections: [
+    { h: 'Hay probabilidades de que / lo más probable es que', html: 'Two ways to frame likelihood explicitly, both requiring the subjunctive: <i>Hay muchas probabilidades de que eso suceda</i>, <i>Lo más probable es que se haya escapado.</i>' },
+    { h: 'Deber de / tener que + infinitivo: near-certain conjecture', html: '<i>Debe de estar al otro lado de la carretera</i> and <i>tiene que estar por aquí</i> both guess with high confidence, though grammatically simple present.' },
+    { h: 'Compound future for conjecture about the recent past', html: '<i>Se habrá caído de la moto</i> guesses at something already finished, using the FUTURE PERFECT — no possibility word needed; the tense itself carries the conjecture.' },
+    { h: 'Conditional for conjecture about a more distant past', html: '<i>Pues no te vería, es un poco miope</i> guesses at a past event using the plain conditional.' }
+  ],
+  exponents: [
+    { es: 'Hay muchas probabilidades de que eso suceda.', en: 'There\'s a good chance that will happen.', register: 'formal' },
+    { es: 'Debe de estar al otro lado de la carretera.', en: "It must be on the other side of the road.", register: 'neutral' },
+    { es: 'Esta tarde he visto a Lucía con una pierna escayolada... Se habrá caído de la moto.', en: 'I saw Lucía this afternoon with her leg in a cast... She must have fallen off her bike.', register: 'coloquial', note: 'future perfect — conjecture about the recent past' },
+    { es: 'No me saludó... pues no te vería, es un poco miope.', en: "She didn't say hi... well, she probably didn't see you, she's a bit short-sighted.", register: 'coloquial', note: 'conditional — conjecture about the past' },
+    { es: 'Lo más seguro es que a esas horas estuviera viendo el partido.', en: 'Most likely he was watching the match at that time.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Se ha caído de la moto.', en: 'He fell off his bike.', note: 'a stated fact' },
+    { es: 'Se habrá caído de la moto.', en: 'He must have fallen off his bike.', note: 'future perfect — a guess about a past event, no possibility word needed' }
+  ],
+  pitfalls: [
+    'The future/conditional of conjecture needs NO possibility word (<i>quizás, tal vez</i>) — the tense itself signals it is a guess; adding one is redundant, though heard colloquially.',
+    '<i>Debe de</i> (conjecture) and <i>debe</i> (obligation, no "de") are distinguished by that one preposition — a common, gate-checkable slip.'
+  ],
+  examples: [
+    { es: 'Es improbable que se produzcan avances este año.', en: "It's unlikely there will be progress this year." },
+    { es: 'Seguramente estaría hablando por teléfono cuando llamaste.', en: 'He was probably on the phone when you called.' },
+    { es: '¿La gasolinera? Debe de estar cerca.', en: 'The gas station? It must be nearby.' }
+  ],
+  probes: [
+    { id: 'p:posibilidadB2:futuroperfecto', kind: 'mcq', q: '¿Qué tiempo expresa conjetura sobre el pasado reciente, sin palabra de posibilidad?',
+      options: ['presente', 'futuro perfecto', 'pretérito'], answer: 1 },
+    { id: 'p:posibilidadB2:deberde', kind: 'mcq', q: '¿Cuál expresa conjetura, no obligación?',
+      options: ['Debe estudiar más.', 'Debe de estar en casa.', 'Ambas por igual'], answer: 1 },
+    { id: 'p:posibilidadB2:cloze', kind: 'cloze', text: 'No contesta... se ___ (habrá) dormido. (dormir, conjetura)', accept: ['habrá dormido'] },
+    { id: 'p:posibilidadB2:recall', kind: 'recall', front: '¿Necesita el futuro de conjetura una palabra de posibilidad como "quizás"?', back: 'no — el propio tiempo verbal ya marca la conjetura' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-conocimiento-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:441', 'funciones:B2:442', 'funciones:B2:443', 'funciones:B2:444', 'funciones:B2:445', 'funciones:B2:446'],
+  title: 'Preguntar por el conocimiento: ¿te has enterado de que...?',
+  summary: '"¿Te has enterado de que...?" assumes the listener might NOT know yet and is often the opener for delivering news, while "sabes que..., imagino" assumes they probably DO know — the same topic, two different assumptions about the listener baked into the question itself.',
+  sections: [
+    { h: 'Assuming ignorance: ¿te has enterado de/has oído algo de?', html: 'These assume the listener may not know yet, often used to introduce news: <i>¿No os habéis enterado de que se ha muerto el Presidente?</i>' },
+    { h: 'Assuming knowledge: sabes que..., imagino', html: 'A trailing <i>imagino/supongo</i> after a statement assumes the listener already knows: <i>Sabes que tenemos una reunión en cinco minutos, imagino.</i>' },
+    { h: '¿Qué sabes de + SN? / ¿Estás informado de...?', html: 'Direct requests for what someone knows, the second more formal, appropriate in professional contexts.' }
+  ],
+  exponents: [
+    { es: '¿No os habéis enterado de que se ha muerto el Presidente?', en: "Haven't you heard that the President has died?", register: 'coloquial' },
+    { es: '¿Has oído algo de lo del cambio de edificio?', en: 'Have you heard anything about the building change?', register: 'coloquial' },
+    { es: 'Sabes que tenemos una reunión en cinco minutos, imagino.', en: 'You know we have a meeting in five minutes, I imagine.', register: 'neutral' },
+    { es: '¿Está usted informado de los servicios que ofrecemos?', en: 'Are you informed about the services we offer?', register: 'formal' },
+    { es: '¿Tienes nociones de programación?', en: 'Do you have any knowledge of programming?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¿Te has enterado de la noticia?', en: 'Have you heard the news?', note: 'assumes the listener might not know — good opener for delivering news' },
+    { es: 'Sabes lo de la noticia, imagino.', en: 'You know about the news, I imagine.', note: 'assumes the listener probably already knows' }
+  ],
+  pitfalls: [
+    'Opening with <i>¿te has enterado de...?</i> when the listener clearly already knows can sound like you doubt their awareness — match the assumption to what you actually believe they know.',
+    '<i>¿Estás informado de...?</i> is notably more formal/institutional than <i>¿has oído algo de...?</i> — mixing registers here reads oddly.'
+  ],
+  examples: [
+    { es: '¿Qué sabéis de María? Hace tiempo que no la veo.', en: "What do you know about María? I haven't seen her in a while." },
+    { es: 'No conoces a Nicolás García, supongo.', en: "You don't know Nicolás García, I suppose." },
+    { es: '¿Tiene usted conocimientos sobre cómo hacer su propia página web?', en: 'Do you have knowledge of how to make your own website?' }
+  ],
+  probes: [
+    { id: 'p:pregconocimientoB2:asuncion', kind: 'mcq', q: '¿Qué asume "¿te has enterado de que...?"',
+      options: ['Que el oyente ya lo sabe', 'Que el oyente quizás no lo sabe', 'Nada en particular'], answer: 1 },
+    { id: 'p:pregconocimientoB2:formal', kind: 'mcq', q: '¿Cuál es más FORMAL?',
+      options: ['¿Has oído algo de eso?', '¿Está informado de nuestros servicios?', '¿Sabes algo de eso?'], answer: 1 },
+    { id: 'p:pregconocimientoB2:cloze', kind: 'cloze', text: 'Sabes lo de la reunión, ___. (imagino)', accept: ['imagino'] },
+    { id: 'p:pregconocimientoB2:recall', kind: 'recall', front: '¿Qué asume una pregunta seguida de "..., imagino"?', back: 'que el oyente probablemente ya lo sabe' }
+  ]
+},
+
+{
+  id: 'fn-conocimiento-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:455', 'funciones:B2:456', 'funciones:B2:458', 'funciones:B2:459', 'funciones:B2:460', 'funciones:B2:461'],
+  title: 'Expresar conocimiento: me he enterado de que...',
+  summary: '"Enterarse" marks the specific MOMENT knowledge arrived — often by chance or through a particular channel — which is why it dominates this function, distinct from "saber", which is the resulting state with no story attached to how you got there.',
+  sections: [
+    { h: 'Enterarse de + SN/que', html: 'The key verb here: <i>Me enteré de la noticia</i>, <i>Se enteró el sábado de que su hijo tenía novia</i> — always the MOMENT of finding out.' },
+    { h: 'Ya me he/había enterado', html: 'Confirms you already know, often anticipating and forestalling someone about to tell you news.' },
+    { h: 'Estoy informado de', html: 'More formal, institutional: <i>Estamos informados de que se está negociando la compra.</i>' },
+    { h: 'Tengo nociones/conocimientos de', html: 'States a modest, non-expert level of knowledge on a topic.' }
+  ],
+  exponents: [
+    { es: 'Me enteré de la noticia por un amigo.', en: 'I found out about the news from a friend.', register: 'coloquial' },
+    { es: 'Se enteró el sábado de que su hijo tenía novia.', en: 'He found out on Saturday that his son had a girlfriend.', register: 'neutral' },
+    { es: 'Ya me había enterado, gracias.', en: "I'd already heard, thanks.", register: 'coloquial' },
+    { es: 'Estamos informados de que se está negociando la compra.', en: "We're aware that the purchase is being negotiated.", register: 'formal' },
+    { es: 'Tiene nociones de programación, aunque no es un experto.', en: 'He has some knowledge of programming, though he\'s no expert.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Sé que se casó el año pasado.', en: 'I know he got married last year.', note: 'saber — the resulting state, no story of arrival' },
+    { es: 'Me enteré de que se había casado.', en: 'I found out he had gotten married.', note: 'enterarse — the specific moment/event of finding out' }
+  ],
+  pitfalls: [
+    '<i>Enterarse</i> always implies a MOMENT and often a channel (by chance, through someone) — do not use it as a plain substitute for <i>saber</i>, which carries no such story.',
+    '<i>Ya me había enterado</i> (pluperfect) vs <i>ya me he enterado</i> (present perfect) differ in whether the finding-out happened before another past reference point or is simply recent — choose based on the timeline.'
+  ],
+  examples: [
+    { es: 'Todos nos enteramos muy rápido de la noticia.', en: 'We all found out about the news very quickly.' },
+    { es: 'Nos enteramos el otro día de que se mudaban.', en: 'We found out the other day that they were moving.' },
+    { es: 'Estoy informado de todos los detalles del contrato.', en: "I'm informed of all the details of the contract." }
+  ],
+  probes: [
+    { id: 'p:conocimientoB2:enterarsevssaber', kind: 'mcq', q: '¿Qué añade "enterarse" que "saber" no añade?',
+      options: ['Nada', 'El momento/la forma en que se supo algo', 'Formalidad'], answer: 1 },
+    { id: 'p:conocimientoB2:formal', kind: 'mcq', q: '¿Cuál es más formal/institucional?',
+      options: ['Me enteré ayer.', 'Estamos informados de que...', 'Ya lo sabía.'], answer: 1 },
+    { id: 'p:conocimientoB2:cloze', kind: 'cloze', text: 'Me ___ de la noticia por casualidad. (enterar)', accept: ['enteré'] },
+    { id: 'p:conocimientoB2:recall', kind: 'recall', front: '¿Qué marca "enterarse" que "saber" no marca?', back: 'el momento específico en que se adquirió el conocimiento' }
+  ]
+},
+
+{
+  id: 'fn-habilidad-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:489', 'funciones:B2:490', 'funciones:B2:491', 'funciones:B2:492', 'funciones:B2:493'],
+  title: 'Expresar habilidad: negado para, se me da bien, tener facilidad',
+  summary: '"Ser un negado para" is the vivid, self-deprecating opposite of talent — a fixed idiom, not a literal claim of negation — while "se me da bien/mal" keeps the gustar-pattern already met for aptitude, this time specifically for skill rather than general liking.',
+  sections: [
+    { h: 'Soy (in)capaz de + infinitivo', html: 'States the ability (or inability) to do a specific thing: <i>Es incapaz de tomar una decisión.</i>' },
+    { h: 'Ser un negado para/con: vivid self-deprecation', html: 'A colorful fixed idiom for complete lack of skill: <i>Soy un negado para los idiomas</i> — much more vivid than a plain "no se me dan bien".' },
+    { h: 'Tener facilidad para / se me da bien', html: '<i>Tener facilidad para</i> and <i>dársele bien</i> (gustar-pattern) both describe natural aptitude, near-interchangeable.' },
+    { h: 'Softened self-praise: no soy nada malo, no hago (nada) mal', html: 'A modest way to claim competence without sounding boastful: <i>No hago del todo mal las tartas de queso.</i>' }
+  ],
+  exponents: [
+    { es: 'Ha sido capaz de terminar el crucigrama en diez minutos.', en: 'He managed to finish the crossword in ten minutes.', register: 'neutral' },
+    { es: 'Soy un negado para los idiomas.', en: "I'm hopeless at languages.", register: 'coloquial' },
+    { es: 'Tienen mucha facilidad para enseñar.', en: 'They have a real knack for teaching.', register: 'neutral' },
+    { es: 'No se me da mal escribir, pero me falta imaginación.', en: "I'm not bad at writing, but I lack imagination.", register: 'coloquial' },
+    { es: 'Dicen que no soy nada malo contando chistes.', en: "They say I'm not bad at all at telling jokes.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Soy un negado con la pelota.', en: "I'm hopeless with a ball.", note: 'vivid, fixed idiom' },
+    { es: 'No se me da bien el deporte.', en: "I'm not good at sports.", note: 'the same idea, plainer, gustar-pattern' }
+  ],
+  pitfalls: [
+    '<i>Negado</i> here is a fixed idiom (hopeless/useless AT something), not a literal claim about denying or refusing — do not read it compositionally.',
+    '<i>No soy nada malo</i> and <i>no hago nada mal</i> are both modest self-praise — do not read the "nada" as a full negation; it softens rather than negates the claim.'
+  ],
+  examples: [
+    { es: 'Es muy hábil para convencer a la gente.', en: "He's very skilled at persuading people." },
+    { es: 'No tiene facilidad para hacer amigos.', en: "He doesn't have a knack for making friends." },
+    { es: 'Parece que no hago del todo mal las tartas.', en: "It seems I'm not entirely bad at making cakes." }
+  ],
+  probes: [
+    { id: 'p:habilidadB2:negado', kind: 'mcq', q: '"Soy un negado para los idiomas" significa...',
+      options: ['Me niego a estudiar idiomas', 'Soy muy malo con los idiomas', 'No hablo ningún idioma legalmente'], answer: 1 },
+    { id: 'p:habilidadB2:darsebien', kind: 'mcq', q: '¿Qué estructura comparte "se me da bien"?',
+      options: ['La de un verbo transitivo normal', 'La de "gustar"', 'Ninguna en particular'], answer: 1 },
+    { id: 'p:habilidadB2:cloze', kind: 'cloze', text: 'No hago ___ mal las tartas. (del todo, autoelogio suave)', accept: ['del todo'] },
+    { id: 'p:habilidadB2:recall', kind: 'recall', front: '¿Qué tipo de expresión es "ser un negado para"?', back: 'un modismo fijo, no literal' }
+  ]
 }
 
 ];

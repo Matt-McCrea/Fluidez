@@ -371,7 +371,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (99/204 done)
+## B2 — lessons (113/204 done)
 
 ### B2 · grammar (26/26)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
@@ -456,31 +456,31 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 16 pts · `nociones_generales B2 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-b2
 - [x] **Expresión verbal** · 23 pts · `nociones_generales B2 § 7.2. Expresión verbal`  — nt-expresion-verbal-b2
 
-### B2 · function (19/96)
-- [ ] **Identificar** · 7 pts · `funciones B2 § 1.1. Identificar`
+### B2 · function (33/96)
+- [x] **Identificar** · 7 pts · `funciones B2 § 1.1. Identificar`  — fn-identificar-b2
 - [x] **Pedir información** · 23 pts · `funciones B2 § 1.2. Pedir información`  — fn-preguntar-con-prudencia-b2
-- [ ] **Dar información** · 27 pts · `funciones B2 § 1.3. Dar información`
+- [x] **Dar información** · 27 pts · `funciones B2 § 1.3. Dar información`  — fn-dar-informacion-b2
 - [x] **Pedir confirmación** · 17 pts · `funciones B2 § 1.4. Pedir confirmación`  — fn-cuestionar-informacion-b2
 - [x] **Confirmar la información previa** · 3 pts · `funciones B2 § 1.5. Confirmar la información prev`  — fn-confirmar-info-previa-b2
-- [ ] **Pedir opinión** · 10 pts · `funciones B2 § 2.1. Pedir opinión`
-- [ ] **Dar una opinión** · 7 pts · `funciones B2 § 2.2. Dar una opinión`
-- [ ] **Pedir valoración** · 14 pts · `funciones B2 § 2.3. Pedir valoración`
-- [ ] **Valorar** · 18 pts · `funciones B2 § 2.4. Valorar`
-- [ ] **Expresar aprobación y desaprobación** · 4 pts · `funciones B2 § 2.5. Expresar aprobación y desapro`
+- [x] **Pedir opinión** · 10 pts · `funciones B2 § 2.1. Pedir opinión`  — fn-pedir-opinion-b2
+- [x] **Dar una opinión** · 7 pts · `funciones B2 § 2.2. Dar una opinión`  — fn-dar-opinion-b2
+- [x] **Pedir valoración** · 14 pts · `funciones B2 § 2.3. Pedir valoración`  — fn-pedir-valoracion-b2
+- [x] **Valorar** · 18 pts · `funciones B2 § 2.4. Valorar`  — fn-valorar-b2
+- [x] **Expresar aprobación y desaprobación** · 4 pts · `funciones B2 § 2.5. Expresar aprobación y desapro`  — fn-aprobacion-desaprobacion-b2
 - [x] **Expresar acuerdo** · 31 pts · `funciones B2 § 2.9. Expresar acuerdo`  — fn-acuerdo-b2
 - [x] **Expresar desacuerdo** · 27 pts · `funciones B2 § 2.10. Expresar desacuerdo`  — fn-expresar-desacuerdo-rotundo-b2
-- [ ] **Mostrar escepticismo** · 6 pts · `funciones B2 § 2.11. Mostrar escepticismo`
-- [ ] **Presentar un contraargumento** · 7 pts · `funciones B2 § 2.12. Presentar un contraargumento`
+- [x] **Mostrar escepticismo** · 6 pts · `funciones B2 § 2.11. Mostrar escepticismo`  — fn-escepticismo-b2
+- [x] **Presentar un contraargumento** · 7 pts · `funciones B2 § 2.12. Presentar un contraargumento`  — fn-contraargumento-b2
 - [x] **Expresar certeza y evidencia** · 10 pts · `funciones B2 § 2.13. Expresar certeza y evidencia`  — fn-expresar-certeza-b2
-- [ ] **Expresar falta de certeza y evidencia** · 7 pts · `funciones B2 § 2.14. Expresar falta de certeza y `
+- [x] **Expresar falta de certeza y evidencia** · 7 pts · `funciones B2 § 2.14. Expresar falta de certeza y `  — fn-falta-certeza-b2
 - [x] **Invitar a formular una hipótesis** · 3 pts · `funciones B2 § 2.15. Invitar a formular una hipót`  — fn-invitar-hipotesis-b2
-- [ ] **Expresar posibilidad** · 14 pts · `funciones B2 § 2.16. Expresar posibilidad`
+- [x] **Expresar posibilidad** · 14 pts · `funciones B2 § 2.16. Expresar posibilidad`  — fn-posibilidad-b2
 - [x] **Expresar falta de obligación o de necesidad** · 3 pts · `funciones B2 § 2.18. Expresar falta de obligación`  — fn-falta-obligacion-b2
-- [ ] **Preguntar por el conocimiento de algo** · 6 pts · `funciones B2 § 2.19. Preguntar por el conocimient`
-- [ ] **Expresar conocimiento** · 7 pts · `funciones B2 § 2.20. Expresar conocimiento`
+- [x] **Preguntar por el conocimiento de algo** · 6 pts · `funciones B2 § 2.19. Preguntar por el conocimient`  — fn-preguntar-conocimiento-b2
+- [x] **Expresar conocimiento** · 7 pts · `funciones B2 § 2.20. Expresar conocimiento`  — fn-conocimiento-b2
 - [x] **Expresar desconocimiento** · 10 pts · `funciones B2 § 2.21. Expresar desconocimiento`  — fn-no-tengo-ni-idea-b2
 - [x] **Preguntar por la habilidad para hacer algo** · 5 pts · `funciones B2 § 2.22. Preguntar por la habilidad p`  — fn-preguntar-habilidad-b2
-- [ ] **Expresar habilidad para hacer algo** · 7 pts · `funciones B2 § 2.23. Expresar habilidad para hace`
+- [x] **Expresar habilidad para hacer algo** · 7 pts · `funciones B2 § 2.23. Expresar habilidad para hace`  — fn-habilidad-b2
 - [x] **Preguntar si se recuerda o se ha olvidado** · 4 pts · `funciones B2 § 2.24. Preguntar si se recuerda o s`  — fn-preguntar-recordar-b2
 - [x] **Expresar que se recuerda** · 11 pts · `funciones B2 § 2.25. Expresar que se recuerda`  — fn-expresar-recordar-b2
 - [x] **Expresar que no se recuerda** · 10 pts · `funciones B2 § 2.26. Expresar que no se recuerda`  — fn-expresar-no-recordar-general-b2
