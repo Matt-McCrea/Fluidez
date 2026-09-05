@@ -15861,6 +15861,378 @@ window.STRAND_LESSONS = [
     { id: 'p:subrelativasB2:cloze', kind: 'cloze', text: 'Tú, que te ___ (creer) tan listo, deberías saberlo. (concordancia con tú)', accept: ['crees'] },
     { id: 'p:subrelativasB2:recall', kind: 'recall', front: '¿Resiste la subjuntivo una relativa EXPLICATIVA?', back: 'sí, la resiste — describe un referente ya conocido' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 notion, part 1 (WORKLIST.md, section B2 · notion, § 1.1-1.9)
+ * ========================================================================== */
+{
+  id: 'nt-existencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:7', 'nociones_generales:B2:8', 'nociones_generales:B2:9', 'nociones_generales:B2:10',
+         'nociones_generales:B2:11', 'nociones_generales:B2:12', 'nociones_generales:B2:13'],
+  title: 'Existencia e inexistencia: crear, eliminar, provocar',
+  summary: 'B1 said something existed or not; B2 supplies the VERBS for making it start or stop existing — establishing a rule, eliminating a trace, occasioning a problem — the vocabulary a report or an explanation actually needs.',
+  sections: [
+    { h: 'Bringing something into existence', html: '<i>Establecer una norma</i>, <i>montar un negocio</i>, <i>dar a luz</i> — each names a specific way of making something exist, not a generic "create".' },
+    { h: 'Making something stop existing', html: '<i>Eliminar, borrar</i> both erase, with <i>borrar</i> more concrete/physical (a mark, a trace) and <i>eliminar</i> broader.' },
+    { h: 'Causing an effect to exist', html: '<i>Ocasionar, provocar</i> both mean "to cause/bring about", typically a problem or a reaction — <i>provocar</i> can carry a slightly more deliberate or inflammatory shade.' }
+  ],
+  exponents: [
+    { es: 'En esta región las lluvias son casi inexistentes.', en: 'In this region rainfall is almost non-existent.', register: 'neutral' },
+    { es: 'El fuego borró cualquier huella del incendio.', en: 'The fire erased any trace of the blaze.', register: 'neutral', note: 'borrar — concrete erasure' },
+    { es: 'El retraso ocasionó muchas quejas.', en: 'The delay caused a lot of complaints.', register: 'neutral' },
+    { es: 'La ley establece nuevas normas de seguridad.', en: 'The law establishes new safety rules.', register: 'neutral' },
+    { es: 'Montaron un negocio de reparto a domicilio.', en: 'They set up a home-delivery business.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'La lluvia ocasionó inundaciones.', en: 'The rain caused floods.', note: 'ocasionar — a fairly neutral cause' },
+    { es: 'Sus declaraciones provocaron una gran polémica.', en: 'His statements provoked a big controversy.', note: 'provocar — often a more deliberate or inflammatory cause' }
+  ],
+  pitfalls: [
+    '<i>Ocasionar</i> and <i>provocar</i> are close but not identical: <i>provocar</i> carries more of a sense of deliberately stirring something up, while <i>ocasionar</i> stays neutral.',
+    '<i>Borrar</i> is concrete (erasing a mark, a file, a memory); do not use it for abstract elimination of a policy or a law, where <i>eliminar/suprimir</i> fits better.'
+  ],
+  examples: [
+    { es: 'El terremoto ocasionó graves daños en la zona.', en: 'The earthquake caused serious damage in the area.' },
+    { es: 'Dio a luz a mellizos en el hospital central.', en: 'She gave birth to twins at the central hospital.' },
+    { es: 'La empresa estableció un nuevo protocolo.', en: 'The company established a new protocol.' }
+  ],
+  probes: [
+    { id: 'p:existenciaB2:causar', kind: 'mcq', q: '¿Cuál sugiere una causa más deliberada/provocadora?',
+      options: ['ocasionar', 'provocar', 'ninguna diferencia'], answer: 1 },
+    { id: 'p:existenciaB2:crear', kind: 'mcq', q: '¿Cuál significa específicamente "empezar un negocio"?',
+      options: ['establecer', 'montar', 'borrar'], answer: 1 },
+    { id: 'p:existenciaB2:cloze', kind: 'cloze', text: 'El accidente ___ un gran atasco. (ocasionar)', accept: ['ocasionó'] },
+    { id: 'p:existenciaB2:recall', kind: 'recall', front: '¿Qué verbo usarías para "dar a luz"?', back: 'dar a luz (tener un bebé)' }
+  ]
+},
+
+{
+  id: 'nt-presencia-ausencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:20', 'nociones_generales:B2:22', 'nociones_generales:B2:23', 'nociones_generales:B2:26',
+         'nociones_generales:B2:27', 'nociones_generales:B2:28', 'nociones_generales:B2:29', 'nociones_generales:B2:30'],
+  title: 'Presencia y ausencia: asistir, faltar, a la vista',
+  summary: 'Beyond "estar" or "no estar", B2 supplies the vocabulary for the SOCIAL fact of presence — who counts as an attendee, what it means to be missing from an event, and a set of fixed prepositional phrases (a distancia, a la vista) that describe presence without a verb at all.',
+  sections: [
+    { h: 'Attending, missing, participating', html: '<i>Asistir, participar</i> describe active presence at an event; <i>faltar</i> names an absence, especially from an obligation: <i>faltar a clase</i>.' },
+    { h: 'Fixed prepositional phrases', html: '<i>A distancia</i> (remotely), <i>a la vista</i> (visible, in plain sight) describe a mode of presence with no verb needed.' },
+    { h: 'En presencia/ausencia de', html: 'A formal frame for stating who was or was not there: <i>en presencia de un abogado</i>.' }
+  ],
+  exponents: [
+    { es: 'Los asistentes al congreso superaron las mil personas.', en: 'Attendees at the conference exceeded a thousand.', register: 'neutral' },
+    { es: 'Faltó a clase tres veces esta semana.', en: 'He missed class three times this week.', register: 'neutral' },
+    { es: 'Hizo un curso a distancia mientras viajaba.', en: 'She did a distance course while travelling.', register: 'neutral' },
+    { es: 'Tu móvil está a la vista, encima de la mesa.', en: "Your phone is in plain sight, on the table.", register: 'neutral' },
+    { es: 'La firma se realizó en presencia de un notario.', en: 'The signing took place in the presence of a notary.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Faltó a la reunión sin avisar.', en: 'He missed the meeting without notice.', note: 'faltar a — an absence from an obligation' },
+    { es: 'Asistió a la reunión puntualmente.', en: 'He attended the meeting punctually.', note: 'asistir a — active presence' }
+  ],
+  pitfalls: [
+    '<i>Faltar a</i> always implies an expected presence that did not happen — do not use it for a place you simply never planned to visit.',
+    '<i>A la vista</i> describes something visible/findable, not necessarily attended or "present" in the social sense of <i>asistir</i>.'
+  ],
+  examples: [
+    { es: 'Participó activamente en el debate.', en: 'She participated actively in the debate.' },
+    { es: 'El documento quedó a la vista de todos.', en: 'The document was left in plain sight of everyone.' },
+    { es: 'Faltaron dos alumnos al examen.', en: 'Two students were absent from the exam.' }
+  ],
+  probes: [
+    { id: 'p:presausB2:faltar', kind: 'mcq', q: '"Faltó a la reunión" implica...',
+      options: ['Que llegó tarde', 'Que no fue, aunque se le esperaba', 'Que participó mucho'], answer: 1 },
+    { id: 'p:presausB2:fija', kind: 'mcq', q: '¿Qué significa "a la vista"?',
+      options: ['A distancia', 'Visible, en un lugar donde se puede ver', 'Ausente'], answer: 1 },
+    { id: 'p:presausB2:cloze', kind: 'cloze', text: 'Los ___ al congreso llenaron la sala. (asistentes)', accept: ['asistentes'] },
+    { id: 'p:presausB2:recall', kind: 'recall', front: '¿Qué expresión describe un curso hecho desde casa, sin ir físicamente?', back: 'a distancia' }
+  ]
+},
+
+{
+  id: 'nt-disponibilidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:35', 'nociones_generales:B2:36', 'nociones_generales:B2:37', 'nociones_generales:B2:38',
+         'nociones_generales:B2:39', 'nociones_generales:B2:40', 'nociones_generales:B2:41', 'nociones_generales:B2:42', 'nociones_generales:B2:43'],
+  title: 'Disponibilidad: agotarse, contar con, estar listo',
+  summary: 'A whole family of ways to say something is or is not available or ready — a job vacancy, a sold-out product, having enough of something, or being willing to act — each with its own fixed verb, not a single all-purpose "hay".',
+  sections: [
+    { h: 'Available: things, jobs, people', html: '<i>Disponible</i> (available), <i>vacante</i> (a job, unfilled), <i>desocupado</i> (a room/seat, unoccupied) each apply to a different kind of thing.' },
+    { h: 'Running out', html: '<i>Agotarse</i> (to sell out/run out), contrasted with <i>quedar, faltar, sobrar</i> — respectively what remains, what is missing, and what is left over.' },
+    { h: 'Relying on and accessing', html: '<i>Contar con</i> (to have/rely on), <i>tener acceso a</i> (to have access to) frame availability as a resource you can draw on.' }
+  ],
+  exponents: [
+    { es: 'No hay nadie disponible ahora mismo.', en: "There's nobody available right now.", register: 'neutral' },
+    { es: 'Se ha agotado la mercancía en dos horas.', en: 'The stock sold out in two hours.', register: 'neutral' },
+    { es: 'Es el último asiento que queda.', en: "It's the last seat left.", register: 'neutral' },
+    { es: 'Contamos con el apoyo de todo el equipo.', en: 'We have the support of the whole team.', register: 'neutral' },
+    { es: 'El coche ya está listo, podemos salir esta tarde.', en: "The car's ready now, we can leave this afternoon.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Nos faltan diez sillas.', en: "We're ten chairs short.", note: 'faltar — missing/needed' },
+    { es: 'Nos sobran tres entradas.', en: 'We have three tickets spare.', note: 'sobrar — extra/unneeded' },
+    { es: 'Quedan solo dos plazas.', en: 'Only two spots remain.', note: 'quedar — what is left' }
+  ],
+  pitfalls: [
+    '<i>Faltar</i> and <i>sobrar</i> are opposites — mixing them up reverses the whole meaning of a sentence about quantities.',
+    '<i>Vacante</i> applies to a job/post, not a general "available" — a hotel room is <i>desocupada</i> or <i>libre</i>, not <i>vacante</i>.',
+    '<i>Contar con</i> means to have/rely on a resource, not literally "to count" — do not read it as a counting action.'
+  ],
+  examples: [
+    { es: 'La plaza de director ha quedado vacante.', en: 'The director position has become vacant.' },
+    { es: 'No tenemos acceso a esos datos todavía.', en: "We don't have access to that data yet." },
+    { es: 'No está dispuesto a cambiar de opinión.', en: "He's not willing to change his mind." }
+  ],
+  probes: [
+    { id: 'p:disponibB2:opuestos', kind: 'mcq', q: '¿Cuál es el opuesto de "sobrar" en este contexto?',
+      options: ['agotarse', 'faltar', 'contar con'], answer: 1 },
+    { id: 'p:disponibB2:vacante', kind: 'mcq', q: '¿"Vacante" se aplica normalmente a...?',
+      options: ['un puesto de trabajo', 'una habitación de hotel', 'un producto en tienda'], answer: 0 },
+    { id: 'p:disponibB2:cloze', kind: 'cloze', text: 'El coche ya está ___, podemos salir. (listo)', accept: ['listo'] },
+    { id: 'p:disponibB2:recall', kind: 'recall', front: '¿Qué significa "contar con" en este contexto?', back: 'tener, disponer de, apoyarse en (un recurso o apoyo)' }
+  ]
+},
+
+{
+  id: 'nt-cualidad-general-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:50', 'nociones_generales:B2:51', 'nociones_generales:B2:52', 'nociones_generales:B2:56',
+         'nociones_generales:B2:59', 'nociones_generales:B2:60', 'nociones_generales:B2:61'],
+  title: 'Cualidad general: propiedades, categorías, composición',
+  summary: 'Describing WHAT something is made of, what category it belongs to, and what its defining traits are needs its own toolkit — "consistir en" is not "ser", and "caracterizarse por" names a defining trait rather than just stating a fact.',
+  sections: [
+    { h: 'Category and property', html: '<i>Categoría, especie, familia</i> place something within a classification; <i>propiedad, característica</i> name one of its individual traits.' },
+    { h: 'Belonging and composition', html: '<i>Pertenecer a, formar parte de</i> place something inside a group; <i>consistir en, componerse de</i> describe what it is made up of; <i>caracterizarse por</i> names what defines it.' },
+    { h: 'Ser + de + category', html: 'A fixed pattern states color, shape, size or material plainly: <i>Es de color azul</i>, <i>Es de forma ovalada</i>, <i>Es de tamaño mediano</i>, <i>Es de material ligero</i>.' }
+  ],
+  exponents: [
+    { es: 'Las propiedades de este material son muy interesantes.', en: 'The properties of this material are very interesting.', register: 'neutral' },
+    { es: 'El proyecto consiste en tres fases.', en: 'The project consists of three phases.', register: 'neutral' },
+    { es: 'Se caracteriza por su honestidad.', en: "He's characterized by his honesty.", register: 'neutral' },
+    { es: 'Pertenece a una familia de aristócratas.', en: 'He belongs to a family of aristocrats.', register: 'neutral' },
+    { es: 'Es de forma ovalada y de color verde.', en: "It's oval-shaped and green.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'El comité se compone de cinco miembros.', en: 'The committee is made up of five members.', note: 'componerse de — physical/structural composition' },
+    { es: 'Se caracteriza por su rigor.', en: "It's characterized by its rigor.", note: 'caracterizarse por — a defining, not merely structural, trait' }
+  ],
+  pitfalls: [
+    '<i>Consistir en</i> introduces WHAT something is (its content/plan), not what it is made of physically — do not confuse it with <i>estar hecho de</i>.',
+    '<i>Caracterizarse por</i> names a DEFINING trait, stronger than simply "tener" a quality — reserve it for what genuinely distinguishes the subject.'
+  ],
+  examples: [
+    { es: 'El curso se compone de seis módulos.', en: 'The course is made up of six modules.' },
+    { es: 'Esta especie se caracteriza por su tamaño reducido.', en: 'This species is characterized by its small size.' },
+    { es: 'Básicamente, el informe es una crítica al plan.', en: 'Basically, the report is a criticism of the plan.' }
+  ],
+  probes: [
+    { id: 'p:cualgenB2:consistiren', kind: 'mcq', q: '"El plan consiste en tres fases" — ¿qué describe "consistir en"?',
+      options: ['El material físico', 'El contenido/las partes del plan', 'El color'], answer: 1 },
+    { id: 'p:cualgenB2:caracterizarse', kind: 'mcq', q: '¿Qué tipo de rasgo nombra "caracterizarse por"?',
+      options: ['Cualquier rasgo trivial', 'Un rasgo definitorio', 'Solo defectos'], answer: 1 },
+    { id: 'p:cualgenB2:cloze', kind: 'cloze', text: 'El equipo se ___ de ocho jugadores. (componer)', accept: ['compone'] },
+    { id: 'p:cualgenB2:recall', kind: 'recall', front: '¿Qué patrón fijo describe color/forma/tamaño/material?', back: 'ser + de + color/forma/tamaño/material' }
+  ]
+},
+
+{
+  id: 'nt-acontecimiento-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:66', 'nociones_generales:B2:67', 'nociones_generales:B2:68', 'nociones_generales:B2:69'],
+  title: 'Acontecimiento: ocurrir, casualidad, suspender',
+  summary: 'A single family of verbs describes something happening — ocurrir, suceder, producirse — with almost no difference in meaning, while casualidad names something that happens by CHANCE, not by anyone\'s design.',
+  sections: [
+    { h: 'Happening: near-synonyms', html: '<i>Ocurrir, suceder, producirse</i> all mean "to happen" and are largely interchangeable — <i>producirse</i> leans slightly more formal/written, common in news reporting.' },
+    { h: 'By chance, not design', html: '<i>Casualidad, coincidencia</i> name an event that happened without anyone planning it: <i>Fue una casualidad que nos encontráramos.</i>' },
+    { h: 'Cancelling an event', html: '<i>Suspender</i> (to call off, postpone) and <i>(des)convocar</i> (to call/call off a strike or meeting) manage a planned event that does not go ahead as scheduled.' }
+  ],
+  exponents: [
+    { es: 'El accidente se produjo por causas desconocidas.', en: 'The accident occurred for unknown reasons.', register: 'formal', note: 'producirse — leans formal/written' },
+    { es: 'Ocurrió cuando menos lo esperábamos.', en: 'It happened when we least expected it.', register: 'neutral' },
+    { es: 'Fue una casualidad que nos encontráramos en el aeropuerto.', en: 'It was a coincidence that we met at the airport.', register: 'neutral' },
+    { es: 'Suspendieron la representación por lluvia.', en: 'They called off the performance due to rain.', register: 'neutral' },
+    { es: 'Desconvocaron la huelga a última hora.', en: 'They called off the strike at the last minute.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'El robo ocurrió de madrugada.', en: 'The robbery happened at dawn.', note: 'ocurrir — general, common in speech and writing' },
+    { es: 'El robo se produjo de madrugada.', en: 'The robbery occurred at dawn.', note: 'producirse — same meaning, more formal register' }
+  ],
+  pitfalls: [
+    '<i>Casualidad</i> is a false friend for "casualty" — it means "coincidence/chance", not an injured or dead person.',
+    '<i>Suspender</i> here means to call off/postpone an event, not "to fail" (an exam sense also exists, but context disambiguates).'
+  ],
+  examples: [
+    { es: 'Se produjeron varios incidentes durante la manifestación.', en: 'Several incidents occurred during the demonstration.' },
+    { es: 'Suspendieron el partido por el mal tiempo.', en: 'They postponed the match due to bad weather.' },
+    { es: 'Qué casualidad encontrarte aquí.', en: 'What a coincidence running into you here.' }
+  ],
+  probes: [
+    { id: 'p:acontecimientoB2:falsofriend', kind: 'mcq', q: '"Casualidad" en español significa...',
+      options: ['Víctima de un accidente', 'Coincidencia, azar', 'Informalidad'], answer: 1 },
+    { id: 'p:acontecimientoB2:registro', kind: 'mcq', q: '¿Cuál suena más formal/periodístico?',
+      options: ['ocurrir', 'producirse', 'pasar'], answer: 1 },
+    { id: 'p:acontecimientoB2:cloze', kind: 'cloze', text: 'El concierto se ___ por falta de público. (suspender)', accept: ['suspendió'] },
+    { id: 'p:acontecimientoB2:recall', kind: 'recall', front: '¿"Casualidad" significa lo mismo que "casualty" en inglés?', back: 'no — significa "coincidencia", no "víctima"' }
+  ]
+},
+
+{
+  id: 'nt-certeza-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:77', 'nociones_generales:B2:78', 'nociones_generales:B2:79', 'nociones_generales:B2:80',
+         'nociones_generales:B2:85', 'nociones_generales:B2:87', 'nociones_generales:B2:90', 'nociones_generales:B2:91'],
+  title: 'Certeza e incertidumbre: el vocabulario, más allá del modo',
+  summary: 'B1 taught which possibility words trigger the subjunctive; B2 adds the surrounding VOCABULARY of confidence and doubt — nouns like certeza and duda, being convinced, and the colloquial "igual" as one more indicative-taking way to hedge.',
+  sections: [
+    { h: 'Nouns of confidence and doubt', html: '<i>Certeza, evidencia</i> (certainty) sit opposite <i>indecisión, incertidumbre</i> (indecision, uncertainty); <i>probabilidad, hipótesis</i> name a reasoned guess.' },
+    { h: 'Being convinced, confirming', html: '<i>Estar convencido</i> (to be convinced), <i>asegurar(se), confirmar</i> (to make sure, confirm) actively establish certainty.' },
+    { h: '"Igual": colloquial "maybe", indicative', html: 'Like <i>a lo mejor</i>, <i>igual</i> is a colloquial possibility marker that keeps the INDICATIVE: <i>Igual se ha olvidado de llamar</i> — "maybe he forgot to call".' },
+    { h: 'Fixed certainty phrases', html: '<i>Sin duda (alguna)</i> asserts confidently; <i>sin dudar(lo)</i> describes acting without hesitation, a different (adverbial, manner) job.' }
+  ],
+  exponents: [
+    { es: 'No tengo ninguna duda sobre su honestidad.', en: 'I have no doubt at all about his honesty.', register: 'neutral' },
+    { es: 'Igual se ha olvidado de llamar.', en: 'Maybe he forgot to call.', register: 'coloquial', note: 'igual + indicativo, like a lo mejor' },
+    { es: 'Ha sido él, sin duda.', en: "It was him, no doubt.", register: 'neutral' },
+    { es: 'El testigo respondió sin dudar ni un segundo.', en: "The witness answered without hesitating for a second.", register: 'neutral', note: 'sin dudar(lo) — manner, not certainty about a fact' },
+    { es: 'Estoy convencido de que dice la verdad.', en: "I'm convinced he's telling the truth.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Sin duda, es la mejor opción.', en: 'No doubt, it\'s the best option.', note: 'sin duda — asserting a fact confidently' },
+    { es: 'Respondió sin dudar.', en: 'He answered without hesitating.', note: 'sin dudar(lo) — describes HOW he acted, not a claim about a fact' }
+  ],
+  pitfalls: [
+    '<i>Igual</i> as "maybe" is colloquial and keeps the indicative — do not confuse it with its more common meaning "equal/the same".',
+    '<i>Sin duda</i> (asserting a fact) and <i>sin dudar</i> (acting without hesitation) look similar but do different jobs — one is about a claim, the other about manner of action.'
+  ],
+  examples: [
+    { es: 'Existe la posibilidad de que se cancele el vuelo.', en: 'There is a possibility the flight will be cancelled.' },
+    { es: 'Su procedencia es dudosa.', en: 'His background is questionable.' },
+    { es: 'Igual llego un poco tarde, hay mucho tráfico.', en: "I might arrive a bit late, there's a lot of traffic." }
+  ],
+  probes: [
+    { id: 'p:certezaB2:igual', kind: 'mcq', q: '"Igual se ha olvidado de llamar" — ¿qué significa "igual" aquí?',
+      options: ['Lo mismo, idéntico', 'Quizás, tal vez', 'Con seguridad'], answer: 1 },
+    { id: 'p:certezaB2:sinduda', kind: 'mcq', q: '¿Cuál afirma un HECHO con seguridad?',
+      options: ['Respondió sin dudar.', 'Sin duda, es él.', 'Ambas por igual'], answer: 1 },
+    { id: 'p:certezaB2:cloze', kind: 'cloze', text: 'Estoy ___ de que tiene razón. (convencido)', accept: ['convencido', 'convencida'] },
+    { id: 'p:certezaB2:recall', kind: 'recall', front: '¿Qué modo lleva "igual" pese a expresar posibilidad?', back: 'el indicativo (como "a lo mejor")' }
+  ]
+},
+
+{
+  id: 'nt-realidad-ficcion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:97', 'nociones_generales:B2:98', 'nociones_generales:B2:99', 'nociones_generales:B2:100',
+         'nociones_generales:B2:101', 'nociones_generales:B2:102', 'nociones_generales:B2:103', 'nociones_generales:B2:104'],
+  title: 'Realidad y ficción: inventar, simular, cumplirse',
+  summary: 'The vocabulary for what is real vs invented, plus the specific verb for a dream or wish actually coming true — "cumplirse" — which names the moment fiction crosses over into fact.',
+  sections: [
+    { h: 'Naming the unreal', html: '<i>Invención, fantasía</i> (a made-up thing); <i>irreal, ficticio, surrealista</i> (adjectives for something not real); <i>simulación</i> (a deliberate fake enactment).' },
+    { h: 'The material/abstract axis', html: '<i>(In)material, concreto, abstracto</i> sort things by whether they can be touched or only thought.' },
+    { h: 'Imagining and a dream coming true', html: '<i>Imaginarse, inventarse</i> (to imagine, to make up); <i>cumplirse un sueño/un deseo</i> names the specific moment something imagined becomes real.' }
+  ],
+  exponents: [
+    { es: 'Esto es surrealista, no puedo creer lo que está pasando.', en: "This is surreal, I can't believe what's happening.", register: 'coloquial' },
+    { es: 'Tiene mucha imaginación, siempre está inventándose historias.', en: "He has a lot of imagination, he's always making up stories.", register: 'neutral' },
+    { es: 'Por fin se cumplió su sueño de viajar por el mundo.', en: 'His dream of travelling the world finally came true.', register: 'neutral' },
+    { es: 'El concepto es demasiado abstracto para explicarlo así.', en: "The concept is too abstract to explain like that.", register: 'neutral' },
+    { es: 'Fue solo una simulación, nadie salió herido.', en: 'It was just a simulation, nobody got hurt.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Es un problema concreto, no abstracto.', en: "It's a concrete problem, not an abstract one.", note: 'concreto — tangible, specific' },
+    { es: 'Es una idea abstracta difícil de aplicar.', en: 'It\'s an abstract idea, hard to apply.', note: 'abstracto — only conceptual' }
+  ],
+  pitfalls: [
+    '<i>Cumplirse</i> specifically names a dream/wish becoming real — do not use it for ordinary tasks being completed, where <i>terminar/realizar</i> fits better.',
+    '<i>Ficticio</i> describes something deliberately invented (a fictional character); <i>irreal</i> is broader, simply "not real" without implying deliberate invention.'
+  ],
+  examples: [
+    { es: 'El personaje es completamente ficticio.', en: 'The character is entirely fictional.' },
+    { es: 'Se ilusionó pensando que ganaría el premio.', en: 'He got his hopes up thinking he\'d win the prize.' },
+    { es: 'Soñaba despierta con vivir en otro país.', en: 'She daydreamed about living in another country.' }
+  ],
+  probes: [
+    { id: 'p:realficcionB2:cumplirse', kind: 'mcq', q: '¿Qué significa "se cumplió su sueño"?',
+      options: ['Terminó una tarea', 'Su sueño se hizo realidad', 'Dejó de soñar'], answer: 1 },
+    { id: 'p:realficcionB2:ficticio', kind: 'mcq', q: '¿Cuál implica invención DELIBERADA?',
+      options: ['irreal', 'ficticio', 'inexistente'], answer: 1 },
+    { id: 'p:realficcionB2:cloze', kind: 'cloze', text: 'Es un concepto muy ___, difícil de tocar o ver. (abstracto)', accept: ['abstracto'] },
+    { id: 'p:realficcionB2:recall', kind: 'recall', front: '¿Qué verbo describe un sueño haciéndose realidad?', back: 'cumplirse' }
+  ]
+},
+
+{
+  id: 'nt-necesidad-contingencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:111', 'nociones_generales:B2:112', 'nociones_generales:B2:113', 'nociones_generales:B2:114'],
+  title: 'Necesidad y azar: imprescindible, inevitablemente, por casualidad',
+  summary: 'A small but sharp cluster: the strongest word for "needed" (imprescindible), the adverb for what could not have been avoided (inevitablemente), and the fixed phrase for something happening by pure chance (por casualidad).',
+  sections: [
+    { h: 'The strongest "necessary"', html: '<i>Imprescindible, esencial, fundamental</i> all rank above plain <i>necesario</i> — nothing works without them.' },
+    { h: 'What could not be avoided', html: '<i>Inevitablemente</i> marks an outcome as unavoidable, given the circumstances.' },
+    { h: 'By pure chance', html: '<i>Por casualidad</i> marks something as happening with no plan or cause behind it.' }
+  ],
+  exponents: [
+    { es: 'El agua es una necesidad básica.', en: 'Water is a basic need.', register: 'neutral' },
+    { es: 'Su experiencia es imprescindible para el proyecto.', en: 'His experience is essential for the project.', register: 'neutral' },
+    { es: 'Inevitablemente, el precio subirá.', en: 'Inevitably, the price will go up.', register: 'neutral' },
+    { es: '¿Sabes por casualidad dónde está la llave?', en: 'Do you happen to know where the key is?', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Es necesario revisar el contrato.', en: 'It\'s necessary to review the contract.', note: 'necesario — plain necessity' },
+    { es: 'Es imprescindible revisar el contrato antes de firmar.', en: 'It\'s essential to review the contract before signing.', note: 'imprescindible — stronger, non-negotiable' }
+  ],
+  pitfalls: [
+    '<i>Por casualidad</i> softens a question ("do you happen to know...") — do not read it as doubting the person, it is a politeness convention.',
+    '<i>Imprescindible</i> is stronger than <i>necesario</i> — reserve it for things truly without alternative, not routine requirements.'
+  ],
+  examples: [
+    { es: 'La confianza es esencial en cualquier relación.', en: 'Trust is essential in any relationship.' },
+    { es: 'Inevitablemente, alguien tenía que decírselo.', en: 'Inevitably, someone had to tell him.' },
+    { es: 'Nos encontramos por casualidad en el mercado.', en: 'We ran into each other by chance at the market.' }
+  ],
+  probes: [
+    { id: 'p:necesidadB2:fuerte', kind: 'mcq', q: '¿Cuál es MÁS fuerte que "necesario"?',
+      options: ['básico', 'imprescindible', 'posible'], answer: 1 },
+    { id: 'p:necesidadB2:cortesia', kind: 'mcq', q: '"¿Sabes por casualidad dónde está Juan?" — ¿qué función tiene "por casualidad" aquí?',
+      options: ['Dudar de la persona', 'Suavizar la pregunta', 'Ninguna'], answer: 1 },
+    { id: 'p:necesidadB2:cloze', kind: 'cloze', text: '___, el proyecto se retrasó. (inevitablemente)', accept: ['Inevitablemente'] },
+    { id: 'p:necesidadB2:recall', kind: 'recall', front: '¿Qué palabra marca algo que ocurrió sin ningún plan?', back: 'por casualidad' }
+  ]
+},
+
+{
+  id: 'nt-generalidad-especificidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:118', 'nociones_generales:B2:119', 'nociones_generales:B2:120', 'nociones_generales:B2:121',
+         'nociones_generales:B2:123', 'nociones_generales:B2:124', 'nociones_generales:B2:126', 'nociones_generales:B2:127'],
+  title: 'Generalidad y especificidad: concretar, particular, en general',
+  summary: 'Moving between a broad claim and a specific instance needs its own vocabulary — verbs for narrowing down (concretar) or widening out (generalizar), and a family of adjectives (particular, universal, individual) that mark exactly how wide the claim is meant to be.',
+  sections: [
+    { h: 'Adjectives marking scope', html: '<i>Particular, determinado, concreto</i> narrow to one case; <i>general, universal, total</i> widen to everyone/everything; <i>individual, personal</i> mark something as belonging to just one person.' },
+    { h: 'Verbs for narrowing and widening', html: '<i>Concretar</i> (to specify, pin down); <i>generalizar</i> (to broaden a claim, sometimes with a negative "don\'t overgeneralize" undertone).' },
+    { h: 'Adverbs for framing a claim\'s scope', html: '<i>Particularmente, concretamente, especialmente</i> flag a narrowed claim; <i>generalmente</i> flags a broad one — signposting for the reader exactly how far a statement is meant to reach.' }
+  ],
+  exponents: [
+    { es: 'Necesito que concretes la fecha exacta.', en: 'I need you to pin down the exact date.', register: 'neutral' },
+    { es: 'No generalices, no todos piensan igual.', en: "Don't generalize, not everyone thinks the same.", register: 'coloquial' },
+    { es: 'El amor es un sentimiento universal.', en: 'Love is a universal feeling.', register: 'neutral' },
+    { es: 'Particularmente, prefiero el segundo modelo.', en: 'Personally, I prefer the second model.', register: 'neutral' },
+    { es: 'Fíjate en los detalles antes de firmar.', en: 'Pay attention to the details before signing.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'En general, el clima aquí es templado.', en: 'Generally, the climate here is mild.', note: 'a broad claim' },
+    { es: 'En concreto, este verano ha sido muy seco.', en: 'Specifically, this summer has been very dry.', note: 'a narrowed, specific claim' }
+  ],
+  pitfalls: [
+    '<i>Generalizar</i> often carries a mild criticism — "you\'re overgeneralizing" — do not use it as a neutral synonym for simply "to state broadly".',
+    '<i>Particular</i> (specific, one case) is a false friend for English "particular" meaning "fussy" — that sense is <i>exigente/quisquilloso</i> in Spanish.'
+  ],
+  examples: [
+    { es: 'Cada caso es particular y merece su propio análisis.', en: 'Each case is particular and deserves its own analysis.' },
+    { es: 'Definir la esencia de algo tan complejo no es fácil.', en: 'Defining the essence of something so complex isn\'t easy.' },
+    { es: 'Especialmente en invierno, el consumo de energía sube.', en: 'Especially in winter, energy consumption rises.' }
+  ],
+  probes: [
+    { id: 'p:generalespB2:falsofriend', kind: 'mcq', q: '"Particular" en español (caso particular) significa...',
+      options: ['Exigente, quisquilloso', 'Específico, individual', 'Extraño'], answer: 1 },
+    { id: 'p:generalespB2:verbo', kind: 'mcq', q: '¿Qué verbo significa "pasar de lo general a lo específico"?',
+      options: ['generalizar', 'concretar', 'clasificar'], answer: 1 },
+    { id: 'p:generalespB2:cloze', kind: 'cloze', text: 'No ___, no todos son iguales. (generalizar, imperativo negativo tú)', accept: ['generalices'] },
+    { id: 'p:generalespB2:recall', kind: 'recall', front: '¿Qué adverbio marca una afirmación amplia, no específica?', back: 'generalmente / en general' }
+  ]
 }
 
 ];

@@ -371,7 +371,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (53/204 done)
+## B2 — lessons (62/204 done)
 
 ### B2 · grammar (26/26)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
@@ -401,16 +401,16 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 25 pts · `gramatica B2 § 15.2. Oraciones subordinadas adjet`  — gr-subordinadas-relativas-tipos-b2
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica B2 § 15.3. Oraciones subordinadas adver`  — gr-subordinadas-lugar-b2
 
-### B2 · notion (7/53)
-- [ ] **Existencia, inexistencia** · 7 pts · `nociones_generales B2 § 1.1. Existencia, inexistencia`
-- [ ] **Presencia, ausencia** · 11 pts · `nociones_generales B2 § 1.2. Presencia, ausencia`
-- [ ] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales B2 § 1.3. Disponibilidad, no disponibil`
-- [ ] **Cualidad general** · 12 pts · `nociones_generales B2 § 1.4. Cualidad general`
-- [ ] **Acontecimiento** · 4 pts · `nociones_generales B2 § 1.5. Acontecimiento`
-- [ ] **Certeza, incertidumbre** · 15 pts · `nociones_generales B2 § 1.6. Certeza, incertidumbre`
-- [ ] **Realidad, ficción** · 8 pts · `nociones_generales B2 § 1.7. Realidad, ficción`
-- [ ] **Necesidad, contingencia, obligación** · 4 pts · `nociones_generales B2 § 1.8. Necesidad, contingencia, obli`
-- [ ] **Generalidad, especificidad** · 11 pts · `nociones_generales B2 § 1.9. Generalidad, especificidad`
+### B2 · notion (16/53)
+- [x] **Existencia, inexistencia** · 7 pts · `nociones_generales B2 § 1.1. Existencia, inexistencia`  — nt-existencia-b2
+- [x] **Presencia, ausencia** · 11 pts · `nociones_generales B2 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-b2
+- [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales B2 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-b2
+- [x] **Cualidad general** · 12 pts · `nociones_generales B2 § 1.4. Cualidad general`  — nt-cualidad-general-b2
+- [x] **Acontecimiento** · 4 pts · `nociones_generales B2 § 1.5. Acontecimiento`  — nt-acontecimiento-b2
+- [x] **Certeza, incertidumbre** · 15 pts · `nociones_generales B2 § 1.6. Certeza, incertidumbre`  — nt-certeza-b2
+- [x] **Realidad, ficción** · 8 pts · `nociones_generales B2 § 1.7. Realidad, ficción`  — nt-realidad-ficcion-b2
+- [x] **Necesidad, contingencia, obligación** · 4 pts · `nociones_generales B2 § 1.8. Necesidad, contingencia, obli`  — nt-necesidad-contingencia-b2
+- [x] **Generalidad, especificidad** · 11 pts · `nociones_generales B2 § 1.9. Generalidad, especificidad`  — nt-generalidad-especificidad-b2
 - [ ] **Cantidad numérica** · 5 pts · `nociones_generales B2 § 2.1. Cantidad numérica`
 - [ ] **Cantidad relativa** · 10 pts · `nociones_generales B2 § 2.2. Cantidad relativa`
 - [ ] **Aumento, disminución** · 6 pts · `nociones_generales B2 § 2.3. Aumento, disminución`
