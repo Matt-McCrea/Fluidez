@@ -3985,6 +3985,181 @@ window.PASSAGES = [
     { type: 'short', q: '¿En qué año fue robado el cuadro? (una palabra)', accept: ['1993', 'mil novecientos noventa y tres'] },
     { type: 'translate', line: 'Habrá pasado por varias manos a lo largo de estas tres décadas', model: 'It must have passed through several hands over these three decades' }
   ]
+},
+
+/* Batch 2 of 8. */
+{
+  id: 'camino-santiago-religion-b2', title: 'Los últimos kilómetros del Camino', level: 6, theme: 'religion',
+  text: 'Cuando emprendí el Camino de Santiago, no lo hice por motivos religiosos, sino porque necesitaba tiempo a solas después de un año especialmente difícil. Sin embargo, cuanto más avanzaba, más notaba que la experiencia se parecía menos a una simple caminata larga y más a algo que costaba definir con palabras exactas.\n\nEl último día, al acercarme a Santiago, empecé a caminar como si aquellos últimos kilómetros importaran mucho más que los cientos anteriores, aunque objetivamente no fueran distintos. A mi alrededor, otros peregrinos avanzaban en silencio, algunos claramente emocionados, otros aparentemente tan sorprendidos como yo de sentir algo tan intenso al final de una caminata que, sobre el papel, era solo eso: caminar.\n\nEn el albergue de la noche anterior había conocido a una mujer alemana que llevaba el Camino tres veces ya, y que me explicó algo que entonces no entendí del todo: cada peregrino, decía, acaba encontrando en el Camino justo aquello que necesitaba encontrar, independientemente de lo que hubiera venido buscando al principio. Yo había salido buscando silencio, y en cambio encontré una extraña sensación de pertenencia a un grupo de desconocidos unidos únicamente por el mismo esfuerzo físico.\n\nAl llegar por fin a la plaza del Obradoiro, frente a la catedral, no sentí la euforia que había imaginado, sino algo más parecido al alivio y, curiosamente, a cierta tristeza por que la experiencia hubiera terminado. Me senté en el suelo de piedra, rodeado de otros peregrinos igual de agotados, y solo entonces comprendí que lo que de verdad había cambiado no era el paisaje a mi alrededor, sino la forma en que había aprendido a estar conmigo mismo durante aquellas semanas.',
+  gloss: [
+    { es: 'emprender (un viaje)', en: 'empezar a hacer algo, normalmente algo largo o importante' },
+    { es: 'un peregrino', en: 'una persona que hace un viaje religioso o simbólico a pie hasta un lugar sagrado' },
+    { es: 'un albergue', en: 'un alojamiento sencillo y barato, típico para viajeros o peregrinos' },
+    { es: 'la pertenencia (a un grupo)', en: 'la sensación de formar parte de algo junto a otras personas' },
+    { es: 'la euforia', en: 'una alegría muy intensa y repentina' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué sugiere la anécdota de la mujer alemana sobre el Camino?', options: ['Que siempre se busca lo mismo y se encuentra lo mismo', 'Que cada persona encuentra algo distinto de lo que buscaba al empezar', 'Que solo tiene sentido para quienes son religiosos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué emoción predomina al llegar a la catedral, según el texto?', options: ['Euforia pura, tal como esperaba', 'Alivio mezclado con una tristeza inesperada', 'Decepción por el esfuerzo realizado'], answer: 1 },
+    { type: 'short', q: '¿De qué nacionalidad era la mujer del albergue? (una palabra)', accept: ['alemana'] },
+    { type: 'translate', line: 'cada peregrino, decía, acaba encontrando en el Camino justo aquello que necesitaba encontrar', model: 'each pilgrim, she said, ends up finding on the Camino exactly what they needed to find' }
+  ]
+},
+
+{
+  id: 'expatriada-identidad-b2', title: 'Ya no sé de dónde soy del todo', level: 6, theme: 'identidad',
+  text: 'Lleva once años viviendo en Ámsterdam, pero Carmen sigue sin saber, cuando alguien se lo pregunta directamente, qué contestar a la pregunta "¿de dónde eres?". Nació y creció en Sevilla, se marchó a los veinticuatro años y desde entonces solo regresa a España dos o tres veces al año, normalmente en verano y por Navidad.\n\nSu español, dice ella misma con una sonrisa algo incómoda, ha empezado a sonar raro incluso a sus propios oídos: mezcla expresiones andaluzas con estructuras que ha calcado directamente del neerlandés, sin darse cuenta la mayoría de las veces. Sus amigos de Sevilla bromean con que habla "como una guiri", mientras que sus compañeros holandeses siguen notando su acento del sur de España después de más de una década.\n\nLo que más le sorprende a Carmen no es tanto la mezcla lingüística en sí, sino cómo ha cambiado su forma de entender ciertos valores. Cuando visita Sevilla, la parte social y ruidosa de las reuniones familiares, que antes le parecía completamente normal, ahora le resulta a la vez entrañable y agotadora. Y cuando está en Ámsterdam, hay días en los que echa de menos precisamente ese caos que, durante años, había querido dejar atrás.\n\nCarmen ha llegado a la conclusión de que su identidad ya no encaja del todo en ninguna de las dos categorías disponibles: ni completamente sevillana ni completamente integrada en los Países Bajos. Sospecha que esto le ocurre a la mayoría de las personas que emigran durante muchos años, aunque nadie parezca hablar demasiado abiertamente de esa incomodidad concreta, quizás porque no encaja bien en ninguna respuesta corta a una pregunta tan simple como "¿de dónde eres?".',
+  gloss: [
+    { es: 'calcar (una expresión)', en: 'copiar directamente la estructura de una lengua en otra, de forma poco natural' },
+    { es: 'una guiri', en: 'coloquialmente en España, una persona extranjera, sobre todo turista' },
+    { es: 'entrañable', en: 'que produce cariño y ternura' },
+    { es: 'emigrar', en: 'dejar el propio país para vivir en otro' },
+    { es: 'encajar', en: 'ajustarse bien a una categoría, una situación o un grupo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué actitud tiene Carmen hacia su propia identidad, según el texto?', options: ['Total seguridad, se siente completamente sevillana', 'Una sensación de no encajar del todo en ninguna de las dos categorías', 'Rechazo absoluto hacia su origen español'], answer: 1 },
+    { type: 'mcq', q: '¿Qué sugiere el texto sobre otras personas que emigran durante muchos años?', options: ['Que no les afecta ningún conflicto de identidad', 'Que probablemente comparten una incomodidad similar, aunque poco discutida', 'Que siempre acaban prefiriendo el país de acogida'], answer: 1 },
+    { type: 'short', q: '¿En qué ciudad vive Carmen ahora? (una palabra)', accept: ['ámsterdam', 'amsterdam'] },
+    { type: 'translate', line: 'Su español, dice ella misma con una sonrisa algo incómoda, ha empezado a sonar raro incluso a sus propios oídos', model: 'Her Spanish, she herself says with a somewhat uneasy smile, has started to sound strange even to her own ears' }
+  ]
+},
+
+{
+  id: 'agujeros-negros-ciencia-b2', title: 'Qué es realmente un agujero negro', level: 7, theme: 'ciencia',
+  text: 'Cuando una estrella mucho más masiva que el Sol agota todo su combustible nuclear, ya no dispone de la energía necesaria para sostener su propia estructura, y su núcleo se derrumba sobre sí mismo bajo el efecto de la gravedad. Si la masa restante supera un determinado límite, ese colapso no se detiene en ningún punto intermedio: continúa hasta concentrar toda la materia en una región de tamaño prácticamente nulo. Eso, y no una especie de agujero literal en el espacio, es lo que los físicos llaman un agujero negro.\n\nLo que realmente define a un agujero negro no es tanto su densidad extrema, sino la existencia de lo que se conoce como horizonte de sucesos: una frontera invisible a partir de la cual ni siquiera la luz dispone de suficiente velocidad para escapar de la atracción gravitatoria. Cualquier objeto, señal o rayo de luz que cruce esa frontera quedará atrapado para siempre, sin ninguna posibilidad de salir ni de enviar información al exterior.\n\nDurante décadas, los agujeros negros se consideraron una consecuencia puramente teórica de las ecuaciones de Einstein, más una curiosidad matemática que un objeto real. No fue hasta que se detectaron señales indirectas —estrellas orbitando aparentemente alrededor de la nada, o emisiones de rayos X producidas por materia que caía hacia un objeto invisible— cuando la comunidad científica aceptó que existían de verdad en el universo observable.\n\nEn 2019, un equipo internacional consiguió algo que muchos habían dado por imposible: fotografiar, mediante una red de radiotelescopios repartidos por todo el planeta, la sombra proyectada por el horizonte de sucesos de un agujero negro supermasivo situado en el centro de una galaxia lejana. Aquella imagen borrosa, de un anillo de luz rodeando una oscuridad absoluta, confirmó de manera directa lo que la teoría llevaba prediciendo más de un siglo.',
+  gloss: [
+    { es: 'el combustible nuclear', en: 'el material que una estrella consume para producir energía mediante fusión' },
+    { es: 'derrumbarse', en: 'caer o colapsar de forma repentina sobre sí mismo' },
+    { es: 'el horizonte de sucesos', en: 'la frontera de un agujero negro más allá de la cual nada puede escapar' },
+    { es: 'supermasivo', en: 'que tiene una masa extraordinariamente grande, muy superior a la habitual' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué corrige el texto sobre la idea popular de un agujero negro?', options: ['Que no es un colapso gravitatorio real', 'Que no es un "agujero" literal, sino materia colapsada con un horizonte de sucesos', 'Que no tiene relación con la gravedad'], answer: 1 },
+    { type: 'mcq', q: '¿Qué importancia tiene la fotografía de 2019, según el texto?', options: ['Fue la primera predicción teórica de su existencia', 'Confirmó de forma directa y visual lo que la teoría ya predecía', 'Demostró que los agujeros negros no existen'], answer: 1 },
+    { type: 'short', q: '¿En qué año se fotografió el agujero negro? (una palabra)', accept: ['2019'] },
+    { type: 'translate', line: 'ni siquiera la luz dispone de suficiente velocidad para escapar de la atracción gravitatoria', model: 'not even light has enough speed to escape the gravitational pull' }
+  ]
+},
+
+{
+  id: 'deepfakes-medios-b2', title: '¿Se puede confiar todavía en un vídeo?', level: 7, theme: 'medios',
+  text: 'Durante décadas, un vídeo funcionó como una prueba casi irrefutable: si algo se veía ocurrir en pantalla, difícilmente se podía negar que hubiera sucedido. La tecnología conocida como "deepfake", capaz de generar rostros y voces sintéticas prácticamente indistinguibles de las reales, ha empezado a poner en duda esa certeza que dábamos por garantizada.\n\nAunque algunos deepfakes se han utilizado con fines claramente cómicos o artísticos, otros han circulado con la intención expresa de engañar: vídeos falsos de políticos pronunciando declaraciones que nunca hicieron, o de directivos de empresas anunciando decisiones inventadas que llegaron a mover, durante unas horas, el precio de acciones en bolsa. No es de extrañar que muchos expertos en seguridad digital insistan en que necesitamos herramientas nuevas antes de que la desconfianza generalizada acabe siendo más peligrosa que la propia tecnología.\n\nHay quienes defienden que la solución pasa por desarrollar sistemas automáticos capaces de detectar manipulaciones, una especie de carrera armamentística técnica entre quienes crean deepfakes y quienes los detectan. Otros, sin embargo, sostienen que ninguna solución puramente tecnológica bastará mientras no cambiemos también nuestros hábitos de consumo de información: verificar la fuente original de un vídeo antes de compartirlo, por ejemplo, sigue siendo una medida más eficaz de lo que mucha gente está dispuesta a admitir.\n\nEs poco probable que dejemos de creer en las imágenes por completo; seguimos necesitando, como especie, algún tipo de prueba visual en la que confiar. Lo más realista es que aprendamos, poco a poco, a tratar cualquier vídeo sorprendente con la misma cautela con la que ya tratamos un titular sensacionalista: no como una mentira automática, sino como algo que, sencillamente, merece comprobarse antes de darlo por cierto.',
+  gloss: [
+    { es: 'irrefutable', en: 'que no se puede negar ni discutir' },
+    { es: 'un directivo', en: 'una persona con un cargo importante en la dirección de una empresa' },
+    { es: 'una carrera armamentística', en: 'una competición en la que cada bando mejora continuamente sus recursos frente al otro' },
+    { es: 'sensacionalista', en: 'que exagera o dramatiza deliberadamente para atraer atención' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué posición final defiende el texto ante los deepfakes?', options: ['Que hay que dejar de confiar en cualquier imagen', 'Que conviene tratar los vídeos sorprendentes con cautela, verificando antes de creer', 'Que la tecnología resolverá el problema por sí sola'], answer: 1 },
+    { type: 'mcq', q: '¿Qué comparación usa el texto para describir la actitud recomendada?', options: ['Tratar los vídeos como se trata un titular sensacionalista', 'Tratar los vídeos como pruebas judiciales', 'Tratar los vídeos como obras de ficción sin más'], answer: 0 },
+    { type: 'short', q: '¿Cómo se llama la tecnología que genera rostros y voces falsas? (una palabra)', accept: ['deepfake', 'deepfakes'] },
+    { type: 'translate', line: 'un vídeo funcionó como una prueba casi irrefutable', model: 'a video functioned as almost irrefutable proof' }
+  ]
+},
+
+{
+  id: 'glaciar-naturaleza-b2', title: 'El glaciar que se mide cada verano', level: 6, theme: 'naturaleza',
+  text: 'Desde que empezó a estudiar este glaciar pirenaico hace veintidós años, la glacióloga Ana Ferrer ha regresado cada mes de agosto para medir, metro a metro, cuánto hielo ha perdido durante el año anterior. Cuando comenzó sus mediciones, el glaciar todavía cubría una extensión considerable del valle; hoy, dice ella sin ocultar su preocupación, apenas queda una fracción reducida de aquella masa de hielo original.\n\nEl método que utiliza no ha cambiado apenas desde que empezó: clava varillas metálicas en puntos concretos del hielo a principios de temporada, y vuelve a medir cuánto hielo se ha derretido alrededor de cada varilla al final del verano. Es un trabajo lento, casi artesanal, en un campo donde la mayoría de sus colegas ya dependen exclusivamente de satélites e imágenes por radar.\n\nLo que distingue a este glaciar concreto, explica Ferrer, es la velocidad a la que ha retrocedido en comparación con otros glaciares pirenaicos de tamaño similar. Mientras algunos vecinos han perdido hielo de forma relativamente gradual, este ha experimentado dos veranos especialmente cálidos que, por sí solos, provocaron casi la cuarta parte de toda la pérdida registrada en dos décadas.\n\nSegún las proyecciones más recientes del equipo de Ferrer, este glaciar concreto podría desaparecer por completo dentro de una década, mucho antes de lo que se calculaba hace apenas cinco años. Ella reconoce que, en algún momento, tendrá que aceptar que su objeto de estudio simplemente dejará de existir. Aun así, insiste en seguir midiendo cada verano, aunque solo sea, dice, para dejar un registro exacto de cómo desapareció.',
+  gloss: [
+    { es: 'un glaciar', en: 'una gran masa de hielo que se forma y se mueve lentamente en zonas de montaña frías' },
+    { es: 'una glacióloga', en: 'una científica especializada en el estudio de los glaciares' },
+    { es: 'una varilla', en: 'una barra fina y larga, normalmente metálica' },
+    { es: 'retroceder (un glaciar)', en: 'perder tamaño o extensión con el tiempo' },
+    { es: 'una proyección (científica)', en: 'una estimación de lo que ocurrirá en el futuro según los datos actuales' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué sigue Ferrer usando el método de las varillas, según el texto?', options: ['Porque desconfía completamente de los satélites', 'Porque es un método fiable, aunque más lento que las alternativas modernas', 'Porque es obligatorio por ley'], answer: 1 },
+    { type: 'mcq', q: '¿Qué actitud transmite Ferrer ante la posible desaparición del glaciar?', options: ['Indiferencia total ante el resultado', 'Una aceptación resignada, combinada con el deseo de documentarlo bien', 'Optimismo de que el glaciar se recuperará'], answer: 1 },
+    { type: 'short', q: '¿Cuántos años lleva Ferrer estudiando este glaciar? (una palabra)', accept: ['veintidós', '22'] },
+    { type: 'translate', line: 'insiste en seguir midiendo cada verano, aunque solo sea, dice, para dejar un registro exacto de cómo desapareció', model: 'she insists on continuing to measure it every summer, if only, she says, to leave an exact record of how it disappeared' }
+  ]
+},
+
+{
+  id: 'reconciliacion-hermanos-relaciones-b2', title: 'Diez años sin hablarse', level: 6, theme: 'relaciones',
+  text: 'Si alguien le hubiera dicho a Marta, hace un año, que volvería a hablar con su hermano Diego, probablemente no lo habría creído. Llevaban más de una década sin dirigirse la palabra, desde una discusión por la herencia de sus padres que, con el tiempo, había dejado de tratarse realmente sobre dinero para convertirse en algo mucho más difícil de nombrar.\n\nFue la enfermedad grave de una tía común la que finalmente los obligó a coincidir en el mismo hospital, sentados en la misma sala de espera durante horas. Al principio apenas cruzaron palabra, más allá de los saludos estrictamente necesarios. Sin embargo, algo cambió cuando Diego, sin que nadie se lo pidiera, empezó a contarle a Marta detalles de su vida de los últimos años que ella desconocía por completo: un divorcio complicado, un cambio de trabajo, una operación que había ocultado a casi toda la familia.\n\nMarta se dio cuenta, escuchándolo, de que llevaba diez años imaginando a un hermano que quizás ya no existía del todo: seguía viendo al Diego arrogante y desconsiderado de aquella discusión antigua, sin haber contemplado siquiera que la persona real podía haber cambiado en todo ese tiempo. Aquella tarde en el hospital no resolvió de golpe todos los conflictos pendientes entre ambos, pero sí abrió una grieta por la que, poco a poco, empezó a colarse algo parecido a una conversación real.\n\nHoy se llaman una vez por semana, y aunque ninguno de los dos ha mencionado directamente aquella vieja discusión, ambos parecen haber decidido, sin decirlo en voz alta, que diez años de silencio ya habían sido, de largo, un precio demasiado alto por un desacuerdo que ya casi ni recuerdan con precisión.',
+  gloss: [
+    { es: 'la herencia', en: 'los bienes o el dinero que se reciben de un familiar tras su muerte' },
+    { es: 'desconsiderado', en: 'que no tiene en cuenta los sentimientos o las necesidades de los demás' },
+    { es: 'una grieta', en: 'aquí, en sentido figurado, una pequeña abertura por la que algo empieza a cambiar' },
+    { es: 'colarse', en: 'entrar de forma discreta o poco a poco en un espacio o situación' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué descubre Marta al escuchar a Diego en el hospital?', options: ['Que su hermano sigue siendo exactamente como lo recordaba', 'Que había estado imaginando a una versión desactualizada de su hermano', 'Que Diego nunca cambió de opinión sobre la herencia'], answer: 1 },
+    { type: 'mcq', q: '¿Qué sugiere el último párrafo sobre la discusión original?', options: ['Que sigue siendo el tema central de sus conversaciones actuales', 'Que ambos parecen haberla dejado atrás, sin necesidad de resolverla explícitamente', 'Que Marta todavía no ha perdonado a Diego'], answer: 1 },
+    { type: 'short', q: '¿Por qué motivo original dejaron de hablarse los hermanos? (dos palabras)', accept: ['la herencia', 'por la herencia'] },
+    { type: 'translate', line: 'Si alguien le hubiera dicho a Marta, hace un año, que volvería a hablar con su hermano Diego, probablemente no lo habría creído.', model: 'If someone had told Marta, a year ago, that she would speak to her brother Diego again, she probably would not have believed it.' }
+  ]
+},
+
+{
+  id: 'caja-recetas-alimentacion-b2', title: 'La caja de recetas de la abuela', level: 6, theme: 'alimentacion',
+  text: 'En el fondo de un armario de la cocina, envuelta en un paño de cocina ya descolorido, mi madre encontró la vieja caja de recetas de mi abuela: una lata de galletas oxidada, llena de fichas de cartulina escritas a mano con una letra apretada y algo temblorosa en las últimas entradas. Dentro había más de ochenta recetas, ordenadas sin ningún criterio evidente salvo, quizás, el orden en que mi abuela las había ido aprendiendo a lo largo de su vida.\n\nAlgunas fichas incluían ingredientes que hoy resultarían casi imposibles de conseguir en la misma forma: manteca de cerdo comprada directamente al carnicero, harina sin marca concreta, medidas expresadas en "un puñado" o "lo que admita la masa", en lugar de gramos exactos. Otras, en cambio, llevaban anotaciones al margen añadidas años después, con tinta de otro color: correcciones, sustituciones de ingredientes que ya no encontraba en el mercado, o simples comentarios como "a tu padre no le gustó, menos azúcar la próxima vez".\n\nLa ficha que más nos emocionó a mi madre y a mí fue la del pastel de manzana que mi abuela preparaba cada cumpleaños familiar. En una esquina, casi ilegible, había escrito: "Este es el pastel que hizo que tu abuelo me pidiera matrimonio, así que más vale que salga bien". Ninguno de los dos sabíamos aquella historia hasta ese momento.\n\nMi madre ha decidido digitalizar cada ficha en cuanto tenga tiempo, para que el papel no se deteriore aún más, aunque insiste en conservar también los originales. Para ella, aquella caja oxidada no contiene simplemente instrucciones de cocina, sino ochenta pequeños fragmentos de la vida de una mujer que, de otro modo, se habrían perdido para siempre junto con ella.',
+  gloss: [
+    { es: 'una ficha (de receta)', en: 'una tarjeta pequeña, normalmente de cartulina, con información escrita' },
+    { es: 'oxidado', en: 'que ha desarrollado óxido, la capa que se forma en el metal con la humedad' },
+    { es: 'la manteca de cerdo', en: 'la grasa animal usada tradicionalmente para cocinar' },
+    { es: 'digitalizar', en: 'convertir un documento físico en un archivo digital' },
+    { es: 'deteriorarse', en: 'estropearse o empeorar con el paso del tiempo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué revela la anotación sobre el pastel de manzana?', options: ['Una receta fallida que nunca se repitió', 'Una historia familiar desconocida hasta ese momento', 'Un error de la abuela al escribir la ficha'], answer: 1 },
+    { type: 'mcq', q: '¿Qué significa para la madre esta caja de recetas, según el último párrafo?', options: ['Simples instrucciones prácticas de cocina, sin más valor', 'Fragmentos personales de la vida de su propia madre', 'Un objeto que piensa tirar pronto'], answer: 1 },
+    { type: 'short', q: '¿Cuántas recetas había, aproximadamente? (una palabra o número)', accept: ['ochenta', 'más de ochenta'] },
+    { type: 'translate', line: 'Este es el pastel que hizo que tu abuelo me pidiera matrimonio', model: 'This is the cake that made your grandfather propose to me' }
+  ]
+},
+
+{
+  id: 'curva-olvido-educacion-b2', title: 'Por qué olvidamos casi todo lo que estudiamos', level: 6, theme: 'educacion',
+  text: 'A finales del siglo diecinueve, el psicólogo alemán Hermann Ebbinghaus llevó a cabo un experimento tan sencillo como incómodo de aceptar: memorizó listas de sílabas sin sentido y midió, día tras día, cuánto recordaba de ellas. El resultado, conocido hoy como la "curva del olvido", mostró algo que cualquier estudiante reconoce por experiencia propia: sin ningún tipo de repaso, olvidamos la mayor parte de lo aprendido en cuestión de días, y una buena parte de ello en cuestión de horas.\n\nLo interesante del hallazgo de Ebbinghaus no es tanto que olvidemos —eso resulta bastante intuitivo—, sino la forma exacta en que lo hacemos. El olvido no avanza a un ritmo constante: la pérdida es muy rápida en las primeras veinticuatro horas después de estudiar algo, y después se ralentiza progresivamente, de modo que lo que sobrevive a la primera semana tiende a mantenerse mucho más tiempo.\n\nEsta curva tiene una implicación práctica que muchos sistemas educativos todavía no aprovechan del todo: repasar un contenido justo en el momento en que está a punto de olvidarse por completo "reinicia" la curva, y cada repaso sucesivo hace que el olvido posterior sea más lento que el anterior. Es la base científica de lo que hoy se conoce como repetición espaciada, una técnica cada vez más utilizada en aplicaciones de idiomas y de memorización en general.\n\nParadójicamente, la mayoría de los estudiantes siguen concentrando todo su estudio justo antes de un examen, exactamente la estrategia que la propia curva del olvido predice como menos eficaz a largo plazo. Distribuir el mismo número de horas de estudio a lo largo de varias semanas, en lugar de concentrarlas en una sola noche, produce sistemáticamente mejores resultados de retención, aunque exija, eso sí, bastante más disciplina y planificación previa.',
+  gloss: [
+    { es: 'una sílaba sin sentido', en: 'un conjunto de letras que se pronuncia como palabra pero no significa nada' },
+    { es: 'ralentizarse', en: 'volverse más lento' },
+    { es: 'la repetición espaciada', en: 'una técnica de estudio que reparte los repasos en el tiempo en vez de concentrarlos' },
+    { es: 'la retención (de información)', en: 'la capacidad de conservar en la memoria lo aprendido' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué es lo verdaderamente novedoso del hallazgo de Ebbinghaus, según el texto?', options: ['Que olvidamos con el tiempo, algo ya obvio', 'La forma exacta y el ritmo con que se produce el olvido', 'Que la memoria humana es perfecta al principio'], answer: 1 },
+    { type: 'mcq', q: '¿Qué crítica implícita hace el texto sobre el hábito de estudiar la noche anterior a un examen?', options: ['Que es la estrategia más eficaz posible', 'Que contradice justo lo que la curva del olvido recomendaría', 'Que no tiene ninguna relación con la curva del olvido'], answer: 1 },
+    { type: 'short', q: '¿De qué nacionalidad era Ebbinghaus? (una palabra)', accept: ['alemán', 'aleman'] },
+    { type: 'translate', line: 'sin ningún tipo de repaso, olvidamos la mayor parte de lo aprendido en cuestión de días', model: 'without any kind of review, we forget most of what we learned within a matter of days' }
+  ]
+},
+
+{
+  id: 'teletrabajo-productividad-trabajo-b2', title: 'El teletrabajo, ¿mito o realidad productiva?', level: 7, theme: 'trabajo',
+  text: 'Cuando millones de empleados se vieron obligados a trabajar desde casa de un día para otro, muchas empresas asumieron que la productividad se desplomaría de inmediato. Sorprendentemente, varios estudios posteriores mostraron justo lo contrario: en no pocos sectores, la productividad medida por hora trabajada incluso aumentó durante los primeros meses de teletrabajo generalizado.\n\nSin embargo, atribuir ese aumento únicamente al hecho de trabajar desde casa sería, según reconocen los propios investigadores, una simplificación excesiva. Gran parte de la mejora inicial parece explicarse por factores paralelos: menos tiempo perdido en desplazamientos, horarios más flexibles adaptados al ritmo personal de cada trabajador, y una motivación inicial elevada, en parte impulsada por el miedo a perder el empleo durante una crisis económica.\n\nCon el paso de los meses, ese efecto inicial empezó a matizarse considerablemente. Algunos estudios posteriores detectaron un descenso gradual en la colaboración espontánea entre compañeros, precisamente el tipo de intercambio informal que suele generar ideas nuevas y que resulta mucho más difícil de reproducir a través de una videollamada programada. Asimismo, empleados jóvenes, recién incorporados a sus puestos, reportaron sistemáticamente más dificultades para aprender de compañeros con más experiencia sin la interacción presencial cotidiana.\n\nLa conclusión que empieza a consolidarse entre quienes estudian el fenómeno no es que el teletrabajo sea, sin más, mejor o peor que el trabajo presencial, sino que su efecto depende enormemente del tipo de tarea, del sector y de la etapa profesional de cada persona. Un modelo híbrido, que combine ambos formatos según la necesidad concreta de cada momento, parece ofrecer hoy el equilibrio más razonable entre los beneficios y los costes que ambos extremos llevan aparejados.',
+  gloss: [
+    { es: 'desplomarse', en: 'caer de forma brusca y repentina' },
+    { es: 'un desplazamiento (al trabajo)', en: 'el trayecto que se hace habitualmente para llegar al lugar de trabajo' },
+    { es: 'matizar', en: 'añadir precisiones que suavizan o corrigen una afirmación anterior' },
+    { es: 'aparejado', en: 'que va unido o es consecuencia directa de otra cosa' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué matiza el texto sobre el aumento inicial de productividad en el teletrabajo?', options: ['Que se debió únicamente a trabajar desde casa', 'Que probablemente se debió a varios factores combinados, no solo al teletrabajo en sí', 'Que en realidad no existió tal aumento'], answer: 1 },
+    { type: 'mcq', q: '¿Qué conclusión final propone el texto sobre el teletrabajo frente al trabajo presencial?', options: ['Que uno es claramente superior al otro en todos los casos', 'Que su efecto depende del tipo de tarea y del contexto de cada persona', 'Que ambos modelos son exactamente equivalentes'], answer: 1 },
+    { type: 'short', q: '¿Qué modelo se propone como equilibrio razonable? (una palabra)', accept: ['híbrido', 'hibrido', 'un modelo híbrido'] },
+    { type: 'translate', line: 'la productividad medida por hora trabajada incluso aumentó durante los primeros meses de teletrabajo generalizado', model: 'productivity measured per hour worked even increased during the first months of widespread remote work' }
+  ]
+},
+
+{
+  id: 'garantia-electrodomestico-servicios-b2', title: 'La batalla por una garantía de dos años', level: 6, theme: 'servicios',
+  text: 'Cuando la lavadora de Pilar dejó de funcionar catorce meses después de comprarla, ella asumió que la reparación o la sustitución del aparato correrían por cuenta del fabricante, ya que la garantía legal en España cubre dos años completos desde la compra. La tienda donde la había adquirido, sin embargo, le informó de que solo ofrecían garantía comercial de un año, y que a partir de ese momento cualquier reparación correría por cuenta suya.\n\nPilar, que había trabajado brevemente en el sector de consumo años atrás, sabía que la ley española distingue precisamente entre la garantía comercial que ofrece voluntariamente cada tienda y la garantía legal, obligatoria por ley, que protege al consumidor durante dos años frente a cualquier defecto de fabricación. Aun así, la vendedora insistió varias veces en que "la garantía ya había caducado", como si el plazo legal simplemente no existiera.\n\nEn lugar de discutir más con la vendedora, Pilar decidió presentar una reclamación formal por escrito, citando expresamente el artículo correspondiente de la ley de garantías vigente. Adjuntó copia del ticket de compra y explicó con detalle la avería, un fallo en el motor que ningún uso indebido por su parte podía haber provocado.\n\nDos semanas después, recibió una llamada del servicio de atención al cliente de la cadena, disculpándose por la confusión inicial y ofreciéndole la reparación gratuita del electrodoméstico. Pilar sospecha que si hubiera aceptado sin más la primera respuesta de la vendedora, como probablemente hacen muchos consumidores por simple desconocimiento, habría acabado pagando una reparación que, legalmente, nunca le correspondía asumir.',
+  gloss: [
+    { es: 'la garantía legal', en: 'la protección mínima que la ley obliga a ofrecer al comprador de un producto' },
+    { es: 'caducar', en: 'dejar de tener validez tras un plazo determinado' },
+    { es: 'una avería', en: 'un fallo o daño que impide que algo funcione correctamente' },
+    { es: 'un uso indebido', en: 'un uso incorrecto o distinto del previsto para un producto' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué error comete inicialmente la vendedora, según el texto?', options: ['Confunde la garantía comercial con la garantía legal obligatoria', 'Ofrece una garantía superior a la legal', 'Se niega a vender el producto'], answer: 0 },
+    { type: 'mcq', q: '¿Qué sugiere el texto que le habría pasado a Pilar si hubiera aceptado la primera respuesta?', options: ['Habría recibido la reparación gratis de todos modos', 'Probablemente habría pagado una reparación que no le correspondía', 'La tienda la habría indemnizado igualmente'], answer: 1 },
+    { type: 'short', q: '¿Cuántos meses después de comprarla se estropeó la lavadora? (una palabra)', accept: ['catorce'] },
+    { type: 'translate', line: 'la garantía legal en España cubre dos años completos desde la compra', model: 'the legal warranty in Spain covers two full years from the date of purchase' }
+  ]
 }
 
 ];
