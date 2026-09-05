@@ -14359,6 +14359,432 @@ window.STRAND_LESSONS = [
     { id: 'p:animoB1:cloze', kind: 'cloze', text: '¿No estás ___ conmigo? (enfadado)', accept: ['enfadado', 'enfadada'] },
     { id: 'p:animoB1:recall', kind: 'recall', front: 'Pregunta impersonal más común para notar que algo va mal', back: '¿Qué te pasa? / ¿Todo bien?' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 function stragglers, part 2 (WORKLIST.md, section B1 · function)
+ * ========================================================================== */
+{
+  id: 'fn-sensaciones-fisicas-b1', strand: 'function', cefr: 'B1', level: 3, theme: 'salud',
+  pcic: ['funciones:B1:912', 'funciones:B1:913', 'funciones:B1:915', 'funciones:B1:916', 'funciones:B1:917',
+         'funciones:B1:919', 'funciones:B1:920', 'funciones:B1:921', 'funciones:B1:923'],
+  title: 'Expresar sensaciones físicas: tener, sentir, estar, doler',
+  summary: 'Four different grammatical shapes for what feels like the same idea: tener + noun for the classic sensations (hunger, cold, sleep), estar + adjective for fatigue and general state, doler with its subject flipped onto the body part, and sentirse/encontrarse for how you are doing overall.',
+  sections: [
+    { h: 'Tengo + sustantivo', html: 'The classic physical sensations use <i>tener</i> with a noun, gradable with a quantifier: <i>Tengo muchísima hambre</i>, <i>Teníamos un poco de frío</i>.' },
+    { h: 'Estoy cansado (de + infinitivo)', html: 'Fatigue uses <i>estar</i> + adjective, optionally with its cause: <i>Últimamente estoy bastante cansado</i>, <i>Estamos cansados de andar</i>.' },
+    { h: 'Me duele: the subject is the body part', html: '<i>Doler</i> works like <i>gustar</i> — the body part is the grammatical subject, and the person takes an indirect object pronoun: <i>Me duelen muchísimo los oídos</i> (plural verb, because "los oídos" is plural).' },
+    { h: 'Sentirse / encontrarse: overall state', html: 'For how you are doing in general, not one specific sensation: <i>Me siento bastante mal</i>, <i>Me encuentro fatal</i>.' }
+  ],
+  exponents: [
+    { es: 'Tengo muchísima hambre.', en: "I'm starving.", register: 'coloquial', note: 'tener + sustantivo, gradable' },
+    { es: 'Últimamente estoy bastante cansado.', en: "I've been quite tired lately.", register: 'neutral' },
+    { es: 'Me duelen muchísimo los oídos.', en: 'My ears hurt a lot.', register: 'neutral', note: 'doler — the body part is the subject, verb agrees with it' },
+    { es: 'Me siento bastante mal.', en: 'I feel pretty bad.', register: 'coloquial', note: 'sentirse — overall state' },
+    { es: 'Yo, subiendo escaleras, no me canso nada.', en: "Climbing stairs, I don't get tired at all.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Tengo frío.', en: "I'm cold.", note: 'tener + noun — a specific classic sensation' },
+    { es: 'Estoy cansado.', en: "I'm tired.", note: 'estar + adjective — fatigue' },
+    { es: 'Me duele la cabeza.', en: 'My head hurts.', note: 'doler — the body part is the subject' },
+    { es: 'Me encuentro fatal.', en: 'I feel terrible.', note: 'encontrarse — a general state, not one sensation' }
+  ],
+  pitfalls: [
+    '<i>Doler</i> agrees with the body part, not with the person: <i>me duele la cabeza</i> (singular) but <i>me duelen los oídos</i> (plural) — never <i>*me duele los oídos</i>.',
+    'Do not say <i>*soy cansado</i> for fatigue — it is <i>estoy cansado</i>, a temporary state, not a permanent trait with <i>ser</i>.',
+    '<i>Tener hambre/frío/sueño</i> uses a noun, so intensify with <i>mucho/poco</i>, not <i>muy</i>: <i>mucha hambre</i>, never <i>*muy hambre</i>.'
+  ],
+  examples: [
+    { es: 'Teníamos mucha sed después de la caminata.', en: 'We were very thirsty after the hike.' },
+    { es: 'Les duele un poco la garganta.', en: 'Their throats hurt a bit.' },
+    { es: 'No estoy muy bien, la verdad.', en: "I'm not doing very well, to be honest." }
+  ],
+  probes: [
+    { id: 'p:sensfisB1:doler', kind: 'mcq', q: '"Me ___ los oídos." (doler, concuerda con "los oídos")',
+      options: ['duele', 'duelen', 'duelo'], answer: 1 },
+    { id: 'p:sensfisB1:tenerestar', kind: 'mcq', q: '¿Cuál es correcta para el cansancio?',
+      options: ['Soy cansado.', 'Estoy cansado.', 'Tengo cansado.'], answer: 1 },
+    { id: 'p:sensfisB1:cloze', kind: 'cloze', text: 'Tengo mucha ___ , no he comido nada. (hambre)', accept: ['hambre'] },
+    { id: 'p:sensfisB1:recall', kind: 'recall', front: 'Con "doler", ¿qué es el sujeto gramatical?', back: 'la parte del cuerpo, no la persona' }
+  ]
+},
+
+{
+  id: 'fn-pedir-objetos-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:985', 'funciones:B1:986', 'funciones:B1:988', 'funciones:B1:989', 'funciones:B1:990',
+         'funciones:B1:991', 'funciones:B1:992', 'funciones:B1:993', 'funciones:B1:994', 'funciones:B1:996'],
+  title: 'Pedir objetos: del imperativo directo a la pregunta atenuada',
+  summary: 'The same request for a physical object can be a bare imperative, a softened imperative with "por favor" and a reason, or a question that hands the other person a graceful way to refuse — three levels of directness for what is grammatically almost the same sentence.',
+  sections: [
+    { h: 'Direct: imperative + object', html: '<i>Pásame la mantequilla</i>, <i>Póngame también medio kilo de fresas</i> — the imperative alone, used with people you know well or across a shop counter.' },
+    { h: 'Softened: imperative + atenuador', html: 'Adding <i>por favor</i> and often a reason softens the same imperative: <i>Déjame tu encendedor, por favor</i>, <i>Tráeme el libro la semana que viene. Es que lo necesito.</i>' },
+    { h: 'Indirect: a question that allows refusal', html: '<i>¿Puedes/Podrías + infinitivo?</i>, <i>¿Te importa/importaría + infinitivo?</i> and <i>¿Me + verbo?</i> turn the request into a question, which grammatically leaves room to say no: <i>¿Te importaría prestarme tu falda verde?</i>, <i>¿Me dejas 5 euros?</i>' }
+  ],
+  exponents: [
+    { es: 'Pásame la mantequilla.', en: 'Pass me the butter.', register: 'coloquial', note: 'imperative alone, close relationship' },
+    { es: 'Déjame tu encendedor, por favor.', en: 'Lend me your lighter, please.', register: 'coloquial', note: 'imperative + atenuador' },
+    { es: '¿Podrías darme un poco más de agua?', en: 'Could you give me a bit more water?', register: 'neutral', note: 'question form — leaves room to refuse' },
+    { es: '¿Te importaría prestarme tu falda verde para la fiesta?', en: 'Would you mind lending me your green skirt for the party?', register: 'neutral' },
+    { es: 'Quería una botella de agua, por favor.', en: "I'd like a bottle of water, please.", register: 'formal', note: 'imperfect for politeness — standard for ordering/shopping' }
+  ],
+  contrasts: [
+    { es: 'Pásame el pan.', en: 'Pass me the bread.', note: 'bare imperative — direct, close relationship' },
+    { es: '¿Me pasas el pan?', en: 'Could you pass me the bread?', note: 'question form — same request, softer, room to decline' },
+    { es: '¿Te importaría pasarme el pan?', en: 'Would you mind passing me the bread?', note: 'most indirect/polite of the three' }
+  ],
+  pitfalls: [
+    'The bare imperative (<i>Pásame...</i>) is fine among friends and family but can sound abrupt with a stranger or in a formal setting — reach for the question forms there.',
+    '<i>Quería</i> (imperfect, not present <i>quiero</i>) is the conventional polite way to order or request in a shop/restaurant: <i>Quería un café</i>, not a rudeness marker despite the past tense.',
+    '<i>¿Te importaría...?</i> is grammatically a question about whether it bothers them — a literal "sí" answers that it WOULD bother them, i.e. a refusal; this can trip up learners expecting "sí" to mean agreement.'
+  ],
+  examples: [
+    { es: '¿Puedes dejarme tu diccionario de inglés?', en: 'Can you lend me your English dictionary?' },
+    { es: 'Tengo una boda el sábado, pero mi perro no puede estar solo en casa.', en: "I have a wedding on Saturday, but my dog can't be alone at home." },
+    { es: '¿Nos pone otra ración de gambas, por favor?', en: 'Could you bring us another portion of prawns, please?' }
+  ],
+  probes: [
+    { id: 'p:pedirobjB1:directoindirecto', kind: 'mcq', q: '¿Cuál deja más margen para negarse?',
+      options: ['Pásame el agua.', '¿Te importaría pasarme el agua?', 'Pasa el agua.'], answer: 1 },
+    { id: 'p:pedirobjB1:quería', kind: 'mcq', q: 'Pidiendo en una tienda, forma cortés convencional:',
+      options: ['Quiero un café.', 'Quería un café, por favor.', 'Deseo un café.'], answer: 1 },
+    { id: 'p:pedirobjB1:cloze', kind: 'cloze', text: '¿Me ___ 5 euros? (dejar)', accept: ['dejas'] },
+    { id: 'p:pedirobjB1:recall', kind: 'recall', front: '¿Qué tiempo verbal se usa en "quería un café" para pedir con cortesía?', back: 'el imperfecto (no el presente)' }
+  ]
+},
+
+{
+  id: 'fn-responder-orden-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:1035', 'funciones:B1:1036', 'funciones:B1:1039', 'funciones:B1:1040', 'funciones:B1:1041',
+         'funciones:B1:1042', 'funciones:B1:1044', 'funciones:B1:1045', 'funciones:B1:1046', 'funciones:B1:1049'],
+  title: 'Responder a una petición: aceptar, dudar, negarse',
+  summary: 'Three distinct responses to a request, each with its own grammar: agreeing without conditions, agreeing WITH a condition using a conditional clause, and refusing politely by pairing an apology with a reason introduced by "es que" — refusing bluntly, with no cushioning at all, is its own separate, much starker register.',
+  sections: [
+    { h: 'Agreeing without reservation', html: '<i>Claro que sí</i>, <i>De acuerdo</i> commit fully, no conditions attached.' },
+    { h: 'Agreeing with a condition', html: '<i>Sí, si me la devuelves pronto</i> attaches a condition to the agreement — a conditional clause, not a flat yes. <i>Bueno, venga...</i> agrees reluctantly, often followed by a caveat: <i>Pero cuídala mucho, ¿vale?</i>' },
+    { h: 'Refusing politely: apology + "es que" + reason', html: 'The standard polite refusal pairs an apology word with a reason: <i>Lo siento, no puedo. Es que tengo que trabajar.</i> Refusing without any of this softening — <i>No pienso hacerlo</i> — is markedly blunt and reads as an aggressive, escalating move, not a neutral option.' }
+  ],
+  exponents: [
+    { es: 'De acuerdo.', en: 'Agreed.', register: 'neutral', note: 'unreserved agreement' },
+    { es: 'Bueno, venga... Pero cuídala mucho, ¿vale?', en: 'Okay, fine... But take good care of it, alright?', register: 'coloquial', note: 'reluctant agreement + a caveat' },
+    { es: 'Sí, si me la devuelves pronto.', en: 'Yes, if you give it back to me soon.', register: 'coloquial', note: 'conditional agreement' },
+    { es: 'Lo siento, no puedo. Es que tengo que trabajar.', en: "I'm sorry, I can't. It's just that I have to work.", register: 'neutral', note: 'polite refusal: apology + es que + reason' },
+    { es: 'No pienso hacerlo.', en: "I'm not doing it.", register: 'coloquial', note: 'blunt refusal — no softening at all, reads as confrontational' }
+  ],
+  contrasts: [
+    { es: 'Claro que sí.', en: 'Of course.', note: 'unreserved agreement' },
+    { es: 'Sí, si me la devuelves pronto.', en: 'Yes, if you give it back soon.', note: 'agreement WITH a condition' },
+    { es: 'Lo siento, pero es que no puedo.', en: "Sorry, but I can't.", note: 'polite refusal, softened' },
+    { es: 'No pienso hacerlo.', en: "I'm not doing it.", note: 'blunt refusal, no softening — confrontational' }
+  ],
+  pitfalls: [
+    'A polite refusal almost always pairs an apology (<i>lo siento</i>, <i>me encantaría, pero...</i>) with a reason introduced by <i>es que</i> — dropping the reason and just saying <i>no puedo</i> can read as curt.',
+    '<i>No pienso + infinitivo</i> is not a neutral way to say no — it explicitly signals refusal to even consider it, appropriate only when you mean to be confrontational.',
+    'Eluding commitment (<i>No sé, es que...</i>, <i>No te lo puedo prometer</i>) is a distinct third move from both agreeing and refusing — it buys time without committing either way.'
+  ],
+  examples: [
+    { es: 'Me encantaría, pero tengo que cuidar a mis padres.', en: "I'd love to, but I have to look after my parents." },
+    { es: 'Lo voy a intentar, pero no te lo puedo prometer.', en: "I'll try, but I can't promise you." },
+    { es: '—¿Me prestas la bici? —Sí, si me la devuelves antes de las seis.', en: '—Will you lend me the bike? —Yes, if you give it back before six.' }
+  ],
+  probes: [
+    { id: 'p:respordenB1:blunt', kind: 'mcq', q: '¿Cuál es la negativa MÁS tajante/confrontativa?',
+      options: ['Lo siento, no puedo.', 'No pienso hacerlo.', 'Me encantaría, pero no puedo.'], answer: 1 },
+    { id: 'p:respordenB1:condicion', kind: 'mcq', q: '¿Cuál acepta CON una condición?',
+      options: ['De acuerdo.', 'Sí, si me la devuelves pronto.', 'Claro que sí.'], answer: 1 },
+    { id: 'p:respordenB1:cloze', kind: 'cloze', text: 'Lo siento, no puedo. ___ que tengo que trabajar. (es)', accept: ['Es', 'es'] },
+    { id: 'p:respordenB1:recall', kind: 'recall', front: 'Estructura típica de una negativa cortés', back: 'disculpa/lo siento + es que + razón' }
+  ]
+},
+
+{
+  id: 'fn-proponer-sugerir-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:1136', 'funciones:B1:1138', 'funciones:B1:1139', 'funciones:B1:1141', 'funciones:B1:1142',
+         'funciones:B1:1143', 'funciones:B1:1144', 'funciones:B1:1145', 'funciones:B1:1146', 'funciones:B1:1148'],
+  title: 'Proponer y sugerir: seis formas, una escala de fuerza',
+  summary: 'From a soft question to a near-command, B1 offers a real scale for proposing something — and the two that look most alike, "podrías/podríamos" and "deberías", are not interchangeable: one offers an option, the other leans toward advice.',
+  sections: [
+    { h: 'Soft: a question about the other person', html: '<i>¿Te apetece que + subjuntivo?</i>, <i>¿Qué te parece + si/infinitivo?</i> frame the proposal entirely as a question about what the other person wants.' },
+    { h: 'Middle: ¿y si...? and podríamos', html: '<i>¿Y si vamos este año a la playa?</i> (present indicative) floats an idea as a genuine option. <i>Podríamos ir a la montaña</i> suggests without pushing.' },
+    { h: 'Stronger: deberías and tienes que', html: '<i>Deberías/Deberíamos + infinitivo</i> leans toward advice, not just an option; <i>Tienes que + infinitivo</i> is stronger still, closer to an instruction than a suggestion.' },
+    { h: 'Direct: ¡Vamos a...! and the imperative', html: '<i>¡Vamos a la piscina!</i> and a plain imperative (<i>Prueba esto</i>) propose with no hedging at all — appropriate once the relationship is close or the stakes are low.' }
+  ],
+  exponents: [
+    { es: '¿Te apetece que vayamos a tomar algo?', en: 'Do you feel like going for a drink?', register: 'coloquial', note: 'softest — a question about desire' },
+    { es: '¿Qué te parece si vamos a ver la exposición de Picasso?', en: 'What do you think about going to see the Picasso exhibition?', register: 'neutral' },
+    { es: '¿Y si vamos este año a la playa?', en: 'What if we go to the beach this year?', register: 'coloquial' },
+    { es: 'Podríamos ir a la montaña este fin de semana.', en: 'We could go to the mountains this weekend.', register: 'neutral' },
+    { es: 'Deberíamos volver a hablar con él.', en: 'We should talk to him again.', register: 'neutral', note: 'leans toward advice, stronger than podríamos' },
+    { es: '¡Vamos a la piscina!', en: "Let's go to the pool!", register: 'coloquial', note: 'direct, no hedging — close relationship' }
+  ],
+  contrasts: [
+    { es: 'Podríamos ir a la montaña.', en: 'We could go to the mountains.', note: 'an option, no pressure' },
+    { es: 'Deberíamos ir a la montaña.', en: 'We should go to the mountains.', note: 'leans toward advice — a stronger push' },
+    { es: 'Tienes que venir a la fiesta.', en: 'You have to come to the party.', note: 'the strongest of the three — near-instruction' }
+  ],
+  pitfalls: [
+    '<i>Podrías/Podríamos</i> and <i>deberías/deberíamos</i> are not interchangeable — the first offers a possibility, the second pushes toward what you think is right, closer to advice than a neutral suggestion.',
+    '<i>¿Y si + presente?</i> keeps the indicative, not the subjunctive — <i>¿Y si vamos?</i>, never <i>*¿y si vayamos?</i>',
+    'The bluntest options (<i>¡Vamos a...!</i>, the plain imperative) suit a close relationship or low-stakes suggestion; using them with someone you do not know well can read as presumptuous.'
+  ],
+  examples: [
+    { es: '¿Qué os parece venir el viernes a casa a cenar?', en: 'What do you think about coming to my place for dinner on Friday?' },
+    { es: 'Podrías pensarlo un poco más. Es una decisión difícil.', en: 'You could think about it a bit more. It\'s a difficult decision.' },
+    { es: 'Prueba esto, seguro que te gusta.', en: "Try this, I'm sure you'll like it." }
+  ],
+  probes: [
+    { id: 'p:proponerB1:escala', kind: 'mcq', q: '¿Cuál es la propuesta MÁS fuerte, casi una instrucción?',
+      options: ['Podríamos ir al cine.', 'Tienes que venir a la fiesta.', '¿Te apetece que vayamos al cine?'], answer: 1 },
+    { id: 'p:proponerB1:modo', kind: 'mcq', q: '"¿Y si ___ (ir) a la playa?"',
+      options: ['vamos', 'vayamos', 'iremos'], answer: 0 },
+    { id: 'p:proponerB1:cloze', kind: 'cloze', text: '___ ir a la montaña este fin de semana. (podríamos)', accept: ['Podríamos', 'podríamos'] },
+    { id: 'p:proponerB1:recall', kind: 'recall', front: '¿"Podríamos" y "deberíamos" son intercambiables?', back: 'no — deberíamos empuja más, hacia el consejo' }
+  ]
+},
+
+{
+  id: 'fn-aceptar-propuesta-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:1171', 'funciones:B1:1172', 'funciones:B1:1173', 'funciones:B1:1174', 'funciones:B1:1175',
+         'funciones:B1:1176', 'funciones:B1:1178', 'funciones:B1:1179'],
+  title: 'Aceptar una propuesta: entusiasmo y aceptación con reparos',
+  summary: 'The same "yes" comes in an enthusiastic and a reluctant version, and the reluctant one has its own fixed formula — "bueno, si insistes" — that signals you are giving in rather than genuinely wanting to.',
+  sections: [
+    { h: 'Enthusiastic acceptance', html: 'A range of fixed positive words commits fully: <i>Perfecto</i>, <i>Estupendo</i>, <i>Fenomenal</i>, <i>(Muy) buena idea</i>, <i>Con mucho gusto</i>.' },
+    { h: 'Practical, neutral acceptance', html: '<i>Vale, podemos quedar a las ocho</i>, <i>(Está) bien, de acuerdo</i> accept without extra enthusiasm — just confirming the plan.' },
+    { h: 'Reluctant acceptance: giving in', html: '<i>Bueno</i> alone, or the fuller <i>Bueno, si insistes...</i>, signals you are accepting because the other person pushed, not because you especially wanted to.' }
+  ],
+  exponents: [
+    { es: 'Perfecto, quedamos a las ocho.', en: "Perfect, let's meet at eight.", register: 'coloquial', note: 'enthusiastic' },
+    { es: '—¿Vienes mañana a comer? —Encantada, con mucho gusto.', en: '—Are you coming to lunch tomorrow? —Delighted, with pleasure.', register: 'neutral' },
+    { es: 'Vale, podemos quedar a las ocho.', en: "Okay, we can meet at eight.", register: 'coloquial', note: 'neutral, practical acceptance' },
+    { es: 'Bueno, si insistes...', en: 'Well, if you insist...', register: 'coloquial', note: 'reluctant acceptance — giving in' }
+  ],
+  contrasts: [
+    { es: '¡Estupendo! Allí estaré.', en: "Great! I'll be there.", note: 'enthusiastic' },
+    { es: 'Vale, de acuerdo.', en: 'Okay, agreed.', note: 'neutral, practical' },
+    { es: 'Bueno, si insistes...', en: 'Well, if you insist...', note: 'reluctant — accepting only because pushed' }
+  ],
+  pitfalls: [
+    '<i>Bueno, si insistes...</i> is not neutral politeness — it explicitly signals the acceptance is reluctant, so using it for something you actually want to do sends the wrong signal.',
+    'The enthusiastic set (<i>Perfecto</i>, <i>Estupendo</i>, <i>Fenomenal</i>) works alone as a complete turn — no need to add a reason or explanation, unlike a refusal.'
+  ],
+  examples: [
+    { es: '¡Fantástico! Nos vemos allí.', en: "Fantastic! See you there." },
+    { es: 'Bien, de acuerdo, ¿a qué hora quedamos?', en: 'Fine, agreed, what time shall we meet?' },
+    { es: 'Bueno, vale, si tanto te apetece...', en: "Alright, fine, if you're that keen..." }
+  ],
+  probes: [
+    { id: 'p:aceptarpropB1:reluctante', kind: 'mcq', q: '¿Cuál señala una aceptación de mala gana?',
+      options: ['¡Estupendo!', 'Bueno, si insistes...', 'Con mucho gusto.'], answer: 1 },
+    { id: 'p:aceptarpropB1:entusiasmo', kind: 'mcq', q: '¿Cuál muestra más entusiasmo?',
+      options: ['Vale.', 'Bueno.', '¡Perfecto!'], answer: 2 },
+    { id: 'p:aceptarpropB1:cloze', kind: 'cloze', text: 'Vale, podemos ___ a las ocho. (quedar)', accept: ['quedar'] },
+    { id: 'p:aceptarpropB1:recall', kind: 'recall', front: 'Fórmula fija que señala que aceptas porque insistieron, no porque quieras', back: 'Bueno, si insistes...' }
+  ]
+},
+
+{
+  id: 'fn-aconsejar-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:1209', 'funciones:B1:1210', 'funciones:B1:1211', 'funciones:B1:1212', 'funciones:B1:1213',
+         'funciones:B1:1214', 'funciones:B1:1215', 'funciones:B1:1216', 'funciones:B1:1217', 'funciones:B1:1218'],
+  title: 'Aconsejar: del condicional a "yo que tú"',
+  summary: 'Advice runs on the conditional (podrías, tendrías que, deberías) for most everyday cases, but the most distinctively Spanish move is stepping into the other person\'s shoes explicitly — "yo que tú" — before giving the advice, which frames it as what you yourself would do, not an order.',
+  sections: [
+    { h: 'The conditional family', html: '<i>Podrías/Tendrías que/Deberías + infinitivo</i> are the default advice verbs, in roughly rising strength: <i>Podrías trabajar un poco menos</i>, <i>Tendrías que hablar con ella</i>, <i>Deberías dormir un poco más</i>.' },
+    { h: 'Yo que tú / Yo en tu lugar', html: 'Stepping into the listener\'s position before advising softens it into a shared perspective rather than an order: <i>Yo que tú, consultaría con un especialista.</i>' },
+    { h: 'Impersonal and formal registers', html: '<i>Lo mejor es/sería...</i> frames the advice as an objective best option. <i>Es necesario/importante/conveniente que + subjuntivo</i> is the more formal, impersonal register: <i>Es importante que bebas mucha agua todos los días.</i>' }
+  ],
+  exponents: [
+    { es: 'Podrías trabajar un poco menos.', en: 'You could work a bit less.', register: 'coloquial' },
+    { es: 'Deberías dormir un poco más.', en: 'You should sleep a bit more.', register: 'neutral' },
+    { es: 'Yo que tú, consultaría con un especialista.', en: 'If I were you, I would see a specialist.', register: 'coloquial', note: 'yo que tú + condicional' },
+    { es: 'Te aconsejo ir a la policía.', en: 'I advise you to go to the police.', register: 'neutral' },
+    { es: 'Es importante que bebas mucha agua todos los días.', en: "It's important that you drink a lot of water every day.", register: 'formal', note: 'impersonal + subjuntivo' }
+  ],
+  contrasts: [
+    { es: 'Podrías hablar con ella.', en: 'You could talk to her.', note: 'mild, a mere possibility' },
+    { es: 'Deberías hablar con ella.', en: 'You should talk to her.', note: 'stronger — leans toward what is right to do' },
+    { es: 'Yo que tú, hablaría con ella.', en: 'If I were you, I would talk to her.', note: 'framed as shared perspective, not an order' }
+  ],
+  pitfalls: [
+    '<i>Yo que tú</i> takes the CONDITIONAL in what follows, not the present or subjunctive: <i>Yo que tú, iría</i>, never <i>*yo que tú voy / vaya</i>.',
+    '<i>Te aconsejo/recomiendo</i> can take an infinitive (same implied subject relationship) OR <i>que + subjuntivo</i>: <i>Te aconsejo ir</i> and <i>Te recomiendo que vayas</i> are both correct, but do not mix the two frames (<i>*te aconsejo que ir</i>).',
+    'The impersonal, formal register (<i>Es importante que...</i>) always needs the subjunctive after <i>que</i> — this is not optional the way it can feel with the conditional family.'
+  ],
+  examples: [
+    { es: 'Tendrías que hablar con tu jefe sobre esto.', en: 'You should talk to your boss about this.' },
+    { es: '¿Y si le cuentas todo lo que ha pasado?', en: 'What if you told him everything that happened?' },
+    { es: 'Intenta hacer un poco de deporte cada semana.', en: 'Try to do a bit of exercise every week.' }
+  ],
+  probes: [
+    { id: 'p:aconsejarB1:yoquetu', kind: 'mcq', q: '"Yo que tú, ___ (ir) al médico." (condicional)',
+      options: ['voy', 'iría', 'vaya'], answer: 1 },
+    { id: 'p:aconsejarB1:formal', kind: 'mcq', q: 'Registro más formal/impersonal:',
+      options: ['Podrías descansar más.', 'Es importante que descanses.', 'Deberías descansar.'], answer: 1 },
+    { id: 'p:aconsejarB1:cloze', kind: 'cloze', text: 'Te recomiendo ___ (ir) a ver a un especialista. (con "que", subjuntivo)', accept: ['que vayas'] },
+    { id: 'p:aconsejarB1:recall', kind: 'recall', front: '¿Qué tiempo verbal sigue a "yo que tú"?', back: 'el condicional' }
+  ]
+},
+
+{
+  id: 'fn-saludar-responder-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:1287', 'funciones:B1:1288', 'funciones:B1:1290', 'funciones:B1:1293', 'funciones:B1:1294',
+         'funciones:B1:1301', 'funciones:B1:1302', 'funciones:B1:1303', 'funciones:B1:1304'],
+  title: 'Saludar y responder: la lengua escrita añade un registro',
+  summary: 'Spoken greetings barely change from A2, but B1 adds the written register — a letter or email opens with its own fixed formulas, entirely different from anything said aloud, and choosing the wrong one instantly signals a non-native or careless writer.',
+  sections: [
+    { h: 'Spoken: the familiar questions', html: '<i>¿Qué tal?</i>, <i>¿Cómo estás?</i> remain the everyday spoken greeting — nothing new in form, but expected fluently by B1.' },
+    { h: 'Written: a fixed, separate register', html: 'A letter or email never opens with <i>¿Qué tal?</i>. It opens with a name + colon: <i>Estimado Pedro:</i> (semi-formal, first name), <i>Estimado Sr. Antúnez:</i> (formal, surname), <i>Señor López:</i> (very formal, no "Estimado").' },
+    { h: 'Responding: matching the question\'s scale', html: 'Replies scale with the greeting: <i>Bien, gracias, como siempre, ¿y tú?</i> (good), <i>Regular, ¿y tú?</i> (so-so), <i>Mucho mejor, gracias, ¿y tú?</i> (specifically better than before) — always handing the question back.' }
+  ],
+  exponents: [
+    { es: '¿Qué tal?', en: "How's it going?", register: 'coloquial' },
+    { es: 'Estimado Pedro:', en: 'Dear Pedro,', register: 'neutral', note: 'written, semi-formal — first name' },
+    { es: 'Estimado Sr. Antúnez:', en: 'Dear Mr. Antúnez,', register: 'formal', note: 'written, formal — surname' },
+    { es: 'Bien, gracias, como siempre, ¿y tú?', en: 'Fine, thanks, as always, and you?', register: 'coloquial' },
+    { es: 'Bueno, regular. ¿Y tú?', en: 'Well, so-so. And you?', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: '¿Qué tal?', en: "How's it going?", note: 'spoken only' },
+    { es: 'Estimado Sr. Antúnez:', en: 'Dear Mr. Antúnez,', note: 'written only — never said aloud as a greeting' }
+  ],
+  pitfalls: [
+    'Never open a written letter or email with a spoken greeting like <i>¿Qué tal?</i> — the written register has its own fixed formulas entirely.',
+    '<i>Estimado + nombre de pila</i> (first name) is less formal than <i>Estimado Sr./Sra. + apellido</i> (surname); <i>Señor/Señora + apellido:</i> with no <i>Estimado</i> at all is the most formal or distant of the three.',
+    'A reply to a greeting almost always hands the question back with <i>¿y tú?</i> — answering only about yourself and stopping there can read as self-centered or abrupt.'
+  ],
+  examples: [
+    { es: 'Estimados señores:', en: 'Dear Sirs,' },
+    { es: '—¿Cómo estás? —Mucho mejor, gracias, ¿y tú?', en: '—How are you? —Much better, thanks, and you?' },
+    { es: 'Muy Sr. mío:', en: 'Dear Sir,' }
+  ],
+  probes: [
+    { id: 'p:saludarB1:escrito', kind: 'mcq', q: '¿Cuál se usa para ABRIR una carta formal, nunca en voz alta?',
+      options: ['¿Qué tal?', 'Estimado Sr. Antúnez:', '¿Cómo estás?'], answer: 1 },
+    { id: 'p:saludarB1:formalidad', kind: 'mcq', q: '¿Cuál es MÁS formal?',
+      options: ['Estimado Pedro:', 'Estimado Sr. Antúnez:', '¿Qué tal, Pedro?'], answer: 1 },
+    { id: 'p:saludarB1:cloze', kind: 'cloze', text: 'Bien, gracias, como siempre, ¿y ___? (tú)', accept: ['tú'] },
+    { id: 'p:saludarB1:recall', kind: 'recall', front: '¿Se puede abrir una carta con "¿Qué tal?"', back: 'no — el registro escrito usa fórmulas distintas' }
+  ]
+},
+
+{
+  id: 'fn-disculparse-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:1338', 'funciones:B1:1339', 'funciones:B1:1340'],
+  title: 'Disculparse con una razón: "es que..."',
+  summary: 'B1 adds the reason clause to the A2 apology words — "lo siento, es que..." — which matters because an apology with no explanation at all can read as insincere or minimal, however polite the word itself.',
+  sections: [
+    { h: 'The A2 words, now paired with a reason', html: '<i>Lo siento, de verdad, es que...</i>, <i>Disculpa/e, es que...</i>, <i>Perdóname/Perdóneme, es que...</i> — the apology word alone is still correct, but B1 expects the reason attached with <i>es que</i>.' },
+    { h: 'Tú vs usted forms', html: '<i>Disculpa/Perdóname</i> (tú) and <i>Disculpe/Perdóneme</i> (usted) are the informal/formal pair — the choice of form matters as much as the word itself.' }
+  ],
+  exponents: [
+    { es: 'Lo siento, de verdad, es que se me hizo tardísimo.', en: "I'm really sorry, it's just that I ran really late.", register: 'coloquial', note: 'apology + es que + reason' },
+    { es: 'Disculpe, es que había mucho tráfico.', en: 'I apologize, there was a lot of traffic.', register: 'formal', note: 'usted form' },
+    { es: 'Perdóname, es que se me olvidó por completo.', en: 'Forgive me, I completely forgot.', register: 'coloquial', note: 'tú form' }
+  ],
+  contrasts: [
+    { es: 'Perdona.', en: 'Sorry.', note: 'bare apology, A2 style' },
+    { es: 'Perdóname, es que se me olvidó.', en: "Forgive me, I forgot.", note: 'B1 adds the reason — reads as more sincere' }
+  ],
+  pitfalls: [
+    'A bare apology word with no reason at all (<i>Disculpa</i> and nothing else) can read as perfunctory for anything beyond a trivial bump — B1 expects the <i>es que</i> reason attached.',
+    'Match tú/usted consistently: <i>Disculpa/Perdóname</i> with tú, <i>Disculpe/Perdóneme</i> with usted — mixing them mid-apology is a common register slip.'
+  ],
+  examples: [
+    { es: 'Perdóneme, es que no le había visto llegar.', en: "Forgive me, I hadn't seen you arrive." },
+    { es: 'Disculpa, es que tenía el móvil en silencio.', en: 'Sorry, my phone was on silent.' },
+    { es: 'Lo siento, de verdad, es que no encontraba las llaves.', en: "I'm really sorry, I couldn't find my keys." }
+  ],
+  probes: [
+    { id: 'p:disculparseB1:razon', kind: 'mcq', q: '¿Qué añade B1 a la disculpa de A2?',
+      options: ['Nada nuevo', 'Una razón introducida con "es que"', 'Un gesto'], answer: 1 },
+    { id: 'p:disculparseB1:forma', kind: 'mcq', q: '¿Cuál es la forma de USTED?',
+      options: ['Perdóname', 'Perdóneme', 'Perdona'], answer: 1 },
+    { id: 'p:disculparseB1:cloze', kind: 'cloze', text: 'Disculpa, ___ que se me hizo tarde. (es)', accept: ['es'] },
+    { id: 'p:disculparseB1:recall', kind: 'recall', front: '¿Por qué una disculpa sin razón puede sonar insincera en B1?', back: 'porque se espera la razón con "es que"' }
+  ]
+},
+
+{
+  id: 'fn-felicitar-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:1374', 'funciones:B1:1375', 'funciones:B1:1377', 'funciones:B1:1379', 'funciones:B1:1380', 'funciones:B1:1381'],
+  title: 'Felicitar: por un logro y en fechas señaladas',
+  summary: 'B1 splits felicitar into two unrelated families: praising a job well done, and the fixed, unchanging formulas for specific calendar dates — mixing the two registers (praising someone\'s work with a Christmas formula, say) simply does not happen in Spanish.',
+  sections: [
+    { h: 'Praising an achievement', html: '<i>Buen trabajo</i>, <i>Bien hecho</i> praise something done well — short, usable in almost any register.' },
+    { h: 'Birthdays: a fixed formula', html: '<i>Que cumplas muchos más</i> is the standard birthday wish beyond a bare "feliz cumpleaños" — wishing many happy returns.' },
+    { h: 'Fixed holiday formulas', html: 'Each holiday has its own unchanging phrase, not built compositionally: <i>Felices Pascuas</i>, <i>Feliz Navidad</i>, <i>Feliz Año Nuevo</i> — memorize each as a set phrase.' }
+  ],
+  exponents: [
+    { es: '¡Buen trabajo!', en: 'Good job!', register: 'coloquial' },
+    { es: 'Bien hecho.', en: 'Well done.', register: 'neutral' },
+    { es: 'Que cumplas muchos más.', en: 'Many happy returns.', register: 'coloquial', note: 'birthday, beyond the bare "feliz cumpleaños"' },
+    { es: '¡Feliz Navidad!', en: 'Merry Christmas!', register: 'coloquial', note: 'fixed holiday formula' },
+    { es: '¡Feliz Año Nuevo!', en: 'Happy New Year!', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Buen trabajo.', en: 'Good job.', note: 'praising an achievement' },
+    { es: 'Feliz Navidad.', en: 'Merry Christmas.', note: 'fixed holiday formula, unrelated register' }
+  ],
+  pitfalls: [
+    'Holiday formulas (<i>Felices Pascuas, Feliz Navidad, Feliz Año Nuevo</i>) are fixed phrases, not built from a general rule — do not try to construct a parallel one for a date that has no traditional formula.',
+    'Do not mix the two families: praising work with a holiday formula, or wishing a birthday with <i>Bien hecho</i>, reads as simply mismatched.'
+  ],
+  examples: [
+    { es: '¡Buen trabajo con el informe!', en: 'Good work on the report!' },
+    { es: '¡Feliz cumpleaños! Que cumplas muchos más.', en: 'Happy birthday! Many happy returns.' },
+    { es: 'Felices Pascuas a toda la familia.', en: 'Happy Easter to the whole family.' }
+  ],
+  probes: [
+    { id: 'p:felicitarB1:tipo', kind: 'mcq', q: '¿Cuál es una fórmula fija de una fecha señalada?',
+      options: ['Bien hecho.', 'Feliz Navidad.', 'Buen trabajo.'], answer: 1 },
+    { id: 'p:felicitarB1:cumpleanos', kind: 'mcq', q: '¿Qué se dice, además de "feliz cumpleaños"?',
+      options: ['Que cumplas muchos más.', 'Bien hecho.', 'Buen trabajo.'], answer: 0 },
+    { id: 'p:felicitarB1:cloze', kind: 'cloze', text: '¡___ Año Nuevo! (feliz)', accept: ['Feliz', 'feliz'] },
+    { id: 'p:felicitarB1:recall', kind: 'recall', front: '¿Se puede construir una fórmula de felicitación nueva por analogía?', back: 'no — son frases fijas, memorizadas una por una' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-persona-telefono-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:1451', 'funciones:B1:1452', 'funciones:B1:1454', 'funciones:B1:1456', 'funciones:B1:1457',
+         'funciones:B1:1458', 'funciones:B1:1460', 'funciones:B1:1461', 'funciones:B1:1463', 'funciones:B1:1464',
+         'funciones:B1:1466', 'funciones:B1:1467', 'funciones:B1:1468'],
+  title: 'Preguntar por una persona y responder al teléfono',
+  summary: 'A phone call asking for someone has a fixed set of possible replies — put you through, ask you to wait, say they are out, say you have the wrong number — and each has its own conventional phrase; guessing at one instead of using the set phrase is what marks a call as non-native.',
+  sections: [
+    { h: 'Asking for someone', html: '<i>¿Podría hablar con el Sr. Caballero, por favor?</i> and <i>Quería hablar con la señora Valdés, por favor</i> are the two standard ways to ask for someone by phone.' },
+    { h: 'The five possible replies', html: 'Put through (<i>Sí, ahora se pone, un momento</i>); absent (<i>Lo siento, no está en este momento</i>); wrong number (<i>Lo siento, se ha confundido de número</i>); unavailable right now (<i>Ahora mismo no puede ponerse</i>); or an offer to take a message (<i>¿Quiere que le diga algo?</i>).' },
+    { h: 'Wrong number vs. absent: do not confuse them', html: '<i>No está</i> means the right number, wrong moment — they will be back. <i>Se ha equivocado / se ha confundido de número</i> means the caller has reached the wrong line entirely — a completely different situation for the caller to act on.' }
+  ],
+  exponents: [
+    { es: 'Buenas tardes, ¿podría hablar con el Sr. Caballero, por favor?', en: 'Good afternoon, could I speak with Mr. Caballero, please?', register: 'formal' },
+    { es: 'Sí, ahora se pone, un momento.', en: "Yes, he'll be right with you, one moment.", register: 'neutral' },
+    { es: 'Lo siento, no está en este momento.', en: "I'm sorry, he's not in right now.", register: 'neutral' },
+    { es: 'Lo siento, se ha confundido de número.', en: "I'm sorry, you've got the wrong number.", register: 'neutral' },
+    { es: '¿Quiere que le diga algo?', en: 'Would you like me to tell him something?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Lo siento, no está en este momento.', en: "He's not in right now.", note: 'right number, wrong moment — he will be back' },
+    { es: 'Lo siento, se ha confundido de número.', en: "You've got the wrong number.", note: 'wrong number entirely — a different problem for the caller' }
+  ],
+  pitfalls: [
+    'Do not say <i>no está</i> when the caller has actually dialled the wrong number — that phrase implies the person exists there but is currently absent, which sends the caller waiting on the wrong assumption.',
+    '<i>Ahora se pone</i> (they are about to come to the phone) is distinct from <i>ahora no puede ponerse</i> (they cannot come to the phone right now) — one word\'s presence or absence (<i>no</i>) reverses the whole message.',
+    'Offering to take a message (<i>¿Quiere que le diga algo?</i>, <i>¿Le digo que ha llamado?</i>) is expected once you have said the person is unavailable — leaving it out feels like an abrupt dead end for the caller.'
+  ],
+  examples: [
+    { es: 'Quería hablar con la señora Valdés, por favor.', en: "I'd like to speak with Mrs. Valdés, please." },
+    { es: 'Perdona pero es que ahora no se puede poner.', en: "Sorry but she can't come to the phone right now." },
+    { es: '¿Le digo que has llamado?', en: 'Shall I tell him you called?' }
+  ],
+  probes: [
+    { id: 'p:pregpersonaB1:noestavsequivoco', kind: 'mcq', q: 'El número es correcto pero la persona salió — ¿qué dices?',
+      options: ['Se ha confundido de número.', 'No está en este momento.', 'No es aquí.'], answer: 1 },
+    { id: 'p:pregpersonaB1:recado', kind: 'mcq', q: '¿Qué se ofrece normalmente tras decir que la persona no está?',
+      options: ['Colgar sin más', 'Tomar un recado', 'Repetir el número'], answer: 1 },
+    { id: 'p:pregpersonaB1:cloze', kind: 'cloze', text: 'Sí, ahora se ___ , un momento. (poner)', accept: ['pone'] },
+    { id: 'p:pregpersonaB1:recall', kind: 'recall', front: '¿Cuál es la diferencia entre "no está" y "se ha equivocado"?', back: '"no está" = número correcto, persona ausente; "se ha equivocado" = número incorrecto' }
+  ]
 }
 
 ];

@@ -184,7 +184,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción descriptiva: lugares** · 18 pts · `generos_discursivos A2 § 3.3. Macrofunción descriptiva: lug`  — gn-describir-lugar-a2
 - [x] **Macrofunción narrativa** · 29 pts · `generos_discursivos A2 § 3.4. Macrofunción narrativa`  — gn-narrar-anecdota-a2
 
-## B1 — lessons (151/175 done)
+## B1 — lessons (162/175 done)
 
 ### B1 · grammar (23/23)
 - [x] **Clases de sustantivos** · 7 pts · `gramatica B1 § 1.1. Clases de sustantivos`  — gr-nombres-propios-b1
@@ -261,7 +261,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 8 pts · `nociones_generales B1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-expresion-b1
 - [x] **Expresión verbal** · 12 pts · `nociones_generales B1 § 7.2. Expresión verbal`  — nt-reflexion-expresion-b1
 
-### B1 · function (68/79)
+### B1 · function (79/79)
 - [x] **Identificar** · 8 pts · `funciones B1 § 1.1. Identificar`  — fn-identificar-b1
 - [x] **Pedir información** · 19 pts · `funciones B1 § 1.2. Pedir información`  — fn-pedir-informacion-b1
 - [x] **Dar información** · 21 pts · `funciones B1 § 1.3. Dar información`  — fn-respuesta-afirmativa-b1
@@ -306,33 +306,33 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Expresar sorpresa y extrañeza** · 13 pts · `funciones B1 § 3.27. Expresar sorpresa y extrañez`  — fn-sorpresa-extraneza-b1
 - [x] **Expresar admiración y orgullo** · 4 pts · `funciones B1 § 3.28. Expresar admiración y orgull`  — fn-admiracion-orgullo-b1
 - [x] **Expresar afecto** · 5 pts · `funciones B1 § 3.29. Expresar afecto`  — fn-afecto-b1
-- [ ] **Expresar sensaciones físicas** · 12 pts · `funciones B1 § 3.30. Expresar sensaciones físicas`
+- [x] **Expresar sensaciones físicas** · 12 pts · `funciones B1 § 3.30. Expresar sensaciones físicas`  — fn-sensaciones-fisicas-b1
 - [x] **Dar una orden o instrucción** · 25 pts · `funciones B1 § 4.1. Dar una orden o instrucción`  — fn-ordenar-directo-b1
 - [x] **Pedir un favor** · 10 pts · `funciones B1 § 4.2. Pedir un favor`  — fn-pedir-favor-b1
-- [ ] **Pedir objetos** · 13 pts · `funciones B1 § 4.3. Pedir objetos`
+- [x] **Pedir objetos** · 13 pts · `funciones B1 § 4.3. Pedir objetos`  — fn-pedir-objetos-b1
 - [x] **Pedir ayuda** · 12 pts · `funciones B1 § 4.4. Pedir ayuda`  — fn-ayuda-atenuada-b1
-- [ ] **Responder a una orden, petición o ruego** · 16 pts · `funciones B1 § 4.7. Responder a una orden, petici`
+- [x] **Responder a una orden, petición o ruego** · 16 pts · `funciones B1 § 4.7. Responder a una orden, petici`  — fn-responder-orden-b1
 - [x] **Pedir permiso** · 8 pts · `funciones B1 § 4.8. Pedir permiso`  — fn-pedir-permiso-b1
 - [x] **Prohibir** · 7 pts · `funciones B1 § 4.11. Prohibir`  — fn-prohibir-b1
-- [ ] **Proponer y sugerir** · 14 pts · `funciones B1 § 4.13. Proponer y sugerir`
+- [x] **Proponer y sugerir** · 14 pts · `funciones B1 § 4.13. Proponer y sugerir`  — fn-proponer-sugerir-b1
 - [x] **Ofrecer e invitar** · 3 pts · `funciones B1 § 4.14. Ofrecer e invitar`  — fn-ofrecer-invitar-b1
-- [ ] **Aceptar una propuesta, ofrecimiento o invitación** · 10 pts · `funciones B1 § 4.16. Aceptar una propuesta, ofrec`
+- [x] **Aceptar una propuesta, ofrecimiento o invitación** · 10 pts · `funciones B1 § 4.16. Aceptar una propuesta, ofrec`  — fn-aceptar-propuesta-b1
 - [x] **Rechazar una propuesta, ofrecimiento o invitación** · 8 pts · `funciones B1 § 4.17. Rechazar una propuesta, ofre`  — fn-rechazar-b1
-- [ ] **Aconsejar** · 10 pts · `funciones B1 § 4.18. Aconsejar`
+- [x] **Aconsejar** · 10 pts · `funciones B1 § 4.18. Aconsejar`  — fn-aconsejar-b1
 - [x] **Advertir** · 3 pts · `funciones B1 § 4.19. Advertir`  — fn-advertir-b1
 - [x] **Reprochar** · 3 pts · `funciones B1 § 4.21. Reprochar`  — fn-reprochar-b1
 - [x] **Tranquilizar y consolar** · 4 pts · `funciones B1 § 4.24. Tranquilizar y consolar`  — fn-tranquilizar-consolar-b1
 - [x] **Animar** · 3 pts · `funciones B1 § 4.25. Animar`  — fn-animar-b1
-- [ ] **Saludar** · 27 pts · `funciones B1 § 5.1. Saludar`
-- [ ] **Responder a un saludo** · 4 pts · `funciones B1 § 5.2. Responder a un saludo`
-- [ ] **Disculparse** · 3 pts · `funciones B1 § 5.10. Disculparse`
+- [x] **Saludar** · 27 pts · `funciones B1 § 5.1. Saludar`  — fn-saludar-responder-b1
+- [x] **Responder a un saludo** · 4 pts · `funciones B1 § 5.2. Responder a un saludo`  — fn-saludar-responder-b1
+- [x] **Disculparse** · 3 pts · `funciones B1 § 5.10. Disculparse`  — fn-disculparse-b1
 - [x] **Responder a una disculpa** · 5 pts · `funciones B1 § 5.11. Responder a una disculpa`  — fn-responder-disculpa-b1
 - [x] **Proponer un brindis** · 3 pts · `funciones B1 § 5.15. Proponer un brindis`  — fn-brindis-b1
-- [ ] **Felicitar** · 8 pts · `funciones B1 § 5.16. Felicitar`
+- [x] **Felicitar** · 8 pts · `funciones B1 § 5.16. Felicitar`  — fn-felicitar-b1
 - [x] **Formular buenos deseos** · 14 pts · `funciones B1 § 5.17. Formular buenos deseos`  — fn-buenos-deseos-b1
 - [x] **Responder a felicitaciones y buenos deseos** · 3 pts · `funciones B1 § 5.18. Responder a felicitaciones y`  — fn-responder-felicitaciones-b1
 - [x] **Despedirse** · 10 pts · `funciones B1 § 5.21. Despedirse`  — fn-despedida-escrita-b1
-- [ ] **Preguntar por una persona y responder** · 45 pts · `funciones B1 § 6.3. Preguntar por una persona y r`
+- [x] **Preguntar por una persona y responder** · 45 pts · `funciones B1 § 6.3. Preguntar por una persona y r`  — fn-preguntar-persona-telefono-b1
 - [x] **Preguntar por el estado general de las cosas y responder** · 11 pts · `funciones B1 § 6.6. Preguntar por el estado gener`  — fn-responder-estado-b1
 - [x] **Introducir el tema del relato y reaccionar** · 10 pts · `funciones B1 § 6.8. Introducir el tema del relato`  — fn-introducir-tema-relato-b1
 - [x] **Indicar que se sigue el relato con interés** · 6 pts · `funciones B1 § 6.9. Indicar que se sigue el relat`  — fn-seguir-relato-interes-b1
