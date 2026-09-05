@@ -4673,6 +4673,177 @@ window.PASSAGES = [
     { type: 'short', q: '¿Qué porcentaje de participación tuvo el referéndum, aproximadamente? (una cifra)', accept: ['80', 'ochenta', 'más del ochenta por ciento'] },
     { type: 'translate', line: 'Con una participación que superó el ochenta por ciento del censo electoral local, algo excepcional incluso para elecciones nacionales, el proyecto fue finalmente rechazado por un estrecho margen', model: 'With turnout that exceeded eighty percent of the local electoral roll, exceptional even for national elections, the project was finally rejected by a narrow margin' }
   ]
+},
+
+/* Batch 6 of 8. */
+{
+  id: 'rio-recuperado-naturaleza-b2', title: 'El río que volvió a tener salmones', level: 6, theme: 'naturaleza',
+  text: 'Hace cuarenta años, el río Deba estaba tan contaminado por vertidos industriales que ningún pez podía sobrevivir en buena parte de su curso, y los propios vecinos de las poblaciones ribereñas evitaban acercarse a sus orillas por el olor que desprendía el agua durante los meses de verano. Hoy, tras décadas de inversión pública en depuradoras y de un control mucho más estricto sobre los vertidos permitidos, los salmones han regresado a desovar en sus aguas por primera vez desde que hay registros fiables.\n\nLa recuperación no fue, ni mucho menos, un proceso lineal ni rápido. Durante los primeros quince años de las obras de depuración, apenas se observaron mejoras significativas en la calidad del agua, lo que llevó a algunos políticos locales a cuestionar públicamente si merecía la pena seguir invirtiendo fondos en un proyecto de resultados tan lentos e inciertos. Los biólogos responsables del seguimiento insistieron, sin embargo, en que los ecosistemas fluviales necesitan tiempo para recuperarse incluso después de que desaparezca la fuente original de contaminación.\n\nEl primer salmón adulto documentado remontando el río para desovar apareció hace apenas tres años, capturado accidentalmente en una cámara instalada para monitorizar otras especies. Desde entonces, los avistamientos han aumentado progresivamente cada temporada, aunque los expertos insisten en que la población actual sigue siendo frágil y depende completamente de que se mantenga, sin relajarse, el nivel actual de vigilancia sobre los vertidos industriales.\n\nPara muchos vecinos mayores, que todavía recuerdan un río limpio de su propia infancia antes de la contaminación industrial, ver salmones nadando de nuevo contra la corriente representa mucho más que un simple dato ecológico positivo: es, dicen, la prueba tangible de que un daño ambiental severo, aunque tarde décadas enteras, puede llegar a revertirse cuando existe voluntad política sostenida en el tiempo.',
+  gloss: [
+    { es: 'un vertido', en: 'la descarga de residuos o sustancias contaminantes en un río o el mar' },
+    { es: 'ribereño', en: 'que está situado junto a la orilla de un río' },
+    { es: 'una depuradora', en: 'una instalación que limpia el agua contaminada antes de devolverla al medio natural' },
+    { es: 'desovar', en: 'poner huevos, en el caso de peces y otros animales acuáticos' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué actitud tomaron algunos políticos durante los primeros quince años del proyecto?', options: ['Apoyo entusiasta sin condiciones', 'Dudas sobre si merecía la pena seguir invirtiendo', 'Indiferencia total hacia el río'], answer: 1 },
+    { type: 'mcq', q: '¿Qué representa para los vecinos mayores ver salmones de nuevo en el río?', options: ['Un simple dato estadístico sin más importancia', 'La prueba de que un daño severo puede revertirse con voluntad sostenida', 'Una señal de que ya no hace falta seguir vigilando'], answer: 1 },
+    { type: 'short', q: '¿Hace cuántos años apareció el primer salmón documentado? (una palabra)', accept: ['tres', 'hace tres años'] },
+    { type: 'translate', line: 'los salmones han regresado a desovar en sus aguas por primera vez desde que hay registros fiables', model: 'the salmon have returned to spawn in its waters for the first time since reliable records exist' }
+  ]
+},
+
+{
+  id: 'cirugia-robotica-salud-b2', title: 'Cuando el cirujano opera desde otra sala', level: 7, theme: 'salud',
+  text: 'En un número creciente de hospitales, ciertas operaciones ya no las realiza el cirujano directamente con sus propias manos sobre el paciente, sino a través de una consola situada a pocos metros, desde donde controla con precisión milimétrica los brazos de un robot quirúrgico equipado con instrumentos diminutos y una cámara que ofrece una visión ampliada considerablemente superior a la que el ojo humano lograría por sí solo.\n\nLa cirugía asistida por robot ofrece ventajas bien documentadas frente a la cirugía abierta tradicional: incisiones mucho más pequeñas, menor pérdida de sangre durante la operación, y una recuperación postoperatoria generalmente más rápida para el paciente. Los brazos robóticos, además, eliminan por completo el temblor natural de la mano humana, algo especialmente valioso en intervenciones que requieren una precisión extraordinaria, como ciertas operaciones de próstata o determinadas cirugías cardíacas complejas.\n\nContrariamente a lo que muchos pacientes asumen al oír el término "cirugía robótica", el robot no toma ninguna decisión de forma autónoma en ningún momento del procedimiento: cada movimiento del instrumental responde exactamente al movimiento que realiza el cirujano en la consola de control, sin ningún tipo de automatización de las decisiones clínicas propiamente dichas. La tecnología amplifica y refina el gesto humano; no lo sustituye ni lo reemplaza en ningún sentido real.\n\nEl principal obstáculo para generalizar esta tecnología no es, según reconocen los propios hospitales, ninguna limitación técnica del sistema, sino su coste extraordinariamente elevado: cada equipo puede superar fácilmente los dos millones de euros, sin contar el mantenimiento anual y la formación específica que necesita cada cirujano antes de poder operar con autonomía completa. Por esta razón, buena parte de los hospitales públicos que ya disponen de esta tecnología la reservan todavía para los casos donde su ventaja resulta más claramente demostrada por la evidencia científica disponible.',
+  gloss: [
+    { es: 'una consola (de control)', en: 'un panel de mandos desde el que se opera una máquina a distancia' },
+    { es: 'una incisión', en: 'un corte quirúrgico realizado en el cuerpo durante una operación' },
+    { es: 'postoperatorio', en: 'relativo al periodo inmediatamente posterior a una operación' },
+    { es: 'el temblor', en: 'un movimiento involuntario y repetido de una parte del cuerpo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué corrige el texto sobre la idea de que el robot "decide" durante la operación?', options: ['Confirma que el robot decide de forma autónoma', 'Aclara que cada movimiento responde exactamente al del cirujano', 'No menciona nada al respecto'], answer: 1 },
+    { type: 'mcq', q: '¿Cuál es, según el texto, el principal obstáculo para generalizar esta tecnología?', options: ['Que no ofrece ninguna ventaja real', 'Su coste extraordinariamente elevado', 'La falta de interés de los cirujanos'], answer: 1 },
+    { type: 'short', q: '¿Qué elimina por completo el brazo robótico, a diferencia de la mano humana? (una palabra)', accept: ['el temblor', 'temblor'] },
+    { type: 'translate', line: 'La tecnología amplifica y refina el gesto humano; no lo sustituye ni lo reemplaza en ningún sentido real', model: 'The technology amplifies and refines the human gesture; it does not substitute or replace it in any real sense' }
+  ]
+},
+
+{
+  id: 'conversion-fe-religion-b2', title: 'De atea convencida a creyente practicante', level: 6, theme: 'religion',
+  text: 'Durante casi treinta años, Isabel se definió públicamente como atea convencida, e incluso llegó a discutir abiertamente con familiares creyentes en más de una comida navideña sobre lo que ella consideraba, en aquella época, la irracionalidad evidente de cualquier fe religiosa organizada. Nada en su biografía anterior anticipaba que, a los cuarenta y ocho años, acabaría bautizándose voluntariamente en una parroquia católica de su barrio.\n\nEl proceso, según cuenta ella misma, no partió de ninguna experiencia mística repentina ni de ningún acontecimiento traumático que buscara explicación en lo sobrenatural, como suele presuponerse en este tipo de conversiones. Empezó, más bien, acompañando por pura curiosidad intelectual a una amiga a un grupo de estudio sobre filosofía y espiritualidad, sin ninguna intención inicial de participar más allá de aquella primera sesión puntual.\n\nLo que mantuvo a Isabel volviendo semana tras semana no fueron tanto los argumentos teológicos concretos, reconoce con cierta sorpresa retrospectiva, sino la experiencia comunitaria en sí misma: un espacio donde personas de edades y trasfondos completamente distintos se reunían regularmente para hablar abiertamente sobre preguntas existenciales que ella llevaba años evitando por considerarlas, hasta entonces, propias de mentes poco críticas.\n\nHoy, Isabel practica su fe con una intensidad que ella misma describe como moderada, sin ningún ánimo de convencer a nadie de su entorno de que siga el mismo camino, y reconoce abiertamente que buena parte de sus antiguas objeciones intelectuales hacia la religión organizada siguen pareciéndole, en gran medida, tan válidas como entonces. Lo que ha cambiado, insiste, no es tanto lo que piensa sobre las grandes preguntas filosóficas, sino su relación personal con la comunidad y con cierta práctica ritual que, admite, le proporciona una estructura y un consuelo que antes simplemente no buscaba.',
+  gloss: [
+    { es: 'una parroquia', en: 'la comunidad y el edificio de una iglesia local' },
+    { es: 'retrospectivo', en: 'que mira hacia el pasado desde el presente' },
+    { es: 'existencial', en: 'relacionado con el sentido de la propia vida y la existencia' },
+    { es: 'el consuelo', en: 'el alivio emocional que se recibe ante una dificultad o una duda' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué corrige el texto sobre el origen de la conversión de Isabel?', options: ['Confirma que fue provocada por una experiencia mística repentina', 'Aclara que no partió de ningún acontecimiento traumático o místico', 'Afirma que fue motivada por presión familiar'], answer: 1 },
+    { type: 'mcq', q: '¿Qué es lo que realmente mantuvo a Isabel volviendo al grupo, según el texto?', options: ['Los argumentos teológicos concretos', 'La experiencia comunitaria y el espacio para hablar de preguntas existenciales', 'La presión de la amiga que la invitó'], answer: 1 },
+    { type: 'short', q: '¿A qué edad se bautizó Isabel? (una cifra)', accept: ['48', 'cuarenta y ocho'] },
+    { type: 'translate', line: 'no partió de ninguna experiencia mística repentina ni de ningún acontecimiento traumático que buscara explicación en lo sobrenatural', model: 'it did not start from any sudden mystical experience or any traumatic event seeking an explanation in the supernatural' }
+  ]
+},
+
+{
+  id: 'nombre-cambiado-identidad-b2', title: 'El nombre que eligió para sí misma', level: 6, theme: 'identidad',
+  text: 'A los treinta y dos años, Lucía decidió tramitar legalmente el cambio de su nombre de nacimiento, uno que sus padres eligieron pensando en una abuela fallecida antes de que ella naciera, pero que nunca sintió verdaderamente propio desde que tiene memoria de sí misma. El proceso administrativo, cuenta ella, resultó sorprendentemente más sencillo de lo que había anticipado durante los años en que solo se había atrevido a plantearlo como una posibilidad remota.\n\nDurante toda su infancia y adolescencia, Lucía usó únicamente el diminutivo de aquel nombre original entre amigos cercanos, reservando la versión completa exclusivamente para documentos oficiales y para presentaciones formales que la incomodaban visiblemente cada vez que tenía que pronunciarla en voz alta ante desconocidos. Nunca llegó a identificar con claridad, hasta bastante entrada la edad adulta, por qué exactamente aquel nombre le generaba tanta incomodidad persistente.\n\nUna terapeuta a la que consultó por otros motivos completamente distintos fue quien primero le sugirió, casi de pasada, que explorara conscientemente esa incomodidad en lugar de simplemente convivir con ella de manera resignada, como había hecho durante más de tres décadas. Tras varios meses de reflexión, Lucía llegó a la conclusión de que el nombre nunca le había resultado ajeno por ninguna razón estética o práctica, sino porque sentía que llevaba, sin haberlo elegido nunca, la identidad de otra persona completamente distinta a ella misma.\n\nEl día en que finalmente recibió el documento oficial con su nuevo nombre legal, Lucía admite haber llorado de una forma que no esperaba en absoluto, una reacción que ella misma describe como la sensación física, tangible, de que algo que llevaba encima desde hacía más de tres décadas por fin encajaba correctamente. Sus padres, aunque inicialmente sorprendidos y algo dolidos por la decisión, terminaron aceptándola sin ninguna objeción seria una vez que ella les explicó con calma el motivo real detrás del cambio.',
+  gloss: [
+    { es: 'tramitar', en: 'realizar los pasos administrativos necesarios para conseguir algo' },
+    { es: 'un diminutivo', en: 'una forma abreviada y cariñosa de un nombre' },
+    { es: 'ajeno', en: 'que no pertenece a uno mismo, que resulta extraño' },
+    { es: 'dolido', en: 'que siente una pena o una herida emocional por algo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué descubre finalmente Lucía sobre por qué el nombre le incomodaba?', options: ['Que el nombre era difícil de pronunciar', 'Que sentía llevar la identidad de otra persona distinta a ella', 'Que sus amigos se burlaban del nombre'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo reaccionan finalmente los padres de Lucía ante el cambio?', options: ['Lo rechazan de forma permanente', 'Lo aceptan sin objeciones serias tras entender el motivo', 'Se niegan a hablar del tema con ella'], answer: 1 },
+    { type: 'short', q: '¿A qué edad tramitó Lucía el cambio de nombre? (una cifra)', accept: ['32', 'treinta y dos'] },
+    { type: 'translate', line: 'sentía que llevaba, sin haberlo elegido nunca, la identidad de otra persona completamente distinta a ella misma', model: 'she felt she was carrying, without ever having chosen it, the identity of a completely different person from herself' }
+  ]
+},
+
+{
+  id: 'mentor-profesional-relaciones-b2', title: 'La jefa que se convirtió en algo más', level: 6, theme: 'relaciones',
+  text: 'Cuando Sara empezó a trabajar como becaria en su primer empleo tras terminar la universidad, jamás imaginó que su relación con Ángela, entonces su supervisora directa, acabaría convirtiéndose en una de las amistades más duraderas y significativas de toda su vida adulta. Al principio, la relación era estrictamente profesional: Ángela le asignaba tareas, revisaba sus informes y le daba, con bastante franqueza, indicaciones sobre qué debía mejorar.\n\nLo que distinguió a Ángela de otros supervisores anteriores, recuerda Sara, no fue únicamente su generosidad al compartir conocimiento técnico, sino su disposición genuina a hablar abiertamente también de los aspectos menos gloriosos de su propia carrera: los errores cometidos, los rechazos sufridos, las dudas persistentes que ni siquiera después de veinte años de experiencia profesional habían llegado a desaparecer del todo.\n\nCon el paso de los meses, las conversaciones dejaron de limitarse estrictamente a cuestiones laborales, y ambas empezaron a compartir también aspectos de su vida personal durante los almuerzos, sin que ninguna de las dos estableciera de forma explícita en qué momento exacto la relación había cambiado de naturaleza. Cuando Sara cambió finalmente de empresa, casi tres años después, ambas decidieron, sin necesidad de discutirlo demasiado, mantener la relación al margen de cualquier vínculo profesional que las hubiera unido originalmente.\n\nHoy, casi una década después de aquella primera beca, Sara reconoce que Ángela ha sido una de las personas más influyentes en su forma de entender el trabajo, aunque insiste en que lo que realmente valora de la relación ya no tiene casi nada que ver con lo profesional: es, simplemente, alguien con quien puede hablar con una honestidad que muy pocas personas más en su vida le permiten, algo que ninguna de las dos anticipó el primer día que Sara entró, nerviosísima, en aquella oficina.',
+  gloss: [
+    { es: 'una becaria', en: 'una persona joven que trabaja temporalmente en un puesto de formación, a menudo sin cobrar un salario completo' },
+    { es: 'la franqueza', en: 'la cualidad de hablar con sinceridad y sin rodeos' },
+    { es: 'glorioso', en: 'aquí, algo que produce orgullo o admiración' },
+    { es: 'al margen (de algo)', en: 'separado o independiente de algo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué distinguió realmente a Ángela como supervisora, según Sara?', options: ['Su exigencia estricta en los informes', 'Su disposición a compartir también sus propios errores y dudas', 'Su capacidad para ascender rápidamente en la empresa'], answer: 1 },
+    { type: 'mcq', q: '¿Qué valora Sara hoy de la relación con Ángela, por encima de lo profesional?', options: ['Los contactos que le proporciona para su carrera', 'La honestidad que pocas otras personas le permiten', 'Los consejos técnicos que todavía le da'], answer: 1 },
+    { type: 'short', q: '¿En qué puesto empezó Sara a trabajar? (una palabra)', accept: ['becaria', 'como becaria'] },
+    { type: 'translate', line: 'su disposición genuina a hablar abiertamente también de los aspectos menos gloriosos de su propia carrera', model: 'her genuine willingness to also talk openly about the less glorious aspects of her own career' }
+  ]
+},
+
+{
+  id: 'restaurante-desperdicio-alimentacion-b2', title: 'El restaurante que factura por lo que se tira', level: 6, theme: 'alimentacion',
+  text: 'Un restaurante de tamaño mediano en Valencia decidió, hace poco más de un año, instalar una báscula conectada a una aplicación específica en la zona donde el personal de cocina deposita los restos de comida antes de tirarlos, con el objetivo declarado de visualizar de forma concreta y diaria cuánto alimento se desperdiciaba realmente durante la preparación y el servicio habitual.\n\nEl resultado del primer mes de seguimiento sorprendió incluso al propio dueño del establecimiento, convencido hasta entonces de que su cocina gestionaba los ingredientes con una eficiencia razonablemente aceptable: casi el doce por ciento de todo lo comprado terminaba, de una forma u otra, en la báscula de desperdicios, ya fuera por recortes excesivos al preparar verduras, por raciones servidas más grandes de lo que los clientes solían terminar, o simplemente por productos que caducaban antes de poder utilizarse en ningún plato.\n\nCon estos datos concretos delante, el equipo de cocina rediseñó varios procesos: ajustó el tamaño de ciertas raciones que sistemáticamente volvían a la cocina a medio terminar, empezó a aprovechar recortes de verduras para elaborar caldos y salsas que antes se descartaban directamente, y modificó el sistema de pedidos a proveedores para reducir el riesgo de acumular excedentes que después caducaban sin usarse.\n\nUn año después de instalar la báscula, el desperdicio se había reducido a poco más de un cuatro por ciento del total comprado, una mejora que se tradujo también en un ahorro económico directo nada desdeñable para el negocio. El dueño reconoce que lo más difícil no fue tanto encontrar soluciones técnicas concretas, que resultaron relativamente sencillas una vez identificado el problema exacto, sino cambiar hábitos de cocina que su equipo llevaba practicando, sin cuestionarlos nunca, durante años enteros.',
+  gloss: [
+    { es: 'una báscula', en: 'un instrumento para pesar objetos o alimentos' },
+    { es: 'el desperdicio (de alimentos)', en: 'la comida que se tira o se pierde sin llegar a consumirse' },
+    { es: 'caducar', en: 'dejar de ser apto para el consumo tras una fecha determinada' },
+    { es: 'desdeñable', en: 'que puede ignorarse por su poca importancia' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué sorprendió al dueño del restaurante tras el primer mes de seguimiento?', options: ['Que el desperdicio era prácticamente inexistente', 'Que casi el doce por ciento de lo comprado terminaba desperdiciado', 'Que sus proveedores le estaban engañando'], answer: 1 },
+    { type: 'mcq', q: '¿Qué fue lo más difícil del proceso de cambio, según el dueño?', options: ['Encontrar soluciones técnicas concretas', 'Cambiar hábitos de cocina practicados durante años sin cuestionarlos', 'Convencer a los clientes de comer menos'], answer: 1 },
+    { type: 'short', q: '¿A qué porcentaje se redujo finalmente el desperdicio? (una cifra)', accept: ['4', 'cuatro', 'un cuatro por ciento'] },
+    { type: 'translate', line: 'casi el doce por ciento de todo lo comprado terminaba, de una forma u otra, en la báscula de desperdicios', model: 'almost twelve percent of everything purchased ended up, one way or another, on the waste scale' }
+  ]
+},
+
+{
+  id: 'bilinguismo-infantil-educacion-b2', title: '¿Confunde a los niños crecer con dos idiomas?', level: 6, theme: 'educacion',
+  text: 'Durante buena parte del siglo veinte, muchos pedagogos y médicos desaconsejaban activamente criar a los niños en un entorno bilingüe, convencidos de que exponerlos simultáneamente a dos idiomas desde la primera infancia retrasaría su desarrollo lingüístico general y podría generar una confusión cognitiva duradera. Décadas de investigación posterior en neurociencia y en psicología del desarrollo han desmontado casi por completo esta idea, que hoy se considera, en el mejor de los casos, una simplificación excesiva.\n\nLos estudios actuales muestran que los niños criados en entornos verdaderamente bilingües sí pueden mostrar, durante los primeros años, un vocabulario ligeramente menor en cada idioma individual comparado con niños monolingües de la misma edad. Sin embargo, cuando se suma el vocabulario total que manejan en ambas lenguas combinadas, la diferencia con los niños monolingües prácticamente desaparece, lo que sugiere que no existe ningún retraso real, sino simplemente una distribución distinta del mismo conocimiento lingüístico entre dos sistemas.\n\nMás interesante todavía resulta la evidencia acumulada sobre ciertas ventajas cognitivas asociadas específicamente al bilingüismo temprano: una mayor flexibilidad para cambiar de una tarea mental a otra, y una capacidad superior para ignorar información irrelevante mientras se concentra en lo verdaderamente importante, habilidades que algunos investigadores relacionan directamente con la práctica constante que supone alternar entre dos sistemas lingüísticos distintos desde una edad muy temprana.\n\nLos especialistas actuales coinciden en que la clave para un desarrollo bilingüe saludable no reside en evitar la exposición a dos idiomas, sino en garantizar que ambas lenguas se presenten de forma consistente y con suficiente exposición real, idealmente a través de personas distintas asociadas de forma estable a cada idioma concreto, en lugar de mezclar ambas lenguas de manera aleatoria dentro de una misma conversación cotidiana.',
+  gloss: [
+    { es: 'un pedagogo', en: 'un especialista en la educación y el aprendizaje' },
+    { es: 'desmontar (una idea)', en: 'demostrar que una idea o teoría es incorrecta' },
+    { es: 'monolingüe', en: 'que habla o usa un solo idioma' },
+    { es: 'aleatorio', en: 'que ocurre sin un orden ni un criterio fijo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué sugiere el texto sobre el vocabulario total de los niños bilingües?', options: ['Que es claramente inferior al de los niños monolingües', 'Que, sumando ambos idiomas, la diferencia con los monolingües prácticamente desaparece', 'Que no se ha estudiado nunca con seriedad'], answer: 1 },
+    { type: 'mcq', q: '¿Cuál es, según los especialistas, la clave para un bilingüismo infantil saludable?', options: ['Evitar por completo la exposición a dos idiomas', 'Presentar ambos idiomas de forma consistente y con suficiente exposición', 'Mezclar aleatoriamente ambos idiomas en cada conversación'], answer: 1 },
+    { type: 'short', q: '¿Qué habilidad cognitiva se asocia al bilingüismo temprano, según el texto? (dos palabras)', accept: ['flexibilidad mental', 'mayor flexibilidad'] },
+    { type: 'translate', line: 'una mayor flexibilidad para cambiar de una tarea mental a otra, y una capacidad superior para ignorar información irrelevante', model: 'greater flexibility for switching from one mental task to another, and a superior ability to ignore irrelevant information' }
+  ]
+},
+
+{
+  id: 'mediador-vecinal-servicios-b2', title: 'El vecino que resuelve conflictos sin ir a juicio', level: 6, theme: 'servicios',
+  text: 'Cuando dos vecinos de un mismo edificio llevan meses sin hablarse por una disputa sobre ruidos, filtraciones de agua o gastos comunitarios mal repartidos, la vía judicial tradicional no siempre resulta la opción más rápida ni más barata disponible. Un servicio municipal de mediación vecinal, presente ya en varias ciudades españolas, ofrece una alternativa gratuita que, según sus propios datos, resuelve satisfactoriamente más del setenta por ciento de los casos que llegan a tramitarse.\n\nEl proceso de mediación reúne a ambas partes en presencia de un mediador profesional formado específicamente en resolución de conflictos, cuya función no consiste en dictar quién tiene razón, como haría un juez, sino en facilitar que ambas partes encuentren por sí mismas una solución que consideren aceptable. Esta diferencia resulta, según los propios mediadores, fundamental para el éxito del proceso: una solución impuesta desde fuera rara vez logra restaurar realmente la convivencia futura entre vecinos que, guste o no, seguirán viviendo puerta con puerta durante años.\n\nUn caso relativamente habitual involucra a comunidades enteras divididas por la instalación de un ascensor, donde algunos vecinos de plantas bajas se niegan a asumir un coste que consideran innecesario para ellos, mientras que vecinos de pisos superiores, especialmente personas mayores con movilidad reducida, defienden la instalación como una necesidad prácticamente vital. La mediación, en estos casos, no busca simplemente repartir costes de forma matemáticamente equitativa, sino explorar fórmulas de pago escalonado o aplazado que ambas partes puedan aceptar sin sentir que han perdido frente al otro bando.\n\nLo que distingue especialmente a este tipo de servicio, según reconocen los propios mediadores tras años de experiencia acumulada, no es tanto la solución técnica alcanzada en cada caso concreto, sino haber conseguido que ambas partes vuelvan a saludarse por el rellano sin la tensión evidente que caracterizaba la relación antes de acudir al servicio.',
+  gloss: [
+    { es: 'una filtración (de agua)', en: 'un escape de agua a través de una pared o techo dañados' },
+    { es: 'dictar (una sentencia)', en: 'pronunciar oficialmente una decisión judicial' },
+    { es: 'escalonado', en: 'que se realiza por etapas o partes sucesivas' },
+    { es: 'un rellano', en: 'el espacio de un edificio situado entre dos tramos de escalera, junto a las puertas de los pisos' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿En qué se diferencia principalmente un mediador de un juez, según el texto?', options: ['El mediador dicta quién tiene razón, igual que un juez', 'El mediador facilita que las partes encuentren su propia solución', 'El mediador cobra honorarios más altos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué considera realmente el éxito de la mediación, según el último párrafo?', options: ['Únicamente haber alcanzado una solución técnica', 'Que las partes vuelvan a saludarse sin la tensión anterior', 'Haber evitado por completo cualquier coste económico'], answer: 1 },
+    { type: 'short', q: '¿Qué porcentaje de casos se resuelve satisfactoriamente, según el texto? (una cifra)', accept: ['70', 'setenta', 'más del setenta por ciento'] },
+    { type: 'translate', line: 'una solución impuesta desde fuera rara vez logra restaurar realmente la convivencia futura entre vecinos', model: 'a solution imposed from outside rarely manages to truly restore future coexistence between neighbors' }
+  ]
+},
+
+{
+  id: 'donacion-plasma-cuerpo-b2', title: 'Su sangre lleva anticuerpos que otros necesitan', level: 6, theme: 'cuerpo',
+  text: 'Tras superar una infección poco habitual hace dos años, los médicos descubrieron que la sangre de Fernando contenía una concentración especialmente alta de anticuerpos específicos contra esa enfermedad concreta, un hallazgo que lo convirtió, sin que él mismo lo esperara en absoluto, en uno de los pocos donantes de plasma hiperinmune disponibles en toda la región para tratar a otros pacientes gravemente afectados por la misma infección.\n\nA diferencia de una donación de sangre convencional, que dura apenas unos minutos, la donación de plasma mediante un proceso llamado aféresis requiere que Fernando permanezca conectado a una máquina especializada durante casi una hora completa. Este dispositivo extrae la sangre, separa mecánicamente el plasma de los glóbulos rojos, y devuelve estos últimos directamente al cuerpo del donante, lo que permite donar plasma con mucha mayor frecuencia de la que sería posible con sangre completa.\n\nCada donación de Fernando puede llegar a tratar potencialmente a varios pacientes distintos, dependiendo de la dosis concreta que necesite cada uno según la gravedad de su caso particular. Los médicos le explicaron que sus anticuerpos, administrados a un paciente que todavía no ha desarrollado los suyos propios, pueden proporcionar una protección inmediata mientras el propio sistema inmunitario del receptor aprende a defenderse por sí mismo frente a la infección.\n\nFernando dona plasma cada dos semanas desde hace ya dieciocho meses, y reconoce que, al principio, la idea de que su propia sangre pudiera literalmente salvar la vida de completos desconocidos le resultaba difícil de asimilar del todo. Hoy lo describe simplemente como parte de su rutina habitual, aunque admite sentir una satisfacción difícil de explicar cada vez que el hospital le informa, de forma anónima, que otro paciente más ha superado la enfermedad gracias, en parte, a una donación suya.',
+  gloss: [
+    { es: 'el plasma (sanguíneo)', en: 'la parte líquida de la sangre, sin los glóbulos rojos ni blancos' },
+    { es: 'hiperinmune', en: 'que contiene un nivel especialmente alto de defensas contra una enfermedad concreta' },
+    { es: 'la aféresis', en: 'una técnica que separa componentes específicos de la sangre' },
+    { es: 'asimilar (una idea)', en: 'llegar a comprender y aceptar algo completamente' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué diferencia principal existe entre la donación de plasma de Fernando y una donación de sangre convencional?', options: ['La de plasma es mucho más rápida', 'La de plasma requiere una máquina especializada y casi una hora de duración', 'No existe ninguna diferencia relevante'], answer: 1 },
+    { type: 'mcq', q: '¿Qué función cumplen los anticuerpos de Fernando en el paciente receptor?', options: ['Curan la enfermedad de forma permanente e inmediata', 'Proporcionan protección temporal mientras el propio sistema inmunitario del receptor reacciona', 'No tienen ningún efecto médico real'], answer: 1 },
+    { type: 'short', q: '¿Cada cuánto tiempo dona plasma Fernando? (dos palabras)', accept: ['cada dos semanas', 'dos semanas'] },
+    { type: 'translate', line: 'sus anticuerpos, administrados a un paciente que todavía no ha desarrollado los suyos propios, pueden proporcionar una protección inmediata', model: 'his antibodies, given to a patient who has not yet developed their own, can provide immediate protection' }
+  ]
+},
+
+{
+  id: 'bromista-tension-caracter-b2', title: 'El chiste que llega justo en el peor momento', level: 6, theme: 'caracter',
+  text: 'En cualquier reunión familiar tensa, basta con que alguien mencione un tema delicado para que Rodrigo, inevitablemente, suelte un comentario gracioso que rebaja de golpe la tensión acumulada en la sala, para alivio de unos y ligera irritación de otros, que en ocasiones preferirían abordar el conflicto directamente en lugar de esquivarlo con humor.\n\nQuienes lo conocen desde hace años coinciden en que Rodrigo no bromea porque el conflicto le resulte indiferente, sino más bien todo lo contrario: la tensión ajena le genera un malestar físico casi inmediato, y el chiste funciona, según le explicó una vez a su hermana, como una especie de válvula de escape que le permite soportar una situación que de otro modo encontraría casi insoportable.\n\nEsta estrategia, sin embargo, no siempre resulta bien recibida. En una discusión familiar particularmente seria sobre la herencia de sus padres, un chiste de Rodrigo llegado en el momento menos oportuno estuvo a punto de provocar que su hermana mayor abandonara la mesa completamente indignada, convencida de que él se estaba burlando de un asunto que a ella le importaba profundamente resolver con seriedad.\n\nTras aquel incidente concreto, Rodrigo ha empezado a hacer un esfuerzo consciente por distinguir entre las tensiones que realmente se benefician de un poco de humor liberador y aquellas otras, más graves, que exigen simplemente escuchar en silencio sin intentar aligerar nada. Reconoce que todavía falla en este intento con cierta frecuencia, pero también que, por primera vez en su vida adulta, ha empezado a preguntarse activamente si cada chiste concreto ayuda de verdad a la situación, o si simplemente le sirve a él mismo para evitar sentir una incomodidad que preferiría no afrontar.',
+  gloss: [
+    { es: 'esquivar (un conflicto)', en: 'evitar enfrentarse directamente a algo' },
+    { es: 'una válvula de escape', en: 'en sentido figurado, algo que permite liberar tensión acumulada' },
+    { es: 'indignado', en: 'que siente una fuerte irritación por considerar algo injusto' },
+    { es: 'aligerar (una situación)', en: 'hacer que algo resulte menos pesado o tenso' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué bromea Rodrigo en momentos de tensión, según el texto?', options: ['Porque el conflicto le resulta indiferente', 'Porque la tensión ajena le genera un malestar que necesita liberar', 'Porque busca llamar siempre la atención'], answer: 1 },
+    { type: 'mcq', q: '¿Qué ha empezado a hacer Rodrigo tras el incidente con su hermana?', options: ['Ha dejado de bromear por completo', 'Intenta distinguir qué tensiones se benefician del humor y cuáles no', 'Ha dejado de hablar con su familia'], answer: 1 },
+    { type: 'short', q: '¿Sobre qué discutía la familia cuando ocurrió el incidente? (una palabra)', accept: ['la herencia', 'herencia'] },
+    { type: 'translate', line: 'el chiste funciona, según le explicó una vez a su hermana, como una especie de válvula de escape', model: 'the joke works, as he once explained to his sister, like a kind of escape valve' }
+  ]
 }
 
 ];
