@@ -1573,5 +1573,12 @@ window.VERBS = [
 { inf:'acatar', en:'to comply with, to abide by', type:'ar' },
 { inf:'zanjar', en:'to settle, to put an end to (a dispute)', type:'ar' },
 { inf:'talar', en:'to fell, to cut down (trees)', type:'ar' },
-{ inf:'preservar', en:'to preserve', type:'ar' }
+{ inf:'preservar', en:'to preserve', type:'ar' },
+{ inf:'anhelar', en:'to long for, to yearn for', type:'ar' },
+{ inf:'añorar', en:'to miss, to feel nostalgic for', type:'ar' },
+{ inf:'apreciar', en:'to appreciate, to value', type:'ar' },
+{ inf:'frustrar', en:'to frustrate, to thwart', type:'ar' },
+{ inf:'desconfiar', en:'to distrust', type:'ar', forms:{
+  presente:['desconfío','desconfías','desconfía','desconfiamos','desconfiáis','desconfían'],
+  presubj:['desconfíe','desconfíes','desconfíe','desconfiemos','desconfiéis','desconfíen'] } }
 ];
