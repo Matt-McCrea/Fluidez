@@ -1582,5 +1582,7 @@ window.VERBS = [
   presente:['desconfío','desconfías','desconfía','desconfiamos','desconfiáis','desconfían'],
   presubj:['desconfíe','desconfíes','desconfíe','desconfiemos','desconfiéis','desconfíen'] } },
 { inf:'supervisar', en:'to supervise', type:'ar' },
-{ inf:'reestructurar', en:'to restructure', type:'ar' }
+{ inf:'reestructurar', en:'to restructure', type:'ar' },
+{ inf:'empeorar', en:'to worsen, to get worse', type:'ar' },
+{ inf:'contagiar', en:'to infect, to pass on (an illness)', type:'ar' }
 ];

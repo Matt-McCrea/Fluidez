@@ -644,6 +644,19 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'Durante la crisis, muchas familias ___ (ahorrar) hasta el último céntimo posible.', inf: 'ahorrar', tense: 'imperfecto', person: 'ellos', en: 'During the crisis, many families saved every last cent they could.' },
 
   { type: 'transform', level: 6, instruction: 'Rewrite using the pluscuamperfecto via a relative clause:', from: 'Compraron el piso. Antes lo habían visitado tres veces.', to: 'El piso que habían visitado tres veces fue el que finalmente compraron.', en: 'The apartment they had visited three times was the one they finally bought.' },
-  { type: 'transform', level: 7, instruction: 'Rewrite as reported speech using "dijo que" (correlación de marcas: tense and deixis shift):', from: 'La directora dijo: "Mañana anunciaremos los despidos aquí."', to: 'La directora dijo que al día siguiente anunciarían los despidos allí.', en: 'The director said that the next day they would announce the layoffs there.' }
+  { type: 'transform', level: 7, instruction: 'Rewrite as reported speech using "dijo que" (correlación de marcas: tense and deixis shift):', from: 'La directora dijo: "Mañana anunciaremos los despidos aquí."', to: 'La directora dijo que al día siguiente anunciarían los despidos allí.', en: 'The director said that the next day they would announce the layoffs there.' },
+
+  /* ---- B2 apply, batch 8 of 12 ---- */
+  { type: 'cloze', level: 6, text: 'Es raro que todavía no le ___ (diagnosticar, ellos) nada, con esos síntomas.', inf: 'diagnosticar', tense: 'perfsubj', person: 'ellos', en: "It's strange they still haven't diagnosed anything, with those symptoms." },
+  { type: 'cloze', level: 6, text: 'El médico le ___ (recetar) un tratamiento nuevo la semana pasada.', inf: 'recetar', tense: 'preterito', person: 'él/ella', en: 'The doctor prescribed him a new treatment last week.' },
+  { type: 'cloze', level: 7, text: 'Para cuando llegue el especialista, ya la ___ (operar, ellos) de urgencia.', inf: 'operar', tense: 'futperf', person: 'ellos', en: 'By the time the specialist arrives, they will have already operated on her as an emergency.' },
+  { type: 'cloze', level: 6, text: 'Si te hubieras vacunado a tiempo, no te ___ (contagiar).', inf: 'contagiar', tense: 'condperf', person: 'tú', en: "If you had gotten vaccinated in time, you wouldn't have gotten infected." },
+  { type: 'cloze', level: 6, text: 'Ojalá su estado no ___ (empeorar) durante la noche.', inf: 'empeorar', tense: 'presubj', person: 'él/ella', en: "I hope his condition doesn't worsen overnight." },
+  { type: 'cloze', level: 7, text: 'Yo ___ (intervenir) quirúrgicamente solo como última opción.', inf: 'intervenir', tense: 'condicional', person: 'yo', en: 'I would only operate surgically as a last resort.' },
+  { type: 'cloze', level: 6, text: 'Después del accidente, ella ___ (recuperarse) mucho más rápido de lo esperado.', inf: 'recuperarse', tense: 'preterito', person: 'él/ella', en: 'After the accident, she recovered much faster than expected.' },
+  { type: 'cloze', level: 6, text: 'Muchos pacientes ___ (padecer) esta enfermedad durante años sin saberlo.', inf: 'padecer', tense: 'imperfecto', person: 'ellos', en: 'Many patients used to suffer from this disease for years without knowing it.' },
+
+  { type: 'transform', level: 6, instruction: 'Rewrite reaching the subjunctive after "para que":', from: 'Le recetaron el jarabe. Así dejaría de toser.', to: 'Le recetaron el jarabe para que dejara de toser.', en: 'They prescribed him the syrup so that he would stop coughing.' },
+  { type: 'transform', level: 7, instruction: 'Rewrite as a formal register write task avoiding informal words (avoidsAny: "vale", "tío", "guay"):', from: 'Vale, tío, el análisis salió guay, no te preocupes.', to: 'De acuerdo, los resultados del análisis son satisfactorios; no hay motivo de preocupación.', en: 'Understood, the test results are satisfactory; there is no reason for concern.' }
 
 ];
