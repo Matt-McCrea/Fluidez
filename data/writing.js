@@ -2462,6 +2462,84 @@ window.WRITING_TASKS = [
       { type: 'sePassive' },
       { type: 'minWords', n: 15 }
     ],
-    models: ['Para lograr la imagen, se combinaron datos de radiotelescopios repartidos por todo el planeta. Después se procesaron durante meses, y finalmente se publicó la fotografía que confirmaba la teoría.'] }
+    models: ['Para lograr la imagen, se combinaron datos de radiotelescopios repartidos por todo el planeta. Después se procesaron durante meses, y finalmente se publicó la fotografía que confirmaba la teoría.'] },
+
+  /* ---- B2 writing, batch 7 of 8 ---- */
+  { id: 'b2w-lobo-naturaleza', type: 'write', level: 6, theme: 'naturaleza',
+    prompt: 'Write about a rural community divided over the return of wolves to a valley, conceding the ranchers\' point before the conservationists\' one.',
+    hint: 'Include a concession with "aunque" or "a pesar de".',
+    constraints: [
+      { type: 'containsAny', words: ['aunque', 'a pesar de', 'sin embargo'] },
+      { type: 'minWords', n: 20 }
+    ],
+    models: ['Aunque el miedo de los ganaderos a perder ganado es comprensible, la presencia del lobo cumple una función ecológica real. Sin embargo, ninguna de las dos posturas parece dispuesta a ceder del todo.'] },
+
+  { id: 'p-repartidores-trabajo', type: 'paragraph', level: 6, theme: 'trabajo',
+    prompt: 'Write a paragraph about delivery workers organizing collectively: how it started, how it works now, and what you expect for the future.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Todo empezó con un grupo de mensajería entre unos pocos repartidores. Hoy, la asociación negocia directamente con varias plataformas locales. Dentro de poco, es probable que otras ciudades hayan copiado el modelo. Nadie confiaba en que aquello llegara tan lejos.'] },
+
+  { id: 'b2t-diagnostico-salud', type: 'translate', level: 7, theme: 'salud',
+    prompt: 'Translate: "She kept searching for an explanation without anyone taking her pain seriously."',
+    hint: '"sin que" governs the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'sin que' },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['Siguió buscando una explicación sin que nadie tomara en serio su dolor.'] },
+
+  { id: 'b2w-profesor-educacion', type: 'write', level: 6, theme: 'educacion',
+    prompt: 'Write, in a formal register, a short tribute to a retiring teacher, to be read at a school ceremony.',
+    hint: 'Avoid "tú"; favor compound tenses and preterite over regular present-tense verbs, which double as tú commands.',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 20 }
+    ],
+    models: ['Este profesor dedicó más de cuatro décadas de su vida a la enseñanza en el mismo instituto. Numerosas promociones de antiguos alumnos regresaron después, con el fin de agradecérselo en persona.'] },
+
+  { id: 'b2t-mediador-servicios', type: 'translate', level: 6, theme: 'servicios',
+    prompt: 'Translate: "Unless both parties reach an agreement, the case will end up in court."',
+    hint: '"a menos que" governs the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'a menos que' },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['A menos que ambas partes lleguen a un acuerdo, el caso acabará en los tribunales.'] },
+
+  { id: 'p-amistad-distancia-relaciones', type: 'paragraph', level: 6, theme: 'relaciones',
+    prompt: 'Write a paragraph about a long-distance friendship, using a relative clause to reach the pluscuamperfecto.',
+    hint: 'Reach the pluscuamperfecto through a relative clause, not "antes de".',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'plusc' },
+      { type: 'minSentences', n: 3 }
+    ],
+    models: ['La rutina que habían mantenido durante seis años seguidos resistió, contra todo pronóstico, la distancia entre los dos países. Ninguna de las dos esperaba que una simple videollamada semanal fuera tan importante. Hoy siguen sintiéndose tan cerca como siempre.'] },
+
+  { id: 'b2t-trenes-viajes', type: 'translate', level: 6, theme: 'viajes',
+    prompt: 'Translate: "The company finally gave the tickets back to the passengers."',
+    hint: 'Use a double object pronoun: "se los".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['La compañía por fin se los devolvió a los pasajeros.'] },
+
+  { id: 'b2b-cooperativa-economia', type: 'build', level: 6, theme: 'economia', en: 'If they hadn\'t joined together in a cooperative, none of them would have survived the competition.',
+    answer: 'Si no se hubieran unido en una cooperativa, ninguno de ellos habría sobrevivido a la competencia.' },
+  { id: 'b2b-referendum-politica', type: 'build', level: 7, theme: 'politica', en: 'It is likely that the project will have been rejected by a narrow margin.',
+    answer: 'Es probable que el proyecto haya sido rechazado por un estrecho margen.' },
+
+  { id: 'b2t-mural-arte', type: 'translate', level: 6, theme: 'arte',
+    prompt: 'Translate, for a museum catalogue in a formal register: "The restorers worked for almost a year on the mural."',
+    hint: 'Avoid colloquial words; this is written for publication.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['Los restauradores trabajaron casi un año en el mural.'] }
 
 ];
