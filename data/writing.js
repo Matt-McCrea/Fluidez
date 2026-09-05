@@ -2306,6 +2306,84 @@ window.WRITING_TASKS = [
       { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
       { type: 'minWords', n: 6 }
     ],
-    models: ['La batería pierde capacidad gradualmente con el paso del tiempo.'] }
+    models: ['La batería pierde capacidad gradualmente con el paso del tiempo.'] },
+
+  /* ---- B2 writing, batch 5 of 8 ---- */
+  { id: 'b2t-glaciar-naturaleza', type: 'translate', level: 6, theme: 'naturaleza',
+    prompt: 'Translate: "Unless emissions drop soon, the glacier will disappear within a decade."',
+    hint: '"a menos que" governs the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'a menos que' },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['A menos que las emisiones bajen pronto, el glaciar desaparecerá en una década.'] },
+
+  { id: 'p-semana-4dias-trabajo', type: 'paragraph', level: 7, theme: 'trabajo',
+    prompt: 'Write a paragraph about a company that tried a four-day week: what happened, how it works now, and what you expect for its future.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['La empresa probó la semana de cuatro días hace un año. Hoy, casi todos los empleados prefieren este modelo al anterior. Dentro de poco, es probable que otras empresas del sector hayan copiado la medida. Nadie esperaba resultados tan positivos al principio.'] },
+
+  { id: 'b2w-fibromialgia-salud', type: 'write', level: 6, theme: 'salud',
+    prompt: 'Write, in a formal register, an explanation to a colleague about why a chronic illness without a clear diagnosis is still real.',
+    hint: 'Avoid colloquialisms; keep a measured, formal tone.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'tío', 'guay', 'qué va'] },
+      { type: 'minWords', n: 20 }
+    ],
+    models: ['Un dolor crónico sin diagnóstico inmediato no implica, en absoluto, que carezca de fundamento real. Muchas enfermedades exigen años de pruebas antes de identificarse con claridad.'] },
+
+  { id: 'b2t-bilinguismo-educacion', type: 'translate', level: 6, theme: 'educacion',
+    prompt: 'Translate: "Although bilingual children may show a smaller vocabulary in each language, the combined total is similar."',
+    hint: '"aunque" + subjunctive to concede a point.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'aunque' },
+      { type: 'minWords', n: 10 }
+    ],
+    models: ['Aunque los niños bilingües muestren un vocabulario menor en cada idioma, el total combinado es similar.'] },
+
+  { id: 'p-mediador-servicios', type: 'paragraph', level: 6, theme: 'servicios',
+    prompt: 'Write a paragraph about a mediator resolving a dispute between neighbors, using a relative clause to reach the pluscuamperfecto.',
+    hint: 'Reach the pluscuamperfecto through a relative clause, not "antes de".',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'plusc' },
+      { type: 'minSentences', n: 3 }
+    ],
+    models: ['El conflicto que los vecinos habían arrastrado durante meses se resolvió en una sola reunión. El mediador propuso un pago escalonado que ambas partes aceptaron. Hoy vuelven a saludarse en el rellano sin ninguna tensión.'] },
+
+  { id: 'b2t-hermanos-relaciones', type: 'translate', level: 6, theme: 'relaciones',
+    prompt: 'Translate: "The hospital finally gave them back to each other, after ten years of silence."',
+    hint: 'This one is figurative — focus on the double object pronoun structure: "se los".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['El hospital al final se los devolvió, tras diez años de silencio.'] },
+
+  { id: 'b2b-autobus-viajes', type: 'build', level: 6, theme: 'viajes', en: 'It is likely that the tour bus has already left without them.',
+    answer: 'Es probable que el autobús turístico ya haya salido sin ellos.' },
+  { id: 'b2b-renta-economia', type: 'build', level: 7, theme: 'economia', en: 'If the government had tried the experiment sooner, the results would have been clearer.',
+    answer: 'Si el gobierno hubiera probado el experimento antes, los resultados habrían sido más claros.' },
+
+  { id: 'b2w-ley-politica', type: 'write', level: 7, theme: 'politica',
+    prompt: 'Describe, in an impersonal register using "se", the main stages a bill goes through before becoming law.',
+    hint: 'Use "se" constructions throughout instead of naming who does each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Primero se redacta un anteproyecto, que se somete a consulta pública. Después se debate artículo por artículo, y finalmente se vota en ambas cámaras antes de publicarse la ley definitiva.'] },
+
+  { id: 'b2t-falsificador-arte', type: 'translate', level: 7, theme: 'arte',
+    prompt: 'Translate, for an art catalogue in a formal register: "The forgery fooled several museums for decades."',
+    hint: 'Avoid colloquial words; this is written for publication.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['La falsificación engañó a varios museos durante décadas.'] }
 
 ];
