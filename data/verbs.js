@@ -1588,5 +1588,9 @@ window.VERBS = [
 { inf:'especializarse', en:'to specialize', type:'ar' },
 { inf:'evaluar', en:'to evaluate, to assess', type:'ar', forms:{
   presente:['evalúo','evalúas','evalúa','evaluamos','evaluáis','evalúan'],
-  presubj:['evalúe','evalúes','evalúe','evaluemos','evaluéis','evalúen'] } }
+  presubj:['evalúe','evalúes','evalúe','evaluemos','evaluéis','evalúen'] } },
+{ inf:'bloquear', en:'to block', type:'ar' },
+{ inf:'silenciar', en:'to silence, to mute', type:'ar' },
+{ inf:'suscribirse', en:'to subscribe', type:'ir' },
+{ inf:'censurar', en:'to censor', type:'ar' }
 ];

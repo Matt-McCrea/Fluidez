@@ -670,6 +670,19 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'De niño, mi abuela ___ (formarse) sola, sin apenas ir a la escuela.', inf: 'formarse', tense: 'imperfecto', person: 'él/ella', en: 'As a child, my grandmother used to educate herself, barely attending school.' },
 
   { type: 'transform', level: 6, instruction: 'Rewrite using distinct tenses to narrate a whole academic journey (distinctTenses: 3):', from: 'Estudió medicina.', to: 'Estudió medicina durante seis años, ahora trabaja en un hospital y para el próximo año se habrá especializado en cirugía.', en: 'She studied medicine for six years, now works at a hospital, and by next year will have specialized in surgery.' },
-  { type: 'transform', level: 7, instruction: 'Rewrite as a "se" construction avoiding naming who corrected it:', from: 'Alguien corrigió mal el examen.', to: 'El examen se corrigió mal.', en: 'The exam was graded incorrectly.' }
+  { type: 'transform', level: 7, instruction: 'Rewrite as a "se" construction avoiding naming who corrected it:', from: 'Alguien corrigió mal el examen.', to: 'El examen se corrigió mal.', en: 'The exam was graded incorrectly.' },
+
+  /* ---- B2 apply, batch 10 of 12 ---- */
+  { type: 'cloze', level: 6, text: 'Antes de contestar, ella ___ (bloquear) a ese usuario por si acaso.', inf: 'bloquear', tense: 'perfecto', person: 'él/ella', en: 'Before replying, she has blocked that user just in case.' },
+  { type: 'cloze', level: 6, text: 'Si el gobierno ___ (censurar) esa noticia, la gente igualmente se habría enterado.', inf: 'censurar', tense: 'impsubj', person: 'él/ella', en: 'If the government had censored that news, people would have found out anyway.' },
+  { type: 'cloze', level: 7, text: 'Es posible que alguien ___ (filtrar) los documentos antes de la publicación oficial.', inf: 'filtrar', tense: 'perfsubj', person: 'él/ella', en: 'It\'s possible that someone leaked the documents before the official release.' },
+  { type: 'cloze', level: 6, text: 'Para mañana, los técnicos ya ___ (actualizar) la aplicación con el nuevo parche de seguridad.', inf: 'actualizar', tense: 'futperf', person: 'ellos', en: 'By tomorrow, the technicians will have already updated the app with the new security patch.' },
+  { type: 'cloze', level: 6, text: 'Yo nunca ___ (suscribirse) a un servicio sin leer antes las condiciones.', inf: 'suscribirse', tense: 'condicional', person: 'yo', en: "I would never subscribe to a service without reading the terms first." },
+  { type: 'cloze', level: 6, text: 'El vídeo se ___ (difundir) por todas las redes en cuestión de horas.', inf: 'difundir', tense: 'preterito', person: 'él/ella', en: 'The video spread across every social network within hours.' },
+  { type: 'cloze', level: 7, text: 'Insistió en que le ___ (silenciar, ellos) las notificaciones durante la reunión.', inf: 'silenciar', tense: 'impsubj', person: 'ellos', en: 'She insisted that they silence her notifications during the meeting.' },
+  { type: 'cloze', level: 6, text: 'De adolescente, yo ___ (descargar) música ilegalmente sin pensarlo dos veces.', inf: 'descargar', tense: 'imperfecto', person: 'yo', en: 'As a teenager, I used to download music illegally without a second thought.' },
+
+  { type: 'transform', level: 6, instruction: 'Rewrite using a double object pronoun cluster (cliticCluster):', from: 'La aplicación mandó la alerta a los usuarios.', to: 'La aplicación se la mandó.', en: 'The app sent it to them.' },
+  { type: 'transform', level: 7, instruction: 'Rewrite with at least four sentences weighing pros and cons (minSentences: 4):', from: 'Piratear contenido está mal.', to: 'Descargar contenido pirata parece gratuito, pero no lo es del todo. Por un lado, ahorra dinero a corto plazo. Por otro lado, perjudica directamente a los creadores originales. En definitiva, conviene sopesar ambos efectos antes de decidir.', en: 'Downloading pirated content seems free, but it isn\'t entirely. On one hand, it saves money short-term. On the other, it directly harms the original creators. Ultimately, both effects are worth weighing before deciding.' }
 
 ];
