@@ -605,6 +605,19 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'Durante años, los dos países ___ (pactar) acuerdos comerciales puntuales.', inf: 'pactar', tense: 'imperfecto', person: 'ellos', en: 'For years, the two countries used to negotiate occasional trade agreements.' },
 
   { type: 'transform', level: 7, instruction: 'Rewrite using the subjunctive after "aunque" to concede a point:', from: 'Es una buena oferta. Aun así, la rechazo.', to: 'Aunque sea una buena oferta, la rechazo.', en: 'Even though it may be a good offer, I reject it.' },
-  { type: 'transform', level: 6, instruction: 'Rewrite avoiding colloquialisms (avoidsAny: "o sea", "vale", "guay") for a formal register:', from: 'O sea, vale, lo hacemos así, qué guay.', to: 'De acuerdo, procederemos de esa manera.', en: "Understood, we will proceed that way." }
+  { type: 'transform', level: 6, instruction: 'Rewrite avoiding colloquialisms (avoidsAny: "o sea", "vale", "guay") for a formal register:', from: 'O sea, vale, lo hacemos así, qué guay.', to: 'De acuerdo, procederemos de esa manera.', en: "Understood, we will proceed that way." },
+
+  /* ---- B2 apply, batch 5 of 12 ---- */
+  { type: 'cloze', level: 6, text: 'Si no ___ (talar, ellos) tantos árboles, el suelo no se habría erosionado tan rápido.', inf: 'talar', tense: 'impsubj', person: 'ellos', en: "If they hadn't cut down so many trees, the soil wouldn't have eroded so fast." },
+  { type: 'cloze', level: 6, text: 'La fábrica ___ (verter) residuos al río durante años antes de que la denunciaran.', inf: 'verter', tense: 'imperfecto', person: 'él/ella', en: 'The factory used to dump waste into the river for years before it was reported.' },
+  { type: 'cloze', level: 7, text: 'Es fundamental que este humedal se ___ (preservar) tal como está.', inf: 'preservar', tense: 'presubj', person: 'él/ella', en: 'It is essential that this wetland be preserved just as it is.' },
+  { type: 'cloze', level: 6, text: 'Para el año que viene, la central ___ (reducir) sus emisiones a la mitad.', inf: 'reducir', tense: 'futperf', person: 'él/ella', en: 'By next year, the plant will have cut its emissions in half.' },
+  { type: 'cloze', level: 6, text: 'Ojalá esa especie no ___ (extinguirse) antes de que actuemos.', inf: 'extinguirse', tense: 'presubj', person: 'él/ella', en: 'I hope that species doesn\'t go extinct before we act.' },
+  { type: 'cloze', level: 7, text: 'Los recursos pesqueros ___ (agotarse) por completo si seguimos pescando así.', inf: 'agotarse', tense: 'futuro', person: 'ellos', en: 'Fishing resources will run out completely if we keep fishing like this.' },
+  { type: 'cloze', level: 6, text: 'Yo ___ (conservar) este bosque tal cual, sin ninguna concesión a la construcción.', inf: 'conservar', tense: 'condicional', person: 'yo', en: 'I would preserve this forest as it is, with no concessions to construction.' },
+  { type: 'cloze', level: 6, text: 'Antes de esta ley, las empresas ___ (contaminar) los ríos sin ninguna consecuencia real.', inf: 'contaminar', tense: 'imperfecto', person: 'ellos', en: 'Before this law, companies used to pollute rivers with no real consequence.' },
+
+  { type: 'transform', level: 6, instruction: 'Rewrite using the "se" passive construction:', from: 'Los trabajadores construyeron el puente en dos años.', to: 'El puente se construyó en dos años.', en: 'The bridge was built in two years.' },
+  { type: 'transform', level: 7, instruction: 'Rewrite using at least four sentences that build an argument (minSentences: 4):', from: 'Talar el bosque es malo.', to: 'Talar el bosque tiene consecuencias graves. En primer lugar, acelera la erosión del suelo. Además, destruye el hábitat de numerosas especies. Por todo ello, cualquier tala debería exigir un estudio previo serio.', en: 'Felling the forest has serious consequences. First, it accelerates soil erosion. It also destroys the habitat of numerous species. For all these reasons, any felling should require a serious prior study.' }
 
 ];

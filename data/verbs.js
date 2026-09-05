@@ -1571,5 +1571,7 @@ window.VERBS = [
 { inf:'acordar', en:'to agree on, to resolve (jointly)', type:'ar', stem:'ue' },
 { inf:'desistir', en:'to desist, to give up (an attempt)', type:'ir' },
 { inf:'acatar', en:'to comply with, to abide by', type:'ar' },
-{ inf:'zanjar', en:'to settle, to put an end to (a dispute)', type:'ar' }
+{ inf:'zanjar', en:'to settle, to put an end to (a dispute)', type:'ar' },
+{ inf:'talar', en:'to fell, to cut down (trees)', type:'ar' },
+{ inf:'preservar', en:'to preserve', type:'ar' }
 ];
