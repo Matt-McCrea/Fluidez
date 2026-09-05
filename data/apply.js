@@ -566,6 +566,19 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 7, text: 'De haberlo sabido antes, ella ___ (renunciar) al puesto de inmediato.', inf: 'renunciar', tense: 'condperf', person: 'él/ella', en: 'Had she known beforehand, she would have resigned from the position immediately.' },
 
   { type: 'transform', level: 6, instruction: 'Rewrite as a "se" construction that avoids naming who is responsible:', from: 'Alguien canceló el vuelo sin previo aviso.', to: 'El vuelo se canceló sin previo aviso.', en: 'The flight was cancelled without prior notice.' },
-  { type: 'transform', level: 7, instruction: 'Rewrite in reported (indirect) speech, starting with "El ministro afirmó que...":', from: 'El ministro dijo: "La reforma entrará en vigor el próximo año."', to: 'El ministro afirmó que la reforma entraría en vigor el año siguiente.', en: 'The minister stated that the reform would take effect the following year.' }
+  { type: 'transform', level: 7, instruction: 'Rewrite in reported (indirect) speech, starting with "El ministro afirmó que...":', from: 'El ministro dijo: "La reforma entrará en vigor el próximo año."', to: 'El ministro afirmó que la reforma entraría en vigor el año siguiente.', en: 'The minister stated that the reform would take effect the following year.' },
+
+  /* ---- B2 apply, batch 2 of 12 ---- */
+  { type: 'cloze', level: 6, text: 'No dudes en llamarme en cuanto ___ (tener, tú) noticias.', inf: 'tener', tense: 'presubj', person: 'tú', en: "Don't hesitate to call me as soon as you have news." },
+  { type: 'cloze', level: 6, text: 'El portavoz ___ (desmentir) esta mañana los rumores sobre su dimisión.', inf: 'desmentir', tense: 'preterito', person: 'él/ella', en: 'The spokesperson denied the resignation rumors this morning.' },
+  { type: 'cloze', level: 6, text: 'Si vosotros me ___ (advertir) antes, habría cambiado de planes.', inf: 'advertir', tense: 'impsubj', person: 'vosotros', en: 'If you all had warned me sooner, I would have changed plans.' },
+  { type: 'cloze', level: 6, text: 'Para entonces, la empresa ya ___ (aplazar) la fecha de lanzamiento dos veces.', inf: 'aplazar', tense: 'plusc', person: 'él/ella', en: 'By then, the company had already postponed the launch date twice.' },
+  { type: 'cloze', level: 7, text: 'Cuando el juez se lo pregunte directamente, no ___ (contradecir, tú) tu propia declaración anterior.', inf: 'contradecir', tense: 'presente', person: 'tú', en: "When the judge asks you directly, don't contradict your own earlier statement." },
+  { type: 'cloze', level: 7, text: 'Los analistas ___ (prever) ya un crecimiento moderado para el próximo trimestre.', inf: 'prever', tense: 'perfecto', person: 'ellos', en: 'Analysts have already forecast moderate growth for next quarter.' },
+  { type: 'cloze', level: 7, text: 'El informe ___ (subrayar) que la medida beneficiaría sobre todo a las pymes.', inf: 'subrayar', tense: 'condicional', person: 'él/ella', en: 'The report would emphasize that the measure would mainly benefit small businesses.' },
+  { type: 'cloze', level: 6, text: 'La asociación ___ (denunciar) públicamente las condiciones del centro la próxima semana.', inf: 'denunciar', tense: 'futuro', person: 'él/ella', en: 'The association will publicly denounce the center\'s conditions next week.' },
+
+  { type: 'transform', level: 6, instruction: 'Rewrite using "de ahí que" + subjunctive to state a consequence:', from: 'El puente estaba en mal estado. Por eso lo cerraron.', to: 'El puente estaba en mal estado, de ahí que lo cerraran.', en: 'The bridge was in poor condition, hence why they closed it.' },
+  { type: 'transform', level: 7, instruction: 'Rewrite avoiding "tú" — address the reader formally with "usted":', from: 'Si tienes alguna duda, puedes escribirnos cuando quieras.', to: 'Si tiene alguna duda, puede escribirnos cuando quiera.', en: 'If you have any doubts, you may write to us whenever you like.' }
 
 ];
