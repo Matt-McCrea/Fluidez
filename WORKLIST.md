@@ -371,7 +371,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (163/204 done)
+## B2 — lessons (176/204 done)
 
 ### B2 · grammar (26/26)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
@@ -456,7 +456,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 16 pts · `nociones_generales B2 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-b2
 - [x] **Expresión verbal** · 23 pts · `nociones_generales B2 § 7.2. Expresión verbal`  — nt-expresion-verbal-b2
 
-### B2 · function (83/96)
+### B2 · function (96/96)
 - [x] **Identificar** · 7 pts · `funciones B2 § 1.1. Identificar`  — fn-identificar-b2
 - [x] **Pedir información** · 23 pts · `funciones B2 § 1.2. Pedir información`  — fn-preguntar-con-prudencia-b2
 - [x] **Dar información** · 27 pts · `funciones B2 § 1.3. Dar información`  — fn-dar-informacion-b2
@@ -540,19 +540,19 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Formular buenos deseos** · 11 pts · `funciones B2 § 5.17. Formular buenos deseos`  — fn-buenos-deseos-b2
 - [x] **Enviar y transmitir saludos, recuerdos** · 6 pts · `funciones B2 § 5.19. Enviar y transmitir saludos,`  — fn-enviar-saludos-b2
 - [x] **Despedirse** · 13 pts · `funciones B2 § 5.21. Despedirse`  — fn-despedirse-b2
-- [ ] **Preguntar por una persona y responder** · 21 pts · `funciones B2 § 6.3. Preguntar por una persona y r`
-- [ ] **Preguntar por el estado general de las cosas y responder** · 11 pts · `funciones B2 § 6.6. Preguntar por el estado gener`
-- [ ] **Solicitar que comience un relato y reaccionar** · 8 pts · `funciones B2 § 6.7. Solicitar que comience un rel`
-- [ ] **Introducir el tema del relato y reaccionar** · 15 pts · `funciones B2 § 6.8. Introducir el tema del relato`
-- [ ] **Indicar que se sigue el relato con interés** · 6 pts · `funciones B2 § 6.9. Indicar que se sigue el relat`
-- [ ] **Destacar un elemento** · 3 pts · `funciones B2 § 6.15. Destacar un elemento`
-- [ ] **Cerrar una digresión** · 3 pts · `funciones B2 § 6.19. Cerrar una digresión`
-- [ ] **Rechazar un tema o aspecto del tema** · 5 pts · `funciones B2 § 6.20. Rechazar un tema o aspecto d`
-- [ ] **Interrumpir** · 6 pts · `funciones B2 § 6.21. Interrumpir`
-- [ ] **Pedir a alguien que guarde silencio** · 3 pts · `funciones B2 § 6.23. Pedir a alguien que guarde s`
-- [ ] **Indicar que se desea continuar el discurso** · 4 pts · `funciones B2 § 6.25. Indicar que se desea continu`
-- [ ] **Concluir el relato** · 10 pts · `funciones B2 § 6.26. Concluir el relato`
-- [ ] **Introducir un nuevo tema** · 9 pts · `funciones B2 § 6.27. Introducir un nuevo tema`
+- [x] **Preguntar por una persona y responder** · 21 pts · `funciones B2 § 6.3. Preguntar por una persona y r`  — fn-preguntar-persona-telefono-b2
+- [x] **Preguntar por el estado general de las cosas y responder** · 11 pts · `funciones B2 § 6.6. Preguntar por el estado gener`  — fn-estado-general-cosas-b2
+- [x] **Solicitar que comience un relato y reaccionar** · 8 pts · `funciones B2 § 6.7. Solicitar que comience un rel`  — fn-solicitar-comienzo-relato-b2
+- [x] **Introducir el tema del relato y reaccionar** · 15 pts · `funciones B2 § 6.8. Introducir el tema del relato`  — fn-introducir-tema-relato-b2
+- [x] **Indicar que se sigue el relato con interés** · 6 pts · `funciones B2 § 6.9. Indicar que se sigue el relat`  — fn-seguir-relato-b2
+- [x] **Destacar un elemento** · 3 pts · `funciones B2 § 6.15. Destacar un elemento`  — fn-destacar-elemento-b2
+- [x] **Cerrar una digresión** · 3 pts · `funciones B2 § 6.19. Cerrar una digresión`  — fn-cerrar-rechazar-tema-b2
+- [x] **Rechazar un tema o aspecto del tema** · 5 pts · `funciones B2 § 6.20. Rechazar un tema o aspecto d`  — fn-cerrar-rechazar-tema-b2
+- [x] **Interrumpir** · 6 pts · `funciones B2 § 6.21. Interrumpir`  — fn-interrumpir-b2
+- [x] **Pedir a alguien que guarde silencio** · 3 pts · `funciones B2 § 6.23. Pedir a alguien que guarde s`  — fn-pedir-silencio-continuar-b2
+- [x] **Indicar que se desea continuar el discurso** · 4 pts · `funciones B2 § 6.25. Indicar que se desea continu`  — fn-pedir-silencio-continuar-b2
+- [x] **Concluir el relato** · 10 pts · `funciones B2 § 6.26. Concluir el relato`  — fn-concluir-relato-b2
+- [x] **Introducir un nuevo tema** · 9 pts · `funciones B2 § 6.27. Introducir un nuevo tema`  — fn-introducir-nuevo-tema-b2
 
 ### B2 · discourse (0/13)
 - [ ] **Mantenimiento del referente y del hilo discursivo** · 10 pts · `tacticas_pragmaticas B2 § 1.1. Mantenimiento del referente y`

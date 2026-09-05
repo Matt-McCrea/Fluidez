@@ -1159,6 +1159,8 @@ window.VERBS = [
 { inf:'disculpar', en:'to excuse, to forgive', type:'ar' },
 { inf:'perdonar', en:'to forgive', type:'ar' },
 { inf:'molestar', en:'to bother, to annoy', type:'ar' },
+{ inf:'imaginarse', en:'to imagine', type:'ar' },
+{ inf:'referirse', en:'to refer (to)', type:'ir', stem:'ie' },
 { inf:'tratarse', en:'to be about (a matter)', type:'ar' },
 { inf:'entusiasmar', en:'to excite, to thrill', type:'ar' },
 { inf:'apasionar', en:'to fascinate, to be passionate about', type:'ar' },

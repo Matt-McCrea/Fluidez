@@ -20143,6 +20143,455 @@ window.STRAND_LESSONS = [
     { id: 'p:despedirseB2:cloze', kind: 'cloze', text: 'A la espera de sus noticias, les saluda ___ (atentamente)', accept: ['atentamente'] },
     { id: 'p:despedirseB2:recall', kind: 'recall', front: '¿Tienen las fórmulas escritas de despedida un equivalente hablado?', back: 'no — son puramente del registro escrito' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 function, part 5 (final): finishes B2 · function (96/96).
+ * Estructurar el discurso: the mechanics of managing a conversation's turns
+ * and topics — starting, following, interrupting, closing, switching.
+ * Combined: Cerrar una digresión + Rechazar un tema (both steer away from a
+ * topic); Pedir silencio + Indicar que se desea continuar (both manage
+ * turn-taking) — each pair thin (3-5 pts) and functionally adjacent.
+ * ========================================================================== */
+{
+  id: 'fn-preguntar-persona-telefono-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1470', 'funciones:B2:1471', 'funciones:B2:1472', 'funciones:B2:1474'],
+  title: 'Preguntar por una persona: no se retire, ahora le paso',
+  summary: '"No se retire" is a fossilized phone-specific command — you would never say it face to face — one of a small set of formulas that exist ONLY in the telephone register, with no equivalent in an in-person conversation.',
+  sections: [
+    { h: 'Asking the caller to wait: telephone-only', html: '<i>No se retire, por favor</i> and <i>Un momento, ahora le paso</i> are fixed telephone formulas — nobody says "no se retire" face to face.' },
+    { h: 'Ahora le pongo (con...)', html: 'Announces the transfer specifically: <i>Un momento, ahora le pongo con el Sr. García.</i>' },
+    { h: 'Unavailable, politely', html: '<i>Disculpe, pero en este momento no le puede atender</i> — formal, impersonal phrasing for someone unavailable.' }
+  ],
+  exponents: [
+    { es: 'No se retire, por favor.', en: 'Please hold.', register: 'formal', note: 'telephone-only — never said face to face' },
+    { es: 'Un momento, ahora le pongo.', en: 'One moment, I\'ll put you through.', register: 'formal' },
+    { es: 'Disculpe, pero en este momento no le puede atender.', en: "I'm sorry, but he can't take your call right now.", register: 'formal' },
+    { es: '¿Me pone con el Sr. García? -Un momento, ahora le pongo.', en: 'Could you put me through to Mr. García? -One moment, I\'ll connect you.', register: 'formal' },
+    { es: 'Espera, ahora te paso con él.', en: 'Hold on, I\'ll put you through to him now.', register: 'coloquial', note: 'the tú equivalent, used between friends' }
+  ],
+  contrasts: [
+    { es: 'Espera un momento.', en: 'Wait a moment.', note: 'general, works anywhere' },
+    { es: 'No se retire, por favor.', en: 'Please hold.', note: 'telephone-only, never used face to face' }
+  ],
+  pitfalls: [
+    '<i>No se retire</i> only makes sense on the phone — using it face to face would sound bizarre, since nobody is physically "retiring" anywhere.',
+    'These formulas are consistently usted-register — the tú equivalents (<i>espera, ahora te paso</i>) exist but shift the whole exchange to a more casual footing.'
+  ],
+  examples: [
+    { es: 'Un momentito, por favor, no cuelgue.', en: "Just a moment, please, don't hang up." },
+    { es: 'Ahora mismo le paso con el departamento correspondiente.', en: "I'll put you through to the right department right now." },
+    { es: 'Lo siento, en este momento está reunido.', en: "I'm sorry, he's in a meeting right now." }
+  ],
+  probes: [
+    { id: 'p:pregpersonatelB2:soloTelefono', kind: 'mcq', q: '¿Se dice "no se retire" cara a cara?',
+      options: ['Sí, es general', 'No, es exclusivo del teléfono', 'Solo con amigos'], answer: 1 },
+    { id: 'p:pregpersonatelB2:registro', kind: 'mcq', q: '¿Qué registro predomina en estas fórmulas telefónicas?',
+      options: ['Coloquial, con tú', 'Formal, con usted', 'Ambos por igual'], answer: 1 },
+    { id: 'p:pregpersonatelB2:cloze', kind: 'cloze', text: 'Un momento, ahora le ___. (poner)', accept: ['pongo'] },
+    { id: 'p:pregpersonatelB2:recall', kind: 'recall', front: '¿En qué contexto EXCLUSIVO se usa "no se retire"?', back: 'en conversaciones telefónicas' }
+  ]
+},
+
+{
+  id: 'fn-estado-general-cosas-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1493', 'funciones:B2:1496', 'funciones:B2:1499', 'funciones:B2:1501', 'funciones:B2:1503'],
+  title: 'Preguntar por el estado general: ¿cómo va lo de...?',
+  summary: '"¿Cómo va lo de...?" asks specifically about the progress of a known, ongoing situation — a new job, a project — distinct from the more generic "¿qué tal todo?", which asks about everything at once with no particular focus.',
+  sections: [
+    { h: '¿Cómo va + SN? / ¿Cómo va lo de...?', html: 'Asks about the progress of something specific: <i>¿Cómo va lo del nuevo trabajo?</i>' },
+    { h: '¿Qué tal todo?: the generic version', html: 'Asks about everything at once, with no particular focus.' },
+    { h: 'Replying, then pivoting to a new topic', html: '<i>Bien, gracias, todo bien. Por cierto, ¿sabes...?</i> — a common conversational move that answers briefly, then launches something new.' }
+  ],
+  exponents: [
+    { es: '¿Y qué? ¿Cómo va el negocio?', en: 'So? How\'s the business going?', register: 'coloquial' },
+    { es: '¿Qué tal?, ¿cómo va lo del nuevo trabajo?', en: "How's it going, how's the new job coming along?", register: 'coloquial' },
+    { es: 'Estupendamente, y a ti, ¿qué tal?', en: 'Wonderfully, and you, how are you?', register: 'coloquial' },
+    { es: 'Bueno, tirando, ¿y tú?', en: 'Well, getting by, and you?', register: 'coloquial' },
+    { es: 'Bien gracias, todo bien. Por cierto, ¿sabes a quién vi ayer?', en: 'Fine thanks, all good. By the way, do you know who I saw yesterday?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¿Qué tal todo?', en: "How's everything?", note: 'generic — no particular focus' },
+    { es: '¿Cómo va lo del nuevo trabajo?', en: "How's the new job going?", note: 'specific — asks about one known, ongoing situation' }
+  ],
+  pitfalls: [
+    '<i>¿Cómo va lo de...?</i> requires the listener to already have a known situation in mind — using it with no shared context leaves "lo de" pointing at nothing.',
+    'The reply-then-pivot move (<i>todo bien, por cierto...</i>) is a real conversational strategy — treating the reply as a complete closed exchange misses that it is usually just a stepping stone to the real topic.'
+  ],
+  examples: [
+    { es: '¿Qué tal todo por casa?', en: "How's everything at home?" },
+    { es: 'Vamos tirando, ya sabes.', en: "We're getting by, you know how it is." },
+    { es: '¿Cómo va lo de la mudanza?', en: "How's the move going?" }
+  ],
+  probes: [
+    { id: 'p:estadogeneralB2:especifico', kind: 'mcq', q: '¿Cuál pregunta por algo ESPECÍFICO, no genérico?',
+      options: ['¿Qué tal todo?', '¿Cómo va lo del nuevo trabajo?', 'Ambas igual de específicas'], answer: 1 },
+    { id: 'p:estadogeneralB2:pivote', kind: 'mcq', q: '¿Qué logra "todo bien, por cierto, ¿sabes...?"',
+      options: ['Cierra la conversación', 'Responde brevemente y lanza un tema nuevo', 'Nada en particular'], answer: 1 },
+    { id: 'p:estadogeneralB2:cloze', kind: 'cloze', text: '¿Cómo va lo ___ nuevo trabajo? (del)', accept: ['del'] },
+    { id: 'p:estadogeneralB2:recall', kind: 'recall', front: '¿Qué necesita "¿cómo va lo de...?" para funcionar?', back: 'que el oyente ya sepa a qué situación se refiere' }
+  ]
+},
+
+{
+  id: 'fn-solicitar-comienzo-relato-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1506', 'funciones:B2:1507', 'funciones:B2:1508', 'funciones:B2:1509', 'funciones:B2:1511'],
+  title: 'Solicitar que comience un relato: pues verás..., te cuento',
+  summary: '"Pues verás..." announces that an explanation is coming without yet saying anything — a pure discourse marker that buys a beat before the actual narrative starts, distinct from diving straight into the story.',
+  sections: [
+    { h: 'Requesting the story', html: '<i>Oye, cuéntame algo del examen</i>, <i>¿Qué pasó con lo de tu hermano?</i> — direct invitations to narrate.' },
+    { h: 'Pues verás... / Te cuento.: announcing before narrating', html: 'Both signal "here comes an explanation" before any content arrives — a beat of preparation, not yet the story itself.' },
+    { h: 'Nada, pues que... / Pues nada, que...', html: 'A very colloquial way to launch into the actual narrative once the announcing beat is done.' }
+  ],
+  exponents: [
+    { es: 'Oye, cuéntame algo del examen final.', en: 'Hey, tell me about the final exam.', register: 'coloquial' },
+    { es: 'Pues verás, primero llegamos nosotros...', en: 'Well, you see, first we arrived...', register: 'coloquial', note: 'announces before narrating' },
+    { es: 'Te cuento. Cenamos todos en casa de Pedro...', en: 'Let me tell you. We all had dinner at Pedro\'s place...', register: 'coloquial' },
+    { es: 'Pues nada, que fuimos a cenar y estaba allí su novia.', en: 'Well, so, we went to dinner and his girlfriend was there.', register: 'coloquial' },
+    { es: 'Pues, para empezar, llovió todo el día...', en: 'Well, to start with, it rained all day...', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Llovió todo el día.', en: 'It rained all day.', note: 'diving straight into the narrative' },
+    { es: 'Pues verás, llovió todo el día...', en: 'Well, you see, it rained all day...', note: 'announces before narrating — a beat of preparation' }
+  ],
+  pitfalls: [
+    '<i>Pues verás</i> and <i>te cuento</i> are pure discourse markers with almost no independent content — they exist to signal a narrative is starting, not to convey information themselves.',
+    'These openers are markedly colloquial and spoken — a written narrative would typically launch directly, without this announcing step.'
+  ],
+  examples: [
+    { es: '¿Qué pasó con lo de tu hermano?', en: 'What happened with your brother?' },
+    { es: 'Pues una vez, en el colegio, pasó algo increíble.', en: 'Well, once, at school, something incredible happened.' },
+    { es: 'Nada, pues que al final todo salió bien.', en: 'So, in the end everything turned out fine.' }
+  ],
+  probes: [
+    { id: 'p:solicitarcomienzoB2:funcion', kind: 'mcq', q: '¿Qué contenido informativo tiene "pues verás..." por sí solo?',
+      options: ['Mucho', 'Casi ninguno — anuncia que viene un relato', 'Es la conclusión'], answer: 1 },
+    { id: 'p:solicitarcomienzoB2:registro', kind: 'mcq', q: '¿Son estos marcadores típicos de la lengua escrita formal?',
+      options: ['Sí', 'No, son orales y coloquiales', 'Solo en cartas'], answer: 1 },
+    { id: 'p:solicitarcomienzoB2:cloze', kind: 'cloze', text: '___ verás, primero llegamos nosotros. (pues)', accept: ['Pues', 'pues'] },
+    { id: 'p:solicitarcomienzoB2:recall', kind: 'recall', front: '¿Qué función cumple "te cuento" antes de narrar?', back: 'anuncia el inicio del relato, sin aportar contenido aún' }
+  ]
+},
+
+{
+  id: 'fn-introducir-tema-relato-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1524', 'funciones:B2:1526', 'funciones:B2:1527', 'funciones:B2:1533', 'funciones:B2:1534'],
+  title: 'Introducir el tema del relato: ¿sabes qué?, ¿te has enterado?',
+  summary: '"¿Tienes un momentito?" checks the listener is actually available BEFORE launching in — a courtesy step that "¿sabes qué?" skips entirely, diving straight into the hook.',
+  sections: [
+    { h: '¿Sabes qué? / ¿Sabes lo de...?', html: 'Dives straight into the hook, no preliminary check: <i>¿Sabes qué? Que Carmen ha tenido un accidente.</i>' },
+    { h: 'Checking availability first', html: '<i>Oye, ¿tienes un momentito? Es que quería contarte una cosa...</i> — a courtesy step before launching, absent from the more abrupt "¿sabes qué?"' },
+    { h: 'Reacting to the hook', html: '<i>¿En serio?</i>, <i>¡Vaya!, cuenta</i> — inviting the narrator to continue with visible interest.' }
+  ],
+  exponents: [
+    { es: '¿Sabes qué? Que Carmen ha tenido un accidente.', en: 'You know what? Carmen had an accident.', register: 'coloquial' },
+    { es: '¿Te has enterado de lo de Antonio?', en: 'Have you heard about Antonio?', register: 'coloquial' },
+    { es: 'Oye, ¿tienes un momentito? Es que quería contarte una cosa.', en: 'Hey, have you got a moment? I wanted to tell you something.', register: 'coloquial', note: 'checks availability first' },
+    { es: '-A Lucía le entraron a robar en casa. -¿En serio?', en: '-Lucía got burgled. -Really?', register: 'coloquial' },
+    { es: '¿Saben ustedes cuál fue el origen de los grandes cafetales?', en: 'Do you know what the origin of the great coffee plantations was?', register: 'formal', note: 'public presentation register' }
+  ],
+  contrasts: [
+    { es: '¿Sabes qué? Carmen tuvo un accidente.', en: 'You know what? Carmen had an accident.', note: 'no preliminary check — dives straight in' },
+    { es: '¿Tienes un momentito? Quería contarte algo.', en: 'Have you got a moment? I wanted to tell you something.', note: 'checks availability before launching' }
+  ],
+  pitfalls: [
+    'Skipping the availability check (<i>¿tienes un momentito?</i>) for genuinely time-sensitive or serious news is normal — it is used more for news that can wait a minute.',
+    '<i>¿Saben ustedes...?</i> is specific to public presentations/formal talks addressing an audience — it would sound oddly stiff in a one-on-one chat.'
+  ],
+  examples: [
+    { es: 'Perdona, ¿tienes prisa? Tengo que contarte una cosa.', en: 'Sorry, are you in a hurry? I need to tell you something.' },
+    { es: '-Lola está en el hospital. -¡Vaya!, cuenta.', en: '-Lola is in the hospital. -Wow, tell me.' },
+    { es: '¿Sabían ustedes que Cristóbal Colón nunca llegó a pisar suelo estadounidense?', en: 'Did you know that Christopher Columbus never set foot on US soil?' }
+  ],
+  probes: [
+    { id: 'p:introducirtemaB2:cortesia', kind: 'mcq', q: '¿Qué hace "¿tienes un momentito?" que "¿sabes qué?" no hace?',
+      options: ['Nada distinto', 'Comprueba la disponibilidad antes de contar algo', 'Termina la conversación'], answer: 1 },
+    { id: 'p:introducirtemaB2:formal', kind: 'mcq', q: '¿Dónde es apropiado "¿saben ustedes...?"',
+      options: ['Con un amigo cercano', 'En una presentación pública', 'Por mensaje de texto'], answer: 1 },
+    { id: 'p:introducirtemaB2:cloze', kind: 'cloze', text: '¿Te has ___ de lo de Antonio? (enterar)', accept: ['enterado'] },
+    { id: 'p:introducirtemaB2:recall', kind: 'recall', front: '¿Qué paso de cortesía incluye "¿tienes un momentito?" que "¿sabes qué?" omite?', back: 'comprobar que el oyente está disponible' }
+  ]
+},
+
+{
+  id: 'fn-seguir-relato-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1545', 'funciones:B2:1547', 'funciones:B2:1549', 'funciones:B2:1550'],
+  title: 'Indicar que se sigue el relato con interés: ya me lo imagino',
+  summary: '"Ya me lo imagino" claims you can already picture the outcome, based on what you know of the people involved — a more engaged listener response than a neutral "entiendo", which simply registers understanding without predicting anything.',
+  sections: [
+    { h: 'Sí, ya me lo imagino', html: 'Claims you can already picture how it went, based on context: <i>-Carlos no hizo nada. -Sí, ya me lo imagino.</i>' },
+    { h: '¡Es increíble/alucinante!', html: 'A strong reaction of amazement, keeping the narrator going.' },
+    { h: '(Lo) entiendo/comprendo: neutral acknowledgment', html: 'Registers understanding without predicting or reacting strongly — more measured than the other options.' },
+    { h: 'Normal.: minimal validation', html: 'A one-word response validating the story as unsurprising, not dismissive.' }
+  ],
+  exponents: [
+    { es: '-Por supuesto, Carlos no hizo nada. -Sí, ya me lo imagino.', en: '-Of course, Carlos did nothing. -Yeah, I can imagine.', register: 'coloquial' },
+    { es: '¡Es alucinante lo que me cuentas!', en: "What you're telling me is unbelievable!", register: 'coloquial' },
+    { es: 'Entiendo, sigue contándome.', en: 'I understand, keep telling me.', register: 'neutral' },
+    { es: 'Normal, con lo que había pasado antes.', en: 'Makes sense, given what had happened before.', register: 'coloquial' },
+    { es: '¡No me digas! ¿Y qué pasó después?', en: 'No way! And what happened next?', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Entiendo.', en: 'I understand.', note: 'neutral acknowledgment, no prediction' },
+    { es: 'Ya me lo imagino.', en: 'I can already imagine.', note: 'claims to already picture the outcome' }
+  ],
+  pitfalls: [
+    '<i>Ya me lo imagino</i> claims real predictive insight based on what you know — using it when you genuinely have no idea what happened can come across as dismissive of the story.',
+    '<i>Normal</i> alone validates the story as unsurprising given context — it is not dismissing the story as boring, which can be a common misreading.'
+  ],
+  examples: [
+    { es: '¡Anda! No me lo esperaba para nada.', en: "Oh! I really wasn't expecting that." },
+    { es: 'Comprendo perfectamente lo que dices.', en: 'I understand perfectly what you\'re saying.' },
+    { es: 'Ya me lo imaginaba, conociéndole.', en: 'I already suspected as much, knowing him.' }
+  ],
+  probes: [
+    { id: 'p:seguirrelatoB2:prediccion', kind: 'mcq', q: '¿Cuál CLAIMA predecir cómo terminó algo, basándose en lo que ya sabes?',
+      options: ['Entiendo.', 'Ya me lo imagino.', 'Normal.'], answer: 1 },
+    { id: 'p:seguirrelatoB2:normal', kind: 'mcq', q: '¿Qué significa responder "normal" a una historia?',
+      options: ['Que es aburrida', 'Que no sorprende, dado el contexto', 'Que no te importa'], answer: 1 },
+    { id: 'p:seguirrelatoB2:cloze', kind: 'cloze', text: 'Sí, ya me lo ___. (imaginar)', accept: ['imagino'] },
+    { id: 'p:seguirrelatoB2:recall', kind: 'recall', front: '¿Qué añade "ya me lo imagino" que "entiendo" no añade?', back: 'una predicción/comprensión activa del resultado' }
+  ]
+},
+
+{
+  id: 'fn-destacar-elemento-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1575', 'funciones:B2:1576', 'funciones:B2:1577'],
+  title: 'Destacar un elemento: hay que tener en cuenta que',
+  summary: '"Hay que tener en cuenta que" flags a fact as something the listener must factor into their reasoning, distinct from the plainer focusing adverbs (especialmente, concretamente), which simply zoom in on one part of a bigger statement.',
+  sections: [
+    { h: 'Focusing adverbs', html: '<i>Especialmente, particularmente, concretamente, precisamente</i> zoom in on one part of a larger statement.' },
+    { h: 'Hay que tener en cuenta + SN/O.', html: 'Flags a fact as something that MUST factor into the listener\'s reasoning, not just an aside: <i>Hay que tener en cuenta las limitaciones de nuestro presupuesto.</i>' }
+  ],
+  exponents: [
+    { es: 'Yo iré, especialmente, el lunes.', en: "I'll go, especially on Monday.", register: 'neutral' },
+    { es: 'Las investigaciones sobre el colesterol, concretamente, demuestran esto.', en: 'Research on cholesterol, specifically, shows this.', register: 'formal' },
+    { es: 'Hay que tener en cuenta las limitaciones de nuestro presupuesto.', en: 'We have to take into account the limitations of our budget.', register: 'formal' },
+    { es: 'Precisamente por eso, decidimos esperar.', en: 'Precisely for that reason, we decided to wait.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Especialmente los lunes.', en: 'Especially on Mondays.', note: 'zooms in on one part of a claim' },
+    { es: 'Hay que tener en cuenta el presupuesto.', en: 'We must take the budget into account.', note: 'flags something that must factor into the reasoning' }
+  ],
+  pitfalls: [
+    '<i>Hay que tener en cuenta</i> is stronger than a plain aside — it signals the fact is not optional context but a real constraint on the conclusion.',
+    'These focusing adverbs (<i>concretamente, precisamente</i>) are near-synonyms but each has a slightly different connotation — <i>precisamente</i> often implies "exactly for that reason", not just "specifically".'
+  ],
+  examples: [
+    { es: 'Justamente por eso no quise decir nada.', en: "That's exactly why I didn't want to say anything." },
+    { es: 'Particularmente, me interesa la parte final.', en: "I'm particularly interested in the final part." },
+    { es: 'Hay que tener en cuenta que el tiempo es limitado.', en: 'We must bear in mind that time is limited.' }
+  ],
+  probes: [
+    { id: 'p:destacarB2:fuerza', kind: 'mcq', q: '¿Cuál es más FUERTE, un factor que se DEBE considerar?',
+      options: ['Especialmente los lunes.', 'Hay que tener en cuenta el presupuesto.', 'Ambas igual de fuertes'], answer: 1 },
+    { id: 'p:destacarB2:sinonimos', kind: 'mcq', q: '¿Qué implica "precisamente" a menudo, más allá de "específicamente"?',
+      options: ['Nada extra', '"Exactamente por esa razón"', 'Duda'], answer: 1 },
+    { id: 'p:destacarB2:cloze', kind: 'cloze', text: 'Hay que tener en ___ el presupuesto. (cuenta)', accept: ['cuenta'] },
+    { id: 'p:destacarB2:recall', kind: 'recall', front: '¿Qué frase señala un factor que DEBE considerarse, no solo un detalle?', back: 'hay que tener en cuenta que' }
+  ]
+},
+
+{
+  id: 'fn-cerrar-rechazar-tema-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1582', 'funciones:B2:1583', 'funciones:B2:1584', 'funciones:B2:1585', 'funciones:B2:1587', 'funciones:B2:1589'],
+  title: 'Cerrar una digresión y rechazar un tema',
+  summary: '"¿De qué hablábamos?" asks the group to reconstruct where the conversation left off — a genuinely useful move after a real digression — while "no hablemos de eso, ¿vale?" refuses a topic outright, a distinct social move from simply returning to an old one.',
+  sections: [
+    { h: 'Returning after a digression', html: '<i>Volvamos a lo que hablábamos</i>, <i>¿De qué hablábamos?</i> — the second genuinely asks the group to help reconstruct the thread.' },
+    { h: 'Refusing a topic outright', html: '<i>No hablemos de eso, ¿vale?</i>, <i>Cambiemos de tema</i> — a distinct move from returning to an old topic; this refuses to engage with the current one at all.' },
+    { h: 'Formal, written refusal', html: '<i>Sentimos no hacer ningún comentario al respecto, ya que se aparta del tema</i> — a formal business-correspondence way to decline discussing a point.' }
+  ],
+  exponents: [
+    { es: 'Volvamos a lo que hablábamos antes.', en: 'Let\'s get back to what we were talking about.', register: 'neutral' },
+    { es: '¿De qué hablábamos? Se me ha ido el hilo.', en: "What were we talking about? I've lost the thread.", register: 'coloquial' },
+    { es: 'No hablemos de eso, ¿vale?', en: "Let's not talk about that, okay?", register: 'coloquial' },
+    { es: 'Eso no tiene nada que ver con nuestro tema.', en: "That has nothing to do with our topic.", register: 'neutral' },
+    { es: 'Sentimos no hacer ningún comentario, ya que se aparta del tema.', en: 'We regret not making any comment, as it strays from the topic.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Volvamos a lo que hablábamos.', en: 'Let\'s get back to what we were talking about.', note: 'returns to an earlier, abandoned topic' },
+    { es: 'No hablemos de eso.', en: "Let's not talk about that.", note: 'refuses to engage with the CURRENT topic at all' }
+  ],
+  pitfalls: [
+    '<i>¿De qué hablábamos?</i> is a genuine request to reconstruct the thread — it only works after a real digression, not as a rhetorical dismissal.',
+    'The formal refusal (<i>sentimos no hacer ningún comentario...</i>) explicitly justifies the refusal by citing relevance — a bare "no comment" without that justification reads more evasive in writing.'
+  ],
+  examples: [
+    { es: 'Continuemos con lo importante.', en: "Let's continue with what's important." },
+    { es: 'Hablemos de otra cosa, anda.', en: "Let's talk about something else, come on." },
+    { es: 'Por lo que se refiere a ese punto, preferimos no entrar en detalles.', en: 'As for that point, we prefer not to go into details.' }
+  ],
+  probes: [
+    { id: 'p:cerrarrechazarB2:distincion', kind: 'mcq', q: '¿Es "no hablemos de eso" lo mismo que "volvamos a lo que hablábamos"?',
+      options: ['Sí, son sinónimos', 'No — una rechaza el tema actual, otra retoma uno anterior', 'Ambas cierran la conversación'], answer: 1 },
+    { id: 'p:cerrarrechazarB2:formal', kind: 'mcq', q: '¿Qué hace la fórmula formal de rechazo que "no hablemos de eso" no hace?',
+      options: ['Nada distinto', 'Justifica el rechazo citando la relevancia', 'Es más breve'], answer: 1 },
+    { id: 'p:cerrarrechazarB2:cloze', kind: 'cloze', text: '¿De qué ___? (hablábamos)', accept: ['hablábamos'] },
+    { id: 'p:cerrarrechazarB2:recall', kind: 'recall', front: '¿Cuándo funciona genuinamente "¿de qué hablábamos?"?', back: 'tras una digresión real, para reconstruir el hilo' }
+  ]
+},
+
+{
+  id: 'fn-interrumpir-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1593', 'funciones:B2:1595', 'funciones:B2:1596', 'funciones:B2:1597', 'funciones:B2:1598'],
+  title: 'Interrumpir: antes de que se me olvide, perdona que te interrumpa',
+  summary: '"Antes de que se me olvide" justifies an interruption by citing forgetfulness as the urgency — a specific excuse that "perdona que te interrumpa" (a bare apology, no reason given) does not offer.',
+  sections: [
+    { h: 'Antes de que se me olvide: justifying with forgetfulness', html: 'Cites the risk of forgetting as the reason interrupting now is necessary.' },
+    { h: 'Minimal interruption markers', html: '<i>Espera..., un momento...</i>, <i>(Oye)... que...</i> — brief, can be almost overlapping with the other speaker.' },
+    { h: 'Perdona que te interrumpa, pero...', html: 'The fullest, most polite frame — apologizes explicitly before stating the reason.' },
+    { h: 'Requesting the floor explicitly', html: '<i>Oye, un momento, ¿puedo decir algo?</i> — asks permission before interrupting, more formal/careful than the others.' }
+  ],
+  exponents: [
+    { es: 'Antes de que se me olvide, quería decirte algo.', en: 'Before I forget, I wanted to tell you something.', register: 'coloquial' },
+    { es: 'Espera, espera, un momento...', en: 'Wait, wait, one moment...', register: 'coloquial' },
+    { es: 'Oye... que tengo que decirte algo urgente.', en: 'Hey... I have to tell you something urgent.', register: 'coloquial' },
+    { es: 'Perdona que te interrumpa, pero es importante.', en: "Sorry to interrupt, but it's important.", register: 'neutral' },
+    { es: 'Oye, un momento, ¿puedo decir algo?', en: 'Hey, a moment, can I say something?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Espera, un momento.', en: 'Wait, one moment.', note: 'minimal, almost overlapping' },
+    { es: 'Perdona que te interrumpa, pero...', en: 'Sorry to interrupt, but...', note: 'the fullest, most polite frame, apology before reason' }
+  ],
+  pitfalls: [
+    'The minimal interruption markers (<i>espera..., oye...que...</i>) can genuinely overlap with the other speaker\'s turn — this is normal in fast, informal Spanish conversation, not necessarily rude.',
+    '<i>Antes de que se me olvide</i> justifies the interruption specifically through forgetfulness — using it when there is no real risk of forgetting can feel like a flimsy excuse.'
+  ],
+  examples: [
+    { es: 'Sí, ya... claro..., pero deja que termine.', en: 'Yes, right... sure..., but let me finish.' },
+    { es: 'Disculpa que te interrumpa, es que se me olvida si no lo digo ahora.', en: "Sorry to interrupt, it's just I'll forget if I don't say it now." },
+    { es: '¿Puedo decir una cosa antes de que sigas?', en: 'Can I say something before you continue?' }
+  ],
+  probes: [
+    { id: 'p:interrumpirB2:justificacion', kind: 'mcq', q: '¿Qué justifica "antes de que se me olvide" como razón para interrumpir?',
+      options: ['El aburrimiento', 'El riesgo de olvidar algo', 'La cortesía formal'], answer: 1 },
+    { id: 'p:interrumpirB2:solapamiento', kind: 'mcq', q: '¿Es normal que las interrupciones mínimas se solapen con el otro hablante?',
+      options: ['No, nunca', 'Sí, en conversación informal rápida', 'Solo por escrito'], answer: 1 },
+    { id: 'p:interrumpirB2:cloze', kind: 'cloze', text: 'Perdona que te ___, pero es importante. (interrumpir)', accept: ['interrumpa'] },
+    { id: 'p:interrumpirB2:recall', kind: 'recall', front: '¿Qué razón da "antes de que se me olvide" para interrumpir?', back: 'el riesgo de olvidar lo que se quiere decir' }
+  ]
+},
+
+{
+  id: 'fn-pedir-silencio-continuar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1604', 'funciones:B2:1605', 'funciones:B2:1606', 'funciones:B2:1611', 'funciones:B2:1613', 'funciones:B2:1614'],
+  title: 'Pedir silencio y continuar: como decía...',
+  summary: '"Como decía..." resumes a thread after an interruption by explicitly marking the return to it — signaling to listeners that what follows continues an earlier point, not a new one.',
+  sections: [
+    { h: 'Asking for the floor', html: '<i>Espera un momento, déjame terminar</i>, <i>Estoy hablando yo, luego hablas tú</i> — explicit turn-taking management.' },
+    { h: 'Signaling you are almost done', html: '<i>Ya termino</i>, <i>Solo me queda por decir una cosa</i> — asks for patience by promising the end is near.' },
+    { h: 'Como decía...: resuming after interruption', html: 'Explicitly marks a return to an earlier point, distinguishing it from a new one: <i>Como decía, me gustaría empezar recordando la historia del café.</i>' }
+  ],
+  exponents: [
+    { es: 'Espera un momento, déjame terminar.', en: 'Wait a moment, let me finish.', register: 'coloquial' },
+    { es: 'Estoy hablando yo, luego hablas tú.', en: "I'm talking, you can talk after.", register: 'coloquial' },
+    { es: 'Ya termino, solo me queda por decir una cosa.', en: "I'm almost done, I just have one more thing to say.", register: 'neutral' },
+    { es: 'Como decía, me gustaría empezar recordando la historia del café.', en: 'As I was saying, I would like to start by recalling the history of coffee.', register: 'formal', note: 'resumes after an interruption' },
+    { es: 'Por favor, no me interrumpan.', en: 'Please, do not interrupt me.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Me gustaría hablar de la historia del café.', en: 'I would like to talk about the history of coffee.', note: 'introduces a point for the first time' },
+    { es: 'Como decía, me gustaría hablar de la historia del café.', en: 'As I was saying, I would like to talk about the history of coffee.', note: 'explicitly marks a RETURN to an interrupted point' }
+  ],
+  pitfalls: [
+    '<i>Como decía</i> only makes sense after a genuine interruption — using it to introduce a brand-new point (with nothing actually resumed) is confusing.',
+    '<i>Estoy hablando yo, luego hablas tú</i> is fairly blunt — appropriate when genuinely being talked over, but can sound sharp in a milder disagreement.'
+  ],
+  examples: [
+    { es: 'Un momento, ya termino y te dejo hablar.', en: 'One moment, I\'m almost done and I\'ll let you speak.' },
+    { es: 'Por favor, no me interrumpan hasta que acabe.', en: "Please don't interrupt me until I finish." },
+    { es: 'Como decía antes de que me interrumpieran, el proyecto avanza bien.', en: 'As I was saying before I was interrupted, the project is progressing well.' }
+  ],
+  probes: [
+    { id: 'p:pedirsilencioB2:comodeciasignifica', kind: 'mcq', q: '¿Cuándo tiene sentido usar "como decía"?',
+      options: ['Al empezar un tema nuevo', 'Al retomar algo tras una interrupción', 'Al despedirse'], answer: 1 },
+    { id: 'p:pedirsilencioB2:tono', kind: 'mcq', q: '¿Es "estoy hablando yo, luego hablas tú" una frase suave?',
+      options: ['Sí, muy suave', 'No, es bastante directa/tajante', 'Es formal'], answer: 1 },
+    { id: 'p:pedirsilencioB2:cloze', kind: 'cloze', text: '___ decía, el proyecto avanza bien. (como)', accept: ['Como', 'como'] },
+    { id: 'p:pedirsilencioB2:recall', kind: 'recall', front: '¿Qué marca "como decía" que distingue un punto de uno nuevo?', back: 'que se retoma un punto interrumpido, no uno nuevo' }
+  ]
+},
+
+{
+  id: 'fn-concluir-relato-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1620', 'funciones:B2:1622', 'funciones:B2:1625', 'funciones:B2:1628', 'funciones:B2:1629'],
+  title: 'Concluir el relato: y bueno..., total que..., en fin...',
+  summary: '"Total que..." wraps up a long or complicated story by cutting to its final outcome, deliberately skipping the details already told — a shortcut closing that "resumiendo..." does more formally and "en fin..." does with a note of resignation.',
+  sections: [
+    { h: 'Casual, trailing-off closings', html: '<i>Y nada..., Y bueno...</i> — informal, almost shrugging ways to end a story, common in speech.' },
+    { h: 'Total que...: cutting to the outcome', html: 'Skips remaining details to state the final result: <i>Total que llegamos tarde y nos perdimos el principio.</i>' },
+    { h: 'Formal summary closings', html: '<i>Resumiendo..., En conclusión..., En suma...</i> — appropriate for a more structured account, spoken or written.' },
+    { h: 'En fin...: resignation', html: 'Closes with a note of resigned acceptance, often about something that did not go as hoped.' }
+  ],
+  exponents: [
+    { es: 'Y bueno, al final todo se solucionó.', en: 'And well, in the end everything got sorted out.', register: 'coloquial' },
+    { es: 'Total que llegamos tarde y nos perdimos el principio.', en: 'So anyway, we arrived late and missed the beginning.', register: 'coloquial', note: 'cuts to the final outcome' },
+    { es: 'Resumiendo, el proyecto se retrasó tres meses.', en: 'To sum up, the project was delayed three months.', register: 'formal' },
+    { es: 'En fin, qué le vamos a hacer.', en: 'Oh well, what can you do.', register: 'coloquial', note: 'resigned acceptance' },
+    { es: 'Para acabar, quiero dar las gracias a todos.', en: 'To finish, I want to thank everyone.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Resumiendo, todo salió bien al final.', en: 'To sum up, everything worked out well in the end.', note: 'a structured, formal-leaning close' },
+    { es: 'Total que todo salió bien.', en: 'So anyway, everything worked out well.', note: 'a casual shortcut, skipping the details' }
+  ],
+  pitfalls: [
+    '<i>En fin</i> carries a note of resignation — using it to close a happy story reads oddly; it fits better when accepting something imperfect.',
+    '<i>Total que</i> explicitly signals that details are being skipped — it is not appropriate when the details actually matter to the listener.'
+  ],
+  examples: [
+    { es: 'Y nada, así fue como acabamos todos empapados.', en: "And so, that's how we all ended up soaked." },
+    { es: 'Por último, quisiera destacar el esfuerzo del equipo.', en: "Lastly, I would like to highlight the team's effort." },
+    { es: 'En suma, el balance del año ha sido positivo.', en: "In sum, the year's balance has been positive." }
+  ],
+  probes: [
+    { id: 'p:concluirrelatoB2:totalque', kind: 'mcq', q: '¿Qué hace "total que" con los detalles restantes de una historia?',
+      options: ['Los desarrolla más', 'Los salta, yendo directo al resultado', 'Los repite'], answer: 1 },
+    { id: 'p:concluirrelatoB2:enfin', kind: 'mcq', q: '¿Qué matiz lleva "en fin"?',
+      options: ['Entusiasmo', 'Resignación', 'Sorpresa'], answer: 1 },
+    { id: 'p:concluirrelatoB2:cloze', kind: 'cloze', text: '___ que llegamos tarde. (total)', accept: ['Total', 'total'] },
+    { id: 'p:concluirrelatoB2:recall', kind: 'recall', front: '¿Qué marcador cierra un relato con un matiz de resignación?', back: 'en fin' }
+  ]
+},
+
+{
+  id: 'fn-introducir-nuevo-tema-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1632', 'funciones:B2:1633', 'funciones:B2:1636', 'funciones:B2:1638', 'funciones:B2:1639'],
+  title: 'Introducir un nuevo tema: por cierto, hablando de...',
+  summary: '"Por cierto" introduces a topic that has NO logical connection to what came before — a pure conversational pivot — while "hablando de..." explicitly links the new topic to something just mentioned, the opposite move.',
+  sections: [
+    { h: 'Por cierto / a propósito: an unrelated pivot', html: 'Introduces something with no logical link to what preceded — a fresh, often opportunistic topic change.' },
+    { h: 'Hablando de...: an explicit link', html: 'The opposite move — explicitly ties the new topic to something just said: <i>Hablando de viajes, ¿sabes que Ana se va a Japón?</i>' },
+    { h: 'Formal topic transitions', html: '<i>Por lo que se refiere a..., Respecto a..., A continuación, voy a...</i> — structured, appropriate for presentations and reports.' }
+  ],
+  exponents: [
+    { es: 'Por cierto, ¿sabes que han abierto un restaurante nuevo?', en: 'By the way, do you know they\'ve opened a new restaurant?', register: 'coloquial', note: 'no logical link to what came before' },
+    { es: 'Oye, hablando de vacaciones, ¿al final adónde fuisteis?', en: 'Hey, speaking of holidays, where did you end up going?', register: 'coloquial', note: 'explicitly links to something just mentioned' },
+    { es: 'Por lo que se refiere al presupuesto, hablaremos más tarde.', en: "As for the budget, we'll talk later.", register: 'formal' },
+    { es: 'A continuación, voy a explicar los resultados del estudio.', en: 'Next, I am going to explain the results of the study.', register: 'formal' },
+    { es: 'Cambiando de tema, ¿qué planes tenéis para el verano?', en: 'Changing the subject, what plans do you have for summer?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Por cierto, ¿has visto la nueva película?', en: 'By the way, have you seen the new film?', note: 'no logical connection to the prior topic' },
+    { es: 'Hablando de películas, ¿has visto la nueva?', en: 'Speaking of films, have you seen the new one?', note: 'explicitly ties to something just mentioned' }
+  ],
+  pitfalls: [
+    '<i>Por cierto</i> and <i>hablando de...</i> are not interchangeable — the first introduces something UNRELATED, the second explicitly connects to what was just said.',
+    'The formal transitions (<i>por lo que se refiere a, respecto a</i>) suit structured presentations/reports — using them in casual chat sounds oddly stiff.'
+  ],
+  examples: [
+    { es: 'A propósito, ¿tienes noticias de Marcos?', en: 'By the way, any news from Marcos?' },
+    { es: 'Respecto a lo que comentamos ayer, he cambiado de opinión.', en: 'Regarding what we discussed yesterday, I\'ve changed my mind.' },
+    { es: 'Luego te cuento algo que me pasó a mí, muy relacionado con esto.', en: "I'll tell you something that happened to me later, very related to this." }
+  ],
+  probes: [
+    { id: 'p:introducirnuevoB2:porciertovshablando', kind: 'mcq', q: '¿Cuál introduce un tema SIN relación con lo anterior?',
+      options: ['Hablando de eso...', 'Por cierto...', 'Ambas conectan igual'], answer: 1 },
+    { id: 'p:introducirnuevoB2:formal', kind: 'mcq', q: '¿Dónde son apropiadas "por lo que se refiere a" / "respecto a"?',
+      options: ['En un chat informal', 'En presentaciones/informes formales', 'Nunca'], answer: 1 },
+    { id: 'p:introducirnuevoB2:cloze', kind: 'cloze', text: '___ de vacaciones, ¿ya reservaste el hotel? (hablando)', accept: ['Hablando', 'hablando'] },
+    { id: 'p:introducirnuevoB2:recall', kind: 'recall', front: '¿"Por cierto" conecta lógicamente con el tema anterior?', back: 'no — introduce algo sin relación directa' }
+  ]
 }
 
 ];
