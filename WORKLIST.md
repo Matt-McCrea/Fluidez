@@ -371,7 +371,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (74/204 done)
+## B2 — lessons (77/204 done)
 
 ### B2 · grammar (26/26)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
@@ -401,7 +401,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 25 pts · `gramatica B2 § 15.2. Oraciones subordinadas adjet`  — gr-subordinadas-relativas-tipos-b2
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica B2 § 15.3. Oraciones subordinadas adver`  — gr-subordinadas-lugar-b2
 
-### B2 · notion (28/53)
+### B2 · notion (31/53)
 - [x] **Existencia, inexistencia** · 7 pts · `nociones_generales B2 § 1.1. Existencia, inexistencia`  — nt-existencia-b2
 - [x] **Presencia, ausencia** · 11 pts · `nociones_generales B2 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-b2
 - [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales B2 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-b2
@@ -425,10 +425,10 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Orientación, dirección** · 13 pts · `nociones_generales B2 § 3.6. Orientación, dirección`  — nt-orientacion-direccion-b2
 - [x] **Orden** · 10 pts · `nociones_generales B2 § 3.7. Orden`  — nt-orden-b2
 - [x] **Origen** · 4 pts · `nociones_generales B2 § 3.8. Origen`  — nt-origen-b2
-- [ ] **Referencias generales** · 19 pts · `nociones_generales B2 § 4.1. Referencias generales`
-- [ ] **Localización en el tiempo** · 32 pts · `nociones_generales B2 § 4.2. Localización en el tiempo`
+- [x] **Referencias generales** · 19 pts · `nociones_generales B2 § 4.1. Referencias generales`  — nt-referencias-generales-b2
+- [x] **Localización en el tiempo** · 32 pts · `nociones_generales B2 § 4.2. Localización en el tiempo`  — nt-localizacion-tiempo-b2
 - [x] **Aspectos de desarrollo** · 137 pts · `nociones_generales B2 § 4.3. Aspectos de desarrollo`  — nt-anticipacion-b2
-- [ ] **Formas y figuras** · 14 pts · `nociones_generales B2 § 5.1. Formas y figuras`
+- [x] **Formas y figuras** · 14 pts · `nociones_generales B2 § 5.1. Formas y figuras`  — nt-formas-figuras-b2
 - [ ] **Consistencia, resistencia** · 14 pts · `nociones_generales B2 § 5.3. Consistencia, resistencia`
 - [ ] **Textura** · 5 pts · `nociones_generales B2 § 5.4. Textura`
 - [ ] **Acabado** · 5 pts · `nociones_generales B2 § 5.5. Acabado`

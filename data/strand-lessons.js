@@ -16736,6 +16736,135 @@ window.STRAND_LESSONS = [
     { id: 'p:origenB2:cloze', kind: 'cloze', text: 'Los ingresos ___ principalmente de las ventas. (proceder)', accept: ['proceden'] },
     { id: 'p:origenB2:recall', kind: 'recall', front: '¿Qué palabra nombra el origen de un producto/objeto?', back: 'procedencia' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 notion, part 4 (WORKLIST.md, section B2 · notion, § 4.1-5.1)
+ * ========================================================================== */
+{
+  id: 'nt-referencias-generales-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:428', 'nociones_generales:B2:429', 'nociones_generales:B2:431', 'nociones_generales:B2:436',
+         'nociones_generales:B2:437', 'nociones_generales:B2:438', 'nociones_generales:B2:442', 'nociones_generales:B2:443', 'nociones_generales:B2:446'],
+  title: 'Referencias temporales: dedicar tiempo, a mediados de, hacia',
+  summary: 'A cluster of fixed time phrases that a beginner reaches for a workaround to say — "a mediados de semana", "a última hora" — plus idioms built around the word "tiempo" itself, where "dar tiempo" and "dedicar tiempo" are two entirely different relationships to the same noun.',
+  sections: [
+    { h: 'Idioms with "tiempo"', html: '<i>Dedicar tiempo</i> (to devote time) has a subject choosing to spend it; <i>dar tiempo</i> is impersonal, about whether enough time exists: <i>No me da tiempo de terminar esto.</i> <i>Perder/aprovechar el tiempo</i> judge how well time was used.' },
+    { h: 'Dividing up a period', html: '<i>A principios/a mediados/a finales de</i> + a period (week, month, year) place something at its start, middle or end.' },
+    { h: 'The edges of an action or a day', html: '<i>A primera/a última hora</i> (first/last thing), <i>en el último minuto</i> (at the last minute), <i>de madrugada</i> (in the small hours) place something at a specific edge of a period.' },
+    { h: '"Hacia" for an approximate time', html: '<i>Hacia las nueve</i> approximates a clock time, distinct from the exactness of "a las nueve".' }
+  ],
+  exponents: [
+    { es: 'Me gustaría dedicar más tiempo a mi familia.', en: 'I\'d like to devote more time to my family.', register: 'neutral' },
+    { es: 'No me da tiempo de terminar esto antes del martes.', en: "I won't have time to finish this before Tuesday.", register: 'coloquial' },
+    { es: 'Salimos a primera hora de la mañana.', en: 'We left first thing in the morning.', register: 'neutral' },
+    { es: 'Llegó a mediados de semana.', en: 'He arrived midweek.', register: 'neutral' },
+    { es: 'Calculan que estarán aquí hacia las nueve.', en: "They reckon they'll be here around nine.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Dedico una hora al día a leer.', en: 'I devote an hour a day to reading.', note: 'dedicar — a deliberate choice' },
+    { es: 'No me da tiempo a leer.', en: "I don't have time to read.", note: 'dar tiempo — impersonal, about availability' }
+  ],
+  pitfalls: [
+    '<i>Dar tiempo</i> is impersonal (like <i>gustar</i>) — the person takes an indirect object: <i>me da tiempo</i>, never <i>*yo doy tiempo</i> in this sense.',
+    '<i>Hacia</i> for time is an approximation — do not use it where an exact time is meant, where <i>a las nueve en punto</i> fits better.'
+  ],
+  examples: [
+    { es: 'No pierdas el tiempo con excusas.', en: "Don't waste time on excuses." },
+    { es: 'A finales de mes cobramos la nómina.', en: 'At the end of the month we get paid.' },
+    { es: 'Como siempre, llegó en el último minuto.', en: 'As usual, he arrived at the last minute.' }
+  ],
+  probes: [
+    { id: 'p:refgenB2:dartiempo', kind: 'mcq', q: '"No me da tiempo de terminar esto" — ¿qué estructura es?',
+      options: ['Personal, como "hacer"', 'Impersonal, como "gustar"', 'Un imperativo'], answer: 1 },
+    { id: 'p:refgenB2:hacia', kind: 'mcq', q: '"Llegarán hacia las nueve" implica...',
+      options: ['Exactamente a las nueve', 'Aproximadamente a las nueve', 'Antes de las nueve, seguro'], answer: 1 },
+    { id: 'p:refgenB2:cloze', kind: 'cloze', text: 'Llegó a ___ de semana, el miércoles. (mediados)', accept: ['mediados'] },
+    { id: 'p:refgenB2:recall', kind: 'recall', front: '¿Qué expresión sitúa algo al principio de una semana/mes/año?', back: 'a principios de' }
+  ]
+},
+
+{
+  id: 'nt-localizacion-tiempo-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:475', 'nociones_generales:B2:477', 'nociones_generales:B2:480', 'nociones_generales:B2:482',
+         'nociones_generales:B2:484', 'nociones_generales:B2:485', 'nociones_generales:B2:491', 'nociones_generales:B2:492',
+         'nociones_generales:B2:496', 'nociones_generales:B2:501', 'nociones_generales:B2:504'],
+  title: 'Situar en el tiempo: llevar sin, antiguamente, a corto/largo plazo',
+  summary: 'B2\'s standout construction is "llevar + time + sin + infinitivo" — a uniquely Spanish way of measuring how long something has NOT happened — alongside the vocabulary for placing something confidently in past decades or future timeframes.',
+  sections: [
+    { h: 'Llevar sin + infinitivo: measuring an absence', html: '<i>Llevo tres semanas sin fumar</i> measures how long you have NOT done something, the mirror image of <i>llevar + gerundio</i> for an ongoing action.' },
+    { h: 'Naming decades and eras', html: '<i>Los años veinte, los ochenta</i> name decades directly; <i>antiguamente</i> and <i>de niño/de joven</i> place a claim in a distant or personal past.' },
+    { h: 'Present markers', html: '<i>Aún (no)</i> marks something still true/not yet true; <i>hoy (en) día, en la actualidad</i> frame a claim about now.' },
+    { h: 'Future timeframes', html: '<i>La semana/el mes/el año próximo</i> names the next period; <i>a corto/a medio/a largo plazo</i> classifies a future event by how soon it will happen.' }
+  ],
+  exponents: [
+    { es: 'Llevo tres semanas sin fumar.', en: "I haven't smoked in three weeks.", register: 'coloquial', note: 'llevar + tiempo + sin + infinitivo — measures an absence' },
+    { es: 'Antiguamente se pensaba que la Tierra era plana.', en: 'In the old days people thought the Earth was flat.', register: 'formal' },
+    { es: 'Aún no he leído esa novela.', en: "I still haven't read that novel.", register: 'neutral' },
+    { es: 'Hoy en día todo es más fácil.', en: 'Nowadays everything is easier.', register: 'neutral' },
+    { es: 'A corto plazo no hay solución, pero a largo plazo sí.', en: "There's no solution in the short term, but there is in the long term.", register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Llevo dos años estudiando español.', en: "I've been studying Spanish for two years.", note: 'llevar + gerundio — an ongoing action' },
+    { es: 'Llevo dos años sin estudiar español.', en: "I haven't studied Spanish in two years.", note: 'llevar + sin + infinitivo — an ongoing absence' }
+  ],
+  pitfalls: [
+    '<i>Llevar + sin + infinitivo</i> is not simply negating <i>llevar + gerundio</i> by adding "no" — the construction itself replaces the gerund with <i>sin</i> + infinitive.',
+    '<i>A corto/medio/largo plazo</i> classifies WHEN a future event happens relative to now, not how important it is.'
+  ],
+  examples: [
+    { es: 'Llevamos un mes sin hablar.', en: "We haven't spoken in a month." },
+    { es: 'De joven llevaba barba.', en: 'As a young man he had a beard.' },
+    { es: 'A medio plazo, esperamos abrir una segunda tienda.', en: 'In the medium term, we hope to open a second store.' }
+  ],
+  probes: [
+    { id: 'p:loctiempoB2:llevarsin', kind: 'mcq', q: '"Llevo tres semanas sin fumar" significa...',
+      options: ['Fumo desde hace tres semanas', 'No fumo desde hace tres semanas', 'Fumaré en tres semanas'], answer: 1 },
+    { id: 'p:loctiempoB2:plazo', kind: 'mcq', q: '¿Qué clasifica "a corto/largo plazo"?',
+      options: ['La importancia de algo', 'Cuándo ocurrirá algo, en relación al presente', 'El lugar donde ocurre'], answer: 1 },
+    { id: 'p:loctiempoB2:cloze', kind: 'cloze', text: 'Llevo dos años ___ verla. (sin, ausencia)', accept: ['sin'] },
+    { id: 'p:loctiempoB2:recall', kind: 'recall', front: '¿Qué mide "llevar + tiempo + sin + infinitivo"?', back: 'cuánto tiempo algo NO ha ocurrido' }
+  ]
+},
+
+{
+  id: 'nt-formas-figuras-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:699', 'nociones_generales:B2:701', 'nociones_generales:B2:703', 'nociones_generales:B2:706',
+         'nociones_generales:B2:707', 'nociones_generales:B2:708', 'nociones_generales:B2:709'],
+  title: 'Formas y figuras: geometría cotidiana',
+  summary: 'Describing a shape precisely borrows from geometry — a curve is not just "round", it is an "onda" or an "arco" depending on what it looks like — and a fixed pattern, "tener forma de + object", lets you describe any irregular shape by comparing it to something familiar.',
+  sections: [
+    { h: 'Geometric vocabulary for everyday shapes', html: '<i>Figura, perfil</i> (outline/silhouette), <i>onda, curva, arco</i> (wave, curve, arch) describe a shape\'s contour with more precision than "redondo".' },
+    { h: 'Irregular vs symmetrical', html: '<i>Desigual, irregular</i> describe a shape with no consistent pattern; contrasted implicitly with <i>circular, curvo</i>, which name a specific regular shape.' },
+    { h: 'Tener forma de + object', html: 'The all-purpose way to describe an irregular or unusual shape: <i>tener forma de cruz/estrella/huevo/corazón/media luna</i> — comparing it to something everyone recognizes.' }
+  ],
+  exponents: [
+    { es: 'El lago tiene una forma irregular.', en: 'The lake has an irregular shape.', register: 'neutral' },
+    { es: 'La piscina tiene forma de riñón.', en: 'The pool is kidney-shaped.', register: 'neutral', note: 'tener forma de + objeto' },
+    { es: 'El puente forma un arco perfecto.', en: 'The bridge forms a perfect arch.', register: 'neutral' },
+    { es: 'El bajo de la falda es desigual.', en: 'The hem of the skirt is uneven.', register: 'neutral' },
+    { es: 'Dobló la esquina del papel con cuidado.', en: 'He folded the corner of the paper carefully.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Es una mesa circular.', en: "It's a circular table.", note: 'a specific, regular geometric shape' },
+    { es: 'Es una mesa de forma irregular.', en: "It's an irregularly-shaped table.", note: 'no fixed geometric name' }
+  ],
+  pitfalls: [
+    '<i>Tener forma de</i> is the fallback for anything without a simple geometric name — reaching for a made-up geometric term instead of this pattern often sounds unnatural.',
+    '<i>Doblado</i> (folded/bent) describes a state; <i>doblar</i> is the action — do not confuse the participle with the plain infinitive when describing an ongoing process.'
+  ],
+  examples: [
+    { es: 'La isla tiene forma de media luna.', en: 'The island is crescent-shaped.' },
+    { es: 'El techo forma una curva suave.', en: 'The ceiling forms a gentle curve.' },
+    { es: 'Copiaron el modelo exactamente.', en: 'They copied the model exactly.' }
+  ],
+  probes: [
+    { id: 'p:formasfigB2:tenerformade', kind: 'mcq', q: '¿Cómo describes una piscina con forma de riñón?',
+      options: ['Es una piscina riñón.', 'Tiene forma de riñón.', 'Es riñonada.'], answer: 1 },
+    { id: 'p:formasfigB2:irregular', kind: 'mcq', q: '¿Cuál describe una forma SIN patrón consistente?',
+      options: ['circular', 'irregular', 'curvo'], answer: 1 },
+    { id: 'p:formasfigB2:cloze', kind: 'cloze', text: 'La isla tiene ___ de estrella. (forma)', accept: ['forma'] },
+    { id: 'p:formasfigB2:recall', kind: 'recall', front: '¿Qué patrón describe una forma comparándola con un objeto conocido?', back: 'tener forma de + objeto' }
+  ]
 }
 
 ];

@@ -1109,6 +1109,8 @@ window.VERBS = [
   presubj:['desvíe','desvíes','desvíe','desviemos','desviéis','desvíen'] } },
 { inf:'dirigirse', en:'to head (towards), to address', type:'ir', like:'dirigir' },
 { inf:'descolocar', en:'to displace, to put out of place', type:'ar' },
+{ inf:'doblar', en:'to fold, to bend; to turn', type:'ar' },
+{ inf:'copiar', en:'to copy', type:'ar' },
 { inf:'exportar', en:'to export', type:'ar' },
 { inf:'avisar', en:'to warn, to notify', type:'ar' },
 { inf:'fabricar', en:'to manufacture', type:'ar' },
