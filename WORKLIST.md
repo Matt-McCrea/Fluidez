@@ -861,7 +861,7 @@ B1 100–160, B2 200–300, C1 320–450 words.
 - [x] A1 — 156/156
 - [x] A2 — 91/91
 - [x] B1 — 78/78
-- [ ] B2 — batch of 10 (0/80 written)
+- [x] B2 — batch of 10 (0/80 written)
 - [ ] B2 — batch of 10 (10/80 written)
 - [ ] B2 — batch of 10 (20/80 written)
 - [ ] B2 — batch of 10 (30/80 written)

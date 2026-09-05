@@ -1984,6 +1984,93 @@ window.WRITING_TASKS = [
       { type: 'containsAny', words: ['porque', 'pero', 'y', 'también'] },
       { type: 'minWords', n: 30 }
     ],
-    models: ['Espero que todo haya salido bien en tu entrevista de trabajo. También espero que hayas dormido bien porque sé que estabas nerviosa. Ojalá que ya te hayan llamado con buenas noticias, pero si no, seguro que llegará pronto.'] }
+    models: ['Espero que todo haya salido bien en tu entrevista de trabajo. También espero que hayas dormido bien porque sé que estabas nerviosa. Ojalá que ya te hayan llamado con buenas noticias, pero si no, seguro que llegará pronto.'] },
+
+  /* ============================================================================
+   * B2 WRITING TASKS — batch 1 of 8 (WORKLIST.md § writing). Uses the B2/C1-
+   * specific constraints (subjunctiveAfter, avoidsPerson, avoidsAny,
+   * cliticCluster, sePassive, distinctTenses, minSentences) alongside the
+   * existing basic ones. Levels 6-7. NOTE: `connectorFrom` is not used here —
+   * tools/test-checker.js does not load data/connectors.js, so any model
+   * using it fails self-verification; `containsAny` with explicit connector
+   * words does the same job without that dependency.
+   * ========================================================================== */
+  { id: 'b2t-contraargumento-economia', type: 'translate', level: 6, theme: 'economia',
+    prompt: 'Translate: "The proposal is expensive; however, the board approved it."',
+    hint: 'Use a contraargumentativo connector such as "sin embargo".',
+    constraints: [
+      { type: 'containsAny', words: ['sin embargo', 'no obstante', 'en cambio', 'aunque'] },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['La propuesta es cara; sin embargo, la junta la aprobó.'] },
+
+  { id: 'b2t-paraque-educacion', type: 'translate', level: 6, theme: 'educacion',
+    prompt: 'Translate: "They explained everything again so that no one would have doubts."',
+    hint: '"para que" governs the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'para que' },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['Lo explicaron todo de nuevo para que nadie tuviera dudas.'] },
+
+  { id: 'b2w-antibioticos-salud', type: 'write', level: 6, theme: 'salud',
+    prompt: 'Explain to a patient, in a formal register, why it is important to finish a full course of antibiotics.',
+    hint: 'Address the patient as "usted", not "tú".',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 20 }
+    ],
+    models: ['Es fundamental que complete usted todo el tratamiento con antibióticos, aunque los síntomas hayan desaparecido antes. De lo contrario, la infección podría no eliminarse por completo y las bacterias podrían volverse resistentes.'] },
+
+  { id: 'b2w-algoritmos-medios', type: 'write', level: 7, theme: 'medios',
+    prompt: 'Write about whether social media algorithms are good or bad for society, in a formal register, using a contraargumentativo connector.',
+    hint: 'Avoid colloquial fillers; concede one point before countering it.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'tío', 'guay'] },
+      { type: 'containsAny', words: ['sin embargo', 'no obstante', 'en cambio', 'aunque'] },
+      { type: 'minWords', n: 25 }
+    ],
+    models: ['Los algoritmos de las redes sociales mantienen a los usuarios más tiempo conectados. Sin embargo, ese mismo diseño favorece la difusión de contenido sensacionalista frente al meramente informativo.'] },
+
+  { id: 'p-cambio-carrera-trabajo', type: 'paragraph', level: 6, theme: 'trabajo',
+    prompt: 'Write a paragraph narrating a career change: what happened, how things are now, and what you expect for the future.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Hace dos años dejé mi trabajo en el banco. Ahora trabajo como autónomo desde casa y gano menos, pero estoy mucho más tranquilo. Para el año que viene espero haber conseguido suficientes clientes como para no depender de un solo proyecto. Nunca había imaginado que un cambio así me haría tan feliz.'] },
+
+  { id: 'p-cambio-climatico-naturaleza', type: 'paragraph', level: 7, theme: 'naturaleza',
+    prompt: 'Write a paragraph about climate change, conceding a counterargument with "aunque" + subjunctive.',
+    hint: 'Concede a point with "aunque" + subjunctive, then counter it; write at least four sentences.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'aunque' },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['El cambio climático ya afecta a millones de personas cada año. Aunque algunos gobiernos hayan reducido sus emisiones, la mayoría sigue sin cumplir sus propios compromisos. Las consecuencias, mientras tanto, se agravan cada temporada. Actuar de verdad exigirá bastante más que promesas.'] },
+
+  { id: 'b2t-cliticos-relaciones', type: 'translate', level: 6, theme: 'relaciones',
+    prompt: 'Translate: "I already told them the whole truth about it."',
+    hint: 'Use a double object pronoun: "se lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 4 }
+    ],
+    models: ['Ya se lo conté todo.'] },
+
+  { id: 'b2w-vacuna-ciencia', type: 'write', level: 7, theme: 'ciencia',
+    prompt: 'Describe, in an impersonal register using "se", how a vaccine is tested before approval.',
+    hint: 'Use "se" constructions throughout instead of naming who does the testing.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Antes de aprobarse, cada vacuna se somete a varias fases de ensayos clínicos. Primero se prueba en un grupo reducido de voluntarios, y solo después se administra a miles de personas para confirmar su seguridad.'] },
+
+  { id: 'b2b-oferta-viajes', type: 'build', level: 6, theme: 'viajes', en: 'They would have accepted the offer if it had arrived on time.',
+    answer: 'Habrían aceptado la oferta si hubiera llegado a tiempo.' },
+  { id: 'b2b-proyecto-servicios', type: 'build', level: 7, theme: 'servicios', en: 'I doubt they have already finished the project.',
+    answer: 'Dudo que ya hayan terminado el proyecto.' }
 
 ];
