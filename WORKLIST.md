@@ -371,7 +371,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (67/204 done)
+## B2 — lessons (74/204 done)
 
 ### B2 · grammar (26/26)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
@@ -401,7 +401,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 25 pts · `gramatica B2 § 15.2. Oraciones subordinadas adjet`  — gr-subordinadas-relativas-tipos-b2
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica B2 § 15.3. Oraciones subordinadas adver`  — gr-subordinadas-lugar-b2
 
-### B2 · notion (21/53)
+### B2 · notion (28/53)
 - [x] **Existencia, inexistencia** · 7 pts · `nociones_generales B2 § 1.1. Existencia, inexistencia`  — nt-existencia-b2
 - [x] **Presencia, ausencia** · 11 pts · `nociones_generales B2 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-b2
 - [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales B2 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-b2
@@ -417,14 +417,14 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Proporción** · 8 pts · `nociones_generales B2 § 2.4. Proporción`  — nt-proporcion-b2
 - [x] **Grado** · 7 pts · `nociones_generales B2 § 2.5. Grado`  — nt-grado-b2
 - [x] **Medidas** · 46 pts · `nociones_generales B2 § 2.6. Medidas`  — nt-peso-b2
-- [ ] **Localización** · 6 pts · `nociones_generales B2 § 3.1. Localización`
+- [x] **Localización** · 6 pts · `nociones_generales B2 § 3.1. Localización`  — nt-localizacion-b2
 - [x] **Posición absoluta** · 6 pts · `nociones_generales B2 § 3.2. Posición absoluta`  — nt-posicion-absoluta-b2
-- [ ] **Posición relativa** · 17 pts · `nociones_generales B2 § 3.3. Posición relativa`
-- [ ] **Distancia** · 9 pts · `nociones_generales B2 § 3.4. Distancia`
-- [ ] **Movimiento, estabilidad** · 26 pts · `nociones_generales B2 § 3.5. Movimiento, estabilidad`
-- [ ] **Orientación, dirección** · 13 pts · `nociones_generales B2 § 3.6. Orientación, dirección`
-- [ ] **Orden** · 10 pts · `nociones_generales B2 § 3.7. Orden`
-- [ ] **Origen** · 4 pts · `nociones_generales B2 § 3.8. Origen`
+- [x] **Posición relativa** · 17 pts · `nociones_generales B2 § 3.3. Posición relativa`  — nt-posicion-relativa-b2
+- [x] **Distancia** · 9 pts · `nociones_generales B2 § 3.4. Distancia`  — nt-distancia-b2
+- [x] **Movimiento, estabilidad** · 26 pts · `nociones_generales B2 § 3.5. Movimiento, estabilidad`  — nt-movimiento-estabilidad-b2
+- [x] **Orientación, dirección** · 13 pts · `nociones_generales B2 § 3.6. Orientación, dirección`  — nt-orientacion-direccion-b2
+- [x] **Orden** · 10 pts · `nociones_generales B2 § 3.7. Orden`  — nt-orden-b2
+- [x] **Origen** · 4 pts · `nociones_generales B2 § 3.8. Origen`  — nt-origen-b2
 - [ ] **Referencias generales** · 19 pts · `nociones_generales B2 § 4.1. Referencias generales`
 - [ ] **Localización en el tiempo** · 32 pts · `nociones_generales B2 § 4.2. Localización en el tiempo`
 - [x] **Aspectos de desarrollo** · 137 pts · `nociones_generales B2 § 4.3. Aspectos de desarrollo`  — nt-anticipacion-b2

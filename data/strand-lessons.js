@@ -16442,6 +16442,300 @@ window.STRAND_LESSONS = [
     { id: 'p:gradoB2:cloze', kind: 'cloze', text: 'Confío en ella por ___. (completo)', accept: ['completo'] },
     { id: 'p:gradoB2:recall', kind: 'recall', front: '¿Qué prefijo intensificador es típico del habla coloquial?', back: 'super-' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 notion, part 3 (WORKLIST.md, section B2 · notion, § 3.1-3.8)
+ * ========================================================================== */
+{
+  id: 'nt-localizacion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:276', 'nociones_generales:B2:277', 'nociones_generales:B2:278', 'nociones_generales:B2:279', 'nociones_generales:B2:280'],
+  title: 'Localización: situado, quedar, hallarse',
+  summary: 'Beyond plain "estar", B2 offers participles that describe HOW something is positioned (situado, colocado, guardado, aparcado) and a set of near-synonyms (quedar, hallarse, encontrarse) that locate something with a slightly different formality or nuance each.',
+  sections: [
+    { h: 'Participles describing manner of placement', html: '<i>Situado, colocado, instalado, guardado, aparcado</i> each describe not just WHERE but HOW something was placed: <i>guardado</i> implies stored away, <i>aparcado</i> a vehicle specifically.' },
+    { h: 'Quedar: a location as a fact, not a state', html: '<i>Quedar</i> locates something with a slightly different flavor than <i>estar</i> — often used for distance or how a place relates to another: <i>Queda bastante lejos de aquí.</i>' },
+    { h: 'Hallarse/encontrarse: formal alternatives to estar', html: '<i>Hallarse, encontrarse</i> are more formal, written-register substitutes for <i>estar</i> when locating something: <i>La cantante se encuentra fuera del país.</i>' }
+  ],
+  exponents: [
+    { es: 'El hotel está situado a pocos kilómetros del pueblo.', en: 'The hotel is located a few kilometers from the village.', register: 'neutral' },
+    { es: 'Tu cazadora está guardada en el armario.', en: 'Your jacket is put away in the closet.', register: 'neutral' },
+    { es: 'Queda bastante lejos de aquí.', en: "It's quite far from here.", register: 'coloquial' },
+    { es: 'La cantante se encuentra fuera del país.', en: 'The singer is currently out of the country.', register: 'formal' },
+    { es: 'Se instaló en un barrio de las afueras.', en: 'He settled in a suburb.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'El coche está aparcado enfrente de correos.', en: "The car is parked opposite the post office.", note: 'aparcado — specific to vehicles' },
+    { es: 'El libro está guardado en el cajón.', en: 'The book is put away in the drawer.', note: 'guardado — implies deliberately stored' }
+  ],
+  pitfalls: [
+    '<i>Hallarse/encontrarse</i> as location verbs are notably more formal/written than <i>estar</i> — using them in casual speech can sound stilted.',
+    '<i>Quedar</i> for location often implies a relation to another point (distance, how far), not just a bare fact of being somewhere.'
+  ],
+  examples: [
+    { es: 'La fábrica está instalada en el polígono industrial.', en: 'The factory is set up in the industrial estate.' },
+    { es: 'El museo queda cerca de la estación.', en: 'The museum is near the station.' },
+    { es: 'El documento se halla archivado en la biblioteca.', en: 'The document is held in the archive at the library.' }
+  ],
+  probes: [
+    { id: 'p:localizB2:aparcado', kind: 'mcq', q: '¿Qué participio se usa específicamente para vehículos?',
+      options: ['guardado', 'aparcado', 'situado'], answer: 1 },
+    { id: 'p:localizB2:registro', kind: 'mcq', q: '¿Cuál es MÁS formal para "estar"?',
+      options: ['quedar', 'hallarse', 'estar'], answer: 1 },
+    { id: 'p:localizB2:cloze', kind: 'cloze', text: 'El hotel está ___ cerca de la playa. (situado)', accept: ['situado'] },
+    { id: 'p:localizB2:recall', kind: 'recall', front: '¿Qué implica "guardado" que "estar" no implica?', back: 'que algo fue deliberadamente almacenado/puesto a salvo' }
+  ]
+},
+
+{
+  id: 'nt-posicion-relativa-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:300', 'nociones_generales:B2:301', 'nociones_generales:B2:305', 'nociones_generales:B2:308',
+         'nociones_generales:B2:309', 'nociones_generales:B2:311', 'nociones_generales:B2:312', 'nociones_generales:B2:314'],
+  title: 'Posición relativa: delantero/trasero, a lo largo de, al otro lado',
+  summary: 'A rich set of prepositional phrases positions one thing against another with real precision — "a lo largo de" traces a whole extent, "al otro lado de" crosses a boundary, and "en medio de" plants something squarely in the middle, none of them interchangeable with a plain "cerca" or "lejos".',
+  sections: [
+    { h: 'Adjectives for parts and position', html: '<i>Central, anterior, posterior, delantero, trasero</i> describe a part\'s position within a whole: <i>la parte delantera, el asiento trasero</i>.' },
+    { h: 'Tracing an extent or crossing a boundary', html: '<i>A lo largo de</i> traces the whole length of something; <i>a través de</i> crosses through it; <i>al otro lado de</i> places something across a boundary: <i>El campamento está al otro lado del río.</i>' },
+    { h: 'Precise middles and heights', html: '<i>En medio de</i> ("in the middle of") and <i>en lo alto de</i> ("at the top/height of") pin down a precise relative position.' },
+    { h: '"Por" + place: a route, not a point', html: '<i>Por el medio/centro/principio/final (de)</i> describes moving THROUGH a part of something, a route rather than a fixed point: <i>Fuimos por el medio del bosque.</i>' }
+  ],
+  exponents: [
+    { es: 'El asiento trasero es más cómodo.', en: 'The back seat is more comfortable.', register: 'neutral' },
+    { es: 'Caminamos a lo largo de la playa.', en: 'We walked along the length of the beach.', register: 'neutral' },
+    { es: 'El campamento está al otro lado del río.', en: 'The campsite is on the other side of the river.', register: 'neutral' },
+    { es: 'Vive en medio del campo, sin vecinos cerca.', en: 'He lives in the middle of the countryside, with no neighbors nearby.', register: 'neutral' },
+    { es: 'Fuimos por el centro del bosque para ganar tiempo.', en: 'We went through the middle of the forest to save time.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Está en medio del salón.', en: "It's in the middle of the living room.", note: 'en medio de — a fixed, central point' },
+    { es: 'Fuimos por el medio del salón.', en: 'We went through the middle of the living room.', note: 'por el medio de — a route, movement through' }
+  ],
+  pitfalls: [
+    '<i>A lo largo de</i> traces an EXTENT (the whole beach, the whole year); it is not simply "near" — do not use it for a single fixed point.',
+    '<i>Por</i> + place names a ROUTE of movement, distinct from <i>en</i> + place, which names a fixed location — mixing them changes whether something is static or in motion.'
+  ],
+  examples: [
+    { es: 'La fila anterior estaba llena.', en: 'The previous row was full.' },
+    { es: 'Cruzaron a través del túnel.', en: 'They crossed through the tunnel.' },
+    { es: 'La bandera ondea en lo alto del edificio.', en: 'The flag flies atop the building.' }
+  ],
+  probes: [
+    { id: 'p:posrelB2:extension', kind: 'mcq', q: '¿Cuál traza toda una EXTENSIÓN, no un punto?',
+      options: ['en medio de', 'a lo largo de', 'al otro lado de'], answer: 1 },
+    { id: 'p:posrelB2:rutavsfijo', kind: 'mcq', q: '¿Cuál describe una RUTA de movimiento, no una posición fija?',
+      options: ['en medio del bosque', 'por el medio del bosque', 'al otro lado del bosque'], answer: 1 },
+    { id: 'p:posrelB2:cloze', kind: 'cloze', text: 'El pueblo está al otro ___ del río. (lado)', accept: ['lado'] },
+    { id: 'p:posrelB2:recall', kind: 'recall', front: '¿Qué preposición traza toda la longitud de algo?', back: 'a lo largo de' }
+  ]
+},
+
+{
+  id: 'nt-distancia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:322', 'nociones_generales:B2:323', 'nociones_generales:B2:325', 'nociones_generales:B2:326',
+         'nociones_generales:B2:327', 'nociones_generales:B2:328', 'nociones_generales:B2:329'],
+  title: 'Distancia: acercar(se), alejar(se), a distancia',
+  summary: 'The acercar/alejar family splits cleanly by transitivity — you acercar something TO a place, but you yourself acercarse — and a matching pair, juntarse/distanciarse, does the same job for relationships rather than objects.',
+  sections: [
+    { h: 'Transitive vs reflexive: moving something vs moving yourself', html: '<i>Acercar/alejar</i> (transitive) move an object: <i>Acercó la silla a la chimenea.</i> <i>Acercarse/alejarse</i> (reflexive) move the subject itself: <i>Se acercó a la ventana.</i>' },
+    { h: 'The same split for closeness in relationships', html: '<i>Juntarse (con), pegarse (a), unirse (a)</i> describe coming together; <i>distanciarse (de)</i> describes the opposite, often for relationships rather than physical objects.' },
+    { h: 'Quedar/faltar for remaining distance', html: '<i>¿Cuántos kilómetros quedan para Sevilla?</i> asks how much distance remains — <i>quedar/faltar</i> here measure what is LEFT, not what already exists.' },
+    { h: 'Fixed phrase: a distancia', html: '<i>A distancia</i> covers both remote study/work and a long-distance relationship: <i>una relación a distancia</i>, <i>estudiar a distancia</i>.' }
+  ],
+  exponents: [
+    { es: 'Acercó la silla a la chimenea.', en: 'She brought the chair closer to the fireplace.', register: 'neutral', note: 'transitive — moves an object' },
+    { es: 'Se acercó a la ventana para ver mejor.', en: 'He went closer to the window to see better.', register: 'neutral', note: 'reflexive — moves the subject' },
+    { es: '¿Cuántos kilómetros quedan para Sevilla?', en: 'How many kilometers are left to Seville?', register: 'coloquial' },
+    { es: 'Llevan una relación a distancia desde hace un año.', en: "They've had a long-distance relationship for a year.", register: 'neutral' },
+    { es: 'Se distanciaron después de la discusión.', en: 'They grew apart after the argument.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Alejó el plato del borde de la mesa.', en: 'She moved the plate away from the edge of the table.', note: 'transitive — moves an object' },
+    { es: 'Se alejó del borde de la mesa.', en: 'She moved away from the edge of the table.', note: 'reflexive — moves herself' }
+  ],
+  pitfalls: [
+    'Confusing the transitive and reflexive forms reverses who or what is moving — <i>acercó la silla</i> (she moved the chair) vs <i>se acercó</i> (she herself moved) are not interchangeable.',
+    '<i>Distanciarse</i> applies naturally to relationships (people growing apart); for pure physical distance, <i>alejarse</i> is the more common choice.'
+  ],
+  examples: [
+    { es: 'El tren de cercanías para en todas las estaciones.', en: 'The commuter train stops at every station.' },
+    { es: 'Se aproximó lentamente al animal herido.', en: 'He slowly approached the injured animal.' },
+    { es: 'Nos juntamos todos los domingos para comer.', en: 'We get together every Sunday to eat.' }
+  ],
+  probes: [
+    { id: 'p:distanciaB2:transreflex', kind: 'mcq', q: '¿Cuál mueve un OBJETO, no al sujeto mismo?',
+      options: ['Se acercó a la mesa.', 'Acercó la silla a la mesa.', 'Se alejó de la mesa.'], answer: 1 },
+    { id: 'p:distanciaB2:adistancia', kind: 'mcq', q: '¿Qué significa "una relación a distancia"?',
+      options: ['Una relación fría', 'Una relación de larga distancia', 'Una relación terminada'], answer: 1 },
+    { id: 'p:distanciaB2:cloze', kind: 'cloze', text: '¿Cuántos kilómetros ___ para llegar? (quedar)', accept: ['quedan'] },
+    { id: 'p:distanciaB2:recall', kind: 'recall', front: '¿Qué verbo describe a dos personas alejándose emocionalmente?', back: 'distanciarse' }
+  ]
+},
+
+{
+  id: 'nt-movimiento-estabilidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:353', 'nociones_generales:B2:354', 'nociones_generales:B2:358', 'nociones_generales:B2:359',
+         'nociones_generales:B2:361', 'nociones_generales:B2:362', 'nociones_generales:B2:364', 'nociones_generales:B2:365',
+         'nociones_generales:B2:366', 'nociones_generales:B2:369'],
+  title: 'Movimiento y estabilidad: un verbo por cada fase',
+  summary: 'Where A2 had one verb for "to move", B2 breaks motion into its phases — starting (arrancar), speeding up or down (acelerar/frenar), overtaking (adelantar), stopping (detenerse) and staying still (quedarse quieto) — each a distinct, non-interchangeable moment in the same journey.',
+  sections: [
+    { h: 'Leaving and relocating', html: '<i>Marcharse, partir, huir</i> all mean leaving, but <i>huir</i> specifically implies fleeing danger; <i>trasladarse</i> means relocating one\'s home or workplace.' },
+    { h: 'The phases of vehicle motion', html: '<i>Arrancar</i> (to start moving), <i>acelerar/frenar</i> (speed up/brake), <i>adelantar</i> (to overtake), <i>detenerse</i> (to stop) name specific, sequential moments — not synonyms for a generic "moverse".' },
+    { h: 'Crossing and circulating', html: '<i>Atravesar, recorrer</i> (to cross, to travel across) describe covering a whole span; <i>circular</i> describes ongoing, cyclical movement: <i>La sangre circula por las venas.</i>' },
+    { h: 'Staying still', html: '<i>Detenerse</i> (to come to a stop) is a single event; <i>quedarse quieto/parado</i> describes the resulting STATE of stillness that follows.' }
+  ],
+  exponents: [
+    { es: 'Se marchó sin despedirse.', en: 'He left without saying goodbye.', register: 'neutral' },
+    { es: 'A finales de ese año me trasladé a Bogotá.', en: 'At the end of that year I moved to Bogotá.', register: 'neutral' },
+    { es: 'En este tramo está prohibido adelantar.', en: 'Overtaking is forbidden on this stretch.', register: 'formal' },
+    { es: 'La máquina se detuvo de repente.', en: 'The machine stopped suddenly.', register: 'neutral' },
+    { es: 'El coche estaba parado en el semáforo.', en: 'The car was stopped at the traffic light.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Se marchó de la fiesta temprano.', en: 'He left the party early.', note: 'marcharse — a plain departure' },
+    { es: 'Huyó del edificio en llamas.', en: 'He fled the burning building.', note: 'huir — fleeing danger specifically' },
+    { es: 'El coche se detuvo en seco.', en: 'The car came to an abrupt stop.', note: 'detenerse — the EVENT of stopping' },
+    { es: 'El coche estaba parado.', en: 'The car was stopped.', note: 'estar parado — the resulting STATE' }
+  ],
+  pitfalls: [
+    '<i>Huir</i> is not a plain synonym for "irse" — it specifically implies escaping a threat or danger.',
+    'Confusing <i>detenerse</i> (the event) with <i>estar parado</i> (the resulting state) can make a narrative\'s timeline unclear — one is a single moment, the other an ongoing condition.'
+  ],
+  examples: [
+    { es: 'El tren arrancó con un fuerte tirón.', en: 'The train pulled away with a strong jolt.' },
+    { es: 'Recorrimos todo el país en dos semanas.', en: 'We travelled the whole country in two weeks.' },
+    { es: 'Tropezó con una piedra y se cayó.', en: 'He tripped on a rock and fell.' }
+  ],
+  probes: [
+    { id: 'p:movestabB2:huir', kind: 'mcq', q: '¿Qué implica específicamente "huir" que "marcharse" no implica?',
+      options: ['Nada, son iguales', 'Escapar de un peligro', 'Hacerlo lentamente'], answer: 1 },
+    { id: 'p:movestabB2:eventovsestado', kind: 'mcq', q: '¿Cuál describe el EVENTO de parar, no el estado resultante?',
+      options: ['Estaba parado.', 'Se detuvo.', 'Estaba quieto.'], answer: 1 },
+    { id: 'p:movestabB2:cloze', kind: 'cloze', text: 'Está prohibido ___ en esta carretera. (adelantar)', accept: ['adelantar'] },
+    { id: 'p:movestabB2:recall', kind: 'recall', front: '¿Qué verbo describe movimiento cíclico/continuo, como la sangre en las venas?', back: 'circular' }
+  ]
+},
+
+{
+  id: 'nt-orientacion-direccion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:378', 'nociones_generales:B2:383', 'nociones_generales:B2:384', 'nociones_generales:B2:385',
+         'nociones_generales:B2:386', 'nociones_generales:B2:388', 'nociones_generales:B2:389'],
+  title: 'Orientación y dirección: dirigirse a, empujar/tirar, a domicilio',
+  summary: 'Giving and following directions needs its own precise verbs — pushing is not pulling, delivering is not collecting, and "dirigirse a" both moves you toward a place and addresses a person, a small but genuinely useful double meaning.',
+  sections: [
+    { h: 'Dirigirse a: two meanings', html: '<i>Dirigirse a</i> means both "to head towards" a place and "to address" a person — context tells them apart: <i>Se dirigió a la salida</i> (headed toward) vs <i>Se dirigió a mí muy educadamente</i> (spoke to me).' },
+    { h: 'Empujar vs tirar', html: 'On a door sign, these are opposites: <i>empujar</i> (push) vs <i>tirar</i> (pull) — mixing them means pushing a door that needs pulling.' },
+    { h: 'Entregar vs recoger', html: '<i>Entregar</i> hands something over; <i>recoger</i> picks something/someone up — opposite directions of the same transaction: <i>entregar un paquete</i>, <i>recoger a alguien</i>.' },
+    { h: 'Fixed direction phrases', html: '<i>A domicilio</i> (to your home — delivery), <i>en dirección a</i> (heading toward), <i>de izquierda a derecha</i> (left to right) are set phrases for direction.' }
+  ],
+  exponents: [
+    { es: 'Se dirigió a la salida sin decir nada.', en: 'He headed to the exit without saying anything.', register: 'neutral', note: 'dirigirse a — heading toward a place' },
+    { es: 'Se dirigió a mí en tono formal.', en: 'He addressed me in a formal tone.', register: 'formal', note: 'dirigirse a — addressing a person' },
+    { es: 'Para abrir la puerta hay que tirar.', en: "To open the door you have to pull.", register: 'neutral' },
+    { es: 'Hacemos entregas a domicilio todos los días.', en: 'We deliver to your door every day.', register: 'neutral' },
+    { es: 'Coge la autopista en dirección a Córdoba.', en: 'Take the motorway towards Córdoba.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Voy a entregar el paquete a las cinco.', en: "I'm going to deliver the package at five.", note: 'entregar — handing over' },
+    { es: 'Voy a recoger el paquete a las cinco.', en: "I'm going to pick up the package at five.", note: 'recoger — collecting, opposite direction' }
+  ],
+  pitfalls: [
+    'On signs, <i>empujar/tirar</i> are absolute opposites — misreading one for the other is a classic, mildly embarrassing mistake.',
+    '<i>Entregar</i> and <i>recoger</i> describe opposite ends of the same exchange — check which side of the transaction the subject is on before choosing.'
+  ],
+  examples: [
+    { es: 'El camino se desvía a la derecha más adelante.', en: 'The path turns off to the right further ahead.' },
+    { es: 'La flecha señala hacia el norte.', en: 'The arrow points north.' },
+    { es: 'Nos guió por todo el museo.', en: 'He guided us through the whole museum.' }
+  ],
+  probes: [
+    { id: 'p:orientdirB2:dosentidos', kind: 'mcq', q: '"Se dirigió a mí" significa...',
+      options: ['Caminó hacia mí', 'Me habló', 'Ambas son posibles según contexto'], answer: 2 },
+    { id: 'p:orientdirB2:opuestos', kind: 'mcq', q: '¿Cuál es el opuesto de "entregar" en una transacción?',
+      options: ['recoger', 'empujar', 'guiar'], answer: 0 },
+    { id: 'p:orientdirB2:cloze', kind: 'cloze', text: 'Para cerrar hay que ___. (empujar/tirar, el opuesto de abrir con tirar)', accept: ['empujar'] },
+    { id: 'p:orientdirB2:recall', kind: 'recall', front: '¿Qué frase fija se usa para un reparto a casa?', back: 'a domicilio' }
+  ]
+},
+
+{
+  id: 'nt-orden-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:399', 'nociones_generales:B2:400', 'nociones_generales:B2:402', 'nociones_generales:B2:403',
+         'nociones_generales:B2:404', 'nociones_generales:B2:406', 'nociones_generales:B2:410'],
+  title: 'Orden: puesto, colocado/descolocado, por orden',
+  summary: 'Ranking and arranging things needs its own vocabulary — a "puesto" is a rank, not a job in this sense, and "descolocado" names the specific state of something that has been moved OUT of its proper place, not just "messy" in general.',
+  sections: [
+    { h: 'Puesto: a rank, not a job', html: '<i>El primer puesto ha sido para él</i> — "puesto" here means ranking/position in a competition, distinct from its other sense of "job/post".' },
+    { h: 'Colocado vs descolocado', html: '<i>Colocado</i> means properly placed; <i>descolocado</i> names the specific state of being out of its correct place — stronger and more specific than just "desordenado".' },
+    { h: 'Position phrases', html: '<i>En primera/segunda/última posición</i> states rank explicitly; <i>por orden (alfabético)</i> states the organizing principle.' }
+  ],
+  exponents: [
+    { es: 'El primer puesto ha sido para él.', en: 'First place went to him.', register: 'neutral' },
+    { es: 'Su nombre aparece en primera posición.', en: 'His name appears in first position.', register: 'neutral' },
+    { es: 'Todo está bien colocado en su sitio.', en: 'Everything is nicely placed in its spot.', register: 'neutral' },
+    { es: 'Los libros están completamente descolocados.', en: 'The books are completely out of place.', register: 'neutral' },
+    { es: 'Los nombres aparecen por orden alfabético.', en: 'The names appear in alphabetical order.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Está desordenado.', en: "It's messy.", note: 'general disorder' },
+    { es: 'Está descolocado.', en: "It's out of place.", note: 'specifically NOT in its correct spot, even if otherwise tidy' }
+  ],
+  pitfalls: [
+    '<i>Puesto</i> meaning "rank/position" is a different sense from <i>puesto</i> meaning "job" — context (a race, a ranking vs employment) disambiguates.',
+    '<i>Descolocado</i> is more specific than <i>desordenado</i> — it names an object out of its proper spot, not general messiness.'
+  ],
+  examples: [
+    { es: 'Quedó en segunda posición en la carrera.', en: 'He finished in second place in the race.' },
+    { es: 'Ordena los archivos por orden de fecha.', en: 'Sort the files by date order.' },
+    { es: 'Alguien ha descolocado todos mis papeles.', en: 'Someone has moved all my papers out of place.' }
+  ],
+  probes: [
+    { id: 'p:ordenB2:puesto', kind: 'mcq', q: '"El primer puesto fue para ella" — ¿qué significa "puesto" aquí?',
+      options: ['Un empleo', 'Una posición/ranking', 'Un lugar físico'], answer: 1 },
+    { id: 'p:ordenB2:descolocado', kind: 'mcq', q: '¿Qué añade "descolocado" frente a "desordenado"?',
+      options: ['Nada', 'Que algo está fuera de SU sitio específico', 'Que es peor'], answer: 1 },
+    { id: 'p:ordenB2:cloze', kind: 'cloze', text: 'Los nombres aparecen por orden ___. (alfabético)', accept: ['alfabético'] },
+    { id: 'p:ordenB2:recall', kind: 'recall', front: '¿Qué frase indica el criterio de organización de una lista?', back: 'por orden (alfabético/de fecha...)' }
+  ]
+},
+
+{
+  id: 'nt-origen-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:410', 'nociones_generales:B2:411', 'nociones_generales:B2:412', 'nociones_generales:B2:413'],
+  title: 'Origen: raíz, procedencia, proceder de',
+  summary: 'A small cluster naming where something comes from, figuratively (the raíz of a problem) as often as literally (the procedencia of a product) — with "proceder de" as the neutral verb that covers both.',
+  sections: [
+    { h: 'Raíz: the figurative root', html: '<i>La raíz del problema</i> names the underlying cause, borrowed from the literal root of a plant.' },
+    { h: 'Procedencia and proceder de', html: '<i>Procedencia</i> (origin, as a noun) and <i>proceder de</i> (to come from) apply to people, products, or revenue: <i>La mayor parte de los ingresos procede de las ventas por Internet.</i>' },
+    { h: 'Tener (su) origen en', html: 'A more formal, often historical framing: <i>La medicina moderna tiene su origen en la Antigüedad.</i>' }
+  ],
+  exponents: [
+    { es: 'Hay que atacar la raíz del problema, no los síntomas.', en: 'You have to attack the root of the problem, not the symptoms.', register: 'neutral' },
+    { es: 'La mayor parte de los ingresos procede de las ventas online.', en: 'Most of the income comes from online sales.', register: 'formal' },
+    { es: 'Se desconoce la procedencia de estos objetos.', en: 'The origin of these objects is unknown.', register: 'formal' },
+    { es: 'La costumbre tiene su origen en la Edad Media.', en: 'The custom has its origin in the Middle Ages.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: '¿De dónde viene esto?', en: 'Where does this come from?', note: 'plain, colloquial question' },
+    { es: '¿Cuál es la procedencia de esto?', en: 'What is the origin/provenance of this?', note: 'formal, often institutional/written register' }
+  ],
+  pitfalls: [
+    '<i>Raíz</i> in the figurative sense (root cause) is a fixed metaphor — do not overextend it to mean simply "origin" in every context; <i>origen/procedencia</i> are the general-purpose words.',
+    '<i>Proceder de</i> is formal/written register — in casual speech, <i>venir de</i> is far more common.'
+  ],
+  examples: [
+    { es: 'Este vino procede de una región muy conocida.', en: 'This wine comes from a well-known region.' },
+    { es: 'El conflicto tiene su raíz en una vieja disputa territorial.', en: 'The conflict has its root in an old territorial dispute.' },
+    { es: 'Su familia es de procedencia italiana.', en: 'His family is of Italian origin.' }
+  ],
+  probes: [
+    { id: 'p:origenB2:raiz', kind: 'mcq', q: '¿Qué significa "la raíz del problema"?',
+      options: ['El final del problema', 'La causa profunda del problema', 'Un problema nuevo'], answer: 1 },
+    { id: 'p:origenB2:registro', kind: 'mcq', q: '¿Cuál es más FORMAL para "venir de"?',
+      options: ['proceder de', 'salir de', 'ser de'], answer: 0 },
+    { id: 'p:origenB2:cloze', kind: 'cloze', text: 'Los ingresos ___ principalmente de las ventas. (proceder)', accept: ['proceden'] },
+    { id: 'p:origenB2:recall', kind: 'recall', front: '¿Qué palabra nombra el origen de un producto/objeto?', back: 'procedencia' }
+  ]
 }
 
 ];
