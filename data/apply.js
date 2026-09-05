@@ -696,6 +696,19 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'Aunque discutan mucho, dudo que ___ (separarse, ellos) de verdad.', inf: 'separarse', tense: 'presubj', person: 'ellos', en: 'Even though they argue a lot, I doubt they will really separate.' },
 
   { type: 'transform', level: 6, instruction: 'Rewrite reaching the subjunctive after "aunque" to concede a point:', from: 'Se traicionaron una vez. Aun así, siguen siendo amigos.', to: 'Aunque se hayan traicionado una vez, siguen siendo amigos.', en: 'Even though they may have betrayed each other once, they are still friends.' },
-  { type: 'transform', level: 7, instruction: 'Rewrite as reported speech, starting with "Ella confesó que...":', from: 'Ella dijo: "Lo traicioné porque tenía miedo."', to: 'Ella confesó que lo había traicionado porque tenía miedo.', en: 'She confessed that she had betrayed him because she was scared.' }
+  { type: 'transform', level: 7, instruction: 'Rewrite as reported speech, starting with "Ella confesó que...":', from: 'Ella dijo: "Lo traicioné porque tenía miedo."', to: 'Ella confesó que lo había traicionado porque tenía miedo.', en: 'She confessed that she had betrayed him because she was scared.' },
+
+  /* ---- B2 apply, batch 12 of 12 — completes 120/120 ---- */
+  { type: 'cloze', level: 6, text: 'La empresa ___ (demandar) al proveedor por incumplimiento de contrato el mes pasado.', inf: 'demandar', tense: 'preterito', person: 'él/ella', en: 'The company sued the supplier for breach of contract last month.' },
+  { type: 'cloze', level: 7, text: 'Es improbable que el tribunal lo ___ (condenar) sin ninguna prueba directa.', inf: 'condenar', tense: 'presubj', person: 'él/ella', en: 'It is unlikely that the court will convict him without any direct evidence.' },
+  { type: 'cloze', level: 6, text: 'Si hubieran presentado la coartada a tiempo, lo ___ (absolver, ellos) de inmediato.', inf: 'absolver', tense: 'condperf', person: 'ellos', en: 'If they had presented the alibi in time, they would have acquitted him immediately.' },
+  { type: 'cloze', level: 6, text: 'La defensa ___ (apelar) la sentencia en cuanto se publique.', inf: 'apelar', tense: 'futuro', person: 'él/ella', en: 'The defense will appeal the ruling as soon as it is published.' },
+  { type: 'cloze', level: 7, text: 'El juez ordenó que la aseguradora ___ (indemnizar) a las víctimas del accidente.', inf: 'indemnizar', tense: 'impsubj', person: 'él/ella', en: 'The judge ordered the insurance company to compensate the accident victims.' },
+  { type: 'cloze', level: 6, text: 'La policía ya ___ (multar) a tres conductores por exceso de velocidad esta mañana.', inf: 'multar', tense: 'perfecto', person: 'él/ella', en: 'The police have already fined three drivers for speeding this morning.' },
+  { type: 'cloze', level: 6, text: 'Yo ___ (testificar) a su favor sin dudarlo, si me lo pidieran.', inf: 'testificar', tense: 'condicional', person: 'yo', en: 'I would testify in his favor without hesitation, if they asked me to.' },
+  { type: 'cloze', level: 6, text: 'Para cuando acabe el juicio, el fiscal ya ___ (jurar) que apelaría cualquier absolución.', inf: 'jurar', tense: 'futperf', person: 'él/ella', en: 'By the time the trial ends, the prosecutor will have already sworn to appeal any acquittal.' },
+
+  { type: 'transform', level: 7, instruction: 'Rewrite as a "se" construction avoiding naming who fined the driver:', from: 'Un agente multó al conductor por aparcar mal.', to: 'Al conductor se le multó por aparcar mal.', en: 'The driver was fined for parking badly.' },
+  { type: 'transform', level: 6, instruction: 'Rewrite using at least three distinct tenses to narrate a legal case from start to resolution (distinctTenses: 3):', from: 'Lo demandaron.', to: 'Lo demandaron hace dos años, el juicio sigue abierto todavía, y para el próximo verano probablemente ya se habrá resuelto.', en: 'He was sued two years ago, the trial is still open, and by next summer it will probably have been resolved already.' }
 
 ];

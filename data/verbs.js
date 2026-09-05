@@ -1595,5 +1595,11 @@ window.VERBS = [
 { inf:'censurar', en:'to censor', type:'ar' },
 { inf:'reconciliarse', en:'to reconcile, to make up', type:'ar' },
 { inf:'traicionar', en:'to betray', type:'ar' },
-{ inf:'acusar', en:'to accuse', type:'ar' }
+{ inf:'acusar', en:'to accuse', type:'ar' },
+{ inf:'demandar', en:'to sue', type:'ar' },
+{ inf:'condenar', en:'to convict, to sentence', type:'ar' },
+{ inf:'absolver', en:'to acquit', type:'er', stem:'ue' },
+{ inf:'apelar', en:'to appeal', type:'ar' },
+{ inf:'indemnizar', en:'to compensate (legally)', type:'ar' },
+{ inf:'multar', en:'to fine', type:'ar' }
 ];
