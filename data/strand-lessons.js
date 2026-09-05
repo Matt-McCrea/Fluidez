@@ -13947,6 +13947,418 @@ window.STRAND_LESSONS = [
     { id: 'p:formasnopersB1:participioconcordancia', kind: 'cloze', text: 'Encontré la puerta ___. (cerrar, femenino)', accept: ['cerrada'] },
     { id: 'p:formasnopersB1:recall', kind: 'recall', front: '¿Con qué palabra concuerda el participio en "Encontré la tienda cerrada"?', back: 'con "la tienda" (el objeto), no con el sujeto' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 function stragglers, part 1 (WORKLIST.md, section B1 · function)
+ * ========================================================================== */
+{
+  id: 'fn-identificar-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:1', 'funciones:B1:2', 'funciones:B1:3'],
+  title: 'Identificar con una oración de relativo',
+  summary: 'A1 identified with a bare name or a pointing word; B1 identifies by attaching a whole relative clause to the noun — "the one I saw yesterday" rather than just "that one" — which is what makes an answer specific enough to be useful.',
+  sections: [
+    { h: 'El + (sustantivo) + que + oración', html: 'Answering "which one?", a relative clause pins down exactly which: <i>—¿Cuál te ha gustado más? —El piso que vi ayer.</i> The noun can even be dropped once it is obvious from context: just <i>El que vi ayer.</i>' },
+    { h: 'Adding an adjective before the clause', html: 'An adjective can sit between article and relative clause for extra precision: <i>La (chica) morena que está hablando con Pablo.</i>' },
+    { h: 'A more formal, encyclopedic identification', html: '<i>Es + un/una + sustantivo + oración de relativo</i> identifies someone or something the way a reference work would: <i>Es una actriz que nació en Buenos Aires.</i>' }
+  ],
+  exponents: [
+    { es: 'El piso que vi ayer no tenía ascensor.', en: 'The flat I saw yesterday had no lift.', register: 'coloquial', note: 'El + sustantivo + que + SV' },
+    { es: 'La morena que está hablando con Pablo me cae bien.', en: 'The dark-haired one talking to Pablo, I like her.', register: 'coloquial', note: 'adjective can replace the noun once context is clear' },
+    { es: 'Es una actriz que nació en Buenos Aires.', en: 'She is an actress who was born in Buenos Aires.', register: 'neutral', note: 'Es + un/una + sustantivo + relativa — encyclopedic identification' }
+  ],
+  contrasts: [
+    { es: '—¿Cuál es tu casa? —Esa.', en: '—Which is your house? —That one.', note: 'A1 style — points, but does not specify further' },
+    { es: '—¿Cuál es tu casa? —La que tiene el tejado rojo.', en: '—Which is your house? —The one with the red roof.', note: 'B1 style — a relative clause makes it unambiguous even without pointing' }
+  ],
+  pitfalls: [
+    'Dropping the noun after the article is fine once it is recoverable from context (<i>El que vi ayer</i>), but do not drop the article itself — <i>*Que vi ayer</i> alone is not a valid identification.',
+    'The encyclopedic pattern <i>Es un/una + sustantivo + que...</i> reads as more neutral/written; in fast conversation, people usually just start with the relative clause (<i>El que...</i>) rather than the fuller "Es un/una" frame.'
+  ],
+  examples: [
+    { es: 'El libro que me recomendaste era buenísimo.', en: 'The book you recommended to me was really good.' },
+    { es: 'Es un actor que ha trabajado en muchas películas españolas.', en: 'He is an actor who has worked in many Spanish films.' },
+    { es: '—¿Quién es Marcos? —El que lleva gafas.', en: '—Who is Marcos? —The one wearing glasses.' }
+  ],
+  probes: [
+    { id: 'p:identifB1:relativa', kind: 'mcq', q: '—¿Cuál te ha gustado más? Respuesta con relativa:',
+      options: ['Esa.', 'El piso que vi ayer.', 'Mucho.'], answer: 1 },
+    { id: 'p:identifB1:registro', kind: 'mcq', q: '¿Cuál suena más neutro/enciclopédico?',
+      options: ['El que vi ayer.', 'Es una actriz que nació en Buenos Aires.', 'Esa.'], answer: 1 },
+    { id: 'p:identifB1:cloze', kind: 'cloze', text: 'Es un actor ___ nació en México. (relativo)', accept: ['que'] },
+    { id: 'p:identifB1:recall', kind: 'recall', front: '¿Qué añade el B1 a la identificación de A1?', back: 'una oración de relativo que precisa cuál' }
+  ]
+},
+
+{
+  id: 'fn-pedir-informacion-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:11', 'funciones:B1:12', 'funciones:B1:14', 'funciones:B1:16', 'funciones:B1:17', 'funciones:B1:18',
+         'funciones:B1:20', 'funciones:B1:21', 'funciones:B1:23', 'funciones:B1:24', 'funciones:B1:25', 'funciones:B1:27', 'funciones:B1:29'],
+  title: 'Pedir información con preguntas indirectas',
+  summary: 'Instead of asking directly, B1 wraps the question inside another verb — "do you know where..." rather than just "where..." — which softens the request and lets you ask about person, place, time or manner all through the same embedded structure.',
+  sections: [
+    { h: 'Embedding the question: ¿Sabes...?', html: '<i>¿Sabes si/dónde/cómo...?</i> turns a direct question into an embedded one — casual, quick, among people who know each other: <i>¿Sabes cómo se hace la sopa de marisco?</i>' },
+    { h: 'The polite version: ¿Puede(s)/Podría(s) decirme...?', html: 'The same embedding, more formal, typically with usted for strangers: <i>Por favor, ¿puede decirme dónde está la estación?</i>' },
+    { h: 'One frame, many question types', html: 'The same embedded pattern covers person (<i>¿A quién vas a ver?</i>), place (<i>¿De dónde vienes?</i>), time (<i>¿Desde cuándo...?</i>, <i>¿Hasta cuándo estarás en España?</i>), manner (<i>¿Qué tal está el hotel?</i>) and events (<i>¿Qué ha pasado?</i>).' }
+  ],
+  exponents: [
+    { es: '¿Sabes cómo se hace la sopa de marisco?', en: 'Do you know how to make seafood soup?', register: 'coloquial', note: 'embedded question, casual' },
+    { es: 'Por favor, ¿puede decirme dónde está la estación?', en: 'Please, could you tell me where the station is?', register: 'formal', note: 'polite request, usted' },
+    { es: '¿Con quién estabas?', en: 'Who were you with?', register: 'neutral' },
+    { es: '¿Cuál de estas es tu moto?', en: 'Which of these is your motorbike?', register: 'neutral' },
+    { es: '¿De dónde vienes?', en: 'Where are you coming from?', register: 'coloquial' },
+    { es: '¿Hasta cuándo estarás en España?', en: 'Until when will you be in Spain?', register: 'neutral' },
+    { es: '¿Qué tal está el hotel?', en: "How's the hotel?", register: 'coloquial' },
+    { es: '¿Qué ha pasado?', en: 'What happened?', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: '¿Dónde está la estación?', en: "Where's the station?", note: 'a direct question — blunter' },
+    { es: '¿Puede decirme dónde está la estación?', en: 'Could you tell me where the station is?', note: 'embedded — softer, more polite, typical with strangers' }
+  ],
+  pitfalls: [
+    'Once the question is embedded, word order becomes statement order, not question order: <i>¿Sabes dónde está?</i>, never <i>*¿Sabes dónde es?</i>-style question inversion inside the embedding.',
+    'The polite frame (<i>¿Puede/Podría decirme...?</i>) is the one to reach for with strangers or in formal writing; <i>¿Sabes...?</i> among strangers can read as overly casual.'
+  ],
+  examples: [
+    { es: '¿Sabes si el museo abre los lunes?', en: 'Do you know if the museum opens on Mondays?' },
+    { es: '¿Podría decirme a qué hora sale el próximo tren?', en: 'Could you tell me what time the next train leaves?' },
+    { es: '¿A qué ciudades fuisteis en el viaje?', en: 'Which cities did you go to on the trip?' }
+  ],
+  probes: [
+    { id: 'p:pedirinfoB1:registro', kind: 'mcq', q: 'Preguntando a un desconocido en la calle, formal:',
+      options: ['¿Sabes dónde está el banco?', '¿Puede decirme dónde está el banco?', '¿Dónde está el banco, tío?'], answer: 1 },
+    { id: 'p:pedirinfoB1:orden', kind: 'mcq', q: '¿Cuál tiene el orden correcto de la pregunta incrustada?',
+      options: ['¿Sabes dónde está la estación?', '¿Sabes dónde es la estación?', '¿Sabes dónde la estación está?'], answer: 0 },
+    { id: 'p:pedirinfoB1:cloze', kind: 'cloze', text: '¿___ decirme dónde está la parada? (podría, formal)', accept: ['Podría', 'podría'] },
+    { id: 'p:pedirinfoB1:recall', kind: 'recall', front: '¿Qué hace más formal "¿puede decirme...?" frente a "¿sabes...?"', back: 'el uso de usted / la fórmula de cortesía' }
+  ]
+},
+
+{
+  id: 'fn-valorar-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:175', 'funciones:B1:176', 'funciones:B1:177', 'funciones:B1:178', 'funciones:B1:179', 'funciones:B1:180',
+         'funciones:B1:181', 'funciones:B1:182', 'funciones:B1:183', 'funciones:B1:184', 'funciones:B1:185', 'funciones:B1:186',
+         'funciones:B1:187', 'funciones:B1:188', 'funciones:B1:189'],
+  title: 'Valorar: hechos en indicativo, ajenos en subjuntivo',
+  summary: 'The B1 leap in evaluating is not new vocabulary but a new fork: evaluating your OWN stated fact or action stays in the indicative, but evaluating something framed as someone else\'s action needs a "que" clause in the subjunctive — the same judgement, two different grammatical shapes depending on whose action it is.',
+  sections: [
+    { h: 'Evaluating a fact: no subjunctive needed', html: 'When the thing evaluated is a noun or an infinitive with the same understood subject, no "que"-clause or subjunctive appears: <i>La experiencia ha sido estupenda</i>, <i>Cancelar la conexión a Internet fue un error</i>.' },
+    { h: 'Evaluating someone else\'s action: que + subjuntivo', html: 'The moment the evaluated action belongs to someone else and follows "que", the subjunctive appears: <i>Me parece perfecto que te quedes</i>, <i>Es una buena idea que te tomes un descanso</i>.' },
+    { h: 'The exclamatory version follows the same fork', html: '<i>¡Qué bien/mal/interesante...!</i> + noun/infinitive stays plain, but + <i>que</i> + a clause about someone else needs the subjunctive too: <i>¡Qué interesante este artículo!</i> vs <i>¡Qué mal que no me ayudes!</i>' }
+  ],
+  exponents: [
+    { es: 'La experiencia ha sido estupenda.', en: 'The experience was great.', register: 'neutral', note: 'evaluating a stated fact, no subjunctive' },
+    { es: 'Me parece perfecto que te quedes.', en: "I think it's great that you're staying.", register: 'neutral', note: 'que + subjuntivo — someone else\'s action' },
+    { es: 'El informe que han presentado no está nada mal.', en: "The report they submitted isn't bad at all.", register: 'coloquial' },
+    { es: 'Es una buena idea que te tomes un descanso.', en: "It's a good idea for you to take a break.", register: 'neutral', note: 'que + subjuntivo' },
+    { es: '¡Qué mal que no me ayudes!', en: "It's a shame you're not helping me!", register: 'coloquial', note: 'exclamatory + que + subjuntivo' },
+    { es: 'No me gusta mucho el piso, lo veo muy pequeño.', en: "I don't like the flat much, I find it very small.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Cancelar la conexión a Internet fue un error.', en: 'Cancelling the internet connection was a mistake.', note: 'evaluates your own stated action — no subjunctive' },
+    { es: 'Es un error que canceles la conexión.', en: "It's a mistake for you to cancel the connection.", note: 'evaluates someone else\'s action via que — subjunctive' }
+  ],
+  pitfalls: [
+    'Do not add <i>que</i> + subjunctive when the evaluated thing is your own already-stated fact: <i>La experiencia ha sido estupenda</i>, never <i>*ha sido estupenda que la experiencia fue...</i> — that is not how the pattern works.',
+    'Once <i>que</i> introduces someone else\'s action after a value judgement, the subjunctive is close to obligatory: <i>*Me parece perfecto que te quedas</i> sounds wrong to a native ear.',
+    'The exclamatory <i>¡Qué mal que...!</i> keeps the subjunctive rule too — do not treat exclamations as an exception to the que + subjunctive pattern.'
+  ],
+  examples: [
+    { es: 'La película ha sido un rollo.', en: 'The film was a bore.' },
+    { es: 'Me parece una pena que te enfades por esto.', en: "I think it's a shame you're getting upset about this." },
+    { es: '¡Qué divertido que estén todos juntos!', en: "How fun that they're all together!" }
+  ],
+  probes: [
+    { id: 'p:valorarB1:modo', kind: 'mcq', q: '"Me parece perfecto que ___ (quedarte)."',
+      options: ['te quedas', 'te quedes', 'te quedarás'], answer: 1 },
+    { id: 'p:valorarB1:sinque', kind: 'mcq', q: '¿Cuál NO necesita subjuntivo?',
+      options: ['Es una buena idea que descanses.', 'Cancelar el viaje fue un error.', '¡Qué bien que vengas!'], answer: 1 },
+    { id: 'p:valorarB1:cloze', kind: 'cloze', text: '¡Qué mal que no me ___ (ayudar)!', accept: ['ayudes'] },
+    { id: 'p:valorarB1:recall', kind: 'recall', front: '¿Cuándo aparece el subjuntivo al valorar en B1?', back: 'cuando "que" introduce la acción de otra persona' }
+  ]
+},
+
+{
+  id: 'fn-posibilidad-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:399', 'funciones:B1:400', 'funciones:B1:401', 'funciones:B1:402', 'funciones:B1:403', 'funciones:B1:404', 'funciones:B1:405'],
+  title: 'Expresar posibilidad: quiénes exigen subjuntivo y quiénes no',
+  summary: 'Every one of these phrases means roughly "maybe", but they split into two grammatical camps that have to be memorized rather than deduced: puede que and es posible/probable que pull the subjunctive, while a lo mejor, seguramente, seguro que and posiblemente keep the indicative — and the future tense itself can express possibility with no marker word at all.',
+  sections: [
+    { h: 'The subjunctive camp: puede que, es posible/probable que', html: '<i>Puede que tenga problemas</i>, <i>Es posible que tengamos que hacer algún cambio</i> — both pull the following verb into the subjunctive.' },
+    { h: 'The indicative camp: a lo mejor, seguramente, seguro que, posiblemente', html: 'Despite meaning something close to "maybe" or "probably", these keep the indicative: <i>A lo mejor no funciona</i>, <i>Seguramente estaba enfermo</i>, <i>Seguro que todavía está en casa</i>, <i>posiblemente estaban juntos</i>.' },
+    { h: 'The future tense alone, no marker word needed', html: 'The simple future can express a present GUESS with no possibility word at all: <i>—¿Qué hora es? —No sé, serán las cinco</i>; <i>¿No contesta? Estará en la ducha.</i>' }
+  ],
+  exponents: [
+    { es: 'Puede que tenga problemas.', en: 'He might have problems.', register: 'coloquial', note: 'puede que + subjuntivo' },
+    { es: 'Es probable que no venga.', en: "It's likely he won't come.", register: 'neutral', note: 'es posible/probable que + subjuntivo' },
+    { es: 'A lo mejor no funciona el teléfono.', en: 'Maybe the phone is not working.', register: 'coloquial', note: 'a lo mejor + indicativo, the exception' },
+    { es: 'Seguramente estaba enfermo.', en: 'He was probably ill.', register: 'neutral', note: 'seguramente + indicativo' },
+    { es: 'Seguro que todavía está en casa de su madre.', en: "He's surely still at his mother's.", register: 'coloquial', note: 'seguro que + indicativo' },
+    { es: 'No sé, serán las cinco.', en: "I don't know, it must be five.", register: 'coloquial', note: 'futuro de probabilidad — no marker word at all' }
+  ],
+  contrasts: [
+    { es: 'Es posible que tengamos que cambiar el plan.', en: 'It is possible we will have to change the plan.', note: 'subjunctive camp' },
+    { es: 'Posiblemente tengamos que cambiar el plan. / Posiblemente tenemos que cambiar el plan.', en: 'We possibly have to change the plan.', note: 'posiblemente accepts both, unlike es posible que' },
+    { es: 'Seguro que llega tarde.', en: "He's bound to arrive late.", note: 'indicative — this is NOT the subjunctive camp despite expressing uncertainty' }
+  ],
+  pitfalls: [
+    'Do not assume every "maybe" word triggers the subjunctive — <i>a lo mejor</i>, <i>seguramente</i> and <i>seguro que</i> take the indicative despite expressing possibility, not certainty.',
+    '<i>Seguro que</i> (colloquial, confident guess) is not the same construction as <i>es seguro que</i> (formal certainty) — do not conflate the two.',
+    'The future-of-probability (<i>estará en la ducha</i>) needs no possibility word — adding one on top (<i>*a lo mejor estará</i>) is redundant, though heard colloquially.'
+  ],
+  examples: [
+    { es: 'Puede que llueva esta tarde.', en: 'It might rain this afternoon.' },
+    { es: 'Posiblemente estaban juntos cuando llamaste.', en: 'They were possibly together when you called.' },
+    { es: '¿Y Javi? Estará todavía en casa de su madre.', en: "Where's Javi? He's probably still at his mother's." }
+  ],
+  probes: [
+    { id: 'p:posibilidadB1:subjuntivo', kind: 'mcq', q: '"Puede que ___ (tener) problemas."',
+      options: ['tiene', 'tenga', 'tendrá'], answer: 1 },
+    { id: 'p:posibilidadB1:indicativo', kind: 'mcq', q: '¿Cuál mantiene el INDICATIVO pese a expresar posibilidad?',
+      options: ['Es posible que...', 'A lo mejor...', 'Puede que...'], answer: 1 },
+    { id: 'p:posibilidadB1:cloze', kind: 'cloze', text: '¿No contesta? ___ en la ducha. (futuro de probabilidad)', accept: ['Estará', 'estará'] },
+    { id: 'p:posibilidadB1:recall', kind: 'recall', front: 'Cuatro expresiones de posibilidad que NO exigen subjuntivo', back: 'a lo mejor, seguramente, seguro que, posiblemente' }
+  ]
+},
+
+{
+  id: 'fn-conocimiento-desconocimiento-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:448', 'funciones:B1:449', 'funciones:B1:450', 'funciones:B1:452', 'funciones:B1:453', 'funciones:B1:454',
+         'funciones:B1:463', 'funciones:B1:464', 'funciones:B1:465', 'funciones:B1:466', 'funciones:B1:467', 'funciones:B1:468'],
+  title: 'Conocimiento y desconocimiento: oír que + indicativo/subjuntivo',
+  summary: 'The same verb, "oír que", flips mood depending on one word: affirmed, it reports something you now take as fact and stays indicative; negated, it denies you were ever told and switches to subjunctive — a clean, testable pair rather than two unrelated facts to memorize.',
+  sections: [
+    { h: 'Claiming knowledge', html: '<i>Sé algo de economía</i> claims partial knowledge of a topic; <i>sé perfectamente que...</i> claims full, confident knowledge of a fact — both indicative, since you are asserting something as true.' },
+    { h: 'Reported knowledge: he oído/leído/visto que', html: 'Something learned second-hand, affirmed: <i>He oído que en algunas universidades te ayudan a buscar trabajo</i> — indicative, because you are reporting it as a fact you now hold.' },
+    { h: 'Denying knowledge flips the mood', html: 'The same verb, negated, switches to subjunctive: <i>No he oído que esté enfermo</i> — you are not asserting a fact, you are denying ever having been told one. Compare with a flat denial of general knowledge: <i>No sé nada de cine</i>, <i>No tengo ni idea</i> (introduced here, developed further at B2).' }
+  ],
+  exponents: [
+    { es: 'Sé algo de música clásica.', en: 'I know a bit about classical music.', register: 'neutral', note: 'partial knowledge of a topic' },
+    { es: 'Sé perfectamente que Cervantes murió el 23 de abril.', en: 'I know perfectly well Cervantes died on 23 April.', register: 'neutral', note: 'confident knowledge of a fact — indicative' },
+    { es: 'He oído que en algunas universidades te ayudan a buscar trabajo.', en: "I've heard that some universities help you find a job.", register: 'neutral', note: 'reported and affirmed — indicative' },
+    { es: 'No sabía que los hijos de Pablo eran alemanes.', en: "I didn't know Pablo's children were German.", register: 'coloquial', note: 'past ignorance, indicative — the fact itself is not in doubt, only your past awareness of it' },
+    { es: 'No he oído que esté enfermo.', en: "I haven't heard that he's ill.", register: 'neutral', note: 'negated + que — subjunctive, denying you were told' },
+    { es: 'Pedro no sabe nada de cine.', en: 'Pedro knows nothing about film.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'He oído que está enfermo.', en: "I've heard he's ill.", note: 'affirmed — indicative, you take it as fact' },
+    { es: 'No he oído que esté enfermo.', en: "I haven't heard that he's ill.", note: 'negated — subjunctive, you deny having been told' }
+  ],
+  pitfalls: [
+    'Negating a perception verb (<i>oír, leer, ver</i>) followed by <i>que</i> pulls the subjunctive — <i>*No he oído que está enfermo</i> is the kind of slip a B1 learner makes by treating the negation as cosmetic.',
+    '<i>No sabía que...</i> (past ignorance of a fact) stays indicative — do not confuse it with the negated-perception pattern above; the fact itself is not being denied, only your past awareness of it.',
+    '<i>No tengo ni idea</i> is markedly colloquial and more emphatic than plain <i>no sé</i> — save it for informal speech; it is developed further, with its full range of uses, at B2.'
+  ],
+  examples: [
+    { es: 'Sé dónde están las llaves.', en: 'I know where the keys are.' },
+    { es: 'No sabía que se habían mudado.', en: "I didn't know they had moved." },
+    { es: 'No hemos oído absolutamente nada de Marta.', en: "We haven't heard anything at all from Marta." }
+  ],
+  probes: [
+    { id: 'p:conocimientoB1:modo', kind: 'mcq', q: '"No he oído que ___ (estar) enfermo."',
+      options: ['está', 'esté', 'estará'], answer: 1 },
+    { id: 'p:conocimientoB1:afirmado', kind: 'mcq', q: '"He oído que ___ (venir) mañana." (afirmado, hecho)',
+      options: ['viene', 'venga', 'vendrá'], answer: 0 },
+    { id: 'p:conocimientoB1:cloze', kind: 'cloze', text: 'No sabía que se ___ (mudar) de casa. (pasado, hecho no cuestionado)', accept: ['habían mudado', 'mudaron'] },
+    { id: 'p:conocimientoB1:recall', kind: 'recall', front: '¿Qué pasa con el modo cuando se niega "oír/leer/ver que"?', back: 'cambia a subjuntivo' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-gustos-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:534', 'funciones:B1:535', 'funciones:B1:536'],
+  title: 'Preguntar por gustos: ¿te gusta que + subjuntivo?',
+  summary: 'Asking for an opinion on a thing needs no subjunctive (¿qué te parece esto?), but asking whether someone likes an ACTION someone else performs does — the subjunctive marks that the pleasure is about an event, not an object.',
+  sections: [
+    { h: '¿Qué te parece + SN?', html: 'The all-purpose way to ask for a reaction to something concrete: <i>¿Qué te parecen estos pantalones?</i>, <i>¿Qué te parece este perfume?</i>' },
+    { h: '¿Te gusta que + subjuntivo?', html: 'Asking whether someone likes an ACTION (usually performed by someone else) needs <i>que</i> + subjunctive: <i>¿Te gusta que te regalen flores?</i>, <i>¿No te gusta que venga el tío Antonio a cenar?</i>' },
+    { h: 'A narrower question: taste', html: '<i>¿Está bueno/rico...?</i> asks specifically about taste, not a general opinion: <i>¿Está bueno el café?</i>' }
+  ],
+  exponents: [
+    { es: '¿Qué te parecen estos pantalones?', en: 'What do you think of these trousers?', register: 'coloquial' },
+    { es: '¿Te gusta que te regalen flores?', en: 'Do you like it when people give you flowers?', register: 'coloquial', note: 'que + subjuntivo — liking an action, not a thing' },
+    { es: '¿No te gusta que venga el tío Antonio a cenar?', en: "Don't you like it when Uncle Antonio comes for dinner?", register: 'neutral' },
+    { es: '¿Está bueno el café?', en: 'Is the coffee good?', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: '¿Te gusta este perfume?', en: 'Do you like this perfume?', note: 'liking a thing — no subjunctive needed' },
+    { es: '¿Te gusta que te regalen perfume?', en: 'Do you like being given perfume?', note: 'liking an action (someone giving it to you) — que + subjuntivo' }
+  ],
+  pitfalls: [
+    'Do not drop the subjunctive once <i>que</i> introduces the liked ACTION: <i>*¿Te gusta que te regalan flores?</i> sounds wrong — the event, not just the flowers, is what is being evaluated.',
+    '<i>¿Qué te parece?</i> asks for an opinion in general; it is not interchangeable with <i>¿te gusta?</i>, which asks specifically about pleasure.'
+  ],
+  examples: [
+    { es: '¿Qué te parece la nueva profesora?', en: 'What do you think of the new teacher?' },
+    { es: '¿Te gusta que te llamen por tu apodo?', en: 'Do you like being called by your nickname?' },
+    { es: '¿Está rica la sopa?', en: 'Is the soup tasty?' }
+  ],
+  probes: [
+    { id: 'p:pregustosB1:modo', kind: 'mcq', q: '"¿Te gusta que te ___ (regalar) flores?"',
+      options: ['regalan', 'regalen', 'regalarán'], answer: 1 },
+    { id: 'p:pregustosB1:tipo', kind: 'mcq', q: '¿Cuál pregunta específicamente por el sabor?',
+      options: ['¿Qué te parece?', '¿Está rico?', '¿Te gusta que venga?'], answer: 1 },
+    { id: 'p:pregustosB1:cloze', kind: 'cloze', text: '¿Qué te ___ estos zapatos? (parecer)', accept: ['parecen'] },
+    { id: 'p:pregustosB1:recall', kind: 'recall', front: '¿Por qué lleva subjuntivo "¿te gusta que te regalen flores?"', back: 'porque evalúa una acción de otra persona, no una cosa' }
+  ]
+},
+
+{
+  id: 'fn-expresar-gustos-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:539', 'funciones:B1:540', 'funciones:B1:541'],
+  title: 'Expresar gustos e intereses sobre acciones ajenas',
+  summary: 'Gustar, encantar and interesar already carry a following action instead of a thing — and the moment that action belongs to someone else, "que" pulls in the subjunctive, just as with the corresponding question.',
+  sections: [
+    { h: 'Me gusta/encanta que + subjuntivo', html: 'When what pleases you is someone else\'s action, the subjunctive is required: <i>Me encanta que me llames</i>, <i>No les gusta que lleguemos tarde a cenar</i>.' },
+    { h: 'Me interesa que + subjuntivo', html: 'The same pattern with interesar: <i>Me interesa que nos sigas contando cosas de tus viajes.</i>' },
+    { h: 'No me importa + SN', html: 'When what does not matter is a thing rather than an action, no clause or subjunctive is needed: <i>A mí nunca me ha importado la política.</i>' }
+  ],
+  exponents: [
+    { es: 'Me encanta que me llames.', en: 'I love it when you call me.', register: 'coloquial', note: 'gustar-type verb + que + subjuntivo' },
+    { es: 'No les gusta que lleguemos tarde a cenar.', en: "They don't like us arriving late for dinner.", register: 'neutral' },
+    { es: 'Me interesa que nos sigas contando cosas de tus viajes.', en: 'I find it interesting that you keep telling us about your trips.', register: 'neutral' },
+    { es: 'A mí nunca me ha importado la política.', en: "Politics has never mattered to me.", register: 'coloquial', note: 'no clause — a thing, not an action, so no subjunctive' }
+  ],
+  contrasts: [
+    { es: 'Me gusta el silencio.', en: 'I like silence.', note: 'a thing — no subjunctive' },
+    { es: 'Me gusta que haya silencio.', en: 'I like it when there is silence.', note: 'an action/situation via que — subjunctive' }
+  ],
+  pitfalls: [
+    'This is the same fork as the question form: liking a THING needs no clause, liking an ACTION (someone else\'s) needs <i>que</i> + subjunctive — do not mix the two patterns.',
+    '<i>No me importa + SN</i> takes no subjunctive because nothing follows <i>que</i> — do not force one in: <i>No me importa el precio</i>, not <i>*no me importa que el precio</i>.'
+  ],
+  examples: [
+    { es: 'Me encanta que vengas a visitarme.', en: 'I love that you come to visit me.' },
+    { es: 'No me importa esperar un poco.', en: "I don't mind waiting a bit." },
+    { es: 'Le interesa mucho que le cuentes cómo fue el viaje.', en: "He's very interested in you telling him how the trip was." }
+  ],
+  probes: [
+    { id: 'p:expgustosB1:modo', kind: 'mcq', q: '"Me encanta que me ___ (llamar)."',
+      options: ['llamas', 'llames', 'llamarás'], answer: 1 },
+    { id: 'p:expgustosB1:sinclausula', kind: 'mcq', q: '¿Cuál NO lleva subjuntivo (evalúa una cosa, no una acción)?',
+      options: ['Me gusta que vengas.', 'No me importa el precio.', 'Me interesa que sigas contando.'], answer: 1 },
+    { id: 'p:expgustosB1:cloze', kind: 'cloze', text: 'No les gusta que ___ (llegar) tarde. (nosotros)', accept: ['lleguemos'] },
+    { id: 'p:expgustosB1:recall', kind: 'recall', front: '¿Cuándo exige subjuntivo "me gusta/encanta/interesa que"?', back: 'cuando lo que sigue es la acción de otra persona' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-preferencias-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:568', 'funciones:B1:569', 'funciones:B1:570', 'funciones:B1:571'],
+  title: 'Preguntar por preferencias: comparando dos opciones',
+  summary: 'B1 preference questions typically lay out the choice explicitly — "with her or with me?" — rather than leaving it implicit, and the subjunctive returns whenever the compared option is someone else doing something.',
+  sections: [
+    { h: 'Superlative framing: lo que más/menos', html: '<i>¿Qué es lo que menos te gusta de tu ciudad?</i> frames the question as picking the extreme from a whole set, not a plain yes/no.' },
+    { h: 'Spelling out both options', html: 'A preference question at B1 often names both choices explicitly: <i>¿Con quién prefieres ir: con ella o conmigo?</i>' },
+    { h: '¿Prefieres que + subjuntivo?', html: 'When the compared option is an action performed by someone else, the subjunctive appears: <i>¿Prefieres que vaya yo?</i>, <i>¿Os gusta más que os regalen las películas en versión original?</i>' }
+  ],
+  exponents: [
+    { es: '¿Qué es lo que más te interesa de tu trabajo?', en: 'What do you find most interesting about your job?', register: 'neutral' },
+    { es: '¿Con quién prefieres ir: con ella o conmigo?', en: 'Who would you rather go with: her or me?', register: 'coloquial', note: 'both options spelled out explicitly' },
+    { es: '¿Prefieres que vaya yo?', en: 'Would you rather I went?', register: 'neutral', note: 'que + subjuntivo — someone else\'s action as the option' },
+    { es: '¿Qué eliges, el rojo o el azul?', en: 'Which do you choose, the red one or the blue one?', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: '¿Prefieres el tren o el autobús?', en: 'Do you prefer the train or the bus?', note: 'comparing two things — no subjunctive' },
+    { es: '¿Prefieres que vaya en tren o en autobús?', en: 'Would you rather I went by train or by bus?', note: 'comparing two actions via que — subjunctive' }
+  ],
+  pitfalls: [
+    'Spelling out both options (<i>con ella o conmigo</i>) is the natural B1 style — a bare <i>¿con quién prefieres?</i> is not wrong but reads as less specific.',
+    'Do not forget the subjunctive once the compared option is someone else acting: <i>¿Prefieres que venga yo o que vengas tú?</i>, not the indicative.'
+  ],
+  examples: [
+    { es: '¿Qué es lo que menos te gusta de vivir aquí?', en: 'What do you like least about living here?' },
+    { es: '¿Te interesa más que hagamos la ruta corta o la larga?', en: "Are you more interested in us doing the short route or the long one?" },
+    { es: '¿Cuál eliges tú?', en: 'Which one do you choose?' }
+  ],
+  probes: [
+    { id: 'p:prefB1:opciones', kind: 'mcq', q: '¿Cuál plantea las dos opciones explícitamente, estilo B1?',
+      options: ['¿Prefieres el tren?', '¿Prefieres el tren o el autobús?', '¿Te gusta el tren?'], answer: 1 },
+    { id: 'p:prefB1:modo', kind: 'mcq', q: '"¿Prefieres que ___ (ir) yo?"',
+      options: ['voy', 'vaya', 'iré'], answer: 1 },
+    { id: 'p:prefB1:cloze', kind: 'cloze', text: '¿Qué es lo que más te ___ de tu ciudad? (gustar)', accept: ['gusta'] },
+    { id: 'p:prefB1:recall', kind: 'recall', front: '¿Cuándo aparece el subjuntivo al preguntar por preferencias?', back: 'cuando la opción comparada es una acción de otra persona' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-deseos-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:588', 'funciones:B1:589', 'funciones:B1:590', 'funciones:B1:591', 'funciones:B1:592', 'funciones:B1:593', 'funciones:B1:594'],
+  title: 'Preguntar por deseos: te apetece, tienes ganas de',
+  summary: 'Beyond plain querer, B1 asks about desire through apetecer (an impersonal, gustar-type verb) and tener ganas de, and both switch to the subjunctive the moment the desired thing is someone else\'s action rather than a noun or infinitive.',
+  sections: [
+    { h: '¿Te apetece/Tienes ganas de + SN/infinitivo?', html: 'The default way to ask about a want with no urgency: <i>¿Te apetece ver a tus padres?</i>' },
+    { h: 'Adding "que": someone else\'s action', html: 'The moment the wanted thing is an action performed by someone else, <i>que</i> + subjunctive appears: <i>¿Tienes ganas de que vuelva Roberto?</i>, <i>¿Quieres que te presente a mis amigos?</i>' },
+    { h: 'One question word, many verbs of desire', html: 'A single interrogative can combine with several desire verbs: <i>¿Qué te apetece hacer mañana?</i>, <i>¿Qué famoso os gustaría ser?</i>, <i>¿Cuál tienes ganas de leer?</i>' }
+  ],
+  exponents: [
+    { es: '¿Te apetece ver a tus padres?', en: 'Do you feel like seeing your parents?', register: 'coloquial' },
+    { es: '¿Quieres que te presente a mis amigos?', en: 'Do you want me to introduce you to my friends?', register: 'coloquial', note: 'que + subjuntivo — someone else\'s (your own, as agent for them) action' },
+    { es: '¿Qué te apetece hacer mañana?', en: 'What do you feel like doing tomorrow?', register: 'coloquial' },
+    { es: '¿Qué famoso os gustaría ser?', en: 'Which famous person would you like to be?', register: 'neutral' },
+    { es: '¿Cuál es tu sueño?', en: 'What is your dream?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¿Tienes ganas de ver la película?', en: 'Do you feel like watching the film?', note: 'infinitive, same subject — no subjunctive' },
+    { es: '¿Tienes ganas de que vuelva Roberto?', en: "Are you looking forward to Roberto coming back?", note: 'que + subjuntivo — someone else\'s action' }
+  ],
+  pitfalls: [
+    '<i>Apetecer</i> works like <i>gustar</i> — the thing wanted is the grammatical subject: <i>Me apetece un café</i>, not <i>*yo apetezco un café</i>.',
+    'Do not skip the subjunctive once <i>que</i> introduces someone else acting: <i>¿Quieres que te presente...?</i>, never the indicative <i>*¿quieres que te presento...?</i>'
+  ],
+  examples: [
+    { es: '¿Te apetece un café?', en: 'Do you feel like a coffee?' },
+    { es: '¿Dónde te gustaría estudiar español?', en: 'Where would you like to study Spanish?' },
+    { es: '¿Qué película tienes ganas de ver?', en: 'What film do you feel like watching?' }
+  ],
+  probes: [
+    { id: 'p:deseosB1:modo', kind: 'mcq', q: '"¿Quieres que te ___ (presentar) a mis amigos?"',
+      options: ['presento', 'presente', 'presentaré'], answer: 1 },
+    { id: 'p:deseosB1:apetecer', kind: 'mcq', q: '¿Cuál es correcta?',
+      options: ['Yo apetezco un café.', 'Me apetece un café.', 'Me apetezco un café.'], answer: 1 },
+    { id: 'p:deseosB1:cloze', kind: 'cloze', text: '¿___ es tu sueño? (cuál)', accept: ['Cuál', 'cuál'] },
+    { id: 'p:deseosB1:recall', kind: 'recall', front: '¿Cómo funciona "apetecer" gramaticalmente?', back: 'como "gustar" — el sujeto es la cosa deseada' }
+  ]
+},
+
+{
+  id: 'fn-preguntar-estado-animo-b1', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  pcic: ['funciones:B1:663', 'funciones:B1:664', 'funciones:B1:665', 'funciones:B1:666', 'funciones:B1:667', 'funciones:B1:668'],
+  title: 'Preguntar por el estado de ánimo',
+  summary: 'A short, fixed set of questions handles noticing that something seems off — most of them impersonal, naming no specific feeling, which lets the other person decide how much to reveal.',
+  sections: [
+    { h: 'Open, impersonal check-ins', html: '<i>¿Qué te pasa?</i>, <i>¿Te pasa algo?</i>, <i>¿Todo bien?</i> notice something without naming a feeling — the safest, vaguest way to open the topic.' },
+    { h: 'A negative check: ¿no te pasa nada?', html: '<i>¿No te pasa nada?</i> presses gently when someone denies anything is wrong but still seems off.' },
+    { h: 'Naming a specific state', html: 'Once you have a guess, you can name it directly: <i>¿No estás enfadado conmigo?</i>, <i>¿Estás muy mal?</i>' }
+  ],
+  exponents: [
+    { es: '¿Qué te pasa?', en: "What's wrong?", register: 'coloquial' },
+    { es: '¿Te pasa algo?', en: 'Is something wrong?', register: 'neutral' },
+    { es: '¿Todo bien?', en: 'Everything okay?', register: 'coloquial' },
+    { es: '¿No estás enfadado conmigo?', en: "You're not angry with me, are you?", register: 'neutral' },
+    { es: '¿Estás muy mal?', en: 'Are you doing very badly?', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: '¿Te pasa algo?', en: 'Is something wrong?', note: 'open, names no specific feeling' },
+    { es: '¿No estás enfadado conmigo?', en: "Aren't you angry with me?", note: 'names a specific, guessed feeling' }
+  ],
+  pitfalls: [
+    'These impersonal check-ins (<i>¿qué te pasa?</i>, <i>¿todo bien?</i>) are deliberately vague — do not treat them as equivalent to directly naming a feeling, which is a more pointed, sometimes riskier move.',
+    '<i>¿No te pasa nada?</i> implies you already suspect something despite a previous denial — using it out of nowhere, with no prior "estoy bien", can sound presumptuous.'
+  ],
+  examples: [
+    { es: '¿Qué te pasa? Te veo un poco raro.', en: "What's wrong? You seem a bit off." },
+    { es: '¿Todo bien? Llevas un rato callado.', en: "Everything okay? You've been quiet for a while." },
+    { es: '¿No estás enfadada por lo de ayer?', en: "Aren't you upset about yesterday?" }
+  ],
+  probes: [
+    { id: 'p:animoB1:abierto', kind: 'mcq', q: '¿Cuál es la más abierta/vaga, sin nombrar un sentimiento?',
+      options: ['¿No estás enfadado?', '¿Qué te pasa?', '¿Estás muy mal?'], answer: 1 },
+    { id: 'p:animoB1:presion', kind: 'mcq', q: '¿Cuál presiona un poco tras una negación previa ("estoy bien")?',
+      options: ['¿Todo bien?', '¿No te pasa nada?', '¿Qué tal?'], answer: 1 },
+    { id: 'p:animoB1:cloze', kind: 'cloze', text: '¿No estás ___ conmigo? (enfadado)', accept: ['enfadado', 'enfadada'] },
+    { id: 'p:animoB1:recall', kind: 'recall', front: 'Pregunta impersonal más común para notar que algo va mal', back: '¿Qué te pasa? / ¿Todo bien?' }
+  ]
 }
 
 ];

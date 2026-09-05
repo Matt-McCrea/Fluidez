@@ -184,7 +184,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción descriptiva: lugares** · 18 pts · `generos_discursivos A2 § 3.3. Macrofunción descriptiva: lug`  — gn-describir-lugar-a2
 - [x] **Macrofunción narrativa** · 29 pts · `generos_discursivos A2 § 3.4. Macrofunción narrativa`  — gn-narrar-anecdota-a2
 
-## B1 — lessons (140/175 done)
+## B1 — lessons (151/175 done)
 
 ### B1 · grammar (23/23)
 - [x] **Clases de sustantivos** · 7 pts · `gramatica B1 § 1.1. Clases de sustantivos`  — gr-nombres-propios-b1
@@ -261,14 +261,14 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 8 pts · `nociones_generales B1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-expresion-b1
 - [x] **Expresión verbal** · 12 pts · `nociones_generales B1 § 7.2. Expresión verbal`  — nt-reflexion-expresion-b1
 
-### B1 · function (57/79)
-- [ ] **Identificar** · 8 pts · `funciones B1 § 1.1. Identificar`
-- [ ] **Pedir información** · 19 pts · `funciones B1 § 1.2. Pedir información`
+### B1 · function (68/79)
+- [x] **Identificar** · 8 pts · `funciones B1 § 1.1. Identificar`  — fn-identificar-b1
+- [x] **Pedir información** · 19 pts · `funciones B1 § 1.2. Pedir información`  — fn-pedir-informacion-b1
 - [x] **Dar información** · 21 pts · `funciones B1 § 1.3. Dar información`  — fn-respuesta-afirmativa-b1
 - [x] **Pedir opinión** · 26 pts · `funciones B1 § 2.1. Pedir opinión`  — fn-pedir-opinion-b1
 - [x] **Dar una opinión** · 5 pts · `funciones B1 § 2.2. Dar una opinión`  — fn-dar-opinion-b1
 - [x] **Pedir valoración** · 11 pts · `funciones B1 § 2.3. Pedir valoración`  — fn-pedir-valoracion-b1
-- [ ] **Valorar** · 15 pts · `funciones B1 § 2.4. Valorar`
+- [x] **Valorar** · 15 pts · `funciones B1 § 2.4. Valorar`  — fn-valorar-b1
 - [x] **Expresar aprobación y desaprobación** · 9 pts · `funciones B1 § 2.5. Expresar aprobación y desapro`  — fn-aprobacion-desaprobacion-b1
 - [x] **Posicionarse a favor o en contra** · 7 pts · `funciones B1 § 2.6. Posicionarse a favor o en con`  — fn-posicionarse-b1
 - [x] **Preguntar si se está de acuerdo** · 3 pts · `funciones B1 § 2.7. Preguntar si se está de acuer`  — fn-preguntar-si-acuerdo-b1
@@ -278,23 +278,23 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Presentar un contraargumento** · 4 pts · `funciones B1 § 2.12. Presentar un contraargumento`  — fn-contraargumento-b1
 - [x] **Expresar certeza y evidencia** · 15 pts · `funciones B1 § 2.13. Expresar certeza y evidencia`  — fn-certeza-evidencia-b1
 - [x] **Expresar falta de certeza y evidencia** · 12 pts · `funciones B1 § 2.14. Expresar falta de certeza y `  — fn-falta-certeza-b1
-- [ ] **Expresar posibilidad** · 8 pts · `funciones B1 § 2.16. Expresar posibilidad`
+- [x] **Expresar posibilidad** · 8 pts · `funciones B1 § 2.16. Expresar posibilidad`  — fn-posibilidad-b1
 - [x] **Expresar obligación y necesidad** · 5 pts · `funciones B1 § 2.17. Expresar obligación y necesi`  — fn-obligacion-necesidad-b1
 - [x] **Preguntar por el conocimiento de algo** · 8 pts · `funciones B1 § 2.19. Preguntar por el conocimient`  — fn-has-oido-b1
-- [ ] **Expresar conocimiento** · 8 pts · `funciones B1 § 2.20. Expresar conocimiento`
-- [ ] **Expresar desconocimiento** · 7 pts · `funciones B1 § 2.21. Expresar desconocimiento`
+- [x] **Expresar conocimiento** · 8 pts · `funciones B1 § 2.20. Expresar conocimiento`  — fn-conocimiento-desconocimiento-b1
+- [x] **Expresar desconocimiento** · 7 pts · `funciones B1 § 2.21. Expresar desconocimiento`  — fn-conocimiento-desconocimiento-b1
 - [x] **Expresar habilidad para hacer algo** · 4 pts · `funciones B1 § 2.23. Expresar habilidad para hace`  — fn-habilidad-b1
-- [ ] **Preguntar por gustos e intereses** · 16 pts · `funciones B1 § 3.1. Preguntar por gustos e intere`
-- [ ] **Expresar gustos e intereses** · 3 pts · `funciones B1 § 3.2. Expresar gustos e intereses`
+- [x] **Preguntar por gustos e intereses** · 16 pts · `funciones B1 § 3.1. Preguntar por gustos e intere`  — fn-preguntar-gustos-b1
+- [x] **Expresar gustos e intereses** · 3 pts · `funciones B1 § 3.2. Expresar gustos e intereses`  — fn-expresar-gustos-b1
 - [x] **Expresar aversión** · 9 pts · `funciones B1 § 3.3. Expresar aversión`  — fn-aversion-b1
-- [ ] **Preguntar por preferencias** · 4 pts · `funciones B1 § 3.4. Preguntar por preferencias`
+- [x] **Preguntar por preferencias** · 4 pts · `funciones B1 § 3.4. Preguntar por preferencias`  — fn-preguntar-preferencias-b1
 - [x] **Expresar preferencia** · 4 pts · `funciones B1 § 3.5. Expresar preferencia`  — fn-preferencia-b1
 - [x] **Expresar indiferencia o ausencia de preferencia** · 5 pts · `funciones B1 § 3.6. Expresar indiferencia o ausen`  — fn-no-me-importa-b1
-- [ ] **Preguntar por deseos** · 8 pts · `funciones B1 § 3.7. Preguntar por deseos`
+- [x] **Preguntar por deseos** · 8 pts · `funciones B1 § 3.7. Preguntar por deseos`  — fn-preguntar-deseos-b1
 - [x] **Expresar deseos** · 18 pts · `funciones B1 § 3.8. Expresar deseos`  — fn-expresar-deseos-b1
 - [x] **Preguntar por planes e intenciones** · 5 pts · `funciones B1 § 3.9. Preguntar por planes e intenc`  — fn-preguntar-planes-b1
 - [x] **Expresar planes e intenciones** · 6 pts · `funciones B1 § 3.10. Expresar planes e intencione`  — fn-expresar-planes-b1
-- [ ] **Preguntar por el estado de ánimo** · 6 pts · `funciones B1 § 3.11. Preguntar por el estado de á`
+- [x] **Preguntar por el estado de ánimo** · 6 pts · `funciones B1 § 3.11. Preguntar por el estado de á`  — fn-preguntar-estado-animo-b1
 - [x] **Expresar alegría y satisfacción** · 14 pts · `funciones B1 § 3.12. Expresar alegría y satisfacc`  — fn-contento-encantado-b1
 - [x] **Expresar tristeza y aflicción** · 17 pts · `funciones B1 § 3.13. Expresar tristeza y aflicció`  — fn-tristeza-afliccion-b1
 - [x] **Expresar placer y diversión** · 4 pts · `funciones B1 § 3.14. Expresar placer y diversión`  — fn-placer-diversion-b1
