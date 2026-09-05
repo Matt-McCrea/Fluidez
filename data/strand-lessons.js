@@ -16233,6 +16233,215 @@ window.STRAND_LESSONS = [
     { id: 'p:generalespB2:cloze', kind: 'cloze', text: 'No ___, no todos son iguales. (generalizar, imperativo negativo tú)', accept: ['generalices'] },
     { id: 'p:generalespB2:recall', kind: 'recall', front: '¿Qué adverbio marca una afirmación amplia, no específica?', back: 'generalmente / en general' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 notion, part 2 (WORKLIST.md, section B2 · notion, § 2.1-2.5)
+ * ========================================================================== */
+{
+  id: 'nt-cantidad-numerica-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:134', 'nociones_generales:B2:135', 'nociones_generales:B2:136', 'nociones_generales:B2:137', 'nociones_generales:B2:138'],
+  title: 'Cantidad numérica: cifras, índices, "número + de"',
+  summary: 'Statistics and reports need their own precision vocabulary — a rate is an índice, not a número, and a cardinal number followed by "de" picks a subset out of a larger group rather than counting the group itself.',
+  sections: [
+    { h: 'Figures, rates, percentages', html: '<i>Cifra</i> (a figure), <i>millar</i> (a thousand, used loosely for "thousands"), <i>índice, porcentaje</i> (rate, percentage) are the vocabulary of statistics and reporting.' },
+    { h: 'Even/odd/decimal numbers', html: '<i>Número par/impar/decimal</i> classify a number\'s type.' },
+    { h: '[cardinal] + de + [noun]: a subset', html: '<i>Dos de mis hermanos</i> picks two out of a larger set (I have more than two siblings); this differs from a bare cardinal, which just counts.' }
+  ],
+  exponents: [
+    { es: 'El índice de desempleo ha bajado un 2%.', en: 'The unemployment rate has fallen by 2%.', register: 'formal' },
+    { es: 'Fui a cenar con dos de mis hermanos.', en: 'I went to dinner with two of my brothers.', register: 'neutral', note: 'a subset of a larger group' },
+    { es: 'Es un número impar.', en: "It's an odd number.", register: 'neutral' },
+    { es: 'Calculé mal el total.', en: 'I miscalculated the total.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Invité a dos hermanos.', en: 'I invited two brothers (of someone).', note: 'plain cardinal — just a count' },
+    { es: 'Invité a dos de mis hermanos.', en: 'I invited two of my brothers.', note: '[cardinal] + de — a subset of a known, larger group' }
+  ],
+  pitfalls: [
+    '<i>Índice</i> (a rate/index) is not simply "number" — do not use <i>número</i> where a statistical rate is meant.',
+    '<i>[cardinal] + de + [SN]</i> implies the total group is larger than the number named — using it when you mean the WHOLE group is misleading.'
+  ],
+  examples: [
+    { es: 'El porcentaje de aprobados subió este año.', en: 'The pass rate went up this year.' },
+    { es: 'Tres de los candidatos se retiraron.', en: 'Three of the candidates withdrew.' },
+    { es: 'Manejan cifras muy distintas.', en: 'They handle very different figures.' }
+  ],
+  probes: [
+    { id: 'p:cantnumB2:subset', kind: 'mcq', q: '"Cené con dos de mis hermanos" implica que tengo...',
+      options: ['Exactamente dos hermanos', 'Más de dos hermanos', 'Ningún hermano'], answer: 1 },
+    { id: 'p:cantnumB2:indice', kind: 'mcq', q: '¿Qué palabra describe una tasa/porcentaje?',
+      options: ['cifra', 'índice', 'millar'], answer: 1 },
+    { id: 'p:cantnumB2:cloze', kind: 'cloze', text: 'El ___ de desempleo bajó este mes. (índice)', accept: ['índice'] },
+    { id: 'p:cantnumB2:recall', kind: 'recall', front: '¿Qué implica "[número] + de + [sustantivo]"?', back: 'un subconjunto de un grupo mayor' }
+  ]
+},
+
+{
+  id: 'nt-cantidad-relativa-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:147', 'nociones_generales:B2:148', 'nociones_generales:B2:151', 'nociones_generales:B2:153',
+         'nociones_generales:B2:154', 'nociones_generales:B2:155', 'nociones_generales:B2:156'],
+  title: 'Cantidad relativa: aproximar sin comprometerse',
+  summary: 'A whole set of phrases lets a speaker give a quantity without pinning down an exact number — "como 250 gramos", "alrededor de cien", "entre treinta y cuarenta mil" — each hedging in a slightly different way.',
+  sections: [
+    { h: 'Collective nouns for groups', html: '<i>Asociación, conjunto, banda, ejército, tribu</i> each name a specific kind of group, not a generic "group of people".' },
+    { h: 'Approximating a number', html: '<i>Como + [cardinal]</i> (colloquial, "like 250 grams"), <i>alrededor de</i> (neutral, "around"), <i>entre X y Y</i> (a range) all approximate without full commitment.' },
+    { h: 'A floor: al menos', html: '<i>Al menos</i> sets a minimum: <i>al menos doce coches</i> — twelve or more, guaranteed at least that many.' }
+  ],
+  exponents: [
+    { es: 'Le puse como 250 gramos de azúcar.', en: 'I put in like 250 grams of sugar.', register: 'coloquial', note: 'como + cardinal — casual approximation' },
+    { es: 'El hotel tendría alrededor de cien habitaciones.', en: 'The hotel would have around a hundred rooms.', register: 'neutral' },
+    { es: 'Nos cruzamos con al menos doce coches extranjeros.', en: 'We passed at least twelve foreign cars.', register: 'neutral' },
+    { es: 'Acudieron entre treinta y cuarenta mil personas.', en: 'Between thirty and forty thousand people attended.', register: 'formal' },
+    { es: 'Había un montón de gente en la plaza.', en: 'There was a ton of people in the square.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Como 250 gramos de azúcar.', en: 'Like 250 grams of sugar.', note: 'colloquial approximation' },
+    { es: 'Alrededor de 250 gramos de azúcar.', en: 'Around 250 grams of sugar.', note: 'same idea, neutral/written register' }
+  ],
+  pitfalls: [
+    '<i>Como</i> meaning "approximately" is markedly colloquial — in a written report, <i>alrededor de/aproximadamente</i> fits better.',
+    '<i>Al menos</i> sets a floor (that many or more); do not confuse it with <i>como máximo</i>, which sets a ceiling.'
+  ],
+  examples: [
+    { es: 'Como máximo, tardaremos una hora.', en: "We'll take an hour at most." },
+    { es: 'Recursos escasos limitan el proyecto.', en: 'Scarce resources limit the project.' },
+    { es: 'Solo vendió una parte del negocio.', en: 'He only sold part of the business.' }
+  ],
+  probes: [
+    { id: 'p:cantrelB2:almenos', kind: 'mcq', q: '"Al menos doce coches" significa...',
+      options: ['Exactamente doce', 'Doce o más', 'Menos de doce'], answer: 1 },
+    { id: 'p:cantrelB2:registro', kind: 'mcq', q: '¿Cuál es más informal para aproximar?',
+      options: ['alrededor de', 'como', 'entre X y Y'], answer: 1 },
+    { id: 'p:cantrelB2:cloze', kind: 'cloze', text: 'El hotel tiene ___ de cien habitaciones. (alrededor)', accept: ['alrededor'] },
+    { id: 'p:cantrelB2:recall', kind: 'recall', front: '¿Qué expresión pone un TECHO (máximo)?', back: 'como máximo' }
+  ]
+},
+
+{
+  id: 'nt-aumento-disminucion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'economia',
+  pcic: ['nociones_generales:B2:160', 'nociones_generales:B2:161', 'nociones_generales:B2:162', 'nociones_generales:B2:163',
+         'nociones_generales:B2:164', 'nociones_generales:B2:165'],
+  title: 'Aumento y disminución: crecer, duplicarse, cada vez más',
+  summary: 'The vocabulary of change over time that economics and news reporting run on — nouns for the change itself, verbs for it happening, and two grammatical patterns ("X veces más" and "cada vez más") for describing a multiplying or steadily progressing trend.',
+  sections: [
+    { h: 'Naming the change', html: '<i>Aumento, disminución, crecimiento</i> name the change as a noun; <i>rebaja</i> specifically names a price reduction.' },
+    { h: 'The change as a verb', html: '<i>Crecer, caer</i> (to grow, to fall) describe the movement directly; <i>duplicarse, triplicarse</i> (to double, to triple) name a specific multiple.' },
+    { h: 'Two grammatical patterns', html: '<i>[cardinal] veces más/menos</i> states an exact multiple: <i>cinco veces más</i>. <i>Cada vez más/menos</i> describes a steady, ongoing trend with no fixed endpoint: <i>Cada vez se consume más energía.</i>' }
+  ],
+  exponents: [
+    { es: 'La economía experimentó un crecimiento notable.', en: 'The economy experienced notable growth.', register: 'formal' },
+    { es: 'Los precios han caído un 10%.', en: 'Prices have fallen 10%.', register: 'neutral' },
+    { es: 'Las ventas se han duplicado este año.', en: 'Sales have doubled this year.', register: 'neutral' },
+    { es: 'Ahora gano cinco veces más que antes.', en: 'I now earn five times more than before.', register: 'neutral' },
+    { es: 'Cada vez se casa menos gente.', en: 'Fewer and fewer people are getting married.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Ganan cinco veces más que el año pasado.', en: 'They earn five times more than last year.', note: 'a fixed, exact multiple' },
+    { es: 'Cada vez ganan más.', en: 'They earn more and more.', note: 'an ongoing trend, no exact figure' }
+  ],
+  pitfalls: [
+    '<i>Cada vez más</i> describes a TREND over time, not a single comparison — do not use it to compare just two static points.',
+    '<i>Rebaja</i> specifically means a price cut; do not use it for a general decrease (population, temperature), where <i>disminución</i> fits.'
+  ],
+  examples: [
+    { es: 'La población ha disminuido en la última década.', en: 'The population has decreased over the last decade.' },
+    { es: 'Anunciaron una rebaja del 20% en electrónica.', en: 'They announced a 20% discount on electronics.' },
+    { es: 'Cada vez hay más interés por el reciclaje.', en: "There's more and more interest in recycling." }
+  ],
+  probes: [
+    { id: 'p:aumdisminB2:tendencia', kind: 'mcq', q: '¿Cuál describe una TENDENCIA continua, sin cifra fija?',
+      options: ['cinco veces más', 'cada vez más', 'el doble'], answer: 1 },
+    { id: 'p:aumdisminB2:rebaja', kind: 'mcq', q: '¿A qué se refiere específicamente "rebaja"?',
+      options: ['Cualquier disminución', 'Una reducción de precio', 'El crecimiento de la población'], answer: 1 },
+    { id: 'p:aumdisminB2:cloze', kind: 'cloze', text: 'Las ventas se han ___ este trimestre. (duplicarse)', accept: ['duplicado'] },
+    { id: 'p:aumdisminB2:recall', kind: 'recall', front: '¿Qué expresión marca un múltiplo exacto, no una tendencia?', back: '[número] veces más/menos' }
+  ]
+},
+
+{
+  id: 'nt-proporcion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:169', 'nociones_generales:B2:170', 'nociones_generales:B2:172', 'nociones_generales:B2:173',
+         'nociones_generales:B2:175', 'nociones_generales:B2:176'],
+  title: 'Proporción: partir, repartir, la sexta parte',
+  summary: 'Dividing something up needs a precise verb for the ACT of splitting (partir, dividir) separate from the verb for handing out the resulting shares (repartir, distribuir) — and ordinal fractions (la sexta parte) name a share the way "tercios" and "cuartos" cannot always cover.',
+  sections: [
+    { h: 'Splitting vs distributing', html: '<i>Partir, dividir</i> describe the act of splitting something into pieces; <i>repartir, distribuir</i> describe handing those pieces out to different recipients — a different, later step.' },
+    { h: 'Ordinal fractions', html: '<i>[ordinal] + parte de</i> names any fraction: <i>la sexta parte de los habitantes</i> ("a sixth of the inhabitants"), useful beyond the fixed words for halves, thirds and quarters.' },
+    { h: 'Cardinal + tercio/cuarto de', html: 'For thirds and quarters specifically, a cardinal can combine directly: <i>dos tercios de la población</i>.' }
+  ],
+  exponents: [
+    { es: 'Partió la manzana en dos.', en: 'She cut the apple in two.', register: 'neutral', note: 'partir — the act of splitting' },
+    { es: 'Repartieron la comida entre los vecinos.', en: 'They distributed the food among the neighbors.', register: 'neutral', note: 'repartir — handing out the shares' },
+    { es: 'La sexta parte de los habitantes votó en blanco.', en: 'A sixth of the inhabitants cast a blank vote.', register: 'formal' },
+    { es: 'Dos tercios de la población apoya la medida.', en: 'Two-thirds of the population supports the measure.', register: 'neutral' },
+    { es: 'Compré una porción de queso manchego.', en: 'I bought a portion of manchego cheese.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Dividió la herencia en tres partes.', en: 'He divided the inheritance into three parts.', note: 'dividir — the act of splitting' },
+    { es: 'Repartió la herencia entre sus hijos.', en: 'He distributed the inheritance among his children.', note: 'repartir — handing shares to recipients' }
+  ],
+  pitfalls: [
+    'Do not use <i>partir/dividir</i> when the point is who RECEIVES the shares — that job belongs to <i>repartir/distribuir</i>.',
+    '<i>[Ordinal] + parte de</i> works for any fraction, not just thirds and quarters — <i>la séptima parte, la décima parte</i> are all valid, unlike the fixed <i>tercio/cuarto</i>.'
+  ],
+  examples: [
+    { es: 'El reparto de la herencia generó conflictos.', en: 'The distribution of the inheritance caused conflicts.' },
+    { es: 'Distribuyeron los folletos por todo el barrio.', en: 'They distributed the flyers all over the neighborhood.' },
+    { es: 'Solo una cuarta parte respondió a la encuesta.', en: 'Only a quarter responded to the survey.' }
+  ],
+  probes: [
+    { id: 'p:proporcionB2:partirvsrepartir', kind: 'mcq', q: '¿Cuál describe ENTREGAR las partes a distintas personas?',
+      options: ['partir', 'repartir', 'dividir'], answer: 1 },
+    { id: 'p:proporcionB2:ordinal', kind: 'mcq', q: '¿Cómo se dice "a seventh" (1/7) de forma productiva?',
+      options: ['un séptimo tercio', 'la séptima parte', 'no existe forma'], answer: 1 },
+    { id: 'p:proporcionB2:cloze', kind: 'cloze', text: 'Dos ___ de la población apoya la ley. (tercios)', accept: ['tercios'] },
+    { id: 'p:proporcionB2:recall', kind: 'recall', front: '¿Qué verbo describe entregar partes a distintos receptores?', back: 'repartir / distribuir' }
+  ]
+},
+
+{
+  id: 'nt-grado-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:181', 'nociones_generales:B2:182', 'nociones_generales:B2:183', 'nociones_generales:B2:184',
+         'nociones_generales:B2:185', 'nociones_generales:B2:186', 'nociones_generales:B2:187'],
+  title: 'Grado: intensificadores más allá de "muy"',
+  summary: 'B2 retires plain "muy" for a whole family of intensifiers graded by strength and flavor — realmente for genuine emphasis, totalmente/completamente for absolutes, and the colloquial "super-" prefix that turns almost any adjective into an intensified one.',
+  sections: [
+    { h: 'Genuine emphasis: realmente, increíblemente', html: 'These intensify with a sense of "genuinely, remarkably": <i>Fue realmente divertido</i>, <i>Es increíblemente sencillo</i>.' },
+    { h: 'Absolutes: totalmente, completamente, absolutamente', html: 'These push to the extreme, no partial reading possible: <i>Es totalmente falso</i>, <i>Estoy absolutamente desesperada</i>.' },
+    { h: 'Muy + adjective + para: "too X for"', html: '<i>Muy + adjetivo + para</i> frames a quality as excessive relative to something: <i>Está muy alto para su edad.</i>' },
+    { h: 'The colloquial super- prefix', html: 'Attached directly to an adjective, <i>super-</i> intensifies informally: <i>Es superdifícil</i> — very common in speech, avoided in formal writing.' }
+  ],
+  exponents: [
+    { es: 'Fue realmente divertido, no me lo esperaba.', en: "It was genuinely fun, I wasn't expecting it.", register: 'neutral' },
+    { es: 'Es totalmente falso lo que dicen.', en: "What they're saying is completely false.", register: 'neutral' },
+    { es: 'Está muy alto para su edad.', en: "He's very tall for his age.", register: 'neutral' },
+    { es: 'Es superdifícil este examen.', en: 'This exam is super hard.', register: 'coloquial', note: 'super- prefix, informal' },
+    { es: '¡Cuánto me alegro de verte!', en: "I'm so glad to see you!", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Es muy sencillo.', en: "It's very simple.", note: 'plain, neutral intensity' },
+    { es: 'Es increíblemente sencillo.', en: "It's incredibly simple.", note: 'stronger, more emphatic' },
+    { es: 'Es superdifícil.', en: "It's super hard.", note: 'colloquial equivalent of "muy/increíblemente"' }
+  ],
+  pitfalls: [
+    'The <i>super-</i> prefix is markedly colloquial — avoid it in formal writing, where <i>extremadamente/sumamente</i> fits better.',
+    '<i>Totalmente/completamente/absolutamente</i> push to an extreme with no partial reading — do not soften them with another degree word (<i>*un poco totalmente</i> makes no sense).',
+    '<i>Muy + adjetivo + para</i> implies a comparison ("too X for Y\'s expectations"), not just plain high degree.'
+  ],
+  examples: [
+    { es: 'Confío en él por completo.', en: 'I trust him completely.' },
+    { es: 'Me gusta el cine, especialmente el de terror.', en: 'I like cinema, especially horror.' },
+    { es: '¡Cuánta gente hay aquí!', en: "So many people here!" }
+  ],
+  probes: [
+    { id: 'p:gradoB2:absoluto', kind: 'mcq', q: '¿Cuál admite un matiz parcial ("un poco...")?',
+      options: ['muy sencillo', 'totalmente falso', 'ambas por igual'], answer: 0 },
+    { id: 'p:gradoB2:registro', kind: 'mcq', q: '¿Cuál es más COLOQUIAL?',
+      options: ['extremadamente difícil', 'superdifícil', 'sumamente difícil'], answer: 1 },
+    { id: 'p:gradoB2:cloze', kind: 'cloze', text: 'Confío en ella por ___. (completo)', accept: ['completo'] },
+    { id: 'p:gradoB2:recall', kind: 'recall', front: '¿Qué prefijo intensificador es típico del habla coloquial?', back: 'super-' }
+  ]
 }
 
 ];
