@@ -1580,5 +1580,7 @@ window.VERBS = [
 { inf:'frustrar', en:'to frustrate, to thwart', type:'ar' },
 { inf:'desconfiar', en:'to distrust', type:'ar', forms:{
   presente:['desconfío','desconfías','desconfía','desconfiamos','desconfiáis','desconfían'],
-  presubj:['desconfíe','desconfíes','desconfíe','desconfiemos','desconfiéis','desconfíen'] } }
+  presubj:['desconfíe','desconfíes','desconfíe','desconfiemos','desconfiéis','desconfíen'] } },
+{ inf:'supervisar', en:'to supervise', type:'ar' },
+{ inf:'reestructurar', en:'to restructure', type:'ar' }
 ];

@@ -631,6 +631,19 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'Me ___ (avergonzarse) mucho de cómo reaccioné aquella tarde.', inf: 'avergonzarse', tense: 'presente', person: 'yo', en: "I'm quite ashamed of how I reacted that afternoon." },
 
   { type: 'transform', level: 6, instruction: 'Rewrite as a formal write task avoiding "tú" throughout (avoidsPerson: tú):', from: 'Si tú quieres, te puedo ayudar con eso.', to: 'Si usted lo desea, puedo ayudarle con eso.', en: 'If you wish, I can help you with that.' },
-  { type: 'transform', level: 7, instruction: 'Rewrite using a connector from the contraargumentativo class:', from: 'El proyecto es caro. Lo aprobamos igualmente.', to: 'El proyecto es caro; no obstante, lo aprobamos.', en: 'The project is expensive; nevertheless, we approved it.' }
+  { type: 'transform', level: 7, instruction: 'Rewrite using a connector from the contraargumentativo class:', from: 'El proyecto es caro. Lo aprobamos igualmente.', to: 'El proyecto es caro; no obstante, lo aprobamos.', en: 'The project is expensive; nevertheless, we approved it.' },
+
+  /* ---- B2 apply, batch 7 of 12 ---- */
+  { type: 'cloze', level: 6, text: 'Si hubiera trabajado más duro aquel año, la ___ (ascender, ellos) antes.', inf: 'ascender', tense: 'condperf', person: 'ellos', en: 'If she had worked harder that year, they would have promoted her sooner.' },
+  { type: 'cloze', level: 6, text: 'La empresa ___ (despedir) a un tercio de la plantilla el mes pasado.', inf: 'despedir', tense: 'preterito', person: 'él/ella', en: 'The company laid off a third of its staff last month.' },
+  { type: 'cloze', level: 7, text: 'Es probable que la dirección ___ (reestructurar) todo el departamento este trimestre.', inf: 'reestructurar', tense: 'presubj', person: 'él/ella', en: 'It is likely that management will restructure the whole department this quarter.' },
+  { type: 'cloze', level: 6, text: 'Para diciembre, la empresa ya ___ (contratar) a los cincuenta nuevos empleados previstos.', inf: 'contratar', tense: 'futperf', person: 'él/ella', en: 'By December, the company will have already hired the fifty new employees planned.' },
+  { type: 'cloze', level: 6, text: 'Yo no ___ (delegar) una tarea tan delicada en alguien tan nuevo.', inf: 'delegar', tense: 'condicional', person: 'yo', en: "I wouldn't delegate such a delicate task to someone so new." },
+  { type: 'cloze', level: 7, text: 'El nuevo gerente exige que alguien ___ (supervisar) personalmente cada envío.', inf: 'supervisar', tense: 'presubj', person: 'él/ella', en: 'The new manager demands that someone personally supervise each shipment.' },
+  { type: 'cloze', level: 6, text: 'Aquella empresa ___ (quebrar) apenas dos años después de fundarse.', inf: 'quebrar', tense: 'preterito', person: 'él/ella', en: 'That company went bankrupt barely two years after it was founded.' },
+  { type: 'cloze', level: 6, text: 'Durante la crisis, muchas familias ___ (ahorrar) hasta el último céntimo posible.', inf: 'ahorrar', tense: 'imperfecto', person: 'ellos', en: 'During the crisis, many families saved every last cent they could.' },
+
+  { type: 'transform', level: 6, instruction: 'Rewrite using the pluscuamperfecto via a relative clause:', from: 'Compraron el piso. Antes lo habían visitado tres veces.', to: 'El piso que habían visitado tres veces fue el que finalmente compraron.', en: 'The apartment they had visited three times was the one they finally bought.' },
+  { type: 'transform', level: 7, instruction: 'Rewrite as reported speech using "dijo que" (correlación de marcas: tense and deixis shift):', from: 'La directora dijo: "Mañana anunciaremos los despidos aquí."', to: 'La directora dijo que al día siguiente anunciarían los despidos allí.', en: 'The director said that the next day they would announce the layoffs there.' }
 
 ];
