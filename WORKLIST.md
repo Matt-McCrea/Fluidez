@@ -371,7 +371,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (113/204 done)
+## B2 — lessons (133/204 done)
 
 ### B2 · grammar (26/26)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
@@ -456,7 +456,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 16 pts · `nociones_generales B2 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-b2
 - [x] **Expresión verbal** · 23 pts · `nociones_generales B2 § 7.2. Expresión verbal`  — nt-expresion-verbal-b2
 
-### B2 · function (33/96)
+### B2 · function (53/96)
 - [x] **Identificar** · 7 pts · `funciones B2 § 1.1. Identificar`  — fn-identificar-b2
 - [x] **Pedir información** · 23 pts · `funciones B2 § 1.2. Pedir información`  — fn-preguntar-con-prudencia-b2
 - [x] **Dar información** · 27 pts · `funciones B2 § 1.3. Dar información`  — fn-dar-informacion-b2
@@ -484,32 +484,32 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Preguntar si se recuerda o se ha olvidado** · 4 pts · `funciones B2 § 2.24. Preguntar si se recuerda o s`  — fn-preguntar-recordar-b2
 - [x] **Expresar que se recuerda** · 11 pts · `funciones B2 § 2.25. Expresar que se recuerda`  — fn-expresar-recordar-b2
 - [x] **Expresar que no se recuerda** · 10 pts · `funciones B2 § 2.26. Expresar que no se recuerda`  — fn-expresar-no-recordar-general-b2
-- [ ] **Expresar gustos e intereses** · 17 pts · `funciones B2 § 3.2. Expresar gustos e intereses`
-- [ ] **Expresar aversión** · 7 pts · `funciones B2 § 3.3. Expresar aversión`
-- [ ] **Expresar preferencia** · 4 pts · `funciones B2 § 3.5. Expresar preferencia`
-- [ ] **Preguntar por deseos** · 5 pts · `funciones B2 § 3.7. Preguntar por deseos`
-- [ ] **Expresar deseos** · 13 pts · `funciones B2 § 3.8. Expresar deseos`
-- [ ] **Preguntar por planes e intenciones** · 11 pts · `funciones B2 § 3.9. Preguntar por planes e intenc`
-- [ ] **Expresar planes e intenciones** · 9 pts · `funciones B2 § 3.10. Expresar planes e intencione`
-- [ ] **Expresar alegría y satisfacción** · 13 pts · `funciones B2 § 3.12. Expresar alegría y satisfacc`
-- [ ] **Expresar tristeza y aflicción** · 10 pts · `funciones B2 § 3.13. Expresar tristeza y aflicció`
-- [ ] **Expresar placer y diversión** · 7 pts · `funciones B2 § 3.14. Expresar placer y diversión`
-- [ ] **Expresar aburrimiento** · 4 pts · `funciones B2 § 3.15. Expresar aburrimiento`
+- [x] **Expresar gustos e intereses** · 17 pts · `funciones B2 § 3.2. Expresar gustos e intereses`  — fn-gustos-intereses-b2
+- [x] **Expresar aversión** · 7 pts · `funciones B2 § 3.3. Expresar aversión`  — fn-aversion-b2
+- [x] **Expresar preferencia** · 4 pts · `funciones B2 § 3.5. Expresar preferencia`  — fn-preferencia-b2
+- [x] **Preguntar por deseos** · 5 pts · `funciones B2 § 3.7. Preguntar por deseos`  — fn-preguntar-deseos-b2
+- [x] **Expresar deseos** · 13 pts · `funciones B2 § 3.8. Expresar deseos`  — fn-deseos-b2
+- [x] **Preguntar por planes e intenciones** · 11 pts · `funciones B2 § 3.9. Preguntar por planes e intenc`  — fn-preguntar-planes-b2
+- [x] **Expresar planes e intenciones** · 9 pts · `funciones B2 § 3.10. Expresar planes e intencione`  — fn-planes-intenciones-b2
+- [x] **Expresar alegría y satisfacción** · 13 pts · `funciones B2 § 3.12. Expresar alegría y satisfacc`  — fn-alegria-satisfaccion-b2
+- [x] **Expresar tristeza y aflicción** · 10 pts · `funciones B2 § 3.13. Expresar tristeza y aflicció`  — fn-tristeza-afliccion-b2
+- [x] **Expresar placer y diversión** · 7 pts · `funciones B2 § 3.14. Expresar placer y diversión`  — fn-placer-diversion-b2
+- [x] **Expresar aburrimiento** · 4 pts · `funciones B2 § 3.15. Expresar aburrimiento`  — fn-aburrimiento-b2
 - [x] **Expresar hartazgo** · 10 pts · `funciones B2 § 3.16. Expresar hartazgo`  — fn-expresar-hartazgo-b2
-- [ ] **Expresar enfado e indignación** · 8 pts · `funciones B2 § 3.17. Expresar enfado e indignació`
-- [ ] **Expresar miedo, ansiedad y preocupación** · 11 pts · `funciones B2 § 3.18. Expresar miedo, ansiedad y p`
+- [x] **Expresar enfado e indignación** · 8 pts · `funciones B2 § 3.17. Expresar enfado e indignació`  — fn-enfado-indignacion-b2
+- [x] **Expresar miedo, ansiedad y preocupación** · 11 pts · `funciones B2 § 3.18. Expresar miedo, ansiedad y p`  — fn-miedo-ansiedad-b2
 - [x] **Expresar nerviosismo** · 6 pts · `funciones B2 § 3.19. Expresar nerviosismo`  — fn-expresar-nerviosismo-b2
-- [ ] **Expresar empatía** · 6 pts · `funciones B2 § 3.20. Expresar empatía`
+- [x] **Expresar empatía** · 6 pts · `funciones B2 § 3.20. Expresar empatía`  — fn-empatia-b2
 - [x] **Expresar alivio** · 4 pts · `funciones B2 § 3.21. Expresar alivio`  — fn-expresar-alivio-b2
-- [ ] **Expresar esperanza** · 3 pts · `funciones B2 § 3.22. Expresar esperanza`
+- [x] **Expresar esperanza** · 3 pts · `funciones B2 § 3.22. Expresar esperanza`  — fn-esperanza-b2
 - [x] **Expresar decepción** · 4 pts · `funciones B2 § 3.23. Expresar decepción`  — fn-expresar-decepcion-b2
 - [x] **Expresar resignación** · 7 pts · `funciones B2 § 3.24. Expresar resignación`  — fn-expresar-resignacion-b2
 - [x] **Expresar arrepentimiento** · 3 pts · `funciones B2 § 3.25. Expresar arrepentimiento`  — fn-expresar-arrepentimiento-b2
-- [ ] **Expresar vergüenza** · 7 pts · `funciones B2 § 3.26. Expresar vergüenza`
-- [ ] **Expresar sorpresa y extrañeza** · 12 pts · `funciones B2 § 3.27. Expresar sorpresa y extrañez`
-- [ ] **Expresar admiración y orgullo** · 7 pts · `funciones B2 § 3.28. Expresar admiración y orgull`
-- [ ] **Expresar afecto** · 7 pts · `funciones B2 § 3.29. Expresar afecto`
-- [ ] **Expresar sensaciones físicas** · 17 pts · `funciones B2 § 3.30. Expresar sensaciones físicas`
+- [x] **Expresar vergüenza** · 7 pts · `funciones B2 § 3.26. Expresar vergüenza`  — fn-verguenza-b2
+- [x] **Expresar sorpresa y extrañeza** · 12 pts · `funciones B2 § 3.27. Expresar sorpresa y extrañez`  — fn-sorpresa-extraneza-b2
+- [x] **Expresar admiración y orgullo** · 7 pts · `funciones B2 § 3.28. Expresar admiración y orgull`  — fn-admiracion-orgullo-b2
+- [x] **Expresar afecto** · 7 pts · `funciones B2 § 3.29. Expresar afecto`  — fn-afecto-b2
+- [x] **Expresar sensaciones físicas** · 17 pts · `funciones B2 § 3.30. Expresar sensaciones físicas`  — fn-sensaciones-fisicas-b2
 - [ ] **Dar una orden o instrucción** · 23 pts · `funciones B2 § 4.1. Dar una orden o instrucción`
 - [ ] **Pedir un favor** · 6 pts · `funciones B2 § 4.2. Pedir un favor`
 - [ ] **Pedir objetos** · 12 pts · `funciones B2 § 4.3. Pedir objetos`
