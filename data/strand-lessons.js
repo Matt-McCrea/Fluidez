@@ -16865,6 +16865,387 @@ window.STRAND_LESSONS = [
     { id: 'p:formasfigB2:cloze', kind: 'cloze', text: 'La isla tiene ___ de estrella. (forma)', accept: ['forma'] },
     { id: 'p:formasfigB2:recall', kind: 'recall', front: '¿Qué patrón describe una forma comparándola con un objeto conocido?', back: 'tener forma de + objeto' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 notion, part 5 (WORKLIST.md, section B2 · notion, § 5.3-5.13)
+ * Combined: Textura + Acabado (nt-textura-acabado-b2); Sabor + Olor
+ * (nt-sabor-olor-b2) — each pair is a thin (4-5 pt) cluster of surface/sensory
+ * adjectives with almost no worked examples in the source.
+ * ========================================================================== */
+{
+  id: 'nt-consistencia-resistencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:716', 'nociones_generales:B2:717', 'nociones_generales:B2:719', 'nociones_generales:B2:721',
+         'nociones_generales:B2:722', 'nociones_generales:B2:725', 'nociones_generales:B2:726', 'nociones_generales:B2:727'],
+  title: 'Consistencia y resistencia: denso, frágil, resistente a',
+  summary: 'Describing a material\'s physical behavior needs a precise vocabulary — "resistencia AL agua/AL calor" always takes a preposition naming what is being withstood, and a family of near-synonyms (denso, espeso, fluido) sits on a scale from solid to liquid, not a simple yes/no.',
+  sections: [
+    { h: 'Naming the property', html: '<i>Fragilidad, dureza, densidad, elasticidad, flexibilidad, rigidez</i> name the abstract quality; the matching adjectives (<i>frágil, duro, denso, elástico, flexible, rígido</i>) describe the object.' },
+    { h: 'Resistencia a + [threat]', html: '<i>Resistencia</i> always specifies what is being resisted with <i>a</i>: <i>resistencia al agua, al calor, al peso</i> — never a bare "resistencia" with no object.' },
+    { h: 'A scale, not a binary', html: '<i>Denso, espeso, fluido</i> sit on a scale of thickness/flow, useful for liquids and mixtures — not simply "thick" vs "thin".' }
+  ],
+  exponents: [
+    { es: 'La principal característica de este modelo es su resistencia al agua.', en: 'The main feature of this model is its water resistance.', register: 'formal' },
+    { es: 'La dureza del diamante lo hace casi indestructible.', en: "The diamond's hardness makes it almost indestructible.", register: 'neutral' },
+    { es: 'Es un aceite denso, casi no se derrama.', en: "It's a dense oil, it barely spills.", register: 'neutral' },
+    { es: 'El cristal es precioso pero muy frágil.', en: "Glass is beautiful but very fragile.", register: 'neutral' },
+    { es: 'Este material resiste temperaturas extremas.', en: 'This material withstands extreme temperatures.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Es resistente.', en: "It's resistant.", note: 'incomplete — resistant to WHAT?' },
+    { es: 'Es resistente al agua.', en: "It's water-resistant.", note: 'complete — specifies the threat with "a"' }
+  ],
+  pitfalls: [
+    '<i>Resistencia/resistente</i> almost always needs its object specified with <i>a</i> — a bare claim of resistance is incomplete information.',
+    '<i>Denso, espeso, fluido</i> describe a scale of consistency for liquids/mixtures; do not use them interchangeably with <i>duro/blando</i>, which describe solids.'
+  ],
+  examples: [
+    { es: 'La tela tiene buena elasticidad.', en: 'The fabric has good stretch.' },
+    { es: 'El puente resistió el terremoto sin daños.', en: 'The bridge withstood the earthquake without damage.' },
+    { es: 'La salsa quedó demasiado espesa.', en: 'The sauce turned out too thick.' }
+  ],
+  probes: [
+    { id: 'p:consistresistB2:preposicion', kind: 'mcq', q: '¿Qué preposición sigue siempre a "resistencia/resistente"?',
+      options: ['de', 'a', 'con'], answer: 1 },
+    { id: 'p:consistresistB2:escala', kind: 'mcq', q: '¿Cuál describe una ESCALA de consistencia de líquidos?',
+      options: ['duro/blando', 'denso/fluido', 'frágil/resistente'], answer: 1 },
+    { id: 'p:consistresistB2:cloze', kind: 'cloze', text: 'Este reloj tiene resistencia ___ agua. (al)', accept: ['al'] },
+    { id: 'p:consistresistB2:recall', kind: 'recall', front: '¿Qué necesita siempre "resistencia" para estar completa?', back: 'especificar a qué resiste, con "a"' }
+  ]
+},
+
+{
+  id: 'nt-textura-acabado-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:733', 'nociones_generales:B2:734', 'nociones_generales:B2:735', 'nociones_generales:B2:736',
+         'nociones_generales:B2:742', 'nociones_generales:B2:744', 'nociones_generales:B2:745'],
+  title: 'Textura y acabado: áspero, arrugado, una mano de pintura',
+  summary: 'Two related surface vocabularies: adjectives for how something feels to the touch (áspero, peludo, arrugado), and nouns/verbs for a protective or decorative layer applied to a surface — "una mano" or "una capa" of something, never just "a coat" translated literally.',
+  sections: [
+    { h: 'Describing texture', html: '<i>Áspero</i> (rough), <i>peludo</i> (hairy/furry), <i>arrugado</i> (wrinkled/crumpled) describe how a surface feels or looks up close.' },
+    { h: 'Sentir/comprobar la textura', html: 'To check a texture by touch: <i>sentir/comprobar la textura</i>.' },
+    { h: 'Mano and capa: a layer applied', html: '<i>Una mano de pintura</i> (a coat of paint) and <i>una capa de barniz</i> (a layer of varnish) are the fixed way to talk about an applied finish — <i>mano</i> specifically for paint, <i>capa</i> more general.' },
+    { h: 'Verbs for protective finishes', html: '<i>Plastificar, impermeabilizar</i> name specific protective treatments; <i>estar bañado en oro/plata</i> describes a metal coating.' }
+  ],
+  exponents: [
+    { es: 'La tela estaba toda arrugada.', en: 'The fabric was all wrinkled.', register: 'neutral' },
+    { es: 'Es un animal muy peludo.', en: "It's a very furry animal.", register: 'coloquial' },
+    { es: 'Le dieron una mano de pintura a la fachada.', en: 'They gave the façade a coat of paint.', register: 'neutral' },
+    { es: 'Plastificaron el carnet para que durara más.', en: 'They laminated the ID card so it would last longer.', register: 'neutral' },
+    { es: 'El anillo está bañado en oro.', en: 'The ring is gold-plated.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Le dio una mano de pintura.', en: 'He gave it a coat of paint.', note: 'mano — specific to paint' },
+    { es: 'Le dio una capa de barniz.', en: 'He gave it a layer of varnish.', note: 'capa — more general, any layered finish' }
+  ],
+  pitfalls: [
+    'Do not translate "a coat of paint" literally with <i>abrigo</i> — the fixed word is <i>mano</i>.',
+    '<i>Impermeabilizar</i> (waterproof) is not the same as <i>plastificar</i> (laminate) — they name different protective treatments for different materials.'
+  ],
+  examples: [
+    { es: 'Tocó la tela para comprobar la textura.', en: 'He touched the fabric to check the texture.' },
+    { es: 'Impermeabilizaron el tejado antes del invierno.', en: 'They waterproofed the roof before winter.' },
+    { es: 'La medalla está bañada en plata.', en: 'The medal is silver-plated.' }
+  ],
+  probes: [
+    { id: 'p:texturaacabadoB2:mano', kind: 'mcq', q: '¿Qué palabra se usa para "una capa de pintura"?',
+      options: ['abrigo', 'mano', 'chaqueta'], answer: 1 },
+    { id: 'p:texturaacabadoB2:tratamiento', kind: 'mcq', q: '¿Qué verbo describe hacer algo resistente al agua?',
+      options: ['plastificar', 'impermeabilizar', 'teñir'], answer: 1 },
+    { id: 'p:texturaacabadoB2:cloze', kind: 'cloze', text: 'La tela estaba muy ___, había que plancharla. (arrugada)', accept: ['arrugada'] },
+    { id: 'p:texturaacabadoB2:recall', kind: 'recall', front: '¿Qué palabra se usa para "una capa de pintura" en la pared?', back: 'una mano de pintura' }
+  ]
+},
+
+{
+  id: 'nt-humedad-sequedad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:751', 'nociones_generales:B2:754', 'nociones_generales:B2:756', 'nociones_generales:B2:757',
+         'nociones_generales:B2:758', 'nociones_generales:B2:759', 'nociones_generales:B2:760'],
+  title: 'Humedad y sequedad: empapado, transpirar, en seco',
+  summary: 'A vocabulary that runs from a drought (sequía) to being soaked through (empapado), with a precise verb for each stage of water appearing, being absorbed, or disappearing — and the fixed phrase "en seco" for a process done without water at all.',
+  sections: [
+    { h: 'States of wetness', html: '<i>Empapado</i> (soaked through), <i>inundado</i> (flooded) describe extreme wetness; <i>sequía</i> names an extended lack of water/rain.' },
+    { h: 'The body and water', html: '<i>Transpirar, sudar</i> (to perspire, to sweat) and <i>(des)hidratarse</i> describe the body\'s relationship with moisture.' },
+    { h: 'Verbs for water appearing, absorbing, disappearing', html: '<i>Humedecer(se), empapar(se), inundar(se)</i> describe water arriving; <i>absorber</i> describes a material taking it in; <i>evaporarse</i> describes it disappearing.' },
+    { h: 'En seco: a process without water', html: '<i>Limpieza en seco</i> ("dry cleaning") is the fixed phrase for any process done without water.' }
+  ],
+  exponents: [
+    { es: 'La ropa estaba completamente empapada.', en: 'The clothes were completely soaked.', register: 'neutral' },
+    { es: 'La piel transpira para regular la temperatura corporal.', en: 'Skin perspires to regulate body temperature.', register: 'formal' },
+    { es: 'El agua se evaporó rápido con este calor.', en: 'The water evaporated quickly in this heat.', register: 'neutral' },
+    { es: 'Esta toalla absorbe muy bien el agua.', en: 'This towel absorbs water very well.', register: 'neutral' },
+    { es: 'Hay que llevarlo a limpieza en seco.', en: 'It needs to go to the dry cleaner.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Se humedeció la garganta con un sorbo de agua.', en: 'He moistened his throat with a sip of water.', note: 'humedecerse — mild wetting' },
+    { es: 'Se empapó de pies a cabeza bajo la lluvia.', en: 'He got soaked head to toe in the rain.', note: 'empaparse — thorough, extreme wetting' }
+  ],
+  pitfalls: [
+    'Do not confuse <i>humedecer</i> (a light dampening) with <i>empapar</i> (a thorough soaking) — they mark very different degrees on the same scale.',
+    '<i>En seco</i> as a fixed phrase means "without water/liquid" as a method — do not read it literally as just "dry".'
+  ],
+  examples: [
+    { es: 'El sudor le empapaba la camisa.', en: 'Sweat soaked his shirt.' },
+    { es: 'El río se desbordó e inundó el pueblo.', en: 'The river overflowed and flooded the town.' },
+    { es: 'Bebe agua para no deshidratarte con el calor.', en: 'Drink water so you don\'t get dehydrated in the heat.' }
+  ],
+  probes: [
+    { id: 'p:humedadsequedadB2:grado', kind: 'mcq', q: '¿Cuál implica MÁS agua?',
+      options: ['humedecerse', 'empaparse', 'ninguna diferencia'], answer: 1 },
+    { id: 'p:humedadsequedadB2:enseco', kind: 'mcq', q: '¿Qué significa "limpieza en seco"?',
+      options: ['Limpiar sin agua', 'Limpiar con mucha agua', 'No limpiar'], answer: 0 },
+    { id: 'p:humedadsequedadB2:cloze', kind: 'cloze', text: 'El agua se ___ con el calor. (evaporar)', accept: ['evapora'] },
+    { id: 'p:humedadsequedadB2:recall', kind: 'recall', front: '¿Qué verbo describe la piel liberando agua para enfriarse?', back: 'transpirar / sudar' }
+  ]
+},
+
+{
+  id: 'nt-materia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:768', 'nociones_generales:B2:769', 'nociones_generales:B2:770', 'nociones_generales:B2:773',
+         'nociones_generales:B2:774', 'nociones_generales:B2:775', 'nociones_generales:B2:776'],
+  title: 'Materia: estar fabricado con, contener un ingrediente',
+  summary: 'Naming what something is made of has two grammatical shapes: "estar fabricado con" for a manufactured object\'s materials, and "contener" for an ingredient present within a substance — not interchangeable, since a jacket is not "contained" and a shampoo is not "manufactured with" its ingredients in the same sense.',
+  sections: [
+    { h: 'Naming raw materials', html: '<i>Bronce, cobre, plomo</i> (metals), <i>mármol, cemento, ladrillo</i> (building materials), <i>cerámica, barro</i> (ceramics/clay) each name a specific substance.' },
+    { h: 'Estar fabricado con + material', html: 'The standard way to state a manufactured object\'s material(s): <i>Está fabricado con una mezcla de algodón y licra.</i>' },
+    { h: 'Contener + ingredient', html: 'For a substance\'s components rather than a solid object\'s material: <i>contener un elemento/un ingrediente</i>.' }
+  ],
+  exponents: [
+    { es: 'Está fabricado con una mezcla de algodón y licra.', en: "It's made from a blend of cotton and lycra.", register: 'formal' },
+    { es: 'Esta crema contiene manzanilla y avena.', en: 'This cream contains chamomile and oats.', register: 'neutral' },
+    { es: 'La estatua es de bronce.', en: 'The statue is bronze.', register: 'neutral' },
+    { es: 'Una vela de cera pura dura más.', en: 'A pure wax candle lasts longer.', register: 'neutral' },
+    { es: 'El edredón está relleno de plumas.', en: 'The duvet is filled with feathers.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'La chaqueta está fabricada con poliéster.', en: 'The jacket is made from polyester.', note: 'fabricado con — a manufactured object\'s material' },
+    { es: 'El champú contiene extracto de romero.', en: 'The shampoo contains rosemary extract.', note: 'contiene — an ingredient within a substance' }
+  ],
+  pitfalls: [
+    'Do not say <i>*la chaqueta contiene poliéster</i> — a manufactured solid object is <i>fabricado con</i>, not described as "containing" its material.',
+    '<i>Material</i> (general) and <i>materia prima</i> (specifically a RAW material, before processing) are not identical — a raw material becomes a material once processed.'
+  ],
+  examples: [
+    { es: 'Los cables son de cobre.', en: 'The cables are copper.' },
+    { es: 'El jabón contiene glicerina.', en: 'The soap contains glycerin.' },
+    { es: 'Esta pieza es de cerámica, no de plástico.', en: "This piece is ceramic, not plastic." }
+  ],
+  probes: [
+    { id: 'p:materiaB2:fabricadovscontiene', kind: 'mcq', q: '¿Cuál es correcta para una prenda de ropa?',
+      options: ['La camisa contiene algodón.', 'La camisa está fabricada con algodón.', 'Ambas son igual de naturales.'], answer: 1 },
+    { id: 'p:materiaB2:ingrediente', kind: 'mcq', q: '¿Qué verbo se usa para un ingrediente dentro de un producto?',
+      options: ['fabricar', 'contener', 'construir'], answer: 1 },
+    { id: 'p:materiaB2:cloze', kind: 'cloze', text: 'Esta crema ___ vitamina E. (contener)', accept: ['contiene'] },
+    { id: 'p:materiaB2:recall', kind: 'recall', front: '¿Qué patrón describe el material de un objeto manufacturado?', back: 'estar fabricado con + material' }
+  ]
+},
+
+{
+  id: 'nt-visibilidad-vision-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:786', 'nociones_generales:B2:791', 'nociones_generales:B2:793', 'nociones_generales:B2:795',
+         'nociones_generales:B2:797', 'nociones_generales:B2:801', 'nociones_generales:B2:802', 'nociones_generales:B2:803'],
+  title: 'Visibilidad y visión: a simple vista, distinguir, de lejos',
+  summary: 'Seeing well needs its own precision adverbs and fixed phrases — "a simple vista" flags an unaided, quick look that might be wrong, while "distinguir" claims you told two things apart, a stronger claim than merely "ver".',
+  sections: [
+    { h: 'Vista vs ciego', html: '<i>Vista</i> is the faculty of sight (<i>tengo buena vista</i>); <i>ciego</i> describes its total or partial absence.' },
+    { h: 'Distinguir: telling things apart', html: '<i>Distinguir</i> claims more than <i>ver</i> — it means successfully telling one thing apart from another, not just perceiving something is there.' },
+    { h: 'A primera/a simple vista: an unaided first look', html: 'This phrase flags a judgment made quickly, without close inspection — and often implies it could be wrong: <i>A simple vista, parece nuevo.</i>' },
+    { h: 'De cerca / de lejos', html: 'These mark distance for the act of seeing itself: <i>Mi madre no ve bien de cerca</i>, <i>La torre se ve de lejos.</i>' }
+  ],
+  exponents: [
+    { es: 'Afortunadamente tengo buena vista.', en: 'Fortunately I have good eyesight.', register: 'neutral' },
+    { es: 'A simple vista, parece un cuadro auténtico.', en: 'At first glance, it looks like an authentic painting.', register: 'neutral', note: 'implies the judgment might be wrong on closer inspection' },
+    { es: 'Desde aquí no distingo si es él o no.', en: "From here I can't tell if it's him or not.", register: 'coloquial' },
+    { es: 'La torre se ve de lejos.', en: 'The tower can be seen from far away.', register: 'neutral' },
+    { es: 'Está completamente ciego de nacimiento.', en: "He's been completely blind from birth.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Vi algo en la oscuridad.', en: 'I saw something in the dark.', note: 'ver — mere perception' },
+    { es: 'Distinguí una sombra de una persona.', en: 'I could tell a shadow apart from a person.', note: 'distinguir — successfully telling two things apart' }
+  ],
+  pitfalls: [
+    '<i>A simple vista</i> flags an UNVERIFIED first impression — using it to state a confirmed fact undersells your own certainty.',
+    '<i>Distinguir</i> is not a plain synonym for <i>ver</i> — it specifically claims the ability to tell things apart, which "ver" alone does not guarantee.'
+  ],
+  examples: [
+    { es: 'La oscuridad no dejaba distinguir nada.', en: 'The darkness made it impossible to make anything out.' },
+    { es: 'Se fijó en un pequeño detalle que a los demás se les había escapado.', en: 'He noticed a small detail everyone else had missed.' },
+    { es: 'A simple vista no se nota la diferencia.', en: "At first glance you can't tell the difference." }
+  ],
+  probes: [
+    { id: 'p:visibilidadB2:distinguir', kind: 'mcq', q: '¿Qué reclama "distinguir" que "ver" no reclama?',
+      options: ['Nada más', 'Diferenciar una cosa de otra con éxito', 'Ver de lejos'], answer: 1 },
+    { id: 'p:visibilidadB2:simplevista', kind: 'mcq', q: '"A simple vista, parece nuevo" implica...',
+      options: ['Una certeza total', 'Un juicio rápido que podría estar equivocado', 'Que es viejo'], answer: 1 },
+    { id: 'p:visibilidadB2:cloze', kind: 'cloze', text: 'La torre se ve muy bien de ___. (lejos)', accept: ['lejos'] },
+    { id: 'p:visibilidadB2:recall', kind: 'recall', front: '¿Qué frase marca un juicio hecho sin mirar de cerca?', back: 'a simple vista / a primera vista' }
+  ]
+},
+
+{
+  id: 'nt-audibilidad-audicion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:813', 'nociones_generales:B2:814', 'nociones_generales:B2:817', 'nociones_generales:B2:819',
+         'nociones_generales:B2:822', 'nociones_generales:B2:823', 'nociones_generales:B2:824'],
+  title: 'Audibilidad: sonar, a gritos, a todo volumen',
+  summary: 'A source of sound "suena" — the alarm, the phone, the doorbell — and a small set of fixed intensity phrases (a gritos, a todo volumen) describes HOW loud, distinct from the neutral verbs for hearing and recording.',
+  sections: [
+    { h: 'Sonar: the neutral verb for a sound source', html: '<i>Sonar</i> describes an alarm, phone or doorbell making its sound: <i>Sonó el timbre</i>, not the person who hears it.' },
+    { h: 'Sordo/mudo: opposite senses affected', html: '<i>Sordo</i> (deaf) affects hearing; <i>mudo</i> (mute) affects speech — <i>cine mudo</i> ("silent film") uses the second sense.' },
+    { h: 'Recording and describing pitch', html: '<i>Grabar</i> (to record); <i>sonido/tono grave/agudo</i> (low/high pitch) describe the character of a sound.' },
+    { h: 'Fixed intensity phrases', html: '<i>A gritos, a voces</i> (shouting); <i>a todo volumen</i> (at full volume) — set phrases for loudness.' }
+  ],
+  exponents: [
+    { es: 'De pronto sonó el timbre.', en: 'Suddenly the doorbell rang.', register: 'neutral' },
+    { es: 'Tengo unos vecinos que hablan a gritos todo el día.', en: 'I have neighbors who talk at the top of their lungs all day.', register: 'coloquial' },
+    { es: '¿Por qué siempre pones la música a todo volumen?', en: 'Why do you always play music at full blast?', register: 'coloquial' },
+    { es: 'Se quedó sordo tras el accidente.', en: 'He went deaf after the accident.', register: 'neutral' },
+    { es: 'Es buenísima la banda sonora de esa película.', en: "That film's soundtrack is really good.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Oí el timbre.', en: 'I heard the doorbell.', note: 'the LISTENER as subject' },
+    { es: 'Sonó el timbre.', en: 'The doorbell rang.', note: 'the SOUND SOURCE as subject' }
+  ],
+  pitfalls: [
+    '<i>Sonar</i> takes the sound source as its subject, not the listener — <i>*Sonaron el ruido en la calle</i> (with a person as subject) is a common error direction.',
+    '<i>Mudo</i> affects the ability to SPEAK, not to hear — do not confuse it with <i>sordo</i>.'
+  ],
+  examples: [
+    { es: 'La alarma sonó a las tres de la madrugada.', en: 'The alarm went off at three in the morning.' },
+    { es: 'Grabaron toda la entrevista en vídeo.', en: 'They recorded the whole interview on video.' },
+    { es: 'Su voz tiene un tono muy grave.', en: 'His voice has a very low pitch.' }
+  ],
+  probes: [
+    { id: 'p:audibilidadB2:sonarsujeto', kind: 'mcq', q: '¿Qué es el SUJETO de "sonar"?',
+      options: ['La persona que oye', 'La fuente del sonido', 'Ninguno'], answer: 1 },
+    { id: 'p:audibilidadB2:sordomudo', kind: 'mcq', q: '¿A qué afecta "mudo"?',
+      options: ['A la capacidad de oír', 'A la capacidad de hablar', 'A ambas'], answer: 1 },
+    { id: 'p:audibilidadB2:cloze', kind: 'cloze', text: 'De repente ___ la alarma. (sonar)', accept: ['sonó'] },
+    { id: 'p:audibilidadB2:recall', kind: 'recall', front: '¿Qué frase fija describe hablar muy alto?', back: 'a gritos / a voces' }
+  ]
+},
+
+{
+  id: 'nt-sabor-olor-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'alimentacion',
+  pcic: ['nociones_generales:B2:832', 'nociones_generales:B2:833', 'nociones_generales:B2:834', 'nociones_generales:B2:840',
+         'nociones_generales:B2:841', 'nociones_generales:B2:843'],
+  title: 'Sabor y olor: soso, agridulce, oler a',
+  summary: 'Taste and smell share one grammatical trick — "oler a + [noun]" names what something smells LIKE, not just that it has a smell — and a small cluster of taste adjectives (soso, insípido, agridulce) that a plain "no sabe a nada" cannot replace precisely.',
+  sections: [
+    { h: 'Taste adjectives beyond bueno/malo', html: '<i>Sabroso</i> (tasty), <i>insípido/soso</i> (bland/flavorless — soso more colloquial), <i>agrio</i> (sour), <i>agridulce</i> (sweet-and-sour) name specific taste qualities.' },
+    { h: 'Oler a + [noun]: naming what something smells like', html: '<i>Huele a quemado</i> ("it smells burnt") names the specific comparison — <i>oler a</i> always needs its object.' },
+    { h: 'Aroma vs olor', html: '<i>Aroma</i> is a pleasant, often deliberate smell (a perfume, coffee); <i>olor</i> is neutral, good or bad.' }
+  ],
+  exponents: [
+    { es: 'La sopa está muy sosa, le falta sal.', en: "The soup is very bland, it needs salt.", register: 'coloquial' },
+    { es: 'Esta salsa tiene un toque agridulce.', en: 'This sauce has a sweet-and-sour touch.', register: 'neutral' },
+    { es: 'Huele a quemado, ¿has dejado algo en el fuego?', en: 'It smells burnt, did you leave something on the stove?', register: 'coloquial', note: 'oler a + sustantivo' },
+    { es: 'El café tiene un aroma buenísimo.', en: 'The coffee has a wonderful aroma.', register: 'neutral' },
+    { es: 'Ese olor tan intenso me da dolor de cabeza.', en: 'That intense smell gives me a headache.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Tiene buen olor.', en: 'It smells good.', note: 'olor — neutral, can be good or bad' },
+    { es: 'Tiene un aroma delicioso.', en: 'It has a delicious aroma.', note: 'aroma — implies something pleasant/deliberate' }
+  ],
+  pitfalls: [
+    '<i>Oler a</i> always needs its object named: <i>huele a</i> + something, never a bare <i>*huele</i> to mean "smells like X" — that requires the "a".',
+    '<i>Soso</i> is markedly colloquial; <i>insípido</i> is the neutral/written equivalent — do not treat them as identical in register.'
+  ],
+  examples: [
+    { es: 'El limón es demasiado agrio para comerlo solo.', en: 'Lemon is too sour to eat on its own.' },
+    { es: 'La casa olía a pintura fresca.', en: 'The house smelled of fresh paint.' },
+    { es: 'Este plato es sabroso pero un poco picante.', en: "This dish is tasty but a bit spicy." }
+  ],
+  probes: [
+    { id: 'p:saborolorB2:olera', kind: 'mcq', q: '¿Qué necesita siempre "oler" para especificar a qué huele algo?',
+      options: ['de', 'a', 'con'], answer: 1 },
+    { id: 'p:saborolorB2:registro', kind: 'mcq', q: '¿Cuál es más COLOQUIAL para "sin sabor"?',
+      options: ['insípido', 'soso', 'ambas por igual'], answer: 1 },
+    { id: 'p:saborolorB2:cloze', kind: 'cloze', text: 'La casa huele ___ pintura fresca. (a)', accept: ['a'] },
+    { id: 'p:saborolorB2:recall', kind: 'recall', front: '¿"Olor" y "aroma" son sinónimos exactos?', back: 'no — "aroma" implica algo agradable' }
+  ]
+},
+
+{
+  id: 'nt-color-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:849', 'nociones_generales:B2:851', 'nociones_generales:B2:852', 'nociones_generales:B2:853',
+         'nociones_generales:B2:856', 'nociones_generales:B2:857', 'nociones_generales:B2:859'],
+  title: 'Color: tonos compuestos, ser de color, en blanco y negro',
+  summary: 'A compound color name — azul marino, verde limón, gris perla — is invariable as a whole unit, unlike a simple adjective, and reaching for a compound instead of a plain color word is what separates a precise description from a vague one.',
+  sections: [
+    { h: 'Compound color names are invariable', html: '<i>Azul marino, verde limón, gris perla</i> combine a base color with a reference noun, and the WHOLE phrase stays invariable regardless of the noun it describes: <i>unos zapatos azul marino</i>, not <i>*azules marinos</i>.' },
+    { h: 'Ser de color + [color]', html: 'The standard frame for stating color plainly: <i>Es de color naranja.</i>' },
+    { h: 'Color as mood/quality', html: '<i>Un color alegre/triste, brillante/mate, frío/cálido</i> extend color words metaphorically to describe a feeling or finish, not just the hue itself.' },
+    { h: 'Teñir and en blanco y negro', html: '<i>Teñir</i> means to dye; <i>en color</i> vs <i>en blanco y negro</i> distinguishes a color photo/film from a black-and-white one.' }
+  ],
+  exponents: [
+    { es: 'Es de color naranja.', en: "It's orange.", register: 'neutral' },
+    { es: 'Llevaba unos zapatos azul marino.', en: 'She was wearing navy blue shoes.', register: 'neutral', note: 'compound color, invariable' },
+    { es: 'Prefiero los colores cálidos para el salón.', en: 'I prefer warm colors for the living room.', register: 'neutral' },
+    { es: 'Se tiñó el pelo de rubio.', en: 'She dyed her hair blonde.', register: 'coloquial' },
+    { es: 'Esa película antigua está en blanco y negro.', en: "That old film is in black and white.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Unas cortinas verdes.', en: 'Green curtains.', note: 'simple color — agrees in gender/number' },
+    { es: 'Unas cortinas verde oliva.', en: 'Olive-green curtains.', note: 'compound color — the whole phrase stays invariable' }
+  ],
+  pitfalls: [
+    'A compound color (<i>azul marino, verde limón</i>) never agrees with its noun — <i>*camisas azules marinas</i> is wrong; it stays <i>camisas azul marino</i>.',
+    '<i>Teñir</i> means to dye (change a color deliberately); do not confuse it with <i>colorear</i> (to color in, e.g. a drawing).'
+  ],
+  examples: [
+    { es: 'Pintaron la pared de un tono gris perla.', en: 'They painted the wall a pearl-gray shade.' },
+    { es: 'Es un color mate, no brillante.', en: "It's a matte color, not shiny." },
+    { es: 'Combina bien estos dos tonos.', en: 'These two shades combine well.' }
+  ],
+  probes: [
+    { id: 'p:colorB2:compuesto', kind: 'mcq', q: '¿Cuál es correcta?',
+      options: ['unas camisas azules marinas', 'unas camisas azul marino', 'unas camisas azul marinas'], answer: 1 },
+    { id: 'p:colorB2:teñir', kind: 'mcq', q: '¿Qué significa "teñirse el pelo"?',
+      options: ['Cortarse el pelo', 'Cambiar el color del pelo', 'Peinarse'], answer: 1 },
+    { id: 'p:colorB2:cloze', kind: 'cloze', text: 'Es ___ color verde. (de)', accept: ['de'] },
+    { id: 'p:colorB2:recall', kind: 'recall', front: '¿Concuerda un color compuesto (azul marino) con el sustantivo?', back: 'no, permanece invariable' }
+  ]
+},
+
+{
+  id: 'nt-edad-vejez-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:864', 'nociones_generales:B2:866', 'nociones_generales:B2:868', 'nociones_generales:B2:870',
+         'nociones_generales:B2:871', 'nociones_generales:B2:872', 'nociones_generales:B2:877'],
+  title: 'Edad y vejez: recién + participio, fresco/podrido, estrenar',
+  summary: 'Two constructions do real work here: "recién + participio" marks something as just-completed (recién nacido, recién casado), and "estrenar" names the specific act of using or wearing something for the very first time — neither has a single-word English equivalent.',
+  sections: [
+    { h: 'Recién + participio', html: '<i>Recién nacido, recién casado, recién comprado, recién hecho</i> — "recién" marks the action as having JUST happened, always with a participle.' },
+    { h: 'Fresco vs podrido: food\'s age', html: '<i>Fresco</i> (fresh) and <i>podrido</i> (rotten) mark food at opposite ends of its useful life.' },
+    { h: 'Age descriptors for people', html: '<i>Maduro, anciano, de mediana edad</i> and <i>generación</i> (as in <i>la generación de mis padres</i>) place a person within a life stage.' },
+    { h: 'Estrenar: using something for the first time', html: '<i>Estrenar un vestido</i> ("to wear a dress for the first time"), <i>estrenarse una película</i> ("a film to premiere") — a single verb for a concept English needs a whole phrase for.' }
+  ],
+  exponents: [
+    { es: 'Es un recién nacido, solo tiene dos días.', en: "He's a newborn, he's only two days old.", register: 'neutral' },
+    { es: 'El pescado tiene que estar fresco.', en: 'The fish has to be fresh.', register: 'neutral' },
+    { es: 'Esa manzana ya está podrida, tírala.', en: "That apple is already rotten, throw it out.", register: 'coloquial' },
+    { es: 'Estrenó el vestido en la boda de su hermana.', en: "She wore the dress for the first time at her sister's wedding.", register: 'neutral' },
+    { es: 'Es un hombre maduro, de unos cincuenta años.', en: "He's a mature man, about fifty.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Compró un coche.', en: 'He bought a car.', note: 'no claim about whether it had been used before' },
+    { es: 'Estrenó el coche nuevo ese mismo día.', en: 'He drove the new car for the first time that same day.', note: 'estrenar — specifically the first use' }
+  ],
+  pitfalls: [
+    '<i>Recién</i> only combines with a PARTICIPLE — <i>*recién come</i> is not a valid construction; it must be <i>recién nacido, recién llegado</i>, etc.',
+    '<i>Estrenar</i> has no single-word English translation — do not try to force one; explain it as "to use/wear for the first time".'
+  ],
+  examples: [
+    { es: 'Los recién casados se fueron de luna de miel.', en: 'The newlyweds went on their honeymoon.' },
+    { es: 'La película se estrena el viernes.', en: 'The film premieres on Friday.' },
+    { es: 'Aparenta menos edad de la que tiene.', en: 'She looks younger than she is.' }
+  ],
+  probes: [
+    { id: 'p:edadvejezB2:recien', kind: 'mcq', q: '¿Qué categoría gramatical sigue siempre a "recién"?',
+      options: ['Un infinitivo', 'Un participio', 'Un sustantivo'], answer: 1 },
+    { id: 'p:edadvejezB2:estrenar', kind: 'mcq', q: '¿Qué significa "estrenar un vestido"?',
+      options: ['Comprarlo', 'Llevarlo por primera vez', 'Lavarlo'], answer: 1 },
+    { id: 'p:edadvejezB2:cloze', kind: 'cloze', text: 'Es un ___ nacido, tiene un día. (recién)', accept: ['recién'] },
+    { id: 'p:edadvejezB2:recall', kind: 'recall', front: '¿Qué verbo describe usar algo por primera vez?', back: 'estrenar' }
+  ]
 }
 
 ];
