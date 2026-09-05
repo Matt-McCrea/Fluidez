@@ -13760,6 +13760,193 @@ window.STRAND_LESSONS = [
     { id: 'p:desclugarA2:cloze', kind: 'cloze', text: 'Al fondo ___ una silla y una mesa. (haber)', accept: ['hay'] },
     { id: 'p:desclugarA2:recall', kind: 'recall', front: 'Qué añade la A2 al final, tras el recorrido por el lugar', back: 'una comparación con otros lugares conocidos' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 grammar stragglers (WORKLIST.md, section B1 · grammar)
+ * ========================================================================== */
+{
+  id: 'gr-nombres-propios-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:1', 'gramatica:B1:2', 'gramatica:B1:3', 'gramatica:B1:4', 'gramatica:B1:5', 'gramatica:B1:6', 'gramatica:B1:7'],
+  title: 'Familias, accidentes geográficos y títulos de obras',
+  summary: 'Three more proper-noun patterns beyond A1/A2: a surname pluralized only through its article, not its own ending; geographic features whose article is obligatory or merely traditional; and titles of works, which keep the grammatical gender of their own words rather than taking one from what they refer to.',
+  sections: [
+    { h: 'A family surname stays singular', html: 'To refer to a whole family, the article pluralizes but the surname itself never does: <i>los Fernández</i>, <i>los González</i> — never <i>*los Fernándeces</i>.' },
+    { h: 'Geographic features: obligatory vs traditional article', html: 'Rivers and mountain ranges keep the article always: <i>el Ebro</i>, <i>los Pirineos</i>, <i>el Teide</i>. Some country/region names carry an OPTIONAL, more traditional article that modern usage is dropping: <i>la China / China</i>, <i>el Japón / Japón</i>, <i>las Canarias / Canarias</i>.' },
+    { h: 'Titles keep their own grammar', html: 'A title\'s gender and number come from the words inside it, not from what it names: <i>Las Meninas</i> stays feminine plural (it is a painting, but the title itself is a plural noun phrase) and <i>Don Quijote de la Mancha</i> stays whatever "Don Quijote" is.' }
+  ],
+  contrasts: [
+    { es: 'Los García viven en el piso de arriba.', en: 'The Garcías live in the flat upstairs.', note: 'article pluralizes, surname does not' },
+    { es: 'El Teide está en Tenerife.', en: 'Mount Teide is in Tenerife.', note: 'geographic feature — article obligatory' },
+    { es: 'Ha viajado mucho por Japón. / Ha viajado mucho por el Japón.', en: "He's travelled a lot around Japan.", note: 'optional, traditional article — both correct, the second more old-fashioned' },
+    { es: 'Las Meninas es el cuadro más famoso de Velázquez.', en: 'Las Meninas is Velázquez\'s most famous painting.', note: 'title keeps its own (plural) grammar despite naming one painting' }
+  ],
+  pitfalls: [
+    'Never pluralize the surname itself for a family: <i>los Pérez</i>, not <i>*los Péreces</i> — the family plural lives entirely in the article.',
+    'Do not confuse the OPTIONAL traditional article (<i>la China/China</i>) with the truly obligatory one on geographic features (<i>el Ebro</i>) — dropping the latter is simply wrong, not just old-fashioned.',
+    'A title\'s own grammatical number can mismatch what it refers to — <i>Las Meninas</i> (plural title) is still just one painting; verbs agreeing with the title follow the TITLE\'s grammar: <i>Las Meninas está en el Prado</i> is also heard, but <i>Las Meninas es un cuadro...</i> treats the title as the name of a singular work.'
+  ],
+  examples: [
+    { es: 'Los Machado eran una familia de escritores.', en: 'The Machados were a family of writers.' },
+    { es: 'Los Pirineos separan España de Francia.', en: 'The Pyrenees separate Spain from France.' },
+    { es: 'Leímos Don Quijote de la Mancha en clase.', en: 'We read Don Quixote in class.' }
+  ],
+  probes: [
+    { id: 'p:sustpropiosB1:familia', kind: 'mcq', q: '¿Cuál es correcta para referirse a la familia García?',
+      options: ['los Garcías', 'los García', 'las García'], answer: 1 },
+    { id: 'p:sustpropiosB1:geografico', kind: 'mcq', q: '¿Cuál lleva artículo SIEMPRE obligatorio?',
+      options: ['el Teide', 'el Japón', 'la China'], answer: 0 },
+    { id: 'p:sustpropiosB1:cloze', kind: 'cloze', text: '___ Fernández viven aquí. (la familia)', accept: ['Los', 'los'] },
+    { id: 'p:sustpropiosB1:recall', kind: 'recall', front: '¿Se pluraliza el apellido de una familia, o solo el artículo?', back: 'solo el artículo — el apellido queda invariable' }
+  ]
+},
+
+{
+  id: 'gr-genero-especial-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:9', 'gramatica:B1:10', 'gramatica:B1:11', 'gramatica:B1:12', 'gramatica:B1:13'],
+  title: 'Nombres epicenos y cambio de género con cambio de significado',
+  summary: 'Two ways gender behaves unlike the simple masculine/feminine pairs learned so far: an epiceno noun keeps one fixed gender no matter who or what it refers to, and a handful of nouns change MEANING, not just gender, when you swap el for la — the same root naming a tree in one gender and its fruit in the other.',
+  sections: [
+    { h: 'Epicenos: one fixed gender, any referent', html: '<i>La persona</i>, <i>la víctima</i> are always grammatically feminine even naming a man. To specify the real sex when it matters, add a word: <i>el delfín macho</i>, <i>el delfín hembra</i> — the noun itself never changes.' },
+    { h: 'Gender change = meaning change', html: 'A small family of tree/fruit pairs uses masculine for the TREE and feminine for the FRUIT: <i>el manzano</i> (apple tree) / <i>la manzana</i> (the apple), <i>el naranjo</i> (orange tree) / <i>la naranja</i> (the orange). This is not free variation — the two words name different things.' },
+    { h: 'Invariable nouns: gender only visible on the article', html: 'A few nouns have one ending for both genders, so only <i>el/la</i> shows which: <i>el/la guía</i>, <i>el/la colega</i>, <i>el/la testigo</i>.' }
+  ],
+  contrasts: [
+    { es: 'La víctima del accidente era un hombre.', en: 'The accident victim was a man.', note: 'epiceno — "víctima" stays feminine regardless' },
+    { es: 'El manzano de mi abuela da muchas manzanas.', en: "My grandmother's apple tree gives a lot of apples.", note: 'el manzano = the tree, la manzana = the fruit' },
+    { es: 'Mi colega es muy simpática. / Mi colega es muy simpático.', en: 'My colleague is very nice.', note: 'same word, gender shown only by article and agreement' }
+  ],
+  pitfalls: [
+    'Do not invent a feminine <i>*persona/personoa</i> pair to match a male referent — epicenos are simply exceptions to "gender agrees with sex".',
+    '<i>El naranjo</i> and <i>la naranja</i> are not interchangeable stylistic variants; asking for <i>un naranjo</i> at a fruit stand asks for a tree, not fruit.',
+    'With <i>el/la testigo</i>, <i>el/la guía</i>, the ending gives no clue — only the article and any adjective agreement tell you the referent\'s gender.'
+  ],
+  examples: [
+    { es: 'La persona que llamó no dejó su nombre.', en: 'The person who called didn\'t leave their name.' },
+    { es: 'En el jardín hay un naranjo enorme.', en: "There's a huge orange tree in the garden." },
+    { es: 'El testigo declaró ante el juez.', en: 'The witness testified before the judge.' }
+  ],
+  probes: [
+    { id: 'p:generoB1:epiceno', kind: 'mcq', q: '"La víctima era un hombre." ¿Por qué "víctima" es femenino?',
+      options: ['Error del hablante', 'Es un nombre epiceno, género fijo', 'Porque el hombre parece mujer'], answer: 1 },
+    { id: 'p:generoB1:arbolfruta', kind: 'mcq', q: '¿Qué nombra "el naranjo"?',
+      options: ['La fruta', 'El árbol', 'El color naranja'], answer: 1 },
+    { id: 'p:generoB1:cloze', kind: 'cloze', text: 'Mi ___ es muy simpática. (colega, femenino)', accept: ['colega'] },
+    { id: 'p:generoB1:recall', kind: 'recall', front: 'Un nombre epiceno cambia de género según el sexo del referente: ¿verdadero o falso?', back: 'falso — mantiene un género fijo' }
+  ]
+},
+
+{
+  id: 'gr-numero-sustantivos-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:16', 'gramatica:B1:17', 'gramatica:B1:18', 'gramatica:B1:19'],
+  title: 'Singularia y pluralia tantum, y el plural en -y',
+  summary: 'Some nouns simply do not have the other number: sed and salud never pluralize, ganas and ojeras never appear alone in the singular — and neither gap is a rule you can predict, only one you learn noun by noun.',
+  sections: [
+    { h: 'Singularia tantum: no plural', html: 'Cardinal directions and a handful of abstract nouns exist only in the singular: <i>Norte, Sur, Este, Oeste</i>, <i>sed</i>, <i>salud</i>. <i>*Las sedes</i> for "thirsts" is not a word.' },
+    { h: 'Pluralia tantum: no singular', html: 'Some nouns exist only in the plural, even naming one single thing or feeling: <i>ganas</i> (as in <i>tengo ganas</i>), <i>facciones</i> (facial features), <i>ojeras</i> (under-eye circles) — there is no <i>*una gana</i> in this sense.' },
+    { h: 'Plural of nouns ending in -y', html: 'Nouns ending in a consonantal -y add -es and the y becomes part of a full syllable: <i>rey → reyes</i>, <i>ley → leyes</i>, <i>buey → bueyes</i>.' }
+  ],
+  contrasts: [
+    { es: 'Tengo mucha sed.', en: "I'm very thirsty.", note: 'singularia tantum — no plural exists' },
+    { es: 'Tiene ganas de salir.', en: 'She feels like going out.', note: 'pluralia tantum — no singular in this sense' },
+    { es: 'El rey y la reina llegaron juntos.', en: 'The king and queen arrived together.', note: 'singular rey' },
+    { es: 'Los reyes de España visitaron el museo.', en: 'The King and Queen of Spain visited the museum.', note: 'plural reyes — note the -es, not just -s' }
+  ],
+  pitfalls: [
+    'Do not force a plural onto <i>sed</i> or <i>salud</i> — <i>*tengo sedes</i> is not Spanish for "thirsts", it is the plural of a completely different word, <i>sede</i> (headquarters).',
+    '<i>Ganas</i> meaning desire/inclination has no natural singular — <i>tengo ganas</i>, never <i>*tengo una gana</i> in this sense (a different, rarer use of <i>gana</i> exists but is not this idiom).',
+    'Nouns ending in -y take a full extra syllable in the plural (<i>-es</i>), not just <i>-s</i>: <i>leyes</i>, not <i>*leys</i>.'
+  ],
+  examples: [
+    { es: 'Después de correr, tenía mucha sed.', en: 'After running, I was very thirsty.' },
+    { es: 'Se le notan las ojeras de no dormir.', en: "His under-eye circles from not sleeping are showing." },
+    { es: 'Los bueyes tiraban del carro.', en: 'The oxen were pulling the cart.' }
+  ],
+  probes: [
+    { id: 'p:numeroB1:singulariatantum', kind: 'mcq', q: '¿Cuál NO tiene plural?',
+      options: ['casa', 'salud', 'libro'], answer: 1 },
+    { id: 'p:numeroB1:pluraliatantum', kind: 'mcq', q: '¿Cuál se usa normalmente solo en plural?',
+      options: ['mesa', 'ganas (de hacer algo)', 'coche'], answer: 1 },
+    { id: 'p:numeroB1:cloze', kind: 'cloze', text: 'El ___ de España inauguró el museo. (rey)', accept: ['rey'] },
+    { id: 'p:numeroB1:recall', kind: 'recall', front: 'Plural de "ley" y "buey"', back: 'leyes, bueyes' }
+  ]
+},
+
+{
+  id: 'gr-adverbios-modo-cantidad-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:304', 'gramatica:B1:305', 'gramatica:B1:306', 'gramatica:B1:307', 'gramatica:B1:308',
+         'gramatica:B1:309', 'gramatica:B1:310', 'gramatica:B1:311', 'gramatica:B1:312', 'gramatica:B1:313',
+         'gramatica:B1:314', 'gramatica:B1:315', 'gramatica:B1:316'],
+  title: 'Adverbios de tiempo, cantidad y modo: posición y matiz',
+  summary: 'At B1 the interesting fact about these adverbs is not their meaning but their BEHAVIOR: some can move freely inside the verb phrase, some are pinned to one position, and poco vs un poco is a genuine choice between a complaint and a neutral fact, not two ways of saying the same thing.',
+  sections: [
+    { h: 'Deictic vs anaphoric time', html: '<i>Dentro de dos días</i> is deictic — measured from NOW, the moment of speaking. <i>La semana anterior</i>, <i>un día antes</i>, <i>dos días después</i> are anaphoric — measured from a reference point already set in the story, not from today. A narrative in the past uses the anaphoric set; a plan for the future uses the deictic one.' },
+    { h: 'Poco vs un poco: a real semantic choice', html: '<i>He estudiado poco</i> is a mild complaint — not enough. <i>He estudiado un poco</i> is neutral — some, a bit. Same activity, opposite framing.' },
+    { h: 'Position rules for manner adverbs', html: 'Plain <i>-mente</i> adverbs of action move fairly freely (<i>fácilmente lo hizo / lo hizo fácilmente</i>). Subjective ones like <i>estupendamente</i> sit after the verb or at the end. Resultative ones like <i>totalmente</i> are PINNED after the verb — <i>*Totalmente lo arruinó</i> is wrong.' }
+  ],
+  contrasts: [
+    { es: 'Dentro de dos días tengo un examen.', en: 'In two days I have an exam.', note: 'deictic — measured from today' },
+    { es: 'Llegó el lunes; dos días después, se marchó.', en: 'He arrived on Monday; two days later, he left.', note: 'anaphoric — measured from a point already set in the story' },
+    { es: 'He estudiado poco para el examen.', en: "I haven't studied much for the exam.", note: 'implies "not enough" — a mild complaint' },
+    { es: 'He estudiado un poco para el examen.', en: "I've studied a bit for the exam.", note: 'neutral — just states an amount' }
+  ],
+  pitfalls: [
+    'Do not use <i>dentro de dos días</i> inside a story set in the past to mean "two days later" — that meaning needs the anaphoric <i>dos días después</i>; <i>dentro de</i> only counts from the moment of speaking.',
+    'Resultative adverbs like <i>totalmente</i> cannot move to the front: <i>Lo arruinó totalmente</i>, never <i>*Totalmente lo arruinó</i>.',
+    '<i>Poco</i> and <i>un poco</i> are not free variants — swapping them changes whether the sentence reads as a complaint or a neutral report.'
+  ],
+  examples: [
+    { es: 'Últimamente duermo mal.', en: "Lately I've been sleeping badly." },
+    { es: 'La semana anterior habíamos hablado de esto.', en: 'The week before, we had talked about this.' },
+    { es: 'Encontré la tienda totalmente cerrada.', en: 'I found the shop completely closed.' }
+  ],
+  probes: [
+    { id: 'p:advmodocantB1:deicticoanaforico', kind: 'mcq', q: 'Contando una historia en pasado: "Llegó el lunes y ___ se marchó."',
+      options: ['dentro de dos días', 'dos días después', 'ahora mismo'], answer: 1 },
+    { id: 'p:advmodocantB1:pocomatiz', kind: 'mcq', q: '¿Cuál suena a queja, "no lo suficiente"?',
+      options: ['He estudiado un poco.', 'He estudiado poco.', 'He estudiado algo.'], answer: 1 },
+    { id: 'p:advmodocantB1:cloze', kind: 'cloze', text: 'Lo arruinó ___. (totalmente, posición fija tras el verbo)', accept: ['totalmente'] },
+    { id: 'p:advmodocantB1:recall', kind: 'recall', front: '¿Puede "totalmente" ir delante del verbo?', back: 'no — posición postverbal obligatoria' }
+  ]
+},
+
+{
+  id: 'gr-formas-no-personales-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  pcic: ['gramatica:B1:527', 'gramatica:B1:528', 'gramatica:B1:529', 'gramatica:B1:530', 'gramatica:B1:531',
+         'gramatica:B1:532', 'gramatica:B1:533', 'gramatica:B1:534', 'gramatica:B1:535', 'gramatica:B1:536',
+         'gramatica:B1:537', 'gramatica:B1:538', 'gramatica:B1:539', 'gramatica:B1:540', 'gramatica:B1:541',
+         'gramatica:B1:542', 'gramatica:B1:543'],
+  title: 'Usos independientes del infinitivo, gerundio y participio',
+  summary: 'Each non-finite form has a use that stands entirely on its own, without a conjugated verb anywhere nearby: the infinitive as a public instruction, the gerund as a one-word answer, the participle describing the state something was found or seen in. Recognizing these keeps a learner from hunting for a missing main verb that was never going to be there.',
+  sections: [
+    { h: 'Infinitive: whose action is it, and standing alone', html: 'When the same person wants and does something, the infinitive needs no separate subject: <i>Yo quiero ver una película</i> — "yo" controls both verbs. On signs and instructions, the infinitive gives a generalized command to anyone reading: <i>No fumar</i>, <i>Introducir 1 euro en la ranura</i>. It also fills an indirect question: <i>No sé si ir</i>, <i>No sé qué hacer</i>.' },
+    { h: 'Gerund: a complete answer, and giving directions', html: 'A gerund alone answers a question with no verb repeated: <i>—¿Qué haces? —Estudiando.</i> An unusual but real use gives directions with <i>estar</i>: <i>La cafetería está saliendo a la derecha</i> ("you\'ll come out to the cafeteria on the right"). Postposed, it can give the method: <i>Aprende leyendo</i> ("by reading").' },
+    { h: 'Participle: describing the state something was found in', html: 'A participle can complement a subject or an object with no other verb machinery: <i>Me miró satisfecho</i> (agrees with the subject, "he/she"), <i>Encontré la tienda cerrada</i> (agrees with the object, "la tienda").' }
+  ],
+  contrasts: [
+    { es: 'Yo quiero ver una película.', en: 'I want to watch a film.', note: 'same subject controls both verbs — no separate "que"' },
+    { es: 'No fumar.', en: 'No smoking.', note: 'infinitive as a generalized public instruction' },
+    { es: '—¿Qué haces? —Estudiando.', en: '—What are you doing? —Studying.', note: 'gerund alone, a complete answer' },
+    { es: 'Encontré la tienda cerrada.', en: 'I found the shop closed.', note: 'participle agrees with the object, "la tienda"' }
+  ],
+  pitfalls: [
+    'The independent infinitive on signs (<i>No fumar</i>) is impersonal and general — it is not simply a shortened imperative aimed at "tú"; it applies to anyone reading it.',
+    'A participle used this way must agree in gender and number with whatever it describes: <i>Me miró satisfecho</i> (masc. subject) vs <i>Me miró satisfecha</i> (fem. subject) vs <i>Encontré la puerta cerrada</i> (fem. object) — check which noun it is attached to.',
+    'Enclitic pronouns on an infinitive or gerund attach to the END and can require a written accent: <i>decírselo</i>, <i>explicándomelo</i> — dropping the accent on the gerund form is a common spelling error once two pronouns are attached.'
+  ],
+  examples: [
+    { es: 'No sé qué hacer con tanto tiempo libre.', en: 'I don\'t know what to do with so much free time.' },
+    { es: 'Hablé con Laura y estuvo explicándomelo todo.', en: 'I spoke with Laura and she was explaining it all to me.' },
+    { es: 'Me miró sorprendida cuando se lo conté.', en: 'She looked at me surprised when I told her.' }
+  ],
+  probes: [
+    { id: 'p:formasnopersB1:infinitivoindep', kind: 'mcq', q: '¿Qué tipo de instrucción es "No fumar" en un cartel?',
+      options: ['Una orden dirigida solo a "tú"', 'Una instrucción general, para cualquiera', 'Una pregunta'], answer: 1 },
+    { id: 'p:formasnopersB1:gerundiosolo', kind: 'mcq', q: '"—¿Qué haces? —___." (respuesta completa con gerundio)',
+      options: ['Estudio', 'Estudiando', 'Para estudiar'], answer: 1 },
+    { id: 'p:formasnopersB1:participioconcordancia', kind: 'cloze', text: 'Encontré la puerta ___. (cerrar, femenino)', accept: ['cerrada'] },
+    { id: 'p:formasnopersB1:recall', kind: 'recall', front: '¿Con qué palabra concuerda el participio en "Encontré la tienda cerrada"?', back: 'con "la tienda" (el objeto), no con el sujeto' }
+  ]
 }
 
 ];

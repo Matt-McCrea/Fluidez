@@ -184,25 +184,25 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción descriptiva: lugares** · 18 pts · `generos_discursivos A2 § 3.3. Macrofunción descriptiva: lug`  — gn-describir-lugar-a2
 - [x] **Macrofunción narrativa** · 29 pts · `generos_discursivos A2 § 3.4. Macrofunción narrativa`  — gn-narrar-anecdota-a2
 
-## B1 — lessons (135/175 done)
+## B1 — lessons (140/175 done)
 
-### B1 · grammar (18/23)
-- [ ] **Clases de sustantivos** · 7 pts · `gramatica B1 § 1.1. Clases de sustantivos`
-- [ ] **El género de los sustantivos** · 5 pts · `gramatica B1 § 1.2. El género de los sustantivos`
-- [ ] **El número de los sustantivos** · 4 pts · `gramatica B1 § 1.3. El número de los sustantivos`
+### B1 · grammar (23/23)
+- [x] **Clases de sustantivos** · 7 pts · `gramatica B1 § 1.1. Clases de sustantivos`  — gr-nombres-propios-b1
+- [x] **El género de los sustantivos** · 5 pts · `gramatica B1 § 1.2. El género de los sustantivos`  — gr-genero-especial-b1
+- [x] **El número de los sustantivos** · 4 pts · `gramatica B1 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b1
 - [x] **El artículo definido** · 19 pts · `gramatica B1 § 3.1. El artículo definido`  — gr-articulo-anaforico-escuetos-b1
 - [x] **Ausencia de determinación: los nombres escuetos** · 3 pts · `gramatica B1 § 3.3. Ausencia de determinación: lo`  — gr-articulo-anaforico-escuetos-b1
 - [x] **Los posesivos** · 13 pts · `gramatica B1 § `  — gr-posesivo-dativo-b1
 - [x] **Cuantificadores propios** · 28 pts · `gramatica B1 § 6.1. Cuantificadores propios`  — gr-indefinidos-negativos-b1
 - [x] **El pronombre personal** · 33 pts · `gramatica B1 § 7.1. El pronombre personal`  — gr-pronombres-combinados-b1
 - [x] **Los interrogativos** · 13 pts · `gramatica B1 § 7.3. Los interrogativos`  — gr-interrogativos-b1
-- [ ] **Adverbios nucleares o de predicado** · 19 pts · `gramatica B1 § 8.2. Adverbios nucleares o de pred`
+- [x] **Adverbios nucleares o de predicado** · 19 pts · `gramatica B1 § 8.2. Adverbios nucleares o de pred`  — gr-adverbios-modo-cantidad-b1
 - [x] **Adverbios del modus** · 6 pts · `gramatica B1 § 8.4. Adverbios del modus`  — gr-modalidad-b1
 - [x] **Adverbios relativos e interrogativos** · 7 pts · `gramatica B1 § 8.8. Adverbios relativos e interro`  — gr-adverbios-relativos-b1
 - [x] **Tiempos verbales de indicativo** · 51 pts · `gramatica B1 § 9.1. Tiempos verbales de indicativ`  — gr-pluscuamperfecto-b1
 - [x] **Tiempos verbales de subjuntivo** · 14 pts · `gramatica B1 § 9.2. Tiempos verbales de subjuntiv`  — gr-presente-subjuntivo-b1
 - [x] **El imperativo** · 8 pts · `gramatica B1 § 9.3. El imperativo`  — gr-imperativo-valores-b1
-- [ ] **Formas no personales del verbo** · 17 pts · `gramatica B1 § 9.4. Formas no personales del verb`
+- [x] **Formas no personales del verbo** · 17 pts · `gramatica B1 § 9.4. Formas no personales del verb`  — gr-formas-no-personales-b1
 - [x] **Complementos y modificadores** · 5 pts · `gramatica B1 § 10.2. Complementos y modificadores`  — gr-complementos-modificadores-b1
 - [x] **Complementos y modificadores** · 6 pts · `gramatica B1 § 11.2. Complementos y modificadores`  — gr-modificadores-adverbios-b1
 - [x] **El núcleo** · 21 pts · `gramatica B1 § 12.1. El núcleo`  — gr-perifrasis-verbales-b1
