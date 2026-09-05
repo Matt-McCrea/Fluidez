@@ -2228,6 +2228,84 @@ window.WRITING_TASKS = [
       { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
       { type: 'minWords', n: 6 }
     ],
-    models: ['La restauración tardó casi un año en completarse.'] }
+    models: ['La restauración tardó casi un año en completarse.'] },
+
+  /* ---- B2 writing, batch 4 of 8 ---- */
+  { id: 'p-ramadan-comosi-religion', type: 'paragraph', level: 6, theme: 'religion',
+    prompt: 'Write a paragraph about someone observing a religious practice with total dedication, using "como si" + imperfecto de subjuntivo.',
+    hint: '"como si" + imperfecto de subjuntivo; write at least three sentences.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'impsubj' },
+      { type: 'minSentences', n: 3 }
+    ],
+    models: ['Durante el Ramadán, mi vecino ayuna como si nunca hubiera comido en su vida. Organiza cada día alrededor del amanecer y la puesta de sol. Nunca se queja, aunque el calor del verano complique bastante el ayuno.'] },
+
+  { id: 'b2w-nombre-identidad-2', type: 'write', level: 6, theme: 'identidad',
+    prompt: 'Write about a family that reacted with surprise to a personal decision, but eventually came to accept it.',
+    hint: 'Include a concession with "aunque" or "a pesar de".',
+    constraints: [
+      { type: 'containsAny', words: ['aunque', 'a pesar de', 'sin embargo'] },
+      { type: 'minWords', n: 20 }
+    ],
+    models: ['Aunque al principio la familia se mostró bastante sorprendida, con el tiempo terminó aceptando la decisión sin mayor resistencia. Nadie esperaba un cambio de opinión tan rápido.'] },
+
+  { id: 'b2t-sinque-caracter', type: 'translate', level: 7, theme: 'caracter',
+    prompt: 'Translate: "He managed to calm everyone down without anyone noticing his own nervousness."',
+    hint: '"sin que" governs the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'sin que' },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['Consiguió calmar a todos sin que nadie notara su propio nerviosismo.'] },
+
+  { id: 'b2w-escalada-ocio', type: 'write', level: 6, theme: 'ocio',
+    prompt: 'Write, in a formal register, a short notice reminding club members to book a slot on the climbing wall in advance.',
+    hint: 'Address members as "ustedes", never "tú"; avoid the word "para" (it homographs a tú imperative) — use "con el fin de" instead.',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Los socios deben reservar su turno con antelación, con el fin de evitar aglomeraciones en el rocódromo durante las horas de mayor afluencia.'] },
+
+  { id: 'p-covivienda-vivienda', type: 'paragraph', level: 6, theme: 'vivienda',
+    prompt: 'Write a paragraph about a co-housing project: how it started, how it works now, and what you expect for its future.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Dos vecinas jubiladas propusieron la idea hace cinco años. Hoy, veintiséis personas comparten zonas comunes sin renunciar a su propio apartamento. Dentro de una década, probablemente habrá inspirado proyectos similares en otros barrios. Nadie imaginaba un éxito así al principio.'] },
+
+  { id: 'b2t-suscripcion-compras', type: 'translate', level: 6, theme: 'compras',
+    prompt: 'Translate: "In the end, they refunded it to me without any problem."',
+    hint: 'Use a double object pronoun: "me lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 4 }
+    ],
+    models: ['Al final, me lo reembolsaron sin ningún problema.'] },
+
+  { id: 'b2b-receta-alimentacion', type: 'build', level: 6, theme: 'alimentacion', en: 'My grandmother had already written that recipe down before I was born.',
+    answer: 'Mi abuela ya había escrito esa receta antes de que yo naciera.' },
+  { id: 'b2b-donante-cuerpo', type: 'build', level: 7, theme: 'cuerpo', en: 'It is essential that the donor be compatible with the patient.',
+    answer: 'Es fundamental que el donante sea compatible con el paciente.' },
+
+  { id: 'b2w-noticias-medios', type: 'write', level: 7, theme: 'medios',
+    prompt: 'Describe, in an impersonal register using "se", how a news story is typically fact-checked before publication.',
+    hint: 'Use "se" constructions throughout instead of naming who checks each fact.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Antes de publicarse, cada dato se contrasta con al menos dos fuentes independientes. Si se detecta alguna inconsistencia, se retrasa la publicación hasta que se resuelve la duda.'] },
+
+  { id: 'b2t-bateria-ciencia', type: 'translate', level: 6, theme: 'ciencia',
+    prompt: 'Translate, for a science magazine in a formal register: "The battery gradually loses capacity over time."',
+    hint: 'Avoid colloquial words; this is written for publication.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['La batería pierde capacidad gradualmente con el paso del tiempo.'] }
 
 ];
