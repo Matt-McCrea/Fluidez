@@ -184,7 +184,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción descriptiva: lugares** · 18 pts · `generos_discursivos A2 § 3.3. Macrofunción descriptiva: lug`  — gn-describir-lugar-a2
 - [x] **Macrofunción narrativa** · 29 pts · `generos_discursivos A2 § 3.4. Macrofunción narrativa`  — gn-narrar-anecdota-a2
 
-## B1 — lessons (169/175 done)
+## B1 — lessons (175/175 done)
 
 ### B1 · grammar (23/23)
 - [x] **Clases de sustantivos** · 7 pts · `gramatica B1 § 1.1. Clases de sustantivos`  — gr-nombres-propios-b1
@@ -354,10 +354,10 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Los valores modales de la entonación y de otros elementos ** · 7 pts · `tacticas_pragmaticas B1 § 2.4. Los valores modales de la ent`  — dc-entonacion-b1
 - [x] **Cortesía verbal atenuadora** · 15 pts · `tacticas_pragmaticas B1 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-b1
 
-### B1 · genre (9/15)
+### B1 · genre (15/15)
 - [x] **Lista alfabética de géneros orales y escritos** · 47 pts · `generos_discursivos B1 § 1.1. Lista alfabética de géneros o`  — gn-reconocer-generos-orales-b1
-- [ ] **Géneros de transmisión oral** · 17 pts · `generos_discursivos B1 § 1.2. Géneros de transmisión oral`
-- [ ] **Géneros de transmisión escrita** · 25 pts · `generos_discursivos B1 § 1.3. Géneros de transmisión escrit`
+- [x] **Géneros de transmisión oral** · 17 pts · `generos_discursivos B1 § 1.2. Géneros de transmisión oral`  — gn-generos-orales-b1
+- [x] **Géneros de transmisión escrita** · 25 pts · `generos_discursivos B1 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-b1
 - [x] **Conversación transaccional telefónica (Nivel B1)** · 17 pts · `generos_discursivos B1 § 2.1.1. Conversación transaccional `  — gn-llamada-transaccional-b1
 - [x] **Presentación pública (Nivel B1)** · 30 pts · `generos_discursivos B1 § 2.2.1. Presentación pública (Nivel`  — gn-presentacion-publica-b1
 - [x] **Presentación pública (Nivel B2)** · 33 pts · `generos_discursivos B1 § 2.2.2. Presentación pública (Nivel`  — gn-presentacion-publica-b2
@@ -365,10 +365,10 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Carta de solicitud de trabajo (Nivel B2)** · 22 pts · `generos_discursivos B1 § 2.3.2. Carta de solicitud de traba`  — gn-carta-solicitud-trabajo-b2
 - [x] **Composición escrita (Nivel B1)** · 7 pts · `generos_discursivos B1 § 2.4.1. Composición escrita (Nivel `  — gn-composicion-escrita-b1
 - [x] **Composición escrita (Nivel B2)** · 12 pts · `generos_discursivos B1 § 2.4.2. Composición escrita (Nivel `  — gn-composicion-argumentativa-b2
-- [ ] **Macrofunción descriptiva: personas** · 29 pts · `generos_discursivos B1 § 3.1. Macrofunción descriptiva: per`
-- [ ] **Macrofunción descriptiva: objetos** · 23 pts · `generos_discursivos B1 § 3.2. Macrofunción descriptiva: obj`
-- [ ] **Macrofunción descriptiva: lugares** · 21 pts · `generos_discursivos B1 § 3.3. Macrofunción descriptiva: lug`
-- [ ] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`
+- [x] **Macrofunción descriptiva: personas** · 29 pts · `generos_discursivos B1 § 3.1. Macrofunción descriptiva: per`  — gn-describir-persona-b1
+- [x] **Macrofunción descriptiva: objetos** · 23 pts · `generos_discursivos B1 § 3.2. Macrofunción descriptiva: obj`  — gn-describir-objeto-b1
+- [x] **Macrofunción descriptiva: lugares** · 21 pts · `generos_discursivos B1 § 3.3. Macrofunción descriptiva: lug`  — gn-describir-lugar-b1
+- [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
 ## B2 — lessons (38/204 done)

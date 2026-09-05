@@ -1061,6 +1061,8 @@ window.VERBS = [
 { inf:'pinchar', en:'to puncture, to prick', type:'ar' },
 { inf:'importar', en:'to import; to matter', type:'ar' },
 { inf:'interesar', en:'to interest', type:'ar' },
+{ inf:'proceder', en:'to come (from), to proceed', type:'er' },
+{ inf:'ordenar', en:'to tidy, to organize; to order', type:'ar' },
 { inf:'exportar', en:'to export', type:'ar' },
 { inf:'avisar', en:'to warn, to notify', type:'ar' },
 { inf:'fabricar', en:'to manufacture', type:'ar' },

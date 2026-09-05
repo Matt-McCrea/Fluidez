@@ -15058,6 +15058,250 @@ window.STRAND_LESSONS = [
     { id: 'p:atenB1:cloze', kind: 'cloze', text: '¿___ abrir la ventana, por favor? (condicional de cortesía, poder)', accept: ['Podrías', 'podrías'] },
     { id: 'p:atenB1:recall', kind: 'recall', front: '¿Qué tiempo verbal suaviza una pregunta sin cambiar cuándo ocurre, en "¿qué deseaba?"?', back: 'el imperfecto de cortesía' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 genre stragglers (WORKLIST.md, section B1 · genre) — completes B1
+ * ========================================================================== */
+{
+  id: 'gn-generos-orales-b1', strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  pcic: ['generos_discursivos:B1:101', 'generos_discursivos:B1:102', 'generos_discursivos:B1:103', 'generos_discursivos:B1:104',
+         'generos_discursivos:B1:105', 'generos_discursivos:B1:107', 'generos_discursivos:B1:108', 'generos_discursivos:B1:109',
+         'generos_discursivos:B1:110', 'generos_discursivos:B1:112', 'generos_discursivos:B1:113'],
+  title: 'Reconocer géneros orales: qué exige entender, qué exige producir',
+  summary: 'The Plan Curricular tags every genre with (R) for reception or (P) for production, and at B1 that distinction starts to matter practically: you are expected to UNDERSTAND a fast radio news bulletin, but only PRODUCE a short, prepared presentation on a familiar topic — conflating the two sets an unrealistic bar for yourself.',
+  sections: [
+    { h: 'Reception-only genres: understand, do not attempt to match', html: 'Radio weather bulletins, simple news broadcasts and formal discourse are (R) — reception only at B1. You are expected to extract the gist, not produce anything as dense or fast yourself.' },
+    { h: 'Production genres: shorter, more predictable', html: 'A brief prepared public presentation on a familiar topic, or a short informal telephone call about predictable matters, is (P) — you are expected to produce these, but only in their B1-scaled, predictable form.' },
+    { h: 'Both at once: the transactional call', html: 'A short transactional phone call (a booking, an appointment, a query) is tagged both (R) and (P) — you must follow it AND be able to carry it out yourself, which is why it gets the most practice time.' }
+  ],
+  moves: [
+    { h: 'Identificar la etiqueta R/P', html: 'Antes de practicar un género, pregúntate: ¿es algo que debo entender (R), producir (P), o ambas cosas? Un boletín meteorológico es (R): escúchalo para extraer el dato clave, no intentes replicar su velocidad.' },
+    { h: 'Ajustar el objetivo al género', html: 'Para un género (P) como una presentación breve, el objetivo es la claridad con vocabulario conocido, no la fluidez nativa. Para uno (R) como una entrevista médica, el objetivo es seguir el hilo, no memorizar cada palabra.' }
+  ],
+  model: {
+    title: 'Ejemplo: una llamada transaccional breve',
+    text: '—Buenos días, quería reservar una mesa para dos personas esta noche, por favor.\n—Sí, claro. ¿A qué hora?\n—Sobre las nueve, si es posible.\n—Perfecto, mesa para dos a las nueve. ¿A nombre de quién?\n—A nombre de Marín.\n—Muy bien, señor Marín. Le esperamos esta noche.\n—Muchas gracias, hasta luego.'
+  },
+  checklist: [
+    '¿Sabes si el género que estás practicando es (R), (P) o ambos?',
+    'Para un género de recepción, ¿te centras en el dato clave, no en cada palabra?',
+    'Para un género de producción, ¿mantienes el objetivo dentro de lo que B1 puede producir?'
+  ],
+  examples: [
+    { es: 'Buenas tardes, ¿podría confirmarme la reserva para el sábado?', en: 'Good afternoon, could you confirm my booking for Saturday?' },
+    { es: 'A continuación, el tiempo para mañana: cielos despejados en el norte.', en: "Next, tomorrow's weather: clear skies in the north." },
+    { es: 'Hoy quiero hablarles brevemente de mi experiencia como voluntario.', en: 'Today I want to talk to you briefly about my experience as a volunteer.' }
+  ],
+  probes: [
+    { id: 'p:generosoralesB1:rp', kind: 'mcq', q: 'Un informativo radiofónico rápido sobre noticias — ¿qué exige a B1?',
+      options: ['Producirlo tú mismo', 'Solo entenderlo (R)', 'Nada, está fuera de nivel'], answer: 1 },
+    { id: 'p:generosoralesB1:ambos', kind: 'mcq', q: '¿Qué género está etiquetado (R) Y (P) a la vez?',
+      options: ['Un discurso formal', 'Una llamada transaccional breve', 'Un informativo radiofónico'], answer: 1 },
+    { id: 'p:generosoralesB1:cloze', kind: 'cloze', text: 'Quería ___ una mesa para esta noche. (reservar)', accept: ['reservar'] },
+    { id: 'p:generosoralesB1:recall', kind: 'recall', front: '¿Qué marca (R) y (P) en la lista de géneros?', back: 'recepción (entender) y producción (producir)' }
+  ]
+},
+
+{
+  id: 'gn-generos-escritos-b1', strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  pcic: ['generos_discursivos:B1:137', 'generos_discursivos:B1:138', 'generos_discursivos:B1:139', 'generos_discursivos:B1:141',
+         'generos_discursivos:B1:144', 'generos_discursivos:B1:146', 'generos_discursivos:B1:149', 'generos_discursivos:B1:152',
+         'generos_discursivos:B1:153', 'generos_discursivos:B1:156'],
+  title: 'Reconocer géneros escritos: la forma predice el registro',
+  summary: 'A written genre\'s NAME already tells you its register before you read a word: a "carta al director" is always formal and argumentative, a "nota" is always brief and informal — guessing the register from the genre, before reading, is what lets you read efficiently and write appropriately from the first line.',
+  sections: [
+    { h: 'Formal, argued genres', html: 'A <i>carta al director</i> or a <i>carta formal</i> is always formal and usually argues a position — expect <i>usted</i>, structured paragraphs, no colloquialisms.' },
+    { h: 'Personal, informal genres', html: 'A <i>carta o mensaje electrónico personal</i>, a <i>nota</i> or a <i>diario</i> is informal by default — expect <i>tú</i>, first person, everyday vocabulary.' },
+    { h: 'Neutral, functional genres', html: 'A <i>receta</i>, an <i>informe breve</i> or a <i>cuestionario</i> is neutral and impersonal — the register is set by the genre\'s job (instructing, informing, asking), not by who is writing.' }
+  ],
+  moves: [
+    { h: 'Predecir el registro por el nombre del género', html: 'Antes de leer, nombra el género: ¿es una carta al director (formal, argumentativo), una nota (informal, breve) o una receta (neutro, funcional)? El nombre ya predice el tono.' },
+    { h: 'Confirmar con las primeras líneas', html: 'Las primeras palabras deberían confirmar tu predicción: si esperabas formalidad y ves "tío, qué pasada", el género no es el que pensabas.' }
+  ],
+  model: {
+    title: 'Ejemplo: carta al director',
+    text: 'Estimado director:\n\nLe escribo en relación con el artículo publicado el pasado lunes sobre el transporte público en nuestra ciudad. Considero que la situación descrita, aunque preocupante, no refleja las mejoras recientes en la frecuencia de los autobuses nocturnos.\n\nSería conveniente que, en próximas ediciones, se recogieran también las opiniones de los usuarios habituales, que percibimos una evolución positiva en el servicio.\n\nAtentamente,\nUna lectora habitual'
+  },
+  checklist: [
+    '¿Predijiste el registro (formal/informal/neutro) por el nombre del género antes de leer?',
+    '¿Las primeras líneas confirmaron esa predicción?',
+    'Si vas a escribir en ese género, ¿mantuviste el registro esperado durante todo el texto?'
+  ],
+  examples: [
+    { es: 'Biografía de extensión media: nació en 1975 en Sevilla y se trasladó a Madrid a los veinte años.', en: 'Medium-length biography: he was born in 1975 in Seville and moved to Madrid at twenty.' },
+    { es: 'Nota en la puerta: Vuelvo en 10 minutos.', en: 'Note on the door: Back in 10 minutes.' },
+    { es: 'Informe breve: a continuación se detallan los motivos del retraso.', en: 'Brief report: below are detailed the reasons for the delay.' }
+  ],
+  probes: [
+    { id: 'p:generosescritosB1:registro', kind: 'mcq', q: '¿Qué registro predices para una "carta al director"?',
+      options: ['Informal y breve', 'Formal y argumentativo', 'Neutro y funcional'], answer: 1 },
+    { id: 'p:generosescritosB1:neutro', kind: 'mcq', q: '¿Cuál es un género NEUTRO, cuyo registro depende de su función, no del autor?',
+      options: ['Un diario personal', 'Una receta de cocina', 'Una carta personal'], answer: 1 },
+    { id: 'p:generosescritosB1:cloze', kind: 'cloze', text: 'Estimado director: le ___ en relación con su artículo. (escribir)', accept: ['escribo'] },
+    { id: 'p:generosescritosB1:recall', kind: 'recall', front: '¿Qué predice el registro de un texto antes de leerlo?', back: 'el nombre del género' }
+  ]
+},
+
+{
+  id: 'gn-describir-persona-b1', strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  pcic: ['generos_discursivos:B1:720', 'generos_discursivos:B1:721', 'generos_discursivos:B1:722', 'generos_discursivos:B1:724',
+         'generos_discursivos:B1:725', 'generos_discursivos:B1:726', 'generos_discursivos:B1:727'],
+  title: 'Describir a una persona: objetivo vs subjetivo, y una anécdota narrada',
+  summary: 'B1 splits the same general-to-particular shape into two distinct voices — an objective description that reports facts, and a subjective one that openly judges and compares over time — and both can now carry a fully narrated anecdote inside them, not just a phrase.',
+  sections: [
+    { h: 'Objective viewpoint: facts, no judgment', html: 'An objective description anchors and lists traits factually: <i>Pedro tenía veinte años, era rubio y alto, tenía los ojos oscuros.</i> Comparison stays factual too: <i>No se parecía a otros chicos que yo conocía.</i>' },
+    { h: 'Subjective viewpoint: judgment and change over time', html: 'A subjective description openly judges appearance (<i>Tenía un aspecto horrible</i>) and can track how someone CHANGED: <i>Ahora Pedro ha cambiado: ha engordado, se ha cortado el pelo... Yo creo que, a pesar de todo, antes estaba mejor.</i>' },
+    { h: 'A fully narrated anecdote, not just a detail', html: 'B1 inserts a complete narrated scene, with its own preterite-driven mini-plot: <i>Un día, llegó una señora con unas tijeras. Quería cortarle el pelo, él se enfadó muchísimo... luego ella se fue (era su madre).</i>' }
+  ],
+  moves: [
+    { h: 'Anclaje (objetivo o subjetivo)', html: 'Decide el punto de vista antes de empezar: objetivo (<i>El año pasado conocí a Pedro en una librería</i>) o subjetivo (<i>Tenía un aspecto horrible</i>).' },
+    { h: 'Aspectualización con anécdota', html: 'Desarrolla los rasgos y, si aporta algo, incrusta una escena narrada completa con su propio conflicto y desenlace.' },
+    { h: 'Puesta en relación: comparar o valorar el cambio', html: 'Cierra comparando con otra persona (objetivo) o valorando cómo ha cambiado la persona con el tiempo (subjetivo).' }
+  ],
+  model: {
+    title: 'Pedro, antes y ahora',
+    text: 'El año pasado conocí a Pedro en una librería. Pedro tenía veinte años, era rubio y alto, tenía los ojos oscuros y la piel clara, sonreía siempre. Casi siempre llevaba ropa informal. Contaba muchos chistes y era muy amable. Además, no se parecía a otros chicos jóvenes que yo conocía entonces: Pedro era sincero y decía lo que pensaba.\n\nHace dos años, Pedro trabajaba de camarero y estaba siempre muy distraído. Tenía un aspecto horrible. Llevaba el pelo sucio y largo. La ropa le quedaba muy ancha y parecía muy vieja. Un día, llegó una señora con unas tijeras. Quería cortarle el pelo, él se enfadó muchísimo. La señora y él gritaron durante un rato, luego ella se fue (era su madre). Parecía un hippie de los años 60.\n\nAhora Pedro ha cambiado: ha engordado, se ha cortado el pelo, lleva traje y solo habla de dinero, parece un yuppie de los años 80. Yo creo que, a pesar de todo, antes estaba mejor.'
+  },
+  checklist: [
+    '¿Elegiste claramente un punto de vista, objetivo o subjetivo, y lo mantuviste?',
+    '¿La anécdota, si la hay, tiene su propio conflicto y desenlace, no solo un dato suelto?',
+    '¿Cerraste comparando o valorando el cambio con el tiempo?'
+  ],
+  examples: [
+    { es: 'Era un hombre de aspecto tranquilo, aunque algo tenía de inquietante.', en: 'He was a calm-looking man, though there was something unsettling about him.' },
+    { es: 'Con los años ha cambiado mucho: antes era tímido y ahora habla con cualquiera.', en: "He's changed a lot over the years: he used to be shy and now he talks to anyone." },
+    { es: 'De repente se puso a llorar sin motivo aparente.', en: 'Suddenly she started crying for no apparent reason.' }
+  ],
+  probes: [
+    { id: 'p:descpersonaB1:puntodevista', kind: 'mcq', q: '"Tenía un aspecto horrible" — ¿qué punto de vista es?',
+      options: ['Objetivo', 'Subjetivo', 'Ninguno'], answer: 1 },
+    { id: 'p:descpersonaB1:anecdota', kind: 'mcq', q: '¿Qué añade la anécdota de la señora con las tijeras?',
+      options: ['Un dato suelto', 'Una escena narrada con conflicto y desenlace', 'Nada, es un error'], answer: 1 },
+    { id: 'p:descpersonaB1:cloze', kind: 'cloze', text: 'Ahora Pedro ___ (cambiar mucho, pretérito perfecto).', accept: ['ha cambiado'] },
+    { id: 'p:descpersonaB1:recall', kind: 'recall', front: '¿Qué dos puntos de vista puede tomar una descripción de persona en B1?', back: 'objetivo y subjetivo' }
+  ]
+},
+
+{
+  id: 'gn-describir-objeto-b1', strand: 'genre', cefr: 'B1', level: 3, theme: 'alimentacion',
+  pcic: ['generos_discursivos:B1:776', 'generos_discursivos:B1:777', 'generos_discursivos:B1:778', 'generos_discursivos:B1:780',
+         'generos_discursivos:B1:781', 'generos_discursivos:B1:782', 'generos_discursivos:B1:783'],
+  title: 'Describir un objeto: origen objetivo o acertijo subjetivo',
+  summary: 'The same tomato can be described two ways: objectively, anchored in its origin and history, or subjectively, as a riddle that withholds the object\'s name until the end — and B1 can now embed a full childhood anecdote to justify a claim, not just a one-line aside.',
+  sections: [
+    { h: 'Objective: origin, then facts, then a cultural link', html: 'An objective description anchors in history (<i>El tomate procede de América del Sur. Lo trajo Colón.</i>), lists physical/use facts, then relates it to a wider cultural context: <i>En España es el ingrediente más importante del gazpacho.</i>' },
+    { h: 'Subjective: the riddle shape', html: 'A subjective description can withhold the object\'s identity, describing it as a puzzle: <i>Es una bola roja que está en todas las fruterías, pero no es una fruta.</i> The "aha" comes at the close: <i>...es un tomate.</i>' },
+    { h: 'A full anecdote justifying a claim', html: 'A childhood memory, fully narrated in the past, can back up a sensory claim: <i>Cuando era pequeña yo cogí un tomate con mucha fuerza... Pensé que era sangre y empecé a llorar. Mi madre me explicó que era zumo de tomate.</i>' }
+  ],
+  moves: [
+    { h: 'Anclaje (origen o acertijo)', html: 'Objetivo: sitúa el objeto en su origen e historia. Subjetivo: preséntalo como un acertijo, sin nombrarlo todavía.' },
+    { h: 'Aspectualización con anécdota', html: 'Añade rasgos concretos y, si aporta algo, una anécdota personal completa que justifique una afirmación sensorial.' },
+    { h: 'Puesta en relación', html: 'Objetivo: relaciónalo con un uso cultural (un plato, una tradición). Subjetivo: compáralo con otra cosa antes de revelar qué es.' }
+  ],
+  model: {
+    title: 'El tomate: dos formas de describirlo',
+    text: 'Objetivo: El tomate procede de América del Sur. Lo trajo Colón en sus viajes. Antes no existía en Europa. Crece en sitios húmedos y necesita sol. Tiene forma redonda, un poco plana por la parte superior, es rojo brillante, su piel es fina y envuelve la carne y las semillas. Se prepara de muchas formas: crudo, frito, asado y en zumo. En España es el ingrediente más importante del gazpacho, que es como una sopa fría muy refrescante.\n\nSubjetivo: Es una bola roja que está en todas las fruterías, pero no es una fruta. De lejos, su piel parece dura como el metal, pero si coges la bola roja con fuerza se rompe y sale mucha agua con semillas, te puedes manchar mucho. Cuando era pequeña yo cogí un tomate con mucha fuerza entre las dos manos. Mi vestido blanco cambió de color: era rojo y olía muy mal. Pensé que era sangre y empecé a llorar. Mi madre me explicó que era zumo de tomate. Es una bola como una naranja, pero es blanda como una esponja: es un tomate.'
+  },
+  checklist: [
+    '¿Elegiste un enfoque, origen objetivo o acertijo subjetivo, y lo mantuviste?',
+    '¿La anécdota, si la hay, es una escena completa, no solo una frase suelta?',
+    '¿Terminaste relacionando el objeto con un uso cultural o revelando el acertijo?'
+  ],
+  examples: [
+    { es: 'Este utensilio llegó a España en el siglo XIX y hoy está en todas las cocinas.', en: 'This utensil arrived in Spain in the 19th century and today is in every kitchen.' },
+    { es: 'Es blanco, frío al tacto, y todos lo tenemos en casa, pero no es un electrodoméstico.', en: "It's white, cold to the touch, and we all have one at home, but it's not an appliance." },
+    { es: 'De niño me quemé con uno y desde entonces le tengo respeto.', en: 'As a child I burned myself with one and I\'ve respected it ever since.' }
+  ],
+  probes: [
+    { id: 'p:descobjetoB1:enfoque', kind: 'mcq', q: '"Es una bola roja... pero no es una fruta" — ¿qué enfoque es?',
+      options: ['Objetivo, con origen histórico', 'Subjetivo, en forma de acertijo', 'Ninguno'], answer: 1 },
+    { id: 'p:descobjetoB1:anecdota', kind: 'mcq', q: '¿Qué función tiene la anécdota infantil del tomate?',
+      options: ['Ninguna, es un adorno', 'Justificar una afirmación sensorial (el color, el olor)', 'Dar el precio'], answer: 1 },
+    { id: 'p:descobjetoB1:cloze', kind: 'cloze', text: 'El tomate ___ de América del Sur. (proceder)', accept: ['procede'] },
+    { id: 'p:descobjetoB1:recall', kind: 'recall', front: '¿Cómo se llama la forma subjetiva que no nombra el objeto hasta el final?', back: 'un acertijo' }
+  ]
+},
+
+{
+  id: 'gn-describir-lugar-b1', strand: 'genre', cefr: 'B1', level: 3, theme: 'vivienda',
+  pcic: ['generos_discursivos:B1:824', 'generos_discursivos:B1:825', 'generos_discursivos:B1:826', 'generos_discursivos:B1:828',
+         'generos_discursivos:B1:829', 'generos_discursivos:B1:830', 'generos_discursivos:B1:831'],
+  title: 'Describir un lugar: razones objetivas, cariño subjetivo',
+  summary: 'B1 gives the anchor an explicit CAUSAL structure — "soleada por dos razones: por una parte... y por otra" — and lets the subjective version openly defend an odd home as perfect precisely because of the same features an objective observer might call flaws.',
+  sections: [
+    { h: 'Objective: causal anchor, then a systematic tour', html: 'The anchor gives reasons: <i>Mi vivienda... es muy soleada por dos razones: por una parte, tiene muchas ventanas... y por otra, vivo en el último piso.</i> The tour then moves systematically room by room, right/left.' },
+    { h: 'Subjective: defending the "flaws" as virtues', html: 'A subjective description can openly reframe what others might see as inconvenient: <i>Las características de mi casa podrían ser inconvenientes para otras personas... sin embargo para mí es la vivienda perfecta.</i>' },
+    { h: 'A narrated moment of feeling', html: 'A brief anecdote can capture a feeling tied to the place: <i>El otro día compré otra estantería... después miré desde la puerta y me sentí feliz. Pensé: «ahora está todo bien ordenado».</i>' }
+  ],
+  moves: [
+    { h: 'Anclaje causal', html: 'Da la cualidad principal CON su razón: <i>es soleada por dos razones: por una parte... y por otra...</i>' },
+    { h: 'Aspectualización: recorrido sistemático', html: 'Recorre el lugar de forma ordenada (a la derecha... a continuación... a la izquierda...), y añade una anécdota si aporta un sentimiento o un detalle memorable.' },
+    { h: 'Puesta en relación: defender lo distinto', html: 'Objetivo: compara con otras viviendas del edificio. Subjetivo: reconoce los posibles inconvenientes y los reencuadra como parte de lo que hace el lugar perfecto para ti.' }
+  ],
+  model: {
+    title: 'Mi vivienda: razones y cariño',
+    text: 'Mi vivienda es interior pero no es oscura, es muy soleada por dos razones: por una parte, tiene muchas ventanas que dan a un patio grande y, por otra, vivo en el último piso. Se entra por un pasillo estrecho, a los lados están repartidas todas las habitaciones. A la derecha está el aseo y, a continuación, el dormitorio. A la izquierda están la cocina y el salón. La cocina es importante para mí porque quiero ser cocinero y practico en mi casa.\n\nComo me gusta el orden, el otro día compré otra estantería para colocar algunas cosas y me puse a ordenarlo todo, después miré desde la puerta y me sentí feliz. Pensé: «ahora está todo bien ordenado».\n\nLas características de mi casa podrían ser inconvenientes para otras personas: caben pocos muebles y objetos, tiene una cocina enorme, como es el último piso hace más calor en verano y más frío en invierno, no se puede ver la calle desde dentro; sin embargo, para mí es la vivienda perfecta.'
+  },
+  checklist: [
+    '¿El anclaje da una razón explícita para la cualidad principal (por una parte... por otra...)?',
+    '¿El recorrido sigue un orden espacial claro (derecha/izquierda/al fondo)?',
+    '¿La puesta en relación reencuadra posibles defectos como parte de lo que hace el lugar valioso?'
+  ],
+  examples: [
+    { es: 'Es un piso ruidoso por dos motivos: está cerca de la avenida principal y tiene ventanas antiguas.', en: 'It\'s a noisy flat for two reasons: it\'s close to the main avenue and it has old windows.' },
+    { es: 'A otros les parecería pequeño, pero para mí lo pequeño lo hace acogedor.', en: 'Others might find it small, but for me the smallness makes it cosy.' },
+    { es: 'El día que colgué las cortinas nuevas, por fin sentí que era mi casa.', en: 'The day I hung the new curtains, I finally felt it was my home.' }
+  ],
+  probes: [
+    { id: 'p:desclugarB1:causal', kind: 'mcq', q: '¿Qué estructura da el anclaje objetivo en B1?',
+      options: ['Solo una lista', 'Una razón explícita (por una parte... por otra...)', 'Ninguna estructura'], answer: 1 },
+    { id: 'p:desclugarB1:reencuadre', kind: 'mcq', q: '¿Qué hace la puesta en relación subjetiva con los posibles defectos?',
+      options: ['Los oculta', 'Los reencuadra como parte de lo que hace el lugar perfecto', 'Los exagera para quejarse'], answer: 1 },
+    { id: 'p:desclugarB1:cloze', kind: 'cloze', text: 'Es soleada por dos razones: por una parte... y por ___... (otra)', accept: ['otra'] },
+    { id: 'p:desclugarB1:recall', kind: 'recall', front: '¿Qué conectores introducen las dos razones del anclaje causal?', back: 'por una parte... y por otra...' }
+  ]
+},
+
+{
+  id: 'gn-narrar-estructura-b1', strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  pcic: ['generos_discursivos:B1:868', 'generos_discursivos:B1:869', 'generos_discursivos:B1:870', 'generos_discursivos:B1:871',
+         'generos_discursivos:B1:872', 'generos_discursivos:B1:874', 'generos_discursivos:B1:876'],
+  title: 'La estructura de una anécdota: cinco partes, no una lista de hechos',
+  summary: 'A1/A2 could string past-tense sentences together; B1 expects a recognizable SHAPE underneath them — a calm opening, a complication that disrupts it, the action taken in response, a resolution, and a closing reflection — plus the skill of dropping a description or a piece of reported speech inside the story without breaking its flow.',
+  sections: [
+    { h: 'The five-part shape', html: '<b>Situación inicial</b> (calm, sets the scene) → <b>complicación</b> (something disrupts it) → <b>acción</b> (the response) → <b>resolución</b> (how it settled) → <b>situación final</b> (a closing reflection, often in the present: <i>Al final, todo acabó bien, aunque todavía me acuerdo de ese día</i>).' },
+    { h: 'Inserting a description', html: 'A narrated description of a person met mid-story slots inside the narrative without switching genre: <i>Cuando me desperté, vi a una mujer a mi lado, parecía extranjera y llevaba un bañador muy bonito.</i>' },
+    { h: 'Inserting reported speech', html: 'Dialogue folds into the narrative as indirect speech rather than a quoted exchange: <i>Me dijo que llevaba poco tiempo en España y que pensaba pasar las vacaciones aquí.</i>' }
+  ],
+  moves: [
+    { h: 'Situación inicial', html: 'Un contexto tranquilo, con imperfecto para el fondo: <i>El otro día fui a la playa... me tumbé en la arena... y me dormí.</i>' },
+    { h: 'Complicación', html: 'Algo interrumpe la calma, normalmente con pretérito: <i>De pronto, oí que alguien gritaba.</i>' },
+    { h: 'Acción y resolución', html: 'Lo que se hace y cómo se resuelve: <i>Empezamos a correr hacia la orilla... llamamos a la socorrista y ella sola le ayudó a salir.</i>' },
+    { h: 'Situación final', html: 'Un cierre reflexivo, a menudo en presente: <i>Al final, todo acabó bien, aunque todavía me acuerdo de ese día.</i>' }
+  ],
+  model: {
+    title: 'Un día en la playa',
+    text: 'El otro día fui a la playa para hacer ejercicio y me puse a nadar un rato, después me tumbé en la arena porque estaba cansada y me dormí. Cuando me desperté, vi a una mujer a mi lado, parecía extranjera y llevaba un bañador muy bonito, de muchos colores. Ella no estaba tumbada, como yo, estaba sentada en una silla. Empezamos a hablar. Me dijo que llevaba poco tiempo en España y que pensaba pasar las vacaciones aquí.\n\nDe pronto, oí que alguien gritaba. Pensé que eran unos niños que estaban jugando cerca, pero luego vi que era un chico que estaba en el agua. Entonces, la mujer y yo nos miramos y empezamos a correr hacia la orilla.\n\nEl chico estaba a unos 100 metros, entonces llamamos a la socorrista y ella sola le ayudó a salir. Era un chico joven. Más tarde, el chico estaba tumbado en la arena y la socorrista estaba sobre él.\n\nAl final, todo acabó bien, aunque todavía me acuerdo de ese día.'
+  },
+  checklist: [
+    '¿Se distinguen las cinco partes: inicial, complicación, acción, resolución, final?',
+    '¿La descripción de alguien insertada usa imperfecto, sin detener la acción principal?',
+    '¿El diálogo se incorpora en estilo indirecto (me dijo que...), no como cita literal?'
+  ],
+  examples: [
+    { es: 'Aquella tarde todo estaba muy tranquilo hasta que sonó la alarma.', en: 'That afternoon everything was very calm until the alarm went off.' },
+    { es: 'Me contó que había perdido el vuelo y que tendría que esperar hasta el día siguiente.', en: 'He told me he had missed his flight and would have to wait until the next day.' },
+    { es: 'Al final resultó que todo había sido un malentendido.', en: 'In the end it turned out it had all been a misunderstanding.' }
+  ],
+  probes: [
+    { id: 'p:narrestructB1:partes', kind: 'mcq', q: '¿Qué parte interrumpe la calma inicial?',
+      options: ['Situación inicial', 'Complicación', 'Situación final'], answer: 1 },
+    { id: 'p:narrestructB1:estiloindirecto', kind: 'mcq', q: '¿Cómo se incorpora un diálogo dentro de la anécdota en B1?',
+      options: ['Como cita literal con comillas', 'En estilo indirecto (me dijo que...)', 'No se incorpora'], answer: 1 },
+    { id: 'p:narrestructB1:cloze', kind: 'cloze', text: 'Me dijo que ___ (llevar) poco tiempo en España. (estilo indirecto)', accept: ['llevaba'] },
+    { id: 'p:narrestructB1:recall', kind: 'recall', front: 'Las cinco partes de la estructura narrativa B1, en orden', back: 'situación inicial, complicación, acción, resolución, situación final' }
+  ]
 }
 
 ];
