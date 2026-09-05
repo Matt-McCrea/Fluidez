@@ -371,7 +371,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (189/204 done)
+## B2 — lessons (204/204 done)
 
 ### B2 · grammar (26/26)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
@@ -569,23 +569,23 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Desplazamiento de la perspectiva temporal** · 5 pts · `tacticas_pragmaticas B2 § 2.5. Desplazamiento de la perspect`  — dc-perspectiva-temporal-b2
 - [x] **Cortesía verbal atenuadora** · 31 pts · `tacticas_pragmaticas B2 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-b2
 
-### B2 · genre (1/16)
+### B2 · genre (16/16)
 - [x] **Lista alfabética de géneros orales y escritos** · 49 pts · `generos_discursivos B2 § 1.1. Lista alfabética de géneros o`  — gn-reclamacion-b2
-- [ ] **Géneros de transmisión oral** · 20 pts · `generos_discursivos B2 § 1.2. Géneros de transmisión oral`
-- [ ] **Géneros de transmisión escrita** · 29 pts · `generos_discursivos B2 § 1.3. Géneros de transmisión escrit`
-- [ ] **Conversación transaccional telefónica (Nivel B1)** · 26 pts · `generos_discursivos B2 § 2.1.1. Conversación transaccional `
-- [ ] **Presentación pública (Nivel B1)** · 43 pts · `generos_discursivos B2 § 2.2.1. Presentación pública (Nivel`
-- [ ] **Presentación pública (Nivel B2)** · 39 pts · `generos_discursivos B2 § 2.2.2. Presentación pública (Nivel`
-- [ ] **Carta personal (Nivel B1)** · 18 pts · `generos_discursivos B2 § 2.3.1. Carta personal (Nivel B1)`
-- [ ] **Carta de solicitud de trabajo (Nivel B2)** · 40 pts · `generos_discursivos B2 § 2.3.2. Carta de solicitud de traba`
-- [ ] **Composición escrita (Nivel B1)** · 11 pts · `generos_discursivos B2 § 2.4.1. Composición escrita (Nivel `
-- [ ] **Composición escrita (Nivel B2)** · 19 pts · `generos_discursivos B2 § 2.4.2. Composición escrita (Nivel `
-- [ ] **Macrofunción descriptiva: personas** · 27 pts · `generos_discursivos B2 § 3.1. Macrofunción descriptiva: per`
-- [ ] **Macrofunción descriptiva: objetos** · 25 pts · `generos_discursivos B2 § 3.2. Macrofunción descriptiva: obj`
-- [ ] **Macrofunción descriptiva: lugares** · 24 pts · `generos_discursivos B2 § 3.3. Macrofunción descriptiva: lug`
-- [ ] **Macrofunción narrativa** · 29 pts · `generos_discursivos B2 § 3.4. Macrofunción narrativa`
-- [ ] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`
-- [ ] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`
+- [x] **Géneros de transmisión oral** · 20 pts · `generos_discursivos B2 § 1.2. Géneros de transmisión oral`  — gn-generos-orales-b2
+- [x] **Géneros de transmisión escrita** · 29 pts · `generos_discursivos B2 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-b2
+- [x] **Conversación transaccional telefónica (Nivel B1)** · 26 pts · `generos_discursivos B2 § 2.1.1. Conversación transaccional `  — gn-llamada-transaccional-b2
+- [x] **Presentación pública (Nivel B1)** · 43 pts · `generos_discursivos B2 § 2.2.1. Presentación pública (Nivel`  — gn-presentacion-publica-b1
+- [x] **Presentación pública (Nivel B2)** · 39 pts · `generos_discursivos B2 § 2.2.2. Presentación pública (Nivel`  — gn-presentacion-publica-b2
+- [x] **Carta personal (Nivel B1)** · 18 pts · `generos_discursivos B2 § 2.3.1. Carta personal (Nivel B1)`  — gn-carta-personal-b1
+- [x] **Carta de solicitud de trabajo (Nivel B2)** · 40 pts · `generos_discursivos B2 § 2.3.2. Carta de solicitud de traba`  — gn-carta-solicitud-trabajo-b2
+- [x] **Composición escrita (Nivel B1)** · 11 pts · `generos_discursivos B2 § 2.4.1. Composición escrita (Nivel `  — gn-composicion-escrita-b1
+- [x] **Composición escrita (Nivel B2)** · 19 pts · `generos_discursivos B2 § 2.4.2. Composición escrita (Nivel `  — gn-composicion-argumentativa-b2
+- [x] **Macrofunción descriptiva: personas** · 27 pts · `generos_discursivos B2 § 3.1. Macrofunción descriptiva: per`  — gn-descriptiva-personas-b2
+- [x] **Macrofunción descriptiva: objetos** · 25 pts · `generos_discursivos B2 § 3.2. Macrofunción descriptiva: obj`  — gn-descriptiva-objetos-b2
+- [x] **Macrofunción descriptiva: lugares** · 24 pts · `generos_discursivos B2 § 3.3. Macrofunción descriptiva: lug`  — gn-descriptiva-lugares-b2
+- [x] **Macrofunción narrativa** · 29 pts · `generos_discursivos B2 § 3.4. Macrofunción narrativa`  — gn-narrativa-b2
+- [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
+- [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
 ## C1 — lessons (5/202 done)
 

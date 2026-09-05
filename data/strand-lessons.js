@@ -21131,6 +21131,390 @@ window.STRAND_LESSONS = [
     { id: 'p:atenB2:cloze', kind: 'cloze', text: '___ hace lo que puede con los medios que tiene. (3ª persona despersonalizadora)', accept: ['Uno'] },
     { id: 'p:atenB2:recall', kind: 'recall', front: '¿Qué función tiene un enunciado preliminar como "¿me aceptas un consejo?"?', back: 'anunciar cortésmente un acto que podría amenazar la imagen del oyente, antes de cometerlo' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 genre: the two genre catalogs (transmisión oral/escrita) and the
+ * six macrofunciones. The four "(Nivel B1)/(Nivel B2)" muestra items
+ * (presentación pública, carta personal/solicitud, composición escrita)
+ * duplicate — with more points, per the PCIC's cumulative per-level inventory
+ * — subsections already fully covered by gn-presentacion-publica-b1/-b2,
+ * gn-carta-personal-b1, gn-carta-solicitud-trabajo-b2, gn-composicion-
+ * escrita-b1 and gn-composicion-argumentativa-b2 (ticked here by reuse,
+ * exactly as the B1 chapter already reused two of those same B2-tagged
+ * lessons for its own "(Nivel B2)" lines).
+ * ========================================================================== */
+{
+  id: 'gn-llamada-transaccional-b2', strand: 'genre', cefr: 'B2', level: 6, theme: 'viajes',
+  pcic: ['generos_discursivos:B2:189', 'generos_discursivos:B2:193', 'generos_discursivos:B2:195', 'generos_discursivos:B2:196',
+         'generos_discursivos:B2:200', 'generos_discursivos:B2:202', 'generos_discursivos:B2:204', 'generos_discursivos:B2:205',
+         'generos_discursivos:B2:206', 'generos_discursivos:B2:209', 'generos_discursivos:B2:211', 'generos_discursivos:B2:213',
+         'generos_discursivos:B2:215', 'generos_discursivos:B2:216', 'generos_discursivos:B2:229'],
+  title: 'La llamada telefónica transaccional (B2): una cadena más larga',
+  summary: 'A B2 booking call chains several rounds of new-information-then-question in a row — not just one comparison, but a whole sequence where each answer opens the next question — and keeps a consistently formal "usted" register throughout, from the very first "dígame" to the final "que tenga un buen día".',
+  sections: [
+    { h: 'Una cadena más larga de preguntas y respuestas', html: 'A B1 call typically compares one pair of options; a B2 call chains several: schedule, then price, then differences between options, then a personal preference, then a follow-up about payment — each answer opening a new question rather than closing the exchange.' },
+    { h: 'Registro "usted" sostenido de principio a fin', html: 'A transactional call at this level keeps a consistently formal register throughout — <i>dígame, ¿usted cuál me recomienda?, es usted muy amable</i> — never sliding into a more casual tone even as the exchange gets longer and friendlier.' },
+    { h: 'Un giro final, después de cerrar el asunto principal', html: 'Even after the main booking is settled and thanks exchanged, a genuinely transactional call often reopens with one more practical question (<i>Perdone, ¿puedo pagar el billete con tarjeta?</i>) before the real goodbye.' }
+  ],
+  moves: [
+    { h: 'Identificarse y responder al teléfono formalmente', html: '<i>Estación de autobuses, le atiende Pedro Cortés, dígame.</i>' },
+    { h: 'Encadenar pregunta tras pregunta', html: 'Horario, luego precio, luego diferencias entre opciones, luego preferencia personal — cada respuesta abre la siguiente pregunta en vez de cerrar el intercambio.' },
+    { h: 'Pedir consejo y expresar preferencia', html: '<i>¿Usted cuál me recomienda? —Si va en el primero podrá pasear un poco; si va en el segundo llegará antes. ¿Usted qué prefiere?</i>' },
+    { h: 'Cerrar, y reabrir con un último detalle práctico', html: 'Tras el agradecimiento y la despedida iniciada, una pregunta práctica de último momento (el pago, un horario) es normal antes del adiós definitivo.' }
+  ],
+  model: {
+    title: 'Reservando un billete de autobús',
+    text: '—Estación de autobuses, le atiende Pedro Cortés, dígame.\n—Buenos días. ¿Hay autobuses desde Madrid hasta Granada?\n—Sí, todos los días.\n—¿Hay un autobús todos los días, o solo entre semana?\n—Bueno, en realidad, hay dos de lunes a viernes y uno el sábado y el domingo. El primero sale de Madrid a las siete de la mañana y tarda cinco horas, con dos paradas por el camino. El segundo sale a las siete de la tarde y tarda tres horas y media, sin paradas.\n—¿Los autobuses son iguales? ¿El billete cuesta lo mismo? Usted, ¿cuál me recomienda?\n—Los dos son igual de rápidos y cómodos, y el billete cuesta lo mismo: treinta euros solo ida. La única diferencia son las paradas: si va en el primero podrá pasear un poco y tomar algo; si va en el segundo llegará antes. ¿Usted qué prefiere?\n—Prefiero tardar un poco más. ¿Puedo reservar el billete por teléfono?\n—Sí, le reservamos su billete hasta dos horas antes de la salida.\n—Estupendo. Es usted muy amable, muchas gracias por su información.\n—De nada, ha sido un placer.\n—Perdone, una cosa más: ¿puedo pagar el billete con tarjeta?\n—Sí, no hay problema.\n—De acuerdo, gracias. Buenos días.'
+  },
+  checklist: [
+    '¿Encadena varias preguntas seguidas, cada una abierta por la respuesta anterior?',
+    '¿Mantiene el registro "usted" de forma consistente durante toda la llamada?',
+    '¿Incluye una petición de consejo y una preferencia personal, no solo datos?',
+    '¿Reabre con un último detalle práctico después de haber empezado a despedirse?'
+  ],
+  examples: [
+    { es: '¿Hay un autobús todos los días, o solo entre semana?', en: 'Is there a bus every day, or only on weekdays?' },
+    { es: 'La única diferencia son las paradas. ¿Usted qué prefiere?', en: 'The only difference is the stops. What do you prefer?' },
+    { es: 'Perdone, una cosa más: ¿puedo pagar con tarjeta?', en: 'Sorry, one more thing: can I pay by card?' }
+  ],
+  probes: [
+    { id: 'p:llamadatransb2:cadena', kind: 'mcq', q: '¿Qué distingue la cadena de preguntas de una llamada B2 frente a una B1 más simple?',
+      options: ['Es más corta', 'Cada respuesta abre una nueva pregunta, en una cadena más larga', 'No hay preguntas'], answer: 1 },
+    { id: 'p:llamadatransb2:registro', kind: 'mcq', q: '¿Qué registro se mantiene de principio a fin en esta llamada?',
+      options: ['Coloquial con tú', 'Formal con usted', 'Cambia constantemente'], answer: 1 },
+    { id: 'p:llamadatransb2:cloze', kind: 'cloze', text: 'Estación de autobuses, le ___ Pedro Cortés, dígame. (atender)', accept: ['atiende'] },
+    { id: 'p:llamadatransb2:recall', kind: 'recall', front: '¿Qué es normal que ocurra justo después de empezar a despedirse en una llamada transaccional?', back: 'reabrir con un último detalle práctico (pago, horario) antes del adiós definitivo' }
+  ]
+},
+
+{
+  id: 'gn-generos-orales-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  pcic: ['generos_discursivos:B2:114', 'generos_discursivos:B2:117', 'generos_discursivos:B2:118', 'generos_discursivos:B2:119',
+         'generos_discursivos:B2:120', 'generos_discursivos:B2:121', 'generos_discursivos:B2:122', 'generos_discursivos:B2:123',
+         'generos_discursivos:B2:124', 'generos_discursivos:B2:125', 'generos_discursivos:B2:126', 'generos_discursivos:B2:127',
+         'generos_discursivos:B2:128'],
+  title: 'Géneros orales en B2: qué debes entender, qué debes producir',
+  summary: 'B2 adds a genuinely high-stakes production genre B1 never asked for — the job interview as interviewee — while dense, specialized genres like documentaries, lectures and press interviews stay reception-only: the Plan Curricular still expects you to follow them, never to match their density yourself.',
+  sections: [
+    { h: 'Solo recepción: lo denso y lo especializado', html: 'Documentales de televisión, discursos y conferencias sobre temas abstractos y entrevistas periodísticas quedan en (R) — se espera que extraigas la idea, no que produzcas nada tan denso tú mismo.' },
+    { h: 'Producción de alto riesgo: la entrevista de trabajo', html: 'Por primera vez aparece una producción exigente y personal: la entrevista de trabajo como entrevistado (P) — debes sostener un intercambio formal e improvisado sobre ti mismo.' },
+    { h: 'Recepción y producción a la vez', html: 'Los debates públicos, las conversaciones telefónicas de extensión media y las conversaciones transaccionales cara a cara (mantenimiento de bienes, alquiler, reclamaciones) son (R)(P) — debes seguirlas Y ser capaz de participar tú mismo.' }
+  ],
+  moves: [
+    { h: 'Clasificar antes de practicar', html: 'Antes de preparar un género, decide: ¿es (R) — me basta con entender — o (P) — tengo que poder producirlo yo? Un documental es (R): no te compares con su ritmo. Una entrevista de trabajo es (P): tienes que poder sostenerla.' },
+    { h: 'Dar más peso a lo que exige producción real', html: 'Los géneros marcados (R)(P) — conversaciones transaccionales, debates, llamadas de extensión media — merecen más tiempo de práctica activa que los puramente receptivos.' }
+  ],
+  model: {
+    title: 'Fragmento de una entrevista de trabajo (P)',
+    text: '—Cuéntenos brevemente su experiencia en este campo.\n—Llevo cinco años trabajando en atención al cliente, los últimos dos como responsable de un pequeño equipo.\n—¿Y por qué le interesa este puesto en concreto?\n—Porque combina justo lo que más me gusta: el trato directo con la gente y la posibilidad de organizar procesos, que es donde creo que puedo aportar más.\n—¿Tiene alguna pregunta para nosotros?\n—Sí, ¿cómo es un día normal de trabajo en este equipo?'
+  },
+  checklist: [
+    '¿Sabes si el género que practicas es (R), (P) o ambos, antes de empezar?',
+    '¿Dedicas más tiempo a los géneros (R)(P), que exigen producción real?',
+    'En una entrevista de trabajo, ¿respondes con datos concretos, no solo generalidades?'
+  ],
+  examples: [
+    { es: 'Los informativos radiofónicos exigen solo comprensión, no producción.', en: 'Radio news bulletins only require comprehension, not production.' },
+    { es: '¿Podría hablarme de sus puntos fuertes?', en: 'Could you tell me about your strengths?' },
+    { es: 'El debate se centró en si debía subir el precio del transporte público.', en: 'The debate focused on whether public transport prices should rise.' }
+  ],
+  probes: [
+    { id: 'p:generalesoralesB2:entrevista', kind: 'mcq', q: '¿Es la entrevista de trabajo como entrevistado (R) o (P)?',
+      options: ['(R), solo comprensión', '(P), producción real y personal', 'Ninguna de las dos'], answer: 1 },
+    { id: 'p:generalesoralesB2:documental', kind: 'mcq', q: 'Un documental de televisión es:',
+      options: ['(R), solo recepción', '(P), hay que producir uno igual', '(R)(P) por igual'], answer: 0 },
+    { id: 'p:generalesoralesB2:cloze', kind: 'cloze', text: 'Llevo cinco años ___ en atención al cliente. (trabajar)', accept: ['trabajando'] },
+    { id: 'p:generalesoralesB2:recall', kind: 'recall', front: '¿Qué género nuevo en B2 exige producción de alto riesgo y personal?', back: 'la entrevista de trabajo como entrevistado' }
+  ]
+},
+
+{
+  id: 'gn-generos-escritos-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  pcic: ['generos_discursivos:B2:159', 'generos_discursivos:B2:161', 'generos_discursivos:B2:163', 'generos_discursivos:B2:164',
+         'generos_discursivos:B2:165', 'generos_discursivos:B2:166', 'generos_discursivos:B2:169', 'generos_discursivos:B2:171',
+         'generos_discursivos:B2:172', 'generos_discursivos:B2:173'],
+  title: 'Géneros escritos en B2: cartas al director, informes, biografías',
+  summary: 'B2 adds genres built to take a stance in public — a letter to the editor, an opinion column — alongside the first genuinely professional written production, a short expository or argumentative report weighing the pros and cons of an option in the reader\'s own field.',
+  sections: [
+    { h: 'Tomar postura en público, por escrito', html: 'Las cartas al director y los artículos de opinión (R)(P para las cartas) exponen un punto de vista personal sobre un tema de actualidad, destinado a lectores desconocidos, no a un destinatario concreto.' },
+    { h: 'El informe breve: la primera producción profesional', html: 'Un informe breve de carácter expositivo o argumentativo (ventajas y desventajas de una opción, razones a favor o en contra) es (P) — la primera vez que se pide producir un texto genuinamente profesional, no personal.' },
+    { h: 'Referencia, no producción: diccionarios y guías', html: 'Diccionarios monolingües y guías de viaje quedan en (R) — se consultan para resolver una duda concreta, no se toman como modelo de producción propia.' }
+  ],
+  moves: [
+    { h: 'Identificar el destinatario', html: 'Una carta al director se dirige a lectores desconocidos y debe defenderse sola, sin el contexto compartido de una carta personal.' },
+    { h: 'Pesar ventajas y desventajas antes de concluir', html: 'Un informe breve expositivo-argumentativo no se limita a describir — pesa explícitamente los pros y los contras de una opción antes de llegar a una recomendación.' }
+  ],
+  model: {
+    title: 'Carta al director',
+    text: 'Señor director:\n\nLe escribo en relación con el reciente aumento del precio del transporte público en nuestra ciudad. Entiendo que los costes de mantenimiento suben cada año, pero un aumento del quince por ciento en una sola vez perjudica sobre todo a quienes no tienen alternativa al autobús.\n\nPropongo que el ayuntamiento estudie una subida progresiva, repartida en varios años, en lugar de este golpe único al bolsillo de los vecinos.\n\nAtentamente,\nuna vecina preocupada'
+  },
+  checklist: [
+    '¿Defiende el texto un punto de vista claro, pensado para un lector desconocido?',
+    'En un informe breve, ¿se pesan explícitamente ventajas y desventajas antes de concluir?',
+    '¿Se ha consultado un diccionario o una guía solo como referencia, no como modelo de estilo propio?'
+  ],
+  examples: [
+    { es: 'Le escribo en relación con el artículo publicado la semana pasada.', en: 'I am writing regarding the article published last week.' },
+    { es: 'Entre las ventajas de esta opción destaca su bajo coste.', en: 'Among the advantages of this option, its low cost stands out.' },
+    { es: 'Consulté la guía de viaje antes de reservar el hotel.', en: 'I checked the travel guide before booking the hotel.' }
+  ],
+  probes: [
+    { id: 'p:generalesescritosB2:informe', kind: 'mcq', q: 'Un informe breve expositivo-argumentativo debe:',
+      options: ['solo describir, sin evaluar', 'pesar ventajas y desventajas antes de concluir', 'evitar cualquier conclusión'], answer: 1 },
+    { id: 'p:generalesescritosB2:diccionario', kind: 'mcq', q: 'Un diccionario monolingüe es un género de:',
+      options: ['producción (P)', 'recepción (R), solo consulta', 'ambos por igual'], answer: 1 },
+    { id: 'p:generalesescritosB2:cloze', kind: 'cloze', text: 'Le ___ en relación con su reciente carta. (escribir)', accept: ['escribo'] },
+    { id: 'p:generalesescritosB2:recall', kind: 'recall', front: '¿A quién se dirige una carta al director, a diferencia de una carta personal?', back: 'a lectores desconocidos, no a un destinatario concreto' }
+  ]
+},
+
+{
+  id: 'gn-descriptiva-personas-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  pcic: ['generos_discursivos:B2:748', 'generos_discursivos:B2:749', 'generos_discursivos:B2:750', 'generos_discursivos:B2:751',
+         'generos_discursivos:B2:752', 'generos_discursivos:B2:753', 'generos_discursivos:B2:754', 'generos_discursivos:B2:755',
+         'generos_discursivos:B2:756', 'generos_discursivos:B2:757'],
+  title: 'Describir personas en B2: anclaje, aspectualización, puesta en relación',
+  summary: 'A B2 description of a person runs a fixed three-step process — anclaje fixes who is being described, aspectualización details concrete traits, puesta en relación compares or evaluates — and the whole process can repeat twice, once objectively and once subjectively, producing a genuinely different text from the same person.',
+  sections: [
+    { h: 'El proceso prototípico: tres pasos', html: 'Anclaje fija de quién se habla (<i>Ángel es un chico celoso y posesivo</i>); aspectualización detalla rasgos concretos (<i>aparece con un pijama que le queda flojo...</i>); puesta en relación compara o evalúa (<i>Es como tener un vigilante fantasma</i>).' },
+    { h: 'Objetivo vs. subjetivo: el mismo proceso, dos voces', html: 'El mismo proceso de tres pasos puede hacerse desde un punto de vista objetivo (describe sin juzgar) o subjetivo, con comparaciones que revelan una actitud: <i>Está delgada como un esqueleto... Parece un palo.</i>' },
+    { h: 'Insertar la descripción en una narración', html: 'Una descripción de personas rara vez existe sola — se inserta dentro de una narración (<i>Ayer me encontré con Eva, que...</i>) o, en textos formales, dentro de una exposición sobre un tema general.' }
+  ],
+  moves: [
+    { h: 'Anclar, luego detallar, luego relacionar', html: 'Empieza nombrando y situando a la persona. Añade rasgos concretos, físicos o de carácter. Termina relacionándola con algo — una comparación, una valoración, un efecto que produce en los demás.' },
+    { h: 'Elegir un punto de vista y mantenerlo', html: 'Decide si describes de forma objetiva (datos, sin juicio) o subjetiva (adjetivos valorativos, comparaciones) — y sé consistente durante todo el fragmento.' }
+  ],
+  model: {
+    title: 'Retrato de un vecino',
+    text: 'Ángel es un chico celoso y posesivo, casi obsesivo. Es característico de él aparecer con un pijama que le queda flojo, con la cara amarillenta y despeinado, para decir a cualquier vecino que baje el volumen de la radio o de la tele. Es como tener un vigilante fantasma. No es un grave problema, pero es muy desagradable.'
+  },
+  checklist: [
+    '¿Ancla primero quién es la persona, antes de dar detalles?',
+    '¿Incluye rasgos concretos (aspectualización), no solo una valoración genérica?',
+    '¿Cierra con una puesta en relación — una comparación o un efecto?',
+    '¿Es consistente el punto de vista, objetivo o subjetivo, durante todo el fragmento?'
+  ],
+  examples: [
+    { es: 'Ayer me encontré con Eva, que es una vieja amiga mía que acaba de volver de Nueva York.', en: 'Yesterday I ran into Eva, an old friend of mine who just got back from New York.' },
+    { es: 'Está delgada como un esqueleto y aparenta diez años más.', en: 'She is thin as a rail and looks ten years older.' },
+    { es: 'Parece un palo, sus brazos son como espaguetis.', en: 'She looks like a stick, her arms are like spaghetti.' }
+  ],
+  probes: [
+    { id: 'p:descpersB2:anclaje', kind: 'mcq', q: '¿Qué hace el "anclaje" en una descripción de personas?',
+      options: ['Compara con algo', 'Fija de quién se habla', 'Da la conclusión'], answer: 1 },
+    { id: 'p:descpersB2:puntodevista', kind: 'mcq', q: '"Parece un palo, sus brazos son como espaguetis." ¿Qué punto de vista es?',
+      options: ['Objetivo', 'Subjetivo', 'Ninguno'], answer: 1 },
+    { id: 'p:descpersB2:cloze', kind: 'cloze', text: 'Es como tener un vigilante fantasma, no es grave, pero es muy ___. (desagradable)', accept: ['desagradable'] },
+    { id: 'p:descpersB2:recall', kind: 'recall', front: 'Los tres pasos del proceso prototípico de la descripción de personas', back: 'anclaje, aspectualización, puesta en relación' }
+  ]
+},
+
+{
+  id: 'gn-descriptiva-objetos-b2', strand: 'genre', cefr: 'B2', level: 6, theme: 'alimentacion',
+  pcic: ['generos_discursivos:B2:798', 'generos_discursivos:B2:799', 'generos_discursivos:B2:800', 'generos_discursivos:B2:801',
+         'generos_discursivos:B2:802', 'generos_discursivos:B2:803', 'generos_discursivos:B2:804', 'generos_discursivos:B2:805',
+         'generos_discursivos:B2:806', 'generos_discursivos:B2:807'],
+  title: 'Describir objetos en B2: del tomate al desarrollo formal',
+  summary: 'The same three-step process that describes a person also describes a tomato — fix what it is, detail its composition and variety, then relate it to something else — and a formal register can insert an expository sequence (etymology, origin) that a subjective description never bothers with.',
+  sections: [
+    { h: 'El proceso, aplicado a un objeto', html: 'Anclaje fija qué es (<i>El tomate es un alimento característico de las zonas cálidas...</i>); aspectualización detalla su composición (<i>compuesto por la piel, la pulpa y las semillas</i>); puesta en relación compara variedades (<i>puede ser redondo... o alargado...</i>).' },
+    { h: 'Subjetivo: el objeto como protagonista de una anécdota', html: 'Una descripción subjetiva puede anclar el objeto en una situación personal (<i>Hay un plato característico del verano: la ensalada... el tomate es fundamental</i>) y desembocar en una narración real.' },
+    { h: 'Secuencia expositiva insertada: solo en lo formal', html: 'Un texto formal puede insertar un dato expositivo puro — origen, etimología — que una descripción subjetiva normalmente omite: <i>El tomate es una planta nativa de la zona de los Andes... su nombre viene del náhuatl «tomatl»</i>.' }
+  ],
+  moves: [
+    { h: 'Definir, componer, comparar', html: 'Empieza con una definición general del objeto. Detalla de qué partes se compone. Termina comparando variedades o relacionándolo con un uso concreto.' },
+    { h: 'Añadir un dato de origen en textos formales', html: 'En un registro formal, un dato etimológico o histórico breve refuerza la descripción sin necesidad de convertirla en una exposición completa.' }
+  ],
+  model: {
+    title: 'El tomate',
+    text: 'El tomate es un alimento característico de las zonas cálidas, muy apreciado por su sabor y su olor, y porque contiene muchas vitaminas y sales minerales. Está compuesto por la piel, la pulpa y las semillas; los tres elementos son comestibles, aunque estas últimas no se utilizan para preparar zumos ni sopas. Se puede encontrar con diversas formas, tamaños y colores: puede ser redondo como una bola un poco aplastada o alargado con forma de pera; puede medir desde el tamaño de una fresa hasta más de diez centímetros de diámetro; y puede ser rojo, amarillo o verde. Cada tipo tiene un uso diferente en la cocina.'
+  },
+  checklist: [
+    '¿Empieza con una definición general antes de entrar en detalles?',
+    '¿Detalla de qué partes o variedades se compone el objeto?',
+    '¿Termina relacionándolo con un uso, una comparación o una anécdota?',
+    'En un registro formal, ¿añade un dato de origen sin convertir el texto en una exposición completa?'
+  ],
+  examples: [
+    { es: 'El tomate es una planta nativa de los Andes.', en: 'The tomato is a plant native to the Andes.' },
+    { es: 'Se puede comer con su suave piel o sin ella.', en: 'It can be eaten with its soft skin or without it.' },
+    { es: 'Si tuviera que pintar un tomate, dibujaría un corazón rojo.', en: 'If I had to paint a tomato, I would draw a red heart.' }
+  ],
+  probes: [
+    { id: 'p:descobjB2:anclaje', kind: 'mcq', q: '"El tomate es un alimento característico de las zonas cálidas." ¿Qué paso del proceso es?',
+      options: ['Puesta en relación', 'Anclaje', 'Conclusión'], answer: 1 },
+    { id: 'p:descobjB2:expositiva', kind: 'mcq', q: '¿Cuándo se inserta un dato de origen o etimología en la descripción de un objeto?',
+      options: ['Siempre, en cualquier registro', 'Solo en textos formales', 'Nunca'], answer: 1 },
+    { id: 'p:descobjB2:cloze', kind: 'cloze', text: 'El tomate está ___ por la piel, la pulpa y las semillas. (componer)', accept: ['compuesto'] },
+    { id: 'p:descobjB2:recall', kind: 'recall', front: 'Los tres pasos del proceso prototípico de la descripción de objetos', back: 'anclaje, aspectualización, puesta en relación' }
+  ]
+},
+
+{
+  id: 'gn-descriptiva-lugares-b2', strand: 'genre', cefr: 'B2', level: 6, theme: 'vivienda',
+  pcic: ['generos_discursivos:B2:844', 'generos_discursivos:B2:845', 'generos_discursivos:B2:846', 'generos_discursivos:B2:847',
+         'generos_discursivos:B2:848', 'generos_discursivos:B2:849', 'generos_discursivos:B2:850', 'generos_discursivos:B2:851',
+         'generos_discursivos:B2:852', 'generos_discursivos:B2:853'],
+  title: 'Describir lugares en B2: de la planta a la anécdota',
+  summary: 'Describing a place at B2 moves from a general impression, through a room-by-room tour, to a comparison with somewhere else entirely — and, told subjectively from childhood memory, that same tour can slide straight into a small narrative, the way a real memory does.',
+  sections: [
+    { h: 'El proceso, room by room', html: 'Anclaje da la impresión general (<i>La casa de mi familia resulta muy acogedora</i>); aspectualización recorre las partes (<i>se compone de dos pisos y un sótano...</i>); puesta en relación compara con otro lugar (<i>en comparación con mi casa, parece una chabola</i>).' },
+    { h: 'Subjetivo: el lugar como escenario de un recuerdo', html: 'Anclado en la infancia (<i>Recuerdo aquella casa como un lugar mágico</i>), el recorrido puede detenerse en un solo rincón cargado de significado — el desván, no toda la casa — y desembocar en una anécdota real.' },
+    { h: 'La secuencia narrativa insertada', html: 'Una descripción subjetiva de un lugar querido casi siempre termina insertando una pequeña historia ocurrida allí, como prueba de por qué ese lugar importa.' }
+  ],
+  moves: [
+    { h: 'Impresión general, luego recorrido, luego comparación', html: 'Empieza con una impresión de conjunto. Recorre las partes en un orden lógico (planta por planta, de fuera hacia dentro). Termina comparando el lugar con otro, o relacionándolo con un recuerdo.' },
+    { h: 'Dejar espacio para una anécdota', html: 'Si describes un lugar querido, reserva la parte final para una pequeña historia ocurrida allí — es lo que distingue una descripción viva de una lista de habitaciones.' }
+  ],
+  model: {
+    title: 'La casa de mis abuelos',
+    text: 'Cuando mis hermanos y yo éramos pequeños, veraneábamos con mis abuelos en el campo. Recuerdo aquella casa como un lugar mágico. Se componía de dos pisos, más un desván y un sótano. Los dos pisos intermedios no tenían ningún interés para nosotros; eran «normales». Pero por una escalera estrecha de madera se llegaba al desván: una habitación abuhardillada con una sola ventana en el techo, llena de muebles antiguos, espejos, y un loro disecado. Un día subí sola, tropecé en la oscuridad y caí encima del loro. Me pareció que me hablaba, y salí corriendo asustadísima — hasta que descubrí que era mi hermano pequeño, escondido detrás.'
+  },
+  checklist: [
+    '¿Da primero una impresión general antes de recorrer las partes?',
+    '¿Sigue un orden lógico al recorrer el lugar (planta por planta, de fuera hacia dentro)?',
+    '¿Compara el lugar con otro, o lo relaciona con un recuerdo, al final?',
+    'Si describe un lugar querido, ¿incluye una pequeña anécdota que justifique por qué importa?'
+  ],
+  examples: [
+    { es: 'La casa se halla en el campo, es luminosa y espaciosa.', en: 'The house is in the countryside, bright and spacious.' },
+    { es: 'En comparación con mi casa, aquel apartamento parece una chabola.', en: 'Compared to my house, that apartment looks like a shack.' },
+    { es: 'Era una habitación abuhardillada con una sola ventana en el techo.', en: 'It was an attic room with a single window in the ceiling.' }
+  ],
+  probes: [
+    { id: 'p:desclugB2:orden', kind: 'mcq', q: '¿Qué orden sigue típicamente el recorrido de un lugar?',
+      options: ['Aleatorio', 'Lógico: planta por planta, de fuera hacia dentro', 'Alfabético'], answer: 1 },
+    { id: 'p:desclugB2:anecdota', kind: 'mcq', q: '¿Qué distingue una descripción viva de una lista de habitaciones?',
+      options: ['Usar más adjetivos', 'Incluir una pequeña anécdota ocurrida allí', 'Ser más larga'], answer: 1 },
+    { id: 'p:desclugB2:cloze', kind: 'cloze', text: 'La casa se ___ en el campo. (hallarse)', accept: ['halla'] },
+    { id: 'p:desclugB2:recall', kind: 'recall', front: 'Los tres pasos del proceso prototípico de la descripción de lugares', back: 'anclaje (impresión general), aspectualización (recorrido), puesta en relación (comparación)' }
+  ]
+},
+
+{
+  id: 'gn-narrativa-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  pcic: ['generos_discursivos:B2:896', 'generos_discursivos:B2:897', 'generos_discursivos:B2:898', 'generos_discursivos:B2:899',
+         'generos_discursivos:B2:900', 'generos_discursivos:B2:901', 'generos_discursivos:B2:902', 'generos_discursivos:B2:903',
+         'generos_discursivos:B2:904'],
+  title: 'La macrofunción narrativa en B2: las cinco etapas del relato',
+  summary: 'A well-formed B2 narrative moves through five fixed stages — situación inicial, complicación, acción, resolución, situación final — and can pause along the way to insert a description of a person or situation, or a whole line of reported dialogue in estilo indirecto.',
+  sections: [
+    { h: 'Las cinco etapas', html: '<b>Situación inicial</b> sets the scene (<i>De niña solía ir siempre en verano a la playa...</i>); <b>complicación</b> introduces the problem (<i>De repente, la mujer se levantó asustada...</i>); <b>acción</b> is what the characters do about it; <b>resolución</b> settles it (<i>llamamos al socorrista...</i>); <b>situación final</b> closes the arc (<i>Finalmente todo acabó bien, solo fue un susto</i>).' },
+    { h: 'Insertar una descripción', html: 'A narrative can pause mid-flow to describe a person or a situation in more detail (<i>Me di cuenta de que había una persona en el agua que, sin duda, tenía problemas...</i>) before returning to the action.' },
+    { h: 'Insertar un diálogo en estilo indirecto', html: 'Reported speech folds another voice into the narrative without switching to direct dialogue: <i>Luego le dijo que descansara un rato, que así se pondría bien rápidamente.</i>' }
+  ],
+  moves: [
+    { h: 'Situar, complicar, actuar, resolver, cerrar', html: 'Planta la escena inicial. Introduce el problema que rompe la calma. Narra lo que los personajes hacen. Resuelve el conflicto. Cierra con una situación final que marca que el arco ha terminado.' },
+    { h: 'Pausar para describir o citar', html: 'En cualquier punto puedes detener la acción un momento para describir a alguien con más detalle, o para reportar en estilo indirecto lo que alguien dijo.' }
+  ],
+  model: {
+    title: 'El susto en la playa',
+    text: 'De niña solía ir siempre en verano a la playa. Recuerdo un día que hacía un calor horrible; me fui a nadar un rato y luego me tumbé en la arena y me dormí. Al despertar, había una señora a mi lado, sentada en una hamaca, mirando al infinito.\n\nDe repente, la mujer se levantó asustada porque había visto algo. Me di cuenta de que había un chico en el agua que, sin duda, tenía problemas: no paraba de mover los brazos, se hundía y volvía a salir a la superficie.\n\nNos pusimos de pie y corrimos hasta la orilla. Iba a meterme en el agua cuando alguien me gritó que no lo hiciera. No podíamos sacar al chico solos, así que llamamos al socorrista, que llegó enseguida y lo sacó del agua. Luego le dijo que descansara un rato, que así se pondría bien rápidamente.\n\nFinalmente todo acabó bien: solo fue un susto.'
+  },
+  checklist: [
+    '¿Incluye las cinco etapas: situación inicial, complicación, acción, resolución, situación final?',
+    '¿Pausa en algún punto para describir a un personaje o una situación con más detalle?',
+    '¿Reporta algún diálogo en estilo indirecto, sin necesidad de citarlo textualmente?',
+    '¿Cierra con una situación final clara, no con la acción sin más?'
+  ],
+  examples: [
+    { es: 'Al despertar, había una señora a mi lado.', en: 'When I woke up, there was a lady next to me.' },
+    { es: 'No podíamos sacarlo del agua, así que llamamos al socorrista.', en: 'We couldn\'t get him out of the water, so we called the lifeguard.' },
+    { es: 'Finalmente todo acabó bien, solo fue un susto.', en: 'In the end everything turned out fine, it was just a scare.' }
+  ],
+  probes: [
+    { id: 'p:narrativaB2:etapas', kind: 'mcq', q: '¿Cuál es la etapa que introduce el problema que rompe la calma inicial?',
+      options: ['Situación final', 'Complicación', 'Resolución'], answer: 1 },
+    { id: 'p:narrativaB2:insercion', kind: 'mcq', q: '¿Qué puede insertarse dentro de una narración sin romper su hilo?',
+      options: ['Solo diálogo directo', 'Una descripción o un diálogo en estilo indirecto', 'Nada, debe ser puramente narrativa'], answer: 1 },
+    { id: 'p:narrativaB2:cloze', kind: 'cloze', text: 'Finalmente todo ___ bien, solo fue un susto. (acabar)', accept: ['acabó'] },
+    { id: 'p:narrativaB2:recall', kind: 'recall', front: 'Las cinco etapas del proceso prototípico narrativo', back: 'situación inicial, complicación, acción, resolución, situación final' }
+  ]
+},
+
+{
+  id: 'gn-expositiva-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  pcic: ['generos_discursivos:B2:963', 'generos_discursivos:B2:964', 'generos_discursivos:B2:968', 'generos_discursivos:B2:969',
+         'generos_discursivos:B2:970', 'generos_discursivos:B2:971', 'generos_discursivos:B2:972', 'generos_discursivos:B2:973',
+         'generos_discursivos:B2:974', 'generos_discursivos:B2:976'],
+  title: 'Exponer un tema en B2: presentar, desarrollar, concluir',
+  summary: 'A B2 exposition opens each new (sub)topic with one of four fixed devices — a definition, a general statement, a rhetorical question, or an example — then develops it through classification, and closes with a conclusion that restates why the whole exposition mattered.',
+  sections: [
+    { h: 'Presentar o definir el tema general', html: 'Una comparación puede servir de anclaje: <i>Los signos de puntuación son como las señales de tráfico: estas organizan la circulación de los coches y aquellos, los textos escritos.</i>' },
+    { h: 'Cuatro formas de abrir un (sub)tema nuevo', html: 'Una <b>definición</b> (<i>Se llama aceite a la grasa extraída de cualquier vegetal</i>), una <b>afirmación general</b> (<i>Florencia fue en sus comienzos un asentamiento etrusco</i>), una <b>pregunta retórica</b> (<i>¿Qué es un párrafo?</i>), o una <b>ejemplificación</b> (<i>Los signos de puntuación son como las señales de tráfico</i>).' },
+    { h: 'Desarrollar mediante clasificación', html: 'El desarrollo típico divide el tema en clases: <i>Está formado por..., se divide en...</i> — luego cada clase se explica por separado antes de pasar a la siguiente.' },
+    { h: 'Concluir cerrando el círculo', html: 'La conclusión no añade información nueva — recuerda por qué el tema importaba: <i>En resumen, la puntuación es fundamental para la escritura...</i>' }
+  ],
+  moves: [
+    { h: 'Presentar, dividir, desarrollar cada parte, concluir', html: 'Abre con una definición, afirmación, pregunta o ejemplo. Anuncia en cuántas partes vas a dividir el tema. Desarrolla cada parte con su propia clasificación interna. Cierra recordando por qué el tema importa.' },
+    { h: 'Variar el recurso de apertura entre subtemas', html: 'No abras cada subtema del mismo modo — alternar entre definición, pregunta retórica y ejemplo mantiene el interés a lo largo de una exposición larga.' }
+  ],
+  model: {
+    title: 'Los signos de puntuación',
+    text: 'Los signos de puntuación son como las señales de tráfico: estas organizan la circulación de los coches y aquellos, los textos escritos. Para empezar, hay que señalar que se pueden clasificar de muchas formas; nosotros los vamos a dividir en tres tipos: signos imprescindibles (el punto y la coma), signos necesarios (el punto y coma y los dos puntos) y signos accesorios (la interrogación, la exclamación, los puntos suspensivos).\n\nEl punto es el signo que más se usa. Hay tres clases: el punto final, el punto y aparte y el punto y seguido. La coma tiene más reglas y puede ser un poco difícil de captar: se usa entre elementos de una serie sin conjunción, y también para introducir una explicación dentro de una frase.\n\nEn resumen, la puntuación es fundamental para la escritura: sin ella sería imposible distinguir las diferentes ideas de un texto.'
+  },
+  checklist: [
+    '¿Abre cada (sub)tema con una definición, afirmación, pregunta o ejemplo?',
+    '¿Desarrolla mediante una clasificación clara en partes?',
+    '¿Varía el recurso de apertura entre subtemas, en vez de repetir siempre el mismo?',
+    '¿Cierra con una conclusión que recuerda por qué el tema importaba, sin información nueva?'
+  ],
+  examples: [
+    { es: '¿Qué es un párrafo?', en: 'What is a paragraph?' },
+    { es: 'Se llama aceite a la grasa extraída de cualquier vegetal.', en: 'Oil is the name given to fat extracted from any plant.' },
+    { es: 'En resumen, la puntuación es fundamental para la escritura.', en: 'In summary, punctuation is fundamental to writing.' }
+  ],
+  probes: [
+    { id: 'p:expositivaB2:apertura', kind: 'mcq', q: '¿Cuál de estos NO es un recurso típico para abrir un subtema?',
+      options: ['Una definición', 'Una pregunta retórica', 'Una disculpa'], answer: 2 },
+    { id: 'p:expositivaB2:conclusion', kind: 'mcq', q: '¿Qué debe hacer la conclusión de una exposición?',
+      options: ['Añadir información nueva', 'Recordar por qué el tema importaba', 'Empezar un tema distinto'], answer: 1 },
+    { id: 'p:expositivaB2:cloze', kind: 'cloze', text: 'Se ___ aceite a la grasa extraída de cualquier vegetal. (llamar)', accept: ['llama'] },
+    { id: 'p:expositivaB2:recall', kind: 'recall', front: 'Cuatro formas de abrir un (sub)tema nuevo en una exposición', back: 'definición, afirmación general, pregunta retórica, ejemplificación' }
+  ]
+},
+
+{
+  id: 'gn-argumentativa-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  pcic: ['generos_discursivos:B2:998', 'generos_discursivos:B2:999', 'generos_discursivos:B2:1000', 'generos_discursivos:B2:1001',
+         'generos_discursivos:B2:1002', 'generos_discursivos:B2:1003', 'generos_discursivos:B2:1004', 'generos_discursivos:B2:1005',
+         'generos_discursivos:B2:1006', 'generos_discursivos:B2:1007', 'generos_discursivos:B2:1008'],
+  title: 'Argumentar en B2: tesis, fuente, contraargumentación, reserva',
+  summary: 'A full B2 argument does something a simple B1 opinion never has to: it cites an external source with a reference, states the opposing view fairly before dismantling it, and ends with a "reserva" that concedes a limit to its own claim instead of overclaiming.',
+  sections: [
+    { h: 'Cuestión polémica, tesis, regla general', html: 'The argument opens by naming a live controversy (<i>Se ha dicho que la formación musical no es una asignatura imprescindible...</i>), states a thesis (<i>La música es fundamental para el ser humano...</i>), then a general rule that supports it.' },
+    { h: 'Argumento con fuente citada', html: 'A B2 argument backs a claim with an actual cited source, reference included: <i>Un estudio del Departamento Federal de Educación de Estados Unidos muestra que... (FDI, 2000, p. 234)</i>.' },
+    { h: 'Contraargumentación: dar la vuelta a la objeción más obvia', html: 'Rather than ignore the opposing view, a B2 argument names it fairly (<i>no se puede afirmar que la carrera musical lleve al éxito rápido</i>) and then turns it: <i>Sin embargo, ¿quién podría negar que su música produce mayor placer?</i>' },
+    { h: 'Reserva: concediendo un límite antes de concluir', html: 'A "reserva" admits the thesis is not unconditional (<i>aunque habría que convencer a la sociedad de que es útil</i>) before the final conclusion restates the claim\'s real-world stakes.' }
+  ],
+  moves: [
+    { h: 'Nombrar la controversia antes de tomar partido', html: 'Empieza citando la cuestión polémica de forma neutra, antes de exponer tu propia tesis — así el lector ve que conoces el debate, no solo tu posición.' },
+    { h: 'Argumentar, citar, contraargumentar, conceder, concluir', html: 'Da un primer argumento con una fuente citada. Nombra la objeción más fuerte y dale la vuelta. Añade un segundo argumento. Concede una reserva honesta antes de la conclusión final.' }
+  ],
+  model: {
+    title: '¿Debería ser obligatoria la música en la escuela?',
+    text: 'Se ha dicho que la formación musical no es una asignatura imprescindible en la enseñanza secundaria. Sin embargo, la música es fundamental para el ser humano: acompaña a lo largo de la vida y complementa muchas otras asignaturas.\n\nPara empezar, la música ayuda a definir la cultura igual que otras artes. Un estudio del Departamento Federal de Educación de Estados Unidos muestra que los estudiantes que tocan música obtienen notas más altas en matemáticas que quienes no la practican (FDI, 2000, p. 234).\n\nEs cierto que no se puede afirmar que una carrera musical lleve al éxito rápido y seguro: recordemos a Mozart, que murió joven y sin una posición económica estable. Sin embargo, ¿quién podría negar que su música sigue produciendo hoy un enorme placer? Además, el poco valor que muchos sistemas escolares dan a la música se transmite a toda la sociedad.\n\nLa música como asignatura es fundamental, aunque habría que convencer todavía a la sociedad de que es útil en muchos sentidos. En resumen, dar más valor a la música dentro de la escuela tendría consecuencias positivas mucho más allá del aula.'
+  },
+  checklist: [
+    '¿Nombra la cuestión polémica de forma neutra antes de tomar partido?',
+    '¿Incluye al menos un argumento respaldado por una fuente citada?',
+    '¿Nombra la objeción más fuerte de forma justa antes de darle la vuelta?',
+    '¿Incluye una reserva honesta antes de la conclusión final, en vez de sobrestimar la propia tesis?'
+  ],
+  examples: [
+    { es: 'Se ha dicho que trabajar desde casa reduce la productividad.', en: 'It has been claimed that working from home reduces productivity.' },
+    { es: 'Un estudio reciente muestra que el ochenta por ciento de los empleados prefiere el teletrabajo.', en: 'A recent study shows that eighty percent of employees prefer remote work.' },
+    { es: 'Aunque habría que matizar esta conclusión, los datos apuntan claramente en esa dirección.', en: 'Although this conclusion needs some nuance, the data clearly point in that direction.' }
+  ],
+  probes: [
+    { id: 'p:argumentativaB2:fuente', kind: 'mcq', q: '¿Qué añade un argumento B2 que un argumento B1 simple no suele tener?',
+      options: ['Una opinión personal', 'Una fuente citada con referencia', 'Un ejemplo cualquiera'], answer: 1 },
+    { id: 'p:argumentativaB2:reserva', kind: 'mcq', q: '¿Qué hace la "reserva" antes de la conclusión?',
+      options: ['Refuerza la tesis sin matices', 'Concede honestamente un límite de la propia tesis', 'Introduce un tema nuevo'], answer: 1 },
+    { id: 'p:argumentativaB2:cloze', kind: 'cloze', text: 'Un estudio ___ que los estudiantes que tocan música sacan mejores notas. (mostrar)', accept: ['muestra'] },
+    { id: 'p:argumentativaB2:recall', kind: 'recall', front: '¿Qué hace la contraargumentación antes de darle la vuelta a la objeción?', back: 'nombra la objeción más fuerte de forma justa, sin ignorarla' }
+  ]
 }
 
 ];
