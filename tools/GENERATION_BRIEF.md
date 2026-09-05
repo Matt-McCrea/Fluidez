@@ -60,41 +60,27 @@ loses every tick.
 
 ### Order of work
 
-**0. Back-tag the existing practice material with themes.** 190 passages and
-325 writing tasks carry none, so none can appear in a themed track. One word
-each, from the 20 themes in `data/taxonomy.js`, chosen by reading the text.
-**This cannot be derived**: the diagnostic words are often untagged legacy
-vocabulary (`la ley`, `el gobierno` have no theme) or absent entirely
-(`protesta`, `votar`), and the PCIC files `sociedad` under `economia`, so a
-word-matching heuristic tags a passage about water policy as `vivienda`. Apply
-items do not need a theme — they are grammar drills.
+Everything below B2 is essentially written, and the passage variety problem is
+fixed — the regenerated B1 set has no frame above 25% and every passage carries
+a theme. What is left is the top two levels.
 
-**1. Regenerate the 49 formulaic B1 passages — and report before going on.**
-B1 hit its target of 81 passages and 49 of them reach the pluscuamperfecto
-through the same move, *"Antes de X, había Y"*. They are correct Spanish and
-substantially the same text. Replace them (this is the one place the
-append-only rule is deliberately set aside), using `spec/genre-samples.json`
-for models and the route table below for variety.
+**1. Finish the stragglers** — 16 items across A1, A2 and B1 (`WORKLIST.md`
+sections A1–B1). Small, and a learner meets them first.
 
-Then run `node tools/variety.js B1` and **report the frame percentages**.
+**2. B2 lessons** — 166 outstanding of 204, mostly function (96) and notion
+(53).
 
-This is deliberately first, and it is a test rather than a chore: if real
-models and an explicit variety rule fix it here, the same approach is safe for
-the 160 B2/C1 passages that follow. If the frames are still over 25%, stop and
-say so — something in the method is wrong and writing 160 more the same way
-would waste the effort.
+**3. B2 practice material** — 80 passages, 120 apply, 80 writing, all from
+zero. **Stop here and report, with three sample passages.** This is the first
+content written entirely to the upper-level rules — Spanish-language
+glossaries, 200–300 words, inference questions — and whether it is genuinely B2
+or B1 with harder words is not something any gate can see.
 
-**2. Close the stragglers.** Two lesson units (one A1 discourse, one B1
-discourse) and A2 passages, which sit at 22 against a target of 62.
+**4. C1 lessons** — 197 outstanding of 202. The discourse strand is already
+done and hand-written; use those eight as the model for how much subtlety a C1
+lesson is expected to carry.
 
-**3. B2 — lessons (83), then practice material** (80 passages, 120 apply, 80
-writing). **Stop after the B2 practice material and report** with three sample
-passages. This is the first content written entirely to the upper-level rules —
-Spanish-language glossaries, 200–300 words, inference questions — and whether
-it is genuinely B2 or B1 with harder words is not something any gate can see.
-
-**4. C1 — lessons (88), then practice material** (80 passages, 120 apply, 80
-writing).
+**5. C1 practice material** — 80 passages, 120 apply, 80 writing.
 
 Finish a level before starting the next: a learner walks the ladder in order,
 so a hole at B2 is reached long before anything at C1, and a level with lessons
@@ -102,9 +88,11 @@ but no passages gives them a lesson and then three empty stages.
 
 ## 3. Absolute rules
 
-1. **Append only.** Never edit `js/` or `tools/`, never change existing entries.
-   Never invent a field, lesson type, probe kind, constraint type, strand,
-   register or theme that `data/taxonomy.js` does not declare.
+1. **Append only**, with two exceptions: tick your lines in `WORKLIST.md`, and
+   replace existing content when this brief explicitly tells you to. Otherwise
+   never edit `js/` or `tools/` and never change existing entries. Never invent
+   a field, lesson type, probe kind, constraint type, strand, register or theme
+   that `data/taxonomy.js` does not declare.
 2. **All four gates green after every batch.** Never fix a failure by weakening
    a validator or editing existing content.
 3. **Accents are mandatory and exact** — `lint-spanish.js` fails the build.
@@ -129,9 +117,10 @@ but no passages gives them a lesson and then three empty stages.
 | `data/connectors.js` | 72 discourse markers in the PCIC's own 12 classes |
 | `data/strand-lessons.js` | **five worked templates, one per strand — read before writing** |
 | `spec/genre-samples.json` | **304 sample texts the Plan Curricular prints to illustrate its own genres** — 155 at B1–C1. Read these before writing passages |
-| `spec/verb-queue.json` | 3 verbs still missing |
-| `spec/vocab-queue.json` | 32 entries needing an English gloss (`known:false`) |
-| `spec/collocation-queue.json` | **2,263 collocations** to add as vocabulary entries; only `en` is missing |
+| `WORKLIST.md` | **the record of what is left — work the unticked lines** |
+| `spec/verb-queue.json` | verbs still missing (check the file; it was 3) |
+| `spec/vocab-queue.json` | entries needing an English gloss (`known:false`) |
+| `spec/collocation-queue.json` | collocations to add as vocabulary entries; only `en` is missing |
 
 Templates: `gr-demostrativos-a2` (grammar), `nt-existencia-a1` (notion),
 `fn-acuerdo-b2` (function), `dc-atenuacion-c1` (discourse),
