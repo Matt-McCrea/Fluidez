@@ -10,9 +10,9 @@ where to find them in `spec/pcic.json`.
 
 Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 
-## A1 — lessons (59/64 done)
+## A1 — lessons (63/64 done)
 
-### A1 · grammar (18/22)
+### A1 · grammar (22/22)
 - [x] **Clases de sustantivos** · 12 pts · `gramatica A1 § 1.1. Clases de sustantivos`  — gr-nombres-propios-a1
 - [x] **El género de los sustantivos** · 7 pts · `gramatica A1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-a1
 - [x] **El número de los sustantivos** · 5 pts · `gramatica A1 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-a1
@@ -25,15 +25,15 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Cuantificadores propios** · 11 pts · `gramatica A1 § 6.1. Cuantificadores propios`  — gr-cuantificadores-no-universales-a1
 - [x] **El pronombre personal** · 28 pts · `gramatica A1 § 7.1. El pronombre personal`  — gr-pronombre-se-a1
 - [x] **Los relativos** · 5 pts · `gramatica A1 § 7.2. Los relativos`  — gr-relativo-que-a1
-- [ ] **Los interrogativos** · 11 pts · `gramatica A1 § 7.3. Los interrogativos`
+- [x] **Los interrogativos** · 11 pts · `gramatica A1 § 7.3. Los interrogativos`  — gr-interrogativos-a1
 - [x] **Adverbios nucleares o de predicado** · 17 pts · `gramatica A1 § 8.2. Adverbios nucleares o de pred`  — gr-adverbios-afirmacion-negacion-a1
 - [x] **Tiempos verbales de indicativo** · 9 pts · `gramatica A1 § 9.1. Tiempos verbales de indicativ`  — gr-presente-indicativo-valores-a1
 - [x] **Formas no personales del verbo** · 10 pts · `gramatica A1 § 9.4. Formas no personales del verb`  — gr-infinitivo-usos-a1
-- [ ] **El núcleo** · 11 pts · `gramatica A1 § 12.1. El núcleo`
+- [x] **El núcleo** · 11 pts · `gramatica A1 § 12.1. El núcleo`  — gr-nucleo-verbal-a1
 - [x] **Complementos** · 7 pts · `gramatica A1 § 12.2. Complementos`  — gr-atributo-a1
 - [x] **Tipos de oraciones simples** · 13 pts · `gramatica A1 § 13.3. Tipos de oraciones simples`  — gr-oraciones-actitud-hablante-a1
-- [ ] **Oraciones subordinadas sustantivas** · 6 pts · `gramatica A1 § 15.1. Oraciones subordinadas susta`
-- [ ] **Oraciones subordinadas adjetivas o de relativo** · 6 pts · `gramatica A1 § 15.2. Oraciones subordinadas adjet`
+- [x] **Oraciones subordinadas sustantivas** · 6 pts · `gramatica A1 § 15.1. Oraciones subordinadas susta`  — gr-subordinadas-sustantivas-a1
+- [x] **Oraciones subordinadas adjetivas o de relativo** · 6 pts · `gramatica A1 § 15.2. Oraciones subordinadas adjet`  — gr-subordinadas-adjetivas-a1
 - [x] **Oraciones subordinadas adverbiales** · 17 pts · `gramatica A1 § 15.3. Oraciones subordinadas adver`  — gr-oraciones-finales-a1
 
 ### A1 · notion (17/17)

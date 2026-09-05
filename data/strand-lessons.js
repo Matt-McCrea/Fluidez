@@ -13199,6 +13199,157 @@ window.STRAND_LESSONS = [
     { id: 'p:arrepentimiento:cloze', kind: 'cloze', text: 'Es una ___ que no hayamos ido. (pena/lástima)', accept: ['pena', 'lástima'] },
     { id: 'p:arrepentimiento:recall', kind: 'recall', front: '¿"Lamentar" o "sentir": cuál es más formal?', back: 'lamentar' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — A1 grammar stragglers (WORKLIST.md, section A1 · grammar)
+ * ========================================================================== */
+{
+  id: 'gr-interrogativos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:266', 'gramatica:A1:267', 'gramatica:A1:268', 'gramatica:A1:269',
+         'gramatica:A1:270', 'gramatica:A1:273', 'gramatica:A1:274', 'gramatica:A1:318'],
+  title: 'Los interrogativos: qué, quién, cuánto, dónde, cómo',
+  summary: 'Five words open almost every question at A1, and each one asks a different thing: qué about objects and actions, quién about people, cuánto about quantity, dónde and cómo about place and manner. The one rule that unites them is graphic — an interrogative always carries a written accent, even buried inside another sentence.',
+  sections: [
+    { h: 'Qué vs quién', html: '<b>Qué</b> is invariable and asks about things or actions: <i>¿Qué es esto?</i>, <i>¿Qué estudias?</i>. <b>Quién/quiénes</b> asks about people and varies only in number, never gender: <i>¿Quién es esa chica?</i>, <i>¿Quiénes son ellos?</i>' },
+    { h: 'Cuánto agrees with what follows', html: 'Unlike qué and quién, <b>cuánto</b> agrees in gender and number with the noun it introduces: <i>cuánto dinero</i>, <i>cuánta gente</i>, <i>cuántos años</i>, <i>cuántas hermanas</i>. Get the noun\'s gender first, then match the interrogative to it.' },
+    { h: 'Dónde and cómo: invariable adverbs', html: 'These never change form. <b>Dónde</b> asks about place (<i>¿Dónde vives?</i>), <b>cómo</b> about manner (<i>¿Cómo te llamas?</i>). They open direct questions and survive unaccented-look words with an accent inside indirect ones: <i>No sé dónde vive.</i>' }
+  ],
+  contrasts: [
+    { es: '¿Qué es esto?', en: 'What is this?', note: 'qué — thing, invariable' },
+    { es: '¿Quién es esa chica?', en: 'Who is that girl?', note: 'quién — person, varies only in number' },
+    { es: '¿Cuántos años tienes?', en: 'How old are you?', note: 'cuántos agrees with años (masc. pl.)' },
+    { es: '¿Cuántas hermanas tienes?', en: 'How many sisters do you have?', note: 'cuántas agrees with hermanas (fem. pl.)' }
+  ],
+  pitfalls: [
+    'Interrogatives always carry the written accent, even inside a longer sentence: <i>No sé dónde vive</i>, not <i>*donde</i>. This is what separates <i>qué</i> from the relative <i>que</i>, <i>quién</i> from <i>quien</i>, and the question word <i>cómo</i> from the conjunction <i>como</i> (<i>Como no vino, me fui</i> — "since").',
+    '<i>Cuánto</i> is not one fixed word: it agrees with the noun that follows it, so a beginner who defaults to <i>cuánto</i> for everything produces <i>*cuánto hermanas</i> instead of <i>cuántas hermanas</i>.',
+    '<i>Quién</i> only ever varies in number (<i>quién/quiénes</i>) — there is no feminine form <i>*quiéna</i>.'
+  ],
+  examples: [
+    { es: '¿Qué estudias?', en: 'What do you study?' },
+    { es: '¿Quiénes son esos chicos?', en: 'Who are those boys?' },
+    { es: '¿Cuánto dinero tienes?', en: 'How much money do you have?' }
+  ],
+  probes: [
+    { id: 'p:interrogA1:persona', kind: 'mcq', q: '¿Cuál pregunta por una persona?',
+      options: ['¿Qué es esto?', '¿Quién es esa chica?', '¿Dónde vives?'], answer: 1 },
+    { id: 'p:interrogA1:agree', kind: 'mcq', q: '"Tengo dos hermanas." ¿Qué pregunta corresponde?',
+      options: ['¿Cuánto hermanas tienes?', '¿Cuántas hermanas tienes?', '¿Cuántos hermanas tienes?'], answer: 1 },
+    { id: 'p:interrogA1:cloze', kind: 'cloze', text: 'No sé ___ vive. (indirecta)', accept: ['dónde'] },
+    { id: 'p:interrogA1:recall', kind: 'recall', front: 'Interrogative words always carry a written ___', back: 'accent (tilde)' }
+  ]
+},
+
+{
+  id: 'gr-nucleo-verbal-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:423', 'gramatica:A1:424', 'gramatica:A1:425', 'gramatica:A1:426',
+         'gramatica:A1:427', 'gramatica:A1:428', 'gramatica:A1:429', 'gramatica:A1:430',
+         'gramatica:A1:431', 'gramatica:A1:432', 'gramatica:A1:433'],
+  title: 'Ser y estar sin adjetivo: el núcleo del predicado',
+  summary: 'Ser and estar are usually taught through adjectives — ser alto, estar cansado — but both also stand alone as the whole predicate, identifying, classifying, dating and locating with no adjective in sight. Recognising this second job is what lets a learner use them correctly outside the adjective drills.',
+  sections: [
+    { h: 'Ser: identifying and classifying', html: 'Without an adjective, <b>ser</b> identifies (<i>Soy yo</i>, <i>Es él</i>), classifies by origin, profession or material (<i>Soy español</i>, <i>Soy estudiante</i>), and gives the day or date (<i>Es lunes</i>).' },
+    { h: 'Estar: locating', html: '<b>Estar</b> without an adjective states where something or someone is: <i>Está aquí</i>, <i>Estamos en Madrid</i>. This is its most basic job, prior to any of the emotional-state uses.' },
+    { h: 'A different kind of verb: gustar', html: 'Not every core verb works like <i>ser</i>/<i>estar</i>. <b>Gustar</b> is "psychological" — its grammatical subject is the thing liked, not the person: <i>Me gusta el café</i> literally is "coffee is pleasing to me", which is why the person takes <i>me/te/le</i>, not <i>yo/tú/él</i>.' }
+  ],
+  contrasts: [
+    { es: 'Soy español.', en: "I'm Spanish.", note: 'ser — classification, no adjective' },
+    { es: 'Es lunes.', en: "It's Monday.", note: 'ser — date, no adjective' },
+    { es: 'Está aquí.', en: "He/she/it is here.", note: 'estar — location, no adjective' },
+    { es: 'Me gusta el café.', en: 'I like coffee.', note: 'the liked thing is the subject, not "yo"' }
+  ],
+  pitfalls: [
+    '<i>Ser</i> and <i>estar</i> are not only "verb + adjective". <i>Es lunes</i>, <i>Soy yo</i> and <i>Está aquí</i> have no adjective at all and are still complete sentences.',
+    'With <i>gustar</i>, do not conjugate for the person who likes something — conjugate for the thing liked: <i>Me gusta el café</i> (singular thing) vs <i>Me gustan los cafés</i> (plural thing), never <i>*yo gusto el café</i>.',
+    'Do not confuse identifying (<i>Soy Elena</i>) with locating (<i>Estoy en clase</i>) — swapping the verbs produces nonsense, not just an accent.'
+  ],
+  examples: [
+    { es: '—¿Quién es? —Soy yo, Elena.', en: '—Who is it? —It\'s me, Elena.' },
+    { es: 'Hoy es lunes y estamos en la oficina.', en: "Today is Monday and we're at the office." },
+    { es: 'Me gusta mucho esta ciudad.', en: 'I like this city a lot.' }
+  ],
+  probes: [
+    { id: 'p:nucleoverbA1:clasif', kind: 'mcq', q: '¿Cuál usa "ser" para clasificar, sin adjetivo?',
+      options: ['Estoy cansado.', 'Soy estudiante.', 'Está aquí.'], answer: 1 },
+    { id: 'p:nucleoverbA1:gustar', kind: 'mcq', q: '"A mí ___ el café." (correcto)',
+      options: ['gusto', 'me gusta', 'soy gusta'], answer: 1 },
+    { id: 'p:nucleoverbA1:cloze', kind: 'cloze', text: 'Hoy ___ lunes. (ser)', accept: ['es'] },
+    { id: 'p:nucleoverbA1:recall', kind: 'recall', front: 'En "Me gusta el café", ¿cuál es el sujeto gramatical?', back: 'el café (no "yo")' }
+  ]
+},
+
+{
+  id: 'gr-subordinadas-sustantivas-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:506', 'gramatica:A1:507', 'gramatica:A1:508', 'gramatica:A1:509',
+         'gramatica:A1:510', 'gramatica:A1:511'],
+  title: 'Oraciones subordinadas sustantivas: infinitivo y "que"',
+  summary: 'A whole clause can act as the subject or object of another verb, and at A1 there are two shapes for it: an infinitive when there is no new subject, and "que" plus a conjugated verb when there is one. Choosing between them is the first step toward the subjunctive later, since this is the same slot it will occupy.',
+  sections: [
+    { h: 'Infinitive as subject', html: 'An infinitive clause can BE the subject of another verb: <i>Hablar español es útil</i> — "speaking Spanish" is what is useful, not a person.' },
+    { h: 'Infinitive as object, same subject', html: 'When the person who wants/likes and the person who does the action are the SAME, use an infinitive: <i>Quiero ir a España</i>, <i>Me gusta estudiar español</i>. Do not add a second subject with "que" here.' },
+    { h: '"Que" + conjugated verb, different subject or opinion', html: 'When a new subject appears, or the verb reports a belief, switch to <i>que</i> and a conjugated verb: <i>Creo que es muy caro.</i> The infinitive alone cannot carry a stated opinion this way.' }
+  ],
+  contrasts: [
+    { es: 'Hablar español es útil.', en: 'Speaking Spanish is useful.', note: 'infinitive clause as subject' },
+    { es: 'Quiero ir a España.', en: 'I want to go to Spain.', note: 'same subject — infinitive, no "que"' },
+    { es: 'Creo que es muy caro.', en: 'I think it is very expensive.', note: 'opinion — que + conjugated verb' },
+    { es: 'Me gusta estudiar español.', en: 'I like studying Spanish.', note: 'gustar + infinitive, same experiencer' }
+  ],
+  pitfalls: [
+    'Do not insert <i>que</i> after <i>querer</i> or <i>gustar</i> when the subject does not change: <i>*Quiero que voy a España</i> is wrong when nobody else is involved — it should be <i>Quiero ir a España</i>.',
+    'An infinitive subject stays singular in agreement even if it sounds like a plural idea: <i>Hablar idiomas es útil</i>, never <i>*son útiles</i>.',
+    '<i>Creer que</i> needs the indicative at A1 (<i>creo que es</i>), not the subjunctive — that contrast comes later, with doubt and negation.'
+  ],
+  examples: [
+    { es: 'Estudiar por la mañana es mejor para mí.', en: 'Studying in the morning is better for me.' },
+    { es: 'Quiero aprender a cocinar.', en: 'I want to learn to cook.' },
+    { es: 'Creo que este libro es interesante.', en: 'I think this book is interesting.' }
+  ],
+  probes: [
+    { id: 'p:subsustA1:mismosujeto', kind: 'mcq', q: 'Mismo sujeto (yo quiero, yo voy): ¿cuál es correcta?',
+      options: ['Quiero que voy a España.', 'Quiero ir a España.', 'Quiero que ir a España.'], answer: 1 },
+    { id: 'p:subsustA1:opinion', kind: 'mcq', q: '¿Cómo se introduce una opinión sobre algo?',
+      options: ['Creo estudiar español.', 'Creo que es muy caro.', 'Creo a ser caro.'], answer: 1 },
+    { id: 'p:subsustA1:cloze', kind: 'cloze', text: '___ español es útil. (Hablar)', accept: ['Hablar', 'hablar'] },
+    { id: 'p:subsustA1:recall', kind: 'recall', front: 'Mismo sujeto: "querer/gustar" + ___ (no "que")', back: 'infinitivo' }
+  ]
+},
+
+{
+  id: 'gr-subordinadas-adjetivas-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  pcic: ['gramatica:A1:514', 'gramatica:A1:515', 'gramatica:A1:516', 'gramatica:A1:517',
+         'gramatica:A1:518', 'gramatica:A1:519'],
+  title: 'Oraciones de relativo con "que"',
+  summary: 'The relative "que" lets you attach a whole clause to a noun instead of a second adjective, and at A1 it does one job only: pointing at a specific, real referent with the indicative. The harder job — describing someone who may not exist — is a later lesson; here "que" always follows a person or thing you can name.',
+  sections: [
+    { h: 'Que replaces a repeated noun', html: 'Instead of two sentences (<i>Tengo una profesora. La profesora es muy buena</i>), <i>que</i> joins them into one: <i>La profesora que tengo es muy buena.</i> "Que" stands in for "profesora" inside its own clause.' },
+    { h: 'Restrictive — no commas', html: 'At A1 these clauses are restrictive: they identify WHICH one you mean, so they attach directly with no comma: <i>un libro que lees</i>, <i>la amiga que viene conmigo</i>.' },
+    { h: 'Subject or object of its own clause', html: '<i>Que</i> can be the subject (<i>la amiga que viene conmigo</i> — she comes) or the object (<i>un libro que lees</i> — you read it) of the clause it introduces, and stays unchanged either way — it never shows gender or number.' }
+  ],
+  contrasts: [
+    { es: 'La profesora que tengo es muy buena.', en: 'The teacher I have is very good.', note: 'que = object of "tengo"' },
+    { es: 'La amiga que viene conmigo se llama Ana.', en: 'The friend who is coming with me is called Ana.', note: 'que = subject of "viene"' },
+    { es: 'Un libro que lees en un día.', en: 'A book you read in a day.', note: 'que = object of "lees"' }
+  ],
+  pitfalls: [
+    '<i>Que</i> never changes for gender or number, even though the noun it refers to does: <i>el libro que</i>, <i>la casa que</i>, <i>los libros que</i> — always just "que".',
+    'At A1 these clauses point at something real and specific, so the verb is indicative: <i>la profesora que tengo es</i>, not a subjunctive — that shift only happens once the referent is unknown or hypothetical.',
+    'Do not drop <i>que</i> the way informal English drops "that" — <i>*el libro leo</i> is not a sentence in Spanish; the relative is obligatory.'
+  ],
+  examples: [
+    { es: 'El chico que vive al lado es simpático.', en: 'The boy who lives next door is nice.' },
+    { es: 'Me gusta la casa que tienen en la playa.', en: 'I like the house they have at the beach.' },
+    { es: 'Es un profesor que explica muy bien.', en: 'He is a teacher who explains very well.' }
+  ],
+  probes: [
+    { id: 'p:subadjA1:funcion', kind: 'mcq', q: 'En "el libro que lees", ¿qué función tiene "que"?',
+      options: ['Sujeto de "lees"', 'Objeto de "lees"', 'No tiene función'], answer: 1 },
+    { id: 'p:subadjA1:invariable', kind: 'mcq', q: '¿Cuál es correcta con "las casas"?',
+      options: ['las casas ques tengo', 'las casas que tengo', 'las casas quenes tengo'], answer: 1 },
+    { id: 'p:subadjA1:cloze', kind: 'cloze', text: 'La amiga ___ viene conmigo se llama Ana.', accept: ['que'] },
+    { id: 'p:subadjA1:recall', kind: 'recall', front: '¿Cambia "que" según género o número del antecedente?', back: 'No, es invariable' }
+  ]
 }
 
 ];
