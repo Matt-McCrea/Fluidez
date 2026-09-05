@@ -2540,6 +2540,84 @@ window.WRITING_TASKS = [
       { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
       { type: 'minWords', n: 6 }
     ],
-    models: ['Los restauradores trabajaron casi un año en el mural.'] }
+    models: ['Los restauradores trabajaron casi un año en el mural.'] },
+
+  /* ---- B2 writing, batch 8 of 8 — completes 80/80 ---- */
+  { id: 'b2t-ramadan-religion', type: 'translate', level: 6, theme: 'religion',
+    prompt: 'Translate: "Unless one has fasted before, the first days can feel very hard."',
+    hint: '"a menos que" governs the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'a menos que' },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['A menos que uno haya ayunado antes, los primeros días pueden resultar muy duros.'] },
+
+  { id: 'p-apellido-materno-identidad', type: 'paragraph', level: 6, theme: 'identidad',
+    prompt: 'Write a paragraph about a legal reform that changed a personal-identity custom, using a relative clause to reach the pluscuamperfecto.',
+    hint: 'Reach the pluscuamperfecto through a relative clause, not "antes de".',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'plusc' },
+      { type: 'minSentences', n: 3 }
+    ],
+    models: ['El orden de apellidos que la tradición había impuesto durante siglos dejó de ser obligatorio en 2013. Desde entonces, cada familia decide libremente. Todavía sorprende a algunos parientes mayores, aunque cada vez menos.'] },
+
+  { id: 'b2w-perfeccionista-caracter', type: 'write', level: 7, theme: 'caracter',
+    prompt: 'Write about the difference between healthy striving for excellence and unhealthy perfectionism, conceding a point before making yours.',
+    hint: 'Include a concession with "aunque" or "a pesar de".',
+    constraints: [
+      { type: 'containsAny', words: ['aunque', 'a pesar de', 'sin embargo'] },
+      { type: 'minWords', n: 20 }
+    ],
+    models: ['Aunque buscar la excelencia resulta generalmente saludable, el perfeccionismo propiamente dicho fija un estándar imposible de alcanzar. Sin embargo, muchas personas confunden ambas cosas durante años.'] },
+
+  { id: 'b2t-covivienda-vivienda', type: 'translate', level: 7, theme: 'vivienda',
+    prompt: 'Translate: "It is essential that shared tasks be distributed fairly among residents."',
+    hint: '"es fundamental que" governs the subjunctive.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'presubj' },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['Es fundamental que las tareas compartidas se repartan de forma justa entre los residentes.'] },
+
+  { id: 'p-moda-rapida-compras', type: 'paragraph', level: 6, theme: 'compras',
+    prompt: 'Write a paragraph about fast fashion: what it used to mean, what it means now, and what you expect will change.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Durante años, una camiseta barata parecía simplemente una buena oportunidad. Hoy, cada vez más consumidores conocen el coste humano y ambiental real. Dentro de poco, es posible que muchas marcas hayan cambiado su modelo por presión pública. Nadie esperaba que el debate avanzara tan rápido.'] },
+
+  { id: 'b2t-huerto-alimentacion', type: 'translate', level: 6, theme: 'alimentacion',
+    prompt: 'Translate: "The neighbors gave it to the community garden."',
+    hint: 'Use a double object pronoun: "se lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 4 }
+    ],
+    models: ['Los vecinos se lo dieron al huerto comunitario.'] },
+
+  { id: 'b2b-transplante-cuerpo', type: 'build', level: 7, theme: 'cuerpo', en: 'It is possible that he will need two more years of therapy before feeling fully himself again.',
+    answer: 'Es posible que necesite dos años más de terapia antes de volver a sentirse plenamente él mismo.' },
+  { id: 'b2b-quejas-servicios', type: 'build', level: 6, theme: 'servicios', en: 'If the council had reviewed the data sooner, they would have fixed the pothole months ago.',
+    answer: 'Si el ayuntamiento hubiera revisado los datos antes, habría reparado el bache hace meses.' },
+
+  { id: 'b2w-algoritmo-medios', type: 'write', level: 7, theme: 'medios',
+    prompt: 'Describe, in an impersonal register using "se", how a social network\'s feed typically decides what to show a user.',
+    hint: 'Use "se" constructions throughout instead of naming who designs each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Cada publicación se evalúa según cientos de señales de comportamiento recogidas antes. Después se ordena todo el contenido disponible, y finalmente se muestra primero aquello que, según el sistema, mantendrá más tiempo conectado al usuario.'] },
+
+  { id: 'b2t-agujeros-negros-ciencia', type: 'translate', level: 7, theme: 'ciencia',
+    prompt: 'Translate, for a science magazine in a formal register: "Not even light can escape a black hole\'s gravitational pull."',
+    hint: 'Avoid colloquial words; this is written for publication.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['Ni siquiera la luz puede escapar de la atracción gravitatoria de un agujero negro.'] }
 
 ];

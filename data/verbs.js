@@ -1596,6 +1596,7 @@ window.VERBS = [
 { inf:'reconciliarse', en:'to reconcile, to make up', type:'ar' },
 { inf:'traicionar', en:'to betray', type:'ar' },
 { inf:'acusar', en:'to accuse', type:'ar' },
+{ inf:'imponer', en:'to impose', type:'er', like:'poner' },
 { inf:'demandar', en:'to sue', type:'ar' },
 { inf:'condenar', en:'to convict, to sentence', type:'ar' },
 { inf:'absolver', en:'to acquit', type:'er', stem:'ue' },
