@@ -1592,5 +1592,8 @@ window.VERBS = [
 { inf:'bloquear', en:'to block', type:'ar' },
 { inf:'silenciar', en:'to silence, to mute', type:'ar' },
 { inf:'suscribirse', en:'to subscribe', type:'ir' },
-{ inf:'censurar', en:'to censor', type:'ar' }
+{ inf:'censurar', en:'to censor', type:'ar' },
+{ inf:'reconciliarse', en:'to reconcile, to make up', type:'ar' },
+{ inf:'traicionar', en:'to betray', type:'ar' },
+{ inf:'acusar', en:'to accuse', type:'ar' }
 ];
