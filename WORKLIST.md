@@ -371,34 +371,34 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (38/204 done)
+## B2 — lessons (53/204 done)
 
-### B2 · grammar (11/26)
-- [ ] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`
-- [ ] **El artículo definido** · 7 pts · `gramatica B2 § 3.1. El artículo definido`
-- [ ] **El artículo indefinido** · 14 pts · `gramatica B2 § 3.2. El artículo indefinido`
-- [ ] **Ausencia de determinación: los nombres escuetos** · 4 pts · `gramatica B2 § 3.3. Ausencia de determinación: lo`
-- [ ] **Los posesivos** · 8 pts · `gramatica B2 § `
-- [ ] **Cuantificadores propios** · 26 pts · `gramatica B2 § 6.1. Cuantificadores propios`
-- [ ] **El pronombre personal** · 26 pts · `gramatica B2 § 7.1. El pronombre personal`
+### B2 · grammar (26/26)
+- [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
+- [x] **El artículo definido** · 7 pts · `gramatica B2 § 3.1. El artículo definido`  — gr-articulo-definido-valores-b2
+- [x] **El artículo indefinido** · 14 pts · `gramatica B2 § 3.2. El artículo indefinido`  — gr-articulo-indefinido-valores-b2
+- [x] **Ausencia de determinación: los nombres escuetos** · 4 pts · `gramatica B2 § 3.3. Ausencia de determinación: lo`  — gr-nombres-escuetos-b2
+- [x] **Los posesivos** · 8 pts · `gramatica B2 § `  — gr-posesivos-b2
+- [x] **Cuantificadores propios** · 26 pts · `gramatica B2 § 6.1. Cuantificadores propios`  — gr-cuantificadores-numerales-cualquier-b2
+- [x] **El pronombre personal** · 26 pts · `gramatica B2 § 7.1. El pronombre personal`  — gr-pronombre-personal-b2
 - [x] **Los relativos** · 21 pts · `gramatica B2 § 7.2. Los relativos`  — gr-el-que-relativos-b2
 - [x] **Los interrogativos** · 11 pts · `gramatica B2 § 7.3. Los interrogativos`  — gr-orden-interrogativos-b2
-- [ ] **Los exclamativos** · 9 pts · `gramatica B2 § 7.4. Los exclamativos`
-- [ ] **Adverbios nucleares o de predicado** · 28 pts · `gramatica B2 § 8.2. Adverbios nucleares o de pred`
+- [x] **Los exclamativos** · 9 pts · `gramatica B2 § 7.4. Los exclamativos`  — gr-exclamativos-b2
+- [x] **Adverbios nucleares o de predicado** · 28 pts · `gramatica B2 § 8.2. Adverbios nucleares o de pred`  — gr-adverbios-nucleares-b2
 - [x] **Adverbios externos al dictum** · 11 pts · `gramatica B2 § 8.3. Adverbios externos al dictum`  — gr-adverbios-frecuencia-topico-b2
 - [x] **Adverbios del modus** · 7 pts · `gramatica B2 § 8.4. Adverbios del modus`  — gr-adverbios-enunciacion-b2
 - [x] **Adverbios relativos e interrogativos** · 7 pts · `gramatica B2 § 8.8. Adverbios relativos e interro`  — gr-relativo-donde-b2
 - [x] **Tiempos verbales de indicativo** · 30 pts · `gramatica B2 § 9.1. Tiempos verbales de indicativ`  — gr-condicional-compuesto-b2
 - [x] **Tiempos verbales de subjuntivo** · 32 pts · `gramatica B2 § 9.2. Tiempos verbales de subjuntiv`  — gr-impsubj-valores-b2
-- [ ] **El imperativo** · 7 pts · `gramatica B2 § 9.3. El imperativo`
-- [ ] **Formas no personales del verbo** · 18 pts · `gramatica B2 § 9.4. Formas no personales del verb`
-- [ ] **Complementos y modificadores** · 9 pts · `gramatica B2 § 10.2. Complementos y modificadores`
+- [x] **El imperativo** · 7 pts · `gramatica B2 § 9.3. El imperativo`  — gr-imperativo-valores-b2
+- [x] **Formas no personales del verbo** · 18 pts · `gramatica B2 § 9.4. Formas no personales del verb`  — gr-formas-no-personales-b2
+- [x] **Complementos y modificadores** · 9 pts · `gramatica B2 § 10.2. Complementos y modificadores`  — gr-complementos-nominales-b2
 - [x] **Concordancia del SN con el verbo** · 4 pts · `gramatica B2 § 10.4. Concordancia del SN con el v`  — gr-concordancia-sn-verbo-b2
 - [x] **Complementos y modificadores** · 5 pts · `gramatica B2 § 11.2. Complementos y modificadores`  — gr-complementos-sa-b2
-- [ ] **El núcleo** · 14 pts · `gramatica B2 § 12.1. El núcleo`
+- [x] **El núcleo** · 14 pts · `gramatica B2 § 12.1. El núcleo`  — gr-nucleo-verbal-copulativos-b2
 - [x] **Complementos** · 15 pts · `gramatica B2 § 12.2. Complementos`  — gr-complemento-preposicional-regido-b2
-- [ ] **Oraciones subordinadas sustantivas** · 13 pts · `gramatica B2 § 15.1. Oraciones subordinadas susta`
-- [ ] **Oraciones subordinadas adjetivas o de relativo** · 25 pts · `gramatica B2 § 15.2. Oraciones subordinadas adjet`
+- [x] **Oraciones subordinadas sustantivas** · 13 pts · `gramatica B2 § 15.1. Oraciones subordinadas susta`  — gr-subordinadas-sustantivas-b2
+- [x] **Oraciones subordinadas adjetivas o de relativo** · 25 pts · `gramatica B2 § 15.2. Oraciones subordinadas adjet`  — gr-subordinadas-relativas-tipos-b2
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica B2 § 15.3. Oraciones subordinadas adver`  — gr-subordinadas-lugar-b2
 
 ### B2 · notion (7/53)

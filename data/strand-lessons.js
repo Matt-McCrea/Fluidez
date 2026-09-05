@@ -15302,6 +15302,565 @@ window.STRAND_LESSONS = [
     { id: 'p:narrestructB1:cloze', kind: 'cloze', text: 'Me dijo que ___ (llevar) poco tiempo en España. (estilo indirecto)', accept: ['llevaba'] },
     { id: 'p:narrestructB1:recall', kind: 'recall', front: 'Las cinco partes de la estructura narrativa B1, en orden', back: 'situación inicial, complicación, acción, resolución, situación final' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 grammar (WORKLIST.md, section B2 · grammar). Fifteen items,
+ * finishing the B2 grammar strand (26/26).
+ * ========================================================================== */
+{
+  id: 'gr-numero-sustantivos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:20', 'gramatica:B2:21', 'gramatica:B2:22', 'gramatica:B2:23', 'gramatica:B2:24',
+         'gramatica:B2:25', 'gramatica:B2:26', 'gramatica:B2:28'],
+  title: 'Plurales irregulares: invariables, tónicos y léxicos',
+  summary: 'Three separate plural puzzles beyond the basic -s/-es rule: words ending in a stressed vowel can go either way, monosyllables split by whether they name a vowel or a consonant, and a plural form can name a completely different thing than its singular — "las escaleras" is one staircase, not several.',
+  sections: [
+    { h: 'Invariable: -us, -sis, -tis', html: 'Multi-syllable, non-oxytone words ending in <i>-us, -sis, -tis</i> do not change for plural at all: <i>el virus / los virus</i>, <i>la crisis / las crisis</i>, <i>la faringitis / las faringitis</i>.' },
+    { h: 'Stressed final vowel: both endings survive', html: 'Words ending in a stressed <i>á, í, ú</i> accept both <i>-s</i> and <i>-es</i>, with usage settling differently case by case: <i>maniquíes, rubíes, tabúes</i> favor <i>-es</i>; <i>esquís, champús, menús</i> favor plain <i>-s</i>.' },
+    { h: 'Monosyllables: vowels vs consonants', html: 'Names of VOWELS take <i>-es</i> (<i>aes, íes, oes, úes</i>); names of other letters take plain <i>-s</i> (<i>kas, bes, ces</i>).' },
+    { h: 'Lexical plurals: a different thing entirely', html: 'Some plurals name something the singular cannot: <i>las escaleras</i> (a single staircase, not several stairs), <i>los intestinos</i> (the intestines as one organ system).' }
+  ],
+  contrasts: [
+    { es: 'El virus se propaga rápido. / Los virus se propagan rápido.', en: 'The virus spreads fast. / The viruses spread fast.', note: 'invariable — same form both numbers' },
+    { es: 'Compré unos esquís nuevos.', en: 'I bought some new skis.', note: 'stressed í — favors plain -s here' },
+    { es: 'Sube por las escaleras.', en: 'Go up the stairs.', note: 'lexical plural — "escaleras" names ONE staircase' }
+  ],
+  pitfalls: [
+    'Do not force an <i>-es</i> onto <i>virus/crisis/tesis</i> — <i>*viruses, *crisis</i> is wrong; these nouns are simply invariable.',
+    'A lexical plural like <i>las escaleras</i> or <i>los intestinos</i> does not imply "more than one" — treating it as a true countable plural is a common learner error.',
+    'Vowel names and consonant names pluralize differently: <i>las íes</i> (the letter i\'s) but <i>las kas</i> (the letter k\'s) — do not apply one rule to both.'
+  ],
+  examples: [
+    { es: 'El análisis reveló varias crisis simultáneas.', en: 'The analysis revealed several simultaneous crises.' },
+    { es: 'Se pintó las uñas con dos rubíes falsos.', en: 'She painted her nails with two fake rubies.' },
+    { es: 'Bajó corriendo las escaleras.', en: 'He ran down the stairs.' }
+  ],
+  probes: [
+    { id: 'p:numsustB2:invariable', kind: 'mcq', q: '¿Cuál es el plural de "la crisis"?',
+      options: ['las crisis', 'las crisises', 'las crises'], answer: 0 },
+    { id: 'p:numsustB2:lexico', kind: 'mcq', q: '"Las escaleras" en singular sería...',
+      options: ['varias escaleras pequeñas', 'no existe en singular con este significado', 'un error'], answer: 1 },
+    { id: 'p:numsustB2:cloze', kind: 'cloze', text: 'Compré unos ___ nuevos para esquiar. (esquís)', accept: ['esquís'] },
+    { id: 'p:numsustB2:recall', kind: 'recall', front: 'Terminaciones que hacen un sustantivo invariable en plural', back: '-us, -sis, -tis (en palabras no agudas)' }
+  ]
+},
+
+{
+  id: 'gr-articulo-definido-valores-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:71', 'gramatica:B2:72', 'gramatica:B2:73', 'gramatica:B2:74', 'gramatica:B2:76'],
+  title: 'El artículo definido: valor genérico y "lo" sustantivador',
+  summary: 'The definite article can speak for a whole category rather than one thing — "el bolígrafo se usa para escribir" means pens in general — and the neuter "lo" goes further, turning an adjective, an adverb or even a whole question word into a noun phrase with nothing else needed.',
+  sections: [
+    { h: 'Generic value: alternates with the indefinite', html: 'To generalize about a whole category, Spanish can use either article with barely a difference: <i>El bolígrafo se usa para escribir</i> and <i>Un bolígrafo se usa para escribir</i> both generalize, not refer to one specific pen.' },
+    { h: 'Lo + adjective/adverb: making a quality into a noun', html: '<i>Lo</i> + adjective nominalizes a quality: <i>lo interesante</i> ("the interesting part/thing"), <i>lo mejor, lo peor</i>. With <i>de</i>, it points at a whole topic: <i>lo de ayer</i> ("that thing about yesterday").' },
+    { h: 'Nominalizing other categories entirely', html: 'The same trick works on a wh-word: <i>No comprendo el porqué de tu decisión</i>, <i>No sabemos el cuándo ni el dónde</i> — question words themselves become nouns.' }
+  ],
+  contrasts: [
+    { es: 'El bolígrafo se usa para escribir.', en: 'Pens are used for writing.', note: 'generic — the whole category, definite article' },
+    { es: 'Un bolígrafo se usa para escribir.', en: 'A pen is used for writing.', note: 'generic — the whole category, indefinite article, near-equivalent meaning' },
+    { es: 'Lo interesante es que nadie lo sabía.', en: 'The interesting thing is nobody knew.', note: 'lo + adjective, nominalized' }
+  ],
+  pitfalls: [
+    'The generic alternation (<i>el/un bolígrafo</i>) only works with a truly general, timeless statement — it disappears once you anchor the sentence to a specific moment or instance.',
+    '<i>Lo</i> nominalizing an adjective is neuter and abstract — it does not refer to one countable object, so it takes no plural: <i>lo interesante</i>, never <i>*los interesantes</i> in this sense.',
+    'Do not confuse nominalized <i>el porqué</i> (the reason, a noun) with the question word <i>por qué</i> (why) — the accent and spacing both change once it becomes a noun.'
+  ],
+  examples: [
+    { es: 'Lo peor fue tener que madrugar tanto.', en: 'The worst part was having to get up so early.' },
+    { es: 'Todavía no sabemos el cuándo del viaje.', en: "We still don't know the when of the trip." },
+    { es: 'El teléfono ha cambiado nuestra forma de comunicarnos.', en: 'The telephone has changed the way we communicate.' }
+  ],
+  probes: [
+    { id: 'p:artdefvaloresB2:generico', kind: 'mcq', q: '¿Cuál de estas es una generalización, no una referencia específica?',
+      options: ['El perro de mi vecino ladra mucho.', 'El perro es el mejor amigo del hombre.', 'El perro está en el jardín ahora mismo.'], answer: 1 },
+    { id: 'p:artdefvaloresB2:losustantivado', kind: 'mcq', q: '¿Qué significa "lo de ayer"?',
+      options: ['El día de ayer, literalmente', 'Ese asunto/tema de ayer', 'Nada en particular'], answer: 1 },
+    { id: 'p:artdefvaloresB2:cloze', kind: 'cloze', text: '___ mejor de todo fue el final. (lo)', accept: ['Lo', 'lo'] },
+    { id: 'p:artdefvaloresB2:recall', kind: 'recall', front: '¿"Lo interesante" admite plural (los interesantes) con este significado?', back: 'no — es neutro y abstracto' }
+  ]
+},
+
+{
+  id: 'gr-articulo-indefinido-valores-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:84', 'gramatica:B2:85', 'gramatica:B2:86', 'gramatica:B2:89', 'gramatica:B2:91', 'gramatica:B2:92'],
+  title: 'El artículo indefinido: restricciones sutiles',
+  summary: 'The indefinite article looks simple until it meets a mass noun, an emphatic exclamation, or a noun that names an event rather than a thing — each context either forces a restrictive modifier onto it, lets it vanish for emphasis, or blocks it outright.',
+  sections: [
+    { h: 'Mass nouns need a restrictive modifier', html: 'A mass noun cannot take <i>un/una</i> alone — <i>*un agua</i> is wrong — but adding a restrictive modifier fixes it: <i>un agua muy clara</i> now names a specific type or instance.' },
+    { h: 'Emphatic elision in exclamations', html: 'In an exclamation, the article can drop out entirely without losing its emphatic force: <i>¡Hacía un calor horrible!</i> and <i>¡Hacía calor horrible!</i> both work, the second slightly more elliptical/emphatic.' },
+    { h: 'Blocked with certain event nouns', html: 'A noun naming an event, combined with an argument the underlying verb requires, resists the indefinite article: <i>*un descubrimiento del culpable</i> sounds wrong the way the underlying verb <i>descubrir</i> would with a strange object.' },
+    { h: 'Nominalizing a relative clause', html: '<i>Uno</i> before a relative clause creates a hypothetical referent: <i>uno que sea de otro país</i> — "someone (whoever it turns out to be) who is from another country".' }
+  ],
+  contrasts: [
+    { es: '*Un agua.', en: '(wrong)', note: 'mass noun, no restrictive modifier — blocked' },
+    { es: 'Un agua muy clara corría por el valle.', en: 'A very clear water ran through the valley.', note: 'restrictive modifier licenses the indefinite article' },
+    { es: 'Hacía un calor horrible.', en: 'It was horribly hot.', note: 'full form, still emphatic' },
+    { es: '¡Hacía calor horrible!', en: 'It was so hot!', note: 'article elided, kept emphatic' }
+  ],
+  pitfalls: [
+    'A bare mass noun (<i>agua, arroz, paciencia</i>) cannot take <i>un/una</i> without a restrictive modifier attached — the modifier is what licenses the article, not decoration.',
+    'Do not force the indefinite article onto an eventive noun with its verb\'s argument still attached: <i>*un descubrimiento del culpable</i> — rephrase around the verb instead (<i>descubrir al culpable</i>).',
+    '<i>Uno que + subjuntivo</i> creates a hypothetical, not-yet-identified referent — this is a different job from <i>alguien que</i>, which can refer to someone the speaker has in mind.'
+  ],
+  examples: [
+    { es: 'Buscamos a alguien que hable alemán, uno que ya haya vivido allí.', en: 'We\'re looking for someone who speaks German, one who has already lived there.' },
+    { es: '¡Hacía un frío tremendo aquella noche!', en: 'It was tremendously cold that night!' },
+    { es: 'Necesito un café bien cargado.', en: 'I need a really strong coffee.' }
+  ],
+  probes: [
+    { id: 'p:artindefvaloresB2:masa', kind: 'mcq', q: '¿Cuál es correcta?',
+      options: ['Bebí un agua.', 'Bebí un agua muy fría.', 'Bebí un aguas.'], answer: 1 },
+    { id: 'p:artindefvaloresB2:hipotetico', kind: 'mcq', q: '"Busco uno que ___ (ser) de otro país." (aún no identificado)',
+      options: ['es', 'sea', 'será'], answer: 1 },
+    { id: 'p:artindefvaloresB2:cloze', kind: 'cloze', text: '¡Hacía ___ calor espantoso! (un, opcional pero típico)', accept: ['un'] },
+    { id: 'p:artindefvaloresB2:recall', kind: 'recall', front: '¿Qué necesita un nombre no contable para poder llevar "un/una"?', back: 'un modificador restrictivo' }
+  ]
+},
+
+{
+  id: 'gr-nombres-escuetos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:99', 'gramatica:B2:100', 'gramatica:B2:101', 'gramatica:B2:102'],
+  title: 'Nombres escuetos: sin artículo, con reglas propias',
+  summary: 'A bare noun with no article can still be a grammatical subject — but only under specific conditions: a prenominal adjective, coordination with another bare noun, or fossilized combinations with semi-auxiliary verbs that behave almost like a single compound verb.',
+  sections: [
+    { h: 'Bare subject before the verb: adjective or coordination', html: 'A bare plural noun works as a preverbal subject when it carries a prenominal adjective or is coordinated: <i>Fuertes tempestades asolaron la comarca</i>, <i>Agua y vino se combinan mal</i>.' },
+    { h: 'Alguno/ninguno postposed to a bare noun', html: 'Postposed <i>alguno</i> or <i>ninguno</i> licenses a bare singular noun with an emphatic negative reading: <i>No tiene pudor alguno</i> ("not the slightest shame").' },
+    { h: 'Semi-auxiliary + bare noun: fossilized predicates', html: '<i>Hacer, tener, dar, poner</i> combine with a bare noun to form a near-compound verb: <i>hacer noche</i> (to stay overnight), <i>tener lugar</i> (to take place), <i>dar clase</i>, <i>poner fecha</i>.' },
+    { h: 'Bare singular for a profession', html: 'A want-ad or notice can name a profession as a bare singular noun: <i>Se necesita camarero.</i>' }
+  ],
+  contrasts: [
+    { es: 'Tempestades asolaron la comarca.', en: 'Storms devastated the region.', note: 'sounds incomplete without the adjective' },
+    { es: 'Fuertes tempestades asolaron la comarca.', en: 'Strong storms devastated the region.', note: 'the prenominal adjective licenses the bare preverbal subject' },
+    { es: 'No tiene pudor.', en: 'He has no shame.', note: 'plain, neutral' },
+    { es: 'No tiene pudor alguno.', en: 'He has not the slightest shame.', note: 'postposed "alguno" — emphatic negative' }
+  ],
+  pitfalls: [
+    'A bare plural noun rarely works alone as a preverbal subject — it typically needs a prenominal adjective or coordination to license it: <i>*Tempestades asolaron</i> sounds incomplete; <i>Fuertes tempestades asolaron</i> does not.',
+    'The semi-auxiliary combinations (<i>hacer noche, tener lugar, dar clase</i>) are fixed — you cannot freely substitute the noun or the verb and keep the same idiomatic meaning.',
+    '<i>Alguno</i> postposed to a bare noun is NOT the same as <i>algún</i> preposed — <i>pudor alguno</i> (emphatic negative, needs a negated context) works differently from <i>algún pudor</i> (some measure of shame, affirmative).'
+  ],
+  examples: [
+    { es: 'Grandes cambios se avecinan en la empresa.', en: 'Big changes are coming at the company.' },
+    { es: 'La boda tendrá lugar en junio.', en: 'The wedding will take place in June.' },
+    { es: 'Se busca profesor de español.', en: 'Spanish teacher wanted.' }
+  ],
+  probes: [
+    { id: 'p:nombresescB2:licencia', kind: 'mcq', q: '¿Qué licencia el sujeto preverbal escueto en "Fuertes tempestades asolaron la comarca"?',
+      options: ['Nada en especial', 'El adjetivo prenominal', 'El verbo en pasado'], answer: 1 },
+    { id: 'p:nombresescB2:semiauxiliar', kind: 'mcq', q: '¿Cuál es una combinación fija con verbo semiauxiliar?',
+      options: ['tener lugar', 'tener una casa', 'tener miedo mucho'], answer: 0 },
+    { id: 'p:nombresescB2:cloze', kind: 'cloze', text: 'No tiene pudor ___. (alguno, énfasis negativo)', accept: ['alguno'] },
+    { id: 'p:nombresescB2:recall', kind: 'recall', front: '¿Qué verbos forman predicados fijos con un nombre escueto (hacer noche, tener lugar...)?', back: 'hacer, tener, dar, poner (semiauxiliares)' }
+  ]
+},
+
+{
+  id: 'gr-posesivos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:126', 'gramatica:B2:128', 'gramatica:B2:129', 'gramatica:B2:131', 'gramatica:B2:132'],
+  title: 'Los posesivos: forma tónica, fórmulas fijas',
+  summary: 'The tonic possessive (mío, tuyo, suyo) survives mainly in fixed slots at B2: after "ser" for a slightly more formal identification, in fossilized exclamations, in an old-fashioned letter opening, and combined with an article and a relative clause where the atonic form cannot go.',
+  sections: [
+    { h: 'Tonic vs atonic with ser', html: 'Both forms work after <i>ser</i>, with a register shift: <i>Es mi sobrino</i> (neutral) vs <i>Es sobrino mío</i> (slightly more formal/literary, the tonic form standing alone after the noun).' },
+    { h: 'Fixed exclamations and formulas', html: 'The tonic possessive survives in fossilized exclamations (<i>¡Madre mía!, ¡Dios mío!</i>) and a now old-fashioned formal letter opening: <i>Muy señor mío</i>.' },
+    { h: 'Combining with article + relative, and with quantifiers', html: 'The tonic form is what combines with an article and a following relative clause: <i>El libro tuyo que acabo de leer</i>. It is also what stacks with numerals and quantifiers: <i>mis cuatro hijos, tus muchas obligaciones</i>.' }
+  ],
+  contrasts: [
+    { es: 'Es mi sobrino.', en: "He's my nephew.", note: 'atonic, neutral, the default' },
+    { es: 'Es sobrino mío.', en: "He's a nephew of mine.", note: 'tonic after the noun, slightly more formal' },
+    { es: '¡Madre mía, qué susto!', en: 'Good grief, what a fright!', note: 'fossilized exclamation, tonic possessive only' }
+  ],
+  pitfalls: [
+    'The tonic possessive after a noun (<i>sobrino mío</i>) is not simply a stylistic swap for the atonic — it shifts register slightly and cannot be freely used everywhere the atonic form goes.',
+    '<i>Muy señor mío</i> is a fixed, now old-fashioned formal opening — do not build new phrases on this pattern; it survives only as a set formula.',
+    'When a relative clause follows, the tonic possessive is what attaches with an article: <i>el libro tuyo que...</i>, not <i>*tu libro que...</i> in this exact combined structure.'
+  ],
+  examples: [
+    { es: 'Un amigo mío trabaja en esa empresa.', en: 'A friend of mine works at that company.' },
+    { es: 'Mis cuatro hijos viven todos fuera.', en: 'All four of my children live away.' },
+    { es: '¡Dios mío, qué tarde es!', en: "Good God, it's so late!" }
+  ],
+  probes: [
+    { id: 'p:posesivosB2:tonico', kind: 'mcq', q: '¿Cuál usa la forma TÓNICA del posesivo?',
+      options: ['Mi sobrino vive aquí.', 'Es sobrino mío.', 'Su casa es grande.'], answer: 1 },
+    { id: 'p:posesivosB2:fija', kind: 'mcq', q: '¿Cuál es una fórmula FIJA, no productiva?',
+      options: ['Es amigo mío.', 'Muy señor mío', 'Un libro tuyo'], answer: 1 },
+    { id: 'p:posesivosB2:cloze', kind: 'cloze', text: 'El libro ___ que acabo de leer es fascinante. (tuyo, con artículo)', accept: ['tuyo'] },
+    { id: 'p:posesivosB2:recall', kind: 'recall', front: '¿Qué forma del posesivo aparece en "¡Madre mía!"?', back: 'la forma tónica' }
+  ]
+},
+
+{
+  id: 'gr-cuantificadores-numerales-cualquier-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:159', 'gramatica:B2:160', 'gramatica:B2:162', 'gramatica:B2:163', 'gramatica:B2:167',
+         'gramatica:B2:168', 'gramatica:B2:169', 'gramatica:B2:171', 'gramatica:B2:172', 'gramatica:B2:173'],
+  title: 'Numerales partitivos/multiplicativos y cualquier/cualquiera',
+  summary: 'Two families of precision quantifiers: partitive and multiplicative numerals for exact fractions and ratios, and the "cualquier/cualquiera" pair, which shifts between meaning "every single one, no exception" and "some one, it genuinely does not matter which" depending on where it sits and what surrounds it.',
+  sections: [
+    { h: 'Partitives and multiplicatives', html: 'Fractions combine with <i>de</i> (<i>la mitad/un tercio de la tarta</i>) or with <i>parte</i> (<i>una quinta parte de...</i>). Multiples do the same with <i>de</i> (<i>el doble de dinero</i>) or with <i>veces</i> (<i>diez veces más</i>).' },
+    { h: 'Cualquier: invariable, before the noun', html: '<i>Cualquier</i> never changes for gender and always precedes its noun. It can mean total inclusion (<i>Cualquier persona tiene ese derecho</i> — everyone, no exception) or restricted indifference (<i>Cualquier alumno puede venir</i> — some one student, it does not matter which).' },
+    { h: 'Cualquiera: invariable, never before a noun', html: '<i>Cualquiera</i> stands alone or with <i>de</i>: <i>cualquiera de ellos</i>. It combines with <i>otro</i> in either order: <i>cualquier otro / otro cualquiera</i>.' }
+  ],
+  contrasts: [
+    { es: 'Un tercio de la tarta ya ha desaparecido.', en: 'A third of the cake has already disappeared.', note: 'partitive with de' },
+    { es: 'Gana el doble que su hermano.', en: 'He earns double what his brother does.', note: 'multiplicative with de' },
+    { es: 'Cualquier persona tiene ese derecho.', en: 'Everyone has that right.', note: 'total inclusion, no exception' },
+    { es: 'Cualquier alumno puede venir a la excursión.', en: 'Any student can come on the trip.', note: 'restricted indifference — one student, does not matter which' }
+  ],
+  pitfalls: [
+    '<i>Cualquier</i> never agrees for gender (<i>cualquier persona/problema</i>, never <i>*cualquiera persona</i> before the noun) — the final -a form only appears when standing alone.',
+    'Do not place <i>cualquiera</i> before a noun — it must follow, stand alone, or combine with <i>de</i>: <i>cualquiera de nosotros</i>, never <i>*cualquiera problema</i>.',
+    'The two readings of <i>cualquier</i> (total inclusion vs restricted indifference) are told apart only by context — there is no separate word for each.'
+  ],
+  examples: [
+    { es: 'Una quinta parte de los votantes se abstuvo.', en: 'A fifth of the voters abstained.' },
+    { es: 'Este modelo cuesta el triple que el anterior.', en: 'This model costs triple the previous one.' },
+    { es: 'Puedes elegir cualquiera de los dos.', en: 'You can choose either of the two.' }
+  ],
+  probes: [
+    { id: 'p:cuantnumB2:partitivo', kind: 'mcq', q: '¿Cuál expresa una fracción?',
+      options: ['el doble de gente', 'un tercio de la tarta', 'diez veces más'], answer: 1 },
+    { id: 'p:cuantnumB2:posicion', kind: 'mcq', q: '¿Cuál es correcta?',
+      options: ['cualquiera problema', 'cualquier problema', 'cualquiera de problema'], answer: 1 },
+    { id: 'p:cuantnumB2:cloze', kind: 'cloze', text: 'Puedes coger ___ de estos libros. (cualquiera)', accept: ['cualquiera'] },
+    { id: 'p:cuantnumB2:recall', kind: 'recall', front: '¿Cambia "cualquier" de género (cualquiera persona)?', back: 'no, es invariable delante del sustantivo' }
+  ]
+},
+
+{
+  id: 'gr-pronombre-personal-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:214', 'gramatica:B2:215', 'gramatica:B2:217', 'gramatica:B2:220', 'gramatica:B2:236',
+         'gramatica:B2:237', 'gramatica:B2:238'],
+  title: 'El pronombre personal: se accidental y la jerarquía de clíticos',
+  summary: 'Two advanced pronoun facts: "se" can relocate the responsibility for an accident away from the person it happened to — "se me perdió" makes the loss almost nobody\'s fault — and when clitics stack up, they follow a fixed hierarchy (se, then 2nd person, then 1st, then 3rd) that never varies.',
+  sections: [
+    { h: 'Subject pronoun presence disambiguating', html: 'With verbs of doubt or speech, including or omitting the subject pronoun can change who is meant: <i>Dudo que lo haga</i> (ambiguous — could be anyone) vs <i>Dudo que ella lo haga</i> (specifically "she").' },
+    { h: 'Neuter lo replacing an attribute', html: '<i>Lo</i> can stand in for a whole predicate adjective already mentioned: <i>—¿Eres española? —Lo soy.</i> ("I am [that]").' },
+    { h: '"Se" for the unplanned/accidental', html: 'Se + an indirect-object clitic mitigates responsibility for something that happened TO someone, as if it happened on its own: <i>Se me perdió tu dinero</i> ("your money got lost on me") reads as much less blameworthy than <i>Perdí tu dinero</i>.' },
+    { h: 'The clitic ordering hierarchy', html: 'When clitics combine, the order is fixed: <i>se</i> + 2nd person + 1st person + 3rd person. <i>Se me perdió</i> is correct; <i>*Me se perdió</i> reverses the mandatory order and is simply wrong.' }
+  ],
+  contrasts: [
+    { es: 'Perdí las llaves.', en: 'I lost the keys.', note: 'direct responsibility' },
+    { es: 'Se me perdieron las llaves.', en: 'The keys got lost on me.', note: '"se" + OI mitigates responsibility — sounds like an accident' },
+    { es: 'Se os cayó el vaso.', en: 'You (all) dropped the glass.', note: 'clitic order: se + os (2nd person)' },
+    { es: '*Me se perdió el dinero.', en: '(wrong)', note: 'violates the fixed order — "se" must precede "me"' }
+  ],
+  pitfalls: [
+    'The clitic order is NOT negotiable: <i>se</i> always comes first, then 2nd person, then 1st, then 3rd — <i>*me se</i> and similar reversals are simply ungrammatical, not just informal.',
+    'The accidental "se" construction genuinely softens blame — using the plain transitive instead (<i>Perdí tu dinero</i>) reads as owning the fault directly, a real pragmatic difference, not just a stylistic one.',
+    'Neuter <i>lo</i> replacing an attribute agrees with nothing — it stays <i>lo</i> regardless of the gender/number of what it replaces: <i>—¿Son española? —Lo somos</i> (not *las somos).'
+  ],
+  examples: [
+    { es: '—¿Estás cansada? —Lo estoy, la verdad.', en: '—Are you tired? —I am, actually.' },
+    { es: 'Se le rompió el jarrón sin querer.', en: 'The vase broke on him/her, without meaning to.' },
+    { es: 'Se te olvidó la cita, ¿verdad?', en: 'You forgot the appointment, didn\'t you?' }
+  ],
+  probes: [
+    { id: 'p:pronpersB2:accidental', kind: 'mcq', q: '¿Cuál suaviza más la responsabilidad?',
+      options: ['Rompí el jarrón.', 'Se me rompió el jarrón.', 'Yo rompí el jarrón sin querer.'], answer: 1 },
+    { id: 'p:pronpersB2:orden', kind: 'mcq', q: '¿Cuál respeta el orden correcto de clíticos?',
+      options: ['Me se perdió.', 'Se me perdió.', 'Se perdió me.'], answer: 1 },
+    { id: 'p:pronpersB2:cloze', kind: 'cloze', text: '—¿Eres español? —___ soy. (lo, neutro)', accept: ['Lo', 'lo'] },
+    { id: 'p:pronpersB2:recall', kind: 'recall', front: 'Orden fijo de los clíticos combinados', back: 'se + 2.ª persona + 1.ª persona + 3.ª persona' }
+  ]
+},
+
+{
+  id: 'gr-exclamativos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:292', 'gramatica:B2:294', 'gramatica:B2:296', 'gramatica:B2:297', 'gramatica:B2:299'],
+  title: 'Los exclamativos: qué, cómo, cuánto y quién',
+  summary: 'Beyond the basic "¡Qué + adjective!", B2 adds a "que + subordinate clause" extension, "cómo" reacting to a verb rather than a quality, "cuánto" agreeing (or not) depending on what follows, and "quién" preferring its invariable form even when logic might suggest otherwise.',
+  sections: [
+    { h: 'Qué + noun/adverb/adjective + que + clause', html: 'The basic exclamation can extend with a subordinate clause: <i>¡Qué bien que estés aquí!</i>, <i>¡Qué maravilla que estás aquí!</i> — reacting not just to a quality but to the whole fact.' },
+    { h: 'Cómo + verb', html: '<i>Cómo</i> reacts to how an ACTION is done, not a quality: <i>¡Cómo canta!</i> ("how [well] he sings!").' },
+    { h: 'Cuánto: invariable with a verb, agreeing with a noun', html: 'Before a verb, <i>cuánto</i> stays invariable: <i>¡Cuánto sabe!</i> Before a noun, it agrees: <i>¡Cuántos amigos tiene!</i>' },
+    { h: 'Quién: preference for the invariable form', html: 'Even where a plural referent might be implied, <i>quién</i> (not <i>quiénes</i>) is preferred in fixed exclamatory patterns: <i>¡Quién podía imaginarlo!</i>' }
+  ],
+  contrasts: [
+    { es: '¡Qué bien!', en: 'How great!', note: 'basic exclamation, a quality' },
+    { es: '¡Qué bien que estés aquí!', en: "It's so great that you're here!", note: 'extended with que + clause, reacting to a whole fact' },
+    { es: '¡Cuánto sabe!', en: 'How much he knows!', note: 'invariable, before a verb' },
+    { es: '¡Cuántos amigos tiene!', en: 'How many friends he has!', note: 'agrees, before a noun' }
+  ],
+  pitfalls: [
+    'Do not confuse <i>cómo</i> (reacting to a verb/action) with <i>qué</i> (reacting to a quality) — <i>¡Cómo canta!</i> and <i>¡Qué bien canta!</i> both work but are grammatically distinct patterns.',
+    '<i>Cuánto</i> stays invariable directly before a conjugated verb (<i>¡Cuánto sabe!</i>) but must agree once a noun follows (<i>¡Cuántos amigos!</i>) — do not apply one rule to both positions.',
+    'In fixed exclamatory formulas, <i>quién</i> is preferred over <i>quiénes</i> even with a plausible plural sense — treat this as a set idiom, not a productive rule to extend elsewhere.'
+  ],
+  examples: [
+    { es: '¡Qué maravilla que hayas venido!', en: "How wonderful that you've come!" },
+    { es: '¡Cómo llueve hoy!', en: "How it's raining today!" },
+    { es: '¡Quién pudiera estar allí!', en: 'If only I could be there!' }
+  ],
+  probes: [
+    { id: 'p:exclamB2:comovsque', kind: 'mcq', q: '¿Cuál reacciona a CÓMO se hace la acción, no a una cualidad?',
+      options: ['¡Qué bien!', '¡Cómo canta!', '¡Cuánto sabe!'], answer: 1 },
+    { id: 'p:exclamB2:cuanto', kind: 'mcq', q: '¿Cuál es correcta?',
+      options: ['¡Cuánto amigos tiene!', '¡Cuántos amigos tiene!', '¡Cuánta amigos tiene!'], answer: 1 },
+    { id: 'p:exclamB2:cloze', kind: 'cloze', text: '¡Qué bien ___ estés aquí! (que)', accept: ['que'] },
+    { id: 'p:exclamB2:recall', kind: 'recall', front: '¿Es "cuánto" invariable siempre?', back: 'no — solo ante verbo; ante sustantivo concuerda' }
+  ]
+},
+
+{
+  id: 'gr-adverbios-nucleares-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:319', 'gramatica:B2:320', 'gramatica:B2:325', 'gramatica:B2:330', 'gramatica:B2:331', 'gramatica:B2:332'],
+  title: 'Adverbios: combinaciones, cuantificadores y equivalencia adjetival',
+  summary: 'B2 sharpens three fine points about adverbs: some combine with another deictic adverb but not all do, quantifiers like "muy" attach to some adverbs and not others with no obvious pattern, and a -mente adverb can sometimes be swapped for a plain adjective describing the subject with almost no change in meaning.',
+  sections: [
+    { h: 'Combining two adverbs of place', html: 'A prepositional adverb can stack with a deictic one: <i>allí encima</i> — but not every combination is natural or grammatical, so this has to be learned case by case.' },
+    { h: 'Quantifier compatibility is not predictable', html: '<i>Muy lejos</i> works; <i>*muy encimísima</i> does not — some place/time adverbs accept degree words or a superlative ending and others flatly refuse it, with no general rule to derive it from.' },
+    { h: 'A -mente adverb ≈ an adjective on the subject', html: 'A negative-prefixed or "-mente" manner adverb can often be swapped for an adjective agreeing with the subject, with the same import: <i>Me llamó desesperadamente</i> ≈ <i>Me llamó desesperado</i> ("he called me, desperate").' },
+    { h: 'Así: cataphoric, pointing forward', html: '<i>Así</i> can point FORWARD to something about to be said: <i>Pienso así: no es justo</i> — the adverb sets up the claim that follows.' }
+  ],
+  contrasts: [
+    { es: 'El libro está allí encima.', en: "The book is up there.", note: 'two adverbs combined — natural' },
+    { es: 'Vive muy lejos.', en: 'He lives very far away.', note: 'quantifier accepted' },
+    { es: '*Está muy encimísima.', en: '(wrong)', note: 'this adverb resists both quantifiers and superlative endings' },
+    { es: 'Me llamó desesperadamente. / Me llamó desesperado.', en: 'He called me desperately. / He called me, desperate.', note: 'near-equivalent — adverb vs adjective on the subject' }
+  ],
+  pitfalls: [
+    'Quantifier compatibility with place/time adverbs has no reliable general rule — <i>muy lejos</i> is fine, many others are not, so treat each adverb\'s compatibility as something to check rather than assume.',
+    'The adverb-adjective swap (<i>desesperadamente ≈ desesperado</i>) only works when the adverb describes the SUBJECT\'s state while acting, not a purely manner-of-action adverb like <i>rápidamente</i>.',
+    '<i>Así</i> pointing forward (cataphoric) is a distinct use from its usual backward-pointing (anaphoric) one — check which direction it points before translating.'
+  ],
+  examples: [
+    { es: 'El gato estaba allí debajo, escondido.', en: 'The cat was under there, hiding.' },
+    { es: 'Ocurrió recientemente, hace muy poco.', en: 'It happened recently, very recently.' },
+    { es: 'Me miró sorprendido. / Me miró sorprendidamente.', en: 'He looked at me, surprised. / He looked at me in surprise.' }
+  ],
+  probes: [
+    { id: 'p:advnuclB2:cuantificador', kind: 'mcq', q: '¿Cuál acepta el cuantificador "muy"?',
+      options: ['muy encimísima', 'muy lejos', 'muy aquí'], answer: 1 },
+    { id: 'p:advnuclB2:equivalencia', kind: 'mcq', q: '¿A qué equivale "me llamó desesperadamente"?',
+      options: ['Me llamó rápido.', 'Me llamó desesperado.', 'Me llamó despacio.'], answer: 1 },
+    { id: 'p:advnuclB2:cloze', kind: 'cloze', text: 'Pienso ___: esto no es justo. (así, catafórico)', accept: ['así'] },
+    { id: 'p:advnuclB2:recall', kind: 'recall', front: '¿Es predecible qué adverbios de lugar aceptan "muy"?', back: 'no, hay que aprenderlo caso por caso' }
+  ]
+},
+
+{
+  id: 'gr-imperativo-valores-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:521', 'gramatica:B2:523', 'gramatica:B2:524', 'gramatica:B2:525', 'gramatica:B2:526'],
+  title: 'El imperativo: valores más allá de la orden',
+  summary: 'Doubled and lexicalized imperatives do jobs that have almost nothing to do with commanding: comforting, urging into action, or expressing pure surprise — "¡Anda!" as a reaction to news has no addressee at all in the sense a real command would.',
+  sections: [
+    { h: 'Doubling for urgency', html: 'Repeating the imperative intensifies urgency: <i>Corre, corre que está ahí el tren!</i> — the doubling itself is the emphatic device.' },
+    { h: 'Lexicalized comfort and encouragement', html: '<i>Venga, anda, no te preocupes tanto</i> uses fossilized imperatives (<i>venga, anda</i>) purely to comfort — they carry no literal command to "come" or "walk".' },
+    { h: 'Lexicalized surprise', html: '<i>¡Anda!, ¡Vaya!</i> as pure reactions to news carry no command at all: <i>¡Anda! ¿Estás aquí?</i> reacts with surprise, not an instruction.' },
+    { h: 'Reinforcing or softening a real command', html: 'A genuine order can be reinforced (<i>Sal inmediatamente</i>) or softened with a conditional clause (<i>Sal, si no te importa</i>).' }
+  ],
+  contrasts: [
+    { es: 'Sal.', en: 'Get out.', note: 'plain command' },
+    { es: 'Sal inmediatamente.', en: 'Get out right now.', note: 'reinforced' },
+    { es: 'Sal, si no te importa.', en: "Go out, if you don't mind.", note: 'softened with a conditional clause' },
+    { es: '¡Anda! No sabía que vivías aquí.', en: 'Oh! I didn\'t know you lived here.', note: 'pure surprise — no command at all' }
+  ],
+  pitfalls: [
+    'Lexicalized imperatives like <i>venga, anda, vaya</i> have drifted entirely from their literal verb meanings — do not translate <i>¡Anda!</i> as "walk!" when it reacts to surprising news.',
+    'Doubling the imperative (<i>corre, corre</i>) intensifies urgency; it is not simply repeating yourself for no reason, and dropping the repetition loses that urgency.',
+    'A softened command with a conditional clause (<i>sal, si no te importa</i>) is still grammatically an imperative — the softening is pragmatic, not a change of mood.'
+  ],
+  examples: [
+    { es: 'Vamos, vamos, que llegamos tarde.', en: "Come on, come on, we're going to be late." },
+    { es: 'Venga, no llores más, todo se arreglará.', en: "Come on, don't cry anymore, everything will work out." },
+    { es: '¡Vaya! No me lo esperaba.', en: "Wow! I wasn't expecting that." }
+  ],
+  probes: [
+    { id: 'p:imperativoB2:lexicalizado', kind: 'mcq', q: '"¡Anda! ¿Estás aquí?" — ¿qué función tiene "anda"?',
+      options: ['Una orden de caminar', 'Una reacción de sorpresa', 'Un consejo'], answer: 1 },
+    { id: 'p:imperativoB2:duplicacion', kind: 'mcq', q: '¿Qué logra duplicar el imperativo ("corre, corre")?',
+      options: ['Nada, es un error', 'Intensificar la urgencia', 'Suavizar la orden'], answer: 1 },
+    { id: 'p:imperativoB2:cloze', kind: 'cloze', text: 'Sal, si no te ___. (importar, suavizando la orden)', accept: ['importa'] },
+    { id: 'p:imperativoB2:recall', kind: 'recall', front: '¿"Venga" y "anda" como consuelo tienen relación con su significado literal?', back: 'no, están lexicalizados, sin relación con "venir"/"andar"' }
+  ]
+},
+
+{
+  id: 'gr-formas-no-personales-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:546', 'gramatica:B2:547', 'gramatica:B2:549', 'gramatica:B2:552', 'gramatica:B2:554',
+         'gramatica:B2:557', 'gramatica:B2:560', 'gramatica:B2:561'],
+  title: 'Infinitivo, gerundio y participio: valores avanzados',
+  summary: 'Three refinements: an infinitive\'s silent subject can be controlled by the OBJECT of the main verb rather than its subject, a compound infinitive marks something already finished, and the gerund has a hard limit — it can mark simultaneity or manner, but never a LATER event, however tempting that reading feels in English.',
+  sections: [
+    { h: 'Infinitive subject controlled by the object', html: 'With verbs like <i>recomendar</i>, the infinitive\'s silent subject is the OBJECT of the main verb, not its subject: <i>El profesor recomendó al estudiante trabajar más</i> — the student is the one who should work, not the professor.' },
+    { h: 'Compound infinitive: perfective value', html: '<i>Por no haber estudiado</i> marks the action as already completed relative to the main verb: <i>El profesor le regañó por no haber estudiado.</i>' },
+    { h: 'Gerund: simultaneity or manner, never later', html: 'A gerund can mark simultaneity (<i>Me lo confesó yendo por la calle</i> = while walking) or manner (<i>Ella habló tartamudeando</i>), but NEVER a subsequent event: <i>*Abrí la puerta encontrándome con él</i> is wrong precisely because "meeting him" happened after opening the door, not during.' },
+    { h: 'Participle: full complement, and the passive of action', html: 'A participle can carry its own complements (<i>Me miró sorprendido de mi respuesta</i>) and appears in the passive of action with <i>ser</i>: <i>Las puertas serán abiertas a las 10.</i>' }
+  ],
+  contrasts: [
+    { es: 'El profesor recomendó al estudiante trabajar más.', en: 'The teacher recommended the student work more.', note: 'infinitive subject = the OBJECT "al estudiante"' },
+    { es: 'Me lo confesó yendo por la calle.', en: 'He confessed it to me while walking down the street.', note: 'gerund of simultaneity — correct' },
+    { es: '*Abrí la puerta encontrándome con él.', en: '(wrong)', note: 'the gerund cannot mark a LATER event — "meeting him" came after' },
+    { es: 'Las puertas serán abiertas a las 10.', en: 'The doors will be opened at 10.', note: 'passive of action, ser + participle' }
+  ],
+  pitfalls: [
+    'The "gerund of posteriority" is a real, gate-checkable error: a gerund can never describe something that happens AFTER the main verb\'s action — rewrite with <i>y luego</i> or a new sentence instead.',
+    'Do not assume the infinitive\'s silent subject is always the main clause\'s subject — with verbs like <i>recomendar, permitir, invitar a</i>, it is controlled by the OBJECT instead.',
+    'The compound infinitive (<i>haber + participio</i>) is not optional decoration — it specifically marks the action as completed before the point of reference, unlike the plain infinitive.'
+  ],
+  examples: [
+    { es: 'El director me invitó a salir de la sala.', en: 'The director invited me to leave the room.' },
+    { es: 'Se disculpó por no haber avisado antes.', en: 'He apologized for not having warned earlier.' },
+    { es: 'Encontré la puerta cerrada con llave.', en: 'I found the door locked.' }
+  ],
+  probes: [
+    { id: 'p:formasnopersB2:controlOD', kind: 'mcq', q: '"El profesor recomendó al estudiante trabajar más." ¿Quién debe trabajar más?',
+      options: ['El profesor', 'El estudiante', 'Ambos'], answer: 1 },
+    { id: 'p:formasnopersB2:gerundio', kind: 'mcq', q: '¿Cuál es INCORRECTA (gerundio de posterioridad)?',
+      options: ['Se cayó bajando las escaleras.', 'Abrió la puerta encontrándose con él.', 'Habló llorando.'], answer: 1 },
+    { id: 'p:formasnopersB2:cloze', kind: 'cloze', text: 'Se disculpó por no ___ (haber) avisado antes.', accept: ['haber'] },
+    { id: 'p:formasnopersB2:recall', kind: 'recall', front: '¿Puede un gerundio marcar un evento POSTERIOR al verbo principal?', back: 'no, nunca — solo simultaneidad o modo' }
+  ]
+},
+
+{
+  id: 'gr-complementos-nominales-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:567', 'gramatica:B2:568', 'gramatica:B2:571', 'gramatica:B2:572'],
+  title: 'Complementos del nombre: ambiguos, no restrictivos, y sus límites',
+  summary: 'A possessive-like prepositional phrase after a noun can be read three different ways at once — agent, theme or possessor — and a comma changes a defining detail into a mere aside; meanwhile stacking too many prepositional complements onto one noun quickly becomes ungrammatical, even when each one alone is fine.',
+  sections: [
+    { h: 'Three readings of one PP complement', html: '<i>Tus informes</i> can mean the reports YOU wrote (agent), the reports ABOUT you (theme) or the reports YOU own (possessor) — Spanish leaves this genuinely ambiguous, resolved only by context.' },
+    { h: 'Restrictive vs non-restrictive, marked by commas', html: 'Without commas, a complement narrows down which one is meant. Set off by commas, it merely adds extra, non-defining information: <i>la chica, de ojos tristes,...</i> describes without picking her out from others.' },
+    { h: 'Passive-flavored participles as modifiers', html: 'A past participle modifying a noun can carry a passive sense with no separate clause needed: <i>el presidente elegido</i> = "the president who has been elected".' },
+    { h: 'Stacking complements has limits', html: 'Piling up more than one prepositional complement on the same noun, in the wrong combination or order, becomes ungrammatical: <i>*bolsos para mujeres de plástico</i> fails even though each phrase alone is fine.' }
+  ],
+  contrasts: [
+    { es: 'He leído tus informes.', en: "I've read your reports.", note: 'genuinely ambiguous: written by you, about you, or owned by you' },
+    { es: 'La chica de ojos tristes vive aquí.', en: 'The sad-eyed girl lives here.', note: 'no commas — restrictive, picks her out from others' },
+    { es: 'La chica, de ojos tristes, vive aquí.', en: 'The girl, sad-eyed, lives here.', note: 'commas — non-restrictive, just an added detail' }
+  ],
+  pitfalls: [
+    'A possessive-flavored PP complement (<i>tus informes</i>) is genuinely three-ways ambiguous in Spanish — do not assume context alone always disambiguates it for the listener too.',
+    'Commas around a complement are not optional punctuation — they are the only grammatical signal distinguishing a restrictive reading from a non-restrictive one.',
+    'Stacking prepositional complements on one noun has real combinatorial limits: <i>*bolsos para mujeres de plástico</i> is out even though <i>bolsos para mujeres</i> and <i>bolsos de plástico</i> are both fine alone.'
+  ],
+  examples: [
+    { es: 'El informe elaborado por el comité se publicará mañana.', en: 'The report drawn up by the committee will be published tomorrow.' },
+    { es: 'Mi hermano, siempre puntual, llegó tarde por primera vez.', en: 'My brother, always punctual, arrived late for the first time.' },
+    { es: 'El acusado, ya condenado, apeló la sentencia.', en: 'The accused, already convicted, appealed the sentence.' }
+  ],
+  probes: [
+    { id: 'p:compnominalesB2:ambiguo', kind: 'mcq', q: '"He leído tus informes" — ¿cuántas lecturas admite "tus"?',
+      options: ['Solo una', 'Tres: agente, tema o poseedor', 'Ninguna, es claro'], answer: 1 },
+    { id: 'p:compnominalesB2:comas', kind: 'mcq', q: '¿Qué marca la diferencia entre lectura restrictiva y no restrictiva?',
+      options: ['El orden de las palabras', 'Las comas', 'El tiempo verbal'], answer: 1 },
+    { id: 'p:compnominalesB2:cloze', kind: 'cloze', text: 'El presidente ___ (elegir, participio con valor pasivo) tomó posesión ayer.', accept: ['elegido'] },
+    { id: 'p:compnominalesB2:recall', kind: 'recall', front: '¿Qué distingue una relativa especificativa de una explicativa por escrito?', back: 'la presencia o ausencia de comas' }
+  ]
+},
+
+{
+  id: 'gr-nucleo-verbal-copulativos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:609', 'gramatica:B2:610', 'gramatica:B2:612', 'gramatica:B2:613', 'gramatica:B2:615',
+         'gramatica:B2:617', 'gramatica:B2:618', 'gramatica:B2:621'],
+  title: 'Auxiliares, copulativos y pseudocopulativos avanzados',
+  summary: 'Ser/estar\'s split for events vs places ("la cita ES en el cine" but "el cine ESTÁ en la plaza") is only the start — B2 adds a family of change-of-state verbs (ponerse, quedarse, hacerse, volverse) that all mean roughly "to become" but each restricts what kind of change it can describe.',
+  sections: [
+    { h: 'Ser for events, estar for places', html: 'An event is located with <i>ser</i>: <i>La cita es en el cine Callao.</i> The physical building is located with <i>estar</i>: <i>El cine está en la plaza de Callao.</i> Mixing them up is a classic, gate-checkable slip.' },
+    { h: 'Adjectives that flip meaning with ser/estar', html: 'Most descriptive adjectives take either verb with only an aspectual difference (<i>es delgado / está delgado</i>), but a handful genuinely change MEANING: <i>listo</i> (ser = clever; estar = ready), <i>verde</i> (ser = green; estar = unripe/inexperienced).' },
+    { h: 'Perífrasis: deber de and ponerse a', html: '<i>Deber de + infinitivo</i> marks a guess (<i>Debe de estar al llegar</i> — "must be about to arrive"), distinct from obligation <i>deber</i>. <i>Ponerse a + infinitivo</i> marks the sudden start of an action (<i>Se puso a llorar</i>).' },
+    { h: 'Pseudocopulative change verbs', html: '<i>Ponerse, quedarse, hacerse, volverse</i> all mean "to become" but restrict the kind of change: <i>ponerse</i> for a temporary state (<i>se puso rojo</i>), <i>quedarse</i> for a resulting state (<i>se quedó calvo</i>), <i>hacerse</i> for a gradual, often voluntary change (<i>se hizo médico</i>), <i>volverse</i> for a more sudden or involuntary one (<i>se volvió loco</i>).' }
+  ],
+  contrasts: [
+    { es: 'La reunión es en la sala 3.', en: 'The meeting is in room 3.', note: 'ser — locating an EVENT' },
+    { es: 'La sala 3 está al fondo del pasillo.', en: 'Room 3 is at the end of the hallway.', note: 'estar — locating a PLACE' },
+    { es: 'Es muy listo.', en: "He's very clever.", note: 'ser + listo = clever' },
+    { es: 'Está listo para salir.', en: "He's ready to leave.", note: 'estar + listo = ready — a different meaning entirely' }
+  ],
+  pitfalls: [
+    'Do not use <i>estar</i> to locate an event (<i>*El concierto está en el auditorio</i>) — an event, unlike a physical object, is located with <i>ser</i>.',
+    '<i>Listo</i> and <i>verde</i> genuinely change meaning with ser/estar, unlike most adjectives, where the choice is aspectual — treat these as lexical exceptions to learn individually.',
+    'The four change-verbs are not interchangeable: <i>se hizo rico</i> (a gradual, agentive process) reads very differently from <i>se volvió rico</i>, which would sound like an odd, sudden transformation for wealth.'
+  ],
+  examples: [
+    { es: 'El examen es en el aula 12.', en: 'The exam is in room 12.' },
+    { es: 'Debe de haber salido ya.', en: 'He must have already left.' },
+    { es: 'Se puso nerviosa al oír la noticia.', en: 'She got nervous on hearing the news.' }
+  ],
+  probes: [
+    { id: 'p:nucleocopB2:sereventar', kind: 'mcq', q: '¿Cuál es correcta para un EVENTO?',
+      options: ['La boda está en la iglesia.', 'La boda es en la iglesia.', 'La boda son en la iglesia.'], answer: 1 },
+    { id: 'p:nucleocopB2:listoverde', kind: 'mcq', q: '"Está listo" significa...',
+      options: ['Es inteligente', 'Está preparado', 'Es de color claro'], answer: 1 },
+    { id: 'p:nucleocopB2:cloze', kind: 'cloze', text: 'Se ___ médico después de siete años de carrera. (hacerse, proceso gradual)', accept: ['hizo'] },
+    { id: 'p:nucleocopB2:recall', kind: 'recall', front: '¿Qué verbo copulativo localiza un EVENTO (no un lugar físico)?', back: 'ser' }
+  ]
+},
+
+{
+  id: 'gr-subordinadas-sustantivas-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:679', 'gramatica:B2:680', 'gramatica:B2:681', 'gramatica:B2:684', 'gramatica:B2:685',
+         'gramatica:B2:686', 'gramatica:B2:687', 'gramatica:B2:688'],
+  title: 'Subordinadas sustantivas: el verbo principal decide el modo',
+  summary: 'The single biggest key to mood in a noun clause is the SEMANTIC CLASS of the main verb: verbs presenting an event as fact take the indicative and a postponed subject, verbs of influence or desire always pull the subjunctive, and negating a verb of saying can flip the mood entirely.',
+  sections: [
+    { h: 'Impersonal verbs of existence: postponed subject, indicative', html: '<i>Resultar, faltar, bastar, constar</i> as impersonal predicates take a postponed subject clause in the indicative: <i>Resulta que encontramos el dinero.</i> Some, like <i>faltar</i>, alternate with an infinitive: <i>Falta que terminemos esto</i> / <i>Falta terminar esto</i>.' },
+    { h: 'Negating a verb of saying can flip the mood', html: '<i>Decir/preguntar</i> negated allows either mood, with a meaning difference: <i>No me dijo que Luis hubiera venido</i> (subjunctive — casts doubt on whether it happened) vs <i>No me dijo que Luis había venido</i> (indicative — the fact is not in question, only whether he told you).' },
+    { h: 'Perception verbs: indicative in both polarities', html: 'Verbs like <i>notar, oír, imaginar</i> generally keep the indicative even when negated, treating the perceived event as still a fact: <i>Imagino que ya habrá vuelto.</i>' },
+    { h: 'Influence, desire, causation: always subjunctive', html: '<i>Aconsejar, sugerir, pedir</i> (influence), <i>querer, desear</i> (desire) and <i>causar, provocar, determinar</i> (causation) all require the subjunctive in their noun clause, regardless of affirmation or negation.' }
+  ],
+  contrasts: [
+    { es: 'Resulta que encontramos el dinero.', en: 'It turns out we found the money.', note: 'impersonal existence verb — indicative, postponed subject' },
+    { es: 'No me dijo que Luis hubiera venido.', en: "He didn't tell me Luis had come.", note: 'negated decir + subjunctive — casts doubt on the fact itself' },
+    { es: 'No me dijo que Luis había venido.', en: "He didn't tell me (that) Luis had come.", note: 'negated decir + indicative — the fact stands, only the telling is denied' },
+    { es: 'Le pedí que llegara antes.', en: 'I asked her to arrive earlier.', note: 'verb of influence — always subjunctive' }
+  ],
+  pitfalls: [
+    'Negating <i>decir/preguntar</i> genuinely offers a choice of mood with a real meaning difference — do not assume the subjunctive is simply "more correct" once negation appears.',
+    'Verbs of influence, desire and causation take the subjunctive REGARDLESS of polarity — unlike <i>decir</i>, negating <i>querer/pedir</i> does not flip them to indicative.',
+    'An impersonal existence verb like <i>faltar</i> alternates between a subjunctive clause and a plain infinitive with the same meaning when there is no separate subject: <i>falta que terminemos</i> = <i>falta terminar</i>.'
+  ],
+  examples: [
+    { es: 'Basta con que lo intentes.', en: "It's enough that you try." },
+    { es: 'No noté que hubiera cambiado nada.', en: "I didn't notice anything had changed." },
+    { es: 'La crisis provocó que muchas empresas cerraran.', en: 'The crisis caused many companies to close.' }
+  ],
+  probes: [
+    { id: 'p:subsustB2:negardecir', kind: 'mcq', q: '"No me dijo que Luis ___ venido" (poniendo en duda el hecho)',
+      options: ['había', 'hubiera', 'ha'], answer: 1 },
+    { id: 'p:subsustB2:influencia', kind: 'mcq', q: '¿Qué modo exige siempre un verbo de influencia como "pedir"?',
+      options: ['Indicativo', 'Subjuntivo', 'Depende de la negación'], answer: 1 },
+    { id: 'p:subsustB2:cloze', kind: 'cloze', text: '___ que terminemos esto antes del viernes. (faltar)', accept: ['Falta'] },
+    { id: 'p:subsustB2:recall', kind: 'recall', front: '¿Qué decide el modo en una subordinada sustantiva?', back: 'la clase semántica del verbo principal' }
+  ]
+},
+
+{
+  id: 'gr-subordinadas-relativas-tipos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  pcic: ['gramatica:B2:701', 'gramatica:B2:702', 'gramatica:B2:703', 'gramatica:B2:705', 'gramatica:B2:706',
+         'gramatica:B2:707', 'gramatica:B2:709', 'gramatica:B2:710', 'gramatica:B2:717', 'gramatica:B2:722'],
+  title: 'Relativas: especificativas, explicativas y sus restricciones',
+  summary: 'Beyond the comma that separates a specifying relative clause from an explanatory one, B2 maps out exactly where relatives refuse to go: they resist an infinitive, resist the subjunctive when explicative, and refuse a non-specific antecedent when specifying — three separate restrictions, not one.',
+  sections: [
+    { h: 'Specificative vs explicative', html: 'Specificative clauses narrow down a referent, no commas: <i>La chica de la que te hablé vendrá.</i> Explicative clauses add non-defining information, set off by commas: <i>La profesora, que es argentina, es muy buena.</i>' },
+    { h: 'Three restrictions', html: 'Relatives resist an infinitive (<i>*con la que casarme</i> is not standard), resist the subjunctive when explicative (<i>*Mis amigos, que no quieran venir,...</i> is wrong), and refuse a non-specific antecedent when specificative without licensing context (<i>*No conozco a nadie que habla así</i> needs the subjunctive instead, or fails with a non-specific reading in the indicative).' },
+    { h: 'Predicative relatives with haber and perception verbs', html: '<i>Haber</i> can license a predicative relative that is otherwise ungrammatical alone: <i>Hay decisiones con las que no estoy de acuerdo</i> (but not <i>*Hay decisiones</i> meaning the same). Perception verbs allow a similar predicative use: <i>La oí que venía por el pasillo.</i>' },
+    { h: 'Tonic pronoun before an explicative, and person agreement', html: 'A tonic subject pronoun can precede its own explicative relative: <i>Yo, que no sé nada...</i> The relative clause\'s verb then agrees with that pronoun\'s person: <i>Tú, que te crees tan listo...</i>' }
+  ],
+  contrasts: [
+    { es: 'La chica de la que te hablé vendrá la próxima semana.', en: 'The girl I told you about will come next week.', note: 'specificative — no commas, narrows down which girl' },
+    { es: 'La profesora, que es argentina, es muy buena.', en: 'The teacher, who is Argentine, is very good.', note: 'explicative — commas, adds extra information' },
+    { es: 'Hay decisiones con las que no estoy de acuerdo.', en: "There are decisions I don't agree with.", note: 'predicative relative, licensed by haber' },
+    { es: 'Tú, que te crees tan listo, deberías saberlo.', en: 'You, who think you\'re so clever, should know that.', note: 'the relative verb agrees with "tú", not third person' }
+  ],
+  pitfalls: [
+    'An explicative relative clause resists the subjunctive: <i>*Mis amigos, que no quieran venir, están enfadados</i> is wrong — explicative clauses describe a known referent, which is incompatible with the uncertainty subjunctive signals.',
+    'A specificative relative needs a genuinely specific antecedent to stay indicative: <i>*No conozco a nadie que habla así</i> fails because "nadie" is inherently non-specific — the subjunctive (<i>que hable así</i>) is what that context requires.',
+    'When a tonic pronoun precedes its own relative clause (<i>Tú, que...</i>), the verb inside the relative must agree with THAT person, not default to third person — <i>Tú, que te crees</i>, never <i>*Tú, que se cree</i>.'
+  ],
+  examples: [
+    { es: 'El chico de quien te hablé llega mañana.', en: "The guy I told you about arrives tomorrow." },
+    { es: 'Esa persona, de la que no me fío nada, lo dijo.', en: "That person, whom I don't trust at all, said it." },
+    { es: 'Yo, que no sé nada de esto, prefiero no opinar.', en: "I, who know nothing about this, prefer not to give an opinion." }
+  ],
+  probes: [
+    { id: 'p:subrelativasB2:tipo', kind: 'mcq', q: '¿Cuál es explicativa (información añadida, no restrictiva)?',
+      options: ['El libro que compré ayer es bueno.', 'Mi hermano, que vive en Chile, viene en verano.', 'La chica con la que hablé se llama Ana.'], answer: 1 },
+    { id: 'p:subrelativasB2:subjuntivo', kind: 'mcq', q: '¿Cuál es correcta?',
+      options: ['No conozco a nadie que habla así.', 'No conozco a nadie que hable así.', 'No conozco a nadie que hablará así.'], answer: 1 },
+    { id: 'p:subrelativasB2:cloze', kind: 'cloze', text: 'Tú, que te ___ (creer) tan listo, deberías saberlo. (concordancia con tú)', accept: ['crees'] },
+    { id: 'p:subrelativasB2:recall', kind: 'recall', front: '¿Resiste la subjuntivo una relativa EXPLICATIVA?', back: 'sí, la resiste — describe un referente ya conocido' }
+  ]
 }
 
 ];

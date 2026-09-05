@@ -247,6 +247,10 @@ window.VERBS = [
   presente:['vuelvo','vuelves','vuelve','volvemos','volvéis','vuelven'],
   presubj:['vuelva','vuelvas','vuelva','volvamos','volváis','vuelvan'] } },
 
+{ inf:'volverse', en:'to become, to turn (change of state)', type:'er', part:'vuelto', forms:{
+  presente:['vuelvo','vuelves','vuelve','volvemos','volvéis','vuelven'],
+  presubj:['vuelva','vuelvas','vuelva','volvamos','volváis','vuelvan'] } },
+
 { inf:'encontrar', en:'to find', type:'ar', forms:{
   presente:['encuentro','encuentras','encuentra','encontramos','encontráis','encuentran'],
   presubj:['encuentre','encuentres','encuentre','encontremos','encontréis','encuentren'] } },
@@ -1063,6 +1067,9 @@ window.VERBS = [
 { inf:'interesar', en:'to interest', type:'ar' },
 { inf:'proceder', en:'to come (from), to proceed', type:'er' },
 { inf:'ordenar', en:'to tidy, to organize; to order', type:'ar' },
+{ inf:'bastar', en:'to be enough, to suffice', type:'ar' },
+{ inf:'constar', en:'to be recorded, to be on record; to consist of', type:'ar' },
+{ inf:'fundirse', en:'to melt, to fuse', type:'ir' },
 { inf:'exportar', en:'to export', type:'ar' },
 { inf:'avisar', en:'to warn, to notify', type:'ar' },
 { inf:'fabricar', en:'to manufacture', type:'ar' },
