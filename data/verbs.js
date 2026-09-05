@@ -1584,5 +1584,9 @@ window.VERBS = [
 { inf:'supervisar', en:'to supervise', type:'ar' },
 { inf:'reestructurar', en:'to restructure', type:'ar' },
 { inf:'empeorar', en:'to worsen, to get worse', type:'ar' },
-{ inf:'contagiar', en:'to infect, to pass on (an illness)', type:'ar' }
+{ inf:'contagiar', en:'to infect, to pass on (an illness)', type:'ar' },
+{ inf:'especializarse', en:'to specialize', type:'ar' },
+{ inf:'evaluar', en:'to evaluate, to assess', type:'ar', forms:{
+  presente:['evalúo','evalúas','evalúa','evaluamos','evaluáis','evalúan'],
+  presubj:['evalúe','evalúes','evalúe','evaluemos','evaluéis','evalúen'] } }
 ];

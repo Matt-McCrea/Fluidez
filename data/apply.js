@@ -657,6 +657,19 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'Muchos pacientes ___ (padecer) esta enfermedad durante años sin saberlo.', inf: 'padecer', tense: 'imperfecto', person: 'ellos', en: 'Many patients used to suffer from this disease for years without knowing it.' },
 
   { type: 'transform', level: 6, instruction: 'Rewrite reaching the subjunctive after "para que":', from: 'Le recetaron el jarabe. Así dejaría de toser.', to: 'Le recetaron el jarabe para que dejara de toser.', en: 'They prescribed him the syrup so that he would stop coughing.' },
-  { type: 'transform', level: 7, instruction: 'Rewrite as a formal register write task avoiding informal words (avoidsAny: "vale", "tío", "guay"):', from: 'Vale, tío, el análisis salió guay, no te preocupes.', to: 'De acuerdo, los resultados del análisis son satisfactorios; no hay motivo de preocupación.', en: 'Understood, the test results are satisfactory; there is no reason for concern.' }
+  { type: 'transform', level: 7, instruction: 'Rewrite as a formal register write task avoiding informal words (avoidsAny: "vale", "tío", "guay"):', from: 'Vale, tío, el análisis salió guay, no te preocupes.', to: 'De acuerdo, los resultados del análisis son satisfactorios; no hay motivo de preocupación.', en: 'Understood, the test results are satisfactory; there is no reason for concern.' },
+
+  /* ---- B2 apply, batch 9 of 12 ---- */
+  { type: 'cloze', level: 6, text: 'Cuando yo ___ (matricularse) en la universidad, todavía no existía internet.', inf: 'matricularse', tense: 'preterito', person: 'yo', en: 'When I enrolled at university, the internet didn\'t exist yet.' },
+  { type: 'cloze', level: 6, text: 'Si hubiera estudiado más idiomas, ella se ___ (especializarse) en traducción.', inf: 'especializarse', tense: 'condperf', person: 'él/ella', en: 'If she had studied more languages, she would have specialized in translation.' },
+  { type: 'cloze', level: 7, text: 'Es fundamental que el profesorado ___ (evaluar) a cada alumno individualmente.', inf: 'evaluar', tense: 'presubj', person: 'él/ella', en: 'It is essential that the teaching staff evaluate each student individually.' },
+  { type: 'cloze', level: 6, text: 'Para junio, nosotros ya ___ (redactar) toda la tesis.', inf: 'redactar', tense: 'futperf', person: 'nosotros', en: 'By June, we will have already written the whole thesis.' },
+  { type: 'cloze', level: 6, text: 'Yo nunca ___ (copiar) en un examen, ni siquiera de adolescente.', inf: 'copiar', tense: 'perfecto', person: 'yo', en: 'I have never cheated on an exam, not even as a teenager.' },
+  { type: 'cloze', level: 6, text: 'Antes de aprobar la reforma, el ministerio ___ (revisar) el plan varias veces.', inf: 'revisar', tense: 'plusc', person: 'él/ella', en: 'Before approving the reform, the ministry had reviewed the plan several times.' },
+  { type: 'cloze', level: 7, text: 'Dudo que el tribunal ___ (calificar) el examen tan pronto.', inf: 'calificar', tense: 'presubj', person: 'él/ella', en: 'I doubt the panel will have graded the exam so soon.' },
+  { type: 'cloze', level: 6, text: 'De niño, mi abuela ___ (formarse) sola, sin apenas ir a la escuela.', inf: 'formarse', tense: 'imperfecto', person: 'él/ella', en: 'As a child, my grandmother used to educate herself, barely attending school.' },
+
+  { type: 'transform', level: 6, instruction: 'Rewrite using distinct tenses to narrate a whole academic journey (distinctTenses: 3):', from: 'Estudió medicina.', to: 'Estudió medicina durante seis años, ahora trabaja en un hospital y para el próximo año se habrá especializado en cirugía.', en: 'She studied medicine for six years, now works at a hospital, and by next year will have specialized in surgery.' },
+  { type: 'transform', level: 7, instruction: 'Rewrite as a "se" construction avoiding naming who corrected it:', from: 'Alguien corrigió mal el examen.', to: 'El examen se corrigió mal.', en: 'The exam was graded incorrectly.' }
 
 ];
