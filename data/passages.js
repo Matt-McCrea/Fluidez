@@ -3803,6 +3803,188 @@ window.PASSAGES = [
     { type: 'short', q: '¿Cuánto tiempo tuvo cada persona para opinar? (dos palabras)', accept: ['dos minutos'] },
     { type: 'translate', line: 'Al final, el ayuntamiento prometió estudiar las dos opciones antes de decidir.', model: 'In the end, the city council promised to study both options before deciding.' }
   ]
+},
+
+/* ============================================================================
+ * B2 passages — 200-300 words, Spanish-definition glossary, mcq testing
+ * inference/attitude. Batch 1 of 8 (WORKLIST.md § passages).
+ * ========================================================================== */
+{
+  id: 'rescate-lince-naturaleza-b2', title: 'El lince que nadie esperaba encontrar', level: 6, theme: 'naturaleza',
+  text: 'Nunca había visto un lince ibérico en libertad hasta aquella mañana de octubre, y no fue precisamente en las montañas donde llevaba semanas buscándolo. Trabajo como guardabosques en un parque natural de Andalucía, y llevaba tres años sin registrar ni un solo avistamiento confirmado en mi zona. La especie estuvo a punto de desaparecer hace dos décadas, cuando apenas quedaban un centenar de ejemplares en toda la península.\n\nAquel día había salido temprano para revisar unas cámaras trampa colocadas cerca de un arroyo, sin ninguna expectativa especial. Al acercarme, algo se movió entre la maleza; me quedé completamente inmóvil, convencido de que sería un zorro o, como mucho, un gato asilvestrado. Cuando el animal salió a un claro, reconocí enseguida las orejas puntiagudas y las manchas características: era un lince adulto, probablemente macho, y parecía estar en buen estado de salud.\n\nMe quedé observándolo casi diez minutos sin hacer ruido. El animal olfateó el aire, bebió agua del arroyo y desapareció de nuevo entre los matorrales, sin percatarse en ningún momento de mi presencia. Avisé de inmediato al equipo de conservación, que llevaba años esperando justamente una señal así en esta zona concreta.\n\nLos biólogos que revisaron después las fotografías de las cámaras confirmaron que se trataba de un macho joven, probablemente llegado desde un núcleo poblacional cercano en busca de nuevo territorio. Para muchos de nosotros, aquel encuentro casual demostró algo que los informes oficiales llevaban tiempo sugiriendo: la recuperación de la especie, lenta pero real, empieza por fin a notarse fuera de las zonas donde siempre se la había vigilado más de cerca.',
+  gloss: [
+    { es: 'el lince ibérico', en: 'un felino salvaje de la península, en grave peligro de extinción hasta hace poco' },
+    { es: 'el guardabosques', en: 'la persona encargada de vigilar y proteger un bosque o parque natural' },
+    { es: 'un avistamiento', en: 'el hecho de ver un animal salvaje en su hábitat' },
+    { es: 'asilvestrado', en: 'un animal doméstico que vive ahora como si fuera salvaje' },
+    { es: 'el núcleo poblacional', en: 'un grupo de individuos de una especie que vive junto en una misma zona' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué actitud transmite el narrador hacia el hallazgo del lince?', options: ['Indiferencia, porque los avistamientos son habituales', 'Sorpresa y satisfacción, tras años sin resultados', 'Desconfianza hacia el trabajo de los biólogos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué sugiere el último párrafo sobre la recuperación de la especie?', options: ['Que ha fracasado por completo', 'Que avanza lentamente pero empieza a extenderse a nuevas zonas', 'Que solo ocurre dentro de las zonas más vigiladas'], answer: 1 },
+    { type: 'short', q: '¿Qué profesión tiene el narrador? (dos palabras)', accept: ['guardabosques', 'es guardabosques'] },
+    { type: 'translate', line: 'Nunca había visto un lince ibérico en libertad hasta aquella mañana de octubre, y no fue precisamente en las montañas donde llevaba semanas buscándolo.', model: 'I had never seen an Iberian lynx in the wild until that October morning, and it was not, in fact, in the mountains where I had spent weeks looking for it.' }
+  ]
+},
+
+{
+  id: 'jefa-exigente-retrato-b2', title: 'Retrato de una jefa exigente', level: 6, theme: 'trabajo',
+  text: 'Marisa lleva casi veinte años dirigiendo el departamento de diseño, y quienes trabajan con ella por primera vez tardan poco en descubrir que su fama de exigente no es exagerada. Es de esas personas que revisan cada detalle de un proyecto tres veces, y solo entonces lo dan por bueno; para ella, "está bien" es una expresión demasiado vaga para merecer una respuesta.\n\nFísicamente, nada en ella llama especialmente la atención: viste siempre de forma sencilla, con colores neutros, como si no quisiera que la ropa distrajera de lo que realmente importa. Es su forma de hablar lo que la distingue enseguida. Habla despacio, pausando entre frase y frase, y mira fijamente a quien tiene delante mientras espera una respuesta concreta, no una excusa.\n\nLo curioso es que, a pesar de su reputación, casi nadie en el equipo querría trabajar para otra persona. Sus críticas, por duras que parezcan al principio, siempre vienen acompañadas de una explicación clara de qué falla y por qué. Nunca humilla a nadie delante de los demás; guarda sus comentarios más severos para las reuniones individuales, donde puede hablar sin que nadie más escuche.\n\nEs como tener un profesor exigente que, sin embargo, consigue que aprendas más en un año que en los cinco anteriores juntos. Quienes se marchan de su equipo, casi siempre, terminan reconociendo que fue la etapa en la que más crecieron profesionalmente, aunque en su momento la vivieran con cierto agobio. Marisa lo sabe, y probablemente por eso nunca ha suavizado su forma de trabajar: sabe exactamente qué resultado produce.',
+  gloss: [
+    { es: 'exigente', en: 'que pide mucho a los demás y no se conforma con poco' },
+    { es: 'vaga (expresión)', en: 'poco precisa, que no dice nada concreto' },
+    { es: 'la reputación', en: 'la opinión general que la gente tiene de alguien' },
+    { es: 'humillar', en: 'hacer sentir a alguien inferior o avergonzado delante de otros' },
+    { es: 'el agobio', en: 'la sensación de estar bajo mucha presión o estrés' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué actitud tiene el equipo hacia Marisa, a pesar de sus críticas?', options: ['La evitan siempre que pueden', 'La respetan y prefieren trabajar con ella', 'La consideran injusta y cruel'], answer: 1 },
+    { type: 'mcq', q: '¿Qué implica la comparación con "un profesor exigente"?', options: ['Que Marisa enseña literalmente en una escuela', 'Que su exigencia, aunque incómoda, produce un aprendizaje real', 'Que solo le interesa la teoría, no la práctica'], answer: 1 },
+    { type: 'short', q: '¿Dónde guarda Marisa sus comentarios más duros? (tres palabras)', accept: ['reuniones individuales', 'en reuniones individuales', 'para las reuniones individuales'] },
+    { type: 'translate', line: 'Nunca humilla a nadie delante de los demás', model: 'She never humiliates anyone in front of others' }
+  ]
+},
+
+{
+  id: 'vacunas-como-funcionan-b2', title: 'Cómo funcionan realmente las vacunas', level: 6, theme: 'ciencia',
+  text: 'Se suele explicar que una vacuna "protege" contra una enfermedad, pero pocas veces se detalla cómo consigue exactamente ese efecto. En realidad, una vacuna no ataca al virus directamente; lo que hace es enseñarle al propio sistema inmunitario a reconocerlo antes de que llegue una infección real.\n\nPara entender el proceso, hay que dividirlo en tres fases. En primer lugar, la vacuna introduce en el cuerpo una versión debilitada, inactiva o parcial del patógeno, que resulta inofensiva por sí sola. En segundo lugar, el sistema inmunitario detecta esos fragmentos como algo extraño y fabrica anticuerpos específicos para combatirlos, exactamente como haría frente a una infección de verdad. Por último, y esto es lo más importante, una parte de esas células queda almacenada como "memoria" durante meses o incluso años.\n\nCuando el organismo se encuentra después con el virus auténtico, no necesita empezar desde cero: las células de memoria reconocen la amenaza casi al instante y producen anticuerpos mucho más rápido de lo que tardarían sin haber sido vacunadas antes. Es precisamente esa rapidez la que suele evitar que la enfermedad llegue a desarrollarse, o que lo haga solo de forma leve.\n\nEsto explica también por qué algunas vacunas requieren varias dosis: cada dosis adicional refuerza esa memoria inmunitaria, de manera que el cuerpo responda con mayor intensidad y durante más tiempo. No se trata, por tanto, de repetir el mismo procedimiento por precaución, sino de completar un proceso de aprendizaje que, en muchos casos, necesita más de un contacto para consolidarse del todo.',
+  gloss: [
+    { es: 'el sistema inmunitario', en: 'el conjunto de células y órganos que defienden el cuerpo de infecciones' },
+    { es: 'el patógeno', en: 'un microorganismo, como un virus o bacteria, capaz de causar una enfermedad' },
+    { es: 'un anticuerpo', en: 'una proteína que el cuerpo fabrica para reconocer y neutralizar una amenaza concreta' },
+    { es: 'inofensivo', en: 'que no causa ningún daño' },
+    { es: 'consolidarse', en: 'volverse fuerte y estable de manera duradera' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué implica el texto sobre la idea popular de que una vacuna "ataca" al virus?', options: ['Que es exactamente correcta', 'Que es una simplificación poco precisa del proceso real', 'Que el texto la confirma sin matices'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué requieren varias dosis algunas vacunas, según el texto?', options: ['Por pura precaución médica sin motivo biológico', 'Porque cada dosis refuerza la memoria inmunitaria ya creada', 'Porque la primera dosis normalmente falla'], answer: 1 },
+    { type: 'short', q: '¿Cuántas fases tiene el proceso descrito? (una palabra)', accept: ['tres'] },
+    { type: 'translate', line: 'En realidad, una vacuna no ataca al virus directamente', model: 'In reality, a vaccine does not attack the virus directly' }
+  ]
+},
+
+{
+  id: 'debate-voto-16-politica-b2', title: '¿Debería votarse a los dieciséis años?', level: 6, theme: 'politica',
+  text: 'Se ha propuesto en varios países bajar la edad mínima para votar de dieciocho a dieciséis años, y la propuesta divide a la opinión pública casi por igual. Quienes defienden el cambio sostienen que los jóvenes de esa edad ya pagan impuestos indirectos, trabajan en muchos casos, y sufren directamente decisiones políticas como el cambio climático o el mercado laboral, sin tener ninguna forma de influir en ellas.\n\nUn argumento que se cita con frecuencia procede de Austria, uno de los pocos países europeos que ya permite votar desde los dieciséis años en elecciones nacionales. Un estudio de la universidad de Viena, publicado en 2019, mostró que la participación de los votantes de dieciséis y diecisiete años no fue menor que la de los adultos jóvenes, y que muchos de ellos declararon sentirse más comprometidos políticamente después de haber votado por primera vez a esa edad.\n\nEs cierto que no se puede afirmar que todos los adolescentes de dieciséis años tengan la madurez necesaria para evaluar programas electorales complejos; los críticos de la propuesta insisten en que la capacidad de razonamiento político sigue desarrollándose durante la adolescencia. Sin embargo, ese mismo argumento podría aplicarse igualmente a muchos adultos, y nadie propone por ello restringirles el voto según su nivel de formación.\n\nBajar la edad de voto no resolverá por sí solo la desconexión que sienten muchos jóvenes hacia la política institucional, y habría que acompañar la medida de una educación cívica real en los institutos. Aun así, los datos disponibles hasta ahora apuntan más a favor de la propuesta que en contra, aunque la decisión final siga siendo, sobre todo, una cuestión de voluntad política.',
+  gloss: [
+    { es: 'la edad mínima', en: 'la edad más baja permitida legalmente para hacer algo' },
+    { es: 'los impuestos indirectos', en: 'el dinero que se paga al Estado al comprar productos o servicios, no sobre el sueldo' },
+    { es: 'la madurez', en: 'la capacidad de pensar y decidir con responsabilidad' },
+    { es: 'la desconexión', en: 'la falta de interés o de relación con algo' },
+    { es: 'la educación cívica', en: 'la enseñanza sobre los derechos, deberes y funcionamiento de la sociedad' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué posición final adopta el autor del texto?', options: ['Rechaza totalmente la propuesta', 'Se muestra moderadamente favorable, con matices', 'No toma ninguna posición en absoluto'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo responde el texto al argumento de que los adolescentes carecen de madurez política?', options: ['Lo acepta sin objeciones', 'Señala que ese mismo argumento podría aplicarse a adultos, sin que se les restrinja el voto', 'Afirma que la madurez no importa en política'], answer: 1 },
+    { type: 'short', q: '¿Qué país se cita como ejemplo? (una palabra)', accept: ['austria'] },
+    { type: 'translate', line: 'Bajar la edad de voto no resolverá por sí solo la desconexión que sienten muchos jóvenes hacia la política institucional', model: 'Lowering the voting age will not by itself solve the disconnection many young people feel from institutional politics' }
+  ]
+},
+
+{
+  id: 'pueblo-mercado-viajes-b2', title: 'El mercado de un pueblo de montaña', level: 6, theme: 'viajes',
+  text: 'El pueblo de Arenillas se despierta cada sábado antes del amanecer, cuando los primeros puestos empiezan a montarse en la plaza principal. El mercado ocupa apenas dos calles estrechas, pero durante unas horas concentra a casi todos los vecinos de los pueblos vecinos, que bajan desde las aldeas de montaña cargados de productos para vender o para comprar.\n\nLos puestos de queso y embutido se colocan siempre junto a la iglesia, a la sombra, mientras que los de fruta y verdura ocupan el centro de la plaza, donde da el sol de la mañana. Entre unos y otros circulan vendedores ambulantes de herramientas viejas, ropa de segunda mano y utensilios de cocina que ya casi nadie fabrica en las ciudades grandes. El olor a pan recién horneado se mezcla con el del café de un pequeño bar que abre sus puertas justo a las siete.\n\nLo que distingue a este mercado de otros más turísticos es que apenas ha cambiado en las últimas décadas: no hay puestos de recuerdos ni artesanía dirigida a visitantes, solo productos que la gente del lugar realmente necesita comprar cada semana. Las conversaciones entre vendedor y comprador se alargan mucho más de lo estrictamente necesario, y no es raro ver a dos personas discutiendo animadamente sobre el precio de un kilo de patatas durante diez minutos, sin que ninguna de las dos parezca tener prisa.\n\nHacia el mediodía, cuando el sol ya calienta con fuerza, los puestos empiezan a recogerse tan rápido como se montaron. Para las dos de la tarde, la plaza vuelve a estar completamente vacía, como si el mercado nunca hubiera existido, hasta el sábado siguiente.',
+  gloss: [
+    { es: 'el amanecer', en: 'el momento del día en que empieza a salir el sol' },
+    { es: 'un puesto (de mercado)', en: 'una mesa o instalación pequeña donde se vende algo al aire libre' },
+    { es: 'un vendedor ambulante', en: 'alguien que vende productos moviéndose de un sitio a otro, sin tienda fija' },
+    { es: 'la artesanía', en: 'los objetos hechos a mano, de forma tradicional' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué actitud transmite el texto hacia este mercado frente a uno turístico?', options: ['Cierta añoranza y aprecio por su carácter auténtico', 'Desprecio, porque le falta modernidad', 'Indiferencia total'], answer: 0 },
+    { type: 'mcq', q: '¿Qué sugiere la larga negociación por el precio de las patatas?', options: ['Que los vecinos son especialmente pobres', 'Que el ritmo social del mercado importa tanto como la propia compra', 'Que hay un conflicto real entre vendedor y comprador'], answer: 1 },
+    { type: 'short', q: '¿A qué hora abre el pequeño bar? (dos palabras)', accept: ['las siete', 'a las siete'] },
+    { type: 'translate', line: 'Para las dos de la tarde, la plaza vuelve a estar completamente vacía, como si el mercado nunca hubiera existido, hasta el sábado siguiente.', model: 'By two in the afternoon, the square is completely empty again, as if the market had never existed, until the following Saturday.' }
+  ]
+},
+
+{
+  id: 'panaderia-familiar-economia-b2', title: 'La panadería que casi cierra', level: 6, theme: 'economia',
+  text: 'Para cuando Rosario decidió pedir un préstamo, la panadería familiar llevaba ya dos años perdiendo clientes frente al supermercado nuevo del barrio, que vendía pan más barato aunque de peor calidad. Su padre había abierto el negocio hace treinta y cinco años, y la idea de cerrarlo le resultaba, sencillamente, inaceptable.\n\nEl banco le ofreció un crédito a un interés razonable, pero solo lo aprobó una vez que ella presentó un plan de negocio detallado. Rosario pasó semanas enteras estudiando qué hacían las panaderías que sí sobrevivían a la competencia de las grandes cadenas: casi todas habían encontrado un nicho concreto, en lugar de intentar competir directamente en precio. Decidió entonces especializarse en pan artesano de fermentación lenta, algo que ningún supermercado de la zona podía ofrecer.\n\nLos primeros meses fueron difíciles. Había invertido gran parte del préstamo en un horno nuevo y en ingredientes de mejor calidad, y las ventas tardaron en reflejar ese cambio. Sin embargo, poco a poco, empezaron a llegar clientes de otros barrios, atraídos por las reseñas que circulaban de boca en boca y, más tarde, por internet. Un año después de pedir el crédito, la panadería ya facturaba un veinte por ciento más que en el año previo a la reforma.\n\nHoy, Rosario reconoce que estuvo a punto de rendirse varias veces durante ese primer año. Lo que finalmente la convenció de seguir adelante no fueron los números, que en su momento resultaban desalentadores, sino la certeza de que competir en calidad, y no en precio, era la única estrategia con verdadero futuro para un negocio tan pequeño frente a una cadena tan grande.',
+  gloss: [
+    { es: 'un préstamo', en: 'una cantidad de dinero que un banco presta, y que hay que devolver con intereses' },
+    { es: 'un nicho (de mercado)', en: 'una parte pequeña y específica de un mercado, poco atendida por la competencia' },
+    { es: 'artesano', en: 'hecho a mano, con métodos tradicionales, no de forma industrial' },
+    { es: 'facturar', en: 'obtener una cantidad determinada de ingresos por las ventas realizadas' },
+    { es: 'desalentador', en: 'que quita las ganas de continuar, que produce desánimo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué estrategia distingue a las panaderías que sobrevivieron a la competencia, según el texto?', options: ['Bajar los precios al nivel del supermercado', 'Especializarse en un nicho que la competencia no podía ofrecer', 'Cerrar antes de perder más dinero'], answer: 1 },
+    { type: 'mcq', q: '¿Qué fue lo que realmente mantuvo a Rosario en el negocio, según el último párrafo?', options: ['Los buenos resultados económicos inmediatos', 'La convicción de que la calidad era la única estrategia viable', 'La presión de su familia'], answer: 1 },
+    { type: 'short', q: '¿En qué se especializó la panadería? (dos palabras)', accept: ['pan artesano', 'fermentación lenta'] },
+    { type: 'translate', line: 'Para cuando Rosario decidió pedir un préstamo, la panadería familiar llevaba ya dos años perdiendo clientes', model: 'By the time Rosario decided to ask for a loan, the family bakery had already been losing customers for two years' }
+  ]
+},
+
+{
+  id: 'radio-antigua-objeto-b2', title: 'El aparato de radio de mi abuelo', level: 6, theme: 'medios',
+  text: 'En el salón de mis abuelos, sobre un mueble de madera oscura, todavía descansa un aparato de radio de válvulas que compraron poco después de casarse, hace ya más de sesenta años. Está fabricado en baquelita marrón, con un dial circular iluminado por dentro y dos botones grandes de plástico: uno para el volumen y otro para sintonizar la emisora.\n\nA diferencia de los aparatos actuales, este tarda casi un minuto en calentarse y empezar a emitir algún sonido: primero se escucha un zumbido grave, después algunas interferencias, y solo entonces aparece, poco a poco, la voz o la música de la emisora sintonizada. El sonido que produce es cálido y algo metálico, muy distinto de la claridad limpia de un altavoz moderno, pero con un carácter que mi abuela describe como "más humano".\n\nDurante décadas, aquella radio fue la principal fuente de noticias de la familia, y mi abuelo recuerda perfectamente haber escuchado a través de ella acontecimientos históricos que después solo conoció en detalle por los periódicos del día siguiente. Hoy, la radio ya no funciona como receptor habitual: mis abuelos escuchan las noticias en una aplicación del móvil, mucho más cómoda y con mejor sonido.\n\nSin embargo, nadie en la familia se ha planteado nunca deshacerse de ella. Ocupa un lugar central en el salón, no porque siga siendo útil, sino porque representa, de una forma muy concreta, cómo ha cambiado por completo la manera en que una familia entera se informa del mundo a lo largo de una sola vida.',
+  gloss: [
+    { es: 'la baquelita', en: 'un tipo de plástico duro muy usado en aparatos antiguos, hoy poco común' },
+    { es: 'sintonizar', en: 'ajustar un aparato para recibir una emisora concreta' },
+    { es: 'un zumbido', en: 'un sonido grave y continuo, como el de un motor lejano' },
+    { es: 'un altavoz', en: 'el dispositivo que reproduce el sonido de un aparato' },
+    { es: 'deshacerse de algo', en: 'dejar de tener algo, normalmente tirándolo o regalándolo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué conserva la familia la radio, según el texto?', options: ['Porque todavía funciona mejor que un móvil', 'Porque simboliza un cambio real en la forma de informarse', 'Porque piensan venderla algún día'], answer: 1 },
+    { type: 'mcq', q: '¿Qué connotación tiene la palabra "cálido" aplicada al sonido de la radio?', options: ['Una crítica a su mala calidad técnica', 'Un matiz positivo y afectivo, no solo técnico', 'Una referencia literal a la temperatura del aparato'], answer: 1 },
+    { type: 'short', q: '¿De qué material está fabricado el aparato? (una palabra)', accept: ['baquelita'] },
+    { type: 'translate', line: 'Durante décadas, aquella radio fue la principal fuente de noticias de la familia', model: 'For decades, that radio was the family\'s main source of news' }
+  ]
+},
+
+{
+  id: 'sistema-inmunitario-salud-b2', title: 'Las alergias: un sistema de defensa confundido', level: 6, theme: 'salud',
+  text: 'Cada primavera, millones de personas sufren estornudos, picor de ojos y congestión nasal al entrar en contacto con el polen, una sustancia que, en sí misma, resulta completamente inofensiva. La pregunta que muchos se hacen es evidente: si el polen no representa ningún peligro real, ¿por qué el cuerpo reacciona como si lo fuera?\n\nLa respuesta tiene que ver con un error de identificación por parte del sistema inmunitario. En una persona alérgica, el organismo clasifica erróneamente el polen como una amenaza, de forma parecida a como reaccionaría frente a un parásito o una bacteria peligrosa. Como consecuencia, libera histamina y otras sustancias químicas cuya función normal es defender el cuerpo, pero que en este contexto solo producen inflamación, picor y exceso de mucosidad sin ningún beneficio real.\n\nUna teoría bastante extendida entre los investigadores, conocida como la "hipótesis de la higiene", sugiere que este tipo de errores se han vuelto más frecuentes precisamente porque el sistema inmunitario moderno se enfrenta a muchos menos parásitos e infecciones reales que hace un siglo, sobre todo durante la infancia. Sin exposición temprana a según qué amenazas genuinas, el sistema inmunitario tendería a "aburrirse" y a reaccionar de forma exagerada frente a sustancias inofensivas como el polen, el polvo o determinados alimentos.\n\nEsta hipótesis no está exenta de críticas ni de matices, y los propios investigadores reconocen que probablemente explica solo una parte del aumento de las alergias registrado en las últimas décadas. Aun así, ofrece una perspectiva útil: una alergia no es, en el fondo, un sistema de defensa débil, sino uno que defiende con demasiado entusiasmo algo que nunca debería haber considerado un enemigo.',
+  gloss: [
+    { es: 'el polen', en: 'un polvo fino producido por las plantas, necesario para su reproducción' },
+    { es: 'la histamina', en: 'una sustancia química que el cuerpo libera durante una reacción alérgica' },
+    { es: 'un parásito', en: 'un organismo que vive a costa de otro, causándole daño' },
+    { es: 'no estar exento de algo', en: 'no librarse de algo, seguir teniéndolo en cierta medida' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué sugiere la "hipótesis de la higiene" sobre el aumento de las alergias?', options: ['Que se debe únicamente a la contaminación del aire', 'Que la menor exposición a amenazas reales puede desregular el sistema inmunitario', 'Que las alergias siempre han existido en la misma proporción'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo describe el texto, en el fondo, una reacción alérgica?', options: ['Como un sistema de defensa débil e ineficaz', 'Como un sistema de defensa que reacciona con exceso de celo ante algo inofensivo', 'Como una enfermedad contagiosa'], answer: 1 },
+    { type: 'short', q: '¿Cómo se llama la sustancia que el cuerpo libera durante la alergia? (una palabra)', accept: ['histamina'] },
+    { type: 'translate', line: 'el polen, una sustancia que, en sí misma, resulta completamente inofensiva.', model: 'pollen, a substance that, in itself, is completely harmless.' }
+  ]
+},
+
+{
+  id: 'renta-basica-economia-b2', title: '¿Funciona la renta básica universal?', level: 7, theme: 'economia',
+  text: 'Desde hace más de una década, distintos gobiernos han experimentado con programas de renta básica universal: un pago mensual fijo que el Estado entrega a sus ciudadanos, sin condiciones previas ni obligación de justificar en qué se gasta. Los defensores de la medida argumentan que simplificaría enormemente el sistema de ayudas sociales actual, reduciendo la burocracia y eliminando la estigmatización asociada a otros subsidios.\n\nUno de los experimentos más citados se llevó a cabo en Finlandia entre 2017 y 2018, cuando el gobierno entregó quinientos setenta euros mensuales a dos mil desempleados elegidos al azar, sin exigirles buscar trabajo activamente a cambio. Un informe oficial publicado posteriormente mostró que los participantes no encontraron empleo con más rapidez que un grupo de control equivalente, pero sí declararon niveles significativamente menores de estrés y mayor satisfacción vital durante el periodo del experimento.\n\nLos críticos de la renta básica señalan, sin embargo, que financiar un pago así para toda la población resultaría extraordinariamente caro, y que ese dinero probablemente rendiría más si se concentrara en quienes realmente lo necesitan, en lugar de repartirse también entre quienes ya disponen de ingresos elevados. Además, argumentan que eliminar por completo el vínculo entre ayuda económica y búsqueda activa de empleo podría, a largo plazo, desincentivar la incorporación al mercado laboral en algunos sectores.\n\nEs poco probable que un solo experimento, por bien diseñado que esté, resuelva un debate que combina cuestiones económicas, éticas y políticas tan distintas entre sí. Lo que sí parece cada vez más claro es que el bienestar subjetivo de las personas mejora de forma medible cuando desaparece la incertidumbre económica más básica, algo que cualquier reforma futura del sistema de ayudas sociales debería, como mínimo, tomarse en serio.',
+  gloss: [
+    { es: 'la burocracia', en: 'los trámites y procedimientos administrativos, a menudo lentos y complicados' },
+    { es: 'la estigmatización', en: 'el hecho de marcar negativamente a alguien por su situación social' },
+    { es: 'un subsidio', en: 'una ayuda económica que da el Estado a una persona o grupo concreto' },
+    { es: 'un grupo de control', en: 'en un experimento, el grupo con el que se compara a quienes reciben la medida estudiada' },
+    { es: 'desincentivar', en: 'reducir las ganas o los motivos de alguien para hacer algo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué resultado del experimento finlandés sorprende más, según el texto?', options: ['Que los participantes encontraron trabajo mucho más rápido', 'Que el empleo no mejoró, pero sí el bienestar subjetivo', 'Que el experimento fue un fracaso total'], answer: 1 },
+    { type: 'mcq', q: '¿Qué posición final sugiere el texto sobre el debate de la renta básica?', options: ['Que está completamente resuelto a favor de la medida', 'Que sigue abierto, aunque el bienestar subjetivo merece tomarse en serio', 'Que ningún gobierno debería volver a probarlo'], answer: 1 },
+    { type: 'short', q: '¿En qué país se realizó el experimento citado? (una palabra)', accept: ['finlandia'] },
+    { type: 'translate', line: 'los participantes no encontraron empleo con más rapidez que un grupo de control equivalente', model: 'participants did not find employment any faster than an equivalent control group' }
+  ]
+},
+
+{
+  id: 'cuadro-robado-arte-b2', title: 'El cuadro que volvió treinta años después', level: 6, theme: 'arte',
+  text: 'En 1993, un pequeño museo municipal de provincias sufrió un robo que nunca llegó a resolverse: durante la noche, alguien forzó una ventana trasera y se llevó un óleo del siglo diecinueve valorado, según los peritos de la época, en unos cien mil euros. La policía interrogó a decenas de sospechosos habituales del mundo del arte y del contrabando, pero el cuadro pareció esfumarse por completo, y el caso acabó archivado pocos años después sin ningún resultado.\n\nHabrá pasado por varias manos a lo largo de estas tres décadas, especularon los investigadores cuando el caso volvió a reabrirse; probablemente cambió de dueño más de una vez, quizás vendido en subastas privadas donde nadie preguntaba demasiado por su procedencia exacta. Lo cierto es que nadie volvió a tener noticia alguna de la obra hasta el pasado mes de marzo, cuando un anticuario de una ciudad vecina alertó a la policía tras reconocer el cuadro en la vivienda de un cliente fallecido recientemente, cuya familia le había encargado tasar sus pertenencias antes de la subasta de la herencia.\n\nLa familia, que aseguró desconocer por completo el origen ilícito de la pieza, entregó el cuadro voluntariamente en cuanto se confirmó su identidad mediante un análisis pormenorizado del lienzo y del marco original. Los expertos del museo, tras compararlo con las fotografías de archivo, no tuvieron ninguna duda: era, sin ningún género de dudas, la misma obra desaparecida en 1993, con apenas algunos daños menores en el marco.\n\nEl museo ha anunciado ya que el cuadro volverá a exponerse dentro de unos meses, una vez completada su restauración, en una sala dedicada específicamente a contar la historia de su desaparición y su inesperado regreso. Para muchos vecinos de la ciudad, que crecieron oyendo hablar del robo como una leyenda local sin solución posible, la noticia ha resultado casi tan sorprendente como el propio hallazgo.',
+  gloss: [
+    { es: 'un óleo', en: 'una pintura hecha con un tipo de pintura espesa, tradicional en el arte clásico' },
+    { es: 'un perito', en: 'un experto que evalúa el valor o el estado de algo de forma oficial' },
+    { es: 'esfumarse', en: 'desaparecer por completo, sin dejar rastro' },
+    { es: 'un anticuario', en: 'alguien que compra, vende o valora objetos antiguos' },
+    { es: 'tasar', en: 'calcular oficialmente el valor económico de algo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué función cumple la frase "habrá pasado por varias manos" en el texto?', options: ['Afirma un hecho comprobado con certeza', 'Expresa una conjetura de los investigadores sobre el pasado del cuadro', 'Cita una declaración textual de la familia'], answer: 1 },
+    { type: 'mcq', q: '¿Qué actitud transmite el texto hacia la familia que entregó el cuadro?', options: ['Sospecha de que mintieran sobre su desconocimiento', 'Acepta sin cuestionar que actuaron de buena fe', 'Los acusa directamente del robo original'], answer: 1 },
+    { type: 'short', q: '¿En qué año fue robado el cuadro? (una palabra)', accept: ['1993', 'mil novecientos noventa y tres'] },
+    { type: 'translate', line: 'Habrá pasado por varias manos a lo largo de estas tres décadas', model: 'It must have passed through several hands over these three decades' }
+  ]
 }
 
 ];
