@@ -371,7 +371,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (176/204 done)
+## B2 — lessons (189/204 done)
 
 ### B2 · grammar (26/26)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
@@ -554,20 +554,20 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Concluir el relato** · 10 pts · `funciones B2 § 6.26. Concluir el relato`  — fn-concluir-relato-b2
 - [x] **Introducir un nuevo tema** · 9 pts · `funciones B2 § 6.27. Introducir un nuevo tema`  — fn-introducir-nuevo-tema-b2
 
-### B2 · discourse (0/13)
-- [ ] **Mantenimiento del referente y del hilo discursivo** · 10 pts · `tacticas_pragmaticas B2 § 1.1. Mantenimiento del referente y`
-- [ ] **Marcadores del discurso** · 19 pts · `tacticas_pragmaticas B2 § 1.2. Marcadores del discurso`
-- [ ] **La deixis** · 5 pts · `tacticas_pragmaticas B2 § 1.3. La deixis`
-- [ ] **Desplazamiento en el orden de los elementos oracionales** · 16 pts · `tacticas_pragmaticas B2 § 1.4. Desplazamiento en el orden de`
-- [ ] **Procedimientos de cita** · 14 pts · `tacticas_pragmaticas B2 § 1.5. Procedimientos de cita`
-- [ ] **Valores ilocutivos de los enunciados interrogativos** · 14 pts · `tacticas_pragmaticas B2 § 1.6. Valores ilocutivos de los enu`
-- [ ] **La expresión de la negación** · 7 pts · `tacticas_pragmaticas B2 § 1.7. La expresión de la negación`
-- [ ] **Significados interpretados** · 4 pts · `tacticas_pragmaticas B2 § 1.8. Significados interpretados`
-- [ ] **Intensificación o refuerzo** · 21 pts · `tacticas_pragmaticas B2 § 2.1. Intensificación o refuerzo`
-- [ ] **Focalización** · 9 pts · `tacticas_pragmaticas B2 § 2.3. Focalización`
-- [ ] **Los valores modales de la entonación y de otros elementos ** · 11 pts · `tacticas_pragmaticas B2 § 2.4. Los valores modales de la ent`
-- [ ] **Desplazamiento de la perspectiva temporal** · 5 pts · `tacticas_pragmaticas B2 § 2.5. Desplazamiento de la perspect`
-- [ ] **Cortesía verbal atenuadora** · 31 pts · `tacticas_pragmaticas B2 § 3.1. Cortesía verbal atenuadora`
+### B2 · discourse (13/13)
+- [x] **Mantenimiento del referente y del hilo discursivo** · 10 pts · `tacticas_pragmaticas B2 § 1.1. Mantenimiento del referente y`  — dc-mantenimiento-referente-b2
+- [x] **Marcadores del discurso** · 19 pts · `tacticas_pragmaticas B2 § 1.2. Marcadores del discurso`  — dc-marcadores-discurso-b2
+- [x] **La deixis** · 5 pts · `tacticas_pragmaticas B2 § 1.3. La deixis`  — dc-deixis-b2
+- [x] **Desplazamiento en el orden de los elementos oracionales** · 16 pts · `tacticas_pragmaticas B2 § 1.4. Desplazamiento en el orden de`  — dc-rematizacion-tematizacion-b2
+- [x] **Procedimientos de cita** · 14 pts · `tacticas_pragmaticas B2 § 1.5. Procedimientos de cita`  — dc-cita-b2
+- [x] **Valores ilocutivos de los enunciados interrogativos** · 14 pts · `tacticas_pragmaticas B2 § 1.6. Valores ilocutivos de los enu`  — dc-valores-ilocutivos-b2
+- [x] **La expresión de la negación** · 7 pts · `tacticas_pragmaticas B2 § 1.7. La expresión de la negación`  — dc-negacion-b2
+- [x] **Significados interpretados** · 4 pts · `tacticas_pragmaticas B2 § 1.8. Significados interpretados`  — dc-significados-interpretados-b2
+- [x] **Intensificación o refuerzo** · 21 pts · `tacticas_pragmaticas B2 § 2.1. Intensificación o refuerzo`  — dc-intensificacion-b2
+- [x] **Focalización** · 9 pts · `tacticas_pragmaticas B2 § 2.3. Focalización`  — dc-focalizacion-b2
+- [x] **Los valores modales de la entonación y de otros elementos ** · 11 pts · `tacticas_pragmaticas B2 § 2.4. Los valores modales de la ent`  — dc-entonacion-b2
+- [x] **Desplazamiento de la perspectiva temporal** · 5 pts · `tacticas_pragmaticas B2 § 2.5. Desplazamiento de la perspect`  — dc-perspectiva-temporal-b2
+- [x] **Cortesía verbal atenuadora** · 31 pts · `tacticas_pragmaticas B2 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-b2
 
 ### B2 · genre (1/16)
 - [x] **Lista alfabética de géneros orales y escritos** · 49 pts · `generos_discursivos B2 § 1.1. Lista alfabética de géneros o`  — gn-reclamacion-b2

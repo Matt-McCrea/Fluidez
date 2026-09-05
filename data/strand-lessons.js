@@ -20592,6 +20592,545 @@ window.STRAND_LESSONS = [
     { id: 'p:introducirnuevoB2:cloze', kind: 'cloze', text: '___ de vacaciones, ¿ya reservaste el hotel? (hablando)', accept: ['Hablando', 'hablando'] },
     { id: 'p:introducirnuevoB2:recall', kind: 'recall', front: '¿"Por cierto" conecta lógicamente con el tema anterior?', back: 'no — introduce algo sin relación directa' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 discourse, all 13 items (WORKLIST.md, section B2 · discourse)
+ * completes B2 · discourse (13/13)
+ * ========================================================================== */
+{
+  id: 'dc-mantenimiento-referente-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:8', 'tacticas_pragmaticas:B2:9', 'tacticas_pragmaticas:B2:10', 'tacticas_pragmaticas:B2:11',
+         'tacticas_pragmaticas:B2:12', 'tacticas_pragmaticas:B2:13', 'tacticas_pragmaticas:B2:14', 'tacticas_pragmaticas:B2:15',
+         'tacticas_pragmaticas:B2:16', 'tacticas_pragmaticas:B2:17'],
+  title: 'Mantener el referente: elipsis, sinónimos, hiperónimos',
+  summary: 'Beyond pronouns, B2 tracks a referent by deleting the noun entirely when a prepositional complement makes it recoverable, by licensing an indefinite article to point anaphorically at someone already named, and by swapping in a synonym or a broader hyperonym instead of repeating the same word.',
+  sections: [
+    { h: 'Elipsis del núcleo nominal', html: '<i>¿Has visto mis llaves? Las de casa.</i> omits the noun entirely, leaving only the prepositional complement to identify it; a partitive works the same way — <i>tres de los cuatro firmantes</i> can shrink to just <i>tres</i>.' },
+    { h: 'El artículo indefinido anafórico', html: '<i>Isidro nos contó todos los detalles. No lo esperábamos de un hombre tan discreto.</i> — "un hombre" already refers back to Isidro; the indefinite article works anaphorically here only because a restrictive modifier (<i>tan discreto</i>) licenses it.' },
+    { h: 'Sinónimos e hiperónimos', html: '<i>El presidente entregó la copa... El premio era de plata</i> substitutes a synonym; <i>Juan llevó su perro al veterinario. El animal tenía una pata rota</i> substitutes a broader hyperonym (<i>animal</i> for <i>perro</i>) instead of repeating it.' }
+  ],
+  exponents: [
+    { es: '¿Has visto mis llaves? Las de casa.', en: 'Have you seen my keys? The ones from home.', register: 'coloquial', note: 'elipsis del núcleo nominal — solo queda el complemento' },
+    { es: 'Isidro nos contó todos los detalles. No lo esperábamos de un hombre tan discreto.', en: "Isidro told us all the details. We didn't expect that from such a discreet man.", register: 'neutral', note: 'artículo indefinido anafórico, licenciado por el modificador restrictivo' },
+    { es: 'El presidente entregó la copa a los ganadores. El premio era de plata.', en: 'The president handed the ganadores the cup. The prize was silver.', register: 'formal', note: 'sustitución por sinónimo, típica de las noticias' },
+    { es: 'Juan llevó su perro al veterinario. El animal tenía una pata rota.', en: 'Juan took his dog to the vet. The animal had a broken paw.', register: 'neutral', note: 'sustitución por hiperónimo, evita la repetición' },
+    { es: 'Tres de los cuatro firmantes ya han llegado.', en: 'Three of the four signatories have already arrived.', register: 'neutral', note: 'elipsis partitiva — se omite el sustantivo repetido' }
+  ],
+  pitfalls: [
+    'El artículo indefinido anafórico solo funciona cuando el sintagma lleva un modificador restrictivo (<i>tan discreto</i>) — sin él, "un hombre" se leería como alguien nuevo, no como Isidro.',
+    'La sustitución por hiperónimo (<i>perro → animal</i>) es especialmente frecuente en Hispanoamérica cuando el nombre concreto se evita por tabú — no es un error de vocabulario, es una elección estilística.',
+    'La elipsis del núcleo (<i>las de casa</i>) exige que el complemento preposicional deje clarísimo qué se omite — sin contexto previo, la frase no se entiende.'
+  ],
+  examples: [
+    { es: 'Voy a una clase de español y luego a una de francés.', en: "I'm going to a Spanish class and then to a French one." },
+    { es: 'El gobierno anunció una reforma fiscal. La medida entrará en vigor en enero.', en: 'The government announced a tax reform. The measure will take effect in January.' },
+    { es: 'Algunos de los muchachos ya se habían ido cuando llegamos.', en: 'Some of the boys had already left by the time we arrived.' }
+  ],
+  probes: [
+    { id: 'p:mantrefB2:elipsis', kind: 'mcq', q: '"¿Has visto mis llaves? Las de casa." ¿Qué se ha omitido?',
+      options: ['El complemento', 'El núcleo nominal "llaves"', 'Nada, está completo'], answer: 1 },
+    { id: 'p:mantrefB2:articulo', kind: 'mcq', q: '¿Por qué funciona "un hombre" para referirse a Isidro, ya nombrado?',
+      options: ['Es un error', 'Por el modificador restrictivo "tan discreto"', 'Porque "hombre" es masculino'], answer: 1 },
+    { id: 'p:mantrefB2:cloze', kind: 'cloze', text: 'Juan llevó su perro al veterinario. El ___ tenía una pata rota. (hiperónimo de "perro")', accept: ['animal'] },
+    { id: 'p:mantrefB2:recall', kind: 'recall', front: '¿Qué necesita el artículo indefinido para funcionar anafóricamente?', back: 'un modificador restrictivo que lo ligue semánticamente al referente ya mencionado' }
+  ]
+},
+
+{
+  id: 'dc-marcadores-discurso-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:33', 'tacticas_pragmaticas:B2:34', 'tacticas_pragmaticas:B2:35', 'tacticas_pragmaticas:B2:36',
+         'tacticas_pragmaticas:B2:37', 'tacticas_pragmaticas:B2:38', 'tacticas_pragmaticas:B2:39', 'tacticas_pragmaticas:B2:40',
+         'tacticas_pragmaticas:B2:41', 'tacticas_pragmaticas:B2:42', 'tacticas_pragmaticas:B2:43', 'tacticas_pragmaticas:B2:44',
+         'tacticas_pragmaticas:B2:45', 'tacticas_pragmaticas:B2:46', 'tacticas_pragmaticas:B2:47', 'tacticas_pragmaticas:B2:48',
+         'tacticas_pragmaticas:B2:49', 'tacticas_pragmaticas:B2:50', 'tacticas_pragmaticas:B2:51'],
+  title: 'Marcadores del discurso B2: contraargumentativos y reformuladores',
+  summary: 'B2 fills in the connector classes B1 only sketched, and — crucially — separates five reformuladores that each repair something different: explicativo restates, recapitulativo condenses, rectificativo corrects what was just said, digresor detours to a new point, and distanciamiento dismisses the previous point\'s relevance entirely.',
+  sections: [
+    { h: 'Contraargumentativos: tres matices distintos', html: '<i>A pesar de</i> concedes an obstacle and continues regardless; <i>mientras que</i> simply contrasts two elements without conceding anything; <i>de todos modos</i> qualifies the first part of an argument, not quite conceding, not quite contrasting.' },
+    { h: 'Ordenadores: inicio, continuidad, cierre', html: '<i>Para empezar</i> (inicio), <i>por su parte</i> (continuidad), <i>para finalizar, en suma</i> (cierre) structure a whole argument into stages.' },
+    { h: 'Reformuladores: cada uno hace un trabajo distinto', html: '<i>En otras palabras</i> (explicativo, aclara) vs <i>resumiendo</i> (recapitulativo, condensa) vs <i>mejor dicho</i> (rectificativo, corrige) vs <i>por cierto</i> (digresor, se desvía) vs <i>en cualquier caso</i> (distanciamiento, resta relevancia a lo anterior).' },
+    { h: 'Operadores: focalizador, concreción, refuerzo', html: '<i>Respecto a...</i> (focalizador) vs <i>en especial</i> (concreción) vs <i>por supuesto</i> (refuerzo argumentativo) each narrow or reinforce a different part of the argument.' }
+  ],
+  exponents: [
+    { es: 'No tenemos ni pan ni leche.', en: "We don't have bread or milk.", register: 'coloquial', note: 'aditivo — ni...ni' },
+    { es: 'El aeropuerto funcionará con normalidad a pesar de la huelga.', en: 'The airport will run normally despite the strike.', register: 'formal', note: 'contraargumentativo — concede un obstáculo y sigue igual' },
+    { es: 'Aquel vestido es de seda, mientras que este es de algodón.', en: 'That dress is silk, whereas this one is cotton.', register: 'neutral', note: 'contraargumentativo — contraste simple, sin concesión' },
+    { es: 'El informe ya está terminado. De todos modos, prefiero hacer una última revisión.', en: "The report is already done. Either way, I'd rather do one last check.", register: 'neutral', note: 'reformulador de distanciamiento — matiza sin excluir del todo' },
+    { es: 'Este cuadro es uno de los que más me gustan. Mejor dicho, es el más bonito de la exposición.', en: "This is one of my favorite paintings. Or rather, it's the most beautiful in the exhibition.", register: 'coloquial', note: 'reformulador rectificativo — corrige lo dicho antes' },
+    { es: 'Ayer vi a Laura en el gimnasio. Por cierto, ¿cómo está su madre?', en: 'I saw Laura at the gym yesterday. By the way, how is her mother?', register: 'coloquial', note: 'reformulador digresor — se desvía del tema' },
+    { es: 'Respecto a su segunda pregunta, lamentablemente no puedo responderle.', en: 'Regarding your second question, unfortunately I cannot answer you.', register: 'formal', note: 'operador focalizador' }
+  ],
+  pitfalls: [
+    'No confundir <i>a pesar de</i> (concede un obstáculo y sigue igual) con <i>mientras que</i> (contrasta sin conceder nada) — ambos parecen "pero" en inglés, pero hacen trabajos distintos.',
+    '<i>Mejor dicho</i> corrige lo que se acaba de decir; <i>en otras palabras</i> simplemente lo reformula sin corregirlo — confundirlos cambia si estás rectificando o solo aclarando.',
+    'Los reformuladores de distanciamiento (<i>de todos modos, en cualquier caso</i>) restan relevancia a lo dicho antes, no lo resumen ni lo corrigen.'
+  ],
+  examples: [
+    { es: 'No solo llegó tarde, sino que además se olvidó los documentos.', en: 'He not only arrived late, but he also forgot the documents.' },
+    { es: 'Para empezar, diré que el proyecto ha sido un éxito.', en: "To start, I'll say the project has been a success." },
+    { es: 'No me importa que no me hayan invitado. En cualquier caso, no pensaba ir.', en: "I don't mind that they didn't invite me. Either way, I wasn't planning to go." }
+  ],
+  probes: [
+    { id: 'p:marcadoresB2:contraargumento', kind: 'mcq', q: '¿Cuál contrasta dos elementos SIN conceder ningún obstáculo?',
+      options: ['A pesar de la huelga...', 'Mientras que este es de algodón...', 'Ambas conceden igual'], answer: 1 },
+    { id: 'p:marcadoresB2:reformulador', kind: 'mcq', q: '"Mejor dicho, es el más bonito." ¿Qué hace "mejor dicho"?',
+      options: ['Resume todo lo anterior', 'Corrige/rectifica lo que se acaba de decir', 'Cambia de tema'], answer: 1 },
+    { id: 'p:marcadoresB2:cloze', kind: 'cloze', text: 'El informe ya está listo. ___, prefiero revisarlo una vez más. (de todos modos)', accept: ['De todos modos', 'de todos modos'] },
+    { id: 'p:marcadoresB2:recall', kind: 'recall', front: '¿Qué distingue a "por cierto" (digresor) de "en cualquier caso" (distanciamiento)?', back: 'por cierto se desvía a un tema nuevo; en cualquier caso resta relevancia al tema anterior sin cambiarlo' }
+  ]
+},
+
+{
+  id: 'dc-deixis-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:65', 'tacticas_pragmaticas:B2:66', 'tacticas_pragmaticas:B2:67', 'tacticas_pragmaticas:B2:68',
+         'tacticas_pragmaticas:B2:69'],
+  title: 'La deixis en B2: pronombre enfático, "se" mitigador',
+  summary: 'A subject pronoun that Spanish normally omits can surface specifically to maximize the speaker\'s or listener\'s role in an act ("¡Si yo no he sido!"), and "se" can mitigate responsibility by turning a blunt agent ("perdí tu dinero") into a mere experiencer of an event that simply happened ("se me perdió tu dinero").',
+  sections: [
+    { h: 'Pronombre sujeto explícito: énfasis en el yo/tú', html: '<i>¡Si yo no he sido!, ¡ha sido él!</i> — the overt "yo" is not grammatically required; it maximizes the speaker\'s role, especially when denying blame. <i>Tú hazme caso</i> similarly emphasizes the addressee\'s part in the action.' },
+    { h: '"Se" mitigador de responsabilidad', html: '<i>Se me perdió tu dinero</i> reframes losing the money as something that happened TO the speaker, not something the speaker did — compare the blunt <i>Perdí tu dinero</i>, which assigns direct agency.' },
+    { h: 'Dativo posesivo y adverbios combinados', html: '<i>¿Te hago la cama?</i> personalizes whose bed without a possessive. <i>Allí encima</i> combines two deictic adverbs to pinpoint a location more precisely than either alone.' },
+    { h: 'Demostrativo + relativo para terceros no próximos', html: '<i>Aquellos que no hagan el examen en junio deberán presentarse en septiembre</i> uses "aquellos" to point at unspecified people, not physically distant ones.' }
+  ],
+  exponents: [
+    { es: '¡Si yo no he sido, ha sido él!', en: "It wasn't me, it was him!", register: 'coloquial', note: 'pronombre sujeto explícito, maximiza el propio papel al negar culpa' },
+    { es: 'Tú hazme caso, que yo sé lo que digo.', en: 'You listen to me, I know what I\'m talking about.', register: 'coloquial', note: 'pronombre enfático dirigido al oyente' },
+    { es: 'Se me perdió tu dinero, no sé cómo ha pasado.', en: "I lost your money, I don't know how it happened.", register: 'coloquial', note: 'se mitigador — reformula "lo perdí" como algo que le ocurrió al hablante' },
+    { es: '¿Te hago la cama o prefieres hacerla tú?', en: 'Shall I make your bed, or would you rather do it yourself?', register: 'neutral', note: 'dativo posesivo, sin necesidad de "tu cama"' },
+    { es: 'Aquellos que no hayan entregado el trabajo deberán hacerlo antes del viernes.', en: 'Those who have not handed in the assignment must do so before Friday.', register: 'formal', note: 'demostrativo "aquellos" señala terceras personas no próximas, con relativo en subjuntivo' }
+  ],
+  pitfalls: [
+    'El pronombre sujeto explícito (<i>yo, tú</i>) no es obligatorio en español — cuando aparece sin necesidad gramatical, casi siempre añade énfasis, no solo información.',
+    '<i>Se me perdió</i> no es un simple sinónimo elegante de <i>lo perdí</i> — mitiga la responsabilidad del hablante, presentando el hecho como algo que sucedió, no como algo que él hizo.',
+    'El "aquel" deíctico con relativo en subjuntivo señala personas no identificadas, no necesariamente lejanas en el espacio — no confundir con su uso puramente espacial.'
+  ],
+  examples: [
+    { es: 'Se me ha roto el jarrón sin querer.', en: "The vase broke on me, I didn't mean to." },
+    { es: '¿Te preparo el café?', en: 'Shall I make you your coffee?' },
+    { es: 'El libro estaba allí encima, no lo vi.', en: "The book was right there on top, I didn't see it." }
+  ],
+  probes: [
+    { id: 'p:deixisB2:mitigador', kind: 'mcq', q: '"Se me perdió tu dinero" frente a "Perdí tu dinero" — ¿qué cambia?',
+      options: ['Nada, son idénticas', 'La primera mitiga la responsabilidad del hablante', 'La primera es más formal'], answer: 1 },
+    { id: 'p:deixisB2:enfatico', kind: 'mcq', q: '"¡Si yo no he sido!" — ¿por qué aparece "yo" si no es obligatorio?',
+      options: ['Por error', 'Para maximizar el propio papel al negar culpa', 'Por cortesía'], answer: 1 },
+    { id: 'p:deixisB2:cloze', kind: 'cloze', text: '___ me ha roto el jarrón sin querer. (se mitigador)', accept: ['Se'] },
+    { id: 'p:deixisB2:recall', kind: 'recall', front: '¿Qué logra "aquellos que..." con relativo en subjuntivo?', back: 'señalar a terceras personas no identificadas, no necesariamente lejanas físicamente' }
+  ]
+},
+
+{
+  id: 'dc-rematizacion-tematizacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:78', 'tacticas_pragmaticas:B2:79', 'tacticas_pragmaticas:B2:80', 'tacticas_pragmaticas:B2:81',
+         'tacticas_pragmaticas:B2:82', 'tacticas_pragmaticas:B2:83', 'tacticas_pragmaticas:B2:84', 'tacticas_pragmaticas:B2:85',
+         'tacticas_pragmaticas:B2:86', 'tacticas_pragmaticas:B2:87', 'tacticas_pragmaticas:B2:88', 'tacticas_pragmaticas:B2:89',
+         'tacticas_pragmaticas:B2:90', 'tacticas_pragmaticas:B2:91', 'tacticas_pragmaticas:B2:92', 'tacticas_pragmaticas:B2:93'],
+  title: 'Rematización y tematización en B2: ecuacionales y "lo de"',
+  summary: 'B2 formalizes what B1 only sketched: true cleft ("ecuacional") structures isolate exactly which element of a sentence is new information, fronting the object now requires a doubled pronoun, and "lo de" / "eso de" nominalize a whole known topic so it can be picked up again as a single unit.',
+  sections: [
+    { h: 'Estructuras ecuacionales: aislar el elemento nuevo', html: '<i>Juan vio a María ayer en el cine</i> can be rewritten to isolate each element as the sole new information: <i>A María fue a quien Juan vio ayer en el cine</i> / <i>Ayer fue cuando...</i> / <i>En el cine fue donde...</i> — each version declares a different part as the focus.' },
+    { h: 'Tematización con doblado obligatorio del pronombre', html: '<i>El libro lo he visto encima de la mesa</i> — fronting the direct object (<i>el libro</i>) requires repeating it with a pronoun (<i>lo</i>); without it, <i>*El libro he visto encima de la mesa</i> is ungrammatical.' },
+    { h: '"Lo de" y "eso de": nominalizar un tema entero', html: '<i>Lo de la financiación es un lío</i> and <i>Eso de ir los tres juntos se va a acabar</i> turn a whole known situation into a manageable noun phrase, so it can be picked back up as the topic.' },
+    { h: 'Interrogativas con tema antepuesto', html: '<i>Esa palabra, ¿cómo se pronuncia?</i> fronts the topic before asking about it.' }
+  ],
+  exponents: [
+    { es: 'A María fue a quien Juan vio ayer en el cine.', en: 'It was María whom Juan saw at the cinema yesterday.', register: 'formal', note: 'estructura ecuacional — aísla "a María" como la única información nueva' },
+    { es: 'El libro lo compró Juan la semana pasada.', en: 'The book, Juan bought it last week.', register: 'neutral', note: 'tematización con doblado obligatorio del pronombre "lo"' },
+    { es: 'Lo de la financiación es un lío que no se resuelve.', en: "That business with the financing is a mess that won't get sorted out.", register: 'coloquial', note: 'nominaliza todo un tema con "lo de"' },
+    { es: 'Esa palabra, ¿cómo se pronuncia exactamente?', en: 'That word, how exactly is it pronounced?', register: 'neutral', note: 'tema antepuesto antes de la pregunta' },
+    { es: 'En cuanto a lo que comentabas ayer, tengo mis dudas.', en: "As for what you were saying yesterday, I have my doubts.", register: 'formal', note: 'marcador discursivo que tematiza explícitamente' }
+  ],
+  pitfalls: [
+    'Anteponer el objeto directo sin doblar el pronombre (<i>*El libro he visto encima de la mesa</i>) es agramatical, salvo en exclamativas o interrogativas (<i>¡Qué regalo has comprado!</i>) — ahí no se dobla.',
+    'Las estructuras ecuacionales no son intercambiables entre sí: cada una aísla un elemento distinto (persona, tiempo, lugar) como la información nueva.',
+    '"Lo de" no equivale simplemente a "el asunto de" — nominaliza toda una situación ya conocida o presupuesta para retomarla como tema.'
+  ],
+  examples: [
+    { es: 'Fue ayer cuando lo vi por última vez.', en: 'It was yesterday that I last saw him.' },
+    { es: 'A mi hermana la llamé anoche.', en: 'My sister, I called her last night.' },
+    { es: 'Eso de madrugar todos los días no me gusta nada.', en: "That business of getting up early every day, I don't like it at all." }
+  ],
+  probes: [
+    { id: 'p:rematemaB2:doblado', kind: 'mcq', q: '"El libro ___ compró Juan." ¿Qué falta al anteponer el objeto directo?',
+      options: ['Nada, ya está completo', 'El pronombre doblado "lo"', 'Un artículo'], answer: 1 },
+    { id: 'p:rematemaB2:ecuacional', kind: 'mcq', q: '"Fue en el cine donde Juan vio a María." ¿Qué elemento aísla como nuevo?',
+      options: ['El lugar', 'La persona', 'El tiempo'], answer: 0 },
+    { id: 'p:rematemaB2:cloze', kind: 'cloze', text: 'El libro ___ compró Juan la semana pasada. (pronombre doblado)', accept: ['lo'] },
+    { id: 'p:rematemaB2:recall', kind: 'recall', front: '¿Qué hace "lo de" con una situación ya conocida?', back: 'la nominaliza entera para retomarla como tema' }
+  ]
+},
+
+{
+  id: 'dc-cita-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:96', 'tacticas_pragmaticas:B2:97', 'tacticas_pragmaticas:B2:98', 'tacticas_pragmaticas:B2:99',
+         'tacticas_pragmaticas:B2:100', 'tacticas_pragmaticas:B2:101', 'tacticas_pragmaticas:B2:102', 'tacticas_pragmaticas:B2:103',
+         'tacticas_pragmaticas:B2:104', 'tacticas_pragmaticas:B2:105', 'tacticas_pragmaticas:B2:106', 'tacticas_pragmaticas:B2:107',
+         'tacticas_pragmaticas:B2:108', 'tacticas_pragmaticas:B2:109'],
+  title: 'Procedimientos de cita: estilo indirecto y citas encubiertas',
+  summary: 'Reported speech requires shifting three systems at once — verb tense, and the deictic markers of person and place/time — while "citas encubiertas" let a speaker attribute information to someone else with no reporting verb at all, just a bare "que" or "según dicen".',
+  sections: [
+    { h: 'Omitir el verbo anunciador', html: '<i>-¿Qué ha dicho? -Que no.</i> repeats what was said with a bare "que" + the quote, no introductory verb.' },
+    { h: 'Reproducir preguntas: si / interrogativo + que', html: '<i>Le preguntó si le había gustado el regalo</i> (total) vs <i>Le preguntó cuándo llegaría su padre</i> (parcial). With <i>decir</i>, "si" is obligatory to signal a question: <i>María dice que si puede ayudarte</i> (a question) vs <i>María dice que puede ayudarte</i> (a statement) — the same words mean different things with and without "si".' },
+    { h: 'Correlación de marcas: tiempo verbal y deixis', html: '<i>Dijo: «Iré mañana»</i> becomes <i>Dijo que vendría</i> (neutral shift, tense moved back) or <i>Dijo que vendrá</i> (information updated, no shift). Deictics shift too: yo→él, aquí/ahí→allí, este/ese→aquel, mañana→al día siguiente.' },
+    { h: 'Citas encubiertas: sin verbo ni conjunción', html: '<i>Parece que ya han terminado</i> or <i>Ya han terminado, según dicen</i> attribute information to others without naming who, and without a verb of saying — they sidestep responsibility for what is claimed.' }
+  ],
+  exponents: [
+    { es: '-¿Qué ha dicho? -Que te vayas.', en: '"What did he say?" "That you should leave."', register: 'coloquial', note: 'omite el verbo anunciador, repite lo dicho' },
+    { es: 'Le preguntó que si le había gustado el regalo.', en: 'He asked her whether she had liked the gift.', register: 'neutral', note: 'interrogativa total reproducida con "si"' },
+    { es: 'María dice que si puede ayudarte a escribir el informe.', en: "María's asking whether she can help you write the report.", register: 'neutral', note: 'con decir + pregunta, "si" es obligatorio — sin él sería una afirmación' },
+    { es: 'Dijo que al día siguiente se iba a Barcelona.', en: 'He said that the next day he was going to Barcelona.', register: 'formal', note: 'correlación de marcas — "mañana" se convierte en "al día siguiente"' },
+    { es: 'Parece que ya han terminado el proyecto, según dicen.', en: "It seems they've already finished the project, so they say.", register: 'neutral', note: 'cita encubierta — atribuye la información sin nombrar la fuente' }
+  ],
+  pitfalls: [
+    'Con el verbo <i>decir</i>, la presencia o ausencia de "si" cambia el significado entero: "dice que puede ayudarte" es una afirmación; "dice que si puede ayudarte" es una pregunta transmitida.',
+    'Al reproducir una cita hay que desplazar TRES sistemas a la vez — tiempo verbal, persona y deixis de lugar/tiempo — no basta con cambiar solo el verbo.',
+    'Las citas encubiertas (<i>parece que, según dicen</i>) existen precisamente para no asumir responsabilidad sobre la fuente — usarlas cuando sí conoces la fuente puede sonar evasivo.'
+  ],
+  examples: [
+    { es: 'Dijo que vendría, aunque todavía no ha llegado.', en: "He said he'd come, although he still hasn't arrived." },
+    { es: 'Le preguntó que cuándo llegaría su padre.', en: 'She asked him when his father would arrive.' },
+    { es: 'Según dicen, el precio va a subir el mes que viene.', en: 'They say the price is going up next month.' }
+  ],
+  probes: [
+    { id: 'p:citaB2:si', kind: 'mcq', q: '"María dice que puede ayudarte" vs "María dice que si puede ayudarte" — ¿qué cambia?',
+      options: ['Nada, son iguales', 'La segunda transmite una pregunta, no una afirmación', 'La primera es más formal'], answer: 1 },
+    { id: 'p:citaB2:sistemas', kind: 'mcq', q: 'Al reproducir una cita, ¿cuántos sistemas hay que desplazar a la vez?',
+      options: ['Uno: solo el verbo', 'Tres: tiempo verbal, persona y deixis de lugar/tiempo', 'Ninguno'], answer: 1 },
+    { id: 'p:citaB2:cloze', kind: 'cloze', text: 'Dijo: «Mañana me voy». > Dijo que ___ día siguiente se iba. (al)', accept: ['al'] },
+    { id: 'p:citaB2:recall', kind: 'recall', front: '¿Qué logra una cita encubierta como "parece que" o "según dicen"?', back: 'atribuir la información a otros sin nombrar la fuente ni asumir responsabilidad' }
+  ]
+},
+
+{
+  id: 'dc-valores-ilocutivos-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:122', 'tacticas_pragmaticas:B2:123', 'tacticas_pragmaticas:B2:124', 'tacticas_pragmaticas:B2:125',
+         'tacticas_pragmaticas:B2:126', 'tacticas_pragmaticas:B2:127', 'tacticas_pragmaticas:B2:128', 'tacticas_pragmaticas:B2:129',
+         'tacticas_pragmaticas:B2:130', 'tacticas_pragmaticas:B2:131', 'tacticas_pragmaticas:B2:132', 'tacticas_pragmaticas:B2:133',
+         'tacticas_pragmaticas:B2:134', 'tacticas_pragmaticas:B2:135'],
+  title: 'Lo que hace una pregunta en B2: dudas, ecos y retóricas',
+  summary: 'B2 adds a genuinely new mechanism to B1\'s catalogue of question-acts: the "interrogativa de eco", which repeats part of what was just said with a question word standing in for the part that surprised or was not caught, plus rhetorical questions that expect no real answer because the speaker already assumes agreement.',
+  sections: [
+    { h: 'Neutros: duda, sorpresa, valor fático', html: '<i>¿Crees realmente que...?</i> expresses doubt about the addressee\'s claim; the enfatic <i>¿Quéee?</i>, with exaggerated intonation, signals surprise or rejection; <i>¿Me has entendido ahora?</i> checks the channel (valor fático), not real doubt about comprehension.' },
+    { h: 'Interrogativas de eco: explicativas y especificativas', html: '<i>-Este verano he comprado un caftán. -¿Que has comprado qué?</i> repeats the whole statement, replacing the surprising part with a question word (explicativa). <i>-¿Cuándo te vas? -¿Que cuándo me voy adónde?</i> echoes only the earlier question, adding a further question word (especificativa).' },
+    { h: 'Interrogativas retóricas confirmativas', html: '<i>¿No crees que se han portado muy mal con nosotros?</i> expects agreement, not information — the speaker already has an answer and invites the listener to confirm it.' }
+  ],
+  exponents: [
+    { es: '¿Crees realmente que va a funcionar ese plan?', en: 'Do you really think that plan is going to work?', register: 'neutral', note: 'expresa duda o incredulidad, no busca información nueva' },
+    { es: '¿Quéee? ¡No me lo puedo creer!', en: 'Whaat? I can\'t believe it!', register: 'coloquial', note: 'interrogativo enfático de sorpresa, con alargamiento vocálico' },
+    { es: '-Me he comprado un abrigo carísimo. -¿Que te has comprado qué?', en: '"I bought myself a really expensive coat." "You bought yourself a WHAT?"', register: 'coloquial', note: 'interrogativa de eco explicativa — sustituye la parte sorprendente' },
+    { es: '-¿Adónde vas? -¿Que adónde voy cuándo?', en: '"Where are you going?" "Going where, when?"', register: 'coloquial', note: 'interrogativa de eco especificativa — repite solo la pregunta, añade otro interrogativo' },
+    { es: '¿No te parece que deberíamos avisarle?', en: "Don't you think we should warn him?", register: 'neutral', note: 'interrogativa retórica confirmativa — busca que el oyente confirme, no información' }
+  ],
+  pitfalls: [
+    'Una interrogativa de eco explicativa repite TODO el enunciado anterior, cambiando solo la parte sorprendente; una especificativa repite solo una pregunta previa, añadiendo otro interrogativo.',
+    'Una retórica confirmativa no busca información — responder con datos nuevos en vez de confirmar pierde el sentido de la pregunta.',
+    '"¿Me has entendido ahora?" con valor fático no pregunta de verdad por tu comprensión — comprueba que la comunicación sigue funcionando.'
+  ],
+  examples: [
+    { es: '-He suspendido el examen. -¿Que has hecho qué?', en: '"I failed the exam." "You did WHAT?"' },
+    { es: '¿Verdad que esta película es buenísima?', en: "Isn't it true this film is great?" },
+    { es: '¿Me sigues, o te has perdido?', en: "Are you following me, or have you gotten lost?" }
+  ],
+  probes: [
+    { id: 'p:ilocutivosB2:eco', kind: 'mcq', q: '"-Me caso el mes que viene. -¿Que te casas cuándo?" ¿Qué tipo de eco es?',
+      options: ['Explicativa — repite todo el enunciado', 'Especificativa — repite solo la pregunta con otro interrogativo', 'Ninguna, es una pregunta nueva'], answer: 1 },
+    { id: 'p:ilocutivosB2:retorica', kind: 'mcq', q: '¿Qué espera una interrogativa retórica confirmativa como respuesta?',
+      options: ['Información nueva', 'Confirmación de algo que el hablante ya asume', 'Un silencio'], answer: 1 },
+    { id: 'p:ilocutivosB2:cloze', kind: 'cloze', text: '-He comprado un caftán. -¿Que has comprado ___? (interrogativo)', accept: ['qué'] },
+    { id: 'p:ilocutivosB2:recall', kind: 'recall', front: '¿Qué comprueba "¿me has entendido ahora?" con valor fático?', back: 'que el canal de comunicación sigue abierto, no la comprensión real' }
+  ]
+},
+
+{
+  id: 'dc-negacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:140', 'tacticas_pragmaticas:B2:141', 'tacticas_pragmaticas:B2:142', 'tacticas_pragmaticas:B2:143',
+         'tacticas_pragmaticas:B2:144', 'tacticas_pragmaticas:B2:145', 'tacticas_pragmaticas:B2:146'],
+  title: 'Matices de la negación: reiterada, enfática, artificiosa',
+  summary: 'A plain "no" is just one option — B2 distinguishes a "no" that merely confirms, one repeated for emphasis, one intensified with a fixed phrase, one carried by stress and exclamation alone, and a softened, "artificiosa" no that hedges by citing the limits of one\'s own knowledge.',
+  sections: [
+    { h: 'Negación para confirmar, y reiterada', html: '<i>-¿No te enfadas? -No, de ninguna manera</i> simply confirms the negative premise of the question. <i>¡Que no, hombre, que no!</i> repeats "no" for emphasis when the listener seems unconvinced.' },
+    { h: 'Negación enfática y estresada', html: '<i>De ningún modo, no me da la gana</i> intensifies with a fixed phrase before the plain negation. A negation can also be carried by stress and exclamation alone: <i>-¿Me lo vas a traer mañana? -¡Claro que no!</i>' },
+    { h: 'Negación artificiosa: "que yo sepa"', html: '<i>-¿Ha llegado alguna carta para mí? -No, que yo sepa</i> softens the negation by explicitly limiting it to the speaker\'s own knowledge, leaving room for it to be wrong.' },
+    { h: 'Refuerzo con indefinidos negativos', html: '<i>No hay libro alguno que me guste</i> postpones "alguno" after the noun for emphatic negation; it requires "no" before the verb — <i>*hay libro alguno</i> alone is ungrammatical.' }
+  ],
+  exponents: [
+    { es: '-¿No te enfadas por lo que pasó? -No, de ninguna manera.', en: "\"Aren't you upset about what happened?\" \"No, not at all.\"", register: 'neutral', note: 'negación para confirmar la premisa negativa de la pregunta' },
+    { es: '¡Que no, hombre, que no, no voy a ir!', en: "No, come on, no, I'm not going!", register: 'coloquial', note: 'negación reiterada, insiste ante un oyente que no se convence' },
+    { es: 'De ningún modo pienso disculparme, no me da la gana.', en: "There's no way I'm apologizing, I just don't feel like it.", register: 'coloquial', note: 'negación enfática con fórmula fija antes del "no"' },
+    { es: '-¿Ha llegado alguna carta para mí? -No, que yo sepa.', en: '"Has any letter arrived for me?" "Not as far as I know."', register: 'neutral', note: 'negación artificiosa — limita lo negado al propio conocimiento' },
+    { es: 'No hay libro alguno que me convenza de eso.', en: 'There is not a single book that convinces me of that.', register: 'formal', note: 'refuerzo con "alguno" pospuesto, exige "no" delante del verbo' }
+  ],
+  pitfalls: [
+    '"No, que yo sepa" no es un "no" rotundo — reconoce que el hablante podría estar equivocado.',
+    'El indefinido negativo pospuesto (<i>libro alguno</i>) siempre necesita "no" antes del verbo — a diferencia de <i>ningún libro</i>, que puede aparecer solo.',
+    'La negación estresada (<i>¡Claro que no!</i>) se apoya en la entonación y la exclamación, no en palabras adicionales.'
+  ],
+  examples: [
+    { es: 'No, que yo sepa no hay ningún motivo para cambiar de opinión.', en: "Not as far as I know, there's no reason to change our minds." },
+    { es: 'No vino turista alguno a pesar de la publicidad.', en: 'Not a single tourist came despite the advertising.' },
+    { es: '¡Naturalmente que no pienso aceptar esas condiciones!', en: "Of course I'm not going to accept those conditions!" }
+  ],
+  probes: [
+    { id: 'p:negacionB2:artificiosa', kind: 'mcq', q: '"No, que yo sepa" — ¿qué tipo de negación es?',
+      options: ['Rotunda y absoluta', 'Suavizada, limitada al propio conocimiento', 'Reiterada'], answer: 1 },
+    { id: 'p:negacionB2:alguno', kind: 'mcq', q: '"No hay libro alguno" — ¿puede aparecer "alguno" sin "no" antes del verbo?',
+      options: ['Sí, siempre', 'No, sería agramatical', 'Solo por escrito'], answer: 1 },
+    { id: 'p:negacionB2:cloze', kind: 'cloze', text: '¿Ha llegado alguna carta? -No, que yo ___. (saber)', accept: ['sepa'] },
+    { id: 'p:negacionB2:recall', kind: 'recall', front: '¿En qué se apoya la negación "estresada" (¡Claro que no!)?', back: 'en la entonación y la exclamación, no en palabras adicionales' }
+  ]
+},
+
+{
+  id: 'dc-significados-interpretados-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:147', 'tacticas_pragmaticas:B2:148', 'tacticas_pragmaticas:B2:149', 'tacticas_pragmaticas:B2:150'],
+  title: 'Metáforas fijas: comparaciones con animales y verbos de cambio',
+  summary: 'A closed set of comparative structures ("fuerte como un toro", "está como una cabra") and change-of-state verbs ("volverse loco", "quedarse de piedra") carry meanings no learner can derive from the words alone — they have to be learned as fixed units, mostly built on animal names.',
+  sections: [
+    { h: 'Ser + adjetivo + como + animal', html: '<i>Es fuerte como un toro</i> and <i>Es lento como una tortuga</i> fix a permanent quality by comparing it to a stereotypical animal — the meaning depends entirely on the cultural association, not on real traits.' },
+    { h: 'Estar + como + animal', html: '<i>Está como una cabra</i> describes a state (temporary madness, or a wild character), not a permanent quality — the same animal in the "estar" structure communicates something different.' },
+    { h: 'Verbos de cambio: volverse, ponerse, quedarse', html: '<i>Volverse loco</i> (lasting change), <i>ponerse como un tomate</i> (momentary change, blushing), <i>quedarse de piedra</i> (freezing from surprise) — each change verb implies a different duration and type of transformation.' }
+  ],
+  exponents: [
+    { es: 'Mi abuelo es fuerte como un toro, todavía carga los sacos él solo.', en: 'My grandfather is as strong as an ox, he still carries the sacks himself.', register: 'coloquial', note: 'ser + adjetivo + como + animal, cualidad permanente' },
+    { es: 'No le hagas caso, está como una cabra.', en: "Don't listen to him, he's off his rocker.", register: 'coloquial', note: 'estar + como + animal, describe un estado, no una cualidad fija' },
+    { es: 'En estas fechas la gente se vuelve loca comprando regalos.', en: 'At this time of year people go crazy buying presents.', register: 'neutral', note: 'verbo de cambio "volverse", transformación duradera' },
+    { es: 'Se puso como un tomate cuando le preguntaron por su novio.', en: 'She went bright red when they asked her about her boyfriend.', register: 'coloquial', note: '"ponerse", cambio momentáneo de estado' },
+    { es: 'Me quedé de piedra cuando me dieron la noticia.', en: 'I was stunned when I got the news.', register: 'neutral', note: '"quedarse", inmovilización repentina por sorpresa' }
+  ],
+  pitfalls: [
+    'El mismo animal puede significar cosas distintas con "ser" (cualidad permanente) que con "estar" (estado pasajero) — no son intercambiables solo porque ambos usan animales.',
+    'Los verbos de cambio no son sinónimos: "volverse" marca un cambio más duradero, "ponerse" uno momentáneo y reversible, "quedarse" una inmovilización puntual.',
+    'Estas comparaciones son fórmulas fijas, no productivas — no se puede sustituir libremente el animal.'
+  ],
+  examples: [
+    { es: 'Es lento como una tortuga para tomar decisiones.', en: "He's slow as a tortoise when it comes to making decisions." },
+    { es: 'Se puso pálido al ver el resultado.', en: 'He went pale on seeing the result.' },
+    { es: 'Nos quedamos de piedra con la noticia del despido.', en: 'We were stunned by the news of the layoff.' }
+  ],
+  probes: [
+    { id: 'p:significadosB2:seresvsestar', kind: 'mcq', q: '"Está como una cabra" — ¿cualidad permanente o estado?',
+      options: ['Cualidad permanente', 'Un estado, no necesariamente fijo', 'Ninguna de las dos'], answer: 1 },
+    { id: 'p:significadosB2:verboscambio', kind: 'mcq', q: '¿Cuál implica el cambio MÁS duradero?',
+      options: ['Ponerse como un tomate', 'Quedarse de piedra', 'Volverse loco'], answer: 2 },
+    { id: 'p:significadosB2:cloze', kind: 'cloze', text: 'Es fuerte ___ un toro. (comparación fija)', accept: ['como'] },
+    { id: 'p:significadosB2:recall', kind: 'recall', front: '¿Estas comparaciones con animales admiten sustituir libremente el animal?', back: 'no, son fórmulas fijas, no productivas' }
+  ]
+},
+
+{
+  id: 'dc-intensificacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:160', 'tacticas_pragmaticas:B2:161', 'tacticas_pragmaticas:B2:162', 'tacticas_pragmaticas:B2:163',
+         'tacticas_pragmaticas:B2:164', 'tacticas_pragmaticas:B2:165', 'tacticas_pragmaticas:B2:166', 'tacticas_pragmaticas:B2:167',
+         'tacticas_pragmaticas:B2:168', 'tacticas_pragmaticas:B2:169', 'tacticas_pragmaticas:B2:170', 'tacticas_pragmaticas:B2:171',
+         'tacticas_pragmaticas:B2:172', 'tacticas_pragmaticas:B2:173', 'tacticas_pragmaticas:B2:174', 'tacticas_pragmaticas:B2:175',
+         'tacticas_pragmaticas:B2:176', 'tacticas_pragmaticas:B2:177', 'tacticas_pragmaticas:B2:178', 'tacticas_pragmaticas:B2:179',
+         'tacticas_pragmaticas:B2:180'],
+  title: 'Intensificar en B2: prefijos, verbos performativos, alargamientos',
+  summary: 'Beyond -ísimo, B2 adds a real toolkit: superlative prefixes (super-, archi-), repeating the SAME word for maximum degree (café café), performative verbs that intensify by asserting the speaker\'s own word as a guarantee (te aseguro, te juro), and — uniquely oral — stretching a stressed vowel or spelling a word out syllable by syllable to intensify a recrimination already made.',
+  sections: [
+    { h: 'Prefijos superlativos y repetición del mismo adjetivo', html: '<i>super-, archi-, ultra-, extra-</i> attach directly to the adjective: <i>superguapo, extrafino</i>. Immediately repeating the same adjective does the same job with no morphology at all: <i>Es listo listo</i>; <i>En este bar ponen café café</i> (the real thing, not the cheap version).' },
+    { h: 'Verbos performativos de refuerzo', html: '<i>Te aseguro que, te juro que, está claro que</i> reinforce a claim by appealing to the speaker\'s own word as the guarantee — they don\'t describe a fact, they certify it.' },
+    { h: 'El "que" modalizador de recriminación', html: '<i>¡Que te calles!</i> puts "que" before an order already given, raising the level of reproach — distinct from a plain imperative.' },
+    { h: 'Alargamiento fónico y pronunciación silabeada', html: '<i>Estaba bueníiisimo</i> stretches the stressed vowel to intensify a value judgment; <i>YO-NO-LO-TEN-GO</i>, said syllable by syllable, intensifies a denial already stated before.' },
+    { h: 'Intensificar el acuerdo o desacuerdo', html: 'Vocatives and reinforcements (<i>Es muy rico, de verdad</i>), echo interrogative-exclamatives (<i>-Tú tienes miedo. -¿¡Miedo, yo!?</i>), and a sharply rising intonation (<i>-Estoy preparado. -¿TÚ CREES?</i>) intensify, respectively, an affirmation, indignant rejection, and disbelief.' }
+  ],
+  exponents: [
+    { es: 'Es un hotel impresionante, superguapo y archimoderno.', en: 'It\'s a stunning hotel, super-fancy and ultra-modern.', register: 'coloquial', note: 'prefijos superlativos (super-, archi-)' },
+    { es: 'Aquí ponen café café, no esa aguachirla de las máquinas.', en: 'Here they serve real coffee, not that watered-down machine stuff.', register: 'coloquial', note: 'repetición del mismo sustantivo para máximo grado' },
+    { es: 'Le aseguro que le devolvió hasta el último céntimo.', en: 'I assure you he paid back every last cent.', register: 'formal', note: 'verbo performativo de refuerzo, certifica lo dicho' },
+    { es: '¡Que te calles de una vez!', en: 'Will you just be quiet already!', register: 'coloquial', note: '"que" modalizador, aumenta el grado de recriminación' },
+    { es: 'No estaba bueno; estaba bueníiisimo.', en: "It wasn't just good; it was amaaazing.", register: 'coloquial', note: 'alargamiento fónico intensificador' },
+    { es: '-Tú lo que pasa es que tienes miedo. -¿¡Miedo, yo!?', en: '"The thing is, you\'re scared." "SCARED, ME!?"', register: 'coloquial', note: 'interrogativa-exclamativa de eco, intensifica el rechazo indignado' },
+    { es: '-Estoy preparado para salir. -¿TÚ CREES?', en: '"I\'m ready to go." "YOU THINK SO?"', register: 'coloquial', note: 'entonación marcadamente ascendente, intensifica la incredulidad' }
+  ],
+  pitfalls: [
+    'Los prefijos superlativos y la repetición del mismo adjetivo (<i>listo listo</i>) hacen el mismo trabajo por mecanismos distintos — no son intercambiables gramaticalmente aunque el efecto final sea similar.',
+    'El "que" modalizador delante de una orden (<i>¡Que te calles!</i>) presupone que la orden ya se dio antes y no se cumplió.',
+    'El alargamiento fónico y la pronunciación silabeada son estrictamente orales — no tienen equivalente natural en un texto escrito formal.'
+  ],
+  examples: [
+    { es: 'Es un chico requeteinteligente, seguro que aprueba.', en: "He's a super-smart kid, he's sure to pass." },
+    { es: 'Está clarísimo que no le interesa el trabajo.', en: "It's crystal clear he's not interested in the job." },
+    { es: '¡Que no lo toques, te he dicho mil veces!', en: "Don't touch it, I've told you a thousand times!" }
+  ],
+  probes: [
+    { id: 'p:intensifB2:que', kind: 'mcq', q: '"¡Que te calles!" ¿qué presupone el "que" delante de la orden?',
+      options: ['Que es la primera vez que se pide', 'Que la orden ya se dio antes sin éxito', 'Nada especial'], answer: 1 },
+    { id: 'p:intensifB2:oral', kind: 'mcq', q: '¿El alargamiento fónico (bueníiisimo) tiene equivalente natural en un texto formal escrito?',
+      options: ['Sí, siempre', 'No, es estrictamente oral', 'Solo en cartas'], answer: 1 },
+    { id: 'p:intensifB2:cloze', kind: 'cloze', text: '___ que le devolvió todo el dinero. (verbo performativo, asegurar)', accept: ['Te aseguro'] },
+    { id: 'p:intensifB2:recall', kind: 'recall', front: '¿Qué hace un verbo performativo como "te juro que" al reforzar una afirmación?', back: 'certifica lo dicho apelando a la propia palabra del hablante como garantía' }
+  ]
+},
+
+{
+  id: 'dc-focalizacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:190', 'tacticas_pragmaticas:B2:191', 'tacticas_pragmaticas:B2:192', 'tacticas_pragmaticas:B2:193',
+         'tacticas_pragmaticas:B2:194', 'tacticas_pragmaticas:B2:195', 'tacticas_pragmaticas:B2:196', 'tacticas_pragmaticas:B2:197',
+         'tacticas_pragmaticas:B2:198'],
+  title: 'Focalizar en B2: reduplicación del pronombre y ecos',
+  summary: 'B2 sharpens focus with a genuinely new device — doubling the direct-object pronoun AND fronting the object at once ("la carta se la di a María") — plus an echo question that repeats an entire earlier statement while replacing exactly the part under scrutiny with a question word.',
+  sections: [
+    { h: 'Marcadores discursivos focalizadores', html: '<i>incluso</i> (incluyente) adds an extreme case within what was expected: <i>Es un hotel impresionante, incluso tiene televisor en el baño</i>. <i>Especialmente/particularmente</i> single out without excluding; <i>justamente/precisamente</i> reinforce, signaling something fits exactly.' },
+    { h: '"Algo" como minimizador', html: '<i>Es algo pesado</i> reduces the quality to the barely perceptible minimum — distinct from <i>un poco</i>, which doesn\'t necessarily minimize as much.' },
+    { h: 'Reduplicación del pronombre con anticipación del objeto directo', html: '<i>La carta se la di a María</i> fronts the object (<i>la carta</i>) AND doubles it with a pronoun (<i>la</i>) before the verb — a stronger focal reinforcement than plain tematización.' },
+    { h: 'Interrogativas de eco y exclamativas con "cuánto"', html: '<i>¿Que has visto a quién?</i> repeats the question, substituting the element to be confirmed. <i>¡Cuántos amigos tiene!</i> converts a statement (tiene muchos amigos) into an exclamation focused on the quantity.' }
+  ],
+  exponents: [
+    { es: 'Es un hotel impresionante, incluso tiene televisor en el baño.', en: "It's a stunning hotel, it even has a TV in the bathroom.", register: 'neutral', note: 'marcador incluyente, añade un caso extremo' },
+    { es: 'Me interesa la historia, especialmente la de este siglo.', en: "I'm interested in history, especially this century's.", register: 'neutral', note: 'particularizador, sin excluir el resto' },
+    { es: 'Es algo pesado este libro, pero se deja leer.', en: "This book is somewhat tedious, but it's readable.", register: 'coloquial', note: '"algo" como minimizador, reduce la cualidad al mínimo perceptible' },
+    { es: 'La carta se la di a María en persona.', en: 'The letter, I gave it to María in person.', register: 'neutral', note: 'reduplicación del pronombre con anticipación del objeto directo' },
+    { es: '-He visto a Carlos en el banco. -¿Que has visto a quién?', en: '"I saw Carlos at the bank." "You saw WHO?"', register: 'coloquial', note: 'interrogativa de eco, sustituye el elemento en cuestión' },
+    { es: '¡Cuánto sabe este chico de historia!', en: 'This kid knows so much about history!', register: 'coloquial', note: 'exclamativa con "cuánto", focaliza la cantidad' }
+  ],
+  pitfalls: [
+    'La reduplicación del pronombre (<i>la carta se la di</i>) no es opcional cuando el objeto directo se antepone — es un refuerzo focal obligatorio.',
+    '"Algo" como minimizador no equivale a "un poco" — reduce la cualidad al grado mínimo perceptible.',
+    'Una interrogativa de eco sustituye SOLO el elemento que sorprende, manteniendo el resto de la frase intacto.'
+  ],
+  examples: [
+    { es: 'Justamente por eso decidimos esperar un poco más.', en: "That's precisely why we decided to wait a bit longer." },
+    { es: '-Me caso el mes que viene. -¿Que te casas cuándo?', en: '"I\'m getting married next month." "You\'re getting married WHEN?"' },
+    { es: '¡Cuánta paciencia hay que tener con este niño!', en: 'What a lot of patience you need with this kid!' }
+  ],
+  probes: [
+    { id: 'p:focalizB2:reduplicacion', kind: 'mcq', q: '"La carta ___ di a María." ¿Qué falta al anteponer "la carta"?',
+      options: ['Nada, ya está completo', 'El pronombre doblado "la"', 'Un artículo'], answer: 1 },
+    { id: 'p:focalizB2:algo', kind: 'mcq', q: '"Es algo pesado" — ¿qué hace "algo" aquí?',
+      options: ['Intensifica al máximo', 'Minimiza, reduce al grado mínimo perceptible', 'No aporta nada'], answer: 1 },
+    { id: 'p:focalizB2:cloze', kind: 'cloze', text: 'La carta se ___ di a María en persona. (pronombre doblado)', accept: ['la'] },
+    { id: 'p:focalizB2:recall', kind: 'recall', front: '¿Qué sustituye una interrogativa de eco del enunciado anterior?', back: 'solo el elemento que sorprende o no se entendió, no la frase entera' }
+  ]
+},
+
+{
+  id: 'dc-entonacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:206', 'tacticas_pragmaticas:B2:207', 'tacticas_pragmaticas:B2:208', 'tacticas_pragmaticas:B2:209',
+         'tacticas_pragmaticas:B2:210', 'tacticas_pragmaticas:B2:211', 'tacticas_pragmaticas:B2:212', 'tacticas_pragmaticas:B2:213',
+         'tacticas_pragmaticas:B2:214', 'tacticas_pragmaticas:B2:215', 'tacticas_pragmaticas:B2:216'],
+  title: 'Entonación y alargamientos: lo que dice el tono',
+  summary: 'A falling intonation on a yes/no question asks for confirmation of something already suspected, while a rising one genuinely asks for new information — the same words, two different requests, decided entirely by tone; vowel-lengthening and syllable-by-syllable pronunciation do equally specific jobs, from softening a request to reinforcing a recrimination.',
+  sections: [
+    { h: 'Tonema descendente vs ascendente en preguntas totales', html: 'A falling tone on <i>¿Quieres que vaya?</i> asks for confirmation of something already assumed; a rising tone on the same words asks for real information, with no assumption about the answer.' },
+    { h: 'Ascenso continuativo en la narración', html: 'A series of consecutive rising tones (<i>...y buscando, y buscando, y no les encontrábamos, y entonces...</i>) keeps a narrative moving and conveys the narrator\'s growing worry, with no new words needed.' },
+    { h: 'Alargamientos fónicos con distintas funciones', html: '<i>Pueees, bien...</i> stretches a vowel to signal veiled disagreement; <i>No se lo deeejes</i> intensifies a recrimination; <i>Poor favor...</i> softens a request, almost pleading, by stretching the vowel instead.' },
+    { h: 'Pronunciación silabeada para intensificar una orden', html: '<i>Te he dicho que NO-LO-TO-QUES</i> separates each syllable to maximally reinforce an order already given once without success.' }
+  ],
+  exponents: [
+    { es: '¿Quieres que te acompañe?', en: "You'd like me to come with you, right?", register: 'neutral', note: 'tonema descendente, pide confirmación de algo ya supuesto' },
+    { es: '¿Vendrás a la boda?', en: 'Will you come to the wedding?', register: 'neutral', note: 'tonema ascendente, pregunta real sin presuponer respuesta' },
+    { es: '-¿Qué te parece la profesora? -Pueees, bien, aunque a veces se despista.', en: '"What do you think of the teacher?" "Weeell, fine, though she loses the thread sometimes."', register: 'coloquial', note: 'alargamiento que señala disconformidad velada' },
+    { es: 'No se lo deeejes, que luego no te lo devuelve.', en: "Don't you dare lend it to him, he never gives it back.", register: 'coloquial', note: 'alargamiento que refuerza una recriminación' },
+    { es: 'Te he dicho que NO-LO-TO-QUES.', en: "I told you: DO. NOT. TOUCH. IT.", register: 'coloquial', note: 'pronunciación silabeada, intensifica una orden ya dada sin éxito' }
+  ],
+  pitfalls: [
+    'La misma pregunta con tonema descendente pide confirmación de algo ya sospechado; con tonema ascendente pide información genuina — el significado cambia sin cambiar ni una palabra.',
+    'Un alargamiento vocálico no siempre significa lo mismo: puede señalar disconformidad, reforzar una recriminación o, por el contrario, suavizar una petición — depende del contexto.',
+    'La pronunciación silabeada presupone que la orden ya se dio antes sin éxito — no es la forma normal de dar una instrucción por primera vez.'
+  ],
+  examples: [
+    { es: 'Vienes con nosotros, ¿verdad?', en: "You're coming with us, right?" },
+    { es: 'Y seguíamos caminando y caminando sin ver el final.', en: 'And we kept walking and walking without seeing the end.' },
+    { es: 'Poor fa(vor), ayúdame con esto.', en: 'Pleeease help me with this.' }
+  ],
+  probes: [
+    { id: 'p:entonacionB2:tonema', kind: 'mcq', q: '¿Qué pide un tonema descendente en una pregunta total?',
+      options: ['Información real, sin presuponer nada', 'Confirmación de algo ya supuesto', 'Nada, no cambia el sentido'], answer: 1 },
+    { id: 'p:entonacionB2:silabeada', kind: 'mcq', q: '¿Cuándo se usa la pronunciación silabeada (NO-LO-TO-QUES)?',
+      options: ['La primera vez que se da una orden', 'Cuando la orden ya se dio antes sin éxito', 'Solo en textos escritos'], answer: 1 },
+    { id: 'p:entonacionB2:cloze', kind: 'cloze', text: 'Pueees, ___, aunque a veces se despista. (alargamiento de "bien")', accept: ['bien'] },
+    { id: 'p:entonacionB2:recall', kind: 'recall', front: '¿Qué transmite un ascenso tonal continuativo y repetido en una narración?', back: 'mantiene el ritmo del relato y transmite la creciente preocupación del narrador' }
+  ]
+},
+
+{
+  id: 'dc-perspectiva-temporal-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:220', 'tacticas_pragmaticas:B2:221', 'tacticas_pragmaticas:B2:222', 'tacticas_pragmaticas:B2:223',
+         'tacticas_pragmaticas:B2:224'],
+  title: 'Desplazar el tiempo verbal: presente, futuro de probabilidad, imperfecto',
+  summary: 'A present tense can narrate a past event to make it feel immediate ("le hago un regalo y no me da ni las gracias"), a future perfect can guess about the past instead of predicting the future ("habrán estado bailando"), and an imperfect can freeze an action or a thought at the exact moment something else interrupted it.',
+  sections: [
+    { h: 'Presente por pasado: actualizar la información', html: '<i>Le hago un regalo y no me da ni las gracias</i> narrates a past event in the present, bringing it psychologically closer to the moment of speech.' },
+    { h: 'Futuro de probabilidad hacia el pasado', html: '<i>Habrán estado bailando toda la noche</i> does not predict the future — it speculates about something already past, extending the future\'s domain backward (<i>esta mañana no han venido porque se habrán quedado dormidos</i>).' },
+    { h: 'Valores del imperfecto: acción y pensamiento interrumpidos', html: '<i>¿Qué te estaba diciendo?</i> recovers an action interrupted by context, now resumed. <i>Pensaba ir al cine</i> (pero no voy) expresses an intention that will not, after all, be fulfilled — the imperfect freezes the thought right before the change of mind.' }
+  ],
+  exponents: [
+    { es: 'Le hago un regalo carísimo y no me da ni las gracias.', en: "I give him an expensive gift and he doesn't even thank me.", register: 'coloquial', note: 'presente por pasado, actualiza la información' },
+    { es: 'Esta mañana no han venido, se habrán quedado dormidos.', en: "They didn't come this morning, they've probably overslept.", register: 'neutral', note: 'futuro perfecto de probabilidad, especula sobre el pasado' },
+    { es: 'Habrán estado bailando toda la noche, mira qué cara de sueño tienen.', en: "They must have been dancing all night, look how sleepy they look.", register: 'coloquial', note: 'futuro de probabilidad, no predicción sino suposición' },
+    { es: '¿Qué te estaba diciendo? Se me ha ido el hilo.', en: "What was I telling you? I've lost my train of thought.", register: 'coloquial', note: 'imperfecto de acción interrumpida, se retoma tras la interrupción' },
+    { es: 'Pensaba ir al cine, pero al final me quedé en casa.', en: 'I was planning to go to the cinema, but in the end I stayed home.', register: 'neutral', note: 'imperfecto de intención interrumpida, ya no se cumple' }
+  ],
+  pitfalls: [
+    'El "futuro de probabilidad" no habla del futuro en absoluto cuando amplía su dominio al pasado — especula sobre algo ya ocurrido, no predice nada.',
+    'El presente por pasado no cambia cuándo ocurrió el hecho — solo lo acerca psicológicamente al momento de habla.',
+    '"Pensaba ir al cine" con el imperfecto implica casi siempre que el plan NO se cumplió; para un plan que sí se realizó se usa el pretérito.'
+  ],
+  examples: [
+    { es: 'Voy caminando por la calle y de repente me encuentro con mi antiguo profesor.', en: "I'm walking down the street and suddenly I run into my old teacher." },
+    { es: 'No contesta al teléfono, estará todavía en la reunión.', en: "He's not answering the phone, he's probably still in the meeting." },
+    { es: 'Iba a llamarte, pero se me olvidó.', en: 'I was going to call you, but I forgot.' }
+  ],
+  probes: [
+    { id: 'p:perspectivaB2:futuroprob', kind: 'mcq', q: '"Habrán estado bailando toda la noche" — ¿predice el futuro?',
+      options: ['Sí', 'No, especula sobre algo ya pasado', 'Es ambiguo'], answer: 1 },
+    { id: 'p:perspectivaB2:imperfecto', kind: 'mcq', q: '"Pensaba ir al cine" con imperfecto — ¿qué implica normalmente?',
+      options: ['Que el plan se cumplió', 'Que el plan NO se cumplió al final', 'Nada en particular'], answer: 1 },
+    { id: 'p:perspectivaB2:cloze', kind: 'cloze', text: 'No han venido, se ___ quedado dormidos. (futuro perfecto de probabilidad, haber)', accept: ['habrán'] },
+    { id: 'p:perspectivaB2:recall', kind: 'recall', front: '¿Qué logra narrar un hecho pasado en presente ("le hago un regalo...")?', back: 'acercarlo psicológicamente al momento de habla, con más inmediatez' }
+  ]
+},
+
+{
+  id: 'dc-atenuacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  pcic: ['tacticas_pragmaticas:B2:239', 'tacticas_pragmaticas:B2:240', 'tacticas_pragmaticas:B2:241', 'tacticas_pragmaticas:B2:242',
+         'tacticas_pragmaticas:B2:243', 'tacticas_pragmaticas:B2:244', 'tacticas_pragmaticas:B2:245', 'tacticas_pragmaticas:B2:246',
+         'tacticas_pragmaticas:B2:247', 'tacticas_pragmaticas:B2:248', 'tacticas_pragmaticas:B2:249', 'tacticas_pragmaticas:B2:250',
+         'tacticas_pragmaticas:B2:251', 'tacticas_pragmaticas:B2:252', 'tacticas_pragmaticas:B2:253', 'tacticas_pragmaticas:B2:254',
+         'tacticas_pragmaticas:B2:255', 'tacticas_pragmaticas:B2:256', 'tacticas_pragmaticas:B2:257', 'tacticas_pragmaticas:B2:258',
+         'tacticas_pragmaticas:B2:259', 'tacticas_pragmaticas:B2:260', 'tacticas_pragmaticas:B2:261', 'tacticas_pragmaticas:B2:262',
+         'tacticas_pragmaticas:B2:263', 'tacticas_pragmaticas:B2:264', 'tacticas_pragmaticas:B2:265', 'tacticas_pragmaticas:B2:266',
+         'tacticas_pragmaticas:B2:267', 'tacticas_pragmaticas:B2:268'],
+  title: 'Cortesía atenuadora en B2: desplazar la persona, aplazar el tiempo',
+  summary: 'B2 systematizes softening as a grammatical operation on WHO is speaking: shifting first person to second (generalizing an experience onto "you"), to third ("uno", impersonal "se"), and second person to first-plural ("nosotros" of complicity) — each shift exists specifically to soften a face-threatening act, alongside temporal delays, ritual formulas, and preliminary announcements that cushion a request before it even arrives.',
+  sections: [
+    { h: 'Desplazamiento de 1ª persona a 2ª de singular', html: '<i>El problema de esa clínica es que llegas y te estás horas esperando</i> generalizes the speaker\'s own experience by including the listener, to safeguard the speaker\'s own image — it seems to happen to anyone, not just "me".' },
+    { h: 'Desplazamiento de 1ª persona a 3ª: "uno", "este + sustantivo", "se"', html: '<i>Uno hace lo que puede</i> depersonalizes the speaker behind "uno". <i>Se me ha roto el jarrón</i> sidesteps the speaker\'s responsibility with "se"; <i>Se dice que perdió su fortuna</i> softens the force of a claim without naming who makes it.' },
+    { h: 'Desplazamiento de 2ª persona a 1ª de plural, o a otra 2ª', html: '<i>¿Ya nos hemos tomado el jarabe?</i> (a doctor to a patient) uses an inclusive "nosotros" of complicity. <i>Todos los chicos sois iguales</i> generalizes the addressee within a whole group.' },
+    { h: 'Aplazar en el tiempo: condicional, imperfecto, futuro', html: '<i>Deberías ser más prudente</i> (condicional) and <i>Debías ser más prudente</i> (imperfecto) soften an identical piece of advice; <i>Lo intentaré, veré qué puedo hacer</i> delays a response to a request without committing or refusing.' },
+    { h: 'Verbos performativos, anuncios previos y minimizadores', html: '<i>Le agradecería que no volviera a llegar tarde</i> turns an order into an anticipated thank-you. <i>¿Puedo hacerte una pregunta indiscreta?</i> announces a face-threatening act before committing it. <i>Solo quería saber si...</i> minimizes the request down to almost nothing.' },
+    { h: 'Atenuación dialógica: reconocer incertidumbre, impersonalizar el desacuerdo', html: '<i>Es posible que esté equivocado, pero...</i> softens a disagreement by admitting the speaker\'s own fallibility first. <i>Es que uno no va por ahí diciendo...</i> impersonalizes with "uno" to distance the speaker from a direct disagreement.' }
+  ],
+  exponents: [
+    { es: 'El problema de esa clínica es que llegas y te tiras horas esperando.', en: 'The problem with that clinic is you get there and you spend hours waiting.', register: 'coloquial', note: '1ª→2ª singular, generaliza la experiencia para salvaguardar la propia imagen' },
+    { es: 'Uno hace lo que puede con los medios que tiene.', en: 'One does what one can with the means at hand.', register: 'neutral', note: '1ª→3ª singular con "uno", despersonaliza al hablante' },
+    { es: 'Se me ha roto el jarrón sin querer, no sé cómo ha pasado.', en: "The vase broke on me, I didn't mean to, I don't know how it happened.", register: 'coloquial', note: '"se" para eludir la responsabilidad del hablante' },
+    { es: '¿Ya nos hemos tomado toda la medicina?', en: 'Have we taken all our medicine yet?', register: 'formal', note: '"nosotros" de complicidad, 2ª→1ª plural, típico del habla médica' },
+    { es: 'Deberías ser un poco más prudente con el dinero.', en: 'You should be a bit more careful with money.', register: 'neutral', note: 'condicional de cortesía para aconsejar' },
+    { es: 'Le agradecería que no volviera a llegar tarde a las reuniones.', en: "I'd be grateful if you wouldn't be late to meetings again.", register: 'formal', note: 'verbo performativo, convierte una orden en agradecimiento anticipado' },
+    { es: '¿Me aceptas un consejo? Creo que deberías descansar más.', en: 'Can I offer you some advice? I think you should rest more.', register: 'neutral', note: 'enunciado preliminar, anuncia el acto amenazador antes de cometerlo' },
+    { es: 'Es posible que esté equivocado, pero yo lo veo de otra manera.', en: "I might be wrong, but I see it differently.", register: 'formal', note: 'atenuación dialógica, reconoce la propia falibilidad antes del desacuerdo' }
+  ],
+  pitfalls: [
+    'El desplazamiento de persona (yo→tú, yo→uno, tú→nosotros) no cambia quién realiza realmente la acción — solo cambia cómo de directamente se le atribuye, para proteger la imagen de alguien.',
+    'El condicional y el imperfecto de cortesía (<i>deberías/debías</i>) suavizan un consejo por igual — no son intercambiables con la intención real, solo con el grado de distancia social.',
+    'Un enunciado preliminar (<i>¿me aceptas un consejo?</i>) no es una pregunta real que espere un "no" útil — es un anuncio cortés de que viene algo potencialmente incómodo.'
+  ],
+  examples: [
+    { es: 'Se lo ruego, no diga nada de esto.', en: "I beg you, don't say anything about this." },
+    { es: 'Solo quería preguntarte una cosa rápida.', en: 'I just wanted to ask you one quick thing.' },
+    { es: 'Bueno, sí, pero yo lo habría hecho de otra manera.', en: 'Well, yes, but I would have done it differently.' }
+  ],
+  probes: [
+    { id: 'p:atenB2:desplazamiento', kind: 'mcq', q: '"Llegas y te tiras horas esperando" (hablando de la propia experiencia) — ¿qué logra el "tú"?',
+      options: ['Acusar al oyente directamente', 'Generalizar la experiencia, protegiendo la imagen del hablante', 'Nada especial'], answer: 1 },
+    { id: 'p:atenB2:se', kind: 'mcq', q: '"Se me ha roto el jarrón" — ¿qué hace el "se"?',
+      options: ['Asigna la culpa claramente al hablante', 'Elude la responsabilidad directa del hablante', 'Es puramente decorativo'], answer: 1 },
+    { id: 'p:atenB2:cloze', kind: 'cloze', text: '___ hace lo que puede con los medios que tiene. (3ª persona despersonalizadora)', accept: ['Uno'] },
+    { id: 'p:atenB2:recall', kind: 'recall', front: '¿Qué función tiene un enunciado preliminar como "¿me aceptas un consejo?"?', back: 'anunciar cortésmente un acto que podría amenazar la imagen del oyente, antes de cometerlo' }
+  ]
 }
 
 ];
