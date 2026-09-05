@@ -184,7 +184,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción descriptiva: lugares** · 18 pts · `generos_discursivos A2 § 3.3. Macrofunción descriptiva: lug`  — gn-describir-lugar-a2
 - [x] **Macrofunción narrativa** · 29 pts · `generos_discursivos A2 § 3.4. Macrofunción narrativa`  — gn-narrar-anecdota-a2
 
-## B1 — lessons (162/175 done)
+## B1 — lessons (169/175 done)
 
 ### B1 · grammar (23/23)
 - [x] **Clases de sustantivos** · 7 pts · `gramatica B1 § 1.1. Clases de sustantivos`  — gr-nombres-propios-b1
@@ -342,17 +342,17 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Interrumpir** · 3 pts · `funciones B1 § 6.21. Interrumpir`  — fn-interrumpir-b1
 - [x] **Concluir el relato** · 5 pts · `funciones B1 § 6.26. Concluir el relato`  — fn-concluir-relato-b1
 
-### B1 · discourse (3/10)
-- [ ] **Mantenimiento del referente y del hilo discursivo** · 9 pts · `tacticas_pragmaticas B1 § 1.1. Mantenimiento del referente y`
-- [ ] **Marcadores del discurso** · 15 pts · `tacticas_pragmaticas B1 § 1.2. Marcadores del discurso`
-- [ ] **La deixis** · 13 pts · `tacticas_pragmaticas B1 § 1.3. La deixis`
-- [ ] **Desplazamiento en el orden de los elementos oracionales** · 8 pts · `tacticas_pragmaticas B1 § 1.4. Desplazamiento en el orden de`
-- [ ] **Valores ilocutivos de los enunciados interrogativos** · 12 pts · `tacticas_pragmaticas B1 § 1.6. Valores ilocutivos de los enu`
-- [ ] **La expresión de la negación** · 4 pts · `tacticas_pragmaticas B1 § 1.7. La expresión de la negación`
+### B1 · discourse (10/10)
+- [x] **Mantenimiento del referente y del hilo discursivo** · 9 pts · `tacticas_pragmaticas B1 § 1.1. Mantenimiento del referente y`  — dc-mantenimiento-referente-b1
+- [x] **Marcadores del discurso** · 15 pts · `tacticas_pragmaticas B1 § 1.2. Marcadores del discurso`  — dc-marcadores-discurso-b1
+- [x] **La deixis** · 13 pts · `tacticas_pragmaticas B1 § 1.3. La deixis`  — dc-deixis-b1
+- [x] **Desplazamiento en el orden de los elementos oracionales** · 8 pts · `tacticas_pragmaticas B1 § 1.4. Desplazamiento en el orden de`  — dc-rematizacion-tematizacion-b1
+- [x] **Valores ilocutivos de los enunciados interrogativos** · 12 pts · `tacticas_pragmaticas B1 § 1.6. Valores ilocutivos de los enu`  — dc-valores-ilocutivos-b1
+- [x] **La expresión de la negación** · 4 pts · `tacticas_pragmaticas B1 § 1.7. La expresión de la negación`  — dc-negacion-refuerzo-b1
 - [x] **Intensificación o refuerzo** · 12 pts · `tacticas_pragmaticas B1 § 2.1. Intensificación o refuerzo`  — dc-intensificacion-discurso-b1
 - [x] **Focalización** · 9 pts · `tacticas_pragmaticas B1 § 2.3. Focalización`  — dc-focalizacion-b1
 - [x] **Los valores modales de la entonación y de otros elementos ** · 7 pts · `tacticas_pragmaticas B1 § 2.4. Los valores modales de la ent`  — dc-entonacion-b1
-- [ ] **Cortesía verbal atenuadora** · 15 pts · `tacticas_pragmaticas B1 § 3.1. Cortesía verbal atenuadora`
+- [x] **Cortesía verbal atenuadora** · 15 pts · `tacticas_pragmaticas B1 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-b1
 
 ### B1 · genre (9/15)
 - [x] **Lista alfabética de géneros orales y escritos** · 47 pts · `generos_discursivos B1 § 1.1. Lista alfabética de géneros o`  — gn-reconocer-generos-orales-b1

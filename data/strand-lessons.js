@@ -14785,6 +14785,279 @@ window.STRAND_LESSONS = [
     { id: 'p:pregpersonaB1:cloze', kind: 'cloze', text: 'Sí, ahora se ___ , un momento. (poner)', accept: ['pone'] },
     { id: 'p:pregpersonaB1:recall', kind: 'recall', front: '¿Cuál es la diferencia entre "no está" y "se ha equivocado"?', back: '"no está" = número correcto, persona ausente; "se ha equivocado" = número incorrecto' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B1 discourse stragglers (WORKLIST.md, section B1 · discourse)
+ * ========================================================================== */
+{
+  id: 'dc-mantenimiento-referente-b1', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  pcic: ['tacticas_pragmaticas:B1:2', 'tacticas_pragmaticas:B1:3', 'tacticas_pragmaticas:B1:5',
+         'tacticas_pragmaticas:B1:6', 'tacticas_pragmaticas:B1:7'],
+  title: 'Mantener el referente sin repetir el nombre',
+  summary: 'A text that names the same thing the same way every time reads as clumsy; B1 tracks a referent across sentences using pronouns, a "proform" verb standing in for a whole earlier action, and — the trickiest one — the definite article alone doing anaphoric work on a noun that was never explicitly introduced.',
+  sections: [
+    { h: 'Proformas: pronouns and verbs standing in', html: 'A pronoun refers back to a previous statement (<i>Tú crees que se equivoca, pero yo no pienso eso</i>) and a verb like <i>hacer</i> can stand in for a whole earlier action: <i>Le he dicho que vuelva mañana. Seguro que lo hará</i> — "lo hará" = "volverá mañana".' },
+    { h: 'The anaphoric definite article', html: 'The definite article can introduce a noun that was never named before, purely because it is semantically linked to something that was: <i>Fuimos a una cafetería y nos sentamos en la barra</i> — "la barra" is new, but licensed by "cafetería".' },
+    { h: 'Nominalized repetition', html: 'A repeated idea can resurface as a related noun instead of the same word: <i>La policía intervino en la pelea. La intervención policial fue muy eficaz</i> — "la intervención" nominalizes "intervino".' }
+  ],
+  exponents: [
+    { es: 'Tú crees que se equivoca, pero yo no pienso eso.', en: 'You think he\'s wrong, but I don\'t think that.', register: 'coloquial', note: 'pronoun refers back to a whole previous statement' },
+    { es: 'Le he dicho que vuelva mañana. Seguro que lo hará.', en: 'I told him to come back tomorrow. I\'m sure he will.', register: 'neutral', note: '"lo hará" stands in for the whole earlier action' },
+    { es: 'Fuimos a una cafetería y nos sentamos en la barra.', en: 'We went to a café and sat at the bar.', register: 'coloquial', note: 'anaphoric definite article — "la barra" was never introduced by name' },
+    { es: 'La policía intervino en la pelea. La intervención policial fue muy eficaz.', en: 'The police intervened in the fight. The police intervention was very effective.', register: 'formal', note: 'nominalized repetition, typical of written/news register' }
+  ],
+  pitfalls: [
+    'The anaphoric definite article only works when the new noun is semantically tied to something already mentioned — <i>la barra</i> after <i>cafetería</i> works because a café predictably has a bar; an unrelated noun still needs <i>un/una</i> on first mention.',
+    'Nominalized repetition (<i>intervino → la intervención</i>) is more typical of written/formal register than casual speech, where plain repetition or a pronoun is more natural.'
+  ],
+  examples: [
+    { es: 'Entramos en el hotel y preguntamos por la recepción.', en: 'We went into the hotel and asked for reception.' },
+    { es: 'El gobierno anunció una reforma. La reforma afectará a miles de trabajadores.', en: 'The government announced a reform. The reform will affect thousands of workers.' },
+    { es: 'Dijo que vendría, y lo hizo.', en: 'He said he would come, and he did.' }
+  ],
+  probes: [
+    { id: 'p:mantrefB1:articulo', kind: 'mcq', q: '"Fuimos a una cafetería y nos sentamos en ___ barra." ¿Por qué funciona "la" aunque "barra" es nueva?',
+      options: ['Es un error', 'Está semánticamente ligada a "cafetería"', 'Porque "barra" es femenina'], answer: 1 },
+    { id: 'p:mantrefB1:proforma', kind: 'mcq', q: '"Le dije que viniera y lo hizo." ¿Qué reemplaza "lo hizo"?',
+      options: ['Solo "vino"', 'Toda la acción "venir"', 'Nada, es un error'], answer: 1 },
+    { id: 'p:mantrefB1:cloze', kind: 'cloze', text: 'La policía intervino. La ___ fue rápida. (nominalización de "intervenir")', accept: ['intervención'] },
+    { id: 'p:mantrefB1:recall', kind: 'recall', front: '¿Qué permite usar "la barra" sin haberla mencionado antes?', back: 'el uso anafórico del artículo definido, por relación semántica' }
+  ]
+},
+
+{
+  id: 'dc-marcadores-discurso-b1', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  pcic: ['tacticas_pragmaticas:B1:18', 'tacticas_pragmaticas:B1:19', 'tacticas_pragmaticas:B1:20', 'tacticas_pragmaticas:B1:21',
+         'tacticas_pragmaticas:B1:23', 'tacticas_pragmaticas:B1:24', 'tacticas_pragmaticas:B1:25', 'tacticas_pragmaticas:B1:26',
+         'tacticas_pragmaticas:B1:27', 'tacticas_pragmaticas:B1:28', 'tacticas_pragmaticas:B1:29', 'tacticas_pragmaticas:B1:30'],
+  title: 'Marcadores del discurso: las cinco familias del B1',
+  summary: 'The Plan Curricular sorts discourse markers into twelve precise classes; B1 introduces five of them at once — connectors that add, conclude, justify or oppose; ordering words that structure a whole argument; a comment-opener that exists only in speech; reformulators that restate; and operators that zoom in on one part of a scale.',
+  sections: [
+    { h: 'Conectores: four logical relations', html: '<b>Aditivos</b> add (<i>además, sobre todo</i>); <b>consecutivos</b> state a result (<i>así que, por lo tanto</i>); <b>justificativos</b> give a reason (<i>como, es que</i>); <b>contraargumentativos</b> oppose (<i>aunque, sin embargo</i>).' },
+    { h: 'Estructuradores: organizing a whole argument', html: '<b>Ordenadores</b> mark position in a sequence — <i>en primer lugar</i> (start), <i>en segundo lugar</i> (continuing), <i>en conclusión</i> (close). A <b>comentador</b> like <i>pues</i> opens a spoken turn, introducing a new comment.' },
+    { h: 'Reformuladores and operadores', html: '<b>Reformuladores explicativos</b> restate more clearly (<i>o sea, es decir</i>); <b>recapitulativos</b> sum up (<i>en resumen</i>). <b>Operadores</b> zoom into one part of a scale (<i>casi</i>) or specify (<i>en concreto, en particular</i>).' }
+  ],
+  exponents: [
+    { es: 'Me encanta el cine, sobre todo las películas de acción.', en: 'I love cinema, especially action films.', register: 'neutral', note: 'aditivo — sobre todo' },
+    { es: 'Estaba muy cansado, así que me quedé en casa.', en: 'I was very tired, so I stayed home.', register: 'coloquial', note: 'consecutivo' },
+    { es: '-¿Conoces a Enrique? -Sí, claro. -Pues ha tenido un accidente.', en: '-Do you know Enrique? -Yes, of course. -Well, he\'s had an accident.', register: 'coloquial', note: 'comentador — opens a spoken turn, only in speech' },
+    { es: 'Iré contigo al concierto, aunque no me gusta ese tipo de música.', en: 'I\'ll come to the concert with you, although I don\'t like that kind of music.', register: 'neutral', note: 'contraargumentativo' },
+    { es: 'En primer lugar, hay que reservar las entradas.', en: 'First of all, we need to book the tickets.', register: 'formal', note: 'ordenador de inicio, typical of a structured argument' },
+    { es: 'Me interesa mucho la literatura española, en concreto la contemporánea.', en: 'I\'m very interested in Spanish literature, specifically the contemporary kind.', register: 'neutral', note: 'operador de concreción' }
+  ],
+  pitfalls: [
+    '<i>Pues</i> as a comentador only opens a spoken turn — it does not appear this way in formal writing, where an ordenador or a plain sentence start is expected instead.',
+    'Do not confuse <i>es decir</i> (restating the SAME idea more clearly) with <i>en resumen</i> (condensing a LONGER stretch of argument) — they are not interchangeable.',
+    'The four connector classes (aditivo, consecutivo, justificativo, contraargumentativo) each carry a distinct logical relation — swapping one for another changes the argument\'s logic, not just its style.'
+  ],
+  examples: [
+    { es: 'No fuimos, es que llovía muchísimo.', en: "We didn't go, it's just that it was raining a lot." },
+    { es: 'Por un lado, el piso es barato; por otro lado, está muy lejos del centro.', en: 'On the one hand, the flat is cheap; on the other, it\'s far from the centre.' },
+    { es: 'En conclusión, el proyecto necesita más tiempo.', en: 'In conclusion, the project needs more time.' }
+  ],
+  probes: [
+    { id: 'p:marcadoresB1:clase', kind: 'mcq', q: '"Aunque no me gusta, iré." ¿Qué clase de conector es "aunque"?',
+      options: ['aditivo', 'contraargumentativo', 'consecutivo'], answer: 1 },
+    { id: 'p:marcadoresB1:pues', kind: 'mcq', q: '¿Dónde se usa "pues" como comentador?',
+      options: ['Solo en un informe escrito', 'Al abrir un turno de habla oral', 'Al final de una carta formal'], answer: 1 },
+    { id: 'p:marcadoresB1:cloze', kind: 'cloze', text: 'Estaba cansado, ___ me quedé en casa. (consecutivo)', accept: ['así que'] },
+    { id: 'p:marcadoresB1:recall', kind: 'recall', front: 'Las cuatro clases de "conectores" del B1', back: 'aditivos, consecutivos, justificativos, contraargumentativos' }
+  ]
+},
+
+{
+  id: 'dc-deixis-b1', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  pcic: ['tacticas_pragmaticas:B1:52', 'tacticas_pragmaticas:B1:53', 'tacticas_pragmaticas:B1:54', 'tacticas_pragmaticas:B1:55',
+         'tacticas_pragmaticas:B1:57', 'tacticas_pragmaticas:B1:58', 'tacticas_pragmaticas:B1:59', 'tacticas_pragmaticas:B1:60',
+         'tacticas_pragmaticas:B1:62', 'tacticas_pragmaticas:B1:63'],
+  title: 'La deixis: espacial, temporal y personal',
+  summary: 'Deixis is language that only makes sense anchored to a speaker\'s "here and now" — but B1 adds a fourth, stranger anchor: narrating from INSIDE a remembered past, as though that earlier moment were the new "now", which is what lets a story set decades ago still say "en aquellos años".',
+  sections: [
+    { h: 'Spatial deixis: adverbs, verbs, gesture', html: 'Deictic adverbs (<i>fuera, detrás</i>) and verbs of direction (<i>acercarse, alejarse</i>) anchor to the speaker\'s position. Spoken Spanish can even point at an accompanying gesture: <i>Mi perro es así de pequeño</i> (hands showing the size).' },
+    { h: 'Temporal deixis: definite vs indefinite distance', html: '<i>Dentro de dos días</i> gives a DEFINITE distance from now; <i>anteriormente, últimamente</i> give an INDEFINITE one, with no preposition. The neuter <i>esto</i> can point at a whole action just performed: <i>Esto no me gusta nada</i>.' },
+    { h: '"Deixis am phantasma": narrating from inside the past', html: 'A narrator can relocate the deictic centre into a remembered past, describing it as if it were the present of that moment: <i>En aquellos años yo todavía vivía con mis padres</i> — "aquellos" points from inside that remembered time, not from now.' },
+    { h: 'Personal deixis: anaphoric/cataphoric OI, dative of possession', html: 'An indirect-object pronoun can point back or forward to a person: <i>A Luis le doy el libro</i> (cataphoric — "le" comes before "Luis" is named) vs <i>Le doy el libro a Luis</i> (anaphoric order). The "dative of possession" replaces a possessive: <i>Me preparo el desayuno</i> — "my" breakfast, without saying <i>mi</i>.' }
+  ],
+  exponents: [
+    { es: '¡Quédate fuera!', en: 'Stay outside!', register: 'coloquial', note: 'spatial deictic adverb' },
+    { es: 'El tren se alejó rápidamente.', en: 'The train moved away quickly.', register: 'neutral', note: 'verb of direction, spatial deixis' },
+    { es: 'Últimamente viene tarde a clase.', en: "He's been coming to class late lately.", register: 'neutral', note: 'indefinite temporal distance, no preposition' },
+    { es: 'En aquellos años yo todavía vivía con mis padres.', en: 'In those years I was still living with my parents.', register: 'neutral', note: 'deixis am phantasma — narrating from inside the remembered past' },
+    { es: 'Me preparo el desayuno todos los días.', en: 'I make my own breakfast every day.', register: 'coloquial', note: 'dative of possession, replaces "mi desayuno"' }
+  ],
+  pitfalls: [
+    '"Deixis am phantasma" is not simply the past tense — it specifically uses a deictic word (<i>aquellos, entonces</i>) as though the narrator were standing inside that earlier moment, not describing it from today\'s vantage point.',
+    'The dative of possession (<i>me preparo el desayuno</i>) is not optional decoration — dropping it in favor of a possessive (<i>preparo mi desayuno</i>) is grammatical but noticeably less natural in everyday Spanish for body parts, meals and personal routines.',
+    'Do not confuse the definite distance of <i>dentro de + tiempo</i> with the vague, preposition-less <i>anteriormente/últimamente</i> — one measures exactly, the other gestures loosely.'
+  ],
+  examples: [
+    { es: '¡Siéntate detrás, por favor!', en: 'Sit in the back, please!' },
+    { es: 'Anteriormente había trabajado en otra empresa.', en: 'Previously he had worked at another company.' },
+    { es: 'Esto no me gusta nada.', en: "I don't like this at all." }
+  ],
+  probes: [
+    { id: 'p:deixisB1:definida', kind: 'mcq', q: '¿Cuál da una distancia temporal DEFINIDA?',
+      options: ['Últimamente...', 'Dentro de dos días...', 'Anteriormente...'], answer: 1 },
+    { id: 'p:deixisB1:fantasma', kind: 'mcq', q: '"En aquellos años yo vivía con mis padres." ¿Desde dónde se sitúa "aquellos"?',
+      options: ['Desde el presente del hablante', 'Desde dentro del momento recordado', 'No tiene anclaje'], answer: 1 },
+    { id: 'p:deixisB1:cloze', kind: 'cloze', text: 'Me ___ el desayuno cada mañana. (preparar, dativo posesivo)', accept: ['preparo'] },
+    { id: 'p:deixisB1:recall', kind: 'recall', front: '¿Qué reemplaza el "dativo posesivo" en "me preparo el desayuno"?', back: 'un posesivo — "mi desayuno"' }
+  ]
+},
+
+{
+  id: 'dc-rematizacion-tematizacion-b1', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  pcic: ['tacticas_pragmaticas:B1:70', 'tacticas_pragmaticas:B1:72', 'tacticas_pragmaticas:B1:73', 'tacticas_pragmaticas:B1:74',
+         'tacticas_pragmaticas:B1:75', 'tacticas_pragmaticas:B1:76', 'tacticas_pragmaticas:B1:77'],
+  title: 'Rematización y tematización: reordenar para destacar',
+  summary: 'Spanish word order is freer than English precisely so it can do this job: pushing the newest, most important information toward the end of the sentence (rematización) or pulling a known topic to the front with a doubled pronoun (tematización) — the same facts, reordered to say what matters.',
+  sections: [
+    { h: 'Rematización: postponing the subject', html: 'A direct question with a preposition + interrogative pronoun postpones the subject to the end, putting the focus where the new information is: <i>¿A quién ha llamado Inma?</i> — "Inma" stays at the end, not fronted.' },
+    { h: 'Excluding and singling out', html: '<i>Solo/solamente</i> excludes everything else (<i>Solo somos tres</i>); <i>sobre todo</i> singles out the most relevant case within a set.' },
+    { h: 'Tematización: fronting the known, doubling the pronoun', html: 'A known topic can move to the front, with its pronoun doubled later in the clause: <i>A Luis le doy el libro</i> — "a Luis" is fronted, and "le" repeats it. This signals Luis is the topic, not new information.' },
+    { h: 'Adjective position marks new vs shared information', html: '<i>Juan compró el marrón</i> (the brown one — which color was already under discussion) vs <i>Juan compró un abrigo marrón</i> (a brown coat — the color is new information here).' }
+  ],
+  exponents: [
+    { es: '¿A quién ha llamado Inma?', en: 'Who did Inma call?', register: 'neutral', note: 'rematización — subject postponed to the end' },
+    { es: 'Solo somos tres.', en: 'There are only three of us.', register: 'coloquial', note: 'excluyente' },
+    { es: 'A Luis le doy el libro.', en: 'To Luis I give the book.', register: 'neutral', note: 'tematización — fronted topic, doubled pronoun' },
+    { es: 'Juan compró el marrón.', en: 'Juan bought the brown one.', register: 'coloquial', note: 'adjective as known/shared information' },
+    { es: 'No es cierto, no come nada.', en: "That's not true, she doesn't eat anything.", register: 'coloquial', note: 'negative pronoun denying shared information' }
+  ],
+  pitfalls: [
+    'Fronting a topic (<i>A Luis...</i>) without doubling the pronoun later (<i>le</i>) is not the tematización pattern — the doubled pronoun is what marks it as topic-fronting rather than a stray phrase.',
+    '<i>Solo/solamente</i> excludes; <i>sobre todo</i> singles out the most relevant case without excluding the rest — do not treat them as synonyms.',
+    'A negative pronoun used to deny shared information stays in its normal postverbal position with <i>no</i>: <i>no come nada</i>, never fronted as <i>*nada come</i> in this use.'
+  ],
+  examples: [
+    { es: '¿Con quién ha ido María?', en: 'Who did María go with?' },
+    { es: 'Sobre todo me interesa la parte histórica.', en: "I'm especially interested in the historical part." },
+    { es: 'A mi hermana le encanta viajar.', en: 'My sister loves travelling.' }
+  ],
+  probes: [
+    { id: 'p:rematemaB1:tematizacion', kind: 'mcq', q: '¿Qué marca que "a Luis" es tematización, no un añadido suelto?',
+      options: ['Nada en particular', 'El pronombre doblado "le" más adelante', 'El uso de "a"'], answer: 1 },
+    { id: 'p:rematemaB1:adjetivo', kind: 'mcq', q: '"Juan compró el marrón" implica que el color es...',
+      options: ['Información nueva', 'Información ya compartida', 'Un error'], answer: 1 },
+    { id: 'p:rematemaB1:cloze', kind: 'cloze', text: '___ somos tres en la reunión. (solo/excluyente)', accept: ['Solo', 'solo', 'Solamente', 'solamente'] },
+    { id: 'p:rematemaB1:recall', kind: 'recall', front: '¿Qué hace la rematización con el sujeto en "¿A quién ha llamado Inma?"?', back: 'lo pospone al final, dejando el foco en lo preguntado' }
+  ]
+},
+
+{
+  id: 'dc-valores-ilocutivos-b1', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  pcic: ['tacticas_pragmaticas:B1:110', 'tacticas_pragmaticas:B1:111', 'tacticas_pragmaticas:B1:113', 'tacticas_pragmaticas:B1:114',
+         'tacticas_pragmaticas:B1:116', 'tacticas_pragmaticas:B1:117', 'tacticas_pragmaticas:B1:118', 'tacticas_pragmaticas:B1:119', 'tacticas_pragmaticas:B1:121'],
+  title: 'Lo que realmente hace una pregunta',
+  summary: 'The same grammatical question shape does at least seven different jobs — asking permission, requesting an instruction, offering to help, sharing news, even asking someone to repeat themselves — and none of it shows up in the grammar; only context tells you which act is really happening.',
+  sections: [
+    { h: 'A real question, and a self-directed one', html: 'A genuine information request works as expected; a <b>deliberative</b> question is asked mostly of oneself, wondering aloud: <i>¿Estará Ana en casa?</i> — not really addressed to anyone.' },
+    { h: 'Requests disguised as questions', html: 'Asking permission (<i>¿Te importa si abro la ventana?</i>) and asking for an instruction (<i>¿Qué hago con esto?</i>) are both grammatically questions but functionally requests.' },
+    { h: 'Offers: proposing, helping, sharing information', html: 'A question can invite (<i>¿Cenamos juntos mañana?</i>), offer help (<i>¿Te ayudo?</i>), or introduce news the listener does not yet have (<i>¿Sabes que ayer me encontré a María?</i>) — that last one is not really asking whether you know.' },
+    { h: 'Asking someone to repeat, and phatic questions', html: '<i>¿Cómo dice?</i> functions as "repeat that", not a real question about manner. Purely phatic questions (<i>¿sí?, ¿eh?, ¿entiendes?</i>) check the channel is still open, especially on the phone, without seeking real information.' }
+  ],
+  exponents: [
+    { es: '¿Estará Ana en casa?', en: 'I wonder if Ana is home.', register: 'neutral', note: 'deliberative — asked mostly of oneself' },
+    { es: '¿Te importaría si abro un poco la ventana?', en: 'Would you mind if I open the window a bit?', register: 'neutral', note: 'a permission request, not a real yes/no question' },
+    { es: '¿Cenamos juntos mañana?', en: 'Shall we have dinner together tomorrow?', register: 'coloquial', note: 'an invitation dressed as a question' },
+    { es: '¿Sabes que ayer me encontré a María?', en: 'You know I ran into María yesterday?', register: 'coloquial', note: 'introduces news — not really asking about your knowledge' },
+    { es: '¿Cómo dice?', en: "I'm sorry, what did you say?", register: 'formal', note: 'a request to repeat, dressed as a question about manner' }
+  ],
+  pitfalls: [
+    'A learner who answers <i>¿Sabes que...?</i> literally ("yes/no, I know/don\'t know") has missed the point — it is a way of introducing news, and the expected response engages with the news itself.',
+    '<i>¿Cómo dice?</i> is not really asking HOW something was said — it functions purely as "please repeat that", typically in a more formal or distant register than a casual <i>¿qué?</i>',
+    'Phatic questions (<i>¿eh?, ¿sabes?, ¿entiendes?</i>) check that communication is still working — treating them as genuine requests for confirmation of understanding misses their real, channel-checking function.'
+  ],
+  examples: [
+    { es: '¿Quiere que le ayude con las maletas?', en: 'Would you like me to help you with the bags?' },
+    { es: '¿Me oyes bien?', en: 'Can you hear me okay?' },
+    { es: '¿Y si probamos con otro enfoque?', en: 'What if we try a different approach?' }
+  ],
+  probes: [
+    { id: 'p:ilocutivosB1:deliberativa', kind: 'mcq', q: '"¿Estará Ana en casa?" — ¿a quién se dirige realmente?',
+      options: ['A un tercero', 'Mayormente a sí mismo', 'A Ana directamente'], answer: 1 },
+    { id: 'p:ilocutivosB1:noticia', kind: 'mcq', q: '"¿Sabes que ayer vi a Pedro?" — ¿qué función tiene?',
+      options: ['Preguntar por tu conocimiento', 'Introducir una noticia', 'Pedir un favor'], answer: 1 },
+    { id: 'p:ilocutivosB1:cloze', kind: 'cloze', text: '¿___ dice? (pedir que repita, formal)', accept: ['Cómo', 'cómo'] },
+    { id: 'p:ilocutivosB1:recall', kind: 'recall', front: '¿Qué comprueban las preguntas fáticas como "¿eh?, ¿sabes?"?', back: 'que el canal de comunicación sigue abierto, no información real' }
+  ]
+},
+
+{
+  id: 'dc-negacion-refuerzo-b1', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  pcic: ['tacticas_pragmaticas:B1:136', 'tacticas_pragmaticas:B1:137', 'tacticas_pragmaticas:B1:138', 'tacticas_pragmaticas:B1:139'],
+  title: 'Refuerzo de la negación: nadie, hasta, desde',
+  summary: 'Some negative words are only grammatical AFTER "no", and two prepositions most learners think of as purely positive — hasta and desde — turn out to require a negated verb whenever the clause they introduce describes a single, non-repeatable event.',
+  sections: [
+    { h: 'Postverbal negative words need "no"', html: '<i>Nadie, nunca, ninguno</i> after the verb require <i>no</i> before it: <i>Luis no ha hablado de esto con nadie nunca.</i> Without <i>no</i>, the sentence is simply ungrammatical: <i>*Luis ha hablado de esto con nadie nunca.</i>' },
+    { h: 'Hasta and desde forcing negation', html: 'With a non-durative predicate (one describing a single point, not an ongoing state), <i>hasta</i> and <i>desde</i> introducing a time clause require the verb to be negated: <i>María no llegará hasta las seis</i> is correct; <i>*María llegará hasta las seis</i> is not — the positive version needs a different preposition entirely.' },
+    { h: 'Veiled negation: "es que..."', html: 'A refusal or disagreement is often preceded by a softening word before the real reason arrives: <i>-¿Vamos al cine? -Es que tengo que estudiar</i> — the "no" is never actually said, but is clearly implied.' }
+  ],
+  exponents: [
+    { es: 'Luis no ha hablado de esto con nadie nunca.', en: "Luis has never talked about this with anyone.", register: 'neutral', note: 'postverbal nadie/nunca require preceding no' },
+    { es: 'María no llegará hasta las seis.', en: "María won't arrive until six.", register: 'neutral', note: 'hasta + non-durative predicate forces negation' },
+    { es: 'Antonio no ha salido de casa desde ayer.', en: "Antonio hasn't left the house since yesterday.", register: 'neutral', note: 'desde forces negation with a non-durative predicate' },
+    { es: '-¿Vamos al cine? -Es que tengo que estudiar.', en: '-Shall we go to the cinema? -It\'s just that I have to study.', register: 'coloquial', note: 'veiled negation — no explicit "no" at all' }
+  ],
+  pitfalls: [
+    'Never drop the preceding <i>no</i> just because <i>nadie/nunca/ninguno</i> already sound negative — Spanish requires both, unlike English "never...anyone" which needs only one negative word.',
+    '<i>Hasta</i> and <i>desde</i> only force negation with a NON-DURATIVE predicate (a single point, like "arrive" or "leave") — a durative predicate (like "estar aquí") behaves differently and does not have this restriction.',
+    '"Es que..." as veiled negation only works as a refusal when the listener can infer the "no" from context — in writing or with someone who cannot see the implication, an explicit refusal is clearer.'
+  ],
+  examples: [
+    { es: 'No conozco a nadie en esta ciudad.', en: "I don't know anyone in this city." },
+    { es: 'No hemos hablado desde el verano pasado.', en: "We haven't talked since last summer." },
+    { es: '-¿Te vienes? -Bueno, es que tengo mucho trabajo.', en: "-Are you coming? -Well, it's just that I have a lot of work." }
+  ],
+  probes: [
+    { id: 'p:negrefuerzoB1:obligatorio', kind: 'mcq', q: '¿Cuál es correcta?',
+      options: ['Ha hablado con nadie.', 'No ha hablado con nadie.', 'Ha no hablado con nadie.'], answer: 1 },
+    { id: 'p:negrefuerzoB1:hasta', kind: 'mcq', q: '¿Cuál es correcta?',
+      options: ['María llegará hasta las seis.', 'María no llegará hasta las seis.', 'María llegará no hasta las seis.'], answer: 1 },
+    { id: 'p:negrefuerzoB1:cloze', kind: 'cloze', text: 'No hemos salido de casa ___ el lunes. (desde)', accept: ['desde'] },
+    { id: 'p:negrefuerzoB1:recall', kind: 'recall', front: '¿Necesitan "no" los pronombres negativos pospuestos al verbo (nadie, nunca)?', back: 'sí, siempre — es obligatorio' }
+  ]
+},
+
+{
+  id: 'dc-atenuacion-b1', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  pcic: ['tacticas_pragmaticas:B1:225', 'tacticas_pragmaticas:B1:227', 'tacticas_pragmaticas:B1:228', 'tacticas_pragmaticas:B1:229',
+         'tacticas_pragmaticas:B1:230', 'tacticas_pragmaticas:B1:233', 'tacticas_pragmaticas:B1:235', 'tacticas_pragmaticas:B1:236',
+         'tacticas_pragmaticas:B1:237', 'tacticas_pragmaticas:B1:238'],
+  title: 'Atenuación: desplazar el tiempo verbal para suavizar',
+  summary: 'B1\'s central softening trick is temporal: moving a request or opinion into the imperfect or conditional does not change WHEN it happens, only how much it asks of the listener — the "imperfecto de cortesía" famously softens a shop assistant\'s question with no reference to the past at all.',
+  sections: [
+    { h: 'The courtesy imperfect: no past meaning at all', html: '<i>¿Qué deseaba?</i>, <i>¿Cómo te llamabas?</i> use the imperfect with a PRESENT meaning — the past tense itself is the softening device, distancing the request from a blunt present-tense demand.' },
+    { h: 'The courtesy conditional', html: '<i>¿Podrías abrir la ventana?</i>, <i>¿Te importaría cerrar la puerta?</i> use the conditional for the same softening job, interchangeable with a future in meaning but much gentler in effect.' },
+    { h: 'The conditional of modesty', html: 'When your view might clash with the listener\'s, the conditional frames it as tentative rather than asserted: <i>Yo diría que eso no es así</i> — softer than a flat "eso no es así".' },
+    { h: 'Delaying with "ir a" + infinitivo, and performative softening', html: '<i>Pues va a ser imposible</i> uses the near-future to delay or soften a refusal. Performative verbs like <i>creo que</i>, <i>me parece que</i> soften an opinion into something explicitly personal rather than an assertion of fact.' }
+  ],
+  exponents: [
+    { es: '-¿Qué deseaba? -Venía por lo del anuncio.', en: '-What did you need? -I\'ve come about the advert.', register: 'formal', note: 'imperfecto de cortesía — no past meaning, purely softening' },
+    { es: '¿Podrías abrir la ventana?', en: 'Could you open the window?', register: 'neutral', note: 'condicional de cortesía' },
+    { es: 'Yo diría que eso no es así.', en: "I would say that isn't so.", register: 'neutral', note: 'condicional de modestia — a tentative, not asserted, view' },
+    { es: 'Pues va a ser imposible.', en: "Well, it's going to be impossible.", register: 'coloquial', note: 'ir a + infinitivo to soften/delay a refusal' },
+    { es: 'Creo que debes estudiar más.', en: 'I think you should study more.', register: 'neutral', note: 'performative verb softening an opinion' }
+  ],
+  pitfalls: [
+    'The courtesy imperfect (<i>¿qué deseaba?</i>) is not really about the past — using it correctly requires recognizing it softens a PRESENT request, unlike its normal use for past habitual or ongoing actions.',
+    'Do not confuse the conditional of courtesy (softening a request) with the conditional of modesty (softening an opinion that might clash) — both use the same tense but for different social jobs.',
+    '<i>Ir a + infinitivo</i> as a softening/delaying device (<i>va a ser imposible</i>) is distinct from its normal near-future meaning — here it buys time or eases a refusal rather than simply predicting the future.'
+  ],
+  examples: [
+    { es: '¿Cómo te llamabas, perdona?', en: "Sorry, what was your name again?" },
+    { es: '¿Te importaría cerrar la puerta?', en: 'Would you mind closing the door?' },
+    { es: 'Me parece que no es buena idea comer tantos dulces.', en: "I don't think it's a good idea to eat so many sweets." }
+  ],
+  probes: [
+    { id: 'p:atenB1:imperfecto', kind: 'mcq', q: '"¿Qué deseaba?" dicho a un cliente que acaba de llegar — ¿a qué tiempo se refiere realmente?',
+      options: ['Al pasado', 'Al presente, suavizado', 'Al futuro'], answer: 1 },
+    { id: 'p:atenB1:modestia', kind: 'mcq', q: '¿Cuál usa el condicional de MODESTIA (una opinión que puede chocar)?',
+      options: ['¿Podrías ayudarme?', 'Yo diría que no es así.', '¿Te importaría esperar?'], answer: 1 },
+    { id: 'p:atenB1:cloze', kind: 'cloze', text: '¿___ abrir la ventana, por favor? (condicional de cortesía, poder)', accept: ['Podrías', 'podrías'] },
+    { id: 'p:atenB1:recall', kind: 'recall', front: '¿Qué tiempo verbal suaviza una pregunta sin cambiar cuándo ocurre, en "¿qué deseaba?"?', back: 'el imperfecto de cortesía' }
+  ]
 }
 
 ];
