@@ -19004,6 +19004,820 @@ window.STRAND_LESSONS = [
     { id: 'p:sensfisicasB2:cloze', kind: 'cloze', text: 'Aquella noche ___ mucho frío. (pasar)', accept: ['pasamos'] },
     { id: 'p:sensfisicasB2:recall', kind: 'recall', front: '¿Qué diferencia "pasar hambre" de "tener hambre"?', back: 'pasar implica un periodo extendido, no un momento puntual' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 function, part 3 (WORKLIST.md, section B2 · function, § 4.1-4.25)
+ * Influir en el interlocutor: the recurring axis is DIRECTNESS — a direct
+ * imperative, an attenuated question/statement, or a covert request that
+ * states a problem and lets the listener infer what is being asked.
+ * ========================================================================== */
+{
+  id: 'fn-dar-orden-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:954', 'funciones:B2:957', 'funciones:B2:958', 'funciones:B2:960', 'funciones:B2:962', 'funciones:B2:964', 'funciones:B2:966'],
+  title: 'Dar una orden: primera persona del plural para suavizar',
+  summary: 'A present-tense statement in the first-person plural — "encendemos la máquina y esperamos" — gives an instruction without a single imperative verb, folding the speaker into the action so it reads as a shared procedure rather than a command aimed at one person.',
+  sections: [
+    { h: 'Direct: imperative + intensifier', html: '<i>Sal de aquí ahora mismo</i> reinforces urgency; lexicalized imperatives like <i>¡Basta ya!</i> function as fixed commands.' },
+    { h: 'Attenuated: present tense standing in for imperative', html: 'A plain present-tense statement, first or second person, can BE the instruction: <i>Encendemos la máquina y esperamos unos minutos</i> — no imperative form at all, but functions as one.' },
+    { h: '¿Present tense as a question?', html: '¿Nos tomamos la medicina? uses first-person plural to soften an instruction into something collaborative, even directed at just one person (a nurse to a patient, say).' },
+    { h: 'Formal softening: agradecería/ruego que', html: '<i>Te agradecería que no tomaras ninguna decisión</i>, <i>Le ruego que no me pase ninguna llamada</i> — formal, indirect instructions via subjunctive.' }
+  ],
+  exponents: [
+    { es: 'Sal de aquí ahora mismo.', en: 'Get out of here right now.', register: 'coloquial' },
+    { es: 'Encendemos la máquina y esperamos unos minutos.', en: 'We turn on the machine and wait a few minutes.', register: 'neutral', note: 'present tense standing in for an instruction' },
+    { es: '¿Nos tomamos la medicina?', en: "Shall we take our medicine?", register: 'coloquial', note: 'first-person plural, softened, even to one person' },
+    { es: 'Le ruego que no me pase ninguna llamada.', en: "I ask you not to put any calls through to me.", register: 'formal' },
+    { es: '¡A comer!', en: 'Time to eat!', register: 'coloquial', note: 'a + infinitivo, an informal call to action' }
+  ],
+  contrasts: [
+    { es: 'Toma la medicina.', en: 'Take your medicine.', note: 'bare imperative, direct' },
+    { es: '¿Nos tomamos la medicina?', en: 'Shall we take our medicine?', note: 'same instruction, softened via first-person plural' }
+  ],
+  pitfalls: [
+    'The first-person-plural softening (<i>nos tomamos, encendemos</i>) is not really an invitation for the speaker to participate — it is a rhetorical device to soften an instruction aimed at the listener alone.',
+    '<i>Te agradecería que + subjuntivo</i> is a genuinely formal register — using it among close friends for a trivial request can sound oddly stiff or even sarcastic.'
+  ],
+  examples: [
+    { es: 'No olvides apagar el ordenador cuando te vayas.', en: "Don't forget to turn off the computer when you leave." },
+    { es: 'Buscáis los documentos pendientes y los revisáis, por favor.', en: 'Find the pending documents and review them, please.' },
+    { es: 'Hace falta que se quede alguien hasta las ocho.', en: 'Someone needs to stay until eight.' }
+  ],
+  probes: [
+    { id: 'p:darordenB2:primerapersonaplural', kind: 'mcq', q: '"¿Nos tomamos la medicina?" dicho a un solo paciente — ¿qué logra el plural?',
+      options: ['Incluye realmente a la enfermera', 'Suaviza la instrucción', 'Es un error gramatical'], answer: 1 },
+    { id: 'p:darordenB2:formal', kind: 'mcq', q: '¿Cuál es la más formal?',
+      options: ['¡A comer!', 'Le ruego que no me pase llamadas.', '¡Basta ya!'], answer: 1 },
+    { id: 'p:darordenB2:cloze', kind: 'cloze', text: 'Sobre todo, no ___ de llamarme. (dejar, negativo)', accept: ['dejes'] },
+    { id: 'p:darordenB2:recall', kind: 'recall', front: '¿Qué persona gramatical suaviza una orden convirtiéndola en algo compartido?', back: 'la primera del plural (nosotros)' }
+  ]
+},
+
+{
+  id: 'fn-pedir-favor-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:979', 'funciones:B2:980', 'funciones:B2:981', 'funciones:B2:983'],
+  title: 'Pedir un favor: de forma encubierta',
+  summary: 'A COVERT request states a problem and trusts the listener to infer the ask — "necesito que alguien revise lo que he escrito" never actually asks the listener directly, leaving them the social option of volunteering rather than being asked outright.',
+  sections: [
+    { h: 'Attenuated, direct requests', html: '<i>¿Me harías un favor?</i>, <i>Necesitaría que me hicieras un favor</i> ask directly but softened by the conditional.' },
+    { h: 'Te agradecería que + subjuntivo', html: 'A more formal frame, common in written requests: <i>Le agradecería muchísimo que me enviara la información.</i>' },
+    { h: 'Covert: stating the problem, not the request', html: '<i>Necesito que alguien revise lo que he escrito</i> — grammatically third person ("alguien"), it never directly asks YOU, leaving room for a volunteer rather than a named target.' }
+  ],
+  exponents: [
+    { es: '¿Me harías un favor?', en: 'Would you do me a favor?', register: 'coloquial' },
+    { es: 'Le agradecería muchísimo que me prestara su traje.', en: "I'd really appreciate you lending me your suit.", register: 'formal' },
+    { es: 'Necesito que alguien revise lo que he escrito.', en: 'I need someone to review what I\'ve written.', register: 'neutral', note: 'covert — asks no one directly' }
+  ],
+  contrasts: [
+    { es: '¿Me revisas esto, por favor?', en: 'Can you check this for me, please?', note: 'direct — names you as the one asked' },
+    { es: 'Necesito que alguien revise esto.', en: 'I need someone to review this.', note: 'covert — leaves it open for a volunteer' }
+  ],
+  pitfalls: [
+    'A covert request only works pragmatically if the listener is willing to pick up the implicit ask — in a context where nobody feels responsible, it can simply go unanswered.',
+    'The conditional (<i>agradecería, necesitaría</i>) is what makes the direct requests feel like a favor rather than a demand — swapping to the present indicative (<i>agradezco, necesito</i>) reads more assertive.'
+  ],
+  examples: [
+    { es: 'Mira, te tengo que pedir una cosa... ¿podrías dejarme tu coche?', en: 'Look, I have to ask you something... could you lend me your car?' },
+    { es: 'Le agradecería que me enviara toda la información sobre este tema.', en: 'I would appreciate you sending me all the information on this topic.' },
+    { es: 'No sé cómo voy a terminar esto solo.', en: "I don't know how I'm going to finish this alone." }
+  ],
+  probes: [
+    { id: 'p:pedirfavorB2:encubierta', kind: 'mcq', q: '¿A quién pide ayuda "Necesito que alguien revise esto"?',
+      options: ['A una persona concreta, nombrada', 'A nadie directamente — deja la puerta abierta', 'A sí mismo'], answer: 1 },
+    { id: 'p:pedirfavorB2:modo', kind: 'mcq', q: '"Te agradecería que me ___ (prestar) el libro."',
+      options: ['prestas', 'prestaras', 'prestarás'], answer: 1 },
+    { id: 'p:pedirfavorB2:cloze', kind: 'cloze', text: '¿Me ___ un favor? (hacer, condicional)', accept: ['harías'] },
+    { id: 'p:pedirfavorB2:recall', kind: 'recall', front: '¿Qué hace un pedido ENCUBIERTO en vez de uno directo?', back: 'plantea el problema sin pedir explícitamente a nadie' }
+  ]
+},
+
+{
+  id: 'fn-pedir-objetos-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:998', 'funciones:B2:1000', 'funciones:B2:1003', 'funciones:B2:1004', 'funciones:B2:1006', 'funciones:B2:1008'],
+  title: 'Pedir objetos: tengo que pedirte una cosa...',
+  summary: '"Tengo que pedirte una cosa..." is a two-step request that announces itself before making the actual ask — buying a beat of preparation that a direct "¿me prestas...?" skips entirely.',
+  sections: [
+    { h: 'Direct: alcánzame + SN (+ atenuador)', html: '<i>Alcánzame la sal, anda</i> — a bare imperative, softened only by a trailing filler word.' },
+    { h: 'Announcing the request before making it', html: '<i>Tengo que pedirte una cosa... ¿Podrías dejarme tu coche?</i> — a two-step move that prepares the listener before the actual ask.' },
+    { h: 'Covert: stating the problem', html: '<i>Necesito que alguien revise lo que he escrito</i> works here too, exactly as with favors.' }
+  ],
+  exponents: [
+    { es: 'Alcánzame la sal, anda.', en: 'Pass me the salt, come on.', register: 'coloquial' },
+    { es: 'Tengo que pedirte una cosa... ¿podrías dejarme tu coche?', en: 'I have to ask you something... could you lend me your car?', register: 'coloquial' },
+    { es: 'Le agradecería que me dejara su libro sobre los Paradores.', en: "I'd appreciate you lending me your book on the Paradores.", register: 'formal' },
+    { es: 'Me pone 200 g de queso fresco, por favor.', en: 'I\'ll take 200g of fresh cheese, please.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¿Me alcanzas ese libro?', en: 'Can you pass me that book?', note: 'a direct, single-step request' },
+    { es: 'Tengo que pedirte una cosa... ¿podrías dejarme el libro?', en: 'I have to ask you something... could you lend me the book?', note: 'a two-step request that prepares the listener first' }
+  ],
+  pitfalls: [
+    'The announcing move (<i>tengo que pedirte una cosa...</i>) only earns its keep for a request that feels larger or more awkward — using it for a trivial ask (pass the salt) can feel oddly weighty.',
+    '<i>Me pone + [cantidad]</i> is the standard shop/counter frame — do not confuse it with the literal sense of <i>poner</i> (to place).'
+  ],
+  examples: [
+    { es: '¿Puedes alcanzarme el lápiz, por favor?', en: 'Can you pass me the pencil, please?' },
+    { es: 'Necesito que me dejes tu diccionario un momento.', en: "I need you to lend me your dictionary for a moment." },
+    { es: 'Alcánzame eso, si no te importa.', en: 'Pass me that, if you don\'t mind.' }
+  ],
+  probes: [
+    { id: 'p:pedirobjetosB2:dospasos', kind: 'mcq', q: '¿Qué logra anunciar "tengo que pedirte una cosa..." antes de pedir?',
+      options: ['Nada, es relleno', 'Prepara al oyente para la petición', 'Confunde al oyente'], answer: 1 },
+    { id: 'p:pedirobjetosB2:meponen', kind: 'mcq', q: '¿Dónde se usa típicamente "me pone..."?',
+      options: ['En una tienda/mostrador', 'En una carta formal', 'Al teléfono con un amigo'], answer: 0 },
+    { id: 'p:pedirobjetosB2:cloze', kind: 'cloze', text: 'Alcánzame la sal, ___. (anda, atenuador)', accept: ['anda'] },
+    { id: 'p:pedirobjetosB2:recall', kind: 'recall', front: '¿Qué compra el paso de "tengo que pedirte una cosa..." antes del pedido real?', back: 'un momento para preparar al oyente' }
+  ]
+},
+
+{
+  id: 'fn-pedir-ayuda-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1022', 'funciones:B2:1023', 'funciones:B2:1026', 'funciones:B2:1029', 'funciones:B2:1030'],
+  title: 'Pedir ayuda: échame una mano, solicito tu colaboración',
+  summary: '"Solicito su colaboración" is the formal, institutional register for the same request "échame una mano" makes casually — the choice between them is entirely about setting, not meaning.',
+  sections: [
+    { h: 'Échame una mano: the everyday idiom', html: 'The default colloquial way to ask for help, works alone or attenuated: <i>¿Podrías echarme una mano con esto?</i>' },
+    { h: 'Solicito su colaboración: formal/institutional', html: 'Used in official requests, reports, formal letters: <i>Solicitamos su colaboración para realizar este proyecto.</i>' },
+    { h: 'Covert: stating the difficulty', html: '<i>No puedo mover este mueble; pesa muchísimo</i> states a problem, trusting the listener to offer help without a direct request.' }
+  ],
+  exponents: [
+    { es: '¿Me echas una mano?', en: 'Can you give me a hand?', register: 'coloquial' },
+    { es: '¿Podrías echarme una mano con esto? Es que no sé cómo funciona.', en: "Could you give me a hand with this? I don't know how it works.", register: 'neutral' },
+    { es: 'Solicitamos su colaboración para realizar este proyecto.', en: 'We request your collaboration to carry out this project.', register: 'formal' },
+    { es: 'Necesitaría que me echaras una mano con los niños este fin de semana.', en: 'I would need you to help me with the kids this weekend.', register: 'neutral' },
+    { es: 'No puedo mover este mueble; pesa muchísimo.', en: "I can't move this piece of furniture; it's really heavy.", register: 'coloquial', note: 'covert — states the problem, no direct ask' }
+  ],
+  contrasts: [
+    { es: 'Échame una mano.', en: 'Give me a hand.', note: 'colloquial idiom' },
+    { es: 'Solicito su colaboración.', en: 'I request your collaboration.', note: 'formal, institutional register — same underlying request' }
+  ],
+  pitfalls: [
+    '<i>Solicito su colaboración</i> would sound absurdly stiff among friends — match the register to the setting, not just to how urgent the request is.',
+    'A covert request (stating the problem) works best when the difficulty is obvious enough that help is a natural, expected response.'
+  ],
+  examples: [
+    { es: 'Por eso solicitamos su colaboración para este proyecto.', en: 'That is why we request your collaboration for this project.' },
+    { es: '¿Necesitas que haga algo más?', en: 'Do you need me to do anything else?' },
+    { es: 'Este ejercicio no me sale, ¿me ayudas?', en: "I can't figure out this exercise, will you help me?" }
+  ],
+  probes: [
+    { id: 'p:pedirayudaB2:registro', kind: 'mcq', q: '¿Cuál es la versión FORMAL de "échame una mano"?',
+      options: ['¿Me ayudas?', 'Solicito su colaboración.', '¿Puedes con esto?'], answer: 1 },
+    { id: 'p:pedirayudaB2:encubierta', kind: 'mcq', q: '"No puedo mover este mueble" — ¿qué tipo de petición es?',
+      options: ['Directa', 'Encubierta', 'Formal'], answer: 1 },
+    { id: 'p:pedirayudaB2:cloze', kind: 'cloze', text: '¿Me ___ una mano con esto? (echar)', accept: ['echas'] },
+    { id: 'p:pedirayudaB2:recall', kind: 'recall', front: '¿Qué determina la elección entre "échame una mano" y "solicito su colaboración"?', back: 'el registro/contexto, no el significado' }
+  ]
+},
+
+{
+  id: 'fn-responder-orden-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1054', 'funciones:B2:1057', 'funciones:B2:1059', 'funciones:B2:1061', 'funciones:B2:1063'],
+  title: 'Responder a una petición: sí, pero solamente si...',
+  summary: 'Conditional acceptance — "sí, pero solamente si me lo devuelves mañana" — is a genuine middle ground between agreeing and refusing, attaching a condition that must be met, distinct from both an unconditional yes and a flat no.',
+  sections: [
+    { h: 'Sin reservas: full acceptance', html: '<i>Será un placer</i>, <i>Como tú quieras</i> commit fully.' },
+    { h: 'Conditional acceptance: sí, pero solamente si', html: 'A genuine middle ground — the request is granted, but only on a stated condition: <i>Sí, pero solamente si me lo devuelves mañana.</i>' },
+    { h: 'Reluctant acceptance', html: '<i>Bueeeno, está bien, si insistes...</i> (elongated vowel marking reluctance), <i>Si no hay más remedio...</i>' },
+    { h: 'Conditional refusal', html: '<i>No, salvo que alguien me sustituya</i> — a refusal that leaves one specific escape hatch open.' }
+  ],
+  exponents: [
+    { es: 'Sí, pero solamente si me lo devuelves mañana.', en: "Yes, but only if you give it back to me tomorrow.", register: 'coloquial', note: 'conditional acceptance' },
+    { es: 'Será un placer.', en: "It'll be a pleasure.", register: 'formal' },
+    { es: 'Bueeeno, está bien, si insistes...', en: 'Well, okay, if you insist...', register: 'coloquial' },
+    { es: 'No, salvo que alguien me sustituya.', en: 'No, unless someone covers for me.', register: 'neutral', note: 'conditional refusal — one escape hatch' },
+    { es: 'Sí, siempre que me deis un día libre.', en: "Yes, as long as you give me a day off.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Sí, claro, cómo no.', en: 'Yes, of course.', note: 'unconditional acceptance' },
+    { es: 'Sí, pero solamente si me lo devuelves mañana.', en: 'Yes, but only if you give it back tomorrow.', note: 'conditional — a real middle ground, not just yes or no' }
+  ],
+  pitfalls: [
+    'Conditional acceptance is a genuinely distinct move from both plain yes and no — treating it as equivalent to an unconditional "sí" ignores the attached condition.',
+    'The elongated <i>Bueeeno</i> is a real prosodic signal of reluctance in speech — in writing, this needs an explicit marker (like "si insistes") to convey the same hesitation.'
+  ],
+  examples: [
+    { es: '¿Puedes prestarme tu diccionario? -Sí, pero solamente si me lo devuelves mañana.', en: 'Can you lend me your dictionary? -Yes, but only if you give it back tomorrow.' },
+    { es: 'Bueno, anda, está bien.', en: 'Alright, fine, okay.' },
+    { es: 'Como tú lo veas.', en: 'Whatever you think is best.' }
+  ],
+  probes: [
+    { id: 'p:responderordenB2:condicional', kind: 'mcq', q: '¿Qué tipo de respuesta es "sí, pero solamente si..."?',
+      options: ['Aceptación incondicional', 'Aceptación condicional — un término medio real', 'Rechazo total'], answer: 1 },
+    { id: 'p:responderordenB2:escapehatch', kind: 'mcq', q: '"No, salvo que alguien me sustituya" deja abierta...',
+      options: ['Ninguna posibilidad', 'Una condición específica que cambiaría la respuesta', 'Solo confusión'], answer: 1 },
+    { id: 'p:responderordenB2:cloze', kind: 'cloze', text: 'Sí, siempre ___ me avises antes. (que)', accept: ['que'] },
+    { id: 'p:responderordenB2:recall', kind: 'recall', front: '¿Es "sí, pero solamente si..." lo mismo que un "sí" incondicional?', back: 'no — es un término medio, la aceptación depende de una condición' }
+  ]
+},
+
+{
+  id: 'fn-pedir-permiso-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1087', 'funciones:B2:1088', 'funciones:B2:1089', 'funciones:B2:1090', 'funciones:B2:1091'],
+  title: 'Pedir permiso: ¿te importaría que + subjuntivo?',
+  summary: 'Asking "¿te molesta/importa si...?" frames permission as a matter of the OTHER person\'s comfort, not authority — a distinctly polite move that "¿puedo...?" alone does not carry.',
+  sections: [
+    { h: '¿Te molesta/importa si/que...?', html: 'Frames the request around the other person\'s comfort: <i>¿No te importaría cambiarme las vacaciones?</i>' },
+    { h: '¿Te parece bien que + subjuntivo?', html: 'Asks for approval of a specific action: <i>¿Le parece bien que comente esto con el señor Pinto?</i>' },
+    { h: '¿Es/Sería posible...?', html: 'A neutral, slightly formal way to ask if something can be arranged: <i>¿Sería posible cambiar mi turno?</i>' },
+    { h: '¿Me das permiso para...?', html: 'The most direct, explicit request for permission.' }
+  ],
+  exponents: [
+    { es: '¿No te importaría que nos acercáramos un momento a esa tienda?', en: 'Would you mind if we popped over to that shop for a moment?', register: 'coloquial' },
+    { es: '¿Le parece bien que comente este asunto con el señor Pinto?', en: 'Would it be alright with you if I discussed this matter with Mr. Pinto?', register: 'formal' },
+    { es: '¿Sería posible entregar el libro un par de semanas más tarde?', en: 'Would it be possible to hand in the book a couple of weeks later?', register: 'neutral' },
+    { es: '¿Me das permiso para que se lo cuente a Ester?', en: 'Do you give me permission to tell Ester?', register: 'coloquial' },
+    { es: '¿Tenemos su autorización para vender aquí?', en: 'Do we have your authorization to sell here?', register: 'formal' }
+  ],
+  contrasts: [
+    { es: '¿Puedo abrir la ventana?', en: 'Can I open the window?', note: 'direct — asks about ability/permission plainly' },
+    { es: '¿Te importaría que abriera la ventana?', en: 'Would you mind if I opened the window?', note: 'frames it around the other person\'s comfort' }
+  ],
+  pitfalls: [
+    '<i>¿Te importaría que...?</i> answered with a bare "sí" means "yes, it WOULD bother me" — a refusal, not agreement; this can trip learners expecting "sí" to always mean yes.',
+    '<i>¿Es posible...?</i> is neutral/practical; <i>¿me das permiso para...?</i> is more explicitly about authority — choose based on whether you are asking about feasibility or approval.'
+  ],
+  examples: [
+    { es: 'Perdona, ¿no te molesta si utilizo tu ordenador un rato?', en: 'Sorry, would you mind if I used your computer for a bit?' },
+    { es: '¿Nos dais permiso para quedarnos a dormir en casa de los primos?', en: 'Do you give us permission to sleep over at our cousins\'?' },
+    { es: '¿Es posible cambiar el turno con otra persona?', en: 'Is it possible to swap shifts with someone else?' }
+  ],
+  probes: [
+    { id: 'p:pedirpermisoB2:respuestasi', kind: 'mcq', q: '"¿Te importaría que fume?" respondido con un "sí" seco significa...',
+      options: ['Que puedes fumar', 'Que le molestaría — un rechazo', 'No está claro'], answer: 1 },
+    { id: 'p:pedirpermisoB2:enfoque', kind: 'mcq', q: '¿En qué se enfoca "¿te importaría que...?"',
+      options: ['En la autoridad del hablante', 'En la comodidad del oyente', 'En el precio'], answer: 1 },
+    { id: 'p:pedirpermisoB2:cloze', kind: 'cloze', text: '¿___ posible cambiar el turno? (sería)', accept: ['Sería', 'sería'] },
+    { id: 'p:pedirpermisoB2:recall', kind: 'recall', front: '¿En qué se enfoca "¿te importaría...?" a diferencia de "¿puedo...?"', back: 'en la comodidad/molestia del oyente, no solo el permiso' }
+  ]
+},
+
+{
+  id: 'fn-dar-permiso-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1099', 'funciones:B2:1102', 'funciones:B2:1103', 'funciones:B2:1106', 'funciones:B2:1107', 'funciones:B2:1109'],
+  title: 'Dar permiso: estás en tu casa, siempre y cuando',
+  summary: '"Estás en tu casa" grants permission with maximum warmth by symbolically handing over ownership of the space — the opposite pole from "siempre y cuando", which grants permission but immediately attaches a binding condition.',
+  sections: [
+    { h: 'Warm, unconditional permission', html: '<i>Estás en tu casa</i> is an idiom of maximal welcome — permission granted with warmth, treating the space as shared.' },
+    { h: 'Como/donde/cuando quieras', html: 'Grants full latitude on manner, place or time: <i>Cuando quieras.</i>' },
+    { h: 'Permission with a binding condition', html: '<i>Siempre y cuando a él le parezca bien...</i>, <i>Solo si terminas los deberes...</i> grant permission but attach a real condition, not just a polite hedge.' },
+    { h: 'With a reproachful edge', html: '<i>Que sea la última vez</i> grants permission this once while signaling disapproval of it happening again.' }
+  ],
+  exponents: [
+    { es: '-¿Puedo pasar un momento al baño? -Estás en tu casa.', en: '-Can I use the bathroom for a moment? -Make yourself at home.', register: 'coloquial' },
+    { es: 'Cuando quieras.', en: 'Whenever you like.', register: 'coloquial' },
+    { es: 'Siempre y cuando a él le parezca bien y hagáis las horas obligatorias.', en: "As long as he's okay with it and you both do the required hours.", register: 'formal' },
+    { es: 'Solo si terminas los deberes y ordenas tu cuarto.', en: 'Only if you finish your homework and tidy your room.', register: 'coloquial' },
+    { es: 'Bueno, pero que sea la última vez.', en: 'Fine, but let it be the last time.', register: 'neutral', note: 'permission with a reproachful edge' }
+  ],
+  contrasts: [
+    { es: 'Estás en tu casa.', en: 'Make yourself at home.', note: 'maximal warmth, unconditional' },
+    { es: 'Siempre y cuando termines tus deberes.', en: 'As long as you finish your homework.', note: 'permission with a real, binding condition' }
+  ],
+  pitfalls: [
+    '<i>Estás en tu casa</i> should not be read literally about ownership — it is a warm idiom granting free use of a space, common when someone asks to use the bathroom, kitchen, etc.',
+    '<i>Que sea la última vez</i> grants permission while explicitly registering disapproval — treating it as neutral or fully warm misses the reproachful undertone.'
+  ],
+  examples: [
+    { es: '-¿Molesto si dejo aquí mis cosas? -No, no, en absoluto.', en: '-Do you mind if I leave my things here? -No, not at all.' },
+    { es: 'Por supuesto que sí, faltaría más.', en: 'Of course, don\'t even mention it.' },
+    { es: 'No, salvo que me prometas que no llegas muy tarde.', en: "No, unless you promise me you won't be too late." }
+  ],
+  probes: [
+    { id: 'p:darpermisoB2:estasentucasa', kind: 'mcq', q: '¿Qué transmite "estás en tu casa" al dar permiso?',
+      options: ['Formalidad fría', 'Calidez y libertad total', 'Una condición estricta'], answer: 1 },
+    { id: 'p:darpermisoB2:reproche', kind: 'mcq', q: '¿Qué matiz añade "que sea la última vez"?',
+      options: ['Ninguno especial', 'Un reproche implícito', 'Entusiasmo'], answer: 1 },
+    { id: 'p:darpermisoB2:cloze', kind: 'cloze', text: 'Siempre y ___ me avises antes. (cuando)', accept: ['cuando'] },
+    { id: 'p:darpermisoB2:recall', kind: 'recall', front: '¿Es "siempre y cuando" una condición real o solo un adorno?', back: 'una condición real y vinculante' }
+  ]
+},
+
+{
+  id: 'fn-denegar-permiso-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1112', 'funciones:B2:1113', 'funciones:B2:1114', 'funciones:B2:1116'],
+  title: 'Denegar permiso: me temo que no, no va a ser posible',
+  summary: '"Me temo que no" softens a flat refusal into something almost apologetic, while "ya veremos" is a genuine non-answer — neither yes nor no — that defers the decision without committing to either, a classic parental move.',
+  sections: [
+    { h: 'Softened refusal: me temo que no', html: 'Gentler than a bare "no", implies regret at having to refuse: <i>Lo siento, me temo que no.</i>' },
+    { h: 'No es/va a ser posible + reason', html: 'A formal denial that cites an external rule/reason rather than personal choice: <i>No es posible, el reglamento no lo permite.</i>' },
+    { h: 'Ya veremos: a genuine non-answer', html: 'Neither grants nor denies — defers the decision, classically used with children: <i>Bueno, ya veremos.</i>' },
+    { h: 'De ninguna manera: absolute refusal', html: 'The strongest, most categorical denial, leaving no room for negotiation.' }
+  ],
+  exponents: [
+    { es: 'Lo siento, me temo que no.', en: "I'm sorry, I'm afraid not.", register: 'formal' },
+    { es: 'No, lo siento, no es posible. El reglamento no lo permite.', en: "No, I'm sorry, it's not possible. The regulations don't allow it.", register: 'formal' },
+    { es: 'Bueno, ya veremos.', en: "Well, we'll see.", register: 'coloquial', note: 'defers — neither yes nor no' },
+    { es: 'De ninguna manera.', en: 'Absolutely not.', register: 'formal', note: 'categorical, no negotiation' },
+    { es: 'No puedo permitir que salga usted a estas horas.', en: "I can't allow you to go out at this hour.", register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'No.', en: 'No.', note: 'flat, bare refusal' },
+    { es: 'Me temo que no.', en: "I'm afraid not.", note: 'softened, almost apologetic' },
+    { es: 'Ya veremos.', en: "We'll see.", note: 'defers the decision entirely — not a refusal yet' }
+  ],
+  pitfalls: [
+    '<i>Ya veremos</i> is famously non-committal — treating it as either a yes or a soft no misreads its whole function, which is to postpone deciding.',
+    'Citing an external rule (<i>el reglamento no lo permite</i>) depersonalizes a refusal — it is often used precisely to avoid the refusal feeling like the speaker\'s personal choice.'
+  ],
+  examples: [
+    { es: 'Lo siento, pero no va a ser posible. Es una salida de emergencia.', en: "I'm sorry, but it won't be possible. It's an emergency exit." },
+    { es: 'No, no puedo autorizar eso.', en: "No, I can't authorize that." },
+    { es: 'Papá, ¿me llevarás al zoo? -Bueno, ya veremos.', en: 'Dad, will you take me to the zoo? -Well, we\'ll see.' }
+  ],
+  probes: [
+    { id: 'p:denegarpermisoB2:yaveremos', kind: 'mcq', q: '¿Es "ya veremos" un sí o un no?',
+      options: ['Un sí encubierto', 'Un no encubierto', 'Ninguno — aplaza la decisión'], answer: 2 },
+    { id: 'p:denegarpermisoB2:categorico', kind: 'mcq', q: '¿Cuál es la negativa MÁS categórica, sin negociación?',
+      options: ['Me temo que no.', 'De ninguna manera.', 'Ya veremos.'], answer: 1 },
+    { id: 'p:denegarpermisoB2:cloze', kind: 'cloze', text: 'Lo siento, ___ que no. (temo)', accept: ['me temo', 'temo'] },
+    { id: 'p:denegarpermisoB2:recall', kind: 'recall', front: '¿Por qué se cita a menudo "el reglamento" al denegar permiso?', back: 'para despersonalizar la negativa, no que sea decisión propia' }
+  ]
+},
+
+{
+  id: 'fn-prohibir-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1125', 'funciones:B2:1126', 'funciones:B2:1127', 'funciones:B2:1128'],
+  title: 'Prohibir: está prohibido que, te prohíbo que',
+  summary: '"Está prohibido que" states an impersonal, institutional rule, while "te prohíbo que" is personal and direct, aimed squarely at one listener — the same content, but the first cites an authority beyond the speaker and the second speaks with the speaker\'s own authority.',
+  sections: [
+    { h: 'Impersonal, institutional: está prohibido que', html: '<i>Está prohibido que los menores no acompañados utilicen el ascensor</i> — cites a rule, not the speaker\'s personal will.' },
+    { h: 'Personal, direct: te prohíbo que', html: '<i>Te prohíbo que me hables así</i> — the speaker\'s own authority, aimed at one listener, always subjunctive.' },
+    { h: 'Fixed, categorical phrases', html: '<i>Te he dicho que no</i>, <i>Eso no se hace/toca/dice</i> — flat, often used with children, closing off discussion.' }
+  ],
+  exponents: [
+    { es: 'Está prohibido que los menores no acompañados utilicen el ascensor.', en: 'Unaccompanied minors are prohibited from using the elevator.', register: 'formal' },
+    { es: 'Te prohíbo que me hables así.', en: "I forbid you to talk to me like that.", register: 'neutral' },
+    { es: 'Te he dicho que no.', en: "I told you no.", register: 'coloquial' },
+    { es: 'Eso no se toca.', en: "That's not to be touched.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Está prohibido fumar aquí.', en: 'Smoking is prohibited here.', note: 'impersonal — a rule, not the speaker\'s personal will' },
+    { es: 'Te prohíbo que fumes en mi casa.', en: "I forbid you to smoke in my house.", note: 'personal — the speaker\'s own authority' }
+  ],
+  pitfalls: [
+    '<i>Te prohíbo que</i> always takes the subjunctive and is markedly personal/direct — using it for an institutional rule (rather than <i>está prohibido</i>) makes the speaker sound like they personally forbid something beyond their authority.',
+    '<i>Eso no se hace/toca/dice</i> uses the impersonal <i>se</i> to state a norm without naming who is enforcing it — common when addressing children.'
+  ],
+  examples: [
+    { es: 'Está prohibido aparcar en esta calle los lunes.', en: 'Parking on this street is prohibited on Mondays.' },
+    { es: 'Te prohíbo terminantemente que vuelvas a hacer eso.', en: 'I absolutely forbid you to do that again.' },
+    { es: 'Eso no se dice delante de los abuelos.', en: 'That is not to be said in front of the grandparents.' }
+  ],
+  probes: [
+    { id: 'p:prohibirB2:personalvsimpersonal', kind: 'mcq', q: '¿Cuál es PERSONAL, con la autoridad del propio hablante?',
+      options: ['Está prohibido fumar.', 'Te prohíbo que fumes.', 'Eso no se hace.'], answer: 1 },
+    { id: 'p:prohibirB2:modo', kind: 'mcq', q: '"Te prohíbo que me ___ (hablar) así."',
+      options: ['hablas', 'hables', 'hablarás'], answer: 1 },
+    { id: 'p:prohibirB2:cloze', kind: 'cloze', text: 'Está ___ que los menores usen el ascensor solos. (prohibido)', accept: ['prohibido'] },
+    { id: 'p:prohibirB2:recall', kind: 'recall', front: '¿Qué usa "eso no se hace" para no nombrar a quien lo prohíbe?', back: 'el "se" impersonal' }
+  ]
+},
+
+{
+  id: 'fn-rechazar-prohibicion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1130', 'funciones:B2:1131', 'funciones:B2:1132', 'funciones:B2:1135'],
+  title: 'Rechazar una prohibición: pues claro que, no me da la gana',
+  summary: '"No me da la gana" is a genuinely defiant refusal to comply — much stronger than a simple "no quiero" — reserved for situations where the speaker is openly rejecting an authority\'s prohibition, not just declining politely.',
+  sections: [
+    { h: 'Questioning the prohibition\'s authority', html: '<i>¿Quién dice que no se puede?</i> challenges whether the prohibition is even legitimate.' },
+    { h: 'Defiant commitment: pues claro que + futuro', html: '<i>Pues claro que iré</i> asserts the action WILL happen despite the prohibition.' },
+    { h: 'No me da la gana: open defiance', html: 'Much stronger than "no quiero" — an open, somewhat confrontational refusal to comply with an imposed rule.' }
+  ],
+  exponents: [
+    { es: '¿Quién dice que no se puede?', en: 'Who says you can\'t?', register: 'coloquial' },
+    { es: 'Pues claro que iré, digan lo que digan.', en: 'Of course I\'ll go, whatever they say.', register: 'coloquial' },
+    { es: 'Me temo que lo haremos de todos modos.', en: "I'm afraid we'll do it anyway.", register: 'neutral' },
+    { es: 'No me da la gana.', en: "I don't feel like it and I won't.", register: 'coloquial', note: 'defiant, stronger than "no quiero"' }
+  ],
+  contrasts: [
+    { es: 'No quiero hacerlo.', en: "I don't want to do it.", note: 'a plain, neutral refusal' },
+    { es: 'No me da la gana.', en: "I don't feel like it (and that's final).", note: 'open defiance against an imposed rule' }
+  ],
+  pitfalls: [
+    '<i>No me da la gana</i> is genuinely confrontational — using it in a professional or formal context reads as openly rude, not just assertive.',
+    '<i>Pues claro que + futuro</i> commits to DOING the forbidden thing, not just disagreeing with the rule in the abstract.'
+  ],
+  examples: [
+    { es: 'Pues claro que se lo vamos a decir, no tenemos nada que ocultar.', en: "Of course we're going to tell them, we have nothing to hide." },
+    { es: 'Intenta pararme, a ver si puedes.', en: "Try and stop me, let's see if you can." },
+    { es: 'Lo haré de todas formas, me guste o no la norma.', en: "I'll do it anyway, whether I like the rule or not." }
+  ],
+  probes: [
+    { id: 'p:rechazarprohibB2:fuerza', kind: 'mcq', q: '¿Cuál es MÁS fuerte/desafiante que "no quiero"?',
+      options: ['No me apetece.', 'No me da la gana.', 'Prefiero no hacerlo.'], answer: 1 },
+    { id: 'p:rechazarprohibB2:futuro', kind: 'mcq', q: '"Pues claro que ___ (ir)." (desafío, futuro)',
+      options: ['voy', 'iré', 'iría'], answer: 1 },
+    { id: 'p:rechazarprohibB2:cloze', kind: 'cloze', text: '¿Quién ___ que no se puede? (decir)', accept: ['dice'] },
+    { id: 'p:rechazarprohibB2:recall', kind: 'recall', front: '¿Es "no me da la gana" apropiado en un contexto formal?', back: 'no — es abiertamente desafiante/confrontativo' }
+  ]
+},
+
+{
+  id: 'fn-proponer-sugerir-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1151', 'funciones:B2:1153', 'funciones:B2:1156', 'funciones:B2:1157', 'funciones:B2:1159', 'funciones:B2:1162'],
+  title: 'Proponer y sugerir: habría que, estaría bien que',
+  summary: '"Habría que + infinitivo" proposes an action with the responsible party left conspicuously unnamed — nobody is assigned the task, which is exactly what makes it a gentle suggestion rather than a demand.',
+  sections: [
+    { h: '¿Y si + imperfecto de subjuntivo?', html: 'The classic soft proposal: <i>¿Y si fuéramos este año a la playa?</i>' },
+    { h: 'Habría que + infinitivo: no one named', html: 'Proposes an action while conspicuously naming no one as responsible: <i>Habría que llamarla y decírselo.</i>' },
+    { h: 'Estaría bien / no estaría mal que + subjuntivo', html: 'Frames the proposal as a mild positive, easy to decline: <i>Estaría bien que saliéramos con Raúl.</i>' },
+    { h: 'Te propongo... / Una posibilidad es...', html: 'More direct, formal frames for laying out a concrete option.' }
+  ],
+  exponents: [
+    { es: '¿Y si fuéramos este año a la playa?', en: 'What if we went to the beach this year?', register: 'coloquial' },
+    { es: 'Habría que llamarla y decírselo.', en: 'Somebody ought to call her and tell her.', register: 'neutral', note: 'no one named as responsible' },
+    { es: 'Estaría bien que saliéramos algún día con Raúl.', en: "It would be nice if we went out with Raúl sometime.", register: 'coloquial' },
+    { es: 'Te propongo una cena en mi casa el lunes.', en: "I propose a dinner at my place on Monday.", register: 'neutral' },
+    { es: 'Una posibilidad sería que lo dejaras un tiempo.', en: 'One possibility would be for you to take a break from it for a while.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Deberías llamarla.', en: 'You should call her.', note: 'names YOU as responsible' },
+    { es: 'Habría que llamarla.', en: 'Somebody ought to call her.', note: 'no one named — softer, less pointed' }
+  ],
+  pitfalls: [
+    '<i>Habría que + infinitivo</i> deliberately names no one — using it when you actually mean "you specifically should" can come across as evasive.',
+    'All these subjunctive frames (<i>estaría bien que, ¿y si...?</i>) invite disagreement gently — they are proposals, not decisions already made.'
+  ],
+  examples: [
+    { es: '¿Cómo veríais que celebráramos el cumpleaños en mi casa?', en: 'How would you feel about celebrating the birthday at my place?' },
+    { es: 'Si te parece bien, puedes convertir esta habitación en tu cuarto.', en: 'If it seems okay to you, you could turn this room into your bedroom.' },
+    { es: 'No estaría nada mal que fuéramos a verla alguna vez.', en: "It wouldn't be a bad idea for us to go see her sometime." }
+  ],
+  probes: [
+    { id: 'p:proponerB2:habriaque', kind: 'mcq', q: '¿A quién nombra "habría que llamarla" como responsable?',
+      options: ['A ti', 'A nadie en concreto', 'Al hablante'], answer: 1 },
+    { id: 'p:proponerB2:modo', kind: 'mcq', q: '"¿Y si ___ (ir) a la playa?"',
+      options: ['vamos', 'fuéramos', 'iremos'], answer: 1 },
+    { id: 'p:proponerB2:cloze', kind: 'cloze', text: '___ bien que saliéramos juntos. (estaría)', accept: ['Estaría', 'estaría'] },
+    { id: 'p:proponerB2:recall', kind: 'recall', front: '¿Por qué "habría que" suena menos directo que "deberías"?', back: 'porque no nombra a nadie como responsable' }
+  ]
+},
+
+{
+  id: 'fn-aceptar-propuesta-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1183', 'funciones:B2:1185', 'funciones:B2:1188', 'funciones:B2:1191', 'funciones:B2:1192'],
+  title: 'Aceptar una propuesta: me encantaría, si no hay más remedio',
+  summary: '"Me encantaría" and "si no hay más remedio" both say yes but could not sound more different — one is enthusiastic endorsement, the other barely-concealed resignation — and only context or tone tells a listener which one is coming next.',
+  sections: [
+    { h: 'Enthusiastic acceptance', html: '<i>Me encantaría</i>, <i>Estaría fenomenal/estupendo</i>, <i>Será un placer</i> commit warmly and fully.' },
+    { h: 'Reluctant acceptance', html: 'The elongated <i>Bueeeno</i>, <i>si no hay más remedio</i> accept while signaling this is not really wanted.' },
+    { h: 'Conditional refusal disguised as acceptance', html: '<i>No, salvo que vayamos aquí al lado</i> — technically a "no" to the original proposal, but really an acceptance of a modified version.' }
+  ],
+  exponents: [
+    { es: 'Me encantaría, de verdad.', en: "I'd love to, really.", register: 'coloquial' },
+    { es: 'Estaría fenomenal, cuenta conmigo.', en: "That would be great, count me in.", register: 'coloquial' },
+    { es: 'Bueeeno, está bien, si insistes...', en: 'Weeell, okay, if you insist...', register: 'coloquial' },
+    { es: 'Bueno, si no hay más remedio...', en: "Well, if there's no other option...", register: 'coloquial' },
+    { es: 'No, salvo que vayamos aquí al lado.', en: 'No, unless we go right next door.', register: 'neutral', note: 'a conditional counter-proposal, not a flat refusal' }
+  ],
+  contrasts: [
+    { es: 'Me encantaría.', en: "I'd love to.", note: 'enthusiastic, full acceptance' },
+    { es: 'Si no hay más remedio...', en: "If there's no other way...", note: 'accepting, but with visible reluctance' }
+  ],
+  pitfalls: [
+    'The prosodic marker (elongated vowel, written as <i>Bueeeno</i>) is a real signal of reluctance — a flat "bueno" reads very differently in speech.',
+    '<i>No, salvo que...</i> is technically phrased as a refusal but functions as a counter-proposal — do not read it as a closed door.'
+  ],
+  examples: [
+    { es: '¡Cómo no! Cuenta conmigo.', en: 'Of course! Count me in.' },
+    { es: 'Bueno, anda, está bien.', en: 'Alright, fine, okay.' },
+    { es: 'Sí, venga, vamos.', en: "Yes, come on, let's go." }
+  ],
+  probes: [
+    { id: 'p:aceptarpropB2:entusiasmo', kind: 'mcq', q: '¿Cuál muestra MÁS entusiasmo?',
+      options: ['Si no hay más remedio.', 'Me encantaría.', 'Bueeeno.'], answer: 1 },
+    { id: 'p:aceptarpropB2:contrapropuesta', kind: 'mcq', q: '"No, salvo que vayamos aquí al lado" — ¿es un rechazo cerrado?',
+      options: ['Sí, total', 'No, es una contrapropuesta', 'Es una duda'], answer: 1 },
+    { id: 'p:aceptarpropB2:cloze', kind: 'cloze', text: 'Bueno, si no hay más ___. (remedio)', accept: ['remedio'] },
+    { id: 'p:aceptarpropB2:recall', kind: 'recall', front: '¿Qué marca visualmente "Bueeeno" que un "bueno" normal no marca?', back: 'reticencia/reluctancia, mediante el alargamiento vocálico' }
+  ]
+},
+
+{
+  id: 'fn-rechazar-propuesta-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1201', 'funciones:B2:1203', 'funciones:B2:1205', 'funciones:B2:1207', 'funciones:B2:1208'],
+  title: 'Rechazar una propuesta: preferiría + contrapropuesta',
+  summary: 'The most constructive refusal offers a counter-proposal instead of a bare no — "preferiría que fuéramos a otro sitio" rejects the specific proposal while keeping the door open, unlike a flat "no puedo" that closes it.',
+  sections: [
+    { h: 'Apology + explanation', html: '<i>Es muy amable, pero no puedo. Es que tengo una reunión...</i> — the standard polite refusal shape, apology plus reason.' },
+    { h: '(Lo lamento, pero) es/va a ser imposible + excusa', html: 'A slightly more formal, impersonal-sounding refusal.' },
+    { h: 'Preferiría + contrapropuesta: the constructive refusal', html: '<i>Preferiría que fuéramos a otro sitio, la verdad</i> — refuses the specific proposal while offering an alternative, keeping the conversation moving forward.' }
+  ],
+  exponents: [
+    { es: 'Es muy amable, pero no puedo. Tengo una reunión a las cinco.', en: "That's very kind, but I can't. I have a meeting at five.", register: 'formal' },
+    { es: 'Me temo que va a ser imposible. Tengo cita con el médico.', en: "I'm afraid it's going to be impossible. I have a doctor's appointment.", register: 'formal' },
+    { es: 'Preferiría que fuéramos a otro sitio, la verdad.', en: "I'd actually prefer we went somewhere else.", register: 'coloquial', note: 'refuses while offering an alternative' },
+    { es: '¡Qué rabia! Te tengo que decir que no porque ya tengo planes.', en: 'How annoying! I have to say no because I already have plans.', register: 'coloquial' },
+    { es: 'Lo lamento, pero no voy a poder.', en: "I'm sorry, but I won't be able to.", register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'No puedo, lo siento.', en: "I can't, sorry.", note: 'a closed refusal — no alternative offered' },
+    { es: 'Preferiría que fuéramos a otro sitio.', en: "I'd prefer we went somewhere else.", note: 'refuses the specific proposal but keeps the door open with an alternative' }
+  ],
+  pitfalls: [
+    'A refusal with no reason attached (just "no puedo") can read as curt — the standard polite shape pairs the refusal with an explanation.',
+    '<i>Preferiría + contrapropuesta</i> is the most constructive move here — reaching only for flat refusals when a counter-proposal is possible can needlessly shut down a plan.'
+  ],
+  examples: [
+    { es: 'Lo lamento, pero no va a ser posible ese día, estoy de viaje.', en: "I'm sorry, but that day won't be possible, I'm travelling." },
+    { es: 'Tengo que decirte que no, aunque me encantaría.', en: "I have to say no, even though I'd love to." },
+    { es: 'Preferiría que lo dejáramos para otro día.', en: "I'd prefer we left it for another day." }
+  ],
+  probes: [
+    { id: 'p:rechazarpropB2:constructivo', kind: 'mcq', q: '¿Cuál es la respuesta MÁS constructiva, que mantiene la conversación abierta?',
+      options: ['No puedo, lo siento.', 'Preferiría que fuéramos a otro sitio.', 'Va a ser imposible.'], answer: 1 },
+    { id: 'p:rechazarpropB2:estructura', kind: 'mcq', q: '¿Qué acompaña normalmente a un rechazo cortés?',
+      options: ['Nada más', 'Una disculpa y una razón', 'Una orden'], answer: 1 },
+    { id: 'p:rechazarpropB2:cloze', kind: 'cloze', text: '___ que fuéramos otro día. (preferiría)', accept: ['Preferiría', 'preferiría'] },
+    { id: 'p:rechazarpropB2:recall', kind: 'recall', front: '¿Qué hace "preferiría + contrapropuesta" que un "no puedo" no hace?', back: 'mantiene la puerta abierta, ofreciendo una alternativa' }
+  ]
+},
+
+{
+  id: 'fn-aconsejar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1219', 'funciones:B2:1220', 'funciones:B2:1221', 'funciones:B2:1222', 'funciones:B2:1223'],
+  title: 'Aconsejar: si yo fuera tú, lo mejor sería que',
+  summary: '"Si yo fuera tú" steps fully into the other person\'s position before advising — grammatically a hypothetical about the SPEAKER, but functionally advice for the LISTENER — a more immersive framing than the B1 "yo que tú".',
+  sections: [
+    { h: 'Si yo fuera tú: stepping into their shoes', html: 'A hypothetical about the speaker that functions as advice for the listener: <i>Si yo fuera tú, buscaría un intercambio con un nativo.</i>' },
+    { h: 'Lo mejor sería / sería mejor que + subjuntivo', html: 'Frames the advice as the objectively best option: <i>Lo mejor sería que fueras al médico.</i>' },
+    { h: 'Te aconsejaría / recomendaría', html: 'The conditional softens the advice into a suggestion rather than an instruction.' },
+    { h: 'Va muy bien...: a practical remedy', html: '<i>Para eso, las aspirinas van muy bien</i> — recommending something as generally effective, common for home remedies.' }
+  ],
+  exponents: [
+    { es: 'Si yo fuera tú, buscaría un intercambio con un hablante nativo.', en: 'If I were you, I\'d look for a language exchange with a native speaker.', register: 'coloquial' },
+    { es: 'Lo mejor sería que fueras al médico.', en: 'It would be best for you to see a doctor.', register: 'neutral' },
+    { es: 'Te recomendaría que te alejaras de esa gente.', en: 'I would recommend you stay away from those people.', register: 'neutral' },
+    { es: '¿Y si le contaras todo lo que te pasó?', en: 'What if you told him everything that happened to you?', register: 'coloquial' },
+    { es: 'Para eso, las aspirinas van muy bien.', en: 'Aspirin works really well for that.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Yo que tú, iría al médico.', en: "In your place, I'd go to the doctor.", note: 'B1 version — brief, fixed frame' },
+    { es: 'Si yo fuera tú, buscaría un intercambio con un nativo.', en: "If I were you, I'd look for a language exchange.", note: 'B2 version — a fuller, more explicit hypothetical' }
+  ],
+  pitfalls: [
+    '<i>Si yo fuera tú</i> is grammatically about the SPEAKER\'s hypothetical situation, but its whole function is advice for the LISTENER — do not read it as the speaker genuinely imagining being someone else for its own sake.',
+    '<i>Va muy bien</i> recommends something as generally, reliably effective — it is not appropriate for a one-off, unproven suggestion.'
+  ],
+  examples: [
+    { es: 'Sería necesario cogerlo por el otro lado.', en: "You'd need to hold it from the other side." },
+    { es: 'Sería mejor que te fijaras un poco más en los detalles.', en: "It would be better if you paid a bit more attention to the details." },
+    { es: 'Va muy bien meterlo en agua fría unos minutos.', en: "It really helps to put it in cold water for a few minutes." }
+  ],
+  probes: [
+    { id: 'p:aconsejarB2:funcion', kind: 'mcq', q: '"Si yo fuera tú" es gramaticalmente sobre el hablante, pero funciona como...',
+      options: ['Un consejo para el oyente', 'Una queja', 'Una orden'], answer: 0 },
+    { id: 'p:aconsejarB2:modo', kind: 'mcq', q: '"Lo mejor sería que ___ (ir) al médico."',
+      options: ['vas', 'fueras', 'irás'], answer: 1 },
+    { id: 'p:aconsejarB2:cloze', kind: 'cloze', text: 'Si yo ___ (ser) tú, lo pensaría dos veces. (fuera)', accept: ['fuera'] },
+    { id: 'p:aconsejarB2:recall', kind: 'recall', front: '¿En qué se diferencia "si yo fuera tú" de "yo que tú" (B1)?', back: 'es una versión más completa/explícita del mismo hipotético' }
+  ]
+},
+
+{
+  id: 'fn-advertir-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1228', 'funciones:B2:1229', 'funciones:B2:1231', 'funciones:B2:1233'],
+  title: 'Advertir: ¡ojo con...!, no te fíes de',
+  summary: '"¡Ojo con...!" flags a danger in the moment, immediate and urgent, while "no te fíes de" warns about a person or thing over the longer term — a warning about right-now risk versus a warning to carry forward.',
+  sections: [
+    { h: 'Te aviso/advierto de/que', html: 'The direct verb of warning: <i>Te advierto que no te queda mucho tiempo.</i>' },
+    { h: '¡Ojo con...!: immediate danger', html: 'Flags a risk in the moment, urgent: <i>¡Ojo con las tijeras!</i>' },
+    { h: 'No te fíes de: a longer-term warning', html: 'Warns about trusting a person or situation going forward, not a single moment: <i>No te fíes de él, ya ha hecho daño a mucha gente.</i>' },
+    { h: 'Presta atención a', html: 'Directs focus toward something specific that needs care.' }
+  ],
+  exponents: [
+    { es: 'Te aviso de que eso puede traerte problemas.', en: 'I\'m warning you that could cause you problems.', register: 'neutral' },
+    { es: '¡Ojo con las tijeras!', en: 'Watch out for the scissors!', register: 'coloquial', note: 'immediate danger' },
+    { es: 'No te fíes de él, ya ha hecho daño a mucha gente.', en: "Don't trust him, he's already hurt a lot of people.", register: 'coloquial', note: 'a longer-term warning' },
+    { es: 'Presta atención a lo que haces.', en: 'Pay attention to what you\'re doing.', register: 'neutral' },
+    { es: 'Ojo con ir demasiado deprisa en el coche.', en: 'Watch out about driving too fast.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: '¡Ojo con el escalón!', en: 'Watch out for the step!', note: 'immediate, in-the-moment danger' },
+    { es: 'No te fíes de sus promesas.', en: "Don't trust his promises.", note: 'a warning to carry forward, not a single moment' }
+  ],
+  pitfalls: [
+    '<i>¡Ojo con...!</i> is for a here-and-now risk — using it for a general character warning (about a person\'s untrustworthiness) is the wrong register; <i>no te fíes de</i> fits that instead.',
+    '<i>Advertir</i> can take <i>de que</i> or plain <i>que</i> in speech — both are heard, though the version with <i>de</i> is considered more careful/standard.'
+  ],
+  examples: [
+    { es: 'Mira bien por dónde vas, hay obras.', en: 'Watch where you\'re going, there are roadworks.' },
+    { es: 'Te recuerdo que la reunión es a las diez.', en: 'Just a reminder that the meeting is at ten.' },
+    { es: 'Ojo por dónde vas, que el suelo está mojado.', en: 'Watch your step, the floor is wet.' }
+  ],
+  probes: [
+    { id: 'p:advertirB2:inmediatez', kind: 'mcq', q: '¿Cuál advierte de un peligro INMEDIATO, en el momento?',
+      options: ['No te fíes de él.', '¡Ojo con las tijeras!', 'Te aconsejo estudiar más.'], answer: 1 },
+    { id: 'p:advertirB2:largoplazo', kind: 'mcq', q: '¿Cuál advierte sobre algo a MÁS largo plazo (confianza en una persona)?',
+      options: ['¡Ojo!', 'No te fíes de él.', 'Presta atención.'], answer: 1 },
+    { id: 'p:advertirB2:cloze', kind: 'cloze', text: '___ con el escalón! (ojo)', accept: ['Ojo', 'ojo'] },
+    { id: 'p:advertirB2:recall', kind: 'recall', front: '¿Qué expresión advierte sobre confiar en alguien a largo plazo?', back: 'no te fíes de' }
+  ]
+},
+
+{
+  id: 'fn-amenazar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1234', 'funciones:B2:1235', 'funciones:B2:1236'],
+  title: 'Amenazar: si no + presente, que sea la última vez',
+  summary: '"Si (no) + presente de indicativo" states a threat as a plain conditional fact, with no hedging at all — the certainty of the consequence IS the threat, unlike advice or warnings which leave room for doubt.',
+  sections: [
+    { h: 'Te advierto (que puedes tener problemas)', html: 'Doubles as both warning and threat depending on tone — the same verb, a harder edge.' },
+    { h: 'Si (no) + presente indicativo: a stated consequence', html: 'The condition and its consequence are stated as plain fact, no hedging: <i>Si no lo termina mañana, está despedido.</i>' },
+    { h: 'Que sea la última vez que...', html: 'A closing threat implying consequences if the behavior repeats.' }
+  ],
+  exponents: [
+    { es: 'Si no lo termina mañana, está despedido.', en: "If he doesn't finish it tomorrow, he's fired.", register: 'formal' },
+    { es: 'Si te vas, te juro que no vuelves.', en: "If you leave, I swear you won't come back.", register: 'coloquial' },
+    { es: 'Si volvéis a hacerlo, se lo diré a vuestros padres.', en: "If you do it again, I'll tell your parents.", register: 'neutral' },
+    { es: 'Que sea la última vez que haces eso.', en: 'Let that be the last time you do that.', register: 'neutral' },
+    { es: 'Te advierto que puedes tener serios problemas.', en: 'I warn you, you could have serious problems.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Podrías tener problemas si haces eso.', en: 'You might have problems if you do that.', note: 'a warning — hedged, uncertain' },
+    { es: 'Si haces eso, tendrás problemas.', en: 'If you do that, you will have problems.', note: 'a threat — stated as certain fact, present/future indicative' }
+  ],
+  pitfalls: [
+    'The threat construction uses plain present or future INDICATIVE, not the subjunctive — the certainty of the consequence is the whole point, unlike a hedged warning.',
+    '<i>Te advierto</i> can be either a neutral warning or a veiled threat — tone and context, not the words themselves, mark the difference.'
+  ],
+  examples: [
+    { es: 'Estoy francamente enfadado y no sé cómo voy a reaccionar. Te lo advierto.', en: "I'm genuinely angry and I don't know how I'll react. I'm warning you." },
+    { es: 'Si no me devuelves el dinero, tendré que tomar medidas.', en: "If you don't return my money, I'll have to take action." },
+    { es: 'Que sea la última vez que llegas tarde.', en: 'Let that be the last time you\'re late.' }
+  ],
+  probes: [
+    { id: 'p:amenazarB2:modo', kind: 'mcq', q: '¿Qué modo lleva "si no lo termina mañana, ___ despedido"?',
+      options: ['indicativo', 'subjuntivo', 'imperativo'], answer: 0 },
+    { id: 'p:amenazarB2:certeza', kind: 'mcq', q: '¿Qué transmite el uso del indicativo en una amenaza?',
+      options: ['Duda', 'Certeza de la consecuencia', 'Cortesía'], answer: 1 },
+    { id: 'p:amenazarB2:cloze', kind: 'cloze', text: 'Que ___ la última vez. (ser, subjuntivo fijo)', accept: ['sea'] },
+    { id: 'p:amenazarB2:recall', kind: 'recall', front: '¿Qué modo usa la estructura "si no + [verbo], [consecuencia]" en una amenaza?', back: 'el indicativo — sin cobertura de duda' }
+  ]
+},
+
+{
+  id: 'fn-reprochar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1240', 'funciones:B2:1243', 'funciones:B2:1244', 'funciones:B2:1246'],
+  title: 'Reprochar: ya deberías haberlo solucionado',
+  summary: '"¿A qué esperas para...?" reproaches through a rhetorical question rather than a direct accusation — it never states the criticism outright, letting the implied "you should have done this already" do the work.',
+  sections: [
+    { h: 'Me sienta mal / me parece fatal', html: 'States the reproach as your own reaction: <i>Me ha sentado fatal cómo me has tratado.</i>' },
+    { h: 'No sé/entiendo cómo has podido...', html: 'Frames the reproach as bafflement at the action: <i>No entiendo cómo has podido hacer algo así.</i>' },
+    { h: 'Ya deberías/tendrías que + infinitivo compuesto', html: 'The compound infinitive marks the reproach as about something already overdue: <i>Ya deberías haberlo solucionado.</i>' },
+    { h: '¿A qué esperas para...?: reproach via rhetorical question', html: 'Never states the criticism directly — the implied "you should already have" does the work.' }
+  ],
+  exponents: [
+    { es: 'Me ha parecido horrible lo que le has hecho a tu hermano.', en: 'I thought what you did to your brother was horrible.', register: 'neutral' },
+    { es: 'No entiendo cómo has podido hacer algo así.', en: "I don't understand how you could do something like that.", register: 'neutral' },
+    { es: 'Ya deberías haberlo solucionado.', en: "You should have already sorted it out.", register: 'neutral' },
+    { es: '¿A qué esperas para darle las gracias?', en: "What are you waiting for to thank him?", register: 'coloquial', note: 'rhetorical — implies you should have already' },
+    { es: 'Me ha sentado fatal cómo me has tratado.', en: "The way you treated me really upset me.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Deberías solucionarlo.', en: 'You should solve it.', note: 'a plain, forward-looking piece of advice' },
+    { es: 'Ya deberías haberlo solucionado.', en: 'You should have already solved it.', note: 'a reproach — it was overdue, compound infinitive' }
+  ],
+  pitfalls: [
+    'The compound infinitive (<i>haberlo solucionado</i>) is what marks this as a reproach about something already overdue — the simple infinitive turns it back into forward-looking advice.',
+    '¿A qué esperas para...? is never a genuine request for information — answering it literally (explaining why you are waiting) misses that it IS the criticism.'
+  ],
+  examples: [
+    { es: 'Siempre haces lo mismo, y no aprendes.', en: "You always do the same thing, and you don't learn." },
+    { es: 'Deberías haber comprado menos leche, se va a poner mala.', en: "You should have bought less milk, it's going to go off." },
+    { es: '¿A qué esperas para disculparte?', en: 'What are you waiting for to apologize?' }
+  ],
+  probes: [
+    { id: 'p:reprocharB2:retorica', kind: 'mcq', q: '¿"¿A qué esperas para...?" es una pregunta genuina?',
+      options: ['Sí, pide información', 'No, es un reproche retórico', 'Es un saludo'], answer: 1 },
+    { id: 'p:reprocharB2:compuesto', kind: 'mcq', q: '¿Qué marca "ya deberías haberlo solucionado" como reproche, no consejo?',
+      options: ['El "ya"', 'El infinitivo compuesto (haberlo)', 'Ambos'], answer: 2 },
+    { id: 'p:reprocharB2:cloze', kind: 'cloze', text: 'Ya deberías haberlo ___. (solucionar, participio)', accept: ['solucionado'] },
+    { id: 'p:reprocharB2:recall', kind: 'recall', front: '¿Qué forma verbal marca que un consejo se ha convertido en reproche por algo ya vencido?', back: 'el infinitivo compuesto (haber + participio)' }
+  ]
+},
+
+{
+  id: 'fn-ofrecerse-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1253', 'funciones:B2:1255', 'funciones:B2:1256', 'funciones:B2:1257'],
+  title: 'Ofrecerse: déjame que te ayude, permita que le ayude',
+  summary: '"Déjame que te ayude" grammatically ASKS permission to help rather than announcing the offer — a subtle courtesy that frames helping as something the other person grants, not something the speaker simply does.',
+  sections: [
+    { h: '¿Necesitas que...?', html: 'A direct question offering to fill a specific need: <i>¿Necesitas que haga algo más?</i>' },
+    { h: 'Deja/Déjame que + subjuntivo', html: 'Frames the offer as asking permission to act, not announcing it: <i>Déjame que te ayude.</i>' },
+    { h: 'Permita que le/la ayude: formal', html: 'The usted-register version, appropriate for strangers or formal service contexts.' },
+    { h: 'Deja/Déjame (a mí)', html: 'A compact offer to simply take over the task.' }
+  ],
+  exponents: [
+    { es: '¿Necesitas que haga algo más?', en: 'Do you need me to do anything else?', register: 'neutral' },
+    { es: 'Déjame que te ayude con eso.', en: 'Let me help you with that.', register: 'coloquial' },
+    { es: 'Señora, déjeme que le ayude con las bolsas.', en: 'Ma\'am, let me help you with the bags.', register: 'formal' },
+    { es: 'Permita que la ayude, por favor.', en: 'Allow me to help you, please.', register: 'formal' },
+    { es: 'Deja, deja, ya lo hago yo.', en: "No, no, I'll do it.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Te ayudo.', en: "I'll help you.", note: 'a plain, direct announcement' },
+    { es: 'Déjame que te ayude.', en: 'Let me help you.', note: 'grammatically asks permission, more courteous' }
+  ],
+  pitfalls: [
+    '<i>Déjame que + subjuntivo</i> is not literally seeking permission in a strict sense — it is a courtesy convention, but ignoring the polite framing (just saying "te ayudo") can feel more abrupt.',
+    'The usted-form (<i>Permita que le/la ayude</i>, <i>déjeme que le ayude</i>) is expected with strangers or in service settings — the tú-form there would sound presumptuous.'
+  ],
+  examples: [
+    { es: '¿Puedo? Le llevo la maleta.', en: 'May I? I\'ll carry your suitcase.' },
+    { es: 'Deja, ya lo llevo yo.', en: "Don't worry, I'll carry it." },
+    { es: '¿Hace falta que traiga algo más a la cena?', en: 'Do I need to bring anything else to dinner?' }
+  ],
+  probes: [
+    { id: 'p:ofrecerseB2:cortesia', kind: 'mcq', q: '¿Qué hace gramaticalmente "déjame que te ayude"?',
+      options: ['Anuncia la ayuda directamente', 'Pide permiso para ayudar', 'Ordena que le ayuden'], answer: 1 },
+    { id: 'p:ofrecerseB2:registro', kind: 'mcq', q: '¿Cuál es la forma de USTED?',
+      options: ['Déjame que te ayude.', 'Déjeme que le ayude.', 'Ambas son iguales.'], answer: 1 },
+    { id: 'p:ofrecerseB2:cloze', kind: 'cloze', text: '___ que te ayude. (déjame)', accept: ['Déjame', 'déjame'] },
+    { id: 'p:ofrecerseB2:recall', kind: 'recall', front: '¿Qué registro exige "déjeme que le ayude" en vez de "déjame que te ayude"?', back: 'usted, con desconocidos o en contextos formales' }
+  ]
+},
+
+{
+  id: 'fn-tranquilizar-consolar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1262', 'funciones:B2:1264', 'funciones:B2:1267', 'funciones:B2:1268', 'funciones:B2:1270'],
+  title: 'Tranquilizar y consolar: ya ha pasado, todo tiene solución',
+  summary: '"Ya ha pasado" (present perfect) marks the crisis as genuinely over, distinct from "todo se arreglará" (future), which promises resolution still to come — comforting words tuned to exactly where in time the trouble sits.',
+  sections: [
+    { h: 'Direct commands to calm down', html: '<i>Tranquilízate, cálmate, relájate</i> — direct imperatives addressing the person\'s state.' },
+    { h: 'Ya ha pasado: the crisis is over', html: 'Present perfect marks the trouble as genuinely finished, reassuring by closing the timeline.' },
+    { h: 'Todo se arreglará / todo saldrá bien: future resolution', html: 'Future tense promises resolution still to come, for ongoing or upcoming trouble.' },
+    { h: 'Todo tiene solución', html: 'A general, almost proverbial reassurance — nothing is truly hopeless.' }
+  ],
+  exponents: [
+    { es: 'Tranquilo, hombre, no pasa nada.', en: "Relax, man, it's nothing.", register: 'coloquial' },
+    { es: 'Ya ha pasado, ya está.', en: "It's over now, that's it.", register: 'coloquial', note: 'present perfect — the crisis is finished' },
+    { es: 'Seguro que todo se arreglará.', en: "I'm sure everything will work out.", register: 'neutral', note: 'future — resolution still to come' },
+    { es: 'Todo tiene solución.', en: 'Everything has a solution.', register: 'neutral' },
+    { es: 'Anímate, seguro que sale bien.', en: "Cheer up, I'm sure it'll go well.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Ya ha pasado.', en: "It's over now.", note: 'the trouble has already ended' },
+    { es: 'Todo se va a arreglar.', en: "Everything is going to work out.", note: 'the trouble is ongoing, resolution is still ahead' }
+  ],
+  pitfalls: [
+    'Using <i>ya ha pasado</i> for an ongoing problem misreads the timeline — that phrase specifically closes something already finished.',
+    'These comforting phrases work best matched to a real timeline — offering "ya ha pasado" for a still-unresolved crisis can sound dismissive rather than comforting.'
+  ],
+  examples: [
+    { es: 'No te pongas así, seguro que no es nada.', en: "Don't get like that, I'm sure it's nothing." },
+    { es: 'Venga, tranquila, ya verás como se soluciona.', en: "Come on, relax, you'll see it'll get sorted." },
+    { es: 'Todo saldrá bien, ya lo verás.', en: "Everything will turn out fine, you'll see." }
+  ],
+  probes: [
+    { id: 'p:tranquilizarB2:tiempo', kind: 'mcq', q: '¿Cuál marca que la crisis YA terminó?',
+      options: ['Todo se arreglará.', 'Ya ha pasado.', 'Todo saldrá bien.'], answer: 1 },
+    { id: 'p:tranquilizarB2:futuro', kind: 'mcq', q: '¿Cuál promete una resolución TODAVÍA por llegar?',
+      options: ['Ya está.', 'Todo se va a arreglar.', 'Ya ha pasado.'], answer: 1 },
+    { id: 'p:tranquilizarB2:cloze', kind: 'cloze', text: 'Tranquilo, ___ pasa nada. (no)', accept: ['no'] },
+    { id: 'p:tranquilizarB2:recall', kind: 'recall', front: '¿Qué tiempo verbal usa "ya ha pasado" para cerrar el asunto?', back: 'el pretérito perfecto' }
+  ]
+},
+
+{
+  id: 'fn-animar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1279', 'funciones:B2:1281', 'funciones:B2:1282', 'funciones:B2:1284', 'funciones:B2:1286'],
+  title: 'Animar: no tengas miedo de, no te rindas, atrévete',
+  summary: '"No tengas miedo de + infinitivo" directly names the obstacle (fear) before dismissing it, a more targeted encouragement than a generic "¡tú puedes!" — naming the specific fear is what makes the reassurance land.',
+  sections: [
+    { h: 'Naming the fear before dismissing it', html: '<i>No tengas miedo de equivocarte, no pasa nada</i> — names the specific obstacle, then minimizes it.' },
+    { h: 'No te rindas / sigue intentándolo', html: 'Encouragement aimed specifically at persistence through difficulty.' },
+    { h: 'Tú puedes / lo conseguirás', html: 'General confidence-boosting, affirming ability and eventual success.' },
+    { h: '¡Atrévete!', html: 'Encourages taking a risk specifically, not just persisting — pushing past hesitation to act.' }
+  ],
+  exponents: [
+    { es: 'No tengas miedo de equivocarte, no pasa nada.', en: "Don't be afraid of making mistakes, it's fine.", register: 'coloquial', note: 'names the fear, then dismisses it' },
+    { es: 'No te rindas, ya casi lo tienes.', en: "Don't give up, you're almost there.", register: 'coloquial' },
+    { es: 'Tú puedes, confío en ti.', en: 'You can do it, I believe in you.', register: 'neutral' },
+    { es: '¡Atrévete a intentarlo!', en: 'Dare to try it!', register: 'coloquial', note: 'pushes past hesitation to act, not just persist' },
+    { es: 'Ánimo, que ya queda poco.', en: "Come on, there's not much left.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: '¡Tú puedes!', en: 'You can do it!', note: 'general confidence, no specific obstacle named' },
+    { es: 'No tengas miedo de equivocarte.', en: "Don't be afraid of making mistakes.", note: 'names the specific fear before dismissing it' }
+  ],
+  pitfalls: [
+    'Naming the specific obstacle (<i>no tengas miedo de...</i>) tends to land better than a generic <i>¡tú puedes!</i>, which can feel hollow if it does not address what is actually holding someone back.',
+    '<i>¡Atrévete!</i> pushes toward action/risk-taking specifically — it is not simply persistence encouragement, which <i>no te rindas/sigue intentándolo</i> cover instead.'
+  ],
+  examples: [
+    { es: 'No hay nada que temer, todo va a salir bien.', en: 'There\'s nothing to fear, everything will turn out fine.' },
+    { es: 'Sigue intentándolo, cada vez lo haces mejor.', en: "Keep trying, you're getting better every time." },
+    { es: '¡Vamos, que tú puedes con esto!', en: "Come on, you've got this!" }
+  ],
+  probes: [
+    { id: 'p:animarB2:nombrarmiedo', kind: 'mcq', q: '¿Qué hace "no tengas miedo de equivocarte" antes de animar?',
+      options: ['Nada especial', 'Nombra el obstáculo específico', 'Cambia de tema'], answer: 1 },
+    { id: 'p:animarB2:atrevete', kind: 'mcq', q: '¿Qué anima específicamente "atrévete"?',
+      options: ['La persistencia', 'Tomar un riesgo/actuar', 'La paciencia'], answer: 1 },
+    { id: 'p:animarB2:cloze', kind: 'cloze', text: 'No te ___, ya casi lo tienes. (rendir)', accept: ['rindas'] },
+    { id: 'p:animarB2:recall', kind: 'recall', front: '¿Por qué funciona mejor nombrar el miedo específico al animar?', back: 'porque dirige la reafirmación directamente al obstáculo real' }
+  ]
 }
 
 ];

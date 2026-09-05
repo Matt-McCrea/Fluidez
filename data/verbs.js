@@ -1141,6 +1141,21 @@ window.VERBS = [
   presubj:['sugiera','sugieras','sugiera','sugiramos','sugiráis','sugieran'] } },
 { inf:'amenazar', en:'to threaten', type:'ar' },
 { inf:'suponer', en:'to suppose, to assume', type:'er', like:'poner' },
+{ inf:'rogar', en:'to beg, to request', type:'ar', stem:'ue', forms:{
+  preterito:['rogué','rogaste','rogó','rogamos','rogasteis','rogaron'],
+  presubj:['ruegue','ruegues','ruegue','roguemos','roguéis','rueguen'] } },
+{ inf:'prohibir', en:'to forbid, to prohibit', type:'ir', forms:{
+  presente:['prohíbo','prohíbes','prohíbe','prohibimos','prohibís','prohíben'],
+  presubj:['prohíba','prohíbas','prohíba','prohibamos','prohibáis','prohíban'] } },
+{ inf:'atreverse', en:'to dare', type:'er' },
+{ inf:'arreglarse', en:'to work out, to sort itself out; to get ready', type:'ar' },
+{ inf:'fiarse', en:'to trust', type:'ar', forms:{
+  presente:['fío','fías','fía','fiamos','fiáis','fían'],
+  presubj:['fíe','fíes','fíe','fiemos','fiéis','fíen'] } },
+{ inf:'jurar', en:'to swear, to vow', type:'ar' },
+{ inf:'consolar', en:'to console, to comfort', type:'ar', stem:'ue' },
+{ inf:'tranquilizar', en:'to reassure, to calm down', type:'ar' },
+{ inf:'calmar', en:'to calm, to soothe', type:'ar' },
 { inf:'tratarse', en:'to be about (a matter)', type:'ar' },
 { inf:'entusiasmar', en:'to excite, to thrill', type:'ar' },
 { inf:'apasionar', en:'to fascinate, to be passionate about', type:'ar' },

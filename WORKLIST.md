@@ -371,7 +371,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (133/204 done)
+## B2 — lessons (153/204 done)
 
 ### B2 · grammar (26/26)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
@@ -456,7 +456,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 16 pts · `nociones_generales B2 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-b2
 - [x] **Expresión verbal** · 23 pts · `nociones_generales B2 § 7.2. Expresión verbal`  — nt-expresion-verbal-b2
 
-### B2 · function (53/96)
+### B2 · function (73/96)
 - [x] **Identificar** · 7 pts · `funciones B2 § 1.1. Identificar`  — fn-identificar-b2
 - [x] **Pedir información** · 23 pts · `funciones B2 § 1.2. Pedir información`  — fn-preguntar-con-prudencia-b2
 - [x] **Dar información** · 27 pts · `funciones B2 § 1.3. Dar información`  — fn-dar-informacion-b2
@@ -510,26 +510,26 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Expresar admiración y orgullo** · 7 pts · `funciones B2 § 3.28. Expresar admiración y orgull`  — fn-admiracion-orgullo-b2
 - [x] **Expresar afecto** · 7 pts · `funciones B2 § 3.29. Expresar afecto`  — fn-afecto-b2
 - [x] **Expresar sensaciones físicas** · 17 pts · `funciones B2 § 3.30. Expresar sensaciones físicas`  — fn-sensaciones-fisicas-b2
-- [ ] **Dar una orden o instrucción** · 23 pts · `funciones B2 § 4.1. Dar una orden o instrucción`
-- [ ] **Pedir un favor** · 6 pts · `funciones B2 § 4.2. Pedir un favor`
-- [ ] **Pedir objetos** · 12 pts · `funciones B2 § 4.3. Pedir objetos`
-- [ ] **Pedir ayuda** · 10 pts · `funciones B2 § 4.4. Pedir ayuda`
-- [ ] **Responder a una orden, petición o ruego** · 29 pts · `funciones B2 § 4.7. Responder a una orden, petici`
-- [ ] **Pedir permiso** · 5 pts · `funciones B2 § 4.8. Pedir permiso`
-- [ ] **Dar permiso** · 12 pts · `funciones B2 § 4.9. Dar permiso`
-- [ ] **Denegar permiso** · 6 pts · `funciones B2 § 4.10. Denegar permiso`
-- [ ] **Prohibir** · 4 pts · `funciones B2 § 4.11. Prohibir`
-- [ ] **Rechazar una prohibición** · 6 pts · `funciones B2 § 4.12. Rechazar una prohibición`
-- [ ] **Proponer y sugerir** · 13 pts · `funciones B2 § 4.13. Proponer y sugerir`
-- [ ] **Aceptar una propuesta, ofrecimiento o invitación** · 13 pts · `funciones B2 § 4.16. Aceptar una propuesta, ofrec`
-- [ ] **Rechazar una propuesta, ofrecimiento o invitación** · 8 pts · `funciones B2 § 4.17. Rechazar una propuesta, ofre`
-- [ ] **Aconsejar** · 6 pts · `funciones B2 § 4.18. Aconsejar`
-- [ ] **Advertir** · 6 pts · `funciones B2 § 4.19. Advertir`
-- [ ] **Amenazar** · 3 pts · `funciones B2 § 4.20. Amenazar`
-- [ ] **Reprochar** · 7 pts · `funciones B2 § 4.21. Reprochar`
-- [ ] **Ofrecerse para hacer algo** · 6 pts · `funciones B2 § 4.23. Ofrecerse para hacer algo`
-- [ ] **Tranquilizar y consolar** · 12 pts · `funciones B2 § 4.24. Tranquilizar y consolar`
-- [ ] **Animar** · 10 pts · `funciones B2 § 4.25. Animar`
+- [x] **Dar una orden o instrucción** · 23 pts · `funciones B2 § 4.1. Dar una orden o instrucción`  — fn-dar-orden-b2
+- [x] **Pedir un favor** · 6 pts · `funciones B2 § 4.2. Pedir un favor`  — fn-pedir-favor-b2
+- [x] **Pedir objetos** · 12 pts · `funciones B2 § 4.3. Pedir objetos`  — fn-pedir-objetos-b2
+- [x] **Pedir ayuda** · 10 pts · `funciones B2 § 4.4. Pedir ayuda`  — fn-pedir-ayuda-b2
+- [x] **Responder a una orden, petición o ruego** · 29 pts · `funciones B2 § 4.7. Responder a una orden, petici`  — fn-responder-orden-b2
+- [x] **Pedir permiso** · 5 pts · `funciones B2 § 4.8. Pedir permiso`  — fn-pedir-permiso-b2
+- [x] **Dar permiso** · 12 pts · `funciones B2 § 4.9. Dar permiso`  — fn-dar-permiso-b2
+- [x] **Denegar permiso** · 6 pts · `funciones B2 § 4.10. Denegar permiso`  — fn-denegar-permiso-b2
+- [x] **Prohibir** · 4 pts · `funciones B2 § 4.11. Prohibir`  — fn-prohibir-b2
+- [x] **Rechazar una prohibición** · 6 pts · `funciones B2 § 4.12. Rechazar una prohibición`  — fn-rechazar-prohibicion-b2
+- [x] **Proponer y sugerir** · 13 pts · `funciones B2 § 4.13. Proponer y sugerir`  — fn-proponer-sugerir-b2
+- [x] **Aceptar una propuesta, ofrecimiento o invitación** · 13 pts · `funciones B2 § 4.16. Aceptar una propuesta, ofrec`  — fn-aceptar-propuesta-b2
+- [x] **Rechazar una propuesta, ofrecimiento o invitación** · 8 pts · `funciones B2 § 4.17. Rechazar una propuesta, ofre`  — fn-rechazar-propuesta-b2
+- [x] **Aconsejar** · 6 pts · `funciones B2 § 4.18. Aconsejar`  — fn-aconsejar-b2
+- [x] **Advertir** · 6 pts · `funciones B2 § 4.19. Advertir`  — fn-advertir-b2
+- [x] **Amenazar** · 3 pts · `funciones B2 § 4.20. Amenazar`  — fn-amenazar-b2
+- [x] **Reprochar** · 7 pts · `funciones B2 § 4.21. Reprochar`  — fn-reprochar-b2
+- [x] **Ofrecerse para hacer algo** · 6 pts · `funciones B2 § 4.23. Ofrecerse para hacer algo`  — fn-ofrecerse-b2
+- [x] **Tranquilizar y consolar** · 12 pts · `funciones B2 § 4.24. Tranquilizar y consolar`  — fn-tranquilizar-consolar-b2
+- [x] **Animar** · 10 pts · `funciones B2 § 4.25. Animar`  — fn-animar-b2
 - [ ] **Saludar** · 24 pts · `funciones B2 § 5.1. Saludar`
 - [ ] **Responder a un saludo** · 5 pts · `funciones B2 § 5.2. Responder a un saludo`
 - [ ] **Dirigirse a alguien** · 3 pts · `funciones B2 § 5.3. Dirigirse a alguien`
