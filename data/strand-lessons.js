@@ -19818,6 +19818,331 @@ window.STRAND_LESSONS = [
     { id: 'p:animarB2:cloze', kind: 'cloze', text: 'No te ___, ya casi lo tienes. (rendir)', accept: ['rindas'] },
     { id: 'p:animarB2:recall', kind: 'recall', front: '¿Por qué funciona mejor nombrar el miedo específico al animar?', back: 'porque dirige la reafirmación directamente al obstáculo real' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 function, part 4 (WORKLIST.md, section B2 · function, § 5.1-5.21)
+ * Relacionarse socialmente: social routines, most distinctively marked by
+ * prosody (vowel elongation for warmth/reluctance) and the sharp split
+ * between spoken and written closing formulas.
+ * ========================================================================== */
+{
+  id: 'fn-saludar-responder-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1295', 'funciones:B2:1299', 'funciones:B2:1300', 'funciones:B2:1306', 'funciones:B2:1307', 'funciones:B2:1309'],
+  title: 'Saludar y responder: vocal alargada, cuánto tiempo',
+  summary: 'Elongating a name\'s vowel — "¡Caaarmen!" — is itself a warmth marker with no equivalent single word, while "¡Cuánto tiempo!" specifically marks a reunion after a real gap, not a routine daily greeting.',
+  sections: [
+    { h: 'Vowel elongation as warmth', html: '<i>¡Caaarmen!</i> — stretching the vowel is itself an affection marker, common when greeting someone warmly after time apart.' },
+    { h: '¡Cuánto tiempo! Me alegro de verte.', html: 'Specifically marks a reunion after a genuine gap — using it for someone you saw yesterday would sound odd or sarcastic.' },
+    { h: 'Grading the reply, tú vs usted', html: '<i>Fenomenal, ¿y tú?</i> vs <i>Estupendamente, ¿y usted?</i> — the same enthusiasm, register matched to the address form.' },
+    { h: '(Bueno,) tirando, ¿y tú?', html: 'A modest, so-so reply, milder than "regular" — implies getting by rather than doing especially well.' }
+  ],
+  exponents: [
+    { es: '¡Caaarmen! ¡Cuánto tiempo!', en: 'Carmen! It\'s been so long!', register: 'coloquial', note: 'vowel elongation as warmth marker' },
+    { es: '¡Cuánto tiempo! Me alegro mucho de verte.', en: "It's been so long! I'm so glad to see you.", register: 'coloquial' },
+    { es: 'Estupendamente, ¿y usted, cómo está?', en: 'Wonderful, and you, how are you?', register: 'formal' },
+    { es: 'Bueno, tirando, ¿y tú?', en: 'Well, getting by, and you?', register: 'coloquial' },
+    { es: '¡Hombre, Pepe! ¿Qué tal te va?', en: 'Hey, Pepe! How\'s it going?', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: '¡Hola, Carmen!', en: 'Hi, Carmen!', note: 'a routine, everyday greeting' },
+    { es: '¡Caaarmen! ¡Cuánto tiempo!', en: "Carmen! It's been so long!", note: 'marks a reunion after a real gap, with vocal warmth' }
+  ],
+  pitfalls: [
+    'Using <i>¡Cuánto tiempo!</i> for someone you saw recently reads as odd or sarcastic — reserve it for a genuine gap in contact.',
+    'Vowel elongation is a real prosodic device in speech — in writing, it needs an explicit marker of warmth (an exclamation, repeated letters) to convey the same effect.'
+  ],
+  examples: [
+    { es: '¡Buenas! ¿Qué tal todo?', en: "Hey there! How's everything?" },
+    { es: 'Todo bien, gracias, ¿y tú?', en: 'All good, thanks, and you?' },
+    { es: 'Mucho mejor, gracias a Dios.', en: 'Much better, thank God.' }
+  ],
+  probes: [
+    { id: 'p:saludarrespB2:cuantotiempo', kind: 'mcq', q: '¿Cuándo se usa "¡Cuánto tiempo!"?',
+      options: ['Cada vez que saludas', 'Tras un tiempo real sin verse', 'Solo por escrito'], answer: 1 },
+    { id: 'p:saludarrespB2:registro', kind: 'mcq', q: '¿Cuál es la forma de USTED?',
+      options: ['Fenomenal, ¿y tú?', 'Estupendamente, ¿y usted?', 'Ambas iguales'], answer: 1 },
+    { id: 'p:saludarrespB2:cloze', kind: 'cloze', text: 'Bueno, ___, ¿y tú? (tirando)', accept: ['tirando'] },
+    { id: 'p:saludarrespB2:recall', kind: 'recall', front: '¿Qué recurso prosódico marca calidez al saludar a alguien tras tiempo?', back: 'el alargamiento vocálico del nombre' }
+  ]
+},
+
+{
+  id: 'fn-dirigirse-bienvenida-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1312', 'funciones:B2:1313', 'funciones:B2:1314', 'funciones:B2:1333', 'funciones:B2:1334'],
+  title: 'Dirigirse a alguien y dar la bienvenida',
+  summary: '"Don/Doña + nombre de pila" pairs a formal title with a FIRST name, not a surname — a distinctly Spanish combination of respect and familiarity that professional titles (doctor, agente) handle differently, using the surname instead.',
+  sections: [
+    { h: 'Don/Doña + first name: respectful but familiar', html: '<i>Doña Laura, tiene usted una llamada</i> — unusually, pairs formal address with a FIRST name, not a surname.' },
+    { h: 'Professional titles + surname', html: '<i>Doctor López, tiene una visita</i>, <i>Agente, ¿necesita ver mi carné?</i> — a professional title works alone or with the surname, never the first name.' },
+    { h: 'Warm welcome exclamations', html: '<i>¡Qué bien que hayas venido!</i>, <i>¡No sabes cuánto me alegro de que hayas venido!</i> — both need the subjunctive since they evaluate the listener\'s own action of coming.' }
+  ],
+  exponents: [
+    { es: 'Doña Laura, tiene usted una llamada.', en: 'Doña Laura, you have a call.', register: 'formal', note: 'Don/Doña + first name' },
+    { es: 'Dígame, doctor Suárez, ¿qué desea?', en: 'Tell me, Doctor Suárez, what would you like?', register: 'formal', note: 'professional title + surname' },
+    { es: '¡Qué bien que hayas venido!', en: "How great that you've come!", register: 'coloquial' },
+    { es: '¡No sabes cuánto me alegro de que hayas venido!', en: "You have no idea how glad I am that you've come!", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Doña Laura, la llaman.', en: "Doña Laura, you're wanted on the phone.", note: 'Don/Doña + FIRST name' },
+    { es: 'Doctor López, tiene una visita.', en: 'Doctor López, you have a visitor.', note: 'professional title + SURNAME' }
+  ],
+  pitfalls: [
+    '<i>Don/Doña</i> pairs specifically with the first name — <i>*Don García</i> (with a surname) is not the standard pattern; that combination belongs to professional titles.',
+    'Both welcome exclamations need the subjunctive because they evaluate the listener\'s own completed action (having come) — the indicative here would be ungrammatical.'
+  ],
+  examples: [
+    { es: 'Don Manuel, le esperan en la sala.', en: 'Don Manuel, they are waiting for you in the room.' },
+    { es: 'Agente, ¿necesita usted también ver mi carné de conducir?', en: 'Officer, do you also need to see my driving license?' },
+    { es: '¡Qué alegría que hayáis podido venir todos!', en: "What a joy that you've all been able to come!" }
+  ],
+  probes: [
+    { id: 'p:dirigirsebienvenidaB2:donform', kind: 'mcq', q: '¿Con qué se combina "Don/Doña"?',
+      options: ['Con el apellido', 'Con el nombre de pila', 'Con ambos'], answer: 1 },
+    { id: 'p:dirigirsebienvenidaB2:modo', kind: 'mcq', q: '"¡Qué bien que ___ (venir)!"',
+      options: ['has venido', 'hayas venido', 'vendrás'], answer: 1 },
+    { id: 'p:dirigirsebienvenidaB2:cloze', kind: 'cloze', text: 'Doctor ___, tiene una visita. (López — con apellido)', accept: ['López', 'Lopez'] },
+    { id: 'p:dirigirsebienvenidaB2:recall', kind: 'recall', front: '¿"Don/Doña" se usa con nombre o apellido?', back: 'con el nombre de pila' }
+  ]
+},
+
+{
+  id: 'fn-disculparse-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1341', 'funciones:B2:1343', 'funciones:B2:1344', 'funciones:B2:1346', 'funciones:B2:1348'],
+  title: 'Disculparse: siento + lo de/infinitivo compuesto/que',
+  summary: '"Siento/lamento" branches into three grammatical shapes depending on what exactly you are apologizing for — a named topic ("lo de"), your own finished action (compound infinitive), or someone else\'s situation ("que" + subjunctive) — the same verb, three distinct targets.',
+  sections: [
+    { h: 'Siento/lamento + lo de + SN/infinitivo', html: 'Apologizes for a known, already-referenced topic: <i>Lamento lo del otro día.</i>' },
+    { h: 'Siento/lamento + infinitivo compuesto', html: 'For your OWN finished action: <i>Lamento mucho haber perdido el control.</i>' },
+    { h: 'Siento/lamento + que + subjuntivo', html: 'For a situation involving someone else or a state of affairs: <i>Siento muchísimo que no vengas.</i>' },
+    { h: 'Le ruego que me disculpe', html: 'The most formal frame, common in written apologies: <i>Les ruego que me disculpen; es que he estado muy ocupado.</i>' }
+  ],
+  exponents: [
+    { es: 'Lamento lo del otro día, de verdad.', en: "I'm sorry about the other day, really.", register: 'coloquial' },
+    { es: 'Lamento mucho haber perdido el control.', en: 'I deeply regret having lost control.', register: 'neutral' },
+    { es: 'Siento muchísimo que no puedas venir.', en: "I'm so sorry that you can't come.", register: 'neutral' },
+    { es: 'Les ruego que me disculpen; he estado muy ocupado.', en: 'I beg your forgiveness; I have been very busy.', register: 'formal' },
+    { es: 'Perdone que le moleste a estas horas.', en: 'Forgive me for bothering you at this hour.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Lamento haber llegado tarde.', en: "I regret having arrived late.", note: 'your own finished action — compound infinitive' },
+    { es: 'Lamento que hayas llegado tarde.', en: "I'm sorry you arrived late.", note: 'someone else\'s situation — que + subjunctive' }
+  ],
+  pitfalls: [
+    'The three shapes of <i>siento/lamento</i> are not interchangeable — using <i>que + subjuntivo</i> for your OWN action (rather than the compound infinitive) is a common structural slip.',
+    '<i>Le ruego que me disculpe</i> is genuinely formal — reserve it for written apologies or serious situations, not everyday bumps.'
+  ],
+  examples: [
+    { es: 'Lo siento, ha sido sin querer.', en: "I'm sorry, it was unintentional." },
+    { es: 'No sabes cuánto lo siento.', en: "You have no idea how sorry I am." },
+    { es: 'Siento lo del malentendido de ayer.', en: "I'm sorry about yesterday's misunderstanding." }
+  ],
+  probes: [
+    { id: 'p:disculparseB2:estructura', kind: 'mcq', q: '¿Cuál usa el infinitivo COMPUESTO (tu propia acción pasada)?',
+      options: ['Lamento que llegues tarde.', 'Lamento haber llegado tarde.', 'Lamento lo de mañana.'], answer: 1 },
+    { id: 'p:disculparseB2:modo', kind: 'mcq', q: '"Siento mucho que no ___ (poder) venir."',
+      options: ['puedes', 'puedas', 'podrás'], answer: 1 },
+    { id: 'p:disculparseB2:cloze', kind: 'cloze', text: 'Perdone que le ___ a estas horas. (molestar)', accept: ['moleste'] },
+    { id: 'p:disculparseB2:recall', kind: 'recall', front: '¿Qué forma verbal se usa para disculparse de la propia acción pasada?', back: 'el infinitivo compuesto (haber + participio)' }
+  ]
+},
+
+{
+  id: 'fn-responder-disculpa-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1354', 'funciones:B2:1355', 'funciones:B2:1356', 'funciones:B2:1357'],
+  title: 'Responder a una disculpa: con reproche o sin él',
+  summary: '"Está bien, pero que no se repita" accepts the apology while attaching a warning — a middle ground between full, unconditional forgiveness and continued anger that plain "no pasa nada" cannot express.',
+  sections: [
+    { h: 'Full, unconditional acceptance', html: '<i>No hay de qué disculparse</i>, <i>Está bien, no pasa nada</i> — closes the matter completely.' },
+    { h: 'Warm forgiveness', html: '<i>(Bueno/anda/vale...) te perdono</i> — a slightly playful, affectionate way to grant forgiveness.' },
+    { h: 'Acceptance with a warning attached', html: '<i>Está bien, pero que no se vuelva a repetir</i> — accepts THIS TIME while attaching a condition for the future.' }
+  ],
+  exponents: [
+    { es: 'Está bien, no pasa nada.', en: "It's fine, no worries.", register: 'coloquial' },
+    { es: 'No hay por qué disculparse.', en: 'No need to apologize.', register: 'neutral' },
+    { es: 'Anda, te perdono.', en: 'Oh, alright, I forgive you.', register: 'coloquial' },
+    { es: 'Está bien, pero que no se vuelva a repetir.', en: "Fine, but let it not happen again.", register: 'neutral', note: 'accepts, with a warning attached' }
+  ],
+  contrasts: [
+    { es: 'No pasa nada.', en: "It's nothing.", note: 'full, unconditional acceptance' },
+    { es: 'Está bien, pero que sea la última vez.', en: 'Fine, but let it be the last time.', note: 'acceptance with a condition/warning for the future' }
+  ],
+  pitfalls: [
+    '<i>Está bien, pero que no se repita</i> is a genuine middle ground — do not read it as either full forgiveness or continued anger; it is both at once.',
+    '<i>Anda, te perdono</i> carries a playful, affectionate tone — using it in a serious or formal situation would undercut the gravity of what happened.'
+  ],
+  examples: [
+    { es: 'No te preocupes, no hay nada que perdonar.', en: "Don't worry, there's nothing to forgive." },
+    { es: 'Vale, vale, te perdono, pero no lo hagas más.', en: "Okay, okay, I forgive you, but don't do it again." },
+    { es: 'Está bien, pero espero que no vuelva a pasar.', en: "It's fine, but I hope it doesn't happen again." }
+  ],
+  probes: [
+    { id: 'p:responderdisculpaB2:condicional', kind: 'mcq', q: '¿Cuál acepta la disculpa CON una advertencia para el futuro?',
+      options: ['No pasa nada.', 'Está bien, pero que no se repita.', 'Te perdono.'], answer: 1 },
+    { id: 'p:responderdisculpaB2:tono', kind: 'mcq', q: '¿Qué tono tiene "anda, te perdono"?',
+      options: ['Serio y formal', 'Cariñoso, algo juguetón', 'Frío y distante'], answer: 1 },
+    { id: 'p:responderdisculpaB2:cloze', kind: 'cloze', text: 'No hay ___ qué disculparse. (por)', accept: ['por'] },
+    { id: 'p:responderdisculpaB2:recall', kind: 'recall', front: '¿Es "está bien, pero que no se repita" perdón total o parcial?', back: 'parcial — acepta pero con una condición para el futuro' }
+  ]
+},
+
+{
+  id: 'fn-agradecer-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1360', 'funciones:B2:1361', 'funciones:B2:1362', 'funciones:B2:1363'],
+  title: 'Agradecer: no sé cómo agradecértelo',
+  summary: '"No sé cómo agradecértelo" claims gratitude too large for ordinary words to capture — a hyperbolic move that "gracias por" and "te lo agradezco" state plainly, without that same rhetorical excess.',
+  sections: [
+    { h: 'Gracias por + SN/infinitivo compuesto', html: 'Names specifically what you are grateful for: <i>Muchísimas gracias por haber venido tan rápido.</i>' },
+    { h: 'Te lo agradezco sinceramente/muchísimo', html: 'A direct, sincere statement of gratitude, works well in both speech and writing.' },
+    { h: 'No sé cómo agradecértelo: gratitude beyond words', html: 'A hyperbolic move — claims the gratitude is too large for ordinary thanks to capture.' }
+  ],
+  exponents: [
+    { es: 'Muchísimas gracias por haber venido tan rápido.', en: 'Thank you so much for coming so quickly.', register: 'neutral' },
+    { es: 'Te lo agradezco sinceramente.', en: 'I sincerely appreciate it.', register: 'neutral' },
+    { es: 'No sé cómo agradecértelo, de verdad.', en: "I don't know how to thank you, really.", register: 'coloquial', note: 'gratitude too large for ordinary thanks' },
+    { es: 'Muy amable, muchas gracias.', en: "That's very kind, thank you.", register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Gracias por tu ayuda.', en: 'Thanks for your help.', note: 'plain, specific thanks' },
+    { es: 'No sé cómo agradecértelo.', en: "I don't know how to thank you.", note: 'hyperbolic — claims words are insufficient' }
+  ],
+  pitfalls: [
+    '<i>No sé cómo agradecértelo</i> is deliberately hyperbolic — using it for a small, everyday favor overstates the gratitude considerably.',
+    '<i>Muy amable</i> alone (without "gracias") can function as a complete, if brief, expression of thanks — appropriate for quick service interactions.'
+  ],
+  examples: [
+    { es: 'No sé cómo darte las gracias por todo lo que has hecho.', en: "I don't know how to thank you for everything you've done." },
+    { es: 'Te agradezco muchísimo tu paciencia.', en: 'I really appreciate your patience.' },
+    { es: 'Muchas gracias, de verdad, significa mucho para mí.', en: 'Thank you so much, really, it means a lot to me.' }
+  ],
+  probes: [
+    { id: 'p:agradecerB2:hiperbole', kind: 'mcq', q: '¿Cuál es más HIPERBÓLICA/exagerada?',
+      options: ['Gracias por tu ayuda.', 'No sé cómo agradecértelo.', 'Te lo agradezco.'], answer: 1 },
+    { id: 'p:agradecerB2:compuesto', kind: 'mcq', q: '"Gracias por ___ (venir) tan rápido." (acción ya realizada)',
+      options: ['venir', 'haber venido', 'vengas'], answer: 1 },
+    { id: 'p:agradecerB2:cloze', kind: 'cloze', text: 'Te lo agradezco ___. (sinceramente)', accept: ['sinceramente'] },
+    { id: 'p:agradecerB2:recall', kind: 'recall', front: '¿Qué frase implica que las palabras no bastan para el agradecimiento?', back: 'no sé cómo agradecértelo' }
+  ]
+},
+
+{
+  id: 'fn-buenos-deseos-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1399', 'funciones:B2:1400', 'funciones:B2:1402', 'funciones:B2:1406', 'funciones:B2:1407'],
+  title: 'Formular buenos deseos: crucemos los dedos, que te pongas bien',
+  summary: '"Crucemos los dedos" acts out the wish physically in words — a gesture turned into speech — distinct from the plainer "te deseo lo mejor", and the illness-specific formulas ("que te pongas bien", "que te recuperes") never transfer to other kinds of good wishes.',
+  sections: [
+    { h: 'Crucemos los dedos: a gesture in words', html: 'Names the superstitious gesture of crossing fingers directly, hoping for luck.' },
+    { h: 'Que + subjuntivo (pásatelo bien, te pongas bien)', html: 'A whole family of fixed wishes built on <i>que</i> + subjunctive, each tied to a specific occasion (travel, illness).' },
+    { h: 'Illness-specific formulas', html: '<i>Que te pongas bien pronto</i>, <i>Que te recuperes enseguida</i> are reserved for illness — they do not transfer to other kinds of good wishes.' }
+  ],
+  exponents: [
+    { es: 'Crucemos los dedos para que salga bien.', en: "Let's cross our fingers that it goes well.", register: 'coloquial' },
+    { es: 'Que te lo pases muy bien en el viaje.', en: 'Have a great time on the trip.', register: 'coloquial' },
+    { es: 'Que te pongas bien pronto.', en: 'Get well soon.', register: 'coloquial', note: 'reserved for illness' },
+    { es: 'Le deseo todo lo mejor en esta nueva etapa.', en: 'I wish you all the best in this new stage.', register: 'formal' },
+    { es: 'Que se te pase pronto.', en: 'I hope you feel better soon.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Te deseo lo mejor.', en: 'I wish you all the best.', note: 'general, works for many occasions' },
+    { es: 'Que te pongas bien pronto.', en: 'Get well soon.', note: 'specific to illness — does not transfer to other wishes' }
+  ],
+  pitfalls: [
+    'Illness-specific formulas (<i>que te pongas bien, que te recuperes</i>) sound wrong applied to unrelated good wishes (a trip, a job interview) — match the formula to its designated occasion.',
+    '<i>Crucemos los dedos</i> is first-person plural even when only one person\'s luck is at stake — it invites shared hope, not a literal joint action.'
+  ],
+  examples: [
+    { es: 'Aprovecha estos días, te lo mereces.', en: 'Make the most of these days, you deserve it.' },
+    { es: 'Pásatelo fenomenal en tus vacaciones.', en: 'Have a wonderful time on your vacation.' },
+    { es: 'Que te recuperes enseguida, cuídate mucho.', en: 'Get well soon, take good care of yourself.' }
+  ],
+  probes: [
+    { id: 'p:buenosdeseosB2:especifico', kind: 'mcq', q: '¿Se puede usar "que te pongas bien" para desear suerte en un examen?',
+      options: ['Sí, es general', 'No, es específico de enfermedad', 'Solo por escrito'], answer: 1 },
+    { id: 'p:buenosdeseosB2:gesto', kind: 'mcq', q: '¿Qué gesto verbaliza "crucemos los dedos"?',
+      options: ['Un saludo', 'Cruzar los dedos por suerte', 'Un aplauso'], answer: 1 },
+    { id: 'p:buenosdeseosB2:cloze', kind: 'cloze', text: 'Que te ___ pronto. (recuperar)', accept: ['recuperes'] },
+    { id: 'p:buenosdeseosB2:recall', kind: 'recall', front: '¿Es "te deseo lo mejor" específico de una ocasión?', back: 'no — es general, funciona para muchas ocasiones' }
+  ]
+},
+
+{
+  id: 'fn-enviar-saludos-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1416', 'funciones:B2:1417', 'funciones:B2:1418', 'funciones:B2:1420', 'funciones:B2:1421'],
+  title: 'Enviar y transmitir saludos: dale un abrazo de mi parte',
+  summary: 'This function has a clear direction built into its grammar — "salúdale de mi parte" instructs the LISTENER to pass on a greeting, while "Fulano te envía recuerdos" reports one already passed on — the imperative and the third person split the two halves of the exchange.',
+  sections: [
+    { h: 'Instructing the listener to pass on greetings', html: '<i>Dale un abrazo muy fuerte a Marieta de parte de Manuel</i> — an imperative asking the listener to relay the greeting, naming who it is FROM.' },
+    { h: 'Reporting a greeting already sent', html: '<i>Chus te envía un abrazo</i> — third person, reports that someone else has already sent their regards through you.' },
+    { h: 'Bare noun phrases', html: '<i>Saludos de parte de Patricia</i>, <i>Un abrazo de parte de Maite</i> — no verb needed at all, common as a closing line in messages.' }
+  ],
+  exponents: [
+    { es: 'Salúdale de mi parte, por favor.', en: 'Say hello to him for me, please.', register: 'coloquial' },
+    { es: 'Dadle recuerdos a Paqui de nuestra parte.', en: 'Give our regards to Paqui.', register: 'neutral' },
+    { es: 'Chus te envía un abrazo.', en: 'Chus sends you a hug.', register: 'neutral', note: 'reports a greeting already sent' },
+    { es: 'Saludos a Juancho de mi parte.', en: 'Regards to Juancho from me.', register: 'coloquial', note: 'no verb needed' },
+    { es: 'Un beso muy fuerte de parte de todos.', en: 'A big kiss from all of us.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Salúdale de mi parte.', en: 'Say hello to him for me.', note: 'instructs the listener to pass it on' },
+    { es: 'Chus te envía un abrazo.', en: 'Chus sends you a hug.', note: 'reports a greeting already sent, through the speaker' }
+  ],
+  pitfalls: [
+    'The imperative form (<i>salúdale, dale recuerdos</i>) asks the LISTENER to relay a greeting elsewhere; the third-person form (<i>Fulano te envía...</i>) reports one that has already traveled TO the listener — do not confuse the direction.',
+    'De parte de + [name] must name whose greeting it is — dropping it leaves the greeting anonymous, which is unusual outside of a very casual sign-off.'
+  ],
+  examples: [
+    { es: 'Recuerdos a los niños de parte de Carla.', en: "Regards to the kids from Carla." },
+    { es: 'Dale un beso a Teresa de mi parte.', en: 'Give Teresa a kiss for me.' },
+    { es: 'Un abrazo de parte de Maite.', en: 'A hug from Maite.' }
+  ],
+  probes: [
+    { id: 'p:enviarsaludosB2:direccion', kind: 'mcq', q: '¿Qué dirección tiene "salúdale de mi parte"?',
+      options: ['Pide al oyente que transmita el saludo', 'Informa que ya se envió', 'Ninguna'], answer: 0 },
+    { id: 'p:enviarsaludosB2:reporta', kind: 'mcq', q: '"Chus te envía un abrazo" — ¿qué reporta?',
+      options: ['Una instrucción', 'Un saludo ya enviado', 'Una pregunta'], answer: 1 },
+    { id: 'p:enviarsaludosB2:cloze', kind: 'cloze', text: 'Saludos ___ parte de Ana. (de)', accept: ['de'] },
+    { id: 'p:enviarsaludosB2:recall', kind: 'recall', front: '¿Qué forma verbal instruye al oyente a transmitir un saludo?', back: 'el imperativo (salúdale, dale recuerdos)' }
+  ]
+},
+
+{
+  id: 'fn-despedirse-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  pcic: ['funciones:B2:1433', 'funciones:B2:1435', 'funciones:B2:1438', 'funciones:B2:1439', 'funciones:B2:1442', 'funciones:B2:1444'],
+  title: 'Despedirse: fórmulas escritas, del "atentamente" al "cordialmente"',
+  summary: 'Written closings run on a scale from cold-official ("atentamente") to warm-professional ("cordialmente") that spoken Spanish has no equivalent to — nobody says "atentamente" aloud, making this purely a register of the page.',
+  sections: [
+    { h: 'Spoken closings', html: '<i>Hasta la próxima</i>, <i>A ver si nos vemos pronto</i>, <i>Ya sabes dónde tienes tu casa</i> — warm, informal, spoken only.' },
+    { h: 'Written closings: a formality scale', html: '<i>Atentamente</i> is the coldest/most official; <i>Cordialmente, Saludos cordiales</i> are warmer while still professional — a scale spoken Spanish has no equivalent for.' },
+    { h: 'A la espera de sus noticias, le saluda atentamente', html: 'A fuller formal closing, common in business correspondence, combining an expectation with the sign-off.' }
+  ],
+  exponents: [
+    { es: 'Hasta la próxima, que os vaya bien.', en: 'Until next time, take care.', register: 'coloquial' },
+    { es: 'A ver si nos vemos pronto.', en: 'Let\'s see if we can meet up soon.', register: 'coloquial' },
+    { es: 'A la espera de sus noticias, les saluda atentamente,', en: 'Awaiting your reply, yours faithfully,', register: 'formal' },
+    { es: 'Reciba un cordial saludo,', en: 'Kind regards,', register: 'formal' },
+    { es: 'Cordialmente,', en: 'Cordially,', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Atentamente,', en: 'Yours faithfully,', note: 'the coldest, most official written closing' },
+    { es: 'Cordialmente,', en: 'Cordially,', note: 'warmer, still professional' }
+  ],
+  pitfalls: [
+    'None of the written closings (<i>atentamente, cordialmente</i>) are ever said aloud — they belong purely to the written register, with no spoken equivalent.',
+    '<i>Sin otro particular, les saluda atentamente</i> is a fixed formula meaning "with nothing further to add" — do not try to build variations on "otro particular" outside this exact phrase.'
+  ],
+  examples: [
+    { es: 'Ya sabes dónde tienes tu casa, vuelve cuando quieras.', en: 'You know where to find us, come back whenever you like.' },
+    { es: 'Espero que nos volvamos a ver pronto.', en: 'I hope we see each other again soon.' },
+    { es: 'Sin otro particular, les saluda atentamente,', en: 'With nothing further to add, yours faithfully,' }
+  ],
+  probes: [
+    { id: 'p:despedirseB2:escala', kind: 'mcq', q: '¿Cuál es MÁS fría/oficial de las dos?',
+      options: ['Cordialmente,', 'Atentamente,', 'Ambas iguales'], answer: 1 },
+    { id: 'p:despedirseB2:hablado', kind: 'mcq', q: '¿Se dice "atentamente" en voz alta al despedirse de alguien?',
+      options: ['Sí, es normal', 'No, es exclusivamente escrito', 'Solo en llamadas formales'], answer: 1 },
+    { id: 'p:despedirseB2:cloze', kind: 'cloze', text: 'A la espera de sus noticias, les saluda ___ (atentamente)', accept: ['atentamente'] },
+    { id: 'p:despedirseB2:recall', kind: 'recall', front: '¿Tienen las fórmulas escritas de despedida un equivalente hablado?', back: 'no — son puramente del registro escrito' }
+  ]
 }
 
 ];

@@ -371,7 +371,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (153/204 done)
+## B2 — lessons (163/204 done)
 
 ### B2 · grammar (26/26)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
@@ -456,7 +456,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 16 pts · `nociones_generales B2 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-b2
 - [x] **Expresión verbal** · 23 pts · `nociones_generales B2 § 7.2. Expresión verbal`  — nt-expresion-verbal-b2
 
-### B2 · function (73/96)
+### B2 · function (83/96)
 - [x] **Identificar** · 7 pts · `funciones B2 § 1.1. Identificar`  — fn-identificar-b2
 - [x] **Pedir información** · 23 pts · `funciones B2 § 1.2. Pedir información`  — fn-preguntar-con-prudencia-b2
 - [x] **Dar información** · 27 pts · `funciones B2 § 1.3. Dar información`  — fn-dar-informacion-b2
@@ -530,16 +530,16 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Ofrecerse para hacer algo** · 6 pts · `funciones B2 § 4.23. Ofrecerse para hacer algo`  — fn-ofrecerse-b2
 - [x] **Tranquilizar y consolar** · 12 pts · `funciones B2 § 4.24. Tranquilizar y consolar`  — fn-tranquilizar-consolar-b2
 - [x] **Animar** · 10 pts · `funciones B2 § 4.25. Animar`  — fn-animar-b2
-- [ ] **Saludar** · 24 pts · `funciones B2 § 5.1. Saludar`
-- [ ] **Responder a un saludo** · 5 pts · `funciones B2 § 5.2. Responder a un saludo`
-- [ ] **Dirigirse a alguien** · 3 pts · `funciones B2 § 5.3. Dirigirse a alguien`
-- [ ] **Dar la bienvenida a alguien** · 3 pts · `funciones B2 § 5.8. Dar la bienvenida a alguien`
-- [ ] **Disculparse** · 8 pts · `funciones B2 § 5.10. Disculparse`
-- [ ] **Responder a una disculpa** · 4 pts · `funciones B2 § 5.11. Responder a una disculpa`
-- [ ] **Agradecer** · 5 pts · `funciones B2 § 5.12. Agradecer`
-- [ ] **Formular buenos deseos** · 11 pts · `funciones B2 § 5.17. Formular buenos deseos`
-- [ ] **Enviar y transmitir saludos, recuerdos** · 6 pts · `funciones B2 § 5.19. Enviar y transmitir saludos,`
-- [ ] **Despedirse** · 13 pts · `funciones B2 § 5.21. Despedirse`
+- [x] **Saludar** · 24 pts · `funciones B2 § 5.1. Saludar`  — fn-saludar-responder-b2
+- [x] **Responder a un saludo** · 5 pts · `funciones B2 § 5.2. Responder a un saludo`  — fn-saludar-responder-b2
+- [x] **Dirigirse a alguien** · 3 pts · `funciones B2 § 5.3. Dirigirse a alguien`  — fn-dirigirse-bienvenida-b2
+- [x] **Dar la bienvenida a alguien** · 3 pts · `funciones B2 § 5.8. Dar la bienvenida a alguien`  — fn-dirigirse-bienvenida-b2
+- [x] **Disculparse** · 8 pts · `funciones B2 § 5.10. Disculparse`  — fn-disculparse-b2
+- [x] **Responder a una disculpa** · 4 pts · `funciones B2 § 5.11. Responder a una disculpa`  — fn-responder-disculpa-b2
+- [x] **Agradecer** · 5 pts · `funciones B2 § 5.12. Agradecer`  — fn-agradecer-b2
+- [x] **Formular buenos deseos** · 11 pts · `funciones B2 § 5.17. Formular buenos deseos`  — fn-buenos-deseos-b2
+- [x] **Enviar y transmitir saludos, recuerdos** · 6 pts · `funciones B2 § 5.19. Enviar y transmitir saludos,`  — fn-enviar-saludos-b2
+- [x] **Despedirse** · 13 pts · `funciones B2 § 5.21. Despedirse`  — fn-despedirse-b2
 - [ ] **Preguntar por una persona y responder** · 21 pts · `funciones B2 § 6.3. Preguntar por una persona y r`
 - [ ] **Preguntar por el estado general de las cosas y responder** · 11 pts · `funciones B2 § 6.6. Preguntar por el estado gener`
 - [ ] **Solicitar que comience un relato y reaccionar** · 8 pts · `funciones B2 § 6.7. Solicitar que comience un rel`
