@@ -549,6 +549,23 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 5, text: 'Espero que tú ___ (escribir) la carta ya.', inf: 'escribir', tense: 'perfsubj', person: 'tú', en: 'I hope you have already written the letter.' },
   { type: 'cloze', level: 5, text: 'No creo que él ___ (decir) la verdad.', inf: 'decir', tense: 'perfsubj', person: 'él/ella', en: "I don't think he has told the truth." },
   { type: 'cloze', level: 5, text: 'Me alegro de que vosotros ___ (aprender) tanto este curso.', inf: 'aprender', tense: 'perfsubj', person: 'vosotros', en: "I'm glad you all have learned so much this course." },
-  { type: 'cloze', level: 5, text: 'Dudo que ellos ___ (construir) el puente a tiempo.', inf: 'construir', tense: 'perfsubj', person: 'ellos', en: "I doubt they have built the bridge on time." }
+  { type: 'cloze', level: 5, text: 'Dudo que ellos ___ (construir) el puente a tiempo.', inf: 'construir', tense: 'perfsubj', person: 'ellos', en: "I doubt they have built the bridge on time." },
+
+  /* ============================================================================
+   * B2 APPLY ITEMS — batch 1 of 12 (WORKLIST.md § apply). Verb variety and
+   * register beyond the basic tenses: reported opinion, regret, insistence,
+   * conjecture, formal register. Levels 6-7.
+   * ========================================================================== */
+  { type: 'cloze', level: 6, text: 'Me sorprende que el comité todavía no ___ (pronunciarse) sobre el caso.', inf: 'pronunciarse', tense: 'presubj', person: 'él/ella', en: "I'm surprised the committee still hasn't taken a position on the case." },
+  { type: 'cloze', level: 6, text: 'Si el ayuntamiento ___ (invertir) más en transporte público, habría menos tráfico.', inf: 'invertir', tense: 'impsubj', person: 'él/ella', en: 'If the city council invested more in public transport, there would be less traffic.' },
+  { type: 'cloze', level: 6, text: 'Para cuando lleguen los resultados, nosotros ya ___ (tomar) una decisión.', inf: 'tomar', tense: 'futperf', person: 'nosotros', en: 'By the time the results arrive, we will have already made a decision.' },
+  { type: 'cloze', level: 6, text: 'Yo, en tu lugar, ___ (exigir) una explicación por escrito.', inf: 'exigir', tense: 'condicional', person: 'yo', en: "In your place, I would demand a written explanation." },
+  { type: 'cloze', level: 6, text: 'El jefe insiste en que vosotros ___ (comprometerse) con la nueva fecha de entrega.', inf: 'comprometerse', tense: 'presubj', person: 'vosotros', en: 'The boss insists that you all commit to the new delivery date.' },
+  { type: 'cloze', level: 6, text: 'Ella se arrepiente de que nunca le ___ (proponer, ellos) el ascenso.', inf: 'proponer', tense: 'perfsubj', person: 'ellos', en: 'She regrets that they never offered her the promotion.' },
+  { type: 'cloze', level: 7, text: 'Habrán cambiado de opinión, porque hasta ayer ___ (negarse) en redondo.', inf: 'negarse', tense: 'imperfecto', person: 'ellos', en: 'They must have changed their minds, because until yesterday they were flatly refusing.' },
+  { type: 'cloze', level: 7, text: 'De haberlo sabido antes, ella ___ (renunciar) al puesto de inmediato.', inf: 'renunciar', tense: 'condperf', person: 'él/ella', en: 'Had she known beforehand, she would have resigned from the position immediately.' },
+
+  { type: 'transform', level: 6, instruction: 'Rewrite as a "se" construction that avoids naming who is responsible:', from: 'Alguien canceló el vuelo sin previo aviso.', to: 'El vuelo se canceló sin previo aviso.', en: 'The flight was cancelled without prior notice.' },
+  { type: 'transform', level: 7, instruction: 'Rewrite in reported (indirect) speech, starting with "El ministro afirmó que...":', from: 'El ministro dijo: "La reforma entrará en vigor el próximo año."', to: 'El ministro afirmó que la reforma entraría en vigor el año siguiente.', en: 'The minister stated that the reform would take effect the following year.' }
 
 ];

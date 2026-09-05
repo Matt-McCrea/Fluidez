@@ -1555,5 +1555,8 @@ window.VERBS = [
 { inf:'optar', en:'to opt (for), to choose', type:'ar' },
 { inf:'comprometerse', en:'to commit (to something)', type:'er' },
 { inf:'motivar', en:'to motivate', type:'ar' },
-{ inf:'bromear', en:'to joke around', type:'ar' }
+{ inf:'bromear', en:'to joke around', type:'ar' },
+{ inf:'negarse', en:'to refuse', type:'ar', stem:'ie' },
+{ inf:'renunciar', en:'to resign, to give up (a right)', type:'ar' },
+{ inf:'pronunciarse', en:'to state a position, to take a stance', type:'ar' }
 ];
