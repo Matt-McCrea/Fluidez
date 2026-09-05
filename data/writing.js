@@ -2384,6 +2384,84 @@ window.WRITING_TASKS = [
       { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
       { type: 'minWords', n: 6 }
     ],
-    models: ['La falsificación engañó a varios museos durante décadas.'] }
+    models: ['La falsificación engañó a varios museos durante décadas.'] },
+
+  /* ---- B2 writing, batch 6 of 8 ---- */
+  { id: 'b2w-ermitano-religion', type: 'write', level: 6, theme: 'religion',
+    prompt: 'Write about a monk who accepts that certain traditions will disappear once he is gone, without bitterness.',
+    hint: 'Include a concession with "aunque" or "a pesar de".',
+    constraints: [
+      { type: 'containsAny', words: ['aunque', 'a pesar de', 'sin embargo'] },
+      { type: 'minWords', n: 20 }
+    ],
+    models: ['Aunque sabe que muchas tradiciones del monasterio se perderán cuando él falte, las acepta sin ninguna angustia aparente. A pesar de todo, sigue rezando cada día con la misma disciplina de siempre.'] },
+
+  { id: 'p-apellido-identidad', type: 'paragraph', level: 6, theme: 'identidad',
+    prompt: 'Write a paragraph about a family tradition that changed: what it used to be, what it is now, and what you expect for the future.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Durante generaciones, el apellido paterno siempre precedía al materno. Hoy, cada vez más familias eligen libremente el orden. Dentro de unas décadas, es posible que la costumbre tradicional haya dejado de ser mayoritaria. Nadie imaginaba un cambio tan rápido hace apenas veinte años.'] },
+
+  { id: 'b2t-bromista-caracter', type: 'translate', level: 7, theme: 'caracter',
+    prompt: 'Translate: "He always jokes so that no one notices his own discomfort."',
+    hint: '"para que" governs the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'para que' },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['Siempre bromea para que nadie note su propia incomodidad.'] },
+
+  { id: 'b2w-coro-ocio', type: 'write', level: 6, theme: 'ocio',
+    prompt: 'Write, in a formal register, a short announcement inviting neighbors to join a new community choir.',
+    hint: 'Address readers as "ustedes"; avoid "para" and any other word that could double as a tú-form.',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Los vecinos interesados en la música están invitados a apuntarse al nuevo coro comunitario, sin necesidad de experiencia musical previa. Los ensayos serán los martes por la tarde en el centro cultural.'] },
+
+  { id: 'b2t-okupacion-vivienda', type: 'translate', level: 7, theme: 'vivienda',
+    prompt: 'Translate: "Unless the tenants leave voluntarily, the process could take months."',
+    hint: '"a menos que" governs the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'a menos que' },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['A menos que los inquilinos se marchen voluntariamente, el proceso podría durar meses.'] },
+
+  { id: 'p-segunda-mano-compras', type: 'paragraph', level: 6, theme: 'compras',
+    prompt: 'Write a paragraph about how buying second-hand clothes has changed, using a relative clause to reach the pluscuamperfecto.',
+    hint: 'Reach the pluscuamperfecto through a relative clause, not "antes de".',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'plusc' },
+      { type: 'minSentences', n: 3 }
+    ],
+    models: ['El estigma que durante años había rodeado a la ropa usada ha desaparecido casi por completo entre los jóvenes. Hoy, muchos la prefieren por motivos ambientales. Las propias marcas ya han empezado a vender sus propias prendas de segunda mano.'] },
+
+  { id: 'b2t-caja-recetas-alimentacion', type: 'translate', level: 6, theme: 'alimentacion',
+    prompt: 'Translate: "Her mother gave it to her before she passed away."',
+    hint: 'Use a double object pronoun: "se lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['Su madre se lo dio antes de fallecer.'] },
+
+  { id: 'b2b-medula-cuerpo', type: 'build', level: 6, theme: 'cuerpo', en: 'I would never have imagined that a simple test could save a stranger\'s life.',
+    answer: 'Nunca habría imaginado que una simple prueba pudiera salvar la vida de un desconocido.' },
+  { id: 'b2b-deepfake-medios', type: 'build', level: 7, theme: 'medios', en: 'It is unlikely that we will stop trusting images completely.',
+    answer: 'Es poco probable que dejemos de confiar en las imágenes por completo.' },
+
+  { id: 'b2w-agujero-negro-ciencia', type: 'write', level: 7, theme: 'ciencia',
+    prompt: 'Describe, in an impersonal register using "se", how a black hole was photographed for the first time.',
+    hint: 'Use "se" constructions throughout instead of naming who did each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Para lograr la imagen, se combinaron datos de radiotelescopios repartidos por todo el planeta. Después se procesaron durante meses, y finalmente se publicó la fotografía que confirmaba la teoría.'] }
 
 ];
