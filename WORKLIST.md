@@ -371,7 +371,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción narrativa** · 28 pts · `generos_discursivos B1 § 3.4. Macrofunción narrativa`  — gn-narrar-estructura-b1
 - [x] **Macrofunción expositiva** · 38 pts · `generos_discursivos B1 § 3.5. Macrofunción expositiva`  — gn-exponer-tema-b1
 
-## B2 — lessons (88/204 done)
+## B2 — lessons (99/204 done)
 
 ### B2 · grammar (26/26)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
@@ -401,7 +401,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 25 pts · `gramatica B2 § 15.2. Oraciones subordinadas adjet`  — gr-subordinadas-relativas-tipos-b2
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica B2 § 15.3. Oraciones subordinadas adver`  — gr-subordinadas-lugar-b2
 
-### B2 · notion (42/53)
+### B2 · notion (53/53)
 - [x] **Existencia, inexistencia** · 7 pts · `nociones_generales B2 § 1.1. Existencia, inexistencia`  — nt-existencia-b2
 - [x] **Presencia, ausencia** · 11 pts · `nociones_generales B2 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-b2
 - [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales B2 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-b2
@@ -441,20 +441,20 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Color** · 12 pts · `nociones_generales B2 § 5.12. Color`  — nt-color-b2
 - [x] **Edad, vejez** · 16 pts · `nociones_generales B2 § 5.13. Edad, vejez`  — nt-edad-vejez-b2
 - [x] **Limpieza** · 6 pts · `nociones_generales B2 § 5.15. Limpieza`  — nt-limpieza-b2
-- [ ] **Evaluación general** · 16 pts · `nociones_generales B2 § 6.1. Evaluación general`
-- [ ] **Valor, precio** · 10 pts · `nociones_generales B2 § 6.2. Valor, precio`
+- [x] **Evaluación general** · 16 pts · `nociones_generales B2 § 6.1. Evaluación general`  — nt-evaluacion-general-b2
+- [x] **Valor, precio** · 10 pts · `nociones_generales B2 § 6.2. Valor, precio`  — nt-valor-precio-b2
 - [x] **Adecuación** · 3 pts · `nociones_generales B2 § 6.6. Adecuación`  — nt-adecuacion-b2
-- [ ] **Corrección** · 6 pts · `nociones_generales B2 § 6.8. Corrección`
-- [ ] **Precisión, claridad** · 6 pts · `nociones_generales B2 § 6.9. Precisión, claridad`
+- [x] **Corrección** · 6 pts · `nociones_generales B2 § 6.8. Corrección`  — nt-correccion-precision-b2
+- [x] **Precisión, claridad** · 6 pts · `nociones_generales B2 § 6.9. Precisión, claridad`  — nt-correccion-precision-b2
 - [x] **Interés** · 5 pts · `nociones_generales B2 § 6.10. Interés`  — nt-interes-b2
-- [ ] **Éxito, logro** · 6 pts · `nociones_generales B2 § 6.11. Éxito, logro`
-- [ ] **Utilidad, uso** · 8 pts · `nociones_generales B2 § 6.12. Utilidad, uso`
-- [ ] **Capacidad, competencia** · 9 pts · `nociones_generales B2 § 6.13. Capacidad, competencia`
-- [ ] **Importancia** · 6 pts · `nociones_generales B2 § 6.14. Importancia`
-- [ ] **Normalidad** · 6 pts · `nociones_generales B2 § 6.15. Normalidad`
+- [x] **Éxito, logro** · 6 pts · `nociones_generales B2 § 6.11. Éxito, logro`  — nt-exito-logro-b2
+- [x] **Utilidad, uso** · 8 pts · `nociones_generales B2 § 6.12. Utilidad, uso`  — nt-utilidad-uso-b2
+- [x] **Capacidad, competencia** · 9 pts · `nociones_generales B2 § 6.13. Capacidad, competencia`  — nt-capacidad-competencia-b2
+- [x] **Importancia** · 6 pts · `nociones_generales B2 § 6.14. Importancia`  — nt-importancia-normalidad-b2
+- [x] **Normalidad** · 6 pts · `nociones_generales B2 § 6.15. Normalidad`  — nt-importancia-normalidad-b2
 - [x] **Facilidad** · 6 pts · `nociones_generales B2 § 6.16. Facilidad`  — nt-facilidad-b2
-- [ ] **Reflexión, conocimiento** · 16 pts · `nociones_generales B2 § 7.1. Reflexión, conocimiento`
-- [ ] **Expresión verbal** · 23 pts · `nociones_generales B2 § 7.2. Expresión verbal`
+- [x] **Reflexión, conocimiento** · 16 pts · `nociones_generales B2 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-b2
+- [x] **Expresión verbal** · 23 pts · `nociones_generales B2 § 7.2. Expresión verbal`  — nt-expresion-verbal-b2
 
 ### B2 · function (19/96)
 - [ ] **Identificar** · 7 pts · `funciones B2 § 1.1. Identificar`

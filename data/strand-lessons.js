@@ -17246,6 +17246,383 @@ window.STRAND_LESSONS = [
     { id: 'p:edadvejezB2:cloze', kind: 'cloze', text: 'Es un ___ nacido, tiene un día. (recién)', accept: ['recién'] },
     { id: 'p:edadvejezB2:recall', kind: 'recall', front: '¿Qué verbo describe usar algo por primera vez?', back: 'estrenar' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — B2 notion, part 6 (final): finishes B2 · notion (53/53).
+ * Combined: Corrección + Precisión/claridad (nt-correccion-precision-b2);
+ * Importancia + Normalidad (nt-importancia-normalidad-b2) — each pair is a
+ * thin (6 pt) cluster of evaluative adjectives with no worked examples.
+ * ========================================================================== */
+{
+  id: 'nt-evaluacion-general-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:896', 'nociones_generales:B2:897', 'nociones_generales:B2:899', 'nociones_generales:B2:900',
+         'nociones_generales:B2:901', 'nociones_generales:B2:902', 'nociones_generales:B2:903'],
+  title: 'Evaluación general: salirle/irle algo a alguien, valer la pena',
+  summary: '"Salirle/irle algo a alguien" evaluates how something turned out for a specific person — a job interview, an exam — using the same grammatical shape as gustar, and "valer la pena" asks whether the effort was worth the result, a distinct question from simply "is it good".',
+  sections: [
+    { h: 'Salirle/irle bien/mal a alguien', html: 'Both describe how something turned out FOR a person, grammatically like <i>gustar</i>: <i>Les ha ido muy bien el examen</i> ("the exam went well for them").' },
+    { h: 'Valer la pena: worth the effort', html: 'Distinct from "is it good" — <i>valer la pena</i> asks whether the effort/cost was justified by the result: <i>No vale la pena discutir por esto.</i>' },
+    { h: 'A softened negative: no estar nada mal', html: '<i>No estar (nada) mal</i> is a mild, understated positive — closer to "not bad at all" than a full endorsement.' },
+    { h: 'Strong evaluative adjectives', html: '<i>Excelente, magnífico, genial, maravilloso</i> (strong positive) and <i>ridículo, absurdo</i> (strong negative) go well beyond bueno/malo.' }
+  ],
+  exponents: [
+    { es: 'Les ha ido muy bien el examen.', en: 'The exam went really well for them.', register: 'neutral', note: 'irle algo a alguien, gustar-pattern' },
+    { es: 'No vale la pena enfadarse por esto.', en: "It's not worth getting angry over this.", register: 'neutral' },
+    { es: 'No está nada mal para ser la primera vez.', en: "It's not bad at all for a first try.", register: 'coloquial' },
+    { es: 'Fue una propuesta absurda desde el principio.', en: 'It was an absurd proposal from the start.', register: 'neutral' },
+    { es: 'Nos lo pasamos genial en la fiesta.', en: 'We had a great time at the party.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'El examen es difícil.', en: 'The exam is difficult.', note: 'a property of the exam itself' },
+    { es: 'Le salió mal el examen.', en: 'The exam went badly for him.', note: 'how it turned out for a specific person' }
+  ],
+  pitfalls: [
+    '<i>Salirle/irle algo a alguien</i> takes the same indirect-object structure as <i>gustar</i> — the person is not the grammatical subject: <i>me salió bien</i>, not <i>*yo salí bien</i> in this sense.',
+    '<i>Valer la pena</i> asks about worth relative to effort/cost, not simply quality — something can be good but not worth the trouble, or mediocre but worth it for other reasons.'
+  ],
+  examples: [
+    { es: 'Al final le fue fenomenal la entrevista.', en: 'In the end the interview went great for him.' },
+    { es: 'Es una tontería discutir por algo tan pequeño.', en: "It's silly to argue over something so small." },
+    { es: '¿Vale la pena pagar tanto por esto?', en: 'Is it worth paying so much for this?' }
+  ],
+  probes: [
+    { id: 'p:evalgeneralB2:sujeto', kind: 'mcq', q: '"Le salió bien el examen." ¿Cuál es el sujeto gramatical?',
+      options: ['La persona (le)', 'El examen', 'Ninguno'], answer: 1 },
+    { id: 'p:evalgeneralB2:valerpena', kind: 'mcq', q: '¿Qué pregunta "vale la pena"?',
+      options: ['Si algo es bueno', 'Si el esfuerzo se justifica por el resultado', 'El precio exacto'], answer: 1 },
+    { id: 'p:evalgeneralB2:cloze', kind: 'cloze', text: 'No ___ la pena discutir por esto. (valer)', accept: ['vale'] },
+    { id: 'p:evalgeneralB2:recall', kind: 'recall', front: '¿Qué estructura gramatical comparte "irle algo a alguien"?', back: 'la de "gustar" — objeto indirecto, no sujeto personal' }
+  ]
+},
+
+{
+  id: 'nt-valor-precio-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'economia',
+  pcic: ['nociones_generales:B2:909', 'nociones_generales:B2:911', 'nociones_generales:B2:913', 'nociones_generales:B2:914',
+         'nociones_generales:B2:916', 'nociones_generales:B2:917', 'nociones_generales:B2:918'],
+  title: 'Valor y precio: invertir, estar en oferta, ganar/perder valor',
+  summary: '"Gastar" and "invertir" both mean paying money, but only one expects a return — calling a purchase an "inversión" makes an implicit claim that it will pay off, which is exactly why advertisers reach for that word instead of the neutral "gasto".',
+  sections: [
+    { h: 'Gasto vs inversión', html: '<i>Gasto</i> is neutral spending; <i>inversión</i> implies the money is expected to generate a return — calling a purchase an <i>inversión</i> is itself a persuasive move.' },
+    { h: 'A price changing', html: '<i>Aumentar/disminuir el precio</i>, <i>rebajado</i> (discounted), <i>estar en/de oferta</i> (on sale) track a price moving.' },
+    { h: 'Value over time', html: '<i>Ganar/perder valor</i> tracks how something\'s worth changes over time, distinct from its price at a single moment.' }
+  ],
+  exponents: [
+    { es: 'Consideran la formación un gasto, no una inversión.', en: 'They see training as an expense, not an investment.', register: 'formal' },
+    { es: 'Estos zapatos están en oferta esta semana.', en: 'These shoes are on sale this week.', register: 'neutral' },
+    { es: 'La casa ha ganado mucho valor en diez años.', en: 'The house has gained a lot of value in ten years.', register: 'neutral' },
+    { es: 'El coche pierde valor en cuanto sales del concesionario.', en: 'The car loses value the moment you leave the dealership.', register: 'neutral' },
+    { es: 'Invertimos en un buen colchón y mereció la pena.', en: 'We invested in a good mattress and it was worth it.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Fue un gasto innecesario.', en: 'It was an unnecessary expense.', note: 'gasto — neutral, no expectation of return' },
+    { es: 'Fue una buena inversión.', en: 'It was a good investment.', note: 'inversión — implies an expected return' }
+  ],
+  pitfalls: [
+    'Calling something an <i>inversión</i> when it is really just a <i>gasto</i> is a common persuasive/marketing move — recognize the framing, do not take it as neutral.',
+    '<i>Ganar/perder valor</i> tracks change OVER TIME; a plain price (<i>el precio es de...</i>) is a snapshot, not a trend.'
+  ],
+  examples: [
+    { es: 'El precio ha aumentado un 15% este año.', en: 'The price has gone up 15% this year.' },
+    { es: 'Compré la tele rebajada en las rebajas de enero.', en: 'I bought the TV discounted in the January sales.' },
+    { es: 'Esa pintura ha ganado mucho valor con los años.', en: 'That painting has gained a lot of value over the years.' }
+  ],
+  probes: [
+    { id: 'p:valorprecioB2:gastoinversion', kind: 'mcq', q: '¿Qué implica llamar "inversión" a un gasto?',
+      options: ['Nada especial', 'Que se espera un retorno', 'Que es barato'], answer: 1 },
+    { id: 'p:valorprecioB2:tendencia', kind: 'mcq', q: '¿Qué describe "ganar valor" que un precio fijo no describe?',
+      options: ['Un cambio a lo largo del tiempo', 'El precio actual', 'Un descuento'], answer: 0 },
+    { id: 'p:valorprecioB2:cloze', kind: 'cloze', text: 'Estos zapatos están ___ oferta. (en)', accept: ['en'] },
+    { id: 'p:valorprecioB2:recall', kind: 'recall', front: '¿Qué palabra implica que el gasto generará un retorno?', back: 'inversión' }
+  ]
+},
+
+{
+  id: 'nt-correccion-precision-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:943', 'nociones_generales:B2:944', 'nociones_generales:B2:945', 'nociones_generales:B2:946',
+         'nociones_generales:B2:953', 'nociones_generales:B2:954', 'nociones_generales:B2:956', 'nociones_generales:B2:958'],
+  title: 'Corrección y precisión: fallo, exacto, verlo claro',
+  summary: 'Two closely related evaluative clusters: whether something is right or has an error (corrección), and whether it is stated with enough detail to be useful (precisión) — "exacto" makes a stronger claim than "correcto", promising no margin of error at all.',
+  sections: [
+    { h: 'Naming an error', html: '<i>Falta, fallo, equivocación</i> each name a mistake, with <i>fallo</i> especially common for a technical or system failure.' },
+    { h: 'Imperfecto vs equivocado', html: '<i>Imperfecto</i> describes something with room for improvement, not necessarily wrong; <i>equivocado</i> claims it is actually incorrect.' },
+    { h: 'Exacto: no margin at all', html: '<i>Exacto</i> is stronger than <i>correcto</i> — it claims precision with zero margin of error, appropriate for numbers and measurements.' },
+    { h: 'Verlo claro', html: '<i>Verlo (muy) claro</i> means being fully convinced/certain about something, not literally about vision.' }
+  ],
+  exponents: [
+    { es: 'Encontraron un fallo en el sistema.', en: 'They found a bug in the system.', register: 'neutral' },
+    { es: 'Es un plan imperfecto pero funcional.', en: "It's an imperfect but workable plan.", register: 'neutral' },
+    { es: 'Necesito una cifra exacta, no aproximada.', en: 'I need an exact figure, not an approximate one.', register: 'formal' },
+    { es: 'Lo tengo muy claro, no voy a cambiar de opinión.', en: "I'm very clear about it, I'm not going to change my mind.", register: 'coloquial' },
+    { es: 'Es dudoso que llegue a tiempo.', en: "It's doubtful he'll arrive on time.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Su respuesta fue correcta.', en: 'His answer was correct.', note: 'correcto — right, meets the standard' },
+    { es: 'Su respuesta fue exacta.', en: 'His answer was exact.', note: 'exacto — precise with no margin of error' }
+  ],
+  pitfalls: [
+    '<i>Imperfecto</i> (room for improvement) and <i>equivocado</i> (actually wrong) are not synonyms — mixing them misrepresents how serious a flaw is.',
+    '<i>Verlo claro</i> is a fixed idiom for certainty/conviction — do not read it literally as being able to see something clearly.'
+  ],
+  examples: [
+    { es: 'Se equivocó de dirección y llegó tarde.', en: 'He got the address wrong and arrived late.' },
+    { es: 'Es un perfeccionista, nunca está satisfecho.', en: "He's a perfectionist, never satisfied." },
+    { es: 'El informe da todos los detalles necesarios.', en: 'The report gives all the necessary details.' }
+  ],
+  probes: [
+    { id: 'p:correccionprecisionB2:exactovscorrecto', kind: 'mcq', q: '¿Cuál reclama CERO margen de error?',
+      options: ['correcto', 'exacto', 'aceptable'], answer: 1 },
+    { id: 'p:correccionprecisionB2:verloclaro', kind: 'mcq', q: '¿Qué significa "lo tengo muy claro"?',
+      options: ['Lo veo con buena luz', 'Estoy convencido/seguro', 'No lo entiendo'], answer: 1 },
+    { id: 'p:correccionprecisionB2:cloze', kind: 'cloze', text: 'Encontraron un ___ en el programa. (fallo)', accept: ['fallo'] },
+    { id: 'p:correccionprecisionB2:recall', kind: 'recall', front: '¿"Imperfecto" significa lo mismo que "equivocado"?', back: 'no — imperfecto admite mejora, equivocado es incorrecto' }
+  ]
+},
+
+{
+  id: 'nt-exito-logro-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:971', 'nociones_generales:B2:972', 'nociones_generales:B2:973', 'nociones_generales:B2:974', 'nociones_generales:B2:975'],
+  title: 'Éxito y logro: triunfar, fracasar, llegar a ser',
+  summary: '"Llegar a ser" marks a gradual achievement reached over time — becoming a doctor, becoming successful — distinct from a sudden change, and the triunfar/fracasar pair names competitive success or failure specifically, not everyday good or bad luck.',
+  sections: [
+    { h: 'Triunfar vs fracasar', html: 'A clean opposite pair for competitive or ambitious success/failure — stronger and more dramatic than <i>tener éxito/no tener éxito</i>.' },
+    { h: 'Llegar a ser: a gradual achievement', html: '<i>Llegar a ser</i> marks reaching a status over time, through effort: <i>Llegó a ser director de la empresa.</i>' },
+    { h: 'Alcanzar los primeros puestos', html: 'A fixed phrase for reaching the top rankings, common in sports and academic contexts.' }
+  ],
+  exponents: [
+    { es: 'Triunfó en el extranjero antes de volver a España.', en: 'He succeeded abroad before coming back to Spain.', register: 'neutral' },
+    { es: 'El proyecto fracasó por falta de fondos.', en: 'The project failed due to lack of funding.', register: 'neutral' },
+    { es: 'Llegó a ser una de las científicas más reconocidas del país.', en: 'She became one of the most recognized scientists in the country.', register: 'formal' },
+    { es: 'El equipo alcanzó los primeros puestos de la liga.', en: 'The team reached the top of the league.', register: 'neutral' },
+    { es: 'Aprobó el examen sin problemas.', en: 'She passed the exam without any trouble.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Se hizo rico rápidamente.', en: 'He got rich quickly.', note: 'a fast, almost sudden change' },
+    { es: 'Llegó a ser rico tras años de trabajo.', en: 'He became rich after years of work.', note: 'llegar a ser — a gradual achievement over time' }
+  ],
+  pitfalls: [
+    '<i>Triunfar/fracasar</i> are dramatic and competitive — using them for small, everyday outcomes can sound exaggerated.',
+    '<i>Llegar a ser</i> implies a PROCESS over time — do not use it for something achieved instantly.'
+  ],
+  examples: [
+    { es: 'Fracasó en su primer intento, pero no se rindió.', en: 'He failed on his first attempt, but didn\'t give up.' },
+    { es: 'Con el tiempo, llegó a ser un referente en su campo.', en: 'Over time, he became a leading figure in his field.' },
+    { es: 'Suspendió el examen y tuvo que repetirlo.', en: 'She failed the exam and had to retake it.' }
+  ],
+  probes: [
+    { id: 'p:exitologroB2:llegaraser', kind: 'mcq', q: '¿Qué implica "llegar a ser" que "hacerse" no siempre implica?',
+      options: ['Rapidez', 'Un proceso gradual, con esfuerzo', 'Casualidad'], answer: 1 },
+    { id: 'p:exitologroB2:triunfarfracasar', kind: 'mcq', q: '¿"Triunfar/fracasar" son apropiados para...?',
+      options: ['Cualquier resultado pequeño', 'Logros o fracasos ambiciosos/competitivos', 'Solo deportes'], answer: 1 },
+    { id: 'p:exitologroB2:cloze', kind: 'cloze', text: 'El proyecto ___ por falta de apoyo. (fracasar)', accept: ['fracasó'] },
+    { id: 'p:exitologroB2:recall', kind: 'recall', front: '¿Qué frase describe reaching the top rankings?', back: 'alcanzar los primeros puestos' }
+  ]
+},
+
+{
+  id: 'nt-utilidad-uso-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:980', 'nociones_generales:B2:981', 'nociones_generales:B2:982', 'nociones_generales:B2:985', 'nociones_generales:B2:986'],
+  title: 'Utilidad y uso: utilizar/emplear, fuera de servicio',
+  summary: '"Estar fuera de uso/servicio" marks something that used to function and no longer does — a specific, checkable claim distinct from simply calling something "inútil", which can describe something that never worked at all.',
+  sections: [
+    { h: 'Inútil vs imprescindible: the extremes', html: '<i>Inútil</i> (useless) and <i>imprescindible</i> (essential) sit at opposite ends of a usefulness scale.' },
+    { h: 'Utilizar/emplear + para', html: 'Both mean "to use", near-interchangeable, always specifying purpose with <i>para</i>: <i>Se utiliza/emplea para limpiar superficies.</i>' },
+    { h: 'Fuera de uso/servicio: no longer functioning', html: 'This phrase specifically marks something that USED to work and does not anymore — an elevator, a machine — distinct from something never functional.' }
+  ],
+  exponents: [
+    { es: 'Este aparato es completamente inútil.', en: 'This gadget is completely useless.', register: 'coloquial' },
+    { es: 'El ascensor está fuera de servicio.', en: 'The elevator is out of service.', register: 'neutral' },
+    { es: 'Se emplea para desinfectar heridas.', en: "It's used to disinfect wounds.", register: 'formal' },
+    { es: 'Dedican muchas energías a este proyecto.', en: 'They devote a lot of energy to this project.', register: 'neutral' },
+    { es: 'Es una herramienta funcional pero poco elegante.', en: "It's a functional tool but not very elegant.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Esta impresora nunca ha funcionado.', en: 'This printer has never worked.', note: 'inútil from the start' },
+    { es: 'La impresora está fuera de servicio.', en: 'The printer is out of service.', note: 'used to work, does not now' }
+  ],
+  pitfalls: [
+    '<i>Fuera de uso/servicio</i> implies a PAST functioning state — do not use it for something that was never operational.',
+    '<i>Utilizar</i> and <i>emplear</i> are close synonyms, but <i>emplear</i> can also mean "to employ" (a person) — context disambiguates.'
+  ],
+  examples: [
+    { es: 'El agua es imprescindible para la vida.', en: 'Water is essential for life.' },
+    { es: 'Esta máquina lleva meses fuera de uso.', en: "This machine has been out of use for months." },
+    { es: 'Se emplean distintos métodos según el caso.', en: 'Different methods are used depending on the case.' }
+  ],
+  probes: [
+    { id: 'p:utilidadusoB2:fueraservicio', kind: 'mcq', q: '¿Qué implica "fuera de servicio"?',
+      options: ['Nunca funcionó', 'Funcionaba antes, ahora no', 'Es nuevo'], answer: 1 },
+    { id: 'p:utilidadusoB2:extremos', kind: 'mcq', q: '¿Cuál es el opuesto de "imprescindible"?',
+      options: ['funcional', 'inútil', 'esencial'], answer: 1 },
+    { id: 'p:utilidadusoB2:cloze', kind: 'cloze', text: 'Se ___ para limpiar superficies. (utilizar)', accept: ['utiliza'] },
+    { id: 'p:utilidadusoB2:recall', kind: 'recall', front: '¿Qué implica temporalmente "fuera de uso"?', back: 'que antes funcionaba y ya no' }
+  ]
+},
+
+{
+  id: 'nt-capacidad-competencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:991', 'nociones_generales:B2:993', 'nociones_generales:B2:994', 'nociones_generales:B2:995',
+         'nociones_generales:B2:997', 'nociones_generales:B2:998', 'nociones_generales:B2:999'],
+  title: 'Capacidad y competencia: dársele bien, ser capaz de',
+  summary: '"Dársele bien algo a alguien" — the gustar-pattern again — states a natural aptitude, distinct from "ser capaz de", which claims the ability to do one specific thing, possibly with effort rather than natural talent.',
+  sections: [
+    { h: 'Dársele bien/mal: natural aptitude', html: 'Gustar-pattern: <i>Se le da bien la música</i> ("she\'s good at music") — the aptitude, not the person, is grammatically central.' },
+    { h: 'Ser capaz de: a specific ability claim', html: '<i>Ser (in)capaz de</i> + infinitive claims the ability (or inability) to do one specific thing, with no implication of natural talent.' },
+    { h: 'Ser un experto en, dominar, saber de memoria', html: '<i>Ser un experto en</i> (expert status), <i>dominar</i> (to have mastered), <i>saber de memoria</i> (to know by heart) name different levels/kinds of competence.' }
+  ],
+  exponents: [
+    { es: 'Se le da muy bien organizar eventos.', en: "She's very good at organizing events.", register: 'coloquial', note: 'dársele bien, gustar-pattern' },
+    { es: 'No soy capaz de terminar esto hoy.', en: "I'm not able to finish this today.", register: 'neutral' },
+    { es: 'Es un experto en historia medieval.', en: "He's an expert in medieval history.", register: 'formal' },
+    { es: 'Domina tres idiomas a la perfección.', en: 'He has mastered three languages perfectly.', register: 'neutral' },
+    { es: 'Se sabe el poema de memoria.', en: 'He knows the poem by heart.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Se le da bien el dibujo.', en: "She's good at drawing.", note: 'a natural aptitude, gustar-pattern' },
+    { es: 'Es capaz de dibujar un retrato perfecto.', en: 'She is able to draw a perfect portrait.', note: 'a specific ability claim, no implied talent' }
+  ],
+  pitfalls: [
+    '<i>Dársele bien</i> takes an indirect object, not a subject pronoun: <i>se le da bien</i>, never <i>*ella da bien</i> in this sense.',
+    '<i>Ser capaz de</i> claims ability for ONE specific act — do not use it as a general statement of talent, where <i>dársele bien</i> or <i>ser bueno en</i> fit better.'
+  ],
+  examples: [
+    { es: 'A mi hermano se le dan fatal las matemáticas.', en: "My brother is terrible at math." },
+    { es: '¿Eres capaz de levantar esa caja tú solo?', en: 'Are you able to lift that box on your own?' },
+    { es: 'Es incompetente para este puesto.', en: "He's incompetent for this position." }
+  ],
+  probes: [
+    { id: 'p:capacidadcompetB2:darsebien', kind: 'mcq', q: '¿Cuál es el sujeto gramatical en "se le da bien la música"?',
+      options: ['Ella', 'La música', 'Ninguno'], answer: 1 },
+    { id: 'p:capacidadcompetB2:sercapazde', kind: 'mcq', q: '¿Qué reclama "ser capaz de"?',
+      options: ['Talento natural general', 'La habilidad para un acto específico', 'Nada'], answer: 1 },
+    { id: 'p:capacidadcompetB2:cloze', kind: 'cloze', text: 'Se ___ el poema de memoria. (saber)', accept: ['sabe'] },
+    { id: 'p:capacidadcompetB2:recall', kind: 'recall', front: '¿Qué estructura gramatical sigue "dársele bien algo a alguien"?', back: 'la de "gustar" — objeto indirecto' }
+  ]
+},
+
+{
+  id: 'nt-importancia-normalidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:1004', 'nociones_generales:B2:1006', 'nociones_generales:B2:1008', 'nociones_generales:B2:1013',
+         'nociones_generales:B2:1015', 'nociones_generales:B2:1016', 'nociones_generales:B2:1017'],
+  title: 'Importancia y normalidad: dar lo mismo, por norma',
+  summary: '"Dar lo mismo" is indifference, not agreement — it says the outcome does not matter to the speaker, which is a very different stance from actually endorsing an option — and "por norma" states what USUALLY happens, leaving room for exceptions "con normalidad" does not.',
+  sections: [
+    { h: 'Fundamental/básico vs secundario', html: 'These rank importance: <i>fundamental, básico</i> (essential) vs <i>secundario</i> (of lesser priority).' },
+    { h: 'Dar lo mismo: indifference', html: '<i>Me da lo mismo lo que haga</i> states genuine indifference to the outcome, not agreement or approval.' },
+    { h: 'Por norma vs con normalidad', html: '<i>Por norma</i> states what usually/typically happens (leaving room for exceptions); <i>con normalidad</i> describes something proceeding without disruption, in its expected way.' }
+  ],
+  exponents: [
+    { es: 'Me da lo mismo lo que decidas.', en: "It's all the same to me what you decide.", register: 'coloquial' },
+    { es: 'Por norma, los informes llegan a tiempo.', en: 'As a rule, the reports arrive on time.', register: 'formal' },
+    { es: 'La reunión se desarrolló con normalidad.', en: 'The meeting proceeded normally.', register: 'formal' },
+    { es: 'Es un dato secundario, no fundamental.', en: "It's a secondary detail, not essential.", register: 'neutral' },
+    { es: 'Nos sorprendió mucho su reacción.', en: 'His reaction surprised us a lot.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Me parece bien tu decisión.', en: 'I think your decision is fine.', note: 'approval' },
+    { es: 'Me da lo mismo tu decisión.', en: "It's all the same to me, your decision.", note: 'indifference, not approval' }
+  ],
+  pitfalls: [
+    '<i>Dar lo mismo</i> is indifference, not agreement — do not use it as a polite way to say "yes, that\'s fine", which can come across as dismissive.',
+    '<i>Por norma</i> allows exceptions (it describes the usual case); <i>con normalidad</i> describes one specific event proceeding smoothly — they are not interchangeable.'
+  ],
+  examples: [
+    { es: 'La seguridad es fundamental en este trabajo.', en: 'Safety is fundamental in this job.' },
+    { es: 'Por norma, no respondo correos los domingos.', en: "As a rule, I don't reply to emails on Sundays." },
+    { es: 'Todo transcurrió con total normalidad.', en: 'Everything went completely smoothly.' }
+  ],
+  probes: [
+    { id: 'p:importanciaB2:darlomismo', kind: 'mcq', q: '"Me da lo mismo" significa...',
+      options: ['Estoy de acuerdo', 'No me importa el resultado', 'Me alegra mucho'], answer: 1 },
+    { id: 'p:importanciaB2:pornormavsnormalidad', kind: 'mcq', q: '¿Cuál admite excepciones?',
+      options: ['con normalidad', 'por norma', 'ninguna'], answer: 1 },
+    { id: 'p:importanciaB2:cloze', kind: 'cloze', text: 'La reunión transcurrió con toda ___. (normalidad)', accept: ['normalidad'] },
+    { id: 'p:importanciaB2:recall', kind: 'recall', front: '¿"Dar lo mismo" implica aprobación?', back: 'no — implica indiferencia' }
+  ]
+},
+
+{
+  id: 'nt-reflexion-conocimiento-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:1034', 'nociones_generales:B2:1037', 'nociones_generales:B2:1040', 'nociones_generales:B2:1041',
+         'nociones_generales:B2:1042', 'nociones_generales:B2:1044', 'nociones_generales:B2:1045'],
+  title: 'Reflexión y conocimiento: ocurrírsele, ser consciente de, enterarse',
+  summary: '"Ocurrírsele algo a alguien" puts the IDEA, not the thinker, in the grammatical driver\'s seat — a sudden thought arrives rather than being deliberately produced — while "ser consciente de" and "enterarse (de)" mark two different moments of coming to know something.',
+  sections: [
+    { h: 'Ocurrírsele: an idea arriving, gustar-pattern', html: '<i>Se me ocurrió una idea</i> — the idea is the grammatical subject, arriving TO the person, not produced deliberately by them.' },
+    { h: 'Creerse algo: believing, with a critical edge', html: '<i>Creerse algo</i> (reflexive) often implies believing something perhaps too readily, unlike neutral <i>creer</i>.' },
+    { h: 'Ser consciente de vs enterarse (de)', html: '<i>Ser consciente de</i> is an ongoing state of awareness; <i>enterarse (de)</i> is the specific MOMENT of finding something out.' },
+    { h: 'Analizar, reflexionar, plantear una duda', html: 'The verbs for the process of thinking something through and voicing a question about it.' }
+  ],
+  exponents: [
+    { es: 'Se me ocurrió una solución mientras dormía.', en: 'A solution came to me while I was sleeping.', register: 'neutral', note: 'ocurrírsele, gustar-pattern' },
+    { es: 'Es consciente de que se equivocó.', en: "He's aware that he made a mistake.", register: 'neutral' },
+    { es: 'Me enteré de la noticia por casualidad.', en: 'I found out about the news by chance.', register: 'coloquial' },
+    { es: 'Se cree que lo sabe todo.', en: 'He thinks he knows everything.', register: 'coloquial', note: 'creerse — believing, with a critical edge' },
+    { es: 'Reflexionó sobre su decisión durante días.', en: 'He reflected on his decision for days.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Es consciente del problema desde hace tiempo.', en: "He's been aware of the problem for a while.", note: 'an ongoing state' },
+    { es: 'Se enteró del problema ayer.', en: 'He found out about the problem yesterday.', note: 'the specific moment of finding out' }
+  ],
+  pitfalls: [
+    '<i>Ocurrírsele</i> takes the idea as its grammatical subject — <i>*yo ocurrí una idea</i> is wrong; it must be <i>se me ocurrió una idea</i>.',
+    '<i>Creerse</i> (reflexive) often carries a skeptical edge about the belief\'s validity — plain <i>creer</i> is neutral.'
+  ],
+  examples: [
+    { es: 'No se le ocurrió preguntar antes.', en: "It didn't occur to him to ask beforehand." },
+    { es: 'Nos enteramos tarde de la reunión.', en: 'We found out about the meeting too late.' },
+    { es: 'Planteó una duda muy interesante en clase.', en: 'She raised a very interesting question in class.' }
+  ],
+  probes: [
+    { id: 'p:reflexionconocB2:ocurrirsele', kind: 'mcq', q: '¿Cuál es el sujeto gramatical en "se me ocurrió una idea"?',
+      options: ['Yo', 'Una idea', 'Ninguno'], answer: 1 },
+    { id: 'p:reflexionconocB2:conscienteenterarse', kind: 'mcq', q: '¿Cuál describe el MOMENTO de descubrir algo?',
+      options: ['ser consciente de', 'enterarse de', 'reflexionar sobre'], answer: 1 },
+    { id: 'p:reflexionconocB2:cloze', kind: 'cloze', text: 'Se me ___ una idea buenísima. (ocurrir)', accept: ['ocurrió'] },
+    { id: 'p:reflexionconocB2:recall', kind: 'recall', front: '¿Qué matiz añade "creerse algo" frente a "creer algo"?', back: 'un matiz escéptico sobre la validez de la creencia' }
+  ]
+},
+
+{
+  id: 'nt-expresion-verbal-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  pcic: ['nociones_generales:B2:1063', 'nociones_generales:B2:1073', 'nociones_generales:B2:1074', 'nociones_generales:B2:1075',
+         'nociones_generales:B2:1076', 'nociones_generales:B2:1077', 'nociones_generales:B2:1078', 'nociones_generales:B2:1079'],
+  title: 'Expresión verbal: variar el verbo de habla más allá de "decir"',
+  summary: 'Reported speech gets far more precise once "decir" gives way to a specific reporting verb — "sugerir" implies a soft recommendation, "insistir en" implies repetition against resistance, "confesar" implies reluctant admission — each verb carrying information "decir" leaves flat.',
+  sections: [
+    { h: 'Suggesting and proposing', html: '<i>Sugerir, proponer</i> both suggest, with <i>proponer</i> slightly more formal/concrete, often with a specific plan attached.' },
+    { h: 'Insisting and confirming', html: '<i>Insistir (en)</i> implies repetition, often against resistance; <i>confirmar</i> removes doubt about something already suggested.' },
+    { h: 'Affirming, denying, confessing', html: '<i>Afirmar</i> (to state as fact), <i>negar</i> (to deny), <i>confesar</i> (to admit, often reluctantly) each carry a different relationship to the truth being reported.' },
+    { h: 'Structuring a longer piece of speech or writing', html: '<i>Introducir, concluir, resumir, subrayar, destacar</i> are the verbs for shaping an argument, not just reporting one utterance.' }
+  ],
+  exponents: [
+    { es: 'Sugirió que lo dejáramos para otro día.', en: 'She suggested we leave it for another day.', register: 'neutral' },
+    { es: 'Insistió en que la acompañáramos.', en: 'She insisted that we go with her.', register: 'neutral' },
+    { es: 'Al final confesó que había sido él.', en: 'In the end he confessed it had been him.', register: 'neutral' },
+    { es: 'El informe destaca tres problemas principales.', en: 'The report highlights three main problems.', register: 'formal' },
+    { es: 'Negó rotundamente haber estado allí.', en: 'He flatly denied having been there.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Dijo que lo haría.', en: 'He said he would do it.', note: 'decir — neutral, no extra information' },
+    { es: 'Prometió que lo haría.', en: 'He promised he would do it.', note: 'prometer — adds a commitment "decir" does not carry' }
+  ],
+  pitfalls: [
+    'Reaching only for <i>decir</i> in reported speech is a common flattening — a more specific verb (<i>sugerir, insistir, confesar</i>) carries information a reader expects, especially in writing.',
+    '<i>Confesar</i> implies reluctant or delayed admission — using it for a neutral statement overstates the reluctance.'
+  ],
+  examples: [
+    { es: 'Propuso una solución que a todos convenció.', en: 'She proposed a solution that convinced everyone.' },
+    { es: 'El presidente confirmó la noticia esta mañana.', en: 'The president confirmed the news this morning.' },
+    { es: 'El texto concluye con una reflexión personal.', en: 'The text concludes with a personal reflection.' }
+  ],
+  probes: [
+    { id: 'p:expresionverbalB2:matiz', kind: 'mcq', q: '¿Qué añade "confesar" que "decir" no añade?',
+      options: ['Nada', 'Una admisión reticente/tardía', 'Formalidad neutra'], answer: 1 },
+    { id: 'p:expresionverbalB2:insistir', kind: 'mcq', q: '¿Qué implica "insistir en"?',
+      options: ['Decirlo una sola vez', 'Repetirlo, a menudo contra resistencia', 'Negarlo'], answer: 1 },
+    { id: 'p:expresionverbalB2:cloze', kind: 'cloze', text: 'El informe ___ tres problemas principales. (destacar)', accept: ['destaca'] },
+    { id: 'p:expresionverbalB2:recall', kind: 'recall', front: '¿Por qué conviene variar el verbo de habla más allá de "decir"?', back: 'porque cada verbo aporta información que "decir" deja plana' }
+  ]
 }
 
 ];
