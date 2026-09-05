@@ -4160,6 +4160,177 @@ window.PASSAGES = [
     { type: 'short', q: '¿Cuántos meses después de comprarla se estropeó la lavadora? (una palabra)', accept: ['catorce'] },
     { type: 'translate', line: 'la garantía legal en España cubre dos años completos desde la compra', model: 'the legal warranty in Spain covers two full years from the date of purchase' }
   ]
+},
+
+/* Batch 3 of 8. */
+{
+  id: 'maraton-lesion-cuerpo-b2', title: 'Volver a correr después de la rotura', level: 6, theme: 'cuerpo',
+  text: 'Diez meses después de romperse el tendón de Aquiles en pleno entrenamiento, Julián volvió a cruzar la línea de salida de una carrera, aunque esta vez con expectativas mucho más modestas que antaño. La lesión, una de las más temidas entre corredores de fondo, había supuesto una operación quirúrgica, semanas enteras con la pierna inmovilizada y meses de rehabilitación antes de poder siquiera caminar con normalidad.\n\nDurante la fase más dura de la recuperación, Julián apenas podía apoyar el pie en el suelo sin sentir un dolor agudo que le recorría toda la pantorrilla. El fisioterapeuta le advirtió desde el principio que la impaciencia era, con diferencia, el mayor enemigo de una recuperación como esta: forzar el tendón demasiado pronto podía provocar una nueva rotura, esta vez posiblemente definitiva para su carrera deportiva.\n\nFísicamente, Julián reconoce que ya no es el mismo corredor de antes. Ha perdido buena parte de la musculatura que tenía en la pierna afectada, y su forma de pisar ha cambiado ligeramente para compensar una rigidez que probablemente nunca desaparecerá del todo. Sin embargo, insiste en que la lesión también le enseñó algo que años de entrenamiento exigente nunca le habían enseñado: a escuchar las señales de su propio cuerpo en lugar de ignorarlas sistemáticamente por ambición.\n\nAquella carrera de vuelta la terminó casi diez minutos más lento que su mejor marca personal, un tiempo que, antes de la lesión, le habría parecido decepcionante. Cruzó la meta sonriendo de todos modos, consciente de que el verdadero logro no tenía nada que ver con el cronómetro, sino con haber vuelto a ponerse en la línea de salida después de haber dudado, más de una vez, si volvería a correr en serio alguna vez.',
+  gloss: [
+    { es: 'el tendón de Aquiles', en: 'el tendón que une el músculo de la pantorrilla con el talón' },
+    { es: 'quirúrgico', en: 'relacionado con una operación realizada por un cirujano' },
+    { es: 'la pantorrilla', en: 'la parte trasera de la pierna, entre la rodilla y el tobillo' },
+    { es: 'la rigidez', en: 'la falta de flexibilidad o movimiento normal de una articulación' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué aprendió Julián a raíz de la lesión, según el texto?', options: ['A entrenar con más intensidad que antes', 'A prestar atención a las señales de su propio cuerpo', 'A dejar de correr definitivamente'], answer: 1 },
+    { type: 'mcq', q: '¿Qué actitud transmite Julián al cruzar la meta más lento que antes?', options: ['Frustración por el mal resultado', 'Satisfacción, centrada en haber vuelto a competir, no en el tiempo', 'Indiferencia total hacia la carrera'], answer: 1 },
+    { type: 'short', q: '¿Qué tendón se rompió Julián? (dos palabras)', accept: ['de aquiles', 'tendón de aquiles', 'el de aquiles'] },
+    { type: 'translate', line: 'El fisioterapeuta le advirtió desde el principio que la impaciencia era, con diferencia, el mayor enemigo de una recuperación como esta', model: 'The physiotherapist warned him from the start that impatience was, by far, the biggest enemy of a recovery like this one' }
+  ]
+},
+
+{
+  id: 'introvertido-retrato-caracter-b2', title: 'El silencio de Óscar no es timidez', level: 6, theme: 'caracter',
+  text: 'Quienes conocen a Óscar desde hace poco suelen confundir su silencio con timidez, o incluso con desinterés, pero quienes lo tratan desde hace años saben que se trata de algo bastante distinto. Óscar es, sencillamente, una persona profundamente introvertida: no le incomoda hablar en público cuando resulta necesario, pero necesita después largos periodos de soledad para recuperar la energía que ese tipo de situaciones le consume.\n\nEn una reunión de trabajo, mientras otros compañeros piensan en voz alta y van construyendo sus ideas sobre la marcha, Óscar prefiere escuchar primero, procesar toda la información en silencio, y solo entonces intervenir con una opinión ya bastante elaborada. Esto ha llevado, más de una vez, a que algunos jefes lo consideraran poco participativo, sin darse cuenta de que su forma de aportar simplemente sigue un ritmo distinto al de la mayoría.\n\nFuera del trabajo, Óscar tiene un grupo reducido de amigos con los que mantiene relaciones muy profundas, y evita sistemáticamente las fiestas multitudinarias que a otros les resultan estimulantes. Una noche de conversación tranquila con dos o tres personas le proporciona mucha más satisfacción que cualquier evento social masivo, por animado que este resulte para los demás asistentes.\n\nLo que distingue realmente a Óscar no es, por tanto, la falta de habilidades sociales, sino una forma distinta de gestionar su energía social: mientras que una persona extrovertida se recarga precisamente en compañía de otros, Óscar necesita la soledad para recuperarse, y el contacto social prolongado, por agradable que sea, termina agotándolo de una manera que a muchos les resulta difícil de comprender del todo.',
+  gloss: [
+    { es: 'introvertido', en: 'que prefiere la reflexión interior y necesita soledad para recuperar energía' },
+    { es: 'participativo', en: 'que interviene activamente y con frecuencia en una conversación o actividad' },
+    { es: 'multitudinario', en: 'que reúne a un gran número de personas' },
+    { es: 'recargarse (de energía)', en: 'recuperar fuerzas o energía' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué malentendido sufre Óscar frecuentemente, según el texto?', options: ['Que lo consideren extrovertido en exceso', 'Que confundan su introversión con timidez o desinterés', 'Que piensen que no tiene amigos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué distingue realmente a una persona introvertida como Óscar, según el texto?', options: ['La falta de habilidades sociales', 'La forma en que gestiona y recupera su energía social', 'La incapacidad de hablar en público'], answer: 1 },
+    { type: 'short', q: '¿Qué prefiere Óscar en una reunión antes de opinar? (una palabra)', accept: ['escuchar'] },
+    { type: 'translate', line: 'Óscar es, sencillamente, una persona profundamente introvertida', model: 'Óscar is, quite simply, a deeply introverted person' }
+  ]
+},
+
+{
+  id: 'torneo-ajedrez-ocio-b2', title: 'El torneo que casi no gana nadie', level: 6, theme: 'ocio',
+  text: 'Cuando se organizó el primer torneo de ajedrez del barrio, nadie esperaba que la final acabara decidiéndose, literalmente, por sorteo. Participaron cuarenta y dos vecinos de edades muy distintas, desde adolescentes que apenas conocían las reglas básicas hasta jubilados que llevaban jugando desde niños, y el formato elegido —eliminación directa a una sola partida— garantizaba sorpresas desde la primera ronda.\n\nLa gran sorpresa del torneo llegó en cuartos de final, cuando una chica de catorce años eliminó al que hasta entonces se consideraba favorito indiscutible, un jubilado que había jugado en competiciones federadas durante décadas. Ella misma reconoció después que ni siquiera esperaba ganar aquella partida, y que se limitó a jugar con calma mientras su rival, quizás confiado en exceso, cometía un error que ella supo aprovechar sin dudarlo.\n\nLa final, sin embargo, se complicó de una forma que nadie había previsto en el reglamento: tras casi tres horas de partida, ambos finalistas llegaron al límite de tiempo asignado con posiciones prácticamente idénticas de material, sin que ninguno lograra ninguna ventaja decisiva. El reglamento, redactado deprisa por los organizadores, no contemplaba ningún desempate para esa situación exacta.\n\nTras una breve deliberación entre los organizadores, y con el acuerdo explícito de ambos finalistas, se decidió resolver el empate lanzando una moneda al aire en mitad de la plaza, ante el aplauso y las risas de todos los espectadores presentes. El ganador, un adolescente de dieciséis años, admitió con humor que aquella era, con diferencia, la victoria menos merecida de toda su vida ajedrecística, aunque el trofeo, dijo entre risas, pesaba exactamente lo mismo que si la hubiera ganado jugando.',
+  gloss: [
+    { es: 'un sorteo', en: 'un método para decidir algo al azar, sin que dependa de habilidad' },
+    { es: 'eliminación directa', en: 'un formato de torneo en el que perder una partida supone quedar eliminado' },
+    { es: 'federado', en: 'inscrito oficialmente en una federación deportiva' },
+    { es: 'un desempate', en: 'un método para decidir un ganador cuando el resultado queda igualado' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué actitud muestran los finalistas ante la resolución por sorteo?', options: ['Indignación y protesta formal', 'Aceptación tranquila, incluso con humor', 'Rechazo absoluto a participar'], answer: 1 },
+    { type: 'mcq', q: '¿Qué sugiere la anécdota de la chica de catorce años sobre el favorito eliminado?', options: ['Que ella hizo trampas para ganar', 'Que el exceso de confianza del rival influyó en su derrota', 'Que el resultado fue arreglado de antemano'], answer: 1 },
+    { type: 'short', q: '¿Cómo se resolvió finalmente el empate en la final? (dos palabras)', accept: ['una moneda', 'lanzando una moneda', 'con una moneda'] },
+    { type: 'translate', line: 'Participaron cuarenta y dos vecinos de edades muy distintas', model: 'Forty-two neighbors of very different ages took part' }
+  ]
+},
+
+{
+  id: 'covivienda-mayores-vivienda-b2', title: 'Envejecer juntos, pero cada uno en su casa', level: 6, theme: 'vivienda',
+  text: 'A las afueras de Zaragoza, un grupo de veintiséis personas mayores de sesenta y cinco años ha construido, literalmente desde cero, una alternativa a la residencia tradicional y a la soledad del piso individual: una cooperativa de covivienda pensada específicamente para envejecer acompañado sin renunciar a la independencia. Cada residente tiene su propio apartamento privado, con cocina y baño completos, pero el edificio comparte también amplias zonas comunes: comedor colectivo, biblioteca, huerto y una sala de cuidados para quien lo necesite temporalmente.\n\nEl edificio se distribuye en tres plantas alrededor de un patio central luminoso, con pasillos anchos pensados para sillas de ruedas y andadores, y sin ningún escalón que pudiera suponer una barrera para la movilidad reducida. Los apartamentos individuales resultan más pequeños que una vivienda convencional, pero a cambio los residentes disfrutan de espacios comunes mucho más amplios de lo que cualquiera de ellos podría permitirse viviendo solo.\n\nLa decisión más importante, según cuentan varios de los fundadores del proyecto, no fue arquitectónica sino social: establecer desde el principio unas normas claras de convivencia y turnos rotatorios para las tareas compartidas, de manera que nadie sintiera que cargaba con más responsabilidad que los demás. Cada residente dedica unas horas semanales a tareas colectivas, desde cocinar para el grupo hasta organizar actividades culturales o gestionar pequeñas reparaciones del edificio.\n\nLo que más valoran quienes viven allí no es tanto el ahorro económico, que también existe, sino la sensación de tener vecinos con quienes de verdad se puede contar en caso de enfermedad o de soledad repentina, algo que muchos de ellos, tras enviudar o ver a sus hijos mudarse lejos, habían dejado de imaginar posible a esta edad.',
+  gloss: [
+    { es: 'una cooperativa de covivienda', en: 'un proyecto residencial en el que los vecinos comparten propiedad y espacios comunes' },
+    { es: 'un andador', en: 'un aparato de apoyo para caminar, usado por personas con movilidad reducida' },
+    { es: 'rotatorio', en: 'que cambia de persona por turnos, de forma organizada' },
+    { es: 'enviudar', en: 'perder al cónyuge por fallecimiento' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué distingue este proyecto de una residencia tradicional, según el texto?', options: ['Que combina independencia privada con vida comunitaria organizada', 'Que impone normas más estrictas que una residencia', 'Que no permite ninguna interacción entre vecinos'], answer: 0 },
+    { type: 'mcq', q: '¿Qué valoran más los residentes, según el último párrafo?', options: ['El ahorro económico, por encima de todo', 'Contar con vecinos de confianza ante la enfermedad o la soledad', 'La arquitectura moderna del edificio'], answer: 1 },
+    { type: 'short', q: '¿Cerca de qué ciudad está esta covivienda? (una palabra)', accept: ['zaragoza'] },
+    { type: 'translate', line: 'Cada residente tiene su propio apartamento privado, con cocina y baño completos', model: 'Each resident has their own private apartment, with a full kitchen and bathroom' }
+  ]
+},
+
+{
+  id: 'moda-rapida-compras-b2', title: '¿Merece la pena una camiseta de tres euros?', level: 7, theme: 'compras',
+  text: 'Se ha calculado que la industria textil produce hoy más del doble de prendas de ropa que hace apenas veinte años, impulsada en gran parte por el modelo conocido como "moda rápida": colecciones nuevas cada pocas semanas, precios extraordinariamente bajos, y una expectativa implícita de que cada prenda se use solo unas pocas veces antes de descartarse.\n\nLos defensores de este modelo argumentan que ha democratizado el acceso a la moda, permitiendo que personas con ingresos modestos vistan siguiendo tendencias que antes estaban reservadas a quienes podían permitirse ropa de diseñador. Es innegable que una camiseta de tres euros resulta, en términos puramente económicos, mucho más accesible que una alternativa producida de forma ética y sostenible, que fácilmente puede costar diez o veinte veces más.\n\nSin embargo, ese precio tan bajo esconde costes que el comprador final rara vez ve reflejados en la etiqueta. Diversas investigaciones periodísticas han documentado condiciones laborales precarias en fábricas textiles de varios países asiáticos, con jornadas extenuantes y salarios muy por debajo de lo necesario para cubrir necesidades básicas. A esto se suma el impacto ambiental: la industria textil genera, según distintas estimaciones, más emisiones de gases de efecto invernadero que los vuelos internacionales y el transporte marítimo combinados.\n\nNo se trata de sugerir que cada consumidor individual sea responsable de un sistema industrial global tan complejo, ni de negar que muchas familias dependen de esos precios bajos para vestir a sus hijos. Aun así, cada vez más voces dentro del propio sector textil defienden que comprar menos prendas, pero de mejor calidad y duración, terminaría resultando más barato a largo plazo, además de reducir de forma sustancial tanto el sufrimiento humano como el daño ambiental asociados a este modelo de consumo.',
+  gloss: [
+    { es: 'una prenda (de ropa)', en: 'cada pieza individual de vestimenta' },
+    { es: 'democratizar (el acceso a algo)', en: 'hacer que algo antes exclusivo esté disponible para mucha más gente' },
+    { es: 'extenuante', en: 'que agota física o mentalmente de forma extrema' },
+    { es: 'los gases de efecto invernadero', en: 'los gases que retienen el calor en la atmósfera y contribuyen al cambio climático' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué argumento a favor de la moda rápida reconoce el texto, aunque después lo matice?', options: ['Que reduce la contaminación ambiental', 'Que ha democratizado el acceso a la moda para rentas más bajas', 'Que mejora las condiciones laborales del sector'], answer: 1 },
+    { type: 'mcq', q: '¿Qué posición final adopta el texto sobre el consumo de ropa?', options: ['Defiende sin matices el modelo de moda rápida', 'Sugiere comprar menos prendas, pero de mejor calidad y duración', 'Propone prohibir legalmente la moda rápida'], answer: 1 },
+    { type: 'short', q: '¿Cómo se llama el modelo descrito en el texto? (dos palabras)', accept: ['moda rápida', 'moda rapida'] },
+    { type: 'translate', line: 'la industria textil produce hoy más del doble de prendas de ropa que hace apenas veinte años', model: 'the textile industry today produces more than double the clothing items it did barely twenty years ago' }
+  ]
+},
+
+{
+  id: 'como-se-hace-una-ley-politica-b2', title: 'El largo camino de una idea hasta convertirse en ley', level: 7, theme: 'politica',
+  text: 'Cuando un ciudadano piensa en cómo se aprueba una ley, suele imaginar un proceso relativamente sencillo: un partido propone una idea, el parlamento vota, y la idea se convierte automáticamente en norma vigente. La realidad, sin embargo, resulta considerablemente más larga y llena de etapas intermedias que rara vez aparecen reflejadas en un titular de prensa.\n\nTodo empieza con un anteproyecto de ley, normalmente redactado por el ministerio competente en la materia, que debe pasar primero por un proceso de consulta pública en el que cualquier ciudadano u organización puede presentar alegaciones. Solo después de incorporar, o rechazar de forma justificada, esas alegaciones, el texto se convierte formalmente en un proyecto de ley que el gobierno remite al parlamento.\n\nEn la cámara baja, el proyecto se divide en artículos que se debaten y votan, en ocasiones, uno por uno, mientras los distintos grupos parlamentarios presentan enmiendas para modificar aspectos concretos del texto. Una vez aprobado por la cámara baja, el proyecto pasa a la cámara alta, donde puede sufrir modificaciones adicionales, y solo entonces regresa a la primera cámara para una votación final sobre esos cambios.\n\nLo que muchos ciudadanos ignoran es que, incluso después de superar todas estas fases, una ley aprobada puede todavía ser recurrida ante el tribunal constitucional si algún grupo considera que vulnera derechos fundamentales, un proceso que puede alargar la incertidumbre legal durante meses o incluso años adicionales. Entre la idea inicial de un ministerio y la aplicación efectiva de la norma en la vida cotidiana de los ciudadanos, pueden llegar a transcurrir, sin ninguna anomalía en el proceso, más de dos años completos.',
+  gloss: [
+    { es: 'un anteproyecto de ley', en: 'el primer borrador oficial de una futura ley, antes de su tramitación formal' },
+    { es: 'una alegación', en: 'un argumento o una objeción que se presenta formalmente durante un proceso legal' },
+    { es: 'una enmienda', en: 'una propuesta de cambio a un texto legal en tramitación' },
+    { es: 'vulnerar (un derecho)', en: 'violar o no respetar un derecho reconocido legalmente' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué corrige el texto sobre la percepción habitual del proceso legislativo?', options: ['Que en realidad es mucho más simple de lo que parece', 'Que el proceso real es mucho más largo y con más etapas de lo que se suele imaginar', 'Que las leyes se aprueban sin ningún debate'], answer: 1 },
+    { type: 'mcq', q: '¿Qué puede ocurrir incluso después de que una ley supere todas las fases parlamentarias?', options: ['Nada, el proceso queda completamente cerrado', 'Puede ser recurrida ante el tribunal constitucional', 'El gobierno puede anularla sin más trámite'], answer: 1 },
+    { type: 'short', q: '¿Qué documento inicia el proceso, según el texto? (dos palabras)', accept: ['anteproyecto de ley', 'un anteproyecto de ley'] },
+    { type: 'translate', line: 'La realidad, sin embargo, resulta considerablemente más larga y llena de etapas intermedias que rara vez aparecen reflejadas en un titular de prensa', model: 'The reality, however, is considerably longer and full of intermediate stages that rarely make it into a news headline' }
+  ]
+},
+
+{
+  id: 'estafa-cripto-economia-b2', title: 'La inversión que prometía demasiado', level: 6, theme: 'economia',
+  text: 'Ramón llevaba meses viendo anuncios en redes sociales de una plataforma de inversión en criptomonedas que prometía rendimientos del quince por ciento mensual, una cifra que, como reconoce ahora con cierta vergüenza, debería haberle hecho sospechar desde el primer momento. Sin embargo, varios conocidos suyos ya habían invertido pequeñas cantidades y aseguraban estar recibiendo puntualmente los pagos prometidos.\n\nAnimado por esos testimonios, Ramón decidió invertir inicialmente mil doscientos euros, buena parte de sus ahorros disponibles en aquel momento. Durante los dos primeros meses, la plataforma cumplió exactamente lo prometido, transfiriéndole religiosamente los rendimientos anunciados a su cuenta bancaria, lo que reforzó completamente su confianza en el sistema.\n\nEnvalentonado por aquellos resultados iniciales, Ramón decidió pedir un pequeño préstamo personal para ampliar considerablemente su inversión, convencido de que estaba ante una oportunidad única que no podía dejar escapar. Fue precisamente entonces, apenas dos semanas después de ampliar su inversión, cuando la plataforma dejó de responder a los correos electrónicos, y su página web desapareció de internet sin ninguna explicación previa.\n\nLo que Ramón había vivido, según le explicó posteriormente la policía especializada en delitos económicos, era un esquema piramidal clásico: los primeros pagos se financian con el dinero de los inversores más recientes, precisamente para generar la confianza necesaria que anima a la gente a invertir sumas cada vez mayores, hasta que los organizadores desaparecen con el capital acumulado. Ramón perdió no solo sus ahorros iniciales, sino también el dinero del préstamo, y admite que lo más difícil de superar no fue tanto la pérdida económica en sí, sino aceptar cuánto se había dejado convencer por unos resultados que, mirados con perspectiva, resultaban evidentemente insostenibles.',
+  gloss: [
+    { es: 'el rendimiento (de una inversión)', en: 'la ganancia económica que produce una inversión' },
+    { es: 'envalentonado', en: 'que ha ganado confianza o atrevimiento tras un éxito previo' },
+    { es: 'un esquema piramidal', en: 'un fraude que paga a los primeros inversores con el dinero de los siguientes' },
+    { es: 'insostenible', en: 'que no puede mantenerse en el tiempo de forma realista' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué función cumplieron los primeros pagos recibidos por Ramón, según la explicación policial?', options: ['Eran ganancias reales generadas por inversión legítima', 'Servían para generar confianza y atraer inversiones mayores', 'Eran un error administrativo de la plataforma'], answer: 1 },
+    { type: 'mcq', q: '¿Qué es lo más difícil de aceptar para Ramón, según el texto?', options: ['La pérdida económica en sí misma', 'Haberse dejado convencer por resultados evidentemente insostenibles', 'La reacción de sus conocidos'], answer: 1 },
+    { type: 'short', q: '¿Cuánto invirtió Ramón inicialmente? (una cifra en euros)', accept: ['1200', 'mil doscientos euros', 'mil doscientos'] },
+    { type: 'translate', line: 'Ramón llevaba meses viendo anuncios en redes sociales de una plataforma de inversión en criptomonedas que prometía rendimientos del quince por ciento mensual', model: 'Ramón had spent months seeing social media ads for a cryptocurrency investment platform promising fifteen percent monthly returns' }
+  ]
+},
+
+{
+  id: 'impuesto-azucar-salud-b2', title: '¿Debería haber un impuesto sobre el azúcar?', level: 6, theme: 'salud',
+  text: 'Varios países han introducido en los últimos años un impuesto especial sobre las bebidas azucaradas, con el objetivo declarado de reducir su consumo y, con ello, la incidencia de obesidad y diabetes tipo dos entre la población. México, uno de los primeros países en aplicar esta medida en 2014, ofrece hoy uno de los conjuntos de datos más completos para evaluar si la estrategia realmente funciona.\n\nUn estudio publicado por investigadores del Instituto Nacional de Salud Pública mexicano concluyó que el consumo de bebidas azucaradas descendió aproximadamente un siete por ciento durante el segundo año tras la implantación del impuesto, con una caída todavía mayor entre los hogares de menores ingresos, precisamente el grupo más vulnerable a las enfermedades asociadas al exceso de azúcar.\n\nLos críticos de este tipo de impuestos sostienen, sin embargo, que penalizan desproporcionadamente a las familias con menos recursos económicos, para quienes cualquier subida de precio representa un porcentaje mayor de sus ingresos disponibles. También señalan que muchos consumidores simplemente sustituyen las bebidas gravadas por otras alternativas igualmente poco saludables que el impuesto no contempla, como ciertos zumos industriales con azúcares añadidos.\n\nLa evidencia disponible hasta ahora sugiere que un impuesto aislado, sin más medidas complementarias, difícilmente resuelve un problema de salud pública tan complejo como la obesidad. Los países donde el impuesto se ha combinado con etiquetado nutricional claro, restricciones a la publicidad dirigida a menores, y campañas educativas sostenidas, muestran resultados considerablemente mejores que aquellos que se han limitado únicamente a subir el precio en el punto de venta.',
+  gloss: [
+    { es: 'la incidencia (de una enfermedad)', en: 'la frecuencia con la que aparecen nuevos casos de una enfermedad' },
+    { es: 'penalizar', en: 'perjudicar o castigar de alguna forma, en este caso económicamente' },
+    { es: 'gravado', en: 'sujeto a un impuesto' },
+    { es: 'el etiquetado nutricional', en: 'la información sobre nutrientes que debe figurar en el envase de un alimento' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué matiz añade el texto sobre la eficacia del impuesto por sí solo?', options: ['Que resuelve por completo el problema de la obesidad', 'Que funciona mejor combinado con otras medidas complementarias', 'Que no tiene ningún efecto medible'], answer: 1 },
+    { type: 'mcq', q: '¿Qué crítica plantean los detractores del impuesto sobre bebidas azucaradas?', options: ['Que no reduce en absoluto el consumo', 'Que afecta desproporcionadamente a las familias con menos recursos', 'Que solo se aplica en países ricos'], answer: 1 },
+    { type: 'short', q: '¿En qué país se aplicó este impuesto por primera vez, según el texto? (una palabra)', accept: ['méxico', 'mexico'] },
+    { type: 'translate', line: 'México, uno de los primeros países en aplicar esta medida en 2014, ofrece hoy uno de los conjuntos de datos más completos para evaluar si la estrategia realmente funciona.', model: 'Mexico, one of the first countries to apply this measure in 2014, today offers one of the most complete data sets for evaluating whether the strategy really works.' }
+  ]
+},
+
+{
+  id: 'arte-urbano-vandalismo-arte-b2', title: '¿Arte urbano o vandalismo?', level: 6, theme: 'arte',
+  text: 'La pregunta de si una pintada en una pared constituye arte o vandalismo lleva décadas dividiendo a artistas, vecinos y autoridades municipales, sin que exista una respuesta única aplicable a todos los casos. La distinción, en la práctica, rara vez depende de criterios puramente estéticos, y tiene mucho más que ver con el consentimiento del propietario del muro y con el contexto legal en que se realiza la obra.\n\nSe entiende generalmente por arte urbano aquellas intervenciones realizadas con autorización explícita, ya sea del propietario del espacio o de un ayuntamiento que organiza festivales específicos para este tipo de expresión artística. En cambio, se clasifica como vandalismo cualquier intervención realizada sin consentimiento, independientemente de la calidad artística de la obra resultante, un matiz puramente legal que a menudo resulta contraintuitivo para el público general.\n\nAlgunos de los artistas urbanos más reconocidos internacionalmente empezaron precisamente pintando sin autorización, y varias de esas primeras obras, consideradas vandalismo en su momento, hoy se protegen legalmente como patrimonio artístico e incluso atraen turismo específico a los barrios donde se ubican. Esta paradoja ha llevado a algunos ayuntamientos a legalizar retroactivamente ciertas obras, mientras persiguen con dureza otras intervenciones de artistas menos conocidos, generando acusaciones de doble rasero.\n\nDetrás de este debate se esconde, en el fondo, una pregunta más amplia sobre quién tiene derecho a decidir qué imágenes ocupan el espacio público urbano: si únicamente el propietario legal de cada muro, o también la comunidad que convive diariamente con esas paredes. Ninguna legislación actual ofrece, por el momento, una respuesta completamente satisfactoria a esa tensión de fondo.',
+  gloss: [
+    { es: 'una pintada', en: 'un dibujo o texto pintado, normalmente en una pared, sin usar técnicas de pincel formal' },
+    { es: 'el vandalismo', en: 'el daño intencionado a una propiedad pública o privada' },
+    { es: 'contraintuitivo', en: 'que va en contra de lo que parecería lógico a primera vista' },
+    { es: 'un doble rasero', en: 'aplicar criterios distintos e injustos a casos similares' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿De qué depende realmente, según el texto, que algo se considere arte o vandalismo?', options: ['Únicamente de la calidad estética de la obra', 'Del consentimiento legal para realizar la obra, no de su calidad', 'De la opinión mayoritaria de los vecinos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué paradoja señala el texto sobre algunos artistas urbanos reconocidos?', options: ['Que nunca pintaron sin autorización', 'Que obras antes consideradas vandalismo hoy se protegen como patrimonio', 'Que todos sus trabajos fueron legales desde el principio'], answer: 1 },
+    { type: 'short', q: '¿Qué genera la legalización retroactiva de unas obras y no de otras, según el texto? (dos palabras)', accept: ['doble rasero', 'acusaciones de doble rasero'] },
+    { type: 'translate', line: 'Se entiende generalmente por arte urbano aquellas intervenciones realizadas con autorización explícita', model: 'Urban art is generally understood to mean interventions carried out with explicit authorization' }
+  ]
+},
+
+{
+  id: 'voluntarios-reforestacion-naturaleza-b2', title: 'Los árboles que plantamos después del incendio', level: 6, theme: 'naturaleza',
+  text: 'Un año después de que un incendio forestal arrasara casi dos mil hectáreas de monte en la sierra, un grupo de voluntarios organizados a través de una asociación ambiental local ha empezado a replantar la zona con especies autóctonas seleccionadas cuidadosamente para resistir mejor futuros incendios. La actividad, que se repite cada fin de semana desde hace tres meses, ha reunido ya a más de trescientas personas de edades muy distintas.\n\nA diferencia de repoblaciones anteriores en la misma zona, que utilizaron principalmente pino, esta vez los técnicos forestales han priorizado especies como la encina y el roble, más resistentes al fuego y capaces de retener mejor la humedad del suelo durante los meses más secos del verano. Cada voluntario planta, en una jornada típica, entre quince y veinte árboles jóvenes, siguiendo instrucciones precisas sobre profundidad y distancia entre ejemplares.\n\nMaría, coordinadora del proyecto, reconoce que la reforestación por sí sola no basta para prevenir incendios futuros: sin un mantenimiento continuado del monte, con limpieza periódica de maleza y vigilancia activa durante los meses de mayor riesgo, los árboles recién plantados corren el mismo peligro que corrió el bosque original. Por eso, la asociación ha organizado también turnos de vigilancia voluntaria durante la temporada estival, coordinados directamente con los servicios oficiales de bomberos forestales.\n\nLos técnicos calculan que los árboles plantados este año necesitarán entre diez y quince años para alcanzar un tamaño que ofrezca una protección real contra la erosión del suelo, un plazo que muchos de los voluntarios más jóvenes, animados por María durante cada jornada, insisten en que vale absolutamente la pena esperar, aunque ellos mismos sean ya adultos para cuando el bosque recupere su aspecto anterior al incendio.',
+  gloss: [
+    { es: 'una repoblación (forestal)', en: 'la acción de plantar árboles nuevos en una zona deforestada' },
+    { es: 'autóctono', en: 'propio u originario de una región concreta' },
+    { es: 'la maleza', en: 'la vegetación baja y descontrolada que crece de forma natural' },
+    { es: 'la erosión (del suelo)', en: 'el desgaste o la pérdida de tierra fértil, a menudo por lluvia o viento' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué se han elegido encinas y robles en lugar de pinos, según el texto?', options: ['Porque crecen más rápido que los pinos', 'Porque resisten mejor el fuego y retienen mejor la humedad', 'Porque son más baratos de conseguir'], answer: 1 },
+    { type: 'mcq', q: '¿Qué advierte María sobre la reforestación por sí sola?', options: ['Que es suficiente sin ninguna medida adicional', 'Que necesita mantenimiento continuado para evitar un nuevo incendio', 'Que no tiene ningún efecto real sobre el bosque'], answer: 1 },
+    { type: 'short', q: '¿Cuántos voluntarios han participado hasta ahora, aproximadamente? (una cifra)', accept: ['300', 'trescientos', 'más de trescientos'] },
+    { type: 'translate', line: 'Un año después de que un incendio forestal arrasara casi dos mil hectáreas de monte en la sierra', model: 'A year after a forest fire devastated nearly two thousand hectares of woodland in the mountains' }
+  ]
 }
 
 ];
