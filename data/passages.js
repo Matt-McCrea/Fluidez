@@ -4331,6 +4331,177 @@ window.PASSAGES = [
     { type: 'short', q: '¿Cuántos voluntarios han participado hasta ahora, aproximadamente? (una cifra)', accept: ['300', 'trescientos', 'más de trescientos'] },
     { type: 'translate', line: 'Un año después de que un incendio forestal arrasara casi dos mil hectáreas de monte en la sierra', model: 'A year after a forest fire devastated nearly two thousand hectares of woodland in the mountains' }
   ]
+},
+
+/* Batch 4 of 8. */
+{
+  id: 'profesor-jubilado-educacion-b2', title: 'El profesor que nunca quiso jubilarse', level: 6, theme: 'educacion',
+  text: 'Don Alberto cumplió setenta años el mes pasado, y todavía da clase de matemáticas tres días por semana en el mismo instituto público donde lleva enseñando desde hace cuarenta y dos años. Podría haberse jubilado hace ya una década, con una pensión completa y sin ninguna obligación de seguir trabajando, pero cada vez que se lo plantea llega a la misma conclusión: no sabría qué hacer con tantas horas libres.\n\nSus alumnos actuales, nacidos en un mundo completamente digital, suelen sorprenderse al descubrir que don Alberto explica trigonometría exactamente con la misma tiza y la misma pizarra que usaba cuando empezó a dar clases, mucho antes de que existieran las pizarras digitales que hoy equipan la mayoría de las aulas. Él mismo bromea diciendo que si algo funciona, no ve ninguna razón urgente para cambiarlo solo porque haya aparecido una tecnología más moderna.\n\nLo que verdaderamente distingue a don Alberto, según coinciden generaciones enteras de antiguos alumnos, no es su método tradicional, sino su memoria excepcional para recordar los nombres y las circunstancias personales de casi todos los estudiantes que ha tenido a lo largo de más de cuatro décadas. Muchos exalumnos, ya convertidos en adultos con hijos propios, siguen visitándolo cada cierto tiempo, simplemente para contarle cómo les ha ido en la vida.\n\nCuando alguien le pregunta directamente por qué sigue enseñando a una edad en la que la mayoría de sus antiguos compañeros llevan años disfrutando de la jubilación, don Alberto responde siempre lo mismo: mientras siga entendiendo la trigonometría mejor que sus alumnos, y mientras alguno de ellos siga necesitando que se la expliquen, no encuentra ningún motivo razonable para dejar de hacerlo.',
+  gloss: [
+    { es: 'jubilarse', en: 'dejar de trabajar de forma definitiva al alcanzar la edad correspondiente' },
+    { es: 'una pensión', en: 'el dinero que recibe mensualmente una persona jubilada' },
+    { es: 'la tiza', en: 'el material blanco que se usa para escribir en una pizarra tradicional' },
+    { es: 'un exalumno', en: 'una persona que fue alumna de un centro o profesor en el pasado' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué distingue realmente a don Alberto, según sus antiguos alumnos?', options: ['Su uso de tecnología moderna en el aula', 'Su memoria excepcional para recordar a cada estudiante', 'Su severidad como profesor'], answer: 1 },
+    { type: 'mcq', q: '¿Qué actitud transmite don Alberto hacia la jubilación?', options: ['La rechaza porque necesita el dinero', 'No le atrae porque no sabría qué hacer con tanto tiempo libre', 'Está esperando la primera oportunidad para jubilarse'], answer: 1 },
+    { type: 'short', q: '¿Cuántos años lleva don Alberto enseñando en el mismo instituto? (una cifra)', accept: ['42', 'cuarenta y dos'] },
+    { type: 'translate', line: 'mientras siga entendiendo la trigonometría mejor que sus alumnos, y mientras alguno de ellos siga necesitando que se la expliquen, no encuentra ningún motivo razonable para dejar de hacerlo', model: 'as long as he keeps understanding trigonometry better than his students, and as long as one of them still needs it explained to them, he finds no reasonable reason to stop' }
+  ]
+},
+
+{
+  id: 'trasplante-donante-salud-b2', title: 'La llamada que cambió dos vidas', level: 6, theme: 'salud',
+  text: 'A las tres de la madrugada, el teléfono de Elena sonó con una llamada que llevaba dos años esperando: había aparecido un riñón compatible, y debía presentarse en el hospital en menos de dos horas. Llevaba ese tiempo en diálisis tres veces por semana, un tratamiento que le permitía sobrevivir pero que había reducido drásticamente su calidad de vida cotidiana.\n\nEl órgano procedía de un donante fallecido esa misma noche en un accidente de tráfico en otra provincia, cuya familia había autorizado la donación pocas horas después de recibir la noticia más dura de su vida. Elena nunca llegaría a conocer la identidad exacta del donante, siguiendo el protocolo habitual de anonimato que rige este tipo de trasplantes en España, aunque sí pudo enviar posteriormente una carta anónima de agradecimiento a través del hospital.\n\nLa operación duró poco más de cuatro horas y transcurrió sin ninguna complicación relevante. Al despertar de la anestesia, Elena recuerda haber sentido, antes incluso de sentir dolor alguno, una sensación extraña de alivio físico que no supo explicar del todo hasta que, días después, los análisis confirmaron que el nuevo riñón funcionaba perfectamente.\n\nHoy, casi dos años después del trasplante, Elena ha retomado su trabajo a tiempo completo y ya no necesita ningún tipo de diálisis. España mantiene desde hace más de tres décadas una de las tasas de donación de órganos más altas del mundo, un resultado que los especialistas atribuyen, sobre todo, al sistema de consentimiento presunto y a la labor discreta de miles de coordinadores hospitalarios que, como en el caso de Elena, logran que una tragedia ajena se convierta, para otra familia, en la mejor noticia posible.',
+  gloss: [
+    { es: 'la diálisis', en: 'un tratamiento médico que filtra la sangre cuando los riñones no funcionan bien' },
+    { es: 'un donante', en: 'una persona que da voluntariamente un órgano o tejido para un trasplante' },
+    { es: 'el anonimato', en: 'la condición de que la identidad de alguien permanezca desconocida' },
+    { es: 'el consentimiento presunto', en: 'un sistema legal en el que se asume que alguien acepta donar, salvo que exprese lo contrario' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué explica, según el texto, la alta tasa de donación de órganos en España?', options: ['La escasez de hospitales privados', 'El sistema de consentimiento presunto y la labor de los coordinadores', 'Una ley que obliga a donar a toda la población'], answer: 1 },
+    { type: 'mcq', q: '¿Qué protocolo sigue España respecto a la identidad del donante?', options: ['Se revela siempre al receptor', 'Se mantiene en el anonimato', 'Depende de la decisión del hospital en cada caso'], answer: 1 },
+    { type: 'short', q: '¿Qué órgano recibió Elena? (una palabra)', accept: ['riñón', 'rinon', 'un riñón'] },
+    { type: 'translate', line: 'Llevaba ese tiempo en diálisis tres veces por semana, un tratamiento que le permitía sobrevivir pero que había reducido drásticamente su calidad de vida cotidiana', model: 'She had spent that whole time on dialysis three times a week, a treatment that let her survive but had drastically reduced her everyday quality of life' }
+  ]
+},
+
+{
+  id: 'trenes-nocturnos-viajes-b2', title: 'El regreso de los trenes nocturnos', level: 6, theme: 'viajes',
+  text: 'Durante los años noventa y dos mil, la mayoría de las líneas de trenes nocturnos que atravesaban Europa fueron desapareciendo progresivamente, incapaces de competir en precio y en tiempo de viaje frente a los vuelos de bajo coste que proliferaron en la misma época. Sin embargo, en los últimos años, varias compañías ferroviarias europeas han empezado a recuperar e incluso a ampliar este tipo de servicio, apostando por un público dispuesto a viajar más despacio a cambio de reducir su huella de carbono.\n\nUn trayecto nocturno típico permite salir de una gran ciudad después de cenar y llegar a otra, a cientos de kilómetros de distancia, justo a tiempo para desayunar, sin necesidad de reservar una noche de hotel adicional ni de madrugar para llegar a un aeropuerto alejado del centro urbano. Para muchos viajeros, especialmente los más preocupados por el impacto ambiental de volar, esta combinación resulta cada vez más atractiva, aunque el billete siga costando, en la mayoría de los casos, bastante más que un vuelo equivalente.\n\nLos operadores ferroviarios reconocen que la rentabilidad económica de estas líneas sigue siendo, en el mejor de los casos, ajustada, y que varias rutas solo se sostienen gracias a subvenciones públicas destinadas a fomentar alternativas de transporte menos contaminantes. Aun así, la demanda ha superado sistemáticamente las previsiones iniciales en casi todas las rutas relanzadas, hasta el punto de que algunas compañías han tenido que ampliar la capacidad de sus trenes apenas unos meses después de su reestreno.\n\nLos defensores del tren nocturno insisten en que su atractivo va más allá de lo puramente ecológico o económico: dormir mientras se viaja permite aprovechar horas que de otro modo se perderían, y despertarse ya en el destino, mirando por la ventanilla un paisaje completamente distinto al de la noche anterior, ofrece una experiencia que ningún vuelo, por rápido que sea, puede replicar.',
+  gloss: [
+    { es: 'ferroviario', en: 'relacionado con los trenes y las vías del tren' },
+    { es: 'la huella de carbono', en: 'la cantidad de gases de efecto invernadero que produce una actividad concreta' },
+    { es: 'una subvención', en: 'una ayuda económica pública destinada a apoyar una actividad' },
+    { es: 'relanzado', en: 'que vuelve a ponerse en marcha después de haber sido interrumpido' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué motivó originalmente la desaparición de los trenes nocturnos en Europa?', options: ['La falta de interés de los viajeros por dormir en tren', 'La competencia de los vuelos de bajo coste', 'Problemas técnicos con las vías ferroviarias'], answer: 1 },
+    { type: 'mcq', q: '¿Qué sugiere el texto sobre la rentabilidad actual de estas líneas?', options: ['Que generan grandes beneficios sin ayuda pública', 'Que dependen en buena parte de subvenciones para mantenerse', 'Que ya no reciben ningún tipo de apoyo estatal'], answer: 1 },
+    { type: 'short', q: '¿Qué permite ahorrar un trayecto nocturno, según el texto? (dos palabras)', accept: ['una noche', 'una noche de hotel'] },
+    { type: 'translate', line: 'Un trayecto nocturno típico permite salir de una gran ciudad después de cenar y llegar a otra, a cientos de kilómetros de distancia, justo a tiempo para desayunar', model: 'A typical overnight journey lets you leave a big city after dinner and arrive in another one, hundreds of kilometers away, just in time for breakfast' }
+  ]
+},
+
+{
+  id: 'ermitano-monasterio-religion-b2', title: 'El último ermitaño del valle', level: 6, theme: 'religion',
+  text: 'A sus ochenta y tres años, el hermano Anselmo es el único monje que queda en un monasterio que, en su momento de mayor esplendor durante el siglo pasado, llegó a albergar a más de cuarenta religiosos. La orden decidió hace tres años que, cuando él falleciera, el edificio pasaría a manos de una fundación cultural, que lo convertiría en centro de estudios sobre patrimonio monástico, ya que ningún novicio se había incorporado a la comunidad en más de dos décadas.\n\nAnselmo entró en el monasterio a los diecinueve años, convencido entonces de que dedicaría toda su vida a la oración comunitaria rodeado de decenas de hermanos. Nunca imaginó que acabaría sus días prácticamente solo, ocupándose él mismo de tareas que antes se repartían entre toda la comunidad: cocinar, mantener la huerta, atender a los escasos visitantes que todavía suben hasta el valle y, sobre todo, sostener en solitario los rezos que antes se cantaban a varias voces.\n\nCuando le preguntan si se siente solo, Anselmo responde que la soledad física no equivale necesariamente a la soledad espiritual que algunos imaginan. Reconoce, eso sí, que echa de menos el sonido de otras voces cantando junto a la suya durante los oficios religiosos, algo que ningún silencio, por profundo que sea, logra sustituir del todo.\n\nUna periodista que visitó recientemente el monasterio le preguntó qué ocurriría con las tradiciones y los rituales concretos de esa comunidad una vez que él ya no estuviera. Anselmo respondió, sin ninguna tristeza aparente en la voz, que probablemente se perderían, como se han perdido tantas otras cosas a lo largo de la historia, y que aceptar esa pérdida, sin aferrarse a ella con angustia, formaba parte también de la vida que había elegido hacía más de sesenta años.',
+  gloss: [
+    { es: 'un ermitaño', en: 'una persona que vive sola, apartada del mundo, normalmente por motivos religiosos' },
+    { es: 'un novicio', en: 'una persona que se está formando para entrar de forma definitiva en una orden religiosa' },
+    { es: 'un oficio (religioso)', en: 'una ceremonia religiosa comunitaria, con oraciones y cánticos' },
+    { es: 'aferrarse (a algo)', en: 'resistirse a soltar o abandonar algo con fuerza' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué distinción hace Anselmo entre soledad física y soledad espiritual?', options: ['Afirma que son exactamente lo mismo', 'Sugiere que no equivalen necesariamente la una a la otra', 'Niega sentir cualquier tipo de soledad'], answer: 1 },
+    { type: 'mcq', q: '¿Qué actitud muestra Anselmo ante la posible desaparición de las tradiciones del monasterio?', options: ['Angustia y resistencia total', 'Una aceptación serena, sin aferrarse con angustia', 'Indiferencia absoluta hacia el asunto'], answer: 1 },
+    { type: 'short', q: '¿A qué edad entró Anselmo en el monasterio? (una cifra)', accept: ['19', 'diecinueve'] },
+    { type: 'translate', line: 'Nunca imaginó que acabaría sus días prácticamente solo, ocupándose él mismo de tareas que antes se repartían entre toda la comunidad', model: 'He never imagined he would end his days practically alone, handling by himself tasks that used to be shared among the whole community' }
+  ]
+},
+
+{
+  id: 'restauracion-mural-arte-b2', title: 'Descubrir un mural bajo veinte capas de pintura', level: 6, theme: 'arte',
+  text: 'Durante unas obras rutinarias de reforma en un antiguo edificio municipal, los operarios encontraron algo que nadie esperaba: bajo casi veinte capas sucesivas de pintura blanca, aplicadas a lo largo de un siglo entero de reformas administrativas, apareció un mural completo pintado directamente sobre la pared, probablemente encargado a comienzos del siglo veinte y olvidado después por completo.\n\nEl ayuntamiento contrató de inmediato a un equipo de restauradores especializados en pintura mural, conscientes de que cualquier error en el proceso de retirada de las capas superpuestas podría destruir definitivamente la obra original. El trabajo, que se calculó inicialmente en unos tres meses, acabó extendiéndose durante casi un año entero, ya que cada capa debía retirarse manualmente con disolventes específicos, milímetro a milímetro, bajo la supervisión constante de un historiador del arte.\n\nLo que finalmente emergió tras meses de trabajo minucioso fue una escena alegórica que representaba el progreso industrial de la ciudad, con obreros, maquinaria y edificios que ya no existen representados con un estilo que los expertos han logrado relacionar con un pintor local relativamente desconocido fuera de la región. Ningún documento municipal conservado mencionaba la existencia de este mural, y solo gracias a un archivo personal de un antiguo funcionario municipal se pudo confirmar aproximadamente la fecha y la autoría probable de la obra.\n\nEl ayuntamiento ha decidido abrir el edificio al público durante varios fines de semana al mes, específicamente para que los vecinos puedan contemplar una obra que, durante generaciones enteras, estuvo literalmente delante de sus ojos sin que nadie sospechara jamás su existencia bajo tantas capas de pintura administrativa.',
+  gloss: [
+    { es: 'un mural', en: 'una pintura realizada directamente sobre una pared o un muro' },
+    { es: 'un restaurador', en: 'un profesional especializado en recuperar obras de arte deterioradas' },
+    { es: 'un disolvente', en: 'una sustancia química usada para eliminar pintura u otros materiales' },
+    { es: 'alegórico', en: 'que representa una idea abstracta mediante figuras o escenas simbólicas' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué se alargó tanto el proceso de restauración, según el texto?', options: ['Por falta de presupuesto municipal', 'Porque cada capa debía retirarse manualmente y con mucho cuidado', 'Porque el ayuntamiento cambió de opinión varias veces'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo se confirmó finalmente la fecha aproximada del mural?', options: ['Mediante documentos oficiales del ayuntamiento', 'A través de un archivo personal de un antiguo funcionario', 'Nunca llegó a confirmarse con certeza'], answer: 1 },
+    { type: 'short', q: '¿Cuántas capas de pintura cubrían el mural, aproximadamente? (una cifra)', accept: ['veinte', '20', 'casi veinte'] },
+    { type: 'translate', line: 'bajo casi veinte capas sucesivas de pintura blanca, aplicadas a lo largo de un siglo entero de reformas administrativas, apareció un mural completo pintado directamente sobre la pared', model: 'under almost twenty successive layers of white paint, applied over an entire century of administrative renovations, a complete mural painted directly on the wall appeared' }
+  ]
+},
+
+{
+  id: 'reclamacion-vuelo-servicios-b2', title: 'Cuatrocientos euros por un vuelo cancelado', level: 6, theme: 'servicios',
+  text: 'Cuando el vuelo de Teresa entre Madrid y Bruselas se canceló apenas dos horas antes del embarque, la aerolínea le ofreció, sin mayor explicación, un billete alternativo para tres días después. Lo que la propia aerolínea no mencionó en ningún momento fue que, según la normativa europea, Teresa tenía derecho a una compensación económica automática que podía alcanzar los cuatrocientos euros, dependiendo de la distancia del vuelo y del motivo concreto de la cancelación.\n\nLa normativa comunitaria establece que las aerolíneas deben compensar a los pasajeros cuando una cancelación se produce con menos de catorce días de antelación, salvo que se deba a lo que la ley denomina "circunstancias extraordinarias": condiciones meteorológicas severas, huelgas ajenas a la propia aerolínea, o riesgos de seguridad imprevisibles. En este caso concreto, la cancelación se debió a un problema técnico de la aeronave, un motivo que la normativa no reconoce como extraordinario, precisamente porque se considera parte del riesgo operativo habitual de cualquier compañía aérea.\n\nTeresa presentó la reclamación directamente a través del formulario oficial de la aerolínea, adjuntando su tarjeta de embarque original y una captura de pantalla del correo electrónico donde se le comunicaba la cancelación. La aerolínea rechazó inicialmente la reclamación, alegando de forma genérica "causas operativas imprevistas", una expresión ambigua que, según había leído Teresa previamente, las compañías utilizan con frecuencia con la esperanza de que el pasajero no insista.\n\nTeresa no se conformó con esa primera respuesta, y volvió a presentar la reclamación, esta vez citando expresamente el reglamento europeo aplicable y adjuntando registros públicos que demostraban que el avión llevaba en tierra por mantenimiento desde el día anterior. Seis semanas después, recibió finalmente el ingreso completo de los cuatrocientos euros, junto con una disculpa formal por escrito.',
+  gloss: [
+    { es: 'el embarque', en: 'el momento de subir a un avión, tren o barco antes de un viaje' },
+    { es: 'la antelación', en: 'el tiempo que transcurre antes de que ocurra algo previsto' },
+    { es: 'una aeronave', en: 'un avión u otro vehículo capaz de volar' },
+    { es: 'conformarse (con algo)', en: 'aceptar algo sin protestar más, aunque no sea del todo satisfactorio' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué no se consideró "extraordinaria" la cancelación del vuelo de Teresa?', options: ['Porque fue causada por el mal tiempo', 'Porque el problema técnico se considera parte del riesgo operativo habitual', 'Porque la aerolínea lo decidió arbitrariamente'], answer: 1 },
+    { type: 'mcq', q: '¿Qué estrategia parece atribuir el texto a la respuesta inicial de la aerolínea?', options: ['Un error administrativo involuntario', 'Una expresión ambigua usada con la esperanza de que el pasajero no insista', 'Un reconocimiento honesto del derecho de Teresa'], answer: 1 },
+    { type: 'short', q: '¿Cuánto tiempo tardó Teresa en recibir la compensación? (dos palabras)', accept: ['seis semanas'] },
+    { type: 'translate', line: 'Teresa presentó la reclamación directamente a través del formulario oficial de la aerolínea, adjuntando su tarjeta de embarque original y una captura de pantalla del correo electrónico', model: 'Teresa filed the claim directly through the airline\'s official form, attaching her original boarding pass and a screenshot of the email' }
+  ]
+},
+
+{
+  id: 'segunda-mano-compras-b2', title: 'Comprar ropa usada dejó de ser un tabú', level: 6, theme: 'compras',
+  text: 'Hace apenas una década, comprar ropa de segunda mano se asociaba todavía, para buena parte de la población, con la necesidad económica más que con una elección deliberada de consumo. Hoy, sin embargo, las tiendas de ropa usada y las aplicaciones especializadas en compraventa entre particulares han experimentado un crecimiento que ningún analista del sector había anticipado con tanta claridad hace apenas cinco años.\n\nUna encuesta reciente entre consumidores menores de treinta años reveló que casi la mitad había comprado ropa de segunda mano durante el último año, y que la mayoría de ellos lo hacía por motivos que combinaban la preocupación ambiental con el simple deseo de encontrar prendas originales que nadie más en su entorno llevara puestas. Para esta generación, señalan varios estudios de mercado, la ropa usada ha dejado de percibirse como una alternativa forzada por falta de recursos, para convertirse en una opción deliberadamente preferida frente a la ropa nueva.\n\nLas propias marcas de moda tradicionales han empezado a reaccionar ante este cambio de mentalidad, algunas lanzando sus propias plataformas de reventa de prendas usadas de su propia marca, y otras incorporando directamente secciones de ropa reacondicionada dentro de sus tiendas físicas habituales. Esta estrategia responde tanto a una demanda genuina de los consumidores como a la necesidad de mejorar una imagen de marca cada vez más cuestionada por su impacto ambiental.\n\nAún queda por ver si esta tendencia se consolidará a largo plazo o si, como ha ocurrido con otras modas de consumo consciente, acabará perdiendo fuerza una vez que la novedad social deje de resultar atractiva. Por el momento, sin embargo, los datos disponibles apuntan hacia un cambio genuino y duradero en la forma en que al menos una generación entera entiende la relación entre el precio, la originalidad y el impacto ambiental de lo que decide vestir.',
+  gloss: [
+    { es: 'un tabú', en: 'un tema o comportamiento que socialmente se evita o se considera incómodo' },
+    { es: 'reacondicionado', en: 'reparado o mejorado para poder volver a usarse o venderse' },
+    { es: 'consolidarse (una tendencia)', en: 'volverse estable y duradera con el tiempo' },
+    { es: 'duradero', en: 'que se mantiene durante mucho tiempo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo ha cambiado la percepción de la ropa de segunda mano, según el texto?', options: ['Sigue asociándose exclusivamente a la necesidad económica', 'Ha pasado de ser una necesidad a una elección deliberada de consumo', 'Ha desaparecido completamente como opción de compra'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo han reaccionado las marcas de moda tradicionales ante este cambio?', options: ['Ignorándolo por completo', 'Lanzando sus propias plataformas de reventa o secciones de ropa usada', 'Prohibiendo la reventa de sus prendas'], answer: 1 },
+    { type: 'short', q: '¿Qué porcentaje aproximado de jóvenes había comprado ropa usada, según la encuesta? (una palabra)', accept: ['la mitad', 'casi la mitad'] },
+    { type: 'translate', line: 'Para esta generación, señalan varios estudios de mercado, la ropa usada ha dejado de percibirse como una alternativa forzada por falta de recursos', model: 'For this generation, several market studies point out, used clothing is no longer seen as an alternative forced by a lack of resources' }
+  ]
+},
+
+{
+  id: 'gemelas-separadas-identidad-b2', title: 'Crecer separadas sin saberlo', level: 6, theme: 'identidad',
+  text: 'Hasta los veintisiete años, Marina creyó ser hija única, y solo un análisis genético contratado por simple curiosidad reveló la existencia de una hermana gemela de la que nadie en su familia adoptiva le había hablado jamás. Ambas habían sido separadas al nacer y adoptadas por familias distintas, sin que ninguna de las dos supiera de la existencia de la otra hasta ese momento.\n\nEl primer contacto entre ambas se produjo a través de la propia plataforma de análisis genético, que las conectó automáticamente al detectar una coincidencia genética del cien por cien. Marina recuerda haber sentido una mezcla de incredulidad y vértigo al leer el mensaje inicial, convencida durante varios minutos de que se trataba de algún tipo de error técnico del sistema.\n\nCuando finalmente se conocieron en persona, tres semanas después de aquel primer contacto, ambas quedaron sorprendidas por la cantidad de coincidencias que compartían más allá del parecido físico evidente: idéntico sentido del humor, la misma reacción poco común a ciertos alimentos, y hasta gestos casi idénticos al hablar, a pesar de haber crecido en ciudades distintas y en familias con valores bastante diferentes entre sí.\n\nLos investigadores que estudian a gemelos separados al nacer llevan décadas documentando este tipo de coincidencias, que apuntan a una influencia genética en rasgos de personalidad mucho mayor de lo que la mayoría de la gente asume intuitivamente. Marina y su hermana recién descubierta, sin embargo, insisten en que lo que más valoran de su reencuentro no son tanto esas coincidencias curiosas, sino la sensación, completamente nueva para ambas, de tener a alguien en el mundo que comparte con ellas algo que ninguna otra relación puede replicar del todo.',
+  gloss: [
+    { es: 'gemelo/a', en: 'cada uno de dos hermanos nacidos del mismo parto y, en este caso, idénticos genéticamente' },
+    { es: 'la incredulidad', en: 'la dificultad para creer algo, aunque haya pruebas' },
+    { es: 'el vértigo', en: 'aquí, una sensación de desorientación o mareo emocional' },
+    { es: 'una intolerancia alimentaria', en: 'una reacción negativa del cuerpo a ciertos alimentos' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué reacción tuvo Marina al recibir el primer mensaje sobre su hermana gemela?', options: ['Aceptación inmediata sin ninguna duda', 'Una mezcla de incredulidad y sospecha de error técnico', 'Indiferencia total ante la noticia'], answer: 1 },
+    { type: 'mcq', q: '¿Qué valoran ambas hermanas por encima de las coincidencias curiosas, según el texto?', options: ['El parecido físico exclusivamente', 'La sensación única de tener a alguien que comparte algo irrepetible', 'El interés científico que despiertan como caso de estudio'], answer: 1 },
+    { type: 'short', q: '¿A través de qué se conectaron por primera vez las hermanas? (dos palabras)', accept: ['análisis genético', 'una plataforma de análisis genético'] },
+    { type: 'translate', line: 'Ambas habían sido separadas al nacer y adoptadas por familias distintas, sin que ninguna de las dos supiera de la existencia de la otra hasta ese momento', model: 'Both had been separated at birth and adopted by different families, with neither of them knowing the other existed until that moment' }
+  ]
+},
+
+{
+  id: 'perfeccionista-caracter-b2', title: 'Nunca es suficientemente bueno para ella', level: 6, theme: 'caracter',
+  text: 'Beatriz revisa cada correo electrónico profesional al menos cuatro veces antes de enviarlo, y aun así, con frecuencia, siente que podría haberlo redactado mejor. Su perfeccionismo, que ella misma reconoce como un rasgo tanto útil como agotador, la acompaña desde que tiene memoria, y le ha proporcionado tanto reconocimiento profesional como más de una noche de insomnio innecesario.\n\nEn el trabajo, sus compañeros valoran enormemente la fiabilidad de cualquier proyecto que pase por sus manos, conscientes de que Beatriz detectará errores que a cualquier otra persona se le habrían escapado sin dificultad. Sin embargo, esa misma exigencia le impide delegar tareas con facilidad, convencida casi siempre de que nadie más las hará exactamente como ella considera que deberían hacerse.\n\nUn psicólogo al que consultó hace un par de años le explicó algo que a Beatriz le costó bastante aceptar: existe una diferencia real entre buscar la excelencia, que resulta generalmente saludable y productiva, y el perfeccionismo propiamente dicho, que fija un estándar imposible de alcanzar y convierte cualquier logro real en una fuente de insatisfacción crónica en lugar de en un motivo genuino de orgullo.\n\nDesde entonces, Beatriz ha empezado a practicar, con resultados todavía desiguales, algo que describe como "suficientemente bueno por hoy": terminar una tarea, revisarla una sola vez, y forzarse conscientemente a enviarla sin la cuarta o quinta revisión que su instinto le sigue pidiendo. No siempre lo consigue, admite con una sonrisa algo resignada, pero al menos ahora es capaz de reconocer el patrón exacto en el momento en que empieza a repetirse.',
+  gloss: [
+    { es: 'el perfeccionismo', en: 'la tendencia a exigirse a uno mismo un nivel de exigencia excesivo o poco realista' },
+    { es: 'la fiabilidad', en: 'la cualidad de ser digno de confianza' },
+    { es: 'delegar (una tarea)', en: 'confiar a otra persona la realización de un trabajo' },
+    { es: 'crónico', en: 'que se repite o persiste durante mucho tiempo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué distinción explica el psicólogo a Beatriz?', options: ['Que la excelencia y el perfeccionismo son exactamente lo mismo', 'Que la excelencia es saludable, mientras que el perfeccionismo genera insatisfacción crónica', 'Que ambos son igual de perjudiciales'], answer: 1 },
+    { type: 'mcq', q: '¿Qué dificultad concreta le causa el perfeccionismo a Beatriz en el trabajo?', options: ['No poder delegar tareas con facilidad', 'Cometer demasiados errores', 'No ser valorada por sus compañeros'], answer: 0 },
+    { type: 'short', q: '¿Cuántas veces revisa Beatriz un correo antes de enviarlo, como mínimo? (una palabra)', accept: ['cuatro'] },
+    { type: 'translate', line: 'existe una diferencia real entre buscar la excelencia, que resulta generalmente saludable y productiva, y el perfeccionismo propiamente dicho', model: 'there is a real difference between pursuing excellence, which is generally healthy and productive, and perfectionism as such' }
+  ]
+},
+
+{
+  id: 'abejas-polinizacion-naturaleza-b2', title: 'Sin abejas, medias frutas', level: 7, theme: 'naturaleza',
+  text: 'Cerca de un tercio de todos los alimentos que consumimos habitualmente depende, en mayor o menor medida, de la polinización realizada por abejas y otros insectos, un servicio ecológico gratuito que la agricultura moderna ha dado durante décadas prácticamente por garantizado. En los últimos años, sin embargo, distintas poblaciones de abejas silvestres y domesticadas han sufrido descensos preocupantes en numerosas regiones del planeta, un fenómeno que los científicos atribuyen a una combinación de factores más que a una causa única e identificable.\n\nEntre las causas más citadas figuran el uso extendido de ciertos pesticidas que afectan al sistema nervioso de los insectos, la pérdida de hábitats naturales ricos en flores silvestres, y la propagación de parásitos y enfermedades favorecida, en parte, por el propio transporte comercial de colmenas entre distintas regiones agrícolas. Ningún factor aislado explica por sí solo la magnitud del declive observado, lo que complica considerablemente el diseño de soluciones eficaces.\n\nAlgunos agricultores han empezado a experimentar con la polinización manual como alternativa parcial, una tarea extraordinariamente laboriosa que en algunas regiones de China, donde el declive de abejas ha sido particularmente severo, ya se realiza a gran escala mediante trabajadores que polinizan flor por flor con pequeños pinceles. El coste económico y humano de sustituir así, artesanalmente, un servicio que la naturaleza proporcionaba gratuitamente resulta, según reconocen los propios agricultores, difícilmente sostenible a gran escala.\n\nMás allá de las soluciones técnicas puntuales, la mayoría de los expertos coincide en que solo una combinación de medidas —reducción del uso de pesticidas más dañinos, restauración de hábitats naturales, y una regulación más estricta del transporte comercial de colmenas— podría revertir a medio plazo una tendencia que, de continuar sin control, tendría consecuencias directas sobre buena parte de la producción mundial de frutas y verduras.',
+  gloss: [
+    { es: 'la polinización', en: 'el proceso por el que el polen se transporta entre flores, permitiendo la reproducción de las plantas' },
+    { es: 'un pesticida', en: 'una sustancia química usada para eliminar plagas en la agricultura' },
+    { es: 'una colmena', en: 'el lugar donde vive y trabaja una colonia de abejas' },
+    { es: 'laborioso', en: 'que requiere mucho trabajo o esfuerzo' }
+  ],
+  questions: [
+    { type: 'mcq', q: '¿Qué complica el diseño de soluciones eficaces contra el declive de las abejas, según el texto?', options: ['Que existe una única causa fácil de identificar', 'Que el declive se debe a una combinación de varios factores distintos', 'Que los científicos se niegan a estudiar el problema'], answer: 1 },
+    { type: 'mcq', q: '¿Qué sugiere el ejemplo de la polinización manual en China?', options: ['Que es una solución barata y fácilmente escalable', 'Que sustituir a las abejas artesanalmente resulta costoso y difícil de sostener', 'Que ya no se necesitan abejas en absoluto'], answer: 1 },
+    { type: 'short', q: '¿Qué proporción de alimentos depende de la polinización, aproximadamente? (dos palabras)', accept: ['un tercio', 'cerca de un tercio'] },
+    { type: 'translate', line: 'Cerca de un tercio de todos los alimentos que consumimos habitualmente depende, en mayor o menor medida, de la polinización realizada por abejas y otros insectos', model: 'Nearly a third of all the food we regularly eat depends, to a greater or lesser degree, on pollination carried out by bees and other insects' }
+  ]
 }
 
 ];
