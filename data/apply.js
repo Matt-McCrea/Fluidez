@@ -592,6 +592,19 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'Para cuando se retire, ella ___ (ceder) su puesto a alguien de confianza.', inf: 'ceder', tense: 'futperf', person: 'él/ella', en: 'By the time she retires, she will have handed over her position to someone she trusts.' },
 
   { type: 'transform', level: 7, instruction: 'Rewrite using a double object pronoun (cliticCluster: "se lo/se la"):', from: 'El comité comunicó la decisión a los afectados.', to: 'El comité se la comunicó.', en: 'The committee communicated it to them.' },
-  { type: 'transform', level: 6, instruction: 'Rewrite with at least three distinct tenses, narrating past, present relevance and a future consequence:', from: 'Cerraron la fábrica.', to: 'Cerraron la fábrica hace un año, la zona sigue deprimida, y muchos vecinos habrán tenido que mudarse para entonces.', en: 'They closed the factory a year ago, the area is still depressed, and many residents will likely have had to move by now.' }
+  { type: 'transform', level: 6, instruction: 'Rewrite with at least three distinct tenses, narrating past, present relevance and a future consequence:', from: 'Cerraron la fábrica.', to: 'Cerraron la fábrica hace un año, la zona sigue deprimida, y muchos vecinos habrán tenido que mudarse para entonces.', en: 'They closed the factory a year ago, the area is still depressed, and many residents will likely have had to move by now.' },
+
+  /* ---- B2 apply, batch 4 of 12 ---- */
+  { type: 'cloze', level: 6, text: 'Ambas partes ___ (acordar) ayer una tregua de setenta y dos horas.', inf: 'acordar', tense: 'preterito', person: 'ellos', en: 'Both sides agreed yesterday to a seventy-two-hour truce.' },
+  { type: 'cloze', level: 6, text: 'Después de tres intentos fallidos, nosotros ___ (desistir) del recurso.', inf: 'desistir', tense: 'preterito', person: 'nosotros', en: 'After three failed attempts, we gave up on the appeal.' },
+  { type: 'cloze', level: 7, text: 'El sindicato exige que la empresa ___ (acatar) la sentencia sin más demoras.', inf: 'acatar', tense: 'presubj', person: 'él/ella', en: 'The union demands that the company comply with the ruling without further delay.' },
+  { type: 'cloze', level: 6, text: 'Ojalá ___ (zanjar, ellos) pronto esta disputa; lleva meses enquistada.', inf: 'zanjar', tense: 'presubj', person: 'ellos', en: 'I hope they settle this dispute soon; it has been stuck for months.' },
+  { type: 'cloze', level: 6, text: 'Yo no ___ (tolerar) que me hablaran así en una reunión.', inf: 'tolerar', tense: 'condicional', person: 'yo', en: "I wouldn't tolerate being spoken to like that in a meeting." },
+  { type: 'cloze', level: 6, text: 'Si el árbitro ___ (mediar) antes, el conflicto no habría llegado a los tribunales.', inf: 'mediar', tense: 'impsubj', person: 'él/ella', en: 'If the arbitrator had mediated earlier, the conflict would not have reached the courts.' },
+  { type: 'cloze', level: 7, text: 'Para el viernes, el comité ya ___ (resolver) las últimas reclamaciones pendientes.', inf: 'resolver', tense: 'futperf', person: 'él/ella', en: 'By Friday, the committee will have already resolved the last outstanding claims.' },
+  { type: 'cloze', level: 6, text: 'Durante años, los dos países ___ (pactar) acuerdos comerciales puntuales.', inf: 'pactar', tense: 'imperfecto', person: 'ellos', en: 'For years, the two countries used to negotiate occasional trade agreements.' },
+
+  { type: 'transform', level: 7, instruction: 'Rewrite using the subjunctive after "aunque" to concede a point:', from: 'Es una buena oferta. Aun así, la rechazo.', to: 'Aunque sea una buena oferta, la rechazo.', en: 'Even though it may be a good offer, I reject it.' },
+  { type: 'transform', level: 6, instruction: 'Rewrite avoiding colloquialisms (avoidsAny: "o sea", "vale", "guay") for a formal register:', from: 'O sea, vale, lo hacemos así, qué guay.', to: 'De acuerdo, procederemos de esa manera.', en: "Understood, we will proceed that way." }
 
 ];

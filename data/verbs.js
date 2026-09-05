@@ -1567,5 +1567,9 @@ window.VERBS = [
 { inf:'persistir', en:'to persist', type:'ir' },
 { inf:'desafiar', en:'to defy, to challenge', type:'ar', forms:{
   presente:['desafío','desafías','desafía','desafiamos','desafiáis','desafían'],
-  presubj:['desafíe','desafíes','desafíe','desafiemos','desafiéis','desafíen'] } }
+  presubj:['desafíe','desafíes','desafíe','desafiemos','desafiéis','desafíen'] } },
+{ inf:'acordar', en:'to agree on, to resolve (jointly)', type:'ar', stem:'ue' },
+{ inf:'desistir', en:'to desist, to give up (an attempt)', type:'ir' },
+{ inf:'acatar', en:'to comply with, to abide by', type:'ar' },
+{ inf:'zanjar', en:'to settle, to put an end to (a dispute)', type:'ar' }
 ];
