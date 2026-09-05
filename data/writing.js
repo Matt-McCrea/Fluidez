@@ -2149,6 +2149,85 @@ window.WRITING_TASKS = [
   { id: 'b2b-mercado-alimentacion', type: 'build', level: 6, theme: 'alimentacion', en: 'I would have bought more vegetables if the market had still been open.',
     answer: 'Habría comprado más verduras si el mercado hubiera estado todavía abierto.' },
   { id: 'b2b-lesion-cuerpo', type: 'build', level: 7, theme: 'cuerpo', en: 'It is unlikely that he has already recovered from such a serious injury.',
-    answer: 'Es poco probable que ya se haya recuperado de una lesión tan grave.' }
+    answer: 'Es poco probable que ya se haya recuperado de una lesión tan grave.' },
+
+  /* ---- B2 writing, batch 3 of 8 ---- */
+  { id: 'p-lobo-naturaleza-futperf', type: 'paragraph', level: 6, theme: 'naturaleza',
+    prompt: 'Write a paragraph speculating about why the wolves haven\'t been seen in the valley this month, using the futuro perfecto as conjecture.',
+    hint: '"Habrán..." to guess about the past; write at least 25 words.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'futperf' },
+      { type: 'minWords', n: 25 }
+    ],
+    models: ['Los pastores llevan un mes sin avistar a la manada. Habrán encontrado presas más abundantes en otra zona del valle, o quizás se habrán desplazado hacia el norte, donde hay menos actividad humana.'] },
+
+  { id: 'b2w-jefe-condperf-trabajo', type: 'write', level: 6, theme: 'trabajo',
+    prompt: 'Write what you would have done differently, in someone else\'s position, facing a difficult decision at work.',
+    hint: '"Yo que tú, habría..." reaches the condicional perfecto.',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'condperf' },
+      { type: 'minWords', n: 20 }
+    ],
+    models: ['Yo que tú, habría hablado directamente con el jefe antes de tomar una decisión tan drástica. Habría explicado la situación con calma, en vez de dimitir sin más explicación.'] },
+
+  { id: 'b2t-amenoss-salud', type: 'translate', level: 7, theme: 'salud',
+    prompt: 'Translate: "The treatment won\'t work unless the patient follows it exactly."',
+    hint: '"a menos que" governs the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'a menos que' },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['El tratamiento no funcionará a menos que el paciente lo siga exactamente.'] },
+
+  { id: 'b2w-repetir-curso-educacion', type: 'write', level: 6, theme: 'educacion',
+    prompt: 'Write, in a formal register, advice to a parent whose child might repeat a school year.',
+    hint: 'Address the parent as "usted", not "tú".',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'containsAny', words: ['conviene', 'convendría', 'sería recomendable', 'le recomiendo'] },
+      { type: 'minWords', n: 20 }
+    ],
+    models: ['Le recomiendo que no tome esta decisión únicamente en función de las calificaciones. Convendría hablar primero con el tutor, con el fin de entender qué dificultades tiene realmente su hijo en cada asignatura.'] },
+
+  { id: 'p-bache-servicios-relativa', type: 'paragraph', level: 7, theme: 'servicios',
+    prompt: 'Write a paragraph about a problem the city council finally fixed, using a relative clause with pluscuamperfecto ("el bache que habían denunciado...").',
+    hint: 'Reach the pluscuamperfecto through a relative clause, not "antes de".',
+    constraints: [
+      { type: 'anyVerbInTense', tense: 'plusc' },
+      { type: 'minSentences', n: 3 }
+    ],
+    models: ['El bache que los vecinos habían denunciado durante meses por fin se reparó la semana pasada. Nadie esperaba una respuesta tan rápida. Ahora solo falta que arreglen también la farola rota de la esquina.'] },
+
+  { id: 'b2t-reencuentro-relaciones', type: 'translate', level: 6, theme: 'relaciones',
+    prompt: 'Translate: "In the end, she gave it to him in person."',
+    hint: 'Use a double object pronoun: "se lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 4 }
+    ],
+    models: ['Al final, se lo dio en persona.'] },
+
+  { id: 'b2b-tren-nocturno-viajes', type: 'build', level: 6, theme: 'viajes', en: 'If the night train hadn\'t been delayed, we would have arrived on time.',
+    answer: 'Si el tren nocturno no se hubiera retrasado, habríamos llegado a tiempo.' },
+  { id: 'b2b-panaderia-economia', type: 'build', level: 7, theme: 'economia', en: 'It is likely that the bakery has already found new customers.',
+    answer: 'Es probable que la panadería ya haya encontrado nuevos clientes.' },
+
+  { id: 'b2w-referendum-politica', type: 'write', level: 7, theme: 'politica',
+    prompt: 'Describe, in an impersonal register using "se", how a local referendum is typically organized.',
+    hint: 'Use "se" constructions throughout instead of naming who organizes each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Primero se convoca oficialmente la votación con al menos un mes de antelación. Después se informa a todos los vecinos censados, y finalmente se cuenta cada voto ante representantes de ambas posturas.'] },
+
+  { id: 'b2t-restauracion-arte', type: 'translate', level: 6, theme: 'arte',
+    prompt: 'Translate, for a museum catalogue in a formal register: "The restoration took nearly a year to complete."',
+    hint: 'Avoid colloquial words; this is written for publication.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['La restauración tardó casi un año en completarse.'] }
 
 ];
