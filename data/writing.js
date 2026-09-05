@@ -2071,6 +2071,84 @@ window.WRITING_TASKS = [
   { id: 'b2b-oferta-viajes', type: 'build', level: 6, theme: 'viajes', en: 'They would have accepted the offer if it had arrived on time.',
     answer: 'Habrían aceptado la oferta si hubiera llegado a tiempo.' },
   { id: 'b2b-proyecto-servicios', type: 'build', level: 7, theme: 'servicios', en: 'I doubt they have already finished the project.',
-    answer: 'Dudo que ya hayan terminado el proyecto.' }
+    answer: 'Dudo que ya hayan terminado el proyecto.' },
+
+  /* ---- B2 writing, batch 2 of 8 ---- */
+  { id: 'b2t-cuando-politica', type: 'translate', level: 6, theme: 'politica',
+    prompt: 'Translate: "When the vote finally takes place, we will already know the result of the survey."',
+    hint: '"cuando" + subjunctive for a future event still pending.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'cuando' },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['Cuando por fin se celebre la votación, ya conoceremos el resultado de la encuesta.'] },
+
+  { id: 'b2t-guia-museo-arte', type: 'translate', level: 6, theme: 'arte',
+    prompt: 'Translate, as a formal museum guide addressing visitors: "If you look closely, you will notice the artist\'s technique."',
+    hint: 'Address the visitors as "usted/ustedes", never "tú".',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['Si se fijan bien, notarán la técnica del artista.'] },
+
+  { id: 'b2w-vocacion-religion', type: 'write', level: 6, theme: 'religion',
+    prompt: 'Write about someone who changed their beliefs later in life, conceding that not everyone will understand the decision.',
+    hint: 'Concede a point with "aunque" or "aun cuando" before making your own point.',
+    constraints: [
+      { type: 'containsAny', words: ['aunque', 'aun cuando', 'a pesar de'] },
+      { type: 'minWords', n: 20 }
+    ],
+    models: ['Aunque muchos de sus amigos no lo entendieran, decidió seguir adelante con su nueva fe. Para ella, la decisión no respondía a ningún gesto simbólico, sino a una reflexión personal de años.'] },
+
+  { id: 'b2w-nombre-identidad', type: 'write', level: 7, theme: 'identidad',
+    prompt: 'Write, in a formal register, about why someone might choose to change their name as an adult.',
+    hint: 'Avoid colloquialisms; this is a reflective, formal piece.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'tío', 'guay', 'qué va'] },
+      { type: 'minWords', n: 25 }
+    ],
+    models: ['Cambiar de nombre en la edad adulta rara vez responde a un capricho pasajero. Con frecuencia, refleja años de sentir que el nombre recibido al nacer nunca terminó de encajar con la propia identidad.'] },
+
+  { id: 'p-jefe-exigente-caracter', type: 'paragraph', level: 6, theme: 'caracter',
+    prompt: 'Write a paragraph describing a demanding boss: what they were like before, how they are now, and how you expect to feel about them in the future.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Al principio me parecía una jefa insoportable, siempre exigiendo más de lo razonable. Ahora entiendo que su exigencia tenía un motivo real detrás. Para cuando termine este proyecto, seguramente habré aprendido más de ella que de nadie más en la empresa. Nunca imaginé que llegaría a agradecérselo.'] },
+
+  { id: 'p-torneo-ajedrez-ocio', type: 'paragraph', level: 6, theme: 'ocio',
+    prompt: 'Write a paragraph about an amateur competition, explaining what was done so that everyone could participate fairly.',
+    hint: '"para que" + subjunctive; write at least four sentences.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'para que' },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['El club organizó un torneo abierto a todos los vecinos del barrio. Cambiaron el reglamento para que también pudieran participar los principiantes. Al final, ganó una adolescente que apenas llevaba un año jugando. Nadie esperaba un resultado así.'] },
+
+  { id: 'b2t-piso-vivienda', type: 'translate', level: 6, theme: 'vivienda',
+    prompt: 'Translate: "The landlord finally gave it back to us."',
+    hint: 'Use a double object pronoun: "se lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 4 }
+    ],
+    models: ['El casero por fin nos lo devolvió.'] },
+
+  { id: 'b2w-devoluciones-compras', type: 'write', level: 7, theme: 'compras',
+    prompt: 'Describe, in an impersonal register using "se", how returns are typically handled in an online shop.',
+    hint: 'Use "se" constructions throughout instead of naming who handles each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Cuando se solicita una devolución, primero se revisa el estado del producto. Si todo está correcto, se reembolsa el importe en un plazo de cinco días, y se notifica al cliente por correo electrónico.'] },
+
+  { id: 'b2b-mercado-alimentacion', type: 'build', level: 6, theme: 'alimentacion', en: 'I would have bought more vegetables if the market had still been open.',
+    answer: 'Habría comprado más verduras si el mercado hubiera estado todavía abierto.' },
+  { id: 'b2b-lesion-cuerpo', type: 'build', level: 7, theme: 'cuerpo', en: 'It is unlikely that he has already recovered from such a serious injury.',
+    answer: 'Es poco probable que ya se haya recuperado de una lesión tan grave.' }
 
 ];
