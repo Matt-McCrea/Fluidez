@@ -27082,6 +27082,47 @@ window.STRAND_LESSONS = [
     { id: 'p:gustosaversionC1:cloze', kind: 'cloze', text: 'Cuanto más lo veo, más me ___. (aumento paralelo del gusto)', accept: ['gusta'] },
     { id: 'p:gustosaversionC1:recall', kind: 'recall', front: '¿Qué expresión lleva la aversión al plano físico, como grado máximo?', back: '"me da náuseas"' }
   ]
+},
+
+{
+  id: 'fn-preferencia-indiferencia-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:431', 'funciones:C1:432', 'funciones:C1:433', 'funciones:C1:434', 'funciones:C1:437', 'funciones:C1:438',
+         'funciones:C1:439', 'funciones:C1:446', 'funciones:C1:447', 'funciones:C1:448', 'funciones:C1:449', 'funciones:C1:450'],
+  title: 'Preferencia e indiferencia en C1: "no cambio... por nada del mundo"',
+  summary: 'Preguntar y expresar preferencia en C1 usa verbos muy visuales — "optar por", "quedarse con", "decidirse por" — mientras que la indiferencia tiene su propia escala, de la fórmula condicional neutra ("si quieres, cómpratelo") hasta el desdén absoluto de "me importa un pimiento".',
+  sections: [
+    { h: 'Preguntar por preferencias', html: '<i>¿Optas/te decides por...?</i>, <i>¿por qué + SN + optas/te decides?</i> y <i>¿por cuál optas/te decides?</i> preguntan por una elección entre opciones: <i>¿todavía no te has decidido por ninguna de las corbatas?</i>. <i>¿Con qué (+SN)/cuál te quedas?</i> pregunta de forma más coloquial, con el verbo "quedarse con": <i>¿con qué cuadro te quedarías?</i>.' },
+    { h: 'Expresar preferencia', html: '<i>Si tengo que elegir/si me dan a elegir...</i> introduce una preferencia condicionada a tener que decidir: <i>si me dan a elegir, me quedo con un buen Rioja</i>. <i>Me quedo con/me decido/opto por...</i> son los verbos directos de preferencia. <i>No cambio... por nada (del mundo)</i> expresa la preferencia más firme posible, descartando cualquier alternativa: <i>no cambiaría mi trabajo por nada del mundo</i>.' },
+    { h: 'Expresar indiferencia con estructura condicional', html: '<i>Si + presente de indicativo, imperativo/que + presente de subjuntivo</i> expresa indiferencia dejando la decisión al otro: <i>si quieres comprártelo, cómpratelo</i>, <i>si quiere decírselo, que se lo diga</i> — la estructura misma comunica "por mí, como quieras".' },
+    { h: 'Exclamaciones de indiferencia', html: '<i>¡Qué más da!</i>, <i>¡(Y) qué importa (eso)!</i> y <i>¡qué importancia tiene (eso)!</i> son exclamaciones coloquiales que restan importancia a algo. <i>Me importa un pimiento</i> es la más extrema, con desdén explícito hacia el asunto.' }
+  ],
+  exponents: [
+    { es: 'Si me dan a elegir, prefiero quedarme en casa.', en: "If I had to choose, I'd rather stay home.", register: 'neutral' },
+    { es: '¡Qué más da uno u otro, si son casi iguales!', en: "What does it matter, one or the other, they're almost the same!", register: 'coloquial' },
+    { es: 'No cambiaría esta ciudad por nada del mundo.', en: "I wouldn't trade this city for anything in the world.", register: 'neutral' },
+    { es: 'Si quieres ir, que vayas; a mí me da igual.', en: "If you want to go, go ahead; it's all the same to me.", register: 'coloquial' },
+    { es: '¿Con cuál de los dos modelos se quedó al final?', en: 'Which of the two models did he end up choosing?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Opto por el plan más económico.', en: "I'll go with the cheaper plan.", note: 'preferencia clara y directa' },
+    { es: 'Me importa un pimiento cuál elijas.', en: "I couldn't care less which one you choose.", note: 'indiferencia con desdén explícito' }
+  ],
+  pitfalls: [
+    '"Me importa un pimiento" es exclusivamente coloquial y bastante desdeñoso — en un registro formal conviene "me resulta indiferente" o "no tengo preferencia".',
+    'La estructura "si + presente, imperativo" para expresar indiferencia no es una simple condición lógica — su función real es comunicar que la decisión no importa al hablante.',
+    '"No cambio... por nada del mundo" es hiperbólico: no describe literalmente rechazar cualquier oferta posible, sino expresar una preferencia muy firme.'
+  ],
+  examples: [
+    { es: 'Al final optamos por el vuelo directo, aunque era más caro.', en: 'In the end we opted for the direct flight, even though it was more expensive.' },
+    { es: 'Si prefieres quedarte, quédate; por mí no hay problema.', en: "If you'd rather stay, stay; it's no problem for me." },
+    { es: '¿Con qué helado te quedas, chocolate o vainilla?', en: 'Which ice cream do you go for, chocolate or vanilla?' }
+  ],
+  probes: [
+    { id: 'p:preferenciaindiferenciaC1:sipresenteimperativo', kind: 'mcq', q: '"Si quieres comprártelo, cómpratelo." ¿Qué comunica esta estructura?', options: ['Una orden estricta', 'Indiferencia — la decisión no importa al hablante', 'Una prohibición'], answer: 1 },
+    { id: 'p:preferenciaindiferenciaC1:nocambio', kind: 'mcq', q: '"No cambiaría mi trabajo por nada del mundo." ¿Qué tipo de expresión es?', options: ['Literal y exhaustiva', 'Hiperbólica, para una preferencia muy firme', 'Indiferencia'], answer: 1 },
+    { id: 'p:preferenciaindiferenciaC1:cloze', kind: 'cloze', text: '¿Con qué cuadro te ___ al final? ("quedarse con", elegir)', accept: ['quedas', 'quedaste', 'quedarías'] },
+    { id: 'p:preferenciaindiferenciaC1:recall', kind: 'recall', front: '¿Qué registro tiene "me importa un pimiento" frente a "me resulta indiferente"?', back: '"me importa un pimiento" es coloquial y desdeñoso; "me resulta indiferente" es neutro y formal' }
+  ]
 }
 
 ];
