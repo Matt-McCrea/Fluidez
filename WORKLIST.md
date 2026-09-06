@@ -587,9 +587,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (25/202 done)
+## C1 — lessons (28/202 done)
 
-### C1 · grammar (13/28)
+### C1 · grammar (16/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
 - [x] **El número de los sustantivos** · 6 pts · `gramatica C1 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-c1
 - [x] **Clases de adjetivos** · 15 pts · `gramatica C1 § 2.1. Clases de adjetivos`  — gr-clases-adjetivos-c1
@@ -603,9 +603,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Los relativos** · 25 pts · `gramatica C1 § 7.2. Los relativos`  — gr-relativos-c1
 - [x] **Los interrogativos** · 7 pts · `gramatica C1 § 7.3. Los interrogativos`  — gr-interrogativos-c1
 - [x] **Los exclamativos** · 6 pts · `gramatica C1 § 7.4. Los exclamativos`  — gr-exclamativos-c1
-- [ ] **Adverbios nucleares o de predicado** · 26 pts · `gramatica C1 § 8.2. Adverbios nucleares o de pred`
-- [ ] **Adverbios externos al dictum** · 5 pts · `gramatica C1 § 8.3. Adverbios externos al dictum`
-- [ ] **Adverbios conjuntivos** · 5 pts · `gramatica C1 § 8.5. Adverbios conjuntivos`
+- [x] **Adverbios nucleares o de predicado** · 26 pts · `gramatica C1 § 8.2. Adverbios nucleares o de pred`  — gr-adverbios-nucleares-c1
+- [x] **Adverbios externos al dictum** · 5 pts · `gramatica C1 § 8.3. Adverbios externos al dictum`  — gr-adverbios-externos-c1
+- [x] **Adverbios conjuntivos** · 5 pts · `gramatica C1 § 8.5. Adverbios conjuntivos`  — gr-adverbios-conjuntivos-c1
 - [ ] **Tiempos verbales de indicativo** · 21 pts · `gramatica C1 § 9.1. Tiempos verbales de indicativ`
 - [ ] **Tiempos verbales de subjuntivo** · 23 pts · `gramatica C1 § 9.2. Tiempos verbales de subjuntiv`
 - [ ] **El imperativo** · 9 pts · `gramatica C1 § 9.3. El imperativo`

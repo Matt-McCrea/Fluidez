@@ -22293,6 +22293,117 @@ window.STRAND_LESSONS = [
     { id: 'p:relativosC1:cloze', kind: 'cloze', text: 'Es más de ___ esperaba. (segundo término de comparación)', accept: ['lo que'] },
     { id: 'p:relativosC1:recall', kind: 'recall', front: '¿En qué registro se prefiere "quien/quienes" frente a "el que/la que"?', back: 'un registro más culto, especialmente en relativas explicativas' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — C1 grammar, part 4: adverbios nucleares, externos, conjuntivos.
+ * ========================================================================== */
+{
+  id: 'gr-adverbios-nucleares-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:329', 'gramatica:C1:331', 'gramatica:C1:332', 'gramatica:C1:333', 'gramatica:C1:334', 'gramatica:C1:335',
+         'gramatica:C1:336', 'gramatica:C1:337', 'gramatica:C1:339', 'gramatica:C1:341'],
+  title: 'Adverbios nucleares en C1: dónde va el modo, y por qué',
+  summary: '"Repulsivamente" placed right after the verb describes how the action LOOKED to the speaker, not how it was performed — the same adverb moved earlier would describe the manner of the action itself. At C1, the position of a manner adverb is not free variation; it is where the judgment lives.',
+  sections: [
+    { h: 'De acción frente a apreciación subjetiva postverbal', html: '<i>Gritó angustiosamente</i> describe la manera real de gritar. Colocado tras el verbo o al final, un adverbio de apreciación subjetiva no describe la acción sino que añade el juicio del hablante sobre ella: <i>actuó, la verdad, repulsivamente</i> — el matiz es evaluativo, no descriptivo.' },
+    { h: 'Posición inicial para el foco contrastivo', html: 'Un adverbio resultativo en posición inicial, con acento contrastivo, opone explícitamente dos maneras: <i>CLARAMENTE le dijo que no, no confusamente.</i> Esta posición marcada exige ese contraste fonético — sin él, suena forzada.' },
+    { h: 'Agentivos con verbos de proceso y de estado', html: '<i>Comprendí rápidamente todo</i> (proceso) y <i>tenía orgullosamente este trofeo</i> (estado) — el adverbio agentivo describe la actitud del sujeto incluso con verbos que no son acciones físicas.' },
+    { h: 'Posición media/inicial, y el foco en preguntas', html: 'En una oración declarativa, el adverbio puede ir tras el sujeto o al principio, con matices de énfasis: <i>Él, severamente, le dirigió la mirada</i> / <i>Severamente, él le dirigió la mirada</i>. En interrogativas, el foco puede ir al principio (con acento marcado) o mantenerse en una alternativa explícita: <i>¿DESPECTIVAMENTE te habló?</i> / <i>¿Despectivamente o distraídamente te habló?</i>' },
+    { h: 'Correspondencia con sintagmas preposicionales, y comparación simultánea', html: 'Muchos adverbios en <i>-mente</i> equivalen a un sintagma preposicional que expresa causa, instrumento o medio: <i>instintivamente / por instinto</i>, <i>telefónicamente / por teléfono</i>. Otros expresan a la vez una comparación implícita: <i>me saludó militarmente</i> equivale a <i>como un militar</i>.' }
+  ],
+  contrasts: [
+    { es: 'Contestó bruscamente a la pregunta.', en: 'He answered the question abruptly.', note: 'de acción — describe cómo respondió realmente' },
+    { es: 'Contestó, la verdad, bastante groseramente.', en: 'He answered, quite honestly, rather rudely.', note: 'apreciación subjetiva postverbal — juicio del hablante, no descripción pura' },
+    { es: 'Se comunicaron telefónicamente durante el viaje.', en: 'They communicated by phone during the trip.', note: 'equivale a "por teléfono", instrumento' },
+    { es: 'Lo saludó militarmente al entrar en la sala.', en: 'He saluted him in military fashion on entering the room.', note: 'equivale a "como un militar", comparación implícita' }
+  ],
+  pitfalls: [
+    'El mismo adverbio de modo puede describir la acción (posición neutra) o el juicio del hablante sobre ella (posición postverbal o final, con pausa) — la posición cambia qué se está evaluando.',
+    'La posición inicial contrastiva de un adverbio (<i>CLARAMENTE le dijo que no</i>) exige un contraste explícito o implícito con otra manera posible — usarla sin ese contraste suena forzado o teatral.',
+    'Un adverbio en <i>-mente</i> que corresponde a un sintagma preposicional (<i>instintivamente/por instinto</i>) no es siempre intercambiable en registro — el adverbio suele sonar más formal o más literario que el sintagma equivalente.'
+  ],
+  examples: [
+    { es: 'Resolvió el problema, sorprendentemente, en cuestión de minutos.', en: 'He solved the problem, surprisingly, within minutes.' },
+    { es: 'Se despidieron efusivamente en el aeropuerto.', en: 'They said goodbye effusively at the airport.' },
+    { es: '¿Groseramente te habló, o simplemente estaba distraído?', en: 'Did he speak rudely to you, or was he simply distracted?' }
+  ],
+  probes: [
+    { id: 'p:adverbiosnuclearesC1:postverbal', kind: 'mcq', q: '"Actuó, la verdad, repulsivamente." ¿Qué añade el adverbio en esta posición?', options: ['Describe objetivamente cómo actuó', 'Añade el juicio subjetivo del hablante sobre la acción', 'No aporta ningún matiz especial'], answer: 1 },
+    { id: 'p:adverbiosnuclearesC1:equivalencia', kind: 'mcq', q: '¿A qué equivale "telefónicamente"?', options: ['A "con un teléfono roto"', 'A "por teléfono"', 'A "sin teléfono"'], answer: 1 },
+    { id: 'p:adverbiosnuclearesC1:cloze', kind: 'cloze', text: 'Lo saludó ___, como si fuera un militar. (adverbio de comparación implícita)', accept: ['militarmente'] },
+    { id: 'p:adverbiosnuclearesC1:recall', kind: 'recall', front: '¿Qué exige la posición inicial contrastiva de un adverbio resultativo (CLARAMENTE le dijo que no)?', back: 'un contraste explícito o implícito con otra manera posible' }
+  ]
+},
+
+{
+  id: 'gr-adverbios-externos-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:351', 'gramatica:C1:353', 'gramatica:C1:354', 'gramatica:C1:355'],
+  title: 'Adverbios externos al dictum: el punto de vista que envuelve la frase',
+  summary: '"Javier piensa erróneamente que el problema está resuelto" does not describe how Javier thinks — it is the SPEAKER judging Javier\'s belief from outside the sentence entirely. These adverbs sit apart from everything they modify, commenting on a whole proposition rather than describing any part of the action within it.',
+  sections: [
+    { h: 'Adverbios de punto de vista, en posición parentética', html: '<i>Técnicamente, geográficamente, políticamente...</i> encuadran toda la afirmación desde un ángulo concreto, casi siempre en posición inicial y aislados por una pausa: <i>Técnicamente, el contrato ya ha expirado.</i>' },
+    { h: 'Evaluativos de necesidad y obligación', html: '<i>Irremediablemente, por fuerza</i> refuerzan una expresión de obligación (<i>tener que, haber que, deber</i>) y a menudo pueden omitirse sin que la obligación desaparezca, solo se atenúa el matiz de inevitabilidad: <i>Tendrá que ceder, irremediablemente.</i>' },
+    { h: 'Evaluativos de conocimiento y percepción', html: '<i>Visiblemente, notoriamente, manifiestamente</i> comentan cómo de evidente resulta algo para un observador externo, y también admiten omitirse sin cambiar el hecho descrito, solo la evidencia con que se presenta: <i>Estaba, visiblemente, agotado.</i>' },
+    { h: 'Epistémicos: el juicio del hablante sobre la verdad', html: '<i>Correctamente, erróneamente, exageradamente</i> no describen cómo actúa el sujeto de la frase, sino que el propio HABLANTE juzga la proposición entera: <i>Javier piensa erróneamente que el problema está resuelto</i> — quien dice que es "erróneo" es el hablante, no Javier.' }
+  ],
+  contrasts: [
+    { es: 'Técnicamente, esta especie ya está extinguida en la región.', en: 'Technically, this species is already extinct in the region.', note: 'punto de vista, encuadra toda la afirmación' },
+    { es: 'Tendrán que mudarse, irremediablemente, antes de fin de año.', en: "They'll have to move, inevitably, before the end of the year.", note: 'refuerza la obligación, omisible' },
+    { es: 'Estaba, visiblemente, muy nervioso durante la entrevista.', en: 'He was, visibly, very nervous during the interview.', note: 'comenta la evidencia perceptible, omisible' },
+    { es: 'Cree erróneamente que ya ha ganado el caso.', en: 'He mistakenly believes he has already won the case.', note: 'juicio del HABLANTE sobre la creencia, no del sujeto' }
+  ],
+  pitfalls: [
+    'Un adverbio epistémico (<i>erróneamente, correctamente</i>) no describe cómo actúa el sujeto de la frase — expresa el juicio del propio hablante sobre si la proposición entera es correcta o no.',
+    'Estos adverbios no modifican al verbo como los adverbios de modo — modifican toda la proposición desde fuera, y por eso suelen aislarse con comas o coma+pausa.',
+    'Que un adverbio evaluativo se pueda omitir no significa que no aporte nada — al quitarlo desaparece el matiz de evidencia o de inevitabilidad, aunque el hecho central de la frase se mantenga.'
+  ],
+  examples: [
+    { es: 'Geográficamente, las dos ciudades están muy próximas.', en: 'Geographically, the two cities are very close.' },
+    { es: 'Se resistía, por fuerza, a aceptar la derrota.', en: 'He was, inevitably, resistant to accepting defeat.' },
+    { es: 'Piensa exageradamente que todo el mundo está en su contra.', en: 'He thinks, exaggeratedly, that everyone is against him.' }
+  ],
+  probes: [
+    { id: 'p:adverbiosexternosC1:epistemico', kind: 'mcq', q: '"Javier piensa erróneamente que el problema está resuelto." ¿Quién juzga que es erróneo?', options: ['Javier mismo', 'El hablante que cuenta esto', 'Nadie en particular'], answer: 1 },
+    { id: 'p:adverbiosexternosC1:puntodevista', kind: 'mcq', q: '¿Qué hace "técnicamente" en "técnicamente, el contrato ya ha expirado"?', options: ['Describe cómo se firmó el contrato', 'Encuadra toda la afirmación desde un ángulo concreto', 'Modifica al verbo "expirar"'], answer: 1 },
+    { id: 'p:adverbiosexternosC1:cloze', kind: 'cloze', text: 'Estaba, ___, muy nervioso. (evidente para un observador)', accept: ['visiblemente'] },
+    { id: 'p:adverbiosexternosC1:recall', kind: 'recall', front: '¿A qué se refiere un adverbio epistémico como "erróneamente", al verbo o a toda la proposición?', back: 'a toda la proposición, como juicio del hablante sobre su verdad' }
+  ]
+},
+
+{
+  id: 'gr-adverbios-conjuntivos-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:374', 'gramatica:C1:375', 'gramatica:C1:376', 'gramatica:C1:377', 'gramatica:C1:378'],
+  title: 'Adverbios conjuntivos: matizar una coordinación sin ser una conjunción',
+  summary: '"Tampoco" does not always negate — in "si tú sabes mucho, él tampoco se queda atrás" it marks that he is keeping equal pace, not falling behind. Adverbs like this one connect two statements the way a conjunction would, but each carries its own precise shade of consequence, restriction or concession that a plain "y" or "pero" cannot.',
+  sections: [
+    { h: 'Matiz consecutivo', html: '<i>Consecuentemente, por consiguiente</i> conectan dos ideas con una relación de causa-efecto más formal que "así que", propia de un registro cuidado o escrito.' },
+    { h: 'Adversativo restrictivo con función coordinante', html: '<i>Solo que, únicamente que</i> funcionan casi como "pero", pero introducen específicamente una salvedad puntual: <i>Tenía buena intención, solo que no me expresé bien</i> — no niega la buena intención, solo la matiza con una excepción concreta.' },
+    { h: 'Matiz concesivo en posición inicial', html: '<i>Contrariamente a lo que piensas...</i> abre la frase concediendo primero una expectativa ajena para después contradecirla, similar en función a "aunque" pero con más fuerza retórica al ir en primera posición.' },
+    { h: '"También/tampoco" en comparaciones de equiparación', html: 'Además de su valor aditivo o negativo habitual, <i>también/tampoco</i> puede usarse para igualar dos términos de una comparación: <i>Si tú sabes mucho, él tampoco se queda atrás</i> — aquí "tampoco" no niega nada, afirma que él está al mismo nivel.' },
+    { h: 'Continuativos transicionales', html: '<i>Ahora, ahora bien</i> introducen un tema nuevo o matizan una afirmación anterior, sin relación con su valor temporal habitual: <i>Ahora bien, esto no significa que el problema esté resuelto.</i>' }
+  ],
+  contrasts: [
+    { es: 'Llovió toda la noche; consecuentemente, el partido se suspendió.', en: 'It rained all night; consequently, the match was suspended.', note: 'matiz consecutivo, registro formal' },
+    { es: 'El plan es bueno, solo que llega demasiado tarde.', en: 'The plan is good, except that it comes too late.', note: 'adversativo restrictivo, matiza sin negar del todo' },
+    { es: 'Contrariamente a lo que piensas, el proyecto sigue en marcha.', en: "Contrary to what you think, the project is still underway.", note: 'concesivo, en posición inicial' },
+    { es: 'Si él protesta mucho, ella tampoco se calla.', en: "If he complains a lot, she doesn't hold back either.", note: 'tampoco de equiparación, no de negación' }
+  ],
+  pitfalls: [
+    '"Tampoco" en una comparación de equiparación (<i>él tampoco se queda atrás</i>) no niega nada — afirma que el segundo término iguala al primero en intensidad.',
+    '"Solo que" no equivale a un simple "pero" — introduce específicamente una salvedad puntual, casi una disculpa por el matiz que sigue.',
+    '"Ahora bien" no tiene ningún valor temporal en este uso — funciona como una transición que matiza o introduce un tema nuevo, no como "en este momento".'
+  ],
+  examples: [
+    { es: 'No estudió nada; por consiguiente, suspendió el examen.', en: 'He didn\'t study at all; consequently, he failed the exam.' },
+    { es: 'Me gusta el plan, únicamente que necesitaríamos más presupuesto.', en: "I like the plan, except we'd need a bigger budget." },
+    { es: 'Ahora bien, no todos los expertos están de acuerdo con esta teoría.', en: 'Now, not all experts agree with this theory.' }
+  ],
+  probes: [
+    { id: 'p:adverbiosconjuntivosC1:tampoco', kind: 'mcq', q: '"Si él protesta mucho, ella tampoco se calla." ¿Qué significa "tampoco" aquí?', options: ['Que ella no protesta en absoluto', 'Que ella iguala su nivel de protesta', 'Que ninguno de los dos protesta'], answer: 1 },
+    { id: 'p:adverbiosconjuntivosC1:soloque', kind: 'mcq', q: '¿Qué hace "solo que" en "tenía buena intención, solo que no me expresé bien"?', options: ['Niega por completo la buena intención', 'Introduce una salvedad puntual sin negar lo anterior', 'No aporta ningún matiz'], answer: 1 },
+    { id: 'p:adverbiosconjuntivosC1:cloze', kind: 'cloze', text: '___ bien, esto no significa que el problema esté resuelto. (transición)', accept: ['Ahora', 'ahora'] },
+    { id: 'p:adverbiosconjuntivosC1:recall', kind: 'recall', front: '¿Qué valor tiene "ahora bien" en este uso, temporal o transicional?', back: 'transicional — matiza o introduce un tema, sin relación con el tiempo' }
+  ]
 }
 
 ];
