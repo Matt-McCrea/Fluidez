@@ -22028,6 +22028,187 @@ window.STRAND_LESSONS = [
     { id: 'p:nombresescuetosC1:cloze', kind: 'cloze', text: 'La nombraron ___ del proyecto. (sin artículo, complemento predicativo)', accept: ['directora'] },
     { id: 'p:nombresescuetosC1:recall', kind: 'recall', front: '¿Qué tipo de aposición no necesita artículo: adscriptiva o identificativa?', back: 'la adscriptiva (Valencia, tierra de naranjos) — asigna un rasgo, no identifica algo único' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — C1 grammar, part 2: demostrativos, posesivos, cuantificadores
+ * propios, interrogativos, exclamativos.
+ * ========================================================================== */
+{
+  id: 'gr-demostrativos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  pcic: ['gramatica:C1:109', 'gramatica:C1:110', 'gramatica:C1:111', 'gramatica:C1:112', 'gramatica:C1:113', 'gramatica:C1:114', 'gramatica:C1:115'],
+  title: 'Los demostrativos en C1: proximidad discursiva, condescendencia',
+  summary: 'B2 used "este/aquel" to split a list into near and far items in space; C1 splits a list into near and far items in the DISCOURSE ITSELF — whichever noun was named last counts as closest, regardless of where anything actually is. And a demonstrative left trailing off, unfinished, can carry a whole attitude no adjective would need to spell out.',
+  sections: [
+    { h: 'Anáfora por proximidad discursiva, no espacial', html: '<i>Vi lagos y montañas. Estas eran majestuosas y aquellos apacibles.</i> — "estas" apunta a "montañas" (lo último mencionado, lo más próximo EN EL DISCURSO) y "aquellos" a "lagos" (lo primero, lo más lejano en el discurso), sin que exista ninguna distancia física real entre unos y otros.' },
+    { h: '"Eso" + subordinada, para restar valor', html: '<i>Eso que dices es una tontería</i> convierte toda una afirmación ajena en un solo referente fácil de descartar — el demostrativo neutro más una subordinada es un recurso habitual para quitarle peso a lo que acaba de decir otra persona.' },
+    { h: 'Valor de condescendencia en oraciones suspendidas', html: 'Un demostrativo aislado, sin completar la frase, transmite una actitud tolerante o resignada sin necesidad de decir nada más: <i>este chico...</i> (dicho con un suspiro) comunica algo parecido a "qué se le va a hacer con él", sin que ninguna palabra lo diga explícitamente.' },
+    { h: 'Posición postnominal en exclamaciones', html: 'En una exclamación con sustantivo, el demostrativo puede ir DESPUÉS del nombre en lugar de antes, con un matiz added de sorpresa, nostalgia o hastío: <i>¡Qué hombre este!</i>, <i>¡Qué tiempos aquellos!</i> — un orden imposible fuera de la exclamación.' }
+  ],
+  contrasts: [
+    { es: 'Vi jueces y abogados. Estos discutían acaloradamente y aquellos escuchaban en silencio.', en: 'I saw judges and lawyers. The latter were arguing heatedly and the former listened in silence.', note: 'estos = lo último mencionado (abogados); aquellos = lo primero (jueces)' },
+    { es: 'Eso que insinúas es completamente falso.', en: 'What you\'re implying is completely false.', note: 'eso + subordinada, resta valor a la afirmación ajena' },
+    { es: '¡Qué mujer esta! Siempre tiene una solución.', en: 'What a woman she is! She always has a solution.', note: 'demostrativo postnominal en exclamación, con matiz admirativo' },
+    { es: 'Esta chica... no hay quien la entienda.', en: "This girl... there's no understanding her.", note: 'demostrativo con valor condescendiente en frase suspendida' }
+  ],
+  pitfalls: [
+    'La anáfora discursiva por proximidad (<i>estos/aquellos</i>) no depende de ninguna distancia física — depende únicamente del orden de mención: lo dicho en segundo lugar es "esto", lo dicho en primer lugar es "aquello".',
+    'El demostrativo postnominal en exclamaciones (<i>¡qué tiempos aquellos!</i>) no funciona en posición prenominal con el mismo matiz — <i>¡qué aquellos tiempos!</i> no es una alternativa válida.',
+    'El valor de condescendencia de una frase suspendida (<i>este chico...</i>) depende enteramente de la entonación y del contexto — sin ellos, la misma frase leída en un texto no comunica nada por sí sola.'
+  ],
+  examples: [
+    { es: 'Hablamos de ciencia y de arte. Este siempre despierta más pasiones que aquella.', en: 'We talked about science and art. The latter always stirs more passion than the former.' },
+    { es: '¡Qué ideas estas, de verdad!', en: 'What ideas, honestly!' },
+    { es: 'Este hombre... siempre metiéndose en líos.', en: 'This man... always getting into trouble.' }
+  ],
+  probes: [
+    { id: 'p:demostrativosC1:proximidad', kind: 'mcq', q: '"Vi lagos y montañas. Estas eran majestuosas." ¿A qué se refiere "estas"?', options: ['A "lagos", lo primero mencionado', 'A "montañas", lo último mencionado', 'A ambos por igual'], answer: 1 },
+    { id: 'p:demostrativosC1:postnominal', kind: 'mcq', q: '¿Dónde va el demostrativo en "¡qué tiempos aquellos!"?', options: ['Antes del sustantivo, como siempre', 'Después del sustantivo, posición marcada de la exclamación', 'No puede aparecer en exclamaciones'], answer: 1 },
+    { id: 'p:demostrativosC1:cloze', kind: 'cloze', text: '___ que dices es una tontería. (demostrativo neutro)', accept: ['Eso', 'eso'] },
+    { id: 'p:demostrativosC1:recall', kind: 'recall', front: '¿De qué depende la anáfora discursiva de "estos/aquellos" en C1?', back: 'del orden de mención en el discurso, no de la distancia física real' }
+  ]
+},
+
+{
+  id: 'gr-posesivos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  pcic: ['gramatica:C1:123', 'gramatica:C1:124', 'gramatica:C1:125', 'gramatica:C1:126', 'gramatica:C1:127', 'gramatica:C1:128'],
+  title: 'Los posesivos en C1: cuantificador, sufrimiento, y el "mío" que apela',
+  summary: '"Esto tiene su dificultad" does not say the difficulty belongs to anyone — the possessive here works as an intensifier, roughly "quite a bit of". A whole family of C1 uses turns the possessive into something other than ownership: a vague reference to an unnamed set of things, or a fixed way of addressing someone with affection.',
+  sections: [
+    { h: 'Valor cuantificador, no posesivo', html: '<i>Esto tiene su dificultad</i> no dice de quién es la dificultad — "su" funciona aquí como intensificador, equivalente aproximadamente a "bastante": la frase entera quiere decir "esto es bastante difícil".' },
+    { h: 'Con artículo neutro "lo": referente no nombrado', html: '<i>Esto es lo tuyo</i> señala un conjunto de cosas conocido mutuamente por los hablantes pero nunca nombrado explícitamente — "lo tuyo" puede ser tu talento, tu tema, tu terreno, según el contexto.' },
+    { h: 'El mismo patrón, con esfuerzo o sufrimiento', html: '<i>Pasé lo mío</i> no especifica qué pasó — "lo mío" apunta a una experiencia difícil, propia del hablante, que se deja deliberadamente sin detallar.' },
+    { h: 'Fórmulas fijas de apelación', html: '<i>Hija mía, cariño mío</i> pospone el posesivo tras un sustantivo de tratamiento, en una fórmula fija de cercanía afectiva (o, según el tono, de reproche cariñoso) que no admite otro orden: <i>*mía hija</i> no existe.' }
+  ],
+  contrasts: [
+    { es: 'Este trámite tiene su complicación, ya lo verás.', en: "This procedure has its complications, you'll see.", note: 'valor cuantificador — "bastante complicación", no posesión' },
+    { es: 'Convencer a la gente, eso es lo tuyo.', en: 'Convincing people, that\'s your thing.', note: 'lo + posesivo, referente conocido pero no nombrado' },
+    { es: 'Yo también pasé lo mío cuando me mudé de país.', en: 'I went through my own share of hardship too when I moved countries.', note: 'lo mío = una experiencia difícil, sin detallar' },
+    { es: 'Cariño mío, no te preocupes tanto.', en: "My dear, don't worry so much.", note: 'fórmula fija de apelación afectiva' }
+  ],
+  pitfalls: [
+    'El posesivo cuantificador (<i>tiene su dificultad</i>) no identifica a ningún poseedor real — funciona como un intensificador fijo, y buscarle un dueño literal es un error de interpretación.',
+    '"Lo tuyo/lo mío" con este valor deja el referente deliberadamente vago — pedir que se especifique exactamente qué es "lo tuyo" suele perder el efecto retórico de la expresión.',
+    'Las fórmulas de apelación con posesivo pospuesto (<i>hija mía</i>) son fijas — no se pueden invertir ni sustituir por la forma prenominal habitual (<i>mi hija</i>) sin perder el matiz afectivo.'
+  ],
+  examples: [
+    { es: 'Este proyecto tiene su miga, no es tan sencillo como parece.', en: "This project has its complexities, it's not as simple as it looks." },
+    { es: 'Bailar salsa, eso sí que es lo suyo.', en: 'Dancing salsa, now that\'s really her thing.' },
+    { es: 'Cada uno ha pasado lo suyo durante estos años difíciles.', en: 'Everyone has been through their own hardships during these difficult years.' }
+  ],
+  probes: [
+    { id: 'p:posesivosC1:cuantificador', kind: 'mcq', q: '"Esto tiene su dificultad." ¿Qué significa "su" aquí?', options: ['Pertenece a alguien mencionado antes', 'Funciona como intensificador, "bastante dificultad"', 'Es un error gramatical'], answer: 1 },
+    { id: 'p:posesivosC1:lomio', kind: 'mcq', q: '"Pasé lo mío." ¿Qué comunica esta frase?', options: ['Detalla exactamente qué pasó', 'Alude a una experiencia difícil, sin especificar cuál', 'Habla de un objeto que perdió'], answer: 1 },
+    { id: 'p:posesivosC1:cloze', kind: 'cloze', text: 'Cariño ___, no te preocupes. (posesivo pospuesto)', accept: ['mío'] },
+    { id: 'p:posesivosC1:recall', kind: 'recall', front: '¿Qué tipo de referente tiene "lo tuyo" en "eso es lo tuyo"?', back: 'un referente conocido por ambos hablantes pero nunca nombrado explícitamente' }
+  ]
+},
+
+{
+  id: 'gr-cuantificadores-propios-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:138', 'gramatica:C1:139', 'gramatica:C1:141', 'gramatica:C1:142', 'gramatica:C1:143', 'gramatica:C1:144',
+         'gramatica:C1:145', 'gramatica:C1:146', 'gramatica:C1:147', 'gramatica:C1:148', 'gramatica:C1:150', 'gramatica:C1:151',
+         'gramatica:C1:152', 'gramatica:C1:153', 'gramatica:C1:154', 'gramatica:C1:155', 'gramatica:C1:156', 'gramatica:C1:158',
+         'gramatica:C1:160', 'gramatica:C1:161'],
+  title: 'Cuantificadores propios en C1: cuanto, cada uno, cualquiera',
+  summary: '"Cada una nos fuimos por nuestro lado" looks like a number-agreement error — a singular quantifier with a plural verb — until you see that "cada uno/a" always agrees in gender with the group it distributes over, but describes each member one at a time, which is precisely why the verb stays plural.',
+  sections: [
+    { h: '"Todo" universal y partitivo', html: '<i>Todo hombre necesita ayuda alguna vez</i> generaliza sin excepción; <i>sabe de todo</i>, con la preposición "de", cambia el sentido a variedad: no "todo" en sentido absoluto, sino "de muchas cosas distintas". <i>La enésima parte, la mitad de la mitad</i> son partitivos que fraccionan una cantidad repetidamente.' },
+    { h: '"Cuanto": relativo cuantificador', html: 'Con antecedente expreso, concuerda en género y número con él: <i>Di cuantas mentiras quieras</i> (femenino plural, por "mentiras"), y el antecedente va siempre DETRÁS del relativo: <i>*di mentiras cuantas quieras</i> no funciona. Sin antecedente expreso, queda invariable: <i>come cuanto quieras</i>.' },
+    { h: '"Cada uno/a": concuerda en género, no en número', html: '<i>Cada una nos fuimos por nuestro lado</i> — "cada una" es singular femenino porque distribuye sobre un grupo de mujeres, una por una, pero la acción conjunta lleva el verbo en plural. Con valor impersonal, sin referente expreso: <i>cada uno tiene su criterio</i>.' },
+    { h: '"Cualquiera": invariable, nunca antepuesto a un sustantivo', html: 'Con sustantivo, pierde la "-a" y va SIEMPRE detrás: <i>un libro cualquiera</i>, nunca <i>*el libro cualquiera</i> ni <i>*cualquiera libro</i>. Sin sustantivo, funciona como un indefinido autónomo: <i>uno cualquiera de esos</i>.' },
+    { h: 'De grado: comparativos y proporcionales', html: 'En comparativas de cantidad, el término de comparación se introduce con <i>de lo que</i> (no "que"): <i>sabe más de lo que esperaba</i>. El cuantificador proporcional <i>bien</i> intensifica sin ser un simple sinónimo de "muy": <i>un té bien caliente</i> sugiere justo el punto adecuado, no un exceso.' }
+  ],
+  contrasts: [
+    { es: 'Di cuantas excusas quieras, no te voy a creer.', en: 'Make up as many excuses as you like, I\'m not going to believe you.', note: 'antecedente expreso (excusas), concuerda en género/número' },
+    { es: 'Come cuanto te apetezca, hay comida de sobra.', en: 'Eat as much as you like, there\'s plenty of food.', note: 'sin antecedente expreso, invariable' },
+    { es: 'Cada una se fue a su casa después de la reunión.', en: 'Each of them went home after the meeting.', note: 'cada una — singular femenino, distribuye sobre el grupo' },
+    { es: 'Un día cualquiera de estos te vas a arrepentir.', en: 'Some day or other you\'re going to regret it.', note: 'cualquiera pospuesto al sustantivo, invariable' }
+  ],
+  pitfalls: [
+    'El relativo cuantificador <i>cuanto</i> exige el antecedente expreso DETRÁS de sí mismo, nunca delante — <i>*di mentiras cuantas quieras</i> es agramatical, frente a <i>di cuantas mentiras quieras</i>.',
+    '"Cada uno/a" concuerda en género con el grupo distribuido, pero el verbo de la acción conjunta puede ir en plural — esto no es un error de concordancia, es la naturaleza distributiva del cuantificador.',
+    '"Cualquiera" nunca precede a un sustantivo en su forma plena — pierde la "a" final y se pospone: <i>un libro cualquiera</i>, jamás <i>*cualquiera libro</i> ni <i>*el libro cualquiera</i>.'
+  ],
+  examples: [
+    { es: 'Sabe de todo un poco, aunque no domina nada a fondo.', en: 'He knows a bit of everything, though he doesn\'t master anything in depth.' },
+    { es: 'Cada uno tiene su forma de afrontar las dificultades.', en: 'Everyone has their own way of facing difficulties.' },
+    { es: 'El resultado fue mejor de lo que habíamos previsto.', en: 'The result was better than we had anticipated.' }
+  ],
+  probes: [
+    { id: 'p:cuantificadoresC1:cuanto', kind: 'mcq', q: '¿Cuál es correcto?', options: ['Di mentiras cuantas quieras.', 'Di cuantas mentiras quieras.', 'Ambas son igual de correctas.'], answer: 1 },
+    { id: 'p:cuantificadoresC1:cadauno', kind: 'mcq', q: '"Cada una nos fuimos por nuestro lado." ¿Es un error de concordancia?', options: ['Sí, el verbo debería ir en singular', 'No, "cada una" concuerda en género, pero la acción conjunta va en plural', 'Sí, "cada una" debería ser "cada uno"'], answer: 1 },
+    { id: 'p:cuantificadoresC1:cloze', kind: 'cloze', text: 'Un libro ___ vale para este propósito. (invariable, pospuesto)', accept: ['cualquiera'] },
+    { id: 'p:cuantificadoresC1:recall', kind: 'recall', front: '¿Con qué introduce el español el término de una comparativa de cantidad ("sabe más ___ esperaba")?', back: 'de lo que (nunca "que" a secas)' }
+  ]
+},
+
+{
+  id: 'gr-interrogativos-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:292', 'gramatica:C1:293', 'gramatica:C1:294', 'gramatica:C1:295', 'gramatica:C1:296', 'gramatica:C1:297', 'gramatica:C1:298'],
+  title: 'Los interrogativos en C1: cuándo se separan, cuándo se coordinan',
+  summary: 'Two interrogatives can sit in the same question only under specific conditions — a partitive phrase can split off from "quién" but not always from "cuál", and coordinating a question-word for a person with one for a place fails outright, while the same combination works fine once reordered.',
+  sections: [
+    { h: 'Separación del interrogativo y la estructura partitiva', html: 'Con <i>quién/es</i>, la estructura partitiva puede quedar separada al final: <i>¿Quién es médico de entre los presentes?</i> Con <i>cuál/es</i>, la separación exige que la partitiva lleve "de": <i>¿Cuál prefieres de todas estas posibilidades?</i> funciona, pero <i>*¿Cuál prefieres canciones de Serrat?</i>, sin ese "de" que marca la partición, no.' },
+    { h: 'Restricciones en la coordinación de interrogativos', html: 'Los adverbios interrogativos coordinan con relativa facilidad entre sí. Coordinar un interrogativo de sujeto con uno de lugar resulta agramatical: <i>*¿Quién y dónde ha guardado mis fotos?</i> simplemente no funciona, aunque la pregunta sea perfectamente razonable en sentido.' },
+    { h: 'Orden fijo cuando se combinan categorías distintas', html: 'Si se necesita preguntar por dos cosas de categorías distintas (una persona y un motivo, por ejemplo), el interrogativo adverbial va en posición FINAL, tras una pregunta completa: <i>¿Quién te ha dado eso y para qué?</i>, nunca <i>*¿Para qué y quién te ha dado eso?</i>' }
+  ],
+  contrasts: [
+    { es: '¿Quién sabe cocinar de entre vosotros?', en: 'Who among you knows how to cook?', note: 'quién + partitiva separada al final' },
+    { es: '¿Cuál te gusta más de todos estos modelos?', en: 'Which of all these models do you like best?', note: 'cuál + partitiva con "de", correcto' },
+    { es: '¿Quién ha organizado esto y por qué?', en: 'Who organized this and why?', note: 'adverbial interrogativo en posición final, tras pregunta completa' },
+    { es: '¿Cómo y cuándo se enteró de la noticia?', en: 'How and when did he find out about the news?', note: 'coordinación fácil entre dos adverbios interrogativos' }
+  ],
+  pitfalls: [
+    'Con <i>cuál</i>, la estructura partitiva solo puede separarse si lleva la preposición "de" — sin ella, la frase resulta agramatical, aunque con "quién" ese mismo patrón sin "de" a veces se tolera mejor.',
+    'Coordinar un interrogativo de sujeto o de objeto con uno de lugar o tiempo (<i>*quién y dónde</i>) es agramatical, aunque la pregunta compuesta tenga pleno sentido — hay que separarlas en dos preguntas o reordenar.',
+    'Cuando se combinan categorías distintas de interrogativos, el adverbial va siempre al final, después de una pregunta ya completa — nunca al principio, delante del interrogativo de sujeto u objeto.'
+  ],
+  examples: [
+    { es: '¿Quién ha llegado tarde de todo el grupo?', en: 'Who from the whole group arrived late?' },
+    { es: '¿Cuál eliges de las dos opciones?', en: 'Which do you choose of the two options?' },
+    { es: '¿Qué compraste y dónde?', en: 'What did you buy and where?' }
+  ],
+  probes: [
+    { id: 'p:interrogativosC1:cual', kind: 'mcq', q: '¿Cuál de estas frases es correcta?', options: ['¿Cuál prefieres canciones de Serrat?', '¿Cuál prefieres de las canciones de Serrat?', 'Ambas son correctas'], answer: 1 },
+    { id: 'p:interrogativosC1:coordinacion', kind: 'mcq', q: '¿Por qué "*¿Quién y dónde ha guardado mis fotos?" es agramatical?', options: ['Falta una preposición', 'No se pueden coordinar un interrogativo de sujeto y uno de lugar', 'El verbo está mal conjugado'], answer: 1 },
+    { id: 'p:interrogativosC1:cloze', kind: 'cloze', text: '¿Quién te ha dado eso y ___ qué? (orden fijo, adverbial al final)', accept: ['para'] },
+    { id: 'p:interrogativosC1:recall', kind: 'recall', front: '¿Dónde va el interrogativo adverbial cuando se combina con uno de sujeto u objeto?', back: 'al final, tras una pregunta ya completa (¿quién te lo dio y para qué?)' }
+  ]
+},
+
+{
+  id: 'gr-exclamativos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  pcic: ['gramatica:C1:305', 'gramatica:C1:306', 'gramatica:C1:307', 'gramatica:C1:308', 'gramatica:C1:309', 'gramatica:C1:310'],
+  title: 'Los exclamativos en C1: cuánto + valorativo, dónde, y el orden fijo',
+  summary: '"¡Cuántos inocentes le habrán creído!" packs a conjecture about the past into an exclamation about quantity — the futuro perfecto here is not future at all, and the whole construction depends on an inflected evaluative adjective agreeing with the noun it quantifies.',
+  sections: [
+    { h: 'Cuánto/a/os/as + adjetivo valorativo flexionado', html: '<i>¡Cuántos inocentes le habrán creído!</i> combina el exclamativo de cantidad con un adjetivo evaluativo que concuerda en género y número ("inocentes"), y con un futuro perfecto de valor conjetural sobre el pasado, no sobre el futuro.' },
+    { h: '"Dónde", con o sin preposición', html: '<i>¡Dónde nos hemos metido!</i> funciona solo con el verbo; con preposición, <i>¡Por dónde nos llevó!</i>, el exclamativo señala el trayecto o el medio, no solo el destino.' },
+    { h: 'Orden fijo: el exclamativo pegado al verbo', html: 'El exclamativo va inmediatamente seguido del sintagma verbal, con o sin clíticos, sin que nada se interponga: <i>¡Qué golpe le dio en la cara!</i> — ni el sujeto ni ningún complemento pueden colocarse entre el exclamativo y el verbo.' }
+  ],
+  contrasts: [
+    { es: '¡Cuántas mentiras habrá contado ya!', en: 'However many lies he must have told by now!', note: 'cuántas + sustantivo, futuro perfecto conjetural' },
+    { es: '¡Dónde habremos dejado las llaves!', en: 'Wherever can we have left the keys!', note: 'dónde sin preposición, verbo directamente' },
+    { es: '¡Por dónde nos habrán llevado esta vez!', en: 'Wherever might they have taken us this time!', note: 'dónde con preposición, marca trayecto o medio' },
+    { es: '¡Qué susto nos ha dado esta noticia!', en: 'What a scare this news gave us!', note: 'exclamativo pegado al verbo, sin nada interpuesto' }
+  ],
+  pitfalls: [
+    'El futuro perfecto en estas exclamaciones (<i>habrán creído, habrá contado</i>) no habla del futuro — es un valor conjetural sobre algo ya ocurrido, igual que en otros usos de C1 del futuro perfecto.',
+    'El adjetivo evaluativo tras "cuántos/as" debe concordar en género y número con el sustantivo — <i>¡cuántos inocentes!</i> (masculino plural), nunca una forma invariable.',
+    'Entre el exclamativo y el verbo no puede interponerse el sujeto ni ningún complemento — <i>*¡qué él golpe le dio!</i> es agramatical; los clíticos sí pueden preceder al verbo, como es habitual.'
+  ],
+  examples: [
+    { es: '¡Cuántos problemas nos habrá ahorrado esta decisión!', en: 'However many problems this decision must have spared us!' },
+    { es: '¡Dónde se habrá metido el gato esta vez!', en: 'Wherever can the cat have got to this time!' },
+    { es: '¡Qué disgusto se llevó al enterarse!', en: 'What a shock he got when he found out!' }
+  ],
+  probes: [
+    { id: 'p:exclamativosC1:futperf', kind: 'mcq', q: '"¡Cuántos inocentes le habrán creído!" ¿A qué tiempo se refiere realmente el futuro perfecto?', options: ['Al futuro, una predicción', 'A una conjetura sobre algo ya ocurrido', 'Al presente habitual'], answer: 1 },
+    { id: 'p:exclamativosC1:orden', kind: 'mcq', q: '¿Qué puede interponerse entre el exclamativo y el verbo?', options: ['El sujeto', 'Nada, salvo los clíticos que preceden al verbo', 'Cualquier complemento'], answer: 1 },
+    { id: 'p:exclamativosC1:cloze', kind: 'cloze', text: '¡___ inocentes le habrán creído! (cuánto, concordando con "inocentes")', accept: ['Cuántos', 'cuántos'] },
+    { id: 'p:exclamativosC1:recall', kind: 'recall', front: '¿Con qué debe concordar el adjetivo evaluativo tras "cuántos/as"?', back: 'con el sustantivo que cuantifica, en género y número' }
+  ]
 }
 
 ];
