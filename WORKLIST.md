@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (53/202 done)
+## C1 — lessons (56/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -619,16 +619,16 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 24 pts · `gramatica C1 § 15.2. Oraciones subordinadas adjet`  — gr-sub-adjetivas-relativo-c1
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica C1 § 15.3. Oraciones subordinadas adver`  — gr-sub-adv-temporales-c1, gr-sub-adv-lugar-modo-c1, gr-sub-adv-causales-c1, gr-sub-adv-finales-c1, gr-sub-adv-condicionales-c1, gr-sub-adv-consecutivas-c1, gr-sub-adv-comparativas-c1, gr-sub-adv-concesivas-c1
 
-### C1 · notion (6/57)
+### C1 · notion (9/57)
 - [x] **Existencia, inexistencia** · 17 pts · `nociones_generales C1 § 1.1. Existencia, inexistencia`  — nt-existencia-inexistencia-c1
 - [x] **Presencia, ausencia** · 17 pts · `nociones_generales C1 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-c1
 - [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales C1 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-c1
 - [x] **Cualidad general** · 9 pts · `nociones_generales C1 § 1.4. Cualidad general`  — nt-cualidad-general-c1
 - [x] **Acontecimiento** · 5 pts · `nociones_generales C1 § 1.5. Acontecimiento`  — nt-acontecimiento-c1
 - [x] **Certeza, incertidumbre** · 13 pts · `nociones_generales C1 § 1.6. Certeza, incertidumbre`  — nt-certeza-incertidumbre-c1
-- [ ] **Realidad, ficción** · 17 pts · `nociones_generales C1 § 1.7. Realidad, ficción`
-- [ ] **Necesidad, contingencia, obligación** · 12 pts · `nociones_generales C1 § 1.8. Necesidad, contingencia, obli`
-- [ ] **Generalidad, especificidad** · 13 pts · `nociones_generales C1 § 1.9. Generalidad, especificidad`
+- [x] **Realidad, ficción** · 17 pts · `nociones_generales C1 § 1.7. Realidad, ficción`  — nt-realidad-ficcion-c1
+- [x] **Necesidad, contingencia, obligación** · 12 pts · `nociones_generales C1 § 1.8. Necesidad, contingencia, obli`  — nt-necesidad-obligacion-c1
+- [x] **Generalidad, especificidad** · 13 pts · `nociones_generales C1 § 1.9. Generalidad, especificidad`  — nt-generalidad-especificidad-c1
 - [ ] **Cantidad numérica** · 4 pts · `nociones_generales C1 § 2.1. Cantidad numérica`
 - [ ] **Cantidad relativa** · 13 pts · `nociones_generales C1 § 2.2. Cantidad relativa`
 - [ ] **Aumento, disminución** · 11 pts · `nociones_generales C1 § 2.3. Aumento, disminución`

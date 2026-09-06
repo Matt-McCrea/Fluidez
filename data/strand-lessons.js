@@ -23345,6 +23345,133 @@ window.STRAND_LESSONS = [
     { id: 'p:certezaincertidumbreC1:cloze', kind: 'cloze', text: 'Sin lugar a ___, es la mejor decisión que pudimos tomar. (certeza máxima)', accept: ['dudas'] },
     { id: 'p:certezaincertidumbreC1:recall', kind: 'recall', front: '¿Qué expresiones representan el grado máximo de certeza en este vocabulario?', back: '"sin lugar a dudas" y "no cabe la menor duda"' }
   ]
+},
+
+{
+  id: 'nt-realidad-ficcion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:146', 'nociones_generales:C1:147', 'nociones_generales:C1:148', 'nociones_generales:C1:149',
+         'nociones_generales:C1:150', 'nociones_generales:C1:151', 'nociones_generales:C1:152', 'nociones_generales:C1:153',
+         'nociones_generales:C1:154', 'nociones_generales:C1:155', 'nociones_generales:C1:156', 'nociones_generales:C1:157',
+         'nociones_generales:C1:158', 'nociones_generales:C1:159', 'nociones_generales:C1:160', 'nociones_generales:C1:161', 'nociones_generales:C1:162'],
+  title: 'Realidad y ficción en C1: idealizar, disimular y volver a la realidad',
+  summary: 'Entre lo real y lo imaginado hay todo un vocabulario de matices — una utopía no es lo mismo que una alucinación, "en apariencia" avisa de que las cosas podrían no ser lo que parecen, y locuciones como "tener los pies en el suelo" convierten la actitud ante la realidad en toda una imagen.',
+  sections: [
+    { h: 'Grados de irrealidad', html: '<i>Utopía</i> es un ideal deseable pero irrealizable; <i>alucinación</i>, una percepción sin base real; <i>apariencia</i>, lo que algo parece sin garantía de que lo sea; <i>sueño inalcanzable/irrealizable</i>, una aspiración que no se puede cumplir.' },
+    { h: 'Adjetivos: entre lo real y lo engañoso', html: '<i>Existente, virtual</i> matizan el tipo de realidad (física o simulada); <i>aparente, engañoso</i> advierten de que las apariencias pueden no coincidir con la realidad; <i>palpable, (im)perceptible</i> hablan de si la realidad se puede captar por los sentidos.' },
+    { h: 'Verbos: crear, ocultar o hacer realidad', html: '<i>Alucinar</i> (percibir algo sin base real), <i>idealizar</i> (atribuir cualidades irreales por admiración o nostalgia), <i>(di)simular</i> (ocultar la realidad tras una apariencia distinta), <i>hacer(se) realidad</i> (pasar de lo imaginado a lo real: <i>el proyecto se hizo realidad al cabo de un tiempo</i>), <i>representar la realidad</i> (mostrarla mediante otra cosa: <i>las fotos representan la realidad de estos niños</i>).' },
+    { h: 'Locuciones sobre la actitud ante la realidad', html: '<i>Tener/poner los pies en el suelo/en la tierra</i> es mantener una actitud realista; <i>cerrar los ojos ante la realidad, negar la realidad</i>, lo contrario, rehusar verla; <i>volver a la realidad</i>, dejar de lado una fantasía o ilusión. <i>En apariencia</i> introduce una descripción que podría no ser exacta.' }
+  ],
+  exponents: [
+    { es: 'En apariencia todo iba bien, pero algo no encajaba.', en: 'On the surface everything seemed fine, but something didn\'t add up.', register: 'neutral' },
+    { es: 'Es hora de poner los pies en el suelo.', en: "It's time to get real.", register: 'coloquial' },
+    { es: 'Idealiza demasiado su infancia.', en: 'He idealizes his childhood too much.', register: 'neutral' },
+    { es: 'El sueño se hizo realidad tras años de esfuerzo.', en: 'The dream came true after years of effort.', register: 'neutral' },
+    { es: 'Se negó a aceptar la realidad de la situación.', en: 'He refused to accept the reality of the situation.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Era una utopía que nunca se cumplió.', en: 'It was a utopia that never came to pass.', note: 'ideal irrealizable, no un simple deseo' },
+    { es: 'Tuvo una alucinación durante la fiebre.', en: 'He had a hallucination during the fever.', note: 'percepción sin base real, no una simple imaginación' }
+  ],
+  pitfalls: [
+    '"Utopía" no es sinónimo de cualquier deseo — implica específicamente un ideal que, por su naturaleza, no se puede realizar.',
+    '"En apariencia" no es un simple sinónimo de "aparentemente" sin más matiz — introduce explícitamente la posibilidad de que la realidad sea distinta.',
+    '"Idealizar" implica atribuir cualidades irreales, casi siempre positivas — no es lo mismo que simplemente "recordar con cariño".'
+  ],
+  examples: [
+    { es: 'La novela mezcla realidad y ficción de forma magistral.', en: 'The novel masterfully blends reality and fiction.' },
+    { es: 'No quiso cerrar los ojos ante la realidad de la crisis.', en: 'He refused to turn a blind eye to the reality of the crisis.' },
+    { es: 'Costó volver a la realidad después de las vacaciones.', en: 'It was hard to get back to reality after the holidays.' }
+  ],
+  probes: [
+    { id: 'p:realidadficcionC1:utopia', kind: 'mcq', q: '¿Qué distingue a una "utopía" de un simple deseo?', options: ['Nada, son sinónimos', 'Que es un ideal que por naturaleza no se puede realizar', 'Que siempre se cumple'], answer: 1 },
+    { id: 'p:realidadficcionC1:apariencia', kind: 'mcq', q: '"En apariencia todo iba bien." ¿Qué advierte esta expresión?', options: ['Que la realidad coincide con lo que se ve', 'Que la realidad podría ser distinta de lo que parece', 'Que nada es real'], answer: 1 },
+    { id: 'p:realidadficcionC1:cloze', kind: 'cloze', text: 'Es hora de poner los pies en el ___. (actitud realista)', accept: ['suelo'] },
+    { id: 'p:realidadficcionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "idealizar" y simplemente "recordar con cariño"?', back: 'idealizar implica atribuir cualidades irreales, no solo un recuerdo afectuoso' }
+  ]
+},
+
+{
+  id: 'nt-necesidad-obligacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:181', 'nociones_generales:C1:182', 'nociones_generales:C1:183', 'nociones_generales:C1:184',
+         'nociones_generales:C1:185', 'nociones_generales:C1:186', 'nociones_generales:C1:187', 'nociones_generales:C1:188',
+         'nociones_generales:C1:189', 'nociones_generales:C1:190', 'nociones_generales:C1:191', 'nociones_generales:C1:192'],
+  title: 'Necesidad, contingencia y obligación en C1: de lo prescindible a "no quedar más remedio"',
+  summary: 'Este vocabulario permite graduar con precisión cuánto se necesita algo — desde lo "prescindible" hasta lo "indispensable" — y expresar que una acción fue forzada por las circunstancias, no elegida libremente, con fórmulas como "no quedar más remedio" o "por necesidad".',
+  sections: [
+    { h: 'Lo inevitable y lo circunstancial', html: '<i>Destino</i> sugiere una necesidad casi predeterminada; <i>circunstancial</i>, lo contrario, algo debido a las circunstancias del momento, no a una necesidad profunda. <i>(Ir)remediable</i> distingue lo que tiene solución de lo que no; <i>irremediablemente</i> es su adverbio: algo ocurre sin que se pueda evitar.' },
+    { h: 'La escala de lo necesario', html: 'De menos a más necesario: <i>prescindible</i> (se puede pasar sin ello) — <i>preciso</i> (necesario, en registro más formal) — <i>oportuno, indispensable, vital</i> (necesidad creciente, hasta lo absolutamente esencial). <i>Tener una importancia fundamental/decisiva/indiscutible/relativa</i> gradúa esa misma necesidad aplicada a la importancia de algo.' },
+    { h: 'Lo esencial y lo forzado por las circunstancias', html: '<i>De primera necesidad</i> describe lo esencial para la subsistencia: <i>un artículo de primera necesidad</i>. <i>Por necesidad, por circunstancias</i> explican una acción como forzada, no elegida: <i>tuvo que actuar así por necesidad</i>. <i>Dadas las circunstancias</i> introduce ese mismo marco como justificación.' },
+    { h: '"No quedar/no haber más remedio"', html: 'Esta locución expresa que no existe otra opción posible — la acción se realiza porque no hay alternativa, no porque se prefiera: equivalente a "no tener más opción que...".' }
+  ],
+  exponents: [
+    { es: 'Es un gasto totalmente prescindible.', en: 'It\'s a completely dispensable expense.', register: 'formal' },
+    { es: 'Dadas las circunstancias, no tuvimos más remedio que cancelar el viaje.', en: 'Given the circumstances, we had no choice but to cancel the trip.', register: 'neutral' },
+    { es: 'El agua es un producto de primera necesidad.', en: 'Water is a basic necessity.', register: 'formal' },
+    { es: 'Tuvo que mudarse por circunstancias familiares.', en: 'He had to move for family reasons.', register: 'neutral' },
+    { es: 'Es un factor de importancia decisiva para el resultado.', en: 'It\'s a factor of decisive importance for the outcome.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Ese trámite es prescindible; este otro es indispensable.', en: 'That procedure is dispensable; this other one is indispensable.', note: 'extremos opuestos de la escala de necesidad' },
+    { es: 'No quedó más remedio que aceptar las condiciones.', en: 'There was no choice but to accept the conditions.', note: 'ausencia total de alternativa' }
+  ],
+  pitfalls: [
+    '"Circunstancial" no significa "poco importante" — describe algo determinado por las circunstancias del momento, que puede ser tan relevante como cualquier otra cosa.',
+    '"No quedar/no haber más remedio" implica ausencia total de alternativa, no simplemente una opción preferida entre varias.',
+    '"De primera necesidad" se aplica a bienes básicos para la subsistencia (alimentos, agua, medicinas), no a cualquier cosa "muy necesaria" en sentido amplio.'
+  ],
+  examples: [
+    { es: 'Ese comentario es totalmente prescindible.', en: 'That comment is completely unnecessary.' },
+    { es: 'Actuó así por necesidad, no por gusto.', en: 'He acted that way out of necessity, not by choice.' },
+    { es: 'La decisión tuvo un carácter puramente circunstancial.', en: 'The decision was purely circumstantial.' }
+  ],
+  probes: [
+    { id: 'p:necesidadobligacionC1:remedio', kind: 'mcq', q: '"No quedó más remedio que aceptar." ¿Qué implica?', options: ['Fue la opción preferida entre varias', 'No había ninguna alternativa posible', 'Fue una decisión fácil'], answer: 1 },
+    { id: 'p:necesidadobligacionC1:escala', kind: 'mcq', q: 'Ordena de menos a más necesario: ¿cuál va primero?', options: ['Indispensable', 'Prescindible', 'Vital'], answer: 1 },
+    { id: 'p:necesidadobligacionC1:cloze', kind: 'cloze', text: 'Dadas las ___, tuvimos que cancelar el evento. (marco justificativo)', accept: ['circunstancias'] },
+    { id: 'p:necesidadobligacionC1:recall', kind: 'recall', front: '¿A qué tipo de bienes se aplica "de primera necesidad"?', back: 'a bienes básicos esenciales para la subsistencia (alimentos, agua, medicinas), no a cualquier cosa muy necesaria' }
+  ]
+},
+
+{
+  id: 'nt-generalidad-especificidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:202', 'nociones_generales:C1:203', 'nociones_generales:C1:204', 'nociones_generales:C1:205',
+         'nociones_generales:C1:206', 'nociones_generales:C1:207', 'nociones_generales:C1:208', 'nociones_generales:C1:209',
+         'nociones_generales:C1:210', 'nociones_generales:C1:211', 'nociones_generales:C1:212', 'nociones_generales:C1:213', 'nociones_generales:C1:214'],
+  title: 'Generalidad y especificidad en C1: de "por lo general" a "centrarse en"',
+  summary: 'Moverse entre lo general y lo particular con precisión — hablar de la "totalidad" frente a un "rasgo" concreto, de lo "generalizado" frente a lo "peculiar" — es una destreza argumentativa central en C1, especialmente en textos que alternan afirmaciones amplias con matices específicos.',
+  sections: [
+    { h: 'Lo general: sustantivos y adjetivos', html: '<i>Totalidad, conjunto</i> designan el todo: <i>el conjunto de la población</i>. <i>Generalizado</i> describe algo extendido ampliamente: <i>una creencia generalizada</i>; <i>extendido</i>, de forma similar: <i>un rumor extendido</i>.' },
+    { h: 'Lo específico: sustantivos y adjetivos', html: '<i>Particularidad, rasgo</i> señalan lo individual dentro de lo general. <i>Peculiar, inconfundible</i> describen algo distintivo, único. <i>Propio/específico/representativo de</i> vincula una característica a una categoría concreta.' },
+    { h: 'Verbos de especificación', html: '<i>Personalizar, individualizar</i> adaptan algo general a un caso concreto: <i>es recomendable individualizar el tratamiento, ya que los síntomas pueden ser muy variados</i>. <i>Especificar</i> es precisar con detalle. <i>Centrar(se) en</i> es dirigir la atención hacia un aspecto concreto, dejando el resto en segundo plano: <i>centrarse en un aspecto</i>.' },
+    { h: 'Locuciones y adverbios de alcance', html: '<i>Específicamente, en especial</i> introducen una precisión dentro de un enunciado más general. <i>En su totalidad</i> abarca todo sin excepción: <i>dicha información puede ser utilizada en su totalidad</i>. <i>Por lo general, por regla general</i> introducen, a la inversa, una afirmación amplia que admite excepciones.' }
+  ],
+  exponents: [
+    { es: 'Por lo general, los resultados son positivos.', en: 'Generally speaking, the results are positive.', register: 'neutral' },
+    { es: 'El estudio se centra especialmente en los adolescentes.', en: 'The study focuses especially on teenagers.', register: 'formal' },
+    { es: 'Es recomendable especificar el motivo de la solicitud.', en: 'It\'s advisable to specify the reason for the request.', register: 'formal' },
+    { es: 'La medida beneficia al conjunto de la población.', en: 'The measure benefits the population as a whole.', register: 'formal' },
+    { es: 'Ese acento es totalmente inconfundible.', en: 'That accent is completely unmistakable.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Por lo general, llega puntual.', en: 'Generally, he arrives on time.', note: 'admite excepciones' },
+    { es: 'Llegó puntual en su totalidad de las veces.', en: 'He arrived on time every single time.', note: '"en su totalidad" no admite excepciones' }
+  ],
+  pitfalls: [
+    '"Por lo general" admite excepciones — no equivale a "siempre" ni a "en su totalidad", que sí abarcan sin excepción.',
+    '"Individualizar/personalizar" implica adaptar algo general a un caso concreto, no simplemente "hacerlo más específico" en abstracto.',
+    '"Peculiar" en español no siempre tiene la connotación negativa que "peculiar" tiene en inglés — a menudo describe simplemente lo distintivo, sin juicio de valor.'
+  ],
+  examples: [
+    { es: 'Por regla general, prefiere trabajar por la mañana.', en: 'As a rule, he prefers to work in the morning.' },
+    { es: 'El informe se centra en tres regiones concretas.', en: 'The report focuses on three specific regions.' },
+    { es: 'Tiene un estilo inconfundible.', en: 'He has an unmistakable style.' }
+  ],
+  probes: [
+    { id: 'p:generalidadespecificidadC1:porloregla', kind: 'mcq', q: '"Por lo general" ¿admite excepciones?', options: ['Sí', 'No, es absoluto', 'Solo en textos formales'], answer: 0 },
+    { id: 'p:generalidadespecificidadC1:individualizar', kind: 'mcq', q: '¿Qué implica "individualizar el tratamiento"?', options: ['Aplicar el mismo tratamiento a todos', 'Adaptar el tratamiento general a cada caso concreto', 'Eliminar el tratamiento'], answer: 1 },
+    { id: 'p:generalidadespecificidadC1:cloze', kind: 'cloze', text: 'El estudio se ___ en los adolescentes. (dirigir la atención hacia un aspecto concreto)', accept: ['centra'] },
+    { id: 'p:generalidadespecificidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "por lo general" y "en su totalidad"?', back: '"por lo general" admite excepciones; "en su totalidad" abarca todo sin excepción' }
+  ]
 }
 
 ];
