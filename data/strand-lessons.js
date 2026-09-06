@@ -25693,6 +25693,45 @@ window.STRAND_LESSONS = [
     { id: 'p:valorprecioC1:cloze', kind: 'cloze', text: 'Ese piso está ___ de precio para la zona. (muy barato, coloquial)', accept: ['tirado'] },
     { id: 'p:valorprecioC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "importe/coste" y "valor"?', back: 'importe/coste es la cifra a pagar; valor es lo que algo realmente vale, que puede no coincidir con el precio' }
   ]
+},
+
+{
+  id: 'nt-atractivo-calidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1445', 'nociones_generales:C1:1446', 'nociones_generales:C1:1449', 'nociones_generales:C1:1450', 'nociones_generales:C1:1451'],
+  title: 'Atractivo y calidad en C1: de "apuesto" a "vulgar", de "deficiente" a "superior"',
+  summary: 'El atractivo físico y la calidad de un producto comparten en C1 una misma lógica de extremos — elegancia frente a vulgaridad en un caso, deficiencia frente a superioridad en el otro — con verbos concretos para actuar sobre la calidad: garantizarla, mejorarla, asegurarla.',
+  sections: [
+    { h: 'Atractivo: elegancia frente a vulgaridad', html: '<i>Apuesto, exquisito, distinguido</i> describen un atractivo refinado y elegante. En el extremo opuesto, <i>ridículo, vulgar, basto, antiestético</i> describen falta de gusto o de elegancia.' },
+    { h: 'Calidad: una escala completa', html: '<i>Calidad deficiente/dudosa/superior/media/alta</i> gradúa la calidad de un producto o servicio de forma explícita. <i>Satisfactorio, pasable</i> son valoraciones intermedias, apenas aceptables.' },
+    { h: 'Actuar sobre la calidad', html: '<i>Asegurar/aumentar/garantizar/mejorar la calidad</i> son las acciones típicas de gestión de calidad en contextos empresariales o técnicos.' }
+  ],
+  exponents: [
+    { es: 'Es una persona apuesta y distinguida.', en: 'He is a handsome, distinguished person.', register: 'formal' },
+    { es: 'El chiste le pareció de un gusto vulgar.', en: 'He found the joke to be in poor taste.', register: 'neutral' },
+    { es: 'La empresa garantiza la calidad de todos sus productos.', en: 'The company guarantees the quality of all its products.', register: 'formal' },
+    { es: 'El material es de calidad dudosa.', en: 'The material is of questionable quality.', register: 'neutral' },
+    { es: 'Buscan mejorar la calidad del servicio al cliente.', en: 'They are looking to improve the quality of customer service.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un traje exquisito, de corte impecable.', en: 'An exquisite suit, impeccably cut.', note: 'elegancia refinada' },
+    { es: 'Un chiste basto, sin ninguna gracia.', en: 'A crude joke, with no wit at all.', note: 'falta de elegancia o buen gusto' }
+  ],
+  pitfalls: [
+    '"Vulgar" en español no siempre implica algo ofensivo o soez — a menudo describe simplemente falta de refinamiento o elegancia.',
+    '"Pasable" aplicado a la calidad no es un elogio — describe algo apenas aceptable, no bueno de verdad.',
+    '"Asegurar/garantizar la calidad" son expresiones de gestión empresarial — no equivalen a un simple "la calidad es buena" descriptivo.'
+  ],
+  examples: [
+    { es: 'Su forma de vestir es siempre muy distinguida.', en: 'His way of dressing is always very distinguished.' },
+    { es: 'El hotel ofrece un servicio de calidad superior.', en: 'The hotel offers a superior-quality service.' },
+    { es: 'La decoración le pareció bastante antiestética.', en: 'He found the decoration rather unattractive.' }
+  ],
+  probes: [
+    { id: 'p:atractivocalidadC1:vulgar', kind: 'mcq', q: '¿Qué describe "vulgar" en español?', options: ['Siempre algo ofensivo', 'Falta de refinamiento o elegancia', 'Un color específico'], answer: 1 },
+    { id: 'p:atractivocalidadC1:pasable', kind: 'mcq', q: '"Calidad pasable" es...', options: ['Un elogio', 'Apenas aceptable, no realmente buena', 'La calidad más alta'], answer: 1 },
+    { id: 'p:atractivocalidadC1:cloze', kind: 'cloze', text: 'La empresa ___ la calidad de todos sus productos. (asegurar formalmente)', accept: ['garantiza'] },
+    { id: 'p:atractivocalidadC1:recall', kind: 'recall', front: '¿Qué adjetivos describen un atractivo refinado, y cuáles su opuesto?', back: 'apuesto/exquisito/distinguido para lo refinado; ridículo/vulgar/basto/antiestético para su opuesto' }
+  ]
 }
 
 ];
