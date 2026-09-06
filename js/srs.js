@@ -93,12 +93,34 @@ window.SRS = (function () {
     return out;
   }
 
+  /* The parsed state is held in memory. load() used to hit localStorage and
+   * JSON.parse on EVERY call, and state()/isEnrolled() call load() — so
+   * Hub.reviewPool(), which asks isEnrolled once per recall item across every
+   * lesson, made ~3,000 parses and ~6,000 storage reads per render. That was
+   * fine at 18 lessons and is a ten-second freeze at 690.
+   *
+   * The cache is written through by save(), and dropped if another tab changes
+   * the store, so it cannot go stale. */
+  var _cache = null;
+
   function load() {
+    if (_cache) return _cache;
     var s;
     try { s = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { s = {}; }
-    return migrate(s);
+    _cache = migrate(s);
+    return _cache;
   }
-  function save(s) { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch (e) {} }
+  function save(s) {
+    _cache = s;
+    try { localStorage.setItem(KEY, JSON.stringify(s)); } catch (e) {}
+  }
+
+  // another tab (or a data import) wrote the store — drop the cache
+  if (typeof window !== 'undefined' && window.addEventListener) {
+    window.addEventListener('storage', function (e) {
+      if (!e || !e.key || e.key === KEY || e.key === SCHEMA_KEY) _cache = null;
+    });
+  }
 
   function state(id) { return load()[id] || null; }
   function isEnrolled(id) { return !!state(id); }
