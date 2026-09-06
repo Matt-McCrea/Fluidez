@@ -27830,6 +27830,47 @@ window.STRAND_LESSONS = [
     { id: 'p:aceptarrechazarpropuestaC1:cloze', kind: 'cloze', text: '¿Ir con ellos? ¡Ni ___! (rechazo coloquial extremo)', accept: ['atado'] },
     { id: 'p:aceptarrechazarpropuestaC1:recall', kind: 'recall', front: '¿Qué escala de rotundidad forman "ni hablar", "ni pensarlo", "ni loco" y "ni atado"?', back: 'una escala creciente de rechazo coloquial, de más suave a más rotundo, con "ni atado" en el extremo' }
   ]
+},
+
+{
+  id: 'fn-aconsejar-advertir-amenazar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:944', 'funciones:C1:945', 'funciones:C1:946', 'funciones:C1:947', 'funciones:C1:948', 'funciones:C1:949',
+         'funciones:C1:953', 'funciones:C1:954', 'funciones:C1:955', 'funciones:C1:956',
+         'funciones:C1:963', 'funciones:C1:964', 'funciones:C1:965', 'funciones:C1:966'],
+  title: 'Aconsejar, advertir y amenazar en C1: "allá tú" cambia de sentido según el contexto',
+  summary: '"Allá tú" aparece tanto al advertir (con preocupación genuina) como al amenazar (con matiz de resentimiento) — el mismo molde sirve para actos de habla muy distintos, y "como + subjuntivo" convierte una simple condición en amenaza según cómo se deje suspendida la frase.',
+  sections: [
+    { h: 'Aconsejar: de la pregunta cortés a la advertencia tajante', html: '<i>¿(Me) aceptas un consejo?</i> pide permiso antes de aconsejar. <i>Lo más aconsejable/recomendable (en estos casos) es...</i> y <i>te sugeriría...</i> presentan el consejo con cierta distancia formal. <i>Lo único que puedo aconsejarte/recomendarte/sugerirte es que...</i> enfatiza que es la única opción que se le ocurre al hablante. <i>Siempre puedes/podrías/queda el recurso de...</i> ofrece una alternativa como último recurso: <i>siempre queda el recurso de ir de frente y decir toda la verdad</i>. <i>Ni se te ocurra...</i> es un consejo negativo muy tajante, casi una prohibición: <i>ni se te ocurra contárselo</i>.' },
+    { h: 'Advertir: informar del riesgo sin implicar amenaza', html: '<i>Estás/quedas avisado/advertido</i> y <i>luego no digas que no te avisé/te advertí</i> señalan que la responsabilidad de lo que ocurra después recae en quien no siguió el aviso. <i>Allá tú...</i> y <i>tú verás/sabrás (lo que haces)</i> expresan aquí una preocupación genuina, dejando la decisión final al otro: <i>allá tú, pero si no te llevas un jersey, vas a pasar frío</i>.' },
+    { h: 'Amenazar: la condición que se convierte en amenaza', html: '<i>Como + subjuntivo, ...</i> introduce una condición cuyo cumplimiento traerá una consecuencia negativa explícita: <i>como no llegues a la hora, no entras</i>. <i>Te arrepentirás (de esto)</i> es directo. <i>Allá tú (con lo que haces), pero...</i> retoma la misma fórmula usada al advertir, pero aquí con un matiz de resentimiento o distanciamiento, no de preocupación. Una condicional con "como" puede quedar suspendida, sin decir la consecuencia, dejándola implícita y amenazante: <i>como no llegues a la hora...</i> (y el silencio que sigue completa la amenaza).' }
+  ],
+  exponents: [
+    { es: 'Ni se te ocurra decirle nada sin consultarlo antes conmigo.', en: "Don't even think about telling him anything without checking with me first.", register: 'coloquial' },
+    { es: 'Lo más recomendable es que consultes con un especialista.', en: "It's most advisable that you consult a specialist.", register: 'formal' },
+    { es: 'Quedas avisado: el plazo termina mañana.', en: 'Consider yourself warned: the deadline ends tomorrow.', register: 'formal' },
+    { es: 'Como no me devuelvas el dinero esta semana, se acabó nuestra amistad.', en: "If you don't pay me back this week, our friendship is over.", register: 'coloquial' },
+    { es: 'Allá tú, pero yo creo que te estás equivocando.', en: "That's your call, but I think you're making a mistake.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Allá tú, pero abrígate, que hace mucho frío.', en: 'Suit yourself, but bundle up, it\'s very cold.', note: 'advertencia con preocupación genuina' },
+    { es: 'Allá tú con lo que haces, pero no cuentes conmigo nunca más.', en: 'That\'s on you, but don\'t count on me ever again.', note: 'amenaza con resentimiento, no preocupación' }
+  ],
+  pitfalls: [
+    '"Allá tú" cambia de sentido según el contexto: puede expresar preocupación genuina al advertir, o resentimiento y distanciamiento al amenazar — el tono y lo que sigue determinan cuál es.',
+    'Una condicional con "como" dejada suspendida ("como no llegues a la hora...") no está incompleta por error — el silencio que sigue completa la amenaza sin necesidad de decirla explícitamente.',
+    '"Ni se te ocurra" no es un simple consejo — funciona casi como una prohibición tajante, mucho más fuerte que "no deberías".'
+  ],
+  examples: [
+    { es: 'Siempre puedes recurrir a un mediador si no te pones de acuerdo con él.', en: 'You can always turn to a mediator if you can\'t agree with him.' },
+    { es: 'Tú sabrás lo que haces, pero a mí me parece arriesgado.', en: "You know what you're doing, but it seems risky to me." },
+    { es: 'Te juro que te vas a arrepentir de haberme mentido.', en: 'I swear you\'re going to regret having lied to me.' }
+  ],
+  probes: [
+    { id: 'p:aconsejaradvertiramenazarC1:allatu', kind: 'mcq', q: '¿Qué determina si "allá tú" expresa preocupación o amenaza?', options: ['Nada, siempre significa lo mismo', 'El tono y lo que sigue en el contexto', 'La hora del día'], answer: 1 },
+    { id: 'p:aconsejaradvertiramenazarC1:comosuspendida', kind: 'mcq', q: '"Como no llegues a la hora..." dejado sin terminar ¿es un error?', options: ['Sí, falta la consecuencia', 'No, el silencio completa la amenaza', 'Sí, falta el verbo'], answer: 1 },
+    { id: 'p:aconsejaradvertiramenazarC1:cloze', kind: 'cloze', text: 'Ni se te ___ contárselo a nadie. (prohibición tajante disfrazada de consejo)', accept: ['ocurra'] },
+    { id: 'p:aconsejaradvertiramenazarC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "estás avisado" y "te arrepentirás"?', back: 'estar avisado traslada la responsabilidad al otro sin amenazar directamente; "te arrepentirás" es una amenaza explícita' }
+  ]
 }
 
 ];
