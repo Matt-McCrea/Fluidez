@@ -26960,6 +26960,89 @@ window.STRAND_LESSONS = [
     { id: 'p:conocimientodesconocimientoC1:cloze', kind: 'cloze', text: 'No tengo ni la más ___ idea de dónde está. (negación enfática de conocimiento)', accept: ['remota', 'mínima'] },
     { id: 'p:conocimientodesconocimientoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "estoy enterado de" y "tengo conocimiento de"?', back: '"estoy enterado de" es de registro intermedio, frecuente para temas cotidianos; "tengo conocimiento de" es más formal e institucional' }
   ]
+},
+
+{
+  id: 'fn-habilidad-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:377', 'funciones:C1:378', 'funciones:C1:379', 'funciones:C1:380', 'funciones:C1:381'],
+  title: 'Expresar habilidad en C1: de "soy un hacha" a "soy patoso para..."',
+  summary: 'La habilidad se expresa en C1 desde el registro neutro ("soy competente") hasta las comparaciones coloquiales muy vivas — "no hay quien me gane", "soy un hacha" — con su reverso exacto para la torpeza: "soy patoso para..."',
+  sections: [
+    { h: '"No hay quien me gane": habilidad hiperbólica', html: 'Esta locución afirma una habilidad tan alta que nadie puede superarla: <i>no hay quien me gane al ajedrez</i>.' },
+    { h: 'Competencia neutra', html: '<i>Soy (in)competente</i> es la forma más neutra y formal de valorar una habilidad: <i>son muy competentes coordinando grupos de trabajo</i>.' },
+    { h: 'Torpeza: "soy patoso para..."', html: 'Esta expresión es el reverso exacto de la habilidad, aplicada a un ámbito concreto: <i>soy muy patoso para los juegos de pelota</i>.' },
+    { h: 'Comparaciones coloquiales de excelencia', html: '<i>Estoy hecho/soy un as/hacha/fiera/fenómeno</i> son comparaciones muy vivas para una habilidad sobresaliente: <i>soy todo un as de la informática</i>, <i>es un hacha en el trabajo</i>.' },
+    { h: 'Habilidad manual específica', html: '<i>Estoy hecho/soy un manitas</i> se reserva específicamente para la habilidad manual, arreglar cosas o hacer trabajos con las manos.' }
+  ],
+  exponents: [
+    { es: 'No hay quien le gane jugando al ajedrez.', en: "No one can beat him at chess.", register: 'coloquial' },
+    { es: 'Es muy competente gestionando equipos grandes.', en: 'He is very competent at managing large teams.', register: 'formal' },
+    { es: 'Soy un auténtico manitas, arreglo lo que sea.', en: "I'm a real handyman, I can fix anything.", register: 'coloquial' },
+    { es: 'Soy bastante patoso para el baile, la verdad.', en: "I'm pretty clumsy when it comes to dancing, honestly.", register: 'coloquial' },
+    { es: 'Es un hacha resolviendo problemas complejos.', en: "He's brilliant at solving complex problems.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Soy competente en la gestión de proyectos.', en: 'I am competent in project management.', note: 'registro neutro y formal' },
+    { es: 'Soy un hacha gestionando proyectos.', en: "I'm a genius at managing projects.", note: 'misma idea, registro coloquial y expresivo' }
+  ],
+  pitfalls: [
+    '"Patoso" describe torpeza en un ámbito concreto (deportes, baile, tareas manuales) — no es un adjetivo general para "incompetente" en cualquier cosa.',
+    '"Soy un manitas" se reserva específicamente para la habilidad manual — no se usa para habilidades intelectuales o sociales.',
+    '"No hay quien me gane" es siempre hiperbólico y coloquial — no conviene en un currículum o en un contexto formal, donde "soy muy competente en..." resulta más apropiado.'
+  ],
+  examples: [
+    { es: 'Es un fenómeno organizando eventos.', en: "He's amazing at organizing events." },
+    { es: 'Soy un poco patoso en la cocina, mejor cocina tú.', en: "I'm a bit clumsy in the kitchen, you'd better cook." },
+    { es: 'Es muy competente resolviendo conflictos entre compañeros.', en: 'He is very competent at resolving conflicts among colleagues.' }
+  ],
+  probes: [
+    { id: 'p:habilidadC1:patoso', kind: 'mcq', q: '¿A qué se aplica "patoso"?', options: ['A cualquier tipo de incompetencia', 'A la torpeza en un ámbito concreto', 'Solo al trabajo intelectual'], answer: 1 },
+    { id: 'p:habilidadC1:manitas', kind: 'mcq', q: '¿Para qué tipo de habilidad se reserva "ser un manitas"?', options: ['Habilidad social', 'Habilidad manual', 'Habilidad intelectual'], answer: 1 },
+    { id: 'p:habilidadC1:cloze', kind: 'cloze', text: 'No hay quien me ___ al ajedrez. (superar en habilidad)', accept: ['gane'] },
+    { id: 'p:habilidadC1:recall', kind: 'recall', front: '¿Qué diferencia de registro hay entre "soy competente" y "soy un hacha"?', back: '"soy competente" es neutro y formal; "soy un hacha" es coloquial y más expresivo' }
+  ]
+},
+
+{
+  id: 'fn-recordar-olvidar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:384', 'funciones:C1:385', 'funciones:C1:386', 'funciones:C1:390', 'funciones:C1:391', 'funciones:C1:392',
+         'funciones:C1:393', 'funciones:C1:394', 'funciones:C1:404', 'funciones:C1:405', 'funciones:C1:406', 'funciones:C1:407',
+         'funciones:C1:408', 'funciones:C1:409'],
+  title: 'Recordar y olvidar en C1: "lo tengo en la punta de la lengua"',
+  summary: 'La memoria en C1 tiene su propio catálogo de imágenes físicas: "quedarse en blanco", tener algo "en la punta de la lengua", o que "se te vaya" lo que estabas diciendo — cada expresión describe un modo distinto de fallar (o de acertar) al recordar.',
+  sections: [
+    { h: 'Preguntar si se recuerda algo', html: '<i>¿Recuerdas/te acuerdas de + infinitivo compuesto?</i> pregunta por una acción pasada: <i>¿te acuerdas de haber guardado los palos de esquí en algún sitio?</i>. <i>¿Te recuerda a/que/lo que...?</i> pregunta si algo evoca otra cosa: <i>ese hombre, ¿no te recuerda mucho a tu tío Carlos?</i>. <i>¿Te trae recuerdos de...?</i> pregunta si algo evoca un recuerdo emocional concreto.' },
+    { h: 'Expresar que se recuerda, con matices', html: '<i>Que yo recuerde.../si mal no recuerdo...</i> matizan el recuerdo con un margen de duda: <i>que yo recuerde, Pablo dijo que llegáramos antes de las diez</i>. <i>No/casi/por poco se me olvida...</i> describe un olvido evitado en el último momento: <i>casi se me olvida comentarte que hemos cambiado la hora</i>. <i>Me recuerda a/que/lo que...</i> y <i>me trae recuerdos de...</i> describen algo que evoca un recuerdo. <i>No consigo olvidar...</i> describe un recuerdo tan fuerte que resulta imposible de borrar: <i>no consigo olvidar el exotismo de aquellas tierras</i>.' },
+    { h: 'Expresar que no se recuerda: verbos neutros', html: '<i>Se me ha olvidado...</i> y <i>no consigo recordar...</i> son las formas más directas de admitir un olvido: <i>por más que lo intento, no consigo recordar de qué conozco a esa chica</i>. <i>No me dice nada</i> describe que un nombre o dato no evoca absolutamente nada: <i>ese nombre no me dice nada</i>.' },
+    { h: 'Locuciones vivas del olvido momentáneo', html: '<i>Me he quedado en blanco</i> describe un bloqueo mental repentino. <i>Se me ha ido lo que estaba diciendo</i> describe perder el hilo de lo que se decía. <i>Lo tengo en la punta de la lengua</i> describe ese estado frustrante de saber algo sin poder decirlo en el momento: <i>¿cómo se llamaba ese actor? Lo tengo en la punta de la lengua...</i>' }
+  ],
+  exponents: [
+    { es: 'Lo tengo en la punta de la lengua, dame un segundo.', en: "It's on the tip of my tongue, give me a second.", register: 'coloquial' },
+    { es: 'Que yo recuerde, la reunión era a las cinco.', en: 'As far as I remember, the meeting was at five.', register: 'neutral' },
+    { es: 'Ese nombre no me dice absolutamente nada.', en: 'That name rings absolutely no bell for me.', register: 'neutral' },
+    { es: 'Me he quedado en blanco a mitad del examen.', en: 'My mind went blank halfway through the exam.', register: 'coloquial' },
+    { es: 'Esa canción me trae recuerdos de la universidad.', en: 'That song brings back memories of university.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Se me ha olvidado por completo su nombre.', en: "I've completely forgotten his name.", note: 'olvido directo y neutro' },
+    { es: 'Lo tengo en la punta de la lengua, pero no me sale.', en: "It's on the tip of my tongue, but I can't get it out.", note: 'estado intermedio: se sabe, pero no se consigue recordar en el momento' }
+  ],
+  pitfalls: [
+    '"Lo tengo en la punta de la lengua" no significa haber olvidado algo por completo — describe saberlo pero no poder recuperarlo en ese momento concreto.',
+    '"No me dice nada" se aplica a nombres o datos que no evocan ningún recuerdo — no es lo mismo que "se me ha olvidado", que implica que antes sí se sabía.',
+    '"Que yo recuerde" introduce un matiz de incertidumbre sobre la propia memoria — no es una afirmación categórica, sino una que reconoce la posibilidad de error.'
+  ],
+  examples: [
+    { es: 'Por poco se me olvida el cumpleaños de mi hermana.', en: "I almost forgot my sister's birthday." },
+    { es: 'No consigo recordar dónde dejé las llaves.', en: "I can't remember where I left the keys." },
+    { es: 'Se me fue completamente lo que estaba diciendo.', en: 'I completely lost track of what I was saying.' }
+  ],
+  probes: [
+    { id: 'p:recordarolvidarC1:puntalengua', kind: 'mcq', q: '"Lo tengo en la punta de la lengua" significa que...', options: ['Lo he olvidado completamente', 'Lo sé pero no puedo recuperarlo en este momento', 'Nunca lo supe'], answer: 1 },
+    { id: 'p:recordarolvidarC1:nomedicenada', kind: 'mcq', q: '"Ese nombre no me dice nada" implica que...', options: ['Antes lo sabía y ahora lo olvidé', 'No evoca ningún recuerdo en absoluto', 'Es un nombre falso'], answer: 1 },
+    { id: 'p:recordarolvidarC1:cloze', kind: 'cloze', text: 'Me he quedado en ___ a mitad del examen. (bloqueo mental)', accept: ['blanco'] },
+    { id: 'p:recordarolvidarC1:recall', kind: 'recall', front: '¿Qué matiz introduce "que yo recuerde" frente a una afirmación directa?', back: 'un matiz de incertidumbre, reconociendo la posibilidad de que la propia memoria falle' }
+  ]
 }
 
 ];

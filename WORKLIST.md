@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (136/202 done)
+## C1 — lessons (138/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -678,7 +678,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 28 pts · `nociones_generales C1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-c1
 - [x] **Expresión verbal** · 21 pts · `nociones_generales C1 § 7.2. Expresión verbal`  — nt-expresion-verbal-c1
 
-### C1 · function (22/91)
+### C1 · function (26/91)
 - [x] **Identificar** · 8 pts · `funciones C1 § 1.1. Identificar`  — fn-identificar-c1
 - [x] **Pedir información** · 19 pts · `funciones C1 § 1.2. Pedir información`  — fn-pedir-informacion-c1
 - [x] **Dar información** · 29 pts · `funciones C1 § 1.3. Dar información`  — fn-dar-informacion-c1
@@ -701,10 +701,10 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Preguntar por el conocimiento de algo** · 7 pts · `funciones C1 § 2.19. Preguntar por el conocimient`  — fn-conocimiento-desconocimiento-c1
 - [x] **Expresar conocimiento** · 4 pts · `funciones C1 § 2.20. Expresar conocimiento`  — fn-conocimiento-desconocimiento-c1
 - [x] **Expresar desconocimiento** · 5 pts · `funciones C1 § 2.21. Expresar desconocimiento`  — fn-conocimiento-desconocimiento-c1
-- [ ] **Expresar habilidad para hacer algo** · 5 pts · `funciones C1 § 2.23. Expresar habilidad para hace`
-- [ ] **Preguntar si se recuerda o se ha olvidado** · 3 pts · `funciones C1 § 2.24. Preguntar si se recuerda o s`
-- [ ] **Expresar que se recuerda** · 5 pts · `funciones C1 § 2.25. Expresar que se recuerda`
-- [ ] **Expresar que no se recuerda** · 6 pts · `funciones C1 § 2.26. Expresar que no se recuerda`
+- [x] **Expresar habilidad para hacer algo** · 5 pts · `funciones C1 § 2.23. Expresar habilidad para hace`  — fn-habilidad-c1
+- [x] **Preguntar si se recuerda o se ha olvidado** · 3 pts · `funciones C1 § 2.24. Preguntar si se recuerda o s`  — fn-recordar-olvidar-c1
+- [x] **Expresar que se recuerda** · 5 pts · `funciones C1 § 2.25. Expresar que se recuerda`  — fn-recordar-olvidar-c1
+- [x] **Expresar que no se recuerda** · 6 pts · `funciones C1 § 2.26. Expresar que no se recuerda`  — fn-recordar-olvidar-c1
 - [ ] **Expresar gustos e intereses** · 10 pts · `funciones C1 § 3.2. Expresar gustos e intereses`
 - [ ] **Expresar aversión** · 5 pts · `funciones C1 § 3.3. Expresar aversión`
 - [ ] **Preguntar por preferencias** · 4 pts · `funciones C1 § 3.4. Preguntar por preferencias`
