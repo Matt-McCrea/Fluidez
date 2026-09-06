@@ -65,6 +65,10 @@ window.Progress = (function () {
   }
 
   function render(host, back) {
+    if (window.Perf) return window.Perf.mark('progreso render', function () { return renderInner(host, back); });
+    return renderInner(host, back);
+  }
+  function renderInner(host, back) {
     UI.clear(host);
     var p = loadProg(), srs = loadSrs();
     var wrap = UI.el('div', 'panel');

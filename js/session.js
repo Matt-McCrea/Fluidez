@@ -74,6 +74,10 @@ window.Session = (function () {
   }
 
   function buildContext() {
+    if (window.Perf) return window.Perf.mark('session build', buildContextInner);
+    return buildContextInner();
+  }
+  function buildContextInner() {
     var day = dayNumber();
     var pr = window.Profile ? window.Profile.params() : { name: 'standard', unlockAll: false, produceStyle: 'full' };
     var prog = loadProg();

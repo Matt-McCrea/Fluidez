@@ -121,6 +121,10 @@ window.Shell = (function () {
 
   // ---- tab lifecycle --------------------------------------------------------
   function mountTab(name) {
+    if (window.Perf) return window.Perf.mark('mount ' + name, function () { return mountTabInner(name); });
+    return mountTabInner(name);
+  }
+  function mountTabInner(name) {
     if (mounted[name]) return;
     mounted[name] = true;
     var host = containers[name];

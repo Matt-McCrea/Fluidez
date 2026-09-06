@@ -556,6 +556,12 @@ function checkProbes(l, tag) {
     ok(sw.indexOf("'./" + f + "'") !== -1, `sw.js does not cache ${f} — offline installs will miss it`);
   });
 
+  // the build marker shown in Ajustes must match the worker, or it misreports
+  // which code is running — the one thing a cache-first app most needs to know
+  var swv = (sw.match(/CACHE_VERSION\s*=\s*'([^']+)'/) || [])[1];
+  var pv = (read('js/perf.js').match(/BUILD\s*=\s*'([^']+)'/) || [])[1];
+  ok(swv && pv && swv === pv, `js/perf.js BUILD (${pv}) does not match sw.js CACHE_VERSION (${swv})`);
+
   // load order: a data file must come before the js that reads its global
   const order = f => scripts.indexOf(f);
   [['data/taxonomy.js', 'js/profile.js'], ['data/taxonomy.js', 'js/lessons.js'],

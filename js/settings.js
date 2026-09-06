@@ -51,6 +51,35 @@ window.Settings = (function () {
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, 'Ajustes'));
 
+    /* Diagnostics first: "which build am I running" and "what is actually
+     * slow" are the two questions that cannot be answered from a laptop. A
+     * service worker is cache-first, so a fix can be committed, pushed and
+     * still not be on the phone. */
+    wrap.appendChild(UI.el('h3', null, 'Diagnóstico'));
+    var diag = UI.el('div', 'diag');
+    var build = (window.Perf && window.Perf.BUILD) || '?';
+    diag.appendChild(UI.el('p', 'muted small', 'Build <b>' + build + '</b>. If this is not the newest build, the app is still running cached code — close it fully and reopen, or tap the update banner.'));
+    var rows = (window.Perf ? window.Perf.summary() : []);
+    if (!rows.length) diag.appendChild(UI.el('p', 'muted small', 'No timings yet — move between tabs, then come back here.'));
+    else {
+      var tbl = '<table class="contrast-table"><thead><tr><th>operación</th><th>peor</th><th>media</th><th>n</th></tr></thead><tbody>';
+      rows.forEach(function (r) {
+        var slow = r.max >= 400 ? ' style="color:var(--bad)"' : '';
+        tbl += '<tr' + slow + '><td>' + r.label + '</td><td>' + r.max + ' ms</td><td>' +
+               Math.round(r.total / r.n) + ' ms</td><td>' + r.n + '</td></tr>';
+      });
+      diag.appendChild(UI.el('div', null, tbl + '</tbody></table>'));
+    }
+    var copy = UI.el('button', 'btn-secondary', 'Copiar diagnóstico'); copy.type = 'button';
+    copy.addEventListener('click', function () {
+      var txt = 'build ' + build + '\n' + (window.Perf ? window.Perf.summary() : [])
+        .map(function (r) { return r.label + ': worst ' + r.max + ' ms, mean ' + Math.round(r.total / r.n) + ' ms, n=' + r.n; }).join('\n');
+      if (navigator.clipboard) navigator.clipboard.writeText(txt);
+      copy.textContent = 'Copiado ✓';
+    });
+    diag.appendChild(copy);
+    wrap.appendChild(diag);
+
     wrap.appendChild(UI.el('h3', null, 'Exportar / importar datos'));
     wrap.appendChild(UI.el('p', 'muted',
       'Every install (phone, Mac, browser tab) keeps its own separate copy of your progress — moving it from one to another means exporting here, sending yourself the file (AirDrop, Files, email, whatever\'s easiest), and importing it on the other one. ' +

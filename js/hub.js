@@ -8,6 +8,10 @@ window.Hub = (function () {
   // Rebuild the review candidate pool the same way the Review stage does, so
   // the hub can show an accurate "due today" count.
   function reviewPool() {
+    if (window.Perf) return window.Perf.mark('reviewPool', reviewPoolInner);
+    return reviewPoolInner();
+  }
+  function reviewPoolInner() {
     var items = [];
     (window.VOCAB || []).forEach(function (w) {
       if (window.Profile && !window.Profile.wordAllowed(w)) return;
