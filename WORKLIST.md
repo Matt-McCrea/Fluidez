@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (92/202 done)
+## C1 — lessons (94/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -619,7 +619,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 24 pts · `gramatica C1 § 15.2. Oraciones subordinadas adjet`  — gr-sub-adjetivas-relativo-c1
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica C1 § 15.3. Oraciones subordinadas adver`  — gr-sub-adv-temporales-c1, gr-sub-adv-lugar-modo-c1, gr-sub-adv-causales-c1, gr-sub-adv-finales-c1, gr-sub-adv-condicionales-c1, gr-sub-adv-consecutivas-c1, gr-sub-adv-comparativas-c1, gr-sub-adv-concesivas-c1
 
-### C1 · notion (25/57)
+### C1 · notion (27/57)
 - [x] **Existencia, inexistencia** · 17 pts · `nociones_generales C1 § 1.1. Existencia, inexistencia`  — nt-existencia-inexistencia-c1
 - [x] **Presencia, ausencia** · 17 pts · `nociones_generales C1 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-c1
 - [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales C1 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-c1
@@ -646,8 +646,8 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Referencias generales** · 15 pts · `nociones_generales C1 § 4.1. Referencias generales`  — nt-referencias-generales-c1
 - [x] **Localización en el tiempo** · 35 pts · `nociones_generales C1 § 4.2. Localización en el tiempo`  — nt-localizacion-presente-c1, nt-localizacion-pasado-c1, nt-localizacion-futuro-c1
 - [x] **Aspectos de desarrollo** · 160 pts · `nociones_generales C1 § 4.3. Aspectos de desarrollo`  — nt-simultaneidad-c1, nt-anterioridad-c1, nt-posterioridad-c1, nt-puntualidad-singularidad-c1, nt-anticipacion-c1, nt-retraso-c1, nt-inicio-c1, nt-finalizacion-c1, nt-continuacion-c1, nt-repeticion-c1, nt-duracion-transcurso-c1, nt-frecuencia-c1, nt-cambio-c1, nt-permanencia-c1
-- [ ] **Formas y figuras** · 12 pts · `nociones_generales C1 § 5.1. Formas y figuras`
-- [ ] **Consistencia, resistencia** · 16 pts · `nociones_generales C1 § 5.3. Consistencia, resistencia`
+- [x] **Formas y figuras** · 12 pts · `nociones_generales C1 § 5.1. Formas y figuras`  — nt-formas-figuras-c1
+- [x] **Consistencia, resistencia** · 16 pts · `nociones_generales C1 § 5.3. Consistencia, resistencia`  — nt-consistencia-resistencia-c1
 - [ ] **Textura** · 9 pts · `nociones_generales C1 § 5.4. Textura`
 - [ ] **Acabado** · 10 pts · `nociones_generales C1 § 5.5. Acabado`
 - [ ] **Humedad, sequedad** · 17 pts · `nociones_generales C1 § 5.6. Humedad, sequedad`

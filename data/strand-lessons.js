@@ -25060,6 +25060,91 @@ window.STRAND_LESSONS = [
     { id: 'p:permanenciaC1:cloze', kind: 'cloze', text: 'La situación se ___ tras varias semanas de crisis. (dejar de cambiar, volverse estable)', accept: ['estabilizó'] },
     { id: 'p:permanenciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "invariable/inalterable" y "estable"?', back: 'invariable/inalterable no cambian bajo ninguna circunstancia; "estable" puede admitir pequeñas fluctuaciones controladas' }
   ]
+},
+
+{
+  id: 'nt-formas-figuras-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1070', 'nociones_generales:C1:1071', 'nociones_generales:C1:1072', 'nociones_generales:C1:1073',
+         'nociones_generales:C1:1074', 'nociones_generales:C1:1075', 'nociones_generales:C1:1076', 'nociones_generales:C1:1077',
+         'nociones_generales:C1:1078', 'nociones_generales:C1:1079', 'nociones_generales:C1:1080', 'nociones_generales:C1:1081'],
+  title: 'Formas y figuras en C1: de la "silueta" al "zigzag"',
+  summary: 'Describir formas en C1 combina geometría técnica (rombo, elipse, diámetro) con adjetivos de contorno (redondeado, alargado, ondulado) y los verbos que activamente cambian una forma — dar forma no es lo mismo que deformar, aunque ambos impliquen moldear algo.',
+  sections: [
+    { h: 'Sustantivos de contorno y de figura geométrica', html: '<i>Silueta, cara</i> describen el contorno general de algo. <i>Circunferencia, elipse, rombo, pentágono, hexágono</i> son figuras geométricas concretas. <i>Parábola</i> es una curva específica. <i>Diámetro</i> mide una circunferencia. <i>Molde, plantilla, patrón</i> son herramientas para reproducir una forma.' },
+    { h: 'Adjetivos de forma', html: '<i>Angular</i> describe algo con ángulos marcados. <i>Redondeado, alargado, ondulado, curvado</i> describen contornos suaves o extendidos. <i>Aplastado, torcido</i> describen deformaciones, casi siempre no deseadas.' },
+    { h: 'Verbos que cambian la forma', html: '<i>Dar forma, moldear, modelar</i> son verbos positivos de creación deliberada de una forma; <i>deformar</i>, en cambio, implica alterar una forma de manera no deseada. <i>Aplastar, torcer</i> son acciones concretas que deforman.' },
+    { h: 'Locuciones de terminación y trayectoria', html: '<i>Terminado en punta/pico</i> describe el extremo de un objeto. <i>En espiral, en zigzag</i> describen trayectorias o formas muy reconocibles: <i>el caracol tiene una concha en espiral</i>, <i>las hojas de este árbol tienen una forma en zigzag muy curiosa</i>.' }
+  ],
+  exponents: [
+    { es: 'La silueta del edificio se recorta contra el cielo.', en: 'The building\'s silhouette stands out against the sky.', register: 'formal' },
+    { es: 'El camino sube en zigzag por la montaña.', en: 'The path zigzags up the mountain.', register: 'neutral' },
+    { es: 'El calor deformó ligeramente la pieza de plástico.', en: 'The heat slightly warped the plastic piece.', register: 'neutral' },
+    { es: 'Usaron un molde para dar forma al metal fundido.', en: 'They used a mold to shape the molten metal.', register: 'neutral' },
+    { es: 'La torre termina en un pico afilado.', en: 'The tower ends in a sharp point.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'El artesano moldeó la arcilla con cuidado.', en: 'The craftsman shaped the clay carefully.', note: 'moldear — creación deliberada de una forma' },
+    { es: 'El golpe deformó la carrocería del coche.', en: "The impact deformed the car's bodywork.", note: 'deformar — alteración no deseada de una forma' }
+  ],
+  pitfalls: [
+    '"Deformar" implica una alteración no deseada de la forma original — no es sinónimo de "moldear" o "dar forma", que describen una creación deliberada.',
+    '"Aplastado" y "torcido" describen casi siempre el resultado de un daño o accidente, no una forma diseñada intencionalmente.',
+    '"En espiral" y "en zigzag" describen trayectorias o formas muy específicas — no son adjetivos genéricos para "curvo" o "irregular".'
+  ],
+  examples: [
+    { es: 'El escultor modeló la figura con gran precisión.', en: 'The sculptor modeled the figure with great precision.' },
+    { es: 'El río forma una curva muy pronunciada en ese punto.', en: 'The river forms a very pronounced bend at that point.' },
+    { es: 'La lata quedó completamente aplastada tras la caída.', en: 'The can ended up completely crushed after the fall.' }
+  ],
+  probes: [
+    { id: 'p:formasfigurasC1:deformarmoldear', kind: 'mcq', q: '¿Qué diferencia hay entre "moldear" y "deformar"?', options: ['Ninguna', 'Moldear es crear una forma deliberadamente; deformar es alterarla de manera no deseada', 'Deformar es siempre positivo'], answer: 1 },
+    { id: 'p:formasfigurasC1:zigzag', kind: 'mcq', q: '¿Qué tipo de forma describe "en zigzag"?', options: ['Una línea recta', 'Una trayectoria en ángulos alternos', 'Un círculo perfecto'], answer: 1 },
+    { id: 'p:formasfigurasC1:cloze', kind: 'cloze', text: 'El caracol tiene una concha en ___. (forma enroscada)', accept: ['espiral'] },
+    { id: 'p:formasfigurasC1:recall', kind: 'recall', front: '¿Qué tienen en común "aplastado" y "torcido"?', back: 'ambos describen casi siempre el resultado de un daño o accidente, no una forma diseñada intencionalmente' }
+  ]
+},
+
+{
+  id: 'nt-consistencia-resistencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1096', 'nociones_generales:C1:1097', 'nociones_generales:C1:1098', 'nociones_generales:C1:1099',
+         'nociones_generales:C1:1100', 'nociones_generales:C1:1101', 'nociones_generales:C1:1102', 'nociones_generales:C1:1103',
+         'nociones_generales:C1:1104', 'nociones_generales:C1:1106', 'nociones_generales:C1:1107', 'nociones_generales:C1:1108',
+         'nociones_generales:C1:1109', 'nociones_generales:C1:1110', 'nociones_generales:C1:1111'],
+  title: 'Consistencia y resistencia en C1: "fuerte como un roble", "duro como una piedra"',
+  summary: 'Describir la consistencia de un material en C1 exige un vocabulario técnico preciso — poroso, compacto, quebradizo, moldeable — junto con comparaciones fijas muy vivas que miden la resistencia contra referentes conocidos: un roble, una piedra.',
+  sections: [
+    { h: 'Sustantivos de consistencia', html: '<i>Firmeza, flacidez</i> son cualidades opuestas de solidez. <i>Porosidad, esponjosidad</i> describen la capacidad de absorber o contener aire/líquido. <i>Plasticidad</i> es la capacidad de cambiar de forma sin romperse.' },
+    { h: 'Adjetivos de solidez y textura interna', html: '<i>Poroso, compacto, macizo</i> gradúan la densidad: <i>una piedra porosa, un polvo compacto, una madera maciza</i>. <i>Vigoroso, robusto</i> describen fuerza estructural; <i>quebradizo, (ir)rompible</i>, lo contrario, fragilidad: <i>un árbol robusto, unas uñas quebradizas</i>. <i>Tirante, tieso, flácido</i> describen el grado de tensión de algo. <i>Pastoso, esponjoso</i> describen consistencias blandas particulares. <i>Moldeable</i> describe algo que puede cambiar de forma con facilidad. <i>Hueco</i> describe algo vacío por dentro: <i>una pared hueca</i>.' },
+    { h: 'Verbos de cambio de consistencia', html: '<i>Deformar(se), ablandar(se)</i> describen pérdida de firmeza o forma. <i>Espesar(se), fundir(se), derretir(se)</i> describen cambios de estado relacionados con el calor. <i>Adquirir consistencia</i> es ganar solidez, típicamente al enfriarse o secarse.' },
+    { h: 'Resistencia: soportar y comparaciones fijas', html: '<i>Soportar el peso/el calor/el frío</i> es resistir una condición extrema: <i>este nuevo material es capaz de soportar temperaturas extremas</i>. <i>Ser (fuerte) como un roble</i> y <i>ser (duro) como una piedra</i> son comparaciones fijas para describir una resistencia o dureza extrema, tanto física como de carácter.' }
+  ],
+  exponents: [
+    { es: 'El material es lo bastante moldeable para adaptarse a cualquier forma.', en: 'The material is pliable enough to adapt to any shape.', register: 'formal' },
+    { es: 'Es fuerte como un roble, nunca se rinde.', en: "He's as strong as an ox, he never gives up.", register: 'coloquial' },
+    { es: 'El chocolate se derritió con el calor del coche.', en: 'The chocolate melted in the heat of the car.', register: 'neutral' },
+    { es: 'La salsa necesita espesarse un poco más.', en: 'The sauce needs to thicken a bit more.', register: 'neutral' },
+    { es: 'Este puente soporta cargas de hasta cien toneladas.', en: 'This bridge can bear loads of up to a hundred tons.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un material poroso, que absorbe la humedad.', en: 'A porous material that absorbs moisture.', note: 'permite el paso de aire o líquido' },
+    { es: 'Un material macizo, sin huecos en su interior.', en: 'A solid material, with no gaps inside.', note: 'denso y sólido, sin cavidades' }
+  ],
+  pitfalls: [
+    '"Ser fuerte como un roble" y "ser duro como una piedra" son comparaciones fijas — no se pueden sustituir el referente (roble, piedra) por otro sin perder el efecto idiomático establecido.',
+    '"Quebradizo" describe fragilidad ante la fuerza (se rompe con facilidad), no falta de firmeza en general — un material puede ser firme y a la vez quebradizo.',
+    '"Adquirir consistencia" describe ganar solidez con el tiempo (al enfriarse, secarse o reposar) — no es sinónimo de "ser consistente" desde el principio.'
+  ],
+  examples: [
+    { es: 'Las uñas quebradizas suelen indicar falta de vitaminas.', en: 'Brittle nails often indicate a vitamin deficiency.' },
+    { es: 'El yeso adquiere consistencia al secarse.', en: 'Plaster gains firmness as it dries.' },
+    { es: 'Su carácter es duro como una piedra, nada lo conmueve.', en: "His character is hard as a rock, nothing moves him." }
+  ],
+  probes: [
+    { id: 'p:consistenciaresistenciaC1:poroso', kind: 'mcq', q: '¿Qué describe "poroso"?', options: ['Algo que absorbe aire o líquido', 'Algo completamente sólido', 'Algo muy blando'], answer: 0 },
+    { id: 'p:consistenciaresistenciaC1:quebradizo', kind: 'mcq', q: '¿Qué describe "quebradizo"?', options: ['Falta de firmeza en general', 'Fragilidad, se rompe con facilidad', 'Excesiva flexibilidad'], answer: 1 },
+    { id: 'p:consistenciaresistenciaC1:cloze', kind: 'cloze', text: 'Este puente puede ___ cargas de hasta cien toneladas. (resistir una condición extrema)', accept: ['soportar'] },
+    { id: 'p:consistenciaresistenciaC1:recall', kind: 'recall', front: '¿Qué significa "adquirir consistencia" aplicado a un material?', back: 'ganar solidez con el tiempo, típicamente al enfriarse o secarse' }
+  ]
 }
 
 ];
