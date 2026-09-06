@@ -23472,6 +23472,123 @@ window.STRAND_LESSONS = [
     { id: 'p:generalidadespecificidadC1:cloze', kind: 'cloze', text: 'El estudio se ___ en los adolescentes. (dirigir la atención hacia un aspecto concreto)', accept: ['centra'] },
     { id: 'p:generalidadespecificidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "por lo general" y "en su totalidad"?', back: '"por lo general" admite excepciones; "en su totalidad" abarca todo sin excepción' }
   ]
+},
+
+{
+  id: 'nt-cantidad-numerica-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:223', 'nociones_generales:C1:224', 'nociones_generales:C1:225', 'nociones_generales:C1:226'],
+  title: 'Cantidad numérica en C1: calcular "por lo alto" o "por lo bajo"',
+  summary: 'Un vocabulario pequeño pero preciso para hablar de números y cálculos: distinguir un cálculo exacto de uno aproximado, y saber si esa aproximación se hizo redondeando hacia arriba o hacia abajo.',
+  sections: [
+    { h: 'Múltiplos y enumeración', html: '<i>Múltiplo</i> es un número que contiene a otro un número entero de veces. <i>Enumerar</i> es listar uno por uno los elementos de un conjunto.' },
+    { h: 'Tipos de cálculo', html: '<i>Hacer un cálculo exacto</i> frente a <i>hacer un cálculo aproximado</i> distingue la precisión del resultado. <i>Calcular por lo alto</i> es redondear hacia un número mayor del real; <i>calcular por lo bajo</i>, hacia uno menor — ambas son estrategias deliberadas de estimación, no errores.' }
+  ],
+  exponents: [
+    { es: 'Calculando por lo alto, seríamos unas cien personas.', en: 'Rounding up, we\'d be about a hundred people.', register: 'neutral' },
+    { es: 'Hizo un cálculo aproximado del coste total.', en: 'He made a rough estimate of the total cost.', register: 'neutral' },
+    { es: 'Doce es múltiplo de tres.', en: 'Twelve is a multiple of three.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Calculando por lo alto, unas cien personas.', en: 'Rounding up, about a hundred people.', note: 'estimación hacia un número mayor' },
+    { es: 'Calculando por lo bajo, unas ochenta personas.', en: 'Rounding down, about eighty people.', note: 'estimación hacia un número menor' }
+  ],
+  pitfalls: [
+    '"Calcular por lo alto/por lo bajo" no implica que el cálculo sea erróneo — es una estimación deliberada en una dirección concreta, útil quando se prefiere un margen de seguridad.',
+    'Un "cálculo aproximado" no es sinónimo de "cálculo incorrecto" — es simplemente una estimación, no una medición exacta.'
+  ],
+  examples: [
+    { es: 'El presupuesto se calculó por lo bajo, para no llevarnos sorpresas.', en: 'The budget was estimated conservatively, to avoid surprises.' },
+    { es: 'Enumeró uno por uno los motivos de su decisión.', en: 'He listed one by one the reasons for his decision.' }
+  ],
+  probes: [
+    { id: 'p:cantidadnumericaC1:porloalto', kind: 'mcq', q: '"Calculando por lo alto, unas cien personas." ¿Qué significa?', options: ['Es un cálculo erróneo', 'Es una estimación redondeada hacia un número mayor', 'Es exactamente cien'], answer: 1 },
+    { id: 'p:cantidadnumericaC1:cloze', kind: 'cloze', text: 'Hizo un cálculo ___ del coste, sin poder ser exacto todavía. (estimación, no medición exacta)', accept: ['aproximado'] },
+    { id: 'p:cantidadnumericaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "calcular por lo alto" y "calcular por lo bajo"?', back: 'redondear hacia un número mayor del real, frente a redondear hacia uno menor' }
+  ]
+},
+
+{
+  id: 'nt-cantidad-relativa-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:236', 'nociones_generales:C1:237', 'nociones_generales:C1:238', 'nociones_generales:C1:239',
+         'nociones_generales:C1:240', 'nociones_generales:C1:241', 'nociones_generales:C1:242', 'nociones_generales:C1:243',
+         'nociones_generales:C1:244', 'nociones_generales:C1:245', 'nociones_generales:C1:246', 'nociones_generales:C1:247', 'nociones_generales:C1:248'],
+  title: 'Cantidad relativa en C1: colectivos, porciones y cantidades hiperbólicas',
+  summary: 'El español tiene un sustantivo colectivo distinto casi para cada tipo de conjunto (muchedumbre, rebaño, flota) y una porción distinta para cada tipo de sustancia (rodaja, sorbo, puñado, pizca) — un vocabulario que sustituye "mucho" y "un poco" por precisión real.',
+  sections: [
+    { h: 'Sustantivos colectivos: un conjunto, muchas palabras', html: '<i>Clan, muchedumbre, colectivo, pandilla, rebaño, manada, serie, flota</i> — cada uno se aplica a un tipo distinto de conjunto: personas (<i>muchedumbre de fieles, colectivo de trabajadores</i>), animales (<i>rebaño, manada</i>), objetos en serie (<i>serie de ejemplos, flota de barcos</i>).' },
+    { h: 'Porciones: la palabra exacta para cada sustancia', html: '<i>Rodaja de, trago de, sorbo de, copo de, puñado de, dosis de, lote de, pizca de</i> — cada sustantivo de porción va con un tipo de sustancia concreto: <i>rodaja de merluza, trago de vino, sorbo de agua, copo de nieve, puñado de caramelos, dosis de paciencia, lote de productos, pizca de sal</i>.' },
+    { h: 'Cantidades hiperbólicas y su opuesto', html: '<i>Montañas de, toneladas de</i> exageran una gran cantidad: <i>montañas de papeles, toneladas de residuos</i>. <i>Exceso de, abundancia de</i> frente a <i>carencia de</i> marcan los dos extremos. Adjetivos: <i>considerable, excesivo, numeroso, moderado</i> gradúan la cantidad; <i>incontable, incalculable</i> la sitúan más allá de lo mensurable; <i>reducido, ridículo</i> (este último, con matiz despectivo) marcan cantidades muy pequeñas: <i>un descuento ridículo</i>.' },
+    { h: 'Verbos, adverbios y locuciones de cantidad', html: '<i>Abundar, escasear</i> son los verbos de sobra y de falta. <i>Costar/valer una millonada</i> es costar muchísimo. <i>Como mucho/poco</i> pone un límite aproximado: <i>había como mucho diez personas</i>. <i>Abundantemente, escasamente</i> son los adverbios correspondientes; <i>en cantidad, en abundancia, en exceso</i>, las locuciones: <i>beber en abundancia, comer en exceso</i>. <i>Por lo menos</i> marca un mínimo garantizado.' }
+  ],
+  exponents: [
+    { es: 'Había una muchedumbre esperando a la puerta.', en: 'There was a crowd waiting at the door.', register: 'neutral' },
+    { es: 'Añade solo una pizca de sal.', en: 'Add just a pinch of salt.', register: 'coloquial' },
+    { es: 'Ese coche le costó una millonada.', en: 'That car cost him a fortune.', register: 'coloquial' },
+    { es: 'Había, como mucho, veinte personas en la sala.', en: 'There were, at most, twenty people in the room.', register: 'neutral' },
+    { es: 'La región sufre una carencia grave de recursos.', en: 'The region suffers a severe shortage of resources.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un puñado de caramelos.', en: 'A handful of candies.', note: 'porción para objetos pequeños y sólidos' },
+    { es: 'Un sorbo de agua.', en: 'A sip of water.', note: 'porción para líquidos, cantidad mínima' }
+  ],
+  pitfalls: [
+    'Los sustantivos de porción no son intercambiables: "rodaja" se aplica a cortes planos (pescado, limón), "puñado" a objetos pequeños que caben en la mano, "pizca" a cantidades mínimas de algo (casi siempre sal o un condimento).',
+    '"Costar/valer una millonada" es siempre hiperbólico y coloquial — no se usa en contextos donde se necesita una cifra real.',
+    '"Ridículo" aplicado a una cantidad (<i>un descuento ridículo</i>) tiene matiz despectivo, indicando que la cantidad es decepcionantemente pequeña — no es un simple sinónimo neutro de "pequeño".'
+  ],
+  examples: [
+    { es: 'Compró un lote entero de camisetas para la tienda.', en: 'He bought a whole batch of t-shirts for the store.' },
+    { es: 'El agua escasea en esa región durante el verano.', en: 'Water is scarce in that region during the summer.' },
+    { es: 'Necesito solo un trago de café para despertarme.', en: 'I just need a sip of coffee to wake up.' }
+  ],
+  probes: [
+    { id: 'p:cantidadrelativaC1:porcion', kind: 'mcq', q: '¿Qué porción se usa típicamente con la sal?', options: ['Puñado', 'Pizca', 'Rodaja'], answer: 1 },
+    { id: 'p:cantidadrelativaC1:ridiculo', kind: 'mcq', q: '"Un descuento ridículo." ¿Qué connotación tiene?', options: ['Neutra, sin más', 'Despectiva — decepcionantemente pequeño', 'Positiva'], answer: 1 },
+    { id: 'p:cantidadrelativaC1:cloze', kind: 'cloze', text: 'Ese anillo le costó una ___. (cantidad hiperbólica, coloquial)', accept: ['millonada'] },
+    { id: 'p:cantidadrelativaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "abundar" y "escasear"?', back: 'abundar es haber en gran cantidad; escasear es haber poco o faltar' }
+  ]
+},
+
+{
+  id: 'nt-aumento-disminucion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:268', 'nociones_generales:C1:269', 'nociones_generales:C1:270', 'nociones_generales:C1:271',
+         'nociones_generales:C1:272', 'nociones_generales:C1:273', 'nociones_generales:C1:274', 'nociones_generales:C1:275',
+         'nociones_generales:C1:276', 'nociones_generales:C1:277', 'nociones_generales:C1:278'],
+  title: 'Aumento y disminución en C1: de "ir en aumento" a "dispararse"',
+  summary: 'El vocabulario económico y estadístico de C1 permite describir un cambio de cantidad con la velocidad y la intensidad exactas — no es lo mismo que algo "aumente gradualmente" a que "se dispare" o "caiga en picado".',
+  sections: [
+    { h: 'Sustantivos del cambio de cantidad', html: '<i>Descenso, ascenso, caída, incremento</i> son los sustantivos neutros: <i>un ascenso de temperaturas, una caída de las exportaciones, un incremento del IPC</i>. <i>Devaluación</i> es específico de la pérdida de valor de una moneda.' },
+    { h: 'Calificar el ritmo del cambio', html: 'Un aumento o disminución puede ser <i>moderado, gradual, espectacular, generalizado</i> — cada adjetivo describe una velocidad o un alcance distinto. <i>Creciente</i> describe algo que aumenta de forma continua: <i>importancia creciente</i>.' },
+    { h: 'Verbos neutros de cambio', html: '<i>Incrementar(se), ascender a</i> (llegar a una cifra concreta), <i>recortar, descontar</i> (reducir deliberadamente: <i>recortar presupuesto, descontar tiempo</i>), <i>devaluarse</i> (perder valor una moneda), <i>sufrir/experimentar un aumento/un descenso</i> (verbos de soporte neutros).' },
+    { h: 'Verbos intensos: cuando el cambio es brusco', html: '<i>Agravarse, agudizarse</i> describen un empeoramiento intenso: <i>agravarse la crisis, agudizarse los síntomas</i>. <i>Dispararse</i> (subida brusca y fuerte) y <i>caer en picado</i> (bajada brusca y fuerte) son sus equivalentes para cantidades: <i>dispararse los costes</i>. <i>Ir en aumento/disminución</i> describe una tendencia en curso: <i>la tensión en la zona va en aumento</i>.' }
+  ],
+  exponents: [
+    { es: 'Los precios se dispararon tras el anuncio.', en: 'Prices shot up after the announcement.', register: 'neutral' },
+    { es: 'Las ventas cayeron en picado el último trimestre.', en: 'Sales plummeted in the last quarter.', register: 'neutral' },
+    { es: 'La empresa decidió recortar gastos.', en: 'The company decided to cut costs.', register: 'formal' },
+    { es: 'La preocupación por el tema va en aumento.', en: 'Concern about the issue is growing.', register: 'neutral' },
+    { es: 'La moneda se devaluó un quince por ciento.', en: 'The currency devalued by fifteen percent.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Los costes aumentaron gradualmente.', en: 'Costs increased gradually.', note: 'cambio lento y progresivo' },
+    { es: 'Los costes se dispararon.', en: 'Costs shot up.', note: 'cambio brusco e intenso' }
+  ],
+  pitfalls: [
+    '"Dispararse" y "caer en picado" describen cambios bruscos e intensos — usarlos para un cambio lento y gradual exagera la descripción.',
+    '"Agravarse" y "agudizarse" se aplican a situaciones negativas (crisis, síntomas, conflictos) — no se usan para describir un aumento positivo o neutro.',
+    '"Devaluarse" se reserva casi siempre para monedas — para otros tipos de pérdida de valor conviene otro verbo, como "depreciarse".'
+  ],
+  examples: [
+    { es: 'La crisis se agravó durante el invierno.', en: 'The crisis worsened during the winter.' },
+    { es: 'El paro experimentó un descenso moderado este trimestre.', en: 'Unemployment saw a moderate decline this quarter.' },
+    { es: 'Su interés por la música fue creciente con los años.', en: 'His interest in music grew over the years.' }
+  ],
+  probes: [
+    { id: 'p:aumentodisminucionC1:dispararse', kind: 'mcq', q: '"Los precios se dispararon." ¿Qué tipo de cambio describe?', options: ['Lento y gradual', 'Brusco e intenso', 'Prácticamente nulo'], answer: 1 },
+    { id: 'p:aumentodisminucionC1:agravarse', kind: 'mcq', q: '¿Con qué tipo de situaciones se usa "agravarse"?', options: ['Situaciones positivas', 'Situaciones negativas (crisis, síntomas)', 'Cualquier situación neutra'], answer: 1 },
+    { id: 'p:aumentodisminucionC1:cloze', kind: 'cloze', text: 'Las ventas cayeron en ___ el último trimestre. (bajada brusca)', accept: ['picado'] },
+    { id: 'p:aumentodisminucionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "aumentar gradualmente" y "dispararse"?', back: 'gradualmente describe un cambio lento y progresivo; dispararse, uno brusco e intenso' }
+  ]
 }
 
 ];
