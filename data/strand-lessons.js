@@ -24469,6 +24469,87 @@ window.STRAND_LESSONS = [
     { id: 'p:localizacionfuturoC1:cloze', kind: 'cloze', text: 'El informe sigue ___ de revisión final. (a la espera de algo futuro)', accept: ['pendiente'] },
     { id: 'p:localizacionfuturoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "de un momento a otro" y "a la larga"?', back: '"de un momento a otro" indica inminencia; "a la larga" indica un plazo largo, sin urgencia' }
   ]
+},
+
+{
+  id: 'nt-simultaneidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:754', 'nociones_generales:C1:755', 'nociones_generales:C1:756', 'nociones_generales:C1:757',
+         'nociones_generales:C1:758', 'nociones_generales:C1:759', 'nociones_generales:C1:760'],
+  title: 'Simultaneidad en C1: "al tiempo que" y "en el mismo instante en que"',
+  summary: 'Dos acciones que ocurren a la vez se describen en C1 con matices distintos según se busque enfatizar la coordinación perfecta (sincronizado), el paralelismo progresivo (a medida que) o la coincidencia exacta de un instante concreto.',
+  sections: [
+    { h: 'Sustantivos y adjetivos de coordinación', html: '<i>Simultaneidad</i> es el sustantivo general: <i>simultaneidad de dos acciones</i>. <i>Sincronizado</i> describe una coordinación perfecta y deliberada: <i>natación sincronizada</i>; <i>sincronizar</i>, el verbo correspondiente: <i>sincronizar los relojes</i>. <i>A coro</i> describe una acción hecha por varios a la vez, típicamente hablar o cantar: <i>cantar a coro</i>.' },
+    { h: 'Simultaneidad progresiva: "a medida que"', html: '<i>A medida que</i> describe dos procesos que avanzan juntos, en paralelo: <i>el interés por los candidatos va creciendo a medida que se acercan las elecciones</i> — no es un instante puntual, sino una progresión conjunta.' },
+    { h: '"Al tiempo que": simultaneidad con contraste', html: '<i>Al tiempo que</i> conecta dos hechos simultáneos, a menudo con un matiz de contraste entre ellos: <i>aumenta la producción al tiempo que se produce un descenso de la demanda</i> — dos tendencias opuestas que coinciden en el tiempo.' },
+    { h: 'Coincidencia exacta de un instante', html: '<i>En el mismo momento/en el mismo instante (en) que</i> señala una coincidencia temporal exacta, sin margen: <i>vimos la llegada por televisión, en el mismo instante en que se produjo</i>.' }
+  ],
+  exponents: [
+    { es: 'Los equipos sincronizaron sus relojes antes de la prueba.', en: 'The teams synchronized their watches before the test.', register: 'neutral' },
+    { es: 'A medida que avanza la tarde, baja la temperatura.', en: 'As the afternoon goes on, the temperature drops.', register: 'neutral' },
+    { es: 'Se jubiló al tiempo que se anunciaba la reestructuración.', en: 'He retired at the same time the restructuring was announced.', register: 'formal' },
+    { es: 'Llegó en el mismo instante en que se apagaban las luces.', en: 'He arrived at the very moment the lights went out.', register: 'neutral' },
+    { es: 'Todo el público gritó a coro el nombre del cantante.', en: 'The whole audience chanted the singer\'s name in unison.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'A medida que pasa el tiempo, se acostumbra más al puesto.', en: 'As time goes by, he gets more used to the job.', note: 'progresión paralela y gradual' },
+    { es: 'En el mismo instante en que firmó, se arrepintió.', en: 'The very moment he signed, he regretted it.', note: 'coincidencia puntual y exacta' }
+  ],
+  pitfalls: [
+    '"A medida que" describe una progresión paralela y gradual — no un instante puntual como "en el mismo momento en que".',
+    '"Al tiempo que" suele introducir un matiz de contraste entre los dos hechos simultáneos, no una simple coincidencia neutra.',
+    '"Sincronizado" implica una coordinación deliberada y buscada — no describe una simple coincidencia casual de dos sucesos.'
+  ],
+  examples: [
+    { es: 'A medida que se acerca el examen, aumenta su nerviosismo.', en: 'As the exam approaches, his nervousness increases.' },
+    { es: 'Aplaudieron a coro al terminar la actuación.', en: 'They applauded in unison when the performance ended.' },
+    { es: 'Renunció al cargo al tiempo que estallaba el escándalo.', en: 'He resigned from the position just as the scandal broke.' }
+  ],
+  probes: [
+    { id: 'p:simultaneidadC1:amedidaque', kind: 'mcq', q: '"A medida que" describe...', options: ['Un instante puntual', 'Una progresión paralela y gradual', 'Un hecho pasado'], answer: 1 },
+    { id: 'p:simultaneidadC1:altiempoque', kind: 'mcq', q: '"Al tiempo que" suele introducir...', options: ['Un matiz de contraste entre dos hechos simultáneos', 'Una simple lista de eventos', 'Una condición'], answer: 0 },
+    { id: 'p:simultaneidadC1:cloze', kind: 'cloze', text: 'Los relojes se ___ antes de comenzar la operación. (coordinar perfectamente)', accept: ['sincronizaron'] },
+    { id: 'p:simultaneidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a medida que" y "en el mismo instante en que"?', back: '"a medida que" describe una progresión paralela y gradual; "en el mismo instante en que" señala una coincidencia puntual exacta' }
+  ]
+},
+
+{
+  id: 'nt-anterioridad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:762', 'nociones_generales:C1:763', 'nociones_generales:C1:764', 'nociones_generales:C1:765',
+         'nociones_generales:C1:766', 'nociones_generales:C1:767', 'nociones_generales:C1:768', 'nociones_generales:C1:769'],
+  title: 'Anterioridad en C1: precedentes, antepasados y "de antemano"',
+  summary: 'Lo que viene antes se nombra en C1 con precisión según el ámbito: un "precedente" legal o argumentativo no es lo mismo que un "antepasado" familiar, y "de antemano" no es lo mismo que "con antelación" pese a compartir la misma raíz temporal.',
+  sections: [
+    { h: 'Sustantivos de lo que viene antes', html: '<i>Anterioridad</i> es el sustantivo general. <i>Precedente, antecedente</i> señalan un caso anterior que sirve de referencia o justificación: <i>existe un precedente de un caso similar</i>, <i>tiene antecedentes penales</i>. <i>Prólogo</i>, en sentido figurado, es lo que anuncia o inicia algo mayor: <i>esta huelga constituye el prólogo de la revolución</i>. <i>Antepasado, antecesor</i> señalan quien vino antes en una línea familiar o en un cargo: <i>mi antecesor en el cargo</i>.' },
+    { h: 'Adjetivos y verbos de anterioridad', html: '<i>Previo</i> describe algo que ocurre antes como requisito: <i>una condición previa</i>. <i>Preceder</i> es el verbo general de venir antes en el tiempo o en el orden.' },
+    { h: 'Locuciones: de antemano frente a con antelación', html: '<i>De antemano</i> señala que algo se sabía o se hizo antes del momento relevante, casi siempre en relación con conocimiento o agradecimiento: <i>al parecer lo sabía de antemano</i>, <i>gracias de antemano</i>. <i>Con anterioridad, con antelación</i> son más formales y describen una acción realizada con suficiente margen antes de un plazo: <i>el pago deberá efectuarse con antelación</i>.' }
+  ],
+  exponents: [
+    { es: 'No existe ningún precedente de una decisión así.', en: "There's no precedent for a decision like this.", register: 'formal' },
+    { es: 'Gracias de antemano por tu ayuda.', en: 'Thanks in advance for your help.', register: 'neutral' },
+    { es: 'Hay que reservar con antelación para conseguir mesa.', en: 'You need to book in advance to get a table.', register: 'neutral' },
+    { es: 'Su antecesor en el puesto dejó buenos resultados.', en: 'His predecessor in the position left good results.', register: 'formal' },
+    { es: 'Es una condición previa para acceder al programa.', en: "It's a prerequisite for accessing the program.", register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Lo sabía de antemano, aunque no dijo nada.', en: 'He knew it beforehand, although he said nothing.', note: 'conocimiento previo, no necesariamente formal' },
+    { es: 'Avisó con antelación de su ausencia.', en: 'He gave advance notice of his absence.', register: 'formal', note: 'acción realizada con margen suficiente antes de un plazo' }
+  ],
+  pitfalls: [
+    '"De antemano" y "con antelación/con anterioridad" no son intercambiables en todos los contextos: "de antemano" se asocia sobre todo a saber algo o agradecer algo por adelantado; "con antelación" describe una acción realizada con margen suficiente antes de un plazo.',
+    '"Precedente" y "antecedente" se aplican a casos o hechos anteriores que sirven de referencia — no son sinónimos de "antepasado", que se reserva para personas en una línea familiar.',
+    '"Prólogo" en sentido figurado no es simplemente "el principio de algo" — implica que ese inicio anuncia o anticipa algo mayor que está por venir.'
+  ],
+  examples: [
+    { es: 'Sus antepasados emigraron hace un siglo.', en: 'His ancestors emigrated a century ago.' },
+    { es: 'El discurso precedió a la firma del acuerdo.', en: 'The speech preceded the signing of the agreement.' },
+    { es: 'Aquel incidente fue el prólogo de una larga disputa.', en: 'That incident was the prologue to a long dispute.' }
+  ],
+  probes: [
+    { id: 'p:anterioridadC1:precedenteantepasado', kind: 'mcq', q: '¿Qué diferencia hay entre "precedente" y "antepasado"?', options: ['Ninguna', 'Precedente es un caso anterior de referencia; antepasado es una persona en la línea familiar', 'Antepasado es más formal'], answer: 1 },
+    { id: 'p:anterioridadC1:deantemano', kind: 'mcq', q: '"Gracias de antemano" se usa para...', options: ['Agradecer algo que ya ocurrió', 'Agradecer por adelantado algo que se espera', 'Pedir disculpas'], answer: 1 },
+    { id: 'p:anterioridadC1:cloze', kind: 'cloze', text: 'Hay que avisar con ___ para reservar mesa. (margen suficiente antes de un plazo)', accept: ['antelación', 'anterioridad'] },
+    { id: 'p:anterioridadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "de antemano" y "con antelación"?', back: '"de antemano" se asocia a saber o agradecer algo por adelantado; "con antelación" describe una acción hecha con margen suficiente antes de un plazo, más formal' }
+  ]
 }
 
 ];
