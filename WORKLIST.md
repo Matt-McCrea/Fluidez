@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (150/202 done)
+## C1 — lessons (151/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -678,7 +678,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 28 pts · `nociones_generales C1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-c1
 - [x] **Expresión verbal** · 21 pts · `nociones_generales C1 § 7.2. Expresión verbal`  — nt-expresion-verbal-c1
 
-### C1 · function (52/91)
+### C1 · function (53/91)
 - [x] **Identificar** · 8 pts · `funciones C1 § 1.1. Identificar`  — fn-identificar-c1
 - [x] **Pedir información** · 19 pts · `funciones C1 § 1.2. Pedir información`  — fn-pedir-informacion-c1
 - [x] **Dar información** · 29 pts · `funciones C1 § 1.3. Dar información`  — fn-dar-informacion-c1
@@ -731,7 +731,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Expresar admiración y orgullo** · 3 pts · `funciones C1 § 3.28. Expresar admiración y orgull`  — fn-sorpresa-admiracion-c1
 - [x] **Expresar afecto** · 3 pts · `funciones C1 § 3.29. Expresar afecto`  — fn-afecto-sensaciones-c1
 - [x] **Expresar sensaciones físicas** · 16 pts · `funciones C1 § 3.30. Expresar sensaciones físicas`  — fn-afecto-sensaciones-c1
-- [ ] **Dar una orden o instrucción** · 29 pts · `funciones C1 § 4.1. Dar una orden o instrucción`
+- [x] **Dar una orden o instrucción** · 29 pts · `funciones C1 § 4.1. Dar una orden o instrucción`  — fn-orden-instruccion-c1
 - [ ] **Pedir un favor** · 8 pts · `funciones C1 § 4.2. Pedir un favor`
 - [ ] **Pedir objetos** · 7 pts · `funciones C1 § 4.3. Pedir objetos`
 - [ ] **Pedir ayuda** · 6 pts · `funciones C1 § 4.4. Pedir ayuda`

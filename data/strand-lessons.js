@@ -27539,6 +27539,50 @@ window.STRAND_LESSONS = [
     { id: 'p:afectosensacionesC1:cloze', kind: 'cloze', text: 'Estoy hecho ___ después de la mudanza. (agotamiento extremo, coloquial)', accept: ['polvo'] },
     { id: 'p:afectosensacionesC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "siento malestar" y "me da un dolor/pinchazo"?', back: 'malestar es difuso y general; dolor/pinchazo es puntual, concreto y repentino' }
   ]
+},
+
+{
+  id: 'fn-orden-instruccion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:723', 'funciones:C1:724', 'funciones:C1:726', 'funciones:C1:727', 'funciones:C1:728', 'funciones:C1:729',
+         'funciones:C1:730', 'funciones:C1:732', 'funciones:C1:733', 'funciones:C1:734', 'funciones:C1:735', 'funciones:C1:736',
+         'funciones:C1:737', 'funciones:C1:738', 'funciones:C1:739', 'funciones:C1:740', 'funciones:C1:742'],
+  title: 'Dar una orden en C1: de "tú te callas" a la orden encubierta',
+  summary: 'Ordenar en C1 recorre toda una escala de cortesía — desde la orden brusca ("tú te callas") hasta la más ceremoniosa ("¿tendría la bondad de...?") — y termina en la orden encubierta, que ni siquiera usa un verbo de mandato: un simple comentario puede ser, en realidad, una petición de dinero.',
+  sections: [
+    { h: 'Órdenes directas, sin ningún atenuante', html: '<i>Te ordeno que...</i> + adverbio de inmediatez es la orden más explícita: <i>le ordeno que salga de mi despacho inmediatamente</i>. <i>Tú + 2.ª persona de presente de indicativo</i> es aún más brusco por su misma sequedad gramatical: <i>tú te callas</i> — no hay imperativo, solo una afirmación tajante.' },
+    { h: 'Órdenes atenuadas: imperativo con coletilla', html: 'Un imperativo seguido de una coletilla suaviza la orden sin perder su fuerza: <i>espera un momento, ¿quieres?</i>, <i>pásame el bolso, si no te importa</i>.' },
+    { h: 'Preguntas corteses, en escala ascendente de formalidad', html: '<i>¿Quieres/vas a/puedes + infinitivo?</i> es la pregunta cortés básica. <i>¿Quieres/puedes hacer(me) el favor de...?</i> añade la palabra "favor" como refuerzo de cortesía. <i>¿Serías tan amable de...?</i> y <i>¿tendrías la amabilidad/bondad de...?</i> llevan la cortesía al registro más ceremonioso. <i>¿Sería mucho pedir que...?</i>, con subjuntivo, reconoce explícitamente que la petición podría ser excesiva.' },
+    { h: 'Orden disfrazada de necesidad o conveniencia', html: '<i>Necesitaría que...</i> presenta la orden como una necesidad propia, suavizándola. <i>Conviene/convendría...</i> la presenta como un consejo impersonal, aunque funcione como orden: <i>convendría hacer un resumen más claro y más breve</i>.' },
+    { h: 'Fórmulas con "favor" + imperativo, y el futuro de mandato', html: '<i>Hazme un favor</i> + imperativo introduce la orden como un favor personal: <i>hazme un favor: llama a tu hermano</i>. <i>Haz(me) el favor de + infinitivo</i> hace lo mismo con estructura distinta. El <i>futuro imperfecto en 2.ª persona</i> da una orden que no admite discusión, casi como un hecho ya decidido: <i>harás lo que te diga</i>.' },
+    { h: 'Orden desde una posición de autoridad, y orden encubierta', html: '<i>Te pido por favor que...</i>, dicho por un superior jerárquico, mantiene la forma de petición cortés pero funciona como orden real: <i>te pido por favor que lo tengas listo para el martes</i>. <i>Me lo das/dejas/prestas/mandas...</i> + atenuador convierte la orden en pregunta casi retórica: <i>si te parece, me las mandas y ya las preparo yo</i>. <i>¡Andando!</i> es una orden coloquial y brusca de ponerse en marcha. La orden encubierta no usa ningún verbo de mandato: un comentario aparentemente neutro communica la orden por implicatura — decirle a alguien que llega tarde "¡ah! creía que ya no trabajabas aquí" es, en realidad, exigirle puntualidad.' }
+  ],
+  exponents: [
+    { es: 'Te pido por favor que entregues el informe antes del viernes.', en: 'I ask you, please, to submit the report before Friday.', register: 'neutral' },
+    { es: '¿Serías tan amable de bajar el volumen?', en: 'Would you be so kind as to turn down the volume?', register: 'formal' },
+    { es: 'Hazme un favor: cierra la ventana, que hace frío.', en: 'Do me a favor: close the window, it\'s cold.', register: 'coloquial' },
+    { es: 'Convendría revisar el contrato antes de firmarlo.', en: 'It would be advisable to review the contract before signing it.', register: 'formal' },
+    { es: '¡Andando! Se nos hace tarde.', en: "Let's get moving! We're running late.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Tú te callas ahora mismo.', en: 'You be quiet right now.', note: 'orden directa, brusca, sin atenuante' },
+    { es: '¿Tendrías la bondad de guardar silencio?', en: 'Would you be so kind as to keep quiet?', note: 'misma orden, registro ceremonioso' }
+  ],
+  pitfalls: [
+    '"Tú + presente de indicativo" (tú te callas) es gramaticalmente una afirmación, no un imperativo — pero funciona como una orden aún más contundente por prescindir de la forma verbal esperada.',
+    'El futuro de mandato ("harás lo que te diga") no describe una predicción sobre el futuro — es una orden que se presenta como un hecho ya decidido, sin lugar a discusión.',
+    'Una orden encubierta no contiene ningún verbo de mandato — se reconoce por el contexto y la implicatura, no por marcas gramaticales explícitas.'
+  ],
+  examples: [
+    { es: '¿Haces el favor de bajar la voz un momento?', en: 'Would you please lower your voice for a moment?' },
+    { es: 'Necesitaría que confirmarais vuestra asistencia antes del jueves.', en: 'I would need you to confirm your attendance before Thursday.' },
+    { es: 'Si no es molestia, me lo envías cuando puedas.', en: "If it's not too much trouble, send it to me when you can." }
+  ],
+  probes: [
+    { id: 'p:ordeninstruccionC1:tuindicativo', kind: 'mcq', q: '"Tú te callas." ¿Qué forma verbal es, gramaticalmente?', options: ['Imperativo', 'Presente de indicativo, usado como orden contundente', 'Subjuntivo'], answer: 1 },
+    { id: 'p:ordeninstruccionC1:futuromandato', kind: 'mcq', q: '"Harás lo que te diga." ¿Qué función tiene el futuro aquí?', options: ['Predecir el futuro', 'Dar una orden que no admite discusión', 'Hacer una pregunta'], answer: 1 },
+    { id: 'p:ordeninstruccionC1:cloze', kind: 'cloze', text: '¿___ tan amable de cerrar la puerta? (fórmula muy cortés de petición)', accept: ['Sería', 'Serías'] },
+    { id: 'p:ordeninstruccionC1:recall', kind: 'recall', front: '¿Cómo se reconoce una orden encubierta si no usa ningún verbo de mandato?', back: 'por el contexto y la implicatura: un comentario aparentemente neutro comunica la orden real de forma indirecta' }
+  ]
 }
 
 ];
