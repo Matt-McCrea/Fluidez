@@ -27999,6 +27999,48 @@ window.STRAND_LESSONS = [
     { id: 'p:saludarC1:cloze', kind: 'cloze', text: 'Es un ___ saludarlo después de tanto tiempo. (satisfacción formal de un reencuentro)', accept: ['placer'] },
     { id: 'p:saludarC1:recall', kind: 'recall', front: '¿Qué persona gramatical usa "¿cómo estamos/andamos?" aunque se dirija a un solo interlocutor?', back: 'la primera persona del plural (nosotros), dando un tono cercano y desenfadado' }
   ]
+},
+
+{
+  id: 'fn-responder-saludo-dirigirse-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:1058', 'funciones:C1:1059', 'funciones:C1:1060', 'funciones:C1:1061', 'funciones:C1:1063',
+         'funciones:C1:1064', 'funciones:C1:1065', 'funciones:C1:1079', 'funciones:C1:1080', 'funciones:C1:1081'],
+  title: 'Responder a un saludo y dirigirse a alguien en C1: "seguimos tirando" y "¿te acuerdas de mí?"',
+  summary: 'Responder a "¿qué tal?" en C1 tiene toda una escala de resignación conformista — "seguimos tirando", "no me puedo quejar" — y dirigirse a alguien va de los apelativos afectuosos entre íntimos a la fórmula insegura de reconocer a alguien de vista: "¿te acuerdas de mí?"',
+  sections: [
+    { h: 'Respuestas neutras o resignadas a un saludo', html: '<i>Sin novedad, gracias</i> es una respuesta neutra, casi formal. <i>No me puedo quejar (la verdad)</i>, <i>pues nada, aquí (estamos)</i> y <i>(seguimos) tirando</i> forman una escala de conformismo resignado, ni bien ni mal, simplemente continuando.' },
+    { h: 'Respuestas que anticipan una mala racha', html: '<i>Bueno, qué quieres que te diga</i> y <i>para qué te voy a contar</i> anticipan, sin decirlo aún, que las cosas no van especialmente bien — invitan a preguntar más si el otro quiere detalles.' },
+    { h: 'Respuesta que marca una mejora', html: '<i>Bien, parece que ha pasado la mala racha</i> se usa específicamente cuando las cosas han mejorado tras un periodo difícil, contrastando el presente con un pasado peor.' },
+    { h: 'Dirigirse con apelativos afectuosos', html: '<i>Cariño, amor (mío), guapa, mi vida, tesoro...</i> son apelativos cariñosos reservados para relaciones íntimas o muy cercanas: <i>cariño, ¿puedes ayudarme con esto?</i>.' },
+    { h: 'Dirigirse a alguien de quien no se está seguro', html: '<i>(Perdona,) tú eres + nombre, ¿verdad/no?</i> se dirige a alguien confirmando su identidad con cierta inseguridad. <i>Hola, ¿me recuerdas?/¿te acuerdas de mí?</i> se usa al reencontrarse con alguien que quizás no recuerde al hablante: <i>hola, ¿te acuerdas de mí? Estudiamos juntos la carrera</i>.' }
+  ],
+  exponents: [
+    { es: '¿Qué tal? Pues nada, aquí seguimos tirando.', en: "How's it going? Well, nothing new, still getting by.", register: 'coloquial' },
+    { es: 'No me puedo quejar, la verdad, todo bastante tranquilo.', en: "Can't complain, honestly, everything's pretty calm.", register: 'coloquial' },
+    { es: 'Perdona, tú eres Marta, ¿no? Nos conocimos en la boda de Ana.', en: "Excuse me, you're Marta, right? We met at Ana's wedding.", register: 'neutral' },
+    { es: 'Cariño, ¿me pasas el mando de la tele?', en: 'Honey, could you pass me the remote?', register: 'coloquial' },
+    { es: 'Bueno, qué quieres que te diga, ha sido un año difícil.', en: "Well, what can I say, it's been a difficult year.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Sin novedad, gracias, todo sigue igual.', en: 'No news, thanks, everything\'s the same.', note: 'respuesta neutra y algo formal' },
+    { es: 'Bueno, qué quieres que te diga...', en: 'Well, what can I say...', note: 'anticipa una respuesta menos positiva, invitando a preguntar más' }
+  ],
+  pitfalls: [
+    '"(Seguimos) tirando" no describe un estado especialmente bueno ni malo — es un conformismo resignado, ni entusiasta ni alarmante.',
+    '"Bueno, qué quieres que te diga" y "para qué te voy a contar" no responden directamente a "¿qué tal?" — dejan la puerta abierta a que el otro pregunte más si quiere detalles.',
+    'Los apelativos afectuosos (cariño, mi vida, tesoro) se reservan para relaciones íntimas — usarlos con desconocidos o en contextos formales resultaría inapropiado o condescendiente.'
+  ],
+  examples: [
+    { es: '¿Cómo estás? No me puedo quejar, gracias por preguntar.', en: "How are you? Can't complain, thanks for asking." },
+    { es: 'Amor, ¿has visto mis llaves?', en: 'Love, have you seen my keys?' },
+    { es: 'Hola, ¿me recuerdas? Coincidimos en aquel curso de verano.', en: 'Hi, do you remember me? We met at that summer course.' }
+  ],
+  probes: [
+    { id: 'p:responderdirigirseC1:seguimostirando', kind: 'mcq', q: '"Seguimos tirando" describe un estado...', options: ['Excelente', 'Conformista, ni bien ni mal', 'Muy malo'], answer: 1 },
+    { id: 'p:responderdirigirseC1:apelativos', kind: 'mcq', q: '¿Para qué tipo de relación se reservan apelativos como "cariño" o "mi vida"?', options: ['Cualquier desconocido', 'Relaciones íntimas o muy cercanas', 'Contextos formales'], answer: 1 },
+    { id: 'p:responderdirigirseC1:cloze', kind: 'cloze', text: 'Hola, ¿te ___ de mí? Estudiamos juntos. (reconocer a alguien)', accept: ['acuerdas'] },
+    { id: 'p:responderdirigirseC1:recall', kind: 'recall', front: '¿Qué función cumple "bueno, qué quieres que te diga" al responder a un saludo?', back: 'anticipa que las cosas no van bien sin decirlo directamente, invitando a que el otro pregunte más si quiere' }
+  ]
 }
 
 ];
