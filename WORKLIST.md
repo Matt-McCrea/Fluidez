@@ -587,9 +587,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (32/202 done)
+## C1 — lessons (34/202 done)
 
-### C1 · grammar (20/28)
+### C1 · grammar (22/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
 - [x] **El número de los sustantivos** · 6 pts · `gramatica C1 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-c1
 - [x] **Clases de adjetivos** · 15 pts · `gramatica C1 § 2.1. Clases de adjetivos`  — gr-clases-adjetivos-c1
@@ -610,8 +610,8 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Tiempos verbales de subjuntivo** · 23 pts · `gramatica C1 § 9.2. Tiempos verbales de subjuntiv`  — gr-tiempos-subjuntivo-c1
 - [x] **El imperativo** · 9 pts · `gramatica C1 § 9.3. El imperativo`  — gr-imperativo-c1
 - [x] **Formas no personales del verbo** · 16 pts · `gramatica C1 § 9.4. Formas no personales del verb`  — gr-formas-no-personales-c1
-- [ ] **Complementos y modificadores** · 10 pts · `gramatica C1 § 10.2. Complementos y modificadores`
-- [ ] **Complementos y modificadores** · 6 pts · `gramatica C1 § 11.2. Complementos y modificadores`
+- [x] **Complementos y modificadores** · 10 pts · `gramatica C1 § 10.2. Complementos y modificadores`  — gr-complementos-nominal-c1
+- [x] **Complementos y modificadores** · 6 pts · `gramatica C1 § 11.2. Complementos y modificadores`  — gr-complementos-adjetival-c1
 - [ ] **El núcleo** · 23 pts · `gramatica C1 § 12.1. El núcleo`
 - [ ] **Complementos** · 13 pts · `gramatica C1 § 12.2. Complementos`
 - [ ] **Concordancia** · 10 pts · `gramatica C1 § 13.1. Concordancia`

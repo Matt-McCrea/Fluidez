@@ -22556,6 +22556,76 @@ window.STRAND_LESSONS = [
     { id: 'p:formasnopersonalesC1:cloze', kind: 'cloze', text: '___ yo, apareció él. (gerundio como adjunto externo temporal, de "llegar")', accept: ['Llegando'] },
     { id: 'p:formasnopersonalesC1:recall', kind: 'recall', front: '¿Qué restricción tiene el infinitivo en oraciones de relativo?', back: 'el antecedente debe ser indefinido (un problema que resolver, no *el problema que resolver)' }
   ]
+},
+
+{
+  id: 'gr-complementos-nominal-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:555', 'gramatica:C1:556', 'gramatica:C1:557', 'gramatica:C1:558'],
+  title: 'Complementos del nombre en C1: la ambigüedad como norma',
+  summary: 'Un complemento con "de" después de un nombre puede leerse de dos maneras opuestas, un adjetivo puede ser en realidad un participio con agente implícito, y el orden de dos adjetivos relacionales no es libre. En C1 aprender el sintagma nominal es aprender a desambiguar, no solo a construir.',
+  sections: [
+    { h: 'El complemento con "de": objetivo o subjetivo', html: '<i>El asesino de Juan</i> tiene dos lecturas opuestas. Como complemento objetivo, Juan es la víctima: hay un asesino que mató a Juan. Como complemento subjetivo, de valor atributivo, Juan mismo es el asesino: se identifica al asesino como siendo Juan. La misma secuencia de palabras cambia por completo quién mata a quién.' },
+    { h: 'Completivas nominales: infinitivo o subjuntivo', html: 'Un nombre como <i>temor</i> admite una completiva en infinitivo cuando el sujeto de ambos verbos coincide (<i>el temor a perderte</i>) y una completiva con verbo conjugado en subjuntivo cuando los sujetos son distintos (<i>el temor de que te vayas</i>) — el subjuntivo es obligatorio aquí porque "temor" pertenece al grupo de sustantivos de sentimiento o emoción.' },
+    { h: 'Orden de adjetivos relacionales: argumentales primero', html: 'Cuando se combinan dos adjetivos relacionales, el argumental (el que forma parte del significado nuclear del nombre) va pegado al sustantivo, y el no argumental (el que solo añade una característica externa) va después: <i>producción lanar castellana</i> es correcto porque "lanar" especifica el tipo de producción y "castellana" la sitúa geográficamente; <i>*producción castellana lanar</i>, con el orden invertido, no lo es.' },
+    { h: 'Participio o adjetivo: la misma forma, dos análisis', html: '<i>Una versión reducida</i> es ambigua entre una lectura adjetival pura, equivalente a "breve" (una cualidad, sin agente), y una lectura participial, que implica un agente no expresado: "reducida por alguien". Solo el contexto decide cuál de las dos está activa.' }
+  ],
+  contrasts: [
+    { es: 'El retrato de Goya.', en: 'The portrait of Goya / by Goya.', note: 'objetivo (retrato que representa a Goya) o subjetivo (retrato pintado por Goya) — ambos posibles' },
+    { es: 'Tiene miedo a equivocarse. / Tiene miedo de que se equivoquen.', en: "He's afraid of making a mistake. / He's afraid they'll make a mistake.", note: 'infinitivo con sujeto compartido, subjuntivo con sujetos distintos' },
+    { es: 'fabricación textil española', en: 'Spanish textile manufacturing', note: 'argumental ("textil") pegado al nombre, no argumental ("española") después' },
+    { es: 'una obra abreviada', en: 'an abridged work', note: 'ambiguo entre adjetivo puro ("corta") y participio con agente implícito ("abreviada por alguien")' }
+  ],
+  pitfalls: [
+    '<i>El asesino de Juan</i> no tiene una única interpretación — sin contexto, "de Juan" puede señalar a la víctima o identificar al propio asesino como Juan.',
+    'El orden de dos adjetivos relacionales no es intercambiable: el argumental va siempre más cerca del nombre que el no argumental (<i>producción lanar castellana</i>, nunca *<i>producción castellana lanar</i>).',
+    'Un participio como "reducida" puede leerse como simple adjetivo de cualidad o como pasiva con agente implícito — confundir ambas lecturas cambia si se entiende que alguien realizó la acción.'
+  ],
+  examples: [
+    { es: 'La foto de mi hermano me la regalaron.', en: 'They gave me the photo of my brother as a gift.' },
+    { es: 'Tiene la esperanza de que todo salga bien.', en: 'She has hope that everything will turn out well.' },
+    { es: 'explotación ganadera andaluza', en: 'Andalusian livestock farming' }
+  ],
+  probes: [
+    { id: 'p:complementosnominalC1:ambiguo', kind: 'mcq', q: '"El asesino de Juan" — ¿qué lectura implica que Juan es la víctima?', options: ['La lectura objetiva', 'La lectura subjetiva o atributiva', 'Ninguna de las dos'], answer: 0 },
+    { id: 'p:complementosnominalC1:orden', kind: 'mcq', q: '¿Cuál es el orden correcto de adjetivos relacionales?', options: ['no argumental + nombre + argumental', 'nombre + argumental + no argumental', 'el orden es libre'], answer: 1 },
+    { id: 'p:complementosnominalC1:cloze', kind: 'cloze', text: 'El temor ___ perderte no me deja dormir. (infinitivo, mismo sujeto)', accept: ['a'] },
+    { id: 'p:complementosnominalC1:recall', kind: 'recall', front: '¿Por qué "el temor de que te vayas" lleva subjuntivo obligatoriamente?', back: '"temor" es un sustantivo de sentimiento/emoción, y ese grupo rige subjuntivo en su completiva con sujeto distinto' }
+  ]
+},
+
+{
+  id: 'gr-complementos-adjetival-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:569', 'gramatica:C1:571', 'gramatica:C1:572', 'gramatica:C1:574'],
+  title: 'Complementos del adjetivo en C1: interrogativas, superlativos con "lo" y cuantificadores coloquiales',
+  summary: 'El adjetivo en C1 admite una interrogativa indirecta entera como complemento, forma superlativos neutros con "lo" cuya concordancia vacila entre dos normas, y en Hispanoamérica puede intensificarse con construcciones que en España sonarían extrañas. Un solo sintagma adjetival, tres fuentes distintas de variación.',
+  sections: [
+    { h: 'Interrogativas indirectas como complemento del adjetivo', html: 'Un adjetivo puede llevar como complemento una interrogativa indirecta completa, introducida por preposición: <i>interesado en cómo es tu trabajo</i>. La interrogativa (<i>cómo es tu trabajo</i>) funciona igual que la completiva de un nombre o un verbo, pero depende aquí de un adjetivo.' },
+    { h: 'Superlativos neutros con "lo": dos concordancias posibles', html: 'En construcciones del tipo <i>de lo más</i> + adjetivo, la concordancia vacila entre dos normas: con el artículo neutro "lo", que deja el adjetivo invariable (<i>una película de lo más divertido</i>), o con el sustantivo al que se refiere, que hace concordar el adjetivo en género y número (<i>una película de lo más divertida</i>). Ambas se oyen y ninguna es "la errónea".' },
+    { h: '"Lo más" + adjetivo/adverbio en Hispanoamérica', html: 'En amplias zonas de Hispanoamérica, <i>lo más</i> delante de un adjetivo o adverbio equivale simplemente a "muy": <i>Estoy lo más bien</i> ("estoy muy bien"), <i>una casa lo más linda</i> ("una casa muy linda") — no hay comparación implícita, es un intensificador fijo.' },
+    { h: 'Cuantificadores coloquiales: la mar de, la tira de', html: 'Expresiones como <i>la mar de</i> y <i>la tira de</i> cuantifican de forma coloquial e intensiva, equivalentes a "muchísimo/a": <i>Había la mar de gente en la fiesta de Luis</i> — "la mar de gente" es mucha gente, no una cantidad literal relacionada con el mar.' }
+  ],
+  contrasts: [
+    { es: 'Curioso por saber dónde has estado.', en: 'Curious to know where you have been.', note: 'interrogativa indirecta como complemento del adjetivo' },
+    { es: 'Un examen de lo más difícil.', en: 'An exceedingly difficult exam.', note: 'concordancia con el artículo neutro "lo" — adjetivo invariable' },
+    { es: 'Está lo más contento, se lo digo yo.', en: "He's just delighted, I'm telling you.", note: 'uso hispanoamericano, "lo más" = "muy"' },
+    { es: 'Hay la tira de gente esperando fuera.', en: "There's a ton of people waiting outside.", note: 'cuantificador coloquial intensivo, equivale a "muchísima"' }
+  ],
+  pitfalls: [
+    'En <i>de lo más + adjetivo</i>, tanto la forma invariable (concordancia con "lo") como la forma que concuerda con el sustantivo son válidas — no hay que "corregir" una a favor de la otra.',
+    '"Lo más" + adjetivo/adverbio con valor de "muy" (<i>estoy lo más bien</i>) es un uso hispanoamericano; en el español peninsular esta construcción resulta extraña o se interpreta como comparación incompleta.',
+    '"La mar de" y "la tira de" cuantifican, no describen literalmente el mar ni ninguna otra cosa — funcionan como "muchísimo/a" fijo, invariables en su propia estructura.'
+  ],
+  examples: [
+    { es: 'Preocupado por si llegamos a tiempo.', en: 'Worried about whether we\'ll arrive on time.' },
+    { es: 'Un lugar de lo más tranquilo / de lo más tranquila que existe.', en: 'An exceptionally peaceful place.' },
+    { es: 'Tenían la mar de ganas de verte.', en: 'They were dying to see you.' }
+  ],
+  probes: [
+    { id: 'p:complementosadjetivalC1:concordancia', kind: 'mcq', q: '"Una novela de lo más interesante/interesante." ¿Qué concordancias son válidas?', options: ['Solo la invariable (con "lo")', 'Solo la que concuerda con el sustantivo', 'Ambas, según la norma que se siga'], answer: 2 },
+    { id: 'p:complementosadjetivalC1:hispam', kind: 'mcq', q: '"Estoy lo más bien" en el uso hispanoamericano equivale a...', options: ['"estoy comparativamente mejor"', '"estoy muy bien"', '"estoy más o menos bien"'], answer: 1 },
+    { id: 'p:complementosadjetivalC1:cloze', kind: 'cloze', text: 'Había la ___ de gente en la fiesta. (cuantificador coloquial intensivo, "mucha")', accept: ['mar'] },
+    { id: 'p:complementosadjetivalC1:recall', kind: 'recall', front: '¿Qué tipo de complemento introduce la preposición ante un adjetivo como "interesado en cómo es tu trabajo"?', back: 'una interrogativa indirecta' }
+  ]
 }
 
 ];
