@@ -27332,6 +27332,47 @@ window.STRAND_LESSONS = [
     { id: 'p:miedonerviosismoC1:cloze', kind: 'cloze', text: 'Me saca de ___ que siempre llegue tarde. (exasperación intensa)', accept: ['quicio'] },
     { id: 'p:miedonerviosismoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "me pongo de los nervios" y "pierdo los nervios"?', back: 'ponerse de los nervios es un estado de nerviosismo; perder los nervios es el momento concreto en que se rompe el control' }
   ]
+},
+
+{
+  id: 'fn-empatia-alivio-esperanza-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:595', 'funciones:C1:596', 'funciones:C1:597', 'funciones:C1:598', 'funciones:C1:599',
+         'funciones:C1:606', 'funciones:C1:607', 'funciones:C1:608', 'funciones:C1:609',
+         'funciones:C1:613', 'funciones:C1:614', 'funciones:C1:615', 'funciones:C1:616', 'funciones:C1:617', 'funciones:C1:618'],
+  title: 'Empatía, alivio y esperanza en C1: "me pongo en tu lugar" y "cruzo los dedos"',
+  summary: 'Empatizar en C1 va de compartir una experiencia parecida ("a mí me pasó algo muy parecido") a ponerse literalmente en el lugar del otro; el alivio estalla en exclamaciones ("¡ya era hora!"); y la esperanza se protege con gestos supersticiosos: "cruzo los dedos", "toco madera".',
+  sections: [
+    { h: 'Expresar empatía', html: '<i>Me imagino lo que estás pasando</i> reconoce el sufrimiento del otro sin haberlo vivido necesariamente. <i>No me extraña (en absoluto) que te sientas así</i> valida la reacción emocional del otro como comprensible. <i>A mí me pasó algo muy parecido</i> establece empatía compartiendo una experiencia propia similar. <i>Me pongo en tu lugar</i> es la fórmula más directa de empatía imaginativa. <i>Te compadezco</i> expresa compasión, con un matiz algo más formal o incluso distante que las anteriores.' },
+    { h: 'Expresar alivio', html: '<i>¡Al fin!</i> y <i>¡Por fin!</i> son casi intercambiables, exclamando que algo esperado por fin ha ocurrido. <i>¡Ya era hora!</i> añade un matiz de impaciencia acumulada, casi de reproche. <i>Me quedo muy aliviado/mucho más tranquilo</i> es la forma más neutra y explicativa: <i>me quedaría mucho más tranquilo sabiendo que estás bien</i>.' },
+    { h: 'Expresar esperanza', html: '<i>No me espero gran cosa</i> matiza una esperanza moderada, casi resignada. <i>Confío en...</i> es la forma directa y algo más formal: <i>confiamos en que todo se solucione lo antes posible</i>. <i>Cruzo los dedos (para...)</i> y <i>toco madera</i> son gestos supersticiosos verbalizados que protegen una esperanza frágil. <i>La esperanza es lo último que se pierde</i> y <i>no/nunca hay que perder la esperanza</i> son fórmulas fijas casi proverbiales que animan a mantener la esperanza pese a las dificultades.' }
+  ],
+  exponents: [
+    { es: 'Me imagino lo que debes de estar pasando, lo siento mucho.', en: "I can imagine what you must be going through, I'm so sorry.", register: 'neutral' },
+    { es: '¡Ya era hora de que llegaras!', en: 'It\'s about time you got here!', register: 'coloquial' },
+    { es: 'Cruzo los dedos para que salga todo bien mañana.', en: "I've got my fingers crossed for tomorrow to go well.", register: 'coloquial' },
+    { es: 'Confiamos en que la situación mejore pronto.', en: 'We trust the situation will improve soon.', register: 'formal' },
+    { es: 'No me extraña que estés tan disgustado, la situación es injusta.', en: "I'm not surprised you're so upset, the situation is unfair.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¡Por fin ha llegado el paquete!', en: 'The package has finally arrived!', note: 'alivio simple, sin reproche' },
+    { es: '¡Ya era hora de que llegara el paquete!', en: 'It\'s about time the package arrived!', note: 'alivio con matiz de impaciencia acumulada' }
+  ],
+  pitfalls: [
+    '"¡Ya era hora!" no es un simple sinónimo de "¡por fin!" — añade un matiz de impaciencia o reproche por la demora, ausente en "por fin".',
+    '"Cruzo los dedos" y "toco madera" son gestos supersticiosos verbalizados — no describen literalmente cruzar los dedos o tocar madera en todos los casos, sino el deseo de proteger algo esperado.',
+    '"Te compadezco" puede sonar más distante o incluso condescendiente que "me pongo en tu lugar" — no son intercambiables sin matizar la relación entre los hablantes.'
+  ],
+  examples: [
+    { es: 'A mí me pasó algo muy parecido el año pasado.', en: 'Something very similar happened to me last year.' },
+    { es: 'Me quedo mucho más tranquilo ahora que sé que llegasteis bien.', en: "I feel much more at ease now that I know you arrived safely." },
+    { es: 'Nunca hay que perder la esperanza, aunque las cosas se compliquen.', en: 'One should never lose hope, even when things get complicated.' }
+  ],
+  probes: [
+    { id: 'p:empatiaaliviosesperanzaC1:yaerahora', kind: 'mcq', q: '"¡Ya era hora!" ¿Qué matiz añade frente a "¡por fin!"?', options: ['Ninguno', 'Impaciencia o reproche por la demora', 'Sorpresa'], answer: 1 },
+    { id: 'p:empatiaaliviosesperanzaC1:cruzardedos', kind: 'mcq', q: '"Cruzo los dedos para que salga bien" expresa...', options: ['Una acción literal obligatoria', 'Un deseo supersticioso de proteger algo esperado', 'Indiferencia'], answer: 1 },
+    { id: 'p:empatiaaliviosesperanzaC1:cloze', kind: 'cloze', text: 'Me pongo en tu ___, entiendo perfectamente cómo te sientes. (empatía imaginativa)', accept: ['lugar'] },
+    { id: 'p:empatiaaliviosesperanzaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "te compadezco" y "me pongo en tu lugar"?', back: '"te compadezco" puede sonar más distante o formal; "me pongo en tu lugar" es una empatía más cercana e imaginativa' }
+  ]
 }
 
 ];
