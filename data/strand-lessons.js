@@ -28167,6 +28167,49 @@ window.STRAND_LESSONS = [
     { id: 'p:felicitardespedirseC1:cloze', kind: 'cloze', text: '¡___ esos cinco! Lo has conseguido. (gesto físico verbalizado)', accept: ['Choca'] },
     { id: 'p:felicitardespedirseC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "nos vemos pronto" y "sin otro particular..."?', back: '"nos vemos pronto" es una despedida oral y coloquial; "sin otro particular..." es exclusivamente escrita y formal' }
   ]
+},
+
+{
+  id: 'fn-estado-general-cosas-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:1205', 'funciones:C1:1206', 'funciones:C1:1207', 'funciones:C1:1208', 'funciones:C1:1210',
+         'funciones:C1:1211', 'funciones:C1:1213', 'funciones:C1:1214', 'funciones:C1:1215', 'funciones:C1:1216',
+         'funciones:C1:1217', 'funciones:C1:1218'],
+  title: 'Preguntar por el estado general de las cosas: la pregunta que se devuelve',
+  summary: 'Este ritual conversacional tiene una estructura casi fija: preguntar por otra persona o por cómo fue algo, responder situando la respuesta en una escala de "mucho mejor" a "no demasiado bien", y cerrar el turno devolviendo la pregunta: "y lo tuyo, ¿qué tal?"',
+  sections: [
+    { h: 'Preguntar por terceros y por sucesos pasados', html: '<i>¿Qué tal se encuentra (tu familia)?</i> pregunta por el bienestar de alguien ajeno a la conversación. <i>¿Qué tal/cómo te fue?</i> pregunta por el resultado de algo ya ocurrido (un viaje, una entrevista, una gestión).' },
+    { h: 'Señalar que todo va bien', html: '<i>Sin novedad, gracias</i> es la respuesta neutra estándar cuando no hay nada que contar, en persona o por teléfono.' },
+    { h: 'Señalar que algo no va bien', html: '<i>(Bueno), qué quieres que te diga/para qué te voy a contar</i> deja entrever, sin decirlo aún, que las cosas no van bien. <i>(Bueno), pues no demasiado bien, pero seguimos tirando</i> lo confirma explícitamente, con el conformismo resignado de "seguimos tirando".' },
+    { h: 'Señalar que las cosas van mejor', html: '<i>Mucho mejor, gracias a Dios</i> marca una mejora con un matiz casi de alivio religioso o cultural, independientemente de la fe real del hablante. <i>Bueno, las cosas van mejorando, gracias</i> y <i>bien, parece que ha pasado la mala racha</i> describen una mejora más gradual, contrastando con un pasado peor.' },
+    { h: 'Iniciar la conversación y devolver la pregunta', html: 'Este ritual casi siempre se cierra con una estructura recíproca: <i>bien, gracias. Y lo tuyo (de + SN), ¿qué tal?</i> — tras responder, se devuelve la pregunta al interlocutor, a menudo con un sintagma nominal que precisa el tema: <i>y lo tuyo del trabajo, ¿qué tal?</i>' }
+  ],
+  exponents: [
+    { es: '¿Qué tal te fue la entrevista de ayer?', en: "How did yesterday's interview go for you?", register: 'neutral' },
+    { es: 'Bueno, pues no demasiado bien, pero seguimos tirando. Y lo tuyo, ¿qué tal?', en: "Well, not great, but we're getting by. And how about yours?", register: 'coloquial' },
+    { es: 'Mucho mejor, gracias a Dios, ya ha pasado lo peor.', en: 'Much better, thank goodness, the worst is over.', register: 'coloquial' },
+    { es: '¿Qué tal se encuentra tu madre? Espero que mejor.', en: 'How is your mother doing? I hope better.', register: 'neutral' },
+    { es: 'Bien, parece que ha pasado la mala racha por fin.', en: "Good, it seems the rough patch is finally over.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Sin novedad, gracias, todo sigue su curso normal.', en: 'Nothing new, thanks, everything\'s following its normal course.', note: 'todo va bien, sin cambios' },
+    { es: 'Bueno, qué quieres que te diga, ha sido un mes complicado.', en: "Well, what can I say, it's been a complicated month.", note: 'deja entrever que algo no va bien' }
+  ],
+  pitfalls: [
+    '"Y lo tuyo, ¿qué tal?" no es una pregunta aislada — cierra el turno recíproco de este ritual conversacional, devolviendo al otro la misma pregunta que se le acaba de responder.',
+    '"Mucho mejor, gracias a Dios" no implica necesariamente fe religiosa real en quien lo dice — es una expresión cultural fija para marcar alivio tras una mejora.',
+    '"¿Qué tal se encuentra tu familia?" pregunta por terceros, no por el propio interlocutor — no debe confundirse con "¿qué tal estás?", dirigida a la persona presente.'
+  ],
+  examples: [
+    { es: '¿Qué tal se encuentra tu padre después de la operación?', en: 'How is your father doing after the surgery?' },
+    { es: 'Las cosas van mejorando, gracias, poco a poco.', en: 'Things are getting better, thanks, little by little.' },
+    { es: 'Sin novedad por aquí. Y lo tuyo del piso nuevo, ¿qué tal?', en: 'Nothing new here. And how about your new apartment?' }
+  ],
+  probes: [
+    { id: 'p:estadogeneralcosasC1:ylotuyoo', kind: 'mcq', q: '"Y lo tuyo, ¿qué tal?" ¿qué función cumple en la conversación?', options: ['Cambia completamente de tema', 'Devuelve la pregunta al interlocutor, cerrando el turno recíproco', 'Es una despedida'], answer: 1 },
+    { id: 'p:estadogeneralcosasC1:graciasadios', kind: 'mcq', q: '"Mucho mejor, gracias a Dios" ¿implica necesariamente fe religiosa?', options: ['Sí, siempre', 'No, es una expresión cultural fija', 'Solo en contextos religiosos'], answer: 1 },
+    { id: 'p:estadogeneralcosasC1:cloze', kind: 'cloze', text: '¿Qué tal se ___ tu familia? (pregunta por el bienestar de terceros)', accept: ['encuentra'] },
+    { id: 'p:estadogeneralcosasC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "¿qué tal se encuentra tu familia?" y "¿qué tal estás?"?', back: 'la primera pregunta por el bienestar de una tercera persona; la segunda se dirige directamente al interlocutor presente' }
+  ]
 }
 
 ];
