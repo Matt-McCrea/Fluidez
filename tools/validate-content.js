@@ -532,6 +532,40 @@ function checkProbes(l, tag) {
   });
 }
 
+// ---------- wiring: index.html and the service worker --------------------
+/* Every data and js file has to be listed as a <script> in index.html and as an
+ * asset in sw.js. Nothing else checks this: the Node harnesses load modules
+ * directly, so a file can be complete, valid and entirely absent from the page.
+ * data/taxonomy.js, data/connectors.js and data/strand-lessons.js were all
+ * missing from both — window.LEVELS was undefined in the browser, which left
+ * the app with no profiles at all while every gate stayed green. */
+{
+  const read = f => { try { return fs.readFileSync(path.join(__dirname, '..', f), 'utf8'); } catch (e) { return ''; } };
+  const html = read('index.html'), sw = read('sw.js');
+  const scripts = (html.match(/src="([^"]+\.js)"/g) || []).map(m => m.slice(5, -1));
+
+  const onDisk = [];
+  ['data', 'js', 'js/views'].forEach(dir => {
+    let names = [];
+    try { names = fs.readdirSync(path.join(__dirname, '..', dir)); } catch (e) { return; }
+    names.filter(n => n.endsWith('.js')).forEach(n => onDisk.push(dir + '/' + n));
+  });
+
+  onDisk.forEach(f => {
+    ok(scripts.indexOf(f) !== -1, `index.html does not load ${f} — it will not exist in the browser`);
+    ok(sw.indexOf("'./" + f + "'") !== -1, `sw.js does not cache ${f} — offline installs will miss it`);
+  });
+
+  // load order: a data file must come before the js that reads its global
+  const order = f => scripts.indexOf(f);
+  [['data/taxonomy.js', 'js/profile.js'], ['data/taxonomy.js', 'js/lessons.js'],
+   ['data/connectors.js', 'js/checker.js'], ['data/strand-lessons.js', 'js/lessons.js'],
+   ['data/verbs.js', 'js/engine.js']].forEach(([first, then]) => {
+    if (order(first) === -1 || order(then) === -1) return;
+    ok(order(first) < order(then), `index.html loads ${then} before ${first} — the global will be undefined`);
+  });
+}
+
 // ---------- resources -------------------------------------------------------
 {
   (window.RESOURCES || []).forEach((g, i) => {

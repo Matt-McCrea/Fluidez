@@ -22209,6 +22209,52 @@ window.STRAND_LESSONS = [
     { id: 'p:exclamativosC1:cloze', kind: 'cloze', text: '¡___ inocentes le habrán creído! (cuánto, concordando con "inocentes")', accept: ['Cuántos', 'cuántos'] },
     { id: 'p:exclamativosC1:recall', kind: 'recall', front: '¿Con qué debe concordar el adjetivo evaluativo tras "cuántos/as"?', back: 'con el sustantivo que cuantifica, en género y número' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — C1 grammar, part 3: el pronombre personal (the single densest
+ * subsection, 47 pts — one substantial lesson, same policy as the discourse
+ * strand's dc-intensificacion-c1 for a 24-point subsection).
+ * ========================================================================== */
+{
+  id: 'gr-pronombre-personal-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:189', 'gramatica:C1:191', 'gramatica:C1:194', 'gramatica:C1:198', 'gramatica:C1:199', 'gramatica:C1:201',
+         'gramatica:C1:205', 'gramatica:C1:220', 'gramatica:C1:222', 'gramatica:C1:224', 'gramatica:C1:225', 'gramatica:C1:228',
+         'gramatica:C1:230', 'gramatica:C1:232'],
+  title: 'El pronombre personal en C1: desambiguar, personificar, la voz media',
+  summary: 'Every pronoun rule learned so far assumed the pronoun either has to be there or has to go — C1 is full of pairs where BOTH options are grammatical and mean different things, or mean nothing different at all, and telling the two apart is the entire skill.',
+  sections: [
+    { h: 'El sujeto que desambigua y el que enfatiza', html: 'El condicional y el subjuntivo no distinguen 1.ª y 3.ª persona en su forma: <i>¡Más quisiera él/yo/usted!</i> — sin el pronombre, la frase sería ambigua. En reduplicación con <i>mismo/solo</i>, el pronombre en cambio no desambigua nada, solo enfatiza: <i>Luis limpia el coche él mismo.</i>' },
+    { h: 'Personificación con el pronombre de 3.ª persona', html: 'Un concepto abstracto puede retomarse con un pronombre personal como si fuera alguien: <i>La paz lo es todo. Ella debe dirigir nuestra vida</i> — "ella" no se refiere a una persona, sino que personifica "la paz".' },
+    { h: 'El clítico de OD: presencia que cambia el sentido, y presencia que no cambia nada', html: '<i>Si te apetece, coge</i> (una cantidad no especificada) frente a <i>si te apetece, cógelos</i> (todos, un conjunto definido) — aquí SÍ cambia el significado. En cambio, con dos verbos transitivos coordinados, la presencia o ausencia del clítico no altera nada: <i>trae papel si lo tienen</i> / <i>trae papel si tienen</i>, ambas correctas y equivalentes.' },
+    { h: 'Dislocación rectificadora: objeto antepuesto SIN clítico', html: 'Frente a la tematización habitual, que exige doblar el pronombre, una anticipación claramente rectificadora puede prescindir de él: <i>Este coche he elegido, no aquel</i> — sin "lo" ("*este coche lo he elegido, no aquel" también existe, pero la versión sin clítico es más marcadamente contrastiva).' },
+    { h: 'El clítico con verbos de percepción física', html: 'Con <i>ver/oír</i> + infinitivo, el clítico puede subir al primer verbo o quedarse en el segundo SOLO si es objeto de ambos: <i>Lo he visto hacer</i> / <i>He visto hacerlo</i>, ambas válidas. Si el clítico es objeto únicamente del verbo principal y no del infinitivo, la subida es obligatoria: <i>Lo he visto robar</i> (lo vi a él, robando algo) nunca puede convertirse en <i>*he visto robarlo</i>.' },
+    { h: 'Los valores de "se": impersonal, medio-impersonal, voz media', html: 'El "se" impersonal con paciente humano lo marca con "a", y ese paciente permanece invariable en número aunque sean varios: <i>Se saludó a los conferenciantes</i> (nunca "se saludaron"). Con verbos psicológicos de influencia, "se" se combina con un dativo (<i>me, te, le</i>) para una construcción medio-impersonal: <i>A los miedosos se les asusta enseguida</i>. Y "se" + dativo puede describir una reacción corporal involuntaria, la voz media: <i>Se me abre la boca</i> — no es "alguien me abre la boca", es que me pasa a mí, sin agente.' },
+    { h: 'Consigo, sí, y su tendencia a sustituirse', html: 'La forma preposicional reflexiva de 3.ª persona es <i>consigo</i> y <i>sí</i> (<i>lo pensó para sí</i>), reforzable con <i>mismo/a</i> (<i>para sí misma</i>). En el habla real existe una tendencia a sustituir esta forma reflexiva por el pronombre de sujeto equivalente: <i>habla para sí</i> alterna con <i>habla para él</i>, sin que se perciba como un error grave.' }
+  ],
+  contrasts: [
+    { es: 'Si os apetece la tarta, coged.', en: 'If you fancy some cake, take some.', note: 'sin clítico — una cantidad no especificada' },
+    { es: 'Si os apetece la tarta, cogedla.', en: 'If you fancy the cake, take it (all).', note: 'con clítico — el conjunto definido y completo' },
+    { es: 'Lo he visto salir del edificio esta mañana.', en: 'I saw him leave the building this morning.', note: 'objeto compartido por ambos verbos — la subida es opcional' },
+    { es: 'Se saludó a los diputados antes de comenzar la sesión.', en: 'The members of parliament were greeted before the session began.', note: 'se impersonal + "a" — el paciente humano no concuerda en número' }
+  ],
+  pitfalls: [
+    'El clítico de OD no siempre puede subir con verbos de percepción — solo cuando es objeto de los dos verbos a la vez; si es objeto exclusivo del verbo principal, la subida es agramatical (<i>*he visto robarlo</i>).',
+    'El "se" impersonal con paciente humano (<i>se saludó a los conferenciantes</i>) mantiene el verbo en singular aunque el paciente sea plural — confundirlo con una pasiva refleja concordada (<i>se saludaron los conferenciantes</i>, con otro sentido) es un error frecuente.',
+    'La voz media con "se" + dativo (<i>se me abre la boca</i>) no tiene agente — traducirla como si alguien hiciera la acción sobre el hablante falsea por completo el significado.'
+  ],
+  examples: [
+    { es: '¡Más quisiera yo tener esa suerte!', en: 'I wish I had that kind of luck!' },
+    { es: 'La libertad lo es todo para él; ella guía cada una de sus decisiones.', en: 'Freedom is everything to him; it guides every one of his decisions.' },
+    { es: 'A los tímidos se les nota enseguida en una entrevista.', en: 'Shy people are noticed right away in an interview.' },
+    { es: 'Se me cierran los ojos, no puedo seguir despierto.', en: "My eyes are closing on their own, I can't stay awake any longer." }
+  ],
+  probes: [
+    { id: 'p:pronombrepersonalC1:desambigua', kind: 'mcq', q: '¿Por qué se dice "¡más quisiera yo!" y no simplemente "¡más quisiera!"?', options: ['Por énfasis, sin más', 'Porque "quisiera" es idéntico en 1.ª y 3.ª persona, y el pronombre desambigua', 'Es un error habitual, ambas formas son iguales'], answer: 1 },
+    { id: 'p:pronombrepersonalC1:percepcion', kind: 'mcq', q: '¿Por qué "lo he visto robar" NO puede convertirse en "*he visto robarlo"?', options: ['Porque "lo" no es objeto del infinitivo, solo del verbo principal', 'Por una cuestión de estilo, ambas son intercambiables', 'Porque "robar" no admite clíticos nunca'], answer: 0 },
+    { id: 'p:pronombrepersonalC1:cloze', kind: 'cloze', text: 'A los miedosos se ___ asusta enseguida. (dativo medio-impersonal)', accept: ['les'] },
+    { id: 'p:pronombrepersonalC1:recall', kind: 'recall', front: '¿Qué describe la voz media con "se" + dativo, como en "se me abre la boca"?', back: 'una reacción corporal involuntaria, sin agente' }
+  ]
 }
 
 ];
