@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (71/202 done)
+## C1 — lessons (74/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -619,7 +619,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 24 pts · `gramatica C1 § 15.2. Oraciones subordinadas adjet`  — gr-sub-adjetivas-relativo-c1
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica C1 § 15.3. Oraciones subordinadas adver`  — gr-sub-adv-temporales-c1, gr-sub-adv-lugar-modo-c1, gr-sub-adv-causales-c1, gr-sub-adv-finales-c1, gr-sub-adv-condicionales-c1, gr-sub-adv-consecutivas-c1, gr-sub-adv-comparativas-c1, gr-sub-adv-concesivas-c1
 
-### C1 · notion (19/57)
+### C1 · notion (22/57)
 - [x] **Existencia, inexistencia** · 17 pts · `nociones_generales C1 § 1.1. Existencia, inexistencia`  — nt-existencia-inexistencia-c1
 - [x] **Presencia, ausencia** · 17 pts · `nociones_generales C1 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-c1
 - [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales C1 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-c1
@@ -640,9 +640,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Posición relativa** · 19 pts · `nociones_generales C1 § 3.3. Posición relativa`  — nt-posicion-relativa-c1
 - [ ] **Distancia** · 12 pts · `nociones_generales C1 § 3.4. Distancia`
 - [x] **Movimiento, estabilidad** · 36 pts · `nociones_generales C1 § 3.5. Movimiento, estabilidad`  — nt-movimiento-estabilidad-sustantivos-c1, nt-movimiento-verbos-especificos-c1, nt-movimiento-locuciones-c1
-- [ ] **Orientación, dirección** · 11 pts · `nociones_generales C1 § 3.6. Orientación, dirección`
-- [ ] **Orden** · 8 pts · `nociones_generales C1 § 3.7. Orden`
-- [ ] **Origen** · 5 pts · `nociones_generales C1 § 3.8. Origen`
+- [x] **Orientación, dirección** · 11 pts · `nociones_generales C1 § 3.6. Orientación, dirección`  — nt-orientacion-direccion-c1
+- [x] **Orden** · 8 pts · `nociones_generales C1 § 3.7. Orden`  — nt-orden-c1
+- [x] **Origen** · 5 pts · `nociones_generales C1 § 3.8. Origen`  — nt-origen-c1
 - [ ] **Referencias generales** · 15 pts · `nociones_generales C1 § 4.1. Referencias generales`
 - [ ] **Localización en el tiempo** · 35 pts · `nociones_generales C1 § 4.2. Localización en el tiempo`
 - [ ] **Aspectos de desarrollo** · 160 pts · `nociones_generales C1 § 4.3. Aspectos de desarrollo`

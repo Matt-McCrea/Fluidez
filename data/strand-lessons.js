@@ -24177,6 +24177,128 @@ window.STRAND_LESSONS = [
     { id: 'p:movimientolocucionesC1:cloze', kind: 'cloze', text: 'El coche ___ en seco para evitar el choque. (detención brusca e inmediata)', accept: ['frenó', 'paró'] },
     { id: 'p:movimientolocucionesC1:recall', kind: 'recall', front: '¿Qué matiz tiene "ir a la deriva" además del literal (un barco)?', back: 'un sentido figurado: ausencia de control o dirección clara (una vida, un proyecto sin rumbo)' }
   ]
+},
+
+{
+  id: 'nt-orientacion-direccion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:619', 'nociones_generales:C1:620', 'nociones_generales:C1:621', 'nociones_generales:C1:622',
+         'nociones_generales:C1:623', 'nociones_generales:C1:624', 'nociones_generales:C1:625', 'nociones_generales:C1:626',
+         'nociones_generales:C1:627', 'nociones_generales:C1:628', 'nociones_generales:C1:629'],
+  title: 'Orientación y dirección en C1: "con rumbo a" y "sin rumbo fijo"',
+  summary: 'Dar y seguir una dirección en C1 combina vocabulario técnico de tráfico (carril contrario, carril bici) con verbos de orientación (encaminarse, apuntar, orientarse) que funcionan igual de bien en sentido físico que en sentido figurado, como en un proyecto "sin rumbo fijo".',
+  sections: [
+    { h: 'Sustantivos de recorrido y de carril', html: '<i>Trayectoria</i> es el camino que sigue algo en movimiento; <i>travesía</i>, un recorrido de un lado a otro, a menudo largo. <i>Carril derecho/bici/contrario</i> son los distintos tipos de carril en una vía.' },
+    { h: 'Verbos de dirección', html: '<i>Encaminar(se) a/hacia</i> y <i>apuntar a/hacia</i> son moverse o señalar hacia un destino. <i>Indicar</i> es señalar una dirección a otro. <i>Remitir, facturar, expedir</i> son los verbos para enviar algo hacia un destino (cartas, mercancías).' },
+    { h: 'Orientarse respecto a un punto', html: '<i>Ponerse mirando al Norte/al frente</i> es adoptar una orientación concreta. <i>(Des)orientar(se)</i> describe saber o no saber la dirección: <i>la habitación está orientada al Sur</i>.' },
+    { h: 'Rumbo: con destino y sin destino', html: '<i>Más allá (de)</i> señala un punto detrás de un límite. <i>Con/sin rumbo (a)/(fijo)</i> describe si el movimiento tiene un destino claro: <i>sin rumbo fijo</i> (deambulando, sin objetivo) frente a <i>con rumbo a Marte</i> (con un destino concreto) — ambas expresiones funcionan igual de bien en sentido literal que figurado (una vida, un proyecto).' }
+  ],
+  exponents: [
+    { es: 'El avión despegó con rumbo a Buenos Aires.', en: 'The plane took off bound for Buenos Aires.', register: 'formal' },
+    { es: 'El proyecto lleva meses sin rumbo fijo.', en: 'The project has been directionless for months.', register: 'neutral' },
+    { es: 'El apartamento está orientado hacia el mar.', en: 'The apartment faces the sea.', register: 'formal' },
+    { es: 'Circulaba por el carril contrario sin darse cuenta.', en: 'He was driving in the oncoming lane without realizing it.', register: 'neutral' },
+    { es: 'Se encaminó hacia la salida sin decir nada.', en: 'He headed toward the exit without saying a word.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Un barco con rumbo fijo a puerto.', en: 'A ship with a fixed course to port.', note: 'destino claro' },
+    { es: 'Un barco a la deriva, sin rumbo.', en: 'A ship adrift, with no course.', note: 'sin destino ni control' }
+  ],
+  pitfalls: [
+    '"Con/sin rumbo" funciona tanto en sentido literal (un barco, un avión) como figurado (una vida, una carrera) — no se limita al movimiento físico.',
+    '"Orientado hacia" describe la posición fija de algo (una ventana, un edificio) — no implica movimiento, a diferencia de "encaminarse hacia".',
+    '"Remitir, facturar, expedir" son verbos técnicos de envío, no simples sinónimos de "enviar" en cualquier contexto cotidiano.'
+  ],
+  examples: [
+    { es: 'La trayectoria del cohete se desvió ligeramente.', en: 'The rocket\'s trajectory deviated slightly.' },
+    { es: 'La casa está orientada al este, así que recibe el sol de la mañana.', en: 'The house faces east, so it gets the morning sun.' },
+    { es: 'Se desorientó por completo en el laberinto.', en: 'He got completely disoriented in the maze.' }
+  ],
+  probes: [
+    { id: 'p:orientaciondireccionC1:rumbo', kind: 'mcq', q: '"Sin rumbo fijo" puede aplicarse a...', options: ['Solo a barcos y aviones', 'Tanto a movimientos físicos como a proyectos o vidas', 'Solo a personas'], answer: 1 },
+    { id: 'p:orientaciondireccionC1:orientado', kind: 'mcq', q: '"El apartamento está orientado al sur." ¿Implica movimiento?', options: ['Sí, se mueve hacia el sur', 'No, describe una posición fija', 'Solo en sentido figurado'], answer: 1 },
+    { id: 'p:orientaciondireccionC1:cloze', kind: 'cloze', text: 'El barco zarpó con ___ a las islas. (destino de un trayecto)', accept: ['rumbo'] },
+    { id: 'p:orientaciondireccionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "encaminarse hacia" y "estar orientado hacia"?', back: 'encaminarse implica movimiento hacia un destino; estar orientado describe una posición fija' }
+  ]
+},
+
+{
+  id: 'nt-orden-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:636', 'nociones_generales:C1:637', 'nociones_generales:C1:638', 'nociones_generales:C1:639',
+         'nociones_generales:C1:640', 'nociones_generales:C1:641', 'nociones_generales:C1:642', 'nociones_generales:C1:643'],
+  title: 'Orden en C1: series, secuencias y "por orden de prioridad"',
+  summary: 'Ordenar elementos en C1 implica distinguir una serie de una secuencia, saber nombrar la posición exacta (penúltimo, antepenúltimo) y disponer del vocabulario de criterio ("por orden de importancia") que estructura cualquier lista argumentada.',
+  sections: [
+    { h: 'Sustantivos de conjunto ordenado', html: '<i>Serie, secuencia, sucesión</i> designan un conjunto de elementos ordenados, con matices: "serie" es más general (<i>una serie de nombres</i>), "secuencia" implica un orden con sentido interno (<i>una secuencia de imágenes</i>), "sucesión" enfatiza que unos siguen a otros en el tiempo (<i>una sucesión de datos</i>).' },
+    { h: 'Posiciones específicas', html: '<i>Penúltimo, antepenúltimo</i> nombran posiciones concretas cerca del final de una serie — vocabulario preciso que en muchos idiomas requiere perífrasis.' },
+    { h: 'Verbos y locuciones de disposición ordenada', html: '<i>Secuenciar</i> es poner en una secuencia. <i>Estar/ir/venir delante/detrás, antes/después</i> son las relaciones de orden más básicas: <i>Elisa va detrás de mí</i>, <i>¿quién está antes?</i>. <i>Estar/poner/colocar en zigzag/fila/columna/orden/línea</i> describe formaciones espaciales ordenadas: <i>al cabo de un buen rato consiguió que los niños se pusieran en fila</i>.' },
+    { h: 'Ordenar según un criterio', html: '<i>Sucesivamente</i> es el adverbio para "uno tras otro". <i>Ordenar de mayor a menor/de menor a mayor</i> especifica la dirección del orden. <i>Por orden de altura/lista/importancia/prioridad</i> especifica el criterio usado para ordenar — esencial en textos argumentativos que estructuran ideas por relevancia.' }
+  ],
+  exponents: [
+    { es: 'Los candidatos se presentaron por orden de lista.', en: 'The candidates presented themselves in list order.', register: 'formal' },
+    { es: 'Es el penúltimo capítulo del libro.', en: "It's the second-to-last chapter of the book.", register: 'neutral' },
+    { es: 'Ordenaron los resultados de mayor a menor.', en: 'They sorted the results from highest to lowest.', register: 'neutral' },
+    { es: 'Consiguió que los alumnos se colocaran en fila.', en: 'He got the students to line up.', register: 'neutral' },
+    { es: 'Los premios se anunciaron por orden de importancia.', en: 'The awards were announced in order of importance.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Una serie de eventos, sin relación clara entre ellos.', en: 'A series of events, without a clear relation between them.', note: 'serie — más neutro y general' },
+    { es: 'Una secuencia de pasos, cada uno dependiente del anterior.', en: 'A sequence of steps, each dependent on the previous one.', note: 'secuencia — orden con sentido interno' }
+  ],
+  pitfalls: [
+    '"Serie", "secuencia" y "sucesión" no son sinónimos perfectos: "secuencia" implica un orden con lógica interna que "serie" no necesariamente tiene.',
+    '"Antepenúltimo" no significa "tercero desde el final" en un sentido vago — es una posición exacta: penúltimo es el segundo por el final, antepenúltimo el tercero.',
+    '"Por orden de" exige especificar el criterio (altura, importancia, prioridad...) — usarlo sin ese criterio deja la frase incompleta.'
+  ],
+  examples: [
+    { es: 'Fue la antepenúltima persona en hablar.', en: 'He was the third-to-last person to speak.' },
+    { es: 'Los soldados marchaban en columna perfecta.', en: 'The soldiers marched in perfect column.' },
+    { es: 'Se presentaron uno tras otro, sucesivamente.', en: 'They came forward one after another, in succession.' }
+  ],
+  probes: [
+    { id: 'p:ordenC1:antepenultimo', kind: 'mcq', q: '¿Qué posición ocupa "antepenúltimo"?', options: ['La última', 'La segunda por el final', 'La tercera por el final'], answer: 2 },
+    { id: 'p:ordenC1:seriesecuencia', kind: 'mcq', q: '¿Qué diferencia "secuencia" de "serie"?', options: ['Ninguna', 'La secuencia implica un orden con lógica interna', 'La serie es siempre más larga'], answer: 1 },
+    { id: 'p:ordenC1:cloze', kind: 'cloze', text: 'Los resultados se ordenaron de mayor a ___. (dirección descendente)', accept: ['menor'] },
+    { id: 'p:ordenC1:recall', kind: 'recall', front: '¿Qué debe especificarse siempre al usar "por orden de"?', back: 'el criterio de ordenación (altura, importancia, prioridad, lista...)' }
+  ]
+},
+
+{
+  id: 'nt-origen-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:649', 'nociones_generales:C1:650', 'nociones_generales:C1:651', 'nociones_generales:C1:652', 'nociones_generales:C1:653'],
+  title: 'Origen en C1: la "semilla" y la "raíz" de las cosas',
+  summary: 'El origen figurado de algo se expresa en español con metáforas vegetales — una idea tiene su "semilla", un problema tiene su "raíz", y para eliminarlo del todo hay que atacarlo "de raíz".',
+  sections: [
+    { h: 'La semilla: el origen de algo abstracto', html: '<i>Semilla</i>, en sentido figurado, es el origen mínimo de algo que después crece: <i>la semilla del odio</i>.' },
+    { h: 'Ser originario: el origen geográfico', html: '<i>Ser originario de</i> señala el lugar de procedencia, típicamente de especies, tradiciones o personas: <i>esta especie es originaria de Asia Central</i>.' },
+    { h: 'Surgir de, partir de: el punto de arranque de una idea', html: '<i>Surgir de, partir de</i> señalan el punto de arranque de un razonamiento o una interpretación: <i>esta interpretación parte de un prejuicio muy generalizado</i>.' },
+    { h: 'La raíz: causa profunda y solución de raíz', html: '<i>Tener (su) raíz en</i> señala una causa profunda, a menudo oculta: <i>el alcoholismo puede tener su raíz en conflictos emocionales ocultos</i>. <i>De raíz</i> describe una solución que ataca la causa profunda, no solo el síntoma: <i>las autoridades deben hacer un esfuerzo para cortar de raíz el problema de la marginación</i>.' }
+  ],
+  exponents: [
+    { es: 'Aquella discusión fue la semilla de su ruptura.', en: 'That argument was the seed of their breakup.', register: 'neutral' },
+    { es: 'Esta costumbre es originaria del norte del país.', en: 'This custom originates from the north of the country.', register: 'formal' },
+    { es: 'El conflicto tiene su raíz en un viejo reparto de tierras.', en: 'The conflict has its roots in an old land distribution.', register: 'formal' },
+    { es: 'Hay que atajar el problema de raíz, no solo maquillarlo.', en: 'The problem needs to be tackled at its root, not just papered over.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Atacar el síntoma, sin más.', en: 'Treating just the symptom.', note: 'solución superficial' },
+    { es: 'Atacar el problema de raíz.', en: 'Tackling the problem at its root.', note: 'solución que ataca la causa profunda' }
+  ],
+  pitfalls: [
+    '"De raíz" no describe cualquier solución — específicamente una que ataca la causa profunda, no el síntoma superficial.',
+    '"Ser originario de" se aplica al lugar de procedencia (especies, tradiciones, personas) — no es intercambiable con "tener su raíz en", que se refiere a una causa, no a un lugar.',
+    '"Semilla" en sentido figurado señala un origen mínimo que después se desarrolla — no un origen ya desarrollado o evidente.'
+  ],
+  examples: [
+    { es: 'El malestar social tiene su raíz en la desigualdad económica.', en: 'The social unrest has its roots in economic inequality.' },
+    { es: 'Esta receta es originaria de la cocina mediterránea.', en: 'This recipe originates from Mediterranean cuisine.' },
+    { es: 'Aquel comentario fue la semilla de una larga amistad.', en: 'That comment was the seed of a long friendship.' }
+  ],
+  probes: [
+    { id: 'p:origenC1:deraiz', kind: 'mcq', q: '"Cortar el problema de raíz" implica...', options: ['Atacar solo el síntoma', 'Atacar la causa profunda', 'Ignorar el problema'], answer: 1 },
+    { id: 'p:origenC1:originario', kind: 'mcq', q: '"Ser originario de" se aplica a...', options: ['Una causa abstracta', 'El lugar de procedencia', 'Un síntoma'], answer: 1 },
+    { id: 'p:origenC1:cloze', kind: 'cloze', text: 'Aquel comentario fue la ___ de una larga enemistad. (origen mínimo que luego se desarrolla)', accept: ['semilla'] },
+    { id: 'p:origenC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "ser originario de" y "tener su raíz en"?', back: '"ser originario de" señala un lugar de procedencia; "tener su raíz en" señala una causa profunda, no un lugar' }
+  ]
 }
 
 ];
