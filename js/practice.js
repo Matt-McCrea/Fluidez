@@ -1,19 +1,33 @@
 /* ============================================================================
  * PRACTICE — "Practicar": on-demand practice.
- *   • Hablar de…  — leveled topic prompts; finish one and the chip advances to
- *                   the next (harder) level on that topic. Free writing, not
- *                   a quiz, so it sits outside the selector below.
- *   • Everything quiz-like (mixed review, themed vocab, grammar-in-context,
- *     your worst items, what to test next) goes through window.Selector's
- *     5-option chooser — see js/selector.js.
+ *
+ * Order matters here. "Hablar de…" used to come first and render eleven topic
+ * chips, which pushed the actual practice modes and the drills below the fold —
+ * so the most useful part of the tab was the part nobody saw. The modes come
+ * first now, and writing-about-a-topic comes last.
+ *
+ * It is also a better section than it was. The eleven hand-written topics gave
+ * 38 prompts and stopped at level 5; data/writing.js now holds 405 tasks, every
+ * one tagged with one of the 20 Plan Curricular themes and reaching B2. So the
+ * chips are themes, the prompts are drawn from that pool at the learner's own
+ * level, and the count on each chip tells you how much is actually there.
  * ========================================================================== */
 window.Practice = (function () {
   var UI = window.UI;
-  var TLKEY = 'fluidez.topicLevel';
 
-  function loadTL() { try { return JSON.parse(localStorage.getItem(TLKEY)) || {}; } catch (e) { return {}; } }
-  function saveTL(o) { try { localStorage.setItem(TLKEY, JSON.stringify(o)); } catch (e) {} }
-  function topicLevel(id) { return loadTL()[id] || 1; }
+  function levelGate() {
+    var p = window.Profile ? window.Profile.params() : null;
+    return (p && p.maxGate) || 99;
+  }
+
+  // Writing tasks on a theme, at or below the learner's level, hardest first so
+  // a round starts at the top of what they can currently handle.
+  function tasksFor(theme) {
+    var gate = levelGate();
+    return (window.WRITING_TASKS || [])
+      .filter(function (t) { return t.theme === theme && (t.level || 1) <= gate; })
+      .sort(function (a, b) { return (b.level || 1) - (a.level || 1); });
+  }
 
   function render(host, back) {
     UI.clear(host);
@@ -21,47 +35,53 @@ window.Practice = (function () {
     wrap.appendChild(UI.el('h1', null, 'Practicar'));
     wrap.appendChild(UI.el('p', 'muted', 'Quick, targeted practice — pick exactly what you want to work on.'));
 
-    // ---- Hablar de… (leveled) ----
-    wrap.appendChild(UI.el('h3', null, 'Hablar de… (write about a topic)'));
-    var topics = UI.el('div', 'chip-row');
-    (window.TOPICS || []).forEach(function (t) {
-      var lvl = Math.min(topicLevel(t.id), t.prompts.length);
-      var c = UI.el('button', 'topic-chip', t.topic + ' · L' + lvl + (lvl >= t.prompts.length ? ' ✓' : '')); c.type = 'button';
-      c.addEventListener('click', function () { startTopic(t); });
-      topics.appendChild(c);
-    });
-    wrap.appendChild(topics);
-
-    // ---- everything quiz-like ----
-    wrap.appendChild(UI.el('h3', null, 'Practicar (elige un modo)'));
+    // ---- the practice modes come first: this is the useful part ----
+    wrap.appendChild(UI.el('h3', null, 'Elige un modo'));
     if (window.Selector) window.Selector.renderChooser(wrap);
 
-    // ---- fast drills ported from Español (conjugation + flashcards) ----
+    // ---- fast drills (conjugation + flashcards) ----
     wrap.appendChild(UI.el('h3', null, 'Ejercicios rápidos'));
     if (window.Drills) window.Drills.renderSection(wrap);
+
+    // ---- writing on a theme, last ----
+    wrap.appendChild(UI.el('h3', null, 'Escribir sobre un tema'));
+    wrap.appendChild(UI.el('p', 'muted small',
+      'A writing prompt on the theme you pick, at your level. The number is how many are available to you now.'));
+    var chips = UI.el('div', 'chip-row');
+    var any = false;
+    (window.THEMES || []).forEach(function (th) {
+      var n = tasksFor(th.id).length;
+      if (!n) return;
+      any = true;
+      var c = UI.el('button', 'topic-chip', th.en + ' · ' + n); c.type = 'button';
+      c.title = th.es;
+      c.addEventListener('click', function () { startTheme(th); });
+      chips.appendChild(c);
+    });
+    if (!any) chips.appendChild(UI.el('span', 'muted small', 'Nothing at your level yet — try a higher level in Más.'));
+    wrap.appendChild(chips);
 
     host.appendChild(wrap);
   }
 
   function backToMenu() { window.Shell.closeOverlay(); window.Shell.refresh('practicar'); }
 
-  function startTopic(t) {
+  /* Pick a task the learner has not just done: rotate by day so the same theme
+   * gives something different tomorrow, rather than always the hardest one. */
+  function startTheme(th) {
+    var pool = tasksFor(th.id);
+    if (!pool.length) return;
+    var day = Math.floor(Date.now() / 86400000);
+    var task = pool[day % pool.length];
+
     window.Shell.openOverlay(false);
     var host = document.getElementById('stage-host');
-    var lvl = Math.min(topicLevel(t.id), t.prompts.length);
-    var pr = t.prompts[lvl - 1];
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('div', 'eyebrow', 'Hablar de… ' + t.topic + ' · L' + lvl));
+    wrap.appendChild(UI.el('div', 'eyebrow', 'Escribir · ' + th.es + ' · L' + (task.level || 1)));
     var body = UI.el('div'); wrap.appendChild(body);
     host.appendChild(wrap);
-    window.Writer.mount(body, pr, {
-      counter: true, doneLabel: (lvl < t.prompts.length ? 'Done — unlock L' + (lvl + 1) + ' →' : '← Practicar'),
-      onDone: function () {
-        if (lvl < t.prompts.length) { var tl = loadTL(); tl[t.id] = lvl + 1; saveTL(tl); }
-        backToMenu();
-      }
-    });
+    window.Writer.mount(body, task, { counter: true, doneLabel: '← Practicar', onDone: backToMenu });
   }
 
   return { render: render };
