@@ -278,14 +278,47 @@ window.Checker = (function () {
   // Strict exact-answer check (accents required; case/space-insensitive) for
   // cloze / transform / sentence-building items. `accepted` is one string or
   // an array of acceptable answers.
-  function checkExact(input, accepted) {
+  /* A dictionary gloss is not one answer, it is a small set of them.
+   * "sex, gender" and "sociable, outgoing" list alternatives, either of which
+   * is right. "the friend (m)" and "the doctor (f)" mark the gender of the
+   * SPANISH word — the bracket is metadata, not part of the English, so
+   * "friend" must pass. "the fish (food)" disambiguates which fish is meant,
+   * and again the English word alone is the correct answer.
+   *
+   * So a gloss expands to: the whole string, each comma/slash-separated part,
+   * and each of those with its bracket and its leading article or "to"
+   * removed. Only used for meaning items (vocab, idioms, phrases) — never for
+   * cloze or sentence answers, where splitting on a comma would accept half a
+   * sentence. */
+  function meaningAlternatives(gloss) {
+    var out = [], seen = {};
+    function add(x) {
+      var t = String(x).trim();
+      if (!t) return;
+      var k = E.normalize(t);
+      if (k && !seen[k]) { seen[k] = 1; out.push(t); }
+    }
+    add(gloss);
+    String(gloss).split(/[,;\/]| or /).forEach(function (part) {
+      add(part);
+      var noParens = part.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ');
+      add(noParens);
+      add(noParens.replace(/^\s*(the|a|an|to)\s+/i, ''));
+    });
+    return out;
+  }
+
+  function checkExact(input, accepted, opts) {
     var norm = E.normalize(input);
     var list = Array.isArray(accepted) ? accepted : [accepted];
+    if (opts && opts.meaning) {
+      list = list.reduce(function (acc, a) { return acc.concat(meaningAlternatives(a)); }, []);
+    }
     if (list.some(function (a) { return E.normalize(a) === norm; })) return { pass: true, near: false };
     // accent-insensitive near miss → encourage a fix rather than mark cold-wrong
     var near = list.some(function (a) { return E.deaccent(E.normalize(a)) === E.deaccent(norm); });
     return { pass: false, near: near };
   }
 
-  return { checkWriting: checkWriting, checkExact: checkExact, evaluate: evaluate, expectedForm: expectedForm };
+  return { checkWriting: checkWriting, checkExact: checkExact, meaningAlternatives: meaningAlternatives, evaluate: evaluate, expectedForm: expectedForm };
 })();

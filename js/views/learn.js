@@ -231,7 +231,7 @@ window.StageLearn = (function () {
         if (e.key !== 'Enter') return;
         e.preventDefault();
         if (revealed) { next(false); return; }
-        var r = C.checkExact(input.value, it.back);
+        var r = C.checkExact(input.value, it.back, { meaning: it.kind !== 'grammar' });
         if (r.pass) { fb.textContent = '¡Correcto!'; fb.className = 'feedback good'; setTimeout(function () { next(true); }, 300); }
         else { fb.textContent = r.near ? 'Nearly — accents' : 'Not quite'; fb.className = 'feedback bad'; }
       });

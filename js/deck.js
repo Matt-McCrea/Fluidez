@@ -61,12 +61,18 @@ window.Deck = (function () {
       show();
     }
     function markGood() { if (locked) return; locked = true; feedback.textContent = '¡Correcto! ' + cur.back; feedback.className = 'feedback good'; setTimeout(function () { advance(true); }, 350); }
-    input.addEventListener('input', function () { if (!locked && !revealed && E.normalize(input.value) === E.normalize(cur.back)) markGood(); });
+    // A gloss with two meanings, or a gender bracket, accepts any one of them.
+    var MEANING = { vocab: 1, idiom: 1, phrase: 1, capture: 1 };
+    function meaningOpts() { return { meaning: !!MEANING[cur.kind] }; }
+    input.addEventListener('input', function () {
+      if (locked || revealed) return;
+      if (C.checkExact(input.value, cur.back, meaningOpts()).pass) markGood();
+    });
     input.addEventListener('keydown', function (e) {
       if (e.key !== 'Enter') return; e.preventDefault();
       if (locked) return;
       if (revealed) { advance(false); return; }
-      var r = C.checkExact(input.value, cur.back);
+      var r = C.checkExact(input.value, cur.back, meaningOpts());
       if (r.pass) { markGood(); return; }
       feedback.textContent = r.near ? 'Nearly — check the accents' : 'Not quite — try again, or reveal';
       feedback.className = 'feedback bad';
