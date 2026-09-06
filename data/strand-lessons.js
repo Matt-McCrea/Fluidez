@@ -25732,6 +25732,91 @@ window.STRAND_LESSONS = [
     { id: 'p:atractivocalidadC1:cloze', kind: 'cloze', text: 'La empresa ___ la calidad de todos sus productos. (asegurar formalmente)', accept: ['garantiza'] },
     { id: 'p:atractivocalidadC1:recall', kind: 'recall', front: '¿Qué adjetivos describen un atractivo refinado, y cuáles su opuesto?', back: 'apuesto/exquisito/distinguido para lo refinado; ridículo/vulgar/basto/antiestético para su opuesto' }
   ]
+},
+
+{
+  id: 'nt-aceptabilidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1456', 'nociones_generales:C1:1457', 'nociones_generales:C1:1458', 'nociones_generales:C1:1459',
+         'nociones_generales:C1:1460', 'nociones_generales:C1:1461', 'nociones_generales:C1:1462', 'nociones_generales:C1:1463',
+         'nociones_generales:C1:1464', 'nociones_generales:C1:1465'],
+  title: 'Aceptabilidad en C1: de "razonable" a "disparate", y "no paso por eso"',
+  summary: 'Aceptar o rechazar algo en C1 se dice con matices que van de la tolerancia formal a la indignación absoluta ("una barbaridad"), y con la locución coloquial "no paso por eso" para marcar el límite personal de lo que alguien está dispuesto a tolerar.',
+  sections: [
+    { h: 'Sustantivos de aceptación y de rechazo', html: '<i>Tolerancia, aceptación</i> son las actitudes positivas. En el extremo opuesto, <i>(des)acierto, disparate, barbaridad, incoherencia</i> nombran juicios sobre algo mal hecho o absurdo, con "barbaridad" en el grado más fuerte de indignación.' },
+    { h: 'Adjetivos de aceptabilidad', html: '<i>Razonable, (in)admisible, (in)coherente, ilógico</i> gradúan si algo tiene sentido y se puede aceptar.' },
+    { h: 'Verbos de aceptar, permitir o rechazar', html: '<i>Reconocer</i> es admitir formalmente algo, a menudo un mérito: <i>reconocer los méritos</i>. <i>Permitir, impedir, oponerse a</i> son los verbos generales de aceptación o bloqueo: <i>impedir el paso, oponerse a una idea</i>. <i>Disculpar, admitir</i> son formas de aceptar un error o una excusa.' },
+    { h: '"Pasar por": el límite personal de tolerancia', html: '<i>Pasar por</i> describe el límite de lo que alguien está dispuesto a aceptar: <i>no paso por eso</i> — marca un rechazo firme y personal.' },
+    { h: 'Locuciones de comportamiento aceptable', html: '<i>Hacer algo/comportarse como es debido/como debe ser</i> describe actuar según lo esperado. <i>(No) tener sentido</i> valora la lógica de algo. <i>Difícilmente/éticamente aceptable</i> matizan desde qué perspectiva algo resulta o no aceptable.' }
+  ],
+  exponents: [
+    { es: 'Lo que hizo fue una auténtica barbaridad.', en: 'What he did was an absolute outrage.', register: 'coloquial' },
+    { es: 'No pienso pasar por esa falta de respeto.', en: "I'm not going to put up with that lack of respect.", register: 'coloquial' },
+    { es: 'La empresa reconoció públicamente su error.', en: 'The company publicly acknowledged its mistake.', register: 'formal' },
+    { es: 'Su propuesta resulta difícilmente aceptable.', en: 'His proposal is hardly acceptable.', register: 'formal' },
+    { es: 'El plan no tiene ningún sentido.', en: 'The plan makes no sense at all.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Una decisión razonable, bien fundamentada.', en: 'A reasonable decision, well founded.', note: 'aceptable, con lógica clara' },
+    { es: 'Una decisión que roza el disparate.', en: 'A decision bordering on the absurd.', note: 'apenas aceptable, casi ilógica' }
+  ],
+  pitfalls: [
+    '"Barbaridad" no describe simplemente algo grande o intenso — implica un juicio fuerte de indignación ante algo considerado excesivo o injusto.',
+    '"No paso por eso" es una expresión coloquial de límite personal — no equivale a "no acepto" en un registro formal, donde convendría "no puedo aceptar" o "resulta inadmisible".',
+    '"Reconocer" en el sentido de admitir un error es distinto de "reconocer" en el sentido de identificar algo — el contexto decide cuál de los dos significados aplica.'
+  ],
+  examples: [
+    { es: 'Reconoció sus errores delante de todos.', en: 'He admitted his mistakes in front of everyone.' },
+    { es: 'Su actitud fue del todo incoherente con lo que había dicho antes.', en: 'His attitude was completely inconsistent with what he had said before.' },
+    { es: 'Se opuso firmemente a la propuesta.', en: 'He firmly opposed the proposal.' }
+  ],
+  probes: [
+    { id: 'p:aceptabilidadC1:barbaridad', kind: 'mcq', q: '"Fue una barbaridad." ¿Qué tipo de juicio expresa?', options: ['Aprobación neutra', 'Indignación fuerte ante algo excesivo o injusto', 'Indiferencia'], answer: 1 },
+    { id: 'p:aceptabilidadC1:nopasoporeso', kind: 'mcq', q: '"No paso por eso." ¿Qué registro es?', options: ['Formal', 'Coloquial', 'Técnico'], answer: 1 },
+    { id: 'p:aceptabilidadC1:cloze', kind: 'cloze', text: 'El plan no tiene ningún ___. (falta de lógica)', accept: ['sentido'] },
+    { id: 'p:aceptabilidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "razonable" y "un disparate"?', back: 'razonable es aceptable, con lógica clara; un disparate es apenas aceptable, casi ilógico o absurdo' }
+  ]
+},
+
+{
+  id: 'nt-adecuacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1474', 'nociones_generales:C1:1475', 'nociones_generales:C1:1476', 'nociones_generales:C1:1477',
+         'nociones_generales:C1:1478', 'nociones_generales:C1:1479', 'nociones_generales:C1:1480', 'nociones_generales:C1:1481', 'nociones_generales:C1:1482'],
+  title: 'Adecuación en C1: "guardar las formas" y "estar contraindicado para"',
+  summary: 'Ser adecuado en C1 combina actitud personal (tacto, cordura) con adecuación técnica (contraindicado, compatible con) — y "guardar las formas" describe mantener la compostura social incluso cuando por dentro no se comparte lo que ocurre.',
+  sections: [
+    { h: 'Sustantivos de comportamiento adecuado', html: '<i>Adecuación, moderación, tacto, cordura</i> son cualidades de un comportamiento apropiado: <i>actuar con tacto, comportarse con cordura</i>.' },
+    { h: 'Adjetivos de adecuación e inadecuación', html: '<i>Inapropiado, (in)oportuno, (in)adecuado, (des)proporcionado</i> gradúan si algo encaja en su contexto: <i>una conducta inapropiada, un enfado desproporcionado</i>.' },
+    { h: 'Adjetivos de efecto: perjudicial o beneficioso', html: '<i>Perjudicial</i> frente a <i>provechoso, propicio, beneficioso, fructífero, ventajoso</i> — varios sinónimos matizan el efecto positivo desde ángulos distintos (fructífero para resultados concretos, propicio para condiciones favorables).' },
+    { h: 'Compatibilidad y recomendación', html: '<i>(In)compatible con, contrario a</i> describen si dos cosas encajan o se oponen. <i>(Contra)indicado para</i> es el vocabulario técnico, especialmente médico, de recomendación o desaconsejo: un medicamento puede estar "indicado" o "contraindicado" para cierta condición.' },
+    { h: 'Verbos de ajustar y de mantener la compostura', html: '<i>Acondicionar</i> es preparar algo para un uso concreto. <i>Adecuarse a, ajustarse a</i> son adaptarse a una norma o contexto. <i>Hacer/realizar un ajuste/una adaptación</i> son las acciones formales correspondientes. <i>Guardar las formas/la compostura</i> es mantener un comportamiento socialmente apropiado incluso bajo tensión o desacuerdo interno.' }
+  ],
+  exponents: [
+    { es: 'Este medicamento está contraindicado para personas con hipertensión.', en: 'This medication is contraindicated for people with hypertension.', register: 'formal' },
+    { es: 'Supo guardar las formas pese a estar muy enfadado.', en: 'He managed to keep his composure despite being very angry.', register: 'neutral' },
+    { es: 'La medida resultó muy beneficiosa para la economía local.', en: 'The measure proved very beneficial for the local economy.', register: 'formal' },
+    { es: 'Su reacción fue completamente desproporcionada.', en: 'His reaction was completely disproportionate.', register: 'neutral' },
+    { es: 'La empresa tuvo que acondicionar el local antes de abrir.', en: 'The company had to fit out the premises before opening.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un clima propicio para el turismo.', en: 'A climate favorable for tourism.', note: 'condiciones favorables' },
+    { es: 'Un acuerdo fructífero para ambas partes.', en: 'A fruitful agreement for both parties.', note: 'resultado concreto positivo' }
+  ],
+  pitfalls: [
+    '"(Contra)indicado para" es vocabulario técnico, sobre todo médico — usarlo fuera de ese contexto (por ejemplo, para gustos personales) suena forzado.',
+    '"Guardar las formas" no significa estar de acuerdo — describe mantener la compostura social independientemente de lo que se piense o sienta por dentro.',
+    '"Propicio" y "fructífero" no son intercambiables: propicio describe condiciones favorables antes de un resultado; fructífero describe el resultado positivo en sí.'
+  ],
+  examples: [
+    { es: 'Intentó adecuarse a las nuevas normas de la empresa.', en: 'He tried to adapt to the company\'s new rules.' },
+    { es: 'Su comportamiento fue contrario a lo acordado.', en: 'His behavior was contrary to what had been agreed.' },
+    { es: 'Realizaron varios ajustes antes de firmar el contrato.', en: 'They made several adjustments before signing the contract.' }
+  ],
+  probes: [
+    { id: 'p:adecuacionC1:contraindicado', kind: 'mcq', q: '¿En qué contexto es más habitual "(contra)indicado para"?', options: ['Gustos personales', 'Contexto médico/técnico', 'Conversación informal'], answer: 1 },
+    { id: 'p:adecuacionC1:guardarformas', kind: 'mcq', q: '"Guardó las formas" significa que...', options: ['Estuvo de acuerdo con todo', 'Mantuvo la compostura social, independientemente de lo que sintiera', 'Se enfadó abiertamente'], answer: 1 },
+    { id: 'p:adecuacionC1:cloze', kind: 'cloze', text: 'Su enfado fue completamente ___. (excesivo respecto a la causa)', accept: ['desproporcionado'] },
+    { id: 'p:adecuacionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "propicio" y "fructífero"?', back: 'propicio describe condiciones favorables antes de un resultado; fructífero describe el resultado positivo en sí' }
+  ]
 }
 
 ];
