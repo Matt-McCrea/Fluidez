@@ -25405,6 +25405,123 @@ window.STRAND_LESSONS = [
     { id: 'p:audibilidadaudicionC1:cloze', kind: 'cloze', text: 'El ruido del taladro era ___. (extremadamente fuerte, que ensordece)', accept: ['ensordecedor'] },
     { id: 'p:audibilidadaudicionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "traspasar" y "propagarse" aplicados al sonido?', back: '"traspasar" describe atravesar una barrera física (una pared); "propagarse" describe extenderse por el espacio' }
   ]
+},
+
+{
+  id: 'nt-sabor-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1288', 'nociones_generales:C1:1289', 'nociones_generales:C1:1290', 'nociones_generales:C1:1291'],
+  title: 'Sabor en C1: catar, saborear y "estar para chuparse los dedos"',
+  summary: 'Distinguir "catar" de "saborear" es la clave de este vocabulario reducido pero preciso: catar es analizar profesionalmente un sabor, saborear es disfrutarlo con calma — y "estar para chuparse los dedos" describe algo delicioso hasta el extremo.',
+  sections: [
+    { h: 'La cata: análisis profesional del sabor', html: '<i>Cata</i> es la degustación analítica y profesional de un producto: <i>cata de vinos</i>. <i>Catar</i> es el verbo correspondiente, distinto de <i>saborear</i>, que implica disfrutar del sabor con calma, no necesariamente analizarlo: <i>catar un vino</i>.' },
+    { h: 'Conservar o detectar un sabor', html: '<i>Conservar/detectar un sabor</i> describen, respectivamente, que un sabor permanece o que se identifica correctamente.' },
+    { h: '"Estar para chuparse los dedos"', html: 'Esta locución coloquial describe algo tan delicioso que provoca ganas de lamerse los dedos tras comerlo.' }
+  ],
+  exponents: [
+    { es: 'Fueron a una cata de vinos en la bodega.', en: 'They went to a wine tasting at the winery.', register: 'formal' },
+    { es: 'Le gusta saborear cada bocado sin prisa.', en: 'He likes to savor every bite without rushing.', register: 'neutral' },
+    { es: 'Este guiso está para chuparse los dedos.', en: 'This stew is finger-licking good.', register: 'coloquial' },
+    { es: 'El experto detectó un ligero sabor a roble en el vino.', en: 'The expert detected a slight oaky flavor in the wine.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Cató el vino para evaluar su calidad.', en: 'He tasted the wine to assess its quality.', note: 'catar — análisis profesional' },
+    { es: 'Saboreó el postre con auténtico placer.', en: 'He savored the dessert with real pleasure.', note: 'saborear — disfrute, sin análisis técnico' }
+  ],
+  pitfalls: [
+    '"Catar" implica un análisis profesional o técnico del sabor; "saborear" implica disfrute, sin necesariamente evaluar nada.',
+    '"Estar para chuparse los dedos" es exclusivamente coloquial — no conviene en un registro formal o técnico sobre gastronomía.'
+  ],
+  examples: [
+    { es: 'El sumiller cató varios vinos antes de elegir el menú.', en: 'The sommelier tasted several wines before choosing the menu.' },
+    { es: 'Prefiero saborear la comida despacio.', en: 'I prefer to savor food slowly.' },
+    { es: 'Este pastel está para chuparse los dedos.', en: 'This cake is finger-licking good.' }
+  ],
+  probes: [
+    { id: 'p:saborC1:catarsaborear', kind: 'mcq', q: '¿Qué diferencia hay entre "catar" y "saborear"?', options: ['Ninguna', 'Catar es un análisis profesional; saborear es disfrutar sin necesariamente analizar', 'Saborear es más técnico'], answer: 1 },
+    { id: 'p:saborC1:cloze', kind: 'cloze', text: 'Este guiso está para ___ los dedos. (delicioso, hipérbole coloquial)', accept: ['chuparse'] },
+    { id: 'p:saborC1:recall', kind: 'recall', front: '¿Qué implica la locución "estar para chuparse los dedos"?', back: 'que algo es tan delicioso que provoca ganas de lamerse los dedos tras comerlo' }
+  ]
+},
+
+{
+  id: 'nt-olor-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1298', 'nociones_generales:C1:1299', 'nociones_generales:C1:1300', 'nociones_generales:C1:1301',
+         'nociones_generales:C1:1302', 'nociones_generales:C1:1303', 'nociones_generales:C1:1304'],
+  title: 'Olor en C1: de "fragancia" a "peste"',
+  summary: 'Los olores se gradúan en C1 desde lo agradable (fragancia) hasta lo insoportable (peste), con verbos que distinguen entre percibir activamente un olor (olfatear) y simplemente desprenderlo (apestar).',
+  sections: [
+    { h: 'Los dos extremos del olor', html: '<i>Peste</i> es un olor muy desagradable: <i>¡qué peste!</i>. <i>Fragancia, esencia</i> son, en el extremo contrario, olores agradables y concentrados.' },
+    { h: 'Calificar un olor', html: 'Un olor puede ser <i>asfixiante, apestoso, aromático, penetrante</i> — una escala de lo desagradable a lo intenso pero agradable. <i>Oloroso</i> describe algo con olor notable, generalmente positivo.' },
+    { h: 'Verbos de percibir y de desprender olor', html: '<i>Olfatear</i> es percibir activamente un olor, oliendo deliberadamente. <i>Apestar</i> es desprender un olor muy desagradable. <i>Despedir/desprender un olor</i> son los verbos neutros para que algo produzca un olor, sea bueno o malo.' }
+  ],
+  exponents: [
+    { es: '¡Qué peste sale de la basura!', en: 'What a stench coming from the trash!', register: 'coloquial' },
+    { es: 'El perfume desprendía una fragancia suave.', en: 'The perfume gave off a delicate fragrance.', register: 'formal' },
+    { es: 'El perro olfateó el paquete antes de dejarlo pasar.', en: 'The dog sniffed the package before letting it through.', register: 'neutral' },
+    { es: 'Esos zapatos apestan después del partido.', en: 'Those shoes stink after the game.', register: 'coloquial' },
+    { es: 'La sala desprendía un olor penetrante a pintura.', en: 'The room gave off a pungent smell of paint.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Un olor aromático a especias.', en: 'A fragrant smell of spices.', note: 'intenso pero agradable' },
+    { es: 'Un olor asfixiante a humo.', en: 'A suffocating smell of smoke.', note: 'intenso y desagradable' }
+  ],
+  pitfalls: [
+    '"Olfatear" describe la acción activa de oler algo deliberadamente — no es sinónimo de "oler", que puede ser pasivo (percibir un olor sin buscarlo).',
+    '"Apestar" siempre implica un olor desagradable — no se usa para fragancias agradables por intensas que sean.',
+    '"Penetrante" no siempre es negativo — un olor penetrante puede ser desagradable o simplemente muy intenso, según el contexto.'
+  ],
+  examples: [
+    { es: 'La cocina desprendía un aroma delicioso.', en: 'The kitchen gave off a delicious aroma.' },
+    { es: 'El sótano apestaba a humedad.', en: 'The basement reeked of damp.' },
+    { es: 'Olfateó la leche antes de bebérsela.', en: 'She sniffed the milk before drinking it.' }
+  ],
+  probes: [
+    { id: 'p:olorC1:olfatearoler', kind: 'mcq', q: '¿Qué diferencia hay entre "olfatear" y simplemente "oler"?', options: ['Ninguna', 'Olfatear es la acción activa y deliberada de oler algo', 'Oler es siempre activo'], answer: 1 },
+    { id: 'p:olorC1:apestar', kind: 'mcq', q: '¿Se puede usar "apestar" para una fragancia agradable?', options: ['Sí, si es muy intensa', 'No, siempre implica olor desagradable', 'Solo en registro formal'], answer: 1 },
+    { id: 'p:olorC1:cloze', kind: 'cloze', text: '¡Qué ___ sale de la basura! (olor muy desagradable, coloquial)', accept: ['peste'] },
+    { id: 'p:olorC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "fragancia" y "peste"?', back: 'fragancia es un olor agradable y concentrado; peste es un olor muy desagradable' }
+  ]
+},
+
+{
+  id: 'nt-color-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1314', 'nociones_generales:C1:1315', 'nociones_generales:C1:1316', 'nociones_generales:C1:1317',
+         'nociones_generales:C1:1318', 'nociones_generales:C1:1319', 'nociones_generales:C1:1320'],
+  title: 'Color en C1: matices, gamas y verbos que cambian el color',
+  summary: 'El color en C1 se describe con precisión técnica (matiz, gama, tonalidad) y se manipula con una serie de verbos muy específicos — desteñir, decolorar, blanquear, enrojecer, aclarar, oscurecer — cada uno reservado para un tipo distinto de cambio cromático.',
+  sections: [
+    { h: 'Sustantivos de matiz cromático', html: '<i>Coloración, tonalidad</i> son sustantivos generales del color. <i>Mechas</i> son franjas de color distinto en el pelo. <i>Matiz, gama de color/de grises</i> describen variaciones sutiles dentro de un color o un rango completo de tonos.' },
+    { h: 'Adjetivos de color', html: 'Un color puede ser <i>pálido, pastel, llamativo, chillón, desteñido, satinado</i> — desde lo suave y apagado (pálido, pastel) hasta lo intenso y llamativo (chillón), pasando por lo que ha perdido color (desteñido) o tiene un acabado brillante (satinado).' },
+    { h: 'Verbos que cambian el color', html: '<i>Desteñir</i> es perder color, típicamente por el lavado o el sol. <i>Decolorar</i> es eliminar deliberadamente el color de algo (el pelo, un tejido). <i>Blanquear</i> es volver blanco. <i>Enrojecer</i> es volverse rojo, a menudo por vergüenza o esfuerzo. <i>Aclarar, oscurecer</i> son cambiar hacia un tono más claro u oscuro. <i>Colorear</i> es añadir color a algo sin color previo.' },
+    { h: 'Locuciones de ganar o perder color', html: '<i>Adquirir/suavizar un color</i> describen ganar un color o atenuarlo. <i>Perder/dar color</i> describen, respectivamente, que algo pierde su color o que algo se lo proporciona a otra cosa.' }
+  ],
+  exponents: [
+    { es: 'La camiseta se destiñó tras varios lavados.', en: 'The t-shirt faded after several washes.', register: 'neutral' },
+    { es: 'Se hizo mechas rubias para el verano.', en: 'She got blonde highlights for the summer.', register: 'coloquial' },
+    { es: 'Prefiere los colores pastel para la habitación del bebé.', en: "She prefers pastel colors for the baby's room.", register: 'neutral' },
+    { es: 'El tinte decoloró más de lo esperado.', en: 'The dye bleached more than expected.', register: 'neutral' },
+    { es: 'Se enrojeció de vergüenza al oír el comentario.', en: 'He blushed with embarrassment at the comment.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Un color pastel, suave y apagado.', en: 'A pastel color, soft and muted.', note: 'tono suave' },
+    { es: 'Un color chillón, que llama demasiado la atención.', en: 'A garish color that draws too much attention.', note: 'tono intenso y llamativo, con connotación negativa' }
+  ],
+  pitfalls: [
+    '"Desteñir" describe una pérdida de color no deseada (por el lavado, el sol); "decolorar" es una acción deliberada de eliminar color.',
+    '"Chillón" no es un simple sinónimo de "llamativo" — añade una connotación negativa de exceso o mal gusto.',
+    '"Enrojecer" no se aplica solo a teñir algo de rojo — se usa constantemente para describir el rubor de una persona por vergüenza o esfuerzo físico.'
+  ],
+  examples: [
+    { es: 'El sol había decolorado las cortinas.', en: 'The sun had bleached the curtains.' },
+    { es: 'La pared tiene una gama de grises muy elegante.', en: 'The wall has a very elegant range of grays.' },
+    { es: 'El cielo se oscureció de repente antes de la tormenta.', en: 'The sky suddenly darkened before the storm.' }
+  ],
+  probes: [
+    { id: 'p:colorC1:destenirdecolorar', kind: 'mcq', q: '¿Qué diferencia hay entre "desteñir" y "decolorar"?', options: ['Ninguna', 'Desteñir es una pérdida no deseada; decolorar es una acción deliberada', 'Decolorar es siempre accidental'], answer: 1 },
+    { id: 'p:colorC1:chillon', kind: 'mcq', q: '¿Qué connotación tiene "chillón" aplicado a un color?', options: ['Neutra', 'Negativa, de exceso o mal gusto', 'Siempre positiva'], answer: 1 },
+    { id: 'p:colorC1:cloze', kind: 'cloze', text: 'Se ___ de vergüenza al oír el comentario. (ponerse rojo)', accept: ['enrojeció'] },
+    { id: 'p:colorC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "matiz" y "gama"?', back: 'matiz es una variación sutil dentro de un color; gama es un rango completo de tonos' }
+  ]
 }
 
 ];

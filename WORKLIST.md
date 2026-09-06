@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (100/202 done)
+## C1 — lessons (103/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -619,7 +619,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 24 pts · `gramatica C1 § 15.2. Oraciones subordinadas adjet`  — gr-sub-adjetivas-relativo-c1
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica C1 § 15.3. Oraciones subordinadas adver`  — gr-sub-adv-temporales-c1, gr-sub-adv-lugar-modo-c1, gr-sub-adv-causales-c1, gr-sub-adv-finales-c1, gr-sub-adv-condicionales-c1, gr-sub-adv-consecutivas-c1, gr-sub-adv-comparativas-c1, gr-sub-adv-concesivas-c1
 
-### C1 · notion (33/57)
+### C1 · notion (36/57)
 - [x] **Existencia, inexistencia** · 17 pts · `nociones_generales C1 § 1.1. Existencia, inexistencia`  — nt-existencia-inexistencia-c1
 - [x] **Presencia, ausencia** · 17 pts · `nociones_generales C1 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-c1
 - [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales C1 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-c1
@@ -654,9 +654,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Materia** · 8 pts · `nociones_generales C1 § 5.7. Materia`  — nt-materia-c1
 - [x] **Visibilidad, visión** · 17 pts · `nociones_generales C1 § 5.8. Visibilidad, visión`  — nt-visibilidad-vision-c1
 - [x] **Audibilidad, audición** · 20 pts · `nociones_generales C1 § 5.9. Audibilidad, audición`  — nt-audibilidad-audicion-c1
-- [ ] **Sabor** · 4 pts · `nociones_generales C1 § 5.10. Sabor`
-- [ ] **Olor** · 7 pts · `nociones_generales C1 § 5.11. Olor`
-- [ ] **Color** · 7 pts · `nociones_generales C1 § 5.12. Color`
+- [x] **Sabor** · 4 pts · `nociones_generales C1 § 5.10. Sabor`  — nt-sabor-c1
+- [x] **Olor** · 7 pts · `nociones_generales C1 § 5.11. Olor`  — nt-olor-c1
+- [x] **Color** · 7 pts · `nociones_generales C1 § 5.12. Color`  — nt-color-c1
 - [ ] **Edad, vejez** · 14 pts · `nociones_generales C1 § 5.13. Edad, vejez`
 - [ ] **Accesibilidad** · 6 pts · `nociones_generales C1 § 5.14. Accesibilidad`
 - [ ] **Limpieza** · 6 pts · `nociones_generales C1 § 5.15. Limpieza`
