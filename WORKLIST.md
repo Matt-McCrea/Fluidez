@@ -587,9 +587,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (24/202 done)
+## C1 — lessons (25/202 done)
 
-### C1 · grammar (12/28)
+### C1 · grammar (13/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
 - [x] **El número de los sustantivos** · 6 pts · `gramatica C1 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-c1
 - [x] **Clases de adjetivos** · 15 pts · `gramatica C1 § 2.1. Clases de adjetivos`  — gr-clases-adjetivos-c1
@@ -600,7 +600,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Los posesivos — Valores / significado** · 6 pts · `gramatica C1 § `  — gr-posesivos-c1
 - [x] **Cuantificadores propios** · 31 pts · `gramatica C1 § 6.1. Cuantificadores propios`  — gr-cuantificadores-propios-c1
 - [x] **El pronombre personal** · 47 pts · `gramatica C1 § 7.1. El pronombre personal`  — gr-pronombre-personal-c1
-- [ ] **Los relativos** · 25 pts · `gramatica C1 § 7.2. Los relativos`
+- [x] **Los relativos** · 25 pts · `gramatica C1 § 7.2. Los relativos`  — gr-relativos-c1
 - [x] **Los interrogativos** · 7 pts · `gramatica C1 § 7.3. Los interrogativos`  — gr-interrogativos-c1
 - [x] **Los exclamativos** · 6 pts · `gramatica C1 § 7.4. Los exclamativos`  — gr-exclamativos-c1
 - [ ] **Adverbios nucleares o de predicado** · 26 pts · `gramatica C1 § 8.2. Adverbios nucleares o de pred`

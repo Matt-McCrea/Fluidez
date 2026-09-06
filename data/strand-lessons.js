@@ -22255,6 +22255,44 @@ window.STRAND_LESSONS = [
     { id: 'p:pronombrepersonalC1:cloze', kind: 'cloze', text: 'A los miedosos se ___ asusta enseguida. (dativo medio-impersonal)', accept: ['les'] },
     { id: 'p:pronombrepersonalC1:recall', kind: 'recall', front: '¿Qué describe la voz media con "se" + dativo, como en "se me abre la boca"?', back: 'una reacción corporal involuntaria, sin agente' }
   ]
+},
+
+{
+  id: 'gr-relativos-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:259', 'gramatica:C1:260', 'gramatica:C1:261', 'gramatica:C1:264', 'gramatica:C1:266', 'gramatica:C1:268',
+         'gramatica:C1:269', 'gramatica:C1:271', 'gramatica:C1:272', 'gramatica:C1:273', 'gramatica:C1:275', 'gramatica:C1:276',
+         'gramatica:C1:277', 'gramatica:C1:278', 'gramatica:C1:280'],
+  title: 'Relativos en C1: el cual, quien, y el "que" que rechaza un antecedente entero',
+  summary: '"El lugar estaba lejos, el que era un problema" is wrong for a reason worth knowing: a relative with an article can never take a whole clause as its antecedent — only "lo que" can. "El cual" has its own separate restriction, the mirror image: it always needs an antecedent, expressed and nominal, and never stands alone the way "el que" can.',
+  sections: [
+    { h: '"Que": antecedente pronominal, complemento del nombre', html: '<i>Aquellos que lo deseen pueden abstenerse</i> muestra a "que" tras un antecedente que es él mismo un pronombre (demostrativo o indefinido), no un sustantivo. Dentro de un sintagma nominal, "que" también puede funcionar como complemento del propio sustantivo: <i>es una película que me recomendó un amigo</i>.' },
+    { h: '"Lo que": segundo término de comparación, sujeto de la oración', html: '<i>Es más de lo que esperaba</i> usa "lo que" como segundo término de una comparación de cantidad. <i>Lo que te digo es verdad</i> lo usa encabezando toda una oración con función de sujeto — un uso que ningún otro relativo cubre de la misma manera.' },
+    { h: 'Restricción clave: antecedente oracional exige "lo que"', html: 'Cuando el antecedente es una oración entera (no un sustantivo), el relativo con artículo SOLO puede aparecer como "lo que" — nunca como "el que": <i>*El lugar estaba lejos, el que era un problema</i> es agramatical; tiene que ser <i>El lugar estaba lejos, lo que era un problema</i>.' },
+    { h: '"Quien/quienes": registro culto, y relativas libres', html: '"Quien/quienes" equivale a "el/la que" con referente humano, en un registro más culto, y se prefiere en relativas explicativas, donde alterna con "que": <i>Los estudiantes, quienes habían hecho una huelga, no aceptaron.</i> En relativas libres, sin antecedente expreso, "quien" funciona por sí solo: <i>Quien habla así no tiene razón.</i>' },
+    { h: '"El cual": concuerda, pero SIEMPRE necesita antecedente', html: '"El cual/la cual/los cuales/las cuales" concuerda en género y número con su antecedente y alterna con "el que" en registro culto, casi siempre CON preposición: <i>con el que / con el cual hicimos amistad</i>. Sin preposición, en una explicativa, resulta agramatical: <i>*la chica la cual me encontré</i> (tiene que ser "que" o "a la que"). "El cual" también aparece en relativas yuxtapuestas, con antecedente oracional: <i>me dijo que no, lo cual no me gustó nada</i>. Pero a diferencia de "el que", jamás puede prescindir de un antecedente expreso: <i>*los cuales vengan, serán bien recibidos</i> es imposible; solo "los que vengan" funciona sin antecedente.' }
+  ],
+  contrasts: [
+    { es: 'El lugar estaba lejos, lo que complicó bastante el viaje.', en: 'The place was far away, which rather complicated the trip.', note: 'antecedente oracional — exige "lo que", nunca "el que"' },
+    { es: 'Los vecinos, quienes llevaban meses quejándose, por fin fueron escuchados.', en: 'The neighbors, who had been complaining for months, were finally heard.', note: 'quienes — registro culto, relativa explicativa' },
+    { es: 'Nos acompañaba un guía, con el cual recorrimos toda la ciudad.', en: 'A guide accompanied us, with whom we toured the whole city.', note: 'el cual con preposición, registro culto' },
+    { es: 'La persona que conocí ayer resultó ser mi nueva jefa.', en: 'The person I met yesterday turned out to be my new boss.', note: '"que" simple, sin necesidad de "el cual"' }
+  ],
+  pitfalls: [
+    'Un antecedente oracional (toda una oración anterior, no un sustantivo) exige "lo que" — el relativo con artículo definido (<i>el que, la que</i>) jamás puede referirse a una oración completa.',
+    '"El cual" nunca puede aparecer sin antecedente expreso, a diferencia de "el que" — <i>*los cuales vengan</i> es imposible, frente a <i>los que vengan, serán bienvenidos</i>, perfectamente correcto.',
+    '"El cual" sin preposición en una relativa explicativa resulta agramatical o, como mínimo, muy forzado — casi siempre necesita ir precedido de una preposición para sonar natural.'
+  ],
+  examples: [
+    { es: 'Aquellos que ya hayan entregado el formulario pueden retirarse.', en: 'Those who have already submitted the form may leave.' },
+    { es: 'Quien mucho abarca, poco aprieta.', en: 'He who grasps too much, holds too little (a proverb).' },
+    { es: 'Me canceló la reunión sin avisar, lo cual me pareció una falta de respeto.', en: 'He cancelled the meeting on me without notice, which I found disrespectful.' }
+  ],
+  probes: [
+    { id: 'p:relativosC1:oracional', kind: 'mcq', q: '¿Cuál es correcta cuando el antecedente es una oración entera?', options: ['El lugar estaba lejos, el que era un problema.', 'El lugar estaba lejos, lo que era un problema.', 'Ambas son igual de correctas.'], answer: 1 },
+    { id: 'p:relativosC1:cual', kind: 'mcq', q: '¿Qué falla en "*los cuales vengan, serán bien recibidos"?', options: ['"El cual" nunca puede usarse sin antecedente expreso', 'Falta una preposición', 'El verbo está mal conjugado'], answer: 0 },
+    { id: 'p:relativosC1:cloze', kind: 'cloze', text: 'Es más de ___ esperaba. (segundo término de comparación)', accept: ['lo que'] },
+    { id: 'p:relativosC1:recall', kind: 'recall', front: '¿En qué registro se prefiere "quien/quienes" frente a "el que/la que"?', back: 'un registro más culto, especialmente en relativas explicativas' }
+  ]
 }
 
 ];
