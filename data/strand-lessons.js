@@ -26034,6 +26034,95 @@ window.STRAND_LESSONS = [
     { id: 'p:exitologroC1:cloze', kind: 'cloze', text: 'Su carrera está en pleno ___ desde hace dos años. (momento de éxito creciente)', accept: ['auge'] },
     { id: 'p:exitologroC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "rival/adversario" y "competidor"?', back: 'rival/adversario tienen un matiz más personal; competidor es más neutro, propio de contextos formales' }
   ]
+},
+
+{
+  id: 'nt-utilidad-uso-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1643', 'nociones_generales:C1:1644', 'nociones_generales:C1:1645', 'nociones_generales:C1:1646',
+         'nociones_generales:C1:1647', 'nociones_generales:C1:1648', 'nociones_generales:C1:1649', 'nociones_generales:C1:1650',
+         'nociones_generales:C1:1651', 'nociones_generales:C1:1652', 'nociones_generales:C1:1653', 'nociones_generales:C1:1654',
+         'nociones_generales:C1:1655', 'nociones_generales:C1:1656', 'nociones_generales:C1:1657', 'nociones_generales:C1:1658',
+         'nociones_generales:C1:1659', 'nociones_generales:C1:1660', 'nociones_generales:C1:1661', 'nociones_generales:C1:1662'],
+  title: 'Utilidad y uso en C1: de "hacer uso de" a "ser un trasto"',
+  summary: 'Este vocabulario cubre desde la utilidad vital ("crucial") hasta la inutilidad absoluta ("no valer para nada"), con verbos que distinguen usar bien un recurso (aprovechar) de desperdiciarlo (malgastar, desaprovechar, abusar).',
+  sections: [
+    { h: 'Sustantivos de utilidad', html: '<i>(In)utilidad</i> es el sustantivo general. <i>Función</i> es el propósito de algo; <i>aplicación</i>, un uso concreto de algo. <i>Herramienta, utensilio, instrumento</i> son los objetos con los que se lleva a cabo una tarea.' },
+    { h: 'Adjetivos de utilidad, de lo esencial a lo inútil', html: '<i>Vital, crucial</i> describen máxima necesidad. <i>Conveniente, aprovechable, (in)utilizable</i> gradúan la utilidad práctica. <i>(In)eficaz, eficiente, válido, valioso</i> frente a <i>perjudicial, inservible</i> — con "eficaz" centrado en lograr el objetivo y "eficiente" en hacerlo con pocos recursos. <i>Innecesario</i> describe algo que no hace falta.' },
+    { h: 'Verbos de usar bien o mal un recurso', html: '<i>Explotar, malgastar, desaprovechar, abusar</i> describen usos negativos: explotar un recurso hasta agotarlo, malgastar es desperdiciar, desaprovechar es no sacar el provecho posible, abusar es usar en exceso: <i>abusar de los recursos</i>. <i>Recurrir a, servirse de, disponer de, hacer uso de, aplicar</i> son las formas neutras o positivas de usar algo: <i>recurrir al diccionario, hacer uso de las instalaciones, aplicar las medidas</i>. <i>Prescindir de, despreciar</i> son renunciar a algo útil: <i>prescindir de una ayuda, despreciar una oferta</i>.' },
+    { h: 'Rendimiento y provecho', html: '<i>Rendir (bien/mal/al máximo)</i> describe el nivel de productividad de algo o alguien. <i>Sacar/obtener provecho/beneficio/rendimiento</i> son las construcciones para describir el resultado positivo de un uso. <i>Tener una función/aplicación</i> describe que algo sirve para algo concreto.' },
+    { h: 'Locuciones de inutilidad', html: '<i>Ser un trasto/un estorbo/una molestia</i> describen algo que, lejos de ser útil, molesta u ocupa espacio. <i>No valer/servir para nada</i> es la negación absoluta de utilidad.' },
+    { h: 'Poner en práctica y hacer falta', html: '<i>Poner en práctica, llevar a la práctica</i> es aplicar una idea o un plan de forma efectiva. <i>Poner a disposición</i> es ofrecer algo para su uso. <i>Hacer falta</i> es ser necesario. <i>Inútilmente</i> es el adverbio correspondiente a un esfuerzo sin resultado.' }
+  ],
+  exponents: [
+    { es: 'Este manual tiene aplicaciones muy prácticas.', en: 'This manual has very practical applications.', register: 'formal' },
+    { es: 'Ese trasto ya no sirve para nada, tíralo.', en: "That piece of junk doesn't work anymore, throw it out.", register: 'coloquial' },
+    { es: 'Desaprovecharon una oportunidad única.', en: 'They wasted a unique opportunity.', register: 'neutral' },
+    { es: 'La empresa puso a disposición de todos el nuevo software.', en: 'The company made the new software available to everyone.', register: 'formal' },
+    { es: 'El motor rinde al máximo en condiciones óptimas.', en: 'The engine performs at its best under optimal conditions.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Aprovechó cada minuto disponible.', en: 'He made the most of every available minute.', note: 'uso positivo, sacando el máximo provecho' },
+    { es: 'Malgastó su tiempo en tonterías.', en: 'He wasted his time on nonsense.', note: 'uso negativo, desperdicio' }
+  ],
+  pitfalls: [
+    '"Eficaz" y "eficiente" no son sinónimos exactos: eficaz logra el objetivo; eficiente lo logra con el menor gasto de recursos posible.',
+    '"Desaprovechar" y "malgastar" no son intercambiables: desaprovechar es no sacar el provecho posible de una oportunidad; malgastar es desperdiciar algo que ya se tenía (tiempo, dinero, recursos).',
+    '"Ser un trasto" no describe cualquier objeto viejo — implica que además de inútil, estorba u ocupa espacio.'
+  ],
+  examples: [
+    { es: 'Recurrió a un especialista para resolver el problema.', en: 'He turned to a specialist to solve the problem.' },
+    { es: 'Prescindieron del coche y usan solo transporte público.', en: 'They gave up the car and use only public transportation.' },
+    { es: 'Esa vieja aspiradora ya solo es un estorbo.', en: "That old vacuum cleaner is just a nuisance now." }
+  ],
+  probes: [
+    { id: 'p:utilidadusoC1:eficazeficiente', kind: 'mcq', q: '¿Qué diferencia hay entre "eficaz" y "eficiente"?', options: ['Ninguna', 'Eficaz logra el objetivo; eficiente lo logra con menos recursos', 'Eficiente es menos técnico'], answer: 1 },
+    { id: 'p:utilidadusoC1:desaprovecharmalgastar', kind: 'mcq', q: '¿Qué diferencia hay entre "desaprovechar" y "malgastar"?', options: ['Ninguna', 'Desaprovechar es no sacar provecho de una oportunidad; malgastar es desperdiciar algo que ya se tenía', 'Malgastar es positivo'], answer: 1 },
+    { id: 'p:utilidadusoC1:cloze', kind: 'cloze', text: 'Ese trasto ya no ___ para nada. (carecer de utilidad)', accept: ['sirve', 'vale'] },
+    { id: 'p:utilidadusoC1:recall', kind: 'recall', front: '¿Qué implica "ser un trasto" además de "ser inútil"?', back: 'que además de inútil, el objeto estorba u ocupa espacio' }
+  ]
+},
+
+{
+  id: 'nt-capacidad-competencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1679', 'nociones_generales:C1:1680', 'nociones_generales:C1:1681', 'nociones_generales:C1:1682',
+         'nociones_generales:C1:1683', 'nociones_generales:C1:1684', 'nociones_generales:C1:1686', 'nociones_generales:C1:1687',
+         'nociones_generales:C1:1688', 'nociones_generales:C1:1689'],
+  title: 'Capacidad y competencia en C1: ser "un hacha" o "un manazas"',
+  summary: 'La capacidad de una persona se describe en C1 con adjetivos técnicos (capacitado, instruido, dotado) y con un catálogo de comparaciones muy vivas — ser "un manitas" para lo manual, "un hacha" para lo intelectual, y su opuesto, "un manazas", para quien carece por completo de habilidad.',
+  sections: [
+    { h: 'Sustantivos de aptitud', html: '<i>Vocación, aptitud, talento</i> gradúan la capacidad natural: vocación es la inclinación hacia algo, aptitud la capacidad concreta, talento el don especial. <i>Eficacia</i> es la capacidad de lograr resultados.' },
+    { h: 'Adjetivos: de torpe a superdotado', html: '<i>Torpe</i> frente a <i>válido</i> son los extremos básicos. <i>Superdotado, eficaz</i> describen capacidades excepcionales. <i>Capacitado, instruido, dotado, entrenado, formado</i> distinguen el origen de la capacidad: capacitado y formado por educación formal, entrenado por práctica, dotado por talento natural.' },
+    { h: 'Verbos de adquirir capacidad', html: '<i>Formarse, instruir(se), capacitar</i> son los verbos de adquirir o dar capacidad: <i>el examen lo capacitó para acceder al puesto</i>.' },
+    { h: 'Locuciones de aptitud personal', html: '<i>Tener (buen/mal) oído</i> es la capacidad musical o auditiva. <i>Ser la persona indicada para</i> describe a quien encaja perfectamente en una tarea. <i>Tener (buena) mano para</i> es tener habilidad natural para algo, especialmente manual o de trato.' },
+    { h: 'Comparaciones coloquiales de habilidad', html: '<i>Ser un manitas</i> (hábil con las manos) frente a <i>un manazas</i> (torpe, todo lo contrario). <i>Ser un fiera/una máquina/un hacha</i> son comparaciones coloquiales para alguien extraordinariamente hábil o inteligente en algo.' }
+  ],
+  exponents: [
+    { es: 'Es un manitas, arregla cualquier cosa en casa.', en: "He's very handy, he can fix anything at home.", register: 'coloquial' },
+    { es: 'Es un hacha en matemáticas.', en: "He's a genius at math.", register: 'coloquial' },
+    { es: 'El curso lo capacitó para trabajar en el extranjero.', en: 'The course qualified him to work abroad.', register: 'formal' },
+    { es: 'Tiene buena mano para la repostería.', en: 'She has a good hand for baking.', register: 'coloquial' },
+    { es: 'Es un manazas, siempre rompe algo.', en: "He's all thumbs, he always breaks something.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Es un manitas con las herramientas.', en: "He's very handy with tools.", note: 'habilidad manual notable' },
+    { es: 'Es un manazas con las herramientas.', en: "He's clumsy with tools.", note: 'torpeza manual notable, opuesto exacto' }
+  ],
+  pitfalls: [
+    '"Manitas" y "manazas" son casi opuestos exactos pese a su similitud formal — no confundir uno con otro cambia completamente el sentido.',
+    '"Capacitado/formado" implican una capacidad adquirida por educación; "dotado" implica un talento natural — no son sinónimos exactos.',
+    '"Ser un hacha/una máquina/un fiera" son comparaciones exclusivamente coloquiales — no convienen en un registro formal para elogiar una capacidad.'
+  ],
+  examples: [
+    { es: 'Tiene verdadera vocación por la enseñanza.', en: 'She has a real calling for teaching.' },
+    { es: 'Es la persona indicada para liderar el proyecto.', en: 'He is the right person to lead the project.' },
+    { es: 'Está muy bien entrenado para este tipo de pruebas.', en: 'He is very well trained for this kind of test.' }
+  ],
+  probes: [
+    { id: 'p:capacidadcompetenciaC1:manitasmanazas', kind: 'mcq', q: '¿Qué diferencia hay entre "un manitas" y "un manazas"?', options: ['Ninguna, son sinónimos', 'Manitas es hábil con las manos; manazas es justo lo contrario', 'Manazas es más formal'], answer: 1 },
+    { id: 'p:capacidadcompetenciaC1:capacitadodotado', kind: 'mcq', q: '¿Qué diferencia hay entre "capacitado" y "dotado"?', options: ['Ninguna', 'Capacitado es una capacidad adquirida por formación; dotado es un talento natural', 'Dotado es siempre profesional'], answer: 1 },
+    { id: 'p:capacidadcompetenciaC1:cloze', kind: 'cloze', text: 'Es un ___ en matemáticas, lo entiende todo enseguida. (extraordinariamente hábil, coloquial)', accept: ['hacha'] },
+    { id: 'p:capacidadcompetenciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "vocación", "aptitud" y "talento"?', back: 'vocación es la inclinación hacia algo; aptitud es la capacidad concreta; talento es un don especial' }
+  ]
 }
 
 ];
