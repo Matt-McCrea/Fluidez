@@ -28041,6 +28041,47 @@ window.STRAND_LESSONS = [
     { id: 'p:responderdirigirseC1:cloze', kind: 'cloze', text: 'Hola, ¿te ___ de mí? Estudiamos juntos. (reconocer a alguien)', accept: ['acuerdas'] },
     { id: 'p:responderdirigirseC1:recall', kind: 'recall', front: '¿Qué función cumple "bueno, qué quieres que te diga" al responder a un saludo?', back: 'anticipa que las cosas no van bien sin decirlo directamente, invitando a que el otro pregunte más si quiere' }
   ]
+},
+
+{
+  id: 'fn-disculparse-responder-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:1110', 'funciones:C1:1111', 'funciones:C1:1112', 'funciones:C1:1113', 'funciones:C1:1115',
+         'funciones:C1:1116', 'funciones:C1:1121', 'funciones:C1:1122', 'funciones:C1:1123'],
+  title: 'Disculparse y responder en C1: "mil perdones" y "por esta vez pase, pero..."',
+  summary: 'Disculparse en C1 va de la fórmula hiperbólica ("mil perdones") a la admisión de no saber cómo reparar el daño ("no sé cómo disculparme"), y responder a una disculpa puede aceptarla del todo o con la advertencia de que no se repita: "por esta vez pase, pero...".',
+  sections: [
+    { h: 'Disculparse admitiendo la gravedad', html: '<i>Espero que sepas/puedas disculparme</i> pone la aceptación en manos del otro. <i>No sé cómo disculparme</i> admite que la disculpa parece insuficiente frente al daño causado. <i>Mil perdones</i> es una hipérbole que multiplica la disculpa para intensificarla.' },
+    { h: 'Disculparse explicando la razón', html: '<i>Tienes que perdonarme, pero (es que)...</i> pide perdón introduciendo a la vez una justificación: <i>tienes que perdonarme, pero ayer al final no pude enviarte el mensaje porque llegué tarde</i>.' },
+    { h: '"Disculpa/e" con sintagma nominal o cláusula', html: '<i>Disculpa/e</i> + sintagma nominal se disculpa por algo concreto ya ocurrido: <i>disculpen las molestias que todo esto les haya podido causar</i>. <i>Disculpa/e que...</i> + subjuntivo se disculpa por una acción propia: <i>disculpa que no te haya saludado hasta ahora</i>.' },
+    { h: 'Responder a una disculpa: aceptación total o condicionada', html: '<i>Estás disculpado/perdonado</i> acepta la disculpa formalmente. <i>Olvídalo</i> resta importancia al asunto, dando la disculpa por innecesaria. <i>(Bueno/anda/vale...) por esta vez pase, pero...</i> acepta la disculpa con una advertencia implícita de que no debe repetirse.' }
+  ],
+  exponents: [
+    { es: 'Mil perdones por el retraso, el tráfico estaba imposible.', en: 'A thousand apologies for the delay, traffic was impossible.', register: 'coloquial' },
+    { es: 'Disculpe las molestias, resolveremos el problema cuanto antes.', en: 'Please excuse the inconvenience, we will resolve the issue as soon as possible.', register: 'formal' },
+    { es: 'Vale, por esta vez pase, pero que no se repita.', en: "Fine, this time it's okay, but don't let it happen again.", register: 'coloquial' },
+    { es: 'Olvídalo, no pasa nada, a todos nos ha pasado alguna vez.', en: "Forget it, it's fine, it's happened to all of us at some point.", register: 'coloquial' },
+    { es: 'No sé cómo disculparme por lo que ha pasado.', en: "I don't know how to apologize for what happened.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Estás disculpado, no te preocupes más por eso.', en: "You're forgiven, don't worry about it anymore.", note: 'aceptación total, sin condiciones' },
+    { es: 'Por esta vez pase, pero que no vuelva a ocurrir.', en: "This time it's okay, but it mustn't happen again.", note: 'aceptación con advertencia implícita' }
+  ],
+  pitfalls: [
+    '"Mil perdones" es una hipérbole coloquial — no implica literalmente mil disculpas, solo intensifica la disculpa.',
+    '"Disculpa" + sintagma nominal y "disculpa que" + subjuntivo no son intercambiables: el primero se refiere a algo ya ocurrido (las molestias), el segundo introduce una acción propia con verbo conjugado.',
+    '"Por esta vez pase, pero..." no es una aceptación plena — incluye una advertencia implícita sobre el futuro, a diferencia de "estás disculpado", que cierra el asunto sin condiciones.'
+  ],
+  examples: [
+    { es: 'Espero que puedas disculparme por no haber avisado antes.', en: "I hope you can forgive me for not letting you know sooner." },
+    { es: 'Disculpa que te moleste a estas horas.', en: 'Sorry to bother you at this hour.' },
+    { es: 'Anda, olvídalo, no tiene importancia.', en: "Come on, forget it, it's not important." }
+  ],
+  probes: [
+    { id: 'p:disculparseresponderC1:milperdones', kind: 'mcq', q: '"Mil perdones" ¿implica literalmente mil disculpas?', options: ['Sí', 'No, es una hipérbole que intensifica la disculpa', 'Solo en contextos legales'], answer: 1 },
+    { id: 'p:disculparseresponderC1:porestavez', kind: 'mcq', q: '"Por esta vez pase, pero..." ¿es una aceptación total?', options: ['Sí, sin condiciones', 'No, incluye una advertencia implícita', 'Es un rechazo'], answer: 1 },
+    { id: 'p:disculparseresponderC1:cloze', kind: 'cloze', text: 'Disculpa que no te ___ saludado hasta ahora. (subjuntivo compuesto tras "disculpa que")', accept: ['haya'] },
+    { id: 'p:disculparseresponderC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "disculpa las molestias" y "disculpa que no te haya avisado"?', back: '"disculpa" + sintagma nominal se refiere a algo ya ocurrido; "disculpa que" + subjuntivo introduce una acción propia con verbo conjugado' }
+  ]
 }
 
 ];
