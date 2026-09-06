@@ -24550,6 +24550,49 @@ window.STRAND_LESSONS = [
     { id: 'p:anterioridadC1:cloze', kind: 'cloze', text: 'Hay que avisar con ___ para reservar mesa. (margen suficiente antes de un plazo)', accept: ['antelación', 'anterioridad'] },
     { id: 'p:anterioridadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "de antemano" y "con antelación"?', back: '"de antemano" se asocia a saber o agradecer algo por adelantado; "con antelación" describe una acción hecha con margen suficiente antes de un plazo, más formal' }
   ]
+},
+
+{
+  id: 'nt-posterioridad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:771', 'nociones_generales:C1:772', 'nociones_generales:C1:773', 'nociones_generales:C1:774',
+         'nociones_generales:C1:775', 'nociones_generales:C1:776', 'nociones_generales:C1:777', 'nociones_generales:C1:778',
+         'nociones_generales:C1:779', 'nociones_generales:C1:780', 'nociones_generales:C1:781', 'nociones_generales:C1:782', 'nociones_generales:C1:783'],
+  title: 'Posterioridad en C1: de "apenas" a "con posterioridad"',
+  summary: 'Lo que viene después se describe en C1 con una escala de inmediatez muy precisa — "al instante" y "apenas/nada más" marcan lo casi simultáneo, mientras "con posterioridad" y "tras" sitúan un suceso después con distancia formal.',
+  sections: [
+    { h: 'Sustantivos de lo que viene después', html: '<i>Descendiente</i> es quien viene después en una línea familiar. <i>Sucesión</i> es el proceso de una cosa siguiendo a otra. <i>El día después</i> es una fórmula fija para el día siguiente a un suceso importante. <i>Sucesor, heredero</i> son quienes continúan un cargo o reciben algo: <i>el sucesor del título, el heredero de la corona</i>.' },
+    { h: 'Adjetivo y verbo de posterioridad', html: '<i>Retrospectivo</i> describe una mirada hacia atrás desde un punto posterior: <i>un análisis retrospectivo</i>. <i>Suceder</i> es venir después, típicamente en un cargo: <i>suceder en el cargo</i>.' },
+    { h: 'Consecuencia y mirada atrás', html: '<i>Hacer/causar/surtir efecto</i> describe que algo produce su consecuencia esperada después de un tiempo. <i>Mirar al pasado/hacia atrás, volver la vista atrás</i> describen la acción de recordar desde el presente.' },
+    { h: 'Inmediatez: lo que ocurre justo después', html: '<i>Apenas, nada más</i> señalan que algo ocurre inmediatamente después de otra cosa: <i>se desmayó apenas cruzó la línea de meta</i>, <i>me quedé dormido nada más cerrar los ojos</i>. <i>Al instante</i> refuerza esa misma inmediatez: <i>lo supe al instante</i>.' },
+    { h: 'Posterioridad con distancia: formal y de retorno', html: '<i>A la vuelta de</i> sitúa algo justo después de un periodo o un regreso: <i>a la vuelta de vacaciones</i>; en sentido figurado, <i>a la vuelta de la esquina</i> señala inminencia: <i>las vacaciones están a la vuelta de la esquina</i>. <i>Con posterioridad</i> es la fórmula formal para "después", usada en textos oficiales. <i>Tras</i> es la preposición formal de posterioridad: <i>decidió abandonar la prueba tras varios intentos fallidos</i>.' }
+  ],
+  exponents: [
+    { es: 'Lo supe al instante, en cuanto colgué el teléfono.', en: 'I knew it instantly, as soon as I hung up the phone.', register: 'neutral' },
+    { es: 'Se marchó nada más terminar la reunión.', en: 'He left right after the meeting ended.', register: 'neutral' },
+    { es: 'Con posterioridad se aclararon los hechos.', en: 'The facts were clarified at a later date.', register: 'formal' },
+    { es: 'Tras el anuncio, las acciones subieron un diez por ciento.', en: 'Following the announcement, shares rose ten percent.', register: 'formal' },
+    { es: 'El verano está a la vuelta de la esquina.', en: 'Summer is just around the corner.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Apenas llegó, se puso a trabajar.', en: "As soon as he arrived, he got to work.", note: 'inmediatez casi simultánea' },
+    { es: 'Con posterioridad al informe, se tomaron nuevas medidas.', en: 'Subsequent to the report, new measures were taken.', note: 'posterioridad formal, sin implicar inmediatez' }
+  ],
+  pitfalls: [
+    '"Apenas" y "nada más" marcan una inmediatez casi simultánea entre dos hechos — "con posterioridad" no implica esa cercanía, solo que un hecho viene después, sin especificar cuánto después.',
+    '"Sucesor" y "heredero" no son intercambiables sin más: "sucesor" se aplica sobre todo a cargos y posiciones, "heredero" a bienes, títulos o legados.',
+    '"Tras" es de registro más formal que "después de" — en un texto coloquial resultaría artificioso usarlo constantemente.'
+  ],
+  examples: [
+    { es: 'El nuevo director es el sucesor natural del anterior.', en: 'The new director is the natural successor to the previous one.' },
+    { es: 'Un análisis retrospectivo reveló varios errores.', en: 'A retrospective analysis revealed several errors.' },
+    { es: 'Nada más leer la noticia, llamó a su familia.', en: 'As soon as he read the news, he called his family.' }
+  ],
+  probes: [
+    { id: 'p:posterioridadC1:apenas', kind: 'mcq', q: '"Apenas llegó, empezó a trabajar." ¿Qué tipo de posterioridad expresa?', options: ['Muy distante en el tiempo', 'Casi inmediata', 'Formal y sin prisa'], answer: 1 },
+    { id: 'p:posterioridadC1:sucesorheredero', kind: 'mcq', q: '¿A qué se aplica típicamente "heredero"?', options: ['A un cargo institucional', 'A bienes, títulos o legados', 'A un puesto de trabajo cualquiera'], answer: 1 },
+    { id: 'p:posterioridadC1:cloze', kind: 'cloze', text: 'Las vacaciones están a la ___ de la esquina. (inminencia figurada)', accept: ['vuelta'] },
+    { id: 'p:posterioridadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "apenas/nada más" y "con posterioridad"?', back: '"apenas/nada más" marcan inmediatez casi simultánea; "con posterioridad" solo indica que algo viene después, sin implicar cercanía temporal' }
+  ]
 }
 
 ];
