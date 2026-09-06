@@ -26673,6 +26673,48 @@ window.STRAND_LESSONS = [
     { id: 'p:aprobaciondesaprobacionC1:cloze', kind: 'cloze', text: '¡Así se ___! Sabía que lo conseguirías. (exclamación de aprobación)', accept: ['hace'] },
     { id: 'p:aprobaciondesaprobacionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "me opongo a" y "condeno"?', back: 'me opongo a es una desaprobación personal; condenar pertenece a un registro institucional o político, más firme y formal' }
   ]
+},
+
+{
+  id: 'fn-expresar-acuerdo-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:186', 'funciones:C1:188', 'funciones:C1:190', 'funciones:C1:191', 'funciones:C1:193', 'funciones:C1:195',
+         'funciones:C1:196', 'funciones:C1:198', 'funciones:C1:199', 'funciones:C1:200', 'funciones:C1:201', 'funciones:C1:202',
+         'funciones:C1:204', 'funciones:C1:205', 'funciones:C1:206'],
+  title: 'Expresar acuerdo en C1: de "algo de razón tienes" a "¡exactamente!"',
+  summary: 'El acuerdo en C1 se gradúa con precisión — rotundo ("¡exactamente!", "de eso no hay duda"), parcial ("algo de razón tienes", "estoy de acuerdo salvo en...") — y "coincidir" se combina con distintas preposiciones según se esté de acuerdo con una acción, un hecho o algo dicho antes.',
+  sections: [
+    { h: 'Compartir una postura', html: '<i>(Sí/no), yo también/tampoco diría que...</i> confirma coincidencia repitiendo la estructura del otro: <i>no, yo tampoco diría que son sinónimas</i>. <i>(Yo) comparto tu idea/postura</i> es una forma directa y algo formal de expresar acuerdo.' },
+    { h: '"Coincidir con": tres construcciones distintas', html: '<i>Coincido contigo en (lo de) + infinitivo</i> se usa para una acción: <i>coincido contigo en lo de no ir</i>. <i>Coincido contigo en (lo de) que...</i> para un hecho afirmado: <i>coincido contigo en que es una persona maravillosa</i>. <i>Coincido contigo en lo que...</i> remite a algo ya dicho antes por el interlocutor: <i>coincido totalmente contigo en lo que me dijiste ayer</i>. <i>(Yo) estoy de acuerdo con/en lo que...</i> funciona de forma parecida: <i>estoy completamente de acuerdo con lo que dices</i>.' },
+    { h: 'Acuerdo rotundo', html: 'Exclamaciones cortas y contundentes: <i>¡Así es!, ¡Exacto!, ¡Efectivamente!</i>. <i>Evidentemente</i> presenta el acuerdo como algo que no admite discusión. <i>De eso no hay duda</i> y <i>eso es una gran verdad</i> refuerzan el acuerdo con una afirmación adicional. <i>Sí, sí, (eso) es indiscutible/innegable</i> repite el "sí" para intensificar la contundencia del acuerdo.' },
+    { h: 'Acuerdo parcial', html: '<i>Algo de razón tienes</i> concede una parte de razón, sin acuerdo total. <i>Estoy de acuerdo (en todo), salvo en...</i> delimita explícitamente el punto de desacuerdo: <i>estoy de acuerdo en todo, salvo en la última parte de tu discurso</i>. <i>(Yo) no digo que..., pero...</i> introduce una objeción suave dentro de un acuerdo general: <i>no digo que esté mal, pero podría mejorarse</i>.' }
+  ],
+  exponents: [
+    { es: '¡Exactamente! Eso es justo lo que pienso yo también.', en: "Exactly! That's just what I think too.", register: 'coloquial' },
+    { es: 'Coincido contigo en que el proyecto necesita más financiación.', en: 'I agree with you that the project needs more funding.', register: 'neutral' },
+    { es: 'Algo de razón tienes, pero no toda.', en: "You've got a point, but not the whole story.", register: 'coloquial' },
+    { es: 'Estoy de acuerdo en todo, salvo en el plazo propuesto.', en: 'I agree with everything, except the proposed deadline.', register: 'neutral' },
+    { es: 'Evidentemente, la propuesta necesita algunos ajustes.', en: 'Obviously, the proposal needs some adjustments.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Comparto totalmente tu punto de vista.', en: 'I fully share your point of view.', note: 'acuerdo rotundo' },
+    { es: 'Algo de razón tienes, aunque no del todo.', en: "You've got a point, though not entirely.", note: 'acuerdo parcial' }
+  ],
+  pitfalls: [
+    '"Coincidir en (lo de) + infinitivo" y "coincidir en (lo de) que + cláusula" no son intercambiables: el primero se usa para una acción, el segundo para un hecho afirmado directamente.',
+    '"No digo que..., pero..." introduce un acuerdo general con una matización — no es una forma de desacuerdo, aunque contenga un "pero".',
+    '"Algo de razón tienes" concede solo una parte de razón — no equivale a un acuerdo pleno como "tienes toda la razón".'
+  ],
+  examples: [
+    { es: 'Comparto plenamente tu preocupación por el tema.', en: 'I fully share your concern about the issue.' },
+    { es: 'No digo que sea imposible, pero será muy difícil.', en: "I'm not saying it's impossible, but it will be very difficult." },
+    { es: '¡Así es! No hay más que decir.', en: "That's exactly it! There's nothing more to say." }
+  ],
+  probes: [
+    { id: 'p:expresaracuerdoC1:algoderazon', kind: 'mcq', q: '"Algo de razón tienes" expresa...', options: ['Acuerdo total', 'Acuerdo parcial', 'Desacuerdo total'], answer: 1 },
+    { id: 'p:expresaracuerdoC1:coincidirconstruccion', kind: 'mcq', q: '¿Cuál se usa para una acción, no un hecho afirmado?', options: ['Coincido en que es verdad', 'Coincido en lo de no ir', 'Coincido en lo que dijiste'], answer: 1 },
+    { id: 'p:expresaracuerdoC1:cloze', kind: 'cloze', text: 'Estoy de acuerdo en todo, ___ en el plazo. (excepto)', accept: ['salvo'] },
+    { id: 'p:expresaracuerdoC1:recall', kind: 'recall', front: '¿Qué tipo de acuerdo expresa "no digo que..., pero..."?', back: 'un acuerdo general con una matización u objeción suave, no un desacuerdo' }
+  ]
 }
 
 ];
