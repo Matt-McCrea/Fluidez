@@ -23712,6 +23712,47 @@ window.STRAND_LESSONS = [
     { id: 'p:medidasgeneralestamanoC1:cloze', kind: 'cloze', text: 'El jersey ___ al lavarlo con agua caliente. (reducirse de tamaño la ropa)', accept: ['encogió'] },
     { id: 'p:medidasgeneralestamanoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "minúsculo" y "microscópico"?', back: '"minúsculo" es muy pequeño; "microscópico" es un grado más extremo, tan pequeño que casi no se percibe a simple vista' }
   ]
+},
+
+{
+  id: 'nt-distancia-velocidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:343', 'nociones_generales:C1:344', 'nociones_generales:C1:345', 'nociones_generales:C1:346',
+         'nociones_generales:C1:347', 'nociones_generales:C1:348', 'nociones_generales:C1:349', 'nociones_generales:C1:350',
+         'nociones_generales:C1:351', 'nociones_generales:C1:352'],
+  title: 'Distancia y velocidad en C1: del "año luz" al "exceso de velocidad"',
+  summary: 'Unidades de distancia poco comunes en el sistema métrico (milla, pulgada, año luz) conviven con un vocabulario de velocidad rico en matices de ritmo — no es lo mismo un ritmo "pausado" que uno "vertiginoso", y "coger velocidad" no significa lo mismo que "ir a toda velocidad".',
+  sections: [
+    { h: 'Unidades de distancia no métricas', html: '<i>Milla(s), pulgada(s)</i> son unidades del sistema anglosajón, frecuentes en contextos técnicos o de importación. <i>Año(s) luz</i> mide distancias astronómicas — y también se usa hiperbólicamente para exagerar una distancia enorme.' },
+    { h: 'Sustantivos y adjetivos de velocidad', html: '<i>Aceleración</i> es el aumento de velocidad. <i>Ritmo</i> puede ser <i>pausado, acelerado, vertiginoso</i> — tres grados muy distintos de rapidez. <i>Velocidad</i> puede ser <i>media, máxima, constante</i>, y su exceso, <i>exceso de velocidad</i>, tiene connotación casi siempre de infracción. <i>Veloz</i> es el adjetivo general; <i>velozmente</i>, su adverbio.' },
+    { h: 'Verbos y locuciones de velocidad', html: '<i>Coger velocidad</i> es ir aumentando la velocidad progresivamente, no llegar de golpe a la velocidad máxima. <i>Ir/correr a toda velocidad/a toda prisa</i> describe, en cambio, la velocidad máxima ya alcanzada.' }
+  ],
+  exponents: [
+    { es: 'El coche cogió velocidad al salir de la curva.', en: 'The car picked up speed coming out of the curve.', register: 'neutral' },
+    { es: 'Le multaron por exceso de velocidad.', en: 'He was fined for speeding.', register: 'neutral' },
+    { es: 'Esa estrella se encuentra a miles de años luz de distancia.', en: 'That star is thousands of light-years away.', register: 'neutral' },
+    { es: 'El proyecto avanza a un ritmo vertiginoso.', en: 'The project is moving at a dizzying pace.', register: 'formal' },
+    { es: 'Salieron corriendo a toda prisa en cuanto sonó la alarma.', en: 'They ran off at full speed as soon as the alarm went off.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'El tren cogió velocidad poco a poco.', en: 'The train picked up speed little by little.', note: 'aumento progresivo' },
+    { es: 'El tren iba a toda velocidad.', en: 'The train was going at full speed.', note: 'velocidad máxima ya alcanzada' }
+  ],
+  pitfalls: [
+    '"Coger velocidad" describe un proceso de aumento progresivo, no un estado — no equivale a "ir a toda velocidad", que describe la velocidad máxima ya alcanzada.',
+    '"Año luz" es una unidad de distancia, no de tiempo, aunque contenga la palabra "año" — mide cuánto viaja la luz en un año, no un periodo temporal.',
+    '"Exceso de velocidad" tiene casi siempre connotación de infracción de tráfico — no es un simple sinónimo neutro de "mucha velocidad".'
+  ],
+  examples: [
+    { es: 'El ritmo de vida en la ciudad es vertiginoso.', en: 'The pace of life in the city is dizzying.' },
+    { es: 'Mantuvieron una velocidad constante durante todo el trayecto.', en: 'They kept a constant speed throughout the trip.' },
+    { es: 'Corrió velozmente hacia la salida.', en: 'He ran swiftly toward the exit.' }
+  ],
+  probes: [
+    { id: 'p:distanciavelocidadC1:cogervelocidad', kind: 'mcq', q: '"Coger velocidad" describe...', options: ['Un aumento progresivo de velocidad', 'La velocidad máxima ya alcanzada', 'Una disminución de velocidad'], answer: 0 },
+    { id: 'p:distanciavelocidadC1:excesovelocidad', kind: 'mcq', q: '"Exceso de velocidad" suele tener connotación de...', options: ['Elogio', 'Infracción de tráfico', 'Ninguna connotación especial'], answer: 1 },
+    { id: 'p:distanciavelocidadC1:cloze', kind: 'cloze', text: 'Esa galaxia está a millones de ___ luz de distancia. (unidad de distancia astronómica)', accept: ['años'] },
+    { id: 'p:distanciavelocidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre un ritmo "pausado" y uno "vertiginoso"?', back: 'pausado es lento y tranquilo; vertiginoso es extremadamente rápido, casi mareante' }
+  ]
 }
 
 ];
