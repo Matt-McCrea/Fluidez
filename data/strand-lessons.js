@@ -25019,6 +25019,47 @@ window.STRAND_LESSONS = [
     { id: 'p:cambioC1:cloze', kind: 'cloze', text: 'El frío ___ el terreno durante la noche. (hacer más duro, de "duro")', accept: ['endureció'] },
     { id: 'p:cambioC1:recall', kind: 'recall', front: '¿Qué significan los verbos formados con "a-...-ar" o "en-...-ecer" a partir de un adjetivo?', back: '"hacer que algo pase a ser [adjetivo]" (abaratar = hacer más barato, oscurecer = hacer más oscuro)' }
   ]
+},
+
+{
+  id: 'nt-permanencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:905', 'nociones_generales:C1:906', 'nociones_generales:C1:907', 'nociones_generales:C1:908',
+         'nociones_generales:C1:909', 'nociones_generales:C1:910', 'nociones_generales:C1:911', 'nociones_generales:C1:912'],
+  title: 'Permanencia en C1: lo imborrable, lo inalterable y "conservar la calma"',
+  summary: 'Lo que resiste al paso del tiempo se nombra en C1 con adjetivos de negación muy expresivos — imborrable, indestructible, inalterable — y verbos que distinguen entre mantener algo activamente (conservar, preservar) y simplemente resistir (aguantar).',
+  sections: [
+    { h: 'Sustantivos de permanencia', html: '<i>Permanencia, inmortalidad</i> son los sustantivos generales para lo que resiste el paso del tiempo.' },
+    { h: 'Adjetivos negativos de resistencia', html: '<i>Imborrable, indestructible</i> describen algo que no puede eliminarse o destruirse: <i>un recuerdo imborrable, un material indestructible</i>. <i>Invariable, inalterable</i> describen algo que no cambia bajo ninguna circunstancia: <i>la esencia de las cosas es inalterable</i>.' },
+    { h: 'Verbos de mantener un estado', html: '<i>Estabilizar(se)</i> es lograr que algo deje de cambiar y se mantenga estable. <i>Conservar(se), preservar</i> implican una acción activa para mantener algo en su estado: <i>conservar la calma, conservarse intacto, preservar la tradición</i>. <i>Mantener(se)</i> es similar, con foco en el resultado: <i>mantenerse joven, mantener el recuerdo</i>. <i>Aguantar</i> es resistir pasivamente, soportando una dificultad: <i>aguantar el mayor tiempo posible</i>.' },
+    { h: 'Adverbios de invariabilidad', html: '<i>Invariablemente, inalterablemente</i> son los adverbios correspondientes a los adjetivos anteriores, para describir una acción que siempre ocurre de la misma manera.' }
+  ],
+  exponents: [
+    { es: 'Aquel día quedó grabado como un recuerdo imborrable.', en: 'That day was etched as an indelible memory.', register: 'formal' },
+    { es: 'Consiguió conservar la calma pese a la presión.', en: 'He managed to stay calm despite the pressure.', register: 'neutral' },
+    { es: 'La situación se estabilizó tras varias semanas de crisis.', en: 'The situation stabilized after several weeks of crisis.', register: 'formal' },
+    { es: 'Aguantó hasta el final sin quejarse.', en: 'He held out until the end without complaining.', register: 'neutral' },
+    { es: 'Sus principios permanecen invariables desde hace décadas.', en: 'His principles have remained unchanged for decades.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Preservaron la tradición con esmero.', en: 'They preserved the tradition with great care.', note: 'acción activa y deliberada de mantener algo' },
+    { es: 'Aguantó la situación como pudo.', en: 'He put up with the situation as best he could.', note: 'resistencia pasiva ante una dificultad' }
+  ],
+  pitfalls: [
+    '"Conservar/preservar" implican una acción activa y deliberada para mantener algo — "aguantar" es más pasivo, describe resistir una dificultad sin necesariamente actuar para cambiarla.',
+    '"Imborrable" se aplica sobre todo a recuerdos e impresiones; "indestructible", a objetos y materiales — no son intercambiables sin más.',
+    '"Invariable/inalterable" describen algo que no cambia bajo ninguna circunstancia — no equivalen a "estable", que puede admitir pequeñas fluctuaciones controladas.'
+  ],
+  examples: [
+    { es: 'El monumento se conserva en perfecto estado.', en: 'The monument is preserved in perfect condition.' },
+    { es: 'Su determinación permaneció inalterable pese a los obstáculos.', en: 'His determination remained unshaken despite the obstacles.' },
+    { es: 'Aguantaron el temporal sin apenas daños.', en: 'They weathered the storm with barely any damage.' }
+  ],
+  probes: [
+    { id: 'p:permanenciaC1:conservaraguantar', kind: 'mcq', q: '¿Qué diferencia hay entre "conservar/preservar" y "aguantar"?', options: ['Ninguna', 'Conservar/preservar implican acción activa; aguantar es resistencia más pasiva', 'Aguantar es siempre positivo'], answer: 1 },
+    { id: 'p:permanenciaC1:imborrableindestructible', kind: 'mcq', q: '¿A qué se aplica típicamente "imborrable"?', options: ['A materiales y objetos', 'A recuerdos e impresiones', 'A edificios'], answer: 1 },
+    { id: 'p:permanenciaC1:cloze', kind: 'cloze', text: 'La situación se ___ tras varias semanas de crisis. (dejar de cambiar, volverse estable)', accept: ['estabilizó'] },
+    { id: 'p:permanenciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "invariable/inalterable" y "estable"?', back: 'invariable/inalterable no cambian bajo ninguna circunstancia; "estable" puede admitir pequeñas fluctuaciones controladas' }
+  ]
 }
 
 ];
