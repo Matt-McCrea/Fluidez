@@ -23840,6 +23840,49 @@ window.STRAND_LESSONS = [
     { id: 'p:volumencapacidadpresionC1:cloze', kind: 'cloze', text: 'El local estaba a ___ aquella noche. (capacidad máxima, coloquial)', accept: ['tope'] },
     { id: 'p:volumencapacidadpresionC1:recall', kind: 'recall', front: '¿Qué anuncia típicamente la expresión "bajas presiones"?', back: 'un pronóstico meteorológico de presión atmosférica baja' }
   ]
+},
+
+{
+  id: 'nt-temperatura-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:378', 'nociones_generales:C1:379', 'nociones_generales:C1:380', 'nociones_generales:C1:381',
+         'nociones_generales:C1:383', 'nociones_generales:C1:384', 'nociones_generales:C1:385', 'nociones_generales:C1:386',
+         'nociones_generales:C1:387', 'nociones_generales:C1:388', 'nociones_generales:C1:389', 'nociones_generales:C1:390',
+         'nociones_generales:C1:391', 'nociones_generales:C1:392', 'nociones_generales:C1:393', 'nociones_generales:C1:394'],
+  title: 'Temperatura en C1: de "un frío que pela" a "al rojo vivo"',
+  summary: 'Describir la temperatura en C1 va mucho más allá de "hace frío/calor" — hay adjetivos para cada intensidad (agobiante, polar, tibio), verbos técnicos para medirla y modificarla, y locuciones muy vivas para el frío o el calor extremos, como "un frío que pela" o "estar al rojo vivo".',
+  sections: [
+    { h: 'Sustantivos y adjetivos de temperatura', html: '<i>Bochorno</i> es un calor húmedo y sofocante. <i>Frío polar/invernal</i> y <i>calor agobiante/asfixiante</i> describen los extremos. <i>Temperatura primaveral, moderada, elevada, extrema</i> gradúan de más suave a más intensa. <i>Tibio</i> es una temperatura templada, ni fría ni caliente: <i>un baño en agua tibia ayuda a reducir la temperatura corporal</i>. <i>Crudo</i> aplicado al clima describe algo especialmente duro: <i>un invierno crudo</i>.' },
+    { h: 'Verbos técnicos: medir y cambiar la temperatura', html: '<i>Tomar la temperatura</i> es medirla, típicamente a una persona: <i>parece que tiene fiebre, voy a tomarle la temperatura</i>. <i>Ascender/descender/mantener la temperatura</i> describen su evolución. <i>Despedir/emitir/transmitir/generar calor</i> son los verbos para una fuente que produce calor; <i>fuente de calor</i>, el sustantivo correspondiente. <i>Arder</i> es estar ardiendo, a temperatura extrema.' },
+    { h: 'Reaccionar al frío o al calor', html: '<i>Resistir/soportar/combatir el frío/el calor</i> describen cómo se hace frente a una temperatura extrema. <i>Coger/quedarse frío</i> es empezar a sentir frío. <i>Morir(se) de frío/calor</i> es una hipérbole para el extremo. <i>Entrarle (a alguien) frío/calor</i> describe una sensación repentina: <i>de repente me entró un calor horroroso</i>.' },
+    { h: 'Locuciones vivas de temperatura extrema', html: '<i>Hacer un frío que pela</i> es una hipérbole coloquial para un frío intensísimo. <i>(Estar) al rojo vivo</i> describe algo a temperatura extrema (literalmente, un metal incandescente) y también, en sentido figurado, una situación de máxima tensión. <i>Al calor de la lumbre/la hoguera</i> describe estar cerca de una fuente de calor concreta.' }
+  ],
+  exponents: [
+    { es: 'Hace un frío que pela esta mañana.', en: "It's freezing cold this morning.", register: 'coloquial' },
+    { es: 'La situación en la negociación está al rojo vivo.', en: 'The negotiation situation is at boiling point.', register: 'coloquial' },
+    { es: 'El termómetro marcaba una temperatura elevada.', en: 'The thermometer showed an elevated temperature.', register: 'formal' },
+    { es: 'De repente le entró un frío que no se le pasaba con nada.', en: 'Suddenly he felt a chill that nothing would shake off.', register: 'neutral' },
+    { es: 'El radiador emite calor de forma constante.', en: 'The radiator emits heat steadily.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un invierno crudo, con nevadas constantes.', en: 'A harsh winter, with constant snowfall.', note: 'clima especialmente duro' },
+    { es: 'Un baño en agua tibia.', en: 'A bath in lukewarm water.', note: 'temperatura templada, ni fría ni caliente' }
+  ],
+  pitfalls: [
+    '"Tibio" no significa "frío" ni "caliente" — describe específicamente una temperatura intermedia, templada.',
+    '"Al rojo vivo" se usa tanto literalmente (un metal incandescente) como en sentido figurado (una situación de máxima tensión) — el contexto determina cuál de los dos.',
+    '"Hacer un frío que pela" es exclusivamente coloquial e hiperbólico — no conviene en un registro formal o técnico.'
+  ],
+  examples: [
+    { es: 'El bochorno de agosto hace difícil dormir.', en: 'The muggy August heat makes it hard to sleep.' },
+    { es: 'La chimenea generaba calor suficiente para toda la sala.', en: 'The fireplace generated enough heat for the whole room.' },
+    { es: 'Se sentaron al calor de la hoguera para contar historias.', en: 'They sat by the warmth of the bonfire to tell stories.' }
+  ],
+  probes: [
+    { id: 'p:temperaturaC1:tibio', kind: 'mcq', q: '¿Qué temperatura describe "tibio"?', options: ['Muy fría', 'Templada, intermedia', 'Extremadamente caliente'], answer: 1 },
+    { id: 'p:temperaturaC1:rojovivo', kind: 'mcq', q: '"La reunión está al rojo vivo" en sentido figurado significa...', options: ['Hace mucho calor en la sala', 'La situación está en máxima tensión', 'La reunión ha terminado'], answer: 1 },
+    { id: 'p:temperaturaC1:cloze', kind: 'cloze', text: 'Hace un frío que ___ esta mañana. (hipérbole coloquial de frío intenso)', accept: ['pela'] },
+    { id: 'p:temperaturaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "coger frío" y "morirse de frío"?', back: 'coger frío es empezar a sentir frío; morirse de frío es una hipérbole para el extremo, un frío insoportable' }
+  ]
 }
 
 ];
