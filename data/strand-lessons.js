@@ -27748,6 +27748,47 @@ window.STRAND_LESSONS = [
     { id: 'p:permisoprohibicionC1:cloze', kind: 'cloze', text: '___ lo que digas, no pienso cambiar de idea. (estructura concesiva)', accept: ['Digas'] },
     { id: 'p:permisoprohibicionC1:recall', kind: 'recall', front: '¿Qué función tienen "digas lo que digas" y "hagas lo que hagas"?', back: 'anulan de antemano cualquier objeción que el interlocutor pueda presentar' }
   ]
+},
+
+{
+  id: 'fn-proponer-ofrecer-confirmar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:900', 'funciones:C1:901', 'funciones:C1:902', 'funciones:C1:903', 'funciones:C1:904', 'funciones:C1:905',
+         'funciones:C1:906', 'funciones:C1:910', 'funciones:C1:911', 'funciones:C1:915', 'funciones:C1:916', 'funciones:C1:918'],
+  title: 'Proponer, ofrecer y confirmar en C1: "no puedes faltar" y "¿te apuntas?"',
+  summary: 'Proponer algo en C1 combina la sugerencia formal ("me permito sugerirles") con la invitación coloquial ("¿te apuntas?"), invitar puede presionar suavemente con "no puedes faltar", y confirmar una propuesta ya hecha antes tiene su propia impaciencia acumulada: "bueno, ¿qué?"',
+  sections: [
+    { h: 'Proponer con pregunta o sugerencia directa', html: '<i>¿No estamos mejor + complemento de lugar/modo?</i> propone una alternativa en forma de pregunta retórica: <i>¿no estaríamos mejor sentados en una terraza?</i>. <i>¿Te apuntas/te vienes a...?</i> son invitaciones coloquiales muy directas. <i>Te sugiero...</i> + sintagma nominal, infinitivo o "que" + subjuntivo es la forma neutra: <i>te sugiero que instales un programa más moderno</i>.' },
+    { h: 'Proponer con condición o formalidad', html: '<i>Si te parece, puedes/podrías...</i> introduce la propuesta como condicionada a la aceptación del otro. <i>Me permito proponer/sugerir...</i> es la fórmula más formal, casi ceremoniosa: <i>me permito proponerles el barrio chino</i>.' },
+    { h: 'Ofrecer e invitar con presión suave', html: '<i>No puedes + infinitivo</i> invita presionando levemente, presentando la ausencia como inaceptable: <i>no puedes faltar a mi fiesta</i>. <i>No sé qué planes tendrás, pero...</i> introduce la invitación reconociendo que el otro podría tener otros compromisos, suavizando así un posible rechazo.' },
+    { h: 'Solicitar confirmación de una propuesta ya hecha', html: '<i>¿Podrías confirmarme si...?</i> es neutro y directo. <i>(Bueno, ¿qué?) ¿ya sabes si vas a...?</i> añade, con "bueno, ¿qué?", un matiz de impaciencia tras la espera. <i>(Al final/por fin) ¿te vas a animar a... (o no)?</i> presiona suavemente para obtener una respuesta definitiva, casi acusando al otro de indecisión.' }
+  ],
+  exponents: [
+    { es: '¿Te apuntas al cine este viernes?', en: 'Are you in for the movies this Friday?', register: 'coloquial' },
+    { es: 'Me permito sugerirles que reconsideren la propuesta.', en: 'I would like to suggest that you reconsider the proposal.', register: 'formal' },
+    { es: 'No puedes perderte la boda de tu mejor amigo.', en: "You can't miss your best friend's wedding.", register: 'neutral' },
+    { es: '¿Podrías confirmarme si al final asistirás a la reunión?', en: 'Could you confirm whether you\'ll attend the meeting after all?', register: 'formal' },
+    { es: 'Bueno, ¿qué? ¿Ya sabes si vienes o no?', en: 'So, what\'s up? Do you know if you\'re coming or not yet?', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Te sugiero que lo pienses con calma.', en: 'I suggest you think it over calmly.', note: 'sugerencia neutra' },
+    { es: 'Me permito sugerirle que lo reconsidere.', en: 'I would suggest that you reconsider it.', note: 'misma sugerencia, registro muy formal' }
+  ],
+  pitfalls: [
+    '"No puedes + infinitivo" en una invitación no expresa una prohibición real — presenta la ausencia como inaceptable para presionar suavemente a la aceptación.',
+    '"No sé qué planes tendrás, pero..." no es indiferencia hacia los planes del otro — es una estrategia de cortesía que suaviza la invitación reconociendo de antemano un posible rechazo.',
+    '"Bueno, ¿qué?" antes de pedir confirmación añade un matiz de impaciencia acumulada — no es un simple "¿qué tal?" neutro.'
+  ],
+  examples: [
+    { es: '¿No estaríais mejor con la calefacción encendida?', en: "Wouldn't you be better off with the heating on?" },
+    { es: 'No sé qué planes tendréis, pero hay sitio de sobra en el coche si os apetece venir.', en: "I don't know what plans you have, but there's plenty of room in the car if you feel like coming." },
+    { es: '¿Al final te vas a animar a hacer el viaje o no?', en: 'Are you finally going to go for the trip or not?' }
+  ],
+  probes: [
+    { id: 'p:proponerofrecerconfirmarC1:nopuedes', kind: 'mcq', q: '"No puedes faltar a mi fiesta" ¿es una prohibición literal?', options: ['Sí', 'No, es una forma de presionar suavemente a que asista', 'Es una amenaza'], answer: 1 },
+    { id: 'p:proponerofrecerconfirmarC1:buenoque', kind: 'mcq', q: '"Bueno, ¿qué? ¿Ya sabes si vienes?" ¿Qué matiz añade "bueno, ¿qué?"?', options: ['Ninguno', 'Impaciencia acumulada por la espera', 'Alegría'], answer: 1 },
+    { id: 'p:proponerofrecerconfirmarC1:cloze', kind: 'cloze', text: 'Me ___ sugerirles una alternativa. (fórmula formal de propuesta)', accept: ['permito'] },
+    { id: 'p:proponerofrecerconfirmarC1:recall', kind: 'recall', front: '¿Qué función cumple "no sé qué planes tendrás, pero..." al invitar a alguien?', back: 'suaviza la invitación reconociendo de antemano que el otro podría tener otros compromisos, facilitando un posible rechazo sin incomodidad' }
+  ]
 }
 
 ];
