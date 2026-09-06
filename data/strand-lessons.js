@@ -28124,6 +28124,49 @@ window.STRAND_LESSONS = [
     { id: 'p:agradecerpesameC1:cloze', kind: 'cloze', text: 'Quisiera expresarle mi más ___ pésame. (fórmula ritual de condolencia)', accept: ['sentido'] },
     { id: 'p:agradecerpesameC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "lo lamento profundamente" y "quisiera expresarle mi más sentido pésame"?', back: 'ambas son formales, pero la segunda es la fórmula ritual específica de condolencias, más ceremoniosa que la primera' }
   ]
+},
+
+{
+  id: 'fn-felicitar-despedirse-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:1160', 'funciones:C1:1161', 'funciones:C1:1162', 'funciones:C1:1164', 'funciones:C1:1167',
+         'funciones:C1:1169', 'funciones:C1:1182', 'funciones:C1:1183', 'funciones:C1:1184', 'funciones:C1:1186',
+         'funciones:C1:1187', 'funciones:C1:1189'],
+  title: 'Felicitar y despedirse en C1: "estás de enhorabuena" y "sin otro particular"',
+  summary: 'Felicitar en C1 va del gesto físico coloquial ("¡choca esos cinco!") a la fórmula ritual de cumpleaños que casi desea seguir vivo para el próximo, y despedirse tiene un registro escrito muy formal que no existe en la lengua oral: "sin otro particular...".',
+  sections: [
+    { h: 'Felicitar de forma coloquial y general', html: '<i>Creo que estás de enhorabuena</i> felicita indirectamente, señalando el motivo de alegría del otro. <i>¡Choca esos cinco!</i> es un gesto físico verbalizado, muy coloquial. <i>(Mis) felicitaciones</i> es más neutro y puede usarse en casi cualquier contexto.' },
+    { h: 'Felicitar en cumpleaños y fiestas', html: '<i>Que cumplas muchos más y que (los demás) lo veamos</i> es una fórmula ritual de cumpleaños con un matiz curioso: desea larga vida no solo al festejado, sino también a quienes lo celebran, para poder seguir viéndolo. <i>Felices fiestas/Navidades y próspero año nuevo</i> y <i>mis mejores deseos en/para estos días (tan señalados)</i> son fórmulas fijas de felicitaciones estacionales.' },
+    { h: 'Despedirse manteniendo el contacto', html: '<i>Seguimos/estamos en contacto</i> y <i>nos vemos/llamamos/hablamos/escribimos</i> son despedidas que proyectan la relación hacia el futuro. <i>Ya sabes dónde estoy</i> ofrece disponibilidad continuada tras la despedida.' },
+    { h: 'Despedirse sin certeza de reencuentro', html: '<i>No sé si nos volveremos a ver, pero ha sido un (verdadero) placer</i> se despide reconociendo que el reencuentro es incierto. <i>Ha sido un verdadero/auténtico placer compartir... con ustedes</i> es su versión más formal, propia de un discurso o evento.' },
+    { h: 'Despedirse en lengua escrita', html: '<i>Sin otro particular, aprovecho la ocasión para saludarles atentamente</i> es una fórmula de cierre exclusivamente escrita, típica de cartas y comunicaciones formales — no se usa nunca en el habla oral.' }
+  ],
+  exponents: [
+    { es: 'Creo que estás de enhorabuena, ¡menuda noticia!', en: "I think congratulations are in order, what news!", register: 'coloquial' },
+    { es: 'Sin otro particular, aprovecho la ocasión para saludarle atentamente.', en: 'With nothing further to add, I take this opportunity to send my regards.', register: 'formal' },
+    { es: 'Nos vemos pronto, ya sabes dónde estoy.', en: "See you soon, you know where to find me.", register: 'coloquial' },
+    { es: 'Ha sido un verdadero placer compartir estos días con ustedes.', en: 'It has been a true pleasure sharing these days with you.', register: 'formal' },
+    { es: '¡Choca esos cinco, lo has conseguido!', en: 'High five, you did it!', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Nos vemos pronto, seguimos en contacto.', en: "See you soon, let's stay in touch.", note: 'despedida oral, proyecta la relación al futuro' },
+    { es: 'Sin otro particular, aprovecho la ocasión para saludarles atentamente.', en: 'With nothing further to add, I take this opportunity to send my regards.', note: 'despedida exclusivamente escrita y formal' }
+  ],
+  pitfalls: [
+    '"Que cumplas muchos más y que lo veamos" no es solo un deseo de larga vida al festejado — incluye también a quienes celebran, deseando poder seguir viéndolo cumplir años.',
+    '"Sin otro particular..." pertenece exclusivamente a la lengua escrita formal (cartas, correos institucionales) — nunca se usa en una conversación oral.',
+    '"¡Choca esos cinco!" es un gesto físico verbalizado (chocar las palmas de la mano) — no tiene sentido fuera de un contexto informal y presencial.'
+  ],
+  examples: [
+    { es: 'Mis felicitaciones por el ascenso, te lo mereces.', en: 'My congratulations on the promotion, you deserve it.' },
+    { es: 'No sé si nos volveremos a ver, pero ha sido un placer conoceros.', en: "I don't know if we'll meet again, but it's been a pleasure to meet you." },
+    { es: 'Sigamos en contacto, escríbeme cuando puedas.', en: "Let's stay in touch, write to me when you can." }
+  ],
+  probes: [
+    { id: 'p:felicitardespedirseC1:cumplasmuchosmas', kind: 'mcq', q: '"Que cumplas muchos más y que lo veamos" ¿a quién incluye el deseo?', options: ['Solo al festejado', 'Al festejado y a quienes lo celebran', 'A nadie en particular'], answer: 1 },
+    { id: 'p:felicitardespedirseC1:sinotroparticular', kind: 'mcq', q: '¿En qué contexto se usa "sin otro particular..."?', options: ['Conversación oral cotidiana', 'Lengua escrita formal (cartas, correos)', 'Mensajes de texto informales'], answer: 1 },
+    { id: 'p:felicitardespedirseC1:cloze', kind: 'cloze', text: '¡___ esos cinco! Lo has conseguido. (gesto físico verbalizado)', accept: ['Choca'] },
+    { id: 'p:felicitardespedirseC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "nos vemos pronto" y "sin otro particular..."?', back: '"nos vemos pronto" es una despedida oral y coloquial; "sin otro particular..." es exclusivamente escrita y formal' }
+  ]
 }
 
 ];
