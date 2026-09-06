@@ -26247,6 +26247,53 @@ window.STRAND_LESSONS = [
     { id: 'p:facilidadC1:cloze', kind: 'cloze', text: 'El proyecto resultó ___ con el presupuesto actual. (imposible de llevar a la práctica)', accept: ['irrealizable'] },
     { id: 'p:facilidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "dificultar" y "ser irrealizable"?', back: 'dificultar hace algo más difícil pero posible; irrealizable describe algo que no se puede llevar a la práctica en absoluto' }
   ]
+},
+
+{
+  id: 'nt-reflexion-conocimiento-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1750', 'nociones_generales:C1:1753', 'nociones_generales:C1:1754', 'nociones_generales:C1:1755',
+         'nociones_generales:C1:1756', 'nociones_generales:C1:1757', 'nociones_generales:C1:1759', 'nociones_generales:C1:1760',
+         'nociones_generales:C1:1761', 'nociones_generales:C1:1762', 'nociones_generales:C1:1763', 'nociones_generales:C1:1764',
+         'nociones_generales:C1:1765', 'nociones_generales:C1:1766', 'nociones_generales:C1:1767', 'nociones_generales:C1:1768',
+         'nociones_generales:C1:1769', 'nociones_generales:C1:1770', 'nociones_generales:C1:1771', 'nociones_generales:C1:1772',
+         'nociones_generales:C1:1773', 'nociones_generales:C1:1774', 'nociones_generales:C1:1775', 'nociones_generales:C1:1776', 'nociones_generales:C1:1777'],
+  title: 'Reflexión y conocimiento en C1: "consultar con la almohada" y "romperse la cabeza"',
+  summary: 'Pensar en español tiene un vocabulario del cuerpo muy vivo — la cabeza se "rompe" o se "calienta" pensando, las decisiones se "consultan con la almohada", y una idea puede simplemente "ocurrírsele" a alguien sin que nadie la busque activamente.',
+  sections: [
+    { h: 'Sustantivos de conocimiento y su ausencia', html: '<i>Despiste, distracción, desconocimiento, ignorancia</i> nombran la falta de atención o de saber. <i>Sabiduría, ingenio</i> son formas positivas de conocimiento: <i>sabiduría popular</i>. <i>Juicio, criterio</i> son la capacidad de valorar: <i>emitir un juicio de valor, criterio propio</i>. <i>Apreciación, valoración</i> son el resultado de esa capacidad puesta en práctica: <i>hacer una apreciación</i>.' },
+    { h: '"Conciencia" y "sensación": percepciones internas', html: '<i>Conciencia</i> cubre tanto el sentido moral (<i>buena conciencia</i>) como el esmero (<i>hacer algo a conciencia</i>). <i>Sensación, intuición, sospecha</i> son percepciones no del todo racionalizadas: <i>me da la sensación de que esconde algo</i>.' },
+    { h: 'Adjetivos de la persona reflexiva o distraída', html: '<i>Despistado, distraído</i> describen falta de atención. <i>Sabio, ignorante, ingenioso, lúcido, intuitivo, razonable</i> cubren, del extremo positivo al negativo, distintos tipos de agudeza mental.' },
+    { h: 'Verbos del proceso de pensar', html: '<i>Reconsiderar, juzgar, valorar, razonar, idear, ignorar</i> son las acciones básicas del pensamiento. <i>Sospechar, temerse</i> son percibir algo sin certeza, con "temerse" añadiendo un matiz de preocupación. <i>Deducir, asociar</i> son conectar ideas lógicamente. <i>Distraerse, despistarse, alucinar</i> son perder el hilo del pensamiento; <i>concentrarse en</i>, lo contrario.' },
+    { h: 'Locuciones del proceso mental', html: '<i>Hacerse una idea</i> es formar una impresión general. <i>Pensarse algo bien/dos veces</i> es reflexionar con cuidado antes de decidir. <i>Tener presente/en mente</i> es recordar algo mientras se actúa. <i>Aclarar una idea</i> es hacerla más comprensible. <i>Ocurrírsele (a alguien) una idea</i> describe que una idea surge sin buscarla activamente — el sujeto gramatical es la idea, no la persona. <i>Traer/venirle algo a la memoria</i> y <i>hacer memoria</i> son evocar el pasado. <i>Romperse la cabeza, calentarse la cabeza</i> son pensar intensamente, con esfuerzo. <i>Estar/ponerse al corriente/al tanto de</i> es estar informado. <i>Consultar algo con la almohada</i> es posponer una decisión para pensarla durante la noche. <i>Tener cargo de conciencia</i> es sentirse culpable por algo.' },
+    { h: 'Adverbios de reflexión', html: '<i>Razonablemente, reflexivamente</i> describen una acción hecha con reflexión previa.' }
+  ],
+  exponents: [
+    { es: 'Prefiero consultarlo con la almohada antes de decidir.', en: "I'd rather sleep on it before deciding.", register: 'coloquial' },
+    { es: 'Se rompió la cabeza intentando resolver el acertijo.', en: 'He racked his brain trying to solve the puzzle.', register: 'coloquial' },
+    { es: 'De repente se me ocurrió una idea genial.', en: 'A brilliant idea suddenly occurred to me.', register: 'neutral' },
+    { es: 'Le costó ponerse al corriente de las novedades.', en: 'He had trouble catching up on the news.', register: 'neutral' },
+    { es: 'Tiene cargo de conciencia por lo que dijo.', en: 'He feels guilty about what he said.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Se me ocurrió una solución sin buscarla.', en: 'A solution occurred to me without looking for it.', note: 'la idea "surge", no se busca activamente' },
+    { es: 'Me rompí la cabeza buscando una solución.', en: 'I racked my brain looking for a solution.', note: 'esfuerzo mental activo y deliberado' }
+  ],
+  pitfalls: [
+    '"Ocurrírsele algo a alguien" invierte el sujeto gramatical respecto al inglés: en español la idea es el sujeto ("se me ocurrió una idea"), no la persona.',
+    '"Consultar algo con la almohada" no implica insomnio ni preocupación — es simplemente posponer una decisión para reflexionarla durante la noche.',
+    '"Tener cargo de conciencia" implica sentimiento de culpa, no simple preocupación o duda — es un matiz moral específico.'
+  ],
+  examples: [
+    { es: 'No consigo hacerme una idea clara de lo que pasó.', en: "I can't quite get a clear picture of what happened." },
+    { es: 'Tenlo presente para la próxima reunión.', en: 'Keep it in mind for the next meeting.' },
+    { es: 'Intentó hacer memoria, pero no recordaba el nombre.', en: 'He tried to remember, but he couldn\'t recall the name.' }
+  ],
+  probes: [
+    { id: 'p:reflexionconocimientoC1:ocurrirsele', kind: 'mcq', q: '"Se me ocurrió una idea." ¿Cuál es el sujeto gramatical?', options: ['Yo', 'La idea', 'Nadie'], answer: 1 },
+    { id: 'p:reflexionconocimientoC1:almohada', kind: 'mcq', q: '"Consultarlo con la almohada" significa...', options: ['No poder dormir de preocupación', 'Posponer una decisión para reflexionarla durante la noche', 'Pedir consejo a otra persona'], answer: 1 },
+    { id: 'p:reflexionconocimientoC1:cloze', kind: 'cloze', text: 'Se ___ la cabeza intentando resolver el problema. (pensar intensamente, con esfuerzo)', accept: ['rompió'] },
+    { id: 'p:reflexionconocimientoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "ocurrírsele una idea a alguien" y "romperse la cabeza"?', back: 'ocurrírsele describe una idea que surge sin buscarla activamente; romperse la cabeza es un esfuerzo mental deliberado e intenso' }
+  ]
 }
 
 ];
