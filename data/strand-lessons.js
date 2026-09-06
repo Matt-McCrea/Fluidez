@@ -23060,6 +23060,41 @@ window.STRAND_LESSONS = [
     { id: 'p:subadvcomparativasC1:cloze', kind: 'cloze', text: 'Actúa igual que si ___ tres años. ("como si" + subjuntivo, comparación con situación hipotética)', accept: ['tuviera', 'tuviese'] },
     { id: 'p:subadvcomparativasC1:recall', kind: 'recall', front: '¿Qué cuatro usos comparten igualdad, superioridad e inferioridad?', back: 'comparar cualidades del mismo sujeto, objetos del mismo sujeto, acciones del mismo sujeto, o llevar una subordinada como término de la comparación' }
   ]
+},
+
+{
+  id: 'gr-sub-adv-concesivas-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:856', 'gramatica:C1:857', 'gramatica:C1:859', 'gramatica:C1:860', 'gramatica:C1:861', 'gramatica:C1:862', 'gramatica:C1:863'],
+  title: 'Subordinadas concesivas en C1: reduplicación universal, ponderación y el escalar "ni siquiera"',
+  summary: 'Más allá de "aunque", las concesivas en C1 incluyen fórmulas de reduplicación que cubren cualquier alternativa ("digan lo que digan"), construcciones ponderativas donde la propia cantidad o intensidad de algo se convierte en motivo de sorpresa ("con la de camisas que tienes..."), y una concesiva escalar que lleva la hipótesis al extremo ("ni siquiera si...").',
+  sections: [
+    { h: 'Reduplicación universal y ponderación', html: 'Las estructuras reduplicadas con subjuntivo cubren cualquier alternativa posible, sea cual sea: <i>digan lo que digan, pienso hacer ese viaje</i> — no importa qué digan, todas las opciones quedan cubiertas. Distinta es la ponderativa con "con lo que" + indicativo, donde la intensidad de un hecho se presenta como motivo de extrañeza frente a otro: <i>con lo que nieva, ¿piensas salir?</i>' },
+    { h: 'Concesivas propias: factuales y no factuales', html: 'Con <i>aun si, aun cuando, incluso cuando</i>, la concesiva puede admitir tanto indicativo (lectura factual, el hecho es real) como subjuntivo (no factual): <i>me rechazaron aun cuando tenía el mejor expediente</i> — el hecho de tener el mejor expediente es real, y aun así lo rechazaron.' },
+    { h: 'Intensivas con indicativo: la cantidad como motivo de extrañeza', html: 'Con "(con) el/la, la de" + indicativo, la propia cantidad o intensidad de algo se convierte en el punto de partida de la concesión: <i>con el frío que hace y vas en tirantes</i>, <i>con la de camisas que tienes y te pones una sucia</i> — cuantas más camisas tenga, más raro resulta que elija justamente la sucia. "Con lo que" funciona igual con valor intensivo puro: <i>con lo que le rogué y no conseguí nada</i>.' },
+    { h: 'Registro formal y concesiva escalar', html: '"Si bien" + indicativo pertenece a un registro formal: <i>si bien reconocía lo ocurrido, no asumió responsabilidades</i>. La concesiva escalar con "incluso si / ni siquiera", que prefiere subjuntivo, lleva la hipótesis a su extremo más improbable para reforzar la afirmación principal: <i>ni siquiera si se pusiera de rodillas le perdonaría</i> — ni el gesto más extremo cambiaría el resultado.' }
+  ],
+  contrasts: [
+    { es: 'Pase lo que pase, no pienso rendirme.', en: "Whatever happens, I'm not giving up.", note: 'reduplicación universal con subjuntivo' },
+    { es: 'Con el hambre que tenía y dejó comida en el plato.', en: 'As hungry as he was, he left food on his plate.', note: 'intensiva-concesiva: la cantidad misma sorprende por el contraste' },
+    { es: 'Si bien es cierto que se esforzó, el resultado no fue bueno.', en: "While it's true that he made an effort, the result wasn't good.", note: 'registro formal' },
+    { es: 'Ni siquiera aunque me lo suplicara cambiaría de opinión.', en: 'Not even if he begged me would I change my mind.', note: 'concesiva escalar, hipótesis llevada al extremo' }
+  ],
+  pitfalls: [
+    'Las reduplicaciones universales ("digan lo que digan") no describen un hecho concreto sino que cubren cualquier alternativa posible — no se puede sustituir el verbo repetido por otro distinto sin romper la estructura.',
+    'Las concesivas intensivas con "(con) el/la..." no son simples exclamaciones sobre una cantidad — el propio contraste entre esa cantidad y lo que ocurre después es lo que da su valor concesivo a la frase.',
+    'La concesiva escalar con "ni siquiera si" no es una condición cualquiera — al llevar la hipótesis a su extremo, refuerza que ni siquiera en el caso más favorable cambiaría el resultado.'
+  ],
+  examples: [
+    { es: 'Vengas cuando vengas, la puerta estará abierta.', en: 'Whenever you come, the door will be open.' },
+    { es: 'Con las horas que le dedicó y no aprobó.', en: 'After all the hours he put into it, he still didn\'t pass.' },
+    { es: 'Ni siquiera si me pagaran el doble aceptaría ese trabajo.', en: "Not even if they paid me double would I take that job." }
+  ],
+  probes: [
+    { id: 'p:subadvconcesivasC1:reduplicacion', kind: 'mcq', q: '"Digan lo que digan, pienso hacer ese viaje." ¿Qué expresa la reduplicación?', options: ['Una condición concreta', 'Que cualquier alternativa posible queda cubierta', 'Una pregunta retórica'], answer: 1 },
+    { id: 'p:subadvconcesivasC1:escalar', kind: 'mcq', q: '"Ni siquiera si se pusiera de rodillas le perdonaría." ¿Qué función tiene el escalar?', options: ['Suavizar la afirmación', 'Llevar la hipótesis al extremo para reforzar la afirmación principal', 'Expresar una duda real'], answer: 1 },
+    { id: 'p:subadvconcesivasC1:cloze', kind: 'cloze', text: 'Si ___ reconocía el error, no pidió disculpas. ("si bien" + indicativo, registro formal)', accept: ['bien'] },
+    { id: 'p:subadvconcesivasC1:recall', kind: 'recall', front: '¿Qué hace concesiva a una construcción como "con la de camisas que tienes y te pones una sucia"?', back: 'el contraste entre la cantidad/intensidad de algo (muchas camisas) y lo que ocurre después (elige la sucia), que resulta sorprendente' }
+  ]
 }
 
 ];
