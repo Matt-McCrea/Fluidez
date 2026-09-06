@@ -26551,6 +26551,47 @@ window.STRAND_LESSONS = [
     { id: 'p:confirmarinformacionpreviaC1:cloze', kind: 'cloze', text: '___ es, se lo comunicaron ayer mismo. (confirmación de registro formal)', accept: ['Así'] },
     { id: 'p:confirmarinformacionpreviaC1:recall', kind: 'recall', front: '¿Qué registro tienen "así es/efectivamente" frente a "que sí, que..."?', back: '"así es/efectivamente" son formales; "que sí, que..." con repetición es coloquial, usado frente a alguien que duda' }
   ]
+},
+
+{
+  id: 'fn-pedir-dar-opinion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:137', 'funciones:C1:138', 'funciones:C1:139', 'funciones:C1:140',
+         'funciones:C1:144', 'funciones:C1:145', 'funciones:C1:146', 'funciones:C1:147'],
+  title: 'Pedir y dar opinión en C1: "a mi entender" y "en mi modesta opinión"',
+  summary: 'Pedir y dar opinión en C1 se apoya en fórmulas fijas de registro elevado — "a tu entender", "a mi juicio" — que en el habla cotidiana suenan a discurso formal o a entrevista, junto con la falsa modestia de "en mi modesta/humilde opinión".',
+  sections: [
+    { h: 'Pedir opinión sobre algo mencionado', html: '<i>¿Qué piensas/opinas de lo que...?</i> y <i>¿qué te parece lo que...?</i> piden opinión sobre un hecho concreto: <i>¿qué te parece lo que nos ha propuesto Diego?</i>.' },
+    { h: 'Pedir opinión con fórmulas de registro elevado', html: '<i>A tu entender/parecer/juicio</i> + pregunta introduce una petición de opinión en un registro más formal, típico de entrevistas: <i>a su entender, ¿cuáles son los principales retos...?</i>. <i>¿Dirías...?</i> pide una opinión formulada como afirmación hipotética: <i>¿diría usted que nos hemos equivocado?</i>.' },
+    { h: 'Dar opinión con fórmulas fijas', html: '<i>A mi entender/parecer</i> y <i>a mi juicio</i> introducen una opinión personal con cierta formalidad. <i>En mi modesta/humilde opinión</i> añade un matiz de falsa modestia, a menudo antes de una afirmación bastante tajante: <i>en mi modesta opinión, esa polémica es absolutamente artificial</i>.' },
+    { h: 'Dar opinión como impresión, no como certeza', html: '<i>(A mí) me da la sensación/impresión de que...</i> presenta la opinión como una impresión personal, no como un hecho comprobado: <i>me da la sensación de que esto va a salir mal</i>.' }
+  ],
+  exponents: [
+    { es: 'A su entender, ¿qué opciones tenemos ahora mismo?', en: 'In your view, what options do we have right now?', register: 'formal' },
+    { es: 'A mi juicio, la decisión fue precipitada.', en: 'In my judgment, the decision was rash.', register: 'formal' },
+    { es: 'En mi humilde opinión, deberíamos replantearnos todo el plan.', en: 'In my humble opinion, we should rethink the whole plan.', register: 'formal' },
+    { es: 'Me da la impresión de que no está siendo del todo sincero.', en: "I get the impression he's not being entirely honest.", register: 'neutral' },
+    { es: '¿Qué te parece lo que ha dicho el director en la reunión?', en: 'What do you think about what the director said at the meeting?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Creo que ha sido un error.', en: 'I think it was a mistake.', note: 'opinión directa, sin fórmula elevada' },
+    { es: 'A mi entender, ha sido un error.', en: 'In my view, it was a mistake.', note: 'misma opinión, con fórmula de registro más formal' }
+  ],
+  pitfalls: [
+    '"En mi modesta/humilde opinión" no siempre introduce una opinión tímida — a menudo precede afirmaciones bastante tajantes, con la modestia como pura fórmula de cortesía.',
+    '"A tu/mi entender/parecer/juicio" son de registro elevado, propias de entrevistas, debates o discursos — en una charla informal entre amigos suenan artificiales.',
+    '"Me da la sensación/impresión de que..." presenta la opinión explícitamente como algo no comprobado — no es intercambiable con una afirmación categórica como "estoy seguro de que...".'
+  ],
+  examples: [
+    { es: 'A su parecer, ¿cuál sería la mejor solución?', en: 'In your view, what would be the best solution?' },
+    { es: 'A mi entender, el proyecto necesita más tiempo.', en: 'In my view, the project needs more time.' },
+    { es: 'Me da la sensación de que todos están de acuerdo, menos yo.', en: 'I get the feeling everyone agrees except me.' }
+  ],
+  probes: [
+    { id: 'p:pedirdaropinionC1:modesta', kind: 'mcq', q: '"En mi modesta opinión" suele preceder a...', options: ['Afirmaciones siempre tímidas y dudosas', 'Afirmaciones que a veces son bastante tajantes', 'Preguntas'], answer: 1 },
+    { id: 'p:pedirdaropinionC1:registro', kind: 'mcq', q: '"A su entender, ¿cuáles son los retos?" ¿Qué registro es?', options: ['Coloquial, entre amigos', 'Formal, propio de entrevistas', 'Vulgar'], answer: 1 },
+    { id: 'p:pedirdaropinionC1:cloze', kind: 'cloze', text: 'Me da la ___ de que esto no va a funcionar. (impresión subjetiva, no certeza)', accept: ['sensación', 'impresión'] },
+    { id: 'p:pedirdaropinionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre dar una opinión directa y usar "a mi entender/parecer/juicio"?', back: 'las fórmulas con "a mi..." pertenecen a un registro más elevado, propio de contextos formales o de entrevista' }
+  ]
 }
 
 ];
