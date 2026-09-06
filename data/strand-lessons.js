@@ -24975,6 +24975,50 @@ window.STRAND_LESSONS = [
     { id: 'p:frecuenciaC1:cloze', kind: 'cloze', text: '___ vamos a la ópera, solo un par de veces al año. (frecuencia muy baja)', accept: ['Rara'] },
     { id: 'p:frecuenciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a cada rato" y "rara vez"?', back: '"a cada rato" describe frecuencia muy alta, casi continua; "rara vez" describe frecuencia muy baja' }
   ]
+},
+
+{
+  id: 'nt-cambio-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:887', 'nociones_generales:C1:888', 'nociones_generales:C1:889', 'nociones_generales:C1:890',
+         'nociones_generales:C1:891', 'nociones_generales:C1:892', 'nociones_generales:C1:893', 'nociones_generales:C1:894',
+         'nociones_generales:C1:896', 'nociones_generales:C1:897', 'nociones_generales:C1:898', 'nociones_generales:C1:899',
+         'nociones_generales:C1:900', 'nociones_generales:C1:901', 'nociones_generales:C1:902', 'nociones_generales:C1:903', 'nociones_generales:C1:904'],
+  title: 'Cambio en C1: transiciones, transformaciones y verbos derivados de adjetivo',
+  summary: 'El cambio se nombra en C1 según su alcance — variación es menor, transformación es total — y se fabrica morfológicamente a partir de adjetivos con los prefijos "a-...-ar" y "en-...-ecer": abaratar, encarecer, oscurecer, todos "hacer que algo pase a ser [adjetivo]".',
+  sections: [
+    { h: 'Sustantivos: del avance a la reconversión', html: 'Un cambio puede ser <i>radical, repentino, decisivo, para mejor, a peor</i>. <i>Avance, retroceso</i> son cambios direccionales opuestos: <i>un avance científico</i>. <i>Variación, alteración</i> son cambios menores o parciales. <i>Innovación, reforma</i> son cambios deliberados y estructurados: <i>una innovación tecnológica, una reforma educativa</i>. <i>(Re)conversión</i> es un cambio de función o de sistema: <i>una reconversión industrial</i>. <i>Transición</i> es el proceso de pasar de un estado a otro: <i>una transición política</i>.' },
+    { h: 'Adjetivos de la capacidad de cambiar', html: '<i>Innovador, transformador</i> describen algo que produce cambio. <i>Cambiante, alterable</i> describen algo que cambia con facilidad: <i>la superficie de este planeta presenta un aspecto cambiante</i>. <i>Transformable, convertible</i> describen la capacidad de pasar de una forma a otra.' },
+    { h: 'Verbos generales de cambio', html: '<i>Variar</i> es un cambio menor o parcial: <i>el significado de esta expresión puede variar según el contexto</i>. <i>Alterar(se)</i> es cambiar algo de su estado normal, a menudo negativamente: <i>alterar el orden</i>. <i>Evolucionar, progresar</i> describen un cambio gradual hacia algo mejor o más desarrollado. <i>Reformar, innovar</i> son cambios deliberados y estructurados. <i>Transformarse</i> es un cambio total, a menudo sorprendente: <i>se transformó de la noche a la mañana</i>.' },
+    { h: 'Locuciones de cambio súbito o rutinario', html: '<i>De golpe</i> describe un cambio o una acción súbita: <i>entró de golpe y se dio cuenta de que estábamos hablando de él</i>. <i>Para variar</i> introduce, a menudo con ironía, un cambio respecto a la rutina: <i>¿por qué no vamos a otro bar, para variar?</i>. <i>Dar un giro (de 180 grados)</i> describe un cambio radical y completo de dirección: <i>la situación ha dado un giro de 180 grados</i>.' },
+    { h: 'Formar verbos de cambio a partir de adjetivos', html: 'Dos patrones morfológicos productivos convierten un adjetivo en un verbo de cambio, con el significado de "hacer que algo pase a ser [adjetivo]": el prefijo/sufijo <i>a-...-ar</i> (<i>abaratar</i> = hacer más barato, <i>ablandar</i> = hacer más blando, <i>aflojar</i> = hacer más flojo) y <i>en-...-ecer/-ecer</i> (<i>encarecer</i> = hacer más caro, <i>enfurecer</i> = hacer que alguien se ponga furioso, <i>oscurecer</i> = hacer más oscuro, <i>humedecer</i> = hacer más húmedo, <i>fortalecer</i> = hacer más fuerte). Reconocer el patrón permite entender y formar verbos nuevos a partir de adjetivos conocidos.' }
+  ],
+  exponents: [
+    { es: 'La subida del combustible encareció el transporte.', en: 'The rise in fuel prices made transportation more expensive.', register: 'formal' },
+    { es: 'El nuevo gobierno dio un giro de 180 grados a la política exterior.', en: "The new government did a complete U-turn on foreign policy.", register: 'formal' },
+    { es: 'Podríamos probar otro restaurante, para variar.', en: "We could try another restaurant, for a change.", register: 'coloquial' },
+    { es: 'La noticia alteró por completo sus planes.', en: 'The news completely upset their plans.', register: 'neutral' },
+    { es: 'El barrio se transformó de la noche a la mañana.', en: 'The neighborhood transformed overnight.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'El precio varió ligeramente respecto al mes pasado.', en: 'The price varied slightly compared to last month.', note: 'variar — cambio menor' },
+    { es: 'El barrio se transformó por completo en una década.', en: 'The neighborhood was completely transformed in a decade.', note: 'transformarse — cambio total' }
+  ],
+  pitfalls: [
+    '"Variar" describe cambios menores o parciales; "transformarse" implica un cambio total, casi siempre más notable — no son intercambiables.',
+    'Los verbos formados con "a-...-ar" o "en-...-ecer" a partir de adjetivos (abaratar, encarecer, oscurecer) significan "hacer que algo pase a ser [adjetivo]" — no confundirlos con el simple adjetivo sin verbo.',
+    '"Alterar" suele implicar un cambio negativo o perturbador respecto a un estado normal — no es un sinónimo neutro de "cambiar" en cualquier contexto.'
+  ],
+  examples: [
+    { es: 'El frío intenso endureció el terreno.', en: 'The intense cold hardened the ground.' },
+    { es: 'La empresa vivió una profunda reconversión tras la crisis.', en: 'The company underwent a deep restructuring after the crisis.' },
+    { es: 'Su actitud cambió de golpe al enterarse de la noticia.', en: 'His attitude changed suddenly upon hearing the news.' }
+  ],
+  probes: [
+    { id: 'p:cambioC1:variartransformar', kind: 'mcq', q: '¿Qué diferencia hay entre "variar" y "transformarse"?', options: ['Ninguna', 'Variar es un cambio menor; transformarse es un cambio total', 'Transformarse es siempre negativo'], answer: 1 },
+    { id: 'p:cambioC1:encarecer', kind: 'mcq', q: '¿Qué significa "encarecer"?', options: ['Hacer más barato', 'Hacer más caro', 'Hacer más fuerte'], answer: 1 },
+    { id: 'p:cambioC1:cloze', kind: 'cloze', text: 'El frío ___ el terreno durante la noche. (hacer más duro, de "duro")', accept: ['endureció'] },
+    { id: 'p:cambioC1:recall', kind: 'recall', front: '¿Qué significan los verbos formados con "a-...-ar" o "en-...-ecer" a partir de un adjetivo?', back: '"hacer que algo pase a ser [adjetivo]" (abaratar = hacer más barato, oscurecer = hacer más oscuro)' }
+  ]
 }
 
 ];
