@@ -24760,6 +24760,50 @@ window.STRAND_LESSONS = [
     { id: 'p:inicioC1:cloze', kind: 'cloze', text: 'En cuanto llegó, se puso ___ a la obra. (empezar a trabajar activamente)', accept: ['manos'] },
     { id: 'p:inicioC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "dar comienzo" y simplemente "empezar"?', back: '"dar comienzo" es de registro formal, típico de actos y ceremonias; "empezar" es de uso general' }
   ]
+},
+
+{
+  id: 'nt-finalizacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:824', 'nociones_generales:C1:825', 'nociones_generales:C1:826', 'nociones_generales:C1:827',
+         'nociones_generales:C1:828', 'nociones_generales:C1:829', 'nociones_generales:C1:830', 'nociones_generales:C1:831',
+         'nociones_generales:C1:832', 'nociones_generales:C1:833', 'nociones_generales:C1:834', 'nociones_generales:C1:835',
+         'nociones_generales:C1:836', 'nociones_generales:C1:837'],
+  title: 'Finalización en C1: caducar, vencer y "acabar por volverme loco"',
+  summary: 'Terminar algo tiene en C1 un vocabulario técnico muy preciso — un plazo "vence", un producto "caduca", un contrato tiene su "vencimiento" — y perífrasis verbales que describen cómo se llegó a un final: "acabó diciendo que...", "acabaré por volverme loco".',
+  sections: [
+    { h: 'Sustantivos del final', html: '<i>Conclusión, finalización, clausura, desenlace</i> son formas de nombrar un final, cada una con su contexto: finalización de un contrato, clausura de un congreso, desenlace de un secuestro. <i>Cierre</i> es específico del final de una actividad o negocio: <i>el cierre de una fábrica</i>. <i>Liquidación, vencimiento</i> son términos financieros de final: <i>la liquidación de la deuda, el vencimiento del plazo</i>. <i>Caducidad</i> es la pérdida de validez tras una fecha: <i>fecha de caducidad</i>.' },
+    { h: 'Adjetivos: finalizado, caducado, inagotable', html: '<i>Finalizado, caducado</i> describen el estado tras terminar o perder validez. <i>(In)agotable, (in)acabable</i> describen si algo tiene o no un final previsible: <i>una fuente inagotable</i>.' },
+    { h: 'Verbos técnicos de finalización', html: '<i>Concluir</i> es terminar formalmente: <i>de este modo concluye una etapa marcada por la inestabilidad</i>. <i>Clausurar</i> es cerrar oficialmente: <i>la juez ordenó clausurar el establecimiento</i>. <i>Cumplirse, vencer</i> se aplican a plazos: <i>el plazo se cumple el miércoles, el préstamo vence dentro de tres meses</i>. <i>Extinguir(se)</i> es terminar por completo, a veces de forma natural: <i>esta lengua se extinguió a principios del siglo pasado</i>. <i>Caducar</i> es perder validez tras una fecha límite: <i>el pasaporte caducó hace unas semanas</i>. <i>Poner fin</i> es terminar deliberadamente algo: <i>poner fin a la huelga</i>.' },
+    { h: 'Perífrasis: cómo se llegó al final', html: '<i>Acabar + gerundio</i> describe el resultado final de un proceso: <i>acabó diciendo que había sido ella</i>. <i>Acabar por + infinitivo</i> describe un final alcanzado tras cierta resistencia o proceso: <i>acabaré por volverme loco</i>. <i>Llegar a + infinitivo</i> describe un punto extremo alcanzado gradualmente: <i>he llegado a pensar que no querías hablarme</i>.' },
+    { h: 'Alivio al llegar el final: "al fin, por fin"', html: '<i>Al fin, por fin</i> expresan alivio o impaciencia satisfecha cuando algo esperado finalmente ocurre: <i>¡vaya, por fin apareces!</i>' }
+  ],
+  exponents: [
+    { es: 'El contrato vence a finales de este mes.', en: 'The contract expires at the end of this month.', register: 'formal' },
+    { es: 'Acabó por confesarlo todo tras horas de interrogatorio.', en: 'He ended up confessing everything after hours of interrogation.', register: 'neutral' },
+    { es: 'Este yogur ya ha caducado, no lo comas.', en: "This yogurt has already expired, don't eat it.", register: 'coloquial' },
+    { es: 'La comisión decidió poner fin a las negociaciones.', en: 'The committee decided to put an end to the negotiations.', register: 'formal' },
+    { es: '¡Por fin llegaste! Llevamos horas esperando.', en: "You're finally here! We've been waiting for hours.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'El plazo se cumple mañana.', en: 'The deadline is tomorrow.', note: 'cumplirse — llegar el momento exacto del plazo' },
+    { es: 'El producto ya ha caducado.', en: 'The product has already expired.', note: 'caducar — perder validez tras la fecha límite' }
+  ],
+  pitfalls: [
+    '"Caducar" se aplica a la pérdida de validez tras una fecha (documentos, productos, medicamentos) — no es sinónimo de "vencer", que se aplica más a plazos y compromisos financieros.',
+    '"Acabar por + infinitivo" implica que el final se alcanzó tras cierta resistencia o proceso — no describe un final inmediato o esperado desde el principio.',
+    '"Extinguirse" implica un final completo y a menudo irreversible (una especie, una lengua) — no se usa para procesos que simplemente terminan sin esa connotación de desaparición total.'
+  ],
+  examples: [
+    { es: 'La clausura del festival reunió a miles de personas.', en: 'The closing ceremony of the festival brought together thousands of people.' },
+    { es: 'He llegado a dudar de mi propia memoria.', en: "I've come to doubt my own memory." },
+    { es: 'El plazo de inscripción se cumple el viernes.', en: 'The registration deadline is Friday.' }
+  ],
+  probes: [
+    { id: 'p:finalizacionC1:caducarvencer', kind: 'mcq', q: '¿A qué se aplica típicamente "caducar"?', options: ['A plazos financieros', 'A documentos, productos y medicamentos', 'A relaciones personales'], answer: 1 },
+    { id: 'p:finalizacionC1:acabarpor', kind: 'mcq', q: '"Acabaré por volverme loco." ¿Qué implica "acabar por"?', options: ['Un final inmediato', 'Un final alcanzado tras cierta resistencia o proceso', 'Un final feliz'], answer: 1 },
+    { id: 'p:finalizacionC1:cloze', kind: 'cloze', text: 'La juez ordenó ___ el establecimiento por infracciones graves. (cerrar oficialmente)', accept: ['clausurar'] },
+    { id: 'p:finalizacionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "cumplirse" y "caducar" aplicados a un plazo?', back: '"cumplirse" señala que llega el momento exacto del plazo; "caducar" implica pérdida de validez tras ese momento' }
+  ]
 }
 
 ];
