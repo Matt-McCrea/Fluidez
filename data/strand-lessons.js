@@ -24804,6 +24804,49 @@ window.STRAND_LESSONS = [
     { id: 'p:finalizacionC1:cloze', kind: 'cloze', text: 'La juez ordenó ___ el establecimiento por infracciones graves. (cerrar oficialmente)', accept: ['clausurar'] },
     { id: 'p:finalizacionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "cumplirse" y "caducar" aplicados a un plazo?', back: '"cumplirse" señala que llega el momento exacto del plazo; "caducar" implica pérdida de validez tras ese momento' }
   ]
+},
+
+{
+  id: 'nt-continuacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:838', 'nociones_generales:C1:839', 'nociones_generales:C1:840', 'nociones_generales:C1:841',
+         'nociones_generales:C1:842', 'nociones_generales:C1:843', 'nociones_generales:C1:844', 'nociones_generales:C1:845',
+         'nociones_generales:C1:846', 'nociones_generales:C1:847', 'nociones_generales:C1:848', 'nociones_generales:C1:849', 'nociones_generales:C1:850'],
+  title: 'Continuación en C1: retomar, perseverar y "sin cesar"',
+  summary: 'Seguir haciendo algo se expresa en C1 con matices que van del simple mantenimiento de un estado ("permanecer") al esfuerzo activo de continuar pese a las dificultades ("perseverar"), pasando por locuciones muy vivas como "pasarse la vida" o "no cansarse de".',
+  sections: [
+    { h: 'Adjetivos de continuidad', html: '<i>Prolongación</i> es el sustantivo general. <i>Seguido, continuado, sostenido, perseverante, persistente</i> gradúan la continuidad: sostenido implica un esfuerzo mantenido en el tiempo (<i>desarrollo sostenido</i>), persistente y perseverante añaden matiz de resistencia frente a obstáculos.' },
+    { h: 'Verbos de mantenerse igual', html: '<i>Permanecer</i> es seguir en un mismo estado: <i>permanecer callado, permanecer en secreto, permanecer a la espera</i>. <i>Mantenerse</i> es similar, con foco en la ausencia de cambio: <i>la situación se mantiene sin cambios</i>.' },
+    { h: 'Continuar con esfuerzo o retomar algo interrumpido', html: '<i>Perseverar</i> es continuar pese a las dificultades. <i>Retomar</i> es continuar algo que se había interrumpido: <i>el paciente podrá retomar su actividad normal a las dos semanas</i>.' },
+    { h: 'Locuciones coloquiales de continuidad', html: '<i>Pasarse la vida</i> exagera una continuidad constante: <i>se pasa la vida quejándose por todo</i>. <i>No cansarse de</i> describe una continuidad basada en el gusto o el interés: <i>mis hijos no se cansan de jugar</i>. <i>Ir + gerundio</i> describe una continuidad gradual y progresiva: <i>voy acostumbrándome a esta forma de trabajar</i>.' },
+    { h: 'Adverbios y locuciones de continuidad sin interrupción', html: '<i>Ininterrumpidamente, continuamente</i> son los adverbios generales. <i>Todo seguido</i> describe algo hecho de una sola vez, sin pausas: <i>vimos la película toda seguida, sin anuncios ni interrupciones</i>. <i>Sin interrupción, sin cesar</i> refuerzan la misma idea: <i>hace días que nieva sin cesar</i>. <i>Y así sucesivamente</i> cierra una enumeración indicando que el patrón continúa.' }
+  ],
+  exponents: [
+    { es: 'Perseveró en su empeño hasta conseguirlo.', en: 'He persevered in his effort until he achieved it.', register: 'formal' },
+    { es: 'Retomamos la conversación donde la habíamos dejado.', en: 'We picked up the conversation where we had left it.', register: 'neutral' },
+    { es: 'Llueve sin cesar desde hace tres días.', en: "It's been raining nonstop for three days.", register: 'neutral' },
+    { es: 'Se pasa la vida trabajando, nunca descansa.', en: "He spends his whole life working, he never rests.", register: 'coloquial' },
+    { es: 'Voy entendiendo cada vez mejor el idioma.', en: "I'm gradually understanding the language better and better.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'La situación se mantiene estable.', en: 'The situation remains stable.', note: 'ausencia de cambio, sin esfuerzo implicado' },
+    { es: 'Perseveró pese a todas las dificultades.', en: 'He persevered despite all the difficulties.', note: 'continuidad con esfuerzo activo frente a obstáculos' }
+  ],
+  pitfalls: [
+    '"Perseverar" implica un esfuerzo activo frente a dificultades — no es un simple sinónimo de "continuar" o "mantenerse", que pueden describir continuidad sin ese matiz de resistencia.',
+    '"Retomar" exige que algo se haya interrumpido antes — no se usa para una continuidad ininterrumpida.',
+    '"Ir + gerundio" describe una continuidad gradual y progresiva, no un estado ya alcanzado — "voy acostumbrándome" implica un proceso en curso, no un hábito ya consolidado.'
+  ],
+  examples: [
+    { es: 'El equipo mantuvo un ritmo sostenido durante todo el partido.', en: 'The team kept up a steady pace throughout the match.' },
+    { es: 'No se cansa de repetir la misma historia.', en: "He doesn't get tired of repeating the same story." },
+    { es: 'Retomó sus estudios después de diez años.', en: 'He resumed his studies after ten years.' }
+  ],
+  probes: [
+    { id: 'p:continuacionC1:perseverar', kind: 'mcq', q: '¿Qué matiz añade "perseverar" que "continuar" no tiene necesariamente?', options: ['Rapidez', 'Esfuerzo frente a dificultades', 'Formalidad'], answer: 1 },
+    { id: 'p:continuacionC1:retomar', kind: 'mcq', q: '¿Qué exige "retomar" que "continuar" no exige?', options: ['Que algo se haya interrumpido antes', 'Que sea un proceso rápido', 'Que sea un tema serio'], answer: 0 },
+    { id: 'p:continuacionC1:cloze', kind: 'cloze', text: 'Hace días que nieva sin ___. (sin parar)', accept: ['cesar'] },
+    { id: 'p:continuacionC1:recall', kind: 'recall', front: '¿Qué tipo de continuidad describe "ir + gerundio" (voy acostumbrándome)?', back: 'una continuidad gradual y progresiva, un proceso en curso, no un estado ya consolidado' }
+  ]
 }
 
 ];
