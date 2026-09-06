@@ -22947,6 +22947,43 @@ window.STRAND_LESSONS = [
     { id: 'p:subadvfinalesC1:cloze', kind: 'cloze', text: 'Se lo dije con el ___ de que reflexionara antes de decidir. (locución final)', accept: ['fin'] },
     { id: 'p:subadvfinalesC1:recall', kind: 'recall', front: '¿Qué tienen en común "es demasiado listo para no darse cuenta" y "no habla mal para llevar aquí un año"?', back: 'ambas usan "para" con un valor que no es finalista: consecutivo en la primera, concesivo-contrastivo en la segunda' }
   ]
+},
+
+{
+  id: 'gr-sub-adv-condicionales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:777', 'gramatica:C1:779', 'gramatica:C1:780', 'gramatica:C1:783', 'gramatica:C1:784',
+         'gramatica:C1:786', 'gramatica:C1:787', 'gramatica:C1:788', 'gramatica:C1:791', 'gramatica:C1:792'],
+  title: 'Subordinadas condicionales en C1: registros, matices y la prótasis que no acaba',
+  summary: 'El sistema condicional español no se agota en "si + subjuntivo" — el habla informal sustituye el imperfecto y el pluscuamperfecto de subjuntivo por el presente de indicativo, existen condicionales que se dejan a medias con valor de deseo, y "como" + subjuntivo puede sonar a amenaza según el contexto, incluso quedándose suspendido a propósito.',
+  sections: [
+    { h: 'Presente de indicativo por subjuntivo: un registro informal', html: 'En el habla coloquial, el presente de indicativo puede sustituir tanto al imperfecto como al pluscuamperfecto de subjuntivo en la prótasis condicional: <i>si por casualidad mañana estoy bien, te aviso</i> (en vez de "estuviera"), <i>si hubieras llegado un minuto antes, habrías visto toda la escena</i> puede oírse también como <i>si llegas un minuto antes, habrías visto toda la escena</i>. No es un error aislado, es un rasgo reconocible del registro informal.' },
+    { h: 'Irreales y "suspendidas": la condición que se queda a medias', html: 'La condicional hipotética irreal describe algo que no ocurrió y ya no puede cambiar: <i>si no te hubiera presentado a Celia, ahora no estarías casado</i>. Distinta de esta es la condicional suspendida, con matiz desiderativo: la prótasis se deja sin apódosis, funcionando como un deseo: <i>¡Ay, si me llamara...!</i> — no falta información, el corte es el propio recurso expresivo.' },
+    { h: 'Condición negativa y condición remota: conectores propios', html: 'Para condición negativa o una eventualidad que condiciona el resultado, "menos si" lleva indicativo; "a menos que, excepto que" llevan subjuntivo. Para condición remota, en registro formal, "(en) caso de" + infinitivo o sustantivo: <i>en caso de duda, en caso de renunciar</i>; con subjuntivo, "(en) (el) caso de que".' },
+    { h: 'Gerundio e imperativo como condición', html: 'El gerundio puede funcionar como prótasis condicional sin ningún nexo: <i>comiendo más despacio engordarás menos</i> equivale a "si comes más despacio...". El imperativo hace lo mismo: <i>abre la caja y verás qué sorpresa</i> equivale a "si abres la caja...".' },
+    { h: '"Como" + subjuntivo: entre la amenaza y la preocupación', html: '<i>Como</i> + subjuntivo introduce la condición de una realización no deseada, y el contexto decide si suena a amenaza o simplemente a preocupación: <i>como me dé plantón, se va a enterar</i> (amenaza) frente a <i>como me echen del trabajo, no sé qué voy a hacer</i> (sin amenaza, pura inquietud). Esta construcción también puede dejarse en suspensión, sin completar la apódosis, para intensificar el efecto: <i>como me dé plantón...</i>' }
+  ],
+  contrasts: [
+    { es: 'Si me necesitas, llámame. / Si me necesitaras, te ayudaría.', en: 'If you need me, call me. / If you needed me, I would help you.', note: 'condición real/habitual frente a condición hipotética con subjuntivo' },
+    { es: '¡Ojalá me tocara la lotería!', en: 'If only I won the lottery!', note: 'condicional suspendida con matiz desiderativo, sin apódosis' },
+    { es: 'En caso de emergencia, use la salida más cercana.', en: 'In case of emergency, use the nearest exit.', note: 'condición remota, registro formal, con sustantivo' },
+    { es: 'Como llegues tarde otra vez, te vas a arrepentir.', en: "If you're late again, you'll regret it.", note: '"como" + subjuntivo con matiz de amenaza' }
+  ],
+  pitfalls: [
+    'Sustituir el imperfecto o el pluscuamperfecto de subjuntivo por el presente de indicativo en la prótasis (<i>si llegas un minuto antes, habrías visto...</i>) es un rasgo de registro informal, no un error que corregir en todo contexto.',
+    'Una condicional "suspendida" (<i>¡ay, si me llamara...!</i>) no está incompleta por descuido — dejar la apódosis sin decir es precisamente el recurso que le da su valor desiderativo.',
+    '"Como" + subjuntivo no siempre implica amenaza — el mismo nexo puede introducir simple preocupación según el contexto y el tono.'
+  ],
+  examples: [
+    { es: 'Si tuviera más tiempo, aprendería a tocar el piano.', en: 'If I had more time, I would learn to play the piano.' },
+    { es: 'En caso de que llueva, la ceremonia se traslada al interior.', en: 'In case it rains, the ceremony moves indoors.' },
+    { es: 'Estudiando un poco cada día, aprobarás sin problema.', en: 'By studying a little each day, you\'ll pass without trouble.' }
+  ],
+  probes: [
+    { id: 'p:subadvcondicionalesC1:suspendida', kind: 'mcq', q: '"¡Ay, si me llamara...!" ¿Qué falta en esta frase?', options: ['Nada — la apódosis se omite a propósito, con valor de deseo', 'Le falta terminar la frase por error', 'Le falta el verbo principal'], answer: 0 },
+    { id: 'p:subadvcondicionalesC1:como', kind: 'mcq', q: '"Como me echen del trabajo, no sé qué voy a hacer." ¿Qué matiz tiene?', options: ['Amenaza', 'Preocupación, sin amenaza', 'Alegría'], answer: 1 },
+    { id: 'p:subadvcondicionalesC1:cloze', kind: 'cloze', text: '___ caso de duda, consulte con su médico. (condición remota, registro formal)', accept: ['En'] },
+    { id: 'p:subadvcondicionalesC1:recall', kind: 'recall', front: '¿Qué sustituye el presente de indicativo en el registro informal, dentro de la prótasis condicional?', back: 'tanto al imperfecto como al pluscuamperfecto de subjuntivo (si llegas... por si llegaras.../si hubieras llegado...)' }
+  ]
 }
 
 ];
