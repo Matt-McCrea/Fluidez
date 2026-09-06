@@ -25988,6 +25988,52 @@ window.STRAND_LESSONS = [
     { id: 'p:interesC1:cloze', kind: 'cloze', text: 'Es un espectáculo fuera de lo ___, no te lo pierdas. (poco habitual)', accept: ['común'] },
     { id: 'p:interesC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "monótono" y "pesado" aplicados a algo tedioso?', back: 'monótono describe falta de variación; pesado implica una carga tediosa que resulta molesta de soportar' }
   ]
+},
+
+{
+  id: 'nt-exito-logro-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1596', 'nociones_generales:C1:1597', 'nociones_generales:C1:1598', 'nociones_generales:C1:1600',
+         'nociones_generales:C1:1601', 'nociones_generales:C1:1603', 'nociones_generales:C1:1605', 'nociones_generales:C1:1606',
+         'nociones_generales:C1:1607', 'nociones_generales:C1:1608', 'nociones_generales:C1:1609', 'nociones_generales:C1:1611',
+         'nociones_generales:C1:1613', 'nociones_generales:C1:1614', 'nociones_generales:C1:1615', 'nociones_generales:C1:1616',
+         'nociones_generales:C1:1617', 'nociones_generales:C1:1618', 'nociones_generales:C1:1619', 'nociones_generales:C1:1620', 'nociones_generales:C1:1621'],
+  title: 'Éxito y logro en C1: de "estar en pleno auge" a "ganar por los pelos"',
+  summary: 'El éxito se gradúa en C1 desde el triunfo apenas alcanzado ("por los pelos") hasta la victoria absoluta ("aplastante"), con un vocabulario que distingue logro (algo conseguido) de reconocimiento (cómo se percibe desde fuera), y rival de adversario según el tono del enfrentamiento.',
+  sections: [
+    { h: 'Sustantivos del éxito y de sus actores', html: '<i>Logro, conquista</i> son lo conseguido; <i>reto, aspiración</i>, lo que se persigue. <i>Reconocimiento, reputación, prestigio</i> son cómo se percibe el éxito desde fuera. <i>Rival, adversario, competidor</i> gradúan el tono del enfrentamiento, de más neutro (competidor) a más personal (rival, adversario). <i>Fracaso, derrota, frustración</i> son el reverso del éxito.' },
+    { h: 'Calificar una victoria', html: 'Una victoria o un éxito pueden ser <i>abrumador, apoteósico, aplastante, rotundo</i> — todos describen un triunfo absoluto, sin matices de duda. <i>Invencible</i> describe a quien nunca pierde.' },
+    { h: 'Verbos de competir y de superar', html: '<i>Competir, concursar, combatir, rendir(se)</i> cubren desde la competencia formal hasta la rendición. <i>Empatar</i> es terminar sin vencedor: <i>empatar a cero</i>. <i>Superar</i> es vencer una dificultad: <i>superar las dificultades</i>. <i>Prosperar, progresar, ascender</i> describen un avance sostenido, no un triunfo puntual: <i>prosperar en el trabajo, progresar en la vida, ascender de categoría</i>.' },
+    { h: 'Locuciones de ventaja y de dominio', html: '<i>Llevar/sacar ventaja</i> es estar por delante de otro. <i>Tener dominio de</i> es controlar una habilidad con soltura: <i>tiene un gran dominio de las motos</i>. <i>Aspirar a ganar/al premio/a más</i> es tener una meta de éxito. <i>Adquirir prestigio/reconocimiento</i> y <i>llegar a la cima/a lo más alto</i> describen el proceso de alcanzar el reconocimiento máximo.' },
+    { h: 'Tener razón y hacer frente a las dificultades', html: '<i>Tener/llevar (la) razón</i> es estar en lo correcto en una discusión. <i>Hacer frente a las adversidades/a las dificultades</i> es enfrentar los obstáculos activamente, no evitarlos.' },
+    { h: 'Estar en auge, y ganar por los pelos', html: '<i>Estar en (pleno) auge</i> describe un momento de éxito creciente y sostenido. <i>Aprobar/vencer/ganar por los pelos</i> es lograr algo con el margen más mínimo posible. <i>Triunfalmente, victoriosamente</i> son los adverbios correspondientes al éxito rotundo.' }
+  ],
+  exponents: [
+    { es: 'El equipo local ganó por los pelos en el último minuto.', en: "The home team won by the skin of their teeth in the last minute.", register: 'coloquial' },
+    { es: 'Su carrera está en pleno auge desde hace dos años.', en: "His career has been on the rise for the past two years.", register: 'neutral' },
+    { es: 'Consiguió una victoria aplastante en las elecciones.', en: 'He achieved a landslide victory in the elections.', register: 'formal' },
+    { es: 'Supo hacer frente a todas las adversidades sin rendirse.', en: 'He knew how to face all the adversities without giving up.', register: 'neutral' },
+    { es: 'Adquirió un gran prestigio en su campo tras mucho tiempo de trabajo.', en: 'He gained great prestige in his field after a long time of work.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Aprobó el examen por los pelos.', en: 'He passed the exam by the skin of his teeth.', note: 'margen mínimo de éxito' },
+    { es: 'Aprobó el examen con una nota rotunda.', en: 'He passed the exam with a resounding grade.', note: 'éxito claro y sin margen de duda' }
+  ],
+  pitfalls: [
+    '"Rival" y "adversario" tienen un matiz más personal que "competidor" — no son intercambiables en contextos puramente deportivos o comerciales neutros.',
+    '"Prosperar/progresar/ascender" describen un avance sostenido en el tiempo, no un triunfo puntual como "ganar" o "vencer".',
+    '"Ganar por los pelos" no resta mérito al triunfo — simplemente describe que el margen fue mínimo, no que la victoria sea menos válida.'
+  ],
+  examples: [
+    { es: 'Su mayor logro fue terminar la carrera siendo madre soltera.', en: 'Her greatest achievement was finishing her degree as a single mother.' },
+    { es: 'El equipo empató a uno en el último partido.', en: 'The team drew one-all in the last match.' },
+    { es: 'Tenía toda la razón sobre lo que iba a pasar.', en: 'He was completely right about what was going to happen.' }
+  ],
+  probes: [
+    { id: 'p:exitologroC1:porlospelos', kind: 'mcq', q: '"Ganó por los pelos." ¿Qué implica sobre el mérito de la victoria?', options: ['Que no cuenta como victoria real', 'Que el margen fue mínimo, pero la victoria es igual de válida', 'Que perdió'], answer: 1 },
+    { id: 'p:exitologroC1:prosperarganar', kind: 'mcq', q: '¿Qué diferencia hay entre "prosperar" y "ganar"?', options: ['Ninguna', 'Prosperar describe un avance sostenido; ganar es un triunfo puntual', 'Ganar es siempre a largo plazo'], answer: 1 },
+    { id: 'p:exitologroC1:cloze', kind: 'cloze', text: 'Su carrera está en pleno ___ desde hace dos años. (momento de éxito creciente)', accept: ['auge'] },
+    { id: 'p:exitologroC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "rival/adversario" y "competidor"?', back: 'rival/adversario tienen un matiz más personal; competidor es más neutro, propio de contextos formales' }
+  ]
 }
 
 ];
