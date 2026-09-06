@@ -27123,6 +27123,49 @@ window.STRAND_LESSONS = [
     { id: 'p:preferenciaindiferenciaC1:cloze', kind: 'cloze', text: '¿Con qué cuadro te ___ al final? ("quedarse con", elegir)', accept: ['quedas', 'quedaste', 'quedarías'] },
     { id: 'p:preferenciaindiferenciaC1:recall', kind: 'recall', front: '¿Qué registro tiene "me importa un pimiento" frente a "me resulta indiferente"?', back: '"me importa un pimiento" es coloquial y desdeñoso; "me resulta indiferente" es neutro y formal' }
   ]
+},
+
+{
+  id: 'fn-deseos-planes-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:460', 'funciones:C1:461', 'funciones:C1:462', 'funciones:C1:463', 'funciones:C1:464', 'funciones:C1:465',
+         'funciones:C1:466', 'funciones:C1:476', 'funciones:C1:477', 'funciones:C1:478', 'funciones:C1:479', 'funciones:C1:480'],
+  title: 'Deseos y planes en C1: "¡quién tuviera...!" y "estoy por..."',
+  summary: 'Expresar un deseo en C1 va del anhelo físico ("me muero de ganas de") al deseo suspendido y casi resignado ("¡si pudiera tenerte aquí...!"), mientras que los planes distinguen entre un proyecto firme ("me he hecho el propósito de") y una intención que apenas se está formando ("estoy por...").',
+  sections: [
+    { h: 'Deseo intenso e inminente', html: '<i>Me muero de ganas de/por...</i> expresa un deseo físico y urgente: <i>me muero de ganas de jugar en este equipo</i>. <i>¡Qué ganas (tengo) de...!</i> es su versión exclamativa: <i>¡qué ganas de que lleguéis!</i>.' },
+    { h: 'Deseo como ideal', html: '<i>Lo ideal sería...</i> presenta el deseo como el escenario perfecto, no necesariamente realista: <i>lo ideal sería que me animaran a hacerlo y no que me obligaran</i>. <i>Mi sueño/mi deseo sería...</i> introduce una aspiración personal profunda.' },
+    { h: 'Deseo suspendido o irrealizable', html: '<i>¡Si + imperfecto de subjuntivo...!</i>, dejado sin apódosis, expresa un deseo cuya realización se sabe difícil o imposible: <i>¡si pudiera tenerte aquí...!</i>. <i>Quién + imperfecto de subjuntivo</i> hace lo mismo en tercera persona gramatical, con matiz aún más irrealizable: <i>¡quién tuviera dinero para comprar una casa como esa!</i>.' },
+    { h: 'Deseo directo con subjuntivo', html: '<i>Que + subjuntivo</i> expresa un deseo dirigido a un hecho futuro o presente, con o sin verbo principal explícito: <i>que no llueva mañana, por favor</i>, <i>¡que haya llegado ya el paquete!</i>.' },
+    { h: 'Planes e intenciones: de lo firme a lo apenas formado', html: '<i>Tengo en proyecto...</i> describe un plan ya concreto: <i>tengo en proyecto cambiar mi lugar de residencia</i>. <i>(Me) he hecho el (firme) propósito de...</i> expresa una determinación personal fuerte. <i>Estoy por...</i> describe una intención que apenas se está formando, casi al borde de decidirse: <i>estoy por decirle que no quiero seguir trabajando aquí</i>.' },
+    { h: 'Planes que no se cumplieron', html: 'Un plan en pasado seguido de un conector contraargumentativo señala que no llegó a realizarse: <i>tenía en proyecto cambiar de residencia, pero no conseguí los papeles</i>. <i>Pese a</i> + exponente de planes hace lo mismo desde el otro lado de la frase: <i>pese a haberme propuesto publicar algo todos los años, este año no he escrito nada</i>.' }
+  ],
+  exponents: [
+    { es: 'Me muero de ganas de que llegue el verano.', en: "I can't wait for summer to come.", register: 'coloquial' },
+    { es: '¡Quién tuviera tiempo para viajar tanto como tú!', en: 'If only I had as much time to travel as you do!', register: 'coloquial' },
+    { es: 'Tengo en proyecto abrir mi propio negocio el año que viene.', en: "I'm planning to open my own business next year.", register: 'formal' },
+    { es: 'Me he hecho el firme propósito de aprender otro idioma.', en: "I've made a firm resolution to learn another language.", register: 'formal' },
+    { es: 'Estoy por dejarlo todo y empezar de cero.', en: "I'm about ready to drop everything and start from scratch.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Tengo en proyecto mudarme el próximo año.', en: "I'm planning to move next year.", note: 'plan concreto y firme' },
+    { es: 'Estoy por mudarme, aunque no lo tengo decidido del todo.', en: "I'm thinking about moving, though I haven't fully decided.", note: 'intención apenas formada, sin decisión firme' }
+  ],
+  pitfalls: [
+    '"¡Si + imperfecto de subjuntivo...!" sin apódosis no es una frase incompleta por error — dejarla suspendida es precisamente el recurso que expresa el deseo, a menudo irrealizable.',
+    '"Estoy por" no describe un plan firme como "tengo en proyecto" — describe una intención que apenas se está formando, cercana a decidirse pero sin comprometerse todavía.',
+    '"Pese a" + plan no cumplido no es una simple concesión — señala explícitamente que la intención expresada no llegó a realizarse.'
+  ],
+  examples: [
+    { es: 'Lo ideal habría sido resolverlo antes de que se complicara todo.', en: "It would have been ideal to solve it before everything got complicated." },
+    { es: 'Que tengas mucha suerte en la entrevista.', en: 'I hope you have a lot of luck in the interview.' },
+    { es: 'Pese a tener el firme propósito de ahorrar, este mes no lo conseguí.', en: "Despite my firm resolve to save, I didn't manage it this month." }
+  ],
+  probes: [
+    { id: 'p:deseosplanesC1:sisuspendido', kind: 'mcq', q: '"¡Si pudiera tenerte aquí...!" ¿Por qué se deja sin terminar?', options: ['Es un error de la frase', 'Dejarla suspendida es el propio recurso que expresa el deseo', 'Falta el verbo principal'], answer: 1 },
+    { id: 'p:deseosplanesC1:estoyporvstengoenproyecto', kind: 'mcq', q: '¿Qué diferencia hay entre "estoy por" y "tengo en proyecto"?', options: ['Ninguna', '"Estoy por" es una intención apenas formada; "tengo en proyecto" es un plan firme', '"Tengo en proyecto" es menos firme'], answer: 1 },
+    { id: 'p:deseosplanesC1:cloze', kind: 'cloze', text: '¡Quién ___ tiempo para viajar tanto! (imperfecto de subjuntivo, deseo irrealizable)', accept: ['tuviera', 'tuviese'] },
+    { id: 'p:deseosplanesC1:recall', kind: 'recall', front: '¿Qué señala "pese a" + un exponente de planes e intenciones?', back: 'que la intención o el plan expresado no llegó a cumplirse' }
+  ]
 }
 
 ];
