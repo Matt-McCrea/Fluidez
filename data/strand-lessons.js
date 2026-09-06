@@ -23095,6 +23095,133 @@ window.STRAND_LESSONS = [
     { id: 'p:subadvconcesivasC1:cloze', kind: 'cloze', text: 'Si ___ reconocía el error, no pidió disculpas. ("si bien" + indicativo, registro formal)', accept: ['bien'] },
     { id: 'p:subadvconcesivasC1:recall', kind: 'recall', front: '¿Qué hace concesiva a una construcción como "con la de camisas que tienes y te pones una sucia"?', back: 'el contraste entre la cantidad/intensidad de algo (muchas camisas) y lo que ocurre después (elige la sucia), que resulta sorprendente' }
   ]
+},
+
+{
+  id: 'nt-existencia-inexistencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1', 'nociones_generales:C1:2', 'nociones_generales:C1:3', 'nociones_generales:C1:4',
+         'nociones_generales:C1:5', 'nociones_generales:C1:6', 'nociones_generales:C1:7', 'nociones_generales:C1:8',
+         'nociones_generales:C1:9', 'nociones_generales:C1:10', 'nociones_generales:C1:11', 'nociones_generales:C1:12',
+         'nociones_generales:C1:13', 'nociones_generales:C1:14', 'nociones_generales:C1:15', 'nociones_generales:C1:16', 'nociones_generales:C1:17'],
+  title: 'Existencia e inexistencia en C1: nacer, formarse y dejar de ser',
+  summary: 'Más allá de "existir" y "no existir", el español tiene un vocabulario preciso para hablar de cómo algo llega a ser (surgir, generarse, formarse) y de cómo deja de serlo (extinguirse, abolirse) — cada verbo especifica el tipo de origen o de final, no solo el hecho desnudo.',
+  sections: [
+    { h: 'Sustantivos de la existencia y su ausencia', html: '<i>La nada</i> designa la ausencia total de existencia; <i>(in)existencia</i>, el hecho mismo de existir o no; <i>materialización</i>, el paso de una idea a una realidad concreta. <i>(Im)perceptible</i> y <i>palpable</i> describen si esa existencia se puede captar por los sentidos: <i>una tensión palpable</i>.' },
+    { h: 'Verbos de origen: cómo algo llega a existir', html: '<i>Surgir</i> (aparecer sin más precisión), <i>idear</i> (concebir mentalmente), <i>generar, suscitar, despertar</i> (producir algo, especialmente reacciones: <i>generar riqueza, suscitar dudas, despertar envidias</i>), <i>constituir, hacerse, formarse</i> (tomar forma como entidad: <i>constituir un gobierno, formarse una imagen equivocada</i>), <i>concebir, parir</i> (el origen biológico), <i>formar</i> (crear una entidad organizada: <i>formar una familia, formar un equipo</i>), <i>fomentar, favorecer, promover</i> (impulsar activamente algo para que surja: <i>fomentar la investigación</i>).' },
+    { h: 'Verbos de fin: cómo algo deja de existir', html: '<i>Anular, suprimir, abolir</i> (poner fin institucionalmente: <i>abolir una ley</i>), <i>extinguir(se)</i> (poner fin a algo, o a una especie/incendio: <i>extinguir un incendio, extinguirse una especie</i>). <i>Reencarnar(se), resucitar</i> señalan, por el contrario, un retorno a la existencia tras la muerte.' },
+    { h: '"Dar lugar a": causar la aparición de algo', html: '<i>Dar lugar a</i> conecta una causa con la aparición de una consecuencia: <i>dar lugar a una situación</i> — el nuevo estado de cosas "surge" a partir de lo anterior.' }
+  ],
+  exponents: [
+    { es: 'La crisis dio lugar a una oleada de protestas.', en: 'The crisis gave rise to a wave of protests.', register: 'neutral' },
+    { es: 'El nuevo gobierno se constituyó tras meses de negociación.', en: 'The new government was formed after months of negotiation.', register: 'formal' },
+    { es: 'Esa especie está a punto de extinguirse.', en: 'That species is on the verge of extinction.', register: 'neutral' },
+    { es: 'Sus palabras suscitaron muchas dudas entre el público.', en: 'His words raised a lot of doubts among the audience.', register: 'formal' },
+    { es: 'El proyecto surgió de una simple conversación.', en: 'The project arose from a simple conversation.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'La idea surgió durante la reunión.', en: 'The idea arose during the meeting.', note: 'surgir — origen sin agente concreto' },
+    { es: 'El comité se formó para investigar el caso.', en: 'The committee was formed to investigate the case.', note: 'formarse — origen como entidad organizada' }
+  ],
+  pitfalls: [
+    '"Surgir" no lleva agente explícito con naturalidad — algo "surge", no "alguien lo surge"; para un origen con agente conviene "generar, crear, provocar".',
+    '"Abolir" se reserva para instituciones, leyes o normas — no se usa para el fin de un incendio o una especie, donde corresponde "extinguir(se)".',
+    '"Constituir" y "formar" no son intercambiables sin más: "constituirse" suena más institucional (un gobierno, un comité), "formarse" es más general (una idea, una opinión, un equipo).'
+  ],
+  examples: [
+    { es: 'Ese rumor no tiene ni pizca de existencia real.', en: 'That rumor has no basis in reality whatsoever.' },
+    { es: 'El gobierno decidió suprimir el impuesto.', en: 'The government decided to abolish the tax.' },
+    { es: 'La tensión en la sala era casi palpable.', en: 'The tension in the room was almost palpable.' }
+  ],
+  probes: [
+    { id: 'p:existenciainexistenciaC1:verbo', kind: 'mcq', q: '¿Qué verbo se usa para el fin de una especie o de un incendio?', options: ['Abolir', 'Extinguir(se)', 'Suprimir'], answer: 1 },
+    { id: 'p:existenciainexistenciaC1:generar', kind: 'mcq', q: '"Sus palabras ___ muchas dudas." ¿Qué verbo encaja?', options: ['suscitaron', 'abolieron', 'extinguieron'], answer: 0 },
+    { id: 'p:existenciainexistenciaC1:cloze', kind: 'cloze', text: 'El nuevo gobierno se ___ tras meses de negociación. (constituirse, origen institucional)', accept: ['constituyó'] },
+    { id: 'p:existenciainexistenciaC1:recall', kind: 'recall', front: '¿Qué verbo se reserva para leyes, normas o instituciones cuando dejan de existir?', back: 'abolir (frente a "extinguir(se)" para especies, incendios, etc.)' }
+  ]
+},
+
+{
+  id: 'nt-presencia-ausencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:29', 'nociones_generales:C1:30', 'nociones_generales:C1:31', 'nociones_generales:C1:32',
+         'nociones_generales:C1:33', 'nociones_generales:C1:34', 'nociones_generales:C1:35', 'nociones_generales:C1:36',
+         'nociones_generales:C1:37', 'nociones_generales:C1:38', 'nociones_generales:C1:39', 'nociones_generales:C1:40',
+         'nociones_generales:C1:41', 'nociones_generales:C1:42', 'nociones_generales:C1:43', 'nociones_generales:C1:44', 'nociones_generales:C1:45'],
+  title: 'Presencia y ausencia en C1: de "estar hasta arriba" a "cuatro gatos"',
+  summary: 'La presencia y la ausencia se expresan en C1 con locuciones muy idiomáticas — un lugar puede estar "hasta arriba" o no haber "ni un alma", alguien puede "pasar desapercibido" o presentarse "de incógnito" — que un hablante no nativo reconoce por contexto antes de aprender a usarlas con soltura.',
+  sections: [
+    { h: 'Grados de presencia: de vacío a abarrotado', html: '<i>No haber (ni) un alma</i> describe un lugar completamente vacío; <i>ser/haber cuatro gatos</i>, muy poca gente; <i>abarrotado</i> y <i>estar hasta arriba</i>, el extremo contrario: <i>el estadio estaba hasta arriba</i>.' },
+    { h: 'Aparecer y desaparecer', html: '<i>Reaparecer</i> (volver a estar presente) se opone a <i>extraviar(se)</i> (perderse). <i>Ocultar(se), tapar(se)</i> hacen desaparecer algo de la vista voluntariamente. <i>Difundir(se), propagar(se)</i> hablan de la presencia que se extiende: <i>difundir una noticia, propagar una enfermedad</i>. <i>Pasar desapercibido/inadvertido</i> describe una presencia que no llama la atención.' },
+    { h: 'Cómo y con qué actitud presentarse', html: '<i>Ausentarse de, presentarse en</i> son los verbos neutros de entrar y salir de un lugar: <i>ausentarse del trabajo, presentarse en comisaría</i>. <i>Frecuentar, acudir a</i> describen presencia habitual. Las locuciones <i>ir/acudir/presentarse de incógnito</i> (sin ser reconocido) y <i>en persona</i> (físicamente, no por representante) matizan el modo de presencia. <i>Aparecer como por arte de magia/de la nada</i> describe una aparición súbita e inexplicada.' },
+    { h: 'Presencia y honestidad: cara a cara o a espaldas', html: '<i>Hablar frente a frente/cara a cara</i> implica presencia directa y honesta; <i>decir algo a la cara a alguien</i> refuerza esa franqueza; <i>hablar a espaldas de alguien</i>, en cambio, implica hacerlo en su ausencia, sin que lo sepa — casi siempre con connotación negativa.' }
+  ],
+  exponents: [
+    { es: 'El concierto estaba hasta arriba de gente.', en: 'The concert was packed.', register: 'coloquial' },
+    { es: 'A esa hora no había ni un alma en la calle.', en: 'There wasn\'t a soul on the street at that hour.', register: 'coloquial' },
+    { es: 'Prefiero decírtelo a la cara antes que hablar a tus espaldas.', en: 'I\'d rather tell you to your face than talk behind your back.', register: 'neutral' },
+    { es: 'El rumor se propagó por todo el edificio en minutos.', en: 'The rumor spread through the whole building in minutes.', register: 'neutral' },
+    { es: 'Prefirió presentarse de incógnito para no llamar la atención.', en: 'He preferred to show up incognito so as not to attract attention.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Pasó desapercibido entre la multitud.', en: 'He went unnoticed in the crowd.', note: 'presencia real pero no advertida' },
+    { es: 'Se ausentó del trabajo sin avisar.', en: 'He was absent from work without notice.', note: 'ausencia marcada, con posible connotación negativa' }
+  ],
+  pitfalls: [
+    '"Ser/haber cuatro gatos" no es literal — describe muy poca gente presente, no cuatro animales.',
+    '"Hablar a espaldas de alguien" casi siempre implica algo negativo (criticar, murmurar) — no es un simple "hablar en su ausencia" neutro.',
+    '"De incógnito" describe la manera de presentarse sin ser reconocido, no la ausencia — la persona está presente, solo que oculta su identidad.'
+  ],
+  examples: [
+    { es: 'La sala estaba prácticamente vacía; éramos cuatro gatos.', en: 'The room was practically empty; there were only a handful of us.' },
+    { es: 'El actor se presentó de incógnito en el estreno.', en: 'The actor showed up incognito at the premiere.' },
+    { es: 'Prefiero decir las cosas cara a cara.', en: 'I prefer to say things face to face.' }
+  ],
+  probes: [
+    { id: 'p:presenciaausenciaC1:cuatrogatos', kind: 'mcq', q: '"Éramos cuatro gatos en la reunión." ¿Qué significa?', options: ['Había cuatro animales', 'Había muy poca gente', 'Había mucha gente'], answer: 1 },
+    { id: 'p:presenciaausenciaC1:espaldas', kind: 'mcq', q: '"Habla a espaldas de sus compañeros." ¿Qué connotación tiene?', options: ['Neutra, sin más', 'Negativa — suele implicar crítica o murmuración', 'Positiva'], answer: 1 },
+    { id: 'p:presenciaausenciaC1:cloze', kind: 'cloze', text: 'A esa hora no había ni un ___ en la calle. (ausencia total)', accept: ['alma'] },
+    { id: 'p:presenciaausenciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "pasar desapercibido" y "presentarse de incógnito"?', back: 'pasar desapercibido es no llamar la atención sin buscarlo; presentarse de incógnito es ocultar la identidad deliberadamente' }
+  ]
+},
+
+{
+  id: 'nt-disponibilidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:69', 'nociones_generales:C1:70', 'nociones_generales:C1:71', 'nociones_generales:C1:72',
+         'nociones_generales:C1:73', 'nociones_generales:C1:74', 'nociones_generales:C1:75', 'nociones_generales:C1:76', 'nociones_generales:C1:77'],
+  title: 'Disponibilidad en C1: desde "a mano" hasta "no estar para nadie"',
+  summary: 'La disponibilidad se expresa en C1 con un abanico de locuciones que van de lo puramente práctico ("tener a mano") a lo institucional ("quedar a disposición de") y hasta el rechazo deliberado de estar disponible ("no estar para nadie").',
+  sections: [
+    { h: 'Disponibilidad y accesibilidad', html: '<i>Disponibilidad</i> (<i>tener disponibilidad</i>) es el sustantivo general. <i>(In)asequible</i> se aplica sobre todo al precio (<i>un alquiler asequible</i>); <i>(in)accesible</i>, a personas o lugares (<i>una persona accesible</i>). <i>Acceder a</i> es llegar a disponer de algo: <i>acceder a una vivienda</i>.' },
+    { h: 'Tener o carecer de algo', html: '<i>Carecer de</i> (no disponer de algo necesario) se opone a <i>disponer de</i> (tenerlo a su disposición): <i>carecer de educación, disponer de medios</i>.' },
+    { h: 'Locuciones de disponibilidad práctica e institucional', html: '<i>Poner a punto</i> es preparar algo para que esté disponible para su uso: <i>poner a punto una máquina</i>. <i>Estar/tener a mano</i> señala disponibilidad inmediata y física. <i>Estar al servicio de</i> y <i>estar/quedar a disposición de</i> son fórmulas más formales de ofrecer disponibilidad: <i>quedo a su entera disposición para cualquier consulta</i>.' },
+    { h: 'La no disponibilidad deliberada', html: '<i>No estar para nadie</i> expresa la decisión consciente de no estar disponible, normalmente diciéndoselo a un tercero que filtra las visitas o llamadas.' }
+  ],
+  exponents: [
+    { es: 'Tengo disponibilidad para empezar la próxima semana.', en: "I'm available to start next week.", register: 'formal' },
+    { es: 'Quedo a su entera disposición para cualquier consulta.', en: 'I remain entirely at your disposal for any inquiry.', register: 'formal' },
+    { es: 'Dile que no estoy para nadie esta tarde.', en: "Tell them I'm not available for anyone this afternoon.", register: 'coloquial' },
+    { es: 'Este barrio carece de transporte público decente.', en: 'This neighborhood lacks decent public transportation.', register: 'neutral' },
+    { es: 'Siempre tiene las herramientas a mano.', en: 'He always has the tools within reach.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Un piso asequible en el centro.', en: 'An affordable apartment downtown.', note: 'asequible — se aplica al precio' },
+    { es: 'Un jefe accesible que escucha a su equipo.', en: 'An approachable boss who listens to his team.', note: 'accesible — se aplica a personas' }
+  ],
+  pitfalls: [
+    '"Asequible" y "accesible" no son sinónimos intercambiables: el primero se refiere sobre todo al precio, el segundo a personas o lugares fáciles de alcanzar o tratar.',
+    '"No estar para nadie" no significa estar ausente físicamente — la persona está presente pero ha decidido no atender a nadie.',
+    '"Carecer de" exige un sustantivo abstracto o necesario (educación, recursos), y no se usa con la misma naturalidad para objetos concretos disponibles simplemente "no tener".'
+  ],
+  examples: [
+    { es: 'La vivienda sigue siendo poco asequible para los jóvenes.', en: 'Housing remains largely unaffordable for young people.' },
+    { es: 'Puso a punto la bicicleta antes del viaje.', en: 'He got the bike ready before the trip.' },
+    { es: 'El director no está para nadie hasta las cinco.', en: "The director isn't available to anyone until five." }
+  ],
+  probes: [
+    { id: 'p:disponibilidadC1:asequible', kind: 'mcq', q: '¿A qué se aplica típicamente "asequible"?', options: ['Al precio', 'A la personalidad', 'Al clima'], answer: 0 },
+    { id: 'p:disponibilidadC1:noestar', kind: 'mcq', q: '"No estoy para nadie." ¿Qué implica?', options: ['Estoy ausente físicamente', 'Estoy presente pero no quiero atender a nadie', 'No tengo amigos'], answer: 1 },
+    { id: 'p:disponibilidadC1:cloze', kind: 'cloze', text: 'Este barrio ___ de transporte público decente. (no disponer de algo necesario)', accept: ['carece'] },
+    { id: 'p:disponibilidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "asequible" y "accesible"?', back: '"asequible" se refiere sobre todo al precio; "accesible" a personas o lugares fáciles de alcanzar/tratar' }
+  ]
 }
 
 ];
