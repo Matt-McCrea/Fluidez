@@ -27789,6 +27789,47 @@ window.STRAND_LESSONS = [
     { id: 'p:proponerofrecerconfirmarC1:cloze', kind: 'cloze', text: 'Me ___ sugerirles una alternativa. (fórmula formal de propuesta)', accept: ['permito'] },
     { id: 'p:proponerofrecerconfirmarC1:recall', kind: 'recall', front: '¿Qué función cumple "no sé qué planes tendrás, pero..." al invitar a alguien?', back: 'suaviza la invitación reconociendo de antemano que el otro podría tener otros compromisos, facilitando un posible rechazo sin incomodidad' }
   ]
+},
+
+{
+  id: 'fn-aceptar-rechazar-propuesta-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:923', 'funciones:C1:924', 'funciones:C1:925', 'funciones:C1:926', 'funciones:C1:928', 'funciones:C1:929',
+         'funciones:C1:935', 'funciones:C1:936', 'funciones:C1:937', 'funciones:C1:938', 'funciones:C1:939'],
+  title: 'Aceptar y rechazar propuestas en C1: "no te voy a decir que no" y "¡ni atado!"',
+  summary: 'Aceptar en C1 puede hacerse con una doble negación casi tímida ("no te voy a decir que no") o con entusiasmo ("¿a qué esperamos?"), mientras que rechazar incluye la excusa de "precisamente" ese día no poder, y el rechazo coloquial más extremo: "¡ni atado!"',
+  sections: [
+    { h: 'Aceptar sin reservas', html: '<i>No te voy a decir que no</i> acepta mediante una doble negación, con matiz de estar dejándose convencer con gusto: <i>no te voy a decir que no, además no tenía plan para el fin de semana</i>. <i>No me puedo negar</i> tiene un matiz parecido. <i>¿A qué esperamos?</i> acepta con entusiasmo inmediato, como si la propuesta fuera obviamente buena. <i>(Eso está) hecho</i> confirma la aceptación de forma directa.' },
+    { h: 'Aceptar con reservas o condiciones', html: 'Una condición con subjuntivo matiza la aceptación: <i>no, a no ser que vayamos al sitio que a mí me gusta</i>, <i>acepto, siempre que la próxima vez me dejéis pagar a mí</i>. Una condicional puede quedar suspendida, dejando la condición implícita sin necesidad de continuar la frase: <i>mientras no me lleves al sitio de siempre...</i>' },
+    { h: 'Rechazar con excusa concreta', html: '<i>Siento perdérmelo, pero...</i> lamenta explícitamente no poder participar. <i>(Te) voy a tener que decir que no</i> es un rechazo suavizado por la estructura misma, casi como si costara decirlo. <i>Precisamente/justamente no puedo</i> señala que la coincidencia es especialmente mala: justo ese día, entre todos, no se puede: <i>precisamente el jueves no puedo</i>.' },
+    { h: 'Rechazar con sorpresa o rotundidad coloquial', html: '<i>¿¡Qué dices!?</i> expresa sorpresa ante la propuesta misma, casi como rechazo automático. <i>Ni hablar/ni pensarlo/ni loco/ni atado</i> son rechazos coloquiales de creciente rotundidad, con "ni atado" en el extremo más enfático — ni siquiera atado a la fuerza aceptaría.' }
+  ],
+  exponents: [
+    { es: '¿A qué esperamos? Vámonos ya.', en: "What are we waiting for? Let's go already.", register: 'coloquial' },
+    { es: 'Acepto, siempre que quede claro que la próxima vez elijo yo el restaurante.', en: "I accept, as long as it's clear I choose the restaurant next time.", register: 'neutral' },
+    { es: 'Siento perdérmelo, pero ya tengo un compromiso ese día.', en: "I'm sorry to miss it, but I already have a commitment that day.", register: 'neutral' },
+    { es: 'Precisamente ese fin de semana no puedo, qué rabia.', en: "That exact weekend I can't, how annoying.", register: 'coloquial' },
+    { es: '¿Ir con ellos al concierto? ¡Ni atado!', en: 'Go with them to the concert? Not even if you tied me up!', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'No te voy a decir que no, me apetece mucho.', en: "I won't say no, I really feel like it.", note: 'aceptación con doble negación, casi tímida' },
+    { es: '¡Ni atado voy a esa fiesta!', en: "I'm not going to that party even if you tied me up!", note: 'rechazo coloquial extremo' }
+  ],
+  pitfalls: [
+    '"No te voy a decir que no" no es una negativa disfrazada — es una forma indirecta de ACEPTAR, dando a entender que sería difícil rechazar la propuesta.',
+    '"Precisamente/justamente no puedo" no es una simple excusa neutra — enfatiza la mala suerte de que sea justo ese día el que no funciona.',
+    '"Ni hablar/ni pensarlo/ni loco/ni atado" forman una escala de rotundidad creciente — no son perfectamente intercambiables en cuanto a intensidad.'
+  ],
+  examples: [
+    { es: 'No me puedo negar a una oferta tan buena.', en: "I can't turn down such a good offer." },
+    { es: 'Te voy a tener que decir que no esta vez, lo siento mucho.', en: "I'm going to have to say no this time, I'm really sorry." },
+    { es: '¿Qué dices? ¿Yo, disculparme? ¡Ni pensarlo!', en: 'What are you talking about? Me, apologize? Not a chance!' }
+  ],
+  probes: [
+    { id: 'p:aceptarrechazarpropuestaC1:notevoyadecir', kind: 'mcq', q: '"No te voy a decir que no" es...', options: ['Un rechazo disfrazado', 'Una aceptación indirecta', 'Una pregunta'], answer: 1 },
+    { id: 'p:aceptarrechazarpropuestaC1:precisamente', kind: 'mcq', q: '"Precisamente el jueves no puedo" enfatiza...', options: ['Que cualquier día le viene mal', 'La mala suerte de que sea justo ese día', 'Alegría'], answer: 1 },
+    { id: 'p:aceptarrechazarpropuestaC1:cloze', kind: 'cloze', text: '¿Ir con ellos? ¡Ni ___! (rechazo coloquial extremo)', accept: ['atado'] },
+    { id: 'p:aceptarrechazarpropuestaC1:recall', kind: 'recall', front: '¿Qué escala de rotundidad forman "ni hablar", "ni pensarlo", "ni loco" y "ni atado"?', back: 'una escala creciente de rechazo coloquial, de más suave a más rotundo, con "ni atado" en el extremo' }
+  ]
 }
 
 ];
