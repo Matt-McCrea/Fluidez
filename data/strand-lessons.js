@@ -24675,6 +24675,47 @@ window.STRAND_LESSONS = [
     { id: 'p:anticipacionC1:cloze', kind: 'cloze', text: 'Prefiere pagar por ___ para no tener que preocuparse después. (antes de lo esperado)', accept: ['anticipado'] },
     { id: 'p:anticipacionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "predicción/pronóstico" y "prevención"?', back: 'predicción/pronóstico son afirmaciones sobre el futuro; prevención es actuar para evitar que algo ocurra' }
   ]
+},
+
+{
+  id: 'nt-retraso-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:804', 'nociones_generales:C1:805', 'nociones_generales:C1:806',
+         'nociones_generales:C1:807', 'nociones_generales:C1:808', 'nociones_generales:C1:809'],
+  title: 'Retraso en C1: atraso, demora y aplazamiento',
+  summary: 'El retraso se nombra en C1 con matices distintos según su causa y su alcance — un "atraso" puede ser estructural (económico), una "demora" es un retraso concreto en un proceso, y "posponer/aplazar" son decisiones deliberadas, no simples accidentes.',
+  sections: [
+    { h: 'Atraso, demora y aplazamiento: tres tipos de retraso', html: '<i>Atraso</i> describe un retraso estructural o de desarrollo: <i>atraso económico</i>. <i>Demora</i> es un retraso concreto en un proceso o comunicación: <i>no hemos podido hacer nada debido a la demora en comunicarnos la noticia</i>. <i>Aplazamiento</i> es la decisión de posponer algo previsto para otro momento: <i>un aplazamiento de la sentencia</i>.' },
+    { h: 'Tardío: el adjetivo del retraso', html: '<i>Tardío</i> describe algo que llega o sucede más tarde de lo esperado o deseable: <i>una reacción tardía</i>.' },
+    { h: 'Posponer y aplazar: decisiones deliberadas', html: '<i>Posponer, aplazar</i> son verbos casi sinónimos para decidir retrasar algo deliberadamente: <i>hay que posponer la reunión</i>, <i>las circunstancias obligan a aplazar la visita del ministro</i> — a diferencia de "atrasarse" o "demorarse", que pueden ser accidentales, estos verbos implican una decisión.' },
+    { h: '"Hacerse tarde": el retraso que se acerca', html: '<i>Hacerse tarde</i> describe que el tiempo avanza hacia un límite, con la sensación de que pronto será demasiado tarde para algo.' }
+  ],
+  exponents: [
+    { es: 'La demora en la entrega generó muchas quejas.', en: 'The delay in delivery generated many complaints.', register: 'formal' },
+    { es: 'Tuvieron que aplazar la boda por el mal tiempo.', en: 'They had to postpone the wedding due to bad weather.', register: 'neutral' },
+    { es: 'Se hace tarde, deberíamos irnos ya.', en: "It's getting late, we should leave now.", register: 'coloquial' },
+    { es: 'Su respuesta tardía complicó las negociaciones.', en: 'His late response complicated the negotiations.', register: 'formal' },
+    { es: 'El país arrastra un atraso tecnológico considerable.', en: 'The country carries a considerable technological lag.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'La demora en el vuelo fue de dos horas.', en: 'The flight delay was two hours.', note: 'demora — retraso concreto y puntual' },
+    { es: 'El atraso económico de la región se arrastra desde hace décadas.', en: "The region's economic backwardness has dragged on for decades.", note: 'atraso — retraso estructural y prolongado' }
+  ],
+  pitfalls: [
+    '"Atraso" y "demora" no son intercambiables: "atraso" describe algo estructural y prolongado, "demora" un retraso puntual en un proceso concreto.',
+    '"Posponer/aplazar" implican una decisión deliberada de retrasar algo — no describen un retraso accidental o involuntario.',
+    '"Tardío" describe la cualidad de algo que llega tarde, no el proceso de retrasarse — no es intercambiable con el verbo "retrasarse".'
+  ],
+  examples: [
+    { es: 'El aplazamiento del juicio generó controversia.', en: 'The postponement of the trial caused controversy.' },
+    { es: 'Pidieron disculpas por la demora en responder.', en: 'They apologized for the delay in responding.' },
+    { es: 'Se está haciendo tarde para presentar la solicitud.', en: "It's getting late to submit the application." }
+  ],
+  probes: [
+    { id: 'p:retrasoC1:atrasodemora', kind: 'mcq', q: '¿Qué diferencia hay entre "atraso" y "demora"?', options: ['Ninguna', 'Atraso es estructural/prolongado; demora es puntual en un proceso', 'Demora es siempre económica'], answer: 1 },
+    { id: 'p:retrasoC1:posponer', kind: 'mcq', q: '"Posponer/aplazar" implican...', options: ['Un retraso accidental', 'Una decisión deliberada de retrasar algo', 'Un adelanto'], answer: 1 },
+    { id: 'p:retrasoC1:cloze', kind: 'cloze', text: 'Su reacción ___ complicó todavía más la situación. (que llega más tarde de lo esperado)', accept: ['tardía'] },
+    { id: 'p:retrasoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "aplazar/posponer" y simplemente "retrasarse"?', back: 'aplazar/posponer implican una decisión deliberada; retrasarse puede ser accidental o involuntario' }
+  ]
 }
 
 ];
