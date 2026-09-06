@@ -24888,6 +24888,49 @@ window.STRAND_LESSONS = [
     { id: 'p:repeticionC1:cloze', kind: 'cloze', text: 'Mi compañero y yo nos ___ para atender al público. (repetición organizada por turnos)', accept: ['turnamos'] },
     { id: 'p:repeticionC1:recall', kind: 'recall', front: '¿Qué matiz tiene "erre que erre" que no tiene "insistentemente"?', back: 'un matiz coloquial y de terquedad casi cómica, no apropiado para un registro formal' }
   ]
+},
+
+{
+  id: 'nt-duracion-transcurso-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:861', 'nociones_generales:C1:862', 'nociones_generales:C1:863', 'nociones_generales:C1:864',
+         'nociones_generales:C1:865', 'nociones_generales:C1:866', 'nociones_generales:C1:867', 'nociones_generales:C1:868',
+         'nociones_generales:C1:869', 'nociones_generales:C1:870', 'nociones_generales:C1:871', 'nociones_generales:C1:872',
+         'nociones_generales:C1:873', 'nociones_generales:C1:874'],
+  title: 'Duración en C1: de lo "fugaz" a lo "perpetuo"',
+  summary: 'La duración de algo se gradúa en C1 con una escala completa de adjetivos — momentáneo, pasajero, fugaz en un extremo; prolongado, duradero, crónico, perpetuo, eterno en el otro — y verbos que activamente alargan o acortan esa duración.',
+  sections: [
+    { h: 'Sustantivos de periodo y duración', html: '<i>Estancia</i> es el tiempo que se pasa en un lugar. <i>Espacio/intervalo (de tiempo)</i> es un periodo delimitado. <i>Eternidad</i>, en sentido hiperbólico, exagera una espera larga: <i>estuvimos esperando una eternidad</i>. <i>Legislatura, reinado, mandato</i> son periodos institucionales concretos. <i>Paso del tiempo/de las horas/de los días/de los años/de los siglos</i> describe el avance temporal en distintas escalas.' },
+    { h: 'La escala de duración: de lo fugaz a lo perpetuo', html: 'De menos a más duración: <i>momentáneo, pasajero, fugaz</i> (muy breve: <i>una sensación momentánea, una relación pasajera, una estrella fugaz</i>) — <i>prolongado, duradero, crónico</i> (largo, con crónico aplicado sobre todo a problemas persistentes: <i>una enfermedad crónica</i>) — <i>perpetuo, eterno</i> (sin fin: <i>cadena perpetua</i>). <i>Provisional</i> describe algo pensado para durar poco, a la espera de algo definitivo.' },
+    { h: 'Verbos que mantienen o cambian la duración', html: '<i>Perdurar</i> es seguir existiendo a través del tiempo: <i>esta costumbre perdura desde hace siglos</i>. <i>Extender(se)/prolongar(se) (en el tiempo)</i> describen que algo dura más de lo esperado: <i>cuando la tristeza se extiende en el tiempo es aconsejable acudir a un especialista</i>. <i>Alargar/acortar (el tiempo)</i> son los verbos para cambiar deliberadamente una duración: <i>estamos intentando alargar la hora de la comida</i>.' },
+    { h: 'Adverbios de duración y tiempos récord', html: '<i>Prolongadamente, eternamente, provisionalmente, permanentemente</i> son los adverbios correspondientes a los adjetivos anteriores: <i>te amaré eternamente</i>. <i>En un tiempo medio/récord</i> especifica una duración estadística o excepcionalmente corta: <i>recibirá una respuesta en un tiempo medio de dos horas</i>.' }
+  ],
+  exponents: [
+    { es: 'Fue una alegría fugaz, que desapareció enseguida.', en: 'It was a fleeting joy that vanished right away.', register: 'neutral' },
+    { es: 'Esta tradición perdura desde la época medieval.', en: 'This tradition has endured since medieval times.', register: 'formal' },
+    { es: 'Es solo una medida provisional hasta encontrar algo mejor.', en: "It's just a temporary measure until something better is found.", register: 'neutral' },
+    { es: 'Recibirá el pedido en un tiempo récord de 24 horas.', en: 'You will receive the order in a record time of 24 hours.', register: 'formal' },
+    { es: 'Sufre dolores crónicos de espalda desde hace años.', en: "He's suffered from chronic back pain for years.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Un dolor pasajero, que se fue solo.', en: 'A passing pain that went away on its own.', note: 'duración breve' },
+    { es: 'Un dolor crónico, que no desaparece.', en: 'A chronic pain that doesn\'t go away.', note: 'duración prolongada y persistente' }
+  ],
+  pitfalls: [
+    '"Crónico" no se aplica a cualquier cosa duradera — se reserva casi siempre para problemas o enfermedades persistentes, con connotación negativa.',
+    '"Provisional" no significa "breve" en sí mismo — describe algo pensado para durar hasta que llegue una solución definitiva, independientemente de cuánto dure en la práctica.',
+    '"Perpetuo" y "eterno" son casi sinónimos, pero "perpetuo" se usa en contextos más técnicos o legales (<i>cadena perpetua</i>), mientras "eterno" es de uso más general y emocional.'
+  ],
+  examples: [
+    { es: 'Su fama fue fugaz, apenas duró una temporada.', en: 'His fame was fleeting, it barely lasted a season.' },
+    { es: 'Intentaron alargar las vacaciones unos días más.', en: 'They tried to extend the vacation a few more days.' },
+    { es: 'El acuerdo se prolongó más de lo previsto.', en: 'The agreement dragged on longer than expected.' }
+  ],
+  probes: [
+    { id: 'p:duraciontranscursoC1:cronico', kind: 'mcq', q: '¿A qué se aplica típicamente "crónico"?', options: ['A cualquier cosa duradera', 'A problemas o enfermedades persistentes', 'A relaciones breves'], answer: 1 },
+    { id: 'p:duraciontranscursoC1:provisional', kind: 'mcq', q: '"Provisional" implica...', options: ['Que dura poco necesariamente', 'Que está pensado para durar hasta que llegue algo definitivo', 'Que es permanente'], answer: 1 },
+    { id: 'p:duraciontranscursoC1:cloze', kind: 'cloze', text: 'Fue una alegría ___, que desapareció enseguida. (muy breve)', accept: ['fugaz'] },
+    { id: 'p:duraciontranscursoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "perpetuo" y "eterno"?', back: 'perpetuo se usa en contextos más técnicos o legales; eterno es de uso más general y emocional' }
+  ]
 }
 
 ];
