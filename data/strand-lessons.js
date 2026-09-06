@@ -23883,6 +23883,131 @@ window.STRAND_LESSONS = [
     { id: 'p:temperaturaC1:cloze', kind: 'cloze', text: 'Hace un frío que ___ esta mañana. (hipérbole coloquial de frío intenso)', accept: ['pela'] },
     { id: 'p:temperaturaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "coger frío" y "morirse de frío"?', back: 'coger frío es empezar a sentir frío; morirse de frío es una hipérbole para el extremo, un frío insoportable' }
   ]
+},
+
+{
+  id: 'nt-localizacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:469', 'nociones_generales:C1:470', 'nociones_generales:C1:471', 'nociones_generales:C1:472',
+         'nociones_generales:C1:473', 'nociones_generales:C1:474', 'nociones_generales:C1:475', 'nociones_generales:C1:476'],
+  title: 'Localización en C1: ubicar, situar y "en paradero desconocido"',
+  summary: 'Localizar algo o a alguien en C1 pasa por un grupo de verbos casi sinónimos (ubicar, situar, localizar) que en realidad se reparten matices distintos, y por la fórmula formal "en paradero desconocido" para cuando la localización falla del todo.',
+  sections: [
+    { h: 'Sustantivos de localización', html: '<i>Punto</i> es un lugar concreto: <i>el mirador se halla en un punto estratégico de la costa</i>. <i>Ubicación</i> es el sustantivo formal para el lugar donde algo se encuentra: <i>ver ubicación en el plano</i>.' },
+    { h: 'Verbos que localizan', html: '<i>Ubicado</i> (participio adjetivado): <i>nuestra sede está ubicada en la planta baja</i>. <i>Situar(se)</i> es colocar algo o describir dónde está: <i>la región menos desarrollada se sitúa en la zona norte del país</i>. <i>Localizar(se)</i> es encontrar algo o a alguien cuyo paradero se buscaba: <i>estoy tratando de localizar a Carlos</i>.' },
+    { h: 'Aislarse: dejar de estar localizable por elección propia', html: '<i>Aislarse</i> es apartarse voluntariamente, a veces en sentido figurado: <i>se aisló en un mundo de fantasía</i>.' },
+    { h: 'Cuando la localización falla', html: '<i>Estar/hallarse/encontrarse en paradero desconocido</i> es la fórmula formal para cuando no se sabe dónde está alguien, típica de noticias y contextos oficiales. <i>Allá</i> es un adverbio de lugar impreciso y distante.' }
+  ],
+  exponents: [
+    { es: 'El sospechoso continúa en paradero desconocido.', en: "The suspect's whereabouts remain unknown.", register: 'formal' },
+    { es: 'La empresa está ubicada en el centro de la ciudad.', en: 'The company is located downtown.', register: 'formal' },
+    { es: 'No consigo localizarlo, no contesta al teléfono.', en: "I can't get hold of him, he's not answering the phone.", register: 'neutral' },
+    { es: 'Se aisló del mundo tras el escándalo.', en: 'He withdrew from the world after the scandal.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'El pueblo se sitúa a orillas del río.', en: 'The town is located on the riverbank.', note: 'situar(se) — describir la ubicación' },
+    { es: 'Estoy intentando localizar mis llaves.', en: "I'm trying to find my keys.", note: 'localizar — encontrar algo cuyo paradero se desconocía' }
+  ],
+  pitfalls: [
+    '"Localizar" implica que el objeto o la persona ya estaba en algún sitio y se busca encontrarlo — no equivale a "situar", que simplemente describe una ubicación conocida.',
+    '"En paradero desconocido" es una fórmula fija de registro formal/periodístico — no se usa en contextos coloquiales para decir simplemente "no sé dónde está".',
+    '"Aislarse" implica una decisión voluntaria de apartarse, no una simple ausencia o desaparición accidental.'
+  ],
+  examples: [
+    { es: 'El museo está ubicado junto a la catedral.', en: 'The museum is located next to the cathedral.' },
+    { es: 'Llevan tres días sin localizar el barco perdido.', en: "They've spent three days unable to locate the missing boat." },
+    { es: 'Se aisló de sus amigos durante meses.', en: 'He isolated himself from his friends for months.' }
+  ],
+  probes: [
+    { id: 'p:localizacionC1:localizarsituar', kind: 'mcq', q: '¿Qué diferencia hay entre "localizar" y "situar"?', options: ['Ninguna', 'Localizar implica encontrar algo cuyo paradero se buscaba; situar describe una ubicación', 'Situar es más informal'], answer: 1 },
+    { id: 'p:localizacionC1:paradero', kind: 'mcq', q: '"En paradero desconocido" pertenece a qué registro?', options: ['Coloquial', 'Formal/periodístico', 'Vulgar'], answer: 1 },
+    { id: 'p:localizacionC1:cloze', kind: 'cloze', text: 'La sede de la empresa está ___ en el centro. (participio de "ubicar")', accept: ['ubicada'] },
+    { id: 'p:localizacionC1:recall', kind: 'recall', front: '¿Qué implica "aislarse" que una simple desaparición no implica?', back: 'una decisión voluntaria de apartarse, no un accidente o ausencia involuntaria' }
+  ]
+},
+
+{
+  id: 'nt-posicion-absoluta-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:484', 'nociones_generales:C1:485', 'nociones_generales:C1:486', 'nociones_generales:C1:487',
+         'nociones_generales:C1:488', 'nociones_generales:C1:489', 'nociones_generales:C1:490', 'nociones_generales:C1:491',
+         'nociones_generales:C1:492', 'nociones_generales:C1:493', 'nociones_generales:C1:494', 'nociones_generales:C1:495'],
+  title: 'Posición absoluta en C1: inclinado, torcido, empinado',
+  summary: 'Describir cómo está colocado un objeto en el espacio requiere un adjetivo distinto para cada tipo de postura — no es lo mismo estar "inclinado" que "torcido", ni una cuesta "empinada" que un terreno "desnivelado".',
+  sections: [
+    { h: 'Medir la inclinación', html: '<i>Inclinación, ángulo</i> son los sustantivos: <i>las caras de la pirámide tienen una inclinación de 40 grados</i>.' },
+    { h: 'Adjetivos de postura', html: '<i>Inclinado, torcido, caído, apoyado</i> describen distintas desviaciones de la posición recta: <i>ese cuadro parece que está torcido</i>, <i>tenía los brazos caídos</i>. <i>(Des)nivelado</i> describe una superficie sin el equilibrio horizontal esperado: <i>el terreno está desnivelado</i>. <i>Flexionado, estirado, extendido</i> describen el estado de una parte del cuerpo: <i>hay que mantener las piernas juntas y estiradas</i>. <i>Cruzado, atravesado</i> describen algo puesto perpendicularmente en medio de otra cosa: <i>el árbol estaba atravesado en medio de la carretera</i>. <i>Empinado</i> se aplica a pendientes muy inclinadas: <i>una cuesta empinada</i>. <i>Echado</i> describe a alguien tumbado: <i>Diego está echado en la cama</i>.' },
+    { h: 'Verbos de cambio de posición', html: '<i>(Des)nivelar</i> y <i>inclinar(se), torcer(se)</i> son los verbos correspondientes a los adjetivos anteriores.' },
+    { h: 'Locuciones de orientación', html: '<i>De lado, de perfil</i> describen una orientación lateral. <i>En pendiente</i> describe un terreno inclinado. <i>En paralelo/perpendicular</i> describen la relación entre dos líneas o superficies.' }
+  ],
+  exponents: [
+    { es: 'El cuadro está torcido, habría que enderezarlo.', en: 'The picture is crooked, it should be straightened.', register: 'neutral' },
+    { es: 'La calle tiene una pendiente muy empinada.', en: 'The street has a very steep slope.', register: 'neutral' },
+    { es: 'Estaba echado en el sofá viendo la televisión.', en: 'He was lying on the sofa watching television.', register: 'coloquial' },
+    { es: 'El estante quedó desnivelado tras la mudanza.', en: 'The shelf ended up unlevel after the move.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'El poste está inclinado por el viento.', en: 'The post is tilted from the wind.', note: 'desviación de la vertical, sin implicar daño' },
+    { es: 'El poste está torcido tras el accidente.', en: 'The post is bent after the accident.', note: 'implica una deformación, a menudo por daño' }
+  ],
+  pitfalls: [
+    '"Inclinado" y "torcido" no son sinónimos exactos: "inclinado" describe una desviación de la vertical sin implicar daño; "torcido" a menudo sugiere una deformación o error.',
+    '"Empinado" se reserva casi siempre para pendientes y cuestas, no para cualquier objeto inclinado.',
+    '"Echado" describe a una persona tumbada, en postura de descanso — no se usa para objetos inanimados en esa misma posición.'
+  ],
+  examples: [
+    { es: 'El barco quedó atravesado en el canal.', en: 'The ship ended up blocking the canal.' },
+    { es: 'Hizo el ejercicio con las piernas flexionadas.', en: 'He did the exercise with his legs bent.' },
+    { es: 'La estantería está apoyada contra la pared.', en: 'The shelf is leaning against the wall.' }
+  ],
+  probes: [
+    { id: 'p:posicionabsolutaC1:inclinadotorcido', kind: 'mcq', q: '¿Qué diferencia hay entre "inclinado" y "torcido"?', options: ['Ninguna, son sinónimos exactos', '"torcido" suele implicar deformación o error; "inclinado" no necesariamente', '"inclinado" es más informal'], answer: 1 },
+    { id: 'p:posicionabsolutaC1:empinado', kind: 'mcq', q: '¿A qué se aplica típicamente "empinado"?', options: ['A pendientes y cuestas', 'A cualquier objeto pequeño', 'A personas'], answer: 0 },
+    { id: 'p:posicionabsolutaC1:cloze', kind: 'cloze', text: 'El terreno está muy ___, hay que nivelarlo antes de construir. (falta de nivel horizontal)', accept: ['desnivelado'] },
+    { id: 'p:posicionabsolutaC1:recall', kind: 'recall', front: '¿Qué describe "echado" que no describe "inclinado" ni "torcido"?', back: 'a una persona tumbada, en postura de descanso' }
+  ]
+},
+
+{
+  id: 'nt-posicion-relativa-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:504', 'nociones_generales:C1:505', 'nociones_generales:C1:506', 'nociones_generales:C1:507',
+         'nociones_generales:C1:508', 'nociones_generales:C1:509', 'nociones_generales:C1:510', 'nociones_generales:C1:511',
+         'nociones_generales:C1:512', 'nociones_generales:C1:513', 'nociones_generales:C1:514', 'nociones_generales:C1:515',
+         'nociones_generales:C1:516', 'nociones_generales:C1:517', 'nociones_generales:C1:518', 'nociones_generales:C1:519',
+         'nociones_generales:C1:520', 'nociones_generales:C1:521', 'nociones_generales:C1:522'],
+  title: 'Posición relativa en C1: "a la vuelta de la esquina" y "al alcance de la mano"',
+  summary: 'La posición de algo respecto a otra cosa se describe en C1 con un catálogo de locuciones muy visuales — "a la altura de", "al alcance de", "a la vuelta de la esquina" — que combinan precisión espacial con una imagen fácil de retener.',
+  sections: [
+    { h: 'Relaciones geométricas y de cercanía/lejanía', html: '<i>Perpendicular/paralelo (a)</i> describen la relación angular entre dos líneas. <i>Apartado (de)</i> y <i>pegado (a)</i> son los extremos de la cercanía. <i>Fijo (a), cosido (a)</i> refuerzan la idea de estar unido sin posibilidad de moverse. <i>Periférico</i> describe lo que está en el borde, no en el centro. <i>Rodear</i> es estar dispuesto alrededor de algo. <i>Retirar(se) (de), aislar(se) (de)</i> describen el alejamiento.' },
+    { h: 'Locuciones de esquina y frente', html: '<i>Hacer esquina con</i> describe un edificio en el punto donde se cruzan dos calles. <i>Frontalmente</i> y <i>de frente (a)/de espaldas (a)</i> describen la orientación respecto a algo, mirándolo o dándole la espalda. <i>Frente a frente</i> describe a dos elementos encarados.' },
+    { h: 'Locuciones de distancia y alcance', html: '<i>Aparte</i> describe algo separado del resto: <i>se sentó aparte</i>. <i>Más allá (de)</i> señala un punto detrás de un límite: <i>está más allá del parque</i>. <i>A la vuelta (de la esquina)</i> describe algo muy próximo. <i>A la altura (de)</i> señala un punto equivalente en una línea: <i>a la altura de la rotonda</i>. <i>Al alcance (de)</i> describe lo que se puede tocar o conseguir sin esfuerzo: <i>al alcance de la mano</i>.' },
+    { h: 'Locuciones de posición específica y preposiciones', html: '<i>Al dorso (de)</i> es en la cara opuesta de algo plano; <i>al margen (de)</i>, fuera del asunto principal. <i>A los pies (de)</i> señala la parte inferior: <i>a los pies de la cama</i>. Las preposiciones <i>ante, bajo, contra, tras</i> son de registro más formal o literario que sus equivalentes cotidianos: <i>ante el altar, bajo el árbol, tras la puerta, contra la pared</i>.' }
+  ],
+  exponents: [
+    { es: 'La solución está al alcance de la mano.', en: 'The solution is within reach.', register: 'neutral' },
+    { es: 'Esa tienda está a la vuelta de la esquina.', en: "That shop is just around the corner.", register: 'coloquial' },
+    { es: 'El edificio hace esquina con la avenida principal.', en: 'The building sits on the corner of the main avenue.', register: 'formal' },
+    { es: 'Se quedó al margen de la discusión.', en: 'He stayed out of the argument.', register: 'neutral' },
+    { es: 'Ante tal situación, decidió callar.', en: 'Faced with such a situation, he decided to stay silent.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Vive apartado de todo, en el campo.', en: 'He lives apart from everything, in the countryside.', note: 'apartado — lejanía' },
+    { es: 'El sofá está pegado a la pared.', en: 'The sofa is right up against the wall.', note: 'pegado — máxima cercanía' }
+  ],
+  pitfalls: [
+    '"A la vuelta de la esquina" es una expresión de cercanía coloquial — no implica literalmente que haya una esquina física en todos los contextos donde se usa (puede ser figurada: "el verano está a la vuelta de la esquina").',
+    '"Al margen de" no significa "cerca de" — significa "fuera de, sin participar en" algo.',
+    'Las preposiciones "ante, bajo, contra, tras" pertenecen a un registro más formal o literario que "delante de, debajo de, en contra de, detrás de" — no son intercambiables sin más en todos los contextos.'
+  ],
+  examples: [
+    { es: 'Su casa está a la altura del semáforo.', en: 'His house is right by the traffic light.' },
+    { es: 'Prefiere quedarse al margen de los cotilleos.', en: 'He prefers to stay out of the gossip.' },
+    { es: 'Los dos equipos se colocaron frente a frente.', en: 'The two teams lined up facing each other.' }
+  ],
+  probes: [
+    { id: 'p:posicionrelativaC1:alavuelta', kind: 'mcq', q: '"El verano está a la vuelta de la esquina." ¿Qué tipo de uso es este?', options: ['Literal, hay una esquina física', 'Figurado, expresa cercanía en el tiempo', 'Un error de expresión'], answer: 1 },
+    { id: 'p:posicionrelativaC1:almargen', kind: 'mcq', q: '"Se quedó al margen de la discusión." ¿Qué significa?', options: ['Estuvo muy cerca físicamente', 'No participó en ella', 'La ganó'], answer: 1 },
+    { id: 'p:posicionrelativaC1:cloze', kind: 'cloze', text: 'La solución está al ___ de la mano. (fácil de conseguir)', accept: ['alcance'] },
+    { id: 'p:posicionrelativaC1:recall', kind: 'recall', front: '¿Qué registro tienen las preposiciones "ante, bajo, contra, tras" frente a "delante de, debajo de, en contra de, detrás de"?', back: 'un registro más formal o literario' }
+  ]
 }
 
 ];
