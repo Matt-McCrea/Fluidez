@@ -24847,6 +24847,47 @@ window.STRAND_LESSONS = [
     { id: 'p:continuacionC1:cloze', kind: 'cloze', text: 'Hace días que nieva sin ___. (sin parar)', accept: ['cesar'] },
     { id: 'p:continuacionC1:recall', kind: 'recall', front: '¿Qué tipo de continuidad describe "ir + gerundio" (voy acostumbrándome)?', back: 'una continuidad gradual y progresiva, un proceso en curso, no un estado ya consolidado' }
   ]
+},
+
+{
+  id: 'nt-repeticion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:851', 'nociones_generales:C1:852', 'nociones_generales:C1:853', 'nociones_generales:C1:854',
+         'nociones_generales:C1:855', 'nociones_generales:C1:856', 'nociones_generales:C1:857', 'nociones_generales:C1:858', 'nociones_generales:C1:859'],
+  title: 'Repetición en C1: recurrente, turnarse y "erre que erre"',
+  summary: 'Repetir algo se dice de formas muy distintas en C1 según se trate de un patrón que reaparece sin control (recurrente), una alternancia organizada (turnarse) o una insistencia obstinada que roza lo cómico: "erre que erre".',
+  sections: [
+    { h: 'Sustantivos y adjetivos de repetición', html: '<i>Recreación</i> es reproducir algo ya existente. <i>Redundante</i> describe algo repetido innecesariamente; <i>recurrente</i>, algo que reaparece una y otra vez, especialmente en la mente: <i>un sueño recurrente</i>.' },
+    { h: 'Verbos de reproducir y de volver a caer', html: '<i>Reproducir</i> es repetir un patrón o comportamiento: <i>reproducir un comportamiento</i>. <i>Revivir</i> es experimentar de nuevo algo del pasado: <i>revivir el pasado</i>. <i>Recaer</i> es volver a caer en algo negativo tras haberlo superado: <i>recaer en un vicio</i>.' },
+    { h: 'Turnarse: repetición organizada por turnos', html: '<i>Turnar(se)</i> describe una repetición ordenada en la que distintas personas se alternan: <i>mi compañero y yo nos turnamos para atender al público</i>.' },
+    { h: 'Adverbios y locuciones de insistencia', html: '<i>Insistentemente, con insistencia</i> describen una repetición motivada por la determinación de conseguir algo: <i>pedir insistentemente</i>. <i>Alternativamente</i> describe una repetición que cambia entre dos opciones. <i>Erre que erre</i> es una locución coloquial y algo humorística para una insistencia obstinada, casi terca.' }
+  ],
+  exponents: [
+    { es: 'Tiene un sueño recurrente desde hace años.', en: "He's had a recurring dream for years.", register: 'neutral' },
+    { es: 'Nos turnamos para hacer las guardias nocturnas.', en: 'We take turns doing the night shifts.', register: 'neutral' },
+    { es: 'Le pidió disculpas insistentemente hasta que lo perdonó.', en: 'He insistently apologized to him until he forgave him.', register: 'neutral' },
+    { es: 'Sigue erre que erre con la misma idea.', en: "He keeps stubbornly insisting on the same idea.", register: 'coloquial' },
+    { es: 'Recayó en el mismo error de siempre.', en: 'He fell back into the same old mistake.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Una expresión redundante, que sobra en el texto.', en: 'A redundant expression, unnecessary in the text.', note: 'repetición innecesaria' },
+    { es: 'Un problema recurrente, que reaparece una y otra vez.', en: 'A recurring problem that keeps coming back.', note: 'reaparición repetida, no necesariamente innecesaria' }
+  ],
+  pitfalls: [
+    '"Redundante" implica que la repetición es innecesaria o sobra — "recurrente" no tiene esa connotación negativa, solo describe que algo reaparece.',
+    '"Recaer" se aplica específicamente a volver a caer en algo negativo (un vicio, un error, una enfermedad) — no es un simple sinónimo de "repetir" en general.',
+    '"Erre que erre" es exclusivamente coloquial, con un matiz de terquedad casi cómica — no conviene en un registro formal.'
+  ],
+  examples: [
+    { es: 'La reproducción de ese patrón de conducta es evidente.', en: 'The reproduction of that behavior pattern is evident.' },
+    { es: 'Revivieron viejos recuerdos durante la cena.', en: 'They relived old memories during dinner.' },
+    { es: 'Los turnos se alternan cada semana.', en: 'The shifts alternate every week.' }
+  ],
+  probes: [
+    { id: 'p:repeticionC1:redundanterecurrente', kind: 'mcq', q: '¿Qué diferencia hay entre "redundante" y "recurrente"?', options: ['Ninguna', 'Redundante implica que la repetición sobra; recurrente no tiene esa connotación negativa', 'Recurrente es siempre negativo'], answer: 1 },
+    { id: 'p:repeticionC1:recaer', kind: 'mcq', q: '¿A qué se aplica típicamente "recaer"?', options: ['A cualquier repetición', 'A volver a caer en algo negativo tras superarlo', 'A un turno de trabajo'], answer: 1 },
+    { id: 'p:repeticionC1:cloze', kind: 'cloze', text: 'Mi compañero y yo nos ___ para atender al público. (repetición organizada por turnos)', accept: ['turnamos'] },
+    { id: 'p:repeticionC1:recall', kind: 'recall', front: '¿Qué matiz tiene "erre que erre" que no tiene "insistentemente"?', back: 'un matiz coloquial y de terquedad casi cómica, no apropiado para un registro formal' }
+  ]
 }
 
 ];
