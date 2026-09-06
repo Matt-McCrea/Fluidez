@@ -24299,6 +24299,50 @@ window.STRAND_LESSONS = [
     { id: 'p:origenC1:cloze', kind: 'cloze', text: 'Aquel comentario fue la ___ de una larga enemistad. (origen mínimo que luego se desarrolla)', accept: ['semilla'] },
     { id: 'p:origenC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "ser originario de" y "tener su raíz en"?', back: '"ser originario de" señala un lugar de procedencia; "tener su raíz en" señala una causa profunda, no un lugar' }
   ]
+},
+
+{
+  id: 'nt-referencias-generales-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:657', 'nociones_generales:C1:658', 'nociones_generales:C1:659', 'nociones_generales:C1:660',
+         'nociones_generales:C1:661', 'nociones_generales:C1:662', 'nociones_generales:C1:663', 'nociones_generales:C1:664',
+         'nociones_generales:C1:665', 'nociones_generales:C1:666', 'nociones_generales:C1:667', 'nociones_generales:C1:668',
+         'nociones_generales:C1:669', 'nociones_generales:C1:670', 'nociones_generales:C1:671'],
+  title: 'Referencias temporales generales en C1: de "a primeros de mes" a "entre horas"',
+  summary: 'Situar algo en el tiempo con naturalidad exige locuciones muy idiomáticas — "a eso de las cinco" da una hora aproximada, "a primeros/a últimos de mes" sitúa dentro de un periodo, y "nunca en mi vida" intensifica una negación hasta el extremo.',
+  sections: [
+    { h: 'Dar la hora de forma indirecta o aproximada', html: '<i>Van a dar las cuatro/acaban de dar las cuatro</i> sitúan un momento justo antes o después de una hora en punto. <i>A eso de</i> da una hora aproximada: <i>a eso de las cinco de la tarde</i>. <i>Hora insular/peninsular/oficial/solar</i> distinguen los distintos sistemas horarios usados en España.' },
+    { h: 'Periodos largos y su vocabulario', html: '<i>Era, edad</i> designan periodos históricos largos: <i>la era de la información, la Edad de Piedra</i>. <i>Festividad, conmemoración</i> son celebraciones ligadas a una fecha.' },
+    { h: 'Precisión y medición del tiempo', html: '<i>Cronológico</i> describe un orden temporal. <i>Instantáneo</i> describe algo que ocurre sin demora perceptible. <i>Cronometrar</i> es medir el tiempo con precisión. <i>Poner fecha, fechar</i> son asignar una fecha a algo.' },
+    { h: 'Negación temporal extrema', html: '<i>Jamás</i> y <i>(nunca) en mi vida</i> intensifican una negación temporal hasta el extremo: <i>¡qué situación! Nunca en mi vida había pasado tanta vergüenza</i>.' },
+    { h: 'Locuciones de extensión y frecuencia', html: '<i>A lo largo del día/de la semana/del mes/del año</i> extiende una acción por todo un periodo: <i>recibiremos noticias a lo largo del día</i>. <i>A primeros/a últimos de mes/de año</i> sitúa algo al principio o al final de un periodo: <i>estamos a primeros de mes y ya no tengo un duro</i>. <i>En todo momento</i> enfatiza continuidad sin interrupción: <i>me sentí apoyado en todo momento</i>. <i>Entre horas</i> describe algo que ocurre fuera de los momentos habituales: <i>comer entre horas</i>.' }
+  ],
+  exponents: [
+    { es: 'Llegaremos a eso de las nueve de la noche.', en: "We'll arrive around nine at night.", register: 'neutral' },
+    { es: 'Estamos a últimos de mes, así que hay que ajustar los gastos.', en: "We're near the end of the month, so we need to cut back on spending.", register: 'neutral' },
+    { es: 'No pica entre horas para no perder el apetito.', en: "He doesn't snack between meals so as not to lose his appetite.", register: 'coloquial' },
+    { es: 'Nunca en mi vida había visto algo tan sorprendente.', en: "I had never in my life seen anything so surprising.", register: 'neutral' },
+    { es: 'El comité la apoyó en todo momento durante el proceso.', en: 'The committee supported her throughout the entire process.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'A primeros de mes, cuando cobro el sueldo.', en: 'At the start of the month, when I get paid.', note: 'principio del periodo' },
+    { es: 'A últimos de mes, cuando ya no queda nada.', en: "At the end of the month, when there's nothing left.", note: 'final del periodo' }
+  ],
+  pitfalls: [
+    '"Jamás" y "nunca en mi vida" son intensificadores de negación — no equivalen a un simple "no" neutro, sino a un rechazo absoluto o una sorpresa extrema.',
+    '"A eso de" siempre introduce una aproximación, no una hora exacta — combinarlo con una hora muy precisa ("a eso de las cinco y veintitrés") suena contradictorio.',
+    '"Entre horas" se refiere específicamente a fuera de las comidas principales, no a cualquier momento intermedio del día.'
+  ],
+  examples: [
+    { es: 'A primeros de año siempre nos proponemos hacer ejercicio.', en: 'At the start of the year we always resolve to exercise.' },
+    { es: 'Trabajaron sin descanso a lo largo de toda la semana.', en: 'They worked non-stop throughout the whole week.' },
+    { es: 'El reloj marcaba que iban a dar las doce.', en: 'The clock showed it was almost midnight.' }
+  ],
+  probes: [
+    { id: 'p:referenciasgeneralesC1:aesode', kind: 'mcq', q: '"A eso de las cinco" indica...', options: ['Una hora exacta', 'Una hora aproximada', 'Un periodo largo'], answer: 1 },
+    { id: 'p:referenciasgeneralesC1:entrehoras', kind: 'mcq', q: '"Comer entre horas" significa...', options: ['Comer en las comidas principales', 'Comer fuera de las comidas principales', 'No comer nunca'], answer: 1 },
+    { id: 'p:referenciasgeneralesC1:cloze', kind: 'cloze', text: 'Estamos a ___ de mes, todavía queda mucho sueldo. (principio del periodo)', accept: ['primeros'] },
+    { id: 'p:referenciasgeneralesC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a primeros de mes" y "a últimos de mes"?', back: '"a primeros" señala el principio del periodo; "a últimos", el final' }
+  ]
 }
 
 ];
