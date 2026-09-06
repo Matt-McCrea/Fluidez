@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (105/202 done)
+## C1 — lessons (107/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -619,7 +619,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 24 pts · `gramatica C1 § 15.2. Oraciones subordinadas adjet`  — gr-sub-adjetivas-relativo-c1
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica C1 § 15.3. Oraciones subordinadas adver`  — gr-sub-adv-temporales-c1, gr-sub-adv-lugar-modo-c1, gr-sub-adv-causales-c1, gr-sub-adv-finales-c1, gr-sub-adv-condicionales-c1, gr-sub-adv-consecutivas-c1, gr-sub-adv-comparativas-c1, gr-sub-adv-concesivas-c1
 
-### C1 · notion (39/57)
+### C1 · notion (41/57)
 - [x] **Existencia, inexistencia** · 17 pts · `nociones_generales C1 § 1.1. Existencia, inexistencia`  — nt-existencia-inexistencia-c1
 - [x] **Presencia, ausencia** · 17 pts · `nociones_generales C1 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-c1
 - [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales C1 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-c1
@@ -660,8 +660,8 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Edad, vejez** · 14 pts · `nociones_generales C1 § 5.13. Edad, vejez`  — nt-edad-vejez-c1
 - [x] **Accesibilidad** · 6 pts · `nociones_generales C1 § 5.14. Accesibilidad`  — nt-accesibilidad-limpieza-c1
 - [x] **Limpieza** · 6 pts · `nociones_generales C1 § 5.15. Limpieza`  — nt-accesibilidad-limpieza-c1
-- [ ] **Evaluación general** · 16 pts · `nociones_generales C1 § 6.1. Evaluación general`
-- [ ] **Valor, precio** · 15 pts · `nociones_generales C1 § 6.2. Valor, precio`
+- [x] **Evaluación general** · 16 pts · `nociones_generales C1 § 6.1. Evaluación general`  — nt-evaluacion-general-c1
+- [x] **Valor, precio** · 15 pts · `nociones_generales C1 § 6.2. Valor, precio`  — nt-valor-precio-c1
 - [ ] **Calidad** · 3 pts · `nociones_generales C1 § 6.4. Calidad`
 - [ ] **Aceptabilidad** · 10 pts · `nociones_generales C1 § 6.5. Aceptabilidad`
 - [ ] **Adecuación** · 9 pts · `nociones_generales C1 § 6.6. Adecuación`

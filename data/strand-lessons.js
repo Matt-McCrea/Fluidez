@@ -25606,6 +25606,93 @@ window.STRAND_LESSONS = [
     { id: 'p:accesibilidadlimpiezaC1:cloze', kind: 'cloze', text: 'La tubería estaba ___ por completo. (bloqueada)', accept: ['obstruida'] },
     { id: 'p:accesibilidadlimpiezaC1:recall', kind: 'recall', front: '¿A qué tipo de espacios se aplica "obstrucción/obstruido"?', back: 'a espacios físicos (tuberías, caminos, entradas) y, en otros contextos, a procesos bloqueados' }
   ]
+},
+
+{
+  id: 'nt-evaluacion-general-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1379', 'nociones_generales:C1:1380', 'nociones_generales:C1:1381', 'nociones_generales:C1:1382',
+         'nociones_generales:C1:1383', 'nociones_generales:C1:1384', 'nociones_generales:C1:1385', 'nociones_generales:C1:1386',
+         'nociones_generales:C1:1387', 'nociones_generales:C1:1388', 'nociones_generales:C1:1389', 'nociones_generales:C1:1390',
+         'nociones_generales:C1:1391', 'nociones_generales:C1:1392'],
+  title: 'Evaluación general en C1: de "pasable" a "catastrófico"',
+  summary: 'Valorar algo en C1 exige una escala fina de adjetivos que va de lo apenas aceptable ("pasable") a lo excelente ("insuperable"), y del fracaso leve ("lamentable") al desastre absoluto ("catastrófico") — sin olvidar los verbos que distinguen evaluar de simplemente elogiar o despreciar.',
+  sections: [
+    { h: 'Sustantivos de la evaluación', html: '<i>Valoración, apreciación, evaluación, juicio</i> son los sustantivos generales. <i>Calificación</i> es el resultado numérico o formal de una evaluación: <i>obtener una calificación alta</i>.' },
+    { h: 'Adjetivos: imparcialidad y grado', html: '<i>(Im)parcial, (des)favorable</i> describen la actitud de quien evalúa: <i>un juicio imparcial</i>. La escala positiva, de menor a mayor: <i>pasable, notable, sobresaliente</i> — y en el grado máximo, <i>satisfactorio, extraordinario, óptimo, insuperable, admirable, recomendable, brillante</i>. La escala negativa: <i>lamentable, desastroso, catastrófico, pésimo, penoso</i>.' },
+    { h: 'Verbos de evaluar, elogiar y rechazar', html: '<i>Evaluar, calificar</i> son los verbos neutros de valorar. <i>Elogiar, alabar</i> son evaluar positivamente en voz alta. <i>Despreciar, rechazar</i> son evaluar negativamente, con distintos matices: despreciar implica desdén hacia algo o alguien, rechazar es no aceptar algo concreto: <i>despreciar a una persona, rechazar una oferta</i>.' },
+    { h: 'Locuciones de evaluación formal', html: '<i>Emitir un juicio/un informe</i> y <i>poner una calificación</i> son las acciones formales de evaluar. <i>Resultar bien/mal/un desastre</i> describe el resultado final de algo evaluado a posteriori. <i>Someter a evaluación</i> es presentar algo para que sea valorado. <i>Evaluar debidamente/(des)favorablemente/(in)justamente/negativa o positivamente</i> son los adverbios que matizan cómo se realizó la evaluación.' }
+  ],
+  exponents: [
+    { es: 'El proyecto obtuvo una calificación sobresaliente.', en: 'The project received an outstanding grade.', register: 'formal' },
+    { es: 'El resultado fue simplemente catastrófico.', en: 'The result was simply catastrophic.', register: 'formal' },
+    { es: 'La crítica alabó su interpretación en la obra.', en: 'The critics praised his performance in the play.', register: 'formal' },
+    { es: 'Rechazaron la propuesta por falta de recursos.', en: 'They rejected the proposal due to lack of resources.', register: 'neutral' },
+    { es: 'El informe fue evaluado imparcialmente por un comité externo.', en: 'The report was evaluated impartially by an external committee.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un trabajo pasable, sin más.', en: 'A passable piece of work, nothing more.', note: 'apenas aceptable' },
+    { es: 'Un trabajo insuperable, digno de admiración.', en: 'An unbeatable piece of work, worthy of admiration.', note: 'grado máximo de excelencia' }
+  ],
+  pitfalls: [
+    '"Despreciar" y "rechazar" no son intercambiables: despreciar implica desdén hacia una persona o cosa; rechazar es simplemente no aceptar algo concreto, sin necesariamente desdén.',
+    '"Pasable" no es un elogio — describe algo apenas aceptable, en el escalón más bajo de la valoración positiva.',
+    '"Elogiar/alabar" implican expresar la evaluación positiva en voz alta o por escrito — no describen simplemente "pensar bien" de algo en silencio.'
+  ],
+  examples: [
+    { es: 'El jurado emitió un juicio unánime.', en: 'The jury issued a unanimous verdict.' },
+    { es: 'Su actuación fue calificada de brillante por la prensa.', en: 'His performance was hailed as brilliant by the press.' },
+    { es: 'El plan resultó un desastre desde el principio.', en: 'The plan was a disaster from the start.' }
+  ],
+  probes: [
+    { id: 'p:evaluaciongeneralC1:pasable', kind: 'mcq', q: '¿Qué tipo de valoración es "pasable"?', options: ['La más alta posible', 'Apenas aceptable, el escalón más bajo de lo positivo', 'Negativa'], answer: 1 },
+    { id: 'p:evaluaciongeneralC1:despreciarrechazar', kind: 'mcq', q: '¿Qué diferencia hay entre "despreciar" y "rechazar"?', options: ['Ninguna', 'Despreciar implica desdén; rechazar es simplemente no aceptar algo', 'Rechazar es más fuerte'], answer: 1 },
+    { id: 'p:evaluaciongeneralC1:cloze', kind: 'cloze', text: 'El resultado fue simplemente ___. (desastre extremo)', accept: ['catastrófico'] },
+    { id: 'p:evaluaciongeneralC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "elogiar/alabar" y simplemente valorar algo positivamente en silencio?', back: 'elogiar/alabar implican expresar esa evaluación positiva en voz alta o por escrito' }
+  ]
+},
+
+{
+  id: 'nt-valor-precio-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1411', 'nociones_generales:C1:1412', 'nociones_generales:C1:1413', 'nociones_generales:C1:1414',
+         'nociones_generales:C1:1415', 'nociones_generales:C1:1416', 'nociones_generales:C1:1417', 'nociones_generales:C1:1418',
+         'nociones_generales:C1:1419', 'nociones_generales:C1:1420', 'nociones_generales:C1:1421', 'nociones_generales:C1:1422',
+         'nociones_generales:C1:1423', 'nociones_generales:C1:1424', 'nociones_generales:C1:1425'],
+  title: 'Valor y precio en C1: de "estar tirado" a "precio de coste"',
+  summary: 'El vocabulario económico de C1 distingue con precisión el importe (la cifra) del valor (lo que algo realmente vale), y ofrece un catálogo completo de precios especiales — simbólico, módico, de coste, de fábrica — junto con locuciones muy vivas para lo barato ("estar tirado") y lo caro.',
+  sections: [
+    { h: 'Sustantivos de coste', html: '<i>Importe, coste, tarifa, tasa</i> son las distintas formas de nombrar una cifra a pagar, cada una en su contexto (tarifa para servicios, tasa para trámites administrativos). <i>Crédito</i> es la capacidad de obtener dinero prestado. <i>Ganga, oportunidad</i> describen algo comprado por mucho menos de su valor real.' },
+    { h: 'Calificar el valor', html: '<i>Valor aproximado/exacto/a la baja</i> gradúa la precisión de una estimación. <i>Valor extraordinario/incalculable/insignificante</i> gradúa la magnitud del valor.' },
+    { h: 'Calificar el precio', html: '<i>Precio (in)asequible/simbólico/económico/módico</i> gradúa cuán accesible es un precio, con "simbólico" para un precio casi nulo, más bien representativo. <i>Costoso</i> es el adjetivo general para algo caro.' },
+    { h: 'Verbos y locuciones de fijar o negociar un precio', html: '<i>Valorado en</i> es la fórmula para asignar una cifra: <i>el retrato fue valorado en 5.000</i>. <i>Regatear</i> es negociar informalmente un precio a la baja. <i>Perder/ganar valor</i> describe la evolución del valor de algo. <i>Costear/cubrir los gastos</i> es asumir económicamente un coste. <i>Negociar un precio, calcular el total</i> son las acciones formales correspondientes.' },
+    { h: 'Locuciones de precio especial', html: '<i>Estar tirado (de precio)</i> es una hipérbole coloquial para algo muy barato. <i>A precio de coste/de fábrica</i> describe vender algo sin margen de beneficio o directamente desde el productor.' }
+  ],
+  exponents: [
+    { es: 'Ese piso está tirado de precio para la zona en la que está.', en: "That apartment is dirt cheap for the area it's in.", register: 'coloquial' },
+    { es: 'Compraron los muebles a precio de fábrica.', en: 'They bought the furniture at factory price.', register: 'neutral' },
+    { es: 'El cuadro fue valorado en una cifra sorprendente.', en: 'The painting was appraised at a surprising figure.', register: 'formal' },
+    { es: 'Intentó regatear el precio del coche de segunda mano.', en: 'He tried to haggle over the price of the used car.', register: 'coloquial' },
+    { es: 'La entrada tiene un precio simbólico de un euro.', en: 'The ticket has a symbolic price of one euro.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un precio módico, al alcance de cualquiera.', en: 'A modest price, within anyone\'s reach.', note: 'precio bajo pero real' },
+    { es: 'Un precio simbólico, casi regalado.', en: 'A symbolic price, almost given away.', note: 'precio casi nulo, más representativo que real' }
+  ],
+  pitfalls: [
+    '"Precio simbólico" no es lo mismo que "precio módico" — el primero es casi nulo, más representativo que real; el segundo es bajo pero un precio de mercado genuino.',
+    '"Regatear" es una negociación informal, propia de mercados o compras entre particulares — no se usa para negociaciones formales de precio empresarial.',
+    '"Estar tirado (de precio)" es exclusivamente coloquial — en un registro formal conviene "tener un precio muy bajo" o "ser muy asequible".'
+  ],
+  examples: [
+    { es: 'El coste total del proyecto superó las previsiones.', en: 'The total cost of the project exceeded projections.' },
+    { es: 'La empresa cubrió los gastos del viaje.', en: 'The company covered the trip expenses.' },
+    { es: 'Encontró una verdadera ganga en el mercadillo.', en: 'He found a real bargain at the flea market.' }
+  ],
+  probes: [
+    { id: 'p:valorprecioC1:simbolicomodico', kind: 'mcq', q: '¿Qué diferencia hay entre "precio simbólico" y "precio módico"?', options: ['Ninguna', 'Simbólico es casi nulo/representativo; módico es bajo pero real', 'Módico es más caro'], answer: 1 },
+    { id: 'p:valorprecioC1:regatear', kind: 'mcq', q: '¿En qué contexto es habitual "regatear"?', options: ['Negociaciones empresariales formales', 'Mercados o compras entre particulares', 'Trámites administrativos'], answer: 1 },
+    { id: 'p:valorprecioC1:cloze', kind: 'cloze', text: 'Ese piso está ___ de precio para la zona. (muy barato, coloquial)', accept: ['tirado'] },
+    { id: 'p:valorprecioC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "importe/coste" y "valor"?', back: 'importe/coste es la cifra a pagar; valor es lo que algo realmente vale, que puede no coincidir con el precio' }
+  ]
 }
 
 ];
