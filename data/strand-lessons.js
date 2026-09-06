@@ -26592,6 +26592,87 @@ window.STRAND_LESSONS = [
     { id: 'p:pedirdaropinionC1:cloze', kind: 'cloze', text: 'Me da la ___ de que esto no va a funcionar. (impresión subjetiva, no certeza)', accept: ['sensación', 'impresión'] },
     { id: 'p:pedirdaropinionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre dar una opinión directa y usar "a mi entender/parecer/juicio"?', back: 'las fórmulas con "a mi..." pertenecen a un registro más elevado, propio de contextos formales o de entrevista' }
   ]
+},
+
+{
+  id: 'fn-valorar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:153', 'funciones:C1:154', 'funciones:C1:155'],
+  title: 'Valorar en C1: "de pésimo gusto" y "resulta vergonzoso"',
+  summary: 'Valorar algo con matices en C1 combina el juicio sobre el gusto ("de buen/mal/pésimo gusto") con estructuras que anteponen el juicio antes de nombrar el hecho concreto que lo motiva: "resulta vergonzoso que..."',
+  sections: [
+    { h: 'Valorar el gusto de algo', html: '<i>Es/me parece de buen/mal/pésimo gusto</i> valora la elegancia o adecuación social de algo: <i>me parece de pésimo gusto su comentario</i>.' },
+    { h: 'Anteponer el juicio al hecho', html: '<i>Es/me parece + adjetivo/SN + lo que...</i> antepone la valoración antes de nombrar el hecho: <i>lo que está pasando es un escándalo</i>, <i>me parecía insoportable lo que me estaba contando</i>.' },
+    { h: '"Resulta + adjetivo/SN": valoración con matiz de consecuencia', html: 'Esta estructura presenta la valoración casi como una conclusión inevitable, a menudo tras una reflexión: <i>resulta vergonzoso que hoy en día se cuestionen los derechos humanos más básicos</i>, <i>a la larga resulta caro comprar esta marca</i>.' }
+  ],
+  exponents: [
+    { es: 'Me parece de muy mal gusto reírse de eso.', en: "I find it very tasteless to laugh about that.", register: 'formal' },
+    { es: 'Resulta absurdo que nadie se haya dado cuenta antes.', en: "It's absurd that no one noticed before.", register: 'formal' },
+    { es: 'Lo que hizo fue una falta de respeto total.', en: 'What he did was a total lack of respect.', register: 'neutral' },
+    { es: 'A la larga, resulta más barato reparar que comprar otro nuevo.', en: "In the long run, it's cheaper to repair than to buy a new one.", register: 'neutral' },
+    { es: 'Me parece insoportable su forma de hablar a los demás.', en: 'I find his way of talking to others unbearable.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Es de mal gusto hacer esos comentarios.', en: "It's tasteless to make those comments.", note: 'valoración directa del gusto' },
+    { es: 'Resulta de mal gusto, visto con perspectiva.', en: "It comes across as tasteless, in hindsight.", note: 'valoración presentada como conclusión tras reflexionar' }
+  ],
+  pitfalls: [
+    '"Resulta + adjetivo" presenta la valoración casi como una conclusión que se deriva de la reflexión, no como un juicio inmediato — diferencia sutil pero real frente a "es + adjetivo".',
+    '"De buen/mal/pésimo gusto" valora específicamente la elegancia o adecuación social, no la calidad técnica de algo.',
+    '"Lo que... es..." antepone el juicio de valor al hecho concreto, invirtiendo el orden habitual sujeto-predicado para dar énfasis a la valoración.'
+  ],
+  examples: [
+    { es: 'Resulta triste ver cómo se abandona el pueblo poco a poco.', en: "It's sad to see how the village is slowly being abandoned." },
+    { es: 'Lo que dijiste fue de muy mal gusto.', en: 'What you said was in very poor taste.' },
+    { es: 'A largo plazo resulta rentable invertir en formación.', en: 'In the long term, investing in training pays off.' }
+  ],
+  probes: [
+    { id: 'p:valorarC1:resulta', kind: 'mcq', q: '"Resulta vergonzoso que..." ¿Qué matiz añade "resulta" frente a "es"?', options: ['Ninguno, son idénticos', 'Presenta la valoración como una conclusión tras reflexionar', 'Suaviza la crítica'], answer: 1 },
+    { id: 'p:valorarC1:malgusto', kind: 'mcq', q: '"De mal gusto" valora específicamente...', options: ['La calidad técnica', 'La elegancia o adecuación social', 'El precio'], answer: 1 },
+    { id: 'p:valorarC1:cloze', kind: 'cloze', text: 'Lo que está pasando es un ___. (hecho escandaloso)', accept: ['escándalo'] },
+    { id: 'p:valorarC1:recall', kind: 'recall', front: '¿Qué hace la estructura "lo que... es..." en una valoración?', back: 'antepone el juicio de valor al hecho concreto que lo motiva, dando énfasis a la valoración' }
+  ]
+},
+
+{
+  id: 'fn-aprobacion-desaprobacion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:159', 'funciones:C1:160', 'funciones:C1:161', 'funciones:C1:162', 'funciones:C1:163',
+         'funciones:C1:164', 'funciones:C1:165', 'funciones:C1:166', 'funciones:C1:167'],
+  title: 'Expresar aprobación y desaprobación en C1: de "apruebo" a "¡así se hace!"',
+  summary: 'Aprobar o desaprobar en C1 va desde el registro institucional ("doy mi aprobación", "condeno") hasta el aplauso coloquial e inmediato ("¡así se hace!"), pasando por "haces bien/mal" para valorar directamente una acción del interlocutor.',
+  sections: [
+    { h: 'Valorar la acción del interlocutor', html: '<i>Haces bien/mal...</i> + gerundio valora directamente una acción de la persona con la que se habla: <i>haces bien callándote</i>, <i>hace mal negándose a admitirlo</i>.' },
+    { h: 'Aprobar de forma explícita', html: '<i>Apruebo...</i> es la forma directa de dar aprobación: <i>apruebo tu decisión</i>. <i>No tengo nada que objetar</i> es una aprobación por ausencia de objeciones, más pasiva. <i>Cuentas con/tienes/doy mi aprobación/consentimiento</i> son fórmulas algo más formales: <i>al final no di mi aprobación para que incluyeran mis datos</i>.' },
+    { h: 'Negar la aprobación', html: '<i>No tienes/esperes/cuentas con/cuentes con mi aprobación</i> niega explícitamente ese apoyo, casi como advertencia.' },
+    { h: 'Desaprobar con firmeza institucional', html: '<i>Me opongo a</i> y <i>condeno</i> son formas de desaprobación firme, con "condenar" propio de un registro institucional o político: <i>esta organización condena rotundamente cualquier tipo de atentado contra los derechos humanos</i>. <i>Me parece lamentable</i> añade un matiz de pesar a la desaprobación: <i>nos parece lamentable que se haya decidido no aumentar el presupuesto</i>.' },
+    { h: 'Exclamaciones de aprobación inmediata', html: '<i>¡Así se hace!</i> y <i>¡así me gusta!</i> son exclamaciones de aprobación entusiasta e inmediata ante una acción que se acaba de presenciar.' }
+  ],
+  exponents: [
+    { es: '¡Así se hace! Me alegro de que por fin lo hayas conseguido.', en: "That's the way! I'm glad you finally got it.", register: 'coloquial' },
+    { es: 'La organización condena rotundamente estos actos.', en: 'The organization strongly condemns these acts.', register: 'formal' },
+    { es: 'No tengo nada que objetar a la propuesta.', en: "I have nothing to object to in the proposal.", register: 'formal' },
+    { es: 'Haces bien en no responder a sus provocaciones.', en: "You're right not to respond to his provocations.", register: 'neutral' },
+    { es: 'No cuentes con mi aprobación para ese plan.', en: "Don't count on my approval for that plan.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Me opongo a esa medida.', en: 'I oppose that measure.', note: 'desaprobación directa y personal' },
+    { es: 'Esta institución condena esa medida.', en: 'This institution condemns that measure.', note: 'desaprobación institucional, registro formal' }
+  ],
+  pitfalls: [
+    '"Condenar" pertenece a un registro institucional o político — usarlo para desaprobar algo cotidiano (un plato de comida, un chiste) sonaría desproporcionado.',
+    '"No tengo nada que objetar" es una forma de aprobación pasiva, por ausencia de objeción — no expresa un apoyo entusiasta como "apruebo" o "¡así se hace!".',
+    '"Haces bien/mal" + gerundio valora una acción concreta del interlocutor, no una idea abstracta o una tercera persona sin especificar.'
+  ],
+  examples: [
+    { es: 'Apruebo totalmente tu manera de gestionar el conflicto.', en: 'I fully approve of the way you handled the conflict.' },
+    { es: 'Nos parece lamentable que no se haya hecho nada al respecto.', en: "We find it regrettable that nothing has been done about it." },
+    { es: '¡Así me gusta, con esa actitud llegarás lejos!', en: "That's what I like to see, with that attitude you'll go far!" }
+  ],
+  probes: [
+    { id: 'p:aprobaciondesaprobacionC1:condenar', kind: 'mcq', q: '¿En qué registro es habitual "condenar" una acción?', options: ['Coloquial y cotidiano', 'Institucional o político', 'Vulgar'], answer: 1 },
+    { id: 'p:aprobaciondesaprobacionC1:notengoobjetar', kind: 'mcq', q: '"No tengo nada que objetar" expresa...', options: ['Aprobación entusiasta', 'Aprobación pasiva, por ausencia de objeción', 'Desaprobación'], answer: 1 },
+    { id: 'p:aprobaciondesaprobacionC1:cloze', kind: 'cloze', text: '¡Así se ___! Sabía que lo conseguirías. (exclamación de aprobación)', accept: ['hace'] },
+    { id: 'p:aprobaciondesaprobacionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "me opongo a" y "condeno"?', back: 'me opongo a es una desaprobación personal; condenar pertenece a un registro institucional o político, más firme y formal' }
+  ]
 }
 
 ];
