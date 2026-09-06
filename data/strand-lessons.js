@@ -26757,6 +26757,45 @@ window.STRAND_LESSONS = [
     { id: 'p:expresardesacuerdoC1:cloze', kind: 'cloze', text: '¡___ nada! No pienso aceptar esas condiciones. (rechazo rotundo)', accept: ['De eso'] },
     { id: 'p:expresardesacuerdoC1:recall', kind: 'recall', front: '¿Qué construcción usa "no coincido en" para remitirse a algo que el otro ya dijo?', back: '"no coincido en lo que..." (p. ej. "no coincido en lo que dijo Jaime")' }
   ]
+},
+
+{
+  id: 'fn-escepticismo-contraargumento-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:260', 'funciones:C1:261', 'funciones:C1:262', 'funciones:C1:268', 'funciones:C1:269', 'funciones:C1:270', 'funciones:C1:271'],
+  title: 'Escepticismo y contraargumento en C1: "no te falta razón, pero..."',
+  summary: 'Mostrar escepticismo en C1 es dudar sin negar del todo ("tengo mis dudas"), y presentar un contraargumento exige primero conceder algo de razón al otro ("no te falta razón") antes de introducir el "pero" que realmente importa.',
+  sections: [
+    { h: 'Mostrar escepticismo', html: '<i>(Yo) tengo mis dudas (al respecto)</i> expresa duda sin rechazar del todo. <i>No sé qué decirte</i> muestra escepticismo mediante la propia indecisión: <i>pues no sé qué decirte, mi impresión no ha sido tan buena</i>. <i>No me convence del todo</i> añade un matiz parcial: no rechaza, pero tampoco acepta plenamente.' },
+    { h: 'Conceder antes de contraargumentar', html: 'La estructura típica del contraargumento en C1 concede un punto antes de introducir la objeción real. <i>No te falta razón, pero/sin embargo/ahora bien/por el contrario</i> concede parcialmente: <i>no te falta razón, sin embargo es mejor hacerlo paso a paso</i>. <i>Yo no digo que (no)..., pero/sin embargo/ahora bien...</i> hace lo mismo negando primero una idea extrema: <i>yo no digo que no sea un gran científico, sin embargo hasta ahora no lo ha demostrado</i>. <i>En eso me has convencido, pero/sin embargo/ahora bien...</i> concede un punto concreto antes de introducir otro en contra: <i>en eso me has convencido, sin embargo cuenta con muy pocas sucursales</i>.' },
+    { h: 'Contraargumentar con una excepción', html: '<i>No hay duda de que..., a no ser que...</i> afirma algo con fuerza pero deja abierta una excepción que lo invalidaría: <i>no hay duda de que él es el culpable, a no ser que alguien nos haya mentido</i>.' }
+  ],
+  exponents: [
+    { es: 'Tengo mis dudas sobre si esto va a funcionar de verdad.', en: "I have my doubts about whether this will really work.", register: 'neutral' },
+    { es: 'No te falta razón, ahora bien, hay que valorar el coste.', en: "You're not entirely wrong, but we do need to consider the cost.", register: 'neutral' },
+    { es: 'No me convence del todo esa explicación.', en: "That explanation doesn't fully convince me.", register: 'neutral' },
+    { es: 'No hay duda de que fue un éxito, a no ser que los datos estén manipulados.', en: 'There\'s no doubt it was a success, unless the data has been tampered with.', register: 'formal' },
+    { es: 'Yo no digo que esté mal el plan, sin embargo, faltan detalles importantes.', en: "I'm not saying the plan is bad, however, important details are missing.", register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Tengo mis dudas al respecto.', en: 'I have my doubts about it.', note: 'escepticismo, sin negar ni afirmar' },
+    { es: 'No te falta razón, pero hay que matizarlo.', en: "You have a point, but it needs to be qualified.", note: 'concesión seguida de contraargumento' }
+  ],
+  pitfalls: [
+    '"No te falta razón" concede solo una parte de razón antes de introducir la verdadera objeción con "pero/sin embargo" — no es un acuerdo pleno.',
+    '"Yo no digo que (no)..., pero..." niega primero una interpretación extrema de lo dicho antes de matizar — el "pero" que sigue es la parte realmente importante del mensaje.',
+    '"No hay duda de que..., a no ser que..." combina una afirmación fuerte con una excepción hipotética — la excepción no debilita la afirmación, solo la condiciona.'
+  ],
+  examples: [
+    { es: 'No sé qué decirte, a mí no me pareció tan buena la película.', en: "I don't know, I didn't think the movie was that good." },
+    { es: 'En eso me has convencido, aunque quedan otros puntos por resolver.', en: "You've convinced me on that point, though other issues remain unresolved." },
+    { es: 'No hay duda de que el plan es sólido, a no ser que cambien las condiciones del mercado.', en: 'There\'s no doubt the plan is solid, unless market conditions change.' }
+  ],
+  probes: [
+    { id: 'p:escepticismocontraargumentoC1:notefaltarazon', kind: 'mcq', q: '"No te falta razón, pero..." ¿Qué tipo de acuerdo es?', options: ['Acuerdo pleno', 'Concesión parcial antes del verdadero contraargumento', 'Desacuerdo total'], answer: 1 },
+    { id: 'p:escepticismocontraargumentoC1:anoserque', kind: 'mcq', q: '"No hay duda de que..., a no ser que..." ¿Qué hace la excepción?', options: ['Anula la afirmación', 'Condiciona la afirmación sin anularla', 'No tiene ninguna función'], answer: 1 },
+    { id: 'p:escepticismocontraargumentoC1:cloze', kind: 'cloze', text: 'Tengo mis ___ al respecto, la verdad. (escepticismo)', accept: ['dudas'] },
+    { id: 'p:escepticismocontraargumentoC1:recall', kind: 'recall', front: '¿Qué hace "yo no digo que (no)..." antes del "pero"?', back: 'niega primero una interpretación extrema de lo dicho, preparando el terreno para la matización real' }
+  ]
 }
 
 ];
