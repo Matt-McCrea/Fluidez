@@ -24931,6 +24931,50 @@ window.STRAND_LESSONS = [
     { id: 'p:duraciontranscursoC1:cloze', kind: 'cloze', text: 'Fue una alegría ___, que desapareció enseguida. (muy breve)', accept: ['fugaz'] },
     { id: 'p:duraciontranscursoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "perpetuo" y "eterno"?', back: 'perpetuo se usa en contextos más técnicos o legales; eterno es de uso más general y emocional' }
   ]
+},
+
+{
+  id: 'nt-frecuencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:875', 'nociones_generales:C1:876', 'nociones_generales:C1:877', 'nociones_generales:C1:878',
+         'nociones_generales:C1:879', 'nociones_generales:C1:880', 'nociones_generales:C1:881', 'nociones_generales:C1:882',
+         'nociones_generales:C1:883', 'nociones_generales:C1:884', 'nociones_generales:C1:885', 'nociones_generales:C1:886'],
+  title: 'Frecuencia en C1: de "rara vez" a "el pan de cada día"',
+  summary: 'La frecuencia en C1 combina adjetivos institucionales de periodicidad (trimestral, semestral) con locuciones muy vivas para lo habitual ("ser el pan de cada día") y lo casi nunca ("rara vez", "jamás") — sin olvidar que "por lo general" describe una tendencia, no una regla sin excepciones.',
+  sections: [
+    { h: 'Adjetivos de frecuencia habitual u ocasional', html: '<i>Corriente</i> describe algo habitual, frecuente: <i>se trata de un fenómeno poco corriente</i>. <i>Ocasional</i> describe algo que ocurre de vez en cuando, sin regularidad fija: <i>una visita ocasional</i>.' },
+    { h: 'Periodicidad institucional', html: '<i>Bimensual, trimestral, cuatrimestral, semestral</i> especifican periodos exactos, típicos de contextos académicos, laborales o administrativos: <i>un examen trimestral</i>. <i>Escasa/elevada frecuencia</i> es la fórmula técnica para graduar cuán a menudo ocurre algo.' },
+    { h: 'Frecuentar: hacer algo habitual', html: '<i>Frecuentar</i> es visitar o hacer algo con regularidad: <i>frecuentar un local</i>.' },
+    { h: '"Ser el pan de cada día": lo constantemente habitual', html: 'Esta locución describe algo tan frecuente que se ha vuelto parte inevitable de la rutina, casi siempre con matiz negativo o resignado.' },
+    { h: 'Baja frecuencia: de "ocasionalmente" a "jamás"', html: '<i>Ocasionalmente, raramente</i> son los adverbios de baja frecuencia: <i>este tratamiento raramente produce efectos secundarios</i>. <i>Rara/alguna vez</i> refuerzan esa misma idea: <i>rara vez vamos a la ópera</i>. <i>Jamás</i> es la negación absoluta de frecuencia.' },
+    { h: 'Alta frecuencia y tendencia general', html: '<i>Siempre que, cada vez que, todas las veces que</i> introducen una frecuencia condicionada a que se cumpla algo: <i>siempre que quieras, cada vez que vengas</i>. <i>A cada rato/instante</i> (y en Hispanoamérica, <i>a cada nada</i>) describe una frecuencia muy alta, casi continua. <i>Por lo general</i> describe una tendencia mayoritaria, no una regla sin excepciones: <i>por lo general me acuesto muy tarde, pasadas las doce</i>.' }
+  ],
+  exponents: [
+    { es: 'Es un problema poco corriente en esta zona.', en: "It's an uncommon problem in this area.", register: 'formal' },
+    { es: 'Las quejas por ese motivo son el pan de cada día.', en: "Complaints for that reason are an everyday occurrence.", register: 'coloquial' },
+    { es: 'Raramente llega tarde a las reuniones.', en: "He's rarely late to meetings.", register: 'neutral' },
+    { es: 'Por lo general, prefiere trabajar sola.', en: 'Generally, she prefers to work alone.', register: 'neutral' },
+    { es: 'Puedes llamarme siempre que lo necesites.', en: 'You can call me whenever you need to.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Rara vez llega tarde.', en: "He's rarely late.", note: 'frecuencia muy baja' },
+    { es: 'Llega tarde a cada rato.', en: "He's late all the time.", note: 'frecuencia muy alta, casi continua' }
+  ],
+  pitfalls: [
+    '"Por lo general" describe una tendencia mayoritaria, no una regla absoluta — admite excepciones, a diferencia de "siempre".',
+    '"Ser el pan de cada día" no es un simple sinónimo neutro de "ser frecuente" — casi siempre lleva un matiz negativo o de resignación ante algo indeseable pero habitual.',
+    'Los adjetivos de periodicidad institucional (bimensual, trimestral, cuatrimestral, semestral) especifican un periodo exacto — no son intercambiables entre sí ni con "frecuente" en general.'
+  ],
+  examples: [
+    { es: 'Publican un informe trimestral sobre la economía.', en: 'They publish a quarterly report on the economy.' },
+    { es: 'Frecuenta esa cafetería casi todas las mañanas.', en: 'He frequents that café almost every morning.' },
+    { es: 'Jamás había visto algo semejante.', en: 'He had never seen anything like it.' }
+  ],
+  probes: [
+    { id: 'p:frecuenciaC1:panedcadadia', kind: 'mcq', q: '"Ser el pan de cada día" describe algo...', options: ['Muy raro', 'Constantemente habitual, con matiz negativo', 'Que ocurre una sola vez'], answer: 1 },
+    { id: 'p:frecuenciaC1:porloglal', kind: 'mcq', q: '"Por lo general" implica...', options: ['Una regla sin excepciones', 'Una tendencia mayoritaria que admite excepciones', 'Que nunca ocurre'], answer: 1 },
+    { id: 'p:frecuenciaC1:cloze', kind: 'cloze', text: '___ vamos a la ópera, solo un par de veces al año. (frecuencia muy baja)', accept: ['Rara'] },
+    { id: 'p:frecuenciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a cada rato" y "rara vez"?', back: '"a cada rato" describe frecuencia muy alta, casi continua; "rara vez" describe frecuencia muy baja' }
+  ]
 }
 
 ];
