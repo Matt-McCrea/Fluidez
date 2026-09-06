@@ -22878,6 +22878,38 @@ window.STRAND_LESSONS = [
     { id: 'p:subadvlugarmodoC1:cloze', kind: 'cloze', text: 'Hace ___ no supiera nada, pero se nota que sí sabe. ("como si" + subjuntivo)', accept: ['como si'] },
     { id: 'p:subadvlugarmodoC1:recall', kind: 'recall', front: '¿Qué matiz añade "como si" además de la comparación?', back: 'un matiz condicional-hipotético: el modo se expresa mediante semejanza con una acción hipotética' }
   ]
+},
+
+{
+  id: 'gr-sub-adv-causales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:749', 'gramatica:C1:750', 'gramatica:C1:752', 'gramatica:C1:753', 'gramatica:C1:754'],
+  title: 'Subordinadas causales en C1: énfasis con "porque" antepuesto, y tres conectores con matiz propio',
+  summary: 'Anteponer "porque" no es solo una cuestión de orden — añade un matiz enfático que "porque" pospuesto no tiene. Y tres conectores causales muy parecidos entre sí ("a causa de que", "gracias a que", "por culpa de que") se reparten el territorio según si la circunstancia es neutra, positiva o negativa.',
+  sections: [
+    { h: '"Porque" antepuesto: énfasis, no solo orden', html: 'Colocar la causal con "porque" antes de la oración principal añade un matiz enfático que no tiene en su posición habitual, pospuesta: <i>porque es guapo tiene ese trabajo</i> resalta la causa con más fuerza que "tiene ese trabajo porque es guapo". El énfasis se refuerza con palabras como "solo": <i>te perdono solo porque eres sincero</i> — "solo" restringe la causa a esa y ninguna otra.' },
+    { h: 'Tres conectores, tres matices de circunstancia', html: 'Los tres admiten posición antepuesta o pospuesta sin cambio de significado, pero difieren en el matiz de la circunstancia que introducen. <i>A causa de que</i> es neutro: <i>a causa de que él se ha negado, tengo que hacerlo yo</i> / <i>tengo que hacerlo yo, a causa de que él se ha negado</i>. <i>Gracias a que</i> marca una circunstancia positiva: <i>gracias a que conduce muy bien, el coche no volcó</i>. <i>Por culpa de que</i> marca una circunstancia negativa: <i>por culpa de que no deja el tabaco tose sin parar</i>.' }
+  ],
+  contrasts: [
+    { es: 'Porque llueve, no salimos. / No salimos porque llueve.', en: "It's because it's raining that we're not going out. / We're not going out because it's raining.", note: 'la posición antepuesta añade énfasis a la causa' },
+    { es: 'Gracias a que llegaste a tiempo, no perdimos el tren.', en: "Thanks to you arriving on time, we didn't miss the train.", note: 'circunstancia positiva' },
+    { es: 'Por culpa de que se retrasó, perdimos la reserva.', en: 'Because he was late, we lost the reservation.', note: 'circunstancia negativa' }
+  ],
+  pitfalls: [
+    'Anteponer "porque" no es un simple cambio de orden estilístico — añade un matiz enfático sobre la causa que la posición pospuesta no tiene.',
+    '"A causa de que", "gracias a que" y "por culpa de que" no son intercambiables libremente: el segundo implica una valoración positiva de la circunstancia, el tercero una negativa, y solo el primero es neutro.',
+    'Los tres conectores aceptan posición antepuesta o pospuesta sin que eso cambie su matiz de circunstancia (positiva/negativa/neutra) — el matiz depende del conector elegido, no del orden.'
+  ],
+  examples: [
+    { es: 'Porque no avisaste, nadie te esperaba.', en: 'Because you didn\'t warn anyone, no one was expecting you.' },
+    { es: 'Gracias a que revisamos el motor a tiempo, no se averió en el viaje.', en: 'Thanks to checking the engine in time, it didn\'t break down on the trip.' },
+    { es: 'Por culpa de que no leyó las instrucciones, rompió la máquina.', en: 'Because he didn\'t read the instructions, he broke the machine.' }
+  ],
+  probes: [
+    { id: 'p:subadvcausalesC1:enfasis', kind: 'mcq', q: '"Porque es guapo tiene ese trabajo." ¿Qué aporta anteponer "porque"?', options: ['Nada, es idéntico a la posición pospuesta', 'Un matiz enfático sobre la causa', 'Cambia el tiempo verbal'], answer: 1 },
+    { id: 'p:subadvcausalesC1:conector', kind: 'mcq', q: '¿Qué conector marca una circunstancia negativa?', options: ['A causa de que', 'Gracias a que', 'Por culpa de que'], answer: 2 },
+    { id: 'p:subadvcausalesC1:cloze', kind: 'cloze', text: 'Te perdono ___ porque eres sincero, no por otra razón. (énfasis restrictivo)', accept: ['solo', 'sólo'] },
+    { id: 'p:subadvcausalesC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a causa de que", "gracias a que" y "por culpa de que"?', back: 'el primero es neutro, el segundo marca circunstancia positiva, el tercero circunstancia negativa' }
+  ]
 }
 
 ];
