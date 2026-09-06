@@ -25902,6 +25902,92 @@ window.STRAND_LESSONS = [
     { id: 'p:correccionC1:cloze', kind: 'cloze', text: 'Ha jugado a la ___, sin ningún fallo. (sin ningún error)', accept: ['perfección'] },
     { id: 'p:correccionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "provocar un error" y "confesar un error"?', back: 'provocar es causarlo; confesar es admitirlo después' }
   ]
+},
+
+{
+  id: 'nt-precision-claridad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1550', 'nociones_generales:C1:1551', 'nociones_generales:C1:1552', 'nociones_generales:C1:1553',
+         'nociones_generales:C1:1554', 'nociones_generales:C1:1555', 'nociones_generales:C1:1556', 'nociones_generales:C1:1557',
+         'nociones_generales:C1:1558', 'nociones_generales:C1:1559', 'nociones_generales:C1:1560', 'nociones_generales:C1:1561',
+         'nociones_generales:C1:1562', 'nociones_generales:C1:1563', 'nociones_generales:C1:1564'],
+  title: 'Precisión y claridad en C1: de "matemático" a "un lío"',
+  summary: 'Este vocabulario cubre toda la escala entre la claridad absoluta ("matemático", "nítido") y el caos total ("caótico", "un lío") — con adjetivos que distinguen matices finos: "ambiguo" no es lo mismo que "confuso", y "contradictorio" señala un problema distinto de ambos.',
+  sections: [
+    { h: 'Sustantivos de claridad y de confusión', html: '<i>Claridad, sencillez, transparencia</i> son las cualidades positivas. <i>Exactitud, precisión</i> añaden el matiz técnico de ajuste exacto. En el extremo opuesto, <i>confusión, lío, ambigüedad</i> — con "lío" siendo el más coloquial.' },
+    { h: 'Adjetivos de lo claro y lo evidente', html: '<i>Comprensible, obvio</i> describen algo fácil de entender. <i>Innegable, indudable, probado</i> describen algo cuya verdad no admite duda. <i>Nítido, preciso, matemático</i> gradúan la claridad hasta el extremo técnico ("matemático" para una precisión casi absoluta). <i>Clasificado</i> describe algo ordenado según un sistema.' },
+    { h: 'Adjetivos de confusión y contradicción', html: '<i>Liado, revuelto, caótico</i> describen desorden creciente. <i>Confuso, incomprensible</i> describen falta de claridad. <i>Contradictorio</i> señala un problema distinto: no es que algo no se entienda, sino que dos partes se oponen entre sí. <i>Incierto, ambiguo, (in)determinado</i> describen falta de definición clara, no necesariamente desorden.' },
+    { h: 'Verbos de aclarar y de enredar', html: '<i>Aclarar</i> es hacer algo más claro. <i>Liar(se)</i> es enredar algo o enredarse uno mismo en una explicación. <i>Complicarse</i> es volverse más difícil de lo esperado. <i>Tener doble sentido</i> describe una expresión con dos interpretaciones posibles, a menudo de forma deliberada.' }
+  ],
+  exponents: [
+    { es: 'Su explicación fue de una claridad absoluta.', en: 'His explanation was perfectly clear.', register: 'formal' },
+    { es: 'Me lié con tantas fechas y acabé confundiendo todo.', en: 'I got mixed up with so many dates and ended up confusing everything.', register: 'coloquial' },
+    { es: 'El contrato tiene una cláusula ambigua que conviene revisar.', en: "The contract has an ambiguous clause that should be reviewed.", register: 'formal' },
+    { es: 'Sus declaraciones resultaron completamente contradictorias.', en: 'His statements turned out to be completely contradictory.', register: 'formal' },
+    { es: 'Esa frase tiene doble sentido, y no es casualidad.', en: "That sentence has a double meaning, and it's no accident.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Una respuesta ambigua, que admite dos lecturas.', en: 'An ambiguous answer, open to two readings.', note: 'falta de definición clara' },
+    { es: 'Una respuesta contradictoria, que se opone a otra anterior.', en: 'A contradictory answer, at odds with an earlier one.', note: 'oposición entre dos afirmaciones' }
+  ],
+  pitfalls: [
+    '"Ambiguo" y "contradictorio" no son lo mismo: ambiguo admite varias interpretaciones sin oponerse a nada; contradictorio se opone directamente a otra afirmación.',
+    '"Liarse" describe tanto enredar algo externo como enredarse uno mismo explicando o entendiendo algo — el contexto aclara cuál de los dos sentidos aplica.',
+    '"Tener doble sentido" no siempre es un defecto — a menudo es un recurso deliberado, especialmente en humor o ironía.'
+  ],
+  examples: [
+    { es: 'La habitación estaba completamente revuelta tras la mudanza.', en: 'The room was completely upside down after the move.' },
+    { es: 'El profesor aclaró la duda con un ejemplo sencillo.', en: 'The teacher cleared up the doubt with a simple example.' },
+    { es: 'El caso se complicó más de lo previsto.', en: 'The case became more complicated than expected.' }
+  ],
+  probes: [
+    { id: 'p:precisionclaridadC1:ambiguocontradictorio', kind: 'mcq', q: '¿Qué diferencia hay entre "ambiguo" y "contradictorio"?', options: ['Ninguna', 'Ambiguo admite varias interpretaciones; contradictorio se opone a otra afirmación', 'Contradictorio es más claro'], answer: 1 },
+    { id: 'p:precisionclaridadC1:dobresentido', kind: 'mcq', q: '¿"Tener doble sentido" es siempre un defecto?', options: ['Sí, siempre', 'No, a menudo es un recurso deliberado (humor, ironía)', 'Solo en textos legales'], answer: 1 },
+    { id: 'p:precisionclaridadC1:cloze', kind: 'cloze', text: 'Me ___ con tantas fechas distintas. (enredarse explicando o entendiendo algo)', accept: ['lié'] },
+    { id: 'p:precisionclaridadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "incierto/ambiguo" y "caótico/revuelto"?', back: 'incierto/ambiguo describen falta de definición clara; caótico/revuelto describen desorden físico o estructural' }
+  ]
+},
+
+{
+  id: 'nt-interes-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1578', 'nociones_generales:C1:1579', 'nociones_generales:C1:1580', 'nociones_generales:C1:1581',
+         'nociones_generales:C1:1582', 'nociones_generales:C1:1583', 'nociones_generales:C1:1584', 'nociones_generales:C1:1585',
+         'nociones_generales:C1:1586', 'nociones_generales:C1:1587'],
+  title: 'Interés en C1: de "apasionante" a "morirse de aburrimiento"',
+  summary: 'El interés se gradúa en C1 desde la fascinación absoluta hasta el tedio insoportable, con adjetivos muy específicos según el tipo de atractivo (seductor, asombroso, ameno) o de tedio (monótono, pesado, insoportable).',
+  sections: [
+    { h: 'Sustantivos del interés y su ausencia', html: '<i>Atracción, fascinación</i> frente a <i>indiferencia</i>: <i>carecer de atracción, mostrar fascinación ante algo, tratar a alguien con indiferencia</i>. <i>Fastidio, pesadez</i> son formas de tedio o molestia.' },
+    { h: 'Adjetivos de lo interesante', html: '<i>Seductor, atrayente, asombroso, apasionante, ameno, excepcional</i> — cada uno matiza un tipo de atractivo distinto: seductor (que atrae con encanto), asombroso (que sorprende), ameno (agradable y entretenido, típico de una conversación o texto).' },
+    { h: 'Adjetivos de lo tedioso', html: '<i>Vulgar, pesado, monótono, molesto, insoportable</i> gradúan el desinterés hasta el extremo. "Monótono" describe falta de variación; "pesado" implica una carga tediosa; "insoportable" es el grado máximo.' },
+    { h: 'Verbos de generar o sentir interés', html: '<i>Carecer de/despertar interés</i> son los verbos generales. <i>Interesarse por, sentirse atraído por, atraer, fascinar</i> gradúan desde un interés moderado hasta la fascinación. <i>Rechazar</i> es la reacción opuesta. <i>Motivar(se)</i> es generar impulso hacia una acción, no solo interés pasivo.' },
+    { h: 'Locuciones de tedio y de rareza', html: '<i>Morirse de aburrimiento</i> es una hipérbole coloquial para el tedio extremo. <i>Fuera de lo común, poco común, (normal y) corriente</i> gradúan cuán habitual o excepcional es algo: <i>tienes que ir a verlo, es un espectáculo fuera de lo común</i>.' }
+  ],
+  exponents: [
+    { es: 'Me aburrí tanto que me moría de aburrimiento.', en: 'I got so bored I was dying of boredom.', register: 'coloquial' },
+    { es: 'Es un espectáculo fuera de lo común, no te lo pierdas.', en: "It's an unusual show, don't miss it.", register: 'neutral' },
+    { es: 'Su discurso resultó ameno pese a lo técnico del tema.', en: 'His speech turned out to be engaging despite the technical subject.', register: 'formal' },
+    { es: 'El trabajo se volvió monótono con el tiempo.', en: 'The job became monotonous over time.', register: 'neutral' },
+    { es: 'Se sintió fascinado por la propuesta desde el primer momento.', en: 'He was fascinated by the proposal from the very first moment.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Una charla amena, que se hizo corta.', en: 'An engaging talk that felt short.', note: 'agradable y entretenida' },
+    { es: 'Una charla pesada, que no acababa nunca.', en: 'A tedious talk that never seemed to end.', note: 'tediosa, carga molesta' }
+  ],
+  pitfalls: [
+    '"Ameno" describe algo agradable de seguir (una charla, un libro), no necesariamente emocionante — es distinto de "apasionante", que implica mayor intensidad.',
+    '"Morirse de aburrimiento" es exclusivamente coloquial e hiperbólico — no conviene en un registro formal.',
+    '"Motivar(se)" implica un impulso hacia la acción, no solo sentir curiosidad o interés pasivo — no son intercambiables.'
+  ],
+  examples: [
+    { es: 'La novela resultó apasionante de principio a fin.', en: 'The novel turned out to be gripping from start to finish.' },
+    { es: 'Su actitud indiferente ante el problema sorprendió a todos.', en: 'His indifferent attitude toward the problem surprised everyone.' },
+    { es: 'El ruido constante del tráfico resulta insoportable.', en: 'The constant traffic noise is unbearable.' }
+  ],
+  probes: [
+    { id: 'p:interesC1:amenoapasionante', kind: 'mcq', q: '¿Qué diferencia hay entre "ameno" y "apasionante"?', options: ['Ninguna', 'Ameno es agradable de seguir; apasionante implica mayor intensidad', 'Apasionante es más aburrido'], answer: 1 },
+    { id: 'p:interesC1:motivarse', kind: 'mcq', q: '¿Qué implica "motivarse" que no implica simplemente "interesarse"?', options: ['Nada, son iguales', 'Un impulso hacia la acción, no solo curiosidad pasiva', 'Aburrimiento'], answer: 1 },
+    { id: 'p:interesC1:cloze', kind: 'cloze', text: 'Es un espectáculo fuera de lo ___, no te lo pierdas. (poco habitual)', accept: ['común'] },
+    { id: 'p:interesC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "monótono" y "pesado" aplicados a algo tedioso?', back: 'monótono describe falta de variación; pesado implica una carga tediosa que resulta molesta de soportar' }
+  ]
 }
 
 ];
