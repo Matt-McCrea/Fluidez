@@ -27454,6 +27454,48 @@ window.STRAND_LESSONS = [
     { id: 'p:arrepentimientoverguenzaC1:cloze', kind: 'cloze', text: 'No debería ___ ido a esa reunión. (infinitivo compuesto tras "debería")', accept: ['haber'] },
     { id: 'p:arrepentimientoverguenzaC1:recall', kind: 'recall', front: '¿Qué diferencia de alcance temporal hay entre "si pudiera dar marcha atrás" y "si volviera a nacer"?', back: 'la primera imagina rehacer un momento concreto; la segunda imagina rehacer la vida entera desde el principio' }
   ]
+},
+
+{
+  id: 'fn-sorpresa-admiracion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:663', 'funciones:C1:664', 'funciones:C1:665', 'funciones:C1:666', 'funciones:C1:668', 'funciones:C1:669',
+         'funciones:C1:670', 'funciones:C1:672', 'funciones:C1:673', 'funciones:C1:674', 'funciones:C1:675',
+         'funciones:C1:685', 'funciones:C1:686', 'funciones:C1:687'],
+  title: 'Sorpresa y admiración en C1: "me quedo con la boca abierta"',
+  summary: 'Verbos como "sorprender" y "alucinar" tienen doble construcción en C1 — reflexiva ("me sorprendo de") y activa ("me sorprende") — según quién sea el sujeto gramatical, y la sorpresa extrema se somatiza en el gesto: quedarse "con la boca abierta", "de piedra".',
+  sections: [
+    { h: 'Sorpresa: dos construcciones para el mismo verbo', html: '<i>Me sorprendo/me asombro con/de...</i> presenta a la persona como sujeto que reacciona: <i>me sorprendí de que la estación estuviera tan vacía</i>. <i>Me sorprende con...</i> invierte el orden: el sujeto gramatical es lo que sorprende, no la persona: <i>Jaime nos sorprendió con una de sus ideas geniales</i>. <i>Alucinar</i> funciona igual: <i>alucino con los coches de bomberos</i> (yo reacciono) frente a <i>me alucinan los coches de bomberos</i> (ellos me producen el efecto).' },
+    { h: 'Sorpresa extrema, somatizada en el gesto', html: '<i>Me quedo atónito/alucinado/de piedra/con la boca abierta...</i> describe la reacción física de la sorpresa extrema: <i>me quedé atónito, sin saber qué decir</i>. <i>Me dejas atónito/alucinado/de piedra...</i> invierte de nuevo el sujeto: otra persona provoca ese estado en mí.' },
+    { h: 'Exclamaciones de extrañeza', html: '<i>Parece mentira</i> introduce algo difícil de creer. <i>¡Nunca lo hubiera imaginado!</i> señala que el hecho superó cualquier expectativa previa. <i>¡Es alucinante...!</i> valora algo como sorprendente en extremo: <i>es alucinante que hoy en día todavía se den esas injusticias</i>. <i>¡Qué me dices!</i> y <i>¡lo que hay que oír!</i> son exclamaciones coloquiales de incredulidad ante lo que se acaba de escuchar.' },
+    { h: 'Admiración y orgullo', html: '<i>Me llena de admiración/orgullo...</i> introduce la fuente de la admiración: <i>me llena de admiración la fortaleza que han tenido</i>. <i>Estoy admirado/maravillado/deslumbrado...</i> describe el propio estado, con "deslumbrado" en el grado más alto. <i>Me fascina/me enorgullece...</i> son verbos directos: <i>me enorgullece que participes en un proyecto de esa envergadura</i>.' }
+  ],
+  exponents: [
+    { es: 'Me quedé con la boca abierta al ver el resultado.', en: 'I was left speechless when I saw the result.', register: 'coloquial' },
+    { es: '¡Parece mentira que ya haya pasado un año!', en: "It's hard to believe a year has already gone by!", register: 'neutral' },
+    { es: 'Estoy deslumbrado con su capacidad de trabajo.', en: "I'm dazzled by his capacity for work.", register: 'formal' },
+    { es: 'Me enorgullece muchísimo tu esfuerzo este año.', en: 'I\'m immensely proud of your effort this year.', register: 'neutral' },
+    { es: '¡Es alucinante lo rápido que ha crecido esta empresa!', en: "It's amazing how fast this company has grown!", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Me sorprendo de lo rápido que aprende.', en: "I'm surprised at how fast he learns.", note: 'la persona es el sujeto que reacciona' },
+    { es: 'Me sorprende lo rápido que aprende.', en: 'How fast he learns surprises me.', note: 'el hecho es el sujeto gramatical, la persona recibe el efecto' }
+  ],
+  pitfalls: [
+    '"Sorprenderse de/con" y "sorprender con" no son la misma construcción con distinto verbo — invierten quién es el sujeto gramatical: la persona que reacciona frente al hecho que produce el efecto.',
+    '"Alucinar" tiene el mismo doble comportamiento que "sorprender" — "alucino con algo" (yo reacciono) frente a "me alucina algo" (algo me produce el efecto).',
+    '"¡Alucina!" en imperativo coloquial no es una orden literal de alucinar — es una exclamación que invita al oyente a compartir el asombro del hablante.'
+  ],
+  examples: [
+    { es: 'Nos quedamos de piedra cuando anunciaron los resultados.', en: 'We were stunned when they announced the results.' },
+    { es: 'Nunca hubiera imaginado que terminaría así la historia.', en: "I never would have imagined the story would end like this." },
+    { es: 'Estoy maravillado con los avances de la tecnología actual.', en: "I'm amazed by the advances of current technology." }
+  ],
+  probes: [
+    { id: 'p:sorpresaadmiracionC1:sorprenderseconstruccion', kind: 'mcq', q: '¿Qué diferencia hay entre "me sorprendo de" y "me sorprende"?', options: ['Ninguna', 'Cambia el sujeto gramatical: la persona que reacciona frente al hecho que produce el efecto', 'Uno es más formal'], answer: 1 },
+    { id: 'p:sorpresaadmiracionC1:bocaabierta', kind: 'mcq', q: '"Me quedé con la boca abierta" describe...', options: ['Aburrimiento', 'Sorpresa extrema', 'Cansancio'], answer: 1 },
+    { id: 'p:sorpresaadmiracionC1:cloze', kind: 'cloze', text: 'Nos quedamos de ___ al ver el resultado. (sorpresa extrema, somatizada)', accept: ['piedra'] },
+    { id: 'p:sorpresaadmiracionC1:recall', kind: 'recall', front: '¿Qué palabra describe el grado más alto de admiración, entre "admirado", "maravillado" y "deslumbrado"?', back: '"deslumbrado" es el grado más alto' }
+  ]
 }
 
 ];

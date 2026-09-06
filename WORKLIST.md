@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (148/202 done)
+## C1 — lessons (149/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -678,7 +678,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 28 pts · `nociones_generales C1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-c1
 - [x] **Expresión verbal** · 21 pts · `nociones_generales C1 § 7.2. Expresión verbal`  — nt-expresion-verbal-c1
 
-### C1 · function (48/91)
+### C1 · function (50/91)
 - [x] **Identificar** · 8 pts · `funciones C1 § 1.1. Identificar`  — fn-identificar-c1
 - [x] **Pedir información** · 19 pts · `funciones C1 § 1.2. Pedir información`  — fn-pedir-informacion-c1
 - [x] **Dar información** · 29 pts · `funciones C1 § 1.3. Dar información`  — fn-dar-informacion-c1
@@ -727,8 +727,8 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Expresar resignación** · 4 pts · `funciones C1 § 3.24. Expresar resignación`  — fn-decepcion-resignacion-c1
 - [x] **Expresar arrepentimiento** · 7 pts · `funciones C1 § 3.25. Expresar arrepentimiento`  — fn-arrepentimiento-verguenza-c1
 - [x] **Expresar vergüenza** · 7 pts · `funciones C1 § 3.26. Expresar vergüenza`  — fn-arrepentimiento-verguenza-c1
-- [ ] **Expresar sorpresa y extrañeza** · 14 pts · `funciones C1 § 3.27. Expresar sorpresa y extrañez`
-- [ ] **Expresar admiración y orgullo** · 3 pts · `funciones C1 § 3.28. Expresar admiración y orgull`
+- [x] **Expresar sorpresa y extrañeza** · 14 pts · `funciones C1 § 3.27. Expresar sorpresa y extrañez`  — fn-sorpresa-admiracion-c1
+- [x] **Expresar admiración y orgullo** · 3 pts · `funciones C1 § 3.28. Expresar admiración y orgull`  — fn-sorpresa-admiracion-c1
 - [ ] **Expresar afecto** · 3 pts · `funciones C1 § 3.29. Expresar afecto`
 - [ ] **Expresar sensaciones físicas** · 16 pts · `funciones C1 § 3.30. Expresar sensaciones físicas`
 - [ ] **Dar una orden o instrucción** · 29 pts · `funciones C1 § 4.1. Dar una orden o instrucción`
