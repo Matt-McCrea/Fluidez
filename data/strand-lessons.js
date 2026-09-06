@@ -26340,6 +26340,90 @@ window.STRAND_LESSONS = [
     { id: 'p:expresionverbalC1:cloze', kind: 'cloze', text: 'El gobierno ___ un comunicado oficial. (hacer llegar información formalmente)', accept: ['emitió'] },
     { id: 'p:expresionverbalC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "contradecir" y "rectificar"?', back: 'contradecir niega lo dicho por otra persona; rectificar corrige lo dicho por uno mismo' }
   ]
+},
+
+{
+  id: 'fn-identificar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:1', 'funciones:C1:2', 'funciones:C1:3', 'funciones:C1:5', 'funciones:C1:6', 'funciones:C1:7', 'funciones:C1:8'],
+  title: 'Identificar en C1: "el que suscribe" y las hendidas "lo que... es..."',
+  summary: 'Identificar con precisión en C1 va desde el registro epistolar más formal ("el que suscribe") hasta el demostrativo cargado de desdén ("ese"), pasando por las construcciones hendidas ("lo que... es...") que aíslan justo el elemento que se quiere señalar.',
+  sections: [
+    { h: 'Demostrativo con valor despectivo', html: 'Un demostrativo antepuesto puede cargarse de desdén hacia la persona señalada: <i>no vendrá ese, ¿verdad?</i> — el tono, no la gramática, marca el desprecio.' },
+    { h: 'Fórmula epistolar de autoidentificación', html: 'En el género epistolar formal, <i>el que suscribe / el abajo firmante</i> es la forma tradicional de identificarse el propio autor de un escrito.' },
+    { h: '"Este... y no...": identificación por contraste', html: 'Esta estructura aísla el referente correcto frente a uno erróneo que se acaba de mencionar o suponer: <i>esto, y no lo que ustedes afirman, es lo que ocurrió</i>, <i>ese es el coche que me gustaría tener y no el mío</i>.' },
+    { h: 'Construcciones hendidas: "lo que... es/fue..."', html: '<i>Lo que... es...</i> + sintagma nominal o infinitivo aísla el elemento identificado: <i>lo que no me gusta nada es fichar por las mañanas</i>. Con una cláusula completa, se usa <i>lo que... fue que...</i>: <i>lo que pasó fue que me olvidé de su nombre</i>.' },
+    { h: 'Relativas de identificación formal', html: 'El relativo posesivo <i>cuyo</i> identifica mediante una característica poseída: <i>las personas cuyos nombres figuren en la lista pasan a la segunda fase</i>. Las relativas explicativas pueden identificar añadiendo información aparte: <i>esas personas, a quienes nunca llegaremos a conocer, son los verdaderos protagonistas de esta historia</i>.' }
+  ],
+  exponents: [
+    { es: 'El que suscribe solicita la revisión del expediente.', en: 'The undersigned requests a review of the file.', register: 'formal', note: 'fórmula epistolar tradicional' },
+    { es: '¿Y ese qué se ha creído?', en: "And who does that guy think he is?", register: 'coloquial', note: 'demostrativo con valor despectivo' },
+    { es: 'Lo que me molesta es que no avises con tiempo.', en: "What bothers me is that you don't give notice in advance.", register: 'neutral' },
+    { es: 'Esto, y no lo que se ha dicho, es la verdad.', en: 'This, and not what has been said, is the truth.', register: 'formal' },
+    { es: 'Los candidatos cuyo currículum se ajuste al perfil serán convocados.', en: 'Candidates whose résumé matches the profile will be called in.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'No vendrá ese, espero.', en: "That one won't come, I hope.", note: 'demostrativo despectivo, tono coloquial' },
+    { es: 'El que suscribe certifica lo anteriormente expuesto.', en: 'The undersigned certifies the above.', note: 'fórmula epistolar, máxima formalidad' }
+  ],
+  pitfalls: [
+    'Un demostrativo antepuesto como "ese" no es despectivo por sí solo — el tono y el contexto son los que le dan ese matiz de desdén.',
+    '"El que suscribe" pertenece estrictamente al género epistolar formal — usarlo en una conversación normal suena artificial o irónico.',
+    'La construcción hendida "lo que... fue que..." exige una cláusula completa después — no funciona con un simple sintagma nominal, que requiere en cambio "lo que... es..."'
+  ],
+  examples: [
+    { es: 'El abajo firmante declara haber leído las condiciones.', en: 'The undersigned declares having read the conditions.' },
+    { es: 'Lo que quiero decir es que no estoy de acuerdo.', en: 'What I mean is that I don\'t agree.' },
+    { es: 'Aquel, el de la chaqueta azul, es el que me lo dijo.', en: 'That one, the one in the blue jacket, is the one who told me.' }
+  ],
+  probes: [
+    { id: 'p:identificarC1:elquesuscribe', kind: 'mcq', q: '¿En qué género se usa típicamente "el que suscribe"?', options: ['Conversación coloquial', 'Género epistolar formal', 'Mensajería instantánea'], answer: 1 },
+    { id: 'p:identificarC1:demostrativo', kind: 'mcq', q: '"No vendrá ese, ¿verdad?" ¿Qué aporta el tono al demostrativo?', options: ['Nada especial', 'Un matiz despectivo', 'Cortesía extra'], answer: 1 },
+    { id: 'p:identificarC1:cloze', kind: 'cloze', text: 'Lo que no me gusta nada es ___ por las mañanas. (fichar, marcar la entrada al trabajo)', accept: ['fichar'] },
+    { id: 'p:identificarC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "lo que... es..." y "lo que... fue que..."?', back: 'la primera va seguida de un sintagma nominal o infinitivo; la segunda exige una cláusula completa' }
+  ]
+},
+
+{
+  id: 'fn-pedir-informacion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:11', 'funciones:C1:12', 'funciones:C1:13', 'funciones:C1:14', 'funciones:C1:16', 'funciones:C1:18',
+         'funciones:C1:20', 'funciones:C1:21', 'funciones:C1:22', 'funciones:C1:23', 'funciones:C1:24', 'funciones:C1:25',
+         'funciones:C1:26', 'funciones:C1:27', 'funciones:C1:28'],
+  title: 'Pedir información en C1: de "¿qué es lo que...?" a "¿me permites...?"',
+  summary: 'Pedir información en C1 incluye fórmulas indirectas y corteses ("¿tienes idea de...?"), preguntas de extrañeza que hacen algo más que pedir un dato ("¿cómo es que...?"), y una fórmula previa para suavizar una pregunta delicada: "¿me permites...?"',
+  sections: [
+    { h: 'Preguntas hendidas e indirectas', html: '<i>¿Qué es lo que...?</i> y <i>¿cuál de los que...?</i> son formas más enfáticas o precisas que el simple "¿qué?"/"¿cuál?": <i>¿cuál de las que me ha enseñado es la más barata?</i>. <i>¿Tienes idea de si/dónde/cómo...?</i> suaviza la pregunta directa: <i>¿tienes idea de si hay una oficina de Correos por aquí?</i>. <i>¿Me dice...?</i> es una fórmula cortés para pedir un dato concreto: <i>¿me dice el precio del vestido del escaparate?</i>.' },
+    { h: 'Preguntar por tiempo, finalidad y causa', html: '<i>¿Qué día es/era cuando...?</i> pregunta por un momento situado respecto a otro suceso. <i>¿A qué...?</i> pregunta por la finalidad de una acción: <i>¿a qué has ido?</i>. <i>¿...por algo?</i> pregunta por la razón de una elección: <i>¿has elegido el verde por algo?</i>.' },
+    { h: '"¿A qué viene/se debe...?" y la alternativa', html: 'Esta fórmula pregunta por la causa de algo, a menudo con un matiz neutro: <i>¿a qué se debe tanta risa?</i>. <i>¿...o, por el contrario,...?</i> plantea una alternativa explícita dentro de la pregunta: <i>¿debo modificar los criterios o, por el contrario, seguir en la misma línea?</i>.' },
+    { h: 'Preguntas de extrañeza: más que pedir un dato', html: '<i>¿Y eso?</i> y <i>¿cómo es eso?</i>, con entonación ascendente, piden una explicación ante algo sorprendente. <i>¿Cómo (es que)...?</i> añade un matiz explícito de extrañeza: <i>¿cómo es que no viniste el sábado?</i>. <i>¿Cómo se explica (el hecho de) que...?</i> pregunta por una explicación de algo que resulta difícil de justificar: <i>¿cómo se explica que se hiciera rico en tan poco tiempo?</i>. <i>¿A qué viene/se debe...?</i> con este mismo matiz de extrañeza (no neutro) señala sorpresa o reproche: <i>¿a qué viene eso ahora?</i>.' },
+    { h: 'Suavizar una pregunta delicada', html: '<i>¿Me permites...?</i> antes de una pregunta, un consejo o una crítica reduce su impacto: <i>¿me permites darte un consejo?</i>, <i>¿nos permites hacerte un comentario?</i>.' }
+  ],
+  exponents: [
+    { es: '¿Tienes idea de cómo se llega a la estación desde aquí?', en: 'Do you have any idea how to get to the station from here?', register: 'neutral' },
+    { es: 'Oye, ¿y eso? Te veo raro hoy.', en: 'Hey, why is that? You seem odd today.', register: 'coloquial' },
+    { es: '¿Me permite preguntarle su edad?', en: 'May I ask your age?', register: 'formal' },
+    { es: '¿A qué viene esa cara larga?', en: "What's with the long face?", register: 'coloquial' },
+    { es: '¿Cómo se explica el hecho de que nadie avisara a tiempo?', en: 'How is it that no one warned in time?', register: 'formal' }
+  ],
+  contrasts: [
+    { es: '¿A qué se debe el retraso del vuelo?', en: "What's the reason for the flight delay?", note: 'pregunta neutra por la causa, sin extrañeza' },
+    { es: '¿A qué viene ese retraso ahora, precisamente hoy?', en: 'Why this delay now, of all days?', note: 'mismo tipo de pregunta, pero con matiz de extrañeza o reproche' }
+  ],
+  pitfalls: [
+    '"¿A qué viene/se debe...?" puede ser una pregunta neutra por la causa o, según la entonación y el contexto, una expresión de extrañeza o reproche — el mismo molde sirve para dos actos de habla distintos.',
+    '"¿Me permites...?" antes de una pregunta o crítica no pide realmente permiso — es una fórmula de cortesía que suaviza lo que viene después.',
+    '"¿Tienes idea de...?" es más cortés e indirecto que preguntar directamente, pero exige la misma estructura interrogativa indirecta (si/dónde/cómo + verbo), no una pregunta directa incrustada.'
+  ],
+  examples: [
+    { es: '¿Qué es lo que realmente quieres conseguir con esto?', en: 'What is it that you really want to achieve with this?' },
+    { es: '¿Me dice a qué hora cierra la tienda?', en: 'Could you tell me what time the shop closes?' },
+    { es: '¿Cómo es que llegaste tan tarde anoche?', en: 'How come you got home so late last night?' }
+  ],
+  probes: [
+    { id: 'p:pedirinformacionC1:aquevienedoble', kind: 'mcq', q: '"¿A qué viene eso ahora?" ¿Qué matiz añade el contexto/tono aquí?', options: ['Pregunta neutra por la causa', 'Extrañeza o reproche', 'Felicitación'], answer: 1 },
+    { id: 'p:pedirinformacionC1:mepermites', kind: 'mcq', q: '"¿Me permites darte un consejo?" ¿Qué función cumple realmente?', options: ['Pedir permiso literal', 'Suavizar la crítica o el consejo que sigue', 'Pedir disculpas'], answer: 1 },
+    { id: 'p:pedirinformacionC1:cloze', kind: 'cloze', text: '¿___ idea de si hay una farmacia cerca? (pregunta indirecta y cortés)', accept: ['Tienes'] },
+    { id: 'p:pedirinformacionC1:recall', kind: 'recall', front: '¿Qué tienen en común "¿y eso?" y "¿cómo es eso?"?', back: 'ambas, con entonación ascendente, piden una explicación ante algo que ha sorprendido al hablante' }
+  ]
 }
 
 ];

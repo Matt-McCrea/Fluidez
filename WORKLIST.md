@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (121/202 done)
+## C1 — lessons (123/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -678,9 +678,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 28 pts · `nociones_generales C1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-c1
 - [x] **Expresión verbal** · 21 pts · `nociones_generales C1 § 7.2. Expresión verbal`  — nt-expresion-verbal-c1
 
-### C1 · function (0/91)
-- [ ] **Identificar** · 8 pts · `funciones C1 § 1.1. Identificar`
-- [ ] **Pedir información** · 19 pts · `funciones C1 § 1.2. Pedir información`
+### C1 · function (2/91)
+- [x] **Identificar** · 8 pts · `funciones C1 § 1.1. Identificar`  — fn-identificar-c1
+- [x] **Pedir información** · 19 pts · `funciones C1 § 1.2. Pedir información`  — fn-pedir-informacion-c1
 - [ ] **Dar información** · 29 pts · `funciones C1 § 1.3. Dar información`
 - [ ] **Pedir confirmación** · 19 pts · `funciones C1 § 1.4. Pedir confirmación`
 - [ ] **Confirmar la información previa** · 4 pts · `funciones C1 § 1.5. Confirmar la información prev`
