@@ -28298,6 +28298,85 @@ window.STRAND_LESSONS = [
 },
 
 {
+  id: 'gn-generos-orales-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:88', 'generos_discursivos:C1:90', 'generos_discursivos:C1:91', 'generos_discursivos:C1:96',
+         'generos_discursivos:C1:102'],
+  title: 'Géneros orales en C1: intervenir en tu especialidad',
+  summary: 'C1 pushes the reception/production line into professional territory: contributing to a highly structured formal meeting on your own specialty, or arguing your side of a complex public debate, are now things you must be able to DO — while long lectures on abstract topics and eclesiastical sermons stay strictly things you only need to follow.',
+  sections: [
+    { h: 'Solo recepción: lo abstracto y lo ritual', html: 'Los discursos y conferencias extensos sobre temas abstractos y los sermones eclesiásticos quedan en (R) — se espera que sigas el hilo de un razonamiento largo, no que produzcas nada de esa densidad tú mismo.' },
+    { h: 'Producción nueva: el debate complejo', html: 'Por primera vez, participar en debates y discusiones públicas sobre asuntos de cierta complejidad — de interés personal, general, académico o profesional — pasa a ser (P): debes poder defender una postura, no solo escucharla.' },
+    { h: 'El terreno más exigente: tu propia especialidad, en formal', html: 'Intervenir en reuniones formales altamente estructuradas sobre temas de tu especialidad es (R)(P) — el género más exigente de C1: entender Y aportar en un registro rígido, sobre contenido técnico.' }
+  ],
+  moves: [
+    { h: 'Distinguir seguir de argumentar', html: 'Seguir una conferencia abstracta y argumentar en un debate complejo exigen habilidades distintas; no confundas la comprensión pasiva de un razonamiento largo con la capacidad de sostener el tuyo propio en vivo.' },
+    { h: 'Preparar la intervención formal en tu especialidad', html: 'Antes de una reunión formal estructurada, ten lista una postura breve y justificada sobre el tema técnico — el formato no perdona la improvisación vaga.' }
+  ],
+  model: {
+    title: 'Intervención en una reunión formal (R)(P)',
+    text: '—Antes de pasar al siguiente punto, ¿alguien quiere añadir algo sobre la propuesta de calendario?\n—Sí, si me permite. Creo que el plazo de tres semanas es ajustado dado el volumen de revisiones pendientes; propondría ampliarlo a cuatro, sobre todo teniendo en cuenta que dos miembros del equipo estarán de baja esa quincena.\n—Entendido. ¿Alguna objeción a la propuesta de ampliación?\n—Ninguna por mi parte, me parece razonable.'
+  },
+  checklist: [
+    '¿Sabes distinguir seguir un razonamiento largo (R) de tener que defender el tuyo propio en vivo (P)?',
+    'Antes de una reunión formal sobre tu especialidad, ¿llevas preparada una postura breve y justificada?',
+    '¿Reservas el registro más rígido para las reuniones formales altamente estructuradas, no para un debate informal?'
+  ],
+  examples: [
+    { es: 'Un sermón eclesiástico exige solo comprensión, nunca producción propia.', en: 'A church sermon requires only comprehension, never your own production.' },
+    { es: 'Propondría ampliar el plazo dado el volumen de revisiones pendientes.', en: 'I would propose extending the deadline given the volume of pending revisions.' },
+    { es: 'El debate giró en torno a si la medida beneficiaba realmente a la mayoría.', en: 'The debate revolved around whether the measure really benefited the majority.' }
+  ],
+  probes: [
+    { id: 'p:generalesoralesC1:reunion', kind: 'mcq', q: '¿Qué género es el más exigente en C1, combinando comprensión técnica y producción en registro rígido?',
+      options: ['El sermón eclesiástico', 'La intervención en una reunión formal altamente estructurada sobre tu especialidad', 'El documental radiofónico'], answer: 1 },
+    { id: 'p:generalesoralesC1:debate', kind: 'mcq', q: 'En C1, participar en un debate público sobre un asunto complejo es:',
+      options: ['(R), solo hay que seguirlo', '(P), hay que poder defender una postura', 'Ninguna de las dos'], answer: 1 },
+    { id: 'p:generalesoralesC1:cloze', kind: 'cloze', text: '___ ampliar el plazo dado el volumen de trabajo. (proponer, condicional)', accept: ['propondría'] },
+    { id: 'p:generalesoralesC1:recall', kind: 'recall', front: '¿Qué dos géneros orales de C1 son puramente de recepción, por su carácter abstracto o ritual?', back: 'los discursos/conferencias extensos sobre temas abstractos y los sermones eclesiásticos' }
+  ]
+},
+
+{
+  id: 'gn-generos-escritos-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:116', 'generos_discursivos:C1:118', 'generos_discursivos:C1:119', 'generos_discursivos:C1:120',
+         'generos_discursivos:C1:127', 'generos_discursivos:C1:128'],
+  title: 'Géneros escritos en C1: el informe extenso y la reseña propia',
+  summary: 'C1 raises the bar on production: a professional report now covers a genuinely complex project or specialty topic (not just a short pros-and-cons memo), and writing your own medium-length review joins reading other people\'s — while thesauri and simple contracts stay strictly reference material, consulted for a fact, never imitated.',
+  sections: [
+    { h: 'Solo consulta: tesauros y contratos simples', html: 'Los tesauros y los contratos sencillos (laborales, de alquiler) quedan en (R) — se consultan para resolver una duda puntual de vocabulario o de cláusula, nunca se toman como modelo de tu propia escritura.' },
+    { h: 'El informe se vuelve extenso y especializado', html: 'Frente al informe breve de B2, C1 añade el informe extenso y complejo sobre un tema de tu propia especialidad (R) y el informe de extensión media sobre un proyecto profesional o una postura abstracta (P) — más desarrollo, más matiz, más partes.' },
+    { h: 'De leer reseñas a escribir la tuya', html: 'Leer reseñas de películas, libros u obras de teatro sigue siendo (R), pero C1 añade la producción: una reseña de extensión media que tú mismo redactas (P), con un juicio propio, no solo un resumen.' }
+  ],
+  moves: [
+    { h: 'No confundir consulta con modelo', html: 'Un tesauro o un contrato sencillo se lee para resolver una duda concreta; no imites su estilo ni lo tomes como referencia de cómo escribir tu propio texto.' },
+    { h: 'Dar más estructura al informe extenso', html: 'Un informe extenso y complejo sobre tu especialidad necesita secciones claramente delimitadas (introducción, desarrollo, conclusión) que un informe breve de B2 no requería.' },
+    { h: 'Redactar la reseña con juicio propio', html: 'Al escribir tu propia reseña de extensión media, no te limites a resumir la obra — añade una valoración razonada, como en la reseña crítica.' }
+  ],
+  model: {
+    title: 'Fragmento de un informe profesional (P)',
+    text: 'Resumen ejecutivo\n\nEl presente informe analiza la viabilidad de trasladar el servicio de atención al cliente a un modelo mixto de teletrabajo.\n\n1. Contexto\nDurante los últimos dos años, el equipo ha operado de forma completamente presencial...\n\n2. Ventajas del modelo mixto\nReducción de costes de oficina, mayor flexibilidad horaria para el personal...\n\n3. Riesgos identificados\nPosible pérdida de cohesión de equipo, necesidad de invertir en herramientas de coordinación...\n\n4. Recomendación\nSe recomienda una implantación gradual, comenzando por un piloto de tres meses.'
+  },
+  checklist: [
+    '¿Consultas tesauros y contratos sencillos solo para resolver una duda, sin imitar su estilo?',
+    '¿Divide tu informe extenso en secciones claramente delimitadas, no en un solo bloque?',
+    'Al escribir tu propia reseña, ¿incluyes un juicio razonado, no solo un resumen de la obra?'
+  ],
+  examples: [
+    { es: 'Consulté el tesauro para encontrar un sinónimo más preciso.', en: 'I checked the thesaurus to find a more precise synonym.' },
+    { es: 'Se recomienda una implantación gradual, comenzando por un piloto de tres meses.', en: 'A gradual rollout is recommended, starting with a three-month pilot.' },
+    { es: 'Mi reseña de la novela destacó su ritmo narrativo, pero también sus personajes secundarios flojos.', en: 'My review of the novel highlighted its narrative pace, but also its weak secondary characters.' }
+  ],
+  probes: [
+    { id: 'p:generalesescritosC1:tesauro', kind: 'mcq', q: 'Un tesauro es un género de:',
+      options: ['producción (P)', 'consulta (R), nunca modelo de estilo propio', 'ambos por igual'], answer: 1 },
+    { id: 'p:generalesescritosC1:informe', kind: 'mcq', q: 'Frente al informe breve de B2, el informe extenso de C1 exige sobre todo:',
+      options: ['menos secciones', 'secciones claramente delimitadas y más desarrollo', 'evitar toda recomendación final'], answer: 1 },
+    { id: 'p:generalesescritosC1:cloze', kind: 'cloze', text: 'Se ___ una implantación gradual del nuevo modelo. (recomendar)', accept: ['recomienda'] },
+    { id: 'p:generalesescritosC1:recall', kind: 'recall', front: '¿Qué género de producción escrita se añade en C1 respecto a la reseña, que en B1/B2 solo se leía?', back: 'escribir tu propia reseña de extensión media, con juicio propio, no solo resumen' }
+  ]
+},
+
+{
   id: 'gn-resena-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:44'],
   title: 'La reseña crítica',

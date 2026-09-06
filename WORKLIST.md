@@ -787,8 +787,8 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 
 ### C1 · genre (0/14)
 - [x] **Lista alfabética de géneros orales y escritos** · 51 pts · `generos_discursivos C1 § 1.1. Lista alfabética de géneros o`  — gn-resena-c1 (rest of the 51 spec points are bare genre names with zero worked examples, a pure taxonomy with nothing to teach; picked one C1-appropriate genre — la reseña crítica — not already covered by the sibling Presentación pública/Carta comercial/Composición escrita/Trabajo académico lines, per the B2 gn-reclamacion-b2 precedent of teaching one concrete named genre from the list rather than the catalog itself)
-- [ ] **Géneros de transmisión oral** · 20 pts · `generos_discursivos C1 § 1.2. Géneros de transmisión oral`
-- [ ] **Géneros de transmisión escrita** · 20 pts · `generos_discursivos C1 § 1.3. Géneros de transmisión escrit`
+- [x] **Géneros de transmisión oral** · 20 pts · `generos_discursivos C1 § 1.2. Géneros de transmisión oral`  — gn-generos-orales-c1
+- [x] **Géneros de transmisión escrita** · 20 pts · `generos_discursivos C1 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-c1
 - [ ] **Presentación pública (Nivel C1)** · 34 pts · `generos_discursivos C1 § 2.2.1. Presentación pública (Nivel`
 - [ ] **Presentación pública (Nivel C2)** · 35 pts · `generos_discursivos C1 § 2.2.2. Presentación pública (Nivel`
 - [ ] **Carta comercial (Nivel C1)** · 36 pts · `generos_discursivos C1 § 2.3.1. Carta comercial (Nivel C1)`
