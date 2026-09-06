@@ -28210,6 +28210,48 @@ window.STRAND_LESSONS = [
     { id: 'p:estadogeneralcosasC1:cloze', kind: 'cloze', text: '¿Qué tal se ___ tu familia? (pregunta por el bienestar de terceros)', accept: ['encuentra'] },
     { id: 'p:estadogeneralcosasC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "¿qué tal se encuentra tu familia?" y "¿qué tal estás?"?', back: 'la primera pregunta por el bienestar de una tercera persona; la segunda se dirige directamente al interlocutor presente' }
   ]
+},
+
+{
+  id: 'fn-introducir-relato-atencion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:1239', 'funciones:C1:1241', 'funciones:C1:1242', 'funciones:C1:1243', 'funciones:C1:1245',
+         'funciones:C1:1247', 'funciones:C1:1264', 'funciones:C1:1265', 'funciones:C1:1266',
+         'funciones:C1:1273', 'funciones:C1:1274', 'funciones:C1:1275', 'funciones:C1:1276'],
+  title: 'Introducir un relato y controlar la atención en C1: "¿me sigues?" y "¿no te he liado?"',
+  summary: 'Contar algo en C1 empieza con un gancho que despierta curiosidad ("no te puedes ni imaginar..."), sigue con reacciones que muestran interés genuino, y se autorregula constantemente comprobando si el oyente sigue el hilo: "¿me sigues?", "¿te aburro?"',
+  sections: [
+    { h: 'Introducir el tema de un relato', html: '<i>¿Sabes lo que...?</i> despierta curiosidad de forma directa: <i>¿sabes lo que me pasó el otro día?</i>. <i>No sé si lo sabrás, pero...</i> introduce una noticia asumiendo que quizás el otro ya la conoce. <i>No te puedes (ni) imaginar...</i> intensifica la expectativa antes de contar algo: <i>no te puedes ni imaginar lo que ha pasado, es de lo más raro</i>. <i>Hola, ¿no estarás ocupado, (verdad)? Es que...</i> introduce el relato comprobando primero la disponibilidad del otro.' },
+    { h: 'Pedir tiempo antes de escuchar, o posponer cortésmente', html: '<i>Espera/un momento... ya te atiendo/escucho</i> pide un breve margen antes de empezar a escuchar. <i>Lamento tener que interrumpirle, pero (es que)...</i> pospone el inicio del relato con cortesía, explicando la razón: <i>lamento tener que interrumpirle, pero tengo que hacer una reserva urgente</i>.' },
+    { h: 'Mostrar que se sigue el relato con interés', html: '<i>¡No me lo puedo creer!</i> expresa sorpresa activa ante lo que se cuenta. <i>Me lo puedo imaginar</i> muestra empatía comprensiva. <i>¡Hala!</i> es una interjección coloquial de asombro ante un giro inesperado del relato.' },
+    { h: 'Controlar la atención del interlocutor', html: '<i>¿Lo ves?</i> comprueba que el otro ha entendido el punto que se acaba de hacer. <i>¿Me sigues?</i> comprueba directamente si el otro sigue el hilo de la explicación. <i>¿Te aburro?/te estoy aburriendo, (¿no?/¿verdad?)</i> comprueba, con cierta autocrítica, si el relato ha dejado de interesar. <i>No te he liado, ¿no?</i> comprueba si la explicación ha resultado confusa.' }
+  ],
+  exponents: [
+    { es: 'No te puedes ni imaginar lo que me encontré al llegar a casa.', en: "You can't even imagine what I found when I got home.", register: 'coloquial' },
+    { es: '¿Me sigues, o te he liado con tantos detalles?', en: "Are you with me, or have I confused you with so many details?", register: 'coloquial' },
+    { es: 'Lamento tener que interrumpirle, pero necesito confirmarle un dato urgente.', en: 'I\'m sorry to interrupt, but I need to confirm an urgent detail with you.', register: 'formal' },
+    { es: '¡No me lo puedo creer! ¿En serio pasó eso?', en: "I can't believe it! Did that really happen?", register: 'coloquial' },
+    { es: '¿Te estoy aburriendo con esta historia tan larga?', en: 'Am I boring you with this long story?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¿Sabes lo que me ha pasado hoy?', en: 'Do you know what happened to me today?', note: 'introduce el relato con curiosidad directa' },
+    { es: 'No sé si lo sabrás, pero han cerrado la tienda de la esquina.', en: "I don't know if you know, but they've closed the corner shop.", note: 'introduce el relato asumiendo posible conocimiento previo' }
+  ],
+  pitfalls: [
+    '"¿Me sigues?" y "¿te he liado?" comprueban aspectos distintos: la primera pregunta si el otro sigue el hilo en general; la segunda pregunta específicamente si algo ha resultado confuso.',
+    '"Lamento tener que interrumpirle" es cortés pero funcional — pospone el relato del otro sin rechazarlo, dando siempre una razón concreta.',
+    '"¡Hala!" es exclusivamente coloquial e informal — no conviene en un registro formal para mostrar sorpresa.'
+  ],
+  examples: [
+    { es: '¿Sabes la última de nuestro vecino? No te lo vas a creer.', en: "Have you heard the latest about our neighbor? You won't believe it." },
+    { es: 'Me lo puedo imaginar, debió de ser durísimo.', en: 'I can imagine, it must have been really tough.' },
+    { es: '¿Lo ves? Por eso te decía que no era buena idea.', en: "See? That's why I told you it wasn't a good idea." }
+  ],
+  probes: [
+    { id: 'p:introducirrelatoatencionC1:mesigues', kind: 'mcq', q: '¿Qué comprueba "¿me sigues?"?', options: ['Si el otro está de acuerdo', 'Si el otro sigue el hilo de la explicación', 'Si el otro tiene prisa'], answer: 1 },
+    { id: 'p:introducirrelatoatencionC1:lamento', kind: 'mcq', q: '"Lamento tener que interrumpirle, pero..." ¿qué función cumple?', options: ['Rechaza definitivamente escuchar', 'Pospone cortésmente el relato del otro, con una razón', 'Pide disculpas por algo ya hecho'], answer: 1 },
+    { id: 'p:introducirrelatoatencionC1:cloze', kind: 'cloze', text: 'No te puedes ni ___ lo que me pasó ayer. (intensificar la expectativa antes de contar algo)', accept: ['imaginar'] },
+    { id: 'p:introducirrelatoatencionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "¿me sigues?" y "no te he liado, ¿no?"?', back: '"¿me sigues?" pregunta en general si se sigue el hilo; "no te he liado" pregunta específicamente si algo ha resultado confuso' }
+  ]
 }
 
 ];

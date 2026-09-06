@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (166/202 done)
+## C1 — lessons (167/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -678,7 +678,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 28 pts · `nociones_generales C1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-c1
 - [x] **Expresión verbal** · 21 pts · `nociones_generales C1 § 7.2. Expresión verbal`  — nt-expresion-verbal-c1
 
-### C1 · function (84/91)
+### C1 · function (87/91)
 - [x] **Identificar** · 8 pts · `funciones C1 § 1.1. Identificar`  — fn-identificar-c1
 - [x] **Pedir información** · 19 pts · `funciones C1 § 1.2. Pedir información`  — fn-pedir-informacion-c1
 - [x] **Dar información** · 29 pts · `funciones C1 § 1.3. Dar información`  — fn-dar-informacion-c1
@@ -763,9 +763,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Felicitar** · 10 pts · `funciones C1 § 5.16. Felicitar`  — fn-felicitar-despedirse-c1
 - [x] **Despedirse** · 8 pts · `funciones C1 § 5.21. Despedirse`  — fn-felicitar-despedirse-c1
 - [x] **Preguntar por el estado general de las cosas y responder** · 47 pts · `funciones C1 § 6.6. Preguntar por el estado gener`  — fn-estado-general-cosas-c1 (17 raw PCIC points found, largely overlapping fn-saludar-c1/fn-responder-saludo-dirigirse-c1; new content covered without duplicating exact phrasing)
-- [ ] **Introducir el tema del relato y reaccionar** · 9 pts · `funciones C1 § 6.8. Introducir el tema del relato`
-- [ ] **Indicar que se sigue el relato con interés** · 3 pts · `funciones C1 § 6.9. Indicar que se sigue el relat`
-- [ ] **Controlar la atención del interlocutor** · 4 pts · `funciones C1 § 6.10. Controlar la atención del in`
+- [x] **Introducir el tema del relato y reaccionar** · 9 pts · `funciones C1 § 6.8. Introducir el tema del relato`  — fn-introducir-relato-atencion-c1
+- [x] **Indicar que se sigue el relato con interés** · 3 pts · `funciones C1 § 6.9. Indicar que se sigue el relat`  — fn-introducir-relato-atencion-c1
+- [x] **Controlar la atención del interlocutor** · 4 pts · `funciones C1 § 6.10. Controlar la atención del in`  — fn-introducir-relato-atencion-c1
 - [ ] **Destacar un elemento** · 4 pts · `funciones C1 § 6.15. Destacar un elemento`
 - [ ] **Pedir a alguien que guarde silencio** · 4 pts · `funciones C1 § 6.23. Pedir a alguien que guarde s`
 - [ ] **Introducir un nuevo tema** · 3 pts · `funciones C1 § 6.27. Introducir un nuevo tema`
