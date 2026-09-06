@@ -26877,6 +26877,48 @@ window.STRAND_LESSONS = [
     { id: 'p:hipotesisposibilidadC1:cloze', kind: 'cloze', text: 'Siempre ___ la posibilidad de que surja un imprevisto. (existir la posibilidad)', accept: ['cabe'] },
     { id: 'p:hipotesisposibilidadC1:recall', kind: 'recall', front: '¿Qué registro tiene "para mí que..." frente a "cabe la posibilidad de que..."?', back: '"para mí que" es coloquial e introduce una intuición personal; "cabe la posibilidad de que" es formal y objetivo' }
   ]
+},
+
+{
+  id: 'fn-obligacion-necesidad-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:325', 'funciones:C1:326', 'funciones:C1:327', 'funciones:C1:328', 'funciones:C1:329', 'funciones:C1:330',
+         'funciones:C1:335', 'funciones:C1:336', 'funciones:C1:337', 'funciones:C1:338'],
+  title: 'Obligación y necesidad en C1: de "es mi obligación" a "basta con que..."',
+  summary: 'La obligación se expresa en C1 con matices sobre su origen — "es mi obligación" viene de un deber propio, "me obliga a" viene de una fuerza externa — y "basta con (que)..." marca el umbral mínimo necesario, no una obligación plena.',
+  sections: [
+    { h: 'Obligación propia', html: '<i>Es mi obligación...</i> y <i>estoy obligado a...</i> presentan la obligación como algo asumido por el propio hablante: <i>estoy obligada a pagar los recibos</i>. <i>Tengo (la) obligación/necesidad de...</i> distingue matices: obligación es un deber, necesidad es algo que surge de una carencia real: <i>el ser humano tiene la necesidad de dormir</i>.' },
+    { h: 'Obligación impuesta desde fuera', html: '<i>...(me) obliga a...</i> presenta la obligación como impuesta por una fuerza externa (persona, circunstancia, institución): <i>la comunidad nos obliga a pagar la avería</i>.' },
+    { h: 'Obligación por cantidad de tareas', html: '<i>Hay/tienes + SN + que + infinitivo</i> expresa obligación derivada de una lista de tareas pendientes: <i>tenemos un montón de cosas que hacer</i>.' },
+    { h: '"Basta con (que)...": el umbral mínimo', html: 'Esta fórmula no expresa una obligación plena, sino el mínimo suficiente para lograr algo: <i>basta con apretar el botón rojo</i>, <i>basta con que firmes aquí</i> — no hace falta nada más.' },
+    { h: 'Negar la obligación', html: '<i>No es mi obligación...</i>, <i>no estoy obligado a...</i> y <i>no tengo (la) obligación/necesidad de...</i> niegan directamente cualquiera de las formas anteriores: <i>no tienes obligación de quedarte hasta el final</i>. <i>Nada/nadie (me) obliga a...</i> niega específicamente la existencia de una fuerza externa que imponga algo: <i>nada te obliga a leerlo</i>.' }
+  ],
+  exponents: [
+    { es: 'Es su obligación informar a los socios de cualquier cambio.', en: "It's their duty to inform the partners of any change.", register: 'formal' },
+    { es: 'Basta con que rellenes este formulario.', en: 'It\'s enough for you to fill out this form.', register: 'neutral' },
+    { es: 'Nada me obliga a aceptar esas condiciones.', en: "Nothing obliges me to accept those conditions.", register: 'neutral' },
+    { es: 'Las circunstancias nos obligaron a cambiar de planes.', en: 'Circumstances forced us to change our plans.', register: 'formal' },
+    { es: 'No tienes obligación de responder si no quieres.', en: "You're not obliged to answer if you don't want to.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Es mi obligación asistir a la reunión.', en: 'It\'s my duty to attend the meeting.', note: 'obligación asumida como propia' },
+    { es: 'El contrato me obliga a asistir a la reunión.', en: 'The contract obliges me to attend the meeting.', note: 'obligación impuesta por una fuerza externa' }
+  ],
+  pitfalls: [
+    '"Es mi obligación" presenta el deber como algo propio y asumido; "me obliga a" señala una fuerza externa concreta que lo impone — no son intercambiables sin cambiar el matiz.',
+    '"Basta con (que)..." no es una obligación completa, sino el umbral mínimo necesario — no equivale a "tienes que", que exige más que el simple mínimo.',
+    '"Tengo la obligación de..." y "tengo la necesidad de..." no son sinónimos: obligación es un deber (a menudo social o legal), necesidad surge de una carencia real, no de una norma.'
+  ],
+  examples: [
+    { es: 'Tienen un montón de trámites que resolver antes de viajar.', en: 'They have a ton of paperwork to sort out before traveling.' },
+    { es: 'No era su obligación cuidar de sus hermanos pequeños.', en: "It wasn't her duty to take care of her younger siblings." },
+    { es: 'Basta con avisar con un día de antelación.', en: "It's enough to give notice one day in advance." }
+  ],
+  probes: [
+    { id: 'p:obligacionnecesidadC1:esmiobligacion', kind: 'mcq', q: '¿Qué diferencia hay entre "es mi obligación" y "me obliga a"?', options: ['Ninguna', 'La primera es un deber propio; la segunda viene de una fuerza externa', 'Ambas son idénticas gramaticalmente'], answer: 1 },
+    { id: 'p:obligacionnecesidadC1:bastacon', kind: 'mcq', q: '"Basta con que firmes aquí" expresa...', options: ['Una obligación completa', 'El mínimo suficiente para lograr algo', 'Una prohibición'], answer: 1 },
+    { id: 'p:obligacionnecesidadC1:cloze', kind: 'cloze', text: 'Nada te ___ a leerlo si no quieres. (imponer una obligación)', accept: ['obliga'] },
+    { id: 'p:obligacionnecesidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "tener la obligación de" y "tener la necesidad de"?', back: 'obligación es un deber, a menudo social o legal; necesidad surge de una carencia real, no de una norma' }
+  ]
 }
 
 ];
