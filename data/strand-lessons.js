@@ -24631,6 +24631,50 @@ window.STRAND_LESSONS = [
     { id: 'p:puntualidadsingularidadC1:cloze', kind: 'cloze', text: 'Se exige actuar sin ___ ante la emergencia. (sin tardanza)', accept: ['demora'] },
     { id: 'p:puntualidadsingularidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "en hora" y "por los pelos"?', back: '"en hora" describe puntualidad normal, sin retraso; "por los pelos" describe llegar a tiempo con un margen mínimo, casi tarde' }
   ]
+},
+
+{
+  id: 'nt-anticipacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:790', 'nociones_generales:C1:791', 'nociones_generales:C1:792', 'nociones_generales:C1:793',
+         'nociones_generales:C1:794', 'nociones_generales:C1:795', 'nociones_generales:C1:796', 'nociones_generales:C1:797',
+         'nociones_generales:C1:798', 'nociones_generales:C1:799', 'nociones_generales:C1:800', 'nociones_generales:C1:801',
+         'nociones_generales:C1:802', 'nociones_generales:C1:803'],
+  title: 'Anticipación en C1: prever, predecir y "por anticipado"',
+  summary: 'Anticiparse a algo en C1 exige distinguir prever de predecir, un cambio "prematuro" de uno "precoz", y saber que "adelantarse" no siempre es prudencia — a veces implica llegar antes de lo esperado sin que eso sea deseable.',
+  sections: [
+    { h: 'Sustantivos y adjetivos de la persona anticipadora', html: '<i>Anticipación</i> es el sustantivo general. <i>Madrugador</i> describe a quien se levanta temprano; <i>previsor</i>, a quien planifica con antelación pensando en el futuro.' },
+    { h: 'Sustantivos de lo adelantado', html: '<i>Avance, adelanto</i> son porciones de algo mostradas o entregadas antes de tiempo: <i>un avance informativo, un adelanto de sueldo</i>. <i>Prevención, predicción, pronóstico</i> distinguen matices: prevención es actuar para evitar algo, predicción y pronóstico son afirmaciones sobre el futuro, con pronóstico más asociado a lo técnico (<i>el pronóstico del tiempo</i>).' },
+    { h: 'Adjetivos de lo que llega antes de tiempo', html: '<i>Anticipado</i> describe algo adelantado respecto a su fecha prevista: <i>elecciones anticipadas</i>. <i>Temprano, prematuro, precoz</i> gradúan matices distintos: temprano es simplemente pronto (<i>un amor temprano</i>), prematuro implica que ocurre antes de lo adecuado o deseable (<i>un cambio prematuro</i>), precoz describe un desarrollo adelantado, a menudo positivo (<i>un diagnóstico precoz</i>). <i>Previsto, pronosticado</i> describen lo que ya se sabía o esperaba de antemano.' },
+    { h: 'Verbos de anticiparse y prevenir', html: '<i>Anticipar(se), adelantar(se)</i> son moverse o actuar antes de lo esperado: <i>se anticipó a los acontecimientos, se adelantó a su tiempo</i>. <i>Detectar/actuar a tiempo</i> es hacerlo con la suficiente antelación para que sea útil. <i>Prevenir, prever, predecir, pronosticar</i> distinguen: prevenir es actuar para evitar algo, prever es anticipar mentalmente algo, predecir y pronosticar son afirmar qué ocurrirá, con pronosticar más técnico: <i>prever las consecuencias</i>.' },
+    { h: 'Locuciones de anticipación', html: '<i>Anticipadamente</i> es el adverbio general. <i>Con antelación/anticipación</i> son casi sinónimas: <i>hacen un 10% de descuento si se reserva con antelación</i>. <i>Por anticipado</i> describe algo hecho antes de lo esperado, a veces con matiz de estar adelantándose a un momento formal: <i>celebrar por anticipado</i>.' }
+  ],
+  exponents: [
+    { es: 'Es una persona muy previsora, siempre tiene un plan B.', en: 'He\'s a very foresighted person, he always has a plan B.', register: 'neutral' },
+    { es: 'El médico hizo un diagnóstico precoz que le salvó la vida.', en: 'The doctor made an early diagnosis that saved his life.', register: 'formal' },
+    { es: 'Convocaron elecciones anticipadas tras la crisis de gobierno.', en: 'Early elections were called after the government crisis.', register: 'formal' },
+    { es: 'Prefiere pagar por anticipado para no preocuparse después.', en: 'He prefers to pay in advance to avoid worrying later.', register: 'neutral' },
+    { es: 'Los expertos pronostican un invierno más frío de lo habitual.', en: 'Experts forecast a colder-than-usual winter.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un parto prematuro, antes de lo recomendable.', en: 'A premature birth, before what\'s advisable.', note: 'prematuro implica algo antes de lo adecuado, con connotación de riesgo' },
+    { es: 'Un talento precoz, adelantado para su edad.', en: 'A precocious talent, advanced for his age.', note: 'precoz describe un desarrollo adelantado, casi siempre positivo' }
+  ],
+  pitfalls: [
+    '"Prematuro" implica que algo ocurre antes de lo adecuado o deseable, a menudo con connotación de riesgo — "precoz" describe un desarrollo adelantado, generalmente positivo.',
+    '"Prevenir" no es sinónimo de "prever": prevenir es actuar para evitar algo, prever es anticipar mentalmente que algo va a ocurrir, sin necesariamente actuar para impedirlo.',
+    '"Adelantarse" no siempre es prudencia positiva — puede describir simplemente llegar o actuar antes de lo esperado, sin que eso sea necesariamente deseable.'
+  ],
+  examples: [
+    { es: 'Detectaron el problema a tiempo y evitaron el desastre.', en: 'They detected the problem in time and avoided disaster.' },
+    { es: 'Se adelantó al resto del equipo con su propuesta.', en: 'He got ahead of the rest of the team with his proposal.' },
+    { es: 'El anuncio se hizo con la anticipación suficiente.', en: 'The announcement was made with sufficient advance notice.' }
+  ],
+  probes: [
+    { id: 'p:anticipacionC1:prematuroprecoz', kind: 'mcq', q: '¿Qué diferencia hay entre "prematuro" y "precoz"?', options: ['Ninguna', 'Prematuro implica riesgo/inadecuación; precoz describe desarrollo adelantado, casi siempre positivo', 'Precoz es siempre negativo'], answer: 1 },
+    { id: 'p:anticipacionC1:preverprevenir', kind: 'mcq', q: '¿Qué diferencia hay entre "prever" y "prevenir"?', options: ['Ninguna, son sinónimos', 'Prever es anticipar mentalmente; prevenir es actuar para evitar algo', 'Prevenir es solo médico'], answer: 1 },
+    { id: 'p:anticipacionC1:cloze', kind: 'cloze', text: 'Prefiere pagar por ___ para no tener que preocuparse después. (antes de lo esperado)', accept: ['anticipado'] },
+    { id: 'p:anticipacionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "predicción/pronóstico" y "prevención"?', back: 'predicción/pronóstico son afirmaciones sobre el futuro; prevención es actuar para evitar que algo ocurra' }
+  ]
 }
 
 ];
