@@ -794,9 +794,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Carta comercial (Nivel C1)** · 36 pts · `generos_discursivos C1 § 2.3.1. Carta comercial (Nivel C1)`  — gn-carta-comercial-c1, gn-carta-reclamacion-c1 (split: the subsection's raw ids cover two genuinely distinct sub-genres, a sales/AIDA letter and a complaint letter)
 - [x] **Composición escrita (Nivel C1)** · 8 pts · `generos_discursivos C1 § 2.4.1. Composición escrita (Nivel `  — gn-composicion-escrita-c1
 - [x] **Trabajo de tipo académico (Nivel C1)** · 11 pts · `generos_discursivos C1 § 2.4.2. Trabajo de tipo académico (`  — gn-trabajo-academico-c1
-- [ ] **Macrofunción descriptiva: personas** · 28 pts · `generos_discursivos C1 § 3.1. Macrofunción descriptiva: per`
-- [ ] **Macrofunción descriptiva: objetos** · 25 pts · `generos_discursivos C1 § 3.2. Macrofunción descriptiva: obj`
-- [ ] **Macrofunción descriptiva: lugares** · 26 pts · `generos_discursivos C1 § 3.3. Macrofunción descriptiva: lug`
+- [x] **Macrofunción descriptiva: personas** · 28 pts · `generos_discursivos C1 § 3.1. Macrofunción descriptiva: per`  — gn-descriptiva-personas-c1 (the "Elementos lingüísticos" sub-part is a bare taxonomy of adjective/verb/deixis categories with no examples; the teachable content is the anclaje/aspectualización/puesta en relación process, which the lesson covers)
+- [x] **Macrofunción descriptiva: objetos** · 25 pts · `generos_discursivos C1 § 3.2. Macrofunción descriptiva: obj`  — gn-descriptiva-objetos-c1 (same caveat re: elementos lingüísticos)
+- [x] **Macrofunción descriptiva: lugares** · 26 pts · `generos_discursivos C1 § 3.3. Macrofunción descriptiva: lug`  — gn-descriptiva-lugares-c1 (same caveat re: elementos lingüísticos)
 - [ ] **Macrofunción narrativa** · 26 pts · `generos_discursivos C1 § 3.4. Macrofunción narrativa`
 - [ ] **Macrofunción expositiva** · 40 pts · `generos_discursivos C1 § 3.5. Macrofunción expositiva`
 - [ ] **Macrofunción argumentativa** · 50 pts · `generos_discursivos C1 § 3.6. Macrofunción argumentativa`

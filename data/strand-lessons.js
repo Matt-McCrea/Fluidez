@@ -28623,6 +28623,131 @@ window.STRAND_LESSONS = [
 },
 
 {
+  id: 'gn-descriptiva-personas-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:627', 'generos_discursivos:C1:628', 'generos_discursivos:C1:629', 'generos_discursivos:C1:630',
+         'generos_discursivos:C1:631', 'generos_discursivos:C1:632', 'generos_discursivos:C1:633', 'generos_discursivos:C1:634',
+         'generos_discursivos:C1:635', 'generos_discursivos:C1:636', 'generos_discursivos:C1:644', 'generos_discursivos:C1:645'],
+  title: 'Describir a una persona: anclar, detallar, relacionar',
+  summary: 'A description of a person that is just a list of adjectives has skipped two of the three moves that make description work: anchoring the person in a general frame before the details, and relating those details to something beyond the person — a comparison, a consequence, a judgment.',
+  sections: [
+    { h: 'Anclaje: sitúa antes de detallar', html: 'Toda descripción arranca situando a la persona en un marco general — quién es, qué papel ocupa, en qué contexto aparece — antes de pasar a los rasgos concretos.' },
+    { h: 'Aspectualización: el desglose en rasgos', html: 'De lo general se pasa a los rasgos concretos: aspecto físico, forma de vestir, manera de moverse, carácter — cada rasgo aporta información nueva, no repite el anterior con otras palabras.' },
+    { h: 'Puesta en relación: por qué importa', html: 'El último paso relaciona lo descrito con algo externo — una comparación, una opinión ajena, una consecuencia — que le da sentido a la descripción más allá del catálogo de rasgos.' },
+    { h: 'Objetivo o subjetivo, pero no mezclado', html: 'Una descripción objetiva se atiene a hechos verificables; una subjetiva se tiñe deliberadamente del punto de vista de quien describe. Elegir uno y mantenerlo es lo que da coherencia al texto.' }
+  ],
+  moves: [
+    { h: 'Anclaje', html: 'Situar a la persona en un marco general antes de entrar en detalle.' },
+    { h: 'Aspectualización', html: 'Desglosar los rasgos concretos — físico, vestimenta, carácter, comportamiento — sin repetirse.' },
+    { h: 'Puesta en relación', html: 'Conectar lo descrito con algo externo: una comparación, un efecto, una valoración.' }
+  ],
+  model: {
+    title: 'Descripción subjetiva de una persona',
+    text: 'Ángel y Ana habían vivido juntos durante treinta años y cada día que pasaba se parecían más el uno al otro. [anclaje]\n\nSu comportamiento con los demás era amable pero distante, casi antipático; sus hábitos eran siempre los mismos a las mismas horas, como dos máquinas programadas; su aspecto era muy cuidado, pero un poco cursi: él llevaba pajarita a todas horas, incluso en casa, y ella unas blusas con puntillas que le cubrían el cuello. [aspectualización]\n\nOtro aspecto que llamaba la atención de la pareja eran sus voces un tanto agudas y desagradables. Rara vez recibían visitas. [puesta en relación]'
+  },
+  checklist: [
+    '¿Sitúa el texto a la persona en un marco general antes de los detalles?',
+    '¿Aporta cada rasgo descrito información nueva, sin repetir el anterior?',
+    '¿Relaciona el final la descripción con algo externo (comparación, efecto, valoración)?',
+    '¿Mantiene el texto un único punto de vista, objetivo o subjetivo, sin mezclarlos?'
+  ],
+  examples: [
+    { es: 'Ángel y Ana formaban una pareja insólita desde el punto de vista estándar de la sociedad actual.', en: 'Ángel and Ana made an unusual couple by today\'s standard view of society.' },
+    { es: 'Su aspecto era muy cuidado, pero un poco cursi.', en: 'Their appearance was very well-kept, but a bit old-fashioned.' },
+    { es: 'Había quien los comparaba con aquella antigua pareja del cine: el gordo y el flaco.', en: 'Some people compared them to that old film duo: the fat one and the thin one.' }
+  ],
+  probes: [
+    { id: 'p:descpersonasC1:orden', kind: 'mcq', q: '¿Cuál es el orden habitual de una descripción de persona bien construida?',
+      options: ['Rasgos concretos, luego marco general', 'Anclaje general, aspectualización en rasgos, puesta en relación', 'Solo una lista de adjetivos, sin orden'], answer: 1 },
+    { id: 'p:descpersonasC1:mezcla', kind: 'mcq', q: '¿Qué debilita una descripción de persona?',
+      options: ['Mantener un único punto de vista', 'Mezclar el punto de vista objetivo y el subjetivo sin criterio', 'Relacionar la descripción con algo externo'], answer: 1 },
+    { id: 'p:descpersonasC1:cloze', kind: 'cloze', text: 'Su aspecto ___ muy cuidado, pero un poco cursi. (ser, imperfecto)', accept: ['era'] },
+    { id: 'p:descpersonasC1:recall', kind: 'recall', front: '¿Qué aporta la "puesta en relación" al final de una descripción de persona?', back: 'conecta lo descrito con algo externo — una comparación, un efecto, una valoración — que le da sentido más allá del catálogo de rasgos' }
+  ]
+},
+
+{
+  id: 'gn-descriptiva-objetos-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:682', 'generos_discursivos:C1:683', 'generos_discursivos:C1:684', 'generos_discursivos:C1:685',
+         'generos_discursivos:C1:686', 'generos_discursivos:C1:687', 'generos_discursivos:C1:688', 'generos_discursivos:C1:689',
+         'generos_discursivos:C1:690', 'generos_discursivos:C1:691', 'generos_discursivos:C1:702'],
+  title: 'Describir un objeto: del hecho general a la vivencia propia',
+  summary: 'The same object supports two entirely different descriptions depending on whether "anchoring" means a verifiable general fact (a tomato is a widely consumed vegetable) or a personal memory (a tomato is the thing that ruined a childhood snack) — mixing the two registers inside one description is what makes readers lose track of what kind of text they are reading.',
+  sections: [
+    { h: 'Anclaje objetivo: el hecho verificable', html: 'Una descripción objetiva ancla el objeto en un hecho general y comprobable — su lugar en la alimentación, su origen, su función — sin implicar a quien describe.' },
+    { h: 'Anclaje subjetivo: la vivencia personal', html: 'Una descripción subjetiva ancla el objeto en una experiencia propia — un recuerdo, una anécdota — que determina cómo se percibirán después los rasgos del objeto.' },
+    { h: 'Aspectualización y puesta en relación', html: 'Tras el anclaje, se detallan los rasgos concretos (forma, color, medidas, sabor) y se relaciona el objeto con algo externo: su importancia económica en lo objetivo, o su efecto emocional duradero en lo subjetivo.' }
+  ],
+  moves: [
+    { h: 'Anclaje', html: 'Situar el objeto en un hecho general verificable (objetivo) o en una vivencia personal (subjetivo).' },
+    { h: 'Aspectualización', html: 'Detallar forma, color, medidas u otros rasgos concretos del objeto.' },
+    { h: 'Puesta en relación', html: 'Conectar el objeto descrito con su importancia externa o su efecto en quien lo describe.' }
+  ],
+  model: {
+    title: 'Descripción subjetiva de un objeto',
+    text: 'Cuando era pequeña estuve enferma y mis padres me enviaron al pueblo. Mi tío tenía una huerta llena de tomates y, como tienen muchas vitaminas, me daban tomates a todas horas. [anclaje]\n\nAquellas bolas rojas llenas de agua me miraban desde la huerta como guerreros dispuestos a atacar con su pulpa asquerosa y las semillas que siempre me daban ganas de vomitar. [aspectualización]\n\nYo quería comer chocolate, como todos los niños. No obstante, mi tía me daba zumos de tomate para merendar. Nunca he vuelto a comer un tomate en mi vida. [puesta en relación]'
+  },
+  checklist: [
+    '¿Distingue el texto claramente si el anclaje es un hecho verificable o una vivencia personal?',
+    '¿Detalla la aspectualización rasgos concretos del objeto, no solo impresiones vagas?',
+    '¿Relaciona el final el objeto con algo externo: su importancia general o su efecto en quien lo describe?'
+  ],
+  examples: [
+    { es: 'El tomate fresco o en conserva forma parte de la alimentación básica del ser humano.', en: 'Fresh or canned tomato is part of basic human diet.' },
+    { es: 'El cultivo más extenso se encuentra en el Mediterráneo.', en: 'The largest cultivation is found in the Mediterranean.' },
+    { es: 'Nunca he vuelto a comer un tomate en mi vida.', en: 'I have never eaten a tomato again in my life.' }
+  ],
+  probes: [
+    { id: 'p:descobjetosC1:anclaje', kind: 'mcq', q: '¿Qué tipo de anclaje usa una descripción objetiva de un objeto?',
+      options: ['Una vivencia personal del que describe', 'Un hecho general y verificable', 'Ninguno, empieza directamente por los rasgos'], answer: 1 },
+    { id: 'p:descobjetosC1:relacion', kind: 'mcq', q: 'En una descripción subjetiva de un objeto, ¿con qué se relaciona el objeto al final?',
+      options: ['Con su importancia económica general', 'Con el efecto duradero que tuvo en quien lo describe', 'Con ningún otro elemento'], answer: 1 },
+    { id: 'p:descobjetosC1:cloze', kind: 'cloze', text: 'El tomate ___ entre los productos de mayor consumo. (figurar)', accept: ['figura'] },
+    { id: 'p:descobjetosC1:recall', kind: 'recall', front: '¿Qué diferencia el anclaje objetivo del anclaje subjetivo al describir un objeto?', back: 'el objetivo parte de un hecho general verificable; el subjetivo parte de una vivencia o recuerdo personal' }
+  ]
+},
+
+{
+  id: 'gn-descriptiva-lugares-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:732', 'generos_discursivos:C1:733', 'generos_discursivos:C1:734', 'generos_discursivos:C1:735',
+         'generos_discursivos:C1:736', 'generos_discursivos:C1:737', 'generos_discursivos:C1:738', 'generos_discursivos:C1:739',
+         'generos_discursivos:C1:740', 'generos_discursivos:C1:741', 'generos_discursivos:C1:749', 'generos_discursivos:C1:750'],
+  title: 'Describir un lugar: de fuera adentro, con un porqué',
+  summary: 'The same rented beach house can read as a small paradise or a claustrophobic nightmare depending only on which details the describer chooses to notice and relate back to — the facts (two floors, a small kitchen, distant sea views) barely change; what changes is the anchor and the final relating move.',
+  sections: [
+    { h: 'Anclaje: el contexto que precede al lugar', html: 'Antes de describir el lugar en sí, se sitúa el contexto que lleva hasta él — un viaje, una decisión, una comparación previa con otro lugar.' },
+    { h: 'Aspectualización: de lo general a las partes', html: 'El lugar se recorre de lo general (la urbanización, el edificio) a sus partes (planta baja, dormitorios, terraza), como si el lector avanzara físicamente por él.' },
+    { h: 'Puesta en relación: el porqué', html: 'El cierre conecta el lugar descrito con algo externo — otras personas que lo comparten, un lugar distinto con el que se compara, una conclusión sobre lo que de verdad le gusta a quien describe.' }
+  ],
+  moves: [
+    { h: 'Anclaje', html: 'Situar el contexto que lleva al lugar: un viaje, una decisión, una comparación previa.' },
+    { h: 'Aspectualización', html: 'Recorrer el lugar de lo general a sus partes concretas, como un desplazamiento físico.' },
+    { h: 'Puesta en relación', html: 'Cerrar conectando el lugar con algo externo: otras personas, un lugar distinto, una conclusión personal.' }
+  ],
+  model: {
+    title: 'Descripción subjetiva de un lugar',
+    text: 'Me gusta la montaña, por eso, cuando tengo que ir a la playa, nada me parece bien. Por ejemplo la casa que alquilaron mis padres el año pasado para veranear. [anclaje]\n\nEra uno de esos horribles chalets adosados que te obligan a compartir todo con los vecinos. El chalet no era muy espacioso: tenía dos plantas y una pequeña terraza, desde la que se podía ver el mar (muy lejos y muy poco). Los dormitorios estaban en la segunda planta, bajo la terraza, y por las noches hacía un calor espantoso. [aspectualización]\n\nRecordaba entonces el refugio de montaña en el que había estado el mes anterior: paredes de piedra, chimenea, muebles muy sencillos, pero de madera; sin ruidos, sin olores. Definitivamente, lo que me gusta es la montaña. [puesta en relación]'
+  },
+  checklist: [
+    '¿Sitúa el anclaje el contexto que lleva hasta el lugar, antes de describirlo?',
+    '¿Recorre la aspectualización el lugar de lo general a sus partes, como un desplazamiento?',
+    '¿Cierra la puesta en relación conectando el lugar con algo externo, no solo con más datos?'
+  ],
+  examples: [
+    { es: 'La urbanización estaba bordeada por una extensa zona ajardinada.', en: 'The development was bordered by an extensive landscaped area.' },
+    { es: 'Los dormitorios estaban en la segunda planta, bajo la terraza.', en: 'The bedrooms were on the second floor, beneath the terrace.' },
+    { es: 'Definitivamente, lo que me gusta es la montaña.', en: 'Definitely, what I like is the mountains.' }
+  ],
+  probes: [
+    { id: 'p:desclugaresC1:aspectualizacion', kind: 'mcq', q: '¿Cómo avanza la aspectualización al describir un lugar?',
+      options: ['De las partes concretas al conjunto general', 'De lo general (el conjunto) a las partes concretas', 'Sin ningún orden particular'], answer: 1 },
+    { id: 'p:desclugaresC1:relacion', kind: 'mcq', q: '¿Qué logra la puesta en relación al final de una descripción de lugar?',
+      options: ['Añadir más datos físicos del lugar', 'Conectar el lugar con algo externo: otro lugar, otras personas, una conclusión', 'Repetir el anclaje inicial'], answer: 1 },
+    { id: 'p:desclugaresC1:cloze', kind: 'cloze', text: 'Los dormitorios ___ en la segunda planta. (estar, imperfecto)', accept: ['estaban'] },
+    { id: 'p:desclugaresC1:recall', kind: 'recall', front: '¿Por qué la misma casa de vacaciones puede describirse como paraíso o como pesadilla?', back: 'porque el anclaje y la puesta en relación eligen qué detalles notar y con qué conectarlos, no porque cambien los hechos' }
+  ]
+},
+
+{
   id: 'gn-resena-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:44'],
   title: 'La reseña crítica',
