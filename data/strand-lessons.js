@@ -22448,6 +22448,114 @@ window.STRAND_LESSONS = [
     { id: 'p:tiemposindicativoC1:cloze', kind: 'cloze', text: '¿No me ___ olvidado de algo? (futuro perfecto, sustituye a "espero no haber...")', accept: ['habré'] },
     { id: 'p:tiemposindicativoC1:recall', kind: 'recall', front: '¿Qué variedades del español usan el indefinido en lugar del perfecto incluso para el propio día?', back: 'amplias zonas de Hispanoamérica y el norte y sur de España' }
   ]
+},
+
+{
+  id: 'gr-tiempos-subjuntivo-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:451', 'gramatica:C1:452', 'gramatica:C1:454', 'gramatica:C1:455', 'gramatica:C1:456',
+         'gramatica:C1:458', 'gramatica:C1:461', 'gramatica:C1:462', 'gramatica:C1:467', 'gramatica:C1:471'],
+  title: 'Tiempos verbales de subjuntivo en C1: lo que decide la negación',
+  summary: 'En C1 el subjuntivo deja de ser "la forma que va después de ciertas expresiones" y se convierte en una elección real: la misma frase negada puede llevar indicativo o subjuntivo según lo que el hablante quiera decir exactamente. Aprender a elegir el modo es aprender a decir dos cosas distintas con las mismas palabras.',
+  sections: [
+    { h: 'El presente de subjuntivo sin imperativo previo', html: 'Fuera de la subordinación, el presente de subjuntivo puede llevar matiz desiderativo y despectivo a la vez: <i>Así te lleves un buen susto</i> (no es un deseo amable). La fórmula <i>que</i> + presente de subjuntivo también funciona como una orden retardada, sin que haya habido antes ningún imperativo: en mitad de una discusión en la que alguien ha guardado silencio, <i>¡Que te calles de una vez, hombre!</i> irrumpe como primera intervención, no como repetición de un mandato anterior.' },
+    { h: 'Verbos de percepción negados: dos lecturas, dos modos', html: 'Cuando se niega un verbo de percepción, el modo de la subordinada revela qué tipo de percepción es. Con lectura intelectual u opinativa, subjuntivo: <i>No veo que tengas motivos</i> (no es que no lo perciba con los ojos, es que no lo considero cierto). Con percepción pura, indicativo o subjuntivo según haya o no ese matiz de opinión: <i>No ve que hay un letrero ahí</i> (simplemente no lo ha mirado) frente a <i>No ve que haya un letrero ahí</i> (duda de que exista).' },
+    { h: 'Verbos de comunicación negados: afirmar o distanciarse', html: 'Lo mismo ocurre con verbos como <i>negar</i>: <i>No niega que es él</i> usa indicativo porque el hablante da por cierto el contenido — simplemente no lo ha negado explícitamente. <i>No niega que sea él</i> usa subjuntivo porque introduce duda o distanciamiento respecto a esa identidad.' },
+    { h: 'La negación en subordinadas causales: ¿qué se niega?', html: '<i>No se marcha porque está cansado</i> niega la oración principal (no se marcha, pero sí está cansado — el cansancio es un hecho aparte). <i>No se marcha porque esté cansado</i> niega precisamente la causa (se marcha, pero no por estar cansado — esa no es la razón). El modo indica, literalmente, qué parte de la frase recibe la negación.' },
+    { h: 'Finales con locuciones, y el resto del paradigma', html: 'Las locuciones finales (<i>a fin de que, con el fin de que, con la intención de que, con la finalidad de que</i>) exigen subjuntivo igual que <i>para que</i>. El imperfecto de subjuntivo traslada los valores desiderativo/despectivo del presente a cualquier coordenada temporal (<i>Así tuviera que volver a hacerlo</i>) y aparece en exclamativas con <i>quién</i> + 3.ª persona para un deseo irrealizable: <i>Quién tuviera tus años.</i> El perfecto de subjuntivo sustituye al futuro perfecto de probabilidad cuando el verbo de creencia que lo introduce se niega: <i>Pienso que se habrá quedado dormido</i> se convierte, negado, en <i>No pienso que se haya quedado dormido</i>. El pluscuamperfecto de subjuntivo repite estos valores orientado a coordenadas de pasado.' }
+  ],
+  contrasts: [
+    { es: 'No creo que sepa la respuesta.', en: "I don't think he knows the answer.", note: 'creencia negada — subjuntivo, no percepción pura' },
+    { es: 'No niega que ha llegado tarde.', en: "He doesn't deny that he's arrived late.", note: 'indicativo — el hablante da el hecho por cierto' },
+    { es: 'No estudia porque tenga miedo al examen, sino porque le interesa.', en: "He doesn't study because he's afraid of the exam, but because he's interested.", note: 'subjuntivo — se niega la causa, no el hecho de estudiar' },
+    { es: 'No pienso que se haya enterado todavía.', en: "I don't think he's found out yet.", note: 'perfecto de subjuntivo sustituyendo al futuro perfecto de probabilidad negado' }
+  ],
+  pitfalls: [
+    'Con verbos de percepción o comunicación negados, el modo no es automático: indicativo cuando el hablante da el contenido por cierto, subjuntivo cuando introduce duda, opinión o distanciamiento — la misma frase cambia de significado con el modo.',
+    'En subordinadas causales negadas, el subjuntivo en la causa (<i>...porque esté cansado</i>) no significa que la acción principal no ocurra — al contrario, ocurre, pero por otra razón.',
+    '<i>¡Que te calles!</i> no exige un imperativo previo que "repetir" — puede ser la primera y única intervención de alguien que hasta ese momento había callado.'
+  ],
+  examples: [
+    { es: 'No dice que esté de acuerdo, solo que lo entiende.', en: "He's not saying he agrees, only that he understands it." },
+    { es: 'No trabaja los sábados porque se lo prohíban, sino porque no quiere.', en: "He doesn't work Saturdays because it's forbidden, but because he doesn't want to." },
+    { es: '¡Quién pudiera estar allí en este momento!', en: 'If only I could be there right now!' }
+  ],
+  probes: [
+    { id: 'p:tiemposubjuntivoC1:causal', kind: 'mcq', q: '"No se marcha porque esté cansado." ¿Qué se niega?', options: ['El hecho de marcharse', 'La causa (el cansancio), no el hecho de marcharse', 'Ambas cosas por igual'], answer: 1 },
+    { id: 'p:tiemposubjuntivoC1:comunicacion', kind: 'mcq', q: '"No niega que es él" vs "no niega que sea él": ¿cuál introduce duda?', options: ['"es él" (indicativo)', '"sea él" (subjuntivo)', 'Ninguna, son idénticas'], answer: 1 },
+    { id: 'p:tiemposubjuntivoC1:cloze', kind: 'cloze', text: 'No pienso que se ___ quedado dormido. (perfecto de subjuntivo, sustituye al futuro perfecto de probabilidad negado)', accept: ['haya'] },
+    { id: 'p:tiemposubjuntivoC1:recall', kind: 'recall', front: '¿Qué fórmula puede funcionar como orden sin que haya habido un imperativo previo?', back: '"que" + presente de subjuntivo (p. ej. ¡Que te calles de una vez!)' }
+  ]
+},
+
+{
+  id: 'gr-imperativo-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:496', 'gramatica:C1:498', 'gramatica:C1:499', 'gramatica:C1:501', 'gramatica:C1:502', 'gramatica:C1:503'],
+  title: 'El imperativo en C1: cuando no manda nada',
+  summary: 'La mayoría de los imperativos en C1 no son órdenes en absoluto — son fórmulas fijas que reprochan, ironizan, ruegan o plantean una condición. Reconocerlos exige separar la forma (imperativo) del acto de habla real, que casi nunca es "mandar".',
+  sections: [
+    { h: 'Refuerzo del imperativo', html: 'El imperativo puede reforzarse añadiendo una coletilla que lo hace inapelable: <i>Vete ya, he dicho.</i> El "he dicho" no aporta información nueva, cierra la negociación.' },
+    { h: 'Imperativos lexicalizados con matiz irónico', html: 'Fórmulas fijas como <i>¡Mira qué bien!, ¡Vaya, vaya!, ¡Mira tú!</i> tienen forma de imperativo pero no piden que nadie mire nada — expresan sorpresa, desdén o ironía ante algo que se acaba de decir u observar.' },
+    { h: 'Valor condicional: el imperativo como "si..."', html: '<i>Abre la caja y verás qué sorpresa</i> no es una orden seguida de una promesa — equivale a <i>Si abres la caja, verás qué sorpresa.</i> El imperativo hace aquí el trabajo de una prótasis condicional.' },
+    { h: 'Imperativos ponderativos: cualidad, hartazgo, ruego', html: 'Tres usos lexicalizados más, ninguno imperativo en sentido estricto: <i>Mira que eres egoísta</i> pondera una cualidad del oyente (no le pide que mire); <i>¡Dale!</i> expresa molestia o irritación ante la insistencia de alguien (no le pide que "le dé" nada); <i>Anda... ve tú</i> es un ruego suavizado, donde "anda" solo introduce la petición real que sigue.' }
+  ],
+  contrasts: [
+    { es: 'Cállate ya, te lo he dicho tres veces.', en: "Be quiet already, I've told you three times.", note: 'refuerzo del imperativo, cierra la discusión' },
+    { es: '¡Vaya, vaya, con lo que has hecho!', en: 'Well, well, look what you\'ve done!', note: 'imperativo lexicalizado con matiz irónico, no manda mirar' },
+    { es: 'Pruébalo y verás qué fácil es.', en: "Try it and you'll see how easy it is.", note: 'valor condicional: "si lo pruebas..."' },
+    { es: 'Mira que eres testarudo.', en: "You're so stubborn, I swear.", note: 'ponderativo de cualidad, no es una orden de mirar' }
+  ],
+  pitfalls: [
+    '<i>Mira que eres egoísta</i>, <i>¡Vaya, vaya!</i> y <i>¡Dale!</i> tienen forma de imperativo pero ninguno manda una acción — traducirlos literalmente ("look that...", "give it") produce un sinsentido.',
+    'El valor condicional del imperativo (<i>abre la caja y verás</i>) solo funciona con "y" + futuro — no es simplemente "haz X y luego Y" como secuencia de acciones.',
+    '"Anda" delante de otro imperativo (<i>anda, ve tú</i>) no es una orden en sí misma, sino una partícula que suaviza el ruego que viene después.'
+  ],
+  examples: [
+    { es: 'Ándale, que se hace tarde, he dicho.', en: "Come on, it's getting late, I said so." },
+    { es: '¡Mira tú qué casualidad!', en: 'Well, what a coincidence!' },
+    { es: 'Insiste otra vez y verás cómo se enfada.', en: "Keep insisting and you'll see how angry he gets." }
+  ],
+  probes: [
+    { id: 'p:imperativoC1:condicional', kind: 'mcq', q: '"Ábrelo y verás qué sorpresa." ¿A qué equivale?', options: ['A una orden seguida de una promesa aparte', 'A "si lo abres, verás qué sorpresa"', 'A una amenaza'], answer: 1 },
+    { id: 'p:imperativoC1:ponderativo', kind: 'mcq', q: '"¡Dale!" dicho ante la insistencia de alguien expresa...', options: ['Una orden de entregar algo', 'Molestia o irritación', 'Alegría'], answer: 1 },
+    { id: 'p:imperativoC1:cloze', kind: 'cloze', text: 'Vete ya, he ___. (refuerzo del imperativo, lo hace inapelable)', accept: ['dicho'] },
+    { id: 'p:imperativoC1:recall', kind: 'recall', front: '¿Qué hace "anda" delante de otro imperativo, como en "anda, ve tú"?', back: 'suaviza el ruego o la petición que sigue, no manda nada por sí mismo' }
+  ]
+},
+
+{
+  id: 'gr-formas-no-personales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:517', 'gramatica:C1:518', 'gramatica:C1:519', 'gramatica:C1:520', 'gramatica:C1:523',
+         'gramatica:C1:524', 'gramatica:C1:525', 'gramatica:C1:526', 'gramatica:C1:528', 'gramatica:C1:529', 'gramatica:C1:530'],
+  title: 'Formas no personales en C1: infinitivo, gerundio y participio fuera del verbo',
+  summary: 'El infinitivo, el gerundio y el participio hacen en C1 trabajos que no tienen nada que ver con completar una perífrasis: lanzan una exclamativa, sustituyen a una cláusula temporal o condicional entera, o construyen una oración absoluta sin ningún conector. Cada forma no personal tiene su propio catálogo de usos independientes.',
+  sections: [
+    { h: 'Infinitivo independiente y en relativas', html: 'El infinitivo puede modalizarse en exclamativas e interrogativas sin ningún verbo conjugado: <i>¡Descansar tres meses! ¡Qué suerte!</i>, <i>¿Decirle yo lo que pienso? Ni loco.</i> Como complemento de nombre o adjetivo funciona con normalidad (<i>su deseo de marcharse</i>, <i>deseoso de verte</i>), pero en relativas tiene una restricción estricta: el antecedente debe ser indefinido. <i>Tengo un problema que resolver</i> es correcto; <i>*Tengo el problema que resolver</i>, con antecedente definido, es agramatical.' },
+    { h: 'Infinitivo con valor nominal, en tres grados', html: 'El infinitivo puede recategorizarse como sustantivo pleno, sin rastro verbal (<i>los deberes conyugales</i>); parcialmente, conservando parte de su origen verbal en la forma pero funcionando como nombre (<i>el cantar de los pájaros</i>); o mínimamente, actuando como sujeto mientras retiene complementación verbal como un adverbio (<i>el cantar bien es una ventaja</i>, donde "bien" solo puede depender de un verbo).' },
+    { h: 'Gerundio independiente, predicativo y como adjunto', html: 'El gerundio se modaliza igual que el infinitivo: exclamativo (<i>¡Siempre protestando por todo!</i>), interrogativo (<i>¿Yo pidiéndole perdón? Ni loco</i>) y con valor de mandato general (<i>¡Andando que es gerundio!</i>). Dentro de un sintagma nominal puede funcionar como predicativo: <i>Sus ojos mirándome con esa pena me conmovieron.</i> Como adjunto interno expresa modo, ligado estrechamente al verbo (<i>me pidieron perdón cantando</i>); como adjunto externo sustituye a una cláusula temporal (<i>llegando yo, apareció él</i>) o condicional (<i>estudiando más lograrás aprobar</i>).' },
+    { h: 'Participio: pasivas, exclamativas y construcciones absolutas', html: 'El participio construye pasivas de resultado (<i>Este pueblo está maldito</i>), se modaliza en exclamativas e interrogativas sin verbo conjugado (<i>¡Encerrada en estas cuatro paredes!</i>, <i>¿Confundido? No, estoy segurísimo</i>) y forma construcciones absolutas sin ningún conector que las introduzca: <i>Terminada la investigación, se cerró el caso</i> equivale a "cuando/después de que se terminó la investigación", sin necesidad de "cuando" ni "una vez que".' }
+  ],
+  contrasts: [
+    { es: 'Tengo una decisión que tomar antes del viernes.', en: 'I have a decision to make before Friday.', note: 'antecedente indefinido — infinitivo en relativa, correcto' },
+    { es: 'El nadar todos los días le sienta bien.', en: 'Swimming every day is good for him.', note: 'infinitivo con valor nominal parcial, como sujeto' },
+    { es: 'Viniendo tú, todo se arregla.', en: 'With you coming, everything gets sorted out.', note: 'gerundio como adjunto externo condicional/causal' },
+    { es: 'Cerrada la tienda, se apagaron las luces.', en: 'With the shop closed, the lights went out.', note: 'construcción absoluta de participio, sin conector' }
+  ],
+  pitfalls: [
+    'El infinitivo en relativas exige antecedente indefinido: <i>un problema que resolver</i> es correcto, pero <i>*el problema que resolver</i>, con artículo definido, no lo es.',
+    'Las construcciones absolutas de participio (<i>terminada la investigación...</i>) no llevan "cuando" ni "una vez que" — el conector está implícito en la propia construcción, añadirlo sería redundante y extraño.',
+    'El gerundio predicativo dentro de un SN (<i>sus ojos mirándome...</i>) es más literario y menos frecuente que el gerundio como adjunto — no debe generalizarse a cualquier contexto.'
+  ],
+  examples: [
+    { es: 'No tengo nada que añadir.', en: "I don't have anything to add." },
+    { es: 'Acabada la reunión, todos se marcharon en silencio.', en: 'With the meeting over, everyone left in silence.' },
+    { es: '¿Yo, pidiendo perdón a él? Ni hablar.', en: 'Me, apologizing to him? No way.' }
+  ],
+  probes: [
+    { id: 'p:formasnopersonalesC1:relativa', kind: 'mcq', q: '¿Cuál es correcta?', options: ['Tengo el problema que resolver.', 'Tengo un problema que resolver.', 'Ambas son igual de correctas.'], answer: 1 },
+    { id: 'p:formasnopersonalesC1:absoluta', kind: 'mcq', q: '"Terminada la investigación, se cerró el caso." ¿Qué conector falta?', options: ['Ninguno — el valor temporal está implícito en la construcción', 'Falta "cuando" y debería añadirse', 'Falta "porque"'], answer: 0 },
+    { id: 'p:formasnopersonalesC1:cloze', kind: 'cloze', text: '___ yo, apareció él. (gerundio como adjunto externo temporal, de "llegar")', accept: ['Llegando'] },
+    { id: 'p:formasnopersonalesC1:recall', kind: 'recall', front: '¿Qué restricción tiene el infinitivo en oraciones de relativo?', back: 'el antecedente debe ser indefinido (un problema que resolver, no *el problema que resolver)' }
+  ]
 }
 
 ];
