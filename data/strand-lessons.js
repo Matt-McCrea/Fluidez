@@ -28295,6 +28295,45 @@ window.STRAND_LESSONS = [
     { id: 'p:destacarsilenciotemacierreC1:cloze', kind: 'cloze', text: 'Perdona, te tengo que ___, me llaman por la otra línea. (cerrar la conversación)', accept: ['dejar'] },
     { id: 'p:destacarsilenciotemacierreC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a propósito de..." y "en otro orden de cosas..."?', back: '"a propósito de" conecta el nuevo tema con algo mencionado antes; "en otro orden de cosas" cambia de tema de forma más neutra, sin esa conexión explícita' }
   ]
+},
+
+{
+  id: 'gn-resena-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:44'],
+  title: 'La reseña crítica',
+  summary: 'A review that only summarizes the plot has failed at its one job: judging. A C1 reseña states a clear verdict, backs it with specific evidence from the work itself, and closes with a recommendation that names who the work is (or isn\'t) for — not just whether it was "good".',
+  sections: [
+    { h: 'Para qué sirve', html: 'Una reseña no es un resumen — es un juicio razonado que ayuda a un lector a decidir si le merece la pena acercarse a una obra (libro, película, disco, exposición). El resumen es solo el contexto mínimo necesario para que el juicio se entienda.' },
+    { h: 'El registro', html: 'Personal pero argumentado: la primera persona del crítico es legítima ("me parece", "considero"), pero cada valoración debe apoyarse en un ejemplo concreto de la obra, no quedarse en adjetivos sueltos ("interesante", "bueno").' },
+    { h: 'Lo que casi todo el mundo olvida', html: 'Una reseña sin veredicto claro no es una reseña. Describir la trama con detalle y no decir nunca si la obra vale la pena deja al lector exactamente donde empezó.' }
+  ],
+  moves: [
+    { h: 'Ficha y contexto mínimo', html: 'Título, autor/director, y una frase de contexto — el género, el momento en la carrera del autor, o por qué se comenta ahora.' },
+    { h: 'Resumen brevísimo, sin destripar el final', html: 'Lo justo para que el lector entienda de qué trata, sin arruinar giros o desenlaces importantes.' },
+    { h: 'Valoración con evidencia concreta', html: 'El núcleo de la reseña: qué funciona y qué no, cada afirmación respaldada por un ejemplo específico de la obra, no una opinión genérica.' },
+    { h: 'Veredicto y recomendación dirigida', html: 'Una conclusión clara que dice, además de si la obra es buena, PARA QUIÉN la recomienda — no toda buena obra es para todos los lectores.' }
+  ],
+  model: {
+    title: 'Reseña de una novela',
+    text: 'Con "El silencio de la marea", Andrea Puig confirma el talento ya apuntado en su primera novela, esta vez con un pulso narrativo más seguro.\n\nLa historia sigue a una restauradora de arte que descubre, tras la muerte de su padre, una serie de cartas que ponen en duda todo lo que creía saber sobre su familia. Sin adelantar cómo termina, baste decir que la investigación la lleva de Lisboa a un pequeño pueblo gallego.\n\nLo mejor de la novela es su ritmo: los capítulos cortos, alternando presente y pasado, mantienen una tensión que pocas novelas de este tipo logran sin caer en el truco fácil. El punto débil está en los personajes secundarios, dibujados con menos cuidado que la protagonista, casi como funciones de la trama más que personas.\n\nEn conjunto, una novela sólida y bien construida, recomendable para quien disfrute del misterio familiar pausado más que de la acción trepidante; quien busque un ritmo más vertiginoso puede sentirse defraudado.'
+  },
+  checklist: [
+    '¿Da un veredicto claro, no solo una descripción neutra de la obra?',
+    '¿Respalda cada valoración con un ejemplo concreto de la obra misma?',
+    '¿Evita revelar el final o los giros principales en el resumen?',
+    '¿La recomendación final dice para qué tipo de lector/espectador es la obra, no solo si es "buena"?'
+  ],
+  examples: [
+    { es: 'Lo mejor de la película es su fotografía, que convierte cada escena en un cuadro.', en: 'The best thing about the film is its cinematography, which turns every scene into a painting.' },
+    { es: 'El desenlace, sin embargo, se siente precipitado tras un desarrollo tan cuidado.', en: 'The ending, however, feels rushed after such a carefully built development.' },
+    { es: 'Recomendable para quien disfrute del cine pausado, no para quien busque acción constante.', en: 'Recommended for those who enjoy slow cinema, not for those looking for constant action.' }
+  ],
+  probes: [
+    { id: 'p:resenaC1:veredicto', kind: 'mcq', q: '¿Qué es lo que no puede faltar en una reseña, según el texto?', options: ['Un resumen exhaustivo de la trama', 'Un veredicto claro respaldado por evidencia concreta', 'Una lista de premios del autor'], answer: 1 },
+    { id: 'p:resenaC1:recomendacion', kind: 'mcq', q: '¿Qué debe especificar la recomendación final de una buena reseña?', options: ['Solo si la obra es buena o mala', 'Para qué tipo de lector o espectador es la obra', 'El precio de la entrada'], answer: 1 },
+    { id: 'p:resenaC1:cloze', kind: 'cloze', text: 'Sin ___ cómo termina, baste decir que la investigación la lleva a Galicia. (revelar de antemano)', accept: ['adelantar'] },
+    { id: 'p:resenaC1:recall', kind: 'recall', front: '¿Por qué una reseña que solo resume la trama sin juzgarla ha fallado en su función?', back: 'porque su función es ayudar al lector a decidir si la obra le merece la pena, no simplemente describirla' }
+  ]
 }
 
 ];

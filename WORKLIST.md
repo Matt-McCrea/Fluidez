@@ -786,7 +786,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Cortesía verbal atenuadora** · 30 pts · `tacticas_pragmaticas C1 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-c1
 
 ### C1 · genre (0/14)
-- [ ] **Lista alfabética de géneros orales y escritos** · 51 pts · `generos_discursivos C1 § 1.1. Lista alfabética de géneros o`
+- [x] **Lista alfabética de géneros orales y escritos** · 51 pts · `generos_discursivos C1 § 1.1. Lista alfabética de géneros o`  — gn-resena-c1 (rest of the 51 spec points are bare genre names with zero worked examples, a pure taxonomy with nothing to teach; picked one C1-appropriate genre — la reseña crítica — not already covered by the sibling Presentación pública/Carta comercial/Composición escrita/Trabajo académico lines, per the B2 gn-reclamacion-b2 precedent of teaching one concrete named genre from the list rather than the catalog itself)
 - [ ] **Géneros de transmisión oral** · 20 pts · `generos_discursivos C1 § 1.2. Géneros de transmisión oral`
 - [ ] **Géneros de transmisión escrita** · 20 pts · `generos_discursivos C1 § 1.3. Géneros de transmisión escrit`
 - [ ] **Presentación pública (Nivel C1)** · 34 pts · `generos_discursivos C1 § 2.2.1. Presentación pública (Nivel`
