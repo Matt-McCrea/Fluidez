@@ -27625,6 +27625,87 @@ window.STRAND_LESSONS = [
     { id: 'p:favorobjetosayudaC1:cloze', kind: 'cloze', text: '¿Serías tan ___ de prestarme los apuntes? (cortesía elevada)', accept: ['amable'] },
     { id: 'p:favorobjetosayudaC1:recall', kind: 'recall', front: '¿Qué estructura comparten pedir un favor, pedir un objeto y pedir ayuda en C1?', back: 'la misma escalera de fórmulas de cortesía (¿puedes/serías tan amable/tendrías la bondad...?), solo cambia el verbo insertado' }
   ]
+},
+
+{
+  id: 'fn-repetir-orden-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:799', 'funciones:C1:800', 'funciones:C1:801', 'funciones:C1:802'],
+  title: 'Repetir una orden en C1: "¿cuántas veces tengo que repetirte que...?"',
+  summary: 'Cuando una orden no se cumple, el español tiene fórmulas específicas para repetirla con exasperación creciente — desde la pregunta retórica hasta el "por última vez" que anuncia que no habrá más avisos.',
+  sections: [
+    { h: 'Preguntas retóricas de exasperación', html: '<i>¿Cómo tengo/tendré que decir(te) que...?</i> y <i>¿cuántas veces tengo/tendré que repetir(te) que...?</i> no piden respuesta real — expresan que la orden ya se dio antes y no se ha cumplido: <i>¿cuántas veces te tengo que repetir que no se habla con la boca llena?</i>.' },
+    { h: '"Por última vez": el aviso final', html: 'Esta fórmula, seguida de la orden, anuncia que no habrá más repeticiones: <i>te lo digo por última vez: baja de ahí inmediatamente</i>.' },
+    { h: 'Orden + "te digo/te he dicho/te estoy diciendo"', html: 'Añadir esta coletilla después de la orden refuerza que ya se dijo antes y se espera cumplimiento inmediato: <i>que te calles, te he dicho</i>.' }
+  ],
+  exponents: [
+    { es: '¿Cuántas veces tengo que decirte que cierres la puerta al salir?', en: 'How many times do I have to tell you to close the door on your way out?', register: 'coloquial' },
+    { es: 'Por última vez: apaga la televisión y ven a cenar.', en: 'For the last time: turn off the TV and come to dinner.', register: 'coloquial' },
+    { es: 'Que te sientes, te he dicho ya varias veces.', en: "Sit down, I've already told you several times.", register: 'coloquial' },
+    { es: '¿Cómo tengo que decirte que no dejes la puerta abierta?', en: 'How do I have to tell you not to leave the door open?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Cierra la puerta, por favor.', en: 'Close the door, please.', note: 'primera petición, cortés y neutra' },
+    { es: '¿Cuántas veces tengo que repetirte que cierres la puerta?', en: 'How many times do I have to repeat myself about closing the door?', note: 'repetición con exasperación, tras incumplimientos previos' }
+  ],
+  pitfalls: [
+    'Las preguntas con "¿cómo tengo que decirte...?" y "¿cuántas veces...?" no buscan una respuesta literal sobre el número de veces — son exclamaciones de exasperación disfrazadas de pregunta.',
+    '"Por última vez" no siempre significa que efectivamente será la última — es una fórmula retórica para dar peso a la orden, aunque en la práctica pueda repetirse después.',
+    'La coletilla "te digo/te he dicho" tras una orden no aporta información nueva — refuerza que la orden ya se dio y se espera cumplimiento inmediato.'
+  ],
+  examples: [
+    { es: '¿Cómo tendré que decirte que no llegues tarde?', en: 'How will I have to tell you not to be late?' },
+    { es: 'Por última vez: deja de hacer ruido.', en: 'For the last time: stop making noise.' },
+    { es: 'Que recojas tu cuarto, te estoy diciendo.', en: "Clean up your room, I'm telling you." }
+  ],
+  probes: [
+    { id: 'p:repetirordenC1:cuantasveces', kind: 'mcq', q: '"¿Cuántas veces tengo que repetirte que...?" ¿Busca una respuesta numérica real?', options: ['Sí', 'No, es una exclamación de exasperación', 'A veces'], answer: 1 },
+    { id: 'p:repetirordenC1:porultimavez', kind: 'mcq', q: '"Por última vez" garantiza que no se repetirá la orden después?', options: ['Sí, siempre', 'No necesariamente, es más bien retórico', 'Es una promesa legal'], answer: 1 },
+    { id: 'p:repetirordenC1:cloze', kind: 'cloze', text: 'Que te calles, te he ___. (verbo que refuerza que la orden ya se dio)', accept: ['dicho'] },
+    { id: 'p:repetirordenC1:recall', kind: 'recall', front: '¿Qué aportan las coletillas "te digo/te he dicho/te estoy diciendo" tras una orden?', back: 'refuerzan que la orden ya se dio antes y se espera cumplimiento inmediato, no información nueva' }
+  ]
+},
+
+{
+  id: 'fn-responder-orden-peticion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:806', 'funciones:C1:807', 'funciones:C1:808', 'funciones:C1:809', 'funciones:C1:811', 'funciones:C1:812',
+         'funciones:C1:813', 'funciones:C1:814', 'funciones:C1:816', 'funciones:C1:817', 'funciones:C1:819', 'funciones:C1:820',
+         'funciones:C1:821', 'funciones:C1:822', 'funciones:C1:823'],
+  title: 'Responder a una petición en C1: de "faltaría más" a "¡ni lo sueñes!"',
+  summary: 'Responder a una petición en C1 va de la aceptación entusiasta ("faltaría más") a la negativa absoluta ("ni por todo el oro del mundo"), pasando por aceptaciones condicionadas que se dejan literalmente sin terminar y rechazos corteses que se disculpan por no poder ayudar.',
+  sections: [
+    { h: 'Aceptar sin reservas', html: '<i>(Por mi parte) no hay inconveniente</i> es una aceptación formal y neutra. <i>(Eso) está hecho</i> y <i>¡sin problema(s)!</i> son más informales y directas. <i>Faltaría más</i> es la aceptación más entusiasta, casi indicando que negarse sería impensable.' },
+    { h: 'Aceptar con reservas o condiciones', html: 'Una condición con subjuntivo puede matizar la aceptación: <i>no, a menos que me prometas que me vas a dejar salir</i>. Una condicional puede quedar suspendida, sin apódosis, dejando la condición implícita: <i>si no me pides más dinero...</i> (y no continúa). Una subordinada temporal pospone la aceptación a un momento futuro: <i>cuando tenga un momento</i>. <i>Veré lo que puedo hacer</i> es un compromiso deliberadamente vago, sin garantía.' },
+    { h: 'Rechazar cortésmente', html: '<i>Me temo que es imposible/que no es posible...</i> y <i>sintiéndolo mucho, me es/resulta imposible</i> rechazan con cortesía y cierto pesar expresado: <i>sintiéndolo mucho, me va a resultar imposible: me caso el día 22</i>.' },
+    { h: 'Rechazar de forma tajante', html: 'Una concesiva refuerza el rechazo pase lo que pase: <i>te pongas como te pongas, no lo pienso hacer</i>. <i>Por nada del mundo/ni por todo el oro del mundo</i> son hipérboles de rechazo absoluto. <i>No tengo la menor intención de + infinitivo</i> es directo y firme. <i>Ni hablar/ni loco/ni pensarlo/ni lo sueñes</i> son exclamaciones coloquiales de rechazo rotundo: <i>¡ni lo sueñes! La última vez que te la presté me la devolviste medio rota</i>.' },
+    { h: 'Repetir la petición con extrañeza, antes de responder', html: '<i>¿Cómo que + enunciado anterior?</i> repite lo que se acaba de pedir con sorpresa o indignación, antes de aceptar o rechazar: <i>¿cómo que me calle?</i>' }
+  ],
+  exponents: [
+    { es: '¿Puedes ayudarme con esto? Faltaría más, claro que sí.', en: 'Can you help me with this? Of course, absolutely.', register: 'coloquial' },
+    { es: 'Sintiéndolo mucho, me resulta imposible acompañarte ese día.', en: "I'm sorry to say it, but it's impossible for me to go with you that day.", register: 'formal' },
+    { es: 'Ni hablar, no pienso prestarte el coche otra vez.', en: "No way, I'm not lending you the car again.", register: 'coloquial' },
+    { es: 'Te pongas como te pongas, no voy a cambiar de opinión.', en: 'However much you protest, I\'m not going to change my mind.', register: 'neutral' },
+    { es: '¿Cómo que te preste otra vez dinero? ¡Si todavía me debes lo del mes pasado!', en: "What do you mean lend you money again? You still owe me from last month!", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Veré lo que puedo hacer.', en: "I'll see what I can do.", note: 'compromiso vago, sin garantía real' },
+    { es: 'Eso está hecho.', en: 'Consider it done.', note: 'aceptación total e inmediata' }
+  ],
+  pitfalls: [
+    '"Veré lo que puedo hacer" no es un compromiso firme — es una forma cortés de no comprometerse del todo, dejando abierta la posibilidad de no poder cumplir.',
+    'Una condicional suspendida ("si no me pides más dinero...") no es una frase incompleta por error — dejarla así comunica la condición sin necesidad de decirla explícitamente.',
+    '"¿Cómo que...?" repitiendo la petición no es necesariamente un rechazo — puede preceder tanto una aceptación sorprendida como un rechazo indignado, según lo que siga.'
+  ],
+  examples: [
+    { es: 'Por mi parte no hay inconveniente en cambiar la fecha.', en: "As far as I'm concerned, there's no problem changing the date." },
+    { es: 'No tengo la menor intención de disculparme por algo que no hice.', en: "I have no intention whatsoever of apologizing for something I didn't do." },
+    { es: 'Me temo que no va a ser posible entregarlo mañana.', en: "I'm afraid it won't be possible to deliver it tomorrow." }
+  ],
+  probes: [
+    { id: 'p:responderordenpeticionC1:verequepuedo', kind: 'mcq', q: '"Veré lo que puedo hacer" es...', options: ['Un compromiso firme y garantizado', 'Una respuesta vaga, sin garantía real', 'Un rechazo directo'], answer: 1 },
+    { id: 'p:responderordenpeticionC1:comoque', kind: 'mcq', q: '"¿Cómo que me calle?" ¿Necesariamente rechaza la petición?', options: ['Sí, siempre', 'No, puede preceder tanto una aceptación como un rechazo', 'Es indiferente'], answer: 1 },
+    { id: 'p:responderordenpeticionC1:cloze', kind: 'cloze', text: '¡Ni lo ___! No pienso prestarte nada más. (rechazo rotundo, coloquial)', accept: ['sueñes'] },
+    { id: 'p:responderordenpeticionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "me temo que es imposible" y "ni hablar"?', back: 'la primera es un rechazo cortés y con pesar; la segunda es un rechazo tajante y coloquial' }
+  ]
 }
 
 ];
