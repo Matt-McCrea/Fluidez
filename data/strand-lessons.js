@@ -25229,6 +25229,91 @@ window.STRAND_LESSONS = [
     { id: 'p:acabadoC1:cloze', kind: 'cloze', text: 'El coche tiene un acabado ___ muy elegante. (aspecto de metal)', accept: ['metalizado'] },
     { id: 'p:acabadoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "impermeabilizado/aislado" y "pulido/metalizado"?', back: 'los primeros son acabados funcionales (contra agua o temperatura); los segundos son principalmente estéticos' }
   ]
+},
+
+{
+  id: 'nt-humedad-sequedad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1160', 'nociones_generales:C1:1161', 'nociones_generales:C1:1162', 'nociones_generales:C1:1163',
+         'nociones_generales:C1:1164', 'nociones_generales:C1:1165', 'nociones_generales:C1:1166', 'nociones_generales:C1:1167',
+         'nociones_generales:C1:1168', 'nociones_generales:C1:1169', 'nociones_generales:C1:1170', 'nociones_generales:C1:1171',
+         'nociones_generales:C1:1172', 'nociones_generales:C1:1173', 'nociones_generales:C1:1174', 'nociones_generales:C1:1175', 'nociones_generales:C1:1176'],
+  title: 'Humedad y sequedad en C1: "ponerse como una sopa" y cocinar "al vapor"',
+  summary: 'Este vocabulario cubre desde electrodomésticos (centrifugar, secador) hasta hipérboles muy vivas para mojarse por completo ("ponerse como una sopa"), pasando por verbos técnicos que distinguen si un líquido atraviesa una superficie (traspasar, filtrarse) o simplemente se derrama sobre ella (verter, salpicar).',
+  sections: [
+    { h: 'Sustantivos de secado', html: '<i>Absorción</i> es la capacidad de un material de retener líquido: <i>este material tiene una gran capacidad de absorción</i>. <i>Secado, centrifugado</i> son procesos de eliminar humedad; <i>escurridor, secador(a)</i> son los aparatos correspondientes: <i>un escurridor de platos, un secador de pelo, una secadora de ropa</i>.' },
+    { h: 'Adjetivos de humedad y sequedad extremas', html: '<i>Encharcado</i> describe un lugar cubierto de agua estancada. <i>Reseco, árido, desértico</i> gradúan la sequedad extrema: <i>un terreno árido</i>. <i>Jugoso</i> describe algo con abundante líquido interior, típicamente en alimentos: <i>una fruta jugosa</i>.' },
+    { h: 'Verbos de líquido en movimiento', html: '<i>Salpicar, gotear, chorrear</i> describen distintas formas de esparcir líquido. <i>Encharcar(se)</i> es cubrir de agua estancada. <i>Filtrar(se), infiltrar(se)</i> describen un líquido que atraviesa lentamente un material poroso. <i>Traspasar</i> es atravesar completamente una superficie. <i>Verter</i> es hacer caer un líquido deliberadamente de un recipiente a otro.' },
+    { h: 'Verbos de secar y de sumergir', html: '<i>Escurrir, centrifugar</i> son los verbos de eliminar líquido: <i>escurrir los platos, centrifugar la ropa</i>. <i>Resecar(se)</i> es secarse en exceso. <i>Sumergir(se) en el agua/en el mar/en un líquido</i> es introducir algo completamente en un líquido.' },
+    { h: 'Locuciones de mojarse y de cocinar con humedad', html: '<i>Ponerse como una sopa</i> es una hipérbole coloquial para mojarse por completo. <i>Al vapor</i> describe una técnica de cocción con vapor de agua: <i>cocinar al vapor</i>. <i>En/a remojo</i> describe dejar algo sumergido durante un tiempo: <i>dejar las legumbres en remojo</i>.' }
+  ],
+  exponents: [
+    { es: 'Salió a la calle sin paraguas y se puso como una sopa.', en: 'He went outside without an umbrella and got soaked to the bone.', register: 'coloquial' },
+    { es: 'El agua se filtró por una grieta en el techo.', en: 'Water seeped through a crack in the ceiling.', register: 'neutral' },
+    { es: 'Deja las lentejas en remojo la noche anterior.', en: 'Leave the lentils soaking the night before.', register: 'neutral' },
+    { es: 'El pescado al vapor conserva mejor sus nutrientes.', en: 'Steamed fish retains its nutrients better.', register: 'neutral' },
+    { es: 'El terreno estaba completamente reseco tras meses sin lluvia.', en: 'The ground was completely parched after months without rain.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'El agua se filtró lentamente a través de la tierra.', en: 'The water slowly filtered through the soil.', note: 'atraviesa gradualmente un material poroso' },
+    { es: 'La lluvia traspasó el techo en cuestión de minutos.', en: 'The rain came through the roof within minutes.', note: 'atraviesa completamente una superficie' }
+  ],
+  pitfalls: [
+    '"Ponerse como una sopa" es exclusivamente coloquial e hiperbólico — no conviene en un registro formal para describir simplemente "mojarse un poco".',
+    '"Filtrarse/infiltrarse" describen un paso gradual y lento a través de un material poroso; "traspasar" implica atravesar por completo, a menudo con más rapidez o fuerza.',
+    '"Jugoso" se reserva casi siempre para alimentos con líquido interior — no es un adjetivo general para "húmedo".'
+  ],
+  examples: [
+    { es: 'El grifo goteaba toda la noche.', en: 'The faucet dripped all night.' },
+    { es: 'Escurrió bien la ropa antes de tenderla.', en: 'She wrung out the clothes well before hanging them.' },
+    { es: 'El desierto es una de las zonas más áridas del planeta.', en: 'The desert is one of the most arid areas on the planet.' }
+  ],
+  probes: [
+    { id: 'p:humedadsequedadC1:comosopa', kind: 'mcq', q: '"Se puso como una sopa" significa que...', options: ['Se mojó por completo', 'Cocinó una sopa', 'Se quedó dormido'], answer: 0 },
+    { id: 'p:humedadsequedadC1:filtrartraspasar', kind: 'mcq', q: '¿Qué diferencia hay entre "filtrarse" y "traspasar"?', options: ['Ninguna', 'Filtrarse es un paso gradual por un material poroso; traspasar es atravesar por completo', 'Traspasar es más lento'], answer: 1 },
+    { id: 'p:humedadsequedadC1:cloze', kind: 'cloze', text: 'Deja las legumbres en ___ toda la noche. (sumergidas durante un tiempo)', accept: ['remojo'] },
+    { id: 'p:humedadsequedadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "árido/desértico" y "reseco"?', back: 'árido/desértico describen un clima o terreno estructuralmente seco; reseco puede describir algo que se ha secado en exceso, incluso temporalmente' }
+  ]
+},
+
+{
+  id: 'nt-materia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1194', 'nociones_generales:C1:1195', 'nociones_generales:C1:1196', 'nociones_generales:C1:1197',
+         'nociones_generales:C1:1198', 'nociones_generales:C1:1199', 'nociones_generales:C1:1200', 'nociones_generales:C1:1201'],
+  title: 'Materia en C1: de la seda al cartón piedra',
+  summary: 'Nombrar materiales concretos en C1 requiere un vocabulario muy amplio de sustancias específicas — terciopelo, corcho, caucho, granito, escayola — cada una con connotaciones y usos propios que "material" o "sustancia" no transmiten.',
+  sections: [
+    { h: 'Materia orgánica e inorgánica, y su estructura', html: '<i>Materia orgánica/inorgánica</i> distingue el origen biológico o no de una sustancia. <i>Tejido, composición</i> describen la estructura interna de un material. <i>Lámina</i> es una capa fina de material.' },
+    { h: 'Materiales preciosos y textiles', html: '<i>Platino, diamante</i> son materiales de gran valor: <i>un disco de platino</i>. <i>Terciopelo</i> es un tejido suave y lujoso: <i>una cortina de terciopelo</i>.' },
+    { h: 'Materiales elásticos y de construcción', html: '<i>Corcho, goma, caucho</i> son materiales elásticos de usos muy distintos: <i>un tapón de corcho, unas botas de goma, un sello de caucho</i>. <i>Granito, gres, yeso, escayola, cartón piedra</i> son materiales de construcción y decoración: <i>una baldosa de gres, un decorado de cartón piedra</i> (este último, típico de escenografías, por ser ligero y barato).' },
+    { h: 'Descomponerse: el destino de la materia orgánica', html: '<i>Descomponer(se)</i> describe el proceso por el que la materia orgánica se deshace con el tiempo: <i>la materia orgánica se descompone con el tiempo</i>.' }
+  ],
+  exponents: [
+    { es: 'El sofá está tapizado en terciopelo verde.', en: 'The sofa is upholstered in green velvet.', register: 'neutral' },
+    { es: 'Usaron cartón piedra para construir el decorado.', en: 'They used papier-mâché to build the set.', register: 'neutral' },
+    { es: 'El suelo de la cocina es de gres.', en: 'The kitchen floor is made of stoneware tile.', register: 'neutral' },
+    { es: 'Los residuos orgánicos se descomponen en pocas semanas.', en: 'Organic waste decomposes within a few weeks.', register: 'formal' },
+    { es: 'El anillo tiene un diamante engastado en platino.', en: 'The ring has a diamond set in platinum.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Una encimera de granito, muy resistente.', en: 'A granite countertop, very durable.', note: 'material de construcción sólido' },
+    { es: 'Una figura de escayola, ligera y frágil.', en: 'A plaster figure, light and fragile.', note: 'material de decoración blando y quebradizo' }
+  ],
+  pitfalls: [
+    '"Cartón piedra" no es literalmente piedra — es un material ligero hecho de papel y pegamento, usado por su bajo coste en escenografías y decoración.',
+    '"Goma" y "caucho" pueden solaparse, pero "caucho" es más técnico/industrial (sellos, neumáticos) y "goma" más cotidiano (botas, gomas de borrar).',
+    '"Descomponerse" se aplica específicamente a materia orgánica — no se usa para el deterioro de materiales inorgánicos como el metal o la piedra.'
+  ],
+  examples: [
+    { es: 'La estatua estaba hecha de escayola pintada.', en: 'The statue was made of painted plaster.' },
+    { es: 'El corcho se usa tanto para tapones como para aislamiento.', en: 'Cork is used both for stoppers and insulation.' },
+    { es: 'El tejido de esta chaqueta es cien por cien lana.', en: "This jacket's fabric is one hundred percent wool." }
+  ],
+  probes: [
+    { id: 'p:materiaC1:cartonpiedra', kind: 'mcq', q: '¿De qué está hecho realmente el "cartón piedra"?', options: ['De piedra auténtica', 'De papel y pegamento', 'De plástico'], answer: 1 },
+    { id: 'p:materiaC1:descomponerse', kind: 'mcq', q: '¿A qué tipo de materia se aplica "descomponerse"?', options: ['A cualquier material', 'Específicamente a la materia orgánica', 'Solo a metales'], answer: 1 },
+    { id: 'p:materiaC1:cloze', kind: 'cloze', text: 'El anillo tiene un diamante engastado en ___. (metal precioso)', accept: ['platino'] },
+    { id: 'p:materiaC1:recall', kind: 'recall', front: '¿Por qué se usa "cartón piedra" en escenografías teatrales?', back: 'porque es un material ligero y barato, pese a su nombre no está hecho de piedra' }
+  ]
 }
 
 ];
