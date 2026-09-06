@@ -27412,6 +27412,48 @@ window.STRAND_LESSONS = [
     { id: 'p:decepcionresignacionC1:cloze', kind: 'cloze', text: 'No hay más ___ que aceptar las cosas como son. (ausencia de alternativa)', accept: ['remedio'] },
     { id: 'p:decepcionresignacionC1:recall', kind: 'recall', front: '¿Qué compara la expresión "esto no es lo que (me) esperaba/imaginaba"?', back: 'lo que realmente ocurrió frente a la expectativa previa del hablante' }
   ]
+},
+
+{
+  id: 'fn-arrepentimiento-verguenza-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:634', 'funciones:C1:635', 'funciones:C1:636', 'funciones:C1:637', 'funciones:C1:638', 'funciones:C1:639',
+         'funciones:C1:640', 'funciones:C1:646', 'funciones:C1:647', 'funciones:C1:648', 'funciones:C1:649', 'funciones:C1:650',
+         'funciones:C1:651', 'funciones:C1:652'],
+  title: 'Arrepentimiento y vergüenza en C1: "si volviera a nacer..." y "vergüenza ajena"',
+  summary: 'El arrepentimiento en C1 combina verbos directos ("me arrepiento de") con condicionales hipotéticos que imaginan una segunda oportunidad ("si volviera a nacer..."), y la vergüenza incluye el matiz específico de "vergüenza ajena" — sentirla por el comportamiento de otro, no por uno mismo.',
+  sections: [
+    { h: 'Arrepentimiento: verbos directos', html: '<i>Me arrepiento (de)...</i> es la forma más directa: <i>no me arrepiento de haberle hecho caso</i>. <i>(No) debí...</i> y <i>(no) debería/debía + infinitivo compuesto</i> señalan una acción pasada que se juzga incorrecta: <i>no debería haber ido</i>. <i>(No) tendría/tenía que + infinitivo compuesto</i> hace lo mismo con matiz de obligación incumplida: <i>tenía que haberme quedado</i>.' },
+    { h: 'Arrepentimiento como hipótesis sobre el pasado', html: '<i>Si tuviera una segunda oportunidad...</i>, <i>si pudiera dar marcha atrás...</i> y <i>si volviera a nacer...</i> imaginan un pasado alternativo, cada uno con distinto alcance: una oportunidad puntual, un momento concreto que rehacer, o la vida entera desde el principio.' },
+    { h: 'Vergüenza: verbos directos', html: '<i>Siento vergüenza (de)...</i> es la forma general, que incluye el matiz específico de "vergüenza ajena": sentir vergüenza por el comportamiento de OTRA persona, no por el propio: <i>siento vergüenza ajena al ver el comportamiento de nuestros representantes</i>. <i>Me ruborizo/me sonrojo</i> (yo mismo me sonrojo) y <i>me ruboriza/me sonroja</i> (algo me hace sonrojar) distinguen el origen del sonrojo. <i>Me pongo colorado</i> es la versión más coloquial y visual.' },
+    { h: 'Vergüenza intensificada', html: '<i>¡Me da una vergüenza...!</i> y <i>¡(casi) me muero de vergüenza!</i> son exclamaciones que intensifican la vergüenza hasta la hipérbole. <i>¡Qué vergüenza pasé!</i> narra retrospectivamente un episodio vergonzoso ya vivido.' }
+  ],
+  exponents: [
+    { es: 'Si volviera a nacer, estudiaría algo completamente distinto.', en: 'If I were born again, I would study something completely different.', register: 'neutral' },
+    { es: 'Siento vergüenza ajena cada vez que veo ese programa.', en: 'I feel secondhand embarrassment every time I watch that show.', register: 'coloquial' },
+    { es: 'No debería haberle dicho eso, me arrepiento mucho.', en: "I shouldn't have said that to him, I deeply regret it.", register: 'neutral' },
+    { es: '¡Casi me muero de vergüenza cuando se me cayó todo!', en: 'I nearly died of embarrassment when I dropped everything!', register: 'coloquial' },
+    { es: 'Se puso colorado en cuanto le hicieron la pregunta.', en: 'He blushed as soon as they asked him the question.', register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Me sonrojo con facilidad cuando me hacen cumplidos.', en: 'I blush easily when I\'m complimented.', note: 'yo mismo experimento el sonrojo' },
+    { es: 'Me sonroja que hablen así delante de los niños.', en: "It makes me blush that they talk like that in front of the children.", note: 'algo externo provoca el sonrojo' }
+  ],
+  pitfalls: [
+    '"Vergüenza ajena" no es simplemente "mucha vergüenza" — describe específicamente sentir vergüenza por el comportamiento de otra persona, no por uno mismo.',
+    '"Si tuviera una segunda oportunidad", "si pudiera dar marcha atrás" y "si volviera a nacer" no son intercambiables: tienen distinto alcance temporal, de un momento puntual a la vida entera.',
+    '"Me ruborizo" y "me ruboriza" se diferencian por quién es el sujeto del cambio: yo mismo (me ruborizo) frente a algo externo que provoca el sonrojo (me ruboriza).'
+  ],
+  examples: [
+    { es: 'No debimos confiar tan rápido en esa empresa.', en: "We shouldn't have trusted that company so quickly." },
+    { es: 'Tenía que haberle avisado antes, ahora me arrepiento.', en: 'I should have warned him earlier, now I regret it.' },
+    { es: '¡Qué vergüenza pasé cuando me equivoqué de nombre!', en: 'How embarrassed I was when I got the name wrong!' }
+  ],
+  probes: [
+    { id: 'p:arrepentimientoverguenzaC1:verguenzaajena', kind: 'mcq', q: '¿Qué describe "vergüenza ajena"?', options: ['Vergüenza muy intensa en general', 'Vergüenza por el comportamiento de otra persona', 'Vergüenza fingida'], answer: 1 },
+    { id: 'p:arrepentimientoverguenzaC1:ruborizarme', kind: 'mcq', q: '¿Qué diferencia hay entre "me ruborizo" y "me ruboriza"?', options: ['Ninguna', 'El sujeto del cambio: yo mismo frente a algo externo', 'Uno es más formal'], answer: 1 },
+    { id: 'p:arrepentimientoverguenzaC1:cloze', kind: 'cloze', text: 'No debería ___ ido a esa reunión. (infinitivo compuesto tras "debería")', accept: ['haber'] },
+    { id: 'p:arrepentimientoverguenzaC1:recall', kind: 'recall', front: '¿Qué diferencia de alcance temporal hay entre "si pudiera dar marcha atrás" y "si volviera a nacer"?', back: 'la primera imagina rehacer un momento concreto; la segunda imagina rehacer la vida entera desde el principio' }
+  ]
 }
 
 ];
