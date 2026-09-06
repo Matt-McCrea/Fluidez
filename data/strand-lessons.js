@@ -22626,6 +22626,114 @@ window.STRAND_LESSONS = [
     { id: 'p:complementosadjetivalC1:cloze', kind: 'cloze', text: 'Había la ___ de gente en la fiesta. (cuantificador coloquial intensivo, "mucha")', accept: ['mar'] },
     { id: 'p:complementosadjetivalC1:recall', kind: 'recall', front: '¿Qué tipo de complemento introduce la preposición ante un adjetivo como "interesado en cómo es tu trabajo"?', back: 'una interrogativa indirecta' }
   ]
+},
+
+{
+  id: 'gr-nucleo-verbal-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:583', 'gramatica:C1:586', 'gramatica:C1:587', 'gramatica:C1:588', 'gramatica:C1:589',
+         'gramatica:C1:591', 'gramatica:C1:592', 'gramatica:C1:593', 'gramatica:C1:594',
+         'gramatica:C1:596', 'gramatica:C1:598', 'gramatica:C1:600', 'gramatica:C1:601', 'gramatica:C1:602', 'gramatica:C1:603', 'gramatica:C1:604'],
+  title: 'El núcleo del sintagma verbal en C1: pasivas, perífrasis y el reparto ser/estar',
+  summary: 'El verbo núcleo de la oración esconde en C1 tres sistemas densos: qué participio usar y cuándo la pasiva admite agente, un catálogo de perífrasis que expresan matices aspectuales muy precisos, y un reparto ser/estar que ya no depende de "permanente vs. temporal" sino de si la cualidad se atribuye a un acto puntual o a un comportamiento general.',
+  sections: [
+    { h: 'Pasiva de resultado: qué participio y cuándo hay agente', html: 'La pasiva de resultado (con "estar") no admite normalmente complemento agente: <i>*Las puertas estarán abiertas por el portero a las 10</i> es agramatical, porque "estar" describe un estado, no una acción con agente. No todos los transitivos se pasivizan igual: <i>*El libro fue tenido por mí</i> falla porque "tener" resiste la pasivización pese a ser transitivo. Cuando un verbo tiene dos participios, el irregular se usa en la pasiva de resultado (adjetival) y el regular en la pasiva de acción: <i>Este pueblo está maldito</i> (resultado) frente a <i>Este pueblo ha sido maldecido</i> (acción). Y a veces un simple adjetivo sustituye al participio en la de resultado: <i>Ha sido limpiado</i> (acción) frente a <i>Está limpio</i> (resultado, con adjetivo en vez de "limpiado").' },
+    { h: 'Perífrasis verbales: un catálogo de matices aspectuales', html: 'De infinitivo, perfectivas (la acción se consuma o no del todo): <i>llegar a</i>, <i>acabar por</i>, <i>no alcanzar a</i>; inceptivas (inicio brusco): <i>echar a</i>, <i>echarse a</i>, <i>romper a</i> (<i>rompió a llorar</i>). De gerundio + gerundio, con <i>ir, venir, andar, terminar</i>, para procesos graduales o iterativos. De infinitivo con valor dubitativo-aproximativo, <i>venir a</i>: <i>viene a costar unos cien euros</i> (aproximadamente). De participio + participio, con <i>tener, llevar, dejar</i>: <i>tengo escritas tres cartas</i>, <i>llevo leídas cien páginas</i>.' },
+    { h: 'Ser y estar: comportamiento episódico frente a cualidad atribuida', html: 'Con adjetivos valorativos que definen un comportamiento, "estar" se usa cuando la cualidad se atribuye como episódica, ligada a una ocasión concreta: <i>ayer estuviste muy amable</i>. Pero cuando el comportamiento valorado es el acto mismo que se está describiendo — no una ocasión aparte — se usa "ser": <i>ha sido muy amable al invitarme</i> (la amabilidad ES el acto de invitar, no algo aparte de él).' },
+    { h: 'Estar sin adjetivo, y los seudocopulativos', html: '"Estar para" + infinitivo expresa inminencia (<i>está para salir</i>, a punto de salir); "estar por" + infinitivo señala una acción todavía no realizada, apoyo a algo, o intención: <i>están por salir</i> (aún no han salido), <i>estoy por tu moción</i> (a favor), <i>estoy por darte una torta</i> (con ganas de). "Estar que" + verbo intensifica un estado: <i>está que arde</i>. Coloquialmente, "estar" + adjetivo puede sustituir a "ser" para señalar que algo resulta interesante en el momento: <i>está interesante</i>. Y verbos seudocopulativos como <i>mantenerse, mostrarse</i> funcionan como "ser/estar" pero añaden matiz de continuidad o manifestación.' }
+  ],
+  contrasts: [
+    { es: 'El puente fue construido por los romanos. / El puente está construido con piedra.', en: 'The bridge was built by the Romans. / The bridge is built of stone.', note: 'pasiva de acción con agente frente a pasiva de resultado, sin agente' },
+    { es: 'Rompió a reír sin poder parar.', en: 'He burst out laughing and couldn\'t stop.', note: 'perífrasis inceptiva de infinitivo' },
+    { es: 'Ha sido muy generoso al ayudarnos. / Estuvo muy generoso en la fiesta.', en: 'He was very generous in helping us. / He was very generous at the party.', note: 'ser: la cualidad ES el acto descrito; estar: comportamiento de una ocasión concreta' },
+    { es: 'Están por llegar todavía.', en: "They still haven't arrived.", note: '"estar por" + infinitivo: acción no realizada' }
+  ],
+  pitfalls: [
+    'La pasiva de resultado (<i>estar</i> + participio) no admite normalmente complemento agente introducido por "por" — ese complemento pertenece a la pasiva de acción con "ser".',
+    'Cuando un verbo tiene participio regular e irregular, no son intercambiables: el irregular tiende al uso adjetival/resultativo (<i>está maldito</i>), el regular al uso verbal/pasivo (<i>ha sido maldecido</i>).',
+    '"Estar por" + infinitivo no significa lo mismo que "estar para" + infinitivo: el primero indica que la acción aún no se ha realizado (o apoyo/intención), el segundo indica inminencia inmediata.'
+  ],
+  examples: [
+    { es: 'El contrato está firmado desde ayer.', en: 'The contract has been signed since yesterday.' },
+    { es: 'Al final acabó por confesarlo todo.', en: 'In the end he ended up confessing everything.' },
+    { es: 'Fue muy paciente al explicármelo dos veces.', en: 'He was very patient in explaining it to me twice.' }
+  ],
+  probes: [
+    { id: 'p:nucleoverbalC1:pasiva', kind: 'mcq', q: '¿Cuál de estas frases es agramatical?', options: ['El libro fue escrito por ella.', 'Las puertas estarán abiertas por el portero.', 'El pueblo ha sido maldecido por la bruja.'], answer: 1 },
+    { id: 'p:nucleoverbalC1:serestar', kind: 'mcq', q: '"Ha sido muy amable al invitarme." ¿Por qué se usa "ser" y no "estar"?', options: ['Porque la amabilidad es una cualidad permanente', 'Porque la amabilidad ES el acto mismo que se describe, no una ocasión aparte', 'Es indiferente, ambos son correctos'], answer: 1 },
+    { id: 'p:nucleoverbalC1:cloze', kind: 'cloze', text: 'Al final ___ a llorar sin motivo aparente. (perífrasis inceptiva)', accept: ['rompió'] },
+    { id: 'p:nucleoverbalC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "estar para salir" y "estar por salir"?', back: '"estar para" indica inminencia inmediata; "estar por" indica que la acción aún no se ha realizado (o apoyo/intención)' }
+  ]
+},
+
+{
+  id: 'gr-complementos-verbales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:619', 'gramatica:C1:620', 'gramatica:C1:621', 'gramatica:C1:622', 'gramatica:C1:623',
+         'gramatica:C1:624', 'gramatica:C1:625', 'gramatica:C1:626', 'gramatica:C1:627', 'gramatica:C1:628', 'gramatica:C1:629', 'gramatica:C1:630', 'gramatica:C1:631'],
+  title: 'Complementos verbales en C1: leísmo, laísmo, loísmo y el predicativo del objeto',
+  summary: 'Distinguir "le" de "lo/la" con precisión, saber cuándo el dativo exige un objeto directo delimitado, y reconocer un predicativo escondido tras un infinitivo o un gerundio son destrezas de C1 que muchos hablantes nativos no dominan de forma consistente — precisamente por eso conviene entenderlas con reglas, no solo de oído.',
+  sections: [
+    { h: 'Objeto directo confuso con indirecto', html: 'Con verbos como "pegar", confundir OD y OI produce un uso no normativo: <i>*Su padre la pegó</i> debería ser <i>su padre le pegó</i>, reservando "la" para cuando aparece un objeto directo explícito: <i>su padre le pegó una bofetada</i> ("le" = OI, la persona; "una bofetada" = OD, lo que recibió).' },
+    { h: 'El objeto directo aumentado por un predicativo', html: 'En cláusulas reducidas, el OD puede llevar un elemento predicativo que lo completa: <i>eligieron a Luis presidente</i>, <i>considero a Luis poco preparado para ese trabajo</i> — "presidente" y "poco preparado" no son complementos aparte, sino que predican algo del propio objeto directo.' },
+    { h: 'Leísmo, laísmo y loísmo: qué es y qué no es normativo', html: 'El leísmo de cosa (usar "le" por un OD que no es persona) no es normativo: <i>*el libro que me dejaste le leí en vacaciones</i> debería llevar "lo". El laísmo (usar "la/las" para el OI femenino) tampoco lo es: <i>*la dije que viniera</i> debería ser <i>le dije</i>. Y el loísmo (usar "lo/los" para el OI) es el menos aceptado de los tres: <i>*lo dije que viniera</i> debería ser, igualmente, <i>le dije</i>.' },
+    { h: 'El dativo de interés y su exigencia de un OD delimitado', html: 'Cuando el dativo de interés está presente (la forma pronominal "me, te, se..."), el objeto directo debe estar delimitado, cuantificado: <i>me comí un pollo</i> es correcto, pero <i>*me comí pollo</i>, con OD no delimitado, no lo es. Sin el pronombre, ambas opciones son válidas: <i>comí un pollo</i> / <i>comí pollo</i>.' },
+    { h: 'Complemento preposicional regido y predicativo de subordinada', html: 'Algunos verbos alternan libremente entre OD y complemento regido con preposición: <i>cuida a Ana</i> / <i>cuida de Ana</i>. Otros, en su forma pronominal, exigen preposición donde su casi-sinónimo no la exige: <i>acordarse de</i> frente a <i>recordar</i>, <i>atreverse a</i> frente a <i>osar</i>. El complemento predicativo puede ser una subordinada: de infinitivo, sin ambigüedad (<i>la vi bajar del autobús</i>, ella baja); de gerundio, ambigua entre predicar del OD o del sujeto (<i>la vi bajando del autobús</i>, ¿quién bajaba?); de participio (<i>el corredor llegó a la meta aclamado por el público</i>).' }
+  ],
+  contrasts: [
+    { es: 'Le pegó un bofetón. / *La pegó un bofetón.', en: 'He slapped her.', note: '"le" (OI) + "un bofetón" (OD explícito) es lo normativo' },
+    { es: 'Nombraron a Marta directora. / *La nombraron directora.', en: 'They named Marta director.', note: 'predicativo del OD tras verbos de nombramiento u opinión' },
+    { es: 'Le dije que esperara. / *La dije que esperara.', en: 'I told her to wait.', note: '"le" es el OI correcto — "la" aquí sería laísmo' },
+    { es: 'Se comió toda la tarta. / *Se comió tarta.', en: 'She ate the whole cake.', note: 'dativo de interés exige OD delimitado' }
+  ],
+  pitfalls: [
+    'El leísmo de cosa, el laísmo y el loísmo no son variantes libres — la norma culta exige "lo/la" para el OD (persona o cosa) y "le" para el OI, sin excepción por género del referente del OI.',
+    'El dativo de interés ("me, te, se" + comer/beber/leer...) no admite un OD sin determinante o cuantificador: <i>me comí pollo</i> es tan agramatical como <i>me bebí agua</i> sin artículo — hace falta "un/el/todo el pollo".',
+    'El predicativo de gerundio tras un verbo de percepción (<i>la vi bajando...</i>) es genuinamente ambiguo entre "ella bajaba" y "yo bajaba mientras la veía" — el contexto, no la gramática, resuelve cuál es.'
+  ],
+  examples: [
+    { es: 'Le regalaron un reloj a su jubilación.', en: 'They gave him a watch for his retirement.' },
+    { es: 'Nombraron a Sara portavoz del grupo.', en: 'They named Sara the group\'s spokesperson.' },
+    { es: 'Me bebí toda la botella de un trago.', en: 'I drank the whole bottle in one gulp.' }
+  ],
+  probes: [
+    { id: 'p:complementosverbalesC1:leismo', kind: 'mcq', q: '"El libro que me dejaste ___ leí en vacaciones." ¿Qué pronombre es normativo?', options: ['le', 'lo', 'la'], answer: 1 },
+    { id: 'p:complementosverbalesC1:dativo', kind: 'mcq', q: '¿Cuál es agramatical?', options: ['Comí pollo.', 'Me comí pollo.', 'Me comí un pollo entero.'], answer: 1 },
+    { id: 'p:complementosverbalesC1:cloze', kind: 'cloze', text: 'La vi ___ del autobús, sin ninguna duda de que era ella quien bajaba. (infinitivo, predicativo del OD sin ambigüedad)', accept: ['bajar'] },
+    { id: 'p:complementosverbalesC1:recall', kind: 'recall', front: '¿Por qué "la vi bajando del autobús" es ambigua y "la vi bajar del autobús" no lo es?', back: 'el gerundio como predicativo puede referirse al objeto o al sujeto; el infinitivo como predicativo del OD no deja esa ambigüedad' }
+  ]
+},
+
+{
+  id: 'gr-concordancia-oracional-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:639', 'gramatica:C1:640', 'gramatica:C1:641', 'gramatica:C1:642'],
+  title: 'Concordancia ad sensum en C1: cuando el sentido gana a la gramática',
+  summary: 'Sujetos como "la mayoría de", "un montón de" o "la mitad de" son singulares en su forma pero denotan una pluralidad de individuos — y en C1 el verbo puede concordar con esa pluralidad de sentido en vez de con la forma. Los colectivos como "gente" o "familia", en cambio, no admiten este salto: ahí la concordancia gramatical es obligatoria.',
+  sections: [
+    { h: 'Construcciones partitivas: plural cuando la acción es de cada individuo', html: 'Con expresiones partitivas como <i>la mayoría de, la mitad de, el X por ciento de</i>, el verbo puede ir en plural cuando se entiende que la acción se aplica a cada individuo por separado, no al conjunto como bloque: <i>la mayoría de los españoles creen que la situación ha mejorado</i>, <i>la mitad votaron en contra</i>, <i>el veinte por ciento se abstuvieron</i>. Gramaticalmente el sujeto ("la mayoría", "la mitad", "el veinte por ciento") es singular, pero el sentido — cada persona votando, absteniéndose, creyendo algo por su cuenta — empuja el verbo al plural.' },
+    { h: 'Cuantificadores singulares con complemento en "de": el mismo efecto', html: 'Igual ocurre con cuantificadores singulares que expresan pluralidad, seguidos de un complemento con "de": <i>un montón de botellas se rompieron</i>, <i>una docena de personas salieron de la sala</i>. El núcleo gramatical ("un montón", "una docena") es singular, pero el complemento plural ("botellas", "personas") arrastra la concordancia del verbo.' },
+    { h: 'La frontera: los sustantivos colectivos no admiten el salto', html: 'Con sustantivos colectivos como <i>gente</i> o <i>familia</i>, que ya denotan pluralidad sin necesidad de un complemento partitivo explícito, la concordancia ad sensum no está permitida: <i>*la gente piensan que...</i> y <i>*la familia se compraron una casa</i> son agramaticales — deben ir en singular: <i>la gente piensa</i>, <i>la familia se compró</i>.' }
+  ],
+  contrasts: [
+    { es: 'La mayoría de los vecinos apoya la propuesta. / La mayoría de los vecinos apoyan la propuesta.', en: 'Most of the residents support the proposal.', note: 'ambas concordancias son válidas — gramatical (singular) o ad sensum (plural)' },
+    { es: 'Un grupo de turistas visitó el museo. / Un grupo de turistas visitaron el museo.', en: 'A group of tourists visited the museum.', note: 'mismo fenómeno con "un grupo de"' },
+    { es: 'La gente cree que todo va a cambiar.', en: 'People believe everything is going to change.', note: 'colectivo puro — solo singular, sin alternancia' },
+    { es: 'La familia se mudó al campo.', en: 'The family moved to the countryside.', note: 'colectivo puro — solo singular' }
+  ],
+  pitfalls: [
+    'La concordancia en plural con partitivos (<i>la mitad votaron</i>) no es un error que "corregir" a singular — es una alternativa legítima cuando se quiere resaltar que cada individuo actuó por separado.',
+    'Los colectivos sin complemento partitivo explícito (<i>gente, familia</i>) no siguen esta regla: no admiten plural aunque denoten muchas personas — <i>*la gente piensan</i> es sencillamente agramatical.',
+    'La diferencia no está en el significado ("muchas personas" en ambos casos) sino en la estructura: partitivo + "de" + plural admite el salto; colectivo puro, no.'
+  ],
+  examples: [
+    { es: 'La mitad de los empleados prefiere trabajar desde casa.', en: 'Half the employees prefer working from home.' },
+    { es: 'Un puñado de valientes se quedaron hasta el final.', en: 'A handful of brave souls stayed until the end.' },
+    { es: 'La familia entera vino a la boda.', en: 'The whole family came to the wedding.' }
+  ],
+  probes: [
+    { id: 'p:concordanciaoracionalC1:partitivo', kind: 'mcq', q: '¿Cuáles son ambas correctas?', options: ['La mayoría opina / opinan que sí.', 'La gente piensa / piensan que sí.', 'La familia decidió / decidieron mudarse.'], answer: 0 },
+    { id: 'p:concordanciaoracionalC1:colectivo', kind: 'mcq', q: '¿Cuál es agramatical?', options: ['La gente piensa que sí.', 'La gente piensan que sí.', 'La mitad piensan que sí.'], answer: 1 },
+    { id: 'p:concordanciaoracionalC1:cloze', kind: 'cloze', text: 'Una docena de personas ___ de la sala antes de que terminara. (concordancia ad sensum, plural)', accept: ['salieron'] },
+    { id: 'p:concordanciaoracionalC1:recall', kind: 'recall', front: '¿Por qué "un montón de botellas se rompieron" admite el plural pero "la gente piensan" no?', back: 'los partitivos + "de" + plural permiten concordancia ad sensum; los colectivos puros (gente, familia) exigen concordancia gramatical en singular' }
+  ]
 }
 
 ];
