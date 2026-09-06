@@ -24008,6 +24008,48 @@ window.STRAND_LESSONS = [
     { id: 'p:posicionrelativaC1:cloze', kind: 'cloze', text: 'La solución está al ___ de la mano. (fácil de conseguir)', accept: ['alcance'] },
     { id: 'p:posicionrelativaC1:recall', kind: 'recall', front: '¿Qué registro tienen las preposiciones "ante, bajo, contra, tras" frente a "delante de, debajo de, en contra de, detrás de"?', back: 'un registro más formal o literario' }
   ]
+},
+
+{
+  id: 'nt-distancia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:535', 'nociones_generales:C1:536', 'nociones_generales:C1:537', 'nociones_generales:C1:538',
+         'nociones_generales:C1:539', 'nociones_generales:C1:540', 'nociones_generales:C1:541', 'nociones_generales:C1:542',
+         'nociones_generales:C1:543', 'nociones_generales:C1:544', 'nociones_generales:C1:545', 'nociones_generales:C1:546'],
+  title: 'Distancia en C1: de "manzanas" a "acortar distancias"',
+  summary: 'Hablar de distancia en C1 exige un vocabulario que va del urbanismo cotidiano ("cuatro manzanas más arriba") a los matices figurados de "acortar distancias" — reducir una distancia emocional o social, no solo física.',
+  sections: [
+    { h: 'Sustantivos de acercamiento y alejamiento', html: '<i>Aproximación, acercamiento</i> frente a <i>alejamiento</i> — estos sustantivos funcionan tanto en sentido físico como figurado (relaciones, posturas): <i>a raíz de aquello se produjo un acercamiento entre las dos partes</i>. <i>Cercanía, lejanía</i> son los sustantivos generales de la distancia percibida.' },
+    { h: 'Tramos y manzanas: distancia urbana', html: '<i>Trecho, tramo</i> son partes de un recorrido: <i>hay un tramo en obras</i>. <i>Manzana(s)</i> es la unidad de distancia urbana por excelencia en el mundo hispanohablante: <i>cuatro manzanas más arriba está la biblioteca pública</i>.' },
+    { h: 'Adjetivos de distancia', html: 'Cercanía creciente: <i>próximo, vecino</i> — lejanía creciente: <i>distante, remoto</i>: <i>un lugar próximo, un país vecino, una estrella distante, una aldea remota</i>. <i>Apartado, retirado, distanciado</i> describen algo alejado, a veces deliberadamente. <i>Pegado, adosado</i> describen máxima cercanía o contacto: <i>su casa está pegada a la mía</i>.' },
+    { h: 'Verbos y locuciones de distancia', html: '<i>Arrimarse (a)</i> es acercarse físicamente. <i>Distanciar(se) (de)</i> es alejarse, con frecuencia en sentido figurado (de una persona, una idea). <i>Acortar distancias</i> es reducir una distancia, física o figurada. <i>Estar/encontrarse/hallarse a un paso (de)/a escasa distancia (de)</i> expresan una cercanía mínima: <i>el refugio se halla a escasa distancia de la costa</i>.' }
+  ],
+  exponents: [
+    { es: 'La tienda está a cuatro manzanas de aquí.', en: 'The store is four blocks from here.', register: 'neutral' },
+    { es: 'El acuerdo permitió un acercamiento entre ambos países.', en: 'The agreement allowed for a rapprochement between both countries.', register: 'formal' },
+    { es: 'Se distanció de su familia tras la discusión.', en: 'He distanced himself from his family after the argument.', register: 'neutral' },
+    { es: 'La videollamada ayuda a acortar distancias.', en: 'Video calls help bridge the distance.', register: 'neutral' },
+    { es: 'El pueblo se halla a escasa distancia de la frontera.', en: "The town is a short distance from the border.", register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un país vecino, con el que compartimos frontera.', en: 'A neighboring country, with which we share a border.', note: 'cercanía moderada' },
+    { es: 'Una aldea remota, casi inaccesible.', en: 'A remote village, almost inaccessible.', note: 'lejanía extrema' }
+  ],
+  pitfalls: [
+    '"Acercamiento" y "distanciarse" funcionan tanto en sentido físico como figurado (relaciones personales, posturas políticas) — no se limitan a la distancia espacial.',
+    '"Manzana" como unidad de distancia urbana es específica del español y no se traduce literalmente al hablar de otras culturas urbanísticas sin ese concepto.',
+    '"Arrimarse" implica un acercamiento físico deliberado, no una simple proximidad accidental.'
+  ],
+  examples: [
+    { es: 'Camina un trecho más y llegarás a la plaza.', en: 'Walk a bit further and you\'ll reach the square.' },
+    { es: 'Viven a un paso del centro histórico.', en: 'They live a stone\'s throw from the historic center.' },
+    { es: 'Se arrimó a la chimenea para calentarse.', en: 'He huddled up to the fireplace to warm himself.' }
+  ],
+  probes: [
+    { id: 'p:distanciaC1:manzana', kind: 'mcq', q: '¿Qué mide "manzana" en el contexto de distancia urbana?', options: ['Un tipo de fruta', 'Una unidad de distancia urbana (cuadra)', 'Una unidad de peso'], answer: 1 },
+    { id: 'p:distanciaC1:acortar', kind: 'mcq', q: '"La videollamada ayuda a acortar distancias." ¿En qué sentido se usa "distancias" aquí?', options: ['Solo físico', 'Físico y/o figurado (emocional, social)', 'Solo temporal'], answer: 1 },
+    { id: 'p:distanciaC1:cloze', kind: 'cloze', text: 'El refugio se halla a escasa ___ de la costa. (cercanía mínima)', accept: ['distancia'] },
+    { id: 'p:distanciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "próximo/vecino" y "distante/remoto"?', back: 'próximo/vecino expresan cercanía; distante/remoto expresan lejanía, con "remoto" en el extremo más alejado' }
+  ]
 }
 
 ];
