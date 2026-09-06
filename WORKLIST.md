@@ -587,9 +587,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (37/202 done)
+## C1 — lessons (39/202 done)
 
-### C1 · grammar (25/28)
+### C1 · grammar (27/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
 - [x] **El número de los sustantivos** · 6 pts · `gramatica C1 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-c1
 - [x] **Clases de adjetivos** · 15 pts · `gramatica C1 § 2.1. Clases de adjetivos`  — gr-clases-adjetivos-c1
@@ -615,8 +615,8 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **El núcleo** · 23 pts · `gramatica C1 § 12.1. El núcleo`  — gr-nucleo-verbal-c1
 - [x] **Complementos** · 13 pts · `gramatica C1 § 12.2. Complementos`  — gr-complementos-verbales-c1
 - [x] **Concordancia** · 10 pts · `gramatica C1 § 13.1. Concordancia`  — gr-concordancia-oracional-c1
-- [ ] **Oraciones subordinadas sustantivas** · 11 pts · `gramatica C1 § 15.1. Oraciones subordinadas susta`
-- [ ] **Oraciones subordinadas adjetivas o de relativo** · 24 pts · `gramatica C1 § 15.2. Oraciones subordinadas adjet`
+- [x] **Oraciones subordinadas sustantivas** · 11 pts · `gramatica C1 § 15.1. Oraciones subordinadas susta`  — gr-sub-sustantivas-c1
+- [x] **Oraciones subordinadas adjetivas o de relativo** · 24 pts · `gramatica C1 § 15.2. Oraciones subordinadas adjet`  — gr-sub-adjetivas-relativo-c1
 - [ ] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica C1 § 15.3. Oraciones subordinadas adver`
 
 ### C1 · notion (0/57)

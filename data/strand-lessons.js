@@ -22734,6 +22734,80 @@ window.STRAND_LESSONS = [
     { id: 'p:concordanciaoracionalC1:cloze', kind: 'cloze', text: 'Una docena de personas ___ de la sala antes de que terminara. (concordancia ad sensum, plural)', accept: ['salieron'] },
     { id: 'p:concordanciaoracionalC1:recall', kind: 'recall', front: '¿Por qué "un montón de botellas se rompieron" admite el plural pero "la gente piensan" no?', back: 'los partitivos + "de" + plural permiten concordancia ad sensum; los colectivos puros (gente, familia) exigen concordancia gramatical en singular' }
   ]
+},
+
+{
+  id: 'gr-sub-sustantivas-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:662', 'gramatica:C1:663', 'gramatica:C1:665', 'gramatica:C1:666', 'gramatica:C1:667',
+         'gramatica:C1:669', 'gramatica:C1:670', 'gramatica:C1:671'],
+  title: 'Subordinadas sustantivas en C1: cuándo el infinitivo reemplaza a "que + verbo"',
+  summary: 'El infinitivo puede sustituir a una completiva con verbo conjugado en más contextos de los que parece — como objeto directo, como complemento de un nombre que ni siquiera deriva de un verbo, o como sujeto de verbos que exigen un orden y un modo muy concretos. Saber cuándo cada opción es natural, y cuándo cambia el sentido, es la destreza real aquí.',
+  sections: [
+    { h: 'Infinitivo como objeto directo: mismo sujeto', html: 'Con verbos de entendimiento y de lengua, el infinitivo alterna con una completiva conjugada cuando el sujeto de ambos verbos coincide: <i>creí morirme / creí que me moría</i>, <i>dijo vivir en Zaragoza / dijo que vivía en Zaragoza</i>. Con verbos de ruego y petición como <i>pedir, suplicar, rogar</i>, ambas construcciones también compiten, pero el reparto de argumentos varía: <i>pidió salir</i> (él pide para sí mismo) frente a <i>pidió que saliera</i> (pide que otro salga); con un destinatario explícito, ambas formas conviven sin cambiar quién actúa: <i>rogó al público guardar calma / rogó al público que guardara calma</i>.' },
+    { h: 'Infinitivo como complemento del nombre, incluso sin origen verbal', html: 'Los nombres deverbales admiten con naturalidad un infinitivo tras "de": <i>el deseo de volver</i>. Lo más notable en C1 es que algunos nombres que NO derivan de un verbo también lo admiten: <i>la idea de habernos reunido</i> — "idea" no viene de ningún verbo, y aun así introduce un infinitivo compuesto como complemento.' },
+    { h: 'Infinitivo como complemento de adjetivo o participio', html: 'Adjetivos y participios con régimen preposicional también toman un infinitivo como complemento: <i>difícil de resolver</i>, <i>decidido a contarlo</i> — la preposición exigida por el adjetivo (de, a...) introduce el infinitivo igual que introduciría un sustantivo.' },
+    { h: 'Sustantivas flexionadas como sujeto: orden y modo según el verbo', html: 'Con verbos de régimen preposicional (<i>acabar con, atentar contra</i>), la sustantiva-sujeto exige subjuntivo y puede colocarse antes o al final de la frase: <i>que dijeras eso acabó con su resistencia</i>, <i>que te desentiendas ahora del asunto atenta contra nuestros intereses</i>. Con verbos que llevan un sustantivo incorporado como si fuera su propio objeto directo (<i>dar pena, hacer falta</i>), la sustantiva-sujeto también pide subjuntivo, pero el orden queda fijo, preverbal. Con verbos implicativos o evidenciales (<i>implicar, evidenciar, destacar, probar, reflejar</i>), que toman dos argumentos — sujeto como causa, objeto directo como consecuencia — el modo es indicativo y el orden también fijo: <i>que no hayas aprobado esa asignatura implica que no podrás pasar de curso</i>.' }
+  ],
+  contrasts: [
+    { es: 'Afirmó tener razón. / Afirmó que tenía razón.', en: 'He claimed to be right. / He claimed that he was right.', note: 'infinitivo con mismo sujeto, alternando con completiva conjugada' },
+    { es: 'Su miedo a fracasar le paralizaba.', en: 'His fear of failing paralyzed him.', note: 'nombre deverbal + infinitivo tras preposición' },
+    { es: 'Le sorprendió la posibilidad de haberse equivocado.', en: 'The possibility that he might have been wrong surprised him.', note: 'nombre no deverbal ("posibilidad") que aun así admite infinitivo compuesto' },
+    { es: 'Que no llamaras en todo el día evidencia que no te importó.', en: "The fact that you didn't call all day shows that you didn't care.", note: 'verbo evidencial: modo indicativo, orden fijo' }
+  ],
+  pitfalls: [
+    'El infinitivo como OD solo alterna libremente con la completiva conjugada cuando el sujeto de ambos verbos es el mismo — con sujetos distintos, el infinitivo no es posible sin más (no se dice *"pidió salir" queriendo decir que otra persona salga).',
+    'Que un nombre no derive de ningún verbo (como "idea") no le impide tomar un infinitivo como complemento — la deverbalidad no es un requisito absoluto en C1.',
+    'El modo de la sustantiva-sujeto no depende solo de si el verbo principal es "de opinión" o no, sino del tipo de verbo (régimen preposicional, incorporación de objeto, o implicativo/evidencial) — cada grupo exige su propio modo y orden.'
+  ],
+  examples: [
+    { es: 'Reconoció haberse equivocado.', en: 'He admitted to having made a mistake.' },
+    { es: 'Tiene la costumbre de llegar tarde.', en: 'He has the habit of arriving late.' },
+    { es: 'Que hayas mentido demuestra que no confías en nosotros.', en: 'That you lied shows you don\'t trust us.' }
+  ],
+  probes: [
+    { id: 'p:subsustantivasC1:od', kind: 'mcq', q: '¿Cuándo alterna libremente el infinitivo con "que + verbo conjugado" como objeto directo?', options: ['Siempre, sin condición', 'Solo cuando el sujeto de ambos verbos coincide', 'Nunca, son formas excluyentes'], answer: 1 },
+    { id: 'p:subsustantivasC1:noverbal', kind: 'mcq', q: '"La idea de habernos reunido" — ¿qué tiene de particular "idea" aquí?', options: ['Es un nombre deverbal típico', 'No deriva de ningún verbo y aun así admite infinitivo', 'No puede llevar infinitivo, solo "que"'], answer: 1 },
+    { id: 'p:subsustantivasC1:cloze', kind: 'cloze', text: 'Que no ___ el informe a tiempo implica que tendremos problemas. (implicativo, modo indicativo)', accept: ['entregaras', 'entregases'] },
+    { id: 'p:subsustantivasC1:recall', kind: 'recall', front: '¿Qué modo exige la sustantiva-sujeto con verbos implicativos o evidenciales como "implicar, probar, reflejar"?', back: 'indicativo, con orden fijo (sujeto preverbal)' }
+  ]
+},
+
+{
+  id: 'gr-sub-adjetivas-relativo-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:677', 'gramatica:C1:679', 'gramatica:C1:680', 'gramatica:C1:682', 'gramatica:C1:683',
+         'gramatica:C1:685', 'gramatica:C1:686', 'gramatica:C1:687', 'gramatica:C1:690', 'gramatica:C1:691',
+         'gramatica:C1:693', 'gramatica:C1:694', 'gramatica:C1:695', 'gramatica:C1:696', 'gramatica:C1:698', 'gramatica:C1:699'],
+  title: 'Subordinadas de relativo en C1: antecedentes especiales y construcciones que se apilan',
+  summary: 'Más allá de "que" y "quien", el sistema de relativas en C1 incluye antecedentes que son oraciones enteras, relativas que se yuxtaponen a distancia, relativas superpuestas dentro de un mismo sintagma, y reglas de concordancia de persona que solo se ven al comparar "yo, el que te apoyé" con "vosotros, los que os portasteis".',
+  sections: [
+    { h: 'Restrictivas: incompatibles con posesivo prenominal', html: 'Una relativa especificativa no admite un posesivo antepuesto al nombre, aunque sí uno pospuesto y tónico: <i>la frase mía que acabas de leer</i> es correcta, pero <i>*mi frase que acabas de leer</i>, con el posesivo delante, no lo es — el posesivo prenominal ya restringe por sí solo, y no admite además una restrictiva.' },
+    { h: 'Antecedentes especiales: pronombres, oraciones enteras', html: 'El antecedente puede ser un pronombre indefinido o demostrativo (<i>aquellos que lo deseen pueden abstenerse</i>), estar elíptico en relativas libres con <i>quien, donde, como</i> (<i>quien habla así no tiene razón</i>), o ser una oración entera, retomada anafóricamente con <i>lo cual</i> o con "cosa que": <i>me gritó, lo cual no me gustó</i>, <i>me preguntó por ti, cosa que no me gustó nada</i>.' },
+    { h: 'Cuyo y cuanto: relativos con función propia', html: 'El adjetivo relativo posesivo <i>cuyo</i> concuerda con lo poseído, no con el poseedor: <i>la chica cuyos padres viven al lado nuestro</i>. El relativo cuantificador <i>cuanto</i> equivale a "todo lo que": <i>di cuanto quieras</i>, <i>come cuanto te apetezca</i>.' },
+    { h: 'Concordancia de persona en relativas explicativas', html: 'Con relativas explicativas introducidas por "el/la que", el verbo puede concordar con la 1.ª/2.ª persona del antecedente o con la 3.ª: <i>yo, el que te apoyé / te apoyó en todo</i>, ambas posibles. Pero con 2.ª persona del plural, solo la concordancia directa funciona: <i>vosotros, los que os portasteis tan bien</i> es correcto, y <i>*vosotros, los que se portaron tan bien</i>, con 3.ª persona, no lo es. Cuando la relativa libre o semilibre funciona como atributo, ambas concordancias vuelven a ser posibles: <i>yo soy el que lo mando / manda</i>.' },
+    { h: 'Construcciones que se apilan o se separan', html: 'Las relativas yuxtapuestas, introducidas en una oración aparte por "con el/la/lo cual", exigen que su antecedente esté contiguo: <i>faltó Ana. A la cual, por cierto, la han expedientado por eso</i> es correcto, pero si entre el antecedente y la relativa se interpone otro material, falla. Las relativas superpuestas anidan una dentro de otra: <i>la fiesta en la que nos conocimos que organizaron los estudiantes</i>. Las relativas también aparecen en el segundo término de una comparación (<i>me he molestado por él más de lo que merecía</i>) y de forma discontinua, separadas por otra cláusula: <i>este es el informe que creo que nos pidió</i>. En la coordinación de relativas, el relativo se omite cuando ambas coordinadas comparten función (<i>esa es la calle donde estudio yo y vive mi hermana</i>), pero repetirlo puede introducir ambigüedad sobre si se habla de una persona o de dos: <i>el que me llamó y me dijo todo fue Pepe</i> frente a <i>el que me llamó y el que me dijo todo no son la misma persona</i>.' }
+  ],
+  contrasts: [
+    { es: 'El coche suyo que compró el mes pasado. / *Su coche que compró el mes pasado.', en: 'His car that he bought last month.', note: 'posesivo pospuesto tónico compatible con restrictiva, prenominal no' },
+    { es: 'Se quejó de todo, cosa que nos cansó a todos.', en: 'He complained about everything, which wore us all out.', note: 'antecedente oracional, retomado con "cosa que"' },
+    { es: 'Nosotros, los que llegamos primero / llegaron primero.', en: 'We, the ones who arrived first.', note: 'concordancia de persona: ambas opciones válidas con "nosotros"' },
+    { es: 'Este es el libro que dice ella que le regalaron.', en: 'This is the book that she says was given to her.', note: 'relativa discontinua, separada por "dice ella"' }
+  ],
+  pitfalls: [
+    'El posesivo prenominal bloquea la relativa restrictiva (<i>*mi frase que acabas de leer</i>) — para combinarlos, el posesivo debe ir pospuesto y tónico (<i>la frase mía que acabas de leer</i>).',
+    'La concordancia de persona en relativas explicativas con "el/la que" no es libre en todos los casos: con 2.ª persona del plural, solo vale la concordancia directa (<i>vosotros, los que os portasteis</i>), nunca la de 3.ª persona.',
+    'Repetir el relativo en una coordinación (<i>el que... y el que...</i>) no es redundante — puede ser la única forma de indicar que se trata de dos referentes distintos, no de uno solo.'
+  ],
+  examples: [
+    { es: 'La opinión tuya que más me convenció fue la última.', en: 'Your opinion that convinced me most was the last one.' },
+    { es: 'No contestó, cosa que me pareció muy raro.', en: "He didn't answer, which struck me as very odd." },
+    { es: 'Toma cuanto necesites de la despensa.', en: 'Take whatever you need from the pantry.' }
+  ],
+  probes: [
+    { id: 'p:subadjetivasC1:posesivo', kind: 'mcq', q: '¿Cuál es correcta?', options: ['Mi comentario que hiciste ayer me molestó.', 'El comentario tuyo que hiciste ayer me molestó.', 'Ambas son igual de correctas.'], answer: 1 },
+    { id: 'p:subadjetivasC1:concordancia', kind: 'mcq', q: '¿Cuál es agramatical?', options: ['Vosotros, los que os portasteis tan bien.', 'Vosotros, los que se portaron tan bien.', 'Yo soy el que lo manda.'], answer: 1 },
+    { id: 'p:subadjetivasC1:cloze', kind: 'cloze', text: 'Di ___ quieras, no hay límite. (relativo cuantificador, "todo lo que")', accept: ['cuanto'] },
+    { id: 'p:subadjetivasC1:recall', kind: 'recall', front: '¿Qué distingue "el que me llamó y me dijo todo fue Pepe" de "el que me llamó y el que me dijo todo no son la misma persona"?', back: 'la repetición del relativo indica que se trata de dos referentes distintos, no de uno solo' }
+  ]
 }
 
 ];
