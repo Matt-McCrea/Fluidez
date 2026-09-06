@@ -26919,6 +26919,47 @@ window.STRAND_LESSONS = [
     { id: 'p:obligacionnecesidadC1:cloze', kind: 'cloze', text: 'Nada te ___ a leerlo si no quieres. (imponer una obligación)', accept: ['obliga'] },
     { id: 'p:obligacionnecesidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "tener la obligación de" y "tener la necesidad de"?', back: 'obligación es un deber, a menudo social o legal; necesidad surge de una carencia real, no de una norma' }
   ]
+},
+
+{
+  id: 'fn-conocimiento-desconocimiento-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:342', 'funciones:C1:343', 'funciones:C1:344', 'funciones:C1:346', 'funciones:C1:347', 'funciones:C1:354',
+         'funciones:C1:355', 'funciones:C1:356', 'funciones:C1:357', 'funciones:C1:366', 'funciones:C1:369', 'funciones:C1:370'],
+  title: 'Conocimiento y desconocimiento en C1: de "¿te has enterado de...?" a "lo ignoro"',
+  summary: 'Preguntar y responder sobre el conocimiento de algo en C1 combina el registro coloquial ("¿te has enterado de lo de...?") con el más formal ("tengo conocimiento de", "lo ignoro/desconozco"), y "no tener ni la más remota idea" cierra la escala como la negación más rotunda.',
+  sections: [
+    { h: 'Preguntar por el conocimiento de algo', html: '<i>¿Sabes lo que...?</i> es la forma más neutra. <i>¿Te has enterado de lo de...?</i> es coloquial, propia de cotilleos o noticias informales: <i>¿te enteraste de lo de Pedro?</i>. <i>¿Tienes conocimiento de/sobre...?</i> y <i>¿tienes noticia(s) de/sobre...?</i> son más formales, propias de contextos institucionales. <i>¿Tienes idea de...?</i> pregunta de forma más general e indirecta.' },
+    { h: 'Expresar conocimiento', html: '<i>Sé lo que...</i> es directo y general: <i>sé perfectamente lo que estás pensando</i>. <i>Tengo conocimiento de...</i> y <i>tengo noticia(s) de...</i> son más formales: <i>tenemos conocimiento de que eso no fue así</i>. <i>Estoy enterado de...</i> se sitúa en un registro intermedio, frecuente para temas cotidianos o de cotilleo: <i>estoy enterada de lo de Rubén</i>.' },
+    { h: 'Expresar desconocimiento total', html: '<i>No tengo ni la más mínima/remota idea de...</i> es la negación más rotunda y coloquial de conocimiento. <i>No tengo noticia</i> es su versión más neutra.' },
+    { h: 'Expresar desconocimiento formal', html: '<i>Lo ignoro/desconozco</i> e <i>ignoro/desconozco...</i> son las formas más formales de admitir desconocimiento, frecuentes en contextos oficiales o periodísticos: <i>desconocemos los motivos que le llevaron a tomar medidas tan drásticas</i>.' }
+  ],
+  exponents: [
+    { es: '¿Te has enterado de lo de la boda de Marta?', en: "Have you heard about Marta's wedding?", register: 'coloquial' },
+    { es: 'Tenemos conocimiento de que se han detectado varios casos.', en: 'We are aware that several cases have been detected.', register: 'formal' },
+    { es: 'No tengo ni la más remota idea de dónde está.', en: "I don't have the faintest idea where he is.", register: 'coloquial' },
+    { es: 'Desconocemos el paradero de los responsables.', en: "We are unaware of the whereabouts of those responsible.", register: 'formal' },
+    { es: '¿Tienes noticias de cómo va la investigación?', en: 'Do you have any news on how the investigation is going?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'No sé nada de eso.', en: "I don't know anything about that.", note: 'expresión neutra de desconocimiento' },
+    { es: 'Desconozco por completo ese asunto.', en: "I am completely unaware of that matter.", note: 'misma idea, en registro formal' }
+  ],
+  pitfalls: [
+    '"¿Te has enterado de lo de...?" es exclusivamente coloquial, casi siempre asociado a cotilleos o noticias informales — no conviene en un registro formal.',
+    '"Ignoro/desconozco" no implica indiferencia deliberada, como podría sugerir "ignorar" en otros contextos — simplemente admite falta de información sobre algo.',
+    '"No tengo ni la más remota idea" es la negación más enfática de conocimiento — usarla para una simple duda menor resultaría exagerado.'
+  ],
+  examples: [
+    { es: '¿Alguien sabe algo sobre el cambio de horario?', en: 'Does anyone know anything about the schedule change?' },
+    { es: 'Estoy enterado de todas las novedades del proyecto.', en: "I'm up to date on all the project's news." },
+    { es: 'Ignoro las razones exactas de su decisión.', en: "I don't know the exact reasons for his decision." }
+  ],
+  probes: [
+    { id: 'p:conocimientodesconocimientoC1:tehasenterado', kind: 'mcq', q: '¿En qué registro se usa "¿te has enterado de lo de...?"?', options: ['Formal e institucional', 'Coloquial, propio de cotilleos', 'Académico'], answer: 1 },
+    { id: 'p:conocimientodesconocimientoC1:ignorar', kind: 'mcq', q: '"Desconocemos los motivos" implica...', options: ['Indiferencia deliberada', 'Falta de información sobre algo', 'Que se oculta algo'], answer: 1 },
+    { id: 'p:conocimientodesconocimientoC1:cloze', kind: 'cloze', text: 'No tengo ni la más ___ idea de dónde está. (negación enfática de conocimiento)', accept: ['remota', 'mínima'] },
+    { id: 'p:conocimientodesconocimientoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "estoy enterado de" y "tengo conocimiento de"?', back: '"estoy enterado de" es de registro intermedio, frecuente para temas cotidianos; "tengo conocimiento de" es más formal e institucional' }
+  ]
 }
 
 ];
