@@ -28377,6 +28377,91 @@ window.STRAND_LESSONS = [
 },
 
 {
+  id: 'gn-presentacion-publica-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:143', 'generos_discursivos:C1:147', 'generos_discursivos:C1:156', 'generos_discursivos:C1:159',
+         'generos_discursivos:C1:161', 'generos_discursivos:C1:168', 'generos_discursivos:C1:178', 'generos_discursivos:C1:190',
+         'generos_discursivos:C1:191', 'generos_discursivos:C1:192', 'generos_discursivos:C1:194', 'generos_discursivos:C1:203',
+         'generos_discursivos:C1:236', 'generos_discursivos:C1:238', 'generos_discursivos:C1:249'],
+  title: 'La presentación pública: la estructura completa',
+  summary: 'A public presentation is not a speech that happens to have a beginning, middle and end — it is four named, purpose-built stages (opening, introduction, development, closing), each with its own toolkit: how to hook the audience before the content starts, how to signal you are moving between points, and how to close without just trailing off.',
+  sections: [
+    { h: 'Apertura: más que un saludo', html: 'La apertura cubre el saludo, quién presenta a quién, el agradecimiento a la audiencia o institución, y el primer control de la comunicación (avisar de la duración, de cuándo se podrán hacer preguntas, si hay documentación de apoyo).' },
+    { h: 'Introducción: el gancho antes del contenido', html: 'Antes de entrar en materia, conviene captar el interés con una técnica concreta: relatar un hecho llamativo, aportar un ejemplo, hacer una pregunta al público, citar una fuente, o mostrar por qué el tema afecta directamente a los asistentes.' },
+    { h: 'Desarrollo y cierre', html: 'El desarrollo puede ser expositivo-descriptivo o expositivo-argumentativo, con controles de comunicación entre puntos. El cierre sintetiza lo dicho, abre turno de preguntas si procede, y se despide con una fórmula reconocible, no de forma abrupta.' }
+  ],
+  moves: [
+    { h: 'Elegir un gancho de introducción y no un simple "hoy voy a hablar de..."', html: 'Un dato sorprendente, una anécdota breve o una pregunta retórica retienen la atención mucho mejor que anunciar el tema sin más.' },
+    { h: 'Marcar cada cambio de punto', html: 'Usar conectores como "sin embargo", "no obstante" o resúmenes parciales ayuda a que el público no pierda el hilo entre secciones del desarrollo.' },
+    { h: 'Cerrar con síntesis, no con silencio', html: 'Resumir brevemente los puntos principales antes de abrir preguntas o despedirse evita que la presentación se apague sin más.' }
+  ],
+  model: {
+    title: 'Presentación pública (fragmento)',
+    text: '[Apertura]\nBuenas tardes a todos. Antes de nada, quiero agradecer a la organización la invitación a estar hoy aquí. La charla durará unos veinte minutos, y si les parece, dejamos las preguntas para el final.\n\n[Introducción]\nHace unos meses me encontré con un dato que me sorprendió: solo el doce por ciento de los proyectos de este tipo llega a completarse en el plazo previsto. Como ustedes, sin duda, saben, esto no es un problema menor.\n\n[Desarrollo]\nMe gustaría ofrecer una nueva perspectiva de por qué ocurre esto. Sin embargo, antes de entrar en las causas, conviene aclarar qué entendemos exactamente por "plazo previsto"...\n\n[Cierre]\nMe gustaría resumir diciendo que el problema no es de recursos, sino de planificación inicial. Si no tienen ninguna otra pregunta, muchas gracias por su atención.'
+  },
+  checklist: [
+    '¿Incluye la apertura un saludo, agradecimiento y aviso sobre duración y turno de preguntas?',
+    '¿Usa la introducción una técnica de gancho concreta, no solo un anuncio del tema?',
+    '¿Marca el desarrollo los cambios de punto con conectores o resúmenes parciales?',
+    '¿Cierra con una síntesis reconocible, no de forma abrupta?'
+  ],
+  examples: [
+    { es: 'Antes de nada, quiero agradecer a la organización la invitación a estar hoy aquí.', en: 'First of all, I want to thank the organizers for inviting me here today.' },
+    { es: 'Me gustaría ofrecer una nueva perspectiva de este problema.', en: 'I would like to offer a new perspective on this problem.' },
+    { es: 'Me gustaría resumir diciendo que el problema no es de recursos, sino de planificación.', en: 'I would like to sum up by saying the problem is not one of resources, but of planning.' }
+  ],
+  probes: [
+    { id: 'p:presentacionC1:apertura', kind: 'mcq', q: '¿Qué debe incluir la apertura de una presentación pública, además del saludo?',
+      options: ['Solo el saludo, nada más', 'Agradecimiento y aviso sobre duración y turno de preguntas', 'El cierre de la presentación'], answer: 1 },
+    { id: 'p:presentacionC1:gancho', kind: 'mcq', q: '¿Qué es preferible al empezar una introducción?',
+      options: ['Anunciar el tema sin más ("hoy voy a hablar de...")', 'Un dato sorprendente, una anécdota o una pregunta retórica', 'Pasar directamente al desarrollo'], answer: 1 },
+    { id: 'p:presentacionC1:cloze', kind: 'cloze', text: 'Me ___ ofrecer una nueva perspectiva de este tema. (gustar, condicional)', accept: ['gustaría'] },
+    { id: 'p:presentacionC1:recall', kind: 'recall', front: '¿Cuáles son las cuatro etapas de una presentación pública?', back: 'apertura, introducción, desarrollo y cierre' }
+  ]
+},
+
+{
+  id: 'gn-presentacion-publica-c2', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:253', 'generos_discursivos:C1:266', 'generos_discursivos:C1:300', 'generos_discursivos:C1:301',
+         'generos_discursivos:C1:302', 'generos_discursivos:C1:304', 'generos_discursivos:C1:313', 'generos_discursivos:C1:325',
+         'generos_discursivos:C1:354', 'generos_discursivos:C1:359', 'generos_discursivos:C1:363', 'generos_discursivos:C1:365',
+         'generos_discursivos:C1:367'],
+  title: 'La presentación pública: el nivel más pulido',
+  summary: 'Same four-stage structure as any public presentation, but at its most polished: the audience is assumed to already know the basics ("ustedes conocen sobradamente..."), the summary of what is coming is mapped out explicitly ("nos conducirán a..., por un lado, por otro"), and the closing earns its warmth — humor, a well-placed quote, sincere praise for the audience — rather than reaching for it as filler.',
+  sections: [
+    { h: 'Presuponer, no explicar de más', html: 'En vez de anunciar el tema como si fuera nuevo, se da por hecho el conocimiento previo del público: "ustedes conocen sobradamente...", "la mayoría de los presentes está familiarizado con...". Esto libera tiempo para profundizar, no para repasar lo obvio.' },
+    { h: 'El mapa del desarrollo, explícito', html: 'El sumario ya no es una simple lista de puntos, sino un mapa de cómo se conectan: "comenzaremos..., nos conducirán a..., por un lado, por otro" — el público sabe de antemano por qué el orden elegido tiene sentido.' },
+    { h: 'Un cierre que se ha ganado su calidez', html: 'El humor, la cita bien elegida o el elogio sincero al auditorio solo funcionan si llegan tras una síntesis sólida — usados sin ese respaldo, suenan a relleno vacío.' }
+  ],
+  moves: [
+    { h: 'Dar por sentado lo básico', html: 'Presuponer que el público ya conoce los fundamentos del tema, y dedicar el tiempo ganado a la parte más matizada o discutible.' },
+    { h: 'Explicitar la lógica del orden elegido', html: 'No solo listar los puntos del desarrollo, sino explicar por qué se tratan en ese orden y cómo se conectan entre sí.' },
+    { h: 'Ganarse el cierre cálido', html: 'Llegar al humor, la cita o el elogio al público solo después de haber sintetizado con solidez lo expuesto — nunca como sustituto de esa síntesis.' }
+  ],
+  model: {
+    title: 'Presentación pública de nivel pulido (fragmento)',
+    text: '[Introducción, presuponiendo conocimiento]\nUstedes conocen sobradamente el debate en torno a este tema, así que no me voy a detener en los aspectos más básicos. Quisiera que profundizáramos en algunos aspectos que suelen quedar fuera de la discusión habitual.\n\n[Sumario explícito]\nComenzaremos por el contexto histórico, que nos conducirán a las dos posturas principales; por un lado, la de quienes defienden una regulación más estricta, por otro, la de quienes confían en la autorregulación del sector.\n\n[Cierre ganado]\nAsí pues, en suma, sintetizando lo anterior: ninguna de las dos posturas resuelve el problema por sí sola. Y como decía un colega hace poco, "las buenas preguntas duran más que las respuestas fáciles". Muchas gracias por su atención y su paciencia esta tarde.'
+  },
+  checklist: [
+    '¿Presupone la introducción el conocimiento básico del público, en vez de explicarlo de nuevo?',
+    '¿Explica el sumario del desarrollo no solo qué puntos vienen, sino cómo se conectan y por qué en ese orden?',
+    '¿Llega el cierre cálido (humor, cita, elogio) después de una síntesis sólida, no en su lugar?'
+  ],
+  examples: [
+    { es: 'Ustedes conocen sobradamente el debate en torno a este tema.', en: 'You are all well aware of the debate around this topic.' },
+    { es: 'Comenzaremos por el contexto histórico, que nos conducirán a las dos posturas principales.', en: 'We will start with the historical context, which will lead us to the two main positions.' },
+    { es: 'Así pues, en suma, sintetizando lo anterior: ninguna postura resuelve el problema por sí sola.', en: 'So, in short, to sum up: neither position solves the problem on its own.' }
+  ],
+  probes: [
+    { id: 'p:presentacionC2:presuponer', kind: 'mcq', q: 'En una presentación de nivel pulido, ¿qué se hace con el conocimiento básico del público?',
+      options: ['Se explica en detalle igualmente', 'Se presupone, liberando tiempo para lo más matizado', 'Se evita mencionarlo'], answer: 1 },
+    { id: 'p:presentacionC2:cierre', kind: 'mcq', q: '¿Cuándo funciona el humor o la cita en el cierre?',
+      options: ['En cualquier momento, sin condición', 'Solo después de una síntesis sólida de lo expuesto', 'Nunca, hay que evitarlos'], answer: 1 },
+    { id: 'p:presentacionC2:cloze', kind: 'cloze', text: 'Quisiera que ___ en algunos aspectos menos conocidos. (profundizar, subjuntivo)', accept: ['profundizáramos', 'profundizásemos'] },
+    { id: 'p:presentacionC2:recall', kind: 'recall', front: '¿Qué hace que el humor o una cita en el cierre no suenen a relleno vacío?', back: 'que lleguen después de una síntesis sólida de lo expuesto, no en su lugar' }
+  ]
+},
+
+{
   id: 'gn-resena-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:44'],
   title: 'La reseña crítica',
