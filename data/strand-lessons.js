@@ -27871,6 +27871,50 @@ window.STRAND_LESSONS = [
     { id: 'p:aconsejaradvertiramenazarC1:cloze', kind: 'cloze', text: 'Ni se te ___ contárselo a nadie. (prohibición tajante disfrazada de consejo)', accept: ['ocurra'] },
     { id: 'p:aconsejaradvertiramenazarC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "estás avisado" y "te arrepentirás"?', back: 'estar avisado traslada la responsabilidad al otro sin amenazar directamente; "te arrepentirás" es una amenaza explícita' }
   ]
+},
+
+{
+  id: 'fn-reprochar-ofrecerse-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:975', 'funciones:C1:976', 'funciones:C1:977', 'funciones:C1:978', 'funciones:C1:979', 'funciones:C1:980',
+         'funciones:C1:981', 'funciones:C1:993', 'funciones:C1:994', 'funciones:C1:995', 'funciones:C1:996', 'funciones:C1:997',
+         'funciones:C1:998', 'funciones:C1:999', 'funciones:C1:1001', 'funciones:C1:1002'],
+  title: 'Reprochar y ofrecerse en C1: "¿no te da vergüenza?" y "cuenta conmigo"',
+  summary: 'Reprochar en C1 va del reproche hipotético sobre el pasado ("si no hubieras cerrado la puerta...") a la pregunta acusadora que apela a la vergüenza ("¿no te da vergüenza?"), mientras que ofrecerse ayuda tiene su propia escala, de la formalidad institucional a la calidez del simple "cuenta conmigo".',
+  sections: [
+    { h: 'Reprochar valorando el comportamiento', html: '<i>Es/me parece vergonzoso/lamentable...</i> valora directamente una acción como reprochable: <i>son vergonzosos los espectáculos que das cada vez que salimos</i>. <i>¿Se puede saber por qué...?</i> pregunta con matiz de reproche acumulado. <i>¿Qué haces que (todavía)...?</i> reprocha una demora: <i>¿qué haces que todavía no estás listo?</i>.' },
+    { h: 'Reprochar con hipótesis sobre el pasado', html: '<i>Si (no) hubieras..., (no)...</i> reprocha señalando una consecuencia que se habría evitado con otra acción pasada: <i>si no hubieras cerrado la puerta, habríamos oído los gritos</i> — la estructura misma es un reproche, no solo una condición.' },
+    { h: 'Reprochar apelando a la vergüenza y a la culpa', html: '<i>(Está claro que) no tienes vergüenza</i> y <i>¿no te da vergüenza?</i> apelan directamente al pudor del otro. <i>La culpa es tuya</i> y <i>tú tienes la culpa (de todo)</i> asignan responsabilidad directa, sin matices.' },
+    { h: 'Ofrecerse: preguntas directas', html: '<i>¿Qué puedo hacer por ti?</i> y <i>¿puedo servir(te) de ayuda?</i> ofrecen ayuda preguntando concretamente qué se necesita.' },
+    { h: 'Ofrecerse: disposición formal', html: '<i>Me tienes/estoy a tu disposición (para lo que necesites/quieras)</i> y <i>me ofrezco para...</i> son formas más formales de ofrecerse. <i>Te ofrezco + mi ayuda/mis servicios... para...</i> es la fórmula institucional: <i>les ofrecemos nuestros servicios de forma completamente gratuita</i>.' },
+    { h: 'Ofrecerse: fórmulas cercanas y coloquiales', html: '<i>Si necesitas ayuda, no tienes más que/solo tienes que...</i>, <i>(ya sabes que) puedes contar con mi ayuda/conmigo</i>, <i>ya sabes dónde encontrarme/estoy/me tienes</i> y <i>cuenta conmigo</i> son fórmulas cercanas y cálidas de disponibilidad. <i>No dudes en + infinitivo</i> anima explícitamente a pedir ayuda sin reparo: <i>no dude en llamarnos si necesita algo más</i>.' }
+  ],
+  exponents: [
+    { es: '¿No te da vergüenza haberle hablado así a tu madre?', en: "Aren't you ashamed of talking to your mother like that?", register: 'coloquial' },
+    { es: 'Si me hubieras avisado antes, habría podido ayudarte.', en: "If you had warned me earlier, I could have helped you.", register: 'neutral' },
+    { es: 'Estoy a su disposición para cualquier consulta.', en: 'I am at your disposal for any inquiry.', register: 'formal' },
+    { es: 'Cuenta conmigo para lo que necesites.', en: 'Count on me for whatever you need.', register: 'coloquial' },
+    { es: 'No dude en contactarnos si surge cualquier problema.', en: "Don't hesitate to contact us if any problem arises.", register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Le ofrecemos nuestros servicios de asesoría legal.', en: 'We offer our legal advisory services.', note: 'ofrecimiento institucional y formal' },
+    { es: 'Cuenta conmigo, ya lo sabes.', en: 'Count on me, you know that.', note: 'ofrecimiento cercano y coloquial' }
+  ],
+  pitfalls: [
+    '"Si (no) hubieras..., (no)..." no es una simple condición hipotética neutra — en este contexto, la propia estructura funciona como reproche por lo que ya ocurrió.',
+    '"¿Se puede saber por qué...?" no es una pregunta de información neutra — el matiz de reproche acumulado es parte constitutiva de la expresión.',
+    '"Cuenta conmigo" y "estoy a tu disposición" no son intercambiables sin más — la primera es cercana y coloquial, la segunda formal e institucional.'
+  ],
+  examples: [
+    { es: 'La culpa es tuya por no haber avisado a tiempo.', en: "It's your fault for not warning in time." },
+    { es: '¿Puedo servirle de ayuda en algo más?', en: 'May I be of any further assistance?' },
+    { es: 'Ya sabes dónde encontrarme si necesitas hablar.', en: 'You know where to find me if you need to talk.' }
+  ],
+  probes: [
+    { id: 'p:reprocharofrecerseC1:sihubieras', kind: 'mcq', q: '"Si no hubieras cerrado la puerta, habríamos oído los gritos." ¿Qué función tiene, además de condicional?', options: ['Ninguna adicional', 'Un reproche por lo que ya ocurrió', 'Una amenaza'], answer: 1 },
+    { id: 'p:reprocharofrecerseC1:cuentaconmigo', kind: 'mcq', q: '¿Qué registro tiene "cuenta conmigo" frente a "estoy a su disposición"?', options: ['El mismo registro exacto', 'Más cercano y coloquial', 'Más formal'], answer: 1 },
+    { id: 'p:reprocharofrecerseC1:cloze', kind: 'cloze', text: '¿No te da ___ haberle hablado así? (apelar al pudor)', accept: ['vergüenza'] },
+    { id: 'p:reprocharofrecerseC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "la culpa es tuya" y "¿se puede saber por qué...?"?', back: 'la primera asigna responsabilidad directa sin matices; la segunda pregunta con un matiz de reproche acumulado, no información neutra' }
+  ]
 }
 
 ];
