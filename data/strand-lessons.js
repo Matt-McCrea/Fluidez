@@ -28748,6 +28748,178 @@ window.STRAND_LESSONS = [
 },
 
 {
+  id: 'gn-narrativa-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:784', 'generos_discursivos:C1:785', 'generos_discursivos:C1:786', 'generos_discursivos:C1:787',
+         'generos_discursivos:C1:788', 'generos_discursivos:C1:789', 'generos_discursivos:C1:790', 'generos_discursivos:C1:791',
+         'generos_discursivos:C1:792'],
+  title: 'Contar una anécdota: las cinco etapas',
+  summary: 'A good oral anecdote is not just events in order — it is a situation that gets deliberately complicated ("no te vas a creer lo que pasó"), pushed through action, resolved, and then closed with a final twist that reframes everything before it — with description and reported dialogue woven in along the way, not tacked on at the end.',
+  sections: [
+    { h: 'Situación inicial y complicación', html: 'Se planta un contexto normal y tranquilo — y después se introduce, con marcadores como "no te lo vas a creer" o "¿a que no sabes...?", el elemento que lo complica todo.' },
+    { h: 'Acción y resolución', html: 'La acción despliega lo que ocurre a partir de la complicación, con ritmo y tensión creciente; la resolución cierra esa tensión, explicando cómo se solucionó o qué pasó al final del incidente central.' },
+    { h: 'Situación final: el giro que reencuadra todo', html: 'La situación final no es un simple "y ya está" — a menudo añade un giro inesperado que da un nuevo sentido a toda la anécdota, como descubrir a alguien inesperado en el lugar menos pensado.' },
+    { h: 'Descripción y diálogo insertados', html: 'Dentro de la narración se insertan secuencias descriptivas (cómo era una persona, cómo se sentía) y diálogo en estilo indirecto ("le dije que...", "me dijo que...") que enriquecen la anécdota sin detener el relato.' }
+  ],
+  moves: [
+    { h: 'Situación inicial', html: 'Plantear un contexto normal, tranquilo, antes de que ocurra nada destacable.' },
+    { h: 'Complicación', html: 'Introducir el elemento que rompe la normalidad, marcado con expresiones de sorpresa.' },
+    { h: 'Acción', html: 'Desplegar lo que ocurre a partir de la complicación, con tensión creciente.' },
+    { h: 'Resolución', html: 'Cerrar la tensión del incidente central.' },
+    { h: 'Situación final', html: 'Añadir, si es posible, un giro que reencuadre toda la anécdota.' }
+  ],
+  model: {
+    title: 'Anécdota (fragmento)',
+    text: '¿A que no sabes lo que me pasó en Menorca? No te lo vas a creer. [situación inicial] Un día acabo pronto de trabajar y decido darme un paseo por la playa. El tiempo era una maravilla.\n\nY nada... cuando estaba yo tan tranquila, pensando en lo bien que se está en la playa... no te vas a creer lo que pasó. ¿A que no sabes quién aparece? ¡Pedro y Lucía! ¡Juntos! [complicación]\n\nDe repente, alguien empieza a gritar y se arma tal lío que no te puedes imaginar: la gente corriendo por la playa. [acción]\n\nDespués de un rato de tensión, el chico empezaba a respirar, ¡qué susto! Yo creo que se salvó gracias a que los socorristas actuaron con rapidez. [resolución]\n\nEn fin, que el ahogado no se ahogó y yo, donde menos me lo esperaba, me encuentro a Lucía con tu ex. [situación final, giro]'
+  },
+  checklist: [
+    '¿Planta la situación inicial un contexto tranquilo antes de la complicación?',
+    '¿Marca la complicación con expresiones de sorpresa reconocibles ("no te lo vas a creer")?',
+    '¿Cierra la resolución la tensión del incidente central?',
+    '¿Añade la situación final un giro que reencuadre la anécdota, no un simple final plano?'
+  ],
+  examples: [
+    { es: 'No te lo vas a creer, pero habían desaparecido.', en: 'You won\'t believe it, but they had disappeared.' },
+    { es: 'De repente, alguien empieza a gritar y se arma tal lío que no te puedes imaginar.', en: 'Suddenly, someone starts shouting and such chaos breaks out that you can\'t imagine.' },
+    { es: 'Le dije que había algunas cuestiones de seguridad con las que no estaba de acuerdo.', en: 'I told him there were some safety issues I disagreed with.' }
+  ],
+  probes: [
+    { id: 'p:narrativaC1:orden', kind: 'mcq', q: '¿Cuáles son, en orden, las cinco etapas de una anécdota bien contada?',
+      options: ['Acción, resolución, situación inicial, complicación, final', 'Situación inicial, complicación, acción, resolución, situación final', 'Solo complicación y resolución, sin más'], answer: 1 },
+    { id: 'p:narrativaC1:giro', kind: 'mcq', q: '¿Qué hace una buena situación final?',
+      options: ['Terminar de forma plana, sin más', 'Añadir a menudo un giro que reencuadra toda la anécdota', 'Repetir la situación inicial'], answer: 1 },
+    { id: 'p:narrativaC1:cloze', kind: 'cloze', text: 'De repente, alguien ___ a gritar. (empezar)', accept: ['empieza'] },
+    { id: 'p:narrativaC1:recall', kind: 'recall', front: '¿Qué función cumple la complicación en una anécdota?', back: 'introduce el elemento que rompe la normalidad de la situación inicial, marcado con expresiones de sorpresa' }
+  ]
+},
+
+{
+  id: 'gn-expositiva-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:837', 'generos_discursivos:C1:838', 'generos_discursivos:C1:852', 'generos_discursivos:C1:854',
+         'generos_discursivos:C1:855', 'generos_discursivos:C1:856', 'generos_discursivos:C1:857', 'generos_discursivos:C1:860',
+         'generos_discursivos:C1:861', 'generos_discursivos:C1:862', 'generos_discursivos:C1:863'],
+  title: 'Exponer un tema: presentar, desarrollar, concluir',
+  summary: 'A good exposition earns the reader\'s attention before delivering information — with a definition, a striking general claim, a rhetorical question, or a concrete example — then develops each sub-point with its own toolkit (classification, analogy, citation) before closing with a conclusion that names what was actually established, not just "in conclusion, that\'s it."',
+  sections: [
+    { h: 'Presentación: cómo abrir sin aburrir', html: 'El tema se presenta mediante una definición ("se entiende por..."), una afirmación general llamativa, una pregunta retórica, o un ejemplo concreto — nunca simplemente anunciando "voy a hablar de X".' },
+    { h: 'Desarrollo: un recurso por sub-tema', html: 'Cada sub-tema se desarrolla con un recurso propio: clasificación ("consta de...", "se compone de..."), ejemplificación ("es el caso de..."), analogía ("es similar a...") o cita de una fuente ("X señala que...").' },
+    { h: 'Conclusión: lo que de verdad se estableció', html: 'La conclusión retoma la idea central y explicita qué se ha demostrado o clarificado — no se limita a repetir la introducción con otras palabras.' }
+  ],
+  moves: [
+    { h: 'Presentación con gancho', html: 'Abrir con una definición, una afirmación general, una pregunta retórica o un ejemplo — nunca un simple anuncio del tema.' },
+    { h: 'Desarrollo con recurso específico', html: 'Elegir, para cada sub-tema, el recurso más adecuado: clasificación, ejemplificación, analogía o cita.' },
+    { h: 'Conclusión que cierra, no que repite', html: 'Explicitar qué se ha establecido, no reformular la introducción.' }
+  ],
+  model: {
+    title: 'Exposición: el uso de la coma (fragmento)',
+    text: 'El uso correcto de la puntuación es imprescindible para cualquier persona que quiera manejar bien el lenguaje escrito. Un signo mal colocado puede cambiar el sentido de la oración drásticamente. [presentación: afirmación general]\n\nAntes que nada, conviene señalar que la coma se usa para aclarar la información que aparece dentro de una frase. En primer lugar, separa los elementos homogéneos de una enumeración. También aparece cuando se altera el orden neutro de una frase: «Las patatas, me comí». [desarrollo: clasificación y ejemplificación]\n\nEn definitiva, la coma es un signo de puntuación importante en la transmisión de información escrita: ayuda en la clasificación de datos y en la aclaración de oraciones que no siguen el orden neutro. [conclusión]'
+  },
+  checklist: [
+    '¿Abre la presentación con un gancho (definición, afirmación, pregunta o ejemplo), no un simple anuncio?',
+    '¿Usa el desarrollo un recurso distinto según lo que necesite cada sub-tema (clasificación, ejemplo, analogía, cita)?',
+    '¿Explicita la conclusión qué se ha establecido, en vez de repetir la introducción?'
+  ],
+  examples: [
+    { es: 'Se entiende por "gramática" la ciencia que estudia la estructura de una lengua.', en: '"Grammar" is understood as the science that studies the structure of a language.' },
+    { es: 'Es similar a lo que ocurre en otros idiomas romances.', en: 'It is similar to what happens in other Romance languages.' },
+    { es: 'X, en su obra Y, señala que...', en: 'X, in their work Y, points out that...' }
+  ],
+  probes: [
+    { id: 'p:expositivaC1:apertura', kind: 'mcq', q: '¿Cuál de estas NO es una forma recomendada de presentar un tema expositivo?',
+      options: ['Una definición', 'Anunciar simplemente "voy a hablar de X"', 'Una pregunta retórica'], answer: 1 },
+    { id: 'p:expositivaC1:desarrollo', kind: 'mcq', q: '¿Qué recurso se usa para introducir una fuente externa en el desarrollo?',
+      options: ['La cita', 'La pregunta retórica', 'La situación inicial'], answer: 0 },
+    { id: 'p:expositivaC1:cloze', kind: 'cloze', text: 'Se ___ por "gramática" la ciencia que estudia la estructura de una lengua. (entender)', accept: ['entiende'] },
+    { id: 'p:expositivaC1:recall', kind: 'recall', front: '¿Qué debe hacer la conclusión de una exposición, más allá de repetir la introducción?', back: 'explicitar qué se ha demostrado o clarificado a lo largo del desarrollo' }
+  ]
+},
+
+{
+  id: 'gn-argumentativa-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:919', 'generos_discursivos:C1:920', 'generos_discursivos:C1:921', 'generos_discursivos:C1:922',
+         'generos_discursivos:C1:923', 'generos_discursivos:C1:924', 'generos_discursivos:C1:925', 'generos_discursivos:C1:926',
+         'generos_discursivos:C1:927', 'generos_discursivos:C1:956', 'generos_discursivos:C1:957', 'generos_discursivos:C1:958'],
+  title: 'Argumentar: de la cuestión polémica a la reserva final',
+  summary: 'A strong argumentative essay does not just state a thesis and pile on evidence for it — it stages the strongest opposing view honestly (contraargumentación) before answering it, and closes with a reserva that admits the limits of its own conclusion rather than overselling it.',
+  sections: [
+    { h: 'Cuestión polémica y tesis', html: 'Se abre con un hecho o afirmación controvertida que justifica escribir sobre el tema, seguida de la opinión o tesis propia y, a veces, una regla general que la resume en una frase.' },
+    { h: 'Argumento, fuente y contraargumentación', html: 'Cada argumento puede apoyarse en una fuente citada; después, en vez de ignorar la postura contraria, se presenta con honestidad (contraargumentación) antes de rebatirla con un segundo argumento.' },
+    { h: 'Reserva y conclusión', html: 'Antes de concluir, una reserva reconoce los límites de la propia tesis (excepciones, casos especiales); la conclusión final retoma la idea central sin fingir haber resuelto el tema por completo.' },
+    { h: 'Secuencias insertadas', html: 'Dentro del ensayo argumentativo se insertan a menudo secuencias narrativas (un testimonio concreto), descriptivas (detalles de un caso) o expositivas (un dato citado) que hacen el argumento más tangible.' }
+  ],
+  moves: [
+    { h: 'Cuestión polémica', html: 'Abrir con un hecho o afirmación que haga necesario tomar postura.' },
+    { h: 'Opinión, argumento y fuente', html: 'Declarar la tesis y apoyarla con al menos un argumento y, si es posible, una fuente citada.' },
+    { h: 'Contraargumentación honesta', html: 'Presentar la postura contraria con seriedad, no como un espantapájaros fácil de derribar.' },
+    { h: 'Reserva y conclusión', html: 'Reconocer los límites de la propia tesis antes de cerrar con una conclusión que no la sobrevenda.' }
+  ],
+  model: {
+    title: 'Ensayo argumentativo (fragmento)',
+    text: 'Un prestigioso cirujano ha asegurado recientemente que la cirugía plástica no supone un riesgo mayor que «sacarse una muela». [cuestión polémica]\n\nA mi juicio, la obsesión por un cuerpo perfecto puede tener consecuencias muy graves. [tesis / regla general]\n\nKoehler señala que «el 20% de las personas sometidas a cirugía plástica en Europa durante 2003 ha sufrido lesiones irreversibles» (2004, p. 22). [argumento con fuente]\n\nSi bien es cierto que hay personas que se someten a esta cirugía por razones distintas a la moda, no olvidemos que entrar en un quirófano supone siempre arriesgar la vida. [contraargumentación]\n\nLa cirugía plástica implica riesgos de salud, aunque en determinados casos (accidentes, problemas psíquicos) puede ser muy útil. [reserva]\n\nEn definitiva, hemos de diferenciar las modas pasajeras de los recursos que de verdad pueden mejorar nuestras vidas. [conclusión]'
+  },
+  checklist: [
+    '¿Abre el texto con una cuestión polémica que justifique tomar postura?',
+    '¿Apoya al menos un argumento con una fuente citada?',
+    '¿Presenta la contraargumentación la postura contraria con seriedad, no como un espantapájaros?',
+    '¿Incluye una reserva que reconozca los límites de la propia tesis antes de concluir?'
+  ],
+  examples: [
+    { es: 'A mi juicio, la obsesión por un cuerpo perfecto puede tener consecuencias muy graves.', en: 'In my view, the obsession with a perfect body can have very serious consequences.' },
+    { es: 'Si bien es cierto que..., no olvidemos que...', en: 'While it is true that..., let us not forget that...' },
+    { es: 'En definitiva, hemos de diferenciar las modas pasajeras de lo que de verdad mejora nuestras vidas.', en: 'In short, we must distinguish passing trends from what truly improves our lives.' }
+  ],
+  probes: [
+    { id: 'p:argumentativaC1:contraargumento', kind: 'mcq', q: '¿Cómo debe presentarse la postura contraria en un buen ensayo argumentativo?',
+      options: ['Como un espantapájaros fácil de derribar', 'Con seriedad y honestidad, antes de rebatirla', 'No debe mencionarse nunca'], answer: 1 },
+    { id: 'p:argumentativaC1:reserva', kind: 'mcq', q: '¿Qué función cumple la reserva antes de la conclusión?',
+      options: ['Repetir el argumento principal', 'Reconocer los límites de la propia tesis', 'Introducir un argumento completamente nuevo'], answer: 1 },
+    { id: 'p:argumentativaC1:cloze', kind: 'cloze', text: 'Si bien es cierto que hay excepciones, no ___ que el riesgo existe. (olvidar, imperativo nosotros)', accept: ['olvidemos'] },
+    { id: 'p:argumentativaC1:recall', kind: 'recall', front: '¿Qué distingue una contraargumentación honesta de un espantapájaros?', back: 'presenta la postura contraria con seriedad y matices reales, no una versión debilitada fácil de rebatir' }
+  ]
+},
+
+{
+  id: 'gn-argumentativa-conectores-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:929', 'generos_discursivos:C1:934', 'generos_discursivos:C1:937', 'generos_discursivos:C1:939',
+         'generos_discursivos:C1:941', 'generos_discursivos:C1:944', 'generos_discursivos:C1:945', 'generos_discursivos:C1:949',
+         'generos_discursivos:C1:950', 'generos_discursivos:C1:952'],
+  title: 'El repertorio del ensayo argumentativo',
+  summary: '"Asegurar" and "confesar" both introduce a claim, but they commit the writer very differently — one asserts flatly, the other concedes a point before qualifying it. Choosing the wrong verb from this repertoire can make a hedge sound like a flat assertion, or a concession sound like a retreat.',
+  sections: [
+    { h: 'Constatar sin matizar, y matizar al constatar', html: 'La constatación asertiva ("asegurar", "considerar", "desde un punto de vista...") afirma sin reservas; la concesiva ("confesar que...") admite algo antes de matizarlo — no son intercambiables.' },
+    { h: 'Retractarse y reconocer influencia', html: '"Renunciar a", "rechazar" retractan una postura previa; "lamentar" reconoce una postura ajena con la que se discrepa, sin negarle validez.' },
+    { h: 'Contraargumentar con fórmula fija', html: '"Si bien es cierto que..., no olvidemos que..." es la fórmula estándar para conceder un punto antes de contraargumentar — el "no olvidemos que" marca justo dónde empieza la objeción real.' },
+    { h: 'Generalizar y reservar', html: 'Un generalizador inespecífico como "todo... tiene..." formula una regla amplia; una reserva como "a no ser que..." o "si excluimos..." limita esa regla a sus excepciones conocidas.' }
+  ],
+  moves: [
+    { h: 'Elegir el verbo de constatación adecuado', html: 'Asertivo para afirmar sin reservas, concesivo para admitir matizando, retractativo para retirar una postura.' },
+    { h: 'Usar la fórmula fija de contraargumentación', html: '"Si bien es cierto que X, no olvidemos que Y" concede X antes de introducir la objeción real Y.' },
+    { h: 'Cerrar la generalización con su reserva', html: 'Tras una regla general amplia, añadir la excepción conocida con "a no ser que" o "si excluimos".' }
+  ],
+  model: {
+    title: 'Repertorio en uso',
+    text: 'Con los datos disponibles, hoy día, se puede asegurar que el consumo de tabaco supone un claro riesgo para la salud. [constatación asertiva]\n\nConfieso que mi planteamiento puede parecer duro, pero los datos no dejan mucho margen. [constatación concesiva]\n\nLamento estar en desacuerdo con la opinión de quienes defienden la autorregulación del sector. [constatación de dominio/influencia]\n\nSi bien es cierto que la nueva legislación supone un avance, no olvidemos que aún hay mucho que hacer. [contraargumentación]\n\nComo hemos visto, la clonación supone un avance científico para la humanidad, si excluimos los usos poco éticos que podrían hacerse. [reserva]'
+  },
+  checklist: [
+    '¿Distingues una constatación asertiva (afirma sin reservas) de una concesiva (admite y matiza)?',
+    '¿Usas la fórmula "si bien es cierto que..., no olvidemos que..." para contraargumentar con concesión previa?',
+    '¿Cierras una generalización amplia con su reserva ("a no ser que...", "si excluimos...")?'
+  ],
+  examples: [
+    { es: 'Se puede asegurar que el consumo de tabaco supone un claro riesgo para la salud.', en: 'It can be asserted that tobacco use poses a clear health risk.' },
+    { es: 'Confieso que mi planteamiento puede parecer duro.', en: 'I confess my approach may seem harsh.' },
+    { es: 'Si excluimos los usos poco éticos, la clonación supone un avance científico.', en: 'If we exclude unethical uses, cloning represents a scientific advance.' }
+  ],
+  probes: [
+    { id: 'p:argconectoresC1:asertivavsconcesiva', kind: 'mcq', q: '¿Qué diferencia una constatación asertiva de una concesiva?',
+      options: ['Ninguna, son intercambiables', 'La asertiva afirma sin reservas; la concesiva admite algo antes de matizarlo', 'La concesiva es más informal'], answer: 1 },
+    { id: 'p:argconectoresC1:formula', kind: 'mcq', q: 'En "si bien es cierto que X, no olvidemos que Y", ¿dónde está la objeción real?',
+      options: ['En X', 'En Y', 'En ninguna de las dos partes'], answer: 1 },
+    { id: 'p:argconectoresC1:cloze', kind: 'cloze', text: '___ estar en desacuerdo con esa opinión. (lamentar, yo)', accept: ['lamento'] },
+    { id: 'p:argconectoresC1:recall', kind: 'recall', front: '¿Qué función cumple "a no ser que..." tras una generalización amplia como "todo... tiene..."?', back: 'introduce la reserva: limita la regla general a sus excepciones conocidas' }
+  ]
+},
+
+{
   id: 'gn-resena-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:44'],
   title: 'La reseña crítica',

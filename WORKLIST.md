@@ -797,9 +797,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción descriptiva: personas** · 28 pts · `generos_discursivos C1 § 3.1. Macrofunción descriptiva: per`  — gn-descriptiva-personas-c1 (the "Elementos lingüísticos" sub-part is a bare taxonomy of adjective/verb/deixis categories with no examples; the teachable content is the anclaje/aspectualización/puesta en relación process, which the lesson covers)
 - [x] **Macrofunción descriptiva: objetos** · 25 pts · `generos_discursivos C1 § 3.2. Macrofunción descriptiva: obj`  — gn-descriptiva-objetos-c1 (same caveat re: elementos lingüísticos)
 - [x] **Macrofunción descriptiva: lugares** · 26 pts · `generos_discursivos C1 § 3.3. Macrofunción descriptiva: lug`  — gn-descriptiva-lugares-c1 (same caveat re: elementos lingüísticos)
-- [ ] **Macrofunción narrativa** · 26 pts · `generos_discursivos C1 § 3.4. Macrofunción narrativa`
-- [ ] **Macrofunción expositiva** · 40 pts · `generos_discursivos C1 § 3.5. Macrofunción expositiva`
-- [ ] **Macrofunción argumentativa** · 50 pts · `generos_discursivos C1 § 3.6. Macrofunción argumentativa`
+- [x] **Macrofunción narrativa** · 26 pts · `generos_discursivos C1 § 3.4. Macrofunción narrativa`  — gn-narrativa-c1 (Elementos lingüísticos sub-part is a bare verb/deixis taxonomy with no examples, not covered separately)
+- [x] **Macrofunción expositiva** · 40 pts · `generos_discursivos C1 § 3.5. Macrofunción expositiva`  — gn-expositiva-c1 (same caveat re: elementos lingüísticos)
+- [x] **Macrofunción argumentativa** · 50 pts · `generos_discursivos C1 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-c1, gn-argumentativa-conectores-c1 (split: overall move structure vs. the rich connector-phrase toolkit; same elementos-lingüísticos caveat)
 
 ## Practice material
 
