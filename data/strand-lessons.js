@@ -27706,6 +27706,48 @@ window.STRAND_LESSONS = [
     { id: 'p:responderordenpeticionC1:cloze', kind: 'cloze', text: '¡Ni lo ___! No pienso prestarte nada más. (rechazo rotundo, coloquial)', accept: ['sueñes'] },
     { id: 'p:responderordenpeticionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "me temo que es imposible" y "ni hablar"?', back: 'la primera es un rechazo cortés y con pesar; la segunda es un rechazo tajante y coloquial' }
   ]
+},
+
+{
+  id: 'fn-permiso-prohibicion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:858', 'funciones:C1:859', 'funciones:C1:860', 'funciones:C1:861', 'funciones:C1:866', 'funciones:C1:867',
+         'funciones:C1:868', 'funciones:C1:869', 'funciones:C1:871', 'funciones:C1:872', 'funciones:C1:873', 'funciones:C1:874',
+         'funciones:C1:896', 'funciones:C1:897', 'funciones:C1:898'],
+  title: 'Permiso y prohibición en C1: "eso ni se pregunta" y "digas lo que digas..."',
+  summary: 'Pedir permiso en C1 se disfraza a menudo de pregunta sobre la molestia causada ("¿molesto si...?"), darlo va de la formalidad institucional a "eso ni se pregunta", y rechazar una prohibición usa estructuras concesivas que anulan cualquier objeción de antemano: "digas lo que digas...".',
+  sections: [
+    { h: 'Pedir permiso: distintos enfoques', html: '<i>¿Molesto si...?</i> y <i>¿es/será/sería mucha molestia que/si...?</i> piden permiso enfocándose en la posible molestia causada al otro, no en el propio deseo. <i>¿Hay/tienes (algún) problema/inconveniente con/en...?</i> hace lo mismo con otro matiz. <i>Solicito (tu) permiso/autorización para...</i> es la fórmula más formal, propia de contextos institucionales: <i>solicitamos su autorización para utilizar su nombre</i>.' },
+    { h: 'Dar permiso sin objeciones', html: '<i>Tienes/cuentas con/te doy mi autorización/permiso/consentimiento</i> es la forma directa y algo formal. <i>Eso ni se pregunta</i> da permiso dando a entender que la pregunta era innecesaria, tan obvio es el "sí". <i>Faltaría más</i> tiene aquí la misma función entusiasta que en la aceptación de peticiones.' },
+    { h: 'Dar permiso con objeciones o condiciones', html: 'Una condición con subjuntivo matiza el permiso: <i>a menos que me prometas que no vas a hacer ninguna tontería</i>. <i>Sí/vale, pero que...</i> da permiso con una condición añadida: <i>sí, pero que no se entere tu padre</i>. <i>Veré qué puedo hacer</i> es, de nuevo, un compromiso vago. <i>Si no hay/queda otro/más remedio</i> da permiso a regañadientes, como última opción.' },
+    { h: 'Rechazar una prohibición: estructuras concesivas', html: '<i>Digas lo que digas/hagas lo que hagas/te pongas como te pongas</i> anula de antemano cualquier objeción que el otro pueda presentar: <i>digas lo que digas, lo voy a hacer</i>. <i>Porque tú lo digas</i> rechaza la autoridad de quien prohíbe, casi con desdén. <i>Sí (que) + prohibición anterior</i> repite la prohibición negándola directamente: <i>¡sí que voy a ir!</i> ante "tú no vas a ninguna parte".' }
+  ],
+  exponents: [
+    { es: '¿Molesto mucho si abro la ventana un momento?', en: "Would it bother you a lot if I opened the window for a moment?", register: 'neutral' },
+    { es: 'Solicito su autorización para ausentarme antes de tiempo.', en: 'I request your authorization to leave early.', register: 'formal' },
+    { es: 'Eso ni se pregunta, claro que puedes quedarte.', en: "That doesn't even need asking, of course you can stay.", register: 'coloquial' },
+    { es: 'Sí, pero que no se entere nadie más.', en: 'Yes, but don\'t let anyone else find out.', register: 'coloquial' },
+    { es: 'Digas lo que digas, voy a ir a esa reunión.', en: "Whatever you say, I'm going to that meeting.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Tienes mi permiso para salir esta noche.', en: 'You have my permission to go out tonight.', note: 'permiso directo, sin condiciones' },
+    { es: 'Sí, pero que estés de vuelta antes de medianoche.', en: 'Yes, but be back before midnight.', note: 'permiso con condición añadida' }
+  ],
+  pitfalls: [
+    '"¿Molesto si...?" pide permiso centrándose en la molestia que la acción pueda causar al otro, no en el simple deseo de hacer algo — es una estrategia de cortesía, no una duda real sobre si molesta.',
+    '"Eso ni se pregunta" no es un simple "sí" — da a entender que la pregunta sobraba, tan evidente era la respuesta afirmativa.',
+    '"Digas lo que digas/hagas lo que hagas" no son condiciones reales — son estructuras concesivas que anulan de antemano cualquier objeción posible del interlocutor.'
+  ],
+  examples: [
+    { es: '¿Tendríais algún inconveniente en que cambiáramos la fecha?', en: 'Would you have any problem with us changing the date?' },
+    { es: 'Cuentas con mi consentimiento para hacerlo.', en: 'You have my consent to do it.' },
+    { es: 'Esté o no prohibido, vamos a entrar.', en: "Whether it's forbidden or not, we're going in." }
+  ],
+  probes: [
+    { id: 'p:permisoprohibicionC1:molesto', kind: 'mcq', q: '"¿Molesto si abro la ventana?" ¿En qué se centra la pregunta?', options: ['En el deseo propio', 'En la posible molestia causada al otro', 'En el clima'], answer: 1 },
+    { id: 'p:permisoprohibicionC1:nisepregunta', kind: 'mcq', q: '"Eso ni se pregunta" significa...', options: ['No, definitivamente no', 'Sí, tan obvio que la pregunta sobraba', 'No lo sé'], answer: 1 },
+    { id: 'p:permisoprohibicionC1:cloze', kind: 'cloze', text: '___ lo que digas, no pienso cambiar de idea. (estructura concesiva)', accept: ['Digas'] },
+    { id: 'p:permisoprohibicionC1:recall', kind: 'recall', front: '¿Qué función tienen "digas lo que digas" y "hagas lo que hagas"?', back: 'anulan de antemano cualquier objeción que el interlocutor pueda presentar' }
+  ]
 }
 
 ];
