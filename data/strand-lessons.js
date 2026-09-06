@@ -28082,6 +28082,48 @@ window.STRAND_LESSONS = [
     { id: 'p:disculparseresponderC1:cloze', kind: 'cloze', text: 'Disculpa que no te ___ saludado hasta ahora. (subjuntivo compuesto tras "disculpa que")', accept: ['haya'] },
     { id: 'p:disculparseresponderC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "disculpa las molestias" y "disculpa que no te haya avisado"?', back: '"disculpa" + sintagma nominal se refiere a algo ya ocurrido; "disculpa que" + subjuntivo introduce una acción propia con verbo conjugado' }
   ]
+},
+
+{
+  id: 'fn-agradecer-pesame-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:1128', 'funciones:C1:1129', 'funciones:C1:1131', 'funciones:C1:1132', 'funciones:C1:1133',
+         'funciones:C1:1134', 'funciones:C1:1140', 'funciones:C1:1142', 'funciones:C1:1143', 'funciones:C1:1144',
+         'funciones:C1:1151', 'funciones:C1:1152', 'funciones:C1:1153', 'funciones:C1:1154'],
+  title: 'Agradecer y dar el pésame en C1: "¿qué haría yo sin ti?" y "mi más sentido pésame"',
+  summary: 'Agradecer en C1 va de la hipérbole afectuosa ("¿qué haría yo sin ti?") a la fórmula que casi reprocha el esfuerzo del otro ("no tenías que haberte molestado"), mientras que dar el pésame usa un registro ceremonioso muy marcado: "mi más sentido pésame".',
+  sections: [
+    { h: 'Agradecer con intensidad', html: '<i>Gracias de antemano</i> agradece algo que todavía no ha ocurrido. <i>Muy amable de/por tu parte...</i> valora positivamente el gesto del otro. <i>Te estoy muy/francamente agradecido</i> es directo y algo formal. <i>Mil/un millón de gracias</i> intensifica hiperbólicamente el agradecimiento.' },
+    { h: 'Agradecer reconociendo el esfuerzo del otro', html: '<i>No tenías que haberte molestado/que haberlo hecho</i> agradece señalando, casi con un reproche cariñoso, que el esfuerzo era innecesario. <i>¿Qué haría yo sin ti?</i> es una hipérbole que reconoce una ayuda como indispensable.' },
+    { h: 'Responder a un agradecimiento restando importancia', html: '<i>No hay nada que agradecer</i>, <i>faltaría más</i> y <i>no hay de qué</i> restan importancia al favor hecho. <i>Es mi deber/trabajo</i> responde presentando la ayuda como una simple obligación, no un favor especial.' },
+    { h: 'Dar el pésame: registro muy ceremonioso', html: '<i>Quisiera expresarle mi más sentido pésame</i> es la fórmula más formal y ceremoniosa. <i>Lo lamento profundamente</i> es también formal, sin la estructura ritual del pésame. <i>Estoy contigo/a tu lado</i> y <i>ya sabes dónde me tienes</i> son formas más cercanas y cálidas de acompañar en el duelo, ofreciendo apoyo continuo.' }
+  ],
+  exponents: [
+    { es: 'No sabes cuánto te agradezco que hayas venido.', en: "You don't know how much I appreciate you coming.", register: 'neutral' },
+    { es: 'Quisiera expresarle mi más sentido pésame por su pérdida.', en: 'I would like to express my deepest condolences for your loss.', register: 'formal' },
+    { es: 'No tenías que haberte molestado tanto por mí.', en: "You didn't have to go to so much trouble for me.", register: 'neutral' },
+    { es: 'Faltaría más, ha sido un placer ayudarte.', en: "Of course, it was a pleasure to help you.", register: 'coloquial' },
+    { es: 'Estoy contigo en estos momentos tan difíciles.', en: "I'm with you in these difficult times.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Lo lamento profundamente por lo ocurrido.', en: 'I deeply regret what happened.', note: 'pésame formal, sin ritual ceremonioso' },
+    { es: 'Quisiera expresarle mi más sentido pésame.', en: 'I would like to express my deepest condolences.', note: 'fórmula ritual, máxima ceremonia' }
+  ],
+  pitfalls: [
+    '"No tenías que haberte molestado" no es un reproche real — es una forma de agradecer que reconoce, con cariño, que el esfuerzo del otro fue mayor de lo necesario.',
+    '"Es mi deber/trabajo" al responder a un agradecimiento no rechaza el reconocimiento — simplemente lo enmarca como parte de una obligación, no como un favor extraordinario.',
+    '"Mi más sentido pésame" pertenece a un registro ritual muy marcado — usarlo fuera de un contexto de duelo real, o de forma poco sincera, resultaría inapropiado.'
+  ],
+  examples: [
+    { es: '¿Qué haría yo sin tu ayuda? Muchísimas gracias.', en: 'What would I do without your help? Thank you so much.' },
+    { es: 'No hay de qué, para eso están los amigos.', en: "No need to thank me, that's what friends are for." },
+    { es: 'Ya sabes dónde me tienes si necesitas hablar.', en: 'You know where to find me if you need to talk.' }
+  ],
+  probes: [
+    { id: 'p:agradecerpesameC1:notenias', kind: 'mcq', q: '"No tenías que haberte molestado" ¿es un reproche real?', options: ['Sí, un rechazo del favor', 'No, es una forma de agradecer con cariño', 'Es indiferencia'], answer: 1 },
+    { id: 'p:agradecerpesameC1:esmideber', kind: 'mcq', q: '"Es mi deber" al responder a un agradecimiento...', options: ['Rechaza el reconocimiento', 'Enmarca la ayuda como obligación, no favor especial', 'Es un insulto'], answer: 1 },
+    { id: 'p:agradecerpesameC1:cloze', kind: 'cloze', text: 'Quisiera expresarle mi más ___ pésame. (fórmula ritual de condolencia)', accept: ['sentido'] },
+    { id: 'p:agradecerpesameC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "lo lamento profundamente" y "quisiera expresarle mi más sentido pésame"?', back: 'ambas son formales, pero la segunda es la fórmula ritual específica de condolencias, más ceremoniosa que la primera' }
+  ]
 }
 
 ];

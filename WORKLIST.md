@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (163/202 done)
+## C1 — lessons (164/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -678,7 +678,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 28 pts · `nociones_generales C1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-c1
 - [x] **Expresión verbal** · 21 pts · `nociones_generales C1 § 7.2. Expresión verbal`  — nt-expresion-verbal-c1
 
-### C1 · function (78/91)
+### C1 · function (81/91)
 - [x] **Identificar** · 8 pts · `funciones C1 § 1.1. Identificar`  — fn-identificar-c1
 - [x] **Pedir información** · 19 pts · `funciones C1 § 1.2. Pedir información`  — fn-pedir-informacion-c1
 - [x] **Dar información** · 29 pts · `funciones C1 § 1.3. Dar información`  — fn-dar-informacion-c1
@@ -757,9 +757,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Dirigirse a alguien** · 3 pts · `funciones C1 § 5.3. Dirigirse a alguien`  — fn-responder-saludo-dirigirse-c1
 - [x] **Disculparse** · 7 pts · `funciones C1 § 5.10. Disculparse`  — fn-disculparse-responder-c1
 - [x] **Responder a una disculpa** · 3 pts · `funciones C1 § 5.11. Responder a una disculpa`  — fn-disculparse-responder-c1
-- [ ] **Agradecer** · 7 pts · `funciones C1 § 5.12. Agradecer`
-- [ ] **Responder a un agradecimiento** · 5 pts · `funciones C1 § 5.13. Responder a un agradecimient`
-- [ ] **Dar el pésame** · 4 pts · `funciones C1 § 5.14. Dar el pésame`
+- [x] **Agradecer** · 7 pts · `funciones C1 § 5.12. Agradecer`  — fn-agradecer-pesame-c1
+- [x] **Responder a un agradecimiento** · 5 pts · `funciones C1 § 5.13. Responder a un agradecimient`  — fn-agradecer-pesame-c1
+- [x] **Dar el pésame** · 4 pts · `funciones C1 § 5.14. Dar el pésame`  — fn-agradecer-pesame-c1
 - [ ] **Felicitar** · 10 pts · `funciones C1 § 5.16. Felicitar`
 - [ ] **Despedirse** · 8 pts · `funciones C1 § 5.21. Despedirse`
 - [ ] **Preguntar por el estado general de las cosas y responder** · 47 pts · `funciones C1 § 6.6. Preguntar por el estado gener`
