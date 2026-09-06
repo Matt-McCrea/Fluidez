@@ -27915,6 +27915,50 @@ window.STRAND_LESSONS = [
     { id: 'p:reprocharofrecerseC1:cloze', kind: 'cloze', text: '¿No te da ___ haberle hablado así? (apelar al pudor)', accept: ['vergüenza'] },
     { id: 'p:reprocharofrecerseC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "la culpa es tuya" y "¿se puede saber por qué...?"?', back: 'la primera asigna responsabilidad directa sin matices; la segunda pregunta con un matiz de reproche acumulado, no información neutra' }
   ]
+},
+
+{
+  id: 'fn-tranquilizar-animar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:1009', 'funciones:C1:1011', 'funciones:C1:1013', 'funciones:C1:1014', 'funciones:C1:1015',
+         'funciones:C1:1016', 'funciones:C1:1017', 'funciones:C1:1018', 'funciones:C1:1019',
+         'funciones:C1:1029', 'funciones:C1:1031', 'funciones:C1:1033', 'funciones:C1:1034', 'funciones:C1:1035', 'funciones:C1:1037'],
+  title: 'Tranquilizar y animar en C1: "el no ya lo tienes" y "no es el fin del mundo"',
+  summary: 'Tranquilizar en C1 usa interjecciones repetidas ("bueno, bueno...") y locuciones que restan gravedad ("no es el fin del mundo"), mientras que animar recurre a una lógica implacable: si ya tienes el "no" por no intentarlo, arriesgarte no puede empeorar las cosas.',
+  sections: [
+    { h: 'Tranquilizar con interjecciones repetidas', html: '<i>Bueno, bueno...</i> y <i>venga, hombre/mujer</i> son interjecciones que calman con su propia repetición o con el apelativo, restando dramatismo a la situación.' },
+    { h: 'Tranquilizar quitando importancia', html: '<i>No te lo tomes así</i> y <i>no te lo tomes tan en serio</i> piden reducir la gravedad percibida. <i>Tómatelo con calma/con humor/con paciencia...</i> ofrece una actitud alternativa concreta. <i>No es el fin del mundo</i> relativiza la situación desde la perspectiva más amplia posible.' },
+    { h: 'Tranquilizar con perspectiva positiva', html: '<i>¡Alegra esa cara, (hombre/mujer)!</i> pide un cambio visible de actitud. <i>Lo superarás</i> proyecta la solución hacia el futuro. <i>Al menos/por lo menos...</i> rescata un aspecto positivo dentro de algo negativo: <i>al menos lo has intentado</i>.' },
+    { h: 'Animar con exclamaciones de impulso', html: '<i>¡A por ello!</i> y <i>¡a por todas!</i> son exclamaciones directas de ánimo antes de una acción. Un imperativo + <i>ya/de una vez</i> urge a actuar sin más demora: <i>¡tírate ya!</i>, <i>¡hazlo de una vez!</i>.' },
+    { h: 'Animar con lógica del riesgo mínimo', html: '<i>¿Qué puede/podría pasar (si...)?</i> minimiza el riesgo percibido mediante una pregunta retórica: <i>¿qué te puede pasar si te tiras?</i>. <i>El "no" ya lo tienes</i> resume esa misma lógica: si no lo intentas, el resultado negativo ya es seguro, así que intentarlo no puede empeorar nada.' },
+    { h: 'Animar presionando a la acción', html: '<i>¿Vas a... o qué?</i> y <i>(no sé) a qué esperas/estás esperando</i> presionan suavemente ante la indecisión del otro. <i>No te cortes</i> anima a actuar sin timidez ni vergüenza.' }
+  ],
+  exponents: [
+    { es: 'Venga, hombre, no te lo tomes tan a pecho.', en: "Come on, don't take it so hard.", register: 'coloquial' },
+    { es: 'No es el fin del mundo, ya encontrarás otra oportunidad.', en: "It's not the end of the world, you'll find another opportunity.", register: 'neutral' },
+    { es: 'El no ya lo tienes, así que inténtalo.', en: "You've already got the no, so try it.", register: 'coloquial' },
+    { es: '¿A qué esperas? ¡Hazlo ya!', en: 'What are you waiting for? Do it now!', register: 'coloquial' },
+    { es: 'Al menos lo intentaste, eso ya es mucho.', en: "At least you tried, that's already a lot.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'No te lo tomes tan en serio, seguro que se arregla.', en: "Don't take it so seriously, I'm sure it'll work out.", note: 'tranquilizar, quitando gravedad' },
+    { es: '¡A por ello! No tienes nada que perder.', en: "Go for it! You've got nothing to lose.", note: 'animar, impulsando a la acción' }
+  ],
+  pitfalls: [
+    '"El no ya lo tienes" no es un consuelo por un fracaso — es un argumento para animar a intentar algo, señalando que no intentarlo garantiza el resultado negativo de todas formas.',
+    '"No es el fin del mundo" no minimiza el sentimiento del otro de forma despectiva — busca poner la situación en perspectiva sin negar que sea difícil.',
+    '"¿Vas a... o qué?" presiona con cierta impaciencia — no es una pregunta neutra sobre la intención del otro.'
+  ],
+  examples: [
+    { es: 'Tómatelo con humor, dentro de poco ni te acordarás.', en: "Take it with a sense of humor, soon you won't even remember it." },
+    { es: '¡A por todas, seguro que te sale genial!', en: "Go for it, I'm sure it'll turn out great!" },
+    { es: 'No te cortes y pregunta lo que necesites.', en: "Don't hold back and ask whatever you need." }
+  ],
+  probes: [
+    { id: 'p:tranquilizaranimarC1:noyalotienes', kind: 'mcq', q: '"El no ya lo tienes" ¿qué tipo de expresión es?', options: ['Un consuelo por haber fracasado', 'Un argumento para animar a intentarlo', 'Una amenaza'], answer: 1 },
+    { id: 'p:tranquilizaranimarC1:finmundo', kind: 'mcq', q: '"No es el fin del mundo" busca...', options: ['Negar que el problema exista', 'Poner la situación en perspectiva sin negarla', 'Aumentar la preocupación'], answer: 1 },
+    { id: 'p:tranquilizaranimarC1:cloze', kind: 'cloze', text: '¿A qué ___? ¡Hazlo ya! (presión suave ante la indecisión)', accept: ['esperas'] },
+    { id: 'p:tranquilizaranimarC1:recall', kind: 'recall', front: '¿Qué lógica hay detrás de "el no ya lo tienes" para animar a alguien?', back: 'si no se intenta, el resultado negativo ya está garantizado, así que intentarlo no puede empeorar la situación' }
+  ]
 }
 
 ];
