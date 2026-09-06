@@ -587,15 +587,15 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (12/202 done)
+## C1 — lessons (18/202 done)
 
-### C1 · grammar (0/28)
-- [ ] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`
-- [ ] **El número de los sustantivos** · 6 pts · `gramatica C1 § 1.3. El número de los sustantivos`
-- [ ] **Clases de adjetivos** · 15 pts · `gramatica C1 § 2.1. Clases de adjetivos`
-- [ ] **El artículo definido** · 11 pts · `gramatica C1 § 3.1. El artículo definido`
-- [ ] **El artículo indefinido** · 8 pts · `gramatica C1 § 3.2. El artículo indefinido`
-- [ ] **Ausencia de determinación: los nombres escuetos** · 5 pts · `gramatica C1 § 3.3. Ausencia de determinación: lo`
+### C1 · grammar (6/28)
+- [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
+- [x] **El número de los sustantivos** · 6 pts · `gramatica C1 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-c1
+- [x] **Clases de adjetivos** · 15 pts · `gramatica C1 § 2.1. Clases de adjetivos`  — gr-clases-adjetivos-c1
+- [x] **El artículo definido** · 11 pts · `gramatica C1 § 3.1. El artículo definido`  — gr-articulo-definido-c1
+- [x] **El artículo indefinido** · 8 pts · `gramatica C1 § 3.2. El artículo indefinido`  — gr-articulo-indefinido-c1
+- [x] **Ausencia de determinación: los nombres escuetos** · 5 pts · `gramatica C1 § 3.3. Ausencia de determinación: lo`  — gr-nombres-escuetos-c1
 - [ ] **Los demostrativos — Valores / significado** · 7 pts · `gramatica C1 § `
 - [ ] **Los posesivos — Valores / significado** · 6 pts · `gramatica C1 § `
 - [ ] **Cuantificadores propios** · 31 pts · `gramatica C1 § 6.1. Cuantificadores propios`

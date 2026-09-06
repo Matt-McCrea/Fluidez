@@ -21810,6 +21810,224 @@ window.STRAND_LESSONS = [
     { id: 'p:focalizC1:cloze', kind: 'cloze', text: '¡___ bien que cantan! (neutro + adverbio)', accept: ['Lo', 'lo'] },
     { id: 'p:focalizC1:recall', kind: 'recall', front: '¿Qué hace la dislocación a la derecha ("se había ido ya, la chica")?', back: 'añade, tras una caída de tono, un elemento que aclara o precisa el referente' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — C1 grammar, part 1 (WORKLIST.md § C1 · grammar): género, número,
+ * clases de adjetivos, artículo definido/indefinido, nombres escuetos.
+ * ========================================================================== */
+{
+  id: 'gr-genero-sustantivos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  pcic: ['gramatica:C1:8', 'gramatica:C1:9', 'gramatica:C1:10', 'gramatica:C1:11', 'gramatica:C1:12'],
+  title: 'El género que cambia el significado: el fruto / la fruta',
+  summary: 'A handful of Spanish nouns are not masculine or feminine by convention — the gender itself carries meaning, and switching it is not a mistake but a different word. "El fruto" and "la fruta" share a root but not a referent, and no rule of agreement will tell you which one a sentence needs; only the meaning will.',
+  sections: [
+    { h: 'Individual frente a colectivo', html: 'El masculino nombra la unidad o el resultado abstracto, el femenino la masa o lo cultivado en conjunto: <i>el leño</i> (a single log) frente a <i>la leña</i> (firewood as a mass); <i>el fruto</i> (the abstract result — <i>el fruto de su trabajo</i>) frente a <i>la fruta</i> (fruit you eat).' },
+    { h: 'Grande frente a pequeño, o instrumento frente a objeto', html: '<i>El huerto</i> (a small vegetable garden) frente a <i>la huerta</i> (a whole cultivated region); <i>el cuchillo</i> (a knife) frente a <i>la cuchilla</i> (a blade); <i>el jarro</i> frente a <i>la jarra</i>, esta última normalmente mayor.' },
+    { h: 'Significado sin relación aparente', html: 'Algunos pares comparten forma pero no comparten ya ningún parentesco de sentido: <i>el frente</i> (military/weather front) frente a <i>la frente</i> (forehead); <i>el orden</i> (sequence) frente a <i>la orden</i> (a command, or a religious order); <i>el coma</i> (medical coma) frente a <i>la coma</i> (comma, punctuation mark).' },
+    { h: 'Sustantivos ambiguos: ambos géneros, sin cambio real', html: 'Un tercer grupo admite los dos géneros sin que el significado cambie: <i>el mar / la mar</i> (esta última, más literaria o propia del habla marinera), <i>el azúcar / la azúcar</i> (ambos correctos: <i>el azúcar blanco</i> o <i>la azúcar blanca</i>).' }
+  ],
+  contrasts: [
+    { es: 'El fruto de tantos años de esfuerzo por fin se vio.', en: 'The fruit (result) of so many years of effort was finally seen.', note: 'masculino — resultado abstracto, no algo que se come' },
+    { es: 'Compramos fruta fresca en el mercado.', en: 'We bought fresh fruit at the market.', note: 'femenino — lo que se come' },
+    { es: 'Se hizo una cicatriz en la frente.', en: 'He got a scar on his forehead.', note: 'femenino — parte del cuerpo' },
+    { es: 'El ejército avanzó hacia el frente.', en: 'The army advanced towards the front.', note: 'masculino — significado completamente distinto' }
+  ],
+  pitfalls: [
+    'Estos pares no son variantes libres del mismo sustantivo — cambiar el género cambia la palabra, como si fueran dos entradas distintas del diccionario que comparten forma por casualidad histórica.',
+    'El patrón individual/colectivo (<i>el leño/la leña</i>) no se puede aplicar como regla productiva a cualquier sustantivo — es una lista cerrada de pares heredados, no un procedimiento activo del español actual.',
+    'Con los sustantivos genuinamente ambiguos (<i>el mar/la mar</i>, <i>el azúcar/la azúcar</i>), el adjetivo debe concordar con el género elegido para el artículo en esa misma frase, no mezclarse: <i>la azúcar blanca</i>, nunca <i>*la azúcar blanco</i>.'
+  ],
+  examples: [
+    { es: 'La orden llegó a última hora: había que evacuar el edificio.', en: 'The order arrived at the last minute: the building had to be evacuated.' },
+    { es: 'El paciente entró en coma tras el accidente.', en: 'The patient went into a coma after the accident.' },
+    { es: 'Los marineros llevan toda la vida faenando en la mar.', en: 'The sailors have spent their whole lives working the sea.' }
+  ],
+  probes: [
+    { id: 'p:generoC1:parejas', kind: 'mcq', q: '¿Qué distingue "el orden" de "la orden"?', options: ['Nada, son variantes libres', 'Significados completamente distintos: secuencia vs. mandato/orden religiosa', 'Solo el registro, formal frente a coloquial'], answer: 1 },
+    { id: 'p:generoC1:ambiguo', kind: 'mcq', q: 'Con "el azúcar/la azúcar", ¿cómo debe concordar el adjetivo?', options: ['Siempre en masculino, sea cual sea el artículo', 'Con el género que tenga el artículo en esa frase', 'Da igual, se puede mezclar'], answer: 1 },
+    { id: 'p:generoC1:cloze', kind: 'cloze', text: 'Compramos ___ fresca en el mercado. (lo que se come)', accept: ['fruta'] },
+    { id: 'p:generoC1:recall', kind: 'recall', front: '¿Qué distingue "el fruto" de "la fruta"?', back: 'el fruto es un resultado abstracto; la fruta es lo que se come' }
+  ]
+},
+
+{
+  id: 'gr-numero-sustantivos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  pcic: ['gramatica:C1:14', 'gramatica:C1:15', 'gramatica:C1:16', 'gramatica:C1:17', 'gramatica:C1:18', 'gramatica:C1:19'],
+  title: 'El número en C1: dónde se mueve el acento, qué cambia de sentido',
+  summary: 'Pluralizing a Spanish noun is not always just adding "-s". A handful of esdrújulos shift their stressed syllable in the plural, foreign borrowings hispanicize unpredictably, and some nouns simply mean something different in the plural than in the singular — "los celos" is not several instances of "el celo".',
+  sections: [
+    { h: 'El acento que se desplaza', html: 'Casi todos los sustantivos mantienen el acento en la misma sílaba al pluralizar, pero un grupo reducido de esdrújulos lo desplaza a la sílaba siguiente: <i>régimen</i> (acento en "gi") se convierte en <i>regímenes</i> (acento en "gí", una sílaba más allá), igual que <i>espécimen → especímenes</i>.' },
+    { h: 'Extranjerismos: hispanización irregular', html: 'Cada préstamo se adapta a su manera: <i>carnet → carné, carnés</i>; <i>meeting → mitin, mítines</i>; <i>club → clubes</i>; <i>standard → estándar, estándares</i>. No existe una regla única — hay que aprender cada adaptación por separado.' },
+    { h: 'Apellidos de dinastías: sí se pluralizan', html: 'Un apellido corriente no se pluraliza en español (<i>los García</i>, no <i>*los Garcías</i>), pero los apellidos de familias o dinastías históricas sí forman plural: <i>los Escipiones, los Borbones</i>.' },
+    { h: 'Duales léxicos: plural obligatorio para un solo objeto', html: '<i>Las tenazas, los alicates, los tirantes</i> nombran un solo objeto con dos partes simétricas, y son gramaticalmente plurales sin que exista una forma singular equivalente de uso normal.' },
+    { h: 'El número que cambia el significado', html: '<i>El celo</i> (zeal, o el celo de un animal) frente a <i>los celos</i> (jealousy) — no es "varios celos", es una palabra distinta. <i>El resto</i> (lo que queda) frente a <i>los restos</i> (remains, de un cuerpo o de una ruina) — tampoco es una simple pluralización del primero.' }
+  ],
+  contrasts: [
+    { es: 'El régimen anterior duró casi cuarenta años.', en: 'The previous regime lasted almost forty years.', note: 'singular, acento en "gi"' },
+    { es: 'Varios regímenes se sucedieron en pocas décadas.', en: 'Several regimes followed one another in just a few decades.', note: 'plural — el acento se desplaza a "gí"' },
+    { es: 'Sentía un celo profesional que rayaba en la obsesión.', en: 'He felt a professional zeal bordering on obsession.', note: '"el celo" — dedicación o cuidado' },
+    { es: 'Sus celos hacia su hermano eran evidentes desde niño.', en: 'His jealousy towards his brother was obvious since he was a child.', note: '"los celos" — un sentimiento distinto, no el plural de "celo"' }
+  ],
+  pitfalls: [
+    'El desplazamiento del acento en esdrújulos como <i>régimen/regímenes</i> es una excepción real a la norma general — la mayoría de sustantivos mantiene el acento en el mismo lugar al pluralizar.',
+    'Los duales léxicos (<i>las tenazas, los alicates</i>) no tienen un singular de uso normal para referirse al mismo objeto — tratarlos como si "una tenaza" nombrara el objeto completo es un error de número, no solo de estilo.',
+    'Confundir <i>el resto</i> con <i>los restos</i> por simple pluralización mecánica pierde el matiz real: "los restos" casi siempre implica algo que quedó tras una destrucción o una muerte, no simplemente "lo que sobra".'
+  ],
+  examples: [
+    { es: 'El especímen recogido resultó ser una especie nueva para la ciencia.', en: 'The specimen collected turned out to be a species new to science.' },
+    { es: 'Los Borbones han reinado en España durante varios siglos, con interrupciones.', en: 'The Bourbons have reigned in Spain for several centuries, with interruptions.' },
+    { es: 'Encontraron los restos del barco hundido décadas después.', en: 'They found the remains of the sunken ship decades later.' }
+  ],
+  probes: [
+    { id: 'p:numeroC1:acento', kind: 'mcq', q: '¿Dónde recae el acento en "regímenes"?', options: ['En la misma sílaba que en "régimen"', 'Una sílaba más allá que en "régimen"', 'En la última sílaba'], answer: 1 },
+    { id: 'p:numeroC1:dual', kind: 'mcq', q: '¿Qué son "las tenazas" o "los alicates"?', options: ['Varios objetos distintos', 'Un solo objeto, gramaticalmente plural', 'El plural irregular de "tenaz"'], answer: 1 },
+    { id: 'p:numeroC1:cloze', kind: 'cloze', text: 'Encontraron los ___ del barco hundido. (remains)', accept: ['restos'] },
+    { id: 'p:numeroC1:recall', kind: 'recall', front: '¿"Los celos" es simplemente el plural de "el celo"?', back: 'no — son palabras con significados distintos (celo: dedicación/celo animal; celos: envidia sentimental)' }
+  ]
+},
+
+{
+  id: 'gr-clases-adjetivos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  pcic: ['gramatica:C1:24', 'gramatica:C1:25', 'gramatica:C1:26', 'gramatica:C1:27', 'gramatica:C1:28'],
+  title: 'Cuyo, los adjetivos de color compuestos y el relacional que también califica',
+  summary: '"Cuyo" agrees with the noun it precedes, not the one it points back to — a detail that trips up even careful speakers, since every other possessive in Spanish agrees with the possessor. Compound color adjectives break number agreement entirely, and some adjectives quietly do two different jobs depending on where you put them.',
+  sections: [
+    { h: 'Adjetivos de color compuestos: invariables en número', html: 'Un color formado por dos palabras (<i>verde botella, gris perla, azul turquesa</i>) no varía en plural: <i>dos trajes azul marino</i>, nunca <i>*dos trajes azules marinos</i>. El compuesto entero funciona como una sola etiqueta fija.' },
+    { h: 'El adjetivo relacional que también califica', html: 'Algunos adjetivos hacen dos trabajos distintos según la posición y el sentido: <i>una empresa familiar</i> (relacional: de la familia, pertenece a ella) frente a <i>una cara familiar</i> (calificativo: reconocible, ya vista antes). La forma es idéntica; el significado no.' },
+    { h: 'Cuyo: concuerda con lo poseído, no con el antecedente', html: '<i>Cuyo</i> es el único relativo posesivo del español, y concuerda en género y número con el sustantivo que introduce (lo poseído), nunca con la persona o cosa a la que se refiere: <i>la chica cuyos padres viven al lado</i> — "cuyos" es masculino plural porque concuerda con "padres", no con "chica". Por eso <i>*la chica cuya vive al lado</i> es imposible: "cuyo" siempre necesita su propio sustantivo justo después.' },
+    { h: 'Cuyo en especificativas y en explicativas', html: 'A diferencia de "que" y "quien", que se comportan de forma distinta en cada tipo de relativa, "cuyo" funciona igual en ambas: especificativa, <i>la chica cuyos padres viven al lado nuestro</i> (sin comas, selecciona), y explicativa, <i>ese cantante, cuyos discos han sido criticados, sigue vendiendo mucho</i> (con comas, añade un comentario).' }
+  ],
+  contrasts: [
+    { es: 'Llevaba un vestido azul marino precioso.', en: 'She was wearing a beautiful navy blue dress.', note: 'color compuesto, invariable en plural' },
+    { es: 'Llevaban vestidos azul marino a juego.', en: 'They were wearing matching navy blue dresses.', note: 'plural del sustantivo, pero el color no varía' },
+    { es: 'Trabaja en una empresa familiar desde hace años.', en: 'He has worked at a family business for years.', note: 'relacional — pertenece a la familia' },
+    { es: 'Esa cara me resulta muy familiar, ¿nos conocemos?', en: "That face looks very familiar, do we know each other?", note: 'calificativo — reconocible' }
+  ],
+  pitfalls: [
+    '"Cuyo" nunca concuerda con el poseedor (el antecedente) — concuerda siempre con el sustantivo que posee, el que va justo después. Decir <i>*la chica cuya vive</i>, buscando concordar con "chica", es agramatical.',
+    'Un adjetivo de color compuesto (<i>azul marino, verde botella</i>) no lleva plural propio ni concuerda como un adjetivo simple — el conjunto entero queda invariable.',
+    'El mismo adjetivo relacional/calificativo puede leerse de las dos maneras según el contexto — "una respuesta familiar" podría ser tanto "de la familia" como "conocida/habitual", y solo el resto de la frase lo aclara.'
+  ],
+  examples: [
+    { es: 'El escritor, cuyas novelas se han traducido a veinte idiomas, presentó su último libro.', en: 'The writer, whose novels have been translated into twenty languages, presented his latest book.' },
+    { es: 'Compró unas cortinas verde botella para el salón.', en: 'She bought some bottle-green curtains for the living room.' },
+    { es: 'El gesto era tan familiar que no pude evitar sonreír.', en: 'The gesture was so familiar I couldn\'t help but smile.' }
+  ],
+  probes: [
+    { id: 'p:clasesadjC1:cuyo', kind: 'mcq', q: '"La chica cuyos padres viven al lado." ¿Con qué concuerda "cuyos"?', options: ['Con "chica" (el antecedente)', 'Con "padres" (lo poseído)', 'No concuerda con nada en particular'], answer: 1 },
+    { id: 'p:clasesadjC1:color', kind: 'mcq', q: '¿Cómo se dice el plural de "un traje azul marino"?', options: ['Trajes azules marinos', 'Trajes azul marino, sin variar', 'Trajes azulados marinos'], answer: 1 },
+    { id: 'p:clasesadjC1:cloze', kind: 'cloze', text: 'Trabaja en una empresa ___ desde hace años. (de la familia)', accept: ['familiar'] },
+    { id: 'p:clasesadjC1:recall', kind: 'recall', front: '¿Por qué "*la chica cuya vive al lado" es imposible?', back: 'porque "cuyo" siempre necesita su propio sustantivo justo después, no puede quedar solo' }
+  ]
+},
+
+{
+  id: 'gr-articulo-definido-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  pcic: ['gramatica:C1:59', 'gramatica:C1:60', 'gramatica:C1:61', 'gramatica:C1:62', 'gramatica:C1:63', 'gramatica:C1:64',
+         'gramatica:C1:65', 'gramatica:C1:66', 'gramatica:C1:67', 'gramatica:C1:68', 'gramatica:C1:69'],
+  title: 'El artículo definido en C1: valor enfático y sustantivador',
+  summary: 'Beyond pointing at something already known, the definite article can build a whole exclamation on its own, turn an adverb or an infinitive into a noun, and even appear where "hay" normally forbids it. None of these is the article doing its ordinary job of identifying a referent.',
+  sections: [
+    { h: 'Valor enfático: con relativa, o con "lo"', html: '<i>La cara que puso</i> no identifica una cara conocida — construye una exclamación entera con el sustantivo y una relativa. El neutro <i>lo</i> hace lo mismo con adjetivos y adverbios: <i>lo mal que cantó</i> equivale a "qué mal cantó", pero con más fuerza.' },
+    { h: 'Valor sustantivador: adverbios, infinitivos, oraciones', html: '<i>Lo antes que puedas</i> convierte todo un sintagma adverbial en una unidad nominal. Ante un infinitivo, el artículo es opcional si se sobrentiende un sustantivo como "hecho" (<i>el ser de otro país</i> / <i>ser de otro país</i>, ambos válidos), pero obligatorio ante un infinitivo ya plenamente sustantivado (<i>el florecer de las plantas</i>, nunca <i>*florecer de las plantas</i> como sujeto).' },
+    { h: 'Obligatorio ante una oración con verbo conjugado', html: 'Cuando toda una oración con "que" funciona como sujeto, el artículo es obligatorio: <i>Me preocupa el que no me lo haya dicho todavía</i>, <i>El que sea listo lo conseguirá</i>. Sin el artículo, estas oraciones no pueden funcionar como sujeto nominal.' },
+    { h: 'Restricciones y usos marcados', html: 'El artículo es incompatible con un cuantificador (<i>poco, mucho</i>) salvo que este lleve un modificador restrictivo: <i>*va con los pocos amigos</i> no funciona solo, pero sí <i>va con los pocos amigos que tiene</i>. Y en un uso coloquial marcado, "hay" admite excepcionalmente el artículo cuando el sustantivo lleva un modificador que lo hace ya conocido: <i>en esta clase hay el lío de siempre</i>.' }
+  ],
+  contrasts: [
+    { es: '¡La cara que puso cuando se lo dijeron!', en: 'The face he pulled when they told him!', note: 'valor enfático — construye una exclamación entera' },
+    { es: 'No sabes lo mal que cantó en el concierto.', en: 'You have no idea how badly he sang at the concert.', note: 'lo + adjetivo, mismo valor enfático' },
+    { es: 'Me preocupa el que no me lo haya dicho todavía.', en: "It worries me that he hasn't told me yet.", note: 'artículo obligatorio ante oración sujeto con "que"' },
+    { es: 'Va con los pocos amigos que tiene, nadie más.', en: 'He goes around with the few friends he has, nobody else.', note: 'el modificador restrictivo licencia el artículo con el cuantificador' }
+  ],
+  pitfalls: [
+    'El artículo con valor enfático (<i>la cara que puso</i>) no identifica nada conocido de antemano — funciona como intensificador, y por eso no admite traducirse palabra por palabra.',
+    'Ante un infinitivo, el artículo es obligatorio solo cuando el infinitivo está plenamente sustantivado (<i>el florecer</i>); cuando se sobrentiende "hecho de", es opcional (<i>el ser/ser de otro país</i>).',
+    'Un cuantificador como <i>pocos/muchos</i> normalmente rechaza el artículo definido — solo lo admite cuando lleva un modificador restrictivo real, como una oración de relativo.'
+  ],
+  examples: [
+    { es: 'Ven lo antes que puedas, es urgente.', en: 'Come as soon as you can, it\'s urgent.' },
+    { es: 'El que hayas llegado tarde no cambia nada.', en: 'The fact that you arrived late changes nothing.' },
+    { es: 'El florecer de los almendros anuncia la primavera.', en: 'The blossoming of the almond trees announces spring.' }
+  ],
+  probes: [
+    { id: 'p:artdefC1:enfatico', kind: 'mcq', q: '"La cara que puso" — ¿identifica una cara ya conocida?', options: ['Sí, se refiere a una cara mencionada antes', 'No, construye una exclamación con valor enfático', 'Es ambiguo sin más contexto'], answer: 1 },
+    { id: 'p:artdefC1:obligatorio', kind: 'mcq', q: '¿Cuándo es obligatorio el artículo ante una oración con "que" como sujeto?', options: ['Nunca es obligatorio', 'Siempre que esa oración funcione como sujeto nominal', 'Solo en registro coloquial'], answer: 1 },
+    { id: 'p:artdefC1:cloze', kind: 'cloze', text: 'No sabes ___ mal que cantó. (neutro + adjetivo)', accept: ['lo'] },
+    { id: 'p:artdefC1:recall', kind: 'recall', front: '¿Qué modificador licencia el artículo definido con un cuantificador como "pocos"?', back: 'un modificador restrictivo, como una oración de relativo (los pocos amigos QUE TIENE)' }
+  ]
+},
+
+{
+  id: 'gr-articulo-indefinido-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  pcic: ['gramatica:C1:80', 'gramatica:C1:81', 'gramatica:C1:82', 'gramatica:C1:83', 'gramatica:C1:84', 'gramatica:C1:85',
+         'gramatica:C1:86', 'gramatica:C1:87'],
+  title: 'El artículo indefinido en C1: convertir un nombre propio en un tipo',
+  summary: '"Un Picasso" does not mean an unknown man named Picasso — it recategorizes a proper name into a common noun for a whole type: a genuine work by him, a performance in his style, an instance of what makes him himself. This single move — un/una before a name that should resist it — is the indefinite article\'s most C1 trick.',
+  sections: [
+    { h: 'Valor enfático consecutivo', html: '<i>Tiene una cara que es de impresión</i> usa <i>un/una + sustantivo + relativa</i> como estructura intensificadora — el artículo indefinido aquí no introduce un referente cualquiera, sino que prepara una valoración exagerada.' },
+    { h: 'Nombre propio recategorizado como nombre común', html: '<i>Un Buñuel solo puede aparecer una vez</i> (valor prototípico: "alguien de su categoría"); <i>escuchamos a un Carreras pletórico</i> (identificación mediante un modificador valorativo: ese Carreras concreto, en ese estado); <i>tiene un Picasso en casa</i> (recategorización a nombre común: una obra hecha por él); <i>vino un tal José Durán</i> (con "tal", introduce a alguien desconocido para el oyente).' },
+    { h: '"Un/una + sustantivo + de + sustantivo", sin artículo en el segundo', html: '<i>Un encanto de persona</i> repite el patrón enfático de la primera sección, pero con un sustantivo evaluativo en primer lugar y la persona real después de "de", sin artículo.' },
+    { h: 'Restricciones sintácticas', html: 'Un sujeto indefinido de lectura genérica es incompatible con un predicado que asigna una propiedad definitoria: <i>*un gato es cruce de siamés y gato común</i> no funciona como definición (haría falta "el gato"). En cambio, el indefinido sí admite dislocarse a la izquierda como tema, con un comentario después: <i>Una cámara, mejor que sea digital.</i>' }
+  ],
+  contrasts: [
+    { es: 'Un Dalí de esa época puede alcanzar precios altísimos.', en: 'A Dalí from that period can fetch very high prices.', note: 'nombre propio recategorizado — una obra hecha por él' },
+    { es: 'Dalí nació en Figueras en 1904.', en: 'Dalí was born in Figueres in 1904.', note: 'nombre propio con su valor normal, sin artículo' },
+    { es: 'Es un encanto de persona, siempre dispuesta a ayudar.', en: 'She is an absolute delight of a person, always willing to help.', note: 'un/una + sustantivo evaluativo + de + sustantivo, sin artículo en el segundo' },
+    { es: 'Una cámara, mejor que sea digital y no de carrete.', en: "A camera — better that it's digital, not film.", note: 'dislocación a la izquierda con el indefinido como tema' }
+  ],
+  pitfalls: [
+    '"Un Picasso" no significa "un hombre llamado Picasso, del que no sabemos nada" — recategoriza el nombre propio en un nombre común: una obra, un ejemplo, una versión de esa persona o de su estilo.',
+    'Un sujeto indefinido con lectura genérica no funciona bien en definiciones de propiedad: para definir qué es un gato, el español prefiere el artículo definido genérico (<i>el gato es...</i>), no el indefinido.',
+    '"Un tal" siempre marca que el nombre que sigue es desconocido para el oyente — usarlo con alguien ya presentado en la conversación suena extraño o incluso desdeñoso.'
+  ],
+  examples: [
+    { es: 'Compró un Miró auténtico en una subasta.', en: 'He bought a genuine Miró at an auction.' },
+    { es: 'Llamó un tal Ramírez preguntando por ti.', en: 'A certain Ramírez called asking for you.' },
+    { es: 'Es un lujo de casa, con vistas al mar.', en: 'It\'s a gorgeous house, with sea views.' }
+  ],
+  probes: [
+    { id: 'p:artindefC1:propio', kind: 'mcq', q: '"Tiene un Picasso en casa." ¿Qué significa "un Picasso" aquí?', options: ['Un hombre desconocido llamado Picasso', 'Una obra genuina hecha por Picasso', 'Un estilo de decoración'], answer: 1 },
+    { id: 'p:artindefC1:tal', kind: 'mcq', q: '¿Qué marca "un tal" delante de un nombre?', options: ['Que el nombre es muy conocido', 'Que el nombre es desconocido para el oyente', 'Que se trata de un apodo'], answer: 1 },
+    { id: 'p:artindefC1:cloze', kind: 'cloze', text: 'Es un encanto ___ persona. (de)', accept: ['de'] },
+    { id: 'p:artindefC1:recall', kind: 'recall', front: '¿Qué hace el artículo indefinido con un nombre propio como "Buñuel" en "un Buñuel solo aparece una vez"?', back: 'lo recategoriza como nombre común, un tipo o categoría, no una persona concreta desconocida' }
+  ]
+},
+
+{
+  id: 'gr-nombres-escuetos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  pcic: ['gramatica:C1:98', 'gramatica:C1:99', 'gramatica:C1:100', 'gramatica:C1:101', 'gramatica:C1:102'],
+  title: 'Nombres escuetos: sin artículo, aunque el verbo lo pida',
+  summary: 'Some Spanish predicates simply refuse a bare noun — "Luis comió bistec" is fine, but "se comió bistec" is not, because the reflexive demands a delimited object the bare noun cannot provide. Learning which predicates tolerate a bare noun, and which contexts strip the article on purpose, is what separates fluent registration from a word-for-word translation.',
+  sections: [
+    { h: 'Complemento predicativo con nombrar, declarar', html: 'Verbos como <i>nombrar, declarar</i> aceptan un nombre escueto como complemento predicativo, porque clasifican en lugar de identificar un referente concreto: <i>la nombraron embajadora</i>, <i>la declararon zona catastrófica</i> — nunca "una embajadora" ni "la embajadora".' },
+    { h: 'Incompatibilidad con predicados que exigen delimitación', html: 'Verbos como <i>comerse, beberse, adorar, probar</i> (en su lectura de consumo o valoración total) exigen un objeto delimitado, contable: <i>*Luis se comió bistec</i> es agramatical, frente a <i>Luis comió bistec</i>, que sí acepta el nombre escueto porque el verbo, sin el reflexivo, no exige esa delimitación.' },
+    { h: 'Tras preposición: medio/modo frente a localización', html: 'La preposición <i>en</i> con nombre escueto expresa medio o modo genérico: <i>ir en tren</i> (por ese medio de transporte, en general), <i>jugar en campo contrario</i> (como visitante, modo del partido); con artículo, la misma preposición localiza: <i>ir en el tren</i> (ese tren concreto), <i>jugar en el campo contrario</i> (ese terreno físico concreto).' },
+    { h: 'Tras "a" y "con": instrumento o manera', html: '<i>Cortar el pelo a navaja, escribir a mano, escribir con bolígrafo</i> — el nombre escueto tras estas preposiciones nombra el instrumento o la manera sin individualizar ningún objeto concreto.' },
+    { h: 'Aposición adscriptiva frente a identificativa', html: '<i>Valencia, tierra de naranjos</i> asigna una propiedad definitoria sin necesidad de artículo (adscriptiva); <i>Madrid, la capital de España</i> identifica un referente único y sí necesita el artículo (identificativa) — la diferencia es entre describir un rasgo y señalar algo irrepetible.' }
+  ],
+  contrasts: [
+    { es: 'La nombraron directora del proyecto la semana pasada.', en: 'They named her director of the project last week.', note: 'complemento predicativo, clasifica sin artículo' },
+    { es: 'Luis comió bistec anoche en casa de sus padres.', en: 'Luis ate steak last night at his parents\' house.', note: 'nombre escueto aceptable sin el reflexivo' },
+    { es: 'Prefiero ir en tren que en avión.', en: 'I prefer to go by train rather than by plane.', note: 'medio de transporte genérico, sin artículo' },
+    { es: 'Perdimos el tren porque llegamos tarde a la estación.', en: 'We missed the train because we arrived late at the station.', note: 'referente concreto, artículo obligatorio' }
+  ],
+  pitfalls: [
+    'Añadir el reflexivo a un verbo de consumo (<i>comerse, beberse</i>) cambia sus exigencias gramaticales: de repente exige un objeto delimitado, y el nombre escueto que antes era aceptable deja de serlo.',
+    '"En tren" y "en el tren" no son intercambiables — el primero habla del medio de transporte en general, el segundo señala un tren físico y concreto.',
+    'La aposición adscriptiva (<i>Valencia, tierra de naranjos</i>) no identifica un referente único — si se le añadiera un artículo (<i>*Valencia, la tierra de naranjos</i>), sonaría como si solo existiera una tierra de naranjos en el mundo.'
+  ],
+  examples: [
+    { es: 'Lo declararon persona non grata en el país.', en: 'They declared him persona non grata in the country.' },
+    { es: 'Le gusta escribir a máquina, no con ordenador.', en: 'He likes to write on a typewriter, not with a computer.' },
+    { es: 'Segovia, ciudad de acueductos romanos, recibe miles de turistas cada año.', en: 'Segovia, city of Roman aqueducts, receives thousands of tourists every year.' }
+  ],
+  probes: [
+    { id: 'p:nombresescuetosC1:reflexivo', kind: 'mcq', q: '¿Por qué "*Luis se comió bistec" es agramatical pero "Luis comió bistec" no?', options: ['El reflexivo exige un objeto delimitado que el nombre escueto no da', 'Falta el artículo en ambos casos por igual', 'El verbo "comer" no admite objeto directo'], answer: 0 },
+    { id: 'p:nombresescuetosC1:preposicion', kind: 'mcq', q: '¿Qué diferencia hay entre "ir en tren" e "ir en el tren"?', options: ['Ninguna, son intercambiables', 'El primero es el medio en general; el segundo, un tren concreto', 'El segundo es incorrecto'], answer: 1 },
+    { id: 'p:nombresescuetosC1:cloze', kind: 'cloze', text: 'La nombraron ___ del proyecto. (sin artículo, complemento predicativo)', accept: ['directora'] },
+    { id: 'p:nombresescuetosC1:recall', kind: 'recall', front: '¿Qué tipo de aposición no necesita artículo: adscriptiva o identificativa?', back: 'la adscriptiva (Valencia, tierra de naranjos) — asigna un rasgo, no identifica algo único' }
+  ]
 }
 
 ];
