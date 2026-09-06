@@ -182,7 +182,18 @@ window.Checker = (function () {
 
       case 'avoidsPerson': {                   // register: e.g. no tú in a formal text
         label = label || ('do not address anyone as <b>' + c.person + '</b>');
-        pass = !someVerb(analysis, function (a) { return a.person === c.person; });
+        /* Every regular third-person present is spelled like the tú imperative
+         * — habla, vive, trabaja, puede — so counting imperative readings made
+         * "Ella habla español" fail a no-tú check. An imperative reading only
+         * counts when the token has NO other interpretation: ven, haz, pon and
+         * dime are unambiguous, habla is not. */
+        pass = !analysis.verbs.some(function (w) {
+          return w.analyses.some(function (a) {
+            if (a.person !== c.person) return false;
+            if (a.tense !== 'imperativo') return true;
+            return !w.analyses.some(function (b) { return b.tense !== 'imperativo'; });
+          });
+        });
         break;
       }
 

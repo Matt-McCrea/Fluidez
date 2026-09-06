@@ -7,7 +7,11 @@
 const fs = require('fs'), path = require('path');
 global.window = {};
 function load(rel) { (0, eval)(fs.readFileSync(path.join(__dirname, '..', rel), 'utf8')); }
-['data/verbs.js', 'data/vocab.js', 'data/idioms.js', 'js/engine.js', 'js/checker.js'].forEach(load);
+// data/connectors.js is required by the connectorFrom constraint: without it
+// window.CONNECTORS is undefined and every model answer using that constraint
+// fails its own self-check, which made the constraint unusable.
+['data/verbs.js', 'data/vocab.js', 'data/idioms.js', 'data/connectors.js',
+ 'js/engine.js', 'js/checker.js'].forEach(load);
 
 const C = window.Checker;
 let errors = 0, checks = 0;
