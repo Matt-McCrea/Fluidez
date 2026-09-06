@@ -27496,6 +27496,49 @@ window.STRAND_LESSONS = [
     { id: 'p:sorpresaadmiracionC1:cloze', kind: 'cloze', text: 'Nos quedamos de ___ al ver el resultado. (sorpresa extrema, somatizada)', accept: ['piedra'] },
     { id: 'p:sorpresaadmiracionC1:recall', kind: 'recall', front: '¿Qué palabra describe el grado más alto de admiración, entre "admirado", "maravillado" y "deslumbrado"?', back: '"deslumbrado" es el grado más alto' }
   ]
+},
+
+{
+  id: 'fn-afecto-sensaciones-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:691', 'funciones:C1:692', 'funciones:C1:693', 'funciones:C1:696', 'funciones:C1:697', 'funciones:C1:698',
+         'funciones:C1:699', 'funciones:C1:701', 'funciones:C1:702', 'funciones:C1:703', 'funciones:C1:704', 'funciones:C1:705',
+         'funciones:C1:706', 'funciones:C1:707', 'funciones:C1:708', 'funciones:C1:709', 'funciones:C1:710', 'funciones:C1:711'],
+  title: 'Afecto y sensaciones físicas en C1: "estoy hecho polvo" y "no puedo con mi alma"',
+  summary: 'El afecto se gradúa de la simpatía al amor, mientras que las sensaciones físicas en C1 se somatizan en imágenes muy vivas — "un agujero en el estómago" para el hambre, "se me cierran los ojos" para el sueño, "hecho polvo" para el agotamiento total.',
+  sections: [
+    { h: 'Expresar afecto', html: '<i>Siento simpatía/afecto/cariño/amor por/hacia...</i> gradúa la intensidad del sentimiento. <i>(Te) tengo simpatía/afecto/cariño...</i> es una construcción alternativa, igual de común: <i>le tengo un gran cariño</i>. <i>Te amo</i> es la declaración más directa e intensa, reservada casi siempre para el amor romántico.' },
+    { h: 'Sensaciones de hambre, sed, sueño, frío y calor', html: '<i>Me da (una) sed/(un) hambre/frío/calor/sueño</i> presenta la sensación como algo que "viene": <i>la pastilla me dio un sueño tremendo</i>. <i>Estoy sediento/congelado/tiritando (de frío)/dormido</i> describe el estado directamente. <i>Tengo un agujero en el estómago</i> (hambre) y <i>tengo la garganta seca</i> (sed) son imágenes físicas muy concretas. <i>Me caigo de sueño</i> y <i>se me cierran los ojos</i> describen el sueño extremo, casi incontrolable.' },
+    { h: 'Sensaciones llevadas al extremo', html: '<i>¡Me muero de sed/hambre/frío/calor/sueño/cansancio/dolor!</i> es la hipérbole general para cualquier sensación física extrema. <i>¡Qué sed/hambre/frío/calor/sueño pasé!</i> narra retrospectivamente una sensación ya vivida.' },
+    { h: 'Cansancio y agotamiento', html: '<i>Estoy/me siento/me encuentro fatigado</i> es la forma más neutra. <i>Estoy hecho polvo/muerto...</i> son hipérboles coloquiales de agotamiento extremo. <i>Me fatigo...</i> describe el proceso de cansarse: <i>mi madre se fatiga mucho al andar</i>. <i>¡No puedo con mi alma!</i> y <i>¡no puedo más!</i> son exclamaciones de agotamiento absoluto, casi al límite.' },
+    { h: 'Malestar y dolor', html: '<i>Siento malestar/molestias...</i> describe un malestar general, difuso: <i>siento una especie de malestar general, me duele todo</i>. <i>Me da un dolor/pinchazo...</i> describe un dolor puntual y repentino: <i>de repente me daba un dolor horroroso en el cuello</i>.' }
+  ],
+  exponents: [
+    { es: 'Le tengo un cariño enorme a mi antiguo profesor.', en: 'I have enormous affection for my old teacher.', register: 'neutral' },
+    { es: 'Estoy hecho polvo después de la mudanza.', en: "I'm wiped out after the move.", register: 'coloquial' },
+    { es: 'Tengo un agujero en el estómago, no he comido nada.', en: "I'm starving, I haven't eaten anything.", register: 'coloquial' },
+    { es: 'Se me cierran los ojos, me voy a la cama.', en: "My eyes are closing on their own, I'm going to bed.", register: 'coloquial' },
+    { es: 'De repente me dio un pinchazo horrible en la espalda.', en: 'I suddenly got a horrible stabbing pain in my back.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Siento un gran afecto por toda su familia.', en: 'I feel great affection for his whole family.', note: 'afecto general, no necesariamente romántico' },
+    { es: 'Te amo con todo mi corazón.', en: 'I love you with all my heart.', note: 'declaración de amor romántico, la más intensa' }
+  ],
+  pitfalls: [
+    '"Tengo un agujero en el estómago" y "tengo la garganta seca" no describen problemas médicos literales — son imágenes físicas para el hambre y la sed intensas.',
+    '"Estoy hecho polvo/muerto" son exclusivamente coloquiales — en un registro formal conviene "estoy agotado" o "me siento muy fatigado".',
+    '"Te amo" se reserva casi siempre para el amor romántico intenso — no es intercambiable con "te tengo cariño" o "siento afecto por ti", que cubren relaciones más amplias.'
+  ],
+  examples: [
+    { es: 'Sentía un profundo cariño por sus abuelos.', en: 'He felt deep affection for his grandparents.' },
+    { es: 'Me muero de calor con este verano.', en: "I'm dying of heat this summer." },
+    { es: 'No puedo con mi alma después de la carrera.', en: "I'm completely done in after the race." }
+  ],
+  probes: [
+    { id: 'p:afectosensacionesC1:agujeroestomago', kind: 'mcq', q: '"Tengo un agujero en el estómago" describe...', options: ['Un problema médico real', 'Hambre intensa', 'Sueño'], answer: 1 },
+    { id: 'p:afectosensacionesC1:teamo', kind: 'mcq', q: '¿Para qué tipo de afecto se reserva "te amo"?', options: ['Cualquier tipo de cariño', 'El amor romántico intenso', 'La amistad'], answer: 1 },
+    { id: 'p:afectosensacionesC1:cloze', kind: 'cloze', text: 'Estoy hecho ___ después de la mudanza. (agotamiento extremo, coloquial)', accept: ['polvo'] },
+    { id: 'p:afectosensacionesC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "siento malestar" y "me da un dolor/pinchazo"?', back: 'malestar es difuso y general; dolor/pinchazo es puntual, concreto y repentino' }
+  ]
 }
 
 ];
