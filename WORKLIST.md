@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (143/202 done)
+## C1 — lessons (144/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -678,7 +678,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 28 pts · `nociones_generales C1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-c1
 - [x] **Expresión verbal** · 21 pts · `nociones_generales C1 § 7.2. Expresión verbal`  — nt-expresion-verbal-c1
 
-### C1 · function (37/91)
+### C1 · function (39/91)
 - [x] **Identificar** · 8 pts · `funciones C1 § 1.1. Identificar`  — fn-identificar-c1
 - [x] **Pedir información** · 19 pts · `funciones C1 § 1.2. Pedir información`  — fn-pedir-informacion-c1
 - [x] **Dar información** · 29 pts · `funciones C1 § 1.3. Dar información`  — fn-dar-informacion-c1
@@ -716,8 +716,8 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Expresar alegría y satisfacción** · 8 pts · `funciones C1 § 3.12. Expresar alegría y satisfacc`  — fn-estado-animo-alegria-c1
 - [x] **Expresar tristeza y aflicción** · 9 pts · `funciones C1 § 3.13. Expresar tristeza y aflicció`  — fn-tristeza-placer-c1
 - [x] **Expresar placer y diversión** · 3 pts · `funciones C1 § 3.14. Expresar placer y diversión`  — fn-tristeza-placer-c1
-- [ ] **Expresar hartazgo** · 3 pts · `funciones C1 § 3.16. Expresar hartazgo`
-- [ ] **Expresar enfado e indignación** · 6 pts · `funciones C1 § 3.17. Expresar enfado e indignació`
+- [x] **Expresar hartazgo** · 3 pts · `funciones C1 § 3.16. Expresar hartazgo`  — fn-hartazgo-enfado-c1
+- [x] **Expresar enfado e indignación** · 6 pts · `funciones C1 § 3.17. Expresar enfado e indignació`  — fn-hartazgo-enfado-c1
 - [ ] **Expresar miedo, ansiedad y preocupación** · 10 pts · `funciones C1 § 3.18. Expresar miedo, ansiedad y p`
 - [ ] **Expresar nerviosismo** · 7 pts · `funciones C1 § 3.19. Expresar nerviosismo`
 - [ ] **Expresar empatía** · 5 pts · `funciones C1 § 3.20. Expresar empatía`

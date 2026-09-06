@@ -27248,6 +27248,47 @@ window.STRAND_LESSONS = [
     { id: 'p:tristezaplacerC1:cloze', kind: 'cloze', text: 'Me ___ de risa cada vez que veo ese vídeo. (hipérbole coloquial de risa)', accept: ['parto'] },
     { id: 'p:tristezaplacerC1:recall', kind: 'recall', front: '¿Qué imagen física comparten "se me rompe el corazón" y "me parto de risa"?', back: 'ambas llevan la emoción al cuerpo de forma hiperbólica, una para la tristeza y otra para la diversión' }
   ]
+},
+
+{
+  id: 'fn-hartazgo-enfado-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:539', 'funciones:C1:540', 'funciones:C1:541', 'funciones:C1:545', 'funciones:C1:546', 'funciones:C1:547',
+         'funciones:C1:548', 'funciones:C1:549', 'funciones:C1:550'],
+  title: 'Hartazgo y enfado en C1: "hasta la coronilla" y "de un humor de perros"',
+  summary: 'El hartazgo en C1 se localiza en el cuerpo ("hasta la coronilla") y marca un límite explícito ("hasta aquí hemos llegado"), mientras que el enfado combina verbos formales ("me irrita") con locuciones muy vivas como "ponerse de un humor de perros".',
+  sections: [
+    { h: 'Hartazgo: llegar al límite', html: '<i>Estoy hasta la coronilla/las narices/aquí (de)...</i> son variantes coloquiales muy comunes para expresar hartazgo extremo, con "la coronilla" en la cabeza y "las narices" en la cara — el cuerpo entero marca el límite alcanzado. <i>Hasta aquí hemos llegado</i> anuncia que se ha llegado al límite y no se tolerará más. <i>Por esto/ahí no paso</i> marca un límite personal muy concreto que no se está dispuesto a cruzar.' },
+    { h: 'Enfado: verbos y sustantivos', html: '<i>Me irrita...</i> es directo y neutro: <i>me irrita que hablen de ese tema con tanta frivolidad</i>. <i>Siento rabia/impotencia/indignación...</i> y <i>me llena de rabia/impotencia/indignación...</i> gradúan la intensidad, con "impotencia" añadiendo el matiz de no poder actuar: <i>sentimos impotencia al ver que delitos gravísimos quedan impunes</i>. <i>Es indignante...</i> valora algo como objeto de indignación.' },
+    { h: 'Enfado como cambio de humor', html: '<i>Me pongo/me pone enfermo/de un humor de perros...</i> describe un cambio brusco hacia el mal humor, con "de un humor de perros" siendo una imagen muy viva y coloquial: <i>me puso de un humor de perros que quisieran cobrarme por sentarme en la terraza</i>.' },
+    { h: 'Exclamación de indignación', html: '<i>¡Maldita sea!</i> es una exclamación de enfado o frustración ante un contratiempo.' }
+  ],
+  exponents: [
+    { es: 'Estoy hasta la coronilla de sus excusas.', en: "I'm fed up to the back teeth with his excuses.", register: 'coloquial' },
+    { es: 'Hasta aquí hemos llegado, no pienso aguantar más.', en: "That's it, I'm not putting up with any more.", register: 'coloquial' },
+    { es: 'Sus comentarios resultaron realmente indignantes.', en: 'His comments turned out to be truly outrageous.', register: 'formal' },
+    { es: 'Me puso de un humor de perros la actitud del cliente.', en: "The client's attitude put me in a foul mood.", register: 'coloquial' },
+    { es: 'Sentimos una enorme impotencia ante esta situación.', en: 'We feel enormous helplessness in the face of this situation.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Me irrita un poco su forma de hablar.', en: 'His way of speaking irritates me a bit.', note: 'enfado moderado' },
+    { es: 'Estoy hasta las narices de su forma de hablar.', en: "I'm sick to death of his way of speaking.", note: 'hartazgo extremo, coloquial' }
+  ],
+  pitfalls: [
+    '"Hasta la coronilla/las narices/aquí" son variantes coloquiales equivalentes — no hay diferencia de significado entre ellas, solo de preferencia regional o personal.',
+    '"Impotencia" en este contexto no significa incapacidad física — describe la frustración de no poder cambiar una situación injusta.',
+    '"De un humor de perros" es exclusivamente coloquial y muy visual — en un registro formal conviene "de mal humor" sin más.'
+  ],
+  examples: [
+    { es: 'Por ahí no paso, eso es una falta de respeto total.', en: "I won't stand for that, that's a total lack of respect." },
+    { es: 'Me irrita profundamente su falta de puntualidad.', en: 'His lack of punctuality deeply irritates me.' },
+    { es: '¡Maldita sea! Se me ha vuelto a olvidar la contraseña.', en: "Damn it! I've forgotten the password again." }
+  ],
+  probes: [
+    { id: 'p:hartazgoenfadoC1:coronilla', kind: 'mcq', q: '"Estoy hasta la coronilla" expresa...', options: ['Alegría', 'Hartazgo extremo', 'Indiferencia'], answer: 1 },
+    { id: 'p:hartazgoenfadoC1:impotencia', kind: 'mcq', q: '¿Qué matiz añade "impotencia" al enfado?', options: ['Incapacidad física', 'Frustración por no poder cambiar la situación', 'Alegría contenida'], answer: 1 },
+    { id: 'p:hartazgoenfadoC1:cloze', kind: 'cloze', text: 'Me puso de un humor de ___ la actitud del cliente. (mal humor, coloquial)', accept: ['perros'] },
+    { id: 'p:hartazgoenfadoC1:recall', kind: 'recall', front: '¿Qué tienen en común "hasta la coronilla", "hasta las narices" y "hasta aquí"?', back: 'son variantes coloquiales equivalentes para expresar hartazgo extremo, sin diferencia real de significado' }
+  ]
 }
 
 ];
