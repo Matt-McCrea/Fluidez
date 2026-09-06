@@ -22984,6 +22984,45 @@ window.STRAND_LESSONS = [
     { id: 'p:subadvcondicionalesC1:cloze', kind: 'cloze', text: '___ caso de duda, consulte con su médico. (condición remota, registro formal)', accept: ['En'] },
     { id: 'p:subadvcondicionalesC1:recall', kind: 'recall', front: '¿Qué sustituye el presente de indicativo en el registro informal, dentro de la prótasis condicional?', back: 'tanto al imperfecto como al pluscuamperfecto de subjuntivo (si llegas... por si llegaras.../si hubieras llegado...)' }
   ]
+},
+
+{
+  id: 'gr-sub-adv-consecutivas-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:795', 'gramatica:C1:797', 'gramatica:C1:800', 'gramatica:C1:801', 'gramatica:C1:802',
+         'gramatica:C1:803', 'gramatica:C1:805', 'gramatica:C1:806', 'gramatica:C1:809', 'gramatica:C1:810',
+         'gramatica:C1:814', 'gramatica:C1:815', 'gramatica:C1:817', 'gramatica:C1:818', 'gramatica:C1:819',
+         'gramatica:C1:820', 'gramatica:C1:823', 'gramatica:C1:825'],
+  title: 'Subordinadas consecutivas en C1: intensidad, suspensión y la familia de "de ahí"',
+  summary: 'Las consecutivas en C1 no se limitan a "tan... que" — incluyen fórmulas de intensidad coloquial que se dejan sin terminar a propósito, un "como para" que cambia de sentido según quién realiza la segunda acción, y toda una familia de construcciones con "de ahí" que van del sustantivo al subjuntivo pasando por el artículo.',
+  sections: [
+    { h: 'Coordinadas y yuxtapuestas: "luego", "así pues", "de ahí"', html: 'La consecutiva coordinada más conocida usa "luego": <i>pienso, luego existo</i>. Yuxtapuesta, con "pues, así pues, de ahí (que)": <i>los representantes no se pusieron de acuerdo; así pues, habrá que realizar otra asamblea</i>; con adverbios en "-mente": <i>consecuentemente, consiguientemente</i>.' },
+    { h: 'De intensidad: fórmulas que casi no necesitan verbo', html: '<i>Tal... que, cada... que</i> intensifican mediante el sustantivo: <i>tiene tal genio que no hay quien le aguante</i>, <i>tiene cada salida que...</i> (dejada sin terminar, como si lo obvio no necesitara explicarse). Más coloquiales aún, <i>de un... que, si... que</i>: <i>es de un patoso...</i>, <i>si será egoísta que...</i> — ambas se oyen constantemente en el habla, casi siempre en suspensión.' },
+    { h: '"Como para": correferencial o no, según quién actúa después', html: 'El cuantificador + "como para" cambia de construcción según si el sujeto de la segunda acción es el mismo que el de la primera o no: con infinitivo, correferencial, <i>sabe tanto como para escribir un libro</i> (él mismo lo escribiría); con "que" + subjuntivo, sujetos distintos, <i>sabe tanto como para que sea el elegido</i> / <i>sabe tanto como para que el jefe lo elija a él</i> (otro decide). También funciona con el neutro "lo": <i>sabe lo bastante como para...</i>' },
+    { h: 'Exclamativas y suspendidas', html: 'Las consecutivas exclamativas usan adverbios y pronombres como <i>qué, quién, cuál, cómo, dónde, cuánto</i>: <i>¡cuánto habrá gastado que ahora está sin blanca!</i>, <i>¡cómo se pondría que le dio un ataque de nervios!</i> Las consecutivas suspendidas dejan la consecuencia sin decir, tanto en enunciativas (<i>no sé si lo hará. Es tan escrupuloso...</i>) como en exclamativas (<i>¡llovía tanto...!</i>) — el oyente completa mentalmente lo obvio.' },
+    { h: 'La familia de "de ahí": del sustantivo al subjuntivo', html: '"De ahí" admite varias construcciones: con sustantivo (<i>de ahí su negación</i>), con verbo resultativo en indicativo (<i>de ahí procede su negación</i>), con una unidad explicativa interpuesta (<i>de ahí, y no por otro motivo, su actitud</i>), con artículo (<i>de ahí el que...</i>), y como "de ahí que" + subjuntivo, también con posible interposición explicativa: <i>de ahí que se niegue</i>, <i>de ahí, de su antigua enemistad, que pelearan entonces</i>.' }
+  ],
+  contrasts: [
+    { es: 'Sabe tanto de cocina como para abrir su propio restaurante.', en: 'He knows so much about cooking that he could open his own restaurant.', note: 'correferencial — él mismo abriría el restaurante' },
+    { es: 'Trabaja tanto como para que le suban el sueldo.', en: 'He works so much that they might give him a raise.', note: 'no correferencial — otro (el jefe) toma la decisión' },
+    { es: 'Estaba tan cansado que...', en: 'He was so tired that... (you can imagine)', note: 'consecutiva suspendida, la consecuencia se deja sin decir' },
+    { es: 'No llegó a tiempo; de ahí que se perdiera la reunión.', en: "He didn't arrive on time; hence he missed the meeting.", note: '"de ahí que" + subjuntivo' }
+  ],
+  pitfalls: [
+    'Una consecutiva "suspendida" (<i>tiene cada salida que...</i>, <i>¡llovía tanto...!</i>) no es una frase incompleta por error — dejar la consecuencia sin decir es el propio recurso expresivo, dando por hecho que el oyente la imagina.',
+    '"Como para" cambia de construcción según la correferencialidad: con infinitivo el sujeto de ambas acciones coincide; con "que" + subjuntivo, no — confundir ambas formas cambia quién hace qué.',
+    '"De ahí que" exige subjuntivo, pero "de ahí" + verbo resultativo (<i>de ahí procede...</i>) va en indicativo — no son la misma construcción con el modo intercambiado.'
+  ],
+  examples: [
+    { es: 'Gritaba de tal manera que se le oía desde la calle.', en: 'He was shouting so loudly that you could hear him from the street.' },
+    { es: 'Corre lo bastante rápido como para ganar la carrera.', en: 'He runs fast enough to win the race.' },
+    { es: 'No hubo pruebas suficientes; de ahí que lo absolvieran.', en: "There wasn't enough evidence; hence he was acquitted." }
+  ],
+  probes: [
+    { id: 'p:subadvconsecutivasC1:comopara', kind: 'mcq', q: '"Sabe tanto como para escribir un libro." ¿Quién escribiría el libro?', options: ['Él mismo (correferencial)', 'Otra persona', 'Es ambiguo'], answer: 0 },
+    { id: 'p:subadvconsecutivasC1:deahi', kind: 'mcq', q: '¿Qué modo exige "de ahí que"?', options: ['Indicativo', 'Subjuntivo', 'Cualquiera de los dos'], answer: 1 },
+    { id: 'p:subadvconsecutivasC1:cloze', kind: 'cloze', text: 'Es tan escrupuloso... (consecutiva ___, la consecuencia se deja sin decir)', accept: ['suspendida'] },
+    { id: 'p:subadvconsecutivasC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "sabe tanto como para escribir un libro" y "sabe tanto como para que el jefe lo elija"?', back: 'la primera es correferencial (mismo sujeto en ambas acciones); la segunda no lo es (otro sujeto realiza la segunda acción)' }
+  ]
 }
 
 ];
