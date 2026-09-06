@@ -23796,6 +23796,50 @@ window.STRAND_LESSONS = [
     { id: 'p:pesosuperficieC1:cloze', kind: 'cloze', text: 'El terreno tiene una ___ de 2.000 hectáreas. (medida de superficie)', accept: ['extensión'] },
     { id: 'p:pesosuperficieC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a lo largo de" y "a lo ancho de"?', back: '"a lo largo de" recorre la longitud; "a lo ancho de", la anchura — dimensiones distintas del espacio' }
   ]
+},
+
+{
+  id: 'nt-volumen-capacidad-presion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:366', 'nociones_generales:C1:367', 'nociones_generales:C1:368', 'nociones_generales:C1:369',
+         'nociones_generales:C1:370', 'nociones_generales:C1:371', 'nociones_generales:C1:372', 'nociones_generales:C1:373',
+         'nociones_generales:C1:374', 'nociones_generales:C1:375', 'nociones_generales:C1:376', 'nociones_generales:C1:377',
+         'nociones_generales:C1:396', 'nociones_generales:C1:397'],
+  title: 'Volumen, capacidad y presión en C1: de "dar volumen al cabello" a "estar a tope"',
+  summary: 'El volumen se mide en unidades cúbicas, se describe con formas geométricas (pirámide, cubo) y se transforma con verbos muy concretos — no es lo mismo "adquirir volumen" que alguien te lo "dé" (como al cabello), y "estar a tope" cierra la escala de capacidad llena.',
+  sections: [
+    { h: 'Medir y describir el volumen', html: '<i>Centímetro(s)/metro(s) cúbico(s)</i> son las unidades. <i>Grosor</i> es el espesor de algo. <i>Bulto</i> es una masa que sobresale; <i>hueco</i>, un espacio vacío dentro de algo: <i>el tronco de aquel árbol tenía un hueco considerable</i>. <i>Pirámide, cubo</i> son formas de referencia para describir volúmenes. <i>Voluminoso</i> describe algo que ocupa mucho espacio.' },
+    { h: 'Estados de volumen: inflado, abarrotado', html: '<i>Inflado, hinchado</i> describen algo lleno de aire o gas. <i>Abarrotado</i> describe un espacio lleno hasta el límite de personas u objetos.' },
+    { h: 'Verbos que llenan o vacían un espacio', html: '<i>Evacuar</i> (vaciar de personas, generalmente por seguridad: <i>hubo que evacuar el edificio</i>), <i>(des)ocupar</i> (llenar o dejar libre un espacio: <i>los libros ocupan toda la estantería</i>), <i>abarrotar</i> (llenar hasta el tope: <i>el público abarrotó el local</i>).' },
+    { h: 'Cambiar de volumen', html: '<i>Adquirir volumen</i> es ganar volumen de forma natural o gradual; <i>dar volumen</i> es la acción de aumentarlo deliberadamente, con un agente externo: <i>dar volumen al cabello</i>. <i>Aumentar de volumen/capacidad</i> es la construcción general. <i>Estar a tope</i> describe la capacidad máxima ya alcanzada, sin espacio libre.' },
+    { h: 'Presión', html: '<i>Presión atmosférica</i> es la ejercida por el aire; puede ser <i>alta</i> o <i>baja</i>: <i>la radio anuncia bajas presiones para los próximos días</i> (un anuncio meteorológico típico).' }
+  ],
+  exponents: [
+    { es: 'El local estaba a tope aquella noche.', en: 'The venue was packed that night.', register: 'coloquial' },
+    { es: 'Este producto da volumen al cabello sin apelmazarlo.', en: 'This product adds volume to hair without weighing it down.', register: 'neutral' },
+    { es: 'Tuvieron que evacuar la zona por el incendio.', en: 'They had to evacuate the area because of the fire.', register: 'formal' },
+    { es: 'Se anuncian bajas presiones para el fin de semana.', en: 'Low pressure is forecast for the weekend.', register: 'formal' },
+    { es: 'La maleta es demasiado voluminosa para la cabina.', en: "The suitcase is too bulky for the cabin.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'El músculo adquirió volumen con el entrenamiento.', en: 'The muscle gained volume with training.', note: 'proceso natural/gradual, sin agente externo' },
+    { es: 'El producto le dio volumen al peinado.', en: 'The product gave the hairstyle volume.', note: 'aumento provocado por un agente externo' }
+  ],
+  pitfalls: [
+    '"Adquirir volumen" y "dar volumen" no son intercambiables: el primero es un proceso propio del sujeto, el segundo requiere un agente externo que lo provoque.',
+    '"Evacuar" no significa simplemente "vaciar" en cualquier contexto — se reserva casi siempre para sacar personas de un lugar por seguridad.',
+    '"Estar a tope" es coloquial y describe capacidad máxima llena — en registro formal conviene "estar completo" o "haber alcanzado su capacidad máxima".'
+  ],
+  examples: [
+    { es: 'El auditorio estaba abarrotado antes de que empezara la función.', en: 'The auditorium was packed before the show started.' },
+    { es: 'El grosor de la pared es de treinta centímetros.', en: 'The wall thickness is thirty centimeters.' },
+    { es: 'El globo se hinchó hasta casi explotar.', en: 'The balloon inflated until it nearly burst.' }
+  ],
+  probes: [
+    { id: 'p:volumencapacidadpresionC1:adquirirdar', kind: 'mcq', q: '¿Qué diferencia hay entre "adquirir volumen" y "dar volumen"?', options: ['Ninguna, son sinónimos', 'Adquirir es un proceso propio; dar requiere un agente externo', 'Dar volumen es siempre negativo'], answer: 1 },
+    { id: 'p:volumencapacidadpresionC1:evacuar', kind: 'mcq', q: '¿Para qué contexto se reserva "evacuar"?', options: ['Vaciar cualquier recipiente', 'Sacar personas de un lugar por seguridad', 'Llenar un espacio'], answer: 1 },
+    { id: 'p:volumencapacidadpresionC1:cloze', kind: 'cloze', text: 'El local estaba a ___ aquella noche. (capacidad máxima, coloquial)', accept: ['tope'] },
+    { id: 'p:volumencapacidadpresionC1:recall', kind: 'recall', front: '¿Qué anuncia típicamente la expresión "bajas presiones"?', back: 'un pronóstico meteorológico de presión atmosférica baja' }
+  ]
 }
 
 ];
