@@ -26839,6 +26839,44 @@ window.STRAND_LESSONS = [
     { id: 'p:certezaevidenciaC1:cloze', kind: 'cloze', text: 'No me cabe la menor ___ de que actuó bien. (certeza absoluta)', accept: ['duda'] },
     { id: 'p:certezaevidenciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "sospecho que" y "juraría que"?', back: 'sospechar se basa en indicios y suele tener connotación algo negativa; jurar expresa una certeza subjetiva muy alta, aunque no verificada' }
   ]
+},
+
+{
+  id: 'fn-hipotesis-posibilidad-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:311', 'funciones:C1:312', 'funciones:C1:313', 'funciones:C1:314', 'funciones:C1:317', 'funciones:C1:318', 'funciones:C1:319'],
+  title: 'Formular hipótesis y expresar posibilidad en C1: "¿y si...?" y "para mí que..."',
+  summary: 'Invitar a imaginar un escenario hipotético en C1 combina el condicional con distintos marcos ("si...", "en el caso de...", "¿y si...?"), mientras que expresar posibilidad va desde lo formal ("cabe la posibilidad de que...") hasta la intuición coloquial ("para mí que...").',
+  sections: [
+    { h: 'Invitar a formular una hipótesis: distintos marcos condicionales', html: '<i>Si..., ¿(qué/quién/dónde...) crees que + condicional simple?</i> propone un escenario hipotético y pide una respuesta: <i>si no hubieras conocido a Jorge, ¿cómo crees que sería tu vida ahora?</i>. <i>¿Y si...?</i> lanza la hipótesis de forma más abierta, casi como una idea que surge en el momento: <i>¿y si apareciera aquí mañana y llamara a la puerta...?</i>. <i>En el caso de..., ¿... + condicional simple/compuesto?</i> introduce el escenario con mayor formalidad, y admite tanto una hipótesis futura como una pasada no cumplida: <i>en el caso de haberlo sabido antes, ¿se lo habría contado a alguien?</i>.' },
+    { h: 'Expresar posibilidad: de lo formal a lo intuitivo', html: '<i>Pudiera ser que...</i> (con "pudiera", forma de subjuntivo poco frecuente pero correcta) introduce una posibilidad con matiz algo literario: <i>pudiera ser que estuviera toda la semana fuera</i>. <i>Cabe la posibilidad de que...</i> es la fórmula más formal y objetiva. <i>Para mí que...</i> introduce, en cambio, una intuición personal y coloquial: <i>parece que se comporta como siempre, para mí que no sabe nada</i>.' }
+  ],
+  exponents: [
+    { es: '¿Y si hubiéramos llegado cinco minutos antes?', en: 'What if we had arrived five minutes earlier?', register: 'neutral' },
+    { es: 'Cabe la posibilidad de que el vuelo se retrase.', en: 'There\'s a possibility the flight will be delayed.', register: 'formal' },
+    { es: 'Para mí que aquí pasa algo raro.', en: "If you ask me, something weird is going on here.", register: 'coloquial' },
+    { es: 'En el caso de que ganáramos, ¿qué harías con el premio?', en: 'In the event that we won, what would you do with the prize?', register: 'formal' },
+    { es: 'Pudiera ser que llegue un poco más tarde de lo previsto.', en: 'It could be that I arrive a bit later than planned.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Cabe la posibilidad de que se cancele el evento.', en: 'There\'s a possibility the event will be canceled.', note: 'registro formal y objetivo' },
+    { es: 'Para mí que al final no se hace el evento.', en: "If you ask me, the event isn't happening after all.", note: 'intuición personal, coloquial' }
+  ],
+  pitfalls: [
+    '"Pudiera ser que" usa una forma de subjuntivo poco frecuente en el habla cotidiana ("pudiera" en vez de "pueda") — suena algo más literario o formal que "puede ser que".',
+    '"Para mí que..." no es una simple opinión — introduce específicamente una intuición o sospecha personal, a menudo sobre algo que no se puede demostrar.',
+    '"En el caso de..." con infinitivo compuesto ("en el caso de haberlo sabido") + condicional compuesto ("habría...") plantea una hipótesis sobre el pasado, no sobre el futuro.'
+  ],
+  examples: [
+    { es: 'Si tuvieras que elegir ahora mismo, ¿qué decidirías?', en: 'If you had to choose right now, what would you decide?' },
+    { es: 'Siempre cabe la posibilidad de que algo salga mal.', en: "There's always the possibility that something will go wrong." },
+    { es: 'Para mí que ya lo sabía desde el principio.', en: "If you ask me, he knew from the start." }
+  ],
+  probes: [
+    { id: 'p:hipotesisposibilidadC1:paramique', kind: 'mcq', q: '"Para mí que aquí pasa algo raro." ¿Qué introduce esta fórmula?', options: ['Un hecho comprobado', 'Una intuición o sospecha personal', 'Una orden'], answer: 1 },
+    { id: 'p:hipotesisposibilidadC1:enelcaso', kind: 'mcq', q: '"En el caso de haberlo sabido, ¿se lo habría contado?" ¿A qué tiempo se refiere la hipótesis?', options: ['Al futuro', 'Al pasado, no cumplido', 'Al presente'], answer: 1 },
+    { id: 'p:hipotesisposibilidadC1:cloze', kind: 'cloze', text: 'Siempre ___ la posibilidad de que surja un imprevisto. (existir la posibilidad)', accept: ['cabe'] },
+    { id: 'p:hipotesisposibilidadC1:recall', kind: 'recall', front: '¿Qué registro tiene "para mí que..." frente a "cabe la posibilidad de que..."?', back: '"para mí que" es coloquial e introduce una intuición personal; "cabe la posibilidad de que" es formal y objetivo' }
+  ]
 }
 
 ];
