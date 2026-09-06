@@ -24716,6 +24716,50 @@ window.STRAND_LESSONS = [
     { id: 'p:retrasoC1:cloze', kind: 'cloze', text: 'Su reacción ___ complicó todavía más la situación. (que llega más tarde de lo esperado)', accept: ['tardía'] },
     { id: 'p:retrasoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "aplazar/posponer" y simplemente "retrasarse"?', back: 'aplazar/posponer implican una decisión deliberada; retrasarse puede ser accidental o involuntario' }
   ]
+},
+
+{
+  id: 'nt-inicio-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:810', 'nociones_generales:C1:811', 'nociones_generales:C1:812', 'nociones_generales:C1:813',
+         'nociones_generales:C1:814', 'nociones_generales:C1:815', 'nociones_generales:C1:816', 'nociones_generales:C1:817',
+         'nociones_generales:C1:818', 'nociones_generales:C1:819', 'nociones_generales:C1:820', 'nociones_generales:C1:821',
+         'nociones_generales:C1:822', 'nociones_generales:C1:823'],
+  title: 'Inicio en C1: de "dar comienzo" a "¡manos a la obra!"',
+  summary: 'Iniciar algo se dice de formas muy distintas según el tipo de inicio: un acontecimiento "estalla", una infección "se origina", una obra "da comienzo", y alguien que se pone a trabajar "se pone manos a la obra" — cada verbo reservado para su propio tipo de comienzo.',
+  sections: [
+    { h: 'Sustantivos y verbos del debut', html: '<i>Apertura, debut</i> son el comienzo formal de un acto o de una carrera: <i>la apertura de un acto, el debut de un actor</i>; <i>debutar</i>, el verbo correspondiente. <i>Punto de partida</i> es el origen conceptual de algo, típicamente una investigación o argumento.' },
+    { h: '"Un principio de": el inicio incipiente', html: '<i>Un principio de</i> describe el estado inicial y leve de algo, especialmente un problema: <i>un principio de úlcera</i> — ya ha empezado, pero de forma mínima.' },
+    { h: 'Verbos de inicio súbito o de origen', html: '<i>Emprender</i> es iniciar deliberadamente una acción larga: <i>emprender un camino</i>. <i>Estallar, desencadenar(se)</i> describen un inicio brusco y con fuerza, típico de crisis o escándalos: <i>el escándalo estalló con la publicación de documentos confidenciales</i>. <i>Originar(se), surgir en</i> señalan dónde tuvo su comienzo algo: <i>la infección se originó en el quirófano</i>.' },
+    { h: 'Locuciones formales de comienzo', html: '<i>Dar comienzo</i> es la fórmula formal para "empezar", típica de actos y ceremonias: <i>mañana darán comienzo los actos conmemorativos</i>. <i>Marcar/señalar el principio/el comienzo/el inicio</i> describe un hecho que funciona como frontera entre un antes y un después: <i>aquel año marcó el inicio de una nueva etapa</i>. <i>Poner(se) en marcha</i> es iniciar un proyecto o proceso.' },
+    { h: 'Locuciones coloquiales y exclamaciones de arranque', html: '<i>Ponerse manos a la obra</i> es empezar a trabajar activamente en algo. <i>Echar(se) a + infinitivo, romper a + infinitivo, ir + gerundio</i> son perífrasis de inicio brusco o gradual: <i>nos echamos a reír, rompió a llorar, id andando, que ya os alcanzo</i>. <i>¡Anda!</i> y <i>¡Adelante!</i> son exclamaciones que autorizan o animan a empezar algo: <i>querías hablar conmigo, ¿no? Pues adelante, te escucho</i>.' }
+  ],
+  exponents: [
+    { es: 'El festival dará comienzo el próximo viernes.', en: 'The festival will begin next Friday.', register: 'formal' },
+    { es: 'Pusieron en marcha el proyecto con mucho entusiasmo.', en: 'They launched the project with a lot of enthusiasm.', register: 'neutral' },
+    { es: 'En cuanto llegó, se puso manos a la obra.', en: 'As soon as he arrived, he got down to work.', register: 'coloquial' },
+    { es: 'La epidemia se originó en un mercado local.', en: 'The epidemic originated in a local market.', register: 'formal' },
+    { es: 'Rompió a llorar sin poder contenerse.', en: 'He burst into tears, unable to hold back.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Tiene un principio de resfriado.', en: 'He has the beginnings of a cold.', note: 'inicio leve, incipiente' },
+    { es: 'El escándalo estalló de forma repentina.', en: 'The scandal broke out suddenly.', note: 'inicio súbito y con fuerza' }
+  ],
+  pitfalls: [
+    '"Un principio de" describe un inicio leve e incipiente (un principio de úlcera) — no equivale a "el principio de" en sentido general de "el comienzo de algo".',
+    '"Estallar/desencadenarse" se reservan para inicios bruscos y de cierta gravedad (crisis, escándalos, conflictos) — no se usan para inicios tranquilos o planificados.',
+    '"Dar comienzo" es de registro formal, típico de actos y ceremonias — en contextos cotidianos resulta más natural simplemente "empezar".'
+  ],
+  examples: [
+    { es: 'Fue el punto de partida de una larga amistad.', en: 'It was the starting point of a long friendship.' },
+    { es: 'Emprendió un nuevo negocio tras perder su empleo.', en: 'He started a new business after losing his job.' },
+    { es: '¡Adelante! Puedes contarme lo que quieras.', en: 'Go ahead! You can tell me whatever you want.' }
+  ],
+  probes: [
+    { id: 'p:inicioC1:unprincipiode', kind: 'mcq', q: '"Tiene un principio de úlcera." ¿Qué describe "un principio de"?', options: ['Un problema ya grave y desarrollado', 'Un inicio leve e incipiente', 'Un problema resuelto'], answer: 1 },
+    { id: 'p:inicioC1:estallar', kind: 'mcq', q: '¿Para qué tipo de inicio se reserva "estallar/desencadenarse"?', options: ['Inicios tranquilos y planificados', 'Inicios bruscos y de cierta gravedad', 'Inicios muy graduales'], answer: 1 },
+    { id: 'p:inicioC1:cloze', kind: 'cloze', text: 'En cuanto llegó, se puso ___ a la obra. (empezar a trabajar activamente)', accept: ['manos'] },
+    { id: 'p:inicioC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "dar comienzo" y simplemente "empezar"?', back: '"dar comienzo" es de registro formal, típico de actos y ceremonias; "empezar" es de uso general' }
+  ]
 }
 
 ];
