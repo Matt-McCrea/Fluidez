@@ -26715,6 +26715,48 @@ window.STRAND_LESSONS = [
     { id: 'p:expresaracuerdoC1:cloze', kind: 'cloze', text: 'Estoy de acuerdo en todo, ___ en el plazo. (excepto)', accept: ['salvo'] },
     { id: 'p:expresaracuerdoC1:recall', kind: 'recall', front: '¿Qué tipo de acuerdo expresa "no digo que..., pero..."?', back: 'un acuerdo general con una matización u objeción suave, no un desacuerdo' }
   ]
+},
+
+{
+  id: 'fn-expresar-desacuerdo-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:223', 'funciones:C1:225', 'funciones:C1:228', 'funciones:C1:229', 'funciones:C1:230', 'funciones:C1:231',
+         'funciones:C1:232', 'funciones:C1:233', 'funciones:C1:234', 'funciones:C1:236', 'funciones:C1:237', 'funciones:C1:239',
+         'funciones:C1:240', 'funciones:C1:241', 'funciones:C1:242'],
+  title: 'Expresar desacuerdo en C1: de "no me convence" a "¡de eso nada!"',
+  summary: 'El desacuerdo en C1 se gradúa igual que el acuerdo — de la discrepancia suave ("no me convence") a la contundente ("¡de eso nada!") — y "no coincidir en" repite el mismo reparto de preposiciones que su versión afirmativa, ahora negado.',
+  sections: [
+    { h: 'Discrepar directamente', html: '<i>(Yo) no diría lo mismo</i> y <i>yo no comparto tu idea/postura</i> son formas directas y moderadas de discrepar.' },
+    { h: '"No coincidir en": las mismas tres construcciones, negadas', html: '<i>Yo no coincido en (lo de) + infinitivo</i> para una acción: <i>no coincido en lo de firmar un acuerdo cuanto antes</i>. <i>No coincido contigo en (lo de) que...</i> para un hecho: <i>no coincido contigo en que no haya otras soluciones</i>. <i>No coincido en lo que...</i> remite a algo ya dicho: <i>no coincido en lo que dijo Jaime</i>. <i>(Yo) no estoy de acuerdo con/en lo que...</i> funciona igual: <i>no estoy de acuerdo con que toda esta información tenga que ser pública</i>.' },
+    { h: 'Discrepancia suave o matizada', html: '<i>No me convence...</i> expresa una duda sin rechazo frontal: <i>no me convence lo de cenar el sábado en el chino</i>. <i>No se puede decir que...</i> matiza una afirmación del otro sin negarla del todo: <i>no se puede decir que no lo haya intentado</i>. <i>(Bueno), no creas</i> + enunciado corrige suavemente una impresión del interlocutor: <i>bueno, no creas; en hora punta se oye mucho el ruido del tráfico</i>.' },
+    { h: 'Desacuerdo rotundo', html: '<i>¡Para nada!</i> y <i>¡(Pero) qué dices!</i> rechazan con fuerza lo que el otro acaba de afirmar. <i>De eso nada</i> corta una propuesta con rotundidad: <i>de eso nada, pagaremos lo que sea justo y ni un euro más</i>. <i>No digas tonterías</i> descarta una idea considerada absurda. <i>Eso no tiene ningún sentido</i> y <i>eso no tiene ni pies ni cabeza</i> rechazan la lógica misma de un planteamiento, con la segunda siendo más coloquial y vivaz.' }
+  ],
+  exponents: [
+    { es: '¡Para nada! No estoy de acuerdo con esa interpretación.', en: 'Not at all! I don\'t agree with that interpretation.', register: 'coloquial' },
+    { es: 'No coincido contigo en que sea la única opción posible.', en: "I don't agree with you that it's the only possible option.", register: 'neutral' },
+    { es: 'No me convence del todo esa propuesta.', en: "That proposal doesn't fully convince me.", register: 'neutral' },
+    { es: 'Eso no tiene ni pies ni cabeza, la verdad.', en: "That makes no sense at all, honestly.", register: 'coloquial' },
+    { es: 'No se puede decir que no se hayan esforzado.', en: "You can't say they haven't made an effort.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'No me convence esa idea.', en: "That idea doesn't convince me.", note: 'discrepancia suave, sin rechazo frontal' },
+    { es: '¡De eso nada! No pienso aceptarlo.', en: 'No way! I\'m not going to accept it.', note: 'desacuerdo rotundo, sin margen a la duda' }
+  ],
+  pitfalls: [
+    '"No se puede decir que..." no niega directamente lo afirmado por el otro — matiza reconociendo un hecho parcial que el otro pasó por alto.',
+    '"(Bueno), no creas" corrige una impresión del interlocutor sin ser un rechazo agresivo — mantiene un tono conversacional suave pese a discrepar.',
+    '"Eso no tiene ni pies ni cabeza" es más coloquial y vivaz que "eso no tiene ningún sentido" — ambas rechazan la lógica de un planteamiento, pero con distinto registro.'
+  ],
+  examples: [
+    { es: 'No comparto en absoluto tu forma de ver el problema.', en: "I don't share your way of seeing the problem at all." },
+    { es: '¡Pero qué dices! Eso no fue lo que pasó.', en: "What are you talking about! That's not what happened." },
+    { es: 'No digas tonterías, sabes perfectamente que te aprecia.', en: "Don't be silly, you know perfectly well that she cares about you." }
+  ],
+  probes: [
+    { id: 'p:expresardesacuerdoC1:noseporede', kind: 'mcq', q: '"No se puede decir que no lo haya intentado." ¿Qué hace esta expresión?', options: ['Niega totalmente el esfuerzo', 'Reconoce un hecho parcial que matiza la crítica', 'Elogia sin reservas'], answer: 1 },
+    { id: 'p:expresardesacuerdoC1:nomeconvence', kind: 'mcq', q: '"No me convence esa idea" es un desacuerdo...', options: ['Rotundo', 'Suave, sin rechazo frontal', 'Inexistente'], answer: 1 },
+    { id: 'p:expresardesacuerdoC1:cloze', kind: 'cloze', text: '¡___ nada! No pienso aceptar esas condiciones. (rechazo rotundo)', accept: ['De eso'] },
+    { id: 'p:expresardesacuerdoC1:recall', kind: 'recall', front: '¿Qué construcción usa "no coincido en" para remitirse a algo que el otro ya dijo?', back: '"no coincido en lo que..." (p. ej. "no coincido en lo que dijo Jaime")' }
+  ]
 }
 
 ];
