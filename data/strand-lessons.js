@@ -23222,6 +23222,129 @@ window.STRAND_LESSONS = [
     { id: 'p:disponibilidadC1:cloze', kind: 'cloze', text: 'Este barrio ___ de transporte público decente. (no disponer de algo necesario)', accept: ['carece'] },
     { id: 'p:disponibilidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "asequible" y "accesible"?', back: '"asequible" se refiere sobre todo al precio; "accesible" a personas o lugares fáciles de alcanzar/tratar' }
   ]
+},
+
+{
+  id: 'nt-cualidad-general-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:84', 'nociones_generales:C1:85', 'nociones_generales:C1:86', 'nociones_generales:C1:87',
+         'nociones_generales:C1:88', 'nociones_generales:C1:89', 'nociones_generales:C1:90', 'nociones_generales:C1:91', 'nociones_generales:C1:92'],
+  title: 'Cualidad general en C1: naturaleza, apariencia y composición',
+  summary: 'Hablar de qué es algo "en esencia" exige distinguir naturaleza (lo que algo es por dentro) de apariencia (lo que parece por fuera), y saber describir de qué partes consta o está constituido — vocabulario que aparece constantemente en textos descriptivos y argumentativos de nivel C1.',
+  sections: [
+    { h: 'Lo que algo es por dentro: naturaleza y esencia', html: '<i>Naturaleza, sustancia, esencia, identidad</i> designan lo que algo es fundamentalmente: <i>son de distinta naturaleza</i>. <i>En esencia</i> introduce esa misma idea como locución: <i>la propuesta actual es, en esencia, distinta a la anterior</i>. <i>Variedad, género</i> clasifican dentro de una categoría más amplia: <i>es una variedad muy escasa en Europa</i>.' },
+    { h: 'Lo que algo parece por fuera', html: '<i>Apariencia, pinta</i> hablan de cómo algo se presenta a la vista, sin garantizar que coincida con su naturaleza real: <i>tiene pinta de artista</i>. <i>Presentar un aspecto/unas características</i> describe formalmente ese mismo tipo de impresión: <i>el lugar presentaba un aspecto extraño</i>.' },
+    { h: 'De qué está hecho o compuesto algo', html: '<i>Constituido por</i> y <i>constar de</i> describen la composición interna: <i>el sistema solar está constituido por ocho planetas</i>, <i>la prueba consta de dos partes</i>. <i>Contenido, fundamento</i> se refieren a la sustancia de una idea o argumento, más que a un objeto físico.' },
+    { h: '"Propio de": lo característico', html: '<i>Propio de</i> señala que algo es característico o esperable de una categoría, y su negación marca una desviación de lo esperado: <i>ese comportamiento no es propio de un profesional</i>.' }
+  ],
+  exponents: [
+    { es: 'Ambos proyectos son, en esencia, muy parecidos.', en: 'Both projects are, essentially, very similar.', register: 'neutral' },
+    { es: 'El comité está constituido por siete miembros.', en: 'The committee is made up of seven members.', register: 'formal' },
+    { es: 'El examen consta de tres partes.', en: 'The exam consists of three parts.', register: 'formal' },
+    { es: 'Tiene toda la pinta de ser un malentendido.', en: 'It really looks like a misunderstanding.', register: 'coloquial' },
+    { es: 'Esa actitud no es propia de alguien tan experimentado.', en: "That attitude isn't typical of someone so experienced.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Tiene pinta de ser complicado, pero en esencia es sencillo.', en: "It looks complicated, but it's essentially simple.", note: 'apariencia frente a naturaleza real' },
+    { es: 'El grupo está constituido por voluntarios.', en: 'The group is made up of volunteers.', note: 'composición formal, registro más elevado' }
+  ],
+  pitfalls: [
+    '"Apariencia/pinta" describen cómo se presenta algo, no necesariamente cómo es — usarlas como sinónimo de "naturaleza" o "esencia" invierte el sentido.',
+    '"Constituido por" y "constar de" no son intercambiables en todos los contextos: "constar de" es más habitual con partes de un todo (un examen, un proceso), "constituido por" con miembros o componentes.',
+    '"Propio de" en frase negativa (<i>no es propio de...</i>) señala una desviación de lo esperado, no una simple ausencia de esa cualidad.'
+  ],
+  examples: [
+    { es: 'El curso consta de cuatro módulos.', en: 'The course consists of four modules.' },
+    { es: 'Su discurso tenía poco contenido y mucho estilo.', en: 'His speech had little substance and a lot of style.' },
+    { es: 'Esa reacción no es propia de ella.', en: "That reaction isn't like her." }
+  ],
+  probes: [
+    { id: 'p:cualidadgeneralC1:esencia', kind: 'mcq', q: '"En esencia" introduce...', options: ['Una apariencia externa', 'Lo que algo es fundamentalmente', 'Una duda'], answer: 1 },
+    { id: 'p:cualidadgeneralC1:constar', kind: 'mcq', q: '"El examen ___ de tres partes." ¿Qué verbo encaja?', options: ['consta', 'presenta', 'tiene pinta'], answer: 0 },
+    { id: 'p:cualidadgeneralC1:cloze', kind: 'cloze', text: 'Ese comportamiento no es ___ de un profesional. (característico, esperable)', accept: ['propio'] },
+    { id: 'p:cualidadgeneralC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "apariencia/pinta" y "naturaleza/esencia"?', back: 'apariencia/pinta describen cómo se presenta algo por fuera; naturaleza/esencia, lo que es por dentro, no siempre coincidente' }
+  ]
+},
+
+{
+  id: 'nt-acontecimiento-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:104', 'nociones_generales:C1:105', 'nociones_generales:C1:106', 'nociones_generales:C1:107', 'nociones_generales:C1:108'],
+  title: 'Acontecimiento en C1: de la odisea al hecho aislado',
+  summary: 'Describir un acontecimiento en C1 exige precisar de qué tipo es — ¿aislado, decisivo, casual, anecdótico? — y disponer de verbos como "estallar" o "desencadenarse" para narrar su inicio con la fuerza que muchos sucesos históricos o dramáticos requieren.',
+  sections: [
+    { h: 'Nombrar el acontecimiento', html: '<i>Incidente</i> es un suceso menor, a menudo problemático; <i>odisea</i>, uno especialmente largo y penoso: <i>aquello fue una odisea</i>. Un <i>acto</i> puede ser <i>conmemorativo, público, religioso o de clausura</i>, según su función.' },
+    { h: 'Calificar el tipo de suceso', html: 'Un <i>suceso/hecho/acontecimiento</i> puede ser <i>aislado</i> (sin relación con otros), <i>casual</i> (fruto del azar), <i>decisivo</i> (que cambia el curso de las cosas) o <i>anecdótico</i> (menor, curioso, sin gran importancia) — la elección del adjetivo dice mucho sobre cómo se interpreta el suceso.' },
+    { h: 'Cómo empieza un acontecimiento', html: '<i>Estallar</i> y <i>desencadenar(se)</i> narran el inicio súbito y con fuerza de un acontecimiento, típicamente uno grave: <i>la guerra estalló en marzo de ese año</i>.' },
+    { h: 'La casualidad como acontecimiento', html: '<i>Dar(se) la casualidad de/la circunstancia de</i> introduce un hecho presentado como fruto del azar: <i>se dio la casualidad de que ese día llegó a tiempo</i>.' }
+  ],
+  exponents: [
+    { es: 'El viaje de vuelta fue toda una odisea.', en: 'The trip back was quite an ordyssey.', register: 'coloquial' },
+    { es: 'La crisis se desencadenó tras el anuncio del banco central.', en: 'The crisis was triggered after the central bank\'s announcement.', register: 'formal' },
+    { es: 'Fue un hecho aislado, sin relación con lo anterior.', en: 'It was an isolated incident, unrelated to what came before.', register: 'formal' },
+    { es: 'Se dio la casualidad de que ambos estaban en la misma ciudad.', en: 'As it happened, they were both in the same city.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Un hecho decisivo cambió el rumbo de la negociación.', en: 'A decisive event changed the course of the negotiation.', note: 'decisivo — con consecuencias importantes' },
+    { es: 'Fue solo un detalle anecdótico de la reunión.', en: 'It was just an anecdotal detail of the meeting.', note: 'anecdótico — sin gran importancia' }
+  ],
+  pitfalls: [
+    '"Incidente" no equivale a "acontecimiento" en general — implica un suceso menor y a menudo problemático, no cualquier hecho notable.',
+    '"Estallar" y "desencadenar(se)" se reservan para inicios súbitos y con fuerza, normalmente de sucesos graves (guerras, crisis, conflictos) — no conviene usarlos para inicios graduales o menores.',
+    '"Anecdótico" no significa "relacionado con una anécdota divertida" sin más — señala que el hecho carece de importancia real dentro del conjunto.'
+  ],
+  examples: [
+    { es: 'El conflicto estalló sin previo aviso.', en: 'The conflict broke out without warning.' },
+    { es: 'Fue un encuentro casual que cambió su vida.', en: 'It was a chance encounter that changed his life.' },
+    { es: 'El acto de clausura reunió a cientos de personas.', en: 'The closing ceremony brought together hundreds of people.' }
+  ],
+  probes: [
+    { id: 'p:acontecimientoC1:estallar', kind: 'mcq', q: '¿Qué tipo de inicio describe "estallar"?', options: ['Gradual y suave', 'Súbito y con fuerza', 'Planificado con antelación'], answer: 1 },
+    { id: 'p:acontecimientoC1:anecdotico', kind: 'mcq', q: '¿Qué significa que un hecho sea "anecdótico"?', options: ['Que es muy importante', 'Que carece de importancia real dentro del conjunto', 'Que es falso'], answer: 1 },
+    { id: 'p:acontecimientoC1:cloze', kind: 'cloze', text: 'Se dio la ___ de que ambos llegaron el mismo día. (azar, coincidencia)', accept: ['casualidad'] },
+    { id: 'p:acontecimientoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre un hecho "aislado" y uno "decisivo"?', back: 'aislado no tiene relación con otros hechos; decisivo cambia el curso de las cosas' }
+  ]
+},
+
+{
+  id: 'nt-certeza-incertidumbre-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:115', 'nociones_generales:C1:116', 'nociones_generales:C1:117', 'nociones_generales:C1:118',
+         'nociones_generales:C1:119', 'nociones_generales:C1:120', 'nociones_generales:C1:121', 'nociones_generales:C1:122',
+         'nociones_generales:C1:123', 'nociones_generales:C1:124', 'nociones_generales:C1:125', 'nociones_generales:C1:126', 'nociones_generales:C1:127'],
+  title: 'Certeza e incertidumbre en C1: de "cabe la posibilidad" a "sin lugar a dudas"',
+  summary: 'El español distingue con mucha precisión los grados de certeza, desde la duda que se "siembra" hasta la afirmación que "no cabe la menor duda" — un vocabulario esencial para argumentar y matizar en un registro formal.',
+  sections: [
+    { h: 'Sustantivos de la certeza y la duda', html: '<i>Improbabilidad</i> frente a <i>convicción, certidumbre</i>. <i>(In)admisible, (in)cuestionable, innegable, indudable</i> califican una afirmación según cuánto se pueda dudar de ella.' },
+    { h: 'Verbos y locuciones de sospecha y certeza', html: '<i>Sospechar, temer(se)</i> introducen una creencia no confirmada, a menudo negativa. <i>Tener la sospecha/la certeza</i> formaliza esa misma idea como sustantivo. <i>Saber a ciencia cierta/con certeza/con seguridad</i> refuerza al máximo la afirmación: <i>sabemos con toda seguridad que no ha habido un malentendido</i>.' },
+    { h: 'Plantear, resolver y sembrar dudas', html: '<i>Plantear/resolver una duda</i> son las dos caras de gestionar la incertidumbre; <i>sembrar dudas/la duda</i> describe la acción, a menudo deliberada, de generar incertidumbre donde antes no la había.' },
+    { h: 'El dilema y la posibilidad', html: '<i>Tener/estar ante un dilema</i> describe una elección difícil entre opciones: <i>estamos ante un dilema clásico: estética o funcionalidad</i>. <i>Caber la posibilidad</i> introduce una posibilidad no descartable: <i>cabe la posibilidad de que se trate de un error</i>. <i>En el caso (hipotético) de</i> introduce esa misma posibilidad como marco condicional.' },
+    { h: 'Reforzar la certeza en el discurso', html: '<i>Ciertamente, indudablemente</i> y, con mayor énfasis aún, <i>sin lugar a dudas, no cabe la menor duda</i> son los refuerzos más fuertes de una afirmación: <i>sin lugar a dudas, se trata de su mejor novela</i>.' }
+  ],
+  exponents: [
+    { es: 'Sin lugar a dudas, es la mejor opción disponible.', en: 'Without a doubt, it\'s the best option available.', register: 'formal' },
+    { es: 'Cabe la posibilidad de que el vuelo se retrase.', en: 'There\'s a possibility the flight will be delayed.', register: 'formal' },
+    { es: 'Sus declaraciones sembraron la duda entre los inversores.', en: 'His statements sowed doubt among investors.', register: 'formal' },
+    { es: 'Sospecho que no nos está contando toda la verdad.', en: "I suspect he's not telling us the whole truth.", register: 'neutral' },
+    { es: 'Estamos ante un dilema difícil de resolver.', en: 'We\'re facing a dilemma that\'s hard to resolve.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Sé con certeza que llegó a tiempo.', en: 'I know for certain that he arrived on time.', note: 'certeza máxima' },
+    { es: 'Sospecho que llegó tarde, pero no estoy seguro.', en: "I suspect he arrived late, but I'm not sure.", note: 'sospecha, certeza baja' }
+  ],
+  pitfalls: [
+    '"Sembrar dudas" no es un simple sinónimo de "tener dudas" — implica la acción, muchas veces intencionada, de generar incertidumbre en otros.',
+    '"Cabe la posibilidad de que" exige subjuntivo en la subordinada, como cualquier expresión de posibilidad no garantizada.',
+    '"Sin lugar a dudas" y "no cabe la menor duda" son de los refuerzos más fuertes disponibles — usarlos para una afirmación solo probable, no segura, suena desproporcionado.'
+  ],
+  examples: [
+    { es: 'No cabe la menor duda de que actuó de buena fe.', en: 'There\'s not the slightest doubt that he acted in good faith.' },
+    { es: 'Temo que ya sea demasiado tarde para arreglarlo.', en: 'I fear it may already be too late to fix it.' },
+    { es: 'En el caso hipotético de que ganara, ¿qué haría con el dinero?', en: 'In the hypothetical case that he won, what would he do with the money?' }
+  ],
+  probes: [
+    { id: 'p:certezaincertidumbreC1:sembrar', kind: 'mcq', q: '"Sembrar dudas" implica...', options: ['Tener dudas pasivamente', 'Generar incertidumbre en otros, a menudo a propósito', 'Resolver una duda'], answer: 1 },
+    { id: 'p:certezaincertidumbreC1:caber', kind: 'mcq', q: '"Cabe la posibilidad de que" exige...', options: ['Indicativo', 'Subjuntivo', 'Infinitivo obligatoriamente'], answer: 1 },
+    { id: 'p:certezaincertidumbreC1:cloze', kind: 'cloze', text: 'Sin lugar a ___, es la mejor decisión que pudimos tomar. (certeza máxima)', accept: ['dudas'] },
+    { id: 'p:certezaincertidumbreC1:recall', kind: 'recall', front: '¿Qué expresiones representan el grado máximo de certeza en este vocabulario?', back: '"sin lugar a dudas" y "no cabe la menor duda"' }
+  ]
 }
 
 ];
