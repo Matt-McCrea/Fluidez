@@ -28252,6 +28252,49 @@ window.STRAND_LESSONS = [
     { id: 'p:introducirrelatoatencionC1:cloze', kind: 'cloze', text: 'No te puedes ni ___ lo que me pasó ayer. (intensificar la expectativa antes de contar algo)', accept: ['imaginar'] },
     { id: 'p:introducirrelatoatencionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "¿me sigues?" y "no te he liado, ¿no?"?', back: '"¿me sigues?" pregunta en general si se sigue el hilo; "no te he liado" pregunta específicamente si algo ha resultado confuso' }
   ]
+},
+
+{
+  id: 'fn-destacar-silencio-tema-cierre-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:1287', 'funciones:C1:1288', 'funciones:C1:1289', 'funciones:C1:1290',
+         'funciones:C1:1318', 'funciones:C1:1319', 'funciones:C1:1320', 'funciones:C1:1321',
+         'funciones:C1:1332', 'funciones:C1:1333', 'funciones:C1:1334',
+         'funciones:C1:1337', 'funciones:C1:1338', 'funciones:C1:1339'],
+  title: 'Destacar, pedir silencio, cambiar de tema y cerrar en C1',
+  summary: 'Este último bloque reúne cuatro funciones organizativas del discurso: destacar un elemento con un ejemplo inmediato ("sin ir más lejos"), pedir silencio con registros muy distintos (del ruego formal al brusco "¡cierra la boca!"), introducir un tema nuevo, y proponer el cierre de una conversación, casi siempre disculpándose por interrumpirla.',
+  sections: [
+    { h: 'Destacar un elemento', html: '<i>Sin ir más lejos</i> refuerza una afirmación con un ejemplo inmediato y cercano: <i>ayer, sin ir más lejos, estuve con Julio</i>. <i>De hecho...</i> añade un dato concreto que refuerza lo dicho. <i>Es ineludible que...</i> + subjuntivo señala una necesidad que no admite evitarse: <i>es ineludible que discutamos el problema del agua</i>. <i>Lo que es más importante...</i> señala explícitamente el punto de mayor relevancia dentro de una explicación.' },
+    { h: 'Pedir silencio: de lo brusco a lo ceremonioso', html: '<i>Shhh, silencio, ¡aquí no hay quien se entienda!</i> es coloquial y directo, con matiz de queja. <i>(Uno a uno), (por favor), no habléis todos a la vez</i> ordena el turno de palabra en un grupo. <i>Se ruega a los presentes que guarden silencio</i> es la fórmula formal, propia de actos públicos. <i>¡Cierra la boca!</i> es brusco y coloquial, casi grosero.' },
+    { h: 'Introducir un nuevo tema', html: '<i>En otro orden de cosas...</i> cambia de tema de forma neutra y algo formal. <i>A propósito de...</i> introduce un tema relacionado con algo mencionado antes. <i>Ahora que dices eso...</i> conecta explícitamente el nuevo tema con lo que el interlocutor acaba de decir.' },
+    { h: 'Proponer el cierre de una conversación', html: '<i>(Perdona/lo siento), tengo que dejarte, (es que...)</i> y <i>(lo siento/perdona), te dejo</i> cierran la conversación disculpándose y, a menudo, dando una razón concreta: <i>perdona, te tengo que dejar, tengo a una persona en la otra línea</i>. <i>¡En fin...!</i> es una interjección que anuncia el cierre de un tema o de la conversación entera, con un matiz de resignación o de cierre inevitable.' }
+  ],
+  exponents: [
+    { es: 'Sin ir más lejos, esta misma mañana lo comenté con él.', en: 'Just this very morning, I mentioned it to him.', register: 'formal' },
+    { es: 'Se ruega a los presentes que guarden silencio durante la ceremonia.', en: 'Those present are requested to remain silent during the ceremony.', register: 'formal' },
+    { es: 'A propósito de lo que decías, ¿sabes algo del nuevo proyecto?', en: 'Speaking of what you were saying, do you know anything about the new project?', register: 'neutral' },
+    { es: 'Perdona, te tengo que dejar, me están llamando por la otra línea.', en: "Sorry, I have to go, I'm getting another call.", register: 'coloquial' },
+    { es: '¡En fin! Ya veremos qué pasa con todo esto.', en: "Well, anyway! We'll see what happens with all this.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Se ruega a los presentes que guarden silencio.', en: 'Those present are requested to remain silent.', note: 'registro formal, actos públicos' },
+    { es: '¡Cierra la boca de una vez!', en: 'Shut your mouth already!', note: 'registro brusco y coloquial, casi grosero' }
+  ],
+  pitfalls: [
+    '"Sin ir más lejos" no significa literalmente que algo esté cerca en el espacio — introduce un ejemplo inmediato y concreto que refuerza una afirmación general.',
+    '"¡Cierra la boca!" es considerablemente más brusco que "silencio, por favor" — su uso puede resultar grosero según el contexto y la relación entre hablantes.',
+    '"En fin" no siempre marca el final de la conversación entera — a veces solo cierra un subtema, con un matiz de resignación, antes de seguir hablando de otra cosa.'
+  ],
+  examples: [
+    { es: 'De hecho, esa misma tarde ya lo había solucionado.', en: 'In fact, that very afternoon I had already solved it.' },
+    { es: 'Cambiando de tema, ¿ya sabéis qué vamos a hacer este fin de semana?', en: 'Changing the subject, do you already know what we\'re doing this weekend?' },
+    { es: 'Lo siento, te dejo, que llego tarde a una reunión.', en: "I'm sorry, I have to go, I'm running late for a meeting." }
+  ],
+  probes: [
+    { id: 'p:destacarsilenciotemacierreC1:sinirmaslejos', kind: 'mcq', q: '"Sin ir más lejos" introduce...', options: ['Un ejemplo inmediato y concreto', 'Una despedida', 'Una amenaza'], answer: 0 },
+    { id: 'p:destacarsilenciotemacierreC1:seruegaguardar', kind: 'mcq', q: '¿En qué contexto es habitual "se ruega a los presentes que guarden silencio"?', options: ['Conversación coloquial entre amigos', 'Actos públicos y formales', 'Mensajes de texto'], answer: 1 },
+    { id: 'p:destacarsilenciotemacierreC1:cloze', kind: 'cloze', text: 'Perdona, te tengo que ___, me llaman por la otra línea. (cerrar la conversación)', accept: ['dejar'] },
+    { id: 'p:destacarsilenciotemacierreC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a propósito de..." y "en otro orden de cosas..."?', back: '"a propósito de" conecta el nuevo tema con algo mencionado antes; "en otro orden de cosas" cambia de tema de forma más neutra, sin esa conexión explícita' }
+  ]
 }
 
 ];
