@@ -27166,6 +27166,47 @@ window.STRAND_LESSONS = [
     { id: 'p:deseosplanesC1:cloze', kind: 'cloze', text: '¡Quién ___ tiempo para viajar tanto! (imperfecto de subjuntivo, deseo irrealizable)', accept: ['tuviera', 'tuviese'] },
     { id: 'p:deseosplanesC1:recall', kind: 'recall', front: '¿Qué señala "pese a" + un exponente de planes e intenciones?', back: 'que la intención o el plan expresado no llegó a cumplirse' }
   ]
+},
+
+{
+  id: 'fn-estado-animo-alegria-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:484', 'funciones:C1:486', 'funciones:C1:488', 'funciones:C1:489', 'funciones:C1:491', 'funciones:C1:492',
+         'funciones:C1:497', 'funciones:C1:498', 'funciones:C1:499', 'funciones:C1:500', 'funciones:C1:501', 'funciones:C1:502',
+         'funciones:C1:503', 'funciones:C1:504'],
+  title: 'Preguntar por el ánimo y expresar alegría en C1: "estoy como loco de contento"',
+  summary: 'Preguntar por el estado de ánimo en C1 va de lo casual ("¿cómo va eso?") a lo directamente insistente ("¿se puede saber lo que te pasa?"), mientras que la alegría se expresa con imágenes muy físicas: "dar saltos de alegría", "estar como loco de contento".',
+  sections: [
+    { h: 'Preguntar por el estado de ánimo, de lo casual a lo insistente', html: '<i>¿Cómo va eso?</i> es una pregunta casual, casi de saludo. <i>¿Cómo/qué tal estás de ánimo?</i> es más directa. <i>¿Estás agobiado por algo?</i> nombra un posible malestar concreto. <i>¿... + qué te ocurre/sucede/pasa?</i> pregunta directamente por el motivo. <i>¿Se puede saber lo que te pasa?</i> añade un matiz de insistencia, casi de exigencia, ante un silencio del otro. <i>¿Por qué tienes esa cara?</i> pregunta a partir de una expresión facial visible.' },
+    { h: 'Expresar alegría con locuciones físicas', html: '<i>Estoy de buenas</i> describe un buen momento anímico general. <i>Estoy eufórico</i> es un grado alto de alegría. <i>Estoy como loco (de contento)</i> y <i>estoy encantado de la vida</i> son hipérboles coloquiales de felicidad plena: <i>estamos como locos con nuestro nuevo coche</i>. <i>Me pongo a dar saltos de alegría</i> lleva la alegría al gesto físico literal: <i>siempre que sacaba una buena nota se ponía a dar saltos de alegría</i>.' },
+    { h: 'Expresar alegría con verbos y sustantivos', html: '<i>Me alegra...</i> es directo: <i>me alegra enormemente que hayáis venido</i>. <i>Me llena de alegría/felicidad/satisfacción/orgullo...</i> intensifica la fuente de la alegría. <i>Tengo el gusto/el placer/la satisfacción de...</i> es una fórmula más formal, típica de presentaciones o discursos: <i>tuve el gusto de conocer personalmente al Ministro de Finanzas</i>.' }
+  ],
+  exponents: [
+    { es: '¿Se puede saber lo que te pasa? Llevas todo el día raro.', en: "Can you tell me what's wrong with you? You've been acting strange all day.", register: 'coloquial' },
+    { es: 'Estoy eufórico, no me lo esperaba en absoluto.', en: "I'm ecstatic, I wasn't expecting it at all.", register: 'neutral' },
+    { es: 'Tengo el placer de presentarles a nuestro nuevo director.', en: 'I have the pleasure of introducing our new director.', register: 'formal' },
+    { es: 'Se puso a dar saltos de alegría cuando le dieron la noticia.', en: 'She started jumping for joy when they gave her the news.', register: 'coloquial' },
+    { es: '¿Qué tal estás de ánimo hoy?', en: 'How are you feeling today?', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¿Cómo va eso?', en: 'How\'s it going?', note: 'pregunta casual, casi de saludo' },
+    { es: '¿Se puede saber lo que te pasa?', en: 'Can you please tell me what\'s wrong?', note: 'pregunta con matiz de insistencia' }
+  ],
+  pitfalls: [
+    '"¿Se puede saber lo que te pasa?" no es una simple pregunta neutra — el matiz de insistencia suele implicar cierta impaciencia o preocupación acumulada.',
+    '"Estoy como loco de contento" y "estoy encantado de la vida" son hipérboles coloquiales — en un registro formal conviene "estoy muy satisfecho" o "me siento muy feliz".',
+    '"Tengo el gusto/placer de..." pertenece a un registro formal, típico de presentaciones oficiales — resultaría extraño en una conversación cotidiana entre amigos.'
+  ],
+  examples: [
+    { es: '¿Cómo lo llevas con el nuevo trabajo?', en: 'How are you handling the new job?' },
+    { es: 'Me llenó de orgullo verla graduarse.', en: 'It filled me with pride to see her graduate.' },
+    { es: '¿Por qué tienes esa cara? ¿Ha pasado algo?', en: 'Why the long face? Did something happen?' }
+  ],
+  probes: [
+    { id: 'p:estadoanimoalegriaC1:sepuedesaber', kind: 'mcq', q: '"¿Se puede saber lo que te pasa?" ¿Qué matiz añade frente a "¿qué te pasa?"?', options: ['Ninguno', 'Insistencia o impaciencia acumulada', 'Indiferencia'], answer: 1 },
+    { id: 'p:estadoanimoalegriaC1:tengoelgusto', kind: 'mcq', q: '¿En qué registro se usa típicamente "tengo el gusto/placer de..."?', options: ['Coloquial, entre amigos', 'Formal, presentaciones o discursos', 'Vulgar'], answer: 1 },
+    { id: 'p:estadoanimoalegriaC1:cloze', kind: 'cloze', text: 'Se puso a dar ___ de alegría al enterarse. (gesto físico de alegría)', accept: ['saltos'] },
+    { id: 'p:estadoanimoalegriaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "¿cómo va eso?" y "¿por qué tienes esa cara?"?', back: 'la primera es casual, casi de saludo; la segunda parte de una expresión facial visible que sugiere un problema concreto' }
+  ]
 }
 
 ];
