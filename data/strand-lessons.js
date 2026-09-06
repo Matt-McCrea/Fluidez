@@ -24343,6 +24343,132 @@ window.STRAND_LESSONS = [
     { id: 'p:referenciasgeneralesC1:cloze', kind: 'cloze', text: 'Estamos a ___ de mes, todavía queda mucho sueldo. (principio del periodo)', accept: ['primeros'] },
     { id: 'p:referenciasgeneralesC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a primeros de mes" y "a últimos de mes"?', back: '"a primeros" señala el principio del periodo; "a últimos", el final' }
   ]
+},
+
+{
+  id: 'nt-localizacion-presente-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:687', 'nociones_generales:C1:688', 'nociones_generales:C1:689', 'nociones_generales:C1:690',
+         'nociones_generales:C1:691', 'nociones_generales:C1:692', 'nociones_generales:C1:693', 'nociones_generales:C1:694',
+         'nociones_generales:C1:695', 'nociones_generales:C1:696'],
+  title: 'Localizar en el presente en C1: actualidad, tendencia y "estar al día"',
+  summary: 'Situar algo en el presente en C1 exige distinguir "actualidad" de "modernidad", una "tendencia" de una "novedad", y disponer de locuciones para hasta cuándo llega la información que se tiene: "hasta el momento", "hasta la fecha".',
+  sections: [
+    { h: 'Sustantivos del presente', html: '<i>Modernidad, actualidad</i> — la actualidad es lo que ocurre ahora mismo: <i>la actualidad informativa</i>. <i>Novedad</i> es algo nuevo que acaba de aparecer: <i>¿hay alguna novedad?</i>. <i>Tendencia</i> es una dirección que sigue el presente hacia el futuro cercano: <i>la tendencia actual es a trabajar en grupos reducidos</i>. <i>Presente</i> como sustantivo: <i>la situación presente del sistema educativo</i>.' },
+    { h: 'Actualizar: poner algo al día', html: '<i>Actualización, actualizar</i> son el sustantivo y el verbo de poner algo al día: <i>actualizar datos</i>. <i>Estar de actualidad</i> es ser un tema del que se habla ahora mismo. <i>Estar/poner(se) al día</i> es tener o conseguir la información más reciente sobre algo.' },
+    { h: 'Locuciones de límite temporal hasta ahora', html: '<i>De momento, hasta el momento, hasta la fecha</i> introducen una afirmación válida solo hasta el presente, dejando abierta la posibilidad de cambio: <i>hasta el momento no hay nada confirmado</i>. <i>En el momento presente</i> es la fórmula más formal para "ahora mismo".' }
+  ],
+  exponents: [
+    { es: 'Hasta la fecha, no se ha encontrado una solución definitiva.', en: 'To date, no definitive solution has been found.', register: 'formal' },
+    { es: 'Está muy al día de las noticias tecnológicas.', en: "He's very up to date on tech news.", register: 'neutral' },
+    { es: 'Ese tema sigue de actualidad después de tantos años.', en: "That topic is still current after so many years.", register: 'neutral' },
+    { es: 'La tendencia actual apunta hacia el trabajo remoto.', en: 'The current trend points toward remote work.', register: 'formal' },
+    { es: 'De momento, seguimos con el mismo plan.', en: "For now, we're sticking with the same plan.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Hasta el momento, todo va según lo previsto.', en: 'So far, everything is going as planned.', note: 'válido solo hasta ahora, sujeto a cambio' },
+    { es: 'En el momento presente, la situación es estable.', en: 'At the present moment, the situation is stable.', note: 'fórmula formal para "ahora mismo"' }
+  ],
+  pitfalls: [
+    '"De momento/hasta el momento/hasta la fecha" no son afirmaciones definitivas — dejan explícitamente abierta la posibilidad de que la situación cambie después.',
+    '"Actualidad" no es sinónimo de "modernidad" — actualidad es lo que ocurre ahora mismo, modernidad es una cualidad de estar acorde con los tiempos actuales.',
+    '"Estar de actualidad" describe un tema del que se habla, no necesariamente algo nuevo — un tema antiguo puede "volver a estar de actualidad".'
+  ],
+  examples: [
+    { es: 'La empresa actualizó su plataforma la semana pasada.', en: 'The company updated its platform last week.' },
+    { es: 'Hasta la fecha, nadie ha reclamado el premio.', en: 'To date, no one has claimed the prize.' },
+    { es: 'Le costaba ponerse al día después de las vacaciones.', en: 'He struggled to catch up after the holidays.' }
+  ],
+  probes: [
+    { id: 'p:localizacionpresenteC1:hastalafecha', kind: 'mcq', q: '"Hasta la fecha, no hay confirmación." ¿Qué implica esta locución?', options: ['Una afirmación definitiva e inamovible', 'Algo válido solo hasta ahora, que podría cambiar', 'Que nunca habrá confirmación'], answer: 1 },
+    { id: 'p:localizacionpresenteC1:actualidad', kind: 'mcq', q: '¿Qué diferencia hay entre "actualidad" y "modernidad"?', options: ['Ninguna', 'Actualidad es lo que ocurre ahora; modernidad es estar acorde con los tiempos actuales', 'Modernidad es más antigua'], answer: 1 },
+    { id: 'p:localizacionpresenteC1:cloze', kind: 'cloze', text: 'Le costó ponerse al ___ después de tantas semanas fuera. (tener la información más reciente)', accept: ['día'] },
+    { id: 'p:localizacionpresenteC1:recall', kind: 'recall', front: '¿Qué tienen en común "de momento", "hasta el momento" y "hasta la fecha"?', back: 'las tres introducen una afirmación válida solo hasta el presente, dejando abierta la posibilidad de cambio' }
+  ]
+},
+
+{
+  id: 'nt-localizacion-pasado-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:697', 'nociones_generales:C1:698', 'nociones_generales:C1:699', 'nociones_generales:C1:700',
+         'nociones_generales:C1:701', 'nociones_generales:C1:702', 'nociones_generales:C1:703', 'nociones_generales:C1:704',
+         'nociones_generales:C1:705', 'nociones_generales:C1:706', 'nociones_generales:C1:707', 'nociones_generales:C1:708', 'nociones_generales:C1:709'],
+  title: 'Localizar en el pasado en C1: eras, herencia y "en tiempos de"',
+  summary: 'Situar algo en el pasado en C1 va desde lo remotísimo ("arcaico") hasta lo simplemente pasado de moda ("anticuado"), pasando por el presente histórico que narra hechos antiguos como si ocurrieran ahora mismo — un recurso narrativo muy distintivo del español.',
+  sections: [
+    { h: 'Nuestra era frente a otras épocas', html: '<i>En/de nuestra era/nuestros días</i> sitúa algo en el presente amplio, en contraste con el pasado: <i>el estrés es uno de los males de nuestros días</i>. <i>En esta era</i> introduce una caracterización de la época actual: <i>en esta era de globalización...</i>.' },
+    { h: 'Vocabulario de lo antiguo', html: '<i>Antigüedad</i> es el sustantivo general. <i>Herencia</i> es lo que el pasado transmite al presente: <i>una herencia cultural</i>. <i>Días/meses/años/tiempo atrás</i> sitúa algo en un pasado indefinido: <i>tiempo atrás, esto habría sido impensable</i>. <i>Remoto, arcaico</i> describen algo extremadamente antiguo: <i>un origen remoto, una costumbre arcaica</i>. <i>Anticuado</i> describe, en cambio, algo simplemente pasado de moda, no necesariamente muy antiguo.' },
+    { h: 'El pasado como fuente de emoción o ruptura', html: '<i>Traer recuerdos</i> es evocar el pasado emocionalmente: <i>aquella música me trajo recuerdos de mi juventud</i>. <i>Romper con el pasado/la tradición</i> es cortar deliberadamente con lo heredado.' },
+    { h: 'Situar algo en una época concreta', html: '<i>En otros tiempos</i> introduce una época pasada genérica: <i>en otros tiempos no se hablaba de estos temas</i>. <i>En (el/los) tiempo(s) de</i> sitúa algo en una época asociada a alguien o algo concreto: <i>en los tiempos de mis abuelos</i>. <i>En la época de</i> hace lo mismo con un periodo histórico nombrado: <i>en la época de la posguerra</i>.' },
+    { h: 'El presente histórico', html: 'Narrar hechos pasados en presente da inmediatez al relato, un recurso muy frecuente en biografías y textos históricos: <i>Picasso nace en 1881 y muere en 1973</i>.' }
+  ],
+  exponents: [
+    { es: 'Esa costumbre es de origen remoto, casi imposible de datar.', en: 'That custom has remote origins, almost impossible to date.', register: 'formal' },
+    { es: 'Cervantes escribe el Quijote a principios del siglo XVII.', en: 'Cervantes writes Don Quixote in the early 17th century.', register: 'neutral' },
+    { es: 'Aquel olor le trajo recuerdos de la infancia.', en: 'That smell brought back memories of his childhood.', register: 'neutral' },
+    { es: 'Decidió romper con la tradición familiar.', en: 'He decided to break with family tradition.', register: 'neutral' },
+    { es: 'En tiempos de mis bisabuelos, la vida era muy distinta.', en: 'In my great-grandparents\' time, life was very different.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Una costumbre arcaica, casi olvidada.', en: 'An archaic custom, almost forgotten.', note: 'extremadamente antigua' },
+    { es: 'Un aparato anticuado, ya fuera de uso.', en: 'An outdated device, no longer in use.', note: 'simplemente pasado de moda, no necesariamente muy antiguo' }
+  ],
+  pitfalls: [
+    '"Arcaico/remoto" describen algo extremadamente antiguo en el tiempo; "anticuado" describe algo simplemente pasado de moda, que puede ser bastante reciente.',
+    'El presente histórico no cambia el tiempo real del suceso — sigue siendo pasado, solo se narra en presente para dar inmediatez.',
+    '"En tiempos de" necesita un referente concreto (una persona, un grupo, una institución) — "en otros tiempos" es más genérico y no lo necesita.'
+  ],
+  examples: [
+    { es: 'La herencia romana está presente en toda la región.', en: 'Roman heritage is present throughout the region.' },
+    { es: 'En la época de la dictadura, la censura era constante.', en: 'During the dictatorship, censorship was constant.' },
+    { es: 'Aquel método ya resulta anticuado frente a las nuevas técnicas.', en: 'That method already seems outdated compared to the new techniques.' }
+  ],
+  probes: [
+    { id: 'p:localizacionpasadoC1:arcaicoanticuado', kind: 'mcq', q: '¿Qué diferencia hay entre "arcaico" y "anticuado"?', options: ['Ninguna', 'Arcaico es extremadamente antiguo; anticuado es solo pasado de moda', 'Anticuado es más antiguo'], answer: 1 },
+    { id: 'p:localizacionpasadoC1:presentehistorico', kind: 'mcq', q: '"Picasso nace en 1881." ¿Qué tiempo real tiene el suceso?', options: ['Presente, ocurre ahora', 'Pasado, narrado en presente para dar inmediatez', 'Futuro'], answer: 1 },
+    { id: 'p:localizacionpasadoC1:cloze', kind: 'cloze', text: 'Esa canción le ___ recuerdos de su adolescencia. (evocar el pasado emocionalmente)', accept: ['trajo', 'trae'] },
+    { id: 'p:localizacionpasadoC1:recall', kind: 'recall', front: '¿Qué necesita "en tiempos de" que "en otros tiempos" no necesita?', back: 'un referente concreto (una persona, un grupo, una institución)' }
+  ]
+},
+
+{
+  id: 'nt-localizacion-futuro-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:710', 'nociones_generales:C1:711', 'nociones_generales:C1:712', 'nociones_generales:C1:713',
+         'nociones_generales:C1:714', 'nociones_generales:C1:715', 'nociones_generales:C1:716', 'nociones_generales:C1:717',
+         'nociones_generales:C1:718', 'nociones_generales:C1:719', 'nociones_generales:C1:720', 'nociones_generales:C1:721'],
+  title: 'Localizar en el futuro en C1: "de un momento a otro" y "a la larga"',
+  summary: 'El futuro se describe en C1 con matices de plazo muy distintos — "de un momento a otro" es inminente, "a la larga" es a muy largo plazo — y con locuciones que combinan la idea de tiempo con la de expectativa: "tener el futuro por delante", "lo mejor está por llegar".',
+  sections: [
+    { h: 'Sustantivos del futuro', html: '<i>Porvenir</i> es un sinónimo formal/literario de "futuro". <i>(Pre)visión de futuro</i> es la capacidad de anticipar lo que vendrá. <i>Futuro incierto/prometedor/inmediato</i> gradúan el tipo de futuro que se espera.' },
+    { h: 'Estar a la espera de algo futuro', html: '<i>(Estar) pendiente de</i> es esperar una confirmación o resolución futura: <i>pendiente de confirmación</i>. <i>Haber/estar/quedar por</i> señala algo que todavía no ha ocurrido pero se espera: <i>hay un montón de trabajo por hacer</i>, <i>lo mejor está por llegar</i>.' },
+    { h: 'Actitud ante el futuro', html: '<i>Mirar al futuro/mirar hacia el futuro</i> es adoptar una actitud orientada a lo que viene. <i>Tener (todo) el futuro por delante</i> describe a alguien con muchas posibilidades futuras aún abiertas, típicamente por su juventud.' },
+    { h: 'Plazos: de lo inmediato a lo lejano', html: '<i>A la larga</i> introduce una consecuencia a largo plazo: <i>a la larga se pueden producir efectos no deseados</i>. <i>A partir de este momento</i> marca el inicio de una nueva situación: <i>a partir de este momento tendrás que actuar con más cuidado</i>. <i>De un momento a otro</i> señala inminencia: <i>llamará de un momento a otro</i>. <i>De ahora/de hoy en adelante</i> es equivalente a "a partir de ahora". <i>De aquí a la semana/el mes/el año que viene</i> sitúa algo en un futuro concreto y cercano.' }
+  ],
+  exponents: [
+    { es: 'Llamará de un momento a otro, no te vayas.', en: "He'll call any minute now, don't leave.", register: 'coloquial' },
+    { es: 'A la larga, esta decisión saldrá cara.', en: 'In the long run, this decision will cost dearly.', register: 'neutral' },
+    { es: 'De ahora en adelante, revisaremos los informes cada semana.', en: 'From now on, we\'ll review the reports every week.', register: 'formal' },
+    { es: 'Tiene toda la vida por delante para decidir qué hacer.', en: 'He has his whole life ahead of him to decide what to do.', register: 'neutral' },
+    { es: 'El proyecto sigue pendiente de aprobación.', en: 'The project is still pending approval.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'De un momento a otro llegará la respuesta.', en: 'The answer will arrive any moment now.', note: 'inminencia, plazo muy corto' },
+    { es: 'A la larga, la respuesta acabará llegando.', en: 'In the long run, the answer will eventually arrive.', note: 'plazo largo, sin urgencia' }
+  ],
+  pitfalls: [
+    '"De un momento a otro" y "a la larga" están en extremos opuestos de plazo — el primero es inminente, el segundo es a largo plazo, y confundirlos invierte completamente la urgencia de la frase.',
+    '"Haber/estar/quedar por" + infinitivo señala algo pendiente de ocurrir, no algo ya en curso — "lo mejor está por llegar" significa que lo mejor todavía no ha llegado.',
+    '"Porvenir" pertenece a un registro más formal o literario que "futuro" — no se usa con la misma naturalidad en contextos coloquiales cotidianos.'
+  ],
+  examples: [
+    { es: 'Su porvenir profesional parece prometedor.', en: 'His professional future looks promising.' },
+    { es: 'A partir de este momento, nada volverá a ser igual.', en: 'From this moment on, nothing will be the same again.' },
+    { es: 'De aquí al año que viene, esperamos duplicar las ventas.', en: 'By next year, we expect to double sales.' }
+  ],
+  probes: [
+    { id: 'p:localizacionfuturoC1:plazo', kind: 'mcq', q: '¿Cuál indica un plazo más corto?', options: ['A la larga', 'De un momento a otro', 'Con el tiempo'], answer: 1 },
+    { id: 'p:localizacionfuturoC1:estarpor', kind: 'mcq', q: '"Lo mejor está por llegar." ¿Qué significa?', options: ['Lo mejor ya pasó', 'Lo mejor todavía no ha ocurrido', 'Lo mejor nunca llegará'], answer: 1 },
+    { id: 'p:localizacionfuturoC1:cloze', kind: 'cloze', text: 'El informe sigue ___ de revisión final. (a la espera de algo futuro)', accept: ['pendiente'] },
+    { id: 'p:localizacionfuturoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "de un momento a otro" y "a la larga"?', back: '"de un momento a otro" indica inminencia; "a la larga" indica un plazo largo, sin urgencia' }
+  ]
 }
 
 ];
