@@ -22808,6 +22808,76 @@ window.STRAND_LESSONS = [
     { id: 'p:subadjetivasC1:cloze', kind: 'cloze', text: 'Di ___ quieras, no hay límite. (relativo cuantificador, "todo lo que")', accept: ['cuanto'] },
     { id: 'p:subadjetivasC1:recall', kind: 'recall', front: '¿Qué distingue "el que me llamó y me dijo todo fue Pepe" de "el que me llamó y el que me dijo todo no son la misma persona"?', back: 'la repetición del relativo indica que se trata de dos referentes distintos, no de uno solo' }
   ]
+},
+
+{
+  id: 'gr-sub-adv-temporales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:719', 'gramatica:C1:721', 'gramatica:C1:723', 'gramatica:C1:724', 'gramatica:C1:727',
+         'gramatica:C1:730', 'gramatica:C1:732', 'gramatica:C1:733', 'gramatica:C1:734', 'gramatica:C1:735',
+         'gramatica:C1:737', 'gramatica:C1:739', 'gramatica:C1:740'],
+  title: 'Subordinadas temporales en C1: "antes de" hiperbólico y el filo entre "cuando" y "mientras"',
+  summary: '"Antes de" no siempre marca anterioridad real — puede negar que algo llegue a ocurrir, expresar una preferencia exagerada, o medir lo improbable de un hecho comparándolo con otro aún más raro. Y "cuando" y "mientras", que parecen intercambiables, tienen cada uno restricciones sintácticas propias que delatan al hablante no nativo cuando se cruzan.',
+  sections: [
+    { h: '"Antes de" + infinitivo: tres lecturas, no una', html: '<i>Se fue antes de gritar a alguien</i> implica que ese grito no llegó a producirse en absoluto — irrealización total. <i>Antes de volver con él voy a la Luna</i> ordena dos hechos vistos negativamente, prefiriendo el más extremo (ir a la Luna) al otro (volver con él). <i>Antes de sacar el carné de conducir me saldrán canas</i> mide la improbabilidad de un hecho comparándolo con otro aún más lejano o extraño. La negación bloquea la lectura de irrealización total: <i>él no se acostó antes de que tú llegaras</i> es normal (hecho real, negado), pero <i>*no se fue antes de gritar a alguien</i>, buscando negar la irrealización, no funciona.' },
+    { h: 'Posterioridad: subjuntivo con sujetos distintos', html: '<i>Después de que</i> + presente de subjuntivo, en coordenadas de presente o futuro, exige referencia disjunta entre los sujetos y da lugar a una interpretación no factual: <i>después de que terminemos este proyecto presentaré mi dimisión</i> (el proyecto aún no ha terminado). "Tras" + infinitivo (simple o compuesto) admite tanto correferencia como sujetos distintos, sin esa restricción.' },
+    { h: '"Cuando" y "mientras": no son intercambiables', html: '"Cuando" puede preceder a un sustantivo eventivo en la lengua hablada, siempre que remita a un momento anterior al habla: <i>cuando la guerra</i> es correcto, pero <i>*iré cuando la próxima reunión</i>, con un evento futuro, no lo es. "Mientras" incluye el momento del habla cuando se combina con "estar + gerundio", y "cuando" no: <i>estoy descansando mientras él cocina</i> es normal, pero <i>*estoy descansando cuando él cocina</i> no funciona igual. A la inversa, "cuando" admite un sintagma nominal escueto detrás y "mientras" no: <i>cuando el accidente, no me enteré de nada</i> frente a <i>*mientras el accidente...</i>. "Mientras" + subjuntivo también puede leerse como condicional, no solo temporal: <i>me quedaré, mientras haya dinero suficiente</i> ("mientras" ≈ "siempre que").' },
+    { h: 'Progresión paralela: "a medida que" con indicativo o subjuntivo', html: '<i>A medida que, conforme, según</i> aceptan indicativo cuando la progresión se presenta como un hecho real en curso, y subjuntivo cuando se proyecta hacia el futuro o se generaliza: <i>a medida que vas leyendo te vas dando cuenta</i> (constatación) frente a <i>a medida que vayas leyendo te irás dando cuenta</i> (proyección).' },
+    { h: 'Negación expletiva y restricciones con "solo"', html: 'Con conectores de delimitación como <i>desde que, hasta que</i>, aparece a veces una negación sin valor negativo real, puramente expletiva: <i>hasta que no vengas, no empezamos</i> no significa que haya que evitar que vengas. El intensificador "solo" funciona con el "cuando" restrictivo (<i>avísame solo cuando te lo diga</i>) pero no con el "cuando" narrativo de interrupción brusca: <i>*estaba durmiendo solo cuando me di cuenta de que no estabas</i>. Ese mismo "cuando" de interrupción no puede responder a una pregunta con "¿cuándo?": frente a <i>¿cuándo supiste que ya no te quería? — cuando dejó de hablarme</i> (correcto), <i>¿cuándo estabas durmiendo tranquilamente? — cuando de pronto sonó una explosión</i> no funciona como respuesta a ese tipo de pregunta.' }
+  ],
+  contrasts: [
+    { es: 'Antes de perder los nervios, prefiero callarme.', en: "I'd rather stay quiet than lose my temper.", note: '"antes de" ordenando dos hechos negativos por preferencia' },
+    { es: 'Estoy cenando mientras ella trabaja. / *Estoy cenando cuando ella trabaja.', en: "I'm having dinner while she works.", note: '"mientras" incluye el momento del habla con "estar + gerundio"; "cuando" no funciona igual aquí' },
+    { es: 'Conforme pasan los años, se vuelve más paciente.', en: 'As the years go by, he becomes more patient.', note: 'indicativo — progresión presentada como hecho real' },
+    { es: 'Hasta que no me lo confirmes, no puedo avisar a nadie.', en: "Until you confirm it to me, I can't tell anyone.", note: 'negación expletiva, sin valor negativo real' }
+  ],
+  pitfalls: [
+    '"Antes de" + infinitivo no siempre marca simple anterioridad — puede indicar que la acción del infinitivo nunca llegó a ocurrir, y negar la frase entera para intentar cancelar esa lectura produce agramaticalidad.',
+    '"Cuando" y "mientras" no son sustituibles punto por punto: cada uno tiene restricciones propias con sustantivos escuetos y con la perífrasis "estar + gerundio".',
+    'La negación en <i>hasta que no vengas</i> no siempre es una negación real — puede ser puramente expletiva, y traducirla literalmente invierte el sentido de la frase.'
+  ],
+  examples: [
+    { es: 'Antes de rendirme, lo intentaré mil veces más.', en: "Before giving up, I'll try a thousand more times." },
+    { es: 'Después de que se vayan todos, podremos hablar tranquilamente.', en: "After everyone leaves, we'll be able to talk in peace." },
+    { es: 'A medida que avance la investigación, iremos informando.', en: 'As the investigation progresses, we will keep informing.' }
+  ],
+  probes: [
+    { id: 'p:subadvtemporalesC1:antesde', kind: 'mcq', q: '"Antes de sacar el carné de conducir me saldrán canas." ¿Qué expresa?', options: ['Una secuencia temporal normal', 'Que sacar el carné es tan improbable como otro hecho absurdo', 'Que ya sacó el carné'], answer: 1 },
+    { id: 'p:subadvtemporalesC1:cuandomientras', kind: 'mcq', q: '¿Cuál es agramatical?', options: ['Cuando el accidente, no me enteré de nada.', 'Mientras el accidente, no me enteré de nada.', 'Estoy descansando mientras él cocina.'], answer: 1 },
+    { id: 'p:subadvtemporalesC1:cloze', kind: 'cloze', text: 'Hasta que no me lo ___, no puedo avisar a nadie. (negación expletiva, sin valor negativo real)', accept: ['confirmes'] },
+    { id: 'p:subadvtemporalesC1:recall', kind: 'recall', front: '¿Qué tipo de "cuando" no puede responder a una pregunta con "¿cuándo?"?', back: 'el "cuando" narrativo de interrupción brusca (p. ej. "cuando de pronto sonó una explosión")' }
+  ]
+},
+
+{
+  id: 'gr-sub-adv-lugar-modo-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:742', 'gramatica:C1:744', 'gramatica:C1:745', 'gramatica:C1:746'],
+  title: 'Subordinadas de lugar y de modo en C1: "para donde" y el matiz condicional de "como si"',
+  summary: 'Dos tipos de subordinadas adverbiales pequeñas pero con matices propios: "donde" combinado con preposiciones de dirección o de permanencia, sin necesidad de antecedente expreso, y "como si" + subjuntivo, que no solo compara sino que introduce un matiz condicional dentro de la comparación.',
+  sections: [
+    { h: 'De lugar: dirección y permanencia con "donde"', html: 'Con verbos de movimiento, "donde" se combina con una preposición direccional y no necesita antecedente expreso: <i>en el cruce tienes que ir para donde te indique la señal</i>. Con verbos que no son de movimiento, "donde" expresa estancia o permanencia, también sin antecedente, y alterna libremente con "en donde": <i>mandan donde pueden / mandan en donde pueden</i>.' },
+    { h: 'De modo: "como si" y su matiz condicional', html: '"Como" introduce subordinadas de modo con normalidad. "Como si" + subjuntivo va más allá de la simple comparación: expresa el modo de una acción mediante su semejanza con una acción hipotética, añadiendo un matiz condicional a la comparación: <i>hace como si no tuviera idea</i> (actúa de un modo comparable a como actuaría alguien que no tiene idea — y probablemente sí la tiene), <i>parece como si tuviera ganas de jugar</i>.' }
+  ],
+  contrasts: [
+    { es: 'Vete para donde te apetezca.', en: 'Go wherever you feel like.', note: '"para donde" + verbo de movimiento, sin antecedente expreso' },
+    { es: 'Se queda donde le mandan.', en: 'He stays wherever he\'s told to.', note: '"donde" de permanencia, con verbo que no es de movimiento' },
+    { es: 'Habla como si lo supiera todo.', en: 'He talks as if he knew everything.', note: '"como si" + subjuntivo, matiz condicional dentro de la comparación' }
+  ],
+  pitfalls: [
+    '"Donde" no necesita un antecedente expreso ni con verbos de movimiento (<i>ve para donde...</i>) ni con verbos de permanencia (<i>mandan donde...</i>) — funciona como relativo libre en ambos casos.',
+    '"Como si" no es una simple comparación: introduce un matiz condicional-hipotético, y siempre exige subjuntivo, nunca indicativo.',
+    '"Donde" y "en donde" alternan libremente en el valor de permanencia, sin que una forma sea más correcta que la otra.'
+  ],
+  examples: [
+    { es: 'Corre hacia donde lo llaman.', en: 'He runs toward wherever they call him.' },
+    { es: 'Se instaló donde pudo encontrar sitio.', en: 'He settled wherever he could find room.' },
+    { es: 'Actúa como si nada hubiera pasado.', en: 'He acts as if nothing had happened.' }
+  ],
+  probes: [
+    { id: 'p:subadvlugarmodoC1:donde', kind: 'mcq', q: '"Mandan donde pueden." ¿Qué tipo de valor tiene "donde" aquí?', options: ['Dirección de movimiento', 'Permanencia, con verbo que no es de movimiento', 'Ninguno de los dos'], answer: 1 },
+    { id: 'p:subadvlugarmodoC1:comosi', kind: 'mcq', q: '"Parece como si tuviera ganas de jugar." ¿Qué modo exige "como si"?', options: ['Indicativo', 'Subjuntivo', 'Cualquiera de los dos'], answer: 1 },
+    { id: 'p:subadvlugarmodoC1:cloze', kind: 'cloze', text: 'Hace ___ no supiera nada, pero se nota que sí sabe. ("como si" + subjuntivo)', accept: ['como si'] },
+    { id: 'p:subadvlugarmodoC1:recall', kind: 'recall', front: '¿Qué matiz añade "como si" además de la comparación?', back: 'un matiz condicional-hipotético: el modo se expresa mediante semejanza con una acción hipotética' }
+  ]
 }
 
 ];
