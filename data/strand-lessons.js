@@ -24050,6 +24050,133 @@ window.STRAND_LESSONS = [
     { id: 'p:distanciaC1:cloze', kind: 'cloze', text: 'El refugio se halla a escasa ___ de la costa. (cercanía mínima)', accept: ['distancia'] },
     { id: 'p:distanciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "próximo/vecino" y "distante/remoto"?', back: 'próximo/vecino expresan cercanía; distante/remoto expresan lejanía, con "remoto" en el extremo más alejado' }
   ]
+},
+
+{
+  id: 'nt-movimiento-estabilidad-sustantivos-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:559', 'nociones_generales:C1:560', 'nociones_generales:C1:561', 'nociones_generales:C1:562',
+         'nociones_generales:C1:563', 'nociones_generales:C1:564', 'nociones_generales:C1:565', 'nociones_generales:C1:566',
+         'nociones_generales:C1:567', 'nociones_generales:C1:568'],
+  title: 'Movimiento y estabilidad en C1: nombrar el tipo de movimiento',
+  summary: 'Antes de describir cómo se mueve algo, el español distingue el tipo exacto de movimiento — lineal, pendular, circular, giratorio, rítmico, intermitente o irregular — con una precisión que va mucho más allá de "moverse" o "estar quieto".',
+  sections: [
+    { h: 'Sustantivos de movimiento y de su ausencia', html: '<i>Inercia, inactividad</i> describen la falta de movimiento propio. <i>Desplazamiento, tránsito, travesía</i> son formas de movimiento de un punto a otro. <i>Avance, retroceso</i> son sus direcciones opuestas. <i>(In)movilidad, quietud, reposo</i> describen la ausencia total de movimiento. <i>Agitación, vibración</i> describen un movimiento pequeño y repetido.' },
+    { h: 'Calificar el movimiento por su ritmo', html: 'Un movimiento puede ser <i>brusco, pausado, incesante</i> — cada uno describe una cualidad temporal distinta.' },
+    { h: 'Calificar el movimiento por su trayectoria', html: 'Un movimiento puede ser <i>lineal, pendular, circular, giratorio, rítmico, intermitente, irregular</i> — cada adjetivo describe una forma de trayectoria distinta, esencial en descripciones técnicas o científicas. <i>Movimiento migratorio</i> es específico del desplazamiento de personas o animales entre regiones.' },
+    { h: 'Adjetivos de estado: inmóvil y agitado', html: '<i>Inmóvil, estático</i> describen algo sin movimiento. <i>Agitado, cambiante</i> describen, al contrario, algo en movimiento constante o que cambia continuamente.' }
+  ],
+  exponents: [
+    { es: 'El péndulo tiene un movimiento pendular constante.', en: 'The pendulum has a constant back-and-forth motion.', register: 'formal' },
+    { es: 'El mar estaba agitado esa tarde.', en: 'The sea was rough that afternoon.', register: 'neutral' },
+    { es: 'Se quedó completamente inmóvil al oír el ruido.', en: 'He froze completely still when he heard the noise.', register: 'neutral' },
+    { es: 'El movimiento migratorio hacia las ciudades no ha cesado.', en: 'Migration toward cities has not stopped.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un movimiento pausado, casi imperceptible.', en: 'A slow, almost imperceptible movement.', note: 'ritmo lento' },
+    { es: 'Un movimiento brusco, que sobresaltó a todos.', en: 'A sudden movement that startled everyone.', note: 'ritmo rápido y repentino' }
+  ],
+  pitfalls: [
+    '"Estático" e "inmóvil" no son intercambiables en todos los contextos: "estático" se usa más en física y descripciones técnicas, "inmóvil" es de uso más general.',
+    'Los adjetivos de trayectoria (lineal, pendular, circular, giratorio...) describen la FORMA del movimiento, no su velocidad ni su intensidad — no deben confundirse con "brusco/pausado/incesante".',
+    '"Movimiento migratorio" no se aplica a cualquier desplazamiento — se reserva para movimientos de población entre regiones o países.'
+  ],
+  examples: [
+    { es: 'La rueda gira con un movimiento circular constante.', en: 'The wheel spins with a constant circular motion.' },
+    { es: 'El barco permaneció en calma total, sin la menor vibración.', en: 'The ship remained completely calm, without the slightest vibration.' },
+    { es: 'Su estado de ánimo era tan cambiante como el clima.', en: 'His mood was as changeable as the weather.' }
+  ],
+  probes: [
+    { id: 'p:movimientoestabilidadsustantivosC1:tipo', kind: 'mcq', q: '¿Qué describe un adjetivo como "pendular" o "circular"?', options: ['La velocidad del movimiento', 'La forma de la trayectoria', 'La intensidad del sonido'], answer: 1 },
+    { id: 'p:movimientoestabilidadsustantivosC1:migratorio', kind: 'mcq', q: '¿A qué se aplica "movimiento migratorio"?', options: ['A cualquier desplazamiento breve', 'Al desplazamiento de población entre regiones/países', 'Solo al movimiento de animales'], answer: 1 },
+    { id: 'p:movimientoestabilidadsustantivosC1:cloze', kind: 'cloze', text: 'El mar estaba muy ___ esa tarde, con olas grandes. (movimiento constante, agitación)', accept: ['agitado'] },
+    { id: 'p:movimientoestabilidadsustantivosC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "avance" y "retroceso"?', back: 'son direcciones opuestas de movimiento: hacia adelante frente a hacia atrás' }
+  ]
+},
+
+{
+  id: 'nt-movimiento-verbos-especificos-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:569', 'nociones_generales:C1:570', 'nociones_generales:C1:571', 'nociones_generales:C1:572',
+         'nociones_generales:C1:573', 'nociones_generales:C1:574', 'nociones_generales:C1:575', 'nociones_generales:C1:576',
+         'nociones_generales:C1:577', 'nociones_generales:C1:578', 'nociones_generales:C1:579', 'nociones_generales:C1:580', 'nociones_generales:C1:581'],
+  title: 'Verbos de movimiento en C1: de "vagar" a "tambalearse"',
+  summary: 'Un catálogo de verbos de movimiento muy específicos — vagar sin rumbo no es lo mismo que desfilar en formación, ni "zambullirse" es lo mismo que "deslizarse" — cada uno reservado para un tipo de desplazamiento reconocible.',
+  sections: [
+    { h: 'Verbos de dirección vertical y de formación', html: '<i>Ascender, descender</i> son los verbos formales para subir y bajar. <i>Desfilar, marchar</i> describen un movimiento colectivo y ordenado, típico de un desfile militar o una manifestación.' },
+    { h: 'Verbos de movimiento errático o brusco', html: '<i>Salir corriendo</i> es un escape repentino. <i>Vagar</i> es moverse sin rumbo ni destino fijo. <i>Cabalgar</i> es moverse a caballo.' },
+    { h: 'Verbos de desplazamiento y de balanceo', html: '<i>Desplazar(se), encaminar(se)</i> son los verbos generales de moverse de un lugar a otro, con "encaminarse" implicando dirección hacia un destino. <i>Mecer(se), columpiar(se)</i> describen un balanceo suave y rítmico.' },
+    { h: 'Verbos de impulso e inmersión', html: '<i>Impulsar, emprender</i> tienen tanto sentido físico como figurado: <i>impulsar una iniciativa, emprender un negocio</i>. <i>Adentrar(se) en, zambullir(se) en, arrojar(se) a, deslizar(se)</i> describen distintos modos de entrar en un espacio o iniciar una acción: zambullirse implica inmersión súbita, deslizarse un movimiento suave y continuo.' },
+    { h: 'Verbos de elevación, agitación e inestabilidad', html: '<i>Elevar(se)</i> es subir en altura. <i>Agitar</i> es mover algo con energía, normalmente de un lado a otro. <i>Tambalearse</i> es moverse de forma inestable, a punto de caer. <i>Rodear, atajar</i> describen las dos estrategias opuestas para llegar a un destino: dando la vuelta o acortando camino.' }
+  ],
+  exponents: [
+    { es: 'El globo se elevó lentamente sobre el valle.', en: 'The balloon slowly rose over the valley.', register: 'neutral' },
+    { es: 'Vagó por la ciudad durante horas sin rumbo fijo.', en: 'He wandered the city for hours with no fixed destination.', register: 'neutral' },
+    { es: 'El edificio se tambaleó durante el terremoto.', en: 'The building swayed unsteadily during the earthquake.', register: 'neutral' },
+    { es: 'Decidieron emprender el viaje sin más demora.', en: 'They decided to set off on the trip without further delay.', register: 'formal' },
+    { es: 'Los soldados desfilaron por la avenida principal.', en: 'The soldiers marched down the main avenue.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Se zambulló en la piscina de un salto.', en: 'He plunged into the pool with a jump.', note: 'inmersión súbita' },
+    { es: 'Se deslizó suavemente por el tobogán.', en: 'He slid smoothly down the slide.', note: 'movimiento suave y continuo' }
+  ],
+  pitfalls: [
+    '"Vagar" implica ausencia de rumbo o propósito — no es un simple sinónimo de "caminar" o "pasear", que pueden tener un destino claro.',
+    '"Tambalearse" implica inestabilidad y riesgo de caída — no describe un balanceo suave y controlado como "mecerse" o "columpiarse".',
+    '"Rodear" y "atajar" son estrategias opuestas para llegar a un destino: rodear implica un camino más largo mediante un rodeo, atajar implica acortarlo.'
+  ],
+  examples: [
+    { es: 'El bebé se durmió mientras lo mecían en la cuna.', en: 'The baby fell asleep while being rocked in the crib.' },
+    { es: 'Prefirió atajar por el bosque para llegar antes.', en: 'He chose to take a shortcut through the forest to arrive sooner.' },
+    { es: 'La bandera se agitaba con fuerza por el viento.', en: 'The flag was fluttering fiercely in the wind.' }
+  ],
+  probes: [
+    { id: 'p:movimientoverbosespecificosC1:vagar', kind: 'mcq', q: '¿Qué implica "vagar" que no implica "caminar"?', options: ['Rapidez', 'Ausencia de rumbo o propósito', 'Movimiento en grupo'], answer: 1 },
+    { id: 'p:movimientoverbosespecificosC1:rodearatajar', kind: 'mcq', q: '¿Qué diferencia hay entre "rodear" y "atajar"?', options: ['Ninguna, son sinónimos', 'Rodear alarga el camino; atajar lo acorta', 'Atajar siempre implica peligro'], answer: 1 },
+    { id: 'p:movimientoverbosespecificosC1:cloze', kind: 'cloze', text: 'El edificio se ___ peligrosamente durante el terremoto. (inestabilidad, riesgo de caer)', accept: ['tambaleó'] },
+    { id: 'p:movimientoverbosespecificosC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "zambullirse" y "deslizarse"?', back: 'zambullirse implica una inmersión súbita; deslizarse, un movimiento suave y continuo' }
+  ]
+},
+
+{
+  id: 'nt-movimiento-locuciones-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:582', 'nociones_generales:C1:583', 'nociones_generales:C1:584', 'nociones_generales:C1:585',
+         'nociones_generales:C1:586', 'nociones_generales:C1:587', 'nociones_generales:C1:588', 'nociones_generales:C1:589',
+         'nociones_generales:C1:590', 'nociones_generales:C1:591', 'nociones_generales:C1:592', 'nociones_generales:C1:593', 'nociones_generales:C1:594'],
+  title: 'Locuciones de movimiento en C1: de "dar marcha atrás" a "ir a la deriva"',
+  summary: 'El movimiento se controla, se inicia y se detiene con locuciones muy visuales: "poner en marcha" arranca algo, "parar en seco" lo detiene de golpe, y entre ambos hay todo un vocabulario para andar de puntillas, dar un rodeo o ir sin rumbo fijo.',
+  sections: [
+    { h: 'Iniciar, mantener y detener un movimiento', html: '<i>Hacer un movimiento</i> es la construcción neutra general. <i>Mantener el equilibrio</i> es lo contrario de tambalearse. <i>Poner(se) en marcha/en movimiento</i> es iniciar un desplazamiento; <i>en marcha, en movimiento, en reposo</i> son los estados correspondientes: <i>el coche está en marcha</i>. <i>Echar(se) a andar/a correr</i> es empezar a moverse de golpe. <i>Parar/frenar en seco</i> es detenerse bruscamente.' },
+    { h: 'Retroceder y cambiar de ruta', html: '<i>Dar marcha atrás</i> es retroceder, tanto literal como figuradamente (cambiar de decisión). <i>Coger un atajo, dar un rodeo</i> son las dos estrategias de ruta: acortar o alargar el camino.' },
+    { h: 'Interrumpir y maniobrar', html: '<i>Interrumpir la marcha/el paso</i> es detener un desplazamiento en curso: <i>interrumpir la marcha del tren, interrumpir el paso de los vehículos</i>. <i>Hacer un adelantamiento/una maniobra</i> son acciones típicas de la conducción.' },
+    { h: 'Modos de andar muy específicos', html: '<i>Andar a (la) pata coja</i> (con un solo pie) y <i>de puntillas</i> (sobre la punta de los pies, sigilosamente) describen formas de caminar muy concretas. <i>Bailar/caminar/moverse al compás/al ritmo de</i> es sincronizar el movimiento con una música o un ritmo externo.' },
+    { h: 'Movimiento sin dirección clara', html: '<i>Ir/andar/navegar a la deriva/sin rumbo (fijo)</i> describe un movimiento sin control ni dirección definida, tanto literal (un barco) como figurado (una vida, un proyecto sin objetivo claro).' }
+  ],
+  exponents: [
+    { es: 'El coche frenó en seco para no atropellar al perro.', en: 'The car braked sharply to avoid hitting the dog.', register: 'neutral' },
+    { es: 'Al final tuvo que dar marcha atrás con su decisión.', en: 'In the end he had to backtrack on his decision.', register: 'neutral' },
+    { es: 'Entró de puntillas para no despertar a nadie.', en: 'He tiptoed in so as not to wake anyone.', register: 'neutral' },
+    { es: 'La empresa lleva meses sin rumbo fijo.', en: 'The company has been directionless for months.', register: 'formal' },
+    { es: 'El tren se puso en marcha con un ligero retraso.', en: 'The train set off with a slight delay.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Cogió un atajo para llegar antes.', en: 'He took a shortcut to arrive sooner.', note: 'ruta más corta' },
+    { es: 'Dio un rodeo para evitar el atasco.', en: 'He took a roundabout route to avoid the traffic jam.', note: 'ruta más larga, deliberadamente' }
+  ],
+  pitfalls: [
+    '"Dar marcha atrás" no es solo literal (un vehículo) — se usa constantemente en sentido figurado para cambiar de decisión o retractarse.',
+    '"Ir a la deriva" y "andar sin rumbo fijo" describen ausencia de control o dirección, no simplemente "moverse despacio" — el matiz es de descontrol, no de lentitud.',
+    '"Parar/frenar en seco" implica una detención brusca e inmediata — no describe una desaceleración gradual.'
+  ],
+  examples: [
+    { es: 'El barco navegaba a la deriva tras la tormenta.', en: 'The ship drifted after the storm.' },
+    { es: 'Tuvo que hacer un adelantamiento arriesgado en la autopista.', en: 'He had to make a risky overtake on the highway.' },
+    { es: 'Bailaban al ritmo de la música sin parar.', en: 'They danced to the rhythm of the music without stopping.' }
+  ],
+  probes: [
+    { id: 'p:movimientolocucionesC1:marchaatras', kind: 'mcq', q: '"Dar marcha atrás con la decisión" significa...', options: ['Conducir hacia atrás literalmente', 'Cambiar de decisión, retractarse', 'Acelerar'], answer: 1 },
+    { id: 'p:movimientolocucionesC1:atajorodeo', kind: 'mcq', q: '¿Qué diferencia hay entre "coger un atajo" y "dar un rodeo"?', options: ['Ninguna', 'El atajo acorta el camino; el rodeo lo alarga', 'El rodeo siempre es más rápido'], answer: 1 },
+    { id: 'p:movimientolocucionesC1:cloze', kind: 'cloze', text: 'El coche ___ en seco para evitar el choque. (detención brusca e inmediata)', accept: ['frenó', 'paró'] },
+    { id: 'p:movimientolocucionesC1:recall', kind: 'recall', front: '¿Qué matiz tiene "ir a la deriva" además del literal (un barco)?', back: 'un sentido figurado: ausencia de control o dirección clara (una vida, un proyecto sin rumbo)' }
+  ]
 }
 
 ];
