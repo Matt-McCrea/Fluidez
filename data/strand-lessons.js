@@ -25145,6 +25145,90 @@ window.STRAND_LESSONS = [
     { id: 'p:consistenciaresistenciaC1:cloze', kind: 'cloze', text: 'Este puente puede ___ cargas de hasta cien toneladas. (resistir una condición extrema)', accept: ['soportar'] },
     { id: 'p:consistenciaresistenciaC1:recall', kind: 'recall', front: '¿Qué significa "adquirir consistencia" aplicado a un material?', back: 'ganar solidez con el tiempo, típicamente al enfriarse o secarse' }
   ]
+},
+
+{
+  id: 'nt-textura-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1126', 'nociones_generales:C1:1127', 'nociones_generales:C1:1128', 'nociones_generales:C1:1129',
+         'nociones_generales:C1:1130', 'nociones_generales:C1:1131', 'nociones_generales:C1:1132', 'nociones_generales:C1:1133', 'nociones_generales:C1:1134'],
+  title: 'Textura en C1: rugoso, sedoso y "al tacto"',
+  summary: 'Describir cómo se siente una superficie al tocarla exige un vocabulario muy específico en español — resbaladizo no es lo mismo que pegajoso, aceitoso no es lo mismo que jabonoso — y la locución "al tacto" precisa que la valoración viene de tocar, no de mirar.',
+  sections: [
+    { h: 'Lo táctil en general', html: '<i>Táctil</i> es el adjetivo general para lo relacionado con el tacto. <i>Sentir/comprobar la textura</i> es la construcción para describir el acto de percibir esa cualidad.' },
+    { h: 'Texturas suaves y ásperas', html: '<i>Rugoso</i> (áspero, con relieve) frente a <i>sedoso</i> (suave como la seda). <i>Ondulado</i> describe una superficie con curvas suaves y repetidas: <i>una superficie ondulada</i>.' },
+    { h: 'Texturas untuosas y adherentes', html: '<i>Aceitoso, jabonoso, arenoso</i> describen texturas específicas por comparación con sustancias conocidas. <i>Resbaladizo</i> (que hace resbalar) frente a <i>pegajoso</i> (que se adhiere). <i>Adherente, adhesivo</i> describen la capacidad de pegarse a otra superficie.' },
+    { h: 'Texturas por el uso', html: '<i>Sobado, (des)gastado</i> describen una textura alterada por el uso repetido, típicamente más suave o deteriorada.' },
+    { h: '"Al tacto": precisando la fuente de la percepción', html: '<i>Al tacto</i> especifica que una cualidad se percibe tocando, no mirando: <i>es muy agradable al tacto</i>.' }
+  ],
+  exponents: [
+    { es: 'La tela es suave y sedosa al tacto.', en: 'The fabric is soft and silky to the touch.', register: 'neutral' },
+    { es: 'El suelo estaba resbaladizo por la lluvia.', en: 'The floor was slippery from the rain.', register: 'neutral' },
+    { es: 'Sus manos estaban ásperas y rugosas por el trabajo.', en: 'His hands were rough and coarse from work.', register: 'neutral' },
+    { es: 'El pomo de la puerta estaba pegajoso.', en: 'The doorknob was sticky.', register: 'coloquial' },
+    { es: 'El cuero del sillón está muy sobado por el uso.', en: 'The leather on the armchair is very worn from use.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Una superficie resbaladiza, difícil de pisar sin caerse.', en: 'A slippery surface, hard to walk on without falling.', note: 'hace resbalar' },
+    { es: 'Una superficie pegajosa, que se queda adherida a los dedos.', en: 'A sticky surface that clings to your fingers.', note: 'se adhiere al contacto' }
+  ],
+  pitfalls: [
+    '"Resbaladizo" y "pegajoso" describen efectos opuestos al tocar: uno hace deslizar, el otro hace que algo se adhiera — no son sinónimos de "húmedo" en general.',
+    '"Sobado/(des)gastado" implican un cambio de textura debido al USO repetido a lo largo del tiempo, no a la fabricación original del objeto.',
+    '"Al tacto" siempre precisa que la valoración viene del contacto físico, no de la vista — una superficie puede parecer suave a la vista y ser rugosa al tacto.'
+  ],
+  examples: [
+    { es: 'El papel de lija es muy rugoso al tacto.', en: 'Sandpaper is very rough to the touch.' },
+    { es: 'La crema deja la piel sedosa.', en: 'The cream leaves the skin silky.' },
+    { es: 'El pan viejo estaba duro y arenoso.', en: 'The old bread was hard and gritty.' }
+  ],
+  probes: [
+    { id: 'p:texturaC1:resbaladizopegajoso', kind: 'mcq', q: '¿Qué diferencia hay entre "resbaladizo" y "pegajoso"?', options: ['Ninguna', 'Resbaladizo hace deslizar; pegajoso se adhiere al contacto', 'Pegajoso es más peligroso'], answer: 1 },
+    { id: 'p:texturaC1:altacto', kind: 'mcq', q: '"Al tacto" especifica que la valoración viene de...', options: ['La vista', 'El contacto físico', 'El oído'], answer: 1 },
+    { id: 'p:texturaC1:cloze', kind: 'cloze', text: 'El sillón de cuero está muy ___ por el uso. (suavizado/desgastado por el uso repetido)', accept: ['sobado'] },
+    { id: 'p:texturaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "rugoso" y "sedoso"?', back: 'rugoso es áspero, con relieve; sedoso es suave como la seda' }
+  ]
+},
+
+{
+  id: 'nt-acabado-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1144', 'nociones_generales:C1:1145', 'nociones_generales:C1:1146', 'nociones_generales:C1:1147',
+         'nociones_generales:C1:1148', 'nociones_generales:C1:1149', 'nociones_generales:C1:1150', 'nociones_generales:C1:1151',
+         'nociones_generales:C1:1152', 'nociones_generales:C1:1153'],
+  title: 'Acabado en C1: de "en bruto" a "metalizado"',
+  summary: 'El acabado de un objeto se describe en C1 con un catálogo técnico de tratamientos superficiales — lijado, pulido, barnizado, forrado, tapizado — cada uno reservado para un material concreto, y con el contraste entre lo trabajado y lo dejado "al natural" o "en bruto".',
+  sections: [
+    { h: 'Sustantivos del acabado', html: '<i>Remate, acabado</i> son el resultado final del tratamiento de una superficie. <i>Forro</i> es el material que recubre algo por dentro o por fuera.' },
+    { h: 'Participios de tratamiento superficial', html: '<i>Lijado, pulido, barnizado</i> se aplican a madera y superficies duras; <i>forrado, empapelado, tapizado</i>, a superficies cubiertas con tela o papel. <i>Impermeabilizado, aislado</i> describen tratamientos funcionales contra el agua o la temperatura. <i>(Re)cubierto</i> es el participio general de cubrir algo. <i>Metalizado</i> describe un acabado con aspecto o capa de metal.' },
+    { h: 'Verbos de acabado', html: '<i>Rematar</i> es dar el toque final a algo. <i>Lijar, pulir, barnizar</i> son las acciones correspondientes a esos acabados de madera. <i>Forrar, empapelar, tapizar</i> son las acciones de cubrir con tela o papel.' },
+    { h: 'Sin tratar: "al natural" y "en bruto"', html: '<i>Al natural</i> describe algo sin ningún tratamiento añadido: <i>una madera al natural</i>. <i>En bruto</i> describe algo en su estado original, antes de cualquier proceso de refinado: <i>un diamante en bruto</i>.' }
+  ],
+  exponents: [
+    { es: 'El suelo quedó perfectamente lijado y barnizado.', en: 'The floor ended up perfectly sanded and varnished.', register: 'neutral' },
+    { es: 'El sofá está tapizado en un tejido resistente.', en: 'The sofa is upholstered in a durable fabric.', register: 'neutral' },
+    { es: 'Prefiere dejar la madera al natural, sin barnizar.', en: 'He prefers to leave the wood untreated, unvarnished.', register: 'neutral' },
+    { es: 'El coche tiene un acabado metalizado muy elegante.', en: 'The car has a very elegant metallic finish.', register: 'formal' },
+    { es: 'Compraron el diamante en bruto para tallarlo ellos mismos.', en: 'They bought the rough diamond to cut it themselves.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Una mesa de madera al natural, sin ningún tratamiento.', en: 'A table of untreated wood, with no finish at all.', note: 'sin ningún acabado añadido' },
+    { es: 'Una mesa lijada, pulida y barnizada.', en: 'A sanded, polished, and varnished table.', note: 'con un tratamiento completo de acabado' }
+  ],
+  pitfalls: [
+    '"Al natural" y "en bruto" no son intercambiables: "al natural" describe algo sin tratamiento añadido (aunque ya tenga su forma final), "en bruto" describe un estado previo a cualquier proceso de refinado o tallado.',
+    'Los verbos de acabado no son intercambiables entre materiales: "barnizar" se aplica a madera, "tapizar" a muebles con tela, "empapelar" a paredes — cada uno tiene su material propio.',
+    '"Impermeabilizado" y "aislado" son acabados funcionales (protegen contra agua o temperatura), no estéticos como "pulido" o "metalizado".'
+  ],
+  examples: [
+    { es: 'El artesano remató la pieza con un detalle dorado.', en: 'The craftsman finished the piece with a golden detail.' },
+    { es: 'Van a empapelar el salón con un diseño floral.', en: "They're going to wallpaper the living room with a floral design." },
+    { es: 'El techo quedó completamente aislado del frío.', en: 'The ceiling ended up completely insulated from the cold.' }
+  ],
+  probes: [
+    { id: 'p:acabadoC1:naturalbruto', kind: 'mcq', q: '¿Qué diferencia hay entre "al natural" y "en bruto"?', options: ['Ninguna', '"Al natural" es sin tratamiento añadido; "en bruto" es un estado previo a cualquier refinado', '"En bruto" es siempre más caro'], answer: 1 },
+    { id: 'p:acabadoC1:tapizarempapelar', kind: 'mcq', q: '¿Qué se tapiza y qué se empapela?', options: ['Se tapizan muebles con tela; se empapelan paredes', 'Ambos verbos son intercambiables', 'Se tapizan paredes'], answer: 0 },
+    { id: 'p:acabadoC1:cloze', kind: 'cloze', text: 'El coche tiene un acabado ___ muy elegante. (aspecto de metal)', accept: ['metalizado'] },
+    { id: 'p:acabadoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "impermeabilizado/aislado" y "pulido/metalizado"?', back: 'los primeros son acabados funcionales (contra agua o temperatura); los segundos son principalmente estéticos' }
+  ]
 }
 
 ];
