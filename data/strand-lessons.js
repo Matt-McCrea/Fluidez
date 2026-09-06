@@ -25314,6 +25314,51 @@ window.STRAND_LESSONS = [
     { id: 'p:materiaC1:cloze', kind: 'cloze', text: 'El anillo tiene un diamante engastado en ___. (metal precioso)', accept: ['platino'] },
     { id: 'p:materiaC1:recall', kind: 'recall', front: '¿Por qué se usa "cartón piedra" en escenografías teatrales?', back: 'porque es un material ligero y barato, pese a su nombre no está hecho de piedra' }
   ]
+},
+
+{
+  id: 'nt-visibilidad-vision-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1208', 'nociones_generales:C1:1209', 'nociones_generales:C1:1210', 'nociones_generales:C1:1211',
+         'nociones_generales:C1:1212', 'nociones_generales:C1:1213', 'nociones_generales:C1:1214', 'nociones_generales:C1:1215',
+         'nociones_generales:C1:1216', 'nociones_generales:C1:1217', 'nociones_generales:C1:1218', 'nociones_generales:C1:1219',
+         'nociones_generales:C1:1220', 'nociones_generales:C1:1221', 'nociones_generales:C1:1222', 'nociones_generales:C1:1223', 'nociones_generales:C1:1224'],
+  title: 'Visibilidad y visión en C1: "saltar a la vista" y "mirar por encima del hombro"',
+  summary: 'Ver algo en C1 no es solo un acto físico — "mirar por encima del hombro" implica desdén, "saltar a la vista" describe una evidencia inmediata, y "mirar para otro lado" es ignorar deliberadamente algo que sí se ha visto.',
+  sections: [
+    { h: 'Grados de visibilidad', html: '<i>Visibilidad buena/escasa/nula</i> gradúa cuánto se puede ver: <i>a la hora del accidente la visibilidad era prácticamente nula</i>. <i>Ojeada</i> es un vistazo rápido y superficial.' },
+    { h: 'Apariencia visual', html: '<i>Apariencia, pinta</i> describen cómo se ve algo o alguien, sin garantizar que coincida con la realidad: <i>tiene apariencia de intelectual, tiene pinta de estar cansada</i>. <i>Percepción/desarrollo/examen visual</i> es el vocabulario técnico de la visión.' },
+    { h: 'Calidad de la imagen', html: '<i>Visión/imagen panorámica/de conjunto</i> es una vista amplia. <i>Borroso, nítido</i> son los extremos de claridad de una imagen. <i>(Im)perceptible</i> describe si algo puede o no captarse por la vista: <i>un gesto imperceptible</i>.' },
+    { h: 'Verbos de mirar con intención', html: '<i>Contemplar, examinar, vigilar, espiar, notar(se), disimular</i> son formas de mirar con propósitos distintos: contemplar es admirar, examinar es analizar, vigilar y espiar implican control (con espiar de forma oculta), notarse es hacerse visible, disimular es ocultar deliberadamente algo a la vista: <i>contemplar el paisaje, examinar los resultados, notarse las marcas, disimular los defectos</i>.' },
+    { h: 'Verbos de perder o bloquear la visión', html: '<i>Oscurecer(se), nublar(se)</i> describen la pérdida de claridad visual. <i>Tapar, ocultar</i> son bloquear la vista de algo. <i>Recorrer con la vista/la mirada</i> es observar algo de un extremo a otro. <i>Perder de vista a alguien/algo</i> es dejar de poder ver algo que antes se veía.' },
+    { h: 'Locuciones de actitud al mirar', html: '<i>Mirar de arriba abajo</i> (con desdén o juicio), <i>con lupa</i> (con atención minuciosa), <i>por encima del hombro</i> (con desprecio). <i>Saltar a la vista</i> es ser evidente de inmediato. <i>Mirar para otro lado</i> es ignorar deliberadamente algo que sí se ha visto. <i>Con claridad, con dificultad</i> gradúan cómo se percibe algo: <i>en esta foto se aprecian con claridad los detalles del vestido</i>. <i>A la vista, a la luz</i> describen que algo es visible o se ha hecho público: <i>está a la vista de todos, ha salido a la luz</i>.' }
+  ],
+  exponents: [
+    { es: 'Su nerviosismo saltaba a la vista.', en: 'His nervousness was blatantly obvious.', register: 'neutral' },
+    { es: 'Prefirió mirar para otro lado y no intervenir.', en: 'He chose to look the other way and not get involved.', register: 'neutral' },
+    { es: 'La empresa examinó el contrato con lupa antes de firmarlo.', en: 'The company scrutinized the contract before signing it.', register: 'formal' },
+    { es: 'La verdad salió a la luz mucho tiempo después.', en: 'The truth came to light much later.', register: 'formal' },
+    { es: 'Le molesta que la miren por encima del hombro.', en: 'It bothers her when people look down on her.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Examinó el informe con atención.', en: 'He examined the report carefully.', note: 'observación analítica y neutra' },
+    { es: 'Lo espiaba sin que él se diera cuenta.', en: 'She spied on him without him noticing.', note: 'observación oculta, con intención de descubrir algo' }
+  ],
+  pitfalls: [
+    '"Mirar por encima del hombro" no describe una posición física literal — es una expresión fija que implica desprecio o sensación de superioridad.',
+    '"Mirar para otro lado" no es simplemente "no ver algo" — implica que sí se ha visto, pero se elige ignorarlo deliberadamente.',
+    '"Apariencia/pinta" describen cómo se ve algo, sin garantizar que la realidad coincida — no son sinónimos de "ser" en sentido pleno.'
+  ],
+  examples: [
+    { es: 'Contemplaron el atardecer en silencio.', en: 'They watched the sunset in silence.' },
+    { es: 'La niebla oscureció por completo la carretera.', en: 'The fog completely obscured the road.' },
+    { es: 'No pudo perder de vista al sospechoso.', en: "He couldn't lose sight of the suspect." }
+  ],
+  probes: [
+    { id: 'p:visibilidadvisionC1:porencimahombro', kind: 'mcq', q: '"Mirar por encima del hombro" implica...', options: ['Una posición física concreta', 'Desprecio o sensación de superioridad', 'Curiosidad neutra'], answer: 1 },
+    { id: 'p:visibilidadvisionC1:mirarparaotro', kind: 'mcq', q: '"Mirar para otro lado" implica que la persona...', options: ['No vio nada', 'Vio algo y decidió ignorarlo', 'Estaba distraída'], answer: 1 },
+    { id: 'p:visibilidadvisionC1:cloze', kind: 'cloze', text: 'Su nerviosismo ___ a la vista, todos lo notaron. (ser evidente de inmediato)', accept: ['saltaba', 'salta', 'saltó'] },
+    { id: 'p:visibilidadvisionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "examinar" y "espiar"?', back: 'examinar es una observación analítica y abierta; espiar es oculta, con intención de descubrir algo sin ser visto' }
+  ]
 }
 
 ];
