@@ -791,9 +791,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Géneros de transmisión escrita** · 20 pts · `generos_discursivos C1 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-c1
 - [x] **Presentación pública (Nivel C1)** · 34 pts · `generos_discursivos C1 § 2.2.1. Presentación pública (Nivel`  — gn-presentacion-publica-c1
 - [x] **Presentación pública (Nivel C2)** · 35 pts · `generos_discursivos C1 § 2.2.2. Presentación pública (Nivel`  — gn-presentacion-publica-c2
-- [ ] **Carta comercial (Nivel C1)** · 36 pts · `generos_discursivos C1 § 2.3.1. Carta comercial (Nivel C1)`
-- [ ] **Composición escrita (Nivel C1)** · 8 pts · `generos_discursivos C1 § 2.4.1. Composición escrita (Nivel `
-- [ ] **Trabajo de tipo académico (Nivel C1)** · 11 pts · `generos_discursivos C1 § 2.4.2. Trabajo de tipo académico (`
+- [x] **Carta comercial (Nivel C1)** · 36 pts · `generos_discursivos C1 § 2.3.1. Carta comercial (Nivel C1)`  — gn-carta-comercial-c1, gn-carta-reclamacion-c1 (split: the subsection's raw ids cover two genuinely distinct sub-genres, a sales/AIDA letter and a complaint letter)
+- [x] **Composición escrita (Nivel C1)** · 8 pts · `generos_discursivos C1 § 2.4.1. Composición escrita (Nivel `  — gn-composicion-escrita-c1
+- [x] **Trabajo de tipo académico (Nivel C1)** · 11 pts · `generos_discursivos C1 § 2.4.2. Trabajo de tipo académico (`  — gn-trabajo-academico-c1
 - [ ] **Macrofunción descriptiva: personas** · 28 pts · `generos_discursivos C1 § 3.1. Macrofunción descriptiva: per`
 - [ ] **Macrofunción descriptiva: objetos** · 25 pts · `generos_discursivos C1 § 3.2. Macrofunción descriptiva: obj`
 - [ ] **Macrofunción descriptiva: lugares** · 26 pts · `generos_discursivos C1 § 3.3. Macrofunción descriptiva: lug`

@@ -28462,6 +28462,167 @@ window.STRAND_LESSONS = [
 },
 
 {
+  id: 'gn-carta-comercial-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:402', 'generos_discursivos:C1:405', 'generos_discursivos:C1:415', 'generos_discursivos:C1:424',
+         'generos_discursivos:C1:428', 'generos_discursivos:C1:430', 'generos_discursivos:C1:434', 'generos_discursivos:C1:439',
+         'generos_discursivos:C1:442', 'generos_discursivos:C1:445', 'generos_discursivos:C1:449', 'generos_discursivos:C1:452',
+         'generos_discursivos:C1:454', 'generos_discursivos:C1:459'],
+  title: 'La carta comercial: atención, interés, deseo, acción',
+  summary: 'A sales letter that jumps straight from a greeting to a product description has skipped the two moves that actually sell anything: creating interest before the offer, and building a specific reason to want it before ever asking for action.',
+  sections: [
+    { h: 'El encabezado, sin atajos', html: 'Datos del remitente, datos del destinatario, fecha, asunto y saludo van siempre en ese orden — el asunto resume en una línea qué motiva la carta antes incluso del saludo formal.' },
+    { h: 'El cuerpo: cuatro intentos, en orden', html: 'Captar la atención, generar interés en el producto o servicio, crear la necesidad o el deseo de conseguirlo, y solo entonces animar a la acción — saltarse un paso deja la carta sin fuerza persuasiva.' },
+    { h: 'El cierre, con anejo si procede', html: 'Conclusión breve, despedida y firma; si se adjunta un catálogo, folleto o formulario, se menciona explícitamente como anejo.' }
+  ],
+  moves: [
+    { h: 'No confundir atención con interés', html: 'Captar la atención es el gancho inicial (una novedad, una cifra); generar interés es explicar por qué ese producto concreto le importa a este destinatario en particular — son pasos distintos.' },
+    { h: 'Construir el deseo antes de pedir la acción', html: 'Antes de pedir que el cliente compre o responda, hay que haber creado una necesidad o un deseo concretos — de lo contrario la petición de acción suena a exigencia, no a invitación.' },
+    { h: 'Mencionar el anejo si lo hay', html: 'Si se adjunta documentación, decirlo explícitamente en el cuerpo o cerca de la firma evita que el destinatario la pase por alto.' }
+  ],
+  model: {
+    title: 'Carta comercial (fragmento)',
+    text: 'Estimados señores:\n\nAsunto: Nueva línea de embalaje sostenible\n\nLes escribimos para presentarles nuestra nueva línea de embalajes fabricados con material cien por cien reciclado, ya adoptada por varias empresas del sector.\n\nSabemos que la sostenibilidad se ha convertido en un criterio decisivo para sus clientes a la hora de elegir proveedor. Nuestra línea les permite reducir su huella ambiental sin renunciar a la resistencia que sus productos requieren.\n\nLes invitamos a solicitar una muestra gratuita antes de fin de mes, sin ningún compromiso de compra.\n\nQuedamos a su disposición para cualquier consulta.\n\nAtentamente,\n\nMaría Ibáñez\nDepartamento Comercial\n\nAnejo: catálogo de productos'
+  },
+  checklist: [
+    '¿Incluye el asunto una línea que resuma el motivo de la carta?',
+    '¿Distingue el cuerpo entre captar la atención, generar interés y crear el deseo, antes de pedir la acción?',
+    '¿Se menciona explícitamente cualquier anejo adjunto?'
+  ],
+  examples: [
+    { es: 'Les escribimos para presentarles nuestra nueva línea de productos.', en: 'We are writing to introduce our new line of products.' },
+    { es: 'Sabemos que la sostenibilidad se ha convertido en un criterio decisivo para sus clientes.', en: 'We know sustainability has become a decisive criterion for your customers.' },
+    { es: 'Les invitamos a solicitar una muestra gratuita antes de fin de mes.', en: 'We invite you to request a free sample before the end of the month.' }
+  ],
+  probes: [
+    { id: 'p:cartacomercialC1:orden', kind: 'mcq', q: '¿Qué debe ocurrir antes de pedir la acción al cliente?',
+      options: ['Nada, se puede pedir directamente', 'Haber creado interés y una necesidad o deseo concretos', 'Solo el saludo formal'], answer: 1 },
+    { id: 'p:cartacomercialC1:anejo', kind: 'mcq', q: 'Si se adjunta un catálogo a la carta, ¿qué se debe hacer?',
+      options: ['No mencionarlo, se sobreentiende', 'Mencionarlo explícitamente como anejo', 'Enviarlo por separado sin avisar'], answer: 1 },
+    { id: 'p:cartacomercialC1:cloze', kind: 'cloze', text: 'Les ___ a solicitar una muestra gratuita. (invitar)', accept: ['invitamos'] },
+    { id: 'p:cartacomercialC1:recall', kind: 'recall', front: '¿Cuáles son los cuatro intentos, en orden, del cuerpo de una carta comercial de venta?', back: 'captar la atención, generar interés, crear necesidad o deseo, animar a la acción' }
+  ]
+},
+
+{
+  id: 'gn-carta-reclamacion-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:504', 'generos_discursivos:C1:509', 'generos_discursivos:C1:512', 'generos_discursivos:C1:517',
+         'generos_discursivos:C1:520'],
+  title: 'La carta de reclamación: motivo, argumento, solución',
+  summary: 'A complaint letter that lists everything wrong but never proposes a fix leaves the resolution entirely up to the reader; the move that actually gets a complaint resolved is the specific solution proposed at the end, not the length of the grievance.',
+  sections: [
+    { h: 'Contextualizar antes de reclamar', html: 'Antes de exponer el problema, se sitúa el contexto: qué compra o servicio contratado motiva la carta, con referencia a fecha, número de pedido o contrato si es posible.' },
+    { h: 'Exponer los motivos con precisión', html: 'Cada motivo de la reclamación se expone de forma concreta y verificable, no como una queja genérica — cuanto más específico, más fácil de resolver por la otra parte.' },
+    { h: 'Proponer una solución, no solo señalar el problema', html: 'La reclamación termina proponiendo una solución concreta (reembolso, sustitución, reparación, plazo) — dejar la solución abierta traslada toda la carga de decidir al destinatario.' }
+  ],
+  moves: [
+    { h: 'Referenciar la compra o servicio con datos', html: 'Mencionar fecha, número de pedido o referencia del servicio antes de exponer el problema facilita que la otra parte localice el caso de inmediato.' },
+    { h: 'Separar motivos de propuesta', html: 'Exponer primero, con claridad, en qué consiste el problema; solo después proponer la solución — mezclarlos confunde al lector sobre qué se pide exactamente.' }
+  ],
+  model: {
+    title: 'Carta de reclamación (fragmento)',
+    text: 'Muy Sr. mío:\n\nAsunto: Reclamación por pedido n.º 48213\n\nEn relación con el pedido n.º 48213, recibido el pasado 3 de marzo, me pongo en contacto con ustedes para exponer lo siguiente.\n\nDe las cinco unidades solicitadas, dos llegaron con desperfectos visibles en el embalaje, y una de ellas resultó inservible al abrirla.\n\nPor todo ello, solicito la sustitución de la unidad dañada en un plazo máximo de diez días, o en su defecto, el reembolso correspondiente.\n\nQuedo a la espera de su respuesta.\n\nAtentamente,\nJavier Roldán'
+  },
+  checklist: [
+    '¿Referencia la carta la compra o servicio con datos concretos (fecha, número de pedido)?',
+    '¿Expone los motivos de forma verificable, no como queja genérica?',
+    '¿Termina proponiendo una solución concreta, no solo señalando el problema?'
+  ],
+  examples: [
+    { es: 'En relación con el pedido n.º 48213, recibido el pasado 3 de marzo.', en: 'Regarding order no. 48213, received on March 3rd.' },
+    { es: 'Dos unidades llegaron con desperfectos visibles en el embalaje.', en: 'Two units arrived with visible damage to the packaging.' },
+    { es: 'Solicito la sustitución de la unidad dañada en un plazo máximo de diez días.', en: 'I request the replacement of the damaged unit within a maximum of ten days.' }
+  ],
+  probes: [
+    { id: 'p:cartareclamacionC1:solucion', kind: 'mcq', q: '¿Qué debe incluir el final de una carta de reclamación bien construida?',
+      options: ['Solo una lista más larga de quejas', 'Una propuesta de solución concreta', 'Ninguna petición explícita'], answer: 1 },
+    { id: 'p:cartareclamacionC1:referencia', kind: 'mcq', q: '¿Por qué conviene mencionar el número de pedido al principio?',
+      options: ['Para alargar la carta', 'Para que la otra parte localice el caso de inmediato', 'No es necesario mencionarlo'], answer: 1 },
+    { id: 'p:cartareclamacionC1:cloze', kind: 'cloze', text: '___ la sustitución de la unidad dañada. (solicitar)', accept: ['solicito'] },
+    { id: 'p:cartareclamacionC1:recall', kind: 'recall', front: '¿Qué falta en una reclamación que solo lista problemas sin proponer nada?', back: 'una solución concreta (reembolso, sustitución, reparación, plazo)' }
+  ]
+},
+
+{
+  id: 'gn-composicion-escrita-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:526', 'generos_discursivos:C1:529', 'generos_discursivos:C1:537', 'generos_discursivos:C1:541',
+         'generos_discursivos:C1:545', 'generos_discursivos:C1:550', 'generos_discursivos:C1:564', 'generos_discursivos:C1:567'],
+  title: 'La composición escrita: título, hoja de ruta, síntesis',
+  summary: 'A written composition with no explicit roadmap forces the reader to guess where the argument is headed; naming the destination up front — "en primer lugar... finalmente" — is what turns a string of paragraphs into a text someone can follow.',
+  sections: [
+    { h: 'El título, no un simple encabezado', html: 'El título anticipa el tema concreto de la composición, no una etiqueta genérica como "Ensayo" o "Composición".' },
+    { h: 'La introducción en tres pasos', html: 'Contextualizar el tema, declarar el objetivo del escrito, y presentar la hoja de ruta del desarrollo ("en primer lugar..., a continuación..., finalmente...") — los tres pasos, en ese orden.' },
+    { h: 'El desarrollo y la conclusión', html: 'El desarrollo expone, argumenta o describe según el tipo de composición; la conclusión retoma la idea principal y sintetiza lo desarrollado, sin introducir contenido nuevo.' }
+  ],
+  moves: [
+    { h: 'Anunciar la hoja de ruta explícitamente', html: 'Usar marcadores como "en primer lugar", "a continuación" o "finalmente" en la introducción para que el lector sepa qué esperar antes de empezar el desarrollo.' },
+    { h: 'No introducir ideas nuevas en la conclusión', html: 'La conclusión sintetiza y retoma la idea principal — cualquier idea nueva pertenece al desarrollo, no al cierre.' }
+  ],
+  model: {
+    title: 'Composición: "El teletrabajo, ¿libertad o aislamiento?"',
+    text: 'El teletrabajo se ha extendido enormemente en la última década, y con él ha surgido un debate sobre sus efectos reales en la vida de quienes lo practican.\n\nEste escrito se propone examinar tanto las ventajas como los riesgos del teletrabajo para la vida personal y profesional. Para ello, en primer lugar se expondrán los beneficios más citados; a continuación, los riesgos menos visibles; finalmente, se ofrecerá una valoración conjunta.\n\n[desarrollo...]\n\nEn conclusión, el teletrabajo no es en sí mismo ni liberador ni aislante: depende en gran medida de cómo cada persona organice los límites entre su vida laboral y personal.'
+  },
+  checklist: [
+    '¿Anticipa el título el tema concreto de la composición?',
+    '¿Presenta la introducción una hoja de ruta explícita del desarrollo?',
+    '¿Se limita la conclusión a sintetizar, sin introducir ideas nuevas?'
+  ],
+  examples: [
+    { es: 'Este escrito se propone examinar tanto las ventajas como los riesgos del teletrabajo.', en: 'This piece sets out to examine both the benefits and the risks of remote work.' },
+    { es: 'En primer lugar se expondrán los beneficios más citados.', en: 'First, the most commonly cited benefits will be presented.' },
+    { es: 'En conclusión, el teletrabajo no es en sí mismo ni liberador ni aislante.', en: 'In conclusion, remote work is in itself neither liberating nor isolating.' }
+  ],
+  probes: [
+    { id: 'p:composicionC1:hojaderuta', kind: 'mcq', q: '¿Qué debe incluir la introducción de una composición escrita, además del tema y el objetivo?',
+      options: ['Nada más, basta con el tema', 'Una hoja de ruta explícita del desarrollo', 'Ya la conclusión completa'], answer: 1 },
+    { id: 'p:composicionC1:conclusion', kind: 'mcq', q: '¿Qué NO debe hacer la conclusión de una composición?',
+      options: ['Sintetizar lo desarrollado', 'Retomar la idea principal', 'Introducir ideas completamente nuevas'], answer: 2 },
+    { id: 'p:composicionC1:cloze', kind: 'cloze', text: 'Este escrito se ___ examinar las ventajas y los riesgos del tema. (proponer)', accept: ['propone'] },
+    { id: 'p:composicionC1:recall', kind: 'recall', front: '¿Qué tres pasos, en orden, tiene la introducción de una composición escrita en C1?', back: 'contextualizar el tema, declarar el objetivo, presentar la hoja de ruta del desarrollo' }
+  ]
+},
+
+{
+  id: 'gn-trabajo-academico-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  pcic: ['generos_discursivos:C1:571', 'generos_discursivos:C1:574', 'generos_discursivos:C1:582', 'generos_discursivos:C1:586',
+         'generos_discursivos:C1:590', 'generos_discursivos:C1:594', 'generos_discursivos:C1:608', 'generos_discursivos:C1:611',
+         'generos_discursivos:C1:614', 'generos_discursivos:C1:619', 'generos_discursivos:C1:624'],
+  title: 'El trabajo académico: de lo general a lo no resuelto',
+  summary: 'An academic paper\'s introduction narrows twice before stating its objective — general context, then specific context — and its conclusion doesn\'t just summarize: it evaluates the implications of what was found and names what remains unresolved for future work, closed off by bibliography and any appendices.',
+  sections: [
+    { h: 'La introducción, en cuatro movimientos', html: 'Contextualización general del tema, contextualización específica (el ángulo concreto que se va a tratar), objetivo del escrito, y presentación de la hoja de ruta — más pasos que en una composición escrita ordinaria, porque el lector académico espera ubicación precisa antes del objetivo.' },
+    { h: 'La conclusión, más allá de la síntesis', html: 'Además de retomar la idea principal y sintetizar el desarrollo, la conclusión académica evalúa las repercusiones de lo expuesto y señala explícitamente qué aspectos quedan sin resolver para futuros trabajos.' },
+    { h: 'El cierre formal: bibliografía y anejos', html: 'El trabajo académico termina con la bibliografía citada y, si procede, apéndices o anejos con material de apoyo (datos, cuestionarios, transcripciones).' }
+  ],
+  moves: [
+    { h: 'Estrechar el contexto en dos pasos', html: 'Ir de lo general (el campo o problema amplio) a lo específico (el ángulo concreto del trabajo) antes de declarar el objetivo — saltarse el paso general deja al lector sin marco de referencia.' },
+    { h: 'Nombrar lo que queda sin resolver', html: 'Una buena conclusión académica no finge haber agotado el tema — señala explícitamente qué preguntas quedan abiertas para trabajos posteriores.' }
+  ],
+  model: {
+    title: 'Trabajo académico (fragmento)',
+    text: 'El aprendizaje de lenguas extranjeras en adultos ha sido objeto de numerosos estudios en las últimas décadas.\n\nDentro de este campo, el presente trabajo se centra específicamente en el papel de la retroalimentación correctiva en el aula de español como lengua extranjera.\n\nEl objetivo de este escrito es analizar qué tipos de retroalimentación resultan más eficaces según el nivel del alumnado. Para ello, en primer lugar se revisará la literatura existente; a continuación, se presentarán los datos recogidos; finalmente, se discutirán las implicaciones pedagógicas.\n\n[desarrollo...]\n\nEn conclusión, los datos sugieren que la retroalimentación explícita resulta más eficaz en niveles iniciales, mientras que la implícita gana eficacia en niveles avanzados. Estos hallazgos podrían influir en el diseño de materiales didácticos, aunque queda por resolver si el mismo patrón se mantiene en contextos de aprendizaje no presencial.\n\nBibliografía\n[...]'
+  },
+  checklist: [
+    '¿Va la introducción de lo general a lo específico antes de declarar el objetivo?',
+    '¿Evalúa la conclusión las repercusiones de lo expuesto, no solo resume?',
+    '¿Señala la conclusión explícitamente qué queda sin resolver para futuros trabajos?',
+    '¿Cierra el trabajo con bibliografía y, si procede, apéndices?'
+  ],
+  examples: [
+    { es: 'Dentro de este campo, el presente trabajo se centra específicamente en la retroalimentación correctiva.', en: 'Within this field, this paper focuses specifically on corrective feedback.' },
+    { es: 'Estos hallazgos podrían influir en el diseño de materiales didácticos.', en: 'These findings could influence the design of teaching materials.' },
+    { es: 'Queda por resolver si el mismo patrón se mantiene en otros contextos.', en: 'It remains to be resolved whether the same pattern holds in other contexts.' }
+  ],
+  probes: [
+    { id: 'p:trabajoacademicoC1:introduccion', kind: 'mcq', q: '¿En qué orden avanza la introducción de un trabajo académico?',
+      options: ['De lo específico a lo general', 'De lo general a lo específico, y luego el objetivo', 'Directamente al objetivo, sin contexto'], answer: 1 },
+    { id: 'p:trabajoacademicoC1:conclusion', kind: 'mcq', q: '¿Qué debe señalar la conclusión de un trabajo académico, además de sintetizar?',
+      options: ['Nada más, basta con resumir', 'Las repercusiones y los aspectos no resueltos para futuros trabajos', 'Una lista de referencias, únicamente'], answer: 1 },
+    { id: 'p:trabajoacademicoC1:cloze', kind: 'cloze', text: 'Queda por ___ si el mismo patrón se mantiene en otros contextos. (resolver)', accept: ['resolver'] },
+    { id: 'p:trabajoacademicoC1:recall', kind: 'recall', front: '¿Qué dos elementos cierran formalmente un trabajo académico, tras la conclusión?', back: 'la bibliografía y, si procede, los apéndices o anejos' }
+  ]
+},
+
+{
   id: 'gn-resena-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:44'],
   title: 'La reseña crítica',
