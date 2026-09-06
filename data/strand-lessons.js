@@ -25817,6 +25817,91 @@ window.STRAND_LESSONS = [
     { id: 'p:adecuacionC1:cloze', kind: 'cloze', text: 'Su enfado fue completamente ___. (excesivo respecto a la causa)', accept: ['desproporcionado'] },
     { id: 'p:adecuacionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "propicio" y "fructífero"?', back: 'propicio describe condiciones favorables antes de un resultado; fructífero describe el resultado positivo en sí' }
   ]
+},
+
+{
+  id: 'nt-conformidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1498', 'nociones_generales:C1:1499', 'nociones_generales:C1:1500', 'nociones_generales:C1:1501',
+         'nociones_generales:C1:1502', 'nociones_generales:C1:1503', 'nociones_generales:C1:1504'],
+  title: 'Conformidad en C1: "hacer la vista gorda" y "no quedar más remedio"',
+  summary: 'Conformarse con algo en C1 va de la aprobación activa al simple "no quedar otra salida" — y "hacer la vista gorda" describe la conformidad más pasiva de todas: ignorar deliberadamente algo que no se aprueba pero se decide no combatir.',
+  sections: [
+    { h: 'Sustantivos de acuerdo', html: '<i>Aprobación, consentimiento, consenso</i> gradúan el acuerdo: aprobación es dar el visto bueno, consentimiento es permitir algo específico, consenso es un acuerdo colectivo: <i>cuentan con mi aprobación, finalmente nos dio su consentimiento, lo decidieron por consenso</i>.' },
+    { h: '"El sí" y "el no" como sustantivos', html: 'En español, <i>el sí</i> y <i>el no</i> pueden funcionar como sustantivos que resumen una decisión: <i>no dudamos en darles el sí</i>, <i>inténtalo, total, el no ya lo tienes</i> (si no lo intentas, el resultado ya es un no seguro).' },
+    { h: 'Conformarse: aceptar sin más', html: '<i>Conformarse con</i> es aceptar algo, a menudo sin estar plenamente satisfecho. <i>Actuar con resignación/con paciencia/con tolerancia</i> son las actitudes con las que se acepta algo no ideal.' },
+    { h: '"Hacer la vista gorda": la conformidad más pasiva', html: 'Esta locución describe ignorar deliberadamente algo irregular, sin intervenir, casi siempre por conveniencia o comodidad.' },
+    { h: 'Ausencia de alternativa', html: '<i>No haber/quedar otro remedio/otra salida</i> y <i>no haber/quedar más remedio</i> describen la conformidad forzada por la ausencia total de alternativas.' }
+  ],
+  exponents: [
+    { es: 'El jefe hizo la vista gorda ante el retraso.', en: 'The boss turned a blind eye to the delay.', register: 'coloquial' },
+    { es: 'No quedó más remedio que aceptar las condiciones.', en: 'There was no choice but to accept the conditions.', register: 'neutral' },
+    { es: 'La decisión se tomó por consenso entre todos los socios.', en: 'The decision was made by consensus among all the partners.', register: 'formal' },
+    { es: 'Se conformó con una disculpa, aunque esperaba más.', en: 'He settled for an apology, although he expected more.', register: 'neutral' },
+    { es: 'Reaccionó con resignación ante la mala noticia.', en: 'He reacted with resignation to the bad news.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Dio su consentimiento sin ninguna objeción.', en: 'He gave his consent without any objection.', note: 'aprobación activa y voluntaria' },
+    { es: 'No quedó más remedio que aceptarlo.', en: 'There was no choice but to accept it.', note: 'conformidad forzada, sin alternativa' }
+  ],
+  pitfalls: [
+    '"Hacer la vista gorda" no es lo mismo que "aprobar" — implica ver algo irregular y decidir no actuar, no estar de acuerdo con ello.',
+    '"Conformarse con" a menudo implica cierta insatisfacción de fondo — no equivale a estar plenamente satisfecho con algo.',
+    '"El sí"/"el no" como sustantivos requieren el artículo determinado — sin él, pierden ese uso nominal y vuelven a ser simples adverbios de afirmación/negación.'
+  ],
+  examples: [
+    { es: 'El profesor hizo la vista gorda con el móvil en clase.', en: 'The teacher turned a blind eye to the phone in class.' },
+    { es: 'Se conformaron con lo que había, sin protestar.', en: 'They made do with what there was, without complaining.' },
+    { es: 'No había otra salida que renegociar el contrato.', en: 'There was no other way out but to renegotiate the contract.' }
+  ],
+  probes: [
+    { id: 'p:conformidadC1:vistagorda', kind: 'mcq', q: '"Hizo la vista gorda" significa que...', options: ['Aprobó activamente algo', 'Vio algo irregular y decidió no intervenir', 'No vio nada'], answer: 1 },
+    { id: 'p:conformidadC1:conformarse', kind: 'mcq', q: '"Se conformó con una disculpa." ¿Qué matiz suele tener?', options: ['Plena satisfacción', 'Cierta insatisfacción de fondo', 'Indiferencia total'], answer: 1 },
+    { id: 'p:conformidadC1:cloze', kind: 'cloze', text: 'No quedó más ___ que aceptar las condiciones. (ausencia de alternativa)', accept: ['remedio'] },
+    { id: 'p:conformidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "aprobación", "consentimiento" y "consenso"?', back: 'aprobación es dar el visto bueno; consentimiento es permitir algo específico; consenso es un acuerdo colectivo' }
+  ]
+},
+
+{
+  id: 'nt-correccion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1517', 'nociones_generales:C1:1518', 'nociones_generales:C1:1519', 'nociones_generales:C1:1520',
+         'nociones_generales:C1:1521', 'nociones_generales:C1:1522', 'nociones_generales:C1:1523', 'nociones_generales:C1:1524',
+         'nociones_generales:C1:1525', 'nociones_generales:C1:1526', 'nociones_generales:C1:1527', 'nociones_generales:C1:1528', 'nociones_generales:C1:1529', 'nociones_generales:C1:1530'],
+  title: 'Corrección en C1: de "un acierto" a "a la perfección"',
+  summary: 'Corregir y valorar la precisión de algo en C1 exige distinguir un simple "descuido" de un "disparate", y "rectificar" (corregir una decisión) de "reparar" (arreglar un defecto físico) — cada verbo reservado para su propio tipo de error.',
+  sections: [
+    { h: 'Sustantivos de precisión y de error', html: '<i>Exactitud, descuido, despiste, defecto</i> cubren desde la precisión total hasta distintos tipos de fallo menor. <i>Precisión</i> es la exactitud técnica. <i>Acierto</i> es una decisión correcta: <i>las medidas adoptadas fueron un acierto para la empresa</i>. <i>Rectificación</i> es la corrección formal de un error.' },
+    { h: 'Calificar un error', html: '<i>Error insignificante/(im)perdonable</i> gradúa la gravedad de un error. <i>Defectuoso</i> describe un objeto con fallos de fabricación: <i>objeto defectuoso</i>.' },
+    { h: 'Adjetivos de la persona que comete o evita errores', html: '<i>Descuidado, torpe, desastroso</i> describen a quien comete errores con frecuencia, en distinto grado. <i>Minucioso, detallista</i> describen, al contrario, a quien cuida cada detalle para evitarlos. <i>Oportuno</i> describe algo hecho en el momento y de la forma correctos.' },
+    { h: 'Verbos de corregir', html: '<i>Rectificar</i> es corregir una decisión o afirmación; <i>reparar</i>, arreglar un defecto físico; <i>pulir</i>, mejorar los detalles finales de algo ya bueno: <i>rectificar una decisión, reparar un defecto, pulir una imperfección</i>. <i>Cometer un disparate/una irregularidad/una equivocación</i> son formas de nombrar el acto de errar. <i>Ajustarse a un modelo/un ideal/un prototipo/un canon</i> es cumplir con un estándar de referencia. <i>Provocar/reconocer/confesar un error</i> distinguen entre causar un error y admitirlo después.' },
+    { h: '"A la perfección"', html: 'Esta locución describe que algo se hizo sin ningún fallo: <i>ha jugado a la perfección</i>.' }
+  ],
+  exponents: [
+    { es: 'Reconoció el error nada más darse cuenta.', en: 'He acknowledged the mistake as soon as he noticed it.', register: 'neutral' },
+    { es: 'Tuvieron que reparar el defecto antes de entregar el producto.', en: 'They had to fix the flaw before delivering the product.', register: 'neutral' },
+    { es: 'Interpretó la pieza a la perfección.', en: 'He performed the piece to perfection.', register: 'formal' },
+    { es: 'Fue un error imperdonable en un profesional de su nivel.', en: 'It was an unforgivable mistake for a professional of his level.', register: 'formal' },
+    { es: 'Tuvo que rectificar su decisión ante la presión pública.', en: 'He had to reverse his decision under public pressure.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Rectificó su afirmación en la rueda de prensa.', en: 'He retracted his statement at the press conference.', note: 'rectificar — corregir una decisión o afirmación' },
+    { es: 'Repararon el defecto de fabricación.', en: 'They fixed the manufacturing defect.', note: 'reparar — arreglar algo físico' }
+  ],
+  pitfalls: [
+    '"Rectificar" y "reparar" no son intercambiables: rectificar corrige decisiones, afirmaciones o rumbos; reparar arregla defectos físicos.',
+    '"Descuidado" describe a alguien propenso a errores por falta de atención — no es lo mismo que "torpe", que implica falta de habilidad, o "desastroso", el grado máximo de incompetencia.',
+    '"Provocar un error" y "confesar un error" describen momentos distintos del mismo suceso: causarlo frente a admitirlo después.'
+  ],
+  examples: [
+    { es: 'El detallista revisor no dejó pasar ni un solo fallo.', en: 'The meticulous reviewer let not a single mistake slip through.' },
+    { es: 'Cometió una irregularidad grave en la contabilidad.', en: 'He committed a serious irregularity in the accounting.' },
+    { es: 'El diseño se ajusta perfectamente al canon clásico.', en: 'The design perfectly conforms to the classical canon.' }
+  ],
+  probes: [
+    { id: 'p:correccionC1:rectificarreparar', kind: 'mcq', q: '¿Qué diferencia hay entre "rectificar" y "reparar"?', options: ['Ninguna', 'Rectificar corrige decisiones/afirmaciones; reparar arregla defectos físicos', 'Reparar es más formal'], answer: 1 },
+    { id: 'p:correccionC1:descuidadotorpe', kind: 'mcq', q: '¿Qué diferencia hay entre "descuidado" y "torpe"?', options: ['Ninguna', 'Descuidado es por falta de atención; torpe es por falta de habilidad', 'Torpe es siempre peor'], answer: 1 },
+    { id: 'p:correccionC1:cloze', kind: 'cloze', text: 'Ha jugado a la ___, sin ningún fallo. (sin ningún error)', accept: ['perfección'] },
+    { id: 'p:correccionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "provocar un error" y "confesar un error"?', back: 'provocar es causarlo; confesar es admitirlo después' }
+  ]
 }
 
 ];
