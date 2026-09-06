@@ -92,10 +92,18 @@ window.Session = (function () {
       lessons.forEach(function (l) { if (studied[l.id]) level = Math.max(level, l.level || 1); });
       if (lesson) level = Math.max(level, lesson.level || 1);
     } else {
-      // standard / refresher: a grammar lesson every session (next unstudied)
-      for (var i = 0; i < lessons.length; i++) { if (!studied[lessons[i].id]) { lesson = lessons[i]; break; } }
-      if (lesson) { level = lesson.level || 1; }
-      else { lesson = lessons[day % Math.max(1, lessons.length)] || null; level = 99; }
+      /* A lesson from the level you selected. This used to walk the whole
+       * ladder from index 0, so choosing C1 still served "presente" — the level
+       * capped the CONTENT but never chose the lesson. Prefer an unstudied
+       * lesson whose gate belongs to this level; if the level is finished,
+       * rotate within it rather than dropping back to A1. */
+      var gates = pr.gates || [pr.maxGate || 99];
+      var pool = lessons.filter(function (l) { return gates.indexOf(l.level || 1) !== -1; });
+      if (!pool.length) pool = lessons.filter(function (l) { return (l.level || 1) <= (pr.maxGate || 99); });
+      if (!pool.length) pool = lessons;
+      for (var i = 0; i < pool.length; i++) { if (!studied[pool[i].id]) { lesson = pool[i]; break; } }
+      if (!lesson) lesson = pool[day % Math.max(1, pool.length)] || null;
+      level = lesson ? (lesson.level || 1) : (pr.maxGate || 1);
       focus = lesson ? { type: 'grammar', id: lesson.id } : { type: 'practice' };
       if (pr.unlockAll) level = 99;
     }

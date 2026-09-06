@@ -100,8 +100,10 @@ window.Shell = (function () {
       pr.appendChild(UI.el('span', null, 'Nivel:'));
       var seg = UI.el('div', 'segmented');
       window.Profile.all().forEach(function (pf) {
-        var b = UI.el('button', 'seg' + (window.Profile.current() === pf.name ? ' active' : ''), pf.label);
+        // the code only: five full labels ("A1 · Acceso"…) overflow the bar
+        var b = UI.el('button', 'seg' + (window.Profile.current() === pf.name ? ' active' : ''), pf.name);
         b.type = 'button';
+        b.title = pf.label;
         b.addEventListener('click', function () {
           window.Profile.set(pf.name);
           refresh('mas'); refresh('inicio');

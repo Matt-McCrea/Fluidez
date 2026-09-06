@@ -22404,6 +22404,50 @@ window.STRAND_LESSONS = [
     { id: 'p:adverbiosconjuntivosC1:cloze', kind: 'cloze', text: '___ bien, esto no significa que el problema esté resuelto. (transición)', accept: ['Ahora', 'ahora'] },
     { id: 'p:adverbiosconjuntivosC1:recall', kind: 'recall', front: '¿Qué valor tiene "ahora bien" en este uso, temporal o transicional?', back: 'transicional — matiza o introduce un tema, sin relación con el tiempo' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — C1 grammar, part 5: tiempos verbales de indicativo. Complements
+ * (does not duplicate) the discourse-strand dc-imperfecto-modal-c1 and
+ * dc-indefinido-perfecto-c1, which treat the pragmatic strategy; this lesson
+ * surveys the tense system itself, tense by tense.
+ * ========================================================================== */
+{
+  id: 'gr-tiempos-indicativo-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:390', 'gramatica:C1:392', 'gramatica:C1:393', 'gramatica:C1:394', 'gramatica:C1:395', 'gramatica:C1:397',
+         'gramatica:C1:398', 'gramatica:C1:400', 'gramatica:C1:402', 'gramatica:C1:404', 'gramatica:C1:406', 'gramatica:C1:407',
+         'gramatica:C1:409'],
+  title: 'Tiempos verbales de indicativo en C1: cada tiempo, su objeción',
+  summary: 'Almost every indicative tense in Spanish has a C1 use that has nothing to do with when something happened — the future objects, the conditional refuses politely in the past, and the pluscuamperfecto can describe something that was ALMOST done and never was. Learn the tense forms and you still have to learn what each one does besides tell time.',
+  sections: [
+    { h: 'Presente histórico, y el imperfecto en sus cuatro valores', html: '<i>Colón llega a América en 1492</i> narra el pasado en presente para darle inmediatez — el llamado presente histórico. El imperfecto, por su parte, cubre cuatro valores no temporales: excusa (<i>¡y yo qué sabía!</i>), sorpresa (<i>anda, estabas aquí</i>), censura (<i>¿tú no tenías que hacer los deberes?</i>) y distanciamiento en estilo indirecto implícito, con un marcador de presente o futuro: <i>María se casaba mañana</i> (alguien te lo contó, tú lo relatas sin asumir la responsabilidad).' },
+    { h: 'Futuro y condicional simple: objeción y mandato', html: 'El futuro imperfecto puede conceder algo antes de objetar: <i>Será muy listo, pero...</i>; el mismo valor trasladado al pasado usa el condicional: <i>Sería muy listo, pero...</i> El futuro también funciona como mandato firme, casi inapelable: <i>Harás lo que te diga.</i>' },
+    { h: 'Pretérito perfecto: variación dialectal real', html: 'En amplias zonas de Hispanoamérica y en el norte y sur de España, el indefinido sustituye habitualmente al perfecto incluso para hechos del propio día: <i>hoy llegué tarde</i>, <i>este año no pude ir</i> — no es un error, es la norma en esas variedades.' },
+    { h: 'Pluscuamperfecto de conato: lo que casi ocurrió', html: '<i>Había estado a punto de equivocarse otra vez</i>, <i>había pensado abandonar el trabajo</i> — el pluscuamperfecto aquí no describe algo que sucedió antes de otro pasado, sino algo que estuvo cerca de ocurrir y finalmente no ocurrió.' },
+    { h: 'Futuro perfecto y condicional compuesto: objeción con anterioridad', html: 'El futuro perfecto traslada la objeción del futuro simple a un hecho ya terminado: <i>Habrá estudiado mucho, pero...</i> El condicional compuesto hace lo mismo situado en el pasado: <i>Habría estudiado mucho, pero...</i> El futuro perfecto también sustituye a fórmulas como "espero que no" o "no creo que", negadas: <i>¿No me habré olvidado de algo?</i> equivale a "espero no haberme olvidado de nada".' }
+  ],
+  contrasts: [
+    { es: 'Cervantes publica la primera parte del Quijote en 1605.', en: 'Cervantes publishes the first part of Don Quixote in 1605.', note: 'presente histórico, narra el pasado con inmediatez' },
+    { es: 'Será muy trabajador, pero llega tarde todos los días.', en: "He may well be hard-working, but he's late every day.", note: 'futuro de objeción — concede antes de contradecir' },
+    { es: 'Había pensado dejarlo todo, pero al final se quedó.', en: 'He had thought about giving it all up, but in the end he stayed.', note: 'pluscuamperfecto de conato — algo que casi pasó y no pasó' },
+    { es: '¿No me habré dejado las llaves dentro?', en: "I hope I haven't left the keys inside?", note: 'futuro perfecto como sustituto de "espero no haber..."' }
+  ],
+  pitfalls: [
+    'El pluscuamperfecto de conato (<i>había pensado dejarlo</i>) no implica que la acción llegara a completarse en ningún momento anterior — al contrario, implica precisamente que NO se completó.',
+    'El futuro y el condicional de objeción (<i>será muy listo, pero...</i> / <i>sería muy listo, pero...</i>) no hacen ninguna predicción — conceden un punto para inmediatamente después contradecirlo.',
+    'La sustitución del perfecto por el indefinido en el propio día (<i>hoy llegué tarde</i>) no es un error en las variedades donde es habitual — es la norma real en amplias zonas del español, no una desviación que corregir.'
+  ],
+  examples: [
+    { es: 'En 1969, el hombre llega por primera vez a la Luna.', en: 'In 1969, man reaches the Moon for the first time.' },
+    { es: 'Habrá tenido sus motivos, pero no avisó a nadie.', en: 'He must have had his reasons, but he didn\'t tell anyone.' },
+    { es: 'Había estado a punto de perder el vuelo por diez minutos.', en: 'He had come within ten minutes of missing the flight.' }
+  ],
+  probes: [
+    { id: 'p:tiemposindicativoC1:conato', kind: 'mcq', q: '"Había pensado dejar el trabajo." ¿Llegó a dejarlo?', options: ['Sí, es lo que cuenta la frase', 'No — el pluscuamperfecto de conato implica que no se completó', 'Es imposible saberlo'], answer: 1 },
+    { id: 'p:tiemposindicativoC1:objecion', kind: 'mcq', q: '"Será muy listo, pero..." ¿Qué hace el futuro aquí?', options: ['Predice el futuro de esa persona', 'Concede un punto antes de objetar', 'Pregunta por su inteligencia'], answer: 1 },
+    { id: 'p:tiemposindicativoC1:cloze', kind: 'cloze', text: '¿No me ___ olvidado de algo? (futuro perfecto, sustituye a "espero no haber...")', accept: ['habré'] },
+    { id: 'p:tiemposindicativoC1:recall', kind: 'recall', front: '¿Qué variedades del español usan el indefinido en lugar del perfecto incluso para el propio día?', back: 'amplias zonas de Hispanoamérica y el norte y sur de España' }
+  ]
 }
 
 ];

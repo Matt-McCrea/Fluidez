@@ -120,17 +120,34 @@ window.Progress = (function () {
 
     } else {
       // standard/refresher: grammar lessons first, then vocab & verbs below
-      var syl = UI.el('div', 'syllabus');
-      lessons.forEach(function (l, i) {
-        var state = studied[l.id] ? 'done' : (i === nextIdx ? 'current' : 'locked');
-        var mark = state === 'done' ? '✓' : (state === 'current' ? '●' : '○');
-        var row = UI.el('button', 'syl-row ' + state); row.type = 'button';
-        row.innerHTML = '<span class="syl-mark">' + mark + '</span><span class="syl-title">' + l.title +
-          '</span><span class="syl-level muted">L' + (l.level || 1) + ' ›</span>';
-        row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run({ type: 'grammar', id: l.id }, reRender); });
-        syl.appendChild(row);
+      /* Every lesson is open — the rows were always clickable, but marking
+       * everything past the next unstudied one as "locked" made them look
+       * forbidden, which is wrong for anyone starting above A1. State is now
+       * just done / next-up / not yet done. Grouped by level because a flat
+       * list of 565 is unusable. */
+      var CEFR_OF = function (n) { return n <= 1 ? 'A1' : n <= 3 ? 'A2' : n <= 5 ? 'B1' : n <= 7 ? 'B2' : 'C1'; };
+      var here = (window.Profile && window.Profile.params().cefr) || 'A1';
+      var byBand = {};
+      lessons.forEach(function (l, i) { (byBand[CEFR_OF(l.level || 1)] = byBand[CEFR_OF(l.level || 1)] || []).push({ l: l, i: i }); });
+
+      ['A1', 'A2', 'B1', 'B2', 'C1'].forEach(function (band) {
+        var rows = byBand[band]; if (!rows || !rows.length) return;
+        var doneN = rows.filter(function (r) { return studied[r.l.id]; }).length;
+        var det = UI.el('details', 'catalog-more' + (band === here ? ' band-here' : ''));
+        if (band === here) det.setAttribute('open', 'open');
+        det.appendChild(UI.el('summary', null, band + ' — ' + doneN + ' / ' + rows.length + ' done'));
+        var syl = UI.el('div', 'syllabus');
+        rows.forEach(function (r) {
+          var state = studied[r.l.id] ? 'done' : (r.i === nextIdx ? 'current' : 'open');
+          var mark = state === 'done' ? '✓' : (state === 'current' ? '●' : '·');
+          var row = UI.el('button', 'syl-row ' + state); row.type = 'button';
+          row.innerHTML = '<span class="syl-mark">' + mark + '</span><span class="syl-title">' + r.l.title +
+            '</span><span class="syl-level muted">L' + (r.l.level || 1) + ' ›</span>';
+          row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run({ type: 'grammar', id: r.l.id }, reRender); });
+          syl.appendChild(row);
+        });
+        det.appendChild(syl); wrap.appendChild(det);
       });
-      wrap.appendChild(syl);
 
       var vd = UI.el('details', 'catalog-more');
       vd.appendChild(UI.el('summary', null, 'Vocabulary lessons'));

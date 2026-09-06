@@ -505,3 +505,13 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 
 .profile-bar .segmented .seg{ font-variant-numeric:tabular-nums; }
 .profile-bar .segmented .seg.active{ background:var(--accent); color:#fff; border-color:var(--accent); }
+
+/* the level switcher holds five segments — keep them on one line and legible */
+.profile-bar { flex-wrap:wrap; }
+.profile-bar .segmented { max-width:100%; }
+.profile-bar .segmented .seg { padding:6px 12px; letter-spacing:.02em; }
+@media (max-width:420px){ .profile-bar .segmented .seg { padding:6px 9px; font-size:.78rem; } }
+/* nothing in the roadmap is locked; "open" is simply not done yet */
+.syl-row.open { opacity:1; }
+.syl-row.open .syl-mark { color:var(--muted); }
+.catalog-more.band-here > summary { color:var(--accent); font-weight:700; }
