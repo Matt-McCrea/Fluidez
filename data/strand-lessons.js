@@ -23753,6 +23753,49 @@ window.STRAND_LESSONS = [
     { id: 'p:distanciavelocidadC1:cloze', kind: 'cloze', text: 'Esa galaxia está a millones de ___ luz de distancia. (unidad de distancia astronómica)', accept: ['años'] },
     { id: 'p:distanciavelocidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre un ritmo "pausado" y uno "vertiginoso"?', back: 'pausado es lento y tranquilo; vertiginoso es extremadamente rápido, casi mareante' }
   ]
+},
+
+{
+  id: 'nt-peso-superficie-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:353', 'nociones_generales:C1:354', 'nociones_generales:C1:355', 'nociones_generales:C1:356',
+         'nociones_generales:C1:357', 'nociones_generales:C1:358', 'nociones_generales:C1:359', 'nociones_generales:C1:360',
+         'nociones_generales:C1:361', 'nociones_generales:C1:362', 'nociones_generales:C1:363', 'nociones_generales:C1:364', 'nociones_generales:C1:365'],
+  title: 'Peso y superficie en C1: de "peso bruto" a "de norte a sur"',
+  summary: 'El peso se mide con precisión técnica (bruto/neto, sobrecarga) y se describe con hipérboles ("pesado como el plomo"); la superficie se expresa con verbos que la miden (ocupar, tener una extensión de) y locuciones que la recorren (de arriba abajo, a lo largo de).',
+  sections: [
+    { h: 'Vocabulario técnico del peso', html: '<i>Peso bruto</i> (con el envase o embalaje incluido) frente a <i>peso neto</i> (solo el contenido). <i>Sobrecarga</i> y <i>exceso de peso</i> señalan un peso superior al permitido o previsto; <i>sobrecargar</i> es el verbo correspondiente. <i>Leve</i> describe un peso pequeño.' },
+    { h: 'Equilibrio y reparto del peso', html: '<i>(Des)equilibrar</i> y <i>repartir el peso</i> hablan de cómo se distribuye una carga: <i>es importante repartir el peso para asegurar la estabilidad del vehículo</i>.' },
+    { h: 'Hipérbole: "pesado como el plomo"', html: 'Esta comparación fija expresa que algo pesa muchísimo, de forma exagerada y coloquial — no se usa para un peso simplemente considerable, sino para uno que resulta claramente excesivo o difícil de manejar.' },
+    { h: 'Describir una superficie', html: '<i>Reducido, extenso</i> son los dos extremos: <i>una llanura extensa, un espacio reducido</i>. <i>Ocupar/tener una superficie/una extensión (de)</i> son las construcciones para dar una cifra: <i>el terreno tiene una extensión de 2.000 hectáreas</i>.' },
+    { h: 'Recorrer una superficie', html: '<i>Recorrer/andar de norte a sur/de arriba abajo</i> describe atravesar una superficie de un extremo a otro. <i>A lo largo/a lo ancho de</i> especifica la dimensión recorrida: a lo largo (longitudinalmente) o a lo ancho (transversalmente).' }
+  ],
+  exponents: [
+    { es: 'El paquete supera el peso permitido; hay sobrecarga.', en: 'The package exceeds the allowed weight; there\'s overload.', register: 'formal' },
+    { es: 'Es importante repartir el peso para que el mueble no se vuelque.', en: "It's important to distribute the weight so the piece of furniture doesn't tip over.", register: 'neutral' },
+    { es: 'Esta maleta pesa como el plomo.', en: 'This suitcase weighs a ton.', register: 'coloquial' },
+    { es: 'La finca tiene una extensión considerable.', en: 'The estate has a considerable area.', register: 'formal' },
+    { es: 'Recorrieron el país de norte a sur en tren.', en: 'They traveled the country from north to south by train.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Peso bruto: 12 kg. Peso neto: 10 kg.', en: 'Gross weight: 12 kg. Net weight: 10 kg.', note: 'bruto incluye el envase; neto, solo el contenido' },
+    { es: 'Un espacio reducido, apenas diez metros cuadrados.', en: 'A cramped space, barely ten square meters.', note: 'extremo opuesto a "extenso"' }
+  ],
+  pitfalls: [
+    '"Peso bruto" y "peso neto" no son intercambiables — el bruto incluye envase/embalaje, el neto solo el producto en sí.',
+    '"Pesado como el plomo" es una hipérbole coloquial, no una comparación técnica exacta con el metal.',
+    '"A lo largo de" y "a lo ancho de" especifican dimensiones distintas — usar una por otra cambia qué eje del espacio se está describiendo.'
+  ],
+  examples: [
+    { es: 'El contenedor tenía un peso neto de tres toneladas.', en: 'The container had a net weight of three tons.' },
+    { es: 'El parque ocupa una extensión enorme en el centro de la ciudad.', en: 'The park occupies a huge area in the city center.' },
+    { es: 'Anduvieron la ciudad de arriba abajo buscando el hotel.', en: 'They walked the city up and down looking for the hotel.' }
+  ],
+  probes: [
+    { id: 'p:pesosuperficieC1:brutoneto', kind: 'mcq', q: '¿Qué diferencia hay entre "peso bruto" y "peso neto"?', options: ['Ninguna, son sinónimos', 'El bruto incluye envase/embalaje; el neto, solo el contenido', 'El neto siempre es mayor'], answer: 1 },
+    { id: 'p:pesosuperficieC1:plomo', kind: 'mcq', q: '"Pesa como el plomo" es...', options: ['Una medida técnica exacta', 'Una hipérbole coloquial', 'Un error de expresión'], answer: 1 },
+    { id: 'p:pesosuperficieC1:cloze', kind: 'cloze', text: 'El terreno tiene una ___ de 2.000 hectáreas. (medida de superficie)', accept: ['extensión'] },
+    { id: 'p:pesosuperficieC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a lo largo de" y "a lo ancho de"?', back: '"a lo largo de" recorre la longitud; "a lo ancho de", la anchura — dimensiones distintas del espacio' }
+  ]
 }
 
 ];
