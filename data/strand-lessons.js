@@ -27959,6 +27959,46 @@ window.STRAND_LESSONS = [
     { id: 'p:tranquilizaranimarC1:cloze', kind: 'cloze', text: '¿A qué ___? ¡Hazlo ya! (presión suave ante la indecisión)', accept: ['esperas'] },
     { id: 'p:tranquilizaranimarC1:recall', kind: 'recall', front: '¿Qué lógica hay detrás de "el no ya lo tienes" para animar a alguien?', back: 'si no se intenta, el resultado negativo ya está garantizado, así que intentarlo no puede empeorar la situación' }
   ]
+},
+
+{
+  id: 'fn-saludar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:1044', 'funciones:C1:1045', 'funciones:C1:1046', 'funciones:C1:1047', 'funciones:C1:1048', 'funciones:C1:1049'],
+  title: 'Saludar en C1: de "¿qué es de tu vida?" a "señora ministra"',
+  summary: 'Saludar en C1 va del saludo coloquial casi retórico ("¿qué pasa?") al tratamiento formal con cargo profesional ("señora ministra"), pasando por "¿qué es de tu vida?", reservado para un reencuentro tras mucho tiempo sin verse.',
+  sections: [
+    { h: 'Saludos coloquiales casi retóricos', html: '<i>¿Qué pasa?</i> y <i>¿qué hay?</i> son saludos coloquiales que, como "¿qué tal?", no esperan una respuesta detallada — funcionan como fórmula de apertura, no como pregunta real. <i>¿Cómo estamos/andamos?</i> usa la primera persona del plural aunque se dirija a una sola persona, dando un tono cercano y desenfadado.' },
+    { h: '"¿Qué es de tu vida?": el reencuentro', html: 'Esta fórmula se reserva específicamente para saludar a alguien después de mucho tiempo sin verse, preguntando de forma amplia por los cambios en su vida, no por un detalle concreto.' },
+    { h: 'Tratamiento formal con cargo', html: '<i>Señor/Señora</i> + apellido o tratamiento profesional es la fórmula de máxima formalidad, propia de contextos institucionales o protocolarios: <i>señora ministra...</i>.' },
+    { h: 'Saludo formal de reencuentro', html: '<i>Es un placer saludarlo (después de tanto tiempo)</i> es la versión formal del reencuentro, contrapartida ceremoniosa de "¿qué es de tu vida?".' }
+  ],
+  exponents: [
+    { es: '¿Qué pasa? ¿Cómo va todo?', en: "What's up? How's everything going?", register: 'coloquial' },
+    { es: '¿Qué es de tu vida? ¡Cuánto tiempo sin verte!', en: "What have you been up to? It's been so long!", register: 'coloquial' },
+    { es: 'Señora ministra, es un placer saludarla de nuevo.', en: 'Madam Minister, it is a pleasure to greet you again.', register: 'formal' },
+    { es: '¿Cómo andamos hoy?', en: "How are we doing today?", register: 'coloquial' },
+    { es: 'Es un placer saludarlo después de tanto tiempo, señor director.', en: 'It is a pleasure to greet you after so long, Mr. Director.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: '¿Qué hay? Todo bien por aquí.', en: "What's up? All good here.", note: 'saludo coloquial, casi sin esperar respuesta detallada' },
+    { es: 'Señor director, es un placer saludarlo.', en: 'Mr. Director, it is a pleasure to greet you.', note: 'saludo formal con tratamiento y cargo' }
+  ],
+  pitfalls: [
+    '"¿Qué pasa?/¿qué hay?" no esperan una respuesta detallada sobre problemas reales — funcionan casi como simples fórmulas de apertura de la conversación.',
+    '"¿Qué es de tu vida?" se reserva para reencuentros tras mucho tiempo sin verse — no se usa como saludo cotidiano entre personas que se ven a menudo.',
+    '"¿Cómo estamos/andamos?" usa la primera persona del plural dirigiéndose a una sola persona — no implica que el hablante también esté incluido en la pregunta.'
+  ],
+  examples: [
+    { es: '¡Qué alegría verte! ¿Qué es de tu vida?', en: 'How great to see you! What have you been up to?' },
+    { es: '¿Qué pasa, tío? ¿Todo bien?', en: 'What\'s up, man? Everything good?' },
+    { es: 'Señor presidente, es un placer saludarlo en esta ocasión.', en: 'Mr. President, it is a pleasure to greet you on this occasion.' }
+  ],
+  probes: [
+    { id: 'p:saludarC1:quepasa', kind: 'mcq', q: '"¿Qué pasa?" como saludo, ¿espera una respuesta detallada?', options: ['Sí, siempre', 'No, funciona casi como fórmula de apertura', 'Solo en contextos formales'], answer: 1 },
+    { id: 'p:saludarC1:quees', kind: 'mcq', q: '¿Cuándo se usa típicamente "¿qué es de tu vida?"?', options: ['Cada vez que se ve a alguien', 'Tras mucho tiempo sin verse', 'Solo por teléfono'], answer: 1 },
+    { id: 'p:saludarC1:cloze', kind: 'cloze', text: 'Es un ___ saludarlo después de tanto tiempo. (satisfacción formal de un reencuentro)', accept: ['placer'] },
+    { id: 'p:saludarC1:recall', kind: 'recall', front: '¿Qué persona gramatical usa "¿cómo estamos/andamos?" aunque se dirija a un solo interlocutor?', back: 'la primera persona del plural (nosotros), dando un tono cercano y desenfadado' }
+  ]
 }
 
 ];
