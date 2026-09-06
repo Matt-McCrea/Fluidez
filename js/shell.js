@@ -89,6 +89,9 @@ window.Shell = (function () {
       b.addEventListener('click', function () { onOpen(host, function () { showMasMenu(host); }); });
       list.appendChild(b);
     }
+    row('🧭', 'Cómo funciona', 'the tour, and set your level', function (h, back) {
+      window.Onboarding.run(h, function () { refresh('inicio'); back(); });
+    });
     row('📖', 'Gramática', 'browse every lesson', window.Grammar.render);
     row('✍️', 'Escribir', 'free writing & journal', window.WriteSpace.render);
     row('📚', 'Recursos', 'podcasts & references', window.Resources.render);

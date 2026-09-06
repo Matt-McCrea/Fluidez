@@ -515,3 +515,15 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .syl-row.open { opacity:1; }
 .syl-row.open .syl-mark { color:var(--muted); }
 .catalog-more.band-here > summary { color:var(--accent); font-weight:700; }
+
+/* ---- onboarding: the first-run tour and placement check ------------------- */
+.onb-options { display:flex; flex-direction:column; gap:8px; margin:16px 0; }
+.onb-option {
+  text-align:left; padding:13px 15px; border:1px solid var(--border); border-radius:var(--radius);
+  background:var(--panel); color:var(--text); font-size:.95rem; cursor:pointer; line-height:1.45;
+}
+.onb-option:hover { border-color:var(--accent); background:var(--panel-2); }
+.linkish {
+  display:block; margin:14px auto 0; background:none; border:none; cursor:pointer;
+  font-size:.85rem; text-decoration:underline; color:var(--muted);
+}

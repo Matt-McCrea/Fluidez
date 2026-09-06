@@ -57,6 +57,16 @@ window.App = (function () {
     if (brand) { brand.style.cursor = 'pointer'; brand.addEventListener('click', function () { go('home'); }); }
 
     window.Shell.init();
+
+    // First launch: explain the app and place the learner, before anything else.
+    if (window.Onboarding && !window.Onboarding.seen()) {
+      window.Shell.openOverlay(false);
+      window.Onboarding.run(host, function () {
+        window.Shell.closeOverlay();
+        window.Shell.go('inicio');
+        if (window.Profile && window.Profile.applyTheme) window.Profile.applyTheme();
+      });
+    }
   });
 
   return { go: go };
