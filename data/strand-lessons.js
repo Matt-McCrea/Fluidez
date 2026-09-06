@@ -27207,6 +27207,47 @@ window.STRAND_LESSONS = [
     { id: 'p:estadoanimoalegriaC1:cloze', kind: 'cloze', text: 'Se puso a dar ___ de alegría al enterarse. (gesto físico de alegría)', accept: ['saltos'] },
     { id: 'p:estadoanimoalegriaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "¿cómo va eso?" y "¿por qué tienes esa cara?"?', back: 'la primera es casual, casi de saludo; la segunda parte de una expresión facial visible que sugiere un problema concreto' }
   ]
+},
+
+{
+  id: 'fn-tristeza-placer-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:513', 'funciones:C1:514', 'funciones:C1:515', 'funciones:C1:516', 'funciones:C1:518', 'funciones:C1:519',
+         'funciones:C1:520', 'funciones:C1:521', 'funciones:C1:530', 'funciones:C1:531', 'funciones:C1:532'],
+  title: 'Tristeza y placer en C1: "se me rompe el corazón" y "me parto de risa"',
+  summary: 'La tristeza en C1 se somatiza en el corazón ("se me rompe/parte/encoge") y llega hasta la visión distorsionada de "lo veo todo negro", mientras que el placer y la diversión llevan la risa al cuerpo con la misma intensidad: "me parto de risa".',
+  sections: [
+    { h: 'Tristeza: verbos directos', html: '<i>Sufro...</i> describe dolor emocional sostenido: <i>hemos sufrido mucho con lo de su hermano</i>. <i>Me afecta...</i> señala el impacto emocional de un hecho: <i>me afectó mucho que no hubiera tenido la confianza de decírmelo</i>. <i>Me entristece...</i> (algo causa tristeza) y <i>me entristezco...</i> (yo mismo me pongo triste) distinguen el origen de la emoción.' },
+    { h: 'Tristeza somatizada en el corazón', html: '<i>(Se) me rompe/parte/encoge el corazón...</i> lleva la tristeza al cuerpo, con gradación de intensidad: <i>se nos parte el corazón viendo lo mal que lo están pasando</i>.' },
+    { h: 'Tristeza intensificada', html: '<i>Me llena de tristeza...</i> y <i>siento pena/tristeza/pesar...</i> refuerzan la emoción con un verbo de "llenar" o "sentir": <i>siento una pena inmensa por él</i>. <i>Estoy destrozado/deshecho...</i> describe un estado de devastación emocional. <i>Lo veo todo negro</i> describe una visión pesimista generalizada de la situación, no solo tristeza puntual.' },
+    { h: 'Placer y diversión: llevar la risa al cuerpo', html: '<i>(Me) lo paso de maravilla...</i> describe pasarlo excepcionalmente bien: <i>se lo pasó de maravilla durante sus vacaciones</i>. <i>Me muero/me parto de risa</i> son hipérboles físicas para la risa intensa. <i>¡Cuánto/cómo me reí!</i> es la exclamación retrospectiva de una diversión pasada.' }
+  ],
+  exponents: [
+    { es: 'Se me rompe el corazón al verlo tan solo.', en: "It breaks my heart to see him so alone.", register: 'neutral' },
+    { es: 'Me parto de risa cada vez que veo ese vídeo.', en: "I crack up every time I see that video.", register: 'coloquial' },
+    { es: 'Estoy destrozado desde que se marchó.', en: "I've been devastated since he left.", register: 'neutral' },
+    { es: 'Lo pasamos de maravilla en la excursión.', en: 'We had a wonderful time on the trip.', register: 'neutral' },
+    { es: 'Siento un pesar enorme por lo que le ha pasado.', en: 'I feel enormous sorrow for what happened to him.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Me entristece ver este tipo de noticias.', en: 'It saddens me to see this kind of news.', note: 'la noticia es la causa de la tristeza' },
+    { es: 'Me entristecí al recordar aquellos momentos.', en: 'I became sad remembering those moments.', note: 'yo mismo experimento el cambio hacia la tristeza' }
+  ],
+  pitfalls: [
+    '"Me entristece" y "me entristezco" no son intercambiables: el primero describe algo externo que causa tristeza, el segundo describe el propio proceso de ponerse triste.',
+    '"Lo veo todo negro" no describe una tristeza puntual, sino una visión pesimista generalizada de la situación o del futuro.',
+    '"Me muero/me parto de risa" son exclusivamente coloquiales e hiperbólicas — en un registro formal conviene "me hizo mucha gracia" o "me resultó muy divertido".'
+  ],
+  examples: [
+    { es: 'Sufrió mucho durante aquellos años difíciles.', en: 'He suffered a great deal during those difficult years.' },
+    { es: 'Se me encoge el corazón cada vez que lo pienso.', en: 'My heart sinks every time I think about it.' },
+    { es: '¡Cómo me reí con esa película!', en: 'I laughed so much at that movie!' }
+  ],
+  probes: [
+    { id: 'p:tristezaplacerC1:entristeceentristezco', kind: 'mcq', q: '¿Qué diferencia hay entre "me entristece" y "me entristezco"?', options: ['Ninguna', 'El primero describe algo externo que causa tristeza; el segundo, el propio proceso de ponerse triste', 'Son intercambiables siempre'], answer: 1 },
+    { id: 'p:tristezaplacerC1:veotodonegro', kind: 'mcq', q: '"Lo veo todo negro" describe...', options: ['Un problema de vista', 'Una visión pesimista generalizada', 'Un momento de tristeza puntual sin más'], answer: 1 },
+    { id: 'p:tristezaplacerC1:cloze', kind: 'cloze', text: 'Me ___ de risa cada vez que veo ese vídeo. (hipérbole coloquial de risa)', accept: ['parto'] },
+    { id: 'p:tristezaplacerC1:recall', kind: 'recall', front: '¿Qué imagen física comparten "se me rompe el corazón" y "me parto de risa"?', back: 'ambas llevan la emoción al cuerpo de forma hiperbólica, una para la tristeza y otra para la diversión' }
+  ]
 }
 
 ];
