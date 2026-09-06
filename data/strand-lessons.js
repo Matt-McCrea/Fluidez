@@ -21515,6 +21515,301 @@ window.STRAND_LESSONS = [
     { id: 'p:argumentativaB2:cloze', kind: 'cloze', text: 'Un estudio ___ que los estudiantes que tocan música sacan mejores notas. (mostrar)', accept: ['muestra'] },
     { id: 'p:argumentativaB2:recall', kind: 'recall', front: '¿Qué hace la contraargumentación antes de darle la vuelta a la objeción?', back: 'nombra la objeción más fuerte de forma justa, sin ignorarla' }
   ]
+},
+
+/* ============================================================================
+ * BATCH — C1 discourse, the 7 remaining items (WORKLIST.md § C1 · discourse)
+ * completes C1 · discourse (12/12). Follows the density and register spread
+ * of the nine existing C1 discourse lessons (dc-atenuacion-c1 etc.).
+ * ========================================================================== */
+{
+  id: 'dc-mantenimiento-referente-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:1', 'tacticas_pragmaticas:C1:2', 'tacticas_pragmaticas:C1:3', 'tacticas_pragmaticas:C1:4',
+         'tacticas_pragmaticas:C1:5', 'tacticas_pragmaticas:C1:6', 'tacticas_pragmaticas:C1:7'],
+  title: 'Mantener el referente: proformas globalizadoras',
+  summary: 'B2 tracked a single referent across sentences; C1 tracks an entire preceding CLAIM. "Todo ello" and "esto" do not stand in for a noun — they gather several sentences into one manageable object, and choosing the wrong globalizing proform, or omitting a noun that was never quite named, are the two ways this goes wrong at this level.',
+  sections: [
+    { h: 'Anáfora que reparte: estos... aquellos...', html: '<i>Vi jóvenes y ancianos. Estos parecían desvalidos y aquellos desilusionados.</i> — "estos/aquellos" split a single earlier sentence into two separate referents, assigning one predicate to each without repeating either noun.' },
+    { h: 'Proformas globalizadoras: recoger todo un enunciado', html: '<i>Paro, delincuencia, drogas: todo ello inquieta a la sociedad</i> gathers three separate nouns into one neuter referent. Used cataphorically, the same move announces a claim before stating it: <i>Esto es lo que ocurre: el paro aumenta, la vivienda sube.</i>' },
+    { h: 'Elipsis catafórica en oraciones atributivas', html: '<i>El de Carmen es un buen coche</i> omits the noun ("coche") entirely, recoverable only from the attribute that follows — a construction with no B2 equivalent, since B2\'s ellipsis always needed the noun already mentioned nearby.' },
+    { h: 'Sustitución léxica: valoración o conocimiento enciclopédico', html: '<i>Un devastador terremoto azotó El Salvador... La catástrofe causó miles de víctimas</i> substitutes an evaluative noun for the original one. <i>Cervantes nació en 1547... El insigne escritor...</i> substitutes an attribute drawn from shared world knowledge — it works only if the reader already knows who Cervantes was.' }
+  ],
+  exponents: [
+    { es: 'Vi jóvenes y ancianos. Estos parecían desvalidos y aquellos desilusionados.', en: 'I saw young people and old people. The former seemed helpless and the latter disillusioned.', register: 'escrito', note: 'estos/aquellos reparten un referente colectivo anterior en dos' },
+    { es: 'Paro, delincuencia, drogas: todo ello inquieta a la sociedad.', en: 'Unemployment, crime, drugs: all of it worries society.', register: 'formal', note: 'proforma globalizadora anafórica — recoge tres nombres en un solo referente' },
+    { es: 'Esto es lo que ocurre: el paro aumenta, la vivienda sube.', en: "This is what's happening: unemployment is rising, housing is going up.", register: 'neutral', note: 'proforma globalizadora catafórica — anuncia el enunciado antes de darlo' },
+    { es: 'El de Carmen es un buen coche.', en: "Carmen's is a good car.", register: 'coloquial', note: 'elipsis del núcleo, recuperable solo por el atributo "buen coche"' },
+    { es: 'Un devastador terremoto azotó la región. La catástrofe causó miles de víctimas.', en: 'A devastating earthquake struck the region. The catastrophe caused thousands of victims.', register: 'escrito', note: 'sustitución por una calificación valorativa, típica de la noticia' },
+    { es: 'Cervantes nació en Alcalá de Henares. El insigne escritor marcó toda una época.', en: 'Cervantes was born in Alcalá de Henares. The illustrious writer defined an entire era.', register: 'escrito', note: 'sustitución basada en conocimiento enciclopédico compartido con el lector' }
+  ],
+  pitfalls: [
+    'Las proformas globalizadoras (<i>esto, eso, ello</i>) no sustituyen a un solo nombre — recogen todo un enunciado o una lista entera, y usarlas para un referente simple y único suena forzado.',
+    'La elipsis catafórica en oraciones atributivas (<i>el de Carmen</i>) exige que el atributo que sigue identifique sin ambigüedad qué se ha omitido; sin ese atributo, la frase queda incompleta.',
+    'La sustitución por conocimiento enciclopédico (<i>el insigne escritor</i> por Cervantes) presupone que el lector comparte ese conocimiento — usada con un referente menos conocido, simplemente no se entiende.'
+  ],
+  examples: [
+    { es: 'Sequía, incendios, cosechas perdidas: todo ello ha marcado este verano.', en: 'Drought, fires, lost harvests: all of it has marked this summer.' },
+    { es: 'Escucha esto: el proyecto se cancela y nadie ha dado explicaciones.', en: "Listen to this: the project is being cancelled and nobody has given explanations." },
+    { es: 'Franco murió en 1975. El dictador había gobernado el país durante casi cuarenta años.', en: 'Franco died in 1975. The dictator had ruled the country for almost forty years.' }
+  ],
+  probes: [
+    { id: 'p:mantrefC1:global', kind: 'mcq', q: '"Paro, delincuencia, drogas: todo ello inquieta." ¿A qué se refiere "ello"?', options: ['Solo a "drogas"', 'A los tres sustantivos anteriores juntos', 'A nada en concreto'], answer: 1 },
+    { id: 'p:mantrefC1:elipsis', kind: 'mcq', q: '"El de Carmen es un buen coche." ¿Qué permite recuperar el sustantivo omitido?', options: ['El nombre "Carmen"', 'El atributo "buen coche" que sigue', 'El contexto de la conversación anterior'], answer: 1 },
+    { id: 'p:mantrefC1:cloze', kind: 'cloze', text: 'Paro, delincuencia, drogas: todo ___ inquieta a la sociedad. (proforma globalizadora)', accept: ['ello'] },
+    { id: 'p:mantrefC1:recall', kind: 'recall', front: '¿Qué presupone la sustitución por conocimiento enciclopédico ("el insigne escritor")?', back: 'que el lector ya sabe de quién se habla, sin que el texto lo repita' }
+  ]
+},
+
+{
+  id: 'dc-deixis-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:42', 'tacticas_pragmaticas:C1:43', 'tacticas_pragmaticas:C1:44', 'tacticas_pragmaticas:C1:45',
+         'tacticas_pragmaticas:C1:46', 'tacticas_pragmaticas:C1:47', 'tacticas_pragmaticas:C1:48', 'tacticas_pragmaticas:C1:49',
+         'tacticas_pragmaticas:C1:50'],
+  title: 'La deixis en C1: el pronombre que desambigua, el que despecia',
+  summary: 'A subject pronoun Spanish normally drops can, at C1, be the only thing standing between two readings of the same sentence — and a demonstrative that elsewhere just points to something nearby can, aimed at a person, turn into open contempt. Neither fact is taught at lower levels because neither is needed there.',
+  sections: [
+    { h: 'El pronombre que desambigua', html: 'En una construcción absoluta de infinitivo o gerundio, el sujeto suele omitirse — pero si se omitiera aquí, la frase sería ambigua: <i>Al llegar él, todos se callaron</i> deja claro que quien llega no es el propio hablante ni el oyente, algo que <i>al llegar, todos se callaron</i> no garantiza.' },
+    { h: 'El pronombre que enfatiza: reduplicación', html: '<i>Luis limpia el coche él</i> añade el pronombre tras el verbo, ya conjugado para "él", precisamente para subrayar que lo hace él mismo, sin ayuda — una estructura que no existe en B2 y que suena redundante si no se conoce su función enfática.' },
+    { h: 'El dativo de interés y el aspecto', html: '<i>Me comí un pollo</i> funciona; <i>*Me comí pollo</i> no. El dativo aquí no marca solo quién se beneficia — exige un objeto delimitado (un pollo entero, no la sustancia "pollo"), porque describe una acción completada de principio a fin, no un proceso genérico.' },
+    { h: 'El demostrativo despectivo, y la deixis textual', html: '<i>No quiero saber nada de ese; es una mala persona</i> usa "ese" para desdeñar a alguien, un uso posible solo con referentes humanos. La deixis textual, por su parte, señala partes del propio texto: <i>más abajo, hasta aquí, más adelante</i>, y fórmulas fijas como <i>el que suscribe, los abajo firmantes</i> se autoidentifican sin usar "yo" ni "nosotros".' }
+  ],
+  exponents: [
+    { es: 'Al llegar él, todos se callaron.', en: 'When he arrived, everyone fell silent.', register: 'neutral', note: 'pronombre sujeto en construcción absoluta, mecanismo desambiguador' },
+    { es: 'Luis limpia el coche él, no le hace falta ayuda.', en: 'Luis cleans the car himself, he doesn\'t need help.', register: 'coloquial', note: 'reduplicación enfática del pronombre pospuesto' },
+    { es: 'Me comí un pollo entero yo solo.', en: 'I ate a whole chicken all by myself.', register: 'coloquial', note: 'dativo de interés ligado al aspecto — exige un objeto delimitado' },
+    { es: 'No quiero saber nada de ese; es una mala persona.', en: "I don't want anything to do with that one; he's a bad person.", register: 'coloquial', note: 'demostrativo despectivo, solo con referente humano' },
+    { es: 'La casa esa de ahí es la de Luis.', en: 'That house right there is Luis\'s.', register: 'coloquial', note: 'demostrativo pospuesto con puro valor localizador, sin matiz despectivo' },
+    { es: 'Los abajo firmantes hacen constar su desacuerdo con la medida.', en: 'The undersigned wish to record their disagreement with the measure.', register: 'escrito', note: 'fórmula fija de autoidentificación, sin "nosotros"' },
+    { es: 'Como se explicó más arriba, la medida no afecta a los contratos vigentes.', en: 'As explained above, the measure does not affect existing contracts.', register: 'escrito', note: 'deixis textual — señala otra parte del propio texto' }
+  ],
+  pitfalls: [
+    'El pronombre en construcciones absolutas (<i>al llegar él...</i>) no es enfático por defecto — a menudo es puramente desambiguador, y omitirlo cuando el sujeto no es obvio deja la frase genuinamente ambigua.',
+    'El demostrativo pospuesto (<i>la casa esa</i>) no es despectivo con referentes no humanos — solo lo es aplicado a personas (<i>ese</i>, hablando de alguien).',
+    'El dativo de interés en <i>me comí un pollo</i> exige un objeto delimitado y contable — con un sustantivo no contable o genérico (<i>*me comí pollo</i>), la construcción es agramatical, no simplemente rara.'
+  ],
+  examples: [
+    { es: 'Al terminar ella su turno, cerraron la tienda.', en: 'When she finished her shift, they closed the shop.' },
+    { es: 'Se bebió el café él solito, sin compartir nada.', en: 'He drank the coffee all by himself, without sharing any.' },
+    { es: 'El que suscribe declara no tener ninguna relación con la empresa mencionada.', en: 'The undersigned declares having no relationship with the aforementioned company.' }
+  ],
+  probes: [
+    { id: 'p:deixisC1:desambigua', kind: 'mcq', q: '¿Por qué aparece "él" en "al llegar él, todos se callaron"?', options: ['Por énfasis, sin más', 'Para desambiguar quién llega', 'Es un error, sobra'], answer: 1 },
+    { id: 'p:deixisC1:dativo', kind: 'mcq', q: '¿Por qué "*me comí pollo" es agramatical?', options: ['Falta un artículo', 'El dativo de interés exige un objeto delimitado, no genérico', 'El verbo está mal conjugado'], answer: 1 },
+    { id: 'p:deixisC1:cloze', kind: 'cloze', text: 'No quiero saber nada de ___; es una mala persona. (demostrativo despectivo)', accept: ['ese'] },
+    { id: 'p:deixisC1:recall', kind: 'recall', front: '¿Con qué tipo de referente puede ser despectivo el demostrativo "ese"?', back: 'solo con referentes humanos' }
+  ]
+},
+
+{
+  id: 'dc-rematizacion-tematizacion-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:58', 'tacticas_pragmaticas:C1:59', 'tacticas_pragmaticas:C1:60', 'tacticas_pragmaticas:C1:61',
+         'tacticas_pragmaticas:C1:62', 'tacticas_pragmaticas:C1:63', 'tacticas_pragmaticas:C1:64', 'tacticas_pragmaticas:C1:65',
+         'tacticas_pragmaticas:C1:66', 'tacticas_pragmaticas:C1:67', 'tacticas_pragmaticas:C1:68'],
+  title: 'Rematización y tematización en C1: el orden que hace la pregunta',
+  summary: 'B2 fronted an object and doubled it with a pronoun; C1 does something B2 cannot — front an indefinite object with NO doubling at all, and postpone a subject inside a question that already has its own interrogative word. Both depend on the object being indefinite or generic, which is exactly what B2\'s tematización required to be definite.',
+  sections: [
+    { h: 'Posposición del sujeto: tema-rema-tema', html: 'La misma información se puede organizar de dos formas: <i>Llamó Elena esta mañana</i> (rema-tema) o <i>Elena llamó esta mañana</i> (tema-rema) — la primera responde implícitamente a "¿quién llamó?", la segunda a "¿qué hizo Elena?". En interrogativas indirectas el sujeto se pospone de forma casi obligatoria: <i>No sé a quién ha llamado Antonio</i>, nunca <i>*no sé a quién Antonio ha llamado</i>.' },
+    { h: '"Ni siquiera" y los marcadores excluyentes', html: '<i>Ni siquiera él vino</i> / <i>No vino ni siquiera él</i> — el marcador incluyente puede preceder o seguir al elemento que resalta. Los excluyentes (<i>sencillamente, simplemente, verdaderamente</i>) hacen lo contrario: <i>Vendrán simplemente Marta y Pepe</i> descarta a cualquier otro asistente posible.' },
+    { h: 'Estructuras ecuacionales condicionales', html: 'Una variante más elaborada que la ecuacional simple de B2 usa <i>si... fue</i>: <i>Juan compró un libro a María</i> se reescribe como <i>Si algo compró Juan a María fue un libro</i>, aislando el objeto como la única información nueva sin necesidad de "quien" ni "cuando".' },
+    { h: 'Anteposición SIN doblado: objetos indefinidos', html: '<i>Café no bebo</i>, <i>Discos tienen a montones</i> — a diferencia de la tematización de B2, que exigía doblar el pronombre con un objeto definido (<i>el libro lo compré</i>), un objeto indefinido o genérico antepuesto NO se dobla. Doblar aquí (<i>*café no lo bebo</i>, con ese valor genérico) suena forzado.' },
+    { h: 'Relativas topicalizadas, y el adjetivo aislado', html: '<i>Lo que le dijiste ayer a Vega estuvo genial</i> y <i>eso que dices es una tontería</i> convierten toda una proposición en el tema de la frase. Un adjetivo puede aislarse igual, al principio, como comentario topicalizado: <i>Orgullosa, respondió al interrogatorio</i>, distinto de la posición neutra <i>respondió orgullosa al interrogatorio</i>.' }
+  ],
+  exponents: [
+    { es: 'Llamó Elena esta mañana, no hace falta que te preocupes más.', en: 'Elena called this morning, you don\'t need to worry anymore.', register: 'neutral', note: 'posposición del sujeto — responde implícitamente a "¿quién llamó?"' },
+    { es: 'No sé a quién ha llamado Antonio.', en: "I don't know who Antonio called.", register: 'neutral', note: 'posposición obligatoria del sujeto en interrogativa indirecta' },
+    { es: 'Ni siquiera él vino a la reunión.', en: 'Not even he came to the meeting.', register: 'neutral', note: 'marcador incluyente, puede ir antes o después del elemento resaltado' },
+    { es: 'Vendrán simplemente Marta y Pepe, nadie más.', en: 'Only Marta and Pepe will come, nobody else.', register: 'neutral', note: 'marcador excluyente' },
+    { es: 'Si algo compró Juan a María fue un libro, no unas flores.', en: 'If Juan bought María anything, it was a book, not flowers.', register: 'formal', note: 'estructura ecuacional condicional, aísla el elemento nuevo' },
+    { es: 'Café no bebo, prefiero el té.', en: "Coffee I don't drink, I prefer tea.", register: 'coloquial', note: 'anteposición sin doblado — objeto genérico, no definido' },
+    { es: 'Discos tienen a montones, no sé ni dónde los ponen.', en: 'Records they have loads of, I don\'t even know where they put them.', register: 'coloquial', note: 'mismo patrón, sin pronombre doblado' },
+    { es: 'Eso que dices es una tontería como una casa.', en: "What you're saying is a huge load of nonsense.", register: 'coloquial', note: 'relativa topicalizada, convierte toda una idea en el tema' },
+    { es: 'Orgullosa, respondió al interrogatorio sin dudar un segundo.', en: 'Proudly, she answered the questioning without hesitating for a second.', register: 'escrito', note: 'adjetivo topicalizado, aislado al principio de la frase' }
+  ],
+  pitfalls: [
+    'La anteposición sin doblado (<i>café no bebo</i>) solo funciona con objetos indefinidos o genéricos — con un objeto definido, el pronombre doblado sigue siendo obligatorio, como en B2 (<i>el café, no me lo bebo frío</i>).',
+    'La posposición del sujeto en interrogativas indirectas no es estilística sino casi obligatoria: <i>*no sé a quién Antonio ha llamado</i> suena claramente agramatical, no solo marcado.',
+    'La estructura ecuacional condicional (<i>si algo... fue...</i>) presupone que ya se sabe que Juan compró algo a María — no introduce esa información, solo aísla cuál fue el objeto exacto.'
+  ],
+  examples: [
+    { es: 'Ni siquiera contestó al teléfono.', en: 'He didn\'t even answer the phone.' },
+    { es: 'Si alguien avisó a la prensa fue el propio alcalde.', en: 'If anyone tipped off the press, it was the mayor himself.' },
+    { es: 'Vino no compro, prefiero la cerveza.', en: "Wine I don't buy, I prefer beer." }
+  ],
+  probes: [
+    { id: 'p:rematemaC1:doblado', kind: 'mcq', q: '"Café no bebo." ¿Por qué no se dobla el pronombre aquí?', options: ['Porque el objeto es genérico/indefinido', 'Porque falta el artículo', 'Es un error de la frase'], answer: 0 },
+    { id: 'p:rematemaC1:posicion', kind: 'mcq', q: '¿Cuál es la posición obligatoria del sujeto en "No sé a quién ___ Antonio."?', options: ['Antes del verbo', 'Después del verbo, pospuesto', 'Puede ir en cualquier posición'], answer: 1 },
+    { id: 'p:rematemaC1:cloze', kind: 'cloze', text: 'Si algo compró Juan a María ___ un libro. (fue)', accept: ['fue'] },
+    { id: 'p:rematemaC1:recall', kind: 'recall', front: '¿Qué tipo de objeto permite la anteposición SIN pronombre doblado?', back: 'un objeto indefinido o genérico (café no bebo, discos tienen a montones)' }
+  ]
+},
+
+{
+  id: 'dc-valores-ilocutivos-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:103', 'tacticas_pragmaticas:C1:104', 'tacticas_pragmaticas:C1:105', 'tacticas_pragmaticas:C1:106',
+         'tacticas_pragmaticas:C1:107', 'tacticas_pragmaticas:C1:108', 'tacticas_pragmaticas:C1:109', 'tacticas_pragmaticas:C1:110',
+         'tacticas_pragmaticas:C1:111', 'tacticas_pragmaticas:C1:112', 'tacticas_pragmaticas:C1:113'],
+  title: 'Lo que hace una pregunta en C1: saludo, crítica, eco recapitulativo',
+  summary: 'A question at C1 can be a greeting, a criticism disguised entirely by intonation, or an echo that exists purely to launch an emphatic answer nobody actually doubted. None of these carries a single lexical marker — the same words that greet a friend can, with a different tempo, dress down an employee.',
+  sections: [
+    { h: 'Preguntas neutras: saludo, permiso, ofrecimiento', html: '<i>¿Cómo andamos?</i> no pregunta información — es un saludo con "nosotros" sociativo. <i>¿Molesto mucho si abro la ventana?</i> pide permiso; <i>¿Te echo una mano?</i> ofrece ayuda. Ninguna espera una respuesta literal a la pregunta gramatical.' },
+    { h: 'La pregunta-crítica: solo la entonación la marca', html: '<i>¿Por qué te empeñas siempre en ser tan pesimista?</i>, dicha con tonema descendente, intensidad elevada y más velocidad de lo normal, deja de ser una pregunta genuina y se convierte en un reproche. Nada en el léxico lo señala — solo la voz.' },
+    { h: 'Ecos recapitulativos: intensificar, no aclarar', html: 'A diferencia del eco de B2, que pedía aclarar algo no entendido, el eco recapitulativo de C1 repite una pregunta ya entendida perfectamente, como paso previo a una respuesta enfática: <i>-¿Te gusta la comida china? -¿Que si me gusta? ¡Me encanta!</i> El eco también puede mostrar desacuerdo con una orden: <i>-¡Vete! -¿Cómo que me vaya?</i>' },
+    { h: 'Confirmativas rituales y anticipativas', html: 'En ciertos guiones sociales fijos, una pregunta retórica espera una respuesta ritual predecible: <i>-¿No me receta nada, doctor? -Sí, claro, tome este jarabe.</i> Una interrogativa anticipativa, en cambio, adelanta y cuestiona el razonamiento implícito del oyente: tras <i>Has estado un poco duro con él</i>, la pregunta <i>¿Es que no te resulta simpático?</i> no pide información — propone una explicación y la pone en duda a la vez.' }
+  ],
+  exponents: [
+    { es: '¿Cómo andamos por aquí?', en: 'How are things around here?', register: 'coloquial', note: 'saludo con "nosotros" sociativo, no pregunta real' },
+    { es: '¿Molesto mucho si abro la ventana?', en: 'Would it bother you much if I opened the window?', register: 'formal', note: 'petición de permiso disfrazada de pregunta neutra' },
+    { es: '¿Te echo una mano con eso?', en: 'Shall I give you a hand with that?', register: 'coloquial', note: 'ofrecimiento de ayuda' },
+    { es: '¿Por qué te empeñas siempre en ser tan pesimista?', en: "Why do you always insist on being so pessimistic?", register: 'coloquial', note: 'pregunta-crítica: marcada solo por entonación descendente e intensidad' },
+    { es: '-¿Te gusta la comida china? -¿Que si me gusta? ¡Me encanta!', en: '"Do you like Chinese food?" "Do I like it? I love it!"', register: 'coloquial', note: 'eco recapitulativo para intensificar la respuesta, no para aclarar' },
+    { es: '-¡Vete de una vez! -¿Cómo que me vaya?', en: '"Just go already!" "What do you mean, go?"', register: 'coloquial', note: 'eco recapitulativo que muestra desacuerdo con una orden' },
+    { es: '-¿No me receta nada, doctor? -Sí, claro, tome este jarabe dos veces al día.', en: '"Aren\'t you going to prescribe me anything, doctor?" "Yes, of course, take this syrup twice a day."', register: 'formal', note: 'confirmativa ritual dentro de un guion social predecible' },
+    { es: 'Has estado un poco duro con él. ¿Es que no te resulta simpático?', en: "You were a bit hard on him. Is it that you don't find him likeable?", register: 'neutral', note: 'interrogativa anticipativa — propone y cuestiona a la vez el razonamiento del oyente' }
+  ],
+  pitfalls: [
+    'La pregunta-crítica no lleva ninguna marca léxica — se reconoce solo por la entonación descendente, la intensidad y la velocidad; leída en un texto, es indistinguible de una pregunta neutra.',
+    'El eco recapitulativo de C1 no busca aclaración, al contrario que el eco de B2: repite algo ya entendido, precisamente para tomar impulso antes de una respuesta enfática o de un desacuerdo.',
+    'Las confirmativas rituales (<i>¿no me receta nada, doctor?</i>) solo funcionan dentro de guiones sociales muy fijos — fuera de ese contexto, sonarían como una queja genuina, no como un ritual esperado.'
+  ],
+  examples: [
+    { es: '¿Qué tal se te ha dado el examen?', en: 'How did the exam go for you?' },
+    { es: '-¿Vienes a la fiesta? -¿Que si voy? ¡Por supuesto que voy!', en: '"Are you coming to the party?" "Am I coming? Of course I am!"' },
+    { es: 'Le has hablado muy fríamente. ¿Es que ya no confías en él?', en: 'You spoke to him very coldly. Is it that you no longer trust him?' }
+  ],
+  probes: [
+    { id: 'p:ilocutivosC1:critica', kind: 'mcq', q: '¿Qué marca que una pregunta como "¿por qué te empeñas en...?" sea una crítica y no información real?', options: ['Una palabra concreta en la frase', 'La entonación descendente, la intensidad y la velocidad', 'El uso del subjuntivo'], answer: 1 },
+    { id: 'p:ilocutivosC1:eco', kind: 'mcq', q: '¿Qué busca el eco recapitulativo de C1, a diferencia del eco de B2?', options: ['Aclarar algo que no se entendió', 'Intensificar una respuesta o mostrar desacuerdo con algo ya entendido', 'Pedir que se repita la pregunta'], answer: 1 },
+    { id: 'p:ilocutivosC1:cloze', kind: 'cloze', text: '-¡Vete! -¿___ que me vaya? (eco de desacuerdo)', accept: ['Cómo', 'cómo'] },
+    { id: 'p:ilocutivosC1:recall', kind: 'recall', front: '¿Qué hace una interrogativa anticipativa como "¿es que no te resulta simpático?"?', back: 'propone una explicación del comportamiento del oyente y la cuestiona a la vez' }
+  ]
+},
+
+{
+  id: 'dc-negacion-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:125', 'tacticas_pragmaticas:C1:126', 'tacticas_pragmaticas:C1:127', 'tacticas_pragmaticas:C1:129',
+         'tacticas_pragmaticas:C1:130', 'tacticas_pragmaticas:C1:131', 'tacticas_pragmaticas:C1:132', 'tacticas_pragmaticas:C1:134',
+         'tacticas_pragmaticas:C1:135', 'tacticas_pragmaticas:C1:136', 'tacticas_pragmaticas:C1:137'],
+  title: 'Negación en C1: velada, diluida, obviada',
+  summary: 'B2 distinguished a handful of ways to say "no"; C1 has ways of negating that never actually say it. A whole exclamation can mean "no" without the word appearing anywhere in it, and a negative can spread itself across an indefinite phrase for an effect no plain "no" can match.',
+  sections: [
+    { h: 'Negación velada: el preludio concesivo', html: '<i>-¿No te gusta esta novela con lo buena que es? -No, si yo no digo que sea mala, pero me parece demasiado pesada.</i> El "no, si yo no digo que..." pospone el verdadero desacuerdo tras un preludio que concede parcialmente, exactamente el mismo movimiento que la atenuación dialógica de B2, ahora fijado en una fórmula reconocible.' },
+    { h: 'Negación diluida: sin la palabra "no"', html: '<i>En parte alguna he visto cosa parecida</i> equivale a <i>No he visto nada parecido en ninguna parte</i>, pero reparte la negación sobre una frase indefinida antepuesta, sin que aparezca "no" en ningún punto — un registro marcadamente literario o formal.' },
+    { h: 'Negación obviada: negar sin decir "no"', html: '<i>-¿Te han dado el trabajo? -¡Qué va!</i> Toda una familia de exclamaciones fijas — <i>¡qué va!, todo lo contrario, es que..., no faltaba más</i> — niega sin usar jamás la palabra "no", y a menudo reorienta la conversación hacia lo que sí ocurrió.' },
+    { h: 'Refuerzo: también/tampoco, y expresiones que exigen "no"', html: '<i>Yo no compré el periódico tampoco</i> hace eco de una negación anterior ni siquiera enunciada, solo supuesta. Ciertas expresiones (<i>en la/mi vida, mucho menos, gran cosa, la menor idea, el más mínimo error</i>) son de polaridad negativa estricta: exigen "no" delante del verbo, y sin él resultan agramaticales, no simplemente raras: <i>*Lo he visto en mi vida</i>.' },
+    { h: '"Ni" en todas sus formas', html: '<i>Ni una palabra, ni ganas, ni falta que hace</i> (ni + sustantivo); <i>ni pensarlo, ni hablar</i> (ni + infinitivo); <i>-¿Estás triste? -Ni siquiera</i> (ni siquiera, solo, como respuesta que niega incluso la premisa de la pregunta); y fórmulas fijas para denegar permiso: <i>ni lo sueñes, ni loco</i>.' }
+  ],
+  exponents: [
+    { es: '-¿No te gusta esta novela? -No, si yo no digo que sea mala, pero me parece pesada.', en: '"Don\'t you like this novel?" "No, I\'m not saying it\'s bad, but I find it tedious."', register: 'coloquial', note: 'negación velada — preludio concesivo antes del verdadero desacuerdo' },
+    { es: 'En parte alguna he visto cosa parecida.', en: 'Nowhere have I seen anything like it.', register: 'escrito', note: 'negación diluida — sin la palabra "no" en ningún punto' },
+    { es: '-¿Te han dado el trabajo? -¡Qué va! Ni me han llamado.', en: '"Did you get the job?" "No way! They haven\'t even called me."', register: 'coloquial', note: 'negación obviada — niega sin usar jamás "no"' },
+    { es: 'Yo no compré el periódico tampoco.', en: "I didn't buy the newspaper either.", register: 'neutral', note: 'tampoco hace eco de una negación anterior meramente supuesta, no enunciada' },
+    { es: 'No tengo la menor idea de qué está pasando aquí.', en: "I haven't the faintest idea what's going on here.", register: 'neutral', note: 'superlativo partitivo de polaridad negativa estricta — exige "no"' },
+    { es: 'En modo alguno voy a permitir que se cancele el proyecto.', en: 'I will in no way allow the project to be cancelled.', register: 'formal', note: 'posposición de "alguno" tras "modo", registro elevado' },
+    { es: '-¿Vamos al cine esta noche? -Ni pensarlo, mañana madrugo.', en: '"Shall we go to the cinema tonight?" "Not a chance, I\'m up early tomorrow."', register: 'coloquial', note: 'ni + infinitivo, rechazo tajante' },
+    { es: '-¿Estás triste por lo que pasó? -Ni siquiera.', en: '"Are you sad about what happened?" "Not even that."', register: 'coloquial', note: 'ni siquiera como respuesta autónoma, niega incluso la premisa de la pregunta' }
+  ],
+  pitfalls: [
+    'Las expresiones de polaridad negativa estricta (<i>en la vida, la menor idea, gran cosa</i>) son agramaticales sin "no" delante del verbo — no es una cuestión de estilo, sino de gramaticalidad.',
+    'La negación diluida (<i>en parte alguna he visto...</i>) pertenece a un registro claramente literario o formal; en el habla cotidiana, la negación explícita con "no" es lo esperado.',
+    '"Ni siquiera" como respuesta autónoma no significa simplemente "no" — niega incluso la premisa implícita en la pregunta, sugiriendo que ni siquiera esa reacción mínima se ha producido.'
+  ],
+  examples: [
+    { es: 'No, si yo no digo que esté mal el plan, pero me parece precipitado.', en: "No, I'm not saying the plan is bad, but it seems rushed to me." },
+    { es: 'No se permite el más mínimo error en este proceso.', en: 'Not the slightest error is permitted in this process.' },
+    { es: '-¿Ya has terminado? -Ni de broma, esto lleva su tiempo.', en: '"Have you finished already?" "Not a chance, this takes its time."' }
+  ],
+  probes: [
+    { id: 'p:negacionC1:diluida', kind: 'mcq', q: '"En parte alguna he visto cosa parecida." ¿Aparece la palabra "no" en algún punto?', options: ['Sí, al principio', 'No, la negación se reparte sin usar "no"', 'Sí, al final'], answer: 1 },
+    { id: 'p:negacionC1:obviada', kind: 'mcq', q: '"-¿Te han dado el trabajo? -¡Qué va!" ¿Qué tipo de negación es esta?', options: ['Negación velada, con preludio', 'Negación obviada, sin decir "no"', 'Negación diluida'], answer: 1 },
+    { id: 'p:negacionC1:cloze', kind: 'cloze', text: 'No tengo la ___ idea de qué está pasando. (superlativo partitivo)', accept: ['menor'] },
+    { id: 'p:negacionC1:recall', kind: 'recall', front: '¿Qué hace "tampoco" en "yo no compré el periódico tampoco"?', back: 'hace eco de una negación anterior que ni siquiera se ha enunciado, solo se supone' }
+  ]
+},
+
+{
+  id: 'dc-intensificacion-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:182', 'tacticas_pragmaticas:C1:183', 'tacticas_pragmaticas:C1:184', 'tacticas_pragmaticas:C1:185',
+         'tacticas_pragmaticas:C1:186', 'tacticas_pragmaticas:C1:187', 'tacticas_pragmaticas:C1:188', 'tacticas_pragmaticas:C1:189',
+         'tacticas_pragmaticas:C1:190', 'tacticas_pragmaticas:C1:191', 'tacticas_pragmaticas:C1:192', 'tacticas_pragmaticas:C1:193',
+         'tacticas_pragmaticas:C1:194', 'tacticas_pragmaticas:C1:195', 'tacticas_pragmaticas:C1:196', 'tacticas_pragmaticas:C1:197',
+         'tacticas_pragmaticas:C1:198', 'tacticas_pragmaticas:C1:202', 'tacticas_pragmaticas:C1:203', 'tacticas_pragmaticas:C1:205',
+         'tacticas_pragmaticas:C1:206', 'tacticas_pragmaticas:C1:207', 'tacticas_pragmaticas:C1:208', 'tacticas_pragmaticas:C1:210'],
+  title: 'Intensificar en C1: sufijos, entonación suspendida, el "que" que insiste',
+  summary: 'C1 intensification is mostly a matter of what is left UNSAID: a comparative left hanging with a rising tone reverses its own meaning, a consequence clause can be cut off entirely and still land, and a repeated "que" can insist on a claim that was never actually challenged.',
+  sections: [
+    { h: 'Sufijos: aumentativo, y un diminutivo que no reduce', html: 'Los sufijos aumentativos <i>-ón, -ote, -azo</i> intensifican el golpe o el tamaño: <i>el pelotazo del delantero</i>. El diminutivo, contra la intuición, también intensifica: <i>vale un dinerillo</i> no dice que sea barato, sino que cuesta bastante — el diminutivo suaviza el tono al mismo tiempo que reconoce una cifra alta.' },
+    { h: 'El artículo como intensificador', html: '<i>¡La cara que tiene tu sobrino!</i> y <i>¿has visto lo mal que cantó?</i> convierten un artículo (definido, o el neutro "lo") en el motor de una exclamación entera — no hay otra forma de lograr ese mismo efecto con un simple adjetivo.' },
+    { h: 'Estructuras suspendidas: el silencio como intensificador', html: 'Una comparativa con tonema ascendente y sin completar (<i>Javier es más gracioso ↑</i>) invierte irónicamente su sentido literal — significa que NO lo es. Una consecutiva puede cortarse igual, dejando el resultado a la imaginación: <i>¡Llovía tanto...!</i> nunca dice qué pasó, y no hace falta. Lo mismo ocurre con un condicional-amenaza: <i>Como me entere de que no has ido a clase...</i>' },
+    { h: '"Que" modalizador, y el eco que insiste', html: 'Un simple <i>que</i> antepuesto repite una afirmación con más fuerza cuando nadie la ha puesto en duda: <i>-Y no olvides llamarme. -Que sí, mamá.</i> El eco interrogativo-exclamativo hace lo mismo por repetición completa: <i>-Mañana llegaré tarde. -¿¡Cómo que llegarás tarde!?</i>' }
+  ],
+  exponents: [
+    { es: 'El portero no pudo parar el pelotazo del delantero.', en: "The goalkeeper couldn't stop the striker's thunderous shot.", register: 'coloquial', note: 'sufijo aumentativo -azo, intensifica el golpe' },
+    { es: 'Me gustaría regalarle la pulsera, pero es que vale un dinerillo.', en: "I'd like to give her the bracelet, but it costs a fair bit.", register: 'coloquial', note: 'diminutivo que intensifica, no reduce, el precio' },
+    { es: '¡La cara que ha puesto cuando se lo has dicho!', en: 'The look on his face when you told him!', register: 'coloquial', note: 'artículo + relativo como exclamación independiente' },
+    { es: 'No sabes lo mal que lo pasamos aquella noche.', en: 'You have no idea how badly we suffered that night.', register: 'neutral', note: 'lo + adjetivo + relativo, intensificador' },
+    { es: 'Javier es más gracioso, ¿eh?', en: 'Oh, Javier is SO funny, is he?', register: 'coloquial', note: 'comparativa suspendida con tonema ascendente — invierte el sentido, implica que no lo es' },
+    { es: '¡Llovía tanto aquella tarde...!', en: 'It was raining so hard that afternoon...!', register: 'coloquial', note: 'consecutiva suspendida, el resultado se deja a la imaginación' },
+    { es: 'Como me entere de que no has ido a clase, ya verás.', en: "If I find out you haven't gone to class, you'll see.", register: 'coloquial', note: 'condicional suspendido con "como", funciona como amenaza' },
+    { es: '-Y no olvides llamarme en cuanto llegues. -Que sí, mamá, que sí.', en: '"And don\'t forget to call me as soon as you arrive." "Yes, Mum, yes, I will."', register: 'coloquial', note: '"que" modalizador, repite una afirmación no cuestionada' },
+    { es: '-Mañana llegaré un poco tarde. -¿¡Cómo que llegarás tarde!?', en: '"I\'ll be a bit late tomorrow." "What do you mean, you\'ll be late!?"', register: 'coloquial', note: 'eco interrogativo-exclamativo, intensifica el reproche' },
+    { es: 'No me cabe la menor duda de que se ha hecho todo lo posible.', en: 'I have not the slightest doubt that everything possible has been done.', register: 'formal', note: 'fórmula performativa de refuerzo, típica del registro formal' }
+  ],
+  pitfalls: [
+    'El diminutivo no siempre reduce — en <i>vale un dinerillo</i> intensifica una cifra alta, suavizando el tono sin suavizar el hecho.',
+    'Una comparativa suspendida con tonema ascendente (<i>Javier es más gracioso ↑</i>) significa lo CONTRARIO de lo afirmado — leerla al pie de la letra invierte por completo la intención del hablante.',
+    'El "que" modalizador (<i>que sí, mamá</i>) presupone que la afirmación ya se hizo antes y ahora se repite con impaciencia — no es la primera vez que se dice, es una insistencia.'
+  ],
+  examples: [
+    { es: 'Se llevó un buen susto cuando escuchó el portazo.', en: 'He got quite a scare when he heard the door slam.' },
+    { es: '¡Vaya cara que has puesto al verlo!', en: 'What a face you pulled when you saw it!' },
+    { es: '-¿Seguro que puedes? -¡Que sí, que puedo, pesado!', en: '"Are you sure you can?" "Yes, I can, stop going on!"' }
+  ],
+  probes: [
+    { id: 'p:intensifC1:diminutivo', kind: 'mcq', q: '"Vale un dinerillo." ¿Qué hace aquí el diminutivo?', options: ['Reduce el precio real', 'Intensifica una cifra alta, suavizando el tono', 'No aporta ningún matiz'], answer: 1 },
+    { id: 'p:intensifC1:suspendida', kind: 'mcq', q: '"Javier es más gracioso ↑" (tonema ascendente, sin completar). ¿Qué significa realmente?', options: ['Que Javier es gracioso de verdad', 'Que Javier NO es gracioso — sentido irónico invertido', 'Que la frase está incompleta por error'], answer: 1 },
+    { id: 'p:intensifC1:cloze', kind: 'cloze', text: '-Y no olvides llamarme. -___ sí, mamá. ("que" modalizador)', accept: ['Que', 'que'] },
+    { id: 'p:intensifC1:recall', kind: 'recall', front: '¿Qué presupone el "que" modalizador antepuesto a una respuesta ("que sí, mamá")?', back: 'que la afirmación ya se hizo antes y se repite ahora con impaciencia' }
+  ]
+},
+
+{
+  id: 'dc-focalizacion-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  pcic: ['tacticas_pragmaticas:C1:240', 'tacticas_pragmaticas:C1:241', 'tacticas_pragmaticas:C1:242', 'tacticas_pragmaticas:C1:244',
+         'tacticas_pragmaticas:C1:245', 'tacticas_pragmaticas:C1:246', 'tacticas_pragmaticas:C1:247', 'tacticas_pragmaticas:C1:248'],
+  title: 'Focalizar en C1: el artículo que exclama, la dislocación que aclara',
+  summary: 'C1 focalization reaches for the definite article and the neuter "lo" to build whole exclamations with no separate exclamative word at all, and uses a falling tone AFTER the main clause to add or disambiguate an afterthought — a purely spoken device with no equivalent punctuation in writing.',
+  sections: [
+    { h: 'Marcadores excluyentes y cuantificador focal', html: '<i>Su oferta es sencillamente inaceptable</i> — "sencillamente" no describe cómo se rechaza, es lo único que queda tras excluir cualquier otra valoración posible. <i>Al menos Pablo me dijo la verdad</i> usa "al menos" para aislar a Pablo como la única excepción dentro de un grupo que, se presupone, no dijo la verdad.' },
+    { h: 'El artículo definido + relativa, como intensificador puro', html: '<i>No sabes el frío que hace</i> equivale a "hace mucho frío", pero con una fuerza que el adverbio simple no tiene — el artículo definido presenta el frío como algo ya conocido y directamente señalado, no como una cualidad cualquiera.' },
+    { h: 'El neutro "lo" + adjetivo/adverbio + relativa', html: '<i>Lo traviesos que son estos niños</i> y <i>¡lo bien que cantan!</i> hacen exactamente el mismo trabajo con adjetivos y adverbios: el neutro "lo" aísla la cualidad y la relativa la certifica como un hecho observado, no una opinión.' },
+    { h: 'La dislocación entonativa', html: '<i>Se había ido ya, la chica</i> y <i>vivo en Madrid, en un pueblo</i> añaden, tras una caída de tono, un elemento que aclara o precisa lo que se acaba de decir — una coma hablada que no tiene equivalente exacto en la puntuación escrita, y que sirve tanto para resaltar como para desambiguar.' }
+  ],
+  exponents: [
+    { es: 'Su oferta es sencillamente inaceptable.', en: 'Their offer is simply unacceptable.', register: 'formal', note: 'marcador excluyente — descarta cualquier otra valoración posible' },
+    { es: 'Al menos Pablo me dijo la verdad, que ya es algo.', en: 'At least Pablo told me the truth, which is something.', register: 'neutral', note: 'cuantificador focal excluyente, aísla la única excepción' },
+    { es: 'No sabes el frío que hace ahí fuera.', en: "You have no idea how cold it is out there.", register: 'coloquial', note: 'artículo definido + relativa, intensificador puro' },
+    { es: 'Lo traviesos que son estos niños, madre mía.', en: 'Goodness, how mischievous these kids are.', register: 'coloquial', note: 'neutro "lo" + adjetivo + relativa' },
+    { es: '¡Lo bien que cantan en ese coro!', en: 'How well they sing in that choir!', register: 'coloquial', note: 'mismo patrón con adverbio' },
+    { es: 'Tiene una cara que es de impresión.', en: 'He has quite the face on him.', register: 'coloquial', note: 'un/una + sustantivo + relativa, foco evaluativo' },
+    { es: '¡Cuántos bobos le habrán creído esa historia!', en: 'However many fools must have believed that story of his!', register: 'coloquial', note: 'conversión de aseveración en exclamación, con futuro perfecto conjetural' },
+    { es: 'Se había ido ya, la chica, cuando llegamos.', en: 'She had already left, the girl, by the time we arrived.', register: 'coloquial', note: 'dislocación a la derecha, tonema descendente — aclara el referente' }
+  ],
+  pitfalls: [
+    'El artículo definido o "lo" en estas construcciones no funciona como en su uso habitual — aquí existen únicamente para dar cuerpo gramatical a una exclamación entera, y no admiten traducirse palabra por palabra.',
+    'Los marcadores excluyentes (<i>sencillamente, simplemente</i>) no describen el modo de la acción — señalan que se ha descartado cualquier otra alternativa antes de llegar a esa única valoración.',
+    'La dislocación a la derecha (<i>se había ido ya, la chica</i>) es un fenómeno oral, con una caída de tono muy marcada — en un texto escrito formal, ese mismo contenido se reordena en lugar de dislocarse.'
+  ],
+  examples: [
+    { es: 'No sabes lo tarde que hemos llegado.', en: "You have no idea how late we arrived." },
+    { es: 'Al menos avisó de que no vendría.', en: 'At least he let us know he wouldn\'t come.' },
+    { es: '¡Dónde se habrá metido esta niña!', en: 'Wherever can this girl have got to!' }
+  ],
+  probes: [
+    { id: 'p:focalizC1:articulo', kind: 'mcq', q: '"No sabes el frío que hace." ¿Qué función tiene el artículo "el" aquí?', options: ['Ninguna especial, es el uso normal', 'Intensifica la cualidad, como un adverbio reforzado', 'Marca que el frío ya se mencionó antes'], answer: 1 },
+    { id: 'p:focalizC1:excluyente', kind: 'mcq', q: '"Su oferta es sencillamente inaceptable." ¿Qué hace "sencillamente"?', options: ['Describe el modo de rechazar', 'Excluye cualquier otra valoración posible, dejando solo esa', 'Suaviza la crítica'], answer: 1 },
+    { id: 'p:focalizC1:cloze', kind: 'cloze', text: '¡___ bien que cantan! (neutro + adverbio)', accept: ['Lo', 'lo'] },
+    { id: 'p:focalizC1:recall', kind: 'recall', front: '¿Qué hace la dislocación a la derecha ("se había ido ya, la chica")?', back: 'añade, tras una caída de tono, un elemento que aclara o precisa el referente' }
+  ]
 }
 
 ];

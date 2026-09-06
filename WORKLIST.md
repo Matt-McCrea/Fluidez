@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (5/202 done)
+## C1 — lessons (12/202 done)
 
 ### C1 · grammar (0/28)
 - [ ] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`
@@ -771,17 +771,17 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [ ] **Introducir un nuevo tema** · 3 pts · `funciones C1 § 6.27. Introducir un nuevo tema`
 - [ ] **Proponer el cierre** · 3 pts · `funciones C1 § 6.28. Proponer el cierre`
 
-### C1 · discourse (5/12)
-- [ ] **Mantenimiento del referente y del hilo discursivo** · 7 pts · `tacticas_pragmaticas C1 § 1.1. Mantenimiento del referente y`
+### C1 · discourse (12/12)
+- [x] **Mantenimiento del referente y del hilo discursivo** · 7 pts · `tacticas_pragmaticas C1 § 1.1. Mantenimiento del referente y`  — dc-mantenimiento-referente-c1
 - [x] **Marcadores del discurso** · 19 pts · `tacticas_pragmaticas C1 § 1.2. Marcadores del discurso`  — dc-reformuladores-c1
-- [ ] **La deixis** · 9 pts · `tacticas_pragmaticas C1 § 1.3. La deixis`
-- [ ] **Desplazamiento en el orden de los elementos oracionales** · 11 pts · `tacticas_pragmaticas C1 § 1.4. Desplazamiento en el orden de`
+- [x] **La deixis** · 9 pts · `tacticas_pragmaticas C1 § 1.3. La deixis`  — dc-deixis-c1
+- [x] **Desplazamiento en el orden de los elementos oracionales** · 11 pts · `tacticas_pragmaticas C1 § 1.4. Desplazamiento en el orden de`  — dc-rematizacion-tematizacion-c1
 - [x] **Procedimientos de cita** · 15 pts · `tacticas_pragmaticas C1 § 1.5. Procedimientos de cita`  — dc-estilo-indirecto-c1
-- [ ] **Valores ilocutivos de los enunciados interrogativos** · 11 pts · `tacticas_pragmaticas C1 § 1.6. Valores ilocutivos de los enu`
-- [ ] **La expresión de la negación** · 13 pts · `tacticas_pragmaticas C1 § 1.7. La expresión de la negación`
+- [x] **Valores ilocutivos de los enunciados interrogativos** · 11 pts · `tacticas_pragmaticas C1 § 1.6. Valores ilocutivos de los enu`  — dc-valores-ilocutivos-c1
+- [x] **La expresión de la negación** · 13 pts · `tacticas_pragmaticas C1 § 1.7. La expresión de la negación`  — dc-negacion-c1
 - [x] **Significados interpretados** · 12 pts · `tacticas_pragmaticas C1 § 1.8. Significados interpretados`  — dc-metaforas-c1
-- [ ] **Intensificación o refuerzo** · 37 pts · `tacticas_pragmaticas C1 § 2.1. Intensificación o refuerzo`
-- [ ] **Focalización** · 9 pts · `tacticas_pragmaticas C1 § 2.3. Focalización`
+- [x] **Intensificación o refuerzo** · 37 pts · `tacticas_pragmaticas C1 § 2.1. Intensificación o refuerzo`  — dc-intensificacion-c1
+- [x] **Focalización** · 9 pts · `tacticas_pragmaticas C1 § 2.3. Focalización`  — dc-focalizacion-c1
 - [x] **Desplazamiento de la perspectiva temporal** · 9 pts · `tacticas_pragmaticas C1 § 2.5. Desplazamiento de la perspect`  — dc-imperfecto-modal-c1
 - [x] **Cortesía verbal atenuadora** · 30 pts · `tacticas_pragmaticas C1 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-c1
 
