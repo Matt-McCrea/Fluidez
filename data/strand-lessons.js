@@ -25359,6 +25359,52 @@ window.STRAND_LESSONS = [
     { id: 'p:visibilidadvisionC1:cloze', kind: 'cloze', text: 'Su nerviosismo ___ a la vista, todos lo notaron. (ser evidente de inmediato)', accept: ['saltaba', 'salta', 'saltó'] },
     { id: 'p:visibilidadvisionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "examinar" y "espiar"?', back: 'examinar es una observación analítica y abierta; espiar es oculta, con intención de descubrir algo sin ser visto' }
   ]
+},
+
+{
+  id: 'nt-audibilidad-audicion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1244', 'nociones_generales:C1:1245', 'nociones_generales:C1:1246', 'nociones_generales:C1:1247',
+         'nociones_generales:C1:1248', 'nociones_generales:C1:1249', 'nociones_generales:C1:1250', 'nociones_generales:C1:1251',
+         'nociones_generales:C1:1252', 'nociones_generales:C1:1253', 'nociones_generales:C1:1254', 'nociones_generales:C1:1255',
+         'nociones_generales:C1:1256', 'nociones_generales:C1:1257', 'nociones_generales:C1:1258', 'nociones_generales:C1:1259',
+         'nociones_generales:C1:1260', 'nociones_generales:C1:1261', 'nociones_generales:C1:1262', 'nociones_generales:C1:1263'],
+  title: 'Audibilidad y audición en C1: de "susurro" a "dar gritos"',
+  summary: 'El sonido se gradúa en C1 con un vocabulario que va del murmullo casi inaudible al grito ensordecedor, y con verbos técnicos que describen cómo el sonido se propaga, resuena o traspasa una pared — precisión acústica que "hacer ruido" no puede transmitir.',
+  sections: [
+    { h: 'Sonidos suaves y agudos', html: '<i>Murmullo, susurro</i> son sonidos muy bajos, casi confidenciales. <i>Silbido, chillido</i> son sonidos agudos y penetrantes.' },
+    { h: 'Vocabulario técnico del sonido', html: '<i>Acústica</i> es la cualidad sonora de un espacio: <i>este local tiene muy buena acústica</i>. <i>Auditivo</i> es el adjetivo técnico relacionado con el oído: <i>el canal auditivo</i>.' },
+    { h: 'Calificar ruidos y voces', html: 'Un ruido o sonido puede ser <i>ensordecedor, estridente, sordo, penetrante, armonioso</i> — una escala completa de cualidades. Una voz puede ser <i>ronca, dulce, melodiosa, chillona, nasal</i> — cada adjetivo describe un timbre muy distinto.' },
+    { h: 'Verbos de emitir sonido', html: '<i>Murmurar, susurrar</i> son las versiones verbales de los sonidos suaves; <i>chillar, pitar</i>, de los agudos. <i>Sentir, percibir</i> son los verbos generales de captar un sonido: <i>ya no siento el ruido</i> (se ha dejado de notar por costumbre). <i>Emitir/(re)transmitir(se) un sonido</i> son los verbos técnicos de producir o difundir sonido.' },
+    { h: 'Cómo viaja el sonido', html: '<i>Propagar(se)</i> es extenderse por el espacio: <i>las ondas sonoras se propagan a gran velocidad</i>. <i>Traspasar</i> es atravesar una barrera física: <i>el sonido traspasaba las paredes</i>. <i>Resonar</i> es producir un eco o vibración prolongada. <i>Insonorizar, aislar</i> son las acciones de bloquear el paso del sonido.' },
+    { h: 'Locuciones de sonidos concretos y de hablar alto', html: '<i>Guardar silencio</i> frente a <i>dar voces</i>. <i>Tocar el claxon/el pito</i> y <i>saltar la sirena/la alarma</i> son sonidos de aviso mecánicos concretos. <i>Levantar la voz</i> y <i>dar/pegar gritos</i> gradúan la intensidad de hablar fuerte, con "dar/pegar gritos" siendo más extremo. <i>Tener (buen/mal) oído</i> describe la capacidad musical o auditiva de una persona.' }
+  ],
+  exponents: [
+    { es: 'El ruido del taladro era ensordecedor.', en: 'The drill\'s noise was deafening.', register: 'neutral' },
+    { es: 'La alarma saltó a medianoche sin motivo aparente.', en: 'The alarm went off at midnight for no apparent reason.', register: 'neutral' },
+    { es: 'Le pidió que guardara silencio durante la función.', en: 'He asked her to keep quiet during the performance.', register: 'formal' },
+    { es: 'Tiene muy buen oído para la música.', en: 'He has a very good ear for music.', register: 'neutral' },
+    { es: 'El sonido resonaba por todo el pasillo.', en: 'The sound echoed throughout the hallway.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Le habló en un susurro para no despertar al bebé.', en: 'He spoke to her in a whisper so as not to wake the baby.', note: 'sonido muy bajo, casi confidencial' },
+    { es: 'Empezó a dar gritos en cuanto lo vio.', en: 'He started shouting as soon as he saw him.', note: 'grado máximo de intensidad al hablar' }
+  ],
+  pitfalls: [
+    '"Levantar la voz" y "dar/pegar gritos" no son lo mismo: levantar la voz es un aumento moderado del volumen, dar/pegar gritos es el extremo, casi siempre asociado a ira o pánico.',
+    '"Traspasar" (un sonido que atraviesa una pared) y "propagarse" (extenderse por el espacio) describen procesos distintos — no son intercambiables.',
+    '"Ya no siento el ruido" no significa que el ruido haya desaparecido — significa que la persona se ha acostumbrado y ha dejado de percibirlo conscientemente.'
+  ],
+  examples: [
+    { es: 'Instalaron paneles para insonorizar el estudio de grabación.', en: 'They installed panels to soundproof the recording studio.' },
+    { es: 'Su voz melodiosa cautivó al público.', en: 'Her melodious voice captivated the audience.' },
+    { es: 'El eco resonaba en la cueva vacía.', en: 'The echo resounded in the empty cave.' }
+  ],
+  probes: [
+    { id: 'p:audibilidadaudicionC1:levantarvozgritos', kind: 'mcq', q: '¿Qué diferencia hay entre "levantar la voz" y "dar gritos"?', options: ['Ninguna', 'Levantar la voz es un aumento moderado; dar gritos es el extremo', 'Dar gritos es más suave'], answer: 1 },
+    { id: 'p:audibilidadaudicionC1:yanosiento', kind: 'mcq', q: '"Ya no siento el ruido." ¿Qué significa?', options: ['El ruido ha desaparecido', 'Me he acostumbrado y ya no lo noto conscientemente', 'Nunca hubo ruido'], answer: 1 },
+    { id: 'p:audibilidadaudicionC1:cloze', kind: 'cloze', text: 'El ruido del taladro era ___. (extremadamente fuerte, que ensordece)', accept: ['ensordecedor'] },
+    { id: 'p:audibilidadaudicionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "traspasar" y "propagarse" aplicados al sonido?', back: '"traspasar" describe atravesar una barrera física (una pared); "propagarse" describe extenderse por el espacio' }
+  ]
 }
 
 ];
