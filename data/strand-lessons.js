@@ -27043,6 +27043,45 @@ window.STRAND_LESSONS = [
     { id: 'p:recordarolvidarC1:cloze', kind: 'cloze', text: 'Me he quedado en ___ a mitad del examen. (bloqueo mental)', accept: ['blanco'] },
     { id: 'p:recordarolvidarC1:recall', kind: 'recall', front: '¿Qué matiz introduce "que yo recuerde" frente a una afirmación directa?', back: 'un matiz de incertidumbre, reconociendo la posibilidad de que la propia memoria falle' }
   ]
+},
+
+{
+  id: 'fn-gustos-aversion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:415', 'funciones:C1:416', 'funciones:C1:417', 'funciones:C1:418',
+         'funciones:C1:422', 'funciones:C1:423', 'funciones:C1:424', 'funciones:C1:425', 'funciones:C1:426'],
+  title: 'Gustos y aversión en C1: de "adoro" a "me da náuseas"',
+  summary: 'Los gustos en C1 se gradúan desde "me agrada" (suave) hasta "adoro" (máximo), y la aversión recorre una escala paralela hasta el extremo físico de "me da náuseas" — expresiones que llevan la emoción al cuerpo, no solo a la opinión.',
+  sections: [
+    { h: 'Gustos: de lo suave a lo intenso', html: '<i>Me agrada...</i> es una forma suave y algo formal de expresar gusto: <i>me agradó que hubiera tenido el detalle de avisarnos</i>. <i>Adoro...</i> es el extremo superior, casi sin matiz de duda: <i>mi pasión es el cine clásico, lo adoro</i>. <i>Cuanto más/menos..., más/menos me gusta</i> describe un gusto que crece o decrece según otra variable: <i>cuanto más lo veo, más me gusta</i>. <i>Me llama la atención...</i> describe un interés particular, casi de curiosidad: <i>el arte griego siempre le ha llamado muchísimo la atención</i>.' },
+    { h: 'Aversión: de lo desagradable a lo físico', html: '<i>Me espanta...</i> describe un rechazo con matiz de temor o horror: <i>me espanta la idea de irme de vacaciones con mis suegros</i>. <i>Aborrezco...</i> es un rechazo intenso y personal. <i>Me desagrada/me repugna...</i> gradúan el rechazo, con "repugnar" en el extremo más fuerte: <i>cada día me repugna más la idea de esos programas</i>. <i>Es repugnante/aborrecible/abominable</i> valoran algo como objeto de rechazo extremo. <i>Me da náuseas...</i> lleva la aversión al plano físico, el grado máximo: <i>me da náuseas que algunas personas se enriquezcan a costa de los demás</i>.' }
+  ],
+  exponents: [
+    { es: 'Adoro pasear por la playa al atardecer.', en: 'I adore walking on the beach at sunset.', register: 'neutral' },
+    { es: 'Me da náuseas su forma de tratar a los empleados.', en: 'His way of treating employees makes me sick.', register: 'coloquial' },
+    { es: 'Cuanto más lo conozco, más me gusta.', en: 'The more I get to know him, the more I like him.', register: 'neutral' },
+    { es: 'Aborrezco que me interrumpan mientras trabajo.', en: 'I detest being interrupted while I work.', register: 'formal' },
+    { es: 'Ese tema le llama mucho la atención últimamente.', en: "That topic has been catching her attention a lot lately.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Me desagrada un poco su actitud.', en: 'I find his attitude somewhat unpleasant.', note: 'aversión moderada' },
+    { es: 'Me da náuseas su actitud.', en: 'His attitude makes me sick.', note: 'aversión llevada al extremo físico' }
+  ],
+  pitfalls: [
+    '"Me da náuseas" no describe siempre malestar físico literal — se usa con frecuencia en sentido figurado para expresar la aversión más fuerte hacia una conducta o idea.',
+    '"Me llama la atención" no siempre implica gusto positivo — puede describir simple curiosidad o sorpresa hacia algo, sin que eso implique que agrade.',
+    '"Aborrezco" y "adoro" son formas intensas en ambos extremos — usarlas para preferencias leves ("aborrezco la lluvia" por simplemente "no me gusta la lluvia") suena desproporcionado.'
+  ],
+  examples: [
+    { es: 'Le agrada mucho la compañía de sus nietos.', en: "He greatly enjoys his grandchildren's company." },
+    { es: 'Es abominable cómo se trata a los animales en esa granja.', en: "It's abominable how animals are treated on that farm." },
+    { es: 'Cuanta más gente hay en la fiesta, menos me gusta.', en: 'The more people there are at the party, the less I like it.' }
+  ],
+  probes: [
+    { id: 'p:gustosaversionC1:danauseas', kind: 'mcq', q: '"Me da náuseas su actitud." ¿Se refiere siempre a malestar físico literal?', options: ['Sí, siempre', 'No, a menudo expresa la aversión más fuerte en sentido figurado', 'Solo en contextos médicos'], answer: 1 },
+    { id: 'p:gustosaversionC1:llamalaatencion', kind: 'mcq', q: '"Me llama la atención" implica necesariamente gusto positivo?', options: ['Sí, siempre', 'No, puede ser simple curiosidad o sorpresa', 'Solo en negativo'], answer: 1 },
+    { id: 'p:gustosaversionC1:cloze', kind: 'cloze', text: 'Cuanto más lo veo, más me ___. (aumento paralelo del gusto)', accept: ['gusta'] },
+    { id: 'p:gustosaversionC1:recall', kind: 'recall', front: '¿Qué expresión lleva la aversión al plano físico, como grado máximo?', back: '"me da náuseas"' }
+  ]
 }
 
 ];
