@@ -22910,6 +22910,43 @@ window.STRAND_LESSONS = [
     { id: 'p:subadvcausalesC1:cloze', kind: 'cloze', text: 'Te perdono ___ porque eres sincero, no por otra razón. (énfasis restrictivo)', accept: ['solo', 'sólo'] },
     { id: 'p:subadvcausalesC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a causa de que", "gracias a que" y "por culpa de que"?', back: 'el primero es neutro, el segundo marca circunstancia positiva, el tercero circunstancia negativa' }
   ]
+},
+
+{
+  id: 'gr-sub-adv-finales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:756', 'gramatica:C1:758', 'gramatica:C1:759', 'gramatica:C1:761', 'gramatica:C1:763',
+         'gramatica:C1:765', 'gramatica:C1:766', 'gramatica:C1:768', 'gramatica:C1:769',
+         'gramatica:C1:771', 'gramatica:C1:773', 'gramatica:C1:774', 'gramatica:C1:775'],
+  title: 'Subordinadas finales en C1: cuando "para" deja de ser sobre el propósito',
+  summary: 'La subordinada final típica lleva "para que" y expresa un propósito, pero en C1 "para" también contrasta con matiz concesivo, se separa de su verbo por otra cláusula intercalada, y sirve de base a preguntas retóricas que no piden ninguna finalidad — piden que el oyente entienda el reproche.',
+  sections: [
+    { h: 'Finales integradas: valor consecutivo con "(como) para"', html: 'Una final puede completar a un adjetivo con valor casi consecutivo: <i>es demasiado listo (como) para no darse cuenta</i> — no expresa el propósito de su inteligencia, sino la consecuencia lógica de tenerla.' },
+    { h: 'Finales periféricas: posición y entonación', html: 'Como modificador oracional entero, separado por comas, la final puede ir antes o después sin cambio de sentido: <i>para que lo sepas, lo he dicho</i> / <i>lo he dicho para que lo sepas</i>. La posición cambia la entonación: inicial es lo habitual, final añade la información como coletilla, y en posición parentética casi se vuelve un marcador discursivo: <i>el resultado, para ser sinceros, no ha sido bueno</i>.' },
+    { h: 'Valor concesivo: "para" como contraste, no como propósito', html: '<i>No habla mal para llevar aquí un año</i> no expresa ninguna finalidad — "para" introduce aquí un contraste con matiz concesivo, equivalente a "considerando que solo lleva aquí un año, no habla nada mal".' },
+    { h: 'Conectores finales separados o intercalados', html: '"Para que" puede aparecer en posición parentética (<i>es obligatorio, para que te dejen pasar, llevar DNI</i>) o incluso separado de su propio verbo subordinado por otra cláusula intercalada: <i>díselo, para que, en cuanto lo sepa, informe al jefe</i>. Junto a "con el fin de que" y "con la finalidad de que", otras expresiones funcionan igual como locuciones finales: <i>con idea de que, con el propósito de que</i>: <i>lo hice con idea de que él lo viese</i>.' },
+    { h: 'Preguntas retóricas con "¿para qué?"', html: 'Estas preguntas no buscan información sobre un propósito, sino que comunican otra cosa. Con implicación negativa: <i>¿para qué me molesto si no me hace caso nunca?</i> (da a entender que no vale la pena). Dubitativas, explorando una respuesta incómoda: <i>¿para qué me pides que vaya? ¿Para tenerme allí como un jarrón?</i>. De reproche o de opinión encubierta: <i>¿para qué te arreglas tanto?, digo yo</i> — la pregunta transmite una crítica, no pide información.' }
+  ],
+  contrasts: [
+    { es: 'Es demasiado joven para tomar esa decisión.', en: "He's too young to make that decision.", note: 'valor consecutivo, no un propósito literal' },
+    { es: 'No cocina mal para ser su primera vez.', en: "He doesn't cook badly for a first try.", note: '"para" con matiz concesivo — contraste, no finalidad' },
+    { es: '¿Para qué madrugo tanto si luego no aprovecho el día?', en: "What's the point of getting up so early if I don't make the most of the day anyway?", note: 'pregunta retórica con implicación negativa, no pide información' }
+  ],
+  pitfalls: [
+    '"Para" + infinitivo o adjetivo no siempre introduce un propósito real — en construcciones como <i>demasiado listo para no darse cuenta</i> o <i>no habla mal para llevar aquí un año</i>, el valor es consecutivo o concesivo, no finalista.',
+    'Una pregunta con "¿para qué...?" en tono de reproche u opinión no espera respuesta sobre ningún propósito — funciona como crítica encubierta, y responder literalmente sonaría extraño.',
+    '"Para que" puede quedar separado de su verbo subordinado por una cláusula intercalada (<i>para que, en cuanto lo sepa, informe...</i>) — no hay que confundir esa cláusula intercalada con el contenido de la propia final.'
+  ],
+  examples: [
+    { es: 'Es lo bastante mayor como para entenderlo.', en: "He's old enough to understand it." },
+    { es: 'No está mal el sueldo para ser un trabajo de media jornada.', en: "The salary isn't bad for a part-time job." },
+    { es: '¿Para qué te esfuerzas tanto si nadie te lo va a agradecer?', en: "What's the point of trying so hard if no one's going to thank you for it?" }
+  ],
+  probes: [
+    { id: 'p:subadvfinalesC1:concesivo', kind: 'mcq', q: '"No habla mal para llevar aquí un año." ¿Qué valor tiene "para"?', options: ['Propósito', 'Contraste con matiz concesivo', 'Causa'], answer: 1 },
+    { id: 'p:subadvfinalesC1:retorica', kind: 'mcq', q: '"¿Para qué te arreglas tanto?, digo yo." ¿Qué función tiene la pregunta?', options: ['Pedir información sobre el propósito', 'Expresar reproche u opinión encubierta', 'Pedir permiso'], answer: 1 },
+    { id: 'p:subadvfinalesC1:cloze', kind: 'cloze', text: 'Se lo dije con el ___ de que reflexionara antes de decidir. (locución final)', accept: ['fin'] },
+    { id: 'p:subadvfinalesC1:recall', kind: 'recall', front: '¿Qué tienen en común "es demasiado listo para no darse cuenta" y "no habla mal para llevar aquí un año"?', back: 'ambas usan "para" con un valor que no es finalista: consecutivo en la primera, concesivo-contrastivo en la segunda' }
+  ]
 }
 
 ];
