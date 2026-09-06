@@ -23589,6 +23589,85 @@ window.STRAND_LESSONS = [
     { id: 'p:aumentodisminucionC1:cloze', kind: 'cloze', text: 'Las ventas cayeron en ___ el último trimestre. (bajada brusca)', accept: ['picado'] },
     { id: 'p:aumentodisminucionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "aumentar gradualmente" y "dispararse"?', back: 'gradualmente describe un cambio lento y progresivo; dispararse, uno brusco e intenso' }
   ]
+},
+
+{
+  id: 'nt-proporcion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:290', 'nociones_generales:C1:291', 'nociones_generales:C1:292', 'nociones_generales:C1:293', 'nociones_generales:C1:294'],
+  title: 'Proporción en C1: fracciones, cuotas y "tres de cada diez"',
+  summary: 'Hablar de proporciones exige un vocabulario propio para la parte de un todo (fracción, cuota, décimo) y estructuras específicas para relacionar cantidades entre sí, ya sea a partes iguales o expresadas como una razón: "tres de cada diez".',
+  sections: [
+    { h: 'Sustantivos de la parte de un todo', html: '<i>Fracción, participación, décimo, cuota</i> designan distintos tipos de parte: <i>una fracción de segundo</i> (una porción mínima), <i>una participación en una empresa</i> (una parte del capital), <i>un décimo de lotería</i> (una parte específica de un billete), <i>una cuota mensual</i> (un pago periódico proporcional).' },
+    { h: 'Adjetivos y locuciones de reparto equilibrado', html: '<i>Proporcionado, equitativo</i> describen un reparto justo según algún criterio. <i>A partes iguales</i> especifica que el reparto es exactamente igual entre todos: <i>dividir a partes iguales</i>.' },
+    { h: '"En proporción a" y las razones numéricas', html: '<i>En proporción a</i> relaciona una cantidad con otra de forma directamente vinculada: <i>los socios cobrarán intereses en proporción a su capital</i>. La estructura <i>[número] por cada/de cada + [número]</i> expresa una razón o frecuencia: <i>hay una por cada 4.000 habitantes</i>, <i>tres de cada diez</i>.' }
+  ],
+  exponents: [
+    { es: 'Los beneficios se repartieron a partes iguales.', en: 'The profits were split equally.', register: 'neutral' },
+    { es: 'Su sueldo aumentó en proporción a su experiencia acumulada.', en: 'His salary increased in proportion to his accumulated experience.', register: 'formal' },
+    { es: 'Uno de cada cinco encuestados apoya la medida.', en: 'One in five respondents supports the measure.', register: 'formal' },
+    { es: 'Compró una participación en el negocio de su primo.', en: 'He bought a stake in his cousin\'s business.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Repartieron el trabajo a partes iguales.', en: 'They divided the work equally.', note: 'reparto exactamente igual' },
+    { es: 'Repartieron el trabajo en proporción al tiempo disponible de cada uno.', en: 'They divided the work in proportion to each person\'s available time.', note: 'reparto proporcional, no necesariamente igual' }
+  ],
+  pitfalls: [
+    '"A partes iguales" implica una división exactamente igual, mientras que "en proporción a" permite un reparto desigual pero justificado por algún criterio — no son sinónimos.',
+    'La estructura "[número] de cada [número]" (<i>tres de cada diez</i>) expresa una proporción o frecuencia relativa, no una cantidad absoluta.',
+    '"Décimo" en el contexto de la lotería española tiene un significado muy específico (una parte de un billete de lotería) que no se traslada a otros contextos de fracción.'
+  ],
+  examples: [
+    { es: 'Dividieron la herencia a partes iguales entre los tres hermanos.', en: 'They divided the inheritance equally among the three siblings.' },
+    { es: 'Dos de cada tres estudiantes aprobó el examen.', en: 'Two out of three students passed the exam.' },
+    { es: 'El impuesto se calcula en proporción a los ingresos.', en: 'The tax is calculated in proportion to income.' }
+  ],
+  probes: [
+    { id: 'p:proporcionC1:apartesiguales', kind: 'mcq', q: '"A partes iguales" implica...', options: ['Un reparto proporcional pero desigual', 'Un reparto exactamente igual entre todos', 'Ningún reparto'], answer: 1 },
+    { id: 'p:proporcionC1:cadadiez', kind: 'mcq', q: '"Tres de cada diez" expresa...', options: ['Una cantidad absoluta', 'Una proporción o frecuencia relativa', 'Un número exacto de personas'], answer: 1 },
+    { id: 'p:proporcionC1:cloze', kind: 'cloze', text: 'Su sueldo aumentó en ___ a sus años de experiencia. (relación directa entre dos cantidades)', accept: ['proporción'] },
+    { id: 'p:proporcionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a partes iguales" y "en proporción a"?', back: '"a partes iguales" es un reparto exactamente igual; "en proporción a" permite un reparto desigual pero justificado por un criterio' }
+  ]
+},
+
+{
+  id: 'nt-grado-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:301', 'nociones_generales:C1:303', 'nociones_generales:C1:304', 'nociones_generales:C1:305',
+         'nociones_generales:C1:306', 'nociones_generales:C1:307', 'nociones_generales:C1:308', 'nociones_generales:C1:309', 'nociones_generales:C1:310'],
+  title: 'Grado en C1: de "lo grande que es" a "por todo lo alto"',
+  summary: 'El grado de algo se expresa en C1 con estructuras exclamativas propias ("¡lo que nos hemos reído!"), un vocabulario de matiz para el detalle ("a grandes rasgos" frente a "en detalle"), y locuciones intensificadoras muy idiomáticas como "a lo grande" o "por todo lo alto".',
+  sections: [
+    { h: '"Lo + adjetivo/adverbio + que": grado exclamativo', html: 'Esta estructura intensifica un grado mediante una exclamación indirecta: <i>¡lo que nos hemos reído!</i>, <i>ni te imaginas lo grande que es</i>, <i>no sabes lo mucho que te quiero</i> — el grado se presenta como tan alto que apenas se puede expresar directamente.' },
+    { h: 'Reforzar o matizar el grado', html: '<i>Verdaderamente</i> refuerza una afirmación: <i>es verdaderamente complicado</i>. <i>Medio</i> matiza hacia un grado parcial, no completo: <i>está medio loca</i>, <i>estaría medio borracho</i>. Los sufijos <i>-ón, -ote</i> intensifican coloquialmente un adjetivo: <i>mi hermana es muy guapetona</i>, <i>es un bebé grandote</i>.' },
+    { h: 'Grado extremo: "a muerte" y "a lo grande"', html: '<i>A muerte</i> intensifica un sentimiento hasta el extremo: <i>odiar a muerte</i>. <i>A lo grande</i> y <i>por todo lo alto</i> intensifican una acción hacia la máxima expresión posible: <i>disfrutar a lo grande</i>, <i>celebrar por todo lo alto</i>. <i>Por completo</i> expresa totalidad sin matices: <i>confiar por completo</i>.' },
+    { h: 'Precisar el nivel de detalle', html: '<i>A grandes rasgos, en líneas generales</i> presentan algo con poco detalle, de forma esquemática; <i>en detalle</i>, lo opuesto, con toda la precisión posible. <i>En gran medida</i> y <i>en qué medida/grado</i> gradúan hasta qué punto algo es cierto: <i>es preciso saber en qué medida estamos preparados para este nuevo reto</i>. <i>En la medida de sus posibilidades</i> limita un compromiso a lo que resulte factible.' }
+  ],
+  exponents: [
+    { es: '¡Lo que ha llovido esta semana!', en: 'You wouldn\'t believe how much it\'s rained this week!', register: 'coloquial' },
+    { es: 'Te ayudaré en la medida de mis posibilidades.', en: "I'll help you as much as I'm able to.", register: 'neutral' },
+    { es: 'Celebraron su aniversario por todo lo alto.', en: 'They celebrated their anniversary in style.', register: 'coloquial' },
+    { es: 'Explícamelo a grandes rasgos, no hace falta el detalle.', en: 'Explain it to me in broad strokes, no need for detail.', register: 'neutral' },
+    { es: 'El proyecto depende en gran medida de la financiación.', en: 'The project depends to a large extent on funding.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Explícalo a grandes rasgos.', en: 'Explain it in broad strokes.', note: 'poco detalle, esquemático' },
+    { es: 'Explícalo en detalle.', en: 'Explain it in detail.', note: 'máxima precisión' }
+  ],
+  pitfalls: [
+    '"Medio" antes de un adjetivo (<i>medio loca, medio borracho</i>) no concuerda en género/número — es invariable en esta construcción adverbial.',
+    '"A muerte" no siempre es literal ni negativo — se usa con sentimientos intensos en general, tanto para odiar como, coloquialmente, para apoyar con fuerza a alguien.',
+    '"En la medida de sus posibilidades" limita explícitamente un compromiso — no es una promesa incondicional, sino condicionada a lo que resulte factible.'
+  ],
+  examples: [
+    { es: 'No sabes lo difícil que fue conseguirlo.', en: "You don't know how hard it was to get it." },
+    { es: 'El equipo colaborará en la medida de sus posibilidades.', en: "The team will collaborate as much as they're able to." },
+    { es: 'Su reputación depende en gran medida de este proyecto.', en: 'His reputation depends to a large extent on this project.' }
+  ],
+  probes: [
+    { id: 'p:gradoC1:agrandesrasgos', kind: 'mcq', q: '"A grandes rasgos" significa...', options: ['Con todo detalle', 'De forma esquemática, con poco detalle', 'De forma incorrecta'], answer: 1 },
+    { id: 'p:gradoC1:medio', kind: 'mcq', q: '"Está medio loca." ¿Qué grado expresa "medio" aquí?', options: ['Grado completo', 'Grado parcial, no completo', 'Ningún grado'], answer: 1 },
+    { id: 'p:gradoC1:cloze', kind: 'cloze', text: 'Celebraron su boda por todo lo ___. (grado máximo, con gran fasto)', accept: ['alto'] },
+    { id: 'p:gradoC1:recall', kind: 'recall', front: '¿Qué matiz aporta la estructura "lo + adjetivo + que" en una exclamación?', back: 'presenta el grado como tan alto que apenas puede expresarse directamente (¡lo grande que es!)' }
+  ]
 }
 
 ];
