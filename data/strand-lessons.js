@@ -23023,6 +23023,43 @@ window.STRAND_LESSONS = [
     { id: 'p:subadvconsecutivasC1:cloze', kind: 'cloze', text: 'Es tan escrupuloso... (consecutiva ___, la consecuencia se deja sin decir)', accept: ['suspendida'] },
     { id: 'p:subadvconsecutivasC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "sabe tanto como para escribir un libro" y "sabe tanto como para que el jefe lo elija"?', back: 'la primera es correferencial (mismo sujeto en ambas acciones); la segunda no lo es (otro sujeto realiza la segunda acción)' }
   ]
+},
+
+{
+  id: 'gr-sub-adv-comparativas-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  pcic: ['gramatica:C1:828', 'gramatica:C1:829', 'gramatica:C1:832', 'gramatica:C1:836', 'gramatica:C1:837',
+         'gramatica:C1:838', 'gramatica:C1:843', 'gramatica:C1:844', 'gramatica:C1:847', 'gramatica:C1:849',
+         'gramatica:C1:850', 'gramatica:C1:851', 'gramatica:C1:853'],
+  title: 'Subordinadas comparativas en C1: cuatro comparaciones con el mismo patrón, y el límite que cuenta o no',
+  summary: 'Igualdad, superioridad e inferioridad comparten exactamente los mismos cuatro usos — comparar cualidades, objetos o acciones del mismo sujeto, o llevar toda una subordinada como segundo término. Lo verdaderamente distinto en C1 es un matiz fino: si el límite de la comparación se incluye o se excluye cambia lo que la frase realmente afirma.',
+  sections: [
+    { h: 'Un mismo patrón para igualdad, superioridad e inferioridad', html: 'Los tres grados comparten la misma estructura interna. Cualidades distintas del mismo sujeto: <i>es tan guapo como tonto</i> / <i>es más astuto que inteligente</i> / <i>es menos antipático que mala persona</i>. Objetos distintos del mismo sujeto: <i>tiene más objetos inservibles que objetos de valor</i> / <i>tiene menos libros que modelitos de marca</i>. Acciones distintas del mismo sujeto: <i>come tanto como duerme</i> / <i>come más que duerme</i> / <i>come menos que duerme</i>. Y el propio término de la comparación puede ser una subordinada: <i>es tan alto como el que más</i>, <i>es más listo que los que vinieron ayer</i>, <i>soy menos egoísta que los que te han dicho eso</i>.' },
+    { h: 'De modo: "a lo" + referencia', html: '"A lo" (equivalente a "a la manera de" o "como") introduce una comparación de modo tomando una referencia como modelo: <i>baila a lo Elvis Presley</i>.' },
+    { h: 'De cantidad: el límite incluido o excluido', html: 'Con "más/menos... de" + "lo que", el límite de la comparación queda excluido — se afirma una diferencia real: <i>cuesta más de lo que esperaba</i> (cuesta más, punto). Con "no más/menos... de" + "lo que", el límite queda incluido — se afirma un techo o un suelo, no necesariamente superado: <i>no cuesta más de lo que me esperaba</i> (como mucho, cuesta justo eso). Con "como si, igual que si" + subjuntivo, la comparación se hace con una situación hipotética: <i>actúa igual que si tuviera tres años</i>.' },
+    { h: 'Comparativas con valor consecutivo: "como para"', html: 'Una comparativa puede llevar dentro un valor consecutivo, casi como una intensiva encubierta: <i>no es tan tonto como para no entenderlo</i> equivale a "no es tan tonto que no lo entienda" — la comparación termina afirmando una consecuencia, no solo un grado.' }
+  ],
+  contrasts: [
+    { es: 'Es tan generoso como despistado.', en: "He's as generous as he is absent-minded.", note: 'comparación de dos cualidades del mismo sujeto' },
+    { es: 'Tardó menos de lo que pensábamos.', en: 'It took less than we thought.', note: 'límite excluido — afirma una diferencia real' },
+    { es: 'No tardó menos de lo que pensábamos.', en: "It didn't take any less than we thought (at most, that long).", note: 'límite incluido — afirma un suelo, no una diferencia' },
+    { es: 'No es tan ingenuo como para creerse esa historia.', en: "He's not naive enough to believe that story.", note: 'comparativa con valor consecutivo' }
+  ],
+  pitfalls: [
+    'Igualdad, superioridad e inferioridad no son estructuras distintas que aprender por separado — comparten los mismos cuatro usos (cualidades, objetos, acciones, término subordinado), solo cambia el nexo (tan/tanto... como, más... que, menos... que).',
+    '"Más/menos... de lo que" y "no más/menos... de lo que" no dicen lo mismo: el primero afirma que el límite se supera o queda por debajo; el segundo lo presenta como un techo o un suelo que no se rebasa.',
+    '"Como para" en una comparativa no compara dos cantidades — introduce una consecuencia dentro de la propia comparación, un uso más cercano a las consecutivas que a las comparativas puras.'
+  ],
+  examples: [
+    { es: 'Es tan trabajador como poco organizado.', en: "He's as hard-working as he is disorganized." },
+    { es: 'Ganó más dinero del que había previsto.', en: 'He earned more money than he had anticipated.' },
+    { es: 'No es tan mayor como para no poder aprender cosas nuevas.', en: "He's not too old to learn new things." }
+  ],
+  probes: [
+    { id: 'p:subadvcomparativasC1:limite', kind: 'mcq', q: '"No cuesta más de lo que me esperaba." ¿Qué afirma sobre el límite?', options: ['Que lo supera claramente', 'Que como mucho llega a ese límite, sin superarlo', 'Que es imposible de calcular'], answer: 1 },
+    { id: 'p:subadvcomparativasC1:consecutivo', kind: 'mcq', q: '"No es tan tonto como para no entenderlo." ¿A qué equivale?', options: ['"No es tan tonto que no lo entienda"', '"Es más tonto de lo que parece"', '"No lo entiende en absoluto"'], answer: 0 },
+    { id: 'p:subadvcomparativasC1:cloze', kind: 'cloze', text: 'Actúa igual que si ___ tres años. ("como si" + subjuntivo, comparación con situación hipotética)', accept: ['tuviera', 'tuviese'] },
+    { id: 'p:subadvcomparativasC1:recall', kind: 'recall', front: '¿Qué cuatro usos comparten igualdad, superioridad e inferioridad?', back: 'comparar cualidades del mismo sujeto, objetos del mismo sujeto, acciones del mismo sujeto, o llevar una subordinada como término de la comparación' }
+  ]
 }
 
 ];
