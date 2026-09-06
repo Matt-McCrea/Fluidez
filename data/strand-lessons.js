@@ -26468,6 +26468,89 @@ window.STRAND_LESSONS = [
     { id: 'p:darinformacionC1:cloze', kind: 'cloze', text: 'Me eligieron ___ a mi experiencia previa. (causa positiva)', accept: ['gracias'] },
     { id: 'p:darinformacionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a causa de", "gracias a" y "por culpa de"?', back: 'a causa de es neutro, gracias a marca una circunstancia positiva, por culpa de marca una circunstancia negativa' }
   ]
+},
+
+{
+  id: 'fn-pedir-confirmacion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:96', 'funciones:C1:99', 'funciones:C1:100', 'funciones:C1:102', 'funciones:C1:103', 'funciones:C1:104',
+         'funciones:C1:105', 'funciones:C1:106', 'funciones:C1:108', 'funciones:C1:109', 'funciones:C1:110', 'funciones:C1:112',
+         'funciones:C1:113', 'funciones:C1:114'],
+  title: 'Pedir confirmación en C1: de "¿a que sí?" a "tengo entendido que..."',
+  summary: 'Pedir confirmación en C1 incluye coletillas directas ("¿a que sí?"), la fórmula encubierta que deja caer un dato ya conocido para que el otro lo confirme ("tengo entendido que..."), y las preguntas de sospecha que rozan la acusación ("¿no estarás insinuando que...?").',
+  sections: [
+    { h: 'Coletillas directas de confirmación', html: '<i>..., ¿me equivoco?</i> plantea la confirmación como duda propia. <i>..., ¿a que sí/no?</i> y <i>..., ¿verdad que sí/no?</i> son coletillas coloquiales muy frecuentes: <i>te equivocaste al dar la referencia, ¿a que sí?</i>.' },
+    { h: 'Pedir aclaración sobre lo entendido', html: '<i>No he entendido bien si... (o no/sí)</i> señala una duda concreta sobre un dato: <i>no he entendido bien si la semana pasada estuviste fuera o no</i>. <i>¿Te refieres a (que)...?</i> y <i>¿Es que (no)...?</i> piden confirmar la interpretación de algo que el otro acaba de decir: <i>¿se refiere usted a que hay que pagarlo todo ahora?</i>.' },
+    { h: 'Preguntas elípticas de confirmación', html: 'Repetir solo el elemento en duda de una propuesta ya hecha, con entonación interrogativa, confirma un detalle sin repetir toda la frase: <i>¿dónde el otro día?</i>, <i>¿cuando esté María?</i>.' },
+    { h: 'Confirmar con sorpresa por una contradicción', html: '<i>Pero... ¿tú no...? + imperfecto/pluscuamperfecto</i> expresa sorpresa al pedir confirmación de algo que contradice lo que el hablante creía saber: <i>pero, ¿tú no tenías un SEAT 1200?</i>.' },
+    { h: 'Pedir confirmación de forma encubierta', html: '<i>He sabido (por...) que...</i> y <i>tengo entendido que...</i> presentan un dato ya conocido por otra vía, invitando al interlocutor a confirmarlo o desmentirlo sin preguntar directamente: <i>tengo entendido que Mariana ya no está tan contenta con Manolo...</i>.' },
+    { h: 'Pedir un compromiso reforzado, o expresar sospecha', html: '<i>¿Me aseguras/prometes/juras que...?</i> pide un compromiso formal con la veracidad de algo. <i>¿Insinúas que...?</i> y <i>¿no estarás diciendo/insinuando/afirmando que...?</i> muestran sospecha hacia lo que el otro parece estar dando a entender, casi como un reproche. <i>¿Tengo que creer(me)...?</i> expresa incredulidad ante algo difícil de aceptar: <i>¿tengo que creerme que no le has dicho nada a Jorge?</i>.' }
+  ],
+  exponents: [
+    { es: 'Llegaste tarde otra vez, ¿a que sí?', en: 'You were late again, weren\'t you?', register: 'coloquial' },
+    { es: 'Tengo entendido que la reunión se ha aplazado.', en: 'I understand the meeting has been postponed.', register: 'formal' },
+    { es: '¿Me prometes que llegarás antes de las diez?', en: 'Do you promise me you\'ll arrive before ten?', register: 'neutral' },
+    { es: '¿No estarás insinuando que yo tuve algo que ver?', en: "You're not implying I had something to do with it, are you?", register: 'neutral' },
+    { es: 'He sabido por Marta que os mudáis el mes que viene.', en: "I heard from Marta that you're moving next month.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¿Te refieres a que debo cancelarlo todo?', en: 'Do you mean I should cancel everything?', note: 'confirma la interpretación de lo dicho' },
+    { es: '¿No estarás insinuando que debería cancelarlo todo?', en: "You're not suggesting I should cancel everything, are you?", note: 'sospecha hacia una implicación no dicha explícitamente' }
+  ],
+  pitfalls: [
+    '"Tengo entendido que..." y "he sabido que..." no son preguntas directas, sino formas encubiertas de invitar a confirmar un dato ya conocido por otra vía — insertar un signo de interrogación explícito sería redundante.',
+    '"¿No estarás insinuando que...?" no es una simple pregunta neutra — casi siempre lleva un matiz de sospecha o reproche hacia lo que el otro parece estar dando a entender.',
+    'La pregunta elíptica ("¿dónde el otro día?") solo funciona si retoma un elemento de una propuesta ya mencionada en el contexto inmediato — fuera de ese contexto resultaría incomprensible.'
+  ],
+  examples: [
+    { es: 'No he entendido bien si vienes tú o viene tu hermano.', en: "I didn't quite understand whether you're coming or your brother is." },
+    { es: '¿Me juras que no se lo has contado a nadie?', en: 'Do you swear to me you haven\'t told anyone?' },
+    { es: 'Pero, ¿tú no vivías en Madrid?', en: "But didn't you use to live in Madrid?" }
+  ],
+  probes: [
+    { id: 'p:pedirconfirmacionC1:tengoentendido', kind: 'mcq', q: '"Tengo entendido que te vas de la empresa." ¿Qué función cumple?', options: ['Afirma con total seguridad', 'Invita a confirmar o desmentir un dato ya conocido por otra vía', 'Pide disculpas'], answer: 1 },
+    { id: 'p:pedirconfirmacionC1:insinuas', kind: 'mcq', q: '"¿No estarás insinuando que...?" suele llevar un matiz de...', options: ['Alegría', 'Sospecha o reproche', 'Indiferencia'], answer: 1 },
+    { id: 'p:pedirconfirmacionC1:cloze', kind: 'cloze', text: 'Llegaste tarde otra vez, ¿a que ___? (coletilla de confirmación coloquial)', accept: ['sí'] },
+    { id: 'p:pedirconfirmacionC1:recall', kind: 'recall', front: '¿Qué tiene de particular una pregunta elíptica de confirmación como "¿dónde el otro día?"?', back: 'solo retoma el elemento en duda de una propuesta ya mencionada en el contexto, sin repetir la frase completa' }
+  ]
+},
+
+{
+  id: 'fn-confirmar-informacion-previa-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:130', 'funciones:C1:131', 'funciones:C1:132', 'funciones:C1:133'],
+  title: 'Confirmar información previa en C1: "así es", "¡y tanto!" y "de hecho"',
+  summary: 'Confirmar algo en C1 va del registro más formal ("así es, efectivamente") al entusiasmo coloquial ("¡y tanto que...!"), y "de hecho" añade un matiz propio: no solo confirma, sino que aporta un detalle que refuerza lo dicho.',
+  sections: [
+    { h: '"Que sí/no, que...": confirmación intensificada', html: 'Repetir "que sí" o "que no" seguido de una explicación refuerza la confirmación frente a alguien que duda: <i>que sí, que se fue hace un buen rato</i>.' },
+    { h: '"Así es" / "efectivamente": confirmación formal', html: 'Estas fórmulas confirman con un registro más elevado que el simple "sí": <i>así es, se fue hace un buen rato</i>.' },
+    { h: '"¡Y tanto (que...)!": confirmación entusiasta', html: 'Esta exclamación confirma con énfasis, casi exagerando lo afirmado: <i>-Llovió, ¿no? -¡Y tanto que llovió!</i>.' },
+    { h: '"De hecho": confirmar y añadir un detalle', html: 'Esta locución no solo confirma lo preguntado, sino que aporta información adicional que refuerza la confirmación: <i>-Vosotros os cogéis pronto las vacaciones, ¿no? -Sí, de hecho, nos pensábamos ir la semana que viene</i>.' }
+  ],
+  exponents: [
+    { es: '¿Seguro que lo sabe? Así es, se lo dijeron ayer.', en: "Are you sure he knows? That's right, they told him yesterday.", register: 'formal' },
+    { es: '¡Y tanto que me acuerdo de aquel día!', en: 'You bet I remember that day!', register: 'coloquial' },
+    { es: 'Que sí, que ya está todo listo.', en: "Yes, really, everything's ready already.", register: 'coloquial' },
+    { es: 'Sí, de hecho, ya hemos reservado los billetes.', en: "Yes, in fact, we've already booked the tickets.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Sí, es cierto.', en: 'Yes, that\'s true.', note: 'confirmación neutra' },
+    { es: '¡Y tanto que es cierto!', en: "It sure is true!", note: 'confirmación entusiasta, coloquial' }
+  ],
+  pitfalls: [
+    '"De hecho" no es solo un sinónimo de "sí" — su función específica es confirmar y añadir un dato adicional que refuerza la afirmación.',
+    '"Que sí/no, que..." con repetición es exclusivamente coloquial y se usa frente a alguien que duda o insiste en lo contrario — no conviene en un registro formal.',
+    '"Así es" y "efectivamente" pertenecen a un registro más formal que el simple "sí" — resultan naturales en contextos administrativos o periodísticos.'
+  ],
+  examples: [
+    { es: '¿Vinisteis en coche? Así es, tardamos menos de una hora.', en: "Did you come by car? That's right, it took us less than an hour." },
+    { es: '¡Y tanto que valió la pena el viaje!', en: 'The trip was totally worth it!' },
+    { es: 'De hecho, ya había pensado en eso mismo.', en: "As a matter of fact, I had already thought of that myself." }
+  ],
+  probes: [
+    { id: 'p:confirmarinformacionpreviaC1:dehecho', kind: 'mcq', q: '¿Qué aporta "de hecho" además de confirmar?', options: ['Nada más', 'Un detalle adicional que refuerza la confirmación', 'Una disculpa'], answer: 1 },
+    { id: 'p:confirmarinformacionpreviaC1:ytanto', kind: 'mcq', q: '"¡Y tanto que llovió!" ¿Qué tipo de confirmación es?', options: ['Formal y neutra', 'Entusiasta y coloquial', 'Dudosa'], answer: 1 },
+    { id: 'p:confirmarinformacionpreviaC1:cloze', kind: 'cloze', text: '___ es, se lo comunicaron ayer mismo. (confirmación de registro formal)', accept: ['Así'] },
+    { id: 'p:confirmarinformacionpreviaC1:recall', kind: 'recall', front: '¿Qué registro tienen "así es/efectivamente" frente a "que sí, que..."?', back: '"así es/efectivamente" son formales; "que sí, que..." con repetición es coloquial, usado frente a alguien que duda' }
+  ]
 }
 
 ];
