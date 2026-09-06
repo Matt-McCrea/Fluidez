@@ -127,6 +127,38 @@ theme tags onto ~20k items later would be miserable.
 must exist before lessons are written, or every lesson is capped at the
 vocabulary of a beginner course — the exact failure the rebuild is for.
 
+## A deliberate divergence from the PCIC: the tense ladder
+
+The legacy ladder in `js/lessons.js` (`SEED`) predates the harvest, and four
+tenses sit a band earlier than the Plan Curricular puts them:
+
+| tense | app band | PCIC |
+|---|---|---|
+| imperfecto de subjuntivo | B1 | B2 |
+| futuro perfecto | B1 | B2 |
+| condicional perfecto | B1 | B2 |
+| pretérito perfecto de subjuntivo | B1 | B2 |
+
+Level 3 also sits in both the A2 and B1 gates, so an A2 learner can be served
+`futuro` and `condicional`, which the PCIC files at B1.
+
+**This is left as built, on purpose.** Meeting the forms earlier and using them
+in simpler discourse is a defensible way to teach; re-levelling would move a
+large amount of already-written practice material between bands for no gain the
+learner would feel.
+
+Two consequences to know:
+
+- The app's band labels are therefore not strictly CEFR. A learner using
+  "B1" here to judge readiness for a DELE B1 exam is being shown some B2
+  grammar. Fine for study, worth knowing before it is used as a yardstick.
+- **Do not "fix" this.** It looks like a bug when you compare the ladder to
+  `spec/pcic.json`, and it has already been raised once and settled.
+
+The strand lessons written since the harvest (`data/strand-lessons.js`) carry
+their own `cefr` from the PCIC and are correctly levelled; this note concerns
+only the tense ladder.
+
 ## The gates
 
 | Gate | What it protects |
