@@ -27583,6 +27583,48 @@ window.STRAND_LESSONS = [
     { id: 'p:ordeninstruccionC1:cloze', kind: 'cloze', text: '¿___ tan amable de cerrar la puerta? (fórmula muy cortés de petición)', accept: ['Sería', 'Serías'] },
     { id: 'p:ordeninstruccionC1:recall', kind: 'recall', front: '¿Cómo se reconoce una orden encubierta si no usa ningún verbo de mandato?', back: 'por el contexto y la implicatura: un comentario aparentemente neutro comunica la orden real de forma indirecta' }
   ]
+},
+
+{
+  id: 'fn-favor-objetos-ayuda-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:753', 'funciones:C1:754', 'funciones:C1:755', 'funciones:C1:756', 'funciones:C1:757', 'funciones:C1:759',
+         'funciones:C1:766', 'funciones:C1:767', 'funciones:C1:768', 'funciones:C1:769', 'funciones:C1:770', 'funciones:C1:771',
+         'funciones:C1:776', 'funciones:C1:777', 'funciones:C1:778', 'funciones:C1:780'],
+  title: 'Pedir favores, objetos y ayuda en C1: la misma escalera de cortesía',
+  summary: 'Pedir un favor, un objeto o ayuda en C1 comparte la misma escalera de fórmulas de cortesía creciente — de "¿puedes hacerme el favor de...?" a "¿tendrías la bondad de...?" — y la petición de ayuda puede incluso quedar completamente encubierta, sin pedir nada de forma explícita.',
+  sections: [
+    { h: 'Pedir un favor: la escalera de cortesía', html: '<i>¿Puedes hacerme el favor de...?</i> y <i>¿me harías el favor de...?</i> son las formas básicas. <i>¿Serías tan amable de...?</i> sube el registro. <i>(Te) agradecería (+ intensificador) que...</i> formula la petición como agradecimiento anticipado: <i>te agradecería enormemente que hablaras con él</i>. <i>Me harías un gran favor si...</i> presenta la petición como condición. <i>Hazme un favor</i> + imperativo es la versión más directa y coloquial: <i>hazme un favor: déjame un euro para llamar</i>.' },
+    { h: 'Pedir objetos: los mismos verbos, la misma escalera', html: 'Los verbos <i>dejar, prestar, traer, dar, pasar, alcanzar</i> se insertan en la misma estructura de cortesía: <i>¿podrías hacerme/me harías el favor de dejarme/prestarme/traerme...?</i>, <i>¿tendrías la amabilidad/bondad de darme/dejarme...?</i>, <i>¿serías tan amable de prestarme los apuntes de la clase pasada?</i>. <i>¿Sería mucho pedir que...?</i> puede llevar aquí un matiz de reproche, sugiriendo que la petición ya se ha hecho antes sin éxito: <i>¿sería mucho pedir que, para variar, me dejaras tú la bicicleta esta vez?</i>. <i>(Te) agradecería que me dejaras/prestaras/trajeras...</i> y <i>necesitaría que me dejaras/prestaras/trajeras...</i> completan la escalera.' },
+    { h: 'Pedir ayuda: misma estructura, verbo "ayudar"', html: '<i>¿Podrías hacerme/me harías el favor de ayudarme a/con...?</i> y <i>¿serías tan amable de ayudarme/de echarme una mano?</i> siguen exactamente el mismo patrón. <i>(Te) agradecería que me ayudaras...</i> añade el matiz de agradecimiento anticipado, especialmente natural cuando el asunto es delicado: <i>te agradecería que me ayudaras con el tema de mis padres, no sé qué hacer</i>.' },
+    { h: 'Pedir ayuda de forma encubierta', html: 'La petición de ayuda puede no formularse nunca de forma explícita — se menciona un problema y se deja que el interlocutor infiera la petición real: <i>¿no sabrás tú francés? Es que tengo que escribir una carta a un cliente en Burdeos y no sé cómo hacerlo</i> (la petición real es "¿puedes ayudarme a escribirla?", nunca formulada directamente).' }
+  ],
+  exponents: [
+    { es: '¿Me harías el favor de acompañarme al médico?', en: 'Would you do me the favor of coming with me to the doctor?', register: 'formal' },
+    { es: '¿Serías tan amable de pasarme la sal?', en: 'Would you be so kind as to pass me the salt?', register: 'formal' },
+    { es: 'Te agradecería que me echaras una mano con las cajas.', en: "I'd appreciate it if you gave me a hand with the boxes.", register: 'neutral' },
+    { es: '¿Sería mucho pedir que, por una vez, llegaras puntual?', en: 'Would it be too much to ask that you arrive on time for once?', register: 'neutral' },
+    { es: '¿No tendrás por casualidad un cargador de móvil? Es que se me ha quedado sin batería.', en: "Wouldn't you happen to have a phone charger? It's just that mine died.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: '¿Puedes prestarme el coche este fin de semana?', en: 'Can you lend me the car this weekend?', note: 'petición directa y cortés' },
+    { es: '¿Tendrías la bondad de prestarme el coche este fin de semana?', en: 'Would you be so kind as to lend me the car this weekend?', note: 'misma petición, registro muy ceremonioso' }
+  ],
+  pitfalls: [
+    '"¿Sería mucho pedir que...?" no siempre es neutra — según el contexto puede llevar un matiz de reproche, sugiriendo que la petición ya se hizo antes sin resultado.',
+    'Una petición de ayuda encubierta no contiene ningún verbo de petición — se reconoce por el contexto, no por marcas gramaticales: mencionar un problema puede ser, en sí mismo, la petición real.',
+    'Las fórmulas de cortesía (¿serías tan amable de...?, ¿tendrías la bondad de...?) no cambian el CONTENIDO de la petición, solo su registro — usarlas en exceso en contextos informales puede sonar irónico o distante.'
+  ],
+  examples: [
+    { es: '¿Podrías hacerme el favor de revisar este documento antes de enviarlo?', en: 'Could you do me the favor of reviewing this document before sending it?' },
+    { es: 'Necesitaría que me prestaras el libro que mencionaste el otro día.', en: 'I would need you to lend me the book you mentioned the other day.' },
+    { es: '¿No tendrás una aspirina? Es que me duele muchísimo la cabeza.', en: "You wouldn't happen to have an aspirin, would you? My head is killing me." }
+  ],
+  probes: [
+    { id: 'p:favorobjetosayudaC1:seriamuchopedir', kind: 'mcq', q: '"¿Sería mucho pedir que llegaras puntual, para variar?" ¿Qué matiz añade "para variar"?', options: ['Ninguno', 'Un reproche implícito, como si ya hubiera pasado antes', 'Alegría'], answer: 1 },
+    { id: 'p:favorobjetosayudaC1:encubierta', kind: 'mcq', q: '"¿No sabrás tú francés? Tengo que escribir una carta..." ¿Qué es esto en realidad?', options: ['Una simple pregunta de curiosidad', 'Una petición de ayuda encubierta', 'Un cumplido'], answer: 1 },
+    { id: 'p:favorobjetosayudaC1:cloze', kind: 'cloze', text: '¿Serías tan ___ de prestarme los apuntes? (cortesía elevada)', accept: ['amable'] },
+    { id: 'p:favorobjetosayudaC1:recall', kind: 'recall', front: '¿Qué estructura comparten pedir un favor, pedir un objeto y pedir ayuda en C1?', back: 'la misma escalera de fórmulas de cortesía (¿puedes/serías tan amable/tendrías la bondad...?), solo cambia el verbo insertado' }
+  ]
 }
 
 ];
