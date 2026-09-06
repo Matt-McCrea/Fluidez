@@ -26796,6 +26796,49 @@ window.STRAND_LESSONS = [
     { id: 'p:escepticismocontraargumentoC1:cloze', kind: 'cloze', text: 'Tengo mis ___ al respecto, la verdad. (escepticismo)', accept: ['dudas'] },
     { id: 'p:escepticismocontraargumentoC1:recall', kind: 'recall', front: '¿Qué hace "yo no digo que (no)..." antes del "pero"?', back: 'niega primero una interpretación extrema de lo dicho, preparando el terreno para la matización real' }
   ]
+},
+
+{
+  id: 'fn-certeza-evidencia-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:277', 'funciones:C1:278', 'funciones:C1:279', 'funciones:C1:281', 'funciones:C1:282', 'funciones:C1:283',
+         'funciones:C1:284', 'funciones:C1:285', 'funciones:C1:286', 'funciones:C1:298', 'funciones:C1:299', 'funciones:C1:300',
+         'funciones:C1:301', 'funciones:C1:302', 'funciones:C1:303', 'funciones:C1:304'],
+  title: 'Certeza y su ausencia en C1: de "sin lugar a dudas" a "juraría que..."',
+  summary: 'La certeza absoluta ("no me cabe la menor duda") y su ausencia ("sospecho que...") ocupan extremos de una misma escala en C1, con matices finos en medio: "intuir" no es lo mismo que "presentir", y "cuestionar" no es lo mismo que simplemente "no tener claro".',
+  sections: [
+    { h: 'Expresar certeza personal', html: '<i>Sé con (absoluta/completa/total) certeza/seguridad</i>, <i>tengo la seguridad</i> y <i>tengo claro</i> son formas directas de afirmar certeza: <i>tengo clarísimo que el año que viene se va a vivir al extranjero</i>.' },
+    { h: 'Certeza sin duda posible', html: '<i>No (me) cabe (la menor) duda de que...</i> es la fórmula más contundente: <i>no cabe la menor duda de que podemos ganar el partido</i>. <i>Es indudable/innegable que...</i> y <i>es un hecho que...</i> presentan la certeza como un dato objetivo, no una opinión.' },
+    { h: 'Adverbios y locuciones de certeza', html: '<i>Indudablemente, ciertamente</i> refuerzan una afirmación. <i>Sin lugar a dudas</i> es el refuerzo máximo. <i>Lo que es evidente/está claro es que...</i> antepone la certeza al hecho concreto, dando énfasis: <i>lo que está claro es que su actitud demuestra que está desesperado</i>.' },
+    { h: 'Negar la certeza', html: '<i>No tengo (tan) claro que...</i> y <i>no tengo la seguridad de...</i> niegan directamente la certeza, con matiz de duda genuina. <i>Cuestiono/pongo en duda que...</i> va más allá: no es solo dudar, sino desafiar activamente una afirmación.' },
+    { h: 'Percepciones no confirmadas', html: '<i>Sospecho que...</i> introduce una creencia basada en indicios, a menudo con connotación algo negativa. <i>Juraría que...</i> expresa una certeza subjetiva muy alta pero no verificada: <i>juraría que dejé aquí el coche</i>. <i>(Me) da la impresión/sensación de...</i> presenta algo como percepción personal, no hecho comprobado. <i>Intuyo/preveo/presiento que...</i> distinguen matices: intuir es percibir sin razonamiento explícito, prever es anticipar racionalmente, presentir añade un matiz casi premonitorio.' }
+  ],
+  exponents: [
+    { es: 'No me cabe la menor duda de que actuó de buena fe.', en: "I have no doubt whatsoever that he acted in good faith.", register: 'formal' },
+    { es: 'Sospecho que no nos está contando toda la verdad.', en: "I suspect he's not telling us the whole truth.", register: 'neutral' },
+    { es: 'Juraría que había dejado las llaves en la mesa.', en: "I could swear I'd left the keys on the table.", register: 'coloquial' },
+    { es: 'No tengo tan claro que esa sea la mejor solución.', en: "I'm not so sure that's the best solution.", register: 'neutral' },
+    { es: 'El informe cuestiona la eficacia de la medida.', en: 'The report questions the effectiveness of the measure.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Intuyo que algo va mal, sin saber exactamente qué.', en: "I sense something's wrong, without knowing exactly what.", note: 'intuir — percepción sin razonamiento explícito' },
+    { es: 'Preveo que habrá problemas si no se actúa a tiempo.', en: "I foresee there will be problems if action isn't taken in time.", note: 'prever — anticipación racional, basada en datos' }
+  ],
+  pitfalls: [
+    '"Cuestionar/poner en duda" no es lo mismo que simplemente "no tener claro" — cuestionar implica un desafío activo a una afirmación, no solo una duda personal.',
+    '"Intuir", "prever" y "presentir" no son sinónimos exactos: intuir es percibir sin razonamiento explícito, prever es anticipar con base racional, presentir añade un matiz casi premonitorio.',
+    '"Juraría que..." expresa una certeza subjetiva muy alta que puede resultar equivocada — no es una afirmación verificada, pese a su fuerza expresiva.'
+  ],
+  examples: [
+    { es: 'Es un hecho que la situación ha empeorado este año.', en: 'It\'s a fact that the situation has worsened this year.' },
+    { es: 'Presiento que algo bueno va a pasar hoy.', en: "I have a feeling something good is going to happen today." },
+    { es: 'No tengo la seguridad de que llegue a tiempo.', en: "I'm not certain he'll arrive on time." }
+  ],
+  probes: [
+    { id: 'p:certezaevidenciaC1:cuestionar', kind: 'mcq', q: '¿Qué diferencia hay entre "cuestionar" y "no tener claro"?', options: ['Ninguna', 'Cuestionar es un desafío activo; no tener claro es una simple duda personal', 'No tener claro es más fuerte'], answer: 1 },
+    { id: 'p:certezaevidenciaC1:intuirprever', kind: 'mcq', q: '¿Qué diferencia hay entre "intuir" y "prever"?', options: ['Ninguna', 'Intuir es sin razonamiento explícito; prever es una anticipación racional', 'Prever es menos fiable'], answer: 1 },
+    { id: 'p:certezaevidenciaC1:cloze', kind: 'cloze', text: 'No me cabe la menor ___ de que actuó bien. (certeza absoluta)', accept: ['duda'] },
+    { id: 'p:certezaevidenciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "sospecho que" y "juraría que"?', back: 'sospechar se basa en indicios y suele tener connotación algo negativa; jurar expresa una certeza subjetiva muy alta, aunque no verificada' }
+  ]
 }
 
 ];
