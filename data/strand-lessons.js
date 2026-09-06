@@ -23668,6 +23668,50 @@ window.STRAND_LESSONS = [
     { id: 'p:gradoC1:cloze', kind: 'cloze', text: 'Celebraron su boda por todo lo ___. (grado máximo, con gran fasto)', accept: ['alto'] },
     { id: 'p:gradoC1:recall', kind: 'recall', front: '¿Qué matiz aporta la estructura "lo + adjetivo + que" en una exclamación?', back: 'presenta el grado como tan alto que apenas puede expresarse directamente (¡lo grande que es!)' }
   ]
+},
+
+{
+  id: 'nt-medidas-generales-tamano-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:327', 'nociones_generales:C1:328', 'nociones_generales:C1:329', 'nociones_generales:C1:330',
+         'nociones_generales:C1:332', 'nociones_generales:C1:333', 'nociones_generales:C1:334', 'nociones_generales:C1:335',
+         'nociones_generales:C1:336', 'nociones_generales:C1:337', 'nociones_generales:C1:338', 'nociones_generales:C1:339',
+         'nociones_generales:C1:340', 'nociones_generales:C1:341', 'nociones_generales:C1:342'],
+  title: 'Medidas generales, talla y tamaño en C1: de "a ojo" a "gigantesco"',
+  summary: 'Este vocabulario cubre tres niveles: medir en general (escala, unidades, "a ojo"), la talla de la ropa (patrón, contorno), y el tamaño de cualquier objeto, con adjetivos que van de "minúsculo" a "gigantesco" y verbos que cambian ese tamaño (agrandar, encoger, estrechar).',
+  sections: [
+    { h: 'Medir en general', html: '<i>Dimensión</i> es cada aspecto medible de algo: <i>son tres las dimensiones conocidas</i>. <i>Escala</i> es la proporción entre una representación y la realidad; <i>unidades de medida</i>, el sistema usado. <i>Medir/calcular a ojo</i> es estimar sin instrumento; <i>medir a escala</i>, respetando una proporción. <i>De gran magnitud, de grandes proporciones/dimensiones</i> describen algo enorme: <i>un terremoto de gran magnitud, un desastre de grandes proporciones</i>.' },
+    { h: 'La talla de la ropa', html: '<i>Patrón</i> es el molde con el que se corta una prenda. Las <i>medidas de cintura, pecho, cadera, hombros, espalda, manga, contorno</i> son las que se toman para ajustar una prenda a una persona concreta.' },
+    { h: 'Calificar el tamaño', html: '<i>Formato</i> es el tamaño estandarizado de algo, típicamente documentos o imágenes: <i>es difícil decidir el tamaño de las fotos, hay diferentes formatos</i>. Un tamaño puede ser <i>considerable, reducido, insignificante, justo, exagerado</i>. En los extremos: <i>minúsculo</i> (muy pequeño: <i>una letra minúscula</i>) y <i>mayúsculo</i> (usado hiperbólicamente para algo grande: <i>un escándalo mayúsculo</i>); <i>microscópico</i> (extremadamente pequeño) y <i>gigantesco</i> (extremadamente grande).' },
+    { h: 'Verbos que cambian el tamaño', html: '<i>Alargar, acortar</i> cambian la longitud: <i>acortar las mangas</i>. <i>Agrandar, empequeñecer, estrechar, ensanchar, estirar, encoger</i> cubren otros cambios de tamaño: <i>he lavado el jersey en la lavadora y ha encogido</i>.' },
+    { h: 'Expresar una medida concreta', html: '<i>Tener un tamaño (de)</i> y <i>tener una longitud/anchura/altura/profundidad</i> son las construcciones para dar una cifra exacta: <i>el cartel tiene un tamaño de 70 x 50 cm</i>, <i>el pozo tiene una profundidad de 18 m</i>.' }
+  ],
+  exponents: [
+    { es: 'El jersey encogió al lavarlo con agua caliente.', en: 'The sweater shrank when washed in hot water.', register: 'neutral' },
+    { es: 'El terremoto fue de una magnitud considerable.', en: 'The earthquake was of considerable magnitude.', register: 'formal' },
+    { es: 'Calculé la distancia a ojo, sin cinta métrica.', en: 'I estimated the distance by eye, without a tape measure.', register: 'neutral' },
+    { es: 'La sala tiene una altura de casi cuatro metros.', en: 'The room is almost four meters high.', register: 'neutral' },
+    { es: 'Fue un error mayúsculo que costó el puesto al director.', en: 'It was a massive mistake that cost the director his job.', register: 'neutral' }
+  ],
+  contrasts: [
+    { es: 'Una letra minúscula, casi ilegible.', en: 'A tiny, almost illegible font.', note: 'tamaño físico extremadamente pequeño' },
+    { es: 'Un error mayúsculo, imposible de ignorar.', en: 'A massive error, impossible to ignore.', note: 'uso hiperbólico, no literal, para algo muy grave' }
+  ],
+  pitfalls: [
+    '"Mayúsculo" aplicado a algo abstracto (un error, un escándalo) es hiperbólico, no describe un tamaño físico real — no confundir con su uso literal en tipografía ("letra mayúscula").',
+    '"Medir/calcular a ojo" implica estimar sin instrumento de medición, con la imprecisión que eso conlleva — no es un sinónimo de "medir con precisión".',
+    'Los verbos de cambio de tamaño no son intercambiables: "estrechar/ensanchar" cambian el ancho, "alargar/acortar" la longitud, "agrandar/empequeñecer" y "estirar/encoger" son más generales.'
+  ],
+  examples: [
+    { es: 'El vestido necesita un patrón especial por la talla.', en: 'The dress needs a special pattern for the size.' },
+    { es: 'Es un formato de fotografía poco habitual.', en: 'It\'s an unusual photo format.' },
+    { es: 'El daño fue de proporciones insignificantes.', en: 'The damage was of insignificant proportions.' }
+  ],
+  probes: [
+    { id: 'p:medidasgeneralestamanoC1:aojo', kind: 'mcq', q: '"Calcular a ojo" implica...', options: ['Medir con instrumento de precisión', 'Estimar sin instrumento', 'Un cálculo garantizado exacto'], answer: 1 },
+    { id: 'p:medidasgeneralestamanoC1:mayusculo', kind: 'mcq', q: '"Un error mayúsculo." ¿Qué tipo de uso es este?', options: ['Literal, tamaño físico', 'Hiperbólico, para algo muy grave', 'Tipográfico'], answer: 1 },
+    { id: 'p:medidasgeneralestamanoC1:cloze', kind: 'cloze', text: 'El jersey ___ al lavarlo con agua caliente. (reducirse de tamaño la ropa)', accept: ['encogió'] },
+    { id: 'p:medidasgeneralestamanoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "minúsculo" y "microscópico"?', back: '"minúsculo" es muy pequeño; "microscópico" es un grado más extremo, tan pequeño que casi no se percibe a simple vista' }
+  ]
 }
 
 ];
