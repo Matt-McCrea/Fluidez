@@ -24593,6 +24593,44 @@ window.STRAND_LESSONS = [
     { id: 'p:posterioridadC1:cloze', kind: 'cloze', text: 'Las vacaciones están a la ___ de la esquina. (inminencia figurada)', accept: ['vuelta'] },
     { id: 'p:posterioridadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "apenas/nada más" y "con posterioridad"?', back: '"apenas/nada más" marcan inmediatez casi simultánea; "con posterioridad" solo indica que algo viene después, sin implicar cercanía temporal' }
   ]
+},
+
+{
+  id: 'nt-puntualidad-singularidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:786', 'nociones_generales:C1:787', 'nociones_generales:C1:788', 'nociones_generales:C1:789', 'nociones_generales:C1:913'],
+  title: 'Puntualidad y singularidad en C1: "por los pelos" y "sin precedentes"',
+  summary: 'La puntualidad admite matices culturales fijados en la lengua ("puntualidad británica/germánica") y un margen mínimo de éxito ("llegar por los pelos"); "sin precedentes" cierra este bloque describiendo algo tan singular que nunca antes había ocurrido nada parecido.',
+  sections: [
+    { h: 'Puntualidad: estereotipos y margen mínimo', html: '<i>Puntualidad británica/germánica</i> son expresiones fijas que asocian la puntualidad extrema a ciertos estereotipos culturales. <i>Llegar por los pelos</i> es llegar a tiempo, pero con un margen mínimo, casi tarde.' },
+    { h: 'Estar a tiempo, sin demora', html: '<i>En hora</i> describe que algo ocurre en el momento correcto, sin retraso. <i>Sin demora</i> es la locución formal para "inmediatamente, sin tardanza".' },
+    { h: 'Singularidad: "sin precedentes"', html: '<i>Sin precedente(s)</i> describe algo tan único que nunca antes había ocurrido nada comparable: <i>se produjo una reacción popular sin precedentes</i>.' }
+  ],
+  exponents: [
+    { es: 'Llegó por los pelos, justo cuando cerraban las puertas.', en: 'He made it by the skin of his teeth, just as the doors were closing.', register: 'coloquial' },
+    { es: 'El tren llegó en hora, sin ningún retraso.', en: 'The train arrived on time, without any delay.', register: 'neutral' },
+    { es: 'Se exige actuar sin demora ante la emergencia.', en: 'Immediate action is required in the face of the emergency.', register: 'formal' },
+    { es: 'Fue una crisis sin precedentes en la historia del país.', en: 'It was an unprecedented crisis in the country\'s history.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Llegó con tiempo de sobra, sin prisas.', en: 'He arrived with plenty of time to spare.', note: 'puntualidad cómoda, con margen' },
+    { es: 'Llegó por los pelos, casi sin tiempo.', en: 'He made it by the skin of his teeth, almost out of time.', note: 'puntualidad mínima, casi tarde' }
+  ],
+  pitfalls: [
+    '"Llegar por los pelos" no significa llegar tarde — significa llegar a tiempo, pero con un margen mínimo, casi al límite.',
+    '"Sin precedentes" no es un simple sinónimo de "nuevo" o "sorprendente" — implica específicamente que nunca antes ha ocurrido nada comparable en la historia conocida.',
+    '"Puntualidad británica/germánica" son estereotipos culturales fijados en la lengua, no descripciones literales de la puntualidad real de esas nacionalidades.'
+  ],
+  examples: [
+    { es: 'Alcanzó el autobús por los pelos.', en: 'He caught the bus by the skin of his teeth.' },
+    { es: 'El informe se entregó en hora, como estaba previsto.', en: 'The report was delivered on time, as planned.' },
+    { es: 'Fue una victoria sin precedentes para el equipo local.', en: 'It was an unprecedented victory for the home team.' }
+  ],
+  probes: [
+    { id: 'p:puntualidadsingularidadC1:porlospelos', kind: 'mcq', q: '"Llegó por los pelos." ¿Qué significa?', options: ['Llegó tarde', 'Llegó a tiempo, con margen mínimo', 'No llegó'], answer: 1 },
+    { id: 'p:puntualidadsingularidadC1:sinprecedentes', kind: 'mcq', q: '"Una crisis sin precedentes" implica...', options: ['Que ya ha ocurrido antes varias veces', 'Que nunca antes había ocurrido algo comparable', 'Que es una crisis menor'], answer: 1 },
+    { id: 'p:puntualidadsingularidadC1:cloze', kind: 'cloze', text: 'Se exige actuar sin ___ ante la emergencia. (sin tardanza)', accept: ['demora'] },
+    { id: 'p:puntualidadsingularidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "en hora" y "por los pelos"?', back: '"en hora" describe puntualidad normal, sin retraso; "por los pelos" describe llegar a tiempo con un margen mínimo, casi tarde' }
+  ]
 }
 
 ];
