@@ -25522,6 +25522,90 @@ window.STRAND_LESSONS = [
     { id: 'p:colorC1:cloze', kind: 'cloze', text: 'Se ___ de vergüenza al oír el comentario. (ponerse rojo)', accept: ['enrojeció'] },
     { id: 'p:colorC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "matiz" y "gama"?', back: 'matiz es una variación sutil dentro de un color; gama es un rango completo de tonos' }
   ]
+},
+
+{
+  id: 'nt-edad-vejez-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1327', 'nociones_generales:C1:1328', 'nociones_generales:C1:1329', 'nociones_generales:C1:1331',
+         'nociones_generales:C1:1332', 'nociones_generales:C1:1333', 'nociones_generales:C1:1334', 'nociones_generales:C1:1335',
+         'nociones_generales:C1:1336', 'nociones_generales:C1:1337', 'nociones_generales:C1:1338', 'nociones_generales:C1:1339', 'nociones_generales:C1:1340'],
+  title: 'Edad y vejez en C1: novato, veterano y "no pasar los años por alguien"',
+  summary: 'La edad se aplica en C1 tanto a personas como a objetos y experiencia — un "veterano" no es necesariamente mayor, es experimentado; un objeto puede "conservarse bien" igual que una persona; y "no pasar los años por alguien" es el elogio máximo a quien no envejece.',
+  sections: [
+    { h: 'Palabras coloquiales de edad', html: '<i>Crío, chaval</i> son formas coloquiales para niño o joven; <i>abuelo</i> se usa también en sentido figurado para alguien que actúa como mayor: <i>estás hecho un abuelo</i>.' },
+    { h: 'Experiencia, no solo edad biológica', html: '<i>Novato, veterano</i> se refieren a la experiencia en una actividad, no a la edad biológica — un veterano puede ser joven si lleva mucho tiempo en su campo.' },
+    { h: 'Sustantivos de deterioro y de novedad', html: '<i>Deterioro, envejecimiento</i> describen el paso negativo del tiempo. <i>Antigüedad</i> puede referirse tanto a objetos como al tiempo en un puesto: <i>tiene dos años de antigüedad en el puesto</i>. <i>Mayor de edad</i> es la fórmula legal para la edad adulta. <i>Generacional</i> describe diferencias entre generaciones: <i>conflicto generacional</i>.' },
+    { h: 'Adjetivos de antigüedad y novedad', html: '<i>Arcaico, primitivo</i> describen algo muy antiguo: <i>una palabra arcaica, un pueblo primitivo</i>. <i>Innovador, novedoso</i> frente a <i>anticuado, (des)gastado</i> son los extremos entre lo nuevo y lo viejo/deteriorado.' },
+    { h: 'Verbos de envejecer y de mantenerse', html: '<i>Envejecer, rejuvenecer</i> son los verbos opuestos de cambio con la edad. <i>Estropear(se), (des)gastarse</i> describen el deterioro de un objeto. <i>Conservar(se) bien/mal</i> se aplica tanto a personas como a objetos. <i>Reformar, actualizar, renovar</i> son las acciones para combatir el envejecimiento: <i>reformar la casa, actualizar conocimientos, renovar el pasaporte</i>.' },
+    { h: '"No pasar los años por una persona"', html: 'Esta locución elogia a alguien que parece no envejecer, manteniendo un aspecto joven pese al paso del tiempo.' }
+  ],
+  exponents: [
+    { es: 'Es un veterano en la empresa, aunque solo tiene treinta años.', en: "He's a veteran at the company, even though he's only thirty.", register: 'neutral' },
+    { es: 'Los años no pasan por ella.', en: 'The years just don\'t seem to touch her.', register: 'coloquial' },
+    { es: 'El coche se conserva muy bien pese a su antigüedad.', en: 'The car is very well preserved despite its age.', register: 'neutral' },
+    { es: 'Decidieron renovar el contrato antes de que venciera.', en: 'They decided to renew the contract before it expired.', register: 'formal' },
+    { es: 'Existe un claro conflicto generacional en esa familia.', en: "There's a clear generational conflict in that family.", register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Es un veterano del sector, con treinta años de experiencia.', en: 'He\'s a veteran of the industry, with thirty years of experience.', note: 'veterano — experiencia, no necesariamente edad avanzada' },
+    { es: 'Un método arcaico, ya en desuso.', en: 'An archaic method, no longer in use.', note: 'arcaico — muy antiguo' }
+  ],
+  pitfalls: [
+    '"Veterano" no implica necesariamente edad avanzada — describe experiencia en una actividad, independientemente de la edad biológica de la persona.',
+    '"Conservarse bien/mal" se aplica tanto a personas como a objetos — no es exclusivo de ninguno de los dos.',
+    '"No pasar los años por alguien" es siempre un elogio — nunca se usa para describir negativamente a alguien.'
+  ],
+  examples: [
+    { es: 'Es todavía un novato en este oficio.', en: "He's still a novice in this trade." },
+    { es: 'El edificio muestra signos evidentes de deterioro.', en: 'The building shows clear signs of deterioration.' },
+    { es: 'Actualizaron sus conocimientos con el nuevo curso.', en: 'They updated their knowledge with the new course.' }
+  ],
+  probes: [
+    { id: 'p:edadvejezC1:veterano', kind: 'mcq', q: '¿A qué se refiere "veterano" principalmente?', options: ['A la edad biológica', 'A la experiencia en una actividad', 'A ser mayor de 65 años'], answer: 1 },
+    { id: 'p:edadvejezC1:nopasar', kind: 'mcq', q: '"Los años no pasan por ella." ¿Qué tipo de expresión es?', options: ['Una crítica', 'Un elogio', 'Una queja'], answer: 1 },
+    { id: 'p:edadvejezC1:cloze', kind: 'cloze', text: 'El coche se ___ muy bien pese a su antigüedad. (mantenerse en buen estado)', accept: ['conserva'] },
+    { id: 'p:edadvejezC1:recall', kind: 'recall', front: '¿Se aplica "conservarse bien/mal" solo a personas?', back: 'no, se aplica tanto a personas como a objetos' }
+  ]
+},
+
+{
+  id: 'nt-accesibilidad-limpieza-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1359', 'nociones_generales:C1:1360', 'nociones_generales:C1:1361', 'nociones_generales:C1:1362',
+         'nociones_generales:C1:1363', 'nociones_generales:C1:1364', 'nociones_generales:C1:1367', 'nociones_generales:C1:1368',
+         'nociones_generales:C1:1369', 'nociones_generales:C1:1370', 'nociones_generales:C1:1371', 'nociones_generales:C1:1372'],
+  title: 'Accesibilidad y limpieza en C1: "obstruido" y "estar hecho un asco"',
+  summary: 'Estos dos bloques comparten una lógica similar de extremos: la accesibilidad va de lo abierto a lo obstruido, y la limpieza va de lo impecable a "estar hecho un asco" — un vocabulario muy visual para describir el estado de un espacio.',
+  sections: [
+    { h: 'Accesibilidad: abrir y cerrar el paso', html: '<i>Accesibilidad</i> es la facilidad de acceso. <i>Apertura, cierre</i> son los procesos de habilitar o bloquear un acceso. <i>Obstrucción, obstruido</i> describen un paso bloqueado por algo. <i>Accesible</i> es el adjetivo general; <i>acceder</i>, el verbo de llegar a algo o entrar en un lugar.' },
+    { h: 'Limpieza: de lo impecable a lo asqueroso', html: '<i>Porquería</i> es suciedad en sentido general y coloquial. <i>Impecable</i> describe una limpieza perfecta, sin ningún defecto. <i>Sacudir(se)</i> es eliminar polvo o suciedad con movimientos bruscos. <i>Sanear</i> es limpiar a fondo por razones de salud o higiene. <i>Limpiar de arriba abajo</i> es una limpieza exhaustiva y completa. <i>Estar hecho un asco/una porquería</i> son locuciones coloquiales para describir algo muy sucio o descuidado.' }
+  ],
+  exponents: [
+    { es: 'El edificio cuenta con accesibilidad para sillas de ruedas.', en: 'The building has wheelchair accessibility.', register: 'formal' },
+    { es: 'La tubería estaba obstruida por completo.', en: 'The pipe was completely blocked.', register: 'neutral' },
+    { es: 'Dejó la cocina impecable después de cocinar.', en: 'He left the kitchen spotless after cooking.', register: 'neutral' },
+    { es: 'Su habitación está hecha un asco, hay ropa por todas partes.', en: "His room is a mess, there's clothes everywhere.", register: 'coloquial' },
+    { es: 'Decidieron sanear la vivienda antes de venderla.', en: 'They decided to fumigate and clean the property before selling it.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Una entrada accesible para todos.', en: 'An accessible entrance for everyone.', note: 'facilidad de acceso' },
+    { es: 'Una entrada obstruida por escombros.', en: 'An entrance blocked by rubble.', note: 'paso bloqueado' }
+  ],
+  pitfalls: [
+    '"Estar hecho un asco/una porquería" es exclusivamente coloquial — no conviene en un registro formal para describir suciedad.',
+    '"Sanear" implica una limpieza a fondo, a menudo con connotación de salud o higiene, no una limpieza superficial cualquiera.',
+    '"Obstrucción/obstruido" se aplican tanto a espacios físicos (tuberías, caminos) como, en otros contextos, a procesos bloqueados.'
+  ],
+  examples: [
+    { es: 'Sacudió la alfombra antes de guardarla.', en: 'He shook out the rug before putting it away.' },
+    { es: 'El almacén no es accesible para personas con movilidad reducida.', en: "The warehouse isn't accessible for people with reduced mobility." },
+    { es: 'Limpiaron la casa de arriba abajo antes de la visita.', en: 'They cleaned the house from top to bottom before the visit.' }
+  ],
+  probes: [
+    { id: 'p:accesibilidadlimpiezaC1:sanear', kind: 'mcq', q: '¿Qué implica "sanear" que una limpieza superficial no implica?', options: ['Nada, son iguales', 'Una limpieza a fondo, con connotación de salud/higiene', 'Solo pintar las paredes'], answer: 1 },
+    { id: 'p:accesibilidadlimpiezaC1:hechounasco', kind: 'mcq', q: '"Su habitación está hecha un asco." ¿Qué registro es?', options: ['Formal', 'Coloquial', 'Técnico'], answer: 1 },
+    { id: 'p:accesibilidadlimpiezaC1:cloze', kind: 'cloze', text: 'La tubería estaba ___ por completo. (bloqueada)', accept: ['obstruida'] },
+    { id: 'p:accesibilidadlimpiezaC1:recall', kind: 'recall', front: '¿A qué tipo de espacios se aplica "obstrucción/obstruido"?', back: 'a espacios físicos (tuberías, caminos, entradas) y, en otros contextos, a procesos bloqueados' }
+  ]
 }
 
 ];
