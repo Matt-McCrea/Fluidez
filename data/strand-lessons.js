@@ -27373,6 +27373,45 @@ window.STRAND_LESSONS = [
     { id: 'p:empatiaaliviosesperanzaC1:cloze', kind: 'cloze', text: 'Me pongo en tu ___, entiendo perfectamente cómo te sientes. (empatía imaginativa)', accept: ['lugar'] },
     { id: 'p:empatiaaliviosesperanzaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "te compadezco" y "me pongo en tu lugar"?', back: '"te compadezco" puede sonar más distante o formal; "me pongo en tu lugar" es una empatía más cercana e imaginativa' }
   ]
+},
+
+{
+  id: 'fn-decepcion-resignacion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:622', 'funciones:C1:623', 'funciones:C1:624', 'funciones:C1:627', 'funciones:C1:628', 'funciones:C1:629', 'funciones:C1:630'],
+  title: 'Decepción y resignación en C1: "¡vaya, hombre!" y "que sea lo que Dios quiera"',
+  summary: 'La decepción en C1 tiene su propia entonación ("¡vaya, hombre!", con caída descendente), mientras que la resignación acepta lo inevitable con fórmulas casi fatalistas: "que sea lo que Dios quiera", "no hay más remedio".',
+  sections: [
+    { h: 'Expresar decepción', html: '<i>¡Menuda/vaya desilusión/decepción!</i> exclama directamente la decepción. <i>Esto no es lo que (me) esperaba/imaginaba</i> compara explícitamente lo ocurrido con la expectativa previa. <i>¡Vaya, hombre!</i>, con entonación descendente, expresa una decepción resignada, casi sin sorpresa — es distinta de la misma expresión con entonación ascendente, que sería sorpresa o irritación.' },
+    { h: 'Expresar resignación', html: '<i>Me resigno a...</i> es el verbo directo: <i>ya hace tiempo que me resigné a cumplir años</i>. <i>No hay/queda otro/más remedio...</i> presenta la resignación como ausencia de alternativa: <i>no hay más remedio que aceptar las cosas como son</i>.' },
+    { h: 'Exclamaciones fatalistas de resignación', html: '<i>¡Que sea lo que Dios quiera!</i> y <i>¡que sea lo que tenga que ser!</i> son exclamaciones que entregan el resultado a fuerzas fuera del propio control, aceptando de antemano cualquier desenlace.' }
+  ],
+  exponents: [
+    { es: '¡Vaya desilusión, pensaba que ganaríamos!', en: 'What a disappointment, I thought we would win!', register: 'coloquial' },
+    { es: 'Ya me he resignado a trabajar los fines de semana.', en: "I've already resigned myself to working weekends.", register: 'neutral' },
+    { es: 'No hay más remedio que esperar hasta mañana.', en: "There's no choice but to wait until tomorrow.", register: 'neutral' },
+    { es: '¡Que sea lo que Dios quiera, ya no puedo hacer nada más!', en: "Whatever will be, will be, I can't do anything more!", register: 'coloquial' },
+    { es: 'Esto no es en absoluto lo que me esperaba de este viaje.', en: "This isn't at all what I expected from this trip.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¡Vaya, hombre! (entonación descendente)', en: 'Oh well.', note: 'decepción resignada, sin sorpresa' },
+    { es: '¡Vaya, hombre! (entonación ascendente)', en: 'Come on, seriously?!', note: 'sorpresa o irritación, tono muy distinto' }
+  ],
+  pitfalls: [
+    '"¡Vaya, hombre!" cambia de sentido completamente según la entonación — descendente expresa decepción resignada, ascendente expresa sorpresa o irritación.',
+    '"Me resigno a" implica un proceso de aceptación, no un simple hecho — a menudo describe algo que costó aceptar con el tiempo.',
+    '"¡Que sea lo que Dios quiera!" no implica necesariamente creencia religiosa literal en quien lo dice — funciona como fórmula fija de resignación fatalista, muy extendida culturalmente.'
+  ],
+  examples: [
+    { es: 'Vaya decepción de partido, esperaba mucho más.', en: 'What a disappointing match, I expected much more.' },
+    { es: 'No queda otro remedio que aceptar las condiciones.', en: 'There\'s no other way but to accept the conditions.' },
+    { es: 'Ya hemos hecho todo lo posible, que sea lo que tenga que ser.', en: "We've already done everything possible, whatever happens, happens." }
+  ],
+  probes: [
+    { id: 'p:decepcionresignacionC1:vayahombre', kind: 'mcq', q: '¿Qué cambia el significado de "¡vaya, hombre!"?', options: ['El contexto escrito', 'La entonación (ascendente o descendente)', 'Nada, siempre significa lo mismo'], answer: 1 },
+    { id: 'p:decepcionresignacionC1:quesealoquedios', kind: 'mcq', q: '"¡Que sea lo que Dios quiera!" implica necesariamente creencia religiosa?', options: ['Sí, siempre', 'No, es una fórmula fija de resignación', 'Solo en contextos oficiales'], answer: 1 },
+    { id: 'p:decepcionresignacionC1:cloze', kind: 'cloze', text: 'No hay más ___ que aceptar las cosas como son. (ausencia de alternativa)', accept: ['remedio'] },
+    { id: 'p:decepcionresignacionC1:recall', kind: 'recall', front: '¿Qué compara la expresión "esto no es lo que (me) esperaba/imaginaba"?', back: 'lo que realmente ocurrió frente a la expectativa previa del hablante' }
+  ]
 }
 
 ];
