@@ -26294,6 +26294,52 @@ window.STRAND_LESSONS = [
     { id: 'p:reflexionconocimientoC1:cloze', kind: 'cloze', text: 'Se ___ la cabeza intentando resolver el problema. (pensar intensamente, con esfuerzo)', accept: ['rompió'] },
     { id: 'p:reflexionconocimientoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "ocurrírsele una idea a alguien" y "romperse la cabeza"?', back: 'ocurrírsele describe una idea que surge sin buscarla activamente; romperse la cabeza es un esfuerzo mental deliberado e intenso' }
   ]
+},
+
+{
+  id: 'nt-expresion-verbal-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1805', 'nociones_generales:C1:1806', 'nociones_generales:C1:1807', 'nociones_generales:C1:1808',
+         'nociones_generales:C1:1809', 'nociones_generales:C1:1810', 'nociones_generales:C1:1811', 'nociones_generales:C1:1812',
+         'nociones_generales:C1:1813', 'nociones_generales:C1:1814', 'nociones_generales:C1:1815', 'nociones_generales:C1:1816',
+         'nociones_generales:C1:1817', 'nociones_generales:C1:1818', 'nociones_generales:C1:1819', 'nociones_generales:C1:1820',
+         'nociones_generales:C1:1821', 'nociones_generales:C1:1822', 'nociones_generales:C1:1823', 'nociones_generales:C1:1824', 'nociones_generales:C1:1825'],
+  title: 'Expresión verbal en C1: de "dejar caer" a "poner algo en claro"',
+  summary: 'Este es el catálogo más amplio de verbos de habla del inventario C1 — "sostener" una opinión no es lo mismo que "mantenerla", "dejar caer" es insinuar sin comprometerse, y "reñir/reprochar/regañar" gradúan la reprimenda de más severa a más suave.',
+  sections: [
+    { h: 'Sustantivos del discurso', html: '<i>Dicho, frase hecha</i> son expresiones fijas populares. <i>Argumentación</i> es el desarrollo razonado de una postura. <i>Declaración, proposición, planteamiento, postura, protesta, advertencia</i> son distintos tipos de intervención pública: <i>reflejar una postura</i>. <i>Intervención</i> es la participación puntual en un debate. <i>Síntesis, esbozo, tesis</i> son formas de presentar una idea, de más resumida (síntesis) a más desarrollada y defendida (tesis): <i>defender una tesis</i>. <i>Charla, confesión, confidencia</i> gradúan la intimidad del contenido compartido. <i>Charlatán</i> es alguien que habla en exceso, con connotación negativa.' },
+    { h: 'Verbos de conversar y de posicionarse', html: '<i>Conversar, dialogar, debatir</i> gradúan la formalidad del intercambio. <i>Sostener, mantener</i> son defender una postura con firmeza: <i>sostener una opinión, mantener una conversación</i>. <i>Charlar, intervenir</i> son hablar informalmente o participar puntualmente. <i>Contradecir, oponerse a, rectificar, rechazar</i> son las formas de discrepar: contradecir niega lo dicho por otro, rectificar corrige lo dicho por uno mismo.' },
+    { h: 'Verbos de aclarar y precisar', html: '<i>Aclarar, especificar, señalar, manifestar, plantear, adelantar, declarar</i> cubren desde hacer algo más claro hasta anunciarlo formalmente, con "adelantar" implicando decir algo antes de tiempo. <i>Referirse a, indicar, aportar</i> son mencionar o contribuir con información. <i>Relatar</i> es narrar un suceso. <i>Verbalizar, exponer, sintetizar</i> son poner en palabras, presentar con detalle, o resumir.' },
+    { h: 'Verbos de comunicar públicamente', html: '<i>Nombrar, exclamar, difundir, prevenir, emitir, transmitir</i> cubren desde decir un nombre hasta hacer llegar información a un público amplio: <i>emitir un comunicado, transmitir una noticia</i>.' },
+    { h: 'Verbos de admitir, reclamar y reprender', html: '<i>Admitir, reconocer, justificar(se), ocultar</i> gradúan la relación con la verdad de algo, de aceptarla a esconderla. <i>Reclamar</i> es exigir algo formalmente. <i>Reñir, reprochar, regañar</i> gradúan la reprimenda: reñir es más severo y formal, regañar más cotidiano y a menudo hacia niños, reprochar se centra en señalar una falta concreta. <i>Defender, disculpar, acusar</i> son las posiciones típicas de un conflicto verbal: <i>defender unos ideales</i>.' },
+    { h: 'Hablar bajo, insinuar y aclarar', html: '<i>Murmurar, susurrar</i> son hablar en voz muy baja. <i>Emitir gritos/quejas/sonidos</i> es la construcción neutra para producir esos sonidos. <i>Dejar caer</i> es insinuar algo indirectamente, sin comprometerse del todo con haberlo dicho. <i>Poner algo en claro</i> es aclarar una situación confusa de forma definitiva.' }
+  ],
+  exponents: [
+    { es: 'Dejó caer que quizás no seguiría en el puesto.', en: 'He hinted that he might not stay in the position.', register: 'neutral' },
+    { es: 'Sostiene su opinión pese a las críticas.', en: 'He stands by his opinion despite the criticism.', register: 'formal' },
+    { es: 'La reunión sirvió para poner las cosas en claro.', en: 'The meeting served to clear things up once and for all.', register: 'neutral' },
+    { es: 'El profesor le regañó por llegar tarde otra vez.', en: 'The teacher scolded him for being late again.', register: 'coloquial' },
+    { es: 'El gobierno emitió un comunicado oficial sobre el asunto.', en: 'The government issued an official statement on the matter.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Le reprochó no haber avisado a tiempo.', en: 'He reproached him for not warning in time.', note: 'reprochar — señala una falta concreta' },
+    { es: 'Le echó una fuerte reprimenda delante de todos.', en: 'He gave him a stern scolding in front of everyone.', note: 'reñir — más severo y formal' }
+  ],
+  pitfalls: [
+    '"Dejar caer" implica una insinuación deliberada pero indirecta — quien la dice puede negar después haberla afirmado del todo.',
+    '"Reñir", "reprochar" y "regañar" no son intercambiables: reñir es la reprimenda más severa, regañar la más cotidiana (frecuente con niños), reprochar se centra en señalar una falta concreta más que en el tono de la reprimenda.',
+    '"Sostener" una opinión implica defenderla activamente frente a la oposición — no es un simple sinónimo de "tener" una opinión.'
+  ],
+  examples: [
+    { es: 'Le costó verbalizar lo que sentía.', en: 'He found it hard to put into words what he felt.' },
+    { es: 'Adelantó que habría cambios en la dirección.', en: 'He hinted in advance that there would be changes in management.' },
+    { es: 'Al final tuvo que admitir su error.', en: 'In the end he had to admit his mistake.' }
+  ],
+  probes: [
+    { id: 'p:expresionverbalC1:dejarcaer', kind: 'mcq', q: '"Dejó caer que se iba." ¿Qué implica esta expresión?', options: ['Lo afirmó rotundamente y sin ambigüedad', 'Lo insinuó indirectamente, sin comprometerse del todo', 'No dijo nada al respecto'], answer: 1 },
+    { id: 'p:expresionverbalC1:renirregañar', kind: 'mcq', q: '¿Cuál de estos verbos es el más severo?', options: ['Regañar', 'Reñir', 'Reprochar'], answer: 1 },
+    { id: 'p:expresionverbalC1:cloze', kind: 'cloze', text: 'El gobierno ___ un comunicado oficial. (hacer llegar información formalmente)', accept: ['emitió'] },
+    { id: 'p:expresionverbalC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "contradecir" y "rectificar"?', back: 'contradecir niega lo dicho por otra persona; rectificar corrige lo dicho por uno mismo' }
+  ]
 }
 
 ];
