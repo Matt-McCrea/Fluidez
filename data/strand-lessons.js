@@ -27289,6 +27289,49 @@ window.STRAND_LESSONS = [
     { id: 'p:hartazgoenfadoC1:cloze', kind: 'cloze', text: 'Me puso de un humor de ___ la actitud del cliente. (mal humor, coloquial)', accept: ['perros'] },
     { id: 'p:hartazgoenfadoC1:recall', kind: 'recall', front: '¿Qué tienen en común "hasta la coronilla", "hasta las narices" y "hasta aquí"?', back: 'son variantes coloquiales equivalentes para expresar hartazgo extremo, sin diferencia real de significado' }
   ]
+},
+
+{
+  id: 'fn-miedo-nerviosismo-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:564', 'funciones:C1:565', 'funciones:C1:566', 'funciones:C1:567', 'funciones:C1:568', 'funciones:C1:569',
+         'funciones:C1:570', 'funciones:C1:571', 'funciones:C1:572', 'funciones:C1:573', 'funciones:C1:583', 'funciones:C1:584',
+         'funciones:C1:585', 'funciones:C1:586', 'funciones:C1:587', 'funciones:C1:588', 'funciones:C1:589'],
+  title: 'Miedo y nerviosismo en C1: "el corazón en un puño" y "los pelos de punta"',
+  summary: 'El miedo y el nerviosismo en C1 se somatizan de forma muy física — el corazón se aprieta "en un puño", la piel se pone "de gallina", el pelo se pone "de punta" — mientras que perder los nervios tiene su propia escala hasta "estar al borde de un ataque".',
+  sections: [
+    { h: 'Miedo: verbos directos', html: '<i>Temo...</i> es el verbo general: <i>temo equivocarme</i>. <i>Me horroriza...</i> añade un matiz de horror extremo: <i>me horroriza pensar que están muriendo tantas personas inocentes</i>. <i>Me inquieto/inquieta...</i> describe una preocupación más contenida: <i>me inquieta tu silencio</i>. <i>Me agobio/agobia...</i> añade el matiz de sentirse abrumado, no solo asustado: <i>me agobia que no me dejes en paz ni un minuto</i>.' },
+    { h: 'Miedo extremo', html: '<i>Estoy aterrorizado</i> es el grado máximo directo. <i>Me da un miedo...</i> introduce el miedo como algo que "viene de fuera": <i>me da un miedo horroroso que nos podamos equivocar</i>. <i>¡(Casi) me muero de miedo!</i> es la hipérbole coloquial máxima.' },
+    { h: 'Miedo somatizado en el cuerpo', html: '<i>Tengo el corazón en un puño</i> describe la angustia como una opresión física en el pecho. <i>Se me pone la carne de gallina</i> y <i>se me ponen los pelos de punta</i> describen reacciones corporales involuntarias ante el miedo o la emoción intensa: <i>cuando oí aquel grito se me pusieron los pelos de punta</i>.' },
+    { h: 'Nerviosismo: verbos directos', html: '<i>Me pongo/pone de los nervios...</i> describe ponerse nervioso por algo externo: <i>me pone de los nervios que me griten de esa manera</i>. <i>Me saca de quicio...</i> es un grado más intenso, casi de exasperación: <i>me sacaba de quicio que dejara la ropa tirada por el suelo</i>. <i>Pierdo los nervios...</i> describe el momento en que el control se rompe: <i>sentía muchísimo haber perdido los nervios</i>.' },
+    { h: 'Nerviosismo extremo', html: '<i>Me va a dar algo/un ataque</i> es una hipérbole coloquial para un nerviosismo insostenible: <i>teníamos tanto trabajo que pensamos que nos iba a dar un ataque</i>. <i>Estoy al borde de un ataque de nervios</i> describe un estado límite. <i>Estoy como un flan</i> es una imagen muy visual para el temblor nervioso. <i>¡Tengo unos nervios...!</i> es la exclamación general de nerviosismo intenso: <i>se acerca el gran día y tengo unos nervios que ni te imaginas</i>.' }
+  ],
+  exponents: [
+    { es: 'Tengo el corazón en un puño desde que se fue de viaje.', en: "I've had my heart in my throat since he left on the trip.", register: 'coloquial' },
+    { es: 'Me saca de quicio que llegue tarde siempre.', en: 'It drives me up the wall that he\'s always late.', register: 'coloquial' },
+    { es: 'Estoy como un flan antes de cada entrevista.', en: "I'm a bundle of nerves before every interview.", register: 'coloquial' },
+    { es: 'Se me pusieron los pelos de punta con esa historia.', en: 'That story gave me goosebumps.', register: 'neutral' },
+    { es: 'Estoy al borde de un ataque de nervios con tanto trabajo.', en: "I'm on the verge of a breakdown with so much work.", register: 'coloquial' }
+  ],
+  contrasts: [
+    { es: 'Me inquieta un poco su silencio.', en: 'His silence worries me a bit.', note: 'preocupación contenida' },
+    { es: '¡Casi me muero de miedo con ese ruido!', en: 'I nearly died of fright at that noise!', note: 'miedo extremo, hipérbole coloquial' }
+  ],
+  pitfalls: [
+    '"Me agobio/agobia" añade el matiz de sentirse abrumado por la cantidad o la presión, no solo asustado como "temo" o "me horroriza".',
+    '"Se me pone la carne de gallina" y "se me ponen los pelos de punta" describen reacciones corporales involuntarias — no se controlan deliberadamente, a diferencia de "estoy aterrorizado", que es una descripción directa del estado.',
+    '"Me va a dar algo/un ataque" y "estoy como un flan" son exclusivamente coloquiales — en un registro formal conviene "estoy muy nervioso" o "me siento muy ansioso".'
+  ],
+  examples: [
+    { es: 'Temían que el vuelo se retrasara más de la cuenta.', en: 'They feared the flight would be delayed more than expected.' },
+    { es: 'Perdió los nervios y les gritó a todos.', en: 'He lost his temper and yelled at everyone.' },
+    { es: 'Me agobia un poco tener tantas cosas pendientes.', en: 'Having so many pending things stresses me out a bit.' }
+  ],
+  probes: [
+    { id: 'p:miedonerviosismoC1:agobiar', kind: 'mcq', q: '¿Qué matiz añade "me agobia" frente a "me da miedo"?', options: ['Ninguno', 'Sentirse abrumado por la cantidad o presión, no solo asustado', 'Alegría'], answer: 1 },
+    { id: 'p:miedonerviosismoC1:pelosdepunta', kind: 'mcq', q: '"Se me pusieron los pelos de punta" describe...', options: ['Una decisión consciente', 'Una reacción corporal involuntaria', 'Un peinado nuevo'], answer: 1 },
+    { id: 'p:miedonerviosismoC1:cloze', kind: 'cloze', text: 'Me saca de ___ que siempre llegue tarde. (exasperación intensa)', accept: ['quicio'] },
+    { id: 'p:miedonerviosismoC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "me pongo de los nervios" y "pierdo los nervios"?', back: 'ponerse de los nervios es un estado de nerviosismo; perder los nervios es el momento concreto en que se rompe el control' }
+  ]
 }
 
 ];
