@@ -26424,6 +26424,50 @@ window.STRAND_LESSONS = [
     { id: 'p:pedirinformacionC1:cloze', kind: 'cloze', text: '¿___ idea de si hay una farmacia cerca? (pregunta indirecta y cortés)', accept: ['Tienes'] },
     { id: 'p:pedirinformacionC1:recall', kind: 'recall', front: '¿Qué tienen en común "¿y eso?" y "¿cómo es eso?"?', back: 'ambas, con entonación ascendente, piden una explicación ante algo que ha sorprendido al hablante' }
   ]
+},
+
+{
+  id: 'fn-dar-informacion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  pcic: ['funciones:C1:39', 'funciones:C1:41', 'funciones:C1:43', 'funciones:C1:45', 'funciones:C1:47', 'funciones:C1:49',
+         'funciones:C1:51', 'funciones:C1:52', 'funciones:C1:53', 'funciones:C1:54', 'funciones:C1:58', 'funciones:C1:59',
+         'funciones:C1:60', 'funciones:C1:64', 'funciones:C1:65'],
+  title: 'Dar información en C1: de las subordinadas de lugar a "¡¿Cómo que no?!"',
+  summary: 'Dar información en C1 no es solo describir dónde, cuándo o por qué — incluye todo un repertorio para reaccionar con incredulidad ante lo que otro acaba de decir, repitiendo su enunciado con "¡¿Cómo que...?!" antes de corregirlo con fuerza.',
+  sections: [
+    { h: 'Dar información de lugar, tiempo y modo', html: 'Subordinadas adverbiales dan esta información con precisión: de lugar (<i>tienes que girar hacia donde indique la señal</i>), de tiempo (<i>antes de que le llamaras estaba de los nervios</i>), de modo (<i>claramente está haciendo todo lo que puede</i>).' },
+    { h: 'Dar información de finalidad y de causa', html: '<i>Con ánimo/idea de...</i> introduce la finalidad de una acción: <i>he hablado con ella con ánimo de solucionar las cosas</i>. <i>A causa de (que)/gracias a (que)/por culpa de (que)...</i> introducen la causa, con matiz neutro, positivo o negativo respectivamente: <i>me eligieron gracias a mi experiencia en un puesto similar</i>.' },
+    { h: 'Responder con matiz de duda', html: '<i>Yo (no) diría que...</i> responde a una pregunta introduciendo matiz personal, sin comprometerse del todo con una afirmación categórica: <i>están muy enamorados, pero yo no diría que se van a casar</i>.' },
+    { h: 'Contradecir con incredulidad un enunciado afirmativo', html: '<i>¡¿Cómo que + enunciado previo?!</i> repite lo dicho por el otro para expresar sorpresa o rechazo antes de corregirlo: <i>¡¿Cómo que cuánto llovió ayer en Santander?! ¡Pero si hizo un día espléndido!</i>. <i>¿Que + enunciado previo? + nuevo enunciado</i> hace algo similar, cuestionando lo oído: <i>¿que ha llovido una barbaridad? Imposible</i>. <i>Una cosa es que... y otra (muy diferente) es que...</i> distingue dos afirmaciones que el otro está confundiendo: <i>una cosa es que no estés de acuerdo y otra es que le insultes</i>. <i>Que no... [con apelativo y repetición]</i> intensifica la negación: <i>que no llovió, hombre, que no</i>.' },
+    { h: 'Contradecir con incredulidad un enunciado negativo', html: 'El mismo aparato se invierte: <i>¡¿Cómo que no + enunciado previo?! (Pero) si...</i>: <i>¿pero cómo que no hace nada? ¡Si Álex es una de las personas que más trabaja aquí!</i>. <i>¿Que + enunciado negado? + nuevo enunciado</i>: <i>¿que no ha llovido en todo el año? Imposible</i>. <i>Que sí + enunciado [con apelativo y repetición]</i> intensifica la afirmación contraria: <i>que sí está en Frankfurt, hombre, que sí</i>.' },
+    { h: 'Rechazar el derecho a preguntar, o repetir con extrañeza', html: '<i>No es asunto tuyo</i> rechaza directamente el derecho del otro a pedir cierta información. <i>¿Cómo que + enunciado previo?</i> puede también repetir con extrañeza una pregunta que se acaba de recibir, sin llegar a contradecirla: <i>¿cómo que para qué he venido?</i> (repite la pregunta con sorpresa, antes de responderla).' }
+  ],
+  exponents: [
+    { es: '¡¿Cómo que no vas a venir?! ¡Si lo prometiste!', en: "What do you mean you're not coming?! You promised!", register: 'coloquial', note: 'incredulidad ante un enunciado negativo' },
+    { es: 'Una cosa es llegar tarde y otra muy distinta es no avisar.', en: "It's one thing to arrive late, and quite another not to let anyone know.", register: 'neutral' },
+    { es: 'Lo hice con idea de que se lo pensara mejor.', en: 'I did it with the idea that he would think it over better.', register: 'neutral' },
+    { es: 'Se retrasó a causa de una avería en el motor.', en: 'It was delayed due to an engine malfunction.', register: 'formal' },
+    { es: 'Yo no diría que fue un éxito total, la verdad.', en: "I wouldn't say it was a total success, honestly.", register: 'neutral' }
+  ],
+  contrasts: [
+    { es: '¿Que ha ganado el premio? Imposible.', en: 'He won the prize? Impossible.', note: 'incredulidad ante un enunciado afirmativo' },
+    { es: '¿Que no ha ganado el premio? Imposible.', en: "He didn't win the prize? Impossible.", note: 'misma incredulidad, invertida sobre un enunciado negativo' }
+  ],
+  pitfalls: [
+    '"¡¿Cómo que...?!" repite el enunciado del interlocutor casi literalmente antes de rechazarlo — no es una simple pregunta de aclaración, sino una expresión de incredulidad o indignación.',
+    '"Una cosa es que... y otra es que..." exige subjuntivo en ambas cláusulas cuando el sujeto no es el mismo en las dos partes, ya que introduce una valoración.',
+    '"Que no.../que sí..." con apelativo (hombre) y repetición al final es exclusivamente coloquial e intensifica una negación o afirmación frente a alguien que insiste en lo contrario.'
+  ],
+  examples: [
+    { es: 'Después de que dejemos el asunto resuelto, cambiaré de trabajo.', en: 'After we settle the matter, I\'ll change jobs.' },
+    { es: '¿Que no lo sabías? ¡Si lo dijo el otro día en la reunión!', en: "You didn't know? He said so the other day at the meeting!" },
+    { es: 'No es asunto tuyo lo que yo haga con mi dinero.', en: "It's none of your business what I do with my money." }
+  ],
+  probes: [
+    { id: 'p:darinformacionC1:comoque', kind: 'mcq', q: '"¡¿Cómo que no vas a venir?!" ¿Qué expresa esta estructura?', options: ['Una simple pregunta de aclaración', 'Incredulidad o rechazo ante lo que el otro acaba de decir', 'Una petición de permiso'], answer: 1 },
+    { id: 'p:darinformacionC1:unacosa', kind: 'mcq', q: '"Una cosa es que llegues tarde y otra es que mientas." ¿Qué hace esta estructura?', options: ['Iguala dos situaciones', 'Distingue dos situaciones que el otro está confundiendo', 'Pide disculpas'], answer: 1 },
+    { id: 'p:darinformacionC1:cloze', kind: 'cloze', text: 'Me eligieron ___ a mi experiencia previa. (causa positiva)', accept: ['gracias'] },
+    { id: 'p:darinformacionC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "a causa de", "gracias a" y "por culpa de"?', back: 'a causa de es neutro, gracias a marca una circunstancia positiva, por culpa de marca una circunstancia negativa' }
+  ]
 }
 
 ];
