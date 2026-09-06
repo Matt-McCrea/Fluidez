@@ -26123,6 +26123,130 @@ window.STRAND_LESSONS = [
     { id: 'p:capacidadcompetenciaC1:cloze', kind: 'cloze', text: 'Es un ___ en matemáticas, lo entiende todo enseguida. (extraordinariamente hábil, coloquial)', accept: ['hacha'] },
     { id: 'p:capacidadcompetenciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "vocación", "aptitud" y "talento"?', back: 'vocación es la inclinación hacia algo; aptitud es la capacidad concreta; talento es un don especial' }
   ]
+},
+
+{
+  id: 'nt-importancia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1702', 'nociones_generales:C1:1703', 'nociones_generales:C1:1704', 'nociones_generales:C1:1705', 'nociones_generales:C1:1706'],
+  title: 'Importancia en C1: de "trascendencia" a "importarle un pimiento"',
+  summary: 'La importancia se nombra en C1 con matices técnicos (alcance, repercusión, gravedad) y con la hipérbole coloquial "importarle un pimiento" para el desinterés absoluto — dos registros del mismo eje, de máxima seriedad a mínima.',
+  sections: [
+    { h: 'Sustantivos de importancia', html: '<i>Relevancia, trascendencia, alcance, fuerza, intensidad, repercusión, gravedad</i> matizan distintos ángulos de la importancia: alcance es hasta dónde llega un efecto, repercusión son las consecuencias que provoca, gravedad es la seriedad de una situación negativa.' },
+    { h: 'Adjetivos de máxima importancia', html: '<i>Crucial, vital</i> describen algo de importancia decisiva. <i>Primario</i> describe lo que va antes o por encima de otras consideraciones.' },
+    { h: '"Afectar a": el verbo de tener consecuencias', html: '<i>Afectar a</i> describe que algo tiene consecuencias sobre alguien o algo: <i>esto nos afecta a todos</i>.' },
+    { h: '"Importarle a alguien un pimiento"', html: 'Esta locución coloquial expresa desinterés absoluto, casi con desdén, ante algo que a otros les preocupa.' }
+  ],
+  exponents: [
+    { es: 'La decisión tuvo una gran repercusión en la opinión pública.', en: 'The decision had a major impact on public opinion.', register: 'formal' },
+    { es: 'Le importa un pimiento lo que piensen los demás.', en: "He couldn't care less what others think.", register: 'coloquial' },
+    { es: 'Es un tema de vital importancia para el futuro de la empresa.', en: "It's a matter of vital importance for the company's future.", register: 'formal' },
+    { es: 'La crisis afecta a todos los sectores por igual.', en: 'The crisis affects all sectors equally.', register: 'formal' },
+    { es: 'El alcance del problema fue mayor de lo esperado.', en: 'The scope of the problem was greater than expected.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un asunto de trascendencia histórica.', en: 'A matter of historical significance.', note: 'importancia máxima y duradera' },
+    { es: 'Un tema que le importa un pimiento.', en: "A topic he couldn't care less about.", note: 'desinterés absoluto, coloquial' }
+  ],
+  pitfalls: [
+    '"Importarle un pimiento" es exclusivamente coloquial — en un registro formal conviene "resultarle indiferente" o "no darle importancia".',
+    '"Alcance" y "repercusión" no son sinónimos exactos: alcance es hasta dónde llega algo; repercusión son las consecuencias concretas que provoca.',
+    '"Gravedad" se reserva para situaciones negativas o problemáticas — no se usa para describir la importancia de algo positivo.'
+  ],
+  examples: [
+    { es: 'Nadie calculó bien la gravedad del problema.', en: 'No one properly gauged the seriousness of the problem.' },
+    { es: 'Su decisión tuvo un alcance mucho mayor del previsto.', en: 'His decision had a much greater scope than anticipated.' },
+    { es: 'Este dato es primario para entender el resto del informe.', en: 'This piece of data is primary to understanding the rest of the report.' }
+  ],
+  probes: [
+    { id: 'p:importanciaC1:pimiento', kind: 'mcq', q: '"Le importa un pimiento." ¿Qué registro es?', options: ['Formal', 'Coloquial', 'Técnico'], answer: 1 },
+    { id: 'p:importanciaC1:gravedad', kind: 'mcq', q: '¿Para qué tipo de situaciones se reserva "gravedad"?', options: ['Situaciones positivas', 'Situaciones negativas o problemáticas', 'Cualquier situación'], answer: 1 },
+    { id: 'p:importanciaC1:cloze', kind: 'cloze', text: 'La decisión tuvo una gran ___ en la opinión pública. (consecuencia que provoca algo)', accept: ['repercusión'] },
+    { id: 'p:importanciaC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "alcance" y "repercusión"?', back: 'alcance es hasta dónde llega un efecto; repercusión son las consecuencias concretas que provoca' }
+  ]
+},
+
+{
+  id: 'nt-normalidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1720', 'nociones_generales:C1:1721', 'nociones_generales:C1:1722', 'nociones_generales:C1:1723',
+         'nociones_generales:C1:1724', 'nociones_generales:C1:1725', 'nociones_generales:C1:1726', 'nociones_generales:C1:1727',
+         'nociones_generales:C1:1728', 'nociones_generales:C1:1729', 'nociones_generales:C1:1730'],
+  title: 'Normalidad en C1: de lo "convencional" a "un fuera de serie"',
+  summary: 'Lo normal y lo excepcional se describen en C1 con una escala amplia — de lo puramente convencional a lo asombroso — y con verbos que ajustan algo a una norma (normalizar, atenerse a) frente a locuciones que celebran justo lo contrario: ser "un fuera de serie".',
+  sections: [
+    { h: 'Sustantivo y adjetivos de lo habitual', html: '<i>Anormalidad</i> es la ausencia de normalidad. <i>Usual, corriente, excepcional, vulgar</i> gradúan la frecuencia, con "vulgar" añadiendo un matiz de falta de distinción. <i>Convencional, establecido, estándar, uniforme</i> describen lo que sigue una norma reconocida.' },
+    { h: 'Lo inesperado y lo extraordinario', html: '<i>Inesperado, inusual</i> describen lo que rompe la expectativa. <i>Sensacional, asombroso, admirable, extraordinario</i> gradúan lo excepcional en sentido positivo.' },
+    { h: 'Lo comprensible y razonable', html: '<i>Conocido, sabido, comprensible, creíble, sensato, moderado</i> describen cualidades de lo que resulta esperable y aceptado sin extrañeza.' },
+    { h: 'Verbos y locuciones de ajuste a una norma', html: '<i>Normalizar, regular</i> son hacer que algo siga una norma. <i>Atenerse/ajustarse a la norma/al canon/al modelo</i> es cumplir con un estándar de referencia.' },
+    { h: 'Adverbios de normalidad y de excepción', html: '<i>Naturalmente</i> introduce algo esperado. <i>Usualmente, raramente, excepcionalmente, inesperadamente</i> gradúan la frecuencia de un suceso.' },
+    { h: 'Lo extraordinario como elogio', html: '<i>Ser algo fuera de lo común, ser un fuera de serie</i> describen, respectivamente, un hecho o una persona excepcionales, casi siempre como elogio.' }
+  ],
+  exponents: [
+    { es: 'Es un fuera de serie en su profesión.', en: "He's one of a kind in his profession.", register: 'coloquial' },
+    { es: 'El procedimiento se ajusta al modelo estándar de la industria.', en: "The procedure conforms to the industry's standard model.", register: 'formal' },
+    { es: 'Naturalmente, todos esperaban ese resultado.', en: 'Naturally, everyone expected that result.', register: 'neutral' },
+    { es: 'Su reacción fue del todo inesperada.', en: 'His reaction was completely unexpected.', register: 'neutral' },
+    { es: 'El gobierno reguló la actividad del sector.', en: "The government regulated the sector's activity.", register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un comportamiento convencional, sin sorpresas.', en: 'Conventional behavior, with no surprises.', note: 'sigue la norma esperada' },
+    { es: 'Un comportamiento fuera de lo común, sorprendente.', en: 'Unusual behavior, surprising.', note: 'rompe la expectativa' }
+  ],
+  pitfalls: [
+    '"Vulgar" aplicado a lo normal no siempre es despectivo — a menudo simplemente describe algo corriente, sin distinción especial.',
+    '"Ser un fuera de serie" es siempre un elogio hacia una persona excepcional — no se usa para describir algo simplemente distinto o raro.',
+    '"Normalizar" y "regular" no son sinónimos exactos: normalizar hace que algo se convierta en la norma habitual; regular establece reglas formales para su funcionamiento.'
+  ],
+  examples: [
+    { es: 'Su talento resultó verdaderamente sensacional.', en: 'His talent turned out to be truly sensational.' },
+    { es: 'El resultado fue moderado, ni bueno ni malo.', en: 'The result was moderate, neither good nor bad.' },
+    { es: 'Excepcionalmente, la reunión se celebró un domingo.', en: 'Exceptionally, the meeting was held on a Sunday.' }
+  ],
+  probes: [
+    { id: 'p:normalidadC1:fueradeserie', kind: 'mcq', q: '"Es un fuera de serie" es...', options: ['Una crítica', 'Un elogio hacia alguien excepcional', 'Una descripción neutra'], answer: 1 },
+    { id: 'p:normalidadC1:normalizarregular', kind: 'mcq', q: '¿Qué diferencia hay entre "normalizar" y "regular"?', options: ['Ninguna', 'Normalizar es convertir en norma habitual; regular es establecer reglas formales', 'Regular es más coloquial'], answer: 1 },
+    { id: 'p:normalidadC1:cloze', kind: 'cloze', text: 'Su reacción fue del todo ___. (que rompe la expectativa)', accept: ['inesperada'] },
+    { id: 'p:normalidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "convencional/estándar" y "sensacional/extraordinario"?', back: 'convencional/estándar describen lo que sigue una norma esperada; sensacional/extraordinario describen lo excepcional' }
+  ]
+},
+
+{
+  id: 'nt-facilidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  pcic: ['nociones_generales:C1:1739', 'nociones_generales:C1:1740', 'nociones_generales:C1:1741', 'nociones_generales:C1:1742'],
+  title: 'Facilidad en C1: "fácil de entender" y los verbos que facilitan o dificultan',
+  summary: 'La facilidad se describe en C1 con la estructura "fácil/difícil de + infinitivo", muy productiva, y con verbos que activamente cambian el grado de dificultad de algo: dificultar, posibilitar, agilizar.',
+  sections: [
+    { h: 'Adjetivos de dificultad y confusión', html: '<i>(In)asequible, (in)comprensible, confuso, problemático</i> gradúan cuán accesible o complicado resulta algo: <i>recibimos unas instrucciones un poco confusas</i>.' },
+    { h: '(Ir)realizable: lo que se puede o no llevar a cabo', html: '<i>(Ir)realizable</i> describe si algo se puede poner en práctica, más allá de si es fácil o difícil de entender.' },
+    { h: '"Fácil/difícil de" + infinitivo', html: 'Esta estructura muy productiva describe la dificultad de una acción concreta sobre algo: <i>es difícil de entender</i>. Se puede aplicar a casi cualquier verbo transitivo: fácil/difícil de explicar, de resolver, de conseguir.' },
+    { h: 'Verbos que cambian el grado de dificultad', html: '<i>Dificultar</i> es hacer algo más difícil; <i>posibilitar</i>, hacer que algo sea posible; <i>agilizar</i>, hacer que algo sea más rápido o fluido, no necesariamente más fácil en sí, sino más ágil en su desarrollo.' }
+  ],
+  exponents: [
+    { es: 'El nuevo sistema agiliza mucho los trámites.', en: 'The new system speeds up procedures a lot.', register: 'formal' },
+    { es: 'Sus instrucciones eran difíciles de seguir.', en: 'His instructions were hard to follow.', register: 'neutral' },
+    { es: 'La avería dificultó el tráfico durante horas.', en: 'The breakdown hindered traffic for hours.', register: 'neutral' },
+    { es: 'La nueva ley posibilita el acceso a la vivienda.', en: 'The new law makes access to housing possible.', register: 'formal' },
+    { es: 'El proyecto resultó irrealizable con el presupuesto actual.', en: 'The project turned out to be unfeasible with the current budget.', register: 'formal' }
+  ],
+  contrasts: [
+    { es: 'Un texto fácil de leer, ameno y claro.', en: 'An easy-to-read text, engaging and clear.', note: 'estructura "fácil de" + infinitivo' },
+    { es: 'Un texto difícil de interpretar, lleno de tecnicismos.', en: 'A text hard to interpret, full of jargon.', note: 'misma estructura, sentido opuesto' }
+  ],
+  pitfalls: [
+    '"Agilizar" no significa simplemente "hacer más fácil" — se centra en la fluidez o velocidad de un proceso, no en su complejidad.',
+    '"(Ir)realizable" evalúa si algo se puede llevar a la práctica, independientemente de si es fácil o difícil de entender.',
+    'La estructura "fácil/difícil de + infinitivo" exige el infinitivo, no un sustantivo — "fácil de entender", no "fácil de entendimiento".'
+  ],
+  examples: [
+    { es: 'El plan es fácil de explicar pero difícil de ejecutar.', en: 'The plan is easy to explain but hard to execute.' },
+    { es: 'La burocracia dificultó todo el proceso de solicitud.', en: 'The bureaucracy hindered the entire application process.' },
+    { es: 'La reforma posibilitó nuevas oportunidades laborales.', en: 'The reform made new job opportunities possible.' }
+  ],
+  probes: [
+    { id: 'p:facilidadC1:agilizar', kind: 'mcq', q: '¿Qué hace "agilizar" un proceso?', options: ['Lo hace más simple de entender', 'Lo hace más rápido o fluido', 'Lo hace más difícil'], answer: 1 },
+    { id: 'p:facilidadC1:facilde', kind: 'mcq', q: '¿Qué forma verbal exige "fácil/difícil de"?', options: ['Un sustantivo', 'El infinitivo', 'El gerundio'], answer: 1 },
+    { id: 'p:facilidadC1:cloze', kind: 'cloze', text: 'El proyecto resultó ___ con el presupuesto actual. (imposible de llevar a la práctica)', accept: ['irrealizable'] },
+    { id: 'p:facilidadC1:recall', kind: 'recall', front: '¿Qué diferencia hay entre "dificultar" y "ser irrealizable"?', back: 'dificultar hace algo más difícil pero posible; irrealizable describe algo que no se puede llevar a la práctica en absoluto' }
+  ]
 }
 
 ];

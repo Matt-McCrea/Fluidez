@@ -587,7 +587,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (117/202 done)
+## C1 — lessons (120/202 done)
 
 ### C1 · grammar (28/28)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
@@ -619,7 +619,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 24 pts · `gramatica C1 § 15.2. Oraciones subordinadas adjet`  — gr-sub-adjetivas-relativo-c1
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica C1 § 15.3. Oraciones subordinadas adver`  — gr-sub-adv-temporales-c1, gr-sub-adv-lugar-modo-c1, gr-sub-adv-causales-c1, gr-sub-adv-finales-c1, gr-sub-adv-condicionales-c1, gr-sub-adv-consecutivas-c1, gr-sub-adv-comparativas-c1, gr-sub-adv-concesivas-c1
 
-### C1 · notion (52/57)
+### C1 · notion (55/57)
 - [x] **Existencia, inexistencia** · 17 pts · `nociones_generales C1 § 1.1. Existencia, inexistencia`  — nt-existencia-inexistencia-c1
 - [x] **Presencia, ausencia** · 17 pts · `nociones_generales C1 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-c1
 - [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales C1 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-c1
@@ -672,9 +672,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Éxito, logro** · 26 pts · `nociones_generales C1 § 6.11. Éxito, logro`  — nt-exito-logro-c1
 - [x] **Utilidad, uso** · 20 pts · `nociones_generales C1 § 6.12. Utilidad, uso`  — nt-utilidad-uso-c1
 - [x] **Capacidad, competencia** · 11 pts · `nociones_generales C1 § 6.13. Capacidad, competencia`  — nt-capacidad-competencia-c1
-- [ ] **Importancia** · 5 pts · `nociones_generales C1 § 6.14. Importancia`
-- [ ] **Normalidad** · 11 pts · `nociones_generales C1 § 6.15. Normalidad`
-- [ ] **Facilidad** · 4 pts · `nociones_generales C1 § 6.16. Facilidad`
+- [x] **Importancia** · 5 pts · `nociones_generales C1 § 6.14. Importancia`  — nt-importancia-c1
+- [x] **Normalidad** · 11 pts · `nociones_generales C1 § 6.15. Normalidad`  — nt-normalidad-c1
+- [x] **Facilidad** · 4 pts · `nociones_generales C1 § 6.16. Facilidad`  — nt-facilidad-c1
 - [ ] **Reflexión, conocimiento** · 28 pts · `nociones_generales C1 § 7.1. Reflexión, conocimiento`
 - [ ] **Expresión verbal** · 21 pts · `nociones_generales C1 § 7.2. Expresión verbal`
 
