@@ -776,6 +776,17 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: 'El testigo ___ (confirmar) la versión de los hechos.', inf: 'confirmar', tense: 'preterito', person: 'él/ella', en: 'The witness confirmed the version of events.' },
   { type: 'cloze', level: 8, text: 'El nuevo reglamento ___ (prohibir) explícitamente esa práctica.', inf: 'prohibir', tense: 'presente', person: 'él/ella', en: 'The new regulation explicitly prohibits that practice.' },
   { type: 'transform', level: 9, instruction: 'Rewrite avoiding the word "cosas", for a formal register:', from: 'Quedan muchas cosas por revisar antes de firmar.', to: 'Quedan numerosos aspectos por revisar antes de firmar.', en: 'Numerous aspects remain to be reviewed before signing.' },
-  { type: 'transform', level: 8, instruction: 'Rewrite as an indirect question, starting with "Preguntó si...":', from: '¿Vendrás a la reunión?', to: 'Preguntó si vendría a la reunión.', en: 'He asked whether I would come to the meeting.' }
+  { type: 'transform', level: 8, instruction: 'Rewrite as an indirect question, starting with "Preguntó si...":', from: '¿Vendrás a la reunión?', to: 'Preguntó si vendría a la reunión.', en: 'He asked whether I would come to the meeting.' },
+
+  { type: 'cloze', level: 8, text: 'Es probable que el tribunal ___ (suspender) la vista.', inf: 'suspender', tense: 'presubj', person: 'él/ella', en: 'It is likely the court will suspend the hearing.' },
+  { type: 'cloze', level: 8, text: 'Nos recomendaron que ___ (reservar) con antelación.', inf: 'reservar', tense: 'impsubj', person: 'nosotros', en: 'They recommended that we book in advance.' },
+  { type: 'cloze', level: 8, text: 'Qué raro que todavía no ___ (llegar) el paquete.', inf: 'llegar', tense: 'perfsubj', person: 'él/ella', en: 'How strange that the package still has not arrived.' },
+  { type: 'cloze', level: 9, text: 'Sin su ayuda, jamás ___ (lograr) yo terminar el proyecto.', inf: 'lograr', tense: 'condperf', person: 'yo', en: 'Without their help, I would never have managed to finish the project.' },
+  { type: 'cloze', level: 8, text: 'El precio del billete ___ (subir) considerablemente en verano.', inf: 'subir', tense: 'futuro', person: 'él/ella', en: 'The ticket price will rise considerably in summer.' },
+  { type: 'cloze', level: 9, text: 'Cuando el médico la examinó, la infección ya ___ (empeorar).', inf: 'empeorar', tense: 'plusc', person: 'él/ella', en: 'When the doctor examined her, the infection had already worsened.' },
+  { type: 'cloze', level: 8, text: 'La compañía ___ (sacar) el producto antes de lo previsto.', inf: 'sacar', tense: 'preterito', person: 'él/ella', en: 'The company brought out the product earlier than planned.' },
+  { type: 'cloze', level: 8, text: 'Mientras tanto, los pasajeros ___ (esperar) pacientemente en la sala.', inf: 'esperar', tense: 'imperfecto', person: 'ellos', en: 'Meanwhile, the passengers were waiting patiently in the room.' },
+  { type: 'transform', level: 8, instruction: 'Rewrite expressing hope with "esperar que" + subjunctive:', from: 'El tratamiento funciona. Es lo que todos desean.', to: 'Todos esperan que el tratamiento funcione.', en: 'Everyone hopes the treatment works.' },
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los médicos descubrieron un nuevo efecto secundario.', to: 'Se descubrió un nuevo efecto secundario.', en: 'A new side effect was discovered.' }
 
 ];
