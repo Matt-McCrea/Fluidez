@@ -2760,6 +2760,77 @@ window.WRITING_TASKS = [
       { type: 'cliticCluster' },
       { type: 'minWords', n: 3 }
     ],
-    models: ['El médico se la recetó.'] }
+    models: ['El médico se la recetó.'] },
+
+  { id: 'c1b-actas-corregidas-trabajo', type: 'build', level: 9, theme: 'trabajo', en: 'The committee demanded that the minutes be corrected.',
+    answer: 'El comité exigió que se corrigieran las actas.' },
+  { id: 'c1b-premio-reclamado-ocio', type: 'build', level: 9, theme: 'ocio', en: 'It is a shame that no one has claimed the prize yet.',
+    answer: 'Es una pena que todavía nadie haya reclamado el premio.' },
+
+  { id: 'c1t-hipotesis-ciencia', type: 'translate', level: 9, theme: 'ciencia',
+    prompt: 'Translate, using a consequence connector: "Therefore, the hypothesis was rejected."',
+    hint: 'Start with "por lo tanto".',
+    constraints: [
+      { type: 'containsWord', word: 'por lo tanto' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['Por lo tanto, la hipótesis fue rechazada.'] },
+
+  { id: 'c1t-reembolso-compras', type: 'translate', level: 8, theme: 'compras',
+    prompt: 'Translate, for a store\'s formal terms and conditions: "The refund will be processed within ten business days."',
+    hint: 'Avoid colloquial words; this is written policy text.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['El reembolso se procesará en un plazo de diez días hábiles.'] },
+
+  { id: 'c1w-fianza-vivienda', type: 'write', level: 9, theme: 'vivienda',
+    prompt: 'Explain, in an impersonal register using "se", how a rental deposit typically gets returned at the end of a lease.',
+    hint: 'Use "se" constructions throughout instead of naming who checks each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Normalmente, el depósito se revisa al final del contrato. Si no hay desperfectos, se devuelve íntegramente en un plazo de treinta días; en caso contrario, se descuenta el coste de las reparaciones necesarias.'] },
+
+  { id: 'c1w-duda-diagnostico-cuerpo', type: 'write', level: 8, theme: 'cuerpo',
+    prompt: 'Write a sentence expressing doubt about a diagnosis, using "no creo que" + subjunctive.',
+    hint: 'The verb right after "no creo que" must be in the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'no creo que' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['No creo que el diagnóstico sea correcto.'] },
+
+  { id: 'p-identidad-cambio', type: 'paragraph', level: 9, theme: 'identidad',
+    prompt: 'Write a paragraph about identity: how yours used to depend on others\' opinions, how you define yourself now, and how you expect it to keep changing.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['De adolescente, sentía que mi identidad dependía completamente de lo que pensaban los demás. Hoy en día, sin embargo, me defino sobre todo por mis propias decisiones. Dentro de unos años, probablemente habré cambiado todavía más, y eso ya no me asusta como antes. Supongo que la identidad nunca deja de construirse del todo.'] },
+
+  { id: 'c1w-instrucciones-examen-educacion', type: 'write', level: 9, theme: 'educacion',
+    prompt: 'Write formal exam instructions, addressing students as "usted"/plural, about submission time and prohibited devices.',
+    hint: 'Never address the reader as "tú".',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 10 }
+    ],
+    models: ['Los alumnos deberán entregar el examen antes de las diez en punto, y no podrán utilizar ningún dispositivo electrónico durante la prueba.'] },
+
+  { id: 'c1b-decidan-respetaremos-politica', type: 'build', level: 9, theme: 'politica', en: 'Whatever they decide, we will respect it.',
+    answer: 'Decidan lo que decidan, lo respetaremos.' },
+
+  { id: 'c1t-regalo-ocio', type: 'translate', level: 8, theme: 'ocio',
+    prompt: 'Translate, using a double object pronoun: "They gave it to us as a gift."',
+    hint: 'Use "nos lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 3 }
+    ],
+    models: ['Nos lo regalaron.'] }
 
 ];
