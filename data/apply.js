@@ -809,6 +809,17 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: 'El comité ___ (negar) cualquier irregularidad.', inf: 'negar', tense: 'preterito', person: 'él/ella', en: 'The committee denied any irregularity.' },
   { type: 'cloze', level: 8, text: 'El contrato ___ (eliminar) expresamente cualquier responsabilidad adicional.', inf: 'eliminar', tense: 'presente', person: 'él/ella', en: 'The contract expressly eliminates any additional liability.' },
   { type: 'transform', level: 9, instruction: 'Rewrite using "sin que" + subjunctive:', from: 'Se marchó. Nadie se dio cuenta.', to: 'Se marchó sin que nadie se diera cuenta.', en: 'He left without anyone noticing.' },
-  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'El ayuntamiento aprobó el nuevo plan urbanístico.', to: 'Se aprobó el nuevo plan urbanístico.', en: 'The new urban plan was approved.' }
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'El ayuntamiento aprobó el nuevo plan urbanístico.', to: 'Se aprobó el nuevo plan urbanístico.', en: 'The new urban plan was approved.' },
+
+  { type: 'cloze', level: 8, text: 'Ojalá que los datos ___ (confirmar) la hipótesis inicial.', inf: 'confirmar', tense: 'presubj', person: 'ellos', en: 'I hope the data confirms the initial hypothesis.' },
+  { type: 'cloze', level: 8, text: 'El contrato exigía que ambas empresas ___ (cumplir) los plazos.', inf: 'cumplir', tense: 'impsubj', person: 'ellos', en: 'The contract required that both companies meet the deadlines.' },
+  { type: 'cloze', level: 9, text: 'Es posible que el virus ___ (evolucionar) recientemente.', inf: 'evolucionar', tense: 'perfsubj', person: 'él/ella', en: 'It is possible the virus has recently evolved.' },
+  { type: 'cloze', level: 8, text: 'Sin ese apoyo económico, la ONG no ___ (sobrevivir) tanto tiempo.', inf: 'sobrevivir', tense: 'condicional', person: 'él/ella', en: 'Without that financial support, the NGO would not have survived so long.' },
+  { type: 'cloze', level: 9, text: 'Para 2030, muchas especies ya se ___ (perder) definitivamente.', inf: 'perder', tense: 'futperf', person: 'ellos', en: 'By 2030, many species will have already been lost for good.' },
+  { type: 'cloze', level: 9, text: 'Cuando llegó la vacuna, el virus ya ___ (evolucionar) varias veces.', inf: 'evolucionar', tense: 'plusc', person: 'él/ella', en: 'By the time the vaccine arrived, the virus had already evolved several times.' },
+  { type: 'cloze', level: 8, text: 'El equipo de rescate ___ (encontrar) a los excursionistas al amanecer.', inf: 'encontrar', tense: 'preterito', person: 'él/ella', en: 'The rescue team found the hikers at dawn.' },
+  { type: 'cloze', level: 8, text: 'El nuevo protocolo ___ (reducir) el tiempo de espera considerablemente.', inf: 'reducir', tense: 'presente', person: 'él/ella', en: 'The new protocol considerably reduces the waiting time.' },
+  { type: 'transform', level: 9, instruction: 'Rewrite using "a menos que" + subjunctive:', from: 'No aprobará la ley. Salvo que cambien de opinión.', to: 'No aprobará la ley a menos que cambien de opinión.', en: 'They will not pass the law unless they change their minds.' },
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los investigadores confirmaron el hallazgo.', to: 'Se confirmó el hallazgo.', en: 'The finding was confirmed.' }
 
 ];
