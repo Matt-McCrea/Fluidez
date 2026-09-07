@@ -765,6 +765,17 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: 'De joven, ella ___ (desear) ser diplomática.', inf: 'desear', tense: 'imperfecto', person: 'él/ella', en: 'As a young woman, she used to wish to be a diplomat.' },
   { type: 'cloze', level: 8, text: 'Todavía no ___ (recibir) nosotros ninguna respuesta oficial.', inf: 'recibir', tense: 'perfecto', person: 'nosotros', en: 'We still have not received any official response.' },
   { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los responsables anunciaron nuevas medidas.', to: 'Se anunciaron nuevas medidas.', en: 'New measures were announced.' },
-  { type: 'transform', level: 9, instruction: 'Rewrite avoiding colloquial words, for a formal report:', from: 'La cosa empeoró bastante al final.', to: 'La situación empeoró considerablemente al final.', en: 'The situation worsened considerably in the end.' }
+  { type: 'transform', level: 9, instruction: 'Rewrite avoiding colloquial words, for a formal report:', from: 'La cosa empeoró bastante al final.', to: 'La situación empeoró considerablemente al final.', en: 'The situation worsened considerably in the end.' },
+
+  { type: 'cloze', level: 9, text: 'Es fundamental que las autoridades ___ (garantizar) la seguridad de los testigos.', inf: 'garantizar', tense: 'presubj', person: 'ellos', en: 'It is essential that the authorities guarantee the witnesses\' safety.' },
+  { type: 'cloze', level: 8, text: 'El acuerdo exigía que ambas partes ___ (ceder) en algún punto.', inf: 'ceder', tense: 'impsubj', person: 'ellos', en: 'The agreement required that both parties give ground on some point.' },
+  { type: 'cloze', level: 9, text: 'Es sorprendente que la propuesta ___ (obtener) tanto apoyo.', inf: 'obtener', tense: 'perfsubj', person: 'él/ella', en: 'It is surprising that the proposal has gained so much support.' },
+  { type: 'cloze', level: 9, text: 'Para el próximo informe, los analistas ya ___ (revisar) todas las cifras.', inf: 'revisar', tense: 'futperf', person: 'ellos', en: 'By the next report, the analysts will have already reviewed all the figures.' },
+  { type: 'cloze', level: 8, text: 'Antes del escándalo, nadie ___ (sospechar) de él.', inf: 'sospechar', tense: 'plusc', person: 'él/ella', en: 'Before the scandal, no one had suspected him.' },
+  { type: 'cloze', level: 8, text: '¿___ (poder) explicarme usted por qué se retrasó el envío?', inf: 'poder', tense: 'condicional', person: 'él/ella', en: 'Could you explain to me why the shipment was delayed?' },
+  { type: 'cloze', level: 8, text: 'El testigo ___ (confirmar) la versión de los hechos.', inf: 'confirmar', tense: 'preterito', person: 'él/ella', en: 'The witness confirmed the version of events.' },
+  { type: 'cloze', level: 8, text: 'El nuevo reglamento ___ (prohibir) explícitamente esa práctica.', inf: 'prohibir', tense: 'presente', person: 'él/ella', en: 'The new regulation explicitly prohibits that practice.' },
+  { type: 'transform', level: 9, instruction: 'Rewrite avoiding the word "cosas", for a formal register:', from: 'Quedan muchas cosas por revisar antes de firmar.', to: 'Quedan numerosos aspectos por revisar antes de firmar.', en: 'Numerous aspects remain to be reviewed before signing.' },
+  { type: 'transform', level: 8, instruction: 'Rewrite as an indirect question, starting with "Preguntó si...":', from: '¿Vendrás a la reunión?', to: 'Preguntó si vendría a la reunión.', en: 'He asked whether I would come to the meeting.' }
 
 ];
