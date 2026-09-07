@@ -2973,6 +2973,77 @@ window.WRITING_TASKS = [
       { type: 'cliticCluster' },
       { type: 'minWords', n: 3 }
     ],
-    models: ['El casero por fin nos lo devolvió.'] }
+    models: ['El casero por fin nos lo devolvió.'] },
+
+  { id: 'c1b-demasiado-tarde-servicios', type: 'build', level: 9, theme: 'servicios', en: 'By the time we noticed, it was too late to fix it.',
+    answer: 'Para cuando nos dimos cuenta, ya era demasiado tarde para arreglarlo.' },
+  { id: 'c1b-en-cuanto-firme-trabajo', type: 'build', level: 9, theme: 'trabajo', en: 'As soon as she signs it, we will send the confirmation.',
+    answer: 'En cuanto lo firme, enviaremos la confirmación.' },
+
+  { id: 'c1t-estudio-medios', type: 'translate', level: 9, theme: 'medios',
+    prompt: 'Translate, using a contrast connector: "By contrast, the second study found no significant effect."',
+    hint: 'Start with "en cambio".',
+    constraints: [
+      { type: 'containsWord', word: 'en cambio' },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['En cambio, el segundo estudio no encontró ningún efecto significativo.'] },
+
+  { id: 'c1t-solicitudes-educacion', type: 'translate', level: 8, theme: 'educacion',
+    prompt: 'Translate, for a formal admissions notice: "Applications must be submitted no later than June 30th."',
+    hint: 'Avoid colloquial words; this is official wording.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['Las solicitudes deben presentarse a más tardar el treinta de junio.'] },
+
+  { id: 'c1w-referendum-politica', type: 'write', level: 9, theme: 'politica',
+    prompt: 'Explain, in an impersonal register using "se", how a referendum result typically gets validated.',
+    hint: 'Use "se" constructions throughout instead of naming who validates each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Primero se recuentan los votos en cada colegio electoral. Después se comparan los resultados con las actas oficiales, y finalmente se publica el resultado validado por la junta electoral.'] },
+
+  { id: 'c1w-encuanto-aficion-ocio', type: 'write', level: 8, theme: 'ocio',
+    prompt: 'Write about starting a hobby as soon as you have free time, using "en cuanto" + subjunctive.',
+    hint: 'The verb right after "en cuanto" must be in the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'en cuanto' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['Empezaré esa afición en cuanto tenga tiempo libre.'] },
+
+  { id: 'p-dejar-fumar-salud', type: 'paragraph', level: 9, theme: 'salud',
+    prompt: 'Write a paragraph about quitting a bad habit: what it was like before, how it is going now, and what you expect for the future.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Durante años, fumaba casi un paquete diario sin pensarlo demasiado. Ahora, en cambio, llevo ya seis meses sin fumar ni un solo cigarrillo. Para el verano, es probable que ya haya recuperado buena parte de la capacidad pulmonar que perdí. Nunca pensé que dejarlo fuera posible tan pronto.'] },
+
+  { id: 'c1w-devoluciones-compras', type: 'write', level: 9, theme: 'compras',
+    prompt: 'Write a formal store return-policy notice, addressed to customers in general, about keeping the receipt.',
+    hint: 'Never address the reader as "tú".',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 10 }
+    ],
+    models: ['Se ruega a los clientes que conserven el recibo de compra para poder tramitar cualquier devolución dentro del plazo establecido.'] },
+
+  { id: 'c1b-cuanto-mas-insistas-caracter', type: 'build', level: 9, theme: 'caracter', en: 'The more you insist, the less likely I am to change my mind.',
+    answer: 'Cuanto más insistas, menos probable es que cambie de opinión.' },
+
+  { id: 'c1t-galeria-arte', type: 'translate', level: 8, theme: 'arte',
+    prompt: 'Translate, using a double object pronoun and addressing the reader as "usted": "The gallery is going to send it to you by courier."',
+    hint: 'Use "se lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 3 }
+    ],
+    models: ['La galería se lo enviará por mensajería.'] }
 
 ];
