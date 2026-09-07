@@ -2902,6 +2902,77 @@ window.WRITING_TASKS = [
       { type: 'cliticCluster' },
       { type: 'minWords', n: 3 }
     ],
-    models: ['La enfermera te lo traerá enseguida.'] }
+    models: ['La enfermera te lo traerá enseguida.'] },
+
+  { id: 'c1b-consultado-expertos-ciencia', type: 'build', level: 9, theme: 'ciencia', en: 'Had they consulted the experts, they would have avoided the mistake.',
+    answer: 'De haber consultado a los expertos, habrían evitado el error.' },
+  { id: 'c1b-descansa-pase-salud', type: 'build', level: 8, theme: 'salud', en: 'Get some rest, whatever happens tomorrow.',
+    answer: 'Descansa, pase lo que pase mañana.' },
+
+  { id: 'c1t-plantilla-economia', type: 'translate', level: 9, theme: 'economia',
+    prompt: 'Translate, using a consequence connector: "Consequently, the company reduced its workforce."',
+    hint: 'Start with "por consiguiente".',
+    constraints: [
+      { type: 'containsWord', word: 'por consiguiente' },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['Por consiguiente, la empresa redujo su plantilla.'] },
+
+  { id: 'c1t-embarque-viajes', type: 'translate', level: 8, theme: 'viajes',
+    prompt: 'Translate, for an airline\'s official boarding notice: "Passengers must present a valid ID at boarding."',
+    hint: 'Avoid colloquial words; this is written policy text.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['Los pasajeros deben presentar un documento de identidad válido al embarcar.'] },
+
+  { id: 'c1w-pedido-online-compras', type: 'write', level: 9, theme: 'compras',
+    prompt: 'Explain, in an impersonal register using "se", how an online order typically gets processed and shipped.',
+    hint: 'Use "se" constructions throughout instead of naming who handles each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['En cuanto se confirma el pago, se prepara el pedido en el almacén. Después se empaqueta con cuidado y se envía mediante la empresa de transporte elegida por el cliente.'] },
+
+  { id: 'c1w-duda-identidad-identidad', type: 'write', level: 8, theme: 'identidad',
+    prompt: 'Write a sentence doubting whether someone really is who they claim to be, using "dudo que" + subjunctive.',
+    hint: 'The verb right after "dudo que" must be in the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'dudo que' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['Dudo que esa persona sea quien dice ser.'] },
+
+  { id: 'p-carrera-cambio-trabajo', type: 'paragraph', level: 9, theme: 'trabajo',
+    prompt: 'Write a paragraph about your career: what you used to accept without question, what you choose now, and what you expect will change.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Al principio de mi carrera, aceptaba cualquier proyecto sin cuestionarlo demasiado. Hoy en día, sin embargo, elijo con mucho más cuidado en qué invierto mi tiempo. Para dentro de cinco años, probablemente habré cambiado de sector por completo. Nunca imaginé que mis prioridades cambiarían tanto.'] },
+
+  { id: 'c1w-aviso-misa-religion', type: 'write', level: 8, theme: 'religion',
+    prompt: 'Write a formal parish notice about the Sunday mass schedule, addressed to parishioners in general.',
+    hint: 'Never address the reader as "tú".',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 10 }
+    ],
+    models: ['Se recuerda a los fieles que la misa dominical se celebrará a las diez de la mañana en la capilla principal.'] },
+
+  { id: 'c1b-poco-imaginabamos-viajes', type: 'build', level: 9, theme: 'viajes', en: 'Little did we know what awaited us.',
+    answer: 'Poco nos imaginábamos lo que nos esperaba.' },
+
+  { id: 'c1t-casero-vivienda', type: 'translate', level: 8, theme: 'vivienda',
+    prompt: 'Translate, using a double object pronoun: "The landlord finally gave it back to us."',
+    hint: 'Use "nos lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 3 }
+    ],
+    models: ['El casero por fin nos lo devolvió.'] }
 
 ];
