@@ -139,6 +139,42 @@ L.push('');
 });
 
 const text = L.join('\n') + '\n';
+/* --recount rewrites only the "(x/y done)" numbers in the headings, from the
+ * ticks actually in the file. They were written once at generation and go
+ * stale the moment anyone ticks a line, which makes the file misreport itself
+ * — the one thing it exists not to do. */
+if (process.argv.includes('--recount')) {
+  if (!fs.existsSync(OUT)) { console.error('WORKLIST.md does not exist yet.'); process.exit(1); }
+  var src = fs.readFileSync(OUT, 'utf8').split('\n');
+  // Two levels: a "##" band heading totals every line under it, including the
+  // ones inside its "###" strand sub-headings, so both have to accumulate.
+  var heads = [], band = null, sub = null;
+  src.forEach(function (line, i) {
+    var h = line.match(/^(#{2,3}) (.+?) \((\d+)\/(\d+)[^)]*\)\s*$/);
+    if (h) {
+      var rec = { i: i, hashes: h[1], title: h[2], done: 0, total: 0 };
+      heads.push(rec);
+      if (h[1] === '##') { band = rec; sub = null; } else { sub = rec; }
+      return;
+    }
+    if (/^## /.test(line)) { band = null; sub = null; return; }
+    var m = line.match(/^- \[( |x)\] /);
+    if (!m) return;
+    [band, sub].forEach(function (r) {
+      if (!r) return;
+      r.total++; if (m[1] === 'x') r.done++;
+    });
+  });
+  heads.forEach(function (c) {
+    if (!c.total) return;
+    src[c.i] = c.hashes + ' ' + c.title + ' (' + c.done + '/' + c.total + ' done)';
+  });
+  fs.writeFileSync(OUT, src.join('\n'));
+  var left = src.filter(function (l) { return /^- \[ \] /.test(l); }).length;
+  console.log("headings recounted; " + left + " lines still unticked");
+  process.exit(0);
+}
+
 const force = process.argv.includes('--force');
 const write = process.argv.includes('--write') || force;
 

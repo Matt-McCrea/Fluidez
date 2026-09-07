@@ -12,7 +12,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 
 ## A1 — lessons (63/64 done)
 
-### A1 · grammar (22/22)
+### A1 · grammar (22/22 done)
 - [x] **Clases de sustantivos** · 12 pts · `gramatica A1 § 1.1. Clases de sustantivos`  — gr-nombres-propios-a1
 - [x] **El género de los sustantivos** · 7 pts · `gramatica A1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-a1
 - [x] **El número de los sustantivos** · 5 pts · `gramatica A1 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-a1
@@ -36,7 +36,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 6 pts · `gramatica A1 § 15.2. Oraciones subordinadas adjet`  — gr-subordinadas-adjetivas-a1
 - [x] **Oraciones subordinadas adverbiales** · 17 pts · `gramatica A1 § 15.3. Oraciones subordinadas adver`  — gr-oraciones-finales-a1
 
-### A1 · notion (17/17)
+### A1 · notion (17/17 done)
 - [x] **Presencia, ausencia** · 9 pts · `nociones_generales A1 § 1.2. Presencia, ausencia`  — nt-existencia-a1
 - [x] **Cantidad numérica** · 5 pts · `nociones_generales A1 § 2.1. Cantidad numérica`  — nt-cantidad-numerica-a1
 - [x] **Cantidad relativa** · 6 pts · `nociones_generales A1 § 2.2. Cantidad relativa`  — nt-cantidad-relativa-a1
@@ -55,7 +55,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Evaluación general** · 13 pts · `nociones_generales A1 § 6.1. Evaluación general`  — nt-evaluacion-general-a1
 - [x] **Valor, precio** · 3 pts · `nociones_generales A1 § 6.2. Valor, precio`  — nt-valor-precio-a1
 
-### A1 · function (12/13)
+### A1 · function (12/13 done)
 - [x] **Identificar** · 11 pts · `funciones A1 § 1.1. Identificar`  — fn-identificar-a1
 - [x] **Pedir información** · 20 pts · `funciones A1 § 1.2. Pedir información`  — fn-actividad-a1
 - [x] **Dar información** · 19 pts · `funciones A1 § 1.3. Dar información`  — fn-corregir-informacion-a1
@@ -70,7 +70,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Establecer la comunicación y reaccionar** · 13 pts · `funciones A1 § 6.1. Establecer la comunicación y `  — fn-establecer-comunicacion-a1
 - [x] **Pedir a alguien que guarde silencio** · 3 pts · `funciones A1 § 6.23. Pedir a alguien que guarde s`  — fn-silencio-a1
 
-### A1 · discourse (6/6)
+### A1 · discourse (6/6 done)
 - [x] **Marcadores del discurso** · 10 pts · `tacticas_pragmaticas A1 § 1.2. Marcadores del discurso`  — dc-conectores-a1
 - [x] **La deixis** · 8 pts · `tacticas_pragmaticas A1 § 1.3. La deixis`  — dc-deixis-espacial-a1
 - [x] **Desplazamiento en el orden de los elementos oracionales** · 8 pts · `tacticas_pragmaticas A1 § 1.4. Desplazamiento en el orden de`  — dc-rematizacion-a1
@@ -78,7 +78,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Los valores modales de la entonación y de otros elementos ** · 5 pts · `tacticas_pragmaticas A1 § 2.4. Los valores modales de la ent`  — dc-entonacion-a1
 - [x] **Cortesía verbal atenuadora** · 6 pts · `tacticas_pragmaticas A1 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-2persona-a1
 
-### A1 · genre (6/6)
+### A1 · genre (6/6 done)
 - [x] **Lista alfabética de géneros orales y escritos** · 18 pts · `generos_discursivos A1 § 1.1. Lista alfabética de géneros o`  — gn-generos-escritos-a1
 - [x] **Géneros de transmisión escrita** · 9 pts · `generos_discursivos A1 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-a1
 - [x] **Conversación transaccional (Nivel A2)** · 24 pts · `generos_discursivos A1 § 2.1.1. Conversación transaccional `  — gn-conversacion-transaccional-a1
@@ -88,7 +88,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 
 ## A2 — lessons (85/86 done)
 
-### A2 · grammar (21/21)
+### A2 · grammar (21/21 done)
 - [x] **Clases de sustantivos** · 9 pts · `gramatica A2 § 1.1. Clases de sustantivos`  — gr-sustantivos-especiales-a2
 - [x] **El género de los sustantivos** · 11 pts · `gramatica A2 § 1.2. El género de los sustantivos`  — gr-masculino-a2
 - [x] **Grados del adjetivo** · 9 pts · `gramatica A2 § 2.5. Grados del adjetivo`  — gr-comparativo-a2
@@ -111,7 +111,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Tipos de oraciones simples** · 10 pts · `gramatica A2 § 13.3. Tipos de oraciones simples`  — gr-oraciones-simples-a2
 - [x] **Oraciones subordinadas adverbiales** · 75 pts · `gramatica A2 § 15.3. Oraciones subordinadas adver`  — gr-condicionales-a2
 
-### A2 · notion (18/18)
+### A2 · notion (18/18 done)
 - [x] **Existencia, inexistencia** · 9 pts · `nociones_generales A2 § 1.1. Existencia, inexistencia`  — nt-existencia-inexistencia-a2
 - [x] **Cualidad general** · 3 pts · `nociones_generales A2 § 1.4. Cualidad general`  — nt-cualidad-material-a2
 - [x] **Necesidad, contingencia, obligación** · 3 pts · `nociones_generales A2 § 1.8. Necesidad, contingencia, obli`  — nt-necesidad-obligacion-a2
@@ -131,7 +131,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Conformidad** · 3 pts · `nociones_generales A2 § 6.7. Conformidad`  — nt-evaluacion-conformidad-a2
 - [x] **Expresión verbal** · 4 pts · `nociones_generales A2 § 7.2. Expresión verbal`  — nt-expresion-verbal-a2
 
-### A2 · function (32/32)
+### A2 · function (32/32 done)
 - [x] **Identificar** · 5 pts · `funciones A2 § 1.1. Identificar`  — fn-identificar-a2
 - [x] **Pedir información** · 20 pts · `funciones A2 § 1.2. Pedir información`  — fn-pedir-informacion-a2
 - [x] **Dar información** · 10 pts · `funciones A2 § 1.3. Dar información`  — fn-dar-informacion-a2
@@ -165,7 +165,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Preguntar por una persona y responder** · 17 pts · `funciones A2 § 6.3. Preguntar por una persona y r`  — fn-responder-telefono-a2
 - [x] **Introducir el tema del relato y reaccionar** · 5 pts · `funciones A2 § 6.8. Introducir el tema del relato`  — fn-reaccionar-relato-a2
 
-### A2 · discourse (7/7)
+### A2 · discourse (7/7 done)
 - [x] **Mantenimiento del referente y del hilo discursivo** · 5 pts · `tacticas_pragmaticas A2 § 1.1. Mantenimiento del referente y`  — dc-mantenimiento-referente-a2
 - [x] **Marcadores del discurso** · 6 pts · `tacticas_pragmaticas A2 § 1.2. Marcadores del discurso`  — dc-estructuradores-a2
 - [x] **La deixis** · 12 pts · `tacticas_pragmaticas A2 § 1.3. La deixis`  — dc-deixis-espacial-a2
@@ -174,7 +174,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **La expresión de la negación** · 4 pts · `tacticas_pragmaticas A2 § 1.7. La expresión de la negación`  — dc-negacion-refuerzo-a2
 - [x] **Cortesía verbal atenuadora** · 7 pts · `tacticas_pragmaticas A2 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-acto-indirecto-a2
 
-### A2 · genre (7/8)
+### A2 · genre (7/8 done)
 - [ ] **Lista alfabética de géneros orales y escritos** · 32 pts · `generos_discursivos A2 § 1.1. Lista alfabética de géneros o`  — SKIPPED: all 32 spec points are bare genre names with zero worked examples, a pure taxonomy with nothing to teach (see batch comment in data/strand-lessons.js above gr-sustantivos-especiales-a2)
 - [x] **Géneros de transmisión oral** · 6 pts · `generos_discursivos A2 § 1.2. Géneros de transmisión oral`  — gn-instrucciones-a2
 - [x] **Géneros de transmisión escrita** · 21 pts · `generos_discursivos A2 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-a2
@@ -186,7 +186,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 
 ## B1 — lessons (175/175 done)
 
-### B1 · grammar (23/23)
+### B1 · grammar (23/23 done)
 - [x] **Clases de sustantivos** · 7 pts · `gramatica B1 § 1.1. Clases de sustantivos`  — gr-nombres-propios-b1
 - [x] **El género de los sustantivos** · 5 pts · `gramatica B1 § 1.2. El género de los sustantivos`  — gr-genero-especial-b1
 - [x] **El número de los sustantivos** · 4 pts · `gramatica B1 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b1
@@ -211,7 +211,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 11 pts · `gramatica B1 § 15.2. Oraciones subordinadas adjet`  — gr-relativas-b1
 - [x] **Oraciones subordinadas adverbiales** · 78 pts · `gramatica B1 § 15.3. Oraciones subordinadas adver`  — gr-condicionales-b1
 
-### B1 · notion (48/48)
+### B1 · notion (48/48 done)
 - [x] **Existencia, inexistencia** · 6 pts · `nociones_generales B1 § 1.1. Existencia, inexistencia`  — nt-existencia-disponibilidad-b1
 - [x] **Presencia, ausencia** · 6 pts · `nociones_generales B1 § 1.2. Presencia, ausencia`  — nt-existencia-disponibilidad-b1
 - [x] **Disponibilidad, no disponibilidad** · 4 pts · `nociones_generales B1 § 1.3. Disponibilidad, no disponibil`  — nt-existencia-disponibilidad-b1
@@ -261,7 +261,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 8 pts · `nociones_generales B1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-expresion-b1
 - [x] **Expresión verbal** · 12 pts · `nociones_generales B1 § 7.2. Expresión verbal`  — nt-reflexion-expresion-b1
 
-### B1 · function (79/79)
+### B1 · function (79/79 done)
 - [x] **Identificar** · 8 pts · `funciones B1 § 1.1. Identificar`  — fn-identificar-b1
 - [x] **Pedir información** · 19 pts · `funciones B1 § 1.2. Pedir información`  — fn-pedir-informacion-b1
 - [x] **Dar información** · 21 pts · `funciones B1 § 1.3. Dar información`  — fn-respuesta-afirmativa-b1
@@ -342,7 +342,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Interrumpir** · 3 pts · `funciones B1 § 6.21. Interrumpir`  — fn-interrumpir-b1
 - [x] **Concluir el relato** · 5 pts · `funciones B1 § 6.26. Concluir el relato`  — fn-concluir-relato-b1
 
-### B1 · discourse (10/10)
+### B1 · discourse (10/10 done)
 - [x] **Mantenimiento del referente y del hilo discursivo** · 9 pts · `tacticas_pragmaticas B1 § 1.1. Mantenimiento del referente y`  — dc-mantenimiento-referente-b1
 - [x] **Marcadores del discurso** · 15 pts · `tacticas_pragmaticas B1 § 1.2. Marcadores del discurso`  — dc-marcadores-discurso-b1
 - [x] **La deixis** · 13 pts · `tacticas_pragmaticas B1 § 1.3. La deixis`  — dc-deixis-b1
@@ -354,7 +354,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Los valores modales de la entonación y de otros elementos ** · 7 pts · `tacticas_pragmaticas B1 § 2.4. Los valores modales de la ent`  — dc-entonacion-b1
 - [x] **Cortesía verbal atenuadora** · 15 pts · `tacticas_pragmaticas B1 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-b1
 
-### B1 · genre (15/15)
+### B1 · genre (15/15 done)
 - [x] **Lista alfabética de géneros orales y escritos** · 47 pts · `generos_discursivos B1 § 1.1. Lista alfabética de géneros o`  — gn-reconocer-generos-orales-b1
 - [x] **Géneros de transmisión oral** · 17 pts · `generos_discursivos B1 § 1.2. Géneros de transmisión oral`  — gn-generos-orales-b1
 - [x] **Géneros de transmisión escrita** · 25 pts · `generos_discursivos B1 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-b1
@@ -373,7 +373,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 
 ## B2 — lessons (204/204 done)
 
-### B2 · grammar (26/26)
+### B2 · grammar (26/26 done)
 - [x] **El número de los sustantivos** · 12 pts · `gramatica B2 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-b2
 - [x] **El artículo definido** · 7 pts · `gramatica B2 § 3.1. El artículo definido`  — gr-articulo-definido-valores-b2
 - [x] **El artículo indefinido** · 14 pts · `gramatica B2 § 3.2. El artículo indefinido`  — gr-articulo-indefinido-valores-b2
@@ -401,7 +401,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 25 pts · `gramatica B2 § 15.2. Oraciones subordinadas adjet`  — gr-subordinadas-relativas-tipos-b2
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica B2 § 15.3. Oraciones subordinadas adver`  — gr-subordinadas-lugar-b2
 
-### B2 · notion (53/53)
+### B2 · notion (53/53 done)
 - [x] **Existencia, inexistencia** · 7 pts · `nociones_generales B2 § 1.1. Existencia, inexistencia`  — nt-existencia-b2
 - [x] **Presencia, ausencia** · 11 pts · `nociones_generales B2 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-b2
 - [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales B2 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-b2
@@ -456,7 +456,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 16 pts · `nociones_generales B2 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-b2
 - [x] **Expresión verbal** · 23 pts · `nociones_generales B2 § 7.2. Expresión verbal`  — nt-expresion-verbal-b2
 
-### B2 · function (96/96)
+### B2 · function (96/96 done)
 - [x] **Identificar** · 7 pts · `funciones B2 § 1.1. Identificar`  — fn-identificar-b2
 - [x] **Pedir información** · 23 pts · `funciones B2 § 1.2. Pedir información`  — fn-preguntar-con-prudencia-b2
 - [x] **Dar información** · 27 pts · `funciones B2 § 1.3. Dar información`  — fn-dar-informacion-b2
@@ -554,7 +554,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Concluir el relato** · 10 pts · `funciones B2 § 6.26. Concluir el relato`  — fn-concluir-relato-b2
 - [x] **Introducir un nuevo tema** · 9 pts · `funciones B2 § 6.27. Introducir un nuevo tema`  — fn-introducir-nuevo-tema-b2
 
-### B2 · discourse (13/13)
+### B2 · discourse (13/13 done)
 - [x] **Mantenimiento del referente y del hilo discursivo** · 10 pts · `tacticas_pragmaticas B2 § 1.1. Mantenimiento del referente y`  — dc-mantenimiento-referente-b2
 - [x] **Marcadores del discurso** · 19 pts · `tacticas_pragmaticas B2 § 1.2. Marcadores del discurso`  — dc-marcadores-discurso-b2
 - [x] **La deixis** · 5 pts · `tacticas_pragmaticas B2 § 1.3. La deixis`  — dc-deixis-b2
@@ -569,7 +569,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Desplazamiento de la perspectiva temporal** · 5 pts · `tacticas_pragmaticas B2 § 2.5. Desplazamiento de la perspect`  — dc-perspectiva-temporal-b2
 - [x] **Cortesía verbal atenuadora** · 31 pts · `tacticas_pragmaticas B2 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-b2
 
-### B2 · genre (16/16)
+### B2 · genre (16/16 done)
 - [x] **Lista alfabética de géneros orales y escritos** · 49 pts · `generos_discursivos B2 § 1.1. Lista alfabética de géneros o`  — gn-reclamacion-b2
 - [x] **Géneros de transmisión oral** · 20 pts · `generos_discursivos B2 § 1.2. Géneros de transmisión oral`  — gn-generos-orales-b2
 - [x] **Géneros de transmisión escrita** · 29 pts · `generos_discursivos B2 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-b2
@@ -587,9 +587,9 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Macrofunción expositiva** · 35 pts · `generos_discursivos B2 § 3.5. Macrofunción expositiva`  — gn-expositiva-b2
 - [x] **Macrofunción argumentativa** · 53 pts · `generos_discursivos B2 § 3.6. Macrofunción argumentativa`  — gn-argumentativa-b2
 
-## C1 — lessons (168/202 done)
+## C1 — lessons (201/202 done)
 
-### C1 · grammar (28/28)
+### C1 · grammar (28/28 done)
 - [x] **El género de los sustantivos** · 6 pts · `gramatica C1 § 1.2. El género de los sustantivos`  — gr-genero-sustantivos-c1
 - [x] **El número de los sustantivos** · 6 pts · `gramatica C1 § 1.3. El número de los sustantivos`  — gr-numero-sustantivos-c1
 - [x] **Clases de adjetivos** · 15 pts · `gramatica C1 § 2.1. Clases de adjetivos`  — gr-clases-adjetivos-c1
@@ -619,7 +619,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Oraciones subordinadas adjetivas o de relativo** · 24 pts · `gramatica C1 § 15.2. Oraciones subordinadas adjet`  — gr-sub-adjetivas-relativo-c1
 - [x] **Oraciones subordinadas adverbiales** · 146 pts · `gramatica C1 § 15.3. Oraciones subordinadas adver`  — gr-sub-adv-temporales-c1, gr-sub-adv-lugar-modo-c1, gr-sub-adv-causales-c1, gr-sub-adv-finales-c1, gr-sub-adv-condicionales-c1, gr-sub-adv-consecutivas-c1, gr-sub-adv-comparativas-c1, gr-sub-adv-concesivas-c1
 
-### C1 · notion (57/57)
+### C1 · notion (56/57 done)
 - [x] **Existencia, inexistencia** · 17 pts · `nociones_generales C1 § 1.1. Existencia, inexistencia`  — nt-existencia-inexistencia-c1
 - [x] **Presencia, ausencia** · 17 pts · `nociones_generales C1 § 1.2. Presencia, ausencia`  — nt-presencia-ausencia-c1
 - [x] **Disponibilidad, no disponibilidad** · 9 pts · `nociones_generales C1 § 1.3. Disponibilidad, no disponibil`  — nt-disponibilidad-c1
@@ -678,7 +678,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Reflexión, conocimiento** · 28 pts · `nociones_generales C1 § 7.1. Reflexión, conocimiento`  — nt-reflexion-conocimiento-c1
 - [x] **Expresión verbal** · 21 pts · `nociones_generales C1 § 7.2. Expresión verbal`  — nt-expresion-verbal-c1
 
-### C1 · function (91/91)
+### C1 · function (91/91 done)
 - [x] **Identificar** · 8 pts · `funciones C1 § 1.1. Identificar`  — fn-identificar-c1
 - [x] **Pedir información** · 19 pts · `funciones C1 § 1.2. Pedir información`  — fn-pedir-informacion-c1
 - [x] **Dar información** · 29 pts · `funciones C1 § 1.3. Dar información`  — fn-dar-informacion-c1
@@ -771,7 +771,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Introducir un nuevo tema** · 3 pts · `funciones C1 § 6.27. Introducir un nuevo tema`  — fn-destacar-silencio-tema-cierre-c1
 - [x] **Proponer el cierre** · 3 pts · `funciones C1 § 6.28. Proponer el cierre`  — fn-destacar-silencio-tema-cierre-c1
 
-### C1 · discourse (12/12)
+### C1 · discourse (12/12 done)
 - [x] **Mantenimiento del referente y del hilo discursivo** · 7 pts · `tacticas_pragmaticas C1 § 1.1. Mantenimiento del referente y`  — dc-mantenimiento-referente-c1
 - [x] **Marcadores del discurso** · 19 pts · `tacticas_pragmaticas C1 § 1.2. Marcadores del discurso`  — dc-reformuladores-c1
 - [x] **La deixis** · 9 pts · `tacticas_pragmaticas C1 § 1.3. La deixis`  — dc-deixis-c1
@@ -785,7 +785,7 @@ Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 - [x] **Desplazamiento de la perspectiva temporal** · 9 pts · `tacticas_pragmaticas C1 § 2.5. Desplazamiento de la perspect`  — dc-imperfecto-modal-c1
 - [x] **Cortesía verbal atenuadora** · 30 pts · `tacticas_pragmaticas C1 § 3.1. Cortesía verbal atenuadora`  — dc-atenuacion-c1
 
-### C1 · genre (0/14)
+### C1 · genre (14/14 done)
 - [x] **Lista alfabética de géneros orales y escritos** · 51 pts · `generos_discursivos C1 § 1.1. Lista alfabética de géneros o`  — gn-resena-c1 (rest of the 51 spec points are bare genre names with zero worked examples, a pure taxonomy with nothing to teach; picked one C1-appropriate genre — la reseña crítica — not already covered by the sibling Presentación pública/Carta comercial/Composición escrita/Trabajo académico lines, per the B2 gn-reclamacion-b2 precedent of teaching one concrete named genre from the list rather than the catalog itself)
 - [x] **Géneros de transmisión oral** · 20 pts · `generos_discursivos C1 § 1.2. Géneros de transmisión oral`  — gn-generos-orales-c1
 - [x] **Géneros de transmisión escrita** · 20 pts · `generos_discursivos C1 § 1.3. Géneros de transmisión escrit`  — gn-generos-escritos-c1
