@@ -2618,6 +2618,77 @@ window.WRITING_TASKS = [
       { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
       { type: 'minWords', n: 8 }
     ],
-    models: ['Ni siquiera la luz puede escapar de la atracción gravitatoria de un agujero negro.'] }
+    models: ['Ni siquiera la luz puede escapar de la atracción gravitatoria de un agujero negro.'] },
+
+  { id: 'c1b-informe-viernes', type: 'build', level: 9, theme: 'trabajo', en: 'It is essential that the report be submitted before Friday.',
+    answer: 'Es imprescindible que el informe se entregue antes del viernes.' },
+  { id: 'c1b-aviso-retraso', type: 'build', level: 9, theme: 'servicios', en: 'Had they warned us in time, we would have avoided the delay.',
+    answer: 'Si nos hubieran avisado a tiempo, habríamos evitado el retraso.' },
+
+  { id: 'c1t-explico-abogado-trabajo', type: 'translate', level: 9, theme: 'trabajo',
+    prompt: 'Translate, using a double object pronoun: "The lawyer explained it to them."',
+    hint: 'Use "se lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 3 }
+    ],
+    models: ['El abogado se lo explicó.'] },
+
+  { id: 'c1t-resultados-ciencia', type: 'translate', level: 9, theme: 'ciencia',
+    prompt: 'Translate, for a scientific bulletin in a formal register: "The results have not yet been confirmed."',
+    hint: 'Avoid colloquial words; this is written for publication.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 4 }
+    ],
+    models: ['Los resultados todavía no se han confirmado.'] },
+
+  { id: 'c1w-ley-aprobacion-politica', type: 'write', level: 9, theme: 'politica',
+    prompt: 'Describe, in an impersonal register using "se", how a new law typically gets approved, from proposal to publication.',
+    hint: 'Use "se" constructions throughout instead of naming who does each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Primero, un grupo de diputados presenta el proyecto de ley. Después, se debate en comisión y se vota en el pleno. Si se aprueba, se envía a la cámara alta, donde se revisa de nuevo antes de publicarse en el boletín oficial.'] },
+
+  { id: 'c1w-ojala-paciente-salud', type: 'write', level: 8, theme: 'salud',
+    prompt: 'Write a sentence expressing hope, using "ojalá que" + subjunctive, about a patient\'s recovery.',
+    hint: 'The verb right after "ojalá que" must be in the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'ojalá que' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['Ojalá que el paciente se recupere pronto.'] },
+
+  { id: 'p-inflacion-economia', type: 'paragraph', level: 9, theme: 'economia',
+    prompt: 'Write a paragraph about inflation: what it used to mean for people, what it means now, and what you expect will happen.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Durante décadas, la inflación apenas preocupaba a la mayoría de los ciudadanos. Hoy, sin embargo, cualquier subida de precios afecta directamente al presupuesto familiar. Es probable que, dentro de poco, los bancos centrales ya hayan ajustado de nuevo los tipos de interés. Nadie sabe todavía cuánto durará esta tendencia.'] },
+
+  { id: 'c1w-formal-usted-educacion', type: 'write', level: 8, theme: 'educacion',
+    prompt: 'Write formal advice to a student, addressing them as "usted", about reviewing their work before submitting it.',
+    hint: 'Never address the student as "tú".',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 10 }
+    ],
+    models: ['Le recomiendo encarecidamente que revise el trabajo antes de entregarlo, y que consulte cualquier duda con antelación.'] },
+
+  { id: 'c1b-quienquiera-luces', type: 'build', level: 9, theme: 'vivienda', en: 'Whoever arrives first should turn on the lights.',
+    answer: 'Quienquiera que llegue primero debería encender las luces.' },
+
+  { id: 'c1t-vuelo-retraso-viajes', type: 'translate', level: 8, theme: 'viajes',
+    prompt: 'Translate, conceding a point with "aunque" + subjunctive: "Although the flight may be delayed, we will arrive on time."',
+    hint: 'The verb right after "aunque" must be in the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'aunque' },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['Aunque el vuelo se retrase, llegaremos a tiempo.'] }
 
 ];
