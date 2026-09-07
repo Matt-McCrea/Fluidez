@@ -798,6 +798,17 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: 'El descubrimiento ___ (cambiar) por completo la teoría anterior.', inf: 'cambiar', tense: 'preterito', person: 'él/ella', en: 'The discovery completely changed the previous theory.' },
   { type: 'cloze', level: 8, text: 'La nueva ley ___ (permitir) el teletrabajo hasta tres días semanales.', inf: 'permitir', tense: 'presente', person: 'él/ella', en: 'The new law allows remote work up to three days a week.' },
   { type: 'transform', level: 9, instruction: 'Rewrite in a more formal tone:', from: 'Al final va a decir que no puede hacer nada.', to: 'Al final va a afirmar que no puede intervenir.', en: 'In the end he is going to state that he cannot intervene.' },
-  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los organizadores cancelaron el evento por lluvia.', to: 'Se canceló el evento por lluvia.', en: 'The event was cancelled due to rain.' }
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los organizadores cancelaron el evento por lluvia.', to: 'Se canceló el evento por lluvia.', en: 'The event was cancelled due to rain.' },
+
+  { type: 'cloze', level: 8, text: 'Es necesario que el comité ___ (aceptar) las nuevas condiciones.', inf: 'aceptar', tense: 'presubj', person: 'él/ella', en: 'It is necessary for the committee to accept the new conditions.' },
+  { type: 'cloze', level: 9, text: 'El juez ordenó que se ___ (retirar) la denuncia.', inf: 'retirar', tense: 'impsubj', person: 'él/ella', en: 'The judge ordered the complaint to be withdrawn.' },
+  { type: 'cloze', level: 9, text: 'Es un milagro que nadie ___ (resultar) herido en el accidente.', inf: 'resultar', tense: 'perfsubj', person: 'él/ella', en: 'It is a miracle no one ended up injured in the accident.' },
+  { type: 'cloze', level: 9, text: 'De haber llovido menos, la cosecha ___ (ser) mejor.', inf: 'ser', tense: 'condperf', person: 'él/ella', en: 'Had it rained less, the harvest would have been better.' },
+  { type: 'cloze', level: 8, text: 'El nuevo puente ___ (conectar) las dos orillas del río.', inf: 'conectar', tense: 'futuro', person: 'él/ella', en: 'The new bridge will connect the two banks of the river.' },
+  { type: 'cloze', level: 9, text: 'Antes de la crisis, la empresa ya ___ (despedir) a parte de la plantilla.', inf: 'despedir', tense: 'plusc', person: 'él/ella', en: 'Before the crisis, the company had already laid off part of the staff.' },
+  { type: 'cloze', level: 8, text: 'El comité ___ (negar) cualquier irregularidad.', inf: 'negar', tense: 'preterito', person: 'él/ella', en: 'The committee denied any irregularity.' },
+  { type: 'cloze', level: 8, text: 'El contrato ___ (eliminar) expresamente cualquier responsabilidad adicional.', inf: 'eliminar', tense: 'presente', person: 'él/ella', en: 'The contract expressly eliminates any additional liability.' },
+  { type: 'transform', level: 9, instruction: 'Rewrite using "sin que" + subjunctive:', from: 'Se marchó. Nadie se dio cuenta.', to: 'Se marchó sin que nadie se diera cuenta.', en: 'He left without anyone noticing.' },
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'El ayuntamiento aprobó el nuevo plan urbanístico.', to: 'Se aprobó el nuevo plan urbanístico.', en: 'The new urban plan was approved.' }
 
 ];
