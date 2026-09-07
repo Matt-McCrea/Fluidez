@@ -2689,6 +2689,77 @@ window.WRITING_TASKS = [
       { type: 'subjunctiveAfter', trigger: 'aunque' },
       { type: 'minWords', n: 6 }
     ],
-    models: ['Aunque el vuelo se retrase, llegaremos a tiempo.'] }
+    models: ['Aunque el vuelo se retrase, llegaremos a tiempo.'] },
+
+  { id: 'c1b-para-cuando-llegues', type: 'build', level: 9, theme: 'relaciones', en: 'By the time you arrive, we will have already left.',
+    answer: 'Para cuando llegues, ya nos habremos ido.' },
+  { id: 'c1b-yo-que-tu-contrato', type: 'build', level: 8, theme: 'trabajo', en: 'If I were you, I would not sign that contract.',
+    answer: 'Yo que tú, no firmaría ese contrato.' },
+
+  { id: 'c1t-medida-naturaleza', type: 'translate', level: 9, theme: 'naturaleza',
+    prompt: 'Translate, using a contrast connector: "However, the measure did not have the expected effect."',
+    hint: 'Start with "sin embargo".',
+    constraints: [
+      { type: 'containsWord', word: 'sin embargo' },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['Sin embargo, la medida no tuvo el efecto esperado.'] },
+
+  { id: 'c1t-exposicion-arte', type: 'translate', level: 9, theme: 'arte',
+    prompt: 'Translate, for a museum press release in a formal register: "The exhibition attracted an unexpectedly large audience."',
+    hint: 'Avoid colloquial words; this is written for publication.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['La exposición atrajo a un público inesperadamente numeroso.'] },
+
+  { id: 'c1w-verificacion-medios', type: 'write', level: 9, theme: 'medios',
+    prompt: 'Explain, in an impersonal register using "se", how a news article typically gets fact-checked before publication.',
+    hint: 'Use "se" constructions throughout instead of naming who checks each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Primero se revisan las fuentes citadas en el artículo. Después se contrastan los datos con otras publicaciones fiables, y finalmente se corrige cualquier imprecisión antes de que el texto se publique.'] },
+
+  { id: 'c1w-espero-amistad-relaciones', type: 'write', level: 8, theme: 'relaciones',
+    prompt: 'Write a sentence hoping a friendship recovers, using "espero que" + subjunctive.',
+    hint: 'The verb right after "espero que" must be in the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'espero que' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['Espero que la amistad se recupere con el tiempo.'] },
+
+  { id: 'p-viaje-planificado-viajes', type: 'paragraph', level: 9, theme: 'viajes',
+    prompt: 'Write a paragraph about a trip: how you used to imagine it, how the planning is going now, and what you expect once you arrive.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['De niña, imaginaba aquel viaje como una aventura sin ningún imprevisto. Ahora mismo, sin embargo, la planificación resulta bastante más complicada de lo que recordaba. Cuando por fin lleguemos, espero que el cansancio del vuelo no nos arruine el primer día. Ya veremos si la realidad se parece en algo a lo que imaginaba entonces.'] },
+
+  { id: 'c1w-memo-formal-trabajo', type: 'write', level: 9, theme: 'trabajo',
+    prompt: 'Write a formal internal memo, addressing colleagues as "usted", asking them to submit expense reports by the end of the month.',
+    hint: 'Never address the reader as "tú".',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 10 }
+    ],
+    models: ['Se ruega a todo el personal que entregue los justificantes de gastos antes de que finalice el mes.'] },
+
+  { id: 'c1b-confeso-mintio-relaciones', type: 'build', level: 9, theme: 'relaciones', en: 'She confessed that she had lied to protect her friend.',
+    answer: 'Confesó que había mentido para proteger a su amiga.' },
+
+  { id: 'c1t-medico-receto-salud', type: 'translate', level: 8, theme: 'salud',
+    prompt: 'Translate, using a double object pronoun: "The doctor prescribed it to her."',
+    hint: 'Use "se la" (la receta).',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 3 }
+    ],
+    models: ['El médico se la recetó.'] }
 
 ];
