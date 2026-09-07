@@ -754,6 +754,17 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: '___ (firmar) aquí, por favor.', inf: 'firmar', tense: 'imperativo', person: 'usted', en: 'Sign here, please.' },
   { type: 'cloze', level: 8, text: 'No ___ (confirmar) la reserva todavía; falta revisar una cláusula.', inf: 'confirmar', tense: 'impneg', person: 'usted', en: 'Do not confirm the reservation yet; a clause still needs reviewing.' },
   { type: 'transform', level: 9, instruction: 'Rewrite using "para que" + subjunctive to express purpose:', from: 'Firmaron el acuerdo. Así evitarían una demanda.', to: 'Firmaron el acuerdo para que se evitara una demanda.', en: 'They signed the agreement so that a lawsuit would be avoided.' },
-  { type: 'transform', level: 8, instruction: 'Rewrite as a negation:', from: 'Todos los socios aprobaron la fusión.', to: 'No todos los socios aprobaron la fusión.', en: 'Not all the partners approved the merger.' }
+  { type: 'transform', level: 8, instruction: 'Rewrite as a negation:', from: 'Todos los socios aprobaron la fusión.', to: 'No todos los socios aprobaron la fusión.', en: 'Not all the partners approved the merger.' },
+
+  { type: 'cloze', level: 9, text: 'Dudo que el ministro ___ (reconocer) públicamente el error.', inf: 'reconocer', tense: 'presubj', person: 'él/ella', en: 'I doubt the minister will publicly acknowledge the mistake.' },
+  { type: 'cloze', level: 8, text: 'El profesor exigía que los alumnos ___ (entregar) el trabajo a tiempo.', inf: 'entregar', tense: 'impsubj', person: 'ellos', en: 'The teacher demanded that the students hand in the assignment on time.' },
+  { type: 'cloze', level: 8, text: 'Me alegra que por fin lo ___ (conseguir) ellos.', inf: 'conseguir', tense: 'perfsubj', person: 'ellos', en: 'I am glad they have finally achieved it.' },
+  { type: 'cloze', level: 8, text: 'Nunca ___ (imaginar) yo semejante reacción.', inf: 'imaginar', tense: 'condicional', person: 'yo', en: 'I would never have imagined such a reaction.' },
+  { type: 'cloze', level: 8, text: 'La empresa ___ (anunciar) los resultados el jueves.', inf: 'anunciar', tense: 'futuro', person: 'él/ella', en: 'The company will announce the results on Thursday.' },
+  { type: 'cloze', level: 8, text: 'El comité ___ (aprobar) el presupuesto por unanimidad.', inf: 'aprobar', tense: 'preterito', person: 'él/ella', en: 'The committee approved the budget unanimously.' },
+  { type: 'cloze', level: 8, text: 'De joven, ella ___ (desear) ser diplomática.', inf: 'desear', tense: 'imperfecto', person: 'él/ella', en: 'As a young woman, she used to wish to be a diplomat.' },
+  { type: 'cloze', level: 8, text: 'Todavía no ___ (recibir) nosotros ninguna respuesta oficial.', inf: 'recibir', tense: 'perfecto', person: 'nosotros', en: 'We still have not received any official response.' },
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los responsables anunciaron nuevas medidas.', to: 'Se anunciaron nuevas medidas.', en: 'New measures were announced.' },
+  { type: 'transform', level: 9, instruction: 'Rewrite avoiding colloquial words, for a formal report:', from: 'La cosa empeoró bastante al final.', to: 'La situación empeoró considerablemente al final.', en: 'The situation worsened considerably in the end.' }
 
 ];
