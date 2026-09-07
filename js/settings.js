@@ -11,11 +11,15 @@
  * ========================================================================== */
 window.Settings = (function () {
   var UI = window.UI;
-  // Every key Fluidez writes to localStorage. Keep this in sync by hand —
-  // there's no build step to derive it automatically.
+  /* Every key Fluidez writes to localStorage — the single list, used by both
+   * export and "Empezar de cero". tools/validate-content.js checks it against
+   * the keys actually written in js/, so a new one cannot be forgotten by
+   * either. fluidez.theme is exported but deliberately NOT reset: wiping your
+   * Spanish should not turn off dark mode. */
   var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.errors', 'fluidez.captured',
     'fluidez.userWords', 'fluidez.journal', 'fluidez.profile', 'fluidez.theme', 'fluidez.topicLevel', 'fluidez.caps',
-    'fluidez.gameBest'];
+    'fluidez.gameBest', 'fluidez.onboarded'];
+  var KEEP_ON_RESET = { 'fluidez.theme': 1 };
 
   function exportData() {
     var out = { app: 'fluidez', exportedAt: new Date().toISOString(), data: {} };
@@ -85,14 +89,6 @@ window.Settings = (function () {
       'Wipes every trace of your progress on THIS device — review history, lessons studied, saved words, your journal, error log, game scores, level and the walkthrough — and starts again at A1 as a brand-new learner. ' +
       'It cannot be undone, and nothing is stored anywhere else, so export first if there is any chance you want it back.'));
 
-    /* Every key the app writes. Listed explicitly rather than clearing the
-     * whole origin, so a reset cannot take anything that is not ours. The
-     * theme is deliberately kept: nobody resetting their Spanish wants their
-     * dark mode turned off too. */
-    var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.profile',
-      'fluidez.caps', 'fluidez.captured', 'fluidez.errors', 'fluidez.gameBest',
-      'fluidez.journal', 'fluidez.onboarded', 'fluidez.topicLevel', 'fluidez.userWords'];
-
     var armed = false;
     var reset = UI.el('button', 'btn-danger', 'Empezar de cero'); reset.type = 'button';
     var note = UI.el('p', 'muted small', '');
@@ -103,7 +99,10 @@ window.Settings = (function () {
         note.textContent = 'This will erase everything on this device. Tap again to confirm, or leave this screen to cancel.';
         return;
       }
-      KEYS.forEach(function (k) { try { localStorage.removeItem(k); } catch (e) {} });
+      KEYS.forEach(function (k) {
+        if (KEEP_ON_RESET[k]) return;
+        try { localStorage.removeItem(k); } catch (e) {}
+      });
       try { location.reload(); } catch (e) {}
     });
     wrap.appendChild(reset);

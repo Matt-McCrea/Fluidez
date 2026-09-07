@@ -568,11 +568,15 @@ function checkProbes(l, tag) {
         (read(d + '/' + n).match(/'fluidez\.[a-zA-Z.]*'/g) || []).forEach(k => used.add(k.replace(/'/g, '')));
       });
     });
+    // Match the KEYS array itself. Searching the whole file was vacuous: the
+    // export list mentions the same keys, so a key dropped from the reset was
+    // still "found" and the check silently passed.
     const settings = read('js/settings.js');
+    const decl = (settings.match(/var KEYS = \[([\s\S]*?)\];/) || [])[1] || '';
+    ok(!!decl, 'js/settings.js: could not find the KEYS list');
     used.forEach(k => {
-      if (k === 'fluidez.theme') return;
-      ok(settings.indexOf("'" + k + "'") !== -1,
-        `"Empezar de cero" in js/settings.js does not clear ${k} — a reset would leave it behind`);
+      ok(decl.indexOf("'" + k + "'") !== -1,
+        `js/settings.js KEYS does not include ${k} — export and reset would both miss it`);
     });
   }
 
