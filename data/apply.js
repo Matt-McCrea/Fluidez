@@ -831,6 +831,17 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: 'El director ___ (anunciar) su dimisión en rueda de prensa.', inf: 'anunciar', tense: 'preterito', person: 'él/ella', en: 'The director announced his resignation at a press conference.' },
   { type: 'cloze', level: 8, text: 'La nueva normativa ___ (exigir) a las empresas informar con más transparencia.', inf: 'exigir', tense: 'presente', person: 'él/ella', en: 'The new regulation requires companies to report with more transparency.' },
   { type: 'transform', level: 9, instruction: 'Rewrite using "antes de que" + subjunctive:', from: 'Firma el contrato. Luego el plazo vence.', to: 'Firma el contrato antes de que venza el plazo.', en: 'Sign the contract before the deadline expires.' },
-  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los responsables retiraron el producto del mercado.', to: 'Se retiró el producto del mercado.', en: 'The product was withdrawn from the market.' }
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los responsables retiraron el producto del mercado.', to: 'Se retiró el producto del mercado.', en: 'The product was withdrawn from the market.' },
+
+  { type: 'cloze', level: 8, text: 'No pienso irme hasta que me ___ (devolver) el dinero.', inf: 'devolver', tense: 'presubj', person: 'él/ella', en: 'I am not leaving until they give me my money back.' },
+  { type: 'cloze', level: 8, text: 'Me sorprendió que nadie ___ (protestar) por la subida de precios.', inf: 'protestar', tense: 'impsubj', person: 'él/ella', en: 'I was surprised that no one protested against the price increase.' },
+  { type: 'cloze', level: 8, text: 'Ojalá que el paciente ___ (responder) bien al tratamiento.', inf: 'responder', tense: 'perfsubj', person: 'él/ella', en: 'I hope the patient has responded well to the treatment.' },
+  { type: 'cloze', level: 8, text: '¿___ (importar) a usted repetir la pregunta?', inf: 'importar', tense: 'condicional', person: 'él/ella', en: 'Would you mind repeating the question?' },
+  { type: 'cloze', level: 9, text: 'Para entonces, los bomberos ya ___ (apagar) el incendio.', inf: 'apagar', tense: 'futperf', person: 'ellos', en: 'By then, the firefighters will have already put out the fire.' },
+  { type: 'cloze', level: 9, text: 'El paciente ya ___ (perder) el conocimiento cuando llegó la ambulancia.', inf: 'perder', tense: 'plusc', person: 'él/ella', en: 'The patient had already lost consciousness by the time the ambulance arrived.' },
+  { type: 'cloze', level: 8, text: 'El testigo ___ (identificar) al sospechoso sin ninguna duda.', inf: 'identificar', tense: 'preterito', person: 'él/ella', en: 'The witness identified the suspect without any doubt.' },
+  { type: 'cloze', level: 8, text: 'El manual ___ (advertir) claramente de los riesgos del producto.', inf: 'advertir', tense: 'presente', person: 'él/ella', en: 'The manual clearly warns of the risks of the product.' },
+  { type: 'transform', level: 9, instruction: 'Rewrite using "cuando" + subjunctive for a future action:', from: 'Recibiremos los resultados. Entonces decidiremos.', to: 'Cuando recibamos los resultados, decidiremos.', en: 'When we receive the results, we will decide.' },
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'El equipo técnico solucionó el problema en horas.', to: 'El problema se solucionó en horas.', en: 'The problem was solved within hours.' }
 
 ];
