@@ -67,10 +67,10 @@ window.Session = (function () {
    * demands "duermo"; a learner three days into the present tense writes
    * "dormo" and is marked wrong for a stem change nobody has shown them.
    *
-   * Only bites while the level uses the paced curriculum (A1/A2) — see
-   * Profile.verbOkAt — and never empties a stage: if the filter leaves
-   * nothing, the unfiltered set is used, because a hard verb beats a blank
-   * screen. */
+   * A1 only — the Plan Curricular introduces stem changes at A2, and querer,
+   * poder, dormir and jugar are core early vocabulary. Never empties a stage
+   * either: if the filter leaves nothing, the unfiltered set is used, because
+   * a hard verb beats a blank screen. */
   function safeVerbs(items) {
     var P = window.Profile;
     if (!P || !P.verbOkAt) return items;
@@ -83,7 +83,7 @@ window.Session = (function () {
   var _writeSafe = {};
   function safeWriting(tasks) {
     var P = window.Profile, E = window.ENGINE;
-    if (!P || !P.verbOkAt || !E || !P.params().usesCurriculum) return tasks;
+    if (!P || !P.verbOkAt || !E || P.params().cefr !== 'A1') return tasks;
     var key = P.current();
     var cache = _writeSafe[key] || (_writeSafe[key] = {});
     var out = tasks.filter(function (t) {

@@ -223,15 +223,22 @@ window.Profile = (function () {
 
     /* Can a learner at this level be ASKED to produce this verb in this tense?
      *
-     * At A1 a translation task on "I sleep eight hours" demands "duermo", and
-     * a learner three days into the present tense will write "dormo" and be
-     * marked wrong for a stem change nobody has taught them. The essential
-     * irregulars are exempt because the first lessons teach them explicitly:
-     * ser and estar have a lesson of their own, and tener/ir/haber/hacer are
-     * unavoidable from day one. */
+     * A1 only. At A1 a translation task on "I sleep eight hours" demands
+     * "duermo", and a learner three days into the present tense writes "dormo"
+     * and is marked wrong for a stem change nobody has taught them. The
+     * essential irregulars are exempt because the first lessons teach them
+     * outright: ser and estar have a lesson of their own, and tener, ir, haber
+     * and hacer are unavoidable from day one.
+     *
+     * From A2 there is NO restriction, because that is where the Plan
+     * Curricular puts them — "irregularidades vocálicas y consonánticas más
+     * frecuentes" is an A2 specification. querer, poder, dormir, jugar and
+     * preferir are core early vocabulary; someone a year into Spanish who
+     * cannot say "quiero un café" has not learned Spanish. Holding them to B1
+     * would be far worse than the bug this fixes. */
     verbOkAt: function (inf, tense) {
       var p = PROFILES[current];
-      if (!p || !p.usesCurriculum) return true;          // B1 and above: no restriction
+      if (!p || p.cefr !== 'A1') return true;            // A2 and above: no restriction
       if (EARLY_IRREGULARS[inf]) return true;
       var E = window.ENGINE;
       if (!E) return true;

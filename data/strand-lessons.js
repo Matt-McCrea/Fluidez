@@ -28960,6 +28960,54 @@ window.STRAND_LESSONS = [
     { id: 'p:resenaC1:cloze', kind: 'cloze', text: 'Sin ___ cómo termina, baste decir que la investigación la lleva a Galicia. (revelar de antemano)', accept: ['adelantar'] },
     { id: 'p:resenaC1:recall', kind: 'recall', front: '¿Por qué una reseña que solo resume la trama sin juzgarla ha fallado en su función?', back: 'porque su función es ayudar al lector a decidir si la obra le merece la pena, no simplemente describirla' }
   ]
+},
+
+/* ---------------------------------------------------------------------------
+ * GRAMMAR — A2. The irregular present. The Plan Curricular puts
+ * "irregularidades vocálicas y consonánticas más frecuentes" at A2 (gramatica
+ * A2 9.1.1) and nothing in the app taught it, so a learner went from regular
+ * verbs at A1 to meeting "duermo" and "quiero" in exercises with no
+ * explanation of the pattern. js/profile.js keeps stem-changers out of A1
+ * practice for the same reason; this is the lesson that opens the gate.
+ * ------------------------------------------------------------------------ */
+{
+  id: 'gr-presente-irregular-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  pcic: ['gramatica:A2:331', 'gramatica:A2:332', 'gramatica:A2:333', 'gramatica:A2:334'],
+  title: 'El presente irregular: la bota y el yo raro',
+  summary: 'Most "irregular" present-tense verbs are nothing of the kind — they follow two patterns that cover almost all of them. One changes the vowel in four of the six persons and leaves nosotros and vosotros alone; the other changes only the yo form. Learn the two shapes and several hundred verbs stop being exceptions.',
+  sections: [
+    { h: 'The boot', html: 'The vowel change happens in <b>yo, tú, él and ellos</b> — and never in <b>nosotros</b> or <b>vosotros</b>. Written out in the usual order those four make a boot shape around the two that stay regular. <i>quiero, quieres, quiere, <b>queremos</b>, <b>queréis</b>, quieren.</i>' },
+    { h: 'Three vowel changes', html: '<b>e → ie</b>: <i>querer</i> → quiero, <i>preferir</i> → prefiero, <i>empezar</i> → empiezo, <i>pensar</i> → pienso.<br><b>o → ue</b>: <i>dormir</i> → duermo, <i>poder</i> → puedo, <i>volver</i> → vuelvo, <i>costar</i> → cuesta.<br><b>e → i</b> (only -ir verbs): <i>pedir</i> → pido, <i>servir</i> → sirvo, <i>repetir</i> → repito.<br>And one verb changes u → ue on its own: <i>jugar</i> → juego.' },
+    { h: 'The odd yo', html: 'A second group is regular everywhere except the <b>yo</b> form. Some add a <b>-g-</b>: <i>tengo, pongo, salgo, hago, digo, vengo, oigo</i>. Verbs ending in a vowel + <i>-cer/-cir</i> add <b>-zc-</b>: <i>conozco, parezco, conduzco, traduzco</i>. Everything else in the paradigm is normal: <i>conozco</i> but <i>conoces, conoce, conocemos</i>.' },
+    { h: 'Both at once', html: 'A few do both, so the yo form is doubly odd while the boot still applies to the rest: <i>tener</i> → <b>tengo</b>, tienes, tiene, tenemos, tenéis, tienen. <i>venir</i> and <i>decir</i> behave the same way.' },
+    { h: 'Spelling that is not irregularity', html: 'Some changes only keep the sound: <i>coger</i> → <b>cojo</b>, <i>seguir</i> → <b>sigo</b>, <i>vencer</i> → <b>venzo</b>. The verb is regular; Spanish spelling simply has no other way to write it.' }
+  ],
+  contrasts: [
+    { es: 'quiero, quieres, quiere, queremos, queréis, quieren', en: 'I want, you want…', note: 'e→ie in the boot; nosotros and vosotros untouched' },
+    { es: 'duermo, duermes, duerme, dormimos, dormís, duermen', en: 'I sleep, you sleep…', note: 'o→ue, same shape' },
+    { es: 'conozco, conoces, conoce, conocemos', en: 'I know, you know…', note: 'only the yo form is odd' },
+    { es: 'tengo, tienes, tiene, tenemos, tenéis, tienen', en: 'I have, you have…', note: 'both at once: -g- in yo, e→ie in the rest of the boot' }
+  ],
+  pitfalls: [
+    'Never carry the change into <b>nosotros</b> or <b>vosotros</b>. <i>*Quieremos</i> and <i>*duermimos</i> are the commonest errors here; it is <i>queremos</i> and <i>dormimos</i>.',
+    'The change is in the <b>stem vowel</b>, not the ending. The endings stay exactly the ones you already know: <i>-o, -es, -e, -emos, -éis, -en</i>.',
+    'You cannot tell from the infinitive whether a verb changes. <i>Contar</i> becomes <i>cuento</i> but <i>montar</i> stays <i>monto</i>; <i>querer</i> becomes <i>quiero</i> but <i>beber</i> stays <i>bebo</i>. It has to be learnt with the word — which is why the app teaches these verbs from A2 onwards rather than expecting you to guess.'
+  ],
+  examples: [
+    { es: 'Quiero un café, pero mi hermano prefiere un té.', en: 'I want a coffee, but my brother prefers a tea.' },
+    { es: 'Los sábados juego al fútbol y luego duermo toda la tarde.', en: 'On Saturdays I play football and then sleep all afternoon.' },
+    { es: 'No conozco esta ciudad, pero conocemos un restaurante muy bueno.', en: "I don't know this city, but we know a very good restaurant." },
+    { es: '—¿Cuánto cuesta? —No puedo decírtelo, no tengo la lista de precios.', en: '—How much does it cost? —I can\'t tell you, I don\'t have the price list.' }
+  ],
+  probes: [
+    { id: 'p:presirr:boot', kind: 'mcq', q: 'Nosotros ___ salir temprano. (querer)',
+      options: ['queremos', 'quieremos', 'quierimos'], answer: 0 },
+    { id: 'p:presirr:cambio', kind: 'cloze', text: 'Yo ___ ocho horas cada noche. (dormir)', accept: ['duermo'] },
+    { id: 'p:presirr:yo', kind: 'cloze', text: 'Yo no ___ a esa persona. (conocer)', accept: ['conozco'] },
+    { id: 'p:presirr:contraste', kind: 'mcq', q: '¿En qué personas NO cambia la vocal?',
+      options: ['yo y tú', 'nosotros y vosotros', 'él y ellos'], answer: 1 },
+    { id: 'p:presirr:jugar', kind: 'cloze', text: 'Los domingos yo ___ al tenis. (jugar)', accept: ['juego'] }
+  ]
 }
 
 ];
