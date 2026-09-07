@@ -129,10 +129,16 @@ window.Progress = (function () {
        * forbidden, which is wrong for anyone starting above A1. State is now
        * just done / next-up / not yet done. Grouped by level because a flat
        * list of 565 is unusable. */
+      /* Use the lesson's own cefr, which came from the Plan Curricular. Level 3
+       * belongs to BOTH A2 and B1 (see data/taxonomy.js), so re-deriving a band
+       * from the number filed all 109 level-3 lessons under A2 — B1 showed 60
+       * lessons when 158 are tagged B1. Only the 18 legacy tense lessons carry
+       * no tag, and for those the number is all there is. */
       var CEFR_OF = function (n) { return n <= 1 ? 'A1' : n <= 3 ? 'A2' : n <= 5 ? 'B1' : n <= 7 ? 'B2' : 'C1'; };
+      var bandOf = function (l) { return l.cefr || CEFR_OF(l.level || 1); };
       var here = (window.Profile && window.Profile.params().cefr) || 'A1';
       var byBand = {};
-      lessons.forEach(function (l, i) { (byBand[CEFR_OF(l.level || 1)] = byBand[CEFR_OF(l.level || 1)] || []).push({ l: l, i: i }); });
+      lessons.forEach(function (l, i) { (byBand[bandOf(l)] = byBand[bandOf(l)] || []).push({ l: l, i: i }); });
 
       ['A1', 'A2', 'B1', 'B2', 'C1'].forEach(function (band) {
         var rows = byBand[band]; if (!rows || !rows.length) return;

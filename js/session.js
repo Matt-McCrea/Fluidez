@@ -102,7 +102,14 @@ window.Session = (function () {
        * lesson whose gate belongs to this level; if the level is finished,
        * rotate within it rather than dropping back to A1. */
       var gates = pr.gates || [pr.maxGate || 99];
-      var pool = lessons.filter(function (l) { return gates.indexOf(l.level || 1) !== -1; });
+      /* Prefer the lesson's own cefr tag over the numeric gate. Level 3 belongs
+       * to both A2 and B1, so gating alone served A2 learners B1-tagged
+       * lessons. The 18 legacy tense lessons carry no tag and are matched by
+       * gate, which is all they have. */
+      var pool = lessons.filter(function (l) {
+        return l.cefr ? l.cefr === pr.cefr : gates.indexOf(l.level || 1) !== -1;
+      });
+      if (!pool.length) pool = lessons.filter(function (l) { return gates.indexOf(l.level || 1) !== -1; });
       if (!pool.length) pool = lessons.filter(function (l) { return (l.level || 1) <= (pr.maxGate || 99); });
       if (!pool.length) pool = lessons;
       for (var i = 0; i < pool.length; i++) { if (!studied[pool[i].id]) { lesson = pool[i]; break; } }
