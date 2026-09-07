@@ -3115,6 +3115,77 @@ window.WRITING_TASKS = [
       { type: 'cliticCluster' },
       { type: 'minWords', n: 3 }
     ],
-    models: ['El profesor nos lo explicará de nuevo.'] }
+    models: ['El profesor nos lo explicará de nuevo.'] },
+
+  { id: 'c1b-pase-lo-que-pase-caracter', type: 'build', level: 9, theme: 'caracter', en: 'Whatever happens, we will keep trying.',
+    answer: 'Pase lo que pase, seguiremos intentándolo.' },
+  { id: 'c1b-cuanto-antes-relaciones', type: 'build', level: 8, theme: 'relaciones', en: 'The sooner you tell them, the better.',
+    answer: 'Cuanto antes se lo digas, mejor.' },
+
+  { id: 'c1t-museo-arte', type: 'translate', level: 9, theme: 'arte',
+    prompt: 'Translate, using an additive connector: "Likewise, the museum extended the exhibition\'s schedule."',
+    hint: 'Start with "asimismo".',
+    constraints: [
+      { type: 'containsWord', word: 'asimismo' },
+      { type: 'minWords', n: 7 }
+    ],
+    models: ['Asimismo, el museo amplió el horario de la exposición.'] },
+
+  { id: 'c1t-templo-religion', type: 'translate', level: 8, theme: 'religion',
+    prompt: 'Translate, for a formal sign at the entrance of a temple: "Visitors are kindly asked to remain silent inside the temple."',
+    hint: 'Avoid colloquial words; this is official signage.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['Se ruega amablemente a los visitantes que guarden silencio dentro del templo.'] },
+
+  { id: 'c1w-equipaje-perdido-viajes', type: 'write', level: 9, theme: 'viajes',
+    prompt: 'Explain, in an impersonal register using "se", how lost luggage typically gets tracked and returned.',
+    hint: 'Use "se" constructions throughout instead of naming who tracks each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['En cuanto se detecta el extravío, se activa un rastreo mediante el código de la etiqueta. Si se localiza la maleta, se envía directamente al domicilio del pasajero afectado.'] },
+
+  { id: 'c1w-tramite-para-que-economia', type: 'write', level: 8, theme: 'economia',
+    prompt: 'Write about simplifying a bureaucratic process, using "para que" + subjunctive to explain its purpose.',
+    hint: 'The verb right after "para que" must be in the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'para que' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['Simplificaron el trámite para que más gente lo utilizara.'] },
+
+  { id: 'p-forma-fisica-cuerpo', type: 'paragraph', level: 9, theme: 'cuerpo',
+    prompt: 'Write a paragraph about physical fitness: how little you used to exercise, how you train now, and what you expect for an upcoming goal.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Hace unos años, apenas hacía ejercicio y me cansaba subiendo un solo piso de escaleras. Ahora entreno regularmente y noto una resistencia que antes no tenía. Para el próximo maratón, espero que mi cuerpo ya se haya adaptado del todo al nuevo ritmo de entrenamiento. Nunca pensé que llegaría tan lejos.'] },
+
+  { id: 'c1w-mantenimiento-servicios', type: 'write', level: 9, theme: 'servicios',
+    prompt: 'Write a formal service-interruption notice about scheduled maintenance, addressed to users in general.',
+    hint: 'Never address the reader as "tú".',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 10 }
+    ],
+    models: ['Se informa a los usuarios de que el servicio permanecerá interrumpido por mantenimiento programado durante la madrugada del sábado.'] },
+
+  { id: 'c1b-por-mucho-que-trabajo', type: 'build', level: 9, theme: 'trabajo', en: 'However hard he tries, he will not convince them.',
+    answer: 'Por mucho que lo intente, no los convencerá.' },
+
+  { id: 'c1t-sinceridad-identidad', type: 'translate', level: 8, theme: 'identidad',
+    prompt: 'Translate, using a double object pronoun and addressing the reader as "usted": "I am going to tell it to you honestly."',
+    hint: 'Use "se lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 3 }
+    ],
+    models: ['Se lo voy a decir con toda sinceridad.'] }
 
 ];
