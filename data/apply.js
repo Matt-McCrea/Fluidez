@@ -820,6 +820,17 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: 'El equipo de rescate ___ (encontrar) a los excursionistas al amanecer.', inf: 'encontrar', tense: 'preterito', person: 'él/ella', en: 'The rescue team found the hikers at dawn.' },
   { type: 'cloze', level: 8, text: 'El nuevo protocolo ___ (reducir) el tiempo de espera considerablemente.', inf: 'reducir', tense: 'presente', person: 'él/ella', en: 'The new protocol considerably reduces the waiting time.' },
   { type: 'transform', level: 9, instruction: 'Rewrite using "a menos que" + subjunctive:', from: 'No aprobará la ley. Salvo que cambien de opinión.', to: 'No aprobará la ley a menos que cambien de opinión.', en: 'They will not pass the law unless they change their minds.' },
-  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los investigadores confirmaron el hallazgo.', to: 'Se confirmó el hallazgo.', en: 'The finding was confirmed.' }
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los investigadores confirmaron el hallazgo.', to: 'Se confirmó el hallazgo.', en: 'The finding was confirmed.' },
+
+  { type: 'cloze', level: 8, text: 'Es imprescindible que todos ___ (respetar) las normas de seguridad.', inf: 'respetar', tense: 'presubj', person: 'ellos', en: 'It is essential that everyone respect the safety regulations.' },
+  { type: 'cloze', level: 8, text: 'Le rogué que me ___ (perdonar) por el malentendido.', inf: 'perdonar', tense: 'impsubj', person: 'él/ella', en: 'I begged him to forgive me for the misunderstanding.' },
+  { type: 'cloze', level: 8, text: 'Qué bien que al final ___ (llegar) a un acuerdo.', inf: 'llegar', tense: 'perfsubj', person: 'ellos', en: 'How great that they finally reached an agreement.' },
+  { type: 'cloze', level: 8, text: 'Yo, sinceramente, no ___ (aceptar) esas condiciones.', inf: 'aceptar', tense: 'condicional', person: 'yo', en: 'I, honestly, would not accept those conditions.' },
+  { type: 'cloze', level: 9, text: 'Para fin de año, la deuda ___ (superar) los mil millones.', inf: 'superar', tense: 'futperf', person: 'él/ella', en: 'By the end of the year, the debt will have exceeded one billion.' },
+  { type: 'cloze', level: 9, text: 'Los vecinos ya ___ (denunciar) el ruido varias veces antes de que actuara la policía.', inf: 'denunciar', tense: 'plusc', person: 'ellos', en: 'The neighbors had already reported the noise several times before the police acted.' },
+  { type: 'cloze', level: 8, text: 'El director ___ (anunciar) su dimisión en rueda de prensa.', inf: 'anunciar', tense: 'preterito', person: 'él/ella', en: 'The director announced his resignation at a press conference.' },
+  { type: 'cloze', level: 8, text: 'La nueva normativa ___ (exigir) a las empresas informar con más transparencia.', inf: 'exigir', tense: 'presente', person: 'él/ella', en: 'The new regulation requires companies to report with more transparency.' },
+  { type: 'transform', level: 9, instruction: 'Rewrite using "antes de que" + subjunctive:', from: 'Firma el contrato. Luego el plazo vence.', to: 'Firma el contrato antes de que venza el plazo.', en: 'Sign the contract before the deadline expires.' },
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los responsables retiraron el producto del mercado.', to: 'Se retiró el producto del mercado.', en: 'The product was withdrawn from the market.' }
 
 ];
