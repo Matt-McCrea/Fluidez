@@ -3102,12 +3102,16 @@ window.STRAND_LESSONS = [
     { es: 'Es un restaurante carísimo.', en: 'It\'s a really expensive restaurant.' }
   ],
   probes: [
-    { id: 'p:adjcal:articulo', kind: 'mcq', q: '"De los dos coches, me gusta ___." (el rojo, not mentioning "coche" again)',
-      options: ['mi rojo', 'el rojo', 'un rojo'], answer: 1 },
-    { id: 'p:adjcal:agree', kind: 'mcq', q: '"Mi hermana es muy ___." (intelligent, feminine)',
-      options: ['inteligento', 'inteligente', 'inteligenta'], answer: 1 },
+    // The cue must not contain the answer, and the distractors must be words a
+    // learner could plausibly choose — not invented forms like *inteligenta.
+    { id: 'p:adjcal:articulo', kind: 'mcq', q: '—¿Qué coche prefieres? —___ rojo.',
+      options: ['Mi', 'El', 'Un'], answer: 1 },
+    { id: 'p:adjcal:agree', kind: 'mcq', q: 'Mi hermana es muy ___. (tall)',
+      options: ['alto', 'alta', 'altos'], answer: 1 },
+    { id: 'p:adjcal:invariable', kind: 'mcq', q: '¿Cuál de estos adjetivos NO cambia en femenino?',
+      options: ['alto', 'inteligente', 'rojo'], answer: 1 },
     { id: 'p:adjcal:cloze', kind: 'cloze', text: 'Es un restaurante car___. (very expensive, absolute superlative)', accept: ['ísimo'] },
-    { id: 'p:adjcal:recall', kind: 'recall', front: 'What can stand in for a dropped noun that a possessive cannot?', back: 'the article (el/la + adjective)' }
+    { id: 'p:adjcal:recall', kind: 'recall', front: 'el coche rojo → sin repetir «coche»: ___', back: 'el rojo' }
   ]
 },
 

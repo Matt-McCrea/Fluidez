@@ -225,7 +225,12 @@ window.StageLearn = (function () {
       form.appendChild(reveal);
       input.focus();
 
-      function next(good) { S.enrol(it.id); if (!good) S.grade(it.id, false); i++; show(); }
+      // srs:false items are comprehension checks, not review cards — ask once,
+      // never enrol, so they cannot come back weeks later as a "mistake"
+      function next(good) {
+        if (it.srs !== false) { S.enrol(it.id); if (!good) S.grade(it.id, false); }
+        i++; show();
+      }
 
       input.addEventListener('keydown', function (e) {
         if (e.key !== 'Enter') return;

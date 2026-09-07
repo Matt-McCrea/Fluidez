@@ -154,10 +154,23 @@
     if (l.recall || !l.probes) return l;
     var out = Object.create(null);
     Object.keys(l).forEach(function (k) { out[k] = l[k]; });
+    /* A probe checks understanding at the end of a lesson. That is not the same
+     * job as a spaced-repetition card, which asks you to REPRODUCE an answer
+     * exactly, weeks later, and counts a miss against you.
+     *
+     * "What can stand in for a dropped noun that a possessive cannot?" ->
+     * "the article (el/la + adjective)" is a fair comprehension check and a
+     * terrible review item: it is a question about grammar in English, with a
+     * prose answer nobody will retype. Those are marked srs:false — still asked
+     * once, after the lesson, never enrolled into the deck. */
+    function metalinguistic(front) {
+      var f = String(front || '');
+      return /^(what|which|why|how|when|name the|in which)\b/i.test(f.trim()) && !/[áéíóúñ¿]/.test(f);
+    }
     out.recall = l.probes.map(function (p) {
       if (p.kind === 'mcq') return { id: p.id, front: p.q, back: p.options[p.answer] };
       if (p.kind === 'cloze') return { id: p.id, front: p.text, back: p.accept[0] };
-      return { id: p.id, front: p.front, back: p.back };
+      return { id: p.id, front: p.front, back: p.back, srs: !metalinguistic(p.front) };
     });
     return out;
   }
