@@ -787,6 +787,17 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: 'La compañía ___ (sacar) el producto antes de lo previsto.', inf: 'sacar', tense: 'preterito', person: 'él/ella', en: 'The company brought out the product earlier than planned.' },
   { type: 'cloze', level: 8, text: 'Mientras tanto, los pasajeros ___ (esperar) pacientemente en la sala.', inf: 'esperar', tense: 'imperfecto', person: 'ellos', en: 'Meanwhile, the passengers were waiting patiently in the room.' },
   { type: 'transform', level: 8, instruction: 'Rewrite expressing hope with "esperar que" + subjunctive:', from: 'El tratamiento funciona. Es lo que todos desean.', to: 'Todos esperan que el tratamiento funcione.', en: 'Everyone hopes the treatment works.' },
-  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los médicos descubrieron un nuevo efecto secundario.', to: 'Se descubrió un nuevo efecto secundario.', en: 'A new side effect was discovered.' }
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los médicos descubrieron un nuevo efecto secundario.', to: 'Se descubrió un nuevo efecto secundario.', en: 'A new side effect was discovered.' },
+
+  { type: 'cloze', level: 9, text: 'Es posible que el fiscal ___ (pedir) una pena más alta.', inf: 'pedir', tense: 'presubj', person: 'él/ella', en: 'It is possible the prosecutor will request a harsher sentence.' },
+  { type: 'cloze', level: 8, text: 'Nos pidieron que ___ (mantener) la calma durante el simulacro.', inf: 'mantener', tense: 'impsubj', person: 'nosotros', en: 'They asked us to stay calm during the drill.' },
+  { type: 'cloze', level: 9, text: 'No hay pruebas de que él ___ (ocultar) información en su declaración.', inf: 'ocultar', tense: 'perfsubj', person: 'él/ella', en: 'There is no evidence that he concealed information in his statement.' },
+  { type: 'cloze', level: 8, text: 'En su situación, yo ___ (pedir) ayuda profesional.', inf: 'pedir', tense: 'condicional', person: 'yo', en: 'In their situation, I would ask for professional help.' },
+  { type: 'cloze', level: 9, text: 'Para el viernes, el jurado ya ___ (dar) su veredicto.', inf: 'dar', tense: 'futperf', person: 'él/ella', en: 'By Friday, the jury will have already given its verdict.' },
+  { type: 'cloze', level: 8, text: 'Nadie ___ (avisar) a los pasajeros del retraso.', inf: 'avisar', tense: 'plusc', person: 'él/ella', en: 'No one had warned the passengers about the delay.' },
+  { type: 'cloze', level: 8, text: 'El descubrimiento ___ (cambiar) por completo la teoría anterior.', inf: 'cambiar', tense: 'preterito', person: 'él/ella', en: 'The discovery completely changed the previous theory.' },
+  { type: 'cloze', level: 8, text: 'La nueva ley ___ (permitir) el teletrabajo hasta tres días semanales.', inf: 'permitir', tense: 'presente', person: 'él/ella', en: 'The new law allows remote work up to three days a week.' },
+  { type: 'transform', level: 9, instruction: 'Rewrite in a more formal tone:', from: 'Al final va a decir que no puede hacer nada.', to: 'Al final va a afirmar que no puede intervenir.', en: 'In the end he is going to state that he cannot intervene.' },
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'Los organizadores cancelaron el evento por lluvia.', to: 'Se canceló el evento por lluvia.', en: 'The event was cancelled due to rain.' }
 
 ];
