@@ -62,6 +62,44 @@ window.Session = (function () {
     return a.length ? a : arr;
   }
 
+  /* Keep verbs a beginner has not been taught out of the answers they are
+   * asked to produce. A translation task on "I sleep eight hours a night"
+   * demands "duermo"; a learner three days into the present tense writes
+   * "dormo" and is marked wrong for a stem change nobody has shown them.
+   *
+   * Only bites while the level uses the paced curriculum (A1/A2) — see
+   * Profile.verbOkAt — and never empties a stage: if the filter leaves
+   * nothing, the unfiltered set is used, because a hard verb beats a blank
+   * screen. */
+  function safeVerbs(items) {
+    var P = window.Profile;
+    if (!P || !P.verbOkAt) return items;
+    var out = items.filter(function (it) {
+      return it.type !== 'cloze' || P.verbOkAt(it.inf, it.tense);
+    });
+    return out.length ? out : items;
+  }
+
+  var _writeSafe = {};
+  function safeWriting(tasks) {
+    var P = window.Profile, E = window.ENGINE;
+    if (!P || !P.verbOkAt || !E || !P.params().usesCurriculum) return tasks;
+    var key = P.current();
+    var cache = _writeSafe[key] || (_writeSafe[key] = {});
+    var out = tasks.filter(function (t) {
+      if (cache[t.id] === undefined) {
+        var texts = (t.models || []).concat(t.answer ? [t.answer] : []);
+        cache[t.id] = texts.every(function (m) {
+          return E.tokenize(m || '').every(function (tok) {
+            return E.analyzeToken(tok).every(function (a) { return P.verbOkAt(a.inf, a.tense); });
+          });
+        });
+      }
+      return cache[t.id];
+    });
+    return out.length ? out : tasks;
+  }
+
   // Build today's content bundle.
   // The lesson follows the SYLLABUS: the first not-yet-studied lesson (so you
   // progress in order, one per session; finish them all and it rotates as
@@ -124,8 +162,8 @@ window.Session = (function () {
     function atLevel(arr) { return arr.filter(function (x) { return (x.level || 1) <= level; }); }
 
     var passages = atLevel(window.PASSAGES || []);
-    var apply = atLevel(window.APPLY_ITEMS || []);
-    var writes = atLevel(window.WRITING_TASKS || []);
+    var apply = safeVerbs(atLevel(window.APPLY_ITEMS || []));
+    var writes = safeWriting(atLevel(window.WRITING_TASKS || []));
 
     // The FIRST time a grammar lesson is seen (not yet in `studied`), its
     // content is picked with a seed derived from the lesson id — reproducible

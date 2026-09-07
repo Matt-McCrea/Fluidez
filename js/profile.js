@@ -46,6 +46,8 @@ window.Profile = (function () {
    * SUPPORT (how much scaffolding), which stays a separate axis.
    * ------------------------------------------------------------------------ */
   var BANDS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+  // taught explicitly in the first lessons, so fair game from the start
+  var EARLY_IRREGULARS = { ser: 1, estar: 1, tener: 1, ir: 1, haber: 1, hacer: 1, irse: 1 };
 
   function buildProfiles() {
     var out = {};
@@ -197,6 +199,8 @@ window.Profile = (function () {
       var p = PROFILES[current];
       if (w.cefr && p.maxCefr) {
         var BANDS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+  // taught explicitly in the first lessons, so fair game from the start
+  var EARLY_IRREGULARS = { ser: 1, estar: 1, tener: 1, ir: 1, haber: 1, hacer: 1, irse: 1 };
         return BANDS.indexOf(w.cefr) <= BANDS.indexOf(p.maxCefr);
       }
       if (w.cefr) return true;
@@ -210,9 +214,28 @@ window.Profile = (function () {
     selectorVisible: function (key) { return PROFILES[current].selectors.indexOf(key) !== -1; },
     conjugableVerbs: function () {
       var all = window.VERBS || [];
-      if (current !== 'beginner') return all;
+      // was `current !== 'beginner'`, which stopped matching anything when the
+      // profiles became A1-C1 — the restriction had been silently dead
+      if (!PROFILES[current] || !PROFILES[current].usesCurriculum) return all;
       var set = introducedVerbInfs();
       return all.filter(function (v) { return set[v.inf]; });
+    },
+
+    /* Can a learner at this level be ASKED to produce this verb in this tense?
+     *
+     * At A1 a translation task on "I sleep eight hours" demands "duermo", and
+     * a learner three days into the present tense will write "dormo" and be
+     * marked wrong for a stem change nobody has taught them. The essential
+     * irregulars are exempt because the first lessons teach them explicitly:
+     * ser and estar have a lesson of their own, and tener/ir/haber/hacer are
+     * unavoidable from day one. */
+    verbOkAt: function (inf, tense) {
+      var p = PROFILES[current];
+      if (!p || !p.usesCurriculum) return true;          // B1 and above: no restriction
+      if (EARLY_IRREGULARS[inf]) return true;
+      var E = window.ENGINE;
+      if (!E) return true;
+      return !E.isIrregularIn(E.verbByInf(inf), tense || 'presente');
     }
   };
 })();

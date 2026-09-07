@@ -1003,6 +1003,20 @@ window.ENGINE = (function () {
     isIrregular: isIrregular,
     isReflexivo: isReflexivo,
     reflexiveBase: reflexiveBase,
+    /* Is this verb irregular IN THIS TENSE? A stem-changer is irregular in the
+     * present and the subjunctive but perfectly regular in the imperfect, and
+     * an -ar verb with an orthographic change is regular in the present. Used
+     * to keep unheralded irregulars out of a beginner's practice. */
+    isIrregularIn: function (v, tenseKey) {
+      if (!v) return false;
+      if (v.forms && v.forms[tenseKey]) return true;
+      if (v.like) return true;
+      if (v.stem) {
+        if (tenseKey === 'presente' || tenseKey === 'presubj' || tenseKey === 'imperativo') return true;
+        if (tenseKey === 'preterito' && vowelOf(v.inf) === 'ir') return true;
+      }
+      return false;
+    },
     personsFor: personsFor,
     verbByInf: verbByInf,
     normalize: normalize,
