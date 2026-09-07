@@ -80,6 +80,35 @@ window.Settings = (function () {
     diag.appendChild(copy);
     wrap.appendChild(diag);
 
+    wrap.appendChild(UI.el('h3', null, 'Empezar de cero'));
+    wrap.appendChild(UI.el('p', 'muted',
+      'Wipes every trace of your progress on THIS device — review history, lessons studied, saved words, your journal, error log, game scores, level and the walkthrough — and starts again at A1 as a brand-new learner. ' +
+      'It cannot be undone, and nothing is stored anywhere else, so export first if there is any chance you want it back.'));
+
+    /* Every key the app writes. Listed explicitly rather than clearing the
+     * whole origin, so a reset cannot take anything that is not ours. The
+     * theme is deliberately kept: nobody resetting their Spanish wants their
+     * dark mode turned off too. */
+    var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.profile',
+      'fluidez.caps', 'fluidez.captured', 'fluidez.errors', 'fluidez.gameBest',
+      'fluidez.journal', 'fluidez.onboarded', 'fluidez.topicLevel', 'fluidez.userWords'];
+
+    var armed = false;
+    var reset = UI.el('button', 'btn-danger', 'Empezar de cero'); reset.type = 'button';
+    var note = UI.el('p', 'muted small', '');
+    reset.addEventListener('click', function () {
+      if (!armed) {                       // two taps, so it cannot happen by accident
+        armed = true;
+        reset.textContent = 'Tocar otra vez para borrarlo todo';
+        note.textContent = 'This will erase everything on this device. Tap again to confirm, or leave this screen to cancel.';
+        return;
+      }
+      KEYS.forEach(function (k) { try { localStorage.removeItem(k); } catch (e) {} });
+      try { location.reload(); } catch (e) {}
+    });
+    wrap.appendChild(reset);
+    wrap.appendChild(note);
+
     wrap.appendChild(UI.el('h3', null, 'Exportar / importar datos'));
     wrap.appendChild(UI.el('p', 'muted',
       'Every install (phone, Mac, browser tab) keeps its own separate copy of your progress — moving it from one to another means exporting here, sending yourself the file (AirDrop, Files, email, whatever\'s easiest), and importing it on the other one. ' +

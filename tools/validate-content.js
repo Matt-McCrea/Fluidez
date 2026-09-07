@@ -556,6 +556,26 @@ function checkProbes(l, tag) {
     ok(sw.indexOf("'./" + f + "'") !== -1, `sw.js does not cache ${f} — offline installs will miss it`);
   });
 
+  /* "Empezar de cero" must clear every key the app writes, or a reset leaves
+   * debris and the learner is not actually starting fresh. fluidez.theme is
+   * deliberately kept — resetting your Spanish should not turn off dark mode. */
+  {
+    const used = new Set();
+    ['js', 'js/views'].forEach(d => {
+      let names = [];
+      try { names = fs.readdirSync(path.join(__dirname, '..', d)); } catch (e) { return; }
+      names.filter(n => n.endsWith('.js')).forEach(n => {
+        (read(d + '/' + n).match(/'fluidez\.[a-zA-Z.]*'/g) || []).forEach(k => used.add(k.replace(/'/g, '')));
+      });
+    });
+    const settings = read('js/settings.js');
+    used.forEach(k => {
+      if (k === 'fluidez.theme') return;
+      ok(settings.indexOf("'" + k + "'") !== -1,
+        `"Empezar de cero" in js/settings.js does not clear ${k} — a reset would leave it behind`);
+    });
+  }
+
   // the build marker shown in Ajustes must match the worker, or it misreports
   // which code is running — the one thing a cache-first app most needs to know
   var swv = (sw.match(/CACHE_VERSION\s*=\s*'([^']+)'/) || [])[1];
