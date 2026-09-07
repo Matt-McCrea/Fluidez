@@ -2831,6 +2831,77 @@ window.WRITING_TASKS = [
       { type: 'cliticCluster' },
       { type: 'minWords', n: 3 }
     ],
-    models: ['Nos lo regalaron.'] }
+    models: ['Nos lo regalaron.'] },
+
+  { id: 'c1b-cuanto-mas-menos-educacion', type: 'build', level: 9, theme: 'educacion', en: 'The more they explained it to me, the less I understood.',
+    answer: 'Cuanto más me lo explicaban, menos entendía.' },
+  { id: 'c1b-sorprendio-votado-politica', type: 'build', level: 9, theme: 'politica', en: 'It surprised us that so few people had voted.',
+    answer: 'Nos sorprendió que tan pocas personas hubieran votado.' },
+
+  { id: 'c1t-restaurante-alimentacion', type: 'translate', level: 8, theme: 'alimentacion',
+    prompt: 'Translate, using a contrast connector: "Nonetheless, the restaurant maintained its reputation."',
+    hint: 'Start with "no obstante".',
+    constraints: [
+      { type: 'containsWord', word: 'no obstante' },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['No obstante, el restaurante mantuvo su reputación.'] },
+
+  { id: 'c1t-ceremonia-religion', type: 'translate', level: 8, theme: 'religion',
+    prompt: 'Translate, for a formal event announcement: "The ceremony will take place regardless of the weather."',
+    hint: 'Avoid colloquial words; this is written for an official notice.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 6 }
+    ],
+    models: ['La ceremonia se celebrará independientemente del clima.'] },
+
+  { id: 'c1w-queja-servicios', type: 'write', level: 9, theme: 'servicios',
+    prompt: 'Explain, in an impersonal register using "se", how a customer complaint typically gets processed.',
+    hint: 'Use "se" constructions throughout instead of naming who handles each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Primero se registra la queja en el sistema. Después se asigna a un agente responsable, y finalmente se contacta con el cliente para confirmar la resolución.'] },
+
+  { id: 'c1w-sorpresa-reaccion-caracter', type: 'write', level: 8, theme: 'caracter',
+    prompt: 'Write a sentence about someone possibly being surprised by news, using "es posible que" + subjunctive.',
+    hint: 'The verb right after "es posible que" must be in the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'es posible que' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['Es posible que se sorprenda con la noticia.'] },
+
+  { id: 'p-bosque-naturaleza', type: 'paragraph', level: 9, theme: 'naturaleza',
+    prompt: 'Write a paragraph about a forest: how it used to look, how it looks now, and what you expect will happen if nothing changes.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Antes, aquel bosque cubría toda la ladera sin interrupción. Actualmente, apenas quedan algunos árboles dispersos entre los campos de cultivo. Si nadie interviene pronto, es probable que la erosión haya avanzado todavía más dentro de una década. Algunos vecinos ya han empezado a replantar especies autóctonas.'] },
+
+  { id: 'c1w-anuncio-galeria-arte', type: 'write', level: 9, theme: 'arte',
+    prompt: 'Write a formal gallery announcement, addressing visitors formally, about picking up tickets in advance and respecting room capacity.',
+    hint: 'Never address the reader as "tú".',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 10 }
+    ],
+    models: ['Se invita a los visitantes a recoger su entrada con antelación y a respetar el aforo máximo permitido en cada sala.'] },
+
+  { id: 'c1b-nada-mas-llegar-relaciones', type: 'build', level: 9, theme: 'relaciones', en: 'No sooner had she arrived than the phone rang.',
+    answer: 'Nada más llegar, sonó el teléfono.' },
+
+  { id: 'c1t-enfermera-salud', type: 'translate', level: 8, theme: 'salud',
+    prompt: 'Translate, using a double object pronoun: "The nurse will bring it to you right away."',
+    hint: 'Use "te lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 3 }
+    ],
+    models: ['La enfermera te lo traerá enseguida.'] }
 
 ];
