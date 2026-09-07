@@ -3044,6 +3044,77 @@ window.WRITING_TASKS = [
       { type: 'cliticCluster' },
       { type: 'minWords', n: 3 }
     ],
-    models: ['La galería se lo enviará por mensajería.'] }
+    models: ['La galería se lo enviará por mensajería.'] },
+
+  { id: 'c1b-confianza-reconstruida-relaciones', type: 'build', level: 9, theme: 'relaciones', en: 'Little by little, trust was rebuilt between them.',
+    answer: 'Poco a poco, se fue reconstruyendo la confianza entre ellos.' },
+  { id: 'c1b-hasta-que-no-ciencia', type: 'build', level: 9, theme: 'ciencia', en: 'Not until the results arrived did they celebrate.',
+    answer: 'Hasta que no llegaron los resultados, no celebraron.' },
+
+  { id: 'c1t-sospecha-naturaleza', type: 'translate', level: 9, theme: 'naturaleza',
+    prompt: 'Translate, using a confirming connector: "In fact, the data confirmed the initial suspicion."',
+    hint: 'Start with "de hecho".',
+    constraints: [
+      { type: 'containsWord', word: 'de hecho' },
+      { type: 'minWords', n: 7 }
+    ],
+    models: ['De hecho, los datos confirmaron la sospecha inicial.'] },
+
+  { id: 'c1t-ausencia-trabajo', type: 'translate', level: 8, theme: 'trabajo',
+    prompt: 'Translate, for a formal employee handbook: "Employees must notify their supervisor of any absence in advance."',
+    hint: 'Avoid colloquial words; this is official wording.',
+    constraints: [
+      { type: 'avoidsAny', words: ['o sea', 'vale', 'guay', 'tío'] },
+      { type: 'minWords', n: 8 }
+    ],
+    models: ['Los empleados deben notificar a su supervisor cualquier ausencia con antelación.'] },
+
+  { id: 'c1w-vacuna-aprobacion-salud', type: 'write', level: 9, theme: 'salud',
+    prompt: 'Explain, in an impersonal register using "se", how a vaccine typically gets approved before distribution.',
+    hint: 'Use "se" constructions throughout instead of naming who approves each step.',
+    constraints: [
+      { type: 'sePassive' },
+      { type: 'minWords', n: 15 }
+    ],
+    models: ['Antes de autorizarse, cada vacuna se somete a varias fases de ensayos clínicos. Una vez completados, se revisan los resultados y se aprueba su distribución si cumplen los estándares exigidos.'] },
+
+  { id: 'c1w-reformas-antes-vivienda', type: 'write', level: 8, theme: 'vivienda',
+    prompt: 'Write about finishing renovations before tenants move in, using "antes de que" + subjunctive.',
+    hint: 'The verb right after "antes de que" must be in the subjunctive.',
+    constraints: [
+      { type: 'subjunctiveAfter', trigger: 'antes de que' },
+      { type: 'minWords', n: 5 }
+    ],
+    models: ['Terminaremos las reformas antes de que los inquilinos se muden.'] },
+
+  { id: 'p-compras-online-compras', type: 'paragraph', level: 9, theme: 'compras',
+    prompt: 'Write a paragraph about shopping habits: how you used to shop in physical stores, how you shop now, and what you expect in the future.',
+    hint: 'Mix at least three different tenses; write at least four sentences.',
+    constraints: [
+      { type: 'distinctTenses', n: 3 },
+      { type: 'minSentences', n: 4 }
+    ],
+    models: ['Antes, hacía casi todas mis compras en tiendas físicas del barrio. Ahora compro la mayoría de las cosas por internet, sin salir de casa. Para dentro de unos años, es posible que ni siquiera queden tiendas físicas cerca de mi casa. Echo de menos, la verdad, poder tocar el producto antes de comprarlo.'] },
+
+  { id: 'c1w-fauna-parque-naturaleza', type: 'write', level: 9, theme: 'naturaleza',
+    prompt: 'Write a formal park notice about not feeding wildlife, addressed to visitors in general.',
+    hint: 'Never address the reader as "tú".',
+    constraints: [
+      { type: 'avoidsPerson', person: 'tú' },
+      { type: 'minWords', n: 10 }
+    ],
+    models: ['Se recuerda a los visitantes que está prohibido alimentar a la fauna silvestre dentro del parque natural.'] },
+
+  { id: 'c1b-no-solo-sino-servicios', type: 'build', level: 9, theme: 'servicios', en: 'Not only did he apologize, but he also offered compensation.',
+    answer: 'No solo se disculpó, sino que además ofreció una compensación.' },
+
+  { id: 'c1t-profesor-educacion', type: 'translate', level: 8, theme: 'educacion',
+    prompt: 'Translate, using a double object pronoun: "The teacher is going to explain it to us again."',
+    hint: 'Use "nos lo".',
+    constraints: [
+      { type: 'cliticCluster' },
+      { type: 'minWords', n: 3 }
+    ],
+    models: ['El profesor nos lo explicará de nuevo.'] }
 
 ];
