@@ -154,7 +154,7 @@ window.LessonRun = (function () {
     var firstTime = !loadStudied()[key];
     var rng = firstTime ? UI.seededRandom(key) : Math.random;
     var ctx = { focus: focus, lesson: lesson, results: {},
-      profile: window.Profile ? window.Profile.current() : 'standard' };
+      profile: window.Profile ? window.Profile.current() : 'A1' };
     var title = lesson ? lesson.title : (focus.type === 'verbs' ? 'Verbs · ' + focus.verbs.slice(0, 3).join(', ') :
       focus.type === 'vocab' ? 'New words · ' + focus.cat : 'Practice');
 

@@ -90,7 +90,7 @@ window.Progress = (function () {
     var lessons = window.GRAMMAR_LESSONS || [];
     var nextIdx = lessons.findIndex(function (l) { return !studied[l.id]; });
     function reRender() { window.Shell.closeOverlay(); render(host, back); }
-    var beginner = window.Profile && window.Profile.current() === 'beginner';
+    var beginner = window.Profile && window.Profile.isPaced();
 
     wrap.appendChild(UI.el('h3', null, 'Lessons'));
     wrap.appendChild(UI.el('p', 'muted small', 'Tap a lesson to take it — taught in full, then quizzed. Do them in any order. (The <b>Gramática</b> tab shows the grammar lessons as read-only reference.)'));

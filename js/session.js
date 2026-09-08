@@ -279,7 +279,7 @@ window.Session = (function () {
     // session (or an immediate re-render, if they want to skip a run of
     // them) picks the next one in the syllabus instead.
     var pr = window.Profile ? window.Profile.params() : { name: 'standard' };
-    if (pr.name === 'refresher' && ctx.focus && ctx.focus.type === 'grammar' && ctx.lesson) {
+    if (!pr.usesCurriculum && ctx.focus && ctx.focus.type === 'grammar' && ctx.lesson) {
       var skipB = UI.el('button', 'ghost-btn', 'Saltar esta lección →'); skipB.type = 'button';
       skipB.addEventListener('click', function () {
         var pp = loadProg();
@@ -320,7 +320,7 @@ window.Session = (function () {
       if (stage.key === 'learn') {
         var p = loadProg();
         var pr = window.Profile ? window.Profile.params() : { name: 'standard' };
-        if (pr.name === 'beginner') {          // paced path: step through the curriculum
+        if (pr.usesCurriculum) {               // paced path: step through the curriculum
           p.beginnerDay = (p.beginnerDay || 0) + 1;
           if (ctx.focus && ctx.focus.type === 'grammar' && ctx.lesson) { p.studied = p.studied || {}; p.studied[ctx.lesson.id] = 1; }
         } else if (ctx.lesson) {               // standard/refresher: a grammar lesson each day

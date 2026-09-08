@@ -26,7 +26,7 @@ window.Games = (function () {
   var BEST_KEY = 'fluidez.gameBest';
   var CONTRARRELOJ_SECONDS = 90;
 
-  function isBeginner() { return !!(window.Profile && window.Profile.current() === 'beginner'); }
+  function isBeginner() { return !!(window.Profile && window.Profile.isPaced()); }
   function loadBest() { try { return JSON.parse(localStorage.getItem(BEST_KEY)) || {}; } catch (e) { return {}; } }
   function saveBest(o) { try { localStorage.setItem(BEST_KEY, JSON.stringify(o)); } catch (e) {} }
   function bestFor(key) { return loadBest()[key] || 0; }

@@ -38,7 +38,7 @@ window.Selector = (function () {
   function label(cat) { return CAT_LABEL[cat] || cat; }
 
   function loadProg() { try { return JSON.parse(localStorage.getItem('fluidez.progress')) || {}; } catch (e) { return {}; } }
-  function isBeginner() { return !!(window.Profile && window.Profile.current() === 'beginner'); }
+  function isBeginner() { return !!(window.Profile && window.Profile.isPaced()); }
   // Beginner: strip conjugation cards (vt:) for verbs never introduced, so
   // Repaso inteligente's Stretch bucket can't hand a beginner a never-met
   // verb's conjugation. Verb-MEANING cards (vm:) are untouched — that's the

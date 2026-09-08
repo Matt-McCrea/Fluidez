@@ -556,6 +556,25 @@ function checkProbes(l, tag) {
     ok(sw.indexOf("'./" + f + "'") !== -1, `sw.js does not cache ${f} — offline installs will miss it`);
   });
 
+  /* The profiles were renamed from beginner/standard/refresher to A1-C1, and
+   * comparisons against the old names do not error — they just quietly stop
+   * matching. That silently disabled the beginner verb restriction, the paced
+   * curriculum's day counter (so lessons never advanced), the roadmap's
+   * beginner view and two game restrictions. Ban the strings outright. */
+  {
+    ['js', 'js/views'].forEach(d => {
+      let names = [];
+      try { names = fs.readdirSync(path.join(__dirname, '..', d)); } catch (e) { return; }
+      names.filter(n => n.endsWith('.js') && d + '/' + n !== 'js/profile.js').forEach(n => {
+        const src = read(d + '/' + n);
+        [/'beginner'/, /'refresher'/, /"beginner"/, /"refresher"/].forEach(re => {
+          ok(!re.test(src),
+            `${d}/${n} compares against an old profile name (${re.source}) — profiles are A1-C1; use Profile.isPaced() or params().usesCurriculum`);
+        });
+      });
+    });
+  }
+
   /* "Empezar de cero" must clear every key the app writes, or a reset leaves
    * debris and the learner is not actually starting fresh. fluidez.theme is
    * deliberately kept — resetting your Spanish should not turn off dark mode. */

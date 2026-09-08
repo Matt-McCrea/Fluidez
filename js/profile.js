@@ -212,6 +212,11 @@ window.Profile = (function () {
     setCap: function (name, n) { if (!PROFILES[name]) return; var o = loadCaps(); o[name] = Math.max(1, Math.round(n)); saveCaps(o); },
     tenses: function () { return PROFILES[current].tenses(); },
     selectorVisible: function (key) { return PROFILES[current].selectors.indexOf(key) !== -1; },
+    /* Is this level on the paced day-by-day curriculum? Call sites used to ask
+     * `current() === 'beginner'`, which silently stopped matching anything the
+     * moment the profiles became A1-C1. */
+    isPaced: function () { return !!(PROFILES[current] && PROFILES[current].usesCurriculum); },
+
     conjugableVerbs: function () {
       var all = window.VERBS || [];
       // was `current !== 'beginner'`, which stopped matching anything when the
