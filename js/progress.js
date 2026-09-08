@@ -95,8 +95,15 @@ window.Progress = (function () {
     wrap.appendChild(UI.el('h3', null, 'Lessons'));
     wrap.appendChild(UI.el('p', 'muted small', 'Tap a lesson to take it — taught in full, then quizzed. Do them in any order. (The <b>Gramática</b> tab shows the grammar lessons as read-only reference.)'));
 
+    /* A paced level gets its day-by-day route AS WELL AS the full catalogue —
+     * not instead of it. The route was previously an either/or, which was
+     * invisible while the beginner test was broken; fixing that test hid the
+     * level bands from A1 and A2, where they are most useful, since that is
+     * exactly where someone wants to see what is coming. */
     if (beginner) {
-      // one long list, in the beginner's curriculum order (no type split)
+      var routeDet = UI.el('details', 'catalog-more');
+      routeDet.setAttribute('open', 'open');
+      routeDet.appendChild(UI.el('summary', null, 'Tu ruta diaria — dónde vas hoy'));
       var seq = (window.Curriculum ? window.Curriculum.seq() : []);
       var curDay = (p.beginnerDay || 0);
       var flat = UI.el('div', 'syllabus');
@@ -120,9 +127,11 @@ window.Progress = (function () {
         row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run(focus, reRender); });
         flat.appendChild(row);
       });
-      wrap.appendChild(flat);
+      routeDet.appendChild(flat);
+      wrap.appendChild(routeDet);
+    }
 
-    } else {
+    {
       // standard/refresher: grammar lessons first, then vocab & verbs below
       /* Every lesson is open — the rows were always clickable, but marking
        * everything past the next unstudied one as "locked" made them look
