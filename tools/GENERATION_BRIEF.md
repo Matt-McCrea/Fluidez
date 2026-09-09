@@ -146,6 +146,16 @@ sentences saying what the *difficulty* is), `sections` (2–4 `{h, html}`),
 | `genre` | `moves` (≥2, the rhetorical structure in order), `model` (a real text, 120–250 words), `checklist` — no `exponents` |
 | `lexis` | **never authored** — vocabulary days are derived from `data/vocab.js` |
 
+**Never write a probe that asks ABOUT Spanish in English.** "How does 'no
+puedes hablar alto' express an obligation?", "Which two prepositions contract
+with el?", "What determines whether gustar is singular or plural?" — these read
+as quiz-show questions, the answer is English prose nobody can type, and the
+app has no good way to present them. 97 already exist and are filtered out at
+runtime; do not add more. A probe asks the learner to PRODUCE Spanish, or to
+choose between Spanish options. If the point is conceptual, test it by making
+them apply it: not "which persons change?" but "Nosotros ___ salir temprano
+(querer)".
+
 **Probes** (3–6) are the most valuable thing you write: they drive placement,
 the pre-lesson skip check and the mastery gate. Kinds are `recall`
 (`front`/`back`), `mcq` (`q`, `options`, `answer` index) and `cloze` (`text`

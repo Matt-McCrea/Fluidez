@@ -62,7 +62,7 @@ window.Deck = (function () {
     }
     function markGood() { if (locked) return; locked = true; feedback.textContent = '¡Correcto! ' + cur.back; feedback.className = 'feedback good'; setTimeout(function () { advance(true); }, 350); }
     // A gloss with two meanings, or a gender bracket, accepts any one of them.
-    var MEANING = { vocab: 1, idiom: 1, phrase: 1, capture: 1 };
+    var MEANING = { vocab: 1, idiom: 1, phrase: 1, capture: 1, verb: 1 };
     function meaningOpts() { return { meaning: !!MEANING[cur.kind] }; }
     input.addEventListener('input', function () {
       if (locked || revealed) return;

@@ -29,6 +29,12 @@ window.StageReview = (function () {
     });
     (window.GRAMMAR_LESSONS || []).forEach(function (l) {
       (l.recall || []).forEach(function (r) {
+        // Questions ABOUT grammar, in English, are comprehension checks for the
+        // end of a lesson — never review cards. Filtering here rather than only
+        // at enrolment matters: anything enrolled before that rule existed was
+        // still being served, which is what kept "How does X express an
+        // obligation?" appearing in Repasar.
+        if (r.srs === false) return;
         items.push({ id: r.id, front: r.front, back: r.back, kind: 'grammar', fixed: true, enrolledOnly: true });
       });
     });
@@ -166,7 +172,7 @@ window.StageReview = (function () {
       var locked = false, revealed = false;
       function good() { if (locked) return; locked = true; feedback.textContent = '¡Correcto! ' + R.back; feedback.className = 'feedback good'; setTimeout(function () { advance(true); }, 350); }
       // a two-meaning gloss or a gender bracket accepts any one of its parts
-      var MEANING = { vocab: 1, idiom: 1, phrase: 1, capture: 1 };
+      var MEANING = { vocab: 1, idiom: 1, phrase: 1, capture: 1, verb: 1 };
       function mOpts() { return { meaning: !!MEANING[R.kind] }; }
       input.addEventListener('input', function () {
         if (locked || revealed) return;

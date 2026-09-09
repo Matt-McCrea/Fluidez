@@ -19,7 +19,7 @@ window.Hub = (function () {
     });
     (window.IDIOMS || []).forEach(function (x) { items.push({ id: 'i:' + x.es }); });
     (window.GRAMMAR_LESSONS || []).forEach(function (l) {
-      (l.recall || []).forEach(function (r) { if (S.isEnrolled(r.id)) items.push({ id: r.id }); });
+      (l.recall || []).forEach(function (r) { if (r.srs !== false && S.isEnrolled(r.id)) items.push({ id: r.id }); });
     });
     if (window.ErrorLog) window.ErrorLog.cards().forEach(function (c) { items.push({ id: c.id }); });
     return items;

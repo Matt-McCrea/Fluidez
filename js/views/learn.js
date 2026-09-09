@@ -145,7 +145,7 @@ window.StageLearn = (function () {
     var l = ctx.lesson;
     if (!l) { done(); return; }
     var wrap = fillLesson(UI.el('div', 'panel lesson'), l);
-    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, (l.recall || []).slice(), 'grammar', done); }));
+    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, (l.recall || []).filter(function (r) { return r.srs !== false; }), 'grammar', done); }));
     host.appendChild(wrap);
   }
 
