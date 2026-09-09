@@ -23,32 +23,51 @@
 window.Curriculum = (function () {
   var E = window.ENGINE;
 
-  /* Frequency order, blended with the domestic/daily-life verbs an A1 learner
-   * needs on day one and the raw corpus counts rank far too low (ducharse
-   * before desarrollar). Verb days teach regular verbs only — the common
-   * irregulars are taught properly by the grammar ladder — so this list is a
-   * ranking, not a syllabus: whatever in it is irregular simply falls out. */
-  var VERB_PRIORITY = [
-    'hablar', 'llegar', 'pasar', 'llevar', 'dejar', 'tomar', 'llamar', 'quedar',
-    'creer', 'esperar', 'buscar', 'entrar', 'trabajar', 'necesitar', 'mirar',
-    'escuchar', 'comprar', 'ayudar', 'usar', 'terminar', 'estudiar', 'preguntar',
-    'contestar', 'comer', 'beber', 'cocinar', 'lavar', 'limpiar', 'ordenar',
-    'descansar', 'cenar', 'desayunar', 'preparar', 'cuidar', 'vivir', 'aprender',
-    'escribir', 'leer', 'abrir', 'subir', 'bajar', 'correr', 'caminar', 'viajar',
-    'visitar', 'invitar', 'cantar', 'bailar', 'nadar', 'tocar', 'sacar', 'pagar',
-    'cambiar', 'ganar', 'gastar', 'ahorrar', 'firmar', 'reservar', 'alquilar',
-    'olvidar', 'recordar', 'contar', 'explicar', 'enseñar', 'aceptar', 'usar',
-    'intentar', 'decidir', 'permitir', 'recibir', 'partir', 'cumplir', 'existir',
-    'ocurrir', 'insistir', 'discutir', 'apagar', 'encender', 'guardar', 'tirar',
-    'romper', 'arreglar', 'prestar', 'regalar', 'mandar', 'enviar', 'saludar',
-    'presentar', 'acompañar', 'esperar', 'descargar', 'grabar', 'marcar',
-    'llenar', 'vaciar', 'cerrar', 'levantar', 'bañar', 'peinar', 'vestir',
-    'lavarse', 'ducharse', 'levantarse', 'acostarse', 'llamarse', 'llevarse'
-  ];
+  /* Verb tiers, in the order a learner should meet them. Frequency order,
+   * blended with the domestic/daily-life verbs an A1 learner needs on day one
+   * and that raw corpus counts rank far too low (ducharse before desarrollar).
+   *
+   * Verb days teach regular verbs only — the common irregulars are taught
+   * properly by the grammar ladder — so a tier is a ranking, not a syllabus:
+   * whatever in it is irregular simply falls out. Each level meets its own
+   * tier minus everything the levels below already covered, so A2 starts
+   * where A1 stopped rather than re-teaching hablar. */
+  var VERB_TIERS = {
+    A1: ['hablar', 'llegar', 'pasar', 'llevar', 'dejar', 'tomar', 'llamar',
+      'quedar', 'creer', 'esperar', 'buscar', 'entrar', 'trabajar', 'necesitar',
+      'mirar', 'escuchar', 'comprar', 'ayudar', 'usar', 'terminar', 'estudiar',
+      'preguntar', 'contestar', 'comer', 'beber', 'cocinar', 'lavar', 'limpiar',
+      'ordenar', 'descansar', 'cenar', 'desayunar', 'preparar', 'cuidar',
+      'vivir', 'aprender', 'escribir', 'leer', 'abrir', 'subir', 'bajar',
+      'correr', 'caminar', 'viajar', 'visitar', 'invitar', 'cantar', 'bailar',
+      'nadar', 'tocar', 'sacar', 'pagar', 'cambiar', 'ganar', 'gastar',
+      'ahorrar', 'firmar', 'reservar', 'alquilar', 'olvidar', 'recordar',
+      'contar', 'explicar', 'enseñar', 'aceptar', 'intentar', 'decidir',
+      'permitir', 'recibir', 'partir', 'cumplir', 'existir', 'ocurrir',
+      'insistir', 'discutir', 'apagar', 'encender', 'guardar', 'tirar',
+      'romper', 'arreglar', 'prestar', 'regalar', 'mandar', 'enviar',
+      'saludar', 'presentar', 'acompañar', 'descargar', 'grabar', 'marcar',
+      'llenar', 'vaciar', 'cerrar', 'levantar', 'bañar', 'peinar', 'vestir',
+      'lavarse', 'ducharse', 'levantarse', 'acostarse', 'llamarse', 'llevarse'],
 
-  // How many of those a level meets on verb days. A1 wants the common core and
-  // nothing else; higher levels widen out to the whole regular vocabulary.
-  var VERB_BUDGET = { A1: 100, A2: 220 };
+    // A2 widens from the house to the world: work, study, admin, travel,
+    // health, opinions, and the reflexives for how you feel about all of it.
+    A2: ['mejorar', 'empeorar', 'aumentar', 'evitar', 'crear', 'formar',
+      'tratar', 'resultar', 'señalar', 'indicar', 'ocupar', 'asegurar',
+      'expresar', 'comentar', 'opinar', 'imaginar', 'dudar', 'notar',
+      'observar', 'comparar', 'describir', 'resumir', 'anunciar', 'publicar',
+      'imprimir', 'celebrar', 'organizar', 'participar', 'colaborar',
+      'reciclar', 'contaminar', 'reparar', 'solicitar', 'rellenar', 'entregar',
+      'cobrar', 'reclamar', 'vender', 'funcionar', 'durar', 'faltar', 'sobrar',
+      'tardar', 'suceder', 'practicar', 'entrenar', 'montar', 'aparcar',
+      'arrancar', 'frenar', 'cruzar', 'doblar', 'girar', 'parar', 'avisar',
+      'informar', 'consultar', 'confirmar', 'cancelar', 'retrasar', 'adelantar',
+      'pesar', 'calcular', 'sumar', 'restar', 'conectar', 'navegar',
+      'actualizar', 'instalar', 'borrar', 'suspender', 'aprobar', 'quejarse',
+      'disculparse', 'enfadarse', 'alegrarse', 'preocuparse', 'cansarse',
+      'aburrirse', 'casarse', 'mudarse', 'jubilarse', 'graduarse', 'apuntarse',
+      'quedarse', 'matricularse', 'relajarse', 'enterarse', 'fijarse']
+  };
 
   function chunk(a, n) { var o = []; for (var i = 0; i < a.length; i += n) o.push(a.slice(i, i + n)); return o; }
 
@@ -66,19 +85,24 @@ window.Curriculum = (function () {
   }
 
   function verbsFor(cefr) {
-    var budget = VERB_BUDGET[cefr] || 0;
-    var seen = {}, order = [];
-    VERB_PRIORITY.forEach(function (inf) {
-      var v = E.verbByInf(inf);
-      if (v && !E.isIrregular(v) && !seen[inf]) { seen[inf] = 1; order.push(inf); }
-    });
-    if (!budget) {
-      (window.VERBS || []).forEach(function (v) {
-        if (!E.isIrregular(v) && !seen[v.inf]) { seen[v.inf] = 1; order.push(v.inf); }
+    var taken = {}, order = [], mine = null;
+    // Walk the tiers in order: everything at or below this level counts as
+    // already met, and only this level's own tier is taught.
+    Object.keys(VERB_TIERS).forEach(function (code) {
+      var tier = VERB_TIERS[code].filter(function (inf) {
+        var v = E.verbByInf(inf);
+        if (!v || E.isIrregular(v) || taken[inf]) return false;
+        taken[inf] = 1; return true;
       });
-      return order;
-    }
-    return order.slice(0, budget);
+      if (code === cefr) mine = tier;
+    });
+    if (mine) return mine;
+    // Untiered levels (B1 and up, which aren't paced anyway) take whatever
+    // regular verbs the tiers never reached.
+    (window.VERBS || []).forEach(function (v) {
+      if (!E.isIrregular(v) && !taken[v.inf]) { taken[v.inf] = 1; order.push(v.inf); }
+    });
+    return order;
   }
 
   function build(cefr) {

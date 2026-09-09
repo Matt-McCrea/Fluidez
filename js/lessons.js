@@ -230,7 +230,46 @@
     // discourse: 6 -> 3
     { title: 'Conectores y negación', ids: ['dc-conectores-a1', 'dc-negacion-a1'] },
     { title: 'Esto, eso y el orden de la información', ids: ['dc-deixis-espacial-a1', 'dc-rematizacion-a1'] },
-    { title: 'La entonación y la cortesía', ids: ['dc-entonacion-a1', 'dc-atenuacion-2persona-a1'] }
+    { title: 'La entonación y la cortesía', ids: ['dc-entonacion-a1', 'dc-atenuacion-2persona-a1'] },
+
+    /* A2 has the same shape only worse: 62 micro-lessons, and smaller — 25 of
+     * its 33 function lessons run to two sections. Many are already explicit
+     * ask/answer halves of one exchange (preguntar por gustos / expresar
+     * gustos), which is how PCIC files them, not how anyone learns them.
+     * 62 -> 32. */
+    // function: 33 -> 17 (disculparse has no natural partner; it stays alone)
+    { title: 'Preguntar y expresar gustos', ids: ['fn-preguntar-gustos-a2', 'fn-expresar-gustos-a2'] },
+    { title: 'Preferencias: qué te gusta más', ids: ['fn-preguntar-preferencias-a2', 'fn-preferencia-comparativa-a2'] },
+    { title: 'Saber y no saber', ids: ['fn-preguntar-conocimiento-a2', 'fn-expresar-conocimiento-a2'] },
+    { title: 'Deseos: los tuyos y los que se ofrecen', ids: ['fn-preguntar-deseos-a2', 'fn-buenos-deseos-a2'] },
+    { title: 'Decir que sí y decir que no', ids: ['fn-acceder-peticion-a2', 'fn-negarse-peticion-a2'] },
+    { title: 'Pedir algo con cortesía', ids: ['fn-atenuar-orden-a2', 'fn-pedir-objetos-a2'] },
+    { title: 'Proponer, sugerir y aceptar', ids: ['fn-proponer-sugerir-a2', 'fn-aceptar-invitacion-a2'] },
+    { title: 'Saludar: en persona y por escrito', ids: ['fn-responder-saludo-a2', 'fn-saludar-escrito-a2'] },
+    { title: 'Dirigirse a alguien y presentarlo', ids: ['fn-dirigirse-a2', 'fn-presentar-alguien-a2'] },
+    { title: 'Pedir y dar información (A2)', ids: ['fn-pedir-informacion-a2', 'fn-dar-informacion-a2'] },
+    { title: 'Felicitar y alegrarse', ids: ['fn-felicitar-a2', 'fn-alegria-satisfaccion-a2'] },
+    { title: 'Cómo estás: ánimo y sensaciones', ids: ['fn-preguntar-estado-animo-a2', 'fn-sensaciones-fisicas-a2'] },
+    { title: 'Al teléfono y escuchando un relato', ids: ['fn-responder-telefono-a2', 'fn-reaccionar-relato-a2'] },
+    { title: 'Aconsejar y ofrecerse', ids: ['fn-aconsejar-a2', 'fn-ofrecerse-a2'] },
+    { title: 'Acuerdo y valoración', ids: ['fn-acuerdo-a2', 'fn-valorar-a2'] },
+    { title: 'Qué es y qué puede ser', ids: ['fn-identificar-a2', 'fn-posibilidad-a2'] },
+    // notion: 17 -> 9 (expresión verbal stays alone)
+    { title: 'Situar en el tiempo: desde, hasta, durante', ids: ['nt-localizacion-tiempo-a2', 'nt-referencias-generales-a2'] },
+    { title: 'Ya, todavía no, y el principio y el fin', ids: ['nt-anterioridad-a2', 'nt-inicio-duracion-fin-a2'] },
+    { title: 'Cuántas veces y cuánta cantidad', ids: ['nt-frecuencia-a2', 'nt-cantidad-relativa-a2'] },
+    { title: 'Moverse y dar direcciones (A2)', ids: ['nt-movimiento-estabilidad-a2', 'nt-orientacion-direccion-a2'] },
+    { title: 'Dentro, fuera y a la vista', ids: ['nt-posicion-relativa-distancia-a2', 'nt-visibilidad-color-a2'] },
+    { title: 'De qué es y cambiarlo por otro', ids: ['nt-cualidad-material-a2', 'nt-cambio-a2'] },
+    { title: 'Nacer, morir y las edades', ids: ['nt-existencia-inexistencia-a2', 'nt-edad-vejez-a2'] },
+    { title: 'Necesidad y conformidad: hace falta, vale', ids: ['nt-necesidad-obligacion-a2', 'nt-evaluacion-conformidad-a2'] },
+    // discourse: 12 -> 6
+    { title: 'Deixis personal y espacial', ids: ['dc-deixis-personal-a2', 'dc-deixis-espacial-a2'] },
+    { title: 'Deixis temporal y el hilo del relato', ids: ['dc-deixis-temporal-a2', 'dc-mantenimiento-referente-a2'] },
+    { title: 'Preguntas neutras y orientadas', ids: ['dc-interrogativos-neutros-a2', 'dc-interrogativos-orientados-a2'] },
+    { title: 'Atenuar: se impersonal e indirectas', ids: ['dc-atenuacion-1apersona-a2', 'dc-atenuacion-acto-indirecto-a2'] },
+    { title: 'Tematización y rematización', ids: ['dc-tematizacion-a2', 'dc-rematizacion-a2'] },
+    { title: 'Estructuradores y negación reforzada', ids: ['dc-estructuradores-a2', 'dc-negacion-refuerzo-a2'] }
   ];
 
   function concat(a, b) { return (a || []).concat(b || []); }

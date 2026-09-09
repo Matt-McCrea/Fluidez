@@ -67,13 +67,18 @@ Three rules keep the path short: it is scoped to **your own level** (it used to
 walk all 748 lessons whatever level you were on — 2,211 days to "finish" A1);
 there are **no vocab days**, because new words arrive every day through the
 review stage where the SRS wants them anyway; and practice lands every 6th day.
-A1 is 87 days, A2 147. B1 and up get a lesson each session.
+A1 is 87 days, A2 111. B1 and up get a lesson each session.
 
-The A1 notion/function/discourse strands arrive from PCIC as micro-lessons —
-three sections apiece — so `js/lessons.js` merges 39 of them into 20 paired
-lessons (`MERGES`), joining two halves of one idea: where a thing is / where it
-is relative to something else; asking for information / giving it. The merged
-lesson keeps the first id and carries both sets of PCIC provenance.
+The A1/A2 notion/function/discourse strands arrive from PCIC as micro-lessons —
+two or three sections apiece — so `js/lessons.js` merges 101 of them into 52
+paired lessons (`MERGES`), joining two halves of one idea: where a thing is /
+where it is relative to something else; asking for information / giving it. The
+merged lesson keeps the first id and carries both sets of PCIC provenance.
+
+Verb days follow `VERB_TIERS` in `js/curriculum.js` — frequency order blended
+with the domestic verbs a beginner needs on day one and raw corpus counts rank
+far too low. Each level teaches its own tier minus every tier below, so A2
+starts where A1 stopped instead of re-teaching *hablar*.
 
 ## The home hub & the everyday extras
 
