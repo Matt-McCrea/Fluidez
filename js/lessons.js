@@ -196,6 +196,85 @@
     return lessons;
   }
 
+  /* ---- A1 merges -----------------------------------------------------------
+   * The A1 notion/function/discourse strands arrived from PCIC as micro-lessons
+   * — three sections and four recall items apiece. Taught one a day they alone
+   * cost 39 days, which is most of why A1 ran to a year. These pairs are not
+   * arbitrary chunking: each joins two halves of one idea a learner would
+   * expect to meet together (where a thing is / where it is relative to
+   * something else; asking for information / giving it). The merged lesson
+   * keeps the first id, so progress and any reference to it survive; both
+   * source ids are recorded in `mergedFrom` and both sets of PCIC provenance
+   * are carried, so the coverage gates still see every spec item.
+   * 39 lessons -> 20 days. Other levels are untouched for now; the same table
+   * takes their groups when they need them. */
+  var MERGES = [
+    // notion: 18 -> 9
+    { title: 'Dónde están las cosas', ids: ['nt-localizacion-a1', 'nt-posicion-relativa-a1'] },
+    { title: 'Ir, venir y dar direcciones', ids: ['nt-movimiento-estabilidad-a1', 'nt-orientacion-direccion-a1'] },
+    { title: 'Cantidad: números, más y menos', ids: ['nt-cantidad-numerica-a1', 'nt-cantidad-relativa-a1'] },
+    { title: 'Precio y tamaño', ids: ['nt-valor-precio-a1', 'nt-tamano-a1'] },
+    { title: 'La hora, los días y la frecuencia', ids: ['nt-referencias-generales-a1', 'nt-frecuencia-a1'] },
+    { title: 'Antes, después y cuándo pasa', ids: ['nt-duracion-transcurso-a1', 'nt-tiempo-futuro-presente-pasado-a1'] },
+    { title: 'Hay, está, y entrar o salir', ids: ['nt-existencia-a1', 'nt-accesibilidad-a1'] },
+    { title: 'De dónde eres y cuántos años tienes', ids: ['nt-origen-a1', 'nt-edad-vejez-a1'] },
+    { title: 'Bueno, malo y los colores', ids: ['nt-evaluacion-general-a1', 'nt-visibilidad-vision-a1'] },
+    // function: 15 -> 8 (pedir silencio has no natural partner; it stays alone)
+    { title: 'Empezar y terminar una conversación', ids: ['fn-establecer-comunicacion-a1', 'fn-despedirse-a1'] },
+    { title: 'Dirigirse a alguien y responder', ids: ['fn-dirigirse-a1', 'fn-responder-presentacion-a1'] },
+    { title: 'Identificar: qué es y quién es', ids: ['fn-identificar-a1', 'fn-preguntar-decir-cosa-a1'] },
+    { title: 'Pedir y dar información', ids: ['fn-pedir-informacion-a1', 'fn-dar-informacion-a1'] },
+    { title: 'Acuerdo y desacuerdo', ids: ['fn-acuerdo-a1', 'fn-desacuerdo-a1'] },
+    { title: 'Corregir y decir que no sabes', ids: ['fn-corregir-informacion-a1', 'fn-desconocimiento-a1'] },
+    { title: 'Valorar y hablar de lo que haces', ids: ['fn-valorar-a1', 'fn-actividad-a1'] },
+    // discourse: 6 -> 3
+    { title: 'Conectores y negación', ids: ['dc-conectores-a1', 'dc-negacion-a1'] },
+    { title: 'Esto, eso y el orden de la información', ids: ['dc-deixis-espacial-a1', 'dc-rematizacion-a1'] },
+    { title: 'La entonación y la cortesía', ids: ['dc-entonacion-a1', 'dc-atenuacion-2persona-a1'] }
+  ];
+
+  function concat(a, b) { return (a || []).concat(b || []); }
+
+  function applyMerges(lessons) {
+    var byId = {};
+    lessons.forEach(function (l) { byId[l.id] = l; });
+    var absorbed = {}, merged = {};
+
+    MERGES.forEach(function (m) {
+      var parts = m.ids.map(function (id) { return byId[id]; });
+      if (parts.some(function (p) { return !p; })) return;   // regenerated away: skip
+      var head = parts[0], rest = parts.slice(1);
+      var out = {
+        id: head.id, strand: head.strand, cefr: head.cefr, level: head.level,
+        theme: head.theme, title: m.title, summary: head.summary,
+        mergedFrom: m.ids.slice(),
+        pcic: [], sections: [], exponents: [], contrasts: [], pitfalls: [],
+        examples: [], probes: [], recall: []
+      };
+      parts.forEach(function (p, i) {
+        // A divider titled with the absorbed lesson keeps the two halves legible
+        // as two halves, rather than running six sections together unlabelled.
+        if (i > 0) out.sections.push({ h: p.title, html: p.summary || '' });
+        ['pcic', 'sections', 'exponents', 'contrasts', 'pitfalls', 'examples', 'probes']
+          .forEach(function (k) { out[k] = concat(out[k], p[k]); });
+        // Half the recall from each side: eight quick-check items in one
+        // sitting is a test, not a check.
+        out.recall = concat(out.recall, (p.recall || []).slice(0, 3));
+      });
+      // Drop the blocks that stayed empty: the strand gate rejects a block a
+      // strand isn't allowed to carry, and an empty [] is still carrying it.
+      Object.keys(out).forEach(function (k) {
+        if (Array.isArray(out[k]) && !out[k].length) delete out[k];
+      });
+      merged[head.id] = out;
+      rest.forEach(function (p) { absorbed[p.id] = head.id; });
+    });
+
+    window.LESSON_MERGED_INTO = absorbed;   // old id -> the lesson that now holds it
+    return lessons.filter(function (l) { return !absorbed[l.id]; })
+                  .map(function (l) { return merged[l.id] || l; });
+  }
+
   /* The teaching order, derived from the lessons themselves: level first, then
    * strand (form before the functions that use it, discourse and genre after),
    * then the seed order for the legacy ladder, then title. A new lesson takes
@@ -219,7 +298,7 @@
    * ARRAY has to be in teaching order — deriving a separate SYLLABUS list and
    * leaving the array in build order would teach a B2 function lesson as
    * lesson 18, ahead of every A1 one. Order the array itself. */
-  var built = build();
+  var built = applyMerges(build());
   var syllabus = buildSyllabus(built);
   var byId = {};
   built.forEach(function (l) { byId[l.id] = l; });

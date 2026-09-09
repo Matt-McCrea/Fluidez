@@ -298,9 +298,16 @@ function checkProbes(l, tag) {
   // js/lessons.js merges them) — check each lesson's probes once only
   if (probedLessons.has(l.id)) return;
   probedLessons.add(l.id);
+  // A lesson absorbed by an A1 merge keeps its own entry in STRAND_LESSONS, but
+  // its probes now live on the merged lesson and were checked there. Checking
+  // the source too would flag every one of them as a duplicate id.
+  if ((window.LESSON_MERGED_INTO || {})[l.id]) return;
   if (l.probes === undefined) { ok(!STRICT_TAGS, `${tag}: missing probes`); return; }
-  ok(Array.isArray(l.probes) && l.probes.length >= 3 && l.probes.length <= 6,
-     `${tag}: needs 3-6 probes, got ${(l.probes || []).length}`);
+  // A merged lesson carries every source lesson's probes — placement and the
+  // skip check need them all — so its budget scales with how many it merged.
+  const parts = (l.mergedFrom || [l.id]).length;
+  ok(Array.isArray(l.probes) && l.probes.length >= 3 * parts && l.probes.length <= 6 * parts,
+     `${tag}: needs ${3 * parts}-${6 * parts} probes, got ${(l.probes || []).length}`);
   (l.probes || []).forEach((pr, i) => {
     const pt = `${tag} probe[${i}]`;
     ok(/^p:/.test(pr.id || ''), `${pt}: id must start with "p:"`);

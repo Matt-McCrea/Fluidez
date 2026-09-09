@@ -44,9 +44,18 @@ window.StageReview = (function () {
     // conjugation-in-context, scheduled per (lemma, tense) — a different real
     // sentence is drawn each time this pair comes up, but the id (and so the
     // schedule) is stable per verb+tense, not per sentence.
+    /* Gate these by the tenses the level has actually taught. The review pool
+     * never consulted the learner's level, so once a verb+tense pair was
+     * enrolled — by tapping any lesson in Lecciones, which are all open — it
+     * came back forever. That is how an A1 learner on day four met imperfect
+     * conjugations: the session's own content gate is fine, but Repasar sat
+     * outside it. */
+    var allowed = {};
+    (P.tenses() || []).forEach(function (t) { allowed[t] = 1; });
     var seenPairs = {};
     (window.APPLY_ITEMS || []).forEach(function (it) {
       if (it.type !== 'cloze') return;
+      if (!allowed[it.tense]) return;
       var key = it.inf + '|' + it.tense;
       if (seenPairs[key]) return; seenPairs[key] = 1;
       var group = (window.APPLY_ITEMS || []).filter(function (x) { return x.type === 'cloze' && x.inf === it.inf && x.tense === it.tense; });

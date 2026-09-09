@@ -1,79 +1,116 @@
 /* ============================================================================
- * CURRICULUM — the beginner's paced path.
+ * CURRICULUM — the paced path through one level.
  *
- * A new grammar tense every day is far too much for a beginner. Modelled on the
- * Español roadmap, this interleaves gentler day-types so new grammar is spaced
- * out, with vocab days, verb days and practice days in between:
+ * A new grammar tense every day is too much; a year to finish A1 is far too
+ * little. This interleaves day-types so new grammar is spaced out without the
+ * path running to thousands of days:
  *
- *   vocab    — meet a themed set of new words
- *   verbs    — meet a few new verbs (meaning)
- *   grammar  — a new tense/concept (only ~every 5th day)
+ *   verbs    — meet a few new verbs (meaning), most-common first
+ *   grammar  — a lesson: a tense, a notion, a function, discourse, a genre
  *   practice — no new content; consolidate what you've met
  *
- * Only the beginner profile uses this; standard/refresher get a grammar lesson
- * each session as before. The sequence is generated from the dataset, so new
- * content is picked up automatically.
+ * Three things keep it short:
+ *   1. The path is scoped to the learner's OWN level. It used to walk all 748
+ *      lessons and all 5,805 words whatever level you were on, so an A1
+ *      beginner's route to "finished" ran through C1 — 2,211 days.
+ *   2. There are no vocab days. New words arrive every day through the review
+ *      stage (Profile.newPerDay), which is where the SRS wants them anyway; a
+ *      day spent only meeting words was a day not spent using any.
+ *   3. Practice lands every 6th day rather than every 4th.
+ *
+ * Paced levels (A1/A2) use this; B1 and up get a lesson each session.
  * ========================================================================== */
 window.Curriculum = (function () {
   var E = window.ENGINE;
 
-  // Category order is derived from the vocabulary itself (see
-  // data/taxonomy.js). It was a hardcoded list, which silently produced no
-  // vocab days at all for the ~3,600 PCIC entries filed under theme ids.
-  var VERB_PRIORITY = ['hablar', 'trabajar', 'estudiar', 'necesitar', 'comprar',
-    'comer', 'beber', 'vivir', 'aprender', 'escribir', 'ser', 'estar', 'tener',
-    'ir', 'hacer', 'poder', 'querer', 'decir', 'ver', 'dar'];
+  /* Frequency order, blended with the domestic/daily-life verbs an A1 learner
+   * needs on day one and the raw corpus counts rank far too low (ducharse
+   * before desarrollar). Verb days teach regular verbs only — the common
+   * irregulars are taught properly by the grammar ladder — so this list is a
+   * ranking, not a syllabus: whatever in it is irregular simply falls out. */
+  var VERB_PRIORITY = [
+    'hablar', 'llegar', 'pasar', 'llevar', 'dejar', 'tomar', 'llamar', 'quedar',
+    'creer', 'esperar', 'buscar', 'entrar', 'trabajar', 'necesitar', 'mirar',
+    'escuchar', 'comprar', 'ayudar', 'usar', 'terminar', 'estudiar', 'preguntar',
+    'contestar', 'comer', 'beber', 'cocinar', 'lavar', 'limpiar', 'ordenar',
+    'descansar', 'cenar', 'desayunar', 'preparar', 'cuidar', 'vivir', 'aprender',
+    'escribir', 'leer', 'abrir', 'subir', 'bajar', 'correr', 'caminar', 'viajar',
+    'visitar', 'invitar', 'cantar', 'bailar', 'nadar', 'tocar', 'sacar', 'pagar',
+    'cambiar', 'ganar', 'gastar', 'ahorrar', 'firmar', 'reservar', 'alquilar',
+    'olvidar', 'recordar', 'contar', 'explicar', 'enseñar', 'aceptar', 'usar',
+    'intentar', 'decidir', 'permitir', 'recibir', 'partir', 'cumplir', 'existir',
+    'ocurrir', 'insistir', 'discutir', 'apagar', 'encender', 'guardar', 'tirar',
+    'romper', 'arreglar', 'prestar', 'regalar', 'mandar', 'enviar', 'saludar',
+    'presentar', 'acompañar', 'esperar', 'descargar', 'grabar', 'marcar',
+    'llenar', 'vaciar', 'cerrar', 'levantar', 'bañar', 'peinar', 'vestir',
+    'lavarse', 'ducharse', 'levantarse', 'acostarse', 'llamarse', 'llevarse'
+  ];
+
+  // How many of those a level meets on verb days. A1 wants the common core and
+  // nothing else; higher levels widen out to the whole regular vocabulary.
+  var VERB_BUDGET = { A1: 100, A2: 220 };
 
   function chunk(a, n) { var o = []; for (var i = 0; i < a.length; i += n) o.push(a.slice(i, i + n)); return o; }
 
-  function build() {
-    // one vocab day per (chunked) category, in beginner order
-    var byCat = {};
-    (window.VOCAB || []).forEach(function (w) { (byCat[w.cat] = byCat[w.cat] || []).push(w.es); });
-    var vocabDays = [];
-    var order = window.TAXONOMY ? window.TAXONOMY.vocabOrder(window.VOCAB || []) : Object.keys(byCat);
-    order.forEach(function (c) {
-      if (!byCat[c]) return;
-      var parts = chunk(byCat[c], 12);
-      parts.forEach(function (words, i) { vocabDays.push({ type: 'vocab', cat: c, words: words, part: parts.length > 1 ? i + 1 : 0 }); });
+  function lessonsFor(cefr) {
+    var all = window.GRAMMAR_LESSONS || [];
+    var band = (window.LEVELS || []).filter(function (L) { return L.code === cefr; })[0];
+    var gates = (band && band.levels) || null;
+    return all.filter(function (l) {
+      if (l.cefr) return l.cefr === cefr;
+      // The legacy tense ladder carries no CEFR band, only a 1-5 gate; take the
+      // ones this level is allowed to reach. Without this an A1 path walked all
+      // 18 of them — the subjunctive included.
+      return !gates || gates.indexOf(l.level || 1) !== -1;
     });
+  }
 
-    // verb days: regular verbs, priority first, in fives
+  function verbsFor(cefr) {
+    var budget = VERB_BUDGET[cefr] || 0;
     var seen = {}, order = [];
-    VERB_PRIORITY.forEach(function (inf) { var v = E.verbByInf(inf); if (v && !E.isIrregular(v) && !seen[inf]) { seen[inf] = 1; order.push(inf); } });
-    (window.VERBS || []).forEach(function (v) { if (!E.isIrregular(v) && !seen[v.inf]) { seen[v.inf] = 1; order.push(v.inf); } });
-    var verbDays = chunk(order, 5).map(function (ch) { return { type: 'verbs', verbs: ch }; });
+    VERB_PRIORITY.forEach(function (inf) {
+      var v = E.verbByInf(inf);
+      if (v && !E.isIrregular(v) && !seen[inf]) { seen[inf] = 1; order.push(inf); }
+    });
+    if (!budget) {
+      (window.VERBS || []).forEach(function (v) {
+        if (!E.isIrregular(v) && !seen[v.inf]) { seen[v.inf] = 1; order.push(v.inf); }
+      });
+      return order;
+    }
+    return order.slice(0, budget);
+  }
 
-    // grammar days: syllabus order
-    var grammarDays = (window.GRAMMAR_LESSONS || []).map(function (l) { return { type: 'grammar', id: l.id }; });
+  function build(cefr) {
+    var lessonDays = lessonsFor(cefr).map(function (l) { return { type: 'grammar', id: l.id }; });
+    var verbDays = chunk(verbsFor(cefr), 5).map(function (ch) { return { type: 'verbs', verbs: ch }; });
 
-    var seq = [], practice = function () { return { type: 'practice' }; };
+    var seq = [];
     function take(q) { return q.length ? q.shift() : null; }
     function push(x) { if (x) seq.push(x); }
+    // Practice every 6th day, counted over the sequence as built so the spacing
+    // stays even however the two queues drain.
+    function tick() { if (seq.length && seq.length % 6 === 5) seq.push({ type: 'practice' }); }
 
-    // opener: two vocab days, first verbs, the present tense, a practice day
-    push(take(vocabDays)); push(take(vocabDays));
+    // Opener: the first verbs, then the present tense, then straight on.
     push(take(verbDays));
-    push(take(grammarDays));          // presente
-    seq.push(practice());
+    push(take(lessonDays));
 
-    // then: before each remaining grammar day, a run of vocab/verb/vocab + practice
-    while (grammarDays.length) {
-      push(take(vocabDays));
-      push(take(verbDays));
-      push(take(vocabDays));
-      seq.push(practice());
-      push(take(grammarDays));
-    }
-    // drain any leftover vocab/verbs, practice interspersed
-    while (vocabDays.length || verbDays.length) {
-      push(take(vocabDays));
-      push(take(verbDays));
-      seq.push(practice());
+    // Then two lessons per verb day: the verbs are there to feed the lessons,
+    // not to be the course.
+    while (lessonDays.length || verbDays.length) {
+      push(take(lessonDays)); tick();
+      push(take(lessonDays)); tick();
+      push(take(verbDays));   tick();
     }
     return seq;
   }
 
-  var SEQ = null;
-  return { seq: function () { return SEQ || (SEQ = build()); } };
+  var CACHE = {};
+  return {
+    seq: function (cefr) {
+      var k = cefr || (window.Profile && window.Profile.current()) || 'A1';
+      return CACHE[k] || (CACHE[k] = build(k));
+    }
+  };
 })();

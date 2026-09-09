@@ -33,14 +33,14 @@ window.LEVELS = [
     passageWords: [30, 60], glossLang: 'en',
     reviewMode: 'choice', reviewDirection: 'es2en',
     applyMode: 'bank', produceStyle: 'build',
-    newPerDay: 3, reviewBatchMax: 12 },
+    newPerDay: 7, reviewBatchMax: 20 },
 
   { code: 'A2', levels: [2, 3], label: 'A2 · Plataforma',
     accent: '#2d7fb8', accent2: '#3f9ed6',
     passageWords: [60, 100], glossLang: 'en',
     reviewMode: 'graduated', reviewDirection: 'graduated',
     applyMode: 'bank', produceStyle: 'guided',
-    newPerDay: 4, reviewBatchMax: 16 },
+    newPerDay: 8, reviewBatchMax: 22 },
 
   { code: 'B1', levels: [3, 4, 5], label: 'B1 · Umbral',
     accent: '#0e7c86', accent2: '#12a0ad',
