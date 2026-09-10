@@ -134,20 +134,14 @@ window.Session = (function () {
       lessons.forEach(function (l) { if (studied[l.id]) level = Math.max(level, l.level || 1); });
       if (lesson) level = Math.max(level, lesson.level || 1);
     } else {
-      /* A lesson from the level you selected. This used to walk the whole
-       * ladder from index 0, so choosing C1 still served "presente" — the level
-       * capped the CONTENT but never chose the lesson. Prefer an unstudied
-       * lesson whose gate belongs to this level; if the level is finished,
-       * rotate within it rather than dropping back to A1. */
-      var gates = pr.gates || [pr.maxGate || 99];
-      /* Prefer the lesson's own cefr tag over the numeric gate. Level 3 belongs
-       * to both A2 and B1, so gating alone served A2 learners B1-tagged
-       * lessons. The 18 legacy tense lessons carry no tag and are matched by
-       * gate, which is all they have. */
-      var pool = lessons.filter(function (l) {
-        return l.cefr ? l.cefr === pr.cefr : gates.indexOf(l.level || 1) !== -1;
-      });
-      if (!pool.length) pool = lessons.filter(function (l) { return gates.indexOf(l.level || 1) !== -1; });
+      /* A lesson from the band you selected, in the order data/course.js puts
+       * it in. This used to be a filter — the lesson's own cefr tag, falling
+       * back to whether its numeric level was one of the band's gates — which
+       * had to guess for the 18 legacy tense lessons that carry no tag, and
+       * served a lesson twice over wherever two bands shared a gate. The course
+       * says where every lesson belongs, so there is nothing left to infer. */
+      var ids = window.Curriculum ? window.Curriculum.lessonsFor(pr.cefr) : [];
+      var pool = ids.map(lessonById).filter(function (l) { return !!l; });
       if (!pool.length) pool = lessons.filter(function (l) { return (l.level || 1) <= (pr.maxGate || 99); });
       if (!pool.length) pool = lessons;
       for (var i = 0; i < pool.length; i++) { if (!studied[pool[i].id]) { lesson = pool[i]; break; } }

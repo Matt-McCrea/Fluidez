@@ -401,57 +401,37 @@
                   .map(function (l) { return merged[l.id] || l; });
   }
 
-  /* The teaching order, derived from the lessons themselves: level first, then
-   * strand (form before the functions that use it, discourse and genre after),
-   * then the seed order for the legacy ladder, then an explicit `order`, then
-   * title. A new lesson takes its place automatically — nothing to maintain by
-   * hand.
+  /* The teaching order is READ, not derived — see data/course.js.
    *
-   * `order` exists because the last tiebreaker used to be the title, and for
-   * the ~600 strand lessons the title is the ONLY thing separating them: the
-   * sequence was an artifact of Spanish spelling. That is how "Los posesivos
-   * átonos: dónde van" came to be taught before "Los posesivos: formas" —
-   * where they go, before what they are. Lower sorts earlier; the default 0
-   * leaves alphabetical order in place, which is fine wherever the lessons are
-   * genuinely independent. Set it only where one lesson needs another first. */
-  var STRAND_RANK = { grammar: 0, notion: 1, function: 2, discourse: 3, genre: 4 };
+   * It used to be a sort: level, then strand rank, then seed index, then an
+   * explicit nudge, then the title. Every one of those keys was doing real
+   * work, and the result was still an order nobody could read: for the ~600
+   * PCIC strand lessons the title was the only thing separating them, so the
+   * sequence came out of Spanish spelling. Worse, `level` was deciding both
+   * teaching order AND content difficulty, and the two contradicted each other
+   * — gate 3 belongs to A2 and B1 alike, so the conditional could not be moved
+   * earlier for A2 without disappearing from B1.
+   *
+   * Now COURSE says the order and `level` means one thing again: how hard a
+   * passage or cloze item may be (js/session.js atLevel). A lesson missing from
+   * COURSE is a content-gate failure, not something to paper over here — it
+   * would otherwise be silently unreachable. */
   function buildSyllabus(lessons) {
-    var seedIdx = {};
-    SEED.forEach(function (s, i) { seedIdx[s.id] = i; });
-    return lessons.slice().sort(function (a, b) {
-      return (a.level || 1) - (b.level || 1) ||
-             (STRAND_RANK[a.strand || 'grammar'] || 0) - (STRAND_RANK[b.strand || 'grammar'] || 0) ||
-             (seedIdx[a.id] === undefined ? 999 : seedIdx[a.id]) -
-             (seedIdx[b.id] === undefined ? 999 : seedIdx[b.id]) ||
-             (a.order || 0) - (b.order || 0) ||
-             String(a.title).localeCompare(String(b.title));
-    }).map(function (l) {
-      return { id: l.id, level: l.level || 1, strand: l.strand || 'grammar', cefr: l.cefr || null };
-    });
+    var pos = {}, byId = {};
+    (window.COURSE || []).forEach(function (e, i) { if (e.lesson) pos[e.lesson] = i; });
+    lessons.forEach(function (l) { byId[l.id] = l; });
+    return (window.COURSE || []).filter(function (e) { return e.lesson && byId[e.lesson]; })
+      .map(function (e) {
+        var l = byId[e.lesson];
+        return { id: l.id, level: l.level || 1, strand: l.strand || 'grammar', cefr: l.cefr || null };
+      });
   }
-
-  /* Lessons that must not be left to alphabetical order. Each is a case where
-   * one lesson is unreadable before another: the forms before the rules about
-   * where the forms go, the paradigm before the lessons that lean on it. */
-  var ORDER = {
-    'gr-posesivos-forma-a1': -2,          // the forms, before anything about them
-    'gr-posesivos-distribucion-a1': -1,
-    'gr-genero-sustantivos-a1': -4,       // gender and number of the noun, before
-    'gr-numero-sustantivos-a1': -3,       // the articles and adjectives that agree
-    'gr-genero-adjetivo-a1': -2,
-    'gr-presente-subjuntivo-b1': -5,      // the mood, before the 30-odd B1
-    'gr-temporales-b1': -4,               // lessons whose rule is "and then it
-    'gr-modalidad-b1': -3,                // switches to the subjunctive"
-    'gr-subordinadas-sustantivas-b1': -3,
-    'gr-imperativo-valores-b1': -2
-  };
 
   /* The session walks GRAMMAR_LESSONS to find the next unstudied lesson, so the
    * ARRAY has to be in teaching order — deriving a separate SYLLABUS list and
    * leaving the array in build order would teach a B2 function lesson as
    * lesson 18, ahead of every A1 one. Order the array itself. */
   var built = applyMerges(build());
-  built.forEach(function (l) { if (ORDER[l.id] !== undefined) l.order = ORDER[l.id]; });
   var syllabus = buildSyllabus(built);
   var byId = {};
   built.forEach(function (l) { byId[l.id] = l; });
@@ -459,4 +439,10 @@
     .filter(function (l) { return !!l; });
   window.SYLLABUS = syllabus;
   window.SEED_SYLLABUS = SEED;
+  /* Every lesson that EXISTS, ordered or not. GRAMMAR_LESSONS is the course,
+   * so a lesson left out of data/course.js is simply absent from it — which
+   * means the content gate cannot notice the omission by looking there. It
+   * checks this against COURSE instead, and that is the whole safety net for
+   * writing the order down by hand. */
+  window.ALL_LESSONS = built;
 })();

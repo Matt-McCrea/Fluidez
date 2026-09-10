@@ -19,7 +19,7 @@
 const fs = require('fs'), path = require('path');
 global.window = {};
 function load(rel) { (0, eval)(fs.readFileSync(path.join(__dirname, '..', rel), 'utf8')); }
-['data/taxonomy.js', 'data/connectors.js', 'data/strand-lessons.js',
+['data/taxonomy.js', 'data/connectors.js', 'data/strand-lessons.js', 'data/course.js',
  'data/verbs.js', 'data/vocab.js', 'data/idioms.js', 'data/grammar-docs.js', 'data/grammar.js',
  'data/passages.js', 'data/apply.js', 'data/writing.js', 'data/topics.js', 'data/resources.js',
  'js/engine.js', 'js/lessons.js', 'js/checker.js'].forEach(load);
@@ -360,6 +360,51 @@ function checkProbes(l, tag) {
   (window.SEED_SYLLABUS || []).forEach(s =>
     ok(ids.has(s.id) || ids.has(mergedInto[s.id]),
        `syllabus id "${s.id}" has no lesson (and was not merged into one)`));
+
+  /* ---- the course (data/course.js) ---------------------------------------
+   * The teaching order used to be a sort, which guaranteed by construction
+   * that every lesson appeared once and none was unreachable. Writing the
+   * order down trades that guarantee for a readable one, so it has to be
+   * checked here instead: a lesson missing from COURSE is invisible to the
+   * session forever, and a lesson listed twice is taught twice. */
+  const course = window.COURSE || [];
+  ok(course.length > 0, 'course: data/course.js defines no COURSE');
+  /* Check against every lesson that EXISTS, not against GRAMMAR_LESSONS —
+   * GRAMMAR_LESSONS *is* the course, so a lesson dropped from COURSE would
+   * simply be absent from it and the omission would check out clean. */
+  const allLessons = window.ALL_LESSONS || lessons;
+  const allIds = new Set(allLessons.map(l => l.id));
+  const placed = new Map();
+  course.forEach((e, i) => {
+    const kinds = ['lesson', 'verbs', 'practice'].filter(k => e[k] !== undefined);
+    ok(kinds.length === 1, `course[${i}]: needs exactly one of lesson/verbs/practice, has [${kinds}]`);
+    if (e.lesson) {
+      ok(allIds.has(e.lesson), `course[${i}]: no such lesson "${e.lesson}"`);
+      ok(!placed.has(e.lesson), `course[${i}]: "${e.lesson}" is already placed at ${placed.get(e.lesson)}`);
+      placed.set(e.lesson, i);
+    }
+    if (e.verbs) {
+      ok(Array.isArray(e.verbs) && e.verbs.length >= 1, `course[${i}]: empty verb day`);
+      (e.verbs || []).forEach(inf =>
+        ok(!!E.verbByInf(inf), `course[${i}]: verb day names "${inf}", which is not in data/verbs.js`));
+    }
+  });
+  allLessons.forEach(l => ok(placed.has(l.id),
+    `lesson "${l.id}" is in no course entry — nothing would ever teach it`));
+
+  // Bands are slices of the one course, so their starts must ascend and land
+  // on a real entry; anything else silently truncates or overlaps a band.
+  const starts = window.COURSE_BANDS || {};
+  const codes = Object.keys(starts).sort((a, b) => starts[a] - starts[b]);
+  ok(codes.length === (window.LEVELS || []).length,
+     `course: COURSE_BANDS names ${codes.length} bands, taxonomy defines ${(window.LEVELS || []).length}`);
+  codes.forEach((c, i) => {
+    ok(CEFR.has(c), `course: COURSE_BANDS has unknown band "${c}"`);
+    ok(Number.isInteger(starts[c]) && starts[c] >= 0 && starts[c] < course.length,
+       `course: band "${c}" starts at ${starts[c]}, outside the course`);
+    if (i > 0) ok(starts[c] > starts[codes[i - 1]],
+       `course: band "${c}" does not start after "${codes[i - 1]}"`);
+  });
 }
 
 // ---------- passages ---------------------------------------------------------
