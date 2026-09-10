@@ -303,9 +303,15 @@ function checkProbes(l, tag) {
   // the source too would flag every one of them as a duplicate id.
   if ((window.LESSON_MERGED_INTO || {})[l.id]) return;
   if (l.probes === undefined) { ok(!STRICT_TAGS, `${tag}: missing probes`); return; }
-  // A merged lesson carries every source lesson's probes — placement and the
-  // skip check need them all — so its budget scales with how many it merged.
-  const parts = (l.mergedFrom || [l.id]).length;
+  /* A merged lesson carries every source lesson's probes — placement and the
+   * skip check need them all — so its budget scales with how many it merged.
+   * Only the parts that AUTHOR probes count: the generated tense lessons never
+   * had any, by design, because their checks are engine-computed recall items
+   * (the endings, the haber forms). Pairing one with a strand lesson would
+   * otherwise demand six more hand-written probes for a table the engine
+   * already owns. */
+  const authors = new Set((window.STRAND_LESSONS || []).map(s => s.id));
+  const parts = Math.max(1, (l.mergedFrom || [l.id]).filter(id => authors.has(id)).length);
   ok(Array.isArray(l.probes) && l.probes.length >= 3 * parts && l.probes.length <= 6 * parts,
      `${tag}: needs ${3 * parts}-${6 * parts} probes, got ${(l.probes || []).length}`);
   (l.probes || []).forEach((pr, i) => {
@@ -345,8 +351,15 @@ function checkProbes(l, tag) {
       ok(r.front && r.back, `recall "${r.id}": missing front/back`);
     });
   });
+  /* A seed id still has to resolve to something teachable — but "something"
+   * now includes the lesson that absorbed it. Six tenses were being formed
+   * twice (once by the generated ladder lesson, once by a PCIC strand lesson
+   * that also formed them), so the pairs are merged; the ladder half keeps its
+   * seed entry and its level, and LESSON_MERGED_INTO says where it went. */
+  const mergedInto = window.LESSON_MERGED_INTO || {};
   (window.SEED_SYLLABUS || []).forEach(s =>
-    ok(ids.has(s.id), `syllabus id "${s.id}" has no lesson`));
+    ok(ids.has(s.id) || ids.has(mergedInto[s.id]),
+       `syllabus id "${s.id}" has no lesson (and was not merged into one)`));
 }
 
 // ---------- passages ---------------------------------------------------------

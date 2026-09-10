@@ -234,6 +234,64 @@
    * 39 lessons -> 20 days. Other levels are untouched for now; the same table
    * takes their groups when they need them. */
   var MERGES = [
+    /* ---- one tense, one lesson -------------------------------------------
+     * Every tense on the legacy ladder acquired a PCIC twin that also forms it,
+     * so six tenses were taught twice — and half the pairs ran backwards. The
+     * present perfect was built at A2 and built again at B1 day 3; the present
+     * subjunctive at B1 day 17 and again at day 110; the conditional was taught
+     * before the future it derives from, and said so ("next lesson").
+     *
+     * The two halves are worth different things. The ladder lesson is
+     * GENERATED — endings table and recall items straight from the engine, so
+     * they cannot drift — while the strand lesson is hand-written usage: what
+     * the tense is actually for, and where it trips people. Neither is the one
+     * to throw away, so pair them. The head decides where the lesson lands:
+     *   futuro/condicional take the LADDER as head, because SEED order is what
+     *     puts the future before the conditional that borrows its stems;
+     *   the rest take the STRAND lesson, because its level is the honest one —
+     *     the present perfect is A2 whatever the old 1-5 ladder said. */
+    { title: 'El pretérito perfecto: haber + participio',
+      ids: ['gr-preterito-perfecto-a2', 'perfecto'] },
+    { title: 'El imperativo afirmativo: forma y uso',
+      ids: ['gr-imperativo-forma-a2', 'imperativo'] },
+    { title: 'El futuro: forma, predicción y conjetura',
+      ids: ['futuro', 'gr-futuro-imperfecto-b1'] },
+    { title: 'El condicional: forma, cortesía y modestia',
+      ids: ['condicional', 'gr-condicional-simple-b1'] },
+    { title: 'El subjuntivo: cómo se forma y cuándo aparece',
+      ids: ['gr-presente-subjuntivo-b1', 'presubj'] },
+    { title: 'Pretérito pluscuamperfecto: había hablado',
+      ids: ['gr-pluscuamperfecto-b1', 'plusc'] },
+
+    /* ---- one topic, one lesson -------------------------------------------
+     * The PCIC files these as separate inventory subsections, so they arrived
+     * as separate lessons teaching the same thing — twice, usually days apart.
+     * Relative "que" is §7.2 Los relativos AND §15.2 Oraciones subordinadas
+     * adjetivas; both A1 lessons carry a "subject or object of its own clause"
+     * section and both use "la profesora que tengo". */
+    { title: 'El relativo que: una palabra, tres trabajos',
+      ids: ['gr-relativo-que-a1', 'gr-subordinadas-adjetivas-a1'] },
+    { title: 'Los demostrativos: este, ese, aquel — y dónde van',
+      // A1 taught where a demonstrative sits in the phrase; the forms it sits
+      // there in were an A2 lesson. WORKLIST.md files gr-demostrativos-a2
+      // against the A1 spec item, which is the tell: it was always the A1 half.
+      ids: ['gr-demostrativos-distribucion-a1', 'gr-demostrativos-a2'] },
+    { title: 'Comparativos: los tres marcos y los irregulares',
+      ids: ['gr-comparativos-a2', 'gr-comparativo-a2'] },
+    { title: 'Estar de acuerdo — y no estarlo',
+      // The second lesson's entire body said the first one's rule was unchanged.
+      ids: ['fn-estoy-de-acuerdo-b1', 'fn-no-estoy-de-acuerdo-b1'] },
+    { title: 'Pedir ayuda: directa, atenuada y encubierta',
+      // fn-pedir-ayuda-b1 already taught all three levels of directness and
+      // pointed back at fn-ayuda-atenuada-b1 for the middle one.
+      ids: ['fn-pedir-ayuda-b1', 'fn-ayuda-atenuada-b1'] },
+    { title: 'Certeza y falta de certeza: dónde se rompe el indicativo',
+      ids: ['fn-certeza-evidencia-b1', 'fn-falta-certeza-b1'] },
+    { title: 'Dar y pedir una opinión',
+      ids: ['fn-dar-opinion-b1', 'fn-pedir-opinion-b1'] },
+    { title: 'Planes e intenciones: contarlos y preguntarlos',
+      ids: ['fn-expresar-planes-b1', 'fn-preguntar-planes-b1'] },
+
     // notion: 18 -> 9
     { title: 'Dónde están las cosas', ids: ['nt-localizacion-a1', 'nt-posicion-relativa-a1'] },
     { title: 'Ir, venir y dar direcciones', ids: ['nt-movimiento-estabilidad-a1', 'nt-orientacion-direccion-a1'] },
@@ -310,8 +368,8 @@
       var head = parts[0], rest = parts.slice(1);
       var out = {
         id: head.id, strand: head.strand, cefr: head.cefr, level: head.level,
-        theme: head.theme, title: m.title, summary: head.summary,
-        mergedFrom: m.ids.slice(),
+        theme: head.theme, title: m.title, summary: m.summary || head.summary,
+        order: head.order, mergedFrom: m.ids.slice(),
         pcic: [], sections: [], exponents: [], contrasts: [], pitfalls: [],
         examples: [], probes: [], recall: []
       };
@@ -324,6 +382,10 @@
         // Half the recall from each side: eight quick-check items in one
         // sitting is a test, not a check.
         out.recall = concat(out.recall, (p.recall || []).slice(0, 3));
+        // The generated tense lessons carry an engine-built conjugation table.
+        // A merge that drops it would trade the paradigm for the prose, which
+        // is the opposite of the point of pairing them.
+        if (p.conjTabs && !out.conjTabs) out.conjTabs = p.conjTabs;
       });
       // Drop the blocks that stayed empty: the strand gate rejects a block a
       // strand isn't allowed to carry, and an empty [] is still carrying it.
@@ -341,8 +403,17 @@
 
   /* The teaching order, derived from the lessons themselves: level first, then
    * strand (form before the functions that use it, discourse and genre after),
-   * then the seed order for the legacy ladder, then title. A new lesson takes
-   * its place automatically — nothing to maintain by hand. */
+   * then the seed order for the legacy ladder, then an explicit `order`, then
+   * title. A new lesson takes its place automatically — nothing to maintain by
+   * hand.
+   *
+   * `order` exists because the last tiebreaker used to be the title, and for
+   * the ~600 strand lessons the title is the ONLY thing separating them: the
+   * sequence was an artifact of Spanish spelling. That is how "Los posesivos
+   * átonos: dónde van" came to be taught before "Los posesivos: formas" —
+   * where they go, before what they are. Lower sorts earlier; the default 0
+   * leaves alphabetical order in place, which is fine wherever the lessons are
+   * genuinely independent. Set it only where one lesson needs another first. */
   var STRAND_RANK = { grammar: 0, notion: 1, function: 2, discourse: 3, genre: 4 };
   function buildSyllabus(lessons) {
     var seedIdx = {};
@@ -352,17 +423,35 @@
              (STRAND_RANK[a.strand || 'grammar'] || 0) - (STRAND_RANK[b.strand || 'grammar'] || 0) ||
              (seedIdx[a.id] === undefined ? 999 : seedIdx[a.id]) -
              (seedIdx[b.id] === undefined ? 999 : seedIdx[b.id]) ||
+             (a.order || 0) - (b.order || 0) ||
              String(a.title).localeCompare(String(b.title));
     }).map(function (l) {
       return { id: l.id, level: l.level || 1, strand: l.strand || 'grammar', cefr: l.cefr || null };
     });
   }
 
+  /* Lessons that must not be left to alphabetical order. Each is a case where
+   * one lesson is unreadable before another: the forms before the rules about
+   * where the forms go, the paradigm before the lessons that lean on it. */
+  var ORDER = {
+    'gr-posesivos-forma-a1': -2,          // the forms, before anything about them
+    'gr-posesivos-distribucion-a1': -1,
+    'gr-genero-sustantivos-a1': -4,       // gender and number of the noun, before
+    'gr-numero-sustantivos-a1': -3,       // the articles and adjectives that agree
+    'gr-genero-adjetivo-a1': -2,
+    'gr-presente-subjuntivo-b1': -5,      // the mood, before the 30-odd B1
+    'gr-temporales-b1': -4,               // lessons whose rule is "and then it
+    'gr-modalidad-b1': -3,                // switches to the subjunctive"
+    'gr-subordinadas-sustantivas-b1': -3,
+    'gr-imperativo-valores-b1': -2
+  };
+
   /* The session walks GRAMMAR_LESSONS to find the next unstudied lesson, so the
    * ARRAY has to be in teaching order — deriving a separate SYLLABUS list and
    * leaving the array in build order would teach a B2 function lesson as
    * lesson 18, ahead of every A1 one. Order the array itself. */
   var built = applyMerges(build());
+  built.forEach(function (l) { if (ORDER[l.id] !== undefined) l.order = ORDER[l.id]; });
   var syllabus = buildSyllabus(built);
   var byId = {};
   built.forEach(function (l) { byId[l.id] = l; });

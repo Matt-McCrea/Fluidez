@@ -92,9 +92,10 @@ window.GRAMMAR = [
   summary:'What would happen; polite requests and hypotheticals.',
   formation:'Add the conditional endings to the WHOLE infinitive (same endings for all verb types). Same irregular stems as the future.',
   when:[
-    'Hypothetical outcomes: <i>Yo viajaría más si tuviera dinero.</i> — I would travel more if I had money.',
-    'Polite requests: <i>¿Podrías ayudarme?</i> — Could you help me?',
-    'Probability in the past: <i>Serían las cinco cuando llegó.</i>'
+    'Polite requests: <i>¿Podrías ayudarme?</i> — Could you help me? This is what the conditional does most often in speech.',
+    'Softening an opinion: <i>Yo diría que no.</i> — I\'d say no. Less blunt than <i>digo que no</i>.',
+    'Probability in the past: <i>Serían las cinco cuando llegó.</i> — It must have been five when he arrived.',
+    'Hypothetical outcomes: <i>Yo viajaría más si tuviera dinero.</i> — I\'d travel more if I had money. The <i>si</i> half needs the imperfect subjunctive, which has its own lesson; until then, the conditional half stands on its own.'
   ],
   irregulars:[
     'Same irregular stems as the future: <i>tener → tendría</i>, <i>hacer → haría</i>, <i>decir → diría</i>, <i>poder → podría</i>.'
