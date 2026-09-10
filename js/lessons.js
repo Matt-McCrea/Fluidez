@@ -346,6 +346,81 @@
     { title: 'De qué es y cambiarlo por otro', ids: ['nt-cualidad-material-a2', 'nt-cambio-a2'] },
     { title: 'Nacer, morir y las edades', ids: ['nt-existencia-inexistencia-a2', 'nt-edad-vejez-a2'] },
     { title: 'Necesidad y conformidad: hace falta, vale', ids: ['nt-necesidad-obligacion-a2', 'nt-evaluacion-conformidad-a2'] },
+    /* ---- B2: fewer lessons, longer ones -----------------------------------
+     * A B2 learner can hold a conversation. What they do not need is a 65-word
+     * lesson per Plan Curricular inventory line, which is what the B2 function
+     * strand was: 99 of them, the most fragmented band in the app. Remembering
+     * and forgetting alone was five separate days.
+     *
+     * So these merge by TOPIC and the results are long on purpose — six or
+     * seven source lessons in one sitting, with each absorbed lesson becoming
+     * a titled section. That is the right shape at a level where the learner
+     * wants depth in one place rather than a month of thin days. The quick
+     * check is shared out across the parts so a long lesson still ends with a
+     * check rather than an exam.
+     * 91 lessons -> 23. */
+    { title: 'Recordar y olvidar: me acuerdo, me suena, ni idea',
+      ids: ['fn-expresar-recordar-b2', 'fn-preguntar-recordar-b2', 'fn-expresar-no-recordar-general-b2',
+            'fn-no-recuerdo-elaborado-b2', 'fn-no-he-olvidado-b2', 'fn-me-suena-b2'] },
+    { title: 'Acuerdo y desacuerdo: de "sin ninguna duda" a "en absoluto"',
+      ids: ['fn-acuerdo-b2', 'fn-expresar-acuerdo-rotundo-b2', 'fn-expresar-acuerdo-parcial-general-b2',
+            'fn-expresar-desacuerdo-rotundo-b2', 'fn-contraargumento-b2'] },
+    { title: 'Certeza, duda y escepticismo',
+      ids: ['fn-expresar-certeza-b2', 'fn-falta-certeza-b2', 'fn-cuestionar-informacion-b2',
+            'fn-escepticismo-b2'] },
+    { title: 'Saber, no saber y confirmar',
+      ids: ['fn-conocimiento-b2', 'fn-preguntar-conocimiento-b2', 'fn-no-tengo-ni-idea-b2',
+            'fn-pedir-confirmacion-b2', 'fn-confirmar-info-previa-b2'] },
+    { title: 'Permiso y prohibición: pedirlo, darlo, negarlo',
+      ids: ['fn-pedir-permiso-b2', 'fn-dar-permiso-b2', 'fn-denegar-permiso-b2',
+            'fn-preguntar-con-prudencia-b2', 'fn-prohibir-b2', 'fn-rechazar-prohibicion-b2'] },
+    { title: 'Pedir: ayuda, favores y cosas — y responder',
+      ids: ['fn-pedir-ayuda-b2', 'fn-pedir-favor-b2', 'fn-pedir-objetos-b2', 'fn-ofrecerse-b2',
+            'fn-preguntar-encubierta-b2', 'fn-dar-orden-b2', 'fn-responder-orden-b2'] },
+    { title: 'Alegría, placer, afecto y orgullo',
+      ids: ['fn-alegria-satisfaccion-b2', 'fn-placer-diversion-b2', 'fn-afecto-b2',
+            'fn-admiracion-orgullo-b2'] },
+    { title: 'Alivio, esperanza y resignación',
+      ids: ['fn-expresar-alivio-b2', 'fn-esperanza-b2', 'fn-expresar-resignacion-b2'] },
+    { title: 'Tristeza, decepción y arrepentimiento',
+      ids: ['fn-tristeza-afliccion-b2', 'fn-expresar-decepcion-b2', 'fn-expresar-arrepentimiento-b2'] },
+    { title: 'Enfado, hartazgo y aversión',
+      ids: ['fn-enfado-indignacion-b2', 'fn-expresar-hartazgo-b2', 'fn-aversion-b2',
+            'fn-aburrimiento-b2'] },
+    { title: 'Miedo, nervios y vergüenza',
+      ids: ['fn-miedo-ansiedad-b2', 'fn-expresar-nerviosismo-b2', 'fn-verguenza-b2'] },
+    { title: 'Consolar, animar y acompañar',
+      ids: ['fn-empatia-b2', 'fn-tranquilizar-consolar-b2', 'fn-animar-b2'] },
+    { title: 'Deseos, gustos, preferencias y planes',
+      ids: ['fn-deseos-b2', 'fn-preguntar-deseos-b2', 'fn-gustos-intereses-b2', 'fn-preferencia-b2',
+            'fn-planes-intenciones-b2', 'fn-preguntar-planes-b2'] },
+    { title: 'Opinar y valorar: darla, pedirla, matizarla',
+      ids: ['fn-dar-opinion-b2', 'fn-pedir-opinion-b2', 'fn-valorar-b2', 'fn-pedir-valoracion-b2'] },
+    { title: 'Aprobar, desaprobar y reprochar',
+      ids: ['fn-aprobacion-desaprobacion-b2', 'fn-reprochar-b2'] },
+    { title: 'Contar algo: abrir, seguir y cerrar el relato',
+      ids: ['fn-solicitar-comienzo-relato-b2', 'fn-introducir-tema-relato-b2', 'fn-seguir-relato-b2',
+            'fn-concluir-relato-b2'] },
+    { title: 'Manejar el tema: introducirlo, interrumpir, cerrarlo',
+      ids: ['fn-introducir-nuevo-tema-b2', 'fn-interrumpir-b2', 'fn-cerrar-rechazar-tema-b2',
+            'fn-pedir-silencio-continuar-b2', 'fn-destacar-elemento-b2'] },
+    { title: 'Saludar, despedirse y dar la bienvenida',
+      ids: ['fn-saludar-responder-b2', 'fn-despedirse-b2', 'fn-dirigirse-bienvenida-b2',
+            'fn-enviar-saludos-b2'] },
+    { title: 'Agradecer y desear',
+      ids: ['fn-agradecer-b2', 'fn-buenos-deseos-b2'] },
+    { title: 'Al teléfono y "¿cómo va todo?"',
+      ids: ['fn-preguntar-persona-telefono-b2', 'fn-estado-general-cosas-b2'] },
+    { title: 'Proponer, aceptar, rechazar y suponer',
+      ids: ['fn-proponer-sugerir-b2', 'fn-aceptar-propuesta-b2', 'fn-rechazar-propuesta-b2',
+            'fn-invitar-hipotesis-b2'] },
+    { title: 'Disculparse y responder a una disculpa',
+      ids: ['fn-disculparse-b2', 'fn-responder-disculpa-b2'] },
+    { title: 'Aconsejar, advertir y amenazar',
+      ids: ['fn-aconsejar-b2', 'fn-advertir-b2', 'fn-amenazar-b2'] },
+    { title: 'Habilidad: se me da bien, soy un negado',
+      ids: ['fn-habilidad-b2', 'fn-preguntar-habilidad-b2'] },
+
     // discourse: 12 -> 6
     { title: 'Deixis personal y espacial', ids: ['dc-deixis-personal-a2', 'dc-deixis-espacial-a2'] },
     { title: 'Deixis temporal y el hilo del relato', ids: ['dc-deixis-temporal-a2', 'dc-mantenimiento-referente-a2'] },
@@ -379,9 +454,14 @@
         if (i > 0) out.sections.push({ h: p.title, html: p.summary || '' });
         ['pcic', 'sections', 'exponents', 'contrasts', 'pitfalls', 'examples', 'probes']
           .forEach(function (k) { out[k] = concat(out[k], p[k]); });
-        // Half the recall from each side: eight quick-check items in one
-        // sitting is a test, not a check.
-        out.recall = concat(out.recall, (p.recall || []).slice(0, 3));
+        /* Share the quick check out across the parts rather than taking a
+         * fixed slice from each. A B2 topic merge runs to six or seven source
+         * lessons — deliberately, a long lesson is the point up there — and
+         * three items apiece would end it with twenty questions, which is a
+         * test, not a check. Every probe is still carried on `probes`, where
+         * placement and the skip check read them; this is only what gets asked
+         * on the day. */
+        out.recall = concat(out.recall, (p.recall || []).slice(0, Math.max(1, Math.floor(8 / parts.length))));
         // The generated tense lessons carry an engine-built conjugation table.
         // A merge that drops it would trade the paradigm for the prose, which
         // is the opposite of the point of pairing them.

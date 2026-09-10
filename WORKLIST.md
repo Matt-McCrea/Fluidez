@@ -10,6 +10,39 @@ where to find them in `spec/pcic.json`.
 
 Regenerate only with `node tools/worklist.js --force`, which loses all ticks.
 
+## Standing work — not generated, not tickable in one commit
+
+These are directions, not items. `tools/worklist.js --force` does not touch
+this section.
+
+### More translation tasks, everywhere
+
+The app is short of translation across the whole syllabus. `data/writing.js`
+has 485 tasks over five bands and only a fraction are `type:'translate'`;
+`data/passages.js` questions can be `translate` but mostly are not. Translation
+is the one task type that forces a learner to produce a specific structure
+rather than route around it — you cannot answer "translate: I'd have told you
+if I'd known" with vocabulary you happen to remember. Every band wants more of
+them, and the upper bands most: a B2 or C1 lesson should be able to ask for
+three or four, not one.
+
+Applies to `data/writing.js` (`type:'translate'`) and to `translate` questions
+inside `data/passages.js`. Both are already checked by the content gate — a
+model answer must satisfy its own constraints — so the cost is authoring, not
+plumbing.
+
+### B2 and up: fewer lessons, more depth
+
+A B2 learner can already hold a conversation, and does not need a 65-word
+lesson per PCIC inventory line. Merge aggressively by topic and let the merged
+lesson be long: all five "remembering and forgetting" lessons belong in one
+lesson, not five days. The same goes for the notion strand, where a themed
+vocabulary set is better as one substantial lesson than as six thin ones.
+
+Worth building for these: more than one passage per lesson, so a long lesson
+can carry real reading depth. `js/lessonrun.js` and `js/views/comprehend.js`
+currently serve exactly one.
+
 ## A1 — lessons (63/64 done)
 
 ### A1 · grammar (22/22 done)

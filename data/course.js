@@ -421,7 +421,7 @@ window.COURSE = [
   { lesson: 'gr-complementos-modificadores-b1' },       // gram  La chica de los ojos azules, la construcción del edificio
   { lesson: 'fn-tranquilizar-consolar-b1' },            // func  Tranquilizar y consolar
 
-  /* ---- B2 · 252 days · starts at index 380 ------------------------------- */
+  /* ---- B2 · 169 days · starts at index 380 ------------------------------- */
   { lesson: 'gr-que-explicativo-b2' },                  // gram  "Que" explicativo: la coma que añade, no que elige
   { lesson: 'gr-adverbios-enunciacion-b2' },            // gram  Adverbios de enunciación: comentar sobre las propias palab
   { lesson: 'gr-adverbios-frecuencia-topico-b2' },      // gram  Adverbios de frecuencia y el adverbio-tópico
@@ -431,251 +431,168 @@ window.COURSE = [
   { lesson: 'gr-nucleo-verbal-copulativos-b2' },        // gram  Auxiliares, copulativos y pseudocopulativos avanzados
   { lesson: 'gr-complementos-sa-b2' },                  // gram  Complementos del adjetivo: difícil de, interesado en
   { lesson: 'gr-complementos-nominales-b2' },           // gram  Complementos del nombre: ambiguos, no restrictivos, y sus 
-  { lesson: 'fn-aceptar-propuesta-b2' },                // func  Aceptar una propuesta: me encantaría, si no hay más remedi
   { lesson: 'nt-acontecimiento-b2' },                   // noti  Acontecimiento: ocurrir, casualidad, suspender
+  { lesson: 'fn-aconsejar-b2' },                        // func  Aconsejar, advertir y amenazar
   { practice: true },
-  { lesson: 'fn-aconsejar-b2' },                        // func  Aconsejar: si yo fuera tú, lo mejor sería que
   { lesson: 'gr-concordancia-sn-verbo-b2' },            // gram  Concordancia del sujeto con el verbo: los casos difíciles
-  { lesson: 'fn-advertir-b2' },                         // func  Advertir: ¡ojo con...!, no te fíes de
   { lesson: 'nt-adecuacion-b2' },                       // noti  Adecuación: adaptarse, apropiado
-  { lesson: 'fn-agradecer-b2' },                        // func  Agradecer: no sé cómo agradecértelo
-  { practice: true },
   { lesson: 'dc-atenuacion-b2' },                       // disc  Cortesía atenuadora en B2: desplazar la persona, aplazar e
   { lesson: 'gn-argumentativa-b2' },                    // genr  Argumentar en B2: tesis, fuente, contraargumentación, rese
-  { lesson: 'fn-amenazar-b2' },                         // func  Amenazar: si no + presente, que sea la última vez
   { lesson: 'nt-anticipacion-b2' },                     // noti  Anticipación: adelantar, con tiempo, por adelantado
-  { lesson: 'fn-animar-b2' },                           // func  Animar: no tengas miedo de, no te rindas, atrévete
   { practice: true },
+  { lesson: 'fn-agradecer-b2' },                        // func  Agradecer y desear
   { lesson: 'gr-relativo-donde-b2' },                   // gram  Donde como relativo: lugares sin repetir "en el que"
-  { lesson: 'fn-cerrar-rechazar-tema-b2' },             // func  Cerrar una digresión y rechazar un tema
   { lesson: 'nt-audibilidad-audicion-b2' },             // noti  Audibilidad: sonar, a gritos, a todo volumen
-  { lesson: 'fn-concluir-relato-b2' },                  // func  Concluir el relato: y bueno..., total que..., en fin...
-  { lesson: 'fn-confirmar-info-previa-b2' },            // func  Confirmar información previa: claro que sí
-  { practice: true },
+  { lesson: 'fn-dar-informacion-b2' },                  // func  Dar información: corregir con matiz, modo y finalidad
   { lesson: 'nt-aumento-disminucion-b2' },              // noti  Aumento y disminución: crecer, duplicarse, cada vez más
-  { lesson: 'fn-cuestionar-informacion-b2' },           // func  Cuestionar la información: dudar en voz alta
+  { practice: true },
   { lesson: 'gr-articulo-definido-valores-b2' },        // gram  El artículo definido: valor genérico y "lo" sustantivador
   { lesson: 'nt-cantidad-numerica-b2' },                // noti  Cantidad numérica: cifras, índices, "número + de"
-  { lesson: 'fn-dar-informacion-b2' },                  // func  Dar información: corregir con matiz, modo y finalidad
-  { practice: true },
   { lesson: 'dc-perspectiva-temporal-b2' },             // disc  Desplazar el tiempo verbal: presente, futuro de probabilid
   { lesson: 'gn-descriptiva-lugares-b2' },              // genr  Describir lugares en B2: de la planta a la anécdota
-  { lesson: 'fn-dar-permiso-b2' },                      // func  Dar permiso: estás en tu casa, siempre y cuando
-  { lesson: 'nt-cantidad-relativa-b2' },                // noti  Cantidad relativa: aproximar sin comprometerse
-  { lesson: 'fn-dar-opinion-b2' },                      // func  Dar una opinión: a mi modo de ver, considero que, yo diría
+  { lesson: 'fn-dar-opinion-b2' },                      // func  Opinar y valorar: darla, pedirla, matizarla
   { practice: true },
-  { lesson: 'fn-dar-orden-b2' },                        // func  Dar una orden: primera persona del plural para suavizar
+  { lesson: 'nt-cantidad-relativa-b2' },                // noti  Cantidad relativa: aproximar sin comprometerse
   { lesson: 'gr-articulo-indefinido-valores-b2' },      // gram  El artículo indefinido: restricciones sutiles
   { lesson: 'nt-capacidad-competencia-b2' },            // noti  Capacidad y competencia: dársele bien, ser capaz de
-  { lesson: 'fn-denegar-permiso-b2' },                  // func  Denegar permiso: me temo que no, no va a ser posible
-  { lesson: 'fn-despedirse-b2' },                       // func  Despedirse: fórmulas escritas, del "atentamente" al "cordi
-  { practice: true },
+  { lesson: 'fn-disculparse-b2' },                      // func  Disculparse y responder a una disculpa
   { lesson: 'nt-certeza-b2' },                          // noti  Certeza e incertidumbre: el vocabulario, más allá del modo
-  { lesson: 'fn-destacar-elemento-b2' },                // func  Destacar un elemento: hay que tener en cuenta que
-  { lesson: 'fn-dirigirse-bienvenida-b2' },             // func  Dirigirse a alguien y dar la bienvenida
+  { practice: true },
   { lesson: 'gr-condicional-compuesto-b2' },            // gram  El condicional compuesto: habría + participio
   { lesson: 'nt-color-b2' },                            // noti  Color: tonos compuestos, ser de color, en blanco y negro
-  { practice: true },
-  { lesson: 'fn-disculparse-b2' },                      // func  Disculparse: siento + lo de/infinitivo compuesto/que
+  { lesson: 'fn-expresar-certeza-b2' },                 // func  Certeza, duda y escepticismo
   { lesson: 'dc-entonacion-b2' },                       // disc  Entonación y alargamientos: lo que dice el tono
   { lesson: 'gn-descriptiva-objetos-b2' },              // genr  Describir objetos en B2: del tomate al desarrollo formal
-  { lesson: 'fn-enviar-saludos-b2' },                   // func  Enviar y transmitir saludos: dale un abrazo de mi parte
-  { lesson: 'nt-consistencia-resistencia-b2' },         // noti  Consistencia y resistencia: denso, frágil, resistente a
   { practice: true },
-  { lesson: 'fn-expresar-acuerdo-parcial-general-b2' }, // func  Estar de acuerdo con matices: parcial, en general, con eso
-  { lesson: 'fn-expresar-certeza-b2' },                 // func  Estoy absolutamente seguro/convencido: certeza total
+  { lesson: 'nt-consistencia-resistencia-b2' },         // noti  Consistencia y resistencia: denso, frágil, resistente a
+  { lesson: 'fn-acuerdo-b2' },                          // func  Acuerdo y desacuerdo: de "sin ninguna duda" a "en absoluto
   { lesson: 'gr-futuro-perfecto-b2' },                  // gram  El futuro perfecto: habré + participio
   { lesson: 'nt-correccion-precision-b2' },             // noti  Corrección y precisión: fallo, exacto, verlo claro
-  { lesson: 'fn-aburrimiento-b2' },                     // func  Expresar aburrimiento: me aburre que, qué rollo
-  { practice: true },
-  { lesson: 'fn-acuerdo-b2' },                          // func  Expresar acuerdo
   { lesson: 'nt-cualidad-general-b2' },                 // noti  Cualidad general: propiedades, categorías, composición
-  { lesson: 'fn-expresar-acuerdo-rotundo-b2' },         // func  Expresar acuerdo rotundo: sin ninguna duda
-  { lesson: 'fn-admiracion-orgullo-b2' },               // func  Expresar admiración y orgullo: qué + SN + tan + adjetivo
-  { lesson: 'nt-disponibilidad-b2' },                   // noti  Disponibilidad: agotarse, contar con, estar listo
   { practice: true },
+  { lesson: 'fn-alegria-satisfaccion-b2' },             // func  Alegría, placer, afecto y orgullo
+  { lesson: 'nt-disponibilidad-b2' },                   // noti  Disponibilidad: agotarse, contar con, estar listo
   { lesson: 'gr-imperativo-valores-b2' },               // gram  El imperativo: valores más allá de la orden
-  { lesson: 'fn-afecto-b2' },                           // func  Expresar afecto: te echo de menos, me importas
   { lesson: 'dc-focalizacion-b2' },                     // disc  Focalizar en B2: reduplicación del pronombre y ecos
   { lesson: 'gn-descriptiva-personas-b2' },             // genr  Describir personas en B2: anclaje, aspectualización, puest
-  { lesson: 'fn-alegria-satisfaccion-b2' },             // func  Expresar alegría: me alegro de que, me pone de buen humor
   { practice: true },
   { lesson: 'nt-distancia-b2' },                        // noti  Distancia: acercar(se), alejar(se), a distancia
-  { lesson: 'fn-expresar-alivio-b2' },                  // func  Expresar alivio: ¡menos mal!
-  { lesson: 'fn-aprobacion-desaprobacion-b2' },         // func  Expresar aprobación y desaprobación: no deberías haberlo h
+  { lesson: 'fn-expresar-alivio-b2' },                  // func  Alivio, esperanza y resignación
   { lesson: 'nt-edad-vejez-b2' },                       // noti  Edad y vejez: recién + participio, fresco/podrido, estrena
   { lesson: 'gr-impsubj-valores-b2' },                  // gram  El imperfecto de subjuntivo: más allá del "si tuviera"
+  { lesson: 'fn-aprobacion-desaprobacion-b2' },         // func  Aprobar, desaprobar y reprochar
   { practice: true },
-  { lesson: 'fn-expresar-arrepentimiento-b2' },         // func  Expresar arrepentimiento: es una pena que...
   { lesson: 'nt-peso-b2' },                             // noti  El peso: tonelada, carga, pesarse
-  { lesson: 'fn-aversion-b2' },                         // func  Expresar aversión: detesto que, me da asco
-  { lesson: 'fn-conocimiento-b2' },                     // func  Expresar conocimiento: me he enterado de que...
   { lesson: 'nt-evaluacion-general-b2' },               // noti  Evaluación general: salirle/irle algo a alguien, valer la 
-  { practice: true },
-  { lesson: 'fn-expresar-decepcion-b2' },               // func  Expresar decepción: ¡qué decepción!
   { lesson: 'gr-orden-interrogativos-b2' },             // gram  El orden en las preguntas: lo que puede moverse
   { lesson: 'dc-intensificacion-b2' },                  // disc  Intensificar en B2: prefijos, verbos performativos, alarga
   { lesson: 'gn-expositiva-b2' },                       // genr  Exponer un tema en B2: presentar, desarrollar, concluir
-  { lesson: 'fn-expresar-desacuerdo-rotundo-b2' },      // func  Expresar desacuerdo rotundo: en absoluto
   { practice: true },
+  { lesson: 'fn-conocimiento-b2' },                     // func  Saber, no saber y confirmar
   { lesson: 'nt-existencia-b2' },                       // noti  Existencia e inexistencia: crear, eliminar, provocar
-  { lesson: 'fn-deseos-b2' },                           // func  Expresar deseos: ojalá, me hace ilusión, sueño con
-  { lesson: 'fn-empatia-b2' },                          // func  Expresar empatía: sé cómo te sientes, a mí me pasa lo mism
   { lesson: 'nt-exito-logro-b2' },                      // noti  Éxito y logro: triunfar, fracasar, llegar a ser
-  { lesson: 'fn-enfado-indignacion-b2' },               // func  Expresar enfado e indignación: me indigna, no aguanto que
-  { practice: true },
   { lesson: 'gr-perfsubj-valores-b2' },                 // gram  El pretérito perfecto de subjuntivo: haya + participio
-  { lesson: 'fn-esperanza-b2' },                        // func  Expresar esperanza: eso espero, ojalá
-  { lesson: 'nt-expresion-verbal-b2' },                 // noti  Expresión verbal: variar el verbo de habla más allá de "de
-  { lesson: 'fn-falta-certeza-b2' },                    // func  Expresar falta de certeza y evidencia: tengo mis dudas sob
-  { lesson: 'fn-falta-obligacion-b2' },                 // func  Expresar falta de obligación: no hace falta que...
+  { lesson: 'fn-deseos-b2' },                           // func  Deseos, gustos, preferencias y planes
   { practice: true },
+  { lesson: 'nt-expresion-verbal-b2' },                 // noti  Expresión verbal: variar el verbo de habla más allá de "de
   { lesson: 'nt-facilidad-b2' },                        // noti  Facilidad y dificultad: complejo, facilitar, con facilidad
-  { lesson: 'fn-gustos-intereses-b2' },                 // func  Expresar gustos e intereses: entusiasmar, fascinar, apasio
+  { lesson: 'fn-empatia-b2' },                          // func  Consolar, animar y acompañar
   { lesson: 'gr-pluscuamsubj-b2' },                     // gram  El pretérito pluscuamperfecto de subjuntivo: hubiera/hubie
   { lesson: 'dc-deixis-b2' },                           // disc  La deixis en B2: pronombre enfático, "se" mitigador
+  { practice: true },
   { lesson: 'gn-generos-escritos-b2' },                 // genr  Géneros escritos en B2: cartas al director, informes, biog
-  { practice: true },
-  { lesson: 'fn-habilidad-b2' },                        // func  Expresar habilidad: negado para, se me da bien, tener faci
   { lesson: 'nt-formas-figuras-b2' },                   // noti  Formas y figuras: geometría cotidiana
-  { lesson: 'fn-expresar-hartazgo-b2' },                // func  Expresar hartazgo: ¡ya está bien!
-  { lesson: 'fn-miedo-ansiedad-b2' },                   // func  Expresar miedo y preocupación: me preocupa que, tengo mied
+  { lesson: 'fn-enfado-indignacion-b2' },               // func  Enfado, hartazgo y aversión
   { lesson: 'nt-generalidad-especificidad-b2' },        // noti  Generalidad y especificidad: concretar, particular, en gen
-  { practice: true },
-  { lesson: 'fn-expresar-nerviosismo-b2' },             // func  Expresar nerviosismo: me pone nervioso, pierdo la pacienci
   { lesson: 'gr-pronombre-personal-b2' },               // gram  El pronombre personal: se accidental y la jerarquía de clí
-  { lesson: 'fn-placer-diversion-b2' },                 // func  Expresar placer y diversión: disfrutar de/con, estar a gus
-  { lesson: 'nt-grado-b2' },                            // noti  Grado: intensificadores más allá de "muy"
-  { lesson: 'fn-planes-intenciones-b2' },               // func  Expresar planes: propósito es..., y planes frustrados
   { practice: true },
-  { lesson: 'fn-posibilidad-b2' },                      // func  Expresar posibilidad: el futuro y condicional de conjetura
+  { lesson: 'nt-grado-b2' },                            // noti  Grado: intensificadores más allá de "muy"
+  { lesson: 'fn-falta-obligacion-b2' },                 // func  Expresar falta de obligación: no hace falta que...
   { lesson: 'nt-humedad-sequedad-b2' },                 // noti  Humedad y sequedad: empapado, transpirar, en seco
   { lesson: 'dc-valores-ilocutivos-b2' },               // disc  Lo que hace una pregunta en B2: dudas, ecos y retóricas
-  { lesson: 'fn-preferencia-b2' },                      // func  Expresar preferencia: prefiero que + subjuntivo + a que
   { lesson: 'gn-generos-orales-b2' },                   // genr  Géneros orales en B2: qué debes entender, qué debes produc
   { practice: true },
   { lesson: 'gr-el-que-relativos-b2' },                 // gram  El que, la que, los que, las que: el relativo tras preposi
   { lesson: 'nt-importancia-normalidad-b2' },           // noti  Importancia y normalidad: dar lo mismo, por norma
-  { lesson: 'fn-expresar-no-recordar-general-b2' },     // func  Expresar que no se recuerda: tres formas generales
-  { lesson: 'fn-expresar-recordar-b2' },                // func  Expresar que se recuerda: recuerdo, me acuerdo de
+  { lesson: 'fn-habilidad-b2' },                        // func  Habilidad: se me da bien, soy un negado
   { lesson: 'nt-interes-b2' },                          // noti  Interés: motivación, aburrir, centro de interés
-  { practice: true },
-  { lesson: 'fn-expresar-resignacion-b2' },             // func  Expresar resignación: no hay nada que hacer
   { lesson: 'gr-formas-no-personales-b2' },             // gram  Infinitivo, gerundio y participio: valores avanzados
-  { lesson: 'fn-sensaciones-fisicas-b2' },              // func  Expresar sensaciones físicas: pasar hambre/frío, me agota
-  { lesson: 'nt-limpieza-b2' },                         // noti  Limpieza: mancha, ensuciar, limpiar a fondo
-  { lesson: 'fn-sorpresa-extraneza-b2' },               // func  Expresar sorpresa: qué raro que, no puede ser
   { practice: true },
-  { lesson: 'fn-tristeza-afliccion-b2' },               // func  Expresar tristeza: me da pena que, lo paso fatal
+  { lesson: 'nt-limpieza-b2' },                         // noti  Limpieza: mancha, ensuciar, limpiar a fondo
+  { lesson: 'fn-miedo-ansiedad-b2' },                   // func  Miedo, nervios y vergüenza
   { lesson: 'nt-localizacion-b2' },                     // noti  Localización: situado, quedar, hallarse
-  { lesson: 'fn-verguenza-b2' },                        // func  Expresar vergüenza: me avergüenzo de, ponerse rojo
   { lesson: 'dc-mantenimiento-referente-b2' },          // disc  Mantener el referente: elipsis, sinónimos, hiperónimos
   { lesson: 'gn-carta-solicitud-trabajo-b2' },          // genr  La carta de solicitud de trabajo
   { practice: true },
   { lesson: 'gr-exclamativos-b2' },                     // gram  Los exclamativos: qué, cómo, cuánto y quién
-  { lesson: 'fn-buenos-deseos-b2' },                    // func  Formular buenos deseos: crucemos los dedos, que te pongas 
+  { lesson: 'fn-posibilidad-b2' },                      // func  Expresar posibilidad: el futuro y condicional de conjetura
   { lesson: 'nt-materia-b2' },                          // noti  Materia: estar fabricado con, contener un ingrediente
-  { lesson: 'fn-identificar-b2' },                      // func  Identificar: el/los que, lo de, se trata de
-  { lesson: 'fn-seguir-relato-b2' },                    // func  Indicar que se sigue el relato con interés: ya me lo imagi
-  { practice: true },
   { lesson: 'nt-movimiento-estabilidad-b2' },           // noti  Movimiento y estabilidad: un verbo por cada fase
-  { lesson: 'fn-interrumpir-b2' },                      // func  Interrumpir: antes de que se me olvide, perdona que te int
-  { lesson: 'gr-posesivos-b2' },                        // gram  Los posesivos: forma tónica, fórmulas fijas
-  { lesson: 'fn-introducir-tema-relato-b2' },           // func  Introducir el tema del relato: ¿sabes qué?, ¿te has entera
-  { lesson: 'nt-necesidad-contingencia-b2' },           // noti  Necesidad y azar: imprescindible, inevitablemente, por cas
+  { lesson: 'fn-expresar-recordar-b2' },                // func  Recordar y olvidar: me acuerdo, me suena, ni idea
   { practice: true },
-  { lesson: 'fn-introducir-nuevo-tema-b2' },            // func  Introducir un nuevo tema: por cierto, hablando de...
-  { lesson: 'fn-invitar-hipotesis-b2' },                // func  Invitar a formular una hipótesis: ¿qué harías si...?
+  { lesson: 'gr-posesivos-b2' },                        // gram  Los posesivos: forma tónica, fórmulas fijas
+  { lesson: 'nt-necesidad-contingencia-b2' },           // noti  Necesidad y azar: imprescindible, inevitablemente, por cas
   { lesson: 'nt-orden-b2' },                            // noti  Orden: puesto, colocado/descolocado, por orden
-  { lesson: 'fn-me-suena-b2' },                         // func  Me suena: reconocimiento parcial
+  { lesson: 'fn-sensaciones-fisicas-b2' },              // func  Expresar sensaciones físicas: pasar hambre/frío, me agota
   { lesson: 'dc-marcadores-discurso-b2' },              // disc  Marcadores del discurso B2: contraargumentativos y reformu
   { practice: true },
   { lesson: 'gn-composicion-argumentativa-b2' },        // genr  La composición argumentativa (B2)
   { lesson: 'gr-nombres-escuetos-b2' },                 // gram  Nombres escuetos: sin artículo, con reglas propias
-  { lesson: 'fn-escepticismo-b2' },                     // func  Mostrar escepticismo: si tú lo dices, no lo veo tan claro
   { lesson: 'nt-orientacion-direccion-b2' },            // noti  Orientación y dirección: dirigirse a, empujar/tirar, a dom
-  { lesson: 'fn-no-he-olvidado-b2' },                   // func  No he olvidado: insistir en que se recuerda
-  { practice: true },
-  { lesson: 'fn-no-recuerdo-elaborado-b2' },            // func  No recuerdo / no me acuerdo de: con infinitivo, que y preg
   { lesson: 'nt-origen-b2' },                           // noti  Origen: raíz, procedencia, proceder de
-  { lesson: 'fn-no-tengo-ni-idea-b2' },                 // func  No tengo ni idea: desconocimiento enfático
+  { lesson: 'fn-sorpresa-extraneza-b2' },               // func  Expresar sorpresa: qué raro que, no puede ser
+  { practice: true },
   { lesson: 'gr-cuantificadores-numerales-cualquier-b2' },// gram  Numerales partitivos/multiplicativos y cualquier/cualquier
   { lesson: 'nt-permanencia-b2' },                      // noti  Permanencia: estable, fijo, sobrevivir
-  { practice: true },
-  { lesson: 'fn-ofrecerse-b2' },                        // func  Ofrecerse: déjame que te ayude, permita que le ayude
-  { lesson: 'fn-pedir-ayuda-b2' },                      // func  Pedir ayuda: échame una mano, solicito tu colaboración
+  { lesson: 'fn-tristeza-afliccion-b2' },               // func  Tristeza, decepción y arrepentimiento
   { lesson: 'nt-posicion-absoluta-b2' },                // noti  Posición absoluta: tumbado, de rodillas, del revés
-  { lesson: 'fn-pedir-confirmacion-b2' },               // func  Pedir confirmación: ¿es verdad que...?
   { lesson: 'dc-negacion-b2' },                         // disc  Matices de la negación: reiterada, enfática, artificiosa
   { practice: true },
   { lesson: 'gn-llamada-transaccional-b2' },            // genr  La llamada telefónica transaccional (B2): una cadena más l
-  { lesson: 'fn-pedir-objetos-b2' },                    // func  Pedir objetos: tengo que pedirte una cosa...
   { lesson: 'gr-subordinadas-lugar-b2' },               // gram  Oraciones subordinadas de lugar: donde con indicativo o su
   { lesson: 'nt-posicion-relativa-b2' },                // noti  Posición relativa: delantero/trasero, a lo largo de, al ot
-  { lesson: 'fn-pedir-opinion-b2' },                    // func  Pedir opinión: qué opinas de que + subjuntivo
-  { practice: true },
-  { lesson: 'fn-pedir-permiso-b2' },                    // func  Pedir permiso: ¿te importaría que + subjuntivo?
+  { lesson: 'fn-identificar-b2' },                      // func  Identificar: el/los que, lo de, se trata de
   { lesson: 'nt-presencia-ausencia-b2' },               // noti  Presencia y ausencia: asistir, faltar, a la vista
-  { lesson: 'fn-pedir-silencio-continuar-b2' },         // func  Pedir silencio y continuar: como decía...
-  { lesson: 'fn-pedir-favor-b2' },                      // func  Pedir un favor: de forma encubierta
+  { practice: true },
   { lesson: 'nt-proporcion-b2' },                       // noti  Proporción: partir, repartir, la sexta parte
-  { practice: true },
   { lesson: 'gr-subordinadas-modo-b2' },                // gram  Oraciones subordinadas de modo: como y según
-  { lesson: 'fn-pedir-valoracion-b2' },                 // func  Pedir valoración: ¿qué tal estuvo?, ¿cómo lo ves?
-  { lesson: 'fn-preguntar-con-prudencia-b2' },          // func  Preguntar con prudencia: pedir permiso para preguntar
+  { lesson: 'fn-introducir-nuevo-tema-b2' },            // func  Manejar el tema: introducirlo, interrumpir, cerrarlo
   { lesson: 'nt-realidad-ficcion-b2' },                 // noti  Realidad y ficción: inventar, simular, cumplirse
-  { lesson: 'fn-preguntar-encubierta-b2' },             // func  Preguntar de forma encubierta: sin preguntar directamente
-  { practice: true },
   { lesson: 'dc-significados-interpretados-b2' },       // disc  Metáforas fijas: comparaciones con animales y verbos de ca
+  { practice: true },
   { lesson: 'gn-narrativa-b2' },                        // genr  La macrofunción narrativa en B2: las cinco etapas del rela
-  { lesson: 'fn-preguntar-deseos-b2' },                 // func  Preguntar por deseos: ¿te habría gustado que...?
+  { lesson: 'fn-pedir-ayuda-b2' },                      // func  Pedir: ayuda, favores y cosas — y responder
   { lesson: 'nt-referencias-generales-b2' },            // noti  Referencias temporales: dedicar tiempo, a mediados de, hac
   { lesson: 'gr-numero-sustantivos-b2' },               // gram  Plurales irregulares: invariables, tónicos y léxicos
-  { practice: true },
-  { lesson: 'fn-preguntar-conocimiento-b2' },           // func  Preguntar por el conocimiento: ¿te has enterado de que...?
-  { lesson: 'fn-estado-general-cosas-b2' },             // func  Preguntar por el estado general: ¿cómo va lo de...?
   { lesson: 'nt-reflexion-conocimiento-b2' },           // noti  Reflexión y conocimiento: ocurrírsele, ser consciente de, 
-  { lesson: 'fn-preguntar-habilidad-b2' },              // func  Preguntar por la habilidad: ¿se te da bien...?
-  { lesson: 'fn-preguntar-planes-b2' },                 // func  Preguntar por planes: ¿qué tienes en mente?, ¿tienes previ
   { practice: true },
+  { lesson: 'fn-pedir-permiso-b2' },                    // func  Permiso y prohibición: pedirlo, darlo, negarlo
   { lesson: 'nt-repeticion-b2' },                       // noti  Repetición: rutina, ciclo, una y otra vez
   { lesson: 'gr-quien-quienes-b2' },                    // gram  Quien / quienes: solo para personas
-  { lesson: 'fn-preguntar-persona-telefono-b2' },       // func  Preguntar por una persona: no se retire, ahora le paso
-  { lesson: 'fn-preguntar-recordar-b2' },               // func  Preguntar si se recuerda: ¿te acuerdas de que...?
   { lesson: 'nt-sabor-olor-b2' },                       // noti  Sabor y olor: soso, agridulce, oler a
+  { lesson: 'fn-preguntar-persona-telefono-b2' },       // func  Al teléfono y "¿cómo va todo?"
   { practice: true },
-  { lesson: 'fn-contraargumento-b2' },                  // func  Presentar un contraargumento: sí, pero...
   { lesson: 'dc-cita-b2' },                             // disc  Procedimientos de cita: estilo indirecto y citas encubiert
   { lesson: 'gn-presentacion-publica-b2' },             // genr  Una presentación pública (B2)
-  { lesson: 'fn-prohibir-b2' },                         // func  Prohibir: está prohibido que, te prohíbo que
   { lesson: 'nt-simultaneidad-b2' },                    // noti  Simultaneidad: mientras tanto, a la vez, coincidir
-  { practice: true },
   { lesson: 'gr-subordinadas-relativas-tipos-b2' },     // gram  Relativas: especificativas, explicativas y sus restriccion
-  { lesson: 'fn-proponer-sugerir-b2' },                 // func  Proponer y sugerir: habría que, estaría bien que
   { lesson: 'nt-localizacion-tiempo-b2' },              // noti  Situar en el tiempo: llevar sin, antiguamente, a corto/lar
-  { lesson: 'fn-rechazar-prohibicion-b2' },             // func  Rechazar una prohibición: pues claro que, no me da la gana
-  { lesson: 'fn-rechazar-propuesta-b2' },               // func  Rechazar una propuesta: preferiría + contrapropuesta
   { practice: true },
+  { lesson: 'fn-proponer-sugerir-b2' },                 // func  Proponer, aceptar, rechazar y suponer
   { lesson: 'nt-textura-acabado-b2' },                  // noti  Textura y acabado: áspero, arrugado, una mano de pintura
-  { lesson: 'fn-reprochar-b2' },                        // func  Reprochar: ya deberías haberlo solucionado
   { lesson: 'gr-subordinadas-sustantivas-b2' },         // gram  Subordinadas sustantivas: el verbo principal decide el mod
-  { lesson: 'fn-responder-disculpa-b2' },               // func  Responder a una disculpa: con reproche o sin él
+  { lesson: 'fn-saludar-responder-b2' },                // func  Saludar, despedirse y dar la bienvenida
   { lesson: 'nt-utilidad-uso-b2' },                     // noti  Utilidad y uso: utilizar/emplear, fuera de servicio
   { practice: true },
-  { lesson: 'fn-responder-orden-b2' },                  // func  Responder a una petición: sí, pero solamente si...
   { lesson: 'dc-rematizacion-tematizacion-b2' },        // disc  Rematización y tematización en B2: ecuacionales y "lo de"
   { lesson: 'gn-reclamacion-b2' },                      // genr  La carta de reclamación
-  { lesson: 'fn-saludar-responder-b2' },                // func  Saludar y responder: vocal alargada, cuánto tiempo
   { lesson: 'nt-valor-precio-b2' },                     // noti  Valor y precio: invertir, estar en oferta, ganar/perder va
-  { practice: true },
-  { lesson: 'fn-solicitar-comienzo-relato-b2' },        // func  Solicitar que comience un relato: pues verás..., te cuento
   { lesson: 'gr-complemento-preposicional-regido-b2' }, // gram  Verbos con preposición fija: decidirse a, contar con
-  { lesson: 'fn-tranquilizar-consolar-b2' },            // func  Tranquilizar y consolar: ya ha pasado, todo tiene solución
-  { lesson: 'nt-visibilidad-vision-b2' },               // noti  Visibilidad y visión: a simple vista, distinguir, de lejos
-  { lesson: 'fn-valorar-b2' },                          // func  Valorar: lo veo/lo encuentro + adjetivo
+  { lesson: 'fn-solicitar-comienzo-relato-b2' },        // func  Contar algo: abrir, seguir y cerrar el relato
   { practice: true },
+  { lesson: 'nt-visibilidad-vision-b2' },               // noti  Visibilidad y visión: a simple vista, distinguir, de lejos
 
-  /* ---- C1 · 229 days · starts at index 632 ------------------------------- */
+  /* ---- C1 · 229 days · starts at index 549 ------------------------------- */
   { lesson: 'gr-clases-adjetivos-c1' },                 // gram  Cuyo, los adjetivos de color compuestos y el relacional qu
   { lesson: 'gr-articulo-definido-c1' },                // gram  El artículo definido en C1: valor enfático y sustantivador
   { lesson: 'gr-articulo-indefinido-c1' },              // gram  El artículo indefinido en C1: convertir un nombre propio e
@@ -908,4 +825,4 @@ window.COURSE = [
 ];
 
 // Where each band starts. A band is a slice of one course, not a pool.
-window.COURSE_BANDS = {"A1":0,"A2":86,"B1":191,"B2":380,"C1":632};
+window.COURSE_BANDS = {"A1":0,"A2":86,"B1":191,"B2":380,"C1":549};
