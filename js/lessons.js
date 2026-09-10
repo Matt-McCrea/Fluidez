@@ -162,15 +162,40 @@
      * "the article (el/la + adjective)" is a fair comprehension check and a
      * terrible review item: it is a question about grammar in English, with a
      * prose answer nobody will retype. Those are marked srs:false — still asked
-     * once, after the lesson, never enrolled into the deck. */
+     * once, after the lesson, never enrolled into the deck.
+     *
+     * `probe` carries the ORIGINAL question through. Flattening an mcq to
+     * {front, back} threw its options away, and the quick check renders a bare
+     * text input, so all 1,467 of them became "type this exact string from
+     * nothing": the deictic/anaphoric probe below asks you to produce "dos días
+     * después" with no way to know that was the target. Keep the shape; let the
+     * view ask it the way it was written. */
     function metalinguistic(front) {
-      var f = String(front || '');
-      return /^(what|which|why|how|when|name the|in which)\b/i.test(f.trim()) && !/[áéíóúñ¿]/.test(f);
+      var f = String(front || '').trim();
+      // The English form, and the same question asked in Spanish — which the
+      // old check let through, because it required the front to carry no
+      // accents: 412 cards of "¿Qué diferencia hay entre X e Y?" with a
+      // paragraph for an answer went into the deck as typed recall.
+      return /^(what|which|why|how|when|name the|in which)\b/i.test(f) ||
+             /^¿(qué|cuál|cuáles|por qué|cómo|cuándo|quién|puede|cuántos?)\b/i.test(f);
+    }
+    /* Whatever it asks, an answer you could not type back weeks later is not a
+     * card. Review always types a lesson card (js/views/review.js resolves
+     * `fixed` to mode 'type'), so a five-word answer is an automatic miss —
+     * 1,015 of them, running up to 27 words. */
+    function reproducible(back) {
+      return String(back || '').trim().split(/\s+/).length <= 3;
     }
     out.recall = l.probes.map(function (p) {
-      if (p.kind === 'mcq') return { id: p.id, front: p.q, back: p.options[p.answer] };
-      if (p.kind === 'cloze') return { id: p.id, front: p.text, back: p.accept[0] };
-      return { id: p.id, front: p.front, back: p.back, srs: !metalinguistic(p.front) };
+      var card = p.kind === 'mcq'
+            ? { id: p.id, front: p.q, back: p.options[p.answer],
+                probe: { kind: 'mcq', options: p.options, answer: p.answer } }
+        : p.kind === 'cloze'
+            ? { id: p.id, front: p.text, back: p.accept[0],
+                probe: { kind: 'cloze', accept: p.accept } }
+            : { id: p.id, front: p.front, back: p.back, probe: { kind: 'recall' } };
+      card.srs = !metalinguistic(card.front) && reproducible(card.back);
+      return card;
     });
     return out;
   }

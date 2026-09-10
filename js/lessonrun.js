@@ -37,57 +37,100 @@ window.LessonRun = (function () {
     return 'practice';
   }
 
-  // ---- tense-focused content pickers --------------------------------------
-  // `rng` is seeded (reproducible) the FIRST time a lesson is taken, and plain
-  // Math.random on every retake, so repeats don't surface the identical set.
-  function clozeForTense(tk, rng) {
-    var concept = E.CONCEPTS[tk];
-    var pool = (window.APPLY_ITEMS || []).filter(function (it) {
-      return it.type === 'cloze' && (concept ? concept.matchesCloze(it) : it.tense === tk);
-    });
-    return UI.sample(pool, 6, rng);
+  // ---- lesson content pickers ----------------------------------------------
+  /* A lesson's id used to be the ONLY selector for its content — `it.tense ===
+   * id` for cloze, an analysed verb form for passages. That resolves for the 13
+   * generated tense lessons and the 5 concept lessons and for nothing else:
+   * every PCIC strand lesson (681 of 699) has an id like `gr-condicionales-a2`,
+   * which matches no tense, no concept and no cloze item. Those lessons served
+   * no passage, no cloze, and a synthesised write task that read "using the
+   * undefined" — `E.TENSE_LABEL[id]` on an id that is not a tense — carrying a
+   * constraint no answer could ever satisfy.
+   *
+   * So: keep the tense-aligned pool where the lesson IS about a tense, and
+   * otherwise select on what a strand lesson actually carries — its level and
+   * its theme. Same "aligned, else level-appropriate" rule the daily session
+   * already uses (see sampleAligned/preferAligned in js/session.js).
+   *
+   * `rng` is seeded (reproducible) the FIRST time a lesson is taken, and plain
+   * Math.random on every retake, so repeats don't surface the identical set. */
+  function tenseFocused(lesson) { return !!(E.TENSE_LABEL[lesson.id] || E.CONCEPTS[lesson.id]); }
+
+  function atLevel(arr, level) {
+    var out = arr.filter(function (x) { return (x.level || 1) <= level; });
+    return out.length ? out : arr;          // a hard item beats a blank stage
   }
-  function usesTense(task, tk) {
-    var concept = E.CONCEPTS[tk];
-    if (concept) return concept.matchesConstraints(task.constraints);
-    return (task.constraints || []).some(function (c) {
-      return (c.type === 'anyVerbInTense' || c.type === 'verbFormAny') && c.tense === tk;
-    });
+  function preferTheme(arr, theme) {
+    if (!theme) return arr;
+    var t = arr.filter(function (x) { return x.theme === theme; });
+    return t.length ? t : arr;
   }
-  function writesForTense(tk, lesson, rng) {
-    var out = [];
+  /* Closest level wins. "At or below" alone would let a C1 lesson draw an A1
+   * text, which is technically in range and useless as input — and a level-2
+   * lesson draw the level-1 pool, which is four times bigger and so wins on
+   * volume every time. Take the highest level available and only widen
+   * downwards while the pool is too thin to vary. */
+  function nearestLevel(arr) {
+    if (!arr.length) return arr;
+    var top = arr.reduce(function (m, x) { return Math.max(m, x.level || 1); }, 0);
+    for (var floor = top; floor >= 1; floor--) {
+      var out = arr.filter(function (x) { return (x.level || 1) >= floor; });
+      if (out.length >= 3) return out;
+    }
+    return arr;
+  }
+  function levelPool(arr, lesson) {
+    return nearestLevel(preferTheme(atLevel(arr, lesson.level || 1), lesson.theme));
+  }
+
+  function clozeForLesson(lesson, rng) {
+    var concept = E.CONCEPTS[lesson.id];
+    var all = (window.APPLY_ITEMS || []).filter(function (it) { return it.type === 'cloze'; });
+    if (tenseFocused(lesson)) {
+      var aligned = all.filter(function (it) {
+        return concept ? concept.matchesCloze(it) : it.tense === lesson.id;
+      });
+      if (aligned.length) return UI.sample(aligned, 6, rng);
+    }
+    // apply items carry no theme, so a strand lesson selects on level alone
+    return UI.sample(nearestLevel(atLevel(all, lesson.level || 1)), 6, rng);
+  }
+
+  function writesForLesson(lesson, rng) {
+    var concept = E.CONCEPTS[lesson.id];
+    var all = [];
     (window.WRITING_TASKS || []).forEach(function (t) {
-      if ((t.type === 'write' || t.type === 'translate' || t.type === 'paragraph') && usesTense(t, tk)) out.push(t);
+      if (t.type === 'write' || t.type === 'translate' || t.type === 'paragraph') all.push(t);
     });
     (window.TOPICS || []).forEach(function (top) {
-      (top.prompts || []).forEach(function (pr) { if (usesTense(pr, tk)) out.push(pr); });
+      (top.prompts || []).forEach(function (pr) { all.push(pr); });
     });
-    if (!out.length) {
-      var concept = E.CONCEPTS[tk];
-      if (concept) {
-        out = concept.fallbackWrites();
-      } else {                               // synthesise one, seeded with example models from the lesson
-        var models = (lesson.examples || []).filter(function (ex) {
-          return E.analyzeSentence(ex.es).verbs.some(function (v) { return v.analyses.some(function (a) { return a.tense === tk; }); });
-        }).map(function (ex) { return ex.es; }).slice(0, 1);
-        out.push({ prompt: 'Write two or three sentences of your own using the ' + E.TENSE_LABEL[tk] + '.',
-          hint: 'Use the ' + E.TENSE_LABEL[tk] + ' at least once.',
-          constraints: [{ type: 'anyVerbInTense', tense: tk }, { type: 'minWords', n: 8 }], models: models });
-      }
+    if (tenseFocused(lesson)) {
+      var aligned = all.filter(function (t) {
+        if (concept) return concept.matchesConstraints(t.constraints);
+        return (t.constraints || []).some(function (c) {
+          return (c.type === 'anyVerbInTense' || c.type === 'verbFormAny') && c.tense === lesson.id;
+        });
+      });
+      if (aligned.length) return UI.sample(aligned, 2, rng);
+      if (concept) return UI.sample(concept.fallbackWrites(), 2, rng);
     }
-    return UI.sample(out, 2, rng);
+    return UI.sample(levelPool(all, lesson), 2, rng);
   }
-  function passageForTense(tk, level, rng) {
+
+  function passageForLesson(lesson, level, rng) {
     var ps = window.PASSAGES || [];
-    var concept = E.CONCEPTS[tk];
-    function uses(p) {
-      if (concept) return concept.matchesText(p.text);
-      var a = E.analyzeSentence(p.text);
-      return a.verbs.some(function (v) { return v.analyses.some(function (x) { return x.tense === tk; }); }) ||
-             a.compounds.some(function (c) { return c.parts.some(function (x) { return x.tense === tk; }); });
+    var concept = E.CONCEPTS[lesson.id];
+    if (tenseFocused(lesson)) {
+      var aligned = ps.filter(function (p) {
+        if (concept) return concept.matchesText(p.text);
+        var a = E.analyzeSentence(p.text);
+        return a.verbs.some(function (v) { return v.analyses.some(function (x) { return x.tense === lesson.id; }); }) ||
+               a.compounds.some(function (c) { return c.parts.some(function (x) { return x.tense === lesson.id; }); });
+      });
+      if (aligned.length) return UI.pick(atLevel(aligned, level), rng);
     }
-    return UI.pick(ps.filter(function (p) { return (p.level || 1) <= level && uses(p); }), rng) ||
-           UI.pick(ps.filter(uses), rng) || null;
+    return UI.pick(levelPool(ps, lesson), rng);
   }
 
   // ---- verb-group content pickers ------------------------------------------
@@ -160,11 +203,10 @@ window.LessonRun = (function () {
 
     var seq = [window.StageLearn];
     if (lesson) {
-      var tk = lesson.id;
       ctx.level = lesson.level || 1;
-      ctx.passage = passageForTense(tk, ctx.level, rng);
-      ctx.applyItems = clozeForTense(tk, rng);
-      ctx.writeTasks = writesForTense(tk, lesson, rng);
+      ctx.passage = passageForLesson(lesson, ctx.level, rng);
+      ctx.applyItems = clozeForLesson(lesson, rng);
+      ctx.writeTasks = writesForLesson(lesson, rng);
     } else if (focus.type === 'verbs') {
       ctx.level = 99;
       ctx.passage = passageForVerbGroup(focus.verbs, rng);

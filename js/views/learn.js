@@ -145,7 +145,10 @@ window.StageLearn = (function () {
     var l = ctx.lesson;
     if (!l) { done(); return; }
     var wrap = fillLesson(UI.el('div', 'panel lesson'), l);
-    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, (l.recall || []).filter(function (r) { return r.srs !== false; }), 'grammar', done); }));
+    /* Every probe gets asked. `srs:false` marks the ones that must not join the
+     * review deck, not ones to skip — filtering here meant a comprehension
+     * check written for the end of the lesson was silently dropped instead. */
+    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, l.recall || [], 'grammar', done); }));
     host.appendChild(wrap);
   }
 
@@ -205,18 +208,62 @@ window.StageLearn = (function () {
 
     function show() {
       if (i >= items.length) {
-        items.forEach(function (r) { S.enrol(r.id); });
+        // srs:false items are comprehension checks, not review cards — asked
+        // once, never enrolled, so they cannot come back weeks later as a miss
+        var kept = items.filter(function (r) { return r.srs !== false; });
+        kept.forEach(function (r) { S.enrol(r.id); });
         UI.clear(form);
-        form.appendChild(UI.el('p', 'feedback good', '¡Hecho! These will come back in your reviews.'));
+        form.appendChild(UI.el('p', 'feedback good', kept.length
+          ? '¡Hecho! ' + kept.length + (kept.length === 1 ? ' of these joins' : ' of these join') + ' your reviews.'
+          : '¡Hecho!'));
         form.appendChild(UI.nextBtn('Continuar →', done));
         return;
       }
       var it = items[i];
       UI.clear(form);
       form.appendChild(UI.el('div', 'card-front small', it.front));
+      var fb = UI.el('div', 'feedback');
+
+      function next(good) {
+        if (it.srs !== false) { S.enrol(it.id); if (!good) S.grade(it.id, false); }
+        i++; show();
+      }
+      function logMiss() {
+        if (window.ErrorLog) window.ErrorLog.record({   // log for the weak-spots view
+          id: it.id, front: it.front, back: it.back, kind: kind || 'grammar', source: 'learn', reviewable: false });
+      }
+
+      /* A probe is asked the way it was written. An mcq that has lost its
+       * options is not a harder question, it is an unanswerable one. */
+      if (it.probe && it.probe.kind === 'mcq') {
+        var opts = UI.el('div', 'mcq-opts');
+        var answered = false;
+        (it.probe.options || []).forEach(function (opt, oi) {
+          var b = UI.el('button', 'mcq-btn', opt); b.type = 'button';
+          b.addEventListener('click', function () {
+            if (answered) return;
+            answered = true;
+            var right = oi === it.probe.answer;
+            b.classList.add(right ? 'right' : 'wrong');
+            if (!right) {
+              logMiss();
+              [].forEach.call(opts.children, function (c, ci) { if (ci === it.probe.answer) c.classList.add('right'); });
+              fb.textContent = 'Not quite'; fb.className = 'feedback bad';
+              form.appendChild(UI.nextBtn('Next →', function () { next(false); }));
+            } else {
+              fb.textContent = '¡Correcto!'; fb.className = 'feedback good';
+              setTimeout(function () { next(true); }, 450);
+            }
+          });
+          opts.appendChild(b);
+        });
+        form.appendChild(opts);
+        form.appendChild(fb);
+        return;
+      }
+
       var input = UI.el('input', 'answer-input');
       input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false;
-      var fb = UI.el('div', 'feedback');
       var reveal = UI.el('button', 'ghost-btn', 'Reveal'); reveal.type = 'button';
       var revealed = false;
       form.appendChild(input);
@@ -225,18 +272,14 @@ window.StageLearn = (function () {
       form.appendChild(reveal);
       input.focus();
 
-      // srs:false items are comprehension checks, not review cards — ask once,
-      // never enrol, so they cannot come back weeks later as a "mistake"
-      function next(good) {
-        if (it.srs !== false) { S.enrol(it.id); if (!good) S.grade(it.id, false); }
-        i++; show();
-      }
+      // a cloze names every wording it will take; plain recall has one answer
+      var accepted = (it.probe && it.probe.kind === 'cloze' && it.probe.accept) || it.back;
 
       input.addEventListener('keydown', function (e) {
         if (e.key !== 'Enter') return;
         e.preventDefault();
         if (revealed) { next(false); return; }
-        var r = C.checkExact(input.value, it.back, { meaning: it.kind !== 'grammar' });
+        var r = C.checkExact(input.value, accepted, { meaning: it.kind !== 'grammar' });
         if (r.pass) { fb.textContent = '¡Correcto!'; fb.className = 'feedback good'; setTimeout(function () { next(true); }, 300); }
         else { fb.textContent = r.near ? 'Nearly — accents' : 'Not quite'; fb.className = 'feedback bad'; }
       });
@@ -244,8 +287,7 @@ window.StageLearn = (function () {
         if (revealed) { next(false); return; }
         revealed = true; fb.textContent = it.back; fb.className = 'feedback reveal';
         reveal.textContent = 'Next →';
-        if (window.ErrorLog) window.ErrorLog.record({   // already SRS; log for the weak-spots view
-          id: it.id, front: it.front, back: it.back, kind: kind || 'grammar', source: 'learn', reviewable: false });
+        logMiss();
       });
     }
     show();
