@@ -30,8 +30,8 @@ window.WriteSpace = (function () {
   function render(host, back) {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, 'Escribir'));
-    wrap.appendChild(UI.el('p', 'muted', 'The part most learners skip. Write freely, or take a prompt — either way you get live feedback, and your entries are saved to your journal.'));
+    wrap.appendChild(UI.el('h1', null, UI.t('Escribir', 'Writing')));
+    wrap.appendChild(UI.el('p', 'muted', 'The part most learners skip. Take a prompt or write freely — the checklist updates as you type, and everything is saved.'));
 
     // prompt selector: free + the paragraph/write tasks
     var tasks = (window.WRITING_TASKS || []).filter(function (t) { return t.type === 'paragraph' || t.type === 'write'; });
@@ -101,7 +101,7 @@ window.WriteSpace = (function () {
     ta.addEventListener('input', renderCheck);
 
     // ---- journal ----
-    wrap.appendChild(UI.el('h3', null, 'Tu diario'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Tu diario', 'Your journal')));
     var journal = UI.el('div', 'journal-list');
     wrap.appendChild(journal);
     function renderJournal() {

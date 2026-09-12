@@ -104,7 +104,14 @@ window.StageReview = (function () {
     if (pr.orderedVocab) {
       all.sort(function (a, b) { return (a.rank == null ? 500 : a.rank) - (b.rank == null ? 500 : b.rank) || (a.idx || 0) - (b.idx || 0); });
     }
-    var batch = S.batch(all, P.reviewCap(), pr.newPerDay, !pr.orderedVocab);
+    /* A "4 min" quick review has to actually be four minutes, so it takes the
+     * most-overdue slice rather than the whole daily cap. SRS.batch reschedules
+     * whatever it leaves behind, so nothing is lost — it comes round again. */
+    var cap = P.reviewCap();
+    var fresh = pr.newPerDay;
+    if (ctx && ctx.mode === 'rapido') { cap = Math.min(cap, 10); fresh = 0; }
+    else if (ctx && ctx.mode === 'corto') { cap = Math.min(cap, 15); }
+    var batch = S.batch(all, cap, fresh, !pr.orderedVocab);
     batch.forEach(function (it) { S.enrol(it.id); });
 
     // recognition distractors: other English glosses of the same kind
@@ -116,7 +123,9 @@ window.StageReview = (function () {
     if (!queue.length) {
       var empty = UI.el('div', 'panel');
       empty.appendChild(UI.el('h2', null, 'Nothing due today'));
-      empty.appendChild(UI.el('p', 'muted', 'Your review queue is clear — new items are added as you learn. On to today\'s lesson.'));
+      empty.appendChild(UI.el('p', 'muted', ctx && ctx.mode === 'rapido'
+        ? 'Your review queue is clear. New items are added as you learn.'
+        : 'Your review queue is clear — new items are added as you learn. On to today\'s lesson.'));
       empty.appendChild(UI.nextBtn('Continuar →', function () { ctx.results.review = { seen: 0, correct: 0 }; done(); }));
       host.appendChild(empty); return;
     }

@@ -207,6 +207,30 @@ window.Profile = (function () {
       var c = p.vocabCats;
       return !c || c.indexOf(w.cat) !== -1;
     },
+    /* Screen headings and section labels in English until B1.
+     *
+     * The app names its furniture in Spanish — Repasar, Tu curso, Puntos
+     * débiles — on the theory that a learner meets those words dozens of times
+     * a day and picks them up for free. That holds from B1, where the learner
+     * can already read them. It does not hold at A1, where someone three days
+     * in has to decode the interface before they can use it, and every guess
+     * they get wrong is friction with no teaching in it.
+     *
+     * Buttons and the tab bar stay Spanish at every level: they are short,
+     * paired with an icon, and in the same place every time, so they teach
+     * themselves without ever standing between the learner and the content.
+     *
+     * term('Repasar', 'Review') -> 'Review' at A1/A2, 'Repasar' from B1. */
+    spanishChrome: function () {
+      var p = PROFILES[current];
+      return !!(p && ['B1', 'B2', 'C1'].indexOf(p.cefr) !== -1);
+    },
+    term: function (es, en) {
+      var p = PROFILES[current];
+      var spanish = !!(p && ['B1', 'B2', 'C1'].indexOf(p.cefr) !== -1);
+      return spanish ? es : (en || es);
+    },
+
     reviewCap: function () { return capFor(current); },
     capFor: capFor,
     setCap: function (name, n) { if (!PROFILES[name]) return; var o = loadCaps(); o[name] = Math.max(1, Math.round(n)); saveCaps(o); },

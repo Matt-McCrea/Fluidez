@@ -82,7 +82,7 @@ window.Drills = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     var head = UI.el('div', 'stage-head');
-    head.appendChild(UI.el('span', 'eyebrow', 'Conjugación'));
+    head.appendChild(UI.el('span', 'eyebrow', UI.t('Conjugación', 'Conjugation')));
     var exitB = UI.el('button', 'ghost-btn small', '✕ salir'); exitB.type = 'button'; exitB.style.marginTop = '0';
     exitB.addEventListener('click', backToTab);
     head.appendChild(exitB);
@@ -201,7 +201,7 @@ window.Drills = (function () {
     if ((window.IDIOMS || []).length) contentChip('Expresiones', function () { runFlash(host, buildFlashDeck('idioms'), 'Flashcards · Expresiones'); });
     wrap.appendChild(chips);
 
-    wrap.appendChild(UI.el('h3', null, 'Conjugación por tiempo'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Conjugación por tiempo', 'Conjugation by tense')));
     var tchips = UI.el('div', 'chip-row');
     tenseKeys().forEach(function (tk) {
       var c = UI.el('button', 'topic-chip', E.TENSE_LABEL[tk]); c.type = 'button';

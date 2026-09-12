@@ -98,7 +98,9 @@ window.StageApply = (function () {
       ctx.results.apply = { correct: correct, total: total };
       UI.clear(body);
       body.appendChild(UI.el('h2', null, 'Aplicar: ' + correct + ' / ' + total));
-      body.appendChild(UI.el('p', 'muted', 'Choosing the form from the sentence — not from a label — is what makes conjugation stick.'));
+      body.appendChild(UI.el('p', 'muted', correct === total
+        ? 'Every one of those came from reading the sentence, not a table.'
+        : 'The sentence carries the answer — the time words, the subject, the mood.'));
       body.appendChild(UI.nextBtn('Continuar →', done));
     }
 

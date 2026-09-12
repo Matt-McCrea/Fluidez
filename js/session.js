@@ -10,10 +10,43 @@ window.Session = (function () {
   var UI = window.UI;
   var PKEY = 'fluidez.progress';
 
-  // Ordered stages (each module exposes { key, label, icon, run(host, ctx, done) }).
-  function stages() {
-    return [window.StageReview, window.StageLearn, window.StageComprehend, window.StageApply, window.StageProduce];
+  /* Ordered stages (each module exposes { key, label, icon, run(host, ctx, done) }).
+   *
+   * Session lengths are SUBSETS of the same five stages — there is no second
+   * code path, and a learner who never touches the short forms sees exactly
+   * what they always saw. `larga` runs the same five but is handed more to do
+   * (see buildContext), rather than bolting on a sixth stage that would have
+   * to invent content of its own. */
+  var MODES = {
+    rapido: { key: 'rapido', label: 'Repaso rápido', labelEn: 'Quick review',       mins: 'unos 4 min', minsEn: 'about 4 min',
+              blurb: 'Only what is due today',
+              keys: ['review'] },
+    corto:  { key: 'corto',  label: 'Repaso y práctica', labelEn: 'Review and practice', mins: 'unos 10 min', minsEn: 'about 10 min',
+              blurb: 'Review, then grammar in context',
+              keys: ['review', 'apply'] },
+    diaria: { key: 'diaria', label: 'Sesión diaria', labelEn: 'Daily session',       mins: 'unos 15 min', minsEn: 'about 15 min',
+              blurb: 'The five stages, start to finish',
+              keys: ['review', 'learn', 'comprehend', 'apply', 'produce'] },
+    larga:  { key: 'larga',  label: 'Sesión larga', labelEn: 'Long session',         mins: 'unos 40 min', minsEn: 'about 40 min',
+              blurb: 'The same session, with more to read and write',
+              keys: ['review', 'learn', 'comprehend', 'apply', 'produce'] }
+  };
+  var mode = 'diaria';
+
+  function modeDef() { return MODES[mode] || MODES.diaria; }
+  function stageByKey() {
+    return { review: window.StageReview, learn: window.StageLearn,
+             comprehend: window.StageComprehend, apply: window.StageApply,
+             produce: window.StageProduce };
   }
+  function stages() {
+    var all = stageByKey();
+    return modeDef().keys.map(function (k) { return all[k]; })
+      .filter(function (st) { return !!st; });
+  }
+
+  // Headings in English until B1 — see Profile.term.
+  function T(es, en) { return window.UI.t(es, en); }
 
   function dayNumber() {
     return Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
@@ -115,7 +148,13 @@ window.Session = (function () {
     if (window.Perf) return window.Perf.mark('session build', buildContextInner);
     return buildContextInner();
   }
-  function buildContextInner() {
+
+  /* Which lesson today is, and where it sits in the course.
+   *
+   * Split out of buildContext so the home screen can name today's work without
+   * also sampling a passage, six cloze items and five writing tasks — Inicio
+   * re-renders on every tab switch, and that sampling is the expensive half. */
+  function pickFocus() {
     var day = dayNumber();
     var pr = window.Profile ? window.Profile.params() : { name: 'standard', unlockAll: false, produceStyle: 'full' };
     var prog = loadProg();
@@ -155,10 +194,30 @@ window.Session = (function () {
       level = lesson ? (lesson.level || 1) : (pr.maxGate || 1);
       focus = lesson ? { type: 'grammar', id: lesson.id } : { type: 'practice' };
       if (pr.unlockAll) level = 99;
+      /* B1 and up do not walk a day counter — they take the next unstudied
+       * lesson — so dayIndex stayed null and the home card showed no unit at
+       * all for three of the five bands. The course knows where the lesson
+       * sits; look it up rather than leaving the learner without the goal the
+       * lesson is meant to serve. */
+      if (lesson && window.COURSE_DAYS) {
+        var days = window.COURSE_DAYS;
+        for (var k = 0; k < days.length; k++) {
+          if (days[k].lesson === lesson.id) { dayIndex = k; focus.unit = days[k].unit || null; break; }
+        }
+      }
     }
     // Never offer content above the level you are studying: a B1 learner should
     // not meet C1 passages just because the lesson ladder ran ahead.
     if (pr.maxGate) level = Math.min(level, pr.maxGate);
+    return { day: day, pr: pr, prog: prog, studied: studied,
+             focus: focus, lesson: lesson, level: level, dayIndex: dayIndex };
+  }
+
+  function buildContextInner() {
+    var f = pickFocus();
+    var day = f.day, pr = f.pr, studied = f.studied;
+    var focus = f.focus, lesson = f.lesson, level = f.level, dayIndex = f.dayIndex;
+
     function atLevel(arr) { return arr.filter(function (x) { return (x.level || 1) <= level; }); }
 
     var passages = atLevel(window.PASSAGES || []);
@@ -179,20 +238,36 @@ window.Session = (function () {
     var trans = writes.filter(function (t) { return t.type === 'translate'; });
     var frees = writes.filter(function (t) { return t.type === 'write'; });
     var paras = writes.filter(function (t) { return t.type === 'paragraph'; });
+    // A long session is the same session with more of it — not extra stages.
+    var big = mode === 'larga';
     var produce;
     if (pr.produceStyle === 'guided') {
-      produce = [].concat(sample(builds, 1, rng)).concat(sample(preferAligned(trans, focus, writeMatchesFocus), 1, rng));
+      produce = [].concat(sample(builds, 1, rng))
+        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), big ? 2 : 1, rng));
     } else {
       produce = []
         .concat(sample(builds, 1, rng))
-        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), 1, rng))
-        .concat(sample(preferAligned(frees, focus, writeMatchesFocus), 2, rng))
+        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), big ? 2 : 1, rng))
+        .concat(sample(preferAligned(frees, focus, writeMatchesFocus), big ? 3 : 2, rng))
         .concat(level >= 2 ? sample(preferAligned(paras, focus, writeMatchesFocus), 1, rng) : []);
     }
 
-    // Story prefers a passage that USES today's focus; cloze prefers items in
-    // today's tense/verbs — topped up with level-appropriate items to fill out.
-    var storyPool = passages.filter(function (p) { return passageUsesFocus(p, focus); });
+    /* Which passage to read. Three tiers, because the fallback used to be "any
+     * passage at this level" and that put a reading about a final exam on day
+     * one of "Meet someone" — the learner's very first session, and nothing
+     * about it connected to the unit they had just been taught.
+     *
+     * 1. a passage that actually USES today's grammar/verbs/vocabulary
+     * 2. failing that, one on the same theme as today's lesson
+     * 3. failing that, anything at this level — and the stage says so, rather
+     *    than presenting it as though it followed on. */
+    var aligned = passages.filter(function (x) { return passageUsesFocus(x, focus); });
+    var themed = [];
+    if (!aligned.length && lesson && lesson.theme) {
+      themed = passages.filter(function (x) { return x.theme === lesson.theme; });
+    }
+    var storyPool = aligned.length ? aligned : (themed.length ? themed : passages);
+    var storyTier = aligned.length ? 'focus' : (themed.length ? 'theme' : 'level');
 
     return {
       day: day,
@@ -202,8 +277,10 @@ window.Session = (function () {
       focus: focus,
       dateLabel: new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' }),
       lesson: lesson,
+      mode: mode,
       passage: pick(storyPool.length ? storyPool : passages, rng),
-      applyItems: sampleAligned(apply, focus, 6, clozeMatchesFocus, rng),
+      passageTier: storyTier,
+      applyItems: sampleAligned(apply, focus, big ? 12 : (mode === 'corto' ? 4 : 6), clozeMatchesFocus, rng),
       writeTasks: produce,
       results: {}
     };
@@ -261,73 +338,59 @@ window.Session = (function () {
     bar.style.width = Math.round(100 * done / total) + '%';
   }
 
-  function renderIntro() {
-    UI.clear(host);
-    var p = loadProg();
-    var wrap = UI.el('div', 'panel intro');
-    wrap.appendChild(UI.el('div', 'eyebrow', 'Tu sesión de hoy'));
-    wrap.appendChild(UI.el('h1', null, ctx.dateLabel));
-    wrap.appendChild(UI.el('p', 'muted', 'A short, complete workout for your Spanish — review, a grammar lesson, reading, applying it in context, and writing your own. About 15–20 minutes.'));
-    if (p.streak) wrap.appendChild(UI.el('div', 'streak-badge', '🔥 ' + p.streak + '-day streak'));
-
-    /* The unit this day belongs to, with its goal and how far through it is.
-     * 63 units now, and without this the learner sees a lesson title and has
-     * no way to tell what it is part of or how much of it is left. */
-    var u = unitLabel(ctx);
-    if (u) {
-      var card = UI.el('div', 'unit-card');
-      card.appendChild(UI.el('div', 'unit-eyebrow',
-        'Unidad' + (u.day ? ' · día ' + u.day + ' de ' + u.of : '')));
-      card.appendChild(UI.el('div', 'unit-title', u.title));
-      if (u.goal) card.appendChild(UI.el('div', 'unit-goal', u.goal));
-      if (u.day) {
-        var bar = UI.el('div', 'unit-bar');
-        var fill = UI.el('div', 'unit-bar-fill');
-        fill.style.width = Math.round(100 * u.day / u.of) + '%';
-        bar.appendChild(fill); card.appendChild(bar);
-      }
-      wrap.appendChild(card);
+  /* One line describing what a stage will be, for the home card's stage strip.
+   * Derived from the stage key rather than a parallel hardcoded list, so a
+   * session that runs four stages never advertises five. */
+  function stageBlurb(key, c) {
+    if (key === 'review')     return 'Review what is due, and meet a few new words';
+    if (key === 'learn')      return focusLabel(c);
+    if (key === 'comprehend') return c.passage ? '\u201c' + c.passage.title + '\u201d' : 'Read and answer';
+    if (key === 'apply')      return 'Use the grammar in real sentences';
+    if (key === 'produce')    return 'Write some Spanish of your own';
+    return '';
+  }
+  function stageIcon(key, c) {
+    if (key === 'learn') {
+      var t = c && c.focus ? c.focus.type : 'grammar';
+      return t === 'vocab' ? '\ud83d\udcc7' : t === 'verbs' ? '\ud83d\udd24' : t === 'practice' ? '\ud83d\udd01' : '\ud83d\udcd6';
     }
+    var m = { review: '\ud83d\udd01', comprehend: '\ud83d\udc42', apply: '\ud83e\udde9', produce: '\u270d\ufe0f' };
+    return m[key] || '\u2022';
+  }
 
-    var learnIco = ctx.focus && ctx.focus.type === 'vocab' ? '📇'
-      : (ctx.focus && ctx.focus.type === 'verbs' ? '🔤'
-      : (ctx.focus && ctx.focus.type === 'practice' ? '🔁' : '📖'));
-    var list = UI.el('ol', 'stage-list');
-    var meta = [
-      ['🔁', 'Repasar', 'Review what\'s due (and meet a few new words)'],
-      [learnIco, 'Aprender', focusLabel(ctx)],
-      ['👂', 'Comprender', ctx.passage ? '“' + ctx.passage.title + '”' : 'Read & understand'],
-      ['🧩', 'Aplicar', 'Use what you know in real sentences'],
-      ['✍️', 'Producir', 'Write your own Spanish']
-    ];
-    meta.forEach(function (m) {
-      var li = UI.el('li', 'stage-row');
-      li.appendChild(UI.el('span', 'stage-ico', m[0]));
-      li.appendChild(UI.el('span', 'stage-name', '<b>' + m[1] + '</b><br><span class="muted">' + m[2] + '</span>'));
-      list.appendChild(li);
-    });
-    wrap.appendChild(list);
-    wrap.appendChild(UI.nextBtn('Empezar →', function () { idx = 0; runStage(); }));
+  /* What today is, without building a whole session for it.
+   * The home screen used to say "Sesión diaria · Review · lesson · reading ·
+   * apply · write" every single day — the same words whatever the day held.
+   * Everything needed to say something true was already computed one screen
+   * later, on an intro card the learner had to commit to a session to see. */
+  function today() {
+    var f = pickFocus();
+    var c = { focus: f.focus, lesson: f.lesson, dayIndex: f.dayIndex, passage: null };
+    return {
+      unit: unitLabel(c),
+      focus: f.focus,
+      lessonTitle: focusLabel(c),
+      canSkipLesson: !f.pr.usesCurriculum && f.focus && f.focus.type === 'grammar' && !!f.lesson,
+      lessonId: f.lesson ? f.lesson.id : null,
+      stages: modeDef().keys.map(function (k) {
+        return { key: k, icon: stageIcon(k, c), label: stageLabel(k) };
+      })
+    };
+  }
+  var STAGE_LABEL_ES = { review: 'Repasar', learn: 'Aprender', comprehend: 'Comprender',
+                         apply: 'Aplicar', produce: 'Producir' };
+  var STAGE_LABEL_EN = { review: 'Review', learn: 'Learn', comprehend: 'Understand',
+                         apply: 'Apply', produce: 'Produce' };
+  function stageLabel(k) { return T(STAGE_LABEL_ES[k], STAGE_LABEL_EN[k]); }
 
-    // Refresher: a rusty ex-speaker often already knows today's grammar
-    // lesson cold — let them mark it done without taking it, so tomorrow's
-    // session (or an immediate re-render, if they want to skip a run of
-    // them) picks the next one in the syllabus instead.
-    var pr = window.Profile ? window.Profile.params() : { name: 'standard' };
-    if (!pr.usesCurriculum && ctx.focus && ctx.focus.type === 'grammar' && ctx.lesson) {
-      var skipB = UI.el('button', 'ghost-btn', 'Saltar esta lección →'); skipB.type = 'button';
-      skipB.addEventListener('click', function () {
-        var pp = loadProg();
-        pp.studied = pp.studied || {}; pp.studied[ctx.lesson.id] = 1;
-        saveProg(pp);
-        ctx = buildContext();
-        renderIntro();
-      });
-      wrap.appendChild(skipB);
-    }
-
-    host.appendChild(wrap);
-    setProgress(0, 1);
+  // Mark today's lesson studied without taking it — a rusty ex-speaker often
+  // already knows it cold. Offered on the home card, not buried in a session.
+  function skipLesson() {
+    var f = pickFocus();
+    if (!f.lesson) return;
+    var pp = loadProg();
+    pp.studied = pp.studied || {}; pp.studied[f.lesson.id] = 1;
+    saveProg(pp);
   }
 
   function pauseToShell() {
@@ -341,10 +404,10 @@ window.Session = (function () {
     UI.clear(host);
     var stage = all[idx];
     var head = UI.el('div', 'stage-head');
-    head.appendChild(UI.el('span', 'eyebrow', stage.icon + '  ' + stage.label));
+    head.appendChild(UI.el('span', 'eyebrow', stage.icon + '  ' + stageLabel(stage.key)));
     var right = UI.el('span', 'stage-count');
-    right.appendChild(UI.el('span', null, 'Paso ' + (idx + 1) + ' / ' + all.length + '  '));
-    var exitB = UI.el('button', 'ghost-btn small', '✕ pausar'); exitB.type = 'button'; exitB.style.marginTop = '0';
+    right.appendChild(UI.el('span', null, T('Paso', 'Step') + ' ' + (idx + 1) + ' / ' + all.length + '  '));
+    var exitB = UI.el('button', 'ghost-btn small', '✕ ' + T('pausar', 'pause')); exitB.type = 'button'; exitB.style.marginTop = '0';
     exitB.addEventListener('click', pauseToShell);
     right.appendChild(exitB);
     head.appendChild(right);
@@ -373,15 +436,16 @@ window.Session = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel intro complete');
     wrap.appendChild(UI.el('div', 'big-check', '✓'));
-    wrap.appendChild(UI.el('h1', null, '¡Sesión completa!'));
-    wrap.appendChild(UI.el('div', 'streak-badge', '🔥 ' + (p.streak || 1) + '-day streak'));
+    wrap.appendChild(UI.el('h1', null, T('Sesión terminada', 'Session done')));
+    wrap.appendChild(UI.el('div', 'streak-badge', '🔥 ' + (p.streak || 1) + (p.streak === 1 ? ' día seguido' : ' días seguidos')));
     var r = ctx.results;
     var lines = [];
-    if (r.review) lines.push('Reviewed <b>' + r.review.seen + '</b> items (' + r.review.correct + ' correct)');
-    lines.push('Focus: <b>' + focusLabel(ctx) + '</b>');
-    if (r.comprehend) lines.push('Comprehension: <b>' + r.comprehend.correct + '/' + r.comprehend.total + '</b>');
-    if (r.apply) lines.push('Applied grammar: <b>' + r.apply.correct + '/' + r.apply.total + '</b>');
-    if (r.produce) lines.push('Wrote <b>' + r.produce.done + '</b> pieces of your own Spanish');
+    if (r.review) lines.push('Reviewed <b>' + r.review.seen + '</b> items — ' + r.review.correct + ' right');
+    // Only name a focus if the lesson stage actually ran; a quick review has none.
+    if (r.learn || modeDef().keys.indexOf('learn') !== -1) lines.push('Lesson: <b>' + focusLabel(ctx) + '</b>');
+    if (r.comprehend) lines.push('Reading: <b>' + r.comprehend.correct + '/' + r.comprehend.total + '</b>');
+    if (r.apply) lines.push('Grammar in context: <b>' + r.apply.correct + '/' + r.apply.total + '</b>');
+    if (r.produce) lines.push('Wrote <b>' + r.produce.done + '</b> ' + (r.produce.done === 1 ? 'thing' : 'things') + ' of your own');
     var ul = UI.el('ul', 'summary-list');
     lines.forEach(function (l) { ul.appendChild(UI.el('li', null, l)); });
     wrap.appendChild(ul);
@@ -399,25 +463,33 @@ window.Session = (function () {
       });
       if (sc) wrap.appendChild(sc);
     }
-    wrap.appendChild(UI.el('p', 'muted', '¡Hasta mañana! Come back tomorrow for a fresh session.'));
-    var homeB = UI.nextBtn('← Volver al inicio', function () { window.App.go('home'); });
+    wrap.appendChild(UI.el('p', 'muted', T('Hasta mañana — tomorrow rotates to new material.', 'See you tomorrow — it rotates to new material.')));
+    var homeB = UI.nextBtn('← ' + T('Volver al inicio', 'Back to home'), function () { window.App.go('home'); });
     wrap.appendChild(homeB);
-    var again = UI.nextBtn('Review today\'s session again', function () { start(); });
+    var again = UI.nextBtn(T('Hacerla otra vez', 'Do it again'), function () { start(mode); });
     again.className = 'ghost-btn';
     wrap.appendChild(again);
     host.appendChild(wrap);
   }
 
-  function start() {
+  /* Straight into the first stage. There used to be an intro screen here
+   * naming the unit, the goal and today's lesson; all of that now lives on
+   * the home card, which is where the learner decides whether to start. */
+  function start(m) {
+    if (m && MODES[m]) mode = m;
     host = document.getElementById('stage-host');
     bar = document.getElementById('session-progress-fill');
     ctx = buildContext();
-    idx = -1;
-    renderIntro();
+    idx = 0;
+    runStage();
   }
 
   return {
     start: start,
+    today: today,
+    skipLesson: skipLesson,
+    modes: function () { return [MODES.rapido, MODES.corto, MODES.diaria, MODES.larga]; },
+    mode: function () { return modeDef(); },
     resume: function () { host = document.getElementById('stage-host'); bar = document.getElementById('session-progress-fill'); if (idx >= 0 && ctx) runStage(); else start(); },
     isActive: function () { return idx >= 0 && idx < stages().length; },
     currentStageIndex: function () { return idx; },

@@ -72,7 +72,7 @@ window.Progress = (function () {
     UI.clear(host);
     var p = loadProg(), srs = loadSrs();
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, 'Lecciones'));
+    wrap.appendChild(UI.el('h1', null, UI.t('Lecciones', 'Lessons')));
 
     // ---- stat tiles ----
     var ids = Object.keys(srs);
@@ -105,7 +105,7 @@ window.Progress = (function () {
      * problem the units were introduced to fix. */
 
     // ---- TU CURSO: level -> unit -> lesson -------------------------------
-    wrap.appendChild(UI.el('h3', null, 'Tu curso'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Tu curso', 'Your course')));
     wrap.appendChild(UI.el('p', 'muted small',
       'Every lesson, in the order the course teaches them. Tap any one to take it — nothing is locked.'));
 
@@ -144,7 +144,7 @@ window.Progress = (function () {
       var bandDet = UI.el('details', 'catalog-more band-det' + (band === here ? ' band-here' : ''));
       if (band === here) bandDet.setAttribute('open', 'open');
       bandDet.appendChild(UI.el('summary', null,
-        band + ' — ' + us.length + ' unidades · ' + done + '/' + total + ' lecciones'));
+        band + ' — ' + us.length + UI.t(' unidades · ', ' units · ') + done + '/' + total + UI.t(' lecciones', ' lessons')));
 
       us.forEach(function (u) {
         var ids = DAYS.slice(u.from, u.from + u.length)
@@ -165,7 +165,7 @@ window.Progress = (function () {
     });
 
     // ---- GRAMÁTICA: by tense, then by everything else --------------------
-    wrap.appendChild(UI.el('h3', null, 'Gramática'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Gramática', 'Grammar')));
     wrap.appendChild(UI.el('p', 'muted small',
       'The same lessons reached a different way — by what they are about rather than by when they are taught.'));
 
@@ -188,12 +188,12 @@ window.Progress = (function () {
      * lessons carry no sub-topic tag; the buckets are ordered so the ones a
      * learner asks about most sit at the top. */
     var ASPECTS = [
-      ['Sustantivos y artículos', /(sustantiv|genero|numero|articulo|nombres|escuetos|masculino)/],
-      ['Adjetivos y determinantes', /(adjetiv|posesiv|demostrativ|cuantificador|numeral|indefinid)/],
-      ['Pronombres y relativos', /(pronombre|objeto|atonos|tonicos|relativ|interrogativ|exclamativ|quien|el-que)/],
-      ['Adverbios', /adverbio/],
-      ['Oraciones y subordinadas', /(subordinad|oracion|causal|concesiv|condicional|consecutiv|temporal|final|comparativ|modalidad|restrictiv|concordancia)/],
-      ['Formas verbales y perífrasis', /(perifrasis|formas-no-personales|gerundio|infinitivo|participio|imperativo|nucleo-verbal|se-multiuso|pronombre-se|complement)/]
+      [UI.t('Sustantivos y artículos', 'Nouns and articles'), /(sustantiv|genero|numero|articulo|nombres|escuetos|masculino)/],
+      [UI.t('Adjetivos y determinantes', 'Adjectives and determiners'), /(adjetiv|posesiv|demostrativ|cuantificador|numeral|indefinid)/],
+      [UI.t('Pronombres y relativos', 'Pronouns and relative clauses'), /(pronombre|objeto|atonos|tonicos|relativ|interrogativ|exclamativ|quien|el-que)/],
+      [UI.t('Adverbios', 'Adverbs'), /adverbio/],
+      [UI.t('Oraciones y subordinadas', 'Clauses and subordination'), /(subordinad|oracion|causal|concesiv|condicional|consecutiv|temporal|final|comparativ|modalidad|restrictiv|concordancia)/],
+      [UI.t('Formas verbales y perífrasis', 'Verb forms and verb phrases'), /(perifrasis|formas-no-personales|gerundio|infinitivo|participio|imperativo|nucleo-verbal|se-multiuso|pronombre-se|complement)/]
     ];
     var placed = {};
     ASPECTS.forEach(function (a) {
@@ -214,7 +214,7 @@ window.Progress = (function () {
     });
 
     // ---- VOCABULARIO ------------------------------------------------------
-    wrap.appendChild(UI.el('h3', null, 'Vocabulario'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Vocabulario', 'Vocabulary')));
     var vd = UI.el('details', 'catalog-more');
     vd.appendChild(UI.el('summary', null, 'Vocabulary lessons'));
     var vlist = UI.el('div', 'syllabus');
@@ -227,7 +227,7 @@ window.Progress = (function () {
     vd.appendChild(vlist); wrap.appendChild(vd);
 
     // ---- VERBOS -----------------------------------------------------------
-    wrap.appendChild(UI.el('h3', null, 'Verbos'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Verbos', 'Verbs')));
     var rd = UI.el('details', 'catalog-more');
     rd.appendChild(UI.el('summary', null, 'Verb lessons'));
     var rlist = UI.el('div', 'syllabus');
@@ -297,7 +297,7 @@ window.Progress = (function () {
       });
       wrap.appendChild(top);
       if (errs.some(function (e) { return e.reviewable; })) {
-        var drill = UI.el('button', 'ghost-btn', 'Drill your errors →'); drill.type = 'button';
+        var drill = UI.el('button', 'ghost-btn', 'Practicar tus errores →'); drill.type = 'button';
         drill.addEventListener('click', function () { window.App.go('errors'); });
         wrap.appendChild(drill);
       }

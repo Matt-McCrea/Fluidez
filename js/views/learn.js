@@ -272,7 +272,7 @@ window.StageLearn = (function () {
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, 'Practice & review day'));
     wrap.appendChild(UI.el('p', 'doc-summary', 'No new grammar today — a day to let what you\'ve met settle. Your review deck, the reading, and the exercises below all draw on things you already know.'));
-    wrap.appendChild(UI.el('p', 'muted', 'Little and often beats cramming. Take it easy and enjoy noticing how much you already recognise.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Nothing new to learn today. See how much comes back on its own.'));
     wrap.appendChild(UI.nextBtn('Continuar →', done));
     host.appendChild(wrap);
   }

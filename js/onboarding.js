@@ -24,20 +24,26 @@ window.Onboarding = (function () {
   function markSeen() { try { localStorage.setItem(KEY, '1'); } catch (e) {} }
 
   /* ---- the explainer ------------------------------------------------------ */
-  var CARDS = [
-    { h: 'Una sesión al día',
+  /* Built per render, not as a constant: the stage names the app actually
+   * shows change with level (UI.t), and a tour that names them in Spanish
+   * while the session header says "Review" teaches the learner nothing. */
+  function cards() {
+    var T = UI.t;
+    return [
+    { h: T('Una sesión al día', 'One session a day'),
       p: 'Fluidez is one structured session a day, not a pile of exercises. Open it, work through the five stages, and you are done — about fifteen minutes. Tomorrow it rotates to new material automatically.' },
-    { h: 'Las cinco etapas',
-      p: '<b>🔁 Repasar</b> — spaced review of everything due today.<br>' +
-         '<b>📖 Aprender</b> — one lesson, taught properly.<br>' +
-         '<b>👂 Comprender</b> — read a passage and answer on it.<br>' +
-         '<b>🧩 Aplicar</b> — use the grammar in context, not in a table.<br>' +
-         '<b>✍️ Producir</b> — write something, checked as you type.' },
-    { h: 'Dónde está todo',
+    { h: T('Las cinco etapas', 'The five stages'),
+      p: '<b>🔁 ' + T('Repasar', 'Review') + '</b> — spaced review of everything due today.<br>' +
+         '<b>📖 ' + T('Aprender', 'Learn') + '</b> — one lesson, taught properly.<br>' +
+         '<b>👂 ' + T('Comprender', 'Understand') + '</b> — read a passage and answer on it.<br>' +
+         '<b>🧩 ' + T('Aplicar', 'Apply') + '</b> — use the grammar in context, not in a table.<br>' +
+         '<b>✍️ ' + T('Producir', 'Produce') + '</b> — write something, checked as you type.' },
+    { h: T('Dónde está todo', 'Where everything is'),
       p: '<b>Inicio</b> starts the day\'s session. <b>Practicar</b> has drills and games for when you want more. ' +
-         '<b>Progreso</b> shows every lesson — all of them are open, you are never locked out. ' +
+         '<b>Lecciones</b> shows every lesson — all of them are open, you are never locked out. ' +
          '<b>Palabras</b> is your vocabulary. <b>Más</b> holds the grammar reference, free writing and settings.' }
-  ];
+    ];
+  }
 
   /* ---- placement ---------------------------------------------------------- */
   // Multiple-choice probes only: they mark themselves, so a placement check
@@ -123,6 +129,7 @@ window.Onboarding = (function () {
     onDone = onDone || function () {};
 
     function card() {
+      var CARDS = cards();
       if (idx >= CARDS.length) return offerPlacement();
       var c = CARDS[idx++];
       UI.clear(host);
@@ -140,8 +147,9 @@ window.Onboarding = (function () {
     function offerPlacement() {
       UI.clear(host);
       var wrap = UI.el('div', 'panel');
-      wrap.appendChild(UI.el('div', 'eyebrow', (CARDS.length + 1) + ' / ' + (CARDS.length + 1)));
-      wrap.appendChild(UI.el('h1', null, '¿Por dónde empezamos?'));
+      var nCards = cards().length;
+      wrap.appendChild(UI.el('div', 'eyebrow', (nCards + 1) + ' / ' + (nCards + 1)));
+      wrap.appendChild(UI.el('h1', null, UI.t('¿Por dónde empezamos?', 'Where should we start?')));
       wrap.appendChild(UI.el('p', 'doc-summary',
         'Nine quick multiple-choice questions will place you at A1, A2, B1, B2 or C1. ' +
         'It takes about two minutes, and you can change it afterwards.'));

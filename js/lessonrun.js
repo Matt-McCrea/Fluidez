@@ -255,7 +255,7 @@ window.LessonRun = (function () {
       UI.clear(host);
       var wrap = UI.el('div', 'panel intro');
       wrap.appendChild(UI.el('div', 'big-check', '✓'));
-      wrap.appendChild(UI.el('h1', null, '¡Lección completa!'));
+      wrap.appendChild(UI.el('h1', null, UI.t('Lección terminada', 'Lesson done')));
       wrap.appendChild(UI.el('p', 'muted', 'You worked through ' + title + ' — taught, read, applied and written.'));
       wrap.appendChild(UI.nextBtn('← Volver', back));
       host.appendChild(wrap);

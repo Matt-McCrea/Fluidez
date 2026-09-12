@@ -53,13 +53,13 @@ window.Settings = (function () {
   function render(host, back) {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, 'Ajustes'));
+    wrap.appendChild(UI.el('h1', null, UI.t('Ajustes', 'Settings')));
 
     /* Diagnostics first: "which build am I running" and "what is actually
      * slow" are the two questions that cannot be answered from a laptop. A
      * service worker is cache-first, so a fix can be committed, pushed and
      * still not be on the phone. */
-    wrap.appendChild(UI.el('h3', null, 'Diagnóstico'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Diagnóstico', 'Diagnostics')));
     var diag = UI.el('div', 'diag');
     var build = (window.Perf && window.Perf.BUILD) || '?';
     diag.appendChild(UI.el('p', 'muted small', 'Build <b>' + build + '</b>. If this is not the newest build, the app is still running cached code — close it fully and reopen, or tap the update banner.'));
@@ -84,7 +84,7 @@ window.Settings = (function () {
     diag.appendChild(copy);
     wrap.appendChild(diag);
 
-    wrap.appendChild(UI.el('h3', null, 'Empezar de cero'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Empezar de cero', 'Start over')));
     wrap.appendChild(UI.el('p', 'muted',
       'Wipes every trace of your progress on THIS device — review history, lessons studied, saved words, your journal, error log, game scores, level and the walkthrough — and starts again at A1 as a brand-new learner. ' +
       'It cannot be undone, and nothing is stored anywhere else, so export first if there is any chance you want it back.'));
@@ -108,7 +108,7 @@ window.Settings = (function () {
     wrap.appendChild(reset);
     wrap.appendChild(note);
 
-    wrap.appendChild(UI.el('h3', null, 'Exportar / importar datos'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Exportar / importar datos', 'Export / import data')));
     wrap.appendChild(UI.el('p', 'muted',
       'Every install (phone, Mac, browser tab) keeps its own separate copy of your progress — moving it from one to another means exporting here, sending yourself the file (AirDrop, Files, email, whatever\'s easiest), and importing it on the other one. ' +
       'This file is also your only backup — nothing here is stored anywhere else.'));
@@ -149,7 +149,7 @@ window.Settings = (function () {
     wrap.appendChild(importWrap);
 
     if (window.Profile) {
-      wrap.appendChild(UI.el('h3', null, 'Tope de repaso'));
+      wrap.appendChild(UI.el('h3', null, UI.t('Tope de repaso', 'Review cap')));
       wrap.appendChild(UI.el('p', 'muted',
         'The most items Repasar will show in one session, per mode. When more are due than this, the highest-priority ones (leeches, then most overdue) are chosen and the rest are pushed a few days out — never a growing backlog.'));
       var capRow = UI.el('div', 'cap-row');

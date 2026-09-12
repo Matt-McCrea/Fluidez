@@ -20,7 +20,12 @@ window.App = (function () {
     switch (view) {
       case 'session':
         window.Shell.openOverlay(true);
-        if (window.Session.isActive()) window.Session.resume(); else window.Session.start();
+        /* Resume only what is already running. Picking a different length from
+         * the home screen is an explicit choice and starts that one instead —
+         * otherwise tapping "Repaso rápido" mid-session silently resumes the
+         * long one you were already in. */
+        if (window.Session.isActive() && (!arg || arg === window.Session.mode().key)) window.Session.resume();
+        else window.Session.start(arg);
         break;
       case 'errors':
         window.Shell.openOverlay(false);

@@ -144,7 +144,7 @@ window.StageProduce = (function () {
     function finish() {
       ctx.results.produce = { done: doneCount, total: tasks.length };
       UI.clear(body);
-      body.appendChild(UI.el('h2', null, '¡Buen trabajo!'));
+      body.appendChild(UI.el('h2', null, UI.t('Escrito', 'Written')));
       body.appendChild(UI.el('p', 'muted', 'You produced ' + doneCount + ' piece' + (doneCount === 1 ? '' : 's') + ' of your own Spanish today — the part most learners skip, and the part that builds fluency.'));
       body.appendChild(UI.nextBtn('Terminar la sesión →', done));
     }

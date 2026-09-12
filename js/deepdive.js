@@ -40,7 +40,7 @@ window.DeepDive = (function () {
     var list = units();
 
     var head = UI.el('div', 'panel');
-    head.appendChild(UI.el('h1', null, 'Profundizar'));
+    head.appendChild(UI.el('h1', null, UI.t('Profundizar', 'Go deeper')));
     head.appendChild(UI.el('p', 'muted',
       'Optional deep dives on the things that stay confusing. None of these is on your daily path — ' +
       'they are here for when you want one, and you can take them in any order.'));

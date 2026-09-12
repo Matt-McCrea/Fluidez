@@ -159,7 +159,7 @@ window.UserWords = (function () {
   function render(host, back) {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, 'Palabras'));
+    wrap.appendChild(UI.el('h1', null, UI.t('Palabras', 'Words')));
     wrap.appendChild(UI.el('p', 'muted', 'Your own words — they join your reviews, quizzes and games exactly like the built-in ones.'));
 
     // ---- quick add ----

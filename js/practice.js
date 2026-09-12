@@ -32,19 +32,19 @@ window.Practice = (function () {
   function render(host, back) {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, 'Practicar'));
+    wrap.appendChild(UI.el('h1', null, UI.t('Practicar', 'Practice')));
     wrap.appendChild(UI.el('p', 'muted', 'Quick, targeted practice — pick exactly what you want to work on.'));
 
     // ---- the practice modes come first: this is the useful part ----
-    wrap.appendChild(UI.el('h3', null, 'Elige un modo'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Elige un modo', 'Pick a mode')));
     if (window.Selector) window.Selector.renderChooser(wrap);
 
     // ---- fast drills (conjugation + flashcards) ----
-    wrap.appendChild(UI.el('h3', null, 'Ejercicios rápidos'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Ejercicios rápidos', 'Quick exercises')));
     if (window.Drills) window.Drills.renderSection(wrap);
 
     // ---- writing on a theme, last ----
-    wrap.appendChild(UI.el('h3', null, 'Escribir sobre un tema'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Escribir sobre un tema', 'Write about a topic')));
     wrap.appendChild(UI.el('p', 'muted small',
       'A writing prompt on the theme you pick, at your level. The number is how many are available to you now.'));
     var chips = UI.el('div', 'chip-row');

@@ -116,7 +116,7 @@ window.Selector = (function () {
     host.appendChild(wrap);
     window.Deck.run(deckHost, cards, function (stats) {
       UI.clear(deckHost);
-      deckHost.appendChild(UI.el('h3', null, 'Listo — ' + stats.correct + ' / ' + stats.seen));
+      deckHost.appendChild(UI.el('h3', null, UI.t('Listo', 'Done') + ' — ' + stats.correct + ' / ' + stats.seen));
       var again = UI.el('button', 'ghost-btn', '← Practicar'); again.type = 'button'; again.addEventListener('click', backToTab);
       deckHost.appendChild(again);
     });
@@ -140,7 +140,7 @@ window.Selector = (function () {
   function showThemePicker(host) {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h2', null, 'Por tema'));
+    wrap.appendChild(UI.el('h2', null, UI.t('Por tema', 'By topic')));
     wrap.appendChild(UI.el('p', 'muted', 'Pick a theme — this round is only that theme\'s words.'));
     var pool = masterPool();
     var byCat = {};
@@ -196,7 +196,7 @@ window.Selector = (function () {
   function showTensePicker(host) {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h2', null, 'Gramática'));
+    wrap.appendChild(UI.el('h2', null, UI.t('Gramática', 'Grammar')));
     wrap.appendChild(UI.el('p', 'muted', 'Pick a tense or concept — this round is only its conjugations and usage contrasts, no other vocab mixed in.'));
     var pool = masterPool();
     var studied = (loadProg().studied || {});
@@ -285,11 +285,11 @@ window.Selector = (function () {
   function showFrontier(host) {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h2', null, 'Siguiente paso'));
+    wrap.appendChild(UI.el('h2', null, UI.t('Siguiente paso', 'What to try next')));
     wrap.appendChild(UI.el('p', 'muted', 'What to test next to progress — a little beyond where you are, not more of what you already know.'));
     var items = frontier();
     if (!items.length) {
-      wrap.appendChild(UI.el('p', 'muted', 'You\'re caught up — nothing new to introduce right now. Nicely done.'));
+      wrap.appendChild(UI.el('p', 'muted', 'You\'re caught up — nothing new to introduce right now.'));
     } else {
       var list = UI.el('div', 'syllabus');
       items.forEach(function (f) {
@@ -317,11 +317,11 @@ window.Selector = (function () {
       b.addEventListener('click', function () { window.Shell.openOverlay(); onTap(document.getElementById('stage-host')); });
       list.appendChild(b);
     }
-    if (visible('inteligente')) row('🔀', 'Repaso inteligente', 'A mixed round — due items, plus a bit of new material', function (host) { runMixed(host, null, 'Repaso inteligente'); });
-    if (visible('tema')) row('🏷️', 'Por tema', 'Pick a theme to focus this round on', function (host) { showThemePicker(host); });
-    if (visible('gramatica')) row('📖', 'Gramática', 'Pick a tense or concept to drill', function (host) { showTensePicker(host); });
-    if (visible('debiles')) row('🩹', 'Puntos débiles', 'Your worst items, ordered by miss count', function (host) { runWeakSpots(host); });
-    if (visible('siguiente')) row('🎯', 'Siguiente paso', 'What to test next to progress', function (host) { showFrontier(host); });
+    if (visible('inteligente')) row('🔀', UI.t('Repaso inteligente', 'Mixed review'), 'A mixed round — due items, plus a bit of new material', function (host) { runMixed(host, null, UI.t('Repaso inteligente', 'Mixed review')); });
+    if (visible('tema')) row('🏷️', UI.t('Por tema', 'By topic'), 'Pick a theme to focus this round on', function (host) { showThemePicker(host); });
+    if (visible('gramatica')) row('📖', UI.t('Gramática', 'Grammar'), 'Pick a tense or concept to drill', function (host) { showTensePicker(host); });
+    if (visible('debiles')) row('🩹', UI.t('Puntos débiles', 'Weak spots'), 'Your worst items, ordered by miss count', function (host) { runWeakSpots(host); });
+    if (visible('siguiente')) row('🎯', UI.t('Siguiente paso', 'What to try next'), 'What to test next to progress', function (host) { showFrontier(host); });
     container.appendChild(list);
   }
 

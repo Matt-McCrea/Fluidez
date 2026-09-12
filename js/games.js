@@ -139,7 +139,7 @@ window.Games = (function () {
       var isNewBest = !tranquilo && setBest(bestKey, correct);
       var done = UI.el('div', 'intro complete');
       done.appendChild(UI.el('div', 'big-check', '✓'));
-      done.appendChild(UI.el('h2', null, tranquilo ? 'Listo' : '¡Tiempo!'));
+      done.appendChild(UI.el('h2', null, tranquilo ? UI.t('Listo', 'Done') : UI.t('¡Tiempo!', "Time's up")));
       done.appendChild(UI.el('p', null, correct + ' correct de ' + seen + (tranquilo ? '' : (isNewBest ? ' — ¡nuevo récord!' : ' · récord: ' + bestFor(bestKey)))));
       if (misses.length) {
         done.appendChild(UI.el('h3', null, 'Para revisar'));
@@ -233,7 +233,7 @@ window.Games = (function () {
     wrap.appendChild(exitHeader('Emparejar'));
     wrap.appendChild(UI.el('p', 'muted', 'Tap one from each side to match them. Español on the left, English on the right. Match them all and the next board deals automatically.'));
     var content = 'vocab';
-    wrap.appendChild(UI.el('h3', null, 'Contenido'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Contenido', 'Content')));
     var seg1 = UI.el('div', 'segmented');
     [['vocab', 'Vocabulario'], ['conj', 'Verbos']].forEach(function (o) {
       var b = UI.el('button', 'seg' + (content === o[0] ? ' active' : ''), o[1]); b.type = 'button';
@@ -352,7 +352,7 @@ window.Games = (function () {
       var isNewBest = !tranquilo && setBest(bestKey, totalMatched);
       var done = UI.el('div', 'panel intro complete');
       done.appendChild(UI.el('div', 'big-check', '✓'));
-      done.appendChild(UI.el('h2', null, tranquilo ? 'Listo' : '¡Tiempo!'));
+      done.appendChild(UI.el('h2', null, tranquilo ? UI.t('Listo', 'Done') : UI.t('¡Tiempo!', "Time's up")));
       done.appendChild(UI.el('p', null, totalMatched + ' pares emparejados' + (tranquilo ? '' : (isNewBest ? ' — ¡nuevo récord!' : ' · récord: ' + bestFor(bestKey)))));
       var again = UI.el('button', 'primary-btn', 'Jugar de nuevo'); again.type = 'button';
       again.addEventListener('click', function () { showEmparejarSetup(host); });
@@ -439,7 +439,7 @@ window.Games = (function () {
     var modes = isBeginner()
       ? [['article', 'Artículo'], ['meaning', 'Significado'], ['conj', 'Conjugación'], ['prep', 'Por / Para']]
       : [['meaning', 'Significado'], ['article', 'Artículo'], ['conj', 'Conjugación'], ['prep', 'Por / Para']];
-    wrap.appendChild(UI.el('h3', null, 'Qué practicar'));
+    wrap.appendChild(UI.el('h3', null, UI.t('Qué practicar', 'What to practise')));
     var seg = UI.el('div', 'segmented');
     modes.forEach(function (o) {
       var b = UI.el('button', 'seg' + (sub === o[0] ? ' active' : ''), o[1]); b.type = 'button';
@@ -712,7 +712,7 @@ window.Games = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     var head = UI.el('div', 'stage-head');
-    head.appendChild(UI.el('span', 'eyebrow', 'Juegos'));
+    head.appendChild(UI.el('span', 'eyebrow', UI.t('Juegos', 'Games')));
     var exitB = UI.el('button', 'ghost-btn small', '✕ salir'); exitB.type = 'button'; exitB.style.marginTop = '0';
     exitB.addEventListener('click', function () { if (back) back(); });
     var right = UI.el('span', 'stage-count'); right.appendChild(exitB);
@@ -726,11 +726,11 @@ window.Games = (function () {
       b.addEventListener('click', function () { window.Shell.openOverlay(); onTap(document.getElementById('stage-host')); });
       list.appendChild(b);
     }
-    row('🃏', 'Emparejar', 'Matching pairs — vocab or verb forms', showEmparejarSetup);
-    row('☑️', 'Opción múltiple', 'Meaning, article, conjugation, por/para', showOpcionSetup);
-    row('⚡', 'Conjugación rápida', 'An English phrase → the matching form', showConjRapidaSetup);
-    row('🧩', 'Frase revuelta', 'Reorder the shuffled words', showFraseSetup);
-    row('🎯', '¿Cuál va aquí?', 'The classic minimal-pair traps', showCualSetup);
+    row('🃏', UI.t('Emparejar', 'Matching pairs'), 'Matching pairs — vocab or verb forms', showEmparejarSetup);
+    row('☑️', UI.t('Opción múltiple', 'Multiple choice'), 'Meaning, article, conjugation, por/para', showOpcionSetup);
+    row('⚡', UI.t('Conjugación rápida', 'Quick conjugation'), 'An English phrase → the matching form', showConjRapidaSetup);
+    row('🧩', UI.t('Frase revuelta', 'Scrambled sentence'), 'Reorder the shuffled words', showFraseSetup);
+    row('🎯', UI.t('¿Cuál va aquí?', 'Which one goes here?'), 'The classic minimal-pair traps', showCualSetup);
     wrap.appendChild(list);
     host.appendChild(wrap);
   }

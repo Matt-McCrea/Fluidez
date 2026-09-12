@@ -27,8 +27,8 @@ body {
 }
 
 /* ---- touch polish (installed-app feel on iOS) ---- */
-button, a, input, textarea, .hub-card { touch-action:manipulation; }   /* no double-tap-to-zoom delay */
-button, .hub-card { -webkit-user-select:none; user-select:none; }      /* no text-selection on long-press */
+button, a, input, textarea { touch-action:manipulation; }   /* no double-tap-to-zoom delay */
+button { -webkit-user-select:none; user-select:none; }      /* no text-selection on long-press */
 input, textarea { -webkit-user-select:text; user-select:text; }
 /* 44px is Apple's minimum comfortable tap target (HIG). Exempts .accent-btn —
    a dense row of small insert keys where 44px squares would overflow narrow
@@ -97,11 +97,6 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 /* ---- session intro / complete ---- */
 .intro { text-align:center; padding:44px 40px; }
 .intro .eyebrow { margin-bottom:6px; }
-.stage-list { list-style:none; margin:26px auto 6px; padding:0; max-width:430px; text-align:left; }
-.stage-row { display:flex; gap:14px; align-items:center; padding:11px 6px; border-bottom:1px solid var(--border); }
-.stage-row:last-child { border-bottom:none; }
-.stage-ico { font-size:1.45rem; width:2rem; text-align:center; }
-.stage-name { line-height:1.3; }
 .streak-badge { display:inline-block; margin-top:10px; font-weight:650; color:var(--accent-2); }
 .complete .big-check {
   width:74px; height:74px; margin:0 auto 12px; border-radius:50%;
@@ -114,7 +109,8 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 
 /* ---- stage chrome ---- */
 .stage-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; }
-.stage-count { color:var(--muted); font-size:.85rem; font-weight:600; }
+.stage-count { display:flex; align-items:center; gap:12px; color:var(--muted); font-size:.85rem; font-weight:600; }
+.stage-count .ghost-btn.small { margin-top:0; flex:none; }
 
 /* ---- cards / inputs ---- */
 .review-card { text-align:center; }
@@ -265,21 +261,6 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 /* ---- home hub ---- */
 .hub-head { text-align:center; }
 .hub-head h1 { margin:8px 0 4px; }
-.hub-start {
-  display:flex; align-items:center; gap:16px; width:100%; text-align:left; cursor:pointer;
-  border:1px solid var(--border); background:var(--accent); color:#fff;
-  border-radius:var(--radius); padding:20px 24px; margin-bottom:22px; box-shadow:var(--shadow);
-}
-.hub-start:hover { background:var(--accent-2); }
-.hub-start .hub-ico { font-size:1.6rem; }
-.hub-start .muted { color:rgba(255,255,255,.85); }
-.hub-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:14px; }
-.hub-card {
-  display:flex; flex-direction:column; gap:4px; text-align:left; cursor:pointer;
-  border:1px solid var(--border); background:var(--panel); color:var(--text);
-  border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow);
-}
-.hub-card:hover { border-color:var(--accent); transform:translateY(-1px); }
 .hub-ico { font-size:1.5rem; }
 .hub-title { font-weight:700; }
 .hub-sub { font-size:.85rem; }
@@ -432,26 +413,89 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 /* ---- Inicio: status strip ---- */
 .status-strip {
   display:flex; flex-wrap:wrap; gap:8px 14px; justify-content:center;
-  margin-bottom:18px; font-size:.85rem; color:var(--muted);
+  margin-bottom:20px; font-size:.85rem; color:var(--muted);
 }
 .status-strip .status-item.done { color:var(--good); font-weight:650; }
 
-/* ---- Inicio: the two big tiles ---- */
-.home-tile {
-  display:block; width:100%; text-align:left; cursor:pointer;
-  border:1px solid var(--border); background:var(--panel); color:var(--text);
-  border-radius:var(--radius); padding:22px 24px; margin-bottom:16px; box-shadow:var(--shadow);
+/* ---- Inicio: today's card -----------------------------------------------
+   The home screen's whole job is answering "what is today?", so this is the
+   one place in the app that gets a raised, accented surface. Everything else
+   on Inicio sits flat beneath it. */
+.today-card {
+  background:var(--panel); border:1px solid var(--border);
+  border-top:3px solid var(--accent);
+  border-radius:var(--radius); box-shadow:var(--shadow);
+  padding:26px 28px 24px; margin-bottom:26px;
 }
-.home-tile:hover { border-color:var(--accent); transform:translateY(-1px); }
-.home-tile.session-tile { border-left:4px solid var(--accent); }
-.home-tile.games-tile { border-left:4px solid var(--accent-2); }
-.tile-head { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
-.tile-ico { font-size:1.5rem; }
-.tile-title { font-weight:750; font-size:1.15rem; }
-.stage-pips { display:flex; gap:7px; margin:6px 0 10px; }
-.stage-pips .pip { width:11px; height:11px; border-radius:50%; background:var(--panel-2); border:1px solid var(--border); }
-.stage-pips .pip.done { background:var(--accent); border-color:var(--accent); }
-.stage-pips .pip.current { background:var(--panel); border:2px solid var(--accent); }
+.today-card .eyebrow { margin-bottom:14px; }
+
+.today-unit {
+  background:var(--panel-2); border:1px solid var(--border);
+  border-left:3px solid var(--accent); border-radius:11px;
+  padding:14px 17px; margin-bottom:18px;
+}
+.today-focus {
+  display:flex; align-items:baseline; gap:11px;
+  padding:2px 2px 16px; border-bottom:1px solid var(--border); margin-bottom:16px;
+}
+.tf-label {
+  font-size:.68rem; text-transform:uppercase; letter-spacing:.1em; font-weight:750;
+  color:var(--muted); flex:none;
+}
+.tf-value { font-weight:650; font-size:1.06rem; line-height:1.35; }
+
+/* the shape of the session — a strip, not a five-row list */
+.stage-strip { display:flex; flex-wrap:wrap; gap:6px 4px; margin-bottom:20px; }
+.ss-step {
+  display:flex; align-items:center; gap:6px; padding:5px 10px 5px 7px;
+  border-radius:999px; border:1px solid transparent; color:var(--muted); font-size:.8rem;
+}
+.ss-step .ss-ico { font-size:.95rem; line-height:1; opacity:.55; }
+.ss-step.done { color:var(--accent); }
+.ss-step.done .ss-ico { opacity:1; }
+.ss-step.current {
+  color:var(--text); font-weight:650;
+  border-color:var(--accent); background:var(--panel-2);
+}
+.ss-step.current .ss-ico { opacity:1; }
+
+.today-go-row { display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+.today-go-row .primary-btn { margin-top:0; }
+.today-go { padding:13px 30px; font-size:1.05rem; }
+
+.linkish {
+  display:block; margin:16px 0 0; padding:0; border:none; background:none;
+  color:var(--muted); font-size:.86rem; text-decoration:underline;
+  text-underline-offset:3px; cursor:pointer; min-height:0;
+}
+.linkish:hover { color:var(--accent); }
+
+/* ---- Inicio: other ways in ---------------------------------------------- */
+.alt-section { margin-bottom:26px; }
+.alt-section h3 { margin:0 0 10px; }
+.alt-list { display:flex; flex-direction:column; gap:2px; }
+.alt-row {
+  display:flex; align-items:center; gap:14px; width:100%; text-align:left; cursor:pointer;
+  border:none; border-bottom:1px solid var(--border); background:transparent; color:var(--text);
+  padding:13px 4px;
+}
+.alt-row:last-child { border-bottom:none; }
+.alt-row:hover { background:var(--panel-2); }
+.alt-text { flex:1; line-height:1.35; }
+.alt-mins { color:var(--muted); font-size:.84rem; white-space:nowrap; }
+
+/* ---- Inicio: errors + games --------------------------------------------- */
+.home-extras { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; }
+.home-extra {
+  display:flex; align-items:center; gap:13px; text-align:left; cursor:pointer;
+  border:1px solid var(--border); background:var(--panel); color:var(--text);
+  border-radius:12px; padding:15px 17px;
+}
+.home-extra:hover { border-color:var(--accent); }
+.home-extra .he-ico { font-size:1.4rem; line-height:1; flex:none; }
+.home-extra .he-text { line-height:1.35; }
+.home-extra.errors { border-left:3px solid var(--warn); }
+.home-extra.games { border-left:3px solid var(--accent-2); }
 
 /* ---- Más: menu rows ---- */
 .mas-list { display:flex; flex-direction:column; gap:2px; margin-top:10px; }
@@ -593,12 +637,7 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .dl-t { flex:1; }
 .dl-mark { color:var(--good); font-weight:700; }
 
-/* ---- the unit a day belongs to (js/session.js) ---- */
-.unit-card {
-  text-align:left; max-width:430px; margin:18px auto 0; padding:14px 18px;
-  background:var(--panel-2); border:1px solid var(--border); border-radius:12px;
-  border-left:3px solid var(--accent);
-}
+/* ---- unit heading, used inside Inicio's today card ---- */
 .unit-eyebrow {
   font-size:.7rem; text-transform:uppercase; letter-spacing:.09em;
   font-weight:750; color:var(--accent);
@@ -638,3 +677,45 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .unit-det-n { margin-left:auto; font-size:.82rem; }
 .unit-det-goal { font-size:.85rem; margin:0 0 8px 14px; line-height:1.4; }
 .unit-det .syllabus { margin-left:8px; }
+
+/* ===========================================================================
+   Polish — focus, motion, and the small things that read as care.
+   =========================================================================== */
+
+/* Keyboard focus was invisible everywhere in the app. */
+:where(button, a, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline:2px solid var(--accent); outline-offset:2px; border-radius:6px;
+}
+:where(button, a, input, textarea, select, summary):focus:not(:focus-visible) { outline:none; }
+
+/* Hover states were instant. These are the surfaces that move. */
+.today-card, .home-extra, .alt-row, .mas-row, .primary-btn, .ghost-btn,
+.topic-chip, .vocab-chip, .deep-lesson {
+  transition:border-color .15s ease, background-color .15s ease,
+             transform .15s ease, box-shadow .15s ease;
+}
+.home-extra:hover, .deep-lesson:hover { transform:translateY(-1px); }
+.primary-btn:active, .ghost-btn:active, .home-extra:active, .alt-row:active { transform:translateY(1px); }
+
+/* Long titles break sensibly rather than leaving one orphaned word. */
+h1, h2, .unit-title, .tf-value { text-wrap:balance; }
+
+/* Prose should not run the full 840px on a wide screen. */
+.doc-summary, .unit-goal { max-width:62ch; }
+
+@media (prefers-reduced-motion:reduce) {
+  *, *::before, *::after {
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ---- Inicio on a phone ---- */
+@media (max-width:640px) {
+  .today-card { padding:20px 18px; }
+  .today-go-row { gap:10px; }
+  .today-go { flex:1; padding:13px 20px; }
+  .stage-strip { gap:4px 2px; }
+  .ss-step { padding:4px 8px 4px 6px; font-size:.74rem; }
+  .home-extras { grid-template-columns:1fr; }
+}

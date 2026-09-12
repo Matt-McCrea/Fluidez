@@ -58,8 +58,8 @@ window.StageComprehend = (function () {
     function finish() {
       ctx.results.comprehend = { correct: correct, total: total };
       UI.clear(body);
-      body.appendChild(UI.el('h2', null, 'Comprensión: ' + correct + ' / ' + total));
-      body.appendChild(UI.el('p', 'muted', correct === total ? '¡Perfecto!' : 'Re-read the passage any time — it stays in the rotation.'));
+      body.appendChild(UI.el('h2', null, UI.t('Comprensión', 'Reading') + ': ' + correct + ' / ' + total));
+      body.appendChild(UI.el('p', 'muted', correct === total ? 'All of them. The passage stays in the rotation.' : 'Re-read the passage any time — it stays in the rotation.'));
       body.appendChild(UI.nextBtn('Continuar →', done));
     }
 

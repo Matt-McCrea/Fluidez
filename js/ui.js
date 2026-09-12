@@ -66,6 +66,13 @@ window.UI = (function () {
   function sample(arr, n, rng) { return shuffle(arr, rng).slice(0, n); }
   function pick(arr, rng) { rng = rng || Math.random; return arr.length ? arr[Math.floor(rng() * arr.length)] : null; }
 
-  return { el: el, clear: clear, accentBar: accentBar, nextBtn: nextBtn,
+  /* Screen headings and section labels in English until B1.
+   * Profile owns the rule (Profile.term); this is the call site every view
+   * uses, and it degrades to the Spanish if Profile has not loaded yet. */
+  function t(es, en) {
+    return (window.Profile && window.Profile.term) ? window.Profile.term(es, en) : es;
+  }
+
+  return { el: el, clear: clear, accentBar: accentBar, nextBtn: nextBtn, t: t,
     seededRandom: seededRandom, shuffle: shuffle, sample: sample, pick: pick };
 })();
