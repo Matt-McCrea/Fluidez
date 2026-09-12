@@ -367,8 +367,42 @@ function checkProbes(l, tag) {
    * order down trades that guarantee for a readable one, so it has to be
    * checked here instead: a lesson missing from COURSE is invisible to the
    * session forever, and a lesson listed twice is taught twice. */
-  const course = window.COURSE || [];
-  ok(course.length > 0, 'course: data/course.js defines no COURSE');
+  /* COURSE is authored as units that own their days, plus bare day entries for
+   * the stretches not yet organised into units. COURSE_DAYS is that flattened
+   * (data/course.js derives it), and it is what "day N of the course" means. */
+  const authored = window.COURSE || [];
+  const course = window.COURSE_DAYS || [];
+  ok(authored.length > 0, 'course: data/course.js defines no COURSE');
+  ok(course.length > 0, 'course: COURSE_DAYS is empty — the flattening failed');
+
+  // ---- units --------------------------------------------------------------
+  const unitIds = new Set();
+  authored.forEach((e, i) => {
+    if (!e.unit) {
+      // a bare band marker, or a day not yet in a unit
+      const kinds = ['lesson', 'verbs', 'practice', 'band'].filter(k => e[k] !== undefined);
+      ok(kinds.length === 1, `course[${i}]: needs exactly one of lesson/verbs/practice/band, has [${kinds}]`);
+      if (e.band) ok(CEFR.has(e.band), `course[${i}]: band marker names unknown band "${e.band}"`);
+      return;
+    }
+    const tag = `unit "${e.unit}"`;
+    ok(!unitIds.has(e.unit), `${tag}: duplicate unit id`); unitIds.add(e.unit);
+    ok(!!e.title, `${tag}: missing title`);
+    ok(!!e.goal, `${tag}: missing goal — a unit is named for what the learner can do after it`);
+    ok(Array.isArray(e.canDo) && e.canDo.length >= 1, `${tag}: needs at least one canDo`);
+    ok(!e.band || CEFR.has(e.band), `${tag}: unknown band "${e.band}"`);
+    ok(Array.isArray(e.days) && e.days.length >= 2, `${tag}: needs at least 2 days`);
+    /* A unit ends with something the learner produces. That is the whole point
+     * of the unit being a unit rather than a run of lessons, so it is checked
+     * rather than left to discipline. */
+    const lastDay = (e.days || [])[(e.days || []).length - 1] || {};
+    const lastId = lastDay.lesson || '';
+    const lastLesson = (window.ALL_LESSONS || []).find(l => l.id === lastId);
+    ok(lastLesson && lastLesson.strand === 'task',
+       `${tag}: last day is "${lastId || '(not a lesson)'}", which is not a task lesson`);
+  });
+  // Every day COURSE_DAYS produced must know which band it is in.
+  course.forEach((d, i) => ok(!!d.band, `course day ${i}: no band — is there a band marker before it?`));
   /* Check against every lesson that EXISTS, not against GRAMMAR_LESSONS —
    * GRAMMAR_LESSONS *is* the course, so a lesson dropped from COURSE would
    * simply be absent from it and the omission would check out clean. */

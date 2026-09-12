@@ -526,9 +526,9 @@
    * would otherwise be silently unreachable. */
   function buildSyllabus(lessons) {
     var pos = {}, byId = {};
-    (window.COURSE || []).forEach(function (e, i) { if (e.lesson) pos[e.lesson] = i; });
+    (window.COURSE_DAYS || []).forEach(function (e, i) { if (e.lesson) pos[e.lesson] = i; });
     lessons.forEach(function (l) { byId[l.id] = l; });
-    return (window.COURSE || []).filter(function (e) { return e.lesson && byId[e.lesson]; })
+    return (window.COURSE_DAYS || []).filter(function (e) { return e.lesson && byId[e.lesson]; })
       .map(function (e) {
         var l = byId[e.lesson];
         return { id: l.id, level: l.level || 1, strand: l.strand || 'grammar', cefr: l.cefr || null };

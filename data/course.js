@@ -42,16 +42,25 @@ window.COURSE = [
    * the same." Four of these lessons were already written and sat at days
    * 87, 90, 100 and 234; the dialogue, the thanks and the task are new.
    * The dialogue comes FIRST, before any grammar, on purpose. */
-  { lesson: 'dlg-presentarse' },                        // dial  Dos personas se conocen
-  { verbs: ['ser', 'estar', 'llamarse', 'tener', 'haber'] },
-  { lesson: 'presente' },                               // gram  Presente (Present)
-  { lesson: 'fn-responder-saludo-a2' },                 // func  Saludar: en persona y por escrito
-  { lesson: 'ser-estar' },                              // gram  Ser vs. Estar
-  { lesson: 'nt-origen-a1' },                           // noti  De dónde eres y cuántos años tienes
-  { lesson: 'fn-identificar-a1' },                      // func  Identificar: qué es y quién es
-  { lesson: 'fn-agradecer-a1' },                        // func  Dar las gracias
-  { lesson: 'fn-establecer-comunicacion-a1' },          // func  Empezar y terminar una conversación
-  { lesson: 'task-presentarse' },                       // task  Preséntate
+  { unit: 'a1-u01', band: 'A1', title: 'Meet someone',
+    goal: 'I can greet someone, say who I am and where I am from, and ask them the same.',
+    canDo: ['greet someone and answer a greeting',
+            'give my name and ask for one',
+            'say where I am from and how old I am',
+            'say thank you and reply to it',
+            'open a conversation and close it'],
+    days: [
+    { lesson: 'dlg-presentarse' },                        // dial  Dos personas se conocen
+    { verbs: ['ser', 'estar', 'llamarse', 'tener', 'haber'] },
+    { lesson: 'presente' },                               // gram  Presente (Present)
+    { lesson: 'fn-responder-saludo-a2' },                 // func  Saludar: en persona y por escrito
+    { lesson: 'ser-estar' },                              // gram  Ser vs. Estar
+    { lesson: 'nt-origen-a1' },                           // noti  De dónde eres y cuántos años tienes
+    { lesson: 'fn-identificar-a1' },                      // func  Identificar: qué es y quién es
+    { lesson: 'fn-agradecer-a1' },                        // func  Dar las gracias
+    { lesson: 'fn-establecer-comunicacion-a1' },          // func  Empezar y terminar una conversación
+    { lesson: 'task-presentarse' },                       // task  Preséntate
+    ] },
 
   /* ---- the rest of A1 ------------------------------------------------ */
   { verbs: ['querer', 'poder', 'ir', 'hacer', 'dar'] },
@@ -140,6 +149,7 @@ window.COURSE = [
   { lesson: 'gr-oraciones-actitud-hablante-a1' },       // gram  Tipos de oración según la actitud del hablante
 
   /* ---- A2 · 104 days · starts at index 94 ------------------------------- */
+  { band: 'A2' },
   { verbs: ['mejorar', 'empeorar', 'aumentar', 'evitar', 'crear'] },
   { lesson: 'preterito' },                              // gram  Pretérito (Preterite)
   { lesson: 'imperfecto' },                             // gram  Imperfecto (Imperfect)
@@ -246,6 +256,7 @@ window.COURSE = [
   { lesson: 'gr-verbos-predicativos-tipos-a2' },        // gram  Verbos que funcionan al revés: encantar, doler
 
   /* ---- B1 · 189 days · starts at index 198 ------------------------------- */
+  { band: 'B1' },
   { lesson: 'futuro' },                                 // gram  El futuro: forma, predicción y conjetura
   { lesson: 'condicional' },                            // gram  El condicional: forma, cortesía y modestia
   { lesson: 'gr-presente-subjuntivo-b1' },              // gram  El subjuntivo: cómo se forma y cuándo aparece
@@ -437,6 +448,7 @@ window.COURSE = [
   { lesson: 'fn-tranquilizar-consolar-b1' },            // func  Tranquilizar y consolar
 
   /* ---- B2 · 169 days · starts at index 387 ------------------------------- */
+  { band: 'B2' },
   { lesson: 'gr-que-explicativo-b2' },                  // gram  "Que" explicativo: la coma que añade, no que elige
   { lesson: 'gr-adverbios-enunciacion-b2' },            // gram  Adverbios de enunciación: comentar sobre las propias palab
   { lesson: 'gr-adverbios-frecuencia-topico-b2' },      // gram  Adverbios de frecuencia y el adverbio-tópico
@@ -608,6 +620,7 @@ window.COURSE = [
   { lesson: 'nt-visibilidad-vision-b2' },               // noti  Visibilidad y visión: a simple vista, distinguir, de lejos
 
   /* ---- C1 · 229 days · starts at index 556 ------------------------------- */
+  { band: 'C1' },
   { lesson: 'gr-clases-adjetivos-c1' },                 // gram  Cuyo, los adjetivos de color compuestos y el relacional qu
   { lesson: 'gr-articulo-definido-c1' },                // gram  El artículo definido en C1: valor enfático y sustantivador
   { lesson: 'gr-articulo-indefinido-c1' },              // gram  El artículo indefinido en C1: convertir un nombre propio e
@@ -839,5 +852,51 @@ window.COURSE = [
   { lesson: 'nt-volumen-capacidad-presion-c1' },        // noti  Volumen, capacidad y presión en C1: de "dar volumen al cab
 ];
 
-// Where each band starts. A band is a slice of one course, not a pool.
-window.COURSE_BANDS = {"A1":0,"A2":94,"B1":198,"B2":387,"C1":556};
+
+
+/* ============================================================================
+ * DERIVED — the flat day list, the unit index, and where each band starts.
+ *
+ * COURSE above is what a person edits: units that own their days, with bare
+ * day entries for the stretches not yet organised into units. Everything that
+ * CONSUMES the course wants a flat list of days, so it is computed here once
+ * rather than in each of the three readers.
+ *
+ * COURSE_BANDS used to be a hand-written object of indices at the bottom of
+ * this file, and every insertion silently invalidated it — inserting four verb
+ * days into A1 moved four band starts, and nothing would have complained if
+ * they had not been updated by hand. It is derived now, so it cannot drift.
+ * ========================================================================== */
+(function () {
+  var days = [], units = {}, bands = {}, cur = null;
+
+  function mark(band) {
+    if (!band) return;
+    cur = band;
+    if (!(band in bands)) bands[band] = days.length;
+  }
+  function push(day, unitId) {
+    // Each day carries the unit it belongs to (null while unassigned), so the
+    // session can name the unit without searching back through COURSE.
+    var out = { unit: unitId || null, band: cur };
+    Object.keys(day).forEach(function (k) { out[k] = day[k]; });
+    days.push(out);
+  }
+
+  (window.COURSE || []).forEach(function (e) {
+    if (e.unit) {
+      mark(e.band);
+      units[e.unit] = { id: e.unit, band: e.band || cur, title: e.title,
+                        goal: e.goal || null, canDo: e.canDo || [],
+                        from: days.length, length: (e.days || []).length };
+      (e.days || []).forEach(function (d) { push(d, e.unit); });
+      return;
+    }
+    if (e.band && !e.days) { mark(e.band); return; }   // a bare band marker
+    push(e, null);
+  });
+
+  window.COURSE_DAYS  = days;    // the flat sequence every reader walks
+  window.COURSE_UNITS = units;   // id -> { title, goal, canDo, from, length }
+  window.COURSE_BANDS = bands;   // band -> index of its first day
+})();

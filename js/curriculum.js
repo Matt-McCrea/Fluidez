@@ -20,14 +20,18 @@ window.Curriculum = (function () {
   // COURSE speaks {lesson|verbs|practice}; the session stages speak
   // {type:'grammar'|'verbs'|'practice'}. Translate at the boundary.
   function asFocus(e) {
-    if (e.verbs) return { type: 'verbs', verbs: e.verbs };
-    if (e.practice) return { type: 'practice' };
-    return { type: 'grammar', id: e.lesson };
+    // `unit` rides along on every focus so a stage can name the unit the day
+    // belongs to; it is null for days not yet organised into one.
+    if (e.verbs) return { type: 'verbs', verbs: e.verbs, unit: e.unit || null };
+    if (e.practice) return { type: 'practice', unit: e.unit || null };
+    return { type: 'grammar', id: e.lesson, unit: e.unit || null };
   }
 
   var CACHE = {};
   function build(cefr) {
-    var course = window.COURSE || [];
+    // COURSE is authored as units that own their days; COURSE_DAYS is that
+    // flattened, which is the shape a band slice and the session both want.
+    var course = window.COURSE_DAYS || [];
     var starts = window.COURSE_BANDS || {};
     var codes = Object.keys(starts).sort(function (a, b) { return starts[a] - starts[b]; });
     var i = codes.indexOf(cefr);
