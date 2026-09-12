@@ -46,5 +46,16 @@ window.Grammar = (function () {
     if (start) showDoc(start);
   }
 
-  return { render: render };
+  /* Open the reference at one lesson from anywhere — what an "Understand this
+   * better" link needs. The session runs in an overlay (js/app.js), so closing
+   * it first is what makes the reference visible; Shell owns the Más tab this
+   * view lives under. */
+  function open(id) {
+    if (window.Shell && window.Shell.closeOverlay) window.Shell.closeOverlay();
+    var host = document.getElementById('stage-host') ||
+               document.querySelector('.tab-host') || document.body;
+    render(host, function () { if (window.Shell) window.Shell.go('mas'); }, id);
+  }
+
+  return { render: render, open: open };
 })();

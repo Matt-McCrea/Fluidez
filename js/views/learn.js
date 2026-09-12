@@ -78,9 +78,17 @@ window.StageLearn = (function () {
       wrap.appendChild(UI.el('h3', null, 'Understand this better'));
       var ul = UI.el('ul', 'deeper-list');
       deeper.forEach(function (d) {
-        ul.appendChild(UI.el('li', null,
-          '<a href="#/grammar/' + d.id + '">' + d.title + '</a>' +
-          (d.summary ? ' <span class="muted">— ' + d.summary + '</span>' : '')));
+        var li = UI.el('li', null);
+        /* There is no URL router — the app is tab-based (js/app.js) — so this
+         * is a button into the Gramática reference, which already takes an
+         * openId. A plain <a href="#/…"> would look like a link and do
+         * nothing. */
+        var b = UI.el('button', 'deeper-link', d.title);
+        b.type = 'button';
+        b.addEventListener('click', function () { window.Grammar.open(d.id); });
+        li.appendChild(b);
+        if (d.summary) li.appendChild(UI.el('span', 'muted', ' — ' + d.summary));
+        ul.appendChild(li);
       });
       wrap.appendChild(ul);
     }

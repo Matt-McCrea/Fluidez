@@ -194,7 +194,12 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 }
 .deeper-list { padding-left:22px; }
 .deeper-list li { margin:7px 0; }
-.deeper-list a { color:var(--accent); font-weight:600; }
+.deeper-link {
+  background:none; border:none; padding:0; font:inherit; cursor:pointer;
+  color:var(--accent); font-weight:600; text-decoration:underline;
+  text-underline-offset:2px;
+}
+.deeper-link:hover { color:var(--accent-2); }
 
 /* ---- passage / comprehension ---- */
 .passage {
