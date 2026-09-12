@@ -23,6 +23,380 @@
 window.STRAND_LESSONS = [
 
 {
+  id: 'task-b2-registro', strand: 'task', cefr: 'B2', level: 7, theme: 'trabajo',
+  title: 'Di lo mismo en cinco salas',
+  canDo: 'say one thing five ways and know which room each belongs to',
+  summary: 'This is the unit the whole band turns on. B2 is not more vocabulary — it is knowing that "Pues sí", "Desde luego", "Estoy completamente de acuerdo" and "Comparto su punto de vista" are four rungs of one ladder, and that picking the wrong rung is the commonest way an advanced learner still sounds off.',
+  sections: [
+    { h: 'What to do', html: 'Take one position you actually hold. Express it five times: to a friend in a bar, to a colleague, in a meeting, in an email to someone senior, and in a letter to a newspaper. Same content, five registers.' },
+    { h: 'What changes, and what does not', html: 'The facts do not move. What moves is how much of yourself you commit (<i>yo creo</i> → <i>cabría señalar</i>), how directly you address the other person, and whether you hedge before or after the claim. Write the five next to each other and the ladder becomes visible.' }
+  ],
+  model: { title: 'one position, five rooms', text: '<p><b>Bar:</b> Es que eso no tiene sentido, hombre.</p><p><b>Con un compañero:</b> Yo lo veo distinto, la verdad. No me acaba de convencer.</p><p><b>En una reunión:</b> Entiendo el planteamiento, pero creo que habría que matizarlo en un punto.</p><p><b>Correo a dirección:</b> Comparto el objetivo general, si bien me gustaría plantear una reserva sobre los plazos.</p><p><b>Carta al director:</b> Cabría preguntarse si la medida, pese a su evidente buena intención, aborda realmente la causa del problema.</p>' },
+  checklist: [
+    'The same position, five times.',
+    'They are ordered from most colloquial to most formal.',
+    'Each is labelled with its room.',
+    'The content does not change — only the register.',
+    'At least one hedges before the claim and one after.'
+  ],
+  examples: [
+    { es: 'Yo lo veo distinto, la verdad.', en: 'I see it differently, to be honest.' },
+    { es: 'Entiendo el planteamiento, pero habría que matizarlo.', en: 'I take the point, but it needs qualifying.' },
+    { es: 'Cabría preguntarse si la medida aborda la causa.', en: 'One might ask whether the measure addresses the cause.' }
+  ],
+  probes: [
+    { id: 'p:task-b2-registro-1', kind: 'mcq',
+      q: 'Which belongs in a letter to a newspaper?',
+      options: ['Cabría preguntarse si la medida…', 'Es que eso no tiene sentido.', 'Yo lo veo distinto.'], answer: 0 },
+    { id: 'p:task-b2-registro-2', kind: 'mcq',
+      q: 'Moving up the register ladder mainly changes…',
+      options: ['how much of yourself you commit', 'the facts', 'the tense'], answer: 0 },
+    { id: 'p:task-b2-registro-3', kind: 'cloze',
+      text: 'Comparto el objetivo, ___ bien tengo una reserva.', accept: ['si'] }
+  ]
+},
+
+{
+  id: 'task-b2-argumento', strand: 'task', cefr: 'B2', level: 7, theme: 'politica',
+  title: 'Construye un argumento completo',
+  canDo: 'argue a case with evidence, a source, a counter-argument and a reservation',
+  summary: 'A B1 opinion states a view and gives reasons. A B2 argument anticipates the objection, names where its evidence comes from, and concedes what it must — which is what makes it persuasive rather than merely clear.',
+  sections: [
+    { h: 'What to do', html: '350 to 450 words on a contested question. Four moves: thesis, evidence with a source, the strongest counter-argument answered, and a reservation you genuinely hold.' },
+    { h: 'The reservation is the B2 move', html: 'Ending with a qualification — <i>dicho esto</i>, <i>ahora bien</i>, <i>si bien es cierto que</i> — signals that you have thought past your own conclusion. A conclusion with no reservation reads as a leaflet.' }
+  ],
+  model: { title: 'the four moves', text: '<p><b>Tesis:</b> Las ciudades deberían reducir drásticamente el espacio dedicado al coche privado.</p><p><b>Evidencia:</b> Según los datos del propio ayuntamiento, el 60% del suelo urbano está dedicado a un medio que usa menos de un tercio de los desplazamientos.</p><p><b>Contraargumento:</b> Se objeta, con razón, que esto penaliza a quien vive en la periferia y no tiene alternativa. Es un problema real, y cualquier plan que lo ignore fracasará.</p><p><b>Reserva:</b> Ahora bien, conviene no confundir la causa con el síntoma: el problema de la periferia no es que le quiten el coche, sino que nunca tuvo transporte público digno.</p>' },
+  checklist: [
+    '350 words or more, four clear moves.',
+    'Evidence is attributed to a source.',
+    'The counter-argument is stated at its strongest, then answered.',
+    'It ends with a genuine reservation, not a slogan.',
+    'At least three connectors of contrast or concession.'
+  ],
+  examples: [
+    { es: 'Según los datos del propio ayuntamiento…', en: 'According to the council\'s own figures…' },
+    { es: 'Se objeta, con razón, que…', en: 'It is objected, rightly, that…' },
+    { es: 'Ahora bien, conviene no confundir la causa con el síntoma.', en: 'That said, we should not confuse cause with symptom.' }
+  ],
+  probes: [
+    { id: 'p:task-b2-argumento-1', kind: 'mcq',
+      q: 'Where does the counter-argument belong?',
+      options: ['stated at its strongest, then answered', 'in the conclusion', 'left out'], answer: 0 },
+    { id: 'p:task-b2-argumento-2', kind: 'mcq',
+      q: 'Which introduces a reservation?',
+      options: ['Ahora bien', 'Por lo tanto', 'Es decir'], answer: 0 },
+    { id: 'p:task-b2-argumento-3', kind: 'cloze',
+      text: '___ bien es cierto que cuesta dinero, el beneficio compensa.', accept: ['Si'] }
+  ]
+},
+
+{
+  id: 'task-b2-hipotesis', strand: 'task', cefr: 'B2', level: 7, theme: 'ciencia',
+  title: 'Cuenta lo que no pasó',
+  canDo: 'talk about what would have happened, and hedge about what probably did',
+  summary: 'The compound subjunctives and the conjectural futures are one system: Spanish marks how sure you are inside the verb itself, which English does with separate words like "probably" and "must have".',
+  sections: [
+    { h: 'What to do', html: 'Write about a decision that went wrong, or nearly did. Twelve to eighteen sentences covering what happened, what would have happened otherwise, and what you suspect was going on that you did not know at the time.' },
+    { h: 'Guessing with a tense', html: '<i>Habrá salido</i> = he\'s probably left. <i>Habría salido</i> = he would have left. <i>No creo que haya salido</i> = I doubt he\'s left. Three different degrees of commitment, none needing an adverb.' }
+  ],
+  model: { title: 'what did not happen', text: '<p>Firmamos el contrato en marzo sin leer la cláusula doce. Si la hubiéramos leído, no habríamos firmado, o al menos habríamos pedido una revisión. Supongo que el abogado la habría visto — es imposible que se le pasara — pero no dijo nada. Puede que pensara que era estándar; puede que no quisiera retrasar la operación. Habrá tenido sus razones. El caso es que en septiembre nos reclamaron una cantidad que no esperábamos, y para entonces ya no había nada que hacer. Si hubiera sido cosa mía, lo habría llevado a juicio; mi socio prefirió pagar y olvidarlo. Puede que tuviera razón.</p>' },
+  checklist: [
+    'Twelve sentences or more.',
+    'At least two si + pluperfect subjunctive + conditional perfect.',
+    'At least one conjectural future or conditional (<i>habrá</i>, <i>habría</i>).',
+    'At least one <i>puede que</i> + subjunctive.',
+    'Tenses match across every comma.'
+  ],
+  examples: [
+    { es: 'Si la hubiéramos leído, no habríamos firmado.', en: 'If we had read it, we would not have signed.' },
+    { es: 'Habrá tenido sus razones.', en: 'He must have had his reasons.' },
+    { es: 'Puede que pensara que era estándar.', en: 'He may have thought it was standard.' }
+  ],
+  probes: [
+    { id: 'p:task-b2-hipotesis-1', kind: 'mcq',
+      q: '"Habrá salido ya" means:',
+      options: ['He has probably already left', 'He will leave', 'He would have left'], answer: 0 },
+    { id: 'p:task-b2-hipotesis-2', kind: 'mcq',
+      q: '"Si lo ___ sabido, no habría venido."',
+      options: ['hubiera', 'había', 'habría'], answer: 0 },
+    { id: 'p:task-b2-hipotesis-3', kind: 'cloze',
+      text: 'Puede que ___ razón. (tener, él)', accept: ['tuviera', 'tuviese'] }
+  ]
+},
+
+{
+  id: 'task-b2-emocion', strand: 'task', cefr: 'B2', level: 7, theme: 'relaciones',
+  title: 'Cuenta algo con la emoción medida',
+  canDo: 'express emotion with precision rather than volume',
+  summary: 'At B1 you could say you were angry. At B2 the skill is the difference between molesto, harto, indignado and de mal humor — four words the learner already half-knows, differing by intensity and by what caused them.',
+  sections: [
+    { h: 'What to do', html: 'Write about something that provoked a strong mixed reaction — relief and anger, pride and embarrassment. Fourteen to eighteen sentences, and no emotion word may be repeated.' },
+    { h: 'Precision beats intensity', html: '<i>Me molesta</i> (mild, ongoing) · <i>me fastidia</i> (colloquial, irritated) · <i>estoy harto de</i> (fed up, accumulated) · <i>me indigna</i> (moral outrage). Reaching straight for the strongest is a B1 habit; choosing correctly is B2.' }
+  ],
+  model: { title: 'a mixed reaction', text: '<p>Cuando por fin me llamaron para decirme que había plaza, sentí sobre todo alivio — llevaba cinco meses esperando y ya daba el asunto por perdido. Pero según colgaba me fue subiendo una especie de fastidio. Porque la plaza estaba desde julio, y a mí me habían dicho en julio que no había nada. No es que me indigne — tampoco es para tanto — pero sí me deja un poco de mal sabor. Me da rabia sobre todo por la gente que se rindió antes que yo y que habría entrado igual. En fin, no merece la pena darle más vueltas.</p>' },
+  checklist: [
+    'Fourteen sentences or more.',
+    'At least four different emotion expressions, none repeated.',
+    'At least two different intensities of the same family.',
+    'At least one emotion is qualified or walked back (<i>no es que…</i>).',
+    'The reaction is mixed, not single.'
+  ],
+  examples: [
+    { es: 'Me fue subiendo una especie de fastidio.', en: 'A sort of irritation crept up on me.' },
+    { es: 'No es que me indigne, pero me deja mal sabor.', en: 'It\'s not that it outrages me, but it leaves a bad taste.' },
+    { es: 'Me da rabia sobre todo por los demás.', en: 'It makes me angry mostly for the others\' sake.' }
+  ],
+  probes: [
+    { id: 'p:task-b2-emocion-1', kind: 'mcq',
+      q: 'Which is strongest?',
+      options: ['me indigna', 'me molesta', 'me fastidia'], answer: 0 },
+    { id: 'p:task-b2-emocion-2', kind: 'mcq',
+      q: '"No es que me indigne…" — the verb is subjunctive because:',
+      options: ['the speaker is denying the claim, not asserting it', 'it is in the past', 'it is a question'], answer: 0 },
+    { id: 'p:task-b2-emocion-3', kind: 'cloze',
+      text: 'Estoy ___ de esperar. (fed up)', accept: ['harto'] }
+  ]
+},
+
+{
+  id: 'task-b2-noticia', strand: 'task', cefr: 'B2', level: 7, theme: 'medios',
+  title: 'Resume y comenta una noticia',
+  canDo: 'follow journalistic Spanish and say what you make of it',
+  summary: 'News Spanish is where the B2 notion vocabulary earns itself: figures, proportions, rises and falls, sources, and the passive-ish se. None of it is exotic, and all of it is unreadable if you have not met it.',
+  sections: [
+    { h: 'What to do', html: 'Find a real Spanish news item. Summarise it in six sentences without copying its phrases, then comment on it in eight more.' },
+    { h: 'The moves to reuse', html: 'Quantities (<i>se ha duplicado</i>, <i>un tercio de</i>, <i>en torno a</i>), attribution (<i>según fuentes de</i>, <i>al parecer</i>), and distancing (<i>presuntamente</i>, <i>habría cobrado</i> — the conditional of unverified claim, which is everywhere in Spanish journalism).' }
+  ],
+  model: { title: 'summary and comment', text: '<p><b>Resumen:</b> El precio medio del alquiler en la ciudad ha subido un 12% en un año, según datos del portal inmobiliario más usado del país. La subida se concentra en tres barrios del centro, donde ronda el 20%. El ayuntamiento atribuye el alza al aumento del alquiler turístico; las asociaciones de propietarios lo niegan y culpan a la falta de obra nueva.</p><p><b>Comentario:</b> Llama la atención que ninguna de las dos partes aporte cifras propias. Al parecer, el estudio lo encargó el propio portal, lo cual no lo invalida pero conviene tenerlo en cuenta. Dicho esto, el dato coincide con lo que cualquiera observa: en mi propio edificio, dos pisos han pasado a alquiler turístico este año. Habría que ver qué pasa cuando se aplique la nueva normativa.</p>' },
+  checklist: [
+    'Six sentences of summary, eight of comment.',
+    'Nothing copied verbatim from the source.',
+    'At least three quantity expressions.',
+    'At least one attribution and one distancing device.',
+    'The comment questions something, rather than only agreeing.'
+  ],
+  examples: [
+    { es: 'El alquiler ha subido en torno a un 12%.', en: 'Rent has risen by around 12%.' },
+    { es: 'Según fuentes del ministerio…', en: 'According to ministry sources…' },
+    { es: 'El acusado habría cobrado comisiones.', en: 'The accused allegedly took commissions.' }
+  ],
+  probes: [
+    { id: 'p:task-b2-noticia-1', kind: 'mcq',
+      q: '"Habría cobrado" in a news report signals:',
+      options: ['the claim is unverified', 'it happened yesterday', 'it definitely happened'], answer: 0 },
+    { id: 'p:task-b2-noticia-2', kind: 'mcq',
+      q: 'Which attributes a claim to a source?',
+      options: ['según fuentes de', 'sin duda', 'desde luego'], answer: 0 },
+    { id: 'p:task-b2-noticia-3', kind: 'cloze',
+      text: 'El precio se ha ___ en cinco años. (doubled)', accept: ['duplicado'] }
+  ]
+},
+
+{
+  id: 'task-b2-citar', strand: 'task', cefr: 'B2', level: 7, theme: 'medios',
+  title: 'Cuenta lo que dijeron',
+  canDo: 'report what people said, and distance yourself from it',
+  summary: 'Reported speech at B2 is not just backshifting tenses. It is choosing a verb that carries your own judgement — dijo, afirmó, sostuvo, insinuó, soltó — and knowing that the choice is never neutral.',
+  sections: [
+    { h: 'What to do', html: 'Write an account of a real disagreement between two people, reporting what each said. Sixteen sentences or more, with no more than two uses of <i>decir</i> in the whole text.' },
+    { h: 'The verb carries the judgement', html: '<i>Afirmó</i> is neutral-formal. <i>Sostuvo</i> implies they held the line. <i>Insinuó</i> says they would not commit. <i>Soltó</i> says it came out badly. Choosing one is taking a position, and pretending otherwise is naive.' }
+  ],
+  model: { title: 'a reported disagreement', text: '<p>En la reunión del martes, Marta planteó que el calendario era inviable. Argumentó que en seis semanas no cabía ni el desarrollo ni las pruebas, y pidió que se aplazara el lanzamiento. Luis replicó que la fecha ya se había comunicado a los clientes. Marta insistió en que comunicar una fecha no la hace posible. En ese punto Luis soltó que si el equipo no llegaba, quizá el problema fuera el equipo — algo que, según me contaron después, no sentó nada bien. Marta se limitó a responder que revisaría los plazos y que enviaría una propuesta por escrito. No la ha enviado.</p>' },
+  checklist: [
+    'Sixteen sentences or more.',
+    'No more than two uses of <i>decir</i>.',
+    'At least five different speech verbs.',
+    'At least one verb that carries an evaluation (<i>soltó</i>, <i>insinuó</i>, <i>se limitó a</i>).',
+    'Tenses are backshifted consistently.'
+  ],
+  examples: [
+    { es: 'Argumentó que el calendario era inviable.', en: 'She argued the schedule was unworkable.' },
+    { es: 'Insinuó que el problema era otro.', en: 'He implied the problem was something else.' },
+    { es: 'Se limitó a responder que lo revisaría.', en: 'She merely replied that she would look at it.' }
+  ],
+  probes: [
+    { id: 'p:task-b2-citar-1', kind: 'mcq',
+      q: 'Which reporting verb implies the speaker would not commit?',
+      options: ['insinuó', 'afirmó', 'explicó'], answer: 0 },
+    { id: 'p:task-b2-citar-2', kind: 'mcq',
+      q: '"Dijo que el calendario ___ inviable."',
+      options: ['era', 'es', 'sea'], answer: 0 },
+    { id: 'p:task-b2-citar-3', kind: 'cloze',
+      text: 'Se ___ a responder que sí. (merely)', accept: ['limitó'] }
+  ]
+},
+
+{
+  id: 'task-b2-enfasis', strand: 'task', cefr: 'B2', level: 7, theme: 'arte',
+  title: 'Pon el peso donde quieras',
+  canDo: 'move the emphasis in a sentence without changing the words',
+  summary: 'Spanish word order is freer than English, and that freedom is information: what you put first is what you are treating as known, and what you leave last is what you are actually asserting.',
+  sections: [
+    { h: 'What to do', html: 'Take six plain sentences you have written. Rewrite each three ways, moving the emphasis to a different element, and say in one line what each version is answering.' },
+    { h: 'The devices', html: 'Fronting (<i>A Marta no la he visto</i>) · cleft (<i>Lo que pasa es que…</i> / <i>Fue Marta quien…</i>) · <i>lo de</i> (<i>lo de Marta</i>) · doubling the pronoun. Each answers a different implicit question.' }
+  ],
+  model: { title: 'one fact, three weightings', text: '<p><b>Neutro:</b> Marta envió el informe el viernes.</p><p><b>¿Quién lo envió?</b> Fue Marta quien envió el informe el viernes.</p><p><b>¿Y el informe?</b> El informe lo envió Marta el viernes.</p><p><b>¿Cuándo?</b> Lo que pasa es que el informe no llegó hasta el viernes.</p><p><b>Sobre el asunto Marta:</b> Lo de Marta se resolvió el viernes.</p>' },
+  checklist: [
+    'Six sentences, three rewrites each.',
+    'Each rewrite says what question it answers.',
+    'At least one cleft with <i>fue … quien</i>.',
+    'At least one fronting with a doubled pronoun.',
+    'At least one <i>lo de</i> or <i>lo que pasa es que</i>.'
+  ],
+  examples: [
+    { es: 'Fue Marta quien envió el informe.', en: 'It was Marta who sent the report.' },
+    { es: 'El informe lo envió Marta.', en: 'The report — Marta sent it.' },
+    { es: 'Lo de Marta se resolvió el viernes.', en: 'The Marta business was settled on Friday.' }
+  ],
+  probes: [
+    { id: 'p:task-b2-enfasis-1', kind: 'mcq',
+      q: '"Fue Marta quien lo envió" answers which question?',
+      options: ['Who sent it?', 'When was it sent?', 'What was sent?'], answer: 0 },
+    { id: 'p:task-b2-enfasis-2', kind: 'mcq',
+      q: 'Fronting an object usually requires:',
+      options: ['a doubled pronoun', 'the subjunctive', 'a question mark'], answer: 0 },
+    { id: 'p:task-b2-enfasis-3', kind: 'cloze',
+      text: '___ de Marta se resolvió ayer.', accept: ['Lo'] }
+  ]
+},
+
+{
+  id: 'task-b2-precision', strand: 'task', cefr: 'B2', level: 7, theme: 'ciencia',
+  title: 'Describe con precisión técnica',
+  canDo: 'describe properties, quantities and processes exactly',
+  summary: 'The B2 notion vocabulary is not decoration: denso, frágil, empapado, áspero, soso, agridulce, a simple vista. Without it every description collapses into bueno, malo, mucho and grande.',
+  sections: [
+    { h: 'What to do', html: 'Describe a process you know well — cooking something, fixing something, a procedure at work — in fifteen to twenty sentences, with no vague adjectives at all.' },
+    { h: 'Banned words', html: '<i>Bueno, malo, bonito, feo, grande, pequeño, mucho, muy</i>. Every one of them has a precise alternative, and the point of the exercise is to find it.' }
+  ],
+  model: { title: 'a process, precisely', text: '<p>Se empieza con la masa a temperatura ambiente; si está fría no se estira y se rompe. Se amasa unos diez minutos, hasta que deja de estar pegajosa y queda elástica: cuando la estiras entre los dedos debería hacerse casi transparente sin romperse. Se deja reposar en un cuenco tapado, en un sitio templado, en torno a hora y media, hasta que dobla su volumen. Al horno entra a 250 grados, lo más alto que dé. Diez minutos bastan. Se saca cuando el borde está dorado y la base suena hueca al golpearla.</p>' },
+  checklist: [
+    'Fifteen sentences or more.',
+    'None of the banned vague adjectives appears.',
+    'At least three measurements with units.',
+    'At least four precise property words (texture, consistency, temperature, sound).',
+    'Someone could follow it and get the same result.'
+  ],
+  examples: [
+    { es: 'Queda elástica y deja de estar pegajosa.', en: 'It turns elastic and stops being sticky.' },
+    { es: 'La base suena hueca al golpearla.', en: 'The base sounds hollow when you tap it.' },
+    { es: 'En torno a hora y media, hasta que dobla su volumen.', en: 'Around an hour and a half, until it doubles in size.' }
+  ],
+  probes: [
+    { id: 'p:task-b2-precision-1', kind: 'mcq',
+      q: 'Which is precise rather than vague?',
+      options: ['áspero al tacto', 'muy feo', 'bastante malo'], answer: 0 },
+    { id: 'p:task-b2-precision-2', kind: 'mcq',
+      q: '"A simple vista" means:',
+      options: ['to the naked eye', 'on purpose', 'at first'], answer: 0 },
+    { id: 'p:task-b2-precision-3', kind: 'cloze',
+      text: 'La masa está ___ : hay que enharinarla. (sticky)', accept: ['pegajosa'] }
+  ]
+},
+
+{
+  id: 'task-b2-formal', strand: 'task', cefr: 'B2', level: 7, theme: 'trabajo',
+  title: 'Escribe tres cartas formales',
+  canDo: 'write a job application, a complaint and a formal request',
+  summary: 'Formal written Spanish has fixed furniture — openings, closings, and a set of impersonal constructions — and using the wrong one is more visible in writing than any grammatical slip.',
+  sections: [
+    { h: 'What to do', html: 'Write three: a job application, a letter of complaint about something that actually annoyed you, and a request to an institution. Each 150 to 250 words.' },
+    { h: 'The furniture', html: '<i>Estimado/a Sr./Sra.</i> + colon, never a comma. <i>Me dirijo a usted para…</i> to open. <i>Quedo a la espera de su respuesta</i> and <i>Atentamente</i> to close. Impersonal <i>se</i> and passive throughout — a complaint in the first person singular reads as a tantrum.' }
+  ],
+  model: { title: 'a complaint', text: '<p>Estimados señores:</p><p>Me dirijo a ustedes en relación con el pedido n.º 48213, realizado el 3 de marzo y recibido el 19 del mismo mes, con dieciséis días de retraso sobre el plazo anunciado.</p><p>Al abrir el paquete se comprobó, además, que dos de los cuatro artículos presentaban daños visibles en el embalaje interior. Se adjuntan fotografías.</p><p>Habiendo contactado con su servicio de atención al cliente en dos ocasiones sin obtener respuesta, solicito la sustitución de los artículos dañados o, en su defecto, el reembolso del importe correspondiente.</p><p>Quedo a la espera de su respuesta.</p><p>Atentamente,<br>Tomás Kelly</p>' },
+  checklist: [
+    'Three letters, 150 words or more each.',
+    'Each opens and closes with the correct formula.',
+    'Impersonal or passive constructions are used, not first-person complaint.',
+    'Facts are specific: dates, reference numbers, amounts.',
+    'No contractions of register — usted throughout.'
+  ],
+  examples: [
+    { es: 'Me dirijo a ustedes en relación con el pedido n.º 48213.', en: 'I am writing regarding order no. 48213.' },
+    { es: 'Se comprobó que dos artículos presentaban daños.', en: 'It was found that two items were damaged.' },
+    { es: 'Quedo a la espera de su respuesta.', en: 'I look forward to your reply.' }
+  ],
+  probes: [
+    { id: 'p:task-b2-formal-1', kind: 'mcq',
+      q: 'What follows "Estimados señores" in a Spanish formal letter?',
+      options: ['a colon', 'a comma', 'a full stop'], answer: 0 },
+    { id: 'p:task-b2-formal-2', kind: 'mcq',
+      q: 'A complaint written in the first person singular reads as:',
+      options: ['a tantrum', 'more formal', 'more persuasive'], answer: 0 },
+    { id: 'p:task-b2-formal-3', kind: 'cloze',
+      text: 'Me ___ a ustedes en relación con el pedido. (dirigirse)', accept: ['dirijo'] }
+  ]
+},
+
+{
+  id: 'task-b2-conversar', strand: 'task', cefr: 'B2', level: 7, theme: 'relaciones',
+  title: 'Lleva una conversación difícil',
+  canDo: 'manage a conversation where you and the other person want different things',
+  summary: 'Everything in B2 comes together here: register, softening, holding the floor, conceding, and closing without either side losing face.',
+  sections: [
+    { h: 'What to do', html: 'Write a twenty-five turn conversation in which you have to tell someone something they do not want to hear, and reach an outcome.' },
+    { h: 'What makes it B2', html: 'Both people must move. Softening before the bad news, a concession from each side, at least one interruption handled, and an ending that is agreed rather than imposed.' }
+  ],
+  model: { title: 'a difficult conversation', text: '<p>—¿Tienes un momento?<br>—Claro, dime.<br>—Es sobre el proyecto. No sé muy bien cómo decirlo, así que lo digo directamente: no vamos a llegar al quince.<br>—¿Cómo que no vamos a llegar?<br>—Faltan las pruebas y la integración. Si forzamos, sale mal.<br>—Ya, pero es que la fecha está comunicada.<br>—Lo sé, y entiendo perfectamente el problema que eso te crea.<br>—A ver, espera — ¿qué falta exactamente?<br>—Tres días de pruebas y dos de integración, siendo optimistas.<br>—O sea, una semana.<br>—Una semana si todo va bien. Yo pediría diez días.<br>—Diez días no los tengo.<br>—Entonces habría que quitar algo del alcance. ¿Qué preferirías, retrasar o recortar?<br>—… Recortar, supongo. ¿Qué se puede quitar sin que se note?<br>—El módulo de informes. Nadie lo ha pedido todavía.<br>—Eso puedo defenderlo. Hazme una lista y la llevo yo al comité.<br>—Te la mando esta tarde.<br>—Vale. Y gracias por decírmelo ahora y no el catorce.</p>' },
+  checklist: [
+    'Twenty-five turns or more.',
+    'The bad news is softened before it is delivered.',
+    'Both people concede something.',
+    'At least one interruption, handled without losing the thread.',
+    'It ends in an agreed outcome, not an imposed one.'
+  ],
+  examples: [
+    { es: 'No sé muy bien cómo decirlo, así que lo digo directamente.', en: 'I\'m not sure how to put this, so I\'ll just say it.' },
+    { es: 'Entiendo perfectamente el problema que eso te crea.', en: 'I completely understand the problem that creates for you.' },
+    { es: '¿Qué preferirías, retrasar o recortar?', en: 'Which would you rather, delay or cut?' }
+  ],
+  probes: [
+    { id: 'p:task-b2-conversar-1', kind: 'mcq',
+      q: 'What comes BEFORE bad news in a B2 conversation?',
+      options: ['a softener', 'the conclusion', 'an apology for existing'], answer: 0 },
+    { id: 'p:task-b2-conversar-2', kind: 'mcq',
+      q: 'An outcome that both sides shaped is:',
+      options: ['agreed', 'imposed', 'postponed'], answer: 0 },
+    { id: 'p:task-b2-conversar-3', kind: 'cloze',
+      text: 'Entiendo el problema que eso te ___. (crear)', accept: ['crea'] }
+  ]
+},
+
+{
+  id: 'task-b2-repaso', strand: 'task', cefr: 'B2', level: 7, theme: 'educacion',
+  title: 'Reescribe algo tuyo en dos registros',
+  canDo: 'take your own writing up and down the register ladder',
+  summary: 'The band closes where it opened. You now have the ladder, the argument structure, the reporting verbs and the emphasis devices — this asks you to apply all four to something you already wrote.',
+  sections: [
+    { h: 'What to do', html: 'Take a piece you wrote earlier in B2. Rewrite it twice: once for a friend, once for publication. Keep all three versions side by side.' },
+    { h: 'What to check', html: 'Did the facts survive intact? Did you change more than vocabulary — word order, hedging, impersonality? Read the formal one aloud: if it sounds pompous rather than formal, you have gone one rung too far.' }
+  ],
+  model: { title: 'three versions of one paragraph', text: '<p><b>Original:</b> El alquiler ha subido mucho y la gente ya no puede vivir en el centro.</p><p><b>Para un amigo:</b> Es que se ha puesto imposible. Yo ya no conozco a nadie que pueda pagar un piso en el centro, en serio.</p><p><b>Para publicar:</b> El encarecimiento del alquiler ha expulsado del centro urbano a buena parte de quienes lo habitaban, un proceso que los datos municipales confirman y que no parece haber tocado techo.</p>' },
+  checklist: [
+    'Three versions of the same piece.',
+    'The facts are identical in all three.',
+    'Word order and hedging change, not just vocabulary.',
+    'The formal version uses at least one impersonal construction.',
+    'The formal version is not pompous — read it aloud to check.'
+  ],
+  examples: [
+    { es: 'Se ha puesto imposible.', en: 'It\'s become impossible.' },
+    { es: 'El encarecimiento ha expulsado del centro a buena parte de sus habitantes.', en: 'The rise in prices has driven much of the population out of the centre.' },
+    { es: '…un proceso que no parece haber tocado techo.', en: '…a process that does not appear to have peaked.' }
+  ],
+  probes: [
+    { id: 'p:task-b2-repaso-1', kind: 'mcq',
+      q: 'Going up the register ladder should change:',
+      options: ['word order and hedging as well as vocabulary', 'only vocabulary', 'the facts'], answer: 0 },
+    { id: 'p:task-b2-repaso-2', kind: 'mcq',
+      q: 'A formal version that sounds pompous means you have:',
+      options: ['gone one rung too far', 'not gone far enough', 'used the wrong tense'], answer: 0 },
+    { id: 'p:task-b2-repaso-3', kind: 'cloze',
+      text: 'Un proceso que no parece haber tocado ___.', accept: ['techo'] }
+  ]
+},
+
+{
   id: 'task-b1-fisico', strand: 'task', cefr: 'B1', level: 4, theme: 'ciencia',
   title: 'Describe algo con precisión',
   canDo: 'describe an object precisely — size, shape, material, state and where it is',
@@ -1720,7 +2094,7 @@ window.STRAND_LESSONS = [
 
 
 {
-  id: 'fn-acuerdo-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-acuerdo-b2', canDo: 'agree and disagree anywhere on the scale, from sin ninguna duda to en absoluto', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:252', 'funciones:B2:253', 'funciones:B2:254', 'funciones:B2:257',
          'funciones:B2:258', 'funciones:B2:259', 'funciones:B2:260', 'funciones:B2:262'],
   title: 'Expresar acuerdo',
@@ -1839,7 +2213,7 @@ window.STRAND_LESSONS = [
  * whether they produced the shape, not merely correct sentences.
  * ------------------------------------------------------------------------ */
 {
-  id: 'gn-reclamacion-b2', strand: 'genre', cefr: 'B2', level: 7, theme: 'servicios',
+  id: 'gn-reclamacion-b2', canDo: 'write a letter of complaint that gets a result', strand: 'genre', cefr: 'B2', level: 7, theme: 'servicios',
   pcic: ['generos_discursivos:B2:76', 'generos_discursivos:B2:77'],
   title: 'La carta de reclamación',
   summary: 'A complaint that is merely angry gets filed. A complaint that follows the expected shape — facts, harm, a specific demand, a deadline — gets actioned. B2 is where you are judged on the shape of the text, not just the correctness of its sentences.',
@@ -10009,7 +10383,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-presentacion-publica-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  id: 'gn-presentacion-publica-b2', canDo: 'give a public talk at B2 length', strand: 'genre', cefr: 'B2', level: 6, theme: null,
   pcic: ['generos_discursivos:B1:357', 'generos_discursivos:B1:368', 'generos_discursivos:B1:371', 'generos_discursivos:B1:383',
          'generos_discursivos:B1:390', 'generos_discursivos:B1:406', 'generos_discursivos:B1:409', 'generos_discursivos:B1:418',
          'generos_discursivos:B1:421', 'generos_discursivos:B1:425', 'generos_discursivos:B1:429', 'generos_discursivos:B1:458',
@@ -10095,7 +10469,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-carta-solicitud-trabajo-b2', strand: 'genre', cefr: 'B2', level: 6, theme: 'trabajo',
+  id: 'gn-carta-solicitud-trabajo-b2', canDo: 'write a job application letter', strand: 'genre', cefr: 'B2', level: 6, theme: 'trabajo',
   pcic: ['generos_discursivos:B1:551', 'generos_discursivos:B1:559', 'generos_discursivos:B1:570', 'generos_discursivos:B1:581',
          'generos_discursivos:B1:586', 'generos_discursivos:B1:590', 'generos_discursivos:B1:593', 'generos_discursivos:B1:598',
          'generos_discursivos:B1:602', 'generos_discursivos:B1:606', 'generos_discursivos:B1:609', 'generos_discursivos:B1:615',
@@ -10184,7 +10558,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-composicion-argumentativa-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  id: 'gn-composicion-argumentativa-b2', canDo: 'write a full argumentative composition', strand: 'genre', cefr: 'B2', level: 6, theme: null,
   pcic: ['generos_discursivos:B1:672', 'generos_discursivos:B1:682', 'generos_discursivos:B1:685', 'generos_discursivos:B1:691',
          'generos_discursivos:B1:693', 'generos_discursivos:B1:695', 'generos_discursivos:B1:697', 'generos_discursivos:B1:699',
          'generos_discursivos:B1:701', 'generos_discursivos:B1:715'],
@@ -12481,7 +12855,7 @@ window.STRAND_LESSONS = [
  * BATCH — B2 grammar, first 9 of 18 outstanding units.
  * ========================================================================== */
 {
-  id: 'gr-el-que-relativos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-el-que-relativos-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:248', 'gramatica:B2:249', 'gramatica:B2:250', 'gramatica:B2:251',
          'gramatica:B2:252', 'gramatica:B2:254', 'gramatica:B2:256', 'gramatica:B2:257'],
   title: 'El que, la que, los que, las que: el relativo tras preposición',
@@ -12519,7 +12893,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-que-explicativo-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-que-explicativo-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:244', 'gramatica:B2:245', 'gramatica:B2:246'],
   title: '"Que" explicativo: la coma que añade, no que elige',
   summary: 'Between commas, "que" stops selecting which one you mean and starts adding a comment about someone or something already fully identified — the difference between "the friends who came" (which ones?) and "my friends, who came,..." (all of them, plus a remark).',
@@ -12553,7 +12927,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-quien-quienes-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-quien-quienes-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:259', 'gramatica:B2:260', 'gramatica:B2:261', 'gramatica:B2:262'],
   title: 'Quien / quienes: solo para personas',
   summary: '"Quien" does everything "el que" does when the antecedent is human, but it is pickier: it never refers to things, it agrees only in number (not gender), and as a subject it never takes a preposition.',
@@ -12587,7 +12961,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-orden-interrogativos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-orden-interrogativos-b2', canDo: 'move what can be moved in a question', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:284', 'gramatica:B2:285', 'gramatica:B2:286', 'gramatica:B2:287'],
   title: 'El orden en las preguntas: lo que puede moverse',
   summary: 'A Spanish question puts more in front of the verb than a beginner rule of thumb suggests, and once the question word is placed, everything after the verb has real freedom of order. B2 is where those two facts stop being noise and start being usable.',
@@ -12623,7 +12997,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adverbios-frecuencia-topico-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-adverbios-frecuencia-topico-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:336', 'gramatica:B2:337', 'gramatica:B2:338', 'gramatica:B2:339',
          'gramatica:B2:340', 'gramatica:B2:341', 'gramatica:B2:346'],
   title: 'Adverbios de frecuencia y el adverbio-tópico',
@@ -12657,7 +13031,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adverbios-evaluativos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-adverbios-evaluativos-b2', canDo: 'comment on a whole sentence with one adverb', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:342', 'gramatica:B2:343', 'gramatica:B2:344', 'gramatica:B2:345'],
   title: 'Adverbios evaluativos: un comentario sobre toda la frase',
   summary: 'Words like "desgraciadamente" and "necesariamente" do not describe an action — they pass judgement on the whole sentence, from outside it, and can move almost anywhere without changing what they mean.',
@@ -12692,7 +13066,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adverbios-enunciacion-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-adverbios-enunciacion-b2', canDo: 'comment on my own act of saying something', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:357', 'gramatica:B2:358', 'gramatica:B2:359'],
   title: 'Adverbios de enunciación: comentar sobre las propias palabras',
   summary: 'A small set of adverbs talk about the DISCOURSE itself rather than the world — they narrow down a claim, correct a slip, or wrap up what has been said. They are the connective tissue of a well-organised explanation.',
@@ -12724,7 +13098,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-relativo-donde-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-relativo-donde-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:379', 'gramatica:B2:380', 'gramatica:B2:381', 'gramatica:B2:383'],
   title: 'Donde como relativo: lugares sin repetir "en el que"',
   summary: '"Donde" does the job of "en el/la que" for places, but more compactly — and it is the one relative that survives with no antecedent at all, since "the place where" is so often left unsaid.',
@@ -12756,7 +13130,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-condicional-compuesto-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-condicional-compuesto-b2', canDo: 'say what would have happened', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:460', 'gramatica:B2:462', 'gramatica:B2:463', 'gramatica:B2:464', 'gramatica:B2:465'],
   title: 'El condicional compuesto: habría + participio',
   summary: 'The compound conditional does for the past what the simple conditional does for the present: guesses, unreal conditions and reported plans, but all placed one step further back — something that WOULD HAVE happened, not would happen.',
@@ -12795,7 +13169,7 @@ window.STRAND_LESSONS = [
  * BATCH — B2 grammar, remaining 9 of 18 outstanding units.
  * ========================================================================== */
 {
-  id: 'gr-futuro-perfecto-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-futuro-perfecto-b2', canDo: 'say what will have happened by a point in the future', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:454', 'gramatica:B2:456', 'gramatica:B2:457', 'gramatica:B2:458'],
   title: 'El futuro perfecto: habré + participio',
   summary: 'Two unrelated-looking jobs share one form: marking that something will be finished before a future point, and guessing about something that has probably already happened. Both are "anteriority" — just anchored to a different moment.',
@@ -12828,7 +13202,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-impsubj-valores-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-impsubj-valores-b2', canDo: 'use the imperfect subjunctive beyond si tuviera', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:492', 'gramatica:B2:496', 'gramatica:B2:497', 'gramatica:B2:498',
          'gramatica:B2:499', 'gramatica:B2:500'],
   title: 'El imperfecto de subjuntivo: más allá del "si tuviera"',
@@ -12865,7 +13239,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-perfsubj-valores-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-perfsubj-valores-b2', canDo: 'doubt or hope that something has already happened', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:502', 'gramatica:B2:505', 'gramatica:B2:506'],
   title: 'El pretérito perfecto de subjuntivo: haya + participio',
   summary: 'The subjunctive mirror of "he hablado": an action finished but still relevant now, whenever the sentence needs the subjunctive mood. Its other job is quietly replacing the present subjunctive in time clauses that point at a future completion.',
@@ -12897,7 +13271,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-pluscuamsubj-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-pluscuamsubj-b2', canDo: 'say what had not happened, with hubiera + participio', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:508', 'gramatica:B2:510', 'gramatica:B2:511'],
   title: 'El pretérito pluscuamperfecto de subjuntivo: hubiera/hubiese + participio',
   summary: 'The deepest past the subjunctive reaches: something that had already happened before another past moment, whenever the sentence needs the subjunctive mood rather than the indicative "había hablado".',
@@ -12929,7 +13303,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-concordancia-sn-verbo-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-concordancia-sn-verbo-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:575', 'gramatica:B2:576', 'gramatica:B2:577', 'gramatica:B2:578'],
   title: 'Concordancia del sujeto con el verbo: los casos difíciles',
   summary: 'Most subject-verb agreement is automatic. Four situations are not: a collective noun that can take either number, a list of things that gets a singular verb, subjects joined by "o" or "ni", and a compound subject that native speakers feel as ONE thing.',
@@ -12963,7 +13337,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-complementos-sa-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-complementos-sa-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:587', 'gramatica:B2:588', 'gramatica:B2:589', 'gramatica:B2:590'],
   title: 'Complementos del adjetivo: difícil de, interesado en',
   summary: 'Many adjectives need a fixed preposition to attach their complement — and once that complement is a full clause rather than an infinitive, choosing indicative or subjunctive after it carries real meaning.',
@@ -12996,7 +13370,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-complemento-preposicional-regido-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-complemento-preposicional-regido-b2', canDo: 'use the preposition a verb fixes — decidirse a, contar con', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:636', 'gramatica:B2:637', 'gramatica:B2:638', 'gramatica:B2:639'],
   title: 'Verbos con preposición fija: decidirse a, contar con',
   summary: 'A large set of verbs demand a specific preposition before their complement, and swapping it can quietly change the meaning: "contar" alone means to count or to tell, "contar con" means to rely on.',
@@ -13029,7 +13403,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-subordinadas-lugar-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-subordinadas-lugar-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:824', 'gramatica:B2:827', 'gramatica:B2:828', 'gramatica:B2:830', 'gramatica:B2:832', 'gramatica:B2:834'],
   title: 'Oraciones subordinadas de lugar: donde con indicativo o subjuntivo',
   summary: 'Clauses of place built on "donde" work exactly like the more famous time clauses with "cuando": indicative for a place you know, subjunctive for one you do not — plus a small set of prepositions that pin down origin, destination or direction.',
@@ -13063,7 +13437,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-subordinadas-modo-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-subordinadas-modo-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:835', 'gramatica:B2:836', 'gramatica:B2:837', 'gramatica:B2:838'],
   title: 'Oraciones subordinadas de modo: como y según',
   summary: 'Same pattern as time and place clauses, applied to HOW something is done: indicative when the manner is known, subjunctive when it is left open to whoever is acting.',
@@ -13098,7 +13472,7 @@ window.STRAND_LESSONS = [
  * BATCH — B2 notion, all 10 outstanding units.
  * ========================================================================== */
 {
-  id: 'nt-peso-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'compras',
+  id: 'nt-peso-b2', canDo: 'talk about weight, loads and weighing something', strand: 'notion', cefr: 'B2', level: 6, theme: 'compras',
   pcic: ['nociones_generales:B2:248', 'nociones_generales:B2:249', 'nociones_generales:B2:250',
          'nociones_generales:B2:251', 'nociones_generales:B2:252'],
   title: 'El peso: tonelada, carga, pesarse',
@@ -13141,7 +13515,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-posicion-absoluta-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'cuerpo',
+  id: 'nt-posicion-absoluta-b2', canDo: 'describe posture — lying down, kneeling, inside out', strand: 'notion', cefr: 'B2', level: 6, theme: 'cuerpo',
   pcic: ['nociones_generales:B2:283', 'nociones_generales:B2:284', 'nociones_generales:B2:285',
          'nociones_generales:B2:286', 'nociones_generales:B2:287', 'nociones_generales:B2:288'],
   title: 'Posición absoluta: tumbado, de rodillas, del revés',
@@ -13183,7 +13557,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-anticipacion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'trabajo',
+  id: 'nt-anticipacion-b2', canDo: 'bring something forward, and do it in advance', strand: 'notion', cefr: 'B2', level: 6, theme: 'trabajo',
   pcic: ['nociones_generales:B2:586', 'nociones_generales:B2:587', 'nociones_generales:B2:588',
          'nociones_generales:B2:589', 'nociones_generales:B2:590', 'nociones_generales:B2:591',
          'nociones_generales:B2:592'],
@@ -13227,7 +13601,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-permanencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'trabajo',
+  id: 'nt-permanencia-b2', canDo: 'say something is stable, fixed, or has survived', strand: 'notion', cefr: 'B2', level: 6, theme: 'trabajo',
   pcic: ['nociones_generales:B2:683', 'nociones_generales:B2:684', 'nociones_generales:B2:685', 'nociones_generales:B2:686'],
   title: 'Permanencia: estable, fijo, sobrevivir',
   summary: 'Talking about what LASTS — a job, a home, a relationship — draws on a small, high-value set of adjectives and verbs that come up constantly in real conversations about stability and endurance.',
@@ -13267,7 +13641,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-repeticion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-repeticion-b2', canDo: 'talk about routines, cycles and doing something over and over', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:628', 'nociones_generales:B2:629', 'nociones_generales:B2:630',
          'nociones_generales:B2:631', 'nociones_generales:B2:633', 'nociones_generales:B2:634',
          'nociones_generales:B2:635', 'nociones_generales:B2:636', 'nociones_generales:B2:638'],
@@ -13312,7 +13686,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-simultaneidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-simultaneidad-b2', canDo: 'say two things happen at once, or coincide', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:552', 'nociones_generales:B2:553', 'nociones_generales:B2:554',
          'nociones_generales:B2:555', 'nociones_generales:B2:556'],
   title: 'Simultaneidad: mientras tanto, a la vez, coincidir',
@@ -13353,7 +13727,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-limpieza-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'vivienda',
+  id: 'nt-limpieza-b2', canDo: 'talk about stains, dirtying and cleaning thoroughly', strand: 'notion', cefr: 'B2', level: 6, theme: 'vivienda',
   pcic: ['nociones_generales:B2:884', 'nociones_generales:B2:885', 'nociones_generales:B2:886',
          'nociones_generales:B2:887', 'nociones_generales:B2:888', 'nociones_generales:B2:889'],
   title: 'Limpieza: mancha, ensuciar, limpiar a fondo',
@@ -13395,7 +13769,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-adecuacion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'trabajo',
+  id: 'nt-adecuacion-b2', canDo: 'say whether something fits the situation it is in', strand: 'notion', cefr: 'B2', level: 6, theme: 'trabajo',
   pcic: ['nociones_generales:B2:931', 'nociones_generales:B2:932', 'nociones_generales:B2:933'],
   title: 'Adecuación: adaptarse, apropiado',
   summary: 'A compact set for saying that something fits its purpose or its context — a period of adjustment, an appropriate choice, the ongoing process of adapting to something new.',
@@ -13432,7 +13806,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-interes-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'educacion',
+  id: 'nt-interes-b2', canDo: 'say what motivates or bores me, and what I am interested in', strand: 'notion', cefr: 'B2', level: 6, theme: 'educacion',
   pcic: ['nociones_generales:B2:961', 'nociones_generales:B2:962', 'nociones_generales:B2:963',
          'nociones_generales:B2:964', 'nociones_generales:B2:965'],
   title: 'Interés: motivación, aburrir, centro de interés',
@@ -13474,7 +13848,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-facilidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'educacion',
+  id: 'nt-facilidad-b2', canDo: 'say something is complex, or makes things easier', strand: 'notion', cefr: 'B2', level: 6, theme: 'educacion',
   pcic: ['nociones_generales:B2:1019', 'nociones_generales:B2:1020', 'nociones_generales:B2:1021',
          'nociones_generales:B2:1022', 'nociones_generales:B2:1023', 'nociones_generales:B2:1024'],
   title: 'Facilidad y dificultad: complejo, facilitar, con facilidad',
@@ -14272,7 +14646,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-expresar-certeza-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-expresar-certeza-b2', canDo: 'say how certain I am, and show scepticism without rudeness', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:366', 'funciones:B2:367', 'funciones:B2:368', 'funciones:B2:369'],
   title: 'Estoy absolutamente seguro/convencido: certeza total',
   summary: 'Reinforcing certainty is not just about adding "muy" — Spanish has specific intensifiers (absolutamente, firmemente, del todo) that pair with seguro/convencido and a family of complement structures for exactly what you are certain about.',
@@ -14351,7 +14725,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-falta-obligacion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-falta-obligacion-b2', canDo: 'say something is not necessary, with no hace falta que', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:430', 'funciones:B2:431', 'funciones:B2:432'],
   title: 'Expresar falta de obligación: no hace falta que...',
   summary: 'Telling someone they do NOT need to do something is its own function, distinct from a plain negative command — it reassures rather than forbids.',
@@ -14508,7 +14882,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-expresar-recordar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-expresar-recordar-b2', canDo: 'say I remember, half-remember, or have no idea', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:508'],
   title: 'Expresar que se recuerda: recuerdo, me acuerdo de',
   summary: 'The plain, general way to confirm you remember something — the everyday default before reaching for the more specific "me suena" or "no he olvidado" families.',
@@ -14767,7 +15141,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-expresar-alivio-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-expresar-alivio-b2', canDo: 'express relief, hope and resignation', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:824', 'funciones:B2:825', 'funciones:B2:826', 'funciones:B2:827'],
   title: 'Expresar alivio: ¡menos mal!',
   summary: 'Relief has a small set of exclamations, from the everyday "menos mal" to the more explicitly religious "gracias a Dios" — used even by non-religious speakers as a fixed expression.',
@@ -17027,7 +17401,7 @@ window.STRAND_LESSONS = [
  * finishing the B2 grammar strand (26/26).
  * ========================================================================== */
 {
-  id: 'gr-numero-sustantivos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-numero-sustantivos-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:20', 'gramatica:B2:21', 'gramatica:B2:22', 'gramatica:B2:23', 'gramatica:B2:24',
          'gramatica:B2:25', 'gramatica:B2:26', 'gramatica:B2:28'],
   title: 'Plurales irregulares: invariables, tónicos y léxicos',
@@ -17064,7 +17438,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-articulo-definido-valores-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-articulo-definido-valores-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:71', 'gramatica:B2:72', 'gramatica:B2:73', 'gramatica:B2:74', 'gramatica:B2:76'],
   title: 'El artículo definido: valor genérico y "lo" sustantivador',
   summary: 'The definite article can speak for a whole category rather than one thing — "el bolígrafo se usa para escribir" means pens in general — and the neuter "lo" goes further, turning an adjective, an adverb or even a whole question word into a noun phrase with nothing else needed.',
@@ -17099,7 +17473,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-articulo-indefinido-valores-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-articulo-indefinido-valores-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:84', 'gramatica:B2:85', 'gramatica:B2:86', 'gramatica:B2:89', 'gramatica:B2:91', 'gramatica:B2:92'],
   title: 'El artículo indefinido: restricciones sutiles',
   summary: 'The indefinite article looks simple until it meets a mass noun, an emphatic exclamation, or a noun that names an event rather than a thing — each context either forces a restrictive modifier onto it, lets it vanish for emphasis, or blocks it outright.',
@@ -17136,7 +17510,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-nombres-escuetos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-nombres-escuetos-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:99', 'gramatica:B2:100', 'gramatica:B2:101', 'gramatica:B2:102'],
   title: 'Nombres escuetos: sin artículo, con reglas propias',
   summary: 'A bare noun with no article can still be a grammatical subject — but only under specific conditions: a prenominal adjective, coordination with another bare noun, or fossilized combinations with semi-auxiliary verbs that behave almost like a single compound verb.',
@@ -17173,7 +17547,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-posesivos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-posesivos-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:126', 'gramatica:B2:128', 'gramatica:B2:129', 'gramatica:B2:131', 'gramatica:B2:132'],
   title: 'Los posesivos: forma tónica, fórmulas fijas',
   summary: 'The tonic possessive (mío, tuyo, suyo) survives mainly in fixed slots at B2: after "ser" for a slightly more formal identification, in fossilized exclamations, in an old-fashioned letter opening, and combined with an article and a relative clause where the atonic form cannot go.',
@@ -17208,7 +17582,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-cuantificadores-numerales-cualquier-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-cuantificadores-numerales-cualquier-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:159', 'gramatica:B2:160', 'gramatica:B2:162', 'gramatica:B2:163', 'gramatica:B2:167',
          'gramatica:B2:168', 'gramatica:B2:169', 'gramatica:B2:171', 'gramatica:B2:172', 'gramatica:B2:173'],
   title: 'Numerales partitivos/multiplicativos y cualquier/cualquiera',
@@ -17245,7 +17619,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-pronombre-personal-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-pronombre-personal-b2', canDo: 'use the accidental se and order clitics correctly', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:214', 'gramatica:B2:215', 'gramatica:B2:217', 'gramatica:B2:220', 'gramatica:B2:236',
          'gramatica:B2:237', 'gramatica:B2:238'],
   title: 'El pronombre personal: se accidental y la jerarquía de clíticos',
@@ -17283,7 +17657,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-exclamativos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-exclamativos-b2', canDo: 'exclaim with qué, cómo, cuánto and quién', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:292', 'gramatica:B2:294', 'gramatica:B2:296', 'gramatica:B2:297', 'gramatica:B2:299'],
   title: 'Los exclamativos: qué, cómo, cuánto y quién',
   summary: 'Beyond the basic "¡Qué + adjective!", B2 adds a "que + subordinate clause" extension, "cómo" reacting to a verb rather than a quality, "cuánto" agreeing (or not) depending on what follows, and "quién" preferring its invariable form even when logic might suggest otherwise.',
@@ -17320,7 +17694,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adverbios-nucleares-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-adverbios-nucleares-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:319', 'gramatica:B2:320', 'gramatica:B2:325', 'gramatica:B2:330', 'gramatica:B2:331', 'gramatica:B2:332'],
   title: 'Adverbios: combinaciones, cuantificadores y equivalencia adjetival',
   summary: 'B2 sharpens three fine points about adverbs: some combine with another deictic adverb but not all do, quantifiers like "muy" attach to some adverbs and not others with no obvious pattern, and a -mente adverb can sometimes be swapped for a plain adjective describing the subject with almost no change in meaning.',
@@ -17357,7 +17731,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-imperativo-valores-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-imperativo-valores-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:521', 'gramatica:B2:523', 'gramatica:B2:524', 'gramatica:B2:525', 'gramatica:B2:526'],
   title: 'El imperativo: valores más allá de la orden',
   summary: 'Doubled and lexicalized imperatives do jobs that have almost nothing to do with commanding: comforting, urging into action, or expressing pure surprise — "¡Anda!" as a reaction to news has no addressee at all in the sense a real command would.',
@@ -17394,7 +17768,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-formas-no-personales-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-formas-no-personales-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:546', 'gramatica:B2:547', 'gramatica:B2:549', 'gramatica:B2:552', 'gramatica:B2:554',
          'gramatica:B2:557', 'gramatica:B2:560', 'gramatica:B2:561'],
   title: 'Infinitivo, gerundio y participio: valores avanzados',
@@ -17432,7 +17806,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-complementos-nominales-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-complementos-nominales-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:567', 'gramatica:B2:568', 'gramatica:B2:571', 'gramatica:B2:572'],
   title: 'Complementos del nombre: ambiguos, no restrictivos, y sus límites',
   summary: 'A possessive-like prepositional phrase after a noun can be read three different ways at once — agent, theme or possessor — and a comma changes a defining detail into a mere aside; meanwhile stacking too many prepositional complements onto one noun quickly becomes ungrammatical, even when each one alone is fine.',
@@ -17468,7 +17842,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-nucleo-verbal-copulativos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-nucleo-verbal-copulativos-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:609', 'gramatica:B2:610', 'gramatica:B2:612', 'gramatica:B2:613', 'gramatica:B2:615',
          'gramatica:B2:617', 'gramatica:B2:618', 'gramatica:B2:621'],
   title: 'Auxiliares, copulativos y pseudocopulativos avanzados',
@@ -17506,7 +17880,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-subordinadas-sustantivas-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-subordinadas-sustantivas-b2', canDo: 'let the main verb decide indicative or subjunctive', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:679', 'gramatica:B2:680', 'gramatica:B2:681', 'gramatica:B2:684', 'gramatica:B2:685',
          'gramatica:B2:686', 'gramatica:B2:687', 'gramatica:B2:688'],
   title: 'Subordinadas sustantivas: el verbo principal decide el modo',
@@ -17544,7 +17918,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-subordinadas-relativas-tipos-b2', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-subordinadas-relativas-tipos-b2', status: 'reference', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:701', 'gramatica:B2:702', 'gramatica:B2:703', 'gramatica:B2:705', 'gramatica:B2:706',
          'gramatica:B2:707', 'gramatica:B2:709', 'gramatica:B2:710', 'gramatica:B2:717', 'gramatica:B2:722'],
   title: 'Relativas: especificativas, explicativas y sus restricciones',
@@ -17585,7 +17959,7 @@ window.STRAND_LESSONS = [
  * BATCH — B2 notion, part 1 (WORKLIST.md, section B2 · notion, § 1.1-1.9)
  * ========================================================================== */
 {
-  id: 'nt-existencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-existencia-b2', canDo: 'talk about creating, eliminating and causing things to exist', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:7', 'nociones_generales:B2:8', 'nociones_generales:B2:9', 'nociones_generales:B2:10',
          'nociones_generales:B2:11', 'nociones_generales:B2:12', 'nociones_generales:B2:13'],
   title: 'Existencia e inexistencia: crear, eliminar, provocar',
@@ -17626,7 +18000,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-presencia-ausencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-presencia-ausencia-b2', canDo: 'say who attended, who was missing, and what is in sight', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:20', 'nociones_generales:B2:22', 'nociones_generales:B2:23', 'nociones_generales:B2:26',
          'nociones_generales:B2:27', 'nociones_generales:B2:28', 'nociones_generales:B2:29', 'nociones_generales:B2:30'],
   title: 'Presencia y ausencia: asistir, faltar, a la vista',
@@ -17667,7 +18041,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-disponibilidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-disponibilidad-b2', canDo: 'say something has run out, is counted on, or is ready', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:35', 'nociones_generales:B2:36', 'nociones_generales:B2:37', 'nociones_generales:B2:38',
          'nociones_generales:B2:39', 'nociones_generales:B2:40', 'nociones_generales:B2:41', 'nociones_generales:B2:42', 'nociones_generales:B2:43'],
   title: 'Disponibilidad: agotarse, contar con, estar listo',
@@ -17710,7 +18084,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-cualidad-general-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-cualidad-general-b2', canDo: 'name properties, categories and what something is composed of', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:50', 'nociones_generales:B2:51', 'nociones_generales:B2:52', 'nociones_generales:B2:56',
          'nociones_generales:B2:59', 'nociones_generales:B2:60', 'nociones_generales:B2:61'],
   title: 'Cualidad general: propiedades, categorías, composición',
@@ -17751,7 +18125,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-acontecimiento-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-acontecimiento-b2', canDo: 'say an event took place, was chance, or was called off', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:66', 'nociones_generales:B2:67', 'nociones_generales:B2:68', 'nociones_generales:B2:69'],
   title: 'Acontecimiento: ocurrir, casualidad, suspender',
   summary: 'A single family of verbs describes something happening — ocurrir, suceder, producirse — with almost no difference in meaning, while casualidad names something that happens by CHANCE, not by anyone\'s design.',
@@ -17791,7 +18165,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-certeza-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-certeza-b2', canDo: 'talk about certainty with vocabulary, not only with mood', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:77', 'nociones_generales:B2:78', 'nociones_generales:B2:79', 'nociones_generales:B2:80',
          'nociones_generales:B2:85', 'nociones_generales:B2:87', 'nociones_generales:B2:90', 'nociones_generales:B2:91'],
   title: 'Certeza e incertidumbre: el vocabulario, más allá del modo',
@@ -17833,7 +18207,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-realidad-ficcion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-realidad-ficcion-b2', canDo: 'talk about inventing, pretending and something coming true', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:97', 'nociones_generales:B2:98', 'nociones_generales:B2:99', 'nociones_generales:B2:100',
          'nociones_generales:B2:101', 'nociones_generales:B2:102', 'nociones_generales:B2:103', 'nociones_generales:B2:104'],
   title: 'Realidad y ficción: inventar, simular, cumplirse',
@@ -17874,7 +18248,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-necesidad-contingencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-necesidad-contingencia-b2', canDo: 'say something is indispensable, inevitable, or pure chance', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:111', 'nociones_generales:B2:112', 'nociones_generales:B2:113', 'nociones_generales:B2:114'],
   title: 'Necesidad y azar: imprescindible, inevitablemente, por casualidad',
   summary: 'A small but sharp cluster: the strongest word for "needed" (imprescindible), the adverb for what could not have been avoided (inevitablemente), and the fixed phrase for something happening by pure chance (por casualidad).',
@@ -17913,7 +18287,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-generalidad-especificidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-generalidad-especificidad-b2', canDo: 'move between a general claim and a concrete case', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:118', 'nociones_generales:B2:119', 'nociones_generales:B2:120', 'nociones_generales:B2:121',
          'nociones_generales:B2:123', 'nociones_generales:B2:124', 'nociones_generales:B2:126', 'nociones_generales:B2:127'],
   title: 'Generalidad y especificidad: concretar, particular, en general',
@@ -17957,7 +18331,7 @@ window.STRAND_LESSONS = [
  * BATCH — B2 notion, part 2 (WORKLIST.md, section B2 · notion, § 2.1-2.5)
  * ========================================================================== */
 {
-  id: 'nt-cantidad-numerica-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-cantidad-numerica-b2', canDo: 'handle figures, indices and número + de', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:134', 'nociones_generales:B2:135', 'nociones_generales:B2:136', 'nociones_generales:B2:137', 'nociones_generales:B2:138'],
   title: 'Cantidad numérica: cifras, índices, "número + de"',
   summary: 'Statistics and reports need their own precision vocabulary — a rate is an índice, not a número, and a cardinal number followed by "de" picks a subset out of a larger group rather than counting the group itself.',
@@ -17996,7 +18370,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-cantidad-relativa-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-cantidad-relativa-b2', canDo: 'approximate a quantity without committing to it', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:147', 'nociones_generales:B2:148', 'nociones_generales:B2:151', 'nociones_generales:B2:153',
          'nociones_generales:B2:154', 'nociones_generales:B2:155', 'nociones_generales:B2:156'],
   title: 'Cantidad relativa: aproximar sin comprometerse',
@@ -18037,7 +18411,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-aumento-disminucion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'economia',
+  id: 'nt-aumento-disminucion-b2', canDo: 'describe a rise, a fall and something doubling', strand: 'notion', cefr: 'B2', level: 6, theme: 'economia',
   pcic: ['nociones_generales:B2:160', 'nociones_generales:B2:161', 'nociones_generales:B2:162', 'nociones_generales:B2:163',
          'nociones_generales:B2:164', 'nociones_generales:B2:165'],
   title: 'Aumento y disminución: crecer, duplicarse, cada vez más',
@@ -18078,7 +18452,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-proporcion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-proporcion-b2', canDo: 'divide, share out and give a fraction', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:169', 'nociones_generales:B2:170', 'nociones_generales:B2:172', 'nociones_generales:B2:173',
          'nociones_generales:B2:175', 'nociones_generales:B2:176'],
   title: 'Proporción: partir, repartir, la sexta parte',
@@ -18119,7 +18493,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-grado-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-grado-b2', canDo: 'intensify with something other than muy', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:181', 'nociones_generales:B2:182', 'nociones_generales:B2:183', 'nociones_generales:B2:184',
          'nociones_generales:B2:185', 'nociones_generales:B2:186', 'nociones_generales:B2:187'],
   title: 'Grado: intensificadores más allá de "muy"',
@@ -18166,7 +18540,7 @@ window.STRAND_LESSONS = [
  * BATCH — B2 notion, part 3 (WORKLIST.md, section B2 · notion, § 3.1-3.8)
  * ========================================================================== */
 {
-  id: 'nt-localizacion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-localizacion-b2', canDo: 'locate something with situado, quedar and hallarse', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:276', 'nociones_generales:B2:277', 'nociones_generales:B2:278', 'nociones_generales:B2:279', 'nociones_generales:B2:280'],
   title: 'Localización: situado, quedar, hallarse',
   summary: 'Beyond plain "estar", B2 offers participles that describe HOW something is positioned (situado, colocado, guardado, aparcado) and a set of near-synonyms (quedar, hallarse, encontrarse) that locate something with a slightly different formality or nuance each.',
@@ -18206,7 +18580,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-posicion-relativa-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-posicion-relativa-b2', canDo: 'describe relative position — front, back, along, the other side', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:300', 'nociones_generales:B2:301', 'nociones_generales:B2:305', 'nociones_generales:B2:308',
          'nociones_generales:B2:309', 'nociones_generales:B2:311', 'nociones_generales:B2:312', 'nociones_generales:B2:314'],
   title: 'Posición relativa: delantero/trasero, a lo largo de, al otro lado',
@@ -18248,7 +18622,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-distancia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-distancia-b2', canDo: 'bring closer, move away and describe distance', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:322', 'nociones_generales:B2:323', 'nociones_generales:B2:325', 'nociones_generales:B2:326',
          'nociones_generales:B2:327', 'nociones_generales:B2:328', 'nociones_generales:B2:329'],
   title: 'Distancia: acercar(se), alejar(se), a distancia',
@@ -18290,7 +18664,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-movimiento-estabilidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-movimiento-estabilidad-b2', canDo: 'use a different verb for each phase of a movement', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:353', 'nociones_generales:B2:354', 'nociones_generales:B2:358', 'nociones_generales:B2:359',
          'nociones_generales:B2:361', 'nociones_generales:B2:362', 'nociones_generales:B2:364', 'nociones_generales:B2:365',
          'nociones_generales:B2:366', 'nociones_generales:B2:369'],
@@ -18335,7 +18709,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-orientacion-direccion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-orientacion-direccion-b2', canDo: 'give direction and orientation — dirigirse a, empujar, a domicilio', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:378', 'nociones_generales:B2:383', 'nociones_generales:B2:384', 'nociones_generales:B2:385',
          'nociones_generales:B2:386', 'nociones_generales:B2:388', 'nociones_generales:B2:389'],
   title: 'Orientación y dirección: dirigirse a, empujar/tirar, a domicilio',
@@ -18377,7 +18751,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-orden-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-orden-b2', canDo: 'say things are in order, out of place, or in sequence', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:399', 'nociones_generales:B2:400', 'nociones_generales:B2:402', 'nociones_generales:B2:403',
          'nociones_generales:B2:404', 'nociones_generales:B2:406', 'nociones_generales:B2:410'],
   title: 'Orden: puesto, colocado/descolocado, por orden',
@@ -18418,7 +18792,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-origen-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-origen-b2', canDo: 'talk about roots, provenance and where something comes from', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:410', 'nociones_generales:B2:411', 'nociones_generales:B2:412', 'nociones_generales:B2:413'],
   title: 'Origen: raíz, procedencia, proceder de',
   summary: 'A small cluster naming where something comes from, figuratively (the raíz of a problem) as often as literally (the procedencia of a product) — with "proceder de" as the neutral verb that covers both.',
@@ -18460,7 +18834,7 @@ window.STRAND_LESSONS = [
  * BATCH — B2 notion, part 4 (WORKLIST.md, section B2 · notion, § 4.1-5.1)
  * ========================================================================== */
 {
-  id: 'nt-referencias-generales-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-referencias-generales-b2', canDo: 'place something loosely in time — a mediados de, hacia', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:428', 'nociones_generales:B2:429', 'nociones_generales:B2:431', 'nociones_generales:B2:436',
          'nociones_generales:B2:437', 'nociones_generales:B2:438', 'nociones_generales:B2:442', 'nociones_generales:B2:443', 'nociones_generales:B2:446'],
   title: 'Referencias temporales: dedicar tiempo, a mediados de, hacia',
@@ -18502,7 +18876,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-localizacion-tiempo-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-localizacion-tiempo-b2', canDo: 'say how long since, long ago, and short or long term', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:475', 'nociones_generales:B2:477', 'nociones_generales:B2:480', 'nociones_generales:B2:482',
          'nociones_generales:B2:484', 'nociones_generales:B2:485', 'nociones_generales:B2:491', 'nociones_generales:B2:492',
          'nociones_generales:B2:496', 'nociones_generales:B2:501', 'nociones_generales:B2:504'],
@@ -18545,7 +18919,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-formas-figuras-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-formas-figuras-b2', canDo: 'name everyday shapes and geometry', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:699', 'nociones_generales:B2:701', 'nociones_generales:B2:703', 'nociones_generales:B2:706',
          'nociones_generales:B2:707', 'nociones_generales:B2:708', 'nociones_generales:B2:709'],
   title: 'Formas y figuras: geometría cotidiana',
@@ -18592,7 +18966,7 @@ window.STRAND_LESSONS = [
  * adjectives with almost no worked examples in the source.
  * ========================================================================== */
 {
-  id: 'nt-consistencia-resistencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-consistencia-resistencia-b2', canDo: 'describe how dense, fragile or resistant something is', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:716', 'nociones_generales:B2:717', 'nociones_generales:B2:719', 'nociones_generales:B2:721',
          'nociones_generales:B2:722', 'nociones_generales:B2:725', 'nociones_generales:B2:726', 'nociones_generales:B2:727'],
   title: 'Consistencia y resistencia: denso, frágil, resistente a',
@@ -18633,7 +19007,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-textura-acabado-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-textura-acabado-b2', canDo: 'describe texture and finish — rough, creased, a coat of paint', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:733', 'nociones_generales:B2:734', 'nociones_generales:B2:735', 'nociones_generales:B2:736',
          'nociones_generales:B2:742', 'nociones_generales:B2:744', 'nociones_generales:B2:745'],
   title: 'Textura y acabado: áspero, arrugado, una mano de pintura',
@@ -18675,7 +19049,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-humedad-sequedad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-humedad-sequedad-b2', canDo: 'describe wet and dry — soaked, sweating, dry-cleaned', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:751', 'nociones_generales:B2:754', 'nociones_generales:B2:756', 'nociones_generales:B2:757',
          'nociones_generales:B2:758', 'nociones_generales:B2:759', 'nociones_generales:B2:760'],
   title: 'Humedad y sequedad: empapado, transpirar, en seco',
@@ -18717,7 +19091,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-materia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-materia-b2', canDo: 'say what something is manufactured with and what it contains', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:768', 'nociones_generales:B2:769', 'nociones_generales:B2:770', 'nociones_generales:B2:773',
          'nociones_generales:B2:774', 'nociones_generales:B2:775', 'nociones_generales:B2:776'],
   title: 'Materia: estar fabricado con, contener un ingrediente',
@@ -18758,7 +19132,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-visibilidad-vision-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-visibilidad-vision-b2', canDo: 'say what is visible to the naked eye and what I can make out', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:786', 'nociones_generales:B2:791', 'nociones_generales:B2:793', 'nociones_generales:B2:795',
          'nociones_generales:B2:797', 'nociones_generales:B2:801', 'nociones_generales:B2:802', 'nociones_generales:B2:803'],
   title: 'Visibilidad y visión: a simple vista, distinguir, de lejos',
@@ -18800,7 +19174,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-audibilidad-audicion-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-audibilidad-audicion-b2', canDo: 'describe how something sounds and how loud it is', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:813', 'nociones_generales:B2:814', 'nociones_generales:B2:817', 'nociones_generales:B2:819',
          'nociones_generales:B2:822', 'nociones_generales:B2:823', 'nociones_generales:B2:824'],
   title: 'Audibilidad: sonar, a gritos, a todo volumen',
@@ -18842,7 +19216,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-sabor-olor-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'alimentacion',
+  id: 'nt-sabor-olor-b2', canDo: 'describe taste and smell — bland, bittersweet, oler a', strand: 'notion', cefr: 'B2', level: 6, theme: 'alimentacion',
   pcic: ['nociones_generales:B2:832', 'nociones_generales:B2:833', 'nociones_generales:B2:834', 'nociones_generales:B2:840',
          'nociones_generales:B2:841', 'nociones_generales:B2:843'],
   title: 'Sabor y olor: soso, agridulce, oler a',
@@ -18883,7 +19257,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-color-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-color-b2', canDo: 'use compound shades and ser de color', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:849', 'nociones_generales:B2:851', 'nociones_generales:B2:852', 'nociones_generales:B2:853',
          'nociones_generales:B2:856', 'nociones_generales:B2:857', 'nociones_generales:B2:859'],
   title: 'Color: tonos compuestos, ser de color, en blanco y negro',
@@ -18925,7 +19299,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-edad-vejez-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-edad-vejez-b2', canDo: 'use recién + participio, and talk about fresh, rotten and brand new', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:864', 'nociones_generales:B2:866', 'nociones_generales:B2:868', 'nociones_generales:B2:870',
          'nociones_generales:B2:871', 'nociones_generales:B2:872', 'nociones_generales:B2:877'],
   title: 'Edad y vejez: recién + participio, fresco/podrido, estrenar',
@@ -18973,7 +19347,7 @@ window.STRAND_LESSONS = [
  * thin (6 pt) cluster of evaluative adjectives with no worked examples.
  * ========================================================================== */
 {
-  id: 'nt-evaluacion-general-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-evaluacion-general-b2', canDo: 'judge how something turned out, and whether it was worth it', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:896', 'nociones_generales:B2:897', 'nociones_generales:B2:899', 'nociones_generales:B2:900',
          'nociones_generales:B2:901', 'nociones_generales:B2:902', 'nociones_generales:B2:903'],
   title: 'Evaluación general: salirle/irle algo a alguien, valer la pena',
@@ -19015,7 +19389,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-valor-precio-b2', strand: 'notion', cefr: 'B2', level: 6, theme: 'economia',
+  id: 'nt-valor-precio-b2', canDo: 'talk about investing, discounts and gaining or losing value', strand: 'notion', cefr: 'B2', level: 6, theme: 'economia',
   pcic: ['nociones_generales:B2:909', 'nociones_generales:B2:911', 'nociones_generales:B2:913', 'nociones_generales:B2:914',
          'nociones_generales:B2:916', 'nociones_generales:B2:917', 'nociones_generales:B2:918'],
   title: 'Valor y precio: invertir, estar en oferta, ganar/perder valor',
@@ -19056,7 +19430,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-correccion-precision-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-correccion-precision-b2', canDo: 'talk about errors, accuracy and seeing something clearly', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:943', 'nociones_generales:B2:944', 'nociones_generales:B2:945', 'nociones_generales:B2:946',
          'nociones_generales:B2:953', 'nociones_generales:B2:954', 'nociones_generales:B2:956', 'nociones_generales:B2:958'],
   title: 'Corrección y precisión: fallo, exacto, verlo claro',
@@ -19098,7 +19472,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-exito-logro-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-exito-logro-b2', canDo: 'talk about succeeding, failing and becoming something', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:971', 'nociones_generales:B2:972', 'nociones_generales:B2:973', 'nociones_generales:B2:974', 'nociones_generales:B2:975'],
   title: 'Éxito y logro: triunfar, fracasar, llegar a ser',
   summary: '"Llegar a ser" marks a gradual achievement reached over time — becoming a doctor, becoming successful — distinct from a sudden change, and the triunfar/fracasar pair names competitive success or failure specifically, not everyday good or bad luck.',
@@ -19138,7 +19512,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-utilidad-uso-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-utilidad-uso-b2', canDo: 'talk about using something and about it being out of service', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:980', 'nociones_generales:B2:981', 'nociones_generales:B2:982', 'nociones_generales:B2:985', 'nociones_generales:B2:986'],
   title: 'Utilidad y uso: utilizar/emplear, fuera de servicio',
   summary: '"Estar fuera de uso/servicio" marks something that used to function and no longer does — a specific, checkable claim distinct from simply calling something "inútil", which can describe something that never worked at all.',
@@ -19178,7 +19552,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-capacidad-competencia-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-capacidad-competencia-b2', canDo: 'say what I am good at with dársele bien and ser capaz de', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:991', 'nociones_generales:B2:993', 'nociones_generales:B2:994', 'nociones_generales:B2:995',
          'nociones_generales:B2:997', 'nociones_generales:B2:998', 'nociones_generales:B2:999'],
   title: 'Capacidad y competencia: dársele bien, ser capaz de',
@@ -19219,7 +19593,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-importancia-normalidad-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-importancia-normalidad-b2', canDo: 'say something matters, or does not, and that it is the norm', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:1004', 'nociones_generales:B2:1006', 'nociones_generales:B2:1008', 'nociones_generales:B2:1013',
          'nociones_generales:B2:1015', 'nociones_generales:B2:1016', 'nociones_generales:B2:1017'],
   title: 'Importancia y normalidad: dar lo mismo, por norma',
@@ -19260,7 +19634,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-reflexion-conocimiento-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-reflexion-conocimiento-b2', canDo: 'say something occurred to me, that I am aware of it, or that I found out', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:1034', 'nociones_generales:B2:1037', 'nociones_generales:B2:1040', 'nociones_generales:B2:1041',
          'nociones_generales:B2:1042', 'nociones_generales:B2:1044', 'nociones_generales:B2:1045'],
   title: 'Reflexión y conocimiento: ocurrírsele, ser consciente de, enterarse',
@@ -19302,7 +19676,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-expresion-verbal-b2', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-expresion-verbal-b2', canDo: 'vary the speech verb well beyond decir', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:1063', 'nociones_generales:B2:1073', 'nociones_generales:B2:1074', 'nociones_generales:B2:1075',
          'nociones_generales:B2:1076', 'nociones_generales:B2:1077', 'nociones_generales:B2:1078', 'nociones_generales:B2:1079'],
   title: 'Expresión verbal: variar el verbo de habla más allá de "decir"',
@@ -19347,7 +19721,7 @@ window.STRAND_LESSONS = [
  * BATCH — B2 function, part 1 (WORKLIST.md, section B2 · function, § 1.1-2.23)
  * ========================================================================== */
 {
-  id: 'fn-identificar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-identificar-b2', canDo: 'pick something out with el que, lo de and se trata de', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:4', 'funciones:B2:5', 'funciones:B2:6', 'funciones:B2:9', 'funciones:B2:10'],
   title: 'Identificar: el/los que, lo de, se trata de',
   summary: 'B2 identifies through nominalized fragments — "los de la camiseta roja", "lo de ir a ese restaurante" — that name a group or a whole topic without repeating the noun, plus the formal frame "se trata de" for introducing what something IS.',
@@ -19387,7 +19761,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-dar-informacion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-dar-informacion-b2', canDo: 'give information and correct it with nuance, manner and purpose', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:80', 'funciones:B2:84', 'funciones:B2:87', 'funciones:B2:90', 'funciones:B2:91',
          'funciones:B2:92', 'funciones:B2:93', 'funciones:B2:95', 'funciones:B2:96', 'funciones:B2:99'],
   title: 'Dar información: corregir con matiz, modo y finalidad',
@@ -19468,7 +19842,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-dar-opinion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-dar-opinion-b2', canDo: 'give an opinion, ask for one, and qualify my own', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:143', 'funciones:B2:144', 'funciones:B2:145', 'funciones:B2:146', 'funciones:B2:147', 'funciones:B2:148'],
   title: 'Dar una opinión: a mi modo de ver, considero que, yo diría que',
   summary: 'B2 grades the confidence of an opinion through its verb — "veo que" reports something you observe as near-fact, "yo diría que" hedges toward a guess — six frames on a spectrum from assertive to tentative, all before the actual content of the opinion.',
@@ -19589,7 +19963,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-aprobacion-desaprobacion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-aprobacion-desaprobacion-b2', canDo: 'approve, disapprove and reproach at the right strength', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:217', 'funciones:B2:218', 'funciones:B2:219', 'funciones:B2:220'],
   title: 'Expresar aprobación y desaprobación: no deberías haberlo hecho',
   summary: 'B2\'s disapproval reaches into the past with the compound conditional — "no deberías haberlo hecho" judges an action already finished, which the simple "no deberías hacerlo" cannot do since it still points at the future.',
@@ -19751,7 +20125,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-posibilidad-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-posibilidad-b2', canDo: 'guess with the future and conditional of conjecture', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:406', 'funciones:B2:407', 'funciones:B2:409', 'funciones:B2:411', 'funciones:B2:412', 'funciones:B2:413',
          'funciones:B2:416', 'funciones:B2:417', 'funciones:B2:418', 'funciones:B2:419'],
   title: 'Expresar posibilidad: el futuro y condicional de conjetura',
@@ -19833,7 +20207,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-conocimiento-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-conocimiento-b2', canDo: 'say what I know, what I do not, and confirm something', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:455', 'funciones:B2:456', 'funciones:B2:458', 'funciones:B2:459', 'funciones:B2:460', 'funciones:B2:461'],
   title: 'Expresar conocimiento: me he enterado de que...',
   summary: '"Enterarse" marks the specific MOMENT knowledge arrived — often by chance or through a particular channel — which is why it dominates this function, distinct from "saber", which is the resulting state with no story attached to how you got there.',
@@ -19874,7 +20248,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-habilidad-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-habilidad-b2', canDo: 'say what I am good and hopeless at', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:489', 'funciones:B2:490', 'funciones:B2:491', 'funciones:B2:492', 'funciones:B2:493'],
   title: 'Expresar habilidad: negado para, se me da bien, tener facilidad',
   summary: '"Ser un negado para" is the vivid, self-deprecating opposite of talent — a fixed idiom, not a literal claim of negation — while "se me da bien/mal" keeps the gustar-pattern already met for aptitude, this time specifically for skill rather than general liking.',
@@ -20081,7 +20455,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-deseos-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-deseos-b2', canDo: 'express wishes, tastes, preferences and plans', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:619', 'funciones:B2:620', 'funciones:B2:622', 'funciones:B2:623', 'funciones:B2:628', 'funciones:B2:630'],
   title: 'Expresar deseos: ojalá, me hace ilusión, sueño con',
   summary: '"Ojalá" needs no verb of wishing at all — it IS the wish, grammatically fused with the subjunctive that follows — while "soñar con" and "me hace ilusión" each add a distinct emotional flavor plain "querer" cannot carry.',
@@ -20202,7 +20576,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-alegria-satisfaccion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-alegria-satisfaccion-b2', canDo: 'express joy, pleasure, affection and pride', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:685', 'funciones:B2:689', 'funciones:B2:691', 'funciones:B2:694', 'funciones:B2:696'],
   title: 'Expresar alegría: me alegro de que, me pone de buen humor',
   summary: '"Me pone de buen humor" names something that reliably TRIGGERS happiness — a season, a song — distinct from "me alegro de que", which reacts to one specific piece of news, both still following the familiar que + subjuntivo fork.',
@@ -20242,7 +20616,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-tristeza-afliccion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-tristeza-afliccion-b2', canDo: 'express sadness, disappointment and regret', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:715', 'funciones:B2:717', 'funciones:B2:719', 'funciones:B2:721', 'funciones:B2:723', 'funciones:B2:724'],
   title: 'Expresar tristeza: me da pena que, lo paso fatal',
   summary: '"Me duele/me hace daño que" claims emotional pain almost physically, stronger than "me pone triste", while "lo paso fatal" reports living through a whole difficult period rather than reacting to one single fact.',
@@ -20363,7 +20737,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-enfado-indignacion-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-enfado-indignacion-b2', canDo: 'express anger, exasperation and aversion at the right pitch', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:768', 'funciones:B2:770', 'funciones:B2:771', 'funciones:B2:772', 'funciones:B2:774', 'funciones:B2:775'],
   title: 'Expresar enfado e indignación: me indigna, no aguanto que',
   summary: '"Me indigna" reacts to a moral outrage — an injustice, an abuse of power — while "me da rabia" is more personal, everyday frustration; "no aguanto que" adds that you have reached your limit, not just that something bothers you.',
@@ -20403,7 +20777,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-miedo-ansiedad-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-miedo-ansiedad-b2', canDo: 'express fear, nerves and embarrassment', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:789', 'funciones:B2:791', 'funciones:B2:792', 'funciones:B2:793', 'funciones:B2:796', 'funciones:B2:798'],
   title: 'Expresar miedo y preocupación: me preocupa que, tengo miedo de que',
   summary: '"Me importa" quietly slides into this function too — caring about an outcome is one step away from worrying about it — while "tengo miedo A/DE que" and "me da miedo/pánico/terror que" grade fear from mild to extreme, all needing the subjunctive.',
@@ -20444,7 +20818,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-empatia-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-empatia-b2', canDo: 'console, encourage and sit with someone', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:816', 'funciones:B2:817', 'funciones:B2:818', 'funciones:B2:819', 'funciones:B2:821'],
   title: 'Expresar empatía: sé cómo te sientes, a mí me pasa lo mismo',
   summary: '"A mí me pasa lo mismo" builds solidarity by claiming shared experience, a different move from "sé cómo te sientes", which claims understanding without asserting the same thing happened to you — two distinct ways of showing you are on someone\'s side.',
@@ -20564,7 +20938,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-sorpresa-extraneza-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-sorpresa-extraneza-b2', canDo: 'express surprise with qué raro que and no puede ser', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:877', 'funciones:B2:879', 'funciones:B2:880', 'funciones:B2:883', 'funciones:B2:884', 'funciones:B2:887'],
   title: 'Expresar sorpresa: qué raro que, no puede ser',
   summary: '"¡Anda!" reacting to a surprising fact has drifted entirely from its literal meaning of walking, joining a whole set of fixed exclamations (¡No puede ser!, ¡No me digas!) that exist purely as surprise reactions with no compositional meaning left.',
@@ -20685,7 +21059,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-sensaciones-fisicas-b2', strand: 'function', cefr: 'B2', level: 6, theme: 'salud',
+  id: 'fn-sensaciones-fisicas-b2', canDo: 'describe physical states — pasar hambre, me agota', strand: 'function', cefr: 'B2', level: 6, theme: 'salud',
   pcic: ['funciones:B2:924', 'funciones:B2:925', 'funciones:B2:928', 'funciones:B2:929', 'funciones:B2:935'],
   title: 'Expresar sensaciones físicas: pasar hambre/frío, me agota',
   summary: '"Pasar hambre/frío/calor" reports an EXTENDED period of enduring a sensation, distinct from the punctual "tener hambre" — the same durative/punctual split met with narrative tenses, here applied to bodily sensation.',
@@ -20849,7 +21223,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-pedir-ayuda-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-pedir-ayuda-b2', canDo: 'ask for help, favours and things — and respond when asked', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:1022', 'funciones:B2:1023', 'funciones:B2:1026', 'funciones:B2:1029', 'funciones:B2:1030'],
   title: 'Pedir ayuda: échame una mano, solicito tu colaboración',
   summary: '"Solicito su colaboración" is the formal, institutional register for the same request "échame una mano" makes casually — the choice between them is entirely about setting, not meaning.',
@@ -20930,7 +21304,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-pedir-permiso-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-pedir-permiso-b2', canDo: 'ask for permission, grant it and refuse it', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:1087', 'funciones:B2:1088', 'funciones:B2:1089', 'funciones:B2:1090', 'funciones:B2:1091'],
   title: 'Pedir permiso: ¿te importaría que + subjuntivo?',
   summary: 'Asking "¿te molesta/importa si...?" frames permission as a matter of the OTHER person\'s comfort, not authority — a distinctly polite move that "¿puedo...?" alone does not carry.',
@@ -21132,7 +21506,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-proponer-sugerir-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-proponer-sugerir-b2', canDo: 'propose, accept, decline and suppose', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:1151', 'funciones:B2:1153', 'funciones:B2:1156', 'funciones:B2:1157', 'funciones:B2:1159', 'funciones:B2:1162'],
   title: 'Proponer y sugerir: habría que, estaría bien que',
   summary: '"Habría que + infinitivo" proposes an action with the responsible party left conspicuously unnamed — nobody is assigned the task, which is exactly what makes it a gentle suggestion rather than a demand.',
@@ -21253,7 +21627,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-aconsejar-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-aconsejar-b2', canDo: 'advise, warn and — when it comes to it — threaten', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:1219', 'funciones:B2:1220', 'funciones:B2:1221', 'funciones:B2:1222', 'funciones:B2:1223'],
   title: 'Aconsejar: si yo fuera tú, lo mejor sería que',
   summary: '"Si yo fuera tú" steps fully into the other person\'s position before advising — grammatically a hypothetical about the SPEAKER, but functionally advice for the LISTENER — a more immersive framing than the B1 "yo que tú".',
@@ -21545,7 +21919,7 @@ window.STRAND_LESSONS = [
  * between spoken and written closing formulas.
  * ========================================================================== */
 {
-  id: 'fn-saludar-responder-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-saludar-responder-b2', canDo: 'greet, take leave and welcome someone', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:1295', 'funciones:B2:1299', 'funciones:B2:1300', 'funciones:B2:1306', 'funciones:B2:1307', 'funciones:B2:1309'],
   title: 'Saludar y responder: vocal alargada, cuánto tiempo',
   summary: 'Elongating a name\'s vowel — "¡Caaarmen!" — is itself a warmth marker with no equivalent single word, while "¡Cuánto tiempo!" specifically marks a reunion after a real gap, not a routine daily greeting.',
@@ -21625,7 +21999,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-disculparse-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-disculparse-b2', canDo: 'apologise properly and respond to an apology', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:1341', 'funciones:B2:1343', 'funciones:B2:1344', 'funciones:B2:1346', 'funciones:B2:1348'],
   title: 'Disculparse: siento + lo de/infinitivo compuesto/que',
   summary: '"Siento/lamento" branches into three grammatical shapes depending on what exactly you are apologizing for — a named topic ("lo de"), your own finished action (compound infinitive), or someone else\'s situation ("que" + subjunctive) — the same verb, three distinct targets.',
@@ -21705,7 +22079,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-agradecer-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-agradecer-b2', canDo: 'thank someone and wish them well', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:1360', 'funciones:B2:1361', 'funciones:B2:1362', 'funciones:B2:1363'],
   title: 'Agradecer: no sé cómo agradecértelo',
   upgrades: 'fn-agradecer-a1',
@@ -21873,7 +22247,7 @@ window.STRAND_LESSONS = [
  * turn-taking) — each pair thin (3-5 pts) and functionally adjacent.
  * ========================================================================== */
 {
-  id: 'fn-preguntar-persona-telefono-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-preguntar-persona-telefono-b2', canDo: 'handle a phone call and ¿cómo va todo?', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:1470', 'funciones:B2:1471', 'funciones:B2:1472', 'funciones:B2:1474'],
   title: 'Preguntar por una persona: no se retire, ahora le paso',
   summary: '"No se retire" is a fossilized phone-specific command — you would never say it face to face — one of a small set of formulas that exist ONLY in the telephone register, with no equivalent in an in-person conversation.',
@@ -21953,7 +22327,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-solicitar-comienzo-relato-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-solicitar-comienzo-relato-b2', canDo: 'open a story, keep it going and close it', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:1506', 'funciones:B2:1507', 'funciones:B2:1508', 'funciones:B2:1509', 'funciones:B2:1511'],
   title: 'Solicitar que comience un relato: pues verás..., te cuento',
   summary: '"Pues verás..." announces that an explanation is coming without yet saying anything — a pure discourse marker that buys a beat before the actual narrative starts, distinct from diving straight into the story.',
@@ -22274,7 +22648,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-introducir-nuevo-tema-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-introducir-nuevo-tema-b2', canDo: 'introduce a topic, interrupt, and close it', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:1632', 'funciones:B2:1633', 'funciones:B2:1636', 'funciones:B2:1638', 'funciones:B2:1639'],
   title: 'Introducir un nuevo tema: por cierto, hablando de...',
   summary: '"Por cierto" introduces a topic that has NO logical connection to what came before — a pure conversational pivot — while "hablando de..." explicitly links the new topic to something just mentioned, the opposite move.',
@@ -22318,7 +22692,7 @@ window.STRAND_LESSONS = [
  * completes B2 · discourse (13/13)
  * ========================================================================== */
 {
-  id: 'dc-mantenimiento-referente-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-mantenimiento-referente-b2', canDo: 'keep the referent with ellipsis, synonyms and hypernyms', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:8', 'tacticas_pragmaticas:B2:9', 'tacticas_pragmaticas:B2:10', 'tacticas_pragmaticas:B2:11',
          'tacticas_pragmaticas:B2:12', 'tacticas_pragmaticas:B2:13', 'tacticas_pragmaticas:B2:14', 'tacticas_pragmaticas:B2:15',
          'tacticas_pragmaticas:B2:16', 'tacticas_pragmaticas:B2:17'],
@@ -22357,7 +22731,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-marcadores-discurso-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-marcadores-discurso-b2', canDo: 'signal a counter-argument or a reformulation', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:33', 'tacticas_pragmaticas:B2:34', 'tacticas_pragmaticas:B2:35', 'tacticas_pragmaticas:B2:36',
          'tacticas_pragmaticas:B2:37', 'tacticas_pragmaticas:B2:38', 'tacticas_pragmaticas:B2:39', 'tacticas_pragmaticas:B2:40',
          'tacticas_pragmaticas:B2:41', 'tacticas_pragmaticas:B2:42', 'tacticas_pragmaticas:B2:43', 'tacticas_pragmaticas:B2:44',
@@ -22401,7 +22775,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-deixis-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-deixis-b2', status: 'reference', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:65', 'tacticas_pragmaticas:B2:66', 'tacticas_pragmaticas:B2:67', 'tacticas_pragmaticas:B2:68',
          'tacticas_pragmaticas:B2:69'],
   title: 'La deixis en B2: pronombre enfático, "se" mitigador',
@@ -22440,7 +22814,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-rematizacion-tematizacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-rematizacion-tematizacion-b2', canDo: 'move the weight of a sentence with clefts and lo de', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:78', 'tacticas_pragmaticas:B2:79', 'tacticas_pragmaticas:B2:80', 'tacticas_pragmaticas:B2:81',
          'tacticas_pragmaticas:B2:82', 'tacticas_pragmaticas:B2:83', 'tacticas_pragmaticas:B2:84', 'tacticas_pragmaticas:B2:85',
          'tacticas_pragmaticas:B2:86', 'tacticas_pragmaticas:B2:87', 'tacticas_pragmaticas:B2:88', 'tacticas_pragmaticas:B2:89',
@@ -22481,7 +22855,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-cita-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-cita-b2', canDo: 'report speech directly, indirectly and covertly', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:96', 'tacticas_pragmaticas:B2:97', 'tacticas_pragmaticas:B2:98', 'tacticas_pragmaticas:B2:99',
          'tacticas_pragmaticas:B2:100', 'tacticas_pragmaticas:B2:101', 'tacticas_pragmaticas:B2:102', 'tacticas_pragmaticas:B2:103',
          'tacticas_pragmaticas:B2:104', 'tacticas_pragmaticas:B2:105', 'tacticas_pragmaticas:B2:106', 'tacticas_pragmaticas:B2:107',
@@ -22522,7 +22896,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-valores-ilocutivos-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-valores-ilocutivos-b2', status: 'reference', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:122', 'tacticas_pragmaticas:B2:123', 'tacticas_pragmaticas:B2:124', 'tacticas_pragmaticas:B2:125',
          'tacticas_pragmaticas:B2:126', 'tacticas_pragmaticas:B2:127', 'tacticas_pragmaticas:B2:128', 'tacticas_pragmaticas:B2:129',
          'tacticas_pragmaticas:B2:130', 'tacticas_pragmaticas:B2:131', 'tacticas_pragmaticas:B2:132', 'tacticas_pragmaticas:B2:133',
@@ -22562,7 +22936,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-negacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-negacion-b2', canDo: 'negate emphatically, repeatedly, or with studied politeness', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:140', 'tacticas_pragmaticas:B2:141', 'tacticas_pragmaticas:B2:142', 'tacticas_pragmaticas:B2:143',
          'tacticas_pragmaticas:B2:144', 'tacticas_pragmaticas:B2:145', 'tacticas_pragmaticas:B2:146'],
   title: 'Matices de la negación: reiterada, enfática, artificiosa',
@@ -22601,7 +22975,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-significados-interpretados-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-significados-interpretados-b2', status: 'reference', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:147', 'tacticas_pragmaticas:B2:148', 'tacticas_pragmaticas:B2:149', 'tacticas_pragmaticas:B2:150'],
   title: 'Metáforas fijas: comparaciones con animales y verbos de cambio',
   summary: 'A closed set of comparative structures ("fuerte como un toro", "está como una cabra") and change-of-state verbs ("volverse loco", "quedarse de piedra") carry meanings no learner can derive from the words alone — they have to be learned as fixed units, mostly built on animal names.',
@@ -22638,7 +23012,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-intensificacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-intensificacion-b2', canDo: 'intensify with prefixes, performative verbs and lengthening', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:160', 'tacticas_pragmaticas:B2:161', 'tacticas_pragmaticas:B2:162', 'tacticas_pragmaticas:B2:163',
          'tacticas_pragmaticas:B2:164', 'tacticas_pragmaticas:B2:165', 'tacticas_pragmaticas:B2:166', 'tacticas_pragmaticas:B2:167',
          'tacticas_pragmaticas:B2:168', 'tacticas_pragmaticas:B2:169', 'tacticas_pragmaticas:B2:170', 'tacticas_pragmaticas:B2:171',
@@ -22684,7 +23058,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-focalizacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-focalizacion-b2', canDo: 'focus an element by doubling its pronoun or echoing it', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:190', 'tacticas_pragmaticas:B2:191', 'tacticas_pragmaticas:B2:192', 'tacticas_pragmaticas:B2:193',
          'tacticas_pragmaticas:B2:194', 'tacticas_pragmaticas:B2:195', 'tacticas_pragmaticas:B2:196', 'tacticas_pragmaticas:B2:197',
          'tacticas_pragmaticas:B2:198'],
@@ -22725,7 +23099,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-entonacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-entonacion-b2', canDo: 'hear what the tone is saying beyond the words', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:206', 'tacticas_pragmaticas:B2:207', 'tacticas_pragmaticas:B2:208', 'tacticas_pragmaticas:B2:209',
          'tacticas_pragmaticas:B2:210', 'tacticas_pragmaticas:B2:211', 'tacticas_pragmaticas:B2:212', 'tacticas_pragmaticas:B2:213',
          'tacticas_pragmaticas:B2:214', 'tacticas_pragmaticas:B2:215', 'tacticas_pragmaticas:B2:216'],
@@ -22765,7 +23139,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-perspectiva-temporal-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-perspectiva-temporal-b2', canDo: 'shift the tense to change the perspective, not the time', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:220', 'tacticas_pragmaticas:B2:221', 'tacticas_pragmaticas:B2:222', 'tacticas_pragmaticas:B2:223',
          'tacticas_pragmaticas:B2:224'],
   title: 'Desplazar el tiempo verbal: presente, futuro de probabilidad, imperfecto',
@@ -22803,7 +23177,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-atenuacion-b2', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
+  id: 'dc-atenuacion-b2', canDo: 'soften by shifting the person or postponing the tense', strand: 'discourse', cefr: 'B2', level: 6, theme: null,
   pcic: ['tacticas_pragmaticas:B2:239', 'tacticas_pragmaticas:B2:240', 'tacticas_pragmaticas:B2:241', 'tacticas_pragmaticas:B2:242',
          'tacticas_pragmaticas:B2:243', 'tacticas_pragmaticas:B2:244', 'tacticas_pragmaticas:B2:245', 'tacticas_pragmaticas:B2:246',
          'tacticas_pragmaticas:B2:247', 'tacticas_pragmaticas:B2:248', 'tacticas_pragmaticas:B2:249', 'tacticas_pragmaticas:B2:250',
@@ -22864,7 +23238,7 @@ window.STRAND_LESSONS = [
  * lessons for its own "(Nivel B2)" lines).
  * ========================================================================== */
 {
-  id: 'gn-llamada-transaccional-b2', strand: 'genre', cefr: 'B2', level: 6, theme: 'viajes',
+  id: 'gn-llamada-transaccional-b2', canDo: 'carry a longer transactional call to its end', strand: 'genre', cefr: 'B2', level: 6, theme: 'viajes',
   pcic: ['generos_discursivos:B2:189', 'generos_discursivos:B2:193', 'generos_discursivos:B2:195', 'generos_discursivos:B2:196',
          'generos_discursivos:B2:200', 'generos_discursivos:B2:202', 'generos_discursivos:B2:204', 'generos_discursivos:B2:205',
          'generos_discursivos:B2:206', 'generos_discursivos:B2:209', 'generos_discursivos:B2:211', 'generos_discursivos:B2:213',
@@ -22908,7 +23282,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-generos-orales-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  id: 'gn-generos-orales-b2', canDo: 'know what an oral genre asks me to understand and to produce', strand: 'genre', cefr: 'B2', level: 6, theme: null,
   pcic: ['generos_discursivos:B2:114', 'generos_discursivos:B2:117', 'generos_discursivos:B2:118', 'generos_discursivos:B2:119',
          'generos_discursivos:B2:120', 'generos_discursivos:B2:121', 'generos_discursivos:B2:122', 'generos_discursivos:B2:123',
          'generos_discursivos:B2:124', 'generos_discursivos:B2:125', 'generos_discursivos:B2:126', 'generos_discursivos:B2:127',
@@ -22949,7 +23323,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-generos-escritos-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  id: 'gn-generos-escritos-b2', canDo: 'write a letter to an editor, a report and a biography', strand: 'genre', cefr: 'B2', level: 6, theme: null,
   pcic: ['generos_discursivos:B2:159', 'generos_discursivos:B2:161', 'generos_discursivos:B2:163', 'generos_discursivos:B2:164',
          'generos_discursivos:B2:165', 'generos_discursivos:B2:166', 'generos_discursivos:B2:169', 'generos_discursivos:B2:171',
          'generos_discursivos:B2:172', 'generos_discursivos:B2:173'],
@@ -22989,7 +23363,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-descriptiva-personas-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  id: 'gn-descriptiva-personas-b2', canDo: 'describe a person with anchoring and aspectualisation', strand: 'genre', cefr: 'B2', level: 6, theme: null,
   pcic: ['generos_discursivos:B2:748', 'generos_discursivos:B2:749', 'generos_discursivos:B2:750', 'generos_discursivos:B2:751',
          'generos_discursivos:B2:752', 'generos_discursivos:B2:753', 'generos_discursivos:B2:754', 'generos_discursivos:B2:755',
          'generos_discursivos:B2:756', 'generos_discursivos:B2:757'],
@@ -23030,7 +23404,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-descriptiva-objetos-b2', strand: 'genre', cefr: 'B2', level: 6, theme: 'alimentacion',
+  id: 'gn-descriptiva-objetos-b2', canDo: 'describe an object from the everyday to the formal', strand: 'genre', cefr: 'B2', level: 6, theme: 'alimentacion',
   pcic: ['generos_discursivos:B2:798', 'generos_discursivos:B2:799', 'generos_discursivos:B2:800', 'generos_discursivos:B2:801',
          'generos_discursivos:B2:802', 'generos_discursivos:B2:803', 'generos_discursivos:B2:804', 'generos_discursivos:B2:805',
          'generos_discursivos:B2:806', 'generos_discursivos:B2:807'],
@@ -23071,7 +23445,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-descriptiva-lugares-b2', strand: 'genre', cefr: 'B2', level: 6, theme: 'vivienda',
+  id: 'gn-descriptiva-lugares-b2', canDo: 'describe a place from its layout to an anecdote about it', strand: 'genre', cefr: 'B2', level: 6, theme: 'vivienda',
   pcic: ['generos_discursivos:B2:844', 'generos_discursivos:B2:845', 'generos_discursivos:B2:846', 'generos_discursivos:B2:847',
          'generos_discursivos:B2:848', 'generos_discursivos:B2:849', 'generos_discursivos:B2:850', 'generos_discursivos:B2:851',
          'generos_discursivos:B2:852', 'generos_discursivos:B2:853'],
@@ -23112,7 +23486,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-narrativa-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  id: 'gn-narrativa-b2', canDo: 'structure a narrative in its five stages', strand: 'genre', cefr: 'B2', level: 6, theme: null,
   pcic: ['generos_discursivos:B2:896', 'generos_discursivos:B2:897', 'generos_discursivos:B2:898', 'generos_discursivos:B2:899',
          'generos_discursivos:B2:900', 'generos_discursivos:B2:901', 'generos_discursivos:B2:902', 'generos_discursivos:B2:903',
          'generos_discursivos:B2:904'],
@@ -23153,7 +23527,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-expositiva-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  id: 'gn-expositiva-b2', canDo: 'present, develop and conclude a topic', strand: 'genre', cefr: 'B2', level: 6, theme: null,
   pcic: ['generos_discursivos:B2:963', 'generos_discursivos:B2:964', 'generos_discursivos:B2:968', 'generos_discursivos:B2:969',
          'generos_discursivos:B2:970', 'generos_discursivos:B2:971', 'generos_discursivos:B2:972', 'generos_discursivos:B2:973',
          'generos_discursivos:B2:974', 'generos_discursivos:B2:976'],
@@ -23195,7 +23569,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-argumentativa-b2', strand: 'genre', cefr: 'B2', level: 6, theme: null,
+  id: 'gn-argumentativa-b2', canDo: 'build an argument with a thesis, a source, a counter-argument and a reserve', strand: 'genre', cefr: 'B2', level: 6, theme: null,
   pcic: ['generos_discursivos:B2:998', 'generos_discursivos:B2:999', 'generos_discursivos:B2:1000', 'generos_discursivos:B2:1001',
          'generos_discursivos:B2:1002', 'generos_discursivos:B2:1003', 'generos_discursivos:B2:1004', 'generos_discursivos:B2:1005',
          'generos_discursivos:B2:1006', 'generos_discursivos:B2:1007', 'generos_discursivos:B2:1008'],
