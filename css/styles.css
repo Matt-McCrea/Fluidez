@@ -592,3 +592,18 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .dl-n { color:var(--muted); font-weight:700; font-size:.8rem; min-width:1.2em; }
 .dl-t { flex:1; }
 .dl-mark { color:var(--good); font-weight:700; }
+
+/* ---- the unit a day belongs to (js/session.js) ---- */
+.unit-card {
+  text-align:left; max-width:430px; margin:18px auto 0; padding:14px 18px;
+  background:var(--panel-2); border:1px solid var(--border); border-radius:12px;
+  border-left:3px solid var(--accent);
+}
+.unit-eyebrow {
+  font-size:.7rem; text-transform:uppercase; letter-spacing:.09em;
+  font-weight:750; color:var(--accent);
+}
+.unit-title { font-weight:700; font-size:1.05rem; margin-top:3px; }
+.unit-goal { color:var(--muted); font-size:.9rem; margin-top:4px; line-height:1.4; }
+.unit-bar { height:5px; background:var(--border); border-radius:999px; margin-top:11px; overflow:hidden; }
+.unit-bar-fill { height:100%; background:var(--accent); border-radius:999px; }

@@ -122,13 +122,19 @@ window.Session = (function () {
     var lessons = window.GRAMMAR_LESSONS || [];
     var studied = prog.studied || {};
 
-    var focus, lesson = null, level;
+    var focus, lesson = null, level, dayIndex = null;
 
     if (pr.usesCurriculum && window.Curriculum) {
       // paced path: grammar/vocab/verb/practice days, grammar spaced out
       var seq = window.Curriculum.seq();
       var di = prog.beginnerDay || 0;
       focus = seq[Math.min(di, seq.length - 1)] || { type: 'practice' };
+      /* `di` indexes the BAND's slice; COURSE_UNITS.from indexes the whole
+       * course, so the band's start has to be added back before the two can
+       * be compared. Getting this wrong shows the learner "day -87 of 10". */
+      dayIndex = (window.Curriculum.startOf
+        ? window.Curriculum.startOf(pr.cefr || (window.Profile && window.Profile.current()))
+        : 0) + Math.min(di, seq.length - 1);
       if (focus.type === 'grammar') lesson = lessonById(focus.id);
       level = 1;
       lessons.forEach(function (l) { if (studied[l.id]) level = Math.max(level, l.level || 1); });
@@ -190,6 +196,7 @@ window.Session = (function () {
 
     return {
       day: day,
+      dayIndex: dayIndex,
       level: level,
       profile: pr.name,
       focus: focus,
@@ -211,6 +218,21 @@ window.Session = (function () {
     connectors: 'Linking words', common: 'Everyday words', school: 'School', health: 'Health',
     shopping: 'Shopping', sports: 'Sports', kitchen: 'Kitchen', work: 'Work'
   };
+  /* Where today sits in its unit — "Meet someone · day 3 of 10".
+   * The course is 63 units now, and without this a learner sees a lesson
+   * title and no sense of what it is part of or how far through they are.
+   * Returns null for the days not yet in a unit, and for optional units,
+   * which have no position in time. */
+  function unitLabel(ctx) {
+    var f = ctx.focus;
+    if (!f || !f.unit) return null;
+    var u = (window.COURSE_UNITS || {})[f.unit];
+    if (!u || u.optional || u.from == null) return null;
+    var day = (ctx.dayIndex != null ? ctx.dayIndex : -1) - u.from + 1;
+    return { title: u.title, goal: u.goal,
+             day: day > 0 && day <= u.length ? day : null, of: u.length };
+  }
+
   function focusLabel(ctx) {
     var f = ctx.focus || { type: 'grammar' };
     if (f.type === 'grammar') return ctx.lesson ? ctx.lesson.title : 'A grammar lesson';
@@ -247,6 +269,25 @@ window.Session = (function () {
     wrap.appendChild(UI.el('h1', null, ctx.dateLabel));
     wrap.appendChild(UI.el('p', 'muted', 'A short, complete workout for your Spanish — review, a grammar lesson, reading, applying it in context, and writing your own. About 15–20 minutes.'));
     if (p.streak) wrap.appendChild(UI.el('div', 'streak-badge', '🔥 ' + p.streak + '-day streak'));
+
+    /* The unit this day belongs to, with its goal and how far through it is.
+     * 63 units now, and without this the learner sees a lesson title and has
+     * no way to tell what it is part of or how much of it is left. */
+    var u = unitLabel(ctx);
+    if (u) {
+      var card = UI.el('div', 'unit-card');
+      card.appendChild(UI.el('div', 'unit-eyebrow',
+        'Unidad' + (u.day ? ' · día ' + u.day + ' de ' + u.of : '')));
+      card.appendChild(UI.el('div', 'unit-title', u.title));
+      if (u.goal) card.appendChild(UI.el('div', 'unit-goal', u.goal));
+      if (u.day) {
+        var bar = UI.el('div', 'unit-bar');
+        var fill = UI.el('div', 'unit-bar-fill');
+        fill.style.width = Math.round(100 * u.day / u.of) + '%';
+        bar.appendChild(fill); card.appendChild(bar);
+      }
+      wrap.appendChild(card);
+    }
 
     var learnIco = ctx.focus && ctx.focus.type === 'vocab' ? '📇'
       : (ctx.focus && ctx.focus.type === 'verbs' ? '🔤'
