@@ -90,106 +90,155 @@ window.Progress = (function () {
     var lessons = window.GRAMMAR_LESSONS || [];
     var nextIdx = lessons.findIndex(function (l) { return !studied[l.id]; });
     function reRender() { window.Shell.closeOverlay(); render(host, back); }
-    var beginner = window.Profile && window.Profile.isPaced();
 
-    wrap.appendChild(UI.el('h3', null, 'Lessons'));
-    wrap.appendChild(UI.el('p', 'muted small', 'Tap a lesson to take it — taught in full, then quizzed. Do them in any order. (The <b>Gramática</b> tab shows the grammar lessons as read-only reference.)'));
+    /* ---- the catalogue -------------------------------------------------
+     * Three sections, in this order:
+     *   TU CURSO       level -> unit -> lesson, which is how the course is
+     *                  actually built now (data/course.js)
+     *   GRAMÁTICA      the same lessons reached the other way — by tense
+     *                  first, then by the other things grammar is about
+     *   VOCABULARIO / VERBOS
+     *
+     * The old "ruta diaria" is gone. It was a flat list of every day in the
+     * band, which is what units replaced — a learner scrolling 95 undifferen-
+     * tiated rows cannot see what any of it is for, which is the whole
+     * problem the units were introduced to fix. */
 
-    /* A paced level gets its day-by-day route AS WELL AS the full catalogue —
-     * not instead of it. The route was previously an either/or, which was
-     * invisible while the beginner test was broken; fixing that test hid the
-     * level bands from A1 and A2, where they are most useful, since that is
-     * exactly where someone wants to see what is coming. */
-    if (beginner) {
-      var routeDet = UI.el('details', 'catalog-more');
-      routeDet.setAttribute('open', 'open');
-      routeDet.appendChild(UI.el('summary', null, 'Tu ruta diaria — dónde vas hoy'));
-      var seq = (window.Curriculum ? window.Curriculum.seq() : []);
-      var curDay = (p.beginnerDay || 0);
-      var flat = UI.el('div', 'syllabus');
-      seq.forEach(function (d, i) {
-        if (d.type === 'practice') return;         // nothing to "take" on a practice day
-        var focus, mark, title, meta;
-        if (d.type === 'grammar') {
-          var l = lessons.filter(function (x) { return x.id === d.id; })[0] || { title: d.id, level: 1 };
-          focus = { type: 'grammar', id: d.id };
-          mark = studied[d.id] ? '✓' : (i === curDay ? '●' : '📖');
-          title = l.title; meta = 'L' + (l.level || 1) + ' ›';
-        } else if (d.type === 'vocab') {
-          focus = { type: 'vocab', cat: d.cat, words: d.words };
-          mark = (i === curDay ? '●' : '📇'); title = 'New words · ' + label(d.cat) + (d.part ? ' ' + d.part : ''); meta = d.words.length + ' ›';
-        } else {
-          focus = { type: 'verbs', verbs: d.verbs };
-          mark = (i === curDay ? '●' : '🔤'); title = 'Verbs · ' + d.verbs.slice(0, 3).join(', ') + (d.verbs.length > 3 ? '…' : ''); meta = d.verbs.length + ' ›';
-        }
-        var row = UI.el('button', 'syl-row' + (i === curDay ? ' current' : '')); row.type = 'button';
-        row.innerHTML = '<span class="syl-mark">' + mark + '</span><span class="syl-title">' + title + '</span><span class="syl-level muted">' + meta + '</span>';
-        row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run(focus, reRender); });
-        flat.appendChild(row);
+    // ---- TU CURSO: level -> unit -> lesson -------------------------------
+    wrap.appendChild(UI.el('h3', null, 'Tu curso'));
+    wrap.appendChild(UI.el('p', 'muted small',
+      'Every lesson, in the order the course teaches them. Tap any one to take it — nothing is locked.'));
+
+    var UNITS = window.COURSE_UNITS || {};
+    var DAYS = window.COURSE_DAYS || [];
+    var here = (window.Profile && window.Profile.params().cefr) || 'A1';
+    var byId = {};
+    lessons.forEach(function (l) { byId[l.id] = l; });
+
+    function lessonRow(id, mark) {
+      var l = byId[id];
+      var row = UI.el('button', 'syl-row ' + (studied[id] ? 'done' : 'open'));
+      row.type = 'button';
+      row.innerHTML = '<span class="syl-mark">' + (studied[id] ? '✓' : (mark || '·')) + '</span>' +
+        '<span class="syl-title">' + (l ? l.title : id) + '</span>' +
+        '<span class="syl-level muted">' + (l && l.canDo ? '' : '') + '›</span>';
+      row.addEventListener('click', function () {
+        window.Shell.openOverlay(); window.LessonRun.run({ type: 'grammar', id: id }, reRender);
       });
-      routeDet.appendChild(flat);
-      wrap.appendChild(routeDet);
+      return row;
     }
 
-    {
-      // standard/refresher: grammar lessons first, then vocab & verbs below
-      /* Every lesson is open — the rows were always clickable, but marking
-       * everything past the next unstudied one as "locked" made them look
-       * forbidden, which is wrong for anyone starting above A1. State is now
-       * just done / next-up / not yet done. Grouped by level because a flat
-       * list of 565 is unusable. */
-      /* Use the lesson's own cefr, which came from the Plan Curricular. Level 3
-       * belongs to BOTH A2 and B1 (see data/taxonomy.js), so re-deriving a band
-       * from the number filed all 109 level-3 lessons under A2 — B1 showed 60
-       * lessons when 158 are tagged B1. Only the 18 legacy tense lessons carry
-       * no tag, and for those the number is all there is. */
-      var CEFR_OF = function (n) { return n <= 1 ? 'A1' : n <= 3 ? 'A2' : n <= 5 ? 'B1' : n <= 7 ? 'B2' : 'C1'; };
-      var bandOf = function (l) { return l.cefr || CEFR_OF(l.level || 1); };
-      var here = (window.Profile && window.Profile.params().cefr) || 'A1';
-      var byBand = {};
-      lessons.forEach(function (l, i) { (byBand[bandOf(l)] = byBand[bandOf(l)] || []).push({ l: l, i: i }); });
+    ['A1', 'A2', 'B1', 'B2', 'C1'].forEach(function (band) {
+      var us = Object.keys(UNITS).map(function (k) { return UNITS[k]; })
+        .filter(function (u) { return u.band === band && !u.optional; })
+        .sort(function (a, b) { return a.from - b.from; });
+      if (!us.length) return;
 
-      ['A1', 'A2', 'B1', 'B2', 'C1'].forEach(function (band) {
-        var rows = byBand[band]; if (!rows || !rows.length) return;
-        var doneN = rows.filter(function (r) { return studied[r.l.id]; }).length;
-        var det = UI.el('details', 'catalog-more' + (band === here ? ' band-here' : ''));
-        if (band === here) det.setAttribute('open', 'open');
-        det.appendChild(UI.el('summary', null, band + ' — ' + doneN + ' / ' + rows.length + ' done'));
-        var syl = UI.el('div', 'syllabus');
-        rows.forEach(function (r) {
-          var state = studied[r.l.id] ? 'done' : (r.i === nextIdx ? 'current' : 'open');
-          var mark = state === 'done' ? '✓' : (state === 'current' ? '●' : '·');
-          var row = UI.el('button', 'syl-row ' + state); row.type = 'button';
-          row.innerHTML = '<span class="syl-mark">' + mark + '</span><span class="syl-title">' + r.l.title +
-            '</span><span class="syl-level muted">L' + (r.l.level || 1) + ' ›</span>';
-          row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run({ type: 'grammar', id: r.l.id }, reRender); });
-          syl.appendChild(row);
+      var total = 0, done = 0;
+      us.forEach(function (u) {
+        DAYS.slice(u.from, u.from + u.length).forEach(function (d) {
+          if (!d.lesson) return; total++; if (studied[d.lesson]) done++;
         });
-        det.appendChild(syl); wrap.appendChild(det);
       });
 
-      var vd = UI.el('details', 'catalog-more');
-      vd.appendChild(UI.el('summary', null, 'Vocabulary lessons'));
-      var vlist = UI.el('div', 'syllabus');
-      vocabLessons().forEach(function (v) {
-        var row = UI.el('button', 'syl-row'); row.type = 'button';
-        row.innerHTML = '<span class="syl-mark">📇</span><span class="syl-title">' + v.title + '</span><span class="syl-level muted">' + v.words.length + ' ›</span>';
-        row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run({ type: 'vocab', cat: v.cat, words: v.words }, reRender); });
-        vlist.appendChild(row);
-      });
-      vd.appendChild(vlist); wrap.appendChild(vd);
+      var bandDet = UI.el('details', 'catalog-more band-det' + (band === here ? ' band-here' : ''));
+      if (band === here) bandDet.setAttribute('open', 'open');
+      bandDet.appendChild(UI.el('summary', null,
+        band + ' — ' + us.length + ' unidades · ' + done + '/' + total + ' lecciones'));
 
-      var rd = UI.el('details', 'catalog-more');
-      rd.appendChild(UI.el('summary', null, 'Verb lessons'));
-      var rlist = UI.el('div', 'syllabus');
-      verbLessons().forEach(function (grp) {
-        var row = UI.el('button', 'syl-row'); row.type = 'button';
-        row.innerHTML = '<span class="syl-mark">🔤</span><span class="syl-title">' + grp.slice(0, 4).join(', ') + (grp.length > 4 ? '…' : '') + '</span><span class="syl-level muted">' + grp.length + ' ›</span>';
-        row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run({ type: 'verbs', verbs: grp }, reRender); });
-        rlist.appendChild(row);
+      us.forEach(function (u) {
+        var ids = DAYS.slice(u.from, u.from + u.length)
+          .filter(function (d) { return !!d.lesson; }).map(function (d) { return d.lesson; });
+        var uDone = ids.filter(function (i) { return studied[i]; }).length;
+
+        var uDet = UI.el('details', 'unit-det');
+        uDet.appendChild(UI.el('summary', null,
+          '<span class="unit-det-title">' + u.title + '</span>' +
+          '<span class="unit-det-n muted">' + uDone + '/' + ids.length + '</span>'));
+        if (u.goal) uDet.appendChild(UI.el('div', 'unit-det-goal muted', u.goal));
+        var syl = UI.el('div', 'syllabus');
+        ids.forEach(function (id) { syl.appendChild(lessonRow(id)); });
+        uDet.appendChild(syl);
+        bandDet.appendChild(uDet);
       });
-      rd.appendChild(rlist); wrap.appendChild(rd);
-    }
+      wrap.appendChild(bandDet);
+    });
+
+    // ---- GRAMÁTICA: by tense, then by everything else --------------------
+    wrap.appendChild(UI.el('h3', null, 'Gramática'));
+    wrap.appendChild(UI.el('p', 'muted small',
+      'The same lessons reached a different way — by what they are about rather than by when they are taught.'));
+
+    var E2 = window.ENGINE;
+    var TENSE_ORDER = ['presente', 'preterito', 'imperfecto', 'perfecto', 'plusc',
+      'futuro', 'futperf', 'condicional', 'condperf',
+      'presubj', 'perfsubj', 'impsubj', 'imperativo', 'impneg'];
+
+    var tenseDet = UI.el('details', 'catalog-more');
+    tenseDet.appendChild(UI.el('summary', null, 'Por tiempo verbal'));
+    var tl = UI.el('div', 'syllabus');
+    TENSE_ORDER.forEach(function (tk) {
+      var l = byId[tk]; if (!l) return;
+      tl.appendChild(lessonRow(tk, '⏱'));
+    });
+    tenseDet.appendChild(tl);
+    wrap.appendChild(tenseDet);
+
+    /* Everything else grammar is about. Derived from the id because the
+     * lessons carry no sub-topic tag; the buckets are ordered so the ones a
+     * learner asks about most sit at the top. */
+    var ASPECTS = [
+      ['Sustantivos y artículos', /(sustantiv|genero|numero|articulo|nombres|escuetos|masculino)/],
+      ['Adjetivos y determinantes', /(adjetiv|posesiv|demostrativ|cuantificador|numeral|indefinid)/],
+      ['Pronombres y relativos', /(pronombre|objeto|atonos|tonicos|relativ|interrogativ|exclamativ|quien|el-que)/],
+      ['Adverbios', /adverbio/],
+      ['Oraciones y subordinadas', /(subordinad|oracion|causal|concesiv|condicional|consecutiv|temporal|final|comparativ|modalidad|restrictiv|concordancia)/],
+      ['Formas verbales y perífrasis', /(perifrasis|formas-no-personales|gerundio|infinitivo|participio|imperativo|nucleo-verbal|se-multiuso|pronombre-se|complement)/]
+    ];
+    var placed = {};
+    ASPECTS.forEach(function (a) {
+      var name = a[0], re = a[1];
+      var hits = lessons.filter(function (l) {
+        if ((l.strand || 'grammar') !== 'grammar') return false;
+        if (TENSE_ORDER.indexOf(l.id) !== -1) return false;
+        if (placed[l.id]) return false;
+        return re.test(l.id);
+      });
+      if (!hits.length) return;
+      hits.forEach(function (l) { placed[l.id] = 1; });
+      var d = UI.el('details', 'catalog-more');
+      d.appendChild(UI.el('summary', null, name + ' — ' + hits.length));
+      var s2 = UI.el('div', 'syllabus');
+      hits.forEach(function (l) { s2.appendChild(lessonRow(l.id)); });
+      d.appendChild(s2); wrap.appendChild(d);
+    });
+
+    // ---- VOCABULARIO ------------------------------------------------------
+    wrap.appendChild(UI.el('h3', null, 'Vocabulario'));
+    var vd = UI.el('details', 'catalog-more');
+    vd.appendChild(UI.el('summary', null, 'Vocabulary lessons'));
+    var vlist = UI.el('div', 'syllabus');
+    vocabLessons().forEach(function (v) {
+      var row = UI.el('button', 'syl-row'); row.type = 'button';
+      row.innerHTML = '<span class="syl-mark">📇</span><span class="syl-title">' + v.title + '</span><span class="syl-level muted">' + v.words.length + ' ›</span>';
+      row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run({ type: 'vocab', cat: v.cat, words: v.words }, reRender); });
+      vlist.appendChild(row);
+    });
+    vd.appendChild(vlist); wrap.appendChild(vd);
+
+    // ---- VERBOS -----------------------------------------------------------
+    wrap.appendChild(UI.el('h3', null, 'Verbos'));
+    var rd = UI.el('details', 'catalog-more');
+    rd.appendChild(UI.el('summary', null, 'Verb lessons'));
+    var rlist = UI.el('div', 'syllabus');
+    verbLessons().forEach(function (grp) {
+      var row = UI.el('button', 'syl-row'); row.type = 'button';
+      row.innerHTML = '<span class="syl-mark">🔤</span><span class="syl-title">' + grp.slice(0, 4).join(', ') + (grp.length > 4 ? '…' : '') + '</span><span class="syl-level muted">' + grp.length + ' ›</span>';
+      row.addEventListener('click', function () { window.Shell.openOverlay(); window.LessonRun.run({ type: 'verbs', verbs: grp }, reRender); });
+      rlist.appendChild(row);
+    });
+    rd.appendChild(rlist); wrap.appendChild(rd);
+
 
     // ---- SRS box distribution (single-hue magnitude bars) ----
     wrap.appendChild(UI.el('h3', null, 'Memory strength'));

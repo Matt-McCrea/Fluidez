@@ -623,3 +623,18 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .suggest-why { color:var(--muted); font-size:.85rem; margin-top:9px; line-height:1.45; }
 .suggest-card .row-controls { margin-top:6px; }
 .suggest-card .primary-btn, .suggest-card .ghost-btn { margin-top:12px; }
+
+/* ---- Lecciones: level > unit > lesson (js/progress.js) ---- */
+.band-det > summary { font-weight:700; }
+.unit-det { margin:8px 0 8px 4px; border-left:2px solid var(--border); padding-left:12px; }
+.unit-det > summary {
+  cursor:pointer; display:flex; align-items:baseline; gap:10px;
+  padding:6px 0; font-size:.95rem;
+}
+.unit-det > summary::-webkit-details-marker { display:none; }
+.unit-det > summary::before { content:'▸'; color:var(--muted); font-size:.8em; }
+.unit-det[open] > summary::before { content:'▾'; }
+.unit-det-title { font-weight:650; }
+.unit-det-n { margin-left:auto; font-size:.82rem; }
+.unit-det-goal { font-size:.85rem; margin:0 0 8px 14px; line-height:1.4; }
+.unit-det .syllabus { margin-left:8px; }
