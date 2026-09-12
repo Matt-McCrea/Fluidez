@@ -385,6 +385,20 @@ window.Session = (function () {
     var ul = UI.el('ul', 'summary-list');
     lines.forEach(function (l) { ul.appendChild(UI.el('li', null, l)); });
     wrap.appendChild(ul);
+    /* The moment to offer a deep dive is right after the mistakes were made,
+     * not on a menu the learner was supposed to browse. Returns null — and
+     * appends nothing — unless the same thing has been missed repeatedly. */
+    if (window.Suggest) {
+      var sc = window.Suggest.card(function (u) {
+        window.App.go('home');
+        if (window.Shell) window.Shell.go('mas');
+        if (window.DeepDive) {
+          var hostEl = document.getElementById('tab-host') || document.getElementById('stage-host');
+          window.DeepDive.render(hostEl, function () { window.Shell.go('mas'); }, u.id);
+        }
+      });
+      if (sc) wrap.appendChild(sc);
+    }
     wrap.appendChild(UI.el('p', 'muted', '¡Hasta mañana! Come back tomorrow for a fresh session.'));
     var homeB = UI.nextBtn('← Volver al inicio', function () { window.App.go('home'); });
     wrap.appendChild(homeB);

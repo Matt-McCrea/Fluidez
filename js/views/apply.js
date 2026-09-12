@@ -82,7 +82,7 @@ window.StageApply = (function () {
           gradeTense(it, right);
           if (!right) {
             Array.prototype.forEach.call(bank.children, function (c) { if (c.textContent === answer) c.classList.add('right'); });
-            if (window.ErrorLog) window.ErrorLog.record({ id: 'err:cloze:' + E.normalize(it.text), front: it.text.replace('___', '＿＿＿') + '   [' + it.inf + ']', back: answer, kind: 'error', source: 'apply-cloze', reviewable: true });
+            if (window.ErrorLog) window.ErrorLog.record({ id: 'err:cloze:' + E.normalize(it.text), front: it.text.replace('___', '＿＿＿') + '   [' + it.inf + ']', back: answer, kind: 'error', source: 'apply-cloze', topic: it.tense ? 'tense:' + it.tense : null, reviewable: true });
           }
           fb.innerHTML = right ? '¡Correcto! <span class="muted">' + (it.en || '') + '</span>'
             : '<b>' + answer + '</b> — ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + ' · ' + it.person;

@@ -51,6 +51,7 @@ window.COURSE = [
    * are a curriculum you can choose to walk.
    * ====================================================================== */
   { unit: 'deep-ser-estar', band: 'A1', optional: true,
+    triggers: ['lesson:ser-estar', 'lesson:gr-atributo-a1', 'lesson:gr-nucleo-verbal-a1'],
     title: 'Ser and estar, properly',
     goal: 'I can choose between ser and estar without guessing, including the cases where both are possible and the meaning changes.',
     canDo: ['choose ser or estar from what I mean, not from a memorised list',
@@ -62,6 +63,7 @@ window.COURSE = [
     ] },
 
   { unit: 'deep-genero', band: 'A1', optional: true,
+    triggers: ['lesson:gender-articles', 'lesson:gr-genero-sustantivos-a1', 'lesson:gr-genero-adjetivo-a1', 'lesson:gr-numero-sustantivos-a1'],
     title: 'El or la?',
     goal: 'I can work out a noun\'s gender from its shape, and I know which common words break the pattern.',
     canDo: ['predict gender from a word ending',
@@ -77,6 +79,7 @@ window.COURSE = [
     ] },
 
   { unit: 'deep-el-articulo', band: 'A2', optional: true,
+    triggers: ['lesson:gr-articulo-definido-a1', 'lesson:gr-articulo-indefinido-a1', 'lesson:gr-articulo-definido-distribucion-a2'],
     title: 'The article, where English has none',
     goal: 'I can use el, la and un where Spanish needs them and English does not — and leave them out where Spanish does.',
     canDo: ['use the definite article for generic statements',
@@ -1088,7 +1091,8 @@ window.COURSE = [
       { lesson: 'task-b2-repaso' },
     ] },
 
-  { unit: 'deep-complementos', band: 'B2', optional: true, title: 'What a noun and an adjective can carry',
+  { unit: 'deep-complementos', band: 'B2', optional: true,
+    triggers: ['lesson:gr-complementos-sa-b2'], title: 'What a noun and an adjective can carry',
     goal: 'I can attach complements to nouns and adjectives correctly — difícil de, interesado en.',
     canDo: ['use the fixed preposition an adjective demands',
             'tell a restrictive complement from a non-restrictive one'],
@@ -1097,7 +1101,8 @@ window.COURSE = [
       { lesson: 'gr-complementos-nominales-b2' },
     ] },
 
-  { unit: 'deep-relativas', band: 'B2', optional: true, title: 'Relative clauses, the whole system',
+  { unit: 'deep-relativas', band: 'B2', optional: true,
+    triggers: ['lesson:gr-relativas-b1', 'lesson:gr-relativo-que-a1', 'lesson:gr-adverbios-relativos-b1'], title: 'Relative clauses, the whole system',
     goal: 'I can choose between que, quien, el que and donde, and know when a comma changes the meaning.',
     canDo: ['choose the relative the preposition allows',
             'use the comma that adds rather than selects',
@@ -1112,7 +1117,8 @@ window.COURSE = [
       { lesson: 'gr-subordinadas-modo-b2' },
     ] },
 
-  { unit: 'deep-adverbios', band: 'B2', optional: true, title: 'Adverbs, quantifiers and where they sit',
+  { unit: 'deep-adverbios', band: 'B2', optional: true,
+    triggers: ['lesson:gr-adverbios-modo-cantidad-b1', 'lesson:gr-adverbios-lugar-tiempo-cantidad-a1'], title: 'Adverbs, quantifiers and where they sit',
     goal: 'I can place an adverb so it modifies what I intend, and use the quantifier系 precisely.',
     canDo: ['place an adverb by what it modifies',
             'use partitive and multiplicative numerals',
@@ -1124,7 +1130,8 @@ window.COURSE = [
       { lesson: 'gr-nucleo-verbal-copulativos-b2' },
     ] },
 
-  { unit: 'deep-formas-no-personales', band: 'B2', optional: true, title: 'Infinitive, gerund and participle beyond the basics',
+  { unit: 'deep-formas-no-personales', band: 'B2', optional: true,
+    triggers: ['lesson:gr-formas-no-personales-b1', 'lesson:gr-gerundio-a2', 'lesson:gr-infinitivo-usos-a1', 'tense:imperativo', 'tense:impneg'], title: 'Infinitive, gerund and participle beyond the basics',
     goal: 'I can use the non-finite forms independently, and the imperative for things other than orders.',
     canDo: ['use an infinitive or gerund as a clause',
             'recognise the imperative used to soften, concede or threaten'],
@@ -1133,7 +1140,8 @@ window.COURSE = [
       { lesson: 'gr-imperativo-valores-b2' },
     ] },
 
-  { unit: 'deep-discurso', band: 'B2', optional: true, title: 'Deixis, implicature and fixed metaphor',
+  { unit: 'deep-discurso', band: 'B2', optional: true,
+    triggers: ['lesson:dc-valores-ilocutivos-b1', 'lesson:dc-marcadores-discurso-b1'], title: 'Deixis, implicature and fixed metaphor',
     goal: 'I can hear what a question is doing besides asking, and read the fixed metaphors natives reach for.',
     canDo: ['read an echo question and a rhetorical one',
             'use the mitigating se',
@@ -1393,7 +1401,8 @@ window.COURSE = [
       { lesson: 'task-c1-final' },
     ] },
 
-  { unit: 'deep-discurso-c1', band: 'C1', optional: true, title: 'Discourse structure at C1',
+  { unit: 'deep-discurso-c1', band: 'C1', optional: true,
+    triggers: ['lesson:dc-mantenimiento-referente-b1', 'lesson:dc-rematizacion-tematizacion-b1'], title: 'Discourse structure at C1',
     goal: 'I can control what a sentence foregrounds, and keep a long text tracking one referent.',
     canDo: ['front and dislocate deliberately',
             'keep a referent across paragraphs',
@@ -1405,7 +1414,8 @@ window.COURSE = [
       { lesson: 'dc-mantenimiento-referente-c1' },
     ] },
 
-  { unit: 'deep-sintaxis-c1', band: 'C1', optional: true, title: 'The subordinate clause, exhaustively',
+  { unit: 'deep-sintaxis-c1', band: 'C1', optional: true,
+    triggers: ['tense:presubj', 'tense:impsubj', 'tense:perfsubj', 'lesson:gr-concesivas-b1', 'lesson:gr-condicionales-b1', 'lesson:gr-causales-b1'], title: 'The subordinate clause, exhaustively',
     goal: 'I can build any adverbial or relative clause, and know what each one does to the mood.',
     canDo: ['choose the mood a subordinator forces',
             'use the C1 relatives — el cual, quien, cuyo',
@@ -1424,7 +1434,8 @@ window.COURSE = [
       { lesson: 'gr-relativos-c1' },
     ] },
 
-  { unit: 'deep-nominal-c1', band: 'C1', optional: true, title: 'The noun phrase at C1',
+  { unit: 'deep-nominal-c1', band: 'C1', optional: true,
+    triggers: ['lesson:gr-demostrativos-valores-a2', 'lesson:gr-posesivos-tonicos-a2', 'lesson:gr-cuantificadores-a2'], title: 'The noun phrase at C1',
     goal: 'I can use the article, gender, number and determiners where they carry meaning rather than agreement.',
     canDo: ['use the article for emphasis and nominalisation',
             'use the gender that changes the meaning',
@@ -1443,7 +1454,8 @@ window.COURSE = [
       { lesson: 'gr-interrogativos-c1' },
     ] },
 
-  { unit: 'deep-complementos-c1', band: 'C1', optional: true, title: 'Complements, clitics and agreement at C1',
+  { unit: 'deep-complementos-c1', band: 'C1', optional: true,
+    triggers: ['lesson:gr-pronombres-atonos-a2', 'lesson:gr-objeto-indirecto-a2', 'lesson:gr-pronombres-combinados-b1', 'lesson:gr-objeto-directo-a1'], title: 'Complements, clitics and agreement at C1',
     goal: 'I can handle leísmo, ad sensum agreement, and the complements a noun or adjective takes.',
     canDo: ['recognise leísmo, laísmo and loísmo',
             'use ad sensum agreement where sense beats grammar',
@@ -1508,7 +1520,8 @@ window.COURSE = [
       if (e.optional) {
         units[e.unit] = { id: e.unit, band: e.band || cur, title: e.title,
                           goal: e.goal || null, canDo: e.canDo || [],
-                          optional: true, lessons: (e.days || []).map(function (d) { return d.lesson; })
+                          optional: true, triggers: e.triggers || [],
+                          lessons: (e.days || []).map(function (d) { return d.lesson; })
                             .filter(Boolean), from: null, length: null };
         return;
       }

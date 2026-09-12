@@ -14,6 +14,18 @@
  * Grammar-recall and logged-error cards are fixed (always produce the answer).
  * ========================================================================== */
 window.StageReview = (function () {
+  /* A review card's id already says where it came from: "g:presubj:yo" from a
+   * generated tense lesson, "p:gr-relativas-b1-2" from a strand lesson's
+   * probes. Recover that rather than adding a field to 1,100 cards. */
+  function topicOf(card) {
+    var id = String((card && card.id) || '');
+    var m = id.match(/^g:([a-z]+):/);
+    if (m) return 'tense:' + m[1];
+    m = id.match(/^p:(.+)-\d+$/);
+    if (m) return 'lesson:' + m[1];
+    if (card && card.tense) return 'tense:' + card.tense;
+    return null;
+  }
   var UI = window.UI, E = window.ENGINE, S = window.SRS, C = window.Checker;
   var ErrorLog = window.ErrorLog, P = window.Profile;
 
@@ -127,7 +139,7 @@ window.StageReview = (function () {
       else {
         S.grade(cur.id, false);
         if (!missed[cur.id] && ErrorLog && cur.kind !== 'error') {
-          ErrorLog.record({ id: cur.id, front: R.front, back: R.back, kind: cur.kind, source: 'review', hint: R.hint, reviewable: false, es: cur.es || null, en: cur.en || null });
+          ErrorLog.record({ id: cur.id, front: R.front, back: R.back, kind: cur.kind, source: 'review', hint: R.hint, topic: topicOf(cur), reviewable: false, es: cur.es || null, en: cur.en || null });
         }
         missed[cur.id] = 1; queue.push(cur);
       }

@@ -18,7 +18,7 @@ window.Settings = (function () {
    * Spanish should not turn off dark mode. */
   var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.errors', 'fluidez.captured',
     'fluidez.userWords', 'fluidez.journal', 'fluidez.profile', 'fluidez.theme', 'fluidez.topicLevel', 'fluidez.caps',
-    'fluidez.gameBest', 'fluidez.onboarded', 'fluidez.voice'];
+    'fluidez.gameBest', 'fluidez.onboarded', 'fluidez.voice', 'fluidez.suggest'];
   var KEEP_ON_RESET = { 'fluidez.theme': 1, 'fluidez.voice': 1 };
 
   function exportData() {
