@@ -124,7 +124,7 @@ window.CONCEPT_LESSONS = [
 },
 
 {
-  id: 'impneg', title: 'Imperativo negativo', level: 4,
+  id: 'impneg', canDo: 'tell someone NOT to do something', title: 'Imperativo negativo', level: 4,
   summary: 'Negative commands ("don\'t speak!") are built entirely from the present subjunctive — including tú, which has its own special form in the affirmative but switches to the subjunctive here.',
   sections: [
     { h: 'How it forms', html: 'Take the <b>presente de subjuntivo</b> form for the person you\'re addressing and put <b>no</b> in front: <i>no hables, no hable, no hablemos, no habléis, no hablen</i>.' },

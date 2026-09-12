@@ -719,7 +719,24 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: 'Cuando llegaron los inspectores, la fábrica ya ___ (cerrar) sus puertas.', inf: 'cerrar', tense: 'plusc', person: 'él/ella', en: 'When the inspectors arrived, the factory had already closed its doors.' },
   { type: 'cloze', level: 9, text: 'No creo que las nuevas medidas ___ (resolver) el problema de fondo.', inf: 'resolver', tense: 'presubj', person: 'ellos', en: 'I do not think the new measures will solve the underlying problem.' },
   { type: 'cloze', level: 8, text: '___ (completar) el formulario antes de las cinco de la tarde, por favor.', inf: 'completar', tense: 'imperativo', person: 'usted', en: 'Please fill out the form before five in the afternoon.' },
-  { type: 'cloze', level: 9, text: 'No ___ (revelar) la fuente de la información bajo ninguna circunstancia.', inf: 'revelar', tense: 'impneg', person: 'usted', en: 'Do not reveal the source of the information under any circumstances.' },
+  /* ---- negative imperative -------------------------------------------
+   * B1 teaches impneg and had two items to practise it on, both level 9,
+   * so a B1 learner met none of them. These are the same tense at the
+   * level it is actually taught. NOTE the gap swallows "no": the engine's
+   * impneg form is "no hables", pronoun included. */
+  { type: 'cloze', level: 4, text: '___ (preocuparse) por eso, que ya está solucionado.', inf: 'preocuparse', tense: 'impneg', person: 'tú', en: 'Don\'t worry about that, it\'s already sorted.' },
+  { type: 'cloze', level: 4, text: '___ (hablar) tan deprisa, por favor, que no te entiendo.', inf: 'hablar', tense: 'impneg', person: 'tú', en: 'Don’t speak so fast, please, I can’t understand you.' },
+  { type: 'cloze', level: 4, text: '___ (venir) mañana, que la oficina está cerrada.', inf: 'venir', tense: 'impneg', person: 'tú', en: 'Don\'t come tomorrow, the office is closed.' },
+  { type: 'cloze', level: 4, text: '___ (olvidar) las llaves otra vez.', inf: 'olvidar', tense: 'impneg', person: 'tú', en: 'Don\'t forget the keys again.' },
+  { type: 'cloze', level: 4, text: '___ (decir) nada todavía, es una sorpresa.', inf: 'decir', tense: 'impneg', person: 'tú', en: 'Don\'t say anything yet, it\'s a surprise.' },
+  { type: 'cloze', level: 4, text: '___ (ponerse) ese abrigo, hace mucho calor fuera.', inf: 'ponerse', tense: 'impneg', person: 'tú', en: 'Don\'t put that coat on, it\'s very hot outside.' },
+  { type: 'cloze', level: 5, text: 'Por favor, ___ (dejar) el equipaje en el pasillo.', inf: 'dejar', tense: 'impneg', person: 'usted', en: 'Please do not leave your luggage in the corridor.' },
+  { type: 'cloze', level: 5, text: '___ (salir) sin paraguas, que está lloviendo.', inf: 'salir', tense: 'impneg', person: 'tú', en: 'Don\'t go out without an umbrella, it\'s raining.' },
+  { type: 'cloze', level: 5, text: '___ (hacer) ruido, que los niños están durmiendo.', inf: 'hacer', tense: 'impneg', person: 'tú', en: 'Don\'t make noise, the children are sleeping.' },
+  { type: 'cloze', level: 5, text: 'Señores, ___ (fumar) dentro del edificio.', inf: 'fumar', tense: 'impneg', person: 'ustedes', en: 'Gentlemen, do not smoke inside the building.' },
+  { type: 'cloze', level: 5, text: '___ (ir) por esa calle, está cortada.', inf: 'ir', tense: 'impneg', person: 'tú', en: 'Don\'t go down that street, it\'s closed off.' },
+  { type: 'cloze', level: 5, text: '___ (perder) el billete, lo piden a la salida.', inf: 'perder', tense: 'impneg', person: 'tú', en: 'Don\'t lose the ticket, they ask for it on the way out.' },
+  { type: 'cloze', level: 9, text: '___ (revelar) la fuente de la información bajo ninguna circunstancia.', inf: 'revelar', tense: 'impneg', person: 'usted', en: 'Do not reveal the source of the information under any circumstances.' },
   { type: 'transform', level: 9, instruction: 'Rewrite as reported speech, starting with "El ministro declaró que...":', from: 'El ministro dijo: "Revisaremos la ley el próximo mes."', to: 'El ministro declaró que revisarían la ley el mes siguiente.', en: 'The minister stated that they would review the law the following month.' },
   { type: 'transform', level: 9, instruction: 'Rewrite as an impersonal "se" construction, without naming who took the decision:', from: 'El comité tomó la decisión sin consultar a los empleados.', to: 'La decisión se tomó sin consultar a los empleados.', en: 'The decision was made without consulting the employees.' },
 
@@ -752,7 +769,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: 'Para entonces, el equipo ya ___ (terminar) el proyecto.', inf: 'terminar', tense: 'futperf', person: 'él/ella', en: 'By then, the team will have already finished the project.' },
   { type: 'cloze', level: 8, text: 'Nadie se dio cuenta de que el sistema ya ___ (fallar) varias veces.', inf: 'fallar', tense: 'plusc', person: 'él/ella', en: 'No one noticed that the system had already failed several times.' },
   { type: 'cloze', level: 8, text: '___ (firmar) aquí, por favor.', inf: 'firmar', tense: 'imperativo', person: 'usted', en: 'Sign here, please.' },
-  { type: 'cloze', level: 8, text: 'No ___ (confirmar) la reserva todavía; falta revisar una cláusula.', inf: 'confirmar', tense: 'impneg', person: 'usted', en: 'Do not confirm the reservation yet; a clause still needs reviewing.' },
+  { type: 'cloze', level: 8, text: '___ (confirmar) la reserva todavía; falta revisar una cláusula.', inf: 'confirmar', tense: 'impneg', person: 'usted', en: 'Do not confirm the reservation yet; a clause still needs reviewing.' },
   { type: 'transform', level: 9, instruction: 'Rewrite using "para que" + subjunctive to express purpose:', from: 'Firmaron el acuerdo. Así evitarían una demanda.', to: 'Firmaron el acuerdo para que se evitara una demanda.', en: 'They signed the agreement so that a lawsuit would be avoided.' },
   { type: 'transform', level: 8, instruction: 'Rewrite as a negation:', from: 'Todos los socios aprobaron la fusión.', to: 'No todos los socios aprobaron la fusión.', en: 'Not all the partners approved the merger.' },
 

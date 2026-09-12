@@ -73,7 +73,8 @@ window.GRAMMAR = [
   ]
 },
 {
-  key:'futuro', title:'Futuro (Future)',
+  key:'futuro',
+  canDo:'talk about the future, and guess about the present', title:'Futuro (Future)',
   summary:'What will happen; also probability in the present.',
   formation:'Add the future endings to the WHOLE infinitive. Endings are the same for all three verb types.',
   when:[
@@ -91,7 +92,8 @@ window.GRAMMAR = [
   ]
 },
 {
-  key:'condicional', title:'Condicional (Conditional)',
+  key:'condicional',
+  canDo:'say what I would do, and ask for things more politely', title:'Condicional (Conditional)',
   summary:'What would happen; polite requests and hypotheticals.',
   formation:'Add the conditional endings to the WHOLE infinitive (same endings for all verb types). Same irregular stems as the future.',
   when:[
@@ -143,7 +145,8 @@ window.GRAMMAR = [
   ]
 },
 {
-  key:'futperf', title:'Futuro perfecto (Future Perfect)',
+  key:'futperf',
+  canDo:'say what will have happened by a given point', title:'Futuro perfecto (Future Perfect)',
   summary:'An action that will be completed by a future point ("will have done").',
   formation:'Future of <i>haber</i> (habré, habrás, habrá…) + past participle.',
   when:[
@@ -157,7 +160,8 @@ window.GRAMMAR = [
   ]
 },
 {
-  key:'condperf', title:'Condicional perfecto (Conditional Perfect)',
+  key:'condperf',
+  canDo:'say what would have happened', title:'Condicional perfecto (Conditional Perfect)',
   summary:'What would have happened ("would have done").',
   formation:'Conditional of <i>haber</i> (habría, habrías…) + past participle.',
   when:[
@@ -191,7 +195,8 @@ window.GRAMMAR = [
   ]
 },
 {
-  key:'impsubj', title:'Imperfecto de subjuntivo (Imperfect Subjunctive)',
+  key:'impsubj',
+  canDo:'talk about what is not the case with si tuviera', title:'Imperfecto de subjuntivo (Imperfect Subjunctive)',
   summary:'The subjunctive in past contexts and "if" clauses.',
   formation:'Take the ellos preterite form, drop -ron, and add -ra, -ras, -ra, -´ramos, -rais, -ran. (Works for every verb, no exceptions.)',
   when:[
@@ -209,7 +214,8 @@ window.GRAMMAR = [
   ]
 },
 {
-  key:'perfsubj', title:'Pretérito perfecto de subjuntivo (Present Perfect Subjunctive)',
+  key:'perfsubj',
+  canDo:'say I hope or doubt that something has already happened', title:'Pretérito perfecto de subjuntivo (Present Perfect Subjunctive)',
   summary:'Subjunctive for a recently completed action ("have done").',
   formation:'Present subjunctive of <i>haber</i> (haya, hayas, haya…) + past participle.',
   when:[
