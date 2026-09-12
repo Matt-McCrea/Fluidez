@@ -296,6 +296,22 @@
      *     the present perfect is A2 whatever the old 1-5 ladder said. */
     { title: 'El pretérito perfecto: haber + participio',
       ids: ['gr-preterito-perfecto-a2', 'perfecto'] },
+
+    /* The two the first pass missed. A2 was building the preterite twice —
+     * `preterito` on day 94 and `gr-preterito-indefinido-a2` on day 151 — and
+     * the imperfect twice, on 95 and 148, which is the same duplication the
+     * six pairs above were merged to fix.
+     *
+     * The LADDER lesson is head here, not the strand one. Both halves are A2
+     * so level is not the tiebreak this time; what decides it is that the id
+     * survives the merge, and `preterito`/`imperfecto` ARE the tense keys the
+     * engine speaks — js/session.js matches cloze with `it.tense === focus.id`.
+     * Keeping the strand id would have silently cut both tenses off from every
+     * cloze item in data/apply.js. */
+    { title: 'El pretérito indefinido: qué pasó y cuándo',
+      ids: ['preterito', 'gr-preterito-indefinido-a2'] },
+    { title: 'El pretérito imperfecto: cómo era y qué solía pasar',
+      ids: ['imperfecto', 'gr-preterito-imperfecto-a2'] },
     { title: 'El imperativo afirmativo: forma y uso',
       ids: ['gr-imperativo-forma-a2', 'imperativo'] },
     { title: 'El futuro: forma, predicción y conjetura',

@@ -310,10 +310,8 @@ window.COURSE = [
   { lesson: 'fn-preguntar-deseos-a2' },                 // func  Deseos: los tuyos y los que se ofrecen
   { practice: true },
   { verbs: ['apuntarse', 'quedarse', 'matricularse', 'relajarse', 'enterarse'] },
-  { lesson: 'gr-preterito-imperfecto-a2' },             // gram  El pretérito imperfecto
   { lesson: 'fn-dirigirse-a2' },                        // func  Dirigirse a alguien y presentarlo
   { verbs: ['fijarse'] },
-  { lesson: 'gr-preterito-indefinido-a2' },             // gram  El pretérito indefinido
   { practice: true },
   { lesson: 'nt-expresion-verbal-a2' },                 // noti  Expresión verbal: preguntar, contestar, decir
   { lesson: 'dc-deixis-temporal-a2' },                  // disc  Deixis temporal y el hilo del relato
