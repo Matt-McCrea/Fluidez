@@ -178,7 +178,17 @@
       // accents: 412 cards of "¿Qué diferencia hay entre X e Y?" with a
       // paragraph for an answer went into the deck as typed recall.
       if (/^(what|which|why|how|when|name the|in which)\b/i.test(f)) return true;
-      if (/^¿(qué|cuál|cuáles|por qué|cómo|cuándo|quién|puede|cuántos?)\b/i.test(f)) return true;
+      /* NOT \b after the Spanish word. \b is defined on [A-Za-z0-9_], and é is
+       * not in that set — so "¿Qué signo…" never matched /^¿(qué)\b/, because
+       * there is no boundary between é and the space that follows it. Every
+       * accented question word (qué, cuál, cuáles, cómo, cuándo, quién,
+       * cuántos) failed this test silently; only `puede` worked, by ending in
+       * an unaccented letter. That is why Spanish questions about grammar kept
+       * arriving in Repasar as typed recall. Match the separator instead. */
+      if (/^¿\s*(qué|cuál|cuáles|por qué|cómo|cuándo|quién|quiénes|puede|cuántos?|dónde|adónde|cambia|concuerda|existe|hay|se puede)(?=[\s,:;"'?!]|$)/i.test(f)) return true;
+      // "¿En qué personas…", "¿Con qué palabra…", "¿A qué hora…" — a preposition
+      // in front of the question word, still a question about the grammar.
+      if (/^¿\s*(en|con|a|de|por|para|desde|hasta)\s+(qué|cuál|cuáles|quién)(?=[\s,:;"'?!]|$)/i.test(f)) return true;
       /* The same question with a SCENARIO in front of it slipped straight
        * through, because the test only looked at the opening word:
        *   "Ana te pregunta "¿cómo te llamas?". ¿Qué respondes?"
@@ -201,8 +211,22 @@
      * card. Review always types a lesson card (js/views/review.js resolves
      * `fixed` to mode 'type'), so a five-word answer is an automatic miss —
      * 1,015 of them, running up to 27 words. */
-    function reproducible(back) {
-      return String(back || '').trim().split(/\s+/).length <= 3;
+    function reproducible(back, kind, front) {
+      var b = String(back || '').trim();
+      var words = b.split(/\s+/).length;
+      /* A yes/no answer is not a recall card. Review types the answer, so the
+       * learner is being asked to type "no" — half of them get it right by
+       * writing the first thing that occurs to them, and nothing is recalled.
+       * These are fine as an mcq at the end of a lesson and useless in a deck:
+       * "¿Puede 'totalmente' ir delante del verbo?" -> "no — posición
+       * postverbal obligatoria". */
+      if (/^(no|sí|si)\b/i.test(b)) return false;
+      /* A gapped card has to be inferable from what it shows. Two words is
+       * about the limit: "Llegó el lunes y ___ se marchó." -> "dos días
+       * después" shows nothing that could produce that answer rather than
+       * "luego" or "después", so it is a guess dressed as recall. */
+      if ((kind === 'cloze' || String(front || '').indexOf('___') !== -1) && words > 2) return false;
+      return words <= 3;
     }
     out.recall = l.probes.map(function (p) {
       var card = p.kind === 'mcq'
@@ -213,7 +237,8 @@
                 probe: { kind: 'cloze', accept: p.accept } }
             : { id: p.id, front: p.front, back: p.back, probe: { kind: 'recall' } };
       card.srs = p.srs !== false &&                     // an author can always veto
-                 !metalinguistic(card.front, p.kind) && reproducible(card.back);
+                 !metalinguistic(card.front, p.kind) &&
+                 reproducible(card.back, p.kind, card.front);
       return card;
     });
     return out;
