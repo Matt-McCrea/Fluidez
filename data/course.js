@@ -35,70 +35,71 @@
  * ========================================================================== */
 window.COURSE = [
 
-  /* ---- A1 · 86 days · starts at index 0 ------------------------------- */
-  { verbs: ['hablar', 'pasar', 'llevar', 'dejar', 'tomar'] },
+  /* ---- A1 · 90 days · starts at index 0 ------------------------------- */
+  { verbs: ['ser', 'estar', 'llamarse', 'tener', 'haber'] },
   { lesson: 'presente' },                               // gram  Presente (Present)
   { lesson: 'ser-estar' },                              // gram  Ser vs. Estar
-  { verbs: ['llamar', 'quedar', 'esperar', 'entrar', 'trabajar'] },
+  { verbs: ['querer', 'poder', 'ir', 'hacer', 'dar'] },
   { lesson: 'gender-articles' },                        // gram  Gender & articles
   { practice: true },
   { lesson: 'gr-genero-sustantivos-a1' },               // gram  El género de los sustantivos
-  { verbs: ['necesitar', 'mirar', 'escuchar', 'comprar', 'ayudar'] },
+  { verbs: ['hablar', 'trabajar', 'vivir', 'llamar', 'quedar'] },
   { lesson: 'gr-numero-sustantivos-a1' },               // gram  El plural de los sustantivos
   { lesson: 'gr-genero-adjetivo-a1' },                  // gram  El género del adjetivo
-  { verbs: ['usar', 'terminar', 'estudiar', 'preguntar', 'contestar'] },
+  { verbs: ['saber', 'conocer', 'ver', 'decir', 'poner'] },
   { practice: true },
   { lesson: 'gr-posesivos-forma-a1' },                  // gram  Los posesivos: formas
   { lesson: 'gr-posesivos-distribucion-a1' },           // gram  Los posesivos átonos: dónde van
-  { verbs: ['comer', 'beber', 'cocinar', 'lavar', 'limpiar'] },
+  { verbs: ['comer', 'beber', 'comprar', 'necesitar', 'esperar'] },
   { lesson: 'gr-adjetivos-calificativos-a1' },          // gram  Adjetivos calificativos
   { lesson: 'nt-duracion-transcurso-a1' },              // noti  Antes, después y cuándo pasa
   { practice: true },
-  { verbs: ['ordenar', 'descansar', 'cenar', 'desayunar', 'preparar'] },
+  { verbs: ['venir', 'salir', 'volver', 'empezar', 'terminar'] },
   { lesson: 'fn-acuerdo-a1' },                          // func  Acuerdo y desacuerdo
   { lesson: 'gr-adverbios-lugar-tiempo-cantidad-a1' },  // gram  Adverbios de lugar, tiempo y cantidad
-  { verbs: ['cuidar', 'vivir', 'aprender', 'subir', 'bajar'] },
+  { verbs: ['levantarse', 'ducharse', 'desayunar', 'cenar', 'descansar'] },
   { lesson: 'gn-describir-persona-a1' },                // genr  Describir a una persona
   { practice: true },
   { lesson: 'gr-articulo-definido-a1' },                // gram  El artículo definido: distribución
-  { verbs: ['correr', 'caminar', 'viajar', 'visitar', 'invitar'] },
+  { verbs: ['entrar', 'pasar', 'llevar', 'tomar', 'dejar'] },
   { lesson: 'gr-articulo-indefinido-a1' },              // gram  El artículo indefinido: un, una, unos, unas
   { lesson: 'dc-conectores-a1' },                       // disc  Conectores y negación
-  { verbs: ['cantar', 'bailar', 'nadar', 'cambiar', 'ganar'] },
+  { verbs: ['mirar', 'escuchar', 'ayudar', 'usar', 'estudiar'] },
   { practice: true },
   { lesson: 'nt-evaluacion-general-a1' },               // noti  Bueno, malo y los colores
   { lesson: 'fn-corregir-informacion-a1' },             // func  Corregir y decir que no sabes
-  { verbs: ['gastar', 'ahorrar', 'firmar', 'reservar', 'alquilar'] },
+  { verbs: ['preguntar', 'contestar', 'cocinar', 'lavar', 'limpiar'] },
   { lesson: 'gr-atributo-a1' },                         // gram  El atributo con ser
   { lesson: 'gr-infinitivo-usos-a1' },                  // gram  El infinitivo: cuándo se usa solo
   { practice: true },
-  { verbs: ['olvidar', 'explicar', 'enseñar', 'aceptar', 'intentar'] },
+  { verbs: ['ordenar', 'preparar', 'cuidar', 'aprender', 'subir'] },
   { lesson: 'nt-cantidad-numerica-a1' },                // noti  Cantidad: números, más y menos
   { lesson: 'gr-objeto-directo-a1' },                   // gram  El objeto directo
-  { verbs: ['decidir', 'permitir', 'recibir', 'partir', 'cumplir'] },
+  { verbs: ['bajar', 'correr', 'caminar', 'viajar', 'visitar'] },
   { lesson: 'gn-describir-lugar-a1' },                  // genr  Describir un lugar
   { practice: true },
   { lesson: 'fn-dirigirse-a1' },                        // func  Dirigirse a alguien y responder
-  { verbs: ['existir', 'ocurrir', 'insistir', 'discutir', 'guardar'] },
+  { verbs: ['invitar', 'cantar', 'bailar', 'nadar', 'cambiar'] },
   { lesson: 'gr-participio-adjetival-a1' },             // gram  El participio como adjetivo
   { lesson: 'gr-presente-indicativo-valores-a1' },      // gram  El presente: de qué habla realmente
-  { verbs: ['tirar', 'arreglar', 'prestar', 'regalar', 'mandar'] },
+  { verbs: ['ganar', 'gastar', 'ahorrar', 'firmar', 'reservar'] },
   { practice: true },
   { lesson: 'nt-origen-a1' },                           // noti  De dónde eres y cuántos años tienes
   { lesson: 'gr-pronombre-se-a1' },                     // gram  El pronombre se: usos reflexivos
-  { verbs: ['saludar', 'presentar', 'acompañar', 'grabar', 'marcar'] },
+  { verbs: ['alquilar', 'olvidar', 'explicar', 'enseñar', 'aceptar'] },
   { lesson: 'fn-establecer-comunicacion-a1' },          // func  Empezar y terminar una conversación
   { lesson: 'gr-relativo-que-a1' },                     // gram  El relativo que: una palabra, tres trabajos
   { practice: true },
-  { verbs: ['llenar', 'levantar', 'vestir', 'lavarse', 'ducharse'] },
+  { verbs: ['intentar', 'decidir', 'permitir', 'recibir', 'partir'] },
   { lesson: 'dc-deixis-espacial-a1' },                  // disc  Esto, eso y el orden de la información
   { lesson: 'gn-describir-objeto-a1' },                 // genr  Describir un objeto
-  { verbs: ['levantarse', 'llamarse', 'llevarse'] },
+  { verbs: ['cumplir', 'existir', 'ocurrir', 'insistir', 'discutir'] },
   { lesson: 'nt-localizacion-a1' },                     // noti  Dónde están las cosas
   { practice: true },
   { lesson: 'gr-demostrativos-distribucion-a1' },       // gram  Los demostrativos: este, ese, aquel — y dónde van
   { lesson: 'fn-identificar-a1' },                      // func  Identificar: qué es y quién es
   { lesson: 'gr-interrogativos-a1' },                   // gram  Los interrogativos: qué, quién, cuánto, dónde, cómo
+  { verbs: ['llevarse'] },
   { lesson: 'nt-existencia-a1' },                       // noti  Hay, está, y entrar o salir
   { lesson: 'gr-numerales-a1' },                        // gram  Los numerales: cardinales y ordinales
   { practice: true },
@@ -106,6 +107,7 @@ window.COURSE = [
   { lesson: 'fn-silencio-a1' },                         // func  Pedir silencio
   { lesson: 'gn-conversacion-transaccional-a1' },       // genr  La conversación transaccional: comprar algo
   { lesson: 'gr-nombres-propios-a1' },                  // gram  Nombres propios: con o sin artículo
+  { verbs: ['guardar', 'tirar', 'arreglar', 'prestar', 'regalar'] },
   { lesson: 'nt-movimiento-estabilidad-a1' },           // noti  Ir, venir y dar direcciones
   { practice: true },
   { lesson: 'gr-oraciones-finales-a1' },                // gram  Oraciones finales: para + infinitivo
@@ -113,17 +115,19 @@ window.COURSE = [
   { lesson: 'fn-pedir-informacion-a1' },                // func  Pedir y dar información
   { lesson: 'dc-entonacion-a1' },                       // disc  La entonación y la cortesía
   { lesson: 'nt-referencias-generales-a1' },            // noti  La hora, los días y la frecuencia
+  { verbs: ['mandar', 'saludar', 'presentar', 'acompañar', 'grabar'] },
   { practice: true },
   { lesson: 'gr-cuantificadores-no-universales-a1' },   // gram  Poco y mucho
   { lesson: 'gr-nucleo-verbal-a1' },                    // gram  Ser y estar sin adjetivo: el núcleo del predicado
   { lesson: 'gn-generos-escritos-a1' },                 // genr  Textos breves de cada día
   { lesson: 'gr-adverbios-afirmacion-negacion-a1' },    // gram  Sí, no, también, tampoco
   { lesson: 'fn-valorar-a1' },                          // func  Valorar y hablar de lo que haces
+  { verbs: ['marcar', 'llenar', 'levantar', 'vestir', 'lavarse'] },
   { practice: true },
   { lesson: 'nt-valor-precio-a1' },                     // noti  Precio y tamaño
   { lesson: 'gr-oraciones-actitud-hablante-a1' },       // gram  Tipos de oración según la actitud del hablante
 
-  /* ---- A2 · 105 days · starts at index 86 ------------------------------- */
+  /* ---- A2 · 105 days · starts at index 90 ------------------------------- */
   { verbs: ['mejorar', 'empeorar', 'aumentar', 'evitar', 'crear'] },
   { lesson: 'preterito' },                              // gram  Pretérito (Preterite)
   { lesson: 'imperfecto' },                             // gram  Imperfecto (Imperfect)
@@ -230,7 +234,7 @@ window.COURSE = [
   { lesson: 'fn-responder-saludo-a2' },                 // func  Saludar: en persona y por escrito
   { lesson: 'gr-verbos-predicativos-tipos-a2' },        // gram  Verbos que funcionan al revés: encantar, doler
 
-  /* ---- B1 · 189 days · starts at index 191 ------------------------------- */
+  /* ---- B1 · 189 days · starts at index 195 ------------------------------- */
   { lesson: 'futuro' },                                 // gram  El futuro: forma, predicción y conjetura
   { lesson: 'condicional' },                            // gram  El condicional: forma, cortesía y modestia
   { lesson: 'gr-presente-subjuntivo-b1' },              // gram  El subjuntivo: cómo se forma y cuándo aparece
@@ -421,7 +425,7 @@ window.COURSE = [
   { lesson: 'gr-complementos-modificadores-b1' },       // gram  La chica de los ojos azules, la construcción del edificio
   { lesson: 'fn-tranquilizar-consolar-b1' },            // func  Tranquilizar y consolar
 
-  /* ---- B2 · 169 days · starts at index 380 ------------------------------- */
+  /* ---- B2 · 169 days · starts at index 384 ------------------------------- */
   { lesson: 'gr-que-explicativo-b2' },                  // gram  "Que" explicativo: la coma que añade, no que elige
   { lesson: 'gr-adverbios-enunciacion-b2' },            // gram  Adverbios de enunciación: comentar sobre las propias palab
   { lesson: 'gr-adverbios-frecuencia-topico-b2' },      // gram  Adverbios de frecuencia y el adverbio-tópico
@@ -592,7 +596,7 @@ window.COURSE = [
   { practice: true },
   { lesson: 'nt-visibilidad-vision-b2' },               // noti  Visibilidad y visión: a simple vista, distinguir, de lejos
 
-  /* ---- C1 · 229 days · starts at index 549 ------------------------------- */
+  /* ---- C1 · 229 days · starts at index 553 ------------------------------- */
   { lesson: 'gr-clases-adjetivos-c1' },                 // gram  Cuyo, los adjetivos de color compuestos y el relacional qu
   { lesson: 'gr-articulo-definido-c1' },                // gram  El artículo definido en C1: valor enfático y sustantivador
   { lesson: 'gr-articulo-indefinido-c1' },              // gram  El artículo indefinido en C1: convertir un nombre propio e
@@ -825,4 +829,4 @@ window.COURSE = [
 ];
 
 // Where each band starts. A band is a slice of one course, not a pool.
-window.COURSE_BANDS = {"A1":0,"A2":86,"B1":191,"B2":380,"C1":549};
+window.COURSE_BANDS = {"A1":0,"A2":90,"B1":195,"B2":384,"C1":553};
