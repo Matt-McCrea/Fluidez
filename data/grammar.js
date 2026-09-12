@@ -44,7 +44,7 @@ window.CONCEPT_LESSONS = [
 },
 
 {
-  id: 'gender-articles', deeper: ['gr-nombres-propios-a1'], title: 'Gender & articles', level: 1,
+  id: 'gender-articles', canDo: 'know whether a noun takes el or la, and why it matters', deeper: ['gr-nombres-propios-a1'], title: 'Gender & articles', level: 1,
   summary: 'Every Spanish noun has a gender, and the words around it must agree. Learn the patterns and the agreement chain becomes automatic.',
   sections: [
     { h: 'The patterns', html: 'Most nouns ending in <b>-o</b> are masculine (<i>el libro</i>); most ending in <b>-a</b> are feminine (<i>la casa</i>). Learn each noun <i>with</i> its article — that\'s why our vocab shows <i>el / la</i>.' },
@@ -71,7 +71,7 @@ window.CONCEPT_LESSONS = [
 },
 
 {
-  id: 'preterite-imperfect', title: 'Preterite vs. Imperfect', level: 2,
+  id: 'preterite-imperfect', canDo: 'choose preterite or imperfect by what I actually mean', title: 'Preterite vs. Imperfect', level: 2,
   summary: 'Spanish has two past tenses and English blurs them. The preterite is a finished event; the imperfect is the background, the ongoing, the habitual. Choosing between them is a meaning decision.',
   sections: [
     { h: 'Preterite = the event', html: 'A completed action, often at a specific moment: <i>Ayer comí paella.</i> Think: "what happened?" A dot on the timeline.' },
@@ -99,7 +99,7 @@ window.CONCEPT_LESSONS = [
 },
 
 {
-  id: 'por-para', title: 'Por vs. Para', level: 2,
+  id: 'por-para', canDo: 'tell por from para and stop guessing', title: 'Por vs. Para', level: 2,
   summary: 'Both often translate as "for", but they point in different directions. Para looks forward to a goal, destination or deadline; por looks at cause, exchange, duration and movement through.',
   sections: [
     { h: 'PARA = destination / purpose', html: '<ul><li>Goal: <i>Estudio para aprender.</i></li><li>Recipient: <i>Es para ti.</i></li><li>Destination: <i>Salgo para Madrid.</i></li><li>Deadline: <i>Para el lunes.</i></li></ul>' },

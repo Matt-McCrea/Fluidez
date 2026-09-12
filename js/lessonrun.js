@@ -60,10 +60,16 @@ window.LessonRun = (function () {
     var out = arr.filter(function (x) { return (x.level || 1) <= level; });
     return out.length ? out : arr;          // a hard item beats a blank stage
   }
+  /* A themed pool only wins if it is big enough to VARY. `t.length ? t : arr`
+   * handed a lesson its theme even when the theme had one matching passage at
+   * that level — so task-escribir (theme `medios`) drew the same text every
+   * time it came round, and task-pedir alternated between two. Same threshold
+   * and same reasoning as nearestLevel below: three is the point at which a
+   * pool stops being a single item wearing a filter. */
   function preferTheme(arr, theme) {
     if (!theme) return arr;
     var t = arr.filter(function (x) { return x.theme === theme; });
-    return t.length ? t : arr;
+    return t.length >= 3 ? t : arr;
   }
   /* Closest level wins. "At or below" alone would let a C1 lesson draw an A1
    * text, which is technically in range and useless as input — and a level-2

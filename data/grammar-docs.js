@@ -32,7 +32,8 @@ window.GRAMMAR = [
   ]
 },
 {
-  key:'preterito', title:'Pretérito (Preterite)',
+  key:'preterito',
+  canDo:'say what happened and when, as a sequence of completed events', title:'Pretérito (Preterite)',
   summary:'Completed actions in the past with a defined beginning/end.',
   formation:'Add the preterite endings to the stem. -er and -ir verbs share one set of endings.',
   when:[
@@ -53,7 +54,8 @@ window.GRAMMAR = [
   ]
 },
 {
-  key:'imperfecto', title:'Imperfecto (Imperfect)',
+  key:'imperfecto',
+  canDo:'describe how things were and what I used to do', title:'Imperfecto (Imperfect)',
   summary:'Ongoing, habitual, or descriptive past — the "was/used to" past.',
   formation:'Add the imperfect endings to the stem. -er and -ir share endings. Only three verbs are irregular.',
   when:[

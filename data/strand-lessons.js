@@ -1872,7 +1872,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-pedir-informacion-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-pedir-informacion-a1', canDo: 'ask a stranger for information and understand the answer', strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:13', 'funciones:A1:14', 'funciones:A1:18', 'funciones:A1:20',
          'funciones:A1:26', 'funciones:A1:28', 'funciones:A1:30', 'funciones:A1:31'],
   title: 'Pedir información',
@@ -1917,7 +1917,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-corregir-informacion-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-corregir-informacion-a1', canDo: 'correct someone politely, and say when I do not know', strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:65', 'funciones:A1:66', 'funciones:A1:67', 'funciones:A1:69', 'funciones:A1:70'],
   title: 'Corregir una información',
   summary: 'Correcting what someone just said follows a fixed two-step shape: first say no or sí against their statement, then replace it. Skipping the second step leaves your listener with only half a correction.',
@@ -1995,7 +1995,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-acuerdo-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-acuerdo-a1', canDo: 'agree and disagree out loud instead of nodding', strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:118', 'funciones:A1:119', 'funciones:A1:120'],
   title: 'Expresar acuerdo (A1)',
   summary: 'Agreeing is mostly mechanical: repeat the opinion back, or add también/tampoco to your own reaction. The one thing to get right is which of the two you need.',
@@ -2109,7 +2109,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-dirigirse-a1', deeper: ['fn-silencio-a1'], strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-dirigirse-a1', canDo: 'choose between tú and usted, and address someone correctly', deeper: ['fn-silencio-a1'], strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:357', 'funciones:A1:358', 'funciones:A1:359', 'funciones:A1:360'],
   title: 'Dirigirse a alguien',
   summary: "How you open a conversation announces the register before you've said anything else: a first name is casual, title + surname is formal, and the time-of-day greetings sit safely in between.",
@@ -2324,7 +2324,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-conectores-a1', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
+  id: 'dc-conectores-a1', canDo: 'join sentences with y, pero, porque and también', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
   pcic: ['tacticas_pragmaticas:A1:8', 'tacticas_pragmaticas:A1:9', 'tacticas_pragmaticas:A1:10',
          'tacticas_pragmaticas:A1:11', 'tacticas_pragmaticas:A1:12', 'tacticas_pragmaticas:A1:13'],
   title: 'Conectores',
@@ -2365,7 +2365,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-deixis-espacial-a1', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
+  id: 'dc-deixis-espacial-a1', canDo: 'use aquí, ahí and allí, and tell ir from venir', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
   pcic: ['tacticas_pragmaticas:A1:20', 'tacticas_pragmaticas:A1:21', 'tacticas_pragmaticas:A1:23',
          'tacticas_pragmaticas:A1:24', 'tacticas_pragmaticas:A1:26'],
   title: 'Deixis espacial',
@@ -2524,7 +2524,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-generos-escritos-a1', strand: 'genre', cefr: 'A1', level: 1, theme: null,
+  id: 'gn-generos-escritos-a1', canDo: 'write a short note, message or postcard', strand: 'genre', cefr: 'A1', level: 1, theme: null,
   pcic: ['generos_discursivos:A1:11', 'generos_discursivos:A1:15', 'generos_discursivos:A1:16',
          'generos_discursivos:A1:60', 'generos_discursivos:A1:62', 'generos_discursivos:A1:63', 'generos_discursivos:A1:64'],
   title: 'Textos breves de cada día',
@@ -2565,7 +2565,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-conversacion-transaccional-a1', strand: 'genre', cefr: 'A1', level: 1, theme: 'compras',
+  id: 'gn-conversacion-transaccional-a1', canDo: 'buy something and pay for it', strand: 'genre', cefr: 'A1', level: 1, theme: 'compras',
   pcic: ['generos_discursivos:A1:91', 'generos_discursivos:A1:96', 'generos_discursivos:A1:99', 'generos_discursivos:A1:102',
          'generos_discursivos:A1:115', 'generos_discursivos:A1:117', 'generos_discursivos:A1:122', 'generos_discursivos:A1:125',
          'generos_discursivos:A1:129', 'generos_discursivos:A1:134', 'generos_discursivos:A1:138', 'generos_discursivos:A1:140',
@@ -2615,7 +2615,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-persona-a1', strand: 'genre', cefr: 'A1', level: 1, theme: null,
+  id: 'gn-describir-persona-a1', canDo: 'describe a person so someone else recognises them', strand: 'genre', cefr: 'A1', level: 1, theme: null,
   pcic: ['generos_discursivos:A1:167', 'generos_discursivos:A1:168', 'generos_discursivos:A1:169', 'generos_discursivos:A1:170',
          'generos_discursivos:A1:176', 'generos_discursivos:A1:178', 'generos_discursivos:A1:179', 'generos_discursivos:A1:182'],
   title: 'Describir a una persona',
@@ -2657,7 +2657,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-objeto-a1', strand: 'genre', cefr: 'A1', level: 1, theme: null,
+  id: 'gn-describir-objeto-a1', canDo: 'describe an object and what it is for', strand: 'genre', cefr: 'A1', level: 1, theme: null,
   pcic: ['generos_discursivos:A1:209', 'generos_discursivos:A1:210', 'generos_discursivos:A1:211',
          'generos_discursivos:A1:212', 'generos_discursivos:A1:215', 'generos_discursivos:A1:216', 'generos_discursivos:A1:217'],
   title: 'Describir un objeto',
@@ -2698,7 +2698,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-lugar-a1', strand: 'genre', cefr: 'A1', level: 1, theme: 'vivienda',
+  id: 'gn-describir-lugar-a1', canDo: 'describe a place and what there is in it', strand: 'genre', cefr: 'A1', level: 1, theme: 'vivienda',
   pcic: ['generos_discursivos:A1:242', 'generos_discursivos:A1:243', 'generos_discursivos:A1:244',
          'generos_discursivos:A1:245', 'generos_discursivos:A1:251', 'generos_discursivos:A1:252'],
   title: 'Describir un lugar',
@@ -2784,7 +2784,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-pedir-informacion-a2', deeper: ['dc-interrogativos-neutros-a2'], strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-pedir-informacion-a2', canDo: 'ask for and give practical information', deeper: ['dc-interrogativos-neutros-a2'], strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:33', 'funciones:A2:36', 'funciones:A2:38', 'funciones:A2:40',
          'funciones:A2:42', 'funciones:A2:44', 'funciones:A2:47', 'funciones:A2:49'],
   title: 'Pedir información (A2)',
@@ -2865,7 +2865,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-acuerdo-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-acuerdo-a2', canDo: 'agree, half-agree, and say what I think of it', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:121', 'funciones:A2:122', 'funciones:A2:123', 'funciones:A2:124'],
   title: 'Expresar acuerdo (A2)',
   summary: 'A2 agreement adds "sí" as an opener and lets you frame it as your own belief ("yo también creo que") rather than a bare echo — more visible commitment than the A1 repetition trick.',
@@ -2938,7 +2938,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-preguntar-conocimiento-a2', deeper: ['fn-identificar-a2'], strand: 'function', cefr: 'A2', level: 2, theme: 'educacion',
+  id: 'fn-preguntar-conocimiento-a2', canDo: 'say what I know and what I have no idea about', deeper: ['fn-identificar-a2'], strand: 'function', cefr: 'A2', level: 2, theme: 'educacion',
   pcic: ['funciones:A2:152', 'funciones:A2:153', 'funciones:A2:154'],
   title: 'Preguntar por el conocimiento de algo',
   summary: 'Asking whether someone knows something splits the same way saber/conocer does: sabes for facts and skills, conoces for people and places, and has aprendido/estudiado for something learned formally.',
@@ -3012,7 +3012,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-preguntar-gustos-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-preguntar-gustos-a2', canDo: 'ask what someone likes and answer when they ask me', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:189', 'funciones:A2:190', 'funciones:A2:191'],
   title: 'Preguntar por gustos e intereses',
   summary: 'Asking about likes uses gustar-family verbs backwards from English: the thing liked is the grammatical subject, and the person is marked with te/le/os — get the agreement wrong and the sentence breaks, not just sounds odd.',
@@ -3086,7 +3086,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-preguntar-preferencias-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-preguntar-preferencias-a2', canDo: 'ask which of two things someone prefers', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:205', 'funciones:A2:206', 'funciones:A2:207', 'funciones:A2:208', 'funciones:A2:209'],
   title: 'Preguntar por preferencias',
   summary: 'Asking someone to choose can offer them the field wide open, a specific pair, or a category — and matching the question shape to what you actually want to know keeps the answer useful.',
@@ -3161,7 +3161,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-preguntar-deseos-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-preguntar-deseos-a2', canDo: 'ask what someone wants, and offer', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:215', 'funciones:A2:216', 'funciones:A2:217', 'funciones:A2:218'],
   title: 'Preguntar por deseos',
   summary: 'Two ways to ask what someone wants sit at different levels of directness: "¿quieres...?" asks plainly, while "¿te gustaría...?" softens the same question into more of an invitation. Learn the -ía forms whole for now — they belong to a tense you will build properly later, and they work perfectly well before you can.',
@@ -3198,7 +3198,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-preguntar-estado-animo-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-preguntar-estado-animo-a2', canDo: 'ask how someone is and mean it', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:226', 'funciones:A2:227', 'funciones:A2:228'],
   title: 'Preguntar por el estado de ánimo',
   summary: 'Three near-identical ways to ask how someone is doing — the differences are so small that any one works almost everywhere, which itself is worth knowing: you rarely need to overthink this greeting.',
@@ -3360,7 +3360,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-acceder-peticion-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-acceder-peticion-a2', canDo: 'say yes to a request, and say no with a reason', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:286', 'funciones:A2:287', 'funciones:A2:289', 'funciones:A2:290'],
   title: 'Acceder a una petición',
   summary: 'Agreeing to do what someone asks has a scale from unreserved to hedged to evasive — the same short words (vale, bueno) shift meaning depending on whether they stand alone or come loaded with a "pero" or a "no sé".',
@@ -3434,7 +3434,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-proponer-sugerir-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-proponer-sugerir-a2', canDo: 'propose something and accept or turn down a proposal', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:307', 'funciones:A2:308', 'funciones:A2:309', 'funciones:A2:310', 'funciones:A2:311', 'funciones:A2:312'],
   title: 'Proponer y sugerir',
   summary: 'Proposing an activity uses ordinary questions, not a special grammar — "¿Vamos a bailar?" is literally asking about a shared future action, and it works precisely because it includes you both.',
@@ -3510,7 +3510,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-aconsejar-a2', strand: 'function', cefr: 'A2', level: 2, theme: 'salud',
+  id: 'fn-aconsejar-a2', canDo: 'give advice and offer to help', strand: 'function', cefr: 'A2', level: 2, theme: 'salud',
   pcic: ['funciones:A2:335', 'funciones:A2:336', 'funciones:A2:337', 'funciones:A2:338', 'funciones:A2:340'],
   title: 'Aconsejar',
   summary: 'Advice ranges from a gentle option (puedes) through a personal push (tienes que) to an impersonal rule (hay que) — the impersonal version advises without pointing at anyone, which is often what makes it land better.',
@@ -3664,7 +3664,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-dirigirse-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-dirigirse-a2', canDo: 'address someone and introduce them to somebody else', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:361', 'funciones:A2:362', 'funciones:A2:363'],
   title: 'Dirigirse a alguien (A2)',
   summary: 'Getting a stranger\'s attention politely almost always needs a word first — perdón, oiga, oye — except in the one setting where the exchange itself makes the attention-getter unnecessary, like a cashier stating a price.',
@@ -3701,7 +3701,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-disculparse-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-disculparse-a2', canDo: 'say sorry, and reply when someone apologises to me', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:381', 'funciones:A2:382', 'funciones:A2:383'],
   title: 'Disculparse',
   summary: 'Apologizing scales from a quick "perdona" to a heavier "lo siento muchísimo" — and naming exactly what you are sorry for with "siento + infinitive" makes the apology land as sincere rather than reflexive.',
@@ -3738,7 +3738,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-felicitar-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-felicitar-a2', canDo: 'congratulate someone and share their good news', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:392', 'funciones:A2:394', 'funciones:A2:395', 'funciones:A2:397', 'funciones:A2:398'],
   title: 'Felicitar',
   summary: 'Felicidades and enhorabuena are not fully interchangeable: felicidades marks a date (a birthday, a holiday), while enhorabuena marks an achievement someone earned.',
@@ -3814,7 +3814,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-responder-telefono-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-responder-telefono-a2', canDo: 'answer the phone and handle the call', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:430', 'funciones:A2:439', 'funciones:A2:440', 'funciones:A2:442',
          'funciones:A2:446', 'funciones:A2:448', 'funciones:A2:451', 'funciones:A2:453'],
   title: 'Contestar el teléfono',
@@ -3935,7 +3935,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-estructuradores-a2', deeper: ['dc-tematizacion-a2'], strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  id: 'dc-estructuradores-a2', canDo: 'open, continue and close what I am saying', deeper: ['dc-tematizacion-a2'], strand: 'discourse', cefr: 'A2', level: 2, theme: null,
   pcic: ['tacticas_pragmaticas:A2:14', 'tacticas_pragmaticas:A2:16', 'tacticas_pragmaticas:A2:17',
          'tacticas_pragmaticas:A2:18', 'tacticas_pragmaticas:A2:19'],
   title: 'Marcadores estructuradores',
@@ -4048,7 +4048,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-deixis-temporal-a2', deeper: ['dc-deixis-personal-a2'], strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  id: 'dc-deixis-temporal-a2', canDo: 'keep the time-line of a story straight', deeper: ['dc-deixis-personal-a2'], strand: 'discourse', cefr: 'A2', level: 2, theme: null,
   pcic: ['tacticas_pragmaticas:A2:32', 'tacticas_pragmaticas:A2:33'],
   title: 'Deixis temporal',
   summary: 'Time words like antes, después and entonces only make sense relative to a reference point that shifts with context — "después" means something different depending on when you say it, unlike a fixed date.',
@@ -4305,7 +4305,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-atenuacion-1apersona-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  id: 'dc-atenuacion-1apersona-a2', canDo: 'soften what I say by taking myself out of it', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
   pcic: ['tacticas_pragmaticas:A2:93', 'tacticas_pragmaticas:A2:94'],
   title: 'Atenuación: impersonal se y hay',
   summary: 'Two impersonal structures let you make a request or give an order without naming yourself as the one asking, or the listener as the one being told — "se" hides the asker, "hay que" hides the target of the obligation.',
@@ -4354,7 +4354,7 @@ window.STRAND_LESSONS = [
  * short public presentation.
  * ========================================================================== */
 {
-  id: 'gn-generos-escritos-a2', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  id: 'gn-generos-escritos-a2', canDo: 'write the everyday texts at paragraph length', strand: 'genre', cefr: 'A2', level: 2, theme: null,
   pcic: ['generos_discursivos:A2:67', 'generos_discursivos:A2:76', 'generos_discursivos:A2:77',
          'generos_discursivos:A2:78', 'generos_discursivos:A2:82', 'generos_discursivos:A2:83', 'generos_discursivos:A2:86'],
   title: 'Textos breves de cada día (A2)',
@@ -4395,7 +4395,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-instrucciones-a2', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  id: 'gn-instrucciones-a2', canDo: 'give clear step-by-step instructions', strand: 'genre', cefr: 'A2', level: 2, theme: null,
   pcic: ['generos_discursivos:A2:55'],
   title: 'Dar instrucciones breves',
   summary: 'Instructions have their own shape: a short setup naming the goal, then steps in strict order, almost always in the imperative — skipping the order or mixing tenses turns clear instructions into a puzzle.',
@@ -4435,7 +4435,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-presentacion-publica-a2', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  id: 'gn-presentacion-publica-a2', canDo: 'give a short talk in front of people', strand: 'genre', cefr: 'A2', level: 2, theme: null,
   pcic: ['generos_discursivos:A2:56'],
   title: 'Una presentación pública breve',
   summary: 'A short presentation on a familiar topic has three moves that almost never change — introduce the topic, develop two or three points, close — and visual support (a photo, a slide) carries some of the weight so your spoken Spanish does not have to.',
@@ -4482,7 +4482,7 @@ window.STRAND_LESSONS = [
  * carries no register-contrast requirement in data/taxonomy.js.
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-existencia-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-existencia-a1', canDo: 'say what there is somewhere, with hay', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:1', 'nociones_generales:A1:6', 'nociones_generales:A1:7',
          'nociones_generales:A1:8'],
   title: 'Existencia y presencia: hay, estar, tener',
@@ -4611,7 +4611,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-genero-sustantivos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-genero-sustantivos-a1', canDo: 'tell a masculine noun from a feminine one, exceptions included', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:19', 'gramatica:A1:21', 'gramatica:A1:22', 'gramatica:A1:24', 'gramatica:A1:25'],
   title: 'El género de los sustantivos',
   summary: '-o is masculine and -a is feminine most of the time, but the pattern breaks often enough — la moto, el día, el mapa — that guessing purely by ending will eventually embarrass you.',
@@ -4647,7 +4647,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-numero-sustantivos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-numero-sustantivos-a1', canDo: 'form the plural on the article, the noun and the adjective', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:37', 'gramatica:A1:38', 'gramatica:A1:39', 'gramatica:A1:40', 'gramatica:A1:41'],
   title: 'El plural de los sustantivos',
   summary: 'Spanish pluralizes by ending: a vowel just takes -s, a consonant needs the fuller -es, and a word already stressed on its last syllable needs both -es and a spelling adjustment.',
@@ -4683,7 +4683,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adjetivos-calificativos-a1', deeper: ['gr-participio-adjetival-a1'], strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-adjetivos-calificativos-a1', canDo: 'describe what something is like', deeper: ['gr-participio-adjetival-a1'], strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:45', 'gramatica:A1:46', 'gramatica:A1:47'],
   title: 'Adjetivos calificativos',
   summary: 'A descriptive adjective can sit right after its noun or, with ser, stand on its own as the predicate — and unlike a possessive, the article lets it stand completely alone, meaning "the [adjective] one."',
@@ -4723,7 +4723,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-genero-adjetivo-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-genero-adjetivo-a1', canDo: 'make an adjective agree with what it describes', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:50', 'gramatica:A1:51', 'gramatica:A1:52', 'gramatica:A1:53'],
   title: 'El género del adjetivo',
   summary: 'Most adjectives change for gender only if they end in -o; a consonant-ending adjective is normally invariable — except a nationality adjective, which always marks feminine even starting from a consonant.',
@@ -4759,7 +4759,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-articulo-definido-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-articulo-definido-a1', canDo: 'use el, la, los and las where Spanish needs them and English does not', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:72', 'gramatica:A1:74', 'gramatica:A1:75', 'gramatica:A1:78', 'gramatica:A1:80', 'gramatica:A1:81'],
   title: 'El artículo definido: distribución',
   summary: 'El/la/los/las sits at the very front of its noun phrase, which is exactly why it can never appear next to a possessive or demonstrative — Spanish allows only one "pointer" at the front at a time.',
@@ -4795,7 +4795,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-articulo-indefinido-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-articulo-indefinido-a1', canDo: 'use un, una, unos and unas correctly', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:99', 'gramatica:A1:101', 'gramatica:A1:104', 'gramatica:A1:105'],
   title: 'El artículo indefinido: un, una, unos, unas',
   summary: 'Un/una introduces something for the first time — which is exactly why it refuses to appear next to a demonstrative or a numeral: those already do the "pointing out" job themselves.',
@@ -4832,7 +4832,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-posesivos-distribucion-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-posesivos-distribucion-a1', canDo: 'put the possessive in the right place in the phrase', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:148', 'gramatica:A1:149', 'gramatica:A1:150', 'gramatica:A1:151'],
   title: 'Los posesivos átonos: dónde van',
   summary: 'Mi, tu, su and the rest of the short possessives must sit glued to the front of their noun — unlike English "mine," they can never stand alone, so asking whose something is takes a completely different question.',
@@ -4868,7 +4868,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-posesivos-forma-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-posesivos-forma-a1', canDo: 'say whose something is with mi, tu, su', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:143', 'gramatica:A1:144', 'gramatica:A1:145', 'gramatica:A1:146'],
   title: 'Los posesivos: formas',
   summary: 'Mi/tu/su only ever mark whether there is one owned thing or several — for the NUMBER OF OWNERS you need nuestro/vuestro\'s fuller forms, and su alone cannot tell you if the owner is one person or a crowd.',
@@ -4905,7 +4905,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-cuantificadores-no-universales-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-cuantificadores-no-universales-a1', canDo: 'say how much with poco, mucho and bastante', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:170', 'gramatica:A1:171', 'gramatica:A1:172'],
   title: 'Poco y mucho',
   summary: 'Poco and mucho both agree with what they quantify when they sit in front of a noun, but freeze into the plain masculine form the moment they modify a verb or adjective instead.',
@@ -4941,7 +4941,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-numerales-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-numerales-a1', canDo: 'use the numbers, including first, second and third', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:165', 'gramatica:A1:166', 'gramatica:A1:167', 'gramatica:A1:168'],
   title: 'Los numerales: cardinales y ordinales',
   summary: 'Cardinal numbers barely change — only uno and its compounds adjust for gender — but ordinals from primero to décimo agree like any adjective, and primero/tercero drop their -o before a masculine singular noun.',
@@ -4977,7 +4977,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-pronombre-se-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-pronombre-se-a1', canDo: 'talk about my routine with reflexive verbs', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:217', 'gramatica:A1:218', 'gramatica:A1:219', 'gramatica:A1:220'],
   title: 'El pronombre se: usos reflexivos',
   summary: 'Se has one invariable form for every third-person subject, singular or plural — and Spanish leans on reflexive verbs like peinarse and levantarse in everyday routines where English would never add "myself."',
@@ -5013,7 +5013,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-pronombre-sujeto-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-pronombre-sujeto-a1', canDo: 'know when to say yo and when to leave it out', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:193', 'gramatica:A1:196', 'gramatica:A1:200', 'gramatica:A1:201', 'gramatica:A1:202'],
   title: 'Los pronombres sujeto',
   summary: 'Spanish routinely drops its subject pronoun because the verb ending already says who is speaking — you keep yo/tú/él mainly to contrast one person against another, which is why constant yo-yo-yo sounds foreign.',
@@ -5053,7 +5053,7 @@ window.STRAND_LESSONS = [
  * presencia-ausencia, already taught in full by nt-existencia-a1)
  * ========================================================================== */
 {
-  id: 'nt-cantidad-numerica-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-cantidad-numerica-a1', canDo: 'count, and say how many and how much', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:25', 'nociones_generales:A1:26', 'nociones_generales:A1:27'],
   title: 'Cantidad numérica: cardinales y ordinales',
   summary: 'A cardinal number states an exact count; an ordinal states a position in a sequence — and the two are easy to mix up because "cuatro" (four) and "cuarto" (fourth) differ by a single letter.',
@@ -5170,7 +5170,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-localizacion-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-localizacion-a1', canDo: 'say where something is', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:66', 'nociones_generales:A1:67', 'nociones_generales:A1:68'],
   title: 'Localización: dónde está algo',
   summary: 'Placing something at a physical spot always takes estar, never ser — and aquí/allí frame that place relative to where the speaker is actually standing, not some fixed point on a map.',
@@ -5248,7 +5248,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-movimiento-estabilidad-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-movimiento-estabilidad-a1', canDo: 'say where I am going and give simple directions', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:89', 'nociones_generales:A1:90', 'nociones_generales:A1:91', 'nociones_generales:A1:92', 'nociones_generales:A1:93'],
   title: 'Movimiento: ir, venir, viajar',
   summary: 'Ir and venir both translate as "to go/come," but they point in opposite directions relative to the speaker — get them backwards and you have just told someone to come to a place you are not in.',
@@ -5367,7 +5367,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-referencias-generales-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-referencias-generales-a1', canDo: 'tell the time and name the days of the week', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:119', 'nociones_generales:A1:120', 'nociones_generales:A1:121', 'nociones_generales:A1:122', 'nociones_generales:A1:123', 'nociones_generales:A1:124', 'nociones_generales:A1:125', 'nociones_generales:A1:126', 'nociones_generales:A1:127', 'nociones_generales:A1:128'],
   title: 'Referencias temporales: la hora, los días',
   summary: 'Telling the time and naming days both run on a small, fixed set of building blocks — but Spanish counts the last twenty minutes of the hour DOWN toward the next one, a habit English speakers never expect.',
@@ -5455,7 +5455,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-duracion-transcurso-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-duracion-transcurso-a1', canDo: 'say what happens before, after and how long it lasts', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:174', 'nociones_generales:A1:175', 'nociones_generales:A1:176', 'nociones_generales:A1:177', 'nociones_generales:A1:178'],
   title: 'Duración: antes, después, empezar, terminar',
   summary: 'Antes and después order two events against each other, while empezar and terminar frame the edges of a single one — and each of those two verbs insists on its own preposition, a or de, which do not swap.',
@@ -5649,7 +5649,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-evaluacion-general-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-evaluacion-general-a1', canDo: 'say whether something is good, bad or fine, and name its colour', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:249', 'nociones_generales:A1:250', 'nociones_generales:A1:251', 'nociones_generales:A1:252'],
   title: 'Evaluación general: bueno, malo, bien',
   summary: 'Bueno/malo evaluate a NOUN and agree with it like any adjective; bien/mal evaluate how you ARE or how something is DONE and never change — confusing the two produces "estoy bueno," which does not mean what a beginner thinks it means.',
@@ -5688,7 +5688,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-valor-precio-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-valor-precio-a1', canDo: 'ask what something costs and say if it is cheap or dear', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:256', 'nociones_generales:A1:257', 'nociones_generales:A1:258'],
   title: 'Valor, precio: costar, barato, caro',
   summary: 'Costar and pagar split the money question in two — costar is what the ITEM does (it costs a figure), pagar is what the PERSON does (they hand over money) — and only costar answers "how much is it?"',
@@ -5872,7 +5872,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-interrogativos-exclamativos-a2', deeper: ['gr-oraciones-simples-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-interrogativos-exclamativos-a2', canDo: 'tell qué from cuál, and exclaim with ¡qué…!', deeper: ['gr-oraciones-simples-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:277', 'gramatica:A2:279', 'gramatica:A2:281', 'gramatica:A2:285', 'gramatica:A2:286', 'gramatica:A2:287'],
   title: 'Interrogativos y exclamativos: qué, cuál, cómo',
   summary: '¿Qué? asks for a definition or description; ¿cuál? asks you to pick from a set that is already understood — English collapses both into "what," which is exactly why Spanish learners blur them, especially when asking someone\'s name.',
@@ -5905,7 +5905,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-cuantificadores-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-cuantificadores-a2', canDo: 'use todo, otro, demasiado and nada', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:176', 'gramatica:A2:177', 'gramatica:A2:178', 'gramatica:A2:183', 'gramatica:A2:184', 'gramatica:A2:185'],
   title: 'Cuantificadores: todo, otro, demasiado, nada',
   summary: 'Todo needs a determiner riding along with it — todos LOS días, never a bare "todo días" — while otro flatly refuses one, because otro already does the determiner\'s job by itself.',
@@ -5938,7 +5938,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-pronombres-atonos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-pronombres-atonos-a2', canDo: 'combine direct and indirect pronouns as se lo, te la', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:231', 'gramatica:A2:232', 'gramatica:A2:233', 'gramatica:A2:240', 'gramatica:A2:241', 'gramatica:A2:244'],
   title: 'Pronombres átonos: OD y OI',
   summary: 'Me, te, nos and os do double duty as both direct and indirect object, but the third person splits — lo/la/los/las for the direct object, le/les for the indirect — which is exactly where confusion, and le doubling as lo, starts.',
@@ -5971,7 +5971,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-pronombres-tonicos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-pronombres-tonicos-a2', canDo: 'use mí, ti and conmigo after a preposition', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:252', 'gramatica:A2:253', 'gramatica:A2:255', 'gramatica:A2:256'],
   title: 'Pronombres tónicos: mí, ti, conmigo',
   summary: 'After a preposition, yo and tú switch to the special forms mí and ti — and con fuses with them into two irregular words, conmigo and contigo, that no ordinary rule for combining a preposition with a pronoun would predict.',
@@ -6004,7 +6004,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-condicionales-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-condicionales-a2', canDo: 'say what happens if something else does', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:574', 'gramatica:A2:575', 'gramatica:A2:576', 'gramatica:A2:577'],
   title: 'Condicionales: si + presente',
   summary: 'For a condition that might genuinely happen, Spanish keeps both halves in the present: si llueve, no salgo. English shifts one half ("if it rains, I won\'t go out") and Spanish does not have to — which makes this the easiest conditional there is, and the one you can say from today.',
@@ -6036,7 +6036,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-causales-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-causales-a2', canDo: 'give a reason with porque, como and por', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:558', 'gramatica:A2:559', 'gramatica:A2:560', 'gramatica:A2:561', 'gramatica:A2:562'],
   title: 'Causales: porque, como, por',
   summary: 'Porque and como state the exact same cause-effect logic, but only their position is interchangeable — como must open the sentence, porque almost always follows the result it explains.',
@@ -6075,7 +6075,7 @@ window.STRAND_LESSONS = [
  * distancia share the de-marked position pattern)
  * ========================================================================== */
 {
-  id: 'nt-existencia-inexistencia-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  id: 'nt-existencia-inexistencia-a2', canDo: 'talk about being born, dying and how old someone was', strand: 'notion', cefr: 'A2', level: 2, theme: null,
   pcic: ['nociones_generales:A2:3', 'nociones_generales:A2:4', 'nociones_generales:A2:5'],
   title: 'Existencia, inexistencia: no hay ningún, nacer y morir',
   summary: 'Denying existence needs haber together with ningún, nadie or nada — all built the same negative way — and nacer/morir mark the two edges of existence itself, its start and its end.',
@@ -6114,7 +6114,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-cualidad-material-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  id: 'nt-cualidad-material-a2', canDo: 'say what something is made of and swap it for another', strand: 'notion', cefr: 'A2', level: 2, theme: null,
   pcic: ['nociones_generales:A2:12', 'nociones_generales:A2:13', 'nociones_generales:A2:213', 'nociones_generales:A2:214', 'nociones_generales:A2:215'],
   title: 'Cualidad y material: ser de + material',
   summary: 'Ser de + material names what something is made from — the exact same "ser de" pattern that states a person\'s origin now states an object\'s composition, with no article and no exception.',
@@ -6191,7 +6191,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-necesidad-obligacion-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  id: 'nt-necesidad-obligacion-a2', canDo: 'say what is needed and what will do', strand: 'notion', cefr: 'A2', level: 2, theme: null,
   pcic: ['nociones_generales:A2:22', 'nociones_generales:A2:23', 'nociones_generales:A2:24'],
   title: 'Necesidad: necesitar, es necesario',
   summary: 'Necesitar makes YOU the subject who needs something; es necesario makes the THING or ACTION itself the subject that is needed — the identical fact, stated from two different grammatical directions.',
@@ -6269,7 +6269,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-posicion-relativa-distancia-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  id: 'nt-posicion-relativa-distancia-a2', canDo: 'say dentro, fuera, alrededor and how far away', strand: 'notion', cefr: 'A2', level: 2, theme: null,
   pcic: ['nociones_generales:A2:78', 'nociones_generales:A2:79', 'nociones_generales:A2:80', 'nociones_generales:A2:86', 'nociones_generales:A2:87'],
   title: 'Posición: dentro, fuera, alrededor — y la distancia',
   summary: 'Dentro/fuera, debajo/encima and delante/detrás all extend A1\'s cerca de/lejos de pattern with the same obligatory "de," while desde…hasta frames a distance as a span between two explicitly named points.',
@@ -6308,7 +6308,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-movimiento-estabilidad-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  id: 'nt-movimiento-estabilidad-a2', canDo: 'describe a route somebody could follow', strand: 'notion', cefr: 'A2', level: 2, theme: null,
   pcic: ['nociones_generales:A2:94', 'nociones_generales:A2:95', 'nociones_generales:A2:96', 'nociones_generales:A2:97', 'nociones_generales:A2:98'],
   title: 'Movimiento: subir, bajar, andar, quedarse',
   summary: 'Subir and bajar move vertically or board and alight a vehicle, while quedarse breaks the whole pattern by describing NOT moving — staying put is still filed under "movement" in Spanish\'s own way of dividing up the world.',
@@ -6431,7 +6431,7 @@ window.STRAND_LESSONS = [
  * are a kind of evaluative response)
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-anterioridad-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  id: 'nt-anterioridad-a2', canDo: 'use ya and todavía no, and say when something began or ended', strand: 'notion', cefr: 'A2', level: 2, theme: null,
   pcic: ['nociones_generales:A2:186', 'nociones_generales:A2:187', 'nociones_generales:A2:188'],
   title: 'Anterioridad: acabar de, ya, todavía no',
   summary: 'Acabar de + infinitive marks something that JUST happened, and ya/todavía no sit at opposite ends of the same scale — whether an expected event has arrived yet or is still pending.',
@@ -6509,7 +6509,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-frecuencia-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  id: 'nt-frecuencia-a2', canDo: 'say how often and how much something happens', strand: 'notion', cefr: 'A2', level: 2, theme: null,
   pcic: ['nociones_generales:A2:204', 'nociones_generales:A2:205', 'nociones_generales:A2:206', 'nociones_generales:A2:207'],
   title: 'Frecuencia: veces al día, todos los meses',
   summary: 'A number + vez/veces + al or a la + [period] states an exact frequency, while todos los/todas las + [period] states a blanket, exceptionless one — and which preposition contracts depends on the period noun\'s gender.',
@@ -6665,7 +6665,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-expresion-verbal-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  id: 'nt-expresion-verbal-a2', canDo: 'report what people said without always using decir', strand: 'notion', cefr: 'A2', level: 2, theme: null,
   pcic: ['nociones_generales:A2:286', 'nociones_generales:A2:287', 'nociones_generales:A2:288', 'nociones_generales:A2:289'],
   title: 'Expresión verbal: preguntar, contestar, decir',
   summary: 'Preguntar and contestar are a matched pair, one initiating and one responding, while decir is the general-purpose verb for everything in between — and it only ever reports statements, never questions.',
@@ -8405,7 +8405,7 @@ window.STRAND_LESSONS = [
  * (skipped: none — every unit below had ≥3 teachable spec points)
  * ========================================================================== */
 {
-  id: 'gr-demostrativos-distribucion-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-demostrativos-distribucion-a1', canDo: 'point things out with este, ese and aquel', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:135', 'gramatica:A1:136', 'gramatica:A1:137'],
   title: 'Los demostrativos: dónde van en la frase',
   summary: 'A demonstrative always sits in front of its noun, never after — and it never shares that noun with an article. The two rules are really one: the demonstrative already does the article\'s job of pointing out which thing you mean.',
@@ -8438,7 +8438,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-relativo-que-a1', deeper: ['gr-subordinadas-sustantivas-a1'], strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-relativo-que-a1', canDo: 'use que to join a noun to a whole clause', deeper: ['gr-subordinadas-sustantivas-a1'], strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:261', 'gramatica:A1:262', 'gramatica:A1:263', 'gramatica:A1:264', 'gramatica:A1:265'],
   title: 'El relativo que',
   summary: 'Que is the one relative pronoun every beginner needs: it never changes form, it can stand for a person or a thing, and it can be the subject or the direct object of its own clause — three separate jobs done by one invariable word.',
@@ -8473,7 +8473,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adverbios-afirmacion-negacion-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-adverbios-afirmacion-negacion-a1', canDo: 'say yes, no, me too and me neither', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:301', 'gramatica:A1:302', 'gramatica:A1:303'],
   title: 'Sí, no, también, tampoco',
   summary: 'Spanish stacks two negatives without cancelling them out — no tengo hermanos ni hermanas needs its no even though ni already means "nor" — and tampoco is the negative echo of también, not just "no" said twice.',
@@ -8507,7 +8507,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adverbios-lugar-tiempo-cantidad-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-adverbios-lugar-tiempo-cantidad-a1', canDo: 'say where, when and how much', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:291', 'gramatica:A1:292', 'gramatica:A1:293', 'gramatica:A1:294', 'gramatica:A1:295', 'gramatica:A1:296', 'gramatica:A1:297', 'gramatica:A1:298', 'gramatica:A1:299'],
   title: 'Adverbios de lugar, tiempo y cantidad',
   summary: 'Three small adverb systems that beginners mix up for different reasons: aquí/ahí/allí track a three-way space parallel to the demonstratives, mucho and muy are not interchangeable despite both meaning "very/a lot", and bien/mal describe HOW something is done, never what it IS.',
@@ -8544,7 +8544,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-presente-indicativo-valores-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-presente-indicativo-valores-a1', canDo: 'use the present for habits, facts and what is happening now', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:322', 'gramatica:A1:326', 'gramatica:A1:327', 'gramatica:A1:328', 'gramatica:A1:329', 'gramatica:A1:330'],
   title: 'El presente: de qué habla realmente',
   summary: 'The Spanish present does two jobs English splits into two tenses: it reports what is true right now (estamos en clase) and what is generally true (vivo en Madrid) — with no "-ing" form to separate them, so context alone tells you which.',
@@ -8578,7 +8578,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-infinitivo-usos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-infinitivo-usos-a1', canDo: 'use a verb plus an infinitive to say what I want and can do', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:374', 'gramatica:A1:375', 'gramatica:A1:376', 'gramatica:A1:377', 'gramatica:A1:378', 'gramatica:A1:379'],
   title: 'El infinitivo: cuándo se usa solo',
   summary: 'The infinitive is Spanish\'s "verb as a noun": it can answer a question on its own, be the subject of a sentence, or be the direct object of another verb — jobs English usually hands to the -ing form (studying is fun), not the bare infinitive.',
@@ -8680,7 +8680,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-objeto-directo-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-objeto-directo-a1', canDo: 'replace a noun with lo, la, los or las', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:461', 'gramatica:A1:462', 'gramatica:A1:463'],
   title: 'El objeto directo',
   summary: 'Tengo dos hermanos has no preposition before "dos hermanos" even though it names people — the personal a that marks a specific person as direct object does not appear with tener and an indefinite quantity, one of the first exceptions learners meet.',
@@ -8748,7 +8748,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-oraciones-finales-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-oraciones-finales-a1', canDo: 'say what something is for with para', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:531', 'gramatica:A1:532', 'gramatica:A1:533', 'gramatica:A1:534', 'gramatica:A1:535', 'gramatica:A1:536', 'gramatica:A1:537', 'gramatica:A1:538'],
   title: 'Oraciones finales: para + infinitivo',
   summary: 'Para + infinitive states a purpose, and the one thing to track is WHO performs the infinitive\'s action: when it is the same person as the main subject, the infinitive alone is correct — no separate clause needed, unlike English "so that" constructions.',
@@ -8843,7 +8843,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-valorar-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-valorar-a1', canDo: 'give a quick verdict on something', strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:95', 'funciones:A1:96', 'funciones:A1:97', 'funciones:A1:98', 'funciones:A1:99'],
   title: 'Valorar: bien, mal, regular',
   summary: 'A fixed little scale of one-word verdicts — bien, mal, regular, así así — handles most quick evaluations in speech; when you need to grade a specific quality, es + muy/bastante/un poco + adjective takes over, and that version works in writing too.',
@@ -8922,7 +8922,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-articulo-definido-distribucion-a2', deeper: ['gr-articulo-definido-valores-a2', 'gr-articulo-indefinido-valores-a2', 'gr-nombres-escuetos-a2', 'gr-sustantivos-especiales-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-articulo-definido-distribucion-a2', canDo: 'use el agua, jugar al tenis and todos los libros correctly', deeper: ['gr-articulo-definido-valores-a2', 'gr-articulo-indefinido-valores-a2', 'gr-nombres-escuetos-a2', 'gr-sustantivos-especiales-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:82', 'gramatica:A2:83', 'gramatica:A2:84', 'gramatica:A2:90', 'gramatica:A2:91', 'gramatica:A2:93', 'gramatica:A2:94'],
   title: 'El artículo definido: el agua, jugar al tenis, todos los libros',
   summary: 'El agua looks masculine but is not — Spanish swaps la for el only to avoid two stressed a-sounds colliding, and the noun stays feminine underneath, as its plural (las aguas) immediately reveals.',
@@ -8957,7 +8957,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-posesivos-tonicos-a2', deeper: ['gr-restrictivos-nominales-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-posesivos-tonicos-a2', canDo: 'say mine, yours and his with mío, tuyo, suyo', deeper: ['gr-restrictivos-nominales-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:152', 'gramatica:A2:153', 'gramatica:A2:154', 'gramatica:A2:156', 'gramatica:A2:158', 'gramatica:A2:159', 'gramatica:A2:160', 'gramatica:A2:162'],
   title: 'Los posesivos tónicos: mío, tuyo, suyo',
   summary: 'Unlike mi/tu/su, which only ever track what is owned, the tónico forms mío/tuyo/suyo agree in BOTH gender and number — and they can do something the short forms never can: stand in for the noun entirely, with just an article, or answer a question completely alone.',
@@ -8991,7 +8991,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-comparativos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-comparativos-a2', canDo: 'compare two things with más que, menos que and tan como', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:188', 'gramatica:A2:189', 'gramatica:A2:190'],
   title: 'Comparativos: más... que, tan... como',
   summary: 'Tan and tanto both build an equality comparison, but they are not interchangeable: tan stands before an adjective or adverb, while tanto is the one that touches a noun — and only then does it need to agree.',
@@ -9096,7 +9096,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-preterito-perfecto-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-preterito-perfecto-a2', canDo: 'talk about experience with he, has, ha + participio', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:353', 'gramatica:A2:354', 'gramatica:A2:355', 'gramatica:A2:356', 'gramatica:A2:357', 'gramatica:A2:358', 'gramatica:A2:359', 'gramatica:A2:360', 'gramatica:A2:361'],
   title: 'El pretérito perfecto: haber + participio',
   summary: 'He estado en tu casa is not about when the visit happened — it is about the fact still being true of a stretch of time that reaches all the way to now, which is exactly what separates this tense from the indefinido\'s closed, dated past.',
@@ -9131,7 +9131,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-imperativo-forma-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-imperativo-forma-a2', canDo: 'tell someone to do something', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:363', 'gramatica:A2:365', 'gramatica:A2:366', 'gramatica:A2:367'],
   title: 'El imperativo afirmativo: forma',
   summary: 'The tú command is a form you already have: it is the he/she present, unchanged — habla is both "she speaks" and "speak!". The usted command swaps the vowel instead (hable, coma), which is the same instruction in a word that looks unrelated.',
@@ -9167,7 +9167,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-gerundio-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-gerundio-a2', canDo: 'say two things are happening at once with -ando and -iendo', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:392', 'gramatica:A2:393', 'gramatica:A2:394', 'gramatica:A2:395', 'gramatica:A2:396'],
   title: 'El gerundio: -ando, -iendo',
   summary: 'Estoy estudiando pins an action to this exact moment in a way the plain present cannot — estudio español is true in general, but only the gerund periphrasis insists it is happening as you speak.',
@@ -9269,7 +9269,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-verbos-predicativos-tipos-a2', deeper: ['gr-nucleo-verbal-a1'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-verbos-predicativos-tipos-a2', canDo: 'say what I like, love and hurt with me gusta, me encanta, me duele', deeper: ['gr-nucleo-verbal-a1'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:435', 'gramatica:A2:436', 'gramatica:A2:437'],
   title: 'Verbos que funcionan al revés: encantar, doler',
   summary: 'Me encanta el chocolate does not mean "I" is doing anything — the chocolate is the grammatical subject and must agree with the verb, while "I" sits in the indirect object, the mirror image of how English builds "I love chocolate."',
@@ -9303,7 +9303,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-objeto-indirecto-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-objeto-indirecto-a2', canDo: 'say who something is done TO or FOR with le and les', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:468', 'gramatica:A2:469', 'gramatica:A2:470', 'gramatica:A2:471', 'gramatica:A2:472', 'gramatica:A2:473'],
   title: 'El objeto indirecto',
   summary: 'Robaron la cartera a muchas personas treats the victim as an indirect object, not a direct one — a mismatch with English "they robbed many people" that shows up across a whole family of Spanish patterns: reception, loss, and possession all route through the same OI pronoun.',
@@ -9354,7 +9354,7 @@ window.STRAND_LESSONS = [
  * gn-instrucciones-a2, gn-presentacion-publica-a2).
  * ========================================================================== */
 {
-  id: 'fn-atenuar-orden-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-atenuar-orden-a2', canDo: 'ask for something without sounding blunt', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:261', 'funciones:A2:262', 'funciones:A2:263'],
   title: 'Pedir algo de forma atenuada',
   summary: 'Three ways to soften an instruction without changing what you are actually asking for: tack on por favor, turn it into a question with ¿puedes/podrías?, or remove the person altogether with hay que — each buys a little more distance from a bare command.',
@@ -9425,7 +9425,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-narrar-anecdota-a2', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  id: 'gn-narrar-anecdota-a2', canDo: 'tell an anecdote with a scene and a sequence', strand: 'genre', cefr: 'A2', level: 2, theme: null,
   pcic: ['generos_discursivos:A2:276', 'generos_discursivos:A2:277', 'generos_discursivos:A2:278', 'generos_discursivos:A2:279',
          'generos_discursivos:A2:280', 'generos_discursivos:A2:281', 'generos_discursivos:A2:283', 'generos_discursivos:A2:285',
          'generos_discursivos:A2:293', 'generos_discursivos:A2:302'],
@@ -12286,7 +12286,7 @@ window.STRAND_LESSONS = [
  * Spanish coursebook does, and test recognition rather than production.
  * ------------------------------------------------------------------------ */
 {
-  id: 'dc-entonacion-a1', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
+  id: 'dc-entonacion-a1', canDo: 'turn a statement into a question with my voice alone', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
   pcic: ['tacticas_pragmaticas:A1:77', 'tacticas_pragmaticas:A1:78', 'tacticas_pragmaticas:A1:79',
          'tacticas_pragmaticas:A1:80', 'tacticas_pragmaticas:A1:81'],
   title: 'La entonación: la voz también pregunta',
@@ -14819,7 +14819,7 @@ window.STRAND_LESSONS = [
  * BATCH — A1 grammar stragglers (WORKLIST.md, section A1 · grammar)
  * ========================================================================== */
 {
-  id: 'gr-interrogativos-a1', deeper: ['gr-oraciones-actitud-hablante-a1'], strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-interrogativos-a1', canDo: 'ask with qué, quién, dónde, cuánto and cómo', deeper: ['gr-oraciones-actitud-hablante-a1'], strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:266', 'gramatica:A1:267', 'gramatica:A1:268', 'gramatica:A1:269',
          'gramatica:A1:270', 'gramatica:A1:273', 'gramatica:A1:274', 'gramatica:A1:318'],
   title: 'Los interrogativos: qué, quién, cuánto, dónde, cómo',
@@ -15011,7 +15011,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-demostrativos-valores-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-demostrativos-valores-a2', canDo: 'use este and ese to refer back in a text', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:98'],
   title: 'Los demostrativos: uso anafórico y temporal',
   summary: 'Beyond pointing at something in the room, a demonstrative can point BACK at something already named in the conversation, or mark a stretch of time as the one you are in right now. Neither use has anything to do with physical distance, which is why the A1 near/far system does not explain them.',
@@ -15045,7 +15045,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adverbios-circunstanciales-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-adverbios-circunstanciales-a2', canDo: 'add where, when and how much to a sentence', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:304', 'gramatica:A2:305', 'gramatica:A2:306', 'gramatica:A2:307', 'gramatica:A2:308',
          'gramatica:A2:309', 'gramatica:A2:310', 'gramatica:A2:311', 'gramatica:A2:312', 'gramatica:A2:313'],
   title: 'Adverbios circunstanciales: lugar, tiempo y cantidad',
@@ -15120,7 +15120,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-localizacion-tiempo-a2', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  id: 'nt-localizacion-tiempo-a2', canDo: 'place something in time with desde, hasta and durante', strand: 'notion', cefr: 'A2', level: 2, theme: null,
   pcic: ['nociones_generales:A2:148', 'nociones_generales:A2:149', 'nociones_generales:A2:150', 'nociones_generales:A2:151',
          'nociones_generales:A2:152', 'nociones_generales:A2:154', 'nociones_generales:A2:155', 'nociones_generales:A2:156',
          'nociones_generales:A2:157', 'nociones_generales:A2:158', 'nociones_generales:A2:160', 'nociones_generales:A2:161',
@@ -15211,7 +15211,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-conversacion-transaccional-a2', strand: 'genre', cefr: 'A2', level: 2, theme: 'compras',
+  id: 'gn-conversacion-transaccional-a2', canDo: 'shop for clothes, including when something does not fit', strand: 'genre', cefr: 'A2', level: 2, theme: 'compras',
   pcic: ['generos_discursivos:A2:88', 'generos_discursivos:A2:92', 'generos_discursivos:A2:93', 'generos_discursivos:A2:100',
          'generos_discursivos:A2:101', 'generos_discursivos:A2:103', 'generos_discursivos:A2:104', 'generos_discursivos:A2:105',
          'generos_discursivos:A2:107', 'generos_discursivos:A2:108', 'generos_discursivos:A2:109', 'generos_discursivos:A2:111',
@@ -15259,7 +15259,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-persona-a2', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  id: 'gn-describir-persona-a2', canDo: 'describe a person by comparing them and telling a moment', strand: 'genre', cefr: 'A2', level: 2, theme: null,
   pcic: ['generos_discursivos:A2:188', 'generos_discursivos:A2:189', 'generos_discursivos:A2:190', 'generos_discursivos:A2:191',
          'generos_discursivos:A2:204', 'generos_discursivos:A2:205'],
   title: 'Describir a una persona: comparar y narrar un momento',
@@ -15299,7 +15299,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-objeto-a2', strand: 'genre', cefr: 'A2', level: 2, theme: 'alimentacion',
+  id: 'gn-describir-objeto-a2', canDo: 'describe an object part by part', strand: 'genre', cefr: 'A2', level: 2, theme: 'alimentacion',
   pcic: ['generos_discursivos:A2:225', 'generos_discursivos:A2:226', 'generos_discursivos:A2:227', 'generos_discursivos:A2:228'],
   title: 'Describir un objeto: partes, una anécdota y una comparación',
   summary: 'A2 breaks the object into its PARTS rather than stopping at one quality, drops in a one-off personal anecdote about it, and closes by relating it to a wider category — the same anclaje/aspectualización/puesta-en-relación shape as describing a person, applied to a thing.',
@@ -15338,7 +15338,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-lugar-a2', strand: 'genre', cefr: 'A2', level: 2, theme: 'vivienda',
+  id: 'gn-describir-lugar-a2', canDo: 'describe a place as a walk through it', strand: 'genre', cefr: 'A2', level: 2, theme: 'vivienda',
   pcic: ['generos_discursivos:A2:259', 'generos_discursivos:A2:260', 'generos_discursivos:A2:261', 'generos_discursivos:A2:262'],
   title: 'Describir un lugar: recorrido, anécdota y comparación',
   summary: 'A2 turns the A1 inventory ("hay un baño, una cocina...") into a guided walk through the space using spatial deixis (a la derecha, al fondo), adds a brief narrated memory of arriving, and closes by comparing the place to others the writer knows.',
@@ -30583,7 +30583,7 @@ window.STRAND_LESSONS = [
  * practice for the same reason; this is the lesson that opens the gate.
  * ------------------------------------------------------------------------ */
 {
-  id: 'gr-presente-irregular-a2', deeper: ['gr-masculino-a2', 'gr-nucleo-verbal-tipos-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-presente-irregular-a2', canDo: 'handle the irregular present: the boot and the odd yo', deeper: ['gr-masculino-a2', 'gr-nucleo-verbal-tipos-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:331', 'gramatica:A2:332', 'gramatica:A2:333', 'gramatica:A2:334'],
   title: 'El presente irregular: la bota y el yo raro',
   summary: 'Most "irregular" present-tense verbs are nothing of the kind — they follow two patterns that cover almost all of them. One changes the vowel in four of the six persons and leaves nosotros and vosotros alone; the other changes only the yo form. Learn the two shapes and several hundred verbs stop being exceptions.',
