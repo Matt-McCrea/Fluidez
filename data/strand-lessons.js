@@ -22,6 +22,441 @@
  * ========================================================================== */
 window.STRAND_LESSONS = [
 
+{
+  id: 'task-preguntar', strand: 'task', cefr: 'A1', level: 1, theme: 'identidad',
+  title: 'Pregunta cinco cosas',
+  canDo: 'ask five real questions and understand the answers',
+  summary: 'No new material. You have the question words, the rising voice that turns a statement into a question, and the phrases for when you did not catch it. Use all three on one person.',
+  sections: [
+    { h: 'What to do', html: 'Write a short interview: five questions and five answers. At least one question must use <i>qué</i>, one <i>dónde</i>, one <i>cuántos</i>, and one must be a yes/no question with no question word at all — just the voice.' },
+    { h: 'Include the repair', html: 'One exchange must go wrong: the other person answers something you do not catch, and you ask them to repeat or slow down. That is the most useful line in this unit and the one learners skip.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>—¿Cómo te llamas?<br>—Paula.<br>—¿Dónde vives, Paula?<br>—En Zaragoza.<br>—¿Cuántos hermanos tienes?<br>—Tres.<br>—¿Trabajas aquí?<br>—No, estudio.<br>—Perdona, ¿puedes repetir? Más despacio, por favor.<br>—Es-tu-dio. Soy estudiante.<br>—Ah, vale. Gracias.</p>' },
+  checklist: [
+    'Five questions, five answers.',
+    'One uses <i>qué</i>, one <i>dónde</i>, one <i>cuántos</i>.',
+    'One is a yes/no question with no question word.',
+    'Every question has <i>¿</i> at the start and <i>?</i> at the end.',
+    'One exchange asks for a repeat.'
+  ],
+  examples: [
+    { es: '—¿Dónde vives? —En Zaragoza.', en: '—Where do you live? —In Zaragoza.' },
+    { es: '—¿Trabajas aquí? —No, estudio.', en: '—Do you work here? —No, I study.' },
+    { es: 'Perdona, ¿puedes repetir?', en: 'Sorry, can you repeat that?' }
+  ],
+  probes: [
+    { id: 'p:task-preguntar-1', kind: 'mcq',
+      q: 'Which one is a question with NO question word — just the voice?',
+      options: ['¿Trabajas aquí?', '¿Dónde trabajas?', '¿Cuántos hermanos tienes?'], answer: 0 },
+    { id: 'p:task-preguntar-2', kind: 'mcq',
+      q: 'You did not catch what someone said. Which do you say?',
+      options: ['¿Puedes repetir?', '¿Puedes contestar?', '¿Puedes preguntar?'], answer: 0 },
+    { id: 'p:task-preguntar-3', kind: 'cloze',
+      text: '¿___ vives? —En Zaragoza.', accept: ['Dónde', 'dónde'] },
+    { id: 'p:task-preguntar-4', kind: 'recall',
+      front: 'Asking someone to slow down', back: 'Más despacio, por favor' }
+  ]
+},
+
+{
+  id: 'task-cortesia', strand: 'task', cefr: 'A1', level: 1, theme: 'relaciones',
+  title: 'La misma petición, tres veces',
+  canDo: 'ask for the same thing of a friend, a stranger and an official',
+  summary: 'One request, three rooms. Nothing about the request changes except who you are talking to — and in Spanish that changes the verb ending, the greeting and how much you apologise for asking.',
+  sections: [
+    { h: 'What to do', html: 'Pick one small thing to ask for. Write the same request three times: to a friend, to a stranger in the street, and to someone official behind a desk. Change only the register.' },
+    { h: 'What has to change', html: 'The friend gets <i>tú</i> and no apology. The stranger gets <i>perdone</i> and <i>usted</i>. The official gets both, plus <i>por favor</i> doing real work rather than decoration.' }
+  ],
+  model: { title: 'asking the time, three ways', text: '<p><b>A un amigo:</b> Oye, ¿tienes hora?</p><p><b>A un desconocido:</b> Perdone, ¿tiene hora, por favor?</p><p><b>En una oficina:</b> Buenos días. Perdone que le moleste — ¿me puede decir la hora, por favor? —Sí, claro, son las once. —Muchas gracias. Es usted muy amable.</p>' },
+  checklist: [
+    'The same request appears three times.',
+    'The friend version uses <i>tú</i>; the other two use <i>usted</i>.',
+    'At least one version opens with <i>perdone</i> or <i>disculpe</i>.',
+    'One version says thank you and gets a reply.',
+    'No version is rude by accident — check the verb endings.'
+  ],
+  examples: [
+    { es: 'Oye, ¿tienes hora?', en: 'Hey, have you got the time?' },
+    { es: 'Perdone, ¿tiene hora, por favor?', en: 'Excuse me, do you have the time, please?' },
+    { es: 'Muchas gracias. —De nada.', en: 'Thank you very much. —You are welcome.' }
+  ],
+  probes: [
+    { id: 'p:task-cortesia-1', kind: 'mcq',
+      q: 'Which is the usted form?',
+      options: ['¿Tiene hora?', '¿Tienes hora?', '¿Tener hora?'], answer: 0 },
+    { id: 'p:task-cortesia-2', kind: 'mcq',
+      q: 'Which opening is right for a stranger?',
+      options: ['Perdone...', 'Oye...', '¡Eh!'], answer: 0 },
+    { id: 'p:task-cortesia-3', kind: 'cloze',
+      text: 'Perdone, ¿___ hora? (usted)', accept: ['tiene'] },
+    { id: 'p:task-cortesia-4', kind: 'recall',
+      front: 'Getting a stranger\'s attention politely', back: 'Perdone' }
+  ]
+},
+
+{
+  id: 'task-quedar', strand: 'task', cefr: 'A1', level: 1, theme: 'ocio',
+  title: 'Queda con alguien',
+  canDo: 'agree a time and a place to meet, in writing',
+  summary: 'Numbers, the clock and the days of the week only matter when they are doing something. Here they arrange a meeting, which is what they are for.',
+  sections: [
+    { h: 'What to do', html: 'Write six to ten messages between you and a friend arranging to meet. You must settle three things: what day, what time, and where.' },
+    { h: 'Make it go slightly wrong', html: 'The first time you suggest does not work for them. They say so and offer another. This is what real arranging looks like, and it forces you to use two times rather than one.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>—¿Quedamos el jueves?<br>—El jueves no puedo, trabajo hasta tarde.<br>—¿Y el viernes?<br>—El viernes sí. ¿A qué hora?<br>—¿A las siete y media?<br>—Vale. ¿Dónde?<br>—En la plaza, delante del cine.<br>—Perfecto. Hasta el viernes.</p>' },
+  checklist: [
+    'A day of the week is agreed.',
+    'A time is agreed, written in words (<i>las siete y media</i>).',
+    'A place is agreed.',
+    'The first suggestion is refused and a second is offered.',
+    'It ends — somebody closes the conversation.'
+  ],
+  examples: [
+    { es: '—¿A qué hora? —A las siete y media.', en: '—What time? —At half past seven.' },
+    { es: 'El jueves no puedo.', en: 'I can\'t on Thursday.' },
+    { es: 'Hasta el viernes.', en: 'See you Friday.' }
+  ],
+  probes: [
+    { id: 'p:task-quedar-1', kind: 'mcq',
+      q: 'Which one means "at half past seven"?',
+      options: ['A las siete y media', 'A las siete y cuarto', 'A las seis y media'], answer: 0 },
+    { id: 'p:task-quedar-2', kind: 'mcq',
+      q: 'Which is the right way to say you cannot make Thursday?',
+      options: ['El jueves no puedo.', 'El jueves no puedes.', 'El jueves no poder.'], answer: 0 },
+    { id: 'p:task-quedar-3', kind: 'cloze',
+      text: '—¿___ qué hora quedamos? —A las ocho.', accept: ['A', 'a'] },
+    { id: 'p:task-quedar-4', kind: 'recall',
+      front: 'Suggesting you meet up, in one word', back: '¿Quedamos?' }
+  ]
+},
+
+{
+  id: 'task-gustos', strand: 'task', cefr: 'A1', level: 1, theme: 'ocio',
+  title: 'Cinco cosas que te gustan',
+  canDo: 'say what you like and dislike, and react to what someone else likes',
+  summary: 'The point of this unit is not the list — it is the reaction. Agreeing and disagreeing with a like needs <i>a mí también</i> and <i>a mí tampoco</i>, and picking the wrong one reverses your meaning.',
+  sections: [
+    { h: 'What to do', html: 'Write five things you like and five you do not, then have a partner react to each. Vary the verb: <i>me gusta</i>, <i>me encanta</i>, <i>no me gusta nada</i>, <i>odio</i>.' },
+    { h: 'The trap to get right', html: 'If what you are agreeing with is negative, <i>también</i> becomes <i>tampoco</i>. <i>—No me gusta el frío. —A mí tampoco.</i> Saying <i>a mí también</i> there means the opposite of what you meant.' },
+    { h: 'Singular or plural', html: '<i>Me gusta el café</i> but <i>me gustan los perros</i> — the verb agrees with the thing liked, not with you.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>—Me encanta el café.<br>—A mí también. ¿Y el té?<br>—No me gusta nada.<br>—A mí tampoco.<br>—Me gustan mucho los perros.<br>—¿Sí? A mí no. Prefiero los gatos.<br>—¿No te gustan los perros?<br>—No mucho, la verdad.</p>' },
+  checklist: [
+    'Five likes and five dislikes.',
+    'At least one uses <i>me gustan</i> (plural) correctly.',
+    'At least one uses <i>me encanta</i> or <i>odio</i>.',
+    'One agreement with a NEGATIVE uses <i>a mí tampoco</i>.',
+    'One disagreement appears — not everything is agreed with.'
+  ],
+  examples: [
+    { es: 'Me gustan mucho los perros.', en: 'I really like dogs.' },
+    { es: '—No me gusta el frío. —A mí tampoco.', en: '—I don\'t like the cold. —Me neither.' },
+    { es: '—Me encanta. —A mí también.', en: '—I love it. —Me too.' }
+  ],
+  probes: [
+    { id: 'p:task-gustos-1', kind: 'mcq',
+      q: '"—No me gusta el frío." How do you agree?',
+      options: ['A mí tampoco.', 'A mí también.', 'Yo también.'], answer: 0 },
+    { id: 'p:task-gustos-2', kind: 'mcq',
+      q: 'Which is correct for "I like dogs"?',
+      options: ['Me gustan los perros.', 'Me gusta los perros.', 'Me gusto los perros.'], answer: 0 },
+    { id: 'p:task-gustos-3', kind: 'cloze',
+      text: 'Me ___ el café. (singular)', accept: ['gusta'] },
+    { id: 'p:task-gustos-4', kind: 'recall',
+      front: 'Agreeing with something negative', back: 'A mí tampoco' }
+  ]
+},
+
+{
+  id: 'task-cafe', strand: 'task', cefr: 'A1', level: 1, theme: 'alimentacion',
+  title: 'Pide en un café',
+  canDo: 'order food and drink, ask the price and pay',
+  summary: 'A café transaction is four moves long and almost entirely fixed. Learn it as a shape and you can walk into any bar in Spain on your first day.',
+  sections: [
+    { h: 'What to do', html: 'Write the whole thing, both sides: greeting, order, something extra, the bill. Eight to twelve lines.' },
+    { h: 'Two ways to order', html: '<i>Quiero un café</i> is understood everywhere and sounds slightly blunt. <i>Me pone un café</i> and <i>¿Me pone un café?</i> are what you will actually hear in Spain. <i>Quería</i> — the imperfect used as politeness — is softer still.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>—Hola, buenos días.<br>—Buenos días. ¿Qué le pongo?<br>—Un café con leche, por favor.<br>—¿Algo más?<br>—Sí, una tostada con tomate.<br>—Muy bien.<br>—Perdone, ¿cuánto es?<br>—Tres euros con cincuenta.<br>—Aquí tiene.<br>—Gracias. Hasta luego.<br>—Hasta luego.</p>' },
+  checklist: [
+    'It opens with a greeting.',
+    'Something to drink is ordered.',
+    '<i>¿Algo más?</i> is asked and answered.',
+    'The price is asked for and given.',
+    'It closes — both people say goodbye.',
+    'You used <i>por favor</i> at least once.'
+  ],
+  examples: [
+    { es: 'Un café con leche, por favor.', en: 'A white coffee, please.' },
+    { es: '—¿Algo más? —No, nada más, gracias.', en: '—Anything else? —No, that\'s all, thanks.' },
+    { es: '¿Cuánto es?', en: 'How much is it?' }
+  ],
+  probes: [
+    { id: 'p:task-cafe-1', kind: 'mcq',
+      q: 'Which is the most natural way to order in a Spanish bar?',
+      options: ['Me pone un café, por favor.', 'Yo tomo un café ahora.', 'Doy un café.'], answer: 0 },
+    { id: 'p:task-cafe-2', kind: 'mcq',
+      q: 'The waiter asks "¿Algo más?". What are they asking?',
+      options: ['Whether you want anything else', 'How much you want to pay', 'Whether you are ready to leave'], answer: 0 },
+    { id: 'p:task-cafe-3', kind: 'cloze',
+      text: '—¿___ es? —Tres euros.', accept: ['Cuánto', 'cuánto'] },
+    { id: 'p:task-cafe-4', kind: 'recall',
+      front: 'Asking for the bill', back: 'La cuenta, por favor' }
+  ]
+},
+
+{
+  id: 'task-describir', strand: 'task', cefr: 'A1', level: 1, theme: 'identidad',
+  title: 'Describe a alguien hasta que lo adivinen',
+  canDo: 'describe a person or an object well enough that someone can identify it',
+  summary: 'Description is where adjective agreement stops being a rule and starts being audible. Get the ending wrong and a Spanish speaker hears it immediately.',
+  sections: [
+    { h: 'What to do', html: 'Pick a person everybody knows and describe them in six sentences without naming them. Then do the same for an object in the room.' },
+    { h: 'What to include', html: 'Something physical, something about their character, something they own or wear, and where they are. That forces <i>ser</i>, <i>estar</i>, an adjective, and a possessive into the same short text.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>Es alta y tiene el pelo largo. Es muy simpática, pero un poco tímida. Sus zapatos son rojos y siempre lleva una chaqueta negra. Su mesa está al lado de la ventana. No es española, es de Portugal. Es profesora de inglés.</p>' },
+  checklist: [
+    'Six sentences or more.',
+    'At least three adjectives, all agreeing with what they describe.',
+    'One possessive (<i>su</i>, <i>sus</i>, <i>mi</i>).',
+    '<i>Ser</i> and <i>estar</i> both appear, doing different jobs.',
+    'The person is never named.'
+  ],
+  examples: [
+    { es: 'Es alta y tiene el pelo largo.', en: 'She is tall and has long hair.' },
+    { es: 'Sus zapatos son rojos.', en: 'Her shoes are red.' },
+    { es: 'Su mesa está al lado de la ventana.', en: 'Her desk is next to the window.' }
+  ],
+  probes: [
+    { id: 'p:task-describir-1', kind: 'mcq',
+      q: 'Which is correct?',
+      options: ['Sus zapatos son rojos.', 'Sus zapatos son rojas.', 'Su zapatos son rojos.'], answer: 0 },
+    { id: 'p:task-describir-2', kind: 'mcq',
+      q: '"Es simpática" describes a...',
+      options: ['woman', 'man', 'place'], answer: 0 },
+    { id: 'p:task-describir-3', kind: 'cloze',
+      text: 'Es alt___ y muy simpática. (femenino)', accept: ['a'] },
+    { id: 'p:task-describir-4', kind: 'recall',
+      front: '"Her shoes" in Spanish', back: 'sus zapatos' }
+  ]
+},
+
+{
+  id: 'task-direcciones', strand: 'task', cefr: 'A1', level: 1, theme: 'viajes',
+  title: 'Lleva a alguien hasta allí',
+  canDo: 'give and follow directions to a real place',
+  summary: 'Directions are the first time location words have to be exactly right — getting <i>a la derecha</i> and <i>a la izquierda</i> the wrong way round sends somebody into the wrong street.',
+  sections: [
+    { h: 'What to do', html: 'Write directions from where you are to somewhere nearby, in five or six steps. Then write the same conversation with someone asking you for them.' },
+    { h: 'Hay or está', html: '<i>¿Hay un banco por aquí?</i> asks whether one exists at all. <i>¿Dónde está el banco?</i> assumes it does and asks where. Learners use <i>está</i> for both and sound like they are asking about a bank you have already discussed.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>—Perdone, ¿hay una farmacia por aquí?<br>—Sí, hay una muy cerca. Mire: todo recto hasta el semáforo.<br>—Vale.<br>—En el semáforo, a la derecha. Es la segunda calle.<br>—¿A la derecha en el semáforo?<br>—Eso es. Está al lado del banco, enfrente del parque.<br>—Muchas gracias.<br>—De nada.</p>' },
+  checklist: [
+    'Someone asks, someone answers.',
+    '<i>Hay</i> is used for existence and <i>está</i> for location — not mixed up.',
+    'At least three direction words (<i>recto</i>, <i>derecha</i>, <i>izquierda</i>, <i>cerca</i>, <i>enfrente</i>).',
+    'The asker repeats one instruction back to check.',
+    'It ends with thanks and a reply.'
+  ],
+  examples: [
+    { es: '¿Hay una farmacia por aquí?', en: 'Is there a chemist near here?' },
+    { es: 'Todo recto hasta el semáforo.', en: 'Straight on as far as the traffic lights.' },
+    { es: 'Está enfrente del parque.', en: 'It is opposite the park.' }
+  ],
+  probes: [
+    { id: 'p:task-direcciones-1', kind: 'mcq',
+      q: 'You do not know whether a chemist exists nearby. What do you ask?',
+      options: ['¿Hay una farmacia por aquí?', '¿Dónde está la farmacia?', '¿Cómo es la farmacia?'], answer: 0 },
+    { id: 'p:task-direcciones-2', kind: 'mcq',
+      q: 'Which means "opposite"?',
+      options: ['enfrente de', 'al lado de', 'detrás de'], answer: 0 },
+    { id: 'p:task-direcciones-3', kind: 'cloze',
+      text: 'Todo ___ hasta el semáforo.', accept: ['recto'] },
+    { id: 'p:task-direcciones-4', kind: 'recall',
+      front: '"Turn right" as a direction phrase', back: 'a la derecha' }
+  ]
+},
+
+{
+  id: 'task-rutina', strand: 'task', cefr: 'A1', level: 1, theme: 'trabajo',
+  title: 'Cuenta un día entero',
+  canDo: 'describe your whole day from waking up to going to bed',
+  summary: 'Reflexive verbs are the spine of a daily routine and the thing that makes it sound Spanish rather than translated. <i>Me levanto</i>, not <i>levanto</i>.',
+  sections: [
+    { h: 'What to do', html: 'Write your day in eight to twelve sentences, in order, from waking to sleeping. Use a time or a time-word in at least four of them.' },
+    { h: 'The reflexives', html: '<i>Levantarse, ducharse, vestirse, acostarse</i> — the pronoun is not optional. <i>Levanto</i> alone means you lift something else.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>Normalmente me levanto a las siete. Primero me ducho y después desayuno café y tostadas. Salgo de casa a las ocho y media. Trabajo desde las nueve hasta las seis. A veces como con mis compañeros, pero muchos días como solo. Por la tarde vuelvo a casa y descanso un rato. Ceno sobre las nueve. Los martes y los jueves estudio español. Casi nunca me acuesto antes de las doce.</p>' },
+  checklist: [
+    'Eight sentences or more, in time order.',
+    'At least three reflexive verbs with their pronoun.',
+    'At least four time expressions (<i>a las siete</i>, <i>por la tarde</i>, <i>los martes</i>).',
+    'One frequency word (<i>siempre</i>, <i>a veces</i>, <i>nunca</i>).',
+    'Everything is in the present tense.'
+  ],
+  examples: [
+    { es: 'Me levanto a las siete.', en: 'I get up at seven.' },
+    { es: 'A veces como con mis compañeros.', en: 'Sometimes I eat with my colleagues.' },
+    { es: 'Casi nunca me acuesto antes de las doce.', en: 'I almost never go to bed before twelve.' }
+  ],
+  probes: [
+    { id: 'p:task-rutina-1', kind: 'mcq',
+      q: 'Which is correct for "I get up at seven"?',
+      options: ['Me levanto a las siete.', 'Levanto a las siete.', 'Me levanta a las siete.'], answer: 0 },
+    { id: 'p:task-rutina-2', kind: 'mcq',
+      q: 'Which word means "sometimes"?',
+      options: ['a veces', 'siempre', 'nunca'], answer: 0 },
+    { id: 'p:task-rutina-3', kind: 'cloze',
+      text: '___ ducho y después desayuno.', accept: ['Me', 'me'] },
+    { id: 'p:task-rutina-4', kind: 'recall',
+      front: '"I go to bed" with its pronoun', back: 'me acuesto' }
+  ]
+},
+
+{
+  id: 'task-pedir', strand: 'task', cefr: 'A1', level: 1, theme: 'servicios',
+  title: 'Pide tres favores',
+  canDo: 'say what you want, what you need and what you have to do — and ask for help',
+  summary: 'Every one of these is a verb plus an infinitive, which is the cheapest sentence pattern in Spanish and the one that unlocks the most at this stage.',
+  sections: [
+    { h: 'What to do', html: 'Write three short exchanges in which you ask for something. Use a different opening in each: <i>quiero</i>, <i>necesito</i>, <i>¿puedes...?</i>' },
+    { h: 'Want, need, must', html: '<i>Quiero</i> is what you want, and to a stranger it is blunt. <i>Necesito</i> is what you need, which sounds more reasonable. <i>Tengo que</i> is what you have no choice about. All three take a plain infinitive after them.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>—Necesito hablar con la doctora. ¿Es posible hoy?<br>—Hoy no, lo siento. ¿Mañana a las diez?<br>—Vale, gracias.</p><p>—¿Puedes ayudarme un momento?<br>—Claro, dime.<br>—No entiendo este papel.</p><p>—Quiero cambiar esta camisa. Es muy pequeña.<br>—¿Tiene el recibo?<br>—Sí, aquí está.</p>' },
+  checklist: [
+    'Three separate exchanges.',
+    'One uses <i>quiero</i>, one <i>necesito</i>, one <i>¿puedes...?</i>',
+    'Every one of those is followed by an infinitive.',
+    'At least one request is refused or redirected.',
+    'At least one <i>por favor</i> or <i>gracias</i>.'
+  ],
+  examples: [
+    { es: 'Necesito hablar con la doctora.', en: 'I need to speak to the doctor.' },
+    { es: '¿Puedes ayudarme un momento?', en: 'Can you help me for a moment?' },
+    { es: 'Tengo que trabajar mañana.', en: 'I have to work tomorrow.' }
+  ],
+  probes: [
+    { id: 'p:task-pedir-1', kind: 'mcq',
+      q: 'Which follows "quiero" correctly?',
+      options: ['Quiero cambiar esta camisa.', 'Quiero cambio esta camisa.', 'Quiero cambiando esta camisa.'], answer: 0 },
+    { id: 'p:task-pedir-2', kind: 'mcq',
+      q: 'Which one means you have no choice?',
+      options: ['Tengo que trabajar.', 'Quiero trabajar.', 'Puedo trabajar.'], answer: 0 },
+    { id: 'p:task-pedir-3', kind: 'cloze',
+      text: 'Necesito ___ con la doctora. (hablar)', accept: ['hablar'] },
+    { id: 'p:task-pedir-4', kind: 'recall',
+      front: 'Asking "can you help me?"', back: '¿Puedes ayudarme?' }
+  ]
+},
+
+{
+  id: 'task-contar', strand: 'task', cefr: 'A1', level: 1, theme: 'relaciones',
+  title: 'Une las frases',
+  canDo: 'join short sentences into something that sounds connected rather than chopped up',
+  summary: 'A beginner who can say ten true things in a row still sounds like a list. Connectors and <i>que</i> are what turn a list into speech.',
+  sections: [
+    { h: 'What to do', html: 'Take a short description you have already written in this course and rewrite it, joining sentences with <i>y</i>, <i>pero</i>, <i>porque</i>, <i>también</i> and <i>que</i>. It should get shorter, not longer.' },
+    { h: 'The one that matters most', html: '<i>Que</i> joins a noun to a whole clause: <i>la chica que trabaja aquí</i>, <i>el libro que quiero</i>. English often drops it; Spanish never does.' }
+  ],
+  model: { title: 'before and after', text: '<p><b>Antes:</b> Tengo una hermana. Vive en Bilbao. Es profesora. No la veo mucho. Trabaja mucho.</p><p><b>Después:</b> Tengo una hermana que vive en Bilbao y es profesora. No la veo mucho porque trabaja muchísimo, pero hablamos por teléfono casi todos los días.</p>' },
+  checklist: [
+    'The rewrite has fewer sentences than the original.',
+    '<i>Y</i>, <i>pero</i> and <i>porque</i> all appear.',
+    'At least one <i>que</i> joins a noun to a clause.',
+    'Nothing true in the original was lost.',
+    'Read it aloud — it should not run out of breath.'
+  ],
+  examples: [
+    { es: 'Tengo una hermana que vive en Bilbao.', en: 'I have a sister who lives in Bilbao.' },
+    { es: 'No la veo mucho porque trabaja muchísimo.', en: 'I don\'t see her much because she works a lot.' },
+    { es: 'Es profesora, pero quiere cambiar de trabajo.', en: 'She is a teacher, but she wants to change jobs.' }
+  ],
+  probes: [
+    { id: 'p:task-contar-1', kind: 'mcq',
+      q: 'Which joins a noun to a whole clause?',
+      options: ['la chica que trabaja aquí', 'la chica y trabaja aquí', 'la chica pero trabaja aquí'], answer: 0 },
+    { id: 'p:task-contar-2', kind: 'mcq',
+      q: 'Which word gives a reason?',
+      options: ['porque', 'pero', 'también'], answer: 0 },
+    { id: 'p:task-contar-3', kind: 'cloze',
+      text: 'Tengo una hermana ___ vive en Bilbao.', accept: ['que'] },
+    { id: 'p:task-contar-4', kind: 'recall',
+      front: '"but" in Spanish', back: 'pero' }
+  ]
+},
+
+{
+  id: 'task-revisar', strand: 'task', cefr: 'A1', level: 1, theme: 'educacion',
+  title: 'Corrige tu propio español',
+  canDo: 'find and fix the agreement mistakes in your own writing',
+  summary: 'You have written a lot by now. This unit explained why nouns have a gender and why adjectives move with them — so the test is not another exercise, it is your own earlier work.',
+  sections: [
+    { h: 'What to do', html: 'Open two or three things you wrote earlier in this course. Read them looking for one thing only: does every article and adjective match its noun?' },
+    { h: 'What to look for', html: '<i>El</i> or <i>la</i> right? Plural marked on BOTH the article and the noun and the adjective? Any <i>-o</i> ending sitting next to a feminine noun?' },
+    { h: 'Then fix them', html: 'Rewrite the corrected version. Keep the original next to it — seeing the two side by side is the part that makes it stick.' }
+  ],
+  model: { title: 'a corrected paragraph', text: '<p><b>Antes:</b> Mi hermana es alto y tiene el pelo largos. Vive en un casa pequeño con dos gato.</p><p><b>Después:</b> Mi hermana es <b>alta</b> y tiene el pelo <b>largo</b>. Vive en <b>una casa pequeña</b> con dos <b>gatos</b>.</p>' },
+  checklist: [
+    'You used your OWN earlier writing, not a new text.',
+    'Every article matches its noun in gender.',
+    'Every adjective matches its noun in gender and number.',
+    'Plurals are marked on the article, the noun AND the adjective.',
+    'The original and the correction are both kept.'
+  ],
+  examples: [
+    { es: 'una casa pequeña', en: 'a small house' },
+    { es: 'dos gatos negros', en: 'two black cats' },
+    { es: 'el agua fría', en: 'the cold water' }
+  ],
+  probes: [
+    { id: 'p:task-revisar-1', kind: 'mcq',
+      q: 'Which is correct?',
+      options: ['una casa pequeña', 'un casa pequeña', 'una casa pequeño'], answer: 0 },
+    { id: 'p:task-revisar-2', kind: 'mcq',
+      q: 'Which noun looks feminine but is masculine?',
+      options: ['el día', 'la moto', 'la mano'], answer: 0 },
+    { id: 'p:task-revisar-3', kind: 'cloze',
+      text: 'Vive en ___ casa pequeña.', accept: ['una'] },
+    { id: 'p:task-revisar-4', kind: 'recall',
+      front: 'Plural of "el gato negro"', back: 'los gatos negros' }
+  ]
+},
+
+{
+  id: 'task-escribir', strand: 'task', cefr: 'A1', level: 1, theme: 'medios',
+  title: 'Escribe cuatro textos breves',
+  canDo: 'write the short everyday texts a person actually sends',
+  summary: 'Everything in A1 has been spoken. These are the written forms of the same moves — and the only new thing is how they open and close.',
+  sections: [
+    { h: 'What to do', html: 'Write four short texts: a message cancelling something, a postcard, a note left for somebody, and a very short email asking a question.' },
+    { h: 'Openings and closings', html: 'A message to a friend needs none. A note needs a name. An email needs <i>Hola</i> or <i>Buenos días</i> at the top and <i>Un saludo</i> or <i>Gracias</i> at the bottom. Getting these wrong is the most visible beginner mistake in writing.' }
+  ],
+  model: { title: 'four short texts', text: '<p><b>Mensaje:</b> Oye, al final no puedo el sábado. Lo siento. ¿Lo dejamos para otro día?</p><p><b>Postal:</b> ¡Hola! Estoy en Cádiz. Hace muchísimo calor y la comida está buenísima. Vuelvo el día 12. Un abrazo, Ana.</p><p><b>Nota:</b> Marcos — tu paquete está en casa de la vecina. Nadia.</p><p><b>Email:</b> Buenos días: ¿A qué hora abre la oficina los sábados? Muchas gracias. Un saludo, Tom Kelly.</p>' },
+  checklist: [
+    'Four separate texts.',
+    'The message to a friend has no formal opening.',
+    'The email has both an opening and a closing.',
+    'The note names who it is for and who it is from.',
+    'One of the four cancels or changes a plan.'
+  ],
+  examples: [
+    { es: 'Al final no puedo el sábado.', en: 'In the end I can\'t do Saturday.' },
+    { es: 'Hace muchísimo calor.', en: 'It is extremely hot.' },
+    { es: '¿A qué hora abre la oficina?', en: 'What time does the office open?' }
+  ],
+  probes: [
+    { id: 'p:task-escribir-1', kind: 'mcq',
+      q: 'Which closing suits a short email to a stranger?',
+      options: ['Un saludo', 'Un abrazo', 'Te quiero'], answer: 0 },
+    { id: 'p:task-escribir-2', kind: 'mcq',
+      q: 'Which needs NO formal opening?',
+      options: ['a message to a friend', 'an email to an office', 'a letter to a company'], answer: 0 },
+    { id: 'p:task-escribir-3', kind: 'cloze',
+      text: 'Lo siento, al final no ___ el sábado.', accept: ['puedo'] },
+    { id: 'p:task-escribir-4', kind: 'recall',
+      front: 'Neutral email sign-off', back: 'Un saludo' }
+  ]
+},
+
 /* ---- Unit 1 · Meet someone ------------------------------------------------
  * The three lessons authored for the course rather than harvested from the
  * PCIC. The dialogue opens the unit, the thanks lesson fills a genuine hole
@@ -648,7 +1083,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-dirigirse-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-dirigirse-a1', deeper: ['fn-silencio-a1'], strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:357', 'funciones:A1:358', 'funciones:A1:359', 'funciones:A1:360'],
   title: 'Dirigirse a alguien',
   summary: "How you open a conversation announces the register before you've said anything else: a first name is casual, title + surname is formal, and the time-of-day greetings sit safely in between.",
@@ -827,7 +1262,7 @@ window.STRAND_LESSONS = [
  *            models.
  * ========================================================================== */
 {
-  id: 'fn-silencio-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-silencio-a1', status: 'reference', strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:469', 'funciones:A1:470', 'funciones:A1:471'],
   title: 'Pedir silencio',
   summary: 'Asking for quiet ranges from a wordless "shh" to a polite fixed phrase — the choice signals how much authority or courtesy the moment calls for.',
@@ -3114,7 +3549,7 @@ window.STRAND_LESSONS = [
  * in full by gr-demostrativos-a2)
  * ========================================================================== */
 {
-  id: 'gr-nombres-propios-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-nombres-propios-a1', status: 'reference', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:1', 'gramatica:A1:2', 'gramatica:A1:4', 'gramatica:A1:5', 'gramatica:A1:9', 'gramatica:A1:10'],
   title: 'Nombres propios: con o sin artículo',
   summary: 'First names, surnames and most country names drop the article a common noun would need — but El Salvador always keeps its own, and there is no rule to guess which countries do: you learn them one by one.',
@@ -3222,7 +3657,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adjetivos-calificativos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-adjetivos-calificativos-a1', deeper: ['gr-participio-adjetival-a1'], strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:45', 'gramatica:A1:46', 'gramatica:A1:47'],
   title: 'Adjetivos calificativos',
   summary: 'A descriptive adjective can sit right after its noun or, with ser, stand on its own as the predicate — and unlike a possessive, the article lets it stand completely alone, meaning "the [adjective] one."',
@@ -6977,7 +7412,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-relativo-que-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-relativo-que-a1', deeper: ['gr-subordinadas-sustantivas-a1'], strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:261', 'gramatica:A1:262', 'gramatica:A1:263', 'gramatica:A1:264', 'gramatica:A1:265'],
   title: 'El relativo que',
   summary: 'Que is the one relative pronoun every beginner needs: it never changes form, it can stand for a person or a thing, and it can be the subject or the direct object of its own clause — three separate jobs done by one invariable word.',
@@ -7151,7 +7586,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-participio-adjetival-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-participio-adjetival-a1', status: 'reference', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:380', 'gramatica:A1:381', 'gramatica:A1:382', 'gramatica:A1:383'],
   title: 'El participio como adjetivo',
   summary: 'Estoy cansado looks like a fixed phrase until you meet a woman who says estoy cansada — the participle here is not glued to the verb, it is an adjective agreeing with whoever is speaking, exactly like any other -o/-a adjective.',
@@ -7185,7 +7620,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-atributo-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-atributo-a1', status: 'reference', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:458', 'gramatica:A1:459', 'gramatica:A1:460'],
   title: 'El atributo con ser',
   summary: 'After ser, whatever comes next — a noun or an adjective — must agree with the subject, the same rule wearing two different masks depending on whether you are naming a category (Mario es cocinero) or describing a quality (el hijo es rubio).',
@@ -7253,7 +7688,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-oraciones-actitud-hablante-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-oraciones-actitud-hablante-a1', status: 'reference', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:484', 'gramatica:A1:485', 'gramatica:A1:486', 'gramatica:A1:487'],
   title: 'Tipos de oración según la actitud del hablante',
   summary: 'The same fact — Ana llama por teléfono — can be stated, denied or questioned, and Spanish marks the difference almost entirely with punctuation and word order rather than a different verb form, which is why the question marks at both ends of a Spanish question are not decorative.',
@@ -7808,7 +8243,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-verbos-predicativos-tipos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-verbos-predicativos-tipos-a2', deeper: ['gr-nucleo-verbal-a1'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:435', 'gramatica:A2:436', 'gramatica:A2:437'],
   title: 'Verbos que funcionan al revés: encantar, doler',
   summary: 'Me encanta el chocolate does not mean "I" is doing anything — the chocolate is the grammatical subject and must agree with the verb, while "I" sits in the indirect object, the mirror image of how English builds "I love chocolate."',
@@ -13358,7 +13793,7 @@ window.STRAND_LESSONS = [
  * BATCH — A1 grammar stragglers (WORKLIST.md, section A1 · grammar)
  * ========================================================================== */
 {
-  id: 'gr-interrogativos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-interrogativos-a1', deeper: ['gr-oraciones-actitud-hablante-a1'], strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:266', 'gramatica:A1:267', 'gramatica:A1:268', 'gramatica:A1:269',
          'gramatica:A1:270', 'gramatica:A1:273', 'gramatica:A1:274', 'gramatica:A1:318'],
   title: 'Los interrogativos: qué, quién, cuánto, dónde, cómo',
@@ -13395,7 +13830,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-nucleo-verbal-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-nucleo-verbal-a1', status: 'reference', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:423', 'gramatica:A1:424', 'gramatica:A1:425', 'gramatica:A1:426',
          'gramatica:A1:427', 'gramatica:A1:428', 'gramatica:A1:429', 'gramatica:A1:430',
          'gramatica:A1:431', 'gramatica:A1:432', 'gramatica:A1:433'],
@@ -13433,7 +13868,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-subordinadas-sustantivas-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-subordinadas-sustantivas-a1', status: 'reference', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:506', 'gramatica:A1:507', 'gramatica:A1:508', 'gramatica:A1:509',
          'gramatica:A1:510', 'gramatica:A1:511'],
   title: 'Oraciones subordinadas sustantivas: infinitivo y "que"',

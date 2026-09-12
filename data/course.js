@@ -62,91 +62,196 @@ window.COURSE = [
     { lesson: 'task-presentarse' },                       // task  Preséntate
     ] },
 
-  /* ---- the rest of A1 ------------------------------------------------ */
-  { verbs: ['querer', 'poder', 'ir', 'hacer', 'dar'] },
-  { lesson: 'gender-articles' },                        // gram  Gender & articles
-  { practice: true },
-  { lesson: 'gr-genero-sustantivos-a1' },               // gram  El género de los sustantivos
-  { verbs: ['hablar', 'trabajar', 'vivir', 'llamar', 'quedar'] },
-  { lesson: 'gr-numero-sustantivos-a1' },               // gram  El plural de los sustantivos
-  { lesson: 'gr-genero-adjetivo-a1' },                  // gram  El género del adjetivo
-  { verbs: ['saber', 'conocer', 'ver', 'decir', 'poner'] },
-  { practice: true },
-  { lesson: 'gr-posesivos-forma-a1' },                  // gram  Los posesivos: formas
-  { lesson: 'gr-posesivos-distribucion-a1' },           // gram  Los posesivos átonos: dónde van
-  { verbs: ['comer', 'beber', 'comprar', 'necesitar', 'esperar'] },
-  { lesson: 'gr-adjetivos-calificativos-a1' },          // gram  Adjetivos calificativos
-  { lesson: 'nt-duracion-transcurso-a1' },              // noti  Antes, después y cuándo pasa
-  { practice: true },
-  { verbs: ['venir', 'salir', 'volver', 'empezar', 'terminar'] },
-  { lesson: 'fn-acuerdo-a1' },                          // func  Acuerdo y desacuerdo
-  { lesson: 'gr-adverbios-lugar-tiempo-cantidad-a1' },  // gram  Adverbios de lugar, tiempo y cantidad
-  { verbs: ['levantarse', 'ducharse', 'desayunar', 'cenar', 'descansar'] },
-  { lesson: 'gn-describir-persona-a1' },                // genr  Describir a una persona
-  { practice: true },
-  { lesson: 'gr-articulo-definido-a1' },                // gram  El artículo definido: distribución
-  { verbs: ['entrar', 'pasar', 'llevar', 'tomar', 'dejar'] },
-  { lesson: 'gr-articulo-indefinido-a1' },              // gram  El artículo indefinido: un, una, unos, unas
-  { lesson: 'dc-conectores-a1' },                       // disc  Conectores y negación
-  { verbs: ['mirar', 'escuchar', 'ayudar', 'usar', 'estudiar'] },
-  { practice: true },
-  { lesson: 'nt-evaluacion-general-a1' },               // noti  Bueno, malo y los colores
-  { lesson: 'fn-corregir-informacion-a1' },             // func  Corregir y decir que no sabes
-  { verbs: ['preguntar', 'contestar', 'cocinar', 'lavar', 'limpiar'] },
-  { lesson: 'gr-atributo-a1' },                         // gram  El atributo con ser
-  { lesson: 'gr-infinitivo-usos-a1' },                  // gram  El infinitivo: cuándo se usa solo
-  { practice: true },
-  { verbs: ['ordenar', 'preparar', 'cuidar', 'aprender', 'subir'] },
-  { lesson: 'nt-cantidad-numerica-a1' },                // noti  Cantidad: números, más y menos
-  { lesson: 'gr-objeto-directo-a1' },                   // gram  El objeto directo
-  { verbs: ['bajar', 'correr', 'caminar', 'viajar', 'visitar'] },
-  { lesson: 'gn-describir-lugar-a1' },                  // genr  Describir un lugar
-  { practice: true },
-  { lesson: 'fn-dirigirse-a1' },                        // func  Dirigirse a alguien y responder
-  { verbs: ['invitar', 'cantar', 'bailar', 'nadar', 'cambiar'] },
-  { lesson: 'gr-participio-adjetival-a1' },             // gram  El participio como adjetivo
-  { lesson: 'gr-presente-indicativo-valores-a1' },      // gram  El presente: de qué habla realmente
-  { verbs: ['ganar', 'gastar', 'ahorrar', 'firmar', 'reservar'] },
-  { practice: true },
-  { lesson: 'gr-pronombre-se-a1' },                     // gram  El pronombre se: usos reflexivos
-  { verbs: ['alquilar', 'olvidar', 'explicar', 'enseñar', 'aceptar'] },
-  { lesson: 'gr-relativo-que-a1' },                     // gram  El relativo que: una palabra, tres trabajos
-  { practice: true },
-  { verbs: ['intentar', 'decidir', 'permitir', 'recibir', 'partir'] },
-  { lesson: 'dc-deixis-espacial-a1' },                  // disc  Esto, eso y el orden de la información
-  { lesson: 'gn-describir-objeto-a1' },                 // genr  Describir un objeto
-  { verbs: ['cumplir', 'existir', 'ocurrir', 'insistir', 'discutir'] },
-  { lesson: 'nt-localizacion-a1' },                     // noti  Dónde están las cosas
-  { practice: true },
-  { lesson: 'gr-demostrativos-distribucion-a1' },       // gram  Los demostrativos: este, ese, aquel — y dónde van
-  { lesson: 'gr-interrogativos-a1' },                   // gram  Los interrogativos: qué, quién, cuánto, dónde, cómo
-  { verbs: ['llevarse'] },
-  { lesson: 'nt-existencia-a1' },                       // noti  Hay, está, y entrar o salir
-  { lesson: 'gr-numerales-a1' },                        // gram  Los numerales: cardinales y ordinales
-  { practice: true },
-  { lesson: 'gr-pronombre-sujeto-a1' },                 // gram  Los pronombres sujeto
-  { lesson: 'fn-silencio-a1' },                         // func  Pedir silencio
-  { lesson: 'gn-conversacion-transaccional-a1' },       // genr  La conversación transaccional: comprar algo
-  { lesson: 'gr-nombres-propios-a1' },                  // gram  Nombres propios: con o sin artículo
-  { verbs: ['guardar', 'tirar', 'arreglar', 'prestar', 'regalar'] },
-  { lesson: 'nt-movimiento-estabilidad-a1' },           // noti  Ir, venir y dar direcciones
-  { practice: true },
-  { lesson: 'gr-oraciones-finales-a1' },                // gram  Oraciones finales: para + infinitivo
-  { lesson: 'gr-subordinadas-sustantivas-a1' },         // gram  Oraciones subordinadas sustantivas: infinitivo y "que"
-  { lesson: 'fn-pedir-informacion-a1' },                // func  Pedir y dar información
-  { lesson: 'dc-entonacion-a1' },                       // disc  La entonación y la cortesía
-  { lesson: 'nt-referencias-generales-a1' },            // noti  La hora, los días y la frecuencia
-  { verbs: ['mandar', 'saludar', 'presentar', 'acompañar', 'grabar'] },
-  { practice: true },
-  { lesson: 'gr-cuantificadores-no-universales-a1' },   // gram  Poco y mucho
-  { lesson: 'gr-nucleo-verbal-a1' },                    // gram  Ser y estar sin adjetivo: el núcleo del predicado
-  { lesson: 'gn-generos-escritos-a1' },                 // genr  Textos breves de cada día
-  { lesson: 'gr-adverbios-afirmacion-negacion-a1' },    // gram  Sí, no, también, tampoco
-  { lesson: 'fn-valorar-a1' },                          // func  Valorar y hablar de lo que haces
-  { verbs: ['marcar', 'llenar', 'levantar', 'vestir', 'lavarse'] },
-  { practice: true },
-  { lesson: 'nt-valor-precio-a1' },                     // noti  Precio y tamaño
-  { lesson: 'gr-oraciones-actitud-hablante-a1' },       // gram  Tipos de oración según la actitud del hablante
+  { unit: 'a1-u02', band: 'A1', title: 'Ask a question',
+    goal: 'I can ask for a name, a place, a price and a repeat — and say when I have not understood.',
+    canDo: ['ask with qué, dónde, cuánto, quién',
+            'turn a statement into a question with my voice',
+            'say I do not understand and ask for a repeat',
+            'ask a stranger for information'],
+    days: [
+      { lesson: 'gr-interrogativos-a1' },
+      { verbs: ['querer', 'poder', 'ir', 'hacer', 'dar'] },
+      { lesson: 'dc-entonacion-a1' },
+      { lesson: 'gr-pronombre-sujeto-a1' },
+      { practice: true },
+      { lesson: 'fn-pedir-informacion-a1' },
+      { lesson: 'task-preguntar' },
+    ] },
+
+  { unit: 'a1-u03', band: 'A1', title: 'Be polite',
+    goal: 'I can apologise, agree, disagree, and choose between tú and usted.',
+    canDo: ['say sorry and reply when someone apologises',
+            'agree and disagree out loud',
+            'use tú or usted deliberately',
+            'say yes, no, me too and me neither'],
+    days: [
+      { lesson: 'fn-dirigirse-a1' },
+      { verbs: ['saber', 'conocer', 'ver', 'decir', 'poner'] },
+      { lesson: 'fn-disculparse-a2' },
+      { lesson: 'fn-acuerdo-a1' },
+      { practice: true },
+      { lesson: 'gr-adverbios-afirmacion-negacion-a1' },
+      { lesson: 'task-cortesia' },
+    ] },
+
+  { unit: 'a1-u04', band: 'A1', title: 'Numbers, time and money',
+    goal: 'I can say how many, what time, what day and how much.',
+    canDo: ['count and use numbers up to a hundred',
+            'tell the time and name the days',
+            'ask and understand a price',
+            'arrange a time to meet'],
+    days: [
+      { lesson: 'nt-cantidad-numerica-a1' },
+      { lesson: 'gr-numerales-a1' },
+      { verbs: ['hablar', 'trabajar', 'vivir', 'llamar', 'quedar'] },
+      { lesson: 'nt-referencias-generales-a1' },
+      { practice: true },
+      { lesson: 'nt-valor-precio-a1' },
+      { lesson: 'task-quedar' },
+    ] },
+
+  { unit: 'a1-u05', band: 'A1', title: 'Say what you like',
+    goal: 'I can say what I like and hate, and react to what someone else likes.',
+    canDo: ['use me gusta and me gustan correctly',
+            'say me encanta and no me gusta nada',
+            'agree with a negative using a mí tampoco',
+            'ask what someone else likes'],
+    days: [
+      { lesson: 'gr-verbos-predicativos-tipos-a2' },
+      { lesson: 'fn-preguntar-gustos-a2' },
+      { verbs: ['comer', 'beber', 'comprar', 'necesitar', 'esperar'] },
+      { lesson: 'nt-evaluacion-general-a1' },
+      { practice: true },
+      { lesson: 'fn-valorar-a1' },
+      { lesson: 'task-gustos' },
+    ] },
+
+  { unit: 'a1-u06', band: 'A1', title: 'Order and buy',
+    goal: 'I can order food and drink, buy something and pay for it.',
+    canDo: ['order in a bar or café',
+            'ask whether something exists with hay',
+            'ask the price and pay',
+            'close a transaction politely'],
+    days: [
+      { lesson: 'gn-conversacion-transaccional-a1' },
+      { lesson: 'gr-articulo-indefinido-a1' },
+      { verbs: ['venir', 'salir', 'volver', 'empezar', 'terminar'] },
+      { lesson: 'nt-existencia-a1' },
+      { practice: true },
+      { lesson: 'task-cafe' },
+    ] },
+
+  { unit: 'a1-u07', band: 'A1', title: 'Describe people and things',
+    goal: 'I can describe a person, a place or an object so that someone recognises it.',
+    canDo: ['make adjectives agree',
+            'say whose something is',
+            'point things out with este, ese, aquel',
+            'describe somebody until they are guessed'],
+    days: [
+      { lesson: 'gr-genero-adjetivo-a1' },
+      { lesson: 'gr-adjetivos-calificativos-a1' },
+      { verbs: ['entrar', 'pasar', 'llevar', 'tomar', 'dejar'] },
+      { lesson: 'gr-posesivos-forma-a1' },
+      { lesson: 'gr-posesivos-distribucion-a1' },
+      { practice: true },
+      { lesson: 'gr-demostrativos-distribucion-a1' },
+      { lesson: 'gn-describir-persona-a1' },
+      { lesson: 'gn-describir-objeto-a1' },
+      { lesson: 'task-describir' },
+    ] },
+
+  { unit: 'a1-u08', band: 'A1', title: 'Where things are',
+    goal: 'I can say where something is and give directions to it.',
+    canDo: ['use hay for existence and está for location',
+            'say aquí, ahí, allí and mean the right one',
+            'give directions in a street',
+            'describe a place'],
+    days: [
+      { lesson: 'nt-localizacion-a1' },
+      { lesson: 'dc-deixis-espacial-a1' },
+      { verbs: ['mirar', 'escuchar', 'ayudar', 'usar', 'estudiar'] },
+      { lesson: 'nt-movimiento-estabilidad-a1' },
+      { practice: true },
+      { lesson: 'gn-describir-lugar-a1' },
+      { lesson: 'task-direcciones' },
+    ] },
+
+  { unit: 'a1-u09', band: 'A1', title: 'Your day',
+    goal: 'I can describe my daily routine and say how often I do things.',
+    canDo: ['use reflexive verbs with their pronoun',
+            'say when and how often',
+            'talk about a whole day in order',
+            'use the present for habits'],
+    days: [
+      { lesson: 'gr-pronombre-se-a1' },
+      { lesson: 'gr-presente-indicativo-valores-a1' },
+      { verbs: ['preguntar', 'contestar', 'cocinar', 'lavar', 'limpiar'] },
+      { lesson: 'gr-adverbios-lugar-tiempo-cantidad-a1' },
+      { practice: true },
+      { lesson: 'nt-duracion-transcurso-a1' },
+      { lesson: 'task-rutina' },
+    ] },
+
+  { unit: 'a1-u10', band: 'A1', title: 'Want, need, ask for',
+    goal: 'I can say what I want, what I need and what I have to do — and ask for help.',
+    canDo: ['use a verb plus an infinitive',
+            'say what something is for with para',
+            'correct someone and say I do not know',
+            'ask three kinds of favour'],
+    days: [
+      { lesson: 'gr-infinitivo-usos-a1' },
+      { lesson: 'gr-oraciones-finales-a1' },
+      { verbs: ['ordenar', 'preparar', 'cuidar', 'aprender', 'subir'] },
+      { lesson: 'fn-corregir-informacion-a1' },
+      { practice: true },
+      { lesson: 'task-pedir' },
+    ] },
+
+  { unit: 'a1-u11', band: 'A1', title: 'Join it up',
+    goal: 'I can join short sentences so I sound connected rather than chopped up.',
+    canDo: ['link with y, pero, porque, también',
+            'use que to join a noun to a clause',
+            'replace a noun with lo, la, los, las',
+            'say how much with poco and mucho'],
+    days: [
+      { lesson: 'dc-conectores-a1' },
+      { lesson: 'gr-relativo-que-a1' },
+      { verbs: ['bajar', 'correr', 'caminar', 'viajar', 'visitar'] },
+      { lesson: 'gr-objeto-directo-a1' },
+      { practice: true },
+      { lesson: 'gr-cuantificadores-no-universales-a1' },
+      { lesson: 'task-contar' },
+    ] },
+
+  { unit: 'a1-u12', band: 'A1', title: 'The words behind the words',
+    goal: 'I understand why Spanish nouns have a gender, and I can find my own agreement mistakes.',
+    canDo: ['explain why a noun is el or la',
+            'form plurals on article, noun and adjective',
+            'use the definite article where English drops it',
+            'correct my own earlier writing'],
+    days: [
+      { lesson: 'gender-articles' },
+      { lesson: 'gr-genero-sustantivos-a1' },
+      { verbs: ['invitar', 'cantar', 'bailar', 'nadar', 'cambiar'] },
+      { lesson: 'gr-numero-sustantivos-a1' },
+      { lesson: 'gr-articulo-definido-a1' },
+      { practice: true },
+      { lesson: 'task-revisar' },
+    ] },
+
+  { unit: 'a1-u13', band: 'A1', title: 'Everyday writing',
+    goal: 'I can write the short texts people actually send.',
+    canDo: ['write a message cancelling a plan',
+            'open and close an email correctly',
+            'leave a note somebody can act on',
+            'write a postcard'],
+    days: [
+      { lesson: 'gn-generos-escritos-a1' },
+      { verbs: ['ganar', 'gastar', 'ahorrar', 'firmar', 'reservar'] },
+      { verbs: ['alquilar', 'olvidar', 'explicar', 'enseñar', 'aceptar'] },
+      { practice: true },
+      { lesson: 'task-escribir' },
+    ] },
 
   /* ---- A2 · 104 days · starts at index 94 ------------------------------- */
   { band: 'A2' },
@@ -214,7 +319,6 @@ window.COURSE = [
   { lesson: 'dc-deixis-temporal-a2' },                  // disc  Deixis temporal y el hilo del relato
   { lesson: 'gr-preterito-perfecto-a2' },               // gram  El pretérito perfecto: haber + participio
   { lesson: 'gn-describir-lugar-a2' },                  // genr  Describir un lugar: recorrido, anécdota y comparación
-  { lesson: 'fn-disculparse-a2' },                      // func  Disculparse
   { practice: true },
   { lesson: 'gr-interrogativos-exclamativos-a2' },      // gram  Interrogativos y exclamativos: qué, cuál, cómo
   { lesson: 'fn-felicitar-a2' },                        // func  Felicitar y alegrarse
@@ -235,7 +339,6 @@ window.COURSE = [
   { lesson: 'gr-nombres-escuetos-a2' },                 // gram  Nombres escuetos: sin artículo ni cuantificador
   { practice: true },
   { lesson: 'nt-necesidad-obligacion-a2' },             // noti  Necesidad y conformidad: hace falta, vale
-  { lesson: 'fn-preguntar-gustos-a2' },                 // func  Preguntar y expresar gustos
   { lesson: 'dc-interrogativos-neutros-a2' },           // disc  Preguntas neutras y orientadas
   { lesson: 'gr-sustantivos-especiales-a2' },           // gram  Nombres propios con artículo fijo y nombres eventivos
   { lesson: 'fn-proponer-sugerir-a2' },                 // func  Proponer, sugerir y aceptar
@@ -253,7 +356,6 @@ window.COURSE = [
   { lesson: 'gn-presentacion-publica-a2' },             // genr  Una presentación pública breve
   { practice: true },
   { lesson: 'nt-anterioridad-a2' },                     // noti  Ya, todavía no, y el principio y el fin
-  { lesson: 'gr-verbos-predicativos-tipos-a2' },        // gram  Verbos que funcionan al revés: encantar, doler
 
   /* ---- B1 · 189 days · starts at index 198 ------------------------------- */
   { band: 'B1' },

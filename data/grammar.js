@@ -13,6 +13,7 @@ window.CONCEPT_LESSONS = [
 
 {
   id: 'ser-estar', title: 'Ser vs. Estar', level: 1,
+  deeper: ['gr-atributo-a1'],
   canDo: 'say what something IS and what state it is IN — and hear the difference',
   summary: 'Spanish splits "to be" into two verbs. Ser is for identity and essence; estar is for states, locations and conditions. Getting this right changes your meaning, not just your accuracy.',
   sections: [
@@ -43,7 +44,7 @@ window.CONCEPT_LESSONS = [
 },
 
 {
-  id: 'gender-articles', title: 'Gender & articles', level: 1,
+  id: 'gender-articles', deeper: ['gr-nombres-propios-a1'], title: 'Gender & articles', level: 1,
   summary: 'Every Spanish noun has a gender, and the words around it must agree. Learn the patterns and the agreement chain becomes automatic.',
   sections: [
     { h: 'The patterns', html: 'Most nouns ending in <b>-o</b> are masculine (<i>el libro</i>); most ending in <b>-a</b> are feminine (<i>la casa</i>). Learn each noun <i>with</i> its article — that\'s why our vocab shows <i>el / la</i>.' },
