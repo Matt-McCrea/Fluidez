@@ -51,6 +51,7 @@ window.COURSE = [
             'open a conversation and close it'],
     days: [
     { lesson: 'dlg-presentarse' },                        // dial  Dos personas se conocen
+    { lesson: 'gr-sonidos-a1' },                          // gram  Los sonidos: cinco vocales y nada más
     { verbs: ['ser', 'estar', 'llamarse', 'tener', 'haber'] },
     { lesson: 'presente' },                               // gram  Presente (Present)
     { lesson: 'fn-responder-saludo-a2' },                 // func  Saludar: en persona y por escrito
@@ -70,6 +71,7 @@ window.COURSE = [
             'ask a stranger for information'],
     days: [
       { lesson: 'gr-interrogativos-a1' },
+      { lesson: 'gr-acentuacion-a1' },
       { verbs: ['querer', 'poder', 'ir', 'hacer', 'dar'] },
       { lesson: 'dc-entonacion-a1' },
       { lesson: 'gr-pronombre-sujeto-a1' },

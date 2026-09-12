@@ -22,6 +22,74 @@
  * ========================================================================== */
 window.STRAND_LESSONS = [
 
+/* ---- pronunciation: the hole in the course ---------------------------------
+ * Nothing in 730 days taught Spanish sounds, stress, or why the written accent
+ * goes where it goes. Seventeen lessons mentioned accents in passing; none
+ * taught the system. These two are core A1, not reference: a beginner who does
+ * not know that Spanish vowels never reduce will mispronounce every word they
+ * ever read, and one who does not know the stress rule cannot tell "hablo"
+ * from "habló" — which is the present from the preterite.
+ * Both pair with js/speak.js; the examples are meant to be listened to.
+ * ------------------------------------------------------------------------- */
+{
+  id: 'gr-sonidos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  title: 'Los sonidos: cinco vocales y nada más',
+  canDo: 'pronounce any written Spanish word correctly on sight',
+  summary: 'Spanish spelling is almost perfectly regular: five vowels, each with exactly one sound, always. English has around twenty vowel sounds and spells them chaotically, which is why an English speaker\'s instinct is the single biggest source of Spanish mispronunciation.',
+  sections: [
+    { h: 'Five vowels, five sounds, no exceptions', html: '<b>a</b> as in "father", <b>e</b> as in "bed", <b>i</b> as in "machine", <b>o</b> as in "or", <b>u</b> as in "rule". Each is short, crisp and identical every time it appears. They never blur into the "uh" that English unstressed vowels collapse into — <i>banana</i> in English is three different vowel sounds; <i>banana</i> in Spanish is the same <b>a</b> three times.' },
+    { h: 'The consonants that surprise', html: '<ul><li><b>h</b> is always silent: <i>hola</i>, <i>hombre</i>, <i>hay</i>.</li><li><b>j</b> and <b>g</b> (before e/i) are a throaty h: <i>jamón</i>, <i>gente</i>.</li><li><b>ll</b> and <b>y</b> sound alike, roughly English "y": <i>llamo</i>, <i>yo</i>.</li><li><b>ñ</b> is the "ny" of "canyon": <i>español</i>.</li><li><b>v</b> and <b>b</b> are the SAME sound: <i>vivir</i> begins like <i>bien</i>.</li><li><b>r</b> between vowels is a single tap (<i>pero</i>); <b>rr</b> and initial <b>r</b> are rolled (<i>perro</i>, <i>rojo</i>).</li></ul>' },
+    { h: 'The one that splits the Spanish-speaking world', html: 'In most of Spain, <b>c</b> (before e/i) and <b>z</b> are a "th" sound — <i>gracias</i> ends "thias", <i>cinco</i> starts "thinco". In all of Latin America and southern Spain they are a plain "s". Both are entirely correct; the app\'s voice is peninsular, so you will hear the "th".' },
+    { h: 'Why this pays off immediately', html: 'Because the spelling is regular, you never have to learn how a Spanish word sounds separately from how it is written. Once these rules are in place you can read any word aloud correctly the first time you meet it — which is not true in English and is one of the genuinely easy things about Spanish.' }
+  ],
+  examples: [
+    { es: 'Hola, ¿hablas español?', en: 'Hello, do you speak Spanish? — the h is silent, the ñ is "ny"' },
+    { es: 'Gracias, Jorge.', en: 'Thank you, Jorge. — peninsular "grathias", and a throaty J' },
+    { es: 'Pero el perro es rojo.', en: 'But the dog is red. — one tap, then two rolls' },
+    { es: 'Vivimos en Bilbao.', en: 'We live in Bilbao. — the v and the b are the same sound' },
+    { es: 'Me llamo Yolanda.', en: 'My name is Yolanda. — ll and y sound alike' }
+  ],
+  probes: [
+    { id: 'p:gr-sonidos-a1-1', kind: 'mcq', q: 'How many vowel sounds does Spanish have?',
+      options: ['Five — one per written vowel', 'Twelve', 'About twenty, like English'], answer: 0 },
+    { id: 'p:gr-sonidos-a1-2', kind: 'mcq', q: 'Which letter is always silent?',
+      options: ['h', 'j', 'll'], answer: 0 },
+    { id: 'p:gr-sonidos-a1-3', kind: 'mcq', q: 'In "pero" and "perro", what is the difference?',
+      options: ['One tap of the r versus a rolled r', 'The stress moves', 'The vowels change'], answer: 0 },
+    { id: 'p:gr-sonidos-a1-4', kind: 'recall', front: 'Two letters that sound identical in Spanish', back: 'v and b' }
+  ]
+},
+
+{
+  id: 'gr-acentuacion-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  title: 'El acento: dónde cae la fuerza y cuándo se escribe',
+  canDo: 'know which syllable to stress, and why the written accent is there',
+  summary: 'The written accent is not decoration and it is not optional. Spanish has two default stress rules, and the accent appears on exactly the words that break them — so an accent is a signal that the stress is somewhere you would not have guessed.',
+  sections: [
+    { h: 'The two defaults', html: 'A word ending in a <b>vowel, -n or -s</b> is stressed on the <b>second-to-last</b> syllable: <i>ha-<b>bla</b>-mos</i>, <i>na-<b>ran</b>-ja</i>, <i><b>jo</b>-ven</i>. A word ending in <b>any other consonant</b> is stressed on the <b>last</b>: <i>ha-<b>blar</b></i>, <i>ciu-<b>dad</b></i>, <i>es-pa-<b>ñol</b></i>. Between them these two rules cover the large majority of Spanish words, and those words carry no accent at all.' },
+    { h: 'The accent marks the exceptions', html: 'When a word does not follow its rule, the accent shows where the stress actually falls: <i>ha-<b>bló</b></i> ends in a vowel but is stressed on the last syllable, so it needs the mark. <i><b>Á</b>-ra-be</i>, <i>di-<b>fí</b>-cil</i>, <i><b>lá</b>-piz</i> — all breaking a default, all marked.' },
+    { h: 'Why it changes meaning', html: 'Stress alone distinguishes real words, and three of these you will meet in the first fortnight: <i><b>ha</b>blo</i> (I speak) versus <i>ha<b>bló</b></i> (he spoke); <i><b>ter</b>mino</i> (I finish) versus <i>ter<b>mi</b>no</i> (term) versus <i>termi<b>nó</b></i> (he finished). Dropping the accent does not make a small spelling slip — it changes the tense.' },
+    { h: 'The other accent: telling twins apart', html: 'A second job, unrelated to stress: the mark separates pairs of one-syllable words that would otherwise be identical. <i>él</i> (he) / <i>el</i> (the); <i>tú</i> (you) / <i>tu</i> (your); <i>sí</i> (yes) / <i>si</i> (if); <i>qué</i> (what, asking) / <i>que</i> (that). Same sound, different word, and the accent is the only thing distinguishing them in writing.' }
+  ],
+  examples: [
+    { es: 'Hablo español todos los días.', en: 'I speak Spanish every day. — HA-blo, no accent, follows the rule' },
+    { es: 'Ayer habló con su madre.', en: 'Yesterday he spoke to his mother. — ha-BLÓ, breaks the rule, so it is marked' },
+    { es: 'Es difícil, pero no imposible.', en: 'It is difficult, but not impossible. — di-FÍ-cil is marked, im-po-SI-ble is not' },
+    { es: 'Tú tienes tu libro.', en: 'You have your book. — same sound, two different words' }
+  ],
+  probes: [
+    { id: 'p:gr-acentuacion-a1-1', kind: 'mcq', q: 'A word ending in a vowel, -n or -s is normally stressed on which syllable?',
+      options: ['the second-to-last', 'the last', 'the first'], answer: 0 },
+    { id: 'p:gr-acentuacion-a1-2', kind: 'mcq', q: 'What does the written accent tell you?',
+      options: ['The stress is NOT where the rule would put it', 'The vowel is longer', 'The word is formal'], answer: 0 },
+    { id: 'p:gr-acentuacion-a1-3', kind: 'mcq', q: '"Hablo" and "habló" differ in what?',
+      options: ['Who did it, and when', 'Nothing — just spelling', 'Only formality'], answer: 0 },
+    { id: 'p:gr-acentuacion-a1-4', kind: 'cloze', text: '___ tienes ___ libro. (you have your book)', accept: ['Tú tu', 'tú tu'] },
+    { id: 'p:gr-acentuacion-a1-5', kind: 'recall', front: 'Why does "habló" carry an accent?', back: 'it ends in a vowel but is stressed on the last syllable' }
+  ]
+},
+
+
 {
   id: 'task-b1-opinion', strand: 'task', cefr: 'B1', level: 4, theme: 'politica',
   title: 'Defiende una opinión',
