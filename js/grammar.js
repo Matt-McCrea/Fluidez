@@ -11,7 +11,10 @@ window.Grammar = (function () {
 
   function render(host, back, openId) {
     UI.clear(host);
-    var lessons = window.GRAMMAR_LESSONS || [];
+    /* Everything that EXISTS, not just what is on the path. This view is the
+     * reference browser, and the reference layer — the shelved lessons and the
+     * optional deep units — lives outside GRAMMAR_LESSONS by construction. */
+    var lessons = window.ALL_LESSONS || window.GRAMMAR_LESSONS || [];
     var studied = loadProg().studied || {};
 
     var head = UI.el('div', 'panel');

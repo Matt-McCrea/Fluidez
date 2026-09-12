@@ -93,6 +93,7 @@ window.Shell = (function () {
       window.Onboarding.run(h, function () { refresh('inicio'); back(); });
     });
     row('📖', 'Gramática', 'browse every lesson', window.Grammar.render);
+    row('🔍', 'Profundizar', 'optional deep dives on the hard parts', window.DeepDive.render);
     row('✍️', 'Escribir', 'free writing & journal', window.WriteSpace.render);
     row('📚', 'Recursos', 'podcasts & references', window.Resources.render);
     row('⚙️', 'Ajustes', 'mode, export / import', window.Settings.render);

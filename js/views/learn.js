@@ -94,7 +94,8 @@ window.StageLearn = (function () {
     }
   }
   function lessonTitle(id) {
-    var ls = window.GRAMMAR_LESSONS || [];
+    // deeper targets are reference lessons, which are not in GRAMMAR_LESSONS
+    var ls = window.ALL_LESSONS || window.GRAMMAR_LESSONS || [];
     for (var i = 0; i < ls.length; i++) {
       if (ls[i].id === id) {
         return { id: id, title: ls[i].title,
