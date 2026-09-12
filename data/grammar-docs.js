@@ -11,6 +11,7 @@
 window.GRAMMAR = [
 {
   key:'presente', title:'Presente (Present)',
+  canDo:'talk about what you do, where you live and how things are right now',
   summary:'Actions happening now, habitual actions, and general truths.',
   formation:'Drop the -ar/-er/-ir ending and add the present endings to the stem.',
   when:[

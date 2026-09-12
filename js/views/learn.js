@@ -42,8 +42,63 @@ window.StageLearn = (function () {
 
   // Render a lesson's teaching content into `wrap` (no buttons). Shared with the
   // Grammar reference view so lessons read identically wherever they appear.
+  /* A lesson opens with two things the learner can read before any grammar:
+   * what they will be able to say (`canDo`), and two lines of dialogue where
+   * the thing is actually needed (`moment`). Both are optional — a lesson
+   * without them renders exactly as it did before.
+   *
+   * The order matters and is the point: `summary` frequently opens with the
+   * grammatical category ("-o is masculine and -a is feminine…"), which is an
+   * answer to a question the learner has not yet been given a reason to ask.
+   * The moment gives them the reason. */
+  function fillOpening(wrap, l) {
+    if (l.canDo) {
+      wrap.appendChild(UI.el('p', 'lesson-cando',
+        '<span class="cando-label">After this you can</span>' + l.canDo));
+    }
+    if (l.moment && l.moment.length) {
+      var d = UI.el('div', 'lesson-moment');
+      l.moment.forEach(function (line) {
+        d.appendChild(UI.el('div', 'moment-line',
+          '<span class="ex-es">' + line.es + '</span><span class="ex-en">' + line.en + '</span>'));
+      });
+      wrap.appendChild(d);
+    }
+  }
+
+  // The closing half of the same idea: restate the can-do as achieved, and
+  // offer the optional deep-dives rather than making the learner walk them.
+  function fillClosing(wrap, l) {
+    if (l.canDo) {
+      wrap.appendChild(UI.el('p', 'lesson-nowyoucan',
+        '<span class="cando-label">Now you can</span>' + l.canDo));
+    }
+    var deeper = (l.deeper || []).map(lessonTitle).filter(Boolean);
+    if (deeper.length) {
+      wrap.appendChild(UI.el('h3', null, 'Understand this better'));
+      var ul = UI.el('ul', 'deeper-list');
+      deeper.forEach(function (d) {
+        ul.appendChild(UI.el('li', null,
+          '<a href="#/grammar/' + d.id + '">' + d.title + '</a>' +
+          (d.summary ? ' <span class="muted">— ' + d.summary + '</span>' : '')));
+      });
+      wrap.appendChild(ul);
+    }
+  }
+  function lessonTitle(id) {
+    var ls = window.GRAMMAR_LESSONS || [];
+    for (var i = 0; i < ls.length; i++) {
+      if (ls[i].id === id) {
+        return { id: id, title: ls[i].title,
+                 summary: (ls[i].summary || '').split('.')[0] };
+      }
+    }
+    return null;
+  }
+
   function fillLesson(wrap, l) {
     wrap.appendChild(UI.el('h1', null, l.title));
+    fillOpening(wrap, l);
     wrap.appendChild(UI.el('p', 'doc-summary', l.summary));
     (l.sections || []).forEach(function (s) {
       wrap.appendChild(UI.el('h3', null, s.h));
@@ -107,6 +162,7 @@ window.StageLearn = (function () {
         return { label: inf, html: verbTable(inf, l.conjTabs.tense) };
       })));
     }
+    fillClosing(wrap, l);
     return wrap;
   }
 

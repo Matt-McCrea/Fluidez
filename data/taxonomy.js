@@ -104,7 +104,28 @@ window.STRANDS = [
   // Listed here so the strand vocabulary is complete; the generation brief
   // says explicitly not to author these.
   { id: 'lexis',     label: 'Léxico',     inventory: 'nociones_especificas',
-    derived: true, blocks: ['words', 'collocations', 'examples'] }
+    derived: true, blocks: ['words', 'collocations', 'examples'] },
+
+  /* ---- the two strands that are NOT from the PCIC --------------------------
+   * Every strand above answers "what does the inventory say a learner should
+   * know?". These two answer "what does a learner do on the day?", which the
+   * inventory does not model at all — and their absence is why a unit could
+   * only ever be a run of explanations.
+   *
+   * `dialogue` opens a unit: a short exchange the learner reads BEFORE any
+   * grammar, so the unit starts with Spanish being used between two people
+   * rather than with a category being named. `task` closes it: no new content,
+   * a thing to produce, checked against the model and checklist the genre
+   * strand already renders.
+   *
+   * Both carry no `pcic` — they are authored for the course, not harvested —
+   * which the validator permits (pcic is only required under STRICT_TAGS).
+   * Neither sets registerContrast: a dialogue's lines are one conversation at
+   * one register, and demanding two would make it a worse conversation. */
+  { id: 'dialogue',  label: 'Diálogo',    authored: true,
+    blocks: ['sections', 'exponents', 'examples'] },
+  { id: 'task',      label: 'Tarea',      authored: true,
+    blocks: ['sections', 'model', 'checklist', 'examples'] }
 ];
 
 /* ---- REGISTER — the axis a function lesson actually teaches -------------

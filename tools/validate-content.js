@@ -389,8 +389,46 @@ function checkProbes(l, tag) {
         ok(!!E.verbByInf(inf), `course[${i}]: verb day names "${inf}", which is not in data/verbs.js`));
     }
   });
-  allLessons.forEach(l => ok(placed.has(l.id),
-    `lesson "${l.id}" is in no course entry — nothing would ever teach it`));
+  /* A lesson has to be REACHABLE, which is not the same as being on the course.
+   * Requiring every lesson in COURSE forced the whole 700-lesson knowledge base
+   * onto one path, so a lesson could not be authored as reference without also
+   * costing a learner a day. Two ways to be reachable now:
+   *   - placed in COURSE                        (the core path)
+   *   - status:'reference' AND linked from at   (the shelf underneath it)
+   *     least one core lesson's `deeper`
+   * The guarantee is unchanged — nothing is unreachable — just widened by one
+   * case. A reference lesson nothing links to is still an error, because it is
+   * exactly as invisible as one missing from COURSE. */
+  const deepLinked = new Set();
+  allLessons.forEach(l => (l.deeper || []).forEach(id => deepLinked.add(id)));
+  allLessons.forEach(l => {
+    if (placed.has(l.id)) {
+      ok(l.status !== 'reference',
+         `lesson "${l.id}" is status:'reference' but is also placed in COURSE at ${placed.get(l.id)}`);
+      return;
+    }
+    ok(l.status === 'reference',
+       `lesson "${l.id}" is in no course entry — mark it status:'reference' or place it`);
+    ok(deepLinked.has(l.id),
+       `reference lesson "${l.id}" is linked from no lesson's \`deeper\` — nothing could reach it`);
+  });
+  // Every `deeper` target must exist, and must actually be reference material:
+  // pointing a deep-dive at a lesson the learner is walking anyway is a no-op.
+  allLessons.forEach(l => (l.deeper || []).forEach(id => {
+    ok(allIds.has(id), `lesson "${l.id}": \`deeper\` names "${id}", which is not a lesson`);
+    const t = allLessons.find(x => x.id === id);
+    if (t) ok(t.status === 'reference',
+       `lesson "${l.id}": \`deeper\` names "${id}", which is not status:'reference'`);
+  }));
+  // An upgrade must point BACKWARDS — a lesson cannot upgrade one taught later.
+  allLessons.forEach(l => {
+    if (!l.upgrades) return;
+    ok(allIds.has(l.upgrades), `lesson "${l.id}": \`upgrades\` names "${l.upgrades}", which is not a lesson`);
+    if (placed.has(l.id) && placed.has(l.upgrades)) {
+      ok(placed.get(l.upgrades) < placed.get(l.id),
+         `lesson "${l.id}" upgrades "${l.upgrades}", which the course teaches later (${placed.get(l.upgrades)} > ${placed.get(l.id)})`);
+    }
+  });
 
   // Bands are slices of the one course, so their starts must ascend and land
   // on a real entry; anything else silently truncates or overlaps a band.

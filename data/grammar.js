@@ -13,6 +13,7 @@ window.CONCEPT_LESSONS = [
 
 {
   id: 'ser-estar', title: 'Ser vs. Estar', level: 1,
+  canDo: 'say what something IS and what state it is IN — and hear the difference',
   summary: 'Spanish splits "to be" into two verbs. Ser is for identity and essence; estar is for states, locations and conditions. Getting this right changes your meaning, not just your accuracy.',
   sections: [
     { h: 'The core idea', html: '<b>Ser</b> = what something fundamentally <i>is</i> (identity, origin, defining traits, time). <b>Estar</b> = what condition or place it is <i>in</i> right now (states, feelings, location).' },

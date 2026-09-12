@@ -175,6 +175,27 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .ex-es { display:block; font-weight:650; }
 .ex-en { display:block; color:var(--muted); font-size:.92em; }
 
+/* ---- the can-do frame: what you'll be able to say, and the moment where
+   you'd say it. Both open the lesson, BEFORE the summary and the grammar. ---- */
+.cando-label {
+  display:block; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase;
+  font-weight:700; color:var(--accent); margin-bottom:3px;
+}
+.lesson-cando, .lesson-nowyoucan {
+  margin:14px 0; padding:12px 16px; border-radius:10px;
+  background:var(--panel-2); border-left:3px solid var(--accent);
+  font-size:1.05rem; font-weight:600;
+}
+.lesson-nowyoucan { margin-top:26px; }
+.lesson-moment { display:flex; flex-direction:column; gap:6px; margin:14px 0 18px; }
+.moment-line {
+  padding:10px 15px; background:var(--panel-2); border-radius:10px;
+  border-left:3px solid var(--accent-2);
+}
+.deeper-list { padding-left:22px; }
+.deeper-list li { margin:7px 0; }
+.deeper-list a { color:var(--accent); font-weight:600; }
+
 /* ---- passage / comprehension ---- */
 .passage {
   font-size:1.18rem; line-height:1.8; padding:22px 26px; margin:14px 0;

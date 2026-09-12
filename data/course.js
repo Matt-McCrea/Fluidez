@@ -35,10 +35,25 @@
  * ========================================================================== */
 window.COURSE = [
 
-  /* ---- A1 · 90 days · starts at index 0 ------------------------------- */
+  /* ---- A1 · 94 days · starts at index 0 ------------------------------- */
+
+  /* Unit 1 · Meet someone — 10 days ------------------------------------
+   * "I can greet someone, say who I am and where I am from, and ask them
+   * the same." Four of these lessons were already written and sat at days
+   * 87, 90, 100 and 234; the dialogue, the thanks and the task are new.
+   * The dialogue comes FIRST, before any grammar, on purpose. */
+  { lesson: 'dlg-presentarse' },                        // dial  Dos personas se conocen
   { verbs: ['ser', 'estar', 'llamarse', 'tener', 'haber'] },
   { lesson: 'presente' },                               // gram  Presente (Present)
+  { lesson: 'fn-responder-saludo-a2' },                 // func  Saludar: en persona y por escrito
   { lesson: 'ser-estar' },                              // gram  Ser vs. Estar
+  { lesson: 'nt-origen-a1' },                           // noti  De dónde eres y cuántos años tienes
+  { lesson: 'fn-identificar-a1' },                      // func  Identificar: qué es y quién es
+  { lesson: 'fn-agradecer-a1' },                        // func  Dar las gracias
+  { lesson: 'fn-establecer-comunicacion-a1' },          // func  Empezar y terminar una conversación
+  { lesson: 'task-presentarse' },                       // task  Preséntate
+
+  /* ---- the rest of A1 ------------------------------------------------ */
   { verbs: ['querer', 'poder', 'ir', 'hacer', 'dar'] },
   { lesson: 'gender-articles' },                        // gram  Gender & articles
   { practice: true },
@@ -84,10 +99,8 @@ window.COURSE = [
   { lesson: 'gr-presente-indicativo-valores-a1' },      // gram  El presente: de qué habla realmente
   { verbs: ['ganar', 'gastar', 'ahorrar', 'firmar', 'reservar'] },
   { practice: true },
-  { lesson: 'nt-origen-a1' },                           // noti  De dónde eres y cuántos años tienes
   { lesson: 'gr-pronombre-se-a1' },                     // gram  El pronombre se: usos reflexivos
   { verbs: ['alquilar', 'olvidar', 'explicar', 'enseñar', 'aceptar'] },
-  { lesson: 'fn-establecer-comunicacion-a1' },          // func  Empezar y terminar una conversación
   { lesson: 'gr-relativo-que-a1' },                     // gram  El relativo que: una palabra, tres trabajos
   { practice: true },
   { verbs: ['intentar', 'decidir', 'permitir', 'recibir', 'partir'] },
@@ -97,7 +110,6 @@ window.COURSE = [
   { lesson: 'nt-localizacion-a1' },                     // noti  Dónde están las cosas
   { practice: true },
   { lesson: 'gr-demostrativos-distribucion-a1' },       // gram  Los demostrativos: este, ese, aquel — y dónde van
-  { lesson: 'fn-identificar-a1' },                      // func  Identificar: qué es y quién es
   { lesson: 'gr-interrogativos-a1' },                   // gram  Los interrogativos: qué, quién, cuánto, dónde, cómo
   { verbs: ['llevarse'] },
   { lesson: 'nt-existencia-a1' },                       // noti  Hay, está, y entrar o salir
@@ -127,7 +139,7 @@ window.COURSE = [
   { lesson: 'nt-valor-precio-a1' },                     // noti  Precio y tamaño
   { lesson: 'gr-oraciones-actitud-hablante-a1' },       // gram  Tipos de oración según la actitud del hablante
 
-  /* ---- A2 · 105 days · starts at index 90 ------------------------------- */
+  /* ---- A2 · 104 days · starts at index 94 ------------------------------- */
   { verbs: ['mejorar', 'empeorar', 'aumentar', 'evitar', 'crear'] },
   { lesson: 'preterito' },                              // gram  Pretérito (Preterite)
   { lesson: 'imperfecto' },                             // gram  Imperfecto (Imperfect)
@@ -231,10 +243,9 @@ window.COURSE = [
   { lesson: 'gn-presentacion-publica-a2' },             // genr  Una presentación pública breve
   { practice: true },
   { lesson: 'nt-anterioridad-a2' },                     // noti  Ya, todavía no, y el principio y el fin
-  { lesson: 'fn-responder-saludo-a2' },                 // func  Saludar: en persona y por escrito
   { lesson: 'gr-verbos-predicativos-tipos-a2' },        // gram  Verbos que funcionan al revés: encantar, doler
 
-  /* ---- B1 · 189 days · starts at index 195 ------------------------------- */
+  /* ---- B1 · 189 days · starts at index 198 ------------------------------- */
   { lesson: 'futuro' },                                 // gram  El futuro: forma, predicción y conjetura
   { lesson: 'condicional' },                            // gram  El condicional: forma, cortesía y modestia
   { lesson: 'gr-presente-subjuntivo-b1' },              // gram  El subjuntivo: cómo se forma y cuándo aparece
@@ -425,7 +436,7 @@ window.COURSE = [
   { lesson: 'gr-complementos-modificadores-b1' },       // gram  La chica de los ojos azules, la construcción del edificio
   { lesson: 'fn-tranquilizar-consolar-b1' },            // func  Tranquilizar y consolar
 
-  /* ---- B2 · 169 days · starts at index 384 ------------------------------- */
+  /* ---- B2 · 169 days · starts at index 387 ------------------------------- */
   { lesson: 'gr-que-explicativo-b2' },                  // gram  "Que" explicativo: la coma que añade, no que elige
   { lesson: 'gr-adverbios-enunciacion-b2' },            // gram  Adverbios de enunciación: comentar sobre las propias palab
   { lesson: 'gr-adverbios-frecuencia-topico-b2' },      // gram  Adverbios de frecuencia y el adverbio-tópico
@@ -596,7 +607,7 @@ window.COURSE = [
   { practice: true },
   { lesson: 'nt-visibilidad-vision-b2' },               // noti  Visibilidad y visión: a simple vista, distinguir, de lejos
 
-  /* ---- C1 · 229 days · starts at index 553 ------------------------------- */
+  /* ---- C1 · 229 days · starts at index 556 ------------------------------- */
   { lesson: 'gr-clases-adjetivos-c1' },                 // gram  Cuyo, los adjetivos de color compuestos y el relacional qu
   { lesson: 'gr-articulo-definido-c1' },                // gram  El artículo definido en C1: valor enfático y sustantivador
   { lesson: 'gr-articulo-indefinido-c1' },              // gram  El artículo indefinido en C1: convertir un nombre propio e
@@ -829,4 +840,4 @@ window.COURSE = [
 ];
 
 // Where each band starts. A band is a slice of one course, not a pool.
-window.COURSE_BANDS = {"A1":0,"A2":90,"B1":195,"B2":384,"C1":553};
+window.COURSE_BANDS = {"A1":0,"A2":94,"B1":198,"B2":387,"C1":556};

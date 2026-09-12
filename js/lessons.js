@@ -136,6 +136,7 @@
     var irr = irregularsFor(tk);
     return {
       id: tk, level: level, title: doc.title, summary: doc.summary,
+      canDo: doc.canDo || null,          // optional; see data/grammar-docs.js
       sections: sections,
       pitfalls: doc.irregulars || [],
       examples: doc.examples || [],
@@ -445,6 +446,15 @@
         id: head.id, strand: head.strand, cefr: head.cefr, level: head.level,
         theme: head.theme, title: m.title, summary: m.summary || head.summary,
         order: head.order, mergedFrom: m.ids.slice(),
+        /* The head's course-facing metadata travels with it. These describe
+         * where the lesson sits for a LEARNER — what they can do after it, the
+         * exchange that opens it, what it upgrades, what it links down to — so
+         * dropping them on merge would silently strip the framing from exactly
+         * the lessons that carry two halves and need it most. `status` too:
+         * merging a reference lesson must not quietly return it to the path. */
+        canDo: head.canDo || null, moment: head.moment || null,
+        upgrades: head.upgrades || null, status: head.status || null,
+        deeper: concat([], head.deeper),
         pcic: [], sections: [], exponents: [], contrasts: [], pitfalls: [],
         examples: [], probes: [], recall: []
       };

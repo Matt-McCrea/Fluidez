@@ -22,6 +22,139 @@
  * ========================================================================== */
 window.STRAND_LESSONS = [
 
+/* ---- Unit 1 · Meet someone ------------------------------------------------
+ * The three lessons authored for the course rather than harvested from the
+ * PCIC. The dialogue opens the unit, the thanks lesson fills a genuine hole
+ * (gracias had no lesson before B2), and the task closes the unit by asking
+ * the learner to do the whole thing at once.
+ * ------------------------------------------------------------------------ */
+{
+  id: 'dlg-presentarse', strand: 'dialogue', cefr: 'A1', level: 1, theme: null,
+  title: 'Dos personas se conocen',
+  canDo: 'follow a first conversation between two people, and know what each line is doing',
+  summary: 'Before any grammar: a whole first meeting, eleven lines long. You are not expected to produce any of it yet — read it, hear the shape, and notice that almost every line is four words or fewer. Everything this unit teaches is somewhere in here.',
+  sections: [
+    { h: 'Read it first', html: 'Do not study this. Read it twice and move on. The point is to see what a real first conversation costs in Spanish — which is very little. You will come back to every line of it over the next nine days.' },
+    { h: 'What each speaker is doing', html: '<ul><li><i>Hola, buenos días</i> — opens the channel. Either word alone works.</li><li><i>¿Cómo te llamas?</i> — asks the name. Literally "what do you call yourself?"</li><li><i>Me llamo Ana</i> — gives it. Same verb, bounced back.</li><li><i>¿Y tú?</i> — two words that return any question. You will use this constantly.</li><li><i>¿De dónde eres?</i> — asks origin.</li><li><i>Encantado / encantada</i> — "pleased to meet you", and it changes ending depending on who is speaking.</li></ul>' },
+    { h: 'The one thing to notice', html: 'Nobody says <i>yo</i>. Spanish puts the person into the verb ending — <i>soy</i> already means "I am" — so the pronoun only appears for contrast. <i>Me llamo Ana</i>, not <i>Yo me llamo Ana</i>.' }
+  ],
+  exponents: [
+    { es: 'Hola, buenos días.', en: 'Hello, good morning.', register: 'neutral', note: 'safe at any hour before lunch' },
+    { es: '¿Cómo te llamas?', en: "What's your name?", register: 'coloquial', note: 'tú form — someone your age, informal' },
+    { es: 'Me llamo Ana. ¿Y tú?', en: "I'm Ana. And you?", register: 'neutral', note: 'the bounce-back is expected, not optional' },
+    { es: 'Soy de Irlanda. ¿De dónde eres?', en: "I'm from Ireland. Where are you from?", register: 'neutral', note: null },
+    { es: 'Encantado. / Encantada.', en: 'Pleased to meet you.', register: 'neutral', note: 'ends -o if you are male, -a if female' },
+    { es: 'Mucho gusto, Ana.', en: 'Nice to meet you, Ana.', register: 'formal', note: 'a shade more formal than encantado' }
+  ],
+  examples: [
+    { es: '—Hola, buenos días. —Buenos días.', en: '—Hello, good morning. —Good morning.' },
+    { es: '—¿Cómo te llamas? —Me llamo Ana. ¿Y tú?', en: "—What's your name? —I'm Ana. And you?" },
+    { es: '—Me llamo Tom. —Encantada, Tom.', en: "—I'm Tom. —Pleased to meet you, Tom." },
+    { es: '—¿De dónde eres, Tom? —Soy de Irlanda. ¿Y tú?', en: '—Where are you from, Tom? —I\'m from Ireland. And you?' },
+    { es: '—Soy de aquí, de Madrid. —¡Qué bien!', en: "—I'm from here, from Madrid. —How nice!" },
+    { es: '—Bueno, hasta luego. —Adiós, Tom.', en: '—Right, see you later. —Bye, Tom.' }
+  ],
+  probes: [
+    { id: 'p:dlg-presentarse-1', kind: 'mcq',
+      q: 'Ana te pregunta "¿cómo te llamas?". ¿Qué respondes?',
+      options: ['Me llamo Tom.', 'Te llamas Tom.', 'Se llama Tom.'], answer: 0 },
+    { id: 'p:dlg-presentarse-2', kind: 'mcq',
+      q: '¿Por qué NO se dice normalmente "Yo me llamo Ana"?',
+      options: ['Porque la terminación del verbo ya dice quién es',
+                'Porque "yo" no existe en español',
+                'Porque "llamarse" no admite pronombre'], answer: 0 },
+    { id: 'p:dlg-presentarse-3', kind: 'cloze',
+      text: '—Me llamo Ana. ¿___ tú?', accept: ['y', 'Y'] },
+    { id: 'p:dlg-presentarse-4', kind: 'recall',
+      front: 'Two words that bounce any question back to the other person',
+      back: '¿Y tú?' }
+  ]
+},
+
+{
+  id: 'fn-agradecer-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  title: 'Dar las gracias',
+  canDo: 'thank someone and reply when they thank you',
+  summary: 'Gracias is the easy half. The half learners get wrong is the reply: English "you\'re welcome" maps onto at least three Spanish answers, and saying nothing at all — which is what most beginners do — reads as colder than it does in English.',
+  sections: [
+    { h: 'Saying it', html: '<i>Gracias</i> on its own is complete and always enough. <i>Muchas gracias</i> raises it; <i>muchísimas gracias</i> raises it again. You cannot say <i>muy gracias</i> — the word that intensifies a noun here is <i>mucho</i>, not <i>muy</i>.' },
+    { h: 'Naming what for', html: 'Add <i>por</i> plus the thing: <i>gracias por la ayuda</i>, <i>gracias por todo</i>. With a verb, <i>por</i> takes the infinitive — <i>gracias por venir</i>, not <i>por vienes</i>.' },
+    { h: 'Answering — the part to actually learn', html: '<i>De nada</i> is the neutral default and never wrong. <i>Nada, nada</i> waves it off between friends. <i>No hay de qué</i> is a shade more formal. In Spain you will also hear <i>a ti</i> — "no, thank <i>you</i>" — when the thanks should really run the other way.' }
+  ],
+  exponents: [
+    { es: 'Gracias.', en: 'Thanks.', register: 'neutral', note: 'complete on its own' },
+    { es: 'Muchas gracias.', en: 'Thank you very much.', register: 'neutral', note: 'never muy gracias' },
+    { es: 'Gracias por la ayuda.', en: 'Thanks for the help.', register: 'neutral', note: 'por + the thing' },
+    { es: 'De nada.', en: "You're welcome.", register: 'neutral', note: 'the safe default reply' },
+    { es: 'Nada, nada.', en: "Don't mention it.", register: 'coloquial', note: 'waving it off, among friends' },
+    { es: 'No hay de qué.', en: 'Not at all.', register: 'formal', note: 'a shade more formal than de nada' },
+    { es: 'Muy amable, gracias.', en: "That's very kind, thank you.", register: 'formal', note: 'to a stranger who has helped you' }
+  ],
+  examples: [
+    { es: '—Aquí tienes el café. —Gracias. —De nada.', en: '—Here\'s your coffee. —Thanks. —You\'re welcome.' },
+    { es: 'Muchas gracias por venir.', en: 'Thank you very much for coming.' },
+    { es: '—Gracias por todo. —No hay de qué.', en: '—Thanks for everything. —Not at all.' },
+    { es: '—Muchas gracias. —A ti.', en: '—Thank you very much. —No, thank you.' }
+  ],
+  probes: [
+    { id: 'p:fn-agradecer-a1-1', kind: 'mcq',
+      q: '¿Cuál es correcto?',
+      options: ['Muchas gracias.', 'Muy gracias.', 'Mucho gracias.'], answer: 0 },
+    { id: 'p:fn-agradecer-a1-2', kind: 'mcq',
+      q: 'Alguien te dice "gracias". ¿Cuál es la respuesta neutra que siempre funciona?',
+      options: ['De nada.', 'Por favor.', 'Perdón.'], answer: 0 },
+    { id: 'p:fn-agradecer-a1-3', kind: 'cloze',
+      text: 'Gracias ___ la ayuda.', accept: ['por'] },
+    { id: 'p:fn-agradecer-a1-4', kind: 'recall',
+      front: 'Reply to gracias that waves it off between friends',
+      back: 'Nada, nada.' }
+  ]
+},
+
+{
+  id: 'task-presentarse', strand: 'task', cefr: 'A1', level: 1, theme: null,
+  title: 'Preséntate',
+  canDo: 'hold a whole first conversation on your own — greet, name, origin, thanks, goodbye',
+  summary: 'No new material. Everything you need is in the nine days behind you. Write both halves of a first meeting between you and someone you have just met, then say your half out loud.',
+  sections: [
+    { h: 'What to write', html: 'Eight to twelve lines, both speakers. It must contain: a greeting, both names asked and given, where each of you is from, one <i>gracias</i> with its reply, and a goodbye. Keep every line short — the model below is 47 words for eleven lines.' },
+    { h: 'Then say it', html: 'Read your half aloud twice. The second time, cover the text. The aim is not memorisation — it is finding out which of the six phrases you actually have and which three you still have to look up.' },
+    { h: 'If you get stuck', html: 'Go back to <i>Dos personas se conocen</i> from day one. It contains every move this task asks for, and rereading it is not cheating.' }
+  ],
+  model: {
+    title: 'one way of doing it',
+    text: '<p>—Hola, buenas tardes.<br>—Buenas tardes.<br>—Me llamo Clara. ¿Y tú?<br>—Me llamo Yusuf. Encantado.<br>—Encantada, Yusuf. ¿De dónde eres?<br>—Soy de Turquía, de Esmirna. ¿Y tú?<br>—Soy de aquí, de Valencia.<br>—¡Qué bien! Toma, tu café.<br>—Ah, muchas gracias.<br>—De nada. Hasta luego, Yusuf.<br>—Adiós, Clara.</p>'
+  },
+  checklist: [
+    'Both people are greeted — not just one.',
+    'Both names are asked for AND given.',
+    'Both origins appear, with <i>ser de</i> or a nationality.',
+    'There is one <i>gracias</i> and a reply to it.',
+    'It ends — somebody says goodbye.',
+    'No line is longer than eight words.',
+    'You wrote <i>me llamo</i>, not <i>yo me llamo</i>.'
+  ],
+  examples: [
+    { es: '—¿Cómo te llamas? —Me llamo Yusuf. Encantado.', en: "—What's your name? —I'm Yusuf. Pleased to meet you." },
+    { es: '—¿De dónde eres? —Soy de Turquía. ¿Y tú?', en: "—Where are you from? —I'm from Turkey. And you?" },
+    { es: '—Muchas gracias. —De nada. Hasta luego.', en: '—Thank you very much. —You\'re welcome. See you later.' }
+  ],
+  probes: [
+    { id: 'p:task-presentarse-1', kind: 'mcq',
+      q: 'Eres una mujer. ¿Cómo dices "pleased to meet you"?',
+      options: ['Encantada.', 'Encantado.', 'Encantas.'], answer: 0 },
+    { id: 'p:task-presentarse-2', kind: 'mcq',
+      q: '¿Cuál de estas frases NO pertenece a una primera conversación?',
+      options: ['¿Cómo te llamas?', '¿De dónde eres?', '¿Cuánto costó tu casa?'], answer: 2 },
+    { id: 'p:task-presentarse-3', kind: 'cloze',
+      text: '—Muchas gracias. —De ___.', accept: ['nada'] },
+    { id: 'p:task-presentarse-4', kind: 'recall',
+      front: 'How a woman says "pleased to meet you"',
+      back: 'Encantada' }
+  ]
+},
+
+
 {
   id: 'fn-acuerdo-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:252', 'funciones:B2:253', 'funciones:B2:254', 'funciones:B2:257',
@@ -199,6 +332,9 @@ window.STRAND_LESSONS = [
   id: 'fn-identificar-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:1', 'funciones:A1:2', 'funciones:A1:3', 'funciones:A1:4', 'funciones:A1:7', 'funciones:A1:8'],
   title: 'Identificar',
+  canDo: 'say who you are, and name the things around you',
+  moment: [{ es: '—¿María Sánchez?', en: '—María Sánchez?' },
+           { es: '—Sí, soy yo.', en: "—Yes, that's me." }],
   summary: 'Naming yourself, and pointing out the people and things around you. The two moves feel similar but work differently: a full sentence like "Yo soy Laura" stands on its own, while "Aquel diccionario" only makes sense next to a pointing hand — it needs the room, not just the words.',
   sections: [
     { h: 'Saying who you are', html: 'A full sentence identifies without help: <i>Yo soy Laura</i>, <i>Daniel trabaja en un hospital</i>. These work on the phone or in writing — nobody needs to be looking at you.' },
@@ -628,6 +764,9 @@ window.STRAND_LESSONS = [
   id: 'fn-establecer-comunicacion-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:418', 'funciones:A1:419', 'funciones:A1:420', 'funciones:A1:421', 'funciones:A1:422', 'funciones:A1:423', 'funciones:A1:424'],
   title: 'Establecer la comunicación',
+  canDo: "get someone's attention, and close a conversation instead of just stopping",
+  moment: [{ es: '—¡Perdón! ¿Tiene hora?', en: '—Excuse me! Do you have the time?' },
+           { es: '—Sí, son las tres. —Gracias, hasta luego.', en: '—Yes, three o\'clock. —Thanks, bye.' }],
   summary: "Before you can say anything, you need the other person's attention — and once called, you need a way to show you heard. Both halves are short, almost reflexive phrases (this lesson also covers the PCIC's sibling leaf, reaccionar, since they share one subsection).",
   sections: [
     { h: 'Getting attention', html: 'Say the name (<i>¡María!</i>) or a bare attention-getter (<i>¡Eh!</i>, <i>Perdón</i>, <i>Por favor</i>) to open a channel before your actual message. Eye contact and a small wave do the same job with no words at all.' },
@@ -2021,10 +2160,17 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-responder-saludo-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  /* Moved to A1 Unit 1 (day 3). cefr/level follow it: `level` gates how hard
+   * the day's passage and cloze are, and a day-3 learner cannot take level 2.
+   * The `pcic` ids below stay exactly as harvested — provenance is a record of
+   * where the content came from, not a claim about when it should be taught. */
+  id: 'fn-responder-saludo-a2', strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A2:354', 'funciones:A2:355', 'funciones:A2:356'],
   title: 'Responder a un saludo',
-  summary: 'A2 responses to "how are you" all bounce the question back — the shape (adjective, gracias, ¿y tú?) is fixed enough that you can answer on autopilot and still sound natural.',
+  canDo: 'greet someone, and answer properly when they greet you',
+  moment: [{ es: '—Hola, ¿qué tal?', en: '—Hi, how are you?' },
+           { es: '—Bien, ¿y tú?', en: "—Good, and you?" }],
+  summary: 'Responses to "how are you" all bounce the question back — the shape (adjective, gracias, ¿y tú?) is fixed enough that you can answer on autopilot and still sound natural. Learn the bounce on day one and you never have to think about it again.',
   sections: [
     { h: 'Always bounce it back', html: 'A response to "how are you" is not complete without returning the question — <i>¿y tú?/¿y usted?</i> is expected, not optional politeness.' },
     { h: 'Match their register', html: 'Answer usted with usted, tú with tú — the greeting sets the register for the whole exchange, not just the question.' }
@@ -3721,6 +3867,9 @@ window.STRAND_LESSONS = [
   id: 'nt-origen-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:115', 'nociones_generales:A1:116', 'nociones_generales:A1:117'],
   title: 'Origen: ser + nacionalidad, ser de',
+  canDo: 'say where you are from, and ask someone else',
+  moment: [{ es: '—¿De dónde eres?', en: '—Where are you from?' },
+           { es: '—Soy de Irlanda. ¿Y tú?', en: "—I'm from Ireland. And you?" }],
   summary: 'Two constructions cover where someone is from — ser + a nationality adjective states it as a quality, ser de + place states it as a source — and only the second one works for a city with no adjective of its own.',
   sections: [
     { h: 'Ser + nationality adjective', html: '<i>Es cubano</i> treats the origin as a quality, agreeing like any adjective: <i>es cubana</i> for a woman, <i>son cubanos</i> for a group.' },
@@ -14634,6 +14783,7 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1287', 'funciones:B1:1288', 'funciones:B1:1290', 'funciones:B1:1293', 'funciones:B1:1294',
          'funciones:B1:1301', 'funciones:B1:1302', 'funciones:B1:1303', 'funciones:B1:1304'],
   title: 'Saludar y responder: la lengua escrita añade un registro',
+  upgrades: 'fn-responder-saludo-a2',
   summary: 'Spoken greetings barely change from A2, but B1 adds the written register — a letter or email opens with its own fixed formulas, entirely different from anything said aloud, and choosing the wrong one instantly signals a non-native or careless writer.',
   sections: [
     { h: 'Spoken: the familiar questions', html: '<i>¿Qué tal?</i>, <i>¿Cómo estás?</i> remain the everyday spoken greeting — nothing new in form, but expected fluently by B1.' },
@@ -19994,6 +20144,7 @@ window.STRAND_LESSONS = [
   id: 'fn-agradecer-b2', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:1360', 'funciones:B2:1361', 'funciones:B2:1362', 'funciones:B2:1363'],
   title: 'Agradecer: no sé cómo agradecértelo',
+  upgrades: 'fn-agradecer-a1',
   summary: '"No sé cómo agradecértelo" claims gratitude too large for ordinary words to capture — a hyperbolic move that "gracias por" and "te lo agradezco" state plainly, without that same rhetorical excess.',
   sections: [
     { h: 'Gracias por + SN/infinitivo compuesto', html: 'Names specifically what you are grateful for: <i>Muchísimas gracias por haber venido tan rápido.</i>' },
