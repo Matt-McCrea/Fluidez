@@ -1145,236 +1145,320 @@ window.COURSE = [
     ] },
 
   /* ---- C1 · 229 days · starts at index 556 ------------------------------- */
-  { band: 'C1' },
-  { lesson: 'gr-clases-adjetivos-c1' },                 // gram  Cuyo, los adjetivos de color compuestos y el relacional qu
-  { lesson: 'gr-articulo-definido-c1' },                // gram  El artículo definido en C1: valor enfático y sustantivador
-  { lesson: 'gr-articulo-indefinido-c1' },              // gram  El artículo indefinido en C1: convertir un nombre propio e
-  { lesson: 'gr-genero-sustantivos-c1' },               // gram  El género que cambia el significado: el fruto / la fruta
-  { lesson: 'gr-numero-sustantivos-c1' },               // gram  El número en C1: dónde se mueve el acento, qué cambia de s
-  { practice: true },
-  { lesson: 'gr-demostrativos-c1' },                    // gram  Los demostrativos en C1: proximidad discursiva, condescend
-  { lesson: 'gr-exclamativos-c1' },                     // gram  Los exclamativos en C1: cuánto + valorativo, dónde, y el o
-  { lesson: 'gr-posesivos-c1' },                        // gram  Los posesivos en C1: cuantificador, sufrimiento, y el "mío
-  { lesson: 'gr-nombres-escuetos-c1' },                 // gram  Nombres escuetos: sin artículo, aunque el verbo lo pida
-  { lesson: 'nt-acabado-c1' },                          // noti  Acabado en C1: de "en bruto" a "metalizado"
-  { practice: true },
-  { lesson: 'fn-aceptar-rechazar-propuesta-c1' },       // func  Aceptar y rechazar propuestas en C1: "no te voy a decir qu
-  { lesson: 'gr-adverbios-conjuntivos-c1' },            // gram  Adverbios conjuntivos: matizar una coordinación sin ser un
-  { lesson: 'nt-accesibilidad-limpieza-c1' },           // noti  Accesibilidad y limpieza en C1: "obstruido" y "estar hecho
-  { lesson: 'dc-atenuacion-dialogica-c1' },             // disc  Atenuación dialógica: discrepar sin romper nada
-  { lesson: 'gn-argumentativa-c1' },                    // genr  Argumentar: de la cuestión polémica a la reserva final
-  { practice: true },
-  { lesson: 'fn-aconsejar-advertir-amenazar-c1' },      // func  Aconsejar, advertir y amenazar en C1: "allá tú" cambia de 
-  { lesson: 'nt-aceptabilidad-c1' },                    // noti  Aceptabilidad en C1: de "razonable" a "disparate", y "no p
-  { lesson: 'nt-acontecimiento-c1' },                   // noti  Acontecimiento en C1: de la odisea al hecho aislado
-  { lesson: 'fn-afecto-sensaciones-c1' },               // func  Afecto y sensaciones físicas en C1: "estoy hecho polvo" y 
-  { lesson: 'gr-adverbios-externos-c1' },               // gram  Adverbios externos al dictum: el punto de vista que envuel
-  { practice: true },
-  { lesson: 'nt-adecuacion-c1' },                       // noti  Adecuación en C1: "guardar las formas" y "estar contraindi
-  { lesson: 'nt-anterioridad-c1' },                     // noti  Anterioridad en C1: precedentes, antepasados y "de anteman
-  { lesson: 'fn-agradecer-pesame-c1' },                 // func  Agradecer y dar el pésame en C1: "¿qué haría yo sin ti?" y
-  { lesson: 'nt-anticipacion-c1' },                     // noti  Anticipación en C1: prever, predecir y "por anticipado"
-  { lesson: 'dc-atenuacion-c1' },                       // disc  Atenuación: decirlo sin señalar a nadie
-  { practice: true },
-  { lesson: 'gn-narrativa-c1' },                        // genr  Contar una anécdota: las cinco etapas
-  { lesson: 'fn-arrepentimiento-verguenza-c1' },        // func  Arrepentimiento y vergüenza en C1: "si volviera a nacer...
-  { lesson: 'gr-adverbios-nucleares-c1' },              // gram  Adverbios nucleares en C1: dónde va el modo, y por qué
-  { lesson: 'nt-atractivo-calidad-c1' },                // noti  Atractivo y calidad en C1: de "apuesto" a "vulgar", de "de
-  { lesson: 'nt-audibilidad-audicion-c1' },             // noti  Audibilidad y audición en C1: de "susurro" a "dar gritos"
-  { practice: true },
-  { lesson: 'fn-certeza-evidencia-c1' },                // func  Certeza y su ausencia en C1: de "sin lugar a dudas" a "jur
-  { lesson: 'nt-aumento-disminucion-c1' },              // noti  Aumento y disminución en C1: de "ir en aumento" a "dispara
-  { lesson: 'gr-complementos-adjetival-c1' },           // gram  Complementos del adjetivo en C1: interrogativas, superlati
-  { lesson: 'nt-cambio-c1' },                           // noti  Cambio en C1: transiciones, transformaciones y verbos deri
-  { lesson: 'fn-confirmar-informacion-previa-c1' },     // func  Confirmar información previa en C1: "así es", "¡y tanto!" 
-  { practice: true },
-  { lesson: 'nt-cantidad-numerica-c1' },                // noti  Cantidad numérica en C1: calcular "por lo alto" o "por lo 
-  { lesson: 'dc-estilo-indirecto-c1' },                 // disc  Estilo indirecto: el verbo que interpreta
-  { lesson: 'gn-descriptiva-personas-c1' },             // genr  Describir a una persona: anclar, detallar, relacionar
-  { lesson: 'fn-conocimiento-desconocimiento-c1' },     // func  Conocimiento y desconocimiento en C1: de "¿te has enterado
-  { lesson: 'nt-cantidad-relativa-c1' },                // noti  Cantidad relativa en C1: colectivos, porciones y cantidade
-  { practice: true },
-  { lesson: 'gr-complementos-nominal-c1' },             // gram  Complementos del nombre en C1: la ambigüedad como norma
-  { lesson: 'nt-capacidad-competencia-c1' },            // noti  Capacidad y competencia en C1: ser "un hacha" o "un manaza
-  { lesson: 'fn-dar-informacion-c1' },                  // func  Dar información en C1: de las subordinadas de lugar a "¡¿C
-  { lesson: 'nt-certeza-incertidumbre-c1' },            // noti  Certeza e incertidumbre en C1: de "cabe la posibilidad" a 
-  { lesson: 'nt-color-c1' },                            // noti  Color en C1: matices, gamas y verbos que cambian el color
-  { practice: true },
-  { lesson: 'fn-orden-instruccion-c1' },                // func  Dar una orden en C1: de "tú te callas" a la orden encubier
-  { lesson: 'gr-complementos-verbales-c1' },            // gram  Complementos verbales en C1: leísmo, laísmo, loísmo y el p
-  { lesson: 'nt-conformidad-c1' },                      // noti  Conformidad en C1: "hacer la vista gorda" y "no quedar más
-  { lesson: 'dc-focalizacion-c1' },                     // disc  Focalizar en C1: el artículo que exclama, la dislocación q
-  { lesson: 'gn-descriptiva-lugares-c1' },              // genr  Describir un lugar: de fuera adentro, con un porqué
-  { practice: true },
-  { lesson: 'fn-decepcion-resignacion-c1' },            // func  Decepción y resignación en C1: "¡vaya, hombre!" y "que sea
-  { lesson: 'nt-consistencia-resistencia-c1' },         // noti  Consistencia y resistencia en C1: "fuerte como un roble", 
-  { lesson: 'nt-continuacion-c1' },                     // noti  Continuación en C1: retomar, perseverar y "sin cesar"
-  { lesson: 'fn-deseos-planes-c1' },                    // func  Deseos y planes en C1: "¡quién tuviera...!" y "estoy por..
-  { lesson: 'gr-concordancia-oracional-c1' },           // gram  Concordancia ad sensum en C1: cuando el sentido gana a la 
-  { practice: true },
-  { lesson: 'nt-correccion-c1' },                       // noti  Corrección en C1: de "un acierto" a "a la perfección"
-  { lesson: 'fn-destacar-silencio-tema-cierre-c1' },    // func  Destacar, pedir silencio, cambiar de tema y cerrar en C1
-  { lesson: 'nt-cualidad-general-c1' },                 // noti  Cualidad general en C1: naturaleza, apariencia y composici
-  { lesson: 'nt-disponibilidad-c1' },                   // noti  Disponibilidad en C1: desde "a mano" hasta "no estar para 
-  { lesson: 'dc-deixis-c1' },                           // disc  La deixis en C1: el pronombre que desambigua, el que despe
-  { practice: true },
-  { lesson: 'gn-descriptiva-objetos-c1' },              // genr  Describir un objeto: del hecho general a la vivencia propi
-  { lesson: 'fn-disculparse-responder-c1' },            // func  Disculparse y responder en C1: "mil perdones" y "por esta 
-  { lesson: 'gr-cuantificadores-propios-c1' },          // gram  Cuantificadores propios en C1: cuanto, cada uno, cualquier
-  { lesson: 'nt-distancia-c1' },                        // noti  Distancia en C1: de "manzanas" a "acortar distancias"
-  { lesson: 'nt-distancia-velocidad-c1' },              // noti  Distancia y velocidad en C1: del "año luz" al "exceso de v
-  { practice: true },
-  { lesson: 'fn-empatia-alivio-esperanza-c1' },         // func  Empatía, alivio y esperanza en C1: "me pongo en tu lugar" 
-  { lesson: 'nt-duracion-transcurso-c1' },              // noti  Duración en C1: de lo "fugaz" a lo "perpetuo"
-  { lesson: 'gr-imperativo-c1' },                       // gram  El imperativo en C1: cuando no manda nada
-  { lesson: 'fn-escepticismo-contraargumento-c1' },     // func  Escepticismo y contraargumento en C1: "no te falta razón, 
-  { lesson: 'nt-edad-vejez-c1' },                       // noti  Edad y vejez en C1: novato, veterano y "no pasar los años 
-  { practice: true },
-  { lesson: 'dc-mantenimiento-referente-c1' },          // disc  Mantener el referente: proformas globalizadoras
-  { lesson: 'gn-argumentativa-conectores-c1' },         // genr  El repertorio del ensayo argumentativo
-  { lesson: 'nt-evaluacion-general-c1' },               // noti  Evaluación general en C1: de "pasable" a "catastrófico"
-  { lesson: 'fn-expresar-acuerdo-c1' },                 // func  Expresar acuerdo en C1: de "algo de razón tienes" a "¡exac
-  { lesson: 'nt-existencia-inexistencia-c1' },          // noti  Existencia e inexistencia en C1: nacer, formarse y dejar d
-  { practice: true },
-  { lesson: 'gr-nucleo-verbal-c1' },                    // gram  El núcleo del sintagma verbal en C1: pasivas, perífrasis y
-  { lesson: 'nt-exito-logro-c1' },                      // noti  Éxito y logro en C1: de "estar en pleno auge" a "ganar por
-  { lesson: 'fn-aprobacion-desaprobacion-c1' },         // func  Expresar aprobación y desaprobación en C1: de "apruebo" a 
-  { lesson: 'nt-expresion-verbal-c1' },                 // noti  Expresión verbal en C1: de "dejar caer" a "poner algo en c
-  { lesson: 'fn-expresar-desacuerdo-c1' },              // func  Expresar desacuerdo en C1: de "no me convence" a "¡de eso 
-  { practice: true },
-  { lesson: 'nt-facilidad-c1' },                        // noti  Facilidad en C1: "fácil de entender" y los verbos que faci
-  { lesson: 'gr-pronombre-personal-c1' },               // gram  El pronombre personal en C1: desambiguar, personificar, la
-  { lesson: 'dc-reformuladores-c1' },                   // disc  Reformuladores: volver a decirlo mejor
-  { lesson: 'gn-trabajo-academico-c1' },                // genr  El trabajo académico: de lo general a lo no resuelto
-  { lesson: 'nt-finalizacion-c1' },                     // noti  Finalización en C1: caducar, vencer y "acabar por volverme
-  { practice: true },
-  { lesson: 'fn-habilidad-c1' },                        // func  Expresar habilidad en C1: de "soy un hacha" a "soy patoso 
-  { lesson: 'nt-formas-figuras-c1' },                   // noti  Formas y figuras en C1: de la "silueta" al "zigzag"
-  { lesson: 'nt-frecuencia-c1' },                       // noti  Frecuencia en C1: de "rara vez" a "el pan de cada día"
-  { lesson: 'fn-felicitar-despedirse-c1' },             // func  Felicitar y despedirse en C1: "estás de enhorabuena" y "si
-  { lesson: 'gr-formas-no-personales-c1' },             // gram  Formas no personales en C1: infinitivo, gerundio y partici
-  { practice: true },
-  { lesson: 'nt-generalidad-especificidad-c1' },        // noti  Generalidad y especificidad en C1: de "por lo general" a "
-  { lesson: 'fn-hipotesis-posibilidad-c1' },            // func  Formular hipótesis y expresar posibilidad en C1: "¿y si...
-  { lesson: 'nt-grado-c1' },                            // noti  Grado en C1: de "lo grande que es" a "por todo lo alto"
-  { lesson: 'dc-citas-encubiertas-c1' },                // disc  Citas encubiertas: decirlo sin responder de ello
-  { lesson: 'gn-expositiva-c1' },                       // genr  Exponer un tema: presentar, desarrollar, concluir
-  { practice: true },
-  { lesson: 'nt-humedad-sequedad-c1' },                 // noti  Humedad y sequedad en C1: "ponerse como una sopa" y cocina
-  { lesson: 'fn-gustos-aversion-c1' },                  // func  Gustos y aversión en C1: de "adoro" a "me da náuseas"
-  { lesson: 'gr-interrogativos-c1' },                   // gram  Los interrogativos en C1: cuándo se separan, cuándo se coo
-  { lesson: 'nt-importancia-c1' },                      // noti  Importancia en C1: de "trascendencia" a "importarle un pim
-  { lesson: 'fn-hartazgo-enfado-c1' },                  // func  Hartazgo y enfado en C1: "hasta la coronilla" y "de un hum
-  { practice: true },
-  { lesson: 'nt-inicio-c1' },                           // noti  Inicio en C1: de "dar comienzo" a "¡manos a la obra!"
-  { lesson: 'nt-interes-c1' },                          // noti  Interés en C1: de "apasionante" a "morirse de aburrimiento
-  { lesson: 'gr-relativos-c1' },                        // gram  Relativos en C1: el cual, quien, y el "que" que rechaza un
-  { lesson: 'fn-identificar-c1' },                      // func  Identificar en C1: "el que suscribe" y las hendidas "lo qu
-  { lesson: 'nt-localizacion-c1' },                     // noti  Localización en C1: ubicar, situar y "en paradero desconoc
-  { practice: true },
-  { lesson: 'dc-imperfecto-modal-c1' },                 // disc  El imperfecto que no habla del pasado
-  { lesson: 'gn-generos-escritos-c1' },                 // genr  Géneros escritos en C1: el informe extenso y la reseña pro
-  { lesson: 'nt-localizacion-futuro-c1' },              // noti  Localizar en el futuro en C1: "de un momento a otro" y "a 
-  { lesson: 'fn-introducir-relato-atencion-c1' },       // func  Introducir un relato y controlar la atención en C1: "¿me s
-  { lesson: 'nt-localizacion-pasado-c1' },              // noti  Localizar en el pasado en C1: eras, herencia y "en tiempos
-  { practice: true },
-  { lesson: 'gr-sub-adv-causales-c1' },                 // gram  Subordinadas causales en C1: énfasis con "porque" antepues
-  { lesson: 'fn-miedo-nerviosismo-c1' },                // func  Miedo y nerviosismo en C1: "el corazón en un puño" y "los 
-  { lesson: 'nt-localizacion-presente-c1' },            // noti  Localizar en el presente en C1: actualidad, tendencia y "e
-  { lesson: 'nt-movimiento-locuciones-c1' },            // noti  Locuciones de movimiento en C1: de "dar marcha atrás" a "i
-  { lesson: 'fn-obligacion-necesidad-c1' },             // func  Obligación y necesidad en C1: de "es mi obligación" a "bas
-  { practice: true },
-  { lesson: 'nt-materia-c1' },                          // noti  Materia en C1: de la seda al cartón piedra
-  { lesson: 'dc-indefinido-perfecto-c1' },              // disc  Indefinido o perfecto: acercar y alejar lo ocurrido
-  { lesson: 'gn-generos-orales-c1' },                   // genr  Géneros orales en C1: intervenir en tu especialidad
-  { lesson: 'gr-sub-adv-comparativas-c1' },             // gram  Subordinadas comparativas en C1: cuatro comparaciones con 
-  { lesson: 'nt-medidas-generales-tamano-c1' },         // noti  Medidas generales, talla y tamaño en C1: de "a ojo" a "gig
-  { practice: true },
-  { lesson: 'fn-pedir-confirmacion-c1' },               // func  Pedir confirmación en C1: de "¿a que sí?" a "tengo entendi
-  { lesson: 'nt-movimiento-estabilidad-sustantivos-c1' },// noti  Movimiento y estabilidad en C1: nombrar el tipo de movimie
-  { lesson: 'fn-favor-objetos-ayuda-c1' },              // func  Pedir favores, objetos y ayuda en C1: la misma escalera de
-  { lesson: 'nt-necesidad-obligacion-c1' },             // noti  Necesidad, contingencia y obligación en C1: de lo prescind
-  { lesson: 'gr-sub-adv-concesivas-c1' },               // gram  Subordinadas concesivas en C1: reduplicación universal, po
-  { practice: true },
-  { lesson: 'nt-normalidad-c1' },                       // noti  Normalidad en C1: de lo "convencional" a "un fuera de seri
-  { lesson: 'fn-pedir-informacion-c1' },                // func  Pedir información en C1: de "¿qué es lo que...?" a "¿me pe
-  { lesson: 'nt-olor-c1' },                             // noti  Olor en C1: de "fragancia" a "peste"
-  { lesson: 'dc-intensificacion-c1' },                  // disc  Intensificar en C1: sufijos, entonación suspendida, el "qu
-  { lesson: 'gn-carta-comercial-c1' },                  // genr  La carta comercial: atención, interés, deseo, acción
-  { practice: true },
-  { lesson: 'nt-orden-c1' },                            // noti  Orden en C1: series, secuencias y "por orden de prioridad"
-  { lesson: 'fn-pedir-dar-opinion-c1' },                // func  Pedir y dar opinión en C1: "a mi entender" y "en mi modest
-  { lesson: 'gr-sub-adv-condicionales-c1' },            // gram  Subordinadas condicionales en C1: registros, matices y la 
-  { lesson: 'nt-orientacion-direccion-c1' },            // noti  Orientación y dirección en C1: "con rumbo a" y "sin rumbo 
-  { lesson: 'fn-permiso-prohibicion-c1' },              // func  Permiso y prohibición en C1: "eso ni se pregunta" y "digas
-  { practice: true },
-  { lesson: 'nt-origen-c1' },                           // noti  Origen en C1: la "semilla" y la "raíz" de las cosas
-  { lesson: 'nt-permanencia-c1' },                      // noti  Permanencia en C1: lo imborrable, lo inalterable y "conser
-  { lesson: 'gr-sub-adv-consecutivas-c1' },             // gram  Subordinadas consecutivas en C1: intensidad, suspensión y 
-  { lesson: 'fn-preferencia-indiferencia-c1' },         // func  Preferencia e indiferencia en C1: "no cambio... por nada d
-  { lesson: 'dc-valores-ilocutivos-c1' },               // disc  Lo que hace una pregunta en C1: saludo, crítica, eco recap
-  { practice: true },
-  { lesson: 'gn-carta-reclamacion-c1' },                // genr  La carta de reclamación: motivo, argumento, solución
-  { lesson: 'nt-peso-superficie-c1' },                  // noti  Peso y superficie en C1: de "peso bruto" a "de norte a sur
-  { lesson: 'nt-posicion-absoluta-c1' },                // noti  Posición absoluta en C1: inclinado, torcido, empinado
-  { lesson: 'fn-estado-animo-alegria-c1' },             // func  Preguntar por el ánimo y expresar alegría en C1: "estoy co
-  { lesson: 'nt-posicion-relativa-c1' },                // noti  Posición relativa en C1: "a la vuelta de la esquina" y "al
-  { practice: true },
-  { lesson: 'gr-sub-adv-lugar-modo-c1' },               // gram  Subordinadas de lugar y de modo en C1: "para donde" y el m
-  { lesson: 'fn-estado-general-cosas-c1' },             // func  Preguntar por el estado general de las cosas: la pregunta 
-  { lesson: 'nt-posterioridad-c1' },                    // noti  Posterioridad en C1: de "apenas" a "con posterioridad"
-  { lesson: 'nt-precision-claridad-c1' },               // noti  Precisión y claridad en C1: de "matemático" a "un lío"
-  { lesson: 'fn-proponer-ofrecer-confirmar-c1' },       // func  Proponer, ofrecer y confirmar en C1: "no puedes faltar" y 
-  { practice: true },
-  { lesson: 'dc-metaforas-c1' },                        // disc  Metáforas: el juicio escondido en la gramática
-  { lesson: 'gn-composicion-escrita-c1' },              // genr  La composición escrita: título, hoja de ruta, síntesis
-  { lesson: 'nt-presencia-ausencia-c1' },               // noti  Presencia y ausencia en C1: de "estar hasta arriba" a "cua
-  { lesson: 'gr-sub-adjetivas-relativo-c1' },           // gram  Subordinadas de relativo en C1: antecedentes especiales y 
-  { lesson: 'fn-recordar-olvidar-c1' },                 // func  Recordar y olvidar en C1: "lo tengo en la punta de la leng
-  { practice: true },
-  { lesson: 'nt-proporcion-c1' },                       // noti  Proporción en C1: fracciones, cuotas y "tres de cada diez"
-  { lesson: 'nt-puntualidad-singularidad-c1' },         // noti  Puntualidad y singularidad en C1: "por los pelos" y "sin p
-  { lesson: 'fn-repetir-orden-c1' },                    // func  Repetir una orden en C1: "¿cuántas veces tengo que repetir
-  { lesson: 'nt-realidad-ficcion-c1' },                 // noti  Realidad y ficción en C1: idealizar, disimular y volver a 
-  { lesson: 'gr-sub-adv-finales-c1' },                  // gram  Subordinadas finales en C1: cuando "para" deja de ser sobr
-  { practice: true },
-  { lesson: 'nt-referencias-generales-c1' },            // noti  Referencias temporales generales en C1: de "a primeros de 
-  { lesson: 'fn-reprochar-ofrecerse-c1' },              // func  Reprochar y ofrecerse en C1: "¿no te da vergüenza?" y "cue
-  { lesson: 'dc-negacion-c1' },                         // disc  Negación en C1: velada, diluida, obviada
-  { lesson: 'gn-presentacion-publica-c2' },             // genr  La presentación pública: el nivel más pulido
-  { lesson: 'nt-reflexion-conocimiento-c1' },           // noti  Reflexión y conocimiento en C1: "consultar con la almohada
-  { practice: true },
-  { lesson: 'fn-responder-saludo-dirigirse-c1' },       // func  Responder a un saludo y dirigirse a alguien en C1: "seguim
-  { lesson: 'nt-repeticion-c1' },                       // noti  Repetición en C1: recurrente, turnarse y "erre que erre"
-  { lesson: 'gr-sub-sustantivas-c1' },                  // gram  Subordinadas sustantivas en C1: cuándo el infinitivo reemp
-  { lesson: 'nt-retraso-c1' },                          // noti  Retraso en C1: atraso, demora y aplazamiento
-  { lesson: 'fn-responder-orden-peticion-c1' },         // func  Responder a una petición en C1: de "faltaría más" a "¡ni l
-  { practice: true },
-  { lesson: 'nt-sabor-c1' },                            // noti  Sabor en C1: catar, saborear y "estar para chuparse los de
-  { lesson: 'nt-simultaneidad-c1' },                    // noti  Simultaneidad en C1: "al tiempo que" y "en el mismo instan
-  { lesson: 'gr-sub-adv-temporales-c1' },               // gram  Subordinadas temporales en C1: "antes de" hiperbólico y el
-  { lesson: 'fn-saludar-c1' },                          // func  Saludar en C1: de "¿qué es de tu vida?" a "señora ministra
-  { lesson: 'dc-rematizacion-tematizacion-c1' },        // disc  Rematización y tematización en C1: el orden que hace la pr
-  { practice: true },
-  { lesson: 'gn-presentacion-publica-c1' },             // genr  La presentación pública: la estructura completa
-  { lesson: 'nt-temperatura-c1' },                      // noti  Temperatura en C1: de "un frío que pela" a "al rojo vivo"
-  { lesson: 'fn-sorpresa-admiracion-c1' },              // func  Sorpresa y admiración en C1: "me quedo con la boca abierta
-  { lesson: 'nt-textura-c1' },                          // noti  Textura en C1: rugoso, sedoso y "al tacto"
-  { lesson: 'nt-utilidad-uso-c1' },                     // noti  Utilidad y uso en C1: de "hacer uso de" a "ser un trasto"
-  { practice: true },
-  { lesson: 'gr-tiempos-indicativo-c1' },               // gram  Tiempos verbales de indicativo en C1: cada tiempo, su obje
-  { lesson: 'fn-tranquilizar-animar-c1' },              // func  Tranquilizar y animar en C1: "el no ya lo tienes" y "no es
-  { lesson: 'nt-valor-precio-c1' },                     // noti  Valor y precio en C1: de "estar tirado" a "precio de coste
-  { lesson: 'nt-movimiento-verbos-especificos-c1' },    // noti  Verbos de movimiento en C1: de "vagar" a "tambalearse"
-  { lesson: 'fn-tristeza-placer-c1' },                  // func  Tristeza y placer en C1: "se me rompe el corazón" y "me pa
-  { practice: true },
-  { lesson: 'dc-ironia-c1' },                           // disc  Indicadores de ironía: cómo se marca que no lo dices en se
-  { lesson: 'gn-resena-c1' },                           // genr  La reseña crítica
-  { lesson: 'nt-visibilidad-vision-c1' },               // noti  Visibilidad y visión en C1: "saltar a la vista" y "mirar p
-  { lesson: 'gr-tiempos-subjuntivo-c1' },               // gram  Tiempos verbales de subjuntivo en C1: lo que decide la neg
-  { lesson: 'fn-valorar-c1' },                          // func  Valorar en C1: "de pésimo gusto" y "resulta vergonzoso"
-  { practice: true },
-  { lesson: 'nt-volumen-capacidad-presion-c1' },        // noti  Volumen, capacidad y presión en C1: de "dar volumen al cab
+
+  { unit: 'c1-u55', band: 'C1', title: 'Idiom and the body',
+    goal: 'I can tell a story entirely in idiom, the way a native would.',
+    canDo: ['reach for the idiom before the neutral adjective',
+            'use the body to express state and reaction',
+            'hear when correct Spanish is Spanish nobody says'],
+    days: [
+      { lesson: 'fn-afecto-sensaciones-c1' },
+      { lesson: 'nt-temperatura-c1' },
+      { lesson: 'nt-sabor-c1' },
+      { lesson: 'nt-olor-c1' },
+      { practice: true },
+      { lesson: 'nt-textura-c1' },
+      { lesson: 'nt-visibilidad-vision-c1' },
+      { lesson: 'nt-audibilidad-audicion-c1' },
+      { lesson: 'fn-hartazgo-enfado-c1' },
+      { lesson: 'nt-color-c1' },
+      { lesson: 'nt-consistencia-resistencia-c1' },
+      { lesson: 'nt-humedad-sequedad-c1' },
+      { lesson: 'nt-acabado-c1' },
+      { lesson: 'nt-accesibilidad-limpieza-c1' },
+      { lesson: 'nt-edad-vejez-c1' },
+      { lesson: 'task-c1-idiom' },
+    ] },
+
+  { unit: 'c1-u56', band: 'C1', title: 'Irony and implicature',
+    goal: 'I can say the opposite of what I mean, and hear it done to me.',
+    canDo: ['mark irony so it is not mistaken for a lie',
+            'read an echo question and a rhetorical one',
+            'use the suspended ending'],
+    days: [
+      { lesson: 'dc-ironia-c1' },
+      { lesson: 'dc-valores-ilocutivos-c1' },
+      { lesson: 'dc-metaforas-c1' },
+      { lesson: 'dc-intensificacion-c1' },
+      { practice: true },
+      { lesson: 'fn-escepticismo-contraargumento-c1' },
+      { lesson: 'fn-sorpresa-admiracion-c1' },
+      { lesson: 'nt-atractivo-calidad-c1' },
+      { lesson: 'nt-normalidad-c1' },
+      { lesson: 'nt-interes-c1' },
+      { lesson: 'fn-estado-general-cosas-c1' },
+      { lesson: 'task-c1-ironia' },
+    ] },
+
+  { unit: 'c1-u57', band: 'C1', title: 'Saying it without owning it',
+    goal: 'I can criticise firmly without attributing the criticism to myself.',
+    canDo: ['attribute a claim to nobody',
+            'soften a disagreement without conceding it',
+            'negate by implication'],
+    days: [
+      { lesson: 'dc-citas-encubiertas-c1' },
+      { lesson: 'dc-atenuacion-c1' },
+      { lesson: 'dc-atenuacion-dialogica-c1' },
+      { lesson: 'dc-negacion-c1' },
+      { practice: true },
+      { lesson: 'dc-estilo-indirecto-c1' },
+      { lesson: 'dc-reformuladores-c1' },
+      { lesson: 'fn-expresar-desacuerdo-c1' },
+      { lesson: 'fn-expresar-acuerdo-c1' },
+      { lesson: 'fn-pedir-confirmacion-c1' },
+      { lesson: 'fn-confirmar-informacion-previa-c1' },
+      { lesson: 'fn-conocimiento-desconocimiento-c1' },
+      { lesson: 'nt-certeza-incertidumbre-c1' },
+      { lesson: 'nt-realidad-ficcion-c1' },
+      { lesson: 'task-c1-decirlo' },
+    ] },
+
+  { unit: 'c1-u58', band: 'C1', title: 'Institutional Spanish',
+    goal: 'I can write in institutional register without sounding like a form.',
+    canDo: ['nominalise where Spanish nominalises',
+            'carry a concession in the syntax',
+            'hold one register for a whole page'],
+    days: [
+      { lesson: 'gn-carta-comercial-c1' },
+      { lesson: 'gn-trabajo-academico-c1' },
+      { lesson: 'gn-generos-escritos-c1' },
+      { lesson: 'fn-saludar-c1' },
+      { practice: true },
+      { lesson: 'fn-felicitar-despedirse-c1' },
+      { lesson: 'fn-responder-saludo-dirigirse-c1' },
+      { lesson: 'gn-generos-orales-c1' },
+      { lesson: 'fn-pedir-informacion-c1' },
+      { lesson: 'fn-dar-informacion-c1' },
+      { lesson: 'gn-carta-reclamacion-c1' },
+      { lesson: 'gn-composicion-escrita-c1' },
+      { lesson: 'gn-presentacion-publica-c2' },
+      { lesson: 'fn-agradecer-pesame-c1' },
+      { lesson: 'fn-disculparse-responder-c1' },
+      { lesson: 'task-c1-formal' },
+    ] },
+
+  { unit: 'c1-u59', band: 'C1', title: 'The whole verb system at once',
+    goal: 'I can choose any tense or mood deliberately and say why.',
+    canDo: ['justify a tense by what it does, not by when it is',
+            'let the negation decide the mood',
+            'use the modal imperfect and the conjectural conditional'],
+    days: [
+      { lesson: 'gr-tiempos-indicativo-c1' },
+      { lesson: 'gr-tiempos-subjuntivo-c1' },
+      { lesson: 'dc-imperfecto-modal-c1' },
+      { lesson: 'dc-indefinido-perfecto-c1' },
+      { practice: true },
+      { lesson: 'gr-nucleo-verbal-c1' },
+      { lesson: 'gr-formas-no-personales-c1' },
+      { lesson: 'gr-imperativo-c1' },
+      { lesson: 'fn-hipotesis-posibilidad-c1' },
+      { lesson: 'fn-obligacion-necesidad-c1' },
+      { lesson: 'nt-necesidad-obligacion-c1' },
+      { lesson: 'fn-orden-instruccion-c1' },
+      { lesson: 'fn-repetir-orden-c1' },
+      { lesson: 'fn-responder-orden-peticion-c1' },
+      { lesson: 'fn-permiso-prohibicion-c1' },
+      { lesson: 'fn-favor-objetos-ayuda-c1' },
+      { lesson: 'task-c1-verbos' },
+    ] },
+
+  { unit: 'c1-u60', band: 'C1', title: 'Emotion at native pitch',
+    goal: 'I can express an emotion that has no single word for it.',
+    canDo: ['express emotion by understatement',
+            'express it through the body',
+            'use the fixed expressions of regret'],
+    days: [
+      { lesson: 'fn-arrepentimiento-verguenza-c1' },
+      { lesson: 'fn-tristeza-placer-c1' },
+      { lesson: 'fn-miedo-nerviosismo-c1' },
+      { lesson: 'fn-estado-animo-alegria-c1' },
+      { practice: true },
+      { lesson: 'fn-decepcion-resignacion-c1' },
+      { lesson: 'fn-empatia-alivio-esperanza-c1' },
+      { lesson: 'fn-gustos-aversion-c1' },
+      { lesson: 'fn-tranquilizar-animar-c1' },
+      { lesson: 'fn-preferencia-indiferencia-c1' },
+      { lesson: 'fn-deseos-planes-c1' },
+      { lesson: 'fn-recordar-olvidar-c1' },
+      { lesson: 'fn-reprochar-ofrecerse-c1' },
+      { lesson: 'nt-reflexion-conocimiento-c1' },
+      { lesson: 'nt-expresion-verbal-c1' },
+      { lesson: 'task-c1-emocion' },
+    ] },
+
+  { unit: 'c1-u61', band: 'C1', title: 'The argumentative essay',
+    goal: 'I can sustain an argument for a thousand words.',
+    canDo: ['open on the controversy rather than the conclusion',
+            'put the counter-case as its advocates would',
+            'end on a reservation that genuinely qualifies'],
+    days: [
+      { lesson: 'gn-argumentativa-c1' },
+      { lesson: 'gn-argumentativa-conectores-c1' },
+      { lesson: 'gn-expositiva-c1' },
+      { lesson: 'fn-pedir-dar-opinion-c1' },
+      { practice: true },
+      { lesson: 'fn-certeza-evidencia-c1' },
+      { lesson: 'fn-aprobacion-desaprobacion-c1' },
+      { lesson: 'fn-valorar-c1' },
+      { lesson: 'fn-proponer-ofrecer-confirmar-c1' },
+      { lesson: 'fn-aceptar-rechazar-propuesta-c1' },
+      { lesson: 'fn-aconsejar-advertir-amenazar-c1' },
+      { lesson: 'nt-importancia-c1' },
+      { lesson: 'nt-adecuacion-c1' },
+      { lesson: 'nt-aceptabilidad-c1' },
+      { lesson: 'nt-conformidad-c1' },
+      { lesson: 'nt-correccion-c1' },
+      { lesson: 'nt-generalidad-especificidad-c1' },
+      { lesson: 'nt-cualidad-general-c1' },
+      { lesson: 'task-c1-ensayo' },
+    ] },
+
+  { unit: 'c1-u62', band: 'C1', title: 'Precision',
+    goal: 'I can describe the physical and temporal world the way a native writer does.',
+    canDo: ['reach for the fixed expression over the adjective',
+            'give quantity loosely and exactly',
+            'place something in time with precision'],
+    days: [
+      { lesson: 'nt-medidas-generales-tamano-c1' },
+      { lesson: 'nt-peso-superficie-c1' },
+      { lesson: 'nt-volumen-capacidad-presion-c1' },
+      { lesson: 'nt-formas-figuras-c1' },
+      { practice: true },
+      { lesson: 'nt-materia-c1' },
+      { lesson: 'nt-proporcion-c1' },
+      { lesson: 'nt-precision-claridad-c1' },
+      { lesson: 'nt-localizacion-c1' },
+      { lesson: 'nt-cantidad-numerica-c1' },
+      { lesson: 'nt-cantidad-relativa-c1' },
+      { lesson: 'nt-aumento-disminucion-c1' },
+      { lesson: 'nt-grado-c1' },
+      { lesson: 'nt-referencias-generales-c1' },
+      { lesson: 'nt-localizacion-presente-c1' },
+      { lesson: 'nt-localizacion-pasado-c1' },
+      { lesson: 'nt-localizacion-futuro-c1' },
+      { lesson: 'nt-simultaneidad-c1' },
+      { lesson: 'nt-anterioridad-c1' },
+      { lesson: 'nt-posterioridad-c1' },
+      { lesson: 'nt-puntualidad-singularidad-c1' },
+      { lesson: 'nt-anticipacion-c1' },
+      { lesson: 'nt-retraso-c1' },
+      { lesson: 'nt-duracion-transcurso-c1' },
+      { lesson: 'nt-frecuencia-c1' },
+      { lesson: 'nt-repeticion-c1' },
+      { lesson: 'nt-inicio-c1' },
+      { lesson: 'nt-finalizacion-c1' },
+      { lesson: 'nt-continuacion-c1' },
+      { lesson: 'nt-cambio-c1' },
+      { lesson: 'nt-permanencia-c1' },
+      { lesson: 'nt-existencia-inexistencia-c1' },
+      { lesson: 'nt-presencia-ausencia-c1' },
+      { lesson: 'nt-disponibilidad-c1' },
+      { lesson: 'nt-acontecimiento-c1' },
+      { lesson: 'task-c1-precision' },
+    ] },
+
+  { unit: 'c1-u63', band: 'C1', title: 'A critical voice',
+    goal: 'I can judge something in public, in my own voice.',
+    canDo: ['reach a verdict rather than a balance',
+            'take evidence from the thing itself',
+            'sound like a person, not a summary'],
+    days: [
+      { lesson: 'gn-resena-c1' },
+      { lesson: 'gn-narrativa-c1' },
+      { lesson: 'gn-descriptiva-personas-c1' },
+      { lesson: 'gn-descriptiva-lugares-c1' },
+      { practice: true },
+      { lesson: 'gn-descriptiva-objetos-c1' },
+      { lesson: 'gn-presentacion-publica-c1' },
+      { lesson: 'fn-identificar-c1' },
+      { lesson: 'nt-posicion-absoluta-c1' },
+      { lesson: 'nt-posicion-relativa-c1' },
+      { lesson: 'nt-distancia-c1' },
+      { lesson: 'nt-distancia-velocidad-c1' },
+      { lesson: 'nt-movimiento-estabilidad-sustantivos-c1' },
+      { lesson: 'nt-movimiento-verbos-especificos-c1' },
+      { lesson: 'nt-movimiento-locuciones-c1' },
+      { lesson: 'nt-orientacion-direccion-c1' },
+      { lesson: 'nt-orden-c1' },
+      { lesson: 'nt-origen-c1' },
+      { lesson: 'nt-evaluacion-general-c1' },
+      { lesson: 'nt-valor-precio-c1' },
+      { lesson: 'nt-exito-logro-c1' },
+      { lesson: 'nt-utilidad-uso-c1' },
+      { lesson: 'nt-capacidad-competencia-c1' },
+      { lesson: 'nt-facilidad-c1' },
+      { lesson: 'fn-habilidad-c1' },
+      { lesson: 'fn-introducir-relato-atencion-c1' },
+      { lesson: 'fn-destacar-silencio-tema-cierre-c1' },
+      { lesson: 'task-c1-final' },
+    ] },
+
+  { unit: 'deep-discurso-c1', band: 'C1', optional: true, title: 'Discourse structure at C1',
+    goal: 'I can control what a sentence foregrounds, and keep a long text tracking one referent.',
+    canDo: ['front and dislocate deliberately',
+            'keep a referent across paragraphs',
+            'use the pronoun that disambiguates or disparages'],
+    days: [
+      { lesson: 'dc-deixis-c1' },
+      { lesson: 'dc-focalizacion-c1' },
+      { lesson: 'dc-rematizacion-tematizacion-c1' },
+      { lesson: 'dc-mantenimiento-referente-c1' },
+    ] },
+
+  { unit: 'deep-sintaxis-c1', band: 'C1', optional: true, title: 'The subordinate clause, exhaustively',
+    goal: 'I can build any adverbial or relative clause, and know what each one does to the mood.',
+    canDo: ['choose the mood a subordinator forces',
+            'use the C1 relatives — el cual, quien, cuyo',
+            'build concessive and consecutive clauses at C1 register'],
+    days: [
+      { lesson: 'gr-sub-adv-causales-c1' },
+      { lesson: 'gr-sub-adv-comparativas-c1' },
+      { lesson: 'gr-sub-adv-concesivas-c1' },
+      { lesson: 'gr-sub-adv-condicionales-c1' },
+      { lesson: 'gr-sub-adv-consecutivas-c1' },
+      { lesson: 'gr-sub-adv-lugar-modo-c1' },
+      { lesson: 'gr-sub-adv-finales-c1' },
+      { lesson: 'gr-sub-adv-temporales-c1' },
+      { lesson: 'gr-sub-sustantivas-c1' },
+      { lesson: 'gr-sub-adjetivas-relativo-c1' },
+      { lesson: 'gr-relativos-c1' },
+    ] },
+
+  { unit: 'deep-nominal-c1', band: 'C1', optional: true, title: 'The noun phrase at C1',
+    goal: 'I can use the article, gender, number and determiners where they carry meaning rather than agreement.',
+    canDo: ['use the article for emphasis and nominalisation',
+            'use the gender that changes the meaning',
+            'use demonstratives for discourse proximity and contempt'],
+    days: [
+      { lesson: 'gr-articulo-definido-c1' },
+      { lesson: 'gr-articulo-indefinido-c1' },
+      { lesson: 'gr-genero-sustantivos-c1' },
+      { lesson: 'gr-numero-sustantivos-c1' },
+      { lesson: 'gr-demostrativos-c1' },
+      { lesson: 'gr-posesivos-c1' },
+      { lesson: 'gr-nombres-escuetos-c1' },
+      { lesson: 'gr-clases-adjetivos-c1' },
+      { lesson: 'gr-cuantificadores-propios-c1' },
+      { lesson: 'gr-exclamativos-c1' },
+      { lesson: 'gr-interrogativos-c1' },
+    ] },
+
+  { unit: 'deep-complementos-c1', band: 'C1', optional: true, title: 'Complements, clitics and agreement at C1',
+    goal: 'I can handle leísmo, ad sensum agreement, and the complements a noun or adjective takes.',
+    canDo: ['recognise leísmo, laísmo and loísmo',
+            'use ad sensum agreement where sense beats grammar',
+            'attach complements to nouns and adjectives'],
+    days: [
+      { lesson: 'gr-complementos-adjetival-c1' },
+      { lesson: 'gr-complementos-nominal-c1' },
+      { lesson: 'gr-complementos-verbales-c1' },
+      { lesson: 'gr-concordancia-oracional-c1' },
+      { lesson: 'gr-pronombre-personal-c1' },
+      { lesson: 'gr-adverbios-conjuntivos-c1' },
+      { lesson: 'gr-adverbios-externos-c1' },
+      { lesson: 'gr-adverbios-nucleares-c1' },
+    ] },
+
 ];
 
 

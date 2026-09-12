@@ -23,6 +23,314 @@
 window.STRAND_LESSONS = [
 
 {
+  id: 'task-c1-idiom', strand: 'task', cefr: 'C1', level: 9, theme: 'salud',
+  title: 'Cuenta un mal día sin una sola palabra neutra',
+  canDo: 'tell a story entirely in idiom, the way a native would',
+  summary: 'At C1 the idiom is not decoration on top of the language — it IS the language. "Estoy hecho polvo" is not a fancier way of saying estoy cansado; it is what a Spanish speaker actually says, and the neutral version is what marks you as foreign.',
+  sections: [
+    { h: 'What to do', html: 'Tell the story of a genuinely bad day in eighteen to twenty-five sentences. Every state, reaction and judgement must be idiomatic. No <i>estoy cansado</i>, no <i>hace frío</i>, no <i>está bien</i>.' },
+    { h: 'The test', html: 'Read it to yourself and ask of each sentence: would a Spanish speaker say this, or is it correct Spanish that nobody says? The second is the C1 trap, and it never shows up as an error.' }
+  ],
+  model: { title: 'a bad day, idiomatically', text: '<p>Me desperté con un frío que pelaba y la calefacción sin dar señales de vida. Salí sin desayunar y, para colmo, el metro iba hasta arriba. Llegué por los pelos a una reunión en la que no pintaba nada. El jefe estaba de un humor de perros y se dedicó a mirarnos por encima del hombro toda la mañana. A mediodía ya estaba hasta la coronilla. Comí un bocadillo que estaba para tirarlo — soso no, lo siguiente. Por la tarde se me fue el santo al cielo en plena presentación y me quedé en blanco delante de treinta personas. Volví a casa hecho polvo. Mi vecina, que es un cielo, me había dejado una nota. Eso sí que me salvó el día.</p>' },
+  checklist: [
+    'Eighteen sentences or more.',
+    'No neutral adjective where an idiom exists.',
+    'At least eight distinct idiomatic expressions.',
+    'At least two involving the body or the senses.',
+    'Every one would actually be said, not merely understood.'
+  ],
+  examples: [
+    { es: 'Me desperté con un frío que pelaba.', en: 'I woke up to a bitter cold.' },
+    { es: 'Ya estaba hasta la coronilla.', en: 'I\'d had it up to here.' },
+    { es: 'Se me fue el santo al cielo.', en: 'I completely lost my thread.' }
+  ],
+  probes: [
+    { id: 'p:task-c1-idiom-1', kind: 'mcq',
+      q: 'Which would a Spanish speaker actually say?',
+      options: ['Estoy hecho polvo.', 'Estoy muy cansado físicamente.', 'Tengo mucho cansancio.'], answer: 0 },
+    { id: 'p:task-c1-idiom-2', kind: 'mcq',
+      q: '"Estar hasta la coronilla" means:',
+      options: ['to be fed up', 'to be very tall', 'to be well dressed'], answer: 0 },
+    { id: 'p:task-c1-idiom-3', kind: 'cloze',
+      text: 'Hace un frío que ___.', accept: ['pela'] }
+  ]
+},
+
+{
+  id: 'task-c1-ironia', strand: 'task', cefr: 'C1', level: 9, theme: 'arte',
+  title: 'Di lo contrario de lo que quieres decir',
+  canDo: 'be ironic in Spanish, and hear it done to you',
+  summary: 'Irony is the last thing a learner acquires and the first thing that marks fluency, because it requires knowing exactly what the neutral version would have been. Spanish marks it — with intonation, with a suspended "que", with an adjective that is too generous.',
+  sections: [
+    { h: 'What to do', html: 'Write a conversation of twenty turns between two people who know each other well, in which at least six lines mean the opposite of what they say.' },
+    { h: 'How Spanish marks it', html: 'Over-generous praise (<i>¡qué detalle!</i> for a slight), the suspended ending (<i>Ya, ya…</i>), <i>pues sí que</i> + something obviously bad, and the tag <i>¿no?</i> attached to something nobody could agree with.' },
+    { h: 'The risk', html: 'Irony that is not marked is just a lie. Every ironic line should carry at least one signal — the exaggeration, the intonation cue in your stage direction, or the reply that shows it landed.' }
+  ],
+  model: { title: 'an ironic exchange', text: '<p>—Ha llamado tu hermano. Dice que no viene.<br>—¡Qué sorpresa!<br>—Ya, ya.<br>—No, en serio, me tenía en vilo la incertidumbre.<br>—Pues sí que estamos bien.<br>—Bueno, mujer, tampoco es que se haya comprometido mucho, ¿no?<br>—Solo llevaba tres meses diciendo que venía.<br>—Tres meses. Un detalle por su parte avisarnos con tanta antelación.<br>—Anda, calla y pon la mesa.<br>—¿Para cuántos? ¿Dejo un sitio por si acaso?<br>—Muy gracioso.</p>' },
+  checklist: [
+    'Twenty turns or more.',
+    'At least six ironic lines.',
+    'Every ironic line carries a signal.',
+    'At least one is answered in a way that shows it landed.',
+    'Both speakers are ironic, not just one.'
+  ],
+  examples: [
+    { es: '—No viene. —¡Qué sorpresa!', en: '—He\'s not coming. —What a shock.' },
+    { es: 'Pues sí que estamos bien.', en: 'Well, this is just great.' },
+    { es: 'Un detalle avisarnos con tanta antelación.', en: 'How thoughtful of him to give us so much notice.' }
+  ],
+  probes: [
+    { id: 'p:task-c1-ironia-1', kind: 'mcq',
+      q: '"¡Qué sorpresa!" about something entirely predictable is:',
+      options: ['irony', 'a compliment', 'a question'], answer: 0 },
+    { id: 'p:task-c1-ironia-2', kind: 'mcq',
+      q: 'Irony that carries NO signal is:',
+      options: ['indistinguishable from a lie', 'more sophisticated', 'more polite'], answer: 0 },
+    { id: 'p:task-c1-ironia-3', kind: 'cloze',
+      text: 'Pues ___ que estamos bien. (ironic)', accept: ['sí'] }
+  ]
+},
+
+{
+  id: 'task-c1-decirlo', strand: 'task', cefr: 'C1', level: 9, theme: 'politica',
+  title: 'Dilo sin responder de ello',
+  canDo: 'say something without taking responsibility for having said it',
+  summary: 'The most sophisticated thing Spanish does: attribute a claim to nobody, soften a disagreement until nothing is attacked, negate without a negative. This is how criticism is delivered in a meeting, and how nobody is ever quite on record.',
+  sections: [
+    { h: 'What to do', html: 'Write a piece of workplace or public writing — minutes, an internal memo, a comment on a proposal — in which you criticise something firmly without ever attributing the criticism to yourself or attacking anyone.' },
+    { h: 'The devices', html: 'Impersonal <i>se</i>, the covert quotation (<i>al parecer</i>, <i>por lo visto</i>, <i>parece ser que</i>), the conditional of unverified claim, negation by implication (<i>no es que sea malo, es que…</i>), and dialogic softening — conceding before you cut.' }
+  ],
+  model: { title: 'criticism nobody signed', text: '<p>Se ha planteado en varias ocasiones — y no solo por parte de este departamento — la conveniencia de revisar el calendario. Al parecer, la fecha se fijó antes de que se conociera el alcance real del proyecto, lo cual explicaría buena parte de las dificultades posteriores. No es que el plan sea inviable; es que fue diseñado para un supuesto que ya no se da. Cabría valorar si no sería más prudente reconsiderar los plazos ahora, antes de que la cuestión se resuelva sola y de la peor manera posible.</p>' },
+  checklist: [
+    '150 words or more.',
+    'The criticism is clear but attributed to nobody.',
+    'At least one impersonal se and one covert quotation.',
+    'At least one conditional of unverified claim.',
+    'Nobody is named, and nothing is directly attacked.'
+  ],
+  examples: [
+    { es: 'Se ha planteado en varias ocasiones…', en: 'It has been raised on several occasions…' },
+    { es: 'Al parecer, la fecha se fijó antes de tiempo.', en: 'Apparently the date was set prematurely.' },
+    { es: 'No es que sea inviable; es que ya no se da el supuesto.', en: 'It\'s not that it\'s unworkable — the premise no longer holds.' }
+  ],
+  probes: [
+    { id: 'p:task-c1-decirlo-1', kind: 'mcq',
+      q: '"Lo cual explicaría…" — the conditional here signals:',
+      options: ['the claim is not being asserted outright', 'a future event', 'a polite request'], answer: 0 },
+    { id: 'p:task-c1-decirlo-2', kind: 'mcq',
+      q: 'Which attributes a claim to nobody?',
+      options: ['Se ha planteado que…', 'Yo he planteado que…', 'Planteo que…'], answer: 0 },
+    { id: 'p:task-c1-decirlo-3', kind: 'cloze',
+      text: '___ parecer, la fecha se fijó antes.', accept: ['Al'] }
+  ]
+},
+
+{
+  id: 'task-c1-formal', strand: 'task', cefr: 'C1', level: 9, theme: 'trabajo',
+  title: 'Escribe para una institución',
+  canDo: 'write in institutional register without sounding like a form',
+  summary: 'Formal C1 Spanish is not B2 formality with longer words. It has its own syntax — nominalisation, the passive reflexive, the subordinate clause that carries the concession — and its own failure mode, which is sounding like a machine.',
+  sections: [
+    { h: 'What to do', html: 'Write a commercial letter following the attention–interest–desire–action structure, and a short academic abstract on something you know. 200 words each.' },
+    { h: 'What makes it C1 rather than B2', html: 'Nominalisation (<i>la revisión del calendario</i> rather than <i>revisar el calendario</i>), the concessive built into a subordinate clause rather than added with <i>aunque</i>, and a register that stays consistent for a whole page.' }
+  ],
+  model: { title: 'a commercial letter', text: '<p>Estimada Sra. Iriarte:</p><p>Pocas decisiones comprometen tanto el resultado de un proyecto editorial como la elección del proveedor de impresión, y pocas se toman con tan poca información comparada.</p><p>Nuestro catálogo reúne, por primera vez en el sector, los datos de rendimiento reales de once acabados distintos sobre seis gramajes, medidos en condiciones idénticas. No es un folleto comercial: es el resultado de dieciocho meses de pruebas, y se lo enviamos sin compromiso alguno.</p><p>Si considera que puede resultarle de utilidad, basta con que responda a este correo indicando una dirección de envío. Si no, no volveremos a molestarla.</p><p>Atentamente,<br>Dirección Comercial</p>' },
+  checklist: [
+    'Both texts, 200 words each.',
+    'Register is consistent for the whole of each.',
+    'At least three nominalisations.',
+    'At least one concession carried by a subordinate clause, not by aunque.',
+    'Neither reads like a template.'
+  ],
+  examples: [
+    { es: 'La revisión del calendario resulta inaplazable.', en: 'A review of the schedule cannot be postponed.' },
+    { es: 'Se lo enviamos sin compromiso alguno.', en: 'We send it to you with no obligation whatsoever.' },
+    { es: 'Basta con que responda indicando una dirección.', en: 'You need only reply with an address.' }
+  ],
+  probes: [
+    { id: 'p:task-c1-formal-1', kind: 'mcq',
+      q: 'Which is the nominalised version?',
+      options: ['la revisión del calendario', 'revisar el calendario', 'que revisemos el calendario'], answer: 0 },
+    { id: 'p:task-c1-formal-2', kind: 'mcq',
+      q: 'The failure mode of C1 formal writing is:',
+      options: ['sounding like a machine', 'being too short', 'using usted'], answer: 0 },
+    { id: 'p:task-c1-formal-3', kind: 'cloze',
+      text: 'Basta ___ que responda a este correo.', accept: ['con'] }
+  ]
+},
+
+{
+  id: 'task-c1-verbos', strand: 'task', cefr: 'C1', level: 9, theme: 'ciencia',
+  title: 'Justifica cada tiempo verbal que usas',
+  canDo: 'choose any tense or mood deliberately and say why',
+  summary: 'The two synoptic lessons in this unit are the best grammar in the app: every indicative tense with the objection it answers, and every subjunctive tense with what the negation decides. This asks you to prove you can use them on purpose.',
+  sections: [
+    { h: 'What to do', html: 'Write a 250-word account of something complicated — a dispute, a process, a change of mind — then annotate it: for every finite verb, one line saying why that tense and mood rather than the nearest alternative.' },
+    { h: 'What counts as a reason', html: '"It is the past" is not a reason; preterite and imperfect are both past. The reason is always what you are doing with the event: bounding it, describing around it, placing it before another, declining to assert it.' }
+  ],
+  model: { title: 'annotated, briefly', text: '<p><b>Texto:</b> Cuando llegué, ya habían decidido. Nadie me dijo que la reunión se hubiera adelantado, aunque supongo que alguien lo habría intentado. Si me lo hubieran dicho, habría cambiado el vuelo.</p><p><b>Anotación:</b> <i>llegué</i> — preterite: one bounded arrival. <i>habían decidido</i> — pluperfect: before that arrival. <i>dijo</i> — preterite: a single completed non-event. <i>se hubiera adelantado</i> — subjunctive after a negated verb of communication: the bringing-forward is not being asserted. <i>habría intentado</i> — conditional perfect as conjecture about the past. <i>hubieran dicho / habría cambiado</i> — the counterfactual pair, matched across the comma.</p>' },
+  checklist: [
+    '250 words of continuous text.',
+    'Every finite verb annotated.',
+    'At least six different tenses or moods.',
+    'No annotation says only "it is past" or "it is future".',
+    'At least one subjunctive justified by what negates or governs it.'
+  ],
+  examples: [
+    { es: 'Nadie me dijo que se hubiera adelantado.', en: 'Nobody told me it had been brought forward.' },
+    { es: 'Supongo que alguien lo habría intentado.', en: 'I imagine somebody must have tried.' },
+    { es: 'Si me lo hubieran dicho, habría cambiado el vuelo.', en: 'If they had told me, I would have changed the flight.' }
+  ],
+  probes: [
+    { id: 'p:task-c1-verbos-1', kind: 'mcq',
+      q: 'Why is "se hubiera adelantado" subjunctive?',
+      options: ['the governing verb is negated', 'it is in the past', 'it is a question'], answer: 0 },
+    { id: 'p:task-c1-verbos-2', kind: 'mcq',
+      q: '"It is the past" is not a reason for the preterite because:',
+      options: ['the imperfect is also past', 'the preterite is not past', 'tenses have no reasons'], answer: 0 },
+    { id: 'p:task-c1-verbos-3', kind: 'cloze',
+      text: 'Nadie dijo que ___ adelantado. (haberse, subj.)', accept: ['se hubiera', 'se hubiese'] }
+  ]
+},
+
+{
+  id: 'task-c1-emocion', strand: 'task', cefr: 'C1', level: 9, theme: 'relaciones',
+  title: 'Expresa una emoción complicada',
+  canDo: 'express an emotion that has no single word for it',
+  summary: 'C1 emotion is not stronger than B2 emotion — it is more exact. Arrepentimiento with a touch of relief. Affection expressed as mock complaint. The pride you cannot admit to. Spanish has fixed ways of doing all three.',
+  sections: [
+    { h: 'What to do', html: 'Write about a relationship or a decision where what you felt was genuinely mixed and hard to name. Twenty sentences or more.' },
+    { h: 'The C1 moves', html: 'Emotion through understatement (<i>no me hizo especial ilusión</i>), through its opposite (<i>no sabes cómo me alegro</i> for something small), through the body (<i>se me encogió el estómago</i>), and the fixed expressions of regret — <i>si volviera a nacer</i>, <i>me arrepiento de no haber…</i>' }
+  ],
+  model: { title: 'something mixed', text: '<p>Cuando por fin vendimos la casa, no sentí lo que esperaba sentir. Durante meses había dicho que me quitaría un peso de encima, y en parte fue así: el día que firmamos dormí de un tirón por primera vez en un año. Pero al salir de la notaría se me encogió el estómago de una forma que no supe explicar entonces y que ahora entiendo perfectamente. No es que la echara de menos — nunca fue una casa especialmente cómoda ni especialmente nuestra. Es que era el último sitio donde mi padre había estado bien. Me arrepiento de no haberle sacado una foto al jardín antes de vaciarlo. Es una tontería, ya lo sé. Pero si volviera a nacer, esa foto la sacaba.</p>' },
+  checklist: [
+    'Twenty sentences or more.',
+    'The emotion is mixed and named indirectly.',
+    'At least one understatement and one bodily expression.',
+    'At least one fixed expression of regret.',
+    'No single emotion word would summarise it.'
+  ],
+  examples: [
+    { es: 'Se me encogió el estómago.', en: 'My stomach turned over.' },
+    { es: 'No me hizo especial ilusión.', en: 'I wasn\'t exactly thrilled.' },
+    { es: 'Si volviera a nacer, esa foto la sacaba.', en: 'If I had my time again, I\'d have taken that photo.' }
+  ],
+  probes: [
+    { id: 'p:task-c1-emocion-1', kind: 'mcq',
+      q: '"No me hizo especial ilusión" is:',
+      options: ['understatement — it was a disappointment', 'enthusiasm', 'indifference'], answer: 0 },
+    { id: 'p:task-c1-emocion-2', kind: 'mcq',
+      q: 'Which expresses regret about something not done?',
+      options: ['Me arrepiento de no haberlo hecho.', 'Me arrepiento de haberlo hecho.', 'No me arrepiento.'], answer: 0 },
+    { id: 'p:task-c1-emocion-3', kind: 'cloze',
+      text: 'Se me ___ el estómago. (encoger)', accept: ['encogió'] }
+  ]
+},
+
+{
+  id: 'task-c1-ensayo', strand: 'task', cefr: 'C1', level: 9, theme: 'educacion',
+  title: 'Escribe un ensayo argumentativo',
+  canDo: 'sustain an argument for a thousand words',
+  summary: 'The longest and most demanding piece in the course. Everything C1 has — the register, the covert attribution, the concession built into syntax, the idiom used sparingly and exactly — has to hold together across five or six paragraphs without flagging.',
+  sections: [
+    { h: 'What to do', html: '800 to 1,200 words on a genuinely contested question in a field you know. Open on the controversy rather than on your position.' },
+    { h: 'The structure C1 expects', html: 'The polemical question · the state of the debate, attributed · your position, arrived at rather than announced · the strongest counter-case, answered without dismissiveness · a final reservation that is real.' },
+    { h: 'What separates it from B2', html: 'B2 argues to win. C1 argues to be right, which means the counter-case is presented as its own advocates would present it, and the reservation genuinely qualifies your conclusion rather than decorating it.' }
+  ],
+  model: { title: 'an opening and a close', text: '<p><b>Apertura:</b> Pocas cuestiones educativas generan tanto consenso aparente y tan poco acuerdo real como la del móvil en las aulas. Nadie defiende que un adolescente deba pasar la clase mirando una pantalla; casi todos discrepan sobre qué hacer al respecto, y la discusión lleva años atascada en ese punto.</p><p><b>Cierre:</b> Conviene, en todo caso, no exagerar lo que una prohibición puede lograr. El aula es seis horas de un día que tiene veinticuatro, y el problema — si es que lo hay — no nace en ella. Prohibir el móvil en clase es una medida razonable y probablemente útil; confundirla con una política educativa sería el verdadero error.</p>' },
+  checklist: [
+    '800 words or more.',
+    'Opens on the controversy, not on your position.',
+    'The state of the debate is attributed.',
+    'The counter-case is put as its advocates would put it.',
+    'The final reservation genuinely qualifies the conclusion.'
+  ],
+  examples: [
+    { es: 'Pocas cuestiones generan tanto consenso aparente.', en: 'Few questions generate such apparent consensus.' },
+    { es: 'Conviene, en todo caso, no exagerar lo que puede lograr.', en: 'In any case, we should not overstate what it can achieve.' },
+    { es: 'Confundirla con una política sería el verdadero error.', en: 'Mistaking it for a policy would be the real error.' }
+  ],
+  probes: [
+    { id: 'p:task-c1-ensayo-1', kind: 'mcq',
+      q: 'A C1 essay opens on:',
+      options: ['the controversy', 'your conclusion', 'a definition'], answer: 0 },
+    { id: 'p:task-c1-ensayo-2', kind: 'mcq',
+      q: 'The counter-case at C1 should be:',
+      options: ['put as its advocates would put it', 'put at its weakest', 'omitted'], answer: 0 },
+    { id: 'p:task-c1-ensayo-3', kind: 'cloze',
+      text: '___ , en todo caso, no exagerar. (it is advisable)', accept: ['Conviene'] }
+  ]
+},
+
+{
+  id: 'task-c1-precision', strand: 'task', cefr: 'C1', level: 9, theme: 'ciencia',
+  title: 'Describe algo con precisión nativa',
+  canDo: 'describe the physical and temporal world the way a native writer does',
+  summary: 'The C1 notion inventory is the largest single body of material in the course, and this is what it is for: not more nouns, but the fixed expressions that make a description sound observed rather than translated.',
+  sections: [
+    { h: 'What to do', html: 'Write a description of a place at a particular moment — a market at closing, a station at dawn, a kitchen mid-service. Twenty-five sentences, heavy on the senses.' },
+    { h: 'Reach for the fixed expression', html: '<i>A simple vista</i>, <i>al tacto</i>, <i>a ojo</i>, <i>de norte a sur</i>, <i>al rojo vivo</i>, <i>para chuparse los dedos</i>, <i>un frío que pela</i>, <i>cuatro gatos</i>, <i>hasta arriba</i>. Each is doing work no adjective does.' }
+  ],
+  model: { title: 'a place at a moment', text: '<p>A las tres y media el mercado está en las últimas. Quedan cuatro gatos y dos puestos abiertos, el del pescado ya baldeado y oliendo a lejía, y el de la fruta, donde la dueña lo está rebajando todo a ojo. El suelo está encharcado de norte a sur. Huele a una mezcla difícil de describir: fruta pasada, cartón mojado y, de fondo, el café del bar de la esquina, que a esta hora ya está recalentado. Un mozo arrastra cajas vacías haciendo un ruido que se oye desde la calle. En el puesto de embutidos queda medio jamón, reseco por el borde, del que la chica corta una loncha y me la da a probar: está para chuparse los dedos, y me lo dice con la cara de quien sabe que lo está.</p>' },
+  checklist: [
+    'Twenty-five sentences or more.',
+    'At least three senses beyond sight.',
+    'At least six fixed expressions.',
+    'At least two measurements or quantities given loosely (<i>a ojo</i>, <i>un par de</i>).',
+    'It reads as observed, not as translated.'
+  ],
+  examples: [
+    { es: 'Quedan cuatro gatos.', en: 'There\'s barely anyone left.' },
+    { es: 'El suelo está encharcado de norte a sur.', en: 'The floor is puddled from end to end.' },
+    { es: 'Está para chuparse los dedos.', en: 'It\'s absolutely delicious.' }
+  ],
+  probes: [
+    { id: 'p:task-c1-precision-1', kind: 'mcq',
+      q: '"Cuatro gatos" means:',
+      options: ['hardly anybody', 'four cats', 'a large crowd'], answer: 0 },
+    { id: 'p:task-c1-precision-2', kind: 'mcq',
+      q: '"A ojo" means measuring:',
+      options: ['by eye, approximately', 'precisely', 'with a scale'], answer: 0 },
+    { id: 'p:task-c1-precision-3', kind: 'cloze',
+      text: 'Está para ___ los dedos.', accept: ['chuparse'] }
+  ]
+},
+
+{
+  id: 'task-c1-final', strand: 'task', cefr: 'C1', level: 9, theme: 'arte',
+  title: 'Escribe una reseña crítica',
+  canDo: 'judge something in public, in your own voice',
+  summary: 'The last task in the course. A review is where register, idiom, irony, hedging and argument all have to work at once — and where a distinctive voice stops being optional.',
+  sections: [
+    { h: 'What to do', html: 'Review something you have genuinely read, seen or eaten. 500 to 700 words. It must contain at least one criticism and at least one thing you admired, and it must not be balanced for the sake of balance.' },
+    { h: 'Voice is the point', html: 'At C1 the question stops being whether the Spanish is correct and becomes whether it sounds like somebody. Use the register deliberately, be ironic where irony is earned, and let one sentence be longer than it strictly needs to be.' }
+  ],
+  model: { title: 'the shape of a review', text: '<p><b>Entrada:</b> the thing, placed — what it is, and what it is up against.<br><b>Descripción:</b> enough that a reader who has not seen it can follow, and no more.<br><b>El juicio:</b> arrived at with evidence from the thing itself.<br><b>La objeción:</b> what its defenders would say, taken seriously.<br><b>El cierre:</b> a verdict, not a summary.</p><p><i>Ejemplo de cierre:</i> Nada de esto la convierte en una mala película; la convierte en una película que se conforma. Y de un director que ha demostrado de sobra que puede hacer otra cosa, conformarse es lo único que no se le puede perdonar del todo.</p>' },
+  checklist: [
+    '500 words or more.',
+    'At least one real criticism and one real admiration.',
+    'Not balanced for the sake of it — a verdict is reached.',
+    'Evidence comes from the thing itself, not from generalities.',
+    'It sounds like a person, not like a summary.'
+  ],
+  examples: [
+    { es: 'La convierte en una película que se conforma.', en: 'It makes it a film that settles.' },
+    { es: 'De un director que puede hacer otra cosa…', en: 'From a director who is capable of more…' },
+    { es: '…conformarse es lo único que no se le perdona.', en: '…settling is the one thing he cannot be forgiven.' }
+  ],
+  probes: [
+    { id: 'p:task-c1-final-1', kind: 'mcq',
+      q: 'A C1 review closes with:',
+      options: ['a verdict', 'a summary', 'a plot description'], answer: 0 },
+    { id: 'p:task-c1-final-2', kind: 'mcq',
+      q: 'Balance for the sake of balance is:',
+      options: ['a way of avoiding a verdict', 'always correct', 'required at C1'], answer: 0 },
+    { id: 'p:task-c1-final-3', kind: 'cloze',
+      text: 'Es una película que se ___. (settles)', accept: ['conforma'] }
+  ]
+},
+
+{
   id: 'task-b2-registro', strand: 'task', cefr: 'B2', level: 7, theme: 'trabajo',
   title: 'Di lo mismo en cinco salas',
   canDo: 'say one thing five ways and know which room each belongs to',
@@ -2155,7 +2463,7 @@ window.STRAND_LESSONS = [
  * without the sentence pointing at anybody.
  * ------------------------------------------------------------------------ */
 {
-  id: 'dc-atenuacion-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  id: 'dc-atenuacion-c1', canDo: 'handle atenuación at C1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
   pcic: ['tacticas_pragmaticas:C1:288', 'tacticas_pragmaticas:C1:289',
          'tacticas_pragmaticas:C1:291', 'tacticas_pragmaticas:C1:295'],
   title: 'Atenuación: decirlo sin señalar a nadie',
@@ -13896,7 +14204,7 @@ window.STRAND_LESSONS = [
  * ========================================================================== */
 
 {
-  id: 'dc-reformuladores-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  id: 'dc-reformuladores-c1', canDo: 'handle reformuladores at C1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
   pcic: ['tacticas_pragmaticas:C1:22', 'tacticas_pragmaticas:C1:23',
          'tacticas_pragmaticas:C1:24', 'tacticas_pragmaticas:C1:25'],
   title: 'Reformuladores: volver a decirlo mejor',
@@ -13956,7 +14264,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-estilo-indirecto-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  id: 'dc-estilo-indirecto-c1', canDo: 'handle estilo indirecto at C1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
   pcic: ['tacticas_pragmaticas:C1:79', 'tacticas_pragmaticas:C1:80', 'tacticas_pragmaticas:C1:81',
          'tacticas_pragmaticas:C1:83', 'tacticas_pragmaticas:C1:84', 'tacticas_pragmaticas:C1:85'],
   title: 'Estilo indirecto: el verbo que interpreta',
@@ -14011,7 +14319,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-citas-encubiertas-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  id: 'dc-citas-encubiertas-c1', canDo: 'handle citas encubiertas at C1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
   pcic: ['tacticas_pragmaticas:C1:86', 'tacticas_pragmaticas:C1:87', 'tacticas_pragmaticas:C1:88',
          'tacticas_pragmaticas:C1:89', 'tacticas_pragmaticas:C1:90', 'tacticas_pragmaticas:C1:91'],
   title: 'Citas encubiertas: decirlo sin responder de ello',
@@ -14064,7 +14372,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-atenuacion-dialogica-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  id: 'dc-atenuacion-dialogica-c1', canDo: 'handle atenuación dialógica at C1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
   pcic: ['tacticas_pragmaticas:C1:313', 'tacticas_pragmaticas:C1:314',
          'tacticas_pragmaticas:C1:315', 'tacticas_pragmaticas:C1:316'],
   title: 'Atenuación dialógica: discrepar sin romper nada',
@@ -14116,7 +14424,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-metaforas-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  id: 'dc-metaforas-c1', canDo: 'handle metáforas at C1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
   pcic: ['tacticas_pragmaticas:C1:147', 'tacticas_pragmaticas:C1:148',
          'tacticas_pragmaticas:C1:149', 'tacticas_pragmaticas:C1:150', 'tacticas_pragmaticas:C1:151'],
   title: 'Metáforas: el juicio escondido en la gramática',
@@ -14167,7 +14475,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-ironia-c1', strand: 'discourse', cefr: 'C1', level: 10, theme: null,
+  id: 'dc-ironia-c1', canDo: 'handle indicadores de ironía at C1', strand: 'discourse', cefr: 'C1', level: 10, theme: null,
   pcic: ['tacticas_pragmaticas:C1:152', 'tacticas_pragmaticas:C1:153', 'tacticas_pragmaticas:C1:154',
          'tacticas_pragmaticas:C1:155', 'tacticas_pragmaticas:C1:156', 'tacticas_pragmaticas:C1:158'],
   title: 'Indicadores de ironía: cómo se marca que no lo dices en serio',
@@ -14222,7 +14530,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-imperfecto-modal-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  id: 'dc-imperfecto-modal-c1', canDo: 'handle imperfecto que no habla del pasado at C1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
   pcic: ['tacticas_pragmaticas:C1:271', 'tacticas_pragmaticas:C1:272',
          'tacticas_pragmaticas:C1:273', 'tacticas_pragmaticas:C1:274'],
   title: 'El imperfecto que no habla del pasado',
@@ -14275,7 +14583,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-indefinido-perfecto-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  id: 'dc-indefinido-perfecto-c1', canDo: 'handle indefinido o perfecto at C1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
   pcic: ['tacticas_pragmaticas:C1:275', 'tacticas_pragmaticas:C1:276',
          'tacticas_pragmaticas:C1:277', 'tacticas_pragmaticas:C1:278'],
   title: 'Indefinido o perfecto: acercar y alejar lo ocurrido',
@@ -23616,7 +23924,7 @@ window.STRAND_LESSONS = [
  * of the nine existing C1 discourse lessons (dc-atenuacion-c1 etc.).
  * ========================================================================== */
 {
-  id: 'dc-mantenimiento-referente-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  id: 'dc-mantenimiento-referente-c1', status: 'reference', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
   pcic: ['tacticas_pragmaticas:C1:1', 'tacticas_pragmaticas:C1:2', 'tacticas_pragmaticas:C1:3', 'tacticas_pragmaticas:C1:4',
          'tacticas_pragmaticas:C1:5', 'tacticas_pragmaticas:C1:6', 'tacticas_pragmaticas:C1:7'],
   title: 'Mantener el referente: proformas globalizadoras',
@@ -23654,7 +23962,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-deixis-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  id: 'dc-deixis-c1', status: 'reference', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
   pcic: ['tacticas_pragmaticas:C1:42', 'tacticas_pragmaticas:C1:43', 'tacticas_pragmaticas:C1:44', 'tacticas_pragmaticas:C1:45',
          'tacticas_pragmaticas:C1:46', 'tacticas_pragmaticas:C1:47', 'tacticas_pragmaticas:C1:48', 'tacticas_pragmaticas:C1:49',
          'tacticas_pragmaticas:C1:50'],
@@ -23694,7 +24002,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-rematizacion-tematizacion-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  id: 'dc-rematizacion-tematizacion-c1', status: 'reference', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
   pcic: ['tacticas_pragmaticas:C1:58', 'tacticas_pragmaticas:C1:59', 'tacticas_pragmaticas:C1:60', 'tacticas_pragmaticas:C1:61',
          'tacticas_pragmaticas:C1:62', 'tacticas_pragmaticas:C1:63', 'tacticas_pragmaticas:C1:64', 'tacticas_pragmaticas:C1:65',
          'tacticas_pragmaticas:C1:66', 'tacticas_pragmaticas:C1:67', 'tacticas_pragmaticas:C1:68'],
@@ -23737,7 +24045,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-valores-ilocutivos-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  id: 'dc-valores-ilocutivos-c1', canDo: 'handle lo que hace una pregunta at C1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
   pcic: ['tacticas_pragmaticas:C1:103', 'tacticas_pragmaticas:C1:104', 'tacticas_pragmaticas:C1:105', 'tacticas_pragmaticas:C1:106',
          'tacticas_pragmaticas:C1:107', 'tacticas_pragmaticas:C1:108', 'tacticas_pragmaticas:C1:109', 'tacticas_pragmaticas:C1:110',
          'tacticas_pragmaticas:C1:111', 'tacticas_pragmaticas:C1:112', 'tacticas_pragmaticas:C1:113'],
@@ -23778,7 +24086,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-negacion-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  id: 'dc-negacion-c1', canDo: 'handle negación at C1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
   pcic: ['tacticas_pragmaticas:C1:125', 'tacticas_pragmaticas:C1:126', 'tacticas_pragmaticas:C1:127', 'tacticas_pragmaticas:C1:129',
          'tacticas_pragmaticas:C1:130', 'tacticas_pragmaticas:C1:131', 'tacticas_pragmaticas:C1:132', 'tacticas_pragmaticas:C1:134',
          'tacticas_pragmaticas:C1:135', 'tacticas_pragmaticas:C1:136', 'tacticas_pragmaticas:C1:137'],
@@ -23820,7 +24128,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-intensificacion-c1', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
+  id: 'dc-intensificacion-c1', canDo: 'intensificar — que', strand: 'discourse', cefr: 'C1', level: 9, theme: null,
   pcic: ['tacticas_pragmaticas:C1:182', 'tacticas_pragmaticas:C1:183', 'tacticas_pragmaticas:C1:184', 'tacticas_pragmaticas:C1:185',
          'tacticas_pragmaticas:C1:186', 'tacticas_pragmaticas:C1:187', 'tacticas_pragmaticas:C1:188', 'tacticas_pragmaticas:C1:189',
          'tacticas_pragmaticas:C1:190', 'tacticas_pragmaticas:C1:191', 'tacticas_pragmaticas:C1:192', 'tacticas_pragmaticas:C1:193',
@@ -23866,7 +24174,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-focalizacion-c1', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
+  id: 'dc-focalizacion-c1', status: 'reference', strand: 'discourse', cefr: 'C1', level: 8, theme: null,
   pcic: ['tacticas_pragmaticas:C1:240', 'tacticas_pragmaticas:C1:241', 'tacticas_pragmaticas:C1:242', 'tacticas_pragmaticas:C1:244',
          'tacticas_pragmaticas:C1:245', 'tacticas_pragmaticas:C1:246', 'tacticas_pragmaticas:C1:247', 'tacticas_pragmaticas:C1:248'],
   title: 'Focalizar en C1: el artículo que exclama, la dislocación que aclara',
@@ -23910,7 +24218,7 @@ window.STRAND_LESSONS = [
  * clases de adjetivos, artículo definido/indefinido, nombres escuetos.
  * ========================================================================== */
 {
-  id: 'gr-genero-sustantivos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  id: 'gr-genero-sustantivos-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
   pcic: ['gramatica:C1:8', 'gramatica:C1:9', 'gramatica:C1:10', 'gramatica:C1:11', 'gramatica:C1:12'],
   title: 'El género que cambia el significado: el fruto / la fruta',
   summary: 'A handful of Spanish nouns are not masculine or feminine by convention — the gender itself carries meaning, and switching it is not a mistake but a different word. "El fruto" and "la fruta" share a root but not a referent, and no rule of agreement will tell you which one a sentence needs; only the meaning will.',
@@ -23945,7 +24253,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-numero-sustantivos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  id: 'gr-numero-sustantivos-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
   pcic: ['gramatica:C1:14', 'gramatica:C1:15', 'gramatica:C1:16', 'gramatica:C1:17', 'gramatica:C1:18', 'gramatica:C1:19'],
   title: 'El número en C1: dónde se mueve el acento, qué cambia de sentido',
   summary: 'Pluralizing a Spanish noun is not always just adding "-s". A handful of esdrújulos shift their stressed syllable in the plural, foreign borrowings hispanicize unpredictably, and some nouns simply mean something different in the plural than in the singular — "los celos" is not several instances of "el celo".',
@@ -23981,7 +24289,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-clases-adjetivos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  id: 'gr-clases-adjetivos-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
   pcic: ['gramatica:C1:24', 'gramatica:C1:25', 'gramatica:C1:26', 'gramatica:C1:27', 'gramatica:C1:28'],
   title: 'Cuyo, los adjetivos de color compuestos y el relacional que también califica',
   summary: '"Cuyo" agrees with the noun it precedes, not the one it points back to — a detail that trips up even careful speakers, since every other possessive in Spanish agrees with the possessor. Compound color adjectives break number agreement entirely, and some adjectives quietly do two different jobs depending on where you put them.',
@@ -24016,7 +24324,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-articulo-definido-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  id: 'gr-articulo-definido-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
   pcic: ['gramatica:C1:59', 'gramatica:C1:60', 'gramatica:C1:61', 'gramatica:C1:62', 'gramatica:C1:63', 'gramatica:C1:64',
          'gramatica:C1:65', 'gramatica:C1:66', 'gramatica:C1:67', 'gramatica:C1:68', 'gramatica:C1:69'],
   title: 'El artículo definido en C1: valor enfático y sustantivador',
@@ -24052,7 +24360,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-articulo-indefinido-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  id: 'gr-articulo-indefinido-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
   pcic: ['gramatica:C1:80', 'gramatica:C1:81', 'gramatica:C1:82', 'gramatica:C1:83', 'gramatica:C1:84', 'gramatica:C1:85',
          'gramatica:C1:86', 'gramatica:C1:87'],
   title: 'El artículo indefinido en C1: convertir un nombre propio en un tipo',
@@ -24088,7 +24396,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-nombres-escuetos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  id: 'gr-nombres-escuetos-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
   pcic: ['gramatica:C1:98', 'gramatica:C1:99', 'gramatica:C1:100', 'gramatica:C1:101', 'gramatica:C1:102'],
   title: 'Nombres escuetos: sin artículo, aunque el verbo lo pida',
   summary: 'Some Spanish predicates simply refuse a bare noun — "Luis comió bistec" is fine, but "se comió bistec" is not, because the reflexive demands a delimited object the bare noun cannot provide. Learning which predicates tolerate a bare noun, and which contexts strip the article on purpose, is what separates fluent registration from a word-for-word translation.',
@@ -24128,7 +24436,7 @@ window.STRAND_LESSONS = [
  * propios, interrogativos, exclamativos.
  * ========================================================================== */
 {
-  id: 'gr-demostrativos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  id: 'gr-demostrativos-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
   pcic: ['gramatica:C1:109', 'gramatica:C1:110', 'gramatica:C1:111', 'gramatica:C1:112', 'gramatica:C1:113', 'gramatica:C1:114', 'gramatica:C1:115'],
   title: 'Los demostrativos en C1: proximidad discursiva, condescendencia',
   summary: 'B2 used "este/aquel" to split a list into near and far items in space; C1 splits a list into near and far items in the DISCOURSE ITSELF — whichever noun was named last counts as closest, regardless of where anything actually is. And a demonstrative left trailing off, unfinished, can carry a whole attitude no adjective would need to spell out.',
@@ -24163,7 +24471,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-posesivos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  id: 'gr-posesivos-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
   pcic: ['gramatica:C1:123', 'gramatica:C1:124', 'gramatica:C1:125', 'gramatica:C1:126', 'gramatica:C1:127', 'gramatica:C1:128'],
   title: 'Los posesivos en C1: cuantificador, sufrimiento, y el "mío" que apela',
   summary: '"Esto tiene su dificultad" does not say the difficulty belongs to anyone — the possessive here works as an intensifier, roughly "quite a bit of". A whole family of C1 uses turns the possessive into something other than ownership: a vague reference to an unnamed set of things, or a fixed way of addressing someone with affection.',
@@ -24198,7 +24506,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-cuantificadores-propios-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-cuantificadores-propios-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:138', 'gramatica:C1:139', 'gramatica:C1:141', 'gramatica:C1:142', 'gramatica:C1:143', 'gramatica:C1:144',
          'gramatica:C1:145', 'gramatica:C1:146', 'gramatica:C1:147', 'gramatica:C1:148', 'gramatica:C1:150', 'gramatica:C1:151',
          'gramatica:C1:152', 'gramatica:C1:153', 'gramatica:C1:154', 'gramatica:C1:155', 'gramatica:C1:156', 'gramatica:C1:158',
@@ -24237,7 +24545,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-interrogativos-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-interrogativos-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:292', 'gramatica:C1:293', 'gramatica:C1:294', 'gramatica:C1:295', 'gramatica:C1:296', 'gramatica:C1:297', 'gramatica:C1:298'],
   title: 'Los interrogativos en C1: cuándo se separan, cuándo se coordinan',
   summary: 'Two interrogatives can sit in the same question only under specific conditions — a partitive phrase can split off from "quién" but not always from "cuál", and coordinating a question-word for a person with one for a place fails outright, while the same combination works fine once reordered.',
@@ -24271,7 +24579,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-exclamativos-c1', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
+  id: 'gr-exclamativos-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 8, theme: null,
   pcic: ['gramatica:C1:305', 'gramatica:C1:306', 'gramatica:C1:307', 'gramatica:C1:308', 'gramatica:C1:309', 'gramatica:C1:310'],
   title: 'Los exclamativos en C1: cuánto + valorativo, dónde, y el orden fijo',
   summary: '"¡Cuántos inocentes le habrán creído!" packs a conjecture about the past into an exclamation about quantity — the futuro perfecto here is not future at all, and the whole construction depends on an inflected evaluative adjective agreeing with the noun it quantifies.',
@@ -24310,7 +24618,7 @@ window.STRAND_LESSONS = [
  * strand's dc-intensificacion-c1 for a 24-point subsection).
  * ========================================================================== */
 {
-  id: 'gr-pronombre-personal-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-pronombre-personal-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:189', 'gramatica:C1:191', 'gramatica:C1:194', 'gramatica:C1:198', 'gramatica:C1:199', 'gramatica:C1:201',
          'gramatica:C1:205', 'gramatica:C1:220', 'gramatica:C1:222', 'gramatica:C1:224', 'gramatica:C1:225', 'gramatica:C1:228',
          'gramatica:C1:230', 'gramatica:C1:232'],
@@ -24351,7 +24659,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-relativos-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-relativos-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:259', 'gramatica:C1:260', 'gramatica:C1:261', 'gramatica:C1:264', 'gramatica:C1:266', 'gramatica:C1:268',
          'gramatica:C1:269', 'gramatica:C1:271', 'gramatica:C1:272', 'gramatica:C1:273', 'gramatica:C1:275', 'gramatica:C1:276',
          'gramatica:C1:277', 'gramatica:C1:278', 'gramatica:C1:280'],
@@ -24392,7 +24700,7 @@ window.STRAND_LESSONS = [
  * BATCH — C1 grammar, part 4: adverbios nucleares, externos, conjuntivos.
  * ========================================================================== */
 {
-  id: 'gr-adverbios-nucleares-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-adverbios-nucleares-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:329', 'gramatica:C1:331', 'gramatica:C1:332', 'gramatica:C1:333', 'gramatica:C1:334', 'gramatica:C1:335',
          'gramatica:C1:336', 'gramatica:C1:337', 'gramatica:C1:339', 'gramatica:C1:341'],
   title: 'Adverbios nucleares en C1: dónde va el modo, y por qué',
@@ -24429,7 +24737,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adverbios-externos-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-adverbios-externos-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:351', 'gramatica:C1:353', 'gramatica:C1:354', 'gramatica:C1:355'],
   title: 'Adverbios externos al dictum: el punto de vista que envuelve la frase',
   summary: '"Javier piensa erróneamente que el problema está resuelto" does not describe how Javier thinks — it is the SPEAKER judging Javier\'s belief from outside the sentence entirely. These adverbs sit apart from everything they modify, commenting on a whole proposition rather than describing any part of the action within it.',
@@ -24464,7 +24772,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adverbios-conjuntivos-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-adverbios-conjuntivos-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:374', 'gramatica:C1:375', 'gramatica:C1:376', 'gramatica:C1:377', 'gramatica:C1:378'],
   title: 'Adverbios conjuntivos: matizar una coordinación sin ser una conjunción',
   summary: '"Tampoco" does not always negate — in "si tú sabes mucho, él tampoco se queda atrás" it marks that he is keeping equal pace, not falling behind. Adverbs like this one connect two statements the way a conjunction would, but each carries its own precise shade of consequence, restriction or concession that a plain "y" or "pero" cannot.',
@@ -24506,7 +24814,7 @@ window.STRAND_LESSONS = [
  * surveys the tense system itself, tense by tense.
  * ========================================================================== */
 {
-  id: 'gr-tiempos-indicativo-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-tiempos-indicativo-c1', canDo: 'use tiempos verbales de indicativo as C1 uses it', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:390', 'gramatica:C1:392', 'gramatica:C1:393', 'gramatica:C1:394', 'gramatica:C1:395', 'gramatica:C1:397',
          'gramatica:C1:398', 'gramatica:C1:400', 'gramatica:C1:402', 'gramatica:C1:404', 'gramatica:C1:406', 'gramatica:C1:407',
          'gramatica:C1:409'],
@@ -24544,7 +24852,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-tiempos-subjuntivo-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-tiempos-subjuntivo-c1', canDo: 'use tiempos verbales de subjuntivo as C1 uses it', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:451', 'gramatica:C1:452', 'gramatica:C1:454', 'gramatica:C1:455', 'gramatica:C1:456',
          'gramatica:C1:458', 'gramatica:C1:461', 'gramatica:C1:462', 'gramatica:C1:467', 'gramatica:C1:471'],
   title: 'Tiempos verbales de subjuntivo en C1: lo que decide la negación',
@@ -24581,7 +24889,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-imperativo-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-imperativo-c1', canDo: 'use imperativo as C1 uses it', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:496', 'gramatica:C1:498', 'gramatica:C1:499', 'gramatica:C1:501', 'gramatica:C1:502', 'gramatica:C1:503'],
   title: 'El imperativo en C1: cuando no manda nada',
   summary: 'La mayoría de los imperativos en C1 no son órdenes en absoluto — son fórmulas fijas que reprochan, ironizan, ruegan o plantean una condición. Reconocerlos exige separar la forma (imperativo) del acto de habla real, que casi nunca es "mandar".',
@@ -24616,7 +24924,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-formas-no-personales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-formas-no-personales-c1', canDo: 'use formas no personales as C1 uses it', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:517', 'gramatica:C1:518', 'gramatica:C1:519', 'gramatica:C1:520', 'gramatica:C1:523',
          'gramatica:C1:524', 'gramatica:C1:525', 'gramatica:C1:526', 'gramatica:C1:528', 'gramatica:C1:529', 'gramatica:C1:530'],
   title: 'Formas no personales en C1: infinitivo, gerundio y participio fuera del verbo',
@@ -24652,7 +24960,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-complementos-nominal-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-complementos-nominal-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:555', 'gramatica:C1:556', 'gramatica:C1:557', 'gramatica:C1:558'],
   title: 'Complementos del nombre en C1: la ambigüedad como norma',
   summary: 'Un complemento con "de" después de un nombre puede leerse de dos maneras opuestas, un adjetivo puede ser en realidad un participio con agente implícito, y el orden de dos adjetivos relacionales no es libre. En C1 aprender el sintagma nominal es aprender a desambiguar, no solo a construir.',
@@ -24687,7 +24995,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-complementos-adjetival-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-complementos-adjetival-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:569', 'gramatica:C1:571', 'gramatica:C1:572', 'gramatica:C1:574'],
   title: 'Complementos del adjetivo en C1: interrogativas, superlativos con "lo" y cuantificadores coloquiales',
   summary: 'El adjetivo en C1 admite una interrogativa indirecta entera como complemento, forma superlativos neutros con "lo" cuya concordancia vacila entre dos normas, y en Hispanoamérica puede intensificarse con construcciones que en España sonarían extrañas. Un solo sintagma adjetival, tres fuentes distintas de variación.',
@@ -24722,7 +25030,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-nucleo-verbal-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-nucleo-verbal-c1', canDo: 'use núcleo del sintagma verbal as C1 uses it', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:583', 'gramatica:C1:586', 'gramatica:C1:587', 'gramatica:C1:588', 'gramatica:C1:589',
          'gramatica:C1:591', 'gramatica:C1:592', 'gramatica:C1:593', 'gramatica:C1:594',
          'gramatica:C1:596', 'gramatica:C1:598', 'gramatica:C1:600', 'gramatica:C1:601', 'gramatica:C1:602', 'gramatica:C1:603', 'gramatica:C1:604'],
@@ -24759,7 +25067,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-complementos-verbales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-complementos-verbales-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:619', 'gramatica:C1:620', 'gramatica:C1:621', 'gramatica:C1:622', 'gramatica:C1:623',
          'gramatica:C1:624', 'gramatica:C1:625', 'gramatica:C1:626', 'gramatica:C1:627', 'gramatica:C1:628', 'gramatica:C1:629', 'gramatica:C1:630', 'gramatica:C1:631'],
   title: 'Complementos verbales en C1: leísmo, laísmo, loísmo y el predicativo del objeto',
@@ -24796,7 +25104,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-concordancia-oracional-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-concordancia-oracional-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:639', 'gramatica:C1:640', 'gramatica:C1:641', 'gramatica:C1:642'],
   title: 'Concordancia ad sensum en C1: cuando el sentido gana a la gramática',
   summary: 'Sujetos como "la mayoría de", "un montón de" o "la mitad de" son singulares en su forma pero denotan una pluralidad de individuos — y en C1 el verbo puede concordar con esa pluralidad de sentido en vez de con la forma. Los colectivos como "gente" o "familia", en cambio, no admiten este salto: ahí la concordancia gramatical es obligatoria.',
@@ -24830,7 +25138,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-sub-sustantivas-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-sub-sustantivas-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:662', 'gramatica:C1:663', 'gramatica:C1:665', 'gramatica:C1:666', 'gramatica:C1:667',
          'gramatica:C1:669', 'gramatica:C1:670', 'gramatica:C1:671'],
   title: 'Subordinadas sustantivas en C1: cuándo el infinitivo reemplaza a "que + verbo"',
@@ -24866,7 +25174,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-sub-adjetivas-relativo-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-sub-adjetivas-relativo-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:677', 'gramatica:C1:679', 'gramatica:C1:680', 'gramatica:C1:682', 'gramatica:C1:683',
          'gramatica:C1:685', 'gramatica:C1:686', 'gramatica:C1:687', 'gramatica:C1:690', 'gramatica:C1:691',
          'gramatica:C1:693', 'gramatica:C1:694', 'gramatica:C1:695', 'gramatica:C1:696', 'gramatica:C1:698', 'gramatica:C1:699'],
@@ -24904,7 +25212,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-sub-adv-temporales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-sub-adv-temporales-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:719', 'gramatica:C1:721', 'gramatica:C1:723', 'gramatica:C1:724', 'gramatica:C1:727',
          'gramatica:C1:730', 'gramatica:C1:732', 'gramatica:C1:733', 'gramatica:C1:734', 'gramatica:C1:735',
          'gramatica:C1:737', 'gramatica:C1:739', 'gramatica:C1:740'],
@@ -24942,7 +25250,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-sub-adv-lugar-modo-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-sub-adv-lugar-modo-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:742', 'gramatica:C1:744', 'gramatica:C1:745', 'gramatica:C1:746'],
   title: 'Subordinadas de lugar y de modo en C1: "para donde" y el matiz condicional de "como si"',
   summary: 'Dos tipos de subordinadas adverbiales pequeñas pero con matices propios: "donde" combinado con preposiciones de dirección o de permanencia, sin necesidad de antecedente expreso, y "como si" + subjuntivo, que no solo compara sino que introduce un matiz condicional dentro de la comparación.',
@@ -24974,7 +25282,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-sub-adv-causales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-sub-adv-causales-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:749', 'gramatica:C1:750', 'gramatica:C1:752', 'gramatica:C1:753', 'gramatica:C1:754'],
   title: 'Subordinadas causales en C1: énfasis con "porque" antepuesto, y tres conectores con matiz propio',
   summary: 'Anteponer "porque" no es solo una cuestión de orden — añade un matiz enfático que "porque" pospuesto no tiene. Y tres conectores causales muy parecidos entre sí ("a causa de que", "gracias a que", "por culpa de que") se reparten el territorio según si la circunstancia es neutra, positiva o negativa.',
@@ -25006,7 +25314,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-sub-adv-finales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-sub-adv-finales-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:756', 'gramatica:C1:758', 'gramatica:C1:759', 'gramatica:C1:761', 'gramatica:C1:763',
          'gramatica:C1:765', 'gramatica:C1:766', 'gramatica:C1:768', 'gramatica:C1:769',
          'gramatica:C1:771', 'gramatica:C1:773', 'gramatica:C1:774', 'gramatica:C1:775'],
@@ -25043,7 +25351,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-sub-adv-condicionales-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-sub-adv-condicionales-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:777', 'gramatica:C1:779', 'gramatica:C1:780', 'gramatica:C1:783', 'gramatica:C1:784',
          'gramatica:C1:786', 'gramatica:C1:787', 'gramatica:C1:788', 'gramatica:C1:791', 'gramatica:C1:792'],
   title: 'Subordinadas condicionales en C1: registros, matices y la prótasis que no acaba',
@@ -25080,7 +25388,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-sub-adv-consecutivas-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-sub-adv-consecutivas-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:795', 'gramatica:C1:797', 'gramatica:C1:800', 'gramatica:C1:801', 'gramatica:C1:802',
          'gramatica:C1:803', 'gramatica:C1:805', 'gramatica:C1:806', 'gramatica:C1:809', 'gramatica:C1:810',
          'gramatica:C1:814', 'gramatica:C1:815', 'gramatica:C1:817', 'gramatica:C1:818', 'gramatica:C1:819',
@@ -25119,7 +25427,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-sub-adv-comparativas-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-sub-adv-comparativas-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:828', 'gramatica:C1:829', 'gramatica:C1:832', 'gramatica:C1:836', 'gramatica:C1:837',
          'gramatica:C1:838', 'gramatica:C1:843', 'gramatica:C1:844', 'gramatica:C1:847', 'gramatica:C1:849',
          'gramatica:C1:850', 'gramatica:C1:851', 'gramatica:C1:853'],
@@ -25156,7 +25464,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-sub-adv-concesivas-c1', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
+  id: 'gr-sub-adv-concesivas-c1', status: 'reference', strand: 'grammar', cefr: 'C1', level: 9, theme: null,
   pcic: ['gramatica:C1:856', 'gramatica:C1:857', 'gramatica:C1:859', 'gramatica:C1:860', 'gramatica:C1:861', 'gramatica:C1:862', 'gramatica:C1:863'],
   title: 'Subordinadas concesivas en C1: reduplicación universal, ponderación y el escalar "ni siquiera"',
   summary: 'Más allá de "aunque", las concesivas en C1 incluyen fórmulas de reduplicación que cubren cualquier alternativa ("digan lo que digan"), construcciones ponderativas donde la propia cantidad o intensidad de algo se convierte en motivo de sorpresa ("con la de camisas que tienes..."), y una concesiva escalar que lleva la hipótesis al extremo ("ni siquiera si...").',
@@ -25191,7 +25499,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-existencia-inexistencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-existencia-inexistencia-c1', canDo: 'talk about existence and absence at C1 precision', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1', 'nociones_generales:C1:2', 'nociones_generales:C1:3', 'nociones_generales:C1:4',
          'nociones_generales:C1:5', 'nociones_generales:C1:6', 'nociones_generales:C1:7', 'nociones_generales:C1:8',
          'nociones_generales:C1:9', 'nociones_generales:C1:10', 'nociones_generales:C1:11', 'nociones_generales:C1:12',
@@ -25234,7 +25542,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-presencia-ausencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-presencia-ausencia-c1', canDo: 'talk about presence and absence idiomatically — estar hasta arriba, cuatro gatos', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:29', 'nociones_generales:C1:30', 'nociones_generales:C1:31', 'nociones_generales:C1:32',
          'nociones_generales:C1:33', 'nociones_generales:C1:34', 'nociones_generales:C1:35', 'nociones_generales:C1:36',
          'nociones_generales:C1:37', 'nociones_generales:C1:38', 'nociones_generales:C1:39', 'nociones_generales:C1:40',
@@ -25277,7 +25585,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-disponibilidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-disponibilidad-c1', canDo: 'talk about availability idiomatically — a mano, no estar para nadie', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:69', 'nociones_generales:C1:70', 'nociones_generales:C1:71', 'nociones_generales:C1:72',
          'nociones_generales:C1:73', 'nociones_generales:C1:74', 'nociones_generales:C1:75', 'nociones_generales:C1:76', 'nociones_generales:C1:77'],
   title: 'Disponibilidad en C1: desde "a mano" hasta "no estar para nadie"',
@@ -25318,7 +25626,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-cualidad-general-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-cualidad-general-c1', canDo: 'talk about general qualities at C1 precision', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:84', 'nociones_generales:C1:85', 'nociones_generales:C1:86', 'nociones_generales:C1:87',
          'nociones_generales:C1:88', 'nociones_generales:C1:89', 'nociones_generales:C1:90', 'nociones_generales:C1:91', 'nociones_generales:C1:92'],
   title: 'Cualidad general en C1: naturaleza, apariencia y composición',
@@ -25359,7 +25667,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-acontecimiento-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-acontecimiento-c1', canDo: 'talk about events at C1 precision', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:104', 'nociones_generales:C1:105', 'nociones_generales:C1:106', 'nociones_generales:C1:107', 'nociones_generales:C1:108'],
   title: 'Acontecimiento en C1: de la odisea al hecho aislado',
   summary: 'Describir un acontecimiento en C1 exige precisar de qué tipo es — ¿aislado, decisivo, casual, anecdótico? — y disponer de verbos como "estallar" o "desencadenarse" para narrar su inicio con la fuerza que muchos sucesos históricos o dramáticos requieren.',
@@ -25398,7 +25706,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-certeza-incertidumbre-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-certeza-incertidumbre-c1', canDo: 'talk about certainty and doubt idiomatically — cabe la posibilidad, sin lugar a dudas', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:115', 'nociones_generales:C1:116', 'nociones_generales:C1:117', 'nociones_generales:C1:118',
          'nociones_generales:C1:119', 'nociones_generales:C1:120', 'nociones_generales:C1:121', 'nociones_generales:C1:122',
          'nociones_generales:C1:123', 'nociones_generales:C1:124', 'nociones_generales:C1:125', 'nociones_generales:C1:126', 'nociones_generales:C1:127'],
@@ -25441,7 +25749,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-realidad-ficcion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-realidad-ficcion-c1', canDo: 'talk about the real and the invented at C1 precision', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:146', 'nociones_generales:C1:147', 'nociones_generales:C1:148', 'nociones_generales:C1:149',
          'nociones_generales:C1:150', 'nociones_generales:C1:151', 'nociones_generales:C1:152', 'nociones_generales:C1:153',
          'nociones_generales:C1:154', 'nociones_generales:C1:155', 'nociones_generales:C1:156', 'nociones_generales:C1:157',
@@ -25484,7 +25792,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-necesidad-obligacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-necesidad-obligacion-c1', canDo: 'talk about necessity and obligation idiomatically, including no quedar más remedio', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:181', 'nociones_generales:C1:182', 'nociones_generales:C1:183', 'nociones_generales:C1:184',
          'nociones_generales:C1:185', 'nociones_generales:C1:186', 'nociones_generales:C1:187', 'nociones_generales:C1:188',
          'nociones_generales:C1:189', 'nociones_generales:C1:190', 'nociones_generales:C1:191', 'nociones_generales:C1:192'],
@@ -25526,7 +25834,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-generalidad-especificidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-generalidad-especificidad-c1', canDo: 'talk about the general and the specific idiomatically — por lo general, centrarse en', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:202', 'nociones_generales:C1:203', 'nociones_generales:C1:204', 'nociones_generales:C1:205',
          'nociones_generales:C1:206', 'nociones_generales:C1:207', 'nociones_generales:C1:208', 'nociones_generales:C1:209',
          'nociones_generales:C1:210', 'nociones_generales:C1:211', 'nociones_generales:C1:212', 'nociones_generales:C1:213', 'nociones_generales:C1:214'],
@@ -25568,7 +25876,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-cantidad-numerica-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-cantidad-numerica-c1', canDo: 'talk about numbers and figures idiomatically — por lo alto, por lo bajo', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:223', 'nociones_generales:C1:224', 'nociones_generales:C1:225', 'nociones_generales:C1:226'],
   title: 'Cantidad numérica en C1: calcular "por lo alto" o "por lo bajo"',
   summary: 'Un vocabulario pequeño pero preciso para hablar de números y cálculos: distinguir un cálculo exacto de uno aproximado, y saber si esa aproximación se hizo redondeando hacia arriba o hacia abajo.',
@@ -25601,7 +25909,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-cantidad-relativa-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-cantidad-relativa-c1', canDo: 'talk about approximate quantity at C1 precision', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:236', 'nociones_generales:C1:237', 'nociones_generales:C1:238', 'nociones_generales:C1:239',
          'nociones_generales:C1:240', 'nociones_generales:C1:241', 'nociones_generales:C1:242', 'nociones_generales:C1:243',
          'nociones_generales:C1:244', 'nociones_generales:C1:245', 'nociones_generales:C1:246', 'nociones_generales:C1:247', 'nociones_generales:C1:248'],
@@ -25643,7 +25951,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-aumento-disminucion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-aumento-disminucion-c1', canDo: 'talk about rises and falls idiomatically — ir en aumento, dispararse', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:268', 'nociones_generales:C1:269', 'nociones_generales:C1:270', 'nociones_generales:C1:271',
          'nociones_generales:C1:272', 'nociones_generales:C1:273', 'nociones_generales:C1:274', 'nociones_generales:C1:275',
          'nociones_generales:C1:276', 'nociones_generales:C1:277', 'nociones_generales:C1:278'],
@@ -25685,7 +25993,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-proporcion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-proporcion-c1', canDo: 'talk about proportion idiomatically, including tres de cada diez', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:290', 'nociones_generales:C1:291', 'nociones_generales:C1:292', 'nociones_generales:C1:293', 'nociones_generales:C1:294'],
   title: 'Proporción en C1: fracciones, cuotas y "tres de cada diez"',
   summary: 'Hablar de proporciones exige un vocabulario propio para la parte de un todo (fracción, cuota, décimo) y estructuras específicas para relacionar cantidades entre sí, ya sea a partes iguales o expresadas como una razón: "tres de cada diez".',
@@ -25723,7 +26031,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-grado-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-grado-c1', canDo: 'talk about degree and intensity idiomatically — lo grande que es, por todo lo alto', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:301', 'nociones_generales:C1:303', 'nociones_generales:C1:304', 'nociones_generales:C1:305',
          'nociones_generales:C1:306', 'nociones_generales:C1:307', 'nociones_generales:C1:308', 'nociones_generales:C1:309', 'nociones_generales:C1:310'],
   title: 'Grado en C1: de "lo grande que es" a "por todo lo alto"',
@@ -25764,7 +26072,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-medidas-generales-tamano-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-medidas-generales-tamano-c1', canDo: 'talk about measurement and size idiomatically — a ojo, gigantesco', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:327', 'nociones_generales:C1:328', 'nociones_generales:C1:329', 'nociones_generales:C1:330',
          'nociones_generales:C1:332', 'nociones_generales:C1:333', 'nociones_generales:C1:334', 'nociones_generales:C1:335',
          'nociones_generales:C1:336', 'nociones_generales:C1:337', 'nociones_generales:C1:338', 'nociones_generales:C1:339',
@@ -25808,7 +26116,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-distancia-velocidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-distancia-velocidad-c1', canDo: 'talk about distance y velocidad idiomatically — año luz, exceso de velocidad', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:343', 'nociones_generales:C1:344', 'nociones_generales:C1:345', 'nociones_generales:C1:346',
          'nociones_generales:C1:347', 'nociones_generales:C1:348', 'nociones_generales:C1:349', 'nociones_generales:C1:350',
          'nociones_generales:C1:351', 'nociones_generales:C1:352'],
@@ -25849,7 +26157,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-peso-superficie-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-peso-superficie-c1', canDo: 'talk about weight and area idiomatically — peso bruto, de norte a sur', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:353', 'nociones_generales:C1:354', 'nociones_generales:C1:355', 'nociones_generales:C1:356',
          'nociones_generales:C1:357', 'nociones_generales:C1:358', 'nociones_generales:C1:359', 'nociones_generales:C1:360',
          'nociones_generales:C1:361', 'nociones_generales:C1:362', 'nociones_generales:C1:363', 'nociones_generales:C1:364', 'nociones_generales:C1:365'],
@@ -25892,7 +26200,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-volumen-capacidad-presion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-volumen-capacidad-presion-c1', canDo: 'talk about volume, capacity and pressure idiomatically — dar volumen al cabello, estar a tope', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:366', 'nociones_generales:C1:367', 'nociones_generales:C1:368', 'nociones_generales:C1:369',
          'nociones_generales:C1:370', 'nociones_generales:C1:371', 'nociones_generales:C1:372', 'nociones_generales:C1:373',
          'nociones_generales:C1:374', 'nociones_generales:C1:375', 'nociones_generales:C1:376', 'nociones_generales:C1:377',
@@ -25936,7 +26244,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-temperatura-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-temperatura-c1', canDo: 'talk about temperature idiomatically — un frío que pela, al rojo vivo', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:378', 'nociones_generales:C1:379', 'nociones_generales:C1:380', 'nociones_generales:C1:381',
          'nociones_generales:C1:383', 'nociones_generales:C1:384', 'nociones_generales:C1:385', 'nociones_generales:C1:386',
          'nociones_generales:C1:387', 'nociones_generales:C1:388', 'nociones_generales:C1:389', 'nociones_generales:C1:390',
@@ -25979,7 +26287,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-localizacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-localizacion-c1', canDo: 'talk about location idiomatically, including en paradero desconocido', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:469', 'nociones_generales:C1:470', 'nociones_generales:C1:471', 'nociones_generales:C1:472',
          'nociones_generales:C1:473', 'nociones_generales:C1:474', 'nociones_generales:C1:475', 'nociones_generales:C1:476'],
   title: 'Localización en C1: ubicar, situar y "en paradero desconocido"',
@@ -26019,7 +26327,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-posicion-absoluta-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-posicion-absoluta-c1', canDo: 'talk about posture and orientation at C1 precision', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:484', 'nociones_generales:C1:485', 'nociones_generales:C1:486', 'nociones_generales:C1:487',
          'nociones_generales:C1:488', 'nociones_generales:C1:489', 'nociones_generales:C1:490', 'nociones_generales:C1:491',
          'nociones_generales:C1:492', 'nociones_generales:C1:493', 'nociones_generales:C1:494', 'nociones_generales:C1:495'],
@@ -26060,7 +26368,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-posicion-relativa-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-posicion-relativa-c1', canDo: 'talk about relative position idiomatically — a la vuelta de la esquina, al alcance de la mano', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:504', 'nociones_generales:C1:505', 'nociones_generales:C1:506', 'nociones_generales:C1:507',
          'nociones_generales:C1:508', 'nociones_generales:C1:509', 'nociones_generales:C1:510', 'nociones_generales:C1:511',
          'nociones_generales:C1:512', 'nociones_generales:C1:513', 'nociones_generales:C1:514', 'nociones_generales:C1:515',
@@ -26104,7 +26412,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-distancia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-distancia-c1', canDo: 'talk about distance idiomatically — manzanas, acortar distancias', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:535', 'nociones_generales:C1:536', 'nociones_generales:C1:537', 'nociones_generales:C1:538',
          'nociones_generales:C1:539', 'nociones_generales:C1:540', 'nociones_generales:C1:541', 'nociones_generales:C1:542',
          'nociones_generales:C1:543', 'nociones_generales:C1:544', 'nociones_generales:C1:545', 'nociones_generales:C1:546'],
@@ -26146,7 +26454,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-movimiento-estabilidad-sustantivos-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-movimiento-estabilidad-sustantivos-c1', canDo: 'talk about kinds of movement at C1 precision', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:559', 'nociones_generales:C1:560', 'nociones_generales:C1:561', 'nociones_generales:C1:562',
          'nociones_generales:C1:563', 'nociones_generales:C1:564', 'nociones_generales:C1:565', 'nociones_generales:C1:566',
          'nociones_generales:C1:567', 'nociones_generales:C1:568'],
@@ -26187,7 +26495,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-movimiento-verbos-especificos-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-movimiento-verbos-especificos-c1', canDo: 'talk about specific verbs of movement idiomatically — vagar, tambalearse', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:569', 'nociones_generales:C1:570', 'nociones_generales:C1:571', 'nociones_generales:C1:572',
          'nociones_generales:C1:573', 'nociones_generales:C1:574', 'nociones_generales:C1:575', 'nociones_generales:C1:576',
          'nociones_generales:C1:577', 'nociones_generales:C1:578', 'nociones_generales:C1:579', 'nociones_generales:C1:580', 'nociones_generales:C1:581'],
@@ -26230,7 +26538,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-movimiento-locuciones-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-movimiento-locuciones-c1', canDo: 'talk about movement idioms idiomatically — dar marcha atrás, ir a la deriva', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:582', 'nociones_generales:C1:583', 'nociones_generales:C1:584', 'nociones_generales:C1:585',
          'nociones_generales:C1:586', 'nociones_generales:C1:587', 'nociones_generales:C1:588', 'nociones_generales:C1:589',
          'nociones_generales:C1:590', 'nociones_generales:C1:591', 'nociones_generales:C1:592', 'nociones_generales:C1:593', 'nociones_generales:C1:594'],
@@ -26273,7 +26581,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-orientacion-direccion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-orientacion-direccion-c1', canDo: 'talk about orientation and direction idiomatically — con rumbo a, sin rumbo fijo', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:619', 'nociones_generales:C1:620', 'nociones_generales:C1:621', 'nociones_generales:C1:622',
          'nociones_generales:C1:623', 'nociones_generales:C1:624', 'nociones_generales:C1:625', 'nociones_generales:C1:626',
          'nociones_generales:C1:627', 'nociones_generales:C1:628', 'nociones_generales:C1:629'],
@@ -26315,7 +26623,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-orden-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-orden-c1', canDo: 'talk about order and sequence idiomatically, including por orden de prioridad', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:636', 'nociones_generales:C1:637', 'nociones_generales:C1:638', 'nociones_generales:C1:639',
          'nociones_generales:C1:640', 'nociones_generales:C1:641', 'nociones_generales:C1:642', 'nociones_generales:C1:643'],
   title: 'Orden en C1: series, secuencias y "por orden de prioridad"',
@@ -26356,7 +26664,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-origen-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-origen-c1', canDo: 'talk about origin idiomatically — semilla, raíz', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:649', 'nociones_generales:C1:650', 'nociones_generales:C1:651', 'nociones_generales:C1:652', 'nociones_generales:C1:653'],
   title: 'Origen en C1: la "semilla" y la "raíz" de las cosas',
   summary: 'El origen figurado de algo se expresa en español con metáforas vegetales — una idea tiene su "semilla", un problema tiene su "raíz", y para eliminarlo del todo hay que atacarlo "de raíz".',
@@ -26395,7 +26703,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-referencias-generales-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-referencias-generales-c1', canDo: 'talk about general time reference idiomatically — a primeros de mes, entre horas', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:657', 'nociones_generales:C1:658', 'nociones_generales:C1:659', 'nociones_generales:C1:660',
          'nociones_generales:C1:661', 'nociones_generales:C1:662', 'nociones_generales:C1:663', 'nociones_generales:C1:664',
          'nociones_generales:C1:665', 'nociones_generales:C1:666', 'nociones_generales:C1:667', 'nociones_generales:C1:668',
@@ -26439,7 +26747,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-localizacion-presente-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-localizacion-presente-c1', canDo: 'talk about placing something in the present idiomatically, including estar al día', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:687', 'nociones_generales:C1:688', 'nociones_generales:C1:689', 'nociones_generales:C1:690',
          'nociones_generales:C1:691', 'nociones_generales:C1:692', 'nociones_generales:C1:693', 'nociones_generales:C1:694',
          'nociones_generales:C1:695', 'nociones_generales:C1:696'],
@@ -26480,7 +26788,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-localizacion-pasado-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-localizacion-pasado-c1', canDo: 'talk about placing something in the past idiomatically, including en tiempos de', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:697', 'nociones_generales:C1:698', 'nociones_generales:C1:699', 'nociones_generales:C1:700',
          'nociones_generales:C1:701', 'nociones_generales:C1:702', 'nociones_generales:C1:703', 'nociones_generales:C1:704',
          'nociones_generales:C1:705', 'nociones_generales:C1:706', 'nociones_generales:C1:707', 'nociones_generales:C1:708', 'nociones_generales:C1:709'],
@@ -26523,7 +26831,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-localizacion-futuro-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-localizacion-futuro-c1', canDo: 'talk about placing something in the future idiomatically — de un momento a otro, a la larga', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:710', 'nociones_generales:C1:711', 'nociones_generales:C1:712', 'nociones_generales:C1:713',
          'nociones_generales:C1:714', 'nociones_generales:C1:715', 'nociones_generales:C1:716', 'nociones_generales:C1:717',
          'nociones_generales:C1:718', 'nociones_generales:C1:719', 'nociones_generales:C1:720', 'nociones_generales:C1:721'],
@@ -26565,7 +26873,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-simultaneidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-simultaneidad-c1', canDo: 'talk about simultaneity idiomatically — al tiempo que, en el mismo instante en que', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:754', 'nociones_generales:C1:755', 'nociones_generales:C1:756', 'nociones_generales:C1:757',
          'nociones_generales:C1:758', 'nociones_generales:C1:759', 'nociones_generales:C1:760'],
   title: 'Simultaneidad en C1: "al tiempo que" y "en el mismo instante en que"',
@@ -26606,7 +26914,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-anterioridad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-anterioridad-c1', canDo: 'talk about what came before idiomatically, including de antemano', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:762', 'nociones_generales:C1:763', 'nociones_generales:C1:764', 'nociones_generales:C1:765',
          'nociones_generales:C1:766', 'nociones_generales:C1:767', 'nociones_generales:C1:768', 'nociones_generales:C1:769'],
   title: 'Anterioridad en C1: precedentes, antepasados y "de antemano"',
@@ -26646,7 +26954,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-posterioridad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-posterioridad-c1', canDo: 'talk about what came after idiomatically — apenas, con posterioridad', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:771', 'nociones_generales:C1:772', 'nociones_generales:C1:773', 'nociones_generales:C1:774',
          'nociones_generales:C1:775', 'nociones_generales:C1:776', 'nociones_generales:C1:777', 'nociones_generales:C1:778',
          'nociones_generales:C1:779', 'nociones_generales:C1:780', 'nociones_generales:C1:781', 'nociones_generales:C1:782', 'nociones_generales:C1:783'],
@@ -26689,7 +26997,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-puntualidad-singularidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-puntualidad-singularidad-c1', canDo: 'talk about punctuality and one-off events idiomatically — por los pelos, sin precedentes', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:786', 'nociones_generales:C1:787', 'nociones_generales:C1:788', 'nociones_generales:C1:789', 'nociones_generales:C1:913'],
   title: 'Puntualidad y singularidad en C1: "por los pelos" y "sin precedentes"',
   summary: 'La puntualidad admite matices culturales fijados en la lengua ("puntualidad británica/germánica") y un margen mínimo de éxito ("llegar por los pelos"); "sin precedentes" cierra este bloque describiendo algo tan singular que nunca antes había ocurrido nada parecido.',
@@ -26727,7 +27035,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-anticipacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-anticipacion-c1', canDo: 'talk about doing things in advance idiomatically, including por anticipado', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:790', 'nociones_generales:C1:791', 'nociones_generales:C1:792', 'nociones_generales:C1:793',
          'nociones_generales:C1:794', 'nociones_generales:C1:795', 'nociones_generales:C1:796', 'nociones_generales:C1:797',
          'nociones_generales:C1:798', 'nociones_generales:C1:799', 'nociones_generales:C1:800', 'nociones_generales:C1:801',
@@ -26771,7 +27079,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-retraso-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-retraso-c1', canDo: 'talk about delay at C1 precision', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:804', 'nociones_generales:C1:805', 'nociones_generales:C1:806',
          'nociones_generales:C1:807', 'nociones_generales:C1:808', 'nociones_generales:C1:809'],
   title: 'Retraso en C1: atraso, demora y aplazamiento',
@@ -26812,7 +27120,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-inicio-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-inicio-c1', canDo: 'talk about beginnings idiomatically — dar comienzo, ¡manos a la obra!', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:810', 'nociones_generales:C1:811', 'nociones_generales:C1:812', 'nociones_generales:C1:813',
          'nociones_generales:C1:814', 'nociones_generales:C1:815', 'nociones_generales:C1:816', 'nociones_generales:C1:817',
          'nociones_generales:C1:818', 'nociones_generales:C1:819', 'nociones_generales:C1:820', 'nociones_generales:C1:821',
@@ -26856,7 +27164,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-finalizacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-finalizacion-c1', canDo: 'talk about endings idiomatically, including acabar por volverme loco', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:824', 'nociones_generales:C1:825', 'nociones_generales:C1:826', 'nociones_generales:C1:827',
          'nociones_generales:C1:828', 'nociones_generales:C1:829', 'nociones_generales:C1:830', 'nociones_generales:C1:831',
          'nociones_generales:C1:832', 'nociones_generales:C1:833', 'nociones_generales:C1:834', 'nociones_generales:C1:835',
@@ -26900,7 +27208,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-continuacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-continuacion-c1', canDo: 'talk about continuation idiomatically, including sin cesar', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:838', 'nociones_generales:C1:839', 'nociones_generales:C1:840', 'nociones_generales:C1:841',
          'nociones_generales:C1:842', 'nociones_generales:C1:843', 'nociones_generales:C1:844', 'nociones_generales:C1:845',
          'nociones_generales:C1:846', 'nociones_generales:C1:847', 'nociones_generales:C1:848', 'nociones_generales:C1:849', 'nociones_generales:C1:850'],
@@ -26943,7 +27251,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-repeticion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-repeticion-c1', canDo: 'talk about repetition idiomatically, including erre que erre', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:851', 'nociones_generales:C1:852', 'nociones_generales:C1:853', 'nociones_generales:C1:854',
          'nociones_generales:C1:855', 'nociones_generales:C1:856', 'nociones_generales:C1:857', 'nociones_generales:C1:858', 'nociones_generales:C1:859'],
   title: 'Repetición en C1: recurrente, turnarse y "erre que erre"',
@@ -26984,7 +27292,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-duracion-transcurso-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-duracion-transcurso-c1', canDo: 'talk about duration idiomatically — fugaz, perpetuo', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:861', 'nociones_generales:C1:862', 'nociones_generales:C1:863', 'nociones_generales:C1:864',
          'nociones_generales:C1:865', 'nociones_generales:C1:866', 'nociones_generales:C1:867', 'nociones_generales:C1:868',
          'nociones_generales:C1:869', 'nociones_generales:C1:870', 'nociones_generales:C1:871', 'nociones_generales:C1:872',
@@ -27027,7 +27335,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-frecuencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-frecuencia-c1', canDo: 'talk about frequency idiomatically — rara vez, el pan de cada día', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:875', 'nociones_generales:C1:876', 'nociones_generales:C1:877', 'nociones_generales:C1:878',
          'nociones_generales:C1:879', 'nociones_generales:C1:880', 'nociones_generales:C1:881', 'nociones_generales:C1:882',
          'nociones_generales:C1:883', 'nociones_generales:C1:884', 'nociones_generales:C1:885', 'nociones_generales:C1:886'],
@@ -27071,7 +27379,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-cambio-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-cambio-c1', canDo: 'talk about change at C1 precision', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:887', 'nociones_generales:C1:888', 'nociones_generales:C1:889', 'nociones_generales:C1:890',
          'nociones_generales:C1:891', 'nociones_generales:C1:892', 'nociones_generales:C1:893', 'nociones_generales:C1:894',
          'nociones_generales:C1:896', 'nociones_generales:C1:897', 'nociones_generales:C1:898', 'nociones_generales:C1:899',
@@ -27115,7 +27423,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-permanencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-permanencia-c1', canDo: 'talk about permanence idiomatically, including conservar la calma', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:905', 'nociones_generales:C1:906', 'nociones_generales:C1:907', 'nociones_generales:C1:908',
          'nociones_generales:C1:909', 'nociones_generales:C1:910', 'nociones_generales:C1:911', 'nociones_generales:C1:912'],
   title: 'Permanencia en C1: lo imborrable, lo inalterable y "conservar la calma"',
@@ -27156,7 +27464,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-formas-figuras-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-formas-figuras-c1', canDo: 'talk about shapes idiomatically — silueta, zigzag', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1070', 'nociones_generales:C1:1071', 'nociones_generales:C1:1072', 'nociones_generales:C1:1073',
          'nociones_generales:C1:1074', 'nociones_generales:C1:1075', 'nociones_generales:C1:1076', 'nociones_generales:C1:1077',
          'nociones_generales:C1:1078', 'nociones_generales:C1:1079', 'nociones_generales:C1:1080', 'nociones_generales:C1:1081'],
@@ -27198,7 +27506,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-consistencia-resistencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-consistencia-resistencia-c1', canDo: 'talk about consistency and strength idiomatically — fuerte como un roble, duro como una piedra', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1096', 'nociones_generales:C1:1097', 'nociones_generales:C1:1098', 'nociones_generales:C1:1099',
          'nociones_generales:C1:1100', 'nociones_generales:C1:1101', 'nociones_generales:C1:1102', 'nociones_generales:C1:1103',
          'nociones_generales:C1:1104', 'nociones_generales:C1:1106', 'nociones_generales:C1:1107', 'nociones_generales:C1:1108',
@@ -27241,7 +27549,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-textura-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-textura-c1', canDo: 'talk about texture idiomatically, including al tacto', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1126', 'nociones_generales:C1:1127', 'nociones_generales:C1:1128', 'nociones_generales:C1:1129',
          'nociones_generales:C1:1130', 'nociones_generales:C1:1131', 'nociones_generales:C1:1132', 'nociones_generales:C1:1133', 'nociones_generales:C1:1134'],
   title: 'Textura en C1: rugoso, sedoso y "al tacto"',
@@ -27283,7 +27591,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-acabado-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-acabado-c1', canDo: 'talk about the state something was left in idiomatically — en bruto, metalizado', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1144', 'nociones_generales:C1:1145', 'nociones_generales:C1:1146', 'nociones_generales:C1:1147',
          'nociones_generales:C1:1148', 'nociones_generales:C1:1149', 'nociones_generales:C1:1150', 'nociones_generales:C1:1151',
          'nociones_generales:C1:1152', 'nociones_generales:C1:1153'],
@@ -27325,7 +27633,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-humedad-sequedad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-humedad-sequedad-c1', canDo: 'talk about wet and dry idiomatically — ponerse como una sopa, al vapor', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1160', 'nociones_generales:C1:1161', 'nociones_generales:C1:1162', 'nociones_generales:C1:1163',
          'nociones_generales:C1:1164', 'nociones_generales:C1:1165', 'nociones_generales:C1:1166', 'nociones_generales:C1:1167',
          'nociones_generales:C1:1168', 'nociones_generales:C1:1169', 'nociones_generales:C1:1170', 'nociones_generales:C1:1171',
@@ -27369,7 +27677,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-materia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-materia-c1', canDo: 'talk about materials at C1 precision', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1194', 'nociones_generales:C1:1195', 'nociones_generales:C1:1196', 'nociones_generales:C1:1197',
          'nociones_generales:C1:1198', 'nociones_generales:C1:1199', 'nociones_generales:C1:1200', 'nociones_generales:C1:1201'],
   title: 'Materia en C1: de la seda al cartón piedra',
@@ -27410,7 +27718,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-visibilidad-vision-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-visibilidad-vision-c1', canDo: 'talk about what is visible idiomatically — saltar a la vista, mirar por encima del hombro', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1208', 'nociones_generales:C1:1209', 'nociones_generales:C1:1210', 'nociones_generales:C1:1211',
          'nociones_generales:C1:1212', 'nociones_generales:C1:1213', 'nociones_generales:C1:1214', 'nociones_generales:C1:1215',
          'nociones_generales:C1:1216', 'nociones_generales:C1:1217', 'nociones_generales:C1:1218', 'nociones_generales:C1:1219',
@@ -27455,7 +27763,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-audibilidad-audicion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-audibilidad-audicion-c1', canDo: 'talk about sound and hearing idiomatically — susurro, dar gritos', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1244', 'nociones_generales:C1:1245', 'nociones_generales:C1:1246', 'nociones_generales:C1:1247',
          'nociones_generales:C1:1248', 'nociones_generales:C1:1249', 'nociones_generales:C1:1250', 'nociones_generales:C1:1251',
          'nociones_generales:C1:1252', 'nociones_generales:C1:1253', 'nociones_generales:C1:1254', 'nociones_generales:C1:1255',
@@ -27501,7 +27809,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-sabor-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-sabor-c1', canDo: 'talk about taste idiomatically, including estar para chuparse los dedos', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1288', 'nociones_generales:C1:1289', 'nociones_generales:C1:1290', 'nociones_generales:C1:1291'],
   title: 'Sabor en C1: catar, saborear y "estar para chuparse los dedos"',
   summary: 'Distinguir "catar" de "saborear" es la clave de este vocabulario reducido pero preciso: catar es analizar profesionalmente un sabor, saborear es disfrutarlo con calma — y "estar para chuparse los dedos" describe algo delicioso hasta el extremo.',
@@ -27537,7 +27845,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-olor-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-olor-c1', canDo: 'talk about smell idiomatically — fragancia, peste', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1298', 'nociones_generales:C1:1299', 'nociones_generales:C1:1300', 'nociones_generales:C1:1301',
          'nociones_generales:C1:1302', 'nociones_generales:C1:1303', 'nociones_generales:C1:1304'],
   title: 'Olor en C1: de "fragancia" a "peste"',
@@ -27577,7 +27885,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-color-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-color-c1', canDo: 'talk about colour at C1 precision', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1314', 'nociones_generales:C1:1315', 'nociones_generales:C1:1316', 'nociones_generales:C1:1317',
          'nociones_generales:C1:1318', 'nociones_generales:C1:1319', 'nociones_generales:C1:1320'],
   title: 'Color en C1: matices, gamas y verbos que cambian el color',
@@ -27618,7 +27926,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-edad-vejez-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-edad-vejez-c1', canDo: 'talk about age and ageing idiomatically, including no pasar los años por alguien', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1327', 'nociones_generales:C1:1328', 'nociones_generales:C1:1329', 'nociones_generales:C1:1331',
          'nociones_generales:C1:1332', 'nociones_generales:C1:1333', 'nociones_generales:C1:1334', 'nociones_generales:C1:1335',
          'nociones_generales:C1:1336', 'nociones_generales:C1:1337', 'nociones_generales:C1:1338', 'nociones_generales:C1:1339', 'nociones_generales:C1:1340'],
@@ -27662,7 +27970,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-accesibilidad-limpieza-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-accesibilidad-limpieza-c1', canDo: 'talk about access and cleanliness idiomatically — obstruido, estar hecho un asco', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1359', 'nociones_generales:C1:1360', 'nociones_generales:C1:1361', 'nociones_generales:C1:1362',
          'nociones_generales:C1:1363', 'nociones_generales:C1:1364', 'nociones_generales:C1:1367', 'nociones_generales:C1:1368',
          'nociones_generales:C1:1369', 'nociones_generales:C1:1370', 'nociones_generales:C1:1371', 'nociones_generales:C1:1372'],
@@ -27702,7 +28010,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-evaluacion-general-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-evaluacion-general-c1', canDo: 'talk about general evaluation idiomatically — pasable, catastrófico', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1379', 'nociones_generales:C1:1380', 'nociones_generales:C1:1381', 'nociones_generales:C1:1382',
          'nociones_generales:C1:1383', 'nociones_generales:C1:1384', 'nociones_generales:C1:1385', 'nociones_generales:C1:1386',
          'nociones_generales:C1:1387', 'nociones_generales:C1:1388', 'nociones_generales:C1:1389', 'nociones_generales:C1:1390',
@@ -27745,7 +28053,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-valor-precio-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-valor-precio-c1', canDo: 'talk about value and price idiomatically — estar tirado, precio de coste', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1411', 'nociones_generales:C1:1412', 'nociones_generales:C1:1413', 'nociones_generales:C1:1414',
          'nociones_generales:C1:1415', 'nociones_generales:C1:1416', 'nociones_generales:C1:1417', 'nociones_generales:C1:1418',
          'nociones_generales:C1:1419', 'nociones_generales:C1:1420', 'nociones_generales:C1:1421', 'nociones_generales:C1:1422',
@@ -27789,7 +28097,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-atractivo-calidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-atractivo-calidad-c1', canDo: 'talk about attractiveness and quality idiomatically — apuesto, vulgar', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1445', 'nociones_generales:C1:1446', 'nociones_generales:C1:1449', 'nociones_generales:C1:1450', 'nociones_generales:C1:1451'],
   title: 'Atractivo y calidad en C1: de "apuesto" a "vulgar", de "deficiente" a "superior"',
   summary: 'El atractivo físico y la calidad de un producto comparten en C1 una misma lógica de extremos — elegancia frente a vulgaridad en un caso, deficiencia frente a superioridad en el otro — con verbos concretos para actuar sobre la calidad: garantizarla, mejorarla, asegurarla.',
@@ -27828,7 +28136,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-aceptabilidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-aceptabilidad-c1', canDo: 'talk about acceptability idiomatically — razonable, disparate', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1456', 'nociones_generales:C1:1457', 'nociones_generales:C1:1458', 'nociones_generales:C1:1459',
          'nociones_generales:C1:1460', 'nociones_generales:C1:1461', 'nociones_generales:C1:1462', 'nociones_generales:C1:1463',
          'nociones_generales:C1:1464', 'nociones_generales:C1:1465'],
@@ -27871,7 +28179,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-adecuacion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-adecuacion-c1', canDo: 'talk about appropriateness idiomatically — guardar las formas, estar contraindicado para', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1474', 'nociones_generales:C1:1475', 'nociones_generales:C1:1476', 'nociones_generales:C1:1477',
          'nociones_generales:C1:1478', 'nociones_generales:C1:1479', 'nociones_generales:C1:1480', 'nociones_generales:C1:1481', 'nociones_generales:C1:1482'],
   title: 'Adecuación en C1: "guardar las formas" y "estar contraindicado para"',
@@ -27913,7 +28221,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-conformidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-conformidad-c1', canDo: 'talk about agreement and compliance idiomatically — hacer la vista gorda, no quedar más remedio', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1498', 'nociones_generales:C1:1499', 'nociones_generales:C1:1500', 'nociones_generales:C1:1501',
          'nociones_generales:C1:1502', 'nociones_generales:C1:1503', 'nociones_generales:C1:1504'],
   title: 'Conformidad en C1: "hacer la vista gorda" y "no quedar más remedio"',
@@ -27955,7 +28263,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-correccion-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-correccion-c1', canDo: 'talk about correctness idiomatically — un acierto, a la perfección', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1517', 'nociones_generales:C1:1518', 'nociones_generales:C1:1519', 'nociones_generales:C1:1520',
          'nociones_generales:C1:1521', 'nociones_generales:C1:1522', 'nociones_generales:C1:1523', 'nociones_generales:C1:1524',
          'nociones_generales:C1:1525', 'nociones_generales:C1:1526', 'nociones_generales:C1:1527', 'nociones_generales:C1:1528', 'nociones_generales:C1:1529', 'nociones_generales:C1:1530'],
@@ -27998,7 +28306,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-precision-claridad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-precision-claridad-c1', canDo: 'talk about precision and clarity idiomatically — matemático, un lío', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1550', 'nociones_generales:C1:1551', 'nociones_generales:C1:1552', 'nociones_generales:C1:1553',
          'nociones_generales:C1:1554', 'nociones_generales:C1:1555', 'nociones_generales:C1:1556', 'nociones_generales:C1:1557',
          'nociones_generales:C1:1558', 'nociones_generales:C1:1559', 'nociones_generales:C1:1560', 'nociones_generales:C1:1561',
@@ -28041,7 +28349,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-interes-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-interes-c1', canDo: 'talk about interest and boredom idiomatically — apasionante, morirse de aburrimiento', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1578', 'nociones_generales:C1:1579', 'nociones_generales:C1:1580', 'nociones_generales:C1:1581',
          'nociones_generales:C1:1582', 'nociones_generales:C1:1583', 'nociones_generales:C1:1584', 'nociones_generales:C1:1585',
          'nociones_generales:C1:1586', 'nociones_generales:C1:1587'],
@@ -28084,7 +28392,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-exito-logro-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-exito-logro-c1', canDo: 'talk about success and achievement idiomatically — estar en pleno auge, ganar por los pelos', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1596', 'nociones_generales:C1:1597', 'nociones_generales:C1:1598', 'nociones_generales:C1:1600',
          'nociones_generales:C1:1601', 'nociones_generales:C1:1603', 'nociones_generales:C1:1605', 'nociones_generales:C1:1606',
          'nociones_generales:C1:1607', 'nociones_generales:C1:1608', 'nociones_generales:C1:1609', 'nociones_generales:C1:1611',
@@ -28130,7 +28438,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-utilidad-uso-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-utilidad-uso-c1', canDo: 'talk about usefulness and use idiomatically — hacer uso de, ser un trasto', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1643', 'nociones_generales:C1:1644', 'nociones_generales:C1:1645', 'nociones_generales:C1:1646',
          'nociones_generales:C1:1647', 'nociones_generales:C1:1648', 'nociones_generales:C1:1649', 'nociones_generales:C1:1650',
          'nociones_generales:C1:1651', 'nociones_generales:C1:1652', 'nociones_generales:C1:1653', 'nociones_generales:C1:1654',
@@ -28176,7 +28484,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-capacidad-competencia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-capacidad-competencia-c1', canDo: 'talk about ability and competence idiomatically — un hacha, un manazas', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1679', 'nociones_generales:C1:1680', 'nociones_generales:C1:1681', 'nociones_generales:C1:1682',
          'nociones_generales:C1:1683', 'nociones_generales:C1:1684', 'nociones_generales:C1:1686', 'nociones_generales:C1:1687',
          'nociones_generales:C1:1688', 'nociones_generales:C1:1689'],
@@ -28219,7 +28527,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-importancia-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-importancia-c1', canDo: 'talk about importance idiomatically — trascendencia, importarle un pimiento', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1702', 'nociones_generales:C1:1703', 'nociones_generales:C1:1704', 'nociones_generales:C1:1705', 'nociones_generales:C1:1706'],
   title: 'Importancia en C1: de "trascendencia" a "importarle un pimiento"',
   summary: 'La importancia se nombra en C1 con matices técnicos (alcance, repercusión, gravedad) y con la hipérbole coloquial "importarle un pimiento" para el desinterés absoluto — dos registros del mismo eje, de máxima seriedad a mínima.',
@@ -28259,7 +28567,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-normalidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-normalidad-c1', canDo: 'talk about the normal and the exceptional idiomatically — convencional, un fuera de serie', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1720', 'nociones_generales:C1:1721', 'nociones_generales:C1:1722', 'nociones_generales:C1:1723',
          'nociones_generales:C1:1724', 'nociones_generales:C1:1725', 'nociones_generales:C1:1726', 'nociones_generales:C1:1727',
          'nociones_generales:C1:1728', 'nociones_generales:C1:1729', 'nociones_generales:C1:1730'],
@@ -28303,7 +28611,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-facilidad-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-facilidad-c1', canDo: 'talk about ease and difficulty idiomatically, including fácil de entender', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1739', 'nociones_generales:C1:1740', 'nociones_generales:C1:1741', 'nociones_generales:C1:1742'],
   title: 'Facilidad en C1: "fácil de entender" y los verbos que facilitan o dificultan',
   summary: 'La facilidad se describe en C1 con la estructura "fácil/difícil de + infinitivo", muy productiva, y con verbos que activamente cambian el grado de dificultad de algo: dificultar, posibilitar, agilizar.',
@@ -28343,7 +28651,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-reflexion-conocimiento-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-reflexion-conocimiento-c1', canDo: 'talk about thinking and knowing idiomatically — consultar con la almohada, romperse la cabeza', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1750', 'nociones_generales:C1:1753', 'nociones_generales:C1:1754', 'nociones_generales:C1:1755',
          'nociones_generales:C1:1756', 'nociones_generales:C1:1757', 'nociones_generales:C1:1759', 'nociones_generales:C1:1760',
          'nociones_generales:C1:1761', 'nociones_generales:C1:1762', 'nociones_generales:C1:1763', 'nociones_generales:C1:1764',
@@ -28390,7 +28698,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-expresion-verbal-c1', strand: 'notion', cefr: 'C1', level: 9, theme: null,
+  id: 'nt-expresion-verbal-c1', canDo: 'talk about ways of speaking idiomatically — dejar caer, poner algo en claro', strand: 'notion', cefr: 'C1', level: 9, theme: null,
   pcic: ['nociones_generales:C1:1805', 'nociones_generales:C1:1806', 'nociones_generales:C1:1807', 'nociones_generales:C1:1808',
          'nociones_generales:C1:1809', 'nociones_generales:C1:1810', 'nociones_generales:C1:1811', 'nociones_generales:C1:1812',
          'nociones_generales:C1:1813', 'nociones_generales:C1:1814', 'nociones_generales:C1:1815', 'nociones_generales:C1:1816',
@@ -28436,7 +28744,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-identificar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-identificar-c1', canDo: 'identificar at C1 — from el que suscribe to lo que... es...', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:1', 'funciones:C1:2', 'funciones:C1:3', 'funciones:C1:5', 'funciones:C1:6', 'funciones:C1:7', 'funciones:C1:8'],
   title: 'Identificar en C1: "el que suscribe" y las hendidas "lo que... es..."',
   summary: 'Identificar con precisión en C1 va desde el registro epistolar más formal ("el que suscribe") hasta el demostrativo cargado de desdén ("ese"), pasando por las construcciones hendidas ("lo que... es...") que aíslan justo el elemento que se quiere señalar.',
@@ -28477,7 +28785,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-pedir-informacion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-pedir-informacion-c1', canDo: 'pedir información at C1 — from ¿qué es lo que...? to ¿me permites...?', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:11', 'funciones:C1:12', 'funciones:C1:13', 'funciones:C1:14', 'funciones:C1:16', 'funciones:C1:18',
          'funciones:C1:20', 'funciones:C1:21', 'funciones:C1:22', 'funciones:C1:23', 'funciones:C1:24', 'funciones:C1:25',
          'funciones:C1:26', 'funciones:C1:27', 'funciones:C1:28'],
@@ -28520,7 +28828,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-dar-informacion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-dar-informacion-c1', canDo: 'dar información at C1, including ¡¿Cómo que no?!', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:39', 'funciones:C1:41', 'funciones:C1:43', 'funciones:C1:45', 'funciones:C1:47', 'funciones:C1:49',
          'funciones:C1:51', 'funciones:C1:52', 'funciones:C1:53', 'funciones:C1:54', 'funciones:C1:58', 'funciones:C1:59',
          'funciones:C1:60', 'funciones:C1:64', 'funciones:C1:65'],
@@ -28564,7 +28872,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-pedir-confirmacion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-pedir-confirmacion-c1', canDo: 'pedir confirmación at C1 — from ¿a que sí? to tengo entendido que...', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:96', 'funciones:C1:99', 'funciones:C1:100', 'funciones:C1:102', 'funciones:C1:103', 'funciones:C1:104',
          'funciones:C1:105', 'funciones:C1:106', 'funciones:C1:108', 'funciones:C1:109', 'funciones:C1:110', 'funciones:C1:112',
          'funciones:C1:113', 'funciones:C1:114'],
@@ -28608,7 +28916,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-confirmar-informacion-previa-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-confirmar-informacion-previa-c1', canDo: 'confirmar información previa at C1 — from así es to ¡y tanto!', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:130', 'funciones:C1:131', 'funciones:C1:132', 'funciones:C1:133'],
   title: 'Confirmar información previa en C1: "así es", "¡y tanto!" y "de hecho"',
   summary: 'Confirmar algo en C1 va del registro más formal ("así es, efectivamente") al entusiasmo coloquial ("¡y tanto que...!"), y "de hecho" añade un matiz propio: no solo confirma, sino que aporta un detalle que refuerza lo dicho.',
@@ -28647,7 +28955,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-pedir-dar-opinion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-pedir-dar-opinion-c1', canDo: 'pedir y dar opinión at C1 — from a mi entender to en mi modesta opinión', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:137', 'funciones:C1:138', 'funciones:C1:139', 'funciones:C1:140',
          'funciones:C1:144', 'funciones:C1:145', 'funciones:C1:146', 'funciones:C1:147'],
   title: 'Pedir y dar opinión en C1: "a mi entender" y "en mi modesta opinión"',
@@ -28688,7 +28996,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-valorar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-valorar-c1', canDo: 'valorar at C1 — from de pésimo gusto to resulta vergonzoso', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:153', 'funciones:C1:154', 'funciones:C1:155'],
   title: 'Valorar en C1: "de pésimo gusto" y "resulta vergonzoso"',
   summary: 'Valorar algo con matices en C1 combina el juicio sobre el gusto ("de buen/mal/pésimo gusto") con estructuras que anteponen el juicio antes de nombrar el hecho concreto que lo motiva: "resulta vergonzoso que..."',
@@ -28727,7 +29035,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-aprobacion-desaprobacion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-aprobacion-desaprobacion-c1', canDo: 'expresar aprobación y desaprobación at C1 — from apruebo to ¡así se hace!', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:159', 'funciones:C1:160', 'funciones:C1:161', 'funciones:C1:162', 'funciones:C1:163',
          'funciones:C1:164', 'funciones:C1:165', 'funciones:C1:166', 'funciones:C1:167'],
   title: 'Expresar aprobación y desaprobación en C1: de "apruebo" a "¡así se hace!"',
@@ -28769,7 +29077,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-expresar-acuerdo-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-expresar-acuerdo-c1', canDo: 'expresar acuerdo at C1 — from algo de razón tienes to ¡exactamente!', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:186', 'funciones:C1:188', 'funciones:C1:190', 'funciones:C1:191', 'funciones:C1:193', 'funciones:C1:195',
          'funciones:C1:196', 'funciones:C1:198', 'funciones:C1:199', 'funciones:C1:200', 'funciones:C1:201', 'funciones:C1:202',
          'funciones:C1:204', 'funciones:C1:205', 'funciones:C1:206'],
@@ -28811,7 +29119,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-expresar-desacuerdo-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-expresar-desacuerdo-c1', canDo: 'expresar desacuerdo at C1 — from no me convence to ¡de eso nada!', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:223', 'funciones:C1:225', 'funciones:C1:228', 'funciones:C1:229', 'funciones:C1:230', 'funciones:C1:231',
          'funciones:C1:232', 'funciones:C1:233', 'funciones:C1:234', 'funciones:C1:236', 'funciones:C1:237', 'funciones:C1:239',
          'funciones:C1:240', 'funciones:C1:241', 'funciones:C1:242'],
@@ -28853,7 +29161,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-escepticismo-contraargumento-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-escepticismo-contraargumento-c1', canDo: 'escepticismo y contraargumento at C1, including no te falta razón, pero...', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:260', 'funciones:C1:261', 'funciones:C1:262', 'funciones:C1:268', 'funciones:C1:269', 'funciones:C1:270', 'funciones:C1:271'],
   title: 'Escepticismo y contraargumento en C1: "no te falta razón, pero..."',
   summary: 'Mostrar escepticismo en C1 es dudar sin negar del todo ("tengo mis dudas"), y presentar un contraargumento exige primero conceder algo de razón al otro ("no te falta razón") antes de introducir el "pero" que realmente importa.',
@@ -28892,7 +29200,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-certeza-evidencia-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-certeza-evidencia-c1', canDo: 'certeza y su ausencia at C1 — from sin lugar a dudas to juraría que...', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:277', 'funciones:C1:278', 'funciones:C1:279', 'funciones:C1:281', 'funciones:C1:282', 'funciones:C1:283',
          'funciones:C1:284', 'funciones:C1:285', 'funciones:C1:286', 'funciones:C1:298', 'funciones:C1:299', 'funciones:C1:300',
          'funciones:C1:301', 'funciones:C1:302', 'funciones:C1:303', 'funciones:C1:304'],
@@ -28935,7 +29243,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-hipotesis-posibilidad-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-hipotesis-posibilidad-c1', canDo: 'formular hipótesis y expresar posibilidad at C1 — from ¿y si...? to para mí que...', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:311', 'funciones:C1:312', 'funciones:C1:313', 'funciones:C1:314', 'funciones:C1:317', 'funciones:C1:318', 'funciones:C1:319'],
   title: 'Formular hipótesis y expresar posibilidad en C1: "¿y si...?" y "para mí que..."',
   summary: 'Invitar a imaginar un escenario hipotético en C1 combina el condicional con distintos marcos ("si...", "en el caso de...", "¿y si...?"), mientras que expresar posibilidad va desde lo formal ("cabe la posibilidad de que...") hasta la intuición coloquial ("para mí que...").',
@@ -28973,7 +29281,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-obligacion-necesidad-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-obligacion-necesidad-c1', canDo: 'obligación y necesidad at C1 — from es mi obligación to basta con que...', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:325', 'funciones:C1:326', 'funciones:C1:327', 'funciones:C1:328', 'funciones:C1:329', 'funciones:C1:330',
          'funciones:C1:335', 'funciones:C1:336', 'funciones:C1:337', 'funciones:C1:338'],
   title: 'Obligación y necesidad en C1: de "es mi obligación" a "basta con que..."',
@@ -29015,7 +29323,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-conocimiento-desconocimiento-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-conocimiento-desconocimiento-c1', canDo: 'conocimiento y desconocimiento at C1 — from ¿te has enterado de...? to lo ignoro', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:342', 'funciones:C1:343', 'funciones:C1:344', 'funciones:C1:346', 'funciones:C1:347', 'funciones:C1:354',
          'funciones:C1:355', 'funciones:C1:356', 'funciones:C1:357', 'funciones:C1:366', 'funciones:C1:369', 'funciones:C1:370'],
   title: 'Conocimiento y desconocimiento en C1: de "¿te has enterado de...?" a "lo ignoro"',
@@ -29056,7 +29364,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-habilidad-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-habilidad-c1', canDo: 'expresar habilidad at C1 — from soy un hacha to soy patoso para...', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:377', 'funciones:C1:378', 'funciones:C1:379', 'funciones:C1:380', 'funciones:C1:381'],
   title: 'Expresar habilidad en C1: de "soy un hacha" a "soy patoso para..."',
   summary: 'La habilidad se expresa en C1 desde el registro neutro ("soy competente") hasta las comparaciones coloquiales muy vivas — "no hay quien me gane", "soy un hacha" — con su reverso exacto para la torpeza: "soy patoso para..."',
@@ -29097,7 +29405,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-recordar-olvidar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-recordar-olvidar-c1', canDo: 'recordar y olvidar at C1, including lo tengo en la punta de la lengua', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:384', 'funciones:C1:385', 'funciones:C1:386', 'funciones:C1:390', 'funciones:C1:391', 'funciones:C1:392',
          'funciones:C1:393', 'funciones:C1:394', 'funciones:C1:404', 'funciones:C1:405', 'funciones:C1:406', 'funciones:C1:407',
          'funciones:C1:408', 'funciones:C1:409'],
@@ -29139,7 +29447,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-gustos-aversion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-gustos-aversion-c1', canDo: 'gustos y aversión at C1 — from adoro to me da náuseas', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:415', 'funciones:C1:416', 'funciones:C1:417', 'funciones:C1:418',
          'funciones:C1:422', 'funciones:C1:423', 'funciones:C1:424', 'funciones:C1:425', 'funciones:C1:426'],
   title: 'Gustos y aversión en C1: de "adoro" a "me da náuseas"',
@@ -29178,7 +29486,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-preferencia-indiferencia-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-preferencia-indiferencia-c1', canDo: 'preferencia e indiferencia at C1, including no cambio... por nada del mundo', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:431', 'funciones:C1:432', 'funciones:C1:433', 'funciones:C1:434', 'funciones:C1:437', 'funciones:C1:438',
          'funciones:C1:439', 'funciones:C1:446', 'funciones:C1:447', 'funciones:C1:448', 'funciones:C1:449', 'funciones:C1:450'],
   title: 'Preferencia e indiferencia en C1: "no cambio... por nada del mundo"',
@@ -29219,7 +29527,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-deseos-planes-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-deseos-planes-c1', canDo: 'deseos y planes at C1 — from ¡quién tuviera...! to estoy por...', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:460', 'funciones:C1:461', 'funciones:C1:462', 'funciones:C1:463', 'funciones:C1:464', 'funciones:C1:465',
          'funciones:C1:466', 'funciones:C1:476', 'funciones:C1:477', 'funciones:C1:478', 'funciones:C1:479', 'funciones:C1:480'],
   title: 'Deseos y planes en C1: "¡quién tuviera...!" y "estoy por..."',
@@ -29262,7 +29570,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-estado-animo-alegria-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-estado-animo-alegria-c1', canDo: 'preguntar por el ánimo y expresar alegría at C1, including estoy como loco de contento', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:484', 'funciones:C1:486', 'funciones:C1:488', 'funciones:C1:489', 'funciones:C1:491', 'funciones:C1:492',
          'funciones:C1:497', 'funciones:C1:498', 'funciones:C1:499', 'funciones:C1:500', 'funciones:C1:501', 'funciones:C1:502',
          'funciones:C1:503', 'funciones:C1:504'],
@@ -29303,7 +29611,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-tristeza-placer-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-tristeza-placer-c1', canDo: 'tristeza y placer at C1 — from se me rompe el corazón to me parto de risa', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:513', 'funciones:C1:514', 'funciones:C1:515', 'funciones:C1:516', 'funciones:C1:518', 'funciones:C1:519',
          'funciones:C1:520', 'funciones:C1:521', 'funciones:C1:530', 'funciones:C1:531', 'funciones:C1:532'],
   title: 'Tristeza y placer en C1: "se me rompe el corazón" y "me parto de risa"',
@@ -29344,7 +29652,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-hartazgo-enfado-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-hartazgo-enfado-c1', canDo: 'hartazgo y enfado at C1 — from hasta la coronilla to de un humor de perros', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:539', 'funciones:C1:540', 'funciones:C1:541', 'funciones:C1:545', 'funciones:C1:546', 'funciones:C1:547',
          'funciones:C1:548', 'funciones:C1:549', 'funciones:C1:550'],
   title: 'Hartazgo y enfado en C1: "hasta la coronilla" y "de un humor de perros"',
@@ -29385,7 +29693,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-miedo-nerviosismo-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-miedo-nerviosismo-c1', canDo: 'miedo y nerviosismo at C1 — from el corazón en un puño to los pelos de punta', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:564', 'funciones:C1:565', 'funciones:C1:566', 'funciones:C1:567', 'funciones:C1:568', 'funciones:C1:569',
          'funciones:C1:570', 'funciones:C1:571', 'funciones:C1:572', 'funciones:C1:573', 'funciones:C1:583', 'funciones:C1:584',
          'funciones:C1:585', 'funciones:C1:586', 'funciones:C1:587', 'funciones:C1:588', 'funciones:C1:589'],
@@ -29428,7 +29736,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-empatia-alivio-esperanza-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-empatia-alivio-esperanza-c1', canDo: 'empatía, alivio y esperanza at C1 — from me pongo en tu lugar to cruzo los dedos', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:595', 'funciones:C1:596', 'funciones:C1:597', 'funciones:C1:598', 'funciones:C1:599',
          'funciones:C1:606', 'funciones:C1:607', 'funciones:C1:608', 'funciones:C1:609',
          'funciones:C1:613', 'funciones:C1:614', 'funciones:C1:615', 'funciones:C1:616', 'funciones:C1:617', 'funciones:C1:618'],
@@ -29469,7 +29777,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-decepcion-resignacion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-decepcion-resignacion-c1', canDo: 'decepción y resignación at C1 — from ¡vaya, hombre! to que sea lo que Dios quiera', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:622', 'funciones:C1:623', 'funciones:C1:624', 'funciones:C1:627', 'funciones:C1:628', 'funciones:C1:629', 'funciones:C1:630'],
   title: 'Decepción y resignación en C1: "¡vaya, hombre!" y "que sea lo que Dios quiera"',
   summary: 'La decepción en C1 tiene su propia entonación ("¡vaya, hombre!", con caída descendente), mientras que la resignación acepta lo inevitable con fórmulas casi fatalistas: "que sea lo que Dios quiera", "no hay más remedio".',
@@ -29508,7 +29816,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-arrepentimiento-verguenza-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-arrepentimiento-verguenza-c1', canDo: 'arrepentimiento y vergüenza at C1 — from si volviera a nacer... to vergüenza ajena', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:634', 'funciones:C1:635', 'funciones:C1:636', 'funciones:C1:637', 'funciones:C1:638', 'funciones:C1:639',
          'funciones:C1:640', 'funciones:C1:646', 'funciones:C1:647', 'funciones:C1:648', 'funciones:C1:649', 'funciones:C1:650',
          'funciones:C1:651', 'funciones:C1:652'],
@@ -29550,7 +29858,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-sorpresa-admiracion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-sorpresa-admiracion-c1', canDo: 'sorpresa y admiración at C1, including me quedo con la boca abierta', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:663', 'funciones:C1:664', 'funciones:C1:665', 'funciones:C1:666', 'funciones:C1:668', 'funciones:C1:669',
          'funciones:C1:670', 'funciones:C1:672', 'funciones:C1:673', 'funciones:C1:674', 'funciones:C1:675',
          'funciones:C1:685', 'funciones:C1:686', 'funciones:C1:687'],
@@ -29592,7 +29900,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-afecto-sensaciones-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-afecto-sensaciones-c1', canDo: 'afecto y sensaciones físicas at C1 — from estoy hecho polvo to no puedo con mi alma', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:691', 'funciones:C1:692', 'funciones:C1:693', 'funciones:C1:696', 'funciones:C1:697', 'funciones:C1:698',
          'funciones:C1:699', 'funciones:C1:701', 'funciones:C1:702', 'funciones:C1:703', 'funciones:C1:704', 'funciones:C1:705',
          'funciones:C1:706', 'funciones:C1:707', 'funciones:C1:708', 'funciones:C1:709', 'funciones:C1:710', 'funciones:C1:711'],
@@ -29635,7 +29943,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-orden-instruccion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-orden-instruccion-c1', canDo: 'dar una orden at C1, including tú te callas', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:723', 'funciones:C1:724', 'funciones:C1:726', 'funciones:C1:727', 'funciones:C1:728', 'funciones:C1:729',
          'funciones:C1:730', 'funciones:C1:732', 'funciones:C1:733', 'funciones:C1:734', 'funciones:C1:735', 'funciones:C1:736',
          'funciones:C1:737', 'funciones:C1:738', 'funciones:C1:739', 'funciones:C1:740', 'funciones:C1:742'],
@@ -29679,7 +29987,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-favor-objetos-ayuda-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-favor-objetos-ayuda-c1', canDo: 'pedir favores, objetos y ayuda at C1 register', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:753', 'funciones:C1:754', 'funciones:C1:755', 'funciones:C1:756', 'funciones:C1:757', 'funciones:C1:759',
          'funciones:C1:766', 'funciones:C1:767', 'funciones:C1:768', 'funciones:C1:769', 'funciones:C1:770', 'funciones:C1:771',
          'funciones:C1:776', 'funciones:C1:777', 'funciones:C1:778', 'funciones:C1:780'],
@@ -29721,7 +30029,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-repetir-orden-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-repetir-orden-c1', canDo: 'repetir una orden at C1, including ¿cuántas veces tengo que repetirte que...?', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:799', 'funciones:C1:800', 'funciones:C1:801', 'funciones:C1:802'],
   title: 'Repetir una orden en C1: "¿cuántas veces tengo que repetirte que...?"',
   summary: 'Cuando una orden no se cumple, el español tiene fórmulas específicas para repetirla con exasperación creciente — desde la pregunta retórica hasta el "por última vez" que anuncia que no habrá más avisos.',
@@ -29759,7 +30067,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-responder-orden-peticion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-responder-orden-peticion-c1', canDo: 'responder a una petición at C1 — from faltaría más to ¡ni lo sueñes!', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:806', 'funciones:C1:807', 'funciones:C1:808', 'funciones:C1:809', 'funciones:C1:811', 'funciones:C1:812',
          'funciones:C1:813', 'funciones:C1:814', 'funciones:C1:816', 'funciones:C1:817', 'funciones:C1:819', 'funciones:C1:820',
          'funciones:C1:821', 'funciones:C1:822', 'funciones:C1:823'],
@@ -29802,7 +30110,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-permiso-prohibicion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-permiso-prohibicion-c1', canDo: 'permiso y prohibición at C1 — from eso ni se pregunta to digas lo que digas...', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:858', 'funciones:C1:859', 'funciones:C1:860', 'funciones:C1:861', 'funciones:C1:866', 'funciones:C1:867',
          'funciones:C1:868', 'funciones:C1:869', 'funciones:C1:871', 'funciones:C1:872', 'funciones:C1:873', 'funciones:C1:874',
          'funciones:C1:896', 'funciones:C1:897', 'funciones:C1:898'],
@@ -29844,7 +30152,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-proponer-ofrecer-confirmar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-proponer-ofrecer-confirmar-c1', canDo: 'proponer, ofrecer y confirmar at C1 — from no puedes faltar to ¿te apuntas?', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:900', 'funciones:C1:901', 'funciones:C1:902', 'funciones:C1:903', 'funciones:C1:904', 'funciones:C1:905',
          'funciones:C1:906', 'funciones:C1:910', 'funciones:C1:911', 'funciones:C1:915', 'funciones:C1:916', 'funciones:C1:918'],
   title: 'Proponer, ofrecer y confirmar en C1: "no puedes faltar" y "¿te apuntas?"',
@@ -29885,7 +30193,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-aceptar-rechazar-propuesta-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-aceptar-rechazar-propuesta-c1', canDo: 'aceptar y rechazar propuestas at C1 — from no te voy a decir que no to ¡ni atado!', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:923', 'funciones:C1:924', 'funciones:C1:925', 'funciones:C1:926', 'funciones:C1:928', 'funciones:C1:929',
          'funciones:C1:935', 'funciones:C1:936', 'funciones:C1:937', 'funciones:C1:938', 'funciones:C1:939'],
   title: 'Aceptar y rechazar propuestas en C1: "no te voy a decir que no" y "¡ni atado!"',
@@ -29926,7 +30234,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-aconsejar-advertir-amenazar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-aconsejar-advertir-amenazar-c1', canDo: 'aconsejar, advertir y amenazar at C1, including allá tú', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:944', 'funciones:C1:945', 'funciones:C1:946', 'funciones:C1:947', 'funciones:C1:948', 'funciones:C1:949',
          'funciones:C1:953', 'funciones:C1:954', 'funciones:C1:955', 'funciones:C1:956',
          'funciones:C1:963', 'funciones:C1:964', 'funciones:C1:965', 'funciones:C1:966'],
@@ -29967,7 +30275,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-reprochar-ofrecerse-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-reprochar-ofrecerse-c1', canDo: 'reprochar y ofrecerse at C1 — from ¿no te da vergüenza? to cuenta conmigo', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:975', 'funciones:C1:976', 'funciones:C1:977', 'funciones:C1:978', 'funciones:C1:979', 'funciones:C1:980',
          'funciones:C1:981', 'funciones:C1:993', 'funciones:C1:994', 'funciones:C1:995', 'funciones:C1:996', 'funciones:C1:997',
          'funciones:C1:998', 'funciones:C1:999', 'funciones:C1:1001', 'funciones:C1:1002'],
@@ -30011,7 +30319,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-tranquilizar-animar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-tranquilizar-animar-c1', canDo: 'tranquilizar y animar at C1 — from el no ya lo tienes to no es el fin del mundo', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:1009', 'funciones:C1:1011', 'funciones:C1:1013', 'funciones:C1:1014', 'funciones:C1:1015',
          'funciones:C1:1016', 'funciones:C1:1017', 'funciones:C1:1018', 'funciones:C1:1019',
          'funciones:C1:1029', 'funciones:C1:1031', 'funciones:C1:1033', 'funciones:C1:1034', 'funciones:C1:1035', 'funciones:C1:1037'],
@@ -30055,7 +30363,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-saludar-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-saludar-c1', canDo: 'saludar at C1 — from ¿qué es de tu vida? to señora ministra', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:1044', 'funciones:C1:1045', 'funciones:C1:1046', 'funciones:C1:1047', 'funciones:C1:1048', 'funciones:C1:1049'],
   title: 'Saludar en C1: de "¿qué es de tu vida?" a "señora ministra"',
   summary: 'Saludar en C1 va del saludo coloquial casi retórico ("¿qué pasa?") al tratamiento formal con cargo profesional ("señora ministra"), pasando por "¿qué es de tu vida?", reservado para un reencuentro tras mucho tiempo sin verse.',
@@ -30095,7 +30403,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-responder-saludo-dirigirse-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-responder-saludo-dirigirse-c1', canDo: 'responder a un saludo y dirigirse a alguien at C1 — from seguimos tirando to ¿te acuerdas de mí?', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:1058', 'funciones:C1:1059', 'funciones:C1:1060', 'funciones:C1:1061', 'funciones:C1:1063',
          'funciones:C1:1064', 'funciones:C1:1065', 'funciones:C1:1079', 'funciones:C1:1080', 'funciones:C1:1081'],
   title: 'Responder a un saludo y dirigirse a alguien en C1: "seguimos tirando" y "¿te acuerdas de mí?"',
@@ -30137,7 +30445,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-disculparse-responder-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-disculparse-responder-c1', canDo: 'disculparse y responder at C1 — from mil perdones to por esta vez pase, pero...', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:1110', 'funciones:C1:1111', 'funciones:C1:1112', 'funciones:C1:1113', 'funciones:C1:1115',
          'funciones:C1:1116', 'funciones:C1:1121', 'funciones:C1:1122', 'funciones:C1:1123'],
   title: 'Disculparse y responder en C1: "mil perdones" y "por esta vez pase, pero..."',
@@ -30178,7 +30486,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-agradecer-pesame-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-agradecer-pesame-c1', canDo: 'agradecer y dar el pésame at C1 — from ¿qué haría yo sin ti? to mi más sentido pésame', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:1128', 'funciones:C1:1129', 'funciones:C1:1131', 'funciones:C1:1132', 'funciones:C1:1133',
          'funciones:C1:1134', 'funciones:C1:1140', 'funciones:C1:1142', 'funciones:C1:1143', 'funciones:C1:1144',
          'funciones:C1:1151', 'funciones:C1:1152', 'funciones:C1:1153', 'funciones:C1:1154'],
@@ -30220,7 +30528,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-felicitar-despedirse-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-felicitar-despedirse-c1', canDo: 'felicitar y despedirse at C1 — from estás de enhorabuena to sin otro particular', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:1160', 'funciones:C1:1161', 'funciones:C1:1162', 'funciones:C1:1164', 'funciones:C1:1167',
          'funciones:C1:1169', 'funciones:C1:1182', 'funciones:C1:1183', 'funciones:C1:1184', 'funciones:C1:1186',
          'funciones:C1:1187', 'funciones:C1:1189'],
@@ -30263,7 +30571,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-estado-general-cosas-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-estado-general-cosas-c1', canDo: 'preguntar por el estado general de las cosas at C1 register', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:1205', 'funciones:C1:1206', 'funciones:C1:1207', 'funciones:C1:1208', 'funciones:C1:1210',
          'funciones:C1:1211', 'funciones:C1:1213', 'funciones:C1:1214', 'funciones:C1:1215', 'funciones:C1:1216',
          'funciones:C1:1217', 'funciones:C1:1218'],
@@ -30306,7 +30614,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-introducir-relato-atencion-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-introducir-relato-atencion-c1', canDo: 'introducir un relato y controlar la atención at C1 — from ¿me sigues? to ¿no te he liado?', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:1239', 'funciones:C1:1241', 'funciones:C1:1242', 'funciones:C1:1243', 'funciones:C1:1245',
          'funciones:C1:1247', 'funciones:C1:1264', 'funciones:C1:1265', 'funciones:C1:1266',
          'funciones:C1:1273', 'funciones:C1:1274', 'funciones:C1:1275', 'funciones:C1:1276'],
@@ -30348,7 +30656,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-destacar-silencio-tema-cierre-c1', strand: 'function', cefr: 'C1', level: 9, theme: null,
+  id: 'fn-destacar-silencio-tema-cierre-c1', canDo: 'destacar, pedir silencio, cambiar de tema y cerrar en c1 at C1 register', strand: 'function', cefr: 'C1', level: 9, theme: null,
   pcic: ['funciones:C1:1287', 'funciones:C1:1288', 'funciones:C1:1289', 'funciones:C1:1290',
          'funciones:C1:1318', 'funciones:C1:1319', 'funciones:C1:1320', 'funciones:C1:1321',
          'funciones:C1:1332', 'funciones:C1:1333', 'funciones:C1:1334',
@@ -30391,7 +30699,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-generos-orales-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-generos-orales-c1', canDo: 'write or deliver géneros orales at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:88', 'generos_discursivos:C1:90', 'generos_discursivos:C1:91', 'generos_discursivos:C1:96',
          'generos_discursivos:C1:102'],
   title: 'Géneros orales en C1: intervenir en tu especialidad',
@@ -30430,7 +30738,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-generos-escritos-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-generos-escritos-c1', canDo: 'write or deliver géneros escritos at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:116', 'generos_discursivos:C1:118', 'generos_discursivos:C1:119', 'generos_discursivos:C1:120',
          'generos_discursivos:C1:127', 'generos_discursivos:C1:128'],
   title: 'Géneros escritos en C1: el informe extenso y la reseña propia',
@@ -30470,7 +30778,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-presentacion-publica-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-presentacion-publica-c1', canDo: 'write or deliver presentación pública at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:143', 'generos_discursivos:C1:147', 'generos_discursivos:C1:156', 'generos_discursivos:C1:159',
          'generos_discursivos:C1:161', 'generos_discursivos:C1:168', 'generos_discursivos:C1:178', 'generos_discursivos:C1:190',
          'generos_discursivos:C1:191', 'generos_discursivos:C1:192', 'generos_discursivos:C1:194', 'generos_discursivos:C1:203',
@@ -30513,7 +30821,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-presentacion-publica-c2', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-presentacion-publica-c2', canDo: 'write or deliver presentación pública at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:253', 'generos_discursivos:C1:266', 'generos_discursivos:C1:300', 'generos_discursivos:C1:301',
          'generos_discursivos:C1:302', 'generos_discursivos:C1:304', 'generos_discursivos:C1:313', 'generos_discursivos:C1:325',
          'generos_discursivos:C1:354', 'generos_discursivos:C1:359', 'generos_discursivos:C1:363', 'generos_discursivos:C1:365',
@@ -30555,7 +30863,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-carta-comercial-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-carta-comercial-c1', canDo: 'write or deliver carta comercial at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:402', 'generos_discursivos:C1:405', 'generos_discursivos:C1:415', 'generos_discursivos:C1:424',
          'generos_discursivos:C1:428', 'generos_discursivos:C1:430', 'generos_discursivos:C1:434', 'generos_discursivos:C1:439',
          'generos_discursivos:C1:442', 'generos_discursivos:C1:445', 'generos_discursivos:C1:449', 'generos_discursivos:C1:452',
@@ -30597,7 +30905,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-carta-reclamacion-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-carta-reclamacion-c1', canDo: 'write or deliver carta de reclamación at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:504', 'generos_discursivos:C1:509', 'generos_discursivos:C1:512', 'generos_discursivos:C1:517',
          'generos_discursivos:C1:520'],
   title: 'La carta de reclamación: motivo, argumento, solución',
@@ -30636,7 +30944,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-composicion-escrita-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-composicion-escrita-c1', canDo: 'write or deliver composición escrita at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:526', 'generos_discursivos:C1:529', 'generos_discursivos:C1:537', 'generos_discursivos:C1:541',
          'generos_discursivos:C1:545', 'generos_discursivos:C1:550', 'generos_discursivos:C1:564', 'generos_discursivos:C1:567'],
   title: 'La composición escrita: título, hoja de ruta, síntesis',
@@ -30675,7 +30983,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-trabajo-academico-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-trabajo-academico-c1', canDo: 'write or deliver trabajo académico at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:571', 'generos_discursivos:C1:574', 'generos_discursivos:C1:582', 'generos_discursivos:C1:586',
          'generos_discursivos:C1:590', 'generos_discursivos:C1:594', 'generos_discursivos:C1:608', 'generos_discursivos:C1:611',
          'generos_discursivos:C1:614', 'generos_discursivos:C1:619', 'generos_discursivos:C1:624'],
@@ -30716,7 +31024,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-descriptiva-personas-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-descriptiva-personas-c1', canDo: 'write or deliver describir a una persona at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:627', 'generos_discursivos:C1:628', 'generos_discursivos:C1:629', 'generos_discursivos:C1:630',
          'generos_discursivos:C1:631', 'generos_discursivos:C1:632', 'generos_discursivos:C1:633', 'generos_discursivos:C1:634',
          'generos_discursivos:C1:635', 'generos_discursivos:C1:636', 'generos_discursivos:C1:644', 'generos_discursivos:C1:645'],
@@ -30759,7 +31067,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-descriptiva-objetos-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-descriptiva-objetos-c1', canDo: 'write or deliver describir un objeto at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:682', 'generos_discursivos:C1:683', 'generos_discursivos:C1:684', 'generos_discursivos:C1:685',
          'generos_discursivos:C1:686', 'generos_discursivos:C1:687', 'generos_discursivos:C1:688', 'generos_discursivos:C1:689',
          'generos_discursivos:C1:690', 'generos_discursivos:C1:691', 'generos_discursivos:C1:702'],
@@ -30800,7 +31108,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-descriptiva-lugares-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-descriptiva-lugares-c1', canDo: 'write or deliver describir un lugar at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:732', 'generos_discursivos:C1:733', 'generos_discursivos:C1:734', 'generos_discursivos:C1:735',
          'generos_discursivos:C1:736', 'generos_discursivos:C1:737', 'generos_discursivos:C1:738', 'generos_discursivos:C1:739',
          'generos_discursivos:C1:740', 'generos_discursivos:C1:741', 'generos_discursivos:C1:749', 'generos_discursivos:C1:750'],
@@ -30841,7 +31149,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-narrativa-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-narrativa-c1', canDo: 'write or deliver contar una anécdota at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:784', 'generos_discursivos:C1:785', 'generos_discursivos:C1:786', 'generos_discursivos:C1:787',
          'generos_discursivos:C1:788', 'generos_discursivos:C1:789', 'generos_discursivos:C1:790', 'generos_discursivos:C1:791',
          'generos_discursivos:C1:792'],
@@ -30886,7 +31194,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-expositiva-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-expositiva-c1', canDo: 'write or deliver exponer un tema at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:837', 'generos_discursivos:C1:838', 'generos_discursivos:C1:852', 'generos_discursivos:C1:854',
          'generos_discursivos:C1:855', 'generos_discursivos:C1:856', 'generos_discursivos:C1:857', 'generos_discursivos:C1:860',
          'generos_discursivos:C1:861', 'generos_discursivos:C1:862', 'generos_discursivos:C1:863'],
@@ -30927,7 +31235,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-argumentativa-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-argumentativa-c1', canDo: 'write or deliver argumentar at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:919', 'generos_discursivos:C1:920', 'generos_discursivos:C1:921', 'generos_discursivos:C1:922',
          'generos_discursivos:C1:923', 'generos_discursivos:C1:924', 'generos_discursivos:C1:925', 'generos_discursivos:C1:926',
          'generos_discursivos:C1:927', 'generos_discursivos:C1:956', 'generos_discursivos:C1:957', 'generos_discursivos:C1:958'],
@@ -30971,7 +31279,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-argumentativa-conectores-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-argumentativa-conectores-c1', canDo: 'write or deliver repertorio del ensayo argumentativo at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:929', 'generos_discursivos:C1:934', 'generos_discursivos:C1:937', 'generos_discursivos:C1:939',
          'generos_discursivos:C1:941', 'generos_discursivos:C1:944', 'generos_discursivos:C1:945', 'generos_discursivos:C1:949',
          'generos_discursivos:C1:950', 'generos_discursivos:C1:952'],
@@ -31013,7 +31321,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-resena-c1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
+  id: 'gn-resena-c1', canDo: 'write or deliver reseña crítica at C1', strand: 'genre', cefr: 'C1', level: 9, theme: null,
   pcic: ['generos_discursivos:C1:44'],
   title: 'La reseña crítica',
   summary: 'A review that only summarizes the plot has failed at its one job: judging. A C1 reseña states a clear verdict, backs it with specific evidence from the work itself, and closes with a recommendation that names who the work is (or isn\'t) for — not just whether it was "good".',
