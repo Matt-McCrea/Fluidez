@@ -22,6 +22,41 @@
  * ========================================================================== */
 window.STRAND_LESSONS = [
 
+{
+  id: 'task-b1-fisico', strand: 'task', cefr: 'B1', level: 4, theme: 'ciencia',
+  title: 'Describe algo con precisión',
+  canDo: 'describe an object precisely — size, shape, material, state and where it is',
+  summary: 'Vague description is the mark of a B1 learner who has the words but not the patterns. This unit is the patterns: estar a for measurement, estar hecho de for material, estar + participio for the state something has been left in.',
+  sections: [
+    { h: 'What to do', html: 'Describe three things precisely enough that someone could pick them out of a pile: something you own, something in the room, and something you would buy. Ten to fourteen sentences in total.' },
+    { h: 'Use the patterns, not just the words', html: 'Each description must carry at least three of: <i>mide / mide … metros</i>, <i>está a … grados</i>, <i>está hecho de …</i>, <i>está + participio</i> (roto, pintado, envuelto), <i>cabe / no cabe</i>, <i>está lleno / vacío / libre / ocupado</i>.' },
+    { h: 'The distinction to get right', html: '<i>Lleno</i> and <i>vacío</i> say whether a space has anything in it. <i>Libre</i> and <i>ocupado</i> say whether it is available to you. A full train can still have a free seat, so <i>el tren está lleno</i> and <i>hay un asiento libre</i> are both true at once.' }
+  ],
+  model: { title: 'three precise descriptions',
+    text: '<p><b>Algo mío:</b> Es una caja de madera, bastante pequeña — mide unos veinte centímetros de largo. Está pintada de verde, aunque la pintura está medio saltada. Dentro está casi vacía: solo hay unas llaves viejas que ya no abren nada.</p><p><b>Algo de la sala:</b> La mesa del fondo mide casi dos metros y está hecha de un cristal muy grueso. No cabe por la puerta, así que la montaron aquí dentro. Ahora mismo está ocupada.</p><p><b>Algo que compraría:</b> Una nevera pequeña, de esas que están a tres o cuatro grados y caben debajo de la encimera. De acero, no de plástico, porque el plástico acaba amarilleando.</p>' },
+  checklist: [
+    'Three things described, ten sentences or more in total.',
+    'At least three of the patterns appear (<i>mide</i>, <i>está a</i>, <i>está hecho de</i>, <i>está + participio</i>, <i>cabe</i>).',
+    'At least one uses <i>lleno/vacío</i> AND one uses <i>libre/ocupado</i>, correctly distinguished.',
+    'At least one measurement with a real number and unit.',
+    'Somebody could pick each thing out from your description alone.'
+  ],
+  examples: [
+    { es: 'La mesa mide casi dos metros y está hecha de cristal.', en: 'The table is nearly two metres and is made of glass.' },
+    { es: 'Está pintada de verde, pero la pintura está medio saltada.', en: 'It is painted green, but the paint is half chipped off.' },
+    { es: 'El tren está lleno, pero hay un asiento libre.', en: 'The train is full, but there is a free seat.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-fisico-1', kind: 'mcq', q: 'Which states what something is MADE of?',
+      options: ['Está hecho de madera.', 'Está a veinte grados.', 'Está ocupado.'], answer: 0 },
+    { id: 'p:task-b1-fisico-2', kind: 'mcq', q: 'A full train with one seat still available:',
+      options: ['está lleno, pero hay un asiento libre', 'está vacío, pero está ocupado', 'está libre, pero está lleno'], answer: 0 },
+    { id: 'p:task-b1-fisico-3', kind: 'cloze', text: 'La pared ___ pintada de verde. (estar)', accept: ['está'] },
+    { id: 'p:task-b1-fisico-4', kind: 'recall', front: 'Verb for a person\'s height, an object\'s length and an area', back: 'medir' }
+  ]
+},
+
+
 /* ---- pronunciation: the hole in the course ---------------------------------
  * Nothing in 730 days taught Spanish sounds, stress, or why the written accent
  * goes where it goes. Seventeen lessons mentioned accents in passing; none
@@ -6953,7 +6988,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-temporales-b1', canDo: 'use cuando + subjunctive for a moment that has not come yet', deeper: ['nt-ciclo-accion-b1', 'nt-tiempo-referencias-futuro-pasado-presente-b1'], strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-temporales-b1', canDo: 'use cuando + subjunctive for a moment that has not come yet', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:725', 'gramatica:B1:727', 'gramatica:B1:728', 'gramatica:B1:730', 'gramatica:B1:731', 'gramatica:B1:732'],
   title: 'Temporales: cuando + subjuntivo para el futuro',
   summary: 'Cuando takes the indicative for a fact that already happened or happens habitually, but switches to the subjunctive the instant the event is still in the future — one of the single most important rules in the entire Spanish subjunctive system.',
@@ -7027,7 +7062,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-comparativas-b1', canDo: 'compare with igual de… que and más de', deeper: ['nt-aumento-proporcion-grado-b1', 'nt-cantidad-numerica-relativa-b1', 'nt-evaluacion-valor-b1', 'nt-existencia-disponibilidad-b1', 'nt-exito-utilidad-importancia-b1'], strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-comparativas-b1', canDo: 'compare with igual de… que and más de', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:787', 'gramatica:B1:789', 'gramatica:B1:791', 'gramatica:B1:793', 'gramatica:B1:795'],
   title: 'Comparativas: igual de... que, más de',
   summary: 'Spanish distinguishes más QUE (comparing two things) from más DE (a numeric ceiling) — a difference English\'s single "more than" completely erases, and mixing the two up is a real, gate-checkable error.',
@@ -7197,7 +7232,7 @@ window.STRAND_LESSONS = [
  * throughout, following the precedent set at A1/A2.
  * ========================================================================== */
 {
-  id: 'nt-existencia-disponibilidad-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-existencia-disponibilidad-b1', canDo: 'tell lleno/vacío (what is in it) from libre/ocupado (whether you can have it)', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:1', 'nociones_generales:B1:2', 'nociones_generales:B1:14', 'nociones_generales:B1:15', 'nociones_generales:B1:31', 'nociones_generales:B1:32'],
   title: 'Existencia y disponibilidad: vacío, libre, ocupado',
   summary: 'Vacío/lleno describe whether a space has anything in it at all; libre/ocupado describe whether that space is AVAILABLE to you — two genuinely different questions, since a full train can still have a free seat.',
@@ -7236,7 +7271,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-cualidad-generalidad-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-cualidad-generalidad-b1', canDo: 'tell parecer (an impression) from parecerse a (a likeness)', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:44', 'nociones_generales:B1:45', 'nociones_generales:B1:47', 'nociones_generales:B1:48', 'nociones_generales:B1:115', 'nociones_generales:B1:116'],
   title: 'Cualidad y generalidad: tipo, forma, en general',
   summary: 'Parecer (to seem) and parecerse a (to resemble) share a root but describe two unrelated things — one is your IMPRESSION of something, the other is a physical LIKENESS to something else — and mixing them up is a common, gate-checkable slip.',
@@ -7315,7 +7350,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-necesidad-obligacion-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-necesidad-obligacion-b1', canDo: 'say something depends on circumstance, and that something is officially required', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:105', 'nociones_generales:B1:106', 'nociones_generales:B1:107', 'nociones_generales:B1:108', 'nociones_generales:B1:110'],
   title: 'Necesidad y obligación: depender de, ser obligatorio',
   summary: 'Depender de makes an outcome hinge on something entirely outside your control, while ser obligatorio states a flat, impersonal, often official requirement — both stronger and colder than the everyday necesitar from A2.',
@@ -7397,7 +7432,7 @@ window.STRAND_LESSONS = [
  * several of them short and closely related, merged into 4 fuller lessons).
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-cantidad-numerica-relativa-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-cantidad-numerica-relativa-b1', canDo: 'give a proportion — la mayoría DE, por ciento, en total', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:129', 'nociones_generales:B1:130', 'nociones_generales:B1:133', 'nociones_generales:B1:139', 'nociones_generales:B1:141', 'nociones_generales:B1:145'],
   title: 'Cantidad: en total, por ciento, la mayoría de',
   summary: 'La mayoría behaves grammatically like a container word from A2 — it needs de before the group it refers to, exactly like un grupo de or una botella de — so la mayoría chilenos is as wrong as una botella agua.',
@@ -7437,7 +7472,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-aumento-proporcion-grado-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-aumento-proporcion-grado-b1', canDo: 'describe a rise or fall as a verb or as a noun, and give a fraction', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:157', 'nociones_generales:B1:158', 'nociones_generales:B1:166', 'nociones_generales:B1:167', 'nociones_generales:B1:177', 'nociones_generales:B1:178'],
   title: 'Aumento y proporción: subida, la mitad, sobre todo',
   summary: 'Subida and bajada name a CHANGE as a noun where aumentar/disminuir name it as a verb — the same fact, different part of speech — and fractions like la mitad and un tercio need "de" before the group, exactly like la mayoría.',
@@ -7476,7 +7511,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-medidas-tamano-superficie-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-medidas-tamano-superficie-b1', canDo: 'measure a person, an object and an area with medir — and say what fits', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:188', 'nociones_generales:B1:192', 'nociones_generales:B1:195', 'nociones_generales:B1:206', 'nociones_generales:B1:207'],
   title: 'Medidas: medir, tamaño, metros cuadrados',
   summary: 'Medir does triple duty — a person\'s height, an object\'s length, and an area\'s size — the same verb serving three different kinds of measurement, while caber is a completely separate, irregular verb about whether something FITS.',
@@ -7515,7 +7550,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-temperatura-velocidad-volumen-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-temperatura-velocidad-volumen-b1', canDo: 'give a temperature, a speed and a capacity with estar a', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:213', 'nociones_generales:B1:216', 'nociones_generales:B1:220', 'nociones_generales:B1:200', 'nociones_generales:B1:201', 'nociones_generales:B1:209'],
   title: 'Temperatura, velocidad y volumen: grados, km por hora',
   summary: 'Estar a + number + grados states a temperature the exact same way estar a + number + kilómetros states a distance — one "estar a" pattern reused across several completely different kinds of measurement.',
@@ -7558,7 +7593,7 @@ window.STRAND_LESSONS = [
  * merged into 3 lessons).
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-localizacion-posicion-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-localizacion-posicion-b1', canDo: 'place something precisely — junto a, al fondo, en ninguna parte', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:271', 'nociones_generales:B1:273', 'nociones_generales:B1:289', 'nociones_generales:B1:291', 'nociones_generales:B1:296', 'nociones_generales:B1:298'],
   title: 'Localización y posición: junto a, al fondo, en ninguna parte',
   summary: 'En ninguna parte and en todas partes push the A1 aquí/allí system to its two extremes — nowhere and everywhere — while junto a, al fondo and en el medio give the fine-grained position vocabulary a described room actually needs.',
@@ -7597,7 +7632,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-distancia-movimiento-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-distancia-movimiento-b1', canDo: 'say something moves toward or away — acercarse A, alejarse DE', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:317', 'nociones_generales:B1:319', 'nociones_generales:B1:331', 'nociones_generales:B1:333', 'nociones_generales:B1:336', 'nociones_generales:B1:340'],
   title: 'Distancia y movimiento: acercarse, alejarse, caerse',
   summary: 'Acercarse a and alejarse de are a matched, opposite pair — moving toward or away from a fixed point — and both take a specific, non-interchangeable preposition, a distinction the A1 ir/venir logic doesn\'t fully cover.',
@@ -7636,7 +7671,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-orientacion-orden-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-orientacion-orden-b1', canDo: 'name a route with seguir por, and sequence steps in order', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:371', 'nociones_generales:B1:373', 'nociones_generales:B1:375', 'nociones_generales:B1:391', 'nociones_generales:B1:393', 'nociones_generales:B1:395'],
   title: 'Orientación y orden: seguir por, primero, luego',
   summary: 'Seguir/continuar/subir/bajar all take por before naming the route itself — seguir POR la autopista — while primero, luego, a continuación and finalmente sequence a series of steps in exactly the order they name.',
@@ -7681,7 +7716,7 @@ window.STRAND_LESSONS = [
  * extending the "lifecycle of an action" merge to five stages).
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-tiempo-referencias-futuro-pasado-presente-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-tiempo-referencias-futuro-pasado-presente-b1', canDo: 'say how long I have been doing something with llevar + gerundio', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:414', 'nociones_generales:B1:415', 'nociones_generales:B1:465', 'nociones_generales:B1:466', 'nociones_generales:B1:454', 'nociones_generales:B1:447', 'nociones_generales:B1:448', 'nociones_generales:B1:451'],
   title: 'El tiempo: siglos, décadas y el presente que dura',
   summary: 'Llevar + gerundio states how long a situation has continued right up to now — llevo un año trabajando aquí — a construction with no direct English equivalent, built from a verb that everywhere else just means "to carry."',
@@ -7721,7 +7756,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-ciclo-accion-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-ciclo-accion-b1', canDo: 'say an action is still going with seguir + gerundio, or has stopped with dejar de', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:532', 'nociones_generales:B1:534', 'nociones_generales:B1:548', 'nociones_generales:B1:549', 'nociones_generales:B1:538', 'nociones_generales:B1:541', 'nociones_generales:B1:513', 'nociones_generales:B1:519'],
   title: 'El ciclo de una acción: empezar, seguir, dejar de',
   summary: 'Seguir + gerundio says an action is STILL going; dejar de + infinitive says it has STOPPED — the same event\'s continuation and interruption, described from opposite ends of one single scale running from start to finish.',
@@ -7761,7 +7796,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-puntualidad-retraso-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-puntualidad-retraso-b1', canDo: 'tell a late schedule from a person in a hurry, and say how long something took', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:524', 'nociones_generales:B1:526', 'nociones_generales:B1:528', 'nociones_generales:B1:530'],
   title: 'Puntualidad y retraso: llegar a tiempo, con retraso',
   summary: 'Retraso describes the SCHEDULE slipping — a train, a flight, a meeting — while tener prisa describes the PERSON\'s own hurry; the two often show up together but state genuinely different facts.',
@@ -7805,7 +7840,7 @@ window.STRAND_LESSONS = [
  * units, merged into 3 lessons).
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-formas-materia-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-formas-materia-b1', canDo: 'say what shape something is and what it is made of', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:689', 'nociones_generales:B1:691', 'nociones_generales:B1:695', 'nociones_generales:B1:761', 'nociones_generales:B1:763', 'nociones_generales:B1:766'],
   title: 'Formas y materia: círculo, estar hecho de',
   summary: 'Estar hecho de + material states composition directly, one grammatical step further than the A2 ser de pattern, and pairs naturally with the shape vocabulary — círculo, cuadrado, triángulo — needed to describe any object fully.',
@@ -7927,7 +7962,7 @@ window.STRAND_LESSONS = [
  * units, merged into 5 lessons). Completes all 61 B1 notion units.
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-edad-vejez-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-edad-vejez-b1', canDo: 'say someone is turning an age, and that they look a certain age', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:860', 'nociones_generales:B1:861', 'nociones_generales:B1:862', 'nociones_generales:B1:863'],
   title: 'Edad: cumplir años, aniversario',
   summary: 'Cumplir + [number] + años is how Spanish marks a birthday landmark — cumple treinta años, "she\'s turning thirty" — a specific verb for the event of aging a year, distinct from simply tener + años.',
@@ -7965,7 +8000,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-evaluacion-valor-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-evaluacion-valor-b1', canDo: 'give a verdict with parecerle, and ask a price that moves', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:890', 'nociones_generales:B1:891', 'nociones_generales:B1:893', 'nociones_generales:B1:904', 'nociones_generales:B1:905', 'nociones_generales:B1:907'],
   title: 'Evaluación y precio: parecerle, estar a, rebajas',
   summary: 'Parecerle (a alguien) algo follows the exact gustar pattern — me parece caro, "it seems expensive to me" — making the person who holds the opinion the indirect object, never the grammatical subject.',
@@ -8004,7 +8039,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-conformidad-correccion-precision-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-conformidad-correccion-precision-b1', canDo: 'close a transaction politely, and talk about catching and fixing a mistake', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:934', 'nociones_generales:B1:936', 'nociones_generales:B1:940', 'nociones_generales:B1:941', 'nociones_generales:B1:949', 'nociones_generales:B1:951'],
   title: 'Conformidad y corrección: aceptar, error, claro',
   summary: 'Está bien así, gracias closes a transaction politely — it declines further help without rejecting what\'s been offered — while corregir un error and repasar name the two-step process of catching and reviewing a mistake.',
@@ -8043,7 +8078,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-exito-utilidad-importancia-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-exito-utilidad-importancia-b1', canDo: 'say what something is FOR and what a person is good AT', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:966', 'nociones_generales:B1:969', 'nociones_generales:B1:977', 'nociones_generales:B1:988', 'nociones_generales:B1:1000', 'nociones_generales:B1:1009'],
   title: 'Éxito, utilidad e importancia: servir para, dar igual',
   summary: 'Servir para names what something is FOR; ser bueno en/para names what a PERSON is good at — two structurally similar "for" constructions that describe an object\'s purpose and a person\'s ability respectively.',
@@ -8083,7 +8118,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-reflexion-expresion-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-reflexion-expresion-b1', canDo: 'say I realised something with darse cuenta de, and tell a joke or a story', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:1025', 'nociones_generales:B1:1027', 'nociones_generales:B1:1030', 'nociones_generales:B1:1049', 'nociones_generales:B1:1055', 'nociones_generales:B1:1059'],
   title: 'Reflexión y expresión: darse cuenta de, contar un chiste',
   summary: 'Darse cuenta de means "to realize/become aware," and it is reflexive — you cannot simply "cuenta" something the way you might expect from the bare verb contar, which instead means "to tell/count."',
@@ -9690,7 +9725,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-acabado-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 4, theme: null,
+  id: 'nt-acabado-b1', canDo: 'describe the state an action left behind, with estar + participio', strand: 'notion', cefr: 'B1', level: 4, theme: null,
   pcic: ['nociones_generales:B1:737', 'nociones_generales:B1:738', 'nociones_generales:B1:739', 'nociones_generales:B1:740'],
   title: 'Acabado: el resultado de una acción terminada',
   summary: 'La pared está pintada does not describe an action — it describes what the world looks like AFTER one, and Spanish marks that finished-result state with estar + participio, the same construction already met for cansado/aburrido, now applied to any completed process.',
@@ -16827,7 +16862,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-persona-b1', canDo: 'describe a person objectively and then subjectively', deeper: ['nt-conformidad-correccion-precision-b1', 'nt-cualidad-generalidad-b1', 'nt-edad-vejez-b1', 'nt-necesidad-obligacion-b1', 'nt-reflexion-expresion-b1'], strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  id: 'gn-describir-persona-b1', canDo: 'describe a person objectively and then subjectively', strand: 'genre', cefr: 'B1', level: 3, theme: null,
   pcic: ['generos_discursivos:B1:720', 'generos_discursivos:B1:721', 'generos_discursivos:B1:722', 'generos_discursivos:B1:724',
          'generos_discursivos:B1:725', 'generos_discursivos:B1:726', 'generos_discursivos:B1:727'],
   title: 'Describir a una persona: objetivo vs subjetivo, y una anécdota narrada',
@@ -16867,7 +16902,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-objeto-b1', canDo: 'describe an object, or turn it into a riddle', deeper: ['nt-formas-materia-b1', 'nt-sentidos-b1', 'nt-medidas-tamano-superficie-b1', 'nt-temperatura-velocidad-volumen-b1', 'nt-textura-consistencia-b1', 'nt-acabado-b1'], strand: 'genre', cefr: 'B1', level: 3, theme: 'alimentacion',
+  id: 'gn-describir-objeto-b1', canDo: 'describe an object, or turn it into a riddle', deeper: ['nt-sentidos-b1', 'nt-textura-consistencia-b1'], strand: 'genre', cefr: 'B1', level: 3, theme: 'alimentacion',
   pcic: ['generos_discursivos:B1:776', 'generos_discursivos:B1:777', 'generos_discursivos:B1:778', 'generos_discursivos:B1:780',
          'generos_discursivos:B1:781', 'generos_discursivos:B1:782', 'generos_discursivos:B1:783'],
   title: 'Describir un objeto: origen objetivo o acertijo subjetivo',
@@ -16907,7 +16942,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-lugar-b1', canDo: 'describe a place and say why it matters to me', deeper: ['nt-distancia-movimiento-b1', 'nt-localizacion-posicion-b1', 'nt-orientacion-orden-b1', 'nt-puntualidad-retraso-b1'], strand: 'genre', cefr: 'B1', level: 3, theme: 'vivienda',
+  id: 'gn-describir-lugar-b1', canDo: 'describe a place and say why it matters to me', strand: 'genre', cefr: 'B1', level: 3, theme: 'vivienda',
   pcic: ['generos_discursivos:B1:824', 'generos_discursivos:B1:825', 'generos_discursivos:B1:826', 'generos_discursivos:B1:828',
          'generos_discursivos:B1:829', 'generos_discursivos:B1:830', 'generos_discursivos:B1:831'],
   title: 'Describir un lugar: razones objetivas, cariño subjetivo',

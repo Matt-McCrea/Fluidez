@@ -533,6 +533,7 @@ window.COURSE = [
       { lesson: 'nt-certeza-realidad-b1' },
       { practice: true },
       { lesson: 'fn-estoy-de-acuerdo-b1' },
+      { lesson: 'nt-conformidad-correccion-precision-b1' },
       { lesson: 'task-b1-opinion' },
     ] },
 
@@ -584,6 +585,7 @@ window.COURSE = [
       { lesson: 'fn-preguntar-deseos-b1' },
       { practice: true },
       { lesson: 'fn-posibilidad-b1' },
+      { lesson: 'nt-necesidad-obligacion-b1' },
       { lesson: 'task-b1-deseos' },
     ] },
 
@@ -603,6 +605,8 @@ window.COURSE = [
       { lesson: 'fn-proponer-sugerir-b1' },
       { lesson: 'fn-aceptar-propuesta-b1' },
       { lesson: 'fn-ofrecer-invitar-b1' },
+      { lesson: 'nt-puntualidad-retraso-b1' },
+      { lesson: 'nt-tiempo-referencias-futuro-pasado-presente-b1' },
       { lesson: 'task-b1-planes' },
     ] },
 
@@ -681,6 +685,8 @@ window.COURSE = [
       { lesson: 'fn-sensaciones-fisicas-b1' },
       { lesson: 'fn-preguntar-estado-animo-b1' },
       { lesson: 'fn-responder-estado-b1' },
+      { lesson: 'nt-evaluacion-valor-b1' },
+      { lesson: 'nt-exito-utilidad-importancia-b1' },
       { lesson: 'task-b1-gustos' },
     ] },
 
@@ -699,6 +705,8 @@ window.COURSE = [
       { lesson: 'fn-concluir-relato-b1' },
       { lesson: 'dc-marcadores-discurso-b1' },
       { lesson: 'dc-mantenimiento-referente-b1' },
+      { lesson: 'nt-ciclo-accion-b1' },
+      { lesson: 'nt-orientacion-orden-b1' },
       { lesson: 'task-b1-relato' },
     ] },
 
@@ -719,6 +727,7 @@ window.COURSE = [
       { lesson: 'fn-preguntar-persona-telefono-b1' },
       { lesson: 'fn-pedir-informacion-b1' },
       { lesson: 'dc-valores-ilocutivos-b1' },
+      { lesson: 'nt-reflexion-expresion-b1' },
       { lesson: 'task-b1-conversar' },
     ] },
 
@@ -737,6 +746,10 @@ window.COURSE = [
       { lesson: 'gn-describir-lugar-b1' },
       { lesson: 'gn-describir-objeto-b1' },
       { lesson: 'gr-pronombres-combinados-b1' },
+      { lesson: 'nt-cualidad-generalidad-b1' },
+      { lesson: 'nt-edad-vejez-b1' },
+      { lesson: 'nt-localizacion-posicion-b1' },
+      { lesson: 'nt-distancia-movimiento-b1' },
       { lesson: 'task-b1-describir' },
     ] },
 
@@ -753,6 +766,8 @@ window.COURSE = [
       { lesson: 'gr-comparativas-b1' },
       { practice: true },
       { lesson: 'gr-perifrasis-verbales-b1' },
+      { lesson: 'nt-cantidad-numerica-relativa-b1' },
+      { lesson: 'nt-aumento-proporcion-grado-b1' },
       { lesson: 'task-b1-unir' },
     ] },
 
@@ -808,6 +823,23 @@ window.COURSE = [
       { practice: true },
       { lesson: 'gr-imperativo-valores-b1' },
       { lesson: 'task-b1-hipotesis' },
+    ] },
+
+
+  { unit: 'b1-u43', band: 'B1', title: 'Describing the physical world',
+    goal: 'I can describe an object precisely — its size, shape, material, state and whether it is available.',
+    canDo: ['measure with medir and estar a',
+            'say what something is made of and what state it is in',
+            'tell lleno/vacío (contents) from libre/ocupado (availability)',
+            'say whether something fits'],
+    days: [
+      { lesson: 'nt-medidas-tamano-superficie-b1' },
+      { lesson: 'nt-formas-materia-b1' },
+      { lesson: 'nt-temperatura-velocidad-volumen-b1' },
+      { lesson: 'nt-existencia-disponibilidad-b1' },
+      { lesson: 'nt-acabado-b1' },
+      { practice: true },
+      { lesson: 'task-b1-fisico' },
     ] },
 
   /* ---- B2 · 169 days · starts at index 387 ------------------------------- */
