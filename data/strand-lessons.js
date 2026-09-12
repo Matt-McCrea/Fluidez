@@ -23,6 +23,550 @@
 window.STRAND_LESSONS = [
 
 {
+  id: 'task-b1-opinion', strand: 'task', cefr: 'B1', level: 4, theme: 'politica',
+  title: 'Defiende una opinión',
+  canDo: 'state an opinion and say why, including what you do NOT think',
+  summary: 'The subjunctive arrives here as a meaning contrast, not a paradigm. "Creo que es" and "no creo que sea" differ by one mood, and that mood is the whole difference between asserting something and declining to.',
+  sections: [
+    { h: 'What to do', html: 'Pick something you actually have a view on. Write twelve to sixteen sentences: your position, three reasons, and at least two things you do NOT think.' },
+    { h: 'The contrast to get right', html: '<i>Creo que funciona</i> asserts it. <i>No creo que funcione</i> declines to assert it — the negative pushes the verb into the subjunctive. This is the cleanest place in Spanish to feel what the subjunctive is for.' }
+  ],
+  model: { title: 'the shape of it', text: '<p>A mí me parece que el teletrabajo funciona, al menos en trabajos como el mío. Creo que la gente rinde más cuando puede organizarse el día. No creo que sea la solución para todo el mundo, y desde luego no pienso que funcione en equipos que empiezan de cero. Lo que sí está claro es que ahorra tiempo. Dos horas de transporte al día son diez a la semana. No digo que no haya problemas — es más difícil conocer a la gente nueva — pero me parece que las ventajas pesan más.</p>' },
+  checklist: [
+    'Twelve sentences or more.',
+    'A clear position, stated early.',
+    'Three reasons.',
+    'At least two negated opinions using the subjunctive.',
+    'At least one concession before a <i>pero</i>.'
+  ],
+  examples: [
+    { es: 'Creo que funciona.', en: 'I think it works.' },
+    { es: 'No creo que funcione.', en: 'I don\'t think it works.' },
+    { es: 'No digo que no haya problemas.', en: 'I\'m not saying there aren\'t problems.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-opinion-1', kind: 'mcq',
+      q: 'Which is correct?',
+      options: ['No creo que funcione.', 'No creo que funciona.', 'No creo que funcionar.'], answer: 0 },
+    { id: 'p:task-b1-opinion-2', kind: 'mcq',
+      q: 'What pushes the verb into the subjunctive here?',
+      options: ['the negative', 'the subject', 'the tense'], answer: 0 },
+    { id: 'p:task-b1-opinion-3', kind: 'cloze',
+      text: 'No creo que ___ la solución. (ser)', accept: ['sea'] }
+  ]
+},
+
+{
+  id: 'task-b1-debate', strand: 'task', cefr: 'B1', level: 4, theme: 'politica',
+  title: 'Discute con alguien que no está de acuerdo',
+  canDo: 'hold a disagreement without it becoming a row',
+  summary: 'Agreement in Spanish is a scale, and so is disagreement. The useful skill at B1 is partial agreement — conceding something real before you push back, which is what stops a disagreement sounding like a rejection.',
+  sections: [
+    { h: 'What to do', html: 'Write a twelve-turn conversation between two people who disagree. Neither may simply repeat themselves; each turn has to move.' },
+    { h: 'Concede first', html: '<i>Estoy de acuerdo en parte</i>, <i>tienes razón en que…, pero</i>, <i>sí, pero…</i>. Conceding is not weakness — it is what buys you the right to be listened to.' }
+  ],
+  model: { title: 'a disagreement that works', text: '<p>—Yo creo que deberían prohibir los coches en el centro.<br>—Hombre, en eso no estoy de acuerdo.<br>—¿Por qué no? Hay muchísima contaminación.<br>—Tienes razón en lo de la contaminación, no lo discuto. Pero mucha gente mayor no puede ir andando.<br>—Ya, pero para eso está el transporte público.<br>—¿Qué transporte? Si el autobús pasa cada media hora.<br>—Bueno, eso sí que es verdad.<br>—Yo lo que digo es que primero hay que arreglar el transporte y después prohibir los coches.<br>—En eso sí te doy la razón.</p>' },
+  checklist: [
+    'Twelve turns or more.',
+    'Both people concede something at least once.',
+    'At least one partial agreement (<i>en parte</i>, <i>tienes razón en que…</i>).',
+    'At least one counter-argument introduced with <i>pero</i> or <i>sin embargo</i>.',
+    'Nobody just repeats themselves.'
+  ],
+  examples: [
+    { es: 'En eso no estoy de acuerdo.', en: 'I don\'t agree with that.' },
+    { es: 'Tienes razón en lo de la contaminación, pero…', en: 'You\'re right about the pollution, but…' },
+    { es: 'En eso sí te doy la razón.', en: 'On that I\'ll grant you you\'re right.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-debate-1', kind: 'mcq',
+      q: 'Which concedes before pushing back?',
+      options: ['Tienes razón, pero…', 'No, qué va.', 'Eso no es así.'], answer: 0 },
+    { id: 'p:task-b1-debate-2', kind: 'mcq',
+      q: 'Which is PARTIAL agreement?',
+      options: ['Estoy de acuerdo en parte.', 'Estoy totalmente de acuerdo.', 'No estoy de acuerdo.'], answer: 0 },
+    { id: 'p:task-b1-debate-3', kind: 'cloze',
+      text: 'En eso sí te ___ la razón.', accept: ['doy'] }
+  ]
+},
+
+{
+  id: 'task-b1-consejo', strand: 'task', cefr: 'B1', level: 4, theme: 'salud',
+  title: 'Aconseja a alguien que te lo pide',
+  canDo: 'give advice at three levels of directness',
+  summary: 'The conditional is the politeness tense. Advice given in it leaves the other person room to ignore you, which is exactly what advice should do.',
+  sections: [
+    { h: 'What to do', html: 'Write a message from someone asking your advice about a real problem, then your reply. Give three suggestions at increasing strength.' },
+    { h: 'The scale', html: '<i>Podrías…</i> (softest) · <i>Yo que tú, …ía</i> · <i>Lo mejor sería…</i> · <i>Deberías…</i> (strongest, and close to telling them off). Match the strength to how well you know them.' }
+  ],
+  model: { title: 'a problem and a reply', text: '<p><b>Ella:</b> No sé qué hacer. Me han ofrecido un puesto mejor pagado pero en otra ciudad, y aquí tengo a toda mi familia.</p><p><b>Tú:</b> Uf, vaya dilema. Yo que tú, primero preguntaría si hay opción de teletrabajar algunos días — mucha gente lo hace ahora y nadie te lo va a ofrecer si no lo pides. Podrías también pedir unos meses de prueba antes de mudarte del todo. Lo mejor sería hablarlo con ellos con calma, sin decidir nada esta semana. Si al final no sale, tampoco pasa nada: con esa oferta encima de la mesa, aquí ya sabes lo que vales.</p>' },
+  checklist: [
+    'A problem is stated and then answered.',
+    'Three distinct suggestions.',
+    'At least two use the conditional.',
+    'At least one uses <i>yo que tú</i> or <i>lo mejor sería</i>.',
+    'It ends with reassurance, not another instruction.'
+  ],
+  examples: [
+    { es: 'Yo que tú, preguntaría primero.', en: 'If I were you, I\'d ask first.' },
+    { es: 'Podrías pedir unos meses de prueba.', en: 'You could ask for a few months\' trial.' },
+    { es: 'Lo mejor sería hablarlo con calma.', en: 'The best thing would be to talk it over calmly.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-consejo-1', kind: 'mcq',
+      q: 'Which is the softest?',
+      options: ['Podrías preguntar.', 'Deberías preguntar.', 'Pregunta.'], answer: 0 },
+    { id: 'p:task-b1-consejo-2', kind: 'mcq',
+      q: '"Yo que tú" is followed by which tense?',
+      options: ['the conditional', 'the present', 'the preterite'], answer: 0 },
+    { id: 'p:task-b1-consejo-3', kind: 'cloze',
+      text: 'Yo que tú, ___ primero. (preguntar, condicional)', accept: ['preguntaría'] }
+  ]
+},
+
+{
+  id: 'task-b1-deseos', strand: 'task', cefr: 'B1', level: 4, theme: 'relaciones',
+  title: 'Di lo que quieres que pase',
+  canDo: 'say what you want someone else to do, and what you hope will happen',
+  summary: 'The second door into the subjunctive, and the cleanest: when the wanting and the doing have different subjects, the second verb goes into the subjunctive. Quiero ir, but quiero que vayas.',
+  sections: [
+    { h: 'What to do', html: 'Write a short letter or message asking several things of someone, and saying what you hope for. Eight to twelve sentences.' },
+    { h: 'The rule, in one line', html: 'Same subject → infinitive (<i>quiero ir</i>). Different subject → <i>que</i> + subjunctive (<i>quiero que vayas</i>). Every wish, hope, request and preference works this way.' }
+  ],
+  model: { title: 'a message asking a lot', text: '<p>Oye, te escribo porque necesito que me eches una mano con la mudanza del sábado. No hace falta que vengas temprano, con que llegues sobre las once me vale. Quiero que veas el piso antes de que metamos los muebles, a ver qué te parece la distribución. Espero que no llueva, porque si llueve va a ser un desastre. También me gustaría que trajeras la furgoneta de tu hermano, si él te deja. Ojalá podamos acabar antes de comer y luego nos tomamos algo.</p>' },
+  checklist: [
+    'Eight sentences or more.',
+    'At least four <i>que</i> + subjunctive clauses.',
+    'At least one <i>espero que</i> and one <i>ojalá</i>.',
+    'At least one same-subject infinitive, for contrast.',
+    'It asks for something real.'
+  ],
+  examples: [
+    { es: 'Necesito que me eches una mano.', en: 'I need you to give me a hand.' },
+    { es: 'Espero que no llueva.', en: 'I hope it doesn\'t rain.' },
+    { es: 'Quiero ir, pero quiero que vengas tú también.', en: 'I want to go, but I want you to come too.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-deseos-1', kind: 'mcq',
+      q: 'Which is correct?',
+      options: ['Quiero que vengas.', 'Quiero que vienes.', 'Quiero que venir.'], answer: 0 },
+    { id: 'p:task-b1-deseos-2', kind: 'mcq',
+      q: 'When do you use an infinitive instead of que + subjunctive?',
+      options: ['when the subject is the same', 'when it is polite', 'when it is negative'], answer: 0 },
+    { id: 'p:task-b1-deseos-3', kind: 'cloze',
+      text: 'Espero que no ___ mañana. (llover)', accept: ['llueva'] }
+  ]
+},
+
+{
+  id: 'task-b1-planes', strand: 'task', cefr: 'B1', level: 4, theme: 'viajes',
+  title: 'Cuenta tus planes y predice algo',
+  canDo: 'talk about the future, and guess about the present',
+  summary: 'Spanish has two futures doing different jobs. Ir a is what you have decided; the simple future is prediction — and the same form, oddly, is how Spanish guesses about right now.',
+  sections: [
+    { h: 'What to do', html: 'Write about a real plan in ten to fourteen sentences: what you are going to do, what you think will happen, and what might go wrong.' },
+    { h: 'The conjecture use', html: '<i>¿Qué hora será?</i> is not about the future at all — it means "I wonder what time it is". <i>Estará en casa</i> means "he\'s probably at home". This surprises every learner and is extremely common in speech.' }
+  ],
+  model: { title: 'a plan and some guessing', text: '<p>En marzo voy a pasar tres semanas en Colombia. Voy a empezar por Bogotá y luego bajaré a la costa. Creo que será temporada de lluvias, así que llevaré botas. Cuando llegue a Cartagena, me quedaré en casa de una amiga. Su hermano trabaja de guía, así que seguramente él nos llevará a algún sitio que no salga en las guías. Lo que no sé es si me dará tiempo a ver el sur. Serán unos seiscientos kilómetros, supongo, y no quiero pasarme el viaje en autobuses.</p>' },
+  checklist: [
+    'Ten sentences or more.',
+    'Both <i>ir a</i> and the simple future appear.',
+    'At least one <i>cuando</i> + subjunctive for a future moment.',
+    'At least one future of conjecture (a guess, not a plan).',
+    'At least one thing that might go wrong.'
+  ],
+  examples: [
+    { es: 'Voy a pasar tres semanas en Colombia.', en: 'I\'m going to spend three weeks in Colombia.' },
+    { es: 'Cuando llegue, me quedaré en su casa.', en: 'When I arrive, I\'ll stay at her place.' },
+    { es: 'Serán unos seiscientos kilómetros.', en: 'It\'ll be about six hundred kilometres.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-planes-1', kind: 'mcq',
+      q: '"Serán las tres" most likely means:',
+      options: ['It\'s probably three o\'clock', 'It will be three o\'clock', 'It used to be three'], answer: 0 },
+    { id: 'p:task-b1-planes-2', kind: 'mcq',
+      q: '"Cuando ___ a Cartagena…" (future moment)',
+      options: ['llegue', 'llego', 'llegaré'], answer: 0 },
+    { id: 'p:task-b1-planes-3', kind: 'cloze',
+      text: 'Cuando ___ , te llamo. (llegar, yo)', accept: ['llegue'] }
+  ]
+},
+
+{
+  id: 'task-b1-pedir', strand: 'task', cefr: 'B1', level: 4, theme: 'servicios',
+  title: 'Pide, niégate y prohíbe',
+  canDo: 'ask for things at four levels, refuse without offence, and forbid clearly',
+  summary: 'B1 is where requests stop being formulas and start being choices. The same favour asked four ways is four different relationships.',
+  sections: [
+    { h: 'What to do', html: 'Write four short exchanges: asking a favour, asking permission, refusing a request, and forbidding something. Each with a different person.' },
+    { h: 'Refusing well', html: 'A bare <i>no</i> is harsh. Spanish softens with a reason (<i>es que…</i>), an apology (<i>lo siento, pero…</i>), or distance (<i>me temo que no va a poder ser</i>). Refusing badly costs more than asking badly.' }
+  ],
+  model: { title: 'four exchanges', text: '<p>—¿Te importaría echarme una mano el sábado? —Uf, el sábado lo tengo complicado, es que viene mi hermana. ¿Te vale el domingo?</p><p>—¿Puedo dejar la bici aquí un momento? —Sí, sin problema, pero no la dejes en la puerta.</p><p>—¿Me prestas el coche este finde? —Mira, prefiero que no. Con el seguro que tengo no puede conducirlo nadie más.</p><p>—Aquí no se puede fumar. —Ah, perdona, no lo sabía. —No pasa nada, es que hay niños.</p>' },
+  checklist: [
+    'Four exchanges, four different relationships.',
+    'One asks a favour, one asks permission, one refuses, one forbids.',
+    'Every refusal gives a reason.',
+    'At least one uses <i>¿te importaría…?</i> or <i>¿sería posible…?</i>',
+    'Nobody is rude by accident.'
+  ],
+  examples: [
+    { es: '¿Te importaría echarme una mano?', en: 'Would you mind giving me a hand?' },
+    { es: 'Prefiero que no.', en: 'I\'d rather you didn\'t.' },
+    { es: 'Es que viene mi hermana.', en: 'It\'s just that my sister is coming.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-pedir-1', kind: 'mcq',
+      q: 'Which softens a refusal best?',
+      options: ['Es que el sábado viene mi hermana.', 'No.', 'No puedo y ya está.'], answer: 0 },
+    { id: 'p:task-b1-pedir-2', kind: 'mcq',
+      q: '"Prefiero que no ___" takes which mood?',
+      options: ['subjunctive', 'indicative', 'infinitive'], answer: 0 },
+    { id: 'p:task-b1-pedir-3', kind: 'cloze',
+      text: '¿Te ___ echarme una mano? (importar, condicional)', accept: ['importaría'] }
+  ]
+},
+
+{
+  id: 'task-b1-alegria', strand: 'task', cefr: 'B1', level: 4, theme: 'relaciones',
+  title: 'Cuenta algo que te hizo feliz',
+  canDo: 'express pleasure, affection, pride and relief at the right intensity',
+  summary: 'Fifteen separate lessons used to teach one emotion each. They belong together, because the skill is not knowing the phrases — it is choosing the size of the reaction.',
+  sections: [
+    { h: 'What to do', html: 'Write about something genuinely good that happened, in twelve to sixteen sentences, and include how other people reacted.' },
+    { h: 'Intensity is the skill', html: '<i>Me alegro</i> · <i>me alegro muchísimo</i> · <i>no sabes cuánto me alegro</i> · <i>me hizo una ilusión tremenda</i>. Using the biggest one for a small thing reads as sarcasm, which is the commonest B1 misfire.' }
+  ],
+  model: { title: 'good news, well told', text: '<p>El mes pasado mi hermana aprobó las oposiciones. Llevaba tres años estudiando y ya estaba empezando a pensar en dejarlo. Cuando me llamó, no sabes la ilusión que me hizo. Me puse a llorar, la verdad, y eso que yo no lloro casi nunca. Mi madre estaba aún peor que yo. Le dije que estaba orgullosísimo de ella, porque lo estoy: es la persona más cabezota que conozco, en el buen sentido. Lo celebramos el sábado siguiente con toda la familia. Hacía años que no nos juntábamos todos y me encantó volver a verlos.</p>' },
+  checklist: [
+    'Twelve sentences or more.',
+    'At least three different expressions of positive feeling.',
+    'At least one is intensified (<i>muchísimo</i>, <i>-ísimo</i>, <i>no sabes cuánto</i>).',
+    'Somebody else\'s reaction appears too.',
+    'The intensity matches the size of the news.'
+  ],
+  examples: [
+    { es: 'No sabes la ilusión que me hizo.', en: 'You\'ve no idea how thrilled I was.' },
+    { es: 'Estoy orgullosísimo de ella.', en: 'I\'m so proud of her.' },
+    { es: 'Me encantó volver a verlos.', en: 'I loved seeing them again.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-alegria-1', kind: 'mcq',
+      q: 'Which is the STRONGEST?',
+      options: ['No sabes cuánto me alegro.', 'Me alegro.', 'Qué bien.'], answer: 0 },
+    { id: 'p:task-b1-alegria-2', kind: 'mcq',
+      q: 'What happens if you use the strongest form for small news?',
+      options: ['it sounds sarcastic', 'it sounds formal', 'it sounds shy'], answer: 0 },
+    { id: 'p:task-b1-alegria-3', kind: 'cloze',
+      text: 'Estoy orgullos___ de ella. (intensified)', accept: ['ísimo', 'ísima'] }
+  ]
+},
+
+{
+  id: 'task-b1-enfado', strand: 'task', cefr: 'B1', level: 4, theme: 'salud',
+  title: 'Cuenta algo que salió mal',
+  canDo: 'express anger, worry, boredom and indifference — and calm someone else down',
+  summary: 'The other half of the feelings cluster. Negative emotion in Spanish is more openly expressed than in English, and under-reacting reads as coldness rather than restraint.',
+  sections: [
+    { h: 'What to do', html: 'Write about something that went badly, in twelve to sixteen sentences, ending with someone else trying to calm you down.' },
+    { h: 'Indifference is a feeling too', html: '<i>Me da igual</i>, <i>me trae sin cuidado</i>, <i>ni fu ni fa</i>. Saying you do not care is a move with its own register scale, and the strong versions are much stronger than they look.' }
+  ],
+  model: { title: 'when it goes wrong', text: '<p>Llevo dos meses peleándome con la compañía del gas. Me llegó una factura de trescientos euros por un piso donde vivo yo solo y casi no cocino. Llamé cinco veces. Cada vez me decían otra cosa y me pasaban con otro departamento. La última vez me colgaron. Me indigna que te traten así sabiendo que no puedes hacer nada. Al final puse una reclamación por escrito. Mi vecina me dijo: "Tranquilo, hombre, que esto se arregla. A mí me pasó lo mismo el año pasado y al final me lo devolvieron todo." Espero que tenga razón, porque yo ya estoy harto.</p>' },
+  checklist: [
+    'Twelve sentences or more.',
+    'At least three different negative-feeling expressions.',
+    'At least one uses <i>me indigna que</i> or <i>no soporto que</i> + subjunctive.',
+    'Somebody tries to calm you down at the end.',
+    'The reaction is proportionate to what happened.'
+  ],
+  examples: [
+    { es: 'Me indigna que te traten así.', en: 'It infuriates me that they treat you like that.' },
+    { es: 'Ya estoy harto.', en: 'I\'ve had enough.' },
+    { es: 'Tranquilo, que esto se arregla.', en: 'Calm down, this\'ll get sorted.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-enfado-1', kind: 'mcq',
+      q: '"Me indigna que te ___ así."',
+      options: ['traten', 'tratan', 'tratar'], answer: 0 },
+    { id: 'p:task-b1-enfado-2', kind: 'mcq',
+      q: 'Which expresses indifference?',
+      options: ['Me da igual.', 'Me indigna.', 'Me encanta.'], answer: 0 },
+    { id: 'p:task-b1-enfado-3', kind: 'cloze',
+      text: 'No soporto que me ___ esperar. (hacer, ellos)', accept: ['hagan'] }
+  ]
+},
+
+{
+  id: 'task-b1-gustos', strand: 'task', cefr: 'B1', level: 4, theme: 'ocio',
+  title: 'Habla de lo que te gusta hacer',
+  canDo: 'talk about likes and preferences at B1 depth, including other people\'s',
+  summary: 'A1 said me gusta el café. B1 says me gusta que la gente llegue puntual — liking an action, and someone else\'s action at that, which needs the subjunctive.',
+  sections: [
+    { h: 'What to do', html: 'Write about your tastes in something you care about, ten to fourteen sentences, including at least three things you like OTHER people to do.' },
+    { h: 'The B1 move', html: '<i>Me gusta que + subjuntivo</i>. <i>Me gusta que me llamen antes de venir.</i> The thing you like is someone else\'s behaviour, and that clause goes into the subjunctive every time.' }
+  ],
+  model: { title: 'tastes, at B1 depth', text: '<p>Me gusta cocinar, pero solo cuando tengo tiempo. Lo que no soporto es cocinar con prisa. Prefiero pasarme dos horas un domingo a hacer algo rápido cada noche. Me gusta que la gente venga a casa a comer, aunque me pone un poco nervioso que lleguen antes de que esté todo listo. Me da igual lo que traigan; lo que me molesta es que traigan postre sin avisar, porque yo ya he hecho uno. De todo lo que hago, lo que más me gusta es el arroz. Mi padre lo hacía mejor, pero eso no se lo digo a nadie.</p>' },
+  checklist: [
+    'Ten sentences or more.',
+    'At least three <i>me gusta/molesta/encanta que</i> + subjunctive.',
+    'At least one comparison of two things you like.',
+    'At least one thing you actively dislike.',
+    'One superlative (<i>lo que más me gusta</i>).'
+  ],
+  examples: [
+    { es: 'Me gusta que la gente venga a casa.', en: 'I like people coming over.' },
+    { es: 'Me molesta que lleguen tarde.', en: 'It annoys me when they arrive late.' },
+    { es: 'Lo que más me gusta es el arroz.', en: 'What I like most is the rice.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-gustos-1', kind: 'mcq',
+      q: 'Which is correct?',
+      options: ['Me gusta que vengan.', 'Me gusta que vienen.', 'Me gusta que venir.'], answer: 0 },
+    { id: 'p:task-b1-gustos-2', kind: 'mcq',
+      q: 'Why is the subjunctive needed in "me gusta que vengan"?',
+      options: ['the liked action is someone else\'s', 'it is in the past', 'it is a question'], answer: 0 },
+    { id: 'p:task-b1-gustos-3', kind: 'cloze',
+      text: 'Me molesta que ___ tarde. (llegar, ellos)', accept: ['lleguen'] }
+  ]
+},
+
+{
+  id: 'task-b1-relato', strand: 'task', cefr: 'B1', level: 4, theme: 'ocio',
+  title: 'Cuenta una historia con un antes',
+  canDo: 'tell a story that reaches back before its own beginning',
+  summary: 'The pluperfect is what lets a story refer to something earlier than the point it has reached. Without it, a narrative can only move forward, and every explanation has to be told out of order.',
+  sections: [
+    { h: 'What to do', html: 'Tell a story in sixteen to twenty sentences with a proper five-part shape: orientation, complication, development, resolution, coda.' },
+    { h: 'The reaching back', html: '<i>Cuando llegué, ya se habían ido.</i> Two past moments, one earlier than the other. This is the whole job of <i>había</i> + participle, and it is what makes a B1 story sound structured rather than sequential.' }
+  ],
+  model: { title: 'a story with a before', text: '<p>El verano pasado fui a un pueblo de Teruel a la boda de un primo. Había estado allí una vez de niño, pero no me acordaba de nada. Salí tarde de Madrid porque me había dejado el traje en casa de mi madre y tuve que volver a por él. Cuando llegué, la ceremonia ya había empezado. Entré por detrás intentando no hacer ruido y me senté al lado de una señora que no conocía. A los diez minutos me di cuenta de que me había equivocado de boda. Estaba en la iglesia del pueblo de al lado. La señora se rió tanto que tuvieron que mirarnos. Al final me llevó ella misma en coche, y llegué justo para los postres. Todavía me lo recuerdan.</p>' },
+  checklist: [
+    'Sixteen sentences or more.',
+    'A clear five-part shape.',
+    'At least three pluperfects (<i>había</i> + participle).',
+    'At least one thing that happened BEFORE the story starts.',
+    'A coda — what it means now, not just how it ended.'
+  ],
+  examples: [
+    { es: 'Cuando llegué, ya había empezado.', en: 'When I arrived, it had already started.' },
+    { es: 'Me había dejado el traje en casa.', en: 'I had left my suit at home.' },
+    { es: 'Todavía me lo recuerdan.', en: 'They still remind me of it.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-relato-1', kind: 'mcq',
+      q: '"Cuando llegué, la ceremonia ya ___ empezado."',
+      options: ['había', 'ha', 'habrá'], answer: 0 },
+    { id: 'p:task-b1-relato-2', kind: 'mcq',
+      q: 'What is the pluperfect for?',
+      options: ['an event before another past event', 'a habit in the past', 'a future event'], answer: 0 },
+    { id: 'p:task-b1-relato-3', kind: 'cloze',
+      text: 'Cuando llegué, ya se ___ ido. (haber, ellos)', accept: ['habían'] }
+  ]
+},
+
+{
+  id: 'task-b1-conversar', strand: 'task', cefr: 'B1', level: 4, theme: 'medios',
+  title: 'Mantén una conversación larga',
+  canDo: 'keep a conversation going — signal interest, interrupt, take the floor back',
+  summary: 'Fluency at B1 is less about words than about turn-taking. A learner who can talk but cannot signal that they are listening sounds like they are delivering a speech.',
+  sections: [
+    { h: 'What to do', html: 'Write a twenty-turn conversation where one person tells a long story and the other keeps it going without taking it over.' },
+    { h: 'The listening noises', html: '<i>¿Ah, sí?</i> · <i>¿Y qué pasó?</i> · <i>No me digas</i> · <i>Ya, ya</i> · <i>Claro</i>. Spanish expects these roughly every three or four sentences. Their absence reads as boredom.' }
+  ],
+  model: { title: 'a long conversation', text: '<p>—¿Sabes lo que me pasó ayer?<br>—No, ¿qué?<br>—Pues iba al trabajo y me encontré a Luis en el metro.<br>—¿Luis? ¿El de la oficina de antes?<br>—Ese. Hacía cuatro años que no lo veía.<br>—No me digas. ¿Y qué tal está?<br>—Pues resulta que lo dejó todo y se fue a Portugal.<br>—¿Ah, sí? ¿Y a qué se dedica ahora?<br>—Espera, que esto es lo mejor: monta bicicletas.<br>—¿Bicicletas? Anda ya.<br>—Te lo juro. Y dice que gana menos pero que está muchísimo mejor.<br>—Ya, ya. Bueno, tampoco me extraña, con el jefe que teníamos.<br>—Eso mismo le dije yo.</p>' },
+  checklist: [
+    'Twenty turns or more.',
+    'One person is mainly telling, the other mainly listening.',
+    'At least five listening signals from the listener.',
+    'At least one interruption that does not take the story over.',
+    'The listener asks at least three questions.'
+  ],
+  examples: [
+    { es: '—No me digas. ¿Y qué tal está?', en: '—You don\'t say. And how is he?' },
+    { es: 'Espera, que esto es lo mejor.', en: 'Hang on, this is the best bit.' },
+    { es: 'Ya, ya. Tampoco me extraña.', en: 'Right, right. I\'m not surprised, either.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-conversar-1', kind: 'mcq',
+      q: 'Which signals you are following without taking over?',
+      options: ['¿Ah, sí? ¿Y qué pasó?', 'Pues a mí me pasó algo peor.', 'Bueno, me tengo que ir.'], answer: 0 },
+    { id: 'p:task-b1-conversar-2', kind: 'mcq',
+      q: 'Roughly how often does Spanish expect a listening signal?',
+      options: ['every three or four sentences', 'once per conversation', 'only at the end'], answer: 0 },
+    { id: 'p:task-b1-conversar-3', kind: 'cloze',
+      text: '—Se fue a Portugal. —¡No me ___!', accept: ['digas'] }
+  ]
+},
+
+{
+  id: 'task-b1-describir', strand: 'task', cefr: 'B1', level: 4, theme: 'arte',
+  title: 'Describe algo con detalle',
+  canDo: 'sustain a description for a paragraph using relative clauses',
+  summary: 'Relative clauses are what let a description keep adding without starting a new sentence each time. They are also where que, quien and donde stop being interchangeable.',
+  sections: [
+    { h: 'What to do', html: 'Describe a person, a place and an object, one paragraph each, without ever starting two consecutive sentences the same way.' },
+    { h: 'Which relative', html: '<i>Que</i> for almost everything. <i>Quien</i> only for people, and mostly after a preposition (<i>la persona con quien trabajo</i>). <i>Donde</i> for places, replacing <i>en el que</i>.' }
+  ],
+  model: { title: 'three descriptions', text: '<p><b>Persona:</b> Mi tía Pilar es una mujer que nunca ha sabido estarse quieta. Es la persona a quien llamo cuando algo se rompe, porque lo arregla todo. Tiene una risa que se oye desde la calle.</p><p><b>Lugar:</b> El bar donde desayuno es el típico sitio que no saldría en ninguna guía. Es estrecho, huele a tostada y tiene una barra de zinc que debe de llevar ahí sesenta años.</p><p><b>Objeto:</b> Tengo un reloj que era de mi abuelo. Es de esos que hay que dar cuerda cada mañana, lo cual es un incordio, pero es lo único suyo que conservo.</p>' },
+  checklist: [
+    'Three paragraphs, one each for a person, a place and an object.',
+    'At least five relative clauses in total.',
+    'At least one <i>quien</i> and one <i>donde</i>.',
+    'No two consecutive sentences start the same way.',
+    'Each paragraph has one detail only you would notice.'
+  ],
+  examples: [
+    { es: 'Es una mujer que nunca se está quieta.', en: 'She\'s a woman who is never still.' },
+    { es: 'La persona a quien llamo cuando algo se rompe.', en: 'The person I call when something breaks.' },
+    { es: 'El bar donde desayuno.', en: 'The bar where I have breakfast.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-describir-1', kind: 'mcq',
+      q: 'Which relative works for a place?',
+      options: ['donde', 'quien', 'cual'], answer: 0 },
+    { id: 'p:task-b1-describir-2', kind: 'mcq',
+      q: '"La persona ___ quien trabajo"',
+      options: ['con', 'que', 'donde'], answer: 0 },
+    { id: 'p:task-b1-describir-3', kind: 'cloze',
+      text: 'El bar ___ desayuno está cerca. (place)', accept: ['donde'] }
+  ]
+},
+
+{
+  id: 'task-b1-unir', strand: 'task', cefr: 'B1', level: 4, theme: 'educacion',
+  title: 'Une un texto entero',
+  canDo: 'join ideas with cause, result, concession and comparison',
+  summary: 'A2 joined sentences. B1 joins arguments — and the connector you choose says what relationship you think the ideas have.',
+  sections: [
+    { h: 'What to do', html: 'Take something you wrote earlier in B1 and rewrite it so that every paragraph has at least one cause, one result and one concession.' },
+    { h: 'Aunque is the useful one', html: '<i>Aunque llueve, salimos</i> (it IS raining, a fact) versus <i>aunque llueva, salimos</i> (it might, hypothetical). Indicative for what is true, subjunctive for what is merely possible — the same word, two meanings.' }
+  ],
+  model: { title: 'before and after', text: '<p><b>Antes:</b> El proyecto se retrasó. No había presupuesto. Al final lo entregamos. Fue en marzo.</p><p><b>Después:</b> El proyecto se retrasó porque no había presupuesto, así que tuvimos que parar dos meses. Aunque al principio parecía que no saldría adelante, al final lo entregamos en marzo — más tarde de lo previsto, pero mejor de lo que esperábamos.</p>' },
+  checklist: [
+    'At least one cause (<i>porque</i>, <i>como</i>, <i>ya que</i>).',
+    'At least one result (<i>así que</i>, <i>por eso</i>, <i>de modo que</i>).',
+    'At least one concession (<i>aunque</i>, <i>a pesar de</i>).',
+    'At least one comparison.',
+    'The rewrite is no longer than the original.'
+  ],
+  examples: [
+    { es: 'Se retrasó porque no había presupuesto.', en: 'It was delayed because there was no budget.' },
+    { es: 'Aunque parecía imposible, lo entregamos.', en: 'Although it seemed impossible, we delivered it.' },
+    { es: 'No había presupuesto, así que paramos.', en: 'There was no budget, so we stopped.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-unir-1', kind: 'mcq',
+      q: '"Aunque llueva" means the rain is:',
+      options: ['possible, not certain', 'definitely happening', 'in the past'], answer: 0 },
+    { id: 'p:task-b1-unir-2', kind: 'mcq',
+      q: 'Which introduces a RESULT?',
+      options: ['así que', 'porque', 'aunque'], answer: 0 },
+    { id: 'p:task-b1-unir-3', kind: 'cloze',
+      text: 'No había dinero, ___ que paramos.', accept: ['así'] }
+  ]
+},
+
+{
+  id: 'task-b1-cortesia', strand: 'task', cefr: 'B1', level: 4, theme: 'relaciones',
+  title: 'Escribe en cinco ocasiones sociales',
+  canDo: 'congratulate, wish well, toast, apologise and reproach',
+  summary: 'These are the moments where getting the formula wrong is most visible, because everyone present knows exactly what should have been said.',
+  sections: [
+    { h: 'What to do', html: 'Write five short texts: a congratulation, a set of good wishes, a toast, an apology for something real, and a gentle reproach.' },
+    { h: 'Reproaching gently', html: '<i>Podrías haberme avisado</i> · <i>Es que no me lo esperaba de ti</i>. The conditional perfect is the standard way to say someone should have done something, and it is softer than any direct accusation.' }
+  ],
+  model: { title: 'five occasions', text: '<p><b>Felicitación:</b> ¡Enhorabuena por el premio! Te lo mereces más que nadie, de verdad.</p><p><b>Buenos deseos:</b> Que tengas un viaje estupendo y que descanses mucho, que falta te hace.</p><p><b>Brindis:</b> Bueno, ¿brindamos? Por Marta, que hoy cumple cuarenta y no los aparenta. ¡Salud!</p><p><b>Disculpa:</b> Perdona por lo del viernes. Se me pasó completamente, no tengo excusa. ¿Te viene bien que lo dejemos para el jueves?</p><p><b>Reproche:</b> Hombre, podrías haberme avisado. No me habría enterado por terceros, que es lo que me ha fastidiado.</p>' },
+  checklist: [
+    'All five texts.',
+    'The good wishes use <i>que</i> + subjunctive.',
+    'The apology names what it is for and offers something.',
+    'The reproach uses the conditional perfect.',
+    'None of them is longer than four sentences.'
+  ],
+  examples: [
+    { es: 'Que tengas un viaje estupendo.', en: 'Have a wonderful trip.' },
+    { es: 'Podrías haberme avisado.', en: 'You could have told me.' },
+    { es: 'Perdona por lo del viernes.', en: 'Sorry about Friday.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-cortesia-1', kind: 'mcq',
+      q: 'Good wishes take which form?',
+      options: ['Que + subjunctive', 'Que + indicative', 'Que + infinitive'], answer: 0 },
+    { id: 'p:task-b1-cortesia-2', kind: 'mcq',
+      q: 'Which is a gentle reproach?',
+      options: ['Podrías haberme avisado.', 'No me avisaste.', 'Nunca me avisas.'], answer: 0 },
+    { id: 'p:task-b1-cortesia-3', kind: 'cloze',
+      text: 'Que ___ un buen viaje. (tener, tú)', accept: ['tengas'] }
+  ]
+},
+
+{
+  id: 'task-b1-escribir', strand: 'task', cefr: 'B1', level: 4, theme: 'medios',
+  title: 'Escribe una composición',
+  canDo: 'write something with a thesis, a development and a conclusion',
+  summary: 'The longest single text of the course so far. Everything B1 has built — opinion, concession, relative clauses, connectors — has to hold together across four paragraphs.',
+  sections: [
+    { h: 'What to do', html: 'Write 300 to 400 words on a question you have a view about. Four paragraphs: introduction, two of development, conclusion.' },
+    { h: 'The shape of a Spanish composition', html: 'State the question before your answer. Give the strongest counter-argument yourself, in the third paragraph, and answer it. Do not introduce anything new in the conclusion.' }
+  ],
+  model: { title: 'the skeleton, with one paragraph written', text: '<p><b>1. Introducción</b> — the question, and your position in one sentence.<br><b>2. Desarrollo</b> — your strongest argument, with a concrete example.<br><b>3. Contraargumento</b> — the best objection, then your answer to it.<br><b>4. Conclusión</b> — restate, and say what follows.</p><p><i>Ejemplo de conclusión:</i> En definitiva, no creo que el problema sea la tecnología en sí, sino el uso que hacemos de ella. Prohibir los móviles en clase puede parecer una solución rápida, pero mientras no enseñemos a los alumnos a gestionarlos fuera del aula, no habremos resuelto nada — solo lo habremos aplazado.</p>' },
+  checklist: [
+    'Four paragraphs, 300-400 words.',
+    'The position is stated in the first paragraph.',
+    'A counter-argument is raised AND answered.',
+    'At least three different connectors.',
+    'The conclusion introduces nothing new.'
+  ],
+  examples: [
+    { es: 'En definitiva, no creo que el problema sea la tecnología.', en: 'Ultimately, I don\'t think the problem is technology.' },
+    { es: 'Mientras no enseñemos a los alumnos…', en: 'As long as we don\'t teach students…' },
+    { es: 'Puede parecer una solución rápida, pero…', en: 'It may look like a quick fix, but…' }
+  ],
+  probes: [
+    { id: 'p:task-b1-escribir-1', kind: 'mcq',
+      q: 'Where does the counter-argument go?',
+      options: ['in the third paragraph, answered', 'in the conclusion', 'it is left out'], answer: 0 },
+    { id: 'p:task-b1-escribir-2', kind: 'mcq',
+      q: 'What should a conclusion NOT do?',
+      options: ['introduce a new argument', 'restate the position', 'say what follows'], answer: 0 },
+    { id: 'p:task-b1-escribir-3', kind: 'cloze',
+      text: 'En definitiva, no creo que ___ tan sencillo. (ser)', accept: ['sea'] }
+  ]
+},
+
+{
+  id: 'task-b1-hipotesis', strand: 'task', cefr: 'B1', level: 4, theme: 'ciencia',
+  title: 'Imagina que las cosas fueran de otra manera',
+  canDo: 'talk about what is not the case, and what would have been',
+  summary: 'The third door into the subjunctive, and the one that completes it: the imperfect subjunctive for what is not so, and the compound tenses for what did not happen.',
+  sections: [
+    { h: 'What to do', html: 'Write about one real decision two ways: how it went, and how it would have gone otherwise. Twelve to sixteen sentences.' },
+    { h: 'The two patterns', html: '<i>Si tuviera tiempo, iría</i> — not true now. <i>Si hubiera tenido tiempo, habría ido</i> — not true then. Learners mix the halves; the tenses have to match across the comma.' }
+  ],
+  model: { title: 'the road not taken', text: '<p>Si hubiera aceptado aquel trabajo en Berlín, ahora hablaría alemán y probablemente ganaría bastante más. Me habría ido en septiembre, habría vivido cuatro o cinco años fuera y seguramente no habría vuelto. Pero también me habría perdido la boda de mi hermana y los últimos años de mi abuelo, y eso no lo habría recuperado nunca. A veces pienso que si me lo ofrecieran hoy, diría que sí sin pensarlo. Otras veces creo que no. Si algo he aprendido es que uno no puede vivir comparándose con la versión de sí mismo que no existió.</p>' },
+  checklist: [
+    'Twelve sentences or more.',
+    'At least two <i>si</i> + imperfect subjunctive + conditional.',
+    'At least two <i>si</i> + pluperfect subjunctive + conditional perfect.',
+    'The tenses match across each comma.',
+    'It ends with a reflection, not another hypothetical.'
+  ],
+  examples: [
+    { es: 'Si tuviera tiempo, iría.', en: 'If I had time, I\'d go.' },
+    { es: 'Si hubiera aceptado, me habría ido en septiembre.', en: 'If I\'d accepted, I\'d have left in September.' },
+    { es: 'Si me lo ofrecieran hoy, diría que sí.', en: 'If they offered it to me today, I\'d say yes.' }
+  ],
+  probes: [
+    { id: 'p:task-b1-hipotesis-1', kind: 'mcq',
+      q: '"Si ___ tiempo, iría."',
+      options: ['tuviera', 'tengo', 'tendría'], answer: 0 },
+    { id: 'p:task-b1-hipotesis-2', kind: 'mcq',
+      q: '"Si hubiera aceptado, ___ ido."',
+      options: ['habría', 'había', 'haya'], answer: 0 },
+    { id: 'p:task-b1-hipotesis-3', kind: 'cloze',
+      text: 'Si ___ tiempo, iría contigo. (tener, yo)', accept: ['tuviera', 'tuviese'] }
+  ]
+},
+
+{
   id: 'task-a2-ayer', strand: 'task', cefr: 'A2', level: 2, theme: 'ocio',
   title: 'Cuenta qué hiciste el fin de semana',
   canDo: 'tell someone what you did, in order, in the past',
@@ -6341,7 +6885,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-temporales-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-temporales-b1', deeper: ['nt-ciclo-accion-b1', 'nt-tiempo-referencias-futuro-pasado-presente-b1'], strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:725', 'gramatica:B1:727', 'gramatica:B1:728', 'gramatica:B1:730', 'gramatica:B1:731', 'gramatica:B1:732'],
   title: 'Temporales: cuando + subjuntivo para el futuro',
   summary: 'Cuando takes the indicative for a fact that already happened or happens habitually, but switches to the subjunctive the instant the event is still in the future — one of the single most important rules in the entire Spanish subjunctive system.',
@@ -6415,7 +6959,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-comparativas-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-comparativas-b1', deeper: ['nt-aumento-proporcion-grado-b1', 'nt-cantidad-numerica-relativa-b1', 'nt-evaluacion-valor-b1', 'nt-existencia-disponibilidad-b1', 'nt-exito-utilidad-importancia-b1'], strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:787', 'gramatica:B1:789', 'gramatica:B1:791', 'gramatica:B1:793', 'gramatica:B1:795'],
   title: 'Comparativas: igual de... que, más de',
   summary: 'Spanish distinguishes más QUE (comparing two things) from más DE (a numeric ceiling) — a difference English\'s single "more than" completely erases, and mixing the two up is a real, gate-checkable error.',
@@ -6481,7 +7025,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-relativas-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-relativas-b1', deeper: ['gr-adverbios-modo-cantidad-b1', 'gr-indefinidos-negativos-b1', 'gr-cuantificadores-b1', 'gr-articulo-anaforico-escuetos-b1', 'gr-posesivo-dativo-b1', 'gr-nombres-propios-b1', 'gr-interrogativos-b1', 'gr-modificadores-adverbios-b1', 'gr-genero-especial-b1', 'gr-se-multiuso-b1', 'gr-ser-impersonal-b1', 'gr-numero-sustantivos-b1', 'gr-formas-no-personales-b1', 'gr-complementos-modificadores-b1'], strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:689', 'gramatica:B1:690', 'gramatica:B1:691', 'gramatica:B1:692', 'gramatica:B1:695'],
   title: 'Oraciones de relativo: que, quien, donde',
   summary: 'A relative clause with que either PINS DOWN which thing you mean, with no comma, or simply ADDS extra information about something already identified, set off by commas — the same word que, two structurally different jobs.',
@@ -6514,7 +7058,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-interrogativos-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-interrogativos-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:264', 'gramatica:B1:265', 'gramatica:B1:269', 'gramatica:B1:273', 'gramatica:B1:275'],
   title: 'Interrogativos: qué, quién, cuál + preposición',
   summary: 'A question word preceded by a preposition moves that preposition to the very front of the question, exactly where English would strand it at the end — ¿Con quién trabajas?, never a Spanish sentence ending in "with."',
@@ -6585,7 +7129,7 @@ window.STRAND_LESSONS = [
  * throughout, following the precedent set at A1/A2.
  * ========================================================================== */
 {
-  id: 'nt-existencia-disponibilidad-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-existencia-disponibilidad-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:1', 'nociones_generales:B1:2', 'nociones_generales:B1:14', 'nociones_generales:B1:15', 'nociones_generales:B1:31', 'nociones_generales:B1:32'],
   title: 'Existencia y disponibilidad: vacío, libre, ocupado',
   summary: 'Vacío/lleno describe whether a space has anything in it at all; libre/ocupado describe whether that space is AVAILABLE to you — two genuinely different questions, since a full train can still have a free seat.',
@@ -6624,7 +7168,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-cualidad-generalidad-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-cualidad-generalidad-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:44', 'nociones_generales:B1:45', 'nociones_generales:B1:47', 'nociones_generales:B1:48', 'nociones_generales:B1:115', 'nociones_generales:B1:116'],
   title: 'Cualidad y generalidad: tipo, forma, en general',
   summary: 'Parecer (to seem) and parecerse a (to resemble) share a root but describe two unrelated things — one is your IMPRESSION of something, the other is a physical LIKENESS to something else — and mixing them up is a common, gate-checkable slip.',
@@ -6703,7 +7247,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-necesidad-obligacion-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-necesidad-obligacion-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:105', 'nociones_generales:B1:106', 'nociones_generales:B1:107', 'nociones_generales:B1:108', 'nociones_generales:B1:110'],
   title: 'Necesidad y obligación: depender de, ser obligatorio',
   summary: 'Depender de makes an outcome hinge on something entirely outside your control, while ser obligatorio states a flat, impersonal, often official requirement — both stronger and colder than the everyday necesitar from A2.',
@@ -6785,7 +7329,7 @@ window.STRAND_LESSONS = [
  * several of them short and closely related, merged into 4 fuller lessons).
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-cantidad-numerica-relativa-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-cantidad-numerica-relativa-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:129', 'nociones_generales:B1:130', 'nociones_generales:B1:133', 'nociones_generales:B1:139', 'nociones_generales:B1:141', 'nociones_generales:B1:145'],
   title: 'Cantidad: en total, por ciento, la mayoría de',
   summary: 'La mayoría behaves grammatically like a container word from A2 — it needs de before the group it refers to, exactly like un grupo de or una botella de — so la mayoría chilenos is as wrong as una botella agua.',
@@ -6825,7 +7369,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-aumento-proporcion-grado-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-aumento-proporcion-grado-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:157', 'nociones_generales:B1:158', 'nociones_generales:B1:166', 'nociones_generales:B1:167', 'nociones_generales:B1:177', 'nociones_generales:B1:178'],
   title: 'Aumento y proporción: subida, la mitad, sobre todo',
   summary: 'Subida and bajada name a CHANGE as a noun where aumentar/disminuir name it as a verb — the same fact, different part of speech — and fractions like la mitad and un tercio need "de" before the group, exactly like la mayoría.',
@@ -6864,7 +7408,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-medidas-tamano-superficie-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-medidas-tamano-superficie-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:188', 'nociones_generales:B1:192', 'nociones_generales:B1:195', 'nociones_generales:B1:206', 'nociones_generales:B1:207'],
   title: 'Medidas: medir, tamaño, metros cuadrados',
   summary: 'Medir does triple duty — a person\'s height, an object\'s length, and an area\'s size — the same verb serving three different kinds of measurement, while caber is a completely separate, irregular verb about whether something FITS.',
@@ -6903,7 +7447,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-temperatura-velocidad-volumen-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-temperatura-velocidad-volumen-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:213', 'nociones_generales:B1:216', 'nociones_generales:B1:220', 'nociones_generales:B1:200', 'nociones_generales:B1:201', 'nociones_generales:B1:209'],
   title: 'Temperatura, velocidad y volumen: grados, km por hora',
   summary: 'Estar a + number + grados states a temperature the exact same way estar a + number + kilómetros states a distance — one "estar a" pattern reused across several completely different kinds of measurement.',
@@ -6946,7 +7490,7 @@ window.STRAND_LESSONS = [
  * merged into 3 lessons).
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-localizacion-posicion-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-localizacion-posicion-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:271', 'nociones_generales:B1:273', 'nociones_generales:B1:289', 'nociones_generales:B1:291', 'nociones_generales:B1:296', 'nociones_generales:B1:298'],
   title: 'Localización y posición: junto a, al fondo, en ninguna parte',
   summary: 'En ninguna parte and en todas partes push the A1 aquí/allí system to its two extremes — nowhere and everywhere — while junto a, al fondo and en el medio give the fine-grained position vocabulary a described room actually needs.',
@@ -6985,7 +7529,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-distancia-movimiento-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-distancia-movimiento-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:317', 'nociones_generales:B1:319', 'nociones_generales:B1:331', 'nociones_generales:B1:333', 'nociones_generales:B1:336', 'nociones_generales:B1:340'],
   title: 'Distancia y movimiento: acercarse, alejarse, caerse',
   summary: 'Acercarse a and alejarse de are a matched, opposite pair — moving toward or away from a fixed point — and both take a specific, non-interchangeable preposition, a distinction the A1 ir/venir logic doesn\'t fully cover.',
@@ -7024,7 +7568,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-orientacion-orden-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-orientacion-orden-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:371', 'nociones_generales:B1:373', 'nociones_generales:B1:375', 'nociones_generales:B1:391', 'nociones_generales:B1:393', 'nociones_generales:B1:395'],
   title: 'Orientación y orden: seguir por, primero, luego',
   summary: 'Seguir/continuar/subir/bajar all take por before naming the route itself — seguir POR la autopista — while primero, luego, a continuación and finalmente sequence a series of steps in exactly the order they name.',
@@ -7069,7 +7613,7 @@ window.STRAND_LESSONS = [
  * extending the "lifecycle of an action" merge to five stages).
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-tiempo-referencias-futuro-pasado-presente-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-tiempo-referencias-futuro-pasado-presente-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:414', 'nociones_generales:B1:415', 'nociones_generales:B1:465', 'nociones_generales:B1:466', 'nociones_generales:B1:454', 'nociones_generales:B1:447', 'nociones_generales:B1:448', 'nociones_generales:B1:451'],
   title: 'El tiempo: siglos, décadas y el presente que dura',
   summary: 'Llevar + gerundio states how long a situation has continued right up to now — llevo un año trabajando aquí — a construction with no direct English equivalent, built from a verb that everywhere else just means "to carry."',
@@ -7109,7 +7653,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-ciclo-accion-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-ciclo-accion-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:532', 'nociones_generales:B1:534', 'nociones_generales:B1:548', 'nociones_generales:B1:549', 'nociones_generales:B1:538', 'nociones_generales:B1:541', 'nociones_generales:B1:513', 'nociones_generales:B1:519'],
   title: 'El ciclo de una acción: empezar, seguir, dejar de',
   summary: 'Seguir + gerundio says an action is STILL going; dejar de + infinitive says it has STOPPED — the same event\'s continuation and interruption, described from opposite ends of one single scale running from start to finish.',
@@ -7149,7 +7693,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-puntualidad-retraso-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-puntualidad-retraso-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:524', 'nociones_generales:B1:526', 'nociones_generales:B1:528', 'nociones_generales:B1:530'],
   title: 'Puntualidad y retraso: llegar a tiempo, con retraso',
   summary: 'Retraso describes the SCHEDULE slipping — a train, a flight, a meeting — while tener prisa describes the PERSON\'s own hurry; the two often show up together but state genuinely different facts.',
@@ -7193,7 +7737,7 @@ window.STRAND_LESSONS = [
  * units, merged into 3 lessons).
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-formas-materia-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-formas-materia-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:689', 'nociones_generales:B1:691', 'nociones_generales:B1:695', 'nociones_generales:B1:761', 'nociones_generales:B1:763', 'nociones_generales:B1:766'],
   title: 'Formas y materia: círculo, estar hecho de',
   summary: 'Estar hecho de + material states composition directly, one grammatical step further than the A2 ser de pattern, and pairs naturally with the shape vocabulary — círculo, cuadrado, triángulo — needed to describe any object fully.',
@@ -7232,7 +7776,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-textura-consistencia-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-textura-consistencia-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:710', 'nociones_generales:B1:711', 'nociones_generales:B1:713', 'nociones_generales:B1:729', 'nociones_generales:B1:730', 'nociones_generales:B1:746', 'nociones_generales:B1:747'],
   title: 'Textura y consistencia: duro, blando, húmedo',
   summary: 'Húmedo and mojado both mean roughly "wet," but húmedo names a lasting condition (a humid climate) while mojado names a temporary, often accidental state (wet from rain) — the same distinction estar/ser draws elsewhere in the language.',
@@ -7271,7 +7815,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-sentidos-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-sentidos-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:777', 'nociones_generales:B1:780', 'nociones_generales:B1:804', 'nociones_generales:B1:808', 'nociones_generales:B1:825', 'nociones_generales:B1:828', 'nociones_generales:B1:835', 'nociones_generales:B1:845'],
   title: 'Los sentidos: ver, oír, saber a, oler a',
   summary: 'Saber and oler both switch meaning entirely when followed by a: saber a almendra ("to taste of almond") and oler a gas ("to smell of gas") have nothing to do with "to know" or "to smell (an action)" — the preposition changes the verb\'s whole job.',
@@ -7315,7 +7859,7 @@ window.STRAND_LESSONS = [
  * units, merged into 5 lessons). Completes all 61 B1 notion units.
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-edad-vejez-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-edad-vejez-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:860', 'nociones_generales:B1:861', 'nociones_generales:B1:862', 'nociones_generales:B1:863'],
   title: 'Edad: cumplir años, aniversario',
   summary: 'Cumplir + [number] + años is how Spanish marks a birthday landmark — cumple treinta años, "she\'s turning thirty" — a specific verb for the event of aging a year, distinct from simply tener + años.',
@@ -7353,7 +7897,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-evaluacion-valor-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-evaluacion-valor-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:890', 'nociones_generales:B1:891', 'nociones_generales:B1:893', 'nociones_generales:B1:904', 'nociones_generales:B1:905', 'nociones_generales:B1:907'],
   title: 'Evaluación y precio: parecerle, estar a, rebajas',
   summary: 'Parecerle (a alguien) algo follows the exact gustar pattern — me parece caro, "it seems expensive to me" — making the person who holds the opinion the indirect object, never the grammatical subject.',
@@ -7392,7 +7936,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-conformidad-correccion-precision-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-conformidad-correccion-precision-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:934', 'nociones_generales:B1:936', 'nociones_generales:B1:940', 'nociones_generales:B1:941', 'nociones_generales:B1:949', 'nociones_generales:B1:951'],
   title: 'Conformidad y corrección: aceptar, error, claro',
   summary: 'Está bien así, gracias closes a transaction politely — it declines further help without rejecting what\'s been offered — while corregir un error and repasar name the two-step process of catching and reviewing a mistake.',
@@ -7431,7 +7975,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-exito-utilidad-importancia-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-exito-utilidad-importancia-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:966', 'nociones_generales:B1:969', 'nociones_generales:B1:977', 'nociones_generales:B1:988', 'nociones_generales:B1:1000', 'nociones_generales:B1:1009'],
   title: 'Éxito, utilidad e importancia: servir para, dar igual',
   summary: 'Servir para names what something is FOR; ser bueno en/para names what a PERSON is good at — two structurally similar "for" constructions that describe an object\'s purpose and a person\'s ability respectively.',
@@ -7471,7 +8015,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-reflexion-expresion-b1', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-reflexion-expresion-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:1025', 'nociones_generales:B1:1027', 'nociones_generales:B1:1030', 'nociones_generales:B1:1049', 'nociones_generales:B1:1055', 'nociones_generales:B1:1059'],
   title: 'Reflexión y expresión: darse cuenta de, contar un chiste',
   summary: 'Darse cuenta de means "to realize/become aware," and it is reflexive — you cannot simply "cuenta" something the way you might expect from the bare verb contar, which instead means "to tell/count."',
@@ -7553,7 +8097,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-ser-impersonal-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-ser-impersonal-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:598', 'gramatica:B1:599', 'gramatica:B1:601', 'gramatica:B1:607'],
   title: 'Ser impersonal: es de noche, es una pena que',
   summary: 'Ser builds a whole family of subjectless time and value expressions — es de noche, es tarde — and when the value judgment takes a full clause, that clause switches to the subjunctive, exactly as the presente de subjuntivo lesson predicts.',
@@ -7586,7 +8130,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-se-multiuso-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-se-multiuso-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:650', 'gramatica:B1:651', 'gramatica:B1:203', 'gramatica:B1:205', 'gramatica:B1:206'],
   title: 'Se: recíproco, impersonal, meteorológico',
   summary: 'The same little word se marks two people doing something TO EACH OTHER (se quieren), and also erases the subject entirely so nobody in particular is doing anything (en este restaurante se come bien) — two structurally different jobs behind one spelling.',
@@ -7685,7 +8229,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-indefinidos-negativos-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-indefinidos-negativos-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:140', 'gramatica:B1:143', 'gramatica:B1:145', 'gramatica:B1:136'],
   title: 'Algo, alguien, alguno — nada, nadie, ninguno',
   summary: 'Alguien/nadie only ever refer to a PERSON with no gender variation, while alguno/ninguno agree in gender and specifically pick one member OUT of an already-known group — three grammatically different tools for three different jobs.',
@@ -7719,7 +8263,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-articulo-anaforico-escuetos-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-articulo-anaforico-escuetos-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:57', 'gramatica:B1:58', 'gramatica:B1:96', 'gramatica:B1:97'],
   title: 'El artículo anafórico y los nombres escuetos',
   summary: 'The definite article can point back to something only ASSOCIATED with what was already mentioned, not literally named before — mention a trip and el barco ("the boat") can appear with the article, even though no boat was named yet.',
@@ -7791,7 +8335,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-posesivo-dativo-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-posesivo-dativo-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:116', 'gramatica:B1:117', 'gramatica:B1:119'],
   title: 'El dativo posesivo: le cortaron el pelo',
   summary: 'With inalienable possession — body parts, close belongings someone else is handling — Spanish routinely swaps a possessive adjective for an indirect-object pronoun: le cortaron el pelo, never cortaron su pelo, because the "owner" is grammatically the person AFFECTED by the action.',
@@ -7824,7 +8368,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-modificadores-adverbios-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-modificadores-adverbios-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:583', 'gramatica:B1:584', 'gramatica:B1:585', 'gramatica:B1:586'],
   title: 'Modificadores: el doble de, -mente, elativos',
   summary: 'An elative adjective like enorme or gigantesco already sits at the top of its own scale — piling muy in front of it (*muy enorme) is exactly as redundant as English "very gigantic," since the word has nowhere higher left to climb.',
@@ -8934,7 +9478,7 @@ window.STRAND_LESSONS = [
  * already covered by dc-focalizacion-b1 below.
  * ========================================================================== */
 {
-  id: 'gr-cuantificadores-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-cuantificadores-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:133', 'gramatica:B1:134', 'gramatica:B1:135', 'gramatica:B1:136', 'gramatica:B1:137', 'gramatica:B1:138',
          'gramatica:B1:139', 'gramatica:B1:142', 'gramatica:B1:143', 'gramatica:B1:144', 'gramatica:B1:145',
          'gramatica:B1:153', 'gramatica:B1:154', 'gramatica:B1:156'],
@@ -9044,7 +9588,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-complementos-modificadores-b1', strand: 'grammar', cefr: 'B1', level: 5, theme: null,
+  id: 'gr-complementos-modificadores-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 5, theme: null,
   pcic: ['gramatica:B1:564', 'gramatica:B1:565', 'gramatica:B1:566'],
   title: 'La chica de los ojos azules, la construcción del edificio',
   summary: 'La chica de los ojos azules is not optional decoration the way a normal adjective phrase is — leave off "azules" and the sentence breaks, because with an inalienable-possession noun like ojos, the phrase exists only to say WHICH feature you mean.',
@@ -9078,7 +9622,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-acabado-b1', strand: 'notion', cefr: 'B1', level: 4, theme: null,
+  id: 'nt-acabado-b1', status: 'reference', strand: 'notion', cefr: 'B1', level: 4, theme: null,
   pcic: ['nociones_generales:B1:737', 'nociones_generales:B1:738', 'nociones_generales:B1:739', 'nociones_generales:B1:740'],
   title: 'Acabado: el resultado de una acción terminada',
   summary: 'La pared está pintada does not describe an action — it describes what the world looks like AFTER one, and Spanish marks that finished-result state with estar + participio, the same construction already met for cansado/aburrido, now applied to any completed process.',
@@ -9116,7 +9660,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-intensificacion-discurso-b1', strand: 'discourse', cefr: 'B1', level: 4, theme: null,
+  id: 'dc-intensificacion-discurso-b1', status: 'reference', strand: 'discourse', cefr: 'B1', level: 4, theme: null,
   pcic: ['tacticas_pragmaticas:B1:151', 'tacticas_pragmaticas:B1:152', 'tacticas_pragmaticas:B1:153', 'tacticas_pragmaticas:B1:154', 'tacticas_pragmaticas:B1:155'],
   title: 'Intensificar: el más... de, -ísimo, kilómetros y kilómetros',
   summary: 'Repeating a word (kilómetros y kilómetros) intensifies exactly like -ísimo does, just by a completely different mechanism — piling up the word itself instead of piling up morphology onto it.',
@@ -9186,7 +9730,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-focalizacion-b1', strand: 'discourse', cefr: 'B1', level: 5, theme: null,
+  id: 'dc-focalizacion-b1', status: 'reference', strand: 'discourse', cefr: 'B1', level: 5, theme: null,
   pcic: ['tacticas_pragmaticas:B1:182', 'tacticas_pragmaticas:B1:183', 'tacticas_pragmaticas:B1:184', 'tacticas_pragmaticas:B1:185', 'tacticas_pragmaticas:B1:186', 'tacticas_pragmaticas:B1:187'],
   title: 'Focalización: solo, sobre todo, ¡qué bien habla!',
   summary: 'Sólo voy yo narrows the sentence down to one fact — that it is only me going, nobody else — and Spanish has a small toolkit of words and structures whose entire job is to point at which piece of the sentence matters.',
@@ -9233,7 +9777,7 @@ window.STRAND_LESSONS = [
  * level tags hide content, they don't just misfile it).
  * ========================================================================== */
 {
-  id: 'gn-reconocer-generos-orales-b1', strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  id: 'gn-reconocer-generos-orales-b1', status: 'reference', strand: 'genre', cefr: 'B1', level: 3, theme: null,
   pcic: ['generos_discursivos:B1:5', 'generos_discursivos:B1:6', 'generos_discursivos:B1:18', 'generos_discursivos:B1:19'],
   title: 'Reconocer géneros orales: boletín, deportes, contestador',
   summary: 'A radio broadcast never announces "this is now the weather" — it just switches into a fixed opening formula ("y ahora, la previsión del tiempo") and the vocabulary that follows, and recognizing that shift is what lets you tune in mid-sentence and know exactly what kind of information is coming.',
@@ -11783,7 +12327,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-entonacion-b1', strand: 'discourse', cefr: 'B1', level: 5, theme: null,
+  id: 'dc-entonacion-b1', status: 'reference', strand: 'discourse', cefr: 'B1', level: 5, theme: null,
   pcic: ['tacticas_pragmaticas:B1:199', 'tacticas_pragmaticas:B1:200', 'tacticas_pragmaticas:B1:201',
          'tacticas_pragmaticas:B1:202', 'tacticas_pragmaticas:B1:203', 'tacticas_pragmaticas:B1:204',
          'tacticas_pragmaticas:B1:205'],
@@ -14836,7 +15380,7 @@ window.STRAND_LESSONS = [
  * BATCH — B1 grammar stragglers (WORKLIST.md, section B1 · grammar)
  * ========================================================================== */
 {
-  id: 'gr-nombres-propios-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-nombres-propios-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:1', 'gramatica:B1:2', 'gramatica:B1:3', 'gramatica:B1:4', 'gramatica:B1:5', 'gramatica:B1:6', 'gramatica:B1:7'],
   title: 'Familias, accidentes geográficos y títulos de obras',
   summary: 'Three more proper-noun patterns beyond A1/A2: a surname pluralized only through its article, not its own ending; geographic features whose article is obligatory or merely traditional; and titles of works, which keep the grammatical gender of their own words rather than taking one from what they refer to.',
@@ -14872,7 +15416,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-genero-especial-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-genero-especial-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:9', 'gramatica:B1:10', 'gramatica:B1:11', 'gramatica:B1:12', 'gramatica:B1:13'],
   title: 'Nombres epicenos y cambio de género con cambio de significado',
   summary: 'Two ways gender behaves unlike the simple masculine/feminine pairs learned so far: an epiceno noun keeps one fixed gender no matter who or what it refers to, and a handful of nouns change MEANING, not just gender, when you swap el for la — the same root naming a tree in one gender and its fruit in the other.',
@@ -14907,7 +15451,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-numero-sustantivos-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-numero-sustantivos-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:16', 'gramatica:B1:17', 'gramatica:B1:18', 'gramatica:B1:19'],
   title: 'Singularia y pluralia tantum, y el plural en -y',
   summary: 'Some nouns simply do not have the other number: sed and salud never pluralize, ganas and ojeras never appear alone in the singular — and neither gap is a rule you can predict, only one you learn noun by noun.',
@@ -14943,7 +15487,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adverbios-modo-cantidad-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-adverbios-modo-cantidad-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:304', 'gramatica:B1:305', 'gramatica:B1:306', 'gramatica:B1:307', 'gramatica:B1:308',
          'gramatica:B1:309', 'gramatica:B1:310', 'gramatica:B1:311', 'gramatica:B1:312', 'gramatica:B1:313',
          'gramatica:B1:314', 'gramatica:B1:315', 'gramatica:B1:316'],
@@ -14981,7 +15525,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-formas-no-personales-b1', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-formas-no-personales-b1', status: 'reference', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:527', 'gramatica:B1:528', 'gramatica:B1:529', 'gramatica:B1:530', 'gramatica:B1:531',
          'gramatica:B1:532', 'gramatica:B1:533', 'gramatica:B1:534', 'gramatica:B1:535', 'gramatica:B1:536',
          'gramatica:B1:537', 'gramatica:B1:538', 'gramatica:B1:539', 'gramatica:B1:540', 'gramatica:B1:541',
@@ -15898,7 +16442,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-marcadores-discurso-b1', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  id: 'dc-marcadores-discurso-b1', deeper: ['dc-deixis-b1', 'dc-negacion-refuerzo-b1', 'dc-rematizacion-tematizacion-b1', 'dc-intensificacion-discurso-b1', 'dc-focalizacion-b1', 'dc-entonacion-b1'], strand: 'discourse', cefr: 'B1', level: 3, theme: null,
   pcic: ['tacticas_pragmaticas:B1:18', 'tacticas_pragmaticas:B1:19', 'tacticas_pragmaticas:B1:20', 'tacticas_pragmaticas:B1:21',
          'tacticas_pragmaticas:B1:23', 'tacticas_pragmaticas:B1:24', 'tacticas_pragmaticas:B1:25', 'tacticas_pragmaticas:B1:26',
          'tacticas_pragmaticas:B1:27', 'tacticas_pragmaticas:B1:28', 'tacticas_pragmaticas:B1:29', 'tacticas_pragmaticas:B1:30'],
@@ -15938,7 +16482,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-deixis-b1', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  id: 'dc-deixis-b1', status: 'reference', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
   pcic: ['tacticas_pragmaticas:B1:52', 'tacticas_pragmaticas:B1:53', 'tacticas_pragmaticas:B1:54', 'tacticas_pragmaticas:B1:55',
          'tacticas_pragmaticas:B1:57', 'tacticas_pragmaticas:B1:58', 'tacticas_pragmaticas:B1:59', 'tacticas_pragmaticas:B1:60',
          'tacticas_pragmaticas:B1:62', 'tacticas_pragmaticas:B1:63'],
@@ -15978,7 +16522,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-rematizacion-tematizacion-b1', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  id: 'dc-rematizacion-tematizacion-b1', status: 'reference', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
   pcic: ['tacticas_pragmaticas:B1:70', 'tacticas_pragmaticas:B1:72', 'tacticas_pragmaticas:B1:73', 'tacticas_pragmaticas:B1:74',
          'tacticas_pragmaticas:B1:75', 'tacticas_pragmaticas:B1:76', 'tacticas_pragmaticas:B1:77'],
   title: 'Rematización y tematización: reordenar para destacar',
@@ -16056,7 +16600,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-negacion-refuerzo-b1', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  id: 'dc-negacion-refuerzo-b1', status: 'reference', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
   pcic: ['tacticas_pragmaticas:B1:136', 'tacticas_pragmaticas:B1:137', 'tacticas_pragmaticas:B1:138', 'tacticas_pragmaticas:B1:139'],
   title: 'Refuerzo de la negación: nadie, hasta, desde',
   summary: 'Some negative words are only grammatical AFTER "no", and two prepositions most learners think of as purely positive — hasta and desde — turn out to require a negated verb whenever the clause they introduce describes a single, non-repeatable event.',
@@ -16135,7 +16679,7 @@ window.STRAND_LESSONS = [
  * BATCH — B1 genre stragglers (WORKLIST.md, section B1 · genre) — completes B1
  * ========================================================================== */
 {
-  id: 'gn-generos-orales-b1', strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  id: 'gn-generos-orales-b1', status: 'reference', strand: 'genre', cefr: 'B1', level: 3, theme: null,
   pcic: ['generos_discursivos:B1:101', 'generos_discursivos:B1:102', 'generos_discursivos:B1:103', 'generos_discursivos:B1:104',
          'generos_discursivos:B1:105', 'generos_discursivos:B1:107', 'generos_discursivos:B1:108', 'generos_discursivos:B1:109',
          'generos_discursivos:B1:110', 'generos_discursivos:B1:112', 'generos_discursivos:B1:113'],
@@ -16175,7 +16719,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-generos-escritos-b1', strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  id: 'gn-generos-escritos-b1', deeper: ['gn-reconocer-generos-orales-b1', 'gn-generos-orales-b1'], strand: 'genre', cefr: 'B1', level: 3, theme: null,
   pcic: ['generos_discursivos:B1:137', 'generos_discursivos:B1:138', 'generos_discursivos:B1:139', 'generos_discursivos:B1:141',
          'generos_discursivos:B1:144', 'generos_discursivos:B1:146', 'generos_discursivos:B1:149', 'generos_discursivos:B1:152',
          'generos_discursivos:B1:153', 'generos_discursivos:B1:156'],
@@ -16215,7 +16759,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-persona-b1', strand: 'genre', cefr: 'B1', level: 3, theme: null,
+  id: 'gn-describir-persona-b1', deeper: ['nt-conformidad-correccion-precision-b1', 'nt-cualidad-generalidad-b1', 'nt-edad-vejez-b1', 'nt-necesidad-obligacion-b1', 'nt-reflexion-expresion-b1'], strand: 'genre', cefr: 'B1', level: 3, theme: null,
   pcic: ['generos_discursivos:B1:720', 'generos_discursivos:B1:721', 'generos_discursivos:B1:722', 'generos_discursivos:B1:724',
          'generos_discursivos:B1:725', 'generos_discursivos:B1:726', 'generos_discursivos:B1:727'],
   title: 'Describir a una persona: objetivo vs subjetivo, y una anécdota narrada',
@@ -16255,7 +16799,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-objeto-b1', strand: 'genre', cefr: 'B1', level: 3, theme: 'alimentacion',
+  id: 'gn-describir-objeto-b1', deeper: ['nt-formas-materia-b1', 'nt-sentidos-b1', 'nt-medidas-tamano-superficie-b1', 'nt-temperatura-velocidad-volumen-b1', 'nt-textura-consistencia-b1', 'nt-acabado-b1'], strand: 'genre', cefr: 'B1', level: 3, theme: 'alimentacion',
   pcic: ['generos_discursivos:B1:776', 'generos_discursivos:B1:777', 'generos_discursivos:B1:778', 'generos_discursivos:B1:780',
          'generos_discursivos:B1:781', 'generos_discursivos:B1:782', 'generos_discursivos:B1:783'],
   title: 'Describir un objeto: origen objetivo o acertijo subjetivo',
@@ -16295,7 +16839,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-lugar-b1', strand: 'genre', cefr: 'B1', level: 3, theme: 'vivienda',
+  id: 'gn-describir-lugar-b1', deeper: ['nt-distancia-movimiento-b1', 'nt-localizacion-posicion-b1', 'nt-orientacion-orden-b1', 'nt-puntualidad-retraso-b1'], strand: 'genre', cefr: 'B1', level: 3, theme: 'vivienda',
   pcic: ['generos_discursivos:B1:824', 'generos_discursivos:B1:825', 'generos_discursivos:B1:826', 'generos_discursivos:B1:828',
          'generos_discursivos:B1:829', 'generos_discursivos:B1:830', 'generos_discursivos:B1:831'],
   title: 'Describir un lugar: razones objetivas, cariño subjetivo',

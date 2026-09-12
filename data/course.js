@@ -466,196 +466,296 @@ window.COURSE = [
     ] },
 
   /* ---- B1 · 189 days · starts at index 198 ------------------------------- */
-  { band: 'B1' },
-  { lesson: 'futuro' },                                 // gram  El futuro: forma, predicción y conjetura
-  { lesson: 'condicional' },                            // gram  El condicional: forma, cortesía y modestia
-  { lesson: 'gr-presente-subjuntivo-b1' },              // gram  El subjuntivo: cómo se forma y cuándo aparece
-  { lesson: 'gr-temporales-b1' },                       // gram  Temporales: cuando + subjuntivo para el futuro
-  { lesson: 'gr-modalidad-b1' },                        // gram  Modalidad: posiblemente, seguramente, probablemente
-  { practice: true },
-  { lesson: 'gr-subordinadas-sustantivas-b1' },         // gram  Subordinadas sustantivas: infinitivo o que + verbo
-  { lesson: 'gr-imperativo-valores-b1' },               // gram  El imperativo: más allá de la orden
-  { lesson: 'gr-adverbios-modo-cantidad-b1' },          // gram  Adverbios de tiempo, cantidad y modo: posición y matiz
-  { lesson: 'gr-indefinidos-negativos-b1' },            // gram  Algo, alguien, alguno — nada, nadie, ninguno
-  { lesson: 'impsubj' },                                // gram  Imperfecto de subjuntivo (Imperfect Subjunctive)
-  { practice: true },
-  { lesson: 'fn-has-oido-b1' },                         // func  ¿Has oído...?
-  { lesson: 'gr-causales-b1' },                         // gram  Causales: como, por + infinitivo
-  { lesson: 'fn-aceptar-propuesta-b1' },                // func  Aceptar una propuesta: entusiasmo y aceptación con reparos
-  { lesson: 'nt-acontecimiento-b1' },                   // noti  Acontecimiento: tener lugar, celebrarse
-  { lesson: 'fn-aconsejar-b1' },                        // func  Aconsejar: del condicional a "yo que tú"
-  { practice: true },
-  { lesson: 'gn-describir-persona-b1' },                // genr  Describir a una persona: objetivo vs subjetivo, y una anéc
-  { lesson: 'dc-atenuacion-b1' },                       // disc  Atenuación: desplazar el tiempo verbal para suavizar
-  { lesson: 'fn-certeza-evidencia-b1' },                // func  Certeza y falta de certeza: dónde se rompe el indicativo
-  { lesson: 'gr-pronombres-combinados-b1' },            // gram  Combinación de pronombres átonos: te lo, se lo
-  { lesson: 'fn-conocimiento-desconocimiento-b1' },     // func  Conocimiento y desconocimiento: oír que + indicativo/subju
-  { practice: true },
-  { lesson: 'nt-aumento-proporcion-grado-b1' },         // noti  Aumento y proporción: subida, la mitad, sobre todo
-  { lesson: 'fn-respuesta-afirmativa-b1' },             // func  Corregir con no... sino
-  { lesson: 'fn-dar-opinion-b1' },                      // func  Dar y pedir una opinión
-  { lesson: 'gr-adverbios-relativos-b1' },              // gram  Como, cuando, donde: relativos vs interrogativos
-  { lesson: 'fn-disculparse-b1' },                      // func  Disculparse con una razón: "es que..."
-  { practice: true },
-  { lesson: 'nt-cantidad-numerica-relativa-b1' },       // noti  Cantidad: en total, por ciento, la mayoría de
-  { lesson: 'fn-estoy-de-acuerdo-b1' },                 // func  Estar de acuerdo — y no estarlo
-  { lesson: 'gn-describir-lugar-b1' },                  // genr  Describir un lugar: razones objetivas, cariño subjetivo
-  { lesson: 'fn-aprobacion-desaprobacion-b1' },         // func  Expresar aprobación y desaprobación (B1)
-  { lesson: 'gr-comparativas-b1' },                     // gram  Comparativas: igual de... que, más de
-  { practice: true },
-  { lesson: 'dc-deixis-b1' },                           // disc  La deixis: espacial, temporal y personal
-  { lesson: 'fn-aversion-b1' },                         // func  Expresar aversión
-  { lesson: 'nt-certeza-realidad-b1' },                 // noti  Certeza e incertidumbre: seguro, tal vez, imaginario
-  { lesson: 'fn-expresar-gustos-b1' },                  // func  Expresar gustos e intereses sobre acciones ajenas
-  { lesson: 'fn-habilidad-b1' },                        // func  Expresar habilidad para hacer algo
-  { practice: true },
-  { lesson: 'gr-concesivas-b1' },                       // gram  Concesivas: aunque + indicativo
-  { lesson: 'fn-obligacion-necesidad-b1' },             // func  Expresar obligación y necesidad
-  { lesson: 'nt-conformidad-correccion-precision-b1' }, // noti  Conformidad y corrección: aceptar, error, claro
-  { lesson: 'fn-posibilidad-b1' },                      // func  Expresar posibilidad: quiénes exigen subjuntivo y quiénes 
-  { lesson: 'fn-preferencia-b1' },                      // func  Expresar preferencia
-  { practice: true },
-  { lesson: 'gn-describir-objeto-b1' },                 // genr  Describir un objeto: origen objetivo o acertijo subjetivo
-  { lesson: 'gr-condicionales-b1' },                    // gram  Condicionales reales: si + futuro, si + imperativo
-  { lesson: 'fn-sensaciones-fisicas-b1' },              // func  Expresar sensaciones físicas: tener, sentir, estar, doler
-  { lesson: 'dc-valores-ilocutivos-b1' },               // disc  Lo que realmente hace una pregunta
-  { lesson: 'nt-cualidad-generalidad-b1' },             // noti  Cualidad y generalidad: tipo, forma, en general
-  { practice: true },
-  { lesson: 'fn-felicitar-b1' },                        // func  Felicitar: por un logro y en fechas señaladas
-  { lesson: 'fn-identificar-b1' },                      // func  Identificar con una oración de relativo
-  { lesson: 'gr-consecutivas-b1' },                     // gram  Consecutivas: entonces, así que, o sea que
-  { lesson: 'fn-mostrar-escepticismo-b1' },             // func  Mostrar escepticismo
-  { lesson: 'nt-distancia-movimiento-b1' },             // noti  Distancia y movimiento: acercarse, alejarse, caerse
-  { practice: true },
-  { lesson: 'fn-pedir-informacion-b1' },                // func  Pedir información con preguntas indirectas
-  { lesson: 'fn-pedir-objetos-b1' },                    // func  Pedir objetos: del imperativo directo a la pregunta atenua
-  { lesson: 'gr-cuantificadores-b1' },                  // gram  Cuantificadores B1: cada, alguien/algo/alguno, más de
-  { lesson: 'gn-carta-personal-b1' },                   // genr  La carta personal (B1)
-  { lesson: 'fn-pedir-valoracion-b1' },                 // func  Pedir valoración
-  { practice: true },
-  { lesson: 'nt-edad-vejez-b1' },                       // noti  Edad: cumplir años, aniversario
-  { lesson: 'fn-posicionarse-b1' },                     // func  Posicionarse a favor o en contra
-  { lesson: 'dc-mantenimiento-referente-b1' },          // disc  Mantener el referente sin repetir el nombre
-  { lesson: 'fn-preguntar-deseos-b1' },                 // func  Preguntar por deseos: te apetece, tienes ganas de
-  { lesson: 'gr-articulo-anaforico-escuetos-b1' },      // gram  El artículo anafórico y los nombres escuetos
-  { practice: true },
-  { lesson: 'fn-preguntar-estado-animo-b1' },           // func  Preguntar por el estado de ánimo
-  { lesson: 'fn-preguntar-gustos-b1' },                 // func  Preguntar por gustos: ¿te gusta que + subjuntivo?
-  { lesson: 'nt-ciclo-accion-b1' },                     // noti  El ciclo de una acción: empezar, seguir, dejar de
-  { lesson: 'gr-posesivo-dativo-b1' },                  // gram  El dativo posesivo: le cortaron el pelo
-  { lesson: 'fn-preguntar-preferencias-b1' },           // func  Preguntar por preferencias: comparando dos opciones
-  { practice: true },
-  { lesson: 'gn-narrar-estructura-b1' },                // genr  La estructura de una anécdota: cinco partes, no una lista 
-  { lesson: 'fn-preguntar-persona-telefono-b1' },       // func  Preguntar por una persona y responder al teléfono
-  { lesson: 'fn-preguntar-si-acuerdo-b1' },             // func  Preguntar si se está de acuerdo
-  { lesson: 'nt-tiempo-referencias-futuro-pasado-presente-b1' },// noti  El tiempo: siglos, décadas y el presente que dura
-  { lesson: 'gr-nombres-propios-b1' },                  // gram  Familias, accidentes geográficos y títulos de obras
-  { practice: true },
-  { lesson: 'fn-contraargumento-b1' },                  // func  Presentar un contraargumento
-  { lesson: 'dc-marcadores-discurso-b1' },              // disc  Marcadores del discurso: las cinco familias del B1
-  { lesson: 'fn-proponer-sugerir-b1' },                 // func  Proponer y sugerir: seis formas, una escala de fuerza
-  { lesson: 'fn-responder-orden-b1' },                  // func  Responder a una petición: aceptar, dudar, negarse
-  { lesson: 'nt-evaluacion-valor-b1' },                 // noti  Evaluación y precio: parecerle, estar a, rebajas
-  { practice: true },
-  { lesson: 'gr-interrogativos-b1' },                   // gram  Interrogativos: qué, quién, cuál + preposición
-  { lesson: 'fn-saludar-responder-b1' },                // func  Saludar y responder: la lengua escrita añade un registro
-  { lesson: 'gn-llamada-transaccional-b1' },            // genr  La llamada telefónica transaccional (B1)
-  { lesson: 'fn-valorar-b1' },                          // func  Valorar: hechos en indicativo, ajenos en subjuntivo
-  { lesson: 'fn-ordenar-directo-b1' },                  // func  Dar una orden de forma directa
-  { practice: true },
-  { lesson: 'nt-existencia-disponibilidad-b1' },        // noti  Existencia y disponibilidad: vacío, libre, ocupado
-  { lesson: 'gr-modificadores-adverbios-b1' },          // gram  Modificadores: el doble de, -mente, elativos
-  { lesson: 'fn-espero-esperanza-b1' },                 // func  Espero... / Expresar esperanza
-  { lesson: 'dc-negacion-refuerzo-b1' },                // disc  Refuerzo de la negación: nadie, hasta, desde
-  { lesson: 'fn-contento-encantado-b1' },               // func  Estoy contento / encantado...
-  { practice: true },
-  { lesson: 'fn-aburrimiento-b1' },                     // func  Expresar aburrimiento
-  { lesson: 'gr-genero-especial-b1' },                  // gram  Nombres epicenos y cambio de género con cambio de signific
-  { lesson: 'nt-exito-utilidad-importancia-b1' },       // noti  Éxito, utilidad e importancia: servir para, dar igual
-  { lesson: 'fn-admiracion-orgullo-b1' },               // func  Expresar admiración y orgullo
-  { lesson: 'fn-afecto-b1' },                           // func  Expresar afecto
-  { practice: true },
-  { lesson: 'gn-generos-escritos-b1' },                 // genr  Reconocer géneros escritos: la forma predice el registro
-  { lesson: 'fn-expresar-deseos-b1' },                  // func  Expresar deseos
-  { lesson: 'gr-relativas-b1' },                        // gram  Oraciones de relativo: que, quien, donde
-  { lesson: 'nt-formas-materia-b1' },                   // noti  Formas y materia: círculo, estar hecho de
-  { lesson: 'fn-empatia-b1' },                          // func  Expresar empatía
-  { practice: true },
-  { lesson: 'fn-enfado-indignacion-b1' },               // func  Expresar enfado e indignación
-  { lesson: 'dc-rematizacion-tematizacion-b1' },        // disc  Rematización y tematización: reordenar para destacar
-  { lesson: 'fn-miedo-ansiedad-preocupacion-b1' },      // func  Expresar miedo, ansiedad y preocupación
-  { lesson: 'gr-perifrasis-verbales-b1' },              // gram  Perífrasis verbales: soler, volver a, dejar de
-  { lesson: 'nt-localizacion-posicion-b1' },            // noti  Localización y posición: junto a, al fondo, en ninguna par
-  { practice: true },
-  { lesson: 'fn-placer-diversion-b1' },                 // func  Expresar placer y diversión
-  { lesson: 'fn-sorpresa-extraneza-b1' },               // func  Expresar sorpresa y extrañeza
-  { lesson: 'gn-reconocer-generos-orales-b1' },         // genr  Reconocer géneros orales: boletín, deportes, contestador
-  { lesson: 'fn-tristeza-afliccion-b1' },               // func  Expresar tristeza y aflicción
-  { lesson: 'gr-pluscuamperfecto-b1' },                 // gram  Pretérito pluscuamperfecto: había hablado
-  { practice: true },
-  { lesson: 'nt-sentidos-b1' },                         // noti  Los sentidos: ver, oír, saber a, oler a
-  { lesson: 'fn-me-alegro-b1' },                        // func  Me alegro
-  { lesson: 'fn-me-duele-b1' },                         // func  Me duele (emocional)
-  { lesson: 'gr-se-multiuso-b1' },                      // gram  Se: recíproco, impersonal, meteorológico
-  { lesson: 'fn-no-me-importa-b1' },                    // func  No me importa (indiferencia)
-  { practice: true },
-  { lesson: 'dc-intensificacion-discurso-b1' },         // disc  Intensificar: el más... de, -ísimo, kilómetros y kilómetro
-  { lesson: 'fn-pedir-ayuda-b1' },                      // func  Pedir ayuda: directa, atenuada y encubierta
-  { lesson: 'nt-medidas-tamano-superficie-b1' },        // noti  Medidas: medir, tamaño, metros cuadrados
-  { lesson: 'fn-pedir-permiso-b1' },                    // func  Pedir permiso
-  { lesson: 'gn-generos-orales-b1' },                   // genr  Reconocer géneros orales: qué exige entender, qué exige pr
-  { practice: true },
-  { lesson: 'gr-ser-impersonal-b1' },                   // gram  Ser impersonal: es de noche, es una pena que
-  { lesson: 'fn-pedir-favor-b1' },                      // func  Pedir un favor
-  { lesson: 'fn-expresar-planes-b1' },                  // func  Planes e intenciones: contarlos y preguntarlos
-  { lesson: 'nt-necesidad-obligacion-b1' },             // noti  Necesidad y obligación: depender de, ser obligatorio
-  { lesson: 'fn-prohibir-b1' },                         // func  Prohibir
-  { practice: true },
-  { lesson: 'gr-numero-sustantivos-b1' },               // gram  Singularia y pluralia tantum, y el plural en -y
-  { lesson: 'fn-advertir-b1' },                         // func  Advertir
-  { lesson: 'fn-animar-b1' },                           // func  Animar
-  { lesson: 'nt-orientacion-orden-b1' },                // noti  Orientación y orden: seguir por, primero, luego
-  { lesson: 'dc-focalizacion-b1' },                     // disc  Focalización: solo, sobre todo, ¡qué bien habla!
-  { practice: true },
-  { lesson: 'fn-concluir-relato-b1' },                  // func  Concluir un relato
-  { lesson: 'gr-formas-no-personales-b1' },             // gram  Usos independientes del infinitivo, gerundio y participio
-  { lesson: 'gn-presentacion-publica-b1' },             // genr  Una presentación pública (B1)
-  { lesson: 'fn-controlar-atencion-b1' },               // func  Controlar la atención del interlocutor
-  { lesson: 'fn-despedida-escrita-b1' },                // func  Despedirse por escrito
-  { practice: true },
-  { lesson: 'nt-puntualidad-retraso-b1' },              // noti  Puntualidad y retraso: llegar a tiempo, con retraso
-  { lesson: 'fn-destacar-elemento-b1' },                // func  Destacar un elemento por escrito
-  { lesson: 'impneg' },                                 // gram  Imperativo negativo
-  { lesson: 'fn-buenos-deseos-b1' },                    // func  Formular buenos deseos: dos formas, un mismo deseo
-  { lesson: 'fn-seguir-relato-interes-b1' },            // func  Indicar que se sigue el relato con interés
-  { practice: true },
-  { lesson: 'nt-reflexion-expresion-b1' },              // noti  Reflexión y expresión: darse cuenta de, contar un chiste
-  { lesson: 'fn-interrumpir-b1' },                      // func  Interrumpir
-  { lesson: 'dc-intensificar-acuerdo-desacuerdo-b1' },  // disc  Intensificar el acuerdo o el desacuerdo: claro, claro
-  { lesson: 'futperf' },                                // gram  Futuro perfecto (Future Perfect)
-  { lesson: 'fn-introducir-tema-relato-b1' },           // func  Introducir el tema de un relato
-  { practice: true },
-  { lesson: 'gn-exponer-tema-b1' },                     // genr  Exponer un tema: presente, ejemplos y esquemas
-  { lesson: 'fn-introducir-hecho-b1' },                 // func  Introducir un hecho dentro de un relato
-  { lesson: 'nt-temperatura-velocidad-volumen-b1' },    // noti  Temperatura, velocidad y volumen: grados, km por hora
-  { lesson: 'fn-ofrecer-invitar-b1' },                  // func  Ofrecer e invitar
-  { lesson: 'condperf' },                               // gram  Condicional perfecto (Conditional Perfect)
-  { practice: true },
-  { lesson: 'fn-brindis-b1' },                          // func  Proponer un brindis
-  { lesson: 'fn-rechazar-b1' },                         // func  Rechazar una propuesta, ofrecimiento o invitación
-  { lesson: 'nt-textura-consistencia-b1' },             // noti  Textura y consistencia: duro, blando, húmedo
-  { lesson: 'fn-reprochar-b1' },                        // func  Reprochar
-  { lesson: 'perfsubj' },                               // gram  Pretérito perfecto de subjuntivo (Present Perfect Subjunct
-  { practice: true },
-  { lesson: 'fn-responder-felicitaciones-b1' },         // func  Responder a felicitaciones y buenos deseos
-  { lesson: 'dc-entonacion-b1' },                       // disc  Más allá de las palabras: pausas, alargamientos y énfasis
-  { lesson: 'gn-composicion-escrita-b1' },              // genr  La composición escrita (B1)
-  { lesson: 'fn-responder-disculpa-b1' },               // func  Responder a una disculpa
-  { lesson: 'nt-acabado-b1' },                          // noti  Acabado: el resultado de una acción terminada
-  { practice: true },
-  { lesson: 'fn-responder-estado-b1' },                 // func  Responder cuando preguntan cómo van las cosas
-  { lesson: 'gr-complementos-modificadores-b1' },       // gram  La chica de los ojos azules, la construcción del edificio
-  { lesson: 'fn-tranquilizar-consolar-b1' },            // func  Tranquilizar y consolar
+
+  { unit: 'b1-u27', band: 'B1', title: 'What I think',
+    goal: 'I can state an opinion and say what I do NOT think.',
+    canDo: ['give an opinion and back it',
+            'use no creo que + subjunctive',
+            'say how certain I am',
+            'ask what someone else thinks'],
+    days: [
+      { lesson: 'gr-presente-subjuntivo-b1' },
+      { lesson: 'fn-dar-opinion-b1' },
+      { lesson: 'fn-certeza-evidencia-b1' },
+      { lesson: 'nt-certeza-realidad-b1' },
+      { practice: true },
+      { lesson: 'fn-estoy-de-acuerdo-b1' },
+      { lesson: 'task-b1-opinion' },
+    ] },
+
+  { unit: 'b1-u28', band: 'B1', title: 'Agreeing and arguing',
+    goal: 'I can disagree without it becoming a row.',
+    canDo: ['agree in part before pushing back',
+            'put a counter-argument',
+            'show scepticism',
+            'correct with no… sino'],
+    days: [
+      { lesson: 'fn-aprobacion-desaprobacion-b1' },
+      { lesson: 'fn-posicionarse-b1' },
+      { lesson: 'fn-contraargumento-b1' },
+      { lesson: 'fn-preguntar-si-acuerdo-b1' },
+      { practice: true },
+      { lesson: 'fn-mostrar-escepticismo-b1' },
+      { lesson: 'dc-intensificar-acuerdo-desacuerdo-b1' },
+      { lesson: 'fn-respuesta-afirmativa-b1' },
+      { lesson: 'task-b1-debate' },
+    ] },
+
+  { unit: 'b1-u29', band: 'B1', title: 'Advice and what I would do',
+    goal: 'I can advise someone at three levels of directness.',
+    canDo: ['use the conditional to soften',
+            'say yo que tú / lo mejor sería',
+            'soften by shifting the tense',
+            'value something and ask for a valuation'],
+    days: [
+      { lesson: 'condicional' },
+      { lesson: 'fn-aconsejar-b1' },
+      { lesson: 'gr-condicionales-b1' },
+      { lesson: 'dc-atenuacion-b1' },
+      { practice: true },
+      { lesson: 'fn-valorar-b1' },
+      { lesson: 'fn-pedir-valoracion-b1' },
+      { lesson: 'task-b1-consejo' },
+    ] },
+
+  { unit: 'b1-u30', band: 'B1', title: 'What I want from you',
+    goal: 'I can say what I want someone else to do.',
+    canDo: ['use que + subjunctive after wanting',
+            'express hope and wishes',
+            'ask what someone wants',
+            'say what is and is not possible'],
+    days: [
+      { lesson: 'gr-subordinadas-sustantivas-b1' },
+      { lesson: 'fn-expresar-deseos-b1' },
+      { lesson: 'fn-espero-esperanza-b1' },
+      { lesson: 'fn-preguntar-deseos-b1' },
+      { practice: true },
+      { lesson: 'fn-posibilidad-b1' },
+      { lesson: 'task-b1-deseos' },
+    ] },
+
+  { unit: 'b1-u31', band: 'B1', title: 'Plans and predictions',
+    goal: 'I can talk about the future and guess about the present.',
+    canDo: ['use ir a and the simple future',
+            'use cuando + subjunctive for a future moment',
+            'guess with the future of conjecture',
+            'talk about events and when they happen'],
+    days: [
+      { lesson: 'futuro' },
+      { lesson: 'fn-expresar-planes-b1' },
+      { lesson: 'gr-temporales-b1' },
+      { lesson: 'gr-modalidad-b1' },
+      { practice: true },
+      { lesson: 'nt-acontecimiento-b1' },
+      { lesson: 'fn-proponer-sugerir-b1' },
+      { lesson: 'fn-aceptar-propuesta-b1' },
+      { lesson: 'fn-ofrecer-invitar-b1' },
+      { lesson: 'task-b1-planes' },
+    ] },
+
+  { unit: 'b1-u32', band: 'B1', title: 'Asking, refusing, forbidding',
+    goal: 'I can ask at four levels, refuse without offence, and forbid clearly.',
+    canDo: ['ask a favour, permission and an object',
+            'refuse with a reason',
+            'give a direct order and a negative one',
+            'forbid and warn'],
+    days: [
+      { lesson: 'fn-pedir-ayuda-b1' },
+      { lesson: 'fn-pedir-permiso-b1' },
+      { lesson: 'fn-pedir-favor-b1' },
+      { lesson: 'fn-pedir-objetos-b1' },
+      { practice: true },
+      { lesson: 'fn-responder-orden-b1' },
+      { lesson: 'fn-rechazar-b1' },
+      { lesson: 'fn-ordenar-directo-b1' },
+      { lesson: 'impneg' },
+      { lesson: 'fn-prohibir-b1' },
+      { lesson: 'fn-obligacion-necesidad-b1' },
+      { lesson: 'fn-habilidad-b1' },
+      { lesson: 'task-b1-pedir' },
+    ] },
+
+  { unit: 'b1-u33', band: 'B1', title: 'Good feelings',
+    goal: 'I can express pleasure, pride and affection at the right intensity.',
+    canDo: ['express joy, pride and affection',
+            'intensify without sounding sarcastic',
+            'say I am glad for someone',
+            'express amusement'],
+    days: [
+      { lesson: 'fn-contento-encantado-b1' },
+      { lesson: 'fn-me-alegro-b1' },
+      { lesson: 'fn-placer-diversion-b1' },
+      { lesson: 'fn-admiracion-orgullo-b1' },
+      { practice: true },
+      { lesson: 'fn-afecto-b1' },
+      { lesson: 'fn-tristeza-afliccion-b1' },
+      { lesson: 'fn-me-duele-b1' },
+      { lesson: 'task-b1-alegria' },
+    ] },
+
+  { unit: 'b1-u34', band: 'B1', title: 'When it goes wrong',
+    goal: 'I can express anger, worry and indifference — and calm someone else down.',
+    canDo: ['express anger and indignation',
+            'express fear and worry',
+            'express boredom and indifference',
+            'calm and reassure someone'],
+    days: [
+      { lesson: 'fn-enfado-indignacion-b1' },
+      { lesson: 'fn-miedo-ansiedad-preocupacion-b1' },
+      { lesson: 'fn-aversion-b1' },
+      { lesson: 'fn-aburrimiento-b1' },
+      { practice: true },
+      { lesson: 'fn-no-me-importa-b1' },
+      { lesson: 'fn-sorpresa-extraneza-b1' },
+      { lesson: 'fn-empatia-b1' },
+      { lesson: 'fn-tranquilizar-consolar-b1' },
+      { lesson: 'fn-animar-b1' },
+      { lesson: 'task-b1-enfado' },
+    ] },
+
+  { unit: 'b1-u35', band: 'B1', title: 'Likes and how you are',
+    goal: 'I can talk about liking what other people do, and how I am feeling.',
+    canDo: ['use me gusta que + subjunctive',
+            'compare two preferences',
+            'describe physical sensations',
+            'ask and answer how things are going'],
+    days: [
+      { lesson: 'fn-expresar-gustos-b1' },
+      { lesson: 'fn-preguntar-gustos-b1' },
+      { lesson: 'fn-preferencia-b1' },
+      { lesson: 'fn-preguntar-preferencias-b1' },
+      { practice: true },
+      { lesson: 'fn-sensaciones-fisicas-b1' },
+      { lesson: 'fn-preguntar-estado-animo-b1' },
+      { lesson: 'fn-responder-estado-b1' },
+      { lesson: 'task-b1-gustos' },
+    ] },
+
+  { unit: 'b1-u36', band: 'B1', title: 'Telling a longer story',
+    goal: 'I can tell a story that reaches back before its own beginning.',
+    canDo: ['use the pluperfect for an earlier past',
+            'structure a story in five parts',
+            'open, develop and close a narrative',
+            'keep track of who is who'],
+    days: [
+      { lesson: 'gr-pluscuamperfecto-b1' },
+      { lesson: 'gn-narrar-estructura-b1' },
+      { lesson: 'fn-introducir-tema-relato-b1' },
+      { lesson: 'fn-introducir-hecho-b1' },
+      { practice: true },
+      { lesson: 'fn-concluir-relato-b1' },
+      { lesson: 'dc-marcadores-discurso-b1' },
+      { lesson: 'dc-mantenimiento-referente-b1' },
+      { lesson: 'task-b1-relato' },
+    ] },
+
+  { unit: 'b1-u37', band: 'B1', title: 'Holding a conversation',
+    goal: 'I can keep a long conversation going without taking it over.',
+    canDo: ['signal that I am listening',
+            'interrupt without hijacking',
+            'hold the floor and hand it back',
+            'handle a transactional phone call'],
+    days: [
+      { lesson: 'fn-seguir-relato-interes-b1' },
+      { lesson: 'fn-interrumpir-b1' },
+      { lesson: 'fn-controlar-atencion-b1' },
+      { lesson: 'fn-has-oido-b1' },
+      { practice: true },
+      { lesson: 'fn-conocimiento-desconocimiento-b1' },
+      { lesson: 'gn-llamada-transaccional-b1' },
+      { lesson: 'fn-preguntar-persona-telefono-b1' },
+      { lesson: 'fn-pedir-informacion-b1' },
+      { lesson: 'dc-valores-ilocutivos-b1' },
+      { lesson: 'task-b1-conversar' },
+    ] },
+
+  { unit: 'b1-u38', band: 'B1', title: 'Describing at length',
+    goal: 'I can sustain a description for a paragraph.',
+    canDo: ['use que, quien and donde',
+            'identify with a relative clause',
+            'describe a person, a place and an object at B1 depth',
+            'add detail without starting a new sentence'],
+    days: [
+      { lesson: 'gr-relativas-b1' },
+      { lesson: 'gr-adverbios-relativos-b1' },
+      { lesson: 'fn-identificar-b1' },
+      { lesson: 'gn-describir-persona-b1' },
+      { practice: true },
+      { lesson: 'gn-describir-lugar-b1' },
+      { lesson: 'gn-describir-objeto-b1' },
+      { lesson: 'gr-pronombres-combinados-b1' },
+      { lesson: 'task-b1-describir' },
+    ] },
+
+  { unit: 'b1-u39', band: 'B1', title: 'Joining ideas up',
+    goal: 'I can link ideas by cause, result, concession and comparison.',
+    canDo: ['give causes and results',
+            'concede with aunque, indicative or subjunctive',
+            'compare with igual de and más de',
+            'use soler, volver a, dejar de'],
+    days: [
+      { lesson: 'gr-causales-b1' },
+      { lesson: 'gr-consecutivas-b1' },
+      { lesson: 'gr-concesivas-b1' },
+      { lesson: 'gr-comparativas-b1' },
+      { practice: true },
+      { lesson: 'gr-perifrasis-verbales-b1' },
+      { lesson: 'task-b1-unir' },
+    ] },
+
+  { unit: 'b1-u40', band: 'B1', title: 'Courtesy and celebrations',
+    goal: 'I can handle the social moments where the formula is visible.',
+    canDo: ['congratulate and respond',
+            'wish someone well and propose a toast',
+            'apologise with a reason and respond',
+            'reproach gently'],
+    days: [
+      { lesson: 'fn-felicitar-b1' },
+      { lesson: 'fn-responder-felicitaciones-b1' },
+      { lesson: 'fn-buenos-deseos-b1' },
+      { lesson: 'fn-brindis-b1' },
+      { practice: true },
+      { lesson: 'fn-saludar-responder-b1' },
+      { lesson: 'fn-disculparse-b1' },
+      { lesson: 'fn-responder-disculpa-b1' },
+      { lesson: 'fn-reprochar-b1' },
+      { lesson: 'fn-advertir-b1' },
+      { lesson: 'task-b1-cortesia' },
+    ] },
+
+  { unit: 'b1-u41', band: 'B1', title: 'Writing at length',
+    goal: 'I can write a composition with a thesis, a development and a conclusion.',
+    canDo: ['structure an argument across four paragraphs',
+            'raise and answer a counter-argument',
+            'write a personal letter and a public talk',
+            'close a written text properly'],
+    days: [
+      { lesson: 'gn-composicion-escrita-b1' },
+      { lesson: 'gn-exponer-tema-b1' },
+      { lesson: 'gn-carta-personal-b1' },
+      { lesson: 'gn-presentacion-publica-b1' },
+      { practice: true },
+      { lesson: 'fn-despedida-escrita-b1' },
+      { lesson: 'fn-destacar-elemento-b1' },
+      { lesson: 'gn-generos-escritos-b1' },
+      { lesson: 'task-b1-escribir' },
+    ] },
+
+  { unit: 'b1-u42', band: 'B1', title: 'If things had been different',
+    goal: 'I can talk about what is not the case, and what would have been.',
+    canDo: ['use si + imperfect subjunctive + conditional',
+            'use si + pluperfect subjunctive + conditional perfect',
+            'match the tenses across the comma',
+            'use the imperative beyond the order'],
+    days: [
+      { lesson: 'impsubj' },
+      { lesson: 'futperf' },
+      { lesson: 'condperf' },
+      { lesson: 'perfsubj' },
+      { practice: true },
+      { lesson: 'gr-imperativo-valores-b1' },
+      { lesson: 'task-b1-hipotesis' },
+    ] },
 
   /* ---- B2 · 169 days · starts at index 387 ------------------------------- */
   { band: 'B2' },
