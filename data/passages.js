@@ -8,6 +8,60 @@
  * ========================================================================== */
 window.PASSAGES = [
 
+/* ---- Unit 1 · Meet someone ------------------------------------------------
+ * A day-1 learner used to read about Marta's commute: 87 level-1 passages, one
+ * of which involved meeting anyone. These three are what Unit 1 actually
+ * teaches, as connected speech — short turns, present tense only, and the
+ * phrases in the same shape the lesson gives them.
+ * ------------------------------------------------------------------------ */
+{
+  id: 'u1-cafeteria', title: 'En la cafetería de la facultad', level: 1, theme: 'identidad',
+  text: 'Son las nueve de la mañana. Hay dos estudiantes en la cafetería. —Hola, buenos días. ¿Está libre? —Sí, está libre. —Gracias. Me llamo Tom. —Yo soy Ana. Encantada. —Encantado. ¿Eres de Madrid, Ana? —No, soy de Valencia, pero vivo aquí. ¿Y tú? —Soy de Irlanda. Estoy aquí por la universidad. —¡Qué bien! ¿Y hablas español muy bien! —Bueno, un poco. Todavía no hablo rápido.',
+  gloss: [ { es: '¿Está libre?', en: 'Is this seat free?' }, { es: 'siéntate', en: 'sit down' },
+           { es: 'pero', en: 'but' }, { es: 'todavía no', en: 'not yet' }, { es: 'un poco', en: 'a little' } ],
+  questions: [
+    { type: 'mcq', q: '¿De dónde es Ana?',
+      options: ['De Madrid', 'De Valencia', 'De Irlanda'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué está Tom en Madrid?',
+      options: ['Por la universidad', 'Por el trabajo', 'Por su familia'], answer: 0 },
+    { type: 'short', q: '¿Cómo se llama el estudiante irlandés? (una palabra)', accept: ['Tom', 'tom'] },
+    { type: 'translate', line: '—Gracias. Me llamo Tom.', model: 'Thanks. My name is Tom.' }
+  ]
+},
+
+{
+  id: 'u1-recepcion', title: 'En la recepción', level: 1, theme: 'identidad',
+  text: 'Una mujer entra en un hotel pequeño. —Buenas tardes. —Buenas tardes, señora. ¿Tiene una reserva? —Sí. Me llamo Clara Ruiz. —Un momento, por favor... Sí, aquí está. ¿Es usted de aquí, señora Ruiz? —No, soy de Chile. Estoy aquí una semana. —Muy bien. Aquí tiene la llave. Habitación doce. —Muchas gracias. —De nada. Buenas noches.',
+  gloss: [ { es: 'una reserva', en: 'a booking' }, { es: 'un momento', en: 'one moment' },
+           { es: 'la llave', en: 'the key' }, { es: 'habitación', en: 'room' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo trata el recepcionista a Clara?',
+      options: ['De tú', 'De usted', 'No la trata de ninguna forma'], answer: 1 },
+    { type: 'mcq', q: '¿De dónde es Clara?',
+      options: ['De Chile', 'De aquí', 'De Valencia'], answer: 0 },
+    { type: 'short', q: 'Clara dice "muchas gracias". ¿Qué contesta el recepcionista? (dos palabras)',
+      accept: ['de nada', 'De nada'] },
+    { type: 'translate', line: '¿Es usted de aquí, señora Ruiz?', model: 'Are you from here, Mrs Ruiz?' }
+  ]
+},
+
+{
+  id: 'u1-vecina', title: 'La vecina nueva', level: 1, theme: 'identidad',
+  text: 'Marcos abre la puerta y ve a una mujer con dos cajas. —Hola. ¿Eres la vecina nueva? —Sí, soy Nadia. Vivo en el cuarto. —Yo soy Marcos, del tercero. Encantado. —Encantada, Marcos. —¿Necesitas ayuda con las cajas? —Ah, muchas gracias, pero no, no hace falta. Son muy ligeras. —Vale. Pues bienvenida. —Gracias, eres muy amable. Hasta luego. —Hasta luego, Nadia.',
+  gloss: [ { es: 'la vecina', en: 'the neighbour (f)' }, { es: 'cajas', en: 'boxes' },
+           { es: 'el cuarto', en: 'the fourth floor' }, { es: 'no hace falta', en: "there's no need" },
+           { es: 'ligeras', en: 'light' }, { es: 'amable', en: 'kind' } ],
+  questions: [
+    { type: 'mcq', q: '¿Acepta Nadia la ayuda de Marcos?',
+      options: ['Sí, la acepta', 'No, dice que no hace falta', 'No contesta'], answer: 1 },
+    { type: 'mcq', q: '¿En qué piso vive Marcos?',
+      options: ['En el tercero', 'En el cuarto', 'No lo dice'], answer: 0 },
+    { type: 'short', q: '¿Cómo se llama la vecina nueva? (una palabra)', accept: ['Nadia', 'nadia'] },
+    { type: 'translate', line: '¿Necesitas ayuda con las cajas?', model: 'Do you need help with the boxes?' }
+  ]
+},
+
+
 {
   id: 'rutina', title: 'La rutina de Marta', level: 1, theme: 'trabajo',
   text: 'Marta vive en Sevilla. Todos los días se levanta a las siete y desayuna café con tostadas. Trabaja en una tienda de ropa en el centro. Al mediodía come con sus compañeros en un bar cerca del trabajo. Por la tarde estudia inglés porque quiere viajar a Londres. Los fines de semana visita a su familia y pasea por el río.',

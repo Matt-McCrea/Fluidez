@@ -308,6 +308,23 @@ window.Checker = (function () {
     return out;
   }
 
+  /* Punctuation is not the thing being tested. E.normalize lowercases and
+   * collapses spaces, so capitals were already forgiven — but a trailing full
+   * stop was not, and "Ella no tiene hambre." was marked cold-wrong against
+   * "ella no tiene hambre". Worse than wrong: it is not even a near miss,
+   * because deaccenting does not remove a full stop either, so the learner got
+   * no "check the accents" hint — just a flat no for typing a sentence the way
+   * sentences are written.
+   *
+   * Strip the marks that carry no lexical weight here: terminal stops, commas,
+   * and the paired ¿¡ ?! of a question or exclamation. Accents are NOT touched
+   * — those are part of the word, and getting them wrong is still a near miss
+   * worth flagging. The `question` writing constraint is unaffected; it reads
+   * the raw text, because there the question mark IS the point. */
+  function depunct(s) {
+    return E.normalize(s).replace(/[.,;:!?¡¿"“”'’]/g, '').replace(/\s+/g, ' ').trim();
+  }
+
   function checkExact(input, accepted, opts) {
     var norm = E.normalize(input);
     var list = Array.isArray(accepted) ? accepted : [accepted];
@@ -315,8 +332,11 @@ window.Checker = (function () {
       list = list.reduce(function (acc, a) { return acc.concat(meaningAlternatives(a)); }, []);
     }
     if (list.some(function (a) { return E.normalize(a) === norm; })) return { pass: true, near: false };
+    // same answer, different punctuation → a pass, not a near miss
+    var bare = depunct(input);
+    if (bare && list.some(function (a) { return depunct(a) === bare; })) return { pass: true, near: false };
     // accent-insensitive near miss → encourage a fix rather than mark cold-wrong
-    var near = list.some(function (a) { return E.deaccent(E.normalize(a)) === E.deaccent(norm); });
+    var near = list.some(function (a) { return E.deaccent(depunct(a)) === E.deaccent(bare); });
     return { pass: false, near: near };
   }
 

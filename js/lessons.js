@@ -171,14 +171,31 @@
      * nothing": the deictic/anaphoric probe below asks you to produce "dos días
      * después" with no way to know that was the target. Keep the shape; let the
      * view ask it the way it was written. */
-    function metalinguistic(front) {
+    function metalinguistic(front, kind) {
       var f = String(front || '').trim();
       // The English form, and the same question asked in Spanish — which the
       // old check let through, because it required the front to carry no
       // accents: 412 cards of "¿Qué diferencia hay entre X e Y?" with a
       // paragraph for an answer went into the deck as typed recall.
-      return /^(what|which|why|how|when|name the|in which)\b/i.test(f) ||
-             /^¿(qué|cuál|cuáles|por qué|cómo|cuándo|quién|puede|cuántos?)\b/i.test(f);
+      if (/^(what|which|why|how|when|name the|in which)\b/i.test(f)) return true;
+      if (/^¿(qué|cuál|cuáles|por qué|cómo|cuándo|quién|puede|cuántos?)\b/i.test(f)) return true;
+      /* The same question with a SCENARIO in front of it slipped straight
+       * through, because the test only looked at the opening word:
+       *   "Ana te pregunta "¿cómo te llamas?". ¿Qué respondes?"
+       *   "Eres una mujer. ¿Cómo dices "pleased to meet you"?"
+       * Both went into the deck as typed recall. Weeks later the card arrives
+       * with no Ana and no dialogue — it is a question about a situation the
+       * learner can no longer see, and there is no way to know the answer was
+       * meant to be "Tom". A probe that sets the scene is a comprehension
+       * check for the end of its own lesson, never a review card. */
+      /* A cloze is exempt: its front IS the prompt and the deck shows all of
+       * it, gap included, so an embedded question ("—Me llamo Ana. ¿___ tú?")
+       * is answerable weeks later from the card alone. Only mcq and recall
+       * cards can be orphaned from a scene they no longer carry. */
+      if (kind === 'cloze' || f.indexOf('___') !== -1) return false;
+      if (/[.:]\s*¿/.test(f)) return true;              // scenario, then a question
+      if (/¿[^?]*\?/.test(f) && !/^¿/.test(f)) return true;  // question embedded later
+      return false;
     }
     /* Whatever it asks, an answer you could not type back weeks later is not a
      * card. Review always types a lesson card (js/views/review.js resolves
@@ -195,7 +212,8 @@
             ? { id: p.id, front: p.text, back: p.accept[0],
                 probe: { kind: 'cloze', accept: p.accept } }
             : { id: p.id, front: p.front, back: p.back, probe: { kind: 'recall' } };
-      card.srs = !metalinguistic(card.front) && reproducible(card.back);
+      card.srs = p.srs !== false &&                     // an author can always veto
+                 !metalinguistic(card.front, p.kind) && reproducible(card.back);
       return card;
     });
     return out;

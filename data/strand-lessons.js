@@ -29,7 +29,7 @@ window.STRAND_LESSONS = [
  * the learner to do the whole thing at once.
  * ------------------------------------------------------------------------ */
 {
-  id: 'dlg-presentarse', strand: 'dialogue', cefr: 'A1', level: 1, theme: null,
+  id: 'dlg-presentarse', strand: 'dialogue', cefr: 'A1', level: 1, theme: 'identidad',
   title: 'Dos personas se conocen',
   canDo: 'follow a first conversation between two people, and know what each line is doing',
   summary: 'Before any grammar: a whole first meeting, eleven lines long. You are not expected to produce any of it yet — read it, hear the shape, and notice that almost every line is four words or fewer. Everything this unit teaches is somewhere in here.',
@@ -56,13 +56,13 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:dlg-presentarse-1', kind: 'mcq',
-      q: 'Ana te pregunta "¿cómo te llamas?". ¿Qué respondes?',
-      options: ['Me llamo Tom.', 'Te llamas Tom.', 'Se llama Tom.'], answer: 0 },
+      q: 'Which one means "my name is Ana"?',
+      options: ['Me llamo Ana.', 'Te llamas Ana.', 'Se llama Ana.'], answer: 0 },
     { id: 'p:dlg-presentarse-2', kind: 'mcq',
-      q: '¿Por qué NO se dice normalmente "Yo me llamo Ana"?',
-      options: ['Porque la terminación del verbo ya dice quién es',
-                'Porque "yo" no existe en español',
-                'Porque "llamarse" no admite pronombre'], answer: 0 },
+      q: 'Spanish usually leaves out "yo". Why?',
+      options: ['The verb ending already says who it is',
+                '"yo" is only used in writing',
+                '"yo" cannot go with a reflexive verb'], answer: 0 },
     { id: 'p:dlg-presentarse-3', kind: 'cloze',
       text: '—Me llamo Ana. ¿___ tú?', accept: ['y', 'Y'] },
     { id: 'p:dlg-presentarse-4', kind: 'recall',
@@ -72,7 +72,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-agradecer-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-agradecer-a1', strand: 'function', cefr: 'A1', level: 1, theme: 'identidad',
   title: 'Dar las gracias',
   canDo: 'thank someone and reply when they thank you',
   summary: 'Gracias is the easy half. The half learners get wrong is the reply: English "you\'re welcome" maps onto at least three Spanish answers, and saying nothing at all — which is what most beginners do — reads as colder than it does in English.',
@@ -98,10 +98,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:fn-agradecer-a1-1', kind: 'mcq',
-      q: '¿Cuál es correcto?',
+      q: 'Which one is correct?',
       options: ['Muchas gracias.', 'Muy gracias.', 'Mucho gracias.'], answer: 0 },
     { id: 'p:fn-agradecer-a1-2', kind: 'mcq',
-      q: 'Alguien te dice "gracias". ¿Cuál es la respuesta neutra que siempre funciona?',
+      q: 'Which one is the standard reply to "gracias"?',
       options: ['De nada.', 'Por favor.', 'Perdón.'], answer: 0 },
     { id: 'p:fn-agradecer-a1-3', kind: 'cloze',
       text: 'Gracias ___ la ayuda.', accept: ['por'] },
@@ -112,7 +112,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'task-presentarse', strand: 'task', cefr: 'A1', level: 1, theme: null,
+  id: 'task-presentarse', strand: 'task', cefr: 'A1', level: 1, theme: 'identidad',
   title: 'Preséntate',
   canDo: 'hold a whole first conversation on your own — greet, name, origin, thanks, goodbye',
   summary: 'No new material. Everything you need is in the nine days behind you. Write both halves of a first meeting between you and someone you have just met, then say your half out loud.',
@@ -141,10 +141,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:task-presentarse-1', kind: 'mcq',
-      q: 'Eres una mujer. ¿Cómo dices "pleased to meet you"?',
+      q: 'A woman says "pleased to meet you". Which form does she use?',
       options: ['Encantada.', 'Encantado.', 'Encantas.'], answer: 0 },
     { id: 'p:task-presentarse-2', kind: 'mcq',
-      q: '¿Cuál de estas frases NO pertenece a una primera conversación?',
+      q: 'Which of these would NOT come up when two people first meet?',
       options: ['¿Cómo te llamas?', '¿De dónde eres?', '¿Cuánto costó tu casa?'], answer: 2 },
     { id: 'p:task-presentarse-3', kind: 'cloze',
       text: '—Muchas gracias. —De ___.', accept: ['nada'] },
@@ -329,7 +329,7 @@ window.STRAND_LESSONS = [
  * comunicacion-a1, same PCIC subsection 6.1 as its sibling leaf)
  * ========================================================================== */
 {
-  id: 'fn-identificar-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-identificar-a1', strand: 'function', cefr: 'A1', level: 1, theme: 'identidad',
   pcic: ['funciones:A1:1', 'funciones:A1:2', 'funciones:A1:3', 'funciones:A1:4', 'funciones:A1:7', 'funciones:A1:8'],
   title: 'Identificar',
   canDo: 'say who you are, and name the things around you',
@@ -761,7 +761,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-establecer-comunicacion-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-establecer-comunicacion-a1', strand: 'function', cefr: 'A1', level: 1, theme: 'identidad',
   pcic: ['funciones:A1:418', 'funciones:A1:419', 'funciones:A1:420', 'funciones:A1:421', 'funciones:A1:422', 'funciones:A1:423', 'funciones:A1:424'],
   title: 'Establecer la comunicación',
   canDo: "get someone's attention, and close a conversation instead of just stopping",
@@ -2164,7 +2164,7 @@ window.STRAND_LESSONS = [
    * the day's passage and cloze are, and a day-3 learner cannot take level 2.
    * The `pcic` ids below stay exactly as harvested — provenance is a record of
    * where the content came from, not a claim about when it should be taught. */
-  id: 'fn-responder-saludo-a2', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-responder-saludo-a2', strand: 'function', cefr: 'A1', level: 1, theme: 'identidad',
   pcic: ['funciones:A2:354', 'funciones:A2:355', 'funciones:A2:356'],
   title: 'Responder a un saludo',
   canDo: 'greet someone, and answer properly when they greet you',
@@ -3864,7 +3864,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-origen-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-origen-a1', strand: 'notion', cefr: 'A1', level: 1, theme: 'identidad',
   pcic: ['nociones_generales:A1:115', 'nociones_generales:A1:116', 'nociones_generales:A1:117'],
   title: 'Origen: ser + nacionalidad, ser de',
   canDo: 'say where you are from, and ask someone else',
