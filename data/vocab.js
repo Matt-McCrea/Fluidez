@@ -38,6 +38,25 @@ window.VOCAB = [
 {es:'el jefe', en:'the boss', cat:'people'},
 {es:'el vecino', en:'the neighbor', cat:'people'},
 
+/* family — beyond the nuclear core */
+{es:'los padres', en:'the parents', cat:'people', cefr:'A1', theme:'relaciones', gender:'m', pcic:["nociones_especificas:A1:2"], collocations:["padres divorciados","vivir con los padres"]},
+{es:'los hijos', en:'the children', cat:'people', cefr:'A1', theme:'relaciones', gender:'m', pcic:["nociones_especificas:A1:2"], collocations:["tener hijos","los hijos mayores"]},
+{es:'los hermanos', en:'the siblings', cat:'people', cefr:'A1', theme:'relaciones', gender:'m', pcic:["nociones_especificas:A1:2"], collocations:["hermanos gemelos"]},
+{es:'los abuelos', en:'the grandparents', cat:'people', cefr:'A1', theme:'relaciones', gender:'m', pcic:["nociones_especificas:A1:2"], collocations:["casa de los abuelos"]},
+{es:'la sobrina', en:'the niece', cat:'people', cefr:'A1', theme:'relaciones', gender:'f', pcic:["nociones_especificas:A1:2"]},
+{es:'la suegra', en:'the mother-in-law', cat:'people', cefr:'A1', theme:'relaciones', gender:'f', pcic:["nociones_especificas:A1:2"]},
+{es:'la cuñada', en:'the sister-in-law', cat:'people', cefr:'A1', theme:'relaciones', gender:'f', pcic:["nociones_especificas:A1:2"]},
+{es:'la novia', en:'the girlfriend', cat:'people', cefr:'A1', theme:'relaciones', gender:'f', pcic:["nociones_especificas:A1:2"]},
+{es:'el bebé', en:'the baby', cat:'people', cefr:'A1', theme:'relaciones', gender:'m', pcic:["nociones_especificas:A1:2"], collocations:["esperar un bebé"]},
+{es:'el pariente', en:'the relative', cat:'people', cefr:'A1', theme:'relaciones', gender:'m', pcic:["nociones_especificas:A1:2"], collocations:["un pariente lejano"]},
+{es:'el hijo único', en:'the only child', cat:'people', cefr:'A1', theme:'relaciones', gender:'m', pcic:["nociones_especificas:A1:2"]},
+{es:'los gemelos', en:'the twins', cat:'people', cefr:'A1', theme:'relaciones', gender:'m', pcic:["nociones_especificas:A1:2"]},
+{es:'mayor', en:'older / eldest', cat:'people', cefr:'A1', theme:'relaciones', pcic:["nociones_especificas:A1:2"], collocations:["mi hermano mayor","la hija mayor"]},
+{es:'menor', en:'younger / youngest', cat:'people', cefr:'A1', theme:'relaciones', pcic:["nociones_especificas:A1:2"], collocations:["mi hermana menor"]},
+{es:'casado', en:'married', cat:'people', cefr:'A1', theme:'relaciones', pcic:["nociones_especificas:A1:2"], collocations:["estar casado con"]},
+{es:'soltero', en:'single', cat:'people', cefr:'A1', theme:'relaciones', pcic:["nociones_especificas:A1:2"], collocations:["estar soltero"]},
+{es:'separado', en:'separated', cat:'people', cefr:'A1', theme:'relaciones', pcic:["nociones_especificas:A1:2"], collocations:["estar separado"]},
+
 /* food & drink */
 {es:'la comida', en:'the food / meal', cat:'food'},
 {es:'el agua', en:'the water', cat:'food'},

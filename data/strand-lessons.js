@@ -23,6 +23,66 @@
 window.STRAND_LESSONS = [
 
 {
+  id: 'nt-familia-a1', strand: 'notion', cefr: 'A1', level: 1, theme: 'relaciones',
+  title: 'La familia: quién es quién',
+  canDo: 'say who is in my family, how many there are, and how old they are',
+  moment: [{ es: '—¿Tienes hermanos?', en: '—Do you have brothers or sisters?' },
+           { es: '—Sí, dos. Una hermana mayor y un hermano pequeño.', en: '—Yes, two. An older sister and a little brother.' }],
+  summary: 'Spanish names a mixed group with the masculine plural — "mis hermanos" is brothers, or brothers and sisters together, and there is no way to tell from the word alone. That one habit runs through the whole family vocabulary and explains half of what looks irregular in it.',
+  sections: [
+    { h: 'The masculine plural covers the mixed group', html: 'One brother and one sister are <i>mis hermanos</i>. A mother and a father are <i>mis padres</i>. Grandparents of both sexes are <i>mis abuelos</i>. The feminine plural is reserved for an all-female group: <i>mis hermanas</i> means sisters only. So <i>tengo tres hermanos</i> tells you the number and nothing about who they are — a Spanish speaker asking for more will say <i>¿chicos o chicas?</i>' },
+    { h: 'Tener, not ser', html: 'Family membership uses <i>tener</i>: <i>tengo dos hermanos</i>, <i>tiene tres hijos</i>. English says "there are four of us"; Spanish says <i>somos cuatro</i> — with <i>ser</i>, and with no word for "of us" at all. Both are worth learning as fixed shapes.' },
+    { h: 'Mayor and menor, not grande and pequeño', html: 'For siblings, age is <i>mayor</i> (older) and <i>menor</i> (younger): <i>mi hermana mayor</i>. <i>Más grande</i> would be about size. <i>Pequeño</i> is used affectionately for a much younger sibling — <i>mi hermano pequeño</i> — but <i>menor</i> is the neutral word.' },
+    { h: 'The question you will be asked', html: '<i>¿Tienes hermanos?</i> is one of the first things anyone asks. The full answer has three parts and all three are short: how many, what they are, and roughly their age. <i>Sí, dos: una hermana mayor y un hermano pequeño.</i>' }
+  ],
+  exponents: [
+    { es: '¿Tienes hermanos?', en: 'Do you have brothers or sisters?', register: 'coloquial', note: 'the standard opener' },
+    { es: 'Somos cuatro en casa.', en: "There are four of us at home.", register: 'neutral', note: 'ser, and no word for "of us"' },
+    { es: 'Tengo una hermana mayor.', en: 'I have an older sister.', register: 'neutral', note: 'mayor, not más grande' },
+    { es: 'Soy hijo único.', en: "I'm an only child.", register: 'neutral', note: 'hija única for a woman' },
+    { es: 'Mis padres están separados.', en: 'My parents are separated.', register: 'neutral', note: 'estar, because it is a state' },
+    { es: 'Vivo con mi pareja.', en: 'I live with my partner.', register: 'neutral', note: 'pareja is neutral as to sex' },
+    { es: '¿Y tus abuelos, viven cerca?', en: 'And your grandparents, do they live nearby?', register: 'coloquial', note: null }
+  ],
+  contrasts: [
+    { es: 'mis hermanos', en: 'my siblings (or my brothers)', note: 'masculine plural — a mixed group, or all male' },
+    { es: 'mis hermanas', en: 'my sisters', note: 'feminine plural — all female only' },
+    { es: 'mi hermano mayor', en: 'my older brother', note: 'age' },
+    { es: 'mi hermano grande', en: '(my big brother, by size)', note: 'not what you meant' }
+  ],
+  pitfalls: [
+    'Tengo 30 años, never <i>soy 30</i> — age is something you HAVE in Spanish.',
+    '<i>Somos cinco</i> for "there are five of us". Adding a word for "of us" is the commonest slip here.',
+    '<i>Mis padres</i> is my parents. My fathers, in the plural-of-father sense, is not a thing the word does — and <i>parientes</i> means relatives, not parents.'
+  ],
+  examples: [
+    { es: '—¿Tienes hermanos? —Sí, dos. Una hermana mayor y un hermano pequeño.', en: '—Do you have siblings? —Yes, two. An older sister and a little brother.' },
+    { es: 'Somos cinco: mis padres, mis dos hermanas y yo.', en: 'There are five of us: my parents, my two sisters and me.' },
+    { es: 'Mi abuela tiene ochenta y dos años y vive sola.', en: 'My grandmother is eighty-two and lives alone.' },
+    { es: 'Soy hija única, pero tengo muchos primos.', en: "I'm an only child, but I have a lot of cousins." },
+    { es: 'Mi hermano está casado y tiene un bebé.', en: 'My brother is married and has a baby.' }
+  ],
+  probes: [
+    { id: 'p:nt-familia-a1-1', kind: 'mcq',
+      q: 'Someone says "tengo tres hermanos". What do you know?',
+      options: ['How many, but not whether they are brothers or sisters',
+                'That all three are brothers',
+                'That all three are sisters'], answer: 0 },
+    { id: 'p:nt-familia-a1-2', kind: 'mcq',
+      q: 'Which means "there are four of us"?',
+      options: ['Somos cuatro.', 'Estamos cuatro.', 'Somos de cuatro.'], answer: 0 },
+    { id: 'p:nt-familia-a1-3', kind: 'mcq',
+      q: 'Which means "my older sister"?',
+      options: ['mi hermana mayor', 'mi hermana grande', 'mi hermana vieja'], answer: 0 },
+    { id: 'p:nt-familia-a1-4', kind: 'cloze',
+      text: '___ dos hermanos y una hermana. (tener, yo)', accept: ['Tengo', 'tengo'] },
+    { id: 'p:nt-familia-a1-5', kind: 'recall',
+      front: '"I am an only child" (said by a woman)', back: 'Soy hija única' }
+  ]
+},
+
+
+{
   id: 'task-c1-idiom', strand: 'task', cefr: 'C1', level: 9, theme: 'salud',
   title: 'Cuenta un mal día sin una sola palabra neutra',
   canDo: 'tell a story entirely in idiom, the way a native would',

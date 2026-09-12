@@ -217,6 +217,7 @@ window.COURSE = [
       { lesson: 'gr-posesivos-distribucion-a1' },
       { practice: true },
       { lesson: 'gr-demostrativos-distribucion-a1' },
+      { lesson: 'nt-familia-a1' },
       { lesson: 'gn-describir-persona-a1' },
       { lesson: 'gn-describir-objeto-a1' },
       { lesson: 'task-describir' },
