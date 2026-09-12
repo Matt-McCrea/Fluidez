@@ -470,30 +470,46 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 }
 .linkish:hover { color:var(--accent); }
 
-/* ---- Inicio: other ways in ---------------------------------------------- */
+/* ---- Inicio: other ways in -----------------------------------------------
+   These were flat list rows separated by hairlines — they read as a table of
+   contents rather than as three things you can tap. Each is now its own
+   surface, at the same weight as the games tile below, with the duration
+   carried as a chip because "how long have I got?" is the actual question
+   being answered here. */
 .alt-section { margin-bottom:26px; }
-.alt-section h3 { margin:0 0 10px; }
-.alt-list { display:flex; flex-direction:column; gap:2px; }
+.alt-section h3 { margin:0 0 12px; }
+.alt-list { display:flex; flex-direction:column; gap:10px; }
 .alt-row {
-  display:flex; align-items:center; gap:14px; width:100%; text-align:left; cursor:pointer;
-  border:none; border-bottom:1px solid var(--border); background:transparent; color:var(--text);
-  padding:13px 4px;
-}
-.alt-row:last-child { border-bottom:none; }
-.alt-row:hover { background:var(--panel-2); }
-.alt-text { flex:1; line-height:1.35; }
-.alt-mins { color:var(--muted); font-size:.84rem; white-space:nowrap; }
-
-/* ---- Inicio: errors + games --------------------------------------------- */
-.home-extras { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; }
-.home-extra {
-  display:flex; align-items:center; gap:13px; text-align:left; cursor:pointer;
+  display:flex; align-items:center; gap:15px; width:100%; text-align:left; cursor:pointer;
   border:1px solid var(--border); background:var(--panel); color:var(--text);
-  border-radius:12px; padding:15px 17px;
+  border-radius:12px; padding:17px 20px; box-shadow:var(--shadow);
 }
-.home-extra:hover { border-color:var(--accent); }
-.home-extra .he-ico { font-size:1.4rem; line-height:1; flex:none; }
-.home-extra .he-text { line-height:1.35; }
+.alt-row:hover { border-color:var(--accent); transform:translateY(-1px); }
+.alt-ico { font-size:1.5rem; line-height:1; flex:none; width:1.5em; text-align:center; }
+.alt-text { flex:1; display:flex; flex-direction:column; gap:3px; line-height:1.35; }
+.alt-name { font-size:1.06rem; font-weight:700; }
+.alt-blurb { color:var(--muted); font-size:.9rem; }
+.alt-mins {
+  flex:none; font-size:.85rem; font-weight:650; color:var(--accent);
+  background:var(--panel-2); border:1px solid var(--border);
+  padding:6px 13px; border-radius:999px; white-space:nowrap;
+}
+
+/* ---- Inicio: errors + games ---------------------------------------------
+   Same object as .alt-row above — same padding, icon size and title weight —
+   so the lower half of Inicio reads as one list of places to go rather than
+   two competing treatments. Only the left rule differs, to say what kind of
+   thing each one is. */
+.home-extras { display:flex; flex-direction:column; gap:10px; }
+.home-extra {
+  display:flex; align-items:center; gap:15px; width:100%; text-align:left; cursor:pointer;
+  border:1px solid var(--border); background:var(--panel); color:var(--text);
+  border-radius:12px; padding:17px 20px; box-shadow:var(--shadow);
+}
+.home-extra:hover { border-color:var(--accent); transform:translateY(-1px); }
+.home-extra .he-ico { font-size:1.5rem; line-height:1; flex:none; width:1.5em; text-align:center; }
+.home-extra .he-text { flex:1; line-height:1.35; }
+.home-extra .he-text b { font-size:1.06rem; font-weight:700; }
 .home-extra.errors { border-left:3px solid var(--warn); }
 .home-extra.games { border-left:3px solid var(--accent-2); }
 
@@ -718,4 +734,11 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
   .stage-strip { gap:4px 2px; }
   .ss-step { padding:4px 8px 4px 6px; font-size:.74rem; }
   .home-extras { grid-template-columns:1fr; }
+  .alt-row { padding:15px 16px; gap:12px; }
+  .alt-ico { font-size:1.3rem; }
+  .alt-name { font-size:1rem; }
+  .alt-mins { padding:5px 10px; font-size:.8rem; }
+  .home-extra { padding:15px 16px; gap:12px; }
+  .home-extra .he-ico { font-size:1.3rem; }
+  .home-extra .he-text b { font-size:1rem; }
 }

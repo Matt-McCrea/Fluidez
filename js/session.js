@@ -18,16 +18,16 @@ window.Session = (function () {
    * (see buildContext), rather than bolting on a sixth stage that would have
    * to invent content of its own. */
   var MODES = {
-    rapido: { key: 'rapido', label: 'Repaso rápido', labelEn: 'Quick review',       mins: 'unos 4 min', minsEn: 'about 4 min',
+    rapido: { key: 'rapido', icon: '⚡', label: 'Repaso rápido', labelEn: 'Quick review',       mins: 'unos 4 min', minsEn: 'about 4 min',
               blurb: 'Only what is due today',
               keys: ['review'] },
-    corto:  { key: 'corto',  label: 'Repaso y práctica', labelEn: 'Review and practice', mins: 'unos 10 min', minsEn: 'about 10 min',
+    corto:  { key: 'corto', icon: '🎯',  label: 'Repaso y práctica', labelEn: 'Review and practice', mins: 'unos 10 min', minsEn: 'about 10 min',
               blurb: 'Review, then grammar in context',
               keys: ['review', 'apply'] },
-    diaria: { key: 'diaria', label: 'Sesión diaria', labelEn: 'Daily session',       mins: 'unos 15 min', minsEn: 'about 15 min',
+    diaria: { key: 'diaria', icon: '▶', label: 'Sesión diaria', labelEn: 'Daily session',       mins: 'unos 15 min', minsEn: 'about 15 min',
               blurb: 'The five stages, start to finish',
               keys: ['review', 'learn', 'comprehend', 'apply', 'produce'] },
-    larga:  { key: 'larga',  label: 'Sesión larga', labelEn: 'Long session',         mins: 'unos 40 min', minsEn: 'about 40 min',
+    larga:  { key: 'larga', icon: '📚',  label: 'Sesión larga', labelEn: 'Long session',         mins: 'unos 40 min', minsEn: 'about 40 min',
               blurb: 'The same session, with more to read and write',
               keys: ['review', 'learn', 'comprehend', 'apply', 'produce'] }
   };

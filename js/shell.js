@@ -133,8 +133,9 @@ window.Shell = (function () {
       var list = UI.el('div', 'alt-list');
       alt.forEach(function (m) {
         var b = UI.el('button', 'alt-row'); b.type = 'button';
-        b.innerHTML = '<span class="alt-text"><b>' + T(m.label, m.labelEn) + '</b><br>' +
-          '<span class="muted small">' + m.blurb + '</span></span>' +
+        b.innerHTML = '<span class="alt-ico">' + (m.icon || '•') + '</span>' +
+          '<span class="alt-text"><b class="alt-name">' + T(m.label, m.labelEn) + '</b>' +
+          '<span class="alt-blurb">' + m.blurb + '</span></span>' +
           '<span class="alt-mins">' + T(m.mins, m.minsEn) + '</span>';
         b.addEventListener('click', function () { window.App.go('session', m.key); });
         list.appendChild(b);
