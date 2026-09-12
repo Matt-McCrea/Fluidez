@@ -254,106 +254,216 @@ window.COURSE = [
     ] },
 
   /* ---- A2 · 104 days · starts at index 94 ------------------------------- */
-  { band: 'A2' },
-  { verbs: ['mejorar', 'empeorar', 'aumentar', 'evitar', 'crear'] },
-  { lesson: 'preterito' },                              // gram  Pretérito (Preterite)
-  { lesson: 'imperfecto' },                             // gram  Imperfecto (Imperfect)
-  { verbs: ['formar', 'tratar', 'resultar', 'señalar', 'indicar'] },
-  { lesson: 'preterite-imperfect' },                    // gram  Preterite vs. Imperfect
-  { practice: true },
-  { lesson: 'por-para' },                               // gram  Por vs. Para
-  { verbs: ['ocupar', 'asegurar', 'expresar', 'comentar', 'opinar'] },
-  { lesson: 'gr-adverbios-circunstanciales-a2' },       // gram  Adverbios circunstanciales: lugar, tiempo y cantidad
-  { lesson: 'gr-causales-a2' },                         // gram  Causales: porque, como, por
-  { verbs: ['imaginar', 'dudar', 'notar', 'observar', 'comparar'] },
-  { practice: true },
-  { lesson: 'gr-comparativos-a2' },                     // gram  Comparativos: los tres marcos y los irregulares
-  { lesson: 'gr-condicionales-a2' },                    // gram  Condicionales: si + presente
-  { verbs: ['resumir', 'anunciar', 'publicar', 'celebrar', 'organizar'] },
-  { lesson: 'gr-imperativo-forma-a2' },                 // gram  El imperativo afirmativo: forma y uso
-  { lesson: 'gr-cuantificadores-a2' },                  // gram  Cuantificadores: todo, otro, demasiado, nada
-  { practice: true },
-  { verbs: ['participar', 'colaborar', 'reciclar', 'contaminar', 'reparar'] },
-  { lesson: 'fn-aconsejar-a2' },                        // func  Aconsejar y ofrecerse
-  { lesson: 'nt-frecuencia-a2' },                       // noti  Cuántas veces y cuánta cantidad
-  { verbs: ['solicitar', 'entregar', 'cobrar', 'reclamar', 'vender'] },
-  { lesson: 'gn-narrar-anecdota-a2' },                  // genr  Contar una anécdota
-  { practice: true },
-  { lesson: 'gr-articulo-definido-distribucion-a2' },   // gram  El artículo definido: el agua, jugar al tenis, todos los l
-  { verbs: ['funcionar', 'durar', 'faltar', 'suceder', 'practicar'] },
-  { lesson: 'dc-atenuacion-1apersona-a2' },             // disc  Atenuar: se impersonal e indirectas
-  { lesson: 'fn-acuerdo-a2' },                          // func  Acuerdo y valoración
-  { verbs: ['entrenar', 'montar', 'aparcar', 'arrancar', 'frenar'] },
-  { practice: true },
-  { lesson: 'gr-articulo-definido-valores-a2' },        // gram  El artículo definido: usos más allá de "the"
-  { lesson: 'fn-responder-telefono-a2' },               // func  Al teléfono y escuchando un relato
-  { verbs: ['cruzar', 'doblar', 'girar', 'parar', 'avisar'] },
-  { lesson: 'gr-articulo-indefinido-valores-a2' },      // gram  El artículo indefinido: valor aproximativo
-  { lesson: 'nt-cualidad-material-a2' },                // noti  De qué es y cambiarlo por otro
-  { practice: true },
-  { verbs: ['informar', 'consultar', 'confirmar', 'cancelar', 'retrasar'] },
-  { lesson: 'gn-instrucciones-a2' },                    // genr  Dar instrucciones breves
-  { lesson: 'gr-gerundio-a2' },                         // gram  El gerundio: -ando, -iendo
-  { verbs: ['adelantar', 'pesar', 'calcular', 'sumar', 'restar'] },
-  { lesson: 'fn-preguntar-estado-animo-a2' },           // func  Cómo estás: ánimo y sensaciones
-  { practice: true },
-  { lesson: 'dc-deixis-personal-a2' },                  // disc  Deixis personal y espacial
-  { verbs: ['conectar', 'navegar', 'actualizar', 'instalar', 'suspender'] },
-  { lesson: 'gr-objeto-indirecto-a2' },                 // gram  El objeto indirecto
-  { lesson: 'fn-acceder-peticion-a2' },                 // func  Decir que sí y decir que no
-  { verbs: ['aprobar', 'quejarse', 'enfadarse', 'alegrarse', 'preocuparse'] },
-  { practice: true },
-  { lesson: 'nt-posicion-relativa-distancia-a2' },      // noti  Dentro, fuera y a la vista
-  { lesson: 'gr-presente-irregular-a2' },               // gram  El presente irregular: la bota y el yo raro
-  { verbs: ['cansarse', 'aburrirse', 'casarse', 'mudarse', 'jubilarse'] },
-  { lesson: 'gn-describir-persona-a2' },                // genr  Describir a una persona: comparar y narrar un momento
-  { lesson: 'fn-preguntar-deseos-a2' },                 // func  Deseos: los tuyos y los que se ofrecen
-  { practice: true },
-  { verbs: ['apuntarse', 'quedarse', 'matricularse', 'relajarse', 'enterarse'] },
-  { lesson: 'fn-dirigirse-a2' },                        // func  Dirigirse a alguien y presentarlo
-  { verbs: ['fijarse'] },
-  { practice: true },
-  { lesson: 'nt-expresion-verbal-a2' },                 // noti  Expresión verbal: preguntar, contestar, decir
-  { lesson: 'dc-deixis-temporal-a2' },                  // disc  Deixis temporal y el hilo del relato
-  { lesson: 'gr-preterito-perfecto-a2' },               // gram  El pretérito perfecto: haber + participio
-  { lesson: 'gn-describir-lugar-a2' },                  // genr  Describir un lugar: recorrido, anécdota y comparación
-  { practice: true },
-  { lesson: 'gr-interrogativos-exclamativos-a2' },      // gram  Interrogativos y exclamativos: qué, cuál, cómo
-  { lesson: 'fn-felicitar-a2' },                        // func  Felicitar y alegrarse
-  { lesson: 'nt-movimiento-estabilidad-a2' },           // noti  Moverse y dar direcciones (A2)
-  { lesson: 'gr-restrictivos-nominales-a2' },           // gram  La casa mía, una película apasionante, calle Alcalá
-  { lesson: 'fn-atenuar-orden-a2' },                    // func  Pedir algo con cortesía
-  { practice: true },
-  { lesson: 'gn-describir-objeto-a2' },                 // genr  Describir un objeto: partes, una anécdota y una comparació
-  { lesson: 'gr-demostrativos-valores-a2' },            // gram  Los demostrativos: uso anafórico y temporal
-  { lesson: 'dc-estructuradores-a2' },                  // disc  Estructuradores y negación reforzada
-  { lesson: 'nt-existencia-inexistencia-a2' },          // noti  Nacer, morir y las edades
-  { lesson: 'gr-posesivos-tonicos-a2' },                // gram  Los posesivos tónicos: mío, tuyo, suyo
-  { practice: true },
-  { lesson: 'fn-pedir-informacion-a2' },                // func  Pedir y dar información (A2)
-  { lesson: 'gr-masculino-a2' },                        // gram  Más sustantivos masculinos: colores y casos aislados
-  { lesson: 'fn-preguntar-preferencias-a2' },           // func  Preferencias: qué te gusta más
-  { lesson: 'gn-conversacion-transaccional-a2' },       // genr  La conversación transaccional en la tienda de ropa
-  { lesson: 'gr-nombres-escuetos-a2' },                 // gram  Nombres escuetos: sin artículo ni cuantificador
-  { practice: true },
-  { lesson: 'nt-necesidad-obligacion-a2' },             // noti  Necesidad y conformidad: hace falta, vale
-  { lesson: 'dc-interrogativos-neutros-a2' },           // disc  Preguntas neutras y orientadas
-  { lesson: 'gr-sustantivos-especiales-a2' },           // gram  Nombres propios con artículo fijo y nombres eventivos
-  { lesson: 'fn-proponer-sugerir-a2' },                 // func  Proponer, sugerir y aceptar
-  { practice: true },
-  { lesson: 'gr-pronombres-atonos-a2' },                // gram  Pronombres átonos: OD y OI
-  { lesson: 'gn-generos-escritos-a2' },                 // genr  Textos breves de cada día (A2)
-  { lesson: 'nt-localizacion-tiempo-a2' },              // noti  Situar en el tiempo: desde, hasta, durante
-  { lesson: 'gr-pronombres-tonicos-a2' },               // gram  Pronombres tónicos: mí, ti, conmigo
-  { lesson: 'fn-identificar-a2' },                      // func  Qué es y qué puede ser
-  { practice: true },
-  { lesson: 'gr-oraciones-simples-a2' },                // gram  Tipos de oraciones simples: disyuntivas, exclamativas, ref
-  { lesson: 'fn-preguntar-conocimiento-a2' },           // func  Saber y no saber
-  { lesson: 'dc-tematizacion-a2' },                     // disc  Tematización y rematización
-  { lesson: 'gr-nucleo-verbal-tipos-a2' },              // gram  Tipos de verbo: predicativo, auxiliar, copulativo
-  { lesson: 'gn-presentacion-publica-a2' },             // genr  Una presentación pública breve
-  { practice: true },
-  { lesson: 'nt-anterioridad-a2' },                     // noti  Ya, todavía no, y el principio y el fin
+
+  { unit: 'a2-u14', band: 'A2', title: 'Tell me what happened',
+    goal: 'I can say what happened, in order, in the past.',
+    canDo: ['use the preterite for completed events',
+            'chain events with primero, luego, después',
+            'handle fui, hice, tuve, estuve',
+            'vary the verb beyond decir'],
+    days: [
+      { lesson: 'preterito' },
+      { verbs: ['mejorar', 'empeorar', 'aumentar', 'evitar', 'crear'] },
+      { lesson: 'dc-deixis-temporal-a2' },
+      { lesson: 'nt-expresion-verbal-a2' },
+      { practice: true },
+      { lesson: 'task-a2-ayer' },
+    ] },
+
+  { unit: 'a2-u15', band: 'A2', title: 'How things used to be',
+    goal: 'I can describe how things were and what I used to do.',
+    canDo: ['use the imperfect for habits and descriptions',
+            'know the only three irregulars',
+            'say when something lasted',
+            'say how often it happened'],
+    days: [
+      { lesson: 'imperfecto' },
+      { verbs: ['formar', 'tratar', 'resultar', 'señalar', 'indicar'] },
+      { lesson: 'nt-localizacion-tiempo-a2' },
+      { lesson: 'nt-frecuencia-a2' },
+      { practice: true },
+      { lesson: 'task-a2-antes' },
+    ] },
+
+  { unit: 'a2-u16', band: 'A2', title: 'Telling a story',
+    goal: 'I can tell an anecdote with both a background and a sequence of events.',
+    canDo: ['choose preterite or imperfect by what I mean',
+            'set a scene before anything happens',
+            'interrupt an ongoing action with cuando',
+            'structure a story from opening to close'],
+    days: [
+      { lesson: 'preterite-imperfect' },
+      { verbs: ['ocupar', 'asegurar', 'expresar', 'comentar', 'opinar'] },
+      { lesson: 'gn-narrar-anecdota-a2' },
+      { lesson: 'dc-estructuradores-a2' },
+      { practice: true },
+      { lesson: 'task-a2-anecdota' },
+    ] },
+
+  { unit: 'a2-u17', band: 'A2', title: 'Have you ever…?',
+    goal: 'I can talk about experience — what I have and have not done.',
+    canDo: ['use the present perfect for experience',
+            'use ya and todavía no',
+            'form the irregular participles',
+            'switch to the preterite when asked when'],
+    days: [
+      { lesson: 'gr-preterito-perfecto-a2' },
+      { verbs: ['imaginar', 'dudar', 'notar', 'observar', 'comparar'] },
+      { lesson: 'nt-anterioridad-a2' },
+      { lesson: 'nt-existencia-inexistencia-a2' },
+      { practice: true },
+      { lesson: 'task-a2-experiencia' },
+    ] },
+
+  { unit: 'a2-u18', band: 'A2', title: 'It, him, her, them',
+    goal: 'I can stop repeating the noun.',
+    canDo: ['replace a direct object with lo, la, los, las',
+            'replace an indirect object with le, les',
+            'combine them as se lo',
+            'put a pronoun in the right place'],
+    days: [
+      { lesson: 'gr-objeto-indirecto-a2' },
+      { verbs: ['resumir', 'anunciar', 'publicar', 'celebrar', 'organizar'] },
+      { lesson: 'gr-pronombres-atonos-a2' },
+      { lesson: 'gr-pronombres-tonicos-a2' },
+      { practice: true },
+      { lesson: 'gr-posesivos-tonicos-a2' },
+      { lesson: 'task-a2-pronombres' },
+    ] },
+
+  { unit: 'a2-u19', band: 'A2', title: 'Asking nicely',
+    goal: 'I can make the same request from blunt to very polite, and refuse without offence.',
+    canDo: ['form the affirmative imperative',
+            'climb the politeness scale with poder and the conditional',
+            'say no with es que',
+            'give clear instructions'],
+    days: [
+      { lesson: 'gr-imperativo-forma-a2' },
+      { verbs: ['participar', 'colaborar', 'reciclar', 'contaminar', 'reparar'] },
+      { lesson: 'fn-atenuar-orden-a2' },
+      { lesson: 'fn-acceder-peticion-a2' },
+      { practice: true },
+      { lesson: 'dc-atenuacion-1apersona-a2' },
+      { lesson: 'gn-instrucciones-a2' },
+      { lesson: 'task-a2-pedir' },
+    ] },
+
+  { unit: 'a2-u20', band: 'A2', title: 'How are you feeling?',
+    goal: 'I can react to good and bad news the way a person actually does.',
+    canDo: ['ask how somebody is and mean it',
+            'react at the right size',
+            'congratulate and sympathise',
+            'agree and value what someone says'],
+    days: [
+      { lesson: 'fn-preguntar-estado-animo-a2' },
+      { verbs: ['solicitar', 'entregar', 'cobrar', 'reclamar', 'vender'] },
+      { lesson: 'fn-felicitar-a2' },
+      { lesson: 'fn-preguntar-deseos-a2' },
+      { practice: true },
+      { lesson: 'fn-acuerdo-a2' },
+      { lesson: 'task-a2-animo' },
+    ] },
+
+  { unit: 'a2-u21', band: 'A2', title: 'Comparing',
+    goal: 'I can compare two things and justify which I would pick.',
+    canDo: ['use más que, menos que, tan como',
+            'use mejor, peor, mayor, menor',
+            'say what something is made of',
+            'describe two things against each other'],
+    days: [
+      { lesson: 'gr-comparativos-a2' },
+      { verbs: ['funcionar', 'durar', 'faltar', 'suceder', 'practicar'] },
+      { lesson: 'nt-cualidad-material-a2' },
+      { lesson: 'gn-describir-persona-a2' },
+      { practice: true },
+      { lesson: 'gn-describir-objeto-a2' },
+      { lesson: 'task-a2-comparar' },
+    ] },
+
+  { unit: 'a2-u22', band: 'A2', title: 'Getting things done',
+    goal: 'I can handle a phone call, a shop and a desk — including when something is wrong.',
+    canDo: ['open and close a phone call',
+            'say what is wrong with something I bought',
+            'ask for information I need',
+            'say what I know and do not know'],
+    days: [
+      { lesson: 'gn-conversacion-transaccional-a2' },
+      { verbs: ['entrenar', 'montar', 'aparcar', 'arrancar', 'frenar'] },
+      { lesson: 'fn-responder-telefono-a2' },
+      { lesson: 'fn-pedir-informacion-a2' },
+      { practice: true },
+      { lesson: 'fn-preguntar-preferencias-a2' },
+      { lesson: 'nt-necesidad-obligacion-a2' },
+      { lesson: 'fn-preguntar-conocimiento-a2' },
+      { lesson: 'task-a2-gestion' },
+    ] },
+
+  { unit: 'a2-u23', band: 'A2', title: 'Reasons and conditions',
+    goal: 'I can explain why I did something and what would have changed it.',
+    canDo: ['give a cause with porque and como',
+            'give a purpose with para',
+            'say what happens if',
+            'advise somebody else'],
+    days: [
+      { lesson: 'gr-causales-a2' },
+      { verbs: ['cruzar', 'doblar', 'girar', 'parar', 'avisar'] },
+      { lesson: 'por-para' },
+      { lesson: 'gr-condicionales-a2' },
+      { practice: true },
+      { lesson: 'fn-aconsejar-a2' },
+      { lesson: 'fn-proponer-sugerir-a2' },
+      { lesson: 'task-a2-razones' },
+    ] },
+
+  { unit: 'a2-u24', band: 'A2', title: 'Getting around',
+    goal: 'I can guide someone through a place and describe what is there.',
+    canDo: ['use dentro, fuera, alrededor, al fondo',
+            'measure a short distance in minutes',
+            'describe a route somebody could follow',
+            'introduce someone along the way'],
+    days: [
+      { lesson: 'nt-posicion-relativa-distancia-a2' },
+      { verbs: ['informar', 'consultar', 'confirmar', 'cancelar', 'retrasar'] },
+      { lesson: 'nt-movimiento-estabilidad-a2' },
+      { lesson: 'gn-describir-lugar-a2' },
+      { practice: true },
+      { lesson: 'fn-dirigirse-a2' },
+      { lesson: 'task-a2-sitio' },
+    ] },
+
+  { unit: 'a2-u25', band: 'A2', title: 'Writing it down',
+    goal: 'I can write at paragraph length — a review and a semi-formal email.',
+    canDo: ['use the gerund for two things at once',
+            'hold a text together for three paragraphs',
+            'open and close a semi-formal email',
+            'keep usted consistent'],
+    days: [
+      { lesson: 'gr-gerundio-a2' },
+      { verbs: ['adelantar', 'pesar', 'calcular', 'sumar', 'restar'] },
+      { lesson: 'gr-adverbios-circunstanciales-a2' },
+      { lesson: 'gn-generos-escritos-a2' },
+      { practice: true },
+      { lesson: 'gn-presentacion-publica-a2' },
+      { lesson: 'task-a2-escribir' },
+    ] },
+
+  { unit: 'a2-u26', band: 'A2', title: 'The grammar under it',
+    goal: 'I understand the machinery behind what I have been writing, and can correct my own work.',
+    canDo: ['explain the irregular present patterns',
+            'use the definite article where English drops it',
+            'handle todo, otro, demasiado, nada',
+            'find my own tense and pronoun errors'],
+    days: [
+      { lesson: 'gr-presente-irregular-a2' },
+      { verbs: ['conectar', 'navegar', 'actualizar', 'instalar', 'suspender'] },
+      { lesson: 'gr-articulo-definido-distribucion-a2' },
+      { lesson: 'gr-cuantificadores-a2' },
+      { practice: true },
+      { lesson: 'gr-interrogativos-exclamativos-a2' },
+      { lesson: 'gr-demostrativos-valores-a2' },
+      { verbs: ['aprobar', 'quejarse', 'enfadarse', 'alegrarse', 'preocuparse'] },
+      { lesson: 'task-a2-repaso' },
+    ] },
 
   /* ---- B1 · 189 days · starts at index 198 ------------------------------- */
   { band: 'B1' },

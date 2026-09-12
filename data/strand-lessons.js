@@ -23,6 +23,488 @@
 window.STRAND_LESSONS = [
 
 {
+  id: 'task-a2-ayer', strand: 'task', cefr: 'A2', level: 2, theme: 'ocio',
+  title: 'Cuenta qué hiciste el fin de semana',
+  canDo: 'tell someone what you did, in order, in the past',
+  summary: 'The preterite is the tense of "and then". Its whole job is to move a story forward one completed event at a time, which is why a first attempt at it should be a sequence and nothing else.',
+  sections: [
+    { h: 'What to do', html: 'Write eight to twelve sentences about a real weekend or day off, in the order things happened. Every verb in the preterite. No descriptions yet — just what happened.' },
+    { h: 'Use the joins', html: '<i>Primero, luego, después, más tarde, al final</i>. Without them a sequence reads as a list; with them it reads as a story. At least four of your sentences should start with one.' },
+    { h: 'The three that break', html: '<i>Ser</i> and <i>ir</i> share the same preterite (<i>fui</i>), and context alone tells them apart. <i>Hacer</i> gives <i>hice/hizo</i> — note the c→z. Expect to get these wrong twice before they stick.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>El sábado me levanté tarde. Primero desayuné en casa y luego salí a correr una hora. Después fui al mercado y compré fruta y pescado. Por la tarde quedé con Lucía y tomamos un café en la plaza. Más tarde fuimos al cine. La película no me gustó nada, pero a ella sí. Al final cenamos en un sitio pequeño cerca de mi casa. Volví a casa sobre la una y me acosté enseguida.</p>' },
+  checklist: [
+    'Eight sentences or more, in time order.',
+    'Every main verb is in the preterite.',
+    'At least four sequence words (<i>primero, luego, después, al final</i>).',
+    'At least one irregular: <i>fui</i>, <i>hice</i>, <i>tuve</i> or <i>estuve</i>.',
+    'No imperfect yet — that is the next unit.'
+  ],
+  examples: [
+    { es: 'Primero desayuné y luego salí a correr.', en: 'First I had breakfast and then I went out for a run.' },
+    { es: 'Fui al mercado y compré fruta.', en: 'I went to the market and bought fruit.' },
+    { es: 'Al final cenamos cerca de casa.', en: 'In the end we had dinner near home.' }
+  ],
+  probes: [
+    { id: 'p:task-a2-ayer-1', kind: 'mcq',
+      q: 'Which sentence moves the story to the NEXT thing that happened?',
+      options: ['Luego fuimos al cine.', 'Hacía mucho calor.', 'Era muy simpática.'], answer: 0 },
+    { id: 'p:task-a2-ayer-2', kind: 'mcq',
+      q: '"Fui" can mean two things. Which pair?',
+      options: ['I went / I was', 'I did / I had', 'I came / I gave'], answer: 0 },
+    { id: 'p:task-a2-ayer-3', kind: 'cloze',
+      text: 'El sábado me ___ tarde. (levantarse, pretérito)', accept: ['levanté'] },
+    { id: 'p:task-a2-ayer-4', kind: 'recall',
+      front: 'Preterite of hacer, yo', back: 'hice' }
+  ]
+},
+
+{
+  id: 'task-a2-antes', strand: 'task', cefr: 'A2', level: 2, theme: 'identidad',
+  title: 'Cómo era tu vida hace diez años',
+  canDo: 'describe how things used to be, with no interest in when they stopped',
+  summary: 'The imperfect is not "the other past tense" — it is a different question. The preterite answers what happened; the imperfect answers what things were like. Writing a whole text in it is the fastest way to feel the difference.',
+  sections: [
+    { h: 'What to do', html: 'Describe your life ten years ago, or your childhood, in eight to twelve sentences. Every verb in the imperfect. Deliberately nothing completed — no single events at all.' },
+    { h: 'What the imperfect is for', html: 'Habits (<i>iba todos los días</i>), descriptions (<i>la casa era pequeña</i>), age (<i>tenía diez años</i>), ongoing states (<i>no me gustaba</i>). None of these has a start or an end in view.' },
+    { h: 'Only three are irregular', html: '<i>Ser</i> (era), <i>ir</i> (iba), <i>ver</i> (veía). Everything else takes -aba or -ía with no exceptions at all — the easiest tense in Spanish to form.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>Hace diez años vivía en un pueblo pequeño con mis padres. La casa era vieja y siempre hacía frío en invierno. Iba al colegio andando porque estaba muy cerca. Tenía un perro que se llamaba Toco y lo llevaba conmigo a todas partes. Los domingos comíamos en casa de mi abuela. No me gustaba el pescado, pero ella lo cocinaba todos los domingos igual. Veía mucho la televisión y leía poco. Quería ser piloto.</p>' },
+  checklist: [
+    'Eight sentences or more.',
+    'Every main verb is in the imperfect.',
+    'At least two habits (<i>siempre</i>, <i>todos los días</i>, <i>los domingos</i>).',
+    'At least one description of a place or a person.',
+    'No preterite anywhere — nothing completed.'
+  ],
+  examples: [
+    { es: 'Vivía en un pueblo pequeño.', en: 'I used to live in a small town.' },
+    { es: 'Los domingos comíamos en casa de mi abuela.', en: 'On Sundays we used to eat at my grandmother\'s.' },
+    { es: 'Tenía un perro que se llamaba Toco.', en: 'I had a dog called Toco.' }
+  ],
+  probes: [
+    { id: 'p:task-a2-antes-1', kind: 'mcq',
+      q: 'Which one describes a HABIT rather than a single event?',
+      options: ['Iba al colegio andando.', 'Fui al colegio andando.', 'He ido al colegio andando.'], answer: 0 },
+    { id: 'p:task-a2-antes-2', kind: 'mcq',
+      q: 'Which verb is irregular in the imperfect?',
+      options: ['ser', 'comer', 'vivir'], answer: 0 },
+    { id: 'p:task-a2-antes-3', kind: 'cloze',
+      text: 'La casa ___ vieja. (ser, imperfecto)', accept: ['era'] },
+    { id: 'p:task-a2-antes-4', kind: 'recall',
+      front: 'Imperfect of ir, yo', back: 'iba' }
+  ]
+},
+
+{
+  id: 'task-a2-anecdota', strand: 'task', cefr: 'A2', level: 2, theme: 'ocio',
+  title: 'Cuenta una anécdota',
+  canDo: 'tell a story that has both a background and a sequence of events',
+  summary: 'This is the unit the last two were building towards. A real anecdote needs both tenses at once: the imperfect paints the situation, the preterite drops the events into it. Using only one of them is what makes a learner story sound flat.',
+  sections: [
+    { h: 'What to do', html: 'Tell something that actually happened to you, in twelve to sixteen sentences. It must open with a situation in the imperfect before anything happens.' },
+    { h: 'The shape', html: 'Set the scene (imperfect: where, when, weather, who, how you felt). Then the events (preterite). Then a closing reaction. Most learner anecdotes skip straight to the events, which is why they read like a list.' },
+    { h: 'Interrupting', html: '<i>Estaba en la cocina cuando sonó el teléfono.</i> The imperfect is what was going on; the preterite cuts across it. This sentence pattern is worth learning as a shape.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>Era sábado por la mañana y llovía muchísimo. Yo estaba solo en casa y no tenía ningún plan. Estaba haciendo café cuando sonó el timbre. Abrí la puerta y era mi vecina, que estaba empapada y muy nerviosa. Me dijo que se había dejado las llaves dentro. Le ofrecí un café y llamamos a un cerrajero. Mientras esperábamos, hablamos casi dos horas. Nunca habíamos hablado antes, aunque vivíamos en el mismo edificio desde hacía tres años. Al final el cerrajero llegó, abrió la puerta en un minuto y le cobró ochenta euros. Ahora tomamos café juntos casi todos los sábados.</p>' },
+  checklist: [
+    'Twelve sentences or more.',
+    'It opens with the scene in the imperfect, before any event.',
+    'Both tenses appear and do different jobs.',
+    'At least one <i>cuando</i> sentence where the preterite interrupts the imperfect.',
+    'It ends with a reaction or a consequence, not just the last event.'
+  ],
+  examples: [
+    { es: 'Era sábado y llovía muchísimo.', en: 'It was Saturday and it was pouring.' },
+    { es: 'Estaba haciendo café cuando sonó el timbre.', en: 'I was making coffee when the doorbell rang.' },
+    { es: 'Mientras esperábamos, hablamos dos horas.', en: 'While we waited, we talked for two hours.' }
+  ],
+  probes: [
+    { id: 'p:task-a2-anecdota-1', kind: 'mcq',
+      q: '"Estaba en la cocina cuando ___ el teléfono."',
+      options: ['sonó', 'sonaba', 'suena'], answer: 0 },
+    { id: 'p:task-a2-anecdota-2', kind: 'mcq',
+      q: 'Which tense sets the scene at the start of a story?',
+      options: ['the imperfect', 'the preterite', 'the present perfect'], answer: 0 },
+    { id: 'p:task-a2-anecdota-3', kind: 'cloze',
+      text: '___ sábado y llovía muchísimo. (ser, imperfecto)', accept: ['Era', 'era'] },
+    { id: 'p:task-a2-anecdota-4', kind: 'recall',
+      front: 'The tense that CUTS ACROSS an ongoing situation', back: 'the preterite' }
+  ]
+},
+
+{
+  id: 'task-a2-experiencia', strand: 'task', cefr: 'A2', level: 2, theme: 'viajes',
+  title: '¿Alguna vez has…?',
+  canDo: 'ask and answer about experience — what you have and have not done',
+  summary: 'The present perfect is not a third past tense to choose between. It answers a different question: not when, but whether it has happened at all, at any point up to now.',
+  sections: [
+    { h: 'What to do', html: 'Write an interview of eight exchanges about experience. Every question uses <i>¿Has…?</i> or <i>¿Alguna vez has…?</i>; every answer uses <i>he</i>, <i>nunca he</i>, <i>ya</i> or <i>todavía no</i>.' },
+    { h: 'Then break out of it', html: 'Once an answer is yes, the follow-up question almost always switches to the preterite, because now you are asking WHEN and WHERE. <i>—¿Has estado en México? —Sí. —¿Cuándo fuiste?</i> That switch is the point of the unit.' },
+    { h: 'The participles that break', html: '<i>Hacer→hecho, ver→visto, escribir→escrito, volver→vuelto, decir→dicho, poner→puesto</i>. There are about a dozen and they are all common.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>—¿Has estado alguna vez en Latinoamérica?<br>—Sí, he estado en México dos veces.<br>—¿Cuándo fuiste la última vez?<br>—Fui en 2019, justo antes de la pandemia.<br>—¿Y has probado los chapulines?<br>—No, eso no lo he probado nunca. ¿Tú sí?<br>—Yo tampoco. ¿Has visto la película que ganó el premio?<br>—Todavía no la he visto, pero quiero.<br>—Yo ya la he visto dos veces.</p>' },
+  checklist: [
+    'Eight exchanges or more.',
+    'Every question uses the present perfect.',
+    'At least one <i>nunca he</i> and one <i>todavía no</i>.',
+    'At least one follow-up switches to the preterite to ask WHEN.',
+    'At least two irregular participles.'
+  ],
+  examples: [
+    { es: '¿Has estado alguna vez en México?', en: 'Have you ever been to Mexico?' },
+    { es: 'Todavía no la he visto.', en: 'I haven\'t seen it yet.' },
+    { es: '—Sí, he estado dos veces. —¿Cuándo fuiste?', en: '—Yes, twice. —When did you go?' }
+  ],
+  probes: [
+    { id: 'p:task-a2-experiencia-1', kind: 'mcq',
+      q: 'Which asks about experience, with no interest in when?',
+      options: ['¿Has estado en México?', '¿Estuviste en México?', '¿Estabas en México?'], answer: 0 },
+    { id: 'p:task-a2-experiencia-2', kind: 'mcq',
+      q: 'Participle of "ver"',
+      options: ['visto', 'veído', 'vido'], answer: 0 },
+    { id: 'p:task-a2-experiencia-3', kind: 'cloze',
+      text: 'Todavía no ___ visto la película. (haber, yo)', accept: ['he'] },
+    { id: 'p:task-a2-experiencia-4', kind: 'recall',
+      front: '"I have never done that" — the two words before the participle', back: 'nunca he' }
+  ]
+},
+
+{
+  id: 'task-a2-pronombres', strand: 'task', cefr: 'A2', level: 2, theme: 'relaciones',
+  title: 'Reescríbelo sin repetir el nombre',
+  canDo: 'replace nouns with pronouns so you stop repeating yourself',
+  summary: 'Every learner writes "Compré el libro y leí el libro y le di el libro a mi hermana." Spanish speakers say it once. This unit is the difference.',
+  sections: [
+    { h: 'What to do', html: 'Write a short paragraph deliberately repeating one noun four or five times. Then rewrite it with pronouns. Keep both.' },
+    { h: 'Which pronoun', html: '<i>Lo, la, los, las</i> replace the thing the verb acts on. <i>Le, les</i> replace the person it goes TO. <i>Se lo di</i> — when both appear, <i>le</i> becomes <i>se</i>, which has no logic and simply has to be learned.' },
+    { h: 'Where they go', html: 'Before a conjugated verb (<i>lo compré</i>), or stuck onto an infinitive or gerund (<i>voy a comprarlo</i> / <i>lo voy a comprar</i> — both are correct).' }
+  ],
+  model: { title: 'before and after', text: '<p><b>Antes:</b> Compré el libro el martes. Leí el libro en dos días. Después le di el libro a mi hermana porque mi hermana quería el libro.</p><p><b>Después:</b> Compré el libro el martes y lo leí en dos días. Después se lo di a mi hermana, porque lo quería.</p>' },
+  checklist: [
+    'The "before" repeats one noun at least four times.',
+    'The rewrite uses at least three pronouns.',
+    'At least one is an indirect object (<i>le</i> or <i>se</i>).',
+    'One pronoun is attached to an infinitive or gerund.',
+    'The rewrite is shorter and means exactly the same.'
+  ],
+  examples: [
+    { es: 'Compré el libro y lo leí en dos días.', en: 'I bought the book and read it in two days.' },
+    { es: 'Se lo di a mi hermana.', en: 'I gave it to my sister.' },
+    { es: 'Voy a comprarlo mañana.', en: 'I am going to buy it tomorrow.' }
+  ],
+  probes: [
+    { id: 'p:task-a2-pronombres-1', kind: 'mcq',
+      q: '"Le di el libro a Ana" — with both pronouns it becomes:',
+      options: ['Se lo di.', 'Le lo di.', 'Lo le di.'], answer: 0 },
+    { id: 'p:task-a2-pronombres-2', kind: 'mcq',
+      q: 'Which replaces the PERSON something is given to?',
+      options: ['le', 'lo', 'la'], answer: 0 },
+    { id: 'p:task-a2-pronombres-3', kind: 'cloze',
+      text: 'Compré el libro y ___ leí en dos días.', accept: ['lo'] },
+    { id: 'p:task-a2-pronombres-4', kind: 'recall',
+      front: 'What "le" becomes in front of "lo"', back: 'se' }
+  ]
+},
+
+{
+  id: 'task-a2-pedir', strand: 'task', cefr: 'A2', level: 2, theme: 'servicios',
+  title: 'Pide lo mismo de cinco maneras',
+  canDo: 'make the same request from blunt to very polite, and know which is which',
+  summary: 'Spanish politeness is not a word you add. It is a scale built out of tense, person and question form, and moving up it changes how much room you leave the other person to say no.',
+  sections: [
+    { h: 'What to do', html: 'Take one request — a window opened, a form explained, a day off. Write it five ways, from the bluntest to the most careful, and label each with who you would say it to.' },
+    { h: 'The rungs', html: 'Imperative (<i>Abre la ventana</i>) · present question (<i>¿Abres la ventana?</i>) · <i>poder</i> (<i>¿Puedes abrir…?</i>) · conditional (<i>¿Podrías…?</i>) · impersonal distance (<i>¿Se podría…?</i>). Each rung removes you a little further from ordering someone about.' },
+    { h: 'Softening the refusal too', html: 'Saying no needs the same care: <i>Es que…</i>, <i>Lo siento, pero…</i>, <i>Me temo que no va a poder ser</i>. A flat <i>no</i> is much harsher in Spanish than its English equivalent.' }
+  ],
+  model: { title: 'one request, five ways', text: '<p><b>1.</b> Abre la ventana. <i>(a un hermano)</i><br><b>2.</b> ¿Abres la ventana? <i>(a un amigo)</i><br><b>3.</b> ¿Puedes abrir la ventana, por favor? <i>(a un compañero)</i><br><b>4.</b> ¿Podría abrir la ventana? <i>(a alguien mayor, o a un desconocido)</i><br><b>5.</b> Perdone, ¿sería posible abrir un poco la ventana? <i>(en una reunión formal)</i></p><p>—Lo siento, es que hace mucho ruido fuera. —Ah, no pasa nada.</p>' },
+  checklist: [
+    'The same request, five times.',
+    'They are ordered from bluntest to most careful.',
+    'Each is labelled with who you would say it to.',
+    'At least one uses the conditional (<i>podría</i>, <i>sería</i>).',
+    'One of them is refused, and the refusal is softened with <i>es que</i>.'
+  ],
+  examples: [
+    { es: '¿Puedes abrir la ventana, por favor?', en: 'Can you open the window, please?' },
+    { es: '¿Podría abrir la ventana?', en: 'Could you open the window?' },
+    { es: 'Lo siento, es que hace mucho ruido fuera.', en: 'Sorry, it\'s just that it\'s very noisy outside.' }
+  ],
+  probes: [
+    { id: 'p:task-a2-pedir-1', kind: 'mcq',
+      q: 'Which is the most careful?',
+      options: ['¿Sería posible abrir la ventana?', '¿Puedes abrir la ventana?', 'Abre la ventana.'], answer: 0 },
+    { id: 'p:task-a2-pedir-2', kind: 'mcq',
+      q: 'Which two words soften a refusal by giving a reason?',
+      options: ['es que', 'claro que', 'por eso'], answer: 0 },
+    { id: 'p:task-a2-pedir-3', kind: 'cloze',
+      text: '¿___ abrir la ventana? (poder, condicional, usted)', accept: ['podría'] },
+    { id: 'p:task-a2-pedir-4', kind: 'recall',
+      front: 'The conditional of poder, usted', back: 'podría' }
+  ]
+},
+
+{
+  id: 'task-a2-animo', strand: 'task', cefr: 'A2', level: 2, theme: 'relaciones',
+  title: 'Reacciona a cinco noticias',
+  canDo: 'react to good and bad news the way a person actually does',
+  summary: 'Silence is the beginner default and it reads as indifference. Spanish expects an audible reaction, and the reaction is usually shorter than learners expect — two or three words, immediately.',
+  sections: [
+    { h: 'What to do', html: 'Write five short exchanges. Somebody tells you something; you react. Two pieces of good news, two bad, one ambiguous.' },
+    { h: 'Match the size', html: 'Big news gets <i>¡No me digas!</i> or <i>¡Qué fuerte!</i>. Small news gets <i>¡Ah, qué bien!</i>. Using the big one for small news sounds sarcastic, which is a mistake learners make constantly.' },
+    { h: 'Then ask', html: 'A reaction on its own closes the conversation. A reaction plus a question keeps it open: <i>—Me han dado el trabajo. —¡Enhorabuena! ¿Cuándo empiezas?</i>' }
+  ],
+  model: { title: 'five reactions', text: '<p>—Me han dado el trabajo. —¡Enhorabuena! ¿Cuándo empiezas?</p><p>—Mi padre está en el hospital. —Vaya, lo siento mucho. ¿Está grave?</p><p>—Me caso en junio. —¡No me digas! ¡Qué alegría! ¿Y dónde?</p><p>—He suspendido el examen. —Bueno, no pasa nada. Lo repites en septiembre y ya está.</p><p>—Me han subido el sueldo, pero también las horas. —Hombre, algo es algo. ¿Muchas horas más?</p>' },
+  checklist: [
+    'Five exchanges: two good, two bad, one mixed.',
+    'Every reaction is followed by a question or an offer.',
+    'The size of the reaction matches the size of the news.',
+    'At least one uses <i>¡Qué + noun/adjective!</i>',
+    'At least one sympathetic reaction (<i>vaya</i>, <i>lo siento</i>).'
+  ],
+  examples: [
+    { es: '—Me han dado el trabajo. —¡Enhorabuena!', en: '—I got the job. —Congratulations!' },
+    { es: 'Vaya, lo siento mucho.', en: 'Oh no, I\'m so sorry.' },
+    { es: '¡No me digas! ¿Y dónde?', en: 'You\'re kidding! And where?' }
+  ],
+  probes: [
+    { id: 'p:task-a2-animo-1', kind: 'mcq',
+      q: 'Someone says their father is in hospital. Which fits?',
+      options: ['Vaya, lo siento mucho.', '¡Qué bien!', '¡No me digas! ¡Qué alegría!'], answer: 0 },
+    { id: 'p:task-a2-animo-2', kind: 'mcq',
+      q: 'What should follow a reaction, to keep the conversation open?',
+      options: ['a question', 'a goodbye', 'nothing'], answer: 0 },
+    { id: 'p:task-a2-animo-3', kind: 'cloze',
+      text: '—Me caso en junio. —¡___ alegría!', accept: ['Qué', 'qué'] },
+    { id: 'p:task-a2-animo-4', kind: 'recall',
+      front: 'Congratulating someone on an achievement, one word', back: '¡Enhorabuena!' }
+  ]
+},
+
+{
+  id: 'task-a2-comparar', strand: 'task', cefr: 'A2', level: 2, theme: 'compras',
+  title: 'Compara dos opciones y elige',
+  canDo: 'compare two things and justify which you would pick',
+  summary: 'Comparison is where an opinion stops being a preference and starts being an argument. It also carries four irregular forms that no rule produces.',
+  sections: [
+    { h: 'What to do', html: 'Pick two real things — two cities, two phones, two jobs. Compare them across four points, then choose one and say why.' },
+    { h: 'The three frames', html: 'More/less: <i>más caro que</i>, <i>menos caro que</i>. The same: <i>tan caro como</i>, <i>igual de caro que</i>. The most: <i>el más caro de todos</i>.' },
+    { h: 'The four that break', html: '<i>Bueno→mejor</i>, <i>malo→peor</i>, <i>grande→mayor</i>, <i>pequeño→menor</i>. Never <i>más bueno</i> for quality — that is a different meaning, about someone being kind.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>El piso del centro es más caro que el de las afueras, pero es mucho más pequeño. El de las afueras tiene dos habitaciones y una terraza; el del centro solo tiene una habitación. En cambio, el del centro está mejor comunicado: hay metro a dos minutos. El de las afueras es igual de luminoso, pero está peor comunicado — necesitas coche. Yo me quedaría con el del centro, aunque sea más caro, porque para mí el tiempo vale más que el espacio.</p>' },
+  checklist: [
+    'Two things compared across at least four points.',
+    'All three frames appear: <i>más que</i>, <i>menos que</i>, <i>tan/igual de… como</i>.',
+    'At least two irregulars: <i>mejor</i>, <i>peor</i>, <i>mayor</i>, <i>menor</i>.',
+    'A choice is made at the end.',
+    'The choice is justified with <i>porque</i>.'
+  ],
+  examples: [
+    { es: 'Es más caro que el otro, pero más pequeño.', en: 'It is more expensive than the other, but smaller.' },
+    { es: 'Está igual de luminoso que el otro.', en: 'It is just as bright as the other one.' },
+    { es: 'El del centro está mejor comunicado.', en: 'The one in the centre has better transport links.' }
+  ],
+  probes: [
+    { id: 'p:task-a2-comparar-1', kind: 'mcq',
+      q: 'Which is correct for "better"?',
+      options: ['mejor', 'más bueno', 'más mejor'], answer: 0 },
+    { id: 'p:task-a2-comparar-2', kind: 'mcq',
+      q: 'Which means "just as bright as"?',
+      options: ['igual de luminoso que', 'más luminoso que', 'el más luminoso de'], answer: 0 },
+    { id: 'p:task-a2-comparar-3', kind: 'cloze',
+      text: 'Es más caro ___ el otro.', accept: ['que'] },
+    { id: 'p:task-a2-comparar-4', kind: 'recall',
+      front: 'Comparative of "malo"', back: 'peor' }
+  ]
+},
+
+{
+  id: 'task-a2-gestion', strand: 'task', cefr: 'A2', level: 2, theme: 'servicios',
+  title: 'Resuelve tres gestiones',
+  canDo: 'get something done: on the phone, in a shop, and at a desk',
+  summary: 'These are the conversations that actually go wrong on a trip, and all three have a fixed shape. Learning the shape is worth more than learning more vocabulary.',
+  sections: [
+    { h: 'What to do', html: 'Write three short transactions: one phone call, one shop exchange where something is wrong with what you bought, and one where you ask for information you need.' },
+    { h: 'The phone shape', html: '<i>¿Dígame?</i> · say who you are · say what you want · arrange or thank · close. Spanish phone openings are fixed and sound abrupt in translation — that is normal.' },
+    { h: 'When something is wrong', html: '<i>Es que…</i> introduces the problem, and it is doing real work: it frames what follows as an explanation rather than a complaint. <i>Quería cambiar esto, es que me queda pequeño.</i>' }
+  ],
+  model: { title: 'three gestiones', text: '<p><b>Al teléfono:</b> —¿Dígame? —Hola, buenos días. Llamo por el anuncio del piso. ¿Sigue disponible? —Sí, sigue. —¿Podría verlo esta semana? —¿Le viene bien el jueves a las seis? —Perfecto. Muchas gracias.</p><p><b>En la tienda:</b> —Hola, quería cambiar esta camisa. Es que me queda pequeña. —¿Tiene el ticket? —Sí, aquí está. —¿La quiere en otra talla o le devuelvo el dinero? —En la talla grande, si tiene.</p><p><b>En información:</b> —Perdone, ¿sabe si hay algún autobús al aeropuerto? —Sí, el 200, desde la plaza. —¿Cada cuánto pasa? —Cada veinte minutos más o menos. —Muchas gracias.</p>' },
+  checklist: [
+    'Three separate transactions.',
+    'The phone call opens and closes in the Spanish way.',
+    'One uses <i>es que</i> to introduce a problem.',
+    'At least one question asks for information you do not have.',
+    'All three are closed politely — none just stops.'
+  ],
+  examples: [
+    { es: 'Llamo por el anuncio del piso.', en: 'I\'m calling about the ad for the flat.' },
+    { es: 'Quería cambiar esto, es que me queda pequeño.', en: 'I\'d like to exchange this — it\'s too small for me.' },
+    { es: '¿Sabe si hay algún autobús al aeropuerto?', en: 'Do you know if there\'s a bus to the airport?' }
+  ],
+  probes: [
+    { id: 'p:task-a2-gestion-1', kind: 'mcq',
+      q: 'Which opens a phone call in Spain?',
+      options: ['¿Dígame?', '¿Quién es?', '¿Qué quieres?'], answer: 0 },
+    { id: 'p:task-a2-gestion-2', kind: 'mcq',
+      q: 'What does "es que" do at the start of a sentence?',
+      options: ['frames what follows as an explanation', 'asks a question', 'makes a command polite'], answer: 0 },
+    { id: 'p:task-a2-gestion-3', kind: 'cloze',
+      text: 'Quería cambiar esto, ___ que me queda pequeño.', accept: ['es'] },
+    { id: 'p:task-a2-gestion-4', kind: 'recall',
+      front: 'Saying a garment is too small ON you', back: 'me queda pequeño' }
+  ]
+},
+
+{
+  id: 'task-a2-razones', strand: 'task', cefr: 'A2', level: 2, theme: 'educacion',
+  title: 'Explica una decisión',
+  canDo: 'give reasons, weigh conditions, and advise someone else',
+  summary: 'Up to now you have said what is. This unit says why, and what would happen if — which is the point where a conversation stops being an exchange of facts.',
+  sections: [
+    { h: 'What to do', html: 'Explain a real decision you made or are making, in ten to fourteen sentences. Give at least three reasons, and one condition that would have changed it.' },
+    { h: 'Why, and what for', html: '<i>Porque</i> gives a cause; <i>para</i> gives a purpose. <i>Estudio español porque me gusta</i> versus <i>Estudio español para trabajar en Madrid</i> — learners use <i>porque</i> for both and lose the difference.' },
+    { h: 'Advise someone', html: 'Close by advising someone in the same position: <i>Yo que tú…</i>, <i>Lo mejor es…</i>, <i>Si fuera tú…</i>' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>El año pasado dejé mi trabajo. Lo dejé porque estaba agotado y porque no aprendía nada nuevo desde hacía dos años. También lo dejé para tener tiempo de estudiar. Si me hubieran subido el sueldo, quizá me habría quedado, pero la verdad es que el problema no era el dinero. Ahora gano menos, pero duermo mejor. Si alguien me pregunta, yo siempre digo lo mismo: si no aprendes nada en un año, cambia. Yo que tú, lo pensaría seis meses y luego lo haría sin mirar atrás.</p>' },
+  checklist: [
+    'Ten sentences or more.',
+    'At least three reasons, using <i>porque</i> or <i>como</i>.',
+    'At least one purpose with <i>para</i> + infinitive.',
+    'One condition with <i>si</i>.',
+    'It closes by advising someone else.'
+  ],
+  examples: [
+    { es: 'Lo dejé porque estaba agotado.', en: 'I left because I was exhausted.' },
+    { es: 'Lo dejé para tener tiempo de estudiar.', en: 'I left in order to have time to study.' },
+    { es: 'Yo que tú, lo pensaría seis meses.', en: 'If I were you, I\'d think about it for six months.' }
+  ],
+  probes: [
+    { id: 'p:task-a2-razones-1', kind: 'mcq',
+      q: '"Estudio español ___ trabajar en Madrid." (purpose)',
+      options: ['para', 'porque', 'por'], answer: 0 },
+    { id: 'p:task-a2-razones-2', kind: 'mcq',
+      q: 'Which gives a CAUSE rather than a purpose?',
+      options: ['porque estaba agotado', 'para tener tiempo', 'para descansar'], answer: 0 },
+    { id: 'p:task-a2-razones-3', kind: 'cloze',
+      text: 'Lo dejé ___ estaba agotado.', accept: ['porque'] },
+    { id: 'p:task-a2-razones-4', kind: 'recall',
+      front: '"If I were you", three words', back: 'yo que tú' }
+  ]
+},
+
+{
+  id: 'task-a2-sitio', strand: 'task', cefr: 'A2', level: 2, theme: 'viajes',
+  title: 'Lleva a alguien por tu barrio',
+  canDo: 'guide someone through a place and describe what is there',
+  summary: 'A1 gave you left and right. This is the same skill at conversation length — a route with landmarks, distances and a reason to go.',
+  sections: [
+    { h: 'What to do', html: 'Write a guided walk through somewhere you know well, ten to fourteen sentences. Include three places worth stopping and roughly how long it takes between them.' },
+    { h: 'Position words', html: '<i>Dentro, fuera, alrededor, al fondo, a lo largo de, enfrente</i>. These are what turn a list of places into a route somebody could follow.' },
+    { h: 'Distance and time', html: '<i>A cinco minutos andando</i>, <i>a dos manzanas</i>, <i>justo al lado</i>, <i>un poco más allá</i>. Spanish measures short urban distances in minutes far more than in metres.' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>Empezamos en la plaza, que está justo enfrente del metro. Alrededor de la plaza hay tres o cuatro bares; el del fondo es el mejor para desayunar. Desde ahí bajamos por la calle principal, a lo largo del río, unos diez minutos andando. A mano derecha verás un mercado pequeño que abre solo por las mañanas. Dentro hay un puesto de fruta buenísimo. Un poco más allá, a dos manzanas, está el parque. Si vas por la tarde, está lleno de gente. Al fondo del parque hay un mirador desde donde se ve toda la ciudad. Merece la pena subir.</p>' },
+  checklist: [
+    'Ten sentences or more, following one route.',
+    'Three places worth stopping.',
+    'At least four position words (<i>enfrente, alrededor, al fondo, dentro</i>).',
+    'At least two distances or times between places.',
+    'A reason is given for going to at least one of them.'
+  ],
+  examples: [
+    { es: 'Alrededor de la plaza hay tres o cuatro bares.', en: 'There are three or four bars around the square.' },
+    { es: 'A diez minutos andando, a lo largo del río.', en: 'Ten minutes on foot, along the river.' },
+    { es: 'Al fondo del parque hay un mirador.', en: 'At the far end of the park there\'s a viewpoint.' }
+  ],
+  probes: [
+    { id: 'p:task-a2-sitio-1', kind: 'mcq',
+      q: 'Which means "at the far end"?',
+      options: ['al fondo', 'enfrente', 'alrededor'], answer: 0 },
+    { id: 'p:task-a2-sitio-2', kind: 'mcq',
+      q: 'How does Spanish usually measure a short walk?',
+      options: ['in minutes', 'in metres', 'in streets'], answer: 0 },
+    { id: 'p:task-a2-sitio-3', kind: 'cloze',
+      text: 'Está justo ___ del metro. (opposite)', accept: ['enfrente'] },
+    { id: 'p:task-a2-sitio-4', kind: 'recall',
+      front: '"Ten minutes on foot"', back: 'a diez minutos andando' }
+  ]
+},
+
+{
+  id: 'task-a2-escribir', strand: 'task', cefr: 'A2', level: 2, theme: 'medios',
+  title: 'Escribe una reseña y un correo',
+  canDo: 'write at paragraph length, not message length',
+  summary: 'A1 wrote notes and messages. A2 writes something with a middle — a text that has to hold together for three paragraphs rather than three lines.',
+  sections: [
+    { h: 'What to do', html: 'Write two things: a short review of something you have seen, eaten or visited, and a semi-formal email that makes a request and explains why.' },
+    { h: 'Use the gerund', html: '<i>Estaba comiendo</i>, <i>salí corriendo</i>, <i>siguió hablando</i>. The gerund is what lets two things happen at once in one sentence, and it is heavily under-used by learners at this level.' },
+    { h: 'Register in email', html: 'Semi-formal Spanish opens <i>Estimado/a</i> or <i>Buenos días</i>, uses <i>usted</i> throughout, and closes <i>Un cordial saludo</i>. Mixing <i>tú</i> into it halfway through is the commonest mistake.' }
+  ],
+  model: { title: 'a review and an email', text: '<p><b>Reseña:</b> Fuimos el viernes sin reservar y tuvimos suerte porque había una mesa libre al fondo. El sitio es pequeño y bastante ruidoso, pero se come muy bien. Pedimos el pulpo y unas croquetas que estaban buenísimas. El servicio fue lento — estuvimos casi veinte minutos esperando el segundo plato — aunque el camarero fue muy amable y nos invitó al postre. En conjunto, volvería, pero reservando.</p><p><b>Correo:</b> Estimada señora Ortiz:</p><p>Le escribo porque el jueves 14 no voy a poder asistir al curso. Estaré fuera de la ciudad por motivos de trabajo. ¿Sería posible recuperar esa sesión más adelante, o acceder al material?</p><p>Muchas gracias por su tiempo.</p><p>Un cordial saludo,<br>Tom Kelly</p>' },
+  checklist: [
+    'Both texts, each at least six sentences.',
+    'The review gives one positive and one negative.',
+    'At least one gerund (<i>-ando</i>, <i>-iendo</i>).',
+    'The email opens and closes semi-formally.',
+    'The email uses <i>usted</i> consistently — no <i>tú</i> slips in.'
+  ],
+  examples: [
+    { es: 'Estuvimos veinte minutos esperando.', en: 'We spent twenty minutes waiting.' },
+    { es: 'En conjunto, volvería, pero reservando.', en: 'On the whole I\'d go back, but booking ahead.' },
+    { es: '¿Sería posible recuperar esa sesión?', en: 'Would it be possible to make up that session?' }
+  ],
+  probes: [
+    { id: 'p:task-a2-escribir-1', kind: 'mcq',
+      q: 'Which closing suits a semi-formal email?',
+      options: ['Un cordial saludo', 'Un abrazo', 'Hasta luego'], answer: 0 },
+    { id: 'p:task-a2-escribir-2', kind: 'mcq',
+      q: 'Which sentence uses a gerund?',
+      options: ['Estuvimos esperando veinte minutos.', 'Esperamos veinte minutos.', 'Vamos a esperar.'], answer: 0 },
+    { id: 'p:task-a2-escribir-3', kind: 'cloze',
+      text: 'Estuvimos veinte minutos ___. (esperar, gerundio)', accept: ['esperando'] },
+    { id: 'p:task-a2-escribir-4', kind: 'recall',
+      front: 'Formal email opening to a named woman', back: 'Estimada señora' }
+  ]
+},
+
+{
+  id: 'task-a2-repaso', strand: 'task', cefr: 'A2', level: 2, theme: 'educacion',
+  title: 'Revisa lo que has escrito en A2',
+  canDo: 'find the agreement, tense and pronoun errors in your own A2 writing',
+  summary: 'You have written a weekend, a childhood, an anecdote, an interview, a comparison, a decision and a review. This unit explained the machinery under all of it. Now use it on your own work.',
+  sections: [
+    { h: 'What to do', html: 'Open three things you wrote earlier in A2. Read each one three times, looking for one thing only on each pass.' },
+    { h: 'Pass one — tense', html: 'Is every preterite an event and every imperfect a description? A scene set in the preterite is the commonest A2 error, and it makes a story read like a police report.' },
+    { h: 'Pass two — pronouns', html: 'Any noun repeated three times in a paragraph? Any <i>le lo</i> that should be <i>se lo</i>?' },
+    { h: 'Pass three — agreement', html: 'Articles, adjectives, plurals. The A1 check, now on longer texts where it is easier to lose track.' }
+  ],
+  model: { title: 'one paragraph, three passes', text: '<p><b>Antes:</b> Fue sábado y llovió mucho. Estuve solo en casa. Compré el libro y leí el libro. Mi hermana quería el libro, así que le lo di. Las casa eran pequeño.</p><p><b>Después:</b> <b>Era</b> sábado y <b>llovía</b> mucho. <b>Estaba</b> solo en casa. Compré el libro y <b>lo</b> leí. Mi hermana lo quería, así que <b>se lo</b> di. <b>La casa era pequeña.</b></p>' },
+  checklist: [
+    'Three of your own A2 texts, not new ones.',
+    'At least one preterite/imperfect correction.',
+    'At least one noun replaced by a pronoun.',
+    'At least one agreement correction.',
+    'Originals kept alongside the corrections.'
+  ],
+  examples: [
+    { es: 'Era sábado y llovía mucho.', en: 'It was Saturday and it was raining a lot.' },
+    { es: 'Compré el libro y lo leí.', en: 'I bought the book and read it.' },
+    { es: 'Mi hermana lo quería, así que se lo di.', en: 'My sister wanted it, so I gave it to her.' }
+  ],
+  probes: [
+    { id: 'p:task-a2-repaso-1', kind: 'mcq',
+      q: 'Setting a scene: which is right?',
+      options: ['Era sábado y llovía.', 'Fue sábado y llovió.', 'Ha sido sábado y ha llovido.'], answer: 0 },
+    { id: 'p:task-a2-repaso-2', kind: 'mcq',
+      q: '"Le lo di" should be:',
+      options: ['Se lo di.', 'Lo le di.', 'Le di lo.'], answer: 0 },
+    { id: 'p:task-a2-repaso-3', kind: 'cloze',
+      text: '___ sábado y llovía mucho. (ser)', accept: ['Era', 'era'] },
+    { id: 'p:task-a2-repaso-4', kind: 'recall',
+      front: 'The tense that sets a scene', back: 'the imperfect' }
+  ]
+},
+
+{
   id: 'task-preguntar', strand: 'task', cefr: 'A1', level: 1, theme: 'identidad',
   title: 'Pregunta cinco cosas',
   canDo: 'ask five real questions and understand the answers',
@@ -1720,7 +2202,7 @@ window.STRAND_LESSONS = [
  * splitting before authoring.
  * ========================================================================== */
 {
-  id: 'fn-identificar-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-identificar-a2', status: 'reference', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:9', 'funciones:A2:10', 'funciones:A2:11'],
   title: 'Identificar (A2)',
   summary: 'Two more ways to identify something: naming just the adjective when the noun is already clear ("El azul", not "El jersey azul"), and fronting "a mí/a ti/a Mario" to identify WHO likes or feels something before the verb even appears.',
@@ -1758,7 +2240,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-pedir-informacion-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-pedir-informacion-a2', deeper: ['dc-interrogativos-neutros-a2'], strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:33', 'funciones:A2:36', 'funciones:A2:38', 'funciones:A2:40',
          'funciones:A2:42', 'funciones:A2:44', 'funciones:A2:47', 'funciones:A2:49'],
   title: 'Pedir información (A2)',
@@ -1912,7 +2394,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-preguntar-conocimiento-a2', strand: 'function', cefr: 'A2', level: 2, theme: 'educacion',
+  id: 'fn-preguntar-conocimiento-a2', deeper: ['fn-identificar-a2'], strand: 'function', cefr: 'A2', level: 2, theme: 'educacion',
   pcic: ['funciones:A2:152', 'funciones:A2:153', 'funciones:A2:154'],
   title: 'Preguntar por el conocimiento de algo',
   summary: 'Asking whether someone knows something splits the same way saber/conocer does: sabes for facts and skills, conoces for people and places, and has aprendido/estudiado for something learned formally.',
@@ -2909,7 +3391,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-estructuradores-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  id: 'dc-estructuradores-a2', deeper: ['dc-tematizacion-a2'], strand: 'discourse', cefr: 'A2', level: 2, theme: null,
   pcic: ['tacticas_pragmaticas:A2:14', 'tacticas_pragmaticas:A2:16', 'tacticas_pragmaticas:A2:17',
          'tacticas_pragmaticas:A2:18', 'tacticas_pragmaticas:A2:19'],
   title: 'Marcadores estructuradores',
@@ -2984,7 +3466,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-deixis-personal-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  id: 'dc-deixis-personal-a2', status: 'reference', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
   pcic: ['tacticas_pragmaticas:A2:36', 'tacticas_pragmaticas:A2:37', 'tacticas_pragmaticas:A2:38', 'tacticas_pragmaticas:A2:39'],
   title: 'Deixis personal',
   summary: 'Spanish has three small ways to bring "the person" into sharper focus without changing the basic sentence: making a dropped subject pronoun reappear to point blame, doubling a pronoun to spotlight who receives something, and using a possessive that assumes shared knowledge rather than introducing something new.',
@@ -3022,7 +3504,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-deixis-temporal-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  id: 'dc-deixis-temporal-a2', deeper: ['dc-deixis-personal-a2'], strand: 'discourse', cefr: 'A2', level: 2, theme: null,
   pcic: ['tacticas_pragmaticas:A2:32', 'tacticas_pragmaticas:A2:33'],
   title: 'Deixis temporal',
   summary: 'Time words like antes, después and entonces only make sense relative to a reference point that shifts with context — "después" means something different depending on when you say it, unlike a fixed date.',
@@ -3095,7 +3577,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-tematizacion-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  id: 'dc-tematizacion-a2', status: 'reference', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
   pcic: ['tacticas_pragmaticas:A2:52', 'tacticas_pragmaticas:A2:53', 'tacticas_pragmaticas:A2:54'],
   title: 'Tematización',
   summary: 'Where rematización pushes new information to the end, tematización does the opposite: it moves something already known to the FRONT, and Spanish signals this fronting with a doubled pronoun or a shift from indefinite to definite article.',
@@ -3131,7 +3613,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-interrogativos-neutros-a2', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
+  id: 'dc-interrogativos-neutros-a2', status: 'reference', strand: 'discourse', cefr: 'A2', level: 2, theme: null,
   pcic: ['tacticas_pragmaticas:A2:57', 'tacticas_pragmaticas:A2:58', 'tacticas_pragmaticas:A2:59',
          'tacticas_pragmaticas:A2:60', 'tacticas_pragmaticas:A2:61', 'tacticas_pragmaticas:A2:62'],
   title: 'Preguntas con función neutra',
@@ -4747,7 +5229,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-articulo-definido-valores-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-articulo-definido-valores-a2', status: 'reference', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:85', 'gramatica:A2:86', 'gramatica:A2:87', 'gramatica:A2:88', 'gramatica:A2:89'],
   title: 'El artículo definido: usos más allá de "the"',
   summary: 'Beyond simply meaning "the," the definite article marks something the situation already makes obvious, states a fact about a whole category, and can replace a possessive with body parts — jobs English hands to entirely different words.',
@@ -4780,7 +5262,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-articulo-indefinido-valores-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-articulo-indefinido-valores-a2', status: 'reference', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:109', 'gramatica:A2:110', 'gramatica:A2:111', 'gramatica:A2:112', 'gramatica:A2:113'],
   title: 'El artículo indefinido: valor aproximativo',
   summary: 'Unos/unas placed before a number does not mean "some of them" — it softens the number into an estimate, "around twenty," and the same mechanism lets the article replace a possessive the way la/el does with body parts.',
@@ -4813,7 +5295,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-nombres-escuetos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-nombres-escuetos-a2', status: 'reference', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:124', 'gramatica:A2:125', 'gramatica:A2:126'],
   title: 'Nombres escuetos: sin artículo ni cuantificador',
   summary: 'Dropping every determiner — no article, no number, nothing — turns a noun into an unspecified amount: a bare singular for something uncountable, a bare plural for countable things taken in no particular quantity.',
@@ -4846,7 +5328,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-interrogativos-exclamativos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-interrogativos-exclamativos-a2', deeper: ['gr-oraciones-simples-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:277', 'gramatica:A2:279', 'gramatica:A2:281', 'gramatica:A2:285', 'gramatica:A2:286', 'gramatica:A2:287'],
   title: 'Interrogativos y exclamativos: qué, cuál, cómo',
   summary: '¿Qué? asks for a definition or description; ¿cuál? asks you to pick from a set that is already understood — English collapses both into "what," which is exactly why Spanish learners blur them, especially when asking someone\'s name.',
@@ -7862,7 +8344,7 @@ window.STRAND_LESSONS = [
  * new to teach under the header itself.
  * ========================================================================== */
 {
-  id: 'gr-masculino-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-masculino-a2', status: 'reference', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:28', 'gramatica:A2:29', 'gramatica:A2:30'],
   title: 'Más sustantivos masculinos: colores y casos aislados',
   summary: 'A color word naming the COLOR ITSELF, not describing a noun, is always masculine — el rosa, el naranja — which is a different fact from whether that same word changes for gender when it describes something, which most basic colors do not.',
@@ -7896,7 +8378,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-articulo-definido-distribucion-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-articulo-definido-distribucion-a2', deeper: ['gr-articulo-definido-valores-a2', 'gr-articulo-indefinido-valores-a2', 'gr-nombres-escuetos-a2', 'gr-sustantivos-especiales-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:82', 'gramatica:A2:83', 'gramatica:A2:84', 'gramatica:A2:90', 'gramatica:A2:91', 'gramatica:A2:93', 'gramatica:A2:94'],
   title: 'El artículo definido: el agua, jugar al tenis, todos los libros',
   summary: 'El agua looks masculine but is not — Spanish swaps la for el only to avoid two stressed a-sounds colliding, and the noun stays feminine underneath, as its plural (las aguas) immediately reveals.',
@@ -7931,7 +8413,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-posesivos-tonicos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-posesivos-tonicos-a2', deeper: ['gr-restrictivos-nominales-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:152', 'gramatica:A2:153', 'gramatica:A2:154', 'gramatica:A2:156', 'gramatica:A2:158', 'gramatica:A2:159', 'gramatica:A2:160', 'gramatica:A2:162'],
   title: 'Los posesivos tónicos: mío, tuyo, suyo',
   summary: 'Unlike mi/tu/su, which only ever track what is owned, the tónico forms mío/tuyo/suyo agree in BOTH gender and number — and they can do something the short forms never can: stand in for the noun entirely, with just an article, or answer a question completely alone.',
@@ -8175,7 +8657,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-restrictivos-nominales-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-restrictivos-nominales-a2', status: 'reference', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:408', 'gramatica:A2:409', 'gramatica:A2:410'],
   title: 'La casa mía, una película apasionante, calle Alcalá',
   summary: 'Wanting to say "the house of me" for possession, English logic fails outright in Spanish — la casa de mí does not exist; the possessive itself has to change shape (la casa mía), which is the tónico possessive (mío, tuyo, suyo) doing yet another job.',
@@ -8209,7 +8691,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-nucleo-verbal-tipos-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-nucleo-verbal-tipos-a2', status: 'reference', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:434', 'gramatica:A2:438', 'gramatica:A2:446'],
   title: 'Tipos de verbo: predicativo, auxiliar, copulativo',
   summary: 'A copulative verb like ser or estar never takes a direct object — it takes an ATTRIBUTE instead — which is the single fact that explains why "Ana es simpática" cannot be reshaped the way "Ana tiene un coche" can.',
@@ -13950,7 +14432,7 @@ window.STRAND_LESSONS = [
  * gn-generos-escritos-a2.
  * ========================================================================== */
 {
-  id: 'gr-sustantivos-especiales-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-sustantivos-especiales-a2', status: 'reference', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:13', 'gramatica:A2:14', 'gramatica:A2:15', 'gramatica:A2:16', 'gramatica:A2:17', 'gramatica:A2:18'],
   title: 'Nombres propios con artículo fijo y nombres eventivos',
   summary: 'A handful of proper-noun classes carry their article as part of the name itself — a city, an institution, a subject — and one class of common noun, the "eventive" ones, names something that happens rather than something that exists, which is why it pairs naturally with a date or a time.',
@@ -14056,7 +14538,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-oraciones-simples-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-oraciones-simples-a2', status: 'reference', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:492', 'gramatica:A2:493', 'gramatica:A2:494', 'gramatica:A2:495',
          'gramatica:A2:496', 'gramatica:A2:497', 'gramatica:A2:498'],
   title: 'Tipos de oraciones simples: disyuntivas, exclamativas, reflexivas, impersonales',
@@ -29557,7 +30039,7 @@ window.STRAND_LESSONS = [
  * practice for the same reason; this is the lesson that opens the gate.
  * ------------------------------------------------------------------------ */
 {
-  id: 'gr-presente-irregular-a2', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-presente-irregular-a2', deeper: ['gr-masculino-a2', 'gr-nucleo-verbal-tipos-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:331', 'gramatica:A2:332', 'gramatica:A2:333', 'gramatica:A2:334'],
   title: 'El presente irregular: la bota y el yo raro',
   summary: 'Most "irregular" present-tense verbs are nothing of the kind — they follow two patterns that cover almost all of them. One changes the vowel in four of the six persons and leaves nosotros and vosotros alone; the other changes only the yo form. Learn the two shapes and several hundred verbs stop being exceptions.',
