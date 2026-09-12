@@ -395,11 +395,16 @@ function checkProbes(l, tag) {
     /* A unit ends with something the learner produces. That is the whole point
      * of the unit being a unit rather than a run of lessons, so it is checked
      * rather than left to discipline. */
-    const lastDay = (e.days || [])[(e.days || []).length - 1] || {};
-    const lastId = lastDay.lesson || '';
-    const lastLesson = (window.ALL_LESSONS || []).find(l => l.id === lastId);
-    ok(lastLesson && lastLesson.strand === 'task',
-       `${tag}: last day is "${lastId || '(not a lesson)'}", which is not a task lesson`);
+    /* Core units only. An optional unit is depth on a topic the learner came
+     * looking for — it ends when the explaining is done, and demanding a task
+     * would make every deep dive cost a piece of homework nobody asked for. */
+    if (!e.optional) {
+      const lastDay = (e.days || [])[(e.days || []).length - 1] || {};
+      const lastId = lastDay.lesson || '';
+      const lastLesson = (window.ALL_LESSONS || []).find(l => l.id === lastId);
+      ok(lastLesson && lastLesson.strand === 'task',
+         `${tag}: last day is "${lastId || '(not a lesson)'}", which is not a task lesson`);
+    }
   });
   // Every day COURSE_DAYS produced must know which band it is in.
   course.forEach((d, i) => ok(!!d.band, `course day ${i}: no band — is there a band marker before it?`));
@@ -435,16 +440,35 @@ function checkProbes(l, tag) {
    * exactly as invisible as one missing from COURSE. */
   const deepLinked = new Set();
   allLessons.forEach(l => (l.deeper || []).forEach(id => deepLinked.add(id)));
+  // A lesson inside an OPTIONAL unit is reachable through that unit, which is a
+  // better route than a `deeper` link from one core lesson: the unit gives it
+  // a goal, an order and neighbours, where a deeper link gives it a doorway.
+  const inOptionalUnit = new Set();
+  Object.values(window.COURSE_UNITS || {}).forEach(u => {
+    if (u.optional) (u.lessons || []).forEach(id => inOptionalUnit.add(id));
+  });
   allLessons.forEach(l => {
     if (placed.has(l.id)) {
       ok(l.status !== 'reference',
          `lesson "${l.id}" is status:'reference' but is also placed in COURSE at ${placed.get(l.id)}`);
+      ok(!inOptionalUnit.has(l.id),
+         `lesson "${l.id}" is on the core path AND in an optional unit — it would be taught twice`);
       return;
     }
     ok(l.status === 'reference',
        `lesson "${l.id}" is in no course entry — mark it status:'reference' or place it`);
-    ok(deepLinked.has(l.id),
-       `reference lesson "${l.id}" is linked from no lesson's \`deeper\` — nothing could reach it`);
+    ok(deepLinked.has(l.id) || inOptionalUnit.has(l.id),
+       `reference lesson "${l.id}" is in no optional unit and linked from no lesson's \`deeper\` — nothing could reach it`);
+  });
+  // An optional unit is held to the same discipline as a core one, minus the
+  // task: it must say what the learner will be able to do at the end.
+  authored.filter(e => e.unit && e.optional).forEach(e => {
+    const tag = `optional unit "${e.unit}"`;
+    ok(!!e.goal, `${tag}: missing goal`);
+    ok(Array.isArray(e.canDo) && e.canDo.length >= 1, `${tag}: needs at least one canDo`);
+    ok(Array.isArray(e.days) && e.days.length >= 2, `${tag}: needs at least 2 lessons`);
+    (e.days || []).forEach(d => ok(!!d.lesson,
+      `${tag}: every entry must be a lesson — no verb or practice days in an optional unit`));
   });
   // Every `deeper` target must exist, and must actually be reference material:
   // pointing a deep-dive at a lesson the learner is walking anyway is a no-op.

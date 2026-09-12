@@ -35,6 +35,57 @@
  * ========================================================================== */
 window.COURSE = [
 
+
+  /* ==== OPTIONAL DEEP UNITS ==============================================
+   * These cost no day. They are offered, not walked — from a core lesson's
+   * `deeper` link, from the error log when a learner keeps missing the same
+   * thing, and from a browsable index.
+   *
+   * Every one of them is a confusion that STARTS at A1 and persists for
+   * years, which is why they sit here rather than at B2: the learner who
+   * needs "why are there two verbs for to be" needs it in week one, and is
+   * the least able to get it from a grammar reference on their own.
+   *
+   * They re-home the lessons the A-band triage shelved. A shelf of seventy
+   * loose lessons is a junk drawer; the same lessons grouped under a goal
+   * are a curriculum you can choose to walk.
+   * ====================================================================== */
+  { unit: 'deep-ser-estar', band: 'A1', optional: true,
+    title: 'Ser and estar, properly',
+    goal: 'I can choose between ser and estar without guessing, including the cases where both are possible and the meaning changes.',
+    canDo: ['choose ser or estar from what I mean, not from a memorised list',
+            'use both without an adjective at all',
+            'say what changes when the same adjective takes each one'],
+    days: [
+      { lesson: 'gr-atributo-a1' },
+      { lesson: 'gr-nucleo-verbal-a1' }
+    ] },
+
+  { unit: 'deep-genero', band: 'A1', optional: true,
+    title: 'El or la?',
+    goal: 'I can work out a noun\'s gender from its shape, and I know which common words break the pattern.',
+    canDo: ['predict gender from a word ending',
+            'handle the words that look one gender and take the other',
+            'use the article on names, places and titles'],
+    days: [
+      { lesson: 'gr-nombres-propios-a1' },
+      { lesson: 'gr-masculino-a2' },
+      { lesson: 'gr-sustantivos-especiales-a2' }
+    ] },
+
+  { unit: 'deep-el-articulo', band: 'A2', optional: true,
+    title: 'The article, where English has none',
+    goal: 'I can use el, la and un where Spanish needs them and English does not — and leave them out where Spanish does.',
+    canDo: ['use the definite article for generic statements',
+            'drop the article where Spanish drops it',
+            'hear what un adds beyond "a"'],
+    days: [
+      { lesson: 'gr-articulo-definido-valores-a2' },
+      { lesson: 'gr-articulo-indefinido-valores-a2' },
+      { lesson: 'gr-nombres-escuetos-a2' },
+      { lesson: 'gr-restrictivos-nominales-a2' }
+    ] },
+
   /* ---- A1 · 94 days · starts at index 0 ------------------------------- */
 
   /* Unit 1 · Meet someone — 10 days ------------------------------------
@@ -1197,10 +1248,28 @@ window.COURSE = [
 
   (window.COURSE || []).forEach(function (e) {
     if (e.unit) {
+      /* An OPTIONAL unit costs no day. It is registered so it can be found,
+       * browsed and offered, but it is skipped when flattening, so the daily
+       * path never walks it — which is the whole point: some topics are too
+       * important to shelve and too big for the path. `se` is the example
+       * that forced this (reflexive, impersonal, passive, accidental, dative,
+       * reciprocal): six days of it in A1 would wreck the pacing, and one
+       * lesson does not cover it.
+       *
+       * `from`/`length` are meaningless for an optional unit — it has no
+       * position — so they are left null rather than pointing at whatever day
+       * happened to be next. */
+      if (e.optional) {
+        units[e.unit] = { id: e.unit, band: e.band || cur, title: e.title,
+                          goal: e.goal || null, canDo: e.canDo || [],
+                          optional: true, lessons: (e.days || []).map(function (d) { return d.lesson; })
+                            .filter(Boolean), from: null, length: null };
+        return;
+      }
       mark(e.band);
       units[e.unit] = { id: e.unit, band: e.band || cur, title: e.title,
                         goal: e.goal || null, canDo: e.canDo || [],
-                        from: days.length, length: (e.days || []).length };
+                        optional: false, from: days.length, length: (e.days || []).length };
       (e.days || []).forEach(function (d) { push(d, e.unit); });
       return;
     }
@@ -1209,6 +1278,6 @@ window.COURSE = [
   });
 
   window.COURSE_DAYS  = days;    // the flat sequence every reader walks
-  window.COURSE_UNITS = units;   // id -> { title, goal, canDo, from, length }
+  window.COURSE_UNITS = units;   // id -> { title, goal, canDo, optional, from, length }
   window.COURSE_BANDS = bands;   // band -> index of its first day
 })();
