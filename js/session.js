@@ -338,26 +338,6 @@ window.Session = (function () {
     bar.style.width = Math.round(100 * done / total) + '%';
   }
 
-  /* One line describing what a stage will be, for the home card's stage strip.
-   * Derived from the stage key rather than a parallel hardcoded list, so a
-   * session that runs four stages never advertises five. */
-  function stageBlurb(key, c) {
-    if (key === 'review')     return 'Review what is due, and meet a few new words';
-    if (key === 'learn')      return focusLabel(c);
-    if (key === 'comprehend') return c.passage ? '\u201c' + c.passage.title + '\u201d' : 'Read and answer';
-    if (key === 'apply')      return 'Use the grammar in real sentences';
-    if (key === 'produce')    return 'Write some Spanish of your own';
-    return '';
-  }
-  function stageIcon(key, c) {
-    if (key === 'learn') {
-      var t = c && c.focus ? c.focus.type : 'grammar';
-      return t === 'vocab' ? '\ud83d\udcc7' : t === 'verbs' ? '\ud83d\udd24' : t === 'practice' ? '\ud83d\udd01' : '\ud83d\udcd6';
-    }
-    var m = { review: '\ud83d\udd01', comprehend: '\ud83d\udc42', apply: '\ud83e\udde9', produce: '\u270d\ufe0f' };
-    return m[key] || '\u2022';
-  }
-
   /* What today is, without building a whole session for it.
    * The home screen used to say "Sesión diaria · Review · lesson · reading ·
    * apply · write" every single day — the same words whatever the day held.
@@ -369,13 +349,22 @@ window.Session = (function () {
     return {
       unit: unitLabel(c),
       focus: f.focus,
-      lessonTitle: focusLabel(c),
+      lessonTitle: homeLabel(c),
       canSkipLesson: !f.pr.usesCurriculum && f.focus && f.focus.type === 'grammar' && !!f.lesson,
       lessonId: f.lesson ? f.lesson.id : null,
-      stages: modeDef().keys.map(function (k) {
-        return { key: k, icon: stageIcon(k, c), label: stageLabel(k) };
-      })
     };
+  }
+
+  /* What today is, in as few words as the home card needs. focusLabel is kept
+   * for the completion screen, where naming the individual verbs is the point
+   * of the line; on the home card it was a comma list that changed nothing
+   * about what the learner was going to do next. */
+  function homeLabel(c) {
+    var f = c.focus || { type: 'grammar' };
+    if (f.type === 'grammar') return c.lesson ? c.lesson.title : T('Una lección', 'A lesson');
+    if (f.type === 'verbs') return T('Verbos nuevos', 'New verbs');
+    if (f.type === 'vocab') return T('Palabras nuevas', 'New words');
+    return T('Práctica y repaso', 'Practice and review');
   }
   var STAGE_LABEL_ES = { review: 'Repasar', learn: 'Aprender', comprehend: 'Comprender',
                          apply: 'Aplicar', produce: 'Producir' };

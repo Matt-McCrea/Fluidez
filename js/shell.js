@@ -92,17 +92,6 @@ window.Shell = (function () {
       todayRow.appendChild(UI.el('span', 'tf-value', t.lessonTitle));
       card.appendChild(todayRow);
 
-      // the shape of the session, as a strip rather than a five-row list
-      var strip2 = UI.el('div', 'stage-strip');
-      var cur = isActive ? window.Session.currentStageIndex() : -1;
-      t.stages.forEach(function (st, i) {
-        var cls = 'ss-step' + (i < cur ? ' done' : i === cur ? ' current' : '');
-        var step = UI.el('span', cls);
-        step.appendChild(UI.el('span', 'ss-ico', st.icon));
-        step.appendChild(UI.el('span', 'ss-label', st.label));
-        strip2.appendChild(step);
-      });
-      card.appendChild(strip2);
     }
 
     var go = UI.el('button', 'primary-btn today-go');

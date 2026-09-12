@@ -436,28 +436,13 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 }
 .today-focus {
   display:flex; align-items:baseline; gap:11px;
-  padding:2px 2px 16px; border-bottom:1px solid var(--border); margin-bottom:16px;
+  padding:4px 2px 0; margin-bottom:20px;
 }
 .tf-label {
   font-size:.68rem; text-transform:uppercase; letter-spacing:.1em; font-weight:750;
   color:var(--muted); flex:none;
 }
 .tf-value { font-weight:650; font-size:1.06rem; line-height:1.35; }
-
-/* the shape of the session — a strip, not a five-row list */
-.stage-strip { display:flex; flex-wrap:wrap; gap:6px 4px; margin-bottom:20px; }
-.ss-step {
-  display:flex; align-items:center; gap:6px; padding:5px 10px 5px 7px;
-  border-radius:999px; border:1px solid transparent; color:var(--muted); font-size:.8rem;
-}
-.ss-step .ss-ico { font-size:.95rem; line-height:1; opacity:.55; }
-.ss-step.done { color:var(--accent); }
-.ss-step.done .ss-ico { opacity:1; }
-.ss-step.current {
-  color:var(--text); font-weight:650;
-  border-color:var(--accent); background:var(--panel-2);
-}
-.ss-step.current .ss-ico { opacity:1; }
 
 .today-go-row { display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
 .today-go-row .primary-btn { margin-top:0; }
@@ -731,8 +716,6 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
   .today-card { padding:20px 18px; }
   .today-go-row { gap:10px; }
   .today-go { flex:1; padding:13px 20px; }
-  .stage-strip { gap:4px 2px; }
-  .ss-step { padding:4px 8px 4px 6px; font-size:.74rem; }
   .home-extras { grid-template-columns:1fr; }
   .alt-row { padding:15px 16px; gap:12px; }
   .alt-ico { font-size:1.3rem; }
