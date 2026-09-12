@@ -15,7 +15,17 @@ window.StageComprehend = (function () {
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, p.title));
     wrap.appendChild(UI.el('p', 'muted', 'Read it through twice — once for the gist, once for detail. Then answer below.'));
-    wrap.appendChild(UI.el('div', 'passage', p.text));
+    var body = UI.el('div', 'passage', p.text);
+    /* Listen to the whole passage. This is the closest the app gets to a
+     * listening stage: connected speech at length, with the text there to fall
+     * back on. Shift-click reads it slowly. */
+    if (window.Speak && window.Speak.available()) {
+      var bar = UI.el('div', 'passage-audio');
+      var b = window.Speak.button(p.text, 'big');
+      if (b) { bar.appendChild(b); bar.appendChild(UI.el('span', 'muted small', 'escucha el texto — shift para ir despacio')); }
+      wrap.appendChild(bar);
+    }
+    wrap.appendChild(body);
 
     if (p.gloss && p.gloss.length) {
       var g = UI.el('div', 'gloss');

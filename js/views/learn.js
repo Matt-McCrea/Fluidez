@@ -171,7 +171,28 @@ window.StageLearn = (function () {
       })));
     }
     fillClosing(wrap, l);
+    speakify(wrap);
     return wrap;
+  }
+
+  /* Hang a speaker on every Spanish string in a rendered lesson, in one pass.
+   * Doing it here rather than at each call site is what keeps it working for
+   * blocks built as HTML strings (contrastTable, the exponent groups) as well
+   * as ones built from elements. Silent no-op where the platform has no
+   * Spanish voice — see js/speak.js. */
+  function speakify(root) {
+    if (!window.Speak || !window.Speak.available()) return;
+    var sel = ['td.es', '.ex-es', '.moment-line .ex-es'].join(',');
+    Array.prototype.forEach.call(root.querySelectorAll(sel), function (cell) {
+      if (cell.querySelector('.speak-btn')) return;
+      var b = window.Speak.button(function () {
+        // read the cell WITHOUT the button's own emoji
+        var t = cell.cloneNode(true);
+        Array.prototype.forEach.call(t.querySelectorAll('.speak-btn'), function (x) { x.remove(); });
+        return t.textContent;
+      });
+      if (b) cell.appendChild(b);
+    });
   }
 
   var CAT_LABEL = {
