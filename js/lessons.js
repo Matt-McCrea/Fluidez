@@ -211,6 +211,25 @@
       if (/¿[^?]*\?/.test(f) && !/^¿/.test(f)) return true;  // question embedded later
       return false;
     }
+    /* An answer written in ENGLISH is a description of Spanish, not Spanish.
+     * "Two letters that sound identical in Spanish" -> "v and b"; "Does
+     * Querido/a agree with the writer or the person addressed?" -> "the person
+     * addressed". Both are fair comprehension checks at the end of their
+     * lesson and neither is a thing to recall: the learner is being asked to
+     * reproduce an English phrase about grammar, weeks later, exactly.
+     *
+     * Detected by English words that have no Spanish homograph, so a Spanish
+     * answer can never trip it — "Querida Sara,", "mexicana", "¡Chao!" and
+     * "Encantada." all carry none of them. */
+    var ENGLISH_ONLY = ('the and of to is are was were it its with that this these those they them ' +
+      'their there then than which who whom whose what where when why how both each only more less ' +
+      'before after same different person people letter letters word words verb verbs noun nouns ' +
+      'adjective ending endings form forms sound sounds sentence clause subject object gender ' +
+      'plural singular masculine feminine formal informal always never usually something anything ' +
+      'nothing someone anyone everyone yes').split(' ');
+    var ENGLISH_RE = new RegExp('(^|[^a-zá-úñü])(' + ENGLISH_ONLY.join('|') + ')([^a-zá-úñü]|$)', 'i');
+    function descriptive(back) { return ENGLISH_RE.test(String(back || '')); }
+
     /* Whatever it asks, an answer you could not type back weeks later is not a
      * card. Review always types a lesson card (js/views/review.js resolves
      * `fixed` to mode 'type'), so a five-word answer is an automatic miss —
@@ -242,6 +261,7 @@
             : { id: p.id, front: p.front, back: p.back, probe: { kind: 'recall' } };
       card.srs = p.srs !== false &&                     // an author can always veto
                  !metalinguistic(card.front, p.kind) &&
+                 !descriptive(card.back) &&
                  reproducible(card.back, p.kind, card.front);
       return card;
     });

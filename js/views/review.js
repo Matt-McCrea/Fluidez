@@ -47,7 +47,13 @@ window.StageReview = (function () {
         // still being served, which is what kept "How does X express an
         // obligation?" appearing in Repasar.
         if (r.srs === false) return;
-        items.push({ id: r.id, front: r.front, back: r.back, kind: 'grammar', fixed: true, enrolledOnly: true });
+        /* Carry `probe` through. js/lessons.js keeps the ORIGINAL shape on
+         * every card precisely so the view can "ask it the way it was
+         * written", and this was the call site dropping it — so a question
+         * authored as a four-way choice arrived as a blank box demanding the
+         * exact string, comma and capital included. */
+        items.push({ id: r.id, front: r.front, back: r.back, kind: 'grammar',
+                     fixed: true, enrolledOnly: true, probe: r.probe || null });
       });
     });
     (window.VERBS || []).forEach(function (v) {
@@ -90,6 +96,11 @@ window.StageReview = (function () {
 
   // Resolve a card to a concrete direction: { front, back, mode, toSpanish, hint }
   function resolve(card, pr) {
+    // a question written as a choice is asked as a choice, with ITS options
+    if (card.fixed && card.probe && card.probe.kind === 'mcq' && (card.probe.options || []).length > 1) {
+      return { front: card.front, back: card.back, mode: 'choice', toSpanish: true,
+               options: card.probe.options, hint: card.hint || null };
+    }
     if (card.fixed) return { front: card.front, back: card.back, mode: 'type', toSpanish: true, hint: card.hint || null };
     var d = pr.reviewDirection;
     if (d === 'graduated') d = (S.boxOf(card.id) <= 1) ? 'es2en' : 'en2es';
@@ -163,14 +174,23 @@ window.StageReview = (function () {
       feedback.textContent = ''; feedback.className = 'feedback';
       stats.textContent = seen + ' done · ' + queue.length + ' to go';
       UI.clear(body);
-      var canChoose = R.mode === 'choice' && (enByKind[cur.kind] || []).filter(function (b) { return b !== R.back; }).length >= 3;
+      // an authored choice always has its options; a vocab card needs three
+      // plausible distractors scavenged from the same kind before it can offer one
+      var canChoose = R.mode === 'choice' &&
+        (R.options ? R.options.length > 1
+                   : (enByKind[cur.kind] || []).filter(function (b) { return b !== R.back; }).length >= 3);
       if (canChoose) showChoice(); else showType();
     }
 
     // ---- multiple-choice (recognition) ----
     function showChoice() {
-      var others = E.shuffle((enByKind[cur.kind] || []).filter(function (b) { return b !== R.back; }));
-      var opts = E.shuffle([R.back].concat(others.slice(0, 3)));
+      var opts;
+      if (R.options) {
+        opts = E.shuffle(R.options.slice());          // the options the author wrote
+      } else {
+        var others = E.shuffle((enByKind[cur.kind] || []).filter(function (b) { return b !== R.back; }));
+        opts = E.shuffle([R.back].concat(others.slice(0, 3)));
+      }
       var answered = false;
       var grid = UI.el('div', 'mcq-opts');
       opts.forEach(function (opt) {
