@@ -109,6 +109,7 @@ window.Progress = (function () {
     wrap.appendChild(UI.el('p', 'muted small',
       'Every lesson, in the order the course teaches them. Tap any one to take it — nothing is locked.'));
 
+    var BAND_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
     var UNITS = window.COURSE_UNITS || {};
     var DAYS = window.COURSE_DAYS || [];
     var here = (window.Profile && window.Profile.params().cefr) || 'A1';
@@ -146,6 +147,25 @@ window.Progress = (function () {
       bandDet.appendChild(UI.el('summary', null,
         band + ' — ' + us.length + UI.t(' unidades · ', ' units · ') + done + '/' + total + UI.t(' lecciones', ' lessons')));
 
+      /* A whole band at once, but only for bands BELOW the one you are on.
+       * "Everything under my level" is the actual request — somebody starting
+       * at B1 has 206 A1 and A2 lessons sitting unstudied, skewing every count
+       * on this screen and every "next unstudied lesson" the session picks.
+       * Offering it on your CURRENT band would mostly be a way to erase the
+       * work you are in the middle of. */
+      if (window.UnitCheck && BAND_ORDER.indexOf(band) < BAND_ORDER.indexOf(here)) {
+        var allDone = window.UnitCheck.bandDone(band);
+        var bandBtn = UI.el('button', 'unit-btn band-btn' + (allDone ? ' on' : ''),
+          allDone ? UI.t('Quitar la marca de ' + band, 'Unmark all of ' + band)
+                  : UI.t('Ya me sé ' + band + ' entero', 'I already know all of ' + band));
+        bandBtn.type = 'button';
+        bandBtn.addEventListener('click', function () {
+          window.UnitCheck.setBand(band, !allDone);
+          reRender();
+        });
+        bandDet.appendChild(bandBtn);
+      }
+
       us.forEach(function (u) {
         var ids = DAYS.slice(u.from, u.from + u.length)
           .filter(function (d) { return !!d.lesson; }).map(function (d) { return d.lesson; });
@@ -156,6 +176,34 @@ window.Progress = (function () {
           '<span class="unit-det-title">' + u.title + '</span>' +
           '<span class="unit-det-n muted">' + uDone + '/' + ids.length + '</span>'));
         if (u.goal) uDet.appendChild(UI.el('div', 'unit-det-goal muted', u.goal));
+
+        // ---- prove it, or just say you know it ----
+        if (window.UnitCheck) {
+          var ctrl = UI.el('div', 'unit-ctrl');
+          if (window.UnitCheck.testable(u)) {
+            var testB = UI.el('button', 'unit-btn', UI.t('Ponme a prueba', 'Test me'));
+            testB.type = 'button';
+            testB.addEventListener('click', function () {
+              window.Shell.openOverlay();
+              window.UnitCheck.run(u, reRender);
+            });
+            ctrl.appendChild(testB);
+          }
+          var uAll = window.UnitCheck.isDone(u);
+          var markB = UI.el('button', 'unit-btn' + (uAll ? ' on' : ''),
+            uAll ? UI.t('Quitar ✓', 'Unmark') : UI.t('Marcar ✓', 'Mark done'));
+          markB.type = 'button';
+          markB.title = uAll ? UI.t('Volver a marcarla como pendiente', 'Put it back to not done')
+                             : UI.t('Marcar las ' + ids.length + ' lecciones sin hacerlas',
+                                    'Mark all ' + ids.length + ' lessons without taking them');
+          markB.addEventListener('click', function () {
+            window.UnitCheck.setUnit(u, !uAll);
+            reRender();
+          });
+          ctrl.appendChild(markB);
+          uDet.appendChild(ctrl);
+        }
+
         var syl = UI.el('div', 'syllabus');
         ids.forEach(function (id) { syl.appendChild(lessonRow(id)); });
         uDet.appendChild(syl);
