@@ -133,6 +133,79 @@
 }
 .g-weak-go:hover { background: var(--panel); }
 
+/* ------------------------------------------------------- the Inicio card ----
+   Directly under the day's session, which is the best slot on the home
+   screen. It is a surface, not a list row, because a row saying "Review that
+   plays like a game" is what used to be at the BOTTOM of that screen and is
+   not something anybody taps. Deliberately flatter than .today-card — the
+   course still leads — but it carries real numbers and three ways in. */
+.home-games {
+  --game: var(--accent);
+  background: var(--panel); border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-2); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 16px 20px 15px; margin-bottom: 26px;
+}
+.hg-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; }
+.hg-eyebrow {
+  font-size: .7rem; text-transform: uppercase; letter-spacing: .1em;
+  font-weight: 750; color: var(--accent-2);
+}
+.hg-all {
+  margin-left: auto; border: none; background: none; cursor: pointer; padding: 0;
+  color: var(--muted); font-size: .82rem; font-weight: 600; min-height: 0;
+}
+.hg-all:hover { color: var(--accent); }
+
+.hg-daily { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.hg-daily-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.hg-daily-text b { font-size: 1.04rem; font-weight: 700; }
+.hg-daily-text span { color: var(--muted); font-size: .88rem; font-variant-numeric: tabular-nums; }
+.hg-go {
+  flex: none; border: none; background: var(--accent); color: #fff;
+  font-weight: 650; font-size: .92rem; padding: 10px 22px; border-radius: 9px; cursor: pointer;
+}
+.hg-go:hover { background: var(--accent-2); }
+
+.hg-chips { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.hg-chip {
+  flex: 1 1 0; min-width: 118px;
+  display: flex; align-items: center; gap: 9px; text-align: left; cursor: pointer;
+  border: 1px solid var(--border); border-top: 2px solid var(--game);
+  background: var(--panel-2); color: var(--text);
+  border-radius: 10px; padding: 9px 11px;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.hg-chip:hover { border-color: var(--game); transform: translateY(-1px); }
+.hg-chip:active { transform: translateY(0); }
+.hg-chip-ico { font-size: 1.15rem; line-height: 1; flex: none; }
+.hg-chip-mid { display: flex; flex-direction: column; gap: 0; min-width: 0; }
+.hg-chip-mid b {
+  font-size: .9rem; font-weight: 700; line-height: 1.25;
+  /* never clip a name mid-glyph, whatever the viewport does */
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.hg-chip-pb {
+  font-size: .76rem; color: var(--game); font-weight: 650;
+  font-variant-numeric: tabular-nums; line-height: 1.25;
+}
+
+@media (max-width: 640px) {
+  .home-games { padding: 14px 15px 13px; }
+  .hg-chip { min-width: 0; padding: 8px 9px; gap: 7px; }
+  .hg-chip-mid b { font-size: .84rem; }
+  .hg-chip-ico { font-size: 1rem; }
+}
+/* Three chips, an icon each, on a 390px phone leaves about 65px for a name
+   like "Traducción" — so the icon goes. Each chip keeps its coloured top
+   edge, which is what actually identifies the game; the emoji was the
+   redundant half of that pair. */
+@media (max-width: 430px) {
+  .hg-chip-ico { display: none; }
+  .hg-chip { padding: 8px 10px; }
+  .hg-chip-mid b { font-size: .82rem; }
+  .hg-chip-pb { font-size: .72rem; }
+}
+
 /* =========================================================== a round in play */
 /* --game is set on the element by js/games.js, so it must NOT be declared
    here: a rule on .g-shell would win over the inline value and every game

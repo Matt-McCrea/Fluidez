@@ -114,6 +114,20 @@ window.Shell = (function () {
     }
     host.appendChild(card);
 
+    /* Order on this screen is an argument about what the learner should do
+     * next. Today's session first, because that is the course. Then GAMES,
+     * because five minutes against your own best is the thing somebody
+     * actually opens the app for when they have not got twenty — it used to
+     * sit at the very bottom under the error deck, which is the one place
+     * nobody goes looking for something fun. Then the other session lengths,
+     * then the mistakes, which matter but are nobody's idea of an invitation.
+     * ---------------------------------------------------------------------- */
+    if (window.Games && window.Games.homeCard) {
+      host.appendChild(window.Games.homeCard(function () {
+        window.Shell.closeOverlay(); window.Shell.go('inicio');
+      }));
+    }
+
     // ---- shorter and longer ways in ----
     if (window.Session && window.Session.modes) {
       var alt = window.Session.modes().filter(function (m) { return m.key !== 'diaria'; });
@@ -143,12 +157,9 @@ window.Shell = (function () {
       eb.addEventListener('click', function () { window.App.go('errors'); });
       extras.appendChild(eb);
     }
-    var gb = UI.el('button', 'home-extra games'); gb.type = 'button';
-    gb.innerHTML = '<span class="he-ico">🎮</span><span class="he-text"><b>' + T('Juegos', 'Games') + '</b><br>' +
-      '<span class="muted small">' + T('Repaso que se juega', 'Review that plays like a game') + '</span></span>';
-    gb.addEventListener('click', function () { window.App.go('games'); });
-    extras.appendChild(gb);
-    host.appendChild(extras);
+    // the only thing left in here is the mistake deck, so with no mistakes
+    // there is nothing to append — an empty block would just add a gap
+    if (extras.firstChild) host.appendChild(extras);
   }
 
   // ---- Más: a menu, with its own sub-navigation inside the same container --

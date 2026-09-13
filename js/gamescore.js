@@ -175,9 +175,13 @@ window.GameScore = (function () {
   function nearMissScore(key) {
     var s = stats(key);
     if (!s.pb || s.history.length < 2) return 0;
-    var recent = s.history.slice(-3);
-    var best = recent.reduce(function (m, h) { return Math.max(m, h.s); }, 0);
-    return best / s.pb;            // 0…1, where ~0.95 means "one more round"
+    /* The LAST round against the best, not the best of the last few — which
+     * was the bug: the round that SET the personal best is one of the last
+     * few, so the ratio came out at exactly 1.0 and the game was never
+     * offered. "Your last game was 290 off" is the line that makes somebody
+     * play again anyway; the best of the last three is not a sentence. */
+    var last = s.history[s.history.length - 1].s;
+    return last / s.pb;            // 0…1, where ~0.95 means "one more round"
   }
 
   // ---- the daily challenge -------------------------------------------------

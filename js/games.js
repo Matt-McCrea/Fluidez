@@ -210,15 +210,97 @@ window.Games = (function () {
 
     var go = el('button', 'g-daily-go', best ? 'Volver a intentarlo' : 'Jugar');
     go.type = 'button';
-    go.addEventListener('click', function () {
-      var h = host();
-      clear(h);
-      window.GameRound.run(h, {
-        key: key, title: 'Reto de hoy', kind: 'mixed', duration: 90000,
-        hue: 'var(--accent)', seed: GS.dailySeed(), onExit: backToList
-      });
-    });
+    go.addEventListener('click', startDaily);
     card.appendChild(go);
+    return card;
+  }
+
+  function startDaily() {
+    var h = host();
+    clear(h);
+    window.GameRound.run(h, {
+      key: GS.dailyKey(), title: 'Reto de hoy', kind: 'mixed', duration: 90000,
+      hue: 'var(--accent)', seed: GS.dailySeed(), onExit: backToList
+    });
+  }
+
+  /* Open one game straight from somewhere else in the app — the home screen
+   * does this, so its chips are one tap from playing rather than one tap from
+   * a menu. "Back" from inside still means the Games list. */
+  function open(key, back) {
+    exitAll = back || function () { window.Shell.closeOverlay(); window.Shell.go('inicio'); };
+    window.Shell.openOverlay(false);
+    if (key === GS.dailyKey()) return startDaily();
+    var g = byKey(key);
+    if (g) start(g); else render(host(), exitAll);
+  }
+
+  /* ===========================================================================
+   * The Inicio card.
+   *
+   * Games sit directly under the day's session now, which is the best slot on
+   * the home screen, so the entry has to earn it: a flat row saying "Review
+   * that plays like a game" says nothing that would make anybody tap it.
+   *
+   * This says something TRUE instead — how close today's challenge is to your
+   * best, or which record you nearly beat last time — and carries three games
+   * with their own records, each one tap from playing. The claim it is making
+   * is the whole point of the section: there is a number here you are trying
+   * to beat.
+   * ========================================================================= */
+  function homeLine() {
+    var key = GS.dailyKey(), todayBest = GS.todayBest(key), best = GS.pb(key);
+    if (!todayBest) return '90 segundos · el mismo reto para todos hoy';
+    if (best && todayBest < best) return 'Hoy ' + GS.fmt(todayBest) + ' · te faltan ' + GS.fmt(best - todayBest) + ' para tu récord';
+    return 'Hoy ' + GS.fmt(todayBest) + ' — tu mejor marca';
+  }
+
+  function homeCard(back) {
+    var open3 = GAMES.filter(playable);
+    // the one you nearly beat first, then whatever you play most
+    var rec = recommend();
+    var rest = open3.filter(function (g) { return !rec || g.key !== rec.game.key; })
+      .sort(function (a, b) { return GS.stats(b.key).plays - GS.stats(a.key).plays; });
+    var show = (rec ? [rec.game] : []).concat(rest).slice(0, 3);
+
+    var card = el('div', 'home-games');
+
+    var head = el('div', 'hg-head');
+    head.appendChild(el('span', 'hg-eyebrow', 'Juegos'));
+    var all = el('button', 'hg-all', 'Todos ›');
+    all.type = 'button';
+    all.addEventListener('click', function () { window.App.go('games'); });
+    head.appendChild(all);
+    card.appendChild(head);
+
+    var row = el('div', 'hg-daily');
+    var text = el('div', 'hg-daily-text');
+    text.appendChild(el('b', null, 'Reto de hoy'));
+    text.appendChild(el('span', null, homeLine()));
+    row.appendChild(text);
+    var go = el('button', 'hg-go', GS.todayBest(GS.dailyKey()) ? 'Otra vez' : 'Jugar');
+    go.type = 'button';
+    go.addEventListener('click', function () { open(GS.dailyKey(), back); });
+    row.appendChild(go);
+    card.appendChild(row);
+
+    var chips = el('div', 'hg-chips');
+    show.forEach(function (g) {
+      var st = GS.stats(g.key);
+      var c = el('button', 'hg-chip');
+      c.type = 'button';
+      c.style.setProperty('--game', g.hue);
+      c.appendChild(el('span', 'hg-chip-ico', g.icon));
+      var mid = el('span', 'hg-chip-mid');
+      mid.appendChild(el('b', null, g.name));
+      mid.appendChild(el('span', 'hg-chip-pb',
+        st.pb ? (g.sudden ? st.bestRun + ' seguidas' : GS.fmt(st.pb))
+              : (g.sudden ? 'muerte súbita' : g.secs + ' s')));
+      c.appendChild(mid);
+      c.addEventListener('click', function () { open(g.key, back); });
+      chips.appendChild(c);
+    });
+    card.appendChild(chips);
     return card;
   }
 
@@ -519,5 +601,5 @@ window.Games = (function () {
     tick();
   }
 
-  return { render: render, GAMES: GAMES };
+  return { render: render, open: open, homeCard: homeCard, GAMES: GAMES };
 })();
