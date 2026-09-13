@@ -461,6 +461,31 @@ window.ENGINE = (function () {
     drink: ['drank', 'drunk'], run: ['ran', 'run'], sell: ['sold', 'sold'],
     forget: ['forgot', 'forgotten'], draw: ['drew', 'drawn'], swim: ['swam', 'swum'],
     hide: ['hid', 'hidden'], build: ['built', 'built'],
+    /* The sixty heads below are irregular in English and were producing
+     * "I have geted", "I have becomed", "I have seted out" — get alone is the
+     * gloss head of 29 Spanish verbs, so this was visible everywhere a
+     * conjugation is prompted by meaning rather than by label. */
+    get: ['got', 'got'], become: ['became', 'become'], make: ['made', 'made'],
+    throw: ['threw', 'thrown'], cut: ['cut', 'cut'], freeze: ['froze', 'frozen'],
+    grow: ['grew', 'grown'], sit: ['sat', 'sat'], spread: ['spread', 'spread'],
+    broadcast: ['broadcast', 'broadcast'], choose: ['chose', 'chosen'],
+    fight: ['fought', 'fought'], hold: ['held', 'held'], keep: ['kept', 'kept'],
+    let: ['let', 'let'], send: ['sent', 'sent'], shrink: ['shrank', 'shrunk'],
+    spend: ['spent', 'spent'], stick: ['stuck', 'stuck'], bear: ['bore', 'borne'],
+    bend: ['bent', 'bent'], bet: ['bet', 'bet'], blow: ['blew', 'blown'],
+    deal: ['dealt', 'dealt'], feed: ['fed', 'fed'], flee: ['fled', 'fled'],
+    fly: ['flew', 'flown'], forbid: ['forbade', 'forbidden'],
+    forgive: ['forgave', 'forgiven'], grind: ['ground', 'ground'],
+    hang: ['hung', 'hung'], hurt: ['hurt', 'hurt'], lend: ['lent', 'lent'],
+    lie: ['lay', 'lain'], mean: ['meant', 'meant'], meet: ['met', 'met'],
+    overcome: ['overcame', 'overcome'], ride: ['rode', 'ridden'],
+    rise: ['rose', 'risen'], set: ['set', 'set'], sew: ['sewed', 'sewn'],
+    shine: ['shone', 'shone'], shoot: ['shot', 'shot'], sink: ['sank', 'sunk'],
+    slide: ['slid', 'slid'], sow: ['sowed', 'sown'], spin: ['spun', 'spun'],
+    spit: ['spat', 'spat'], split: ['split', 'split'], stand: ['stood', 'stood'],
+    steal: ['stole', 'stolen'], sting: ['stung', 'stung'], swear: ['swore', 'sworn'],
+    teach: ['taught', 'taught'], upset: ['upset', 'upset'], wake: ['woke', 'woken'],
+    wear: ['wore', 'worn'], withdraw: ['withdrew', 'withdrawn'],
     // regular verbs whose -ed spelling doubles the final consonant
     prefer: ['preferred', 'preferred'], occur: ['occurred', 'occurred'],
     permit: ['permitted', 'permitted'], admit: ['admitted', 'admitted']
@@ -474,7 +499,13 @@ window.ENGINE = (function () {
     var qualifier = null, rest = en;
     var m = rest.match(/\(([^)]+)\)/);
     if (m) { qualifier = m[1]; rest = rest.replace(m[0], '').replace(/\s+/g, ' ').trim(); }
-    var first = rest.split('/')[0].trim().replace(/^to\s+/, '');
+    /* A gloss lists alternatives with a slash OR a comma — "to dress, to
+     * wear", "to set out, to present" — and only the first is the phrase to
+     * build an English tense from. Splitting on the slash alone left the comma
+     * inside the HEAD word, so enParticiple("dress,") returned "dress,ed" and
+     * 418 of the 1,166 verbs prompted with broken English ("I have dress,ed to
+     * wear") everywhere a conjugation is asked for. */
+    var first = rest.split(/\s*[\/,]\s*/)[0].trim().replace(/^to\s+/, '');
     return { base: first, qualifier: qualifier };
   }
 
