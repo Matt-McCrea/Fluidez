@@ -1,739 +1,523 @@
 /* ============================================================================
- * GAMES — "Juegos": spaced practice that doesn't feel like practice.
+ * JUEGOS — the games section: five to fifteen minutes, against your last score.
  *
- * Every game reads from and writes to the SAME SRS ids and error log as the
- * daily session — games are not a separate silo, and a correct answer in a
- * game is a correct review. No XP economy, no levels, no daily-target
- * nagging, no audio — deliberately out of scope.
+ * This file used to hold five games, each with its own setup screen, its own
+ * round loop and a "score" that counted correct answers — so the number you
+ * were chasing said nothing about your Spanish, and the default mode had no
+ * score, no clock and no end at all. The games were good practice and nobody
+ * would ever have chosen to play one twice.
  *
- * Two modes on every game, chosen on the round-start screen:
- *   Tranquilo    — untimed, no score pressure, no timer shown. The default
- *                  everywhere (the only default in beginner mode). No fixed
- *                  round length — the pool recycles indefinitely and you tap
- *                  "Terminar" whenever you want to stop and see the summary.
- *   Contrarreloj — 90 seconds, points for correct answers, a personal best
- *                  stored per game+submode. Selectable in every mode, never
- *                  pre-selected. Runs until the clock ends, recycling the
- *                  item pool if it's exhausted first.
+ * What is here now is a REGISTRY and a landing page. The three things a game
+ * needs — what a point is worth (js/gamescore.js), where the questions come
+ * from (js/gameitems.js) and how a round plays (js/gameround.js) — are shared,
+ * so adding a game is an entry in a list rather than another loop to maintain.
  *
- * Misses are logged to the error log AS THEY HAPPEN (the same convention the
- * daily session and drills use), so by the time the round-end screen offers
- * "these are now in Puntos débiles" it's already true — no separate step to
- * forget to take.
+ * Tapping a tile STARTS THE GAME. No submode, no verb scope, no difficulty, no
+ * mode toggle: the ladder handles difficulty by watching you answer, and the
+ * only choice left before playing is which game. Every tile carries its own
+ * personal best, because the whole motivation — "let's see if I can beat
+ * 8,420" — has to be visible at the moment you are deciding whether to play.
+ *
+ * Emparejar keeps a loop of its own at the foot of this file: a board that
+ * empties is not a sequence of items, and the shared round engine would have
+ * had to grow a second shape to hold it.
  * ========================================================================== */
 window.Games = (function () {
-  var UI = window.UI, E = window.ENGINE, S = window.SRS;
-  var BEST_KEY = 'fluidez.gameBest';
-  var CONTRARRELOJ_SECONDS = 90;
+  var UI = window.UI, E = window.ENGINE, GS = window.GameScore, GI = window.GameItems;
 
-  function isBeginner() { return !!(window.Profile && window.Profile.isPaced()); }
-  function loadBest() { try { return JSON.parse(localStorage.getItem(BEST_KEY)) || {}; } catch (e) { return {}; } }
-  function saveBest(o) { try { localStorage.setItem(BEST_KEY, JSON.stringify(o)); } catch (e) {} }
-  function bestFor(key) { return loadBest()[key] || 0; }
-  function setBest(key, score) { var b = loadBest(); if (score > (b[key] || 0)) { b[key] = score; saveBest(b); return true; } return false; }
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function clear(n) { while (n && n.firstChild) n.removeChild(n.firstChild); }
 
-  // Games isn't a Shell tab — it's reached as an overlay from the Inicio tile.
-  // "Back" from inside any game means "show the Games list again", still
-  // inside the same overlay; only the list's own exit truly closes it.
   var exitAll = null;
-  function backToTab() { render(document.getElementById('stage-host'), exitAll); }
+  function host() { return document.getElementById('stage-host'); }
+  function backToList() { render(host(), exitAll); }
 
-  // A natural English phrase for a conjugated form ("he ate", "we will speak")
-  // instead of a grammatical label (infinitive · person · tense) — matching
-  // the form to what it actually MEANS is the useful skill; the label just
-  // asks you to have memorised terminology. Used by every conjugation-based
-  // game and drill. A marker is appended when English can't distinguish the
-  // form from another Spanish one without more context (subjunctive mood,
-  // which "you" a command addresses).
-  function conjPrompt(v, tk, i) {
-    var p = E.enPhrase(v, tk, i);
-    return p.text + (p.marker ? ' (' + p.marker + ')' : '');
+  /* One accent per game. Colour is what makes the Games page feel like a
+   * shelf of different things rather than one list repeated six times, and it
+   * follows you into the round, so you always know what you are playing. */
+  var GAMES = [
+    { key: 'traduccion', name: 'Traducción', rule: 'inglés → español', icon: '✍️',
+      hue: '#1d7f8c', secs: 60, kind: 'translate',
+      blurb: 'Escribe el español. Las frases se alargan según aciertas.' },
+    { key: 'escucha', name: 'Escucha', rule: 'óyelo una vez', icon: '🎧',
+      hue: '#7a5bd0', secs: 60, kind: 'listen', needsVoice: true,
+      blurb: 'Una voz lo dice. ¿Qué era? Cada nivel habla más rápido.' },
+    { key: 'verbos', name: 'Verbos', rule: '“he ate” → comió', icon: '⚡',
+      hue: '#b5711a', secs: 60, kind: 'verb',
+      blurb: 'Del significado a la forma, sin etiquetas gramaticales.' },
+    { key: 'gramatica', name: 'Gramática', rule: '¿cuál va aquí?', icon: '🎯',
+      hue: '#2f7fb8', secs: 90, kind: 'grammar',
+      blurb: 'Ser o estar, por o para, indicativo o subjuntivo. Noventa segundos.' },
+    /* Not red, however much "sudden death" wants to be: --game colours the
+     * focused input and the clock, and red already means "you got that wrong"
+     * everywhere else in the round. A game whose resting state looks like an
+     * error state is telling the player the wrong thing continuously. */
+    { key: 'racha', name: 'Racha', rule: 'un fallo y se acaba', icon: '🔥',
+      hue: '#a8306e', sudden: true, kind: 'mixed',
+      blurb: 'Cualquier cosa, sin avisar. Un solo error termina la partida.' },
+    { key: 'emparejar', name: 'Emparejar', rule: 'vacía el tablero', icon: '🃏',
+      hue: '#2f8f5b', secs: 60, custom: true,
+      blurb: 'Empareja las columnas. Cada tablero es más grande que el anterior.' }
+  ];
+  function byKey(k) { return GAMES.filter(function (g) { return g.key === k; })[0]; }
+
+  function playable(g) {
+    if (!g.needsVoice) return true;
+    return !!(window.Speak && window.Speak.available());
   }
 
-  function logMiss(item) {
-    if (!window.ErrorLog || !item.id) return;
-    window.ErrorLog.record({ id: item.id, front: item.front, back: item.back, kind: item.kind || 'game', source: 'game', hint: item.hint || null, reviewable: false });
-  }
-  function grade(item, good) {
-    if (!item.id || !S) return;
-    S.enrol(item.id);
-    S.grade(item.id, good);
-    if (!good) logMiss(item);
-  }
-
-  // ---- shared round chrome: header, timer/score, life-cycle, end summary --
-  // items: pre-shuffled pool (>= round length ideally; short pools recycle).
-  // renderItem(itemHost, item, answer(good)) draws one item; the game calls
-  // answer(good) when it's resolved. onFinish gets the raw results if a game
-  // needs to do something extra (Emparejar's grid doesn't use this at all).
-  function runRound(host, opts) {
-    var title = opts.title, items = opts.items, renderItem = opts.renderItem;
-    var tranquilo = opts.tranquilo, gameKey = opts.gameKey;
-    var bestKey = gameKey + (opts.submode ? ':' + opts.submode : '');
-    if (!items.length) {
-      UI.clear(host);
-      var empty = UI.el('div', 'panel');
-      empty.appendChild(UI.el('h2', null, title));
-      empty.appendChild(UI.el('p', 'muted', 'Nothing to play with yet for this combination.'));
-      var b0 = UI.el('button', 'ghost-btn', '← Juegos'); b0.type = 'button'; b0.addEventListener('click', backToTab);
-      empty.appendChild(b0); host.appendChild(empty); return;
-    }
-
-    var pool = E.shuffle(items.slice());
-    var idx = 0, correct = 0, seen = 0, misses = [];
-    var endTime = tranquilo ? null : Date.now() + CONTRARRELOJ_SECONDS * 1000;
-    var timerId = null, finished = false;
-
-    UI.clear(host);
-    var wrap = UI.el('div', 'panel');
-    var head = UI.el('div', 'stage-head');
-    head.appendChild(UI.el('span', 'eyebrow', title + (tranquilo ? '' : ' · Contrarreloj')));
-    var right = UI.el('span', 'stage-count');
-    var timerEl = UI.el('span', 'game-timer');
-    var finishB = UI.el('button', 'ghost-btn small', 'Terminar'); finishB.type = 'button'; finishB.style.marginTop = '0';
-    finishB.addEventListener('click', finish);
-    var exitB = UI.el('button', 'ghost-btn small', '✕ salir'); exitB.type = 'button'; exitB.style.marginTop = '0';
-    exitB.addEventListener('click', function () { if (timerId) clearInterval(timerId); backToTab(); });
-    right.appendChild(timerEl); right.appendChild(UI.el('span', null, '  '));
-    if (tranquilo) { right.appendChild(finishB); right.appendChild(UI.el('span', null, '  ')); }
-    right.appendChild(exitB);
-    head.appendChild(right);
-    wrap.appendChild(head);
-
-    var scoreRow = UI.el('div', 'muted small game-score');
-    wrap.appendChild(scoreRow);
-    var itemHost = UI.el('div');
-    wrap.appendChild(itemHost);
-    host.appendChild(wrap);
-
-    function updateScore() {
-      scoreRow.textContent = correct + ' correct · ' + seen + ' seen' + (!tranquilo && bestFor(bestKey) ? ' · best ' + bestFor(bestKey) : '');
-    }
-    function tick() {
-      var remain = Math.max(0, endTime - Date.now());
-      var s = Math.ceil(remain / 1000);
-      timerEl.textContent = '⏱ ' + s + 's';
-      if (remain <= 0) finish();
-    }
-    if (!tranquilo) { tick(); timerId = setInterval(tick, 250); }
-
-    // No fixed round length — the pool just recycles for as long as you want
-    // to keep going; Tranquilo ends only when you tap Terminar, Contrarreloj
-    // only when the clock runs out.
-    function nextItem() {
-      if (idx >= pool.length) { pool = E.shuffle(items.slice()); idx = 0; }   // recycle
-      var item = pool[idx++];
-      renderItem(itemHost, item, function (good) {
-        seen++; if (good) correct++; else misses.push(item);
-        grade(item, good);
-        updateScore();
-        nextItem();
-      });
-      updateScore();
-    }
-
-    function finish() {
-      if (finished) return; finished = true;
-      if (timerId) { clearInterval(timerId); timerId = null; }
-      UI.clear(itemHost); UI.clear(scoreRow);
-      var isNewBest = !tranquilo && setBest(bestKey, correct);
-      var done = UI.el('div', 'intro complete');
-      done.appendChild(UI.el('div', 'big-check', '✓'));
-      done.appendChild(UI.el('h2', null, tranquilo ? UI.t('Listo', 'Done') : UI.t('¡Tiempo!', "Time's up")));
-      done.appendChild(UI.el('p', null, correct + ' correct de ' + seen + (tranquilo ? '' : (isNewBest ? ' — ¡nuevo récord!' : ' · récord: ' + bestFor(bestKey)))));
-      if (misses.length) {
-        done.appendChild(UI.el('h3', null, 'Para revisar'));
-        var ul = UI.el('ul', 'summary-list');
-        misses.slice(0, 8).forEach(function (m) { ul.appendChild(UI.el('li', null, (m.front || '') + ' → <b>' + (m.back || '') + '</b>')); });
-        done.appendChild(ul);
-        done.appendChild(UI.el('p', 'muted small', 'Ya están en Puntos débiles.'));
-      }
-      var again = UI.el('button', 'primary-btn', 'Jugar de nuevo'); again.type = 'button';
-      again.addEventListener('click', function () { runRound(host, opts); });
-      var back = UI.el('button', 'ghost-btn', '← Juegos'); back.type = 'button'; back.addEventListener('click', backToTab);
-      done.appendChild(again); done.appendChild(back);
-      wrap.appendChild(done);
-    }
-
-    nextItem();
+  function start(g, extra) {
+    var h = host();
+    clear(h);
+    if (g.custom) return runEmparejar(h, g);
+    var cfg = {
+      key: g.key, title: g.name, kind: g.kind,
+      duration: g.secs ? g.secs * 1000 : null,
+      sudden: !!g.sudden, hue: g.hue,
+      onExit: backToList
+    };
+    if (extra) Object.keys(extra).forEach(function (k) { cfg[k] = extra[k]; });
+    window.GameRound.run(h, cfg);
   }
 
-  // Mode picker shared by every game's setup screen.
-  function modeToggle(container, onChange) {
-    var def = window.Profile ? window.Profile.params().defaultGameMode : 'tranquilo';
-    var tranquilo = def === 'tranquilo';
-    var bar = UI.el('div', 'profile-bar muted');
-    bar.appendChild(UI.el('span', null, 'Modo:'));
-    var seg = UI.el('div', 'segmented');
-    [['tranquilo', 'Tranquilo'], ['contrarreloj', 'Contrarreloj']].forEach(function (o) {
-      var b = UI.el('button', 'seg' + (o[0] === def ? ' active' : ''), o[1]); b.type = 'button';
-      b.addEventListener('click', function () {
-        tranquilo = o[0] === 'tranquilo';
-        Array.prototype.forEach.call(seg.children, function (x) { x.classList.remove('active'); });
-        b.classList.add('active');
-        onChange(tranquilo);
-      });
-      seg.appendChild(b);
+  // ---- what to put at the top ---------------------------------------------
+  /* One recommendation, not six. In order: a game you very nearly beat last
+   * time (the only genuinely motivating reason to open one), then a game you
+   * have never played, then the one you have played least. It says nothing at
+   * all when it has nothing true to say. */
+  function recommend() {
+    var open = GAMES.filter(playable);
+    var close = null, closest = 0;
+    open.forEach(function (g) {
+      var n = GS.nearMissScore(g.key);
+      if (n > 0.88 && n < 1 && n > closest) { closest = n; close = g; }
     });
-    bar.appendChild(seg);
-    container.appendChild(bar);
-    return function () { return tranquilo; };
-  }
-
-  function exitHeader(title) {
-    var head = UI.el('div', 'stage-head');
-    head.appendChild(UI.el('span', 'eyebrow', title));
-    var exitB = UI.el('button', 'ghost-btn small', '✕ salir'); exitB.type = 'button'; exitB.style.marginTop = '0';
-    exitB.addEventListener('click', backToTab);
-    var right = UI.el('span', 'stage-count'); right.appendChild(exitB);
-    head.appendChild(right);
-    return head;
-  }
-
-  // ===========================================================================
-  // 1. EMPAREJAR — matching pairs (ES↔EN vocab, or verb form ↔ meaning)
-  // ===========================================================================
-  function vocabPairSource() {
-    return (window.VOCAB || []).filter(function (w) { return window.Profile ? window.Profile.wordAllowed(w) : true; })
-      .map(function (w) { return { id: 'v:' + w.es + ':meaning', a: w.es, b: w.en, kind: 'vocab' }; });
-  }
-  // Naively sampling (verb, tense, person) triples at random tends to land a
-  // whole board on the same tense by chance — and when the tense doesn't
-  // vary, the English side is just the subject pronoun ("I", "you", "we"...),
-  // so the puzzle reduces to pronoun-elimination and never actually tests
-  // conjugation. Holding the PERSON fixed and deliberately varying the TENSE
-  // for each verb makes the English clues genuinely distinct in meaning
-  // ("I speak" / "I spoke" / "I used to speak") and forces real tense
-  // knowledge. Generated fresh per page, so each page mixes different
-  // verbs/persons but always keeps this same-person, mixed-tense structure.
-  function conjPairSourceMixed(tenses, count) {
-    var simple = (tenses || []).filter(function (tk) { return tk !== 'imperativo'; });
-    if (!simple.length) simple = ['presente'];
-    var verbs = E.shuffle((window.Profile ? window.Profile.conjugableVerbs() : (window.VERBS || [])).slice());
-    if (!verbs.length) return [];
-    var out = [], vi = 0, guard = 0;
-    while (out.length < count && guard < verbs.length * 4 + 20) {
-      guard++;
-      var v = verbs[vi % verbs.length]; vi++;
-      var personIdx = Math.floor(Math.random() * 6);   // fixed for this verb's whole contribution
-      var pickedTenses = E.shuffle(simple.slice()).slice(0, Math.min(simple.length, 3 + Math.floor(Math.random() * 2)));
-      pickedTenses.forEach(function (tk) {
-        if (out.length >= count) return;
-        var form = E.conjugate(v, tk)[personIdx];
-        if (!form) return;
-        out.push({ id: 'vt:' + v.inf + ':' + tk, a: form, b: conjPrompt(v, tk, personIdx), kind: 'verb-tense' });
-      });
+    if (close) {
+      var st = GS.stats(close.key);
+      var last = st.history.length ? st.history[st.history.length - 1].s : 0;
+      return { game: close, why: 'Tu última partida se quedó a ' + GS.fmt(st.pb - last) + ' del récord' };
     }
-    return out;
+    var fresh = open.filter(function (g) { return !GS.stats(g.key).plays; });
+    if (fresh.length) return { game: fresh[0], why: 'Todavía no lo has probado' };
+    var least = open.slice().sort(function (a, b) { return GS.stats(a.key).plays - GS.stats(b.key).plays; })[0];
+    return least ? { game: least, why: 'Hace tiempo que no juegas a este' } : null;
   }
 
-  function showEmparejarSetup(host) {
-    UI.clear(host);
-    var wrap = UI.el('div', 'panel');
-    wrap.appendChild(exitHeader('Emparejar'));
-    wrap.appendChild(UI.el('p', 'muted', 'Tap one from each side to match them. Español on the left, English on the right. Match them all and the next board deals automatically.'));
-    var content = 'vocab';
-    wrap.appendChild(UI.el('h3', null, UI.t('Contenido', 'Content')));
-    var seg1 = UI.el('div', 'segmented');
-    [['vocab', 'Vocabulario'], ['conj', 'Verbos']].forEach(function (o) {
-      var b = UI.el('button', 'seg' + (content === o[0] ? ' active' : ''), o[1]); b.type = 'button';
-      b.addEventListener('click', function () { content = o[0]; Array.prototype.forEach.call(seg1.children, function (x) { x.classList.remove('active'); }); b.classList.add('active'); });
-      seg1.appendChild(b);
+  /* A topic the learner keeps getting wrong, if there is one. Four misses is
+   * the threshold js/suggest.js already uses before it offers a deep dive —
+   * one bad day should not trigger anything, and nothing here is a scold. */
+  function weakSpot() {
+    if (!window.ErrorLog) return null;
+    var byTopic = {};
+    window.ErrorLog.list().forEach(function (e) {
+      if (!e.topic) return;
+      byTopic[e.topic] = (byTopic[e.topic] || 0) + (e.count || 1);
     });
-    var bar1 = UI.el('div', 'profile-bar muted'); bar1.appendChild(seg1); wrap.appendChild(bar1);
+    var best = null;
+    Object.keys(byTopic).forEach(function (t) {
+      if (byTopic[t] >= 4 && (!best || byTopic[t] > byTopic[best])) best = t;
+    });
+    if (!best) return null;
+    return { topic: best, n: byTopic[best], label: topicLabel(best) };
+  }
+  function topicLabel(topic) {
+    var m = /^tense:(.+)$/.exec(topic);
+    if (m) return (E.TENSE_LABEL && E.TENSE_LABEL[m[1]]) || m[1];
+    var l = /^lesson:(.+)$/.exec(topic);
+    if (!l) return topic;
+    var found = (window.ALL_LESSONS || window.GRAMMAR_LESSONS || []).filter(function (x) { return x.id === l[1]; })[0];
+    return found ? found.title : l[1];
+  }
 
-    var getTranquilo = modeToggle(wrap, function () {});
-    var go = UI.el('button', 'primary-btn', 'Empezar →'); go.type = 'button';
+  // ---- the landing page ----------------------------------------------------
+  function render(h, back) {
+    exitAll = back;
+    clear(h);
+    h.style.removeProperty('--game');
+
+    var page = el('div', 'g-page');
+
+    var head = el('div', 'g-page-head');
+    var titles = el('div');
+    titles.appendChild(el('h1', null, 'Juegos'));
+    titles.appendChild(el('p', 'g-page-sub', 'Cinco minutos. A ver si superas tu marca.'));
+    head.appendChild(titles);
+    var out = el('button', 'g-exit', '✕');
+    out.type = 'button';
+    out.setAttribute('aria-label', 'Salir');
+    out.addEventListener('click', function () { if (back) back(); });
+    head.appendChild(out);
+    page.appendChild(head);
+
+    // ---- today's challenge ----
+    page.appendChild(dailyCard());
+
+    // ---- one recommendation ----
+    var rec = recommend();
+    if (rec) {
+      page.appendChild(el('h2', 'g-h', 'Sigue así'));
+      page.appendChild(recRow(rec));
+    }
+
+    // ---- the shelf ----
+    page.appendChild(el('h2', 'g-h', 'Todos los juegos'));
+    var grid = el('div', 'g-grid');
+    GAMES.forEach(function (g) { if (playable(g)) grid.appendChild(tile(g)); });
+    page.appendChild(grid);
+
+    // ---- your own weak spot ----
+    var weak = weakSpot();
+    if (weak) page.appendChild(weakCard(weak));
+
+    // ---- the quiet line at the foot ----
+    var wk = GS.weekSummary();
+    if (wk.plays) {
+      var bits = [wk.plays + (wk.plays === 1 ? ' partida' : ' partidas')];
+      if (wk.records) bits.push(wk.records + (wk.records === 1 ? ' récord' : ' récords'));
+      if (wk.bestRun) bits.push('mejor racha ' + wk.bestRun);
+      page.appendChild(el('p', 'g-week', 'Esta semana · ' + bits.join(' · ')));
+    }
+
+    h.appendChild(page);
+  }
+
+  function dailyCard() {
+    var key = GS.dailyKey();
+    var card = el('div', 'g-daily');
+    var top = el('div', 'g-daily-top');
+    top.appendChild(el('span', 'g-daily-label', 'Reto de hoy'));
+    top.appendChild(el('span', 'g-daily-date', GS.dailyLabel()));
+    card.appendChild(top);
+    card.appendChild(el('p', 'g-daily-rule', 'Mixto · 90 segundos · el mismo reto para todos hoy'));
+
+    var best = GS.todayBest(key), pb = GS.pb(key), streak = GS.dailyStreak();
+    var nums = el('div', 'g-daily-nums');
+    function n(v, l) {
+      var b = el('div', 'g-dn');
+      b.appendChild(el('b', null, v));
+      b.appendChild(el('span', null, l));
+      nums.appendChild(b);
+    }
+    n(best ? GS.fmt(best) : '—', 'tu mejor de hoy');
+    if (pb) n(GS.fmt(pb), 'récord');
+    if (streak > 1) n(String(streak), 'días seguidos');
+    card.appendChild(nums);
+
+    var go = el('button', 'g-daily-go', best ? 'Volver a intentarlo' : 'Jugar');
+    go.type = 'button';
     go.addEventListener('click', function () {
-      var tenses = window.Profile ? window.Profile.tenses() : ['presente'];
-      var vocabSource = content === 'vocab' ? vocabPairSource() : null;
-      // A page generator, not a flat pool — the conj source is regenerated
-      // per page so every new board gets a fresh same-person/mixed-tense set.
-      var dealPage = content === 'vocab'
-        ? function (n) { return UI.sample ? UI.sample(vocabSource, Math.min(n, vocabSource.length)) : E.shuffle(vocabSource.slice()).slice(0, n); }
-        : function (n) { return conjPairSourceMixed(tenses, n); };
-      runEmparejar(host, dealPage, getTranquilo(), content);
+      var h = host();
+      clear(h);
+      window.GameRound.run(h, {
+        key: key, title: 'Reto de hoy', kind: 'mixed', duration: 90000,
+        hue: 'var(--accent)', seed: GS.dailySeed(), onExit: backToList
+      });
     });
-    wrap.appendChild(go);
-    host.appendChild(wrap);
+    card.appendChild(go);
+    return card;
   }
 
-  var EMPAREJAR_PAGE = 6;   // a small board per page — clears fast, then deals the next automatically
+  function recRow(rec) {
+    var g = rec.game;
+    var row = el('button', 'g-rec');
+    row.type = 'button';
+    row.style.setProperty('--game', g.hue);
+    row.appendChild(el('span', 'g-rec-ico', g.icon));
+    var mid = el('span', 'g-rec-mid');
+    mid.appendChild(el('b', null, g.name));
+    mid.appendChild(el('span', 'g-rec-why', rec.why));
+    row.appendChild(mid);
+    var pb = GS.pb(g.key);
+    row.appendChild(el('span', 'g-rec-pb', pb ? 'PB ' + GS.fmt(pb) : g.secs + ' s'));
+    row.addEventListener('click', function () { start(g); });
+    return row;
+  }
 
-  function runEmparejar(host, dealPage, tranquilo, submode) {
-    var bestKey = 'emparejar:' + submode;
-    var totalMatched = 0, pagesDone = 0;
-    var endTime = tranquilo ? null : Date.now() + CONTRARRELOJ_SECONDS * 1000;
-    var timerId = null, finished = false;
+  function tile(g) {
+    var st = GS.stats(g.key);
+    var t = el('button', 'g-tile');
+    t.type = 'button';
+    t.style.setProperty('--game', g.hue);
 
-    UI.clear(host);
-    var wrap = UI.el('div', 'panel');
-    var head = UI.el('div', 'stage-head');
-    head.appendChild(UI.el('span', 'eyebrow', 'Emparejar' + (tranquilo ? '' : ' · Contrarreloj')));
-    var right = UI.el('span', 'stage-count');
-    var timerEl = UI.el('span', 'game-timer');
-    var finishB = UI.el('button', 'ghost-btn small', 'Terminar'); finishB.type = 'button'; finishB.style.marginTop = '0';
-    finishB.addEventListener('click', function () { finishEmparejar(); });
-    var exitB = UI.el('button', 'ghost-btn small', '✕ salir'); exitB.type = 'button'; exitB.style.marginTop = '0';
-    exitB.addEventListener('click', function () { if (timerId) clearInterval(timerId); backToTab(); });
-    right.appendChild(timerEl); right.appendChild(UI.el('span', null, '  '));
-    if (tranquilo) { right.appendChild(finishB); right.appendChild(UI.el('span', null, '  ')); }
-    right.appendChild(exitB);
-    head.appendChild(right);
-    wrap.appendChild(head);
+    var head = el('div', 'g-tile-head');
+    head.appendChild(el('span', 'g-tile-ico', g.icon));
+    head.appendChild(el('span', 'g-tile-len', g.sudden ? 'muerte súbita' : g.secs + ' s'));
+    t.appendChild(head);
 
-    var stats = UI.el('div', 'muted small game-score');
-    wrap.appendChild(stats);
-    var columns = UI.el('div', 'match-columns');
-    wrap.appendChild(columns);
-    host.appendChild(wrap);
+    t.appendChild(el('div', 'g-tile-name', g.name));
+    t.appendChild(el('div', 'g-tile-rule', g.rule));
 
-    function tick() {
-      var remain = Math.max(0, endTime - Date.now());
-      timerEl.textContent = '⏱ ' + Math.ceil(remain / 1000) + 's';
-      if (remain <= 0) finishEmparejar();
+    var foot = el('div', 'g-tile-foot');
+    if (st.pb) {
+      foot.appendChild(el('b', null, (g.sudden ? st.bestRun + ' seguidas' : GS.fmt(st.pb))));
+      if (st.bestBand && !g.sudden) foot.appendChild(el('span', 'g-tile-band', st.bestBand));
+    } else {
+      foot.appendChild(el('span', 'g-tile-none', 'sin récord'));
     }
-    if (!tranquilo) { tick(); timerId = setInterval(tick, 250); }
+    var todayB = GS.todayBest(g.key);
+    if (todayB && todayB < st.pb) foot.appendChild(el('span', 'g-tile-today', 'hoy ' + GS.fmt(todayB)));
+    t.appendChild(foot);
 
-    var open, matched, attempts, foundPairs, els, picks;
-    function dealNewPage() {
-      picks = dealPage(EMPAREJAR_PAGE);
-      if (!picks.length) { finishEmparejar(); return; }
-      open = []; matched = {}; attempts = {}; foundPairs = 0; els = {};
-      UI.clear(columns);
-      var leftCol = UI.el('div', 'match-col');
-      var rightCol = UI.el('div', 'match-col');
-      columns.appendChild(leftCol); columns.appendChild(rightCol);
-      var leftCards = [], rightCards = [];
-      picks.forEach(function (p, i) {
-        leftCards.push({ uid: i + 'a', pairId: i, text: p.a, item: p });
-        rightCards.push({ uid: i + 'b', pairId: i, text: p.b, item: p });
+    t.title = g.blurb;
+    t.addEventListener('click', function () { start(g); });
+    return t;
+  }
+
+  function weakCard(weak) {
+    var card = el('div', 'g-weak');
+    card.appendChild(el('span', 'g-weak-label', 'Se te resiste'));
+    card.appendChild(el('p', 'g-weak-text', weak.label + ' — ' + weak.n + ' fallos.'));
+    var go = el('button', 'g-weak-go', '60 segundos con eso');
+    go.type = 'button';
+    go.addEventListener('click', function () {
+      var h = host();
+      clear(h);
+      window.GameRound.run(h, {
+        key: 'debiles', title: weak.label, kind: 'grammar', topic: weak.topic,
+        duration: 60000, hue: '#b5711a', onExit: backToList
       });
-      E.shuffle(leftCards); E.shuffle(rightCards);
-      function addCard(c, col) {
-        var b = UI.el('button', 'match-card'); b.type = 'button'; b.textContent = c.text;
-        b.addEventListener('click', function () { onTap(c, b); });
+    });
+    card.appendChild(go);
+    return card;
+  }
+
+  // ===========================================================================
+  // EMPAREJAR — the one game whose round is a board, not a queue.
+  //
+  // Kept from the old section because it is the only one that already had game
+  // feel, and rebuilt around three things it was missing: boards that GROW
+  // (six cards, then eight, then ten, with rarer words each time), a combo on
+  // consecutive first-try matches, and a bonus for clearing a board fast — so
+  // the last pair on a board is worth hurrying for. Matched pairs now collapse
+  // out of the grid instead of sitting there at 35% opacity, so the board
+  // visibly empties under you.
+  //
+  // The verb board keeps the old generator's insight: hold the PERSON fixed
+  // and vary the TENSE, because when the tense does not vary the English side
+  // is just a subject pronoun and the puzzle is pronoun elimination.
+  // ===========================================================================
+  var BOARD_SIZES = [6, 6, 8, 8, 10];
+
+  function vocabBoard(rung, n) {
+    var idx = GI.index(), band = GS.bandForRung(rung);
+    var pool = idx.vocab[band];
+    if (!pool || pool.length < n * 2) pool = idx.vocab.B1.concat(idx.vocab.A2, idx.vocab.A1);
+    var picked = E.shuffle(pool.slice()).filter(function (w) {
+      return !window.Profile || window.Profile.wordAllowed(w);
+    }).slice(0, n);
+    return picked.map(function (w) {
+      return { id: 'v:' + w.es + ':meaning', a: w.es, b: w.en, cefr: w.cefr || band };
+    });
+  }
+  function verbBoard(rung, n) {
+    var band = GS.bandForRung(rung);
+    var tenses = (window.Profile ? window.Profile.tenses() : ['presente'])
+      .filter(function (t) { return t !== 'imperativo' && t !== 'impneg'; });
+    if (tenses.length < 2) return null;
+    var verbs = E.shuffle((window.Profile ? window.Profile.conjugableVerbs() : (window.VERBS || [])).slice());
+    if (verbs.length < 3) verbs = (window.VERBS || []).slice(0, 20);
+    var out = [], vi = 0, guard = 0;
+    while (out.length < n && guard++ < n * 8) {
+      var v = verbs[vi++ % verbs.length];
+      if (!v) break;
+      var person = Math.floor(Math.random() * 6);          // fixed for this verb
+      E.shuffle(tenses.slice()).slice(0, 3).forEach(function (tk) {
+        if (out.length >= n) return;
+        if (window.Profile && !window.Profile.verbOkAt(v.inf, tk)) return;
+        var form = E.conjugate(v, tk)[person];
+        if (!form || out.some(function (o) { return o.a === form; })) return;
+        out.push({ id: 'vt:' + v.inf + ':' + tk, a: form, b: GI.conjPrompt(v, tk, person), cefr: band });
+      });
+    }
+    return out.length >= 4 ? out : null;
+  }
+
+  function runEmparejar(h, g) {
+    var DURATION = g.secs * 1000;
+    var rungCap = GS.ceilingRung();
+    var rung = 1, boards = 0, pairsDone = 0, combo = 0, bestCombo = 0, score = 0, shownScore = 0;
+    var misses = [], ended = false, endAt = Date.now() + DURATION, raf = null, recordHit = false;
+    var pb = GS.pb(g.key);
+
+    clear(h);
+    var shell = el('div', 'g-shell');
+    shell.dataset.state = 'play';
+    shell.style.setProperty('--game', g.hue);
+
+    var top = el('div', 'g-top');
+    top.appendChild(el('span', 'g-name', g.name));
+    var band = el('span', 'g-band');
+    var comboPill = el('span', 'g-combo');
+    comboPill.hidden = true;
+    var exit = el('button', 'g-exit', '✕');
+    exit.type = 'button';
+    exit.setAttribute('aria-label', 'Salir');
+    exit.addEventListener('click', function () { stop(); backToList(); });
+    top.appendChild(band); top.appendChild(comboPill); top.appendChild(el('span', 'g-spacer')); top.appendChild(exit);
+    shell.appendChild(top);
+
+    var clock = el('div', 'g-clock');
+    var fill = el('div', 'g-clock-fill');
+    clock.appendChild(fill);
+    shell.appendChild(clock);
+
+    var line = el('div', 'g-scoreline');
+    var scoreEl = el('span', 'g-score', '0');
+    var pbEl = el('span', 'g-pb', pb ? 'PB ' + GS.fmt(pb) : '');
+    var secsEl = el('span', 'g-secs');
+    line.appendChild(scoreEl); line.appendChild(pbEl); line.appendChild(el('span', 'g-spacer')); line.appendChild(secsEl);
+    shell.appendChild(line);
+
+    var columns = el('div', 'g-match');
+    shell.appendChild(columns);
+    h.appendChild(shell);
+
+    function stop() { ended = true; if (raf) cancelAnimationFrame(raf); }
+    function tick() {
+      if (ended) return;
+      var left = Math.max(0, endAt - Date.now());
+      fill.style.transform = 'scaleX(' + (left / DURATION) + ')';
+      secsEl.textContent = Math.ceil(left / 1000);
+      clock.dataset.urgent = left <= 10000 ? '1' : '';
+      shell.dataset.urgent = left <= 10000 ? '1' : '';
+      if (left <= 0) { finish(); return; }
+      raf = requestAnimationFrame(tick);
+    }
+    function tween() {
+      var from = shownScore, to = score, t0 = Date.now();
+      (function step() {
+        var p = Math.min(1, (Date.now() - t0) / 380);
+        shownScore = Math.round(from + (to - from) * (1 - Math.pow(1 - p, 3)));
+        scoreEl.textContent = GS.fmt(shownScore);
+        if (p < 1) requestAnimationFrame(step);
+      })();
+    }
+    function pop(text, cls) {
+      var p = el('span', 'g-pop' + (cls ? ' ' + cls : ''), text);
+      line.appendChild(p);
+      setTimeout(function () { if (p.parentNode) p.parentNode.removeChild(p); }, 900);
+    }
+    function setCombo(n) {
+      combo = n; bestCombo = Math.max(bestCombo, n);
+      comboPill.hidden = n < 2;
+      comboPill.textContent = '×' + (1 + Math.min(n, 10) * 0.1).toFixed(1);
+      comboPill.dataset.hot = n >= 5 ? '1' : '';
+      if (n >= 2) { comboPill.classList.remove('beat'); void comboPill.offsetWidth; comboPill.classList.add('beat'); }
+    }
+
+    var open, matched, attempts, found, els, pairs, boardStart;
+    function deal() {
+      if (ended) return;
+      var n = BOARD_SIZES[Math.min(BOARD_SIZES.length - 1, boards)];
+      // boards alternate content once there is more than one tense to vary
+      var wantVerbs = boards >= 2 && boards % 2 === 0;
+      pairs = (wantVerbs && verbBoard(rung, n)) || vocabBoard(rung, n);
+      if (!pairs || !pairs.length) { finish(); return; }
+      band.textContent = GS.bandForRung(rung);
+      band.dataset.band = GS.bandForRung(rung);
+      open = []; matched = {}; attempts = {}; found = 0; els = {};
+      boardStart = Date.now();
+      clear(columns);
+      var left = el('div', 'g-match-col'), right = el('div', 'g-match-col');
+      columns.appendChild(left); columns.appendChild(right);
+      var ls = [], rs = [];
+      pairs.forEach(function (p, i) {
+        ls.push({ uid: i + 'a', pair: i, text: p.a, item: p });
+        rs.push({ uid: i + 'b', pair: i, text: p.b, item: p });
+      });
+      E.shuffle(ls).forEach(function (c) { add(c, left); });
+      E.shuffle(rs).forEach(function (c) { add(c, right); });
+      function add(c, col) {
+        var b = el('button', 'g-card', c.text);
+        b.type = 'button';
+        b.addEventListener('click', function () { tap(c, b); });
         els[c.uid] = b;
         col.appendChild(b);
       }
-      leftCards.forEach(function (c) { addCard(c, leftCol); });
-      rightCards.forEach(function (c) { addCard(c, rightCol); });
-      renderStats();
-    }
-    function renderStats() {
-      stats.textContent = totalMatched + ' pares emparejados' + (pagesDone ? ' · tablero ' + (pagesDone + 1) : '');
     }
 
-    function onTap(c, el) {
-      if (finished || matched[c.pairId] || el.classList.contains('open') || open.length === 2) return;
-      el.classList.add('open');
+    function tap(c, node) {
+      if (ended || matched[c.pair] || node.classList.contains('open') || open.length === 2) return;
+      node.classList.add('open');
       open.push(c);
-      if (open.length === 2) {
-        if (open[0].pairId === open[1].pairId) {
-          matched[c.pairId] = true; foundPairs++; totalMatched++;
-          open.forEach(function (o) { els[o.uid].classList.add('matched'); });
-          var missedFirst = (attempts[c.pairId] || 0) > 0;
-          grade(open[0].item, !missedFirst);
-          open = []; renderStats();
-          if (foundPairs === picks.length) { pagesDone++; setTimeout(dealNewPage, 450); }
-        } else {
-          attempts[open[0].pairId] = (attempts[open[0].pairId] || 0) + 1;
-          attempts[open[1].pairId] = (attempts[open[1].pairId] || 0) + 1;
-          var pair = open.slice();
-          setTimeout(function () { pair.forEach(function (o) { els[o.uid].classList.remove('open'); }); open = []; }, 550);
+      if (open.length < 2) return;
+      if (open[0].pair === open[1].pair) {
+        matched[c.pair] = true; found++;
+        var firstTry = !(attempts[c.pair] > 0);
+        var ms = Date.now() - boardStart;
+        var a = GS.award({ cefr: c.item.cefr || 'A1', play: 'choose', bonus: 0, limitMs: 9000 },
+                         'good', firstTry ? Math.min(ms, 4000) : 9000, combo);
+        score += a.points; pairsDone++;
+        if (firstTry) setCombo(combo + 1); else setCombo(0);
+        tween();
+        pop('+' + GS.fmt(a.points), 'good');
+        if (!recordHit && pb && score > pb) { recordHit = true; shell.dataset.record = '1'; pop('¡RÉCORD!', 'record'); }
+        if (window.SRS && c.item.id) { window.SRS.enrol(c.item.id); window.SRS.grade(c.item.id, firstTry); }
+        open.forEach(function (o) { els[o.uid].classList.add('gone'); });
+        open = [];
+        if (found === pairs.length) {
+          // clearing fast is worth hurrying the last pair for
+          var elapsed = Date.now() - boardStart;
+          if (elapsed < 8000) {
+            var bonus = Math.round(120 * (1 - elapsed / 8000) * pairs.length / 6);
+            score += bonus; tween(); pop('+' + GS.fmt(bonus) + ' tablero', 'good');
+          }
+          boards++;
+          rung = Math.min(rungCap, rung + 1);
+          setTimeout(deal, 340);
         }
+      } else {
+        attempts[open[0].pair] = (attempts[open[0].pair] || 0) + 1;
+        attempts[open[1].pair] = (attempts[open[1].pair] || 0) + 1;
+        setCombo(0);
+        if (misses.length < 6 && open[0].item) misses.push({ prompt: open[0].item.a, answer: open[0].item.b });
+        var two = open.slice();
+        two.forEach(function (o) { els[o.uid].classList.add('miss'); });
+        open = [];
+        setTimeout(function () {
+          two.forEach(function (o) { els[o.uid].classList.remove('open', 'miss'); });
+        }, 420);
       }
     }
 
-    function finishEmparejar() {
-      if (finished) return; finished = true;
-      if (timerId) { clearInterval(timerId); timerId = null; }
-      UI.clear(host);
-      var isNewBest = !tranquilo && setBest(bestKey, totalMatched);
-      var done = UI.el('div', 'panel intro complete');
-      done.appendChild(UI.el('div', 'big-check', '✓'));
-      done.appendChild(UI.el('h2', null, tranquilo ? UI.t('Listo', 'Done') : UI.t('¡Tiempo!', "Time's up")));
-      done.appendChild(UI.el('p', null, totalMatched + ' pares emparejados' + (tranquilo ? '' : (isNewBest ? ' — ¡nuevo récord!' : ' · récord: ' + bestFor(bestKey)))));
-      var again = UI.el('button', 'primary-btn', 'Jugar de nuevo'); again.type = 'button';
-      again.addEventListener('click', function () { showEmparejarSetup(host); });
-      var back = UI.el('button', 'ghost-btn', '← Juegos'); back.type = 'button'; back.addEventListener('click', backToTab);
-      done.appendChild(again); done.appendChild(back);
-      host.appendChild(done);
+    function finish() {
+      if (ended) return;
+      stop();
+      var res = GS.record(g.key, { score: score, combo: bestCombo, band: GS.bandForRung(rung), run: pairsDone });
+      clear(h);
+      var over = el('div', 'g-over');
+      over.dataset.pb = res.isPb ? '1' : '';
+      over.appendChild(el('div', 'g-over-eyebrow', g.name));
+      over.appendChild(el('div', 'g-over-score', GS.fmt(score)));
+      if (res.isPb) over.appendChild(el('div', 'g-over-verdict pb', res.prevPb ? '¡Récord! ' + GS.fmt(res.gap) + ' más que antes' : 'Tu primer récord'));
+      else if (res.pb) over.appendChild(el('div', 'g-over-verdict', 'Te faltaron ' + GS.fmt(res.gap) + ' para tu récord de ' + GS.fmt(res.pb)));
+      var again = el('button', 'g-again', 'Otra vez');
+      again.type = 'button';
+      again.addEventListener('click', function () { runEmparejar(h, g); });
+      over.appendChild(again);
+      var stats = el('div', 'g-over-stats');
+      function stat(n, l) { var s = el('div', 'g-stat'); s.appendChild(el('b', null, n)); s.appendChild(el('span', null, l)); stats.appendChild(s); }
+      stat(String(pairsDone), 'parejas');
+      stat(String(boards + 1), 'tableros');
+      stat('×' + (1 + Math.min(bestCombo, 10) * 0.1).toFixed(1), 'mejor combo');
+      stat(GS.bandForRung(rung), 'llegaste a');
+      over.appendChild(stats);
+      var back = el('button', 'g-back', '← Juegos');
+      back.type = 'button';
+      back.addEventListener('click', backToList);
+      over.appendChild(back);
+      h.appendChild(over);
+      setTimeout(function () { again.focus(); }, 30);
     }
 
-    dealNewPage();
+    deal();
+    tick();
   }
 
-  // ===========================================================================
-  // 2. OPCIÓN MÚLTIPLE — 4-way choice: meaning / article / conjugated form / preposition
-  // ===========================================================================
-  function articleOf(es) {
-    var m = (es || '').match(/^(el|la|los|las)\s+/i);
-    return m ? m[1].toLowerCase() : null;
-  }
-  function mcqMeaningItems() {
-    var pool = vocabPairSource();
-    var allEn = pool.map(function (p) { return p.b; });
-    return pool.map(function (p) {
-      var wrong = E.shuffle(allEn.filter(function (e) { return e !== p.b; })).slice(0, 3);
-      return { id: p.id, front: p.a, back: p.b, options: E.shuffle([p.b].concat(wrong)), kind: 'vocab' };
-    });
-  }
-  function mcqArticleItems() {
-    var nouns = (window.VOCAB || []).filter(function (w) { return articleOf(w.es); });
-    var arts = ['el', 'la', 'los', 'las'];
-    return nouns.map(function (w) {
-      var correct = articleOf(w.es);
-      var bare = w.es.replace(/^(el|la|los|las)\s+/i, '');
-      var wrong = arts.filter(function (a) { return a !== correct; });
-      return { id: 'v:' + w.es + ':gender', front: bare + '  (' + w.en + ')', back: correct, options: E.shuffle([correct].concat(E.shuffle(wrong).slice(0, 3))), kind: 'gender' };
-    });
-  }
-  // Distractors are the SAME verb and SAME person in OTHER tenses, not other
-  // persons in the same tense. The English prompt already names the subject
-  // ("I speak") — if the wrong options were just other persons of that one
-  // tense, the whole question reduces to picking the right pronoun, never
-  // testing whether you actually know the tense. With tense-varied options
-  // ("hablo" vs "hablé" vs "hablaba") you have to know which one "I speak"
-  // actually means.
-  function mcqConjItems(tenses) {
-    var simple = (tenses || []).filter(function (tk) { return tk !== 'imperativo'; });
-    if (simple.length < 2) simple = tenses;
-    var out = [];
-    (window.Profile ? window.Profile.conjugableVerbs() : (window.VERBS || [])).forEach(function (v) {
-      simple.forEach(function (tk) {
-        var forms = E.conjugate(v, tk);
-        forms.forEach(function (form, i) {
-          if (!form) return;
-          var others = [];
-          E.shuffle(simple.filter(function (t) { return t !== tk; })).forEach(function (otk) {
-            if (others.length >= 3) return;
-            var f = E.conjugate(v, otk)[i];
-            if (f && f !== form && others.indexOf(f) === -1) others.push(f);
-          });
-          if (!others.length) return;   // not enough tense variety to make a real question
-          out.push({ id: 'vt:' + v.inf + ':' + tk, front: conjPrompt(v, tk, i), back: form, options: E.shuffle([form].concat(others)), kind: 'verb-tense' });
-        });
-      });
-    });
-    return out;
-  }
-  function mcqPrepositionItems() {
-    var lessons = (window.GRAMMAR_LESSONS || []).filter(function (l) { return l.id === 'por-para'; });
-    var out = [];
-    lessons.forEach(function (l) { (l.recall || []).forEach(function (r) {
-      out.push({ id: r.id, front: r.front, back: r.back, options: E.shuffle(['por', 'para']), kind: 'grammar' });
-    }); });
-    return out;
-  }
-
-  function showOpcionSetup(host) {
-    UI.clear(host);
-    var wrap = UI.el('div', 'panel');
-    wrap.appendChild(exitHeader('Opción múltiple'));
-    wrap.appendChild(UI.el('p', 'muted', 'Choose the right answer from a few options.'));
-    // Article/gender drills are pushed early for beginners — noun gender is
-    // one of the first things worth drilling hard, per the brief's beginner
-    // polish (recognition, articles, etc. up front).
-    var sub = isBeginner() ? 'article' : 'meaning';
-    var modes = isBeginner()
-      ? [['article', 'Artículo'], ['meaning', 'Significado'], ['conj', 'Conjugación'], ['prep', 'Por / Para']]
-      : [['meaning', 'Significado'], ['article', 'Artículo'], ['conj', 'Conjugación'], ['prep', 'Por / Para']];
-    wrap.appendChild(UI.el('h3', null, UI.t('Qué practicar', 'What to practise')));
-    var seg = UI.el('div', 'segmented');
-    modes.forEach(function (o) {
-      var b = UI.el('button', 'seg' + (sub === o[0] ? ' active' : ''), o[1]); b.type = 'button';
-      b.addEventListener('click', function () { sub = o[0]; Array.prototype.forEach.call(seg.children, function (x) { x.classList.remove('active'); }); b.classList.add('active'); });
-      seg.appendChild(b);
-    });
-    var bar = UI.el('div', 'profile-bar muted'); bar.appendChild(seg); wrap.appendChild(bar);
-    var getTranquilo = modeToggle(wrap, function () {});
-    var go = UI.el('button', 'primary-btn', 'Empezar →'); go.type = 'button';
-    go.addEventListener('click', function () {
-      var items;
-      if (sub === 'meaning') items = mcqMeaningItems();
-      else if (sub === 'article') items = mcqArticleItems();
-      else if (sub === 'conj') items = mcqConjItems(window.Profile ? window.Profile.tenses() : ['presente']);
-      else items = mcqPrepositionItems();
-      runOpcion(host, items, getTranquilo(), sub);
-    });
-    wrap.appendChild(go);
-    host.appendChild(wrap);
-  }
-
-  function renderMcq(itemHost, item, answer) {
-    UI.clear(itemHost);
-    itemHost.appendChild(UI.el('div', 'card-front small', item.front));
-    var grid = UI.el('div', 'mcq-opts');
-    var answered = false;
-    item.options.forEach(function (opt) {
-      var b = UI.el('button', 'mcq-btn', opt); b.type = 'button';
-      b.addEventListener('click', function () {
-        if (answered) return; answered = true;
-        var right = opt === item.back;
-        b.classList.add(right ? 'right' : 'wrong');
-        if (!right) Array.prototype.forEach.call(grid.children, function (c) { if (c.textContent === item.back) c.classList.add('right'); });
-        setTimeout(function () { answer(right); }, right ? 400 : 1100);
-      });
-      grid.appendChild(b);
-    });
-    itemHost.appendChild(grid);
-  }
-
-  function runOpcion(host, items, tranquilo, submode) {
-    runRound(host, { title: 'Opción múltiple', items: items, tranquilo: tranquilo, gameKey: 'opcion', submode: submode, renderItem: renderMcq });
-  }
-
-  // ===========================================================================
-  // 3. CONJUGACIÓN RÁPIDA — an English phrase → the conjugated form, typed
-  // ===========================================================================
-  function conjRapidaItems(tenses, scope) {
-    var verbs = (window.Profile ? window.Profile.conjugableVerbs() : (window.VERBS || [])).slice();
-    if (scope === 'regular') verbs = verbs.filter(function (v) { return !E.isIrregular(v); });
-    else if (scope === 'irregular') verbs = verbs.filter(function (v) { return E.isIrregular(v); });
-    var out = [];
-    verbs.forEach(function (v) {
-      tenses.forEach(function (tk) {
-        var forms = E.conjugate(v, tk);
-        forms.forEach(function (form, i) { if (form) out.push({ id: 'vt:' + v.inf + ':' + tk, front: conjPrompt(v, tk, i), back: form, kind: 'verb-tense' }); });
-      });
-    });
-    return out;
-  }
-  function renderTyped(itemHost, item, answer) {
-    UI.clear(itemHost);
-    itemHost.appendChild(UI.el('div', 'card-front small', item.front));
-    var input = UI.el('input', 'answer-input'); input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false;
-    var fb = UI.el('div', 'feedback');
-    var reveal = UI.el('button', 'ghost-btn', 'Reveal'); reveal.type = 'button';
-    itemHost.appendChild(input); itemHost.appendChild(UI.accentBar(function () { return input; })); itemHost.appendChild(fb);
-    var controls = UI.el('div', 'row-controls'); controls.appendChild(reveal); itemHost.appendChild(controls);
-    var locked = false, revealed = false;
-    function good() { if (locked) return; locked = true; fb.textContent = '¡Correcto! ' + item.back; fb.className = 'feedback good'; setTimeout(function () { answer(true); }, 350); }
-    input.addEventListener('input', function () { if (!locked && !revealed && E.normalize(input.value) === E.normalize(item.back)) good(); });
-    input.addEventListener('keydown', function (e) {
-      if (e.key !== 'Enter') return; e.preventDefault();
-      if (locked) return;
-      if (revealed) { answer(false); return; }
-      if (E.normalize(input.value) === E.normalize(item.back)) { good(); return; }
-      fb.textContent = 'Not quite — try again, or reveal'; fb.className = 'feedback bad';
-    });
-    reveal.addEventListener('click', function () {
-      if (locked) return;
-      if (revealed) { answer(false); return; }
-      revealed = true; fb.textContent = item.back; fb.className = 'feedback reveal'; reveal.textContent = 'Next →'; input.focus();
-    });
-    input.focus();
-  }
-
-  function showConjRapidaSetup(host) {
-    UI.clear(host);
-    var wrap = UI.el('div', 'panel');
-    wrap.appendChild(exitHeader('Conjugación rápida'));
-    wrap.appendChild(UI.el('p', 'muted', 'An English phrase → type the matching Spanish form. Engine-graded.'));
-    var tenses = window.Profile ? window.Profile.tenses() : E.TENSES.map(function (t) { return t.key; });
-    var chosen = {};
-    wrap.appendChild(UI.el('h3', null, 'Tenses'));
-    var tchips = UI.el('div', 'chip-row');
-    tenses.forEach(function (tk) {
-      var c = UI.el('button', 'topic-chip', E.TENSE_LABEL[tk]); c.type = 'button';
-      c.addEventListener('click', function () { chosen[tk] = !chosen[tk]; c.classList.toggle('chosen', chosen[tk]); });
-      tchips.appendChild(c);
-    });
-    wrap.appendChild(tchips);
-    var scope = 'all';
-    wrap.appendChild(UI.el('h3', null, 'Verbs'));
-    var seg = UI.el('div', 'segmented');
-    [['all', 'All'], ['regular', 'Regular'], ['irregular', 'Irregular']].forEach(function (o) {
-      var b = UI.el('button', 'seg' + (scope === o[0] ? ' active' : ''), o[1]); b.type = 'button';
-      b.addEventListener('click', function () { scope = o[0]; Array.prototype.forEach.call(seg.children, function (x) { x.classList.remove('active'); }); b.classList.add('active'); });
-      seg.appendChild(b);
-    });
-    var bar = UI.el('div', 'profile-bar muted'); bar.appendChild(seg); wrap.appendChild(bar);
-    var getTranquilo = modeToggle(wrap, function () {});
-    var go = UI.el('button', 'primary-btn', 'Empezar →'); go.type = 'button';
-    go.addEventListener('click', function () {
-      var picked = Object.keys(chosen).filter(function (k) { return chosen[k]; });
-      if (!picked.length) picked = [tenses[0]];
-      var items = conjRapidaItems(picked, scope);
-      runRound(host, { title: 'Conjugación rápida', items: items, tranquilo: getTranquilo(), gameKey: 'conjrapida', submode: scope, renderItem: renderTyped });
-    });
-    wrap.appendChild(go);
-    host.appendChild(wrap);
-  }
-
-  // ===========================================================================
-  // 4. FRASE REVUELTA — reorder shuffled words into the correct sentence
-  // ===========================================================================
-  function sentenceBank(beginner) {
-    var out = [];
-    (window.GRAMMAR_LESSONS || []).forEach(function (l) {
-      (l.examples || []).forEach(function (ex) {
-        var words = ex.es.replace(/[.!?¿¡]/g, '').trim().split(/\s+/);
-        if (words.length < 3) return;
-        if (beginner && words.length > 6) return;
-        if (!beginner && words.length > 10) return;
-        out.push({ id: 'fr:' + E.normalize(ex.es), sentence: ex.es, words: words, en: ex.en, kind: 'phrase' });
-      });
-    });
-    return out;
-  }
-  function renderScramble(itemHost, item, answer) {
-    UI.clear(itemHost);
-    itemHost.appendChild(UI.el('div', 'muted small', item.en));
-    var built = [];
-    var line = UI.el('div', 'build-line');
-    var bank = UI.el('div', 'word-bank');
-    var fb = UI.el('div', 'feedback');
-    var punct = (item.sentence.match(/[.!?]+$/) || [''])[0];
-    function renderBank() {
-      UI.clear(bank);
-      E.shuffle(remaining()).forEach(function (w, i) {
-        var b = UI.el('button', 'word-chip', w); b.type = 'button';
-        b.addEventListener('click', function () { built.push(w); renderLine(); renderBank(); checkDone(); });
-        bank.appendChild(b);
-      });
-    }
-    function remaining() {
-      var used = built.slice();
-      return item.words.filter(function (w) { var i = used.indexOf(w); if (i !== -1) { used.splice(i, 1); return false; } return true; });
-    }
-    function renderLine() {
-      UI.clear(line);
-      built.forEach(function (w, i) {
-        var b = UI.el('button', 'word-chip chosen', w); b.type = 'button';
-        b.addEventListener('click', function () { built.splice(i, 1); renderLine(); renderBank(); });
-        line.appendChild(b);
-      });
-    }
-    function checkDone() {
-      if (built.length !== item.words.length) return;
-      var right = built.join(' ') === item.words.join(' ');
-      fb.textContent = right ? '¡Correcto!' : 'Correct order: ' + item.words.join(' ') + punct;
-      fb.className = 'feedback ' + (right ? 'good' : 'bad');
-      setTimeout(function () { answer(right); }, right ? 500 : 1600);
-    }
-    renderLine(); renderBank();
-    itemHost.appendChild(line); itemHost.appendChild(bank); itemHost.appendChild(fb);
-  }
-
-  function showFraseSetup(host) {
-    UI.clear(host);
-    var wrap = UI.el('div', 'panel');
-    wrap.appendChild(exitHeader('Frase revuelta'));
-    wrap.appendChild(UI.el('p', 'muted', 'Tap the words in order to rebuild the sentence.'));
-    var getTranquilo = modeToggle(wrap, function () {});
-    var go = UI.el('button', 'primary-btn', 'Empezar →'); go.type = 'button';
-    go.addEventListener('click', function () {
-      var items = sentenceBank(isBeginner());
-      runRound(host, { title: 'Frase revuelta', items: items, tranquilo: getTranquilo(), gameKey: 'frase', renderItem: renderScramble });
-    });
-    wrap.appendChild(go);
-    host.appendChild(wrap);
-  }
-
-  // ===========================================================================
-  // 5. ¿CUÁL VA AQUÍ? — minimal-pair chooser (ser/estar, por/para,
-  //    pretérito/imperfecto, subjuntivo/indicativo)
-  // ===========================================================================
-  function conceptItems(lessonId) {
-    var l = (window.GRAMMAR_LESSONS || []).filter(function (x) { return x.id === lessonId; })[0];
-    if (!l) return [];
-    return (l.recall || []).map(function (r) {
-      var opts = lessonId === 'ser-estar' ? ['ser', 'estar'] : lessonId === 'por-para' ? ['por', 'para'] : ['preterito', 'imperfecto'];
-      return { id: r.id, front: r.front, back: r.back, options: opts, kind: 'grammar' };
-    });
-  }
-  // Generated, not hand-authored: pull real presubj cloze items and pit the
-  // engine-computed subjunctive form against the engine-computed indicative
-  // form of the SAME verb/person — the classic trap, with zero new data.
-  function subjIndicItems() {
-    var out = [];
-    (window.APPLY_ITEMS || []).forEach(function (it) {
-      if (it.type !== 'cloze' || it.tense !== 'presubj') return;
-      var v = E.verbByInf(it.inf); if (!v) return;
-      var idx = E.personsFor('presubj').indexOf(it.person);
-      var subjForm = E.conjugate(v, 'presubj')[idx];
-      var indicForm = E.conjugate(v, 'presente')[E.personsFor('presente').indexOf(it.person)];
-      if (!subjForm || !indicForm || subjForm === indicForm) return;
-      out.push({ id: 'vt:' + it.inf + ':presubj', front: it.text.replace('___', '＿＿＿') + '  [' + it.inf + ']', back: subjForm, options: E.shuffle([subjForm, indicForm]), kind: 'verb-tense' });
-    });
-    return out;
-  }
-  function renderMinimalPair(itemHost, item, answer) {
-    UI.clear(itemHost);
-    itemHost.appendChild(UI.el('div', 'card-front small', item.front));
-    var opts = UI.el('div', 'mcq-opts');
-    var answered = false;
-    item.options.forEach(function (opt) {
-      var b = UI.el('button', 'mcq-btn', E.TENSE_LABEL && E.TENSE_LABEL[opt] ? E.TENSE_LABEL[opt] : opt); b.type = 'button';
-      b.addEventListener('click', function () {
-        if (answered) return; answered = true;
-        var right = opt === item.back;
-        b.classList.add(right ? 'right' : 'wrong');
-        if (!right) Array.prototype.forEach.call(opts.children, function (c, i) { if (item.options[i] === item.back) c.classList.add('right'); });
-        setTimeout(function () { answer(right); }, right ? 400 : 1100);
-      });
-      opts.appendChild(b);
-    });
-    itemHost.appendChild(opts);
-  }
-
-  function showCualSetup(host) {
-    UI.clear(host);
-    var wrap = UI.el('div', 'panel');
-    wrap.appendChild(exitHeader('¿Cuál va aquí?'));
-    wrap.appendChild(UI.el('p', 'muted', 'The classic traps — pick the one that actually goes here.'));
-    var LABELS = { 'ser-estar': 'Ser / Estar', 'por-para': 'Por / Para', 'preterite-imperfect': 'Pretérito / Imperfecto', subj: 'Subjuntivo / Indicativo' };
-    var allowed = window.Profile ? window.Profile.params().cualPairs : ['ser-estar'];
-    var modes = allowed.map(function (k) { return [k, LABELS[k]]; });
-    var sub = modes[0][0];
-    wrap.appendChild(UI.el('h3', null, 'Which pair'));
-    var seg = UI.el('div', 'segmented');
-    modes.forEach(function (o) {
-      var b = UI.el('button', 'seg' + (sub === o[0] ? ' active' : ''), o[1]); b.type = 'button';
-      b.addEventListener('click', function () { sub = o[0]; Array.prototype.forEach.call(seg.children, function (x) { x.classList.remove('active'); }); b.classList.add('active'); });
-      seg.appendChild(b);
-    });
-    var bar = UI.el('div', 'profile-bar muted'); bar.appendChild(seg); wrap.appendChild(bar);
-    var getTranquilo = modeToggle(wrap, function () {});
-    var go = UI.el('button', 'primary-btn', 'Empezar →'); go.type = 'button';
-    go.addEventListener('click', function () {
-      var items = sub === 'subj' ? subjIndicItems() : conceptItems(sub === 'preterite-imperfect' ? 'preterite-imperfect' : sub);
-      runRound(host, { title: '¿Cuál va aquí?', items: items, tranquilo: getTranquilo(), gameKey: 'cual', submode: sub, renderItem: renderMinimalPair });
-    });
-    wrap.appendChild(go);
-    host.appendChild(wrap);
-  }
-
-  // ---- Juegos entry point (an overlay opened from the Inicio tile) --------
-  function render(host, back) {
-    exitAll = back;
-    UI.clear(host);
-    var wrap = UI.el('div', 'panel');
-    var head = UI.el('div', 'stage-head');
-    head.appendChild(UI.el('span', 'eyebrow', UI.t('Juegos', 'Games')));
-    var exitB = UI.el('button', 'ghost-btn small', '✕ salir'); exitB.type = 'button'; exitB.style.marginTop = '0';
-    exitB.addEventListener('click', function () { if (back) back(); });
-    var right = UI.el('span', 'stage-count'); right.appendChild(exitB);
-    head.appendChild(right);
-    wrap.appendChild(head);
-    wrap.appendChild(UI.el('p', 'muted', 'Spaced practice that plays like a game — every round reads and writes your real review schedule.'));
-    var list = UI.el('div', 'mas-list');
-    function row(icon, title, sub, onTap) {
-      var b = UI.el('button', 'mas-row'); b.type = 'button';
-      b.innerHTML = '<span class="mas-ico">' + icon + '</span><span class="mas-text"><b>' + title + '</b><br><span class="muted small">' + sub + '</span></span><span class="mas-chev">›</span>';
-      b.addEventListener('click', function () { window.Shell.openOverlay(); onTap(document.getElementById('stage-host')); });
-      list.appendChild(b);
-    }
-    row('🃏', UI.t('Emparejar', 'Matching pairs'), 'Matching pairs — vocab or verb forms', showEmparejarSetup);
-    row('☑️', UI.t('Opción múltiple', 'Multiple choice'), 'Meaning, article, conjugation, por/para', showOpcionSetup);
-    row('⚡', UI.t('Conjugación rápida', 'Quick conjugation'), 'An English phrase → the matching form', showConjRapidaSetup);
-    row('🧩', UI.t('Frase revuelta', 'Scrambled sentence'), 'Reorder the shuffled words', showFraseSetup);
-    row('🎯', UI.t('¿Cuál va aquí?', 'Which one goes here?'), 'The classic minimal-pair traps', showCualSetup);
-    wrap.appendChild(list);
-    host.appendChild(wrap);
-  }
-
-  return { render: render };
+  return { render: render, GAMES: GAMES };
 })();

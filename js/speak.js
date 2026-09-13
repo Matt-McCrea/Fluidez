@@ -68,7 +68,13 @@ window.Speak = (function () {
       synth.cancel();                        // never let two lines overlap
       var u = new SpeechSynthesisUtterance(said);
       u.voice = v; u.lang = v.lang;
-      u.rate = (opts && opts.slow) ? 0.65 : 0.95;   // 0.95: native-ish, not rushed
+      /* An explicit rate is what the listening game climbs: 0.85 at the
+       * bottom of its ladder, 1.15 at the top — "slow and clear" through
+       * "natural" to "faster than you would like", which is the only honest
+       * way to make an ear exercise get harder. Clamped so a caller cannot
+       * produce something unintelligible. */
+      u.rate = (opts && opts.rate) ? Math.max(0.5, Math.min(1.4, opts.rate))
+             : (opts && opts.slow) ? 0.65 : 0.95;   // 0.95: native-ish, not rushed
       synth.speak(u);
       return true;
     } catch (e) { return false; }

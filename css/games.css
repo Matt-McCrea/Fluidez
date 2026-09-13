@@ -1,0 +1,388 @@
+/* ===========================================================================
+   JUEGOS — the games design system.
+
+   The whole of the old games stylesheet was twelve lines: a timer that was a
+   text node, a match card, and nothing else. Everything a competitive game
+   needs to say — this is fast, this is right, this is nearly over, this is a
+   record — had no way to be said.
+
+   Two ideas hold this file together.
+
+   COLOUR IS STATE, never decoration. The shell carries data-state
+   (play / good / near / wrong), data-urgent in the last ten seconds and
+   data-record the moment your live score passes your best, and everything
+   downstream reads those rather than being coloured by hand.
+
+   --game IS THE GAME'S IDENTITY. Each game sets one hue inline (js/games.js)
+   and it follows you from the tile into the round, so the section reads as a
+   shelf of different things rather than one screen repeated six times. The
+   app's own tokens carry everything else, so both themes come for free.
+   =========================================================================== */
+
+/* the CEFR band a question came from — the same five colours the level
+   switcher uses, so "I reached B2" looks the same everywhere in the app */
+[data-band="A1"] { --band: #2f8f5b; }
+[data-band="A2"] { --band: #2d7fb8; }
+[data-band="B1"] { --band: #0e7c86; }
+[data-band="B2"] { --band: #8a5cd6; }
+[data-band="C1"] { --band: #b8543f; }
+
+/* ---------------------------------------------------------------- the page */
+.g-page { --game: var(--accent); }
+.g-page-head { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px; }
+.g-page-head h1 { margin: 0; font-size: 1.85rem; letter-spacing: -.01em; }
+.g-page-sub { margin: 4px 0 0; color: var(--muted); font-size: .95rem; }
+.g-h {
+  margin: 30px 0 12px; font-size: .74rem; text-transform: uppercase;
+  letter-spacing: .11em; font-weight: 750; color: var(--muted);
+}
+.g-week { margin: 26px 0 0; color: var(--muted); font-size: .85rem; text-align: center; }
+
+.g-exit {
+  margin-left: auto; flex: none; border: 1px solid var(--border); background: var(--panel);
+  color: var(--muted); width: 38px; height: 38px; min-height: 38px; border-radius: 10px;
+  cursor: pointer; font-size: 1rem; line-height: 1;
+}
+.g-exit:hover { border-color: var(--bad); color: var(--bad); }
+
+/* --------------------------------------------------------- today's challenge
+   The one card on the page with a raised surface: it is the thing that is
+   different today, and the only reason to open the app twice in a day. */
+.g-daily {
+  background: var(--panel); border: 1px solid var(--border);
+  border-top: 3px solid var(--accent); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 22px 24px 20px;
+}
+.g-daily-top { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.g-daily-label {
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .1em;
+  font-weight: 750; color: var(--accent);
+}
+.g-daily-date { color: var(--muted); font-size: .85rem; margin-left: auto; }
+.g-daily-rule { margin: 8px 0 0; color: var(--muted); font-size: .92rem; }
+.g-daily-nums { display: flex; gap: 26px; flex-wrap: wrap; margin: 16px 0 4px; }
+.g-dn { display: flex; flex-direction: column; gap: 1px; }
+.g-dn b { font-size: 1.5rem; font-weight: 750; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.g-dn span { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.g-daily-go {
+  margin-top: 16px; border: none; background: var(--accent); color: #fff;
+  font-weight: 650; font-size: 1rem; padding: 12px 26px; border-radius: 10px; cursor: pointer;
+}
+.g-daily-go:hover { background: var(--accent-2); }
+
+/* -------------------------------------------------------- the recommendation */
+.g-rec {
+  display: flex; align-items: center; gap: 15px; width: 100%; text-align: left; cursor: pointer;
+  border: 1px solid var(--border); border-left: 3px solid var(--game);
+  background: var(--panel); color: var(--text);
+  border-radius: 12px; padding: 15px 18px; box-shadow: var(--shadow);
+}
+.g-rec:hover { border-color: var(--game); transform: translateY(-1px); }
+.g-rec-ico { font-size: 1.4rem; line-height: 1; flex: none; }
+.g-rec-mid { flex: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.g-rec-mid b { font-size: 1.05rem; font-weight: 700; }
+.g-rec-why { color: var(--muted); font-size: .88rem; }
+.g-rec-pb {
+  flex: none; font-size: .82rem; font-weight: 700; color: var(--game);
+  background: var(--panel-2); border: 1px solid var(--border);
+  padding: 6px 12px; border-radius: 999px; font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+
+/* ------------------------------------------------------------------ the shelf */
+.g-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(196px, 1fr)); gap: 12px; }
+.g-tile {
+  display: flex; flex-direction: column; gap: 3px; text-align: left; cursor: pointer;
+  border: 1px solid var(--border); border-top: 3px solid var(--game);
+  background: var(--panel); color: var(--text);
+  border-radius: 12px; padding: 15px 16px 13px; min-height: 148px; box-shadow: var(--shadow);
+  transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+.g-tile:hover { border-color: var(--game); transform: translateY(-2px); }
+.g-tile:active { transform: translateY(0); }
+.g-tile-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.g-tile-ico { font-size: 1.35rem; line-height: 1; }
+.g-tile-len {
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; font-weight: 700;
+  color: var(--muted); background: var(--panel-2); border-radius: 999px; padding: 3px 9px;
+}
+.g-tile-name { font-size: 1.08rem; font-weight: 700; line-height: 1.2; }
+.g-tile-rule { color: var(--muted); font-size: .85rem; line-height: 1.35; }
+.g-tile-foot {
+  margin-top: auto; padding-top: 11px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+}
+.g-tile-foot b { font-size: 1.15rem; font-weight: 750; font-variant-numeric: tabular-nums; color: var(--game); }
+.g-tile-band {
+  font-size: .66rem; font-weight: 700; letter-spacing: .05em; color: #fff;
+  background: var(--game); padding: 2px 7px; border-radius: 4px;
+}
+.g-tile-none { font-size: .85rem; color: var(--muted); font-style: italic; }
+.g-tile-today { font-size: .76rem; color: var(--muted); margin-left: auto; font-variant-numeric: tabular-nums; }
+
+/* ------------------------------------------------------------- the weak spot */
+.g-weak {
+  margin-top: 24px; padding: 16px 20px; border-radius: 12px;
+  background: var(--panel-2); border: 1px solid var(--border); border-left: 3px solid var(--warn);
+}
+.g-weak-label {
+  font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 750; color: var(--warn);
+}
+.g-weak-text { margin: 5px 0 12px; font-size: 1rem; }
+.g-weak-go {
+  border: 1px solid var(--warn); background: transparent; color: var(--warn);
+  font-weight: 650; font-size: .9rem; padding: 9px 18px; border-radius: 9px; cursor: pointer;
+}
+.g-weak-go:hover { background: var(--panel); }
+
+/* =========================================================== a round in play */
+/* --game is set on the element by js/games.js, so it must NOT be declared
+   here: a rule on .g-shell would win over the inline value and every game
+   would come out the same colour. */
+.g-shell { max-width: 620px; margin: 0 auto; padding: 4px 0 40px; }
+.g-shell, .g-over { --game: var(--accent); }
+.g-top { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.g-spacer { flex: 1; }
+.g-name {
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 750;
+  color: #fff; background: var(--game); padding: 5px 13px; border-radius: 999px;
+}
+.g-band {
+  font-size: .68rem; font-weight: 750; letter-spacing: .06em; color: #fff;
+  background: var(--band, var(--muted)); padding: 4px 9px; border-radius: 5px;
+  transition: background-color .35s ease;
+}
+.g-combo {
+  font-size: .82rem; font-weight: 750; font-variant-numeric: tabular-nums;
+  color: var(--good); background: var(--good-bg); padding: 4px 11px; border-radius: 999px;
+  border: 1px solid transparent;
+}
+.g-combo[data-hot="1"] { color: #fff; background: var(--warn); border-color: var(--warn); }
+.g-combo.beat { animation: g-beat .3s ease; }
+@keyframes g-beat { 0% { transform: scale(1); } 40% { transform: scale(1.22); } 100% { transform: scale(1); } }
+
+/* the clock: a bar, because "how much is left" is a shape, not a number */
+.g-clock {
+  height: 7px; background: var(--panel-2); border-radius: 999px; overflow: hidden;
+  border: 1px solid var(--border);
+}
+.g-clock-fill {
+  height: 100%; width: 100%; background: var(--game); border-radius: 999px;
+  transform-origin: left center; transform: scaleX(1);
+}
+.g-clock[data-urgent="1"] .g-clock-fill { background: var(--bad); animation: g-tock 1s steps(1) infinite; }
+@keyframes g-tock { 0%, 60% { opacity: 1; } 61%, 100% { opacity: .45; } }
+
+.g-scoreline {
+  position: relative; display: flex; align-items: baseline; gap: 12px; margin: 12px 0 22px;
+}
+.g-score {
+  font-size: 2rem; font-weight: 750; line-height: 1; font-variant-numeric: tabular-nums;
+  letter-spacing: -.02em;
+}
+.g-pb { font-size: .82rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.g-secs {
+  font-size: 1.25rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--muted);
+}
+.g-secs.g-run { font-size: 1rem; font-weight: 650; }
+.g-shell[data-urgent="1"] .g-secs { color: var(--bad); }
+.g-shell[data-record="1"] .g-score { color: var(--good); }
+.g-shell[data-record="1"] .g-pb { color: var(--good); font-weight: 700; }
+
+/* The points rise out of the gap BELOW the score, not up through the clock
+   bar above it — which is where they used to land, on top of the one element
+   whose whole job is being readable at a glance. */
+.g-pop {
+  position: absolute; left: 0; top: 100%; pointer-events: none; white-space: nowrap;
+  font-size: .92rem; font-weight: 750; font-variant-numeric: tabular-nums;
+  animation: g-rise .9s ease-out forwards;
+}
+.g-pop.good { color: var(--good); }
+.g-pop.near { color: var(--warn); }
+.g-pop.record { color: var(--good); font-size: 1.05rem; letter-spacing: .06em; }
+@keyframes g-rise {
+  0% { opacity: 0; transform: translateY(4px); }
+  18% { opacity: 1; transform: translateY(-1px); }
+  100% { opacity: 0; transform: translateY(-15px); }
+}
+
+/* ---------------------------------------------------------------- the item */
+.g-item { min-height: 210px; }
+.g-prompt {
+  font-size: 1.55rem; font-weight: 650; line-height: 1.32; margin: 0 0 20px;
+  text-wrap: balance;
+}
+.g-prompt.long { font-size: 1.2rem; }
+.g-prompt.build { font-size: 1.15rem; color: var(--muted); font-weight: 550; margin-bottom: 14px; }
+.g-prompt-note {
+  display: block; margin-top: 5px; font-size: .86rem; font-weight: 450; color: var(--muted);
+}
+.g-prompt-note::before { content: '('; }
+.g-prompt-note::after { content: ')'; }
+
+.g-options { display: flex; flex-direction: column; gap: 9px; }
+.g-opt {
+  text-align: left; font-size: 1.02rem; font-weight: 550; padding: 13px 17px; cursor: pointer;
+  border: 2px solid var(--border); border-radius: 11px; background: var(--panel); color: var(--text);
+  transition: border-color .12s ease, background-color .12s ease;
+}
+.g-opt:hover { border-color: var(--game); }
+.g-opt.right { border-color: var(--good); background: var(--good-bg); color: var(--good); font-weight: 700; }
+.g-opt.wrong { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); animation: g-shake .3s ease; }
+@keyframes g-shake {
+  0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); } 75% { transform: translateX(-2px); }
+}
+
+.g-input {
+  width: 100%; font-size: 1.3rem; padding: 13px 16px; font-family: inherit;
+  border: 2px solid var(--border); border-radius: 11px; background: var(--panel); color: var(--text);
+}
+.g-input:focus { outline: none; border-color: var(--game); }
+.g-input.right { border-color: var(--good); background: var(--good-bg); }
+.g-input.wrong { border-color: var(--bad); background: var(--bad-bg); animation: g-shake .3s ease; }
+
+.g-build {
+  min-height: 58px; display: flex; flex-wrap: wrap; gap: 7px; align-items: center;
+  padding: 11px 13px; margin-bottom: 14px;
+  border: 2px dashed var(--border); border-radius: 12px;
+}
+.g-build.right { border-color: var(--good); border-style: solid; background: var(--good-bg); }
+.g-build.wrong { border-color: var(--bad); border-style: solid; background: var(--bad-bg); }
+.g-build-hint { color: var(--muted); font-size: .88rem; font-style: italic; }
+.g-bank { display: flex; flex-wrap: wrap; gap: 7px; }
+.g-chip {
+  border: 1px solid var(--border); background: var(--panel-2); color: var(--text);
+  padding: 8px 14px; border-radius: 9px; cursor: pointer; font-size: 1.02rem; font-weight: 600;
+  min-height: 40px;
+}
+.g-chip:hover { border-color: var(--game); }
+.g-chip.chosen { background: var(--game); color: #fff; border-color: var(--game); }
+
+/* ------------------------------------------------------------------ listening */
+.g-listen { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+.g-speaker {
+  position: relative; width: 76px; height: 76px; min-height: 76px; flex: none;
+  border-radius: 50%; border: 2px solid var(--game); background: var(--panel);
+  color: var(--game); font-size: 1.7rem; cursor: pointer; line-height: 1;
+}
+.g-speaker:hover { background: var(--panel-2); }
+.g-pulse {
+  position: absolute; inset: -2px; border-radius: 50%; border: 2px solid var(--game);
+  opacity: 0; pointer-events: none;
+}
+.g-speaker.playing .g-pulse { animation: g-ring 1.1s ease-out 2; }
+@keyframes g-ring {
+  0% { opacity: .7; transform: scale(1); } 100% { opacity: 0; transform: scale(1.5); }
+}
+.g-listen-hint { color: var(--muted); font-size: .88rem; }
+
+/* ---------------------------------------------------------------- correction
+   Shown with the clock STOPPED. Being told the answer is information, not a
+   second penalty on top of losing the points and the combo. */
+.g-feedback { min-height: 20px; }
+.g-correct {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  padding: 14px 18px; border-radius: 11px;
+  background: var(--bad-bg); border-left: 3px solid var(--bad);
+}
+.g-shell[data-state="near"] .g-correct { background: var(--panel-2); border-left-color: var(--warn); }
+.g-fb-label {
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .09em; font-weight: 750;
+  color: var(--bad); flex: none;
+}
+.g-shell[data-state="near"] .g-fb-label { color: var(--warn); }
+.g-fb-answer { font-size: 1.2rem; font-weight: 700; }
+
+/* The two-line correction: what it was, and what you wrote, each with the
+   words that differ picked out — so the mistake is visible rather than
+   something to find by eye at second 50 of a sprint. */
+.g-fb-line { display: flex; align-items: baseline; gap: 10px; flex-basis: 100%; flex-wrap: wrap; }
+.g-fb-words { font-size: 1.12rem; font-weight: 650; line-height: 1.4; }
+.g-fb-line.is-typed { margin-top: 5px; }
+.g-fb-line.is-typed .g-fb-label { color: var(--muted); }
+.g-fb-line.is-typed .g-fb-words { font-weight: 500; color: var(--muted); }
+.g-diff {
+  border-radius: 4px; padding: 0 3px; margin: 0 -1px;
+  background: var(--good-bg); color: var(--good); font-weight: 750;
+}
+.g-fb-line.is-typed .g-diff {
+  background: var(--bad-bg); color: var(--bad); font-weight: 650;
+  text-decoration: line-through; text-decoration-thickness: 1px;
+}
+.g-shell[data-state="near"] .g-fb-line.is-answer .g-diff { background: var(--warn-soft, var(--panel-2)); color: var(--warn); }
+.g-fb-note { flex-basis: 100%; color: var(--muted); font-size: .88rem; }
+.g-continue {
+  margin-top: 12px; border: 1px solid var(--border); background: var(--panel-2); color: var(--text);
+  font-weight: 650; font-size: .9rem; padding: 9px 18px; border-radius: 9px; cursor: pointer;
+}
+.g-continue:hover { border-color: var(--game); }
+
+/* ================================================================ the result */
+.g-over { max-width: 560px; margin: 0 auto; padding: 30px 0 50px; text-align: center; }
+.g-over-eyebrow {
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 750; color: var(--muted);
+}
+.g-over-score {
+  font-size: 4.2rem; font-weight: 800; line-height: 1; letter-spacing: -.03em;
+  margin: 8px 0 6px; font-variant-numeric: tabular-nums;
+}
+.g-over[data-pb="1"] .g-over-score { color: var(--good); }
+.g-over-verdict { font-size: 1.05rem; color: var(--muted); margin-bottom: 4px; }
+.g-over-verdict.pb { color: var(--good); font-weight: 700; }
+.g-again {
+  display: block; margin: 24px auto 0; border: none; background: var(--accent); color: #fff;
+  font-weight: 700; font-size: 1.05rem; padding: 14px 46px; border-radius: 11px; cursor: pointer;
+}
+.g-again:hover { background: var(--accent-2); }
+.g-over-stats {
+  display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin: 26px 0 4px;
+}
+.g-stat { display: flex; flex-direction: column; gap: 1px; }
+.g-stat b { font-size: 1.1rem; font-weight: 750; font-variant-numeric: tabular-nums; }
+.g-stat span { font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.g-over-h {
+  margin: 28px 0 10px; font-size: .72rem; text-transform: uppercase; letter-spacing: .1em;
+  font-weight: 750; color: var(--muted);
+}
+.g-misses { display: flex; flex-direction: column; gap: 1px; text-align: left; }
+.g-miss {
+  display: flex; gap: 14px; align-items: baseline; padding: 9px 12px;
+  border-bottom: 1px solid var(--border);
+}
+.g-miss:last-child { border-bottom: none; }
+.g-miss-q { flex: 1; color: var(--muted); font-size: .92rem; min-width: 0; }
+.g-miss-a { font-weight: 700; }
+.g-over-note { color: var(--muted); font-size: .82rem; margin: 10px 0 0; }
+.g-back {
+  display: block; margin: 26px auto 0; border: none; background: none; color: var(--muted);
+  font-size: .9rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
+}
+.g-back:hover { color: var(--accent); }
+
+/* ================================================================= Emparejar */
+.g-match { display: flex; gap: 10px; align-items: flex-start; }
+.g-match-col { flex: 1; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.g-card {
+  min-height: 54px; padding: 8px 11px; border: 1px solid var(--border);
+  background: var(--panel-2); color: var(--text); border-radius: 10px; cursor: pointer;
+  font-weight: 650; font-size: .92rem; display: flex; align-items: center; justify-content: center;
+  text-align: center; word-break: break-word; line-height: 1.25;
+  transition: border-color .12s ease, background-color .12s ease, opacity .3s ease, transform .3s ease;
+}
+.g-card:hover { border-color: var(--game); }
+.g-card.open { border-color: var(--game); background: var(--panel); border-width: 2px; }
+.g-card.miss { border-color: var(--bad); background: var(--bad-bg); animation: g-shake .3s ease; }
+/* matched pairs LEAVE the board rather than sitting there greyed out, so the
+   board visibly empties as you clear it */
+.g-card.gone {
+  opacity: 0; transform: scale(.9); pointer-events: none;
+  border-color: var(--good); background: var(--good-bg);
+}
+
+@media (max-width: 640px) {
+  .g-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+  .g-tile { min-height: 132px; padding: 13px 14px 11px; }
+  .g-prompt { font-size: 1.3rem; }
+  .g-over-score { font-size: 3.2rem; }
+  .g-score { font-size: 1.7rem; }
+  .g-speaker { width: 64px; height: 64px; min-height: 64px; font-size: 1.45rem; }
+}

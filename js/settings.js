@@ -18,7 +18,12 @@ window.Settings = (function () {
    * Spanish should not turn off dark mode. */
   var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.errors', 'fluidez.captured',
     'fluidez.userWords', 'fluidez.journal', 'fluidez.profile', 'fluidez.theme', 'fluidez.topicLevel', 'fluidez.caps',
-    'fluidez.gameBest', 'fluidez.onboarded', 'fluidez.voice', 'fluidez.suggest'];
+    /* 'fluidez.gameBest' is the RETIRED games store — the old per-submode counts
+     * of correct answers. It is no longer read (js/gamescore.js owns
+     * 'fluidez.games' now), but it stays on this list so an export taken
+     * before the rewrite still round-trips and a reset still clears it. */
+    'fluidez.gameBest', 'fluidez.games',
+    'fluidez.onboarded', 'fluidez.voice', 'fluidez.suggest'];
   var KEEP_ON_RESET = { 'fluidez.theme': 1, 'fluidez.voice': 1 };
 
   function exportData() {

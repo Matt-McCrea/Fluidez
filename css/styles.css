@@ -539,18 +539,7 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .mini-btn.add-chip.done { border-color:var(--good); color:var(--good); opacity:1; }
 .gloss-item .add-chip { margin-left:4px; vertical-align:middle; }
 
-/* ---- games ---- */
-.game-timer { font-weight:700; color:var(--accent); font-variant-numeric:tabular-nums; }
-.game-score { margin-bottom:10px; font-variant-numeric:tabular-nums; }
-.match-columns { display:flex; gap:10px; margin-top:10px; align-items:flex-start; }
-.match-col { flex:1; display:flex; flex-direction:column; gap:8px; min-width:0; }
-.match-card {
-  min-height:56px; padding:8px 10px; border:1px solid var(--border); background:var(--panel-2); color:var(--text);
-  border-radius:10px; cursor:pointer; font-weight:650; font-size:.9rem; display:flex; align-items:center; justify-content:center;
-  text-align:center; word-break:break-word; line-height:1.25;
-}
-.match-card.open { border-color:var(--accent); background:var(--panel); }
-.match-card.matched { opacity:.35; border-color:var(--good); cursor:default; pointer-events:none; }
+/* ---- games: the whole section's styling lives in css/games.css ---- */
 
 /* ---- strand lessons: register groups, genre models ----------------------- */
 .register-head{
