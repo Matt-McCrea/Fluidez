@@ -50,14 +50,27 @@ window.Grammar = (function () {
   }
 
   /* Open the reference at one lesson from anywhere — what an "Understand this
-   * better" link needs. The session runs in an overlay (js/app.js), so closing
-   * it first is what makes the reference visible; Shell owns the Más tab this
-   * view lives under. */
+   * better" link needs. */
   function open(id) {
-    if (window.Shell && window.Shell.closeOverlay) window.Shell.closeOverlay();
-    var host = document.getElementById('stage-host') ||
-               document.querySelector('.tab-host') || document.body;
-    render(host, function () { if (window.Shell) window.Shell.go('mas'); }, id);
+    /* This used to CLOSE the overlay and then render into #stage-host — the
+     * element closeOverlay() has just hidden and cleared. So the reference was
+     * drawn into a hidden node and the learner was left looking at whatever
+     * tab was behind it, scrolled wherever they had left it: tapping
+     * "Understand this better" from a lesson appeared to do nothing but jump
+     * to the bottom of Lecciones.
+     *
+     * It is a focused task, so it belongs in the overlay like every other one
+     * (js/shell.js), and its own back button is what closes it. */
+    if (!window.Shell) return;
+    window.Shell.openOverlay(false);
+    var host = document.getElementById('stage-host');
+    if (!host) return;
+    render(host, function () {
+      window.Shell.closeOverlay();
+      window.Shell.go('mas');
+    }, id);
+    host.scrollTop = 0;
+    if (window.scrollTo) window.scrollTo(0, 0);
   }
 
   return { render: render, open: open };
