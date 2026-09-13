@@ -68,8 +68,12 @@ window.Games = (function () {
 
   function playable(g) {
     if (!g.needsVoice) return true;
+    if (GS.silent()) return false;                  // "can't listen right now"
     return !!(window.Speak && window.Speak.available());
   }
+  // Can this device speak at all? Separate from the preference — there is no
+  // point offering to turn audio back on where there was never any.
+  function hasVoice() { return !!(window.Speak && window.Speak.available()); }
 
   function start(g, extra) {
     var h = host();
@@ -79,6 +83,7 @@ window.Games = (function () {
       key: g.key, title: g.name, kind: g.kind,
       duration: g.secs ? g.secs * 1000 : null,
       sudden: !!g.sudden, hue: g.hue,
+      silent: GS.silent() || !hasVoice(),
       onExit: backToList
     };
     if (extra) Object.keys(extra).forEach(function (k) { cfg[k] = extra[k]; });
@@ -193,7 +198,25 @@ window.Games = (function () {
     top.appendChild(el('span', 'g-daily-label', 'Reto de hoy'));
     top.appendChild(el('span', 'g-daily-date', GS.dailyLabel()));
     card.appendChild(top);
-    card.appendChild(el('p', 'g-daily-rule', 'Mixto · 90 segundos · el mismo reto para todos hoy'));
+    card.appendChild(el('p', 'g-daily-rule', GS.silent()
+      ? 'Mixto · 90 segundos · sin nada que escuchar'
+      : 'Mixto · 90 segundos · el mismo reto para todos hoy'));
+
+    /* The audio switch lives here because this is where it is wanted: the
+     * daily challenge is the round somebody plays on a train. It is a
+     * preference, so it also hides Escucha and keeps spoken items out of
+     * Racha — and it says so, rather than quietly changing three screens. */
+    if (hasVoice()) {
+      var mute = el('button', 'g-mute' + (GS.silent() ? ' on' : ''),
+        GS.silent() ? '🔇 Sin audio — tocar para volver a activarlo'
+                    : '🔇 No puedo escuchar ahora');
+      mute.type = 'button';
+      mute.addEventListener('click', function () {
+        GS.setSilent(!GS.silent());
+        render(host(), exitAll);
+      });
+      card.appendChild(mute);
+    }
 
     var best = GS.todayBest(key), pb = GS.pb(key), streak = GS.dailyStreak();
     var nums = el('div', 'g-daily-nums');
@@ -220,7 +243,8 @@ window.Games = (function () {
     clear(h);
     window.GameRound.run(h, {
       key: GS.dailyKey(), title: 'Reto de hoy', kind: 'mixed', duration: 90000,
-      hue: 'var(--accent)', seed: GS.dailySeed(), onExit: backToList
+      hue: 'var(--accent)', seed: GS.dailySeed(),
+      silent: GS.silent() || !hasVoice(), onExit: backToList
     });
   }
 
@@ -361,7 +385,8 @@ window.Games = (function () {
       clear(h);
       window.GameRound.run(h, {
         key: 'debiles', title: weak.label, kind: 'grammar', topic: weak.topic,
-        duration: 60000, hue: '#b5711a', onExit: backToList
+        duration: 60000, hue: '#b5711a',
+        silent: GS.silent() || !hasVoice(), onExit: backToList
       });
     });
     card.appendChild(go);

@@ -220,6 +220,23 @@ window.GameScore = (function () {
     return { plays: plays, records: Math.min(records, plays), bestRun: bestRun };
   }
 
+  /* ---- "I can't listen right now" ------------------------------------------
+   * A preference, not a per-round choice: somebody on a train without
+   * headphones is not going to re-declare that on every tile. It hides the
+   * listening game entirely and keeps spoken items out of every mixed round,
+   * including the daily challenge.
+   *
+   * Kept in its own key rather than inside the per-game store, which is a map
+   * of game -> record and would have to grow a guard in every loop over it. */
+  var PREF_KEY = 'fluidez.gamePrefs';
+  function prefs() { try { return JSON.parse(localStorage.getItem(PREF_KEY)) || {}; } catch (e) { return {}; } }
+  function silent() { return !!prefs().silent; }
+  function setSilent(v) {
+    var p = prefs();
+    p.silent = !!v;
+    try { localStorage.setItem(PREF_KEY, JSON.stringify(p)); } catch (e) {}
+  }
+
   // Thousands separators, because 8420 and 8,420 are not the same number to read.
   function fmt(n) { return String(Math.round(n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
 
@@ -229,6 +246,7 @@ window.GameScore = (function () {
     baseValue: baseValue, award: award, nextRung: nextRung, limitFor: limitFor,
     stats: stats, record: record, pb: pb, todayBest: todayBest, nearMissScore: nearMissScore,
     dailySeed: dailySeed, dailyKey: dailyKey, dailyLabel: dailyLabel, dailyStreak: dailyStreak,
-    weekSummary: weekSummary, today: today, fmt: fmt
+    weekSummary: weekSummary, today: today, fmt: fmt,
+    silent: silent, setSilent: setSilent
   };
 })();

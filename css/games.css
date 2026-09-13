@@ -64,6 +64,14 @@
 .g-dn { display: flex; flex-direction: column; gap: 1px; }
 .g-dn b { font-size: 1.5rem; font-weight: 750; font-variant-numeric: tabular-nums; line-height: 1.1; }
 .g-dn span { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.g-mute {
+  display:block; margin:12px 0 0; padding:6px 0; border:none; background:none;
+  color:var(--muted); font-size:.82rem; font-weight:600; cursor:pointer;
+  text-align:left; min-height:0;
+}
+.g-mute:hover { color:var(--accent); }
+.g-mute.on { color:var(--warn); }
+
 .g-daily-go {
   margin-top: 16px; border: none; background: var(--accent); color: #fff;
   font-weight: 650; font-size: 1rem; padding: 12px 26px; border-radius: 10px; cursor: pointer;
