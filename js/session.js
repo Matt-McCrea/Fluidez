@@ -58,12 +58,19 @@ window.Session = (function () {
 
   // ---- align content to the day's focus (use what was just taught) --------
   var E = window.ENGINE;
+  /* The tense a grammar focus is ABOUT. For the generated ladder lessons this
+   * is the id (`preterito`), but a merged lesson keeps the id of its
+   * hand-written half (`gr-presente-subjuntivo-b1`) while still teaching
+   * `presubj` — so the id is not a safe stand-in for the tense key any more. */
+  function focusTense(focus) { return focus.tense || focus.id; }
+
   function passageUsesFocus(p, focus) {
     if (focus.type === 'grammar' && E.CONCEPTS[focus.id]) return E.CONCEPTS[focus.id].matchesText(p.text);
     if (focus.type === 'grammar') {
       var a = E.analyzeSentence(p.text);
-      return a.verbs.some(function (v) { return v.analyses.some(function (x) { return x.tense === focus.id; }); }) ||
-             a.compounds.some(function (c) { return c.parts.some(function (x) { return x.tense === focus.id; }); });
+      var tk = focusTense(focus);
+      return a.verbs.some(function (v) { return v.analyses.some(function (x) { return x.tense === tk; }); }) ||
+             a.compounds.some(function (c) { return c.parts.some(function (x) { return x.tense === tk; }); });
     }
     if (focus.type === 'verbs') return E.matchesVerbGroup(p.text, focus.verbs) >= 1;
     if (focus.type === 'vocab') return E.matchesVocabWords(p.text, focus.words) >= 1;
@@ -71,7 +78,7 @@ window.Session = (function () {
   }
   function clozeMatchesFocus(it, focus) {
     if (focus.type === 'grammar' && E.CONCEPTS[focus.id]) return E.CONCEPTS[focus.id].matchesCloze(it);
-    if (focus.type === 'grammar') return it.tense === focus.id;
+    if (focus.type === 'grammar') return it.tense === focusTense(focus);
     if (focus.type === 'verbs') return focus.verbs.indexOf(it.inf) !== -1;
     return false;
   }
@@ -79,7 +86,7 @@ window.Session = (function () {
     if (focus.type !== 'grammar') return false;
     if (E.CONCEPTS[focus.id]) return E.CONCEPTS[focus.id].matchesConstraints(t.constraints);
     return (t.constraints || []).some(function (c) {
-      return (c.type === 'anyVerbInTense' || c.type === 'verbFormAny') && c.tense === focus.id;
+      return (c.type === 'anyVerbInTense' || c.type === 'verbFormAny') && c.tense === focusTense(focus);
     });
   }
   // n items from the focus-aligned items, topped up with other items to reach n
@@ -174,7 +181,10 @@ window.Session = (function () {
       dayIndex = (window.Curriculum.startOf
         ? window.Curriculum.startOf(pr.cefr || (window.Profile && window.Profile.current()))
         : 0) + Math.min(di, seq.length - 1);
-      if (focus.type === 'grammar') lesson = lessonById(focus.id);
+      if (focus.type === 'grammar') {
+        lesson = lessonById(focus.id);
+        if (lesson && lesson.tense) focus.tense = lesson.tense;
+      }
       level = 1;
       lessons.forEach(function (l) { if (studied[l.id]) level = Math.max(level, l.level || 1); });
       if (lesson) level = Math.max(level, lesson.level || 1);
@@ -192,7 +202,8 @@ window.Session = (function () {
       for (var i = 0; i < pool.length; i++) { if (!studied[pool[i].id]) { lesson = pool[i]; break; } }
       if (!lesson) lesson = pool[day % Math.max(1, pool.length)] || null;
       level = lesson ? (lesson.level || 1) : (pr.maxGate || 1);
-      focus = lesson ? { type: 'grammar', id: lesson.id } : { type: 'practice' };
+      focus = lesson ? { type: 'grammar', id: lesson.id, tense: lesson.tense || lesson.id }
+                     : { type: 'practice' };
       if (pr.unlockAll) level = 99;
       /* B1 and up do not walk a day counter — they take the next unstudied
        * lesson — so dayIndex stayed null and the home card showed no unit at

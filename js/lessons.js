@@ -135,7 +135,11 @@
     ];
     var irr = irregularsFor(tk);
     return {
-      id: tk, level: level, title: doc.title, summary: doc.summary,
+      /* `tense` is the engine's key for what this lesson teaches. It is the
+       * same as the id here, but it has to survive a MERGE that keeps the
+       * other half's id — see applyMerges, and js/session.js, which aligns the
+       * day's cloze and reading to the tense being taught. */
+      id: tk, tense: tk, level: level, title: doc.title, summary: doc.summary,
       canDo: doc.canDo || null,          // optional; see data/grammar-docs.js
       sections: sections,
       pitfalls: doc.irregulars || [],
@@ -535,6 +539,13 @@
         // A merge that drops it would trade the paradigm for the prose, which
         // is the opposite of the point of pairing them.
         if (p.conjTabs && !out.conjTabs) out.conjTabs = p.conjTabs;
+        /* The tense key travels with the merge even when the generated half
+         * loses the id. Without this, the day that teaches the present
+         * subjunctive is called `gr-presente-subjuntivo-b1`, js/session.js
+         * asks for cloze items whose `tense` equals that, and all 50 presubj
+         * items in data/apply.js are invisible to the lesson that teaches
+         * them — as were perfecto's 17, plusc's 29 and imperativo's 16. */
+        if (p.tense && !out.tense) out.tense = p.tense;
       });
       // Drop the blocks that stayed empty: the strand gate rejects a block a
       // strand isn't allowed to carry, and an empty [] is still carrying it.
