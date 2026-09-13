@@ -257,6 +257,11 @@ window.LessonRun = (function () {
       wrap.appendChild(UI.el('div', 'big-check', '✓'));
       wrap.appendChild(UI.el('h1', null, UI.t('Lección terminada', 'Lesson done')));
       wrap.appendChild(UI.el('p', 'muted', 'You worked through ' + title + ' — taught, read, applied and written.'));
+      // a tense lesson earns a drill on that tense, right now, against a clock
+      if (window.Games && window.Games.tenseCard && ctx && ctx.lesson) {
+        var tc = window.Games.tenseCard(ctx.lesson, back);
+        if (tc) wrap.appendChild(tc);
+      }
       wrap.appendChild(UI.nextBtn('← Volver', back));
       host.appendChild(wrap);
     }

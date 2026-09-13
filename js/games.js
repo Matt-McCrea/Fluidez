@@ -53,13 +53,18 @@ window.Games = (function () {
     { key: 'gramatica', name: 'Gramática', rule: '¿cuál va aquí?', icon: '🎯',
       hue: '#2f7fb8', secs: 90, kind: 'grammar',
       blurb: 'Ser o estar, por o para, indicativo o subjuntivo. Noventa segundos.' },
-    /* Not red, however much "sudden death" wants to be: --game colours the
-     * focused input and the clock, and red already means "you got that wrong"
-     * everywhere else in the round. A game whose resting state looks like an
-     * error state is telling the player the wrong thing continuously. */
-    { key: 'racha', name: 'Racha', rule: 'un fallo y se acaba', icon: '🔥',
-      hue: '#a8306e', sudden: true, kind: 'mixed',
-      blurb: 'Cualquier cosa, sin avisar. Un solo error termina la partida.' },
+    /* Three minutes AND three lives, not instant death. A single mistake
+     * ending a long run reads as unfair and people stop; the third one reads
+     * as earned. The clock is what stops you banking a good run and walking
+     * away — which is most of what makes a three-minute chess game hard to
+     * put down.
+     *
+     * Not red, however much this game wants to be: --game colours the focused
+     * input and the clock, and red already means "you got that wrong"
+     * everywhere else in the round. */
+    { key: 'racha', name: 'Racha', rule: '3 vidas, 3 minutos', icon: '🔥',
+      hue: '#a8306e', secs: 180, lives: 3, kind: 'mixed',
+      blurb: 'Cualquier cosa, sin avisar. Tres vidas y el reloj corriendo.' },
     { key: 'emparejar', name: 'Emparejar', rule: 'vacía el tablero', icon: '🃏',
       hue: '#2f8f5b', secs: 60, custom: true,
       blurb: 'Empareja las columnas. Cada tablero es más grande que el anterior.' }
@@ -82,7 +87,7 @@ window.Games = (function () {
     var cfg = {
       key: g.key, title: g.name, kind: g.kind,
       duration: g.secs ? g.secs * 1000 : null,
-      sudden: !!g.sudden, hue: g.hue,
+      lives: g.lives || 0, hue: g.hue,
       silent: GS.silent() || !hasVoice(),
       onExit: backToList
     };
@@ -158,6 +163,13 @@ window.Games = (function () {
     out.addEventListener('click', function () { if (back) back(); });
     head.appendChild(out);
     page.appendChild(head);
+
+    /* The rating sits above everything because it is the only number here
+     * that every single round moves. */
+    var rt = el('div', 'g-rating-bar');
+    rt.appendChild(el('b', null, GS.fmt(GS.rating())));
+    rt.appendChild(el('span', null, 'tu nivel · sube y baja con cada partida'));
+    page.appendChild(rt);
 
     // ---- today's challenge ----
     page.appendChild(dailyCard());
@@ -283,8 +295,13 @@ window.Games = (function () {
     var open3 = GAMES.filter(playable);
     // the one you nearly beat first, then whatever you play most
     var rec = recommend();
-    var rest = open3.filter(function (g) { return !rec || g.key !== rec.game.key; })
-      .sort(function (a, b) { return GS.stats(b.key).plays - GS.stats(a.key).plays; });
+    var rest = open3.filter(function (g) { return !rec || g.key !== rec.game.key; });
+    /* Rotate the other two by the day, so the shelf is not the same two games
+     * for ever. Three chips over six games means somebody who opens the app
+     * on three days has been shown all of them — you cannot find a favourite
+     * among games you were never offered. */
+    var off = GS.today() % Math.max(1, rest.length);
+    rest = rest.slice(off).concat(rest.slice(0, off));
     var show = (rec ? [rec.game] : []).concat(rest).slice(0, 3);
 
     var card = el('div', 'home-games');
@@ -318,8 +335,8 @@ window.Games = (function () {
       var mid = el('span', 'hg-chip-mid');
       mid.appendChild(el('b', null, g.name));
       mid.appendChild(el('span', 'hg-chip-pb',
-        st.pb ? (g.sudden ? st.bestRun + ' seguidas' : GS.fmt(st.pb))
-              : (g.sudden ? 'muerte súbita' : g.secs + ' s')));
+        st.pb ? GS.fmt(st.pb)
+              : (g.lives ? g.lives + ' vidas' : g.secs + ' s')));
       c.appendChild(mid);
       c.addEventListener('click', function () { open(g.key, back); });
       chips.appendChild(c);
@@ -352,7 +369,8 @@ window.Games = (function () {
 
     var head = el('div', 'g-tile-head');
     head.appendChild(el('span', 'g-tile-ico', g.icon));
-    head.appendChild(el('span', 'g-tile-len', g.sudden ? 'muerte súbita' : g.secs + ' s'));
+    head.appendChild(el('span', 'g-tile-len',
+      g.lives ? Math.round(g.secs / 60) + ' min · ' + g.lives + ' vidas' : g.secs + ' s'));
     t.appendChild(head);
 
     t.appendChild(el('div', 'g-tile-name', g.name));
@@ -360,8 +378,8 @@ window.Games = (function () {
 
     var foot = el('div', 'g-tile-foot');
     if (st.pb) {
-      foot.appendChild(el('b', null, (g.sudden ? st.bestRun + ' seguidas' : GS.fmt(st.pb))));
-      if (st.bestBand && !g.sudden) foot.appendChild(el('span', 'g-tile-band', st.bestBand));
+      foot.appendChild(el('b', null, GS.fmt(st.pb)));
+      if (st.bestBand) foot.appendChild(el('span', 'g-tile-band', st.bestBand));
     } else {
       foot.appendChild(el('span', 'g-tile-none', 'sin récord'));
     }
@@ -374,21 +392,66 @@ window.Games = (function () {
     return t;
   }
 
+  /* A sixty-second round built from one topic. Reached from the games list
+   * and, more usefully, from the end screen of the round that just exposed it. */
+  function openWeak(topic, label) {
+    if (!exitAll) exitAll = function () { window.Shell.closeOverlay(); window.Shell.go('inicio'); };
+    window.Shell.openOverlay(false);
+    var h = host();
+    clear(h);
+    window.GameRound.run(h, {
+      key: 'debiles', title: label || 'Puntos débiles', kind: 'grammar', topic: topic,
+      duration: 60000, hue: '#b5711a',
+      silent: GS.silent() || !hasVoice(), onExit: backToList
+    });
+  }
+
+  /* ---- the drill a tense lesson has just earned --------------------------
+   * A lesson teaches a tense, shows its endings table, and then the learner
+   * closes the app. The forms are never harder than in the ten minutes after
+   * they are taught, and never more worth drilling. This is the same Verbos
+   * game, locked to that one tense, offered at the moment the lesson ends —
+   * which for a course that teaches a new tense every few days means it comes
+   * round on exactly the cadence it should.
+   *
+   * Returns null when the lesson taught no tense, so the caller can append it
+   * unconditionally and get nothing the rest of the time. */
+  function openTense(tense, label, back) {
+    if (!exitAll) exitAll = back || function () { window.Shell.closeOverlay(); window.Shell.go('inicio'); };
+    window.Shell.openOverlay(false);
+    var h = host();
+    clear(h);
+    var g = byKey('verbos');
+    window.GameRound.run(h, {
+      key: 'verbos', title: label || 'Verbos', kind: 'verb', duration: 60000,
+      hue: g ? g.hue : '#b5711a', lockTense: tense,
+      silent: GS.silent() || !hasVoice(),
+      onExit: back || backToList
+    });
+  }
+
+  function tenseCard(lesson, back) {
+    var tense = lesson && lesson.tense;
+    if (!tense || !window.ENGINE || !window.ENGINE.TENSE_LABEL[tense]) return null;
+    var label = window.ENGINE.TENSE_LABEL[tense];
+    var card = el('div', 'g-tensecard');
+    card.appendChild(el('span', 'g-tensecard-label', 'Ahora con el reloj'));
+    card.appendChild(el('p', 'g-tensecard-text',
+      'Acabas de aprender el ' + label.toLowerCase() + '. Sesenta segundos produciéndolo.'));
+    var go = el('button', 'g-tensecard-go', 'Practicar ' + label);
+    go.type = 'button';
+    go.addEventListener('click', function () { openTense(tense, label, back); });
+    card.appendChild(go);
+    return card;
+  }
+
   function weakCard(weak) {
     var card = el('div', 'g-weak');
     card.appendChild(el('span', 'g-weak-label', 'Se te resiste'));
     card.appendChild(el('p', 'g-weak-text', weak.label + ' — ' + weak.n + ' fallos.'));
     var go = el('button', 'g-weak-go', '60 segundos con eso');
     go.type = 'button';
-    go.addEventListener('click', function () {
-      var h = host();
-      clear(h);
-      window.GameRound.run(h, {
-        key: 'debiles', title: weak.label, kind: 'grammar', topic: weak.topic,
-        duration: 60000, hue: '#b5711a',
-        silent: GS.silent() || !hasVoice(), onExit: backToList
-      });
-    });
+    go.addEventListener('click', function () { openWeak(weak.topic, weak.label); });
     card.appendChild(go);
     return card;
   }
@@ -626,5 +689,6 @@ window.Games = (function () {
     tick();
   }
 
-  return { render: render, open: open, homeCard: homeCard, GAMES: GAMES };
+  return { render: render, open: open, openWeak: openWeak, openTense: openTense,
+           homeCard: homeCard, tenseCard: tenseCard, topicLabel: topicLabel, GAMES: GAMES };
 })();

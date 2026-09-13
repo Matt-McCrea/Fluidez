@@ -49,8 +49,17 @@ window.GameRound = (function () {
     var rungCap = Math.min(GS.MAX_RUNG, cfg.maxRung || GS.ceilingRung());
     var rung = Math.min(rungCap, cfg.startRung || 1);
 
+    /* Lives, not instant death. One mistake ending a forty-item run reads as
+     * unfair; the third one reads as earned — which is the difference between
+     * closing the app and pressing Otra vez. `lives: 0` means unlimited (a
+     * plain timed sprint); a game with lives and no clock is pure sudden
+     * death, where each ITEM carries the clock instead. */
+    var lives = cfg.lives || (cfg.sudden ? 1 : 0);
+    var livesLeft = lives;
+    var perItemClock = !cfg.duration;
+
     var score = 0, shownScore = 0, combo = 0, bestCombo = 0, bestRung = rung;
-    var seen = 0, right = 0, runLen = 0, misses = [], usedPrompts = {};
+    var seen = 0, right = 0, runLen = 0, bestRun = 0, misses = [], usedPrompts = {};
     var ended = false, paused = false, pausedAt = 0, recordHit = false;
     var endAt = cfg.duration ? Date.now() + cfg.duration : null;
     var itemStart = 0, itemWindow = 0, current = null, resolved = true;
@@ -72,10 +81,13 @@ window.GameRound = (function () {
     var band = el('span', 'g-band');
     var comboPill = el('span', 'g-combo');
     comboPill.hidden = true;
+    var livesPill = el('span', 'g-lives');
+    livesPill.hidden = !lives;
     var exit = el('button', 'g-exit', '✕');
     exit.type = 'button';
     exit.setAttribute('aria-label', 'Salir');
     top.appendChild(name); top.appendChild(band); top.appendChild(comboPill);
+    top.appendChild(livesPill);
     top.appendChild(el('span', 'g-spacer')); top.appendChild(exit);
     shell.appendChild(top);
 
@@ -99,17 +111,25 @@ window.GameRound = (function () {
 
     var pb = GS.pb(cfg.key);
     pbEl.textContent = pb ? 'PB ' + GS.fmt(pb) : '';
-    if (cfg.sudden) { secsEl.classList.add('g-run'); }
+    if (perItemClock) { secsEl.classList.add('g-run'); }
+    function drawLives() {
+      if (!lives) return;
+      var t = '';
+      for (var i = 0; i < lives; i++) t += i < livesLeft ? '●' : '○';
+      livesPill.textContent = t;
+      livesPill.dataset.low = livesLeft <= 1 ? '1' : '';
+    }
+    drawLives();
 
     exit.addEventListener('click', function () { stop(); if (cfg.onExit) cfg.onExit(); });
 
     // ---- clock -------------------------------------------------------------
     function remaining() {
-      if (cfg.sudden) return Math.max(0, itemStart + itemWindow - now());
+      if (perItemClock) return Math.max(0, itemStart + itemWindow - now());
       return endAt ? Math.max(0, endAt - now()) : 0;
     }
     function now() { return paused ? pausedAt : Date.now(); }
-    function total() { return cfg.sudden ? (itemWindow || 1) : (cfg.duration || 1); }
+    function total() { return perItemClock ? (itemWindow || 1) : (cfg.duration || 1); }
 
     function tick() {
       if (ended) return;
@@ -117,7 +137,7 @@ window.GameRound = (function () {
       var frac = Math.max(0, Math.min(1, left / total()));
       clockFill.style.transform = 'scaleX(' + frac + ')';
       var secs = Math.ceil(left / 1000);
-      if (cfg.sudden) {
+      if (perItemClock) {
         secsEl.textContent = runLen + (runLen === 1 ? ' seguida' : ' seguidas');
         clock.dataset.urgent = left < 3000 ? '1' : '';
       } else {
@@ -126,7 +146,7 @@ window.GameRound = (function () {
         shell.dataset.urgent = left <= 10000 ? '1' : '';
       }
       if (left <= 0 && !paused) {
-        if (cfg.sudden) { if (!resolved) timeOut(); }
+        if (perItemClock) { if (!resolved) timeOut(); }
         else { finish(); return; }
       }
       raf = requestAnimationFrame(tick);
@@ -204,7 +224,7 @@ window.GameRound = (function () {
       var item = null, fallback = null;
       for (var i = 0; i < 8; i++) {
         var got = cfg.topic ? GI.weakItem(cfg.topic, rung, rng)
-                            : GI.next(cfg.kind, rung, rng, { silent: cfg.silent });
+                            : GI.next(cfg.kind, rung, rng, { silent: cfg.silent, tense: cfg.lockTense });
         if (!got) continue;
         fallback = got;
         if (!usedPrompts[keyOf(got)]) { item = got; break; }
@@ -216,7 +236,7 @@ window.GameRound = (function () {
       resolved = false;
       setBand(item.cefr);
       itemStart = Date.now();
-      itemWindow = cfg.sudden ? suddenWindow(runLen) : GS.limitFor(item) * 3;
+      itemWindow = perItemClock ? suddenWindow(runLen) : GS.limitFor(item) * 3;
       renderItem(item);
     }
     function keyOf(it) { return (it.prompt || '') + '|' + (it.es || it.answer || ''); }
@@ -234,9 +254,12 @@ window.GameRound = (function () {
       if (result === 'wrong') {
         setCombo(0);
         misses.push(item);
+        runLen = 0;
+        if (lives) { livesLeft--; drawLives(); }
       } else {
         right++;
         runLen++;
+        bestRun = Math.max(bestRun, runLen);
         score += a.points;
         if (result === 'good') setCombo(combo + 1);
         tweenScore();
@@ -251,7 +274,7 @@ window.GameRound = (function () {
       rung = GS.nextRung(rung, result, rungCap);
       bestRung = Math.max(bestRung, rung);
 
-      if (cfg.sudden && result === 'wrong') { showFeedback(item, result, timedOut, finish); return; }
+      if (lives && livesLeft <= 0 && result === 'wrong') { showFeedback(item, result, timedOut, finish); return; }
       showFeedback(item, result, timedOut, nextItem);
     }
 
@@ -552,7 +575,10 @@ window.GameRound = (function () {
       if (ended) return;
       stop();
       var band0 = GS.bandForRung(bestRung);
-      var res = GS.record(cfg.key, { score: score, combo: bestCombo, band: band0, run: runLen });
+      var res = GS.record(cfg.key, { score: score, combo: bestCombo, band: band0, run: bestRun });
+      // the daily challenge is one shared round; rating it would mean rating
+      // everyone against the same draw, which is a different thing
+      var rated = cfg.key === GS.dailyKey() ? null : GS.rate(cfg.key, score);
 
       clear(host);
       var over = el('div', 'g-over');
@@ -570,6 +596,18 @@ window.GameRound = (function () {
           'Te faltaron ' + GS.fmt(res.gap) + ' para tu récord de ' + GS.fmt(res.pb)));
       }
 
+      /* The rating moves on every round, which is the point of having one:
+       * a personal best is silent unless you beat it, and most rounds do not. */
+      if (rated) {
+        var rEl = el('div', 'g-rating' + (rated.delta > 0 ? ' up' : rated.delta < 0 ? ' down' : ''));
+        rEl.appendChild(el('b', null, GS.fmt(rated.after)));
+        rEl.appendChild(el('span', 'g-rating-d',
+          rated.first ? 'tu nivel de partida'
+            : rated.delta === 0 ? 'sin cambios'
+            : (rated.delta > 0 ? '▴ ' : '▾ ') + Math.abs(rated.delta)));
+        over.appendChild(rEl);
+      }
+
       var again = el('button', 'g-again', 'Otra vez');
       again.type = 'button';
       again.addEventListener('click', function () { run(host, cfg); });
@@ -583,7 +621,7 @@ window.GameRound = (function () {
         stats.appendChild(s2);
       }
       stat(seen ? Math.round(100 * right / seen) + '%' : '—', 'precisión');
-      if (cfg.sudden) stat(String(runLen), 'seguidas');
+      if (lives) stat(String(bestRun), 'mejor racha');
       stat('×' + (1 + Math.min(bestCombo, 10) * 0.1).toFixed(1), 'mejor combo');
       stat(band0, 'llegaste a');
       stat(String(res.todayBest ? GS.fmt(res.todayBest) : '—'), 'mejor de hoy');
@@ -602,6 +640,24 @@ window.GameRound = (function () {
         over.appendChild(el('p', 'g-over-note', 'Ya están en Puntos débiles.'));
       }
 
+      /* The rematch. Chess's post-game analysis works because it is a story
+       * about YOU — and the app already knows the one you keep living: a topic
+       * in the error log you have now missed several times. Offered here
+       * rather than on the games list because this is the moment it lands,
+       * with the miss still on screen. */
+      var rem = rematch();
+      if (rem && window.Games && window.Games.openWeak) {
+        var card = el('div', 'g-rematch');
+        card.appendChild(el('span', 'g-rematch-label', 'La revancha'));
+        card.appendChild(el('p', 'g-rematch-text',
+          rem.label + ' — ' + rem.n + (rem.n === 1 ? ' fallo' : ' fallos') + ' hasta ahora.'));
+        var go = el('button', 'g-rematch-go', '60 segundos con eso');
+        go.type = 'button';
+        go.addEventListener('click', function () { window.Games.openWeak(rem.topic, rem.label); });
+        card.appendChild(go);
+        over.appendChild(card);
+      }
+
       var back = el('button', 'g-back', '← Juegos');
       back.type = 'button';
       back.addEventListener('click', function () { if (cfg.onExit) cfg.onExit(); });
@@ -609,6 +665,23 @@ window.GameRound = (function () {
 
       host.appendChild(over);
       setTimeout(function () { again.focus(); }, 30);
+    }
+
+    /* A topic from THIS round's misses that the learner has been missing all
+     * along — not merely their worst topic ever, which would offer the same
+     * rematch after every round regardless of what just happened. */
+    function rematch() {
+      if (!window.ErrorLog || !window.Games || cfg.topic) return null;
+      var counts = {};
+      window.ErrorLog.list().forEach(function (e) {
+        if (e.topic) counts[e.topic] = (counts[e.topic] || 0) + (e.count || 1);
+      });
+      var best = null;
+      misses.forEach(function (m) {
+        if (!m.topic || (counts[m.topic] || 0) < 3) return;
+        if (!best || counts[m.topic] > counts[best]) best = m.topic;
+      });
+      return best ? { topic: best, n: counts[best], label: window.Games.topicLabel(best) } : null;
     }
 
     setBand(GS.bandForRung(rung));

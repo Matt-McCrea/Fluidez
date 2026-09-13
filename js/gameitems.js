@@ -174,6 +174,14 @@ window.GameItems = (function () {
           idx.grammar[band].push({ src: 'probe-mcq', id: p.id, q: p.q,
             options: p.options.slice(), answer: p.options[p.answer], topic: 'lesson:' + l.id });
         } else if (p.kind === 'cloze' && p.text && p.accept && p.accept.length) {
+          /* Only clozes that carry a cue. In its own lesson, "Hoy os voy a ___
+           * de mi ciudad." is fair — the text just taught `hablar de`. Dealt
+           * cold in a game, under a clock, with no lesson around it, there is
+           * nothing in the sentence that picks `hablar` over `contar` or
+           * `informar`, and the learner is being asked to read the author's
+           * mind. The convention across the corpus is a bracketed hint, and
+           * 665 of the 794 clozes have one — more than enough. */
+          if (!/\([^)]*\)/.test(p.text)) return;
           idx.grammar[band].push({ src: 'probe-cloze', id: p.id, q: p.text,
             accept: p.accept.slice(), answer: p.accept[0], topic: 'lesson:' + l.id });
         }
@@ -555,7 +563,7 @@ window.GameItems = (function () {
     return p.text + (p.marker ? ' (' + p.marker + ')' : '');
   }
 
-  function verbItem(rung, rng) {
+  function verbItem(rung, rng, opts) {
     var all = (window.Profile ? window.Profile.conjugableVerbs() : (window.VERBS || []));
     /* At A1 conjugableVerbs() is "verbs the curriculum has actually taught",
      * which on day one is none at all — correct for a lesson, fatal for a game
@@ -571,6 +579,11 @@ window.GameItems = (function () {
      * and the ladder climbs through RARITY and IRREGULARITY instead — there
      * still has to be somewhere to go at rung 8. */
     if (!wanted.length) wanted = [allowed[0] || 'presente'];
+    /* A lesson that has just taught a tense can hand you a round of nothing
+     * but that tense — which is the practice that lesson was for, and the
+     * moment it is worth most. The ladder then climbs through verb rarity and
+     * irregularity instead, so there is still somewhere to go. */
+    if (opts && opts.tense) wanted = [opts.tense];
 
     var cands = [];
     for (var i = 0; i < 8 && cands.length < 3; i++) {
@@ -747,7 +760,7 @@ window.GameItems = (function () {
     switch (kind) {
       case 'translate': return translateItem(rung, rng);
       case 'listen':    return listenItem(rung, rng);
-      case 'verb':      return verbItem(rung, rng);
+      case 'verb':      return verbItem(rung, rng, opts);
       case 'grammar':   return grammarItem(rung, rng);
       case 'vocab':     return vocabItem(rung, rng);
       case 'mixed':     return mixedItem(rung, rng, opts);

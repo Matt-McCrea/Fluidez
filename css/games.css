@@ -240,6 +240,14 @@
 .g-combo.beat { animation: g-beat .3s ease; }
 @keyframes g-beat { 0% { transform: scale(1); } 40% { transform: scale(1.22); } 100% { transform: scale(1); } }
 
+/* lives: three dots that go hollow. The count has to be readable at a glance
+   mid-round, so it is a shape rather than a number. */
+.g-lives {
+  font-size: .85rem; letter-spacing: .12em; font-weight: 700; color: var(--good);
+  background: var(--good-bg); padding: 4px 10px; border-radius: 999px; line-height: 1.2;
+}
+.g-lives[data-low="1"] { color: var(--bad); background: var(--bad-bg); }
+
 /* the clock: a bar, because "how much is left" is a shape, not a number */
 .g-clock {
   height: 7px; background: var(--panel-2); border-radius: 999px; overflow: hidden;
@@ -438,6 +446,49 @@
   font-size: .9rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
 }
 .g-back:hover { color: var(--accent); }
+
+/* ---- the rating -------------------------------------------------------------
+   Above everything on the games page, because it is the only number here that
+   every single round moves — a personal best is silent unless you beat it. */
+.g-rating-bar {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  margin: 0 0 22px; padding: 12px 16px;
+  background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px;
+}
+.g-rating-bar b { font-size: 1.6rem; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.g-rating-bar span { color: var(--muted); font-size: .85rem; }
+
+/* and on the result, where the round that just moved it is still on screen */
+.g-rating {
+  display: flex; align-items: baseline; justify-content: center; gap: 10px;
+  margin: 14px 0 2px;
+}
+.g-rating b { font-size: 1.5rem; font-weight: 750; font-variant-numeric: tabular-nums; }
+.g-rating-d { font-size: .95rem; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.g-rating.up .g-rating-d { color: var(--good); }
+.g-rating.down .g-rating-d { color: var(--bad); }
+
+/* ---- the rematch, and the drill a tense lesson has just earned ------------ */
+.g-rematch, .g-tensecard {
+  margin: 26px auto 0; max-width: 420px; text-align: left;
+  padding: 15px 18px; border-radius: 11px;
+  background: var(--panel-2); border: 1px solid var(--border);
+}
+.g-rematch { border-left: 3px solid var(--warn); }
+.g-tensecard { border-left: 3px solid var(--accent); }
+.g-rematch-label, .g-tensecard-label {
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 750;
+}
+.g-rematch-label { color: var(--warn); }
+.g-tensecard-label { color: var(--accent); }
+.g-rematch-text, .g-tensecard-text { margin: 5px 0 12px; font-size: .98rem; }
+.g-rematch-go, .g-tensecard-go {
+  border: 1px solid currentColor; background: transparent;
+  font-weight: 650; font-size: .9rem; padding: 9px 18px; border-radius: 9px; cursor: pointer;
+}
+.g-rematch-go { color: var(--warn); }
+.g-tensecard-go { color: var(--accent); }
+.g-rematch-go:hover, .g-tensecard-go:hover { background: var(--panel); }
 
 /* ================================================================= Emparejar */
 .g-match { display: flex; gap: 10px; align-items: flex-start; }

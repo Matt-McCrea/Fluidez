@@ -237,6 +237,44 @@ window.GameScore = (function () {
     try { localStorage.setItem(PREF_KEY, JSON.stringify(p)); } catch (e) {}
   }
 
+  /* ---- the rating ----------------------------------------------------------
+   * A personal best only moves when you beat it, so most rounds produce
+   * nothing at all — which is the opposite of what makes a chess rating grip.
+   * There, EVERY game moves the number, and it can go DOWN. That asymmetry is
+   * the whole mechanic: losing 12 points stings about twice as much as gaining
+   * 12 pleases, and it is why an ordinary round still matters.
+   *
+   * This is not XP and the difference is not cosmetic. XP only accumulates, so
+   * it measures time served. A rating falls, so it measures how you are
+   * playing now.
+   *
+   * The opponent is your own recent form. Each game keeps an expectation — an
+   * exponential average of what you usually score at it — and a round is
+   * scored against that, so the games stay comparable without having to
+   * normalise a 60-second sprint against a 90-second one. The first round at
+   * any game moves nothing: it sets the baseline, which also means a fresh
+   * game cannot be farmed for rating. */
+  var START_RATING = 1000, K = 32, FLOOR = 100;
+
+  function rating() { var p = prefs(); return p.rating == null ? START_RATING : p.rating; }
+
+  function rate(key, score) {
+    var p = prefs();
+    p.expect = p.expect || {};
+    var prev = p.expect[key] || 0;
+    var before = p.rating == null ? START_RATING : p.rating;
+    var delta = 0;
+    if (prev > 0) {
+      // log2 of the ratio: half your usual is -1, double is +1, clamped there
+      var perf = Math.log((score + 1) / (prev + 1)) / Math.LN2;
+      delta = Math.round(K * Math.max(-1, Math.min(1, perf)));
+    }
+    p.expect[key] = prev ? Math.round(prev * 0.7 + score * 0.3) : score;
+    p.rating = Math.max(FLOOR, before + delta);
+    try { localStorage.setItem(PREF_KEY, JSON.stringify(p)); } catch (e) {}
+    return { before: before, after: p.rating, delta: delta, first: !prev };
+  }
+
   // Thousands separators, because 8420 and 8,420 are not the same number to read.
   function fmt(n) { return String(Math.round(n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
 
@@ -247,6 +285,7 @@ window.GameScore = (function () {
     stats: stats, record: record, pb: pb, todayBest: todayBest, nearMissScore: nearMissScore,
     dailySeed: dailySeed, dailyKey: dailyKey, dailyLabel: dailyLabel, dailyStreak: dailyStreak,
     weekSummary: weekSummary, today: today, fmt: fmt,
-    silent: silent, setSilent: setSilent
+    silent: silent, setSilent: setSilent,
+    rating: rating, rate: rate
   };
 })();
