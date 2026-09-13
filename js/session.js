@@ -174,6 +174,24 @@ window.Session = (function () {
       // paced path: grammar/vocab/verb/practice days, grammar spaced out
       var seq = window.Curriculum.seq();
       var di = prog.beginnerDay || 0;
+      /* The paced path walks a DAY COUNTER, not the studied set — so a lesson
+       * marked done from Lecciones (js/unitcheck.js), by a unit check or by
+       * hand, left the counter where it was and the session kept serving
+       * lessons the learner had just said they knew. Catch the counter up:
+       * step over any grammar day whose lesson is already studied, and write
+       * the new position back so it is done once rather than on every render. */
+      var moved = false;
+      var UNITS = window.COURSE_UNITS || {};
+      function doneAlready(f) {
+        if (!f) return false;
+        if (f.type === 'grammar') return !!studied[f.id];
+        /* A verb or practice day inside a unit the learner has cleared goes
+         * too. "I know this unit" has to mean the whole unit, or somebody who
+         * marks A1 done still walks thirty verb days to get out of it. */
+        return !!(f.unit && UNITS[f.unit] && window.UnitCheck && window.UnitCheck.isDone(UNITS[f.unit]));
+      }
+      while (di < seq.length && doneAlready(seq[di])) { di++; moved = true; }
+      if (moved) { prog.beginnerDay = di; saveProg(prog); }
       focus = seq[Math.min(di, seq.length - 1)] || { type: 'practice' };
       /* `di` indexes the BAND's slice; COURSE_UNITS.from indexes the whole
        * course, so the band's start has to be added back before the two can
@@ -462,6 +480,12 @@ window.Session = (function () {
         }
       });
       if (sc) wrap.appendChild(sc);
+    }
+    /* If today taught a tense, the best sixty seconds the learner can spend
+     * are the next sixty, producing it against a clock. */
+    if (window.Games && window.Games.tenseCard && ctx.lesson) {
+      var tc = window.Games.tenseCard(ctx.lesson, function () { window.App.go('home'); });
+      if (tc) wrap.appendChild(tc);
     }
     wrap.appendChild(UI.el('p', 'muted', T('Hasta mañana — tomorrow rotates to new material.', 'See you tomorrow — it rotates to new material.')));
     var homeB = UI.nextBtn('← ' + T('Volver al inicio', 'Back to home'), function () { window.App.go('home'); });
