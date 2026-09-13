@@ -5864,6 +5864,7 @@ window.STRAND_LESSONS = [
   summary: 'Spanish routinely drops its subject pronoun because the verb ending already says who is speaking — you keep yo/tú/él mainly to contrast one person against another, which is why constant yo-yo-yo sounds foreign.',
   sections: [
     { h: 'The forms', html: '<i>yo, tú, él/ella/usted, nosotros/nosotras, vosotros/vosotras, ellos/ellas/ustedes</i>. Only the first person has no gender split; every other has one, or a formal/informal split (<i>tú</i> vs <i>usted</i>).' },
+    { h: 'Usted means "you" but takes the él/ella endings', html: 'This is the single most useful thing to know about <i>usted</i>, and it is why it is listed beside <i>él/ella</i> above rather than beside <i>tú</i>. <i>Usted</i> is the polite word for one person you are speaking TO, but the verb after it is conjugated exactly as if you were talking ABOUT someone: <i>usted trabaja</i>, <i>usted vive</i>, <i>usted es</i> — the same forms as <i>él trabaja</i>, <i>él vive</i>, <i>él es</i>. The plural <i>ustedes</i> works the same way, borrowing the <i>ellos</i> forms: <i>ustedes trabajan</i>.<br>So learning one set of endings gets you two things at once: talking about a third person, and addressing someone politely. Nothing new to memorise — you just have to remember which one you mean.' },
     { h: 'Omission is the default', html: 'Because the verb ending already identifies the person (<i>trabajo</i> can only be "I work"), the subject pronoun is usually left out: <i>Trabajo en un hospital</i>, not <i>*Yo trabajo en un hospital</i> as the neutral, unmarked version.' },
     { h: 'When you DO keep it: contrast', html: 'The pronoun reappears to contrast one person with another: <i>Yo prefiero café, ella prefiere té.</i> Without that contrast, adding it sounds like unnecessary emphasis, the classic "foreign accent" of over-translating English.' }
   ],
@@ -5876,7 +5877,7 @@ window.STRAND_LESSONS = [
   pitfalls: [
     'Do not translate English\'s obligatory "I/you/he" word for word — constant subject pronouns are the most common tell of a non-native speaker.',
     'Impersonal expressions (<i>llueve, hay, es tarde</i>) have no subject pronoun to add, unlike English\'s empty "it."',
-    '<i>Usted/ustedes</i> take a THIRD-person verb form even though they mean "you" — <i>usted trabaja</i>, not <i>*usted trabajas</i>.'
+    'Because <i>usted</i> means "you", the tú ending is the natural slip: <i>*usted trabajas</i>. It is <i>usted trabaja</i>.'
   ],
   examples: [
     { es: '¿De dónde eres? Soy de Chile.', en: 'Where are you from? I\'m from Chile.' },
@@ -15668,9 +15669,16 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:A1:266', 'gramatica:A1:267', 'gramatica:A1:268', 'gramatica:A1:269',
          'gramatica:A1:270', 'gramatica:A1:273', 'gramatica:A1:274', 'gramatica:A1:318'],
   title: 'Los interrogativos: qué, quién, cuánto, dónde, cómo',
-  summary: 'Five words open almost every question in Spanish, and each one asks a different thing: qué about objects and actions, quién about people, cuánto about quantity, dónde and cómo about place and manner. The one rule that unites them is graphic — an interrogative always carries a written accent, even buried inside another sentence.',
+  summary: 'Five words open almost every question in Spanish, and each one is the direct equivalent of an English question word: qué is what, quién is who, dónde is where, cuánto is how much or how many, and cómo is how. Learn them as that first. Then two things make them behave unlike their English twins: cuánto changes its ending to match the noun after it, and every one of them carries a written accent — even buried inside a longer sentence.',
   sections: [
-    { h: 'Qué vs quién', html: '<b>Qué</b> is invariable and asks about things or actions: <i>¿Qué es esto?</i>, <i>¿Qué estudias?</i>. <b>Quién/quiénes</b> asks about people and varies only in number, never gender: <i>¿Quién es esa chica?</i>, <i>¿Quiénes son ellos?</i>' },
+    { h: 'The five words', html: 'Each one replaces an English question word, and the translation is almost always the obvious one:<ul>' +
+      '<li><b>qué</b> — <i>what</i>. <i>¿Qué es esto?</i> "What is this?"</li>' +
+      '<li><b>quién</b> — <i>who</i>. <i>¿Quién es esa chica?</i> "Who is that girl?"</li>' +
+      '<li><b>dónde</b> — <i>where</i>. <i>¿Dónde vives?</i> "Where do you live?"</li>' +
+      '<li><b>cuánto</b> — <i>how much</i>, or <i>how many</i> in the plural. <i>¿Cuánto cuesta?</i> "How much does it cost?"</li>' +
+      '<li><b>cómo</b> — <i>how</i>. <i>¿Cómo te llamas?</i> literally "How do you call yourself?" — what Spanish uses for "What is your name?"</li></ul>' +
+      'The last one is the only one that does not line up: asking someone\'s name uses <i>cómo</i>, not <i>qué</i>.' },
+    { h: 'Qué vs quién', html: '<b>Qué</b> never changes its ending, and asks about things or actions: <i>¿Qué es esto?</i>, <i>¿Qué estudias?</i>. <b>Quién</b> asks about people and has just one other form, the plural <i>quiénes</i> — never a feminine one: <i>¿Quién es esa chica?</i>, <i>¿Quiénes son ellos?</i>' },
     { h: 'Cuánto agrees with what follows', html: 'Unlike qué and quién, <b>cuánto</b> agrees in gender and number with the noun it introduces: <i>cuánto dinero</i>, <i>cuánta gente</i>, <i>cuántos años</i>, <i>cuántas hermanas</i>. Get the noun\'s gender first, then match the interrogative to it.' },
     { h: 'Dónde and cómo: invariable adverbs', html: 'These never change form. <b>Dónde</b> asks about place (<i>¿Dónde vives?</i>), <b>cómo</b> about manner (<i>¿Cómo te llamas?</i>). They open direct questions and survive unaccented-look words with an accent inside indirect ones: <i>No sé dónde vive.</i>' }
   ],
