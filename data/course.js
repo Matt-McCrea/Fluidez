@@ -565,41 +565,7 @@ window.COURSE = [
       { lesson: 'task-b1-debate' },
     ] },
 
-  { unit: 'b1-u29', band: 'B1', title: 'Advice and what I would do',
-    goal: 'I can advise someone at three levels of directness.',
-    canDo: ['use the conditional to soften',
-            'say yo que tú / lo mejor sería',
-            'soften by shifting the tense',
-            'value something and ask for a valuation'],
-    days: [
-      { lesson: 'condicional' },
-      { lesson: 'fn-aconsejar-b1' },
-      { lesson: 'gr-condicionales-b1' },
-      { lesson: 'dc-atenuacion-b1' },
-      { practice: true },
-      { lesson: 'fn-valorar-b1' },
-      { lesson: 'fn-pedir-valoracion-b1' },
-      { lesson: 'task-b1-consejo' },
-    ] },
-
-  { unit: 'b1-u30', band: 'B1', title: 'What I want from you',
-    goal: 'I can say what I want someone else to do.',
-    canDo: ['use que + subjunctive after wanting',
-            'express hope and wishes',
-            'ask what someone wants',
-            'say what is and is not possible'],
-    days: [
-      { lesson: 'gr-subordinadas-sustantivas-b1' },
-      { lesson: 'fn-expresar-deseos-b1' },
-      { lesson: 'fn-espero-esperanza-b1' },
-      { lesson: 'fn-preguntar-deseos-b1' },
-      { practice: true },
-      { lesson: 'fn-posibilidad-b1' },
-      { lesson: 'nt-necesidad-obligacion-b1' },
-      { lesson: 'task-b1-deseos' },
-    ] },
-
-  { unit: 'b1-u31', band: 'B1', title: 'Plans and predictions',
+  { unit: 'b1-u29', band: 'B1', title: 'Plans and predictions',
     goal: 'I can talk about the future and guess about the present.',
     canDo: ['use ir a and the simple future',
             'use cuando + subjunctive for a future moment',
@@ -618,6 +584,62 @@ window.COURSE = [
       { lesson: 'nt-puntualidad-retraso-b1' },
       { lesson: 'nt-tiempo-referencias-futuro-pasado-presente-b1' },
       { lesson: 'task-b1-planes' },
+    ] },
+
+  { unit: 'b1-u30', band: 'B1', title: 'Advice and what I would do',
+    goal: 'I can advise someone at three levels of directness.',
+    canDo: ['use the conditional to soften',
+            'say yo que tú / lo mejor sería',
+            'soften by shifting the tense',
+            'value something and ask for a valuation'],
+    days: [
+      { lesson: 'condicional' },
+      { lesson: 'fn-aconsejar-b1' },
+      { lesson: 'gr-condicionales-b1' },
+      { lesson: 'dc-atenuacion-b1' },
+      { practice: true },
+      { lesson: 'fn-valorar-b1' },
+      { lesson: 'fn-pedir-valoracion-b1' },
+      { lesson: 'task-b1-consejo' },
+    ] },
+
+  /* ---- Plans, then Advice ---------------------------------------------------
+   * The conditional is built on the future stem, and data/grammar-docs.js says
+   * so in as many words: "Same irregular stems as the future". Advice used to
+   * run 16 days AHEAD of Plans, so the lesson explained its own formation by
+   * pointing at a tense the learner would not meet for another fortnight — and
+   * it teaches `si + futuro` besides. js/lessons.js deliberately keeps the
+   * ladder half as the merge head for this pair so the future lands first; the
+   * order is READ FROM HERE, so that only takes effect once this file agrees.
+   *
+   * They are adjacent on purpose: you learn the future stems, and the next
+   * unit reuses them.
+   *
+   * Wanting moves to the far side rather than between the two, for two
+   * reasons: it keeps the future and the conditional touching, and its own
+   * `me gustaría` / `¿te apetecería?` are conditional forms, so parking it
+   * before the conditional lesson would strand two more of them. What is left
+   * before that lesson — podrías, me gustaría, deberías — the course has
+   * already been teaching as fixed politeness chunks since A2, which is the
+   * only way to teach A2 requests at all.
+   *
+   * It also reads better: wanting something runs straight into asking for it.
+   * -------------------------------------------------------------------------- */
+  { unit: 'b1-u31', band: 'B1', title: 'What I want from you',
+    goal: 'I can say what I want someone else to do.',
+    canDo: ['use que + subjunctive after wanting',
+            'express hope and wishes',
+            'ask what someone wants',
+            'say what is and is not possible'],
+    days: [
+      { lesson: 'gr-subordinadas-sustantivas-b1' },
+      { lesson: 'fn-expresar-deseos-b1' },
+      { lesson: 'fn-espero-esperanza-b1' },
+      { lesson: 'fn-preguntar-deseos-b1' },
+      { practice: true },
+      { lesson: 'fn-posibilidad-b1' },
+      { lesson: 'nt-necesidad-obligacion-b1' },
+      { lesson: 'task-b1-deseos' },
     ] },
 
   { unit: 'b1-u32', band: 'B1', title: 'Asking, refusing, forbidding',
