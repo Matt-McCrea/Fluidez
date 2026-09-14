@@ -47,7 +47,7 @@ window.CONCEPT_LESSONS = [
   id: 'gender-articles', canDo: 'know whether a noun takes el or la, and why it matters', deeper: ['gr-nombres-propios-a1'], title: 'Gender & articles', level: 1,
   summary: 'Every Spanish noun has a gender, and the words around it must agree. Learn the patterns and the agreement chain becomes automatic.',
   sections: [
-    { h: 'The patterns', html: 'Most nouns ending in <b>-o</b> are masculine (<i>el libro</i>); most ending in <b>-a</b> are feminine (<i>la casa</i>). Learn each noun <i>with</i> its article — that\'s why our vocab shows <i>el / la</i>.' },
+    { h: 'The patterns', html: 'Most nouns ending in <b>-o</b> are masculine (<i>el libro</i>, the book); most ending in <b>-a</b> are feminine (<i>la casa</i>, the house). Learn each noun <i>with</i> its article — that\'s why our vocab shows <i>el / la</i>.' },
     { h: 'The four articles', html: '“the” = <b>el, la, los, las</b>. “a/an” = <b>un, una</b>; “some” = <b>unos, unas</b>. They agree in gender <i>and</i> number with the noun.' },
     { h: 'Agreement chain', html: 'Article + noun + adjective all agree: <i>l<b>a</b>s cas<b>a</b>s blanc<b>a</b>s</i> (the white houses). Change one, change all.' }
   ],

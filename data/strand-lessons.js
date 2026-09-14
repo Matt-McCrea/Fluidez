@@ -2005,11 +2005,11 @@ window.STRAND_LESSONS = [
   id: 'task-gustos', strand: 'task', cefr: 'A1', level: 1, theme: 'ocio',
   title: 'Cinco cosas que te gustan',
   canDo: 'say what you like and dislike, and react to what someone else likes',
-  summary: 'The point of this unit is not the list — it is the reaction. Agreeing and disagreeing with a like needs <i>a mí también</i> and <i>a mí tampoco</i>, and picking the wrong one reverses your meaning.',
+  summary: 'The point of this unit is not the list — it is the reaction. Agreeing and disagreeing with a like needs <i>a mí también</i> (me too) and <i>a mí tampoco</i> (me neither), and picking the wrong one reverses your meaning.',
   sections: [
-    { h: 'What to do', html: 'Write five things you like and five you do not, then have a partner react to each. Vary the verb: <i>me gusta</i>, <i>me encanta</i>, <i>no me gusta nada</i>, <i>odio</i>.' },
+    { h: 'What to do', html: 'Write five things you like and five you do not, then have a partner react to each. Vary the verb: <i>me gusta</i> (I like), <i>me encanta</i> (I love), <i>no me gusta nada</i> (I don\'t like at all), <i>odio</i> (I hate).' },
     { h: 'The trap to get right', html: 'If what you are agreeing with is negative, <i>también</i> becomes <i>tampoco</i>. <i>—No me gusta el frío. —A mí tampoco.</i> Saying <i>a mí también</i> there means the opposite of what you meant.' },
-    { h: 'Singular or plural', html: '<i>Me gusta el café</i> but <i>me gustan los perros</i> — the verb agrees with the thing liked, not with you.' }
+    { h: 'Singular or plural', html: '<i>Me gusta el café</i> (I like coffee) but <i>me gustan los perros</i> (I like dogs) — the verb agrees with the thing liked, not with you.' }
   ],
   model: { title: 'one way of doing it', text: '<p>—Me encanta el café.<br>—A mí también. ¿Y el té?<br>—No me gusta nada.<br>—A mí tampoco.<br>—Me gustan mucho los perros.<br>—¿Sí? A mí no. Prefiero los gatos.<br>—¿No te gustan los perros?<br>—No mucho, la verdad.</p>' },
   checklist: [
@@ -2844,8 +2844,8 @@ window.STRAND_LESSONS = [
   title: 'Expresar acuerdo (A1)',
   summary: 'Agreeing is mostly mechanical: repeat the opinion back, or add también/tampoco to your own reaction. The one thing to get right is which of the two you need.',
   sections: [
-    { h: 'Repeating the opinion', html: 'The simplest agreement just repeats the adjective: <i>—Este parque es muy bonito. —Sí, muy bonito.</i> Disagreement repeats it negated: <i>—El español no es difícil. —No, no es difícil.</i>' },
-    { h: 'También and tampoco', html: '<i>También</i> adds a matching positive reaction; <i>tampoco</i> adds a matching negative one. They are not interchangeable — using the wrong one reverses your meaning.' }
+    { h: 'Repeating the opinion', html: 'The simplest agreement just repeats the adjective: <i>—Este parque es muy bonito. —Sí, muy bonito.</i> (—This park is very pretty. —Yes, very pretty.) Disagreement repeats it negated: <i>—El español no es difícil. —No, no es difícil.</i> (—Spanish isn\'t difficult. —No, it isn\'t difficult.)' },
+    { h: 'También and tampoco', html: '<i>También</i> (also) adds a matching positive reaction; <i>tampoco</i> (neither) adds a matching negative one. They are not interchangeable — using the wrong one reverses your meaning.' }
   ],
   exponents: [
     { es: '—Este parque es muy bonito. —Sí, muy bonito.', en: '—This park is very pretty. —Yes, very pretty.', register: 'coloquial', note: 'repeating the adjective back — casual, spoken' },
@@ -3172,8 +3172,8 @@ window.STRAND_LESSONS = [
   title: 'Conectores',
   summary: 'A handful of small words do the heavy lifting of connected speech: adding a fact, turning against the last one, explaining it, giving an example, or just checking the listener is still there.',
   sections: [
-    { h: 'Adding and contrasting', html: '<i>Y</i> adds; <i>pero</i> turns against what came before. <i>También</i> adds a matching fact; <i>tampoco</i> its negative twin.' },
-    { h: 'Explaining and illustrating', html: '<i>Porque</i> gives the reason. <i>Por ejemplo</i> narrows a general claim to one concrete case.' },
+    { h: 'Adding and contrasting', html: '<i>Y</i> (and) adds; <i>pero</i> (but) turns against what came before. <i>También</i> (also, too) adds a matching fact; <i>tampoco</i> (neither, not either) is its negative twin.' },
+    { h: 'Explaining and illustrating', html: '<i>Porque</i> (because) gives the reason. <i>Por ejemplo</i> (for example) narrows a general claim to one concrete case.' },
     { h: 'Checking contact', html: 'Tags like <i>¿no?</i> and <i>¿eh?</i> turn a statement into an invitation to agree — they check the listener is still following, not really asking a question.' }
   ],
   exponents: [
@@ -5435,8 +5435,8 @@ window.STRAND_LESSONS = [
   title: 'Nombres propios: con o sin artículo',
   summary: 'First names, surnames and most country names drop the article a common noun would need — but El Salvador always keeps its own, and there is no rule to guess which countries do: you learn them one by one.',
   sections: [
-    { h: 'The default: no article', html: 'First names and surnames stand alone: <i>María vive en España</i>, never <i>*la María vive en *la España</i>. This is the opposite of French or Italian, where the article often survives with a name.' },
-    { h: 'The exception that never drops it', html: '<b>El Salvador</b> carries its article everywhere, even mid-sentence with a preposition: <i>Vengo de El Salvador</i>, not <i>*Vengo de Salvador</i>. A handful of other countries traditionally take one too (<i>la India</i>, <i>el Perú</i>), though usage is loosening.' },
+    { h: 'The default: no article', html: 'First names and surnames stand alone: <i>María vive en España</i> (María lives in Spain), never <i>*la María vive en *la España</i>. This is the opposite of French or Italian, where the article often survives with a name.' },
+    { h: 'The exception that never drops it', html: '<b>El Salvador</b> carries its article everywhere, even mid-sentence with a preposition: <i>Vengo de El Salvador</i> (I come from El Salvador), not <i>*Vengo de Salvador</i>. A handful of other countries traditionally take one too (<i>la India</i>, <i>el Perú</i>), though usage is loosening.' },
     { h: 'Titles bring the article back', html: '<i>Señor/señora</i> + surname takes the article when you talk ABOUT someone in the third person — <i>El señor Fernández no está</i> — but not when you address them directly: <i>Buenos días, señor Fernández.</i>' }
   ],
   contrasts: [
@@ -5471,7 +5471,7 @@ window.STRAND_LESSONS = [
   title: 'El género de los sustantivos',
   summary: '-o is masculine and -a is feminine most of the time. There are enough exceptions — la moto, el día, el mapa — that the ending is a good first guess rather than a rule, and the common ones are worth learning as whole words.',
   sections: [
-    { h: 'The default pattern', html: 'Most nouns follow <b>-o → masculine</b>, <b>-a → feminine</b>: <i>el libro</i>, <i>la mesa</i>. Consonant endings give no reliable clue by themselves — <i>el árbol</i>, <i>la catedral</i>, <i>el corazón</i>, <i>la solución</i> — so those are learned with their article, though <i>-ción/-sión/-dad/-tud</i> are reliably feminine.' },
+    { h: 'The default pattern', html: 'Most nouns follow <b>-o → masculine</b>, <b>-a → feminine</b>: <i>el libro</i> (the book), <i>la mesa</i> (the table). Consonant endings give no reliable clue by themselves — <i>el árbol</i> (tree), <i>la catedral</i> (cathedral), <i>el corazón</i> (heart), <i>la solución</i> (solution) — so those are learned with their article, though <i>-ción/-sión/-dad/-tud</i> are reliably feminine.' },
     { h: 'The famous exceptions', html: '<i>La moto</i>, <i>la foto</i>, <i>la radio</i> LOOK masculine but are feminine — they are shortened forms of longer feminine words (<i>motocicleta</i>, <i>fotografía</i>, <i>radiodifusión</i>) and keep the original gender. <i>El día</i>, <i>el mapa</i>, <i>el planeta</i> go the other way: Greek-origin words in <i>-ma</i> that look feminine but are masculine.' },
     { h: 'Heteronimia: a completely different word', html: 'Some pairs mark gender with an entirely different word rather than a changed ending: <i>el hombre / la mujer</i>, <i>el padre / la madre</i>, <i>el toro / la vaca</i>.' }
   ],
@@ -5620,7 +5620,7 @@ window.STRAND_LESSONS = [
   summary: 'El/la/los/las sits at the very front of its noun phrase, which is exactly why it can never appear next to a possessive or demonstrative — Spanish allows only one "pointer" at the front at a time.',
   sections: [
     { h: 'Front of the phrase, and alone there', html: 'The definite article opens its noun phrase and cannot share that position with a possessive or demonstrative: <i>*el mi hermana</i>, <i>*la este libro</i> are both impossible. Spanish uses either the article or the possessive/demonstrative, never both.' },
-    { h: 'Contractions are obligatory', html: '<i>a + el → al</i>, <i>de + el → del</i>, with no exception: <i>Voy al banco</i>, <i>Vengo del trabajo</i>. This does not apply when "El" is part of a proper name: <i>Voy a El Salvador</i>, not <i>*Voy al Salvador</i>.' },
+    { h: 'Contractions are obligatory', html: '<i>a + el → al</i>, <i>de + el → del</i>, with no exception: <i>Voy al banco</i> (I\'m going to the bank), <i>Vengo del trabajo</i> (I\'m coming from work). This does not apply when "El" is part of a proper name: <i>Voy a El Salvador</i>, not <i>*Voy al Salvador</i>.' },
     { h: 'Required before gustar-type nouns', html: 'Where English uses a bare noun, Spanish keeps the article: <i>Me gusta LA paella</i>, not <i>*Me gusta paella</i>. Dropping the article here is a very visible learner error.' }
   ],
   contrasts: [
@@ -5765,8 +5765,8 @@ window.STRAND_LESSONS = [
   title: 'Poco y mucho',
   summary: 'Poco and mucho both agree with what they quantify when they sit in front of a noun, but freeze into the plain masculine form the moment they modify a verb or adjective instead.',
   sections: [
-    { h: 'Before a noun: full agreement', html: '<i>poco/poca/pocos/pocas</i> and <i>mucho/mucha/muchos/muchas</i> agree in gender and number with the noun that follows: <i>poco tiempo</i>, <i>pocas ganas</i> (little enthusiasm), <i>muchos amigos</i> (many friends), <i>mucha suerte</i> (a lot of luck).' },
-    { h: 'Before a verb or adjective: frozen', html: 'Used adverbially — modifying a verb or an adjective rather than a noun — <i>mucho/poco</i> never changes: <i>Trabaja mucho</i>, <i>Está muy cansado</i> (here <i>mucho</i> shortens to <i>muy</i> before an adjective).' },
+    { h: 'Before a noun: full agreement', html: '<i>poco/poca/pocos/pocas</i> and <i>mucho/mucha/muchos/muchas</i> agree in gender and number with the noun that follows: <i>poco tiempo</i> (little time), <i>pocas ganas</i> (little enthusiasm), <i>muchos amigos</i> (many friends), <i>mucha suerte</i> (a lot of luck).' },
+    { h: 'Before a verb or adjective: frozen', html: 'Used adverbially — modifying a verb or an adjective rather than a noun — <i>mucho/poco</i> never changes: <i>Trabaja mucho</i> (he works a lot), <i>Está muy cansado</i> (he\'s very tired) (here <i>mucho</i> shortens to <i>muy</i> before an adjective).' },
     { h: 'Muy vs mucho', html: '<i>Muy</i> goes before an adjective or adverb (<i>muy cansado, muy rápido</i>); <i>mucho</i> goes before a noun or after a verb (<i>mucho trabajo, trabaja mucho</i>). Mixing them up — <i>*muy trabajo</i>, <i>*mucho cansado</i> — is one of the most common A1 errors.' }
   ],
   contrasts: [
@@ -9298,7 +9298,7 @@ window.STRAND_LESSONS = [
   title: 'El relativo que',
   summary: 'Que is the one relative pronoun every beginner needs: it never changes form, it can stand for a person or a thing, and it can be the subject or the direct object of its own clause — three separate jobs done by one invariable word.',
   sections: [
-    { h: 'One word, no agreement', html: '<i>Que</i> never changes for gender or number, unlike English "who/which/that": <i>el libro que leo</i>, <i>la profesora que tengo</i>, <i>las casas que veo</i> — same word every time.' },
+    { h: 'One word, no agreement', html: '<i>Que</i> never changes for gender or number, unlike English "who/which/that": <i>el libro que leo</i> (the book I\'m reading), <i>la profesora que tengo</i> (the teacher I have), <i>las casas que veo</i> (the houses I see) — same word every time.' },
     { h: 'Identifying the noun', html: 'It introduces a clause that tells you WHICH one: <i>la profesora que tengo</i> singles out a specific teacher, distinguishing her from others. Without the clause, <i>la profesora</i> alone would not say which.' },
     { h: 'Subject or direct object', html: '<i>Que</i> can be the subject of its clause (<i>el libro que <b>está</b> en la mesa</i> — the book, and it is on the table) or the direct object (<i>el libro que <b>lee</b></i> — the book, and she reads it). Its antecedent — the noun it refers back to — is always required.' }
   ],
@@ -9507,7 +9507,7 @@ window.STRAND_LESSONS = [
   summary: 'After ser, whatever comes next — a noun or an adjective — must agree with the subject, the same rule wearing two different masks depending on whether you are naming a category (Mario es cocinero) or describing a quality (el hijo es rubio).',
   sections: [
     { h: 'The attribute agrees with the subject', html: 'Whatever follows <i>ser</i> to characterize the subject — its <b>atributo</b> — agrees with it in gender and number: <i>Mis compañeras son alemanas</i> (feminine plural subject, feminine plural attribute).' },
-    { h: 'A noun as attribute', html: 'The attribute can be a profession, nationality or category noun: <i>Mario es cocinero</i>. No article is needed with an unmodified profession or nationality noun after <i>ser</i>.' },
+    { h: 'A noun as attribute', html: 'The attribute can be a profession, nationality or category noun: <i>Mario es cocinero</i> — Mario is a cook. No article is needed with an unmodified profession or nationality noun after <i>ser</i>.' },
     { h: 'An adjective as attribute', html: 'Or it can be a describing adjective: <i>El hijo de Marta es rubio</i>. Same agreement rule either way — noun or adjective, it tracks the subject.' }
   ],
   contrasts: [
@@ -9540,8 +9540,8 @@ window.STRAND_LESSONS = [
   title: 'El objeto directo',
   summary: 'Tengo dos hermanos has no preposition before "dos hermanos" even though it names people — the personal a that marks a specific person as direct object does not appear with tener and an indefinite quantity, one of the first exceptions learners meet.',
   sections: [
-    { h: 'Direct object of a person', html: 'A specific, individual person as direct object normally takes the personal <i>a</i> (<i>Veo a María</i>) — but with <i>tener</i> plus an INDEFINITE number of people, no <i>a</i> appears: <i>Tengo dos hermanos</i>, not <i>*Tengo a dos hermanos</i>.' },
-    { h: 'Direct object of a thing', html: 'A thing as direct object never takes <i>a</i>: <i>No tengo teléfono</i>.' },
+    { h: 'Direct object of a person', html: 'A specific, individual person as direct object normally takes the personal <i>a</i>: <i>Veo a María</i> — I see María. But with <i>tener</i> plus an indefinite number of people, no <i>a</i> appears: <i>Tengo dos hermanos</i> (I have two brothers), not <i>*Tengo a dos hermanos</i>.' },
+    { h: 'Direct object of a thing', html: 'A thing as direct object never takes <i>a</i>: <i>No tengo teléfono</i> — I don\'t have a phone.' },
     { h: 'A whole clause as direct object', html: 'The direct object can be an entire subordinate clause introduced by <i>que</i>: <i>Creo que Barcelona es una ciudad muy bonita</i> — everything after <i>creo</i> is what you believe, functioning as one big direct object.' }
   ],
   contrasts: [
@@ -9747,7 +9747,7 @@ window.STRAND_LESSONS = [
   title: 'Más sustantivos masculinos: colores y casos aislados',
   summary: 'A color word naming the COLOR ITSELF, not describing a noun, is always masculine — el rosa, el naranja — which is a different fact from whether that same word changes for gender when it describes something, which most basic colors do not.',
   sections: [
-    { h: 'Colors as nouns', html: 'When a color word names the color itself rather than describing something, it is masculine: <i>El rosa es un color muy suave</i>, <i>Prefiero el azul al verde</i>. This holds regardless of the color\'s behavior as an adjective.' },
+    { h: 'Colors as nouns', html: 'When a color word names the color itself rather than describing something, it is masculine: <i>El rosa es un color muy suave</i> (pink is a very soft colour), <i>Prefiero el azul al verde</i> (I prefer blue to green). This holds regardless of the color\'s behavior as an adjective.' },
     { h: 'Reinforcing -ma nouns', html: 'The Greek-origin <i>-ma</i> nouns (<i>el problema</i>, <i>el tema</i>, <i>el programa</i>, <i>el sistema</i>) belong to this same masculine-despite-appearances family.' },
     { h: 'Isolated cases', html: '<i>El día</i> does not even fit the <i>-ma</i> pattern — it is simply memorised as its own exception, alongside the handful of others like it.' }
   ],
@@ -15720,8 +15720,8 @@ window.STRAND_LESSONS = [
   title: 'Ser y estar sin adjetivo: el núcleo del predicado',
   summary: 'Ser and estar are usually taught through adjectives — ser alto, estar cansado — but both also stand alone as the whole predicate, identifying, classifying, dating and locating with no adjective in sight. Recognising this second job is what lets a learner use them correctly outside the adjective drills.',
   sections: [
-    { h: 'Ser: identifying and classifying', html: 'Without an adjective, <b>ser</b> identifies (<i>Soy yo</i>, <i>Es él</i>), classifies by origin, profession or material (<i>Soy español</i>, <i>Soy estudiante</i>), and gives the day or date (<i>Es lunes</i>).' },
-    { h: 'Estar: locating', html: '<b>Estar</b> without an adjective states where something or someone is: <i>Está aquí</i>, <i>Estamos en Madrid</i>. This is its most basic job, prior to any of the emotional-state uses.' },
+    { h: 'Ser: identifying and classifying', html: 'Without an adjective, <b>ser</b> identifies (<i>Soy yo</i> — it\'s me, <i>Es él</i> — it\'s him), classifies by origin, profession or material (<i>Soy español</i> — I\'m Spanish, <i>Soy estudiante</i> — I\'m a student), and gives the day or date (<i>Es lunes</i> — it\'s Monday).' },
+    { h: 'Estar: locating', html: '<b>Estar</b> without an adjective states where something or someone is: <i>Está aquí</i> (it\'s here), <i>Estamos en Madrid</i> (we\'re in Madrid). This is its most basic job, prior to any of the emotional-state uses.' },
     { h: 'A different kind of verb: gustar', html: 'Not every core verb works like <i>ser</i>/<i>estar</i>. <b>Gustar</b> is "psychological" — its grammatical subject is the thing liked, not the person: <i>Me gusta el café</i> literally is "coffee is pleasing to me", which is why the person takes <i>me/te/le</i>, not <i>yo/tú/él</i>.' }
   ],
   contrasts: [
