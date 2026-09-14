@@ -504,23 +504,33 @@ window.Games = (function () {
     var check = tenseCheck();
     if (!check) return null;
     var card = el('div', 'g-tensecheck');
-    var head = el('div', 'g-tc-head');
-    head.appendChild(el('span', 'g-tc-label', 'Repaso de tiempos'));
-    var later = el('button', 'g-tc-later', 'Hoy no');
+    card.appendChild(el('span', 'g-tc-label', 'Repaso de tiempos'));
+    card.appendChild(el('div', 'g-tc-title', check.title));
+    card.appendChild(el('p', 'g-tc-sub', check.sub));
+
+    /* The decline sits BESIDE the offer, not in the card's top-right corner.
+     * That corner is where the daily-challenge card puts its date, so
+     * anything in it reads as metadata — "Repaso de tiempos … Hoy no" scanned
+     * as the card contradicting its own heading rather than as a button.
+     *
+     * "Ahora no" instead of "Hoy no" because tapping it does not mean "ask
+     * tomorrow": it resets the same few-day cycle that playing would, and the
+     * label should not promise otherwise. */
+    var row = el('div', 'g-tc-row');
+    var go = el('button', 'g-tc-go', '2 minutos →');
+    go.type = 'button';
+    go.addEventListener('click', function () { startTenseCheck(check, back); });
+    row.appendChild(go);
+
+    var later = el('button', 'g-tc-later', 'Ahora no');
     later.type = 'button';
     later.title = 'Vuelve dentro de unos días';
     later.addEventListener('click', function () {
       GS.markTenseCheck();
       if (window.Shell) window.Shell.refresh('inicio');
     });
-    head.appendChild(later);
-    card.appendChild(head);
-    card.appendChild(el('div', 'g-tc-title', check.title));
-    card.appendChild(el('p', 'g-tc-sub', check.sub));
-    var go = el('button', 'g-tc-go', '2 minutos →');
-    go.type = 'button';
-    go.addEventListener('click', function () { startTenseCheck(check, back); });
-    card.appendChild(go);
+    row.appendChild(later);
+    card.appendChild(row);
     return card;
   }
 
