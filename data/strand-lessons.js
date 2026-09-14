@@ -25,14 +25,14 @@ window.STRAND_LESSONS = [
 {
   id: 'nt-familia-a1', strand: 'notion', cefr: 'A1', level: 1, theme: 'relaciones',
   title: 'La familia: quién es quién',
-  canDo: 'say who is in my family, how many there are, and how old they are',
+  canDo: 'say who is in your family, how many there are, and how old they are',
   moment: [{ es: '—¿Tienes hermanos?', en: '—Do you have brothers or sisters?' },
            { es: '—Sí, dos. Una hermana mayor y un hermano pequeño.', en: '—Yes, two. An older sister and a little brother.' }],
   summary: 'Spanish names a mixed group with the masculine plural — "mis hermanos" is brothers, or brothers and sisters together, and there is no way to tell from the word alone. That one habit runs through the whole family vocabulary and explains half of what looks irregular in it.',
   sections: [
-    { h: 'The masculine plural covers the mixed group', html: 'One brother and one sister are <i>mis hermanos</i>. A mother and a father are <i>mis padres</i>. Grandparents of both sexes are <i>mis abuelos</i>. The feminine plural is reserved for an all-female group: <i>mis hermanas</i> means sisters only. So <i>tengo tres hermanos</i> tells you the number and nothing about who they are — a Spanish speaker asking for more will say <i>¿chicos o chicas?</i>' },
+    { h: 'The masculine plural covers the mixed group', html: 'One brother and one sister are <i>mis hermanos</i>. A mother and a father are <i>mis padres</i>. Grandparents of both sexes are <i>mis abuelos</i> (my grandparents). The feminine plural is reserved for an all-female group: <i>mis hermanas</i> means sisters only. So <i>tengo tres hermanos</i> tells you the number and nothing about who they are — a Spanish speaker asking for more will say <i>¿chicos o chicas?</i> — boys or girls?' },
     { h: 'Tener, not ser', html: 'Family membership uses <i>tener</i>: <i>tengo dos hermanos</i>, <i>tiene tres hijos</i>. English says "there are four of us"; Spanish says <i>somos cuatro</i> — with <i>ser</i>, and with no word for "of us" at all. Both are worth learning as fixed shapes.' },
-    { h: 'Mayor and menor, not grande and pequeño', html: 'For siblings, age is <i>mayor</i> (older) and <i>menor</i> (younger): <i>mi hermana mayor</i>. <i>Más grande</i> would be about size. <i>Pequeño</i> is used affectionately for a much younger sibling — <i>mi hermano pequeño</i> — but <i>menor</i> is the neutral word.' },
+    { h: 'Mayor and menor, not grande and pequeño', html: 'For siblings, age is <i>mayor</i> (older) and <i>menor</i> (younger): <i>mi hermana mayor</i> — my older sister. <i>Más grande</i> would be about size. <i>Pequeño</i> is used affectionately for a much younger sibling — <i>mi hermano pequeño</i> — but <i>menor</i> is the neutral word.' },
     { h: 'The question you will be asked', html: '<i>¿Tienes hermanos?</i> is one of the first things anyone asks. The full answer has three parts and all three are short: how many, what they are, and roughly their age. <i>Sí, dos: una hermana mayor y un hermano pequeño.</i>' }
   ],
   exponents: [
@@ -2226,7 +2226,7 @@ window.STRAND_LESSONS = [
   summary: 'A beginner who can say ten true things in a row still sounds like a list. Connectors and <i>que</i> are what turn a list into speech.',
   sections: [
     { h: 'What to do', html: 'Take a short description you have already written in this course and rewrite it, joining sentences with <i>y</i>, <i>pero</i>, <i>porque</i>, <i>también</i> and <i>que</i>. It should get shorter, not longer.' },
-    { h: 'The one that matters most', html: '<i>Que</i> joins a noun to a whole clause: <i>la chica que trabaja aquí</i>, <i>el libro que quiero</i>. English often drops it; Spanish never does.' }
+    { h: 'The one that matters most', html: '<i>Que</i> joins a noun to a whole clause: <i>la chica que trabaja aquí</i> (the girl who works here), <i>el libro que quiero</i> (the book I want). English often drops it; Spanish never does.' }
   ],
   model: { title: 'before and after', text: '<p><b>Antes:</b> Tengo una hermana. Vive en Bilbao. Es profesora. No la veo mucho. Trabaja mucho.</p><p><b>Después:</b> Tengo una hermana que vive en Bilbao y es profesora. No la veo mucho porque trabaja muchísimo, pero hablamos por teléfono casi todos los días.</p>' },
   checklist: [
@@ -2761,7 +2761,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-corregir-informacion-a1', canDo: 'correct someone politely, and say when I do not know', strand: 'function', cefr: 'A1', level: 1, theme: null,
+  id: 'fn-corregir-informacion-a1', canDo: 'correct someone politely, and say when you do not know', strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:65', 'funciones:A1:66', 'funciones:A1:67', 'funciones:A1:69', 'funciones:A1:70'],
   title: 'Corregir una información',
   summary: 'Correcting what someone just said follows a fixed two-step shape: first say no or sí against their statement, then replace it. Skipping the second step leaves your listener with only half a correction.',
@@ -2931,7 +2931,7 @@ window.STRAND_LESSONS = [
   ],
   pitfalls: [
     '<i>Saber</i> is for facts and skills; <i>conocer</i> is for people and places. <i>*No conozco los verbos</i> and <i>*No sé a Sonia</i> are both wrong.',
-    'People take the personal <i>a</i> after <i>conocer</i>: <i>conozco a Sonia</i>, not <i>*conozco Sonia</i>.'
+    'People take the personal <i>a</i> after <i>conocer</i>: <i>conozco a Sonia</i> (I know Sonia), not <i>*conozco Sonia</i>.'
   ],
   examples: [
     { es: '—¿Sabes dónde está la estación? —No, no sé.', en: "—Do you know where the station is? —No, I don't." },
@@ -3464,8 +3464,8 @@ window.STRAND_LESSONS = [
   summary: 'A description of a person follows a fixed camera move: name and place them first, then zoom from general build to specific detail — and it leans on just three simple present-tense verbs: ser for what they permanently are, tener for a feature named as a possession, and llevar for what they are wearing today.',
   sections: [
     { h: 'Anchor first, then zoom in', html: 'Start general: who they are and where they fit (<i>Carlinhos es un estudiante brasileño</i>). Only then move to specific, visible detail (<i>Es moreno, alto y tiene ojos negros</i>) — general to particular, never the reverse.' },
-    { h: 'Three verbs, three jobs', html: '<b>Ser</b> for lasting qualities (<i>es alto, es simpático</i>). <b>Tener</b> for a feature named as a possession (<i>tiene ojos negros</i>). <b>Llevar</b> for what they have on today, which could change tomorrow (<i>lleva una camiseta roja</i>).' },
-    { h: 'Adjective position', html: 'Descriptive adjectives normally follow the noun in this kind of text: <i>una camiseta roja</i>, not <i>una roja camiseta</i>.' }
+    { h: 'Three verbs, three jobs', html: '<b>Ser</b> for lasting qualities: <i>es alto</i> (he\'s tall), <i>es simpático</i> (he\'s nice). <b>Tener</b> for a feature named as a possession: <i>tiene ojos negros</i> (he has dark eyes). <b>Llevar</b> for what they have on today, which could change tomorrow: <i>lleva una camiseta roja</i> (he\'s wearing a red T-shirt).' },
+    { h: 'Adjective position', html: 'Descriptive adjectives normally follow the noun in this kind of text: <i>una camiseta roja</i> — a red T-shirt — not <i>*una roja camiseta</i>.' }
   ],
   moves: [
     { h: 'Anclaje', html: 'Nombra a la persona y su lugar: quién es y de dónde, en una frase simple con <i>ser</i>.' },
@@ -5469,7 +5469,7 @@ window.STRAND_LESSONS = [
   id: 'gr-genero-sustantivos-a1', canDo: 'tell a masculine noun from a feminine one, exceptions included', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:19', 'gramatica:A1:21', 'gramatica:A1:22', 'gramatica:A1:24', 'gramatica:A1:25'],
   title: 'El género de los sustantivos',
-  summary: '-o is masculine and -a is feminine most of the time, but the pattern breaks often enough — la moto, el día, el mapa — that guessing purely by ending will eventually embarrass you.',
+  summary: '-o is masculine and -a is feminine most of the time. There are enough exceptions — la moto, el día, el mapa — that the ending is a good first guess rather than a rule, and the common ones are worth learning as whole words.',
   sections: [
     { h: 'The default pattern', html: 'Most nouns follow <b>-o → masculine</b>, <b>-a → feminine</b>: <i>el libro</i>, <i>la mesa</i>. Consonant endings give no reliable clue by themselves — <i>el árbol</i>, <i>la catedral</i>, <i>el corazón</i>, <i>la solución</i> — so those are learned with their article, though <i>-ción/-sión/-dad/-tud</i> are reliably feminine.' },
     { h: 'The famous exceptions', html: '<i>La moto</i>, <i>la foto</i>, <i>la radio</i> LOOK masculine but are feminine — they are shortened forms of longer feminine words (<i>motocicleta</i>, <i>fotografía</i>, <i>radiodifusión</i>) and keep the original gender. <i>El día</i>, <i>el mapa</i>, <i>el planeta</i> go the other way: Greek-origin words in <i>-ma</i> that look feminine but are masculine.' },
@@ -5730,7 +5730,7 @@ window.STRAND_LESSONS = [
   sections: [
     { h: 'mi, tu, su: agree only with what is owned', html: 'These change for the number of the thing owned, never for gender: <i>mi libro / mis libros</i>, <i>tu casa / tus casas</i>. They stay the same whether one person owns it or several — <i>su casa</i> could be his, hers, yours (usted), or theirs.' },
     { h: 'nuestro, vuestro: agree for gender AND number', html: 'These mark that the OWNER is "we" or "you-all," and they agree fully with the thing owned: <i>nuestro libro, nuestra casa, nuestros libros, nuestras casas</i>.' },
-    { h: 'Resolving su\'s ambiguity', html: 'When context does not make the owner clear, replace <i>su</i> with <i>de él / de ella / de usted / de ellos / de ellas / de ustedes</i>: <i>la casa de ella</i> instead of the ambiguous <i>su casa</i>.' }
+    { h: 'Resolving su\'s ambiguity', html: 'When context does not make the owner clear, replace <i>su</i> with <i>de él / de ella / de usted / de ellos / de ellas / de ustedes</i>: <i>la casa de ella</i> (her house) instead of <i>su casa</i>, which could be anyone\'s.' }
   ],
   contrasts: [
     { es: 'mi libro / mis libros', en: 'my book / my books', note: 'changes only for the thing owned' },
@@ -5765,7 +5765,7 @@ window.STRAND_LESSONS = [
   title: 'Poco y mucho',
   summary: 'Poco and mucho both agree with what they quantify when they sit in front of a noun, but freeze into the plain masculine form the moment they modify a verb or adjective instead.',
   sections: [
-    { h: 'Before a noun: full agreement', html: '<i>poco/poca/pocos/pocas</i> and <i>mucho/mucha/muchos/muchas</i> agree in gender and number with the noun that follows: <i>poco tiempo</i>, <i>pocas ganas</i>, <i>muchos amigos</i>, <i>mucha suerte</i>.' },
+    { h: 'Before a noun: full agreement', html: '<i>poco/poca/pocos/pocas</i> and <i>mucho/mucha/muchos/muchas</i> agree in gender and number with the noun that follows: <i>poco tiempo</i>, <i>pocas ganas</i> (little enthusiasm), <i>muchos amigos</i> (many friends), <i>mucha suerte</i> (a lot of luck).' },
     { h: 'Before a verb or adjective: frozen', html: 'Used adverbially — modifying a verb or an adjective rather than a noun — <i>mucho/poco</i> never changes: <i>Trabaja mucho</i>, <i>Está muy cansado</i> (here <i>mucho</i> shortens to <i>muy</i> before an adjective).' },
     { h: 'Muy vs mucho', html: '<i>Muy</i> goes before an adjective or adverb (<i>muy cansado, muy rápido</i>); <i>mucho</i> goes before a noun or after a verb (<i>mucho trabajo, trabaja mucho</i>). Mixing them up — <i>*muy trabajo</i>, <i>*mucho cansado</i> — is one of the most common A1 errors.' }
   ],
@@ -5832,7 +5832,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-pronombre-se-a1', canDo: 'talk about my routine with reflexive verbs', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-pronombre-se-a1', canDo: 'talk about your daily routine with reflexive verbs', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:217', 'gramatica:A1:218', 'gramatica:A1:219', 'gramatica:A1:220'],
   title: 'El pronombre se: usos reflexivos',
   summary: 'Se has one invariable form for every third-person subject, singular or plural — and Spanish leans on reflexive verbs like peinarse and levantarse in everyday routines where English would never add "myself."',
@@ -6104,7 +6104,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-movimiento-estabilidad-a1', canDo: 'say where I am going and give simple directions', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-movimiento-estabilidad-a1', canDo: 'say where you are going and give simple directions', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:89', 'nociones_generales:A1:90', 'nociones_generales:A1:91', 'nociones_generales:A1:92', 'nociones_generales:A1:93'],
   title: 'Movimiento: ir, venir, viajar',
   summary: 'Ir and venir both translate as "to go/come," but they point in opposite directions relative to the speaker — get them backwards and you have just told someone to come to a place you are not in.',
@@ -6125,7 +6125,7 @@ window.STRAND_LESSONS = [
   ],
   pitfalls: [
     'Use <i>venir</i>, not <i>ir</i>, when inviting someone TO where you already are: <i>Ven aquí</i>, not <i>*Ve aquí</i>.',
-    'Manner of transport takes <i>en</i> for vehicles (<i>en coche, en tren</i>) but <i>a</i> for on foot (<i>a pie</i>), not <i>*en pie</i>.'
+    'Manner of transport takes <i>en</i> for vehicles (<i>en coche</i> by car, <i>en tren</i> by train) but <i>a</i> for on foot (<i>a pie</i>), not <i>*en pie</i>.'
   ],
   examples: [
     { es: '—¿Vienes conmigo al cine? —Sí, ahora voy.', en: "—Are you coming with me to the cinema? —Yes, I'm coming now." },
@@ -6149,7 +6149,7 @@ window.STRAND_LESSONS = [
   summary: 'Giving street directions in Spanish rests on three fixed phrases — todo recto, a la derecha, a la izquierda — combined with an ordinal to count which street you mean.',
   sections: [
     { h: 'The three building blocks', html: '<i>Todo recto</i> (straight ahead), <i>a la derecha</i> (to the right), <i>a la izquierda</i> (to the left) cover almost every direction you will ever give or receive.' },
-    { h: 'Counting streets with ordinals', html: 'Combine a direction with an ordinal to be precise: <i>la segunda calle a la derecha</i> ("the second street on the right"), reusing the ordinals from <i>cantidad numérica</i>.' },
+    { h: 'Counting streets with ordinals', html: 'Combine a direction with an ordinal to be precise: <i>la segunda calle a la derecha</i> — the second street on the right — reusing the ordinals you met with numbers.' },
     { h: 'Asking', html: '<i>¿Dónde está…?</i> is the standard way to ask for a location before someone gives you the directions.' }
   ],
   exponents: [
@@ -6316,9 +6316,9 @@ window.STRAND_LESSONS = [
   title: 'Duración: antes, después, empezar, terminar',
   summary: 'Antes and después order two events against each other, while empezar and terminar frame the edges of a single one — and each of those two verbs insists on its own preposition, a or de, which do not swap.',
   sections: [
-    { h: 'Ordering two events', html: '<i>Antes</i> (before) and <i>después</i> (after) place one event relative to another: <i>Antes de cenar, me ducho</i>.' },
+    { h: 'Ordering two events', html: '<i>Antes</i> (before) and <i>después</i> (after) place one event relative to another: <i>Antes de cenar, me ducho</i> (before dinner, I have a shower).' },
     { h: 'Marking the edges of one event', html: '<i>Empezar a</i> + infinitive marks the start; <i>terminar de</i> + infinitive marks the end. The prepositions are fixed and different: <i>Empiezo A trabajar a las nueve</i>, <i>Termino DE trabajar a las cinco</i>.' },
-    { h: 'How much time it takes', html: 'The quantifiers from cantidad relativa reapply to time: <i>mucho/poco/bastante tiempo</i> — <i>Tardo poco tiempo en llegar</i>.' }
+    { h: 'How much time it takes', html: 'The quantifiers from cantidad relativa reapply to time: <i>mucho/poco/bastante tiempo</i> — <i>Tardo poco tiempo en llegar</i> (it doesn\'t take me long to get there).' }
   ],
   exponents: [
     { es: 'Antes de dormir, leo un rato.', en: 'Before sleeping, I read for a while.', register: 'neutral' },
@@ -9406,7 +9406,7 @@ window.STRAND_LESSONS = [
   sections: [
     { h: 'Regular forms, three conjugations', html: 'The three patterns come from the infinitive ending: <i>-ar</i> (<i>trabajo, trabajas, trabaja...</i>), <i>-er</i> (<i>como, comes, come...</i>), <i>-ir</i> (<i>vivo, vives, vive...</i>). Vocabulary and full paradigms are drilled elsewhere; this lesson is about what the tense MEANS.' },
     { h: 'Present actual: happening right now', html: '<i>Estamos en clase de español</i> — true at this exact moment. Spanish uses the plain present for this, where English would say "we are (in class)".' },
-    { h: 'Present durative: generally true', html: '<i>Vivo en Madrid</i> — true in general, not just at this instant; it does not mean "I am living in Madrid right now as we speak" specifically, but as an ongoing fact about your life. The same form covers habits (<i>trabajo los lunes</i>) and standing facts alike.' }
+    { h: 'Present durative: generally true', html: '<i>Vivo en Madrid</i> — true in general, not just at this instant; it does not mean "I am living in Madrid right now as we speak" specifically, but as an ongoing fact about your life. The same form covers habits (<i>trabajo los lunes</i> (I work on Mondays)) and standing facts alike.' }
   ],
   contrasts: [
     { es: 'Estudio español.', en: 'I study Spanish. / I am studying Spanish.', note: 'one Spanish form covers both English present tenses' },
@@ -9433,14 +9433,14 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-infinitivo-usos-a1', canDo: 'use a verb plus an infinitive to say what I want and can do', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-infinitivo-usos-a1', canDo: 'use a verb plus an infinitive to say what you want and what you can do', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:374', 'gramatica:A1:375', 'gramatica:A1:376', 'gramatica:A1:377', 'gramatica:A1:378', 'gramatica:A1:379'],
   title: 'El infinitivo: cuándo se usa solo',
   summary: 'The infinitive is Spanish\'s "verb as a noun": it can answer a question on its own, be the subject of a sentence, or be the direct object of another verb — jobs English usually hands to the -ing form (studying is fun), not the bare infinitive.',
   sections: [
     { h: 'Form', html: 'Every Spanish verb has one of three infinitive endings: <i>-ar</i> (<i>estudiar</i>), <i>-er</i> (<i>comer</i>), <i>-ir</i> (<i>vivir</i>). This is the citation form — the one you look up in a dictionary.' },
     { h: 'Standing alone as an answer', html: 'A bare infinitive can answer a question with no preposition needed: <i>—¿Qué haces? —Estudiar.</i> ("Studying." / "I\'m studying.")' },
-    { h: 'As subject or direct object', html: 'The infinitive acts like a noun: as subject, <i>Estudiar español es divertido</i> ("Studying Spanish is fun" — English needs -ing here, Spanish just uses the infinitive); as direct object after another verb, <i>Me gusta estudiar español</i>, <i>Quiero ir a España</i>.' }
+    { h: 'As subject or direct object', html: 'The infinitive acts like a noun: as subject, <i>Estudiar español es divertido</i> ("Studying Spanish is fun" — English needs -ing here, Spanish just uses the infinitive); as direct object after another verb, <i>Me gusta estudiar español</i>, <i>Quiero ir a España</i> (I want to go to Spain).' }
   ],
   contrasts: [
     { es: 'Estudiar español es divertido.', en: 'Studying Spanish is fun.', note: 'infinitive as subject — English needs -ing, Spanish does not' },
@@ -9448,7 +9448,7 @@ window.STRAND_LESSONS = [
     { es: '—¿Qué haces los domingos? —Leer.', en: '"What do you do on Sundays?" "Read."', note: 'bare infinitive as a standalone answer' }
   ],
   pitfalls: [
-    'Do not translate English "-ing" with a Spanish gerund when it is acting as a noun (subject or object) — Spanish uses the infinitive there: <i>Estudiar es importante</i>, not <i>*Estudiando es importante</i>.',
+    'Do not translate English "-ing" with a Spanish gerund when it is acting as a noun (subject or object) — Spanish uses the infinitive there: <i>Estudiar es importante</i> (studying is important), not <i>*Estudiando es importante</i>.',
     'The infinitive after another verb (<i>quiero ir, me gusta estudiar</i>) never conjugates — only the first verb agrees with the subject.'
   ],
   examples: [
@@ -9748,8 +9748,8 @@ window.STRAND_LESSONS = [
   summary: 'A color word naming the COLOR ITSELF, not describing a noun, is always masculine — el rosa, el naranja — which is a different fact from whether that same word changes for gender when it describes something, which most basic colors do not.',
   sections: [
     { h: 'Colors as nouns', html: 'When a color word names the color itself rather than describing something, it is masculine: <i>El rosa es un color muy suave</i>, <i>Prefiero el azul al verde</i>. This holds regardless of the color\'s behavior as an adjective.' },
-    { h: 'Reinforcing -ma nouns', html: 'The Greek-origin <i>-ma</i> nouns already met (<i>el problema, el tema, el programa, el sistema</i>) belong to this same masculine-despite-appearances family.' },
-    { h: 'Isolated cases', html: '<i>El día</i> does not even fit the <i>-ma</i> pattern — it is simply memorized as its own exception, alongside the handful already learned.' }
+    { h: 'Reinforcing -ma nouns', html: 'The Greek-origin <i>-ma</i> nouns (<i>el problema</i>, <i>el tema</i>, <i>el programa</i>, <i>el sistema</i>) belong to this same masculine-despite-appearances family.' },
+    { h: 'Isolated cases', html: '<i>El día</i> does not even fit the <i>-ma</i> pattern — it is simply memorised as its own exception, alongside the handful of others like it.' }
   ],
   contrasts: [
     { es: 'El rosa es un color muy suave.', en: 'Pink is a very soft color.', note: 'rosa as a noun (the color itself) — masculine' },
@@ -15733,7 +15733,7 @@ window.STRAND_LESSONS = [
   pitfalls: [
     '<i>Ser</i> and <i>estar</i> are not only "verb + adjective". <i>Es lunes</i>, <i>Soy yo</i> and <i>Está aquí</i> have no adjective at all and are still complete sentences.',
     'With <i>gustar</i>, do not conjugate for the person who likes something — conjugate for the thing liked: <i>Me gusta el café</i> (singular thing) vs <i>Me gustan los cafés</i> (plural thing), never <i>*yo gusto el café</i>.',
-    'Do not confuse identifying (<i>Soy Elena</i>) with locating (<i>Estoy en clase</i>) — swapping the verbs produces nonsense, not just an accent.'
+    'Identifying (<i>Soy Elena</i> — I\'m Elena) and locating (<i>Estoy en clase</i> — I\'m in class) take different verbs, and swapping them changes what you have said, not just how it sounds.'
   ],
   examples: [
     { es: '—¿Quién es? —Soy yo, Elena.', en: '—Who is it? —It\'s me, Elena.' },
@@ -15746,7 +15746,7 @@ window.STRAND_LESSONS = [
     { id: 'p:nucleoverbA1:gustar', kind: 'mcq', q: '"I like coffee": "A mí ___ el café."',
       options: ['gusto', 'me gusta', 'soy gusta'], answer: 1 },
     { id: 'p:nucleoverbA1:cloze', kind: 'cloze', text: 'Hoy ___ lunes. (ser)', accept: ['es'] },
-    { id: 'p:nucleoverbA1:recall', kind: 'recall', front: 'In "Me gusta el café", which word is the subject of the verb?', back: 'el café — not yo' }
+    { id: 'p:nucleoverbA1:recall', kind: 'recall', front: 'In "Me gusta el café", which word decides whether you say gusta or gustan?', back: 'el café' }
   ]
 },
 
@@ -15794,7 +15794,7 @@ window.STRAND_LESSONS = [
   title: 'Oraciones de relativo con "que"',
   summary: 'The relative "que" lets you attach a whole clause to a noun instead of a second adjective, and it does one job here: pointing at a specific, real thing or person. The harder job — describing someone who may not exist — is a later lesson; here "que" always follows a person or thing you can name.',
   sections: [
-    { h: 'Que replaces a repeated noun', html: 'Instead of two sentences (<i>Tengo una profesora. La profesora es muy buena</i>), <i>que</i> joins them into one: <i>La profesora que tengo es muy buena.</i> "Que" stands in for "profesora" inside its own clause.' },
+    { h: 'Que replaces a repeated noun', html: 'Instead of two sentences (<i>Tengo una profesora. La profesora es muy buena</i> (I have a teacher. The teacher is very good)), <i>que</i> joins them into one: <i>La profesora que tengo es muy buena.</i> "Que" stands in for "profesora" inside its own clause.' },
     { h: 'Restrictive — no commas', html: 'These clauses are restrictive: they identify WHICH one you mean, so they attach directly with no comma: <i>un libro que lees</i>, <i>la amiga que viene conmigo</i>.' },
     { h: 'Subject or object of its own clause', html: '<i>Que</i> can be the subject (<i>la amiga que viene conmigo</i> — she comes) or the object (<i>un libro que lees</i> — you read it) of the clause it introduces, and stays unchanged either way — it never shows gender or number.' }
   ],
@@ -15806,7 +15806,6 @@ window.STRAND_LESSONS = [
   pitfalls: [
     '<i>Que</i> never changes for gender or number, even though the noun it refers to does: <i>el libro que</i>, <i>la casa que</i>, <i>los libros que</i> — always just "que".',
     'At A1 these clauses point at something real and specific, so the verb is indicative: <i>la profesora que tengo es</i>, not a subjunctive — that shift only happens once the referent is unknown or hypothetical.',
-    'Do not drop <i>que</i> the way informal English drops "that" — <i>*el libro leo</i> is not a sentence in Spanish; the relative is obligatory.'
   ],
   examples: [
     { es: 'El chico que vive al lado es simpático.', en: 'The boy who lives next door is nice.' },
