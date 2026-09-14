@@ -275,6 +275,15 @@ window.GameScore = (function () {
     return { before: before, after: p.rating, delta: delta, first: !prev };
   }
 
+  // When the tenses were last put through a retrieval round, so the prompt can
+  // come round every few days instead of every time the app is opened.
+  function lastTenseCheck() { var v = prefs().tenseDay; return v == null ? null : v; }
+  function markTenseCheck() {
+    var p = prefs();
+    p.tenseDay = today();
+    try { localStorage.setItem(PREF_KEY, JSON.stringify(p)); } catch (e) {}
+  }
+
   // Thousands separators, because 8420 and 8,420 are not the same number to read.
   function fmt(n) { return String(Math.round(n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
 
@@ -286,6 +295,7 @@ window.GameScore = (function () {
     dailySeed: dailySeed, dailyKey: dailyKey, dailyLabel: dailyLabel, dailyStreak: dailyStreak,
     weekSummary: weekSummary, today: today, fmt: fmt,
     silent: silent, setSilent: setSilent,
-    rating: rating, rate: rate
+    rating: rating, rate: rate,
+    lastTenseCheck: lastTenseCheck, markTenseCheck: markTenseCheck
   };
 })();

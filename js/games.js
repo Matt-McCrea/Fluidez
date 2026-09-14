@@ -445,6 +445,85 @@ window.Games = (function () {
     return card;
   }
 
+  /* ---- spaced retrieval of the tenses ------------------------------------
+   * A tense is taught once and then only ever met by accident. This comes
+   * round every third day and asks the learner to USE one or two of the
+   * tenses they have been taught — a meaning to render as a form, and real
+   * sentences with the verb missing. Nothing in it asks what a tense is
+   * called or how it is built: that is the lesson's job and it is already
+   * done. This is retrieval.
+   *
+   * It grows with the learner: one tense while they only have one, then
+   * pairs, then three at a time, rotating so no tense is the one that never
+   * comes up. Returns null on the days it is not due, so Inicio appends it
+   * unconditionally and gets nothing most of the time.
+   */
+  var TENSE_EVERY = 3;                 // days
+
+  function tenseCheck() {
+    var E2 = window.ENGINE;
+    if (!E2) return null;
+    var taught = (window.Profile ? window.Profile.tenses() : ['presente'])
+      .filter(function (t) { return t !== 'impneg' && E2.TENSE_LABEL[t]; });
+    if (!taught.length) return null;
+    var day = GS.today(), last = GS.lastTenseCheck();
+    if (last != null && day - last < TENSE_EVERY) return null;
+
+    var n = taught.length;
+    // one, two, then three — cycling, so a learner with several tenses meets
+    // them singly AND together rather than only ever in a jumble
+    var want = Math.min(n, [1, 2, 3][day % 3]);
+    var off = day % n, picked = [];
+    for (var i = 0; i < want; i++) picked.push(taught[(off + i) % n]);
+
+    var names = picked.map(function (t) { return E2.TENSE_LABEL[t].toLowerCase(); });
+    var title = picked.length === 1 ? 'Repaso rápido: el ' + names[0]
+              : picked.length === 2 ? 'Reto mixto: ' + names[0] + ' + ' + names[1]
+              : 'Reto mixto: tres tiempos';
+    var sub = picked.length === 1
+      ? 'Dos minutos usando el ' + names[0] + ' — sin teoría.'
+      : 'Dos minutos cambiando entre ' + names.slice(0, -1).join(', ') + ' y ' + names[names.length - 1] + '.';
+    return { tenses: picked, title: title, sub: sub };
+  }
+
+  function startTenseCheck(check, back) {
+    GS.markTenseCheck();
+    if (!exitAll) exitAll = back || function () { window.Shell.closeOverlay(); window.Shell.go('inicio'); };
+    window.Shell.openOverlay(false);
+    var h = host();
+    clear(h);
+    window.GameRound.run(h, {
+      key: 'tiempos', title: check.title, kind: 'tense', duration: 120000,
+      hue: '#2f7fb8', tenses: check.tenses,
+      silent: GS.silent() || !hasVoice(),
+      onExit: back || backToList
+    });
+  }
+
+  function tenseCheckCard(back) {
+    var check = tenseCheck();
+    if (!check) return null;
+    var card = el('div', 'g-tensecheck');
+    var head = el('div', 'g-tc-head');
+    head.appendChild(el('span', 'g-tc-label', 'Repaso de tiempos'));
+    var later = el('button', 'g-tc-later', 'Hoy no');
+    later.type = 'button';
+    later.title = 'Vuelve dentro de unos días';
+    later.addEventListener('click', function () {
+      GS.markTenseCheck();
+      if (window.Shell) window.Shell.refresh('inicio');
+    });
+    head.appendChild(later);
+    card.appendChild(head);
+    card.appendChild(el('div', 'g-tc-title', check.title));
+    card.appendChild(el('p', 'g-tc-sub', check.sub));
+    var go = el('button', 'g-tc-go', '2 minutos →');
+    go.type = 'button';
+    go.addEventListener('click', function () { startTenseCheck(check, back); });
+    card.appendChild(go);
+    return card;
+  }
+
   function weakCard(weak) {
     var card = el('div', 'g-weak');
     card.appendChild(el('span', 'g-weak-label', 'Se te resiste'));
@@ -690,5 +769,6 @@ window.Games = (function () {
   }
 
   return { render: render, open: open, openWeak: openWeak, openTense: openTense,
-           homeCard: homeCard, tenseCard: tenseCard, topicLabel: topicLabel, GAMES: GAMES };
+           homeCard: homeCard, tenseCard: tenseCard, tenseCheckCard: tenseCheckCard,
+           topicLabel: topicLabel, GAMES: GAMES };
 })();

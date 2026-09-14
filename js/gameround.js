@@ -224,7 +224,8 @@ window.GameRound = (function () {
       var item = null, fallback = null;
       for (var i = 0; i < 8; i++) {
         var got = cfg.topic ? GI.weakItem(cfg.topic, rung, rng)
-                            : GI.next(cfg.kind, rung, rng, { silent: cfg.silent, tense: cfg.lockTense });
+                            : GI.next(cfg.kind, rung, rng,
+                                { silent: cfg.silent, tense: cfg.lockTense, tenses: cfg.tenses });
         if (!got) continue;
         fallback = got;
         if (!usedPrompts[keyOf(got)]) { item = got; break; }

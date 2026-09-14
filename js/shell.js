@@ -122,6 +122,15 @@ window.Shell = (function () {
      * nobody goes looking for something fun. Then the other session lengths,
      * then the mistakes, which matter but are nobody's idea of an invitation.
      * ---------------------------------------------------------------------- */
+    /* Every third day, a short retrieval round on the tenses already taught.
+     * Above the games card because it is the thing that is only here today. */
+    if (window.Games && window.Games.tenseCheckCard) {
+      var tcc = window.Games.tenseCheckCard(function () {
+        window.Shell.closeOverlay(); window.Shell.go('inicio');
+      });
+      if (tcc) host.appendChild(tcc);
+    }
+
     if (window.Games && window.Games.homeCard) {
       host.appendChild(window.Games.homeCard(function () {
         window.Shell.closeOverlay(); window.Shell.go('inicio');

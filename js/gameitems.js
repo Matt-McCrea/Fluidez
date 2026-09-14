@@ -124,7 +124,8 @@ window.GameItems = (function () {
       gender: emptyBuckets(),
       words: {},                      // every single-word form VOCAB knows, for
                                       // checking that a distractor is a real word
-      glossesOf: {}                   // spanish word -> the english meanings it has
+      glossesOf: {},                  // spanish word -> the english meanings it has
+      byTense: {}                     // tense key -> APPLY cloze items using it
     };
 
     // --- translation / listening pairs ---
@@ -189,8 +190,11 @@ window.GameItems = (function () {
     });
     (window.APPLY_ITEMS || []).forEach(function (it) {
       if (it.type !== 'cloze' || !it.inf || !it.tense) return;
-      idx.grammar[bandForLevel(it.level)].push({ src: 'apply', q: it.text, inf: it.inf,
-        tense: it.tense, person: it.person, en: it.en, topic: 'tense:' + it.tense });
+      var row = { src: 'apply', q: it.text, inf: it.inf,
+        tense: it.tense, person: it.person, en: it.en, topic: 'tense:' + it.tense,
+        cefr: bandForLevel(it.level) };
+      idx.grammar[row.cefr].push(row);
+      (idx.byTense[it.tense] = idx.byTense[it.tense] || []).push(row);
     });
     (window.CONCEPT_LESSONS || []).forEach(function (l) {
       var opts = l.id === 'ser-estar' ? ['ser', 'estar']
@@ -723,6 +727,34 @@ window.GameItems = (function () {
     return item;
   }
 
+  /* ---- spaced retrieval of the tenses already taught -----------------------
+   * Not another grammar lesson: nothing here asks what a tense is called or
+   * how it is formed. Half the items are a meaning to render as a form ("she
+   * would have said" -> habría dicho), which is translation; the other half
+   * are a real sentence with the verb missing and the infinitive given, which
+   * is the tense doing its job in context. Between them that is the whole
+   * skill — knowing which form the meaning needs, and producing it. */
+  function tenseItem(rung, rng, opts) {
+    var tenses = (opts && opts.tenses) || [];
+    if (!tenses.length) return null;
+    var tk = pick(tenses, rng);
+    var wantCloze = rnd(rng) < 0.5;
+
+    if (wantCloze) {
+      var pool = own(index().byTense, tk) || [];
+      for (var i = 0; i < 6 && pool.length; i++) {
+        var q = pick(pool, rng);
+        var o = applyOptions(q, rng);
+        if (!o) continue;
+        return { kind: 'grammar', play: 'choose', cefr: q.cefr, inf: q.inf,
+          topic: 'tense:' + q.tense, id: 'vt:' + q.inf + ':' + q.tense,
+          prompt: q.q.replace(/___+/g, '＿＿＿'), answer: o.right, options: o.options,
+          note: q.en || null, bonus: 20 + (TENSE_BONUS[q.tense] || 0) / 2 };
+      }
+    }
+    return verbItem(rung, rng, { tense: tk });
+  }
+
   // ---- the mix -------------------------------------------------------------
   // Racha and the daily challenge draw from everything. The weights shift up
   // the ladder: recognition early, production and the ear later, because that
@@ -763,6 +795,7 @@ window.GameItems = (function () {
       case 'verb':      return verbItem(rung, rng, opts);
       case 'grammar':   return grammarItem(rung, rng);
       case 'vocab':     return vocabItem(rung, rng);
+      case 'tense':     return tenseItem(rung, rng, opts);
       case 'mixed':     return mixedItem(rung, rng, opts);
       default:          return mixedItem(rung, rng, opts);
     }
