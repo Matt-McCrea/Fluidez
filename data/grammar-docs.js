@@ -61,8 +61,8 @@ window.GRAMMAR = [
   formation:'Add the preterite endings to the stem. -er and -ir verbs share one set of endings.',
   when:[
     'A single completed action: <i>Ayer comí paella.</i> — Yesterday I ate paella.',
-    'A sequence of completed events: <i>Llegué, comí y me fui.</i>',
-    'An action with a clear time boundary: <i>Viví dos años en Madrid.</i>'
+    'A sequence of completed events: <i>Llegué, comí y me fui.</i> — I arrived, ate and left.',
+    'An action with a clear time boundary: <i>Viví dos años en Madrid.</i> — I lived in Madrid for two years.'
   ],
   irregulars:[
     'Strong preterites (irregular stem + special endings, no accents): <i>tener → tuve</i>, <i>hacer → hice/hizo</i>, <i>poder → pude</i>, <i>decir → dije</i>, <i>estar → estuve</i>.',
@@ -78,13 +78,13 @@ window.GRAMMAR = [
 },
 {
   key:'imperfecto',
-  canDo:'describe how things were and what I used to do', title:'Imperfecto (Imperfect)',
+  canDo:'describe how things were and what you used to do', title:'Imperfecto (Imperfect)',
   summary:'Ongoing, habitual, or descriptive past — the "was/used to" past.',
   formation:'Add the imperfect endings to the stem. -er and -ir share endings. Only three verbs are irregular.',
   when:[
     'Habitual past actions: <i>De niño jugaba al fútbol.</i> — As a child I used to play soccer.',
     'Ongoing background action: <i>Llovía cuando salí.</i> — It was raining when I left.',
-    'Descriptions, age, time, feelings in the past: <i>Eran las tres.</i> / <i>Ella tenía frío.</i>'
+    'Descriptions, age, time, feelings in the past: <i>Eran las tres.</i> — It was three o\'clock. / <i>Ella tenía frío.</i> — She was cold.'
   ],
   irregulars:[
     'Only three irregular verbs: <i>ser → era</i>, <i>ir → iba</i>, <i>ver → veía</i>.'

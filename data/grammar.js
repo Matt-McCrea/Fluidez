@@ -95,7 +95,7 @@ window.CONCEPT_LESSONS = [
 },
 
 {
-  id: 'preterite-imperfect', canDo: 'choose preterite or imperfect by what I actually mean', title: 'Preterite vs. Imperfect', level: 2,
+  id: 'preterite-imperfect', canDo: 'choose preterite or imperfect by what you actually mean', title: 'Preterite vs. Imperfect', level: 2,
   summary: 'Spanish has two past tenses and English blurs them. The preterite is a finished event; the imperfect is the background, the ongoing, the habitual. Choosing between them is a meaning decision.',
   sections: [
     { h: 'Preterite = the event', html: 'A completed action, often at a specific moment: <i>Ayer comí paella.</i> Think: "what happened?" A dot on the timeline.' },
@@ -110,7 +110,7 @@ window.CONCEPT_LESSONS = [
   ],
   pitfalls: [
     'Time markers hint at the choice: <i>ayer, anoche, el lunes</i> → preterite; <i>siempre, todos los días, mientras</i> → imperfect.',
-    'Age, time, weather and feelings in the past are usually <b>imperfect</b>: <i>Tenía diez años. Eran las tres. Hacía frío.</i>'
+    'Age, time, weather and feelings in the past are usually <b>imperfect</b>: <i>Tenía diez años. Eran las tres. Hacía frío.</i> — I was ten. It was three o\'clock. It was cold.'
   ],
   examples: [
     { es: 'Mientras estudiaba, sonó el teléfono.', en: 'While I was studying, the phone rang.' },
@@ -119,6 +119,12 @@ window.CONCEPT_LESSONS = [
   recall: [
     { id: 'g:pretimp:habit', front: 'Past tense for a repeated habit ("used to")', back: 'imperfecto' },
     { id: 'g:pretimp:event', front: 'Past tense for a finished event ("ayer…")', back: 'preterito' }
+  ],
+  probes: [
+    { id: 'p:pretimp:ayer', kind: 'cloze', text: 'Ayer ___ paella en un restaurante. (comer — yo, one finished meal)', accept: ['comí'] },
+    { id: 'p:pretimp:antes', kind: 'cloze', text: 'De niño ___ mucho chocolate. (comer — yo, a repeated habit)', accept: ['comía'] },
+    { id: 'p:pretimp:sentido', kind: 'mcq', q: '"Every summer we went to the beach" — which past is that?',
+      options: ['Fuimos a la playa.', 'Íbamos a la playa.'], answer: 1 }
   ]
 },
 
@@ -126,8 +132,8 @@ window.CONCEPT_LESSONS = [
   id: 'por-para', canDo: 'tell por from para and stop guessing', title: 'Por vs. Para', level: 2,
   summary: 'Both often translate as "for", but they point in different directions. Para looks forward to a goal, destination or deadline; por looks at cause, exchange, duration and movement through.',
   sections: [
-    { h: 'PARA = destination / purpose', html: '<ul><li>Goal: <i>Estudio para aprender.</i></li><li>Recipient: <i>Es para ti.</i></li><li>Destination: <i>Salgo para Madrid.</i></li><li>Deadline: <i>Para el lunes.</i></li></ul>' },
-    { h: 'POR = cause / exchange / through', html: '<ul><li>Reason: <i>Lo hago por amor.</i></li><li>Exchange: <i>Pagué diez euros por el libro.</i></li><li>Duration: <i>Estudié por dos horas.</i></li><li>Movement through: <i>Camino por el parque.</i></li></ul>' }
+    { h: 'PARA = destination / purpose', html: '<ul><li>Goal: <i>Estudio para aprender.</i> — I study in order to learn.</li><li>Recipient: <i>Es para ti.</i> — It\'s for you.</li><li>Destination: <i>Salgo para Madrid.</i> — I\'m leaving for Madrid.</li><li>Deadline: <i>Para el lunes.</i> — By Monday.</li></ul>' },
+    { h: 'POR = cause / exchange / through', html: '<ul><li>Reason: <i>Lo hago por amor.</i> — I do it out of love.</li><li>Exchange: <i>Pagué diez euros por el libro.</i> — I paid ten euros for the book.</li><li>Duration: <i>Estudié por dos horas.</i> — I studied for two hours.</li><li>Movement through: <i>Camino por el parque.</i> — I walk through the park.</li></ul>' }
   ],
   contrasts: [
     { es: 'Trabajo para mi jefe.', en: 'I work for my boss.', note: 'para = the goal/recipient' },

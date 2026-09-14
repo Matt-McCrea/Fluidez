@@ -379,7 +379,7 @@
     var lessons = [];
     SEED.forEach(function (s) {
       if (docs[s.id]) lessons.push(withRecall(tenseLesson(docs[s.id], s.level)));
-      else if (concepts[s.id]) { concepts[s.id].level = s.level; lessons.push(concepts[s.id]); }
+      else if (concepts[s.id]) { concepts[s.id].level = s.level; lessons.push(withRecall(concepts[s.id])); }
     });
     // any concept lessons not named in SYLLABUS are appended (nothing lost)
     (window.CONCEPT_LESSONS || []).forEach(function (c) {
