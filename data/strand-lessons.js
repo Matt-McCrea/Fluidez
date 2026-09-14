@@ -2682,9 +2682,9 @@ window.STRAND_LESSONS = [
   id: 'fn-actividad-a1', strand: 'function', cefr: 'A1', level: 1, theme: 'trabajo',
   pcic: ['funciones:A1:22', 'funciones:A1:23', 'funciones:A1:24'],
   title: 'Actividad',
-  summary: 'Three ways to ask what someone does, all addressed to tú, but not interchangeable: one is loose enough for small talk, the other two expect an actual job back.',
+  summary: 'The same small talk usually gets round to what you do — and there are three ways to ask it.',
   sections: [
-    { h: 'The idea', html: 'All three questions use <i>tú</i> — this is early A1, before <i>usted</i> enters the picture — but they are not the same register. <i>¿Qué haces?</i> is loose enough to answer with a hobby; the other two expect a job.' },
+    { h: 'The idea', html: 'All three questions address the other person as <i>tú</i>, but they are not the same in weight. <i>¿Qué haces?</i> is loose enough to answer with a hobby; the other two expect a job.' },
     { h: 'Answering', html: 'The natural answer names the job or uses <i>trabajar en/de</i>: <i>Trabajo en un hospital</i>, <i>Trabajo de profesor</i>, <i>Soy profesor</i>.' }
   ],
   exponents: [
@@ -3331,7 +3331,7 @@ window.STRAND_LESSONS = [
   id: 'dc-atenuacion-2persona-a1', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
   pcic: ['tacticas_pragmaticas:A1:86', 'tacticas_pragmaticas:A1:87', 'tacticas_pragmaticas:A1:90', 'tacticas_pragmaticas:A1:91'],
   title: 'Atenuación: usted y "creo que"',
-  summary: 'Two simple, early tools soften how directly you come across: switching tú for usted keeps a respectful distance, and starting an opinion with "creo que" makes it sound like a guess rather than a fact.',
+  summary: 'The same sentence can land softly or bluntly, and at this stage two things do most of that work.',
   sections: [
     { h: 'Usted keeps distance', html: 'Using <i>usted</i> instead of <i>tú</i> signals respect or social distance — with someone older, a stranger, or in a formal setting: <i>¿A qué se dedica usted?</i>' },
     { h: 'Creo que softens an opinion', html: 'Stating something as fact can sound blunt; <i>creo que</i> + statement frames it as your view, easier for the listener to disagree with: <i>Creo que es muy difícil</i> rather than <i>Es muy difícil.</i>' }
@@ -4562,7 +4562,7 @@ window.STRAND_LESSONS = [
   summary: 'Apologizing scales from a quick "perdona" to a heavier "lo siento muchísimo" — and naming exactly what you are sorry for with "siento + infinitive" makes the apology land as sincere rather than reflexive.',
   sections: [
     { h: 'A scale of weight', html: '<i>Perdona/e</i> is light, for everyday bumps; <i>Lo siento (muchísimo)</i> carries more weight, for something that actually caused harm or inconvenience.' },
-    { h: 'Naming what you regret', html: '<i>Siento + infinitive</i> attaches the apology to a specific thing, which reads as more sincere than a bare <i>lo siento</i>.' }
+    { h: 'Naming what you regret', html: '<i>Siento</i> + infinitive attaches the apology to a specific thing, which reads as more sincere than a bare <i>lo siento</i>: <i>Siento llegar tarde</i> — I\'m sorry for being late. <i>Siento molestarte</i> — Sorry to bother you.' }
   ],
   exponents: [
     { es: 'Lo siento mucho.', en: "I'm very sorry.", register: 'neutral' },
@@ -4586,7 +4586,7 @@ window.STRAND_LESSONS = [
       q: 'Which one names exactly what you are sorry for?',
       options: ['Lo siento.', 'Perdona.', 'Siento llegar tarde.'], answer: 2 },
     { id: 'p:disculparse:cloze', kind: 'cloze',
-      text: '___ llegar tarde.', accept: ['Siento', 'siento'] },
+      text: '___ llegar tarde. (sentir — naming what you are sorry for)', accept: ['Siento', 'siento'] },
     { id: 'p:disculparse:recall', kind: 'recall',
       front: 'Structure that names exactly what you are apologizing for', back: 'siento + infinitivo' }
   ]
@@ -5801,9 +5801,9 @@ window.STRAND_LESSONS = [
   title: 'Los numerales: cardinales y ordinales',
   summary: 'Cardinal numbers barely change — only uno and its compounds adjust for gender — but ordinals from primero to décimo agree like any adjective, and primero/tercero drop their -o before a masculine singular noun.',
   sections: [
-    { h: 'Cardinals: mostly invariable', html: 'Numbers do not agree with what they count, with one exception: <i>uno</i> becomes <i>un</i> before a masculine noun and <i>una</i> before a feminine one, and this carries into compounds — <i>veintiún libros</i>, <i>treinta y una casas</i>.' },
-    { h: 'Ordinals: agree like adjectives', html: '<i>primero, segundo, tercero…</i> agree in gender and number with their noun: <i>la segunda vez</i>, <i>los primeros días</i>.' },
-    { h: 'Apocope of primero and tercero', html: 'Before a masculine singular noun, <i>primero</i> and <i>tercero</i> drop their final <i>-o</i>: <i>el primer día</i>, <i>el tercer piso</i> — never <i>*el primero día</i>. This is the exact same shortening pattern as <i>uno → un</i>.' }
+    { h: 'Cardinals: mostly invariable', html: 'Numbers do not agree with what they count, with one exception: <i>uno</i> becomes <i>un</i> before a masculine noun and <i>una</i> before a feminine one, and this carries into compounds — <i>veintiún libros</i> (21 books), <i>treinta y una casas</i> (31 houses).' },
+    { h: 'Ordinals: agree like adjectives', html: '<i>primero, segundo, tercero…</i> agree in gender and number with their noun: <i>la segunda vez</i> (the second time), <i>los primeros días</i> (the first few days).' },
+    { h: 'El primer día, el tercer piso: the short forms', html: 'Before a masculine singular noun, <i>primero</i> and <i>tercero</i> drop their final <i>-o</i>: <i>el primer día</i> (the first day), <i>el tercer piso</i> (the third floor) — never <i>*el primero día</i>. This is the exact same shortening pattern as <i>uno → un</i>.' }
   ],
   contrasts: [
     { es: 'un libro / una casa', en: 'one book / one house', note: 'uno agrees for gender before the noun' },
@@ -5814,7 +5814,7 @@ window.STRAND_LESSONS = [
   pitfalls: [
     '<i>Primero</i> and <i>tercero</i> shorten to <i>primer/tercer</i> only before a MASCULINE SINGULAR noun — <i>la primera vez</i> keeps its full form.',
     'Cardinal numbers other than <i>uno</i> and its compounds never agree: <i>dos casas</i>, <i>tres libros</i>, no gender change.',
-    'Do not confuse the apocope of <i>primero/tercero</i> with the same pattern in <i>uno → un</i> — they are the same rule, applied to different words.'
+    'The shortening happens before the noun, not after it: <i>el primer día</i> but <i>el día primero</i> keeps the <i>-o</i>, and <i>es el primero</i> standing alone keeps it too.'
   ],
   examples: [
     { es: 'Vivo en el tercer piso, la primera puerta a la derecha.', en: 'I live on the third floor, the first door on the right.' },
@@ -5874,7 +5874,7 @@ window.STRAND_LESSONS = [
   summary: 'Spanish routinely drops its subject pronoun because the verb ending already says who is speaking — you keep yo/tú/él mainly to contrast one person against another, which is why constant yo-yo-yo sounds foreign.',
   sections: [
     { h: 'The forms', html: '<i>yo, tú, él/ella/usted, nosotros/nosotras, vosotros/vosotras, ellos/ellas/ustedes</i>. Only the first person has no gender split; every other has one, or a formal/informal split (<i>tú</i> vs <i>usted</i>).' },
-    { h: 'Usted means "you" but takes the él/ella endings', html: 'This is the single most useful thing to know about <i>usted</i>, and it is why it is listed beside <i>él/ella</i> above rather than beside <i>tú</i>. <i>Usted</i> is the polite word for one person you are speaking TO, but the verb after it is conjugated exactly as if you were talking ABOUT someone: <i>usted trabaja</i>, <i>usted vive</i>, <i>usted es</i> — the same forms as <i>él trabaja</i>, <i>él vive</i>, <i>él es</i>. The plural <i>ustedes</i> works the same way, borrowing the <i>ellos</i> forms: <i>ustedes trabajan</i>.<br>So learning one set of endings gets you two things at once: talking about a third person, and addressing someone politely. Nothing new to memorise — you just have to remember which one you mean.' },
+    { h: 'Usted means "you" but takes the él/ella endings', html: 'This is the single most useful thing to know about <i>usted</i>, and it is why it is listed beside <i>él/ella</i> above rather than beside <i>tú</i>. <i>Usted</i> is the polite word for one person you are speaking TO, but the verb after it is conjugated exactly as if you were talking ABOUT someone: <i>usted trabaja</i> (you work), <i>usted vive</i> (you live), <i>usted es</i> (you are) — the same forms as <i>él trabaja</i> (he works), <i>él vive</i>, <i>él es</i>. The plural <i>ustedes</i> works the same way, borrowing the <i>ellos</i> forms: <i>ustedes trabajan</i>.<br>So learning one set of endings gets you two things at once: talking about a third person, and addressing someone politely. Nothing new to memorise — you just have to remember which one you mean.' },
     { h: 'Omission is the default', html: 'Because the verb ending already identifies the person (<i>trabajo</i> can only be "I work"), the subject pronoun is usually left out: <i>Trabajo en un hospital</i>, not <i>*Yo trabajo en un hospital</i> as the neutral, unmarked version.' },
     { h: 'When you DO keep it: contrast', html: 'The pronoun reappears to contrast one person with another: <i>Yo prefiero café, ella prefiere té.</i> Without that contrast, adding it sounds like unnecessary emphasis, the classic "foreign accent" of over-translating English.' }
   ],
@@ -5886,7 +5886,7 @@ window.STRAND_LESSONS = [
   ],
   pitfalls: [
     'Do not translate English\'s obligatory "I/you/he" word for word — constant subject pronouns are the most common tell of a non-native speaker.',
-    'Impersonal expressions (<i>llueve, hay, es tarde</i>) have no subject pronoun to add, unlike English\'s empty "it."',
+    'Impersonal expressions (<i>llueve</i> — it\'s raining, <i>hay</i> — there is/are, <i>es tarde</i> — it\'s late) have no subject pronoun to add, unlike English\'s empty "it."',
     'Because <i>usted</i> means "you", the tú ending is the natural slip: <i>*usted trabajas</i>. It is <i>usted trabaja</i>.'
   ],
   examples: [
@@ -5899,7 +5899,7 @@ window.STRAND_LESSONS = [
       options: ['Yo trabajo en un banco.', 'Trabajo en un banco.', 'Yo, trabajo en un banco.'], answer: 1 },
     { id: 'p:prsuj:contraste', kind: 'mcq', q: 'When IS the subject pronoun worth saying?',
       options: ['Always, to be clear', 'To contrast one person with another', 'Never in Spanish'], answer: 1 },
-    { id: 'p:prsuj:usted', kind: 'cloze', text: 'Usted ___ razón. (tener — usted takes the he/she ending)', accept: ['tiene'] },
+    { id: 'p:prsuj:usted', kind: 'cloze', text: 'Usted ___ razón. (tener — usted takes the same form as él/ella)', accept: ['tiene'] },
     { id: 'p:prsuj:recall', kind: 'recall', front: 'Why can Spanish drop its subject pronouns so freely?', back: 'the verb ending already identifies the person' }
   ]
 },
@@ -5914,9 +5914,9 @@ window.STRAND_LESSONS = [
   title: 'Cantidad numérica: cardinales y ordinales',
   summary: 'A cardinal number states an exact count; an ordinal states a position in a sequence — and the two are easy to mix up because "cuatro" (four) and "cuarto" (fourth) differ by a single letter.',
   sections: [
-    { h: 'Cardinals count', html: 'Cardinal numbers answer "how many": <i>Tengo 18 años</i>, <i>Somos cinco</i>. Spanish marks thousands with a period, not a comma: <i>150.000 habitantes</i>.' },
-    { h: 'Ordinals place', html: 'Ordinals answer "which one in order": <i>Vivimos en el cuarto piso</i> (the fourth floor) — not <i>*el cuatro piso</i>, which would just be nonsense arithmetic sitting where a position belongs.' },
-    { h: 'Comparing without a number', html: '<i>Muy</i>, <i>más</i> and <i>menos</i> intensify or compare with no number at all: <i>muy alto</i>, <i>más grande</i>.' }
+    { h: 'Cardinals count', html: 'Cardinal numbers answer "how many": <i>Tengo 18 años</i> (I\'m 18), <i>Somos cinco</i> (there are five of us). Spanish marks thousands with a period, not a comma: <i>150.000 habitantes</i> (150,000 inhabitants).' },
+    { h: 'Ordinals place', html: 'Ordinals answer "which one in order": <i>Vivimos en el cuarto piso</i> — We live on the fourth floor. Not <i>*el cuatro piso</i>, which counts four floors instead of naming the fourth one.' },
+    { h: 'Comparing without a number', html: '<i>Muy</i> intensifies without counting anything: <i>muy alto</i> (very tall), <i>muy caro</i> (very expensive). The next part of the lesson takes this further with <i>más</i> and <i>menos</i>.' }
   ],
   exponents: [
     { es: 'Tengo 18 años.', en: 'I am 18.', register: 'neutral', note: 'cardinal — exact count' },
@@ -5951,11 +5951,11 @@ window.STRAND_LESSONS = [
   id: 'nt-cantidad-relativa-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:28', 'nociones_generales:A1:29', 'nociones_generales:A1:30', 'nociones_generales:A1:31', 'nociones_generales:A1:32', 'nociones_generales:A1:33'],
   title: 'Cantidad relativa: más, menos, bastante',
-  summary: 'Where a cardinal number states a precise figure, más, menos and más o menos move a quantity up, down, or into a rough estimate — without ever naming an exact number.',
+  summary: 'Most of the time you do not need a figure at all — just whether there is more of something, less of it, or roughly enough.',
   sections: [
-    { h: 'Up or down, with no number', html: '<i>Más</i> and <i>menos</i> shift a quantity without stating it exactly: <i>Más pan, por favor</i>, <i>Tengo menos tiempo hoy</i>.' },
+    { h: 'Up or down, with no number', html: '<i>Más</i> and <i>menos</i> shift a quantity without stating it exactly: <i>Más pan, por favor</i> — More bread, please. <i>Tengo menos tiempo hoy</i> — I have less time today.' },
     { h: 'Turning a number into a guess', html: '<i>Más o menos</i> placed before a figure turns it into an approximation: <i>Tiene más o menos 25.000 habitantes</i> — "give or take."' },
-    { h: 'Bastante and poco', html: '<i>Bastante</i> (quite a lot / enough) and <i>poco</i> (little) sit between "much" and "not much": <i>Tengo bastante dinero</i>, <i>Hay poca gente hoy</i>.' }
+    { h: 'Bastante and poco', html: '<i>Bastante</i> (quite a lot / enough) and <i>poco</i> (little) sit between "much" and "not much": <i>Tengo bastante dinero</i> — I have quite a lot of money. <i>Hay poca gente hoy</i> — There are few people today.' }
   ],
   exponents: [
     { es: 'Más pan, por favor.', en: 'More bread, please.', register: 'neutral', note: 'más with no number stated' },
@@ -5969,7 +5969,7 @@ window.STRAND_LESSONS = [
   ],
   pitfalls: [
     '<i>Gente</i> ("people") is grammatically singular in Spanish: <i>mucha gente</i>, never <i>*muchos gente</i>.',
-    'Asking a price uses <i>ser/costar</i>, not <i>hay</i>: <i>¿Cuánto es?</i>, not <i>*¿Cuánto hay?</i>'
+    'Asking a price uses <i>ser/costar</i>, not <i>hay</i>: <i>¿Cuánto es?</i> (how much is it?), not <i>*¿Cuánto hay?</i>'
   ],
   examples: [
     { es: '—¿Cuánta gente hay en la fiesta? —Bastante.', en: '—How many people are at the party? —Quite a few.' },
@@ -5990,11 +5990,11 @@ window.STRAND_LESSONS = [
   id: 'nt-tamano-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:42', 'nociones_generales:A1:43', 'nociones_generales:A1:44'],
   title: 'Tamaño: grande, pequeño y las medidas',
-  summary: 'Size in Spanish runs on paired opposites — grande/pequeño, largo/corto, alto/bajo — and the same word alto or bajo can describe a person\'s height or a shelf\'s position, so context decides which.',
+  summary: 'Price is one thing you ask about a thing; size is the other — and Spanish handles size with pairs of opposites.',
   sections: [
     { h: 'The basic pairs', html: '<i>grande/pequeño</i> (big/small), <i>largo/corto</i> (long/short), <i>alto/bajo</i> (tall or high / short or low), <i>rápido/lento</i> (fast/slow), <i>delgado/gordo</i> (thin/fat).' },
     { h: 'Alto and bajo do double duty', html: '<i>Alto</i> and <i>bajo</i> describe a PERSON\'s height (<i>Juan es muy alto</i>) and equally an OBJECT\'s height or position (<i>el estante de arriba está muy alto</i>) — the same word, no separate vocabulary needed.' },
-    { h: 'Actual measurement', html: 'When a description is not precise enough, Spanish switches to <i>metro(s)</i>/<i>kilómetro(s)</i>: <i>Mide dos metros</i>.' }
+    { h: 'Actual measurement', html: 'When a description is not precise enough, Spanish switches to <i>metro(s)</i>/<i>kilómetro(s)</i>: <i>Mide dos metros</i> — It\'s two metres long/tall.' }
   ],
   exponents: [
     { es: 'Mi hermano es muy alto.', en: 'My brother is very tall.', register: 'neutral', note: 'alto describing a person' },
@@ -6228,9 +6228,9 @@ window.STRAND_LESSONS = [
   title: 'Referencias temporales: la hora, los días',
   summary: 'Telling the time and naming days both run on a small, fixed set of building blocks — but Spanish counts the last twenty minutes of the hour DOWN toward the next one, a habit English speakers never expect.',
   sections: [
-    { h: 'Telling the time', html: '<i>Es la una</i> is the one exception (singular); every other hour is plural: <i>Son las dos</i>. Quarters and halves use <i>y</i> going up (<i>y cuarto, y media</i>) and <i>menos</i> going down toward the next hour (<i>las diez menos veinte</i> = 9:40, not 10:20).' },
+    { h: 'Telling the time', html: '<i>Es la una</i> (it\'s one o\'clock) is the one exception, because it is singular; every other hour is plural: <i>Son las dos</i> (it\'s two o\'clock). Quarters and halves use <i>y</i> going up (<i>y cuarto, y media</i>) and <i>menos</i> going down toward the next hour (<i>las diez menos veinte</i> = 9:40, not 10:20).' },
     { h: 'Days of the week', html: '<i>El</i> + day names a specific occurrence with no extra preposition: <i>El jueves voy al teatro</i> — Spanish needs no word for "on" the way English does.' },
-    { h: 'Parts of the day', html: '<i>Por la mañana/tarde/noche</i> is the peninsular pattern; Spanish America commonly says <i>en la mañana/tarde/noche</i> instead — both are correct, just regionally split.' }
+    { h: 'Parts of the day', html: '<i>Por la mañana/tarde/noche</i> (in the morning/afternoon/evening) is the peninsular pattern; Spanish America commonly says <i>en la mañana/tarde/noche</i> instead — both are correct, just regionally split.' }
   ],
   exponents: [
     { es: '—¿Qué hora es? —Son las nueve y cuarto.', en: "—What time is it? —It's a quarter past nine.", register: 'neutral' },
@@ -6353,11 +6353,11 @@ window.STRAND_LESSONS = [
   id: 'nt-frecuencia-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:179', 'nociones_generales:A1:180', 'nociones_generales:A1:181', 'nociones_generales:A1:182'],
   title: 'Frecuencia: siempre, a veces, nunca',
-  summary: 'Siempre and nunca sit at opposite ends of a scale that normalmente and a veces fill in between — and nunca needs a "no" of its own only when it lands AFTER the verb, not before.',
+  summary: 'Once you can say when something happens, the next question is how often — and that runs on four words.',
   sections: [
     { h: 'The scale', html: '<i>Siempre</i> (always) → <i>normalmente</i> (usually) → <i>a veces</i> (sometimes) → <i>nunca</i> (never) — a descending order of how often something happens.' },
-    { h: 'Nunca and double negation', html: 'Placed BEFORE the verb, <i>nunca</i> needs nothing else: <i>Nunca como pescado</i>. Placed AFTER the verb, Spanish adds <i>no</i> before it — this is not a contradiction, it is the normal Spanish double negative: <i>No como nunca pescado</i>.' },
-    { h: 'Position', html: 'These adverbs usually sit right before the verb they describe: <i>Siempre desayuno cereales</i>, <i>A veces se levanta tarde</i>.' }
+    { h: 'Nunca and double negation', html: 'Placed BEFORE the verb, <i>nunca</i> needs nothing else: <i>Nunca como pescado</i> — I never eat fish. Placed AFTER the verb, Spanish adds <i>no</i> before it — this is not a contradiction, it is the normal Spanish double negative: <i>No como nunca pescado</i>.' },
+    { h: 'Position', html: 'These adverbs usually sit right before the verb they describe: <i>Siempre desayuno cereales</i> (I always have cereal for breakfast), <i>A veces se levanta tarde</i> (sometimes he gets up late).' }
   ],
   exponents: [
     { es: 'Siempre desayuno cereales.', en: 'I always have cereal for breakfast.', register: 'neutral' },
@@ -6392,7 +6392,7 @@ window.STRAND_LESSONS = [
   id: 'nt-visibilidad-vision-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:221', 'nociones_generales:A1:222', 'nociones_generales:A1:223'],
   title: 'Visibilidad: claro, oscuro y los colores',
-  summary: 'Claro and oscuro describe both LIGHT — a bright or dim room — and COLOUR SHADE — light blue versus dark blue — with the exact same pair of words doing two different jobs.',
+  summary: 'The other everyday verdict you pass on a thing is what it looks like — how light or dark it is, and what colour.',
   sections: [
     { h: 'Claro and oscuro: two jobs, one pair of words', html: '<i>Una habitación clara</i> is a bright room; <i>el pelo oscuro</i> is dark hair — same words, lighting in one case, shade in the other. Combined with a colour they mean "light/dark [colour]": <i>azul claro</i>, <i>azul oscuro</i>.' },
     { h: 'The basic colours', html: '<i>rojo, amarillo, azul, verde, naranja, marrón, blanco, negro, gris</i> — most agree like regular adjectives (<i>roja, rojos, rojas</i>).' },
@@ -6469,7 +6469,7 @@ window.STRAND_LESSONS = [
   id: 'nt-accesibilidad-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:244', 'nociones_generales:A1:245', 'nociones_generales:A1:246'],
   title: 'Accesibilidad: entrada, salida, abrir, cerrar',
-  summary: 'Entrada and salida name the fixed points where you get in or out; abrir/cerrar name the action of changing access; and estar abierto/cerrado — with estar, not ser — names the resulting, changeable state.',
+  summary: 'Once you can say what is there, the next thing you need is whether you can get in.',
   sections: [
     { h: 'The nouns: fixed points', html: '<i>Entrada</i> (entrance) and <i>salida</i> (exit) name the physical points themselves: <i>La salida está al fondo</i>.' },
     { h: 'The verbs: the action', html: '<i>Abrir/cerrar</i> describe the act of changing access: <i>La tienda abre a las nueve.</i>' },
@@ -6548,8 +6548,8 @@ window.STRAND_LESSONS = [
   title: 'Valor, precio: costar, barato, caro',
   summary: 'Costar and pagar split the money question in two — costar is what the ITEM does (it costs a figure), pagar is what the PERSON does (they hand over money) — and only costar answers "how much is it?"',
   sections: [
-    { h: 'Costar: the item states its price', html: '<i>¿Cuánto cuesta?</i> is the standard way to ask a price; the item is the grammatical subject of <i>costar</i>: <i>Este libro cuesta quince euros.</i>' },
-    { h: 'Barato and caro: judging the figure', html: 'These adjectives judge whether the price is high or low: <i>Es muy caro</i>, <i>Es bastante barato</i>.' },
+    { h: 'Costar: the item states its price', html: '<i>¿Cuánto cuesta?</i> — How much does it cost? The thing being bought is what does the costing, so the verb follows it: <i>Este libro cuesta quince euros</i> (this book costs fifteen euros), <i>Estos libros cuestan quince euros</i> (these books cost fifteen euros).' },
+    { h: 'Barato and caro: judging the figure', html: 'These adjectives judge whether the price is high or low: <i>Es muy caro</i> (it\'s very expensive), <i>Es bastante barato</i> (it\'s quite cheap).' },
     { h: 'Pagar: what the person does', html: '<i>Pagar</i> is the buyer\'s action, not the price itself: <i>Pago veinte euros</i> means "I hand over twenty euros," and cannot be used to ask a price.' }
   ],
   exponents: [
@@ -6574,7 +6574,7 @@ window.STRAND_LESSONS = [
   probes: [
     { id: 'p:valprec:preguntar', kind: 'mcq', q: 'How do you ask what something costs?',
       options: ['¿Cuánto pagas?', '¿Cuánto cuesta?', '¿Cuánto es caro?'], answer: 1 },
-    { id: 'p:valprec:sujeto', kind: 'mcq', q: '"Este libro ___ quince euros." (the book is the subject)',
+    { id: 'p:valprec:sujeto', kind: 'mcq', q: '"Este libro ___ quince euros." (costar — the book does the costing)',
       options: ['paga', 'cuesta', 'compra'], answer: 1 },
     { id: 'p:valprec:cloze', kind: 'cloze', text: 'Es muy ___ para lo que es. (expensive)', accept: ['caro'] },
     { id: 'p:valprec:recall', kind: 'recall', front: 'Which verb names the ITEM\'s price, and which names the BUYER\'s action?', back: 'costar (item) vs pagar (buyer)' }
@@ -9344,7 +9344,7 @@ window.STRAND_LESSONS = [
   ],
   pitfalls: [
     'Do not agree with a negative statement using <i>también</i> — <i>*yo no también</i> is wrong; the word you want is <i>tampoco</i>.',
-    '<i>Tampoco</i> already carries the negation — do not add a second <i>no</i> before the verb when tampoco follows it: <i>Yo tampoco</i>, or <i>No fumo tampoco</i>.'
+    '<i>Tampoco</i> already carries the negation — do not add a second <i>no</i> before the verb when tampoco follows it: <i>Yo tampoco</i> (me neither), or <i>No fumo tampoco</i> (I don\'t smoke either).'
   ],
   examples: [
     { es: '—¿Te gusta el café? —Sí, mucho.', en: '"Do you like coffee?" "Yes, a lot."' },
@@ -10123,7 +10123,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-verbos-predicativos-tipos-a2', canDo: 'say what I like, love and hurt with me gusta, me encanta, me duele', deeper: ['gr-nucleo-verbal-a1'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-verbos-predicativos-tipos-a2', canDo: 'say what you like, what you love and what hurts — me gusta, me encanta, me duele', deeper: ['gr-nucleo-verbal-a1'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:435', 'gramatica:A2:436', 'gramatica:A2:437'],
   title: 'Verbos que funcionan al revés: encantar, doler',
   summary: 'Me encanta el chocolate does not mean "I" is doing anything — the chocolate is the grammatical subject and must agree with the verb, while "I" sits in the indirect object, the mirror image of how English builds "I love chocolate."',
@@ -10149,8 +10149,8 @@ window.STRAND_LESSONS = [
   probes: [
     { id: 'p:verbpredtipos:agree', kind: 'mcq', q: '"Me ___ los pies." (doler — plural)',
       options: ['duele', 'duelen', 'dueles'], answer: 1 },
-    { id: 'p:verbpredtipos:estructura', kind: 'mcq', q: 'In "Me encanta el chocolate", which word is the subject of encanta?',
-      options: ['me', 'el chocolate', 'neither — there is none'], answer: 1 },
+    { id: 'p:verbpredtipos:estructura', kind: 'mcq', q: 'In "Me encanta el chocolate", which word decides whether you say encanta or encantan?',
+      options: ['me', 'el chocolate', 'neither — it never changes'], answer: 1 },
     { id: 'p:verbpredtipos:cloze', kind: 'cloze', text: 'A mi hermano le ___ (encantar) los perros.', accept: ['encantan'] },
     { id: 'p:verbpredtipos:recall', kind: 'recall', front: 'With encantar/doler, does the verb agree with the person or the thing/cause?', back: 'the thing/cause — it is the grammatical subject' }
   ]
@@ -13136,7 +13136,7 @@ window.STRAND_LESSONS = [
  * Spanish coursebook does, and test recognition rather than production.
  * ------------------------------------------------------------------------ */
 {
-  id: 'dc-entonacion-a1', canDo: 'turn a statement into a question with my voice alone', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
+  id: 'dc-entonacion-a1', canDo: 'turn a statement into a question with your voice alone', strand: 'discourse', cefr: 'A1', level: 1, theme: null,
   pcic: ['tacticas_pragmaticas:A1:77', 'tacticas_pragmaticas:A1:78', 'tacticas_pragmaticas:A1:79',
          'tacticas_pragmaticas:A1:80', 'tacticas_pragmaticas:A1:81'],
   title: 'La entonación: la voz también pregunta',
@@ -15682,9 +15682,9 @@ window.STRAND_LESSONS = [
       '<li><b>cuánto</b> — <i>how much</i>, or <i>how many</i> in the plural. <i>¿Cuánto cuesta?</i> "How much does it cost?"</li>' +
       '<li><b>cómo</b> — <i>how</i>. <i>¿Cómo te llamas?</i> literally "How do you call yourself?" — what Spanish uses for "What is your name?"</li></ul>' +
       'The last one is the only one that does not line up: asking someone\'s name uses <i>cómo</i>, not <i>qué</i>.' },
-    { h: 'Qué vs quién', html: '<b>Qué</b> never changes its ending, and asks about things or actions: <i>¿Qué es esto?</i>, <i>¿Qué estudias?</i>. <b>Quién</b> asks about people and has just one other form, the plural <i>quiénes</i> — never a feminine one: <i>¿Quién es esa chica?</i>, <i>¿Quiénes son ellos?</i>' },
-    { h: 'Cuánto agrees with what follows', html: 'Unlike qué and quién, <b>cuánto</b> agrees in gender and number with the noun it introduces: <i>cuánto dinero</i>, <i>cuánta gente</i>, <i>cuántos años</i>, <i>cuántas hermanas</i>. Get the noun\'s gender first, then match the interrogative to it.' },
-    { h: 'Dónde and cómo: invariable adverbs', html: 'These never change form. <b>Dónde</b> asks about place (<i>¿Dónde vives?</i>), <b>cómo</b> about manner (<i>¿Cómo te llamas?</i>). They open direct questions and survive unaccented-look words with an accent inside indirect ones: <i>No sé dónde vive.</i>' }
+    { h: 'Qué vs quién', html: '<b>Qué</b> never changes its ending, and asks about things or actions: <i>¿Qué es esto?</i>, <i>¿Qué estudias?</i>. <b>Quién</b> asks about people and has just one other form, the plural <i>quiénes</i> — never a feminine one: <i>¿Quién es esa chica?</i> (Who is that girl?), <i>¿Quiénes son ellos?</i> (Who are they?)' },
+    { h: 'Cuánto agrees with what follows', html: 'Unlike qué and quién, <b>cuánto</b> agrees in gender and number with the noun it introduces: <i>cuánto dinero</i> (how much money), <i>cuánta gente</i> (how many people), <i>cuántos años</i> (how many years), <i>cuántas hermanas</i> (how many sisters). Get the noun\'s gender first, then match the interrogative to it.' },
+    { h: 'Dónde and cómo: invariable adverbs', html: 'These never change form. <b>Dónde</b> asks about place (<i>¿Dónde vives?</i>), <b>cómo</b> about manner (<i>¿Cómo te llamas?</i>). They open direct questions, and they keep their accent inside a statement too: <i>No sé dónde vive.</i> — I don\'t know where he lives.' }
   ],
   contrasts: [
     { es: '¿Qué es esto?', en: 'What is this?', note: 'qué — thing, invariable' },
