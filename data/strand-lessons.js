@@ -3857,38 +3857,47 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-preguntar-gustos-a2', canDo: 'ask what someone likes and answer when they ask me', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-preguntar-gustos-a2', canDo: 'ask what someone likes, and say what you like and what you don\'t', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:189', 'funciones:A2:190', 'funciones:A2:191'],
   title: 'Preguntar por gustos e intereses',
-  summary: 'Asking about likes uses gustar-family verbs backwards from English: the thing liked is the grammatical subject, and the person is marked with te/le/os — get the agreement wrong and the sentence breaks, not just sounds odd.',
+  moment: [{ es: '—¿Qué te gusta hacer en tu tiempo libre?', en: '—What do you like doing in your free time?' },
+           { es: '—Me gusta leer. Y me encanta el cine.', en: '—I like reading. And I love the cinema.' }],
+  summary: 'Two short sentences carry this lesson: <i>¿Te gusta…?</i> to ask, <i>Me gusta…</i> to answer. Spanish builds them the other way round from English — the thing liked is the subject of the verb — so the verb follows the thing and not the person: <i>me gusta el cine</i>, <i>me gustan los animales</i>.',
   sections: [
-    { h: 'The thing liked is the subject', html: 'In <i>¿Te gusta el cine?</i>, <i>el cine</i> is grammatically the subject — that is why the verb changes to plural when several things are liked: <i>¿Te gustan los animales?</i>' },
-    { h: 'Le is ambiguous on purpose', html: '<i>Le interesa</i> could mean "it interests him", "her" or "you (usted)" — context or an added <i>a él/a ella/a usted</i> resolves it.' }
+    { h: 'Ask it, answer it', html: '<i>¿Te gusta el cine?</i> — Do you like films/cinema?<br><i>Me gusta el cine.</i> — I like films/cinema.<br><i>¿Te gustan los animales?</i> — Do you like animals?<br><i>Me gustan los animales.</i> — I like animals.<br>To say no, <i>no</i> goes in front of the whole thing: <i>No me gusta el fútbol.</i> And to ask an open question instead of a yes/no one, start with <i>qué</i>: <i>¿Qué te gusta hacer en tu tiempo libre?</i> — the question you will actually be asked when someone is getting to know you.' },
+    { h: 'Gusta or gustan', html: 'The verb agrees with the thing being liked, because that is what the sentence is about: <i>Me gusta el libro</i> (one book), <i>Me gustan los libros</i> (several). The person — <i>me</i>, <i>te</i>, <i>le</i> — never changes the verb. An activity counts as one thing, so an infinitive keeps the singular: <i>Me gusta leer</i>, and even <i>Me gusta leer y escribir</i>.' },
+    { h: 'Who likes it: me, te, le, nos, os, les', html: 'One short word in front of the verb says whose taste it is — the same set you met with <i>encantar</i> and <i>doler</i>:<br><i>me</i> (I) · <i>te</i> (you, tú) · <i>le</i> (he, she, or you with usted)<br><i>nos</i> (we) · <i>os</i> (you, vosotros) · <i>les</i> (they, or you with ustedes)<br>So <i>Nos gusta el cine</i> is "we like cinema", and <i>¿Os gusta el cine?</i> asks a group of friends. <i>Le</i> can mean "to him", "to her" or "to you" when you are using <i>usted</i>; context usually makes it clear, and when it does not you can add <i>a él</i>, <i>a ella</i> or <i>a usted</i>: <i>¿A usted le gusta el cine?</i> When you name the person, the name goes first and <i>le</i> still stays: <i>A Ana le gusta el cine.</i>' }
   ],
   exponents: [
-    { es: '¿Te gusta jugar al tenis?', en: 'Do you like playing tennis?', register: 'coloquial', note: 'tú, casual' },
-    { es: '¿Le interesa la política?', en: 'Is he/she interested in politics? / Are you (usted) interested in politics?', register: 'formal', note: 'le — usted or a third person' },
-    { es: '¿Qué tipo de música te gusta?', en: 'What type of music do you like?', register: 'coloquial' }
+    { es: '¿Te gusta el cine?', en: 'Do you like films/cinema?', register: 'neutral', note: 'the basic question — te is "you" (tú)' },
+    { es: '¿Te gustan los animales?', en: 'Do you like animals?', register: 'neutral', note: 'plural thing, so plural verb' },
+    { es: '¿Te gusta jugar al tenis?', en: 'Do you like playing tennis?', register: 'coloquial', note: 'asking about an activity: gustar + infinitive' },
+    { es: '¿Qué te gusta hacer en tu tiempo libre?', en: 'What do you like doing in your free time?', register: 'coloquial', note: 'open question — qué, not a yes/no' },
+    { es: '¿Qué tipo de música te gusta?', en: 'What type of music do you like?', register: 'coloquial', note: 'asks for a kind of thing, not one song' },
+    { es: '¿Le gusta el cine?', en: 'Do you like films/cinema? (usted)', register: 'formal', note: 'the same question to someone you address as usted — only the pronoun changes' },
+    { es: '¿Le interesa la política?', en: 'Are you interested in politics? (usted)', register: 'formal', note: 'le is also "him/her" — add a usted or a él if it is not clear which' }
   ],
   pitfalls: [
-    'Match the verb to the THING liked, not the person: <i>Me gusta el libro</i> (singular) but <i>Me gustan los libros</i> (plural) — the person (<i>me</i>) never changes the verb form.'
+    'Remember that the verb agrees with the thing being liked: <i>Me gusta el libro</i> but <i>Me gustan los libros</i>. The pronoun (<i>me, te, le…</i>) never changes the verb.',
+    'The person who likes something is <i>me/te/le</i>, not <i>yo/tú</i>: <i>Me gusta el cine</i>, not <i>*Yo gusto el cine</i>.'
   ],
   examples: [
-    { es: '¿Qué te gusta hacer en tu tiempo libre?', en: 'What do you like doing in your free time?' },
+    { es: '—¿Te gusta el fútbol? —No, no me gusta nada.', en: '—Do you like football? —No, I don\'t like it at all.' },
+    { es: 'A mi hermana le gustan los perros.', en: 'My sister likes dogs.' },
     { es: '¿Le interesan los documentales?', en: 'Is he/she interested in documentaries?' },
     { es: '¿Qué tipo de cine os interesa?', en: 'What type of film are you (all) interested in?' }
   ],
   probes: [
     { id: 'p:preguntargustos:concordancia', kind: 'mcq',
-      q: 'The thing liked is plural: "¿Te ___ los animales?"',
+      q: 'The thing liked is plural — "¿Te ___ los animales?"',
       options: ['gusta', 'gustan', 'gustas'], answer: 1 },
     { id: 'p:preguntargustos:sujeto', kind: 'mcq',
-      q: 'In "¿Te gusta el cine?", which word is the subject of the verb?',
-      options: ['Te', 'el cine', 'gusta'], answer: 1 },
+      q: 'In "¿Te gusta el cine?", which word decides whether you say gusta or gustan?',
+      options: ['te', 'el cine', 'gusta'], answer: 1 },
     { id: 'p:preguntargustos:cloze', kind: 'cloze',
-      text: '¿___ interesa la política? (a usted)', accept: ['Le', 'le'] },
+      text: '¿___ gusta el cine, señor Ruiz? (usted)', accept: ['Le', 'le'] },
     { id: 'p:preguntargustos:recall', kind: 'recall',
-      front: 'What determines whether gustar is singular or plural?', back: 'the thing liked (the grammatical subject), not the person' }
+      front: 'My brother likes football: "A mi hermano ___ gusta el fútbol."', back: 'le' }
   ]
 },
 
@@ -3897,19 +3906,22 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:A2:195', 'funciones:A2:196', 'funciones:A2:197', 'funciones:A2:198',
          'funciones:A2:199', 'funciones:A2:200', 'funciones:A2:201', 'funciones:A2:202'],
   title: 'Expresar gustos e intereses',
-  summary: 'Gustar, encantar and interesar sit on a scale of intensity, not just synonyms for "like" — encantar commits much more than gustar, and choosing the wrong one either undersells or overclaims how you feel.',
+  summary: 'Answering works exactly like asking, with <i>me</i> where the question had <i>te</i>. What you choose on top of that is the verb — and the three you need are <i>gustar</i>, <i>encantar</i> and <i>interesar</i>.',
   sections: [
-    { h: 'A scale, not synonyms', html: '<i>Gustar</i> is the everyday default; <i>encantar</i> commits much more (closer to "love" than "like"); <i>interesar</i> is about curiosity, which is not the same as enjoyment.' },
-    { h: 'Feeling vs description', html: '<i>Me interesa el cine</i> describes YOUR reaction; <i>El cine es interesante</i> describes the THING — both are true statements but make a different claim.' }
+    { h: 'Gusta, encanta, interesa', html: '<i>Me gusta el cine.</i> — I like films/cinema.<br><i>Me encanta el cine.</i> — I love films/cinema.<br><i>Me interesa el cine.</i> — I\'m interested in cinema.<br>All three work the same way: the verb follows the thing (<i>me encantan los coches</i>, <i>me interesan los documentales</i>) and <i>no</i> goes in front (<i>No me interesan las noticias</i>). <i>Encantar</i> is real enthusiasm, so keep it for what you genuinely love; <i>interesar</i> is curiosity, which is not the same as enjoying something. For how much, add <i>mucho</i> or <i>nada</i>: <i>Me gusta mucho</i>, <i>No me gusta nada</i>.' },
+    { h: 'Your reaction, or the thing itself', html: '<i>Me interesa el cine</i> says something about you; <i>El cine es interesante</i> says something about cinema. Both are worth having: <i>Aprender español es interesante</i> describes the activity, <i>Me interesa aprender español</i> says you want to do it. On its own, as a reaction to what someone has just told you, it is <i>¡Qué interesante!</i>' }
   ],
   exponents: [
-    { es: 'A nosotros no nos gusta nada la exposición.', en: "We don't like the exhibition at all.", register: 'neutral', note: 'gustar — the baseline, here negated strongly' },
-    { es: 'Me encantan los coches.', en: 'I love cars.', register: 'coloquial', note: 'encantar — much stronger than gustar, enthusiastic' },
+    { es: 'Me gusta el cine.', en: 'I like films/cinema.', register: 'neutral', note: 'the plain answer to ¿Te gusta el cine?' },
+    { es: 'No me gusta nada la ópera.', en: "I don't like opera at all.", register: 'neutral', note: 'no in front, nada after the verb — the strong no' },
+    { es: 'Me encantan los coches.', en: 'I love cars.', register: 'coloquial', note: 'encantar — enthusiastic, closer to "love" than "like"' },
     { es: 'Me interesa mucho conocer otras culturas.', en: "I'm very interested in learning about other cultures.", register: 'neutral', note: 'interesar — curiosity, not necessarily pleasure' },
-    { es: 'Aprender español es interesante.', en: 'Learning Spanish is interesting.', register: 'neutral', note: 'ser interesante — describing the thing itself, not your feeling' }
+    { es: 'Aprender español es interesante.', en: 'Learning Spanish is interesting.', register: 'neutral', note: 'ser interesante — about the thing itself, not about you' },
+    { es: 'A nosotros no nos gusta nada la exposición.', en: "We don't like the exhibition at all.", register: 'neutral', note: 'a nosotros repeats what nos already says — normal in Spanish, and it adds emphasis' }
   ],
   pitfalls: [
-    'Do not reach for <i>encantar</i> as a plain synonym of <i>gustar</i> — using it for something merely fine oversells your enthusiasm.'
+    '<i>Encantar</i> is stronger than <i>gustar</i> — for something that is merely fine, <i>me gusta</i> is the honest choice.',
+    '<i>Me interesa</i> says what you feel, not what the thing is like. The thing itself is <i>interesante</i>: <i>El cine es interesante</i>.'
   ],
   examples: [
     { es: 'Nos encanta comer fuera los fines de semana.', en: 'We love eating out at weekends.' },
@@ -3918,15 +3930,15 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:expresargustos:escala', kind: 'mcq',
-      q: 'Which one is the most enthusiastic?',
+      q: 'Which one says you love chocolate, not just that you like it?',
       options: ['Me gusta el chocolate.', 'Me encanta el chocolate.', 'Me interesa el chocolate.'], answer: 1 },
     { id: 'p:expresargustos:sentirdescribir', kind: 'mcq',
-      q: 'Which one describes the THING itself, not your reaction to it?',
+      q: 'Which one describes cinema itself rather than how you feel about it?',
       options: ['Me interesa el cine.', 'El cine es interesante.', 'Me gusta el cine.'], answer: 1 },
     { id: 'p:expresargustos:cloze', kind: 'cloze',
-      text: 'Nos ___ los coches.', accept: ['encantan'] },
+      text: 'Nos ___ los coches. (encantar — we love them)', accept: ['encantan'] },
     { id: 'p:expresargustos:recall', kind: 'recall',
-      front: 'Verb that expresses curiosity rather than enjoyment', back: 'interesar' }
+      front: 'I\'m interested in politics: "Me ___ la política."', back: 'interesa' }
   ]
 },
 

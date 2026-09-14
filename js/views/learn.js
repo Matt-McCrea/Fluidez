@@ -54,7 +54,7 @@ window.StageLearn = (function () {
   function fillOpening(wrap, l) {
     if (l.canDo) {
       wrap.appendChild(UI.el('p', 'lesson-cando',
-        '<span class="cando-label">After this you can</span>' + l.canDo));
+        '<span class="cando-label">After this you can</span> ' + l.canDo));
     }
     if (l.moment && l.moment.length) {
       var d = UI.el('div', 'lesson-moment');
@@ -71,7 +71,7 @@ window.StageLearn = (function () {
   function fillClosing(wrap, l) {
     if (l.canDo) {
       wrap.appendChild(UI.el('p', 'lesson-nowyoucan',
-        '<span class="cando-label">Now you can</span>' + l.canDo));
+        '<span class="cando-label">Now you can</span> ' + l.canDo));
     }
     var deeper = (l.deeper || []).map(lessonTitle).filter(Boolean);
     if (deeper.length) {
