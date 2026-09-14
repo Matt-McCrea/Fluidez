@@ -16,8 +16,8 @@ window.PASSAGES = [
  * ------------------------------------------------------------------------ */
 {
   id: 'u1-cafeteria', title: 'En la cafetería de la facultad', level: 1, theme: 'identidad',
-  text: 'Son las nueve de la mañana. Hay dos estudiantes en la cafetería. —Hola, buenos días. ¿Está libre? —Sí, está libre. —Gracias. Me llamo Tom. —Yo soy Ana. Encantada. —Encantado. ¿Eres de Madrid, Ana? —No, soy de Valencia, pero vivo aquí. ¿Y tú? —Soy de Irlanda. Estoy aquí por la universidad. —¡Qué bien! ¿Y hablas español muy bien! —Bueno, un poco. Todavía no hablo rápido.',
-  gloss: [ { es: '¿Está libre?', en: 'Is this seat free?' }, { es: 'siéntate', en: 'sit down' },
+  text: 'Son las nueve de la mañana. Hay dos estudiantes en la cafetería. —Hola, buenos días. ¿Está libre? —Sí, está libre. —Gracias. Me llamo Tom. —Yo soy Ana. Encantada. —Encantado. ¿Eres de Madrid, Ana? —No, soy de Valencia, pero vivo aquí. ¿Y tú? —Soy de Irlanda. Estoy aquí por la universidad. —¡Qué bien! ¡Y hablas español muy bien! —Bueno, un poco. Todavía no hablo rápido.',
+  gloss: [ { es: '¿Está libre?', en: 'Is this seat free?' }, { es: 'Encantada.', en: 'Pleased to meet you. (said by a woman)' },
            { es: 'pero', en: 'but' }, { es: 'todavía no', en: 'not yet' }, { es: 'un poco', en: 'a little' } ],
   questions: [
     { type: 'mcq', q: '¿De dónde es Ana?',
@@ -644,7 +644,7 @@ window.PASSAGES = [
   text: 'En mi familia, desayunamos todos juntos antes de partir hacia el trabajo o la escuela. Por la noche, cenamos siempre a la misma hora para hablar de nuestro día. A veces ocurre algo curioso durante la cena y todos nos reímos mucho. Creo que no existe una rutina perfecta, pero la nuestra funciona bien para todos. Cuando alguien sale a viajar, siempre desayunamos un poco antes para despedirnos con calma.',
   gloss: [
     { es: 'hacia', en: 'towards' },
-    { es: 'cómo nos fue el día', en: 'how our day went' },
+    { es: 'nos reímos', en: 'we laugh' },
     { es: 'con calma', en: 'calmly' },
     { es: 'funciona bien', en: 'works well' }
   ],
@@ -1459,7 +1459,7 @@ window.PASSAGES = [
   id: 'preparando-maleta-vocab-clothing', title: 'Preparando la maleta', level: 1, theme: 'viajes',
   text: 'Para mi próximo trabajo en otra ciudad, meto dos camisas y unos pantalones oscuros en la maleta. También llevo un vestido elegante por si hay una cena formal. No olvido los zapatos cómodos para caminar por la ciudad. Como hace frío, añado un abrigo grueso encima de todo. Al final, cierro la maleta y compruebo que llevo toda la ropa necesaria para la semana.',
   gloss: [
-    { es: 'de negocios', en: 'business (trip)' },
+    { es: 'un abrigo grueso', en: 'a thick coat' },
     { es: 'por si hay', en: 'in case there is' },
     { es: 'encima de todo', en: 'on top of everything' },
     { es: 'compruebo', en: 'I check' }

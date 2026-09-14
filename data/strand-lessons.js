@@ -2338,9 +2338,9 @@ window.STRAND_LESSONS = [
   id: 'dlg-presentarse', strand: 'dialogue', cefr: 'A1', level: 1, theme: 'identidad',
   title: 'Dos personas se conocen',
   canDo: 'follow a first conversation between two people, and know what each line is doing',
-  summary: 'Before any grammar: a whole first meeting, eleven lines long. You are not expected to produce any of it yet — read it, hear the shape, and notice that almost every line is four words or fewer. Everything this unit teaches is somewhere in here.',
+  summary: 'Before any grammar: a whole first meeting, start to finish. You are not expected to produce any of it yet — read it, hear the shape, and notice that almost every line is four words or fewer. Everything this unit teaches is somewhere in here.',
   sections: [
-    { h: 'Read it first', html: 'Do not study this. Read it twice and move on. The point is to see what a real first conversation costs in Spanish — which is very little. You will come back to every line of it over the next nine days.' },
+    { h: 'Read it first', html: 'Do not study this. Read it twice and move on. The point is to see what a real first conversation costs in Spanish — which is very little. You will come back to every line of it over the rest of this unit.' },
     { h: 'What each speaker is doing', html: '<ul><li><i>Hola, buenos días</i> — opens the channel. Either word alone works.</li><li><i>¿Cómo te llamas?</i> — asks the name. Literally "what do you call yourself?"</li><li><i>Me llamo Ana</i> — gives it. Same verb, bounced back.</li><li><i>¿Y tú?</i> — two words that return any question. You will use this constantly.</li><li><i>¿De dónde eres?</i> — asks origin.</li><li><i>Encantado / encantada</i> — "pleased to meet you", and it changes ending depending on who is speaking.</li></ul>' },
     { h: 'The one thing to notice', html: 'Nobody says <i>yo</i>. Spanish puts the person into the verb ending — <i>soy</i> already means "I am" — so the pronoun only appears for contrast. <i>Me llamo Ana</i>, not <i>Yo me llamo Ana</i>.' }
   ],
@@ -2667,11 +2667,11 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:identificar:confirm', kind: 'mcq',
-      q: 'Alguien pregunta: "¿María Sánchez?" ¿Cómo confirmas que eres tú?',
+      q: 'Someone says your name — "¿María Sánchez?" How do you confirm it is you?',
       options: ['Yo.', 'Sí, soy yo.', 'Sí, es ella.'], answer: 1 },
     { id: 'p:identificar:deixis', kind: 'mcq',
-      q: '¿Qué necesitas para decir "Aquel diccionario, por favor"?',
-      options: ['Estar señalando algo', 'Estar escribiendo una carta', 'Estar hablando por teléfono'], answer: 0 },
+      q: 'What do you need in order to say "Aquel diccionario, por favor"?',
+      options: ['To be pointing at something', 'To be writing a letter', 'To be on the phone'], answer: 0 },
     { id: 'p:identificar:neutro', kind: 'cloze',
       text: 'Esto ___ Venezuela.', accept: ['es'] },
     { id: 'p:identificar:recall', kind: 'recall',
@@ -2704,10 +2704,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:actividad:register', kind: 'mcq',
-      q: '¿Cuál pregunta específicamente por el trabajo, no por el tiempo libre?',
-      options: ['¿Qué haces?', '¿A qué te dedicas?', 'Las dos igual'], answer: 1 },
+      q: 'Which one asks specifically about someone\'s JOB, not their free time?',
+      options: ['¿Qué haces?', '¿A qué te dedicas?', 'Both the same'], answer: 1 },
     { id: 'p:actividad:answer', kind: 'mcq',
-      q: '—¿A qué te dedicas? —___',
+      q: 'How do you answer "¿A qué te dedicas?"',
       options: ['Trabajo en un hospital.', 'Soy en un hospital.', 'Hago un hospital.'], answer: 0 },
     { id: 'p:actividad:cloze', kind: 'cloze',
       text: '¿___ es tu profesión?', accept: ['cuál', 'Cuál'] },
@@ -2749,10 +2749,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:pedirinfo:accent', kind: 'mcq',
-      q: '¿Cuál de estas es la pregunta correcta?',
+      q: 'Which one spells the question word correctly?',
       options: ['¿Donde vives?', '¿Dónde vives?', '¿Dondé vives?'], answer: 1 },
     { id: 'p:pedirinfo:tener', kind: 'mcq',
-      q: '—¿Cuántos años tienes? —___',
+      q: 'How do you answer "¿Cuántos años tienes?"',
       options: ['Soy veinte años.', 'Tengo veinte años.', 'Es veinte años.'], answer: 1 },
     { id: 'p:pedirinfo:cloze', kind: 'cloze',
       text: '¿___ hora es?', accept: ['qué', 'Qué'] },
@@ -2788,10 +2788,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:corregir:afirmativa', kind: 'mcq',
-      q: '—Vives en Madrid. (falso, vives en Sevilla) ¿Cómo corriges?',
+      q: 'Someone says "Vives en Madrid." You actually live in Sevilla. How do you correct them?',
       options: ['Sí, vivo en Madrid.', 'No, vivo en Sevilla.', 'No.'], answer: 1 },
     { id: 'p:corregir:negativa', kind: 'mcq',
-      q: '—¿No tienes coche? (falso, sí tienes) ¿Cómo corriges?',
+      q: 'Someone asks "¿No tienes coche?" — but you do have one. How do you correct them?',
       options: ['No, no tengo.', 'Sí, tengo.', 'No sé.'], answer: 1 },
     { id: 'p:corregir:cloze', kind: 'cloze',
       text: '—Katrin no es austriaca. —___, es austriaca.', accept: ['Sí', 'sí'] },
@@ -2864,10 +2864,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:acuerdoa1:tambien', kind: 'mcq',
-      q: '—Me gusta el café. — ¿Cómo estás de acuerdo?',
+      q: 'Someone says "Me gusta el café." How do you say you feel the same?',
       options: ['A mí también.', 'A mí tampoco.', 'Yo no.'], answer: 0 },
     { id: 'p:acuerdoa1:tampoco', kind: 'mcq',
-      q: '—No me gusta el frío. — ¿Cómo estás de acuerdo?',
+      q: 'Someone says "No me gusta el frío." How do you say you feel the same?',
       options: ['A mí también.', 'A mí tampoco.', 'Yo sí.'], answer: 1 },
     { id: 'p:acuerdoa1:cloze', kind: 'cloze',
       text: '—Este parque es muy bonito. —Sí, muy ___.', accept: ['bonito'] },
@@ -2902,10 +2902,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:desacuerdo:negar', kind: 'mcq',
-      q: '—El francés es fácil. (tú crees que no) ¿Qué dices?',
+      q: 'Someone says "El francés es fácil." You disagree. What do you say?',
       options: ['Sí, es fácil.', 'No, no es fácil.', 'No sé.'], answer: 1 },
     { id: 'p:desacuerdo:afirmar', kind: 'mcq',
-      q: '—Esta ciudad no es interesante. (tú crees que sí) ¿Qué dices?',
+      q: 'Someone says "Esta ciudad no es interesante." You think it IS. What do you say?',
       options: ['No, no es interesante.', 'Sí, sí es interesante.', 'A mí tampoco.'], answer: 1 },
     { id: 'p:desacuerdo:cloze', kind: 'cloze',
       text: '—Ese vestido es barato. —No, es ___.', accept: ['caro'] },
@@ -2941,10 +2941,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:desconoc:saberconocer', kind: 'mcq',
-      q: '"No ___ a tu hermano." (nunca lo he visto)',
+      q: 'You have never met him: "No ___ a tu hermano."',
       options: ['sé', 'conozco', 'conoce'], answer: 1 },
     { id: 'p:desconoc:saberinf', kind: 'mcq',
-      q: '"No ___ hablar japonés."',
+      q: 'A skill you do not have: "No ___ hablar japonés."',
       options: ['conozco', 'sé', 'sabo'], answer: 1 },
     { id: 'p:desconoc:cloze', kind: 'cloze',
       text: 'No conozco ___ Sonia.', accept: ['a'] },
@@ -2979,10 +2979,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:dirigirse:formal', kind: 'mcq',
-      q: 'Entras en una oficina y no conoces a nadie. ¿Cómo te diriges al recepcionista?',
+      q: 'You walk into an office where you know nobody. How do you address the receptionist?',
       options: ['Hola, tío.', 'Buenos días.', '¿Qué tal?'], answer: 1 },
     { id: 'p:dirigirse:titulo', kind: 'mcq',
-      q: '¿Cuál es correcto?',
+      q: 'Which one is the right way to address a man formally?',
       options: ['Señor Antonio', 'Señor López', 'Señor Maite'], answer: 1 },
     { id: 'p:dirigirse:cloze', kind: 'cloze',
       text: '___ tardes, ¿está la señora López?', accept: ['Buenas', 'buenas'] },
@@ -3016,10 +3016,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:responderpres:genero', kind: 'mcq',
-      q: 'Eres una mujer. Te presentan a alguien. ¿Qué dices?',
+      q: 'A woman is introduced to someone. What does she say?',
       options: ['Encantado.', 'Encantada.', 'Encanto.'], answer: 1 },
     { id: 'p:responderpres:minimo', kind: 'mcq',
-      q: '¿Cuál es una respuesta correcta y suficiente a una presentación?',
+      q: 'Someone introduces you to a friend. Which one-word reply is already enough?',
       options: ['Hola.', 'Adiós.', 'Perdón.'], answer: 0 },
     { id: 'p:responderpres:cloze', kind: 'cloze',
       text: '—Te presento a Laura. —Hola, ___.', accept: ['encantada', 'encantado'] },
@@ -3054,10 +3054,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:despedirse:articulo', kind: 'mcq',
-      q: '¿Cuál es correcto?',
+      q: '"See you on Thursday" — which one?',
       options: ['Hasta jueves.', 'Hasta el jueves.', 'Hasta un jueves.'], answer: 1 },
     { id: 'p:despedirse:registro', kind: 'mcq',
-      q: '¿Cuál usarías con el director de la empresa, no con un amigo?',
+      q: 'Which goodbye suits the company director rather than a friend?',
       options: ['¡Chao!', 'Adiós, buenas tardes.', '¡Nos vemos!'], answer: 1 },
     { id: 'p:despedirse:cloze', kind: 'cloze',
       text: 'Hasta ___ jueves.', accept: ['el'] },
@@ -3094,10 +3094,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:establecercom:responder', kind: 'mcq',
-      q: 'Alguien te llama por tu nombre. ¿Cómo respondes para mostrar que escuchas?',
+      q: 'Someone calls you by name. What do you say to show you are listening?',
       options: ['Adiós.', '¿Sí?', 'Gracias.'], answer: 1 },
     { id: 'p:establecercom:atencion', kind: 'mcq',
-      q: 'Necesitas la atención de un desconocido en la calle, con educación.',
+      q: 'You need a stranger\'s attention in the street, politely. What do you say?',
       options: ['¡Eh, tú!', 'Perdón, por favor.', 'Hola, ¿qué tal?'], answer: 1 },
     { id: 'p:establecercom:cloze', kind: 'cloze',
       text: '—¡Ana! —¿___?', accept: ['Sí', 'sí'] },
@@ -3156,10 +3156,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:silencio:registro', kind: 'mcq',
-      q: 'Estás en una biblioteca con desconocidos. ¿Qué dices?',
+      q: 'You are in a library full of strangers. What do you say?',
       options: ['¡Shhh!', 'Silencio, por favor.', '¡Cállate!'], answer: 1 },
     { id: 'p:silencio:minimo', kind: 'mcq',
-      q: '¿Cuál de estas NO es realmente una palabra, sino un sonido?',
+      q: 'Which of these is not really a word, just a sound?',
       options: ['Silencio', '¡Shhh!', 'Por favor'], answer: 1 },
     { id: 'p:silencio:cloze', kind: 'cloze',
       text: 'Silencio, ___ favor.', accept: ['por'] },
@@ -3197,10 +3197,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:conectores:tampoco', kind: 'mcq',
-      q: '—No me gusta el café. — ¿Cómo continúas?',
+      q: 'Someone says "No me gusta el café." You feel the same. What do you add?',
       options: ['Yo también.', 'Yo tampoco.', 'Yo no.'], answer: 1 },
     { id: 'p:conectores:porque', kind: 'mcq',
-      q: '"Estudio español ___ quiero viajar." (razón)',
+      q: 'Giving the reason: "Estudio español ___ quiero viajar."',
       options: ['pero', 'y', 'porque'], answer: 2 },
     { id: 'p:conectores:cloze', kind: 'cloze',
       text: 'Hace frío hoy, ¿___?', accept: ['no'] },
@@ -3238,10 +3238,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:espacial:distancia', kind: 'mcq',
-      q: 'Tu amigo está lejos de los dos, señalando algo que ninguno tiene cerca. ¿Qué dice?',
+      q: 'You point at something far from you AND far from the person you are talking to. Which word?',
       options: ['Aquí', 'Ahí', 'Allí'], answer: 2 },
     { id: 'p:espacial:irvenir', kind: 'mcq',
-      q: 'Hablas por teléfono con tu amigo: "¿___ a mi casa esta noche?"',
+      q: 'On the phone, inviting a friend over: "¿___ a mi casa esta noche?"',
       options: ['Vas', 'Vienes', 'Vas a ir'], answer: 1 },
     { id: 'p:espacial:cloze', kind: 'cloze',
       text: '—¿Qué es ___? —Un rotulador.', accept: ['eso'] },
@@ -3278,10 +3278,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:rematizacion:orden', kind: 'mcq',
-      q: 'Te preguntan quién eres. ¿Cuál suena más natural?',
+      q: 'Someone asks who you are. Which sounds natural?',
       options: ['María soy.', 'Soy María.', 'Yo María soy.'], answer: 1 },
     { id: 'p:rematizacion:hay', kind: 'mcq',
-      q: 'Presentas algo por primera vez: "___ un libro en la mesa."',
+      q: 'Introducing something for the first time: "___ libro en la mesa."',
       options: ['El', 'Un', 'Hay un'], answer: 2 },
     { id: 'p:rematizacion:cloze', kind: 'cloze',
       text: 'Hay ___ farmacia cerca de aquí.', accept: ['una'] },
@@ -3318,10 +3318,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:negacion:directa', kind: 'mcq',
-      q: '—¿Eres griego? ¿Cómo respondes si no lo eres?',
+      q: 'Someone asks "¿Eres griego?" and you are not. How do you answer?',
       options: ['Sí.', 'No.', 'Es así.'], answer: 1 },
     { id: 'p:negacion:autocorregir', kind: 'mcq',
-      q: 'Te equivocas al hablar y te corriges. ¿Qué dices?',
+      q: 'You misspeak and want to correct yourself mid-sentence. What do you say?',
       options: ['No es así.', 'No, no.', 'Es que no.'], answer: 0 },
     { id: 'p:negacion:doblenegacion', kind: 'cloze',
       text: '—Madrid está en la costa. —No, no ___ en la costa.', accept: ['está'] },
@@ -3356,10 +3356,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:atenuacion2p:usted', kind: 'mcq',
-      q: 'Hablas con el director de la empresa, a quien no conoces. ¿Qué dices?',
+      q: 'You are talking to the company director, whom you have never met. What do you ask?',
       options: ['¿A qué te dedicas?', '¿A qué se dedica usted?', '¿Qué haces?'], answer: 1 },
     { id: 'p:atenuacion2p:creoque', kind: 'mcq',
-      q: '¿Cuál suena más suave al dar una opinión?',
+      q: 'Which one softens an opinion rather than stating it flat?',
       options: ['Es muy difícil.', 'Creo que es muy difícil.', 'Seguro que es difícil.'], answer: 1 },
     { id: 'p:atenuacion2p:cloze', kind: 'cloze',
       text: '___ que es muy difícil.', accept: ['Creo', 'creo'] },
@@ -3397,11 +3397,11 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:generosescritos:tipo', kind: 'mcq',
-      q: 'Ves un texto con solo horas y días en una tabla. ¿Qué tipo de texto es?',
+      q: 'You see a text that is just times and days laid out in a table. What is it?',
       options: ['Una nota', 'Un horario', 'Una carta'], answer: 1 },
     { id: 'p:generosescritos:buscar', kind: 'mcq',
-      q: 'Necesitas saber el precio del menú del día. ¿Qué haces?',
-      options: ['Leo todo el menú de arriba a abajo', 'Busco directamente el número con el símbolo €', 'Pregunto sin mirar el menú'], answer: 1 },
+      q: 'You only need the price of the menú del día. What do you do?',
+      options: ['Read the whole menu top to bottom', 'Go straight to the number with the € sign', 'Ask without looking at the menu'], answer: 1 },
     { id: 'p:generosescritos:cloze', kind: 'cloze',
       text: '___ FUMAR (en un cartel)', accept: ['PROHIBIDO', 'Prohibido'] },
     { id: 'p:generosescritos:recall', kind: 'recall',
@@ -3447,10 +3447,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:transaccional:orden', kind: 'mcq',
-      q: '¿Qué mueve normalmente va DESPUÉS de pagar?',
-      options: ['Saludar', 'Preguntar el precio', 'Dar las gracias y despedirse'], answer: 2 },
+      q: 'What normally comes AFTER paying?',
+      options: ['Greeting the assistant', 'Asking the price', 'Thanking them and saying goodbye'], answer: 2 },
     { id: 'p:transaccional:preferencia', kind: 'mcq',
-      q: 'El vendedor te ofrece dos opciones. ¿Cómo respondes?',
+      q: 'The assistant offers you two shirts. How do you choose one?',
       options: ['Prefiero la azul.', '¿Cuánto es?', 'Adiós.'], answer: 0 },
     { id: 'p:transaccional:cloze', kind: 'cloze',
       text: '—Gracias. —A usted. ___.', accept: ['Adiós', 'adiós'] },
@@ -3489,10 +3489,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:describirpersona:orden', kind: 'mcq',
-      q: '¿Cómo empieza normalmente una descripción de una persona?',
-      options: ['Con la ropa que lleva hoy', 'Con quién es y de dónde', 'Con su carácter'], answer: 1 },
+      q: 'How does a description of a person normally open?',
+      options: ['With what they are wearing today', 'With who they are and where they are from', 'With their personality'], answer: 1 },
     { id: 'p:describirpersona:verbo', kind: 'mcq',
-      q: '"Hoy ___ una camiseta roja." (ropa de hoy)',
+      q: 'Clothes someone has on today: "Hoy ___ una camiseta roja."',
       options: ['es', 'tiene', 'lleva'], answer: 2 },
     { id: 'p:describirpersona:cloze', kind: 'cloze',
       text: 'Carlinhos ___ un estudiante brasileño.', accept: ['es'] },
@@ -3530,11 +3530,11 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:describirobjeto:existencia', kind: 'mcq',
-      q: '¿Qué verbo usas para decir que algo existe en un lugar?',
+      q: 'Which verb says that something exists in a place?',
       options: ['Ser', 'Hay', 'Tener'], answer: 1 },
     { id: 'p:describirobjeto:orden', kind: 'mcq',
-      q: '¿Qué va primero al describir un objeto?',
-      options: ['Un dato concreto como el precio', 'Qué es y su cualidad principal', 'El nombre de la tienda'], answer: 1 },
+      q: 'What comes first when you describe an object?',
+      options: ['A concrete detail like the price', 'What it is, and its main quality', 'The name of the shop'], answer: 1 },
     { id: 'p:describirobjeto:cloze', kind: 'cloze',
       text: 'El tomate ___ rojo.', accept: ['es'] },
     { id: 'p:describirobjeto:recall', kind: 'recall',
@@ -3571,11 +3571,11 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:describirlugar:hay', kind: 'mcq',
-      q: '¿Qué palabra usas para listar lo que hay dentro de un lugar?',
+      q: 'Which word do you use to list what a place contains?',
       options: ['Es', 'Hay', 'Está'], answer: 1 },
     { id: 'p:describirlugar:orden', kind: 'mcq',
-      q: '¿Qué va primero al describir un lugar?',
-      options: ['La lista de lo que contiene', 'El lugar y su cualidad principal', 'El precio'], answer: 1 },
+      q: 'What comes first when you describe a place?',
+      options: ['The list of what is in it', 'The place itself, and its main quality', 'The price'], answer: 1 },
     { id: 'p:describirlugar:cloze', kind: 'cloze',
       text: '___ un baño, una cocina y un salón.', accept: ['Hay', 'hay'] },
     { id: 'p:describirlugar:recall', kind: 'recall',
@@ -4496,10 +4496,10 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:respondersaludo:reciprocidad', kind: 'mcq',
-      q: '—¿Qué tal? ¿Qué falta en esta respuesta: "Muy bien, gracias."?',
-      options: ['Nada, está completa', 'Devolver la pregunta: ¿y tú?', 'Un saludo'], answer: 1 },
+      q: 'Someone asks "¿Qué tal?" and you answer "Muy bien, gracias." What is missing?',
+      options: ['Nothing — it is complete', 'The question sent back: ¿y tú?', 'A greeting'], answer: 1 },
     { id: 'p:respondersaludo:registro', kind: 'mcq',
-      q: 'Te saluda alguien con "¿cómo está usted?" ¿Cómo respondes?',
+      q: 'Someone greets you with "¿Cómo está usted?" How do you answer?',
       options: ['Bien, ¿y tú?', 'Bien. Y usted, ¿cómo está?', 'Bien, ¿y vosotros?'], answer: 1 },
     { id: 'p:respondersaludo:cloze', kind: 'cloze',
       text: 'Muy bien, gracias, ¿y ___?', accept: ['tú', 'usted'] },
@@ -5363,9 +5363,9 @@ window.STRAND_LESSONS = [
     { es: 'Mi habitación tiene una ventana muy grande.', en: 'My room has a very big window.' }
   ],
   probes: [
-    { id: 'p:exist:new', kind: 'mcq', q: 'Es la primera vez que lo mencionas: "___ un banco en la plaza."',
+    { id: 'p:exist:new', kind: 'mcq', q: 'First time you mention it: "___ un banco en la plaza."',
       options: ['Hay', 'Está', 'Tiene'], answer: 0 },
-    { id: 'p:exist:known', kind: 'mcq', q: 'Ya hablabais del banco: "El banco ___ en la plaza."',
+    { id: 'p:exist:known', kind: 'mcq', q: 'You were already talking about the bank: "El banco ___ en la plaza."',
       options: ['hay', 'está', 'tiene'], answer: 1 },
     { id: 'p:exist:name', kind: 'cloze', text: 'Luisa no ___ aquí.', accept: ['está'] },
     { id: 'p:exist:recall', kind: 'recall', front: 'After hay, which article is impossible — el/la or un/una?', back: 'el/la (hay takes only indefinites)' }
@@ -5446,9 +5446,9 @@ window.STRAND_LESSONS = [
     { es: 'La señora García todavía no ha llegado.', en: 'Mrs García hasn\'t arrived yet.' }
   ],
   probes: [
-    { id: 'p:nprop:salvador', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:nprop:salvador', kind: 'mcq', q: 'The country\'s name carries its own article. Which one is right?',
       options: ['Vengo de Salvador.', 'Vengo de El Salvador.', 'Vengo del Salvador.'], answer: 1 },
-    { id: 'p:nprop:nombre', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:nprop:nombre', kind: 'mcq', q: 'A first name on its own takes no article. Which one is right?',
       options: ['La María vive aquí.', 'María vive aquí.', 'Una María vive aquí.'], answer: 1 },
     { id: 'p:nprop:titulo', kind: 'cloze', text: '___ señor Fernández no está en la oficina.', accept: ['El', 'el'] },
     { id: 'p:nprop:recall', kind: 'recall', front: 'The one country whose article is NEVER dropped', back: 'El Salvador' }
@@ -5482,9 +5482,9 @@ window.STRAND_LESSONS = [
     { es: 'Mi padre y mi madre viven en Sevilla.', en: 'My father and mother live in Seville.' }
   ],
   probes: [
-    { id: 'p:gensus:moto', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:gensus:moto', kind: 'mcq', q: '"moto" ends in -o. Which article does it actually take?',
       options: ['el moto', 'la moto', 'los motos'], answer: 1 },
-    { id: 'p:gensus:dia', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:gensus:dia', kind: 'mcq', q: '"día" ends in -a. Which article does it actually take?',
       options: ['la día', 'el día', 'los día'], answer: 1 },
     { id: 'p:gensus:cloze', kind: 'cloze', text: 'Tengo un problema con ___ programa.', accept: ['el'] },
     { id: 'p:gensus:recall', kind: 'recall', front: 'Three feminine nouns that look masculine (end in -o)', back: 'la moto, la foto, la radio' }
@@ -5518,11 +5518,11 @@ window.STRAND_LESSONS = [
     { es: 'Necesito dos lápices y una goma.', en: 'I need two pencils and an eraser.' }
   ],
   probes: [
-    { id: 'p:numsus:hotel', kind: 'mcq', q: 'Plural de "hotel":',
+    { id: 'p:numsus:hotel', kind: 'mcq', q: 'The plural of "hotel" is:',
       options: ['hotels', 'hoteles', 'hotele'], answer: 1 },
-    { id: 'p:numsus:autobus', kind: 'mcq', q: 'Plural de "autobús":',
+    { id: 'p:numsus:autobus', kind: 'mcq', q: 'The plural of "autobús" is (watch the accent):',
       options: ['autobuses', 'autobúses', 'autobuss'], answer: 0 },
-    { id: 'p:numsus:cloze', kind: 'cloze', text: 'Plural de "lápiz": lápi___', accept: ['ces'] },
+    { id: 'p:numsus:cloze', kind: 'cloze', text: 'The plural of "lápiz": lápi___', accept: ['ces'] },
     { id: 'p:numsus:recall', kind: 'recall', front: 'A word ending in a consonant takes which plural ending?', back: '-es (never bare -s)' }
   ]
 },
@@ -5556,14 +5556,14 @@ window.STRAND_LESSONS = [
   probes: [
     // The cue must not contain the answer, and the distractors must be words a
     // learner could plausibly choose — not invented forms like *inteligenta.
-    { id: 'p:adjcal:articulo', kind: 'mcq', q: '—¿Qué coche prefieres? —___ rojo.',
+    { id: 'p:adjcal:articulo', kind: 'mcq', q: 'Pick the red one out of several: —¿Qué coche prefieres? —___ rojo.',
       options: ['Mi', 'El', 'Un'], answer: 1 },
     { id: 'p:adjcal:agree', kind: 'mcq', q: 'Mi hermana es muy ___. (tall)',
       options: ['alto', 'alta', 'altos'], answer: 1 },
-    { id: 'p:adjcal:invariable', kind: 'mcq', q: '¿Cuál de estos adjetivos NO cambia en femenino?',
+    { id: 'p:adjcal:invariable', kind: 'mcq', q: 'Which of these adjectives stays the SAME for a woman?',
       options: ['alto', 'inteligente', 'rojo'], answer: 1 },
-    { id: 'p:adjcal:cloze', kind: 'cloze', text: 'Es un restaurante car___. (very expensive, absolute superlative)', accept: ['ísimo'] },
-    { id: 'p:adjcal:recall', kind: 'recall', front: 'el coche rojo → sin repetir «coche»: ___', back: 'el rojo' }
+    { id: 'p:adjcal:cloze', kind: 'cloze', text: 'Es un restaurante car___. (really expensive — the -ísimo ending)', accept: ['ísimo'] },
+    { id: 'p:adjcal:recall', kind: 'recall', front: '"el coche rojo" without repeating the word coche: ___', back: 'el rojo' }
   ]
 },
 
@@ -5630,7 +5630,7 @@ window.STRAND_LESSONS = [
     { es: 'A los niños les gusta el chocolate.', en: 'The children like chocolate.' }
   ],
   probes: [
-    { id: 'p:artdef:combina', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:artdef:combina', kind: 'mcq', q: 'Spanish does not stack an article onto a possessive. Which one is right?',
       options: ['el mi libro', 'mi libro', 'el mi el libro'], answer: 1 },
     { id: 'p:artdef:contrae', kind: 'mcq', q: '"Vengo ___ trabajo."',
       options: ['de el', 'del', 'de al'], answer: 1 },
@@ -5666,12 +5666,12 @@ window.STRAND_LESSONS = [
     { es: 'Vi una película anoche; la película era muy larga.', en: 'I saw a film last night; the film was very long.' }
   ],
   probes: [
-    { id: 'p:artindef:mencion', kind: 'mcq', q: 'Primera mención: "Hay ___ banco en la plaza."',
+    { id: 'p:artindef:mencion', kind: 'mcq', q: 'You mention it for the FIRST time: "Hay ___ banco en la plaza."',
       options: ['el', 'un', 'este'], answer: 1 },
-    { id: 'p:artindef:segunda', kind: 'mcq', q: 'Segunda mención, ya conocido: "___ banco cierra a las ocho."',
+    { id: 'p:artindef:segunda', kind: 'mcq', q: 'The same bank, now already mentioned: "___ banco cierra a las ocho."',
       options: ['Un', 'El', 'Unos'], answer: 1 },
-    { id: 'p:artindef:numeral', kind: 'mcq', q: '¿Cuál es correcto?',
-      options: ['un dos libros', 'dos libros', 'unos dos libros de'], answer: 1 },
+    { id: 'p:artindef:numeral', kind: 'mcq', q: 'Which one means exactly "two books"?',
+      options: ['un dos libros', 'dos libros', 'unos dos libros'], answer: 1 },
     { id: 'p:artindef:recall', kind: 'recall', front: 'A NEW thing gets which article? A KNOWN thing gets which?', back: 'indefinite (un/una) for new; definite (el/la) once known' }
   ]
 },
@@ -5703,7 +5703,7 @@ window.STRAND_LESSONS = [
     { es: 'Nuestra casa tiene un jardín pequeño.', en: 'Our house has a small garden.' }
   ],
   probes: [
-    { id: 'p:posdis:orden', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:posdis:orden', kind: 'mcq', q: 'Which one is "my book"?',
       options: ['libro mi', 'mi libro', 'el mi libro'], answer: 1 },
     { id: 'p:posdis:cuyo', kind: 'mcq', q: '"¿___ es este libro?" (asking whose)',
       options: ['Cuyo', 'De quién', 'Quién'], answer: 1 },
@@ -5739,12 +5739,12 @@ window.STRAND_LESSONS = [
     { es: '¿Tienes tus llaves y tu cartera?', en: 'Do you have your keys and your wallet?' }
   ],
   probes: [
-    { id: 'p:posfor:genero', kind: 'mcq', q: '¿Cuál es correcto? (mi + casa, femenino)',
+    { id: 'p:posfor:genero', kind: 'mcq', q: '"my house" — casa is feminine, so which is right?',
       options: ['mia casa', 'mi casa', 'mis casa'], answer: 1 },
     { id: 'p:posfor:nuestro', kind: 'mcq', q: '"___ profesora es muy paciente." (our, feminine)',
       options: ['Nuestro', 'Nuestra', 'Nuestros'], answer: 1 },
-    { id: 'p:posfor:ambiguo', kind: 'mcq', q: 'Para evitar la ambigüedad de "su casa", dices:',
-      options: ['la su casa', 'la casa de ella', 'casa suya de ella'], answer: 1 },
+    { id: 'p:posfor:ambiguo', kind: 'mcq', q: '"Su casa" could be his, hers or theirs. Which version says clearly that it is HERS?',
+      options: ['la casa suya', 'la casa de ella', 'la su casa'], answer: 1 },
     { id: 'p:posfor:recall', kind: 'recall', front: 'Which two possessives agree in BOTH gender and number?', back: 'nuestro/nuestra and vuestro/vuestra' }
   ]
 },
@@ -5885,11 +5885,11 @@ window.STRAND_LESSONS = [
     { es: 'Usted tiene razón, señora.', en: 'You are right, madam.' }
   ],
   probes: [
-    { id: 'p:prsuj:omision', kind: 'mcq', q: 'Forma más natural y neutra:',
+    { id: 'p:prsuj:omision', kind: 'mcq', q: 'Which is the natural, neutral way to say "I work in a bank"?',
       options: ['Yo trabajo en un banco.', 'Trabajo en un banco.', 'Yo, trabajo en un banco.'], answer: 1 },
-    { id: 'p:prsuj:contraste', kind: 'mcq', q: '¿Cuándo SÍ conviene usar el pronombre sujeto?',
-      options: ['Siempre, para ser claro', 'Para contrastar dos personas', 'Nunca en español'], answer: 1 },
-    { id: 'p:prsuj:usted', kind: 'cloze', text: 'Usted ___ razón. (tener, tercera persona)', accept: ['tiene'] },
+    { id: 'p:prsuj:contraste', kind: 'mcq', q: 'When IS the subject pronoun worth saying?',
+      options: ['Always, to be clear', 'To contrast one person with another', 'Never in Spanish'], answer: 1 },
+    { id: 'p:prsuj:usted', kind: 'cloze', text: 'Usted ___ razón. (tener — usted takes the he/she ending)', accept: ['tiene'] },
     { id: 'p:prsuj:recall', kind: 'recall', front: 'Why can Spanish drop its subject pronouns so freely?', back: 'the verb ending already identifies the person' }
   ]
 },
@@ -5930,9 +5930,9 @@ window.STRAND_LESSONS = [
   probes: [
     { id: 'p:cantnum:ordinal', kind: 'mcq', q: '"Vivimos en el ___ piso." (4th)',
       options: ['cuatro', 'cuarto', 'cuartro'], answer: 1 },
-    { id: 'p:cantnum:cardinal', kind: 'mcq', q: '"Somos ___ en mi familia." (5, exact count)',
-      options: ['quinto', 'cinco', 'cinco personas de'], answer: 1 },
-    { id: 'p:cantnum:cloze', kind: 'cloze', text: 'Mi ciudad tiene 150___000 habitantes.', accept: ['.'] },
+    { id: 'p:cantnum:cardinal', kind: 'mcq', q: '"Somos ___ en mi familia." — five of us, an exact count',
+      options: ['quinto', 'cinco', 'quinta'], answer: 1 },
+    { id: 'p:cantnum:cloze', kind: 'cloze', text: 'Mi ciudad tiene 150___000 habitantes. (the mark Spanish puts between thousands)', accept: ['.'] },
     { id: 'p:cantnum:recall', kind: 'recall', front: 'cuatro vs cuarto — which one names a POSITION?', back: 'cuarto (ordinal)' }
   ]
 },
@@ -5967,9 +5967,9 @@ window.STRAND_LESSONS = [
     { es: 'Este pueblo tiene más o menos mil habitantes.', en: 'This town has roughly a thousand inhabitants.' }
   ],
   probes: [
-    { id: 'p:cantrel:gente', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:cantrel:gente', kind: 'mcq', q: '"a lot of people" — gente is feminine AND singular, so:',
       options: ['muchos gente', 'mucha gente', 'mucho gente'], answer: 1 },
-    { id: 'p:cantrel:aproximado', kind: 'mcq', q: 'Para decir "aproximadamente 25.000" usas:',
+    { id: 'p:cantrel:aproximado', kind: 'mcq', q: 'To say "roughly 25,000" — could be a bit over or a bit under:',
       options: ['casi 25.000', 'más o menos 25.000', 'poco 25.000'], answer: 1 },
     { id: 'p:cantrel:cloze', kind: 'cloze', text: '___ pan, por favor. (more)', accept: ['Más', 'más'] },
     { id: 'p:cantrel:recall', kind: 'recall', front: 'Is "gente" (people) singular or plural in Spanish grammar?', back: 'singular (mucha gente)' }
@@ -6006,12 +6006,12 @@ window.STRAND_LESSONS = [
     { es: '¿Cuánto mide tu hermano? Mide 1,90.', en: 'How tall is your brother? He\'s 1.90m.' }
   ],
   probes: [
-    { id: 'p:tamano:doble', kind: 'mcq', q: '¿Qué palabra describe TANTO la altura de una persona COMO la de un estante?',
+    { id: 'p:tamano:doble', kind: 'mcq', q: 'Which word describes BOTH how tall a person is AND how high up a shelf is?',
       options: ['grande', 'alto', 'largo'], answer: 1 },
-    { id: 'p:tamano:opuesto', kind: 'mcq', q: 'Opuesto de "rápido":',
+    { id: 'p:tamano:opuesto', kind: 'mcq', q: 'The opposite of "rápido" is:',
       options: ['bajo', 'lento', 'corto'], answer: 1 },
     { id: 'p:tamano:cloze', kind: 'cloze', text: 'Mi hermano ___ casi dos metros. (measures)', accept: ['mide'] },
-    { id: 'p:tamano:recall', kind: 'recall', front: 'Which word covers both a person\'s height AND an object\'s position?', back: 'alto / bajo' }
+    { id: 'p:tamano:recall', kind: 'recall', front: 'One pair of words covers a person\'s height and how high up an object is: ___', back: 'alto / bajo' }
   ]
 },
 
@@ -6047,8 +6047,8 @@ window.STRAND_LESSONS = [
   probes: [
     { id: 'p:local:serestar', kind: 'mcq', q: '"Tikal ___ en Guatemala."',
       options: ['es', 'está', 'hay'], answer: 1 },
-    { id: 'p:local:relativo', kind: 'mcq', q: '"Aquí" significa:',
-      options: ['un lugar fijo en el mapa', 'cerca de quien habla', 'siempre lejos'], answer: 1 },
+    { id: 'p:local:relativo', kind: 'mcq', q: '"Aquí" means:',
+      options: ['a fixed place on the map', 'near whoever is speaking', 'always far away'], answer: 1 },
     { id: 'p:local:cloze', kind: 'cloze', text: 'El museo ___ muy lejos.', accept: ['está'] },
     { id: 'p:local:recall', kind: 'recall', front: 'Which verb physically locates something — ser or estar?', back: 'estar' }
   ]
@@ -6084,11 +6084,11 @@ window.STRAND_LESSONS = [
     { es: 'Sevilla está al sur de Madrid.', en: 'Seville is south of Madrid.' }
   ],
   probes: [
-    { id: 'p:posrel:de', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:posrel:de', kind: 'mcq', q: '"near the station" — which one?',
       options: ['cerca la estación', 'cerca de la estación', 'cerca en la estación'], answer: 1 },
-    { id: 'p:posrel:entre', kind: 'mcq', q: '"Hay una farmacia ___ el banco ___ la librería."',
+    { id: 'p:posrel:entre', kind: 'mcq', q: 'Between two landmarks: "Hay una farmacia ___ el banco ___ la librería."',
       options: ['entre / con', 'entre / y', 'cerca / y'], answer: 1 },
-    { id: 'p:posrel:cloze', kind: 'cloze', text: 'El banco está al lado ___ hotel. (del/de el)', accept: ['del'] },
+    { id: 'p:posrel:cloze', kind: 'cloze', text: 'El banco está al lado ___ hotel. (de + el, contracted)', accept: ['del'] },
     { id: 'p:posrel:recall', kind: 'recall', front: 'What word do almost all relative-position phrases need before their landmark?', back: 'de' }
   ]
 },
@@ -6123,7 +6123,7 @@ window.STRAND_LESSONS = [
     { es: 'Salgo de casa temprano y entro a trabajar a las nueve.', en: 'I leave home early and start work at nine.' }
   ],
   probes: [
-    { id: 'p:movest:direccion', kind: 'mcq', q: 'Estás en tu casa. Invitas a un amigo: "___ a mi casa esta tarde."',
+    { id: 'p:movest:direccion', kind: 'mcq', q: 'You are at home, inviting a friend over: "___ a mi casa esta tarde."',
       options: ['Ve', 'Ven', 'Vas'], answer: 1 },
     { id: 'p:movest:manera', kind: 'mcq', q: '"Voy al trabajo ___ pie."',
       options: ['en', 'a', 'con'], answer: 1 },
@@ -6161,7 +6161,7 @@ window.STRAND_LESSONS = [
     { es: 'Sigue todo recto hasta el semáforo.', en: 'Keep going straight until the traffic light.' }
   ],
   probes: [
-    { id: 'p:orient:recto', kind: 'mcq', q: '"Straight ahead" en español:',
+    { id: 'p:orient:recto', kind: 'mcq', q: '"Straight ahead" in Spanish is:',
       options: ['a la derecha', 'todo recto', 'al final'], answer: 1 },
     { id: 'p:orient:ordinal', kind: 'mcq', q: '"The second street on the right":',
       options: ['la segunda calle a la derecha', 'la dos calle a la derecha', 'la calle segunda derecha'], answer: 0 },
@@ -6203,8 +6203,8 @@ window.STRAND_LESSONS = [
     { es: 'Somos de un pueblo pequeño cerca de Bogotá.', en: "We're from a small town near Bogotá." }
   ],
   probes: [
-    { id: 'p:origen:mayuscula', kind: 'mcq', q: '¿Cuál es correcto?',
-      options: ['Es Cubano.', 'es cubano.', 'Es cubano.'], answer: 2 },
+    { id: 'p:origen:mayuscula', kind: 'mcq', q: 'How are nationality words written in Spanish?',
+      options: ['lowercase — es cubano', 'with a capital — es Cubano', 'either way is fine'], answer: 0 },
     { id: 'p:origen:agree', kind: 'mcq', q: '"Mi profesora es ___." (Mexican, feminine)',
       options: ['mexicano', 'mexicana', 'mexicanos'], answer: 1 },
     { id: 'p:origen:cloze', kind: 'cloze', text: '¿De ___ eres?', accept: ['dónde'] },
@@ -6291,9 +6291,9 @@ window.STRAND_LESSONS = [
     { es: 'En verano vamos siempre a la playa.', en: 'In summer we always go to the beach.' }
   ],
   probes: [
-    { id: 'p:tfpp:marcador', kind: 'mcq', q: '"El jueves voy al teatro" y "El jueves fui al teatro" — ¿qué cambia el tiempo?',
-      options: ['la palabra "jueves"', 'el verbo', 'nada, son iguales'], answer: 1 },
-    { id: 'p:tfpp:fijo', kind: 'mcq', q: '¿Cuál de estas palabras SIEMPRE indica un momento fijo por sí sola?',
+    { id: 'p:tfpp:marcador', kind: 'mcq', q: '"El jueves voy al teatro" vs "El jueves fui al teatro" — what tells you which one is in the past?',
+      options: ['the word "jueves"', 'the verb', 'nothing — they are the same'], answer: 1 },
+    { id: 'p:tfpp:fijo', kind: 'mcq', q: 'Which one pins down a time all by itself, with no verb needed?',
       options: ['el lunes', 'en enero', 'ayer'], answer: 2 },
     { id: 'p:tfpp:cloze', kind: 'cloze', text: '___ no tenemos clase, pero mañana sí. (today)', accept: ['Hoy', 'hoy'] },
     { id: 'p:tfpp:recall', kind: 'recall', front: 'What actually carries the tense in "el jueves voy/fui al teatro"?', back: 'the verb, not the day marker' }
@@ -6369,9 +6369,9 @@ window.STRAND_LESSONS = [
     { es: 'Mi hermano nunca desayuna.', en: 'My brother never has breakfast.' }
   ],
   probes: [
-    { id: 'p:frecuen:doble', kind: 'mcq', q: '¿Cuál es correcto? (nunca DESPUÉS del verbo)',
+    { id: 'p:frecuen:doble', kind: 'mcq', q: 'With nunca AFTER the verb, which one is right?',
       options: ['Como nunca pescado.', 'No como nunca pescado.', 'Nunca no como pescado.'], answer: 1 },
-    { id: 'p:frecuen:simple', kind: 'mcq', q: '¿Cuál es correcto? (nunca ANTES del verbo)',
+    { id: 'p:frecuen:simple', kind: 'mcq', q: 'With nunca BEFORE the verb, which one is right?',
       options: ['Nunca como pescado.', 'No nunca como pescado.', 'Nunca no como pescado.'], answer: 0 },
     { id: 'p:frecuen:cloze', kind: 'cloze', text: '___ me levanto a las siete. (usually)', accept: ['Normalmente', 'normalmente'] },
     { id: 'p:frecuen:recall', kind: 'recall', front: 'When does nunca need an extra "no"?', back: 'when it comes AFTER the verb' }
@@ -6408,9 +6408,9 @@ window.STRAND_LESSONS = [
     { es: 'Me gusta escuchar música mientras cocino.', en: 'I like listening to music while I cook.' }
   ],
   probes: [
-    { id: 'p:vision:dosusos', kind: 'mcq', q: '"Tiene el pelo claro" — ¿de qué habla?',
-      options: ['de la luz de la habitación', 'del color del pelo', 'de la vista'], answer: 1 },
-    { id: 'p:vision:vertv', kind: 'mcq', q: '"To watch television" en español:',
+    { id: 'p:vision:dosusos', kind: 'mcq', q: '"Tiene el pelo claro" — what is this about?',
+      options: ['the light in the room', 'the colour of their hair', 'their eyesight'], answer: 1 },
+    { id: 'p:vision:vertv', kind: 'mcq', q: '"To watch television" in Spanish is:',
       options: ['mirar la televisión', 'ver la televisión', 'observar la televisión'], answer: 1 },
     { id: 'p:vision:cloze', kind: 'cloze', text: 'Prefiero el azul ___ al azul oscuro. (light)', accept: ['claro'] },
     { id: 'p:vision:recall', kind: 'recall', front: 'What TWO different things can "claro/oscuro" describe?', back: 'light level (of a room) and colour shade' }
@@ -6447,9 +6447,9 @@ window.STRAND_LESSONS = [
     { es: 'Los niños de esa clase tienen siete u ocho años.', en: 'The children in that class are seven or eight.' }
   ],
   probes: [
-    { id: 'p:edad:verbo', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:edad:verbo', kind: 'mcq', q: '"I am twenty" — Spanish says you HAVE the years. Which one?',
       options: ['Soy veinte años.', 'Tengo veinte años.', 'Estoy veinte años.'], answer: 1 },
-    { id: 'p:edad:mayor', kind: 'mcq', q: 'Forma más educada de referirse a la edad avanzada de alguien:',
+    { id: 'p:edad:mayor', kind: 'mcq', q: 'The polite word for someone advanced in years:',
       options: ['viejo', 'mayor', 'antiguo'], answer: 1 },
     { id: 'p:edad:cloze', kind: 'cloze', text: 'Mi hija ___ cinco años.', accept: ['tiene'] },
     { id: 'p:edad:recall', kind: 'recall', front: 'Which verb does Spanish use for age — ser or tener?', back: 'tener' }
@@ -6485,9 +6485,9 @@ window.STRAND_LESSONS = [
     { es: 'La salida de emergencia está al final del pasillo.', en: 'The emergency exit is at the end of the corridor.' }
   ],
   probes: [
-    { id: 'p:acces:estado', kind: 'mcq', q: '"La tienda ___ cerrada los domingos."',
+    { id: 'p:acces:estado', kind: 'mcq', q: 'The state it is in: "La tienda ___ cerrada los domingos."',
       options: ['es', 'está', 'hay'], answer: 1 },
-    { id: 'p:acces:accion', kind: 'mcq', q: '"La tienda ___ a las nueve." (the action of opening)',
+    { id: 'p:acces:accion', kind: 'mcq', q: 'The act of opening, not the state: "La tienda ___ a las nueve."',
       options: ['está abierta', 'abre', 'es abierta'], answer: 1 },
     { id: 'p:acces:cloze', kind: 'cloze', text: 'La ___ está al final del pasillo. (exit)', accept: ['salida'] },
     { id: 'p:acces:recall', kind: 'recall', front: 'Which verb, ser or estar, describes whether a shop is currently open?', back: 'estar' }
@@ -6563,7 +6563,7 @@ window.STRAND_LESSONS = [
     { es: 'Al final pagué menos de lo que pensaba.', en: 'In the end I paid less than I expected.' }
   ],
   probes: [
-    { id: 'p:valprec:preguntar', kind: 'mcq', q: 'Para preguntar el precio de algo, dices:',
+    { id: 'p:valprec:preguntar', kind: 'mcq', q: 'How do you ask what something costs?',
       options: ['¿Cuánto pagas?', '¿Cuánto cuesta?', '¿Cuánto es caro?'], answer: 1 },
     { id: 'p:valprec:sujeto', kind: 'mcq', q: '"Este libro ___ quince euros." (the book is the subject)',
       options: ['paga', 'cuesta', 'compra'], answer: 1 },
@@ -7023,8 +7023,8 @@ window.STRAND_LESSONS = [
   ],
   examples: [
     { es: '¿Dónde puedo cambiar dinero por aquí?', en: 'Where can I exchange money around here?' },
-    { es: 'Cambiamos de piso el mes pasado.', en: 'We moved (changed flats) last month.' },
-    { es: 'Tuvo que cambiar de opinión.', en: 'She had to change her mind.' }
+    { es: 'Mi hermana cambió de trabajo en enero.', en: 'My sister changed jobs in January.' },
+    { es: 'Si no te queda bien, puedes cambiarlo por otro.', en: 'If it does not fit you, you can exchange it for another one.' }
   ],
   probes: [
     { id: 'p:cambio:por', kind: 'mcq', q: '"Cambié mi coche viejo ___ uno nuevo." (exchange)',
@@ -7062,8 +7062,8 @@ window.STRAND_LESSONS = [
   ],
   examples: [
     { es: 'Necesitamos más tiempo para terminar.', en: 'We need more time to finish.' },
-    { es: 'Es necesario reservar con antelación.', en: 'It is necessary to book in advance.' },
-    { es: 'Tuvimos mucha suerte con el tiempo.', en: 'We were very lucky with the weather.' }
+    { es: 'Para entrar es necesario enseñar el pasaporte.', en: 'To get in you have to show your passport.' },
+    { es: 'Necesito hablar contigo un momento.', en: 'I need to talk to you for a moment.' }
   ],
   probes: [
     { id: 'p:necesid:impersonal', kind: 'mcq', q: 'Versión impersonal de "Necesito descansar":',
@@ -7101,8 +7101,8 @@ window.STRAND_LESSONS = [
   ],
   examples: [
     { es: 'Compré un paquete de café y una barra de pan.', en: 'I bought a packet of coffee and a loaf of bread.' },
-    { es: '¿Qué talla usas? — La mediana.', en: '—What size do you wear? —Medium.' },
-    { es: 'El paquete pesa casi un kilo.', en: 'The package weighs almost a kilo.' }
+    { es: 'Esta camisa me queda pequeña: necesito una talla más.', en: 'This shirt is too small on me: I need one size bigger.' },
+    { es: 'Mi hijo mide un metro veinte y pesa veinticinco kilos.', en: 'My son is one metre twenty and weighs twenty-five kilos.' }
   ],
   probes: [
     { id: 'p:cantrelA2:talla', kind: 'mcq', q: '¿Cuál se usa para zapatos?',
@@ -7139,9 +7139,9 @@ window.STRAND_LESSONS = [
     '<i>Desde</i> needs a starting point and <i>hasta</i> an ending point; using only one without the other leaves the distance half-stated.'
   ],
   examples: [
-    { es: 'Había cuatro sillas alrededor de la mesa.', en: 'There were four chairs around the table.' },
     { es: 'Vive en las afueras de la ciudad, no en el centro.', en: 'She lives on the outskirts of the city, not downtown.' },
-    { es: 'El gato está debajo de la cama.', en: 'The cat is under the bed.' }
+    { es: 'Deja las maletas dentro del armario, no fuera.', en: 'Leave the suitcases inside the wardrobe, not outside.' },
+    { es: 'Hay casi trescientos kilómetros desde Madrid hasta Valencia.', en: 'It is nearly three hundred kilometres from Madrid to Valencia.' }
   ],
   probes: [
     { id: 'p:posdist:de', kind: 'mcq', q: '¿Cuál es correcto?',
@@ -7217,9 +7217,9 @@ window.STRAND_LESSONS = [
     '<i>Seguir todo recto</i> reuses <i>todo recto</i> from A1 — do not invent a new phrase for "keep going straight."'
   ],
   examples: [
-    { es: 'Sigue todo recto hasta la plaza.', en: 'Keep going straight until the square.' },
-    { es: 'Cruza el puente y después gira a la izquierda.', en: 'Cross the bridge and then turn left.' },
-    { es: '¿Puedes traerme un vaso de agua?', en: 'Can you bring me a glass of water?' }
+    { es: '¿Puedes traerme un vaso de agua?', en: 'Can you bring me a glass of water?' },
+    { es: 'Coge la segunda calle a la derecha y sigue hasta el final.', en: 'Take the second street on the right and keep going to the end.' },
+    { es: 'Mañana llevo yo los papeles a la oficina.', en: 'I will take the papers to the office tomorrow.' }
   ],
   probes: [
     { id: 'p:orientA2:direccion', kind: 'mcq', q: 'Estás en la fiesta. Le pides a un amigo que traiga algo aquí: "___me el pastel."',
@@ -7256,9 +7256,9 @@ window.STRAND_LESSONS = [
     '<i>Durante</i> states duration without committing to when it started or ended — do not add <i>desde/hasta</i> to it redundantly.'
   ],
   examples: [
-    { es: 'Esperé un cuarto de hora pero no vino.', en: 'I waited a quarter of an hour but she didn\'t come.' },
-    { es: 'Estaremos de viaje durante toda la Semana Santa.', en: "We'll be travelling throughout Easter week." },
-    { es: 'No tengo mucho tiempo antes de la reunión.', en: "I don't have much time before the meeting." }
+    { es: 'La tienda abre desde las diez hasta las nueve.', en: 'The shop is open from ten until nine.' },
+    { es: 'Estuvimos en Sevilla durante media hora, nada más.', en: 'We were in Seville for half an hour, no more.' },
+    { es: 'En Navidad siempre comemos en casa de mis abuelos.', en: 'At Christmas we always eat at my grandparents\' house.' }
   ],
   probes: [
     { id: 'p:refgenA2:desdehasta', kind: 'mcq', q: '"Trabajo ___ las nueve ___ las cinco."',
@@ -9274,10 +9274,10 @@ window.STRAND_LESSONS = [
     { es: 'Aquellos edificios son del siglo XIX.', en: 'Those buildings are from the 19th century.' }
   ],
   probes: [
-    { id: 'p:demdist:articulo', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:demdist:articulo', kind: 'mcq', q: 'Which one is "this book"?',
       options: ['el este libro', 'este libro', 'este el libro'], answer: 1 },
-    { id: 'p:demdist:orden', kind: 'mcq', q: '¿Dónde va el demostrativo en una frase neutra?',
-      options: ['después del sustantivo', 'antes del sustantivo', 'da igual'], answer: 1 },
+    { id: 'p:demdist:orden', kind: 'mcq', q: 'Where does este/esta normally go?',
+      options: ['after the noun', 'before the noun', 'either way'], answer: 1 },
     { id: 'p:demdist:cloze', kind: 'cloze', text: '___ mesa es nueva. (this — no article)', accept: ['Esta', 'esta'] },
     { id: 'p:demdist:recall', kind: 'recall', front: 'Can a demonstrative combine with an article on the same noun?', back: 'no — never; the demonstrative already identifies the noun' }
   ]
@@ -9309,9 +9309,9 @@ window.STRAND_LESSONS = [
     { es: 'El libro que lee es muy interesante.', en: 'The book he is reading is very interesting.' }
   ],
   probes: [
-    { id: 'p:queRel:invariable', kind: 'mcq', q: '¿Cuál es correcto para "the houses that I see"?',
+    { id: 'p:queRel:invariable', kind: 'mcq', q: '"the houses that I see" — which one?',
       options: ['las casas ques veo', 'las casas que veo', 'las casas quien veo'], answer: 1 },
-    { id: 'p:queRel:obligatorio', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:queRel:obligatorio', kind: 'mcq', q: 'English can drop "that" — Spanish cannot. Which one is right?',
       options: ['El libro leo es bueno.', 'El libro que leo es bueno.', 'El libro el que leo es bueno.'], answer: 1 },
     { id: 'p:queRel:cloze', kind: 'cloze', text: 'La casa ___ tiene tres habitaciones es cara.', accept: ['que'] },
     { id: 'p:queRel:recall', kind: 'recall', front: 'Does que change for gender or number?', back: 'no — it is invariable' }
@@ -9343,9 +9343,9 @@ window.STRAND_LESSONS = [
     { es: '—No como carne. —Yo tampoco.', en: '"I don\'t eat meat." "Me neither."' }
   ],
   probes: [
-    { id: 'p:afneg:tampoco', kind: 'mcq', q: '"I don\'t like it either" — de acuerdo con "No me gusta":',
+    { id: 'p:afneg:tampoco', kind: 'mcq', q: 'Agreeing with "No me gusta" — how do you say "I don\'t like it either"?',
       options: ['A mí también.', 'A mí tampoco.', 'A mí no también.'], answer: 1 },
-    { id: 'p:afneg:tambien', kind: 'mcq', q: '"Me too" — de acuerdo con "Tengo sed":',
+    { id: 'p:afneg:tambien', kind: 'mcq', q: 'Agreeing with "Tengo sed" — how do you say "me too"?',
       options: ['Yo tampoco.', 'Yo también.', 'Yo sí no.'], answer: 1 },
     { id: 'p:afneg:cloze', kind: 'cloze', text: '—No tengo coche. —Yo ___.', accept: ['tampoco'] },
     { id: 'p:afneg:recall', kind: 'recall', front: 'What word agrees with a NEGATIVE statement ("me neither")?', back: 'tampoco' }
@@ -9380,11 +9380,11 @@ window.STRAND_LESSONS = [
     { es: 'Canta muy bien y toca la guitarra bastante bien también.', en: 'She sings very well and plays the guitar quite well too.' }
   ],
   probes: [
-    { id: 'p:advltc:muymucho', kind: 'mcq', q: '¿Cuál es correcto?',
+    { id: 'p:advltc:muymucho', kind: 'mcq', q: '"It is very interesting" — which one?',
       options: ['Es mucho interesante.', 'Es muy interesante.', 'Es muy mucho interesante.'], answer: 1 },
-    { id: 'p:advltc:lugar', kind: 'mcq', q: 'Tu amigo está a tu lado. Señalas su silla y dices:',
+    { id: 'p:advltc:lugar', kind: 'mcq', q: 'You point at the chair right beside your friend and tell them to sit there:',
       options: ['Siéntate aquí.', 'Siéntate ahí.', 'Siéntate allí.'], answer: 1 },
-    { id: 'p:advltc:cloze', kind: 'cloze', text: 'Duermo ___. (poco/mucho — "very little")', accept: ['muy poco'] },
+    { id: 'p:advltc:cloze', kind: 'cloze', text: 'Duermo ___. (very little — two words)', accept: ['muy poco'] },
     { id: 'p:advltc:recall', kind: 'recall', front: 'muy vs mucho — which modifies an adjective/adverb, which a verb/noun?', back: 'muy → adjective/adverb; mucho → verb/noun' }
   ]
 },
@@ -9414,11 +9414,11 @@ window.STRAND_LESSONS = [
     { es: 'Mis padres viven en Sevilla desde hace veinte años.', en: 'My parents have been living in Seville for twenty years.' }
   ],
   probes: [
-    { id: 'p:presval:actual', kind: 'mcq', q: '"We are in class right now" — el valor del presente aquí es:',
-      options: ['durativo (hecho general)', 'actual (ahora mismo)', 'ninguno de los dos'], answer: 1 },
-    { id: 'p:presval:durativo', kind: 'mcq', q: '"Vivo en Madrid" — el valor es:',
-      options: ['actual, solo en este momento', 'durativo, un hecho general', 'futuro'], answer: 1 },
-    { id: 'p:presval:cloze', kind: 'cloze', text: '¿Qué ___ ahora mismo? (haces — presente)', accept: ['haces'] },
+    { id: 'p:presval:actual', kind: 'mcq', q: '"Estamos en clase de español ahora mismo." What is this present tense doing?',
+      options: ['stating something generally true', 'reporting what is true at this moment', 'talking about the future'], answer: 1 },
+    { id: 'p:presval:durativo', kind: 'mcq', q: '"Vivo en Madrid." What is this present tense doing?',
+      options: ['reporting only this exact moment', 'stating a standing fact about my life', 'talking about the future'], answer: 1 },
+    { id: 'p:presval:cloze', kind: 'cloze', text: '¿Qué ___ ahora mismo? (hacer — tú)', accept: ['haces'] },
     { id: 'p:presval:recall', kind: 'recall', front: 'Does Spanish have a separate form for "I am studying" vs "I study"?', back: 'no — the same present tense form covers both' }
   ]
 },
@@ -9448,11 +9448,11 @@ window.STRAND_LESSONS = [
     { es: '—¿Qué prefieres, quedarte o salir? —Salir.', en: '"What do you prefer, staying in or going out?" "Going out."' }
   ],
   probes: [
-    { id: 'p:infusos:sujeto', kind: 'mcq', q: '"Reading is fun" — ¿cuál es correcto?',
+    { id: 'p:infusos:sujeto', kind: 'mcq', q: '"Reading is fun" — which one?',
       options: ['Leyendo es divertido.', 'Leer es divertido.', 'Lee es divertido.'], answer: 1 },
-    { id: 'p:infusos:objeto', kind: 'mcq', q: '"I like traveling" — ¿cuál es correcto?',
+    { id: 'p:infusos:objeto', kind: 'mcq', q: '"I like travelling" — which one?',
       options: ['Me gusta viajando.', 'Me gusta viajar.', 'Me gusta viajo.'], answer: 1 },
-    { id: 'p:infusos:cloze', kind: 'cloze', text: '—¿Qué haces? —___. (Studying — respuesta corta)', accept: ['Estudiar', 'estudiar'] },
+    { id: 'p:infusos:cloze', kind: 'cloze', text: '—¿Qué haces? —___. (Studying — a one-word answer)', accept: ['Estudiar', 'estudiar'] },
     { id: 'p:infusos:recall', kind: 'recall', front: 'How does Spanish express "Studying is fun" — gerund or infinitive?', back: 'infinitive: Estudiar es divertido' }
   ]
 },
@@ -9484,9 +9484,9 @@ window.STRAND_LESSONS = [
   probes: [
     { id: 'p:partadj:agree', kind: 'mcq', q: 'María dice: "Estoy muy ___." (tired)',
       options: ['cansado', 'cansada', 'cansando'], answer: 1 },
-    { id: 'p:partadj:plural', kind: 'mcq', q: '"We are bored" (grupo mixto) —',
+    { id: 'p:partadj:plural', kind: 'mcq', q: '"We are bored", said by a mixed group of men and women:',
       options: ['Estamos aburrido.', 'Estamos aburridos.', 'Estamos aburriendo.'], answer: 1 },
-    { id: 'p:partadj:cloze', kind: 'cloze', text: 'La puerta está ___. (cerrar — participio, femenino)', accept: ['cerrada'] },
+    { id: 'p:partadj:cloze', kind: 'cloze', text: 'La puerta está ___. (cerrar — the participle, agreeing with puerta)', accept: ['cerrada'] },
     { id: 'p:partadj:recall', kind: 'recall', front: 'When a participle follows estar to describe a state, does it agree with the subject?', back: 'yes — in gender and number, like any adjective' }
   ]
 },
@@ -9518,9 +9518,9 @@ window.STRAND_LESSONS = [
   probes: [
     { id: 'p:atributo:agree', kind: 'mcq', q: '"Mis hermanas son ___." (German)',
       options: ['alemán', 'alemanas', 'alemanes'], answer: 1 },
-    { id: 'p:atributo:articulo', kind: 'mcq', q: '"Mario is a cook" (sin adjetivo) —',
+    { id: 'p:atributo:articulo', kind: 'mcq', q: '"Mario is a cook" — naming his job, Spanish drops the article:',
       options: ['Mario es un cocinero.', 'Mario es cocinero.', 'Mario es el cocinero.'], answer: 1 },
-    { id: 'p:atributo:cloze', kind: 'cloze', text: 'El hijo de Marta es ___. (rubio — concuerda con "el hijo")', accept: ['rubio'] },
+    { id: 'p:atributo:cloze', kind: 'cloze', text: 'El hijo de Marta es ___. (rubio — it agrees with el hijo, not with Marta)', accept: ['rubio'] },
     { id: 'p:atributo:recall', kind: 'recall', front: 'The atributo after ser agrees with what?', back: 'the subject — in gender and number' }
   ]
 },
@@ -9584,11 +9584,11 @@ window.STRAND_LESSONS = [
     { es: 'No trabajo los sábados.', en: "I don't work on Saturdays." }
   ],
   probes: [
-    { id: 'p:oratipo:total', kind: 'mcq', q: '"¿Vives en Madrid?" es una interrogativa...',
-      options: ['parcial', 'total', 'enunciativa'], answer: 1 },
-    { id: 'p:oratipo:parcial', kind: 'mcq', q: '"¿Dónde vives?" es una interrogativa...',
-      options: ['total', 'parcial', 'enunciativa'], answer: 1 },
-    { id: 'p:oratipo:cloze', kind: 'cloze', text: '___ te llamas? (¿Cómo)', accept: ['¿Cómo', 'Cómo'] },
+    { id: 'p:oratipo:total', kind: 'mcq', q: 'Which question can be answered with just sí or no?',
+      options: ['¿Dónde vives?', '¿Vives en Madrid?', '¿Cómo te llamas?'], answer: 1 },
+    { id: 'p:oratipo:parcial', kind: 'mcq', q: 'Which question cannot be answered sí or no, because it asks for one specific fact?',
+      options: ['¿Tienes hambre?', '¿Dónde vives?', '¿Eres español?'], answer: 1 },
+    { id: 'p:oratipo:cloze', kind: 'cloze', text: '___ te llamas? (how — include the opening mark)', accept: ['¿Cómo', 'Cómo'] },
     { id: 'p:oratipo:recall', kind: 'recall', front: 'What distinguishes a "total" question from a "partial" one?', back: 'total asks yes/no with no question word; partial asks for one specific piece of information with a question word' }
   ]
 },
@@ -9618,7 +9618,7 @@ window.STRAND_LESSONS = [
     { es: 'Vengo a España para aprender español.', en: 'I\'m coming to Spain to learn Spanish.' }
   ],
   probes: [
-    { id: 'p:orafin:mismosujeto', kind: 'mcq', q: '"I study to work in Mexico" (mismo sujeto) —',
+    { id: 'p:orafin:mismosujeto', kind: 'mcq', q: '"I study to work in Mexico" — same person doing both:',
       options: ['Estudio para que trabajo en México.', 'Estudio para trabajar en México.', 'Estudio para trabaja en México.'], answer: 1 },
     { id: 'p:orafin:utilidad', kind: 'mcq', q: '"The pen is for writing" —',
       options: ['El boli es para escribe.', 'El boli es para escribir.', 'El boli es para escribiendo.'], answer: 1 },
@@ -9679,9 +9679,9 @@ window.STRAND_LESSONS = [
     { es: '—¿Qué es eso que tienes ahí? —Es mi pasaporte.', en: "—What's that you've got there? —It's my passport." }
   ],
   probes: [
-    { id: 'p:cosa:neutro', kind: 'mcq', q: 'Señalas un objeto sin nombrarlo. ¿Qué preguntas?',
+    { id: 'p:cosa:neutro', kind: 'mcq', q: 'You point at something without naming it. What do you ask?',
       options: ['¿Qué es este?', '¿Qué es esto?', '¿Qué es esta?'], answer: 1 },
-    { id: 'p:cosa:registro', kind: 'mcq', q: 'Le preguntas a un desconocido, con educación, qué es un objeto.',
+    { id: 'p:cosa:registro', kind: 'mcq', q: 'Asking a stranger politely what something is:',
       options: ['¿Qué es esto?', 'Perdone, ¿sabe usted qué es esto?', 'Oye, ¿qué es esto?'], answer: 1 },
     { id: 'p:cosa:cloze', kind: 'cloze', text: '—¿Qué es esto? —___ mi móvil.', accept: ['Es', 'es'] },
     { id: 'p:cosa:recall', kind: 'recall', front: 'Why esto/eso and not este/ese when asking what something is?', back: 'the thing has no name yet, so it has no gender to agree with — the neuter is used until it is identified' }
@@ -9715,9 +9715,9 @@ window.STRAND_LESSONS = [
     { es: 'El ejercicio es un poco difícil.', en: 'The exercise is a little difficult.' }
   ],
   probes: [
-    { id: 'p:valorar:falsofriend', kind: 'mcq', q: '"Regular" como valoración significa:',
-      options: ['usual, normal', 'así así, ni bien ni mal', 'muy bien'], answer: 1 },
-    { id: 'p:valorar:escrito', kind: 'mcq', q: 'Estás escribiendo una reseña — ¿qué estructura usas?',
+    { id: 'p:valorar:falsofriend', kind: 'mcq', q: 'As a verdict on something, "regular" means:',
+      options: ['usual, normal', 'so-so — neither good nor bad', 'very good'], answer: 1 },
+    { id: 'p:valorar:escrito', kind: 'mcq', q: 'You are writing a review. Which of these works on the page, not just in conversation?',
       options: ['Regular.', 'Así, así.', 'Es muy interesante.'], answer: 2 },
     { id: 'p:valorar:cloze', kind: 'cloze', text: 'El ejercicio es un poco ___. (difficult)', accept: ['difícil'] },
     { id: 'p:valorar:recall', kind: 'recall', front: 'The four quick one-word verdicts for "how was it?"', back: 'bien, mal, regular, así así' }
@@ -13159,16 +13159,16 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:entoa1:si-no', kind: 'mcq',
-      q: 'Para convertir "Es alemán." en una pregunta de sí/no, la voz debe...',
-      options: ['bajar al final', 'subir al final', 'quedarse igual'], answer: 1 },
+      q: 'To turn "Es alemán." into a yes/no question, your voice must…',
+      options: ['fall at the end', 'rise at the end', 'stay level'], answer: 1 },
     { id: 'p:entoa1:qword', kind: 'mcq',
-      q: '¿Qué hora es? — sin ningún matiz de sorpresa, ¿qué entonación es la neutra?',
-      options: ['Ascendente', 'Descendente', 'Ninguna: no varía'], answer: 1 },
+      q: '"¿Qué hora es?" asked plainly, with no surprise — what does the voice do at the end?',
+      options: ['Rises', 'Falls', 'Nothing — it stays level'], answer: 1 },
     { id: 'p:entoa1:statement', kind: 'mcq',
-      q: '"Vive en Madrid." dicho como afirmación simple lleva un tonema...',
-      options: ['ascendente', 'descendente', 'plano'], answer: 1 },
+      q: '"Vive en Madrid." said as a plain statement ends with the voice…',
+      options: ['rising', 'falling', 'level'], answer: 1 },
     { id: 'p:entoa1:recall', kind: 'recall',
-      front: 'Pregunta de sí/no (¿Tienes hambre?) — ¿tonema ascendente o descendente?', back: 'ascendente' }
+      front: 'A yes/no question (¿Tienes hambre?) — does the voice rise or fall at the end?', back: 'it rises' }
   ]
 },
 
@@ -15699,12 +15699,12 @@ window.STRAND_LESSONS = [
     { es: '¿Cuánto dinero tienes?', en: 'How much money do you have?' }
   ],
   probes: [
-    { id: 'p:interrogA1:persona', kind: 'mcq', q: '¿Cuál pregunta por una persona?',
+    { id: 'p:interrogA1:persona', kind: 'mcq', q: 'Which question asks about a PERSON?',
       options: ['¿Qué es esto?', '¿Quién es esa chica?', '¿Dónde vives?'], answer: 1 },
-    { id: 'p:interrogA1:agree', kind: 'mcq', q: '"Tengo dos hermanas." ¿Qué pregunta corresponde?',
+    { id: 'p:interrogA1:agree', kind: 'mcq', q: 'Which question does "Tengo dos hermanas" answer?',
       options: ['¿Cuánto hermanas tienes?', '¿Cuántas hermanas tienes?', '¿Cuántos hermanas tienes?'], answer: 1 },
-    { id: 'p:interrogA1:cloze', kind: 'cloze', text: 'No sé ___ vive. (indirecta)', accept: ['dónde'] },
-    { id: 'p:interrogA1:recall', kind: 'recall', front: 'Interrogative words always carry a written ___', back: 'accent (tilde)' }
+    { id: 'p:interrogA1:cloze', kind: 'cloze', text: 'No sé ___ vive. (where — inside a statement, still accented)', accept: ['dónde'] },
+    { id: 'p:interrogA1:recall', kind: 'recall', front: 'A question word (qué, dónde, quién…) always carries a written ___', back: 'accent (tilde)' }
   ]
 },
 
@@ -15737,12 +15737,12 @@ window.STRAND_LESSONS = [
     { es: 'Me gusta mucho esta ciudad.', en: 'I like this city a lot.' }
   ],
   probes: [
-    { id: 'p:nucleoverbA1:clasif', kind: 'mcq', q: '¿Cuál usa "ser" para clasificar, sin adjetivo?',
+    { id: 'p:nucleoverbA1:clasif', kind: 'mcq', q: 'Which one uses ser to say what someone IS — a noun, not an adjective?',
       options: ['Estoy cansado.', 'Soy estudiante.', 'Está aquí.'], answer: 1 },
-    { id: 'p:nucleoverbA1:gustar', kind: 'mcq', q: '"A mí ___ el café." (correcto)',
+    { id: 'p:nucleoverbA1:gustar', kind: 'mcq', q: '"I like coffee": "A mí ___ el café."',
       options: ['gusto', 'me gusta', 'soy gusta'], answer: 1 },
     { id: 'p:nucleoverbA1:cloze', kind: 'cloze', text: 'Hoy ___ lunes. (ser)', accept: ['es'] },
-    { id: 'p:nucleoverbA1:recall', kind: 'recall', front: 'En "Me gusta el café", ¿cuál es el sujeto gramatical?', back: 'el café (no "yo")' }
+    { id: 'p:nucleoverbA1:recall', kind: 'recall', front: 'In "Me gusta el café", which word is the subject of the verb?', back: 'el café — not yo' }
   ]
 },
 
@@ -15774,12 +15774,12 @@ window.STRAND_LESSONS = [
     { es: 'Creo que este libro es interesante.', en: 'I think this book is interesting.' }
   ],
   probes: [
-    { id: 'p:subsustA1:mismosujeto', kind: 'mcq', q: 'Mismo sujeto (yo quiero, yo voy): ¿cuál es correcta?',
+    { id: 'p:subsustA1:mismosujeto', kind: 'mcq', q: 'One person doing both — I want, and I go. Which one is right?',
       options: ['Quiero que voy a España.', 'Quiero ir a España.', 'Quiero que ir a España.'], answer: 1 },
-    { id: 'p:subsustA1:opinion', kind: 'mcq', q: '¿Cómo se introduce una opinión sobre algo?',
+    { id: 'p:subsustA1:opinion', kind: 'mcq', q: 'How do you introduce an opinion about something?',
       options: ['Creo estudiar español.', 'Creo que es muy caro.', 'Creo a ser caro.'], answer: 1 },
     { id: 'p:subsustA1:cloze', kind: 'cloze', text: '___ español es útil. (Hablar)', accept: ['Hablar', 'hablar'] },
-    { id: 'p:subsustA1:recall', kind: 'recall', front: 'Mismo sujeto: "querer/gustar" + ___ (no "que")', back: 'infinitivo' }
+    { id: 'p:subsustA1:recall', kind: 'recall', front: 'Same person doing both actions: querer/gustar + ___ , never "que"', back: 'the infinitive (quiero ir)' }
   ]
 },
 
@@ -15810,12 +15810,12 @@ window.STRAND_LESSONS = [
     { es: 'Es un profesor que explica muy bien.', en: 'He is a teacher who explains very well.' }
   ],
   probes: [
-    { id: 'p:subadjA1:funcion', kind: 'mcq', q: 'En "el libro que lees", ¿qué función tiene "que"?',
-      options: ['Sujeto de "lees"', 'Objeto de "lees"', 'No tiene función'], answer: 1 },
-    { id: 'p:subadjA1:invariable', kind: 'mcq', q: '¿Cuál es correcta con "las casas"?',
+    { id: 'p:subadjA1:funcion', kind: 'mcq', q: 'The relative "que" — what can it refer back to?',
+      options: ['things only', 'people only', 'both people and things'], answer: 2 },
+    { id: 'p:subadjA1:invariable', kind: 'mcq', q: 'The noun is plural and feminine. Does "que" change?',
       options: ['las casas ques tengo', 'las casas que tengo', 'las casas quenes tengo'], answer: 1 },
     { id: 'p:subadjA1:cloze', kind: 'cloze', text: 'La amiga ___ viene conmigo se llama Ana.', accept: ['que'] },
-    { id: 'p:subadjA1:recall', kind: 'recall', front: '¿Cambia "que" según género o número del antecedente?', back: 'No, es invariable' }
+    { id: 'p:subadjA1:recall', kind: 'recall', front: 'Does "que" change for the gender or number of the noun before it?', back: 'no — it never changes' }
   ]
 },
 
