@@ -2099,7 +2099,7 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:task-describir-1', kind: 'mcq',
-      q: 'Which is correct?',
+      q: 'zapatos is masculine plural — everything round it has to match. Which one?',
       options: ['Sus zapatos son rojos.', 'Sus zapatos son rojas.', 'Su zapatos son rojos.'], answer: 0 },
     { id: 'p:task-describir-2', kind: 'mcq',
       q: '"Es simpática" describes a...',
@@ -2280,7 +2280,7 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:task-revisar-1', kind: 'mcq',
-      q: 'Which is correct?',
+      q: 'Article, noun and adjective all agree. Which one gets all three right?',
       options: ['una casa pequeña', 'un casa pequeña', 'una casa pequeño'], answer: 0 },
     { id: 'p:task-revisar-2', kind: 'mcq',
       q: 'Which noun looks feminine but is masculine?',
