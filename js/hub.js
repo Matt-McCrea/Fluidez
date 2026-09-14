@@ -22,13 +22,14 @@ window.Hub = (function () {
       (l.recall || []).forEach(function (r) { if (r.srs !== false && S.isEnrolled(r.id)) items.push({ id: r.id }); });
     });
     if (window.ErrorLog) window.ErrorLog.cards().forEach(function (c) { items.push({ id: c.id }); });
-    return items;
+    return window.Vetoed ? window.Vetoed.filter(items) : items;
   }
 
   // ---- "Tus errores" view -------------------------------------------------
   function renderErrors(host, back) {
     UI.clear(host);
     var cards = window.ErrorLog ? window.ErrorLog.cards() : [];
+    if (window.Vetoed) cards = window.Vetoed.filter(cards);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, UI.t('Tus errores', 'Your mistakes')));
 

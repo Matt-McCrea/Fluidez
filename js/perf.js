@@ -14,7 +14,7 @@
  * answer here.
  * ========================================================================== */
 window.Perf = (function () {
-  var BUILD = 'v51';
+  var BUILD = 'v52';
   var LIMIT = 40;
   var log = [];
   var now = (typeof performance !== 'undefined' && performance.now)

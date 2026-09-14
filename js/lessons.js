@@ -149,6 +149,162 @@
     };
   }
 
+  /* ---- what may become a review card -------------------------------------
+   * A probe checks understanding at the end of its own lesson. A review card
+   * asks you to REPRODUCE an answer, exactly, weeks later, with nothing around
+   * it, and counts a miss against you. Those are different jobs, and most
+   * probes are only fit for the first.
+   *
+   * Everything below is one question: is this a thing the learner will one day
+   * SAY, or is it a fact about how Spanish is described? Only the first kind
+   * belongs in a deck. The rules are applied by withRecall() to probe-derived
+   * cards and by gradeAuthoredRecall() to the lessons that write their own.
+   * ---------------------------------------------------------------------- */
+  /* A probe checks understanding at the end of a lesson. That is not the same
+   * job as a spaced-repetition card, which asks you to REPRODUCE an answer
+   * exactly, weeks later, and counts a miss against you.
+   *
+   * "What can stand in for a dropped noun that a possessive cannot?" ->
+   * "the article (el/la + adjective)" is a fair comprehension check and a
+   * terrible review item: it is a question about grammar in English, with a
+   * prose answer nobody will retype. Those are marked srs:false — still asked
+   * once, after the lesson, never enrolled into the deck.
+   *
+   * `probe` carries the ORIGINAL question through. Flattening an mcq to
+   * {front, back} threw its options away, and the quick check renders a bare
+   * text input, so all 1,467 of them became "type this exact string from
+   * nothing": the deictic/anaphoric probe below asks you to produce "dos días
+   * después" with no way to know that was the target. Keep the shape; let the
+   * view ask it the way it was written. */
+  function metalinguistic(front, kind) {
+    var f = String(front || '').trim();
+    // The English form, and the same question asked in Spanish — which the
+    // old check let through, because it required the front to carry no
+    // accents: 412 cards of "¿Qué diferencia hay entre X e Y?" with a
+    // paragraph for an answer went into the deck as typed recall.
+    if (/^(what|which|why|how|when|name the|in which)\b/i.test(f)) return true;
+    /* NOT \b after the Spanish word. \b is defined on [A-Za-z0-9_], and é is
+     * not in that set — so "¿Qué signo…" never matched /^¿(qué)\b/, because
+     * there is no boundary between é and the space that follows it. Every
+     * accented question word (qué, cuál, cuáles, cómo, cuándo, quién,
+     * cuántos) failed this test silently; only `puede` worked, by ending in
+     * an unaccented letter. That is why Spanish questions about grammar kept
+     * arriving in Repasar as typed recall. Match the separator instead. */
+    if (/^¿\s*(qué|cuál|cuáles|por qué|cómo|cuándo|quién|quiénes|puede|cuántos?|dónde|adónde|cambia|concuerda|existe|hay|se puede)(?=[\s,:;"'?!]|$)/i.test(f)) return true;
+    // "¿En qué personas…", "¿Con qué palabra…", "¿A qué hora…" — a preposition
+    // in front of the question word, still a question about the grammar.
+    if (/^¿\s*(en|con|a|de|por|para|desde|hasta)\s+(qué|cuál|cuáles|quién)(?=[\s,:;"'?!]|$)/i.test(f)) return true;
+    /* The same question with a SCENARIO in front of it slipped straight
+     * through, because the test only looked at the opening word:
+     *   "Ana te pregunta "¿cómo te llamas?". ¿Qué respondes?"
+     *   "Eres una mujer. ¿Cómo dices "pleased to meet you"?"
+     * Both went into the deck as typed recall. Weeks later the card arrives
+     * with no Ana and no dialogue — it is a question about a situation the
+     * learner can no longer see, and there is no way to know the answer was
+     * meant to be "Tom". A probe that sets the scene is a comprehension
+     * check for the end of its own lesson, never a review card. */
+    /* A cloze is exempt: its front IS the prompt and the deck shows all of
+     * it, gap included, so an embedded question ("—Me llamo Ana. ¿___ tú?")
+     * is answerable weeks later from the card alone. Only mcq and recall
+     * cards can be orphaned from a scene they no longer carry. */
+    if (kind === 'cloze' || f.indexOf('___') !== -1) return false;
+    if (/[.:]\s*¿/.test(f)) return true;              // scenario, then a question
+    if (/¿[^?]*\?/.test(f) && !/^¿/.test(f)) return true;  // question embedded later
+    return false;
+  }
+  /* GRAMMATICAL TERMINOLOGY is not Spanish either. "Robaron la cartera a
+   * muchas personas" — "a muchas personas" es: -> "objeto indirecto" is a
+   * question about how to PARSE Spanish, and reproducing the label weeks
+   * later teaches nothing about using it. Same for "cuatro vs cuarto —
+   * which one names a POSITION?" -> "cuarto (ordinal)", and for the
+   * formulas: "El condicional compuesto se forma con..." -> "habría +
+   * participio" is a shape to recognise, not a string to type.
+   *
+   * Never applied to a cloze: there the answer is a word standing in a
+   * sentence, so "¿Quieres que te ___ (presentar) a mis amigos?" ->
+   * "presente" is the subjunctive of presentar and not the word "present". */
+  var TERMS = ('sujeto objeto predicado atributo complemento nucleo sintagma oracion clausula ' +
+    'perifrasis infinitivo gerundio participio subjuntivo indicativo imperativo condicional ' +
+    'preterito imperfecto indefinido perfecto pluscuamperfecto futuro presente ordinal cardinal ' +
+    'masculino femenino singular plural articulo sustantivo adjetivo adverbio pronombre ' +
+    'preposicion conjuncion determinante interrogativo exclamativo relativo posesivo demostrativo ' +
+    'diminutivo aumentativo tilde acento silaba tonica atona diptongo hiato morfema desinencia ' +
+    'raiz voz activa pasiva transitivo intransitivo reflexivo impersonal copulativo directo indirecto circunstancial agente paciente modo tiempo persona numero genero concordancia conjugacion declinacion sufijo prefijo').split(' ');
+  var TERM_SKIP = ['el', 'la', 'los', 'las', 'un', 'una', 'de', 'del', 'en', 'con', 'y', 'o'];
+  function isTerm(str) {
+    var t = E.deaccent(String(str).toLowerCase()).replace(/[^a-z\s]/g, ' ').replace(/\s+/g, ' ').trim();
+    if (!t) return false;
+    var parts = t.split(' ').filter(function (x) { return TERM_SKIP.indexOf(x) === -1; });
+    return parts.length > 0 && parts.length <= 3 &&
+           parts.every(function (x) { return TERMS.indexOf(x) !== -1; });
+  }
+  function terminology(back, front, kind) {
+    var b = String(back || '');
+    if (kind === 'cloze' || String(front || '').indexOf('___') !== -1) return false;
+    if (/\+/.test(b)) return true;                       // a formula: "haber + participio"
+    var br = /\(([^)]*)\)/.exec(b);
+    if (br && isTerm(br[1])) return true;                // "cuarto (ordinal)"
+    return isTerm(b.replace(/\([^)]*\)/, ''));
+  }
+
+  /* A gap that OPENS its sentence has nothing in front of it to pin it down,
+   * and without a bracketed hint there is usually more than one right
+   * answer: "___ llegar tarde." is Siento, and equally Lamento or Perdona
+   * por. Marking one of those wrong, then asking again next week, is the
+   * app being wrong at the learner repeatedly. */
+  function ambiguousOpener(front) {
+    var f = String(front || '');
+    if (/\([^)]*\)/.test(f)) return false;
+    return /^(_{2,}|＿+)/.test(f.replace(/^[^\wáéíóúñ¿¡_＿]*/, ''));
+  }
+
+  /* An ENDING is not a word. "Presente: -ar ending for yo" -> "o" asks the
+   * learner to type a morpheme, which is the table in the lesson rather than
+   * anything they will ever say. The endings stay in the lesson, where they
+   * are reference; the tense itself is practised by producing whole forms. */
+  function morphemeOnly(front) { return /\bendings?\b/i.test(String(front || '')); }
+
+  /* An answer written in ENGLISH is a description of Spanish, not Spanish.
+   * "Two letters that sound identical in Spanish" -> "v and b"; "Does
+   * Querido/a agree with the writer or the person addressed?" -> "the person
+   * addressed". Both are fair comprehension checks at the end of their
+   * lesson and neither is a thing to recall: the learner is being asked to
+   * reproduce an English phrase about grammar, weeks later, exactly.
+   *
+   * Detected by English words that have no Spanish homograph, so a Spanish
+   * answer can never trip it — "Querida Sara,", "mexicana", "¡Chao!" and
+   * "Encantada." all carry none of them. */
+  var ENGLISH_ONLY = ('the and of to is are was were it its with that this these those they them ' +
+    'their there then than which who whom whose what where when why how both each only more less ' +
+    'before after same different person people letter letters word words verb verbs noun nouns ' +
+    'adjective ending endings form forms sound sounds sentence clause subject object gender ' +
+    'plural singular masculine feminine formal informal always never usually something anything ' +
+    'nothing someone anyone everyone yes').split(' ');
+  var ENGLISH_RE = new RegExp('(^|[^a-zá-úñü])(' + ENGLISH_ONLY.join('|') + ')([^a-zá-úñü]|$)', 'i');
+  function descriptive(back) { return ENGLISH_RE.test(String(back || '')); }
+
+  /* Whatever it asks, an answer you could not type back weeks later is not a
+   * card. Review always types a lesson card (js/views/review.js resolves
+   * `fixed` to mode 'type'), so a five-word answer is an automatic miss —
+   * 1,015 of them, running up to 27 words. */
+  function reproducible(back, kind, front) {
+    var b = String(back || '').trim();
+    var words = b.split(/\s+/).length;
+    /* A yes/no answer is not a recall card. Review types the answer, so the
+     * learner is being asked to type "no" — half of them get it right by
+     * writing the first thing that occurs to them, and nothing is recalled.
+     * These are fine as an mcq at the end of a lesson and useless in a deck:
+     * "¿Puede 'totalmente' ir delante del verbo?" -> "no — posición
+     * postverbal obligatoria". */
+    if (/^(no|sí|si)\b/i.test(b)) return false;
+    /* A gapped card has to be inferable from what it shows. Two words is
+     * about the limit: "Llegó el lunes y ___ se marchó." -> "dos días
+     * después" shows nothing that could produce that answer rather than
+     * "luego" or "después", so it is a guess dressed as recall. */
+    if ((kind === 'cloze' || String(front || '').indexOf('___') !== -1) && words > 2) return false;
+    return words <= 3;
+  }
+
   /* Strand lessons author their checks as `probes` — a richer shape carrying
    * mcq and cloze as well as plain recall, because the same items also drive
    * placement and the pre-lesson skip check. Everything downstream (the SRS
@@ -159,98 +315,6 @@
     if (l.recall || !l.probes) return l;
     var out = Object.create(null);
     Object.keys(l).forEach(function (k) { out[k] = l[k]; });
-    /* A probe checks understanding at the end of a lesson. That is not the same
-     * job as a spaced-repetition card, which asks you to REPRODUCE an answer
-     * exactly, weeks later, and counts a miss against you.
-     *
-     * "What can stand in for a dropped noun that a possessive cannot?" ->
-     * "the article (el/la + adjective)" is a fair comprehension check and a
-     * terrible review item: it is a question about grammar in English, with a
-     * prose answer nobody will retype. Those are marked srs:false — still asked
-     * once, after the lesson, never enrolled into the deck.
-     *
-     * `probe` carries the ORIGINAL question through. Flattening an mcq to
-     * {front, back} threw its options away, and the quick check renders a bare
-     * text input, so all 1,467 of them became "type this exact string from
-     * nothing": the deictic/anaphoric probe below asks you to produce "dos días
-     * después" with no way to know that was the target. Keep the shape; let the
-     * view ask it the way it was written. */
-    function metalinguistic(front, kind) {
-      var f = String(front || '').trim();
-      // The English form, and the same question asked in Spanish — which the
-      // old check let through, because it required the front to carry no
-      // accents: 412 cards of "¿Qué diferencia hay entre X e Y?" with a
-      // paragraph for an answer went into the deck as typed recall.
-      if (/^(what|which|why|how|when|name the|in which)\b/i.test(f)) return true;
-      /* NOT \b after the Spanish word. \b is defined on [A-Za-z0-9_], and é is
-       * not in that set — so "¿Qué signo…" never matched /^¿(qué)\b/, because
-       * there is no boundary between é and the space that follows it. Every
-       * accented question word (qué, cuál, cuáles, cómo, cuándo, quién,
-       * cuántos) failed this test silently; only `puede` worked, by ending in
-       * an unaccented letter. That is why Spanish questions about grammar kept
-       * arriving in Repasar as typed recall. Match the separator instead. */
-      if (/^¿\s*(qué|cuál|cuáles|por qué|cómo|cuándo|quién|quiénes|puede|cuántos?|dónde|adónde|cambia|concuerda|existe|hay|se puede)(?=[\s,:;"'?!]|$)/i.test(f)) return true;
-      // "¿En qué personas…", "¿Con qué palabra…", "¿A qué hora…" — a preposition
-      // in front of the question word, still a question about the grammar.
-      if (/^¿\s*(en|con|a|de|por|para|desde|hasta)\s+(qué|cuál|cuáles|quién)(?=[\s,:;"'?!]|$)/i.test(f)) return true;
-      /* The same question with a SCENARIO in front of it slipped straight
-       * through, because the test only looked at the opening word:
-       *   "Ana te pregunta "¿cómo te llamas?". ¿Qué respondes?"
-       *   "Eres una mujer. ¿Cómo dices "pleased to meet you"?"
-       * Both went into the deck as typed recall. Weeks later the card arrives
-       * with no Ana and no dialogue — it is a question about a situation the
-       * learner can no longer see, and there is no way to know the answer was
-       * meant to be "Tom". A probe that sets the scene is a comprehension
-       * check for the end of its own lesson, never a review card. */
-      /* A cloze is exempt: its front IS the prompt and the deck shows all of
-       * it, gap included, so an embedded question ("—Me llamo Ana. ¿___ tú?")
-       * is answerable weeks later from the card alone. Only mcq and recall
-       * cards can be orphaned from a scene they no longer carry. */
-      if (kind === 'cloze' || f.indexOf('___') !== -1) return false;
-      if (/[.:]\s*¿/.test(f)) return true;              // scenario, then a question
-      if (/¿[^?]*\?/.test(f) && !/^¿/.test(f)) return true;  // question embedded later
-      return false;
-    }
-    /* An answer written in ENGLISH is a description of Spanish, not Spanish.
-     * "Two letters that sound identical in Spanish" -> "v and b"; "Does
-     * Querido/a agree with the writer or the person addressed?" -> "the person
-     * addressed". Both are fair comprehension checks at the end of their
-     * lesson and neither is a thing to recall: the learner is being asked to
-     * reproduce an English phrase about grammar, weeks later, exactly.
-     *
-     * Detected by English words that have no Spanish homograph, so a Spanish
-     * answer can never trip it — "Querida Sara,", "mexicana", "¡Chao!" and
-     * "Encantada." all carry none of them. */
-    var ENGLISH_ONLY = ('the and of to is are was were it its with that this these those they them ' +
-      'their there then than which who whom whose what where when why how both each only more less ' +
-      'before after same different person people letter letters word words verb verbs noun nouns ' +
-      'adjective ending endings form forms sound sounds sentence clause subject object gender ' +
-      'plural singular masculine feminine formal informal always never usually something anything ' +
-      'nothing someone anyone everyone yes').split(' ');
-    var ENGLISH_RE = new RegExp('(^|[^a-zá-úñü])(' + ENGLISH_ONLY.join('|') + ')([^a-zá-úñü]|$)', 'i');
-    function descriptive(back) { return ENGLISH_RE.test(String(back || '')); }
-
-    /* Whatever it asks, an answer you could not type back weeks later is not a
-     * card. Review always types a lesson card (js/views/review.js resolves
-     * `fixed` to mode 'type'), so a five-word answer is an automatic miss —
-     * 1,015 of them, running up to 27 words. */
-    function reproducible(back, kind, front) {
-      var b = String(back || '').trim();
-      var words = b.split(/\s+/).length;
-      /* A yes/no answer is not a recall card. Review types the answer, so the
-       * learner is being asked to type "no" — half of them get it right by
-       * writing the first thing that occurs to them, and nothing is recalled.
-       * These are fine as an mcq at the end of a lesson and useless in a deck:
-       * "¿Puede 'totalmente' ir delante del verbo?" -> "no — posición
-       * postverbal obligatoria". */
-      if (/^(no|sí|si)\b/i.test(b)) return false;
-      /* A gapped card has to be inferable from what it shows. Two words is
-       * about the limit: "Llegó el lunes y ___ se marchó." -> "dos días
-       * después" shows nothing that could produce that answer rather than
-       * "luego" or "después", so it is a guess dressed as recall. */
-      if ((kind === 'cloze' || String(front || '').indexOf('___') !== -1) && words > 2) return false;
-      return words <= 3;
-    }
     out.recall = l.probes.map(function (p) {
       var card = p.kind === 'mcq'
             ? { id: p.id, front: p.q, back: p.options[p.answer],
@@ -262,10 +326,37 @@
       card.srs = p.srs !== false &&                     // an author can always veto
                  !metalinguistic(card.front, p.kind) &&
                  !descriptive(card.back) &&
+                 !terminology(card.back, card.front, p.kind) &&
+                 !ambiguousOpener(card.front) &&
+                 !morphemeOnly(card.front) &&
                  reproducible(card.back, p.kind, card.front);
       return card;
     });
     return out;
+  }
+
+  /* The same judgement, for lessons that author their own `recall` rather than
+   * deriving it from probes — the generated tense lessons and the hand-written
+   * concept ones. withRecall() returns early for those, so before this they
+   * were the one route into the review deck with no filter on it at all: the
+   * endings table went in as "type this morpheme", and ser/estar's contrast
+   * cards went in as "type the word imperfecto". */
+  function gradeAuthoredRecall(l) {
+    if (!l || !l.recall) return l;
+    l.recall.forEach(function (r) {
+      // withRecall has already decided for probe-derived cards; this is for
+      // the ones that arrived with no decision at all, including the generated
+      // halves of a merged lesson
+      if (r.srs !== undefined) return;
+      var probeKind = r.probe && r.probe.kind;
+      r.srs = !metalinguistic(r.front, probeKind) &&
+              !descriptive(r.back) &&
+              !terminology(r.back, r.front, probeKind) &&
+              !ambiguousOpener(r.front) &&
+              !morphemeOnly(r.front) &&
+              reproducible(r.back, probeKind, r.front);
+    });
+    return l;
   }
 
   function build() {
@@ -611,7 +702,7 @@
    * ARRAY has to be in teaching order — deriving a separate SYLLABUS list and
    * leaving the array in build order would teach a B2 function lesson as
    * lesson 18, ahead of every A1 one. Order the array itself. */
-  var built = applyMerges(build());
+  var built = applyMerges(build()).map(gradeAuthoredRecall);
   var syllabus = buildSyllabus(built);
   var byId = {};
   built.forEach(function (l) { byId[l.id] = l; });

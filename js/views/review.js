@@ -91,7 +91,9 @@ window.StageReview = (function () {
     if (ErrorLog) ErrorLog.cards().forEach(function (c) {               // {front, back, hint} — fixed
       items.push({ id: c.id, front: c.front, back: c.back, hint: c.hint || null, kind: 'error', fixed: true });
     });
-    return items;
+    // "Stop asking me this" is permanent and applies everywhere a card can
+    // surface, not only where it was retired.
+    return window.Vetoed ? window.Vetoed.filter(items) : items;
   }
 
   // Resolve a card to a concrete direction: { front, back, mode, toSpanish, hint }
@@ -218,7 +220,27 @@ window.StageReview = (function () {
       body.appendChild(input);
       if (R.toSpanish) body.appendChild(UI.accentBar(function () { return input; }));
       body.appendChild(hintEl);
-      var controls = UI.el('div', 'row-controls'); controls.appendChild(revealB); body.appendChild(controls);
+      var controls = UI.el('div', 'row-controls'); controls.appendChild(revealB);
+      /* The escape hatch for a question no rule caught. A bad card is bad
+       * every time it comes round, so this retires it for good rather than
+       * pushing it a few days out — and it costs the learner nothing: the
+       * round moves on, no miss recorded. */
+      if (cur.id) {
+        var vetoB = UI.el('button', 'linkish veto-btn', UI.t('No preguntes esto', 'Stop asking this'));
+        vetoB.type = 'button';
+        vetoB.title = UI.t('Retira esta pregunta para siempre', 'Retires this question for good');
+        vetoB.addEventListener('click', function () {
+          var gone = cur.id;
+          if (window.Vetoed) window.Vetoed.add(gone);
+          // drop every copy, including the one advance() re-queued after a miss
+          queue = queue.filter(function (c) { return c.id !== gone; });
+          feedback.textContent = UI.t('Retirada.', 'Retired.');
+          feedback.className = 'feedback';
+          setTimeout(show, 260);
+        });
+        controls.appendChild(vetoB);
+      }
+      body.appendChild(controls);
       var locked = false, revealed = false;
       function good() { if (locked) return; locked = true; feedback.textContent = '¡Correcto! ' + R.back; feedback.className = 'feedback good'; setTimeout(function () { advance(true); }, 350); }
       // a two-meaning gloss or a gender bracket accepts any one of its parts

@@ -46,7 +46,9 @@ window.ErrorLog = (function () {
     var s = load(), out = [];
     Object.keys(s).forEach(function (k) {
       var e = s[k];
-      if (e.reviewable) out.push({ id: e.id, front: e.front, back: e.back, kind: 'error', hint: e.hint });
+      if (e.reviewable && !(window.Vetoed && window.Vetoed.has(e.id))) {
+        out.push({ id: e.id, front: e.front, back: e.back, kind: 'error', hint: e.hint });
+      }
     });
     return out;
   }

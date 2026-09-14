@@ -468,6 +468,33 @@
 .g-rating.up .g-rating-d { color: var(--good); }
 .g-rating.down .g-rating-d { color: var(--bad); }
 
+/* ---- the tense check: only here on the days it is due --------------------- */
+.g-tensecheck {
+  background: var(--panel); border: 1px solid var(--border);
+  border-left: 3px solid #2f7fb8; border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 16px 20px 15px; margin-bottom: 18px;
+}
+.g-tc-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px; }
+.g-tc-label {
+  font-size: .7rem; text-transform: uppercase; letter-spacing: .1em;
+  font-weight: 750; color: #2f7fb8;
+}
+.g-tc-later {
+  margin-left: auto; border: none; background: none; cursor: pointer; padding: 0;
+  color: var(--muted); font-size: .8rem; font-weight: 600; min-height: 0;
+}
+.g-tc-later:hover { color: var(--text); }
+.g-tc-title { font-size: 1.08rem; font-weight: 700; line-height: 1.3; }
+.g-tc-sub { margin: 3px 0 13px; color: var(--muted); font-size: .89rem; }
+.g-tc-go {
+  border: none; background: #2f7fb8; color: #fff; font-weight: 650; font-size: .92rem;
+  padding: 10px 22px; border-radius: 9px; cursor: pointer;
+}
+.g-tc-go:hover { filter: brightness(1.1); }
+
+/* the "stop asking this" escape hatch on a review card */
+.veto-btn { display: inline; margin: 0 0 0 4px; font-size: .82rem; }
+
 /* ---- the rematch, and the drill a tense lesson has just earned ------------ */
 .g-rematch, .g-tensecard {
   margin: 26px auto 0; max-width: 420px; text-align: left;
