@@ -12,23 +12,33 @@ window.GRAMMAR = [
 {
   key:'presente', title:'Presente (Present)',
   canDo:'talk about what you do, where you live and how things are right now',
-  summary:'Actions happening now, habitual actions, and general truths.',
+  summary:'One tense does three jobs in Spanish: what is happening right now, what you do regularly, and what is generally true.',
   formation:'Drop the -ar/-er/-ir ending and add the present endings to the stem.',
   when:[
     'Something happening right now: <i>Como una manzana.</i> — I am eating an apple.',
     'Habitual / repeated actions: <i>Trabajo todos los días.</i> — I work every day.',
-    'General facts and truths: <i>El agua hierve a 100 grados.</i>',
-    'Near-future plans (with a time marker): <i>Mañana viajo a México.</i>'
+    'General facts and truths: <i>El agua hierve a 100 grados.</i> — Water boils at 100 degrees.',
+    'Near-future plans (with a time marker): <i>Mañana viajo a México.</i> — Tomorrow I fly to Mexico.'
   ],
   irregulars:[
     'Stem changers (e→ie, o→ue, e→i) change in all forms except nosotros/vosotros: <i>pensar → pienso</i>, <i>dormir → duermo</i>, <i>pedir → pido</i>.',
     'Irregular "yo": <i>tener → tengo</i>, <i>hacer → hago</i>, <i>conocer → conozco</i>, <i>salir → salgo</i>.',
-    'Fully irregular: <i>ser, estar, ir, haber</i>.'
+    'Fully irregular — learn these as whole words: <i>ser</i> (to be), <i>estar</i> (to be), <i>ir</i> (to go), <i>haber</i> (there is/are).'
   ],
   examples:[
     {es:'Hablo español todos los días.', en:'I speak Spanish every day.'},
     {es:'¿Dónde vives?', en:'Where do you live?'},
     {es:'No entiendo la pregunta.', en:"I don't understand the question."}
+  ],
+  probes:[
+    { id:'p:presente:persona', kind:'mcq', q:'Which one says "I work every day"?',
+      options:['Trabajas todos los días.','Trabajo todos los días.','Trabajamos todos los días.'], answer:1 },
+    /* srs:false — the answer is an English word. Fine as a check at the end of
+     * the lesson, useless as a card that asks you to type it back in a month. */
+    { id:'p:presente:futuro', kind:'mcq', q:'"Mañana viajo a México." When is the trip?',
+      options:['Tomorrow','Right now','Every week'], answer:0, srs:false },
+    { id:'p:presente:cloze-vivir', kind:'cloze', text:'¿Dónde ___ tú? (vivir)', accept:['vives'] },
+    { id:'p:presente:cloze-hablar', kind:'cloze', text:'Yo ___ español todos los días. (hablar)', accept:['hablo'] }
   ]
 },
 {

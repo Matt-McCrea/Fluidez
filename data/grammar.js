@@ -18,8 +18,8 @@ window.CONCEPT_LESSONS = [
   summary: 'Spanish splits "to be" into two verbs. Ser is for identity and essence; estar is for states, locations and conditions. Getting this right changes your meaning, not just your accuracy.',
   sections: [
     { h: 'The core idea', html: '<b>Ser</b> = what something fundamentally <i>is</i> (identity, origin, defining traits, time). <b>Estar</b> = what condition or place it is <i>in</i> right now (states, feelings, location).' },
-    { h: 'Use SER for', html: '<ul><li>Identity: <i>Soy profesor.</i></li><li>Origin: <i>Es de México.</i></li><li>Defining traits: <i>Ella es alta.</i></li><li>Time/dates: <i>Son las tres.</i></li></ul>' },
-    { h: 'Use ESTAR for', html: '<ul><li>Location: <i>Estoy en casa.</i></li><li>Feelings/conditions: <i>Estás cansado.</i></li><li>Ongoing actions: <i>Está lloviendo.</i></li></ul>' }
+    { h: 'Use SER for', html: '<ul><li>Identity: <i>Soy profesor.</i> — I\'m a teacher.</li><li>Origin: <i>Es de México.</i> — He/She is from Mexico.</li><li>Defining traits: <i>Ella es alta.</i> — She is tall.</li><li>Time/dates: <i>Son las tres.</i> — It\'s three o\'clock.</li></ul>' },
+    { h: 'Use ESTAR for', html: '<ul><li>Location: <i>Estoy en casa.</i> — I\'m at home.</li><li>Feelings/conditions: <i>Estás cansado.</i> — You\'re tired.</li><li>Ongoing actions: <i>Está lloviendo.</i> — It\'s raining.</li></ul>' }
   ],
   contrasts: [
     { es: 'Es aburrido.', en: 'He is boring.', note: 'ser = character' },
@@ -28,8 +28,8 @@ window.CONCEPT_LESSONS = [
     { es: 'Está rico.', en: 'It (food) is delicious.', note: 'estar = condition' }
   ],
   pitfalls: [
-    'Feelings are almost always <b>estar</b>: <i>estoy feliz, estoy triste</i> — not <i>soy</i>.',
-    'Location of a thing/person uses <b>estar</b>, but location of an <i>event</i> uses <b>ser</b>: <i>La fiesta es en mi casa.</i>'
+    'Feelings are almost always <b>estar</b>: <i>estoy feliz</i> (I\'m happy), <i>estoy triste</i> (I\'m sad) — not <i>soy</i>.',
+    'Location of a thing/person uses <b>estar</b>, but location of an <i>event</i> uses <b>ser</b>: <i>La fiesta es en mi casa.</i> — The party is at my house.'
   ],
   examples: [
     { es: 'Soy de Escocia, pero estoy en España.', en: 'I am from Scotland, but I am in Spain.' },

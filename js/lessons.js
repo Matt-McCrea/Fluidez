@@ -145,6 +145,11 @@
       pitfalls: doc.irregulars || [],
       examples: doc.examples || [],
       conjTabs: irr.length ? { tense: tk, verbs: irr } : null,   // tabbed conjugations
+      /* A doc may author `probes` on top of the engine-built recall. The
+       * engine's items are the endings table, which the filters below refuse
+       * to enrol (a morpheme is not a word anyone says) — so a tense lesson
+       * with no probes of its own ends its day putting nothing into review. */
+      probes: doc.probes || undefined,
       recall: recallFor(tk, doc.title.split(' (')[0])
     };
   }
@@ -178,6 +183,14 @@
    * view ask it the way it was written. */
   function metalinguistic(front, kind) {
     var f = String(front || '').trim();
+    /* A gapped front is exempt, and has to be tested FIRST: its front IS the
+     * prompt and the deck shows all of it, gap included, so it is answerable
+     * weeks later from the card alone. Tested last, as it was, the Spanish
+     * question-word rule below got there first and threw out every cloze that
+     * happened to OPEN with a question word — "¿Dónde ___ tú? (vivir)" is a
+     * sentence with a hole in it, not a question about grammar, and 23 of
+     * them were being kept out of review on that technicality. */
+    if (kind === 'cloze' || f.indexOf('___') !== -1) return false;
     // The English form, and the same question asked in Spanish — which the
     // old check let through, because it required the front to carry no
     // accents: 412 cards of "¿Qué diferencia hay entre X e Y?" with a
@@ -203,11 +216,8 @@
      * learner can no longer see, and there is no way to know the answer was
      * meant to be "Tom". A probe that sets the scene is a comprehension
      * check for the end of its own lesson, never a review card. */
-    /* A cloze is exempt: its front IS the prompt and the deck shows all of
-     * it, gap included, so an embedded question ("—Me llamo Ana. ¿___ tú?")
-     * is answerable weeks later from the card alone. Only mcq and recall
-     * cards can be orphaned from a scene they no longer carry. */
-    if (kind === 'cloze' || f.indexOf('___') !== -1) return false;
+    /* Only mcq and recall cards can be orphaned from a scene they no longer
+     * carry — a cloze already returned above. */
     if (/[.:]\s*¿/.test(f)) return true;              // scenario, then a question
     if (/¿[^?]*\?/.test(f) && !/^¿/.test(f)) return true;  // question embedded later
     return false;
@@ -312,10 +322,10 @@
    * `recall` shape, so derive it here rather than teaching four call sites a
    * second vocabulary. */
   function withRecall(l) {
-    if (l.recall || !l.probes) return l;
+    if (!l.probes) return l;
     var out = Object.create(null);
     Object.keys(l).forEach(function (k) { out[k] = l[k]; });
-    out.recall = l.probes.map(function (p) {
+    out.recall = (l.recall || []).concat(l.probes.map(function (p) {
       var card = p.kind === 'mcq'
             ? { id: p.id, front: p.q, back: p.options[p.answer],
                 probe: { kind: 'mcq', options: p.options, answer: p.answer } }
@@ -331,7 +341,7 @@
                  !morphemeOnly(card.front) &&
                  reproducible(card.back, p.kind, card.front);
       return card;
-    });
+    }));
     return out;
   }
 
@@ -367,7 +377,7 @@
 
     var lessons = [];
     SEED.forEach(function (s) {
-      if (docs[s.id]) lessons.push(tenseLesson(docs[s.id], s.level));
+      if (docs[s.id]) lessons.push(withRecall(tenseLesson(docs[s.id], s.level)));
       else if (concepts[s.id]) { concepts[s.id].level = s.level; lessons.push(concepts[s.id]); }
     });
     // any concept lessons not named in SYLLABUS are appended (nothing lost)

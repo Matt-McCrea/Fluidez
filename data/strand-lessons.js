@@ -2423,13 +2423,13 @@ window.STRAND_LESSONS = [
   canDo: 'hold a whole first conversation on your own — greet, name, origin, thanks, goodbye',
   summary: 'No new material. Everything you need is in the nine days behind you. Write both halves of a first meeting between you and someone you have just met, then say your half out loud.',
   sections: [
-    { h: 'What to write', html: 'Eight to twelve lines, both speakers. It must contain: a greeting, both names asked and given, where each of you is from, one <i>gracias</i> with its reply, and a goodbye. Keep every line short — the model below is 47 words for eleven lines.' },
-    { h: 'Then say it', html: 'Read your half aloud twice. The second time, cover the text. The aim is not memorisation — it is finding out which of the six phrases you actually have and which three you still have to look up.' },
+    { h: 'What to write', html: 'Eight to twelve lines, both speakers. It must contain: a greeting, both names asked and given, where each of you is from, one <i>gracias</i> with its reply, and a goodbye. Keep every line short — the model below says all of it in eleven lines and 46 words.' },
+    { h: 'Then say it', html: 'Read your half aloud twice. The second time, cover the text. The aim is not memorisation — it is finding out which lines come out on their own and which ones you still have to look up.' },
     { h: 'If you get stuck', html: 'Go back to <i>Dos personas se conocen</i> from day one. It contains every move this task asks for, and rereading it is not cheating.' }
   ],
   model: {
     title: 'one way of doing it',
-    text: '<p>—Hola, buenas tardes.<br>—Buenas tardes.<br>—Me llamo Clara. ¿Y tú?<br>—Me llamo Yusuf. Encantado.<br>—Encantada, Yusuf. ¿De dónde eres?<br>—Soy de Turquía, de Esmirna. ¿Y tú?<br>—Soy de aquí, de Valencia.<br>—¡Qué bien! Toma, tu café.<br>—Ah, muchas gracias.<br>—De nada. Hasta luego, Yusuf.<br>—Adiós, Clara.</p>'
+    text: '<p>—Hola, buenas tardes. <span class="muted">Hello, good afternoon.</span><br>—Buenas tardes. <span class="muted">Good afternoon.</span><br>—Me llamo Clara. ¿Y tú? <span class="muted">I\'m Clara. And you?</span><br>—Me llamo Yusuf. Encantado. <span class="muted">I\'m Yusuf. Pleased to meet you.</span><br>—Encantada, Yusuf. ¿De dónde eres? <span class="muted">Pleased to meet you, Yusuf. Where are you from?</span><br>—Soy de Turquía, de Esmirna. ¿Y tú? <span class="muted">I\'m from Turkey, from Izmir. And you?</span><br>—Soy de aquí, de Valencia. <span class="muted">I\'m from here, from Valencia.</span><br>—¡Qué bien! Toma, tu café. <span class="muted">How nice! Here you go, your coffee.</span><br>—Ah, muchas gracias. <span class="muted">Oh, thank you very much.</span><br>—De nada. Hasta luego, Yusuf. <span class="muted">You\'re welcome. See you later, Yusuf.</span><br>—Adiós, Clara. <span class="muted">Goodbye, Clara.</span></p>'
   },
   checklist: [
     'Both people are greeted — not just one.',
@@ -2451,7 +2451,7 @@ window.STRAND_LESSONS = [
       options: ['Encantada.', 'Encantado.', 'Encantas.'], answer: 0 },
     { id: 'p:task-presentarse-2', kind: 'mcq',
       q: 'Which of these would NOT come up when two people first meet?',
-      options: ['¿Cómo te llamas?', '¿De dónde eres?', '¿Cuánto costó tu casa?'], answer: 2 },
+      options: ['¿Cómo te llamas?', '¿De dónde eres?', '¿Cuánto cuesta tu casa?'], answer: 2 },
     { id: 'p:task-presentarse-3', kind: 'cloze',
       text: '—Muchas gracias. —De ___.', accept: ['nada'] },
     { id: 'p:task-presentarse-4', kind: 'recall',
