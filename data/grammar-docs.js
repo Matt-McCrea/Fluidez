@@ -59,6 +59,18 @@ window.GRAMMAR = [
   canDo:'say what happened and when, as a sequence of completed events', title:'Pretérito (Preterite)',
   summary:'Completed actions in the past with a defined beginning/end.',
   formation:'Add the preterite endings to the stem. -er and -ir verbs share one set of endings.',
+  keywords: [
+    { es: 'ayer', en: 'yesterday' },
+    { es: 'anoche', en: 'last night' },
+    { es: 'el mes pasado', en: 'last month' },
+    { es: 'hablé / hablaste / habló', en: 'I spoke / you spoke / he, she spoke' },
+    { es: 'comí / comiste / comió', en: 'I ate / you ate / he, she ate' },
+    { es: 'fui', en: 'I went, I was' },
+    { es: 'hice', en: 'I did, I made' },
+    { es: 'tuve', en: 'I had' },
+    { es: 'estuve', en: 'I was (in a place)' },
+    { es: 'vi', en: 'I saw' }
+  ],
   when:[
     'A single completed action: <i>Ayer comí paella.</i> — Yesterday I ate paella.',
     'A sequence of completed events: <i>Llegué, comí y me fui.</i> — I arrived, ate and left.',
@@ -81,6 +93,18 @@ window.GRAMMAR = [
   canDo:'describe how things were and what you used to do', title:'Imperfecto (Imperfect)',
   summary:'Ongoing, habitual, or descriptive past — the "was/used to" past.',
   formation:'Add the imperfect endings to the stem. -er and -ir share endings. Only three verbs are irregular.',
+  keywords: [
+    { es: 'antes', en: 'before, back then' },
+    { es: 'de niño', en: 'as a child' },
+    { es: 'siempre', en: 'always' },
+    { es: 'todos los días', en: 'every day' },
+    { es: 'hablaba / hablabas / hablaba', en: 'I used to speak / you used to speak / he, she used to speak' },
+    { es: 'comía / vivía', en: 'I used to eat / I used to live' },
+    { es: 'era', en: 'he, she, it was (ser)' },
+    { es: 'iba', en: 'he, she used to go (ir)' },
+    { es: 'veía', en: 'he, she used to see (ver)' },
+    { es: 'hacía frío', en: 'it was cold' }
+  ],
   when:[
     'Habitual past actions: <i>De niño jugaba al fútbol.</i> — As a child I used to play soccer.',
     'Ongoing background action: <i>Llovía cuando salí.</i> — It was raining when I left.',
@@ -138,6 +162,20 @@ window.GRAMMAR = [
   key:'perfecto', title:'Presente perfecto (Present Perfect)',
   summary:'Past actions connected to the present ("have done").',
   formation:'Present of <i>haber</i> (he, has, ha, hemos, habéis, han) + past participle (-ado / -ido).',
+  keywords: [
+    { es: 'he / has / ha', en: 'I have / you have / he, she has' },
+    { es: 'hemos / habéis / han', en: 'we have / you have / they have' },
+    { es: 'he trabajado', en: 'I have worked' },
+    { es: 'ha comido', en: 'he/she has eaten' },
+    { es: 'hoy', en: 'today' },
+    { es: 'esta mañana', en: 'this morning' },
+    { es: 'alguna vez', en: 'ever' },
+    { es: 'nunca', en: 'never' },
+    { es: 'hecho', en: 'done, made' },
+    { es: 'dicho', en: 'said' },
+    { es: 'visto', en: 'seen' },
+    { es: 'escrito', en: 'written' }
+  ],
   when:[
     'Recent past with present relevance: <i>He terminado el trabajo.</i> — I have finished the work.',
     'Life experience (up to now): <i>¿Has estado en España?</i> — Have you been to Spain?',
@@ -255,6 +293,18 @@ window.GRAMMAR = [
   key:'imperativo', title:'Imperativo (Commands)',
   summary:'Direct commands — telling someone to do (or not do) something.',
   formation:'Affirmative tú = 3rd-person present (habla). Usted/nosotros/ustedes = present subjunctive. Vosotros = infinitive with -r → -d (hablad). Negative commands use the present subjunctive for every person.',
+  keywords: [
+    { es: 'habla / hable', en: 'speak (tú / usted)' },
+    { es: 'come / coma', en: 'eat (tú / usted)' },
+    { es: 'abre / abra', en: 'open (tú / usted)' },
+    { es: 'di', en: 'say, tell' },
+    { es: 'haz', en: 'do, make' },
+    { es: 'ven', en: 'come' },
+    { es: 'pon', en: 'put' },
+    { es: 'sal', en: 'go out, leave' },
+    { es: 'ten', en: 'have, hold' },
+    { es: 've', en: 'go' }
+  ],
   when:[
     'Giving instructions or orders: <i>¡Habla más despacio!</i> — Speak more slowly!',
     'Negative commands use the subjunctive: <i>No hables.</i> — Don\'t speak.'

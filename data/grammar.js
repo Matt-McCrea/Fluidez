@@ -97,6 +97,16 @@ window.CONCEPT_LESSONS = [
 {
   id: 'preterite-imperfect', canDo: 'choose preterite or imperfect by what you actually mean', title: 'Preterite vs. Imperfect', level: 2,
   summary: 'Spanish has two past tenses and English blurs them. The preterite is a finished event; the imperfect is the background, the ongoing, the habitual. Choosing between them is a meaning decision.',
+  keywords: [
+    { es: 'ayer / anoche / el lunes', en: 'yesterday / last night / on Monday' },
+    { es: 'siempre / todos los días', en: 'always / every day' },
+    { es: 'mientras', en: 'while' },
+    { es: 'cuando', en: 'when' },
+    { es: 'fui / iba', en: 'I went (once) / I used to go' },
+    { es: 'comí / comía', en: 'I ate (once) / I used to eat' },
+    { es: 'Era invierno.', en: 'It was winter. (the background)' },
+    { es: 'Empezó a llover.', en: 'It started to rain. (the event)' }
+  ],
   sections: [
     { h: 'Preterite = the event', html: 'A completed action, often at a specific moment: <i>Ayer comí paella.</i> Think: "what happened?" A dot on the timeline.' },
     { h: 'Imperfect = the backdrop', html: 'What <i>was</i> happening, used to happen, or set the scene: <i>Cuando era niño, comía paella los domingos.</i> Think: "what was going on?" A line, not a dot.' },
@@ -131,6 +141,16 @@ window.CONCEPT_LESSONS = [
 {
   id: 'por-para', canDo: 'tell por from para and stop guessing', title: 'Por vs. Para', level: 2,
   summary: 'Both often translate as "for", but they point in different directions. Para looks forward to a goal, destination or deadline; por looks at cause, exchange, duration and movement through.',
+  keywords: [
+    { es: 'para', en: 'for, in order to (purpose, destination, deadline)' },
+    { es: 'por', en: 'because of, in exchange for, through (cause, swap, movement)' },
+    { es: 'para ti', en: 'for you' },
+    { es: 'por amor', en: 'out of love' },
+    { es: 'por favor', en: 'please' },
+    { es: 'por supuesto', en: 'of course' },
+    { es: 'para siempre', en: 'forever' },
+    { es: 'el parque', en: 'the park' }
+  ],
   sections: [
     { h: 'PARA = destination / purpose', html: '<ul><li>Goal: <i>Estudio para aprender.</i> — I study in order to learn.</li><li>Recipient: <i>Es para ti.</i> — It\'s for you.</li><li>Destination: <i>Salgo para Madrid.</i> — I\'m leaving for Madrid.</li><li>Deadline: <i>Para el lunes.</i> — By Monday.</li></ul>' },
     { h: 'POR = cause / exchange / through', html: '<ul><li>Reason: <i>Lo hago por amor.</i> — I do it out of love.</li><li>Exchange: <i>Pagué diez euros por el libro.</i> — I paid ten euros for the book.</li><li>Duration: <i>Estudié por dos horas.</i> — I studied for two hours.</li><li>Movement through: <i>Camino por el parque.</i> — I walk through the park.</li></ul>' }
