@@ -14,6 +14,19 @@ window.GRAMMAR = [
   canDo:'talk about what you do, where you live and how things are right now',
   summary:'One tense does three jobs in Spanish: what is happening right now, what you do regularly, and what is generally true.',
   formation:'Drop the -ar/-er/-ir ending and add the present endings to the stem.',
+  keywords: [
+    { es: 'hablar', en: 'to speak' },
+    { es: 'comer', en: 'to eat' },
+    { es: 'vivir', en: 'to live' },
+    { es: 'hablo', en: 'I speak' },
+    { es: 'hablas', en: 'you speak' },
+    { es: 'habla', en: 'he/she speaks, you (usted) speak' },
+    { es: 'hablamos', en: 'we speak' },
+    { es: 'habláis', en: 'you (vosotros) speak' },
+    { es: 'hablan', en: 'they speak, you (ustedes) speak' },
+    { es: 'todos los días', en: 'every day' },
+    { es: '¿Dónde vives?', en: 'Where do you live?' }
+  ],
   when:[
     'Something happening right now: <i>Como una manzana.</i> — I am eating an apple.',
     'Habitual / repeated actions: <i>Trabajo todos los días.</i> — I work every day.',

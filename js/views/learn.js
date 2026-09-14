@@ -105,10 +105,28 @@ window.StageLearn = (function () {
     return null;
   }
 
+  /* The words this lesson is made of, translated, before any explanation of
+   * them. A learner who does not read Spanish cannot pick the meaning of
+   * `rojo` out of a sentence about how colour adjectives agree — and the
+   * lesson that names nine colours and glosses none of them was teaching
+   * nothing to exactly the person it is written for. Two columns, so the
+   * speaker buttons attach (speakify hangs them on td.es). */
+  function keywordTable(rows) {
+    var html = '<table class="contrast-table keyword-table"><tbody>';
+    rows.forEach(function (r) {
+      html += '<tr><td class="es">' + r.es + '</td><td>' + r.en + '</td></tr>';
+    });
+    return html + '</tbody></table>';
+  }
+
   function fillLesson(wrap, l) {
     wrap.appendChild(UI.el('h1', null, l.title));
     fillOpening(wrap, l);
     wrap.appendChild(UI.el('p', 'doc-summary', l.summary));
+    if (l.keywords && l.keywords.length) {
+      wrap.appendChild(UI.el('h3', null, 'The words you need'));
+      wrap.appendChild(UI.el('div', null, keywordTable(l.keywords)));
+    }
     (l.sections || []).forEach(function (s) {
       wrap.appendChild(UI.el('h3', null, s.h));
       wrap.appendChild(UI.el('div', 'lesson-body', s.html));

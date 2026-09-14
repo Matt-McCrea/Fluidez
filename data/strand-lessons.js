@@ -813,6 +813,22 @@ window.STRAND_LESSONS = [
   title: 'Los sonidos: cinco vocales y nada más',
   canDo: 'pronounce any written Spanish word correctly on sight',
   summary: 'Spanish spelling is almost perfectly regular: five vowels, each with exactly one sound, always. English has around twenty vowel sounds and spells them chaotically, which is why an English speaker\'s instinct is the single biggest source of Spanish mispronunciation.',
+  keywords: [
+    { es: 'hola', en: 'hello (the h is silent)' },
+    { es: 'hombre', en: 'man' },
+    { es: 'hay', en: 'there is, there are' },
+    { es: 'jamón', en: 'ham' },
+    { es: 'gente', en: 'people' },
+    { es: 'me llamo', en: 'my name is' },
+    { es: 'español', en: 'Spanish' },
+    { es: 'pero', en: 'but' },
+    { es: 'perro', en: 'dog' },
+    { es: 'rojo', en: 'red' },
+    { es: 'gracias', en: 'thank you' },
+    { es: 'cinco', en: 'five' },
+    { es: 'vivir', en: 'to live' },
+    { es: 'bien', en: 'well, good' }
+  ],
   sections: [
     { h: 'Five vowels, five sounds, no exceptions', html: '<b>a</b> as in "father", <b>e</b> as in "bed", <b>i</b> as in "machine", <b>o</b> as in "or", <b>u</b> as in "rule". Each is short, crisp and identical every time it appears. They never blur into the "uh" that English unstressed vowels collapse into — <i>banana</i> in English is three different vowel sounds; <i>banana</i> in Spanish is the same <b>a</b> three times.' },
     { h: 'The consonants that surprise', html: '<ul><li><b>h</b> is always silent: <i>hola</i>, <i>hombre</i>, <i>hay</i>.</li><li><b>j</b> and <b>g</b> (before e/i) are a throaty h: <i>jamón</i>, <i>gente</i>.</li><li><b>ll</b> and <b>y</b> sound alike, roughly English "y": <i>llamo</i>, <i>yo</i>.</li><li><b>ñ</b> is the "ny" of "canyon": <i>español</i>.</li><li><b>v</b> and <b>b</b> are the SAME sound: <i>vivir</i> begins like <i>bien</i>.</li><li><b>r</b> between vowels is a single tap (<i>pero</i>); <b>rr</b> and initial <b>r</b> are rolled (<i>perro</i>, <i>rojo</i>).</li></ul>' },
@@ -2006,6 +2022,15 @@ window.STRAND_LESSONS = [
   title: 'Cinco cosas que te gustan',
   canDo: 'say what you like and dislike, and react to what someone else likes',
   summary: 'The point of this unit is not the list — it is the reaction. Agreeing and disagreeing with a like needs <i>a mí también</i> (me too) and <i>a mí tampoco</i> (me neither), and picking the wrong one reverses your meaning.',
+  keywords: [
+    { es: 'me gusta', en: 'I like' },
+    { es: 'me encanta', en: 'I love' },
+    { es: 'no me gusta nada', en: 'I don\'t like it at all' },
+    { es: 'odio', en: 'I hate' },
+    { es: 'a mí también', en: 'me too' },
+    { es: 'a mí tampoco', en: 'me neither' },
+    { es: '¿Y tú?', en: 'And you?' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write five things you like and five you do not, then have a partner react to each. Vary the verb: <i>me gusta</i> (I like), <i>me encanta</i> (I love), <i>no me gusta nada</i> (I don\'t like at all), <i>odio</i> (I hate).' },
     { h: 'The trap to get right', html: 'If what you are agreeing with is negative, <i>también</i> becomes <i>tampoco</i>. <i>—No me gusta el frío. —A mí tampoco.</i> Saying <i>a mí también</i> there means the opposite of what you meant.' },
@@ -2339,6 +2364,18 @@ window.STRAND_LESSONS = [
   title: 'Dos personas se conocen',
   canDo: 'follow a first conversation between two people, and know what each line is doing',
   summary: 'Before any grammar: a whole first meeting, start to finish. You are not expected to produce any of it yet — read it, hear the shape, and notice that almost every line is four words or fewer. Everything this unit teaches is somewhere in here.',
+  keywords: [
+    { es: 'hola', en: 'hello' },
+    { es: 'buenos días', en: 'good morning' },
+    { es: '¿Cómo te llamas?', en: 'What\'s your name?' },
+    { es: 'Me llamo…', en: 'My name is…' },
+    { es: '¿Y tú?', en: 'And you?' },
+    { es: '¿De dónde eres?', en: 'Where are you from?' },
+    { es: 'Soy de…', en: 'I\'m from…' },
+    { es: 'encantado / encantada', en: 'pleased to meet you (said by a man / by a woman)' },
+    { es: 'hasta luego', en: 'see you later' },
+    { es: 'adiós', en: 'goodbye' }
+  ],
   sections: [
     { h: 'Read it first', html: 'Do not study this. Read it twice and move on. The point is to see what a real first conversation costs in Spanish — which is very little. You will come back to every line of it over the rest of this unit.' },
     { h: 'What each speaker is doing', html: '<ul><li><i>Hola, buenos días</i> — opens the channel. Either word alone works.</li><li><i>¿Cómo te llamas?</i> — asks the name. Literally "what do you call yourself?"</li><li><i>Me llamo Ana</i> — gives it. Same verb, bounced back.</li><li><i>¿Y tú?</i> — two words that return any question. You will use this constantly.</li><li><i>¿De dónde eres?</i> — asks origin.</li><li><i>Encantado / encantada</i> — "pleased to meet you", and it changes ending depending on who is speaking.</li></ul>' },
@@ -2382,6 +2419,17 @@ window.STRAND_LESSONS = [
   title: 'Dar las gracias',
   canDo: 'thank someone and reply when they thank you',
   summary: 'Gracias is the easy half. The half learners get wrong is the reply: English "you\'re welcome" maps onto at least three Spanish answers, and saying nothing at all — which is what most beginners do — reads as colder than it does in English.',
+  keywords: [
+    { es: 'gracias', en: 'thank you' },
+    { es: 'muchas gracias', en: 'thank you very much' },
+    { es: 'muchísimas gracias', en: 'thank you so much' },
+    { es: 'gracias por…', en: 'thanks for…' },
+    { es: 'De nada.', en: 'You\'re welcome.' },
+    { es: 'Nada, nada.', en: 'Don\'t mention it.' },
+    { es: 'No hay de qué.', en: 'Not at all.' },
+    { es: 'A ti.', en: 'No, thank YOU.' },
+    { es: 'la ayuda', en: 'the help' }
+  ],
   sections: [
     { h: 'Saying it', html: '<i>Gracias</i> on its own is complete and always enough. <i>Muchas gracias</i> (thank you very much) raises it; <i>muchísimas gracias</i> (thank you so much) raises it again. You cannot say <i>muy gracias</i> — the word that intensifies a noun here is <i>mucho</i>, not <i>muy</i>.' },
     { h: 'Naming what for', html: 'Add <i>por</i> plus the thing: <i>gracias por la ayuda</i>, <i>gracias por todo</i>. With a verb, <i>por</i> takes the infinitive — <i>gracias por venir</i>, not <i>por vienes</i>.' },
@@ -2422,6 +2470,18 @@ window.STRAND_LESSONS = [
   title: 'Preséntate',
   canDo: 'hold a whole first conversation on your own — greet, name, origin, thanks, goodbye',
   summary: 'No new material. Everything you need is in the nine days behind you. Write both halves of a first meeting between you and someone you have just met, then say your half out loud.',
+  keywords: [
+    { es: 'hola', en: 'hello' },
+    { es: 'buenas tardes', en: 'good afternoon' },
+    { es: 'Me llamo…', en: 'My name is…' },
+    { es: '¿Y tú?', en: 'And you?' },
+    { es: 'Encantado / Encantada.', en: 'Pleased to meet you.' },
+    { es: '¿De dónde eres?', en: 'Where are you from?' },
+    { es: 'Soy de…', en: 'I\'m from…' },
+    { es: 'muchas gracias', en: 'thank you very much' },
+    { es: 'De nada.', en: 'You\'re welcome.' },
+    { es: 'Hasta luego.', en: 'See you later.' }
+  ],
   sections: [
     { h: 'What to write', html: 'Eight to twelve lines, both speakers. It must contain: a greeting, both names asked and given, where each of you is from, one <i>gracias</i> with its reply, and a goodbye. Keep every line short — the model below says all of it in eleven lines and 46 words.' },
     { h: 'Then say it', html: 'Read your half aloud twice. The second time, cover the text. The aim is not memorisation — it is finding out which lines come out on their own and which ones you still have to look up.' },
@@ -2642,6 +2702,17 @@ window.STRAND_LESSONS = [
   moment: [{ es: '—¿María Sánchez?', en: '—María Sánchez?' },
            { es: '—Sí, soy yo.', en: "—Yes, that's me." }],
   summary: 'Naming yourself, and pointing out the people and things around you. The two moves feel similar but work differently: a full sentence like "Yo soy Laura" stands on its own, while "Aquel diccionario" only makes sense next to a pointing hand — it needs the room, not just the words.',
+  keywords: [
+    { es: 'Yo soy…', en: 'I am…' },
+    { es: 'Sí, soy yo.', en: 'Yes, that\'s me.' },
+    { es: 'este / esta', en: 'this (one near me)' },
+    { es: 'ese / esa', en: 'that (one near you)' },
+    { es: 'aquel / aquella', en: 'that one over there' },
+    { es: 'esto', en: 'this (thing I can\'t name yet)' },
+    { es: 'mi hermana', en: 'my sister' },
+    { es: 'el profesor', en: 'the teacher' },
+    { es: 'por favor', en: 'please' }
+  ],
   sections: [
     { h: 'Saying who you are', html: 'A full sentence identifies without help: <i>Yo soy Laura</i> (I\'m Laura), <i>Daniel trabaja en un hospital</i> (Daniel works in a hospital). These work on the phone or in writing — nobody needs to be looking at you.' },
     { h: 'Pointing things out', html: 'Spanish has words that only work with a gesture: <i>este/esta</i> (this), <i>ese/esa</i> (that), <i>aquel/aquella</i> (that one over there), and the neuter <i>esto</i> for something with no name yet. Say <i>Aquel diccionario, por favor</i> — That dictionary over there, please — and you must be pointing at one.' },
@@ -2683,6 +2754,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:A1:22', 'funciones:A1:23', 'funciones:A1:24'],
   title: 'Actividad',
   summary: 'The same small talk usually gets round to what you do — and there are three ways to ask it.',
+  keywords: [
+    { es: '¿Qué haces?', en: 'What do you do? / What are you doing?' },
+    { es: '¿A qué te dedicas?', en: 'What do you do for a living?' },
+    { es: '¿En qué trabajas?', en: 'What do you work as?' },
+    { es: 'trabajar en', en: 'to work at (a place)' },
+    { es: 'trabajar de', en: 'to work as (a job)' },
+    { es: 'Soy profesor.', en: 'I\'m a teacher.' }
+  ],
   sections: [
     { h: 'The idea', html: 'All three questions address the other person as <i>tú</i>, but they are not the same in weight. <i>¿Qué haces?</i> is loose enough to answer with a hobby; the other two expect a job.' },
     { h: 'Answering', html: 'The natural answer names the job or uses <i>trabajar en/de</i>: <i>Trabajo en un hospital</i>, <i>Trabajo de profesor</i>, <i>Soy profesor</i>.' }
@@ -3032,6 +3111,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:A1:409', 'funciones:A1:410', 'funciones:A1:411', 'funciones:A1:412', 'funciones:A1:413'],
   title: 'Despedirse',
   summary: 'And the other end of the conversation: how to leave one, rather than simply stopping.',
+  keywords: [
+    { es: '¡Adiós!', en: 'Goodbye!' },
+    { es: '¡Chao!', en: 'Bye! (casual)' },
+    { es: 'Hasta mañana.', en: 'See you tomorrow.' },
+    { es: 'Hasta el jueves.', en: 'See you Thursday.' },
+    { es: 'Hasta luego.', en: 'See you later.' },
+    { es: 'Nos vemos.', en: 'See you.' },
+    { es: 'buenas noches', en: 'good night' }
+  ],
   sections: [
     { h: 'Two ways to go', html: '<i>¡Adiós!</i> — Goodbye! (or, more casually, <i>¡Chao!</i>) closes things with nothing else implied.<br><i>Hasta mañana.</i> — See you tomorrow.<br><i>Hasta el jueves.</i> — See you Thursday.<br>Naming the next time is warmer than a bare <i>adiós</i>, because it commits you to something. Note the article after <i>hasta</i>: <i>hasta el jueves</i>, never <i>*hasta jueves</i>.' }
   ],
@@ -3071,6 +3159,15 @@ window.STRAND_LESSONS = [
   moment: [{ es: '—¡Perdón! ¿Tiene hora?', en: '—Excuse me! Do you have the time?' },
            { es: '—Sí, son las tres. —Gracias, hasta luego.', en: '—Yes, three o\'clock. —Thanks, bye.' }],
   summary: "Before you can say anything, you need the other person's attention — and once called, you need a way to show you heard. Both are short, almost reflexive phrases: <i>¡Perdón!</i> to open, <i>¿Sí?</i> to answer.",
+  keywords: [
+    { es: '¡Perdón!', en: 'Excuse me!' },
+    { es: 'Por favor', en: 'Please / Excuse me' },
+    { es: '¡Eh!', en: 'Hey! (very casual)' },
+    { es: '¿Sí?', en: 'Yes? (I\'m listening)' },
+    { es: '¿Dime?', en: 'Yes? What is it?' },
+    { es: 'hola', en: 'hello' },
+    { es: '¿Tiene hora?', en: 'Have you got the time?' }
+  ],
   sections: [
     { h: 'Getting attention', html: 'Say the name (<i>¡María!</i>) or a bare attention-getter (<i>¡Eh!</i>, <i>Perdón</i>, <i>Por favor</i>) to open a channel before your actual message. Eye contact and a small wave do the same job with no words at all.' },
     { h: 'Showing you heard', html: 'Once called, you answer with <i>¿Sí?</i> — a question that means "I\'m listening," not literally "yes." <i>Hola</i> can also open a phone call once contact is made.' }
@@ -3860,6 +3957,18 @@ window.STRAND_LESSONS = [
   moment: [{ es: '—¿Qué te gusta hacer en tu tiempo libre?', en: '—What do you like doing in your free time?' },
            { es: '—Me gusta leer. Y me encanta el cine.', en: '—I like reading. And I love the cinema.' }],
   summary: 'Two short sentences carry this lesson: <i>¿Te gusta…?</i> to ask, <i>Me gusta…</i> to answer. Spanish builds them the other way round from English — the thing liked is the subject of the verb — so the verb follows the thing and not the person: <i>me gusta el cine</i>, <i>me gustan los animales</i>.',
+  keywords: [
+    { es: 'gustar', en: 'to like (literally: to please)' },
+    { es: '¿Te gusta…?', en: 'Do you like…?' },
+    { es: '¿Te gustan…?', en: 'Do you like…? (several things)' },
+    { es: '¿Qué te gusta hacer?', en: 'What do you like doing?' },
+    { es: 'me', en: 'I (the one who likes)' },
+    { es: 'te', en: 'you (tú)' },
+    { es: 'le', en: 'he, she, or you (usted)' },
+    { es: 'nos', en: 'we' },
+    { es: 'os', en: 'you (vosotros)' },
+    { es: 'les', en: 'they, or you (ustedes)' }
+  ],
   sections: [
     { h: 'Ask it, answer it', html: '<i>¿Te gusta el cine?</i> — Do you like films/cinema?<br><i>Me gusta el cine.</i> — I like films/cinema.<br><i>¿Te gustan los animales?</i> — Do you like animals?<br><i>Me gustan los animales.</i> — I like animals.<br>To say no, <i>no</i> goes in front of the whole thing: <i>No me gusta el fútbol.</i> And to ask an open question instead of a yes/no one, start with <i>qué</i>: <i>¿Qué te gusta hacer en tu tiempo libre?</i> — the question you will actually be asked when someone is getting to know you.' },
     { h: 'Gusta or gustan', html: 'The verb agrees with the thing being liked, because that is what the sentence is about: <i>Me gusta el libro</i> (one book), <i>Me gustan los libros</i> (several). The person — <i>me</i>, <i>te</i>, <i>le</i> — never changes the verb. An activity counts as one thing, so an infinitive keeps the singular: <i>Me gusta leer</i>, and even <i>Me gusta leer y escribir</i>.' },
@@ -3904,6 +4013,18 @@ window.STRAND_LESSONS = [
          'funciones:A2:199', 'funciones:A2:200', 'funciones:A2:201', 'funciones:A2:202'],
   title: 'Expresar gustos e intereses',
   summary: 'Answering works exactly like asking, with <i>me</i> where the question had <i>te</i>. What you choose on top of that is the verb — and the three you need are <i>gustar</i>, <i>encantar</i> and <i>interesar</i>.',
+  keywords: [
+    { es: 'gustar', en: 'to like' },
+    { es: 'encantar', en: 'to love' },
+    { es: 'interesar', en: 'to interest, to be interested in' },
+    { es: 'Me gusta…', en: 'I like…' },
+    { es: 'Me encanta…', en: 'I love…' },
+    { es: 'Me interesa…', en: 'I\'m interested in…' },
+    { es: 'No me gusta nada…', en: 'I don\'t like… at all' },
+    { es: 'interesante', en: 'interesting' },
+    { es: 'mucho', en: 'a lot' },
+    { es: 'nada', en: 'at all (with no)' }
+  ],
   sections: [
     { h: 'Gusta, encanta, interesa', html: '<i>Me gusta el cine.</i> — I like films/cinema.<br><i>Me encanta el cine.</i> — I love films/cinema.<br><i>Me interesa el cine.</i> — I\'m interested in cinema.<br>All three work the same way: the verb follows the thing (<i>me encantan los coches</i>, <i>me interesan los documentales</i>) and <i>no</i> goes in front (<i>No me interesan las noticias</i>). <i>Encantar</i> is real enthusiasm, so keep it for what you genuinely love; <i>interesar</i> is curiosity, which is not the same as enjoying something. For how much, add <i>mucho</i> or <i>nada</i>: <i>Me gusta mucho</i>, <i>No me gusta nada</i>.' },
     { h: 'Your reaction, or the thing itself', html: '<i>Me interesa el cine</i> says something about you; <i>El cine es interesante</i> says something about cinema. Both are worth having: <i>Aprender español es interesante</i> describes the activity, <i>Me interesa aprender español</i> says you want to do it. On its own, as a reaction to what someone has just told you, it is <i>¡Qué interesante!</i>' }
@@ -4486,6 +4607,17 @@ window.STRAND_LESSONS = [
   moment: [{ es: '—Hola, ¿qué tal?', en: '—Hi, how are you?' },
            { es: '—Bien, ¿y tú?', en: "—Good, and you?" }],
   summary: 'Every "how are you" in Spanish comes straight back to you: <i>—¿Qué tal? —Bien, ¿y tú?</i> The answer has a fixed shape — how you are, <i>gracias</i>, and the question returned — so you can give it without thinking and still sound natural.',
+  keywords: [
+    { es: '¿Qué tal?', en: 'How are you?' },
+    { es: '¿Cómo estás?', en: 'How are you? (tú)' },
+    { es: '¿Cómo está usted?', en: 'How are you? (usted)' },
+    { es: 'Bien.', en: 'Fine.' },
+    { es: 'Muy bien, gracias.', en: 'Very well, thank you.' },
+    { es: 'Regular.', en: 'So-so.' },
+    { es: '¿Y tú?', en: 'And you?' },
+    { es: '¿Y usted?', en: 'And you? (formal)' },
+    { es: 'gracias', en: 'thank you' }
+  ],
   sections: [
     { h: 'Ask it, answer it', html: '<i>¿Qué tal?</i> — How are you?<br><i>¿Cómo estás?</i> — How are you?<br><i>Bien, ¿y tú?</i> — Fine, and you?<br><i>Muy bien, gracias, ¿y tú?</i> — Very well, thanks, and you?<br><i>Regular, la verdad.</i> — So-so, to be honest.<br>Any of the answers works with any of the questions. <i>Bien</i> on its own is enough.' },
     { h: 'Always bounce it back', html: 'The answer is not finished until you return the question — <i>¿y tú?</i> is expected, not extra politeness. Leaving it off can read as uninterested.' },
@@ -6188,6 +6320,17 @@ window.STRAND_LESSONS = [
   moment: [{ es: '—¿De dónde eres?', en: '—Where are you from?' },
            { es: '—Soy de Irlanda. ¿Y tú?', en: "—I'm from Ireland. And you?" }],
   summary: 'Two constructions cover where someone is from — ser + a nationality adjective states it as a quality, ser de + place states it as a source — and only the second one works for a city with no adjective of its own.',
+  keywords: [
+    { es: '¿De dónde eres?', en: 'Where are you from?' },
+    { es: 'Soy de…', en: 'I\'m from…' },
+    { es: 'ser de', en: 'to be from (a place)' },
+    { es: 'cubano / cubana', en: 'Cuban (man / woman)' },
+    { es: 'mexicano / mexicana', en: 'Mexican' },
+    { es: 'español / española', en: 'Spanish' },
+    { es: 'el país', en: 'the country' },
+    { es: 'la ciudad', en: 'the city' },
+    { es: 'el pueblo', en: 'the town, village' }
+  ],
   sections: [
     { h: 'Ser + nationality adjective', html: '<i>Es cubano</i> — He is Cuban. The nationality behaves like any other describing word, so it changes with the person: <i>es cubana</i> (she is Cuban), <i>son cubanos</i> (they are Cuban). And it is written in lower case, unlike English.' },
     { h: 'Ser de + place', html: '<i>Soy de Sevilla</i> — I\'m from Seville. This states the source directly. This is the only option for places with no adjective form — nobody says <i>*es sevillano</i> as reliably as they say <i>es de Sevilla</i>, and it always works, city or country alike.' },
@@ -6393,6 +6536,21 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:A1:221', 'nociones_generales:A1:222', 'nociones_generales:A1:223'],
   title: 'Visibilidad: claro, oscuro y los colores',
   summary: 'The other everyday verdict you pass on a thing is what it looks like — how light or dark it is, and what colour.',
+  keywords: [
+    { es: 'rojo', en: 'red' },
+    { es: 'amarillo', en: 'yellow' },
+    { es: 'azul', en: 'blue' },
+    { es: 'verde', en: 'green' },
+    { es: 'naranja', en: 'orange' },
+    { es: 'marrón', en: 'brown' },
+    { es: 'blanco', en: 'white' },
+    { es: 'negro', en: 'black' },
+    { es: 'gris', en: 'grey' },
+    { es: 'claro', en: 'light, bright' },
+    { es: 'oscuro', en: 'dark' },
+    { es: 'ver', en: 'to see' },
+    { es: 'escuchar', en: 'to listen to' }
+  ],
   sections: [
     { h: 'Claro and oscuro: two jobs, one pair of words', html: '<i>Una habitación clara</i> is a bright room; <i>el pelo oscuro</i> is dark hair — same words, lighting in one case, shade in the other. Combined with a colour they mean "light/dark [colour]": <i>azul claro</i>, <i>azul oscuro</i>.' },
     { h: 'The basic colours', html: '<i>rojo, amarillo, azul, verde, naranja, marrón, blanco, negro, gris</i> — most agree like regular adjectives (<i>roja, rojos, rojas</i>).' },
@@ -6432,6 +6590,18 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:A1:236', 'nociones_generales:A1:237', 'nociones_generales:A1:238', 'nociones_generales:A1:239'],
   title: 'Edad: tener + años',
   summary: 'The other half of an introduction is how old you are — and Spanish says you HAVE your years rather than being them.',
+  keywords: [
+    { es: '¿Cuántos años tienes?', en: 'How old are you?' },
+    { es: 'Tengo veinte años.', en: 'I\'m twenty.' },
+    { es: 'tener', en: 'to have' },
+    { es: 'el año', en: 'the year' },
+    { es: 'viejo', en: 'old (of a thing)' },
+    { es: 'nuevo', en: 'new' },
+    { es: 'mayor', en: 'older, elderly (the polite word for a person)' },
+    { es: 'el niño', en: 'the child' },
+    { es: 'el chico', en: 'the boy, young person' },
+    { es: 'el señor', en: 'the gentleman, sir' }
+  ],
   sections: [
     { h: 'Tener, not ser', html: '<i>—¿Cuántos años tienes? —Tengo veinte años.</i> — How old are you? — I\'m twenty. Age uses <i>tener</i> (to have), so the English "I am twenty" does not carry over: <i>*Soy veinte años</i> is not something a Spanish speaker says. It is worth getting right early, because it comes up in every introduction.' },
     { h: 'Nuevo and viejo', html: '<i>Nuevo/viejo</i> (new/old) apply to things straightforwardly; used of people they can sound blunt, so <i>mayor</i> ("older," softer) is often preferred in polite reference to age.' },
@@ -6508,6 +6678,15 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:A1:249', 'nociones_generales:A1:250', 'nociones_generales:A1:251', 'nociones_generales:A1:252'],
   title: 'Evaluación general: bueno, malo, bien',
   summary: 'Bueno/malo evaluate a NOUN and agree with it like any adjective; bien/mal evaluate how you ARE or how something is DONE and never change — confusing the two produces "estoy bueno," which does not mean what a beginner thinks it means.',
+  keywords: [
+    { es: 'bueno', en: 'good (describing a thing)' },
+    { es: 'malo', en: 'bad (describing a thing)' },
+    { es: 'bien', en: 'well (how something is done or how you are)' },
+    { es: 'mal', en: 'badly' },
+    { es: 'un buen libro', en: 'a good book' },
+    { es: 'Estoy bien.', en: 'I\'m well.' },
+    { es: 'regular', en: 'so-so' }
+  ],
   sections: [
     { h: 'Bueno / malo: adjectives', html: 'They describe a noun and agree in gender and number: <i>un buen libro</i> (note the shortened <i>buen</i> before a masculine singular noun), <i>una película mala</i>.' },
     { h: 'Bien / mal: adverbs', html: 'Invariable, they describe how you feel or how something is done: <i>Estoy bien</i>, <i>Canta muy bien</i>. They never agree with anything, because they are not describing a noun.' },
@@ -9667,6 +9846,18 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:A1:15', 'funciones:A1:16', 'funciones:A1:54', 'funciones:A1:55'],
   title: 'Preguntar y decir qué es algo',
   summary: 'The same pointing hand, turned into a question: when you cannot name the thing at all, you ask what it is.',
+  keywords: [
+    { es: '¿Qué es esto?', en: 'What\'s this? (near me)' },
+    { es: '¿Qué es eso?', en: 'What\'s that? (near you)' },
+    { es: 'Es…', en: 'It\'s…' },
+    { es: 'el móvil', en: 'the mobile phone' },
+    { es: 'el diccionario', en: 'the dictionary' },
+    { es: 'el bolígrafo', en: 'the pen' },
+    { es: 'el mapa', en: 'the map' },
+    { es: 'el pasaporte', en: 'the passport' },
+    { es: 'Perdone', en: 'Excuse me (to someone you address as usted)' },
+    { es: '¿Sabe usted…?', en: 'Do you know…?' }
+  ],
   sections: [
     { h: 'Ask it, answer it', html: '<i>¿Qué es esto?</i> — What\'s this? (near you)<br><i>¿Qué es eso?</i> — What\'s that? (near the person you are talking to)<br><i>Es mi móvil.</i> — It\'s my phone.<br><i>Es un diccionario de español.</i> — It\'s a Spanish dictionary.<br>The question uses <i>esto/eso</i> because a thing you cannot name has no gender to agree with yet. Once it is named, the pointing word takes the gender of the noun: <i>este diccionario</i> (this dictionary), not <i>*esto diccionario</i>.' },
     { h: 'Asking a stranger', html: 'Among friends you point and ask. With someone you do not know, soften it first: <i>Perdone, ¿sabe usted qué es esto?</i> — Excuse me, do you know what this is? <i>Perdone</i> and <i>usted</i> (the polite "you") do the work; a later unit covers choosing between <i>tú</i> and <i>usted</i>.' }
@@ -9701,6 +9892,17 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:A1:95', 'funciones:A1:96', 'funciones:A1:97', 'funciones:A1:98', 'funciones:A1:99'],
   title: 'Valorar: bien, mal, regular',
   summary: 'A fixed little scale of one-word verdicts — bien, mal, regular, así así — handles most quick evaluations in speech; when you need to grade a specific quality, es + muy/bastante/un poco + adjective takes over, and that version works in writing too.',
+  keywords: [
+    { es: 'bien', en: 'good, well' },
+    { es: 'mal', en: 'bad, badly' },
+    { es: 'regular', en: 'so-so' },
+    { es: 'así, así', en: 'so-so' },
+    { es: 'muy', en: 'very' },
+    { es: 'bastante', en: 'quite' },
+    { es: 'un poco', en: 'a little' },
+    { es: 'feo', en: 'ugly' },
+    { es: 'bonito', en: 'pretty, nice' }
+  ],
   sections: [
     { h: 'The quick scale', html: 'Asked how something was, four fixed answers cover most of the range: <i>(muy/bastante) bien</i>, <i>(muy/bastante) mal</i>, <i>regular</i> (so-so — not "usual", a false friend), <i>así, así</i> (also so-so, more casual).' },
     { h: 'Grading a specific quality', html: 'To evaluate one quality precisely rather than give a general verdict, use <i>es</i> + a degree word + adjective: <i>Es (muy/bastante/un poco) + adjetivo</i> — <i>Esta camisa es bastante fea</i>, <i>El ejercicio es un poco difícil</i>. Unlike the quick verdicts, this works fine in writing, not just conversation.' },
@@ -10127,6 +10329,16 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:A2:435', 'gramatica:A2:436', 'gramatica:A2:437'],
   title: 'Verbos que funcionan al revés: encantar, doler',
   summary: 'Me encanta el chocolate does not mean "I" is doing anything — the chocolate is the grammatical subject and must agree with the verb, while "I" sits in the indirect object, the mirror image of how English builds "I love chocolate."',
+  keywords: [
+    { es: 'gustar', en: 'to like' },
+    { es: 'encantar', en: 'to love' },
+    { es: 'doler', en: 'to hurt' },
+    { es: 'Me encanta el chocolate.', en: 'I love chocolate.' },
+    { es: 'Me duelen los pies.', en: 'My feet hurt.' },
+    { es: 'el chocolate', en: 'chocolate' },
+    { es: 'los pies', en: 'the feet' },
+    { es: 'la cabeza', en: 'the head' }
+  ],
   sections: [
     { h: 'Ordinary transitive and intransitive verbs', html: 'Most verbs either take a direct object (<i>escribir algo, regalar algo a alguien</i>) or do not (<i>correr, nacer, crecer</i>) — the subject is simply whoever does the action, as expected.' },
     { h: 'Verbs that flip subject and experiencer', html: 'A small "psychological" class — <i>encantar</i> (liking), <i>doler</i> (physical sensation) — puts the thing or cause as the SUBJECT and the person who feels it as an INDIRECT OBJECT: <i>Me encanta el chocolate</i> is closer to "chocolate is delightful to me" than to "I love chocolate."' },
@@ -10247,6 +10459,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:A2:348', 'funciones:A2:349', 'funciones:A2:350', 'funciones:A2:351'],
   title: 'Saludar por escrito: Querido/a...',
   summary: 'None of that works at the top of a letter or a card. Written Spanish has its own openers, and there are only two worth knowing.',
+  keywords: [
+    { es: 'Querido / Querida', en: 'Dear (to a friend or family — man / woman)' },
+    { es: 'Estimado / Estimada', en: 'Dear (formal, to an office or a stranger)' },
+    { es: 'señor / señora', en: 'Mr / Mrs' },
+    { es: '¿Qué tal estás?', en: 'How are you?' },
+    { es: 'Un saludo', en: 'Best wishes (to close a message)' },
+    { es: '¡Cuánto tiempo!', en: 'It\'s been so long!' }
+  ],
   sections: [
     { h: 'Querido/a for a person, Estimado/a for an office', html: '<i>Querido Antonio,</i> — Dear Antonio,<br><i>Querida Marta,</i> — Dear Marta,<br>Either one opens an informal letter, card or message, and the ending agrees with the person you are writing TO, not with you: a man writes <i>Querida Ana</i> (Dear Ana) to a woman. A business or official letter opens with <i>Estimado/a</i> + title and takes a colon where the informal one takes a comma: <i>Estimado señor Pérez:</i> — Dear Mr Pérez:. <i>Hola, ¿qué tal?</i> stays in speech; it is not a first line on paper.' }
   ],

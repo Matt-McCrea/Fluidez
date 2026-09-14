@@ -141,6 +141,7 @@
        * day's cloze and reading to the tense being taught. */
       id: tk, tense: tk, level: level, title: doc.title, summary: doc.summary,
       canDo: doc.canDo || null,          // optional; see data/grammar-docs.js
+      keywords: doc.keywords || undefined,   // the words, translated, up front
       sections: sections,
       pitfalls: doc.irregulars || [],
       examples: doc.examples || [],
@@ -639,14 +640,14 @@
         canDo: head.canDo || null, moment: head.moment || null,
         upgrades: head.upgrades || null, status: head.status || null,
         deeper: concat([], head.deeper),
-        pcic: [], sections: [], exponents: [], contrasts: [], pitfalls: [],
+        pcic: [], keywords: [], sections: [], exponents: [], contrasts: [], pitfalls: [],
         examples: [], probes: [], recall: []
       };
       parts.forEach(function (p, i) {
         // A divider titled with the absorbed lesson keeps the two halves legible
         // as two halves, rather than running six sections together unlabelled.
         if (i > 0) out.sections.push({ h: p.title, html: p.summary || '' });
-        ['pcic', 'sections', 'exponents', 'contrasts', 'pitfalls', 'examples', 'probes']
+        ['pcic', 'keywords', 'sections', 'exponents', 'contrasts', 'pitfalls', 'examples', 'probes']
           .forEach(function (k) { out[k] = concat(out[k], p[k]); });
         /* Share the quick check out across the parts rather than taking a
          * fixed slice from each. A B2 topic merge runs to six or seven source

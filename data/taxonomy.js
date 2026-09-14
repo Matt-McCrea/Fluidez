@@ -84,20 +84,25 @@ window.SUPPORT = [
  * estar vs tener), not social ones, so it carries no such requirement.
  * `blocks` lists the lesson sections meaningful for a strand; the validator
  * rejects a genre lesson carrying `exponents`, and so on.
+ *
+ * `keywords` is every strand's first block and means one thing: the Spanish
+ * this lesson is built out of, with its English, in a table the learner meets
+ * BEFORE the explanation. A lesson that names nine colours in its prose and
+ * translates none of them is not teaching them.
  * ------------------------------------------------------------------------ */
 window.STRANDS = [
   { id: 'grammar',   label: 'Gramática',  inventory: 'gramatica',
-    blocks: ['sections', 'contrasts', 'pitfalls', 'examples'] },
+    blocks: ['keywords', 'sections', 'contrasts', 'pitfalls', 'examples'] },
   { id: 'function',  label: 'Funciones',  inventory: 'funciones',
-    blocks: ['sections', 'exponents', 'contrasts', 'pitfalls', 'examples'],
+    blocks: ['keywords', 'sections', 'exponents', 'contrasts', 'pitfalls', 'examples'],
     registerContrast: true },
   { id: 'discourse', label: 'Discurso',   inventory: 'tacticas_pragmaticas',
-    blocks: ['sections', 'exponents', 'pitfalls', 'examples'],
+    blocks: ['keywords', 'sections', 'exponents', 'pitfalls', 'examples'],
     registerContrast: true },
   { id: 'notion',    label: 'Nociones',   inventory: 'nociones_generales',
-    blocks: ['sections', 'exponents', 'contrasts', 'pitfalls', 'examples'] },
+    blocks: ['keywords', 'sections', 'exponents', 'contrasts', 'pitfalls', 'examples'] },
   { id: 'genre',     label: 'Géneros',    inventory: 'generos_discursivos',
-    blocks: ['sections', 'moves', 'model', 'checklist', 'examples'] },
+    blocks: ['keywords', 'sections', 'moves', 'model', 'checklist', 'examples'] },
   // NOT an authored lesson type. A lexis day is DERIVED from data/vocab.js by
   // js/curriculum.js — the words, their themes, levels, gender and
   // collocations all come from the harvest, so there is nothing to write.
@@ -123,9 +128,9 @@ window.STRANDS = [
    * Neither sets registerContrast: a dialogue's lines are one conversation at
    * one register, and demanding two would make it a worse conversation. */
   { id: 'dialogue',  label: 'Diálogo',    authored: true,
-    blocks: ['sections', 'exponents', 'examples'] },
+    blocks: ['keywords', 'sections', 'exponents', 'examples'] },
   { id: 'task',      label: 'Tarea',      authored: true,
-    blocks: ['sections', 'model', 'checklist', 'examples'] }
+    blocks: ['keywords', 'sections', 'model', 'checklist', 'examples'] }
 ];
 
 /* ---- REGISTER — the axis a function lesson actually teaches -------------

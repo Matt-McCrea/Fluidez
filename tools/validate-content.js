@@ -163,7 +163,7 @@ function checkStrandBlocks(l) {
   const tag = `lesson "${l.id}"`;
   const strand = (window.STRANDS || []).filter(x => x.id === l.strand)[0];
   if (!strand) return;                                  // unknown strand already reported
-  const ALL = ['sections', 'contrasts', 'pitfalls', 'examples', 'exponents', 'moves', 'model', 'checklist', 'words', 'collocations'];
+  const ALL = ['keywords', 'sections', 'contrasts', 'pitfalls', 'examples', 'exponents', 'moves', 'model', 'checklist', 'words', 'collocations'];
   ALL.forEach(b => {
     if (l[b] === undefined) return;
     ok(strand.blocks.indexOf(b) !== -1, `${tag}: block "${b}" is not valid for strand "${l.strand}"`);
@@ -202,6 +202,15 @@ function checkStrandBlocks(l) {
     const m = addressMix(txt);
     ok(!m, `${tag} ${where}: mixes tú (${m ? m.tu.join(', ') : ''}) and vosotros (${m ? m.vos.join(', ') : ''}) address`);
   });
+  /* A keyword table is the first thing a learner reads, so a row missing its
+   * English is worse than no table: it looks like a translation and is not. */
+  if (l.keywords !== undefined) {
+    ok(Array.isArray(l.keywords) && l.keywords.length >= 2, `${tag}: keywords must be an array of 2+ rows`);
+    (l.keywords || []).forEach((k, i) => {
+      ok(!!k.es, `${tag} keyword[${i}]: missing es`);
+      ok(!!k.en, `${tag} keyword[${i}]: missing en`);
+    });
+  }
   if (l.words !== undefined) ok(Array.isArray(l.words) && l.words.length >= 1, `${tag}: words must be a non-empty array`);
   if (l.collocations !== undefined) ok(Array.isArray(l.collocations), `${tag}: collocations must be an array`);
 }

@@ -16,6 +16,19 @@ window.CONCEPT_LESSONS = [
   deeper: ['gr-atributo-a1'],
   canDo: 'say what something IS and what state it is IN — and hear the difference',
   summary: 'Spanish splits "to be" into two verbs. Ser is for identity and essence; estar is for states, locations and conditions. Getting this right changes your meaning, not just your accuracy.',
+  keywords: [
+    { es: 'ser', en: 'to be (identity, origin, what something IS)' },
+    { es: 'estar', en: 'to be (state, place, how something IS right now)' },
+    { es: 'soy / eres / es', en: 'I am / you are / he, she, it is (ser)' },
+    { es: 'estoy / estás / está', en: 'I am / you are / he, she, it is (estar)' },
+    { es: 'Soy profesor.', en: 'I\'m a teacher.' },
+    { es: 'Estoy en casa.', en: 'I\'m at home.' },
+    { es: 'Es aburrido.', en: 'He is boring.' },
+    { es: 'Está aburrido.', en: 'He is bored.' },
+    { es: 'la sopa', en: 'the soup' },
+    { es: 'frío / fría', en: 'cold' },
+    { es: 'cansado', en: 'tired' }
+  ],
   sections: [
     { h: 'The core idea', html: '<b>Ser</b> = what something fundamentally <i>is</i> (identity, origin, defining traits, time). <b>Estar</b> = what condition or place it is <i>in</i> right now (states, feelings, location).' },
     { h: 'Use SER for', html: '<ul><li>Identity: <i>Soy profesor.</i> — I\'m a teacher.</li><li>Origin: <i>Es de México.</i> — He/She is from Mexico.</li><li>Defining traits: <i>Ella es alta.</i> — She is tall.</li><li>Time/dates: <i>Son las tres.</i> — It\'s three o\'clock.</li></ul>' },
@@ -46,6 +59,17 @@ window.CONCEPT_LESSONS = [
 {
   id: 'gender-articles', canDo: 'know whether a noun takes el or la, and why it matters', deeper: ['gr-nombres-propios-a1'], title: 'Gender & articles', level: 1,
   summary: 'Every Spanish noun has a gender, and the words around it must agree. Learn the patterns and the agreement chain becomes automatic.',
+  keywords: [
+    { es: 'el / la', en: 'the (masculine / feminine, one thing)' },
+    { es: 'los / las', en: 'the (masculine / feminine, more than one)' },
+    { es: 'un / una', en: 'a, an' },
+    { es: 'unos / unas', en: 'some' },
+    { es: 'el libro', en: 'the book' },
+    { es: 'la casa', en: 'the house' },
+    { es: 'el coche', en: 'the car' },
+    { es: 'la mesa', en: 'the table' },
+    { es: 'verde', en: 'green' }
+  ],
   sections: [
     { h: 'The patterns', html: 'Most nouns ending in <b>-o</b> are masculine (<i>el libro</i>, the book); most ending in <b>-a</b> are feminine (<i>la casa</i>, the house). Learn each noun <i>with</i> its article — that\'s why our vocab shows <i>el / la</i>.' },
     { h: 'The four articles', html: '“the” = <b>el, la, los, las</b>. “a/an” = <b>un, una</b>; “some” = <b>unos, unas</b>. They agree in gender <i>and</i> number with the noun.' },
