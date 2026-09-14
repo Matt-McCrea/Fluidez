@@ -2383,7 +2383,7 @@ window.STRAND_LESSONS = [
   canDo: 'thank someone and reply when they thank you',
   summary: 'Gracias is the easy half. The half learners get wrong is the reply: English "you\'re welcome" maps onto at least three Spanish answers, and saying nothing at all — which is what most beginners do — reads as colder than it does in English.',
   sections: [
-    { h: 'Saying it', html: '<i>Gracias</i> on its own is complete and always enough. <i>Muchas gracias</i> raises it; <i>muchísimas gracias</i> raises it again. You cannot say <i>muy gracias</i> — the word that intensifies a noun here is <i>mucho</i>, not <i>muy</i>.' },
+    { h: 'Saying it', html: '<i>Gracias</i> on its own is complete and always enough. <i>Muchas gracias</i> (thank you very much) raises it; <i>muchísimas gracias</i> (thank you so much) raises it again. You cannot say <i>muy gracias</i> — the word that intensifies a noun here is <i>mucho</i>, not <i>muy</i>.' },
     { h: 'Naming what for', html: 'Add <i>por</i> plus the thing: <i>gracias por la ayuda</i>, <i>gracias por todo</i>. With a verb, <i>por</i> takes the infinitive — <i>gracias por venir</i>, not <i>por vienes</i>.' },
     { h: 'Answering — the part to actually learn', html: '<i>De nada</i> is the neutral default and never wrong. <i>Nada, nada</i> waves it off between friends. <i>No hay de qué</i> is a shade more formal. In Spain you will also hear <i>a ti</i> — "no, thank <i>you</i>" — when the thanks should really run the other way.' }
   ],
@@ -2404,7 +2404,7 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:fn-agradecer-a1-1', kind: 'mcq',
-      q: 'Which one is correct?',
+      q: 'Intensifying gracias — which one do Spanish speakers say?',
       options: ['Muchas gracias.', 'Muy gracias.', 'Mucho gracias.'], answer: 0 },
     { id: 'p:fn-agradecer-a1-2', kind: 'mcq',
       q: 'Which one is the standard reply to "gracias"?',
@@ -2643,8 +2643,8 @@ window.STRAND_LESSONS = [
            { es: '—Sí, soy yo.', en: "—Yes, that's me." }],
   summary: 'Naming yourself, and pointing out the people and things around you. The two moves feel similar but work differently: a full sentence like "Yo soy Laura" stands on its own, while "Aquel diccionario" only makes sense next to a pointing hand — it needs the room, not just the words.',
   sections: [
-    { h: 'Saying who you are', html: 'A full sentence identifies without help: <i>Yo soy Laura</i>, <i>Daniel trabaja en un hospital</i>. These work on the phone or in writing — nobody needs to be looking at you.' },
-    { h: 'Pointing things out', html: 'Spanish has words that only work with a gesture: <i>este/esta</i> (this), <i>ese/esa</i> (that), <i>aquel/aquella</i> (that, further away), and the neuter <i>esto</i> for something with no name yet. Say <i>Aquel diccionario, por favor</i> and you must be pointing at one.' },
+    { h: 'Saying who you are', html: 'A full sentence identifies without help: <i>Yo soy Laura</i> (I\'m Laura), <i>Daniel trabaja en un hospital</i> (Daniel works in a hospital). These work on the phone or in writing — nobody needs to be looking at you.' },
+    { h: 'Pointing things out', html: 'Spanish has words that only work with a gesture: <i>este/esta</i> (this), <i>ese/esa</i> (that), <i>aquel/aquella</i> (that one over there), and the neuter <i>esto</i> for something with no name yet. Say <i>Aquel diccionario, por favor</i> — That dictionary over there, please — and you must be pointing at one.' },
     { h: 'Confirming it is you', html: 'When someone names you, you confirm with the pronoun after the verb: <i>—¿María Sánchez? —Sí, soy yo.</i> Not <i>Yo soy</i> alone — that sounds like you are about to add something.' }
   ],
   exponents: [
@@ -2656,8 +2656,7 @@ window.STRAND_LESSONS = [
     { es: 'Esto es Venezuela.', en: 'This is Venezuela.', register: 'coloquial', note: 'esto, not esta — no noun named yet, e.g. pointing at a map' }
   ],
   pitfalls: [
-    'Deictic words (<i>este/ese/aquel</i>, <i>esto</i>) need a gesture or a shared view to mean anything — they do not work in writing without context.',
-    '<i>Esto/eso/aquello</i> point at something with no name yet; once you name the noun, agree the gender: <i>este diccionario</i>, not <i>esto diccionario</i>.',
+    'Pointing words (<i>este/ese/aquel</i>, <i>esto</i>) need a gesture or a shared view to mean anything — they do not work in writing without context.',
     'Confirming identity is <i>soy yo</i>, not just <i>yo</i> — the verb carries the confirmation.'
   ],
   examples: [
@@ -3032,10 +3031,9 @@ window.STRAND_LESSONS = [
   id: 'fn-despedirse-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:409', 'funciones:A1:410', 'funciones:A1:411', 'funciones:A1:412', 'funciones:A1:413'],
   title: 'Despedirse',
-  summary: "Goodbyes range from a bare adiós to a specific arrangement to meet again — the specific version does more social work than adiós alone.",
+  summary: 'And the other end of the conversation: how to leave one, rather than simply stopping.',
   sections: [
-    { h: 'The plain goodbye', html: '<i>¡Adiós!</i> or, more casually, <i>¡Chao!</i>, closes things with nothing else implied.' },
-    { h: 'Naming the next time', html: '<i>Hasta mañana</i>, <i>Hasta el jueves</i> — naming when you\'ll meet again is warmer than a bare adiós; it commits you to something.' }
+    { h: 'Two ways to go', html: '<i>¡Adiós!</i> — Goodbye! (or, more casually, <i>¡Chao!</i>) closes things with nothing else implied.<br><i>Hasta mañana.</i> — See you tomorrow.<br><i>Hasta el jueves.</i> — See you Thursday.<br>Naming the next time is warmer than a bare <i>adiós</i>, because it commits you to something. Note the article after <i>hasta</i>: <i>hasta el jueves</i>, never <i>*hasta jueves</i>.' }
   ],
   exponents: [
     { es: '¡Adiós!', en: 'Goodbye!', register: 'neutral' },
@@ -3044,7 +3042,6 @@ window.STRAND_LESSONS = [
     { es: 'Hasta el jueves.', en: 'See you Thursday.', register: 'neutral', note: 'hasta + el + day of the week' }
   ],
   pitfalls: [
-    '<i>Hasta</i> + day needs the article: <i>hasta el jueves</i>, not <i>*hasta jueves</i>.',
     '<i>¡Chao!</i> is casual — save <i>¡Adiós!</i> or a time-of-day goodbye for anyone you don\'t know well.'
   ],
   examples: [
@@ -3073,7 +3070,7 @@ window.STRAND_LESSONS = [
   canDo: "get someone's attention, and close a conversation instead of just stopping",
   moment: [{ es: '—¡Perdón! ¿Tiene hora?', en: '—Excuse me! Do you have the time?' },
            { es: '—Sí, son las tres. —Gracias, hasta luego.', en: '—Yes, three o\'clock. —Thanks, bye.' }],
-  summary: "Before you can say anything, you need the other person's attention — and once called, you need a way to show you heard. Both halves are short, almost reflexive phrases (this lesson also covers the PCIC's sibling leaf, reaccionar, since they share one subsection).",
+  summary: "Before you can say anything, you need the other person's attention — and once called, you need a way to show you heard. Both are short, almost reflexive phrases: <i>¡Perdón!</i> to open, <i>¿Sí?</i> to answer.",
   sections: [
     { h: 'Getting attention', html: 'Say the name (<i>¡María!</i>) or a bare attention-getter (<i>¡Eh!</i>, <i>Perdón</i>, <i>Por favor</i>) to open a channel before your actual message. Eye contact and a small wave do the same job with no words at all.' },
     { h: 'Showing you heard', html: 'Once called, you answer with <i>¿Sí?</i> — a question that means "I\'m listening," not literally "yes." <i>Hola</i> can also open a phone call once contact is made.' }
@@ -4488,10 +4485,11 @@ window.STRAND_LESSONS = [
   canDo: 'greet someone, and answer properly when they greet you',
   moment: [{ es: '—Hola, ¿qué tal?', en: '—Hi, how are you?' },
            { es: '—Bien, ¿y tú?', en: "—Good, and you?" }],
-  summary: 'Responses to "how are you" all bounce the question back — the shape (adjective, gracias, ¿y tú?) is fixed enough that you can answer on autopilot and still sound natural. Learn the bounce on day one and you never have to think about it again.',
+  summary: 'Every "how are you" in Spanish comes straight back to you: <i>—¿Qué tal? —Bien, ¿y tú?</i> The answer has a fixed shape — how you are, <i>gracias</i>, and the question returned — so you can give it without thinking and still sound natural.',
   sections: [
-    { h: 'Always bounce it back', html: 'A response to "how are you" is not complete without returning the question — <i>¿y tú?/¿y usted?</i> is expected, not optional politeness.' },
-    { h: 'Match their register', html: 'Answer usted with usted, tú with tú — the greeting sets the register for the whole exchange, not just the question.' }
+    { h: 'Ask it, answer it', html: '<i>¿Qué tal?</i> — How are you?<br><i>¿Cómo estás?</i> — How are you?<br><i>Bien, ¿y tú?</i> — Fine, and you?<br><i>Muy bien, gracias, ¿y tú?</i> — Very well, thanks, and you?<br><i>Regular, la verdad.</i> — So-so, to be honest.<br>Any of the answers works with any of the questions. <i>Bien</i> on its own is enough.' },
+    { h: 'Always bounce it back', html: 'The answer is not finished until you return the question — <i>¿y tú?</i> is expected, not extra politeness. Leaving it off can read as uninterested.' },
+    { h: 'If they say usted', html: '<i>Usted</i> is the polite "you", used with strangers, older people and anyone you are being formal with. It takes the same verb form as <i>él/ella</i>, which is why the question is <i>¿Cómo está usted?</i> and not <i>*¿Cómo estás usted?</i> Answer in kind, and bounce it back the same way: <i>—¿Cómo está usted? —Muy bien. Y usted, ¿cómo está?</i> — How are you? — Very well. And you, how are you? (You meet <i>usted</i> properly in a later unit; for now, match whichever one they use on you.)' }
   ],
   exponents: [
     { es: '—¿Qué tal? —Muy bien, gracias, ¿y tú?', en: '—How are you? —Very well, thanks, and you?', register: 'coloquial', note: 'tú, bounces the question back' },
@@ -6191,9 +6189,9 @@ window.STRAND_LESSONS = [
            { es: '—Soy de Irlanda. ¿Y tú?', en: "—I'm from Ireland. And you?" }],
   summary: 'Two constructions cover where someone is from — ser + a nationality adjective states it as a quality, ser de + place states it as a source — and only the second one works for a city with no adjective of its own.',
   sections: [
-    { h: 'Ser + nationality adjective', html: '<i>Es cubano</i> treats the origin as a quality, agreeing like any adjective: <i>es cubana</i> for a woman, <i>son cubanos</i> for a group.' },
-    { h: 'Ser de + place', html: '<i>Soy de Sevilla</i> states the SOURCE directly. This is the only option for places with no adjective form — nobody says <i>*es sevillano</i> as reliably as they say <i>es de Sevilla</i>, and it always works, city or country alike.' },
-    { h: 'Asking', html: '<i>¿De dónde eres?</i> is the standard question — note the accented <i>dónde</i>, since it is a real question word here, not the plain <i>donde</i> of a relative clause.' }
+    { h: 'Ser + nationality adjective', html: '<i>Es cubano</i> — He is Cuban. The nationality behaves like any other describing word, so it changes with the person: <i>es cubana</i> (she is Cuban), <i>son cubanos</i> (they are Cuban). And it is written in lower case, unlike English.' },
+    { h: 'Ser de + place', html: '<i>Soy de Sevilla</i> — I\'m from Seville. This states the source directly. This is the only option for places with no adjective form — nobody says <i>*es sevillano</i> as reliably as they say <i>es de Sevilla</i>, and it always works, city or country alike.' },
+    { h: 'Asking', html: '<i>¿De dónde eres?</i> — Where are you from? It is the standard question, and the answer is either of the two shapes above. <i>Dónde</i> carries an accent whenever it is doing the asking.' }
   ],
   exponents: [
     { es: 'Luis Alberto es cubano.', en: 'Luis Alberto is Cuban.', register: 'neutral', note: 'nationality as an adjective' },
@@ -6433,9 +6431,9 @@ window.STRAND_LESSONS = [
   id: 'nt-edad-vejez-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:236', 'nociones_generales:A1:237', 'nociones_generales:A1:238', 'nociones_generales:A1:239'],
   title: 'Edad: tener + años',
-  summary: 'Age in Spanish is something you HAVE, never something you ARE — tener + number + años is the only pattern, and reaching for ser the way English "I am 20" suggests produces nonsense.',
+  summary: 'The other half of an introduction is how old you are — and Spanish says you HAVE your years rather than being them.',
   sections: [
-    { h: 'Tener, not ser', html: '<i>Tengo veinte años</i> — age is possessed. <i>*Soy veinte años</i> does not exist; <i>ser</i> has no role here at all.' },
+    { h: 'Tener, not ser', html: '<i>—¿Cuántos años tienes? —Tengo veinte años.</i> — How old are you? — I\'m twenty. Age uses <i>tener</i> (to have), so the English "I am twenty" does not carry over: <i>*Soy veinte años</i> is not something a Spanish speaker says. It is worth getting right early, because it comes up in every introduction.' },
     { h: 'Nuevo and viejo', html: '<i>Nuevo/viejo</i> (new/old) apply to things straightforwardly; used of people they can sound blunt, so <i>mayor</i> ("older," softer) is often preferred in polite reference to age.' },
     { h: 'Age-linked words for a person', html: '<i>Niño</i> (child), <i>chico</i> (young person/boy), <i>señor</i> (an older man, or simply a polite "sir/gentleman") sketch roughly where someone sits on the age scale without a number.' }
   ],
@@ -6450,8 +6448,7 @@ window.STRAND_LESSONS = [
     { es: '*Soy veinte años.', en: '(impossible)', note: 'ser is never used for age' }
   ],
   pitfalls: [
-    'Age is always <i>tener</i> + number + <i>años</i> — never <i>ser</i>. This is one of the very first, very sticky A1 errors.',
-    'Calling a person directly <i>viejo/vieja</i> can sound rude; <i>mayor</i> is the polite, neutral alternative.'
+    'Calling a person <i>viejo/vieja</i> to their face can sound blunt; <i>mayor</i> is the polite, neutral word.'
   ],
   examples: [
     { es: 'Mi hija tiene cinco años.', en: 'My daughter is five.' },
@@ -9669,11 +9666,10 @@ window.STRAND_LESSONS = [
   id: 'fn-preguntar-decir-cosa-a1', strand: 'function', cefr: 'A1', level: 1, theme: null,
   pcic: ['funciones:A1:15', 'funciones:A1:16', 'funciones:A1:54', 'funciones:A1:55'],
   title: 'Preguntar y decir qué es algo',
-  summary: 'Asking what an unnamed thing IS uses the neuter esto/eso — you cannot yet agree a gender with something you have not identified — and the answer is a plain declarative sentence, no different in shape from any other statement of fact.',
+  summary: 'The same pointing hand, turned into a question: when you cannot name the thing at all, you ask what it is.',
   sections: [
-    { h: 'Asking: the neuter esto/eso', html: 'Pointing at something you cannot name yet, you ask <i>¿Qué es esto?</i> (close to you) or <i>¿Qué es eso?</i> (close to the listener) — the neuter form, because until the thing is named it has no gender to agree with.' },
-    { h: 'Answering: a plain statement', html: 'The answer is a normal declarative sentence naming the thing: <i>Es mi móvil</i>, <i>Es un diccionario de español</i>. Once it is named, any demonstrative that follows takes its real gender: <i>este diccionario</i>, not <i>esto diccionario</i>.' },
-    { h: 'Register: pointing casually vs. asking a stranger', html: 'Among friends you just point and ask; with a stranger you soften it first: <i>Perdone, ¿sabe usted qué es esto?</i> — the usted form and the opening <i>perdone</i> do the polite work.' }
+    { h: 'Ask it, answer it', html: '<i>¿Qué es esto?</i> — What\'s this? (near you)<br><i>¿Qué es eso?</i> — What\'s that? (near the person you are talking to)<br><i>Es mi móvil.</i> — It\'s my phone.<br><i>Es un diccionario de español.</i> — It\'s a Spanish dictionary.<br>The question uses <i>esto/eso</i> because a thing you cannot name has no gender to agree with yet. Once it is named, the pointing word takes the gender of the noun: <i>este diccionario</i> (this dictionary), not <i>*esto diccionario</i>.' },
+    { h: 'Asking a stranger', html: 'Among friends you point and ask. With someone you do not know, soften it first: <i>Perdone, ¿sabe usted qué es esto?</i> — Excuse me, do you know what this is? <i>Perdone</i> and <i>usted</i> (the polite "you") do the work; a later unit covers choosing between <i>tú</i> and <i>usted</i>.' }
   ],
   exponents: [
     { es: '¿Qué es esto?', en: "What's this?", register: 'coloquial', note: 'casual, said while pointing, among friends or family' },
@@ -9682,8 +9678,8 @@ window.STRAND_LESSONS = [
     { es: 'Es un diccionario de español.', en: "It's a Spanish dictionary.", register: 'neutral' }
   ],
   pitfalls: [
-    'Use the neuter <i>esto/eso</i>, never <i>este/esta</i>, when you do not yet know what the thing is — once it is named, agree the gender normally: <i>esto</i> → <i>este diccionario</i>.',
-    'The answer needs its own article like any noun would (<i>un diccionario</i>), except for the special cases already learned (profession/nationality nouns after <i>ser</i>, which take none).'
+    'Use the neuter <i>esto/eso</i>, never <i>este/esta</i>, while you still do not know what the thing is — once it is named, agree the gender normally: <i>esto</i> → <i>este diccionario</i>.',
+    'The answer names the thing with its article, like any other noun: <i>Es un diccionario</i>, not <i>*Es diccionario</i>.'
   ],
   examples: [
     { es: '—¿Qué es esto? —Es un bolígrafo.', en: "—What's this? —It's a pen." },
@@ -10250,22 +10246,18 @@ window.STRAND_LESSONS = [
   id: 'fn-saludar-escrito-a2', strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:348', 'funciones:A2:349', 'funciones:A2:350', 'funciones:A2:351'],
   title: 'Saludar por escrito: Querido/a...',
-  summary: 'The spoken greetings you already know do not transfer to a letter or card — Querido/a + name opens it instead, agreeing with whoever you are writing TO, and its punctuation (a comma) is a different animal from the formal opener\'s colon.',
+  summary: 'None of that works at the top of a letter or a card. Written Spanish has its own openers, and there are only two worth knowing.',
   sections: [
-    { h: 'Spoken greetings do not work on paper', html: '<i>Hola, ¿qué tal?</i> is for speech. A written note or letter needs its own opener.' },
-    { h: 'Querido/a + nombre', html: 'Opens an informal letter, card or message: <i>Querido Antonio,</i> / <i>Querida Marta,</i>. The ending agrees with the PERSON YOU ARE ADDRESSING, not with you — a man writes <i>Querida Ana</i> to a woman.' },
-    { h: 'The formal counterpart, for contrast', html: 'A business or institutional letter instead opens with <i>Estimado/a</i> + title, followed by a COLON, not a comma: <i>Estimado señor Pérez:</i>.' }
+    { h: 'Querido/a for a person, Estimado/a for an office', html: '<i>Querido Antonio,</i> — Dear Antonio,<br><i>Querida Marta,</i> — Dear Marta,<br>Either one opens an informal letter, card or message, and the ending agrees with the person you are writing TO, not with you: a man writes <i>Querida Ana</i> (Dear Ana) to a woman. A business or official letter opens with <i>Estimado/a</i> + title and takes a colon where the informal one takes a comma: <i>Estimado señor Pérez:</i> — Dear Mr Pérez:. <i>Hola, ¿qué tal?</i> stays in speech; it is not a first line on paper.' }
   ],
   exponents: [
-    { es: 'Querido Antonio,', en: 'Dear Antonio,', register: 'coloquial', note: 'informal letter/card opener — comma, not a colon' },
-    { es: 'Querida Marta,', en: 'Dear Marta,', register: 'coloquial', note: 'agrees with the addressee, a woman' },
+    { es: 'Querido Antonio,', en: 'Dear Antonio,', register: 'neutral', note: 'informal letter or card — written, not spoken; comma, not a colon' },
+    { es: 'Querida Marta,', en: 'Dear Marta,', register: 'neutral', note: 'agrees with the addressee, a woman' },
     { es: 'Estimado señor Pérez:', en: 'Dear Mr Pérez:', register: 'formal', note: 'business/institutional letters — a colon follows, not a comma' },
     { es: 'Hola, ¿qué tal?', en: 'Hi, how are you?', register: 'coloquial', note: 'the spoken equivalent — does not double as a written opener' }
   ],
   pitfalls: [
-    '<i>Querido/a</i> agrees with the gender of the PERSON YOU ARE WRITING TO, never with your own.',
-    'A formal opener takes a colon (<i>Estimado señor Pérez:</i>); an informal one takes a comma (<i>Querido Antonio,</i>) — do not mix the punctuation.',
-    'The spoken greeting <i>Hola, ¿qué tal?</i> does not work as the first line of a letter or card.'
+    '<i>Querido/a</i> agrees with the person you are writing to, never with you — and the informal opener takes a comma where <i>Estimado/a</i> takes a colon.'
   ],
   examples: [
     { es: 'Querida abuela,\n¿Qué tal estás?', en: 'Dear grandma,\nHow are you?' },
