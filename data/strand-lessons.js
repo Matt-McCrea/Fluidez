@@ -781,6 +781,15 @@ window.STRAND_LESSONS = [
   title: 'Describe algo con precisión',
   canDo: 'describe an object precisely — size, shape, material, state and where it is',
   summary: 'Vague description is the mark of a B1 learner who has the words but not the patterns. This unit is the patterns: estar a for measurement, estar hecho de for material, estar + participio for the state something has been left in.',
+  keywords: [
+    { es: 'medir', en: 'to measure, to be … tall' },
+    { es: 'pesar', en: 'to weigh' },
+    { es: 'caber', en: 'to fit' },
+    { es: 'estar hecho de', en: 'to be made of' },
+    { es: 'la forma', en: 'the shape' },
+    { es: 'metros cuadrados', en: 'square metres' },
+    { es: 'estar a … grados', en: 'to be … degrees' }
+  ],
   sections: [
     { h: 'What to do', html: 'Describe three things precisely enough that someone could pick them out of a pile: something you own, something in the room, and something you would buy. Ten to fourteen sentences in total.' },
     { h: 'Use the patterns, not just the words', html: 'Each description must carry at least three of: <i>mide / mide … metros</i>, <i>está a … grados</i>, <i>está hecho de …</i>, <i>está + participio</i> (roto, pintado, envuelto), <i>cabe / no cabe</i>, <i>está lleno / vacío / libre / ocupado</i>.' },
@@ -1042,6 +1051,16 @@ window.STRAND_LESSONS = [
   title: 'Di lo que quieres que pase',
   canDo: 'say what you want someone else to do, and what you hope will happen',
   summary: 'The second door into the subjunctive, and the cleanest: when the wanting and the doing have different subjects, the second verb goes into the subjunctive. Quiero ir, but quiero que vayas.',
+  keywords: [
+    { es: 'Quiero ir.', en: 'I want to go. (one person — infinitive)' },
+    { es: 'Quiero que vengas.', en: 'I want you to come. (two people — subjunctive)' },
+    { es: 'Espero que…', en: 'I hope that…' },
+    { es: 'Necesito que…', en: 'I need you to…' },
+    { es: 'Ojalá…', en: 'I hope, if only…' },
+    { es: 'Me gustaría que…', en: 'I\'d like … to…' },
+    { es: 'echar una mano', en: 'to give a hand' },
+    { es: 'llover', en: 'to rain' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write a short letter or message asking several things of someone, and saying what you hope for. Eight to twelve sentences.' },
     { h: 'The rule, in one line', html: 'Same subject → infinitive (<i>quiero ir</i>). Different subject → <i>que</i> + subjunctive (<i>quiero que vayas</i>). Every wish, hope, request and preference works this way.' }
@@ -1461,6 +1480,15 @@ window.STRAND_LESSONS = [
   title: 'Escribe en cinco ocasiones sociales',
   canDo: 'congratulate, wish well, toast, apologise and reproach',
   summary: 'These are the moments where getting the formula wrong is most visible, because everyone present knows exactly what should have been said.',
+  keywords: [
+    { es: '¡Enhorabuena!', en: 'Congratulations!' },
+    { es: 'Que te mejores.', en: 'Get well soon.' },
+    { es: 'Igualmente.', en: 'Same to you.' },
+    { es: 'Lo siento mucho.', en: 'I\'m very sorry.' },
+    { es: 'No pasa nada.', en: 'It\'s fine.' },
+    { es: '¡Salud!', en: 'Cheers!' },
+    { es: 'Gracias por todo.', en: 'Thanks for everything.' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write five short texts: a congratulation, a set of good wishes, a toast, an apology for something real, and a gentle reproach.' },
     { h: 'Reproaching gently', html: '<i>Podrías haberme avisado</i> · <i>Es que no me lo esperaba de ti</i>. The conditional perfect is the standard way to say someone should have done something, and it is softer than any direct accusation.' }
@@ -1495,6 +1523,15 @@ window.STRAND_LESSONS = [
   title: 'Escribe una composición',
   canDo: 'write something with a thesis, a development and a conclusion',
   summary: 'The longest single text of the course so far. Everything B1 has built — opinion, concession, relative clauses, connectors — has to hold together across four paragraphs.',
+  keywords: [
+    { es: 'Querido / Estimado', en: 'Dear (informal / formal)' },
+    { es: 'Te escribo para…', en: 'I\'m writing to…' },
+    { es: 'Además', en: 'Besides' },
+    { es: 'Sin embargo', en: 'However' },
+    { es: 'En conclusión', en: 'In conclusion' },
+    { es: 'Un abrazo', en: 'A hug (sign-off)' },
+    { es: 'Atentamente', en: 'Yours sincerely' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write 300 to 400 words on a question you have a view about. Four paragraphs: introduction, two of development, conclusion.' },
     { h: 'The shape of a Spanish composition', html: 'State the question before your answer. Give the strongest counter-argument yourself, in the third paragraph, and answer it. Do not introduce anything new in the conclusion.' }
@@ -1529,6 +1566,15 @@ window.STRAND_LESSONS = [
   title: 'Imagina que las cosas fueran de otra manera',
   canDo: 'talk about what is not the case, and what would have been',
   summary: 'The third door into the subjunctive, and the one that completes it: the imperfect subjunctive for what is not so, and the compound tenses for what did not happen.',
+  keywords: [
+    { es: 'Si tuviera…, …', en: 'If I had…, I would…' },
+    { es: 'Si hubiera sabido…', en: 'If I had known…' },
+    { es: 'habría + participio', en: 'would have (done)' },
+    { es: 'Yo que tú, habría…', en: 'If I were you, I would have…' },
+    { es: 'Ojalá + imperfect subjunctive', en: 'I wish…' },
+    { es: 'en tu lugar', en: 'in your place' },
+    { es: 'de otra manera', en: 'differently' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write about one real decision two ways: how it went, and how it would have gone otherwise. Twelve to sixteen sentences.' },
     { h: 'The two patterns', html: '<i>Si tuviera tiempo, iría</i> — not true now. <i>Si hubiera tenido tiempo, habría ido</i> — not true then. Learners mix the halves; the tenses have to match across the comma.' }
@@ -9291,6 +9337,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B1:516', 'gramatica:B1:517', 'gramatica:B1:518', 'gramatica:B1:519'],
   title: 'El imperativo: más allá de la orden',
   summary: 'A command form covers a plea, a piece of advice, and a warm invitation just as often as an actual order — tone and context, not the grammar itself, decide which of the four you are hearing.',
+  keywords: [
+    { es: 'Pasa, pasa.', en: 'Come in. (an invitation, not an order)' },
+    { es: 'Dime.', en: 'Go ahead. / Tell me.' },
+    { es: 'Oye / Oiga', en: 'Listen (getting attention)' },
+    { es: 'Mira', en: 'Look (drawing attention)' },
+    { es: 'Perdona', en: 'Sorry / excuse me' },
+    { es: 'Venga', en: 'Come on / all right then' },
+    { es: 'Anda', en: 'Go on / oh come on' }
+  ],
   sections: [
     { h: 'Ruego: a plea', html: 'Softened almost always by <i>por favor</i>: <i>Perdóname, por favor.</i> The grammar is identical to an order; only the softening makes it a plea.' },
     { h: 'Sugerencia: advice, not authority', html: '<i>Acuéstate pronto</i> from a friend reads as advice, not a command — the relationship between speaker and listener decides the force, not the verb form.' },
@@ -9756,6 +9811,15 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B1:1', 'nociones_generales:B1:2', 'nociones_generales:B1:14', 'nociones_generales:B1:15', 'nociones_generales:B1:31', 'nociones_generales:B1:32'],
   title: 'Existencia y disponibilidad: vacío, libre, ocupado',
   summary: 'Vacío/lleno describe whether a space has anything in it at all; libre/ocupado describe whether that space is AVAILABLE to you — two genuinely different questions, since a full train can still have a free seat.',
+  keywords: [
+    { es: 'estar disponible', en: 'to be available' },
+    { es: 'quedar', en: 'to be left' },
+    { es: 'Quedan dos.', en: 'There are two left.' },
+    { es: 'agotarse', en: 'to run out, to sell out' },
+    { es: 'faltar', en: 'to be missing, to be lacking' },
+    { es: 'disponible', en: 'available' },
+    { es: 'la falta de', en: 'the lack of' }
+  ],
   sections: [
     { h: 'Existence itself', html: '<i>Existir</i> states bare existence: <i>Esa palabra no existe en español</i>. <i>Crear/destruir/construir</i> mark the two directions of bringing something into or out of existence.' },
     { h: 'Vacío/lleno: contents', html: 'Whether a space HAS anything in it: <i>La sala está llena</i>, <i>El vaso está vacío</i>.' },
@@ -10094,6 +10158,17 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B1:188', 'nociones_generales:B1:192', 'nociones_generales:B1:195', 'nociones_generales:B1:206', 'nociones_generales:B1:207'],
   title: 'Medidas: medir, tamaño, metros cuadrados',
   summary: 'Medir does triple duty — a person\'s height, an object\'s length, and an area\'s size — the same verb serving three different kinds of measurement, while caber is a completely separate, irregular verb about whether something FITS.',
+  keywords: [
+    { es: 'medir', en: 'to measure, to be … tall/long' },
+    { es: '¿Cuánto mides?', en: 'How tall are you?' },
+    { es: 'de largo / de alto / de ancho', en: 'long / tall / wide' },
+    { es: 'metros cuadrados', en: 'square metres' },
+    { es: 'caber', en: 'to fit' },
+    { es: 'No cabe.', en: 'It doesn\'t fit.' },
+    { es: 'el espacio', en: 'the space' },
+    { es: 'el armario', en: 'the wardrobe' },
+    { es: 'los muebles', en: 'the furniture' }
+  ],
   sections: [
     { h: 'Medir: one verb, three uses', html: '<i>Mido 1,70</i> (a person\'s height), <i>la mesa mide dos metros</i> (an object\'s length), <i>el jardín mide 200 metros cuadrados</i> (an area\'s size) — all the same verb.' },
     { h: 'Tamaño and superficie as nouns', html: '<i>De tamaño grande/pequeño/mediano</i> describes size generally; <i>superficie/zona/espacio</i> describe area and room specifically, with <i>metros cuadrados</i> for exact figures.' },
@@ -10133,6 +10208,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B1:213', 'nociones_generales:B1:216', 'nociones_generales:B1:220', 'nociones_generales:B1:200', 'nociones_generales:B1:201', 'nociones_generales:B1:209'],
   title: 'Temperatura, velocidad y volumen: grados, km por hora',
   summary: 'Estar a + number + grados states a temperature the exact same way estar a + number + kilómetros states a distance — one "estar a" pattern reused across several completely different kinds of measurement.',
+  keywords: [
+    { es: 'estar a … grados', en: 'to be … degrees' },
+    { es: 'bajo cero', en: 'below zero' },
+    { es: 'kilómetros por hora', en: 'kilometres per hour' },
+    { es: 'el litro', en: 'the litre' },
+    { es: 'subir / bajar', en: 'to rise / to fall' },
+    { es: 'la temperatura', en: 'the temperature' },
+    { es: 'la velocidad', en: 'the speed' },
+    { es: 'el volumen', en: 'the volume' }
+  ],
   sections: [
     { h: 'Temperatura: estar a + grados', html: '<i>Estamos a 30 grados</i>, <i>tres grados bajo cero</i> ("bajo cero" always attached when below freezing). <i>Calentar(se)/enfriar(se)</i> and <i>(des)congelar/hervir</i> name the processes.' },
     { h: 'Velocidad: a + km por hora', html: '<i>Iba a 100 kilómetros por hora</i>; <i>deprisa/rápidamente/lentamente</i> describe pace without a number; <i>poco a poco</i> marks a gradual pace.' },
@@ -10478,6 +10563,18 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B1:689', 'nociones_generales:B1:691', 'nociones_generales:B1:695', 'nociones_generales:B1:761', 'nociones_generales:B1:763', 'nociones_generales:B1:766'],
   title: 'Formas y materia: círculo, estar hecho de',
   summary: 'Estar hecho de + material states composition directly, one grammatical step further than the A2 ser de pattern, and pairs naturally with the shape vocabulary — círculo, cuadrado, triángulo — needed to describe any object fully.',
+  keywords: [
+    { es: 'la forma', en: 'the shape' },
+    { es: 'redondo / rectangular', en: 'round / rectangular' },
+    { es: 'el círculo / el triángulo', en: 'the circle / the triangle' },
+    { es: 'estar hecho de', en: 'to be made of' },
+    { es: 'ser de', en: 'to be (made) of' },
+    { es: 'la madera / la plata', en: 'wood / silver' },
+    { es: 'el acero / el hormigón', en: 'steel / concrete' },
+    { es: 'la lana', en: 'the wool' },
+    { es: 'la tela', en: 'the fabric' },
+    { es: 'parecerse a', en: 'to look like' }
+  ],
   sections: [
     { h: 'Naming shapes', html: '<i>Círculo, cuadrado, rectángulo, triángulo</i> as nouns, with matching adjectives <i>rectangular, triangular</i>. <i>Horizontal, vertical, diagonal</i> describe orientation; <i>plano/recto</i> describe flatness/straightness.' },
     { h: 'Tener forma de, parecer', html: '<i>Tiene forma de estrella</i> ("it\'s star-shaped"); <i>parece una montaña</i> — reprising B1\'s <i>parecer</i> for a visual impression.' },
@@ -12734,6 +12831,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B1:737', 'nociones_generales:B1:738', 'nociones_generales:B1:739', 'nociones_generales:B1:740'],
   title: 'Acabado: el resultado de una acción terminada',
   summary: 'La pared está pintada does not describe an action — it describes what the world looks like AFTER one, and Spanish marks that finished-result state with estar + participio, the same construction already met for cansado/aburrido, now applied to any completed process.',
+  keywords: [
+    { es: 'liso', en: 'smooth, plain' },
+    { es: 'rugoso', en: 'rough' },
+    { es: 'brillante', en: 'shiny' },
+    { es: 'mate', en: 'matt' },
+    { es: 'suave', en: 'soft' },
+    { es: 'duro', en: 'hard' },
+    { es: 'el acabado', en: 'the finish' },
+    { es: 'la superficie', en: 'the surface' }
+  ],
   sections: [
     { h: 'The process vs. its finished result', html: 'A verb like <i>pintar, proteger, envolver</i> names a PROCESS; <i>estar + participio</i> names the STATE that process leaves behind once it is done: <i>Pintan la pared</i> (they are painting it, process) → <i>La pared está pintada</i> (finished — the state, not the action).' },
     { h: 'Quedar as an alternative', html: '<i>Quedar + participio</i> works the same way, often stressing that the result is now settled or final: <i>El asunto quedó resuelto</i>.' }
@@ -12995,6 +13102,16 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B1:349', 'generos_discursivos:B1:353'],
   title: 'Una presentación pública (B1)',
   summary: 'A talk that opens with "hoy voy a hablar de..." is not wrong, exactly, but a talk that opens with a surprising fact, a quick anecdote, or a question earns attention before the topic is even named — the shape of a presentation is not just what you say, but the order you decide to say it in.',
+  keywords: [
+    { es: '¿Sabíais que…?', en: 'Did you know that…?' },
+    { es: 'Hoy voy a hablar de…', en: 'Today I\'m going to talk about…' },
+    { es: 'Primero… después… finalmente', en: 'First… then… finally' },
+    { es: 'En conclusión', en: 'In conclusion' },
+    { es: 'Gracias por vuestra atención.', en: 'Thank you for your attention.' },
+    { es: 'el porcentaje', en: 'the percentage' },
+    { es: 'la basura', en: 'the rubbish' },
+    { es: 'reciclar', en: 'to recycle' }
+  ],
   sections: [
     { h: 'Before the content: control the room', html: 'A presentation opens with saludos, thanks to the audience, and quick housekeeping — how long it will take, and when questions are welcome (<i>al final de cada punto</i>, <i>al final de la charla</i>, <i>en cualquier momento</i>).' },
     { h: 'Earning attention before naming the topic', html: 'Several techniques delay the bare topic statement to hook the audience first: <i>relatar un hecho de interés</i>, <i>aportar un ejemplo</i>, <i>hacer una pregunta</i>, <i>comenzar con una cita</i>, <i>comenzar con una afirmación sorprendente</i>, or tie the topic to current events.' },
@@ -13084,6 +13201,16 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B1:539', 'generos_discursivos:B1:543', 'generos_discursivos:B1:546', 'generos_discursivos:B1:550'],
   title: 'La carta personal (B1)',
   summary: 'A personal letter does not just start talking — it opens the conversation (who you are, what has been happening), THEN states why you are actually writing, and only then gets to the content: skip that ordering and a letter reads like it started mid-thought.',
+  keywords: [
+    { es: 'Querido / Querida', en: 'Dear' },
+    { es: '¿Qué tal estás?', en: 'How are you?' },
+    { es: 'Espero que estés bien.', en: 'I hope you\'re well.' },
+    { es: 'Te escribo porque…', en: 'I\'m writing because…' },
+    { es: 'Un abrazo', en: 'A hug (sign-off)' },
+    { es: 'Un beso', en: 'A kiss (sign-off)' },
+    { es: 'Escríbeme pronto.', en: 'Write back soon.' },
+    { es: 'la noticia', en: 'the news' }
+  ],
   sections: [
     { h: 'Opening: greeting and self-presentation', html: 'A short greeting formula (<i>Hola, / ¿Qué tal? / Querido + nombre</i>, followed by a comma or two question marks) opens the letter, followed by a general check-in that re-establishes the relationship before anything else.' },
     { h: 'Stating why you are writing', html: 'After the check-in, name the specific reason for this letter or reference an earlier one: <i>Te escribo porque...</i>, <i>Gracias por tu última carta...</i> — then briefly anticipate what the letter will cover.' },
@@ -13172,6 +13299,16 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B1:656', 'generos_discursivos:B1:659', 'generos_discursivos:B1:668'],
   title: 'La composición escrita (B1)',
   summary: 'A B1 composition is built or told, not argued — narrate an anecdote or describe a route or a person, contextualize it in a couple of sentences, and close it off with a fixed marker; the whole shape is closer to the spoken anecdote already met than to an essay with a thesis.',
+  keywords: [
+    { es: 'el pasado fin de semana', en: 'last weekend' },
+    { es: 'ir de excursión', en: 'to go on a hike, a day trip' },
+    { es: 'la sierra', en: 'the mountains' },
+    { es: 'el sendero', en: 'the trail' },
+    { es: 'durante', en: 'for (a period)' },
+    { es: 'en fin', en: 'anyway, in short' },
+    { es: 'como habíamos planeado', en: 'as we had planned' },
+    { es: 'precioso', en: 'beautiful' }
+  ],
   sections: [
     { h: 'Title first', html: 'A short, specific title, not a full sentence: <i>Un fin de semana inolvidable</i>, not <i>Voy a contar lo que pasó un fin de semana</i>.' },
     { h: 'Contextualize, then develop one of two ways', html: 'A couple of sentences set the scene, then the body does ONE of two things: <b>narración</b> (tell an anecdote, using the imperfecto/indefinido contract already met) or <b>descripción</b> (describe a route step by step, or a person\'s appearance and character).' },
@@ -13260,6 +13397,16 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B1:948', 'generos_discursivos:B1:960', 'generos_discursivos:B1:961', 'generos_discursivos:B1:962'],
   title: 'Exponer un tema: presente, ejemplos y esquemas',
   summary: 'Explaining Copenhagen runs almost entirely in the present tense — not because nothing happened in the past, but because exposition describes what is generally, currently true, the same durative present already met, now doing the work of an entire genre.',
+  keywords: [
+    { es: 'se trata de', en: 'it\'s about' },
+    { es: 'por ejemplo', en: 'for example' },
+    { es: 'hay varias clases', en: 'there are several kinds' },
+    { es: 'primero… segundo…', en: 'first… second…' },
+    { es: 'además', en: 'besides' },
+    { es: 'la mezcla', en: 'the mixture' },
+    { es: 'en cuanto a', en: 'as for' },
+    { es: 'por último', en: 'lastly' }
+  ],
   sections: [
     { h: 'The tense: present throughout', html: 'Exposition describes standing facts, so it runs in the present indicative: <i>Copenhague es la capital..., la ciudad tiene un millón de habitantes...</i> — not because nothing is being narrated, but because these facts hold generally, now.' },
     { h: 'Opening and developing a subtopic', html: 'A new point can open with a <b>definición</b> (<i>Una sirena es una mezcla de mujer y pez</i>), a general statement, a rhetorical question (<i>¿Qué más podemos decir de Copenhague?</i>), or straight into an example. Developing or closing that same point reaches for <b>clasificación</b> (<i>Hay varias clases: primero..., segundo...</i>), <b>reformulación</b> (<i>es decir</i>), further examples, a <b>resumen</b> (<i>para resumir</i>), or an <b>analogía</b> (<i>se parece a, es como</i>).' },
@@ -15238,6 +15385,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1225', 'funciones:B1:1226', 'funciones:B1:1227'],
   title: 'Advertir',
   summary: 'Tienes fiebre, así que no te levantes states a fact FIRST and lets the consequence follow — a warning built as cause and effect, more persuasive than a bare command because it explains itself before it orders anything.',
+  keywords: [
+    { es: '¡Cuidado!', en: 'Careful!' },
+    { es: '¡Ojo!', en: 'Watch out!' },
+    { es: 'Ten cuidado con…', en: 'Be careful with…' },
+    { es: 'Te aviso de que…', en: 'I\'m warning you that…' },
+    { es: 'No vayas a…', en: 'Don\'t go and…' },
+    { es: 'Que no se te olvide.', en: 'Don\'t forget.' },
+    { es: 'advertir', en: 'to warn' }
+  ],
   sections: [
     { h: '(Ten) cuidado con + noun', html: 'The standard warning formula: <i>¡Cuidado con esos cristales!</i>' },
     { h: 'A bare imperative as warning', html: '<i>No te subas ahí</i> — direct, no explanation needed if the danger is obvious.' },
@@ -15272,6 +15428,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1237', 'funciones:B1:1238', 'funciones:B1:1239'],
   title: 'Reprochar',
   summary: 'Reproaching reuses the exact approval/disapproval grammar met earlier — me parece mal, está mal — turned on a specific person\'s specific habit, which is what separates a reproach from a general judgment about right and wrong.',
+  keywords: [
+    { es: 'Podrías haber…', en: 'You could have…' },
+    { es: 'Deberías haber…', en: 'You should have…' },
+    { es: '¿Cómo pudiste…?', en: 'How could you…?' },
+    { es: 'Me parece mal que…', en: 'I think it\'s wrong that…' },
+    { es: 'No hay derecho.', en: 'It\'s not right.' },
+    { es: 'el reproche', en: 'the reproach' },
+    { es: 'avisar', en: 'to let someone know' }
+  ],
   sections: [
     { h: 'Me parece (muy) mal que + subjuntivo', html: 'Aimed at a specific recurring behavior: <i>Me parece mal que nunca me hagas regalos.</i>' },
     { h: 'Está (muy) mal / No está bien + que + subjuntivo', html: 'The impersonal judgment, now pointed at the listener\'s own action: <i>Está muy mal que no me cuentes tus problemas.</i>' }
@@ -15391,6 +15556,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1349', 'funciones:B1:1350', 'funciones:B1:1351', 'funciones:B1:1352', 'funciones:B1:1353'],
   title: 'Responder a una disculpa',
   summary: 'No tiene importancia and no importa both wave off an apology, but tiene importancia works with the impersonal usted-friendly SE-less form while the whole family shares one job: closing the incident before it needs a second sentence.',
+  keywords: [
+    { es: 'No pasa nada.', en: 'It\'s fine.' },
+    { es: 'No te preocupes.', en: 'Don\'t worry about it.' },
+    { es: 'No importa.', en: 'It doesn\'t matter.' },
+    { es: 'Da igual.', en: 'Never mind.' },
+    { es: 'Olvídalo.', en: 'Forget it.' },
+    { es: 'Tranquilo.', en: 'It\'s OK.' }
+  ],
   sections: [
     { h: 'A small family of dismissals', html: '<i>No importa</i>, <i>No es nada</i>, <i>No pasa nada</i>, <i>No tiene importancia</i> — near-synonyms, all minimizing the apologized-for issue rather than formally "accepting" it.' },
     { h: 'No te preocupes', html: 'Shifts from the incident itself to reassuring the person who apologized.' }
@@ -15424,6 +15597,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1369', 'funciones:B1:1370', 'funciones:B1:1371'],
   title: 'Proponer un brindis',
   summary: 'Por + noun is the whole toast — no verb, just the preposition and whoever or whatever is being honored, which is why "por el nuevo presidente" needs nothing else to function as a complete toast.',
+  keywords: [
+    { es: '¡Salud!', en: 'Cheers!' },
+    { es: '¡Chinchín!', en: 'Cheers! (clinking glasses)' },
+    { es: 'A tu salud.', en: 'To your health.' },
+    { es: 'Por los novios.', en: 'To the bride and groom.' },
+    { es: 'Un brindis por…', en: 'A toast to…' },
+    { es: 'brindar', en: 'to toast' },
+    { es: 'levantar la copa', en: 'to raise your glass' }
+  ],
   sections: [
     { h: 'Por + noun: the whole toast', html: 'No verb needed — <i>por</i> alone frames who or what is being honored: <i>Por el nuevo presidente.</i>' },
     { h: '¡A tu/vuestra salud!', html: 'A fixed formula wishing health, addressed to one person (<i>tu</i>) or several (<i>vuestra</i>).' },
@@ -15463,6 +15645,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1384', 'funciones:B1:1385', 'funciones:B1:1386', 'funciones:B1:1387', 'funciones:B1:1392', 'funciones:B1:1396'],
   title: 'Formular buenos deseos: dos formas, un mismo deseo',
   summary: 'Que te diviertas and Diviértete wish the exact same thing through two different structures — a subjunctive wish and a bare imperative — and the choice between them is purely stylistic, not a difference in politeness or meaning.',
+  keywords: [
+    { es: 'Que te diviertas.', en: 'Have a good time.' },
+    { es: 'Que descanses.', en: 'Sleep well.' },
+    { es: 'Que te mejores.', en: 'Get well soon.' },
+    { es: 'Que tengas suerte.', en: 'Good luck.' },
+    { es: 'Cuídate.', en: 'Take care.' },
+    { es: '¡Buen viaje!', en: 'Have a good trip!' },
+    { es: 'merecerse', en: 'to deserve' },
+    { es: 'la recuperación', en: 'the recovery' }
+  ],
   sections: [
     { h: 'Que + subjuntivo: a wish, grammatically', html: '<i>Que te diviertas</i>, <i>Que descanses</i> — the bare wish-formula already met, applied to leaving/resting.' },
     { h: 'The imperative alternative', html: 'The identical wish, phrased as a command instead: <i>Diviértete</i>, <i>Descansa</i>, <i>Cuídate</i> — not literally an order, just a different grammatical shape for the same goodwill.' },
@@ -15497,6 +15689,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1409', 'funciones:B1:1410', 'funciones:B1:1411'],
   title: 'Responder a felicitaciones y buenos deseos',
   summary: 'Tú, también echoes a wish back without repeating the verb at all — the whole reply rides on the pronoun switching from tú to the listener, minimal words doing maximal work.',
+  keywords: [
+    { es: 'Igualmente.', en: 'Same to you.' },
+    { es: 'Tú también.', en: 'You too.' },
+    { es: 'Para ti también.', en: 'And to you.' },
+    { es: 'Muchas gracias.', en: 'Thank you very much.' },
+    { es: 'Lo mismo digo.', en: 'Likewise.' },
+    { es: 'Gracias por tus buenos deseos.', en: 'Thanks for your kind wishes.' }
+  ],
   sections: [
     { h: 'Igualmente: the all-purpose echo', html: 'Works for almost any good wish, no matter its exact grammar: <i>—Feliz Navidad. —Igualmente.</i>' },
     { h: 'Tú, también / Para ti, también', html: 'Echoes the wish back by shifting the pronoun, with no need to repeat the verb: <i>—Que te diviertas. —Tú, también.</i>' }
@@ -15530,6 +15730,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1429', 'funciones:B1:1430', 'funciones:B1:1431', 'funciones:B1:1432'],
   title: 'Despedirse por escrito',
   summary: 'Un beso, and Le saluda atentamente, sit at opposite ends of the same job — closing a piece of writing — and the distance between them is the whole span of Spanish register, from a text to a sibling to a letter to a stranger.',
+  keywords: [
+    { es: 'Un abrazo', en: 'A hug (informal sign-off)' },
+    { es: 'Un beso', en: 'A kiss (informal sign-off)' },
+    { es: 'Hasta pronto', en: 'See you soon' },
+    { es: 'Cuídate', en: 'Take care' },
+    { es: 'Le saluda atentamente', en: 'Yours sincerely (formal)' },
+    { es: 'Quedo a su disposición', en: 'I remain at your disposal' },
+    { es: 'echar de menos', en: 'to miss' }
+  ],
   sections: [
     { h: 'Casual written closings', html: '<i>¡Hasta pronto!</i>, <i>Un beso,</i>, <i>Abrazos,</i> — for messages, cards, informal letters, always followed by a comma.' },
     { h: 'The formal written closing', html: '<i>(Le saluda) atentamente,</i> — the standard formal sign-off, already met in the job-application letter.' }
@@ -15786,6 +15995,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1572', 'funciones:B1:1573', 'funciones:B1:1574'],
   title: 'Destacar un elemento por escrito',
   summary: 'Es importante tener claro nuestro objetivo highlights through WORDS, while bold, italics and bullet points highlight through the PAGE ITSELF — two entirely different toolkits for the same job of telling a reader what matters most.',
+  keywords: [
+    { es: 'Es importante…', en: 'It\'s important to…' },
+    { es: 'Sobre todo', en: 'Above all' },
+    { es: 'Recuerda:', en: 'Remember:' },
+    { es: 'No olvides…', en: 'Don\'t forget to…' },
+    { es: 'cabe destacar', en: 'it\'s worth highlighting' },
+    { es: 'subrayar', en: 'to underline' },
+    { es: 'la reserva', en: 'the booking' },
+    { es: 'revisar', en: 'to check over' }
+  ],
   sections: [
     { h: 'Es importante + infinitivo', html: 'Flags something as significant through the words themselves: <i>Es importante tener claro nuestro objetivo.</i>' },
     { h: 'Typographic emphasis', html: 'Written Spanish also highlights visually — MAYÚSCULAS, <i>cursiva</i>, <b>negrita</b>, subrayado, viñetas and numbered outlines — tools already met in the expository genre lesson, now framed as a function of their own: marking what matters without adding words.' }
@@ -20163,6 +20382,15 @@ window.STRAND_LESSONS = [
   title: 'Saludar y responder: la lengua escrita añade un registro',
   upgrades: 'fn-responder-saludo-a2',
   summary: 'Spoken greetings barely change from A2, but B1 adds the written register — a letter or email opens with its own fixed formulas, entirely different from anything said aloud, and choosing the wrong one instantly signals a non-native or careless writer.',
+  keywords: [
+    { es: '¿Qué tal?', en: 'How\'s it going?' },
+    { es: '¿Cómo te va?', en: 'How are things?' },
+    { es: '¡Cuánto tiempo!', en: 'Long time no see!' },
+    { es: 'Me alegro de verte.', en: 'Good to see you.' },
+    { es: 'Igualmente.', en: 'Likewise.' },
+    { es: 'Aquí andamos.', en: 'Getting by.' },
+    { es: 'Ya ves.', en: 'You know how it is.' }
+  ],
   sections: [
     { h: 'Spoken: the familiar questions', html: '<i>¿Qué tal?</i>, <i>¿Cómo estás?</i> remain the everyday spoken greeting — nothing new in form, but expected fluently by B1.' },
     { h: 'Written: a fixed, separate register', html: 'A letter or email never opens with <i>¿Qué tal?</i>. It opens with a name + colon: <i>Estimado Pedro:</i> (semi-formal, first name), <i>Estimado Sr. Antúnez:</i> (formal, surname), <i>Señor López:</i> (very formal, no "Estimado").' },
@@ -20204,6 +20432,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1338', 'funciones:B1:1339', 'funciones:B1:1340'],
   title: 'Disculparse con una razón: "es que..."',
   summary: 'B1 adds the reason clause to the A2 apology words — "lo siento, es que..." — which matters because an apology with no explanation at all can read as insincere or minimal, however polite the word itself.',
+  keywords: [
+    { es: 'Lo siento mucho.', en: 'I\'m very sorry.' },
+    { es: 'Perdona / Perdone.', en: 'Sorry. (tú / usted)' },
+    { es: 'Siento + infinitivo', en: 'Sorry for -ing' },
+    { es: 'Ha sido culpa mía.', en: 'It was my fault.' },
+    { es: 'No era mi intención.', en: 'I didn\'t mean to.' },
+    { es: 'Te pido disculpas.', en: 'I apologise.' },
+    { es: 'disculparse', en: 'to apologise' }
+  ],
   sections: [
     { h: 'The A2 words, now paired with a reason', html: '<i>Lo siento, de verdad, es que...</i>, <i>Disculpa/e, es que...</i>, <i>Perdóname/Perdóneme, es que...</i> — the apology word alone is still correct, but B1 expects the reason attached with <i>es que</i>.' },
     { h: 'Tú vs usted forms', html: '<i>Disculpa/Perdóname</i> (tú) and <i>Disculpe/Perdóneme</i> (usted) are the informal/formal pair — the choice of form matters as much as the word itself.' }
@@ -20241,6 +20478,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1374', 'funciones:B1:1375', 'funciones:B1:1377', 'funciones:B1:1379', 'funciones:B1:1380', 'funciones:B1:1381'],
   title: 'Felicitar: por un logro y en fechas señaladas',
   summary: 'B1 splits felicitar into two unrelated families: praising a job well done, and the fixed, unchanging formulas for specific calendar dates — mixing the two registers (praising someone\'s work with a Christmas formula, say) simply does not happen in Spanish.',
+  keywords: [
+    { es: '¡Buen trabajo!', en: 'Good job!' },
+    { es: '¡Bien hecho!', en: 'Well done!' },
+    { es: '¡Enhorabuena!', en: 'Congratulations!' },
+    { es: '¡Feliz cumpleaños!', en: 'Happy birthday!' },
+    { es: 'Que cumplas muchos más.', en: 'Many happy returns.' },
+    { es: '¡Feliz Navidad!', en: 'Merry Christmas!' },
+    { es: '¡Feliz Año Nuevo!', en: 'Happy New Year!' },
+    { es: 'el logro', en: 'the achievement' }
+  ],
   sections: [
     { h: 'Praising an achievement', html: '<i>Buen trabajo</i>, <i>Bien hecho</i> praise something done well — short, usable in almost any register.' },
     { h: 'Birthdays: a fixed formula', html: '<i>Que cumplas muchos más</i> is the standard birthday wish beyond a bare "feliz cumpleaños" — wishing many happy returns.' },
@@ -20688,6 +20935,16 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B1:153', 'generos_discursivos:B1:156'],
   title: 'Reconocer géneros escritos: la forma predice el registro',
   summary: 'A written genre\'s NAME already tells you its register before you read a word: a "carta al director" is always formal and argumentative, a "nota" is always brief and informal — guessing the register from the genre, before reading, is what lets you read efficiently and write appropriately from the first line.',
+  keywords: [
+    { es: 'el correo electrónico', en: 'the email' },
+    { es: 'el asunto', en: 'the subject line' },
+    { es: 'la carta', en: 'the letter' },
+    { es: 'el anuncio', en: 'the advert' },
+    { es: 'la nota', en: 'the note' },
+    { es: 'formal / informal', en: 'formal / informal' },
+    { es: 'adjuntar', en: 'to attach' },
+    { es: 'el destinatario', en: 'the recipient' }
+  ],
   sections: [
     { h: 'Formal, argued genres', html: 'A <i>carta al director</i> or a <i>carta formal</i> is always formal and usually argues a position — expect <i>usted</i>, structured paragraphs, no colloquialisms.' },
     { h: 'Personal, informal genres', html: 'A <i>carta o mensaje electrónico personal</i>, a <i>nota</i> or a <i>diario</i> is informal by default — expect <i>tú</i>, first person, everyday vocabulary.' },
