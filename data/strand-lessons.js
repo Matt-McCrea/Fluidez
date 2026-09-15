@@ -432,7 +432,8 @@ window.STRAND_LESSONS = [
       q: 'Moving up the register ladder mainly changes…',
       options: ['how much of yourself you commit', 'the facts', 'the tense'], answer: 0 },
     { id: 'p:task-b2-registro-3', kind: 'cloze',
-      text: 'Comparto el objetivo, ___ bien tengo una reserva.', accept: ['si'] }
+      text: 'Comparto el objetivo, ___ bien tengo una reserva.', accept: ['si'] },
+    { id: 'p:taskb2registro:produce', kind: 'cloze', text: 'Le ___ que reconsidere su decisión. (rogar — formal request)', accept: ['ruego'] }
   ]
 },
 
@@ -466,7 +467,8 @@ window.STRAND_LESSONS = [
       q: 'Which introduces a reservation?',
       options: ['Ahora bien', 'Por lo tanto', 'Es decir'], answer: 0 },
     { id: 'p:task-b2-argumento-3', kind: 'cloze',
-      text: '___ bien es cierto que cuesta dinero, el beneficio compensa.', accept: ['Si'] }
+      text: '___ bien es cierto que cuesta dinero, el beneficio compensa.', accept: ['Si'] },
+    { id: 'p:taskb2argumento:produce', kind: 'cloze', text: 'Por un lado es caro; por ___ lado, dura años. (on the other hand)', accept: ['otro'] }
   ]
 },
 
@@ -2982,6 +2984,7 @@ window.STRAND_LESSONS = [
     { es: 'Comparto su punto de vista en lo que respecta al plazo.', en: 'I share your point of view as regards the deadline.' }
   ],
   probes: [
+    { id: 'p:acuerdob2:produce', kind: 'cloze', text: 'Estoy completamente de ___ contigo. (agreement)', accept: ['acuerdo'] },
     { id: 'p:acuerdo:polarity', kind: 'mcq',
       q: '—No me convence nada esta idea. — ¿Cómo se expresa acuerdo?',
       options: ['A mí también.', 'A mí tampoco.', 'Yo sí.'], answer: 1 },
@@ -17063,7 +17066,8 @@ window.STRAND_LESSONS = [
     { id: 'p:repeticion:juicio', kind: 'mcq', q: '¿Cuál de estas palabras es negativa?', options: ['hábito', 'vicio', 'ritmo'], answer: 1 },
     { id: 'p:repeticion:ciclo', kind: 'mcq', q: '¿Qué palabra describe un patrón que se cierra y vuelve a empezar?', options: ['manía', 'ciclo', 'insistencia'], answer: 1 },
     { id: 'p:repeticion:cloze', kind: 'cloze', text: 'Lo intentó ___ hasta lograrlo. (over and over)', accept: ['una y otra vez'] },
-    { id: 'p:repeticion:recall', kind: 'recall', front: '"Manía" vs "vicio": ¿cuál es más grave/negativo?', back: 'vicio — manía es más una rareza personal, no necesariamente dañina' }
+    { id: 'p:repeticion:recall', kind: 'recall', front: '"Manía" vs "vicio": ¿cuál es más grave/negativo?', back: 'vicio — manía es más una rareza personal, no necesariamente dañina' },
+    { id: 'p:repeticionb2:produce', kind: 'cloze', text: 'Ha vuelto a ___ lo mismo otra vez. (decir)', accept: ['decir'] }
   ]
 },
 
@@ -21744,7 +21748,8 @@ window.STRAND_LESSONS = [
     { id: 'p:subsustB2:influencia', kind: 'mcq', q: '¿Qué modo exige siempre un verbo de influencia como "pedir"?',
       options: ['Indicativo', 'Subjuntivo', 'Depende de la negación'], answer: 1 },
     { id: 'p:subsustB2:cloze', kind: 'cloze', text: '___ que terminemos esto antes del viernes. (faltar)', accept: ['Falta'] },
-    { id: 'p:subsustB2:recall', kind: 'recall', front: '¿Qué decide el modo en una subordinada sustantiva?', back: 'la clase semántica del verbo principal' }
+    { id: 'p:subsustB2:recall', kind: 'recall', front: '¿Qué decide el modo en una subordinada sustantiva?', back: 'la clase semántica del verbo principal' },
+    { id: 'p:subsustb2:produce', kind: 'cloze', text: 'Espero que ___ pronto. (venir — él)', accept: ['venga'] }
   ]
 },
 
@@ -24680,6 +24685,7 @@ window.STRAND_LESSONS = [
     { es: '¡Qué rabia, con lo que te habías esforzado!', en: 'How frustrating, after all your effort!' }
   ],
   probes: [
+    { id: 'p:empatiab2:produce', kind: 'cloze', text: 'A mí me ___ lo mismo. (pasar — the same happens to me)', accept: ['pasa'] },
     { id: 'p:empatiaB2:comparte', kind: 'mcq', q: '¿Cuál afirma una experiencia PARALELA/compartida, no solo comprensión?',
       options: ['Te entiendo.', 'A mí me pasa lo mismo.', 'Lo siento mucho.'], answer: 1 },
     { id: 'p:empatiaB2:sentirvsdisculpar', kind: 'mcq', q: '"Siento que te haya afectado tanto" — ¿es una disculpa por algo que TÚ hiciste?',
@@ -25084,6 +25090,7 @@ window.STRAND_LESSONS = [
     { es: 'Este ejercicio no me sale, ¿me ayudas?', en: "I can't figure out this exercise, will you help me?" }
   ],
   probes: [
+    { id: 'p:pedirayudab2:produce', kind: 'cloze', text: '¿Me ___ una mano con esto? (echar)', accept: ['echas'] },
     { id: 'p:pedirayudaB2:registro', kind: 'mcq', q: '¿Cuál es la versión FORMAL de "échame una mano"?',
       options: ['¿Me ayudas?', 'Solicito su colaboración.', '¿Puedes con esto?'], answer: 1 },
     { id: 'p:pedirayudaB2:encubierta', kind: 'mcq', q: '"No puedo mover este mueble" — ¿qué tipo de petición es?',
@@ -25166,6 +25173,7 @@ window.STRAND_LESSONS = [
     { es: '¿Es posible cambiar el turno con otra persona?', en: 'Is it possible to swap shifts with someone else?' }
   ],
   probes: [
+    { id: 'p:pedirpermisob2:produce', kind: 'cloze', text: '¿Le ___ que abra la ventana? (importar — would you mind)', accept: ['importaría'] },
     { id: 'p:pedirpermisoB2:respuestasi', kind: 'mcq', q: '"¿Te importaría que fume?" respondido con un "sí" seco significa...',
       options: ['Que puedes fumar', 'Que le molestaría — un rechazo', 'No está claro'], answer: 1 },
     { id: 'p:pedirpermisoB2:enfoque', kind: 'mcq', q: '¿En qué se enfoca "¿te importaría que...?"',
@@ -26188,6 +26196,7 @@ window.STRAND_LESSONS = [
     { es: 'Nada, pues que al final todo salió bien.', en: 'So, in the end everything turned out fine.' }
   ],
   probes: [
+    { id: 'p:solicitarrelatob2:produce', kind: 'cloze', text: 'Cuéntame, ¿qué ___? (pasar — what happened)', accept: ['pasó'] },
     { id: 'p:solicitarcomienzoB2:funcion', kind: 'mcq', q: '¿Qué contenido informativo tiene "pues verás..." por sí solo?',
       options: ['Mucho', 'Casi ninguno — anuncia que viene un relato', 'Es la conclusión'], answer: 1 },
     { id: 'p:solicitarcomienzoB2:registro', kind: 'mcq', q: '¿Son estos marcadores típicos de la lengua escrita formal?',
@@ -26601,7 +26610,8 @@ window.STRAND_LESSONS = [
     { id: 'p:marcadoresB2:reformulador', kind: 'mcq', q: '"Mejor dicho, es el más bonito." ¿Qué hace "mejor dicho"?',
       options: ['Resume todo lo anterior', 'Corrige/rectifica lo que se acaba de decir', 'Cambia de tema'], answer: 1 },
     { id: 'p:marcadoresB2:cloze', kind: 'cloze', text: 'El informe ya está listo. ___, prefiero revisarlo una vez más. (de todos modos)', accept: ['De todos modos', 'de todos modos'] },
-    { id: 'p:marcadoresB2:recall', kind: 'recall', front: '¿Qué distingue a "por cierto" (digresor) de "en cualquier caso" (distanciamiento)?', back: 'por cierto se desvía a un tema nuevo; en cualquier caso resta relevancia al tema anterior sin cambiarlo' }
+    { id: 'p:marcadoresB2:recall', kind: 'recall', front: '¿Qué distingue a "por cierto" (digresor) de "en cualquier caso" (distanciamiento)?', back: 'por cierto se desvía a un tema nuevo; en cualquier caso resta relevancia al tema anterior sin cambiarlo' },
+    { id: 'p:marcadoresb2:produce', kind: 'cloze', text: 'No me apetece; de todos ___, iré. (anyway)', accept: ['modos'] }
   ]
 },
 
