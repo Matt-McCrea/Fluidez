@@ -624,6 +624,15 @@ window.STRAND_LESSONS = [
   title: 'Cuenta lo que dijeron',
   canDo: 'report what people said, and distance yourself from it',
   summary: 'Reported speech at B2 is not just backshifting tenses. It is choosing a verb that carries your own judgement — dijo, afirmó, sostuvo, insinuó, soltó — and knowing that the choice is never neutral.',
+  keywords: [
+    { es: 'Dijo que…', en: 'He said that…' },
+    { es: 'Preguntó si…', en: 'He asked whether…' },
+    { es: 'Me pidió que…', en: 'He asked me to… (+ subjunctive)' },
+    { es: 'según él', en: 'according to him' },
+    { es: 'al día siguiente', en: 'the next day' },
+    { es: 'añadir', en: 'to add' },
+    { es: 'insistir en', en: 'to insist on' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write an account of a real disagreement between two people, reporting what each said. Sixteen sentences or more, with no more than two uses of <i>decir</i> in the whole text.' },
     { h: 'The verb carries the judgement', html: '<i>Afirmó</i> is neutral-formal. <i>Sostuvo</i> implies they held the line. <i>Insinuó</i> says they would not commit. <i>Soltó</i> says it came out badly. Choosing one is taking a position, and pretending otherwise is naive.' }
@@ -658,6 +667,15 @@ window.STRAND_LESSONS = [
   title: 'Pon el peso donde quieras',
   canDo: 'move the emphasis in a sentence without changing the words',
   summary: 'Spanish word order is freer than English, and that freedom is information: what you put first is what you are treating as known, and what you leave last is what you are actually asserting.',
+  keywords: [
+    { es: 'Fue X quien…', en: 'It was X who…' },
+    { es: 'Lo que pasa es que…', en: 'What\'s happening is that…' },
+    { es: 'lo de…', en: 'that business with…' },
+    { es: 'incluso', en: 'even' },
+    { es: 'sobre todo', en: 'above all' },
+    { es: 'de ninguna manera', en: 'absolutely not' },
+    { es: 'el énfasis', en: 'the emphasis' }
+  ],
   sections: [
     { h: 'What to do', html: 'Take six plain sentences you have written. Rewrite each three ways, moving the emphasis to a different element, and say in one line what each version is answering.' },
     { h: 'The devices', html: 'Fronting (<i>A Marta no la he visto</i>) · cleft (<i>Lo que pasa es que…</i> / <i>Fue Marta quien…</i>) · <i>lo de</i> (<i>lo de Marta</i>) · doubling the pronoun. Each answers a different implicit question.' }
@@ -692,6 +710,15 @@ window.STRAND_LESSONS = [
   title: 'Describe con precisión técnica',
   canDo: 'describe properties, quantities and processes exactly',
   summary: 'The B2 notion vocabulary is not decoration: denso, frágil, empapado, áspero, soso, agridulce, a simple vista. Without it every description collapses into bueno, malo, mucho and grande.',
+  keywords: [
+    { es: 'está fabricado con', en: 'it\'s made from' },
+    { es: 'tiene forma de', en: 'it\'s shaped like' },
+    { es: 'huele a', en: 'it smells of' },
+    { es: 'a simple vista', en: 'at first glance' },
+    { es: 'a diferencia de', en: 'unlike' },
+    { es: 'resistente', en: 'hard-wearing' },
+    { es: 'preciso', en: 'precise' }
+  ],
   sections: [
     { h: 'What to do', html: 'Describe a process you know well — cooking something, fixing something, a procedure at work — in fifteen to twenty sentences, with no vague adjectives at all.' },
     { h: 'Banned words', html: '<i>Bueno, malo, bonito, feo, grande, pequeño, mucho, muy</i>. Every one of them has a precise alternative, and the point of the exercise is to find it.' }
@@ -726,6 +753,15 @@ window.STRAND_LESSONS = [
   title: 'Escribe tres cartas formales',
   canDo: 'write a job application, a complaint and a formal request',
   summary: 'Formal written Spanish has fixed furniture — openings, closings, and a set of impersonal constructions — and using the wrong one is more visible in writing than any grammatical slip.',
+  keywords: [
+    { es: 'Le escribo en relación con…', en: 'I am writing regarding…' },
+    { es: 'Le agradecería que…', en: 'I would be grateful if you…' },
+    { es: 'Solicito…', en: 'I request…' },
+    { es: 'Quedo a su disposición.', en: 'I remain at your disposal.' },
+    { es: 'Atentamente', en: 'Yours sincerely' },
+    { es: 'adjunto', en: 'enclosed' },
+    { es: 'el asunto', en: 'the subject' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write three: a job application, a letter of complaint about something that actually annoyed you, and a request to an institution. Each 150 to 250 words.' },
     { h: 'The furniture', html: '<i>Estimado/a Sr./Sra.</i> + colon, never a comma. <i>Me dirijo a usted para…</i> to open. <i>Quedo a la espera de su respuesta</i> and <i>Atentamente</i> to close. Impersonal <i>se</i> and passive throughout — a complaint in the first person singular reads as a tantrum.' }
@@ -760,6 +796,15 @@ window.STRAND_LESSONS = [
   title: 'Lleva una conversación difícil',
   canDo: 'manage a conversation where you and the other person want different things',
   summary: 'Everything in B2 comes together here: register, softening, holding the floor, conceding, and closing without either side losing face.',
+  keywords: [
+    { es: 'Por cierto…', en: 'By the way…' },
+    { es: 'Pues verás…', en: 'Well, you see…' },
+    { es: '¿Y si…?', en: 'What if…?' },
+    { es: 'Si yo fuera tú…', en: 'If I were you…' },
+    { es: 'Lamento lo de…', en: 'I\'m sorry about…' },
+    { es: 'Una cosa más:', en: 'One more thing:' },
+    { es: '¡Cuánto tiempo!', en: 'It\'s been ages!' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write a twenty-five turn conversation in which you have to tell someone something they do not want to hear, and reach an outcome.' },
     { h: 'What makes it B2', html: 'Both people must move. Softening before the bad news, a concession from each side, at least one interruption handled, and an ending that is agreed rather than imposed.' }
@@ -794,6 +839,15 @@ window.STRAND_LESSONS = [
   title: 'Reescribe algo tuyo en dos registros',
   canDo: 'take your own writing up and down the register ladder',
   summary: 'The band closes where it opened. You now have the ladder, the argument structure, the reporting verbs and the emphasis devices — this asks you to apply all four to something you already wrote.',
+  keywords: [
+    { es: 'se trata de', en: 'it\'s about' },
+    { es: 'lo de…', en: 'the business of…' },
+    { es: 'si yo fuera tú', en: 'if I were you' },
+    { es: 'habría que', en: 'one ought to' },
+    { es: 'ojalá + subjuntivo', en: 'I wish' },
+    { es: 'por cierto', en: 'by the way' },
+    { es: 'en resumen', en: 'in short' }
+  ],
   sections: [
     { h: 'What to do', html: 'Take a piece you wrote earlier in B2. Rewrite it twice: once for a friend, once for publication. Keep all three versions side by side.' },
     { h: 'What to check', html: 'Did the facts survive intact? Did you change more than vocabulary — word order, hedging, impersonality? Read the formal one aloud: if it sounds pompous rather than formal, you have gone one rung too far.' }
@@ -3124,6 +3178,16 @@ window.STRAND_LESSONS = [
   pcic: ['generos_discursivos:B2:76', 'generos_discursivos:B2:77'],
   title: 'La carta de reclamación',
   summary: 'A complaint that is merely angry gets filed. A complaint that follows the expected shape — facts, harm, a specific demand, a deadline — gets actioned. B2 is where you are judged on the shape of the text, not just the correctness of its sentences.',
+  keywords: [
+    { es: 'la reclamación', en: 'the complaint' },
+    { es: 'la avería', en: 'the fault, the breakdown' },
+    { es: 'comunicar', en: 'to report' },
+    { es: 'solicitar', en: 'to request' },
+    { es: 'la devolución', en: 'the refund' },
+    { es: 'el importe', en: 'the amount' },
+    { es: 'Por todo ello', en: 'For all these reasons' },
+    { es: 'A la espera de su respuesta', en: 'Awaiting your reply' }
+  ],
   sections: [
     { h: 'What it is for', html: 'A <i>reclamación</i> is a formal record as much as a request. It is written on the assumption that a third party — a manager, a consumer body, a court — may read it later, which is why it is dated, factual and specific.' },
     { h: 'The register', html: 'Impersonal and cold, never sarcastic. Use <b>usted</b> throughout, the impersonal <i>se</i> for the facts (<i>se contrató</i>, <i>se acordó</i>), and the conditional to soften the demand (<i>agradecería que</i>, <i>les rogaría que</i>). Anger is conveyed by precision, not by adjectives.' },
@@ -13218,6 +13282,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B1:471'],
   title: 'Una presentación pública (B2)',
   summary: 'A B2 talk adds a whole move a B1 one does not need — argumentación — and checks in with the audience mid-flow with a rhetorical question (¿Podríamos añadir algo más?), treating the presentation less like a monologue and more like a conversation the audience is simply not interrupting.',
+  keywords: [
+    { es: 'Muchos de ustedes…', en: 'Many of you…' },
+    { es: 'Resumiendo', en: 'To sum up' },
+    { es: '¿Podríamos añadir…?', en: 'Could we add…?' },
+    { es: 'las cifras', en: 'the figures' },
+    { es: 'el teletrabajo', en: 'remote working' },
+    { es: 'a continuación', en: 'next' },
+    { es: 'para concluir', en: 'to conclude' }
+  ],
   sections: [
     { h: 'A richer opening toolkit', html: 'Beyond the B1 hooks, a B2 presentation can use a physical OBJECT as an attention-getter (<i>utilizar un objeto</i>), and its contextualization is more elaborate: <i>Muchos de ustedes seguramente conocerán... Sin embargo, quisiera presentar algunos datos que, tal vez, sean una novedad.</i>' },
     { h: 'Argumentación, not just exposición-narración', html: 'Where a B1 talk mainly exposes or narrates, a B2 one can build an actual ARGUMENT — a claim supported by reasoning — and check its own reasoning aloud with a rhetorical question: <i>¿Podríamos añadir algo más?</i>' },
@@ -13314,6 +13387,16 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B1:618', 'generos_discursivos:B1:623', 'generos_discursivos:B1:631', 'generos_discursivos:B1:636'],
   title: 'La carta de solicitud de trabajo',
   summary: 'Ofrecerse is its own move, separate from referencing the ad and separate from listing your qualifications — a job application letter does not just describe you, it explicitly puts you forward as the answer, which is the one sentence a purely descriptive cover letter often forgets to write.',
+  keywords: [
+    { es: 'En respuesta a su anuncio', en: 'In response to your advertisement' },
+    { es: 'presentar mi candidatura', en: 'to put myself forward' },
+    { es: 'el puesto', en: 'the position' },
+    { es: 'Quedo a su disposición.', en: 'I remain at your disposal.' },
+    { es: 'Le saluda atentamente', en: 'Yours faithfully' },
+    { es: 'adjunto', en: 'enclosed, attached' },
+    { es: 'la entrevista', en: 'the interview' },
+    { es: 'el currículum', en: 'the CV' }
+  ],
   sections: [
     { h: 'Header: full contact block, both sides', html: 'Unlike a personal letter, this one opens with a formal block: your name and contact details (phone, fax, email), then the company\'s name/department, place and date, and often an <i>Asunto</i> (subject) and <i>Referencia</i> (job reference number) line.' },
     { h: 'Formal salutation, with a colon', html: '<i>Estimado Sr. García:</i> or, with no named contact, <i>Muy Sr. mío:</i> / <i>Señores:</i> — always a colon, never a comma.' },
@@ -16303,6 +16386,15 @@ window.STRAND_LESSONS = [
          'gramatica:B2:252', 'gramatica:B2:254', 'gramatica:B2:256', 'gramatica:B2:257'],
   title: 'El que, la que, los que, las que: el relativo tras preposición',
   summary: 'Plain "que" cannot follow a preposition in careful Spanish — "la persona que hablé" is not standard for "the person I spoke to". Once a preposition is involved, the article has to reappear and agree with what it points back to: el que, la que, los que, las que.',
+  keywords: [
+    { es: 'el que / la que', en: 'the one that, which' },
+    { es: 'los que / las que', en: 'the ones that' },
+    { es: 'de la que te hablé', en: 'that I told you about' },
+    { es: 'a la que he visto', en: 'that I saw' },
+    { es: 'para el que le interese', en: 'for whoever is interested' },
+    { es: 'en venta', en: 'for sale' },
+    { es: 'la dirección', en: 'the address' }
+  ],
   sections: [
     { h: 'Why the article comes back', html: 'Bare <i>que</i> after a preposition sounds foreign: <b>*la chica de que te hablé</b>. Spanish reinserts an article that agrees with the antecedent in gender and number: <i>la chica de <b>la que</b> te hablé</i>, <i>los amigos con <b>los que</b> viajé</i>.' },
     { h: 'With no antecedent at all', html: 'When nothing precedes it, <i>el que</i> works like "whoever/the one who": <i>He dejado mi dirección para <b>el que</b> le interese</i>. Here the gender defaults to masculine unless context specifies otherwise.' },
@@ -16340,6 +16432,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:244', 'gramatica:B2:245', 'gramatica:B2:246'],
   title: '"Que" explicativo: la coma que añade, no que elige',
   summary: 'Between commas, "que" stops selecting which one you mean and starts adding a comment about someone or something already fully identified — the difference between "the friends who came" (which ones?) and "my friends, who came,..." (all of them, plus a remark).',
+  keywords: [
+    { es: 'la chica que vive al lado', en: 'the girl who lives next door (which girl)' },
+    { es: 'Esa chica, que es mi vecina,', en: 'That girl, who is my neighbour, (extra information)' },
+    { es: 'la coma', en: 'the comma' },
+    { es: 'el vecino / la vecina', en: 'the neighbour' },
+    { es: 'simpático', en: 'nice' },
+    { es: 'especificativo', en: 'identifying' },
+    { es: 'explicativo', en: 'adding information' }
+  ],
   sections: [
     { h: 'Specificative vs explicative', html: 'Without commas, <i>que</i> narrows down which referent you mean: <i>los amigos que vinieron</i> (only the ones who came, as opposed to others). With commas, it adds a side comment about a referent already fully identified: <i>mis amigos, que vinieron todos,…</i> — you already know who "mis amigos" are.' },
     { h: 'The antecedent can be a pronoun', html: 'Explicative <i>que</i> is the one construction where the antecedent can be a stressed personal pronoun: <i>Yo, <b>que</b> soy su mejor amigo, lo sé.</i> A specificative clause cannot attach to <i>yo</i> this way — there is only one "yo".' },
@@ -16374,6 +16475,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:259', 'gramatica:B2:260', 'gramatica:B2:261', 'gramatica:B2:262'],
   title: 'Quien / quienes: solo para personas',
   summary: '"Quien" does everything "el que" does when the antecedent is human, but it is pickier: it never refers to things, it agrees only in number (not gender), and as a subject it never takes a preposition.',
+  keywords: [
+    { es: 'quien', en: 'the one who (people only)' },
+    { es: 'quienes', en: 'those who' },
+    { es: 'a quien', en: 'whom, to whom' },
+    { es: 'Quien tiene razón es él.', en: 'The one who is right is him.' },
+    { es: 'Quienes lleguen tarde…', en: 'Whoever arrives late… (+ subjunctive)' },
+    { es: 'dirigirse a', en: 'to approach, to address' },
+    { es: 'tener razón', en: 'to be right' }
+  ],
   sections: [
     { h: 'Agrees in number only', html: '<i>Quien</i> becomes <i>quienes</i> for plural, full stop — there is no separate feminine form: <i>el amigo/la amiga de quien te hablé</i>, <i>los amigos/las amigas de quienes te hablé</i>.' },
     { h: 'With and without an antecedent', html: 'With one: <i>Ese profesor, de <b>quien</b> me hablaste, es horrible.</i> Without one, it means "whoever": <i>He dejado mi dirección para <b>quien</b> le interese.</i>' },
@@ -16408,6 +16518,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:284', 'gramatica:B2:285', 'gramatica:B2:286', 'gramatica:B2:287'],
   title: 'El orden en las preguntas: lo que puede moverse',
   summary: 'A Spanish question puts more in front of the verb than a beginner rule of thumb suggests, and once the question word is placed, everything after the verb has real freedom of order. B2 is where those two facts stop being noise and start being usable.',
+  keywords: [
+    { es: '¿Por qué Luis no dijo nada?', en: 'Why didn\'t Luis say anything?' },
+    { es: '¿Dónde y cuándo…?', en: 'Where and when…?' },
+    { es: '¿Vas adónde?', en: 'You\'re going WHERE? (echo question)' },
+    { es: 'a menudo', en: 'often' },
+    { es: 'conocerse', en: 'to meet each other' },
+    { es: 'el orden', en: 'the word order' }
+  ],
   sections: [
     { h: 'What can go before the verb', html: 'Not just the interrogative itself: an adverb of frequency can sit between subject and verb even in a question — <i>¿Quién <b>a menudo</b> hace ejercicio?</i> — a word order that would be unnatural in a statement.' },
     { h: 'After the verb, order is loose', html: 'Once the interrogative and verb are placed, what follows can shuffle relatively freely without changing the core meaning: <i>¿De quién habla mal la gente?</i> and <i>¿Por qué Luis no dijo nada?</i> both front-load the wh-word and let the rest fall where it reads best.' },
@@ -16445,6 +16563,15 @@ window.STRAND_LESSONS = [
          'gramatica:B2:340', 'gramatica:B2:341', 'gramatica:B2:346'],
   title: 'Adverbios de frecuencia y el adverbio-tópico',
   summary: 'Not all frequency adverbs behave alike: some can be intensified with "muy" and some flatly cannot, and one special class — personalmente and its family — steps outside the sentence entirely to flag whose opinion is coming.',
+  keywords: [
+    { es: 'a menudo', en: 'often' },
+    { es: 'rara vez', en: 'rarely' },
+    { es: 'de vez en cuando', en: 'from time to time' },
+    { es: 'habitualmente', en: 'habitually' },
+    { es: 'políticamente', en: 'politically (as a topic)' },
+    { es: 'económicamente', en: 'economically' },
+    { es: 'en cuanto a', en: 'as regards' }
+  ],
   sections: [
     { h: 'Indeterminate frequency: gradable', html: '<i>Habitualmente, frecuentemente, raramente</i> describe a pattern without a fixed count, and they accept degree: <i>muy raramente</i>. They move freely: <i>raramente voy</i> / <i>voy raramente</i>.' },
     { h: 'Determinate frequency: not gradable', html: '<i>Diariamente, anualmente</i> name a FIXED interval, so grading them makes no sense: <b>*muy diariamente</b> is ungrammatical the way "*very daily" is in English. They still move: <i>voy diariamente</i> / <i>diariamente voy</i>.' },
@@ -16565,6 +16692,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:379', 'gramatica:B2:380', 'gramatica:B2:381', 'gramatica:B2:383'],
   title: 'Donde como relativo: lugares sin repetir "en el que"',
   summary: '"Donde" does the job of "en el/la que" for places, but more compactly — and it is the one relative that survives with no antecedent at all, since "the place where" is so often left unsaid.',
+  keywords: [
+    { es: 'donde', en: 'where' },
+    { es: 'el lugar donde', en: 'the place where' },
+    { es: 'donde la última vez', en: 'where we did last time' },
+    { es: 'en el que', en: 'in which' },
+    { es: 'conocerse', en: 'to meet each other' },
+    { es: 'celebrar', en: 'to celebrate' },
+    { es: 'nacer', en: 'to be born' }
+  ],
   sections: [
     { h: 'Specificative: which place', html: '<i>Donde</i> narrows down a place already named: <i>Este es el lugar <b>donde</b> nos conocimos</i>, equivalent to <i>en el que nos conocimos</i> but shorter.' },
     { h: 'No antecedent needed', html: 'Unlike most relatives, <i>donde</i> works perfectly with nothing before it: <i>Quedamos <b>donde</b> la última vez</i> — "where" stands in for the whole idea of "the place".' },
@@ -16860,6 +16996,16 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:587', 'gramatica:B2:588', 'gramatica:B2:589', 'gramatica:B2:590'],
   title: 'Complementos del adjetivo: difícil de, interesado en',
   summary: 'Many adjectives need a fixed preposition to attach their complement — and once that complement is a full clause rather than an infinitive, choosing indicative or subjunctive after it carries real meaning.',
+  keywords: [
+    { es: 'difícil de + infinitivo', en: 'difficult to (do)' },
+    { es: 'fácil de entender', en: 'easy to understand' },
+    { es: 'interesado en', en: 'interested in' },
+    { es: 'capaz de', en: 'capable of' },
+    { es: 'dispuesto a', en: 'willing to' },
+    { es: 'harto de', en: 'fed up with' },
+    { es: 'consciente de', en: 'aware of' },
+    { es: 'el curso', en: 'the course' }
+  ],
   sections: [
     { h: 'Adjective + preposition + infinitive', html: 'A fixed preposition links the adjective to what follows: <i>difícil <b>de</b> leer</i>, <i>partidario <b>de</b> un cambio</i>, <i>interesado <b>en</b> asistir</i>. The preposition is not optional and does not always match English ("interested IN" but "difficult TO read", not "difficult OF read").' },
     { h: 'The complement can be a whole clause', html: 'Instead of an infinitive, a full subordinate clause can follow the same preposition: <i>interesado en <b>que vengas</b></i> — "interested in you coming", not just "interested in coming".' },
@@ -16893,6 +17039,16 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:636', 'gramatica:B2:637', 'gramatica:B2:638', 'gramatica:B2:639'],
   title: 'Verbos con preposición fija: decidirse a, contar con',
   summary: 'A large set of verbs demand a specific preposition before their complement, and swapping it can quietly change the meaning: "contar" alone means to count or to tell, "contar con" means to rely on.',
+  keywords: [
+    { es: 'depender de', en: 'to depend on' },
+    { es: 'consistir en', en: 'to consist of' },
+    { es: 'confiar en', en: 'to trust in' },
+    { es: 'acordarse de', en: 'to remember' },
+    { es: 'renunciar a', en: 'to give up' },
+    { es: 'insistir en', en: 'to insist on' },
+    { es: 'carecer de', en: 'to lack' },
+    { es: 'el régimen', en: 'the preposition a verb requires' }
+  ],
   sections: [
     { h: 'Verb + fixed preposition + infinitive', html: 'The complement can be an infinitive: <i>decidirse <b>a</b> ir</i>, <i>tardar <b>en</b> llegar</i>, <i>consistir <b>en</b> esperar</i>. The preposition belongs to the verb, memorised as a unit.' },
     { h: '...or a whole clause', html: 'The same preposition can introduce a full subordinate clause instead: <i>contar <b>con</b> que vengas</i> — "counting on you coming", with the same "con" as the infinitive version.' },
@@ -16926,6 +17082,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:824', 'gramatica:B2:827', 'gramatica:B2:828', 'gramatica:B2:830', 'gramatica:B2:832', 'gramatica:B2:834'],
   title: 'Oraciones subordinadas de lugar: donde con indicativo o subjuntivo',
   summary: 'Clauses of place built on "donde" work exactly like the more famous time clauses with "cuando": indicative for a place you know, subjunctive for one you do not — plus a small set of prepositions that pin down origin, destination or direction.',
+  keywords: [
+    { es: 'donde + indicativo', en: 'where (a known place)' },
+    { es: 'donde + subjuntivo', en: 'wherever (not yet settled)' },
+    { es: 'Voy donde tú dices.', en: 'I\'m going where you say.' },
+    { es: 'Voy donde tú digas.', en: 'I\'ll go wherever you say.' },
+    { es: 'desde donde', en: 'from where' },
+    { es: 'hacia donde', en: 'towards where' },
+    { es: 'el mar', en: 'the sea' }
+  ],
   sections: [
     { h: 'Known place: indicative', html: 'When the place is identified or already known to the speaker, the verb after <i>donde</i> stays indicative: <i>Sigue hasta <b>donde hay</b> una torre alta</i> — a specific, known tower.' },
     { h: 'Unknown or unspecified place: subjunctive', html: 'When the place is not yet identified — whichever it turns out to be — the subjunctive marks that uncertainty: <i>Sigue hasta <b>donde veas</b> una torre alta</i> — wherever you happen to see one.' },
@@ -16960,6 +17125,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:835', 'gramatica:B2:836', 'gramatica:B2:837', 'gramatica:B2:838'],
   title: 'Oraciones subordinadas de modo: como y según',
   summary: 'Same pattern as time and place clauses, applied to HOW something is done: indicative when the manner is known, subjunctive when it is left open to whoever is acting.',
+  keywords: [
+    { es: 'como + indicativo', en: 'the way (that is known)' },
+    { es: 'como + subjuntivo', en: 'however (not yet settled)' },
+    { es: 'Hazlo como quieras.', en: 'Do it however you like.' },
+    { es: 'Lo hice como dijiste.', en: 'I did it the way you said.' },
+    { es: 'según', en: 'according to, as' },
+    { es: 'tal y como', en: 'just as' },
+    { es: 'de modo que', en: 'so that' }
+  ],
   sections: [
     { h: 'Known manner: indicative', html: '<i>Lo haré según <b>dices</b></i> — you have already told me how, and I will follow that exact manner.' },
     { h: 'Unspecified manner: subjunctive', html: '<i>Lo haré según <b>digas</b></i> — however you end up telling me, whatever that turns out to be; <i>Lo hago como <b>digas</b></i> works the same way.' },
@@ -16996,6 +17170,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:251', 'nociones_generales:B2:252'],
   title: 'El peso: tonelada, carga, pesarse',
   summary: 'Weight vocabulary beyond the kilogram of A1 shopping lists: bulk units for freight, the exact/approximate distinction that matters in a contract, and the reflexive pesarse for weighing yourself rather than an object.',
+  keywords: [
+    { es: 'el peso', en: 'the weight' },
+    { es: 'pesar', en: 'to weigh' },
+    { es: 'pesarse', en: 'to weigh yourself' },
+    { es: 'la tonelada', en: 'the tonne' },
+    { es: 'la carga', en: 'the load' },
+    { es: 'la báscula', en: 'the scales' },
+    { es: 'ligero / pesado', en: 'light / heavy' },
+    { es: 'el almacén', en: 'the warehouse' }
+  ],
   sections: [
     { h: 'Units of bulk', html: 'A <b>tonelada</b> (tonne, 1000 kg) and a <b>carga</b> (a load — the amount one vehicle or animal carries) describe weight at industrial or transport scale, not kitchen scale.' },
     { h: 'Exact vs approximate', html: 'A weight can be given as <i>peso exacto</i> (precise, for a contract or a scale reading) or <i>peso aproximado</i> (a working estimate) — the distinction matters whenever money or shipping depends on it.' },
@@ -17039,6 +17223,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:286', 'nociones_generales:B2:287', 'nociones_generales:B2:288'],
   title: 'Posición absoluta: tumbado, de rodillas, del revés',
   summary: 'Beyond "sitting" and "standing", Spanish has a precise vocabulary for exactly how a body or object is oriented in space — vocabulary a novel or a set of instructions leans on constantly.',
+  keywords: [
+    { es: 'tumbado', en: 'lying down' },
+    { es: 'de rodillas', en: 'kneeling' },
+    { es: 'boca abajo / boca arriba', en: 'face down / face up' },
+    { es: 'del revés', en: 'inside out, back to front' },
+    { es: 'de pie', en: 'standing' },
+    { es: 'sentado', en: 'sitting' },
+    { es: 'la hierba', en: 'the grass' }
+  ],
   sections: [
     { h: 'Body postures', html: '<b>Tumbado</b> (lying down), <b>de rodillas</b> (kneeling), <b>boca arriba/abajo</b> (face up/down) describe a body\'s posture with precision a beginner "sentado/de pie" pair cannot reach.' },
     { h: 'Straight or bent', html: '<b>Recto/derecho</b> (straight) and <b>doblado</b> (bent) apply to bodies, limbs and objects alike: <i>estar de pie recto</i>, <i>el brazo doblado</i>.' },
@@ -17082,6 +17275,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:592'],
   title: 'Anticipación: adelantar, con tiempo, por adelantado',
   summary: 'Doing something earlier than planned has its own family of expressions in Spanish, separate from the simple future — a clock can BE adelantado, a meeting can GET adelantada, and money can be paid por adelantado, each a different grammatical shape for the same idea.',
+  keywords: [
+    { es: 'adelantar', en: 'to bring forward' },
+    { es: 'estar adelantado', en: 'to be fast (a clock)' },
+    { es: 'con tiempo', en: 'with time to spare' },
+    { es: 'por adelantado', en: 'in advance' },
+    { es: 'madrugar', en: 'to get up very early' },
+    { es: 'prever', en: 'to foresee' },
+    { es: 'puntual', en: 'on time' }
+  ],
   sections: [
     { h: 'madrugar: getting up early', html: '<b>Madrugar</b> means specifically to get up very early, not just "to be early" in general — it is tied to the start of the day.' },
     { h: 'adelantar: moving something earlier', html: '<b>Adelantar</b> is transitive: you move a clock, a meeting or a deadline to an earlier point. <i>He adelantado el reloj</i>, <i>Tuvimos que adelantar la cita.</i>' },
@@ -17175,6 +17377,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:635', 'nociones_generales:B2:636', 'nociones_generales:B2:638'],
   title: 'Repetición: rutina, ciclo, una y otra vez',
   summary: 'Beyond otra vez, Spanish has a rich family for talking about things that repeat: cycles that renew themselves, rhythms, habits that shade into vices, and phrases for insisting or starting over.',
+  keywords: [
+    { es: 'una y otra vez', en: 'over and over' },
+    { es: 'volver a + infinitivo', en: 'to do again' },
+    { es: 'la rutina', en: 'the routine' },
+    { es: 'el ciclo', en: 'the cycle' },
+    { es: 'la manía', en: 'the quirk, the habit' },
+    { es: 'el vicio', en: 'the bad habit, the vice' },
+    { es: 'soler', en: 'to usually do' },
+    { es: 'repetirse', en: 'to repeat itself' }
+  ],
   sections: [
     { h: 'Nouns for a repeating pattern', html: '<b>Rutina</b> (a routine), <b>hábito</b> (a habit), <b>vicio</b> (a bad habit/vice), <b>manía</b> (a quirky, obsessive habit) name repetition with different judgement built in — from neutral to negative.' },
     { h: 'ciclo, ritmo', html: 'A <b>ciclo</b> is a pattern that closes and starts again (seasons, an economic cycle); a <b>ritmo</b> is the pace or beat at which something recurs.' },
@@ -17220,6 +17432,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:555', 'nociones_generales:B2:556'],
   title: 'Simultaneidad: mientras tanto, a la vez, coincidir',
   summary: 'Two things happening at once needs more than "y" — Spanish marks simultaneity explicitly, whether two events overlap by coincidence or a speaker deliberately signals that one thing is happening while another goes on elsewhere.',
+  keywords: [
+    { es: 'a la vez', en: 'at the same time' },
+    { es: 'mientras tanto', en: 'meanwhile' },
+    { es: 'coincidir', en: 'to coincide' },
+    { es: 'simultáneo', en: 'simultaneous' },
+    { es: 'en tiempo real', en: 'in real time' },
+    { es: 'al mismo tiempo', en: 'at the same time' },
+    { es: 'la coincidencia', en: 'the coincidence' }
+  ],
   sections: [
     { h: 'coincidir, coincidencia', html: '<b>Coincidir</b> is for events, opinions or schedules that happen to line up: <i>coincidir en el tiempo</i>, <i>coincidencia de gustos</i> — the overlap is often unplanned.' },
     { h: 'simultáneo, simultáneamente, a la vez', html: '<b>Simultáneo</b> describes two things designed or happening to run in parallel (<i>una traducción simultánea</i>); <b>a la vez</b> is the everyday equivalent of "at the same time": <i>Estudia y trabaja a la vez.</i>' },
@@ -17261,6 +17482,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:887', 'nociones_generales:B2:888', 'nociones_generales:B2:889'],
   title: 'Limpieza: mancha, ensuciar, limpiar a fondo',
   summary: 'A vocabulary set that moves past the A1 "limpio/sucio" pair into how dirt gets there, how strongly it registers with the speaker, and the precise ways of removing it.',
+  keywords: [
+    { es: 'la mancha', en: 'the stain' },
+    { es: 'manchar', en: 'to stain' },
+    { es: 'ensuciar', en: 'to make dirty' },
+    { es: 'limpiar a fondo', en: 'to clean thoroughly' },
+    { es: 'asqueroso', en: 'disgusting' },
+    { es: 'el barro', en: 'the mud' },
+    { es: 'limpio / sucio', en: 'clean / dirty' }
+  ],
   sections: [
     { h: 'suciedad, mancha', html: '<b>Suciedad</b> is dirt in general; a <b>mancha</b> is one specific, localised stain — a coffee mancha, a grass mancha.' },
     { h: 'asqueroso: strong disgust', html: 'Far past "sucio", <b>asqueroso</b> conveys visceral disgust — reserved for genuinely repulsive dirt or filth, not mild untidiness.' },
@@ -17401,6 +17631,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:1022', 'nociones_generales:B2:1023', 'nociones_generales:B2:1024'],
   title: 'Facilidad y dificultad: complejo, facilitar, con facilidad',
   summary: 'Beyond fácil/difícil, this notion covers the noun for how complicated something is, the verbs that actively make things easier or harder, and the fixed phrases for having a knack — or not — for something.',
+  keywords: [
+    { es: 'complejo', en: 'complex' },
+    { es: 'la complejidad', en: 'the complexity' },
+    { es: 'facilitar', en: 'to make easier' },
+    { es: 'con facilidad', en: 'easily' },
+    { es: 'costar trabajo', en: 'to be hard work' },
+    { es: 'sencillo', en: 'simple' },
+    { es: 'la variable', en: 'the variable' }
+  ],
   sections: [
     { h: 'complejidad, simplicidad', html: 'The abstract nouns behind <i>complejo</i> and <i>simple</i>: <b>complejidad</b> (complexity) and <b>simplicidad</b> (simplicity) name the QUALITY, not the individual case.' },
     { h: 'complejo, duro', html: '<b>Complejo</b> describes something with many interacting parts, harder to grasp than merely <i>difícil</i>; <b>duro</b> leans toward something demanding effort or endurance, often emotionally.' },
@@ -18287,6 +18526,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:430', 'funciones:B2:431', 'funciones:B2:432'],
   title: 'Expresar falta de obligación: no hace falta que...',
   summary: 'Telling someone they do NOT need to do something is its own function, distinct from a plain negative command — it reassures rather than forbids.',
+  keywords: [
+    { es: 'No hace falta que…', en: 'You don\'t need to… (+ subjunctive)' },
+    { es: 'No es imprescindible que…', en: 'It isn\'t essential that…' },
+    { es: 'No tienes por qué…', en: 'You don\'t have to…' },
+    { es: 'No hay por qué…', en: 'There\'s no reason to…' },
+    { es: 'no es necesario', en: 'it isn\'t necessary' },
+    { es: 'disculparse', en: 'to apologise' },
+    { es: 'asistir a', en: 'to attend' }
+  ],
   sections: [
     { h: 'No es imprescindible/indispensable', html: 'Formal register — states plainly that something, while perhaps useful, is not strictly required: <i>No es imprescindible que vayas.</i>' },
     { h: 'No hace falta que...', html: 'The everyday, most common way to say something isn\'t necessary, always followed by subjunctive since it concerns a hypothetical action: <i>No hace falta que seas mayor de edad para entrar.</i>' },
@@ -18444,6 +18692,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:508'],
   title: 'Expresar que se recuerda: recuerdo, me acuerdo de',
   summary: 'The plain, general way to confirm you remember something — the everyday default before reaching for the more specific "me suena" or "no he olvidado" families.',
+  keywords: [
+    { es: 'Recuerdo…', en: 'I remember…' },
+    { es: 'Me acuerdo de…', en: 'I remember…' },
+    { es: 'Me suena.', en: 'It rings a bell.' },
+    { es: 'No me acuerdo.', en: 'I don\'t remember.' },
+    { es: 'Se me ha olvidado.', en: 'It\'s slipped my mind.' },
+    { es: 'perfectamente', en: 'perfectly' },
+    { es: 'recordar', en: 'to remember, to remind' }
+  ],
   sections: [
     { h: 'Recordar vs acordarse de', html: '<i>Recordar</i> is transitive, no preposition: <i>Recuerdo aquel verano.</i> <i>Acordarse</i> is reflexive and needs <i>de</i>: <i>Me acuerdo de aquel verano.</i> Both are fully standard and interchangeable in meaning.' },
     { h: 'The everyday baseline', html: 'Where <i>me suena</i> signals vague recognition and <i>no he olvidado</i> insists emphatically, <i>recuerdo/me acuerdo de</i> is the plain, unmarked way to state a clear memory.' }
@@ -21604,6 +21861,15 @@ window.STRAND_LESSONS = [
          'gramatica:B2:168', 'gramatica:B2:169', 'gramatica:B2:171', 'gramatica:B2:172', 'gramatica:B2:173'],
   title: 'Numerales partitivos/multiplicativos y cualquier/cualquiera',
   summary: 'Two families of precision quantifiers: partitive and multiplicative numerals for exact fractions and ratios, and the "cualquier/cualquiera" pair, which shifts between meaning "every single one, no exception" and "some one, it genuinely does not matter which" depending on where it sits and what surrounds it.',
+  keywords: [
+    { es: 'cualquier', en: 'any (before a noun)' },
+    { es: 'cualquiera', en: 'anyone, any one' },
+    { es: 'ambos', en: 'both' },
+    { es: 'sendos', en: 'one each' },
+    { es: 'la mitad de', en: 'half of' },
+    { es: 'la mayoría de', en: 'most of' },
+    { es: 'cada', en: 'each' }
+  ],
   sections: [
     { h: 'Partitives and multiplicatives', html: 'Fractions combine with <i>de</i> (<i>la mitad/un tercio de la tarta</i>) or with <i>parte</i> (<i>una quinta parte de...</i>). Multiples do the same with <i>de</i> (<i>el doble de dinero</i>) or with <i>veces</i> (<i>diez veces más</i>).' },
     { h: 'Cualquier: invariable, before the noun', html: '<i>Cualquier</i> never changes for gender and always precedes its noun. It can mean total inclusion (<i>Cualquier persona tiene ese derecho</i> — everyone, no exception) or restricted indifference (<i>Cualquier alumno puede venir</i> — some one student, it does not matter which).' },
@@ -21641,6 +21907,15 @@ window.STRAND_LESSONS = [
          'gramatica:B2:237', 'gramatica:B2:238'],
   title: 'El pronombre personal: se accidental y la jerarquía de clíticos',
   summary: 'Two advanced pronoun facts: "se" can relocate the responsibility for an accident away from the person it happened to — "se me perdió" makes the loss almost nobody\'s fault — and when clitics stack up, they follow a fixed hierarchy (se, then 2nd person, then 1st, then 3rd) that never varies.',
+  keywords: [
+    { es: 'Se me perdieron las llaves.', en: 'The keys got lost on me.' },
+    { es: 'Se me cayó.', en: 'I dropped it. (it fell on me)' },
+    { es: 'Se me olvidó.', en: 'I forgot. (it slipped my mind)' },
+    { es: 'se + me/te/le + verbo', en: 'the accidental se' },
+    { es: 'el orden: se, me, te, le', en: 'the clitic order' },
+    { es: 'romperse', en: 'to break (by itself)' },
+    { es: 'la culpa', en: 'the blame' }
+  ],
   sections: [
     { h: 'Subject pronoun presence disambiguating', html: 'With verbs of doubt or speech, including or omitting the subject pronoun can change who is meant: <i>Dudo que lo haga</i> (ambiguous — could be anyone) vs <i>Dudo que ella lo haga</i> (specifically "she").' },
     { h: 'Neuter lo replacing an attribute', html: '<i>Lo</i> can stand in for a whole predicate adjective already mentioned: <i>—¿Eres española? —Lo soy.</i> ("I am [that]").' },
@@ -21678,6 +21953,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:292', 'gramatica:B2:294', 'gramatica:B2:296', 'gramatica:B2:297', 'gramatica:B2:299'],
   title: 'Los exclamativos: qué, cómo, cuánto y quién',
   summary: 'Beyond the basic "¡Qué + adjective!", B2 adds a "que + subordinate clause" extension, "cómo" reacting to a verb rather than a quality, "cuánto" agreeing (or not) depending on what follows, and "quién" preferring its invariable form even when logic might suggest otherwise.',
+  keywords: [
+    { es: '¡Qué + adjetivo!', en: 'How …!' },
+    { es: '¡Qué bien que…!', en: 'How great that… (+ subjunctive)' },
+    { es: '¡Cuánto sabe!', en: 'How much he knows!' },
+    { es: '¡Cuántos amigos!', en: 'How many friends!' },
+    { es: '¡Cómo llueve!', en: 'How it\'s raining!' },
+    { es: '¡Quién pudiera…!', en: 'If only I could…!' }
+  ],
   sections: [
     { h: 'Qué + noun/adverb/adjective + que + clause', html: 'The basic exclamation can extend with a subordinate clause: <i>¡Qué bien que estés aquí!</i>, <i>¡Qué maravilla que estás aquí!</i> — reacting not just to a quality but to the whole fact.' },
     { h: 'Cómo + verb', html: '<i>Cómo</i> reacts to how an ACTION is done, not a quality: <i>¡Cómo canta!</i> ("how [well] he sings!").' },
@@ -21715,6 +21998,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:319', 'gramatica:B2:320', 'gramatica:B2:325', 'gramatica:B2:330', 'gramatica:B2:331', 'gramatica:B2:332'],
   title: 'Adverbios: combinaciones, cuantificadores y equivalencia adjetival',
   summary: 'B2 sharpens three fine points about adverbs: some combine with another deictic adverb but not all do, quantifiers like "muy" attach to some adverbs and not others with no obvious pattern, and a -mente adverb can sometimes be swapped for a plain adjective describing the subject with almost no change in meaning.',
+  keywords: [
+    { es: 'bien / mal', en: 'well / badly' },
+    { es: 'deprisa / despacio', en: 'quickly / slowly' },
+    { es: 'así', en: 'like this, that way' },
+    { es: 'el adverbio', en: 'the adverb' },
+    { es: 'modificar', en: 'to modify' },
+    { es: 'la manera', en: 'the manner' }
+  ],
   sections: [
     { h: 'Combining two adverbs of place', html: 'A prepositional adverb can stack with a deictic one: <i>allí encima</i> — but not every combination is natural or grammatical, so this has to be learned case by case.' },
     { h: 'Quantifier compatibility is not predictable', html: '<i>Muy lejos</i> works; <i>*muy encimísima</i> does not — some place/time adverbs accept degree words or a superlative ending and others flatly refuse it, with no general rule to derive it from.' },
@@ -21752,6 +22043,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:521', 'gramatica:B2:523', 'gramatica:B2:524', 'gramatica:B2:525', 'gramatica:B2:526'],
   title: 'El imperativo: valores más allá de la orden',
   summary: 'Doubled and lexicalized imperatives do jobs that have almost nothing to do with commanding: comforting, urging into action, or expressing pure surprise — "¡Anda!" as a reaction to news has no addressee at all in the sense a real command would.',
+  keywords: [
+    { es: 'Pasa, pasa.', en: 'Come in. (invitation)' },
+    { es: 'Oye / Oiga', en: 'Listen (getting attention)' },
+    { es: 'Mira / Mire', en: 'Look' },
+    { es: 'Venga', en: 'Come on' },
+    { es: 'Anda', en: 'Go on' },
+    { es: 'Fíjate', en: 'Just look at that' },
+    { es: 'Dime', en: 'Go ahead' }
+  ],
   sections: [
     { h: 'Doubling for urgency', html: 'Repeating the imperative intensifies urgency: <i>Corre, corre que está ahí el tren!</i> — the doubling itself is the emphatic device.' },
     { h: 'Lexicalized comfort and encouragement', html: '<i>Venga, anda, no te preocupes tanto</i> uses fossilized imperatives (<i>venga, anda</i>) purely to comfort — they carry no literal command to "come" or "walk".' },
@@ -21790,6 +22090,15 @@ window.STRAND_LESSONS = [
          'gramatica:B2:557', 'gramatica:B2:560', 'gramatica:B2:561'],
   title: 'Infinitivo, gerundio y participio: valores avanzados',
   summary: 'Three refinements: an infinitive\'s silent subject can be controlled by the OBJECT of the main verb rather than its subject, a compound infinitive marks something already finished, and the gerund has a hard limit — it can mark simultaneity or manner, but never a LATER event, however tempting that reading feels in English.',
+  keywords: [
+    { es: 'el infinitivo', en: 'the infinitive' },
+    { es: 'el gerundio', en: 'the -ing form' },
+    { es: 'el participio', en: 'the past participle' },
+    { es: 'al + infinitivo', en: 'on (doing)' },
+    { es: 'habiendo + participio', en: 'having (done)' },
+    { es: 'estando', en: 'being' },
+    { es: 'dicho esto', en: 'that said' }
+  ],
   sections: [
     { h: 'Infinitive subject controlled by the object', html: 'With verbs like <i>recomendar</i>, the infinitive\'s silent subject is the OBJECT of the main verb, not its subject: <i>El profesor recomendó al estudiante trabajar más</i> — the student is the one who should work, not the professor.' },
     { h: 'Compound infinitive: perfective value', html: '<i>Por no haber estudiado</i> marks the action as already completed relative to the main verb: <i>El profesor le regañó por no haber estudiado.</i>' },
@@ -21827,6 +22136,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:567', 'gramatica:B2:568', 'gramatica:B2:571', 'gramatica:B2:572'],
   title: 'Complementos del nombre: ambiguos, no restrictivos, y sus límites',
   summary: 'A possessive-like prepositional phrase after a noun can be read three different ways at once — agent, theme or possessor — and a comma changes a defining detail into a mere aside; meanwhile stacking too many prepositional complements onto one noun quickly becomes ungrammatical, even when each one alone is fine.',
+  keywords: [
+    { es: 'la chica de ojos tristes', en: 'the sad-eyed girl (which girl)' },
+    { es: 'la chica, de ojos tristes', en: 'the girl, who is sad-eyed (extra information)' },
+    { es: 'elaborado por', en: 'drawn up by' },
+    { es: 'el comité', en: 'the committee' },
+    { es: 'el informe', en: 'the report' },
+    { es: 'restrictivo', en: 'narrowing down which one' },
+    { es: 'publicarse', en: 'to be published' }
+  ],
   sections: [
     { h: 'Three readings of one PP complement', html: '<i>Tus informes</i> can mean the reports YOU wrote (agent), the reports ABOUT you (theme) or the reports YOU own (possessor) — Spanish leaves this genuinely ambiguous, resolved only by context.' },
     { h: 'Restrictive vs non-restrictive, marked by commas', html: 'Without commas, a complement narrows down which one is meant. Set off by commas, it merely adds extra, non-defining information: <i>la chica, de ojos tristes,...</i> describes without picking her out from others.' },
@@ -21864,6 +22182,15 @@ window.STRAND_LESSONS = [
          'gramatica:B2:617', 'gramatica:B2:618', 'gramatica:B2:621'],
   title: 'Auxiliares, copulativos y pseudocopulativos avanzados',
   summary: 'Ser/estar\'s split for events vs places ("la cita ES en el cine" but "el cine ESTÁ en la plaza") is only the start — B2 adds a family of change-of-state verbs (ponerse, quedarse, hacerse, volverse) that all mean roughly "to become" but each restricts what kind of change it can describe.',
+  keywords: [
+    { es: 'ser / estar', en: 'to be (identity / state)' },
+    { es: 'parecer', en: 'to seem' },
+    { es: 'resultar', en: 'to turn out' },
+    { es: 'ponerse', en: 'to become (a state)' },
+    { es: 'volverse', en: 'to become (a change in character)' },
+    { es: 'quedarse', en: 'to end up' },
+    { es: 'convertirse en', en: 'to turn into' }
+  ],
   sections: [
     { h: 'Ser for events, estar for places', html: 'An event is located with <i>ser</i>: <i>La cita es en el cine Callao.</i> The physical building is located with <i>estar</i>: <i>El cine está en la plaza de Callao.</i> Mixing them up is a classic, gate-checkable slip.' },
     { h: 'Adjectives that flip meaning with ser/estar', html: 'Most descriptive adjectives take either verb with only an aspectual difference (<i>es delgado / está delgado</i>), but a handful genuinely change MEANING: <i>listo</i> (ser = clever; estar = ready), <i>verde</i> (ser = green; estar = unripe/inexperienced).' },
@@ -21951,6 +22278,15 @@ window.STRAND_LESSONS = [
          'gramatica:B2:707', 'gramatica:B2:709', 'gramatica:B2:710', 'gramatica:B2:717', 'gramatica:B2:722'],
   title: 'Relativas: especificativas, explicativas y sus restricciones',
   summary: 'Beyond the comma that separates a specifying relative clause from an explanatory one, B2 maps out exactly where relatives refuse to go: they resist an infinitive, resist the subjunctive when explicative, and refuse a non-specific antecedent when specifying — three separate restrictions, not one.',
+  keywords: [
+    { es: 'de la que', en: 'about which, of which' },
+    { es: 'con las que', en: 'with which' },
+    { es: 'Tú, que…', en: 'You, who…' },
+    { es: 'especificativa', en: 'identifying (no commas)' },
+    { es: 'explicativa', en: 'parenthetical (commas)' },
+    { es: 'estar de acuerdo con', en: 'to agree with' },
+    { es: 'la próxima semana', en: 'next week' }
+  ],
   sections: [
     { h: 'Specificative vs explicative', html: 'Specificative clauses narrow down a referent, no commas: <i>La chica de la que te hablé vendrá.</i> Explicative clauses add non-defining information, set off by commas: <i>La profesora, que es argentina, es muy buena.</i>' },
     { h: 'Three restrictions', html: 'Relatives resist an infinitive (<i>*con la que casarme</i> is not standard), resist the subjunctive when explicative (<i>*Mis amigos, que no quieran venir,...</i> is wrong), and refuse a non-specific antecedent when specificative without licensing context (<i>*No conozco a nadie que habla así</i> needs the subjunctive instead, or fails with a non-specific reading in the indicative).' },
@@ -22042,6 +22378,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:27', 'nociones_generales:B2:28', 'nociones_generales:B2:29', 'nociones_generales:B2:30'],
   title: 'Presencia y ausencia: asistir, faltar, a la vista',
   summary: 'Beyond "estar" or "no estar", B2 supplies the vocabulary for the SOCIAL fact of presence — who counts as an attendee, what it means to be missing from an event, and a set of fixed prepositional phrases (a distancia, a la vista) that describe presence without a verb at all.',
+  keywords: [
+    { es: 'asistir a', en: 'to attend' },
+    { es: 'faltar a', en: 'to miss (a class, a meeting)' },
+    { es: 'el asistente', en: 'the attendee' },
+    { es: 'a la vista', en: 'in plain sight' },
+    { es: 'a distancia', en: 'remotely, at a distance' },
+    { es: 'ausente', en: 'absent' },
+    { es: 'presente', en: 'present' }
+  ],
   sections: [
     { h: 'Attending, missing, participating', html: '<i>Asistir, participar</i> describe active presence at an event; <i>faltar</i> names an absence, especially from an obligation: <i>faltar a clase</i>.' },
     { h: 'Fixed prepositional phrases', html: '<i>A distancia</i> (remotely), <i>a la vista</i> (visible, in plain sight) describe a mode of presence with no verb needed.' },
@@ -22083,6 +22428,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:39', 'nociones_generales:B2:40', 'nociones_generales:B2:41', 'nociones_generales:B2:42', 'nociones_generales:B2:43'],
   title: 'Disponibilidad: agotarse, contar con, estar listo',
   summary: 'A whole family of ways to say something is or is not available or ready — a job vacancy, a sold-out product, having enough of something, or being willing to act — each with its own fixed verb, not a single all-purpose "hay".',
+  keywords: [
+    { es: 'estar disponible', en: 'to be available' },
+    { es: 'quedar', en: 'to be left' },
+    { es: 'agotarse', en: 'to run out' },
+    { es: 'a mano', en: 'to hand' },
+    { es: 'disponer de', en: 'to have available' },
+    { es: 'escaso', en: 'scarce' },
+    { es: 'la escasez', en: 'the shortage' }
+  ],
   sections: [
     { h: 'Available: things, jobs, people', html: '<i>Disponible</i> (available), <i>vacante</i> (a job, unfilled), <i>desocupado</i> (a room/seat, unoccupied) each apply to a different kind of thing.' },
     { h: 'Running out', html: '<i>Agotarse</i> (to sell out/run out), contrasted with <i>quedar, faltar, sobrar</i> — respectively what remains, what is missing, and what is left over.' },
@@ -22691,6 +23045,15 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B2:276', 'nociones_generales:B2:277', 'nociones_generales:B2:278', 'nociones_generales:B2:279', 'nociones_generales:B2:280'],
   title: 'Localización: situado, quedar, hallarse',
   summary: 'Beyond plain "estar", B2 offers participles that describe HOW something is positioned (situado, colocado, guardado, aparcado) and a set of near-synonyms (quedar, hallarse, encontrarse) that locate something with a slightly different formality or nuance each.',
+  keywords: [
+    { es: 'estar situado', en: 'to be located' },
+    { es: 'hallarse', en: 'to be situated' },
+    { es: 'quedar', en: 'to be (located)' },
+    { es: 'encontrarse', en: 'to be (currently)' },
+    { es: 'estar guardado', en: 'to be put away' },
+    { es: 'la cazadora', en: 'the jacket' },
+    { es: 'a pocos kilómetros de', en: 'a few kilometres from' }
+  ],
   sections: [
     { h: 'Participles describing manner of placement', html: '<i>Situado, colocado, instalado, guardado, aparcado</i> each describe not just WHERE but HOW something was placed: <i>guardado</i> implies stored away, <i>aparcado</i> a vehicle specifically.' },
     { h: 'Quedar: a location as a fact, not a state', html: '<i>Quedar</i> locates something with a slightly different flavor than <i>estar</i> — often used for distance or how a place relates to another: <i>Queda bastante lejos de aquí.</i>' },
@@ -22732,6 +23095,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:309', 'nociones_generales:B2:311', 'nociones_generales:B2:312', 'nociones_generales:B2:314'],
   title: 'Posición relativa: delantero/trasero, a lo largo de, al otro lado',
   summary: 'A rich set of prepositional phrases positions one thing against another with real precision — "a lo largo de" traces a whole extent, "al otro lado de" crosses a boundary, and "en medio de" plants something squarely in the middle, none of them interchangeable with a plain "cerca" or "lejos".',
+  keywords: [
+    { es: 'delantero / trasero', en: 'front / back' },
+    { es: 'a lo largo de', en: 'along' },
+    { es: 'al otro lado de', en: 'on the other side of' },
+    { es: 'en medio de', en: 'in the middle of' },
+    { es: 'alrededor de', en: 'around' },
+    { es: 'el asiento', en: 'the seat' },
+    { es: 'el campamento', en: 'the campsite' }
+  ],
   sections: [
     { h: 'Adjectives for parts and position', html: '<i>Central, anterior, posterior, delantero, trasero</i> describe a part\'s position within a whole: <i>la parte delantera, el asiento trasero</i>.' },
     { h: 'Tracing an extent or crossing a boundary', html: '<i>A lo largo de</i> traces the whole length of something; <i>a través de</i> crosses through it; <i>al otro lado de</i> places something across a boundary: <i>El campamento está al otro lado del río.</i>' },
@@ -22774,6 +23146,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:327', 'nociones_generales:B2:328', 'nociones_generales:B2:329'],
   title: 'Distancia: acercar(se), alejar(se), a distancia',
   summary: 'The acercar/alejar family splits cleanly by transitivity — you acercar something TO a place, but you yourself acercarse — and a matching pair, juntarse/distanciarse, does the same job for relationships rather than objects.',
+  keywords: [
+    { es: 'a … de distancia', en: '… away' },
+    { es: 'a poca distancia', en: 'a short way away' },
+    { es: 'alejarse', en: 'to move away' },
+    { es: 'acercarse', en: 'to get closer' },
+    { es: 'lejano', en: 'distant' },
+    { es: 'cercano', en: 'nearby' },
+    { es: 'el trayecto', en: 'the journey, the stretch' }
+  ],
   sections: [
     { h: 'Transitive vs reflexive: moving something vs moving yourself', html: '<i>Acercar/alejar</i> (transitive) move an object: <i>Acercó la silla a la chimenea.</i> <i>Acercarse/alejarse</i> (reflexive) move the subject itself: <i>Se acercó a la ventana.</i>' },
     { h: 'The same split for closeness in relationships', html: '<i>Juntarse (con), pegarse (a), unirse (a)</i> describe coming together; <i>distanciarse (de)</i> describes the opposite, often for relationships rather than physical objects.' },
@@ -22817,6 +23198,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:366', 'nociones_generales:B2:369'],
   title: 'Movimiento y estabilidad: un verbo por cada fase',
   summary: 'Where A2 had one verb for "to move", B2 breaks motion into its phases — starting (arrancar), speeding up or down (acelerar/frenar), overtaking (adelantar), stopping (detenerse) and staying still (quedarse quieto) — each a distinct, non-interchangeable moment in the same journey.',
+  keywords: [
+    { es: 'desplazarse', en: 'to travel, to move about' },
+    { es: 'trasladarse', en: 'to relocate' },
+    { es: 'permanecer', en: 'to remain' },
+    { es: 'quedarse quieto', en: 'to stay still' },
+    { es: 'el movimiento', en: 'the movement' },
+    { es: 'moverse', en: 'to move' },
+    { es: 'estable', en: 'steady' }
+  ],
   sections: [
     { h: 'Leaving and relocating', html: '<i>Marcharse, partir, huir</i> all mean leaving, but <i>huir</i> specifically implies fleeing danger; <i>trasladarse</i> means relocating one\'s home or workplace.' },
     { h: 'The phases of vehicle motion', html: '<i>Arrancar</i> (to start moving), <i>acelerar/frenar</i> (speed up/brake), <i>adelantar</i> (to overtake), <i>detenerse</i> (to stop) name specific, sequential moments — not synonyms for a generic "moverse".' },
@@ -22861,6 +23251,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:386', 'nociones_generales:B2:388', 'nociones_generales:B2:389'],
   title: 'Orientación y dirección: dirigirse a, empujar/tirar, a domicilio',
   summary: 'Giving and following directions needs its own precise verbs — pushing is not pulling, delivering is not collecting, and "dirigirse a" both moves you toward a place and addresses a person, a small but genuinely useful double meaning.',
+  keywords: [
+    { es: 'dirigirse a', en: 'to head for, to address' },
+    { es: 'empujar / tirar', en: 'push / pull' },
+    { es: 'a domicilio', en: 'home delivery' },
+    { es: 'el sentido', en: 'the direction' },
+    { es: 'orientarse', en: 'to get your bearings' },
+    { es: 'al fondo', en: 'at the far end' },
+    { es: 'hacia', en: 'towards' }
+  ],
   sections: [
     { h: 'Dirigirse a: two meanings', html: '<i>Dirigirse a</i> means both "to head towards" a place and "to address" a person — context tells them apart: <i>Se dirigió a la salida</i> (headed toward) vs <i>Se dirigió a mí muy educadamente</i> (spoke to me).' },
     { h: 'Empujar vs tirar', html: 'On a door sign, these are opposites: <i>empujar</i> (push) vs <i>tirar</i> (pull) — mixing them means pushing a door that needs pulling.' },
@@ -22903,6 +23302,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:404', 'nociones_generales:B2:406', 'nociones_generales:B2:410'],
   title: 'Orden: puesto, colocado/descolocado, por orden',
   summary: 'Ranking and arranging things needs its own vocabulary — a "puesto" is a rank, not a job in this sense, and "descolocado" names the specific state of something that has been moved OUT of its proper place, not just "messy" in general.',
+  keywords: [
+    { es: 'ordenar', en: 'to put in order, to tidy' },
+    { es: 'el orden', en: 'the order' },
+    { es: 'clasificar', en: 'to classify' },
+    { es: 'por orden alfabético', en: 'in alphabetical order' },
+    { es: 'colocar', en: 'to place' },
+    { es: 'desordenado', en: 'untidy' },
+    { es: 'en primer lugar', en: 'in the first place' }
+  ],
   sections: [
     { h: 'Puesto: a rank, not a job', html: '<i>El primer puesto ha sido para él</i> — "puesto" here means ranking/position in a competition, distinct from its other sense of "job/post".' },
     { h: 'Colocado vs descolocado', html: '<i>Colocado</i> means properly placed; <i>descolocado</i> names the specific state of being out of its correct place — stronger and more specific than just "desordenado".' },
@@ -22943,6 +23351,15 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B2:410', 'nociones_generales:B2:411', 'nociones_generales:B2:412', 'nociones_generales:B2:413'],
   title: 'Origen: raíz, procedencia, proceder de',
   summary: 'A small cluster naming where something comes from, figuratively (the raíz of a problem) as often as literally (the procedencia of a product) — with "proceder de" as the neutral verb that covers both.',
+  keywords: [
+    { es: 'proceder de', en: 'to come from' },
+    { es: 'la procedencia', en: 'the origin' },
+    { es: 'la raíz', en: 'the root' },
+    { es: 'provenir de', en: 'to originate from' },
+    { es: 'originario de', en: 'originating from' },
+    { es: 'remontarse a', en: 'to go back to' },
+    { es: 'el antepasado', en: 'the ancestor' }
+  ],
   sections: [
     { h: 'Raíz: the figurative root', html: '<i>La raíz del problema</i> names the underlying cause, borrowed from the literal root of a plant.' },
     { h: 'Procedencia and proceder de', html: '<i>Procedencia</i> (origin, as a noun) and <i>proceder de</i> (to come from) apply to people, products, or revenue: <i>La mayor parte de los ingresos procede de las ventas por Internet.</i>' },
@@ -23089,6 +23506,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:707', 'nociones_generales:B2:708', 'nociones_generales:B2:709'],
   title: 'Formas y figuras: geometría cotidiana',
   summary: 'Describing a shape precisely borrows from geometry — a curve is not just "round", it is an "onda" or an "arco" depending on what it looks like — and a fixed pattern, "tener forma de + object", lets you describe any irregular shape by comparing it to something familiar.',
+  keywords: [
+    { es: 'la forma', en: 'the shape' },
+    { es: 'tener forma de', en: 'to be shaped like' },
+    { es: 'irregular', en: 'irregular' },
+    { es: 'desigual', en: 'uneven' },
+    { es: 'el arco', en: 'the arch' },
+    { es: 'el riñón', en: 'the kidney' },
+    { es: 'recto / curvo', en: 'straight / curved' },
+    { es: 'el bajo', en: 'the hem' }
+  ],
   sections: [
     { h: 'Geometric vocabulary for everyday shapes', html: '<i>Figura, perfil</i> (outline/silhouette), <i>onda, curva, arco</i> (wave, curve, arch) describe a shape\'s contour with more precision than "redondo".' },
     { h: 'Irregular vs symmetrical', html: '<i>Desigual, irregular</i> describe a shape with no consistent pattern; contrasted implicitly with <i>circular, curvo</i>, which name a specific regular shape.' },
@@ -23136,6 +23563,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:722', 'nociones_generales:B2:725', 'nociones_generales:B2:726', 'nociones_generales:B2:727'],
   title: 'Consistencia y resistencia: denso, frágil, resistente a',
   summary: 'Describing a material\'s physical behavior needs a precise vocabulary — "resistencia AL agua/AL calor" always takes a preposition naming what is being withstood, and a family of near-synonyms (denso, espeso, fluido) sits on a scale from solid to liquid, not a simple yes/no.',
+  keywords: [
+    { es: 'denso', en: 'dense, thick' },
+    { es: 'frágil', en: 'fragile' },
+    { es: 'resistente a', en: 'resistant to' },
+    { es: 'la dureza', en: 'the hardness' },
+    { es: 'indestructible', en: 'indestructible' },
+    { es: 'derramarse', en: 'to spill' },
+    { es: 'la resistencia', en: 'the resistance' },
+    { es: 'el cristal', en: 'the glass' }
+  ],
   sections: [
     { h: 'Naming the property', html: '<i>Fragilidad, dureza, densidad, elasticidad, flexibilidad, rigidez</i> name the abstract quality; the matching adjectives (<i>frágil, duro, denso, elástico, flexible, rígido</i>) describe the object.' },
     { h: 'Resistencia a + [threat]', html: '<i>Resistencia</i> always specifies what is being resisted with <i>a</i>: <i>resistencia al agua, al calor, al peso</i> — never a bare "resistencia" with no object.' },
@@ -23177,6 +23614,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:742', 'nociones_generales:B2:744', 'nociones_generales:B2:745'],
   title: 'Textura y acabado: áspero, arrugado, una mano de pintura',
   summary: 'Two related surface vocabularies: adjectives for how something feels to the touch (áspero, peludo, arrugado), and nouns/verbs for a protective or decorative layer applied to a surface — "una mano" or "una capa" of something, never just "a coat" translated literally.',
+  keywords: [
+    { es: 'áspero', en: 'rough' },
+    { es: 'suave', en: 'smooth, soft' },
+    { es: 'arrugado', en: 'wrinkled, creased' },
+    { es: 'peludo', en: 'furry, hairy' },
+    { es: 'una mano de pintura', en: 'a coat of paint' },
+    { es: 'plastificar', en: 'to laminate' },
+    { es: 'la fachada', en: 'the façade' },
+    { es: 'la tela', en: 'the fabric' }
+  ],
   sections: [
     { h: 'Describing texture', html: '<i>Áspero</i> (rough), <i>peludo</i> (hairy/furry), <i>arrugado</i> (wrinkled/crumpled) describe how a surface feels or looks up close.' },
     { h: 'Sentir/comprobar la textura', html: 'To check a texture by touch: <i>sentir/comprobar la textura</i>.' },
@@ -23219,6 +23666,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:758', 'nociones_generales:B2:759', 'nociones_generales:B2:760'],
   title: 'Humedad y sequedad: empapado, transpirar, en seco',
   summary: 'A vocabulary that runs from a drought (sequía) to being soaked through (empapado), with a precise verb for each stage of water appearing, being absorbed, or disappearing — and the fixed phrase "en seco" for a process done without water at all.',
+  keywords: [
+    { es: 'empapado', en: 'soaked' },
+    { es: 'húmedo', en: 'damp' },
+    { es: 'seco', en: 'dry' },
+    { es: 'transpirar', en: 'to perspire' },
+    { es: 'evaporarse', en: 'to evaporate' },
+    { es: 'absorber', en: 'to absorb' },
+    { es: 'secar', en: 'to dry' },
+    { es: 'en seco', en: 'dry (cleaning)' }
+  ],
   sections: [
     { h: 'States of wetness', html: '<i>Empapado</i> (soaked through), <i>inundado</i> (flooded) describe extreme wetness; <i>sequía</i> names an extended lack of water/rain.' },
     { h: 'The body and water', html: '<i>Transpirar, sudar</i> (to perspire, to sweat) and <i>(des)hidratarse</i> describe the body\'s relationship with moisture.' },
@@ -23261,6 +23718,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:774', 'nociones_generales:B2:775', 'nociones_generales:B2:776'],
   title: 'Materia: estar fabricado con, contener un ingrediente',
   summary: 'Naming what something is made of has two grammatical shapes: "estar fabricado con" for a manufactured object\'s materials, and "contener" for an ingredient present within a substance — not interchangeable, since a jacket is not "contained" and a shampoo is not "manufactured with" its ingredients in the same sense.',
+  keywords: [
+    { es: 'estar fabricado con', en: 'to be made from' },
+    { es: 'contener', en: 'to contain' },
+    { es: 'el ingrediente', en: 'the ingredient' },
+    { es: 'la mezcla', en: 'the blend, the mixture' },
+    { es: 'el algodón', en: 'the cotton' },
+    { es: 'el bronce', en: 'the bronze' },
+    { es: 'la cera', en: 'the wax' },
+    { es: 'la avena', en: 'the oats' }
+  ],
   sections: [
     { h: 'Naming raw materials', html: '<i>Bronce, cobre, plomo</i> (metals), <i>mármol, cemento, ladrillo</i> (building materials), <i>cerámica, barro</i> (ceramics/clay) each name a specific substance.' },
     { h: 'Estar fabricado con + material', html: 'The standard way to state a manufactured object\'s material(s): <i>Está fabricado con una mezcla de algodón y licra.</i>' },
@@ -23302,6 +23769,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:797', 'nociones_generales:B2:801', 'nociones_generales:B2:802', 'nociones_generales:B2:803'],
   title: 'Visibilidad y visión: a simple vista, distinguir, de lejos',
   summary: 'Seeing well needs its own precision adverbs and fixed phrases — "a simple vista" flags an unaided, quick look that might be wrong, while "distinguir" claims you told two things apart, a stronger claim than merely "ver".',
+  keywords: [
+    { es: 'a simple vista', en: 'at first glance, to the naked eye' },
+    { es: 'distinguir', en: 'to make out, to tell apart' },
+    { es: 'de lejos', en: 'from a distance' },
+    { es: 'la vista', en: 'the eyesight' },
+    { es: 'ver borroso', en: 'to see blurrily' },
+    { es: 'ciego', en: 'blind' },
+    { es: 'notarse', en: 'to be noticeable' }
+  ],
   sections: [
     { h: 'Vista vs ciego', html: '<i>Vista</i> is the faculty of sight (<i>tengo buena vista</i>); <i>ciego</i> describes its total or partial absence.' },
     { h: 'Distinguir: telling things apart', html: '<i>Distinguir</i> claims more than <i>ver</i> — it means successfully telling one thing apart from another, not just perceiving something is there.' },
@@ -23344,6 +23820,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:822', 'nociones_generales:B2:823', 'nociones_generales:B2:824'],
   title: 'Audibilidad: sonar, a gritos, a todo volumen',
   summary: 'A source of sound "suena" — the alarm, the phone, the doorbell — and a small set of fixed intensity phrases (a gritos, a todo volumen) describes HOW loud, distinct from the neutral verbs for hearing and recording.',
+  keywords: [
+    { es: 'sonar', en: 'to sound, to ring' },
+    { es: 'a gritos', en: 'at the top of one\'s lungs' },
+    { es: 'a todo volumen', en: 'at full blast' },
+    { es: 'sordo', en: 'deaf' },
+    { es: 'el ruido', en: 'the noise' },
+    { es: 'el timbre', en: 'the doorbell' },
+    { es: 'oírse', en: 'to be audible' },
+    { es: 'en voz baja', en: 'quietly' }
+  ],
   sections: [
     { h: 'Sonar: the neutral verb for a sound source', html: '<i>Sonar</i> describes an alarm, phone or doorbell making its sound: <i>Sonó el timbre</i>, not the person who hears it.' },
     { h: 'Sordo/mudo: opposite senses affected', html: '<i>Sordo</i> (deaf) affects hearing; <i>mudo</i> (mute) affects speech — <i>cine mudo</i> ("silent film") uses the second sense.' },
@@ -23386,6 +23872,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:841', 'nociones_generales:B2:843'],
   title: 'Sabor y olor: soso, agridulce, oler a',
   summary: 'Taste and smell share one grammatical trick — "oler a + [noun]" names what something smells LIKE, not just that it has a smell — and a small cluster of taste adjectives (soso, insípido, agridulce) that a plain "no sabe a nada" cannot replace precisely.',
+  keywords: [
+    { es: 'soso', en: 'bland' },
+    { es: 'salado', en: 'salty' },
+    { es: 'agridulce', en: 'sweet-and-sour' },
+    { es: 'picante', en: 'spicy' },
+    { es: 'oler a', en: 'to smell of' },
+    { es: 'el aroma', en: 'the aroma' },
+    { es: 'el sabor', en: 'the taste' },
+    { es: 'quemado', en: 'burnt' }
+  ],
   sections: [
     { h: 'Taste adjectives beyond bueno/malo', html: '<i>Sabroso</i> (tasty), <i>insípido/soso</i> (bland/flavorless — soso more colloquial), <i>agrio</i> (sour), <i>agridulce</i> (sweet-and-sour) name specific taste qualities.' },
     { h: 'Oler a + [noun]: naming what something smells like', html: '<i>Huele a quemado</i> ("it smells burnt") names the specific comparison — <i>oler a</i> always needs its object.' },
@@ -23427,6 +23923,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:856', 'nociones_generales:B2:857', 'nociones_generales:B2:859'],
   title: 'Color: tonos compuestos, ser de color, en blanco y negro',
   summary: 'A compound color name — azul marino, verde limón, gris perla — is invariable as a whole unit, unlike a simple adjective, and reaching for a compound instead of a plain color word is what separates a precise description from a vague one.',
+  keywords: [
+    { es: 'ser de color…', en: 'to be … in colour' },
+    { es: 'azul marino', en: 'navy blue' },
+    { es: 'verde oscuro', en: 'dark green' },
+    { es: 'los colores cálidos', en: 'warm colours' },
+    { es: 'los colores fríos', en: 'cool colours' },
+    { es: 'el tono', en: 'the shade' },
+    { es: 'teñir', en: 'to dye' },
+    { es: 'en blanco y negro', en: 'in black and white' }
+  ],
   sections: [
     { h: 'Compound color names are invariable', html: '<i>Azul marino, verde limón, gris perla</i> combine a base color with a reference noun, and the WHOLE phrase stays invariable regardless of the noun it describes: <i>unos zapatos azul marino</i>, not <i>*azules marinos</i>.' },
     { h: 'Ser de color + [color]', html: 'The standard frame for stating color plainly: <i>Es de color naranja.</i>' },
@@ -23469,6 +23975,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:871', 'nociones_generales:B2:872', 'nociones_generales:B2:877'],
   title: 'Edad y vejez: recién + participio, fresco/podrido, estrenar',
   summary: 'Two constructions do real work here: "recién + participio" marks something as just-completed (recién nacido, recién casado), and "estrenar" names the specific act of using or wearing something for the very first time — neither has a single-word English equivalent.',
+  keywords: [
+    { es: 'envejecer', en: 'to age' },
+    { es: 'de mediana edad', en: 'middle-aged' },
+    { es: 'la vejez', en: 'old age' },
+    { es: 'la infancia', en: 'childhood' },
+    { es: 'la juventud', en: 'youth' },
+    { es: 'cumplir años', en: 'to have a birthday' },
+    { es: 'mayor', en: 'elderly' },
+    { es: 'anciano', en: 'elderly person' }
+  ],
   sections: [
     { h: 'Recién + participio', html: '<i>Recién nacido, recién casado, recién comprado, recién hecho</i> — "recién" marks the action as having JUST happened, always with a participle.' },
     { h: 'Fresco vs podrido: food\'s age', html: '<i>Fresco</i> (fresh) and <i>podrido</i> (rotten) mark food at opposite ends of its useful life.' },
@@ -23720,6 +24236,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B2:980', 'nociones_generales:B2:981', 'nociones_generales:B2:982', 'nociones_generales:B2:985', 'nociones_generales:B2:986'],
   title: 'Utilidad y uso: utilizar/emplear, fuera de servicio',
   summary: '"Estar fuera de uso/servicio" marks something that used to function and no longer does — a specific, checkable claim distinct from simply calling something "inútil", which can describe something that never worked at all.',
+  keywords: [
+    { es: 'utilizar / emplear', en: 'to use' },
+    { es: 'servir para', en: 'to be used for' },
+    { es: 'inútil', en: 'useless' },
+    { es: 'fuera de servicio', en: 'out of service' },
+    { es: 'dedicar energías a', en: 'to devote energy to' },
+    { es: 'el aparato', en: 'the device' },
+    { es: 'desinfectar', en: 'to disinfect' },
+    { es: 'la herida', en: 'the wound' }
+  ],
   sections: [
     { h: 'Inútil vs imprescindible: the extremes', html: '<i>Inútil</i> (useless) and <i>imprescindible</i> (essential) sit at opposite ends of a usefulness scale.' },
     { h: 'Utilizar/emplear + para', html: 'Both mean "to use", near-interchangeable, always specifying purpose with <i>para</i>: <i>Se utiliza/emplea para limpiar superficies.</i>' },
@@ -23761,6 +24287,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:997', 'nociones_generales:B2:998', 'nociones_generales:B2:999'],
   title: 'Capacidad y competencia: dársele bien, ser capaz de',
   summary: '"Dársele bien algo a alguien" — the gustar-pattern again — states a natural aptitude, distinct from "ser capaz de", which claims the ability to do one specific thing, possibly with effort rather than natural talent.',
+  keywords: [
+    { es: 'dársele bien a alguien', en: 'to be good at' },
+    { es: 'Se me da bien.', en: 'I\'m good at it.' },
+    { es: 'ser capaz de', en: 'to be able to' },
+    { es: 'dominar', en: 'to master' },
+    { es: 'el experto', en: 'the expert' },
+    { es: 'la competencia', en: 'the skill, the competence' },
+    { es: 'a la perfección', en: 'perfectly' }
+  ],
   sections: [
     { h: 'Dársele bien/mal: natural aptitude', html: 'Gustar-pattern: <i>Se le da bien la música</i> ("she\'s good at music") — the aptitude, not the person, is grammatically central.' },
     { h: 'Ser capaz de: a specific ability claim', html: '<i>Ser (in)capaz de</i> + infinitive claims the ability (or inability) to do one specific thing, with no implication of natural talent.' },
@@ -23853,6 +24388,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:1042', 'nociones_generales:B2:1044', 'nociones_generales:B2:1045'],
   title: 'Reflexión y conocimiento: ocurrírsele, ser consciente de, enterarse',
   summary: '"Ocurrírsele algo a alguien" puts the IDEA, not the thinker, in the grammatical driver\'s seat — a sudden thought arrives rather than being deliberately produced — while "ser consciente de" and "enterarse (de)" mark two different moments of coming to know something.',
+  keywords: [
+    { es: 'ocurrírsele a alguien', en: 'to occur to someone' },
+    { es: 'Se me ocurrió…', en: 'It occurred to me…' },
+    { es: 'ser consciente de', en: 'to be aware of' },
+    { es: 'enterarse de', en: 'to find out about' },
+    { es: 'darse cuenta de', en: 'to realise' },
+    { es: 'creerse', en: 'to think (wrongly) that you are' },
+    { es: 'por casualidad', en: 'by chance' }
+  ],
   sections: [
     { h: 'Ocurrírsele: an idea arriving, gustar-pattern', html: '<i>Se me ocurrió una idea</i> — the idea is the grammatical subject, arriving TO the person, not produced deliberately by them.' },
     { h: 'Creerse algo: believing, with a critical edge', html: '<i>Creerse algo</i> (reflexive) often implies believing something perhaps too readily, unlike neutral <i>creer</i>.' },
@@ -23895,6 +24439,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:1076', 'nociones_generales:B2:1077', 'nociones_generales:B2:1078', 'nociones_generales:B2:1079'],
   title: 'Expresión verbal: variar el verbo de habla más allá de "decir"',
   summary: 'Reported speech gets far more precise once "decir" gives way to a specific reporting verb — "sugerir" implies a soft recommendation, "insistir en" implies repetition against resistance, "confesar" implies reluctant admission — each verb carrying information "decir" leaves flat.',
+  keywords: [
+    { es: 'sugerir', en: 'to suggest' },
+    { es: 'insistir en', en: 'to insist on' },
+    { es: 'confesar', en: 'to confess' },
+    { es: 'destacar', en: 'to highlight' },
+    { es: 'señalar', en: 'to point out' },
+    { es: 'añadir', en: 'to add' },
+    { es: 'advertir', en: 'to warn' },
+    { es: 'negar', en: 'to deny' }
+  ],
   sections: [
     { h: 'Suggesting and proposing', html: '<i>Sugerir, proponer</i> both suggest, with <i>proponer</i> slightly more formal/concrete, often with a specific plan attached.' },
     { h: 'Insisting and confirming', html: '<i>Insistir (en)</i> implies repetition, often against resistance; <i>confirmar</i> removes doubt about something already suggested.' },
@@ -23939,6 +24493,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:4', 'funciones:B2:5', 'funciones:B2:6', 'funciones:B2:9', 'funciones:B2:10'],
   title: 'Identificar: el/los que, lo de, se trata de',
   summary: 'B2 identifies through nominalized fragments — "los de la camiseta roja", "lo de ir a ese restaurante" — that name a group or a whole topic without repeating the noun, plus the formal frame "se trata de" for introducing what something IS.',
+  keywords: [
+    { es: 'el que / los que', en: 'the one who / the ones who' },
+    { es: 'Los de la camiseta roja', en: 'The ones in the red shirt' },
+    { es: 'lo de…', en: 'the business of…, the idea of…' },
+    { es: 'Se trata de…', en: 'It\'s a matter of…, it\'s about…' },
+    { es: 'que + relative clause', en: 'that, which' },
+    { es: 'el asa', en: 'the handle' },
+    { es: 'el cuero', en: 'the leather' }
+  ],
   sections: [
     { h: 'El/los + de + SN: identifying by an attached detail', html: '<i>Los de la camiseta roja</i> identifies people by one visible detail, dropping the noun ("los [chicos] de la camiseta roja"). Very productive in speech.' },
     { h: 'Lo/eso de + [topic]: nominalizing a whole matter', html: '<i>Lo de ir a ese restaurante</i> turns a whole plan/topic into a noun phrase you can then comment on: <i>Lo de ir a ese restaurante me parece estupendo.</i>' },
@@ -23980,6 +24543,15 @@ window.STRAND_LESSONS = [
          'funciones:B2:92', 'funciones:B2:93', 'funciones:B2:95', 'funciones:B2:96', 'funciones:B2:99'],
   title: 'Dar información: corregir con matiz, modo y finalidad',
   summary: 'B2 gives information with a full toolkit of subordinate clauses (manner, purpose, cause) and, crucially, several distinct ways to CORRECT a previous statement — from a softened modal verb to intonation itself carrying the correction.',
+  keywords: [
+    { es: 'No es que… sino que…', en: 'It\'s not that… but rather…' },
+    { es: 'Lo que pasa es que…', en: 'The thing is that…' },
+    { es: 'No, no es eso exactamente.', en: 'No, that\'s not quite it.' },
+    { es: 'No solo… sino que…', en: 'Not only… but also…' },
+    { es: 'por adelantado', en: 'in advance' },
+    { es: 'ir con retraso', en: 'to be running late' },
+    { es: 'el despacho', en: 'the office' }
+  ],
   sections: [
     { h: 'Manner, purpose, cause clauses', html: '<i>Como me diga el jefe</i> (manner), <i>para que hablaras con él</i> (purpose, subjunctive), <i>debido a que...</i> / <i>ya que...</i> (cause) structure a fuller answer than a bare fact.' },
     { h: 'Softening a correction with a modal verb', html: '<i>No pudo llegar tarde, porque la vi...</i> uses <i>poder</i> to soften the correction — less confrontational than a flat "no llegó tarde".' },
@@ -24455,6 +25027,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:455', 'funciones:B2:456', 'funciones:B2:458', 'funciones:B2:459', 'funciones:B2:460', 'funciones:B2:461'],
   title: 'Expresar conocimiento: me he enterado de que...',
   summary: '"Enterarse" marks the specific MOMENT knowledge arrived — often by chance or through a particular channel — which is why it dominates this function, distinct from "saber", which is the resulting state with no story attached to how you got there.',
+  keywords: [
+    { es: 'enterarse de', en: 'to find out about' },
+    { es: 'Me he enterado de que…', en: 'I\'ve heard that…' },
+    { es: 'estar informado de', en: 'to be aware of' },
+    { es: 'Que yo sepa', en: 'As far as I know' },
+    { es: 'No tengo ni idea.', en: 'I have no idea.' },
+    { es: 'negociar', en: 'to negotiate' },
+    { es: 'la noticia', en: 'the news' }
+  ],
   sections: [
     { h: 'Enterarse de + SN/que', html: 'The key verb here: <i>Me enteré de la noticia</i>, <i>Se enteró el sábado de que su hijo tenía novia</i> — always the MOMENT of finding out.' },
     { h: 'Ya me he/había enterado', html: 'Confirms you already know, often anticipating and forestalling someone about to tell you news.' },
@@ -24496,6 +25077,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:489', 'funciones:B2:490', 'funciones:B2:491', 'funciones:B2:492', 'funciones:B2:493'],
   title: 'Expresar habilidad: negado para, se me da bien, tener facilidad',
   summary: '"Ser un negado para" is the vivid, self-deprecating opposite of talent — a fixed idiom, not a literal claim of negation — while "se me da bien/mal" keeps the gustar-pattern already met for aptitude, this time specifically for skill rather than general liking.',
+  keywords: [
+    { es: 'dársele bien a alguien', en: 'to be good at' },
+    { es: 'No se me da mal.', en: 'I\'m not bad at it.' },
+    { es: 'ser un negado para', en: 'to be hopeless at' },
+    { es: 'tener facilidad para', en: 'to have a knack for' },
+    { es: 'ser capaz de', en: 'to be able to' },
+    { es: 'faltarle a uno', en: 'to lack' },
+    { es: 'el crucigrama', en: 'the crossword' }
+  ],
   sections: [
     { h: 'Soy (in)capaz de + infinitivo', html: 'States the ability (or inability) to do a specific thing: <i>Es incapaz de tomar una decisión.</i>' },
     { h: 'Ser un negado para/con: vivid self-deprecation', html: 'A colorful fixed idiom for complete lack of skill: <i>Soy un negado para los idiomas</i> — much more vivid than a plain "no se me dan bien".' },
@@ -24703,6 +25293,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:619', 'funciones:B2:620', 'funciones:B2:622', 'funciones:B2:623', 'funciones:B2:628', 'funciones:B2:630'],
   title: 'Expresar deseos: ojalá, me hace ilusión, sueño con',
   summary: '"Ojalá" needs no verb of wishing at all — it IS the wish, grammatically fused with the subjunctive that follows — while "soñar con" and "me hace ilusión" each add a distinct emotional flavor plain "querer" cannot carry.',
+  keywords: [
+    { es: 'Ojalá + subjuntivo', en: 'I wish, if only' },
+    { es: 'Quisiera…', en: 'I would like…' },
+    { es: 'Me hace ilusión…', en: 'I\'m excited about…' },
+    { es: 'Soñar con', en: 'to dream of' },
+    { es: 'Me gustaría que…', en: 'I\'d like … to…' },
+    { es: 'intercambiar', en: 'to exchange' },
+    { es: 'el deseo', en: 'the wish' }
+  ],
   sections: [
     { h: 'Ojalá (que) + subjuntivo', html: 'The most compact wish in Spanish — no verb needed, <i>ojalá</i> itself triggers the subjunctive: <i>Ojalá pudiera ayudarte.</i>' },
     { h: 'Quería/querría/quisiera que + subjuntivo', html: 'Three registers of the same wish, from plain to more tentative/polite.' },
@@ -25369,6 +25968,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:924', 'funciones:B2:925', 'funciones:B2:928', 'funciones:B2:929', 'funciones:B2:935'],
   title: 'Expresar sensaciones físicas: pasar hambre/frío, me agota',
   summary: '"Pasar hambre/frío/calor" reports an EXTENDED period of enduring a sensation, distinct from the punctual "tener hambre" — the same durative/punctual split met with narrative tenses, here applied to bodily sensation.',
+  keywords: [
+    { es: 'pasar hambre / frío', en: 'to go hungry / to be very cold' },
+    { es: 'Tengo un hambre horrible.', en: 'I\'m starving.' },
+    { es: 'agotar', en: 'to exhaust' },
+    { es: 'estar agotado', en: 'to be exhausted' },
+    { es: 'el entrenamiento', en: 'the training session' },
+    { es: 'sentirse', en: 'to feel' },
+    { es: 'el cansancio', en: 'the tiredness' }
+  ],
   sections: [
     { h: 'Tener + sensación + adjetivo intensificador', html: '<i>Tengo un hambre horrible</i>, <i>una sed espantosa</i> — the noun takes an adjective for extra intensity, unusual since these nouns rarely take adjectives elsewhere.' },
     { h: 'Pasar hambre/frío/calor/sueño: enduring, not momentary', html: '<i>Aquella noche pasamos muchísimo calor</i> reports living through an extended period of the sensation, not a single moment of it.' },
@@ -25533,6 +26141,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:1022', 'funciones:B2:1023', 'funciones:B2:1026', 'funciones:B2:1029', 'funciones:B2:1030'],
   title: 'Pedir ayuda: échame una mano, solicito tu colaboración',
   summary: '"Solicito su colaboración" is the formal, institutional register for the same request "échame una mano" makes casually — the choice between them is entirely about setting, not meaning.',
+  keywords: [
+    { es: '¿Me echas una mano?', en: 'Can you give me a hand?' },
+    { es: '¿Podrías ayudarme con…?', en: 'Could you help me with…?' },
+    { es: 'Necesitaría que…', en: 'I\'d need you to… (+ subjunctive)' },
+    { es: 'Solicitamos su colaboración.', en: 'We request your assistance. (formal)' },
+    { es: 'Tengo que pedirte una cosa.', en: 'I have to ask you something.' },
+    { es: 'funcionar', en: 'to work (a device)' }
+  ],
   sections: [
     { h: 'Échame una mano: the everyday idiom', html: 'The default colloquial way to ask for help, works alone or attenuated: <i>¿Podrías echarme una mano con esto?</i>' },
     { h: 'Solicito su colaboración: formal/institutional', html: 'Used in official requests, reports, formal letters: <i>Solicitamos su colaboración para realizar este proyecto.</i>' },
@@ -25615,6 +26231,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:1087', 'funciones:B2:1088', 'funciones:B2:1089', 'funciones:B2:1090', 'funciones:B2:1091'],
   title: 'Pedir permiso: ¿te importaría que + subjuntivo?',
   summary: 'Asking "¿te molesta/importa si...?" frames permission as a matter of the OTHER person\'s comfort, not authority — a distinctly polite move that "¿puedo...?" alone does not carry.',
+  keywords: [
+    { es: '¿Te importaría que…?', en: 'Would you mind if… (+ subjunctive)' },
+    { es: '¿Le parece bien que…?', en: 'Would it be alright with you if…?' },
+    { es: '¿Sería posible…?', en: 'Would it be possible…?' },
+    { es: '¿Me das permiso para…?', en: 'Do you give me permission to…?' },
+    { es: '¿Puedo…?', en: 'May I…?' },
+    { es: 'el permiso', en: 'the permission' },
+    { es: 'el asunto', en: 'the matter' }
+  ],
   sections: [
     { h: '¿Te molesta/importa si/que...?', html: 'Frames the request around the other person\'s comfort: <i>¿No te importaría cambiarme las vacaciones?</i>' },
     { h: '¿Te parece bien que + subjuntivo?', html: 'Asks for approval of a specific action: <i>¿Le parece bien que comente esto con el señor Pinto?</i>' },
@@ -25818,6 +26443,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:1151', 'funciones:B2:1153', 'funciones:B2:1156', 'funciones:B2:1157', 'funciones:B2:1159', 'funciones:B2:1162'],
   title: 'Proponer y sugerir: habría que, estaría bien que',
   summary: '"Habría que + infinitivo" proposes an action with the responsible party left conspicuously unnamed — nobody is assigned the task, which is exactly what makes it a gentle suggestion rather than a demand.',
+  keywords: [
+    { es: '¿Y si + imperfecto de subjuntivo?', en: 'What if we…?' },
+    { es: 'Habría que…', en: 'Somebody ought to…' },
+    { es: 'Estaría bien que…', en: 'It would be nice if… (+ subjunctive)' },
+    { es: 'Te propongo…', en: 'I suggest…' },
+    { es: '¿Qué te parece si…?', en: 'How about if…?' },
+    { es: 'proponer', en: 'to propose' }
+  ],
   sections: [
     { h: '¿Y si + imperfecto de subjuntivo?', html: 'The classic soft proposal: <i>¿Y si fuéramos este año a la playa?</i>' },
     { h: 'Habría que + infinitivo: no one named', html: 'Proposes an action while conspicuously naming no one as responsible: <i>Habría que llamarla y decírselo.</i>' },
@@ -25939,6 +26572,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:1219', 'funciones:B2:1220', 'funciones:B2:1221', 'funciones:B2:1222', 'funciones:B2:1223'],
   title: 'Aconsejar: si yo fuera tú, lo mejor sería que',
   summary: '"Si yo fuera tú" steps fully into the other person\'s position before advising — grammatically a hypothetical about the SPEAKER, but functionally advice for the LISTENER — a more immersive framing than the B1 "yo que tú".',
+  keywords: [
+    { es: 'Si yo fuera tú…', en: 'If I were you…' },
+    { es: 'Yo que tú…', en: 'If I were you…' },
+    { es: 'Lo mejor sería que…', en: 'It would be best if… (+ subjunctive)' },
+    { es: 'Te recomendaría que…', en: 'I\'d recommend that you…' },
+    { es: '¿Y si + imperfecto de subjuntivo?', en: 'What if you…?' },
+    { es: 'alejarse de', en: 'to stay away from' },
+    { es: 'el intercambio', en: 'the language exchange' }
+  ],
   sections: [
     { h: 'Si yo fuera tú: stepping into their shoes', html: 'A hypothetical about the speaker that functions as advice for the listener: <i>Si yo fuera tú, buscaría un intercambio con un nativo.</i>' },
     { h: 'Lo mejor sería / sería mejor que + subjuntivo', html: 'Frames the advice as the objectively best option: <i>Lo mejor sería que fueras al médico.</i>' },
@@ -26231,6 +26873,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:1295', 'funciones:B2:1299', 'funciones:B2:1300', 'funciones:B2:1306', 'funciones:B2:1307', 'funciones:B2:1309'],
   title: 'Saludar y responder: vocal alargada, cuánto tiempo',
   summary: 'Elongating a name\'s vowel — "¡Caaarmen!" — is itself a warmth marker with no equivalent single word, while "¡Cuánto tiempo!" specifically marks a reunion after a real gap, not a routine daily greeting.',
+  keywords: [
+    { es: '¡Cuánto tiempo!', en: 'It\'s been so long!' },
+    { es: '¡Caaarmen!', en: 'Caaarmen! (drawn-out vowel — warmth)' },
+    { es: 'Me alegro de verte.', en: 'Good to see you.' },
+    { es: 'Estupendamente', en: 'Wonderfully' },
+    { es: 'Tirando.', en: 'Getting by.' },
+    { es: '¿Qué es de tu vida?', en: 'What have you been up to?' },
+    { es: '¿Y usted, cómo está?', en: 'And you, how are you?' }
+  ],
   sections: [
     { h: 'Vowel elongation as warmth', html: '<i>¡Caaarmen!</i> — stretching the vowel is itself an affection marker, common when greeting someone warmly after time apart.' },
     { h: '¡Cuánto tiempo! Me alegro de verte.', html: 'Specifically marks a reunion after a genuine gap — using it for someone you saw yesterday would sound odd or sarcastic.' },
@@ -26311,6 +26962,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:1341', 'funciones:B2:1343', 'funciones:B2:1344', 'funciones:B2:1346', 'funciones:B2:1348'],
   title: 'Disculparse: siento + lo de/infinitivo compuesto/que',
   summary: '"Siento/lamento" branches into three grammatical shapes depending on what exactly you are apologizing for — a named topic ("lo de"), your own finished action (compound infinitive), or someone else\'s situation ("que" + subjunctive) — the same verb, three distinct targets.',
+  keywords: [
+    { es: 'Lamento lo de…', en: 'I\'m sorry about…' },
+    { es: 'Lamento haber…', en: 'I regret having…' },
+    { es: 'Siento que…', en: 'I\'m sorry that… (+ subjunctive)' },
+    { es: 'Les ruego que me disculpen.', en: 'I beg your forgiveness.' },
+    { es: 'Perdona el retraso.', en: 'Sorry for the delay.' },
+    { es: 'Fue culpa mía.', en: 'It was my fault.' },
+    { es: 'disculpar', en: 'to forgive' }
+  ],
   sections: [
     { h: 'Siento/lamento + lo de + SN/infinitivo', html: 'Apologizes for a known, already-referenced topic: <i>Lamento lo del otro día.</i>' },
     { h: 'Siento/lamento + infinitivo compuesto', html: 'For your OWN finished action: <i>Lamento mucho haber perdido el control.</i>' },
@@ -26392,6 +27052,14 @@ window.STRAND_LESSONS = [
   title: 'Agradecer: no sé cómo agradecértelo',
   upgrades: 'fn-agradecer-a1',
   summary: '"No sé cómo agradecértelo" claims gratitude too large for ordinary words to capture — a hyperbolic move that "gracias por" and "te lo agradezco" state plainly, without that same rhetorical excess.',
+  keywords: [
+    { es: 'Te lo agradezco.', en: 'I appreciate it.' },
+    { es: 'No sé cómo agradecértelo.', en: 'I don\'t know how to thank you.' },
+    { es: 'Muy amable.', en: 'That\'s very kind.' },
+    { es: 'Muchísimas gracias por…', en: 'Thank you so much for…' },
+    { es: 'agradecer', en: 'to thank, to be grateful for' },
+    { es: 'sinceramente', en: 'sincerely' }
+  ],
   sections: [
     { h: 'Gracias por + SN/infinitivo compuesto', html: 'Names specifically what you are grateful for: <i>Muchísimas gracias por haber venido tan rápido.</i>' },
     { h: 'Te lo agradezco sinceramente/muchísimo', html: 'A direct, sincere statement of gratitude, works well in both speech and writing.' },
@@ -26559,6 +27227,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:1470', 'funciones:B2:1471', 'funciones:B2:1472', 'funciones:B2:1474'],
   title: 'Preguntar por una persona: no se retire, ahora le paso',
   summary: '"No se retire" is a fossilized phone-specific command — you would never say it face to face — one of a small set of formulas that exist ONLY in the telephone register, with no equivalent in an in-person conversation.',
+  keywords: [
+    { es: '¿Me pone con…?', en: 'Could you put me through to…?' },
+    { es: 'No se retire.', en: 'Please hold.' },
+    { es: 'Ahora le paso.', en: 'I\'ll put you through.' },
+    { es: 'No le puede atender.', en: 'He can\'t take your call.' },
+    { es: '¿De parte de quién?', en: 'Who\'s calling?' },
+    { es: 'dejar un recado', en: 'to leave a message' },
+    { es: 'colgar', en: 'to hang up' }
+  ],
   sections: [
     { h: 'Asking the caller to wait: telephone-only', html: '<i>No se retire, por favor</i> and <i>Un momento, ahora le paso</i> are fixed telephone formulas — nobody says "no se retire" face to face.' },
     { h: 'Ahora le pongo (con...)', html: 'Announces the transfer specifically: <i>Un momento, ahora le pongo con el Sr. García.</i>' },
@@ -26639,6 +27316,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:1506', 'funciones:B2:1507', 'funciones:B2:1508', 'funciones:B2:1509', 'funciones:B2:1511'],
   title: 'Solicitar que comience un relato: pues verás..., te cuento',
   summary: '"Pues verás..." announces that an explanation is coming without yet saying anything — a pure discourse marker that buys a beat before the actual narrative starts, distinct from diving straight into the story.',
+  keywords: [
+    { es: 'Cuéntame…', en: 'Tell me…' },
+    { es: 'Pues verás…', en: 'Well, you see…' },
+    { es: 'Te cuento.', en: 'Let me tell you.' },
+    { es: 'Pues nada, que…', en: 'So anyway,…' },
+    { es: '¿Qué pasó?', en: 'What happened?' },
+    { es: 'A ver, cuenta.', en: 'Go on, tell me.' },
+    { es: 'el relato', en: 'the account, the story' }
+  ],
   sections: [
     { h: 'Requesting the story', html: '<i>Oye, cuéntame algo del examen</i>, <i>¿Qué pasó con lo de tu hermano?</i> — direct invitations to narrate.' },
     { h: 'Pues verás... / Te cuento.: announcing before narrating', html: 'Both signal "here comes an explanation" before any content arrives — a beat of preparation, not yet the story itself.' },
@@ -26961,6 +27647,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:1632', 'funciones:B2:1633', 'funciones:B2:1636', 'funciones:B2:1638', 'funciones:B2:1639'],
   title: 'Introducir un nuevo tema: por cierto, hablando de...',
   summary: '"Por cierto" introduces a topic that has NO logical connection to what came before — a pure conversational pivot — while "hablando de..." explicitly links the new topic to something just mentioned, the opposite move.',
+  keywords: [
+    { es: 'Por cierto…', en: 'By the way…' },
+    { es: 'Hablando de…', en: 'Speaking of…' },
+    { es: 'A propósito…', en: 'Incidentally…' },
+    { es: 'Por lo que se refiere a…', en: 'As for…' },
+    { es: 'En cuanto a…', en: 'Regarding…' },
+    { es: 'A continuación', en: 'Next' },
+    { es: 'cambiar de tema', en: 'to change the subject' }
+  ],
   sections: [
     { h: 'Por cierto / a propósito: an unrelated pivot', html: 'Introduces something with no logical link to what preceded — a fresh, often opportunistic topic change.' },
     { h: 'Hablando de...: an explicit link', html: 'The opposite move — explicitly ties the new topic to something just said: <i>Hablando de viajes, ¿sabes que Ana se va a Japón?</i>' },
@@ -27007,6 +27702,16 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:16', 'tacticas_pragmaticas:B2:17'],
   title: 'Mantener el referente: elipsis, sinónimos, hiperónimos',
   summary: 'Beyond pronouns, B2 tracks a referent by deleting the noun entirely when a prepositional complement makes it recoverable, by licensing an indefinite article to point anaphorically at someone already named, and by swapping in a synonym or a broader hyperonym instead of repeating the same word.',
+  keywords: [
+    { es: 'la elipsis', en: 'leaving the noun out' },
+    { es: 'el sinónimo', en: 'the synonym' },
+    { es: 'el hiperónimo', en: 'the broader word (dog → animal)' },
+    { es: 'el animal', en: 'the animal' },
+    { es: 'el premio', en: 'the prize' },
+    { es: 'los ganadores', en: 'the winners' },
+    { es: 'discreto', en: 'discreet' },
+    { es: 'la pata', en: 'the paw, the leg' }
+  ],
   sections: [
     { h: 'Elipsis del núcleo nominal', html: '<i>¿Has visto mis llaves? Las de casa.</i> omits the noun entirely, leaving only the prepositional complement to identify it; a partitive works the same way — <i>tres de los cuatro firmantes</i> can shrink to just <i>tres</i>.' },
     { h: 'El artículo indefinido anafórico', html: '<i>Isidro nos contó todos los detalles. No lo esperábamos de un hombre tan discreto.</i> — "un hombre" already refers back to Isidro; the indefinite article works anaphorically here only because a restrictive modifier (<i>tan discreto</i>) licenses it.' },
@@ -27048,6 +27753,16 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:49', 'tacticas_pragmaticas:B2:50', 'tacticas_pragmaticas:B2:51'],
   title: 'Marcadores del discurso B2: contraargumentativos y reformuladores',
   summary: 'B2 fills in the connector classes B1 only sketched, and — crucially — separates five reformuladores that each repair something different: explicativo restates, recapitulativo condenses, rectificativo corrects what was just said, digresor detours to a new point, and distanciamiento dismisses the previous point\'s relevance entirely.',
+  keywords: [
+    { es: 'mientras que', en: 'whereas (contrast, no obstacle)' },
+    { es: 'sin embargo', en: 'however' },
+    { es: 'no obstante', en: 'nevertheless' },
+    { es: 'mejor dicho', en: 'or rather (correcting yourself)' },
+    { es: 'es decir', en: 'that is to say' },
+    { es: 'de todos modos', en: 'anyway, in any case' },
+    { es: 'por cierto', en: 'by the way' },
+    { es: 'en cualquier caso', en: 'in any case' }
+  ],
   sections: [
     { h: 'Contraargumentativos: tres matices distintos', html: '<i>A pesar de</i> concedes an obstacle and continues regardless; <i>mientras que</i> simply contrasts two elements without conceding anything; <i>de todos modos</i> qualifies the first part of an argument, not quite conceding, not quite contrasting.' },
     { h: 'Ordenadores: inicio, continuidad, cierre', html: '<i>Para empezar</i> (inicio), <i>por su parte</i> (continuidad), <i>para finalizar, en suma</i> (cierre) structure a whole argument into stages.' },
@@ -27090,6 +27805,14 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:69'],
   title: 'La deixis en B2: pronombre enfático, "se" mitigador',
   summary: 'A subject pronoun that Spanish normally omits can surface specifically to maximize the speaker\'s or listener\'s role in an act ("¡Si yo no he sido!"), and "se" can mitigate responsibility by turning a blunt agent ("perdí tu dinero") into a mere experiencer of an event that simply happened ("se me perdió tu dinero").',
+  keywords: [
+    { es: 'aquí / ahí / allí', en: 'here / there / over there' },
+    { es: 'este / ese / aquel', en: 'this / that / that yonder' },
+    { es: 'ahora / entonces', en: 'now / then' },
+    { es: 'hoy / aquel día', en: 'today / that day' },
+    { es: 'yo / tú / él', en: 'I / you / he' },
+    { es: 'la deixis', en: 'pointing with words' }
+  ],
   sections: [
     { h: 'Pronombre sujeto explícito: énfasis en el yo/tú', html: '<i>¡Si yo no he sido!, ¡ha sido él!</i> — the overt "yo" is not grammatically required; it maximizes the speaker\'s role, especially when denying blame. <i>Tú hazme caso</i> similarly emphasizes the addressee\'s part in the action.' },
     { h: '"Se" mitigador de responsabilidad', html: '<i>Se me perdió tu dinero</i> reframes losing the money as something that happened TO the speaker, not something the speaker did — compare the blunt <i>Perdí tu dinero</i>, which assigns direct agency.' },
@@ -27131,6 +27854,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:90', 'tacticas_pragmaticas:B2:91', 'tacticas_pragmaticas:B2:92', 'tacticas_pragmaticas:B2:93'],
   title: 'Rematización y tematización en B2: ecuacionales y "lo de"',
   summary: 'B2 formalizes what B1 only sketched: true cleft ("ecuacional") structures isolate exactly which element of a sentence is new information, fronting the object now requires a doubled pronoun, and "lo de" / "eso de" nominalize a whole known topic so it can be picked up again as a single unit.',
+  keywords: [
+    { es: 'Fue María quien…', en: 'It was María who…' },
+    { es: 'El libro lo compró Juan.', en: 'The book, Juan bought it.' },
+    { es: 'lo de…', en: 'that business with…' },
+    { es: 'Lo que pasa es que…', en: 'What\'s happening is that…' },
+    { es: 'en cuanto a', en: 'as for' },
+    { es: 'la financiación', en: 'the funding' },
+    { es: 'el lío', en: 'the mess' }
+  ],
   sections: [
     { h: 'Estructuras ecuacionales: aislar el elemento nuevo', html: '<i>Juan vio a María ayer en el cine</i> can be rewritten to isolate each element as the sole new information: <i>A María fue a quien Juan vio ayer en el cine</i> / <i>Ayer fue cuando...</i> / <i>En el cine fue donde...</i> — each version declares a different part as the focus.' },
     { h: 'Tematización con doblado obligatorio del pronombre', html: '<i>El libro lo he visto encima de la mesa</i> — fronting the direct object (<i>el libro</i>) requires repeating it with a pronoun (<i>lo</i>); without it, <i>*El libro he visto encima de la mesa</i> is ungrammatical.' },
@@ -27172,6 +27904,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:108', 'tacticas_pragmaticas:B2:109'],
   title: 'Procedimientos de cita: estilo indirecto y citas encubiertas',
   summary: 'Reported speech requires shifting three systems at once — verb tense, and the deictic markers of person and place/time — while "citas encubiertas" let a speaker attribute information to someone else with no reporting verb at all, just a bare "que" or "según dicen".',
+  keywords: [
+    { es: 'Dice que…', en: 'He says that…' },
+    { es: 'Dijo que…', en: 'He said that…' },
+    { es: 'Preguntó que si…', en: 'He asked whether…' },
+    { es: 'Dice que si puede…', en: 'She\'s asking whether she can…' },
+    { es: 'al día siguiente', en: 'the next day' },
+    { es: 'el estilo indirecto', en: 'reported speech' },
+    { es: 'la cita', en: 'the quotation' }
+  ],
   sections: [
     { h: 'Omitir el verbo anunciador', html: '<i>-¿Qué ha dicho? -Que no.</i> repeats what was said with a bare "que" + the quote, no introductory verb.' },
     { h: 'Reproducir preguntas: si / interrogativo + que', html: '<i>Le preguntó si le había gustado el regalo</i> (total) vs <i>Le preguntó cuándo llegaría su padre</i> (parcial). With <i>decir</i>, "si" is obligatory to signal a question: <i>María dice que si puede ayudarte</i> (a question) vs <i>María dice que puede ayudarte</i> (a statement) — the same words mean different things with and without "si".' },
@@ -27213,6 +27954,14 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:134', 'tacticas_pragmaticas:B2:135'],
   title: 'Lo que hace una pregunta en B2: dudas, ecos y retóricas',
   summary: 'B2 adds a genuinely new mechanism to B1\'s catalogue of question-acts: the "interrogativa de eco", which repeats part of what was just said with a question word standing in for the part that surprised or was not caught, plus rhetorical questions that expect no real answer because the speaker already assumes agreement.',
+  keywords: [
+    { es: '¿Tienes hora?', en: 'Have you got the time? (a real request)' },
+    { es: 'Hace frío aquí.', en: 'It\'s cold in here. (= close the window)' },
+    { es: 'Es que…', en: 'The thing is…' },
+    { es: 'No sé si…', en: 'I don\'t know whether…' },
+    { es: 'indirecto', en: 'indirect' },
+    { es: 'dar a entender', en: 'to imply' }
+  ],
   sections: [
     { h: 'Neutros: duda, sorpresa, valor fático', html: '<i>¿Crees realmente que...?</i> expresses doubt about the addressee\'s claim; the enfatic <i>¿Quéee?</i>, with exaggerated intonation, signals surprise or rejection; <i>¿Me has entendido ahora?</i> checks the channel (valor fático), not real doubt about comprehension.' },
     { h: 'Interrogativas de eco: explicativas y especificativas', html: '<i>-Este verano he comprado un caftán. -¿Que has comprado qué?</i> repeats the whole statement, replacing the surprising part with a question word (explicativa). <i>-¿Cuándo te vas? -¿Que cuándo me voy adónde?</i> echoes only the earlier question, adding a further question word (especificativa).' },
@@ -27251,6 +28000,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:144', 'tacticas_pragmaticas:B2:145', 'tacticas_pragmaticas:B2:146'],
   title: 'Matices de la negación: reiterada, enfática, artificiosa',
   summary: 'A plain "no" is just one option — B2 distinguishes a "no" that merely confirms, one repeated for emphasis, one intensified with a fixed phrase, one carried by stress and exclamation alone, and a softened, "artificiosa" no that hedges by citing the limits of one\'s own knowledge.',
+  keywords: [
+    { es: 'de ninguna manera', en: 'in no way, absolutely not' },
+    { es: 'de ningún modo', en: 'by no means' },
+    { es: '¡Que no!', en: 'No, I said!' },
+    { es: 'que yo sepa', en: 'as far as I know' },
+    { es: 'No me da la gana.', en: 'I just don\'t feel like it.' },
+    { es: 'en absoluto', en: 'not at all' },
+    { es: 'ni hablar', en: 'no way' }
+  ],
   sections: [
     { h: 'Negación para confirmar, y reiterada', html: '<i>-¿No te enfadas? -No, de ninguna manera</i> simply confirms the negative premise of the question. <i>¡Que no, hombre, que no!</i> repeats "no" for emphasis when the listener seems unconvinced.' },
     { h: 'Negación enfática y estresada', html: '<i>De ningún modo, no me da la gana</i> intensifies with a fixed phrase before the plain negation. A negation can also be carried by stress and exclamation alone: <i>-¿Me lo vas a traer mañana? -¡Claro que no!</i>' },
@@ -27289,6 +28047,15 @@ window.STRAND_LESSONS = [
   pcic: ['tacticas_pragmaticas:B2:147', 'tacticas_pragmaticas:B2:148', 'tacticas_pragmaticas:B2:149', 'tacticas_pragmaticas:B2:150'],
   title: 'Metáforas fijas: comparaciones con animales y verbos de cambio',
   summary: 'A closed set of comparative structures ("fuerte como un toro", "está como una cabra") and change-of-state verbs ("volverse loco", "quedarse de piedra") carry meanings no learner can derive from the words alone — they have to be learned as fixed units, mostly built on animal names.',
+  keywords: [
+    { es: 'la ironía', en: 'the irony' },
+    { es: 'dar a entender', en: 'to imply' },
+    { es: 'la indirecta', en: 'the hint' },
+    { es: 'por así decirlo', en: 'so to speak' },
+    { es: 'tomar el pelo', en: 'to pull someone\'s leg' },
+    { es: 'en sentido figurado', en: 'figuratively' },
+    { es: 'la metáfora', en: 'the metaphor' }
+  ],
   sections: [
     { h: 'Ser + adjetivo + como + animal', html: '<i>Es fuerte como un toro</i> and <i>Es lento como una tortuga</i> fix a permanent quality by comparing it to a stereotypical animal — the meaning depends entirely on the cultural association, not on real traits.' },
     { h: 'Estar + como + animal', html: '<i>Está como una cabra</i> describes a state (temporary madness, or a wild character), not a permanent quality — the same animal in the "estar" structure communicates something different.' },
@@ -27331,6 +28098,14 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:180'],
   title: 'Intensificar en B2: prefijos, verbos performativos, alargamientos',
   summary: 'Beyond -ísimo, B2 adds a real toolkit: superlative prefixes (super-, archi-), repeating the SAME word for maximum degree (café café), performative verbs that intensify by asserting the speaker\'s own word as a guarantee (te aseguro, te juro), and — uniquely oral — stretching a stressed vowel or spelling a word out syllable by syllable to intensify a recrimination already made.',
+  keywords: [
+    { es: 'super- / archi- / mega-', en: 'super-, ultra- (intensifying prefixes)' },
+    { es: 'café café', en: 'real coffee (the word doubled)' },
+    { es: 'Le aseguro que…', en: 'I assure you that…' },
+    { es: 'hasta el último céntimo', en: 'every last cent' },
+    { es: 'de una vez', en: 'once and for all' },
+    { es: '¡Que te calles!', en: 'Will you be quiet!' }
+  ],
   sections: [
     { h: 'Prefijos superlativos y repetición del mismo adjetivo', html: '<i>super-, archi-, ultra-, extra-</i> attach directly to the adjective: <i>superguapo, extrafino</i>. Immediately repeating the same adjective does the same job with no morphology at all: <i>Es listo listo</i>; <i>En este bar ponen café café</i> (the real thing, not the cheap version).' },
     { h: 'Verbos performativos de refuerzo', html: '<i>Te aseguro que, te juro que, está claro que</i> reinforce a claim by appealing to the speaker\'s own word as the guarantee — they don\'t describe a fact, they certify it.' },
@@ -27374,6 +28149,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:198'],
   title: 'Focalizar en B2: reduplicación del pronombre y ecos',
   summary: 'B2 sharpens focus with a genuinely new device — doubling the direct-object pronoun AND fronting the object at once ("la carta se la di a María") — plus an echo question that repeats an entire earlier statement while replacing exactly the part under scrutiny with a question word.',
+  keywords: [
+    { es: 'incluso', en: 'even' },
+    { es: 'especialmente', en: 'especially' },
+    { es: 'sobre todo', en: 'above all' },
+    { es: 'algo + adjetivo', en: 'somewhat…' },
+    { es: 'La carta se la di.', en: 'The letter, I gave it to him.' },
+    { es: 'en persona', en: 'in person' },
+    { es: 'pesado', en: 'tedious, heavy going' }
+  ],
   sections: [
     { h: 'Marcadores discursivos focalizadores', html: '<i>incluso</i> (incluyente) adds an extreme case within what was expected: <i>Es un hotel impresionante, incluso tiene televisor en el baño</i>. <i>Especialmente/particularmente</i> single out without excluding; <i>justamente/precisamente</i> reinforce, signaling something fits exactly.' },
     { h: '"Algo" como minimizador', html: '<i>Es algo pesado</i> reduces the quality to the barely perceptible minimum — distinct from <i>un poco</i>, which doesn\'t necessarily minimize as much.' },
@@ -27415,6 +28199,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:214', 'tacticas_pragmaticas:B2:215', 'tacticas_pragmaticas:B2:216'],
   title: 'Entonación y alargamientos: lo que dice el tono',
   summary: 'A falling intonation on a yes/no question asks for confirmation of something already suspected, while a rising one genuinely asks for new information — the same words, two different requests, decided entirely by tone; vowel-lengthening and syllable-by-syllable pronunciation do equally specific jobs, from softening a request to reinforcing a recrimination.',
+  keywords: [
+    { es: 'Pueees…', en: 'Weeell… (drawn out — hesitation)' },
+    { es: 'No se lo deeejes.', en: 'Don\'t you dare lend it to him.' },
+    { es: '¿Vendrás?', en: 'Will you come? (rising — a real question)' },
+    { es: '¿Quieres que te acompañe?', en: 'Shall I come with you?' },
+    { es: 'el tono', en: 'the tone' },
+    { es: 'el alargamiento', en: 'the drawn-out vowel' },
+    { es: 'despistarse', en: 'to lose the thread' }
+  ],
   sections: [
     { h: 'Tonema descendente vs ascendente en preguntas totales', html: 'A falling tone on <i>¿Quieres que vaya?</i> asks for confirmation of something already assumed; a rising tone on the same words asks for real information, with no assumption about the answer.' },
     { h: 'Ascenso continuativo en la narración', html: 'A series of consecutive rising tones (<i>...y buscando, y buscando, y no les encontrábamos, y entonces...</i>) keeps a narrative moving and conveys the narrator\'s growing worry, with no new words needed.' },
@@ -27454,6 +28247,14 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:224'],
   title: 'Desplazar el tiempo verbal: presente, futuro de probabilidad, imperfecto',
   summary: 'A present tense can narrate a past event to make it feel immediate ("le hago un regalo y no me da ni las gracias"), a future perfect can guess about the past instead of predicting the future ("habrán estado bailando"), and an imperfect can freeze an action or a thought at the exact moment something else interrupted it.',
+  keywords: [
+    { es: 'el presente histórico', en: 'the present used for a past event' },
+    { es: 'Se habrán quedado dormidos.', en: 'They must have overslept.' },
+    { es: 'Habrán estado…', en: 'They must have been…' },
+    { es: '¿Qué te estaba diciendo?', en: 'What was I telling you?' },
+    { es: 'perder el hilo', en: 'to lose your train of thought' },
+    { es: 'ni las gracias', en: 'not even a thank you' }
+  ],
   sections: [
     { h: 'Presente por pasado: actualizar la información', html: '<i>Le hago un regalo y no me da ni las gracias</i> narrates a past event in the present, bringing it psychologically closer to the moment of speech.' },
     { h: 'Futuro de probabilidad hacia el pasado', html: '<i>Habrán estado bailando toda la noche</i> does not predict the future — it speculates about something already past, extending the future\'s domain backward (<i>esta mañana no han venido porque se habrán quedado dormidos</i>).' },
@@ -27566,6 +28367,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B2:215', 'generos_discursivos:B2:216', 'generos_discursivos:B2:229'],
   title: 'La llamada telefónica transaccional (B2): una cadena más larga',
   summary: 'A B2 booking call chains several rounds of new-information-then-question in a row — not just one comparison, but a whole sequence where each answer opens the next question — and keeps a consistently formal "usted" register throughout, from the very first "dígame" to the final "que tenga un buen día".',
+  keywords: [
+    { es: 'Quería información sobre…', en: 'I\'d like information about…' },
+    { es: 'Una cosa más:', en: 'One more thing:' },
+    { es: 'entre semana', en: 'on weekdays' },
+    { es: 'la parada', en: 'the stop' },
+    { es: '¿Puedo pagar con tarjeta?', en: 'Can I pay by card?' },
+    { es: 'la diferencia', en: 'the difference' },
+    { es: 'confirmar', en: 'to confirm' }
+  ],
   sections: [
     { h: 'Una cadena más larga de preguntas y respuestas', html: 'A B1 call typically compares one pair of options; a B2 call chains several: schedule, then price, then differences between options, then a personal preference, then a follow-up about payment — each answer opening a new question rather than closing the exchange.' },
     { h: 'Registro "usted" sostenido de principio a fin', html: 'A transactional call at this level keeps a consistently formal register throughout — <i>dígame, ¿usted cuál me recomienda?, es usted muy amable</i> — never sliding into a more casual tone even as the exchange gets longer and friendlier.' },
@@ -27610,6 +28420,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B2:128'],
   title: 'Géneros orales en B2: qué debes entender, qué debes producir',
   summary: 'B2 adds a genuinely high-stakes production genre B1 never asked for — the job interview as interviewee — while dense, specialized genres like documentaries, lectures and press interviews stay reception-only: the Plan Curricular still expects you to follow them, never to match their density yourself.',
+  keywords: [
+    { es: 'el informativo', en: 'the news bulletin' },
+    { es: 'la entrevista de trabajo', en: 'the job interview' },
+    { es: 'el debate', en: 'the debate' },
+    { es: 'los puntos fuertes', en: 'the strengths' },
+    { es: 'centrarse en', en: 'to focus on' },
+    { es: 'la tertulia', en: 'the discussion programme' },
+    { es: 'comprensión / producción', en: 'understanding / producing' }
+  ],
   sections: [
     { h: 'Solo recepción: lo denso y lo especializado', html: 'Documentales de televisión, discursos y conferencias sobre temas abstractos y entrevistas periodísticas quedan en (R) — se espera que extraigas la idea, no que produzcas nada tan denso tú mismo.' },
     { h: 'Producción de alto riesgo: la entrevista de trabajo', html: 'Por primera vez aparece una producción exigente y personal: la entrevista de trabajo como entrevistado (P) — debes sostener un intercambio formal e improvisado sobre ti mismo.' },
@@ -27650,6 +28469,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B2:172', 'generos_discursivos:B2:173'],
   title: 'Géneros escritos en B2: cartas al director, informes, biografías',
   summary: 'B2 adds genres built to take a stance in public — a letter to the editor, an opinion column — alongside the first genuinely professional written production, a short expository or argumentative report weighing the pros and cons of an option in the reader\'s own field.',
+  keywords: [
+    { es: 'en relación con', en: 'regarding' },
+    { es: 'la carta al director', en: 'the letter to the editor' },
+    { es: 'el informe', en: 'the report' },
+    { es: 'la biografía', en: 'the biography' },
+    { es: 'Entre las ventajas destaca…', en: 'Among the advantages, … stands out' },
+    { es: 'publicar', en: 'to publish' },
+    { es: 'el artículo', en: 'the article' }
+  ],
   sections: [
     { h: 'Tomar postura en público, por escrito', html: 'Las cartas al director y los artículos de opinión (R)(P para las cartas) exponen un punto de vista personal sobre un tema de actualidad, destinado a lectores desconocidos, no a un destinatario concreto.' },
     { h: 'El informe breve: la primera producción profesional', html: 'Un informe breve de carácter expositivo o argumentativo (ventajas y desventajas de una opción, razones a favor o en contra) es (P) — la primera vez que se pide producir un texto genuinamente profesional, no personal.' },
@@ -27690,6 +28518,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B2:756', 'generos_discursivos:B2:757'],
   title: 'Describir personas en B2: anclaje, aspectualización, puesta en relación',
   summary: 'A B2 description of a person runs a fixed three-step process — anclaje fixes who is being described, aspectualización details concrete traits, puesta en relación compares or evaluates — and the whole process can repeat twice, once objectively and once subjectively, producing a genuinely different text from the same person.',
+  keywords: [
+    { es: 'Me encontré con…', en: 'I ran into…' },
+    { es: 'aparentar', en: 'to look (a certain age)' },
+    { es: 'delgado como un esqueleto', en: 'thin as a rail' },
+    { es: 'parecer un palo', en: 'to look like a stick' },
+    { es: 'ser como…', en: 'to be like…' },
+    { es: 'una vieja amiga', en: 'an old friend' },
+    { es: 'acabar de', en: 'to have just' }
+  ],
   sections: [
     { h: 'El proceso prototípico: tres pasos', html: 'Anclaje fija de quién se habla (<i>Ángel es un chico celoso y posesivo</i>); aspectualización detalla rasgos concretos (<i>aparece con un pijama que le queda flojo...</i>); puesta en relación compara o evalúa (<i>Es como tener un vigilante fantasma</i>).' },
     { h: 'Objetivo vs. subjetivo: el mismo proceso, dos voces', html: 'El mismo proceso de tres pasos puede hacerse desde un punto de vista objetivo (describe sin juzgar) o subjetivo, con comparaciones que revelan una actitud: <i>Está delgada como un esqueleto... Parece un palo.</i>' },
@@ -27731,6 +28568,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B2:806', 'generos_discursivos:B2:807'],
   title: 'Describir objetos en B2: del tomate al desarrollo formal',
   summary: 'The same three-step process that describes a person also describes a tomato — fix what it is, detail its composition and variety, then relate it to something else — and a formal register can insert an expository sequence (etymology, origin) that a subjective description never bothers with.',
+  keywords: [
+    { es: 'Se trata de…', en: 'It is a…' },
+    { es: 'está fabricado con', en: 'it\'s made from' },
+    { es: 'sirve para', en: 'it\'s used for' },
+    { es: 'a diferencia de', en: 'unlike' },
+    { es: 'la característica', en: 'the feature' },
+    { es: 'la pieza', en: 'the item, the piece' },
+    { es: 'el aspecto', en: 'the appearance' }
+  ],
   sections: [
     { h: 'El proceso, aplicado a un objeto', html: 'Anclaje fija qué es (<i>El tomate es un alimento característico de las zonas cálidas...</i>); aspectualización detalla su composición (<i>compuesto por la piel, la pulpa y las semillas</i>); puesta en relación compara variedades (<i>puede ser redondo... o alargado...</i>).' },
     { h: 'Subjetivo: el objeto como protagonista de una anécdota', html: 'Una descripción subjetiva puede anclar el objeto en una situación personal (<i>Hay un plato característico del verano: la ensalada... el tomate es fundamental</i>) y desembocar en una narración real.' },
@@ -27772,6 +28618,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B2:852', 'generos_discursivos:B2:853'],
   title: 'Describir lugares en B2: de la planta a la anécdota',
   summary: 'Describing a place at B2 moves from a general impression, through a room-by-room tour, to a comparison with somewhere else entirely — and, told subjectively from childhood memory, that same tour can slide straight into a small narrative, the way a real memory does.',
+  keywords: [
+    { es: 'hallarse', en: 'to be located' },
+    { es: 'luminoso', en: 'bright' },
+    { es: 'espacioso', en: 'spacious' },
+    { es: 'en comparación con', en: 'compared to' },
+    { es: 'abuhardillado', en: 'attic (room)' },
+    { es: 'el techo', en: 'the ceiling' },
+    { es: 'la chabola', en: 'the shack' }
+  ],
   sections: [
     { h: 'El proceso, room by room', html: 'Anclaje da la impresión general (<i>La casa de mi familia resulta muy acogedora</i>); aspectualización recorre las partes (<i>se compone de dos pisos y un sótano...</i>); puesta en relación compara con otro lugar (<i>en comparación con mi casa, parece una chabola</i>).' },
     { h: 'Subjetivo: el lugar como escenario de un recuerdo', html: 'Anclado en la infancia (<i>Recuerdo aquella casa como un lugar mágico</i>), el recorrido puede detenerse en un solo rincón cargado de significado — el desván, no toda la casa — y desembocar en una anécdota real.' },
@@ -27813,6 +28668,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B2:904'],
   title: 'La macrofunción narrativa en B2: las cinco etapas del relato',
   summary: 'A well-formed B2 narrative moves through five fixed stages — situación inicial, complicación, acción, resolución, situación final — and can pause along the way to insert a description of a person or situation, or a whole line of reported dialogue in estilo indirecto.',
+  keywords: [
+    { es: 'Al despertar…', en: 'On waking up…' },
+    { es: 'así que', en: 'so' },
+    { es: 'Finalmente', en: 'In the end' },
+    { es: 'el susto', en: 'the fright, the scare' },
+    { es: 'el socorrista', en: 'the lifeguard' },
+    { es: 'acabar bien', en: 'to turn out fine' },
+    { es: 'resultar que', en: 'to turn out that' }
+  ],
   sections: [
     { h: 'Las cinco etapas', html: '<b>Situación inicial</b> sets the scene (<i>De niña solía ir siempre en verano a la playa...</i>); <b>complicación</b> introduces the problem (<i>De repente, la mujer se levantó asustada...</i>); <b>acción</b> is what the characters do about it; <b>resolución</b> settles it (<i>llamamos al socorrista...</i>); <b>situación final</b> closes the arc (<i>Finalmente todo acabó bien, solo fue un susto</i>).' },
     { h: 'Insertar una descripción', html: 'A narrative can pause mid-flow to describe a person or a situation in more detail (<i>Me di cuenta de que había una persona en el agua que, sin duda, tenía problemas...</i>) before returning to the action.' },
