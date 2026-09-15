@@ -407,6 +407,16 @@ window.STRAND_LESSONS = [
   title: 'Di lo mismo en cinco salas',
   canDo: 'say one thing five ways and know which room each belongs to',
   summary: 'This is the unit the whole band turns on. B2 is not more vocabulary — it is knowing that "Pues sí", "Desde luego", "Estoy completamente de acuerdo" and "Comparto su punto de vista" are four rungs of one ladder, and that picking the wrong rung is the commonest way an advanced learner still sounds off.',
+  keywords: [
+    { es: 'Le ruego que…', en: 'I beg you to… (very formal)' },
+    { es: 'Le agradecería que…', en: 'I\'d be grateful if you…' },
+    { es: '¿Te importaría…?', en: 'Would you mind…?' },
+    { es: '¿Puedes…?', en: 'Can you…?' },
+    { es: 'Oye, …', en: 'Hey, …' },
+    { es: 'el registro', en: 'the register (level of formality)' },
+    { es: 'formal / informal', en: 'formal / informal' },
+    { es: 'atenuar', en: 'to soften' }
+  ],
   sections: [
     { h: 'What to do', html: 'Take one position you actually hold. Express it five times: to a friend in a bar, to a colleague, in a meeting, in an email to someone senior, and in a letter to a newspaper. Same content, five registers.' },
     { h: 'What changes, and what does not', html: 'The facts do not move. What moves is how much of yourself you commit (<i>yo creo</i> → <i>cabría señalar</i>), how directly you address the other person, and whether you hedge before or after the claim. Write the five next to each other and the ladder becomes visible.' }
@@ -442,6 +452,15 @@ window.STRAND_LESSONS = [
   title: 'Construye un argumento completo',
   canDo: 'argue a case with evidence, a source, a counter-argument and a reservation',
   summary: 'A B1 opinion states a view and gives reasons. A B2 argument anticipates the objection, names where its evidence comes from, and concedes what it must — which is what makes it persuasive rather than merely clear.',
+  keywords: [
+    { es: 'Voy a defender que…', en: 'I\'m going to argue that…' },
+    { es: 'En primer lugar', en: 'In the first place' },
+    { es: 'Se podría objetar que…', en: 'One could object that…' },
+    { es: 'Sin embargo', en: 'However' },
+    { es: 'Por lo tanto', en: 'Therefore' },
+    { es: 'En conclusión', en: 'In conclusion' },
+    { es: 'matizar', en: 'to qualify' }
+  ],
   sections: [
     { h: 'What to do', html: '350 to 450 words on a contested question. Four moves: thesis, evidence with a source, the strongest counter-argument answered, and a reservation you genuinely hold.' },
     { h: 'The reservation is the B2 move', html: 'Ending with a qualification — <i>dicho esto</i>, <i>ahora bien</i>, <i>si bien es cierto que</i> — signals that you have thought past your own conclusion. A conclusion with no reservation reads as a leaflet.' }
@@ -477,6 +496,14 @@ window.STRAND_LESSONS = [
   title: 'Cuenta lo que no pasó',
   canDo: 'talk about what would have happened, and hedge about what probably did',
   summary: 'The compound subjunctives and the conjectural futures are one system: Spanish marks how sure you are inside the verb itself, which English does with separate words like "probably" and "must have".',
+  keywords: [
+    { es: 'Si hubiera…, habría…', en: 'If I had…, I would have…' },
+    { es: 'Ojalá hubiera…', en: 'I wish I had…' },
+    { es: 'Habría sido mejor…', en: 'It would have been better…' },
+    { es: 'De haberlo sabido…', en: 'Had I known…' },
+    { es: 'en aquel momento', en: 'at that moment' },
+    { es: 'arrepentirse de', en: 'to regret' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write about a decision that went wrong, or nearly did. Twelve to eighteen sentences covering what happened, what would have happened otherwise, and what you suspect was going on that you did not know at the time.' },
     { h: 'Guessing with a tense', html: '<i>Habrá salido</i> = he\'s probably left. <i>Habría salido</i> = he would have left. <i>No creo que haya salido</i> = I doubt he\'s left. Three different degrees of commitment, none needing an adverb.' }
@@ -511,6 +538,15 @@ window.STRAND_LESSONS = [
   title: 'Cuenta algo con la emoción medida',
   canDo: 'express emotion with precision rather than volume',
   summary: 'At B1 you could say you were angry. At B2 the skill is the difference between molesto, harto, indignado and de mal humor — four words the learner already half-knows, differing by intensity and by what caused them.',
+  keywords: [
+    { es: 'Me indigna que…', en: 'It outrages me that…' },
+    { es: 'Me da pena que…', en: 'It makes me sad that…' },
+    { es: 'Menos mal que…', en: 'Thank goodness that…' },
+    { es: 'Lo pasé fatal.', en: 'I had an awful time.' },
+    { es: 'Te entiendo.', en: 'I understand.' },
+    { es: 'sumamente', en: 'extremely' },
+    { es: 'medido', en: 'measured, restrained' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write about something that provoked a strong mixed reaction — relief and anger, pride and embarrassment. Fourteen to eighteen sentences, and no emotion word may be repeated.' },
     { h: 'Precision beats intensity', html: '<i>Me molesta</i> (mild, ongoing) · <i>me fastidia</i> (colloquial, irritated) · <i>estoy harto de</i> (fed up, accumulated) · <i>me indigna</i> (moral outrage). Reaching straight for the strongest is a B1 habit; choosing correctly is B2.' }
@@ -545,6 +581,15 @@ window.STRAND_LESSONS = [
   title: 'Resume y comenta una noticia',
   canDo: 'follow journalistic Spanish and say what you make of it',
   summary: 'News Spanish is where the B2 notion vocabulary earns itself: figures, proportions, rises and falls, sources, and the passive-ish se. None of it is exotic, and all of it is unreadable if you have not met it.',
+  keywords: [
+    { es: 'según', en: 'according to' },
+    { es: 'la fuente', en: 'the source' },
+    { es: 'el índice', en: 'the rate' },
+    { es: 'aumentar / disminuir', en: 'to rise / to fall' },
+    { es: 'cabe destacar', en: 'it\'s worth highlighting' },
+    { es: 'en conclusión', en: 'in conclusion' },
+    { es: 'el titular', en: 'the headline' }
+  ],
   sections: [
     { h: 'What to do', html: 'Find a real Spanish news item. Summarise it in six sentences without copying its phrases, then comment on it in eight more.' },
     { h: 'The moves to reuse', html: 'Quantities (<i>se ha duplicado</i>, <i>un tercio de</i>, <i>en torno a</i>), attribution (<i>según fuentes de</i>, <i>al parecer</i>), and distancing (<i>presuntamente</i>, <i>habría cobrado</i> — the conditional of unverified claim, which is everywhere in Spanish journalism).' }
@@ -2948,6 +2993,18 @@ window.STRAND_LESSONS = [
          'funciones:B2:258', 'funciones:B2:259', 'funciones:B2:260', 'funciones:B2:262'],
   title: 'Expresar acuerdo',
   summary: 'Agreeing is not one phrase but a scale. The words are all familiar; what changes with register is how much of yourself you commit and how formal the setting is. Picking the wrong rung is the commonest way an advanced learner still sounds off.',
+  keywords: [
+    { es: 'Pues sí.', en: 'Yeah, true. (casual)' },
+    { es: 'Desde luego.', en: 'Absolutely.' },
+    { es: 'Yo lo veo igual.', en: 'I see it the same way.' },
+    { es: 'Estoy completamente de acuerdo.', en: 'I completely agree.' },
+    { es: 'Comparto su punto de vista.', en: 'I share your point of view. (formal)' },
+    { es: 'Coincido plenamente.', en: 'I fully concur. (formal)' },
+    { es: 'En absoluto.', en: 'Not at all. (strong disagreement)' },
+    { es: 'Ni hablar.', en: 'No way.' },
+    { es: 'Yo no lo veo así.', en: 'I don\'t see it that way.' },
+    { es: 'matizar', en: 'to qualify, to nuance' }
+  ],
   sections: [
     { h: 'The idea', html: 'Spanish agreement runs from a grunt of assent (<i>Pues sí</i>) to an explicit alignment of viewpoints (<i>Comparto su punto de vista</i>). All of it is grammatically simple; the skill is choosing the rung that fits the room.' },
     { h: 'Agreeing with a negative', html: 'This is the trap. If the statement you are agreeing with is <b>negative</b>, you must switch <i>también</i> to <b>tampoco</b>: <i>—No me convence. —A mí tampoco.</i> Saying <i>a mí también</i> there reverses your meaning.' },
@@ -13355,6 +13412,17 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B1:701', 'generos_discursivos:B1:715'],
   title: 'La composición argumentativa (B2)',
   summary: 'A B2 composition adds two moves a B1 one never needs — contraargumento and refutación — because at this level defending a position means acknowledging the strongest objection to it BEFORE knocking it down, not just piling up your own reasons.',
+  keywords: [
+    { es: 'Voy a defender que…', en: 'I\'m going to argue that…' },
+    { es: 'por tres razones', en: 'for three reasons' },
+    { es: 'Se podría objetar que…', en: 'One could object that…' },
+    { es: 'Para terminar', en: 'To conclude' },
+    { es: 'superar', en: 'to outweigh, to exceed' },
+    { es: 'perjudicar', en: 'to harm' },
+    { es: 'el beneficio', en: 'the benefit' },
+    { es: 'el coste', en: 'the cost' },
+    { es: 'el pequeño comercio', en: 'small businesses' }
+  ],
   sections: [
     { h: 'A thesis, defended with structure', html: 'After title and contextualization, the composition anticipates its own shape (<i>Voy a defender que..., por tres razones</i>), states a clear <b>tesis</b>, then develops it through numbered arguments: <i>argumento 1.º, 2.º, 3.º</i>.' },
     { h: 'Contraargumento and refutación: the B2 addition', html: 'Where a B1 text just narrates or describes, this one must acknowledge the strongest objection to its own thesis (<i>contraargumento</i>) and then answer it (<i>refutación</i>) — conceding a real point before showing why the thesis still holds.' },
@@ -16410,6 +16478,16 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:342', 'gramatica:B2:343', 'gramatica:B2:344', 'gramatica:B2:345'],
   title: 'Adverbios evaluativos: un comentario sobre toda la frase',
   summary: 'Words like "desgraciadamente" and "necesariamente" do not describe an action — they pass judgement on the whole sentence, from outside it, and can move almost anywhere without changing what they mean.',
+  keywords: [
+    { es: 'afortunadamente', en: 'fortunately' },
+    { es: 'desgraciadamente', en: 'unfortunately' },
+    { es: 'lamentablemente', en: 'regrettably' },
+    { es: 'necesariamente', en: 'necessarily' },
+    { es: 'inteligentemente', en: 'cleverly' },
+    { es: 'generosamente', en: 'generously' },
+    { es: 'correctamente', en: 'correctly (how, not a comment)' },
+    { es: 'a tiempo', en: 'on time' }
+  ],
   sections: [
     { h: 'Necessity and obligation', html: '<i>Necesariamente, inevitablemente, forzosamente</i> comment that something is bound to be so: <i>Necesariamente tiene que ser el lunes.</i> They can open the sentence, sit mid-sentence, or close it — the meaning barely shifts.' },
     { h: 'Emotive judgement of the speaker', html: '<i>Afortunadamente, desgraciadamente, lamentablemente</i> tell you how the SPEAKER feels about the fact, not how the action was carried out: <i>Desgraciadamente no puedo hacer nada.</i>' },
@@ -16445,6 +16523,16 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:357', 'gramatica:B2:358', 'gramatica:B2:359'],
   title: 'Adverbios de enunciación: comentar sobre las propias palabras',
   summary: 'A small set of adverbs talk about the DISCOURSE itself rather than the world — they narrow down a claim, correct a slip, or wrap up what has been said. They are the connective tissue of a well-organised explanation.',
+  keywords: [
+    { es: 'concretamente', en: 'specifically' },
+    { es: 'precisamente', en: 'precisely' },
+    { es: 'exactamente', en: 'exactly' },
+    { es: 'resumidamente', en: 'in short' },
+    { es: 'en resumen', en: 'in summary' },
+    { es: 'casualmente', en: 'by coincidence' },
+    { es: 'francamente', en: 'frankly' },
+    { es: 'el presupuesto', en: 'the budget' }
+  ],
   sections: [
     { h: 'Narrowing down: concretamente, exactamente', html: 'These pinpoint exactly which part of what was just said matters: <i>Necesitamos ayuda, concretamente con la logística.</i> They zoom in rather than adding new information.' },
     { h: 'Correcting or clarifying: precisamente, casualmente', html: 'A speaker uses these to fine-tune or correct a previous statement on the fly: <i>Llegó, casualmente, el mismo día que yo</i> flags a coincidence worth noting inside the sentence itself.' },
@@ -16509,6 +16597,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:460', 'gramatica:B2:462', 'gramatica:B2:463', 'gramatica:B2:464', 'gramatica:B2:465'],
   title: 'El condicional compuesto: habría + participio',
   summary: 'The compound conditional does for the past what the simple conditional does for the present: guesses, unreal conditions and reported plans, but all placed one step further back — something that WOULD HAVE happened, not would happen.',
+  keywords: [
+    { es: 'habría + participio', en: 'would have (done)' },
+    { es: 'Yo habría ido.', en: 'I would have gone.' },
+    { es: 'Habría sido más fácil.', en: 'It would have been easier.' },
+    { es: 'Habrían salido hace una hora.', en: 'They must have left an hour ago. (a guess)' },
+    { es: 'Dijo que habría terminado.', en: 'He said he would have finished.' },
+    { es: 'revisar', en: 'to check over' },
+    { es: 'el jefe', en: 'the boss' }
+  ],
   sections: [
     { h: 'Form', html: '<i>Habría/habrías/habría/habríamos/habríais/habrían</i> + past participle. Fully regular from <i>haber</i> in the conditional, whatever the main verb.' },
     { h: 'A guess about the past', html: 'Just as the simple conditional guesses about the present (<i>serían las diez</i>), the compound form guesses about something already finished by a given point: <i>Habrían salido de casa</i> — "they must have already left".' },
@@ -16548,6 +16645,16 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:454', 'gramatica:B2:456', 'gramatica:B2:457', 'gramatica:B2:458'],
   title: 'El futuro perfecto: habré + participio',
   summary: 'Two unrelated-looking jobs share one form: marking that something will be finished before a future point, and guessing about something that has probably already happened. Both are "anteriority" — just anchored to a different moment.',
+  keywords: [
+    { es: 'habré + participio', en: 'will have (done)' },
+    { es: 'Para cuando llegues…', en: 'By the time you arrive…' },
+    { es: 'ya habré salido', en: 'I will have already left' },
+    { es: 'Habrá perdido el móvil.', en: 'He must have lost his phone. (a guess)' },
+    { es: 'A estas horas', en: 'By now' },
+    { es: 'aterrizar', en: 'to land' },
+    { es: 'la obra', en: 'the building work' },
+    { es: 'hacer la compra', en: 'to do the shopping' }
+  ],
   sections: [
     { h: 'Form', html: '<i>Habré/habrás/habrá/habremos/habréis/habrán</i> + past participle.' },
     { h: 'Finished before a future point', html: 'The core value: something will be OVER by the time another future event happens. <i>Cuando lleguemos, ya se <b>habrá ido</b>.</i> — his leaving precedes our arrival, both still in the future from now.' },
@@ -16582,6 +16689,15 @@ window.STRAND_LESSONS = [
          'gramatica:B2:499', 'gramatica:B2:500'],
   title: 'El imperfecto de subjuntivo: más allá del "si tuviera"',
   summary: 'B1 introduces "si tuviera" and stops there. B2 adds the register choice between -ra and -se, the "quisiera" of polite requests, doubt-adverbs that force it even outside a hypothesis, and its role standing in for the present subjunctive once a reported sentence is set in the past.',
+  keywords: [
+    { es: 'hablara / hablase', en: 'spoke — subjunctive' },
+    { es: 'Si tuviera…', en: 'If I had…' },
+    { es: 'Ojalá pudiera…', en: 'I wish I could…' },
+    { es: 'Me pidió que viniera.', en: 'He asked me to come.' },
+    { es: 'Como si fuera…', en: 'As if it were…' },
+    { es: 'Quisiera…', en: 'I would like… (very polite)' },
+    { es: 'aunque fuera', en: 'even if it were' }
+  ],
   sections: [
     { h: 'Two forms, one register split', html: 'Every verb has both a <i>-ra</i> form (<i>hablara, tuviera</i>) and a <i>-se</i> form (<i>hablase, tuviese</i>), fully interchangeable in meaning. <i>-ra</i> dominates in speech everywhere; <i>-se</i> reads as more formal or literary, common in writing.' },
     { h: 'Imperfecto de cortesía', html: 'A small set of verbs — above all <i>querer</i> — use the imperfect subjunctive to soften a request into pure politeness, with no hypothesis at all: <i><b>Quisiera</b> ver ese abrigo</i> is softer than <i>quiero</i>, and gentler even than the conditional <i>querría</i>.' },
@@ -16618,6 +16734,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:502', 'gramatica:B2:505', 'gramatica:B2:506'],
   title: 'El pretérito perfecto de subjuntivo: haya + participio',
   summary: 'The subjunctive mirror of "he hablado": an action finished but still relevant now, whenever the sentence needs the subjunctive mood. Its other job is quietly replacing the present subjunctive in time clauses that point at a future completion.',
+  keywords: [
+    { es: 'haya + participio', en: 'has (done) — subjunctive' },
+    { es: 'No creo que haya terminado.', en: 'I don\'t think he\'s finished.' },
+    { es: 'Cuando hayas terminado…', en: 'Once you\'ve finished…' },
+    { es: 'Espero que hayas dormido bien.', en: 'I hope you slept well.' },
+    { es: 'Dudo que se haya dado cuenta.', en: 'I doubt he\'s noticed.' },
+    { es: 'en cuanto', en: 'as soon as' },
+    { es: 'darse cuenta', en: 'to notice, to realise' }
+  ],
   sections: [
     { h: 'Form', html: '<i>Haya/hayas/haya/hayamos/hayáis/hayan</i> + past participle — the exact subjunctive counterpart of <i>he/has/ha… hablado</i>.' },
     { h: 'The subjunctive version of "he terminado"', html: 'Wherever the indicative would use the present perfect for a finished action still relevant now, a subjunctive trigger calls for this instead: <i>No es verdad que <b>haya escrito</b> esa carta</i> — corresponds to the indicative <i>ha escrito</i>.' },
@@ -16650,6 +16775,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B2:508', 'gramatica:B2:510', 'gramatica:B2:511'],
   title: 'El pretérito pluscuamperfecto de subjuntivo: hubiera/hubiese + participio',
   summary: 'The deepest past the subjunctive reaches: something that had already happened before another past moment, whenever the sentence needs the subjunctive mood rather than the indicative "había hablado".',
+  keywords: [
+    { es: 'hubiera / hubiese + participio', en: 'had (done) — subjunctive' },
+    { es: 'Si hubiera llegado antes…', en: 'If I had arrived earlier…' },
+    { es: 'Ojalá hubiera podido.', en: 'I wish I had been able to.' },
+    { es: 'No sabía que hubieras llegado.', en: 'I didn\'t know you had arrived.' },
+    { es: 'avisar', en: 'to give notice, to let someone know' },
+    { es: 'aprobar', en: 'to pass' },
+    { es: 'a tiempo', en: 'in time' }
+  ],
   sections: [
     { h: 'Form', html: '<i>Hubiera/hubieras/hubiera/hubiéramos/hubierais/hubieran</i> + past participle — or, equally correct, the <i>-se</i> set: <i>hubiese, hubieses…</i>.' },
     { h: 'The subjunctive mirror of "había hablado"', html: 'Anywhere a subjunctive trigger governs a clause that would otherwise need the pluperfect indicative, this is the form: <i>Dudaba que <b>hubiera terminado</b> a tiempo</i> — corresponds to the indicative <i>había terminado</i>.' },
@@ -16990,6 +17124,15 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B2:683', 'nociones_generales:B2:684', 'nociones_generales:B2:685', 'nociones_generales:B2:686'],
   title: 'Permanencia: estable, fijo, sobrevivir',
   summary: 'Talking about what LASTS — a job, a home, a relationship — draws on a small, high-value set of adjectives and verbs that come up constantly in real conversations about stability and endurance.',
+  keywords: [
+    { es: 'estable', en: 'stable' },
+    { es: 'fijo', en: 'fixed, permanent' },
+    { es: 'sobrevivir', en: 'to survive' },
+    { es: 'mantenerse', en: 'to keep, to stay' },
+    { es: 'duradero', en: 'lasting' },
+    { es: 'permanecer', en: 'to remain' },
+    { es: 'temporal', en: 'temporary' }
+  ],
   sections: [
     { h: 'estabilidad and its adjectives', html: '<b>Estabilidad</b> is the noun; <b>permanente, estable, fijo</b> are near-synonyms as adjectives, each with its own favourite collocation: <i>un trabajo estable</i>, <i>una residencia fija</i>, <i>un contrato permanente</i>.' },
     { h: 'inmortal: the extreme case', html: '<b>Inmortal</b> pushes permanence to its limit — not just lasting a long time, but never ending at all, used both literally (myth, religion) and hyperbolically (fame, a memory).' },
@@ -17159,6 +17302,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B2:931', 'nociones_generales:B2:932', 'nociones_generales:B2:933'],
   title: 'Adecuación: adaptarse, apropiado',
   summary: 'A compact set for saying that something fits its purpose or its context — a period of adjustment, an appropriate choice, the ongoing process of adapting to something new.',
+  keywords: [
+    { es: 'adecuado', en: 'appropriate, suitable' },
+    { es: 'apropiado', en: 'appropriate' },
+    { es: 'adaptarse a', en: 'to adapt to' },
+    { es: 'encajar', en: 'to fit in' },
+    { es: 'conveniente', en: 'advisable' },
+    { es: 'fuera de lugar', en: 'out of place' },
+    { es: 'el contexto', en: 'the context' },
+    { es: 'según el caso', en: 'depending on the case' }
+  ],
   sections: [
     { h: 'adaptación: the process', html: '<b>Adaptación</b> names the process of adjusting, often with a time frame attached: <i>un periodo de adaptación</i> is the stretch during which fit is not yet complete.' },
     { h: 'apropiado: judging the fit', html: '<b>Apropiado</b> judges whether something suits a specific context — clothing for an occasion, a word for a register, a tool for a job.' },
@@ -17197,6 +17350,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:964', 'nociones_generales:B2:965'],
   title: 'Interés: motivación, aburrir, centro de interés',
   summary: 'The vocabulary of engagement and its opposite — what grabs attention, what a class or a book is built around, and the flat verb that says something simply fails to hold anyone\'s attention.',
+  keywords: [
+    { es: 'la motivación', en: 'the motivation' },
+    { es: 'motivar', en: 'to motivate' },
+    { es: 'aburrir', en: 'to bore' },
+    { es: 'el centro de interés', en: 'the focus of interest' },
+    { es: 'interesarse por', en: 'to take an interest in' },
+    { es: 'despertar interés', en: 'to arouse interest' },
+    { es: 'indiferente', en: 'indifferent' }
+  ],
   sections: [
     { h: 'aburrimiento vs motivación', html: 'The two poles of this notion: <b>aburrimiento</b> (boredom) and <b>motivación</b> (the drive that keeps someone engaged) name opposite states, not degrees of the same thing.' },
     { h: 'sorprendente, entretenido', html: '<b>Sorprendente</b> holds attention through surprise; <b>entretenido</b> holds it through enjoyment — a film can be one, the other, or both.' },
@@ -18036,6 +18198,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:366', 'funciones:B2:367', 'funciones:B2:368', 'funciones:B2:369'],
   title: 'Estoy absolutamente seguro/convencido: certeza total',
   summary: 'Reinforcing certainty is not just about adding "muy" — Spanish has specific intensifiers (absolutamente, firmemente, del todo) that pair with seguro/convencido and a family of complement structures for exactly what you are certain about.',
+  keywords: [
+    { es: 'Estoy seguro de que…', en: 'I\'m sure that…' },
+    { es: 'Estoy absolutamente convencido de que…', en: 'I\'m absolutely convinced that…' },
+    { es: 'Estoy segurísimo.', en: 'I\'m quite certain.' },
+    { es: 'del todo', en: 'completely' },
+    { es: 'firmemente', en: 'firmly' },
+    { es: 'No me cabe duda.', en: 'I have no doubt.' },
+    { es: 'la decisión', en: 'the decision' },
+    { es: 'tener razón', en: 'to be right' }
+  ],
   sections: [
     { h: 'The intensifiers', html: '<i>Absolutamente, firmemente, del todo</i> each intensify <i>seguro</i> or <i>convencido</i> — <i>firmemente</i> leans toward a conviction held despite pressure, <i>del todo</i> toward completeness, <i>absolutamente</i> is the most general and strongest.' },
     { h: 'What follows: noun, infinitive, or que-clause', html: 'The certainty can attach to a noun (<i>seguro de su amor</i>), an infinitive when the subject is the same (<i>convencidos de ganar</i>), or a full clause (<i>convencido de que…</i>).' },
@@ -18531,6 +18703,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:824', 'funciones:B2:825', 'funciones:B2:826', 'funciones:B2:827'],
   title: 'Expresar alivio: ¡menos mal!',
   summary: 'Relief has a small set of exclamations, from the everyday "menos mal" to the more explicitly religious "gracias a Dios" — used even by non-religious speakers as a fixed expression.',
+  keywords: [
+    { es: '¡Menos mal!', en: 'Thank goodness!' },
+    { es: '¡Qué alivio!', en: 'What a relief!' },
+    { es: 'Por suerte', en: 'Luckily' },
+    { es: 'Ya ha pasado.', en: 'It\'s over now.' },
+    { es: 'Espero que…', en: 'I hope that…' },
+    { es: 'Qué se le va a hacer.', en: 'Nothing to be done about it.' },
+    { es: 'resignarse', en: 'to resign oneself' },
+    { es: 'el alivio', en: 'the relief' }
+  ],
   sections: [
     { h: '¡Qué alivio!', html: 'Names the feeling directly, works in both speech and writing: <i>¡Qué alivio saber que llegaron bien!</i>' },
     { h: '¡Menos mal!', html: 'The most everyday, colloquial relief exclamation — literally "less bad", used constantly in speech.' },
@@ -21720,6 +21902,16 @@ window.STRAND_LESSONS = [
          'gramatica:B2:686', 'gramatica:B2:687', 'gramatica:B2:688'],
   title: 'Subordinadas sustantivas: el verbo principal decide el modo',
   summary: 'The single biggest key to mood in a noun clause is the SEMANTIC CLASS of the main verb: verbs presenting an event as fact take the indicative and a postponed subject, verbs of influence or desire always pull the subjunctive, and negating a verb of saying can flip the mood entirely.',
+  keywords: [
+    { es: 'Creo que viene.', en: 'I think he\'s coming. (indicative)' },
+    { es: 'No creo que venga.', en: 'I don\'t think he\'s coming. (subjunctive)' },
+    { es: 'Es evidente que…', en: 'It\'s obvious that… (+ indicative)' },
+    { es: 'Es posible que…', en: 'It\'s possible that… (+ subjunctive)' },
+    { es: 'Me alegra que…', en: 'I\'m glad that… (+ subjunctive)' },
+    { es: 'Dice que viene.', en: 'He says he\'s coming.' },
+    { es: 'Dice que venga.', en: 'He says I should come.' },
+    { es: 'el modo', en: 'the mood (indicative or subjunctive)' }
+  ],
   sections: [
     { h: 'Impersonal verbs of existence: postponed subject, indicative', html: '<i>Resultar, faltar, bastar, constar</i> as impersonal predicates take a postponed subject clause in the indicative: <i>Resulta que encontramos el dinero.</i> Some, like <i>faltar</i>, alternate with an infinitive: <i>Falta que terminemos esto</i> / <i>Falta terminar esto</i>.' },
     { h: 'Negating a verb of saying can flip the mood', html: '<i>Decir/preguntar</i> negated allows either mood, with a meaning difference: <i>No me dijo que Luis hubiera venido</i> (subjunctive — casts doubt on whether it happened) vs <i>No me dijo que Luis había venido</i> (indicative — the fact is not in question, only whether he told you).' },
@@ -21800,6 +21992,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:11', 'nociones_generales:B2:12', 'nociones_generales:B2:13'],
   title: 'Existencia e inexistencia: crear, eliminar, provocar',
   summary: 'B1 said something existed or not; B2 supplies the VERBS for making it start or stop existing — establishing a rule, eliminating a trace, occasioning a problem — the vocabulary a report or an explanation actually needs.',
+  keywords: [
+    { es: 'crear', en: 'to create' },
+    { es: 'eliminar', en: 'to eliminate' },
+    { es: 'provocar', en: 'to cause, to bring about' },
+    { es: 'surgir', en: 'to arise' },
+    { es: 'desaparecer', en: 'to disappear' },
+    { es: 'existir', en: 'to exist' },
+    { es: 'la aparición', en: 'the appearance, the emergence' }
+  ],
   sections: [
     { h: 'Bringing something into existence', html: '<i>Establecer una norma</i>, <i>montar un negocio</i>, <i>dar a luz</i> — each names a specific way of making something exist, not a generic "create".' },
     { h: 'Making something stop existing', html: '<i>Eliminar, borrar</i> both erase, with <i>borrar</i> more concrete/physical (a mark, a trace) and <i>eliminar</i> broader.' },
@@ -21925,6 +22126,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:59', 'nociones_generales:B2:60', 'nociones_generales:B2:61'],
   title: 'Cualidad general: propiedades, categorías, composición',
   summary: 'Describing WHAT something is made of, what category it belongs to, and what its defining traits are needs its own toolkit — "consistir en" is not "ser", and "caracterizarse por" names a defining trait rather than just stating a fact.',
+  keywords: [
+    { es: 'la propiedad', en: 'the property' },
+    { es: 'la categoría', en: 'the category' },
+    { es: 'la composición', en: 'the composition' },
+    { es: 'estar compuesto de', en: 'to be made up of' },
+    { es: 'pertenecer a', en: 'to belong to' },
+    { es: 'la característica', en: 'the characteristic' },
+    { es: 'clasificar', en: 'to classify' }
+  ],
   sections: [
     { h: 'Category and property', html: '<i>Categoría, especie, familia</i> place something within a classification; <i>propiedad, característica</i> name one of its individual traits.' },
     { h: 'Belonging and composition', html: '<i>Pertenecer a, formar parte de</i> place something inside a group; <i>consistir en, componerse de</i> describe what it is made up of; <i>caracterizarse por</i> names what defines it.' },
@@ -21965,6 +22175,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B2:66', 'nociones_generales:B2:67', 'nociones_generales:B2:68', 'nociones_generales:B2:69'],
   title: 'Acontecimiento: ocurrir, casualidad, suspender',
   summary: 'A single family of verbs describes something happening — ocurrir, suceder, producirse — with almost no difference in meaning, while casualidad names something that happens by CHANCE, not by anyone\'s design.',
+  keywords: [
+    { es: 'ocurrir', en: 'to happen' },
+    { es: 'tener lugar', en: 'to take place' },
+    { es: 'la casualidad', en: 'the coincidence' },
+    { es: 'por casualidad', en: 'by chance' },
+    { es: 'suspender', en: 'to call off' },
+    { es: 'aplazar', en: 'to postpone' },
+    { es: 'el acontecimiento', en: 'the event' },
+    { es: 'desarrollarse', en: 'to unfold' }
+  ],
   sections: [
     { h: 'Happening: near-synonyms', html: '<i>Ocurrir, suceder, producirse</i> all mean "to happen" and are largely interchangeable — <i>producirse</i> leans slightly more formal/written, common in news reporting.' },
     { h: 'By chance, not design', html: '<i>Casualidad, coincidencia</i> name an event that happened without anyone planning it: <i>Fue una casualidad que nos encontráramos.</i>' },
@@ -22006,6 +22226,17 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:85', 'nociones_generales:B2:87', 'nociones_generales:B2:90', 'nociones_generales:B2:91'],
   title: 'Certeza e incertidumbre: el vocabulario, más allá del modo',
   summary: 'B1 taught which possibility words trigger the subjunctive; B2 adds the surrounding VOCABULARY of confidence and doubt — nouns like certeza and duda, being convinced, and the colloquial "igual" as one more indicative-taking way to hedge.',
+  keywords: [
+    { es: 'sin duda', en: 'no doubt' },
+    { es: 'No tengo ninguna duda.', en: 'I have no doubt at all.' },
+    { es: 'dudar', en: 'to doubt, to hesitate' },
+    { es: 'dudoso', en: 'doubtful, questionable' },
+    { es: 'igual…', en: 'maybe… (casual)' },
+    { es: 'Existe la posibilidad de que…', en: 'There\'s a possibility that…' },
+    { es: 'estar convencido de', en: 'to be convinced of' },
+    { es: 'el testigo', en: 'the witness' },
+    { es: 'la procedencia', en: 'the origin, the background' }
+  ],
   sections: [
     { h: 'Nouns of confidence and doubt', html: '<i>Certeza, evidencia</i> (certainty) sit opposite <i>indecisión, incertidumbre</i> (indecision, uncertainty); <i>probabilidad, hipótesis</i> name a reasoned guess.' },
     { h: 'Being convinced, confirming', html: '<i>Estar convencido</i> (to be convinced), <i>asegurar(se), confirmar</i> (to make sure, confirm) actively establish certainty.' },
@@ -22048,6 +22279,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:101', 'nociones_generales:B2:102', 'nociones_generales:B2:103', 'nociones_generales:B2:104'],
   title: 'Realidad y ficción: inventar, simular, cumplirse',
   summary: 'The vocabulary for what is real vs invented, plus the specific verb for a dream or wish actually coming true — "cumplirse" — which names the moment fiction crosses over into fact.',
+  keywords: [
+    { es: 'inventar', en: 'to invent, to make up' },
+    { es: 'simular', en: 'to simulate, to feign' },
+    { es: 'cumplirse', en: 'to come true' },
+    { es: 'real', en: 'real' },
+    { es: 'ficticio', en: 'fictitious' },
+    { es: 'fingir', en: 'to pretend' },
+    { es: 'la realidad', en: 'reality' },
+    { es: 'resultar ser', en: 'to turn out to be' }
+  ],
   sections: [
     { h: 'Naming the unreal', html: '<i>Invención, fantasía</i> (a made-up thing); <i>irreal, ficticio, surrealista</i> (adjectives for something not real); <i>simulación</i> (a deliberate fake enactment).' },
     { h: 'The material/abstract axis', html: '<i>(In)material, concreto, abstracto</i> sort things by whether they can be touched or only thought.' },
@@ -22088,6 +22329,15 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B2:111', 'nociones_generales:B2:112', 'nociones_generales:B2:113', 'nociones_generales:B2:114'],
   title: 'Necesidad y azar: imprescindible, inevitablemente, por casualidad',
   summary: 'A small but sharp cluster: the strongest word for "needed" (imprescindible), the adverb for what could not have been avoided (inevitablemente), and the fixed phrase for something happening by pure chance (por casualidad).',
+  keywords: [
+    { es: 'imprescindible', en: 'essential' },
+    { es: 'inevitablemente', en: 'inevitably' },
+    { es: 'por casualidad', en: 'by chance' },
+    { es: 'el azar', en: 'chance' },
+    { es: 'depender de', en: 'to depend on' },
+    { es: 'hacer falta', en: 'to be needed' },
+    { es: 'prescindir de', en: 'to do without' }
+  ],
   sections: [
     { h: 'The strongest "necessary"', html: '<i>Imprescindible, esencial, fundamental</i> all rank above plain <i>necesario</i> — nothing works without them.' },
     { h: 'What could not be avoided', html: '<i>Inevitablemente</i> marks an outcome as unavoidable, given the circumstances.' },
@@ -22128,6 +22378,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:123', 'nociones_generales:B2:124', 'nociones_generales:B2:126', 'nociones_generales:B2:127'],
   title: 'Generalidad y especificidad: concretar, particular, en general',
   summary: 'Moving between a broad claim and a specific instance needs its own vocabulary — verbs for narrowing down (concretar) or widening out (generalizar), and a family of adjectives (particular, universal, individual) that mark exactly how wide the claim is meant to be.',
+  keywords: [
+    { es: 'en general', en: 'in general' },
+    { es: 'en concreto', en: 'specifically' },
+    { es: 'concretar', en: 'to pin down, to specify' },
+    { es: 'particular', en: 'particular' },
+    { es: 'por lo general', en: 'generally' },
+    { es: 'en términos generales', en: 'broadly speaking' },
+    { es: 'el caso concreto', en: 'the specific case' }
+  ],
   sections: [
     { h: 'Adjectives marking scope', html: '<i>Particular, determinado, concreto</i> narrow to one case; <i>general, universal, total</i> widen to everyone/everything; <i>individual, personal</i> mark something as belonging to just one person.' },
     { h: 'Verbs for narrowing and widening', html: '<i>Concretar</i> (to specify, pin down); <i>generalizar</i> (to broaden a claim, sometimes with a negative "don\'t overgeneralize" undertone).' },
@@ -22171,6 +22430,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B2:134', 'nociones_generales:B2:135', 'nociones_generales:B2:136', 'nociones_generales:B2:137', 'nociones_generales:B2:138'],
   title: 'Cantidad numérica: cifras, índices, "número + de"',
   summary: 'Statistics and reports need their own precision vocabulary — a rate is an índice, not a número, and a cardinal number followed by "de" picks a subset out of a larger group rather than counting the group itself.',
+  keywords: [
+    { es: 'la cifra', en: 'the figure' },
+    { es: 'el índice', en: 'the rate, the index' },
+    { es: 'el porcentaje', en: 'the percentage' },
+    { es: 'dos de mis hermanos', en: 'two of my brothers' },
+    { es: 'par / impar', en: 'even / odd' },
+    { es: 'calcular', en: 'to calculate' },
+    { es: 'el total', en: 'the total' },
+    { es: 'el desempleo', en: 'unemployment' }
+  ],
   sections: [
     { h: 'Figures, rates, percentages', html: '<i>Cifra</i> (a figure), <i>millar</i> (a thousand, used loosely for "thousands"), <i>índice, porcentaje</i> (rate, percentage) are the vocabulary of statistics and reporting.' },
     { h: 'Even/odd/decimal numbers', html: '<i>Número par/impar/decimal</i> classify a number\'s type.' },
@@ -22211,6 +22480,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:154', 'nociones_generales:B2:155', 'nociones_generales:B2:156'],
   title: 'Cantidad relativa: aproximar sin comprometerse',
   summary: 'A whole set of phrases lets a speaker give a quantity without pinning down an exact number — "como 250 gramos", "alrededor de cien", "entre treinta y cuarenta mil" — each hedging in a slightly different way.',
+  keywords: [
+    { es: 'unos / unas', en: 'about, around' },
+    { es: 'aproximadamente', en: 'approximately' },
+    { es: 'en torno a', en: 'around' },
+    { es: 'más o menos', en: 'roughly' },
+    { es: 'apenas', en: 'barely' },
+    { es: 'nada menos que', en: 'no less than' },
+    { es: 'una cifra aproximada', en: 'a rough figure' }
+  ],
   sections: [
     { h: 'Collective nouns for groups', html: '<i>Asociación, conjunto, banda, ejército, tribu</i> each name a specific kind of group, not a generic "group of people".' },
     { h: 'Approximating a number', html: '<i>Como + [cardinal]</i> (colloquial, "like 250 grams"), <i>alrededor de</i> (neutral, "around"), <i>entre X y Y</i> (a range) all approximate without full commitment.' },
@@ -22252,6 +22530,18 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:164', 'nociones_generales:B2:165'],
   title: 'Aumento y disminución: crecer, duplicarse, cada vez más',
   summary: 'The vocabulary of change over time that economics and news reporting run on — nouns for the change itself, verbs for it happening, and two grammatical patterns ("X veces más" and "cada vez más") for describing a multiplying or steadily progressing trend.',
+  keywords: [
+    { es: 'crecer', en: 'to grow' },
+    { es: 'aumentar', en: 'to increase' },
+    { es: 'disminuir', en: 'to decrease' },
+    { es: 'caer', en: 'to fall' },
+    { es: 'duplicarse', en: 'to double' },
+    { es: 'cinco veces más', en: 'five times more' },
+    { es: 'cada vez más', en: 'more and more' },
+    { es: 'cada vez menos', en: 'fewer and fewer' },
+    { es: 'la rebaja', en: 'the discount' },
+    { es: 'el crecimiento', en: 'the growth' }
+  ],
   sections: [
     { h: 'Naming the change', html: '<i>Aumento, disminución, crecimiento</i> name the change as a noun; <i>rebaja</i> specifically names a price reduction.' },
     { h: 'The change as a verb', html: '<i>Crecer, caer</i> (to grow, to fall) describe the movement directly; <i>duplicarse, triplicarse</i> (to double, to triple) name a specific multiple.' },
@@ -22293,6 +22583,17 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:175', 'nociones_generales:B2:176'],
   title: 'Proporción: partir, repartir, la sexta parte',
   summary: 'Dividing something up needs a precise verb for the ACT of splitting (partir, dividir) separate from the verb for handing out the resulting shares (repartir, distribuir) — and ordinal fractions (la sexta parte) name a share the way "tercios" and "cuartos" cannot always cover.',
+  keywords: [
+    { es: 'partir', en: 'to cut, to split' },
+    { es: 'repartir', en: 'to share out, to distribute' },
+    { es: 'la sexta parte', en: 'a sixth' },
+    { es: 'dos tercios', en: 'two thirds' },
+    { es: 'la mitad', en: 'half' },
+    { es: 'la porción', en: 'the portion' },
+    { es: 'dividir', en: 'to divide' },
+    { es: 'el reparto', en: 'the distribution' },
+    { es: 'la herencia', en: 'the inheritance' }
+  ],
   sections: [
     { h: 'Splitting vs distributing', html: '<i>Partir, dividir</i> describe the act of splitting something into pieces; <i>repartir, distribuir</i> describe handing those pieces out to different recipients — a different, later step.' },
     { h: 'Ordinal fractions', html: '<i>[ordinal] + parte de</i> names any fraction: <i>la sexta parte de los habitantes</i> ("a sixth of the inhabitants"), useful beyond the fixed words for halves, thirds and quarters.' },
@@ -22334,6 +22635,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:185', 'nociones_generales:B2:186', 'nociones_generales:B2:187'],
   title: 'Grado: intensificadores más allá de "muy"',
   summary: 'B2 retires plain "muy" for a whole family of intensifiers graded by strength and flavor — realmente for genuine emphasis, totalmente/completamente for absolutes, and the colloquial "super-" prefix that turns almost any adjective into an intensified one.',
+  keywords: [
+    { es: 'sumamente', en: 'extremely' },
+    { es: 'enormemente', en: 'enormously' },
+    { es: 'profundamente', en: 'deeply' },
+    { es: 'absolutamente', en: 'absolutely' },
+    { es: 'del todo', en: 'entirely' },
+    { es: 'apenas', en: 'hardly' },
+    { es: 'en exceso', en: 'excessively' },
+    { es: 'ligeramente', en: 'slightly' }
+  ],
   sections: [
     { h: 'Genuine emphasis: realmente, increíblemente', html: 'These intensify with a sense of "genuinely, remarkably": <i>Fue realmente divertido</i>, <i>Es increíblemente sencillo</i>.' },
     { h: 'Absolutes: totalmente, completamente, absolutamente', html: 'These push to the extreme, no partial reading possible: <i>Es totalmente falso</i>, <i>Estoy absolutamente desesperada</i>.' },
@@ -22675,6 +22986,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:437', 'nociones_generales:B2:438', 'nociones_generales:B2:442', 'nociones_generales:B2:443', 'nociones_generales:B2:446'],
   title: 'Referencias temporales: dedicar tiempo, a mediados de, hacia',
   summary: 'A cluster of fixed time phrases that a beginner reaches for a workaround to say — "a mediados de semana", "a última hora" — plus idioms built around the word "tiempo" itself, where "dar tiempo" and "dedicar tiempo" are two entirely different relationships to the same noun.',
+  keywords: [
+    { es: 'dedicar tiempo a', en: 'to devote time to' },
+    { es: 'a mediados de', en: 'in the middle of (a month, year)' },
+    { es: 'a principios de', en: 'at the beginning of' },
+    { es: 'a finales de', en: 'at the end of' },
+    { es: 'hacia', en: 'towards, around' },
+    { es: 'a lo largo de', en: 'throughout' },
+    { es: 'de momento', en: 'for now' }
+  ],
   sections: [
     { h: 'Idioms with "tiempo"', html: '<i>Dedicar tiempo</i> (to devote time) has a subject choosing to spend it; <i>dar tiempo</i> is impersonal, about whether enough time exists: <i>No me da tiempo de terminar esto.</i> <i>Perder/aprovechar el tiempo</i> judge how well time was used.' },
     { h: 'Dividing up a period', html: '<i>A principios/a mediados/a finales de</i> + a period (week, month, year) place something at its start, middle or end.' },
@@ -22718,6 +23038,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:496', 'nociones_generales:B2:501', 'nociones_generales:B2:504'],
   title: 'Situar en el tiempo: llevar sin, antiguamente, a corto/largo plazo',
   summary: 'B2\'s standout construction is "llevar + time + sin + infinitivo" — a uniquely Spanish way of measuring how long something has NOT happened — alongside the vocabulary for placing something confidently in past decades or future timeframes.',
+  keywords: [
+    { es: 'llevar sin', en: 'to have gone without' },
+    { es: 'antiguamente', en: 'in the old days' },
+    { es: 'a corto plazo', en: 'in the short term' },
+    { es: 'a largo plazo', en: 'in the long term' },
+    { es: 'en la actualidad', en: 'nowadays' },
+    { es: 'hasta la fecha', en: 'to date' },
+    { es: 'desde entonces', en: 'since then' }
+  ],
   sections: [
     { h: 'Llevar sin + infinitivo: measuring an absence', html: '<i>Llevo tres semanas sin fumar</i> measures how long you have NOT done something, the mirror image of <i>llevar + gerundio</i> for an ongoing action.' },
     { h: 'Naming decades and eras', html: '<i>Los años veinte, los ochenta</i> name decades directly; <i>antiguamente</i> and <i>de niño/de joven</i> place a claim in a distant or personal past.' },
@@ -23188,6 +23517,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:901', 'nociones_generales:B2:902', 'nociones_generales:B2:903'],
   title: 'Evaluación general: salirle/irle algo a alguien, valer la pena',
   summary: '"Salirle/irle algo a alguien" evaluates how something turned out for a specific person — a job interview, an exam — using the same grammatical shape as gustar, and "valer la pena" asks whether the effort was worth the result, a distinct question from simply "is it good".',
+  keywords: [
+    { es: 'valer la pena', en: 'to be worth it' },
+    { es: 'salirle bien a alguien', en: 'to turn out well for someone' },
+    { es: 'irle bien a alguien', en: 'to go well for someone' },
+    { es: 'merecer', en: 'to deserve' },
+    { es: 'resultar', en: 'to turn out' },
+    { es: 'el balance', en: 'the overall assessment' },
+    { es: 'en general', en: 'on the whole' }
+  ],
   sections: [
     { h: 'Salirle/irle bien/mal a alguien', html: 'Both describe how something turned out FOR a person, grammatically like <i>gustar</i>: <i>Les ha ido muy bien el examen</i> ("the exam went well for them").' },
     { h: 'Valer la pena: worth the effort', html: 'Distinct from "is it good" — <i>valer la pena</i> asks whether the effort/cost was justified by the result: <i>No vale la pena discutir por esto.</i>' },
@@ -23230,6 +23568,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:916', 'nociones_generales:B2:917', 'nociones_generales:B2:918'],
   title: 'Valor y precio: invertir, estar en oferta, ganar/perder valor',
   summary: '"Gastar" and "invertir" both mean paying money, but only one expects a return — calling a purchase an "inversión" makes an implicit claim that it will pay off, which is exactly why advertisers reach for that word instead of the neutral "gasto".',
+  keywords: [
+    { es: 'invertir', en: 'to invest' },
+    { es: 'estar en oferta', en: 'to be on offer' },
+    { es: 'ganar valor', en: 'to gain value' },
+    { es: 'perder valor', en: 'to lose value' },
+    { es: 'el coste', en: 'the cost' },
+    { es: 'rentable', en: 'profitable' },
+    { es: 'la inversión', en: 'the investment' },
+    { es: 'salir caro', en: 'to work out expensive' }
+  ],
   sections: [
     { h: 'Gasto vs inversión', html: '<i>Gasto</i> is neutral spending; <i>inversión</i> implies the money is expected to generate a return — calling a purchase an <i>inversión</i> is itself a persuasive move.' },
     { h: 'A price changing', html: '<i>Aumentar/disminuir el precio</i>, <i>rebajado</i> (discounted), <i>estar en/de oferta</i> (on sale) track a price moving.' },
@@ -23271,6 +23619,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:953', 'nociones_generales:B2:954', 'nociones_generales:B2:956', 'nociones_generales:B2:958'],
   title: 'Corrección y precisión: fallo, exacto, verlo claro',
   summary: 'Two closely related evaluative clusters: whether something is right or has an error (corrección), and whether it is stated with enough detail to be useful (precisión) — "exacto" makes a stronger claim than "correcto", promising no margin of error at all.',
+  keywords: [
+    { es: 'exacto', en: 'exact' },
+    { es: 'preciso', en: 'precise' },
+    { es: 'el fallo', en: 'the mistake, the flaw' },
+    { es: 'equivocarse', en: 'to be wrong' },
+    { es: 'corregir', en: 'to correct' },
+    { es: 'verlo claro', en: 'to see it clearly' },
+    { es: 'en concreto', en: 'specifically' },
+    { es: 'aproximado', en: 'approximate' }
+  ],
   sections: [
     { h: 'Naming an error', html: '<i>Falta, fallo, equivocación</i> each name a mistake, with <i>fallo</i> especially common for a technical or system failure.' },
     { h: 'Imperfecto vs equivocado', html: '<i>Imperfecto</i> describes something with room for improvement, not necessarily wrong; <i>equivocado</i> claims it is actually incorrect.' },
@@ -23312,6 +23670,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B2:971', 'nociones_generales:B2:972', 'nociones_generales:B2:973', 'nociones_generales:B2:974', 'nociones_generales:B2:975'],
   title: 'Éxito y logro: triunfar, fracasar, llegar a ser',
   summary: '"Llegar a ser" marks a gradual achievement reached over time — becoming a doctor, becoming successful — distinct from a sudden change, and the triunfar/fracasar pair names competitive success or failure specifically, not everyday good or bad luck.',
+  keywords: [
+    { es: 'triunfar', en: 'to succeed, to triumph' },
+    { es: 'fracasar', en: 'to fail' },
+    { es: 'llegar a ser', en: 'to become' },
+    { es: 'lograr', en: 'to achieve' },
+    { es: 'conseguir', en: 'to manage, to obtain' },
+    { es: 'el logro', en: 'the achievement' },
+    { es: 'el fracaso', en: 'the failure' },
+    { es: 'tener éxito', en: 'to be successful' }
+  ],
   sections: [
     { h: 'Triunfar vs fracasar', html: 'A clean opposite pair for competitive or ambitious success/failure — stronger and more dramatic than <i>tener éxito/no tener éxito</i>.' },
     { h: 'Llegar a ser: a gradual achievement', html: '<i>Llegar a ser</i> marks reaching a status over time, through effort: <i>Llegó a ser director de la empresa.</i>' },
@@ -23434,6 +23802,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:B2:1015', 'nociones_generales:B2:1016', 'nociones_generales:B2:1017'],
   title: 'Importancia y normalidad: dar lo mismo, por norma',
   summary: '"Dar lo mismo" is indifference, not agreement — it says the outcome does not matter to the speaker, which is a very different stance from actually endorsing an option — and "por norma" states what USUALLY happens, leaving room for exceptions "con normalidad" does not.',
+  keywords: [
+    { es: 'Me da lo mismo.', en: 'It\'s all the same to me.' },
+    { es: 'por norma', en: 'as a rule' },
+    { es: 'con normalidad', en: 'normally, as usual' },
+    { es: 'fundamental', en: 'essential' },
+    { es: 'secundario', en: 'secondary' },
+    { es: 'dar importancia a', en: 'to attach importance to' },
+    { es: 'el dato', en: 'the piece of information' },
+    { es: 'la reacción', en: 'the reaction' }
+  ],
   sections: [
     { h: 'Fundamental/básico vs secundario', html: 'These rank importance: <i>fundamental, básico</i> (essential) vs <i>secundario</i> (of lesser priority).' },
     { h: 'Dar lo mismo: indifference', html: '<i>Me da lo mismo lo que haga</i> states genuine indifference to the outcome, not agreement or approval.' },
@@ -23682,6 +24060,17 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:143', 'funciones:B2:144', 'funciones:B2:145', 'funciones:B2:146', 'funciones:B2:147', 'funciones:B2:148'],
   title: 'Dar una opinión: a mi modo de ver, considero que, yo diría que',
   summary: 'B2 grades the confidence of an opinion through its verb — "veo que" reports something you observe as near-fact, "yo diría que" hedges toward a guess — six frames on a spectrum from assertive to tentative, all before the actual content of the opinion.',
+  keywords: [
+    { es: 'A mi modo de ver', en: 'The way I see it' },
+    { es: 'Considero que…', en: 'I consider that…' },
+    { es: 'Yo diría que…', en: 'I\'d say that…' },
+    { es: 'Desde mi punto de vista', en: 'From my point of view' },
+    { es: 'Según…', en: 'According to…' },
+    { es: 'Opinamos que…', en: 'We think that…' },
+    { es: 'la medida', en: 'the measure' },
+    { es: 'eficaz', en: 'effective' },
+    { es: 'evidente', en: 'obvious' }
+  ],
   sections: [
     { h: 'Assertive frames', html: '<i>Considero que, opino que</i> state a view fairly directly and are common in both speech and writing.' },
     { h: 'Reporting what seems observed: veo que', html: '<i>Veo que vamos lentos, pero por buen camino</i> frames the opinion as an observation, close to fact.' },
@@ -23803,6 +24192,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:217', 'funciones:B2:218', 'funciones:B2:219', 'funciones:B2:220'],
   title: 'Expresar aprobación y desaprobación: no deberías haberlo hecho',
   summary: 'B2\'s disapproval reaches into the past with the compound conditional — "no deberías haberlo hecho" judges an action already finished, which the simple "no deberías hacerlo" cannot do since it still points at the future.',
+  keywords: [
+    { es: 'Me parece bien que…', en: 'I think it\'s good that… (+ subjunctive)' },
+    { es: 'Me parece fatal que…', en: 'I think it\'s awful that…' },
+    { es: 'Está muy bien que…', en: 'It\'s very good that…' },
+    { es: 'No hay derecho.', en: 'It\'s not right.' },
+    { es: 'Podrías haber…', en: 'You could have…' },
+    { es: 'Deberías haber…', en: 'You should have…' },
+    { es: 'reprochar', en: 'to reproach' },
+    { es: 'el reproche', en: 'the reproach' }
+  ],
   sections: [
     { h: 'Me parece / está + adjective + que', html: '<i>Nos pareció fatal que te fueras así</i>, <i>Estuvo fatal que no te disculparas</i> — both need <i>que</i> + subjunctive since they evaluate someone\'s past action.' },
     { h: '¡Qué mal/bien...!', html: 'The exclamatory register reacts to news with immediate approval or disapproval: <i>¡Qué mal lo de Rita!</i>' },
@@ -23966,6 +24365,15 @@ window.STRAND_LESSONS = [
          'funciones:B2:416', 'funciones:B2:417', 'funciones:B2:418', 'funciones:B2:419'],
   title: 'Expresar posibilidad: el futuro y condicional de conjetura',
   summary: 'B2 extends B1\'s possibility system with the compound future and the conditional both used for CONJECTURE about the past — "se habrá caído de la moto" guesses at a past event with the same confidence a plain statement would carry, no possibility word needed at all.',
+  keywords: [
+    { es: 'Estará…', en: 'He\'s probably…' },
+    { es: 'Habrá…', en: 'He must have…' },
+    { es: 'Puede que…', en: 'It may be that… (+ subjunctive)' },
+    { es: 'Es probable que…', en: 'It\'s likely that…' },
+    { es: 'Lo mismo…', en: 'Maybe… (casual)' },
+    { es: 'A saber.', en: 'Who knows.' },
+    { es: 'la conjetura', en: 'the guess, the conjecture' }
+  ],
   sections: [
     { h: 'Hay probabilidades de que / lo más probable es que', html: 'Two ways to frame likelihood explicitly, both requiring the subjunctive: <i>Hay muchas probabilidades de que eso suceda</i>, <i>Lo más probable es que se haya escapado.</i>' },
     { h: 'Deber de / tener que + infinitivo: near-certain conjecture', html: '<i>Debe de estar al otro lado de la carretera</i> and <i>tiene que estar por aquí</i> both guess with high confidence, though grammatically simple present.' },
@@ -24416,6 +24824,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:685', 'funciones:B2:689', 'funciones:B2:691', 'funciones:B2:694', 'funciones:B2:696'],
   title: 'Expresar alegría: me alegro de que, me pone de buen humor',
   summary: '"Me pone de buen humor" names something that reliably TRIGGERS happiness — a season, a song — distinct from "me alegro de que", which reacts to one specific piece of news, both still following the familiar que + subjuntivo fork.',
+  keywords: [
+    { es: 'Me alegro de que…', en: 'I\'m glad that… (+ subjunctive)' },
+    { es: 'Me hizo ilusión que…', en: 'It meant a lot to me that…' },
+    { es: 'ponerse de buen humor', en: 'to be put in a good mood' },
+    { es: 'estar encantado de que…', en: 'to be delighted that…' },
+    { es: 'estar ilusionado con', en: 'to be excited about' },
+    { es: 'sentirse satisfecho', en: 'to feel satisfied' },
+    { es: 'recuperarse', en: 'to recover' },
+    { es: 'acordarse de', en: 'to remember' }
+  ],
   sections: [
     { h: '¡Qué bien que + subjuntivo!', html: 'An exclamatory reaction to good news: <i>¡Qué bien que ya se haya recuperado!</i>' },
     { h: 'Estar contento/encantado de que + subjuntivo', html: 'A calmer, stated version of the same reaction: <i>Están encantados de que hayáis aceptado.</i>' },
@@ -24456,6 +24874,17 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:715', 'funciones:B2:717', 'funciones:B2:719', 'funciones:B2:721', 'funciones:B2:723', 'funciones:B2:724'],
   title: 'Expresar tristeza: me da pena que, lo paso fatal',
   summary: '"Me duele/me hace daño que" claims emotional pain almost physically, stronger than "me pone triste", while "lo paso fatal" reports living through a whole difficult period rather than reacting to one single fact.',
+  keywords: [
+    { es: 'Me da pena que…', en: 'It makes me sad that… (+ subjunctive)' },
+    { es: 'Es una pena que…', en: 'It\'s a shame that…' },
+    { es: 'Lamento que…', en: 'I\'m sorry that…' },
+    { es: 'Me dolió que…', en: 'It hurt me that…' },
+    { es: 'Me deprime que…', en: 'It depresses me that…' },
+    { es: 'Lo pasé fatal.', en: 'I went through a terrible time.' },
+    { es: 'ponerse triste', en: 'to get sad' },
+    { es: 'separarse', en: 'to break up' },
+    { es: 'duro', en: 'hard, tough' }
+  ],
   sections: [
     { h: 'Siento/lamento que + subjuntivo', html: 'A relatively neutral way to state sadness about a fact: <i>Lamento que tuvierais que venir corriendo.</i>' },
     { h: 'Me da pena/lástima que, es una pena que', html: 'Frame the sadness as a shame/waste: <i>Es una pena que tuvierais que iros tan pronto.</i>' },
@@ -24577,6 +25006,17 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:768', 'funciones:B2:770', 'funciones:B2:771', 'funciones:B2:772', 'funciones:B2:774', 'funciones:B2:775'],
   title: 'Expresar enfado e indignación: me indigna, no aguanto que',
   summary: '"Me indigna" reacts to a moral outrage — an injustice, an abuse of power — while "me da rabia" is more personal, everyday frustration; "no aguanto que" adds that you have reached your limit, not just that something bothers you.',
+  keywords: [
+    { es: 'Me indigna que…', en: 'It outrages me that… (+ subjunctive)' },
+    { es: 'Me da rabia que…', en: 'It infuriates me that…' },
+    { es: 'No aguanto que…', en: 'I can\'t stand it when…' },
+    { es: 'Me fastidia que…', en: 'It bothers me that…' },
+    { es: 'estar indignado con', en: 'to be outraged at' },
+    { es: '¡Qué rabia!', en: 'How infuriating!' },
+    { es: 'despedir', en: 'to fire, to dismiss' },
+    { es: 'ocultar', en: 'to hide, to conceal' },
+    { es: 'juzgar', en: 'to judge' }
+  ],
   sections: [
     { h: 'Me enfada / me da rabia', html: 'Everyday, personal annoyance: <i>Me da rabia el poco respeto que nos tienen.</i>' },
     { h: 'Me indigna: a moral reaction', html: 'Reserved for something perceived as an injustice or abuse, not mere annoyance: <i>Nos indignaría que no nos dieran una explicación.</i>' },
@@ -24617,6 +25057,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:789', 'funciones:B2:791', 'funciones:B2:792', 'funciones:B2:793', 'funciones:B2:796', 'funciones:B2:798'],
   title: 'Expresar miedo y preocupación: me preocupa que, tengo miedo de que',
   summary: '"Me importa" quietly slides into this function too — caring about an outcome is one step away from worrying about it — while "tengo miedo A/DE que" and "me da miedo/pánico/terror que" grade fear from mild to extreme, all needing the subjunctive.',
+  keywords: [
+    { es: 'Me preocupa que…', en: 'It worries me that… (+ subjunctive)' },
+    { es: 'Tengo miedo de que…', en: 'I\'m afraid that…' },
+    { es: 'Me da miedo que…', en: 'It scares me that…' },
+    { es: 'estar nervioso', en: 'to be nervous' },
+    { es: 'dar vergüenza', en: 'to be embarrassing' },
+    { es: 'pasar vergüenza', en: 'to feel embarrassed' },
+    { es: 'las malas compañías', en: 'bad company' },
+    { es: 'angustiar', en: 'to distress' }
+  ],
   sections: [
     { h: 'Me preocupa / me importa que', html: '<i>Me preocupa que no encontrarais casa</i> states worry; <i>me importa que</i> is adjacent — caring enough that the outcome matters to you.' },
     { h: 'Tener miedo a/de que', html: 'Both prepositions work: <i>Teníamos miedo a que las cosas no salieran bien</i>, <i>Tengo miedo de que haya perdido las llaves.</i>' },
@@ -24658,6 +25108,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:816', 'funciones:B2:817', 'funciones:B2:818', 'funciones:B2:819', 'funciones:B2:821'],
   title: 'Expresar empatía: sé cómo te sientes, a mí me pasa lo mismo',
   summary: '"A mí me pasa lo mismo" builds solidarity by claiming shared experience, a different move from "sé cómo te sientes", which claims understanding without asserting the same thing happened to you — two distinct ways of showing you are on someone\'s side.',
+  keywords: [
+    { es: 'A mí me pasa lo mismo.', en: 'The same happens to me.' },
+    { es: 'Te entiendo perfectamente.', en: 'I understand you completely.' },
+    { es: 'Siento que te haya afectado.', en: 'I\'m sorry it affected you.' },
+    { es: 'Ya ha pasado.', en: 'It\'s over now.' },
+    { es: 'Todo se va a arreglar.', en: 'It\'ll all work out.' },
+    { es: 'Atrévete.', en: 'Go for it.' },
+    { es: 'No tengas miedo de…', en: 'Don\'t be afraid to…' },
+    { es: 'acompañar', en: 'to be there for someone' }
+  ],
   sections: [
     { h: 'Siento + que + subjuntivo: empathetic regret', html: '<i>Siento que te haya afectado tanto</i> — empathizing with someone\'s reaction, not apologizing for causing it.' },
     { h: 'Claiming understanding without shared experience', html: '<i>Te entiendo (perfectamente)</i>, <i>Sé (exactamente) cómo te sientes</i> — understanding claimed without asserting the same thing happened to you.' },
@@ -24779,6 +25239,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B2:877', 'funciones:B2:879', 'funciones:B2:880', 'funciones:B2:883', 'funciones:B2:884', 'funciones:B2:887'],
   title: 'Expresar sorpresa: qué raro que, no puede ser',
   summary: '"¡Anda!" reacting to a surprising fact has drifted entirely from its literal meaning of walking, joining a whole set of fixed exclamations (¡No puede ser!, ¡No me digas!) that exist purely as surprise reactions with no compositional meaning left.',
+  keywords: [
+    { es: '¡Qué raro que…!', en: 'How odd that… (+ subjunctive)' },
+    { es: 'No puede ser.', en: 'It can\'t be.' },
+    { es: 'Me extraña que…', en: 'It surprises me that…' },
+    { es: '¡No me lo puedo creer!', en: 'I can\'t believe it!' },
+    { es: '¿En serio?', en: 'Seriously?' },
+    { es: 'Me llama la atención que…', en: 'It strikes me that…' },
+    { es: 'inesperado', en: 'unexpected' }
+  ],
   sections: [
     { h: 'Me sorprende/extraña/asombra que + subjuntivo', html: 'The standard gustar-pattern frame for surprise: <i>Me sorprendió un montón que hubiera llegado tan pronto.</i>' },
     { h: 'Es + adjetivo + que', html: '<i>Es increíble/raro/sorprendente que...</i> frames the surprising fact as an evaluated claim.' },
@@ -27029,6 +27498,17 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B2:267', 'tacticas_pragmaticas:B2:268'],
   title: 'Cortesía atenuadora en B2: desplazar la persona, aplazar el tiempo',
   summary: 'B2 systematizes softening as a grammatical operation on WHO is speaking: shifting first person to second (generalizing an experience onto "you"), to third ("uno", impersonal "se"), and second person to first-plural ("nosotros" of complicity) — each shift exists specifically to soften a face-threatening act, alongside temporal delays, ritual formulas, and preliminary announcements that cushion a request before it even arrives.',
+  keywords: [
+    { es: 'uno', en: 'one (people in general, including me)' },
+    { es: 'se me ha roto', en: 'it broke on me (not my fault)' },
+    { es: 'Deberías…', en: 'You should…' },
+    { es: 'Le agradecería que…', en: 'I\'d be grateful if you…' },
+    { es: 'Es posible que esté equivocado', en: 'I might be wrong' },
+    { es: '¿Me aceptas un consejo?', en: 'Can I offer you some advice?' },
+    { es: 'Se lo ruego.', en: 'I beg you.' },
+    { es: 'sin querer', en: 'by accident' },
+    { es: 'prudente', en: 'careful, prudent' }
+  ],
   sections: [
     { h: 'Desplazamiento de 1ª persona a 2ª de singular', html: '<i>El problema de esa clínica es que llegas y te estás horas esperando</i> generalizes the speaker\'s own experience by including the listener, to safeguard the speaker\'s own image — it seems to happen to anyone, not just "me".' },
     { h: 'Desplazamiento de 1ª persona a 3ª: "uno", "este + sustantivo", "se"', html: '<i>Uno hace lo que puede</i> depersonalizes the speaker behind "uno". <i>Se me ha roto el jarrón</i> sidesteps the speaker\'s responsibility with "se"; <i>Se dice que perdió su fortuna</i> softens the force of a claim without naming who makes it.' },
@@ -27374,6 +27854,16 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B2:974', 'generos_discursivos:B2:976'],
   title: 'Exponer un tema en B2: presentar, desarrollar, concluir',
   summary: 'A B2 exposition opens each new (sub)topic with one of four fixed devices — a definition, a general statement, a rhetorical question, or an example — then develops it through classification, and closes with a conclusion that restates why the whole exposition mattered.',
+  keywords: [
+    { es: 'En primer lugar', en: 'In the first place' },
+    { es: 'A continuación', en: 'Next' },
+    { es: 'Cabe señalar que…', en: 'It\'s worth pointing out that…' },
+    { es: 'Por último', en: 'Lastly' },
+    { es: 'En conclusión', en: 'In conclusion' },
+    { es: 'desarrollar', en: 'to develop, to expand on' },
+    { es: 'el apartado', en: 'the section' },
+    { es: 'exponer', en: 'to set out, to present' }
+  ],
   sections: [
     { h: 'Presentar o definir el tema general', html: 'Una comparación puede servir de anclaje: <i>Los signos de puntuación son como las señales de tráfico: estas organizan la circulación de los coches y aquellos, los textos escritos.</i>' },
     { h: 'Cuatro formas de abrir un (sub)tema nuevo', html: 'Una <b>definición</b> (<i>Se llama aceite a la grasa extraída de cualquier vegetal</i>), una <b>afirmación general</b> (<i>Florencia fue en sus comienzos un asentamiento etrusco</i>), una <b>pregunta retórica</b> (<i>¿Qué es un párrafo?</i>), o una <b>ejemplificación</b> (<i>Los signos de puntuación son como las señales de tráfico</i>).' },
@@ -27416,6 +27906,17 @@ window.STRAND_LESSONS = [
          'generos_discursivos:B2:1006', 'generos_discursivos:B2:1007', 'generos_discursivos:B2:1008'],
   title: 'Argumentar en B2: tesis, fuente, contraargumentación, reserva',
   summary: 'A full B2 argument does something a simple B1 opinion never has to: it cites an external source with a reference, states the opposing view fairly before dismantling it, and ends with a "reserva" that concedes a limit to its own claim instead of overclaiming.',
+  keywords: [
+    { es: 'Se ha dicho que…', en: 'It has been claimed that…' },
+    { es: 'Un estudio muestra que…', en: 'A study shows that…' },
+    { es: 'Según los datos', en: 'According to the data' },
+    { es: 'habría que matizar', en: 'it needs some nuance' },
+    { es: 'apuntar en esa dirección', en: 'to point in that direction' },
+    { es: 'la tesis', en: 'the thesis, the claim' },
+    { es: 'la fuente', en: 'the source' },
+    { es: 'el teletrabajo', en: 'remote working' },
+    { es: 'la productividad', en: 'productivity' }
+  ],
   sections: [
     { h: 'Cuestión polémica, tesis, regla general', html: 'The argument opens by naming a live controversy (<i>Se ha dicho que la formación musical no es una asignatura imprescindible...</i>), states a thesis (<i>La música es fundamental para el ser humano...</i>), then a general rule that supports it.' },
     { h: 'Argumento con fuente citada', html: 'A B2 argument backs a claim with an actual cited source, reference included: <i>Un estudio del Departamento Federal de Educación de Estados Unidos muestra que... (FDI, 2000, p. 234)</i>.' },
