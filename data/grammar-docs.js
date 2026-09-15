@@ -216,6 +216,16 @@ window.GRAMMAR = [
   key:'plusc', title:'Pluscuamperfecto (Past Perfect)',
   summary:'An action completed before another past action ("had done").',
   formation:'Imperfect of <i>haber</i> (había, habías, había…) + past participle.',
+  keywords: [
+    { es: 'había hablado', en: 'I had spoken' },
+    { es: 'habías llegado', en: 'you had arrived' },
+    { es: 'había ido', en: 'he, she had gone' },
+    { es: 'habíamos cenado', en: 'we had had dinner' },
+    { es: 'ya', en: 'already' },
+    { es: 'nunca', en: 'never' },
+    { es: 'cuando', en: 'when' },
+    { es: 'todavía no', en: 'not yet' }
+  ],
   when:[
     'A past action prior to another past moment: <i>Cuando llegué, ya habían salido.</i> — When I arrived, they had already left.',
     'Reported/background context in narration.'
