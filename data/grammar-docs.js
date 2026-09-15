@@ -124,6 +124,18 @@ window.GRAMMAR = [
   canDo:'talk about the future, and guess about the present', title:'Futuro (Future)',
   summary:'What will happen; also probability in the present.',
   formation:'Add the future endings to the WHOLE infinitive. Endings are the same for all three verb types.',
+  keywords: [
+    { es: 'hablaré / hablarás / hablará', en: 'I will speak / you will speak / he, she will speak' },
+    { es: 'hablaremos / hablaréis / hablarán', en: 'we / you / they will speak' },
+    { es: 'tendré', en: 'I will have' },
+    { es: 'podré', en: 'I will be able' },
+    { es: 'haré', en: 'I will do' },
+    { es: 'diré', en: 'I will say' },
+    { es: 'saldré', en: 'I will go out' },
+    { es: 'vendré', en: 'I will come' },
+    { es: 'mañana', en: 'tomorrow' },
+    { es: 'el año que viene', en: 'next year' }
+  ],
   when:[
     'Future actions: <i>Mañana viajaré a Perú.</i> — Tomorrow I will travel to Peru.',
     'Promises and predictions: <i>Te ayudaré.</i> — I will help you.',
@@ -143,6 +155,16 @@ window.GRAMMAR = [
   canDo:'say what you would do, and ask for things more politely', title:'Condicional (Conditional)',
   summary:'What would happen; polite requests and hypotheticals.',
   formation:'Add the conditional endings to the WHOLE infinitive (same endings for all verb types). Same irregular stems as the future.',
+  keywords: [
+    { es: 'hablaría / hablarías / hablaría', en: 'I would speak / you would speak / he, she would speak' },
+    { es: 'hablaríamos / hablaríais / hablarían', en: 'we / you / they would speak' },
+    { es: 'tendría', en: 'I would have' },
+    { es: 'podría', en: 'I could' },
+    { es: 'debería', en: 'I should' },
+    { es: 'haría', en: 'I would do' },
+    { es: 'diría', en: 'I would say' },
+    { es: 'sería', en: 'it would be' }
+  ],
   when:[
     'Polite requests: <i>¿Podrías ayudarme?</i> — Could you help me? This is what the conditional does most often in speech.',
     'Softening an opinion: <i>Yo diría que no.</i> — I\'d say no. Less blunt than <i>digo que no</i>.',
@@ -210,6 +232,15 @@ window.GRAMMAR = [
   canDo:'say what will have happened by a given point', title:'Futuro perfecto (Future Perfect)',
   summary:'An action that will be completed by a future point ("will have done").',
   formation:'Future of <i>haber</i> (habré, habrás, habrá…) + past participle.',
+  keywords: [
+    { es: 'habré hablado', en: 'I will have spoken' },
+    { es: 'habrás terminado', en: 'you will have finished' },
+    { es: 'habrá salido', en: 'he, she will have left' },
+    { es: 'para entonces', en: 'by then' },
+    { es: 'dentro de un año', en: 'in a year\'s time' },
+    { es: 'ya', en: 'already' },
+    { es: 'Habrá llegado.', en: 'He\'s probably arrived.' }
+  ],
   when:[
     'Completed before a future deadline: <i>Para mañana habré terminado.</i> — By tomorrow I will have finished.',
     'Probability about the recent past: <i>Habrá salido ya.</i> — He has probably already left.'
@@ -225,6 +256,14 @@ window.GRAMMAR = [
   canDo:'say what would have happened', title:'Condicional perfecto (Conditional Perfect)',
   summary:'What would have happened ("would have done").',
   formation:'Conditional of <i>haber</i> (habría, habrías…) + past participle.',
+  keywords: [
+    { es: 'habría hablado', en: 'I would have spoken' },
+    { es: 'habría ido', en: 'I would have gone' },
+    { es: 'habrías podido', en: 'you could have' },
+    { es: 'habría sido', en: 'it would have been' },
+    { es: 'Yo que tú, habría…', en: 'If I were you, I would have…' },
+    { es: 'en tu lugar', en: 'in your place' }
+  ],
   when:[
     'Unrealized past hypotheticals: <i>Yo habría ido, pero estaba enfermo.</i> — I would have gone, but I was sick.',
     'Often paired with the past perfect subjunctive: <i>Si hubiera sabido, te habría llamado.</i>'
@@ -239,6 +278,18 @@ window.GRAMMAR = [
   key:'presubj', title:'Presente de subjuntivo (Present Subjunctive)',
   summary:'Doubt, desire, emotion, and unrealized situations.',
   formation:'Take the yo present form, drop the -o, and add the "opposite" endings (-ar verbs take -e endings; -er/-ir verbs take -a endings).',
+  keywords: [
+    { es: 'hable / hables / hable', en: '(that) I speak / you speak / he, she speaks' },
+    { es: 'coma / comas / coma', en: '(that) I eat / you eat / he, she eats' },
+    { es: 'sea', en: '(that) it is (ser)' },
+    { es: 'esté', en: '(that) it is (estar)' },
+    { es: 'vaya', en: '(that) he, she goes (ir)' },
+    { es: 'tenga', en: '(that) he, she has (tener)' },
+    { es: 'venga', en: '(that) he, she comes (venir)' },
+    { es: 'haya', en: '(that) there is (haber)' },
+    { es: 'sepa', en: '(that) he, she knows (saber)' },
+    { es: 'pueda', en: '(that) he, she can (poder)' }
+  ],
   when:[
     'Wishes & requests: <i>Quiero que vengas.</i> — I want you to come.',
     'Emotion & value judgments: <i>Me alegra que estés aquí.</i>',
@@ -260,6 +311,16 @@ window.GRAMMAR = [
   canDo:'talk about what is not the case with si tuviera', title:'Imperfecto de subjuntivo (Imperfect Subjunctive)',
   summary:'The subjunctive in past contexts and "if" clauses.',
   formation:'Take the ellos preterite form, drop -ron, and add -ra, -ras, -ra, -´ramos, -rais, -ran. (Works for every verb, no exceptions.)',
+  keywords: [
+    { es: 'hablara / hablaras / hablara', en: '(that) I spoke / you spoke / he, she spoke' },
+    { es: 'fuera', en: '(that) it were (ser/ir)' },
+    { es: 'tuviera', en: '(that) he, she had' },
+    { es: 'pudiera', en: '(that) he, she could' },
+    { es: 'hiciera', en: '(that) he, she did' },
+    { es: 'Si tuviera…', en: 'If I had…' },
+    { es: 'Ojalá pudiera…', en: 'I wish I could…' },
+    { es: 'Si fuera tú…', en: 'If I were you…' }
+  ],
   when:[
     'Past-tense triggers: <i>Quería que vinieras.</i> — I wanted you to come.',
     'Hypothetical / contrary-to-fact "if" clauses: <i>Si tuviera tiempo, viajaría.</i> — If I had time, I would travel.',
@@ -279,6 +340,15 @@ window.GRAMMAR = [
   canDo:'say you hope or doubt that something has already happened', title:'Pretérito perfecto de subjuntivo (Present Perfect Subjunctive)',
   summary:'Subjunctive for a recently completed action ("have done").',
   formation:'Present subjunctive of <i>haber</i> (haya, hayas, haya…) + past participle.',
+  keywords: [
+    { es: 'haya hablado', en: '(that) I have spoken' },
+    { es: 'hayas llegado', en: '(that) you have arrived' },
+    { es: 'haya terminado', en: '(that) he, she has finished' },
+    { es: 'Espero que haya…', en: 'I hope he/she has…' },
+    { es: 'Dudo que hayan…', en: 'I doubt they have…' },
+    { es: 'No creo que haya…', en: 'I don\'t think he/she has…' },
+    { es: 'todavía', en: 'still, yet' }
+  ],
   when:[
     'Subjunctive triggers about a completed action: <i>Espero que hayas llegado bien.</i> — I hope you have arrived safely.',
     'Emotion/doubt about the recent past: <i>No creo que lo haya hecho.</i>'

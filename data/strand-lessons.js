@@ -913,6 +913,15 @@ window.STRAND_LESSONS = [
   title: 'Defiende una opinión',
   canDo: 'state an opinion and say why, including what you do NOT think',
   summary: 'The subjunctive arrives here as a meaning contrast, not a paradigm. "Creo que es" and "no creo que sea" differ by one mood, and that mood is the whole difference between asserting something and declining to.',
+  keywords: [
+    { es: 'En mi opinión…', en: 'In my opinion…' },
+    { es: 'Creo que…', en: 'I think that…' },
+    { es: 'No creo que…', en: 'I don\'t think that… (+ subjunctive)' },
+    { es: 'Estoy de acuerdo.', en: 'I agree.' },
+    { es: 'Por un lado… por otro', en: 'On the one hand… on the other' },
+    { es: 'Además', en: 'What\'s more' },
+    { es: 'En conclusión', en: 'In conclusion' }
+  ],
   sections: [
     { h: 'What to do', html: 'Pick something you actually have a view on. Write twelve to sixteen sentences: your position, three reasons, and at least two things you do NOT think.' },
     { h: 'The contrast to get right', html: '<i>Creo que funciona</i> asserts it. <i>No creo que funcione</i> declines to assert it — the negative pushes the verb into the subjunctive. This is the cleanest place in Spanish to feel what the subjunctive is for.' }
@@ -947,6 +956,15 @@ window.STRAND_LESSONS = [
   title: 'Discute con alguien que no está de acuerdo',
   canDo: 'hold a disagreement without it becoming a row',
   summary: 'Agreement in Spanish is a scale, and so is disagreement. The useful skill at B1 is partial agreement — conceding something real before you push back, which is what stops a disagreement sounding like a rejection.',
+  keywords: [
+    { es: 'estar a favor / en contra', en: 'to be for / against' },
+    { es: 'Sí, pero…', en: 'Yes, but…' },
+    { es: 'por un lado / por otro', en: 'on the one hand / on the other' },
+    { es: 'además', en: 'besides' },
+    { es: 'sin embargo', en: 'however' },
+    { es: 'en mi opinión', en: 'in my opinion' },
+    { es: 'para terminar', en: 'to finish' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write a twelve-turn conversation between two people who disagree. Neither may simply repeat themselves; each turn has to move.' },
     { h: 'Concede first', html: '<i>Estoy de acuerdo en parte</i>, <i>tienes razón en que…, pero</i>, <i>sí, pero…</i>. Conceding is not weakness — it is what buys you the right to be listened to.' }
@@ -981,6 +999,15 @@ window.STRAND_LESSONS = [
   title: 'Aconseja a alguien que te lo pide',
   canDo: 'give advice at three levels of directness',
   summary: 'The conditional is the politeness tense. Advice given in it leaves the other person room to ignore you, which is exactly what advice should do.',
+  keywords: [
+    { es: 'Deberías…', en: 'You should…' },
+    { es: 'Yo que tú…', en: 'If I were you…' },
+    { es: 'Podrías…', en: 'You could…' },
+    { es: 'Lo mejor es…', en: 'The best thing is…' },
+    { es: 'Te aconsejo que…', en: 'I advise you to… (+ subjunctive)' },
+    { es: 'No te preocupes.', en: 'Don\'t worry.' },
+    { es: 'el problema', en: 'the problem' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write a message from someone asking your advice about a real problem, then your reply. Give three suggestions at increasing strength.' },
     { h: 'The scale', html: '<i>Podrías…</i> (softest) · <i>Yo que tú, …ía</i> · <i>Lo mejor sería…</i> · <i>Deberías…</i> (strongest, and close to telling them off). Match the strength to how well you know them.' }
@@ -1049,6 +1076,15 @@ window.STRAND_LESSONS = [
   title: 'Cuenta tus planes y predice algo',
   canDo: 'talk about the future, and guess about the present',
   summary: 'Spanish has two futures doing different jobs. Ir a is what you have decided; the simple future is prediction — and the same form, oddly, is how Spanish guesses about right now.',
+  keywords: [
+    { es: 'pienso + infinitivo', en: 'I\'m planning to' },
+    { es: 'voy a + infinitivo', en: 'I\'m going to' },
+    { es: 'cuando + subjuntivo', en: 'when (in the future)' },
+    { es: 'seguramente', en: 'probably' },
+    { es: 'me gustaría', en: 'I\'d like' },
+    { es: 'el año que viene', en: 'next year' },
+    { es: 'si todo va bien', en: 'if all goes well' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write about a real plan in ten to fourteen sentences: what you are going to do, what you think will happen, and what might go wrong.' },
     { h: 'The conjecture use', html: '<i>¿Qué hora será?</i> is not about the future at all — it means "I wonder what time it is". <i>Estará en casa</i> means "he\'s probably at home". This surprises every learner and is extremely common in speech.' }
@@ -1083,6 +1119,15 @@ window.STRAND_LESSONS = [
   title: 'Pide, niégate y prohíbe',
   canDo: 'ask for things at four levels, refuse without offence, and forbid clearly',
   summary: 'B1 is where requests stop being formulas and start being choices. The same favour asked four ways is four different relationships.',
+  keywords: [
+    { es: '¿Podrías…?', en: 'Could you…?' },
+    { es: '¿Te importaría…?', en: 'Would you mind…?' },
+    { es: 'Necesito que…', en: 'I need you to…' },
+    { es: 'Es que…', en: 'The thing is…' },
+    { es: 'Lo siento, no puedo.', en: 'Sorry, I can\'t.' },
+    { es: 'por favor', en: 'please' },
+    { es: 'Gracias de todos modos.', en: 'Thanks anyway.' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write four short exchanges: asking a favour, asking permission, refusing a request, and forbidding something. Each with a different person.' },
     { h: 'Refusing well', html: 'A bare <i>no</i> is harsh. Spanish softens with a reason (<i>es que…</i>), an apology (<i>lo siento, pero…</i>), or distance (<i>me temo que no va a poder ser</i>). Refusing badly costs more than asking badly.' }
@@ -1117,6 +1162,15 @@ window.STRAND_LESSONS = [
   title: 'Cuenta algo que te hizo feliz',
   canDo: 'express pleasure, affection, pride and relief at the right intensity',
   summary: 'Fifteen separate lessons used to teach one emotion each. They belong together, because the skill is not knowing the phrases — it is choosing the size of the reaction.',
+  keywords: [
+    { es: 'Me alegro de que…', en: 'I\'m glad that…' },
+    { es: 'Estoy encantado de…', en: 'I\'m delighted to…' },
+    { es: 'Me lo pasé genial.', en: 'I had a great time.' },
+    { es: '¡Qué bien!', en: 'How great!' },
+    { es: '¡Enhorabuena!', en: 'Congratulations!' },
+    { es: 'por fin', en: 'at last' },
+    { es: 'gracias a', en: 'thanks to' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write about something genuinely good that happened, in twelve to sixteen sentences, and include how other people reacted.' },
     { h: 'Intensity is the skill', html: '<i>Me alegro</i> · <i>me alegro muchísimo</i> · <i>no sabes cuánto me alegro</i> · <i>me hizo una ilusión tremenda</i>. Using the biggest one for a small thing reads as sarcasm, which is the commonest B1 misfire.' }
@@ -9137,6 +9191,17 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B1:466', 'gramatica:B1:467', 'gramatica:B1:469', 'gramatica:B1:471', 'gramatica:B1:474', 'gramatica:B1:475'],
   title: 'El subjuntivo: cuándo aparece',
   summary: 'The present subjunctive is not a mood you reach for when a sentence "feels uncertain" — it is the form a specific, learnable family of triggers demands automatically: wishes, doubt, and impersonal value judgments, whether or not you personally feel unsure.',
+  keywords: [
+    { es: 'Creo que viene.', en: 'I think she\'s coming. (a fact — indicative)' },
+    { es: 'No creo que venga.', en: 'I don\'t think she\'s coming. (doubt — subjunctive)' },
+    { es: 'Quiero venir.', en: 'I want to come. (one person)' },
+    { es: 'Quiero que vengas.', en: 'I want you to come. (two people)' },
+    { es: 'Espero que…', en: 'I hope (that)…' },
+    { es: 'Dudo que…', en: 'I doubt (that)…' },
+    { es: 'Es normal que…', en: 'It\'s normal that…' },
+    { es: 'mejorarse', en: 'to get better' },
+    { es: 'a tiempo', en: 'on time' }
+  ],
   sections: [
     { h: 'Building the form fast', html: '-Ar verbs take -e endings, -er/-ir verbs take -a endings — the opposite vowel from the indicative. Any irregular <i>yo</i>-form of the present indicative carries straight over: <i>tener→tengo→tenga</i>, <i>hacer→hago→haga</i>. A short list is fully irregular: <i>sea, esté, dé, vaya, sepa, haya</i>.' },
     { h: 'Desiderativo: wishing for someone else', html: '<i>Quiero que vengas</i> needs the subjunctive because the subject of "come" is DIFFERENT from the subject of "want." When both subjects are the same person, Spanish drops <i>que</i> entirely and uses the infinitive instead: <i>Quiero venir</i>, never <i>*Quiero que venga yo</i>.' },
@@ -9242,6 +9307,16 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B1:772', 'gramatica:B1:773', 'gramatica:B1:774', 'gramatica:B1:775', 'gramatica:B1:776'],
   title: 'Condicionales reales: si + futuro, si + imperativo',
   summary: 'A real, open condition can now pair si + presente with a main clause in the future or the imperative, not only the present — but the si-clause itself never takes a future-tense verb, an absolute rule that survives every other change to the sentence.',
+  keywords: [
+    { es: 'si + presente', en: 'if + present' },
+    { es: 'Si tengo tiempo, iré.', en: 'If I have time, I\'ll go.' },
+    { es: 'Si puedes, ayúdame.', en: 'If you can, help me.' },
+    { es: 'cancelar', en: 'to cancel' },
+    { es: 'la excursión', en: 'the trip' },
+    { es: 'aprobar', en: 'to pass' },
+    { es: 'celebrar', en: 'to celebrate' },
+    { es: 'preguntar', en: 'to ask' }
+  ],
   sections: [
     { h: 'Extending the A2 pattern', html: 'Beyond <i>si + presente, presente</i> (A2), the main clause can now be in the future — <i>Si tengo tiempo, iré</i> — or an imperative — <i>Si puedes, ayúdame</i>.' },
     { h: 'The one rule that never changes', html: 'Whatever tense the main clause takes, the <i>si</i>-clause itself STAYS in the present indicative: <i>*Si vendrá Carlota</i> is always wrong; it must be <i>Si viene Carlota</i>.' }
@@ -9309,6 +9384,17 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B1:725', 'gramatica:B1:727', 'gramatica:B1:728', 'gramatica:B1:730', 'gramatica:B1:731', 'gramatica:B1:732'],
   title: 'Temporales: cuando + subjuntivo para el futuro',
   summary: 'Cuando takes the indicative for a fact that already happened or happens habitually, but switches to the subjunctive the instant the event is still in the future — one of the single most important rules in the entire Spanish subjunctive system.',
+  keywords: [
+    { es: 'cuando + subjuntivo', en: 'when (something that hasn\'t happened yet)' },
+    { es: 'cuando + indicativo', en: 'when (something habitual or past)' },
+    { es: 'Te llamaré cuando llegue.', en: 'I\'ll call you when I arrive.' },
+    { es: 'en cuanto', en: 'as soon as' },
+    { es: 'hasta que', en: 'until' },
+    { es: 'antes de que', en: 'before' },
+    { es: 'después de que', en: 'after' },
+    { es: 'avisar', en: 'to let someone know' },
+    { es: 'las noticias', en: 'the news' }
+  ],
   sections: [
     { h: 'Cuando + indicativo: past or habitual', html: 'A completed or habitual event stays indicative: <i>Cuando llegué, lo vi</i> (past fact), <i>Me fui cuando llegaron</i> (a real, completed sequence).' },
     { h: 'Cuando + subjuntivo: not yet real', html: 'A future event — one that has not happened yet at the moment of speaking — switches <i>cuando</i> to the subjunctive: <i>Te llamaré cuando llegue</i>, never <i>*cuando llegaré</i>. The future-tense main clause does NOT pull the subjunctive clause into the future tense too.' },
@@ -9515,6 +9601,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B1:662', 'gramatica:B1:664', 'gramatica:B1:668', 'gramatica:B1:672', 'gramatica:B1:674'],
   title: 'Subordinadas sustantivas: infinitivo o que + verbo',
   summary: 'A subordinate clause standing in for a subject or object can be a bare infinitive for a general claim, or a full que + subjunctive clause about someone specific — the exact same same-subject/different-subject rule from the subjunctive lesson, now shown to reach far beyond just "querer."',
+  keywords: [
+    { es: 'Quiero salir.', en: 'I want to leave. (one person)' },
+    { es: 'Quiero que salgas.', en: 'I want you to leave. (two people)' },
+    { es: 'Espero que…', en: 'I hope that… (+ subjunctive)' },
+    { es: 'Creo que…', en: 'I think that… (+ indicative)' },
+    { es: 'No creo que…', en: 'I don\'t think that… (+ subjunctive)' },
+    { es: 'Es normal que…', en: 'It\'s normal that…' },
+    { es: 'que', en: 'that' }
+  ],
   sections: [
     { h: 'Infinitivo: generic or same-subject', html: '<i>Leer ayuda a mejorar el vocabulario</i> makes a claim about reading IN GENERAL, no one in particular. <i>Me da miedo hablar</i> uses the infinitive because the person afraid and the person who would speak are the same "me."' },
     { h: 'Que + subjuntivo: a specific, different subject', html: '<i>Me encanta que me llames</i> is about YOUR calling, not mine — two different people, so the infinitive is no longer possible and <i>que</i> + subjunctive takes over, exactly the same pattern as <i>querer que</i>.' },
@@ -9631,6 +9726,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B1:70', 'nociones_generales:B1:71', 'nociones_generales:B1:75', 'nociones_generales:B1:76', 'nociones_generales:B1:92', 'nociones_generales:B1:94'],
   title: 'Certeza e incertidumbre: seguro, tal vez, imaginario',
   summary: 'Es evidente commits fully to a fact, tal vez floats a possibility with none at all — but a lo mejor, despite belonging to that same doubt family, unusually keeps the indicative, one of the classic B1 subjunctive exceptions.',
+  keywords: [
+    { es: 'seguro', en: 'certain, sure' },
+    { es: 'tal vez', en: 'perhaps (+ subjunctive)' },
+    { es: 'quizá / quizás', en: 'maybe' },
+    { es: 'a lo mejor', en: 'maybe (+ indicative)' },
+    { es: 'Está claro que…', en: 'It\'s clear that…' },
+    { es: 'imaginario', en: 'imaginary' },
+    { es: 'real', en: 'real' },
+    { es: 'la realidad', en: 'reality' }
+  ],
   sections: [
     { h: 'Full commitment: certeza', html: '<i>Es evidente</i>, <i>está claro</i>, <i>es imposible</i> all state a fact (or its impossibility) with full confidence — indicative, matching the certainty rule from the subjunctive lesson.' },
     { h: 'Hedging: incertidumbre', html: '<i>Dudar</i>, <i>posiblemente</i>, <i>tal vez</i> spread across a scale of doubt — most of this family pulls the following verb into the subjunctive.' },
@@ -9671,6 +9776,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B1:105', 'nociones_generales:B1:106', 'nociones_generales:B1:107', 'nociones_generales:B1:108', 'nociones_generales:B1:110'],
   title: 'Necesidad y obligación: depender de, ser obligatorio',
   summary: 'Depender de makes an outcome hinge on something entirely outside your control, while ser obligatorio states a flat, impersonal, often official requirement — both stronger and colder than the everyday necesitar from A2.',
+  keywords: [
+    { es: 'tener que', en: 'to have to' },
+    { es: 'hay que', en: 'one has to' },
+    { es: 'deber', en: 'should, must' },
+    { es: 'hace falta', en: 'it\'s needed' },
+    { es: 'es necesario que', en: 'it\'s necessary that (+ subjunctive)' },
+    { es: 'obligatorio', en: 'compulsory' },
+    { es: 'la obligación', en: 'the obligation' },
+    { es: 'necesitar', en: 'to need' }
+  ],
   sections: [
     { h: 'Depender de: contingency', html: 'The outcome is not fixed — it hinges on something else: <i>Depende del tiempo que haga</i> ("it depends on the weather").' },
     { h: 'Ser obligatorio: an official requirement', html: 'Carries a legal or regulatory flavour that plain <i>necesario</i> lacks: <i>Es obligatorio llevar casco</i>. <i>Necesariamente/obligatoriamente</i> are the matching adverbs.' },
@@ -9710,6 +9825,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B1:62', 'nociones_generales:B1:63', 'nociones_generales:B1:64', 'nociones_generales:B1:65'],
   title: 'Acontecimiento: tener lugar, celebrarse',
   summary: 'Tener lugar is the formal way to say an event happens — a cousin to hay, but for EVENTS rather than things — and it never actually uses hay itself, a substitution beginners often reach for by mistake.',
+  keywords: [
+    { es: 'tener lugar', en: 'to take place' },
+    { es: 'celebrarse', en: 'to be held' },
+    { es: 'pasar', en: 'to happen' },
+    { es: 'ocurrir', en: 'to occur' },
+    { es: 'suceder', en: 'to happen' },
+    { es: 'el acontecimiento', en: 'the event' },
+    { es: 'la reunión', en: 'the meeting' },
+    { es: 'el jardín', en: 'the garden' }
+  ],
   sections: [
     { h: 'Ser + lugar / tener lugar: formal register', html: '<i>Los primeros Juegos Olímpicos fueron en Atenas</i>; <i>La reunión tuvo lugar el día 15</i> — both name where/when an event happened, in a formal, written register.' },
     { h: 'Pasar: the everyday equivalent', html: '<i>¿Qué ha pasado?</i>, <i>Aquí nunca pasa nada</i> — the neutral, spoken-register verb for "to happen."' },
@@ -10037,6 +10162,15 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B1:414', 'nociones_generales:B1:415', 'nociones_generales:B1:465', 'nociones_generales:B1:466', 'nociones_generales:B1:454', 'nociones_generales:B1:447', 'nociones_generales:B1:448', 'nociones_generales:B1:451'],
   title: 'El tiempo: siglos, décadas y el presente que dura',
   summary: 'Llevar + gerundio states how long a situation has continued right up to now — llevo un año trabajando aquí — a construction with no direct English equivalent, built from a verb that everywhere else just means "to carry."',
+  keywords: [
+    { es: 'llevar + gerundio', en: 'to have been (doing something)' },
+    { es: 'Llevo dos años estudiando.', en: 'I\'ve been studying for two years.' },
+    { es: 'desde hace', en: 'for (up to now)' },
+    { es: 'desde', en: 'since' },
+    { es: 'hace…que', en: 'it\'s been … since' },
+    { es: 'dentro de', en: 'in (a period of time)' },
+    { es: 'a partir de', en: 'from (a point) on' }
+  ],
   sections: [
     { h: 'Bigger units of time', html: '<i>Segundo, década, siglo</i> extend the A1/A2 calendar vocabulary: <i>Fue en el siglo XX</i>, <i>la década de los cincuenta</i>.' },
     { h: 'Pushing mañana/ayer one step further', html: '<i>Pasado mañana</i> (the day after tomorrow), <i>anteayer</i> (the day before yesterday) — extending <i>mañana/ayer</i> one more day out in either direction.' },
@@ -10117,6 +10251,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B1:524', 'nociones_generales:B1:526', 'nociones_generales:B1:528', 'nociones_generales:B1:530'],
   title: 'Puntualidad y retraso: llegar a tiempo, con retraso',
   summary: 'Retraso describes the SCHEDULE slipping — a train, a flight, a meeting — while tener prisa describes the PERSON\'s own hurry; the two often show up together but state genuinely different facts.',
+  keywords: [
+    { es: 'a tiempo', en: 'on time' },
+    { es: 'puntual', en: 'punctual' },
+    { es: 'con retraso', en: 'late, delayed' },
+    { es: 'llegar tarde', en: 'to arrive late' },
+    { es: 'adelantarse', en: 'to be early' },
+    { es: 'tardar en', en: 'to take (time) to' },
+    { es: 'el retraso', en: 'the delay' },
+    { es: 'de repente', en: 'suddenly' }
+  ],
   sections: [
     { h: 'Puntual, llegar a tiempo', html: '<i>El tren llegó puntual</i>; <i>por suerte pudimos llegar a tiempo</i> — both describe arrival matching the expected time.' },
     { h: 'Retraso: the schedule slips', html: '<i>El avión salió con retraso</i> — <i>retraso</i> is a noun naming the delay itself, always paired with <i>salir/llegar/venir con retraso</i>.' },
@@ -10360,6 +10504,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:B1:934', 'nociones_generales:B1:936', 'nociones_generales:B1:940', 'nociones_generales:B1:941', 'nociones_generales:B1:949', 'nociones_generales:B1:951'],
   title: 'Conformidad y corrección: aceptar, error, claro',
   summary: 'Está bien así, gracias closes a transaction politely — it declines further help without rejecting what\'s been offered — while corregir un error and repasar name the two-step process of catching and reviewing a mistake.',
+  keywords: [
+    { es: 'correcto', en: 'correct' },
+    { es: 'incorrecto', en: 'incorrect' },
+    { es: 'exacto', en: 'exact, precise' },
+    { es: 'aproximadamente', en: 'approximately' },
+    { es: 'más o menos', en: 'roughly' },
+    { es: 'justo', en: 'exactly, just' },
+    { es: 'equivocarse', en: 'to be wrong' },
+    { es: 'corregir', en: 'to correct' }
+  ],
   sections: [
     { h: 'Conformidad: closing politely', html: '<i>Está bien así, gracias</i> and <i>nada más, gracias</i> are fixed ways to say "that\'s enough / that\'s all," declining further help without rejecting what was offered.' },
     { h: 'Corrección: error, corregir, repasar', html: '<i>Corregir un error</i> names the act of fixing a mistake; <i>repasar</i> is the broader check-over that catches errors in the first place.' },
@@ -10587,6 +10741,15 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:B1:348', 'gramatica:B1:349', 'gramatica:B1:350', 'gramatica:B1:351'],
   title: 'Modalidad: posiblemente, seguramente, probablemente',
   summary: 'These adverbs of doubt sit on a scale from near-certainty to genuine uncertainty, and — like a lo mejor — several of them can take EITHER mood depending on how confident the speaker actually feels, not a fixed grammatical rule.',
+  keywords: [
+    { es: 'seguramente', en: 'probably, most likely' },
+    { es: 'posiblemente', en: 'possibly' },
+    { es: 'probablemente', en: 'probably' },
+    { es: 'quizá / tal vez', en: 'perhaps' },
+    { es: 'a lo mejor', en: 'maybe' },
+    { es: 'aprobar', en: 'to pass' },
+    { es: 'llegar tarde', en: 'to be late' }
+  ],
   sections: [
     { h: 'A scale of doubt', html: '<i>Seguramente</i> (fairly confident) → <i>probablemente</i> → <i>posiblemente</i> (least confident) — all roughly equivalent to <i>es probable que…</i>' },
     { h: 'Mood follows confidence, not a fixed rule', html: 'Unlike <i>dudo que</i> (always subjunctive) or <i>a lo mejor</i> (always indicative), these adverbs can take either mood: <i>Seguramente no está</i> (indicative — fairly sure) or <i>Seguramente no esté</i> (subjunctive — less sure). The choice itself communicates the speaker\'s confidence.' },
@@ -12209,6 +12372,16 @@ window.STRAND_LESSONS = [
          'gramatica:B1:423', 'gramatica:B1:424', 'gramatica:B1:425', 'gramatica:B1:426'],
   title: 'El condicional simple',
   summary: '¿Podrías ayudarme? is not really about hypothetical possibility — the conditional here just makes a request softer, the same way English "could" outperforms "can" for politeness, and this courtesy use is more common in speech than the tense\'s textbook "would" meaning.',
+  keywords: [
+    { es: '¿Podrías…?', en: 'Could you…?' },
+    { es: 'Deberías…', en: 'You should…' },
+    { es: '¿Te importaría…?', en: 'Would you mind…?' },
+    { es: 'Yo no diría eso.', en: 'I wouldn\'t say that.' },
+    { es: 'Me gustaría…', en: 'I\'d like…' },
+    { es: 'descansar', en: 'to rest' },
+    { es: 'delante de', en: 'in front of' },
+    { es: 'se hace tarde', en: 'it\'s getting late' }
+  ],
   sections: [
     { h: 'Form: infinitive + endings', html: 'Regular verbs add <i>-ía, -ías, -ía, -íamos, -íais, -ían</i> to the full infinitive: <i>hablaría, comería, viviría</i>. The irregular stems are exactly the same ones the future tense uses — if you know one, you know the other.' },
     { h: 'Condicional de cortesía', html: 'Softens a request or question: <i>¿Podrías ayudarme?</i> is gentler than <i>¿Puedes ayudarme?</i>.' },
@@ -12245,6 +12418,15 @@ window.STRAND_LESSONS = [
          'gramatica:B1:412', 'gramatica:B1:413', 'gramatica:B1:416'],
   title: 'El futuro imperfecto',
   summary: 'Serán las once does not predict a future clock — it guesses about RIGHT NOW, which is the future tense\'s other job: not just what will happen, but how confident an educated guess about the present sounds.',
+  keywords: [
+    { es: 'Iré.', en: 'I\'ll go.' },
+    { es: 'Serán las once.', en: 'It must be about eleven. (a guess about now)' },
+    { es: 'Estará en casa.', en: 'He\'s probably at home.' },
+    { es: 'Será tu hermano.', en: 'It\'ll be your brother.' },
+    { es: 'todo saldrá bien', en: 'everything will turn out fine' },
+    { es: 'contestar', en: 'to answer' },
+    { es: 'preocuparse', en: 'to worry' }
+  ],
   sections: [
     { h: 'Form: infinitive + endings', html: 'Regular verbs add <i>-é, -ás, -á, -emos, -éis, -án</i> to the full infinitive: <i>hablaré, comeré, viviré</i>. A dozen common verbs shorten or alter the infinitive stem before adding these same endings: <i>tendré, pondré, saldré, sabré, querré, podré, haré, diré</i>.' },
     { h: 'Acciones futuras absolutas', html: 'The plain future prediction: <i>Iré mañana</i>.' },
@@ -12386,6 +12568,16 @@ window.STRAND_LESSONS = [
   pcic: ['tacticas_pragmaticas:B1:156', 'tacticas_pragmaticas:B1:157', 'tacticas_pragmaticas:B1:158', 'tacticas_pragmaticas:B1:159'],
   title: 'Intensificar el acuerdo o el desacuerdo: claro, claro',
   summary: 'Saying claro, claro is stronger than claro alone — repetition is the whole mechanism here, no new word or grammar needed, and the same doubling works exactly as well for disagreement (no, no) as for agreement.',
+  keywords: [
+    { es: 'totalmente', en: 'totally' },
+    { es: 'completamente', en: 'completely' },
+    { es: 'desde luego', en: 'absolutely' },
+    { es: 'por supuesto', en: 'of course' },
+    { es: 'en absoluto', en: 'not at all' },
+    { es: 'ni hablar', en: 'no way' },
+    { es: 'para nada', en: 'not in the slightest' },
+    { es: 'sin duda', en: 'without a doubt' }
+  ],
   sections: [
     { h: 'Repetition as intensification', html: 'Doubling a short agreement/disagreement word amplifies it with no change of vocabulary: <i>claro, claro</i> (definitely, absolutely) is stronger than a single <i>claro</i>; <i>no, no</i> similarly intensifies a plain <i>no</i>.' },
     { h: 'Fixed exclamations', html: 'A small set of fixed reactions do the same intensifying job as a whole phrase: <i>¡Qué va!</i> (strong disagreement — "no way"), <i>¡Cómo no!</i> (emphatic agreement — "of course").' }
@@ -12863,6 +13055,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:68', 'funciones:B1:69', 'funciones:B1:70'],
   title: 'Corregir con no... sino',
   summary: 'No... sino does not just say something is wrong, it swaps the wrong piece for the right one in a single breath — Gijón no está en Cantabria, sino en Asturias replaces "Cantabria" with "Asturias" without ever needing a second sentence.',
+  keywords: [
+    { es: 'Claro.', en: 'Of course.' },
+    { es: 'Claro que sí.', en: 'Of course (yes).' },
+    { es: 'Desde luego.', en: 'Certainly.' },
+    { es: 'Efectivamente.', en: 'Indeed.' },
+    { es: 'Exacto.', en: 'Exactly.' },
+    { es: 'Eso es.', en: 'That\'s it.' },
+    { es: 'Vale.', en: 'OK.' }
+  ],
   sections: [
     { h: 'Emphatic reassertion', html: 'Reinforcing a correction with emphatic intonation (written in capitals for a text app): <i>—Gijón está en Cantabria. —Gijón está en ASTURIAS.</i>' },
     { h: 'Repetition for intensity', html: 'Repeating <i>no</i> intensifies a denial the way repeating <i>claro</i> intensifies agreement: <i>No, no, no está en Cantabria.</i>' },
@@ -12897,6 +13098,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:126', 'funciones:B1:129', 'funciones:B1:130', 'funciones:B1:131', 'funciones:B1:132'],
   title: 'Pedir opinión',
   summary: 'En tu opinión and según tú both ask what someone thinks, but they front-load the question differently — según tú puts the SOURCE of the view first, which is subtly more pointed than simply asking what someone thinks in general.',
+  keywords: [
+    { es: '¿Tú qué piensas?', en: 'What do you think?' },
+    { es: '¿Qué te parece?', en: 'What do you think of it?' },
+    { es: '¿Qué opinas de…?', en: 'What\'s your view on…?' },
+    { es: '¿Qué opina usted?', en: 'What\'s your view? (formal)' },
+    { es: 'Según tú…', en: 'In your view…' },
+    { es: 'En tu opinión…', en: 'In your opinion…' },
+    { es: 'la propuesta', en: 'the proposal' },
+    { es: 'la ley', en: 'the law' }
+  ],
   sections: [
     { h: 'The bare question', html: '<i>¿Tú qué piensas?</i>, <i>¿Te parece que...?</i> — the direct way to ask, tú register.' },
     { h: 'Fronting the source of the opinion', html: '<i>En tu opinión</i> / <i>Desde tu punto de vista</i> + question puts the framing first: <i>En tu opinión, ¿cuáles son las dos mejores películas del año?</i> <i>Según tú</i> does the same, more pointedly: <i>Según tú, ¿quién debe ganar?</i>' },
@@ -12932,6 +13143,17 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:138', 'funciones:B1:139', 'funciones:B1:140', 'funciones:B1:141', 'funciones:B1:142'],
   title: 'Dar una opinión',
   summary: 'No creo que tengas razón takes the subjunctive after it, and not because doubt itself demands one — the NEGATIVE of an opinion verb (no creo, no pienso, no me parece) is what triggers it, the same mechanism that turns dudo que into a fixed subjunctive trigger.',
+  keywords: [
+    { es: 'En mi opinión', en: 'In my opinion' },
+    { es: 'Me parece que…', en: 'I think (that)…' },
+    { es: 'Creo que…', en: 'I think (that)…' },
+    { es: 'No creo que…', en: 'I don\'t think (that)… (+ subjunctive)' },
+    { es: 'Desde mi punto de vista', en: 'From my point of view' },
+    { es: 'Pienso que…', en: 'I think (that)…' },
+    { es: 'tener razón', en: 'to be right' },
+    { es: 'equivocarse', en: 'to be wrong, to make a mistake' },
+    { es: 'grave', en: 'serious' }
+  ],
   sections: [
     { h: 'The standard openers', html: '<i>En mi opinión</i>, <i>Desde mi punto de vista</i>, <i>(A mí) me parece que</i>, <i>(Yo) pienso que</i> — all followed by the indicative, since a positive opinion states something as your view of the facts.' },
     { h: 'Negating the opinion verb: subjunctive follows', html: 'Negate the OPINION VERB itself — <i>no creo, no pienso, no me parece</i> — and the clause that follows switches to the subjunctive: <i>No creo que tengas razón</i>, <i>A mí no me parece que eso sea importante</i>.' }
@@ -12966,6 +13188,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:150', 'funciones:B1:151', 'funciones:B1:152', 'funciones:B1:155', 'funciones:B1:158'],
   title: 'Pedir valoración',
   summary: '¿Qué tal? alone in a fitting room asks for a verdict on how something looks on you — the whole question is compressed into two words, and only the situation supplies what is actually being judged.',
+  keywords: [
+    { es: '¿Qué te ha parecido?', en: 'What did you think of it?' },
+    { es: '¿Qué tal…?', en: 'How was…?' },
+    { es: '¿Te ha gustado?', en: 'Did you like it?' },
+    { es: '¿Cómo ha ido?', en: 'How did it go?' },
+    { es: '¿Qué opinas de…?', en: 'What do you think of…?' },
+    { es: 'el hotel', en: 'the hotel' },
+    { es: 'la película', en: 'the film' }
+  ],
   sections: [
     { h: '¿Qué tal? alone', html: 'In the right context — trying on clothes, showing something off — <i>¿Qué tal?</i> needs no object at all: <i>—¿Qué tal? —Te quedan muy bien.</i>' },
     { h: '¿Qué tal está + noun?', html: 'Asking for a verdict on a specific thing: <i>¿Qué tal está esta revista?</i>, <i>¿Qué tal está ese hotel?</i>' },
@@ -13001,6 +13232,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:208', 'funciones:B1:211', 'funciones:B1:214'],
   title: 'Expresar aprobación y desaprobación (B1)',
   summary: 'The A1 scale of bien/mal/regular only ever evaluated things already named — B1 adds the machinery to approve or disapprove of an ACTION itself, and that action, once turned into a que-clause, needs the subjunctive: me parece muy mal que llegues tarde.',
+  keywords: [
+    { es: 'Me parece bien que…', en: 'I think it\'s good that… (+ subjunctive)' },
+    { es: 'Me parece mal que…', en: 'I think it\'s wrong that…' },
+    { es: 'Me parece fatal que…', en: 'I think it\'s awful that…' },
+    { es: 'Está bien que…', en: 'It\'s good that…' },
+    { es: '¡Qué bien que…!', en: 'How good that…!' },
+    { es: 'avisar', en: 'to let someone know, to warn' },
+    { es: 'participar', en: 'to take part' },
+    { es: 'conseguir', en: 'to manage, to achieve' }
+  ],
   sections: [
     { h: 'Me parece (muy) mal/bien', html: 'Judging a noun, an action (infinitive) or a whole situation: <i>Me parece muy bien tu decisión</i>, <i>Me parece mal que no avises</i> (subjunctive — a clause, not a simple fact).' },
     { h: 'Está (muy) mal/bien', html: 'A more impersonal judgment of an action: <i>Está muy bien ayudar a los demás</i>, <i>Está mal que mientas</i>.' },
@@ -13036,6 +13277,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:221', 'funciones:B1:224', 'funciones:B1:227'],
   title: 'Posicionarse a favor o en contra',
   summary: 'Estar a favor and estar de acuerdo sound similar but answer different questions — a favor/en contra takes a SIDE on an issue, while de acuerdo agrees or disagrees with a specific claim, and the two do not always line up.',
+  keywords: [
+    { es: 'estar a favor de', en: 'to be in favour of' },
+    { es: 'estar en contra de', en: 'to be against' },
+    { es: 'estar de acuerdo con', en: 'to agree with' },
+    { es: '¡Bien dicho!', en: 'Well said!' },
+    { es: '¡Bien hecho!', en: 'Well done!' },
+    { es: 'la jornada laboral', en: 'the working day' },
+    { es: 'la sanidad', en: 'healthcare' },
+    { es: 'la decisión', en: 'the decision' }
+  ],
   sections: [
     { h: 'Taking a side: a favor / en contra', html: '<i>(No) estoy a favor de + noun/inf</i>, <i>(No) estoy en contra de que + subjuntivo</i> — this positions you on an ISSUE, not necessarily on one person\'s specific statement.' },
     { h: 'Agreeing with a claim: de acuerdo', html: '<i>Estoy de acuerdo con...</i> tracks agreement with a specific claim or person, distinct from taking a broader side.' },
@@ -13071,6 +13322,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:228', 'funciones:B1:229', 'funciones:B1:230'],
   title: 'Preguntar si se está de acuerdo',
   summary: '¿Piensas lo mismo que yo? checks alignment before you have even stated your view — a different move from ¿tú qué piensas?, which asks for an opinion with nothing yet on the table to agree or disagree with.',
+  keywords: [
+    { es: '¿Tú qué opinas?', en: 'What do you think?' },
+    { es: '¿A ti qué te parece?', en: 'What do you make of it?' },
+    { es: '¿Piensas lo mismo?', en: 'Do you think the same?' },
+    { es: '¿No crees?', en: 'Don\'t you think?' },
+    { es: '¿Estás de acuerdo?', en: 'Do you agree?' },
+    { es: 'coincidir con', en: 'to agree with, to share a view' },
+    { es: 'la valoración', en: 'the assessment' },
+    { es: 'la empresa', en: 'the company' }
+  ],
   sections: [
     { h: 'Checking alignment', html: '<i>¿Piensas igual / lo mismo que + person?</i> asks whether someone shares a view already implied or just stated: <i>¿Piensas lo mismo que yo?</i>' },
     { h: 'Opening the floor after stating a fact', html: 'After reporting what someone said or a piece of news, invite a reaction: <i>Salvador ha dicho que es mejor trabajar en grupos grandes. ¿Tú qué opinas?</i>' }
@@ -13104,6 +13365,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:246', 'funciones:B1:247', 'funciones:B1:248', 'funciones:B1:249'],
   title: '(Yo) estoy de acuerdo',
   summary: 'Estar de acuerdo takes con for a person or thing and en for an action or clause — the same con/en split that runs through the whole family of agreement expressions, and mixing them up is the single most common preposition slip at this level.',
+  keywords: [
+    { es: 'Estoy de acuerdo.', en: 'I agree.' },
+    { es: 'Estoy de acuerdo contigo.', en: 'I agree with you.' },
+    { es: 'Tienes razón.', en: 'You\'re right.' },
+    { es: 'Desde luego.', en: 'Absolutely.' },
+    { es: 'Por supuesto.', en: 'Of course.' },
+    { es: 'Exacto.', en: 'Exactly.' },
+    { es: 'Yo también lo veo así.', en: 'I see it that way too.' }
+  ],
   sections: [
     { h: 'Con + person/thing', html: '<i>Estoy de acuerdo contigo</i>, <i>estoy de acuerdo con la nueva ley</i> — <i>con</i> before a person or a noun.' },
     { h: 'En + infinitive or clause', html: '<i>Estoy de acuerdo en participar en el proyecto</i> (infinitive — same subject), <i>estoy de acuerdo en que deberíamos cuidar más el medio ambiente</i> (clause, indicative or subjunctive depending on what is being agreed to).' }
@@ -13138,6 +13408,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:295', 'funciones:B1:296', 'funciones:B1:297', 'funciones:B1:298'],
   title: '(Yo) no estoy de acuerdo',
   summary: 'The same con/en split from agreeing carries straight over to disagreeing — negating estar de acuerdo does not change which preposition goes where, it just flips the polarity of the whole phrase.',
+  keywords: [
+    { es: 'No estoy de acuerdo.', en: 'I don\'t agree.' },
+    { es: 'No creo que…', en: 'I don\'t think (that)… (+ subjunctive)' },
+    { es: 'Yo lo veo distinto.', en: 'I see it differently.' },
+    { es: 'Sí, pero…', en: 'Yes, but…' },
+    { es: 'Depende.', en: 'It depends.' },
+    { es: 'Te equivocas.', en: 'You\'re wrong.' },
+    { es: 'en absoluto', en: 'not at all' }
+  ],
   sections: [
     { h: 'Same prepositions, negated', html: '<i>No estoy de acuerdo con + persona/SN</i>, <i>no estoy de acuerdo en + infinitivo/que + cláusula</i> — the con/en split is unchanged by the negation; only <i>no</i> is added.' }
   ],
@@ -13171,6 +13450,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:329', 'funciones:B1:330', 'funciones:B1:331', 'funciones:B1:332'],
   title: 'Mostrar escepticismo',
   summary: 'Dudo que is a hard subjunctive trigger — no exceptions — while ¿tú crees? does the same skeptical work with no grammar at all, just a question thrown back at the speaker\'s own claim.',
+  keywords: [
+    { es: 'No me lo creo.', en: 'I don\'t believe it.' },
+    { es: '¿Tú crees?', en: 'Do you think so?' },
+    { es: 'Lo dudo.', en: 'I doubt it.' },
+    { es: 'Puede ser, pero…', en: 'Maybe, but…' },
+    { es: 'No me convence.', en: 'It doesn\'t convince me.' },
+    { es: '¡Qué va!', en: 'No way!' },
+    { es: 'Me extraña.', en: 'That surprises me.' }
+  ],
   sections: [
     { h: 'Hedging with no real content', html: '<i>Bueno, depende</i> and <i>Pues... supongo...</i> signal skepticism through hesitation itself, without committing to a position.' },
     { h: 'Throwing the claim back as a question', html: '<i>¿Tú crees?</i> questions what was just said with minimal words — genuinely doubtful, not just curious.' },
@@ -13206,6 +13494,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:339', 'funciones:B1:340', 'funciones:B1:341', 'funciones:B1:342'],
   title: 'Presentar un contraargumento',
   summary: 'Every one of these formulas concedes something FIRST — tienes razón, es cierto, es verdad — before the pero ever arrives, which is exactly what separates a contraargument from a flat contradiction: you have to grant the point before you can turn it.',
+  keywords: [
+    { es: 'Sí, pero…', en: 'Yes, but…' },
+    { es: 'Es cierto que… pero…', en: 'It\'s true that… but…' },
+    { es: 'Tienes razón, aunque…', en: 'You\'re right, although…' },
+    { es: 'por otra parte', en: 'on the other hand' },
+    { es: 'hay que tener en cuenta', en: 'you have to bear in mind' },
+    { es: 'el coste', en: 'the cost' },
+    { es: 'la calidad', en: 'the quality' },
+    { es: 'permitirse', en: 'to afford' }
+  ],
   sections: [
     { h: 'Concede, then pero/aunque', html: '<i>Tienes razón, pero/aunque...</i> — grant the point fully before turning it.' },
     { h: 'Concede with cierto, then turn', html: '<i>Sí, es cierto, pero/sin embargo...</i> — a slightly more formal concession.' },
@@ -13242,6 +13540,17 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:350', 'funciones:B1:352', 'funciones:B1:353', 'funciones:B1:354', 'funciones:B1:356', 'funciones:B1:359', 'funciones:B1:362'],
   title: 'Expresar certeza y evidencia',
   summary: 'Every expression of certainty here takes the indicative — está claro que es así, no dudo que lo hará — because stating something as CERTAIN is stating it as a fact, and facts get the indicative. Doubt it and the mood flips — which is the second half of this lesson.',
+  keywords: [
+    { es: 'Estoy seguro de que…', en: 'I\'m sure (that)…' },
+    { es: 'Seguro que…', en: '… is bound to' },
+    { es: 'Está claro que…', en: 'It\'s clear (that)…' },
+    { es: 'Está demostrado que…', en: 'It\'s been proven (that)…' },
+    { es: 'Sé perfectamente…', en: 'I know perfectly well…' },
+    { es: 'No dudo que…', en: 'I don\'t doubt (that)…' },
+    { es: 'la carretera', en: 'the road' },
+    { es: 'el vuelo', en: 'the flight' },
+    { es: 'aprobar', en: 'to pass (an exam)' }
+  ],
   sections: [
     { h: 'Stating your own certainty', html: '<i>Estoy (totalmente/completamente) seguro de que...</i>, <i>Seguro que...</i> (looser, more common in speech), <i>Sé qué/quién/cuándo...</i> — direct knowledge.' },
     { h: 'Stating something as objectively certain', html: '<i>(No) es cierto/verdad que...</i>, <i>Está claro/Es evidente que...</i>, <i>Está demostrado que...</i> — framing the claim as fact, not opinion.' },
@@ -13278,6 +13587,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:375', 'funciones:B1:378', 'funciones:B1:381', 'funciones:B1:382', 'funciones:B1:385', 'funciones:B1:386'],
   title: 'Expresar falta de certeza y evidencia',
   summary: 'Me parece que and dudo que sit right next to each other on the doubt scale but land on opposite sides of the mood divide — parecer states a weak claim as if it were fact (indicative), while dudar states doubt about the fact itself (subjunctive).',
+  keywords: [
+    { es: 'Me parece que…', en: 'I think (that)… (not certain)' },
+    { es: 'Supongo que…', en: 'I suppose (that)…' },
+    { es: 'No estoy seguro de que…', en: 'I\'m not sure (that)… (+ subjunctive)' },
+    { es: 'No está claro que…', en: 'It isn\'t clear (that)…' },
+    { es: 'Dudo que…', en: 'I doubt (that)…' },
+    { es: 'Parece que…', en: 'It looks like…' },
+    { es: 'el proyecto', en: 'the project' },
+    { es: 'salir adelante', en: 'to go ahead, to succeed' }
+  ],
   sections: [
     { h: 'Weak claims: still indicative', html: '<i>Me parece que...</i>, <i>Parece que...</i>, <i>Supongo que...</i> present a GUESS, but grammatically still as a proposition — indicative follows: <i>Me parece que el lunes es fiesta.</i>' },
     { h: 'Denying certainty: subjunctive', html: '<i>No estoy (muy/completamente) seguro de que...</i>, <i>No está claro/No es evidente que...</i> negate a certainty verb — subjunctive follows, the exact mirror of the affirmative forms above.' },
@@ -13318,6 +13637,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:420', 'funciones:B1:423', 'funciones:B1:424'],
   title: 'Expresar obligación y necesidad',
   summary: 'No puedes hablar alto states an obligation by denying its opposite — the prohibition IS the obligation, just phrased as something you may not do rather than something you must.',
+  keywords: [
+    { es: 'tener que', en: 'to have to' },
+    { es: 'hay que', en: 'one has to' },
+    { es: 'deber', en: 'must, should' },
+    { es: 'es obligatorio', en: 'it\'s compulsory' },
+    { es: 'hace falta', en: 'it\'s needed' },
+    { es: 'estar obligado a', en: 'to be obliged to' },
+    { es: 'no hace falta', en: 'there\'s no need' }
+  ],
   sections: [
     { h: 'Impersonal: es obligatorio/necesario', html: 'States the obligation with no one named as responsible: <i>Es obligatorio llevar casco</i>, <i>Es necesario que todos firmen</i> (subjunctive after <i>que</i>).' },
     { h: 'Debes + infinitivo', html: 'Direct, addressed obligation: <i>Hay cosas que debes saber</i>, <i>No debes hablar así</i>.' },
@@ -13387,6 +13715,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:485', 'funciones:B1:486', 'funciones:B1:487', 'funciones:B1:488'],
   title: 'Expresar habilidad para hacer algo',
   summary: 'Ser un genio para algo and ser un desastre para algo sit at opposite ends of the same scale as soy bueno/malo en — Spanish has a whole ladder of ability claims, and picking the wrong rung either undersells you or sounds like bragging.',
+  keywords: [
+    { es: 'saber + infinitivo', en: 'to know how to' },
+    { es: 'poder', en: 'to be able to' },
+    { es: 'ser capaz de', en: 'to be capable of' },
+    { es: 'se me da bien', en: 'I\'m good at' },
+    { es: 'se me da mal', en: 'I\'m bad at' },
+    { es: 'bastante bien', en: 'quite well' },
+    { es: 'fatal', en: 'terribly' },
+    { es: 'la habilidad', en: 'the skill' }
+  ],
   sections: [
     { h: 'Sé algo/poco/un poco de + noun', html: 'A modest claim of partial knowledge: <i>Sé algo de bricolaje</i> — "I know a bit about DIY," not full mastery.' },
     { h: 'Soy bueno/malo en/para', html: 'The standard middle-ground claim: <i>Es muy bueno para las matemáticas</i>, <i>No soy bueno en los deportes</i>.' },
@@ -13531,6 +13869,15 @@ window.STRAND_LESSONS = [
          'funciones:B1:613', 'funciones:B1:616', 'funciones:B1:617', 'funciones:B1:618'],
   title: 'Expresar deseos',
   summary: 'Ojalá needs no verb of wishing at all — the word itself carries the whole force of a wish, which is why que + subjuntivo alone (que te mejores) can do the same job with even less machinery.',
+  keywords: [
+    { es: 'Quiero que…', en: 'I want … to (+ subjunctive)' },
+    { es: 'Me gustaría que…', en: 'I\'d like … to' },
+    { es: 'Ojalá', en: 'I hope, if only (+ subjunctive)' },
+    { es: 'Espero que…', en: 'I hope that…' },
+    { es: 'Deseo…', en: 'I wish…' },
+    { es: '¡Que tengas suerte!', en: 'I hope you\'re lucky!' },
+    { es: 'el deseo', en: 'the wish' }
+  ],
   sections: [
     { h: 'Quiero que + subjuntivo', html: 'A direct wish about someone else\'s action: <i>Queremos que vengáis los dos.</i>' },
     { h: 'Softened wishes: conditional forms', html: '<i>Me apetecería(n)</i>, <i>Querría/Me encantaría</i> + infinitive soften a wish into something less like a demand: <i>Me encantaría hacer un viaje por el Caribe.</i>' },
@@ -13568,6 +13915,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:632', 'funciones:B1:633', 'funciones:B1:634', 'funciones:B1:635', 'funciones:B1:636'],
   title: 'Preguntar por planes e intenciones',
   summary: '¿En qué estás pensando? and ¿piensas ir al sur? use the same verb, pensar, for two completely different questions — one asks what occupies your mind right now, the other asks about a concrete future plan.',
+  keywords: [
+    { es: '¿Piensas…?', en: 'Are you planning to…?' },
+    { es: '¿Estás pensando en…?', en: 'Are you thinking about…?' },
+    { es: '¿Tienes la intención de…?', en: 'Do you intend to…?' },
+    { es: '¿Cuál es tu intención?', en: 'What do you intend to do?' },
+    { es: 'la boda', en: 'the wedding' },
+    { es: 'la carrera', en: 'the degree' },
+    { es: 'distraído', en: 'distracted' }
+  ],
   sections: [
     { h: '¿Piensas + infinitivo?', html: 'Asks directly about a planned action: <i>¿Piensas ir de vacaciones al sur?</i>' },
     { h: '¿Estás pensando en...?', html: 'Asks about something being considered, not yet decided: <i>Entonces, ¿estás pensando en cambiar de trabajo?</i>' },
@@ -13604,6 +13960,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:648', 'funciones:B1:649', 'funciones:B1:650', 'funciones:B1:651', 'funciones:B1:652'],
   title: 'Expresar planes e intenciones (incluso frustrados)',
   summary: 'Pensaba quedarme en casa, pero me llamó Carlota y fuimos al cine reports a plan that never happened — the imperfecto sets up the intention, pero introduces what actually occurred, and the plan itself simply evaporates without needing to be cancelled explicitly.',
+  keywords: [
+    { es: 'pensar + infinitivo', en: 'to plan to (do something)' },
+    { es: 'estar pensando en', en: 'to be thinking about' },
+    { es: 'tener la intención de', en: 'to intend to' },
+    { es: 'iba a + infinitivo', en: 'I was going to (but didn\'t)' },
+    { es: 'No pienso…', en: 'I have no intention of…' },
+    { es: 'apuntarse a', en: 'to sign up for' },
+    { es: 'el informe', en: 'the report' },
+    { es: 'al menos', en: 'at least' }
+  ],
   sections: [
     { h: 'Pienso / Estoy pensando en + infinitivo', html: '<i>Pienso</i> states a firmer plan; <i>estoy pensando en</i> a plan still being considered: <i>Este verano pienso ir al sur</i> vs <i>Estoy pensando en cambiar de coche.</i>' },
     { h: 'Mi intención es / Tengo la intención de', html: 'More explicit, slightly more formal statements of intent.' },
@@ -13639,6 +14005,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:675', 'funciones:B1:676', 'funciones:B1:677'],
   title: 'Estoy contento / encantado...',
   summary: 'Contento con names what you are happy WITH, contento de names what you are happy TO (be/do), and only the second can take a que-clause about someone else — three prepositions doing three distinct jobs behind what looks like one simple phrase.',
+  keywords: [
+    { es: 'estar contento / contenta', en: 'to be happy, pleased' },
+    { es: 'estar encantado / encantada', en: 'to be delighted' },
+    { es: 'estar satisfecho', en: 'to be satisfied' },
+    { es: 'contento con', en: 'happy with (a thing)' },
+    { es: 'contento de que…', en: 'glad that… (+ subjunctive)' },
+    { es: 'el resultado', en: 'the result' },
+    { es: 'salir bien', en: 'to turn out well' }
+  ],
   sections: [
     { h: 'Contento con + noun', html: 'What you are pleased WITH: <i>Está muy contenta con su trabajo.</i>' },
     { h: 'Contento de + infinitivo', html: 'What you are pleased TO be/do (same subject): <i>Estamos encantados de estar aquí.</i>' },
@@ -13674,6 +14049,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:681', 'funciones:B1:682', 'funciones:B1:683'],
   title: 'Me alegro',
   summary: 'Me alegro un montón grades exactly like an amount would — un montón, mucho, muchísimo — while me alegro de que only ever reaches for the subjunctive, no matter how happy the news makes you.',
+  keywords: [
+    { es: 'Me alegro.', en: 'I\'m glad.' },
+    { es: 'Me alegro de que…', en: 'I\'m glad that… (+ subjunctive)' },
+    { es: 'Me alegro por ti.', en: 'I\'m happy for you.' },
+    { es: 'un montón', en: 'a lot, loads' },
+    { es: 'muchísimo', en: 'very much indeed' },
+    { es: 'alegrarse', en: 'to be glad' },
+    { es: 'el éxito', en: 'the success' }
+  ],
   sections: [
     { h: 'Graded with a quantifier', html: '<i>Me alegro un montón</i>, <i>me alegro mucho</i> — degree words modify how much, not what.' },
     { h: 'Cuando/si + indicative', html: 'A recurring or conditional trigger for happiness: <i>Me alegro cuando vienes a visitarme.</i>' },
@@ -13709,6 +14093,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:698', 'funciones:B1:699', 'funciones:B1:700', 'funciones:B1:707', 'funciones:B1:710', 'funciones:B1:711', 'funciones:B1:714'],
   title: 'Expresar tristeza y aflicción',
   summary: 'Me pongo triste cuando... describes a RECURRING reaction, not a one-off feeling — ponerse marks a change of state each time the trigger happens, distinct from just stating estoy triste as a current fact.',
+  keywords: [
+    { es: 'Estoy triste.', en: 'I\'m sad.' },
+    { es: 'Me pongo triste cuando…', en: 'I get sad when…' },
+    { es: 'Me da pena.', en: 'It makes me sad.' },
+    { es: '¡Qué pena!', en: 'What a shame!' },
+    { es: 'llorar', en: 'to cry' },
+    { es: 'echar de menos', en: 'to miss' },
+    { es: 'la tristeza', en: 'the sadness' }
+  ],
   sections: [
     { h: 'A current state', html: '<i>Estoy (+ cuantificador) + triste/deprimido/mal</i>, <i>Me encuentro deprimido</i> — describing how you are right now.' },
     { h: 'A reaction, each time', html: '<i>Me pongo triste cuando/si/al + infinitivo</i> describes a RECURRING change of state triggered by something: <i>Me pongo triste cuando escucho esta canción.</i>' },
@@ -13744,6 +14137,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:704', 'funciones:B1:705', 'funciones:B1:706'],
   title: 'Me duele (emocional)',
   summary: 'Me duele su actitud reuses the exact same construction that hurts physically (me duele la cabeza) for an emotional wound, with the same reversed subject-experiencer logic: the attitude is what hurts, you are simply on the receiving end.',
+  keywords: [
+    { es: 'Me duele que…', en: 'It hurts me that… (+ subjunctive)' },
+    { es: 'Me duele su actitud.', en: 'His attitude hurts me.' },
+    { es: 'Me molesta que…', en: 'It bothers me that…' },
+    { es: 'Me sienta mal.', en: 'It upsets me.' },
+    { es: 'la actitud', en: 'the attitude' },
+    { es: 'doler', en: 'to hurt' },
+    { es: 'molestar', en: 'to bother' }
+  ],
   sections: [
     { h: 'Me duele + noun', html: 'The thing/situation that causes emotional pain is the subject, you the indirect object — same grammar as the physical sense: <i>Me duele su actitud.</i>' },
     { h: 'Me duele + infinitivo', html: 'The pain comes from your OWN inability to do something: <i>Me duele no poder ayudarte.</i>' },
@@ -13784,6 +14186,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:725', 'funciones:B1:726', 'funciones:B1:727', 'funciones:B1:728'],
   title: 'Expresar placer y diversión',
   summary: 'Lo paso bien tracks the overall EXPERIENCE, not any single action within it — you can reírse mucho and still say lo pasé fatal if the rest of the night went wrong, because the two verbs are judging different things.',
+  keywords: [
+    { es: 'pasarlo bien', en: 'to have a good time' },
+    { es: 'Me lo pasé genial.', en: 'I had a great time.' },
+    { es: 'Lo pasé fatal.', en: 'I had an awful time.' },
+    { es: 'divertirse', en: 'to enjoy oneself' },
+    { es: 'reírse', en: 'to laugh' },
+    { es: 'disfrutar de', en: 'to enjoy' },
+    { es: 'divertido', en: 'fun, funny' },
+    { es: 'la velada', en: 'the evening (social)' }
+  ],
   sections: [
     { h: 'Me río / me divierto: specific reactions', html: '<i>Me río + cuantificador</i> tracks laughter specifically; <i>me divierto</i> tracks enjoyment more broadly: <i>Nos reímos mucho</i>, <i>Me divertí muchísimo en la fiesta.</i>' },
     { h: 'Lo paso bien/mal: the whole experience', html: 'A verdict on the EXPERIENCE overall, not one reaction within it: <i>Me lo estoy pasando estupendamente</i>, <i>Lo pasamos fatal en el concierto</i> — even if some specific moments were fine.' },
@@ -13961,6 +14373,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:828', 'funciones:B1:829', 'funciones:B1:830', 'funciones:B1:831', 'funciones:B1:832', 'funciones:B1:833'],
   title: 'Espero... / Expresar esperanza',
   summary: 'Espero llegar a tiempo and espero que llegues a tiempo look almost identical but split exactly on WHO does the arriving — same subject takes the infinitive, different subject forces que + subjuntivo, the same rule that runs through querer, preferir and the whole hoping/wanting family.',
+  keywords: [
+    { es: 'Espero que sí.', en: 'I hope so.' },
+    { es: 'Espero que no.', en: 'I hope not.' },
+    { es: 'Ojalá', en: 'I hope so, if only' },
+    { es: 'Con un poco de suerte', en: 'With a bit of luck' },
+    { es: 'A ver si…', en: 'Let\'s hope…' },
+    { es: 'la esperanza', en: 'the hope' },
+    { es: 'seguro que', en: 'surely, bound to' }
+  ],
   sections: [
     { h: 'Espero + infinitivo: same subject', html: '<i>Espero llegar a tiempo</i> — I hope (that I) arrive on time.' },
     { h: 'Espero que + subjuntivo: different subject', html: '<i>Espero que estés bien</i> — the hoping and the hoped-for event belong to different people.' },
@@ -14033,6 +14454,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:889', 'funciones:B1:890', 'funciones:B1:891', 'funciones:B1:892'],
   title: 'Expresar admiración y orgullo',
   summary: '¡Es increíble cómo toca el piano! packages a whole embedded question — cómo toca el piano — inside an exclamation, admiring not just THAT she plays but HOW she does it.',
+  keywords: [
+    { es: '¡Qué maravilla!', en: 'How wonderful!' },
+    { es: '¡Qué bonito!', en: 'How lovely!' },
+    { es: 'Estoy orgulloso de…', en: 'I\'m proud of…' },
+    { es: 'admirar', en: 'to admire' },
+    { es: 'impresionante', en: 'impressive' },
+    { es: 'increíble', en: 'incredible' },
+    { es: 'el orgullo', en: 'the pride' }
+  ],
   sections: [
     { h: '¡Qué + adjective!', html: 'A direct exclamation of admiration: <i>¡Qué guapo!</i>, <i>¡Qué grande!</i>, <i>¡Qué maravilla!</i>' },
     { h: 'Es increíble/impresionante + embedded question', html: 'Admiring HOW something is done, not just that it happened: <i>¡Es increíble cómo toca el piano!</i>' },
@@ -14068,6 +14498,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:900', 'funciones:B1:901', 'funciones:B1:902', 'funciones:B1:903', 'funciones:B1:904'],
   title: 'Expresar afecto',
   summary: 'Me caes bien uses exactly the gustar-type reversal one more time — the PERSON you like is the subject, YOU are the indirect object — which is why it agrees with them (me caen bien tus amigos) and not with you.',
+  keywords: [
+    { es: 'Me caes bien.', en: 'I like you. (as a person)' },
+    { es: 'Me cae mal.', en: 'I don\'t like him/her.' },
+    { es: 'Me cae fatal.', en: 'I can\'t stand him/her.' },
+    { es: 'Te quiero.', en: 'I love you.' },
+    { es: 'Te echo de menos.', en: 'I miss you.' },
+    { es: 'el cariño', en: 'the affection' },
+    { es: 'querer a', en: 'to love (a person)' },
+    { es: 'el vecino', en: 'the neighbour' }
+  ],
   sections: [
     { h: 'Me caes bien/mal/fatal: first impressions and rapport', html: 'The gustar-type pattern for how someone strikes you: <i>Tu hermano me cae bien</i>, <i>Los vecinos me caen fatal.</i> Agrees with the PERSON, not with you.' },
     { h: 'Te quiero: love, graded', html: '<i>Te quiero (muchísimo)</i> — direct, graded with an intensifier.' },
@@ -14104,6 +14544,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:942', 'funciones:B1:943', 'funciones:B1:944'],
   title: 'Dar una orden de forma directa',
   summary: 'Corre, corre repeats the plain imperative rather than intensifying it with an adverb — the doubling itself carries the urgency, the same mechanism already met for claro, claro and no, no.',
+  keywords: [
+    { es: 'Ven aquí.', en: 'Come here.' },
+    { es: 'Hazlo ya.', en: 'Do it now.' },
+    { es: 'Corre, corre.', en: 'Hurry up. (the doubling carries the urgency)' },
+    { es: '¡Vamos!', en: 'Come on!' },
+    { es: 'Deja de…', en: 'Stop… (doing something)' },
+    { es: 'No lo hagas.', en: 'Don\'t do it.' },
+    { es: 'ahora mismo', en: 'right now' }
+  ],
   sections: [
     { h: 'The plain imperative', html: '<i>Siéntese</i>, <i>No vuelvas tarde</i>, <i>Cuando llegues a Córdoba, llámame</i> — often chained as a sequence of steps: <i>Pele las patatas, córtelas y fríalas.</i>' },
     { h: 'Doubled imperative for urgency', html: 'Repeating the command intensifies it, the same way <i>claro, claro</i> intensifies agreement: <i>¡Corre, corre!</i>, <i>¡Ven, ven!</i>' },
@@ -14139,6 +14588,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:969', 'funciones:B1:970', 'funciones:B1:971', 'funciones:B1:972', 'funciones:B1:973', 'funciones:B1:974', 'funciones:B1:975'],
   title: 'Pedir un favor',
   summary: 'Tengo que pedirte una cosa announces the request BEFORE making it, buying a beat of preparation the direct ¿me haces un favor? skips entirely — a small extra move for a bigger ask.',
+  keywords: [
+    { es: '¿Me haces un favor?', en: 'Can you do me a favour?' },
+    { es: '¿Te importaría…?', en: 'Would you mind…?' },
+    { es: 'Necesito que…', en: 'I need you to…' },
+    { es: '¿Podrías hacerme el favor de…?', en: 'Could you do me the favour of…?' },
+    { es: 'Tengo que pedirte una cosa.', en: 'I need to ask you something.' },
+    { es: 'acompañar', en: 'to go with' },
+    { es: 'prestar', en: 'to lend' },
+    { es: 'bajar la música', en: 'to turn the music down' }
+  ],
   sections: [
     { h: 'The direct favor question', html: '<i>¿Puedes/Podrías hacerme un favor?</i>, <i>¿Me haces un favor?</i> — jumps straight to the request.' },
     { h: '¿Te importa/importaría...?', html: 'Frames the favor as a possible inconvenience, extra polite: <i>¿Les importaría hacerme un favor?</i>' },
@@ -14180,6 +14639,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1012', 'funciones:B1:1013', 'funciones:B1:1014', 'funciones:B1:1015', 'funciones:B1:1016', 'funciones:B1:1017', 'funciones:B1:1018', 'funciones:B1:1019'],
   title: 'Pedir ayuda de forma atenuada',
   summary: '¿Coges tú la caja grande? asks for help without ever using the word "help" — a plain question about what the other person will do, softer than any explicit request could be.',
+  keywords: [
+    { es: '¿Puedes ayudarme a…?', en: 'Can you help me to…?' },
+    { es: '¿Te importaría…?', en: 'Would you mind…?' },
+    { es: '¿Me echas una mano?', en: 'Can you give me a hand?' },
+    { es: 'Necesito que…', en: 'I need you to… (+ subjunctive)' },
+    { es: 'mover', en: 'to move (something)' },
+    { es: 'el mueble', en: 'the piece of furniture' },
+    { es: 'redactar', en: 'to draft, to write up' },
+    { es: 'el contrato', en: 'the contract' }
+  ],
   sections: [
     { h: 'Ayúdame + softener', html: 'The bare imperative, softened with <i>por favor</i> and a justification: <i>Ayúdame, por favor. Es que no puedo mover esta mesa.</i>' },
     { h: '¿Te importa/importaría / ¿Puedes/Podrías + ayudarme a...?', html: 'The standard softened-question family, from casual to more polite.' },
@@ -14216,6 +14685,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1009', 'funciones:B1:1011', 'funciones:B1:1020'],
   title: 'Pedir ayuda: directa, atenuada y encubierta',
   summary: '¿Puedes escribirla tú? does the SAME job as ¡Ayúdame! — asking someone to act — but by describing your OWN problem first and letting them offer, it never sounds like a request at all.',
+  keywords: [
+    { es: '¡Ayúdame!', en: 'Help me!' },
+    { es: '¿Podrías ayudarme?', en: 'Could you help me?' },
+    { es: 'echar una mano', en: 'to give a hand' },
+    { es: 'No llego.', en: 'I won\'t make it in time.' },
+    { es: 'la mudanza', en: 'the house move' },
+    { es: 'a tiempo', en: 'in time' },
+    { es: 'un momento', en: 'a moment' }
+  ],
   sections: [
     { h: 'Three levels of directness', html: 'Direct: <i>¡Ayúdame!</i> — the bare imperative. Atenuada: <i>¿Puedes/Podrías ayudarme?</i> — softened into a question. Encubierta: describe the problem and let the offer of help follow naturally.' },
     { h: 'Encubierta: hiding the request inside a complaint', html: '<i>Tengo que escribir una carta para mañana, pero es muy tarde</i> — stating the problem invites <i>¿Puedes escribirla tú?</i> without ever directly asking.' }
@@ -14249,6 +14727,16 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1079', 'funciones:B1:1080', 'funciones:B1:1081', 'funciones:B1:1083', 'funciones:B1:1086'],
   title: 'Pedir permiso',
   summary: '¿Se puede fumar? asks about a general rule with the impersonal se, while ¿Me dejas fumar? asks a specific PERSON for their specific permission — the same question about smoking, aimed at completely different targets.',
+  keywords: [
+    { es: '¿Se puede…?', en: 'Is it allowed to…?' },
+    { es: '¿Me dejas…?', en: 'Will you let me…?' },
+    { es: '¿Te importa si…?', en: 'Do you mind if…?' },
+    { es: '¿Te importaría que…?', en: 'Would you mind if… (+ subjunctive)' },
+    { es: '¿Podría…?', en: 'Could I…?' },
+    { es: 'aparcar', en: 'to park' },
+    { es: 'el ordenador', en: 'the computer' },
+    { es: 'ausentarse', en: 'to step out, to be away' }
+  ],
   sections: [
     { h: '¿Se puede + infinitivo?: asking about the rule', html: 'Impersonal — asks whether something is generally allowed, not whether one person permits it: <i>¿Se puede fumar aquí?</i>' },
     { h: '¿Podría + infinitivo?: asking for personal permission, formally', html: '<i>Perdona, ¿podría llegar más tarde mañana? Es que tengo que llevar a mi hijo al médico.</i> — softened with the conditional and followed by a justification.' },
@@ -14284,6 +14772,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1118', 'funciones:B1:1119', 'funciones:B1:1120', 'funciones:B1:1121', 'funciones:B1:1122', 'funciones:B1:1123', 'funciones:B1:1124'],
   title: 'Prohibir',
   summary: 'No tocar is grammatically an infinitive standing alone as a command — a sign format that names no one and needs no conjugation, the impersonal extreme of a whole scale that runs from se prohíbe down to a bare no + subjuntivo aimed at one person.',
+  keywords: [
+    { es: 'No se puede…', en: 'You can\'t…' },
+    { es: 'Está prohibido…', en: '… is forbidden' },
+    { es: 'No + infinitivo', en: 'Do not … (on signs)' },
+    { es: 'Prohibido fumar', en: 'No smoking' },
+    { es: 'No debes…', en: 'You mustn\'t…' },
+    { es: 'Ni se te ocurra.', en: 'Don\'t even think about it.' },
+    { es: 'la norma', en: 'the rule' }
+  ],
   sections: [
     { h: 'Impersonal, written prohibition', html: '<i>Se prohíbe + noun/infinitivo/que...</i>, <i>Está prohibido + infinitivo</i>, <i>No está permitido + infinitivo</i> — the register of official signs.' },
     { h: 'Everyday spoken prohibition', html: '<i>No (se) puede + infinitivo</i>, <i>No debes + infinitivo</i> — softer, conversational.' },
@@ -14319,6 +14816,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1163', 'funciones:B1:1164', 'funciones:B1:1165'],
   title: 'Ofrecer e invitar',
   summary: 'Pruébalo, está buenísimo does not describe what will happen if you try it — it IS the invitation, an imperative doing the work a longer "would you like to try it?" would take twice as many words to do.',
+  keywords: [
+    { es: 'Te invito.', en: 'It\'s on me.' },
+    { es: '¿Quieres…?', en: 'Would you like…?' },
+    { es: '¿Te apetece…?', en: 'Do you fancy…?' },
+    { es: 'Estás invitado.', en: 'You\'re invited.' },
+    { es: 'Si quieres, …', en: 'If you like, …' },
+    { es: 'No, gracias.', en: 'No, thank you.' },
+    { es: 'la invitación', en: 'the invitation' }
+  ],
   sections: [
     { h: '¿Te apetece + noun/infinitivo?', html: 'The standard offer question: <i>¿Te apetece un café?</i>, <i>¿Te apetece tomar algo?</i>' },
     { h: 'The bare imperative as an offer', html: 'A direct imperative, often followed by a reason, IS the invitation: <i>Ven con nosotras. Vamos al cine.</i>, <i>Pruébalo. Está buenísimo.</i>' },
@@ -14353,6 +14859,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:1193', 'funciones:B1:1195', 'funciones:B1:1197', 'funciones:B1:1198', 'funciones:B1:1199', 'funciones:B1:1200'],
   title: 'Rechazar una propuesta, ofrecimiento o invitación',
   summary: 'Every one of these declines leans on es que — the excuse is not decoration, it is the part that keeps a rejection from sounding like a flat, personal no, and dropping it is what makes a refusal feel cold.',
+  keywords: [
+    { es: 'Lo siento, pero no puedo.', en: 'I\'m sorry, but I can\'t.' },
+    { es: 'Me gustaría, pero…', en: 'I\'d like to, but…' },
+    { es: 'Es que…', en: 'The thing is…' },
+    { es: 'Ni hablar.', en: 'No way.' },
+    { es: 'Prefiero no…', en: 'I\'d rather not…' },
+    { es: 'Otra vez será.', en: 'Another time.' },
+    { es: 'No, gracias.', en: 'No, thank you.' }
+  ],
   sections: [
     { h: 'Thanking, then declining', html: '<i>(No,) (no,) muchísimas gracias</i>, <i>(No,) lo siento</i> — soften the no before or as you say it.' },
     { h: 'Es que...: the obligatory excuse', html: '<i>Pues es que tengo que estudiar</i> — the excuse is not optional politeness, it is what keeps the refusal from sounding personal.' },
@@ -18490,6 +19005,16 @@ window.STRAND_LESSONS = [
          'funciones:B1:187', 'funciones:B1:188', 'funciones:B1:189'],
   title: 'Valorar: hechos en indicativo, ajenos en subjuntivo',
   summary: 'The B1 leap in evaluating is not new vocabulary but a new fork: evaluating your OWN stated fact or action stays in the indicative, but evaluating something framed as someone else\'s action needs a "que" clause in the subjunctive — the same judgement, two different grammatical shapes depending on whose action it is.',
+  keywords: [
+    { es: 'Me parece + adjective', en: 'I think it\'s…' },
+    { es: 'Me parece bien que…', en: 'I think it\'s good that… (+ subjunctive)' },
+    { es: 'Es una buena idea que…', en: 'It\'s a good idea that…' },
+    { es: 'estupendo', en: 'great' },
+    { es: 'no está nada mal', en: 'it\'s not bad at all' },
+    { es: '¡Qué mal que…!', en: 'It\'s a shame that…!' },
+    { es: 'el informe', en: 'the report' },
+    { es: 'el descanso', en: 'the break' }
+  ],
   sections: [
     { h: 'Evaluating a fact: no subjunctive needed', html: 'When the thing evaluated is a noun or an infinitive with the same understood subject, no "que"-clause or subjunctive appears: <i>La experiencia ha sido estupenda</i>, <i>Cancelar la conexión a Internet fue un error</i>.' },
     { h: 'Evaluating someone else\'s action: que + subjuntivo', html: 'The moment the evaluated action belongs to someone else and follows "que", the subjunctive appears: <i>Me parece perfecto que te quedes</i>, <i>Es una buena idea que te tomes un descanso</i>.' },
@@ -18532,6 +19057,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:399', 'funciones:B1:400', 'funciones:B1:401', 'funciones:B1:402', 'funciones:B1:403', 'funciones:B1:404', 'funciones:B1:405'],
   title: 'Expresar posibilidad: quiénes exigen subjuntivo y quiénes no',
   summary: 'Every one of these phrases means roughly "maybe", but they split into two grammatical camps that have to be memorized rather than deduced: puede que and es posible/probable que pull the subjunctive, while a lo mejor, seguramente, seguro que and posiblemente keep the indicative — and the future tense itself can express possibility with no marker word at all.',
+  keywords: [
+    { es: 'Puede que…', en: 'It may be that… (+ subjunctive)' },
+    { es: 'Es posible que…', en: 'It\'s possible that…' },
+    { es: 'Quizá / tal vez', en: 'perhaps' },
+    { es: 'A lo mejor', en: 'maybe' },
+    { es: 'Podría ser.', en: 'It could be.' },
+    { es: 'Seguramente', en: 'probably' },
+    { es: 'imposible', en: 'impossible' }
+  ],
   sections: [
     { h: 'The subjunctive camp: puede que, es posible/probable que', html: '<i>Puede que tenga problemas</i>, <i>Es posible que tengamos que hacer algún cambio</i> — both pull the following verb into the subjunctive.' },
     { h: 'The indicative camp: a lo mejor, seguramente, seguro que, posiblemente', html: 'Despite meaning something close to "maybe" or "probably", these keep the indicative: <i>A lo mejor no funciona</i>, <i>Seguramente estaba enfermo</i>, <i>Seguro que todavía está en casa</i>, <i>posiblemente estaban juntos</i>.' },
@@ -18735,6 +19269,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:B1:588', 'funciones:B1:589', 'funciones:B1:590', 'funciones:B1:591', 'funciones:B1:592', 'funciones:B1:593', 'funciones:B1:594'],
   title: 'Preguntar por deseos: te apetece, tienes ganas de',
   summary: 'Beyond plain querer, B1 asks about desire through apetecer (an impersonal, gustar-type verb) and tener ganas de, and both switch to the subjunctive the moment the desired thing is someone else\'s action rather than a noun or infinitive.',
+  keywords: [
+    { es: '¿Qué quieres que…?', en: 'What do you want … to…?' },
+    { es: '¿Te gustaría…?', en: 'Would you like…?' },
+    { es: '¿Qué te gustaría hacer?', en: 'What would you like to do?' },
+    { es: '¿Qué deseas?', en: 'What would you like?' },
+    { es: '¿Prefieres que…?', en: 'Would you rather…?' },
+    { es: 'el plan', en: 'the plan' }
+  ],
   sections: [
     { h: '¿Te apetece/Tienes ganas de + SN/infinitivo?', html: 'The default way to ask about a want with no urgency: <i>¿Te apetece ver a tus padres?</i>' },
     { h: 'Adding "que": someone else\'s action', html: 'The moment the wanted thing is an action performed by someone else, <i>que</i> + subjunctive appears: <i>¿Tienes ganas de que vuelva Roberto?</i>, <i>¿Quieres que te presente a mis amigos?</i>' },
@@ -18864,6 +19406,15 @@ window.STRAND_LESSONS = [
          'funciones:B1:991', 'funciones:B1:992', 'funciones:B1:993', 'funciones:B1:994', 'funciones:B1:996'],
   title: 'Pedir objetos: del imperativo directo a la pregunta atenuada',
   summary: 'The same request for a physical object can be a bare imperative, a softened imperative with "por favor" and a reason, or a question that hands the other person a graceful way to refuse — three levels of directness for what is grammatically almost the same sentence.',
+  keywords: [
+    { es: 'Pásame…', en: 'Pass me…' },
+    { es: 'Déjame…', en: 'Lend me…' },
+    { es: '¿Podrías darme…?', en: 'Could you give me…?' },
+    { es: '¿Me pasas…?', en: 'Can you pass me…?' },
+    { es: 'la mantequilla', en: 'the butter' },
+    { es: 'el encendedor', en: 'the lighter' },
+    { es: 'un poco más de', en: 'a bit more' }
+  ],
   sections: [
     { h: 'Direct: imperative + object', html: '<i>Pásame la mantequilla</i>, <i>Póngame también medio kilo de fresas</i> — the imperative alone, used with people you know well or across a shop counter.' },
     { h: 'Softened: imperative + atenuador', html: 'Adding <i>por favor</i> and often a reason softens the same imperative: <i>Déjame tu encendedor, por favor</i>, <i>Tráeme el libro la semana que viene. Es que lo necesito.</i>' },
@@ -18907,6 +19458,15 @@ window.STRAND_LESSONS = [
          'funciones:B1:1042', 'funciones:B1:1044', 'funciones:B1:1045', 'funciones:B1:1046', 'funciones:B1:1049'],
   title: 'Responder a una petición: aceptar, dudar, negarse',
   summary: 'Three distinct responses to a request, each with its own grammar: agreeing without conditions, agreeing WITH a condition using a conditional clause, and refusing politely by pairing an apology with a reason introduced by "es que" — refusing bluntly, with no cushioning at all, is its own separate, much starker register.',
+  keywords: [
+    { es: 'Ahora mismo.', en: 'Right away.' },
+    { es: 'Enseguida.', en: 'Straight away.' },
+    { es: 'Vale, voy.', en: 'OK, I\'m coming.' },
+    { es: 'Un momento.', en: 'Just a moment.' },
+    { es: 'Es que…', en: 'The thing is…' },
+    { es: 'No puedo ahora.', en: 'I can\'t right now.' },
+    { es: 'Ya voy.', en: 'I\'m on my way.' }
+  ],
   sections: [
     { h: 'Agreeing without reservation', html: '<i>Claro que sí</i>, <i>De acuerdo</i> commit fully, no conditions attached.' },
     { h: 'Agreeing with a condition', html: '<i>Sí, si me la devuelves pronto</i> attaches a condition to the agreement — a conditional clause, not a flat yes. <i>Bueno, venga...</i> agrees reluctantly, often followed by a caveat: <i>Pero cuídala mucho, ¿vale?</i>' },
@@ -18951,6 +19511,15 @@ window.STRAND_LESSONS = [
          'funciones:B1:1143', 'funciones:B1:1144', 'funciones:B1:1145', 'funciones:B1:1146', 'funciones:B1:1148'],
   title: 'Proponer y sugerir: seis formas, una escala de fuerza',
   summary: 'From a soft question to a near-command, B1 offers a real scale for proposing something — and the two that look most alike, "podrías/podríamos" and "deberías", are not interchangeable: one offers an option, the other leans toward advice.',
+  keywords: [
+    { es: '¿Y si…?', en: 'What if…? / How about…?' },
+    { es: '¿Qué tal si…?', en: 'How about…?' },
+    { es: '¿Te apetece…?', en: 'Do you fancy…?' },
+    { es: 'Podríamos…', en: 'We could…' },
+    { es: '¿Por qué no…?', en: 'Why don\'t we…?' },
+    { es: 'Te propongo…', en: 'I suggest…' },
+    { es: 'quedar', en: 'to arrange to meet' }
+  ],
   sections: [
     { h: 'Soft: a question about the other person', html: '<i>¿Te apetece que + subjuntivo?</i>, <i>¿Qué te parece + si/infinitivo?</i> frame the proposal entirely as a question about what the other person wants.' },
     { h: 'Middle: ¿y si...? and podríamos', html: '<i>¿Y si vamos este año a la playa?</i> (present indicative) floats an idea as a genuine option. <i>Podríamos ir a la montaña</i> suggests without pushing.' },
@@ -18996,6 +19565,15 @@ window.STRAND_LESSONS = [
          'funciones:B1:1176', 'funciones:B1:1178', 'funciones:B1:1179'],
   title: 'Aceptar una propuesta: entusiasmo y aceptación con reparos',
   summary: 'The same "yes" comes in an enthusiastic and a reluctant version, and the reluctant one has its own fixed formula — "bueno, si insistes" — that signals you are giving in rather than genuinely wanting to.',
+  keywords: [
+    { es: 'Vale.', en: 'OK.' },
+    { es: 'Me parece bien.', en: 'Sounds good.' },
+    { es: '¡Genial!', en: 'Great!' },
+    { es: 'Como quieras.', en: 'As you like.' },
+    { es: 'Me apetece mucho.', en: 'I\'d really like that.' },
+    { es: 'Por mí, perfecto.', en: 'Fine by me.' },
+    { es: 'De acuerdo.', en: 'Agreed.' }
+  ],
   sections: [
     { h: 'Enthusiastic acceptance', html: 'A range of fixed positive words commits fully: <i>Perfecto</i>, <i>Estupendo</i>, <i>Fenomenal</i>, <i>(Muy) buena idea</i>, <i>Con mucho gusto</i>.' },
     { h: 'Practical, neutral acceptance', html: '<i>Vale, podemos quedar a las ocho</i>, <i>(Está) bien, de acuerdo</i> accept without extra enthusiasm — just confirming the plan.' },
@@ -19037,6 +19615,16 @@ window.STRAND_LESSONS = [
          'funciones:B1:1214', 'funciones:B1:1215', 'funciones:B1:1216', 'funciones:B1:1217', 'funciones:B1:1218'],
   title: 'Aconsejar: del condicional a "yo que tú"',
   summary: 'Advice runs on the conditional (podrías, tendrías que, deberías) for most everyday cases, but the most distinctively Spanish move is stepping into the other person\'s shoes explicitly — "yo que tú" — before giving the advice, which frames it as what you yourself would do, not an order.',
+  keywords: [
+    { es: 'Deberías…', en: 'You should…' },
+    { es: 'Podrías…', en: 'You could…' },
+    { es: 'Yo que tú…', en: 'If I were you…' },
+    { es: 'Tendrías que…', en: 'You\'d have to…' },
+    { es: 'Te aconsejo…', en: 'I advise you…' },
+    { es: 'Es importante que…', en: 'It\'s important that… (+ subjunctive)' },
+    { es: 'el especialista', en: 'the specialist' },
+    { es: 'el jefe', en: 'the boss' }
+  ],
   sections: [
     { h: 'The conditional family', html: '<i>Podrías/Tendrías que/Deberías + infinitivo</i> are the default advice verbs, in roughly rising strength: <i>Podrías trabajar un poco menos</i>, <i>Tendrías que hablar con ella</i>, <i>Deberías dormir un poco más</i>.' },
     { h: 'Yo que tú / Yo en tu lugar', html: 'Stepping into the listener\'s position before advising softens it into a shared perspective rather than an order: <i>Yo que tú, consultaría con un especialista.</i>' },
@@ -19477,6 +20065,16 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:B1:237', 'tacticas_pragmaticas:B1:238'],
   title: 'Atenuación: desplazar el tiempo verbal para suavizar',
   summary: 'B1\'s central softening trick is temporal: moving a request or opinion into the imperfect or conditional does not change WHEN it happens, only how much it asks of the listener — the "imperfecto de cortesía" famously softens a shop assistant\'s question with no reference to the past at all.',
+  keywords: [
+    { es: '¿Qué deseaba?', en: 'What can I do for you? (softened)' },
+    { es: 'Venía por…', en: 'I\'ve come about…' },
+    { es: 'Yo diría que…', en: 'I would say that…' },
+    { es: '¿Podrías…?', en: 'Could you…?' },
+    { es: '¿Te importaría…?', en: 'Would you mind…?' },
+    { es: 'Me parece que…', en: 'I think that… (softer than creo)' },
+    { es: 'el anuncio', en: 'the advert' },
+    { es: 'los dulces', en: 'the sweets' }
+  ],
   sections: [
     { h: 'The courtesy imperfect: no past meaning at all', html: '<i>¿Qué deseaba?</i>, <i>¿Cómo te llamabas?</i> use the imperfect with a PRESENT meaning — the past tense itself is the softening device, distancing the request from a blunt present-tense demand.' },
     { h: 'The courtesy conditional', html: '<i>¿Podrías abrir la ventana?</i>, <i>¿Te importaría cerrar la puerta?</i> use the conditional for the same softening job, interchangeable with a future in meaning but much gentler in effect.' },

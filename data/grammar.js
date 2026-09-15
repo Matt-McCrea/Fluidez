@@ -176,6 +176,16 @@ window.CONCEPT_LESSONS = [
 {
   id: 'impneg', canDo: 'tell someone NOT to do something', title: 'Imperativo negativo', level: 4,
   summary: 'Negative commands ("don\'t speak!") are built entirely from the present subjunctive — including tú, which has its own special form in the affirmative but switches to the subjunctive here.',
+  keywords: [
+    { es: 'No hables.', en: 'Don\'t speak.' },
+    { es: 'No comas.', en: 'Don\'t eat.' },
+    { es: 'No vengas.', en: 'Don\'t come.' },
+    { es: 'No vayas.', en: 'Don\'t go.' },
+    { es: 'No te preocupes.', en: 'Don\'t worry.' },
+    { es: 'No lo hagas.', en: 'Don\'t do it.' },
+    { es: 'despacio / rápido', en: 'slowly / fast' },
+    { es: 'tanto', en: 'so much' }
+  ],
   sections: [
     { h: 'How it forms', html: 'Take the <b>presente de subjuntivo</b> form for the person you\'re addressing and put <b>no</b> in front: <i>no hables, no hable, no hablemos, no habléis, no hablen</i>.' },
     { h: 'The one thing that changes', html: '<ul><li>Affirmative tú has its own form: <i>¡Habla!</i>, <i>¡Ven!</i></li><li>Negative tú switches to the subjunctive: <i>¡No hables!</i>, <i>¡No vengas!</i></li><li>Every other person (usted, nosotros, vosotros, ustedes) is already subjunctive-shaped in the affirmative too, so those don\'t change between positive and negative.</li></ul>' },
