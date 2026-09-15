@@ -9901,7 +9901,7 @@ window.STRAND_LESSONS = [
     { id: 'p:tempvelvol:patron', kind: 'mcq', q: '"Estamos a 30 grados" usa el mismo patrón que:',
       options: ['Granada está a 30 kilómetros.', 'Granada es 30 kilómetros.', 'Granada tiene 30 kilómetros.'], answer: 0 },
     { id: 'p:tempvelvol:cloze', kind: 'cloze', text: 'Iba a 100 kilómetros por ___. (per hour)', accept: ['hora'] },
-    { id: 'p:tempvelvol:recall', kind: 'recall', front: 'What grammatical pattern do temperature and distance share?', back: 'estar a + [número] + [unidad]' }
+    { id: 'p:tempvelvol:recall', kind: 'recall', front: 'Madrid is 300 km away: "Madrid ___ a 300 kilómetros."', back: 'está' }
   ]
 },
 
@@ -10033,7 +10033,7 @@ window.STRAND_LESSONS = [
  * extending the "lifecycle of an action" merge to five stages).
  * ------------------------------------------------------------------------ */
 {
-  id: 'nt-tiempo-referencias-futuro-pasado-presente-b1', canDo: 'say how long I have been doing something with llevar + gerundio', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-tiempo-referencias-futuro-pasado-presente-b1', canDo: 'say how long you have been doing something with llevar + gerundio', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:414', 'nociones_generales:B1:415', 'nociones_generales:B1:465', 'nociones_generales:B1:466', 'nociones_generales:B1:454', 'nociones_generales:B1:447', 'nociones_generales:B1:448', 'nociones_generales:B1:451'],
   title: 'El tiempo: siglos, décadas y el presente que dura',
   summary: 'Llevar + gerundio states how long a situation has continued right up to now — llevo un año trabajando aquí — a construction with no direct English equivalent, built from a verb that everywhere else just means "to carry."',
@@ -10351,7 +10351,7 @@ window.STRAND_LESSONS = [
     { id: 'p:evalvalB1:estara', kind: 'mcq', q: '¿Cuándo se usa "estar a" para el precio?',
       options: ['precio fijo', 'precio que fluctúa (fruta, moneda)', 'nunca con precios'], answer: 1 },
     { id: 'p:evalvalB1:cloze', kind: 'cloze', text: '¿Qué te ___ la propuesta? (parecer)', accept: ['parece'] },
-    { id: 'p:evalvalB1:recall', kind: 'recall', front: 'In "me parece caro," is "me" the subject or the object?', back: 'the object — the price/thing is the subject, exactly like gustar' }
+    { id: 'p:evalvalB1:recall', kind: 'recall', front: 'In "me parece caro", which word decides whether you say parece or parecen?', back: 'the price — the thing being judged' }
   ]
 },
 
@@ -10435,7 +10435,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-reflexion-expresion-b1', canDo: 'say I realised something with darse cuenta de, and tell a joke or a story', strand: 'notion', cefr: 'B1', level: 3, theme: null,
+  id: 'nt-reflexion-expresion-b1', canDo: 'say you realised something with darse cuenta de, and tell a joke or a story', strand: 'notion', cefr: 'B1', level: 3, theme: null,
   pcic: ['nociones_generales:B1:1025', 'nociones_generales:B1:1027', 'nociones_generales:B1:1030', 'nociones_generales:B1:1049', 'nociones_generales:B1:1055', 'nociones_generales:B1:1059'],
   title: 'Reflexión y expresión: darse cuenta de, contar un chiste',
   summary: 'Darse cuenta de means "to realize/become aware," and it is reflexive — you cannot simply "cuenta" something the way you might expect from the bare verb contar, which instead means "to tell/count."',
@@ -12997,7 +12997,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-aprobacion-desaprobacion-b1', canDo: 'say I approve or disapprove of what someone did', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  id: 'fn-aprobacion-desaprobacion-b1', canDo: 'approve or disapprove of what someone did', strand: 'function', cefr: 'B1', level: 3, theme: null,
   pcic: ['funciones:B1:208', 'funciones:B1:211', 'funciones:B1:214'],
   title: 'Expresar aprobación y desaprobación (B1)',
   summary: 'The A1 scale of bien/mal/regular only ever evaluated things already named — B1 adds the machinery to approve or disapprove of an ACTION itself, and that action, once turned into a que-clause, needs the subjunctive: me parece muy mal que llegues tarde.',
@@ -13167,7 +13167,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-mostrar-escepticismo-b1', canDo: 'show I do not quite believe it', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  id: 'fn-mostrar-escepticismo-b1', canDo: 'show that you do not quite believe it', strand: 'function', cefr: 'B1', level: 3, theme: null,
   pcic: ['funciones:B1:329', 'funciones:B1:330', 'funciones:B1:331', 'funciones:B1:332'],
   title: 'Mostrar escepticismo',
   summary: 'Dudo que is a hard subjunctive trigger — no exceptions — while ¿tú crees? does the same skeptical work with no grammar at all, just a question thrown back at the speaker\'s own claim.',
@@ -13238,7 +13238,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-certeza-evidencia-b1', canDo: 'say how sure I am, and hear where the indicative breaks', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  id: 'fn-certeza-evidencia-b1', canDo: 'say how sure you are, and hear where the indicative gives way to the subjunctive', strand: 'function', cefr: 'B1', level: 3, theme: null,
   pcic: ['funciones:B1:350', 'funciones:B1:352', 'funciones:B1:353', 'funciones:B1:354', 'funciones:B1:356', 'funciones:B1:359', 'funciones:B1:362'],
   title: 'Expresar certeza y evidencia',
   summary: 'Every expression of certainty here takes the indicative — está claro que es así, no dudo que lo hará — because stating something as CERTAIN is stating it as a fact, and facts get the indicative. Doubt it and the mood flips — which is the second half of this lesson.',
@@ -13314,7 +13314,7 @@ window.STRAND_LESSONS = [
  * the gustos/deseos/sentimientos cluster (seq 283-357).
  * ========================================================================== */
 {
-  id: 'fn-obligacion-necesidad-b1', canDo: 'say what has to be done and what I am obliged to do', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  id: 'fn-obligacion-necesidad-b1', canDo: 'say what has to be done and what you are obliged to do', strand: 'function', cefr: 'B1', level: 3, theme: null,
   pcic: ['funciones:B1:420', 'funciones:B1:423', 'funciones:B1:424'],
   title: 'Expresar obligación y necesidad',
   summary: 'No puedes hablar alto states an obligation by denying its opposite — the prohibition IS the obligation, just phrased as something you may not do rather than something you must.',
@@ -13349,7 +13349,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-has-oido-b1', canDo: 'introduce news I have heard', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  id: 'fn-has-oido-b1', canDo: 'introduce news you have heard', strand: 'function', cefr: 'B1', level: 3, theme: null,
   pcic: ['funciones:B1:438', 'funciones:B1:439', 'funciones:B1:440'],
   title: '¿Has oído...?',
   summary: 'Oír hablar de is not the same as oír — one asks whether news of an event reached you, the other asks whether you have ever come across a name at all, and Unamuno is not something that "happened" to you the way an accident is.',
@@ -13383,7 +13383,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-habilidad-b1', canDo: 'say what I am able to do and how well', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  id: 'fn-habilidad-b1', canDo: 'say what you are able to do and how well', strand: 'function', cefr: 'B1', level: 3, theme: null,
   pcic: ['funciones:B1:485', 'funciones:B1:486', 'funciones:B1:487', 'funciones:B1:488'],
   title: 'Expresar habilidad para hacer algo',
   summary: 'Ser un genio para algo and ser un desastre para algo sit at opposite ends of the same scale as soy bueno/malo en — Spanish has a whole ladder of ability claims, and picking the wrong rung either undersells you or sounds like bragging.',
@@ -13419,7 +13419,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-aversion-b1', canDo: 'say I cannot stand something', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  id: 'fn-aversion-b1', canDo: 'say you cannot stand something', strand: 'function', cefr: 'B1', level: 3, theme: null,
   pcic: ['funciones:B1:552', 'funciones:B1:554', 'funciones:B1:557', 'funciones:B1:560'],
   title: 'Expresar aversión',
   summary: 'Odio and me molesta look like they sit on the same scale, but odiar is a flat, absolute rejection while molestar grades — something can molestar un poco or molestar muchísimo, a dial odiar simply does not have.',
@@ -13454,7 +13454,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-preferencia-b1', canDo: 'say which I prefer and why', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  id: 'fn-preferencia-b1', canDo: 'say which you prefer and why', strand: 'function', cefr: 'B1', level: 3, theme: null,
   pcic: ['funciones:B1:573', 'funciones:B1:574', 'funciones:B1:575', 'funciones:B1:576'],
   title: 'Expresar preferencia',
   summary: 'Prefiero X a Y needs a, never que — the exact opposite of the comparative que learned earlier — which is why prefiero el cine al teatro trips up learners who default to the more familiar comparison pattern.',
@@ -13490,7 +13490,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-no-me-importa-b1', canDo: 'say I do not mind, at three strengths', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  id: 'fn-no-me-importa-b1', canDo: 'say you do not mind, at three strengths', strand: 'function', cefr: 'B1', level: 4, theme: null,
   pcic: ['funciones:B1:582', 'funciones:B1:583', 'funciones:B1:584'],
   title: 'No me importa (indiferencia)',
   summary: 'No me importa can take a single noun, an "o" pair of options, an infinitive, or a whole que-clause — the same shape of indifference stretched over four different grammatical objects, always with the subjunctive once a clause is involved.',
@@ -13526,7 +13526,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-expresar-deseos-b1', canDo: 'say what I want to happen', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  id: 'fn-expresar-deseos-b1', canDo: 'say what you want to happen', strand: 'function', cefr: 'B1', level: 4, theme: null,
   pcic: ['funciones:B1:601', 'funciones:B1:602', 'funciones:B1:605', 'funciones:B1:606', 'funciones:B1:607', 'funciones:B1:610',
          'funciones:B1:613', 'funciones:B1:616', 'funciones:B1:617', 'funciones:B1:618'],
   title: 'Expresar deseos',
@@ -13600,7 +13600,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-expresar-planes-b1', canDo: 'tell someone my plans and ask about theirs', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  id: 'fn-expresar-planes-b1', canDo: 'tell someone your plans and ask about theirs', strand: 'function', cefr: 'B1', level: 4, theme: null,
   pcic: ['funciones:B1:648', 'funciones:B1:649', 'funciones:B1:650', 'funciones:B1:651', 'funciones:B1:652'],
   title: 'Expresar planes e intenciones (incluso frustrados)',
   summary: 'Pensaba quedarme en casa, pero me llamó Carlota y fuimos al cine reports a plan that never happened — the imperfecto sets up the intention, pero introduces what actually occurred, and the plan itself simply evaporates without needing to be cancelled explicitly.',
@@ -13635,7 +13635,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-contento-encantado-b1', canDo: 'say I am pleased, delighted or thrilled', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  id: 'fn-contento-encantado-b1', canDo: 'say you are pleased, delighted or thrilled', strand: 'function', cefr: 'B1', level: 4, theme: null,
   pcic: ['funciones:B1:675', 'funciones:B1:676', 'funciones:B1:677'],
   title: 'Estoy contento / encantado...',
   summary: 'Contento con names what you are happy WITH, contento de names what you are happy TO (be/do), and only the second can take a que-clause about someone else — three prepositions doing three distinct jobs behind what looks like one simple phrase.',
@@ -13670,7 +13670,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-me-alegro-b1', canDo: 'say I am glad for someone else', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  id: 'fn-me-alegro-b1', canDo: 'say you are glad for someone else', strand: 'function', cefr: 'B1', level: 4, theme: null,
   pcic: ['funciones:B1:681', 'funciones:B1:682', 'funciones:B1:683'],
   title: 'Me alegro',
   summary: 'Me alegro un montón grades exactly like an amount would — un montón, mucho, muchísimo — while me alegro de que only ever reaches for the subjunctive, no matter how happy the news makes you.',
@@ -13705,7 +13705,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-tristeza-afliccion-b1', canDo: 'say I am sad, and say why', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  id: 'fn-tristeza-afliccion-b1', canDo: 'say you are sad, and say why', strand: 'function', cefr: 'B1', level: 4, theme: null,
   pcic: ['funciones:B1:698', 'funciones:B1:699', 'funciones:B1:700', 'funciones:B1:707', 'funciones:B1:710', 'funciones:B1:711', 'funciones:B1:714'],
   title: 'Expresar tristeza y aflicción',
   summary: 'Me pongo triste cuando... describes a RECURRING reaction, not a one-off feeling — ponerse marks a change of state each time the trigger happens, distinct from just stating estoy triste as a current fact.',
@@ -13770,7 +13770,7 @@ window.STRAND_LESSONS = [
     { id: 'p:meduelob1:subjuntivo', kind: 'mcq', q: '"Me duele que no me ___." (llamar, tú)',
       options: ['llamas', 'llames', 'llamarás'], answer: 1 },
     { id: 'p:meduelob1:cloze', kind: 'cloze', text: 'Me duele no ___ ayudarte. (poder)', accept: ['poder'] },
-    { id: 'p:meduelob1:recall', kind: 'recall', front: 'In "me duele su actitud", who/what is the grammatical subject?', back: 'su actitud — the cause, not the person feeling it' }
+    { id: 'p:meduelob1:recall', kind: 'recall', front: 'In "me duele su actitud", which word decides whether you say duele or duelen?', back: 'su actitud' }
   ]
 },
 
@@ -13780,7 +13780,7 @@ window.STRAND_LESSONS = [
  * units (seq 358-371).
  * ========================================================================== */
 {
-  id: 'fn-placer-diversion-b1', canDo: 'say I enjoyed something and found it funny', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  id: 'fn-placer-diversion-b1', canDo: 'say you enjoyed something and found it funny', strand: 'function', cefr: 'B1', level: 4, theme: null,
   pcic: ['funciones:B1:725', 'funciones:B1:726', 'funciones:B1:727', 'funciones:B1:728'],
   title: 'Expresar placer y diversión',
   summary: 'Lo paso bien tracks the overall EXPERIENCE, not any single action within it — you can reírse mucho and still say lo pasé fatal if the rest of the night went wrong, because the two verbs are judging different things.',
@@ -13815,7 +13815,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-aburrimiento-b1', canDo: 'say I am bored and that something drags', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  id: 'fn-aburrimiento-b1', canDo: 'say you are bored and that something drags', strand: 'function', cefr: 'B1', level: 4, theme: null,
   pcic: ['funciones:B1:736', 'funciones:B1:737', 'funciones:B1:738', 'funciones:B1:741'],
   title: 'Expresar aburrimiento',
   summary: 'Me aburro and me aburre look like the same verb used two ways, and they are — reflexive for how YOU feel, transitive for what CAUSES it — the identical pattern already met with encantar and doler.',
@@ -13845,7 +13845,7 @@ window.STRAND_LESSONS = [
     { id: 'p:aburrimientob1:causa', kind: 'mcq', q: '"___ mucho esta película." (aburrir — la película es la causa)',
       options: ['Me aburro', 'Me aburre', 'Aburrido'], answer: 1 },
     { id: 'p:aburrimientob1:cloze', kind: 'cloze', text: '¡Qué ___! (rollo)', accept: ['rollo'] },
-    { id: 'p:aburrimientob1:recall', kind: 'recall', front: 'Me aburro vs me aburre — which one has the boring thing as its subject?', back: 'me aburre' }
+    { id: 'p:aburrimientob1:recall', kind: 'recall', front: 'Which one means "it bores me" rather than "I get bored"?', back: 'me aburre' }
   ]
 },
 
@@ -13885,7 +13885,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-miedo-ansiedad-preocupacion-b1', canDo: 'say I am afraid, anxious or worried about something', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  id: 'fn-miedo-ansiedad-preocupacion-b1', canDo: 'say you are afraid, anxious or worried about something', strand: 'function', cefr: 'B1', level: 4, theme: null,
   pcic: ['funciones:B1:776', 'funciones:B1:777', 'funciones:B1:778', 'funciones:B1:781', 'funciones:B1:784', 'funciones:B1:787', 'funciones:B1:788'],
   title: 'Expresar miedo, ansiedad y preocupación',
   summary: 'Tengo miedo and me da miedo describe the same fear from two different grammatical angles — one puts YOU as the one who has it, the other puts the frightening thing as the cause, the same subject-flip already familiar from encantar and doler.',
@@ -13921,7 +13921,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-empatia-b1', canDo: 'show I know how someone feels', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  id: 'fn-empatia-b1', canDo: 'show that you know how someone feels', strand: 'function', cefr: 'B1', level: 4, theme: null,
   pcic: ['funciones:B1:808', 'funciones:B1:809', 'funciones:B1:810', 'funciones:B1:811', 'funciones:B1:812', 'funciones:B1:815'],
   title: 'Expresar empatía',
   summary: 'Entiendo que estés enfadado is not neutral information about your understanding — it validates the OTHER person\'s feeling, and the subjunctive marks exactly that: you are not asserting a fact, you are acknowledging their state.',
@@ -14480,7 +14480,7 @@ window.STRAND_LESSONS = [
     { id: 'p:tranquilizarb1:minimizar', kind: 'mcq', q: '¿Cuál minimiza el PROBLEMA en sí, no el sentimiento?',
       options: ['No llores.', 'No pasa nada.', 'No te enfades.'], answer: 1 },
     { id: 'p:tranquilizarb1:cloze', kind: 'cloze', text: 'No te ___ (preocupar), todo saldrá bien.', accept: ['preocupes'] },
-    { id: 'p:tranquilizarb1:recall', kind: 'recall', front: 'What grammatical form does Spanish consolation lean on most?', back: 'the negative imperative, aimed directly at the feeling' }
+    { id: 'p:tranquilizarb1:recall', kind: 'recall', front: 'Telling someone not to worry', back: 'No te preocupes' }
   ]
 },
 
@@ -14620,7 +14620,7 @@ window.STRAND_LESSONS = [
     { id: 'p:buenosdeseosb1:enfermo', kind: 'mcq', q: 'A alguien que está enfermo le dices:',
       options: ['Que te diviertas.', 'Que te mejores.', 'Buen viaje.'], answer: 1 },
     { id: 'p:buenosdeseosb1:cloze', kind: 'cloze', text: '___ mucho en la fiesta. (que te diviertas)', accept: ['Que te diviertas', 'que te diviertas'] },
-    { id: 'p:buenosdeseosb1:recall', kind: 'recall', front: 'Two grammatical shapes for the same good wish', back: 'que + subjuntivo, and the bare imperative' }
+    { id: 'p:buenosdeseosb1:recall', kind: 'recall', front: 'Wishing someone a good rest, with que', back: 'Que descanses' }
   ]
 },
 
@@ -14761,7 +14761,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-seguir-relato-interes-b1', canDo: 'show I am following and want to hear more', strand: 'function', cefr: 'B1', level: 5, theme: null,
+  id: 'fn-seguir-relato-interes-b1', canDo: 'show that you are following and want to hear more', strand: 'function', cefr: 'B1', level: 5, theme: null,
   pcic: ['funciones:B1:1539', 'funciones:B1:1540', 'funciones:B1:1541', 'funciones:B1:1542', 'funciones:B1:1543', 'funciones:B1:1544'],
   title: 'Indicar que se sigue el relato con interés',
   summary: 'Vaya says almost nothing on its own — no content, no opinion — and that emptiness is exactly the point: it signals you are listening without pulling focus away from whoever is telling the story.',
@@ -15285,7 +15285,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-adverbios-enunciacion-b2', canDo: 'comment on my own act of saying something', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-adverbios-enunciacion-b2', canDo: 'comment on your own act of saying something', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:357', 'gramatica:B2:358', 'gramatica:B2:359'],
   title: 'Adverbios de enunciación: comentar sobre las propias palabras',
   summary: 'A small set of adverbs talk about the DISCOURSE itself rather than the world — they narrow down a claim, correct a slip, or wrap up what has been said. They are the connective tissue of a well-organised explanation.',
@@ -16035,7 +16035,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-interes-b2', canDo: 'say what motivates or bores me, and what I am interested in', strand: 'notion', cefr: 'B2', level: 6, theme: 'educacion',
+  id: 'nt-interes-b2', canDo: 'say what motivates or bores you, and what you are interested in', strand: 'notion', cefr: 'B2', level: 6, theme: 'educacion',
   pcic: ['nociones_generales:B2:961', 'nociones_generales:B2:962', 'nociones_generales:B2:963',
          'nociones_generales:B2:964', 'nociones_generales:B2:965'],
   title: 'Interés: motivación, aburrir, centro de interés',
@@ -16875,7 +16875,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-expresar-certeza-b2', canDo: 'say how certain I am, and show scepticism without rudeness', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-expresar-certeza-b2', canDo: 'say how certain you are, and show scepticism without rudeness', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:366', 'funciones:B2:367', 'funciones:B2:368', 'funciones:B2:369'],
   title: 'Estoy absolutamente seguro/convencido: certeza total',
   summary: 'Reinforcing certainty is not just about adding "muy" — Spanish has specific intensifiers (absolutamente, firmemente, del todo) that pair with seguro/convencido and a family of complement structures for exactly what you are certain about.',
@@ -17111,7 +17111,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-expresar-recordar-b2', canDo: 'say I remember, half-remember, or have no idea', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-expresar-recordar-b2', canDo: 'say you remember, half-remember, or have no idea', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:508'],
   title: 'Expresar que se recuerda: recuerdo, me acuerdo de',
   summary: 'The plain, general way to confirm you remember something — the everyday default before reaching for the more specific "me suena" or "no he olvidado" families.',
@@ -18571,7 +18571,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-conocimiento-desconocimiento-b1', canDo: 'say what I have heard, and what I have no idea about', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  id: 'fn-conocimiento-desconocimiento-b1', canDo: 'say what you have heard, and what you have no idea about', strand: 'function', cefr: 'B1', level: 3, theme: null,
   pcic: ['funciones:B1:448', 'funciones:B1:449', 'funciones:B1:450', 'funciones:B1:452', 'funciones:B1:453', 'funciones:B1:454',
          'funciones:B1:463', 'funciones:B1:464', 'funciones:B1:465', 'funciones:B1:466', 'funciones:B1:467', 'funciones:B1:468'],
   title: 'Conocimiento y desconocimiento: oír que + indicativo/subjuntivo',
@@ -18653,7 +18653,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-expresar-gustos-b1', canDo: 'say I like what other people do, with me gusta que + subjunctive', strand: 'function', cefr: 'B1', level: 3, theme: null,
+  id: 'fn-expresar-gustos-b1', canDo: 'say you like what other people do, with me gusta que + subjunctive', strand: 'function', cefr: 'B1', level: 3, theme: null,
   pcic: ['funciones:B1:539', 'funciones:B1:540', 'funciones:B1:541'],
   title: 'Expresar gustos e intereses sobre acciones ajenas',
   summary: 'Gustar, encantar and interesar already carry a following action instead of a thing — and the moment that action belongs to someone else, "que" pulls in the subjunctive, just as with the corresponding question.',
@@ -18814,7 +18814,7 @@ window.STRAND_LESSONS = [
  * BATCH — B1 function stragglers, part 2 (WORKLIST.md, section B1 · function)
  * ========================================================================== */
 {
-  id: 'fn-sensaciones-fisicas-b1', canDo: 'say I am hot, cold, hungry, tired or in pain', strand: 'function', cefr: 'B1', level: 3, theme: 'salud',
+  id: 'fn-sensaciones-fisicas-b1', canDo: 'say you are hot, cold, hungry, tired or in pain', strand: 'function', cefr: 'B1', level: 3, theme: 'salud',
   pcic: ['funciones:B1:912', 'funciones:B1:913', 'funciones:B1:915', 'funciones:B1:916', 'funciones:B1:917',
          'funciones:B1:919', 'funciones:B1:920', 'funciones:B1:921', 'funciones:B1:923'],
   title: 'Expresar sensaciones físicas: tener, sentir, estar, doler',
@@ -19277,7 +19277,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-marcadores-discurso-b1', canDo: 'signpost what I am saying with the five marker families', deeper: ['dc-deixis-b1', 'dc-negacion-refuerzo-b1', 'dc-rematizacion-tematizacion-b1', 'dc-intensificacion-discurso-b1', 'dc-focalizacion-b1', 'dc-entonacion-b1'], strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  id: 'dc-marcadores-discurso-b1', canDo: 'signpost what you are saying with the five marker families', deeper: ['dc-deixis-b1', 'dc-negacion-refuerzo-b1', 'dc-rematizacion-tematizacion-b1', 'dc-intensificacion-discurso-b1', 'dc-focalizacion-b1', 'dc-entonacion-b1'], strand: 'discourse', cefr: 'B1', level: 3, theme: null,
   pcic: ['tacticas_pragmaticas:B1:18', 'tacticas_pragmaticas:B1:19', 'tacticas_pragmaticas:B1:20', 'tacticas_pragmaticas:B1:21',
          'tacticas_pragmaticas:B1:23', 'tacticas_pragmaticas:B1:24', 'tacticas_pragmaticas:B1:25', 'tacticas_pragmaticas:B1:26',
          'tacticas_pragmaticas:B1:27', 'tacticas_pragmaticas:B1:28', 'tacticas_pragmaticas:B1:29', 'tacticas_pragmaticas:B1:30'],
@@ -19471,7 +19471,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'dc-atenuacion-b1', canDo: 'soften what I say by shifting the tense', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
+  id: 'dc-atenuacion-b1', canDo: 'soften what you say by shifting the tense', strand: 'discourse', cefr: 'B1', level: 3, theme: null,
   pcic: ['tacticas_pragmaticas:B1:225', 'tacticas_pragmaticas:B1:227', 'tacticas_pragmaticas:B1:228', 'tacticas_pragmaticas:B1:229',
          'tacticas_pragmaticas:B1:230', 'tacticas_pragmaticas:B1:233', 'tacticas_pragmaticas:B1:235', 'tacticas_pragmaticas:B1:236',
          'tacticas_pragmaticas:B1:237', 'tacticas_pragmaticas:B1:238'],
@@ -21538,7 +21538,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-visibilidad-vision-b2', canDo: 'say what is visible to the naked eye and what I can make out', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-visibilidad-vision-b2', canDo: 'say what is visible to the naked eye and what you can make out', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:786', 'nociones_generales:B2:791', 'nociones_generales:B2:793', 'nociones_generales:B2:795',
          'nociones_generales:B2:797', 'nociones_generales:B2:801', 'nociones_generales:B2:802', 'nociones_generales:B2:803'],
   title: 'Visibilidad y visión: a simple vista, distinguir, de lejos',
@@ -21958,7 +21958,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-capacidad-competencia-b2', canDo: 'say what I am good at with dársele bien and ser capaz de', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-capacidad-competencia-b2', canDo: 'say what you are good at with dársele bien and ser capaz de', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:991', 'nociones_generales:B2:993', 'nociones_generales:B2:994', 'nociones_generales:B2:995',
          'nociones_generales:B2:997', 'nociones_generales:B2:998', 'nociones_generales:B2:999'],
   title: 'Capacidad y competencia: dársele bien, ser capaz de',
@@ -22040,7 +22040,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-reflexion-conocimiento-b2', canDo: 'say something occurred to me, that I am aware of it, or that I found out', strand: 'notion', cefr: 'B2', level: 6, theme: null,
+  id: 'nt-reflexion-conocimiento-b2', canDo: 'say that something occurred to you, that you are aware of it, or that you found out', strand: 'notion', cefr: 'B2', level: 6, theme: null,
   pcic: ['nociones_generales:B2:1034', 'nociones_generales:B2:1037', 'nociones_generales:B2:1040', 'nociones_generales:B2:1041',
          'nociones_generales:B2:1042', 'nociones_generales:B2:1044', 'nociones_generales:B2:1045'],
   title: 'Reflexión y conocimiento: ocurrírsele, ser consciente de, enterarse',
@@ -22248,7 +22248,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-dar-opinion-b2', canDo: 'give an opinion, ask for one, and qualify my own', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-dar-opinion-b2', canDo: 'give an opinion, ask for one, and qualify your own', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:143', 'funciones:B2:144', 'funciones:B2:145', 'funciones:B2:146', 'funciones:B2:147', 'funciones:B2:148'],
   title: 'Dar una opinión: a mi modo de ver, considero que, yo diría que',
   summary: 'B2 grades the confidence of an opinion through its verb — "veo que" reports something you observe as near-fact, "yo diría que" hedges toward a guess — six frames on a spectrum from assertive to tentative, all before the actual content of the opinion.',
@@ -22613,7 +22613,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-conocimiento-b2', canDo: 'say what I know, what I do not, and confirm something', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-conocimiento-b2', canDo: 'say what you know, what you do not, and confirm something', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:455', 'funciones:B2:456', 'funciones:B2:458', 'funciones:B2:459', 'funciones:B2:460', 'funciones:B2:461'],
   title: 'Expresar conocimiento: me he enterado de que...',
   summary: '"Enterarse" marks the specific MOMENT knowledge arrived — often by chance or through a particular channel — which is why it dominates this function, distinct from "saber", which is the resulting state with no story attached to how you got there.',
@@ -22654,7 +22654,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-habilidad-b2', canDo: 'say what I am good and hopeless at', strand: 'function', cefr: 'B2', level: 6, theme: null,
+  id: 'fn-habilidad-b2', canDo: 'say what you are good and hopeless at', strand: 'function', cefr: 'B2', level: 6, theme: null,
   pcic: ['funciones:B2:489', 'funciones:B2:490', 'funciones:B2:491', 'funciones:B2:492', 'funciones:B2:493'],
   title: 'Expresar habilidad: negado para, se me da bien, tener facilidad',
   summary: '"Ser un negado para" is the vivid, self-deprecating opposite of talent — a fixed idiom, not a literal claim of negation — while "se me da bien/mal" keeps the gustar-pattern already met for aptitude, this time specifically for skill rather than general liking.',

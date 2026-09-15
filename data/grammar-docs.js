@@ -140,7 +140,7 @@ window.GRAMMAR = [
 },
 {
   key:'condicional',
-  canDo:'say what I would do, and ask for things more politely', title:'Condicional (Conditional)',
+  canDo:'say what you would do, and ask for things more politely', title:'Condicional (Conditional)',
   summary:'What would happen; polite requests and hypotheticals.',
   formation:'Add the conditional endings to the WHOLE infinitive (same endings for all verb types). Same irregular stems as the future.',
   when:[
@@ -276,7 +276,7 @@ window.GRAMMAR = [
 },
 {
   key:'perfsubj',
-  canDo:'say I hope or doubt that something has already happened', title:'Pretérito perfecto de subjuntivo (Present Perfect Subjunctive)',
+  canDo:'say you hope or doubt that something has already happened', title:'Pretérito perfecto de subjuntivo (Present Perfect Subjunctive)',
   summary:'Subjunctive for a recently completed action ("have done").',
   formation:'Present subjunctive of <i>haber</i> (haya, hayas, haya…) + past participle.',
   when:[
