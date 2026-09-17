@@ -22,19 +22,34 @@
    * Three competing notions of "the order" (this list, spec/syllabus-draft.json
    * and the strand lessons' own tags) was one source of confusion too many. */
   var SEED = [
-    // Level 1 — the foundations
+    /* Level 1 — the foundations, and the two past tenses that let a beginner
+     * answer "what did you do at the weekend".
+     *
+     * `preterito` and `perfecto` were level 2 and 3, which put the first past
+     * tense on day 97 of 671 and left all 90 A1 passages present-only: not one
+     * text an A1 learner could read contained a past tense of any kind. CEFR
+     * does not ask for that wait — it describes what a learner can do, and
+     * says nothing about tenses. The 111-day delay was this list's own choice,
+     * and this is the list, so this is where it is undone.
+     *
+     * Deliberately only these two. Bringing the future, conditional or
+     * subjunctive forward as well would load a beginner with five tenses and
+     * teach none of them; the gap that stops someone telling you about their
+     * weekend is specifically the past. `imperfecto` and `preterite-imperfect`
+     * stay at level 2 for the same reason — choosing BETWEEN the two past
+     * tenses is the subtle part, and it is a different skill from having one. */
     { id: 'presente', level: 1 },
     { id: 'ser-estar', level: 1 },
     { id: 'gender-articles', level: 1 },
-    // Level 2 — talking about the past
-    { id: 'preterito', level: 2 },
+    { id: 'preterito', level: 1 },
+    { id: 'perfecto', level: 1 },
+    // Level 2 — the other past, and choosing between them
     { id: 'imperfecto', level: 2 },
     { id: 'preterite-imperfect', level: 2 },
     { id: 'por-para', level: 2 },
-    // Level 3 — future, conditional, perfect
+    // Level 3 — future and conditional
     { id: 'futuro', level: 3 },
     { id: 'condicional', level: 3 },
-    { id: 'perfecto', level: 3 },
     // Level 4 — subjunctive & commands
     { id: 'presubj', level: 4 },
     { id: 'impsubj', level: 4 },

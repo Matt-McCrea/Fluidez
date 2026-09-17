@@ -28,90 +28,25 @@ const E = window.ENGINE, C = window.Checker;
 let errors = 0, checks = 0;
 function ok(cond, msg) { checks++; if (!cond) { errors++; console.error('  ✗ ' + msg); } }
 
-/* ---------- noun/verb homographs -------------------------------------------
- * The morphological index maps every conjugated form back to its verb, which
- * means a noun that happens to spell like one is read as a verb: "la vista"
- * (the view) analyses as vestirse's subjunctive, failing a level-1 passage.
- * As the corpus grows past B1 this collides constantly — la cuenta, el sueño,
- * la muestra, el vuelo, la llamada.
- *
- * The exemption deliberately requires BOTH conditions:
- *   1. the word is on this list of genuine, common noun homographs, AND
- *   2. it is directly preceded by an article, possessive or demonstrative.
- * Neither alone is safe. A determiner does not imply a noun — "todos dicen",
- * "la había comido", "las pusieron" and "esas son" are all real verbs, and
- * clitic la/los/las sit in front of verbs exactly where an article would.
- * Requiring the word to be a known noun keeps those gated.
- *
- * Extend the list as new content introduces collisions; never widen the
- * determiner set to quantifiers (todo/mucho/poco/cada), which freely precede
- * verbs. Run tools/find-homographs.js to see what the corpus is hitting. */
-const NOUN_HOMOGRAPHS = new Set([
-  // observed in the current corpus
-  'trabajo', 'cena', 'cambio', 'viaje', 'río', 'ayuda', 'parte', 'partes',
-  'cocina', 'estudio', 'desayuno', 'vista', 'recibo', 'camino', 'compra',
-  'diseño', 'pregunta', 'preguntas', 'gasto', 'programa', 'programas',
-  'contrato', 'negocio', 'traje', 'ducha', 'recuerdo', 'baño', 'firma',
-  'paso', 'cuenta', 'gusto', 'metas', 'despido',
-  // high-frequency collisions expected as content moves into B1-C1
-  'sueño', 'vuelo', 'muestra', 'paseo', 'llamada', 'visita', 'respuesta',
-  'comida', 'bebida', 'salida', 'entrada', 'parada', 'llegada', 'subida',
-  'bajada', 'apoyo', 'duda', 'falta', 'juego', 'lucha', 'marcha', 'nota',
-  'pena', 'prueba', 'regalo', 'reserva', 'saludo', 'vuelta', 'reparto',
-  'aumento', 'ahorro', 'consumo', 'reforma', 'demanda', 'oferta', 'reparo',
-  'peso', 'gobierno', 'mando', 'cargo', 'encuentro', 'fomento', 'rechazo',
-  // surfaced when the verb set grew from 200 to 460: more verbs means more
-  // nouns shadowed by a conjugated form. Run tools/find-homographs.js after
-  // any verb addition and add the genuine nouns here.
-  'soluciones', 'funciones', 'proyecto', 'casa', 'regalo', 'centro', 'queja',
-  'proceso', 'marca', 'medio', 'medios', 'género', 'artículo', 'artículos',
-  'público', 'práctico', 'práctica', 'ópera', 'ampliación', 'reserva',
-  'estudios', 'contratos', 'programas', 'negocios', 'cambios', 'viajes',
-  // surfaced adding spec/verb-queue.json's B1-C1 batch (coser, nevar,
-  // alegrarse, informar): their subjunctive forms shadow everyday nouns.
-  'cosa', 'cosas', 'nieve', 'alegre', 'informe',
-  // same batch, second pass (temer, moler, tramitar): more everyday nouns
-  // shadowed.
-  'tema', 'muela', 'trámite'
-]);
-const DETERMINERS = new Set([
-  'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas',
-  'mi', 'mis', 'tu', 'tus', 'su', 'sus',
-  'nuestro', 'nuestra', 'nuestros', 'nuestras',
-  'vuestro', 'vuestra', 'vuestros', 'vuestras',
-  'este', 'esta', 'estos', 'estas', 'ese', 'esa', 'esos', 'esas',
-  'aquel', 'aquella', 'aquellos', 'aquellas',
-  // genuine determiner contractions (de+el, a+el) — not quantifiers, so this
-  // does not touch the "never widen to todo/mucho/poco/cada" guidance below.
-  'del', 'al'
-]);
-// A few genuine noun readings that neither determiner-adjacency nor the
-// finite-verb-object heuristic below catches: a quantifier ("cada cosa"),
-// an intervening adjective ("pequeñas cosas"), or a determiner-less mass
-// noun after a verb of occurrence ("caer nieve", like "hacer sol"). Exact
-// two-token phrases only, not a general rule — widening DETERMINERS to
-// quantifiers would gate real verbs ("todos dicen", "cada vez que compra").
-const SAFE_NOUN_PHRASES = new Set([
-  'cada cosa', 'pequeñas cosas', 'caer nieve', 'cada trámite', 'tanto trámite'
-]);
-function isNounHere(toks, i) {
-  if (!NOUN_HOMOGRAPHS.has(toks[i]) || i < 1) return false;
-  var prev = toks[i - 1];
-  if (DETERMINERS.has(prev)) return true;
-  if (SAFE_NOUN_PHRASES.has(prev + ' ' + toks[i])) return true;
-  // Bare plurals take no article ("negocia soluciones justas"), so also accept
-  // the object position: directly after a finite verb. Spanish does not put two
-  // conjugated verbs side by side without a conjunction, so a word there is a
-  // noun. Membership of NOUN_HOMOGRAPHS still does the real gating — "la había
-  // comido" is untouched because "comido" is not on that list.
-  var pa = E.analyzeToken(prev) || [];
-  return pa.some(function (a) { return a.tense !== 'imperativo'; });
-}
-
+/* ---------- tense scanning -------------------------------------------------
+ * Which tenses a text requires — and the noun/verb homograph exemption that
+ * makes the answer trustworthy — live in tools/lib/tense-scan.js, because
+ * three tools now need the same answer: this gate, tools/tense-index.js
+ * (which precomputes the `tenses` array every passage carries) and
+ * tools/audit-tenses.js. Two copies of that logic would mean the app filters
+ * on a field this file believes is wrong. See that file for the reasoning on
+ * the generous reading and on why the homograph exemption needs BOTH of its
+ * conditions. */
 // tense key -> syllabus level (concept lessons don't gate tenses)
 const TENSE_LEVEL = {};
 (window.SEED_SYLLABUS || window.SYLLABUS || []).forEach(s => { if (E.TENSES.some(t => t.key === s.id)) TENSE_LEVEL[s.id] = s.level; });
 const VALID_TENSES = new Set(E.TENSES.map(t => t.key));
+/* SEED order breaks a tie between two tenses of the same level, so the
+ * generated `tenses` field is deterministic. */
+const SEED_ORDER = {};
+(window.SEED_SYLLABUS || []).forEach((s2, i) => { SEED_ORDER[s2.id] = i; });
+const SCAN = require('./lib/tense-scan.js')(E, TENSE_LEVEL, SEED_ORDER);
+const isNounHere = SCAN.isNounHere;
 const strip = h => String(h).replace(/<[^>]+>/g, '');
 
 /* ---------- taxonomy: every tag must resolve ------------------------------
@@ -548,6 +483,16 @@ function checkProbes(l, tag) {
       ok(minLevel <= p.level, `${tag}: verb "${tok}" needs level ${minLevel} ` +
         `(${analyses.map(a => a.tense).join('/')}) but passage is level ${p.level}`);
     });
+    /* `tenses` is what js/session.js withholds a passage on, and it is
+     * GENERATED (tools/tense-index.js) — so the only thing worth checking is
+     * that the file has not drifted from the text it describes. A stale field
+     * is silent in a way a missing one is not: the passage still renders, it
+     * is simply offered to a learner who has not met what is in it. */
+    const want = SCAN.tensesOf(p.text);
+    const got = p.tenses;
+    ok(Array.isArray(got) && got.join(',') === want.join(','),
+       `${tag}: \`tenses\` is ${got ? `[${got}]` : 'missing'} but the text needs ` +
+       `[${want}] — run: node tools/tense-index.js`);
   });
 }
 

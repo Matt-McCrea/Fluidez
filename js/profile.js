@@ -264,7 +264,38 @@ window.Profile = (function () {
      * frecuentes" is an A2 specification. querer, poder, dormir, jugar and
      * preferir are core early vocabulary; someone a year into Spanish who
      * cannot say "quiero un café" has not learned Spanish. Holding them to B1
-     * would be far worse than the bug this fixes. */
+     * would be far worse than the bug this fixes.
+     *
+     * ---- THE PRETERITE AT A1 (decided, not inherited) --------------------
+     * Moving the preterite into A1 brings a second irregular system with it —
+     * fui, hizo, tuvo, estuvo, and behind them pudo, vino, dijo, supo, trajo —
+     * so the question of what a beginner may be ASKED TO PRODUCE has to be
+     * answered again rather than left to a rule written for the present.
+     *
+     * The answer is that this list does not change, for two reasons.
+     *
+     * The four the unit promises are already through. `ser`, `ir`, `hacer`,
+     * `tener` and `estar` are all on EARLY_IRREGULARS, and they are exempt in
+     * EVERY tense, not just the present — so "handle fui, hice, tuve, estuve",
+     * which is what a2-u14 lists as its own can-do, is exactly what a learner
+     * can be asked for. Nothing needs widening to honour the unit.
+     *
+     * The rest should stay withheld, and the reasoning is the same one that
+     * put stem-changers behind A2: a learner four days into regular -í/-ió
+     * endings who is asked for "dijo" writes "dició" and is marked wrong for a
+     * form nobody has shown them. Withholding costs little — 84 of the 119
+     * preterite cloze items and 35 of the 52 preterite writing tasks survive
+     * this filter, which is more material than an A1 learner will see — and
+     * `dijo` is only withheld from PRODUCTION. Nothing stops it appearing in a
+     * passage, where meeting it is how it gets learned.
+     *
+     * Known over-reach, left alone deliberately: the check is per verb per
+     * tense, and `isIrregularIn` counts the spelling changes — llegué,
+     * empecé, busqué — as irregular, so llegar is withheld from the preterite
+     * even for "llegó", which is perfectly regular. Fixing that means asking
+     * about the PERSON as well, which every call site would have to pass.
+     * Given the 84 items left over, the cost of being too careful here is
+     * lower than the cost of the signature change. */
     verbOkAt: function (inf, tense) {
       var p = PROFILES[current];
       if (!p || p.cefr !== 'A1') return true;            // A2 and above: no restriction

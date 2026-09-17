@@ -120,6 +120,107 @@ window.Session = (function () {
     return out.length ? out : items;
   }
 
+  /* ---- gate reading by TAUGHT TENSE, not by level ------------------------
+   *
+   * `level` has always been a proxy for "which tenses may appear in this
+   * text" — that is the only thing the number ever decided about a passage.
+   * Standing for something is not being it, and the gap opened the moment the
+   * preterite moved into A1: A1 is a single level (LEVELS gives it
+   * `levels:[1]`, so maxGate is 1), which means making a preterite legal at
+   * level 1 makes it legal in the passage handed to a learner on day 3, with
+   * nothing left to tell the two apart. There is no "late A1" to put it in.
+   *
+   * So the proxy is dropped and the thing itself is read. Each passage carries
+   * a precomputed `tenses` array (tools/tense-index.js, generated from the
+   * same scanner the content gate levels verbs with, so the two cannot drift),
+   * and a passage is only offered once the learner has REACHED every tense in
+   * it — studied the lesson, or walked past the day that teaches it.
+   *
+   * This also removes a latent version of the same bug at every other band: a
+   * B1 learner on day 190 was being handed texts built on the
+   * pluscuamperfecto, which B1 does not teach until day 279.
+   *
+   * Two deliberate softnesses:
+   *
+   *   THE FLOOR. The present indicative is not gated. It is the first tense
+   *   the course teaches (day 4) and the one every beginner text is written
+   *   in, so gating it would blank the reading stage for the three days before
+   *   its lesson — a rule that fires on correct content is worse than no rule.
+   *   Taken as "the earliest tense on the course" rather than spelled
+   *   `presente`, so it follows the course if the course moves.
+   *
+   *   NEVER EMPTY. If the filter leaves nothing, the unfiltered set is used —
+   *   the same bargain safeVerbs and Focus.narrow already make. A text with an
+   *   untaught tense in it beats a blank stage, and it is also what makes a
+   *   theme focus on a thin theme degrade instead of starving.
+   *
+   * ALL THREE STAGES, not just reading. Cloze items and writing tasks carry
+   * their tense explicitly — `tense` on an apply item, `anyVerbInTense` and
+   * friends on a writing task's constraints — so they need no scanner, but
+   * they were leaning on exactly the same proxy: `level` was the only thing
+   * keeping a preterite drill away from a beginner. Gating a passage and not
+   * the drill would have taught the preterite on day 72 and then spent the
+   * afternoon conjugating the present, which is the failure this whole piece
+   * of work is about, one stage over. */
+  var _tenseSched = null;
+  function tenseSchedule() {
+    if (_tenseSched) return _tenseSched;
+    var byId = {};
+    (window.ALL_LESSONS || window.GRAMMAR_LESSONS || []).forEach(function (l) { byId[l.id] = l; });
+    // the ladder's own tenses — the set `level` was ever a proxy for
+    var onLadder = {};
+    (window.SEED_SYLLABUS || []).forEach(function (s) { onLadder[s.id] = 1; });
+    var day = {}, lesson = {}, floor = null;
+    (window.COURSE_DAYS || []).forEach(function (d, i) {
+      var l = d.lesson && byId[d.lesson];
+      if (!l) return;
+      /* A merged lesson keeps the id of its hand-written half while still
+       * teaching the tense — `gr-preterito-perfecto-a2` IS the present
+       * perfect — so `tense` is the thing to read, not the id. */
+      var tk = l.tense || (onLadder[l.id] ? l.id : null);
+      if (!tk || day[tk] != null) return;
+      day[tk] = i; lesson[tk] = l.id;
+      if (floor === null || i < day[floor]) floor = tk;
+    });
+    _tenseSched = { day: day, lesson: lesson, floor: floor };
+    return _tenseSched;
+  }
+
+  function tenseReached(tk, dayIndex, studied) {
+    var sc = tenseSchedule();
+    if (tk === sc.floor) return true;
+    if (sc.lesson[tk] && studied[sc.lesson[tk]]) return true;
+    return sc.day[tk] != null && dayIndex != null && sc.day[tk] <= dayIndex;
+  }
+  // the tenses an item requires — a passage carries them precomputed, a cloze
+  // item and a writing task say so outright
+  function tensesOfPassage(p) { return p.tenses || []; }
+  function tensesOfApply(it) { return it.tense ? [it.tense] : []; }
+  function tensesOfWrite(t) {
+    return (t.constraints || []).map(function (c) { return c.tense; }).filter(Boolean);
+  }
+  function taughtTenses(items, tensesOf, dayIndex, studied) {
+    var out = items.filter(function (x) {
+      return tensesOf(x).every(function (tk) { return tenseReached(tk, dayIndex, studied); });
+    });
+    return out.length ? out : items;
+  }
+
+  /* A fingerprint of the band's day sequence, so a course edit that renumbers
+   * the days can be noticed and `beginnerDay` rebuilt against the new layout
+   * (see pickFocus). Every day contributes — a lesson by id, a verb day by its
+   * verbs, a practice day by its position — because inserting a verb day
+   * shifts the counter exactly as inserting a lesson does. djb2 over that,
+   * because the alternative is storing the whole sequence in localStorage to
+   * compare it. */
+  function courseSig(seq) {
+    var h = 5381, s = seq.map(function (f, i) {
+      return f.type === 'grammar' ? f.id : f.type === 'verbs' ? f.verbs.join('+') : 'p' + i;
+    }).join('|');
+    for (var i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0;
+    return seq.length + ':' + (h >>> 0).toString(36);
+  }
+
   var _writeSafe = {};
   function safeWriting(tasks) {
     var P = window.Profile, E = window.ENGINE;
@@ -174,6 +275,34 @@ window.Session = (function () {
       // paced path: grammar/vocab/verb/practice days, grammar spaced out
       var seq = window.Curriculum.seq();
       var di = prog.beginnerDay || 0;
+      /* WHEN THE COURSE ITSELF MOVES.
+       *
+       * `beginnerDay` is a plain index into the band's slice, so inserting a
+       * unit renumbers every day after it and the counter silently points at
+       * different material than it did yesterday. Moving the two past-tense
+       * units into A1 inserted twelve days at index 71: a learner sitting on
+       * day 75 would have been mid-way through "Want, need, ask for" on
+       * Monday and somewhere inside "Have you ever…?" on Tuesday, having been
+       * taught neither.
+       *
+       * So the layout is fingerprinted and the counter is rebuilt from the
+       * learner's STUDIED SET when it changes — which is the durable record,
+       * keyed by lesson id and unaffected by any renumbering. Rebuilding means
+       * restarting the catch-up walk below from zero rather than from the
+       * stale index: it stops at the first day the learner has not done, so a
+       * unit inserted BEHIND them is picked up rather than skipped. That
+       * matters here specifically — a learner past day 71 who kept their old
+       * position would step over the preterite entirely and meet it first in
+       * "Telling a story", which assumes it.
+       *
+       * The walk is not a downgrade for someone deep in the band: a unit whose
+       * lessons are all studied counts as done wholesale (UnitCheck.isDone),
+       * so its verb and practice days are stepped over too.
+       *
+       * A learner who has studied nothing loses nothing — their counter was 0
+       * and stays 0. */
+      var sig = courseSig(seq), remapped = false;
+      if (prog.courseSig !== sig) { di = 0; prog.courseSig = sig; remapped = true; }
       /* The paced path walks a DAY COUNTER, not the studied set — so a lesson
        * marked done from Lecciones (js/unitcheck.js), by a unit check or by
        * hand, left the counter where it was and the session kept serving
@@ -191,7 +320,7 @@ window.Session = (function () {
         return !!(f.unit && UNITS[f.unit] && window.UnitCheck && window.UnitCheck.isDone(UNITS[f.unit]));
       }
       while (di < seq.length && doneAlready(seq[di])) { di++; moved = true; }
-      if (moved) { prog.beginnerDay = di; saveProg(prog); }
+      if (moved || remapped) { prog.beginnerDay = di; saveProg(prog); }
       focus = seq[Math.min(di, seq.length - 1)] || { type: 'practice' };
       /* `di` indexes the BAND's slice; COURSE_UNITS.from indexes the whole
        * course, so the band's start has to be added back before the two can
@@ -249,9 +378,15 @@ window.Session = (function () {
 
     function atLevel(arr) { return arr.filter(function (x) { return (x.level || 1) <= level; }); }
 
-    var passages = atLevel(window.PASSAGES || []);
-    var apply = safeVerbs(atLevel(window.APPLY_ITEMS || []));
-    var writes = safeWriting(atLevel(window.WRITING_TASKS || []));
+    /* Level first, then taught tense — the two are different questions ("is
+     * this written too hard for me?" and "have I met what is in it?") and the
+     * second only makes sense over things that already passed the first. */
+    function taught(arr, tensesOf) {
+      return pr.unlockAll ? arr : taughtTenses(arr, tensesOf, dayIndex, studied);
+    }
+    var passages = taught(atLevel(window.PASSAGES || []), tensesOfPassage);
+    var apply = safeVerbs(taught(atLevel(window.APPLY_ITEMS || []), tensesOfApply));
+    var writes = safeWriting(taught(atLevel(window.WRITING_TASKS || []), tensesOfWrite));
 
     // The FIRST time a grammar lesson is seen (not yet in `studied`), its
     // content is picked with a seed derived from the lesson id — reproducible
