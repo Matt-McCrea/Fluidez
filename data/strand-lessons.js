@@ -99,6 +99,14 @@ window.STRAND_LESSONS = [
   title: 'Cuenta un mal día sin una sola palabra neutra',
   canDo: 'tell a story entirely in idiom, the way a native would',
   summary: 'At C1 the idiom is not decoration on top of the language — it IS the language. "Estoy hecho polvo" is not a fancier way of saying estoy cansado; it is what a Spanish speaker actually says, and the neutral version is what marks you as foreign.',
+  keywords: [
+    { es: 'un frío que pelaba', en: 'a bitter cold' },
+    { es: 'estar hasta la coronilla', en: 'to have had it up to here' },
+    { es: 'Se me fue el santo al cielo.', en: 'I completely lost my thread.' },
+    { es: 'estar hecho polvo', en: 'to be wiped out' },
+    { es: 'de un humor de perros', en: 'in a foul mood' },
+    { es: 'ni una palabra neutra', en: 'not one neutral word' }
+  ],
   sections: [
     { h: 'What to do', html: 'Tell the story of a genuinely bad day in eighteen to twenty-five sentences. Every state, reaction and judgement must be idiomatic. No <i>estoy cansado</i>, no <i>hace frío</i>, no <i>está bien</i>.' },
     { h: 'The test', html: 'Read it to yourself and ask of each sentence: would a Spanish speaker say this, or is it correct Spanish that nobody says? The second is the C1 trap, and it never shows up as an error.' }
@@ -133,6 +141,14 @@ window.STRAND_LESSONS = [
   title: 'Di lo contrario de lo que quieres decir',
   canDo: 'be ironic in Spanish, and hear it done to you',
   summary: 'Irony is the last thing a learner acquires and the first thing that marks fluency, because it requires knowing exactly what the neutral version would have been. Spanish marks it — with intonation, with a suspended "que", with an adjective that is too generous.',
+  keywords: [
+    { es: '¡Qué sorpresa!', en: 'What a shock. (said when it isn\'t)' },
+    { es: 'Pues sí que estamos bien.', en: 'Well, this is just great.' },
+    { es: 'Un detalle…', en: 'How thoughtful… (when it wasn\'t)' },
+    { es: 'con tanta antelación', en: 'with so much notice' },
+    { es: 'Ya, claro.', en: 'Right, sure.' },
+    { es: 'No, si encima…', en: 'And on top of that…' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write a conversation of twenty turns between two people who know each other well, in which at least six lines mean the opposite of what they say.' },
     { h: 'How Spanish marks it', html: 'Over-generous praise (<i>¡qué detalle!</i> for a slight), the suspended ending (<i>Ya, ya…</i>), <i>pues sí que</i> + something obviously bad, and the tag <i>¿no?</i> attached to something nobody could agree with.' },
@@ -193,7 +209,7 @@ window.STRAND_LESSONS = [
       q: 'Which attributes a claim to nobody?',
       options: ['Se ha planteado que…', 'Yo he planteado que…', 'Planteo que…'], answer: 0 },
     { id: 'p:task-c1-decirlo-3', kind: 'cloze',
-      text: '___ parecer, la fecha se fijó antes.', accept: ['Al'] }
+      text: '___ parecer, la fecha se fijó antes. (apparently — attributing to no one)', accept: ['Al'] }
   ]
 },
 
@@ -235,7 +251,7 @@ window.STRAND_LESSONS = [
   id: 'task-c1-verbos', strand: 'task', cefr: 'C1', level: 9, theme: 'ciencia',
   title: 'Justifica cada tiempo verbal que usas',
   canDo: 'choose any tense or mood deliberately and say why',
-  summary: 'The two synoptic lessons in this unit are the best grammar in the app: every indicative tense with the objection it answers, and every subjunctive tense with what the negation decides. This asks you to prove you can use them on purpose.',
+  summary: 'You have now seen every indicative tense with the objection it answers, and every subjunctive tense with what the negation decides. This asks you to choose among them deliberately, on a single page of your own writing.',
   sections: [
     { h: 'What to do', html: 'Write a 250-word account of something complicated — a dispute, a process, a change of mind — then annotate it: for every finite verb, one line saying why that tense and mood rather than the nearest alternative.' },
     { h: 'What counts as a reason', html: '"It is the past" is not a reason; preterite and imperfect are both past. The reason is always what you are doing with the event: bounding it, describing around it, placing it before another, declining to assert it.' }
@@ -338,7 +354,7 @@ window.STRAND_LESSONS = [
   id: 'task-c1-precision', strand: 'task', cefr: 'C1', level: 9, theme: 'ciencia',
   title: 'Describe algo con precisión nativa',
   canDo: 'describe the physical and temporal world the way a native writer does',
-  summary: 'The C1 notion inventory is the largest single body of material in the course, and this is what it is for: not more nouns, but the fixed expressions that make a description sound observed rather than translated.',
+  summary: 'Precision at this level is not more nouns. It is the fixed expressions that make a description sound observed rather than translated — and this is where you use them.',
   sections: [
     { h: 'What to do', html: 'Write a description of a place at a particular moment — a market at closing, a station at dawn, a kitchen mid-service. Twenty-five sentences, heavy on the senses.' },
     { h: 'Reach for the fixed expression', html: '<i>A simple vista</i>, <i>al tacto</i>, <i>a ojo</i>, <i>de norte a sur</i>, <i>al rojo vivo</i>, <i>para chuparse los dedos</i>, <i>un frío que pela</i>, <i>cuatro gatos</i>, <i>hasta arriba</i>. Each is doing work no adjective does.' }
@@ -3121,6 +3137,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:291', 'tacticas_pragmaticas:C1:295'],
   title: 'Atenuación: decirlo sin señalar a nadie',
   summary: 'At C1 the difficulty is rarely the grammar of a criticism, a refusal or an order — it is saying it without the sentence pointing a finger. Spanish softens by MOVING THE PERSON: what is really about you becomes “we”, and what is really about me becomes “one” or nobody at all.',
+  keywords: [
+    { es: '¿Y si…?', en: 'What if…?' },
+    { es: 'Vamos a ver qué hemos hecho.', en: 'Let\'s see what we\'ve done. (said to one person)' },
+    { es: 'Habría que…', en: 'Someone ought to…' },
+    { es: 'uno', en: 'one (meaning I, at a distance)' },
+    { es: 'se diría que…', en: 'you\'d say that…' },
+    { es: 'quizá convendría…', en: 'it might be advisable to…' },
+    { es: 'merecer la pena', en: 'to be worth it' }
+  ],
   sections: [
     { h: 'The mechanism', html: 'Every direct statement names an agent: <i>Tienes que revisarlo</i> names <b>you</b>, <i>Creo que te equivocas</i> names <b>me</b> and <b>you</b>. Atenuación displaces that agent onto a less exposed person — first plural, an impersonal <i>se</i>, or nobody — so the criticism survives but the accusation does not.' },
     { h: 'Moving “you” to “we”', html: 'The <b>plural sociativo</b> makes your instruction a shared task: <i>¿Y si lo dejamos para mañana?</i> means <i>leave it</i>, but nobody has been told to do anything. Teachers, doctors and managers live in this construction: <i>Vamos a ver qué hemos hecho aquí.</i>' },
@@ -17803,6 +17828,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:89', 'tacticas_pragmaticas:C1:90', 'tacticas_pragmaticas:C1:91'],
   title: 'Citas encubiertas: decirlo sin responder de ello',
   summary: 'Spanish can mark information as second-hand without any verb of saying at all — most strikingly by putting a present or future event into the imperfect. "Ernesto llegaba mañana" says the same as "llegará", except that the speaker is passing on what they were told and declines to vouch for it. This is invisible to a learner who reads the imperfect as a past tense.',
+  keywords: [
+    { es: 'Llegaba mañana.', en: 'He\'s arriving tomorrow (or so I\'m told).' },
+    { es: 'según me dicen', en: 'so I\'m told' },
+    { es: 'por lo visto', en: 'apparently' },
+    { es: 'al parecer', en: 'apparently' },
+    { es: 'dicen que…', en: 'they say that…' },
+    { es: 'se rumorea que…', en: 'it\'s rumoured that…' },
+    { es: 'responder de algo', en: 'to vouch for something' }
+  ],
   sections: [
     { h: 'The imperfect that is not past', html: '<i>Ernesto llegaba mañana de París.</i> The event is in the future; the imperfect is doing something else entirely. It marks the statement as reported — I was told this — and quietly withholds the speaker\'s commitment. Compare <i>Ernesto llegará mañana</i>, which the speaker asserts.' },
     { h: 'The same trick over a past event', html: 'It works over the preterite too: <i>Ernesto llegó ayer. Comía con Julia y se quedaba en su casa.</i> The first sentence is asserted; the two imperfects are relayed. A listener hears exactly where the speaker\'s own knowledge stops.' },
@@ -17856,6 +17890,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:315', 'tacticas_pragmaticas:C1:316'],
   title: 'Atenuación dialógica: discrepar sin romper nada',
   summary: 'Disagreement in Spanish is almost never delivered flat. It is prefaced — by a partial agreement, an admission of ignorance, or an apology for what is about to be said — and the preface is not decoration: it is what keeps the exchange open. Skipping it does not sound direct, it sounds hostile.',
+  keywords: [
+    { es: 'Bueno, no creas…', en: 'Well, I wouldn\'t say so…' },
+    { es: 'Sí, bueno, pero…', en: 'Yes, well, but…' },
+    { es: 'Hombre, yo diría que…', en: 'Well, I\'d say that…' },
+    { es: 'No sé, ¿eh?', en: 'I don\'t know, though.' },
+    { es: 'Ya, pero…', en: 'Right, but…' },
+    { es: 'Sin ánimo de ofender…', en: 'With no offence meant…' },
+    { es: 'discrepar', en: 'to disagree' }
+  ],
   sections: [
     { h: 'Agree partially, then turn', html: 'The standard move grants something before withdrawing it: <i>No, no es eso exactamente, es que…</i>, <i>Sí, bueno, pero…</i>, <i>Yo no digo que esté mal, pero yo no lo haría.</i> That last frame is worth learning whole: <i>no digo que</i> + subjunctive denies an accusation you have not been given, then states the objection.' },
     { h: 'Plead ignorance rather than assert error', html: 'Instead of "you are wrong", C1 Spanish reaches for <i>No sé, la verdad es que yo no diría eso</i> or <i>Puede que me equivoque, pero…</i>. The speaker relocates the disagreement into their own uncertainty. It is a fiction and everyone knows it; declining to use it is what gets noticed.' },
@@ -17908,6 +17951,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:149', 'tacticas_pragmaticas:C1:150', 'tacticas_pragmaticas:C1:151'],
   title: 'Metáforas: el juicio escondido en la gramática',
   summary: 'Spanish carries evaluation in constructions, not just in adjectives. "Marta es un plomo" is not a description with a colourful noun — the indefinite article plus an evaluative noun IS the judgment, and there is no neutral way to say it. Learners who translate the words and miss the frame produce Spanish that is grammatical and expressionless.',
+  keywords: [
+    { es: 'ser un plomo', en: 'to be a crashing bore' },
+    { es: 'ser un lince', en: 'to be razor-sharp' },
+    { es: 'ser un gallina', en: 'to be a coward' },
+    { es: '¡Menudo lío!', en: 'What a mess!' },
+    { es: 'ser un cielo', en: 'to be an angel' },
+    { es: 'ser una fiera', en: 'to be a demon at something' },
+    { es: 'atreverse a', en: 'to dare to' }
+  ],
   sections: [
     { h: 'un + evaluative noun', html: 'The frame <b>ser + un/una + noun</b> converts a noun into a verdict on a person: <i>es un plomo</i> (a bore), <i>es un lince</i> (sharp), <i>es una fiera</i> (formidable), <i>es un gallina</i> (a coward). Note <i>un gallina</i> keeps the masculine article for a man even though <i>gallina</i> is feminine — the article agrees with the person, not the noun.' },
     { h: 'como si + imperfect subjunctive', html: 'Comparative metaphor takes the subjunctive obligatorily: <i>Estaba tan modosita como si nunca hubiera roto un plato.</i> The construction asserts that the comparison is counterfactual — <i>como si</i> + indicative is not an option, and getting it wrong destroys the irony the frame exists to carry.' },
@@ -17959,6 +18011,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:155', 'tacticas_pragmaticas:C1:156', 'tacticas_pragmaticas:C1:158'],
   title: 'Indicadores de ironía: cómo se marca que no lo dices en serio',
   summary: 'Irony is the last thing a learner acquires and the first thing that isolates them if they miss it. Spanish marks it — with unfinished sentences, with a contradiction between the words and an obvious fact, with praise nobody could mean. Recognising the markers matters more than producing them: the cost of hearing "Gracias por tu ayuda" straight is high.',
+  keywords: [
+    { es: 'Sí, como viene tanto…', en: 'Right, since he comes round so often… (he never does)' },
+    { es: '¡Pues vaya + noun!', en: 'Well, what a fine … ! (the opposite is meant)' },
+    { es: 'una nimiedad', en: 'a trifle (said of something large)' },
+    { es: 'No sé qué habría hecho sin ti.', en: 'I don\'t know what I\'d have done without you.' },
+    { es: 'la ironía', en: 'the irony' },
+    { es: 'el tono', en: 'the tone' },
+    { es: 'dar a entender', en: 'to imply' }
+  ],
   sections: [
     { h: 'The suspended sentence', html: 'Trailing off is the commonest marker. <i>—Tendrías que decirle a Javier que te ayude. —Sí, como viene tanto…</i> The unspoken second half carries the meaning, and the intonation falls away rather than closing. In writing it appears as suspension points; the listener is expected to complete it and understand that the completion is negative.' },
     { h: 'Contradiction in terms', html: 'A word placed against a fact that flatly contradicts it: <i>El libro ha costado una nimiedad: 800 euros.</i> Nothing in the grammar signals irony; the collision between <i>nimiedad</i> and the figure does all of it. This is the marker most often missed by learners, because each half is unremarkable.' },
@@ -28949,6 +29010,14 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:111', 'tacticas_pragmaticas:C1:112', 'tacticas_pragmaticas:C1:113'],
   title: 'Lo que hace una pregunta en C1: saludo, crítica, eco recapitulativo',
   summary: 'A question at C1 can be a greeting, a criticism disguised entirely by intonation, or an echo that exists purely to launch an emphatic answer nobody actually doubted. None of these carries a single lexical marker — the same words that greet a friend can, with a different tempo, dress down an employee.',
+  keywords: [
+    { es: '¿Cómo andamos?', en: 'How are things? (a greeting, not a question)' },
+    { es: '¿Molesto si…?', en: 'Would it bother you if…? (a request)' },
+    { es: '¿Te echo una mano?', en: 'Shall I give you a hand? (an offer)' },
+    { es: '¿Por qué te empeñas en…?', en: 'Why do you insist on…? (a criticism)' },
+    { es: 'empeñarse en', en: 'to insist on' },
+    { es: 'pesimista', en: 'pessimistic' }
+  ],
   sections: [
     { h: 'Preguntas neutras: saludo, permiso, ofrecimiento', html: '<i>¿Cómo andamos?</i> no pregunta información — es un saludo con "nosotros" sociativo. <i>¿Molesto mucho si abro la ventana?</i> pide permiso; <i>¿Te echo una mano?</i> ofrece ayuda. Ninguna espera una respuesta literal a la pregunta gramatical.' },
     { h: 'La pregunta-crítica: solo la entonación la marca', html: '<i>¿Por qué te empeñas siempre en ser tan pesimista?</i>, dicha con tonema descendente, intensidad elevada y más velocidad de lo normal, deja de ser una pregunta genuina y se convierte en un reproche. Nada en el léxico lo señala — solo la voz.' },
@@ -28990,6 +29059,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:135', 'tacticas_pragmaticas:C1:136', 'tacticas_pragmaticas:C1:137'],
   title: 'Negación en C1: velada, diluida, obviada',
   summary: 'B2 distinguished a handful of ways to say "no"; C1 has ways of negating that never actually say it. A whole exclamation can mean "no" without the word appearing anywhere in it, and a negative can spread itself across an indefinite phrase for an effect no plain "no" can match.',
+  keywords: [
+    { es: 'ni mucho menos', en: 'not by a long shot' },
+    { es: 'en absoluto', en: 'not at all' },
+    { es: 'ni por asomo', en: 'not remotely' },
+    { es: 'No es que… sino que…', en: 'It\'s not that… but rather…' },
+    { es: 'que yo sepa, no', en: 'not as far as I know' },
+    { es: 'nada de eso', en: 'nothing of the sort' },
+    { es: 'ni hablar', en: 'out of the question' }
+  ],
   sections: [
     { h: 'Negación velada: el preludio concesivo', html: '<i>-¿No te gusta esta novela con lo buena que es? -No, si yo no digo que sea mala, pero me parece demasiado pesada.</i> El "no, si yo no digo que..." pospone el verdadero desacuerdo tras un preludio que concede parcialmente, exactamente el mismo movimiento que la atenuación dialógica de B2, ahora fijado en una fórmula reconocible.' },
     { h: 'Negación diluida: sin la palabra "no"', html: '<i>En parte alguna he visto cosa parecida</i> equivale a <i>No he visto nada parecido en ninguna parte</i>, pero reparte la negación sobre una frase indefinida antepuesta, sin que aparezca "no" en ningún punto — un registro marcadamente literario o formal.' },
@@ -29035,6 +29113,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:206', 'tacticas_pragmaticas:C1:207', 'tacticas_pragmaticas:C1:208', 'tacticas_pragmaticas:C1:210'],
   title: 'Intensificar en C1: sufijos, entonación suspendida, el "que" que insiste',
   summary: 'C1 intensification is mostly a matter of what is left UNSAID: a comparative left hanging with a rising tone reverses its own meaning, a consequence clause can be cut off entirely and still land, and a repeated "que" can insist on a claim that was never actually challenged.',
+  keywords: [
+    { es: 'de lo más…', en: 'about as … as it gets' },
+    { es: 'ni que decir tiene', en: 'it goes without saying' },
+    { es: 'un sinfín de', en: 'no end of' },
+    { es: 'hasta el punto de', en: 'to the point of' },
+    { es: 'de narices', en: 'hell of a (colloquial)' },
+    { es: 'como la copa de un pino', en: 'enormous (colloquial)' },
+    { es: 'nada menos que', en: 'no less than' }
+  ],
   sections: [
     { h: 'Sufijos: aumentativo, y un diminutivo que no reduce', html: 'Los sufijos aumentativos <i>-ón, -ote, -azo</i> intensifican el golpe o el tamaño: <i>el pelotazo del delantero</i>. El diminutivo, contra la intuición, también intensifica: <i>vale un dinerillo</i> no dice que sea barato, sino que cuesta bastante — el diminutivo suaviza el tono al mismo tiempo que reconoce una cifra alta.' },
     { h: 'El artículo como intensificador', html: '<i>¡La cara que tiene tu sobrino!</i> y <i>¿has visto lo mal que cantó?</i> convierten un artículo (definido, o el neutro "lo") en el motor de una exclamación entera — no hay otra forma de lograr ese mismo efecto con un simple adjetivo.' },
@@ -31149,6 +31236,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:391', 'nociones_generales:C1:392', 'nociones_generales:C1:393', 'nociones_generales:C1:394'],
   title: 'Temperatura en C1: de "un frío que pela" a "al rojo vivo"',
   summary: 'Describir la temperatura en C1 va mucho más allá de "hace frío/calor" — hay adjetivos para cada intensidad (agobiante, polar, tibio), verbos técnicos para medirla y modificarla, y locuciones muy vivas para el frío o el calor extremos, como "un frío que pela" o "estar al rojo vivo".',
+  keywords: [
+    { es: 'un frío que pela', en: 'bitter cold (colloquial)' },
+    { es: 'al rojo vivo', en: 'at boiling point (of a situation, not heat)' },
+    { es: 'hacer un calor sofocante', en: 'to be stiflingly hot' },
+    { es: 'entrarle frío a alguien', en: 'to come over cold' },
+    { es: 'templado', en: 'mild, lukewarm' },
+    { es: 'elevado', en: 'high (formal, of a reading)' },
+    { es: 'el termómetro', en: 'the thermometer' }
+  ],
   sections: [
     { h: 'Sustantivos y adjetivos de temperatura', html: '<i>Bochorno</i> es un calor húmedo y sofocante. <i>Frío polar/invernal</i> y <i>calor agobiante/asfixiante</i> describen los extremos. <i>Temperatura primaveral, moderada, elevada, extrema</i> gradúan de más suave a más intensa. <i>Tibio</i> es una temperatura templada, ni fría ni caliente: <i>un baño en agua tibia ayuda a reducir la temperatura corporal</i>. <i>Crudo</i> aplicado al clima describe algo especialmente duro: <i>un invierno crudo</i>.' },
     { h: 'Verbos técnicos: medir y cambiar la temperatura', html: '<i>Tomar la temperatura</i> es medirla, típicamente a una persona: <i>parece que tiene fiebre, voy a tomarle la temperatura</i>. <i>Ascender/descender/mantener la temperatura</i> describen su evolución. <i>Despedir/emitir/transmitir/generar calor</i> son los verbos para una fuente que produce calor; <i>fuente de calor</i>, el sustantivo correspondiente. <i>Arder</i> es estar ardiendo, a temperatura extrema.' },
@@ -32411,6 +32507,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1109', 'nociones_generales:C1:1110', 'nociones_generales:C1:1111'],
   title: 'Consistencia y resistencia en C1: "fuerte como un roble", "duro como una piedra"',
   summary: 'Describir la consistencia de un material en C1 exige un vocabulario técnico preciso — poroso, compacto, quebradizo, moldeable — junto con comparaciones fijas muy vivas que miden la resistencia contra referentes conocidos: un roble, una piedra.',
+  keywords: [
+    { es: 'fuerte como un roble', en: 'as strong as an ox' },
+    { es: 'duro como una piedra', en: 'rock hard' },
+    { es: 'moldeable', en: 'pliable' },
+    { es: 'derretirse', en: 'to melt' },
+    { es: 'espesarse', en: 'to thicken' },
+    { es: 'quebradizo', en: 'brittle' },
+    { es: 'rendirse', en: 'to give up' }
+  ],
   sections: [
     { h: 'Sustantivos de consistencia', html: '<i>Firmeza, flacidez</i> son cualidades opuestas de solidez. <i>Porosidad, esponjosidad</i> describen la capacidad de absorber o contener aire/líquido. <i>Plasticidad</i> es la capacidad de cambiar de forma sin romperse.' },
     { h: 'Adjetivos de solidez y textura interna', html: '<i>Poroso, compacto, macizo</i> gradúan la densidad: <i>una piedra porosa, un polvo compacto, una madera maciza</i>. <i>Vigoroso, robusto</i> describen fuerza estructural; <i>quebradizo, (ir)rompible</i>, lo contrario, fragilidad: <i>un árbol robusto, unas uñas quebradizas</i>. <i>Tirante, tieso, flácido</i> describen el grado de tensión de algo. <i>Pastoso, esponjoso</i> describen consistencias blandas particulares. <i>Moldeable</i> describe algo que puede cambiar de forma con facilidad. <i>Hueco</i> describe algo vacío por dentro: <i>una pared hueca</i>.' },
@@ -32452,6 +32557,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1130', 'nociones_generales:C1:1131', 'nociones_generales:C1:1132', 'nociones_generales:C1:1133', 'nociones_generales:C1:1134'],
   title: 'Textura en C1: rugoso, sedoso y "al tacto"',
   summary: 'Describir cómo se siente una superficie al tocarla exige un vocabulario muy específico en español — resbaladizo no es lo mismo que pegajoso, aceitoso no es lo mismo que jabonoso — y la locución "al tacto" precisa que la valoración viene de tocar, no de mirar.',
+  keywords: [
+    { es: 'al tacto', en: 'to the touch' },
+    { es: 'sedoso', en: 'silky' },
+    { es: 'áspero', en: 'rough' },
+    { es: 'rugoso', en: 'coarse, ridged' },
+    { es: 'resbaladizo', en: 'slippery' },
+    { es: 'pegajoso', en: 'sticky' },
+    { es: 'liso', en: 'smooth' },
+    { es: 'el pomo', en: 'the doorknob' }
+  ],
   sections: [
     { h: 'Lo táctil en general', html: '<i>Táctil</i> es el adjetivo general para lo relacionado con el tacto. <i>Sentir/comprobar la textura</i> es la construcción para describir el acto de percibir esa cualidad.' },
     { h: 'Texturas suaves y ásperas', html: '<i>Rugoso</i> (áspero, con relieve) frente a <i>sedoso</i> (suave como la seda). <i>Ondulado</i> describe una superficie con curvas suaves y repetidas: <i>una superficie ondulada</i>.' },
@@ -32495,6 +32610,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1152', 'nociones_generales:C1:1153'],
   title: 'Acabado en C1: de "en bruto" a "metalizado"',
   summary: 'El acabado de un objeto se describe en C1 con un catálogo técnico de tratamientos superficiales — lijado, pulido, barnizado, forrado, tapizado — cada uno reservado para un material concreto, y con el contraste entre lo trabajado y lo dejado "al natural" o "en bruto".',
+  keywords: [
+    { es: 'en bruto', en: 'raw, unfinished' },
+    { es: 'lijar', en: 'to sand' },
+    { es: 'barnizar', en: 'to varnish' },
+    { es: 'tapizar', en: 'to upholster' },
+    { es: 'metalizado', en: 'metallic (finish)' },
+    { es: 'al natural', en: 'untreated' },
+    { es: 'el acabado', en: 'the finish' }
+  ],
   sections: [
     { h: 'Sustantivos del acabado', html: '<i>Remate, acabado</i> son el resultado final del tratamiento de una superficie. <i>Forro</i> es el material que recubre algo por dentro o por fuera.' },
     { h: 'Participios de tratamiento superficial', html: '<i>Lijado, pulido, barnizado</i> se aplican a madera y superficies duras; <i>forrado, empapelado, tapizado</i>, a superficies cubiertas con tela o papel. <i>Impermeabilizado, aislado</i> describen tratamientos funcionales contra el agua o la temperatura. <i>(Re)cubierto</i> es el participio general de cubrir algo. <i>Metalizado</i> describe un acabado con aspecto o capa de metal.' },
@@ -32538,6 +32662,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1172', 'nociones_generales:C1:1173', 'nociones_generales:C1:1174', 'nociones_generales:C1:1175', 'nociones_generales:C1:1176'],
   title: 'Humedad y sequedad en C1: "ponerse como una sopa" y cocinar "al vapor"',
   summary: 'Este vocabulario cubre desde electrodomésticos (centrifugar, secador) hasta hipérboles muy vivas para mojarse por completo ("ponerse como una sopa"), pasando por verbos técnicos que distinguen si un líquido atraviesa una superficie (traspasar, filtrarse) o simplemente se derrama sobre ella (verter, salpicar).',
+  keywords: [
+    { es: 'ponerse como una sopa', en: 'to get soaked to the skin' },
+    { es: 'filtrarse', en: 'to seep through' },
+    { es: 'en remojo', en: 'soaking' },
+    { es: 'al vapor', en: 'steamed' },
+    { es: 'la grieta', en: 'the crack' },
+    { es: 'reseco', en: 'parched' },
+    { es: 'escurrir', en: 'to drain, to wring out' }
+  ],
   sections: [
     { h: 'Sustantivos de secado', html: '<i>Absorción</i> es la capacidad de un material de retener líquido: <i>este material tiene una gran capacidad de absorción</i>. <i>Secado, centrifugado</i> son procesos de eliminar humedad; <i>escurridor, secador(a)</i> son los aparatos correspondientes: <i>un escurridor de platos, un secador de pelo, una secadora de ropa</i>.' },
     { h: 'Adjetivos de humedad y sequedad extremas', html: '<i>Encharcado</i> describe un lugar cubierto de agua estancada. <i>Reseco, árido, desértico</i> gradúan la sequedad extrema: <i>un terreno árido</i>. <i>Jugoso</i> describe algo con abundante líquido interior, típicamente en alimentos: <i>una fruta jugosa</i>.' },
@@ -32623,6 +32756,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1220', 'nociones_generales:C1:1221', 'nociones_generales:C1:1222', 'nociones_generales:C1:1223', 'nociones_generales:C1:1224'],
   title: 'Visibilidad y visión en C1: "saltar a la vista" y "mirar por encima del hombro"',
   summary: 'Ver algo en C1 no es solo un acto físico — "mirar por encima del hombro" implica desdén, "saltar a la vista" describe una evidencia inmediata, y "mirar para otro lado" es ignorar deliberadamente algo que sí se ha visto.',
+  keywords: [
+    { es: 'saltar a la vista', en: 'to be blindingly obvious' },
+    { es: 'mirar para otro lado', en: 'to look the other way (deliberately ignore)' },
+    { es: 'examinar con lupa', en: 'to scrutinise' },
+    { es: 'salir a la luz', en: 'to come to light' },
+    { es: 'mirar por encima del hombro', en: 'to look down on someone' },
+    { es: 'a simple vista', en: 'at first glance' },
+    { es: 'entrever', en: 'to glimpse' }
+  ],
   sections: [
     { h: 'Grados de visibilidad', html: '<i>Visibilidad buena/escasa/nula</i> gradúa cuánto se puede ver: <i>a la hora del accidente la visibilidad era prácticamente nula</i>. <i>Ojeada</i> es un vistazo rápido y superficial.' },
     { h: 'Apariencia visual', html: '<i>Apariencia, pinta</i> describen cómo se ve algo o alguien, sin garantizar que coincida con la realidad: <i>tiene apariencia de intelectual, tiene pinta de estar cansada</i>. <i>Percepción/desarrollo/examen visual</i> es el vocabulario técnico de la visión.' },
@@ -32669,6 +32811,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1260', 'nociones_generales:C1:1261', 'nociones_generales:C1:1262', 'nociones_generales:C1:1263'],
   title: 'Audibilidad y audición en C1: de "susurro" a "dar gritos"',
   summary: 'El sonido se gradúa en C1 con un vocabulario que va del murmullo casi inaudible al grito ensordecedor, y con verbos técnicos que describen cómo el sonido se propaga, resuena o traspasa una pared — precisión acústica que "hacer ruido" no puede transmitir.',
+  keywords: [
+    { es: 'el susurro', en: 'the whisper' },
+    { es: 'dar gritos', en: 'to shout' },
+    { es: 'ensordecedor', en: 'deafening' },
+    { es: 'guardar silencio', en: 'to keep quiet' },
+    { es: 'saltar', en: 'to go off (an alarm)' },
+    { es: 'tener buen oído', en: 'to have a good ear' },
+    { es: 'el taladro', en: 'the drill' }
+  ],
   sections: [
     { h: 'Sonidos suaves y agudos', html: '<i>Murmullo, susurro</i> son sonidos muy bajos, casi confidenciales. <i>Silbido, chillido</i> son sonidos agudos y penetrantes.' },
     { h: 'Vocabulario técnico del sonido', html: '<i>Acústica</i> es la cualidad sonora de un espacio: <i>este local tiene muy buena acústica</i>. <i>Auditivo</i> es el adjetivo técnico relacionado con el oído: <i>el canal auditivo</i>.' },
@@ -32711,6 +32862,16 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:C1:1288', 'nociones_generales:C1:1289', 'nociones_generales:C1:1290', 'nociones_generales:C1:1291'],
   title: 'Sabor en C1: catar, saborear y "estar para chuparse los dedos"',
   summary: 'Distinguir "catar" de "saborear" es la clave de este vocabulario reducido pero preciso: catar es analizar profesionalmente un sabor, saborear es disfrutarlo con calma — y "estar para chuparse los dedos" describe algo delicioso hasta el extremo.',
+  keywords: [
+    { es: 'catar', en: 'to taste professionally' },
+    { es: 'la cata', en: 'the tasting' },
+    { es: 'saborear', en: 'to savour' },
+    { es: 'estar para chuparse los dedos', en: 'to be finger-licking good' },
+    { es: 'el bocado', en: 'the mouthful' },
+    { es: 'un ligero sabor a', en: 'a slight taste of' },
+    { es: 'insípido', en: 'tasteless' },
+    { es: 'la bodega', en: 'the winery' }
+  ],
   sections: [
     { h: 'La cata: análisis profesional del sabor', html: '<i>Cata</i> es la degustación analítica y profesional de un producto: <i>cata de vinos</i>. <i>Catar</i> es el verbo correspondiente, distinto de <i>saborear</i>, que implica disfrutar del sabor con calma, no necesariamente analizarlo: <i>catar un vino</i>.' },
     { h: 'Conservar o detectar un sabor', html: '<i>Conservar/detectar un sabor</i> describen, respectivamente, que un sabor permanece o que se identifica correctamente.' },
@@ -32748,6 +32909,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1302', 'nociones_generales:C1:1303', 'nociones_generales:C1:1304'],
   title: 'Olor en C1: de "fragancia" a "peste"',
   summary: 'Los olores se gradúan en C1 desde lo agradable (fragancia) hasta lo insoportable (peste), con verbos que distinguen entre percibir activamente un olor (olfatear) y simplemente desprenderlo (apestar).',
+  keywords: [
+    { es: 'la fragancia', en: 'the fragrance (pleasant, refined)' },
+    { es: 'la peste', en: 'the stench (strongly negative)' },
+    { es: 'apestar', en: 'to stink' },
+    { es: 'desprender', en: 'to give off' },
+    { es: 'olfatear', en: 'to sniff' },
+    { es: 'el hedor', en: 'the stink (formal)' },
+    { es: 'oler a', en: 'to smell of' }
+  ],
   sections: [
     { h: 'Los dos extremos del olor', html: '<i>Peste</i> es un olor muy desagradable: <i>¡qué peste!</i>. <i>Fragancia, esencia</i> son, en el extremo contrario, olores agradables y concentrados.' },
     { h: 'Calificar un olor', html: 'Un olor puede ser <i>asfixiante, apestoso, aromático, penetrante</i> — una escala de lo desagradable a lo intenso pero agradable. <i>Oloroso</i> describe algo con olor notable, generalmente positivo.' },
@@ -32788,6 +32958,16 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1318', 'nociones_generales:C1:1319', 'nociones_generales:C1:1320'],
   title: 'Color en C1: matices, gamas y verbos que cambian el color',
   summary: 'El color en C1 se describe con precisión técnica (matiz, gama, tonalidad) y se manipula con una serie de verbos muy específicos — desteñir, decolorar, blanquear, enrojecer, aclarar, oscurecer — cada uno reservado para un tipo distinto de cambio cromático.',
+  keywords: [
+    { es: 'el matiz', en: 'the shade, the nuance' },
+    { es: 'la gama', en: 'the range' },
+    { es: 'desteñirse', en: 'to fade in the wash' },
+    { es: 'decolorar', en: 'to bleach' },
+    { es: 'teñir', en: 'to dye' },
+    { es: 'las mechas', en: 'the highlights' },
+    { es: 'los colores pastel', en: 'pastel colours' },
+    { es: 'chillón', en: 'garish' }
+  ],
   sections: [
     { h: 'Sustantivos de matiz cromático', html: '<i>Coloración, tonalidad</i> son sustantivos generales del color. <i>Mechas</i> son franjas de color distinto en el pelo. <i>Matiz, gama de color/de grises</i> describen variaciones sutiles dentro de un color o un rango completo de tonos.' },
     { h: 'Adjetivos de color', html: 'Un color puede ser <i>pálido, pastel, llamativo, chillón, desteñido, satinado</i> — desde lo suave y apagado (pálido, pastel) hasta lo intenso y llamativo (chillón), pasando por lo que ha perdido color (desteñido) o tiene un acabado brillante (satinado).' },
@@ -32830,6 +33010,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1336', 'nociones_generales:C1:1337', 'nociones_generales:C1:1338', 'nociones_generales:C1:1339', 'nociones_generales:C1:1340'],
   title: 'Edad y vejez en C1: novato, veterano y "no pasar los años por alguien"',
   summary: 'La edad se aplica en C1 tanto a personas como a objetos y experiencia — un "veterano" no es necesariamente mayor, es experimentado; un objeto puede "conservarse bien" igual que una persona; y "no pasar los años por alguien" es el elogio máximo a quien no envejece.',
+  keywords: [
+    { es: 'el novato', en: 'the novice' },
+    { es: 'el veterano', en: 'the old hand' },
+    { es: 'No pasan los años por ella.', en: 'She hasn\'t aged a bit.' },
+    { es: 'la antigüedad', en: 'the age, the seniority' },
+    { es: 'conservarse bien', en: 'to be well preserved' },
+    { es: 'vencer', en: 'to expire' },
+    { es: 'renovar', en: 'to renew' }
+  ],
   sections: [
     { h: 'Palabras coloquiales de edad', html: '<i>Crío, chaval</i> son formas coloquiales para niño o joven; <i>abuelo</i> se usa también en sentido figurado para alguien que actúa como mayor: <i>estás hecho un abuelo</i>.' },
     { h: 'Experiencia, no solo edad biológica', html: '<i>Novato, veterano</i> se refieren a la experiencia en una actividad, no a la edad biológica — un veterano puede ser joven si lleva mucho tiempo en su campo.' },
@@ -32874,6 +33063,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1369', 'nociones_generales:C1:1370', 'nociones_generales:C1:1371', 'nociones_generales:C1:1372'],
   title: 'Accesibilidad y limpieza en C1: "obstruido" y "estar hecho un asco"',
   summary: 'Estos dos bloques comparten una lógica similar de extremos: la accesibilidad va de lo abierto a lo obstruido, y la limpieza va de lo impecable a "estar hecho un asco" — un vocabulario muy visual para describir el estado de un espacio.',
+  keywords: [
+    { es: 'obstruido', en: 'blocked' },
+    { es: 'estar hecho un asco', en: 'to be in a disgusting state (colloquial)' },
+    { es: 'impecable', en: 'spotless' },
+    { es: 'la accesibilidad', en: 'accessibility' },
+    { es: 'la tubería', en: 'the pipe' },
+    { es: 'la silla de ruedas', en: 'the wheelchair' },
+    { es: 'a fondo', en: 'thoroughly' }
+  ],
   sections: [
     { h: 'Accesibilidad: abrir y cerrar el paso', html: '<i>Accesibilidad</i> es la facilidad de acceso. <i>Apertura, cierre</i> son los procesos de habilitar o bloquear un acceso. <i>Obstrucción, obstruido</i> describen un paso bloqueado por algo. <i>Accesible</i> es el adjetivo general; <i>acceder</i>, el verbo de llegar a algo o entrar en un lugar.' },
     { h: 'Limpieza: de lo impecable a lo asqueroso', html: '<i>Porquería</i> es suciedad en sentido general y coloquial. <i>Impecable</i> describe una limpieza perfecta, sin ningún defecto. <i>Sacudir(se)</i> es eliminar polvo o suciedad con movimientos bruscos. <i>Sanear</i> es limpiar a fondo por razones de salud o higiene. <i>Limpiar de arriba abajo</i> es una limpieza exhaustiva y completa. <i>Estar hecho un asco/una porquería</i> son locuciones coloquiales para describir algo muy sucio o descuidado.' }
@@ -32999,6 +33197,15 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:C1:1445', 'nociones_generales:C1:1446', 'nociones_generales:C1:1449', 'nociones_generales:C1:1450', 'nociones_generales:C1:1451'],
   title: 'Atractivo y calidad en C1: de "apuesto" a "vulgar", de "deficiente" a "superior"',
   summary: 'El atractivo físico y la calidad de un producto comparten en C1 una misma lógica de extremos — elegancia frente a vulgaridad en un caso, deficiencia frente a superioridad en el otro — con verbos concretos para actuar sobre la calidad: garantizarla, mejorarla, asegurarla.',
+  keywords: [
+    { es: 'apuesto', en: 'handsome (formal, dated-elegant)' },
+    { es: 'distinguido', en: 'distinguished' },
+    { es: 'vulgar', en: 'in poor taste, common' },
+    { es: 'deficiente', en: 'substandard' },
+    { es: 'de calidad dudosa', en: 'of questionable quality' },
+    { es: 'superior', en: 'superior' },
+    { es: 'garantizar', en: 'to guarantee' }
+  ],
   sections: [
     { h: 'Atractivo: elegancia frente a vulgaridad', html: '<i>Apuesto, exquisito, distinguido</i> describen un atractivo refinado y elegante. En el extremo opuesto, <i>ridículo, vulgar, basto, antiestético</i> describen falta de gusto o de elegancia.' },
     { h: 'Calidad: una escala completa', html: '<i>Calidad deficiente/dudosa/superior/media/alta</i> gradúa la calidad de un producto o servicio de forma explícita. <i>Satisfactorio, pasable</i> son valoraciones intermedias, apenas aceptables.' },
@@ -33253,6 +33460,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1586', 'nociones_generales:C1:1587'],
   title: 'Interés en C1: de "apasionante" a "morirse de aburrimiento"',
   summary: 'El interés se gradúa en C1 desde la fascinación absoluta hasta el tedio insoportable, con adjetivos muy específicos según el tipo de atractivo (seductor, asombroso, ameno) o de tedio (monótono, pesado, insoportable).',
+  keywords: [
+    { es: 'apasionante', en: 'gripping' },
+    { es: 'ameno', en: 'engaging, entertaining' },
+    { es: 'morirse de aburrimiento', en: 'to be bored to death' },
+    { es: 'monótono', en: 'monotonous' },
+    { es: 'fuera de lo común', en: 'out of the ordinary' },
+    { es: 'No te lo pierdas.', en: 'Don\'t miss it.' },
+    { es: 'el discurso', en: 'the talk, the speech' }
+  ],
   sections: [
     { h: 'Sustantivos del interés y su ausencia', html: '<i>Atracción, fascinación</i> frente a <i>indiferencia</i>: <i>carecer de atracción, mostrar fascinación ante algo, tratar a alguien con indiferencia</i>. <i>Fastidio, pesadez</i> son formas de tedio o molestia.' },
     { h: 'Adjetivos de lo interesante', html: '<i>Seductor, atrayente, asombroso, apasionante, ameno, excepcional</i> — cada uno matiza un tipo de atractivo distinto: seductor (que atrae con encanto), asombroso (que sorprende), ameno (agradable y entretenido, típico de una conversación o texto).' },
@@ -33471,6 +33687,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1728', 'nociones_generales:C1:1729', 'nociones_generales:C1:1730'],
   title: 'Normalidad en C1: de lo "convencional" a "un fuera de serie"',
   summary: 'Lo normal y lo excepcional se describen en C1 con una escala amplia — de lo puramente convencional a lo asombroso — y con verbos que ajustan algo a una norma (normalizar, atenerse a) frente a locuciones que celebran justo lo contrario: ser "un fuera de serie".',
+  keywords: [
+    { es: 'convencional', en: 'conventional' },
+    { es: 'un fuera de serie', en: 'one of a kind' },
+    { es: 'ajustarse a', en: 'to conform to' },
+    { es: 'estándar', en: 'standard' },
+    { es: 'naturalmente', en: 'naturally' },
+    { es: 'inesperado', en: 'unexpected' },
+    { es: 'lo habitual', en: 'the usual thing' }
+  ],
   sections: [
     { h: 'Sustantivo y adjetivos de lo habitual', html: '<i>Anormalidad</i> es la ausencia de normalidad. <i>Usual, corriente, excepcional, vulgar</i> gradúan la frecuencia, con "vulgar" añadiendo un matiz de falta de distinción. <i>Convencional, establecido, estándar, uniforme</i> describen lo que sigue una norma reconocida.' },
     { h: 'Lo inesperado y lo extraordinario', html: '<i>Inesperado, inusual</i> describen lo que rompe la expectativa. <i>Sensacional, asombroso, admirable, extraordinario</i> gradúan lo excepcional en sentido positivo.' },
@@ -34063,6 +34288,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:C1:260', 'funciones:C1:261', 'funciones:C1:262', 'funciones:C1:268', 'funciones:C1:269', 'funciones:C1:270', 'funciones:C1:271'],
   title: 'Escepticismo y contraargumento en C1: "no te falta razón, pero..."',
   summary: 'Mostrar escepticismo en C1 es dudar sin negar del todo ("tengo mis dudas"), y presentar un contraargumento exige primero conceder algo de razón al otro ("no te falta razón") antes de introducir el "pero" que realmente importa.',
+  keywords: [
+    { es: 'Tengo mis dudas sobre…', en: 'I have my doubts about…' },
+    { es: 'No te falta razón, ahora bien…', en: 'You\'re not wrong, but then again…' },
+    { es: 'No me convence del todo.', en: 'It doesn\'t fully convince me.' },
+    { es: 'a no ser que', en: 'unless (+ subjunctive)' },
+    { es: 'por otra parte', en: 'on the other hand' },
+    { es: 'manipular', en: 'to tamper with' },
+    { es: 'valorar', en: 'to weigh up' }
+  ],
   sections: [
     { h: 'Mostrar escepticismo', html: '<i>(Yo) tengo mis dudas (al respecto)</i> expresa duda sin rechazar del todo. <i>No sé qué decirte</i> muestra escepticismo mediante la propia indecisión: <i>pues no sé qué decirte, mi impresión no ha sido tan buena</i>. <i>No me convence del todo</i> añade un matiz parcial: no rechaza, pero tampoco acepta plenamente.' },
     { h: 'Conceder antes de contraargumentar', html: 'La estructura típica del contraargumento en C1 concede un punto antes de introducir la objeción real. <i>No te falta razón, pero/sin embargo/ahora bien/por el contrario</i> concede parcialmente: <i>no te falta razón, sin embargo es mejor hacerlo paso a paso</i>. <i>Yo no digo que (no)..., pero/sin embargo/ahora bien...</i> hace lo mismo negando primero una idea extrema: <i>yo no digo que no sea un gran científico, sin embargo hasta ahora no lo ha demostrado</i>. <i>En eso me has convencido, pero/sin embargo/ahora bien...</i> concede un punto concreto antes de introducir otro en contra: <i>en eso me has convencido, sin embargo cuenta con muy pocas sucursales</i>.' },
@@ -34555,6 +34789,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:548', 'funciones:C1:549', 'funciones:C1:550'],
   title: 'Hartazgo y enfado en C1: "hasta la coronilla" y "de un humor de perros"',
   summary: 'El hartazgo en C1 se localiza en el cuerpo ("hasta la coronilla") y marca un límite explícito ("hasta aquí hemos llegado"), mientras que el enfado combina verbos formales ("me irrita") con locuciones muy vivas como "ponerse de un humor de perros".',
+  keywords: [
+    { es: 'estar hasta la coronilla de', en: 'to be fed up to the back teeth with' },
+    { es: 'Hasta aquí hemos llegado.', en: 'That\'s it, I\'ve had enough.' },
+    { es: 'estar de un humor de perros', en: 'to be in a foul mood' },
+    { es: 'indignante', en: 'outrageous' },
+    { es: 'no pienso aguantar más', en: 'I\'m not putting up with any more' },
+    { es: 'sacar de quicio', en: 'to drive someone up the wall' },
+    { es: 'la excusa', en: 'the excuse' }
+  ],
   sections: [
     { h: 'Hartazgo: llegar al límite', html: '<i>Estoy hasta la coronilla/las narices/aquí (de)...</i> son variantes coloquiales muy comunes para expresar hartazgo extremo, con "la coronilla" en la cabeza y "las narices" en la cara — el cuerpo entero marca el límite alcanzado. <i>Hasta aquí hemos llegado</i> anuncia que se ha llegado al límite y no se tolerará más. <i>Por esto/ahí no paso</i> marca un límite personal muy concreto que no se está dispuesto a cruzar.' },
     { h: 'Enfado: verbos y sustantivos', html: '<i>Me irrita...</i> es directo y neutro: <i>me irrita que hablen de ese tema con tanta frivolidad</i>. <i>Siento rabia/impotencia/indignación...</i> y <i>me llena de rabia/impotencia/indignación...</i> gradúan la intensidad, con "impotencia" añadiendo el matiz de no poder actuar: <i>sentimos impotencia al ver que delitos gravísimos quedan impunes</i>. <i>Es indignante...</i> valora algo como objeto de indignación.' },
@@ -34762,6 +35005,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:685', 'funciones:C1:686', 'funciones:C1:687'],
   title: 'Sorpresa y admiración en C1: "me quedo con la boca abierta"',
   summary: 'Verbos como "sorprender" y "alucinar" tienen doble construcción en C1 — reflexiva ("me sorprendo de") y activa ("me sorprende") — según quién sea el sujeto gramatical, y la sorpresa extrema se somatiza en el gesto: quedarse "con la boca abierta", "de piedra".',
+  keywords: [
+    { es: 'quedarse con la boca abierta', en: 'to be left speechless' },
+    { es: '¡Parece mentira que…!', en: 'It\'s hard to believe that… (+ subjunctive)' },
+    { es: 'estar deslumbrado con', en: 'to be dazzled by' },
+    { es: 'enorgullecer', en: 'to make proud' },
+    { es: 'No me lo esperaba.', en: 'I wasn\'t expecting it.' },
+    { es: '¡Quién lo iba a decir!', en: 'Who would have thought!' },
+    { es: 'el esfuerzo', en: 'the effort' }
+  ],
   sections: [
     { h: 'Sorpresa: dos construcciones para el mismo verbo', html: '<i>Me sorprendo/me asombro con/de...</i> presenta a la persona como sujeto que reacciona: <i>me sorprendí de que la estación estuviera tan vacía</i>. <i>Me sorprende con...</i> invierte el orden: el sujeto gramatical es lo que sorprende, no la persona: <i>Jaime nos sorprendió con una de sus ideas geniales</i>. <i>Alucinar</i> funciona igual: <i>alucino con los coches de bomberos</i> (yo reacciono) frente a <i>me alucinan los coches de bomberos</i> (ellos me producen el efecto).' },
     { h: 'Sorpresa extrema, somatizada en el gesto', html: '<i>Me quedo atónito/alucinado/de piedra/con la boca abierta...</i> describe la reacción física de la sorpresa extrema: <i>me quedé atónito, sin saber qué decir</i>. <i>Me dejas atónito/alucinado/de piedra...</i> invierte de nuevo el sujeto: otra persona provoca ese estado en mí.' },
@@ -34804,6 +35056,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:706', 'funciones:C1:707', 'funciones:C1:708', 'funciones:C1:709', 'funciones:C1:710', 'funciones:C1:711'],
   title: 'Afecto y sensaciones físicas en C1: "estoy hecho polvo" y "no puedo con mi alma"',
   summary: 'El afecto se gradúa de la simpatía al amor, mientras que las sensaciones físicas en C1 se somatizan en imágenes muy vivas — "un agujero en el estómago" para el hambre, "se me cierran los ojos" para el sueño, "hecho polvo" para el agotamiento total.',
+  keywords: [
+    { es: 'tenerle cariño a alguien', en: 'to be fond of someone' },
+    { es: 'estar hecho polvo', en: 'to be wiped out (very colloquial)' },
+    { es: 'no poder con mi alma', en: 'to be completely done in' },
+    { es: 'tener un agujero en el estómago', en: 'to be starving (literally: a hole in the stomach)' },
+    { es: 'Se me cierran los ojos.', en: 'I can\'t keep my eyes open.' },
+    { es: 'estar molido', en: 'to be shattered' },
+    { es: 'la mudanza', en: 'the house move' }
+  ],
   sections: [
     { h: 'Expresar afecto', html: '<i>Siento simpatía/afecto/cariño/amor por/hacia...</i> gradúa la intensidad del sentimiento. <i>(Te) tengo simpatía/afecto/cariño...</i> es una construcción alternativa, igual de común: <i>le tengo un gran cariño</i>. <i>Te amo</i> es la declaración más directa e intensa, reservada casi siempre para el amor romántico.' },
     { h: 'Sensaciones de hambre, sed, sueño, frío y calor', html: '<i>Me da (una) sed/(un) hambre/frío/calor/sueño</i> presenta la sensación como algo que "viene": <i>la pastilla me dio un sueño tremendo</i>. <i>Estoy sediento/congelado/tiritando (de frío)/dormido</i> describe el estado directamente. <i>Tengo un agujero en el estómago</i> (hambre) y <i>tengo la garganta seca</i> (sed) son imágenes físicas muy concretas. <i>Me caigo de sueño</i> y <i>se me cierran los ojos</i> describen el sueño extremo, casi incontrolable.' },
@@ -35475,6 +35736,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:1217', 'funciones:C1:1218'],
   title: 'Preguntar por el estado general de las cosas: la pregunta que se devuelve',
   summary: 'Este ritual conversacional tiene una estructura casi fija: preguntar por otra persona o por cómo fue algo, responder situando la respuesta en una escala de "mucho mejor" a "no demasiado bien", y cerrar el turno devolviendo la pregunta: "y lo tuyo, ¿qué tal?"',
+  keywords: [
+    { es: '¿Qué tal te fue?', en: 'How did it go for you?' },
+    { es: 'Vamos tirando.', en: 'We\'re getting by.' },
+    { es: 'Ya ha pasado lo peor.', en: 'The worst is over.' },
+    { es: '¿Y lo tuyo, qué tal?', en: 'And how about yours?' },
+    { es: 'gracias a Dios', en: 'thank goodness' },
+    { es: '¿Qué tal se encuentra…?', en: 'How is … doing?' },
+    { es: 'devolver la pregunta', en: 'to return the question' }
+  ],
   sections: [
     { h: 'Preguntar por terceros y por sucesos pasados', html: '<i>¿Qué tal se encuentra (tu familia)?</i> pregunta por el bienestar de alguien ajeno a la conversación. <i>¿Qué tal/cómo te fue?</i> pregunta por el resultado de algo ya ocurrido (un viaje, una entrevista, una gestión).' },
     { h: 'Señalar que todo va bien', html: '<i>Sin novedad, gracias</i> es la respuesta neutra estándar cuando no hay nada que contar, en persona o por teléfono.' },
