@@ -13,8 +13,14 @@ levelled. You are not designing anything.
 ## 1. Baseline check — do this first
 
 ```
-git checkout pcic-architecture          # NOT main; main is the old app
+git checkout main                       # main IS the app
 ```
+
+> **Corrected 18 Sep 2026.** This line used to read `git checkout
+> pcic-architecture  # NOT main; main is the old app`. That branch was merged
+> long ago and is now 61 commits behind; following the old instruction put you
+> on a tree missing the entire strand-lesson corpus, the keyword tables, the
+> games rewrite and the Focus feature. Work on `main`.
 
 If `spec/pcic.json` is missing, the derived inputs are gitignored and must be
 rebuilt:
