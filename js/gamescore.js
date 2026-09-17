@@ -307,10 +307,25 @@ window.GameScore = (function () {
   // When the tenses were last put through a retrieval round, so the prompt can
   // come round every few days instead of every time the app is opened.
   function lastTenseCheck() { var v = prefs().tenseDay; return v == null ? null : v; }
-  function markTenseCheck() {
+  /* Records the day AND which tenses were checked, so the next pick can ask
+   * how long each one has actually been left alone rather than guessing from
+   * a rotation. */
+  function markTenseCheck(tenses) {
     var p = prefs();
     p.tenseDay = today();
+    if (tenses && tenses.length) {
+      p.tenseSeen = p.tenseSeen || {};
+      tenses.forEach(function (t) { p.tenseSeen[t] = p.tenseDay; });
+      // how many checks have actually been TAKEN — the cycle counts rounds,
+      // not days, because the days a check lands on are not evenly spaced
+      p.tenseRound = (p.tenseRound || 0) + 1;
+    }
     try { localStorage.setItem(PREF_KEY, JSON.stringify(p)); } catch (e) {}
+  }
+  function tenseRound() { return prefs().tenseRound || 0; }
+  function tenseSeen(t) {
+    var o = prefs().tenseSeen || {};
+    return Object.prototype.hasOwnProperty.call(o, t) ? o[t] : null;
   }
 
   // Thousands separators, because 8420 and 8,420 are not the same number to read.
@@ -326,6 +341,7 @@ window.GameScore = (function () {
     weekSummary: weekSummary, today: today, fmt: fmt,
     silent: silent, setSilent: setSilent,
     rating: rating, rate: rate,
-    lastTenseCheck: lastTenseCheck, markTenseCheck: markTenseCheck
+    lastTenseCheck: lastTenseCheck, markTenseCheck: markTenseCheck, tenseSeen: tenseSeen,
+    tenseRound: tenseRound
   };
 })();

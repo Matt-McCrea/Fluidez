@@ -52,15 +52,27 @@ window.Games = (function () {
   /* One accent per game. Colour is what makes the Games page feel like a
    * shelf of different things rather than one list repeated six times, and it
    * follows you into the round, so you always know what you are playing. */
+  /* CLOCKS. Sixty seconds was set when every game was a tap. A typed or built
+   * answer costs six to ten seconds all in — read the English, retrieve the
+   * Spanish, type it — so a minute was six to ten items: not enough to build
+   * a combo, recover from one miss, or feel a run at all.
+   *
+   * So the clock now follows the cost of the interaction rather than being
+   * the same everywhere. Traducción doubles to two minutes. Escucha and
+   * Verbos go to ninety — both type, but a verb form is one short word and
+   * Escucha spends part of each item listening. Gramática (ninety) and
+   * Emparejar (sixty) do NOT move: they are tapping, they already run twenty
+   * items or more, and making them longer would pad them rather than open
+   * them up. */
   var GAMES = [
     { key: 'traduccion', name: 'Traducción', rule: 'inglés → español', icon: '✍️',
-      hue: '#1d7f8c', secs: 60, kind: 'translate',
+      hue: '#1d7f8c', secs: 120, kind: 'translate',
       blurb: 'Escribe el español. Las frases se alargan según aciertas.' },
     { key: 'escucha', name: 'Escucha', rule: 'óyelo una vez', icon: '🎧',
-      hue: '#7a5bd0', secs: 60, kind: 'listen', needsVoice: true,
+      hue: '#7a5bd0', secs: 90, kind: 'listen', needsVoice: true,
       blurb: 'Una voz lo dice. ¿Qué era? Cada nivel habla más rápido.' },
     { key: 'verbos', name: 'Verbos', rule: '“he ate” → comió', icon: '⚡',
-      hue: '#b5711a', secs: 60, kind: 'verb',
+      hue: '#b5711a', secs: 90, kind: 'verb',
       blurb: 'Del significado a la forma, sin etiquetas gramaticales.' },
     { key: 'gramatica', name: 'Gramática', rule: '¿cuál va aquí?', icon: '🎯',
       hue: '#2f7fb8', secs: 90, kind: 'grammar',
@@ -275,7 +287,7 @@ window.Games = (function () {
     var h = roundHost();
     clear(h);
     window.GameRound.run(h, {
-      key: GS.dailyKey(), title: 'Reto de hoy', kind: 'mixed', duration: 90000,
+      key: GS.dailyKey(), title: 'Reto de hoy', kind: 'mixed', duration: 120000,
       hue: 'var(--accent)', seed: GS.dailySeed(),
       silent: GS.silent() || !hasVoice(), onExit: backToList
     });
@@ -422,7 +434,7 @@ window.Games = (function () {
     clear(h);
     window.GameRound.run(h, {
       key: 'debiles', title: label || 'Puntos débiles', kind: 'grammar', topic: topic,
-      duration: 60000, hue: '#b5711a',
+      duration: 90000, hue: '#b5711a',
       silent: GS.silent() || !hasVoice(), onExit: backToList
     });
   }
@@ -444,7 +456,7 @@ window.Games = (function () {
     clear(h);
     var g = byKey('verbos');
     window.GameRound.run(h, {
-      key: 'verbos', title: label || 'Verbos', kind: 'verb', duration: 60000,
+      key: 'verbos', title: label || 'Verbos', kind: 'verb', duration: 90000,
       hue: g ? g.hue : '#b5711a', lockTense: tense,
       silent: GS.silent() || !hasVoice(),
       onExit: back || backToList
@@ -491,11 +503,49 @@ window.Games = (function () {
     if (last != null && day - last < TENSE_EVERY) return null;
 
     var n = taught.length;
-    // one, two, then three — cycling, so a learner with several tenses meets
-    // them singly AND together rather than only ever in a jumble
-    var want = Math.min(n, [1, 2, 3][day % 3]);
-    var off = day % n, picked = [];
-    for (var i = 0; i < want; i++) picked.push(taught[(off + i) % n]);
+
+    /* One, two, then three — so a learner with several tenses meets them
+     * singly AND together rather than only ever in a jumble.
+     *
+     * This cycled on `day % 3`, and never once fired: the check appears when
+     * day - last >= 3, so taking it when offered puts every check on a day
+     * divisible by three, day % 3 is always 0, and `want` was always 1. It
+     * counts ROUNDS TAKEN now, which is what "cycling" meant.
+     *
+     * And the batch grows with how much you know. Checking one tense at a
+     * time out of seventeen is why a B2 learner met each one twice a year;
+     * with the pool that large, three to five at a time is the honest size of
+     * a "mixed challenge" and still leaves five or six items per tense in a
+     * two-minute round. */
+    var base = [1, 2, 3][(GS.tenseRound ? GS.tenseRound() : 0) % 3];
+    var want = Math.min(n, 5, base + Math.floor(n / 8));
+
+    /* WHICH tenses used to be `day % n` — a blind rotation. That is fine with
+     * four tenses and quietly terrible with seventeen: the check runs every
+     * three days, so the more Spanish you know the rarer each tense gets. A
+     * given tense came round about every 6 days at A2, 12 at B1 and 51 at B2,
+     * which is exactly backwards — the moment you have the most tenses to
+     * keep apart is the moment each one gets the least practice.
+     *
+     * So pick by need instead. The error log has recorded a `tense:<key>`
+     * topic on every miss all along and nothing was reading it. A tense you
+     * keep getting wrong, or have not been asked about in weeks, comes first.
+     * Never asked at all sorts to the top, which is what you want right after
+     * a lesson has taught one. */
+    var missed = {};
+    if (window.ErrorLog) {
+      window.ErrorLog.cards().forEach(function (c) {
+        var m = /^tense:(.+)$/.exec(c.topic || '');
+        if (m) missed[m[1]] = (missed[m[1]] || 0) + 1;
+      });
+    }
+    var scored = taught.map(function (t) {
+      var seen = GS.tenseSeen ? GS.tenseSeen(t) : null;
+      var rest = seen == null ? 999 : (day - seen);        // never asked = most overdue
+      return { t: t, score: (missed[t] || 0) * 3 + Math.min(rest, 60) };
+    }).sort(function (a, b) { return b.score - a.score; });
+
+    var picked = scored.slice(0, want).map(function (x) { return x.t; });
 
     var names = picked.map(function (t) { return E2.TENSE_LABEL[t].toLowerCase(); });
     var title = picked.length === 1 ? 'Repaso rápido: el ' + names[0]
@@ -508,7 +558,7 @@ window.Games = (function () {
   }
 
   function startTenseCheck(check, back) {
-    GS.markTenseCheck();
+    GS.markTenseCheck(check.tenses);
     if (!exitAll) exitAll = back || function () { window.Shell.closeOverlay(); window.Shell.go('inicio'); };
     window.Shell.openOverlay(false);
     var h = host();
