@@ -6514,5 +6514,196 @@ window.PASSAGES = [
     { type: 'translate', line: 'sus propios síntomas de dolor intenso son descritos con mayor frecuencia en la documentación médica mediante términos que minimizan implícitamente su gravedad real', model: 'their own symptoms of intense pain are more often described in medical records using terms that implicitly downplay their real severity' }
   ]
 }
+,
 
+{
+  id: 'b1-cuerpo-fisio', title: 'Lo que dijo el fisioterapeuta', level: 4, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj'],
+  text: 'Marta llevaba meses con dolor en la espalda y en el cuello. Su médica le recomendó un fisioterapeuta del barrio, aunque ella dudaba que cuatro sesiones sirvieran de algo. En la primera visita él no le tocó la espalda: le pidió que caminara por la sala y que se sentara como se sienta en la oficina. «El problema no está en los huesos», le dijo. «Está en la postura y en unos músculos que casi nunca usas.» Le enseñó dos ejercicios para los hombros, uno para la cintura y otro para las piernas, y le advirtió que al principio notaría molestias en los brazos. También le mandó dar un paseo de media hora cada tarde. Dos meses después, Marta subía las escaleras sin apoyar la mano en la pared.',
+  gloss: [ { es: 'llevaba meses con', en: 'had had … for months' },
+           { es: 'sirvieran de algo', en: 'would be any use' },
+           { es: 'le advirtió', en: 'he warned her' },
+           { es: 'las molestias', en: 'aches, discomfort' },
+           { es: 'apoyar', en: 'to lean, to rest' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué esperaba Marta de la primera sesión?',
+      options: ['Estaba convencida de que la curaría', 'No confiaba mucho en que funcionara', 'No quería ir'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué no le tocó la espalda el fisioterapeuta?',
+      options: ['Porque quería ver cómo se movía y cómo se sentaba', 'Porque el dolor no era real', 'Porque no era su especialidad'], answer: 0 },
+    { type: 'short', q: '¿Qué le mandó hacer cada tarde? (tres palabras)', accept: ['dar un paseo', 'un paseo'] },
+    { type: 'translate', line: 'Está en la postura y en unos músculos que casi nunca usas.', model: 'It\'s in your posture, and in some muscles you almost never use.' }
+  ]
+},
+
+{
+  id: 'b1-cuerpo-carne', title: 'La foto del carné', level: 4, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'plusc'],
+  text: 'Nunca había visto una foto mía tan honesta hasta que renové el carné el martes pasado. La máquina no perdona: sale el cuello, sale media cara y sale la mirada de alguien a quien acaban de despertar. Tengo el pelo más corto que hace dos años y la piel más clara, porque este verano no estuve moreno ni un día. Los ojos me salieron entrecerrados y la nariz, por algún motivo, más ancha. Mi hermana dice que el problema es la postura: que saco la barbilla y hundo los hombros, y que por eso parezco cansado en todas las fotos. Puede que tenga razón. De momento llevo cuatro años con esa cara en la cartera y nadie, ni en el banco ni en el aeropuerto, me ha mirado dos veces.',
+  gloss: [ { es: 'el carné', en: 'ID card' },
+           { es: 'no perdona', en: 'doesn\'t flatter / shows no mercy' },
+           { es: 'entrecerrados', en: 'half-closed' },
+           { es: 'la barbilla', en: 'chin' },
+           { es: 'hundo', en: 'I hunch, I sink' },
+           { es: 'la cartera', en: 'wallet' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué explicación da su hermana?',
+      options: ['Que la máquina está estropeada', 'Que él se coloca mal el cuerpo', 'Que la foto es antigua'], answer: 1 },
+    { type: 'mcq', q: '¿Qué actitud tiene el narrador hacia su foto?',
+      options: ['Está resignado y le da igual', 'Está muy enfadado', 'Está orgulloso'], answer: 0 },
+    { type: 'short', q: '¿Por qué tiene la piel más clara? (una palabra: la estación)', accept: ['verano', 'el verano'] },
+    { type: 'translate', line: 'Tengo el pelo más corto que hace dos años y la piel más clara', model: 'My hair is shorter than two years ago and my skin is paler' }
+  ]
+},
+
+{
+  id: 'b1-cuerpo-natacion', title: 'Volver a la piscina', level: 4, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro'],
+  text: 'Cuando Álvaro volvió a nadar tenía cuarenta y un años y una lista larga de excusas. La primera semana terminaba cada largo con los pulmones ardiendo, los brazos pesados y el corazón a mil. El monitor le dijo que no mirara el reloj: «Si cuentas los minutos, el cuerpo se cansa antes.» Le corrigió la posición de la cabeza, que él sacaba demasiado del agua, y le explicó que la fuerza no sale de los hombros sino de la cintura y de las piernas. Poco a poco dejó de dolerle el cuello, y la rodilla que le molestaba al correr dejó de aparecer en la conversación. A los tres meses nadaba mil metros seguidos y notaba los músculos de la espalda de una manera que no recordaba desde el instituto. Lo que más le sorprendió no fue la forma física, sino dormir de un tirón por primera vez en años.',
+  gloss: [ { es: 'un largo', en: 'a length (of the pool)' },
+           { es: 'ardiendo', en: 'burning' },
+           { es: 'el monitor', en: 'the coach, instructor' },
+           { es: 'no … sino', en: 'not … but rather' },
+           { es: 'dormir de un tirón', en: 'to sleep right through' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué consejo le dio el monitor sobre el reloj?',
+      options: ['Que lo mirara para ir más rápido', 'Que no lo mirara, porque cansa', 'Que nadara sin reloj los sábados'], answer: 1 },
+    { type: 'mcq', q: 'Según el monitor, ¿de dónde sale la fuerza al nadar?',
+      options: ['De la cintura', 'De los hombros', 'De la cabeza'], answer: 0 },
+    { type: 'short', q: '¿Qué fue lo que más le sorprendió? (dos palabras: un verbo y un sustantivo)', accept: ['dormir de un tirón', 'dormir bien', 'dormir'] },
+    { type: 'translate', line: 'Si cuentas los minutos, el cuerpo se cansa antes.', model: 'If you count the minutes, your body tires sooner.' }
+  ]
+},
+
+{
+  id: 'b1-religion-semana-santa', title: 'La cofradía del pueblo', level: 4, theme: 'religion',
+  tenses: ['presente', 'perfecto', 'condicional', 'presubj'],
+  text: 'En el pueblo de mi madre la Semana Santa se prepara desde enero. La cofradía se reúne en una sala detrás de la iglesia de san Roque y discute cosas que a un forastero le parecerían mínimas: a qué hora sale el santo, qué calle se recorre primero, quién lleva la cruz. Mi tío, que es ateo declarado, lleva veinte años cargando el paso. Cuando alguien le pregunta por qué, contesta que él dejó de ir a misa a los quince, pero que la procesión no es solo de los creyentes: es del pueblo entero. El sacerdote nunca le ha discutido el argumento, y eso que la religión es su oficio. La noche del Viernes Santo la plaza se queda en silencio, y da igual que uno sea católico, protestante o nada: allí no habla nadie.',
+  gloss: [ { es: 'la cofradía', en: 'brotherhood (that organises processions)' },
+           { es: 'el forastero', en: 'outsider' },
+           { es: 'el paso', en: 'float carried in a procession' },
+           { es: 'cargando', en: 'carrying' },
+           { es: 'da igual que', en: 'it doesn\'t matter whether' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué participa el tío en la procesión?',
+      options: ['Porque se ha hecho creyente', 'Porque la considera una cosa del pueblo, no solo religiosa', 'Porque se lo pidió el sacerdote'], answer: 1 },
+    { type: 'mcq', q: '¿Qué actitud tiene el sacerdote ante el tío?',
+      options: ['Lo acepta sin discutir', 'Le prohíbe participar', 'Intenta convencerlo'], answer: 0 },
+    { type: 'short', q: '¿Desde qué mes se prepara la Semana Santa? (una palabra)', accept: ['enero', 'desde enero'] },
+    { type: 'translate', line: 'la procesión no es solo de los creyentes: es del pueblo entero', model: 'the procession does not belong only to the believers: it belongs to the whole town' }
+  ]
+},
+
+{
+  id: 'b1-religion-calendarios', title: 'Tres calendarios en un piso', level: 5, theme: 'religion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'plusc', 'futperf'],
+  text: 'Comparto piso con Yasmin y con Daniel desde octubre. Ella es musulmana, él es judío, y yo me crié entre católicos y hace años que no piso una iglesia. Al principio me preocupaba meter la pata, pero resultó más sencillo de lo que había imaginado. En Ramadán Yasmin cena tardísimo y nosotros procuramos no cocinar a mediodía. Daniel no trabaja el sábado y ese día cocina él, de modo que el sabbat en esta casa huele a cebolla. En Navidad me voy a casa de mis padres. Ninguno de los tres intenta convencer a nadie: ni de creer en Dios, ni de dejar de hacerlo. He leído que los musulmanes, los judíos y los cristianos discuten desde hace siglos sobre lo mismo, y aquí la religión cabe entera en un calendario de cocina. Para entonces yo ya habré aprendido que convivir no exige creer lo mismo, sino saber qué día no conviene poner la lavadora.',
+  gloss: [ { es: 'meter la pata', en: 'to put my foot in it' },
+           { es: 'procuramos', en: 'we try to' },
+           { es: 'de modo que', en: 'so that, with the result that' },
+           { es: 'aprovechan para', en: 'they take the chance to' },
+           { es: 'no conviene', en: 'it\'s not a good idea to' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué temía el narrador al principio?',
+      options: ['Que hubiera discusiones sobre religión', 'Equivocarse y ofender a alguien sin querer', 'Tener que cocinar todos los días'], answer: 1 },
+    { type: 'mcq', q: '¿Qué conclusión saca sobre la convivencia?',
+      options: ['Que hay que compartir las mismas creencias', 'Que basta con respetar los horarios del otro', 'Que es imposible a largo plazo'], answer: 1 },
+    { type: 'short', q: '¿Qué día no trabaja Daniel? (una palabra)', accept: ['sábado', 'el sábado'] },
+    { type: 'translate', line: 'convivir no exige creer lo mismo', model: 'living together does not require believing the same thing' }
+  ]
+},
+
+{
+  id: 'b1-religion-abuela', title: 'La abuela y el ateo', level: 4, theme: 'religion',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'plusc'],
+  text: 'Mi abuela tenía una biblia en la mesilla y la leía todas las noches, aunque decía que ya se la sabía entera. Nunca me preguntó si yo creía en Dios. Cuando le confesé a los diecisiete años que era ateo, esperaba una discusión y me encontré con un encogimiento de hombros. «Tú sigue portándote bien», me dijo, «que de lo demás ya hablaremos». No dejó de ir a misa los domingos, y llevaba con ella a una amiga protestante a quien el sacerdote de la iglesia saludaba por su nombre. De los santos hablaba como de vecinos; del papa, casi nunca; del infierno, jamás. Lo que ella practicaba no se parecía mucho a lo que yo había leído sobre la religión en el instituto, ni a lo que discutían en la tele los católicos de profesión. Cuando murió encontramos la biblia llena de fotos y de recibos: la usaba de álbum.',
+  gloss: [ { es: 'la mesilla', en: 'bedside table' },
+           { es: 'un encogimiento de hombros', en: 'a shrug' },
+           { es: 'portándote bien', en: 'behaving yourself' },
+           { es: 'por lo visto', en: 'apparently' },
+           { es: 'los recibos', en: 'receipts' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo reaccionó la abuela a la confesión del nieto?',
+      options: ['Con una discusión larga', 'Sin darle importancia', 'Prohibiéndole volver a casa'], answer: 1 },
+    { type: 'mcq', q: '¿Qué sugiere el final sobre la religión de la abuela?',
+      options: ['Que no era sincera', 'Que estaba tejida con su vida diaria y sus recuerdos', 'Que había dejado de creer'], answer: 1 },
+    { type: 'short', q: '¿Qué guardaba la abuela dentro de la biblia? (dos cosas)', accept: ['fotos y recibos', 'fotos y recibos.', 'fotos, recibos'] },
+    { type: 'translate', line: 'Tú sigue portándote bien', model: 'You just keep behaving yourself' }
+  ]
+},
+
+{
+  id: 'b1-caracter-companero', title: 'El compañero nuevo', level: 4, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  text: 'A Nuria le habían dicho que el compañero nuevo era antipático. Los tres primeros días él no habló con nadie, comió solo y contestó a los correos con dos líneas, así que el diagnóstico de la oficina pareció confirmarse. Luego resultó que no era antipático sino tímido, que es otra cosa. Nuria lo descubrió en el ascensor, cuando le preguntó por la bicicleta que dejaba en el portal y él estuvo diez minutos hablando sin parar. Desde entonces le parece de las personas más amables del equipo: reservado con los desconocidos, generoso con quien ya conoce, muy trabajador y bastante más alegre de lo que aparenta. Nadie duda de que sea inteligente; lo que nadie esperaba es que fuera sociable. Lo curioso es que en la oficina siguen llamándolo «el serio», como si el carácter se decidiera en la primera semana.',
+  gloss: [ { es: 'el diagnóstico', en: 'the verdict, diagnosis' },
+           { es: 'resultó que', en: 'it turned out that' },
+           { es: 'el portal', en: 'entrance hall of a building' },
+           { es: 'aparenta', en: 'he seems, he looks' },
+           { es: 'lo curioso', en: 'the odd thing' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es la diferencia que descubre Nuria?',
+      options: ['Entre ser antipático y ser tímido', 'Entre ser serio y ser trabajador', 'Entre ser callado y ser vago'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le hizo cambiar de opinión?',
+      options: ['Un correo muy largo', 'Una conversación en el ascensor', 'Un comentario del jefe'], answer: 1 },
+    { type: 'short', q: '¿Cómo lo siguen llamando en la oficina? (dos palabras, con artículo)', accept: ['el serio', 'serio'] },
+    { type: 'translate', line: 'no era antipático sino tímido, que es otra cosa', model: 'he was not unfriendly but shy, which is a different thing' }
+  ]
+},
+
+{
+  id: 'b1-caracter-hermanas', title: 'Dos hermanas y una avería', level: 4, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc'],
+  text: 'Se estropeó la caldera en enero y las dos hermanas reaccionaron como si tuvieran caracteres prestados. Pilar, impaciente de toda la vida, llamó a cuatro técnicos el mismo día, hizo una lista y se pasó la tarde en una intranquilidad de reloj parado, convencida de que nadie vendría antes del jueves. Rosa se puso dos jerséis y dijo que ya se arreglaría. No es que a Rosa le diera igual: es que su optimismo y la impaciencia de su hermana son dos formas distintas de tener miedo. Vino un técnico el martes. Pilar se pasó una semana contando que había tenido razón, y Rosa, que es la paciente de las dos, la dejó contarlo sin discutir; su paciencia no es virtud, es cansancio heredado. Con el tiempo he aprendido que en esa casa la tranquilidad de una depende de que la otra ponga el pesimismo por las dos.',
+  gloss: [ { es: 'la caldera', en: 'boiler' },
+           { es: 'la avería', en: 'breakdown, fault' },
+           { es: 'ya se arreglaría', en: 'it would sort itself out' },
+           { es: 'no es que … : es que', en: 'it\'s not that … : it\'s that' },
+           { es: 'le diera igual', en: 'she didn\'t care' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué idea defiende el narrador sobre las dos hermanas?',
+      options: ['Que Rosa es más valiente', 'Que sus caracteres opuestos vienen del mismo miedo', 'Que Pilar tenía razón'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo reaccionó Rosa ante el relato de su hermana?',
+      options: ['La dejó hablar sin llevarle la contraria', 'Se enfadó mucho', 'Se fue de casa'], answer: 0 },
+    { type: 'short', q: '¿Qué se estropeó? (una palabra, con artículo)', accept: ['la caldera', 'caldera'] },
+    { type: 'translate', line: 'su optimismo y la impaciencia de su hermana son dos formas distintas de tener miedo', model: 'her optimism and her sister\'s impatience are two different ways of being afraid' }
+  ]
+},
+
+{
+  id: 'b1-identidad-formulario', title: 'Un formulario de cuatro páginas', level: 4, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj', 'plusc'],
+  text: 'El formulario pedía el nombre y los dos apellidos, la fecha de nacimiento, el lugar de nacimiento, la dirección completa con el código postal y el número de teléfono. Hasta ahí, bien. El problema empezó en el estado civil, porque Luis se había separado en marzo y no sabía si ya podía escribir «soltero» o si seguía siendo casado a efectos del papeleo. En la ventanilla la señora le explicó que hasta que no hubiera sentencia pusiera lo segundo. Luego venía la nacionalidad, y ahí Luis tardó otro rato: nació en Alemania, es español desde los cuatro años y en el trabajo todos lo tratan de extranjero por el apellido. Escribió «española», entregó las cuatro páginas y salió a la plaza con la sensación de no haber dicho la verdad del todo.',
+  gloss: [ { es: 'los apellidos', en: 'surnames' },
+           { es: 'a efectos del papeleo', en: 'as far as the paperwork is concerned' },
+           { es: 'la ventanilla', en: 'service window, counter' },
+           { es: 'la sentencia', en: 'court ruling' },
+           { es: 'del todo', en: 'entirely' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué duda Luis en el estado civil?',
+      options: ['Porque no recuerda la fecha', 'Porque se ha separado pero no hay sentencia', 'Porque el formulario no lo pedía'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué le incomoda la pregunta de la nacionalidad?',
+      options: ['Porque no tiene papeles', 'Porque lo que pone en el papel no recoge del todo quién es', 'Porque no sabe escribir el nombre del país'], answer: 1 },
+    { type: 'short', q: '¿En qué país nació Luis? (una palabra)', accept: ['Alemania', 'alemania', 'en Alemania'] },
+    { type: 'translate', line: 'salió a la plaza con la sensación de no haber dicho la verdad del todo', model: 'he went out into the square feeling that he had not quite told the truth' }
+  ]
+},
+
+{
+  id: 'b1-identidad-nombre', title: 'El nombre que nadie sabe escribir', level: 4, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj'],
+  text: 'Me llamo Iratxe y llevo toda la vida deletreando mi nombre por teléfono. En el banco figuro como Iratze; en el gimnasio, como Iracher. La señora de la ventanilla me pidió el número de teléfono, la dirección y la edad sin levantar la vista, y el nombre tres veces. Mi hermano, que se llama Jon, no ha tenido nunca ese problema, aunque a él le preguntan si es el diminutivo de algo. Mi madre eligió los dos nombres a propósito: quería que se supiera de dónde somos sin tener que explicarlo. Funciona a medias. En el pueblo nadie levanta la ceja; en Madrid, donde vivo desde los veinte, me han preguntado por mi lugar de nacimiento en tres entrevistas, como si fuera extranjera en mi propio país. Soy tan española como el chico que me lo preguntaba. Ahora digo el nombre despacio y añado el apellido antes de que me lo pidan.',
+  gloss: [ { es: 'deletreando', en: 'spelling out' },
+           { es: 'figuro como', en: 'I appear as' },
+           { es: 'a propósito', en: 'on purpose' },
+           { es: 'a medias', en: 'only halfway' },
+           { es: 'levanta la ceja', en: 'raises an eyebrow' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué eligió la madre esos nombres?',
+      options: ['Porque eran fáciles de escribir', 'Para que el origen de la familia se notara sin explicaciones', 'Porque eran nombres de familia'], answer: 1 },
+    { type: 'mcq', q: '¿Qué hace ahora la narradora al dar su nombre?',
+      options: ['Lo dice despacio y añade el apellido sin esperar', 'Lo escribe siempre en un papel', 'Usa otro nombre más sencillo'], answer: 0 },
+    { type: 'short', q: '¿Cómo se llama su hermano? (una palabra)', accept: ['Jon', 'jon'] },
+    { type: 'translate', line: 'llevo toda la vida deletreando mi nombre por teléfono', model: 'I have spent my whole life spelling out my name on the phone' }
+  ]
+}
 ];
