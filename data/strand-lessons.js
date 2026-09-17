@@ -311,6 +311,14 @@ window.STRAND_LESSONS = [
   title: 'Expresa una emoción complicada',
   canDo: 'express an emotion that has no single word for it',
   summary: 'C1 emotion is not stronger than B2 emotion — it is more exact. Arrepentimiento with a touch of relief. Affection expressed as mock complaint. The pride you cannot admit to. Spanish has fixed ways of doing all three.',
+  keywords: [
+    { es: 'Se me rompe el corazón.', en: 'It breaks my heart.' },
+    { es: 'estar como un flan', en: 'to be a bundle of nerves' },
+    { es: 'morirse de ganas de', en: 'to be dying to' },
+    { es: 'No te lo tomes a pecho.', en: 'Don\'t take it to heart.' },
+    { es: 'vergüenza ajena', en: 'second-hand embarrassment' },
+    { es: 'a pecho', en: 'to heart' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write about a relationship or a decision where what you felt was genuinely mixed and hard to name. Twenty sentences or more.' },
     { h: 'The C1 moves', html: 'Emotion through understatement (<i>no me hizo especial ilusión</i>), through its opposite (<i>no sabes cómo me alegro</i> for something small), through the body (<i>se me encogió el estómago</i>), and the fixed expressions of regret — <i>si volviera a nacer</i>, <i>me arrepiento de no haber…</i>' }
@@ -345,6 +353,14 @@ window.STRAND_LESSONS = [
   title: 'Escribe un ensayo argumentativo',
   canDo: 'sustain an argument for a thousand words',
   summary: 'The longest and most demanding piece in the course. Everything C1 has — the register, the covert attribution, the concession built into syntax, the idiom used sparingly and exactly — has to hold together across five or six paragraphs without flagging.',
+  keywords: [
+    { es: 'cabe preguntarse si', en: 'one might ask whether' },
+    { es: 'ahora bien', en: 'that said' },
+    { es: 'no obstante', en: 'nevertheless' },
+    { es: 'en la medida en que', en: 'insofar as' },
+    { es: 'conviene matizar', en: 'it should be qualified' },
+    { es: 'En síntesis', en: 'In summary' }
+  ],
   sections: [
     { h: 'What to do', html: '800 to 1,200 words on a genuinely contested question in a field you know. Open on the controversy rather than on your position.' },
     { h: 'The structure C1 expects', html: 'The polemical question · the state of the debate, attributed · your position, arrived at rather than announced · the strongest counter-case, answered without dismissiveness · a final reservation that is real.' },
@@ -380,6 +396,14 @@ window.STRAND_LESSONS = [
   title: 'Describe algo con precisión nativa',
   canDo: 'describe the physical and temporal world the way a native writer does',
   summary: 'Precision at this level is not more nouns. It is the fixed expressions that make a description sound observed rather than translated — and this is where you use them.',
+  keywords: [
+    { es: 'a ojo', en: 'roughly, by eye' },
+    { es: 'por los pelos', en: 'by the skin of your teeth' },
+    { es: 'caer en picado', en: 'to plummet' },
+    { es: 'de antemano', en: 'in advance' },
+    { es: 'a la larga', en: 'in the long run' },
+    { es: 'con pelos y señales', en: 'in minute detail' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write a description of a place at a particular moment — a market at closing, a station at dawn, a kitchen mid-service. Twenty-five sentences, heavy on the senses.' },
     { h: 'Reach for the fixed expression', html: '<i>A simple vista</i>, <i>al tacto</i>, <i>a ojo</i>, <i>de norte a sur</i>, <i>al rojo vivo</i>, <i>para chuparse los dedos</i>, <i>un frío que pela</i>, <i>cuatro gatos</i>, <i>hasta arriba</i>. Each is doing work no adjective does.' }
@@ -30585,6 +30609,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:13', 'nociones_generales:C1:14', 'nociones_generales:C1:15', 'nociones_generales:C1:16', 'nociones_generales:C1:17'],
   title: 'Existencia e inexistencia en C1: nacer, formarse y dejar de ser',
   summary: 'Más allá de "existir" y "no existir", el español tiene un vocabulario preciso para hablar de cómo algo llega a ser (surgir, generarse, formarse) y de cómo deja de serlo (extinguirse, abolirse) — cada verbo especifica el tipo de origen o de final, no solo el hecho desnudo.',
+  keywords: [
+    { es: 'dar lugar a', en: 'to give rise to' },
+    { es: 'constituirse', en: 'to be formed' },
+    { es: 'dejar de ser', en: 'to cease to be' },
+    { es: 'surgir', en: 'to emerge' },
+    { es: 'la oleada', en: 'the wave' },
+    { es: 'extinguirse', en: 'to die out' }
+  ],
   sections: [
     { h: 'Sustantivos de la existencia y su ausencia', html: '<i>La nada</i> designa la ausencia total de existencia; <i>(in)existencia</i>, el hecho mismo de existir o no; <i>materialización</i>, el paso de una idea a una realidad concreta. <i>(Im)perceptible</i> y <i>palpable</i> describen si esa existencia se puede captar por los sentidos: <i>una tensión palpable</i>.' },
     { h: 'Verbos de origen: cómo algo llega a existir', html: '<i>Surgir</i> (aparecer sin más precisión), <i>idear</i> (concebir mentalmente), <i>generar, suscitar, despertar</i> (producir algo, especialmente reacciones: <i>generar riqueza, suscitar dudas, despertar envidias</i>), <i>constituir, hacerse, formarse</i> (tomar forma como entidad: <i>constituir un gobierno, formarse una imagen equivocada</i>), <i>concebir, parir</i> (el origen biológico), <i>formar</i> (crear una entidad organizada: <i>formar una familia, formar un equipo</i>), <i>fomentar, favorecer, promover</i> (impulsar activamente algo para que surja: <i>fomentar la investigación</i>).' },
@@ -30628,6 +30660,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:41', 'nociones_generales:C1:42', 'nociones_generales:C1:43', 'nociones_generales:C1:44', 'nociones_generales:C1:45'],
   title: 'Presencia y ausencia en C1: de "estar hasta arriba" a "cuatro gatos"',
   summary: 'La presencia y la ausencia se expresan en C1 con locuciones muy idiomáticas — un lugar puede estar "hasta arriba" o no haber "ni un alma", alguien puede "pasar desapercibido" o presentarse "de incógnito" — que un hablante no nativo reconoce por contexto antes de aprender a usarlas con soltura.',
+  keywords: [
+    { es: 'estar hasta arriba de', en: 'to be packed with' },
+    { es: 'cuatro gatos', en: 'hardly anyone (literally: four cats)' },
+    { es: 'no haber ni un alma', en: 'not a soul about' },
+    { es: 'brillar por su ausencia', en: 'to be conspicuous by one\'s absence' },
+    { es: 'asistir', en: 'to attend' },
+    { es: 'faltar', en: 'to be missing' }
+  ],
   sections: [
     { h: 'Grados de presencia: de vacío a abarrotado', html: '<i>No haber (ni) un alma</i> describe un lugar completamente vacío; <i>ser/haber cuatro gatos</i>, muy poca gente; <i>abarrotado</i> y <i>estar hasta arriba</i>, el extremo contrario: <i>el estadio estaba hasta arriba</i>.' },
     { h: 'Aparecer y desaparecer', html: '<i>Reaparecer</i> (volver a estar presente) se opone a <i>extraviar(se)</i> (perderse). <i>Ocultar(se), tapar(se)</i> hacen desaparecer algo de la vista voluntariamente. <i>Difundir(se), propagar(se)</i> hablan de la presencia que se extiende: <i>difundir una noticia, propagar una enfermedad</i>. <i>Pasar desapercibido/inadvertido</i> describe una presencia que no llama la atención.' },
@@ -30669,6 +30709,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:73', 'nociones_generales:C1:74', 'nociones_generales:C1:75', 'nociones_generales:C1:76', 'nociones_generales:C1:77'],
   title: 'Disponibilidad en C1: desde "a mano" hasta "no estar para nadie"',
   summary: 'La disponibilidad se expresa en C1 con un abanico de locuciones que van de lo puramente práctico ("tener a mano") a lo institucional ("quedar a disposición de") y hasta el rechazo deliberado de estar disponible ("no estar para nadie").',
+  keywords: [
+    { es: 'a mano', en: 'to hand' },
+    { es: 'no estar para nadie', en: 'to be unavailable to everyone' },
+    { es: 'Quedo a su entera disposición.', en: 'I remain entirely at your disposal.' },
+    { es: 'la disponibilidad', en: 'the availability' },
+    { es: 'agotarse', en: 'to run out' },
+    { es: 'la consulta', en: 'the query' }
+  ],
   sections: [
     { h: 'Disponibilidad y accesibilidad', html: '<i>Disponibilidad</i> (<i>tener disponibilidad</i>) es el sustantivo general. <i>(In)asequible</i> se aplica sobre todo al precio (<i>un alquiler asequible</i>); <i>(in)accesible</i>, a personas o lugares (<i>una persona accesible</i>). <i>Acceder a</i> es llegar a disponer de algo: <i>acceder a una vivienda</i>.' },
     { h: 'Tener o carecer de algo', html: '<i>Carecer de</i> (no disponer de algo necesario) se opone a <i>disponer de</i> (tenerlo a su disposición): <i>carecer de educación, disponer de medios</i>.' },
@@ -30710,6 +30758,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:88', 'nociones_generales:C1:89', 'nociones_generales:C1:90', 'nociones_generales:C1:91', 'nociones_generales:C1:92'],
   title: 'Cualidad general en C1: naturaleza, apariencia y composición',
   summary: 'Hablar de qué es algo "en esencia" exige distinguir naturaleza (lo que algo es por dentro) de apariencia (lo que parece por fuera), y saber describir de qué partes consta o está constituido — vocabulario que aparece constantemente en textos descriptivos y argumentativos de nivel C1.',
+  keywords: [
+    { es: 'la naturaleza', en: 'the nature' },
+    { es: 'la apariencia', en: 'the appearance' },
+    { es: 'la composición', en: 'the composition' },
+    { es: 'constar de', en: 'to consist of' },
+    { es: 'presentar', en: 'to display, to exhibit' },
+    { es: 'el rasgo', en: 'the feature' }
+  ],
   sections: [
     { h: 'Lo que algo es por dentro: naturaleza y esencia', html: '<i>Naturaleza, sustancia, esencia, identidad</i> designan lo que algo es fundamentalmente: <i>son de distinta naturaleza</i>. <i>En esencia</i> introduce esa misma idea como locución: <i>la propuesta actual es, en esencia, distinta a la anterior</i>. <i>Variedad, género</i> clasifican dentro de una categoría más amplia: <i>es una variedad muy escasa en Europa</i>.' },
     { h: 'Lo que algo parece por fuera', html: '<i>Apariencia, pinta</i> hablan de cómo algo se presenta a la vista, sin garantizar que coincida con su naturaleza real: <i>tiene pinta de artista</i>. <i>Presentar un aspecto/unas características</i> describe formalmente ese mismo tipo de impresión: <i>el lugar presentaba un aspecto extraño</i>.' },
@@ -30750,6 +30806,14 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:C1:104', 'nociones_generales:C1:105', 'nociones_generales:C1:106', 'nociones_generales:C1:107', 'nociones_generales:C1:108'],
   title: 'Acontecimiento en C1: de la odisea al hecho aislado',
   summary: 'Describir un acontecimiento en C1 exige precisar de qué tipo es — ¿aislado, decisivo, casual, anecdótico? — y disponer de verbos como "estallar" o "desencadenarse" para narrar su inicio con la fuerza que muchos sucesos históricos o dramáticos requieren.',
+  keywords: [
+    { es: 'toda una odisea', en: 'quite an ordeal' },
+    { es: 'el hecho aislado', en: 'the isolated incident' },
+    { es: 'desencadenarse', en: 'to be triggered' },
+    { es: 'tener lugar', en: 'to take place' },
+    { es: 'el suceso', en: 'the incident' },
+    { es: 'el anuncio', en: 'the announcement' }
+  ],
   sections: [
     { h: 'Nombrar el acontecimiento', html: '<i>Incidente</i> es un suceso menor, a menudo problemático; <i>odisea</i>, uno especialmente largo y penoso: <i>aquello fue una odisea</i>. Un <i>acto</i> puede ser <i>conmemorativo, público, religioso o de clausura</i>, según su función.' },
     { h: 'Calificar el tipo de suceso', html: 'Un <i>suceso/hecho/acontecimiento</i> puede ser <i>aislado</i> (sin relación con otros), <i>casual</i> (fruto del azar), <i>decisivo</i> (que cambia el curso de las cosas) o <i>anecdótico</i> (menor, curioso, sin gran importancia) — la elección del adjetivo dice mucho sobre cómo se interpreta el suceso.' },
@@ -30946,6 +31010,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:210', 'nociones_generales:C1:211', 'nociones_generales:C1:212', 'nociones_generales:C1:213', 'nociones_generales:C1:214'],
   title: 'Generalidad y especificidad en C1: de "por lo general" a "centrarse en"',
   summary: 'Moverse entre lo general y lo particular con precisión — hablar de la "totalidad" frente a un "rasgo" concreto, de lo "generalizado" frente a lo "peculiar" — es una destreza argumentativa central en C1, especialmente en textos que alternan afirmaciones amplias con matices específicos.',
+  keywords: [
+    { es: 'por lo general', en: 'generally speaking' },
+    { es: 'centrarse en', en: 'to focus on' },
+    { es: 'a grandes rasgos', en: 'broadly speaking' },
+    { es: 'en concreto', en: 'specifically' },
+    { es: 'salvo excepciones', en: 'with some exceptions' },
+    { es: 'particular', en: 'particular' }
+  ],
   sections: [
     { h: 'Lo general: sustantivos y adjetivos', html: '<i>Totalidad, conjunto</i> designan el todo: <i>el conjunto de la población</i>. <i>Generalizado</i> describe algo extendido ampliamente: <i>una creencia generalizada</i>; <i>extendido</i>, de forma similar: <i>un rumor extendido</i>.' },
     { h: 'Lo específico: sustantivos y adjetivos', html: '<i>Particularidad, rasgo</i> señalan lo individual dentro de lo general. <i>Peculiar, inconfundible</i> describen algo distintivo, único. <i>Propio/específico/representativo de</i> vincula una característica a una categoría concreta.' },
@@ -30986,6 +31058,14 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:C1:223', 'nociones_generales:C1:224', 'nociones_generales:C1:225', 'nociones_generales:C1:226'],
   title: 'Cantidad numérica en C1: calcular "por lo alto" o "por lo bajo"',
   summary: 'Un vocabulario pequeño pero preciso para hablar de números y cálculos: distinguir un cálculo exacto de uno aproximado, y saber si esa aproximación se hizo redondeando hacia arriba o hacia abajo.',
+  keywords: [
+    { es: 'calcular por lo alto', en: 'to round up' },
+    { es: 'calcular por lo bajo', en: 'to round down' },
+    { es: 'un cálculo aproximado', en: 'a rough estimate' },
+    { es: 'la cifra', en: 'the figure' },
+    { es: 'redondear', en: 'to round off' },
+    { es: 'el total', en: 'the total' }
+  ],
   sections: [
     { h: 'Múltiplos y enumeración', html: '<i>Múltiplo</i> es un número que contiene a otro un número entero de veces. <i>Enumerar</i> es listar uno por uno los elementos de un conjunto.' },
     { h: 'Tipos de cálculo', html: '<i>Hacer un cálculo exacto</i> frente a <i>hacer un cálculo aproximado</i> distingue la precisión del resultado. <i>Calcular por lo alto</i> es redondear hacia un número mayor del real; <i>calcular por lo bajo</i>, hacia uno menor — ambas son estrategias deliberadas de estimación, no errores.' }
@@ -31021,6 +31101,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:244', 'nociones_generales:C1:245', 'nociones_generales:C1:246', 'nociones_generales:C1:247', 'nociones_generales:C1:248'],
   title: 'Cantidad relativa en C1: colectivos, porciones y cantidades hiperbólicas',
   summary: 'El español tiene un sustantivo colectivo distinto casi para cada tipo de conjunto (muchedumbre, rebaño, flota) y una porción distinta para cada tipo de sustancia (rodaja, sorbo, puñado, pizca) — un vocabulario que sustituye "mucho" y "un poco" por precisión real.',
+  keywords: [
+    { es: 'la muchedumbre', en: 'the crowd' },
+    { es: 'una pizca de', en: 'a pinch of' },
+    { es: 'un montón de', en: 'loads of' },
+    { es: 'la mayoría', en: 'the majority' },
+    { es: 'un puñado de', en: 'a handful of' },
+    { es: 'escaso', en: 'scant' },
+    { es: 'hiperbólico', en: 'exaggerated' }
+  ],
   sections: [
     { h: 'Sustantivos colectivos: un conjunto, muchas palabras', html: '<i>Clan, muchedumbre, colectivo, pandilla, rebaño, manada, serie, flota</i> — cada uno se aplica a un tipo distinto de conjunto: personas (<i>muchedumbre de fieles, colectivo de trabajadores</i>), animales (<i>rebaño, manada</i>), objetos en serie (<i>serie de ejemplos, flota de barcos</i>).' },
     { h: 'Porciones: la palabra exacta para cada sustancia', html: '<i>Rodaja de, trago de, sorbo de, copo de, puñado de, dosis de, lote de, pizca de</i> — cada sustantivo de porción va con un tipo de sustancia concreto: <i>rodaja de merluza, trago de vino, sorbo de agua, copo de nieve, puñado de caramelos, dosis de paciencia, lote de productos, pizca de sal</i>.' },
@@ -31063,6 +31152,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:276', 'nociones_generales:C1:277', 'nociones_generales:C1:278'],
   title: 'Aumento y disminución en C1: de "ir en aumento" a "dispararse"',
   summary: 'El vocabulario económico y estadístico de C1 permite describir un cambio de cantidad con la velocidad y la intensidad exactas — no es lo mismo que algo "aumente gradualmente" a que "se dispare" o "caiga en picado".',
+  keywords: [
+    { es: 'ir en aumento', en: 'to be on the rise' },
+    { es: 'dispararse', en: 'to shoot up' },
+    { es: 'caer en picado', en: 'to plummet' },
+    { es: 'duplicarse', en: 'to double' },
+    { es: 'reducirse a la mitad', en: 'to halve' },
+    { es: 'el trimestre', en: 'the quarter' },
+    { es: 'el descenso', en: 'the drop' }
+  ],
   sections: [
     { h: 'Sustantivos del cambio de cantidad', html: '<i>Descenso, ascenso, caída, incremento</i> son los sustantivos neutros: <i>un ascenso de temperaturas, una caída de las exportaciones, un incremento del IPC</i>. <i>Devaluación</i> es específico de la pérdida de valor de una moneda.' },
     { h: 'Calificar el ritmo del cambio', html: 'Un aumento o disminución puede ser <i>moderado, gradual, espectacular, generalizado</i> — cada adjetivo describe una velocidad o un alcance distinto. <i>Creciente</i> describe algo que aumenta de forma continua: <i>importancia creciente</i>.' },
@@ -31103,6 +31201,15 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:C1:290', 'nociones_generales:C1:291', 'nociones_generales:C1:292', 'nociones_generales:C1:293', 'nociones_generales:C1:294'],
   title: 'Proporción en C1: fracciones, cuotas y "tres de cada diez"',
   summary: 'Hablar de proporciones exige un vocabulario propio para la parte de un todo (fracción, cuota, décimo) y estructuras específicas para relacionar cantidades entre sí, ya sea a partes iguales o expresadas como una razón: "tres de cada diez".',
+  keywords: [
+    { es: 'a partes iguales', en: 'in equal shares' },
+    { es: 'en proporción a', en: 'in proportion to' },
+    { es: 'la cuota', en: 'the quota, the share' },
+    { es: 'tres de cada diez', en: 'three out of ten' },
+    { es: 'la fracción', en: 'the fraction' },
+    { es: 'repartirse', en: 'to be split' },
+    { es: 'proporcional', en: 'proportional' }
+  ],
   sections: [
     { h: 'Sustantivos de la parte de un todo', html: '<i>Fracción, participación, décimo, cuota</i> designan distintos tipos de parte: <i>una fracción de segundo</i> (una porción mínima), <i>una participación en una empresa</i> (una parte del capital), <i>un décimo de lotería</i> (una parte específica de un billete), <i>una cuota mensual</i> (un pago periódico proporcional).' },
     { h: 'Adjetivos y locuciones de reparto equilibrado', html: '<i>Proporcionado, equitativo</i> describen un reparto justo según algún criterio. <i>A partes iguales</i> especifica que el reparto es exactamente igual entre todos: <i>dividir a partes iguales</i>.' },
@@ -31142,6 +31249,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:306', 'nociones_generales:C1:307', 'nociones_generales:C1:308', 'nociones_generales:C1:309', 'nociones_generales:C1:310'],
   title: 'Grado en C1: de "lo grande que es" a "por todo lo alto"',
   summary: 'El grado de algo se expresa en C1 con estructuras exclamativas propias ("¡lo que nos hemos reído!"), un vocabulario de matiz para el detalle ("a grandes rasgos" frente a "en detalle"), y locuciones intensificadoras muy idiomáticas como "a lo grande" o "por todo lo alto".',
+  keywords: [
+    { es: '¡Lo que ha llovido!', en: 'You wouldn\'t believe how much it\'s rained!' },
+    { es: 'lo grande que es', en: 'how big it is' },
+    { es: 'por todo lo alto', en: 'in grand style' },
+    { es: 'en la medida de mis posibilidades', en: 'as far as I\'m able' },
+    { es: 'hasta cierto punto', en: 'up to a point' },
+    { es: 'en absoluto', en: 'not at all' }
+  ],
   sections: [
     { h: '"Lo + adjetivo/adverbio + que": grado exclamativo', html: 'Esta estructura intensifica un grado mediante una exclamación indirecta: <i>¡lo que nos hemos reído!</i>, <i>ni te imaginas lo grande que es</i>, <i>no sabes lo mucho que te quiero</i> — el grado se presenta como tan alto que apenas se puede expresar directamente.' },
     { h: 'Reforzar o matizar el grado', html: '<i>Verdaderamente</i> refuerza una afirmación: <i>es verdaderamente complicado</i>. <i>Medio</i> matiza hacia un grado parcial, no completo: <i>está medio loca</i>, <i>estaría medio borracho</i>. Los sufijos <i>-ón, -ote</i> intensifican coloquialmente un adjetivo: <i>mi hermana es muy guapetona</i>, <i>es un bebé grandote</i>.' },
@@ -31185,6 +31300,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:340', 'nociones_generales:C1:341', 'nociones_generales:C1:342'],
   title: 'Medidas generales, talla y tamaño en C1: de "a ojo" a "gigantesco"',
   summary: 'Este vocabulario cubre tres niveles: medir en general (escala, unidades, "a ojo"), la talla de la ropa (patrón, contorno), y el tamaño de cualquier objeto, con adjetivos que van de "minúsculo" a "gigantesco" y verbos que cambian ese tamaño (agrandar, encoger, estrechar).',
+  keywords: [
+    { es: 'a ojo', en: 'by eye, roughly' },
+    { es: 'gigantesco', en: 'gigantic' },
+    { es: 'encoger', en: 'to shrink' },
+    { es: 'la magnitud', en: 'the magnitude' },
+    { es: 'la talla', en: 'the size (clothes)' },
+    { es: 'diminuto', en: 'tiny' },
+    { es: 'de tamaño considerable', en: 'of considerable size' }
+  ],
   sections: [
     { h: 'Medir en general', html: '<i>Dimensión</i> es cada aspecto medible de algo: <i>son tres las dimensiones conocidas</i>. <i>Escala</i> es la proporción entre una representación y la realidad; <i>unidades de medida</i>, el sistema usado. <i>Medir/calcular a ojo</i> es estimar sin instrumento; <i>medir a escala</i>, respetando una proporción. <i>De gran magnitud, de grandes proporciones/dimensiones</i> describen algo enorme: <i>un terremoto de gran magnitud, un desastre de grandes proporciones</i>.' },
     { h: 'La talla de la ropa', html: '<i>Patrón</i> es el molde con el que se corta una prenda. Las <i>medidas de cintura, pecho, cadera, hombros, espalda, manga, contorno</i> son las que se toman para ajustar una prenda a una persona concreta.' },
@@ -31269,6 +31393,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:361', 'nociones_generales:C1:362', 'nociones_generales:C1:363', 'nociones_generales:C1:364', 'nociones_generales:C1:365'],
   title: 'Peso y superficie en C1: de "peso bruto" a "de norte a sur"',
   summary: 'El peso se mide con precisión técnica (bruto/neto, sobrecarga) y se describe con hipérboles ("pesado como el plomo"); la superficie se expresa con verbos que la miden (ocupar, tener una extensión de) y locuciones que la recorren (de arriba abajo, a lo largo de).',
+  keywords: [
+    { es: 'el peso bruto', en: 'the gross weight' },
+    { es: 'el peso neto', en: 'the net weight' },
+    { es: 'la sobrecarga', en: 'the overload' },
+    { es: 'repartir el peso', en: 'to distribute the weight' },
+    { es: 'volcarse', en: 'to tip over' },
+    { es: 'de norte a sur', en: 'from north to south' },
+    { es: 'la superficie', en: 'the surface, the area' }
+  ],
   sections: [
     { h: 'Vocabulario técnico del peso', html: '<i>Peso bruto</i> (con el envase o embalaje incluido) frente a <i>peso neto</i> (solo el contenido). <i>Sobrecarga</i> y <i>exceso de peso</i> señalan un peso superior al permitido o previsto; <i>sobrecargar</i> es el verbo correspondiente. <i>Leve</i> describe un peso pequeño.' },
     { h: 'Equilibrio y reparto del peso', html: '<i>(Des)equilibrar</i> y <i>repartir el peso</i> hablan de cómo se distribuye una carga: <i>es importante repartir el peso para asegurar la estabilidad del vehículo</i>.' },
@@ -31313,6 +31446,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:396', 'nociones_generales:C1:397'],
   title: 'Volumen, capacidad y presión en C1: de "dar volumen al cabello" a "estar a tope"',
   summary: 'El volumen se mide en unidades cúbicas, se describe con formas geométricas (pirámide, cubo) y se transforma con verbos muy concretos — no es lo mismo "adquirir volumen" que alguien te lo "dé" (como al cabello), y "estar a tope" cierra la escala de capacidad llena.',
+  keywords: [
+    { es: 'estar a tope', en: 'to be packed / flat out' },
+    { es: 'dar volumen', en: 'to add volume' },
+    { es: 'apelmazar', en: 'to weigh down, to make clumpy' },
+    { es: 'la capacidad', en: 'the capacity' },
+    { es: 'la presión', en: 'the pressure' },
+    { es: 'el local', en: 'the venue' },
+    { es: 'a presión', en: 'pressurised' }
+  ],
   sections: [
     { h: 'Medir y describir el volumen', html: '<i>Centímetro(s)/metro(s) cúbico(s)</i> son las unidades. <i>Grosor</i> es el espesor de algo. <i>Bulto</i> es una masa que sobresale; <i>hueco</i>, un espacio vacío dentro de algo: <i>el tronco de aquel árbol tenía un hueco considerable</i>. <i>Pirámide, cubo</i> son formas de referencia para describir volúmenes. <i>Voluminoso</i> describe algo que ocupa mucho espacio.' },
     { h: 'Estados de volumen: inflado, abarrotado', html: '<i>Inflado, hinchado</i> describen algo lleno de aire o gas. <i>Abarrotado</i> describe un espacio lleno hasta el límite de personas u objetos.' },
@@ -31407,6 +31549,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:473', 'nociones_generales:C1:474', 'nociones_generales:C1:475', 'nociones_generales:C1:476'],
   title: 'Localización en C1: ubicar, situar y "en paradero desconocido"',
   summary: 'Localizar algo o a alguien en C1 pasa por un grupo de verbos casi sinónimos (ubicar, situar, localizar) que en realidad se reparten matices distintos, y por la fórmula formal "en paradero desconocido" para cuando la localización falla del todo.',
+  keywords: [
+    { es: 'ubicar', en: 'to locate, to site' },
+    { es: 'estar ubicado en', en: 'to be located in' },
+    { es: 'en paradero desconocido', en: 'whereabouts unknown' },
+    { es: 'situarse', en: 'to be situated' },
+    { es: 'localizar', en: 'to track down' },
+    { es: 'el emplazamiento', en: 'the site' }
+  ],
   sections: [
     { h: 'Sustantivos de localización', html: '<i>Punto</i> es un lugar concreto: <i>el mirador se halla en un punto estratégico de la costa</i>. <i>Ubicación</i> es el sustantivo formal para el lugar donde algo se encuentra: <i>ver ubicación en el plano</i>.' },
     { h: 'Verbos que localizan', html: '<i>Ubicado</i> (participio adjetivado): <i>nuestra sede está ubicada en la planta baja</i>. <i>Situar(se)</i> es colocar algo o describir dónde está: <i>la región menos desarrollada se sitúa en la zona norte del país</i>. <i>Localizar(se)</i> es encontrar algo o a alguien cuyo paradero se buscaba: <i>estoy tratando de localizar a Carlos</i>.' },
@@ -31825,6 +31975,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:669', 'nociones_generales:C1:670', 'nociones_generales:C1:671'],
   title: 'Referencias temporales generales en C1: de "a primeros de mes" a "entre horas"',
   summary: 'Situar algo en el tiempo con naturalidad exige locuciones muy idiomáticas — "a eso de las cinco" da una hora aproximada, "a primeros/a últimos de mes" sitúa dentro de un periodo, y "nunca en mi vida" intensifica una negación hasta el extremo.',
+  keywords: [
+    { es: 'a primeros de mes', en: 'in the first days of the month' },
+    { es: 'a últimos de mes', en: 'towards the end of the month' },
+    { es: 'a eso de las nueve', en: 'around nine' },
+    { es: 'entre horas', en: 'between meals' },
+    { es: 'a mediados de', en: 'in the middle of' },
+    { es: 'ajustar los gastos', en: 'to cut back on spending' }
+  ],
   sections: [
     { h: 'Dar la hora de forma indirecta o aproximada', html: '<i>Van a dar las cuatro/acaban de dar las cuatro</i> sitúan un momento justo antes o después de una hora en punto. <i>A eso de</i> da una hora aproximada: <i>a eso de las cinco de la tarde</i>. <i>Hora insular/peninsular/oficial/solar</i> distinguen los distintos sistemas horarios usados en España.' },
     { h: 'Periodos largos y su vocabulario', html: '<i>Era, edad</i> designan periodos históricos largos: <i>la era de la información, la Edad de Piedra</i>. <i>Festividad, conmemoración</i> son celebraciones ligadas a una fecha.' },
@@ -31868,6 +32026,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:695', 'nociones_generales:C1:696'],
   title: 'Localizar en el presente en C1: actualidad, tendencia y "estar al día"',
   summary: 'Situar algo en el presente en C1 exige distinguir "actualidad" de "modernidad", una "tendencia" de una "novedad", y disponer de locuciones para hasta cuándo llega la información que se tiene: "hasta el momento", "hasta la fecha".',
+  keywords: [
+    { es: 'hasta la fecha', en: 'to date' },
+    { es: 'en la actualidad', en: 'at present' },
+    { es: 'estar al día de', en: 'to be up to date on' },
+    { es: 'la tendencia', en: 'the trend' },
+    { es: 'hoy por hoy', en: 'as things stand today' },
+    { es: 'definitivo', en: 'definitive' }
+  ],
   sections: [
     { h: 'Sustantivos del presente', html: '<i>Modernidad, actualidad</i> — la actualidad es lo que ocurre ahora mismo: <i>la actualidad informativa</i>. <i>Novedad</i> es algo nuevo que acaba de aparecer: <i>¿hay alguna novedad?</i>. <i>Tendencia</i> es una dirección que sigue el presente hacia el futuro cercano: <i>la tendencia actual es a trabajar en grupos reducidos</i>. <i>Presente</i> como sustantivo: <i>la situación presente del sistema educativo</i>.' },
     { h: 'Actualizar: poner algo al día', html: '<i>Actualización, actualizar</i> son el sustantivo y el verbo de poner algo al día: <i>actualizar datos</i>. <i>Estar de actualidad</i> es ser un tema del que se habla ahora mismo. <i>Estar/poner(se) al día</i> es tener o conseguir la información más reciente sobre algo.' },
@@ -31909,6 +32075,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:705', 'nociones_generales:C1:706', 'nociones_generales:C1:707', 'nociones_generales:C1:708', 'nociones_generales:C1:709'],
   title: 'Localizar en el pasado en C1: eras, herencia y "en tiempos de"',
   summary: 'Situar algo en el pasado en C1 va desde lo remotísimo ("arcaico") hasta lo simplemente pasado de moda ("anticuado"), pasando por el presente histórico que narra hechos antiguos como si ocurrieran ahora mismo — un recurso narrativo muy distintivo del español.',
+  keywords: [
+    { es: 'en tiempos de', en: 'back in the days of' },
+    { es: 'de origen remoto', en: 'of distant origin' },
+    { es: 'datar', en: 'to date (something)' },
+    { es: 'la herencia', en: 'the legacy' },
+    { es: 'la era', en: 'the era' },
+    { es: 'antaño', en: 'in days gone by' },
+    { es: 'el siglo', en: 'the century' }
+  ],
   sections: [
     { h: 'Nuestra era frente a otras épocas', html: '<i>En/de nuestra era/nuestros días</i> sitúa algo en el presente amplio, en contraste con el pasado: <i>el estrés es uno de los males de nuestros días</i>. <i>En esta era</i> introduce una caracterización de la época actual: <i>en esta era de globalización...</i>.' },
     { h: 'Vocabulario de lo antiguo', html: '<i>Antigüedad</i> es el sustantivo general. <i>Herencia</i> es lo que el pasado transmite al presente: <i>una herencia cultural</i>. <i>Días/meses/años/tiempo atrás</i> sitúa algo en un pasado indefinido: <i>tiempo atrás, esto habría sido impensable</i>. <i>Remoto, arcaico</i> describen algo extremadamente antiguo: <i>un origen remoto, una costumbre arcaica</i>. <i>Anticuado</i> describe, en cambio, algo simplemente pasado de moda, no necesariamente muy antiguo.' },
@@ -31952,6 +32127,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:718', 'nociones_generales:C1:719', 'nociones_generales:C1:720', 'nociones_generales:C1:721'],
   title: 'Localizar en el futuro en C1: "de un momento a otro" y "a la larga"',
   summary: 'El futuro se describe en C1 con matices de plazo muy distintos — "de un momento a otro" es inminente, "a la larga" es a muy largo plazo — y con locuciones que combinan la idea de tiempo con la de expectativa: "tener el futuro por delante", "lo mejor está por llegar".',
+  keywords: [
+    { es: 'de un momento a otro', en: 'any minute now' },
+    { es: 'a la larga', en: 'in the long run' },
+    { es: 'a corto plazo', en: 'in the short term' },
+    { es: 'tarde o temprano', en: 'sooner or later' },
+    { es: 'en breve', en: 'shortly' },
+    { es: 'salir caro', en: 'to prove costly' }
+  ],
   sections: [
     { h: 'Sustantivos del futuro', html: '<i>Porvenir</i> es un sinónimo formal/literario de "futuro". <i>(Pre)visión de futuro</i> es la capacidad de anticipar lo que vendrá. <i>Futuro incierto/prometedor/inmediato</i> gradúan el tipo de futuro que se espera.' },
     { h: 'Estar a la espera de algo futuro', html: '<i>(Estar) pendiente de</i> es esperar una confirmación o resolución futura: <i>pendiente de confirmación</i>. <i>Haber/estar/quedar por</i> señala algo que todavía no ha ocurrido pero se espera: <i>hay un montón de trabajo por hacer</i>, <i>lo mejor está por llegar</i>.' },
@@ -31993,6 +32176,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:758', 'nociones_generales:C1:759', 'nociones_generales:C1:760'],
   title: 'Simultaneidad en C1: "al tiempo que" y "en el mismo instante en que"',
   summary: 'Dos acciones que ocurren a la vez se describen en C1 con matices distintos según se busque enfatizar la coordinación perfecta (sincronizado), el paralelismo progresivo (a medida que) o la coincidencia exacta de un instante concreto.',
+  keywords: [
+    { es: 'al tiempo que', en: 'at the same time as' },
+    { es: 'en el mismo instante en que', en: 'at the very moment when' },
+    { es: 'a medida que', en: 'as (progressively)' },
+    { es: 'sincronizar', en: 'to synchronise' },
+    { es: 'mientras tanto', en: 'meanwhile' },
+    { es: 'simultáneamente', en: 'simultaneously' }
+  ],
   sections: [
     { h: 'Sustantivos y adjetivos de coordinación', html: '<i>Simultaneidad</i> es el sustantivo general: <i>simultaneidad de dos acciones</i>. <i>Sincronizado</i> describe una coordinación perfecta y deliberada: <i>natación sincronizada</i>; <i>sincronizar</i>, el verbo correspondiente: <i>sincronizar los relojes</i>. <i>A coro</i> describe una acción hecha por varios a la vez, típicamente hablar o cantar: <i>cantar a coro</i>.' },
     { h: 'Simultaneidad progresiva: "a medida que"', html: '<i>A medida que</i> describe dos procesos que avanzan juntos, en paralelo: <i>el interés por los candidatos va creciendo a medida que se acercan las elecciones</i> — no es un instante puntual, sino una progresión conjunta.' },
@@ -32034,6 +32225,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:766', 'nociones_generales:C1:767', 'nociones_generales:C1:768', 'nociones_generales:C1:769'],
   title: 'Anterioridad en C1: precedentes, antepasados y "de antemano"',
   summary: 'Lo que viene antes se nombra en C1 con precisión según el ámbito: un "precedente" legal o argumentativo no es lo mismo que un "antepasado" familiar, y "de antemano" no es lo mismo que "con antelación" pese a compartir la misma raíz temporal.',
+  keywords: [
+    { es: 'el precedente', en: 'the precedent' },
+    { es: 'de antemano', en: 'in advance' },
+    { es: 'el antepasado', en: 'the ancestor' },
+    { es: 'previo a', en: 'prior to' },
+    { es: 'con anterioridad', en: 'previously' },
+    { es: 'anteceder', en: 'to precede' }
+  ],
   sections: [
     { h: 'Sustantivos de lo que viene antes', html: '<i>Anterioridad</i> es el sustantivo general. <i>Precedente, antecedente</i> señalan un caso anterior que sirve de referencia o justificación: <i>existe un precedente de un caso similar</i>, <i>tiene antecedentes penales</i>. <i>Prólogo</i>, en sentido figurado, es lo que anuncia o inicia algo mayor: <i>esta huelga constituye el prólogo de la revolución</i>. <i>Antepasado, antecesor</i> señalan quien vino antes en una línea familiar o en un cargo: <i>mi antecesor en el cargo</i>.' },
     { h: 'Adjetivos y verbos de anterioridad', html: '<i>Previo</i> describe algo que ocurre antes como requisito: <i>una condición previa</i>. <i>Preceder</i> es el verbo general de venir antes en el tiempo o en el orden.' },
@@ -32075,6 +32274,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:779', 'nociones_generales:C1:780', 'nociones_generales:C1:781', 'nociones_generales:C1:782', 'nociones_generales:C1:783'],
   title: 'Posterioridad en C1: de "apenas" a "con posterioridad"',
   summary: 'Lo que viene después se describe en C1 con una escala de inmediatez muy precisa — "al instante" y "apenas/nada más" marcan lo casi simultáneo, mientras "con posterioridad" y "tras" sitúan un suceso después con distancia formal.',
+  keywords: [
+    { es: 'nada más + infinitivo', en: 'right after -ing' },
+    { es: 'al instante', en: 'instantly' },
+    { es: 'en cuanto', en: 'as soon as' },
+    { es: 'apenas', en: 'hardly had… when' },
+    { es: 'con posterioridad', en: 'subsequently' },
+    { es: 'acto seguido', en: 'immediately afterwards' }
+  ],
   sections: [
     { h: 'Sustantivos de lo que viene después', html: '<i>Descendiente</i> es quien viene después en una línea familiar. <i>Sucesión</i> es el proceso de una cosa siguiendo a otra. <i>El día después</i> es una fórmula fija para el día siguiente a un suceso importante. <i>Sucesor, heredero</i> son quienes continúan un cargo o reciben algo: <i>el sucesor del título, el heredero de la corona</i>.' },
     { h: 'Adjetivo y verbo de posterioridad', html: '<i>Retrospectivo</i> describe una mirada hacia atrás desde un punto posterior: <i>un análisis retrospectivo</i>. <i>Suceder</i> es venir después, típicamente en un cargo: <i>suceder en el cargo</i>.' },
@@ -32116,6 +32323,14 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:C1:786', 'nociones_generales:C1:787', 'nociones_generales:C1:788', 'nociones_generales:C1:789', 'nociones_generales:C1:913'],
   title: 'Puntualidad y singularidad en C1: "por los pelos" y "sin precedentes"',
   summary: 'La puntualidad admite matices culturales fijados en la lengua ("puntualidad británica/germánica") y un margen mínimo de éxito ("llegar por los pelos"); "sin precedentes" cierra este bloque describiendo algo tan singular que nunca antes había ocurrido nada parecido.',
+  keywords: [
+    { es: 'por los pelos', en: 'by the skin of your teeth' },
+    { es: 'en hora', en: 'on time' },
+    { es: 'sin precedentes', en: 'unprecedented' },
+    { es: 'justo a tiempo', en: 'just in time' },
+    { es: 'puntual', en: 'punctual, one-off' },
+    { es: 'irrepetible', en: 'unrepeatable' }
+  ],
   sections: [
     { h: 'Puntualidad: estereotipos y margen mínimo', html: '<i>Puntualidad británica/germánica</i> son expresiones fijas que asocian la puntualidad extrema a ciertos estereotipos culturales. <i>Llegar por los pelos</i> es llegar a tiempo, pero con un margen mínimo, casi tarde.' },
     { h: 'Estar a tiempo, sin demora', html: '<i>En hora</i> describe que algo ocurre en el momento correcto, sin retraso. <i>Sin demora</i> es la locución formal para "inmediatamente, sin tardanza".' },
@@ -32157,6 +32372,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:802', 'nociones_generales:C1:803'],
   title: 'Anticipación en C1: prever, predecir y "por anticipado"',
   summary: 'Anticiparse a algo en C1 exige distinguir prever de predecir, un cambio "prematuro" de uno "precoz", y saber que "adelantarse" no siempre es prudencia — a veces implica llegar antes de lo esperado sin que eso sea deseable.',
+  keywords: [
+    { es: 'prever', en: 'to foresee' },
+    { es: 'predecir', en: 'to predict' },
+    { es: 'previsor', en: 'foresighted' },
+    { es: 'por anticipado', en: 'in advance' },
+    { es: 'precoz', en: 'early' },
+    { es: 'adelantarse a', en: 'to get ahead of' }
+  ],
   sections: [
     { h: 'Sustantivos y adjetivos de la persona anticipadora', html: '<i>Anticipación</i> es el sustantivo general. <i>Madrugador</i> describe a quien se levanta temprano; <i>previsor</i>, a quien planifica con antelación pensando en el futuro.' },
     { h: 'Sustantivos de lo adelantado', html: '<i>Avance, adelanto</i> son porciones de algo mostradas o entregadas antes de tiempo: <i>un avance informativo, un adelanto de sueldo</i>. <i>Prevención, predicción, pronóstico</i> distinguen matices: prevención es actuar para evitar algo, predicción y pronóstico son afirmaciones sobre el futuro, con pronóstico más asociado a lo técnico (<i>el pronóstico del tiempo</i>).' },
@@ -32199,6 +32422,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:807', 'nociones_generales:C1:808', 'nociones_generales:C1:809'],
   title: 'Retraso en C1: atraso, demora y aplazamiento',
   summary: 'El retraso se nombra en C1 con matices distintos según su causa y su alcance — un "atraso" puede ser estructural (económico), una "demora" es un retraso concreto en un proceso, y "posponer/aplazar" son decisiones deliberadas, no simples accidentes.',
+  keywords: [
+    { es: 'el atraso', en: 'the backlog, the lag' },
+    { es: 'la demora', en: 'the delay' },
+    { es: 'el aplazamiento', en: 'the postponement' },
+    { es: 'aplazar', en: 'to postpone' },
+    { es: 'retrasarse', en: 'to be delayed' },
+    { es: 'la queja', en: 'the complaint' }
+  ],
   sections: [
     { h: 'Atraso, demora y aplazamiento: tres tipos de retraso', html: '<i>Atraso</i> describe un retraso estructural o de desarrollo: <i>atraso económico</i>. <i>Demora</i> es un retraso concreto en un proceso o comunicación: <i>no hemos podido hacer nada debido a la demora en comunicarnos la noticia</i>. <i>Aplazamiento</i> es la decisión de posponer algo previsto para otro momento: <i>un aplazamiento de la sentencia</i>.' },
     { h: 'Tardío: el adjetivo del retraso', html: '<i>Tardío</i> describe algo que llega o sucede más tarde de lo esperado o deseable: <i>una reacción tardía</i>.' },
@@ -32242,6 +32473,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:822', 'nociones_generales:C1:823'],
   title: 'Inicio en C1: de "dar comienzo" a "¡manos a la obra!"',
   summary: 'Iniciar algo se dice de formas muy distintas según el tipo de inicio: un acontecimiento "estalla", una infección "se origina", una obra "da comienzo", y alguien que se pone a trabajar "se pone manos a la obra" — cada verbo reservado para su propio tipo de comienzo.',
+  keywords: [
+    { es: 'dar comienzo', en: 'to commence' },
+    { es: 'poner en marcha', en: 'to launch, to set going' },
+    { es: '¡Manos a la obra!', en: 'Let\'s get to work!' },
+    { es: 'emprender', en: 'to undertake' },
+    { es: 'arrancar', en: 'to get going' },
+    { es: 'el entusiasmo', en: 'the enthusiasm' }
+  ],
   sections: [
     { h: 'Sustantivos y verbos del debut', html: '<i>Apertura, debut</i> son el comienzo formal de un acto o de una carrera: <i>la apertura de un acto, el debut de un actor</i>; <i>debutar</i>, el verbo correspondiente. <i>Punto de partida</i> es el origen conceptual de algo, típicamente una investigación o argumento.' },
     { h: '"Un principio de": el inicio incipiente', html: '<i>Un principio de</i> describe el estado inicial y leve de algo, especialmente un problema: <i>un principio de úlcera</i> — ya ha empezado, pero de forma mínima.' },
@@ -32286,6 +32525,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:836', 'nociones_generales:C1:837'],
   title: 'Finalización en C1: caducar, vencer y "acabar por volverme loco"',
   summary: 'Terminar algo tiene en C1 un vocabulario técnico muy preciso — un plazo "vence", un producto "caduca", un contrato tiene su "vencimiento" — y perífrasis verbales que describen cómo se llegó a un final: "acabó diciendo que...", "acabaré por volverme loco".',
+  keywords: [
+    { es: 'caducar', en: 'to expire (food, documents)' },
+    { es: 'vencer', en: 'to fall due, to expire' },
+    { es: 'acabar por + infinitivo', en: 'to end up -ing' },
+    { es: 'poner fin a', en: 'to put an end to' },
+    { es: 'culminar', en: 'to culminate' },
+    { es: 'el interrogatorio', en: 'the questioning' }
+  ],
   sections: [
     { h: 'Sustantivos del final', html: '<i>Conclusión, finalización, clausura, desenlace</i> son formas de nombrar un final, cada una con su contexto: finalización de un contrato, clausura de un congreso, desenlace de un secuestro. <i>Cierre</i> es específico del final de una actividad o negocio: <i>el cierre de una fábrica</i>. <i>Liquidación, vencimiento</i> son términos financieros de final: <i>la liquidación de la deuda, el vencimiento del plazo</i>. <i>Caducidad</i> es la pérdida de validez tras una fecha: <i>fecha de caducidad</i>.' },
     { h: 'Adjetivos: finalizado, caducado, inagotable', html: '<i>Finalizado, caducado</i> describen el estado tras terminar o perder validez. <i>(In)agotable, (in)acabable</i> describen si algo tiene o no un final previsible: <i>una fuente inagotable</i>.' },
@@ -32329,6 +32576,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:846', 'nociones_generales:C1:847', 'nociones_generales:C1:848', 'nociones_generales:C1:849', 'nociones_generales:C1:850'],
   title: 'Continuación en C1: retomar, perseverar y "sin cesar"',
   summary: 'Seguir haciendo algo se expresa en C1 con matices que van del simple mantenimiento de un estado ("permanecer") al esfuerzo activo de continuar pese a las dificultades ("perseverar"), pasando por locuciones muy vivas como "pasarse la vida" o "no cansarse de".',
+  keywords: [
+    { es: 'retomar', en: 'to pick back up' },
+    { es: 'perseverar', en: 'to persevere' },
+    { es: 'sin cesar', en: 'ceaselessly' },
+    { es: 'proseguir', en: 'to carry on' },
+    { es: 'mantenerse', en: 'to keep going' },
+    { es: 'el empeño', en: 'the determination' }
+  ],
   sections: [
     { h: 'Adjetivos de continuidad', html: '<i>Prolongación</i> es el sustantivo general. <i>Seguido, continuado, sostenido, perseverante, persistente</i> gradúan la continuidad: sostenido implica un esfuerzo mantenido en el tiempo (<i>desarrollo sostenido</i>), persistente y perseverante añaden matiz de resistencia frente a obstáculos.' },
     { h: 'Verbos de mantenerse igual', html: '<i>Permanecer</i> es seguir en un mismo estado: <i>permanecer callado, permanecer en secreto, permanecer a la espera</i>. <i>Mantenerse</i> es similar, con foco en la ausencia de cambio: <i>la situación se mantiene sin cambios</i>.' },
@@ -32371,6 +32626,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:855', 'nociones_generales:C1:856', 'nociones_generales:C1:857', 'nociones_generales:C1:858', 'nociones_generales:C1:859'],
   title: 'Repetición en C1: recurrente, turnarse y "erre que erre"',
   summary: 'Repetir algo se dice de formas muy distintas en C1 según se trate de un patrón que reaparece sin control (recurrente), una alternancia organizada (turnarse) o una insistencia obstinada que roza lo cómico: "erre que erre".',
+  keywords: [
+    { es: 'recurrente', en: 'recurring' },
+    { es: 'turnarse', en: 'to take turns' },
+    { es: 'erre que erre', en: 'stubbornly, on and on' },
+    { es: 'una y otra vez', en: 'over and over' },
+    { es: 'reincidir', en: 'to relapse, to do it again' },
+    { es: 'la guardia', en: 'the shift' }
+  ],
   sections: [
     { h: 'Sustantivos y adjetivos de repetición', html: '<i>Recreación</i> es reproducir algo ya existente. <i>Redundante</i> describe algo repetido innecesariamente; <i>recurrente</i>, algo que reaparece una y otra vez, especialmente en la mente: <i>un sueño recurrente</i>.' },
     { h: 'Verbos de reproducir y de volver a caer', html: '<i>Reproducir</i> es repetir un patrón o comportamiento: <i>reproducir un comportamiento</i>. <i>Revivir</i> es experimentar de nuevo algo del pasado: <i>revivir el pasado</i>. <i>Recaer</i> es volver a caer en algo negativo tras haberlo superado: <i>recaer en un vicio</i>.' },
@@ -32414,6 +32677,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:873', 'nociones_generales:C1:874'],
   title: 'Duración en C1: de lo "fugaz" a lo "perpetuo"',
   summary: 'La duración de algo se gradúa en C1 con una escala completa de adjetivos — momentáneo, pasajero, fugaz en un extremo; prolongado, duradero, crónico, perpetuo, eterno en el otro — y verbos que activamente alargan o acortan esa duración.',
+  keywords: [
+    { es: 'fugaz', en: 'fleeting' },
+    { es: 'perpetuo', en: 'perpetual' },
+    { es: 'perdurar', en: 'to endure' },
+    { es: 'prolongarse', en: 'to drag on' },
+    { es: 'efímero', en: 'ephemeral' },
+    { es: 'transcurrir', en: 'to elapse' }
+  ],
   sections: [
     { h: 'Sustantivos de periodo y duración', html: '<i>Estancia</i> es el tiempo que se pasa en un lugar. <i>Espacio/intervalo (de tiempo)</i> es un periodo delimitado. <i>Eternidad</i>, en sentido hiperbólico, exagera una espera larga: <i>estuvimos esperando una eternidad</i>. <i>Legislatura, reinado, mandato</i> son periodos institucionales concretos. <i>Paso del tiempo/de las horas/de los días/de los años/de los siglos</i> describe el avance temporal en distintas escalas.' },
     { h: 'La escala de duración: de lo fugaz a lo perpetuo', html: 'De menos a más duración: <i>momentáneo, pasajero, fugaz</i> (muy breve: <i>una sensación momentánea, una relación pasajera, una estrella fugaz</i>) — <i>prolongado, duradero, crónico</i> (largo, con crónico aplicado sobre todo a problemas persistentes: <i>una enfermedad crónica</i>) — <i>perpetuo, eterno</i> (sin fin: <i>cadena perpetua</i>). <i>Provisional</i> describe algo pensado para durar poco, a la espera de algo definitivo.' },
@@ -32456,6 +32727,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:883', 'nociones_generales:C1:884', 'nociones_generales:C1:885', 'nociones_generales:C1:886'],
   title: 'Frecuencia en C1: de "rara vez" a "el pan de cada día"',
   summary: 'La frecuencia en C1 combina adjetivos institucionales de periodicidad (trimestral, semestral) con locuciones muy vivas para lo habitual ("ser el pan de cada día") y lo casi nunca ("rara vez", "jamás") — sin olvidar que "por lo general" describe una tendencia, no una regla sin excepciones.',
+  keywords: [
+    { es: 'rara vez', en: 'rarely' },
+    { es: 'el pan de cada día', en: 'an everyday occurrence' },
+    { es: 'poco corriente', en: 'uncommon' },
+    { es: 'a menudo', en: 'often' },
+    { es: 'de vez en cuando', en: 'now and then' },
+    { es: 'asiduamente', en: 'regularly' }
+  ],
   sections: [
     { h: 'Adjetivos de frecuencia habitual u ocasional', html: '<i>Corriente</i> describe algo habitual, frecuente: <i>se trata de un fenómeno poco corriente</i>. <i>Ocasional</i> describe algo que ocurre de vez en cuando, sin regularidad fija: <i>una visita ocasional</i>.' },
     { h: 'Periodicidad institucional', html: '<i>Bimensual, trimestral, cuatrimestral, semestral</i> especifican periodos exactos, típicos de contextos académicos, laborales o administrativos: <i>un examen trimestral</i>. <i>Escasa/elevada frecuencia</i> es la fórmula técnica para graduar cuán a menudo ocurre algo.' },
@@ -32501,6 +32780,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:900', 'nociones_generales:C1:901', 'nociones_generales:C1:902', 'nociones_generales:C1:903', 'nociones_generales:C1:904'],
   title: 'Cambio en C1: transiciones, transformaciones y verbos derivados de adjetivo',
   summary: 'El cambio se nombra en C1 según su alcance — variación es menor, transformación es total — y se fabrica morfológicamente a partir de adjetivos con los prefijos "a-...-ar" y "en-...-ecer": abaratar, encarecer, oscurecer, todos "hacer que algo pase a ser [adjetivo]".',
+  keywords: [
+    { es: 'la transición', en: 'the transition' },
+    { es: 'transformarse en', en: 'to turn into' },
+    { es: 'encarecer', en: 'to make more expensive' },
+    { es: 'dar un giro de 180 grados', en: 'to do a complete U-turn' },
+    { es: 'empeorar / mejorar', en: 'to worsen / to improve' },
+    { es: 'el combustible', en: 'the fuel' }
+  ],
   sections: [
     { h: 'Sustantivos: del avance a la reconversión', html: 'Un cambio puede ser <i>radical, repentino, decisivo, para mejor, a peor</i>. <i>Avance, retroceso</i> son cambios direccionales opuestos: <i>un avance científico</i>. <i>Variación, alteración</i> son cambios menores o parciales. <i>Innovación, reforma</i> son cambios deliberados y estructurados: <i>una innovación tecnológica, una reforma educativa</i>. <i>(Re)conversión</i> es un cambio de función o de sistema: <i>una reconversión industrial</i>. <i>Transición</i> es el proceso de pasar de un estado a otro: <i>una transición política</i>.' },
     { h: 'Adjetivos de la capacidad de cambiar', html: '<i>Innovador, transformador</i> describen algo que produce cambio. <i>Cambiante, alterable</i> describen algo que cambia con facilidad: <i>la superficie de este planeta presenta un aspecto cambiante</i>. <i>Transformable, convertible</i> describen la capacidad de pasar de una forma a otra.' },
@@ -32543,6 +32830,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:909', 'nociones_generales:C1:910', 'nociones_generales:C1:911', 'nociones_generales:C1:912'],
   title: 'Permanencia en C1: lo imborrable, lo inalterable y "conservar la calma"',
   summary: 'Lo que resiste al paso del tiempo se nombra en C1 con adjetivos de negación muy expresivos — imborrable, indestructible, inalterable — y verbos que distinguen entre mantener algo activamente (conservar, preservar) y simplemente resistir (aguantar).',
+  keywords: [
+    { es: 'imborrable', en: 'indelible' },
+    { es: 'inalterable', en: 'unchanging' },
+    { es: 'conservar la calma', en: 'to keep calm' },
+    { es: 'quedar grabado', en: 'to be etched' },
+    { es: 'permanecer', en: 'to remain' },
+    { es: 'pese a', en: 'despite' }
+  ],
   sections: [
     { h: 'Sustantivos de permanencia', html: '<i>Permanencia, inmortalidad</i> son los sustantivos generales para lo que resiste el paso del tiempo.' },
     { h: 'Adjetivos negativos de resistencia', html: '<i>Imborrable, indestructible</i> describen algo que no puede eliminarse o destruirse: <i>un recuerdo imborrable, un material indestructible</i>. <i>Invariable, inalterable</i> describen algo que no cambia bajo ninguna circunstancia: <i>la esencia de las cosas es inalterable</i>.' },
@@ -32585,6 +32880,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1078', 'nociones_generales:C1:1079', 'nociones_generales:C1:1080', 'nociones_generales:C1:1081'],
   title: 'Formas y figuras en C1: de la "silueta" al "zigzag"',
   summary: 'Describir formas en C1 combina geometría técnica (rombo, elipse, diámetro) con adjetivos de contorno (redondeado, alargado, ondulado) y los verbos que activamente cambian una forma — dar forma no es lo mismo que deformar, aunque ambos impliquen moldear algo.',
+  keywords: [
+    { es: 'la silueta', en: 'the silhouette' },
+    { es: 'el zigzag', en: 'the zigzag' },
+    { es: 'recortarse contra', en: 'to stand out against' },
+    { es: 'la curva', en: 'the curve' },
+    { es: 'puntiagudo', en: 'pointed' },
+    { es: 'ovalado', en: 'oval' },
+    { es: 'el contorno', en: 'the outline' }
+  ],
   sections: [
     { h: 'Sustantivos de contorno y de figura geométrica', html: '<i>Silueta, cara</i> describen el contorno general de algo. <i>Circunferencia, elipse, rombo, pentágono, hexágono</i> son figuras geométricas concretas. <i>Parábola</i> es una curva específica. <i>Diámetro</i> mide una circunferencia. <i>Molde, plantilla, patrón</i> son herramientas para reproducir una forma.' },
     { h: 'Adjetivos de forma', html: '<i>Angular</i> describe algo con ángulos marcados. <i>Redondeado, alargado, ondulado, curvado</i> describen contornos suaves o extendidos. <i>Aplastado, torcido</i> describen deformaciones, casi siempre no deseadas.' },
@@ -32834,6 +33138,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1198', 'nociones_generales:C1:1199', 'nociones_generales:C1:1200', 'nociones_generales:C1:1201'],
   title: 'Materia en C1: de la seda al cartón piedra',
   summary: 'Nombrar materiales concretos en C1 requiere un vocabulario muy amplio de sustancias específicas — terciopelo, corcho, caucho, granito, escayola — cada una con connotaciones y usos propios que "material" o "sustancia" no transmiten.',
+  keywords: [
+    { es: 'la seda', en: 'the silk' },
+    { es: 'el terciopelo', en: 'the velvet' },
+    { es: 'el cartón piedra', en: 'the papier-mâché' },
+    { es: 'tapizar', en: 'to upholster' },
+    { es: 'el decorado', en: 'the set (theatre, film)' },
+    { es: 'la lona', en: 'the canvas' },
+    { es: 'el hierro forjado', en: 'the wrought iron' }
+  ],
   sections: [
     { h: 'Materia orgánica e inorgánica, y su estructura', html: '<i>Materia orgánica/inorgánica</i> distingue el origen biológico o no de una sustancia. <i>Tejido, composición</i> describen la estructura interna de un material. <i>Lámina</i> es una capa fina de material.' },
     { h: 'Materiales preciosos y textiles', html: '<i>Platino, diamante</i> son materiales de gran valor: <i>un disco de platino</i>. <i>Terciopelo</i> es un tejido suave y lujoso: <i>una cortina de terciopelo</i>.' },
@@ -33368,6 +33681,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1464', 'nociones_generales:C1:1465'],
   title: 'Aceptabilidad en C1: de "razonable" a "disparate", y "no paso por eso"',
   summary: 'Aceptar o rechazar algo en C1 se dice con matices que van de la tolerancia formal a la indignación absoluta ("una barbaridad"), y con la locución coloquial "no paso por eso" para marcar el límite personal de lo que alguien está dispuesto a tolerar.',
+  keywords: [
+    { es: 'razonable', en: 'reasonable' },
+    { es: 'el disparate', en: 'the absurdity' },
+    { es: 'una auténtica barbaridad', en: 'an absolute outrage' },
+    { es: 'No paso por eso.', en: 'I won\'t stand for that.' },
+    { es: 'difícilmente aceptable', en: 'hardly acceptable' },
+    { es: 'reconocer un error', en: 'to acknowledge a mistake' }
+  ],
   sections: [
     { h: 'Sustantivos de aceptación y de rechazo', html: '<i>Tolerancia, aceptación</i> son las actitudes positivas. En el extremo opuesto, <i>(des)acierto, disparate, barbaridad, incoherencia</i> nombran juicios sobre algo mal hecho o absurdo, con "barbaridad" en el grado más fuerte de indignación.' },
     { h: 'Adjetivos de aceptabilidad', html: '<i>Razonable, (in)admisible, (in)coherente, ilógico</i> gradúan si algo tiene sentido y se puede aceptar.' },
@@ -33410,6 +33731,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1478', 'nociones_generales:C1:1479', 'nociones_generales:C1:1480', 'nociones_generales:C1:1481', 'nociones_generales:C1:1482'],
   title: 'Adecuación en C1: "guardar las formas" y "estar contraindicado para"',
   summary: 'Ser adecuado en C1 combina actitud personal (tacto, cordura) con adecuación técnica (contraindicado, compatible con) — y "guardar las formas" describe mantener la compostura social incluso cuando por dentro no se comparte lo que ocurre.',
+  keywords: [
+    { es: 'guardar las formas', en: 'to keep up appearances' },
+    { es: 'estar contraindicado para', en: 'to be inadvisable for' },
+    { es: 'improcedente', en: 'inappropriate, out of order' },
+    { es: 'fuera de lugar', en: 'out of place' },
+    { es: 'ajustarse a', en: 'to conform to' },
+    { es: 'lo apropiado', en: 'the appropriate thing' }
+  ],
   sections: [
     { h: 'Sustantivos de comportamiento adecuado', html: '<i>Adecuación, moderación, tacto, cordura</i> son cualidades de un comportamiento apropiado: <i>actuar con tacto, comportarse con cordura</i>.' },
     { h: 'Adjetivos de adecuación e inadecuación', html: '<i>Inapropiado, (in)oportuno, (in)adecuado, (des)proporcionado</i> gradúan si algo encaja en su contexto: <i>una conducta inapropiada, un enfado desproporcionado</i>.' },
@@ -33452,6 +33781,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1502', 'nociones_generales:C1:1503', 'nociones_generales:C1:1504'],
   title: 'Conformidad en C1: "hacer la vista gorda" y "no quedar más remedio"',
   summary: 'Conformarse con algo en C1 va de la aprobación activa al simple "no quedar otra salida" — y "hacer la vista gorda" describe la conformidad más pasiva de todas: ignorar deliberadamente algo que no se aprueba pero se decide no combatir.',
+  keywords: [
+    { es: 'hacer la vista gorda', en: 'to turn a blind eye' },
+    { es: 'no quedar más remedio', en: 'to have no choice' },
+    { es: 'conformarse con', en: 'to settle for' },
+    { es: 'por consenso', en: 'by consensus' },
+    { es: 'estar conforme', en: 'to be in agreement' },
+    { es: 'ceder', en: 'to give way' }
+  ],
   sections: [
     { h: 'Sustantivos de acuerdo', html: '<i>Aprobación, consentimiento, consenso</i> gradúan el acuerdo: aprobación es dar el visto bueno, consentimiento es permitir algo específico, consenso es un acuerdo colectivo: <i>cuentan con mi aprobación, finalmente nos dio su consentimiento, lo decidieron por consenso</i>.' },
     { h: '"El sí" y "el no" como sustantivos', html: 'En español, <i>el sí</i> y <i>el no</i> pueden funcionar como sustantivos que resumen una decisión: <i>no dudamos en darles el sí</i>, <i>inténtalo, total, el no ya lo tienes</i> (si no lo intentas, el resultado ya es un no seguro).' },
@@ -33495,6 +33832,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1525', 'nociones_generales:C1:1526', 'nociones_generales:C1:1527', 'nociones_generales:C1:1528', 'nociones_generales:C1:1529', 'nociones_generales:C1:1530'],
   title: 'Corrección en C1: de "un acierto" a "a la perfección"',
   summary: 'Corregir y valorar la precisión de algo en C1 exige distinguir un simple "descuido" de un "disparate", y "rectificar" (corregir una decisión) de "reparar" (arreglar un defecto físico) — cada verbo reservado para su propio tipo de error.',
+  keywords: [
+    { es: 'un acierto', en: 'a good call' },
+    { es: 'a la perfección', en: 'to perfection' },
+    { es: 'subsanar', en: 'to rectify' },
+    { es: 'el fallo', en: 'the flaw, the error' },
+    { es: 'corregir', en: 'to correct' },
+    { es: 'dar en el clavo', en: 'to hit the nail on the head' }
+  ],
   sections: [
     { h: 'Sustantivos de precisión y de error', html: '<i>Exactitud, descuido, despiste, defecto</i> cubren desde la precisión total hasta distintos tipos de fallo menor. <i>Precisión</i> es la exactitud técnica. <i>Acierto</i> es una decisión correcta: <i>las medidas adoptadas fueron un acierto para la empresa</i>. <i>Rectificación</i> es la corrección formal de un error.' },
     { h: 'Calificar un error', html: '<i>Error insignificante/(im)perdonable</i> gradúa la gravedad de un error. <i>Defectuoso</i> describe un objeto con fallos de fabricación: <i>objeto defectuoso</i>.' },
@@ -33539,6 +33884,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1562', 'nociones_generales:C1:1563', 'nociones_generales:C1:1564'],
   title: 'Precisión y claridad en C1: de "matemático" a "un lío"',
   summary: 'Este vocabulario cubre toda la escala entre la claridad absoluta ("matemático", "nítido") y el caos total ("caótico", "un lío") — con adjetivos que distinguen matices finos: "ambiguo" no es lo mismo que "confuso", y "contradictorio" señala un problema distinto de ambos.',
+  keywords: [
+    { es: 'matemático', en: 'exact, to the letter' },
+    { es: 'un lío', en: 'a muddle' },
+    { es: 'liarse', en: 'to get muddled' },
+    { es: 'de una claridad absoluta', en: 'perfectly clear' },
+    { es: 'con pelos y señales', en: 'in minute detail' },
+    { es: 'confuso', en: 'confusing' },
+    { es: 'precisar', en: 'to specify' }
+  ],
   sections: [
     { h: 'Sustantivos de claridad y de confusión', html: '<i>Claridad, sencillez, transparencia</i> son las cualidades positivas. <i>Exactitud, precisión</i> añaden el matiz técnico de ajuste exacto. En el extremo opuesto, <i>confusión, lío, ambigüedad</i> — con "lío" siendo el más coloquial.' },
     { h: 'Adjetivos de lo claro y lo evidente', html: '<i>Comprensible, obvio</i> describen algo fácil de entender. <i>Innegable, indudable, probado</i> describen algo cuya verdad no admite duda. <i>Nítido, preciso, matemático</i> gradúan la claridad hasta el extremo técnico ("matemático" para una precisión casi absoluta). <i>Clasificado</i> describe algo ordenado según un sistema.' },
@@ -33766,6 +34120,14 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:C1:1702', 'nociones_generales:C1:1703', 'nociones_generales:C1:1704', 'nociones_generales:C1:1705', 'nociones_generales:C1:1706'],
   title: 'Importancia en C1: de "trascendencia" a "importarle un pimiento"',
   summary: 'La importancia se nombra en C1 con matices técnicos (alcance, repercusión, gravedad) y con la hipérbole coloquial "importarle un pimiento" para el desinterés absoluto — dos registros del mismo eje, de máxima seriedad a mínima.',
+  keywords: [
+    { es: 'la trascendencia', en: 'the significance' },
+    { es: 'importarle un pimiento a alguien', en: 'not to give a damn' },
+    { es: 'restar importancia a', en: 'to play down' },
+    { es: 'de suma importancia', en: 'of the utmost importance' },
+    { es: 'ser clave', en: 'to be key' },
+    { es: 'pasar por alto', en: 'to overlook' }
+  ],
   sections: [
     { h: 'Sustantivos de importancia', html: '<i>Relevancia, trascendencia, alcance, fuerza, intensidad, repercusión, gravedad</i> matizan distintos ángulos de la importancia: alcance es hasta dónde llega un efecto, repercusión son las consecuencias que provoca, gravedad es la seriedad de una situación negativa.' },
     { h: 'Adjetivos de máxima importancia', html: '<i>Crucial, vital</i> describen algo de importancia decisiva. <i>Primario</i> describe lo que va antes o por encima de otras consideraciones.' },
@@ -33904,6 +34266,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1773', 'nociones_generales:C1:1774', 'nociones_generales:C1:1775', 'nociones_generales:C1:1776', 'nociones_generales:C1:1777'],
   title: 'Reflexión y conocimiento en C1: "consultar con la almohada" y "romperse la cabeza"',
   summary: 'Pensar en español tiene un vocabulario del cuerpo muy vivo — la cabeza se "rompe" o se "calienta" pensando, las decisiones se "consultan con la almohada", y una idea puede simplemente "ocurrírsele" a alguien sin que nadie la busque activamente.',
+  keywords: [
+    { es: 'consultar con la almohada', en: 'to sleep on it' },
+    { es: 'romperse la cabeza', en: 'to rack your brains' },
+    { es: 'caer en la cuenta', en: 'to twig, to realise' },
+    { es: 'darse cuenta de', en: 'to realise' },
+    { es: 'ser consciente de', en: 'to be aware of' },
+    { es: 'ocurrírsele a uno', en: 'to occur to someone' },
+    { es: 'reflexionar', en: 'to reflect' }
+  ],
   sections: [
     { h: 'Sustantivos de conocimiento y su ausencia', html: '<i>Despiste, distracción, desconocimiento, ignorancia</i> nombran la falta de atención o de saber. <i>Sabiduría, ingenio</i> son formas positivas de conocimiento: <i>sabiduría popular</i>. <i>Juicio, criterio</i> son la capacidad de valorar: <i>emitir un juicio de valor, criterio propio</i>. <i>Apreciación, valoración</i> son el resultado de esa capacidad puesta en práctica: <i>hacer una apreciación</i>.' },
     { h: '"Conciencia" y "sensación": percepciones internas', html: '<i>Conciencia</i> cubre tanto el sentido moral (<i>buena conciencia</i>) como el esmero (<i>hacer algo a conciencia</i>). <i>Sensación, intuición, sospecha</i> son percepciones no del todo racionalizadas: <i>me da la sensación de que esconde algo</i>.' },
@@ -33950,6 +34321,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1821', 'nociones_generales:C1:1822', 'nociones_generales:C1:1823', 'nociones_generales:C1:1824', 'nociones_generales:C1:1825'],
   title: 'Expresión verbal en C1: de "dejar caer" a "poner algo en claro"',
   summary: 'Este es el catálogo más amplio de verbos de habla del inventario C1 — "sostener" una opinión no es lo mismo que "mantenerla", "dejar caer" es insinuar sin comprometerse, y "reñir/reprochar/regañar" gradúan la reprimenda de más severa a más suave.',
+  keywords: [
+    { es: 'no tener pelos en la lengua', en: 'to be very outspoken' },
+    { es: 'hablar por los codos', en: 'to talk nineteen to the dozen' },
+    { es: 'dar a entender', en: 'to imply' },
+    { es: 'soltar', en: 'to come out with' },
+    { es: 'puntualizar', en: 'to clarify a detail' },
+    { es: 'balbucear', en: 'to stammer' },
+    { es: 'el comentario', en: 'the remark' }
+  ],
   sections: [
     { h: 'Sustantivos del discurso', html: '<i>Dicho, frase hecha</i> son expresiones fijas populares. <i>Argumentación</i> es el desarrollo razonado de una postura. <i>Declaración, proposición, planteamiento, postura, protesta, advertencia</i> son distintos tipos de intervención pública: <i>reflejar una postura</i>. <i>Intervención</i> es la participación puntual en un debate. <i>Síntesis, esbozo, tesis</i> son formas de presentar una idea, de más resumida (síntesis) a más desarrollada y defendida (tesis): <i>defender una tesis</i>. <i>Charla, confesión, confidencia</i> gradúan la intimidad del contenido compartido. <i>Charlatán</i> es alguien que habla en exceso, con connotación negativa.' },
     { h: 'Verbos de conversar y de posicionarse', html: '<i>Conversar, dialogar, debatir</i> gradúan la formalidad del intercambio. <i>Sostener, mantener</i> son defender una postura con firmeza: <i>sostener una opinión, mantener una conversación</i>. <i>Charlar, intervenir</i> son hablar informalmente o participar puntualmente. <i>Contradecir, oponerse a, rectificar, rechazar</i> son las formas de discrepar: contradecir niega lo dicho por otro, rectificar corrige lo dicho por uno mismo.' },
@@ -34239,6 +34619,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:144', 'funciones:C1:145', 'funciones:C1:146', 'funciones:C1:147'],
   title: 'Pedir y dar opinión en C1: "a mi entender" y "en mi modesta opinión"',
   summary: 'Pedir y dar opinión en C1 se apoya en fórmulas fijas de registro elevado — "a tu entender", "a mi juicio" — que en el habla cotidiana suenan a discurso formal o a entrevista, junto con la falsa modestia de "en mi modesta/humilde opinión".',
+  keywords: [
+    { es: 'a mi entender', en: 'to my mind' },
+    { es: 'en mi modesta opinión', en: 'in my humble opinion' },
+    { es: '¿Cómo lo ves?', en: 'How do you see it?' },
+    { es: '¿Qué opinión te merece…?', en: 'What\'s your view of…?' },
+    { es: 'Desde mi punto de vista', en: 'From my point of view' },
+    { es: 'Si quieres que te diga la verdad…', en: 'If you want the truth…' }
+  ],
   sections: [
     { h: 'Pedir opinión sobre algo mencionado', html: '<i>¿Qué piensas/opinas de lo que...?</i> y <i>¿qué te parece lo que...?</i> piden opinión sobre un hecho concreto: <i>¿qué te parece lo que nos ha propuesto Diego?</i>.' },
     { h: 'Pedir opinión con fórmulas de registro elevado', html: '<i>A tu entender/parecer/juicio</i> + pregunta introduce una petición de opinión en un registro más formal, típico de entrevistas: <i>a su entender, ¿cuáles son los principales retos...?</i>. <i>¿Dirías...?</i> pide una opinión formulada como afirmación hipotética: <i>¿diría usted que nos hemos equivocado?</i>.' },
@@ -34279,6 +34667,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:C1:153', 'funciones:C1:154', 'funciones:C1:155'],
   title: 'Valorar en C1: "de pésimo gusto" y "resulta vergonzoso"',
   summary: 'Valorar algo con matices en C1 combina el juicio sobre el gusto ("de buen/mal/pésimo gusto") con estructuras que anteponen el juicio antes de nombrar el hecho concreto que lo motiva: "resulta vergonzoso que..."',
+  keywords: [
+    { es: 'de pésimo gusto', en: 'in appalling taste' },
+    { es: 'Resulta vergonzoso que…', en: 'It is shameful that… (+ subjunctive)' },
+    { es: 'No tiene desperdicio.', en: 'It\'s worth every minute.' },
+    { es: 'digno de mención', en: 'worth mentioning' },
+    { es: 'cuestionable', en: 'questionable' },
+    { es: 'valorar', en: 'to appraise, to rate' }
+  ],
   sections: [
     { h: 'Valorar el gusto de algo', html: '<i>Es/me parece de buen/mal/pésimo gusto</i> valora la elegancia o adecuación social de algo: <i>me parece de pésimo gusto su comentario</i>.' },
     { h: 'Anteponer el juicio al hecho', html: '<i>Es/me parece + adjetivo/SN + lo que...</i> antepone la valoración antes de nombrar el hecho: <i>lo que está pasando es un escándalo</i>, <i>me parecía insoportable lo que me estaba contando</i>.' },
@@ -34319,6 +34715,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:164', 'funciones:C1:165', 'funciones:C1:166', 'funciones:C1:167'],
   title: 'Expresar aprobación y desaprobación en C1: de "apruebo" a "¡así se hace!"',
   summary: 'Aprobar o desaprobar en C1 va desde el registro institucional ("doy mi aprobación", "condeno") hasta el aplauso coloquial e inmediato ("¡así se hace!"), pasando por "haces bien/mal" para valorar directamente una acción del interlocutor.',
+  keywords: [
+    { es: '¡Así se hace!', en: 'That\'s the way to do it!' },
+    { es: 'Apruebo sin reservas…', en: 'I approve without reservation…' },
+    { es: 'Me parece intolerable que…', en: 'I find it intolerable that… (+ subjunctive)' },
+    { es: 'Deja mucho que desear.', en: 'It leaves a lot to be desired.' },
+    { es: 'No hay derecho.', en: 'It\'s just not right.' },
+    { es: 'reprobar', en: 'to condemn' }
+  ],
   sections: [
     { h: 'Valorar la acción del interlocutor', html: '<i>Haces bien/mal...</i> + gerundio valora directamente una acción de la persona con la que se habla: <i>haces bien callándote</i>, <i>hace mal negándose a admitirlo</i>.' },
     { h: 'Aprobar de forma explícita', html: '<i>Apruebo...</i> es la forma directa de dar aprobación: <i>apruebo tu decisión</i>. <i>No tengo nada que objetar</i> es una aprobación por ausencia de objeciones, más pasiva. <i>Cuentas con/tienes/doy mi aprobación/consentimiento</i> son fórmulas algo más formales: <i>al final no di mi aprobación para que incluyeran mis datos</i>.' },
@@ -34511,6 +34915,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:301', 'funciones:C1:302', 'funciones:C1:303', 'funciones:C1:304'],
   title: 'Certeza y su ausencia en C1: de "sin lugar a dudas" a "juraría que..."',
   summary: 'La certeza absoluta ("no me cabe la menor duda") y su ausencia ("sospecho que...") ocupan extremos de una misma escala en C1, con matices finos en medio: "intuir" no es lo mismo que "presentir", y "cuestionar" no es lo mismo que simplemente "no tener claro".',
+  keywords: [
+    { es: 'sin lugar a dudas', en: 'without a shadow of a doubt' },
+    { es: 'Juraría que…', en: 'I could swear that…' },
+    { es: 'Me consta que…', en: 'I know for a fact that…' },
+    { es: 'Está demostrado que…', en: 'It has been proven that…' },
+    { es: 'Todo apunta a que…', en: 'Everything points to…' },
+    { es: 'No me cabe la menor duda.', en: 'I haven\'t the slightest doubt.' }
+  ],
   sections: [
     { h: 'Expresar certeza personal', html: '<i>Sé con (absoluta/completa/total) certeza/seguridad</i>, <i>tengo la seguridad</i> y <i>tengo claro</i> son formas directas de afirmar certeza: <i>tengo clarísimo que el año que viene se va a vivir al extranjero</i>.' },
     { h: 'Certeza sin duda posible', html: '<i>No (me) cabe (la menor) duda de que...</i> es la fórmula más contundente: <i>no cabe la menor duda de que podemos ganar el partido</i>. <i>Es indudable/innegable que...</i> y <i>es un hecho que...</i> presentan la certeza como un dato objetivo, no una opinión.' },
@@ -34743,6 +35155,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:408', 'funciones:C1:409'],
   title: 'Recordar y olvidar en C1: "lo tengo en la punta de la lengua"',
   summary: 'La memoria en C1 tiene su propio catálogo de imágenes físicas: "quedarse en blanco", tener algo "en la punta de la lengua", o que "se te vaya" lo que estabas diciendo — cada expresión describe un modo distinto de fallar (o de acertar) al recordar.',
+  keywords: [
+    { es: 'tenerlo en la punta de la lengua', en: 'to have it on the tip of your tongue' },
+    { es: 'Que yo recuerde…', en: 'As far as I remember…' },
+    { es: 'No me dice nada.', en: 'It rings no bell.' },
+    { es: 'quedarse en blanco', en: 'to go blank' },
+    { es: 'Me suena.', en: 'It rings a bell.' },
+    { es: 'Se me fue el santo al cielo.', en: 'I completely lost my thread.' }
+  ],
   sections: [
     { h: 'Preguntar si se recuerda algo', html: '<i>¿Recuerdas/te acuerdas de + infinitivo compuesto?</i> pregunta por una acción pasada: <i>¿te acuerdas de haber guardado los palos de esquí en algún sitio?</i>. <i>¿Te recuerda a/que/lo que...?</i> pregunta si algo evoca otra cosa: <i>ese hombre, ¿no te recuerda mucho a tu tío Carlos?</i>. <i>¿Te trae recuerdos de...?</i> pregunta si algo evoca un recuerdo emocional concreto.' },
     { h: 'Expresar que se recuerda, con matices', html: '<i>Que yo recuerde.../si mal no recuerdo...</i> matizan el recuerdo con un margen de duda: <i>que yo recuerde, Pablo dijo que llegáramos antes de las diez</i>. <i>No/casi/por poco se me olvida...</i> describe un olvido evitado en el último momento: <i>casi se me olvida comentarte que hemos cambiado la hora</i>. <i>Me recuerda a/que/lo que...</i> y <i>me trae recuerdos de...</i> describen algo que evoca un recuerdo. <i>No consigo olvidar...</i> describe un recuerdo tan fuerte que resulta imposible de borrar: <i>no consigo olvidar el exotismo de aquellas tierras</i>.' },
@@ -34823,6 +35243,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:439', 'funciones:C1:446', 'funciones:C1:447', 'funciones:C1:448', 'funciones:C1:449', 'funciones:C1:450'],
   title: 'Preferencia e indiferencia en C1: "no cambio... por nada del mundo"',
   summary: 'Preguntar y expresar preferencia en C1 usa verbos muy visuales — "optar por", "quedarse con", "decidirse por" — mientras que la indiferencia tiene su propia escala, de la fórmula condicional neutra ("si quieres, cómpratelo") hasta el desdén absoluto de "me importa un pimiento".',
+  keywords: [
+    { es: 'Si me dan a elegir…', en: 'If I had to choose…' },
+    { es: 'No lo cambiaría por nada del mundo.', en: 'I wouldn\'t trade it for anything.' },
+    { es: '¡Qué más da!', en: 'What does it matter!' },
+    { es: 'Me da igual.', en: 'It\'s all the same to me.' },
+    { es: 'Me da lo mismo.', en: 'I don\'t mind either way.' },
+    { es: 'uno u otro', en: 'one or the other' }
+  ],
   sections: [
     { h: 'Preguntar por preferencias', html: '<i>¿Optas/te decides por...?</i>, <i>¿por qué + SN + optas/te decides?</i> y <i>¿por cuál optas/te decides?</i> preguntan por una elección entre opciones: <i>¿todavía no te has decidido por ninguna de las corbatas?</i>. <i>¿Con qué (+SN)/cuál te quedas?</i> pregunta de forma más coloquial, con el verbo "quedarse con": <i>¿con qué cuadro te quedarías?</i>.' },
     { h: 'Expresar preferencia', html: '<i>Si tengo que elegir/si me dan a elegir...</i> introduce una preferencia condicionada a tener que decidir: <i>si me dan a elegir, me quedo con un buen Rioja</i>. <i>Me quedo con/me decido/opto por...</i> son los verbos directos de preferencia. <i>No cambio... por nada (del mundo)</i> expresa la preferencia más firme posible, descartando cualquier alternativa: <i>no cambiaría mi trabajo por nada del mundo</i>.' },
@@ -34864,6 +35292,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:466', 'funciones:C1:476', 'funciones:C1:477', 'funciones:C1:478', 'funciones:C1:479', 'funciones:C1:480'],
   title: 'Deseos y planes en C1: "¡quién tuviera...!" y "estoy por..."',
   summary: 'Expresar un deseo en C1 va del anhelo físico ("me muero de ganas de") al deseo suspendido y casi resignado ("¡si pudiera tenerte aquí...!"), mientras que los planes distinguen entre un proyecto firme ("me he hecho el propósito de") y una intención que apenas se está formando ("estoy por...").',
+  keywords: [
+    { es: 'morirse de ganas de', en: 'to be dying to' },
+    { es: '¡Quién tuviera…!', en: 'If only I had…!' },
+    { es: 'tener en proyecto', en: 'to be planning' },
+    { es: 'hacerse el firme propósito de', en: 'to make a firm resolution to' },
+    { es: 'estar por + infinitivo', en: 'to be inclined to' },
+    { es: 'Ojalá + subjuntivo', en: 'I wish, if only' },
+    { es: 'el negocio', en: 'the business' }
+  ],
   sections: [
     { h: 'Deseo intenso e inminente', html: '<i>Me muero de ganas de/por...</i> expresa un deseo físico y urgente: <i>me muero de ganas de jugar en este equipo</i>. <i>¡Qué ganas (tengo) de...!</i> es su versión exclamativa: <i>¡qué ganas de que lleguéis!</i>.' },
     { h: 'Deseo como ideal', html: '<i>Lo ideal sería...</i> presenta el deseo como el escenario perfecto, no necesariamente realista: <i>lo ideal sería que me animaran a hacerlo y no que me obligaran</i>. <i>Mi sueño/mi deseo sería...</i> introduce una aspiración personal profunda.' },
@@ -34908,6 +35345,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:503', 'funciones:C1:504'],
   title: 'Preguntar por el ánimo y expresar alegría en C1: "estoy como loco de contento"',
   summary: 'Preguntar por el estado de ánimo en C1 va de lo casual ("¿cómo va eso?") a lo directamente insistente ("¿se puede saber lo que te pasa?"), mientras que la alegría se expresa con imágenes muy físicas: "dar saltos de alegría", "estar como loco de contento".',
+  keywords: [
+    { es: '¿Se puede saber qué te pasa?', en: 'Can you tell me what\'s the matter?' },
+    { es: 'estar eufórico', en: 'to be ecstatic' },
+    { es: 'dar saltos de alegría', en: 'to jump for joy' },
+    { es: 'Tengo el placer de…', en: 'I have the pleasure of… (formal)' },
+    { es: 'estar como loco de contento', en: 'to be over the moon' },
+    { es: 'Llevas todo el día raro.', en: 'You\'ve been off all day.' }
+  ],
   sections: [
     { h: 'Preguntar por el estado de ánimo, de lo casual a lo insistente', html: '<i>¿Cómo va eso?</i> es una pregunta casual, casi de saludo. <i>¿Cómo/qué tal estás de ánimo?</i> es más directa. <i>¿Estás agobiado por algo?</i> nombra un posible malestar concreto. <i>¿... + qué te ocurre/sucede/pasa?</i> pregunta directamente por el motivo. <i>¿Se puede saber lo que te pasa?</i> añade un matiz de insistencia, casi de exigencia, ante un silencio del otro. <i>¿Por qué tienes esa cara?</i> pregunta a partir de una expresión facial visible.' },
     { h: 'Expresar alegría con locuciones físicas', html: '<i>Estoy de buenas</i> describe un buen momento anímico general. <i>Estoy eufórico</i> es un grado alto de alegría. <i>Estoy como loco (de contento)</i> y <i>estoy encantado de la vida</i> son hipérboles coloquiales de felicidad plena: <i>estamos como locos con nuestro nuevo coche</i>. <i>Me pongo a dar saltos de alegría</i> lleva la alegría al gesto físico literal: <i>siempre que sacaba una buena nota se ponía a dar saltos de alegría</i>.' },
@@ -34948,6 +35393,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:520', 'funciones:C1:521', 'funciones:C1:530', 'funciones:C1:531', 'funciones:C1:532'],
   title: 'Tristeza y placer en C1: "se me rompe el corazón" y "me parto de risa"',
   summary: 'La tristeza en C1 se somatiza en el corazón ("se me rompe/parte/encoge") y llega hasta la visión distorsionada de "lo veo todo negro", mientras que el placer y la diversión llevan la risa al cuerpo con la misma intensidad: "me parto de risa".',
+  keywords: [
+    { es: 'Se me rompe el corazón.', en: 'It breaks my heart.' },
+    { es: 'estar destrozado', en: 'to be devastated' },
+    { es: 'partirse de risa', en: 'to crack up laughing' },
+    { es: 'pasarlo de maravilla', en: 'to have a wonderful time' },
+    { es: 'dar pena', en: 'to be saddening' },
+    { es: 'hundirse', en: 'to fall apart' },
+    { es: 'marcharse', en: 'to leave' }
+  ],
   sections: [
     { h: 'Tristeza: verbos directos', html: '<i>Sufro...</i> describe dolor emocional sostenido: <i>hemos sufrido mucho con lo de su hermano</i>. <i>Me afecta...</i> señala el impacto emocional de un hecho: <i>me afectó mucho que no hubiera tenido la confianza de decírmelo</i>. <i>Me entristece...</i> (algo causa tristeza) y <i>me entristezco...</i> (yo mismo me pongo triste) distinguen el origen de la emoción.' },
     { h: 'Tristeza somatizada en el corazón', html: '<i>(Se) me rompe/parte/encoge el corazón...</i> lleva la tristeza al cuerpo, con gradación de intensidad: <i>se nos parte el corazón viendo lo mal que lo están pasando</i>.' },
@@ -35040,6 +35494,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:585', 'funciones:C1:586', 'funciones:C1:587', 'funciones:C1:588', 'funciones:C1:589'],
   title: 'Miedo y nerviosismo en C1: "el corazón en un puño" y "los pelos de punta"',
   summary: 'El miedo y el nerviosismo en C1 se somatizan de forma muy física — el corazón se aprieta "en un puño", la piel se pone "de gallina", el pelo se pone "de punta" — mientras que perder los nervios tiene su propia escala hasta "estar al borde de un ataque".',
+  keywords: [
+    { es: 'tener el corazón en un puño', en: 'to have your heart in your mouth' },
+    { es: 'estar como un flan', en: 'to be a bundle of nerves' },
+    { es: 'ponérsele a uno los pelos de punta', en: 'to get goosebumps' },
+    { es: 'sacar de quicio', en: 'to drive someone up the wall' },
+    { es: 'dar pánico', en: 'to terrify' },
+    { es: 'los nervios', en: 'the nerves' },
+    { es: 'la entrevista', en: 'the interview' }
+  ],
   sections: [
     { h: 'Miedo: verbos directos', html: '<i>Temo...</i> es el verbo general: <i>temo equivocarme</i>. <i>Me horroriza...</i> añade un matiz de horror extremo: <i>me horroriza pensar que están muriendo tantas personas inocentes</i>. <i>Me inquieto/inquieta...</i> describe una preocupación más contenida: <i>me inquieta tu silencio</i>. <i>Me agobio/agobia...</i> añade el matiz de sentirse abrumado, no solo asustado: <i>me agobia que no me dejes en paz ni un minuto</i>.' },
     { h: 'Miedo extremo', html: '<i>Estoy aterrorizado</i> es el grado máximo directo. <i>Me da un miedo...</i> introduce el miedo como algo que "viene de fuera": <i>me da un miedo horroroso que nos podamos equivocar</i>. <i>¡(Casi) me muero de miedo!</i> es la hipérbole coloquial máxima.' },
@@ -35083,6 +35546,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:613', 'funciones:C1:614', 'funciones:C1:615', 'funciones:C1:616', 'funciones:C1:617', 'funciones:C1:618'],
   title: 'Empatía, alivio y esperanza en C1: "me pongo en tu lugar" y "cruzo los dedos"',
   summary: 'Empatizar en C1 va de compartir una experiencia parecida ("a mí me pasó algo muy parecido") a ponerse literalmente en el lugar del otro; el alivio estalla en exclamaciones ("¡ya era hora!"); y la esperanza se protege con gestos supersticiosos: "cruzo los dedos", "toco madera".',
+  keywords: [
+    { es: 'Me pongo en tu lugar.', en: 'I put myself in your place.' },
+    { es: 'Me imagino lo que estás pasando.', en: 'I can imagine what you\'re going through.' },
+    { es: '¡Ya era hora!', en: 'About time too!' },
+    { es: 'cruzar los dedos', en: 'to keep your fingers crossed' },
+    { es: 'Confiamos en que…', en: 'We trust that… (+ subjunctive)' },
+    { es: '¡Menos mal!', en: 'Thank goodness!' }
+  ],
   sections: [
     { h: 'Expresar empatía', html: '<i>Me imagino lo que estás pasando</i> reconoce el sufrimiento del otro sin haberlo vivido necesariamente. <i>No me extraña (en absoluto) que te sientas así</i> valida la reacción emocional del otro como comprensible. <i>A mí me pasó algo muy parecido</i> establece empatía compartiendo una experiencia propia similar. <i>Me pongo en tu lugar</i> es la fórmula más directa de empatía imaginativa. <i>Te compadezco</i> expresa compasión, con un matiz algo más formal o incluso distante que las anteriores.' },
     { h: 'Expresar alivio', html: '<i>¡Al fin!</i> y <i>¡Por fin!</i> son casi intercambiables, exclamando que algo esperado por fin ha ocurrido. <i>¡Ya era hora!</i> añade un matiz de impaciencia acumulada, casi de reproche. <i>Me quedo muy aliviado/mucho más tranquilo</i> es la forma más neutra y explicativa: <i>me quedaría mucho más tranquilo sabiendo que estás bien</i>.' },
@@ -35122,6 +35593,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:C1:622', 'funciones:C1:623', 'funciones:C1:624', 'funciones:C1:627', 'funciones:C1:628', 'funciones:C1:629', 'funciones:C1:630'],
   title: 'Decepción y resignación en C1: "¡vaya, hombre!" y "que sea lo que Dios quiera"',
   summary: 'La decepción en C1 tiene su propia entonación ("¡vaya, hombre!", con caída descendente), mientras que la resignación acepta lo inevitable con fórmulas casi fatalistas: "que sea lo que Dios quiera", "no hay más remedio".',
+  keywords: [
+    { es: '¡Vaya, hombre!', en: 'Oh, for goodness\' sake!' },
+    { es: 'la desilusión', en: 'the disappointment' },
+    { es: 'resignarse a', en: 'to resign oneself to' },
+    { es: 'No hay más remedio que…', en: 'There\'s nothing for it but to…' },
+    { es: 'Que sea lo que Dios quiera.', en: 'Whatever will be, will be.' },
+    { es: 'Qué le vamos a hacer.', en: 'What can you do.' }
+  ],
   sections: [
     { h: 'Expresar decepción', html: '<i>¡Menuda/vaya desilusión/decepción!</i> exclama directamente la decepción. <i>Esto no es lo que (me) esperaba/imaginaba</i> compara explícitamente lo ocurrido con la expectativa previa. <i>¡Vaya, hombre!</i>, con entonación descendente, expresa una decepción resignada, casi sin sorpresa — es distinta de la misma expresión con entonación ascendente, que sería sorpresa o irritación.' },
     { h: 'Expresar resignación', html: '<i>Me resigno a...</i> es el verbo directo: <i>ya hace tiempo que me resigné a cumplir años</i>. <i>No hay/queda otro/más remedio...</i> presenta la resignación como ausencia de alternativa: <i>no hay más remedio que aceptar las cosas como son</i>.' },
@@ -35163,6 +35642,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:651', 'funciones:C1:652'],
   title: 'Arrepentimiento y vergüenza en C1: "si volviera a nacer..." y "vergüenza ajena"',
   summary: 'El arrepentimiento en C1 combina verbos directos ("me arrepiento de") con condicionales hipotéticos que imaginan una segunda oportunidad ("si volviera a nacer..."), y la vergüenza incluye el matiz específico de "vergüenza ajena" — sentirla por el comportamiento de otro, no por uno mismo.',
+  keywords: [
+    { es: 'Si volviera a nacer…', en: 'If I had my time again…' },
+    { es: 'arrepentirse de', en: 'to regret' },
+    { es: 'No debería haber…', en: 'I shouldn\'t have…' },
+    { es: 'la vergüenza ajena', en: 'second-hand embarrassment (for someone else)' },
+    { es: 'morirse de vergüenza', en: 'to die of embarrassment' },
+    { es: 'dar vergüenza', en: 'to be embarrassing' },
+    { es: 'el remordimiento', en: 'the remorse' }
+  ],
   sections: [
     { h: 'Arrepentimiento: verbos directos', html: '<i>Me arrepiento (de)...</i> es la forma más directa: <i>no me arrepiento de haberle hecho caso</i>. <i>(No) debí...</i> y <i>(no) debería/debía + infinitivo compuesto</i> señalan una acción pasada que se juzga incorrecta: <i>no debería haber ido</i>. <i>(No) tendría/tenía que + infinitivo compuesto</i> hace lo mismo con matiz de obligación incumplida: <i>tenía que haberme quedado</i>.' },
     { h: 'Arrepentimiento como hipótesis sobre el pasado', html: '<i>Si tuviera una segunda oportunidad...</i>, <i>si pudiera dar marcha atrás...</i> y <i>si volviera a nacer...</i> imaginan un pasado alternativo, cada uno con distinto alcance: una oportunidad puntual, un momento concreto que rehacer, o la vida entera desde el principio.' },
@@ -35559,6 +36047,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:906', 'funciones:C1:910', 'funciones:C1:911', 'funciones:C1:915', 'funciones:C1:916', 'funciones:C1:918'],
   title: 'Proponer, ofrecer y confirmar en C1: "no puedes faltar" y "¿te apuntas?"',
   summary: 'Proponer algo en C1 combina la sugerencia formal ("me permito sugerirles") con la invitación coloquial ("¿te apuntas?"), invitar puede presionar suavemente con "no puedes faltar", y confirmar una propuesta ya hecha antes tiene su propia impaciencia acumulada: "bueno, ¿qué?"',
+  keywords: [
+    { es: 'No puedes faltar.', en: 'You can\'t miss it.' },
+    { es: '¿Te apuntas?', en: 'Are you in?' },
+    { es: '¿Qué te parece si…?', en: 'How about if…?' },
+    { es: 'Cuenta conmigo.', en: 'Count me in.' },
+    { es: 'Te confirmo mañana.', en: 'I\'ll confirm tomorrow.' },
+    { es: 'Quedamos en que…', en: 'We agreed that…' }
+  ],
   sections: [
     { h: 'Proponer con pregunta o sugerencia directa', html: '<i>¿No estamos mejor + complemento de lugar/modo?</i> propone una alternativa en forma de pregunta retórica: <i>¿no estaríamos mejor sentados en una terraza?</i>. <i>¿Te apuntas/te vienes a...?</i> son invitaciones coloquiales muy directas. <i>Te sugiero...</i> + sintagma nominal, infinitivo o "que" + subjuntivo es la forma neutra: <i>te sugiero que instales un programa más moderno</i>.' },
     { h: 'Proponer con condición o formalidad', html: '<i>Si te parece, puedes/podrías...</i> introduce la propuesta como condicionada a la aceptación del otro. <i>Me permito proponer/sugerir...</i> es la fórmula más formal, casi ceremoniosa: <i>me permito proponerles el barrio chino</i>.' },
@@ -35600,6 +36096,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:935', 'funciones:C1:936', 'funciones:C1:937', 'funciones:C1:938', 'funciones:C1:939'],
   title: 'Aceptar y rechazar propuestas en C1: "no te voy a decir que no" y "¡ni atado!"',
   summary: 'Aceptar en C1 puede hacerse con una doble negación casi tímida ("no te voy a decir que no") o con entusiasmo ("¿a qué esperamos?"), mientras que rechazar incluye la excusa de "precisamente" ese día no poder, y el rechazo coloquial más extremo: "¡ni atado!"',
+  keywords: [
+    { es: 'No te voy a decir que no.', en: 'I won\'t say no.' },
+    { es: '¡Ni atado!', en: 'Not a chance!' },
+    { es: 'Encantado.', en: 'Delighted.' },
+    { es: 'Me temo que no voy a poder.', en: 'I\'m afraid I won\'t be able to.' },
+    { es: 'Otra vez será.', en: 'Another time.' },
+    { es: 'Por mí, perfecto.', en: 'Fine by me.' }
+  ],
   sections: [
     { h: 'Aceptar sin reservas', html: '<i>No te voy a decir que no</i> acepta mediante una doble negación, con matiz de estar dejándose convencer con gusto: <i>no te voy a decir que no, además no tenía plan para el fin de semana</i>. <i>No me puedo negar</i> tiene un matiz parecido. <i>¿A qué esperamos?</i> acepta con entusiasmo inmediato, como si la propuesta fuera obviamente buena. <i>(Eso está) hecho</i> confirma la aceptación de forma directa.' },
     { h: 'Aceptar con reservas o condiciones', html: 'Una condición con subjuntivo matiza la aceptación: <i>no, a no ser que vayamos al sitio que a mí me gusta</i>, <i>acepto, siempre que la próxima vez me dejéis pagar a mí</i>. Una condicional puede quedar suspendida, dejando la condición implícita sin necesidad de continuar la frase: <i>mientras no me lleves al sitio de siempre...</i>' },
@@ -35642,6 +36146,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:963', 'funciones:C1:964', 'funciones:C1:965', 'funciones:C1:966'],
   title: 'Aconsejar, advertir y amenazar en C1: "allá tú" cambia de sentido según el contexto',
   summary: '"Allá tú" aparece tanto al advertir (con preocupación genuina) como al amenazar (con matiz de resentimiento) — el mismo molde sirve para actos de habla muy distintos, y "como + subjuntivo" convierte una simple condición en amenaza según cómo se deje suspendida la frase.',
+  keywords: [
+    { es: 'Lo más recomendable es que…', en: 'The best thing is for you to… (+ subjunctive)' },
+    { es: 'Ni se te ocurra…', en: 'Don\'t even think about…' },
+    { es: 'Quedas avisado.', en: 'Consider yourself warned.' },
+    { es: 'Como no…, …', en: 'If you don\'t…, then… (a threat)' },
+    { es: 'Allá tú.', en: 'That\'s up to you. (advice or a threat, per context)' },
+    { es: 'Ten cuidado con…', en: 'Watch out for…' }
+  ],
   sections: [
     { h: 'Aconsejar: de la pregunta cortés a la advertencia tajante', html: '<i>¿(Me) aceptas un consejo?</i> pide permiso antes de aconsejar. <i>Lo más aconsejable/recomendable (en estos casos) es...</i> y <i>te sugeriría...</i> presentan el consejo con cierta distancia formal. <i>Lo único que puedo aconsejarte/recomendarte/sugerirte es que...</i> enfatiza que es la única opción que se le ocurre al hablante. <i>Siempre puedes/podrías/queda el recurso de...</i> ofrece una alternativa como último recurso: <i>siempre queda el recurso de ir de frente y decir toda la verdad</i>. <i>Ni se te ocurra...</i> es un consejo negativo muy tajante, casi una prohibición: <i>ni se te ocurra contárselo</i>.' },
     { h: 'Advertir: informar del riesgo sin implicar amenaza', html: '<i>Estás/quedas avisado/advertido</i> y <i>luego no digas que no te avisé/te advertí</i> señalan que la responsabilidad de lo que ocurra después recae en quien no siguió el aviso. <i>Allá tú...</i> y <i>tú verás/sabrás (lo que haces)</i> expresan aquí una preocupación genuina, dejando la decisión final al otro: <i>allá tú, pero si no te llevas un jersey, vas a pasar frío</i>.' },
@@ -35683,6 +36195,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:998', 'funciones:C1:999', 'funciones:C1:1001', 'funciones:C1:1002'],
   title: 'Reprochar y ofrecerse en C1: "¿no te da vergüenza?" y "cuenta conmigo"',
   summary: 'Reprochar en C1 va del reproche hipotético sobre el pasado ("si no hubieras cerrado la puerta...") a la pregunta acusadora que apela a la vergüenza ("¿no te da vergüenza?"), mientras que ofrecerse ayuda tiene su propia escala, de la formalidad institucional a la calidez del simple "cuenta conmigo".',
+  keywords: [
+    { es: '¿No te da vergüenza?', en: 'Aren\'t you ashamed?' },
+    { es: 'Si me hubieras avisado…', en: 'If you had told me…' },
+    { es: 'Podrías haberlo dicho.', en: 'You could have said so.' },
+    { es: 'Cuenta conmigo.', en: 'Count on me.' },
+    { es: 'Estoy a su disposición.', en: 'I am at your disposal. (formal)' },
+    { es: '¿Te echo una mano?', en: 'Shall I give you a hand?' }
+  ],
   sections: [
     { h: 'Reprochar valorando el comportamiento', html: '<i>Es/me parece vergonzoso/lamentable...</i> valora directamente una acción como reprochable: <i>son vergonzosos los espectáculos que das cada vez que salimos</i>. <i>¿Se puede saber por qué...?</i> pregunta con matiz de reproche acumulado. <i>¿Qué haces que (todavía)...?</i> reprocha una demora: <i>¿qué haces que todavía no estás listo?</i>.' },
     { h: 'Reprochar con hipótesis sobre el pasado', html: '<i>Si (no) hubieras..., (no)...</i> reprocha señalando una consecuencia que se habría evitado con otra acción pasada: <i>si no hubieras cerrado la puerta, habríamos oído los gritos</i> — la estructura misma es un reproche, no solo una condición.' },
@@ -35727,6 +36247,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:1029', 'funciones:C1:1031', 'funciones:C1:1033', 'funciones:C1:1034', 'funciones:C1:1035', 'funciones:C1:1037'],
   title: 'Tranquilizar y animar en C1: "el no ya lo tienes" y "no es el fin del mundo"',
   summary: 'Tranquilizar en C1 usa interjecciones repetidas ("bueno, bueno...") y locuciones que restan gravedad ("no es el fin del mundo"), mientras que animar recurre a una lógica implacable: si ya tienes el "no" por no intentarlo, arriesgarte no puede empeorar las cosas.',
+  keywords: [
+    { es: 'No te lo tomes a pecho.', en: 'Don\'t take it to heart.' },
+    { es: 'No es el fin del mundo.', en: 'It\'s not the end of the world.' },
+    { es: 'El no ya lo tienes.', en: 'The worst they can say is no.' },
+    { es: '¿A qué esperas?', en: 'What are you waiting for?' },
+    { es: 'Venga, hombre.', en: 'Come on now.' },
+    { es: 'la oportunidad', en: 'the opportunity' }
+  ],
   sections: [
     { h: 'Tranquilizar con interjecciones repetidas', html: '<i>Bueno, bueno...</i> y <i>venga, hombre/mujer</i> son interjecciones que calman con su propia repetición o con el apelativo, restando dramatismo a la situación.' },
     { h: 'Tranquilizar quitando importancia', html: '<i>No te lo tomes así</i> y <i>no te lo tomes tan en serio</i> piden reducir la gravedad percibida. <i>Tómatelo con calma/con humor/con paciencia...</i> ofrece una actitud alternativa concreta. <i>No es el fin del mundo</i> relativiza la situación desde la perspectiva más amplia posible.' },
@@ -36718,6 +37246,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:861', 'generos_discursivos:C1:862', 'generos_discursivos:C1:863'],
   title: 'Exponer un tema: presentar, desarrollar, concluir',
   summary: 'A good exposition earns the reader\'s attention before delivering information — with a definition, a striking general claim, a rhetorical question, or a concrete example — then develops each sub-point with its own toolkit (classification, analogy, citation) before closing with a conclusion that names what was actually established, not just "in conclusion, that\'s it."',
+  keywords: [
+    { es: 'A modo de introducción', en: 'By way of introduction' },
+    { es: 'A continuación se expondrá…', en: 'Next, … will be set out' },
+    { es: 'cabe destacar', en: 'it is worth highlighting' },
+    { es: 'En síntesis', en: 'In summary' },
+    { es: 'desarrollar', en: 'to develop, to expand on' },
+    { es: 'el apartado', en: 'the section' },
+    { es: 'concluir', en: 'to conclude' }
+  ],
   sections: [
     { h: 'Presentación: cómo abrir sin aburrir', html: 'El tema se presenta mediante una definición ("se entiende por..."), una afirmación general llamativa, una pregunta retórica, o un ejemplo concreto — nunca simplemente anunciando "voy a hablar de X".' },
     { h: 'Desarrollo: un recurso por sub-tema', html: 'Cada sub-tema se desarrolla con un recurso propio: clasificación ("consta de...", "se compone de..."), ejemplificación ("es el caso de..."), analogía ("es similar a...") o cita de una fuente ("X señala que...").' },
@@ -36759,6 +37296,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:927', 'generos_discursivos:C1:956', 'generos_discursivos:C1:957', 'generos_discursivos:C1:958'],
   title: 'Argumentar: de la cuestión polémica a la reserva final',
   summary: 'A strong argumentative essay does not just state a thesis and pile on evidence for it — it stages the strongest opposing view honestly (contraargumentación) before answering it, and closes with a reserva that admits the limits of its own conclusion rather than overselling it.',
+  keywords: [
+    { es: 'la cuestión polémica', en: 'the contested question' },
+    { es: 'cabe preguntarse si', en: 'one might ask whether' },
+    { es: 'conviene matizar que', en: 'it should be qualified that' },
+    { es: 'la reserva', en: 'the reservation, the caveat' },
+    { es: 'si bien', en: 'although (formal)' },
+    { es: 'por consiguiente', en: 'consequently' },
+    { es: 'la postura', en: 'the stance' }
+  ],
   sections: [
     { h: 'Cuestión polémica y tesis', html: 'Se abre con un hecho o afirmación controvertida que justifica escribir sobre el tema, seguida de la opinión o tesis propia y, a veces, una regla general que la resume en una frase.' },
     { h: 'Argumento, fuente y contraargumentación', html: 'Cada argumento puede apoyarse en una fuente citada; después, en vez de ignorar la postura contraria, se presenta con honestidad (contraargumentación) antes de rebatirla con un segundo argumento.' },
@@ -36803,6 +37349,16 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:950', 'generos_discursivos:C1:952'],
   title: 'El repertorio del ensayo argumentativo',
   summary: '"Asegurar" and "confesar" both introduce a claim, but they commit the writer very differently — one asserts flatly, the other concedes a point before qualifying it. Choosing the wrong verb from this repertoire can make a hedge sound like a flat assertion, or a concession sound like a retreat.',
+  keywords: [
+    { es: 'Se puede asegurar que…', en: 'It can be asserted that…' },
+    { es: 'Confieso que…', en: 'I confess that…' },
+    { es: 'Si excluimos…', en: 'If we set aside…' },
+    { es: 'ahora bien', en: 'that said' },
+    { es: 'no obstante', en: 'nevertheless' },
+    { es: 'en la medida en que', en: 'insofar as' },
+    { es: 'el planteamiento', en: 'the approach' },
+    { es: 'suponer', en: 'to represent, to amount to' }
+  ],
   sections: [
     { h: 'Constatar sin matizar, y matizar al constatar', html: 'La constatación asertiva ("asegurar", "considerar", "desde un punto de vista...") afirma sin reservas; la concesiva ("confesar que...") admite algo antes de matizarlo — no son intercambiables.' },
     { h: 'Retractarse y reconocer influencia', html: '"Renunciar a", "rechazar" retractan una postura previa; "lamentar" reconoce una postura ajena con la que se discrepa, sin negarle validez.' },
