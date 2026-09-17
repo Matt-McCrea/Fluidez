@@ -774,6 +774,18 @@ function checkProbes(l, tag) {
   var swv = (sw.match(/CACHE_VERSION\s*=\s*'([^']+)'/) || [])[1];
   var pv = (read('js/perf.js').match(/BUILD\s*=\s*'([^']+)'/) || [])[1];
   ok(swv && pv && swv === pv, `js/perf.js BUILD (${pv}) does not match sw.js CACHE_VERSION (${swv})`);
+  /* Agreeing with each other is not enough — they agreed perfectly while nine
+   * changed files sat behind a stale cache, so the app was live and invisible.
+   * The version has to match the CONTENT it is caching. */
+  try {
+    const bump = require('./bump-cache.js');
+    const want = bump.hash();
+    ok(swv === want,
+       `sw.js CACHE_VERSION (${swv}) is stale — cached files have changed since it was set. ` +
+       `Run: node tools/bump-cache.js   (expected ${want})`);
+  } catch (e) {
+    ok(false, 'could not check the cache version: ' + e.message);
+  }
 
   // load order: a data file must come before the js that reads its global
   const order = f => scripts.indexOf(f);

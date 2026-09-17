@@ -1,7 +1,12 @@
 /* ============================================================================
  * SERVICE WORKER — cache-first offline shell.
  *
- * Bump CACHE_VERSION on every deploy that changes a cached file. Every install
+ * CACHE_VERSION is DERIVED, not typed: it is a hash of the files listed in
+ * ASSETS. Run `node tools/bump-cache.js` after changing any of them, and
+ * tools/validate-content.js fails if you forget. It used to say "bump this on
+ * every deploy that changes a cached file", which is a human step, and it
+ * failed the way human steps do — nine changed files shipped behind a stale
+ * version, so the work was live and invisible.
  * gets a fresh cache name, so nothing lingers stale — the old cache is deleted
  * on activate. js/pwa.js listens for a waiting worker and shows the update
  * banner; the user's tap calls skipWaiting via postMessage.
@@ -9,7 +14,7 @@
  * ASSETS must mirror every <script>/<link> in index.html. No bundler here —
  * keep this list in sync by hand when a new data/js file is added there.
  * ========================================================================== */
-var CACHE_VERSION = 'v53';
+var CACHE_VERSION = 'c75db64b6';
 var CACHE_NAME = 'fluidez-' + CACHE_VERSION;
 
 var ASSETS = [
