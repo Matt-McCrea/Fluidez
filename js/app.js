@@ -31,9 +31,11 @@ window.App = (function () {
         window.Shell.openOverlay(false);
         window.Hub.renderErrors(host, backToShell);
         break;
+      /* Games has its own tab now. Anything that still asks App for it gets
+       * the tab, so there is one games surface rather than two that drift. */
       case 'games':
-        window.Shell.openOverlay(false);
-        window.Games.render(host, backToShell);
+        window.Shell.closeOverlay();
+        window.Shell.go('jugar');
         break;
       case 'home':
       default:

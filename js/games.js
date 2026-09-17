@@ -34,8 +34,20 @@ window.Games = (function () {
   function clear(n) { while (n && n.firstChild) n.removeChild(n.firstChild); }
 
   var exitAll = null;
+  /* Games is a tab now (js/shell.js), so the LIST lives in a tab panel while a
+   * ROUND still takes the whole screen — nobody wants a tab bar under a running
+   * clock. `inTab` is which of those two worlds we are in: set when the tab
+   * mounts the list, cleared when something opens the list as an overlay. */
+  var inTab = false;
   function host() { return document.getElementById('stage-host'); }
-  function backToList() { render(host(), exitAll); }
+  function roundHost() {
+    if (window.Shell) window.Shell.openOverlay(false);
+    return host();
+  }
+  function backToList() {
+    if (inTab && window.Shell) { window.Shell.closeOverlay(); window.Shell.go('jugar'); return; }
+    render(host(), exitAll);
+  }
 
   /* One accent per game. Colour is what makes the Games page feel like a
    * shelf of different things rather than one list repeated six times, and it
@@ -81,7 +93,7 @@ window.Games = (function () {
   function hasVoice() { return !!(window.Speak && window.Speak.available()); }
 
   function start(g, extra) {
-    var h = host();
+    var h = roundHost();
     clear(h);
     if (g.custom) return runEmparejar(h, g);
     var cfg = {
@@ -145,7 +157,11 @@ window.Games = (function () {
   }
 
   // ---- the landing page ----------------------------------------------------
+  /* Mounted by the Jugar tab. No `back`: the tab bar is already on screen. */
+  function renderTab(h) { inTab = true; render(h, null); }
+
   function render(h, back) {
+    if (back) inTab = false;
     exitAll = back;
     clear(h);
     h.style.removeProperty('--game');
@@ -157,11 +173,15 @@ window.Games = (function () {
     titles.appendChild(el('h1', null, 'Juegos'));
     titles.appendChild(el('p', 'g-page-sub', 'Cinco minutos. A ver si superas tu marca.'));
     head.appendChild(titles);
-    var out = el('button', 'g-exit', '✕');
-    out.type = 'button';
-    out.setAttribute('aria-label', 'Salir');
-    out.addEventListener('click', function () { if (back) back(); });
-    head.appendChild(out);
+    /* Only when this is an overlay. In its own tab the tab bar is the way
+     * out, and a ✕ that dumps you on Inicio is a worse one. */
+    if (back) {
+      var out = el('button', 'g-exit', '✕');
+      out.type = 'button';
+      out.setAttribute('aria-label', 'Salir');
+      out.addEventListener('click', function () { back(); });
+      head.appendChild(out);
+    }
     page.appendChild(head);
 
     /* The rating sits above everything because it is the only number here
@@ -225,7 +245,8 @@ window.Games = (function () {
       mute.type = 'button';
       mute.addEventListener('click', function () {
         GS.setSilent(!GS.silent());
-        render(host(), exitAll);
+        if (inTab && window.Shell) window.Shell.refresh('jugar');
+        else render(host(), exitAll);
       });
       card.appendChild(mute);
     }
@@ -251,7 +272,7 @@ window.Games = (function () {
   }
 
   function startDaily() {
-    var h = host();
+    var h = roundHost();
     clear(h);
     window.GameRound.run(h, {
       key: GS.dailyKey(), title: 'Reto de hoy', kind: 'mixed', duration: 90000,
@@ -310,7 +331,7 @@ window.Games = (function () {
     head.appendChild(el('span', 'hg-eyebrow', 'Juegos'));
     var all = el('button', 'hg-all', 'Todos ›');
     all.type = 'button';
-    all.addEventListener('click', function () { window.App.go('games'); });
+    all.addEventListener('click', function () { window.Shell.go('jugar'); });
     head.appendChild(all);
     card.appendChild(head);
 
@@ -778,7 +799,7 @@ window.Games = (function () {
     tick();
   }
 
-  return { render: render, open: open, openWeak: openWeak, openTense: openTense,
+  return { render: render, renderTab: renderTab, open: open, openWeak: openWeak, openTense: openTense,
            homeCard: homeCard, tenseCard: tenseCard, tenseCheckCard: tenseCheckCard,
            topicLabel: topicLabel, GAMES: GAMES };
 })();

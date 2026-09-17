@@ -17,11 +17,20 @@
  * ========================================================================== */
 window.Shell = (function () {
   var UI = window.UI;
-  var TABS = ['inicio', 'practicar', 'progreso', 'palabras', 'mas'];
+  /* Jugar sits second, next to Inicio, because those two are the whole app on
+   * most days: the session when there is time, a game against your own record
+   * when there is not. It used to be an overlay behind a single button on one
+   * home card, which is a strange place to keep the part people replay. */
+  var TABS = ['inicio', 'jugar', 'practicar', 'progreso', 'palabras', 'mas'];
   var TAB_META = {
     inicio:    { icon: '🏠', label: 'Inicio' },
+    jugar:     { icon: '🎮', label: 'Jugar' },
     practicar: { icon: '🧩', label: 'Practicar' },
-    progreso:  { icon: '📊', label: 'Lecciones' },
+    /* Labelled for what the tab holds. It said "Lecciones", which promised a
+     * lesson list and delivered stat tiles, an SRS distribution and a
+     * heatmap — so the one screen that answers "am I getting better?" was
+     * filed under a name that answers a different question. */
+    progreso:  { icon: '📊', label: 'Progreso' },
     palabras:  { icon: '➕', label: 'Palabras' },
     mas:       { icon: '⋯', label: 'Más' }
   };
@@ -56,10 +65,31 @@ window.Shell = (function () {
     var doneToday = window.SRS && p.lastDay === window.SRS.today();
     var errors = window.ErrorLog ? window.ErrorLog.cards().length : 0;
 
+    var rh = (window.Session && window.Session.rhythm) ? window.Session.rhythm() : null;
+
+    /* Somebody coming back after a fortnight gets a greeting, not a reckoning.
+     * The old strip told them their streak was 0 and their session was
+     * "pendiente", which is a bill, and then asked them to study. */
+    if (rh && rh.away !== null && rh.away >= 7) {
+      var wb = UI.el('div', 'welcome-back');
+      wb.appendChild(UI.el('b', null, T('Bienvenido de nuevo.', 'Welcome back.')));
+      wb.appendChild(UI.el('span', null,
+        T('Tu sitio está guardado — seguimos donde lo dejaste.',
+          'Your place is saved — we pick up exactly where you left off.')));
+      host.appendChild(wb);
+    }
+
     var strip = UI.el('div', 'status-strip');
-    strip.appendChild(UI.el('span', 'status-item', '🔥 ' + (p.streak || 0) + T(p.streak === 1 ? ' día' : ' días', p.streak === 1 ? ' day' : ' days')));
+    if (rh) {
+      strip.appendChild(UI.el('span', 'status-item',
+        '🔥 ' + rh.days30 + T(' de 30 días', ' of 30 days')));
+    }
     strip.appendChild(UI.el('span', 'status-item', due + T(due === 1 ? ' pendiente' : ' pendientes', due === 1 ? ' due' : ' due')));
-    strip.appendChild(UI.el('span', 'status-item' + (doneToday ? ' done' : ''), doneToday ? T('✓ Hecho hoy', '✓ Done today') : T('Sesión pendiente', 'Not done yet')));
+    /* "Sesión pendiente" read as a debt. It is an invitation until you take
+     * it and a receipt afterwards, and neither of those is an outstanding
+     * obligation. */
+    strip.appendChild(UI.el('span', 'status-item' + (doneToday ? ' done' : ''),
+      doneToday ? T('✓ Hecho hoy', '✓ Done today') : T('Listo cuando quieras', 'Ready when you are')));
     host.appendChild(strip);
 
     var isActive = window.Session && window.Session.isActive && window.Session.isActive();
@@ -67,6 +97,44 @@ window.Shell = (function () {
     try { t = window.Session ? window.Session.today() : null; } catch (e) { t = null; }
 
     // ---- today's card ----
+    /* Two cards, not one. The session card is an invitation while there is a
+     * session to take; once it is done it used to sit there unchanged, still
+     * saying "Empezar →", so the one thing the app offered on a second visit
+     * was to repeat the thing you had just finished. The done state is its
+     * own card now, and its job is to hand you somewhere worth going. */
+    if (doneToday && !isActive) {
+      var dc = UI.el('div', 'today-card done-card');
+      dc.appendChild(UI.el('div', 'eyebrow done', T('Hecho por hoy', 'Done for today')));
+      if (t && t.lessonTitle) {
+        dc.appendChild(UI.el('div', 'done-what',
+          T('Has hecho ', 'You did ') + '<b>' + t.lessonTitle + '</b>'));
+      }
+      dc.appendChild(UI.el('p', 'done-next muted',
+        due ? T('Lo de abajo no cuesta nada y cuenta igual.',
+                'What follows is short, and it still counts.')
+            : T('El curso vuelve mañana con material nuevo.',
+                'The course comes back tomorrow with new material.')));
+
+      /* Review is the one thing that is genuinely worth doing twice in a day,
+       * because the scheduler asked for it — so it gets the button. */
+      if (due) {
+        var rb = UI.el('button', 'primary-btn today-go');
+        rb.type = 'button';
+        rb.textContent = T('Repasar ' + due + ' →', 'Review ' + due + ' →');
+        rb.addEventListener('click', function () { window.App.go('session', 'rapido'); });
+        var rr = UI.el('div', 'today-go-row');
+        rr.appendChild(rb);
+        rr.appendChild(UI.el('span', 'muted small', T('unos 4 min', 'about 4 min')));
+        dc.appendChild(rr);
+      }
+
+      var redo = UI.el('button', 'linkish', T('Repetir la sesión de hoy', 'Do today\'s session again'));
+      redo.type = 'button';
+      redo.addEventListener('click', function () { window.App.go('session', 'diaria'); });
+      dc.appendChild(redo);
+      host.appendChild(dc);
+    } else {
+
     var card = UI.el('div', 'today-card');
     card.appendChild(UI.el('div', 'eyebrow', isActive ? T('Sesión a medias', 'Session in progress') : T('Tu sesión de hoy', 'Today')));
 
@@ -113,6 +181,7 @@ window.Shell = (function () {
       card.appendChild(skip);
     }
     host.appendChild(card);
+    }
 
     /* Order on this screen is an argument about what the learner should do
      * next. Today's session first, because that is the course. Then GAMES,
@@ -228,6 +297,7 @@ window.Shell = (function () {
     var toInicio = function () { go('inicio'); };
     switch (name) {
       case 'inicio':    renderInicio(host); break;
+      case 'jugar':     window.Games.renderTab(host); break;
       case 'practicar': window.Practice.render(host, toInicio); break;
       case 'progreso':  window.Progress.render(host, toInicio); break;
       case 'palabras':  window.UserWords.render(host, toInicio); break;

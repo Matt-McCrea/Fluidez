@@ -29,6 +29,9 @@
 
 /* ---------------------------------------------------------------- the page */
 .g-page { --game: var(--accent); }
+/* In its own tab the page sits inside the normal scroll area, so it needs the
+ * breathing room the overlay used to give it. */
+.tab-panel .g-page { padding: 18px 0 8px; }
 .g-page-head { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px; }
 .g-page-head h1 { margin: 0; font-size: 1.85rem; letter-spacing: -.01em; }
 .g-page-sub { margin: 4px 0 0; color: var(--muted); font-size: .95rem; }
@@ -547,4 +550,18 @@
   .g-over-score { font-size: 3.2rem; }
   .g-score { font-size: 1.7rem; }
   .g-speaker { width: 64px; height: 64px; min-height: 64px; font-size: 1.45rem; }
+}
+
+/* ---- reduced motion ------------------------------------------------------
+ * Every transition and keyframe in here is feedback, not decoration: the
+ * score ticking up, a combo landing, the record banner. Somebody who has
+ * asked the OS for less movement still needs the feedback, so these are
+ * shortened to near-instant rather than removed. */
+@media (prefers-reduced-motion: reduce) {
+  .g-page *, .g-round *, .g-over * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

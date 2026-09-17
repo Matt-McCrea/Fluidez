@@ -355,9 +355,42 @@ window.Session = (function () {
     p.history = p.history || [];
     if (p.history.indexOf(day) === -1) p.history.push(day);
     if (p.lastDay === day) { saveProg(p); return p; }
+    /* `streak` is still written for anything that reads an old save, but
+     * nothing in the UI shows it any more — see rhythm(). */
     p.streak = (p.lastDay === day - 1) ? (p.streak || 0) + 1 : 1;
     p.lastDay = day; p.total = (p.total || 0) + 1;
     saveProg(p); return p;
+  }
+
+  /* ---- rhythm, which replaced the streak ---------------------------------
+   * A consecutive-day streak reset to 1 on a single missed day, so a learner
+   * forty days in who had one bad Tuesday was shown the same number as
+   * somebody who started yesterday. That is a punishment for a life event,
+   * and it is the opposite of what a course measured in months wants.
+   *
+   * js/gamescore.js had already worked this out for the games — "no streak
+   * that punishes a missed day" — so the app disagreed with itself and the
+   * punishing half was the one on the home screen.
+   *
+   * Days practised in the last thirty cannot be destroyed by one miss, still
+   * moves every day you turn up, and is a truer picture of a habit. The
+   * history it reads has been recorded all along for the heatmap. */
+  function rhythm() {
+    var p = loadProg(), day = dayNumber();
+    var hist = p.history || [];
+    var days30 = 0, last = null;
+    for (var i = 0; i < hist.length; i++) {
+      var d = hist[i];
+      if (d > day - 30 && d <= day) days30++;
+      if (last === null || d > last) last = d;
+    }
+    return {
+      days30: days30,
+      total: p.total || 0,
+      lastDay: last,
+      away: last === null ? null : day - last,   // days since the last session
+      today: last === day
+    };
   }
 
   // ---- rendering ---------------------------------------------------------
@@ -455,7 +488,9 @@ window.Session = (function () {
     var wrap = UI.el('div', 'panel intro complete');
     wrap.appendChild(UI.el('div', 'big-check', '✓'));
     wrap.appendChild(UI.el('h1', null, T('Sesión terminada', 'Session done')));
-    wrap.appendChild(UI.el('div', 'streak-badge', '🔥 ' + (p.streak || 1) + (p.streak === 1 ? ' día seguido' : ' días seguidos')));
+    var rh = rhythm();
+    wrap.appendChild(UI.el('div', 'streak-badge',
+      '🔥 ' + rh.days30 + T(' de los últimos 30 días', ' of the last 30 days')));
     var r = ctx.results;
     var lines = [];
     if (r.review) lines.push('Reviewed <b>' + r.review.seen + '</b> items — ' + r.review.correct + ' right');
@@ -513,6 +548,7 @@ window.Session = (function () {
     today: today,
     skipLesson: skipLesson,
     modes: function () { return [MODES.rapido, MODES.corto, MODES.diaria, MODES.larga]; },
+    rhythm: rhythm,
     mode: function () { return modeDef(); },
     resume: function () { host = document.getElementById('stage-host'); bar = document.getElementById('session-progress-fill'); if (idx >= 0 && ctx) runStage(); else start(); },
     isActive: function () { return idx >= 0 && idx < stages().length; },

@@ -79,7 +79,10 @@ window.Progress = (function () {
     var wordsKnown = ids.filter(function (k) { return /^(v:|cap:)/.test(k); }).length;
     var due = window.Hub ? S.dueCount(window.Hub.reviewPool()) : 0;
     var tiles = UI.el('div', 'stat-row');
-    tiles.appendChild(tile('🔥 ' + (p.streak || 0), 'day streak'));
+    /* Days practised in the last 30, not a consecutive streak — see
+     * Session.rhythm(). One missed Tuesday should not zero a month. */
+    var rh = (window.Session && window.Session.rhythm) ? window.Session.rhythm() : null;
+    tiles.appendChild(tile('🔥 ' + (rh ? rh.days30 : 0), 'days in the last 30'));
     tiles.appendChild(tile(p.total || 0, 'sessions done'));
     tiles.appendChild(tile(wordsKnown, 'words learned'));
     tiles.appendChild(tile(due, 'due today'));
