@@ -136,19 +136,55 @@ window.Selector = (function () {
     runDeck(host, title, cards, 'Nothing to practise here yet — come back once you\'ve met a few things.');
   }
 
-  // ---- Por tema -------------------------------------------------------------
+  /* ---- Por tema ------------------------------------------------------------
+   * Grouped by `theme`, NOT by `cat`, and the difference was the whole problem
+   * with this screen. `cat` carries two taxonomies at once: the 20 PCIC
+   * nociones the corpus is filed under, AND the 31 small English buckets the
+   * original seed vocabulary shipped in (colors, weather, kitchen...).
+   * Chipping off it produced 51 chips, 31 of them stubs of five to forty
+   * words, so the screen read as "sparse for some topics, big for others" when
+   * in truth every theme holds 115-408 words. `cat` still earns its keep
+   * elsewhere: it is how the beginner path cuts vocabulary into teachable
+   * lessons (js/progress.js), where small IS the point.
+   *
+   * The seed rows carry a theme now, except ~112 that PCIC files as nociones
+   * GENERALES rather than especificas - numbers, colours, question words,
+   * everyday quantifiers. Those are not a topic and are not pretended to be
+   * one; they group together at the end, which also hands A1 - where most
+   * themes are still thin - the one chip there worth playing.
+   *
+   * Biggest first: the count is on the chip, and somebody choosing a theme to
+   * grind wants to see what there is of it. */
+  var GENERAL_KEY = '_general';
+
+  function themeLabel(key) {
+    if (key === GENERAL_KEY) return UI.t('Lo esencial', 'Everyday essentials');
+    var t = window.TAXONOMY ? window.TAXONOMY.theme(key) : null;
+    // `short`, never `es` — `es` is the PCIC inventory heading, which is a
+    // traceability tag and reads like one on a button.
+    return t ? UI.t(t.short || t.es, t.en) : (CAT_LABEL[key] || key);
+  }
+
   function showThemePicker(host) {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h2', null, UI.t('Por tema', 'By topic')));
-    wrap.appendChild(UI.el('p', 'muted', 'Pick a theme — this round is only that theme\'s words.'));
+    wrap.appendChild(UI.el('p', 'muted', UI.t('Elige un tema — la ronda será solo de ese tema.',
+                                               'Pick a theme — this round is only that theme\'s words.')));
     var pool = masterPool();
-    var byCat = {};
-    pool.forEach(function (it) { if (it.kind === 'vocab') (byCat[it.cat] = byCat[it.cat] || []).push(it); });
+    var byTheme = {};
+    pool.forEach(function (it) {
+      if (it.kind !== 'vocab') return;
+      var k = it.theme || GENERAL_KEY;
+      (byTheme[k] = byTheme[k] || []).push(it);
+    });
     var chips = UI.el('div', 'chip-row');
-    Object.keys(byCat).sort(function (a, b) { return label(a).localeCompare(label(b)); }).forEach(function (cat) {
-      var c = UI.el('button', 'topic-chip', label(cat) + ' · ' + byCat[cat].length); c.type = 'button';
-      c.addEventListener('click', function () { runFocusOnly(host, byCat[cat], 'Por tema · ' + label(cat)); });
+    Object.keys(byTheme).sort(function (a, b) {
+      return byTheme[b].length - byTheme[a].length || themeLabel(a).localeCompare(themeLabel(b));
+    }).forEach(function (key) {
+      var name = themeLabel(key);
+      var c = UI.el('button', 'topic-chip', name + ' · ' + byTheme[key].length); c.type = 'button';
+      c.addEventListener('click', function () { runFocusOnly(host, byTheme[key], 'Por tema · ' + name); });
       chips.appendChild(c);
     });
     wrap.appendChild(chips);

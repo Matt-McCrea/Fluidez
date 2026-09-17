@@ -148,28 +148,34 @@ window.REGISTERS = [
 /* ---- THEMES — the 20 PCIC "nociones específicas", and the themed tracks
  * a learner can grind for a week (employment, climate, religion…). `n` is the
  * PCIC section number, so content can be traced back to the inventory.
+ *
+ * `es` is the inventory heading verbatim — that is what makes a tag traceable,
+ * and it is not something anybody taps. "Individuo: dimensión perceptiva y
+ * anímica" is a section of a curriculum document, not a topic a learner picks
+ * to study. `short` is the learner-facing name, and every surface that offers
+ * a theme as a CHOICE uses it.
  * ========================================================================== */
 window.THEMES = [
-  { id: 'cuerpo',      n: 1,  es: 'Individuo: dimensión física',              en: 'Body & appearance' },
-  { id: 'caracter',    n: 2,  es: 'Individuo: dimensión perceptiva y anímica', en: 'Character & feeling' },
-  { id: 'identidad',   n: 3,  es: 'Identidad personal',                        en: 'Personal identity' },
-  { id: 'relaciones',  n: 4,  es: 'Relaciones personales',                     en: 'Relationships' },
-  { id: 'alimentacion', n: 5, es: 'Alimentación',                              en: 'Food & eating' },
-  { id: 'educacion',   n: 6,  es: 'Educación',                                 en: 'Education' },
-  { id: 'trabajo',     n: 7,  es: 'Trabajo',                                   en: 'Work & employment' },
-  { id: 'ocio',        n: 8,  es: 'Ocio',                                      en: 'Leisure' },
-  { id: 'medios',      n: 9,  es: 'Información y medios de comunicación',      en: 'Media & information' },
-  { id: 'vivienda',    n: 10, es: 'Vivienda',                                  en: 'Housing' },
-  { id: 'servicios',   n: 11, es: 'Servicios',                                 en: 'Services' },
-  { id: 'compras',     n: 12, es: 'Compras, tiendas y establecimientos',       en: 'Shopping' },
-  { id: 'salud',       n: 13, es: 'Salud e higiene',                           en: 'Health' },
-  { id: 'viajes',      n: 14, es: 'Viajes, alojamiento y transporte',          en: 'Travel & transport' },
-  { id: 'economia',    n: 15, es: 'Economía e industria',                      en: 'Economy & industry' },
-  { id: 'ciencia',     n: 16, es: 'Ciencia y tecnología',                      en: 'Science & technology' },
-  { id: 'politica',    n: 17, es: 'Gobierno, política y sociedad',             en: 'Politics & society' },
-  { id: 'arte',        n: 18, es: 'Actividades artísticas',                    en: 'Arts' },
-  { id: 'religion',    n: 19, es: 'Religión y filosofía',                      en: 'Religion & philosophy' },
-  { id: 'naturaleza',  n: 20, es: 'Geografía y naturaleza',                    en: 'Geography & nature' }
+  { id: 'cuerpo',      n: 1,  es: 'Individuo: dimensión física',              en: 'Body & appearance', short: 'El cuerpo' },
+  { id: 'caracter',    n: 2,  es: 'Individuo: dimensión perceptiva y anímica', en: 'Character & feeling', short: 'Carácter y ánimo' },
+  { id: 'identidad',   n: 3,  es: 'Identidad personal',                        en: 'Personal identity', short: 'Identidad' },
+  { id: 'relaciones',  n: 4,  es: 'Relaciones personales',                     en: 'Relationships', short: 'Relaciones' },
+  { id: 'alimentacion', n: 5, es: 'Alimentación',                              en: 'Food & eating', short: 'Comida' },
+  { id: 'educacion',   n: 6,  es: 'Educación',                                 en: 'Education', short: 'Educación' },
+  { id: 'trabajo',     n: 7,  es: 'Trabajo',                                   en: 'Work & employment', short: 'Trabajo' },
+  { id: 'ocio',        n: 8,  es: 'Ocio',                                      en: 'Leisure', short: 'Ocio' },
+  { id: 'medios',      n: 9,  es: 'Información y medios de comunicación',      en: 'Media & information', short: 'Medios' },
+  { id: 'vivienda',    n: 10, es: 'Vivienda',                                  en: 'Housing', short: 'Vivienda' },
+  { id: 'servicios',   n: 11, es: 'Servicios',                                 en: 'Services', short: 'Servicios' },
+  { id: 'compras',     n: 12, es: 'Compras, tiendas y establecimientos',       en: 'Shopping', short: 'Compras' },
+  { id: 'salud',       n: 13, es: 'Salud e higiene',                           en: 'Health', short: 'Salud' },
+  { id: 'viajes',      n: 14, es: 'Viajes, alojamiento y transporte',          en: 'Travel & transport', short: 'Viajes' },
+  { id: 'economia',    n: 15, es: 'Economía e industria',                      en: 'Economy & industry', short: 'Economía' },
+  { id: 'ciencia',     n: 16, es: 'Ciencia y tecnología',                      en: 'Science & technology', short: 'Ciencia y tecnología' },
+  { id: 'politica',    n: 17, es: 'Gobierno, política y sociedad',             en: 'Politics & society', short: 'Política y sociedad' },
+  { id: 'arte',        n: 18, es: 'Actividades artísticas',                    en: 'Arts', short: 'Arte' },
+  { id: 'religion',    n: 19, es: 'Religión y filosofía',                      en: 'Religion & philosophy', short: 'Religión' },
+  { id: 'naturaleza',  n: 20, es: 'Geografía y naturaleza',                    en: 'Geography & nature', short: 'Naturaleza' }
 ];
 
 /* ---- lookups -------------------------------------------------------------- */
