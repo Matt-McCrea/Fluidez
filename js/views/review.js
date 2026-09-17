@@ -133,13 +133,32 @@ window.StageReview = (function () {
     var fresh = pr.newPerDay;
     if (ctx && ctx.mode === 'rapido') { cap = Math.min(cap, 10); fresh = 0; }
     else if (ctx && ctx.mode === 'corto') { cap = Math.min(cap, 15); }
-    /* Under a theme focus the daily new-word drip comes from that theme first.
-     * This is the channel that matters most: it runs EVERY session, where the
-     * lesson ladder teaches a theme on only a handful of days in the whole
-     * course. A preference, not a filter — see SRS.batch. */
+    /* WHICH new words today teaches.
+     *
+     * Two preferences, and the first is the one that matters. The words are
+     * drawn from the passage this same session will put in front of the
+     * learner two stages later (Repasar is stage 1, Comprender is stage 3),
+     * so a word met as a flashcard at 9:01 is met again in a sentence at
+     * 9:06. Before this they were independent draws: measured over a themed
+     * week, 7 of 336 words taught appeared in the reading that taught-day —
+     * 2%. The passages were never short of material, they were simply never
+     * consulted. The average passage already carries 27.6 words from the
+     * taught corpus, 37 at B2.
+     *
+     * Second, and weaker: a running theme focus (js/focus.js).
+     *
+     * Scored rather than filtered, so the tiers degrade instead of starving.
+     * Most of a passage's 27.6 words are ones the learner already knows —
+     * they are TAUGHT words, not fresh ones — so on any given day only a few
+     * may be both in the text and still new. Everything below simply falls
+     * through to the ordinary pool. */
     var fTheme = window.Focus ? window.Focus.theme() : null;
-    var batch = S.batch(all, cap, fresh, !pr.orderedVocab,
-      fTheme ? function (it) { return it.theme === fTheme; } : null);
+    var px = (ctx && ctx.passage && ctx.passage.text && window.LexMatch)
+      ? window.LexMatch.index(ctx.passage.text) : null;
+    var prefer = (px || fTheme) ? function (it) {
+      return (px && it.es && px.has(it.es) ? 2 : 0) + (fTheme && it.theme === fTheme ? 1 : 0);
+    } : null;
+    var batch = S.batch(all, cap, fresh, !pr.orderedVocab, prefer);
     batch.forEach(function (it) { S.enrol(it.id); });
 
     // recognition distractors: other English glosses of the same kind

@@ -318,6 +318,57 @@ window.Session = (function () {
       }
     }
 
+    /* Among passages that are equally right on grammar and theme, prefer the
+     * one that would TEACH the most — the most words the learner has no SRS
+     * state for yet.
+     *
+     * This is the other half of drawing the day's new words from the day's
+     * passage (js/views/review.js). With the passage chosen purely on grammar
+     * and theme, that preference decays as the learner advances: measured at
+     * 100% same-day overlap on an empty SRS, 72% with half the vocabulary
+     * known, 17% at 80% and 0% at 95%, because by then almost nothing left in
+     * the text is still new. Choosing the passage for its unmet words holds
+     * the overlap up instead of letting it fade exactly when the learner has
+     * the most Spanish to build on.
+     *
+     * Scored over the candidates the tiers already produced, never across
+     * them: this decides WHICH of the right passages, never whether to take a
+     * wrong one. Ties keep the seeded rng, so the choice still rotates and a
+     * first-time lesson is still reproducible on reload. */
+    var unmet = Object.create(null);
+    if (window.LexMatch && window.SRS) {
+      (window.VOCAB || []).forEach(function (w) {
+        if (!w.es || window.SRS.isEnrolled('v:' + w.es + ':meaning')) return;
+        var b = window.LexMatch.base(w.es);
+        if (b.length >= 3) unmet[b] = 1;
+      });
+    }
+    function teaches(p) {
+      if (!window.LexMatch || !p || !p.text) return 0;
+      var seen = Object.create(null), n = 0;
+      window.LexMatch.norm(p.text).split(' ').forEach(function (t) {
+        if (!t || t.length < 3) return;
+        var cands = [t];
+        if (/es$/.test(t)) cands.push(t.slice(0, -2));
+        if (/s$/.test(t)) cands.push(t.slice(0, -1));
+        for (var i = 0; i < cands.length; i++) {
+          if (unmet[cands[i]] && !seen[cands[i]]) { seen[cands[i]] = 1; n++; return; }
+        }
+      });
+      return n;
+    }
+    function richest(pool) {
+      if (!pool || !pool.length) return null;
+      // Bounded: this runs on a phone, once per session.
+      var cand = pool.length > 40 ? sample(pool, 40, rng) : pool;
+      var best = -1, top = [];
+      cand.forEach(function (p) {
+        var n = teaches(p);
+        if (n > best) { best = n; top = [p]; } else if (n === best) top.push(p);
+      });
+      return pick(top, rng);
+    }
+
     return {
       day: day,
       dayIndex: dayIndex,
@@ -327,7 +378,7 @@ window.Session = (function () {
       dateLabel: new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' }),
       lesson: lesson,
       mode: mode,
-      passage: pick(storyPool.length ? storyPool : passages, rng),
+      passage: richest(storyPool.length ? storyPool : passages),
       passageTier: storyTier,
       applyItems: sampleAligned(apply, focus, big ? 12 : (mode === 'corto' ? 4 : 6), clozeMatchesFocus, rng),
       writeTasks: produce,

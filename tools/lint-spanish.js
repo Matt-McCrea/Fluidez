@@ -99,7 +99,11 @@ if (!only || only === 'strand') (window.STRAND_LESSONS || []).forEach(l => {
 // Both spellings are real Spanish; the engine only proves the second one
 // exists, not that the first is wrong. Add here — never by deleting the
 // accent — when a genuinely correct word gets flagged this way.
-const KNOWN_CORRECT = new Set(['fábricas']);
+// Proper nouns collide the same way and are the commoner case: a person
+// signing a letter is not a conjugation. `Tomás` deaccents onto tomar's tú
+// form, and the tokenizer has already lowercased away the capital that would
+// have settled it.
+const KNOWN_CORRECT = new Set(['fábricas', 'tomás']);
 const accentErrors = [], unknown = new Map();
 let tokens = 0;
 texts.forEach(({ where, text }) => {

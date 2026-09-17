@@ -173,12 +173,16 @@ window.SRS = (function () {
   //   shuffleFresh: shuffle new items (default true). Pass false to introduce
   //                 them in the pool's given order (beginners: easiest-first).
   // Returns the chosen items (due + graduated spot-checks, then new).
-  /* `freshPrefer` (optional) sorts the NEW items so ones it likes come first.
+  /* `freshPrefer` (optional) orders the NEW items so ones it likes come first.
    * It cannot be done at the call site: fresh is shuffled here for everyone
    * but the paced beginner, so any order imposed beforehand is thrown away.
-   * A partition rather than a filter, because it is a preference — when the
-   * preferred set runs short the batch still fills, and a stable partition
-   * leaves the beginner's rank order intact inside each half. */
+   *
+   * It returns a SCORE, higher first — a boolean works unchanged, since true
+   * and false coerce to 1 and 0. Ordering rather than filtering, because it is
+   * a preference: when the preferred set runs short the batch still fills to
+   * maxNew instead of quietly shrinking the day's intake. The sort carries an
+   * explicit index tiebreak so it is stable on any engine, which is what keeps
+   * the paced beginner's rank order intact inside each score tier. */
   function batch(pool, maxDue, maxNew, shuffleFresh, freshPrefer) {
     var s = load();
     var due = [], fresh = [], grad = [];
@@ -207,9 +211,9 @@ window.SRS = (function () {
     var spotChecks = grad.slice(0, Math.max(0, Math.round(cap * SPOT_CHECK_RATE)));
     if (shuffleFresh !== false) shuffle(fresh);
     if (freshPrefer) {
-      var want = [], rest = [];
-      fresh.forEach(function (it) { (freshPrefer(it) ? want : rest).push(it); });
-      fresh = want.concat(rest);
+      fresh = fresh.map(function (it, i) { return { it: it, s: Number(freshPrefer(it)) || 0, i: i }; })
+                   .sort(function (a, b) { return b.s - a.s || a.i - b.i; })
+                   .map(function (x) { return x.it; });
     }
     var freshChosen = fresh.slice(0, maxNew == null ? 0 : maxNew);
     return shuffle(chosen.concat(spotChecks)).concat(freshChosen);
