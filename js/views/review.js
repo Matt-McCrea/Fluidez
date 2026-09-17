@@ -143,13 +143,25 @@ window.StageReview = (function () {
 
     if (!queue.length) {
       var empty = UI.el('div', 'panel');
-      empty.appendChild(UI.el('h2', null, 'Nothing due today'));
+      empty.appendChild(UI.el('h2', null, UI.t('Nada que repasar hoy', 'Nothing to check today')));
       empty.appendChild(UI.el('p', 'muted', ctx && ctx.mode === 'rapido'
         ? 'Your review queue is clear. New items are added as you learn.'
         : 'Your review queue is clear — new items are added as you learn. On to today\'s lesson.'));
       empty.appendChild(UI.nextBtn('Continuar →', function () { ctx.results.review = { seen: 0, correct: 0 }; done(); }));
       host.appendChild(empty); return;
     }
+
+    /* Review was a stage you got through before the lesson — it opened
+     * straight onto a card with a counter. It is the highest-value minutes in
+     * the session and it read as the toll for them, so it gets a line saying
+     * what it is: not revision, a check of what is still there. The number is
+     * the honest version of "this will be short". */
+    var opener = UI.el('div', 'review-opener');
+    opener.appendChild(UI.el('b', null, UI.t('¿Te acuerdas?', 'Still remember these?')));
+    opener.appendChild(UI.el('span', null,
+      queue.length + UI.t(queue.length === 1 ? ' cosa que ya has visto.' : ' cosas que ya has visto.',
+                          queue.length === 1 ? ' thing you have met before.' : ' things you have met before.')));
+    host.appendChild(opener);
 
     var card = UI.el('div', 'panel review-card');
     var stats = UI.el('div', 'muted review-stats');
@@ -280,8 +292,12 @@ window.StageReview = (function () {
       ctx.results.review = { seen: seen, correct: correct };
       UI.clear(host);
       var wrap = UI.el('div', 'panel');
-      wrap.appendChild(UI.el('h2', null, 'Repaso terminado'));
-      wrap.appendChild(UI.el('p', null, 'You got <b>' + correct + '</b> of <b>' + seen + '</b>. Misses come back tomorrow; the rest move further out.'));
+      wrap.appendChild(UI.el('h2', null, correct === seen
+        ? UI.t('Todas.', 'All of them.')
+        : UI.t('Repaso hecho', 'Still there')));
+      wrap.appendChild(UI.el('p', null,
+        UI.t('Te acordabas de <b>' + correct + '</b> de <b>' + seen + '</b>. Las que no vuelven mañana; el resto se alejan.',
+             'You still had <b>' + correct + '</b> of <b>' + seen + '</b>. The ones you missed come back tomorrow; the rest move further out.')));
       wrap.appendChild(UI.nextBtn('Continuar →', done));
       host.appendChild(wrap);
     }

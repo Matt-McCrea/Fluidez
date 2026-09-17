@@ -776,6 +776,68 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
 /* Prose should not run the full 840px on a wide screen. */
 .doc-summary, .unit-goal { max-width:62ch; }
 
+/* ---- review: the opening line ---- */
+.review-opener {
+  display:flex; flex-direction:column; gap:2px;
+  margin:0 0 14px; padding:0 2px;
+}
+.review-opener b { font-size:1.25rem; }
+.review-opener span { color:var(--muted); font-size:.92rem; }
+
+/* ---- lesson: the guess before the explanation ---- */
+.guess {
+  margin:20px 0 22px; padding:16px 18px;
+  background:var(--panel-2); border:1px solid var(--border);
+  border-left:3px solid var(--accent-2); border-radius:12px;
+}
+.guess-eyebrow {
+  font-size:.68rem; letter-spacing:.11em; text-transform:uppercase;
+  font-weight:750; color:var(--accent-2); margin-bottom:8px;
+}
+.guess-q { margin:0 0 12px; font-size:1.04rem; font-weight:600; }
+.guess .mcq-opts { margin-top:0; }
+.guess-after { margin:12px 0 0; color:var(--muted); font-size:.93rem; }
+.guess-after.good { color:var(--good); font-weight:600; }
+
+/* ---- motion ---------------------------------------------------------------
+ * The games module had seventeen transitions and keyframes; the rest of the
+ * app had four, so answering a question correctly in a lesson was silent
+ * while doing the same thing in a game was celebrated. All the polish was in
+ * the room nobody could find.
+ *
+ * Everything here is feedback, not decoration: it fires on a state the
+ * learner just caused, and it is short enough to be felt rather than
+ * watched. The reduced-motion block below flattens all of it.
+ *
+ * No JS changed for any of this — the stages already add .right/.wrong to the
+ * button and .good/.bad to the feedback line, so the animation hangs off
+ * classes that have always been there.
+ * -------------------------------------------------------------------------- */
+@keyframes fz-pop   { 0% { transform:scale(1); } 45% { transform:scale(1.035); } 100% { transform:scale(1); } }
+@keyframes fz-nudge { 0%,100% { transform:translateX(0); } 20% { transform:translateX(-5px); }
+                      50% { transform:translateX(4px); } 80% { transform:translateX(-2px); } }
+@keyframes fz-rise  { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:none; } }
+
+/* right: a small confirming pop. wrong: a nudge, which reads without relying
+ * on colour — the one bit of feedback a red-green colourblind learner would
+ * otherwise get only from the text. */
+.mcq-btn.right, .word-chip.right, .onb-option.right { animation:fz-pop .22s ease-out; }
+.mcq-btn.wrong, .word-chip.wrong, .onb-option.wrong { animation:fz-nudge .3s ease-out; }
+.feedback.good, .feedback.bad, .feedback.reveal { animation:fz-rise .2s ease-out; }
+
+/* a bar that jumps to its new width has not shown you anything move */
+.unit-bar-fill { transition:width .45s cubic-bezier(.4,0,.2,1); }
+
+/* switching tabs was a hard cut */
+.tab-panel.active { animation:fz-rise .16s ease-out; }
+
+/* the things you press should acknowledge the press */
+.primary-btn, .ghost-btn, .quickplay, .alt-row, .mas-row, .home-extra {
+  transition:transform .12s ease, border-color .15s ease, background-color .15s ease;
+}
+.primary-btn:active, .ghost-btn:active, .quickplay:active,
+.alt-row:active, .mas-row:active, .home-extra:active { transform:scale(.985); }
+
 @media (prefers-reduced-motion:reduce) {
   *, *::before, *::after {
     animation-duration:.01ms !important; animation-iteration-count:1 !important;

@@ -119,7 +119,60 @@ window.StageLearn = (function () {
     return html + '</tbody></table>';
   }
 
-  function fillLesson(wrap, l) {
+  /* ---- one guess, before the explanation ----------------------------------
+   * A lesson was: read all of it, then answer questions about it. That is the
+   * wrong way round for the part that matters. Attempting something before
+   * being taught it — and getting it wrong — measurably improves what the
+   * explanation then sticks to, which is why this is framed as a guess and
+   * not a test. Nothing is hidden behind it and nothing is scored: scroll
+   * past and the lesson is exactly as it was.
+   *
+   * It uses a probe the lesson already carries, so this adds no content and
+   * the same question comes back properly in the quick check at the end —
+   * which is the second half of the effect, not a duplication bug. */
+  function guessBlock(l) {
+    var probes = (l.probes || []).filter(function (p) {
+      return p.kind === 'mcq' && p.options && p.options.length > 1 && p.answer != null;
+    });
+    if (!probes.length) return null;
+    /* Not probes[0]. The first probe usually tests the first thing the lesson
+     * teaches, and the section directly above this block has just taught it —
+     * so the "guess" is a reading-comprehension question with the answer two
+     * lines up. One from the middle is about material still to come, which is
+     * the whole point of guessing. */
+    var p = probes[Math.floor(probes.length / 2)];
+
+    var box = UI.el('div', 'guess');
+    box.appendChild(UI.el('div', 'guess-eyebrow', UI.t('Antes de seguir', 'Have a guess first')));
+    box.appendChild(UI.el('p', 'guess-q', p.q));
+
+    var opts = UI.el('div', 'mcq-opts');
+    var answered = false;
+    p.options.forEach(function (text, i) {
+      var b = UI.el('button', 'mcq-btn', text);
+      b.type = 'button';
+      b.addEventListener('click', function () {
+        if (answered) return;
+        answered = true;
+        var right = i === p.answer;
+        Array.prototype.forEach.call(opts.children, function (btn, j) {
+          if (j === p.answer) btn.classList.add('right');
+          else if (j === i) btn.classList.add('wrong');
+          btn.disabled = true;
+        });
+        box.appendChild(UI.el('p', 'guess-after' + (right ? ' good' : ''),
+          right ? UI.t('Eso es. Sigue leyendo para ver por qué.',
+                       'That is it. Read on for why.')
+                : UI.t('No pasa nada — para eso es la lección. Sigue leyendo.',
+                       'No matter — that is what the lesson is for. Read on.')));
+      });
+      opts.appendChild(b);
+    });
+    box.appendChild(opts);
+    return box;
+  }
+
+  function fillLesson(wrap, l, opts) {
     wrap.appendChild(UI.el('h1', null, l.title));
     fillOpening(wrap, l);
     wrap.appendChild(UI.el('p', 'doc-summary', l.summary));
@@ -127,9 +180,19 @@ window.StageLearn = (function () {
       wrap.appendChild(UI.el('h3', null, 'The words you need'));
       wrap.appendChild(UI.el('div', null, keywordTable(l.keywords)));
     }
-    (l.sections || []).forEach(function (s) {
+    /* After the first section: the learner has met the words and seen one
+     * explanation, which is enough to have an opinion and not enough to be
+     * sure. Only in a lesson being TAKEN — the grammar browser is a
+     * reference, and being quizzed on a page you opened to look something up
+     * is just an obstacle. */
+    var guessAt = (opts && opts.interactive) ? 1 : -1;
+    (l.sections || []).forEach(function (s, i) {
       wrap.appendChild(UI.el('h3', null, s.h));
       wrap.appendChild(UI.el('div', 'lesson-body', s.html));
+      if (i === guessAt - 1) {
+        var g = guessBlock(l);
+        if (g) wrap.appendChild(g);
+      }
     });
     if (l.contrasts && l.contrasts.length) {
       wrap.appendChild(UI.el('h3', null, 'Same words, different meaning'));
@@ -248,7 +311,7 @@ window.StageLearn = (function () {
     if (f.type === 'practice') return teachPractice(host, ctx, done);
     var l = ctx.lesson;
     if (!l) { done(); return; }
-    var wrap = fillLesson(UI.el('div', 'panel lesson'), l);
+    var wrap = fillLesson(UI.el('div', 'panel lesson'), l, { interactive: true });
     /* Every probe gets asked. `srs:false` marks the ones that must not join the
      * review deck, not ones to skip — filtering here meant a comprehension
      * check written for the end of the lesson was silently dropped instead. */
