@@ -297,7 +297,11 @@
 }
 
 /* ---------------------------------------------------------------- the item */
-.g-item { min-height: 210px; }
+/* The prompt area shrinks by the height of the typing box, which now sits
+ * outside it (see typeHost in js/gameround.js) so that clearing the question
+ * never destroys the input. */
+.g-item { min-height: 150px; }
+.g-type[hidden] { display: none; }
 .g-prompt {
   font-size: 1.55rem; font-weight: 650; line-height: 1.32; margin: 0 0 20px;
   text-wrap: balance;

@@ -104,10 +104,55 @@ window.GameRound = (function () {
     shell.appendChild(line);
 
     var itemHost = el('div', 'g-item');
+    /* The typed answer lives OUTSIDE itemHost, and outlives the question.
+     *
+     * renderItem() clears itemHost between questions, which used to destroy
+     * the input and build a new one. Two things went wrong with that. The
+     * caret was gone, so every question needed a tap. And on iOS the software
+     * keyboard drops when a focused element is removed and will not come back
+     * from a programmatic focus() — that only raises the keyboard inside a
+     * user gesture, and the move to the next question is driven by a timer.
+     * So in a sixty-second round you were tapping the box, waiting for the
+     * keyboard, and typing, over and over.
+     *
+     * One input, created once, never detached, never blurred: the keyboard
+     * stays up and the caret stays in it for the whole round. */
+    var typeHost = el('div', 'g-type');
+    var typeInput = el('input', 'g-input');
+    typeInput.type = 'text';
+    typeInput.autocomplete = 'off';
+    typeInput.autocapitalize = 'off';
+    typeInput.spellcheck = false;
+    typeInput.enterKeyHint = 'go';
+    typeInput.setAttribute('aria-label', 'Tu respuesta');
+    typeHost.appendChild(typeInput);
+    typeHost.appendChild(UI.accentBar(function () { return typeInput; }));
+    typeHost.hidden = true;
+
     var fbHost = el('div', 'g-feedback');
     shell.appendChild(itemHost);
+    shell.appendChild(typeHost);
     shell.appendChild(fbHost);
     host.appendChild(shell);
+
+    /* Wired once, against `current` rather than a captured item — the element
+     * is shared by every typed question in the round. */
+    typeInput.addEventListener('input', function () {
+      if (resolved || !current || current.play === 'build') return;
+      lastTyped = typeInput.value;
+      if (GI.grade(current, typeInput.value) === 'good') {
+        typeInput.classList.add('right');
+        resolve('good');
+      }
+    });
+    typeInput.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' || resolved || !current) return;
+      e.preventDefault();
+      lastTyped = typeInput.value;
+      var r = GI.grade(current, typeInput.value);
+      typeInput.classList.add(r === 'wrong' ? 'wrong' : 'right');
+      resolve(r);
+    });
 
     var pb = GS.pb(cfg.key);
     pbEl.textContent = pb ? 'PB ' + GS.fmt(pb) : '';
@@ -388,9 +433,13 @@ window.GameRound = (function () {
     function renderItem(item) {
       clear(itemHost);
       pendingContinue = null;
-      if (item.kind === 'listen') return renderListen(item);
+      /* Only a typed question shows the box. The listening round types its
+       * answer too, so it keeps it; choosing and building do not. */
+      if (item.kind === 'listen') { showTypeBox(); return renderListen(item); }
+      hideTypeBox();
       if (item.play === 'choose') return renderChoose(item);
       if (item.play === 'build') return renderBuild(item);
+      showTypeBox();
       return renderType(item);
     }
 
@@ -432,31 +481,32 @@ window.GameRound = (function () {
       itemHost.appendChild(opts);
     }
 
+    /* Resolves the instant it is right — no Enter, no submit button. The
+     * listeners are on the shared input above; this only has to present it. */
     function renderType(item) {
       itemHost.appendChild(promptEl(item));
-      var input = el('input', 'g-input');
-      input.type = 'text';
-      input.autocomplete = 'off';
-      input.autocapitalize = 'off';
-      input.spellcheck = false;
-      input.setAttribute('aria-label', 'Tu respuesta');
-      itemHost.appendChild(input);
-      itemHost.appendChild(UI.accentBar(function () { return input; }));
-      // Resolves the instant it is right — no Enter, no submit button.
-      input.addEventListener('input', function () {
-        if (resolved) return;
-        lastTyped = input.value;
-        if (GI.grade(item, input.value) === 'good') { input.classList.add('right'); resolve('good'); }
-      });
-      input.addEventListener('keydown', function (e) {
-        if (e.key !== 'Enter' || resolved) return;
-        e.preventDefault();
-        lastTyped = input.value;
-        var r = GI.grade(item, input.value);
-        input.classList.add(r === 'wrong' ? 'wrong' : 'right');
-        resolve(r);
-      });
-      setTimeout(function () { input.focus(); }, 0);
+      showTypeBox();
+    }
+
+    /* Reset and reveal the shared input without ever detaching it. focus() is
+     * called for the desktop case and for the first question of a round; on a
+     * phone the element has not been blurred, so the keyboard never went away
+     * and there is nothing to re-raise. */
+    function showTypeBox(label) {
+      typeInput.setAttribute('aria-label', label || 'Tu respuesta');
+      typeInput.value = '';
+      typeInput.classList.remove('right', 'wrong');
+      typeInput.disabled = false;
+      typeHost.hidden = false;
+      if (document.activeElement !== typeInput) {
+        try { typeInput.focus({ preventScroll: true }); } catch (e) { typeInput.focus(); }
+      }
+    }
+    function hideTypeBox() {
+      if (typeHost.hidden) return;
+      typeInput.value = '';
+      typeInput.classList.remove('right', 'wrong');
+      typeHost.hidden = true;
     }
 
     function renderBuild(item) {
@@ -520,7 +570,8 @@ window.GameRound = (function () {
       wrap.appendChild(speaker);
       wrap.appendChild(el('span', 'g-listen-hint', 'tócalo para repetir'));
       itemHost.appendChild(wrap);
-      if (item.play === 'choose') renderChooseBody(item); else renderTypeBody(item);
+      if (item.play === 'choose') { hideTypeBox(); renderChooseBody(item); }
+      else renderTypeBody(item);
       setTimeout(say, 120);
     }
     // listening reuses the bodies without re-printing a text prompt
@@ -542,26 +593,12 @@ window.GameRound = (function () {
       });
       itemHost.appendChild(opts);
     }
+    /* Same shared input as every other typed question — see the note by
+     * typeHost. It is already on screen and already focused by the time this
+     * runs; only the label changes, because here you are writing down what
+     * you heard rather than translating something you can see. */
     function renderTypeBody(item) {
-      var input = el('input', 'g-input');
-      input.type = 'text'; input.autocomplete = 'off'; input.autocapitalize = 'off'; input.spellcheck = false;
-      input.setAttribute('aria-label', 'Escribe lo que oyes');
-      itemHost.appendChild(input);
-      itemHost.appendChild(UI.accentBar(function () { return input; }));
-      input.addEventListener('input', function () {
-        if (resolved) return;
-        lastTyped = input.value;
-        if (GI.grade(item, input.value) === 'good') { input.classList.add('right'); resolve('good'); }
-      });
-      input.addEventListener('keydown', function (e) {
-        if (e.key !== 'Enter' || resolved) return;
-        e.preventDefault();
-        lastTyped = input.value;
-        var r = GI.grade(item, input.value);
-        input.classList.add(r === 'wrong' ? 'wrong' : 'right');
-        resolve(r);
-      });
-      setTimeout(function () { input.focus(); }, 0);
+      typeInput.setAttribute('aria-label', 'Escribe lo que oyes');
     }
 
     // ---- Enter is always the next thing you want ---------------------------
