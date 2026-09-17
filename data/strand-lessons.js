@@ -438,6 +438,14 @@ window.STRAND_LESSONS = [
   title: 'Escribe una reseña crítica',
   canDo: 'judge something in public, in your own voice',
   summary: 'The last task in the course. A review is where register, idiom, irony, hedging and argument all have to work at once — and where a distinctive voice stops being optional.',
+  keywords: [
+    { es: 'cabe preguntarse', en: 'one might ask' },
+    { es: 'sin ir más lejos', en: 'to take an obvious example' },
+    { es: 'a mi entender', en: 'to my mind' },
+    { es: 'dicho de otro modo', en: 'put another way' },
+    { es: 'en definitiva', en: 'ultimately' },
+    { es: 'y con esto lo dejo', en: 'and on that note I\'ll stop' }
+  ],
   sections: [
     { h: 'What to do', html: 'Review something you have genuinely read, seen or eaten. 500 to 700 words. It must contain at least one criticism and at least one thing you admired, and it must not be balanced for the sake of balance.' },
     { h: 'Voice is the point', html: 'At C1 the question stops being whether the Spanish is correct and becomes whether it sounds like somebody. Use the register deliberately, be ironic where irony is earned, and let one sentence be longer than it strictly needs to be.' }
@@ -18204,6 +18212,14 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:277', 'tacticas_pragmaticas:C1:278'],
   title: 'Indefinido o perfecto: acercar y alejar lo ocurrido',
   summary: 'The rule learners are taught — perfecto for today, indefinido for finished time — is the default, not the whole system. A speaker who breaks it is doing something: pulling a distant event into the present to claim it still matters, or pushing a recent one away to close it off. At C1 the deviation is the message.',
+  keywords: [
+    { es: 'Hoy he comido fuera.', en: 'I ate out today. (perfect — the day is still open)' },
+    { es: 'Ayer comí fuera.', en: 'I ate out yesterday. (preterite — finished time)' },
+    { es: 'Este año he viajado mucho.', en: 'I\'ve travelled a lot this year.' },
+    { es: 'Mi abuelo ha sido siempre así.', en: 'My grandfather has always been like that. (pulled into the present)' },
+    { es: 'Se acabó.', en: 'That\'s that. (pushed away, closed off)' },
+    { es: 'la desviación', en: 'the deviation from the rule' }
+  ],
   sections: [
     { h: 'The default, and why it is only a default', html: '<i>Hoy he comido fuera</i> / <i>Ayer comí fuera</i> is the peninsular norm: the perfect for a period including now, the preterite for one that does not. Everything below is a deliberate departure from it, and native speakers make these departures constantly.' },
     { h: 'Pulling the distant close', html: '<i>El año pasado no he ido a ningún sitio de vacaciones.</i> The time expression is finished, so the rule says <i>fui</i>. The perfect claims the fact is still live — the speaker is complaining about a state that persists, not reporting a completed year.' },
@@ -28964,6 +28980,14 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:5', 'tacticas_pragmaticas:C1:6', 'tacticas_pragmaticas:C1:7'],
   title: 'Mantener el referente: proformas globalizadoras',
   summary: 'B2 tracked a single referent across sentences; C1 tracks an entire preceding CLAIM. "Todo ello" and "esto" do not stand in for a noun — they gather several sentences into one manageable object, and choosing the wrong globalizing proform, or omitting a noun that was never quite named, are the two ways this goes wrong at this level.',
+  keywords: [
+    { es: 'este… aquel…', en: 'the latter… the former…' },
+    { es: 'todo ello', en: 'all of it' },
+    { es: 'dicho / dicha', en: 'the said, the aforementioned' },
+    { es: 'tal cosa', en: 'such a thing' },
+    { es: 'la proforma', en: 'the stand-in word' },
+    { es: 'desvalido', en: 'helpless' }
+  ],
   sections: [
     { h: 'Anáfora que reparte: estos... aquellos...', html: '<i>Vi jóvenes y ancianos. Estos parecían desvalidos y aquellos desilusionados.</i> — "estos/aquellos" split a single earlier sentence into two separate referents, assigning one predicate to each without repeating either noun.' },
     { h: 'Proformas globalizadoras: recoger todo un enunciado', html: '<i>Paro, delincuencia, drogas: todo ello inquieta a la sociedad</i> gathers three separate nouns into one neuter referent. Used cataphorically, the same move announces a claim before stating it: <i>Esto es lo que ocurre: el paro aumenta, la vivienda sube.</i>' },
@@ -29003,6 +29027,14 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:50'],
   title: 'La deixis en C1: el pronombre que desambigua, el que despecia',
   summary: 'A subject pronoun Spanish normally drops can, at C1, be the only thing standing between two readings of the same sentence — and a demonstrative that elsewhere just points to something nearby can, aimed at a person, turn into open contempt. Neither fact is taught at lower levels because neither is needed there.',
+  keywords: [
+    { es: 'Al llegar él…', en: 'When he arrived… (pronoun after the infinitive)' },
+    { es: 'Luis limpia el coche él.', en: 'Luis cleans the car himself.' },
+    { es: 'ese', en: 'that one (dismissive when used of a person)' },
+    { es: 'este / aquel', en: 'the latter / the former' },
+    { es: 'el pronombre', en: 'the pronoun' },
+    { es: 'desambiguar', en: 'to disambiguate' }
+  ],
   sections: [
     { h: 'El pronombre que desambigua', html: 'En una construcción absoluta de infinitivo o gerundio, el sujeto suele omitirse — pero si se omitiera aquí, la frase sería ambigua: <i>Al llegar él, todos se callaron</i> deja claro que quien llega no es el propio hablante ni el oyente, algo que <i>al llegar, todos se callaron</i> no garantiza.' },
     { h: 'El pronombre que enfatiza: reduplicación', html: '<i>Luis limpia el coche él</i> añade el pronombre tras el verbo, ya conjugado para "él", precisamente para subrayar que lo hace él mismo, sin ayuda — una estructura que no existe en B2 y que suena redundante si no se conoce su función enfática.' },
@@ -29043,6 +29075,13 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:66', 'tacticas_pragmaticas:C1:67', 'tacticas_pragmaticas:C1:68'],
   title: 'Rematización y tematización en C1: el orden que hace la pregunta',
   summary: 'B2 fronted an object and doubled it with a pronoun; C1 does something B2 cannot — front an indefinite object with NO doubling at all, and postpone a subject inside a question that already has its own interrogative word. Both depend on the object being indefinite or generic, which is exactly what B2\'s tematización required to be definite.',
+  keywords: [
+    { es: 'Llamó Elena.', en: 'Elena called. (new information last)' },
+    { es: 'Elena llamó.', en: 'Elena called. (Elena already in play)' },
+    { es: 'No sé a quién ha llamado Antonio.', en: 'I don\'t know who Antonio called.' },
+    { es: 'el orden de palabras', en: 'the word order' },
+    { es: 'el tema / el rema', en: 'the known part / the new part' }
+  ],
   sections: [
     { h: 'Posposición del sujeto: tema-rema-tema', html: 'La misma información se puede organizar de dos formas: <i>Llamó Elena esta mañana</i> (rema-tema) o <i>Elena llamó esta mañana</i> (tema-rema) — la primera responde implícitamente a "¿quién llamó?", la segunda a "¿qué hizo Elena?". En interrogativas indirectas el sujeto se pospone de forma casi obligatoria: <i>No sé a quién ha llamado Antonio</i>, nunca <i>*no sé a quién Antonio ha llamado</i>.' },
     { h: '"Ni siquiera" y los marcadores excluyentes', html: '<i>Ni siquiera él vino</i> / <i>No vino ni siquiera él</i> — el marcador incluyente puede preceder o seguir al elemento que resalta. Los excluyentes (<i>sencillamente, simplemente, verdaderamente</i>) hacen lo contrario: <i>Vendrán simplemente Marta y Pepe</i> descarta a cualquier otro asistente posible.' },
@@ -29240,6 +29279,14 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:245', 'tacticas_pragmaticas:C1:246', 'tacticas_pragmaticas:C1:247', 'tacticas_pragmaticas:C1:248'],
   title: 'Focalizar en C1: el artículo que exclama, la dislocación que aclara',
   summary: 'C1 focalization reaches for the definite article and the neuter "lo" to build whole exclamations with no separate exclamative word at all, and uses a falling tone AFTER the main clause to add or disambiguate an afterthought — a purely spoken device with no equivalent punctuation in writing.',
+  keywords: [
+    { es: 'sencillamente', en: 'simply (intensifying)' },
+    { es: 'Al menos…, que ya es algo.', en: 'At least…, which is something.' },
+    { es: 'la dislocación', en: 'moving a part of the sentence for emphasis' },
+    { es: '¡La de cosas que…!', en: 'The sheer number of things that…!' },
+    { es: 'lo + adjetivo + que', en: 'how … it is' },
+    { es: 'inaceptable', en: 'unacceptable' }
+  ],
   sections: [
     { h: 'Marcadores excluyentes y cuantificador focal', html: '<i>Su oferta es sencillamente inaceptable</i> — "sencillamente" no describe cómo se rechaza, es lo único que queda tras excluir cualquier otra valoración posible. <i>Al menos Pablo me dijo la verdad</i> usa "al menos" para aislar a Pablo como la única excepción dentro de un grupo que, se presupone, no dijo la verdad.' },
     { h: 'El artículo definido + relativa, como intensificador puro', html: '<i>No sabes el frío que hace</i> equivale a "hace mucho frío", pero con una fuerza que el adverbio simple no tiene — el artículo definido presenta el frío como algo ya conocido y directamente señalado, no como una cualidad cualquiera.' },
@@ -29283,6 +29330,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:8', 'gramatica:C1:9', 'gramatica:C1:10', 'gramatica:C1:11', 'gramatica:C1:12'],
   title: 'El género que cambia el significado: el fruto / la fruta',
   summary: 'A handful of Spanish nouns are not masculine or feminine by convention — the gender itself carries meaning, and switching it is not a mistake but a different word. "El fruto" and "la fruta" share a root but not a referent, and no rule of agreement will tell you which one a sentence needs; only the meaning will.',
+  keywords: [
+    { es: 'el fruto / la fruta', en: 'the result / the fruit (to eat)' },
+    { es: 'el orden / la orden', en: 'the order (sequence) / the order (command)' },
+    { es: 'el capital / la capital', en: 'the capital (money) / the capital (city)' },
+    { es: 'el cura / la cura', en: 'the priest / the cure' },
+    { es: 'el corte / la corte', en: 'the cut / the court' },
+    { es: 'el esfuerzo', en: 'the effort' }
+  ],
   sections: [
     { h: 'Individual frente a colectivo', html: 'El masculino nombra la unidad o el resultado abstracto, el femenino la masa o lo cultivado en conjunto: <i>el leño</i> (a single log) frente a <i>la leña</i> (firewood as a mass); <i>el fruto</i> (the abstract result — <i>el fruto de su trabajo</i>) frente a <i>la fruta</i> (fruit you eat).' },
     { h: 'Grande frente a pequeño, o instrumento frente a objeto', html: '<i>El huerto</i> (a small vegetable garden) frente a <i>la huerta</i> (a whole cultivated region); <i>el cuchillo</i> (a knife) frente a <i>la cuchilla</i> (a blade); <i>el jarro</i> frente a <i>la jarra</i>, esta última normalmente mayor.' },
@@ -29318,6 +29373,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:14', 'gramatica:C1:15', 'gramatica:C1:16', 'gramatica:C1:17', 'gramatica:C1:18', 'gramatica:C1:19'],
   title: 'El número en C1: dónde se mueve el acento, qué cambia de sentido',
   summary: 'Pluralizing a Spanish noun is not always just adding "-s". A handful of esdrújulos shift their stressed syllable in the plural, foreign borrowings hispanicize unpredictably, and some nouns simply mean something different in the plural than in the singular — "los celos" is not several instances of "el celo".',
+  keywords: [
+    { es: 'el régimen / los regímenes', en: 'the regime / the regimes (stress moves)' },
+    { es: 'el carácter / los caracteres', en: 'the character / the characters' },
+    { es: 'el espécimen / los especímenes', en: 'the specimen / the specimens' },
+    { es: 'las esposas', en: 'handcuffs (not just wives)' },
+    { es: 'los celos', en: 'jealousy' },
+    { es: 'suceder', en: 'to follow one another' }
+  ],
   sections: [
     { h: 'El acento que se desplaza', html: 'Casi todos los sustantivos mantienen el acento en la misma sílaba al pluralizar, pero un grupo reducido de esdrújulos lo desplaza a la sílaba siguiente: <i>régimen</i> (acento en "gi") se convierte en <i>regímenes</i> (acento en "gí", una sílaba más allá), igual que <i>espécimen → especímenes</i>.' },
     { h: 'Extranjerismos: hispanización irregular', html: 'Cada préstamo se adapta a su manera: <i>carnet → carné, carnés</i>; <i>meeting → mitin, mítines</i>; <i>club → clubes</i>; <i>standard → estándar, estándares</i>. No existe una regla única — hay que aprender cada adaptación por separado.' },
@@ -29354,6 +29417,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:24', 'gramatica:C1:25', 'gramatica:C1:26', 'gramatica:C1:27', 'gramatica:C1:28'],
   title: 'Cuyo, los adjetivos de color compuestos y el relacional que también califica',
   summary: '"Cuyo" agrees with the noun it precedes, not the one it points back to — a detail that trips up even careful speakers, since every other possessive in Spanish agrees with the possessor. Compound color adjectives break number agreement entirely, and some adjectives quietly do two different jobs depending on where you put them.',
+  keywords: [
+    { es: 'azul marino', en: 'navy blue (invariable compound)' },
+    { es: 'cuyo / cuya', en: 'whose' },
+    { es: 'a juego', en: 'matching' },
+    { es: 'el adjetivo relacional', en: 'the classifying adjective (política económica)' },
+    { es: 'calificativo', en: 'describing' },
+    { es: 'precioso', en: 'lovely' }
+  ],
   sections: [
     { h: 'Adjetivos de color compuestos: invariables en número', html: 'Un color formado por dos palabras (<i>verde botella, gris perla, azul turquesa</i>) no varía en plural: <i>dos trajes azul marino</i>, nunca <i>*dos trajes azules marinos</i>. El compuesto entero funciona como una sola etiqueta fija.' },
     { h: 'El adjetivo relacional que también califica', html: 'Algunos adjetivos hacen dos trabajos distintos según la posición y el sentido: <i>una empresa familiar</i> (relacional: de la familia, pertenece a ella) frente a <i>una cara familiar</i> (calificativo: reconocible, ya vista antes). La forma es idéntica; el significado no.' },
@@ -29390,6 +29461,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:65', 'gramatica:C1:66', 'gramatica:C1:67', 'gramatica:C1:68', 'gramatica:C1:69'],
   title: 'El artículo definido en C1: valor enfático y sustantivador',
   summary: 'Beyond pointing at something already known, the definite article can build a whole exclamation on its own, turn an adverb or an infinitive into a noun, and even appear where "hay" normally forbids it. None of these is the article doing its ordinary job of identifying a referent.',
+  keywords: [
+    { es: '¡La cara que puso!', en: 'The face he pulled!' },
+    { es: 'lo mal que cantó', en: 'how badly he sang' },
+    { es: 'lo + adjetivo + que', en: 'how … (something) is' },
+    { es: 'el + noun + que', en: 'the sheer … that' },
+    { es: 'lo bueno', en: 'the good thing' },
+    { es: 'el concierto', en: 'the concert' }
+  ],
   sections: [
     { h: 'Valor enfático: con relativa, o con "lo"', html: '<i>La cara que puso</i> no identifica una cara conocida — construye una exclamación entera con el sustantivo y una relativa. El neutro <i>lo</i> hace lo mismo con adjetivos y adverbios: <i>lo mal que cantó</i> equivale a "qué mal cantó", pero con más fuerza.' },
     { h: 'Valor sustantivador: adverbios, infinitivos, oraciones', html: '<i>Lo antes que puedas</i> convierte todo un sintagma adverbial en una unidad nominal. Ante un infinitivo, el artículo es opcional si se sobrentiende un sustantivo como "hecho" (<i>el ser de otro país</i> / <i>ser de otro país</i>, ambos válidos), pero obligatorio ante un infinitivo ya plenamente sustantivado (<i>el florecer de las plantas</i>, nunca <i>*florecer de las plantas</i> como sujeto).' },
@@ -29426,6 +29505,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:86', 'gramatica:C1:87'],
   title: 'El artículo indefinido en C1: convertir un nombre propio en un tipo',
   summary: '"Un Picasso" does not mean an unknown man named Picasso — it recategorizes a proper name into a common noun for a whole type: a genuine work by him, a performance in his style, an instance of what makes him himself. This single move — un/una before a name that should resist it — is the indefinite article\'s most C1 trick.',
+  keywords: [
+    { es: 'un Dalí', en: 'a Dalí (a work by him)' },
+    { es: 'un tal García', en: 'a certain García' },
+    { es: 'una especie de', en: 'a sort of' },
+    { es: 'un Picasso auténtico', en: 'a genuine Picasso' },
+    { es: 'alcanzar precios altos', en: 'to fetch high prices' },
+    { es: 'el nombre propio', en: 'the proper noun' }
+  ],
   sections: [
     { h: 'Valor enfático consecutivo', html: '<i>Tiene una cara que es de impresión</i> usa <i>un/una + sustantivo + relativa</i> como estructura intensificadora — el artículo indefinido aquí no introduce un referente cualquiera, sino que prepara una valoración exagerada.' },
     { h: 'Nombre propio recategorizado como nombre común', html: '<i>Un Buñuel solo puede aparecer una vez</i> (valor prototípico: "alguien de su categoría"); <i>escuchamos a un Carreras pletórico</i> (identificación mediante un modificador valorativo: ese Carreras concreto, en ese estado); <i>tiene un Picasso en casa</i> (recategorización a nombre común: una obra hecha por él); <i>vino un tal José Durán</i> (con "tal", introduce a alguien desconocido para el oyente).' },
@@ -29461,6 +29548,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:98', 'gramatica:C1:99', 'gramatica:C1:100', 'gramatica:C1:101', 'gramatica:C1:102'],
   title: 'Nombres escuetos: sin artículo, aunque el verbo lo pida',
   summary: 'Some Spanish predicates simply refuse a bare noun — "Luis comió bistec" is fine, but "se comió bistec" is not, because the reflexive demands a delimited object the bare noun cannot provide. Learning which predicates tolerate a bare noun, and which contexts strip the article on purpose, is what separates fluent registration from a word-for-word translation.',
+  keywords: [
+    { es: 'La nombraron directora.', en: 'They named her director. (no article)' },
+    { es: 'comer bistec', en: 'to eat steak (no article)' },
+    { es: 'tener coche', en: 'to have a car' },
+    { es: 'buscar piso', en: 'to look for a flat' },
+    { es: 'con permiso', en: 'with permission' },
+    { es: 'el nombre escueto', en: 'the bare noun' }
+  ],
   sections: [
     { h: 'Complemento predicativo con nombrar, declarar', html: 'Verbos como <i>nombrar, declarar</i> aceptan un nombre escueto como complemento predicativo, porque clasifican en lugar de identificar un referente concreto: <i>la nombraron embajadora</i>, <i>la declararon zona catastrófica</i> — nunca "una embajadora" ni "la embajadora".' },
     { h: 'Incompatibilidad con predicados que exigen delimitación', html: 'Verbos como <i>comerse, beberse, adorar, probar</i> (en su lectura de consumo o valoración total) exigen un objeto delimitado, contable: <i>*Luis se comió bistec</i> es agramatical, frente a <i>Luis comió bistec</i>, que sí acepta el nombre escueto porque el verbo, sin el reflexivo, no exige esa delimitación.' },
@@ -29501,6 +29596,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:109', 'gramatica:C1:110', 'gramatica:C1:111', 'gramatica:C1:112', 'gramatica:C1:113', 'gramatica:C1:114', 'gramatica:C1:115'],
   title: 'Los demostrativos en C1: proximidad discursiva, condescendencia',
   summary: 'B2 used "este/aquel" to split a list into near and far items in space; C1 splits a list into near and far items in the DISCOURSE ITSELF — whichever noun was named last counts as closest, regardless of where anything actually is. And a demonstrative left trailing off, unfinished, can carry a whole attitude no adjective would need to spell out.',
+  keywords: [
+    { es: 'este… aquel…', en: 'the latter… the former…' },
+    { es: 'Eso que insinúas…', en: 'What you\'re implying…' },
+    { es: 'ese', en: 'that one (dismissive of a person)' },
+    { es: 'esto', en: 'this (the thing just said)' },
+    { es: 'aquello', en: 'that (distant in time)' },
+    { es: 'insinuar', en: 'to imply' }
+  ],
   sections: [
     { h: 'Anáfora por proximidad discursiva, no espacial', html: '<i>Vi lagos y montañas. Estas eran majestuosas y aquellos apacibles.</i> — "estas" apunta a "montañas" (lo último mencionado, lo más próximo EN EL DISCURSO) y "aquellos" a "lagos" (lo primero, lo más lejano en el discurso), sin que exista ninguna distancia física real entre unos y otros.' },
     { h: '"Eso" + subordinada, para restar valor', html: '<i>Eso que dices es una tontería</i> convierte toda una afirmación ajena en un solo referente fácil de descartar — el demostrativo neutro más una subordinada es un recurso habitual para quitarle peso a lo que acaba de decir otra persona.' },
@@ -29536,6 +29639,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:123', 'gramatica:C1:124', 'gramatica:C1:125', 'gramatica:C1:126', 'gramatica:C1:127', 'gramatica:C1:128'],
   title: 'Los posesivos en C1: cuantificador, sufrimiento, y el "mío" que apela',
   summary: '"Esto tiene su dificultad" does not say the difficulty belongs to anyone — the possessive here works as an intensifier, roughly "quite a bit of". A whole family of C1 uses turns the possessive into something other than ownership: a vague reference to an unnamed set of things, or a fixed way of addressing someone with affection.',
+  keywords: [
+    { es: 'tener su complicación', en: 'to have its complications (a fair few)' },
+    { es: 'lo tuyo', en: 'your thing, what you\'re good at' },
+    { es: '¡Madre mía!', en: 'Good heavens!' },
+    { es: 'a lo suyo', en: 'minding his own business' },
+    { es: 'de los míos', en: 'one of my sort' },
+    { es: 'el trámite', en: 'the procedure' }
+  ],
   sections: [
     { h: 'Valor cuantificador, no posesivo', html: '<i>Esto tiene su dificultad</i> no dice de quién es la dificultad — "su" funciona aquí como intensificador, equivalente aproximadamente a "bastante": la frase entera quiere decir "esto es bastante difícil".' },
     { h: 'Con artículo neutro "lo": referente no nombrado', html: '<i>Esto es lo tuyo</i> señala un conjunto de cosas conocido mutuamente por los hablantes pero nunca nombrado explícitamente — "lo tuyo" puede ser tu talento, tu tema, tu terreno, según el contexto.' },
@@ -29574,6 +29685,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:160', 'gramatica:C1:161'],
   title: 'Cuantificadores propios en C1: cuanto, cada uno, cualquiera',
   summary: '"Cada una nos fuimos por nuestro lado" looks like a number-agreement error — a singular quantifier with a plural verb — until you see that "cada uno/a" always agrees in gender with the group it distributes over, but describes each member one at a time, which is precisely why the verb stays plural.',
+  keywords: [
+    { es: 'cuanto / cuantos', en: 'as much as / as many as' },
+    { es: 'cada uno', en: 'each one' },
+    { es: 'cualquiera', en: 'any one at all' },
+    { es: 'de sobra', en: 'more than enough' },
+    { es: 'sendos', en: 'one each' },
+    { es: 'apetecer', en: 'to feel like' }
+  ],
   sections: [
     { h: '"Todo" universal y partitivo', html: '<i>Todo hombre necesita ayuda alguna vez</i> generaliza sin excepción; <i>sabe de todo</i>, con la preposición "de", cambia el sentido a variedad: no "todo" en sentido absoluto, sino "de muchas cosas distintas". <i>La enésima parte, la mitad de la mitad</i> son partitivos que fraccionan una cantidad repetidamente.' },
     { h: '"Cuanto": relativo cuantificador', html: 'Con antecedente expreso, concuerda en género y número con él: <i>Di cuantas mentiras quieras</i> (femenino plural, por "mentiras"), y el antecedente va siempre DETRÁS del relativo: <i>*di mentiras cuantas quieras</i> no funciona. Sin antecedente expreso, queda invariable: <i>come cuanto quieras</i>.' },
@@ -29610,6 +29729,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:292', 'gramatica:C1:293', 'gramatica:C1:294', 'gramatica:C1:295', 'gramatica:C1:296', 'gramatica:C1:297', 'gramatica:C1:298'],
   title: 'Los interrogativos en C1: cuándo se separan, cuándo se coordinan',
   summary: 'Two interrogatives can sit in the same question only under specific conditions — a partitive phrase can split off from "quién" but not always from "cuál", and coordinating a question-word for a person with one for a place fails outright, while the same combination works fine once reordered.',
+  keywords: [
+    { es: '¿Quién de entre vosotros…?', en: 'Which of you…?' },
+    { es: '¿Cuál de todos…?', en: 'Which of them all…?' },
+    { es: '¿Dónde y cuándo…?', en: 'Where and when…?' },
+    { es: '¿Para qué…?', en: 'What for…?' },
+    { es: '¿Cómo es que…?', en: 'How come…?' },
+    { es: 'el modelo', en: 'the model' }
+  ],
   sections: [
     { h: 'Separación del interrogativo y la estructura partitiva', html: 'Con <i>quién/es</i>, la estructura partitiva puede quedar separada al final: <i>¿Quién es médico de entre los presentes?</i> Con <i>cuál/es</i>, la separación exige que la partitiva lleve "de": <i>¿Cuál prefieres de todas estas posibilidades?</i> funciona, pero <i>*¿Cuál prefieres canciones de Serrat?</i>, sin ese "de" que marca la partición, no.' },
     { h: 'Restricciones en la coordinación de interrogativos', html: 'Los adverbios interrogativos coordinan con relativa facilidad entre sí. Coordinar un interrogativo de sujeto con uno de lugar resulta agramatical: <i>*¿Quién y dónde ha guardado mis fotos?</i> simplemente no funciona, aunque la pregunta sea perfectamente razonable en sentido.' },
@@ -29644,6 +29771,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:305', 'gramatica:C1:306', 'gramatica:C1:307', 'gramatica:C1:308', 'gramatica:C1:309', 'gramatica:C1:310'],
   title: 'Los exclamativos en C1: cuánto + valorativo, dónde, y el orden fijo',
   summary: '"¡Cuántos inocentes le habrán creído!" packs a conjecture about the past into an exclamation about quantity — the futuro perfecto here is not future at all, and the whole construction depends on an inflected evaluative adjective agreeing with the noun it quantifies.',
+  keywords: [
+    { es: '¡Cuántas mentiras…!', en: 'However many lies…!' },
+    { es: '¡Dónde habremos…!', en: 'Wherever can we have…!' },
+    { es: '¡Qué + adjetivo!', en: 'How …!' },
+    { es: '¡Cómo + verbo!', en: 'How … it does!' },
+    { es: '¡Lo que ha llovido!', en: 'How it\'s rained!' },
+    { es: 'la mentira', en: 'the lie' }
+  ],
   sections: [
     { h: 'Cuánto/a/os/as + adjetivo valorativo flexionado', html: '<i>¡Cuántos inocentes le habrán creído!</i> combina el exclamativo de cantidad con un adjetivo evaluativo que concuerda en género y número ("inocentes"), y con un futuro perfecto de valor conjetural sobre el pasado, no sobre el futuro.' },
     { h: '"Dónde", con o sin preposición', html: '<i>¡Dónde nos hemos metido!</i> funciona solo con el verbo; con preposición, <i>¡Por dónde nos llevó!</i>, el exclamativo señala el trayecto o el medio, no solo el destino.' },
@@ -29685,6 +29820,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:230', 'gramatica:C1:232'],
   title: 'El pronombre personal en C1: desambiguar, personificar, la voz media',
   summary: 'Every pronoun rule learned so far assumed the pronoun either has to be there or has to go — C1 is full of pairs where BOTH options are grammatical and mean different things, or mean nothing different at all, and telling the two apart is the entire skill.',
+  keywords: [
+    { es: 'coged', en: 'take some (no pronoun — a part)' },
+    { es: 'cogedla', en: 'take it (all of it)' },
+    { es: 'se murió', en: 'he died (the middle voice, more personal)' },
+    { es: 'se lo comió todo', en: 'he ate the whole lot' },
+    { es: 'a él / a ella', en: 'to him / to her (disambiguating)' },
+    { es: 'apetecer', en: 'to fancy' }
+  ],
   sections: [
     { h: 'El sujeto que desambigua y el que enfatiza', html: 'El condicional y el subjuntivo no distinguen 1.ª y 3.ª persona en su forma: <i>¡Más quisiera él/yo/usted!</i> — sin el pronombre, la frase sería ambigua. En reduplicación con <i>mismo/solo</i>, el pronombre en cambio no desambigua nada, solo enfatiza: <i>Luis limpia el coche él mismo.</i>' },
     { h: 'Personificación con el pronombre de 3.ª persona', html: 'Un concepto abstracto puede retomarse con un pronombre personal como si fuera alguien: <i>La paz lo es todo. Ella debe dirigir nuestra vida</i> — "ella" no se refiere a una persona, sino que personifica "la paz".' },
@@ -29726,6 +29869,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:277', 'gramatica:C1:278', 'gramatica:C1:280'],
   title: 'Relativos en C1: el cual, quien, y el "que" que rechaza un antecedente entero',
   summary: '"El lugar estaba lejos, el que era un problema" is wrong for a reason worth knowing: a relative with an article can never take a whole clause as its antecedent — only "lo que" can. "El cual" has its own separate restriction, the mirror image: it always needs an antecedent, expressed and nominal, and never stands alone the way "el que" can.',
+  keywords: [
+    { es: 'el cual / la cual', en: 'which (formal, after a preposition)' },
+    { es: 'quien / quienes', en: 'who (people, after commas or a preposition)' },
+    { es: 'lo que', en: 'which (pointing at the whole clause)' },
+    { es: 'cuyo', en: 'whose' },
+    { es: 'donde', en: 'where' },
+    { es: 'complicar', en: 'to complicate' }
+  ],
   sections: [
     { h: '"Que": antecedente pronominal, complemento del nombre', html: '<i>Aquellos que lo deseen pueden abstenerse</i> muestra a "que" tras un antecedente que es él mismo un pronombre (demostrativo o indefinido), no un sustantivo. Dentro de un sintagma nominal, "que" también puede funcionar como complemento del propio sustantivo: <i>es una película que me recomendó un amigo</i>.' },
     { h: '"Lo que": segundo término de comparación, sujeto de la oración', html: '<i>Es más de lo que esperaba</i> usa "lo que" como segundo término de una comparación de cantidad. <i>Lo que te digo es verdad</i> lo usa encabezando toda una oración con función de sujeto — un uso que ningún otro relativo cubre de la misma manera.' },
@@ -29766,6 +29917,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:336', 'gramatica:C1:337', 'gramatica:C1:339', 'gramatica:C1:341'],
   title: 'Adverbios nucleares en C1: dónde va el modo, y por qué',
   summary: '"Repulsivamente" placed right after the verb describes how the action LOOKED to the speaker, not how it was performed — the same adverb moved earlier would describe the manner of the action itself. At C1, the position of a manner adverb is not free variation; it is where the judgment lives.',
+  keywords: [
+    { es: 'bruscamente', en: 'abruptly' },
+    { es: 'groseramente', en: 'rudely' },
+    { es: 'la verdad', en: 'honestly (an aside)' },
+    { es: 'cuidadosamente', en: 'carefully' },
+    { es: 'el adverbio de modo', en: 'the adverb of manner' },
+    { es: 'contestar', en: 'to answer' }
+  ],
   sections: [
     { h: 'De acción frente a apreciación subjetiva postverbal', html: '<i>Gritó angustiosamente</i> describe la manera real de gritar. Colocado tras el verbo o al final, un adverbio de apreciación subjetiva no describe la acción sino que añade el juicio del hablante sobre ella: <i>actuó, la verdad, repulsivamente</i> — el matiz es evaluativo, no descriptivo.' },
     { h: 'Posición inicial para el foco contrastivo', html: 'Un adverbio resultativo en posición inicial, con acento contrastivo, opone explícitamente dos maneras: <i>CLARAMENTE le dijo que no, no confusamente.</i> Esta posición marcada exige ese contraste fonético — sin él, suena forzada.' },
@@ -29802,6 +29961,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:351', 'gramatica:C1:353', 'gramatica:C1:354', 'gramatica:C1:355'],
   title: 'Adverbios externos al dictum: el punto de vista que envuelve la frase',
   summary: '"Javier piensa erróneamente que el problema está resuelto" does not describe how Javier thinks — it is the SPEAKER judging Javier\'s belief from outside the sentence entirely. These adverbs sit apart from everything they modify, commenting on a whole proposition rather than describing any part of the action within it.',
+  keywords: [
+    { es: 'técnicamente', en: 'technically (speaking)' },
+    { es: 'irremediablemente', en: 'inevitably' },
+    { es: 'francamente', en: 'frankly' },
+    { es: 'personalmente', en: 'personally' },
+    { es: 'oficialmente', en: 'officially' },
+    { es: 'extinguido', en: 'extinct' }
+  ],
   sections: [
     { h: 'Adverbios de punto de vista, en posición parentética', html: '<i>Técnicamente, geográficamente, políticamente...</i> encuadran toda la afirmación desde un ángulo concreto, casi siempre en posición inicial y aislados por una pausa: <i>Técnicamente, el contrato ya ha expirado.</i>' },
     { h: 'Evaluativos de necesidad y obligación', html: '<i>Irremediablemente, por fuerza</i> refuerzan una expresión de obligación (<i>tener que, haber que, deber</i>) y a menudo pueden omitirse sin que la obligación desaparezca, solo se atenúa el matiz de inevitabilidad: <i>Tendrá que ceder, irremediablemente.</i>' },
@@ -29837,6 +30004,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:374', 'gramatica:C1:375', 'gramatica:C1:376', 'gramatica:C1:377', 'gramatica:C1:378'],
   title: 'Adverbios conjuntivos: matizar una coordinación sin ser una conjunción',
   summary: '"Tampoco" does not always negate — in "si tú sabes mucho, él tampoco se queda atrás" it marks that he is keeping equal pace, not falling behind. Adverbs like this one connect two statements the way a conjunction would, but each carries its own precise shade of consequence, restriction or concession that a plain "y" or "pero" cannot.',
+  keywords: [
+    { es: 'consecuentemente', en: 'consequently' },
+    { es: 'solo que', en: 'except that' },
+    { es: 'asimismo', en: 'likewise' },
+    { es: 'por el contrario', en: 'on the contrary' },
+    { es: 'en cambio', en: 'on the other hand' },
+    { es: 'suspenderse', en: 'to be called off' }
+  ],
   sections: [
     { h: 'Matiz consecutivo', html: '<i>Consecuentemente, por consiguiente</i> conectan dos ideas con una relación de causa-efecto más formal que "así que", propia de un registro cuidado o escrito.' },
     { h: 'Adversativo restrictivo con función coordinante', html: '<i>Solo que, únicamente que</i> funcionan casi como "pero", pero introducen específicamente una salvedad puntual: <i>Tenía buena intención, solo que no me expresé bien</i> — no niega la buena intención, solo la matiza con una excepción concreta.' },
@@ -30058,6 +30233,13 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:555', 'gramatica:C1:556', 'gramatica:C1:557', 'gramatica:C1:558'],
   title: 'Complementos del nombre en C1: la ambigüedad como norma',
   summary: 'Un complemento con "de" después de un nombre puede leerse de dos maneras opuestas, un adjetivo puede ser en realidad un participio con agente implícito, y el orden de dos adjetivos relacionales no es libre. En C1 aprender el sintagma nominal es aprender a desambiguar, no solo a construir.',
+  keywords: [
+    { es: 'el retrato de Goya', en: 'the portrait of Goya / by Goya (ambiguous)' },
+    { es: 'miedo a equivocarse', en: 'fear of making a mistake (same person)' },
+    { es: 'miedo de que se equivoquen', en: 'fear that they will make a mistake' },
+    { es: 'el amor a / de', en: 'love for / of' },
+    { es: 'la ambigüedad', en: 'the ambiguity' }
+  ],
   sections: [
     { h: 'El complemento con "de": objetivo o subjetivo', html: '<i>El asesino de Juan</i> tiene dos lecturas opuestas. Como complemento objetivo, Juan es la víctima: hay un asesino que mató a Juan. Como complemento subjetivo, de valor atributivo, Juan mismo es el asesino: se identifica al asesino como siendo Juan. La misma secuencia de palabras cambia por completo quién mata a quién.' },
     { h: 'Completivas nominales: infinitivo o subjuntivo', html: 'Un nombre como <i>temor</i> admite una completiva en infinitivo cuando el sujeto de ambos verbos coincide (<i>el temor a perderte</i>) y una completiva con verbo conjugado en subjuntivo cuando los sujetos son distintos (<i>el temor de que te vayas</i>) — el subjuntivo es obligatorio aquí porque "temor" pertenece al grupo de sustantivos de sentimiento o emoción.' },
@@ -30093,6 +30275,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:569', 'gramatica:C1:571', 'gramatica:C1:572', 'gramatica:C1:574'],
   title: 'Complementos del adjetivo en C1: interrogativas, superlativos con "lo" y cuantificadores coloquiales',
   summary: 'El adjetivo en C1 admite una interrogativa indirecta entera como complemento, forma superlativos neutros con "lo" cuya concordancia vacila entre dos normas, y en Hispanoamérica puede intensificarse con construcciones que en España sonarían extrañas. Un solo sintagma adjetival, tres fuentes distintas de variación.',
+  keywords: [
+    { es: 'curioso por saber', en: 'curious to know' },
+    { es: 'de lo más + adjetivo', en: 'exceedingly' },
+    { es: 'difícil de creer', en: 'hard to believe' },
+    { es: 'propenso a', en: 'prone to' },
+    { es: 'ansioso por', en: 'eager to' },
+    { es: 'el examen', en: 'the exam' }
+  ],
   sections: [
     { h: 'Interrogativas indirectas como complemento del adjetivo', html: 'Un adjetivo puede llevar como complemento una interrogativa indirecta completa, introducida por preposición: <i>interesado en cómo es tu trabajo</i>. La interrogativa (<i>cómo es tu trabajo</i>) funciona igual que la completiva de un nombre o un verbo, pero depende aquí de un adjetivo.' },
     { h: 'Superlativos neutros con "lo": dos concordancias posibles', html: 'En construcciones del tipo <i>de lo más</i> + adjetivo, la concordancia vacila entre dos normas: con el artículo neutro "lo", que deja el adjetivo invariable (<i>una película de lo más divertido</i>), o con el sustantivo al que se refiere, que hace concordar el adjetivo en género y número (<i>una película de lo más divertida</i>). Ambas se oyen y ninguna es "la errónea".' },
@@ -30175,6 +30365,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:624', 'gramatica:C1:625', 'gramatica:C1:626', 'gramatica:C1:627', 'gramatica:C1:628', 'gramatica:C1:629', 'gramatica:C1:630', 'gramatica:C1:631'],
   title: 'Complementos verbales en C1: leísmo, laísmo, loísmo y el predicativo del objeto',
   summary: 'Distinguir "le" de "lo/la" con precisión, saber cuándo el dativo exige un objeto directo delimitado, y reconocer un predicativo escondido tras un infinitivo o un gerundio son destrezas de C1 que muchos hablantes nativos no dominan de forma consistente — precisamente por eso conviene entenderlas con reglas, no solo de oído.',
+  keywords: [
+    { es: 'Le pegó un bofetón.', en: 'He slapped her. (le, not la)' },
+    { es: 'el leísmo', en: 'using le for a direct object' },
+    { es: 'el laísmo', en: 'using la for an indirect object' },
+    { es: 'el loísmo', en: 'using lo for an indirect object' },
+    { es: 'Nombraron a Marta directora.', en: 'They named Marta director.' },
+    { es: 'el bofetón', en: 'the slap' }
+  ],
   sections: [
     { h: 'Objeto directo confuso con indirecto', html: 'Con verbos como "pegar", confundir OD y OI produce un uso no normativo: <i>*Su padre la pegó</i> debería ser <i>su padre le pegó</i>, reservando "la" para cuando aparece un objeto directo explícito: <i>su padre le pegó una bofetada</i> ("le" = OI, la persona; "una bofetada" = OD, lo que recibió).' },
     { h: 'El objeto directo aumentado por un predicativo', html: 'En cláusulas reducidas, el OD puede llevar un elemento predicativo que lo completa: <i>eligieron a Luis presidente</i>, <i>considero a Luis poco preparado para ese trabajo</i> — "presidente" y "poco preparado" no son complementos aparte, sino que predican algo del propio objeto directo.' },
@@ -30211,6 +30409,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:639', 'gramatica:C1:640', 'gramatica:C1:641', 'gramatica:C1:642'],
   title: 'Concordancia ad sensum en C1: cuando el sentido gana a la gramática',
   summary: 'Sujetos como "la mayoría de", "un montón de" o "la mitad de" son singulares en su forma pero denotan una pluralidad de individuos — y en C1 el verbo puede concordar con esa pluralidad de sentido en vez de con la forma. Los colectivos como "gente" o "familia", en cambio, no admiten este salto: ahí la concordancia gramatical es obligatoria.',
+  keywords: [
+    { es: 'La mayoría apoya / apoyan', en: 'Most supports / support (both accepted)' },
+    { es: 'un grupo de turistas visitó / visitaron', en: 'a group of tourists visited' },
+    { es: 'la concordancia ad sensum', en: 'agreement by meaning, not by form' },
+    { es: 'la mitad de', en: 'half of' },
+    { es: 'la mayoría de', en: 'most of' },
+    { es: 'suspender', en: 'to call off' }
+  ],
   sections: [
     { h: 'Construcciones partitivas: plural cuando la acción es de cada individuo', html: 'Con expresiones partitivas como <i>la mayoría de, la mitad de, el X por ciento de</i>, el verbo puede ir en plural cuando se entiende que la acción se aplica a cada individuo por separado, no al conjunto como bloque: <i>la mayoría de los españoles creen que la situación ha mejorado</i>, <i>la mitad votaron en contra</i>, <i>el veinte por ciento se abstuvieron</i>. Gramaticalmente el sujeto ("la mayoría", "la mitad", "el veinte por ciento") es singular, pero el sentido — cada persona votando, absteniéndose, creyendo algo por su cuenta — empuja el verbo al plural.' },
     { h: 'Cuantificadores singulares con complemento en "de": el mismo efecto', html: 'Igual ocurre con cuantificadores singulares que expresan pluralidad, seguidos de un complemento con "de": <i>un montón de botellas se rompieron</i>, <i>una docena de personas salieron de la sala</i>. El núcleo gramatical ("un montón", "una docena") es singular, pero el complemento plural ("botellas", "personas") arrastra la concordancia del verbo.' },
@@ -30246,6 +30452,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:669', 'gramatica:C1:670', 'gramatica:C1:671'],
   title: 'Subordinadas sustantivas en C1: cuándo el infinitivo reemplaza a "que + verbo"',
   summary: 'El infinitivo puede sustituir a una completiva con verbo conjugado en más contextos de los que parece — como objeto directo, como complemento de un nombre que ni siquiera deriva de un verbo, o como sujeto de verbos que exigen un orden y un modo muy concretos. Saber cuándo cada opción es natural, y cuándo cambia el sentido, es la destreza real aquí.',
+  keywords: [
+    { es: 'Afirmó tener razón.', en: 'He claimed to be right. (same subject)' },
+    { es: 'Afirmó que tenía razón.', en: 'He claimed that he was right.' },
+    { es: 'el miedo a fracasar', en: 'the fear of failing' },
+    { es: 'que + subjuntivo', en: 'that + subjunctive' },
+    { es: 'el hecho de que', en: 'the fact that' },
+    { es: 'paralizar', en: 'to paralyse' }
+  ],
   sections: [
     { h: 'Infinitivo como objeto directo: mismo sujeto', html: 'Con verbos de entendimiento y de lengua, el infinitivo alterna con una completiva conjugada cuando el sujeto de ambos verbos coincide: <i>creí morirme / creí que me moría</i>, <i>dijo vivir en Zaragoza / dijo que vivía en Zaragoza</i>. Con verbos de ruego y petición como <i>pedir, suplicar, rogar</i>, ambas construcciones también compiten, pero el reparto de argumentos varía: <i>pidió salir</i> (él pide para sí mismo) frente a <i>pidió que saliera</i> (pide que otro salga); con un destinatario explícito, ambas formas conviven sin cambiar quién actúa: <i>rogó al público guardar calma / rogó al público que guardara calma</i>.' },
     { h: 'Infinitivo como complemento del nombre, incluso sin origen verbal', html: 'Los nombres deverbales admiten con naturalidad un infinitivo tras "de": <i>el deseo de volver</i>. Lo más notable en C1 es que algunos nombres que NO derivan de un verbo también lo admiten: <i>la idea de habernos reunido</i> — "idea" no viene de ningún verbo, y aun así introduce un infinitivo compuesto como complemento.' },
@@ -30283,6 +30497,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:693', 'gramatica:C1:694', 'gramatica:C1:695', 'gramatica:C1:696', 'gramatica:C1:698', 'gramatica:C1:699'],
   title: 'Subordinadas de relativo en C1: antecedentes especiales y construcciones que se apilan',
   summary: 'Más allá de "que" y "quien", el sistema de relativas en C1 incluye antecedentes que son oraciones enteras, relativas que se yuxtaponen a distancia, relativas superpuestas dentro de un mismo sintagma, y reglas de concordancia de persona que solo se ven al comparar "yo, el que te apoyé" con "vosotros, los que os portasteis".',
+  keywords: [
+    { es: 'el coche suyo que…', en: 'his car that…' },
+    { es: 'cosa que', en: 'which (referring to the whole idea)' },
+    { es: 'lo cual', en: 'which (formal)' },
+    { es: 'cuyo', en: 'whose' },
+    { es: 'el antecedente', en: 'the word the relative points back to' },
+    { es: 'quejarse de', en: 'to complain about' }
+  ],
   sections: [
     { h: 'Restrictivas: incompatibles con posesivo prenominal', html: 'Una relativa especificativa no admite un posesivo antepuesto al nombre, aunque sí uno pospuesto y tónico: <i>la frase mía que acabas de leer</i> es correcta, pero <i>*mi frase que acabas de leer</i>, con el posesivo delante, no lo es — el posesivo prenominal ya restringe por sí solo, y no admite además una restrictiva.' },
     { h: 'Antecedentes especiales: pronombres, oraciones enteras', html: 'El antecedente puede ser un pronombre indefinido o demostrativo (<i>aquellos que lo deseen pueden abstenerse</i>), estar elíptico en relativas libres con <i>quien, donde, como</i> (<i>quien habla así no tiene razón</i>), o ser una oración entera, retomada anafóricamente con <i>lo cual</i> o con "cosa que": <i>me gritó, lo cual no me gustó</i>, <i>me preguntó por ti, cosa que no me gustó nada</i>.' },
@@ -30321,6 +30543,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:737', 'gramatica:C1:739', 'gramatica:C1:740'],
   title: 'Subordinadas temporales en C1: "antes de" hiperbólico y el filo entre "cuando" y "mientras"',
   summary: '"Antes de" no siempre marca anterioridad real — puede negar que algo llegue a ocurrir, expresar una preferencia exagerada, o medir lo improbable de un hecho comparándolo con otro aún más raro. Y "cuando" y "mientras", que parecen intercambiables, tienen cada uno restricciones sintácticas propias que delatan al hablante no nativo cuando se cruzan.',
+  keywords: [
+    { es: 'antes de + infinitivo', en: 'rather than, before' },
+    { es: 'mientras', en: 'while (two things at once)' },
+    { es: 'cuando', en: 'when (a point in time)' },
+    { es: 'en cuanto', en: 'as soon as' },
+    { es: 'hasta que', en: 'until' },
+    { es: 'perder los nervios', en: 'to lose your temper' }
+  ],
   sections: [
     { h: '"Antes de" + infinitivo: tres lecturas, no una', html: '<i>Se fue antes de gritar a alguien</i> implica que ese grito no llegó a producirse en absoluto — irrealización total. <i>Antes de volver con él voy a la Luna</i> ordena dos hechos vistos negativamente, prefiriendo el más extremo (ir a la Luna) al otro (volver con él). <i>Antes de sacar el carné de conducir me saldrán canas</i> mide la improbabilidad de un hecho comparándolo con otro aún más lejano o extraño. La negación bloquea la lectura de irrealización total: <i>él no se acostó antes de que tú llegaras</i> es normal (hecho real, negado), pero <i>*no se fue antes de gritar a alguien</i>, buscando negar la irrealización, no funciona.' },
     { h: 'Posterioridad: subjuntivo con sujetos distintos', html: '<i>Después de que</i> + presente de subjuntivo, en coordenadas de presente o futuro, exige referencia disjunta entre los sujetos y da lugar a una interpretación no factual: <i>después de que terminemos este proyecto presentaré mi dimisión</i> (el proyecto aún no ha terminado). "Tras" + infinitivo (simple o compuesto) admite tanto correferencia como sujetos distintos, sin esa restricción.' },
@@ -30357,6 +30587,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:742', 'gramatica:C1:744', 'gramatica:C1:745', 'gramatica:C1:746'],
   title: 'Subordinadas de lugar y de modo en C1: "para donde" y el matiz condicional de "como si"',
   summary: 'Dos tipos de subordinadas adverbiales pequeñas pero con matices propios: "donde" combinado con preposiciones de dirección o de permanencia, sin necesidad de antecedente expreso, y "como si" + subjuntivo, que no solo compara sino que introduce un matiz condicional dentro de la comparación.',
+  keywords: [
+    { es: 'para donde', en: 'to wherever' },
+    { es: 'donde + subjuntivo', en: 'wherever (not yet settled)' },
+    { es: 'como si + imperfecto de subjuntivo', en: 'as if' },
+    { es: 'según', en: 'as, according to' },
+    { es: 'de modo que', en: 'in such a way that' },
+    { es: 'apetecer', en: 'to feel like' }
+  ],
   sections: [
     { h: 'De lugar: dirección y permanencia con "donde"', html: 'Con verbos de movimiento, "donde" se combina con una preposición direccional y no necesita antecedente expreso: <i>en el cruce tienes que ir para donde te indique la señal</i>. Con verbos que no son de movimiento, "donde" expresa estancia o permanencia, también sin antecedente, y alterna libremente con "en donde": <i>mandan donde pueden / mandan en donde pueden</i>.' },
     { h: 'De modo: "como si" y su matiz condicional', html: '"Como" introduce subordinadas de modo con normalidad. "Como si" + subjuntivo va más allá de la simple comparación: expresa el modo de una acción mediante su semejanza con una acción hipotética, añadiendo un matiz condicional a la comparación: <i>hace como si no tuviera idea</i> (actúa de un modo comparable a como actuaría alguien que no tiene idea — y probablemente sí la tiene), <i>parece como si tuviera ganas de jugar</i>.' }
@@ -30389,6 +30627,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:749', 'gramatica:C1:750', 'gramatica:C1:752', 'gramatica:C1:753', 'gramatica:C1:754'],
   title: 'Subordinadas causales en C1: énfasis con "porque" antepuesto, y tres conectores con matiz propio',
   summary: 'Anteponer "porque" no es solo una cuestión de orden — añade un matiz enfático que "porque" pospuesto no tiene. Y tres conectores causales muy parecidos entre sí ("a causa de que", "gracias a que", "por culpa de que") se reparten el territorio según si la circunstancia es neutra, positiva o negativa.',
+  keywords: [
+    { es: 'porque', en: 'because' },
+    { es: 'Porque llueve, no salimos.', en: 'It\'s because it\'s raining that we\'re not going out.' },
+    { es: 'gracias a que', en: 'thanks to the fact that' },
+    { es: 'ya que', en: 'given that' },
+    { es: 'puesto que', en: 'since (formal)' },
+    { es: 'debido a que', en: 'owing to the fact that' }
+  ],
   sections: [
     { h: '"Porque" antepuesto: énfasis, no solo orden', html: 'Colocar la causal con "porque" antes de la oración principal añade un matiz enfático que no tiene en su posición habitual, pospuesta: <i>porque es guapo tiene ese trabajo</i> resalta la causa con más fuerza que "tiene ese trabajo porque es guapo". El énfasis se refuerza con palabras como "solo": <i>te perdono solo porque eres sincero</i> — "solo" restringe la causa a esa y ninguna otra.' },
     { h: 'Tres conectores, tres matices de circunstancia', html: 'Los tres admiten posición antepuesta o pospuesta sin cambio de significado, pero difieren en el matiz de la circunstancia que introducen. <i>A causa de que</i> es neutro: <i>a causa de que él se ha negado, tengo que hacerlo yo</i> / <i>tengo que hacerlo yo, a causa de que él se ha negado</i>. <i>Gracias a que</i> marca una circunstancia positiva: <i>gracias a que conduce muy bien, el coche no volcó</i>. <i>Por culpa de que</i> marca una circunstancia negativa: <i>por culpa de que no deja el tabaco tose sin parar</i>.' }
@@ -30423,6 +30669,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:771', 'gramatica:C1:773', 'gramatica:C1:774', 'gramatica:C1:775'],
   title: 'Subordinadas finales en C1: cuando "para" deja de ser sobre el propósito',
   summary: 'La subordinada final típica lleva "para que" y expresa un propósito, pero en C1 "para" también contrasta con matiz concesivo, se separa de su verbo por otra cláusula intercalada, y sirve de base a preguntas retóricas que no piden ninguna finalidad — piden que el oyente entienda el reproche.',
+  keywords: [
+    { es: 'para + infinitivo', en: 'in order to' },
+    { es: 'demasiado… para…', en: 'too… to…' },
+    { es: 'para ser…', en: 'for a… (concessive, not purpose)' },
+    { es: 'a fin de que', en: 'so that (formal, + subjunctive)' },
+    { es: 'con vistas a', en: 'with a view to' },
+    { es: 'tomar una decisión', en: 'to make a decision' }
+  ],
   sections: [
     { h: 'Finales integradas: valor consecutivo con "(como) para"', html: 'Una final puede completar a un adjetivo con valor casi consecutivo: <i>es demasiado listo (como) para no darse cuenta</i> — no expresa el propósito de su inteligencia, sino la consecuencia lógica de tenerla.' },
     { h: 'Finales periféricas: posición y entonación', html: 'Como modificador oracional entero, separado por comas, la final puede ir antes o después sin cambio de sentido: <i>para que lo sepas, lo he dicho</i> / <i>lo he dicho para que lo sepas</i>. La posición cambia la entonación: inicial es lo habitual, final añade la información como coletilla, y en posición parentética casi se vuelve un marcador discursivo: <i>el resultado, para ser sinceros, no ha sido bueno</i>.' },
@@ -30459,6 +30713,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:786', 'gramatica:C1:787', 'gramatica:C1:788', 'gramatica:C1:791', 'gramatica:C1:792'],
   title: 'Subordinadas condicionales en C1: registros, matices y la prótasis que no acaba',
   summary: 'El sistema condicional español no se agota en "si + subjuntivo" — el habla informal sustituye el imperfecto y el pluscuamperfecto de subjuntivo por el presente de indicativo, existen condicionales que se dejan a medias con valor de deseo, y "como" + subjuntivo puede sonar a amenaza según el contexto, incluso quedándose suspendido a propósito.',
+  keywords: [
+    { es: 'Si me necesitas, llámame.', en: 'If you need me, call me. (real)' },
+    { es: 'Si me necesitaras, te ayudaría.', en: 'If you needed me, I\'d help. (hypothetical)' },
+    { es: '¡Ojalá me tocara…!', en: 'If only I won…!' },
+    { es: 'siempre que', en: 'provided that (+ subjunctive)' },
+    { es: 'a no ser que', en: 'unless' },
+    { es: 'como + subjuntivo', en: 'if (a warning)' }
+  ],
   sections: [
     { h: 'Presente de indicativo por subjuntivo: un registro informal', html: 'En el habla coloquial, el presente de indicativo puede sustituir tanto al imperfecto como al pluscuamperfecto de subjuntivo en la prótasis condicional: <i>si por casualidad mañana estoy bien, te aviso</i> (en vez de "estuviera"), <i>si hubieras llegado un minuto antes, habrías visto toda la escena</i> puede oírse también como <i>si llegas un minuto antes, habrías visto toda la escena</i>. No es un error aislado, es un rasgo reconocible del registro informal.' },
     { h: 'Irreales y "suspendidas": la condición que se queda a medias', html: 'La condicional hipotética irreal describe algo que no ocurrió y ya no puede cambiar: <i>si no te hubiera presentado a Celia, ahora no estarías casado</i>. Distinta de esta es la condicional suspendida, con matiz desiderativo: la prótasis se deja sin apódosis, funcionando como un deseo: <i>¡Ay, si me llamara...!</i> — no falta información, el corte es el propio recurso expresivo.' },
@@ -30498,6 +30760,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:820', 'gramatica:C1:823', 'gramatica:C1:825'],
   title: 'Subordinadas consecutivas en C1: intensidad, suspensión y la familia de "de ahí"',
   summary: 'Las consecutivas en C1 no se limitan a "tan... que" — incluyen fórmulas de intensidad coloquial que se dejan sin terminar a propósito, un "como para" que cambia de sentido según quién realiza la segunda acción, y toda una familia de construcciones con "de ahí" que van del sustantivo al subjuntivo pasando por el artículo.',
+  keywords: [
+    { es: 'tanto… que…', en: 'so much… that…' },
+    { es: 'tanto como para…', en: 'enough to…' },
+    { es: 'de ahí que', en: 'hence (+ subjunctive)' },
+    { es: 'así que', en: 'so' },
+    { es: 'por consiguiente', en: 'consequently' },
+    { es: 'subir el sueldo', en: 'to give a pay rise' }
+  ],
   sections: [
     { h: 'Coordinadas y yuxtapuestas: "luego", "así pues", "de ahí"', html: 'La consecutiva coordinada más conocida usa "luego": <i>pienso, luego existo</i>. Yuxtapuesta, con "pues, así pues, de ahí (que)": <i>los representantes no se pusieron de acuerdo; así pues, habrá que realizar otra asamblea</i>; con adverbios en "-mente": <i>consecuentemente, consiguientemente</i>.' },
     { h: 'De intensidad: fórmulas que casi no necesitan verbo', html: '<i>Tal... que, cada... que</i> intensifican mediante el sustantivo: <i>tiene tal genio que no hay quien le aguante</i>, <i>tiene cada salida que...</i> (dejada sin terminar, como si lo obvio no necesitara explicarse). Más coloquiales aún, <i>de un... que, si... que</i>: <i>es de un patoso...</i>, <i>si será egoísta que...</i> — ambas se oyen constantemente en el habla, casi siempre en suspensión.' },
@@ -30536,6 +30806,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:850', 'gramatica:C1:851', 'gramatica:C1:853'],
   title: 'Subordinadas comparativas en C1: cuatro comparaciones con el mismo patrón, y el límite que cuenta o no',
   summary: 'Igualdad, superioridad e inferioridad comparten exactamente los mismos cuatro usos — comparar cualidades, objetos o acciones del mismo sujeto, o llevar toda una subordinada como segundo término. Lo verdaderamente distinto en C1 es un matiz fino: si el límite de la comparación se incluye o se excluye cambia lo que la frase realmente afirma.',
+  keywords: [
+    { es: 'tan… como…', en: 'as… as…' },
+    { es: 'más/menos de lo que…', en: 'more/less than…' },
+    { es: 'cuanto más… más…', en: 'the more… the more…' },
+    { es: 'igual de… que…', en: 'just as… as…' },
+    { es: 'tal como', en: 'just as' },
+    { es: 'despistado', en: 'absent-minded' }
+  ],
   sections: [
     { h: 'Un mismo patrón para igualdad, superioridad e inferioridad', html: 'Los tres grados comparten la misma estructura interna. Cualidades distintas del mismo sujeto: <i>es tan guapo como tonto</i> / <i>es más astuto que inteligente</i> / <i>es menos antipático que mala persona</i>. Objetos distintos del mismo sujeto: <i>tiene más objetos inservibles que objetos de valor</i> / <i>tiene menos libros que modelitos de marca</i>. Acciones distintas del mismo sujeto: <i>come tanto como duerme</i> / <i>come más que duerme</i> / <i>come menos que duerme</i>. Y el propio término de la comparación puede ser una subordinada: <i>es tan alto como el que más</i>, <i>es más listo que los que vinieron ayer</i>, <i>soy menos egoísta que los que te han dicho eso</i>.' },
     { h: 'De modo: "a lo" + referencia', html: '"A lo" (equivalente a "a la manera de" o "como") introduce una comparación de modo tomando una referencia como modelo: <i>baila a lo Elvis Presley</i>.' },
@@ -30571,6 +30849,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:856', 'gramatica:C1:857', 'gramatica:C1:859', 'gramatica:C1:860', 'gramatica:C1:861', 'gramatica:C1:862', 'gramatica:C1:863'],
   title: 'Subordinadas concesivas en C1: reduplicación universal, ponderación y el escalar "ni siquiera"',
   summary: 'Más allá de "aunque", las concesivas en C1 incluyen fórmulas de reduplicación que cubren cualquier alternativa ("digan lo que digan"), construcciones ponderativas donde la propia cantidad o intensidad de algo se convierte en motivo de sorpresa ("con la de camisas que tienes..."), y una concesiva escalar que lleva la hipótesis al extremo ("ni siquiera si...").',
+  keywords: [
+    { es: 'Pase lo que pase', en: 'Whatever happens' },
+    { es: 'digan lo que digan', en: 'whatever they say' },
+    { es: 'por más que', en: 'however much' },
+    { es: 'aunque + subjuntivo', en: 'even if' },
+    { es: 'ni siquiera', en: 'not even' },
+    { es: 'rendirse', en: 'to give up' }
+  ],
   sections: [
     { h: 'Reduplicación universal y ponderación', html: 'Las estructuras reduplicadas con subjuntivo cubren cualquier alternativa posible, sea cual sea: <i>digan lo que digan, pienso hacer ese viaje</i> — no importa qué digan, todas las opciones quedan cubiertas. Distinta es la ponderativa con "con lo que" + indicativo, donde la intensidad de un hecho se presenta como motivo de extrañeza frente a otro: <i>con lo que nieva, ¿piensas salir?</i>' },
     { h: 'Concesivas propias: factuales y no factuales', html: 'Con <i>aun si, aun cuando, incluso cuando</i>, la concesiva puede admitir tanto indicativo (lectura factual, el hecho es real) como subjuntivo (no factual): <i>me rechazaron aun cuando tenía el mejor expediente</i> — el hecho de tener el mejor expediente es real, y aun así lo rechazaron.' },
@@ -31352,6 +31638,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:351', 'nociones_generales:C1:352'],
   title: 'Distancia y velocidad en C1: del "año luz" al "exceso de velocidad"',
   summary: 'Unidades de distancia poco comunes en el sistema métrico (milla, pulgada, año luz) conviven con un vocabulario de velocidad rico en matices de ritmo — no es lo mismo un ritmo "pausado" que uno "vertiginoso", y "coger velocidad" no significa lo mismo que "ir a toda velocidad".',
+  keywords: [
+    { es: 'el año luz', en: 'the light year' },
+    { es: 'el exceso de velocidad', en: 'speeding' },
+    { es: 'coger velocidad', en: 'to pick up speed' },
+    { es: 'a toda velocidad', en: 'at full speed' },
+    { es: 'multar', en: 'to fine' },
+    { es: 'la curva', en: 'the bend' }
+  ],
   sections: [
     { h: 'Unidades de distancia no métricas', html: '<i>Milla(s), pulgada(s)</i> son unidades del sistema anglosajón, frecuentes en contextos técnicos o de importación. <i>Año(s) luz</i> mide distancias astronómicas — y también se usa hiperbólicamente para exagerar una distancia enorme.' },
     { h: 'Sustantivos y adjetivos de velocidad', html: '<i>Aceleración</i> es el aumento de velocidad. <i>Ritmo</i> puede ser <i>pausado, acelerado, vertiginoso</i> — tres grados muy distintos de rapidez. <i>Velocidad</i> puede ser <i>media, máxima, constante</i>, y su exceso, <i>exceso de velocidad</i>, tiene connotación casi siempre de infracción. <i>Veloz</i> es el adjetivo general; <i>velozmente</i>, su adverbio.' },
@@ -31598,6 +31892,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:492', 'nociones_generales:C1:493', 'nociones_generales:C1:494', 'nociones_generales:C1:495'],
   title: 'Posición absoluta en C1: inclinado, torcido, empinado',
   summary: 'Describir cómo está colocado un objeto en el espacio requiere un adjetivo distinto para cada tipo de postura — no es lo mismo estar "inclinado" que "torcido", ni una cuesta "empinada" que un terreno "desnivelado".',
+  keywords: [
+    { es: 'inclinado', en: 'leaning, sloping' },
+    { es: 'torcido', en: 'crooked' },
+    { es: 'empinado', en: 'steep' },
+    { es: 'enderezar', en: 'to straighten' },
+    { es: 'la pendiente', en: 'the slope' },
+    { es: 'boca abajo', en: 'face down' }
+  ],
   sections: [
     { h: 'Medir la inclinación', html: '<i>Inclinación, ángulo</i> son los sustantivos: <i>las caras de la pirámide tienen una inclinación de 40 grados</i>.' },
     { h: 'Adjetivos de postura', html: '<i>Inclinado, torcido, caído, apoyado</i> describen distintas desviaciones de la posición recta: <i>ese cuadro parece que está torcido</i>, <i>tenía los brazos caídos</i>. <i>(Des)nivelado</i> describe una superficie sin el equilibrio horizontal esperado: <i>el terreno está desnivelado</i>. <i>Flexionado, estirado, extendido</i> describen el estado de una parte del cuerpo: <i>hay que mantener las piernas juntas y estiradas</i>. <i>Cruzado, atravesado</i> describen algo puesto perpendicularmente en medio de otra cosa: <i>el árbol estaba atravesado en medio de la carretera</i>. <i>Empinado</i> se aplica a pendientes muy inclinadas: <i>una cuesta empinada</i>. <i>Echado</i> describe a alguien tumbado: <i>Diego está echado en la cama</i>.' },
@@ -31641,6 +31943,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:520', 'nociones_generales:C1:521', 'nociones_generales:C1:522'],
   title: 'Posición relativa en C1: "a la vuelta de la esquina" y "al alcance de la mano"',
   summary: 'La posición de algo respecto a otra cosa se describe en C1 con un catálogo de locuciones muy visuales — "a la altura de", "al alcance de", "a la vuelta de la esquina" — que combinan precisión espacial con una imagen fácil de retener.',
+  keywords: [
+    { es: 'a la vuelta de la esquina', en: 'just around the corner' },
+    { es: 'al alcance de la mano', en: 'within arm\'s reach' },
+    { es: 'en pleno centro', en: 'right in the centre' },
+    { es: 'frente a', en: 'facing' },
+    { es: 'a escasos metros de', en: 'just metres from' },
+    { es: 'en torno a', en: 'around' }
+  ],
   sections: [
     { h: 'Relaciones geométricas y de cercanía/lejanía', html: '<i>Perpendicular/paralelo (a)</i> describen la relación angular entre dos líneas. <i>Apartado (de)</i> y <i>pegado (a)</i> son los extremos de la cercanía. <i>Fijo (a), cosido (a)</i> refuerzan la idea de estar unido sin posibilidad de moverse. <i>Periférico</i> describe lo que está en el borde, no en el centro. <i>Rodear</i> es estar dispuesto alrededor de algo. <i>Retirar(se) (de), aislar(se) (de)</i> describen el alejamiento.' },
     { h: 'Locuciones de esquina y frente', html: '<i>Hacer esquina con</i> describe un edificio en el punto donde se cruzan dos calles. <i>Frontalmente</i> y <i>de frente (a)/de espaldas (a)</i> describen la orientación respecto a algo, mirándolo o dándole la espalda. <i>Frente a frente</i> describe a dos elementos encarados.' },
@@ -31683,6 +31993,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:543', 'nociones_generales:C1:544', 'nociones_generales:C1:545', 'nociones_generales:C1:546'],
   title: 'Distancia en C1: de "manzanas" a "acortar distancias"',
   summary: 'Hablar de distancia en C1 exige un vocabulario que va del urbanismo cotidiano ("cuatro manzanas más arriba") a los matices figurados de "acortar distancias" — reducir una distancia emocional o social, no solo física.',
+  keywords: [
+    { es: 'la manzana', en: 'the block (of buildings)' },
+    { es: 'acortar distancias', en: 'to close the gap' },
+    { es: 'el acercamiento', en: 'the rapprochement' },
+    { es: 'a poca distancia', en: 'a short way off' },
+    { es: 'distar de', en: 'to be … away from' },
+    { es: 'alejarse', en: 'to move away' }
+  ],
   sections: [
     { h: 'Sustantivos de acercamiento y alejamiento', html: '<i>Aproximación, acercamiento</i> frente a <i>alejamiento</i> — estos sustantivos funcionan tanto en sentido físico como figurado (relaciones, posturas): <i>a raíz de aquello se produjo un acercamiento entre las dos partes</i>. <i>Cercanía, lejanía</i> son los sustantivos generales de la distancia percibida.' },
     { h: 'Tramos y manzanas: distancia urbana', html: '<i>Trecho, tramo</i> son partes de un recorrido: <i>hay un tramo en obras</i>. <i>Manzana(s)</i> es la unidad de distancia urbana por excelencia en el mundo hispanohablante: <i>cuatro manzanas más arriba está la biblioteca pública</i>.' },
@@ -31725,6 +32043,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:567', 'nociones_generales:C1:568'],
   title: 'Movimiento y estabilidad en C1: nombrar el tipo de movimiento',
   summary: 'Antes de describir cómo se mueve algo, el español distingue el tipo exacto de movimiento — lineal, pendular, circular, giratorio, rítmico, intermitente o irregular — con una precisión que va mucho más allá de "moverse" o "estar quieto".',
+  keywords: [
+    { es: 'el movimiento pendular', en: 'the back-and-forth motion' },
+    { es: 'la sacudida', en: 'the jolt' },
+    { es: 'el vaivén', en: 'the swaying' },
+    { es: 'agitado', en: 'rough, choppy' },
+    { es: 'la estabilidad', en: 'the stability' },
+    { es: 'el desplazamiento', en: 'the movement, the shift' }
+  ],
   sections: [
     { h: 'Sustantivos de movimiento y de su ausencia', html: '<i>Inercia, inactividad</i> describen la falta de movimiento propio. <i>Desplazamiento, tránsito, travesía</i> son formas de movimiento de un punto a otro. <i>Avance, retroceso</i> son sus direcciones opuestas. <i>(In)movilidad, quietud, reposo</i> describen la ausencia total de movimiento. <i>Agitación, vibración</i> describen un movimiento pequeño y repetido.' },
     { h: 'Calificar el movimiento por su ritmo', html: 'Un movimiento puede ser <i>brusco, pausado, incesante</i> — cada uno describe una cualidad temporal distinta.' },
@@ -31766,6 +32092,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:577', 'nociones_generales:C1:578', 'nociones_generales:C1:579', 'nociones_generales:C1:580', 'nociones_generales:C1:581'],
   title: 'Verbos de movimiento en C1: de "vagar" a "tambalearse"',
   summary: 'Un catálogo de verbos de movimiento muy específicos — vagar sin rumbo no es lo mismo que desfilar en formación, ni "zambullirse" es lo mismo que "deslizarse" — cada uno reservado para un tipo de desplazamiento reconocible.',
+  keywords: [
+    { es: 'vagar', en: 'to wander' },
+    { es: 'tambalearse', en: 'to stagger' },
+    { es: 'elevarse', en: 'to rise' },
+    { es: 'deslizarse', en: 'to slide, to glide' },
+    { es: 'precipitarse', en: 'to plunge' },
+    { es: 'sin rumbo fijo', en: 'with no set course' }
+  ],
   sections: [
     { h: 'Verbos de dirección vertical y de formación', html: '<i>Ascender, descender</i> son los verbos formales para subir y bajar. <i>Desfilar, marchar</i> describen un movimiento colectivo y ordenado, típico de un desfile militar o una manifestación.' },
     { h: 'Verbos de movimiento errático o brusco', html: '<i>Salir corriendo</i> es un escape repentino. <i>Vagar</i> es moverse sin rumbo ni destino fijo. <i>Cabalgar</i> es moverse a caballo.' },
@@ -31809,6 +32143,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:590', 'nociones_generales:C1:591', 'nociones_generales:C1:592', 'nociones_generales:C1:593', 'nociones_generales:C1:594'],
   title: 'Locuciones de movimiento en C1: de "dar marcha atrás" a "ir a la deriva"',
   summary: 'El movimiento se controla, se inicia y se detiene con locuciones muy visuales: "poner en marcha" arranca algo, "parar en seco" lo detiene de golpe, y entre ambos hay todo un vocabulario para andar de puntillas, dar un rodeo o ir sin rumbo fijo.',
+  keywords: [
+    { es: 'dar marcha atrás', en: 'to backtrack' },
+    { es: 'frenar en seco', en: 'to brake sharply' },
+    { es: 'ir a la deriva', en: 'to drift' },
+    { es: 'atropellar', en: 'to run over' },
+    { es: 'dar un rodeo', en: 'to take a detour' },
+    { es: 'salir pitando', en: 'to dash off' }
+  ],
   sections: [
     { h: 'Iniciar, mantener y detener un movimiento', html: '<i>Hacer un movimiento</i> es la construcción neutra general. <i>Mantener el equilibrio</i> es lo contrario de tambalearse. <i>Poner(se) en marcha/en movimiento</i> es iniciar un desplazamiento; <i>en marcha, en movimiento, en reposo</i> son los estados correspondientes: <i>el coche está en marcha</i>. <i>Echar(se) a andar/a correr</i> es empezar a moverse de golpe. <i>Parar/frenar en seco</i> es detenerse bruscamente.' },
     { h: 'Retroceder y cambiar de ruta', html: '<i>Dar marcha atrás</i> es retroceder, tanto literal como figuradamente (cambiar de decisión). <i>Coger un atajo, dar un rodeo</i> son las dos estrategias de ruta: acortar o alargar el camino.' },
@@ -31852,6 +32194,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:627', 'nociones_generales:C1:628', 'nociones_generales:C1:629'],
   title: 'Orientación y dirección en C1: "con rumbo a" y "sin rumbo fijo"',
   summary: 'Dar y seguir una dirección en C1 combina vocabulario técnico de tráfico (carril contrario, carril bici) con verbos de orientación (encaminarse, apuntar, orientarse) que funcionan igual de bien en sentido físico que en sentido figurado, como en un proyecto "sin rumbo fijo".',
+  keywords: [
+    { es: 'con rumbo a', en: 'bound for' },
+    { es: 'sin rumbo fijo', en: 'with no set course' },
+    { es: 'despegar', en: 'to take off' },
+    { es: 'orientarse', en: 'to get your bearings' },
+    { es: 'en dirección a', en: 'heading towards' },
+    { es: 'desviarse', en: 'to veer off' }
+  ],
   sections: [
     { h: 'Sustantivos de recorrido y de carril', html: '<i>Trayectoria</i> es el camino que sigue algo en movimiento; <i>travesía</i>, un recorrido de un lado a otro, a menudo largo. <i>Carril derecho/bici/contrario</i> son los distintos tipos de carril en una vía.' },
     { h: 'Verbos de dirección', html: '<i>Encaminar(se) a/hacia</i> y <i>apuntar a/hacia</i> son moverse o señalar hacia un destino. <i>Indicar</i> es señalar una dirección a otro. <i>Remitir, facturar, expedir</i> son los verbos para enviar algo hacia un destino (cartas, mercancías).' },
@@ -31893,6 +32243,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:640', 'nociones_generales:C1:641', 'nociones_generales:C1:642', 'nociones_generales:C1:643'],
   title: 'Orden en C1: series, secuencias y "por orden de prioridad"',
   summary: 'Ordenar elementos en C1 implica distinguir una serie de una secuencia, saber nombrar la posición exacta (penúltimo, antepenúltimo) y disponer del vocabulario de criterio ("por orden de importancia") que estructura cualquier lista argumentada.',
+  keywords: [
+    { es: 'por orden de prioridad', en: 'in order of priority' },
+    { es: 'el penúltimo', en: 'the second to last' },
+    { es: 'la secuencia', en: 'the sequence' },
+    { es: 'sucesivamente', en: 'successively' },
+    { es: 'por orden de lista', en: 'in list order' },
+    { es: 'alfabéticamente', en: 'alphabetically' }
+  ],
   sections: [
     { h: 'Sustantivos de conjunto ordenado', html: '<i>Serie, secuencia, sucesión</i> designan un conjunto de elementos ordenados, con matices: "serie" es más general (<i>una serie de nombres</i>), "secuencia" implica un orden con sentido interno (<i>una secuencia de imágenes</i>), "sucesión" enfatiza que unos siguen a otros en el tiempo (<i>una sucesión de datos</i>).' },
     { h: 'Posiciones específicas', html: '<i>Penúltimo, antepenúltimo</i> nombran posiciones concretas cerca del final de una serie — vocabulario preciso que en muchos idiomas requiere perífrasis.' },
@@ -31933,6 +32291,14 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:C1:649', 'nociones_generales:C1:650', 'nociones_generales:C1:651', 'nociones_generales:C1:652', 'nociones_generales:C1:653'],
   title: 'Origen en C1: la "semilla" y la "raíz" de las cosas',
   summary: 'El origen figurado de algo se expresa en español con metáforas vegetales — una idea tiene su "semilla", un problema tiene su "raíz", y para eliminarlo del todo hay que atacarlo "de raíz".',
+  keywords: [
+    { es: 'la semilla', en: 'the seed (figurative origin)' },
+    { es: 'la raíz', en: 'the root' },
+    { es: 'originario de', en: 'originating from' },
+    { es: 'provenir de', en: 'to stem from' },
+    { es: 'remontarse a', en: 'to date back to' },
+    { es: 'la ruptura', en: 'the break-up' }
+  ],
   sections: [
     { h: 'La semilla: el origen de algo abstracto', html: '<i>Semilla</i>, en sentido figurado, es el origen mínimo de algo que después crece: <i>la semilla del odio</i>.' },
     { h: 'Ser originario: el origen geográfico', html: '<i>Ser originario de</i> señala el lugar de procedencia, típicamente de especies, tradiciones o personas: <i>esta especie es originaria de Asia Central</i>.' },
@@ -33547,6 +33913,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1391', 'nociones_generales:C1:1392'],
   title: 'Evaluación general en C1: de "pasable" a "catastrófico"',
   summary: 'Valorar algo en C1 exige una escala fina de adjetivos que va de lo apenas aceptable ("pasable") a lo excelente ("insuperable"), y del fracaso leve ("lamentable") al desastre absoluto ("catastrófico") — sin olvidar los verbos que distinguen evaluar de simplemente elogiar o despreciar.',
+  keywords: [
+    { es: 'pasable', en: 'passable' },
+    { es: 'sobresaliente', en: 'outstanding' },
+    { es: 'catastrófico', en: 'catastrophic' },
+    { es: 'deficiente', en: 'substandard' },
+    { es: 'la calificación', en: 'the grade, the rating' },
+    { es: 'dejar mucho que desear', en: 'to leave a lot to be desired' }
+  ],
   sections: [
     { h: 'Sustantivos de la evaluación', html: '<i>Valoración, apreciación, evaluación, juicio</i> son los sustantivos generales. <i>Calificación</i> es el resultado numérico o formal de una evaluación: <i>obtener una calificación alta</i>.' },
     { h: 'Adjetivos: imparcialidad y grado', html: '<i>(Im)parcial, (des)favorable</i> describen la actitud de quien evalúa: <i>un juicio imparcial</i>. La escala positiva, de menor a mayor: <i>pasable, notable, sobresaliente</i> — y en el grado máximo, <i>satisfactorio, extraordinario, óptimo, insuperable, admirable, recomendable, brillante</i>. La escala negativa: <i>lamentable, desastroso, catastrófico, pésimo, penoso</i>.' },
@@ -33590,6 +33964,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1423', 'nociones_generales:C1:1424', 'nociones_generales:C1:1425'],
   title: 'Valor y precio en C1: de "estar tirado" a "precio de coste"',
   summary: 'El vocabulario económico de C1 distingue con precisión el importe (la cifra) del valor (lo que algo realmente vale), y ofrece un catálogo completo de precios especiales — simbólico, módico, de coste, de fábrica — junto con locuciones muy vivas para lo barato ("estar tirado") y lo caro.',
+  keywords: [
+    { es: 'estar tirado de precio', en: 'to be dirt cheap' },
+    { es: 'a precio de coste', en: 'at cost price' },
+    { es: 'a precio de fábrica', en: 'at factory price' },
+    { es: 'costar un ojo de la cara', en: 'to cost an arm and a leg' },
+    { es: 'la ganga', en: 'the bargain' },
+    { es: 'el desembolso', en: 'the outlay' }
+  ],
   sections: [
     { h: 'Sustantivos de coste', html: '<i>Importe, coste, tarifa, tasa</i> son las distintas formas de nombrar una cifra a pagar, cada una en su contexto (tarifa para servicios, tasa para trámites administrativos). <i>Crédito</i> es la capacidad de obtener dinero prestado. <i>Ganga, oportunidad</i> describen algo comprado por mucho menos de su valor real.' },
     { h: 'Calificar el valor', html: '<i>Valor aproximado/exacto/a la baja</i> gradúa la precisión de una estimación. <i>Valor extraordinario/incalculable/insignificante</i> gradúa la magnitud del valor.' },
@@ -33989,6 +34371,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1617', 'nociones_generales:C1:1618', 'nociones_generales:C1:1619', 'nociones_generales:C1:1620', 'nociones_generales:C1:1621'],
   title: 'Éxito y logro en C1: de "estar en pleno auge" a "ganar por los pelos"',
   summary: 'El éxito se gradúa en C1 desde el triunfo apenas alcanzado ("por los pelos") hasta la victoria absoluta ("aplastante"), con un vocabulario que distingue logro (algo conseguido) de reconocimiento (cómo se percibe desde fuera), y rival de adversario según el tono del enfrentamiento.',
+  keywords: [
+    { es: 'estar en pleno auge', en: 'to be booming' },
+    { es: 'ganar por los pelos', en: 'to win by a whisker' },
+    { es: 'el logro', en: 'the achievement' },
+    { es: 'fracasar', en: 'to fail' },
+    { es: 'salir adelante', en: 'to come through' },
+    { es: 'la carrera', en: 'the career' }
+  ],
   sections: [
     { h: 'Sustantivos del éxito y de sus actores', html: '<i>Logro, conquista</i> son lo conseguido; <i>reto, aspiración</i>, lo que se persigue. <i>Reconocimiento, reputación, prestigio</i> son cómo se percibe el éxito desde fuera. <i>Rival, adversario, competidor</i> gradúan el tono del enfrentamiento, de más neutro (competidor) a más personal (rival, adversario). <i>Fracaso, derrota, frustración</i> son el reverso del éxito.' },
     { h: 'Calificar una victoria', html: 'Una victoria o un éxito pueden ser <i>abrumador, apoteósico, aplastante, rotundo</i> — todos describen un triunfo absoluto, sin matices de duda. <i>Invencible</i> describe a quien nunca pierde.' },
@@ -34035,6 +34425,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1659', 'nociones_generales:C1:1660', 'nociones_generales:C1:1661', 'nociones_generales:C1:1662'],
   title: 'Utilidad y uso en C1: de "hacer uso de" a "ser un trasto"',
   summary: 'Este vocabulario cubre desde la utilidad vital ("crucial") hasta la inutilidad absoluta ("no valer para nada"), con verbos que distinguen usar bien un recurso (aprovechar) de desperdiciarlo (malgastar, desaprovechar, abusar).',
+  keywords: [
+    { es: 'hacer uso de', en: 'to make use of' },
+    { es: 'ser un trasto', en: 'to be a useless piece of junk' },
+    { es: 'no servir para nada', en: 'to be no use at all' },
+    { es: 'la aplicación', en: 'the application, the use' },
+    { es: 'aprovechar', en: 'to make the most of' },
+    { es: 'desechar', en: 'to discard' }
+  ],
   sections: [
     { h: 'Sustantivos de utilidad', html: '<i>(In)utilidad</i> es el sustantivo general. <i>Función</i> es el propósito de algo; <i>aplicación</i>, un uso concreto de algo. <i>Herramienta, utensilio, instrumento</i> son los objetos con los que se lleva a cabo una tarea.' },
     { h: 'Adjetivos de utilidad, de lo esencial a lo inútil', html: '<i>Vital, crucial</i> describen máxima necesidad. <i>Conveniente, aprovechable, (in)utilizable</i> gradúan la utilidad práctica. <i>(In)eficaz, eficiente, válido, valioso</i> frente a <i>perjudicial, inservible</i> — con "eficaz" centrado en lograr el objetivo y "eficiente" en hacerlo con pocos recursos. <i>Innecesario</i> describe algo que no hace falta.' },
@@ -34079,6 +34477,14 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:1688', 'nociones_generales:C1:1689'],
   title: 'Capacidad y competencia en C1: ser "un hacha" o "un manazas"',
   summary: 'La capacidad de una persona se describe en C1 con adjetivos técnicos (capacitado, instruido, dotado) y con un catálogo de comparaciones muy vivas — ser "un manitas" para lo manual, "un hacha" para lo intelectual, y su opuesto, "un manazas", para quien carece por completo de habilidad.',
+  keywords: [
+    { es: 'ser un hacha', en: 'to be a whiz' },
+    { es: 'ser un manazas', en: 'to be all thumbs' },
+    { es: 'ser un manitas', en: 'to be handy' },
+    { es: 'ser competente', en: 'to be competent' },
+    { es: 'estar capacitado para', en: 'to be qualified to' },
+    { es: 'gestionar', en: 'to manage' }
+  ],
   sections: [
     { h: 'Sustantivos de aptitud', html: '<i>Vocación, aptitud, talento</i> gradúan la capacidad natural: vocación es la inclinación hacia algo, aptitud la capacidad concreta, talento el don especial. <i>Eficacia</i> es la capacidad de lograr resultados.' },
     { h: 'Adjetivos: de torpe a superdotado', html: '<i>Torpe</i> frente a <i>válido</i> son los extremos básicos. <i>Superdotado, eficaz</i> describen capacidades excepcionales. <i>Capacitado, instruido, dotado, entrenado, formado</i> distinguen el origen de la capacidad: capacitado y formado por educación formal, entrenado por práctica, dotado por talento natural.' },
@@ -34221,6 +34627,14 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:C1:1739', 'nociones_generales:C1:1740', 'nociones_generales:C1:1741', 'nociones_generales:C1:1742'],
   title: 'Facilidad en C1: "fácil de entender" y los verbos que facilitan o dificultan',
   summary: 'La facilidad se describe en C1 con la estructura "fácil/difícil de + infinitivo", muy productiva, y con verbos que activamente cambian el grado de dificultad de algo: dificultar, posibilitar, agilizar.',
+  keywords: [
+    { es: 'fácil de entender', en: 'easy to understand' },
+    { es: 'agilizar', en: 'to speed up' },
+    { es: 'dificultar', en: 'to hinder' },
+    { es: 'facilitar', en: 'to make easier' },
+    { es: 'complicarse', en: 'to get complicated' },
+    { es: 'el trámite', en: 'the procedure, the paperwork' }
+  ],
   sections: [
     { h: 'Adjetivos de dificultad y confusión', html: '<i>(In)asequible, (in)comprensible, confuso, problemático</i> gradúan cuán accesible o complicado resulta algo: <i>recibimos unas instrucciones un poco confusas</i>.' },
     { h: '(Ir)realizable: lo que se puede o no llevar a cabo', html: '<i>(Ir)realizable</i> describe si algo se puede poner en práctica, más allá de si es fácil o difícil de entender.' },
@@ -34372,6 +34786,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:C1:1', 'funciones:C1:2', 'funciones:C1:3', 'funciones:C1:5', 'funciones:C1:6', 'funciones:C1:7', 'funciones:C1:8'],
   title: 'Identificar en C1: "el que suscribe" y las hendidas "lo que... es..."',
   summary: 'Identificar con precisión en C1 va desde el registro epistolar más formal ("el que suscribe") hasta el demostrativo cargado de desdén ("ese"), pasando por las construcciones hendidas ("lo que... es...") que aíslan justo el elemento que se quiere señalar.',
+  keywords: [
+    { es: 'el que suscribe', en: 'the undersigned (formal)' },
+    { es: 'Lo que… es…', en: 'What… is… (cleft sentence)' },
+    { es: '¿Y ese qué se ha creído?', en: 'And who does he think he is?' },
+    { es: 'a saber', en: 'namely' },
+    { es: 'el expediente', en: 'the file, the record' },
+    { es: 'solicitar', en: 'to request' }
+  ],
   sections: [
     { h: 'Demostrativo con valor despectivo', html: 'Un demostrativo antepuesto puede cargarse de desdén hacia la persona señalada: <i>no vendrá ese, ¿verdad?</i> — el tono, no la gramática, marca el desprecio.' },
     { h: 'Fórmula epistolar de autoidentificación', html: 'En el género epistolar formal, <i>el que suscribe / el abajo firmante</i> es la forma tradicional de identificarse el propio autor de un escrito.' },
@@ -35112,6 +35534,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:C1:377', 'funciones:C1:378', 'funciones:C1:379', 'funciones:C1:380', 'funciones:C1:381'],
   title: 'Expresar habilidad en C1: de "soy un hacha" a "soy patoso para..."',
   summary: 'La habilidad se expresa en C1 desde el registro neutro ("soy competente") hasta las comparaciones coloquiales muy vivas — "no hay quien me gane", "soy un hacha" — con su reverso exacto para la torpeza: "soy patoso para..."',
+  keywords: [
+    { es: 'Soy un hacha en…', en: 'I\'m a whiz at…' },
+    { es: 'Soy patoso para…', en: 'I\'m clumsy at…' },
+    { es: 'No hay quien le gane.', en: 'Nobody can beat him.' },
+    { es: 'dársele bien a alguien', en: 'to be good at' },
+    { es: 'ser competente en', en: 'to be competent at' },
+    { es: 'el ajedrez', en: 'chess' }
+  ],
   sections: [
     { h: '"No hay quien me gane": habilidad hiperbólica', html: 'Esta locución afirma una habilidad tan alta que nadie puede superarla: <i>no hay quien me gane al ajedrez</i>.' },
     { h: 'Competencia neutra', html: '<i>Soy (in)competente</i> es la forma más neutra y formal de valorar una habilidad: <i>son muy competentes coordinando grupos de trabajo</i>.' },
@@ -35204,6 +35634,16 @@ window.STRAND_LESSONS = [
          'funciones:C1:422', 'funciones:C1:423', 'funciones:C1:424', 'funciones:C1:425', 'funciones:C1:426'],
   title: 'Gustos y aversión en C1: de "adoro" a "me da náuseas"',
   summary: 'Los gustos en C1 se gradúan desde "me agrada" (suave) hasta "adoro" (máximo), y la aversión recorre una escala paralela hasta el extremo físico de "me da náuseas" — expresiones que llevan la emoción al cuerpo, no solo a la opinión.',
+  keywords: [
+    { es: 'adorar', en: 'to adore' },
+    { es: 'Me apasiona…', en: 'I\'m passionate about…' },
+    { es: 'Me da náuseas…', en: '… makes me feel sick (physical revulsion)' },
+    { es: 'aborrecer', en: 'to detest' },
+    { es: 'No soporto que…', en: 'I can\'t stand it when… (+ subjunctive)' },
+    { es: 'Cuanto más… más…', en: 'The more… the more…' },
+    { es: 'al atardecer', en: 'at dusk' },
+    { es: 'interrumpir', en: 'to interrupt' }
+  ],
   sections: [
     { h: 'Gustos: de lo suave a lo intenso', html: '<i>Me agrada...</i> es una forma suave y algo formal de expresar gusto: <i>me agradó que hubiera tenido el detalle de avisarnos</i>. <i>Adoro...</i> es el extremo superior, casi sin matiz de duda: <i>mi pasión es el cine clásico, lo adoro</i>. <i>Cuanto más/menos..., más/menos me gusta</i> describe un gusto que crece o decrece según otra variable: <i>cuanto más lo veo, más me gusta</i>. <i>Me llama la atención...</i> describe un interés particular, casi de curiosidad: <i>el arte griego siempre le ha llamado muchísimo la atención</i>.' },
     { h: 'Aversión: de lo desagradable a lo físico', html: '<i>Me espanta...</i> describe un rechazo con matiz de temor o horror: <i>me espanta la idea de irme de vacaciones con mis suegros</i>. <i>Aborrezco...</i> es un rechazo intenso y personal. <i>Me desagrada/me repugna...</i> gradúan el rechazo, con "repugnar" en el extremo más fuerte: <i>cada día me repugna más la idea de esos programas</i>. <i>Es repugnante/aborrecible/abominable</i> valoran algo como objeto de rechazo extremo. <i>Me da náuseas...</i> lleva la aversión al plano físico, el grado máximo: <i>me da náuseas que algunas personas se enriquezcan a costa de los demás</i>.' }
@@ -36602,6 +37042,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:1273', 'funciones:C1:1274', 'funciones:C1:1275', 'funciones:C1:1276'],
   title: 'Introducir un relato y controlar la atención en C1: "¿me sigues?" y "¿no te he liado?"',
   summary: 'Contar algo en C1 empieza con un gancho que despierta curiosidad ("no te puedes ni imaginar..."), sigue con reacciones que muestran interés genuino, y se autorregula constantemente comprobando si el oyente sigue el hilo: "¿me sigues?", "¿te aburro?"',
+  keywords: [
+    { es: 'No te puedes ni imaginar…', en: 'You can\'t even imagine…' },
+    { es: '¿Me sigues?', en: 'Are you with me?' },
+    { es: '¿No te he liado?', en: 'Have I confused you?' },
+    { es: 'Te cuento.', en: 'Let me tell you.' },
+    { es: 'Presta atención.', en: 'Pay attention.' },
+    { es: 'liar', en: 'to confuse, to muddle' }
+  ],
   sections: [
     { h: 'Introducir el tema de un relato', html: '<i>¿Sabes lo que...?</i> despierta curiosidad de forma directa: <i>¿sabes lo que me pasó el otro día?</i>. <i>No sé si lo sabrás, pero...</i> introduce una noticia asumiendo que quizás el otro ya la conoce. <i>No te puedes (ni) imaginar...</i> intensifica la expectativa antes de contar algo: <i>no te puedes ni imaginar lo que ha pasado, es de lo más raro</i>. <i>Hola, ¿no estarás ocupado, (verdad)? Es que...</i> introduce el relato comprobando primero la disponibilidad del otro.' },
     { h: 'Pedir tiempo antes de escuchar, o posponer cortésmente', html: '<i>Espera/un momento... ya te atiendo/escucho</i> pide un breve margen antes de empezar a escuchar. <i>Lamento tener que interrumpirle, pero (es que)...</i> pospone el inicio del relato con cortesía, explicando la razón: <i>lamento tener que interrumpirle, pero tengo que hacer una reserva urgente</i>.' },
@@ -36645,6 +37093,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:1337', 'funciones:C1:1338', 'funciones:C1:1339'],
   title: 'Destacar, pedir silencio, cambiar de tema y cerrar en C1',
   summary: 'Este último bloque reúne cuatro funciones organizativas del discurso: destacar un elemento con un ejemplo inmediato ("sin ir más lejos"), pedir silencio con registros muy distintos (del ruego formal al brusco "¡cierra la boca!"), introducir un tema nuevo, y proponer el cierre de una conversación, casi siempre disculpándose por interrumpirla.',
+  keywords: [
+    { es: 'Sin ir más lejos…', en: 'To take an obvious example…' },
+    { es: 'Se ruega guardar silencio.', en: 'Silence is requested.' },
+    { es: 'Cambiando de tema…', en: 'Changing the subject…' },
+    { es: 'Y con esto lo dejo.', en: 'And on that note I\'ll stop.' },
+    { es: 'cabe destacar', en: 'it\'s worth highlighting' },
+    { es: 'los presentes', en: 'those present' }
+  ],
   sections: [
     { h: 'Destacar un elemento', html: '<i>Sin ir más lejos</i> refuerza una afirmación con un ejemplo inmediato y cercano: <i>ayer, sin ir más lejos, estuve con Julio</i>. <i>De hecho...</i> añade un dato concreto que refuerza lo dicho. <i>Es ineludible que...</i> + subjuntivo señala una necesidad que no admite evitarse: <i>es ineludible que discutamos el problema del agua</i>. <i>Lo que es más importante...</i> señala explícitamente el punto de mayor relevancia dentro de una explicación.' },
     { h: 'Pedir silencio: de lo brusco a lo ceremonioso', html: '<i>Shhh, silencio, ¡aquí no hay quien se entienda!</i> es coloquial y directo, con matiz de queja. <i>(Uno a uno), (por favor), no habléis todos a la vez</i> ordena el turno de palabra en un grupo. <i>Se ruega a los presentes que guarden silencio</i> es la fórmula formal, propia de actos públicos. <i>¡Cierra la boca!</i> es brusco y coloquial, casi grosero.' },
@@ -36786,6 +37242,14 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:236', 'generos_discursivos:C1:238', 'generos_discursivos:C1:249'],
   title: 'La presentación pública: la estructura completa',
   summary: 'A public presentation is not a speech that happens to have a beginning, middle and end — it is four named, purpose-built stages (opening, introduction, development, closing), each with its own toolkit: how to hook the audience before the content starts, how to signal you are moving between points, and how to close without just trailing off.',
+  keywords: [
+    { es: 'Antes de nada', en: 'First of all' },
+    { es: 'agradecer la invitación', en: 'to thank someone for the invitation' },
+    { es: 'ofrecer una perspectiva', en: 'to offer a perspective' },
+    { es: 'a lo largo de esta charla', en: 'over the course of this talk' },
+    { es: 'para ir concluyendo', en: 'to start wrapping up' },
+    { es: 'la organización', en: 'the organisers' }
+  ],
   sections: [
     { h: 'Apertura: más que un saludo', html: 'La apertura cubre el saludo, quién presenta a quién, el agradecimiento a la audiencia o institución, y el primer control de la comunicación (avisar de la duración, de cuándo se podrán hacer preguntas, si hay documentación de apoyo).' },
     { h: 'Introducción: el gancho antes del contenido', html: 'Antes de entrar en materia, conviene captar el interés con una técnica concreta: relatar un hecho llamativo, aportar un ejemplo, hacer una pregunta al público, citar una fuente, o mostrar por qué el tema afecta directamente a los asistentes.' },
@@ -37076,6 +37540,14 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:635', 'generos_discursivos:C1:636', 'generos_discursivos:C1:644', 'generos_discursivos:C1:645'],
   title: 'Describir a una persona: anclar, detallar, relacionar',
   summary: 'A description of a person that is just a list of adjectives has skipped two of the three moves that make description work: anchoring the person in a general frame before the details, and relating those details to something beyond the person — a comparison, a consequence, a judgment.',
+  keywords: [
+    { es: 'insólito', en: 'unusual, remarkable' },
+    { es: 'el aspecto', en: 'the appearance' },
+    { es: 'cuidado', en: 'well-kept' },
+    { es: 'cursi', en: 'twee, naff' },
+    { es: 'desde el punto de vista de', en: 'from the point of view of' },
+    { es: 'formar una pareja', en: 'to make a couple' }
+  ],
   sections: [
     { h: 'Anclaje: sitúa antes de detallar', html: 'Toda descripción arranca situando a la persona en un marco general — quién es, qué papel ocupa, en qué contexto aparece — antes de pasar a los rasgos concretos.' },
     { h: 'Aspectualización: el desglose en rasgos', html: 'De lo general se pasa a los rasgos concretos: aspecto físico, forma de vestir, manera de moverse, carácter — cada rasgo aporta información nueva, no repite el anterior con otras palabras.' },
@@ -37119,6 +37591,14 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:690', 'generos_discursivos:C1:691', 'generos_discursivos:C1:702'],
   title: 'Describir un objeto: del hecho general a la vivencia propia',
   summary: 'The same object supports two entirely different descriptions depending on whether "anchoring" means a verifiable general fact (a tomato is a widely consumed vegetable) or a personal memory (a tomato is the thing that ruined a childhood snack) — mixing the two registers inside one description is what makes readers lose track of what kind of text they are reading.',
+  keywords: [
+    { es: 'en conserva', en: 'tinned, preserved' },
+    { es: 'la alimentación', en: 'the diet, the food' },
+    { es: 'el cultivo', en: 'the crop, the growing' },
+    { es: 'formar parte de', en: 'to be part of' },
+    { es: 'el ser humano', en: 'the human being' },
+    { es: 'extenso', en: 'extensive' }
+  ],
   sections: [
     { h: 'Anclaje objetivo: el hecho verificable', html: 'Una descripción objetiva ancla el objeto en un hecho general y comprobable — su lugar en la alimentación, su origen, su función — sin implicar a quien describe.' },
     { h: 'Anclaje subjetivo: la vivencia personal', html: 'Una descripción subjetiva ancla el objeto en una experiencia propia — un recuerdo, una anécdota — que determina cómo se percibirán después los rasgos del objeto.' },
@@ -37160,6 +37640,14 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:740', 'generos_discursivos:C1:741', 'generos_discursivos:C1:749', 'generos_discursivos:C1:750'],
   title: 'Describir un lugar: de fuera adentro, con un porqué',
   summary: 'The same rented beach house can read as a small paradise or a claustrophobic nightmare depending only on which details the describer chooses to notice and relate back to — the facts (two floors, a small kitchen, distant sea views) barely change; what changes is the anchor and the final relating move.',
+  keywords: [
+    { es: 'la urbanización', en: 'the housing development' },
+    { es: 'bordeado por', en: 'bordered by' },
+    { es: 'la zona ajardinada', en: 'the landscaped area' },
+    { es: 'la planta', en: 'the floor, the storey' },
+    { es: 'la terraza', en: 'the terrace' },
+    { es: 'dar a', en: 'to look out onto' }
+  ],
   sections: [
     { h: 'Anclaje: el contexto que precede al lugar', html: 'Antes de describir el lugar en sí, se sitúa el contexto que lleva hasta él — un viaje, una decisión, una comparación previa con otro lugar.' },
     { h: 'Aspectualización: de lo general a las partes', html: 'El lugar se recorre de lo general (la urbanización, el edificio) a sus partes (planta baja, dormitorios, terraza), como si el lector avanzara físicamente por él.' },
@@ -37201,6 +37689,14 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:792'],
   title: 'Contar una anécdota: las cinco etapas',
   summary: 'A good oral anecdote is not just events in order — it is a situation that gets deliberately complicated ("no te vas a creer lo que pasó"), pushed through action, resolved, and then closed with a final twist that reframes everything before it — with description and reported dialogue woven in along the way, not tacked on at the end.',
+  keywords: [
+    { es: 'No te lo vas a creer…', en: 'You won\'t believe it…' },
+    { es: 'De repente', en: 'Suddenly' },
+    { es: 'armarse un lío', en: 'for chaos to break out' },
+    { es: 'habían desaparecido', en: 'they had disappeared' },
+    { es: 'Total, que…', en: 'So anyway…' },
+    { es: 'al final', en: 'in the end' }
+  ],
   sections: [
     { h: 'Situación inicial y complicación', html: 'Se planta un contexto normal y tranquilo — y después se introduce, con marcadores como "no te lo vas a creer" o "¿a que no sabes...?", el elemento que lo complica todo.' },
     { h: 'Acción y resolución', html: 'La acción despliega lo que ocurre a partir de la complicación, con ritmo y tensión creciente; la resolución cierra esa tensión, explicando cómo se solucionó o qué pasó al final del incidente central.' },
@@ -37399,6 +37895,15 @@ window.STRAND_LESSONS = [
   pcic: ['generos_discursivos:C1:44'],
   title: 'La reseña crítica',
   summary: 'A review that only summarizes the plot has failed at its one job: judging. A C1 reseña states a clear verdict, backs it with specific evidence from the work itself, and closes with a recommendation that names who the work is (or isn\'t) for — not just whether it was "good".',
+  keywords: [
+    { es: 'Lo mejor de… es…', en: 'The best thing about… is…' },
+    { es: 'el desenlace', en: 'the ending, the denouement' },
+    { es: 'precipitado', en: 'rushed' },
+    { es: 'cuidado', en: 'carefully made' },
+    { es: 'la fotografía', en: 'the cinematography' },
+    { es: 'dejar que desear', en: 'to leave something to be desired' },
+    { es: 'la reseña', en: 'the review' }
+  ],
   sections: [
     { h: 'Para qué sirve', html: 'Una reseña no es un resumen — es un juicio razonado que ayuda a un lector a decidir si le merece la pena acercarse a una obra (libro, película, disco, exposición). El resumen es solo el contexto mínimo necesario para que el juicio se entienda.' },
     { h: 'El registro', html: 'Personal pero argumentado: la primera persona del crítico es legítima ("me parece", "considero"), pero cada valoración debe apoyarse en un ejemplo concreto de la obra, no quedarse en adjetivos sueltos ("interesante", "bueno").' },
