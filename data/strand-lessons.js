@@ -184,6 +184,15 @@ window.STRAND_LESSONS = [
   title: 'Dilo sin responder de ello',
   canDo: 'say something without taking responsibility for having said it',
   summary: 'The most sophisticated thing Spanish does: attribute a claim to nobody, soften a disagreement until nothing is attacked, negate without a negative. This is how criticism is delivered in a meeting, and how nobody is ever quite on record.',
+  keywords: [
+    { es: 'Al parecer', en: 'Apparently' },
+    { es: 'Se ha planteado que…', en: 'It has been suggested that… (nobody named)' },
+    { es: 'Lo cual explicaría…', en: 'Which would explain… (not asserted outright)' },
+    { es: 'según fuentes', en: 'according to sources' },
+    { es: 'por lo visto', en: 'apparently' },
+    { es: 'habría que', en: 'one ought to' },
+    { es: 'atribuir', en: 'to attribute' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write a piece of workplace or public writing — minutes, an internal memo, a comment on a proposal — in which you criticise something firmly without ever attributing the criticism to yourself or attacking anyone.' },
     { h: 'The devices', html: 'Impersonal <i>se</i>, the covert quotation (<i>al parecer</i>, <i>por lo visto</i>, <i>parece ser que</i>), the conditional of unverified claim, negation by implication (<i>no es que sea malo, es que…</i>), and dialogic softening — conceding before you cut.' }
@@ -218,6 +227,14 @@ window.STRAND_LESSONS = [
   title: 'Escribe para una institución',
   canDo: 'write in institutional register without sounding like a form',
   summary: 'Formal C1 Spanish is not B2 formality with longer words. It has its own syntax — nominalisation, the passive reflexive, the subordinate clause that carries the concession — and its own failure mode, which is sounding like a machine.',
+  keywords: [
+    { es: 'Les escribo en relación con…', en: 'I am writing regarding…' },
+    { es: 'Solicito…', en: 'I request…' },
+    { es: 'Sin otro particular', en: 'With nothing further' },
+    { es: 'Le saluda atentamente', en: 'Yours faithfully' },
+    { es: 'Quedo a la espera de su respuesta.', en: 'I await your reply.' },
+    { es: 'adjunto remito', en: 'I enclose herewith' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write a commercial letter following the attention–interest–desire–action structure, and a short academic abstract on something you know. 200 words each.' },
     { h: 'What makes it C1 rather than B2', html: 'Nominalisation (<i>la revisión del calendario</i> rather than <i>revisar el calendario</i>), the concessive built into a subordinate clause rather than added with <i>aunque</i>, and a register that stays consistent for a whole page.' }
@@ -252,6 +269,14 @@ window.STRAND_LESSONS = [
   title: 'Justifica cada tiempo verbal que usas',
   canDo: 'choose any tense or mood deliberately and say why',
   summary: 'You have now seen every indicative tense with the objection it answers, and every subjunctive tense with what the negation decides. This asks you to choose among them deliberately, on a single page of your own writing.',
+  keywords: [
+    { es: 'el presente histórico', en: 'the historic present' },
+    { es: 'el futuro de conjetura', en: 'the future of guessing' },
+    { es: 'el imperfecto de cortesía', en: 'the softening imperfect' },
+    { es: 'no porque… sino porque…', en: 'not because… but because…' },
+    { es: 'De haberlo sabido…', en: 'Had I known…' },
+    { es: 'Convendría…', en: 'It would be advisable to…' }
+  ],
   sections: [
     { h: 'What to do', html: 'Write a 250-word account of something complicated — a dispute, a process, a change of mind — then annotate it: for every finite verb, one line saying why that tense and mood rather than the nearest alternative.' },
     { h: 'What counts as a reason', html: '"It is the past" is not a reason; preterite and imperfect are both past. The reason is always what you are doing with the event: bounding it, describing around it, placing it before another, declining to assert it.' }
@@ -17713,6 +17738,15 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:24', 'tacticas_pragmaticas:C1:25'],
   title: 'Reformuladores: volver a decirlo mejor',
   summary: 'A reformulador announces that what follows replaces what preceded — and the class you pick tells the listener WHY you are saying it again: to explain it, to sum it up, to correct yourself, or to declare the whole preceding discussion irrelevant. Choosing the wrong class is not a style slip; it misreports your own intention.',
+  keywords: [
+    { es: 'o sea', en: 'that is, in other words' },
+    { es: 'es decir', en: 'that is to say' },
+    { es: 'dicho de otro modo', en: 'put another way' },
+    { es: 'mejor dicho', en: 'or rather (correcting yourself)' },
+    { es: 'en otras palabras', en: 'in other words' },
+    { es: 'más bien', en: 'rather' },
+    { es: 'no sostenerse', en: 'not to hold up' }
+  ],
   sections: [
     { h: 'Four jobs, not one', html: 'Spanish separates what English blurs into "I mean". <b>Explicativos</b> (<i>es decir</i>, <i>o sea</i>, <i>dicho de otro modo</i>) restate the same content more clearly. <b>Recapitulativos</b> (<i>en resumidas cuentas</i>, <i>al fin y al cabo</i>) compress several points into a conclusion. <b>Rectificativos</b> (<i>mejor dicho</i>, <i>más bien</i>) withdraw what you just said and replace it. <b>De distanciamiento</b> (<i>en todo caso</i>, <i>de cualquier modo</i>) declare the preceding argument beside the point.' },
     { h: 'The distancing ones are the C1 move', html: '<i>De todos modos</i> and <i>en cualquier caso</i> do something no English "anyway" quite does: they concede that everything said so far may be true and rule it irrelevant to the conclusion. <i>—Es caro, y además está lejos. —En cualquier caso, es la única opción que tenemos.</i> The objections are not answered; they are set aside.' },
@@ -17773,6 +17807,16 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:83', 'tacticas_pragmaticas:C1:84', 'tacticas_pragmaticas:C1:85'],
   title: 'Estilo indirecto: el verbo que interpreta',
   summary: 'Reporting speech at C1 is not a mechanical shift of tenses and pronouns. The announcing verb you choose — dijo, aclaró, reprochó, advirtió, soltó — tells the listener how to take what follows, and that judgment is yours, not the original speaker\'s. Report neutrally and you have chosen too; you have chosen not to comment.',
+  keywords: [
+    { es: 'aclarar', en: 'to clarify' },
+    { es: 'advertir', en: 'to warn' },
+    { es: 'reprochar', en: 'to reproach' },
+    { es: 'insistir en', en: 'to insist' },
+    { es: 'Me dijo que llegaría.', en: 'He told me he would arrive.' },
+    { es: 'Me advirtió que no volviera.', en: 'He warned me not to come back. (+ subjunctive)' },
+    { es: 'al día siguiente', en: 'the next day' },
+    { es: 'el verbo de habla', en: 'the reporting verb' }
+  ],
   sections: [
     { h: 'The verb carries your reading', html: 'Every announcing verb beyond <i>decir</i> adds an interpretation the original speaker never signed up to. <i>Me aclaró que no vendría</i> presents it as clearing something up; <i>me reprochó que no fuera</i> as an accusation; <i>me advirtió que no fuera</i> as a warning; <i>me soltó que no vendría</i> makes it abrupt and unwelcome. Same words reported, four different events.' },
     { h: 'Verbs that cannot report', html: 'Some verbs only introduce direct speech: you can <i>cantar</i>, <i>recitar</i> or <i>pronunciar</i> words, but not <i>cantar que</i> something is the case. <i>*Le cantó que era morena</i> is not Spanish; it has to be <i>Le cantó: «Eres morena»</i>.' },
@@ -18075,6 +18119,14 @@ window.STRAND_LESSONS = [
          'tacticas_pragmaticas:C1:273', 'tacticas_pragmaticas:C1:274'],
   title: 'El imperfecto que no habla del pasado',
   summary: 'Beyond narration, the imperfect does jobs that have nothing to do with past time: it excuses, it registers surprise, it softens a request. "¡Y yo qué sabía!" is not a statement about what you once knew — it is a defence. These uses are frequent in speech and almost never taught, so learners hear a past tense and lose the speaker\'s attitude entirely.',
+  keywords: [
+    { es: '¡Y yo qué sabía!', en: 'How was I supposed to know!' },
+    { es: '¿No te habías ido?', en: 'Hadn\'t you left? (surprise, not past)' },
+    { es: '¿Tú no tenías un examen mañana?', en: 'Don\'t you have an exam tomorrow? (softened)' },
+    { es: 'Yo venía a ver si…', en: 'I was coming to see whether… (polite approach)' },
+    { es: 'Quería preguntarle…', en: 'I wanted to ask you… (softer than quiero)' },
+    { es: 'el imperfecto de cortesía', en: 'the imperfect used to soften' }
+  ],
   sections: [
     { h: 'Imperfecto de excusa', html: '<i>¡Y yo qué sabía!</i> — "How was I supposed to know!" The imperfect relocates the speaker to the moment before the problem, where their ignorance was reasonable. It is a defence against blame, not a report.' },
     { h: 'Imperfecto de sorpresa', html: 'Meeting an expectation that has been overturned: <i>Anda, estabas aquí; ¿no te habías ido?</i> or <i>¿Tú no tenías un examen?</i> The imperfect marks what the speaker had assumed, and the surprise lies in the gap between that and what they now see. With disapproval it becomes an accusation dressed as a question.' },
@@ -29805,6 +29857,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:409'],
   title: 'Tiempos verbales de indicativo en C1: cada tiempo, su objeción',
   summary: 'Almost every indicative tense in Spanish has a C1 use that has nothing to do with when something happened — the future objects, the conditional refuses politely in the past, and the pluscuamperfecto can describe something that was ALMOST done and never was. Learn the tense forms and you still have to learn what each one does besides tell time.',
+  keywords: [
+    { es: 'Cervantes publica en 1605.', en: 'Cervantes publishes in 1605. (present used for history)' },
+    { es: 'Será trabajador, pero…', en: 'He may well be hard-working, but… (conceding)' },
+    { es: 'Había pensado…', en: 'I had been thinking… (softened intention)' },
+    { es: '¿No me habré dejado…?', en: 'I hope I haven\'t left…? (worried guess)' },
+    { es: 'el presente histórico', en: 'the historic present' },
+    { es: 'el futuro de conjetura', en: 'the future of guessing' }
+  ],
   sections: [
     { h: 'Presente histórico, y el imperfecto en sus cuatro valores', html: '<i>Colón llega a América en 1492</i> narra el pasado en presente para darle inmediatez — el llamado presente histórico. El imperfecto, por su parte, cubre cuatro valores no temporales: excusa (<i>¡y yo qué sabía!</i>), sorpresa (<i>anda, estabas aquí</i>), censura (<i>¿tú no tenías que hacer los deberes?</i>) y distanciamiento en estilo indirecto implícito, con un marcador de presente o futuro: <i>María se casaba mañana</i> (alguien te lo contó, tú lo relatas sin asumir la responsabilidad).' },
     { h: 'Futuro y condicional simple: objeción y mandato', html: 'El futuro imperfecto puede conceder algo antes de objetar: <i>Será muy listo, pero...</i>; el mismo valor trasladado al pasado usa el condicional: <i>Sería muy listo, pero...</i> El futuro también funciona como mandato firme, casi inapelable: <i>Harás lo que te diga.</i>' },
@@ -29842,6 +29902,14 @@ window.STRAND_LESSONS = [
          'gramatica:C1:458', 'gramatica:C1:461', 'gramatica:C1:462', 'gramatica:C1:467', 'gramatica:C1:471'],
   title: 'Tiempos verbales de subjuntivo en C1: lo que decide la negación',
   summary: 'En C1 el subjuntivo deja de ser "la forma que va después de ciertas expresiones" y se convierte en una elección real: la misma frase negada puede llevar indicativo o subjuntivo según lo que el hablante quiera decir exactamente. Aprender a elegir el modo es aprender a decir dos cosas distintas con las mismas palabras.',
+  keywords: [
+    { es: 'No creo que sepa…', en: 'I don\'t think he knows… (+ subjunctive)' },
+    { es: 'No niega que ha llegado…', en: 'He doesn\'t deny he arrived… (indicative — still a fact)' },
+    { es: 'no porque… sino porque…', en: 'not because… but because…' },
+    { es: 'No pienso que se haya enterado.', en: 'I don\'t think he\'s found out.' },
+    { es: 'la negación', en: 'the negation' },
+    { es: 'el modo', en: 'the mood' }
+  ],
   sections: [
     { h: 'El presente de subjuntivo sin imperativo previo', html: 'Fuera de la subordinación, el presente de subjuntivo puede llevar matiz desiderativo y despectivo a la vez: <i>Así te lleves un buen susto</i> (no es un deseo amable). La fórmula <i>que</i> + presente de subjuntivo también funciona como una orden retardada, sin que haya habido antes ningún imperativo: en mitad de una discusión en la que alguien ha guardado silencio, <i>¡Que te calles de una vez, hombre!</i> irrumpe como primera intervención, no como repetición de un mandato anterior.' },
     { h: 'Verbos de percepción negados: dos lecturas, dos modos', html: 'Cuando se niega un verbo de percepción, el modo de la subordinada revela qué tipo de percepción es. Con lectura intelectual u opinativa, subjuntivo: <i>No veo que tengas motivos</i> (no es que no lo perciba con los ojos, es que no lo considero cierto). Con percepción pura, indicativo o subjuntivo según haya o no ese matiz de opinión: <i>No ve que hay un letrero ahí</i> (simplemente no lo ha mirado) frente a <i>No ve que haya un letrero ahí</i> (duda de que exista).' },
@@ -29878,6 +29946,14 @@ window.STRAND_LESSONS = [
   pcic: ['gramatica:C1:496', 'gramatica:C1:498', 'gramatica:C1:499', 'gramatica:C1:501', 'gramatica:C1:502', 'gramatica:C1:503'],
   title: 'El imperativo en C1: cuando no manda nada',
   summary: 'La mayoría de los imperativos en C1 no son órdenes en absoluto — son fórmulas fijas que reprochan, ironizan, ruegan o plantean una condición. Reconocerlos exige separar la forma (imperativo) del acto de habla real, que casi nunca es "mandar".',
+  keywords: [
+    { es: 'Cállate ya.', en: 'Be quiet already. (a real order)' },
+    { es: '¡Vaya, vaya!', en: 'Well, well! (no order at all)' },
+    { es: 'Pruébalo y verás.', en: 'Try it and you\'ll see. (a promise)' },
+    { es: 'Mira que eres testarudo.', en: 'You really are stubborn. (a reproach)' },
+    { es: 'Anda, dime.', en: 'Go on, tell me.' },
+    { es: 'testarudo', en: 'stubborn' }
+  ],
   sections: [
     { h: 'Refuerzo del imperativo', html: 'El imperativo puede reforzarse añadiendo una coletilla que lo hace inapelable: <i>Vete ya, he dicho.</i> El "he dicho" no aporta información nueva, cierra la negociación.' },
     { h: 'Imperativos lexicalizados con matiz irónico', html: 'Fórmulas fijas como <i>¡Mira qué bien!, ¡Vaya, vaya!, ¡Mira tú!</i> tienen forma de imperativo pero no piden que nadie mire nada — expresan sorpresa, desdén o ironía ante algo que se acaba de decir u observar.' },
@@ -29914,6 +29990,15 @@ window.STRAND_LESSONS = [
          'gramatica:C1:524', 'gramatica:C1:525', 'gramatica:C1:526', 'gramatica:C1:528', 'gramatica:C1:529', 'gramatica:C1:530'],
   title: 'Formas no personales en C1: infinitivo, gerundio y participio fuera del verbo',
   summary: 'El infinitivo, el gerundio y el participio hacen en C1 trabajos que no tienen nada que ver con completar una perífrasis: lanzan una exclamativa, sustituyen a una cláusula temporal o condicional entera, o construyen una oración absoluta sin ningún conector. Cada forma no personal tiene su propio catálogo de usos independientes.',
+  keywords: [
+    { es: 'una decisión que tomar', en: 'a decision to make' },
+    { es: 'el nadar', en: 'swimming (infinitive as a noun)' },
+    { es: 'Viniendo tú…', en: 'With you coming…' },
+    { es: 'Cerrada la tienda…', en: 'With the shop closed…' },
+    { es: 'al + infinitivo', en: 'on (doing)' },
+    { es: 'habiendo + participio', en: 'having (done)' },
+    { es: 'sentar bien', en: 'to do someone good' }
+  ],
   sections: [
     { h: 'Infinitivo independiente y en relativas', html: 'El infinitivo puede modalizarse en exclamativas e interrogativas sin ningún verbo conjugado: <i>¡Descansar tres meses! ¡Qué suerte!</i>, <i>¿Decirle yo lo que pienso? Ni loco.</i> Como complemento de nombre o adjetivo funciona con normalidad (<i>su deseo de marcharse</i>, <i>deseoso de verte</i>), pero en relativas tiene una restricción estricta: el antecedente debe ser indefinido. <i>Tengo un problema que resolver</i> es correcto; <i>*Tengo el problema que resolver</i>, con antecedente definido, es agramatical.' },
     { h: 'Infinitivo con valor nominal, en tres grados', html: 'El infinitivo puede recategorizarse como sustantivo pleno, sin rastro verbal (<i>los deberes conyugales</i>); parcialmente, conservando parte de su origen verbal en la forma pero funcionando como nombre (<i>el cantar de los pájaros</i>); o mínimamente, actuando como sujeto mientras retiene complementación verbal como un adverbio (<i>el cantar bien es una ventaja</i>, donde "bien" solo puede depender de un verbo).' },
@@ -30021,6 +30106,15 @@ window.STRAND_LESSONS = [
          'gramatica:C1:596', 'gramatica:C1:598', 'gramatica:C1:600', 'gramatica:C1:601', 'gramatica:C1:602', 'gramatica:C1:603', 'gramatica:C1:604'],
   title: 'El núcleo del sintagma verbal en C1: pasivas, perífrasis y el reparto ser/estar',
   summary: 'El verbo núcleo de la oración esconde en C1 tres sistemas densos: qué participio usar y cuándo la pasiva admite agente, un catálogo de perífrasis que expresan matices aspectuales muy precisos, y un reparto ser/estar que ya no depende de "permanente vs. temporal" sino de si la cualidad se atribuye a un acto puntual o a un comportamiento general.',
+  keywords: [
+    { es: 'fue construido por', en: 'was built by (the action)' },
+    { es: 'está construido con', en: 'is built of (the resulting state)' },
+    { es: 'romper a + infinitivo', en: 'to burst out -ing' },
+    { es: 'estar por + infinitivo', en: 'to be yet to be done' },
+    { es: 'ser generoso / estar generoso', en: 'to be generous (by nature / on that occasion)' },
+    { es: 'la pasiva', en: 'the passive' },
+    { es: 'la perífrasis', en: 'the verb periphrasis' }
+  ],
   sections: [
     { h: 'Pasiva de resultado: qué participio y cuándo hay agente', html: 'La pasiva de resultado (con "estar") no admite normalmente complemento agente: <i>*Las puertas estarán abiertas por el portero a las 10</i> es agramatical, porque "estar" describe un estado, no una acción con agente. No todos los transitivos se pasivizan igual: <i>*El libro fue tenido por mí</i> falla porque "tener" resiste la pasivización pese a ser transitivo. Cuando un verbo tiene dos participios, el irregular se usa en la pasiva de resultado (adjetival) y el regular en la pasiva de acción: <i>Este pueblo está maldito</i> (resultado) frente a <i>Este pueblo ha sido maldecido</i> (acción). Y a veces un simple adjetivo sustituye al participio en la de resultado: <i>Ha sido limpiado</i> (acción) frente a <i>Está limpio</i> (resultado, con adjetivo en vez de "limpiado").' },
     { h: 'Perífrasis verbales: un catálogo de matices aspectuales', html: 'De infinitivo, perfectivas (la acción se consuma o no del todo): <i>llegar a</i>, <i>acabar por</i>, <i>no alcanzar a</i>; inceptivas (inicio brusco): <i>echar a</i>, <i>echarse a</i>, <i>romper a</i> (<i>rompió a llorar</i>). De gerundio + gerundio, con <i>ir, venir, andar, terminar</i>, para procesos graduales o iterativos. De infinitivo con valor dubitativo-aproximativo, <i>venir a</i>: <i>viene a costar unos cien euros</i> (aproximadamente). De participio + participio, con <i>tener, llevar, dejar</i>: <i>tengo escritas tres cartas</i>, <i>llevo leídas cien páginas</i>.' },
@@ -30697,6 +30791,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:123', 'nociones_generales:C1:124', 'nociones_generales:C1:125', 'nociones_generales:C1:126', 'nociones_generales:C1:127'],
   title: 'Certeza e incertidumbre en C1: de "cabe la posibilidad" a "sin lugar a dudas"',
   summary: 'El español distingue con mucha precisión los grados de certeza, desde la duda que se "siembra" hasta la afirmación que "no cabe la menor duda" — un vocabulario esencial para argumentar y matizar en un registro formal.',
+  keywords: [
+    { es: 'sin lugar a dudas', en: 'without a shadow of a doubt' },
+    { es: 'cabe la posibilidad de que', en: 'there is a possibility that (+ subjunctive)' },
+    { es: 'sembrar la duda', en: 'to sow doubt' },
+    { es: 'sospechar', en: 'to suspect' },
+    { es: 'dar por sentado', en: 'to take for granted' },
+    { es: 'poner en duda', en: 'to call into question' },
+    { es: 'las declaraciones', en: 'the statements' }
+  ],
   sections: [
     { h: 'Sustantivos de la certeza y la duda', html: '<i>Improbabilidad</i> frente a <i>convicción, certidumbre</i>. <i>(In)admisible, (in)cuestionable, innegable, indudable</i> califican una afirmación según cuánto se pueda dudar de ella.' },
     { h: 'Verbos y locuciones de sospecha y certeza', html: '<i>Sospechar, temer(se)</i> introducen una creencia no confirmada, a menudo negativa. <i>Tener la sospecha/la certeza</i> formaliza esa misma idea como sustantivo. <i>Saber a ciencia cierta/con certeza/con seguridad</i> refuerza al máximo la afirmación: <i>sabemos con toda seguridad que no ha habido un malentendido</i>.' },
@@ -30741,6 +30844,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:158', 'nociones_generales:C1:159', 'nociones_generales:C1:160', 'nociones_generales:C1:161', 'nociones_generales:C1:162'],
   title: 'Realidad y ficción en C1: idealizar, disimular y volver a la realidad',
   summary: 'Entre lo real y lo imaginado hay todo un vocabulario de matices — una utopía no es lo mismo que una alucinación, "en apariencia" avisa de que las cosas podrían no ser lo que parecen, y locuciones como "tener los pies en el suelo" convierten la actitud ante la realidad en toda una imagen.',
+  keywords: [
+    { es: 'verosímil', en: 'plausible' },
+    { es: 'inverosímil', en: 'implausible' },
+    { es: 'fingir', en: 'to feign' },
+    { es: 'simular', en: 'to simulate' },
+    { es: 'hacerse pasar por', en: 'to pass oneself off as' },
+    { es: 'cumplirse', en: 'to come true' },
+    { es: 'la ficción', en: 'the fiction' }
+  ],
   sections: [
     { h: 'Grados de irrealidad', html: '<i>Utopía</i> es un ideal deseable pero irrealizable; <i>alucinación</i>, una percepción sin base real; <i>apariencia</i>, lo que algo parece sin garantía de que lo sea; <i>sueño inalcanzable/irrealizable</i>, una aspiración que no se puede cumplir.' },
     { h: 'Adjetivos: entre lo real y lo engañoso', html: '<i>Existente, virtual</i> matizan el tipo de realidad (física o simulada); <i>aparente, engañoso</i> advierten de que las apariencias pueden no coincidir con la realidad; <i>palpable, (im)perceptible</i> hablan de si la realidad se puede captar por los sentidos.' },
@@ -30783,6 +30895,15 @@ window.STRAND_LESSONS = [
          'nociones_generales:C1:189', 'nociones_generales:C1:190', 'nociones_generales:C1:191', 'nociones_generales:C1:192'],
   title: 'Necesidad, contingencia y obligación en C1: de lo prescindible a "no quedar más remedio"',
   summary: 'Este vocabulario permite graduar con precisión cuánto se necesita algo — desde lo "prescindible" hasta lo "indispensable" — y expresar que una acción fue forzada por las circunstancias, no elegida libremente, con fórmulas como "no quedar más remedio" o "por necesidad".',
+  keywords: [
+    { es: 'prescindible', en: 'dispensable' },
+    { es: 'imprescindible', en: 'indispensable' },
+    { es: 'no quedar más remedio que', en: 'to have no choice but to' },
+    { es: 'de primera necesidad', en: 'basic, essential (goods)' },
+    { es: 'dadas las circunstancias', en: 'given the circumstances' },
+    { es: 'el gasto', en: 'the expense' },
+    { es: 'mudarse', en: 'to move house' }
+  ],
   sections: [
     { h: 'Lo inevitable y lo circunstancial', html: '<i>Destino</i> sugiere una necesidad casi predeterminada; <i>circunstancial</i>, lo contrario, algo debido a las circunstancias del momento, no a una necesidad profunda. <i>(Ir)remediable</i> distingue lo que tiene solución de lo que no; <i>irremediablemente</i> es su adverbio: algo ocurre sin que se pueda evitar.' },
     { h: 'La escala de lo necesario', html: 'De menos a más necesario: <i>prescindible</i> (se puede pasar sin ello) — <i>preciso</i> (necesario, en registro más formal) — <i>oportuno, indispensable, vital</i> (necesidad creciente, hasta lo absolutamente esencial). <i>Tener una importancia fundamental/decisiva/indiscutible/relativa</i> gradúa esa misma necesidad aplicada a la importancia de algo.' },
@@ -33914,6 +34035,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:26', 'funciones:C1:27', 'funciones:C1:28'],
   title: 'Pedir información en C1: de "¿qué es lo que...?" a "¿me permites...?"',
   summary: 'Pedir información en C1 incluye fórmulas indirectas y corteses ("¿tienes idea de...?"), preguntas de extrañeza que hacen algo más que pedir un dato ("¿cómo es que...?"), y una fórmula previa para suavizar una pregunta delicada: "¿me permites...?"',
+  keywords: [
+    { es: '¿Tienes idea de…?', en: 'Do you have any idea…?' },
+    { es: '¿Me permite preguntarle…?', en: 'May I ask you…?' },
+    { es: '¿Y eso?', en: 'How come? / Why\'s that?' },
+    { es: '¿A qué viene esa cara larga?', en: 'What\'s with the long face?' },
+    { es: '¿Qué es lo que…?', en: 'What exactly is it that…?' },
+    { es: 'Te veo raro.', en: 'You seem off.' }
+  ],
   sections: [
     { h: 'Preguntas hendidas e indirectas', html: '<i>¿Qué es lo que...?</i> y <i>¿cuál de los que...?</i> son formas más enfáticas o precisas que el simple "¿qué?"/"¿cuál?": <i>¿cuál de las que me ha enseñado es la más barata?</i>. <i>¿Tienes idea de si/dónde/cómo...?</i> suaviza la pregunta directa: <i>¿tienes idea de si hay una oficina de Correos por aquí?</i>. <i>¿Me dice...?</i> es una fórmula cortés para pedir un dato concreto: <i>¿me dice el precio del vestido del escaparate?</i>.' },
     { h: 'Preguntar por tiempo, finalidad y causa', html: '<i>¿Qué día es/era cuando...?</i> pregunta por un momento situado respecto a otro suceso. <i>¿A qué...?</i> pregunta por la finalidad de una acción: <i>¿a qué has ido?</i>. <i>¿...por algo?</i> pregunta por la razón de una elección: <i>¿has elegido el verde por algo?</i>.' },
@@ -33957,6 +34086,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:60', 'funciones:C1:64', 'funciones:C1:65'],
   title: 'Dar información en C1: de las subordinadas de lugar a "¡¿Cómo que no?!"',
   summary: 'Dar información en C1 no es solo describir dónde, cuándo o por qué — incluye todo un repertorio para reaccionar con incredulidad ante lo que otro acaba de decir, repitiendo su enunciado con "¡¿Cómo que...?!" antes de corregirlo con fuerza.',
+  keywords: [
+    { es: '¡¿Cómo que no?!', en: 'What do you mean, no?!' },
+    { es: 'Una cosa es… y otra muy distinta…', en: 'It\'s one thing to… and quite another to…' },
+    { es: 'con idea de que…', en: 'with the idea that… (+ subjunctive)' },
+    { es: 'a causa de', en: 'owing to' },
+    { es: '¡Si lo prometiste!', en: 'But you promised!' },
+    { es: 'la avería', en: 'the breakdown' },
+    { es: 'avisar', en: 'to give notice' }
+  ],
   sections: [
     { h: 'Dar información de lugar, tiempo y modo', html: 'Subordinadas adverbiales dan esta información con precisión: de lugar (<i>tienes que girar hacia donde indique la señal</i>), de tiempo (<i>antes de que le llamaras estaba de los nervios</i>), de modo (<i>claramente está haciendo todo lo que puede</i>).' },
     { h: 'Dar información de finalidad y de causa', html: '<i>Con ánimo/idea de...</i> introduce la finalidad de una acción: <i>he hablado con ella con ánimo de solucionar las cosas</i>. <i>A causa de (que)/gracias a (que)/por culpa de (que)...</i> introducen la causa, con matiz neutro, positivo o negativo respectivamente: <i>me eligieron gracias a mi experiencia en un puesto similar</i>.' },
@@ -34001,6 +34139,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:113', 'funciones:C1:114'],
   title: 'Pedir confirmación en C1: de "¿a que sí?" a "tengo entendido que..."',
   summary: 'Pedir confirmación en C1 incluye coletillas directas ("¿a que sí?"), la fórmula encubierta que deja caer un dato ya conocido para que el otro lo confirme ("tengo entendido que..."), y las preguntas de sospecha que rozan la acusación ("¿no estarás insinuando que...?").',
+  keywords: [
+    { es: '¿A que sí?', en: '…isn\'t it? (inviting agreement)' },
+    { es: 'Tengo entendido que…', en: 'I understand that…' },
+    { es: '¿Me prometes que…?', en: 'Do you promise me that…?' },
+    { es: '¿No estarás insinuando que…?', en: 'You\'re not implying that…?' },
+    { es: '¿Verdad?', en: 'Right?' },
+    { es: 'aplazar', en: 'to postpone' },
+    { es: 'insinuar', en: 'to imply' }
+  ],
   sections: [
     { h: 'Coletillas directas de confirmación', html: '<i>..., ¿me equivoco?</i> plantea la confirmación como duda propia. <i>..., ¿a que sí/no?</i> y <i>..., ¿verdad que sí/no?</i> son coletillas coloquiales muy frecuentes: <i>te equivocaste al dar la referencia, ¿a que sí?</i>.' },
     { h: 'Pedir aclaración sobre lo entendido', html: '<i>No he entendido bien si... (o no/sí)</i> señala una duda concreta sobre un dato: <i>no he entendido bien si la semana pasada estuviste fuera o no</i>. <i>¿Te refieres a (que)...?</i> y <i>¿Es que (no)...?</i> piden confirmar la interpretación de algo que el otro acaba de decir: <i>¿se refiere usted a que hay que pagarlo todo ahora?</i>.' },
@@ -34043,6 +34190,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:C1:130', 'funciones:C1:131', 'funciones:C1:132', 'funciones:C1:133'],
   title: 'Confirmar información previa en C1: "así es", "¡y tanto!" y "de hecho"',
   summary: 'Confirmar algo en C1 va del registro más formal ("así es, efectivamente") al entusiasmo coloquial ("¡y tanto que...!"), y "de hecho" añade un matiz propio: no solo confirma, sino que aporta un detalle que refuerza lo dicho.',
+  keywords: [
+    { es: 'Así es.', en: 'That\'s right.' },
+    { es: '¡Y tanto!', en: 'You bet!' },
+    { es: 'Que sí, que…', en: 'Yes, really,…' },
+    { es: 'de hecho', en: 'in fact' },
+    { es: 'En efecto.', en: 'Indeed.' },
+    { es: 'Efectivamente.', en: 'Precisely.' },
+    { es: 'reservar', en: 'to book' }
+  ],
   sections: [
     { h: '"Que sí/no, que...": confirmación intensificada', html: 'Repetir "que sí" o "que no" seguido de una explicación refuerza la confirmación frente a alguien que duda: <i>que sí, que se fue hace un buen rato</i>.' },
     { h: '"Así es" / "efectivamente": confirmación formal', html: 'Estas fórmulas confirman con un registro más elevado que el simple "sí": <i>así es, se fue hace un buen rato</i>.' },
@@ -34206,6 +34362,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:204', 'funciones:C1:205', 'funciones:C1:206'],
   title: 'Expresar acuerdo en C1: de "algo de razón tienes" a "¡exactamente!"',
   summary: 'El acuerdo en C1 se gradúa con precisión — rotundo ("¡exactamente!", "de eso no hay duda"), parcial ("algo de razón tienes", "estoy de acuerdo salvo en...") — y "coincidir" se combina con distintas preposiciones según se esté de acuerdo con una acción, un hecho o algo dicho antes.',
+  keywords: [
+    { es: '¡Exactamente!', en: 'Exactly!' },
+    { es: 'Coincido contigo en que…', en: 'I agree with you that…' },
+    { es: 'Algo de razón tienes.', en: 'You\'ve got a point. (partial)' },
+    { es: 'Estoy de acuerdo salvo en…', en: 'I agree except on…' },
+    { es: 'Desde luego.', en: 'Absolutely.' },
+    { es: 'el plazo', en: 'the deadline' },
+    { es: 'la financiación', en: 'the funding' }
+  ],
   sections: [
     { h: 'Compartir una postura', html: '<i>(Sí/no), yo también/tampoco diría que...</i> confirma coincidencia repitiendo la estructura del otro: <i>no, yo tampoco diría que son sinónimas</i>. <i>(Yo) comparto tu idea/postura</i> es una forma directa y algo formal de expresar acuerdo.' },
     { h: '"Coincidir con": tres construcciones distintas', html: '<i>Coincido contigo en (lo de) + infinitivo</i> se usa para una acción: <i>coincido contigo en lo de no ir</i>. <i>Coincido contigo en (lo de) que...</i> para un hecho afirmado: <i>coincido contigo en que es una persona maravillosa</i>. <i>Coincido contigo en lo que...</i> remite a algo ya dicho antes por el interlocutor: <i>coincido totalmente contigo en lo que me dijiste ayer</i>. <i>(Yo) estoy de acuerdo con/en lo que...</i> funciona de forma parecida: <i>estoy completamente de acuerdo con lo que dices</i>.' },
@@ -34248,6 +34413,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:240', 'funciones:C1:241', 'funciones:C1:242'],
   title: 'Expresar desacuerdo en C1: de "no me convence" a "¡de eso nada!"',
   summary: 'El desacuerdo en C1 se gradúa igual que el acuerdo — de la discrepancia suave ("no me convence") a la contundente ("¡de eso nada!") — y "no coincidir en" repite el mismo reparto de preposiciones que su versión afirmativa, ahora negado.',
+  keywords: [
+    { es: '¡De eso nada!', en: 'No way! (blunt)' },
+    { es: '¡Para nada!', en: 'Not at all!' },
+    { es: 'No coincido contigo en que…', en: 'I don\'t agree with you that… (+ subjunctive)' },
+    { es: 'No me convence.', en: 'It doesn\'t convince me. (measured)' },
+    { es: 'no tener ni pies ni cabeza', en: 'to make no sense at all' },
+    { es: 'la interpretación', en: 'the reading, the interpretation' }
+  ],
   sections: [
     { h: 'Discrepar directamente', html: '<i>(Yo) no diría lo mismo</i> y <i>yo no comparto tu idea/postura</i> son formas directas y moderadas de discrepar.' },
     { h: '"No coincidir en": las mismas tres construcciones, negadas', html: '<i>Yo no coincido en (lo de) + infinitivo</i> para una acción: <i>no coincido en lo de firmar un acuerdo cuanto antes</i>. <i>No coincido contigo en (lo de) que...</i> para un hecho: <i>no coincido contigo en que no haya otras soluciones</i>. <i>No coincido en lo que...</i> remite a algo ya dicho: <i>no coincido en lo que dijo Jaime</i>. <i>(Yo) no estoy de acuerdo con/en lo que...</i> funciona igual: <i>no estoy de acuerdo con que toda esta información tenga que ser pública</i>.' },
@@ -34379,6 +34552,15 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:C1:311', 'funciones:C1:312', 'funciones:C1:313', 'funciones:C1:314', 'funciones:C1:317', 'funciones:C1:318', 'funciones:C1:319'],
   title: 'Formular hipótesis y expresar posibilidad en C1: "¿y si...?" y "para mí que..."',
   summary: 'Invitar a imaginar un escenario hipotético en C1 combina el condicional con distintos marcos ("si...", "en el caso de...", "¿y si...?"), mientras que expresar posibilidad va desde lo formal ("cabe la posibilidad de que...") hasta la intuición coloquial ("para mí que...").',
+  keywords: [
+    { es: '¿Y si + imperfecto de subjuntivo?', en: 'What if…?' },
+    { es: '¿Y si hubiéramos…?', en: 'What if we had…?' },
+    { es: 'Cabe la posibilidad de que…', en: 'There\'s a possibility that…' },
+    { es: 'Para mí que…', en: 'If you ask me…' },
+    { es: 'En el caso de que…', en: 'In the event that… (+ subjunctive)' },
+    { es: 'De haberlo sabido…', en: 'Had I known…' },
+    { es: 'el premio', en: 'the prize' }
+  ],
   sections: [
     { h: 'Invitar a formular una hipótesis: distintos marcos condicionales', html: '<i>Si..., ¿(qué/quién/dónde...) crees que + condicional simple?</i> propone un escenario hipotético y pide una respuesta: <i>si no hubieras conocido a Jorge, ¿cómo crees que sería tu vida ahora?</i>. <i>¿Y si...?</i> lanza la hipótesis de forma más abierta, casi como una idea que surge en el momento: <i>¿y si apareciera aquí mañana y llamara a la puerta...?</i>. <i>En el caso de..., ¿... + condicional simple/compuesto?</i> introduce el escenario con mayor formalidad, y admite tanto una hipótesis futura como una pasada no cumplida: <i>en el caso de haberlo sabido antes, ¿se lo habría contado a alguien?</i>.' },
     { h: 'Expresar posibilidad: de lo formal a lo intuitivo', html: '<i>Pudiera ser que...</i> (con "pudiera", forma de subjuntivo poco frecuente pero correcta) introduce una posibilidad con matiz algo literario: <i>pudiera ser que estuviera toda la semana fuera</i>. <i>Cabe la posibilidad de que...</i> es la fórmula más formal y objetiva. <i>Para mí que...</i> introduce, en cambio, una intuición personal y coloquial: <i>parece que se comporta como siempre, para mí que no sabe nada</i>.' }
@@ -34418,6 +34600,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:335', 'funciones:C1:336', 'funciones:C1:337', 'funciones:C1:338'],
   title: 'Obligación y necesidad en C1: de "es mi obligación" a "basta con que..."',
   summary: 'La obligación se expresa en C1 con matices sobre su origen — "es mi obligación" viene de un deber propio, "me obliga a" viene de una fuerza externa — y "basta con (que)..." marca el umbral mínimo necesario, no una obligación plena.',
+  keywords: [
+    { es: 'Es mi obligación…', en: 'It is my duty to…' },
+    { es: 'Basta con que…', en: 'It\'s enough that… (+ subjunctive)' },
+    { es: 'Nada me obliga a…', en: 'Nothing obliges me to…' },
+    { es: 'verse obligado a', en: 'to be forced to' },
+    { es: 'las condiciones', en: 'the terms' },
+    { es: 'rellenar el formulario', en: 'to fill in the form' },
+    { es: 'el socio', en: 'the partner, the member' }
+  ],
   sections: [
     { h: 'Obligación propia', html: '<i>Es mi obligación...</i> y <i>estoy obligado a...</i> presentan la obligación como algo asumido por el propio hablante: <i>estoy obligada a pagar los recibos</i>. <i>Tengo (la) obligación/necesidad de...</i> distingue matices: obligación es un deber, necesidad es algo que surge de una carencia real: <i>el ser humano tiene la necesidad de dormir</i>.' },
     { h: 'Obligación impuesta desde fuera', html: '<i>...(me) obliga a...</i> presenta la obligación como impuesta por una fuerza externa (persona, circunstancia, institución): <i>la comunidad nos obliga a pagar la avería</i>.' },
@@ -34460,6 +34651,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:355', 'funciones:C1:356', 'funciones:C1:357', 'funciones:C1:366', 'funciones:C1:369', 'funciones:C1:370'],
   title: 'Conocimiento y desconocimiento en C1: de "¿te has enterado de...?" a "lo ignoro"',
   summary: 'Preguntar y responder sobre el conocimiento de algo en C1 combina el registro coloquial ("¿te has enterado de lo de...?") con el más formal ("tengo conocimiento de", "lo ignoro/desconozco"), y "no tener ni la más remota idea" cierra la escala como la negación más rotunda.',
+  keywords: [
+    { es: '¿Te has enterado de…?', en: 'Have you heard about…?' },
+    { es: 'Tenemos conocimiento de que…', en: 'We are aware that… (formal)' },
+    { es: 'No tengo ni la más remota idea.', en: 'I haven\'t the faintest idea.' },
+    { es: 'Lo ignoro.', en: 'I don\'t know. (formal)' },
+    { es: 'desconocer', en: 'to be unaware of' },
+    { es: 'el paradero', en: 'the whereabouts' },
+    { es: 'detectar', en: 'to detect' }
+  ],
   sections: [
     { h: 'Preguntar por el conocimiento de algo', html: '<i>¿Sabes lo que...?</i> es la forma más neutra. <i>¿Te has enterado de lo de...?</i> es coloquial, propia de cotilleos o noticias informales: <i>¿te enteraste de lo de Pedro?</i>. <i>¿Tienes conocimiento de/sobre...?</i> y <i>¿tienes noticia(s) de/sobre...?</i> son más formales, propias de contextos institucionales. <i>¿Tienes idea de...?</i> pregunta de forma más general e indirecta.' },
     { h: 'Expresar conocimiento', html: '<i>Sé lo que...</i> es directo y general: <i>sé perfectamente lo que estás pensando</i>. <i>Tengo conocimiento de...</i> y <i>tengo noticia(s) de...</i> son más formales: <i>tenemos conocimiento de que eso no fue así</i>. <i>Estoy enterado de...</i> se sitúa en un registro intermedio, frecuente para temas cotidianos o de cotilleo: <i>estoy enterada de lo de Rubén</i>.' },
@@ -35108,6 +35308,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:737', 'funciones:C1:738', 'funciones:C1:739', 'funciones:C1:740', 'funciones:C1:742'],
   title: 'Dar una orden en C1: de "tú te callas" a la orden encubierta',
   summary: 'Ordenar en C1 recorre toda una escala de cortesía — desde la orden brusca ("tú te callas") hasta la más ceremoniosa ("¿tendría la bondad de...?") — y termina en la orden encubierta, que ni siquiera usa un verbo de mandato: un simple comentario puede ser, en realidad, una petición de dinero.',
+  keywords: [
+    { es: 'Tú te callas.', en: 'You be quiet. (blunt, present as order)' },
+    { es: 'Te pido por favor que…', en: 'I ask you, please, to… (+ subjunctive)' },
+    { es: '¿Serías tan amable de…?', en: 'Would you be so kind as to…?' },
+    { es: 'Hazme un favor:', en: 'Do me a favour:' },
+    { es: 'Convendría…', en: 'It would be advisable to… (covert order)' },
+    { es: 'entregar', en: 'to hand in' }
+  ],
   sections: [
     { h: 'Órdenes directas, sin ningún atenuante', html: '<i>Te ordeno que...</i> + adverbio de inmediatez es la orden más explícita: <i>le ordeno que salga de mi despacho inmediatamente</i>. <i>Tú + 2.ª persona de presente de indicativo</i> es aún más brusco por su misma sequedad gramatical: <i>tú te callas</i> — no hay imperativo, solo una afirmación tajante.' },
     { h: 'Órdenes atenuadas: imperativo con coletilla', html: 'Un imperativo seguido de una coletilla suaviza la orden sin perder su fuerza: <i>espera un momento, ¿quieres?</i>, <i>pásame el bolso, si no te importa</i>.' },
@@ -35152,6 +35360,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:776', 'funciones:C1:777', 'funciones:C1:778', 'funciones:C1:780'],
   title: 'Pedir favores, objetos y ayuda en C1: la misma escalera de cortesía',
   summary: 'Pedir un favor, un objeto o ayuda en C1 comparte la misma escalera de fórmulas de cortesía creciente — de "¿puedes hacerme el favor de...?" a "¿tendrías la bondad de...?" — y la petición de ayuda puede incluso quedar completamente encubierta, sin pedir nada de forma explícita.',
+  keywords: [
+    { es: '¿Me harías un favor?', en: 'Would you do me a favour?' },
+    { es: '¿Te importa dejarme…?', en: 'Do you mind lending me…?' },
+    { es: '¿Me echas un cable?', en: 'Can you give me a hand? (colloquial)' },
+    { es: 'Si no es molestia…', en: 'If it\'s no trouble…' },
+    { es: 'Te lo devuelvo mañana.', en: 'I\'ll give it back tomorrow.' },
+    { es: 'prestar', en: 'to lend' },
+    { es: 'la molestia', en: 'the trouble' }
+  ],
   sections: [
     { h: 'Pedir un favor: la escalera de cortesía', html: '<i>¿Puedes hacerme el favor de...?</i> y <i>¿me harías el favor de...?</i> son las formas básicas. <i>¿Serías tan amable de...?</i> sube el registro. <i>(Te) agradecería (+ intensificador) que...</i> formula la petición como agradecimiento anticipado: <i>te agradecería enormemente que hablaras con él</i>. <i>Me harías un gran favor si...</i> presenta la petición como condición. <i>Hazme un favor</i> + imperativo es la versión más directa y coloquial: <i>hazme un favor: déjame un euro para llamar</i>.' },
     { h: 'Pedir objetos: los mismos verbos, la misma escalera', html: 'Los verbos <i>dejar, prestar, traer, dar, pasar, alcanzar</i> se insertan en la misma estructura de cortesía: <i>¿podrías hacerme/me harías el favor de dejarme/prestarme/traerme...?</i>, <i>¿tendrías la amabilidad/bondad de darme/dejarme...?</i>, <i>¿serías tan amable de prestarme los apuntes de la clase pasada?</i>. <i>¿Sería mucho pedir que...?</i> puede llevar aquí un matiz de reproche, sugiriendo que la petición ya se ha hecho antes sin éxito: <i>¿sería mucho pedir que, para variar, me dejaras tú la bicicleta esta vez?</i>. <i>(Te) agradecería que me dejaras/prestaras/trajeras...</i> y <i>necesitaría que me dejaras/prestaras/trajeras...</i> completan la escalera.' },
@@ -35192,6 +35409,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:C1:799', 'funciones:C1:800', 'funciones:C1:801', 'funciones:C1:802'],
   title: 'Repetir una orden en C1: "¿cuántas veces tengo que repetirte que...?"',
   summary: 'Cuando una orden no se cumple, el español tiene fórmulas específicas para repetirla con exasperación creciente — desde la pregunta retórica hasta el "por última vez" que anuncia que no habrá más avisos.',
+  keywords: [
+    { es: '¿Cuántas veces tengo que decirte que…?', en: 'How many times do I have to tell you to…?' },
+    { es: 'Por última vez:', en: 'For the last time:' },
+    { es: 'Que te sientes.', en: 'Sit down, I said.' },
+    { es: 'Te lo he dicho ya varias veces.', en: 'I\'ve told you several times already.' },
+    { es: '¿Cómo tengo que decirte que…?', en: 'How do I have to tell you to…?' },
+    { es: 'apagar', en: 'to turn off' }
+  ],
   sections: [
     { h: 'Preguntas retóricas de exasperación', html: '<i>¿Cómo tengo/tendré que decir(te) que...?</i> y <i>¿cuántas veces tengo/tendré que repetir(te) que...?</i> no piden respuesta real — expresan que la orden ya se dio antes y no se ha cumplido: <i>¿cuántas veces te tengo que repetir que no se habla con la boca llena?</i>.' },
     { h: '"Por última vez": el aviso final', html: 'Esta fórmula, seguida de la orden, anuncia que no habrá más repeticiones: <i>te lo digo por última vez: baja de ahí inmediatamente</i>.' },
@@ -35232,6 +35457,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:821', 'funciones:C1:822', 'funciones:C1:823'],
   title: 'Responder a una petición en C1: de "faltaría más" a "¡ni lo sueñes!"',
   summary: 'Responder a una petición en C1 va de la aceptación entusiasta ("faltaría más") a la negativa absoluta ("ni por todo el oro del mundo"), pasando por aceptaciones condicionadas que se dejan literalmente sin terminar y rechazos corteses que se disculpan por no poder ayudar.',
+  keywords: [
+    { es: 'Faltaría más.', en: 'Of course, by all means.' },
+    { es: 'Ahora mismo.', en: 'Right away.' },
+    { es: 'Sintiéndolo mucho…', en: 'Much as I regret it…' },
+    { es: 'Me resulta imposible.', en: 'It\'s impossible for me.' },
+    { es: '¡Ni lo sueñes!', en: 'Don\'t even dream of it!' },
+    { es: 'Lo intentaré.', en: 'I\'ll try.' },
+    { es: 'acompañar', en: 'to go with' }
+  ],
   sections: [
     { h: 'Aceptar sin reservas', html: '<i>(Por mi parte) no hay inconveniente</i> es una aceptación formal y neutra. <i>(Eso) está hecho</i> y <i>¡sin problema(s)!</i> son más informales y directas. <i>Faltaría más</i> es la aceptación más entusiasta, casi indicando que negarse sería impensable.' },
     { h: 'Aceptar con reservas o condiciones', html: 'Una condición con subjuntivo puede matizar la aceptación: <i>no, a menos que me prometas que me vas a dejar salir</i>. Una condicional puede quedar suspendida, sin apódosis, dejando la condición implícita: <i>si no me pides más dinero...</i> (y no continúa). Una subordinada temporal pospone la aceptación a un momento futuro: <i>cuando tenga un momento</i>. <i>Veré lo que puedo hacer</i> es un compromiso deliberadamente vago, sin garantía.' },
@@ -35275,6 +35509,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:896', 'funciones:C1:897', 'funciones:C1:898'],
   title: 'Permiso y prohibición en C1: "eso ni se pregunta" y "digas lo que digas..."',
   summary: 'Pedir permiso en C1 se disfraza a menudo de pregunta sobre la molestia causada ("¿molesto si...?"), darlo va de la formalidad institucional a "eso ni se pregunta", y rechazar una prohibición usa estructuras concesivas que anulan cualquier objeción de antemano: "digas lo que digas...".',
+  keywords: [
+    { es: '¿Me permite…?', en: 'Would you allow me to…?' },
+    { es: '¿Le importa que…?', en: 'Do you mind if… (+ subjunctive)' },
+    { es: 'Queda terminantemente prohibido…', en: '… is strictly forbidden' },
+    { es: 'No está permitido…', en: '… is not permitted' },
+    { es: 'Por supuesto que sí.', en: 'Of course you may.' },
+    { es: 'De ninguna manera.', en: 'Absolutely not.' },
+    { es: 'el permiso', en: 'the permission' }
+  ],
   sections: [
     { h: 'Pedir permiso: distintos enfoques', html: '<i>¿Molesto si...?</i> y <i>¿es/será/sería mucha molestia que/si...?</i> piden permiso enfocándose en la posible molestia causada al otro, no en el propio deseo. <i>¿Hay/tienes (algún) problema/inconveniente con/en...?</i> hace lo mismo con otro matiz. <i>Solicito (tu) permiso/autorización para...</i> es la fórmula más formal, propia de contextos institucionales: <i>solicitamos su autorización para utilizar su nombre</i>.' },
     { h: 'Dar permiso sin objeciones', html: '<i>Tienes/cuentas con/te doy mi autorización/permiso/consentimiento</i> es la forma directa y algo formal. <i>Eso ni se pregunta</i> da permiso dando a entender que la pregunta era innecesaria, tan obvio es el "sí". <i>Faltaría más</i> tiene aquí la misma función entusiasta que en la aceptación de peticiones.' },
@@ -35526,6 +35769,14 @@ window.STRAND_LESSONS = [
   pcic: ['funciones:C1:1044', 'funciones:C1:1045', 'funciones:C1:1046', 'funciones:C1:1047', 'funciones:C1:1048', 'funciones:C1:1049'],
   title: 'Saludar en C1: de "¿qué es de tu vida?" a "señora ministra"',
   summary: 'Saludar en C1 va del saludo coloquial casi retórico ("¿qué pasa?") al tratamiento formal con cargo profesional ("señora ministra"), pasando por "¿qué es de tu vida?", reservado para un reencuentro tras mucho tiempo sin verse.',
+  keywords: [
+    { es: '¿Qué es de tu vida?', en: 'What have you been up to?' },
+    { es: '¿Cómo va todo?', en: 'How\'s everything going?' },
+    { es: '¿Cómo andamos?', en: 'How are we doing?' },
+    { es: 'Señora ministra', en: 'Madam Minister (title + post)' },
+    { es: 'Es un placer saludarle.', en: 'It is a pleasure to greet you.' },
+    { es: '¡Cuánto tiempo sin verte!', en: 'It\'s been so long!' }
+  ],
   sections: [
     { h: 'Saludos coloquiales casi retóricos', html: '<i>¿Qué pasa?</i> y <i>¿qué hay?</i> son saludos coloquiales que, como "¿qué tal?", no esperan una respuesta detallada — funcionan como fórmula de apertura, no como pregunta real. <i>¿Cómo estamos/andamos?</i> usa la primera persona del plural aunque se dirija a una sola persona, dando un tono cercano y desenfadado.' },
     { h: '"¿Qué es de tu vida?": el reencuentro', html: 'Esta fórmula se reserva específicamente para saludar a alguien después de mucho tiempo sin verse, preguntando de forma amplia por los cambios en su vida, no por un detalle concreto.' },
@@ -35567,6 +35818,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:1064', 'funciones:C1:1065', 'funciones:C1:1079', 'funciones:C1:1080', 'funciones:C1:1081'],
   title: 'Responder a un saludo y dirigirse a alguien en C1: "seguimos tirando" y "¿te acuerdas de mí?"',
   summary: 'Responder a "¿qué tal?" en C1 tiene toda una escala de resignación conformista — "seguimos tirando", "no me puedo quejar" — y dirigirse a alguien va de los apelativos afectuosos entre íntimos a la fórmula insegura de reconocer a alguien de vista: "¿te acuerdas de mí?"',
+  keywords: [
+    { es: 'Aquí seguimos tirando.', en: 'Still getting by.' },
+    { es: 'No me puedo quejar.', en: 'Can\'t complain.' },
+    { es: 'Pues nada…', en: 'Well, nothing much…' },
+    { es: '¿Te acuerdas de mí?', en: 'Do you remember me?' },
+    { es: 'Nos conocimos en…', en: 'We met at…' },
+    { es: 'Cariño', en: 'Love, honey (to a partner)' },
+    { es: 'el mando', en: 'the remote control' }
+  ],
   sections: [
     { h: 'Respuestas neutras o resignadas a un saludo', html: '<i>Sin novedad, gracias</i> es una respuesta neutra, casi formal. <i>No me puedo quejar (la verdad)</i>, <i>pues nada, aquí (estamos)</i> y <i>(seguimos) tirando</i> forman una escala de conformismo resignado, ni bien ni mal, simplemente continuando.' },
     { h: 'Respuestas que anticipan una mala racha', html: '<i>Bueno, qué quieres que te diga</i> y <i>para qué te voy a contar</i> anticipan, sin decirlo aún, que las cosas no van especialmente bien — invitan a preguntar más si el otro quiere detalles.' },
@@ -35609,6 +35869,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:1116', 'funciones:C1:1121', 'funciones:C1:1122', 'funciones:C1:1123'],
   title: 'Disculparse y responder en C1: "mil perdones" y "por esta vez pase, pero..."',
   summary: 'Disculparse en C1 va de la fórmula hiperbólica ("mil perdones") a la admisión de no saber cómo reparar el daño ("no sé cómo disculparme"), y responder a una disculpa puede aceptarla del todo o con la advertencia de que no se repita: "por esta vez pase, pero...".',
+  keywords: [
+    { es: 'Le pido disculpas.', en: 'I apologise. (formal)' },
+    { es: 'Siento muchísimo…', en: 'I\'m terribly sorry…' },
+    { es: 'No sabes cuánto lo siento.', en: 'You don\'t know how sorry I am.' },
+    { es: 'No tiene importancia.', en: 'It doesn\'t matter.' },
+    { es: 'No te preocupes, de verdad.', en: 'Don\'t worry about it, really.' },
+    { es: 'Ha sido culpa mía.', en: 'It was my fault.' },
+    { es: 'disculpar', en: 'to forgive' }
+  ],
   sections: [
     { h: 'Disculparse admitiendo la gravedad', html: '<i>Espero que sepas/puedas disculparme</i> pone la aceptación en manos del otro. <i>No sé cómo disculparme</i> admite que la disculpa parece insuficiente frente al daño causado. <i>Mil perdones</i> es una hipérbole que multiplica la disculpa para intensificarla.' },
     { h: 'Disculparse explicando la razón', html: '<i>Tienes que perdonarme, pero (es que)...</i> pide perdón introduciendo a la vez una justificación: <i>tienes que perdonarme, pero ayer al final no pude enviarte el mensaje porque llegué tarde</i>.' },
@@ -35651,6 +35920,15 @@ window.STRAND_LESSONS = [
          'funciones:C1:1151', 'funciones:C1:1152', 'funciones:C1:1153', 'funciones:C1:1154'],
   title: 'Agradecer y dar el pésame en C1: "¿qué haría yo sin ti?" y "mi más sentido pésame"',
   summary: 'Agradecer en C1 va de la hipérbole afectuosa ("¿qué haría yo sin ti?") a la fórmula que casi reprocha el esfuerzo del otro ("no tenías que haberte molestado"), mientras que dar el pésame usa un registro ceremonioso muy marcado: "mi más sentido pésame".',
+  keywords: [
+    { es: 'No sabes cuánto te agradezco…', en: 'You\'ve no idea how grateful I am…' },
+    { es: '¿Qué haría yo sin ti?', en: 'What would I do without you?' },
+    { es: 'Mi más sentido pésame', en: 'My deepest condolences' },
+    { es: 'Te acompaño en el sentimiento.', en: 'You have my sympathy.' },
+    { es: 'No tenías que haberte molestado.', en: 'You shouldn\'t have gone to the trouble.' },
+    { es: 'Faltaría más.', en: 'Not at all / of course.' },
+    { es: 'la pérdida', en: 'the loss' }
+  ],
   sections: [
     { h: 'Agradecer con intensidad', html: '<i>Gracias de antemano</i> agradece algo que todavía no ha ocurrido. <i>Muy amable de/por tu parte...</i> valora positivamente el gesto del otro. <i>Te estoy muy/francamente agradecido</i> es directo y algo formal. <i>Mil/un millón de gracias</i> intensifica hiperbólicamente el agradecimiento.' },
     { h: 'Agradecer reconociendo el esfuerzo del otro', html: '<i>No tenías que haberte molestado/que haberlo hecho</i> agradece señalando, casi con un reproche cariñoso, que el esfuerzo era innecesario. <i>¿Qué haría yo sin ti?</i> es una hipérbole que reconoce una ayuda como indispensable.' },
@@ -35693,6 +35971,14 @@ window.STRAND_LESSONS = [
          'funciones:C1:1187', 'funciones:C1:1189'],
   title: 'Felicitar y despedirse en C1: "estás de enhorabuena" y "sin otro particular"',
   summary: 'Felicitar en C1 va del gesto físico coloquial ("¡choca esos cinco!") a la fórmula ritual de cumpleaños que casi desea seguir vivo para el próximo, y despedirse tiene un registro escrito muy formal que no existe en la lengua oral: "sin otro particular...".',
+  keywords: [
+    { es: 'estar de enhorabuena', en: 'to have reason to celebrate' },
+    { es: '¡Menuda noticia!', en: 'What news!' },
+    { es: 'Sin otro particular', en: 'With nothing further to add (formal close)' },
+    { es: 'Aprovecho la ocasión para…', en: 'I take this opportunity to…' },
+    { es: 'Ha sido un verdadero placer.', en: 'It has been a real pleasure.' },
+    { es: 'Ya sabes dónde estoy.', en: 'You know where to find me.' }
+  ],
   sections: [
     { h: 'Felicitar de forma coloquial y general', html: '<i>Creo que estás de enhorabuena</i> felicita indirectamente, señalando el motivo de alegría del otro. <i>¡Choca esos cinco!</i> es un gesto físico verbalizado, muy coloquial. <i>(Mis) felicitaciones</i> es más neutro y puede usarse en casi cualquier contexto.' },
     { h: 'Felicitar en cumpleaños y fiestas', html: '<i>Que cumplas muchos más y que (los demás) lo veamos</i> es una fórmula ritual de cumpleaños con un matiz curioso: desea larga vida no solo al festejado, sino también a quienes lo celebran, para poder seguir viéndolo. <i>Felices fiestas/Navidades y próspero año nuevo</i> y <i>mis mejores deseos en/para estos días (tan señalados)</i> son fórmulas fijas de felicitaciones estacionales.' },
@@ -35872,6 +36158,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:102'],
   title: 'Géneros orales en C1: intervenir en tu especialidad',
   summary: 'C1 pushes the reception/production line into professional territory: contributing to a highly structured formal meeting on your own specialty, or arguing your side of a complex public debate, are now things you must be able to DO — while long lectures on abstract topics and eclesiastical sermons stay strictly things you only need to follow.',
+  keywords: [
+    { es: 'Propondría…', en: 'I would propose…' },
+    { es: 'girar en torno a', en: 'to revolve around' },
+    { es: 'intervenir', en: 'to take the floor' },
+    { es: 'la ponencia', en: 'the conference paper' },
+    { es: 'el sermón', en: 'the sermon' },
+    { es: 'dado el volumen de…', en: 'given the volume of…' },
+    { es: 'ampliar el plazo', en: 'to extend the deadline' }
+  ],
   sections: [
     { h: 'Solo recepción: lo abstracto y lo ritual', html: 'Los discursos y conferencias extensos sobre temas abstractos y los sermones eclesiásticos quedan en (R) — se espera que sigas el hilo de un razonamiento largo, no que produzcas nada de esa densidad tú mismo.' },
     { h: 'Producción nueva: el debate complejo', html: 'Por primera vez, participar en debates y discusiones públicas sobre asuntos de cierta complejidad — de interés personal, general, académico o profesional — pasa a ser (P): debes poder defender una postura, no solo escucharla.' },
@@ -35911,6 +36206,16 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:127', 'generos_discursivos:C1:128'],
   title: 'Géneros escritos en C1: el informe extenso y la reseña propia',
   summary: 'C1 raises the bar on production: a professional report now covers a genuinely complex project or specialty topic (not just a short pros-and-cons memo), and writing your own medium-length review joins reading other people\'s — while thesauri and simple contracts stay strictly reference material, consulted for a fact, never imitated.',
+  keywords: [
+    { es: 'el informe extenso', en: 'the long-form report' },
+    { es: 'la reseña', en: 'the review' },
+    { es: 'Se recomienda…', en: 'It is recommended that…' },
+    { es: 'la implantación gradual', en: 'the phased rollout' },
+    { es: 'el piloto', en: 'the pilot scheme' },
+    { es: 'el ritmo narrativo', en: 'the narrative pace' },
+    { es: 'flojo', en: 'weak' },
+    { es: 'el tesauro', en: 'the thesaurus' }
+  ],
   sections: [
     { h: 'Solo consulta: tesauros y contratos simples', html: 'Los tesauros y los contratos sencillos (laborales, de alquiler) quedan en (R) — se consultan para resolver una duda puntual de vocabulario o de cláusula, nunca se toman como modelo de tu propia escritura.' },
     { h: 'El informe se vuelve extenso y especializado', html: 'Frente al informe breve de B2, C1 añade el informe extenso y complejo sobre un tema de tu propia especialidad (R) y el informe de extensión media sobre un proyecto profesional o una postura abstracta (P) — más desarrollo, más matiz, más partes.' },
@@ -35996,6 +36301,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:367'],
   title: 'La presentación pública: el nivel más pulido',
   summary: 'Same four-stage structure as any public presentation, but at its most polished: the audience is assumed to already know the basics ("ustedes conocen sobradamente..."), the summary of what is coming is mapped out explicitly ("nos conducirán a..., por un lado, por otro"), and the closing earns its warmth — humor, a well-placed quote, sincere praise for the audience — rather than reaching for it as filler.',
+  keywords: [
+    { es: 'Ustedes conocen sobradamente…', en: 'You are all well aware of…' },
+    { es: 'Comenzaremos por…', en: 'We will begin with…' },
+    { es: 'Así pues, en suma', en: 'So, in short' },
+    { es: 'sintetizando lo anterior', en: 'to sum up the above' },
+    { es: 'la postura', en: 'the position, the stance' },
+    { es: 'en torno a', en: 'around, concerning' },
+    { es: 'conducir a', en: 'to lead to' }
+  ],
   sections: [
     { h: 'Presuponer, no explicar de más', html: 'En vez de anunciar el tema como si fuera nuevo, se da por hecho el conocimiento previo del público: "ustedes conocen sobradamente...", "la mayoría de los presentes está familiarizado con...". Esto libera tiempo para profundizar, no para repasar lo obvio.' },
     { h: 'El mapa del desarrollo, explícito', html: 'El sumario ya no es una simple lista de puntos, sino un mapa de cómo se conectan: "comenzaremos..., nos conducirán a..., por un lado, por otro" — el público sabe de antemano por qué el orden elegido tiene sentido.' },
@@ -36038,6 +36352,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:454', 'generos_discursivos:C1:459'],
   title: 'La carta comercial: atención, interés, deseo, acción',
   summary: 'A sales letter that jumps straight from a greeting to a product description has skipped the two moves that actually sell anything: creating interest before the offer, and building a specific reason to want it before ever asking for action.',
+  keywords: [
+    { es: 'Les escribimos para…', en: 'We are writing to…' },
+    { es: 'Les invitamos a…', en: 'We invite you to…' },
+    { es: 'la muestra gratuita', en: 'the free sample' },
+    { es: 'el criterio decisivo', en: 'the deciding factor' },
+    { es: 'la sostenibilidad', en: 'sustainability' },
+    { es: 'Quedamos a su disposición.', en: 'We remain at your disposal.' },
+    { es: 'la línea de productos', en: 'the product line' }
+  ],
   sections: [
     { h: 'El encabezado, sin atajos', html: 'Datos del remitente, datos del destinatario, fecha, asunto y saludo van siempre en ese orden — el asunto resume en una línea qué motiva la carta antes incluso del saludo formal.' },
     { h: 'El cuerpo: cuatro intentos, en orden', html: 'Captar la atención, generar interés en el producto o servicio, crear la necesidad o el deseo de conseguirlo, y solo entonces animar a la acción — saltarse un paso deja la carta sin fuerza persuasiva.' },
@@ -36078,6 +36401,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:520'],
   title: 'La carta de reclamación: motivo, argumento, solución',
   summary: 'A complaint letter that lists everything wrong but never proposes a fix leaves the resolution entirely up to the reader; the move that actually gets a complaint resolved is the specific solution proposed at the end, not the length of the grievance.',
+  keywords: [
+    { es: 'En relación con…', en: 'Regarding…' },
+    { es: 'el pedido', en: 'the order' },
+    { es: 'el desperfecto', en: 'the damage, the defect' },
+    { es: 'el embalaje', en: 'the packaging' },
+    { es: 'Solicito la sustitución de…', en: 'I request the replacement of…' },
+    { es: 'en un plazo máximo de', en: 'within a maximum of' },
+    { es: 'la unidad', en: 'the unit, the item' }
+  ],
   sections: [
     { h: 'Contextualizar antes de reclamar', html: 'Antes de exponer el problema, se sitúa el contexto: qué compra o servicio contratado motiva la carta, con referencia a fecha, número de pedido o contrato si es posible.' },
     { h: 'Exponer los motivos con precisión', html: 'Cada motivo de la reclamación se expone de forma concreta y verificable, no como una queja genérica — cuanto más específico, más fácil de resolver por la otra parte.' },
@@ -36117,6 +36449,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:545', 'generos_discursivos:C1:550', 'generos_discursivos:C1:564', 'generos_discursivos:C1:567'],
   title: 'La composición escrita: título, hoja de ruta, síntesis',
   summary: 'A written composition with no explicit roadmap forces the reader to guess where the argument is headed; naming the destination up front — "en primer lugar... finalmente" — is what turns a string of paragraphs into a text someone can follow.',
+  keywords: [
+    { es: 'Este escrito se propone…', en: 'This piece sets out to…' },
+    { es: 'En primer lugar se expondrán…', en: 'First, … will be presented' },
+    { es: 'tanto… como…', en: 'both… and…' },
+    { es: 'En conclusión', en: 'In conclusion' },
+    { es: 'ni… ni…', en: 'neither… nor…' },
+    { es: 'en sí mismo', en: 'in itself' },
+    { es: 'la hoja de ruta', en: 'the roadmap' }
+  ],
   sections: [
     { h: 'El título, no un simple encabezado', html: 'El título anticipa el tema concreto de la composición, no una etiqueta genérica como "Ensayo" o "Composición".' },
     { h: 'La introducción en tres pasos', html: 'Contextualizar el tema, declarar el objetivo del escrito, y presentar la hoja de ruta del desarrollo ("en primer lugar..., a continuación..., finalmente...") — los tres pasos, en ese orden.' },
@@ -36157,6 +36498,15 @@ window.STRAND_LESSONS = [
          'generos_discursivos:C1:614', 'generos_discursivos:C1:619', 'generos_discursivos:C1:624'],
   title: 'El trabajo académico: de lo general a lo no resuelto',
   summary: 'An academic paper\'s introduction narrows twice before stating its objective — general context, then specific context — and its conclusion doesn\'t just summarize: it evaluates the implications of what was found and names what remains unresolved for future work, closed off by bibliography and any appendices.',
+  keywords: [
+    { es: 'el presente trabajo', en: 'this paper' },
+    { es: 'centrarse en', en: 'to focus on' },
+    { es: 'los hallazgos', en: 'the findings' },
+    { es: 'Queda por resolver si…', en: 'It remains to be established whether…' },
+    { es: 'el marco teórico', en: 'the theoretical framework' },
+    { es: 'a partir de los datos', en: 'on the basis of the data' },
+    { es: 'cabe señalar que', en: 'it should be noted that' }
+  ],
   sections: [
     { h: 'La introducción, en cuatro movimientos', html: 'Contextualización general del tema, contextualización específica (el ángulo concreto que se va a tratar), objetivo del escrito, y presentación de la hoja de ruta — más pasos que en una composición escrita ordinaria, porque el lector académico espera ubicación precisa antes del objetivo.' },
     { h: 'La conclusión, más allá de la síntesis', html: 'Además de retomar la idea principal y sintetizar el desarrollo, la conclusión académica evalúa las repercusiones de lo expuesto y señala explícitamente qué aspectos quedan sin resolver para futuros trabajos.' },
