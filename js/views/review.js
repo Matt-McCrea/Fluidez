@@ -88,6 +88,14 @@ window.StageReview = (function () {
         kind: 'verb-tense', tense: pick.tense, fixed: true, enrolledOnly: true, hint: E.TENSE_LABEL[pick.tense]
       });
     });
+    /* The phrases every lesson opens with (js/phrases.js). enrolledOnly, so
+     * they are not 5,290 cards dumped into the deck on day one — a phrase
+     * arrives here because a game round put it in play, which means it
+     * arrives because you got it wrong, which is when it is worth asking. */
+    (window.Phrases ? window.Phrases.all() : []).forEach(function (ph) {
+      items.push({ id: ph.id, es: ph.es, en: ph.en, kind: 'phrase',
+                   hint: ph.note || null, enrolledOnly: true });
+    });
     if (ErrorLog) ErrorLog.cards().forEach(function (c) {               // {front, back, hint} — fixed
       items.push({ id: c.id, front: c.front, back: c.back, hint: c.hint || null, kind: 'error', fixed: true });
     });

@@ -129,11 +129,12 @@ window.GameItems = (function () {
     };
 
     // --- translation / listening pairs ---
-    function addPair(band, es, en, note, bonus) {
+    function addPair(band, es, en, note, bonus, id) {
       var p = cleanPair(es, en);
       if (!p) return;
       p.note = note || null;
       p.bonus = bonus || 0;
+      p.id = id || null;            // set where the item is one the SRS can schedule
       idx.pairs[band].push(p);
     }
     (window.STRAND_LESSONS || []).forEach(function (l) {
@@ -151,6 +152,14 @@ window.GameItems = (function () {
     (window.IDIOMS || []).forEach(function (x) {
       // an idiom is never an A1 item however short it is — you cannot derive it
       addPair('B1', x.es, x.en, x.lit ? 'lit. ' + x.lit : null, 40);
+    });
+    /* The keyword tables — the Spanish each lesson is built out of, hand
+     * curated and glossed. Worth a bonus over an example sentence for the
+     * same reason a writing model is: somebody chose these on purpose as the
+     * words that lesson runs on. They carry an id, so missing one in a game
+     * schedules it for review (js/phrases.js). */
+    (window.Phrases ? window.Phrases.all() : []).forEach(function (ph) {
+      addPair(ph.band, ph.es, ph.en, ph.note, 20, ph.id);
     });
 
     // --- vocabulary, bucketed by band and by PCIC theme ---
@@ -404,7 +413,7 @@ window.GameItems = (function () {
     var p = got.p;
     var bonus = (p.bonus || 0) + Math.max(0, p.n - 3) * 10;
     var base = { kind: 'translate', cefr: got.cefr, bonus: bonus, es: p.es,
-                 prompt: p.en, answer: p.es, note: p.note, topic: null, id: null };
+                 prompt: p.en, answer: p.es, note: p.note, topic: null, id: p.id || null };
     if (!got.build) { base.play = 'type'; base.accept = [p.es]; return base; }
 
     /* Chips carry no punctuation at all. A chip reading "noticia," asks the

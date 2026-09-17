@@ -21,6 +21,9 @@ window.Hub = (function () {
     (window.GRAMMAR_LESSONS || []).forEach(function (l) {
       (l.recall || []).forEach(function (r) { if (r.srs !== false && S.isEnrolled(r.id)) items.push({ id: r.id }); });
     });
+    (window.Phrases ? window.Phrases.all() : []).forEach(function (ph) {
+      if (S.isEnrolled(ph.id)) items.push({ id: ph.id });
+    });
     if (window.ErrorLog) window.ErrorLog.cards().forEach(function (c) { items.push({ id: c.id }); });
     return window.Vetoed ? window.Vetoed.filter(items) : items;
   }
