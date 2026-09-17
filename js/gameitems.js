@@ -102,6 +102,27 @@ window.GameItems = (function () {
    */
   var TYPEABLE = /^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9 .,;:!?¿¡'’%-]+$/;
 
+  /* Loose enough that "I'm going to the bank." and "I am going to the bank"
+   * are the same prompt, strict enough not to collapse different sentences. */
+  function enKey(en) {
+    return String(en || '').toLowerCase()
+      .replace(/\bi['’]m\b/g, 'i am').replace(/\bdon['’]t\b/g, 'do not')
+      .replace(/\bit['’]s\b/g, 'it is').replace(/\byou['’]re\b/g, 'you are')
+      .replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
+  /* Everything the corpus accepts for this item's English, plus anything the
+   * learner has successfully argued for (js/accepted.js). */
+  function altsFor(en) {
+    var out = [];
+    var k = enKey(en);
+    if (!k) return out;
+    var corpus = own(index().byEnglish, k);
+    if (corpus) out = out.concat(corpus);
+    if (window.Accepted) out = out.concat(window.Accepted.forEnglish(k));
+    return out;
+  }
+
   function cleanPair(es, en) {
     if (!es || !en) return null;
     es = String(es).trim();
@@ -125,7 +146,18 @@ window.GameItems = (function () {
       words: {},                      // every single-word form VOCAB knows, for
                                       // checking that a distractor is a real word
       glossesOf: {},                  // spanish word -> the english meanings it has
-      byTense: {}                     // tense key -> APPLY cloze items using it
+      byTense: {},                    // tense key -> APPLY cloze items using it
+      /* normalised English -> every Spanish the corpus pairs with it.
+       *
+       * The app teaches ¿Qué tal?, ¿Cómo estás? and ¿Cómo está usted? as
+       * translations of "How are you?" and then, in a game, marked two of the
+       * three wrong depending on which one it happened to draw. Measured over
+       * 2,912 sampled prompts, 43 had more than one valid Spanish in the
+       * app's own data, and 84% of the cross-checks came back "wrong". This
+       * is the app disagreeing with itself, and it needs no judgement to fix:
+       * if the corpus says both are translations of that English, both are
+       * accepted. */
+      byEnglish: {}
     };
 
     // --- translation / listening pairs ---
@@ -136,6 +168,11 @@ window.GameItems = (function () {
       p.bonus = bonus || 0;
       p.id = id || null;            // set where the item is one the SRS can schedule
       idx.pairs[band].push(p);
+      var k = enKey(p.en);
+      if (k) {
+        var list = own(idx.byEnglish, k) || (idx.byEnglish[k] = []);
+        if (list.indexOf(p.es) === -1) list.push(p.es);
+      }
     }
     (window.STRAND_LESSONS || []).forEach(function (l) {
       var band = BANDS.indexOf(l.cefr) === -1 ? 'B1' : l.cefr;
@@ -294,6 +331,9 @@ window.GameItems = (function () {
    * the accents-only near miss — Checker.checkExact already knows. */
   function acceptFor(item) {
     var list = (item.accept || [item.answer]).slice();
+    if (item.prompt && (item.kind === 'translate' || item.kind === 'listen')) {
+      altsFor(item.prompt).forEach(function (a) { if (list.indexOf(a) === -1) list.push(a); });
+    }
     list.slice().forEach(function (a) {
       var bare = String(a).replace(PRONOUNS, '');
       if (bare !== a) list.push(bare);
@@ -825,6 +865,7 @@ window.GameItems = (function () {
   return {
     draw: draw, next: next, grade: grade, reset: reset, index: index, words: words,
     setFocus: setFocus, weakItem: weakItem, conjPrompt: conjPrompt,
-    listenRate: listenRate, bandForLevel: bandForLevel
+    listenRate: listenRate, bandForLevel: bandForLevel,
+    enKey: enKey, altsFor: altsFor
   };
 })();

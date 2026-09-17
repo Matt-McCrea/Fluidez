@@ -59,6 +59,7 @@ window.GameRound = (function () {
     var perItemClock = !cfg.duration;
 
     var score = 0, shownScore = 0, combo = 0, bestCombo = 0, bestRung = rung;
+    var comboBefore = 0, rungBefore = rung;
     var seen = 0, right = 0, runLen = 0, bestRun = 0, misses = [], usedPrompts = {};
     var ended = false, paused = false, pausedAt = 0, recordHit = false;
     var endAt = cfg.duration ? Date.now() + cfg.duration : null;
@@ -294,6 +295,10 @@ window.GameRound = (function () {
       resolved = true;
       var ms = Date.now() - itemStart;
       var item = current;
+      // what the run looked like before this answer, so "eso también vale"
+      // can put it back rather than trying to unpick the arithmetic
+      comboBefore = combo;
+      rungBefore = rung;
       seen++;
       var a = GS.award(item, result, ms, combo);
 
@@ -411,10 +416,35 @@ window.GameRound = (function () {
       if (why) box.appendChild(el('span', 'g-fb-note', why));
       fbHost.appendChild(box);
 
+      var row2 = el('div', 'g-fb-actions');
+
+      /* "That counts too." Only where the learner actually produced Spanish
+       * and the app said no — not on a timeout, not on a tap, and not on a
+       * near miss, which already gave them the item. No data file holds every
+       * good translation, so the app has to be correctable; see
+       * js/accepted.js for why this is not a cheat button. */
+      if (typedIt && result === 'wrong' && !timedOut && item.prompt && window.Accepted) {
+        var mine = el('button', 'g-mine', 'eso también vale');
+        mine.type = 'button';
+        mine.addEventListener('click', function () {
+          window.Accepted.add(item.prompt, lastTyped.trim());
+          mine.disabled = true;
+          mine.textContent = 'anotado — contará la próxima vez';
+          /* Kept, not awarded. Scoring it now would price an answer nobody
+           * graded; keeping the combo and the rung means the round stops
+           * punishing you for being right. */
+          combo = comboBefore;
+          rung = rungBefore;
+          shell.dataset.state = 'near';
+        });
+        row2.appendChild(mine);
+      }
+
       var go = el('button', 'g-continue', 'Seguir →');
       go.type = 'button';
       go.addEventListener('click', done);
-      fbHost.appendChild(go);
+      row2.appendChild(go);
+      fbHost.appendChild(row2);
       var t = setTimeout(done, result === 'near' ? 1500 : 2400);
       function done() {
         clearTimeout(t);
