@@ -127,8 +127,8 @@ window.Shell = (function () {
        * comes back tomorrow", which is true and is not an answer to "so what
        * now?". One box says what tomorrow actually is and offers to start it
        * early — nothing in this app is locked, Lecciones has always let you
-       * take any lesson. The other rotates by the day through the practice
-       * that already exists, so the second visit is not the same suggestion
+       * take any lesson. The other is practice, rotated by the day through
+       * what already exists, so the second visit is not the same suggestion
        * every time. */
       var pair = UI.el('div', 'next-pair');
 
@@ -151,7 +151,7 @@ window.Shell = (function () {
       var side = sideSuggestion(due);
       if (side) {
         var sb = UI.el('button', 'next-box alt'); sb.type = 'button';
-        sb.innerHTML = '<span class="nb-eyebrow">' + T('Mientras tanto', 'Meanwhile') + '</span>' +
+        sb.innerHTML = '<span class="nb-eyebrow">' + T('Práctica', 'Practice') + '</span>' +
           '<b class="nb-title">' + side.title + '</b>' +
           '<span class="nb-sub">' + side.sub + '</span>' +
           '<span class="nb-go">' + side.cta + ' →</span>';
