@@ -103,25 +103,13 @@ window.Shell = (function () {
      * was to repeat the thing you had just finished. The done state is its
      * own card now, and its job is to hand you somewhere worth going. */
     if (doneToday && !isActive) {
+      /* Just the two boxes. This card used to open with a "Done for today"
+       * pill and "You did <lesson>", both of which the status strip directly
+       * above already says — and then a Review button, which the strip's due
+       * count and the practice box were both also offering. Four things
+       * telling you the same two facts. The strip carries the state; the card
+       * carries the action, and nothing else. */
       var dc = UI.el('div', 'today-card done-card');
-      dc.appendChild(UI.el('div', 'eyebrow done', T('Hecho por hoy', 'Done for today')));
-      if (t && t.lessonTitle) {
-        dc.appendChild(UI.el('div', 'done-what',
-          T('Has hecho ', 'You did ') + '<b>' + t.lessonTitle + '</b>'));
-      }
-
-      /* Review is the one thing that is genuinely worth doing twice in a day,
-       * because the scheduler asked for it — so it gets the button. */
-      if (due) {
-        var rb = UI.el('button', 'primary-btn today-go');
-        rb.type = 'button';
-        rb.textContent = T('Repasar ' + due + ' →', 'Review ' + due + ' →');
-        rb.addEventListener('click', function () { window.App.go('session', 'rapido'); });
-        var rr = UI.el('div', 'today-go-row');
-        rr.appendChild(rb);
-        rr.appendChild(UI.el('span', 'muted small', T('unos 4 min', 'about 4 min')));
-        dc.appendChild(rr);
-      }
 
       /* Two boxes, half width. The card used to end here with "the course
        * comes back tomorrow", which is true and is not an answer to "so what
@@ -148,13 +136,17 @@ window.Shell = (function () {
         pair.appendChild(nb);
       }
 
-      var side = sideSuggestion(due);
+      /* Same recommender as the Quick Play card, with the two things this
+       * screen is already showing ruled out: the due count is in the strip
+       * above, and the games card below headlines today's challenge. */
+      var side = window.QuickPlay
+        ? window.QuickPlay.pick({ skipReview: true, skipDaily: true }) : null;
       if (side) {
         var sb = UI.el('button', 'next-box alt'); sb.type = 'button';
         sb.innerHTML = '<span class="nb-eyebrow">' + T('Práctica', 'Practice') + '</span>' +
-          '<b class="nb-title">' + side.title + '</b>' +
-          '<span class="nb-sub">' + side.sub + '</span>' +
-          '<span class="nb-go">' + side.cta + ' →</span>';
+          '<b class="nb-title">' + side.label + '</b>' +
+          '<span class="nb-sub">' + side.why + '</span>' +
+          '<span class="nb-go">' + (side.cta || T('Empezar', 'Start')) + ' →</span>';
         sb.addEventListener('click', side.run);
         pair.appendChild(sb);
       }
@@ -226,11 +218,12 @@ window.Shell = (function () {
     host.appendChild(card);
     }
 
-    /* Two minutes, chosen for you. Sits directly under the session card
-     * because it is the answer to the question the session card cannot
-     * answer: what if I do not have fifteen minutes, or have already done
-     * them? It says nothing when it has nothing true to say. */
-    if (window.QuickPlay && window.QuickPlay.card) {
+    /* Two minutes, chosen for you — the answer to the question the session
+     * card cannot answer: what if I do not have fifteen minutes? Only when
+     * there is a session still to take. Once it is done the Practice box on
+     * the card above is the same recommender saying the same thing, and two
+     * of them a centimetre apart is just noise. */
+    if (!doneToday && window.QuickPlay && window.QuickPlay.card) {
       var qp = window.QuickPlay.card();
       if (qp) host.appendChild(qp);
     }
@@ -290,38 +283,6 @@ window.Shell = (function () {
     // the only thing left in here is the mistake deck, so with no mistakes
     // there is nothing to append — an empty block would just add a gap
     if (extras.firstChild) host.appendChild(extras);
-  }
-
-  /* The second box, rotated by the day so the app is not making the same
-   * recommendation every evening. Only offers what is actually available: no
-   * weak-spots round without mistakes logged, no game if the module is
-   * missing. */
-  function sideSuggestion(due) {
-    var opts = [];
-    var Sel = window.Selector, G = window.Games;
-    function overlay(fn) {
-      return function () { window.Shell.openOverlay(); fn(document.getElementById('stage-host')); };
-    }
-    if (G && G.recommend) {
-      var rec = G.recommend();
-      if (rec) opts.push({ title: rec.game.name, sub: rec.why, cta: T('Jugar', 'Play'),
-                           run: function () { G.open(rec.game.key); } });
-    }
-    if (Sel && Sel.showTensePicker) {
-      opts.push({ title: T('Gramática', 'Grammar'), sub: T('Elige un tiempo y practícalo', 'Pick a tense and drill it'),
-                  cta: T('Elegir', 'Choose'), run: overlay(Sel.showTensePicker) });
-    }
-    if (Sel && Sel.showThemePicker) {
-      opts.push({ title: T('Por tema', 'By topic'), sub: T('Escribe sobre algo concreto', 'Write about something specific'),
-                  cta: T('Elegir', 'Choose'), run: overlay(Sel.showThemePicker) });
-    }
-    if (Sel && Sel.runWeakSpots && window.ErrorLog && window.ErrorLog.cards().length >= 3) {
-      opts.push({ title: T('Puntos débiles', 'Weak spots'), sub: T('Lo que se te sigue resistiendo', 'What keeps catching you out'),
-                  cta: T('Practicar', 'Practise'), run: overlay(Sel.runWeakSpots) });
-    }
-    if (!opts.length) return null;
-    var day = window.SRS ? window.SRS.today() : 0;
-    return opts[Math.abs(day) % opts.length];
   }
 
   // ---- Más: a menu, with its own sub-navigation inside the same container --

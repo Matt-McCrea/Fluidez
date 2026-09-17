@@ -16,10 +16,16 @@
  *   2. today's challenge has not been played       → the challenge
  *   3. you keep missing the same things            → a weak-spots round
  *   4. you came within a whisker of a record       → that game
- *   5. otherwise                                   → the game you have played least
+ *   5. nothing is pressing                         → practice, rotated by day
  *
  * No weighting, no model. If a rule fires it also supplies the sentence that
  * says why, and the button never claims a reason it does not have.
+ *
+ * It is the app's ONLY recommender. The home screen briefly had three — this
+ * card, a rotating practice box on the done card, and the games card — all
+ * suggesting what to do next within one screen of each other, sometimes the
+ * same thing twice. The other two are gone; the practice box calls pick()
+ * with the things its own surface already shows ruled out.
  * ========================================================================== */
 window.QuickPlay = (function () {
   var UI = window.UI;
@@ -35,26 +41,35 @@ window.QuickPlay = (function () {
     try { return window.SRS.dueCount(window.Hub.reviewPool()); } catch (e) { return 0; }
   }
 
-  /* The strongest available reason, as { label, why, run }. Null only if the
-   * app is too empty to have an opinion, which in practice means the games
-   * module failed to load. */
-  function pick() {
-    var GS = window.GameScore, G = window.Games;
+  /* The strongest available reason, as { label, why, cta, mins, run }.
+   *
+   * `opts` lets a caller rule things out that its own surface is already
+   * showing, which is how the home screen avoids recommending the same thing
+   * three times: the done-state Practice box passes skipReview (the due count
+   * is in the strip above it) and skipDaily (the Games card below headlines
+   * the challenge already).
+   *
+   * Null only if the app is too empty to have an opinion. */
+  function pick(opts) {
+    var GS = window.GameScore, G = window.Games, Sel = window.Selector;
+    opts = opts || {};
 
     var due = dueNow();
-    if (due >= DUE_ENOUGH) {
+    if (!opts.skipReview && due >= DUE_ENOUGH) {
       return {
         label: T('Repasar ' + due, 'Review ' + due),
         why: T('Es lo que toca hoy', 'These came due today'),
+        cta: T('Repasar', 'Review'),
         mins: T('unos 4 min', 'about 4 min'),
         run: function () { window.App.go('session', 'rapido'); }
       };
     }
 
-    if (GS && G && !GS.todayBest(GS.dailyKey())) {
+    if (!opts.skipDaily && GS && G && !GS.todayBest(GS.dailyKey())) {
       return {
         label: T('Reto de hoy', "Today's challenge"),
         why: T('Todavía no lo has jugado', 'You have not played it yet'),
+        cta: T('Jugar', 'Play'),
         mins: '90 s',
         run: function () { G.open(GS.dailyKey()); }
       };
@@ -67,6 +82,7 @@ window.QuickPlay = (function () {
         return {
           label: T('Puntos débiles', 'Weak spots'),
           why: T('Lo que se te sigue resistiendo', 'The things you keep missing'),
+          cta: T('Practicar', 'Practise'),
           mins: '60 s',
           run: function () { G.openWeak(topic.key, G.topicLabel(topic.key)); }
         };
@@ -80,11 +96,40 @@ window.QuickPlay = (function () {
         return {
           label: rec.game.name,
           why: rec.why,
+          cta: T('Jugar', 'Play'),
           mins: Math.round((rec.game.secs || 60) / 60) + ' min',
           hot: near > NEARLY && near < 1,
           run: function () { G.open(rec.game.key); }
         };
       }
+    }
+
+    /* Nothing is pressing, so offer practice, rotated by the day rather than
+     * ranked — with no reason to prefer one there is no honest way to rank
+     * them, and the same suggestion every evening is its own problem. */
+    var rot = [];
+    function overlay(fn) {
+      return function () { window.Shell.openOverlay(); fn(document.getElementById('stage-host')); };
+    }
+    if (Sel && Sel.showTensePicker) {
+      rot.push({ label: T('Gramática', 'Grammar'),
+                 why: T('Elige un tiempo y practícalo', 'Pick a tense and drill it'),
+                 cta: T('Elegir', 'Choose'), mins: '5 min', run: overlay(Sel.showTensePicker) });
+    }
+    if (Sel && Sel.showThemePicker) {
+      rot.push({ label: T('Por tema', 'By topic'),
+                 why: T('Escribe sobre algo concreto', 'Write about something specific'),
+                 cta: T('Elegir', 'Choose'), mins: '5 min', run: overlay(Sel.showThemePicker) });
+    }
+    if (Sel && Sel.runMixed) {
+      rot.push({ label: T('Repaso mixto', 'Mixed practice'),
+                 why: T('Un poco de todo lo que llevas', 'A bit of everything you have met'),
+                 cta: T('Empezar', 'Start'), mins: '5 min',
+                 run: overlay(function (h) { Sel.runMixed(h, null, T('Repaso mixto', 'Mixed practice')); }) });
+    }
+    if (rot.length) {
+      var day = window.SRS ? Math.abs(window.SRS.today()) : 0;
+      return rot[day % rot.length];
     }
     return null;
   }
