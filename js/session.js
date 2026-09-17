@@ -263,10 +263,16 @@ window.Session = (function () {
 
     // Produce: 'guided' (beginner) = a build + a translation, with scaffolding.
     // 'full' = also open free-writing and, from level 2+, a connected paragraph.
-    var builds = writes.filter(function (t) { return t.type === 'build'; });
-    var trans = writes.filter(function (t) { return t.type === 'translate'; });
-    var frees = writes.filter(function (t) { return t.type === 'write'; });
-    var paras = writes.filter(function (t) { return t.type === 'paragraph'; });
+    /* A theme focus narrows the pool BEFORE the grammar preference runs, so
+     * the day's grammar still decides which of the themed tasks you get. Order
+     * matters: narrowing second would hand back a task on the right tense and
+     * the wrong subject, which is the half that was already working. */
+    var FO = window.Focus;
+    function inTheme(arr) { return FO ? FO.narrow(arr) : arr; }
+    var builds = inTheme(writes.filter(function (t) { return t.type === 'build'; }));
+    var trans = inTheme(writes.filter(function (t) { return t.type === 'translate'; }));
+    var frees = inTheme(writes.filter(function (t) { return t.type === 'write'; }));
+    var paras = inTheme(writes.filter(function (t) { return t.type === 'paragraph'; }));
     // A long session is the same session with more of it — not extra stages.
     var big = mode === 'larga';
     var produce;
@@ -297,6 +303,20 @@ window.Session = (function () {
     }
     var storyPool = aligned.length ? aligned : (themed.length ? themed : passages);
     var storyTier = aligned.length ? 'focus' : (themed.length ? 'theme' : 'level');
+
+    /* A chosen focus outranks all three tiers — the learner asked for this
+     * theme out loud, which is a better reason than any the scheduler has. It
+     * still prefers a passage that ALSO uses today's grammar, so a focus buys
+     * a narrower choice rather than a worse one. */
+    var fTheme = FO ? FO.theme() : null;
+    if (fTheme) {
+      var inF = passages.filter(function (x) { return x.theme === fTheme; });
+      if (inF.length) {
+        var both = inF.filter(function (x) { return passageUsesFocus(x, focus); });
+        storyPool = both.length ? both : inF;
+        storyTier = both.length ? 'focus' : 'themeFocus';
+      }
+    }
 
     return {
       day: day,
@@ -512,6 +532,8 @@ window.Session = (function () {
   function renderComplete() {
     setProgress(1, 1);
     var p = bumpStreak();
+    // A session that finished is what a focus is counted in — see js/focus.js.
+    if (window.Focus) window.Focus.tick();
     UI.clear(host);
     var wrap = UI.el('div', 'panel intro complete');
     wrap.appendChild(UI.el('div', 'big-check', '✓'));

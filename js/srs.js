@@ -173,7 +173,13 @@ window.SRS = (function () {
   //   shuffleFresh: shuffle new items (default true). Pass false to introduce
   //                 them in the pool's given order (beginners: easiest-first).
   // Returns the chosen items (due + graduated spot-checks, then new).
-  function batch(pool, maxDue, maxNew, shuffleFresh) {
+  /* `freshPrefer` (optional) sorts the NEW items so ones it likes come first.
+   * It cannot be done at the call site: fresh is shuffled here for everyone
+   * but the paced beginner, so any order imposed beforehand is thrown away.
+   * A partition rather than a filter, because it is a preference — when the
+   * preferred set runs short the batch still fills, and a stable partition
+   * leaves the beginner's rank order intact inside each half. */
+  function batch(pool, maxDue, maxNew, shuffleFresh, freshPrefer) {
     var s = load();
     var due = [], fresh = [], grad = [];
     pool.forEach(function (it) {
@@ -200,6 +206,11 @@ window.SRS = (function () {
     shuffle(grad);
     var spotChecks = grad.slice(0, Math.max(0, Math.round(cap * SPOT_CHECK_RATE)));
     if (shuffleFresh !== false) shuffle(fresh);
+    if (freshPrefer) {
+      var want = [], rest = [];
+      fresh.forEach(function (it) { (freshPrefer(it) ? want : rest).push(it); });
+      fresh = want.concat(rest);
+    }
     var freshChosen = fresh.slice(0, maxNew == null ? 0 : maxNew);
     return shuffle(chosen.concat(spotChecks)).concat(freshChosen);
   }

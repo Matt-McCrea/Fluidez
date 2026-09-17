@@ -348,6 +348,30 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .topic-chip { border-style:dashed; }
 .vocab-chip.accent-chip { background:var(--accent); color:#fff; border-color:var(--accent); }
 
+/* ---- theme focus (js/focus.js) ----
+ * The chosen chip is SOLID where an unchosen one is dashed: everywhere else in
+ * the app a dashed chip means "tap to run this", and a duration is a setting
+ * that stays picked, not an action. */
+.topic-chip.on { border-style:solid; background:var(--accent); color:#fff; border-color:var(--accent); }
+
+.focus-live { display:flex; align-items:center; justify-content:space-between; gap:12px;
+  margin:10px 0 16px; padding:12px 14px; border-radius:12px;
+  background:var(--panel-2); border:1px solid var(--accent); }
+.fl-text { display:flex; flex-direction:column; gap:3px; min-width:0; }
+.fl-text b { font-size:1.02rem; }
+.fl-text .muted { font-size:.85rem; }
+.focus-live .ghost-btn { margin-top:0; flex:none; }
+
+/* The one line on the focus screen that prevents a misunderstanding, so it is
+ * not muted grey like the rest of the explanation. */
+.focus-keep { margin:2px 0 18px; padding:10px 12px; border-radius:10px;
+  background:var(--panel-2); border-left:3px solid var(--accent); font-size:.9rem; }
+
+.ghost-btn.wide { display:block; width:100%; text-align:center; }
+.today-focus.theme-focus { margin-top:2px; }
+.today-focus.theme-focus .tf-value { font-weight:600; }
+.tf-left { font-weight:400; opacity:.65; }
+
 /* ---- grammar reference (index + doc) ---- */
 .grammar-layout { display:grid; grid-template-columns:260px 1fr; gap:20px; align-items:start; }
 .grammar-index { display:flex; flex-direction:column; gap:2px; padding:12px; position:sticky; top:84px; max-height:80vh; overflow-y:auto; }

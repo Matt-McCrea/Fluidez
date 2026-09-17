@@ -133,7 +133,13 @@ window.StageReview = (function () {
     var fresh = pr.newPerDay;
     if (ctx && ctx.mode === 'rapido') { cap = Math.min(cap, 10); fresh = 0; }
     else if (ctx && ctx.mode === 'corto') { cap = Math.min(cap, 15); }
-    var batch = S.batch(all, cap, fresh, !pr.orderedVocab);
+    /* Under a theme focus the daily new-word drip comes from that theme first.
+     * This is the channel that matters most: it runs EVERY session, where the
+     * lesson ladder teaches a theme on only a handful of days in the whole
+     * course. A preference, not a filter — see SRS.batch. */
+    var fTheme = window.Focus ? window.Focus.theme() : null;
+    var batch = S.batch(all, cap, fresh, !pr.orderedVocab,
+      fTheme ? function (it) { return it.theme === fTheme; } : null);
     batch.forEach(function (it) { S.enrol(it.id); });
 
     // recognition distractors: other English glosses of the same kind

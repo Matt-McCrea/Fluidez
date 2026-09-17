@@ -195,6 +195,23 @@ window.Shell = (function () {
       todayRow.appendChild(UI.el('span', 'tf-value', t.lessonTitle));
       card.appendChild(todayRow);
 
+      /* A running theme focus belongs here and not only in Practicar. It is a
+       * standing choice that changes what the next fortnight is made of, and a
+       * setting you cannot see from the screen you start your session on is a
+       * setting you forget you made. The lesson line sits directly above it,
+       * which is also the clearest possible statement that the focus did not
+       * replace it. */
+      var F = window.Focus, fx = F && F.get();
+      if (fx) {
+        var fRow = UI.el('div', 'today-focus theme-focus');
+        fRow.appendChild(UI.el('span', 'tf-label', T('Enfoque', 'Focus')));
+        var v = UI.el('span', 'tf-value', F.label());
+        v.appendChild(UI.el('span', 'tf-left',
+          ' · ' + fx.left + T(fx.left === 1 ? ' sesión' : ' sesiones',
+                              fx.left === 1 ? ' session' : ' sessions')));
+        fRow.appendChild(v);
+        card.appendChild(fRow);
+      }
     }
 
     var go = UI.el('button', 'primary-btn today-go');

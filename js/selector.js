@@ -165,29 +165,124 @@ window.Selector = (function () {
     return t ? UI.t(t.short || t.es, t.en) : (CAT_LABEL[key] || key);
   }
 
-  function showThemePicker(host) {
-    UI.clear(host);
-    var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h2', null, UI.t('Por tema', 'By topic')));
-    wrap.appendChild(UI.el('p', 'muted', UI.t('Elige un tema — la ronda será solo de ese tema.',
-                                               'Pick a theme — this round is only that theme\'s words.')));
-    var pool = masterPool();
+  function groupByTheme() {
     var byTheme = {};
-    pool.forEach(function (it) {
+    masterPool().forEach(function (it) {
       if (it.kind !== 'vocab') return;
       var k = it.theme || GENERAL_KEY;
       (byTheme[k] = byTheme[k] || []).push(it);
     });
-    var chips = UI.el('div', 'chip-row');
-    Object.keys(byTheme).sort(function (a, b) {
+    return byTheme;
+  }
+  function themeKeysBySize(byTheme) {
+    return Object.keys(byTheme).sort(function (a, b) {
       return byTheme[b].length - byTheme[a].length || themeLabel(a).localeCompare(themeLabel(b));
-    }).forEach(function (key) {
+    });
+  }
+
+  /* The banner for a focus that is already running. Appears above the chips
+   * because a learner who set one and came back here is likelier to be
+   * checking or ending it than starting a round. */
+  function focusBanner(host) {
+    var F = window.Focus, f = F && F.get();
+    if (!f) return null;
+    var box = UI.el('div', 'focus-live');
+    var txt = UI.el('div', 'fl-text');
+    txt.appendChild(UI.el('span', 'eyebrow', UI.t('Enfoque', 'Focus')));
+    txt.appendChild(UI.el('b', null, F.label()));
+    txt.appendChild(UI.el('span', 'muted',
+      f.left + UI.t(f.left === 1 ? ' sesión más' : ' sesiones más',
+                    f.left === 1 ? ' more session' : ' more sessions')));
+    box.appendChild(txt);
+    var end = UI.el('button', 'ghost-btn', UI.t('Terminar', 'End')); end.type = 'button';
+    end.addEventListener('click', function () { F.stop(); showThemePicker(host); });
+    box.appendChild(end);
+    return box;
+  }
+
+  /* Choosing a focus. Deliberately a separate screen from the round chips:
+   * the promise is different, the commitment is different, and the learner has
+   * to be told plainly what stays put. The lesson ladder not moving is the
+   * single most important fact on this screen — somebody who thinks a focus
+   * replaces their grammar course will either avoid it or be quietly derailed
+   * by it, and both are worse than not shipping it. */
+  function showFocusPicker(host) {
+    UI.clear(host);
+    var F = window.Focus;
+    var wrap = UI.el('div', 'panel');
+    wrap.appendChild(UI.el('h2', null, UI.t('Enfocar mi curso', 'Focus my course')));
+    wrap.appendChild(UI.el('p', 'muted', UI.t(
+      'Las palabras nuevas, la lectura y lo que escribes pasarán a ser de un solo tema.',
+      'Your new words, your reading and what you write all switch to one topic.')));
+    var keep = UI.el('p', 'focus-keep', UI.t(
+      'Tus lecciones de gramática no cambian: sigues el curso en el mismo orden.',
+      'Your grammar lessons do not change — you stay on the course, in the same order.'));
+    wrap.appendChild(keep);
+
+    var days = F ? F.DEFAULT_DAYS : 7;
+    wrap.appendChild(UI.el('span', 'eyebrow', UI.t('¿Cuántas sesiones?', 'How many sessions?')));
+    var dRow = UI.el('div', 'chip-row');
+    [5, 7, 14].forEach(function (n) {
+      var b = UI.el('button', 'topic-chip' + (n === days ? ' on' : ''), String(n)); b.type = 'button';
+      b.addEventListener('click', function () {
+        days = n;
+        [].forEach.call(dRow.children, function (c) { c.className = 'topic-chip'; });
+        b.className = 'topic-chip on';
+      });
+      dRow.appendChild(b);
+    });
+    wrap.appendChild(dRow);
+
+    wrap.appendChild(UI.el('span', 'eyebrow', UI.t('¿De qué tema?', 'Which topic?')));
+    var byTheme = groupByTheme();
+    var chips = UI.el('div', 'chip-row');
+    themeKeysBySize(byTheme).forEach(function (key) {
+      if (key === GENERAL_KEY) return;      // not a topic — see themeLabel
+      var name = themeLabel(key);
+      var c = UI.el('button', 'topic-chip', name); c.type = 'button';
+      c.addEventListener('click', function () {
+        F.start(key, days);
+        showThemePicker(host);
+      });
+      chips.appendChild(c);
+    });
+    wrap.appendChild(chips);
+
+    var back = UI.el('button', 'ghost-btn', UI.t('← Por tema', '← By topic')); back.type = 'button';
+    back.addEventListener('click', function () { showThemePicker(host); });
+    wrap.appendChild(back);
+    host.appendChild(wrap);
+  }
+
+  function showThemePicker(host) {
+    UI.clear(host);
+    var wrap = UI.el('div', 'panel');
+    wrap.appendChild(UI.el('h2', null, UI.t('Por tema', 'By topic')));
+    var live = focusBanner(host);
+    if (live) wrap.appendChild(live);
+    wrap.appendChild(UI.el('p', 'muted', UI.t('Elige un tema — la ronda será solo de ese tema.',
+                                               'Pick a theme — this round is only that theme\'s words.')));
+    var byTheme = groupByTheme();
+    var chips = UI.el('div', 'chip-row');
+    themeKeysBySize(byTheme).forEach(function (key) {
       var name = themeLabel(key);
       var c = UI.el('button', 'topic-chip', name + ' · ' + byTheme[key].length); c.type = 'button';
       c.addEventListener('click', function () { runFocusOnly(host, byTheme[key], 'Por tema · ' + name); });
       chips.appendChild(c);
     });
     wrap.appendChild(chips);
+
+    /* The door to the bigger thing. A round is five minutes and changes
+     * nothing; this changes what the next week is made of, so it does not
+     * share a tap with the chips above — you should not be able to reschedule
+     * your fortnight by mis-hitting a flashcard button. */
+    if (window.Focus && !window.Focus.get()) {
+      var more = UI.el('button', 'ghost-btn wide', UI.t('Enfocar mi curso en un tema →',
+                                                        'Focus my course on one topic →'));
+      more.type = 'button';
+      more.addEventListener('click', function () { showFocusPicker(host); });
+      wrap.appendChild(more);
+    }
     var backB = UI.el('button', 'ghost-btn', '← Practicar'); backB.type = 'button'; backB.addEventListener('click', backToTab);
     wrap.appendChild(backB);
     host.appendChild(wrap);
@@ -365,5 +460,6 @@ window.Selector = (function () {
    * reachable only by opening Practicar and reading a list of five. */
   return { renderChooser: renderChooser,
            runWeakSpots: runWeakSpots, showTensePicker: showTensePicker,
-           showThemePicker: showThemePicker, runMixed: runMixed };
+           showThemePicker: showThemePicker, showFocusPicker: showFocusPicker,
+           runMixed: runMixed };
 })();

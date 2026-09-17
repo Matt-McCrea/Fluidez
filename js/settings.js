@@ -23,7 +23,7 @@ window.Settings = (function () {
      * 'fluidez.games' now), but it stays on this list so an export taken
      * before the rewrite still round-trips and a reset still clears it. */
     'fluidez.gameBest', 'fluidez.games', 'fluidez.gamePrefs', 'fluidez.vetoed',
-    'fluidez.accepted',
+    'fluidez.accepted', 'fluidez.focus',
     'fluidez.onboarded', 'fluidez.voice', 'fluidez.suggest'];
   var KEEP_ON_RESET = { 'fluidez.theme': 1, 'fluidez.voice': 1 };
 
