@@ -109,11 +109,6 @@ window.Shell = (function () {
         dc.appendChild(UI.el('div', 'done-what',
           T('Has hecho ', 'You did ') + '<b>' + t.lessonTitle + '</b>'));
       }
-      dc.appendChild(UI.el('p', 'done-next muted',
-        due ? T('Lo de abajo no cuesta nada y cuenta igual.',
-                'What follows is short, and it still counts.')
-            : T('El curso vuelve mañana con material nuevo.',
-                'The course comes back tomorrow with new material.')));
 
       /* Review is the one thing that is genuinely worth doing twice in a day,
        * because the scheduler asked for it — so it gets the button. */
@@ -126,6 +121,54 @@ window.Shell = (function () {
         rr.appendChild(rb);
         rr.appendChild(UI.el('span', 'muted small', T('unos 4 min', 'about 4 min')));
         dc.appendChild(rr);
+      }
+
+      /* Two boxes, half width. The card used to end here with "the course
+       * comes back tomorrow", which is true and is not an answer to "so what
+       * now?". One box says what tomorrow actually is and offers to start it
+       * early — nothing in this app is locked, Lecciones has always let you
+       * take any lesson. The other rotates by the day through the practice
+       * that already exists, so the second visit is not the same suggestion
+       * every time. */
+      var pair = UI.el('div', 'next-pair');
+
+      var up = (window.Session && window.Session.nextUp) ? window.Session.nextUp() : null;
+      if (up) {
+        var nb = UI.el('button', 'next-box'); nb.type = 'button';
+        nb.innerHTML = '<span class="nb-eyebrow">' + T('Lo siguiente', 'Next up') + '</span>' +
+          '<b class="nb-title">' + up.title + '</b>' +
+          (up.canDo ? '<span class="nb-sub">' + up.canDo + '</span>' : '') +
+          '<span class="nb-go">' + T('Empezarla ya →', 'Start it now →') + '</span>';
+        nb.addEventListener('click', function () {
+          if (up.kind === 'grammar' && window.LessonRun) {
+            window.Shell.openOverlay();
+            window.LessonRun.run(up.focus, function () { window.Shell.closeOverlay(); refresh('inicio'); });
+          } else { window.App.go('session', 'diaria'); }
+        });
+        pair.appendChild(nb);
+      }
+
+      var side = sideSuggestion(due);
+      if (side) {
+        var sb = UI.el('button', 'next-box alt'); sb.type = 'button';
+        sb.innerHTML = '<span class="nb-eyebrow">' + T('Mientras tanto', 'Meanwhile') + '</span>' +
+          '<b class="nb-title">' + side.title + '</b>' +
+          '<span class="nb-sub">' + side.sub + '</span>' +
+          '<span class="nb-go">' + side.cta + ' →</span>';
+        sb.addEventListener('click', side.run);
+        pair.appendChild(sb);
+      }
+      /* The line only speaks when the boxes cannot. With a "Next up" box on
+       * screen, "the course comes back tomorrow" is both redundant and
+       * slightly wrong — the box is offering tomorrow's lesson now. */
+      if (pair.firstChild) {
+        dc.appendChild(pair);
+      } else {
+        dc.appendChild(UI.el('p', 'done-next muted',
+          due ? T('Lo de abajo no cuesta nada y cuenta igual.',
+                  'What follows is short, and it still counts.')
+              : T('El curso vuelve mañana con material nuevo.',
+                  'The course comes back tomorrow with new material.')));
       }
 
       var redo = UI.el('button', 'linkish', T('Repetir la sesión de hoy', 'Do today\'s session again'));
@@ -247,6 +290,38 @@ window.Shell = (function () {
     // the only thing left in here is the mistake deck, so with no mistakes
     // there is nothing to append — an empty block would just add a gap
     if (extras.firstChild) host.appendChild(extras);
+  }
+
+  /* The second box, rotated by the day so the app is not making the same
+   * recommendation every evening. Only offers what is actually available: no
+   * weak-spots round without mistakes logged, no game if the module is
+   * missing. */
+  function sideSuggestion(due) {
+    var opts = [];
+    var Sel = window.Selector, G = window.Games;
+    function overlay(fn) {
+      return function () { window.Shell.openOverlay(); fn(document.getElementById('stage-host')); };
+    }
+    if (G && G.recommend) {
+      var rec = G.recommend();
+      if (rec) opts.push({ title: rec.game.name, sub: rec.why, cta: T('Jugar', 'Play'),
+                           run: function () { G.open(rec.game.key); } });
+    }
+    if (Sel && Sel.showTensePicker) {
+      opts.push({ title: T('Gramática', 'Grammar'), sub: T('Elige un tiempo y practícalo', 'Pick a tense and drill it'),
+                  cta: T('Elegir', 'Choose'), run: overlay(Sel.showTensePicker) });
+    }
+    if (Sel && Sel.showThemePicker) {
+      opts.push({ title: T('Por tema', 'By topic'), sub: T('Escribe sobre algo concreto', 'Write about something specific'),
+                  cta: T('Elegir', 'Choose'), run: overlay(Sel.showThemePicker) });
+    }
+    if (Sel && Sel.runWeakSpots && window.ErrorLog && window.ErrorLog.cards().length >= 3) {
+      opts.push({ title: T('Puntos débiles', 'Weak spots'), sub: T('Lo que se te sigue resistiendo', 'What keeps catching you out'),
+                  cta: T('Practicar', 'Practise'), run: overlay(Sel.runWeakSpots) });
+    }
+    if (!opts.length) return null;
+    var day = window.SRS ? window.SRS.today() : 0;
+    return opts[Math.abs(day) % opts.length];
   }
 
   // ---- Más: a menu, with its own sub-navigation inside the same container --

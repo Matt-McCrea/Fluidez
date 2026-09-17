@@ -430,6 +430,31 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .done-card .done-what { font-size:1.08rem; margin:2px 0 6px; }
 .done-card .done-next { margin:0 0 14px; font-size:.92rem; }
 
+/* Two half-width boxes: what tomorrow is, and something to do now. Side by
+ * side even on a phone — they are short, and stacking them would make the
+ * second one look like an afterthought rather than an equal offer. */
+.next-pair { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:4px 0 16px; }
+.next-pair:has(> :only-child) { grid-template-columns:1fr; }
+.next-box {
+  display:flex; flex-direction:column; gap:3px; text-align:left;
+  padding:13px 14px; border-radius:11px; cursor:pointer;
+  background:var(--panel-2); border:1px solid var(--border); color:var(--text);
+}
+.next-box:hover { border-color:var(--accent); }
+.next-box.alt { background:var(--panel); }
+.nb-eyebrow {
+  font-size:.62rem; letter-spacing:.11em; text-transform:uppercase;
+  font-weight:750; color:var(--accent);
+}
+.next-box.alt .nb-eyebrow { color:var(--accent-2); }
+.nb-title { font-size:1rem; line-height:1.25; }
+.nb-sub {
+  font-size:.82rem; color:var(--muted); line-height:1.35;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.nb-go { margin-top:6px; font-size:.82rem; font-weight:650; color:var(--accent); }
+.next-box.alt .nb-go { color:var(--accent-2); }
+
 /* ---- Progreso: what you can now do ---- */
 .cando-panel { margin:22px 0 26px; }
 .cando-panel h3 { margin:0 0 10px; }

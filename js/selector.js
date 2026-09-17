@@ -325,5 +325,9 @@ window.Selector = (function () {
     container.appendChild(list);
   }
 
-  return { renderChooser: renderChooser };
+  /* Exported so the home screen can start one of these directly. They were
+   * reachable only by opening Practicar and reading a list of five. */
+  return { renderChooser: renderChooser,
+           runWeakSpots: runWeakSpots, showTensePicker: showTensePicker,
+           showThemePicker: showThemePicker, runMixed: runMixed };
 })();

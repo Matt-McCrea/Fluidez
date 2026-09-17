@@ -417,6 +417,34 @@ window.Session = (function () {
     };
   }
 
+  /* What comes after today, without moving anything. The home card shows this
+   * once the session is done: "tomorrow" is a real answer to "what now?", and
+   * a course that rotates overnight should be willing to say what it rotates
+   * to. Nothing is locked in this app — Lecciones has always let you take any
+   * lesson — so the card can also offer to start it early. */
+  function nextUp() {
+    if (!window.Curriculum || !window.Curriculum.seq) return null;
+    var pr = window.Profile ? window.Profile.params() : null;
+    if (!pr || !pr.usesCurriculum) return null;
+    var seq = window.Curriculum.seq(), prog = loadProg();
+    var studied = prog.studied || {};
+    var di = (prog.beginnerDay || 0) + 1;          // the day after the one just done
+    for (var i = di; i < seq.length && i < di + 40; i++) {
+      var f = seq[i];
+      if (!f) continue;
+      if (f.type === 'grammar') {
+        if (studied[f.id]) continue;
+        var l = lessonById(f.id);
+        if (!l) continue;
+        return { title: l.title, kind: 'grammar', focus: f, lessonId: l.id,
+                 canDo: l.canDo || null };
+      }
+      if (f.type === 'verbs') return { title: T('Verbos nuevos', 'New verbs'), kind: 'verbs', focus: f, canDo: null };
+      if (f.type === 'vocab') return { title: T('Palabras nuevas', 'New words'), kind: 'vocab', focus: f, canDo: null };
+    }
+    return null;
+  }
+
   /* What today is, in as few words as the home card needs. focusLabel is kept
    * for the completion screen, where naming the individual verbs is the point
    * of the line; on the home card it was a comma list that changed nothing
@@ -549,6 +577,7 @@ window.Session = (function () {
     skipLesson: skipLesson,
     modes: function () { return [MODES.rapido, MODES.corto, MODES.diaria, MODES.larga]; },
     rhythm: rhythm,
+    nextUp: nextUp,
     mode: function () { return modeDef(); },
     resume: function () { host = document.getElementById('stage-host'); bar = document.getElementById('session-progress-fill'); if (idx >= 0 && ctx) runStage(); else start(); },
     isActive: function () { return idx >= 0 && idx < stages().length; },
