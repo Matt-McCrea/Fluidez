@@ -27835,11 +27835,11 @@ window.STRAND_LESSONS = [
     { es: 'Luego te cuento algo que me pasó a mí, muy relacionado con esto.', en: "I'll tell you something that happened to me later, very related to this." }
   ],
   probes: [
+    { id: 'p:introducirnuevoB2:cloze', kind: 'cloze', text: '___ de vacaciones, ¿ya reservaste el hotel? (hablando)', accept: ['Hablando', 'hablando'] },
     { id: 'p:introducirnuevoB2:porciertovshablando', kind: 'mcq', q: '¿Cuál introduce un tema SIN relación con lo anterior?',
       options: ['Hablando de eso...', 'Por cierto...', 'Ambas conectan igual'], answer: 1 },
     { id: 'p:introducirnuevoB2:formal', kind: 'mcq', q: '¿Dónde son apropiadas "por lo que se refiere a" / "respecto a"?',
       options: ['En un chat informal', 'En presentaciones/informes formales', 'Nunca'], answer: 1 },
-    { id: 'p:introducirnuevoB2:cloze', kind: 'cloze', text: '___ de vacaciones, ¿ya reservaste el hotel? (hablando)', accept: ['Hablando', 'hablando'] },
     { id: 'p:introducirnuevoB2:recall', kind: 'recall', front: '¿"Por cierto" conecta lógicamente con el tema anterior?', back: 'no — introduce algo sin relación directa' }
   ]
 },
