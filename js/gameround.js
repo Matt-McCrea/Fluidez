@@ -391,6 +391,14 @@ window.GameRound = (function () {
       var label = result === 'near' ? 'casi — los acentos'
                 : timedOut ? 'se acabó el tiempo' : 'era';
       var typedIt = lastTyped && lastTyped.trim() && item.play === 'type';
+      /* A built answer is the learner's Spanish too. From B2 up, 83% of
+       * translation items arrive as chips rather than as an empty box, so
+       * gating the claim on typing alone would have hidden it from exactly
+       * the learners who hit the problem. With fixed chips the only
+       * alternative is a different ORDER — which is a thing a person may
+       * judge for themselves even though the grader must never assume it. */
+      var producedIt = lastTyped && lastTyped.trim() &&
+                       (item.play === 'type' || item.play === 'build');
 
       // the row the answer lives on, so the replay button rides with it
       // rather than dangling under the whole box
@@ -423,7 +431,7 @@ window.GameRound = (function () {
        * near miss, which already gave them the item. No data file holds every
        * good translation, so the app has to be correctable; see
        * js/accepted.js for why this is not a cheat button. */
-      if (typedIt && result === 'wrong' && !timedOut && item.prompt && window.Accepted) {
+      if (producedIt && result === 'wrong' && !timedOut && item.prompt && window.Accepted) {
         var mine = el('button', 'g-mine', 'eso también vale');
         mine.type = 'button';
         mine.addEventListener('click', function () {
@@ -445,9 +453,21 @@ window.GameRound = (function () {
       go.addEventListener('click', done);
       row2.appendChild(go);
       fbHost.appendChild(row2);
-      var t = setTimeout(done, result === 'near' ? 1500 : 2400);
+      /* A near miss moves on by itself: you got the item, the correction is
+       * one accent, and there is nothing to decide.
+       *
+       * A WRONG answer waits. It used to auto-advance after 2.4 seconds,
+       * which was already tight for reading the diff between your line and
+       * the real one, and became impossible once that screen carried a
+       * decision — you cannot read a correction, judge whether your own
+       * Spanish was defensible and tap "eso también vale" in two seconds.
+       *
+       * Waiting costs nothing: the round clock is paused for this screen
+       * (pause() above), so the time is not coming out of your sixty seconds.
+       * Enter still moves on, and so does Seguir. */
+      var t = result === 'near' ? setTimeout(done, 1500) : null;
       function done() {
-        clearTimeout(t);
+        if (t) clearTimeout(t);
         if (ended) return;
         resume();
         then();
@@ -569,6 +589,7 @@ window.GameRound = (function () {
             built.push(w); draw();
             if (built.length === item.words.length) {
               var ok = built.join(' ') === item.answer;
+              lastTyped = built.join(' ');     // so the correction can show it
               lineEl.classList.add(ok ? 'right' : 'wrong');
               resolve(ok ? 'good' : 'wrong');
             }
