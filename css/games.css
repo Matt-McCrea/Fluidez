@@ -297,10 +297,13 @@
 }
 
 /* ---------------------------------------------------------------- the item */
-/* The prompt area shrinks by the height of the typing box, which now sits
- * outside it (see typeHost in js/gameround.js) so that clearing the question
- * never destroys the input. */
-.g-item { min-height: 150px; }
+/* The typing box now sits outside this container (see typeHost in
+ * js/gameround.js) so that clearing the question never destroys the input.
+ * The min-height stays, and still earns it: prompts vary from two words to
+ * two lines, and without a floor the box would walk up and down the screen
+ * between questions while you are typing into it. Sized to the old prompt
+ * area — the previous 210px included the input and the accent bar. */
+.g-item { min-height: 108px; }
 .g-type[hidden] { display: none; }
 .g-prompt {
   font-size: 1.55rem; font-weight: 650; line-height: 1.32; margin: 0 0 20px;
