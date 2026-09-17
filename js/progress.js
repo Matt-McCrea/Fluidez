@@ -64,6 +64,56 @@ window.Progress = (function () {
     return t;
   }
 
+  /* ---- what you can now do ------------------------------------------------
+   * The tiles above count things: sessions done, words learned, items due.
+   * None of them answers the question somebody actually has after six weeks,
+   * which is whether any of it worked.
+   *
+   * Every lesson already carries a `canDo` — the line the lesson opens with,
+   * "After this you can ask what someone likes and say what you like" — and
+   * as of the second-person pass they all read as abilities rather than
+   * syllabus entries. Nothing displayed them anywhere except at the top of
+   * the lesson they belong to. Studied lessons, newest first, in the band's
+   * own colour, is the same data saying something true. */
+  function canDoPanel(p) {
+    var studied = p.studied || {};
+    var lessons = (window.ALL_LESSONS || window.GRAMMAR_LESSONS || [])
+      .filter(function (l) { return studied[l.id] && l.canDo; });
+
+    var box = UI.el('div', 'cando-panel');
+    box.appendChild(UI.el('h3', null, UI.t('Ahora sabes', 'What you can now do')));
+
+    if (!lessons.length) {
+      box.appendChild(UI.el('p', 'muted small',
+        'Finish a lesson and what it taught you to do shows up here.'));
+      return box;
+    }
+
+    /* Newest first: the most recent thing you learned is the one you are
+     * least sure you still have, and the one worth seeing named. */
+    var recent = lessons.slice(-12).reverse();
+    var list = UI.el('ul', 'cando-list');
+    recent.forEach(function (l) {
+      var li = UI.el('li', null);
+      var band = UI.el('span', 'cando-band', l.cefr || '');
+      if (l.cefr && window.LEVELS) {
+        var lv = window.LEVELS.filter(function (x) { return x.code === l.cefr; })[0];
+        if (lv) band.style.background = lv.accent;
+      }
+      li.appendChild(band);
+      li.appendChild(UI.el('span', 'cando-text', l.canDo));
+      list.appendChild(li);
+    });
+    box.appendChild(list);
+
+    if (lessons.length > recent.length) {
+      box.appendChild(UI.el('p', 'cando-more muted small',
+        UI.t('Y ' + (lessons.length - recent.length) + ' cosas más de antes.',
+             'And ' + (lessons.length - recent.length) + ' more from earlier.')));
+    }
+    return box;
+  }
+
   function render(host, back) {
     if (window.Perf) return window.Perf.mark('progreso render', function () { return renderInner(host, back); });
     return renderInner(host, back);
@@ -72,7 +122,7 @@ window.Progress = (function () {
     UI.clear(host);
     var p = loadProg(), srs = loadSrs();
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, UI.t('Lecciones', 'Lessons')));
+    wrap.appendChild(UI.el('h1', null, UI.t('Progreso', 'Progress')));
 
     // ---- stat tiles ----
     var ids = Object.keys(srs);
@@ -87,6 +137,9 @@ window.Progress = (function () {
     tiles.appendChild(tile(wordsKnown, 'words learned'));
     tiles.appendChild(tile(due, 'due today'));
     wrap.appendChild(tiles);
+
+    // ---- what you can now do ----
+    wrap.appendChild(canDoPanel(p));
 
     // ---- lesson catalogue: DO any lesson (grammar first, then vocab & verbs) --
     var studied = p.studied || {};

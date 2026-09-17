@@ -428,6 +428,45 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .done-card .done-what { font-size:1.08rem; margin:2px 0 6px; }
 .done-card .done-next { margin:0 0 14px; font-size:.92rem; }
 
+/* ---- Progreso: what you can now do ---- */
+.cando-panel { margin:22px 0 26px; }
+.cando-panel h3 { margin:0 0 10px; }
+.cando-list { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1px; }
+.cando-list li {
+  display:flex; align-items:baseline; gap:10px;
+  padding:9px 0; border-bottom:1px solid var(--border);
+}
+.cando-list li:last-child { border-bottom:none; }
+.cando-band {
+  flex:0 0 auto; min-width:26px; text-align:center;
+  font-size:.62rem; font-weight:800; letter-spacing:.05em;
+  color:#fff; background:var(--accent); border-radius:3px; padding:2px 5px;
+}
+.cando-text { flex:1; font-size:.95rem; line-height:1.45; }
+.cando-more { margin:10px 0 0; }
+
+/* ---- Inicio: quick play ---- */
+.quickplay {
+  display:flex; align-items:center; gap:14px; width:100%; text-align:left;
+  background:var(--panel); border:1px solid var(--border); border-radius:12px;
+  padding:14px 16px; margin-bottom:14px; cursor:pointer; color:var(--text);
+}
+.quickplay:hover { border-color:var(--accent); }
+.quickplay.hot { border-color:var(--accent); box-shadow:0 0 0 1px var(--accent) inset; }
+.quickplay .qp-text { display:flex; flex-direction:column; gap:1px; flex:1; min-width:0; }
+.quickplay .qp-eyebrow {
+  font-size:.66rem; letter-spacing:.11em; text-transform:uppercase;
+  font-weight:700; color:var(--accent);
+}
+.quickplay .qp-label { font-size:1.05rem; }
+.quickplay .qp-why {
+  font-size:.86rem; color:var(--muted);
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.quickplay .qp-go { display:flex; align-items:center; gap:8px; flex:0 0 auto; }
+.quickplay .qp-mins { font-size:.78rem; color:var(--muted); }
+.quickplay .qp-arrow { font-size:1.1rem; color:var(--accent); }
+
 /* ---- Inicio: status strip ---- */
 .status-strip {
   display:flex; flex-wrap:wrap; gap:8px 14px; justify-content:center;

@@ -800,6 +800,7 @@ window.Games = (function () {
   }
 
   return { render: render, renderTab: renderTab, open: open, openWeak: openWeak, openTense: openTense,
+           recommend: recommend,
            homeCard: homeCard, tenseCard: tenseCard, tenseCheckCard: tenseCheckCard,
            topicLabel: topicLabel, GAMES: GAMES };
 })();

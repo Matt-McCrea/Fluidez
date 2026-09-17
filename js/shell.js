@@ -183,6 +183,15 @@ window.Shell = (function () {
     host.appendChild(card);
     }
 
+    /* Two minutes, chosen for you. Sits directly under the session card
+     * because it is the answer to the question the session card cannot
+     * answer: what if I do not have fifteen minutes, or have already done
+     * them? It says nothing when it has nothing true to say. */
+    if (window.QuickPlay && window.QuickPlay.card) {
+      var qp = window.QuickPlay.card();
+      if (qp) host.appendChild(qp);
+    }
+
     /* Order on this screen is an argument about what the learner should do
      * next. Today's session first, because that is the course. Then GAMES,
      * because five minutes against your own best is the thing somebody

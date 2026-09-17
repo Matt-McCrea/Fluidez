@@ -9,7 +9,7 @@
  * ASSETS must mirror every <script>/<link> in index.html. No bundler here —
  * keep this list in sync by hand when a new data/js file is added there.
  * ========================================================================== */
-var CACHE_VERSION = 'v52';
+var CACHE_VERSION = 'v53';
 var CACHE_NAME = 'fluidez-' + CACHE_VERSION;
 
 var ASSETS = [
@@ -51,6 +51,7 @@ var ASSETS = [
   './js/errorlog.js',
   './js/capture.js',
   './js/userwords.js',
+  './js/phrases.js',
   './js/deck.js',
 
   './js/views/review.js',
@@ -77,6 +78,7 @@ var ASSETS = [
   './js/gameitems.js',
   './js/gameround.js',
   './js/games.js',
+  './js/quickplay.js',
 
   './js/session.js',
   './js/onboarding.js',
