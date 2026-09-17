@@ -97,15 +97,44 @@ window.GameScore = (function () {
     return { points: Math.round(pts), tags: tags, speed: speed, combo: cf };
   }
 
-  /* The ladder. Up one on a correct answer, DOWN TWO on a miss — asymmetric on
+  /* The ladder. Up one on a correct answer, down on a miss — asymmetric on
    * purpose, so a run of luck cannot park you above your actual level, and one
    * mistake at the top is a real setback without being a reset. A near miss
-   * holds position: you knew the word. */
-  function nextRung(rung, result, maxRung) {
+   * holds position: you knew the word.
+   *
+   * How far down depends on what the item COST. Minus two was written for
+   * tapping one of four, where an item is three or four seconds and losing
+   * two rungs costs eight; on a typed item at nine seconds the same penalty
+   * costs eighteen, nearly a third of the round, for one slip of a thumb. A
+   * guess is also worth punishing harder than an attempt: you can land a
+   * four-way choice by luck, and you cannot type an imperfect subjunctive by
+   * luck. So typing and building drop one, choosing and listening drop two. */
+  function nextRung(rung, result, maxRung, play) {
     var cap = maxRung || MAX_RUNG;
     if (result === 'good') return Math.min(cap, rung + 1);
     if (result === 'near') return rung;
-    return Math.max(1, rung - 2);
+    var drop = (play === 'type' || play === 'build') ? 1 : 2;
+    return Math.max(1, rung - drop);
+  }
+
+  /* Where a round STARTS: the bottom rung of the learner's own band.
+   *
+   * It used to start every round at rung 1 for everybody, which meant a B2
+   * learner spent six correct answers climbing through A1 and A2 to reach
+   * their own level. Measured against real typing speeds that is most of a
+   * sixty-second round: a typed answer costs six to nine seconds including
+   * reading and thinking, so a round is seven to ten items, and six of them
+   * were the toll. On a phone, half of all rounds never reached B2 at all.
+   *
+   * This is not "sitting on easy items", which the ladder exists to prevent —
+   * you still climb, a miss still drops you, and the ceiling is still one
+   * band above you. It only stops charging you for the journey to your own
+   * level every single time. The early rungs were never cheap to TYPE either
+   * (an A1 answer averages 14 characters against 20 at B2); they were just
+   * paid at 60 a go instead of 165. */
+  function startRung() {
+    var cefr = (window.Profile && window.Profile.params()) ? window.Profile.params().cefr : 'A1';
+    return Math.max(1, bandIndex(cefr) * 2 + 1);
   }
 
   /* The highest rung this learner should ever be dealt: their own level plus
@@ -290,6 +319,7 @@ window.GameScore = (function () {
   return {
     BANDS: BANDS, MAX_RUNG: MAX_RUNG, BAND_VALUE: BAND_VALUE,
     bandForRung: bandForRung, bandIndex: bandIndex, ceilingRung: ceilingRung,
+    startRung: startRung,
     baseValue: baseValue, award: award, nextRung: nextRung, limitFor: limitFor,
     stats: stats, record: record, pb: pb, todayBest: todayBest, nearMissScore: nearMissScore,
     dailySeed: dailySeed, dailyKey: dailyKey, dailyLabel: dailyLabel, dailyStreak: dailyStreak,

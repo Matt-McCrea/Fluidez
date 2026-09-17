@@ -47,7 +47,7 @@ window.GameRound = (function () {
   function run(host, cfg) {
     var rng = cfg.seed ? UI.seededRandom(cfg.seed) : Math.random;
     var rungCap = Math.min(GS.MAX_RUNG, cfg.maxRung || GS.ceilingRung());
-    var rung = Math.min(rungCap, cfg.startRung || 1);
+    var rung = Math.min(rungCap, cfg.startRung || GS.startRung());
 
     /* Lives, not instant death. One mistake ending a forty-item run reads as
      * unfair; the third one reads as earned — which is the difference between
@@ -317,7 +317,7 @@ window.GameRound = (function () {
         }
       }
       writeBack(item, result);
-      rung = GS.nextRung(rung, result, rungCap);
+      rung = GS.nextRung(rung, result, rungCap, item && item.play);
       bestRung = Math.max(bestRung, rung);
 
       if (lives && livesLeft <= 0 && result === 'wrong') { showFeedback(item, result, timedOut, finish); return; }
