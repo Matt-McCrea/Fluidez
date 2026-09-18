@@ -7776,5 +7776,305 @@ window.PASSAGES = [
       options: ['Volver a la oficina obligatoriamente', 'Mantenerlo, pero atendiendo a quien empieza', 'Ampliarlo a todos los sectores'], answer: 1 },
     { type: 'translate', line: 'el teletrabajo se diseñó pensando en quien ya sabía hacer su trabajo', model: 'remote work was designed with the person who already knew how to do their job in mind' }
   ]
+},
+
+{
+  id: 'b2-medios-comentarios', title: 'Debajo de la noticia', level: 6, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Durante quince años, los medios de comunicación defendieron la sección de comentarios como una conquista: por fin el lector podía responder a quien le informaba. Hoy una parte considerable de los periódicos digitales la ha cerrado, y conviene entender qué se ha cerrado exactamente. El argumento habitual habla del insulto, y es cierto, pero incompleto. Lo que expulsó a la mayoría de los lectores no fue la agresión directa sino algo más lento: en cualquier hilo, los diez comentarios más visibles acaban escritos por las mismas cuatro personas, y quien pasa por allí una vez al mes entiende enseguida que no está en una conversación sino mirando una. El cierre resuelve un problema y crea otro. Un periodista al que nadie puede contestar debajo de lo que firma queda mejor protegido y también mejor aislado, y la corrección pública de un dato falso, que era lo mejor que producían aquellos hilos, se ha trasladado a una red social donde el periódico no la ve. Se ha sustituido un foro ruidoso por un silencio administrado. Quien dirige una cadena o una página web tiene todo el derecho a decidir dónde ocurre la discusión sobre lo que publica. No lo tiene a decir que, cerrándola, ha dejado de existir.',
+  gloss: [ { es: 'una conquista', en: 'un avance conseguido después de mucho esfuerzo' },
+           { es: 'el hilo', en: 'la serie de mensajes que responden unos a otros' },
+           { es: 'aislado', en: 'separado del contacto con los demás' },
+           { es: 'administrado', en: 'controlado y gestionado por alguien' },
+           { es: 'expulsar', en: 'echar a alguien de un sitio' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué causa señala el autor como más decisiva?',
+      options: ['El insulto directo', 'Que unos pocos ocuparan todo el espacio', 'La falta de lectores'], answer: 1 },
+    { type: 'mcq', q: '¿Qué pierde el periódico al cerrar los comentarios?',
+      options: ['Ingresos publicitarios', 'La corrección pública de sus propios errores', 'Lectores fieles'], answer: 1 },
+    { type: 'mcq', q: '¿Qué le reprocha exactamente a los medios en la última frase?',
+      options: ['Cerrar la sección', 'Pretender que la discusión ha desaparecido', 'No moderar bien'], answer: 1 },
+    { type: 'translate', line: 'Se ha sustituido un foro ruidoso por un silencio administrado.', model: 'A noisy forum has been replaced with a managed silence.' }
+  ]
+},
+
+{
+  id: 'b2-medios-entrevista', title: 'Las preguntas que ya traía escritas', level: 7, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj', 'perfsubj'],
+  text: 'Hay dos maneras de hacer una entrevista y la diferencia se nota en el minuto cuatro. En la primera, el periodista llega con ocho preguntas y las hace en orden, aunque la tercera respuesta haya vuelto irrelevantes las cinco siguientes. En la segunda, llega con una sola cosa que quiere entender y con la disposición a tirar el guión entero. La televisión favorece la primera por razones que no son de pereza: un programa con una duración exacta y un presentador que debe dar paso a la publicidad en el minuto veintidós no puede permitirse una digresión que quizá no lleve a ninguna parte. El formato decide antes que la persona. Lo que resulta más llamativo es que el entrevistado también lo sabe. Quien acude a una cadena con cierta frecuencia ha aprendido a reconocer la pregunta preparada y a contestar a la anterior, y esa maniobra funciona casi siempre porque el periodista, atento a su lista, no vuelve sobre ella. El resultado es una conversación que suena a conversación y donde nadie ha respondido a nada. No hace falta acusar a nadie de mala fe. Basta observar que el género premia a quien llena el tiempo y no a quien lo emplea, y que dar una noticia y hacer un programa entretenido son dos oficios que solo coinciden por casualidad.',
+  gloss: [ { es: 'la disposición', en: 'la voluntad de hacer algo si hace falta' },
+           { es: 'una digresión', en: 'una salida del tema principal de la conversación' },
+           { es: 'la maniobra', en: 'la acción hábil con que alguien resuelve una situación difícil' },
+           { es: 'la mala fe', en: 'la intención de engañar' },
+           { es: 'premiar', en: 'dar una recompensa o una ventaja' } ],
+  questions: [
+    { type: 'mcq', q: '¿A qué atribuye el autor la entrevista rígida?',
+      options: ['A la pereza del periodista', 'A las exigencias del formato televisivo', 'A la falta de preparación'], answer: 1 },
+    { type: 'mcq', q: '¿Qué hace el entrevistado experimentado?',
+      options: ['Responder a la pregunta anterior', 'Negarse a contestar', 'Preguntar él'], answer: 0 },
+    { type: 'mcq', q: '¿Qué actitud adopta el autor hacia los periodistas?',
+      options: ['Los acusa de engañar al público', 'Señala el incentivo antes que la persona', 'Los defiende sin reservas'], answer: 1 },
+    { type: 'translate', line: 'el género premia a quien llena el tiempo y no a quien lo emplea', model: 'the genre rewards whoever fills the time rather than whoever uses it' }
+  ]
+},
+
+{
+  id: 'b2-serv-ventanilla', title: 'La ventanilla y el trámite', level: 6, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
+  text: 'Cualquiera que haya tenido que renovar un permiso de residencia conoce la secuencia: una cita que se pide con dos meses de antelación, un documento que no se sabía que hacía falta, una firma digital que caducó sin avisar y una segunda cita. La burocracia española no destaca por su lentitud, que es media, sino por su costumbre de repartir el mismo trámite entre tres organismos que no se hablan entre sí. El coste de esa fragmentación no lo paga la administración. Lo paga quien tiene que pedir tres mañanas libres en el trabajo, y lo paga de forma muy desigual: el funcionario con horario flexible resuelve por la mañana lo que a un empleado de turno partido le cuesta una semana de favores. La digitalización ha mejorado las cosas para quien ya tenía facilidad y las ha empeorado para quien no. Un cajero automático y una oficina de correos son, todavía hoy, los dos servicios públicos que mejor funcionan en este país, y ninguno de los dos exige entender nada. No es casualidad. Un buen servicio no es el que ofrece más opciones, sino el que se puede usar sin haber aprendido a usarlo, y eso incluye a quien llega con la nacionalidad recién concedida y a quien lleva ochenta años aquí.',
+  gloss: [ { es: 'con antelación', en: 'con tiempo, antes de la fecha' },
+           { es: 'caducar', en: 'dejar de tener validez al pasar el plazo' },
+           { es: 'la fragmentación', en: 'la división de algo en partes separadas' },
+           { es: 'turno partido', en: 'jornada de trabajo dividida en dos tramos con una pausa larga' },
+           { es: 'la digitalización', en: 'el paso de los trámites en papel a los medios electrónicos' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es el defecto principal que señala?',
+      options: ['La lentitud', 'El reparto del trámite entre organismos que no se comunican', 'La falta de personal'], answer: 1 },
+    { type: 'mcq', q: '¿Qué efecto atribuye a la digitalización?',
+      options: ['Ha beneficiado a todos por igual', 'Ha ampliado la distancia entre quienes ya se manejaban y quienes no', 'No ha cambiado nada'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué cita el cajero y la oficina de correos?',
+      options: ['Porque son gratuitos', 'Porque se usan sin necesidad de aprender', 'Porque son los más antiguos'], answer: 1 },
+    { type: 'translate', line: 'El coste de esa fragmentación no lo paga la administración.', model: 'The cost of that fragmentation is not paid by the administration.' }
+  ]
+},
+
+{
+  id: 'b2-serv-robo', title: 'Denunciar un robo', level: 6, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj'],
+  text: 'A mi hermana le robaron el bolso en un autobús, con el documento de identidad y la tarjeta del banco dentro, y tardó cuatro días en ir a la comisaría. No por miedo ni por dejadez: porque calculó, con bastante acierto, que denunciar no le iba a devolver nada. El agente que la atendió se lo confirmó a medias, con una honestidad que ella agradeció y que a mí me dejó pensando. Le explicó que un robo sin violencia y sin testigos rara vez llega a ningún sitio, que el ladrón habría vaciado el bolso en un cajero automático en diez minutos, y que aun así convenía denunciar por otro motivo: sin denuncia, ese robo no existe en ninguna estadística, y las estadísticas son lo que decide cuántos vigilantes y cuántas patrullas hay en esa línea el año que viene. Esa conversación describe bien lo que un servicio público puede y no puede prometer. Ni la policía ni ningún psicólogo van a recuperar un móvil, y no hay teléfono de emergencia que sirva cuatro días después. Lo que sí produce el trámite es información, y la información se convierte, con mucho retraso, en presencia. Es un argumento honesto y también bastante frío, y explica por qué tanta gente no denuncia: se le pide un esfuerzo hoy a cambio de un beneficio difuso que se repartirá entre desconocidos dentro de dos años. Que el sistema funcione depende de que la gente haga eso igualmente.',
+  gloss: [ { es: 'la dejadez', en: 'la falta de cuidado o de ganas de ocuparse de algo' },
+           { es: 'a medias', en: 'solo en parte' },
+           { es: 'la patrulla', en: 'el grupo de agentes que vigila una zona' },
+           { es: 'difuso', en: 'poco claro, sin límites precisos' },
+           { es: 'la denuncia', en: 'el documento con que se comunica un delito a la policía' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué razón da el agente para denunciar?',
+      options: ['Que recuperará el bolso', 'Que sin denuncia el robo no cuenta para repartir recursos', 'Que es obligatorio por ley'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo califica el autor ese argumento?',
+      options: ['Honesto y frío', 'Falso', 'Sentimental'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué no denuncia mucha gente, según el texto?',
+      options: ['Por miedo al ladrón', 'Porque el coste es inmediato y el beneficio lejano y ajeno', 'Porque desconfía de la policía'], answer: 1 },
+    { type: 'translate', line: 'sin denuncia, ese robo no existe en ninguna estadística', model: 'without a report, that theft does not exist in any statistic' }
+  ]
+},
+
+{
+  id: 'b2-ciencia-contrasena', title: 'La contraseña imposible', level: 6, theme: 'ciencia',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Durante veinte años, la informática obligó a los usuarios a inventar contraseñas con mayúsculas, números y símbolos, y a cambiarlas cada noventa días. La intención era buena y el resultado, medido, fue el contrario del buscado: la gente eligió la misma raíz con un número al final, la apuntó en un papel debajo del teclado y la reutilizó en catorce sitios. El experimento lo hizo el mundo entero sin querer, y los datos personales que se perdieron por el camino permiten hoy afirmar sin mucha duda que el método era malo. Lo interesante del caso es qué clase de error fue. No fue un error de criptografía: la exigencia hacía las contraseñas más difíciles de adivinar para un ordenador. Fue un error sobre las personas, que es donde la seguridad informática se equivoca casi siempre. Un sistema no es seguro si obliga a quien lo usa a hacer algo que no va a hacer. Los organismos que fijaban la norma la corrigieron en 2017 y ahora recomiendan lo contrario: contraseñas largas, fáciles de recordar, sin caducidad obligatoria. Sigue habiendo empresas que exigen el cambio trimestral, y sus informáticos suelen saber que no sirve de nada. La norma sobrevive porque aparece en una lista de comprobación, y una lista de comprobación es más difícil de cambiar que un algoritmo.',
+  gloss: [ { es: 'la raíz', en: 'la parte inicial de una palabra, sobre la que se construye el resto' },
+           { es: 'reutilizar', en: 'volver a usar algo que ya se ha usado antes' },
+           { es: 'la criptografía', en: 'la ciencia de proteger la información codificándola' },
+           { es: 'la caducidad', en: 'el momento en que algo deja de ser válido' },
+           { es: 'trimestral', en: 'que ocurre cada tres meses' } ],
+  questions: [
+    { type: 'mcq', q: '¿De qué tipo fue el error, según el texto?',
+      options: ['Matemático', 'De previsión del comportamiento humano', 'De programación'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué siguen vigentes las normas antiguas en algunas empresas?',
+      options: ['Porque funcionan mejor', 'Porque están en listas de comprobación difíciles de modificar', 'Porque lo exige la ley'], answer: 1 },
+    { type: 'mcq', q: '¿Qué principio general defiende?',
+      options: ['Que la seguridad debe ser invisible', 'Que un sistema que exige lo que nadie hará no es seguro', 'Que hay que cambiar las contraseñas a diario'], answer: 1 },
+    { type: 'translate', line: 'una lista de comprobación es más difícil de cambiar que un algoritmo', model: 'a checklist is harder to change than an algorithm' }
+  ]
+},
+
+{
+  id: 'b2-ciencia-metodo', title: 'Lo que un experimento no demuestra', level: 7, theme: 'ciencia',
+  tenses: ['presente', 'futuro', 'condicional'],
+  text: 'Un descubrimiento llega al público a través de una cadena de traducciones, y en cada una pierde una condición. El científico escribe que en una muestra de cuarenta ratones se observó una reducción; el gabinete de prensa de la universidad titula que un invento de la informática médica podría frenar la enfermedad; el periódico recorta el condicional porque no cabe; y la red social se queda con el titular sin el periódico. Nadie ha mentido en ningún paso y el resultado final es falso. La responsabilidad se reparte peor de lo que suele decirse. Es cómodo culpar al periodismo, pero el método que produce la noticia empieza en el propio centro de investigación, donde la ciencia compite por financiación y sabe que un experimento bien explicado y poco llamativo no consigue ninguna. También conviene mirar al lector, que en la pantalla del ordenador o del portátil premia con su atención exactamente los titulares que después denuncia, y los reparte por correo electrónico sin abrirlos. Lo que falta en esa cadena no es rigor, que sobra en el primer eslabón, sino un hábito: decir en voz alta lo que un resultado no demuestra. Un buen artículo científico dedica un apartado entero a sus propias limitaciones, y ese apartado es el único que nunca se traduce. Si un solo eslabón lo conservara, el resto de la cadena funcionaría razonablemente bien.',
+  gloss: [ { es: 'el gabinete de prensa', en: 'el servicio que comunica a los medios lo que hace una institución' },
+           { es: 'el condicional', en: 'la forma verbal que indica que algo es posible, no seguro' },
+           { es: 'la financiación', en: 'el dinero con que se paga una investigación' },
+           { es: 'el eslabón', en: 'cada una de las piezas que forman una cadena' },
+           { es: 'el rigor', en: 'la exactitud y el cuidado en el trabajo' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde sitúa el autor el origen de la distorsión?',
+      options: ['En el periodismo', 'Ya en el centro de investigación, que compite por financiación', 'En las redes sociales'], answer: 1 },
+    { type: 'mcq', q: '¿Qué le reprocha al lector?',
+      options: ['Que no lea la fuente original', 'Que premie con su atención lo que luego critica', 'Que no entienda la ciencia'], answer: 1 },
+    { type: 'mcq', q: '¿Cuál es la propuesta final?',
+      options: ['Prohibir los titulares llamativos', 'Conservar en la cadena lo que el estudio no demuestra', 'Aumentar la financiación'], answer: 1 },
+    { type: 'translate', line: 'Nadie ha mentido en ningún paso y el resultado final es falso.', model: 'Nobody has lied at any step and the final result is false.' }
+  ]
+},
+
+{
+  id: 'b2-pol-provincia', title: 'Lo que decide una provincia', level: 6, theme: 'politica',
+  tenses: ['presente', 'condicional', 'presubj'],
+  text: 'Un ciudadano medio sabe quién es el presidente y quién es el rey, y tiene una opinión formada sobre la unión europea. Si se le pregunta qué decide exactamente su provincia, o qué se vota en las elecciones de un distrito, la respuesta suele ser un silencio educado. No es ignorancia: es el resultado previsible de un reparto de competencias que nadie explica nunca en los mismos términos en que se vota. El congreso y el senado ocupan las noticias; la carretera que uno usa cada día, el centro de salud y el colegio dependen de instituciones cuyos responsables no reconocería en una fotografía. Las consecuencias son concretas. La participación en las elecciones donde el voto pesa más, por haber menos votantes, es sistemáticamente la más baja. Quien se queja de que la política no resuelve sus problemas suele estar hablando de asuntos que se deciden en la administración a la que menos atención presta. Los partidos políticos conocen bien este desajuste y viven cómodos en él, porque una campaña provincial que se gana hablando de la nación entera es más barata que una que exija explicar qué se va a hacer con el presupuesto local. La crisis de representación de la que tanto se habla tiene aquí una parte de su explicación, y no es la más romántica.',
+  gloss: [ { es: 'las competencias', en: 'los asuntos que corresponde decidir a cada administración' },
+           { es: 'el desajuste', en: 'la falta de correspondencia entre dos cosas' },
+           { es: 'la participación', en: 'la proporción de personas con derecho a voto que votan' },
+           { es: 'sistemáticamente', en: 'de forma constante y repetida' },
+           { es: 'la representación', en: 'el hecho de que unos elegidos actúen en nombre de los ciudadanos' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué explica el desconocimiento del ciudadano?',
+      options: ['Su falta de interés', 'Que el reparto de competencias no se explica en los términos en que se vota', 'La complejidad de las leyes'], answer: 1 },
+    { type: 'mcq', q: '¿Qué paradoja señala sobre la participación?',
+      options: ['Que se vota menos donde cada voto pesa más', 'Que vota más gente mayor', 'Que se vota más en las ciudades'], answer: 0 },
+    { type: 'mcq', q: '¿Qué actitud atribuye a los partidos?',
+      options: ['Combaten el desajuste', 'Se benefician de él porque abarata la campaña', 'Lo desconocen'], answer: 1 },
+    { type: 'translate', line: 'La crisis de representación de la que tanto se habla tiene aquí una parte de su explicación', model: 'The crisis of representation that is so much talked about has part of its explanation here' }
+  ]
+},
+
+{
+  id: 'b2-pol-cortesia', title: 'La amabilidad como argumento', level: 6, theme: 'politica',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj'],
+  text: 'Se repite a menudo que en la vida pública se ha perdido la cortesía y que el debate sería mejor si los ministros y los diputados se trataran con más amabilidad. La queja es comprensible y bastante tramposa. La cortesía en el congreso nunca fue un signo de acuerdo: fue un procedimiento que permitía desacuerdos profundos sin que nadie tuviera que irse. Confundir las dos cosas lleva a un error que se ve todos los meses: se considera educado a quien no dice nada sustancial y agresivo a quien contradice con datos. Un ciudadano razonable puede preferir a alguien maleducado que responde a la pregunta antes que a una buena persona que tarda cuatro minutos en no contestarla. Hay además un uso más interesado de la queja. Pedir cortesía es, con frecuencia, pedir silencio, y suele pedirla quien tiene la posición más cómoda. La sociología lleva décadas observando que en cualquier institución las normas de trato favorecen a quien ya está dentro. Nada de esto justifica el insulto, que empobrece la discusión y ahuyenta a quien podría aportar algo. Sí sugiere que la educación no es el problema ni la solución, y que un debate donde todos se tratan de usted puede ser exactamente igual de vacío que uno donde se gritan.',
+  gloss: [ { es: 'tramposo', en: 'que engaña con apariencia de razonable' },
+           { es: 'sustancial', en: 'que tiene contenido real e importante' },
+           { es: 'interesado', en: 'hecho buscando el propio beneficio' },
+           { es: 'ahuyentar', en: 'hacer que alguien se aleje o no quiera acercarse' },
+           { es: 'empobrecer', en: 'hacer que algo pierda calidad o riqueza' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué distinción establece el texto?',
+      options: ['Entre cortesía como acuerdo y como procedimiento', 'Entre políticos jóvenes y mayores', 'Entre el congreso y el senado'], answer: 0 },
+    { type: 'mcq', q: '¿A quién beneficia habitualmente pedir más cortesía?',
+      options: ['A quien ocupa la posición más cómoda', 'A los ciudadanos', 'A la oposición'], answer: 0 },
+    { type: 'mcq', q: '¿Qué matiz introduce al final?',
+      options: ['Que el insulto es aceptable', 'Que rechaza el insulto sin aceptar la queja', 'Que prefiere el debate agresivo'], answer: 1 },
+    { type: 'translate', line: 'Pedir cortesía es, con frecuencia, pedir silencio', model: 'Asking for politeness is often asking for silence' }
+  ]
+},
+
+{
+  id: 'b2-arte-museo', title: 'Once segundos delante de un cuadro', level: 6, theme: 'arte',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro'],
+  text: 'Los estudios de comportamiento en museos coinciden en una cifra incómoda: el visitante medio dedica entre once y diecisiete segundos a cada obra, y una parte de ese tiempo la emplea en leer la cartela. Quien ha recorrido una exposición grande en hora y media reconocerá el dato sin discutirlo. La reacción institucional ha consistido en producir más contexto: audioguías, paneles, aplicaciones que reconocen el cuadro con la cámara. Todo ello añade información y no cambia el número, porque el problema no era de información. Hay un experimento sencillo que casi nadie hace y que suele producir un efecto desproporcionado: quedarse delante de una sola obra durante diez minutos. No es una recomendación estética, es casi mecánica. Pasados los primeros dos o tres minutos, cuando ya se ha agotado lo que se reconoce, empieza a verse la composición, el orden en que el pintor quiso que se mirara, lo que está a medio terminar. El museo moderno está organizado para lo contrario: un recorrido, una salida por la tienda y la sensación de haber cubierto el edificio. Una catedral, un palacio o un castillo funcionan igual. Nadie ha decidido que la cultura se visite de esta manera; simplemente es la única que cabe en una mañana de sábado y en el precio de la entrada.',
+  gloss: [ { es: 'la cartela', en: 'el cartel pequeño que explica una obra junto a ella' },
+           { es: 'la audioguía', en: 'el aparato que explica la visita mientras se recorre' },
+           { es: 'desproporcionado', en: 'mucho mayor de lo que cabría esperar' },
+           { es: 'la composición', en: 'la manera en que están ordenados los elementos de una obra' },
+           { es: 'el recorrido', en: 'el camino que se sigue al visitar un lugar' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué no funcionan las audioguías y los paneles?',
+      options: ['Porque son caros', 'Porque añaden información a un problema que no era de información', 'Porque nadie los usa'], answer: 1 },
+    { type: 'mcq', q: '¿Qué ocurre pasados los primeros minutos ante una obra?',
+      options: ['Aparece el aburrimiento', 'Se empieza a ver más allá de lo reconocible', 'Se recuerda mejor el título'], answer: 1 },
+    { type: 'mcq', q: '¿A qué atribuye el modelo de visita actual?',
+      options: ['A una decisión de los museos', 'A lo que cabe en una mañana y en el precio de la entrada', 'Al desinterés del público'], answer: 1 },
+    { type: 'translate', line: 'el orden en que el pintor quiso que se mirara', model: 'the order in which the painter wanted it to be looked at' }
+  ]
+},
+
+{
+  id: 'b2-arte-flamenco', title: 'El flamenco de los folletos', level: 7, theme: 'arte',
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj', 'condperf'],
+  text: 'En Sevilla hay dos flamencos y conviene no confundirlos. Uno se anuncia en los folletos de los hoteles, empieza a las nueve, dura hora y cuarto e incluye una bebida. El otro no se anuncia, empieza cuando el cantante decide y puede no ocurrir. El primero da de comer a muchas familias y ha conservado oficios que se habrían perdido; el segundo es donde se decide qué es el flamenco el año que viene. Quien los presenta como enemigos suele conocer poco los dos. La discusión se vuelve más interesante si se mira lo que le ocurrió antes a otras músicas. El tango se convirtió en espectáculo para visitantes y no se murió: se dividió. El jazz hizo algo parecido con los festivales. Lo que se pierde en estos procesos no es la autenticidad, palabra que no explica nada, sino la posibilidad del fracaso. Una guitarra, un cantante y una sala pequeña donde la actuación puede salir mal producen, de vez en cuando, algo que ningún espectáculo con horario puede producir, precisamente porque en un espectáculo con horario no está permitido que salga mal. El turista que paga la entrada no está siendo engañado. Está comprando una versión sin riesgo de una forma de arte que consiste, en parte, en correrlo.',
+  gloss: [ { es: 'la actuación', en: 'lo que un artista hace delante del público' },
+           { es: 'la autenticidad', en: 'la cualidad de ser genuino y no una imitación' },
+           { es: 'el fracaso', en: 'el hecho de que algo salga mal' },
+           { es: 'dividirse', en: 'separarse en dos partes que siguen caminos distintos' },
+           { es: 'correr un riesgo', en: 'exponerse a que algo salga mal' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué postura adopta el autor sobre los dos flamencos?',
+      options: ['Condena el comercial', 'Reconoce una función a cada uno', 'Considera que son lo mismo'], answer: 1 },
+    { type: 'mcq', q: '¿Qué se pierde, según él, al convertir una música en espectáculo?',
+      options: ['La autenticidad', 'La posibilidad de que salga mal', 'Los músicos jóvenes'], answer: 1 },
+    { type: 'mcq', q: '¿Qué implica la frase final sobre el turista?',
+      options: ['Que lo están estafando', 'Que compra conscientemente una versión sin riesgo', 'Que no entiende el flamenco'], answer: 1 },
+    { type: 'translate', line: 'en un espectáculo con horario no está permitido que salga mal', model: 'in a show with a timetable it is not allowed to go wrong' }
+  ]
+},
+
+{
+  id: 'b2-relig-monja', title: 'El convento que se queda sin monjas', level: 6, theme: 'religion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
+  text: 'En el pueblo donde nació mi madre hay un convento con doce monjas cuya media de edad supera los ochenta años, y un sacerdote que va a decir misa los jueves. Hace treinta años eran cuarenta. El catolicismo español ha pasado en dos generaciones de ser la estructura que organizaba el calendario, la escuela y el luto a ser una opción entre otras, y la despoblación de los conventos es el indicador más limpio de ese cambio, mucho más que las encuestas. Lo que ocurre a continuación interesa incluso a quien nunca ha pisado una iglesia. Esos edificios sostienen archivos, bibliotecas y, en muchos pueblos, el único espacio cubierto donde cabe una reunión. Cuando se cierra un convento no solo se marcha una comunidad religiosa: se pierde un equipamiento del que el ayuntamiento no puede hacerse cargo. El párroco de la zona, que atiende once parroquias, lo explica sin nostalgia y con una frialdad administrativa que sorprende: dice que el problema no es que la gente haya dejado de creer, porque eso no le corresponde arreglarlo a él, sino que nadie ha decidido qué hacer con los muros. Un ateo, un protestante, un cristiano ortodoxo y un católico pueden discrepar de todo y coincidir en que dejar caer un edificio de 1602 no es una postura sobre la fe.',
+  gloss: [ { es: 'el luto', en: 'el tiempo y las costumbres con que se recuerda a un muerto' },
+           { es: 'la despoblación', en: 'la pérdida progresiva de habitantes de un lugar' },
+           { es: 'el equipamiento', en: 'las instalaciones de que dispone un pueblo o un barrio' },
+           { es: 'la parroquia', en: 'el territorio y la comunidad que atiende una iglesia' },
+           { es: 'discrepar', en: 'no estar de acuerdo' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué le interesa el cierre a quien no es creyente?',
+      options: ['Por motivos estéticos', 'Porque se pierde un espacio de uso común', 'Porque subirán los impuestos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué tono emplea el párroco?',
+      options: ['Nostálgico', 'Administrativo y frío', 'Resentido'], answer: 1 },
+    { type: 'mcq', q: '¿Qué separa el texto en su última frase?',
+      options: ['La creencia religiosa y la conservación del patrimonio', 'Los católicos y los protestantes', 'El pueblo y la ciudad'], answer: 0 },
+    { type: 'translate', line: 'el problema no es que la gente haya dejado de creer', model: 'the problem is not that people have stopped believing' }
+  ]
+},
+
+{
+  id: 'b2-salud-urgencias', title: 'El centro de salud que cierra a las tres', level: 6, theme: 'salud',
+  tenses: ['presente', 'preterito', 'condicional', 'presubj'],
+  text: 'Una parte considerable de lo que llega a urgencias un martes por la tarde no es una urgencia. Es una fiebre de dos días, una herida que necesita tres puntos, un corte que sangra poco y asusta mucho, una gripe que lleva una semana. El personal lo sabe y lo dice con menos reproche del que cabría esperar, porque también sabe dónde está el origen: el centro de salud de ese barrio cierra a las tres y la cita médica más próxima es para dentro de once días. Llamar a esto mal uso del sistema por parte del paciente es describir el efecto y llamarlo causa. Nadie con un trabajo de ocho a cinco y un dolor que no se va elige razonablemente esperar once días. La consecuencia es económica antes que sanitaria: atender una quemadura leve en urgencias cuesta varias veces lo que costaría en atención primaria, y el enfermero que la atiende no está atendiendo otra cosa. Las campañas que piden al ciudadano que use bien los servicios llevan treinta años sin efecto medible, lo cual, después de treinta años, ya no es un dato sobre el ciudadano. Ampliar el horario de un centro de salud es caro, poco vistoso y no se inaugura. Es también, en casi todas las cuentas publicadas, más barato que la alternativa.',
+  gloss: [ { es: 'los puntos', en: 'las costuras con que se cierra una herida' },
+           { es: 'el reproche', en: 'la crítica que se hace a alguien por lo que ha hecho' },
+           { es: 'la atención primaria', en: 'el primer nivel de asistencia sanitaria, el más cercano al paciente' },
+           { es: 'vistoso', en: 'que llama la atención y luce mucho' },
+           { es: 'inaugurar', en: 'abrir oficialmente algo nuevo, con acto público' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo explica el texto el uso de urgencias?',
+      options: ['Por comodidad del paciente', 'Por la falta de alternativa en horario y plazo', 'Por desconocimiento'], answer: 1 },
+    { type: 'mcq', q: '¿Qué conclusión saca de treinta años de campañas sin efecto?',
+      options: ['Que hay que insistir más', 'Que el problema no está en el ciudadano', 'Que las campañas están mal hechas'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué no se amplían los horarios?',
+      options: ['Porque no hay personal', 'Porque es caro y políticamente poco rentable', 'Porque no serviría de nada'], answer: 1 },
+    { type: 'translate', line: 'describir el efecto y llamarlo causa', model: 'to describe the effect and call it the cause' }
+  ]
+},
+
+{
+  id: 'b2-econ-factura', title: 'Quién paga de verdad un impuesto', level: 7, theme: 'economia',
+  tenses: ['presente', 'preterito', 'presubj'],
+  text: 'Hay una diferencia que la economía enseña en la primera semana y que casi nunca aparece en la discusión pública: quien entrega el dinero a la administración no es necesariamente quien soporta el coste. Un impuesto sobre una compañía puede acabar pagándolo el cliente en la factura, el empleado en su salario o el propietario en su beneficio, y cuál de los tres ocurre no depende de lo que diga la ley sino de quién puede marcharse a otro sitio. Es un asunto técnico con consecuencias muy poco técnicas. Sin él, cualquier discusión sobre pagar impuestos se convierte en una pelea de titulares. Subir el impuesto sobre la renta a las rentas altas y subir el impuesto al consumo se presentan a veces como decisiones del mismo tipo, cuando la segunda recae sobre quien gasta todo lo que ingresa y la primera no. La riqueza y la pobreza no cambian por el nombre del tributo, sino por dónde acaba la carga. Lo que un presupuesto público hace con el dinero es una discusión legítima y distinta; se puede sostener que una deuda alta es peligrosa o que la jubilación necesita otro esquema, y esas son posiciones defendibles. Lo que no se sostiene es discutir quién debe pagar sin preguntarse antes quién termina pagando.',
+  gloss: [ { es: 'soportar el coste', en: 'ser quien realmente pierde el dinero al final' },
+           { es: 'el beneficio', en: 'la ganancia que obtiene una empresa' },
+           { es: 'recaer sobre', en: 'terminar afectando a alguien' },
+           { es: 'la carga', en: 'el peso económico que alguien tiene que soportar' },
+           { es: 'el tributo', en: 'la cantidad que se paga obligatoriamente al Estado' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es la distinción central del texto?',
+      options: ['Entre impuestos altos y bajos', 'Entre quien entrega el dinero y quien soporta el coste', 'Entre deuda y presupuesto'], answer: 1 },
+    { type: 'mcq', q: '¿De qué depende quién acaba pagando?',
+      options: ['De lo que diga la ley', 'De quién tiene la posibilidad de marcharse', 'Del tipo impositivo'], answer: 1 },
+    { type: 'mcq', q: '¿Qué reconoce el autor como discusión legítima?',
+      options: ['El destino del gasto público', 'Que los impuestos son injustos', 'Que hay que bajar la deuda'], answer: 0 },
+    { type: 'translate', line: 'discutir quién debe pagar sin preguntarse antes quién termina pagando', model: 'to argue about who ought to pay without first asking who ends up paying' }
+  ]
+},
+
+{
+  id: 'b2-econ-catalogo', title: 'El catálogo y el escaparate', level: 6, theme: 'economia',
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj'],
+  text: 'Una tienda pequeña que vende por internet compite en un terreno que no diseñó y cuyas reglas no puede negociar. Su catálogo aparece junto al de una compañía capaz de perder dinero durante cuatro años en una categoría entera para quedarse con ella, y esa asimetría no se resuelve con mejor márquetin. Conviene decirlo porque la conversación pública sobre el pequeño comercio se ha llenado de consejos —un buen folleto, presencia en redes, una exhibición cuidada— que dan por supuesto que el problema es de habilidad. El comercio de proximidad tiene, sin embargo, dos ventajas que ninguna organización grande puede comprar: la devolución sin trámite y el conocimiento del cliente. Quien vende en la misma calle desde hace veinte años sabe qué se llevó mal el año pasado, qué factura no se cobró y a quién no conviene fiarle, y no vuelve a ofrecerlo. Lo que ha ido desapareciendo no es el comercio, que resiste mejor de lo que suele decirse, sino el intermedio: la compañía mediana, con quince empleados, demasiado grande para vivir del barrio y demasiado pequeña para negociar con un fabricante. Una economía sin ese tramo se vuelve frágil de una manera que tarda en notarse, porque lo que se pierde no son tiendas sino la posibilidad de que una tienda crezca sin venderse.',
+  gloss: [ { es: 'la asimetría', en: 'la diferencia de fuerza entre dos partes' },
+           { es: 'dar por supuesto', en: 'aceptar algo sin comprobarlo' },
+           { es: 'el comercio de proximidad', en: 'las tiendas del propio barrio' },
+           { es: 'el intermedio', en: 'lo que está entre dos extremos' },
+           { es: 'frágil', en: 'que se rompe con facilidad' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué critica de los consejos habituales al pequeño comercio?',
+      options: ['Que sean caros', 'Que supongan que el problema es de habilidad', 'Que nadie los siga'], answer: 1 },
+    { type: 'mcq', q: '¿Qué es lo que de verdad está desapareciendo, según el texto?',
+      options: ['La tienda de barrio', 'La empresa mediana', 'El comercio por internet'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué es grave esa pérdida?',
+      options: ['Porque suben los precios', 'Porque una tienda ya no puede crecer sin venderse', 'Porque se pierden empleos'], answer: 1 },
+    { type: 'translate', line: 'compite en un terreno que no diseñó y cuyas reglas no puede negociar', model: 'it competes on ground it did not design and whose rules it cannot negotiate' }
+  ]
+},
+
+{
+  id: 'b2-relig-asignatura', title: 'La hora de religión', level: 6, theme: 'religion',
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj'],
+  text: 'Pocos asuntos escolares han producido tanto ruido y tan poca discusión útil como la hora de religión. El debate se plantea una y otra vez en los mismos términos —si la asignatura debe existir y si debe contar para la nota— y rara vez se pregunta qué se enseña en ella. Conviene separar dos asuntos que se confunden a diario. Una es la catequesis: enseñar el cristianismo desde dentro, con la biblia como fuente y el objetivo de formar creyentes. Otra es la historia de las religiones, que trata el islamismo, el budismo, el hinduismo, el protestantismo y el ateísmo como hechos culturales que han organizado calendarios, leyes y guerras durante siglos. La primera pertenece a una comunidad; la segunda, a cualquier educación razonable. Un alumno que termina el instituto sin saber qué es el corán, quién es el papa o por qué el sabbat cae en sábado no está siendo protegido de nada: está siendo privado de la mitad de las claves para leer un periódico. La objeción previsible es que la línea entre ambas resulta difícil de mantener en un aula, y es cierta. También lo es en las clases de historia reciente, y a nadie se le ha ocurrido suprimirlas por eso. Que algo sea difícil de hacer bien no es un argumento para no hacerlo.',
+  gloss: [ { es: 'la catequesis', en: 'la enseñanza de una fe a quienes van a practicarla' },
+           { es: 'la fuente', en: 'el texto o el origen de donde se saca una información' },
+           { es: 'privar de', en: 'quitar a alguien algo que necesita o le corresponde' },
+           { es: 'las claves', en: 'los datos necesarios para entender algo' },
+           { es: 'suprimir', en: 'eliminar, hacer desaparecer' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué distinción organiza el texto?',
+      options: ['Entre colegios públicos y privados', 'Entre enseñar una fe y enseñar el hecho religioso', 'Entre creyentes y ateos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué implica decir que el alumno «no está siendo protegido de nada»?',
+      options: ['Que la ignorancia no es neutralidad', 'Que la asignatura es peligrosa', 'Que los padres deciden mal'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo responde a la objeción que él mismo plantea?',
+      options: ['La rechaza por falsa', 'La acepta y niega que sirva de argumento', 'La ignora'], answer: 1 },
+    { type: 'translate', line: 'Que algo sea difícil de hacer bien no es un argumento para no hacerlo.', model: 'That something is hard to do well is not an argument for not doing it.' }
+  ]
 }
 ];
