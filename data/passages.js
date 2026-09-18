@@ -7256,5 +7256,525 @@ window.PASSAGES = [
     { type: 'short', q: '¿Cuánto duró la tormenta? (dos palabras)', accept: ['cuarenta minutos', '40 minutos', 'cuarenta'] },
     { type: 'translate', line: 'el campo no discute con el cielo, lo mira y actúa', model: 'the countryside does not argue with the sky, it watches it and acts' }
   ]
+},
+
+{
+  id: 'b2-ocio-aficion', title: 'La afición que no rinde cuentas', level: 6, theme: 'ocio',
+  tenses: ['presente', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
+  text: 'Hay una pregunta que se ha vuelto casi obligatoria cuando alguien menciona una afición: «¿Y eso te da algo?» Quien hace jardinería en una terraza de ocho metros acaba explicando cuánto ahorra en tomates; quien practica un deporte sin competir tiene que justificar el gimnasio con una analítica. El bricolaje se defiende por lo que cuesta un carpintero, y hasta hacer crucigramas se ha reconvertido en prevención del deterioro cognitivo. Nada de esto es falso, y ahí está el problema: que sea verdad no significa que sea la razón. Conviene recordar que el tiempo libre se llamó así precisamente porque no rendía cuentas a nadie. Un domingo dedicado a montar en bicicleta sin destino, a hacer senderismo por un camino que ya se conoce o a ver una película mediocre desde el mismo sillón no produce nada, y esa improductividad no es un defecto del descanso sino su definición. Quien convierte la afición en un segundo oficio suele descubrir, a los pocos meses, que ha perdido las dos cosas: ya no descansa y todavía no cobra. La sospecha de fondo es que nos cuesta aceptar el placer sin factura. Preferimos decir que hacemos turismo para conocer otras culturas antes que admitir que nos apetecía cambiar de asiento durante una semana. Puede que la pregunta correcta no sea qué nos da una afición, sino qué nos quitaría dejarla.',
+  gloss: [ { es: 'rendir cuentas', en: 'tener que explicar o justificar lo que uno hace ante otra persona' },
+           { es: 'una analítica', en: 'un análisis de sangre que mide el estado de salud' },
+           { es: 'el deterioro cognitivo', en: 'la pérdida progresiva de memoria y capacidad mental con la edad' },
+           { es: 'la improductividad', en: 'la cualidad de no producir ningún resultado útil' },
+           { es: 'de fondo', en: 'que está debajo de lo que se dice, aunque no se diga abiertamente' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué critica el texto?',
+      options: ['Que la gente tenga aficiones caras', 'La costumbre de justificar el ocio por su utilidad', 'Que se practique poco deporte'], answer: 1 },
+    { type: 'mcq', q: '¿Qué implica la frase «que sea verdad no significa que sea la razón»?',
+      options: ['Que los beneficios citados son mentira', 'Que los beneficios existen pero no son el motivo real', 'Que nadie sabe por qué hace deporte'], answer: 1 },
+    { type: 'mcq', q: '¿Qué actitud adopta el autor al final?',
+      options: ['Propone invertir la pregunta en lugar de responderla', 'Recomienda abandonar las aficiones', 'Concluye que el ocio debe ser rentable'], answer: 0 },
+    { type: 'translate', line: 'esa improductividad no es un defecto del descanso sino su definición', model: 'that unproductiveness is not a flaw in rest but its definition' }
+  ]
+},
+
+{
+  id: 'b2-ocio-entrada', title: 'El precio de una entrada', level: 6, theme: 'ocio',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'La primera vez que fui a la ópera tenía diecinueve años y una entrada de última fila que costaba menos que la cena posterior. El asiento era incómodo, no veía la mitad del escenario y salí convencido de haber asistido a algo importante sin entender del todo qué. Treinta años después, la misma sala vende esa fila a cuatro veces aquel precio y la ocupa, mayoritariamente, gente de mi edad. No es un dato pequeño. Las instituciones culturales repiten que quieren acercarse a un público joven y organizan para ello campañas, invitaciones y descuentos que funcionan durante una temporada; luego el precio vuelve a su sitio y el público también. Se habla mucho de que a los jóvenes ya no les interesa el teatro, y se habla menos de que una obra de teatro un sábado cuesta lo que una entrada a un concierto multitudinario donde, al menos, no hay que saber nada de antemano. Quien defiende el modelo actual argumenta que la ópera es cara de producir, lo cual es indiscutible. Lo discutible es la conclusión: que el precio deba recaer sobre quien todavía no ha decidido si le gusta. Un aficionado se hace con veinte funciones malas, no con una buena. Nadie descubre una afición pagando por adelantado el precio de tenerla.',
+  gloss: [ { es: 'el escenario', en: 'el espacio del teatro donde actúan los intérpretes' },
+           { es: 'multitudinario', en: 'con una cantidad muy grande de gente' },
+           { es: 'de antemano', en: 'antes de que algo ocurra' },
+           { es: 'indiscutible', en: 'tan claro que no admite discusión' },
+           { es: 'la función', en: 'cada una de las representaciones de una obra o espectáculo' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué explicación rechaza el autor?',
+      options: ['Que producir ópera sea caro', 'Que el desinterés juvenil sea la causa principal', 'Que el público haya envejecido'], answer: 1 },
+    { type: 'mcq', q: '¿Qué función tiene la anécdota inicial?',
+      options: ['Mostrar que una afición se forma sin entender aún lo que se ve', 'Demostrar que la ópera era mejor antes', 'Explicar por qué dejó de ir'], answer: 0 },
+    { type: 'mcq', q: '¿Qué concede el autor a quienes defienden los precios actuales?',
+      options: ['Que el público joven no vendría igualmente', 'Que los costes de producción son reales', 'Que los descuentos son inútiles'], answer: 1 },
+    { type: 'translate', line: 'Un aficionado se hace con veinte funciones malas, no con una buena.', model: 'An enthusiast is made by twenty bad performances, not by one good one.' }
+  ]
+},
+
+{
+  id: 'b2-ocio-vacaciones', title: 'Trece días de descanso programado', level: 7, theme: 'ocio',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf'],
+  text: 'La agencia lo vendía como unas vacaciones de desconexión total: trece días, pensión completa y un programa de actividades que cubría de las nueve de la mañana a las siete de la tarde. Había excursiones, clases de natación en la piscina del hotel, torneos de tenis, un partido de fútbol los jueves, una salida de hacer senderismo cada dos jornadas y hasta una hora diaria reservada, literalmente, al descanso. Mi cuñado volvió agotado y encantado, en ese orden, y tardó una semana en admitir la primera parte. Lo interesante no es que el viaje fuera así, sino que lo eligiera. Había alternativas más baratas y más vacías. Cuando le pregunté por qué no había cogido simplemente una casa y catorce días sin plan, contestó algo que me pareció más honesto de lo que él pretendía: que no habría sabido qué hacer con ellos. Sospecho que no es el único. Hemos aprendido a tener tiempo libre siempre que venga con un compromiso adjunto, y llamamos descanso a la sustitución de unas obligaciones por otras que nos apetecen algo más. Quien llega a un hotel sin entradas compradas, sin un juego al que apuntarse y sin una lista de sitios donde hacer turismo suele pasar los dos primeros días inquieto. Al tercero, si aguanta, empieza otra cosa. El problema es que la mayoría de los viajes duran exactamente dos días más de lo necesario para llegar hasta ahí, y ni uno más.',
+  gloss: [ { es: 'la desconexión', en: 'el hecho de dejar de estar pendiente del trabajo y las obligaciones' },
+           { es: 'la jornada', en: 'el conjunto de horas que dura un día de actividad' },
+           { es: 'el cuñado', en: 'el marido de la hermana, o el hermano de la pareja' },
+           { es: 'adjunto', en: 'que va unido o añadido a otra cosa' },
+           { es: 'inquieto', en: 'que no consigue estar tranquilo ni quieto' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le llama la atención al narrador del viaje de su cuñado?',
+      options: ['Que fuera caro', 'Que lo eligiera pudiendo elegir otra cosa', 'Que volviera cansado'], answer: 1 },
+    { type: 'mcq', q: '¿Qué insinúa sobre la respuesta del cuñado?',
+      options: ['Que reveló más de lo que él quería decir', 'Que mentía', 'Que no lo había pensado nunca'], answer: 0 },
+    { type: 'mcq', q: 'Según el texto, ¿qué ocurre al tercer día sin plan?',
+      options: ['Que la gente se marcha', 'Que empieza un descanso distinto, si uno aguanta', 'Que aparece el aburrimiento definitivo'], answer: 1 },
+    { type: 'translate', line: 'llamamos descanso a la sustitución de unas obligaciones por otras que nos apetecen algo más', model: 'we call rest the swapping of one set of obligations for another we fancy slightly more' }
+  ]
+},
+
+{
+  id: 'b2-viv-reforma', title: 'La reforma que nunca termina', level: 6, theme: 'vivienda',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj', 'plusc', 'perfsubj'],
+  text: 'Cualquiera que haya hecho una reforma sabe que el presupuesto inicial es una obra de ficción aceptada por ambas partes. Se empieza cambiando el suelo del salón y se acaba descubriendo que las tuberías del lavabo son de plomo, que el techo del dormitorio tiene una viga que nadie había mirado y que la ducha no se puede mover sin rehacer medio baño. Lo que empezó como cuatro semanas en un piso sin amueblar termina en once, y en ese plazo la familia ha vivido en casa de los suegros, ha discutido tres veces sobre el color del sillón y ha aprendido los nombres de pila de toda la comunidad de vecinos. Conviene decirlo: buena parte de ese retraso no es culpa de nadie. Una vivienda de 1968 no se deja leer desde fuera, y el albañil que promete un plazo exacto o miente o no ha abierto todavía la pared. Lo que sí es culpa de alguien es el silencio. La queja repetida en cualquier escalera no es que la obra dure, sino que nadie avise de que va a durar. Entre un profesional que tarda el doble y lo dice al segundo día y otro que cumple el plazo pero desaparece sin contestar al teléfono, casi todo el mundo elige al primero, y con razón.',
+  gloss: [ { es: 'las tuberías', en: 'los tubos por donde circula el agua dentro de un edificio' },
+           { es: 'el plomo', en: 'un metal pesado que se usaba antes en las tuberías y que hoy se considera peligroso' },
+           { es: 'la viga', en: 'la pieza larga que sostiene el peso de un techo o un suelo' },
+           { es: 'los nombres de pila', en: 'el nombre propio de una persona, sin los apellidos' },
+           { es: 'el albañil', en: 'el trabajador que construye o arregla paredes y suelos' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué distingue el texto?',
+      options: ['Lo previsible y lo imprevisible de una obra', 'El retraso inevitable y la falta de aviso', 'Los pisos viejos y los nuevos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué sugiere llamar al presupuesto «una obra de ficción aceptada por ambas partes»?',
+      options: ['Que el cliente también sabe que no se cumplirá', 'Que los albañiles engañan deliberadamente', 'Que los presupuestos son ilegales'], answer: 0 },
+    { type: 'mcq', q: '¿Qué valora más el autor en un profesional?',
+      options: ['La rapidez', 'La honestidad sobre los plazos', 'El precio cerrado'], answer: 1 },
+    { type: 'translate', line: 'Una vivienda de 1968 no se deja leer desde fuera', model: 'A home built in 1968 cannot be read from the outside' }
+  ]
+},
+
+{
+  id: 'b2-viv-vecindario', title: 'Lo que sostiene un vecindario', level: 6, theme: 'vivienda',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'impsubj'],
+  text: 'En el portal de mi edificio hay una mesa pequeña donde, desde hace seis años, la gente deja lo que ya no quiere: un reloj que atrasa, ropa de niño, libros, un teléfono antiguo, dos sillas. Nadie la organizó. Apareció un día con un sofá imposible al lado y se quedó. Quien estudia estas cosas diría que es un ejemplo de capital social; quien vive aquí dice simplemente que es la mesa. Lo que me interesa es cómo se sostiene, porque no hay norma escrita ni responsable. Funciona porque hay cuatro o cinco personas que, sin haberlo hablado, retiran lo que lleva demasiado tiempo, y porque el resto acepta una regla implícita: se deja lo que uno daría a un amigo, no lo que uno tiraría. La comunidad de vecinos ha discutido dos veces si conviene quitarla, y las dos veces ha ganado dejarla, aunque nadie defendiera con entusiasmo una mesa llena de trastos junto al ascensor. Cuando vino un propietario nuevo a alquilar el estudio del bajo y preguntó de quién era aquello, la respuesta que le dieron fue exacta y algo inquietante: de nadie, y por eso está. La duda que me queda es si algo así puede diseñarse o si solo puede permitirse.',
+  gloss: [ { es: 'el capital social', en: 'la confianza y las relaciones que hacen que un grupo funcione sin normas escritas' },
+           { es: 'implícita', en: 'que se entiende sin necesidad de decirla' },
+           { es: 'los trastos', en: 'objetos viejos que estorban y que ya no se usan' },
+           { es: 'el bajo', en: 'la vivienda situada a nivel de la calle' },
+           { es: 'inquietante', en: 'que produce una sensación de inquietud o desconfianza' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué explica, según el autor, que la mesa siga funcionando?',
+      options: ['Una norma de la comunidad', 'Un acuerdo tácito y unas pocas personas que la cuidan', 'El trabajo del portero'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué le parece «algo inquietante» la respuesta al propietario nuevo?',
+      options: ['Porque nadie se hace responsable si algo va mal', 'Porque revela que lo que funciona depende de que nadie lo gestione', 'Porque el propietario no lo entendió'], answer: 1 },
+    { type: 'mcq', q: '¿Qué actitud tiene el autor al terminar?',
+      options: ['Concluye que el modelo debería copiarse', 'Deja la cuestión abierta', 'Recomienda regularlo'], answer: 1 },
+    { type: 'translate', line: 'se deja lo que uno daría a un amigo, no lo que uno tiraría', model: 'you leave what you would give to a friend, not what you would throw away' }
+  ]
+},
+
+{
+  id: 'b2-viv-compartir', title: 'Compartir piso a los cuarenta', level: 7, theme: 'vivienda',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj'],
+  text: 'Durante décadas compartir piso fue una etapa, y las etapas, por definición, se abandonan. El piso de estudiantes con la nevera dividida y el turno de limpieza en la puerta era incómodo, pero era temporal, y esa provisionalidad formaba parte del acuerdo. Lo que ha cambiado no es la fórmula sino la edad de quienes la practican. En las grandes ciudades españolas no es raro que un dormitorio en una vivienda compartida lo ocupe alguien de cuarenta y tres años con contrato fijo. Si le preguntas, no te hablará del ascensor estropeado ni del suelo que hay que fregar: te dirá que lo que pesa es tener que explicar cada cambio de plan a dos personas con las que no eligió vivir. La discusión pública se ha centrado casi por completo en el precio, y con motivo. Pero reducirlo todo al alquiler deja fuera lo que de verdad se pierde, que no es espacio sino previsibilidad: la posibilidad de cambiarse de casa cuando uno quiera, de reformar un baño, de dejar la terraza como le dé la gana. Quien comparte a los veinte renuncia a la intimidad durante un tiempo que sabe contado. Quien comparte a los cuarenta y cinco ha empezado a sospechar que no lo estaba.',
+  gloss: [ { es: 'la provisionalidad', en: 'la condición de lo que se sabe pasajero y no definitivo' },
+           { es: 'un contrato fijo', en: 'un contrato de trabajo sin fecha de finalización' },
+           { es: 'con motivo', en: 'con razón, de forma justificada' },
+           { es: 'la previsibilidad', en: 'la posibilidad de saber de antemano cómo será el futuro cercano' },
+           { es: 'la intimidad', en: 'el espacio privado de una persona, donde nadie más entra' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es la tesis del texto?',
+      options: ['Que los pisos compartidos son demasiado caros', 'Que lo grave no es compartir, sino que haya dejado de ser una etapa', 'Que los jóvenes deberían independizarse antes'], answer: 1 },
+    { type: 'mcq', q: '¿Qué le reprocha el autor al debate público?',
+      options: ['Que ignore el precio', 'Que se agote en el precio y olvide la pérdida de previsibilidad', 'Que culpe a los propietarios'], answer: 1 },
+    { type: 'mcq', q: '¿Qué implica la última frase?',
+      options: ['Que ya no espera que su situación cambie', 'Que prefiere vivir acompañado', 'Que piensa mudarse pronto'], answer: 0 },
+    { type: 'translate', line: 'lo que de verdad se pierde, que no es espacio sino previsibilidad', model: 'what is really lost, which is not space but predictability' }
+  ]
+},
+
+{
+  id: 'b2-compras-devolucion', title: 'El derecho a arrepentirse', level: 6, theme: 'compras',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Comprar por internet ha trasladado una parte del comercio a un terreno raro: el de la compra provisional. Se piden tres tallas del mismo jersey, dos pares de zapatos y un abrigo que nadie piensa quedarse, se prueba todo en casa y se devuelve lo que sobra. El vendedor lo sabe y lo tiene contabilizado. El comprador, en cambio, rara vez piensa en lo que ese sistema cuesta, y no hablo del precio que aparece en el recibo. Un pedido de cinco prendas que termina en una venta y cuatro devoluciones mueve diez trayectos. Nada de esto se ve desde el sofá, y esa invisibilidad es justamente el producto que se está vendiendo. Frente a eso, la tienda de la esquina mantiene una ventaja que ha tardado en saber defender: en una peluquería, en una frutería o en una papelería la decisión se toma delante de alguien. Uno prueba la falda, se mira y decide, y en esa incomodidad de tres minutos hay una información que ninguna ficha de producto reproduce. No se trata de renunciar al descuento ni de idealizar el pequeño comercio, que también vende cosas que no sirven. Se trata de notar que hemos cambiado el juicio por el trámite, y que devolver un pantalón nos parece gratis solo porque el coste lo paga otro.',
+  gloss: [ { es: 'contabilizado', en: 'incluido en las cuentas y previsto de antemano' },
+           { es: 'una prenda', en: 'cada una de las piezas de ropa que se llevan puestas' },
+           { es: 'el trayecto', en: 'el recorrido que hace un vehículo desde un punto hasta otro' },
+           { es: 'la ficha de producto', en: 'la página que describe un artículo en una tienda de internet' },
+           { es: 'el trámite', en: 'un paso administrativo que se cumple sin pensar en él' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué defiende el texto sobre las devoluciones?',
+      options: ['Que deberían prohibirse', 'Que parecen gratuitas porque su coste recae en otros', 'Que las tiendas las cobran mal'], answer: 1 },
+    { type: 'mcq', q: '¿Qué ventaja atribuye al comercio de barrio?',
+      options: ['Que es más barato', 'Que obliga a decidir en el momento, con más información', 'Que tiene mejor género'], answer: 1 },
+    { type: 'mcq', q: '¿Qué matiz introduce al final?',
+      options: ['Que el pequeño comercio también vende cosas inútiles', 'Que internet acabará desapareciendo', 'Que los descuentos son un engaño'], answer: 0 },
+    { type: 'translate', line: 'hemos cambiado el juicio por el trámite', model: 'we have swapped judgement for procedure' }
+  ]
+},
+
+{
+  id: 'b2-compras-rebajas', title: 'Cómo se fabrica un descuento', level: 6, theme: 'compras',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional'],
+  text: 'Una oferta bien construida no consiste en bajar el precio: consiste en construir el precio desde el que se baja. El mecanismo es conocido y sigue funcionando. Durante unas semanas, un vestido figura a ciento veinte euros en el escaparate, sin que nadie espere venderlo a ese precio; después aparece tachado, con un cuarenta por ciento de descuento, y se vende. Lo que el comprador compara no es el precio con el valor de la prenda, sino el precio con el otro precio. El supermercado hace lo mismo con otra gramática: tres unidades por el precio de dos, cantidades que obligan a llevar más de lo que se necesita, y una salida que pasa obligatoriamente por delante de lo que no se pensaba comprar. Sería cómodo concluir que el consumidor es un ingenuo, pero la mayoría de la gente conoce el truco y cae igual, lo que sugiere que el problema no es de información. Quien entra en unas rebajas con una lista concreta y sale con ella cumplida es, estadísticamente, una rareza. Lo interesante del pequeño comercio no es que no use estas técnicas —el estanco, la carnicería y la panadería también saben colocar el producto—, sino que a esa escala el engaño se paga: quien vende mal una vez pierde a un cliente al que verá pasar por su puerta todos los días durante quince años.',
+  gloss: [ { es: 'el escaparate', en: 'el cristal de una tienda donde se muestran los productos a la calle' },
+           { es: 'tachado', en: 'marcado con una raya encima para indicar que ya no es válido' },
+           { es: 'la gramática', en: 'aquí, el conjunto de reglas con que funciona algo' },
+           { es: 'un ingenuo', en: 'una persona que se cree las cosas con demasiada facilidad' },
+           { es: 'las rebajas', en: 'el periodo del año en que las tiendas venden más barato' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es la idea central del primer párrafo?',
+      options: ['Que las tiendas pierden dinero en rebajas', 'Que el precio alto previo existe para dar sentido al descuento', 'Que los descuentos son ilegales'], answer: 1 },
+    { type: 'mcq', q: '¿Qué conclusión saca de que la gente conozca el truco y caiga igual?',
+      options: ['Que hace falta más información al consumidor', 'Que el problema no se resuelve informando', 'Que la gente miente sobre sus compras'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué dice que en el pequeño comercio «el engaño se paga»?',
+      options: ['Porque hay más inspecciones', 'Porque la relación con el cliente es continuada', 'Porque los precios están regulados'], answer: 1 },
+    { type: 'translate', line: 'Lo que el comprador compara no es el precio con el valor de la prenda, sino el precio con el otro precio.', model: 'What the buyer compares is not the price with the value of the garment, but the price with the other price.' }
+  ]
+},
+
+{
+  id: 'b2-compras-uniforme', title: 'Un armario cada vez más igual', level: 7, theme: 'compras',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'condperf'],
+  text: 'Si alguien comparara una fotografía de una calle comercial de 1994 con otra tomada el mes pasado en la misma esquina, encontraría menos diferencias en los edificios que en la ropa de la gente, y no en el sentido que cabría esperar. Los abrigos son parecidos entre sí, los vaqueros son casi idénticos y la gorra, la bufanda y la cazadora se repiten con una uniformidad que hace treinta años habría resultado llamativa. La explicación habitual culpa a las grandes cadenas, y algo hay de eso. Pero conviene mirar también hacia el otro lado del mostrador. Comprar ropa exigía antes una negociación con un vendedor que conocía el género y que, a menudo, desaconsejaba la compra; ese diálogo desapareció con el autoservicio y con él una parte del criterio. Hoy la información llega antes de entrar en la tienda, ya filtrada, ya ordenada por lo que otros compraron. Nadie impone el pijama gris ni el jersey azul marino: se eligen libremente, uno detrás de otro, hasta formar un paisaje sin decisiones visibles. Lo que resulta más difícil de sostener es la idea de que esto sea una señal de libertad de elección. Elegir entre catorce versiones de la misma camisa se parece bastante a no elegir, con la diferencia de que uno sale de la tienda convencido de haberlo hecho.',
+  gloss: [ { es: 'llamativa', en: 'que atrae la atención por ser poco habitual' },
+           { es: 'el mostrador', en: 'la mesa alta que separa al vendedor del cliente en una tienda' },
+           { es: 'el género', en: 'aquí, la mercancía que se vende en una tienda' },
+           { es: 'desaconsejaba', en: 'recomendaba no hacer algo' },
+           { es: 'el autoservicio', en: 'el sistema en que el cliente coge el producto sin que nadie lo atienda' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué causa añade el autor a la explicación habitual?',
+      options: ['La desaparición del consejo del vendedor', 'El precio de la ropa', 'El clima'], answer: 0 },
+    { type: 'mcq', q: '¿Qué quiere decir «un paisaje sin decisiones visibles»?',
+      options: ['Que la ropa se elige a oscuras', 'Que el resultado parece impuesto aunque cada elección fuera libre', 'Que nadie mira lo que compra'], answer: 1 },
+    { type: 'mcq', q: '¿Cuál es la conclusión del último párrafo?',
+      options: ['Que hay más libertad de elección que nunca', 'Que la abundancia de opciones no equivale a elegir', 'Que habría que volver a las tiendas de antes'], answer: 1 },
+    { type: 'translate', line: 'Elegir entre catorce versiones de la misma camisa se parece bastante a no elegir', model: 'Choosing between fourteen versions of the same shirt is quite like not choosing' }
+  ]
+},
+
+{
+  id: 'b2-viajes-conserje', title: 'Lo que sabe el conserje', level: 6, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'En el hotel donde me alojé el mes pasado, el conserje llevaba veintiséis años detrás del mismo mostrador y sabía, con una precisión que ningún buscador reproduce, a qué hora conviene salir hacia la estación un viernes, qué taxi acepta tarjeta sin poner mala cara y cuál de los dos aparcamientos del barrio cierra antes de lo que anuncia. Le pregunté si la gente le consultaba menos que antes. Me contestó que le consultan distinto: ya nadie pide un plano ni pregunta dónde se come bien, porque eso viene decidido desde casa, pero suben a recepción en cuanto algo se tuerce. Un vuelo cancelado, una maleta que no llega, una excursión que no aparece por ningún lado. En otras palabras, el viajero ha externalizado la planificación y ha conservado al conserje para las averías. Él lo dice sin resentimiento, casi divertido, aunque señala una consecuencia incómoda: cuando alguien pregunta solo en las emergencias, las respuestas llegan tarde. La media hora de conversación al llegar, que antes servía para corregir un itinerario imposible, ya no se produce. Hacer una reserva se ha vuelto tan fácil que se hacen reservas que no encajan entre sí, y el error se descubre con la maleta hecha y el taxi esperando en la puerta.',
+  gloss: [ { es: 'el conserje', en: 'la persona que atiende la recepción de un hotel o un edificio' },
+           { es: 'poner mala cara', en: 'mostrar con el gesto que algo no gusta' },
+           { es: 'se tuerce', en: 'sale mal, deja de ir según lo previsto' },
+           { es: 'externalizar', en: 'encargar a otro una tarea que antes se hacía uno mismo' },
+           { es: 'el itinerario', en: 'el recorrido y el orden previstos de un viaje' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo ha cambiado el papel del conserje?',
+      options: ['Ha dejado de ser necesario', 'Se le consulta solo cuando algo falla', 'Ahora organiza los viajes enteros'], answer: 1 },
+    { type: 'mcq', q: '¿Qué consecuencia incómoda señala él?',
+      options: ['Que se le paga menos', 'Que el consejo llega cuando ya no puede evitar el problema', 'Que los turistas son maleducados'], answer: 1 },
+    { type: 'mcq', q: '¿Qué tono emplea el conserje al hablar del cambio?',
+      options: ['Resignado y algo divertido', 'Amargo', 'Entusiasta'], answer: 0 },
+    { type: 'translate', line: 'el viajero ha externalizado la planificación y ha conservado al conserje para las averías', model: 'the traveller has outsourced the planning and kept the concierge for the breakdowns' }
+  ]
+},
+
+{
+  id: 'b2-viajes-dni', title: 'Dos horas antes, por si acaso', level: 6, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj'],
+  text: 'Conozco a dos personas que representan bien los extremos. Una llega al aeropuerto tres horas antes con el carné de identidad, el pasaporte y una copia impresa de todo, por si el teléfono se queda sin batería. La otra hace las maletas veinte minutos antes de coger un taxi y ha perdido dos vuelos en cinco años, cosa que considera un balance aceptable. Lo llamativo es que ninguna de las dos esté dispuesta a discutirlo: cada una vive convencida de que su método es el sensato y de que la otra tiene un problema. Los números, si a alguien le interesan, dan un empate raro. La primera ha pasado, calculo, unos doce días completos de su vida esperando en salas de embarque. La segunda ha pagado dos billetes nuevos y una noche de hotel. La diferencia real no está en el coste sino en qué tipo de incomodidad prefiere cada una, y eso no se decide con una hoja de cálculo. Quien viaja con margen no compra tiempo: compra la ausencia de una escena concreta, la de correr por una terminal con la maleta detrás. Quien viaja justo tampoco compra tiempo: compra no tener que estar sentado en un sitio horrible mirando el reloj. Las dos pagan por lo mismo, que es no sentirse de una determinada manera.',
+  gloss: [ { es: 'por si acaso', en: 'por precaución, ante la posibilidad de que algo ocurra' },
+           { es: 'un balance', en: 'el resultado que queda al comparar lo bueno y lo malo' },
+           { es: 'llamativo', en: 'que llama la atención' },
+           { es: 'la sala de embarque', en: 'el espacio donde se espera antes de subir a un avión' },
+           { es: 'con margen', en: 'dejando tiempo de sobra antes de la hora límite' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué conclusión saca el autor de la comparación?',
+      options: ['Que llegar pronto es más racional', 'Que las dos pagan por evitar una incomodidad distinta', 'Que perder vuelos sale más barato'], answer: 1 },
+    { type: 'mcq', q: '¿Qué le parece más revelador de las dos personas?',
+      options: ['Que ninguna acepte discutir su método', 'Que viajen tanto', 'Que no calculen los costes'], answer: 0 },
+    { type: 'mcq', q: '¿Qué indica la expresión «un empate raro»?',
+      options: ['Que los datos no resuelven la discusión como cabría esperar', 'Que nadie ha contado bien', 'Que las dos han perdido lo mismo'], answer: 0 },
+    { type: 'translate', line: 'Las dos pagan por lo mismo, que es no sentirse de una determinada manera.', model: 'Both are paying for the same thing, which is not feeling a certain way.' }
+  ]
+},
+
+{
+  id: 'b2-viajes-carretera', title: 'El país visto desde la carretera', level: 7, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Hay un país que solo existe a ciento veinte kilómetros por hora y que desaparece en cuanto uno se baja del coche. Está hecho de gasolineras iguales, de áreas de servicio con el mismo café, de carteles que anuncian un castillo que nunca se visita y de pueblos cuyo nombre se lee dos segundos antes de dejarlos atrás. Quien viaja en avión no lo ve; quien viaja en tren lo ve a trozos y sin volante. Conducir una travesía larga produce una forma de atención muy particular: se está despierto sin pensar en nada concreto, lo cual explica que tanta gente afirme que las mejores conversaciones de su vida han ocurrido con los dos mirando al frente. Conviene desconfiar un poco de esa nostalgia. La carretera de la que hablan mis padres tenía el doble de muertos y un mecánico cada cuarenta kilómetros porque hacía falta. El aparcamiento de un área de servicio moderna es más seguro, más limpio y más aburrido, y esas tres cosas van juntas. Aun así, algo se ha perdido que no es solo peligro. Cuando la ruta la decide una aplicación que corrige el itinerario cada once minutos, el conductor deja de elegir el camino y pasa a supervisar una decisión ajena, que es exactamente lo contrario de lo que la gente dice ir a buscar cuando dice que le gusta conducir.',
+  gloss: [ { es: 'el área de servicio', en: 'la zona de descanso junto a una autopista, con gasolinera y cafetería' },
+           { es: 'el volante', en: 'la rueda con que se dirige un coche' },
+           { es: 'una travesía', en: 'un recorrido largo de un lugar a otro' },
+           { es: 'desconfiar de', en: 'no fiarse del todo de algo' },
+           { es: 'ajena', en: 'que pertenece o corresponde a otra persona' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué matiz introduce el autor sobre la nostalgia de la carretera antigua?',
+      options: ['Que era más bonita', 'Que era considerablemente más peligrosa', 'Que era más cara'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué dice que seguridad, limpieza y aburrimiento «van juntas»?',
+      options: ['Porque la mejora elimina también lo imprevisto', 'Porque las empresas ahorran', 'Porque la gente conduce peor'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es la crítica final?',
+      options: ['Que las aplicaciones se equivocan de ruta', 'Que el conductor supervisa en lugar de decidir', 'Que ya nadie viaja en coche'], answer: 1 },
+    { type: 'translate', line: 'Hay un país que solo existe a ciento veinte kilómetros por hora', model: 'There is a country that only exists at a hundred and twenty kilometres an hour' }
+  ]
+},
+
+{
+  id: 'b2-cuerpo-postura', title: 'Ocho horas en la misma silla', level: 6, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj'],
+  text: 'La medicina laboral lleva veinte años repitiendo lo mismo y el mensaje sigue sin calar: el daño de una jornada de oficina no está en ningún esfuerzo, sino en su ausencia. La espalda, el cuello y los hombros aguantan mal la inmovilidad, y la rodilla y el tobillo se quejan antes de lo que cabría esperar en alguien que no ha hecho nada. Los síntomas llegan desordenados. Primero la muñeca y el codo del brazo que usa el ratón; después la cabeza, casi siempre atribuida al ojo o a la falta de sueño; más tarde la barriga, porque la digestión también se resiente de la postura. Nada de esto es grave por separado, y de ahí que se consulte tarde. Lo que ha cambiado en los últimos años es la respuesta de las empresas, que han apostado por el mobiliario: sillas caras, mesas que suben y bajan, informes internos con fotografías. Es una mejora real y una coartada perfecta. La silla no decide cuántas horas se pasa sentado en ella. Quien firma una compra de cien mesas regulables y mantiene reuniones de tres horas sin pausa ha resuelto el problema en el papel, y solo ahí. Dar un paseo de diez minutos cada hora sigue siendo, por un margen enorme, la medida más eficaz y la única que cuesta tiempo en lugar de dinero.',
+  gloss: [ { es: 'calar', en: 'llegar de verdad a quien escucha y quedarse' },
+           { es: 'la inmovilidad', en: 'el hecho de permanecer sin moverse durante mucho tiempo' },
+           { es: 'se resiente', en: 'empeora o sufre las consecuencias de algo' },
+           { es: 'una coartada', en: 'una excusa que permite quedar libre de responsabilidad' },
+           { es: 'regulable', en: 'que se puede ajustar a distintas alturas o posiciones' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué llama «coartada perfecta» a las sillas caras?',
+      options: ['Porque no funcionan', 'Porque permiten parecer que se actúa sin cambiar los horarios', 'Porque son demasiado caras'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué se consultan tarde estos síntomas?',
+      options: ['Porque ninguno es grave por sí solo', 'Porque no hay médicos', 'Porque las empresas lo prohíben'], answer: 0 },
+    { type: 'mcq', q: '¿Qué solución prefiere el autor?',
+      options: ['La que exige tiempo y no dinero', 'El mobiliario adecuado', 'Reducir la jornada a la mitad'], answer: 0 },
+    { type: 'translate', line: 'La silla no decide cuántas horas se pasa sentado en ella.', model: 'The chair does not decide how many hours are spent sitting in it.' }
+  ]
+},
+
+{
+  id: 'b2-cuerpo-mirada', title: 'Describir a alguien sin describirlo', level: 7, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'imperativo'],
+  text: 'Pídele a diez personas que describan a un conocido común y observarás un fenómeno curioso: casi ninguna empezará por los datos. Nadie dice que tenga el pelo castaño y un metro setenta hasta que se le insiste. Lo primero que sale es la mirada, la postura, la manera de mover las manos al hablar. «Tiene cara de estar a punto de irse», me dijo alguien una vez de un compañero, y la frase resultó más útil para reconocerlo en una estación que cualquier inventario de rasgos. Esto tiene consecuencias prácticas que no suelen tenerse en cuenta. Un testigo describe con una precisión bajísima el color de los ojos o la forma de la nariz, y con una fiabilidad notablemente mayor si alguien andaba encogido de hombros o pisaba con el pie derecho hacia fuera. La descripción policial, que exige lo primero, obtiene por tanto lo que peor se recuerda. Lo mismo ocurre en sentido inverso cuando alguien adelgaza mucho, se deja barba o vuelve moreno de un verano entero: los rasgos han cambiado y la gente lo reconoce igual, porque lo que identifica a una persona a treinta metros no es su cara sino cómo ocupa el espacio. Reconocemos un cuerpo en movimiento mucho antes que una cabeza quieta.',
+  gloss: [ { es: 'un inventario de rasgos', en: 'una lista de las características físicas de una persona' },
+           { es: 'un testigo', en: 'la persona que ha visto algo y puede contarlo' },
+           { es: 'la fiabilidad', en: 'el grado en que se puede confiar en algo' },
+           { es: 'encogido', en: 'con el cuerpo doblado o metido hacia dentro' },
+           { es: 'adelgazar', en: 'perder peso' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué defiende el texto?',
+      options: ['Que reconocemos a la gente por su movimiento más que por sus rasgos', 'Que los testigos mienten', 'Que nadie sabe describir'], answer: 0 },
+    { type: 'mcq', q: '¿Qué crítica implícita hace a la descripción policial?',
+      options: ['Que es demasiado larga', 'Que pide precisamente lo que peor se retiene', 'Que la hacen mal los agentes'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué cita la frase «Tiene cara de estar a punto de irse»?',
+      options: ['Para mostrar que una impresión describe mejor que una medida', 'Para criticar a quien la dijo', 'Para explicar un gesto concreto'], answer: 0 },
+    { type: 'translate', line: 'lo que identifica a una persona a treinta metros no es su cara sino cómo ocupa el espacio', model: 'what identifies a person at thirty metres is not their face but how they occupy space' }
+  ]
+},
+
+{
+  id: 'b2-caracter-etiquetas', title: 'El test que lo explica todo', level: 6, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
+  text: 'Hay una industria entera dedicada a decirle a la gente cómo es. Los test de personalidad que se usan en selección de personal reparten a los candidatos en cuatro o dieciséis casillas y devuelven un informe donde uno resulta ser el introvertido analítico, el hablador con tendencia arrogante o el reservado de carácter fuerte. El atractivo es evidente: por fin alguien pone nombre a lo que uno sospechaba. El problema empieza cuando la casilla deja de describir y pasa a explicar. Que alguien sea impaciente no explica que haya interrumpido a un compañero; la impaciencia es el nombre que le damos a haber interrumpido varias veces. Usarlo como causa es dar una vuelta y volver al mismo sitio. En la práctica estas etiquetas hacen dos cosas incompatibles. Sirven para hablar con cierta rapidez de personas que apenas se conocen, lo que tiene valor en una empresa grande. Y sirven, con la misma facilidad, para congelar a alguien: quien ha sido clasificado como el vago, el inseguro o el serio arrastra esa clasificación en cada reunión posterior, y el sistema no ofrece ningún procedimiento para dejar de serlo. Ningún test recoge que el tímido de la primera planta se vuelva sociable y hasta alegre al noveno mes porque le han dado un trabajo que le importa. Los rasgos existen, pero son mucho menos estables y mucho más dependientes del sitio de lo que cualquier informe está dispuesto a admitir.',
+  gloss: [ { es: 'una casilla', en: 'cada uno de los cuadros de una clasificación' },
+           { es: 'el atractivo', en: 'lo que hace que algo resulte deseable o interesante' },
+           { es: 'dar una vuelta', en: 'aquí, razonar en círculo sin avanzar' },
+           { es: 'congelar', en: 'dejar algo fijo y sin posibilidad de cambio' },
+           { es: 'arrastrar', en: 'llevar consigo algo del pasado que no se consigue dejar atrás' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es la objeción central del texto?',
+      options: ['Que los test son caros', 'Que se usa como causa lo que solo es un nombre', 'Que hay demasiadas categorías'], answer: 1 },
+    { type: 'mcq', q: '¿Qué concede el autor a favor de los test?',
+      options: ['Que predicen bien el rendimiento', 'Que permiten hablar deprisa de gente que apenas se conoce', 'Que son científicos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué muestra el ejemplo de la persona reservada que se vuelve sociable?',
+      options: ['Que las etiquetas cambian con la edad', 'Que el carácter depende del contexto más de lo que se admite', 'Que los test se repiten cada año'], answer: 1 },
+    { type: 'translate', line: 'la impaciencia es el nombre que le damos a haber interrumpido varias veces', model: 'impatience is the name we give to having interrupted several times' }
+  ]
+},
+
+{
+  id: 'b2-caracter-humor', title: 'Tener sentido del humor', level: 6, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'impsubj'],
+  text: 'De todas las cualidades que la gente dice buscar en otra persona, tener sentido del humor es la que menos significa y la que más se repite. Nadie declara lo contrario. Y sin embargo, cuando se pregunta por casos concretos, se descubre que la expresión designa cosas incompatibles: para unos es reírse mucho, para otros es hacer reír, y para un tercer grupo, probablemente el más numeroso, es reírse de lo mismo que ellos. Nadie describe a un serio diciendo que tiene sentido del humor. Ese último sentido es el que hace trabajo de verdad. El humor compartido funciona como una contraseña. Señala qué se puede decir y qué no, quién está dentro y quién mira desde fuera, y por eso una broma que en un grupo resulta amable puede sonar arrogante en otro sin que cambie una sola palabra. Quien llega nuevo a una oficina lo nota enseguida: puede ser simpático, tolerante, generoso, trabajador y alegre, y aun así tardar meses en entender de qué se ríen los demás; si además es tímido, más. La paciencia se le agota antes que la amabilidad. Conviene por tanto desconfiar del elogio cuando se usa como descripción de carácter. Decir de alguien que tiene mucho sentido del humor rara vez informa sobre esa persona; informa sobre la relación que quien habla tiene con ella.',
+  gloss: [ { es: 'designar', en: 'referirse a algo, darle nombre' },
+           { es: 'una contraseña', en: 'una palabra o señal que solo conocen los del grupo' },
+           { es: 'el elogio', en: 'lo que se dice para alabar a alguien' },
+           { es: 'agotarse', en: 'terminarse por completo' },
+           { es: 'incompatibles', en: 'que no pueden ser verdad a la vez' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tesis defiende el texto?',
+      options: ['Que el humor es un rasgo de carácter estable', 'Que la expresión describe una relación, no una persona', 'Que la gente miente al elegir pareja'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué compara el humor con una contraseña?',
+      options: ['Porque hay que memorizarlo', 'Porque marca quién pertenece al grupo', 'Porque es secreto'], answer: 1 },
+    { type: 'mcq', q: '¿Qué implica que «la paciencia se le agota antes que la amabilidad»?',
+      options: ['Que el recién llegado sigue siendo amable pero deja de esperar', 'Que acaba enfadándose con todos', 'Que se marcha de la empresa'], answer: 0 },
+    { type: 'translate', line: 'una broma que en un grupo resulta amable puede sonar arrogante en otro', model: 'a joke that comes across as friendly in one group can sound arrogant in another' }
+  ]
+},
+
+{
+  id: 'b2-ident-pasaporte', title: 'Lo que cabe en un pasaporte', level: 6, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
+  text: 'Un pasaporte contiene una cantidad sorprendentemente pequeña de información: un nombre, una fecha de nacimiento, un lugar de nacimiento, un número y una fotografía tomada en condiciones que nadie elegiría. Nada de eso dice gran cosa sobre nadie, y sin embargo el documento decide, en la práctica, a qué mitad del planeta puede viajar su titular sin pedir permiso. La desproporción entre lo que el papel dice y lo que el papel hace es el rasgo más interesante de los sistemas de identidad modernos. Lo mismo ocurre a menor escala en cualquier ventanilla. Un formulario pide dirección, código postal, número de teléfono, estado civil —soltero, casado, viudo, divorciado— y a veces todavía una casilla para el marido. Esa lista no describe una vida: la traduce a las categorías que la administración sabe procesar. Quien lleva ocho años con la misma persona sin haberse casado ocupa la misma casilla que quien no ha convivido nunca con nadie, y ninguna de las dos situaciones queda registrada. No es un fallo de diseño, es el diseño. Un sistema de identidad no está hecho para reconocer a alguien; está hecho para distinguirlo de los demás con el menor número de datos posible. Conviene recordar la diferencia cuando el carné no coincide del todo con quien lo lleva encima.',
+  gloss: [ { es: 'el titular', en: 'la persona a cuyo nombre está un documento' },
+           { es: 'la desproporción', en: 'la falta de relación razonable entre dos cosas' },
+           { es: 'una casilla', en: 'cada uno de los recuadros que se rellenan en un formulario' },
+           { es: 'convivir', en: 'vivir junto a otra persona en la misma casa' },
+           { es: 'procesar', en: 'tratar una información siguiendo un procedimiento fijo' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué contraste organiza el texto?',
+      options: ['Entre lo poco que dice un documento y lo mucho que decide', 'Entre pasaportes de distintos países', 'Entre la foto y la realidad'], answer: 0 },
+    { type: 'mcq', q: '¿Qué quiere decir «No es un fallo de diseño, es el diseño»?',
+      options: ['Que el sistema debería corregirse', 'Que la simplificación es el propósito, no un error', 'Que los formularios están mal hechos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué distinción propone al final?',
+      options: ['Entre reconocer a alguien y distinguirlo de los demás', 'Entre identidad legal e identidad nacional', 'Entre el carné y el pasaporte'], answer: 0 },
+    { type: 'translate', line: 'Esa lista no describe una vida: la traduce a las categorías que la administración sabe procesar.', model: 'That list does not describe a life: it translates it into the categories the administration knows how to process.' }
+  ]
+},
+
+{
+  id: 'b2-ident-adolescente', title: 'El nombre que uno se pone', level: 6, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'presubj', 'impsubj'],
+  text: 'Entre los once y los quince años ocurre algo que los adultos suelen tratar como una fase y que merece más atención: el adolescente descubre que el nombre con el que lo llaman se lo pusieron otros. La reacción más visible es el apodo. En cualquier instituto hay chicos y chicas que responden a un nombre que no aparece en el carné ni en el pasaporte ni en ningún número de expediente, y que funciona mejor que el legal, porque lo eligió el grupo o lo eligió el propio interesado. Algunos duran seis meses; otros sobreviven a la universidad, al primer trabajo y a la boda, y acaban apareciendo en el discurso del padrino. Lo interesante es lo que ese gesto revela. Un bebé recibe un nombre, una fecha de nacimiento, un lugar de nacimiento, un pueblo y una dirección sin participar en nada de ello, y durante una década larga eso no plantea ningún conflicto. Después empieza a plantearlo. Frente a esto, los adultos cometen dos errores simétricos: tomárselo demasiado en serio, como si cada apodo fuera una crisis, o no tomárselo en serio en absoluto, que es lo más común y lo más torpe. Un joven que insiste durante tres años en que lo llamen de otra manera no está jugando. Está diciendo, con los medios que tiene, que quiere una identidad que no le venga entera de fábrica.',
+  gloss: [ { es: 'un apodo', en: 'un nombre no oficial que le dan a alguien sus amigos o su familia' },
+           { es: 'el padrino', en: 'la persona que acompaña a los novios en una boda' },
+           { es: 'simétricos', en: 'iguales pero en sentidos opuestos' },
+           { es: 'torpe', en: 'poco hábil, hecho sin acierto' },
+           { es: 'de fábrica', en: 'ya hecho de antemano, sin posibilidad de cambiarlo' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué significa el apodo, según el autor?',
+      options: ['Un juego sin importancia', 'Un intento de intervenir en la propia identidad', 'Una forma de rechazar a la familia'], answer: 1 },
+    { type: 'mcq', q: '¿Cuál de los dos errores le parece peor?',
+      options: ['Dramatizarlo', 'No tomárselo en serio', 'Los considera iguales'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué menciona el discurso del padrino?',
+      options: ['Para mostrar que algunos apodos duran toda la vida', 'Para criticar las bodas', 'Para explicar de dónde vienen los apodos'], answer: 0 },
+    { type: 'translate', line: 'quiere una identidad que no le venga entera de fábrica', model: 'they want an identity that does not arrive entirely ready-made' }
+  ]
+},
+
+{
+  id: 'b2-rel-suegra', title: 'La familia que a uno le toca', level: 6, theme: 'relaciones',
+  tenses: ['presente', 'preterito', 'presubj'],
+  text: 'De todas las relaciones familiares, la que peor prensa tiene y menos se estudia es la que une a alguien con la familia de su pareja. Uno elige a la novia o al marido; la suegra, la cuñada y el resto vienen incluidos, y esa diferencia lo explica casi todo. Con los hermanos y los abuelos hay una historia común que amortigua los desacuerdos: se discute desde dentro. Con la familia política no hay nada de eso, y sin embargo se comparten la Navidad, los cumpleaños y, tarde o temprano, una decisión sobre un pariente enfermo. El tópico dice que el conflicto es cosa de la suegra y la nuera, y los pocos datos disponibles sugieren algo menos pintoresco: la fricción aparece donde hay dos maneras distintas de entender qué se le debe a la familia. Una casa donde se llama todos los domingos y una casa donde se llama cuando hay algo que decir pueden ser igual de cariñosas y encontrarse incapaces de interpretarse. El hijo o la hija que está en medio suele elegir el peor camino posible, que es traducir a cada lado lo que el otro quiso decir. Funciona durante un tiempo y termina siempre igual: con dos familias razonablemente contentas y una persona agotada.',
+  gloss: [ { es: 'tener mala prensa', en: 'tener mala fama, que se hable mal de algo' },
+           { es: 'amortiguar', en: 'hacer que un golpe o un conflicto resulte menos fuerte' },
+           { es: 'la familia política', en: 'los parientes que uno adquiere al emparejarse' },
+           { es: 'la nuera', en: 'la mujer del hijo' },
+           { es: 'pintoresco', en: 'llamativo y algo exagerado, más propio de un cuento que de la realidad' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde sitúa el autor el origen real del conflicto?',
+      options: ['En el carácter de la suegra', 'En dos ideas distintas de lo que se le debe a la familia', 'En la falta de tiempo'], answer: 1 },
+    { type: 'mcq', q: '¿Qué le reprocha a quien hace de intermediario?',
+      options: ['Que tome partido', 'Que traduzca a cada lado y se agote', 'Que no diga nada'], answer: 1 },
+    { type: 'mcq', q: '¿Qué tono tiene el final del texto?',
+      options: ['Irónico y algo pesimista', 'Optimista', 'Indignado'], answer: 0 },
+    { type: 'translate', line: 'Uno elige a la novia o al marido; la suegra, la cuñada y el resto vienen incluidos', model: 'You choose the girlfriend or the husband; the mother-in-law, the sister-in-law and the rest come included' }
+  ]
+},
+
+{
+  id: 'b2-rel-vecino', title: 'El vecino que no es amigo', level: 7, theme: 'relaciones',
+  tenses: ['presente', 'condicional', 'presubj'],
+  text: 'Existe una categoría de relación para la que el idioma tiene pocas palabras y la vida diaria mucha necesidad: la del conocido con quien uno no tiene ninguna intimidad y del que, sin embargo, depende. El vecino del cuarto, el jefe de la sección de al lado, la mujer que atiende siempre en la misma ventanilla. No son amigos y sería incómodo llamarlos así. Tampoco son desconocidos, porque con un desconocido no se comparte nada durante once años. Buena parte de la vida en una ciudad depende de estas relaciones tibias, y casi todo lo que se escribe sobre relaciones humanas se ocupa de las otras: los hijos, los hermanos, la pareja, los padres. El vínculo débil tiene reglas propias y bastante estrictas. Se saluda siempre, se pregunta poco, se recuerda un dato y no dos, y se ofrece ayuda de una manera que permita al otro rechazarla sin explicaciones. Quien confunde el registro y trata a un vecino como a un amigo suele producir una retirada inmediata. Lo curioso es que estas relaciones, tan pobres en contenido, son las que sostienen a mucha gente cuando algo va mal. Un hijo llega en tres horas; el vecino del cuarto ya está en la puerta.',
+  gloss: [ { es: 'tibia', en: 'ni fría ni cálida, sin mucha intensidad' },
+           { es: 'el vínculo', en: 'la relación que une a dos personas' },
+           { es: 'estricto', en: 'que no admite excepciones' },
+           { es: 'la retirada', en: 'el hecho de apartarse o alejarse de algo' },
+           { es: 'el registro', en: 'el tono y la forma de hablar que corresponden a cada situación' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué defiende el texto sobre los vínculos débiles?',
+      options: ['Que deberían convertirse en amistades', 'Que sostienen más de lo que se les reconoce', 'Que son una pérdida de tiempo'], answer: 1 },
+    { type: 'mcq', q: '¿Qué ocurre si se confunde el registro?',
+      options: ['El otro se aleja', 'Nace una amistad', 'No pasa nada'], answer: 0 },
+    { type: 'mcq', q: '¿Qué muestra el contraste final entre el hijo y el vecino?',
+      options: ['Que los hijos no se preocupan', 'Que la cercanía física resuelve lo que el afecto no alcanza a tiempo', 'Que hay que mudarse cerca de la familia'], answer: 1 },
+    { type: 'translate', line: 'se ofrece ayuda de una manera que permita al otro rechazarla sin explicaciones', model: 'help is offered in a way that lets the other person turn it down without explaining' }
+  ]
+},
+
+{
+  id: 'b2-alim-bocadillo', title: 'La comida que no se enseña', level: 6, theme: 'alimentacion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'imperativo'],
+  text: 'Los programas de televisión sobre cocina han multiplicado por diez el número de personas capaces de hablar con propiedad de una técnica que no han practicado nunca. Se discute la temperatura del huevo y la textura de una salsa con un vocabulario que hace veinte años era de profesionales, y al mismo tiempo la proporción de gente que cocina a diario no ha dejado de bajar. Las dos cosas son ciertas y no se contradicen: la cocina se ha convertido en un espectáculo y, como todos los espectáculos, se consume sentado. Lo que se ha perdido no es la alta cocina, que está mejor que nunca, sino la otra: la que resuelve una cena en once minutos con un huevo, pan, queso y lo que quedaba en la nevera. Esa cocina no se enseña en televisión porque no se deja filmar. Consiste en saber que un bocadillo aguanta hasta la merienda, que el arroz de ayer se salva con sal y una sartén caliente, y que un almuerzo de plátano y zanahoria es aceptable un martes. Nadie transmite eso en un programa; se transmite en una casa, mirando. La generación que aprendió a cocinar viendo a alguien hacerlo sin explicarlo está desapareciendo, y lo que la sustituye sabe describir una receta que no sabría improvisar.',
+  gloss: [ { es: 'con propiedad', en: 'usando las palabras exactas y correctas' },
+           { es: 'la textura', en: 'la sensación que produce un alimento al tocarlo o comerlo' },
+           { es: 'filmar', en: 'grabar en imágenes' },
+           { es: 'aguantar', en: 'durar lo suficiente, resistir' },
+           { es: 'improvisar', en: 'hacer algo en el momento, sin haberlo preparado' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué paradoja señala el texto?',
+      options: ['Que se cocina más y se habla menos', 'Que se habla mejor de cocina y se cocina menos', 'Que la alta cocina ha empeorado'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué dice que esa cocina «no se deja filmar»?',
+      options: ['Porque está prohibida', 'Porque es improvisación y no receta', 'Porque es demasiado rápida'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo se aprendía, según el autor?',
+      options: ['Mirando a alguien que no lo explicaba', 'En la escuela', 'Con libros'], answer: 0 },
+    { type: 'translate', line: 'sabe describir una receta que no sabría improvisar', model: 'it can describe a recipe it would not know how to improvise' }
+  ]
+},
+
+{
+  id: 'b2-alim-sobremesa', title: 'La hora que sobra después de comer', level: 6, theme: 'alimentacion',
+  tenses: ['presente', 'preterito', 'imperfecto', 'imperativo', 'plusc'],
+  text: 'Hay una costumbre española que los manuales para extranjeros mencionan de pasada y que explica más del país que muchas de las que se explican con detalle. Terminada la comida, cuando ya no queda nada en los platos y los cubiertos están cruzados, nadie se levanta. Se pide un café o una infusión, alguien saca una botella de cava o de ron y reparte una última bebida, queda pan en la mesa que nadie retira, y la conversación entra en una segunda parte que puede durar más que el almuerzo. La sobremesa no está en ningún horario y no se anuncia. El malentendido habitual consiste en leerla como una muestra de que aquí se trabaja poco, lectura que el propio país repite de vez en cuando con cierto masoquismo. Conviene fijarse en lo que ocurre durante esa hora. Es el momento en que se dicen los asuntos que no cabían mientras se comía: una enfermedad, una decisión sobre el trabajo, una deuda. Tener hambre impide hablar de según qué; tener sed, también. La sobremesa aparece cuando las dos están resueltas y quedan las personas. Quien viene de una cultura donde la comida termina cuando termina el plato lo entiende tarde, y a veces lo entiende de golpe: en la reunión de trabajo que llevaba dos horas sin avanzar y se resolvió, cuando ya se habían llevado los platos, tomando algo.',
+  gloss: [ { es: 'de pasada', en: 'sin detenerse, mencionándolo solo brevemente' },
+           { es: 'la sobremesa', en: 'el rato que se pasa charlando en la mesa después de comer' },
+           { es: 'el malentendido', en: 'la interpretación equivocada de algo' },
+           { es: 'el masoquismo', en: 'la tendencia a disfrutar hablando mal de uno mismo' },
+           { es: 'de golpe', en: 'de forma repentina, todo a la vez' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué interpretación rechaza el autor?',
+      options: ['Que la sobremesa sea una señal de que se trabaja poco', 'Que dure demasiado', 'Que sea una costumbre reciente'], answer: 0 },
+    { type: 'mcq', q: '¿Qué función atribuye a la sobremesa?',
+      options: ['Digerir mejor', 'Ser el momento en que se dicen las cosas difíciles', 'Ahorrar en cafeterías'], answer: 1 },
+    { type: 'mcq', q: '¿Qué sugiere el ejemplo final de la reunión?',
+      options: ['Que las reuniones deberían ser más cortas', 'Que el acuerdo llegó cuando cambió el registro de la conversación', 'Que no se debe comer con clientes'], answer: 1 },
+    { type: 'translate', line: 'La sobremesa aparece cuando las dos están resueltas y quedan las personas.', model: 'The after-lunch talk appears once both are settled and only the people are left.' }
+  ]
+},
+
+{
+  id: 'b2-edu-memoria', title: 'En defensa parcial de la memoria', level: 6, theme: 'educacion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Durante treinta años, cualquier debate sobre la escuela ha terminado en la misma frase: lo importante no es memorizar, sino aprender a pensar. La frase es correcta y se ha usado tantas veces que ha acabado significando su contrario. Aprender a pensar sobre nada no es una habilidad, es una conversación de café. Quien discute un texto de historia sin tener en la cabeza tres fechas y dos nombres no está razonando: está opinando, y puede hacerlo indefinidamente sin que nadie lo corrija. Conviene ser justos con el origen de la reacción. La escuela contra la que se rebelaron los pedagogos de los años setenta hacía repetir la lección y la unidad entera sin preguntar jamás por qué, y esa escuela merecía la crítica. Pero el remedio ha derivado en algo más raro: aulas donde el ejercicio se hace en grupos, la actividad se evalúa por la participación y el diccionario se sustituye por internet sin que nadie explique cuándo conviene cada uno. El alumno que comete un error de fecha lo corrige en cuatro segundos y no aprende nada del error, porque nunca llegó a depender de saberlo. Lo que ninguna reforma ha resuelto es que pensar exige material con el que pensar, y que ese material, guste o no, hay que tenerlo dentro.',
+  gloss: [ { es: 'memorizar', en: 'aprender algo de memoria para poder repetirlo' },
+           { es: 'indefinidamente', en: 'sin que haya un final previsto' },
+           { es: 'rebelarse', en: 'oponerse con fuerza a algo establecido' },
+           { es: 'el pedagogo', en: 'el especialista en cómo se enseña y se aprende' },
+           { es: 'derivar en', en: 'acabar convirtiéndose en otra cosa' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es la posición del autor?',
+      options: ['Volver a la escuela de los años setenta', 'Defender que pensar necesita conocimientos memorizados', 'Eliminar los exámenes'], answer: 1 },
+    { type: 'mcq', q: '¿Qué le concede a los pedagogos que criticaron la memorización?',
+      options: ['Que la escuela que criticaban merecía la crítica', 'Que tenían razón en todo', 'Nada en absoluto'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué dice que el alumno «no aprende nada del error»?',
+      options: ['Porque el profesor no lo corrige', 'Porque nunca llegó a necesitar el dato', 'Porque no le interesa la asignatura'], answer: 1 },
+    { type: 'translate', line: 'Aprender a pensar sobre nada no es una habilidad, es una conversación de café.', model: 'Learning to think about nothing is not a skill, it is a café conversation.' }
+  ]
+},
+
+{
+  id: 'b2-edu-matricula', title: 'Lo que cuesta empezar de nuevo', level: 7, theme: 'educacion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  text: 'Pagar la matrícula de una carrera a los cuarenta y tres años tiene poco que ver con hacerlo a los dieciocho, y no principalmente por el dinero. A los dieciocho el coste es de tiempo que todavía no vale nada; a los cuarenta y tres el coste es de horas que ya están asignadas a otras personas. Quien se matricula en una universidad, decide hacer un curso en una academia o vuelve a pisar una biblioteca a esa edad ha tenido que negociar con alguien, aunque no lo cuente. Las cifras de abandono lo reflejan con crudeza. La causa más frecuente no es una nota baja ni el precio, sino un cambio de horario en el trabajo, un padre enfermo o un hijo que empieza el colegio. Nada de esto aparece en los folletos, que siguen hablando de vocación y de oportunidades como si el obstáculo fuera la falta de ganas. Hay una consecuencia práctica que las instituciones tardan en asumir: un programa pensado para adultos que trabajan debería medirse por cuántos terminan, no por cuántos se inscriben, y debería permitir parar y volver sin perder el diploma, el certificado ni el derecho a la beca. Los pocos centros que lo han intentado obtienen resultados llamativamente mejores. Siguen siendo pocos, entre otras cosas porque el que abandona no reclama: se va convencido de que el problema era suyo.',
+  gloss: [ { es: 'asignadas', en: 'ya destinadas o comprometidas para algo' },
+           { es: 'el abandono', en: 'el hecho de dejar unos estudios antes de terminarlos' },
+           { es: 'con crudeza', en: 'de forma directa y sin suavizar nada' },
+           { es: 'el folleto', en: 'el papel impreso que anuncia y describe algo' },
+           { es: 'reclamar', en: 'protestar formalmente para exigir algo' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es la causa principal del abandono, según el texto?',
+      options: ['La dificultad de la materia', 'Los cambios en la vida personal y laboral', 'El precio de la matrícula'], answer: 1 },
+    { type: 'mcq', q: '¿Qué critica de los folletos institucionales?',
+      options: ['Que sean caros de imprimir', 'Que presenten la falta de ganas como el obstáculo', 'Que no digan el precio'], answer: 1 },
+    { type: 'mcq', q: '¿Qué explica, según el autor, que casi nadie corrija el problema?',
+      options: ['Que quien abandona se culpa a sí mismo y no protesta', 'Que no hay dinero', 'Que los profesores se oponen'], answer: 0 },
+    { type: 'translate', line: 'se va convencido de que el problema era suyo', model: 'they leave convinced that the problem was theirs' }
+  ]
+},
+
+{
+  id: 'b2-trab-ascenso', title: 'El ascenso que nadie pidió', level: 6, theme: 'trabajo',
+  tenses: ['presente', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
+  text: 'Una de las costumbres más caras de las empresas consiste en premiar a alguien que hace bien su trabajo dándole otro distinto. El mejor cocinero pasa a dirigir la cocina, el ingeniero que resolvía problemas pasa a repartirlos, y la profesora que daba buenas clases acaba de directora. El ascenso funciona a la vez como reconocimiento y como única forma de subir el sueldo, y ahí está el nudo: son dos cosas distintas metidas en la misma decisión. El resultado se ve en cualquier oficina. Un equipo pierde a la persona que mejor hacía la tarea y gana un jefe mediocre que echa de menos su trabajo anterior, y los dos efectos se suman. Las consecuencias no se reparten por igual. Quien tiene una carrera larga por delante acepta el ascenso aunque no lo quiera, porque rechazarlo se interpreta como falta de ambición y pesa en la siguiente ronda. Quien está cerca de la jubilación puede permitirse decir que no. En medio queda la mayoría, que dice que sí y descubre la jornada laboral real seis meses después, cuando ya ha aprendido que la renuncia es más costosa que el despido. Bastaría con permitir que se pueda cobrar más haciendo lo mismo. Casi ninguna empresa lo hace, y ninguna explica por qué.',
+  gloss: [ { es: 'el nudo', en: 'el punto donde está la dificultad de un asunto' },
+           { es: 'mediocre', en: 'de calidad media o poco buena' },
+           { es: 'la ronda', en: 'cada una de las vueltas de un proceso que se repite' },
+           { es: 'la ambición', en: 'el deseo de conseguir más poder o un puesto mejor' },
+           { es: 'permitirse', en: 'poder hacer algo sin sufrir consecuencias' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es el «nudo» que identifica el autor?',
+      options: ['Que el ascenso mezcla reconocer el mérito y subir el sueldo', 'Que los jefes están mal pagados', 'Que nadie quiere ascender'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué acepta el ascenso quien no lo desea?',
+      options: ['Porque el sueldo compensa', 'Porque rechazarlo se lee como falta de ambición', 'Porque se lo exige el sindicato'], answer: 1 },
+    { type: 'mcq', q: '¿Qué tono tiene la frase final?',
+      options: ['Seco y acusador', 'Comprensivo', 'Neutro y descriptivo'], answer: 0 },
+    { type: 'translate', line: 'premiar a alguien que hace bien su trabajo dándole otro distinto', model: 'rewarding someone who does their job well by giving them a different one' }
+  ]
+},
+
+{
+  id: 'b2-trab-teletrabajo', title: 'Cuatro años de teletrabajo', level: 6, theme: 'trabajo',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Ahora que el teletrabajo lleva suficientes años funcionando para poder juzgarlo, las conclusiones son menos entusiastas y bastante más interesantes de lo que preveían los dos bandos. No ha destruido la vida de oficina ni ha liberado a nadie. Lo que ha hecho, sobre todo, es redistribuir ventajas de una manera que casi nadie anticipó. Quien tiene un despacho en casa y una hipoteca en las afueras ha ganado dos horas diarias; quien comparte un piso pequeño ha perdido el único sitio donde podía concentrarse. El debate público, dominado por quienes pertenecen al primer grupo, ha tardado en registrar al segundo. Hay un segundo efecto, más lento y peor documentado, que empieza a aparecer en los informes internos: la formación. Un empleado nuevo aprende una parte considerable de su oficio escuchando cómo resuelve un problema la persona sentada al lado, y eso no tiene sustituto en una videollamada convocada para un asunto concreto. Las empresas lo notan dos años después, cuando les toca promover a alguien y descubren que la competencia técnica está intacta y el criterio no se ha formado. Nada de esto justifica volver a obligar a todo el mundo a cruzar la ciudad cada mañana. Sí sugiere que el teletrabajo se diseñó pensando en quien ya sabía hacer su trabajo, y que el coste lo está pagando quien acaba de empezar.',
+  gloss: [ { es: 'los bandos', en: 'los grupos que defienden posturas opuestas en una discusión' },
+           { es: 'redistribuir', en: 'repartir de nuevo y de otra manera' },
+           { es: 'anticipar', en: 'prever algo antes de que ocurra' },
+           { es: 'promover', en: 'dar a alguien un puesto de más responsabilidad' },
+           { es: 'el criterio', en: 'la capacidad de juzgar bien y decidir con acierto' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es el efecto principal que señala el texto?',
+      options: ['Que ha mejorado la productividad', 'Que ha repartido las ventajas de forma desigual', 'Que ha terminado con las oficinas'], answer: 1 },
+    { type: 'mcq', q: '¿Qué problema aparece a los dos años?',
+      options: ['Que baja la calidad técnica', 'Que los nuevos no han formado criterio', 'Que nadie quiere volver'], answer: 1 },
+    { type: 'mcq', q: '¿Qué postura final adopta el autor?',
+      options: ['Volver a la oficina obligatoriamente', 'Mantenerlo, pero atendiendo a quien empieza', 'Ampliarlo a todos los sectores'], answer: 1 },
+    { type: 'translate', line: 'el teletrabajo se diseñó pensando en quien ya sabía hacer su trabajo', model: 'remote work was designed with the person who already knew how to do their job in mind' }
+  ]
 }
 ];

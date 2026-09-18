@@ -1013,7 +1013,9 @@ window.VERBS = [
 { inf:'desenchufar', en:'to unplug', type:'ar' },
 { inf:'enchufar', en:'to plug in', type:'ar' },
 { inf:'estropearse', en:'to break down, to spoil', type:'ar' },
-{ inf:'averiarse', en:'to break down (machine)', type:'ar' },
+{ inf:'averiarse', en:'to break down (machine)', type:'ar', forms:{
+  presente:['averío','averías','avería','averiamos','averiáis','averían'],
+  presubj:['averíe','averíes','averíe','averiemos','averiéis','averíen'] } },
 { inf:'ingresar', en:'to be admitted (hospital), to deposit', type:'ar' },
 { inf:'robar', en:'to steal', type:'ar' },
 { inf:'detener', en:'to arrest, to stop', type:'er', like:'tener' },
