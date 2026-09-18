@@ -9208,7 +9208,7 @@ window.PASSAGES = [
 {
   id: 'a2-ciencia-clase', title: 'La clase de informática', level: 2, theme: 'ciencia',
   tenses: ['presente', 'preterito'],
-  text: 'El martes tuvimos clase de informática. El profesor, que es informático y muy buen científico, nos enseñó a navegar por internet sin dar los datos personales y a elegir una contraseña larga. Un compañero preguntó por el correo basura. Otro, por la copia de seguridad de las fotos. Yo pregunté por qué el wifi de la escuela no funciona nunca. El profesor se rio y dijo que eso no es ciencia, es política. La clase terminó a las seis.',
+  text: 'El martes tuvimos clase de informática. El profesor, que es informático y muy buen científico, nos enseñó a navegar por internet sin dar los datos personales y a elegir una contraseña larga. Un compañero preguntó por el correo basura. Otro, por la copia de seguridad de las fotos. Yo pregunté por qué el wifi de la escuela no funciona nunca. El profesor se echó a reír y dijo que eso no es ciencia, es política. La clase terminó a las seis.',
   gloss: [ { es: 'nos enseñó a', en: 'he taught us to' },
            { es: 'elegir', en: 'to choose' },
            { es: 'se rio', en: 'he laughed' } ],
