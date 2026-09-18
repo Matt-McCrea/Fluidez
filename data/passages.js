@@ -9361,5 +9361,317 @@ window.PASSAGES = [
     { type: 'short', q: '¿Qué día van a la mezquita? (una palabra)', accept: ['viernes', 'los viernes', 'el viernes'] },
     { type: 'translate', line: 'En mi calle hay una iglesia, una mezquita pequeña', model: 'On my street there is a church, a small mosque' }
   ]
+},
+
+{
+  id: 'a2-ident-formulario', title: 'Rellenar la ficha', level: 2, theme: 'identidad',
+  tenses: ['presente', 'preterito'],
+  text: 'La señora de la academia me dio una ficha. Escribí el nombre, el primer apellido, el segundo apellido, la fecha de nacimiento y el lugar de nacimiento. Después, la dirección: avenida de Aragón, número catorce, tercer piso, y el código postal. Puse también el número de teléfono y la dirección electrónica. En «estado civil» dudé un momento: soltero, casado, viudo, separado. Marqué «soltero». El chico de detrás me preguntó la edad y le dije que treinta y uno.',
+  gloss: [ { es: 'la ficha', en: 'form, card' },
+           { es: 'dudé', en: 'I hesitated' },
+           { es: 'marqué', en: 'I ticked' },
+           { es: 'de detrás', en: 'behind me' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde dudó?',
+      options: ['En el estado civil', 'En la dirección', 'En la edad'], answer: 0 },
+    { type: 'mcq', q: '¿Qué marcó al final?',
+      options: ['Soltero', 'Casado', 'Viudo'], answer: 0 },
+    { type: 'short', q: '¿En qué piso vive? (dos palabras)', accept: ['tercer piso', 'el tercero', 'tercero'] },
+    { type: 'translate', line: 'La señora de la academia me dio una ficha.', model: 'The lady at the language school gave me a form.' }
+  ]
+},
+
+{
+  id: 'a2-ident-extranjero', title: 'Una clase de cinco', level: 2, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'En mi clase de español somos cinco. Una chica japonesa, un chico alemán, una señora mexicana, un joven marroquí y yo. Cada uno escribió en la pizarra su nombre, su edad y su lugar de nacimiento. El profesor es español y vive en la plaza mayor, número dos. Nos preguntó el prefijo del teléfono de nuestro país. Nadie se lo sabía. Ser extranjero, dijo, es no saber tu propio prefijo y saber la dirección de la panadería.',
+  gloss: [ { es: 'cada uno', en: 'each one' },
+           { es: 'el prefijo', en: 'dialling code' },
+           { es: 'nadie se lo sabía', en: 'nobody knew it' },
+           { es: 'propio', en: 'own' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué preguntó el profesor?',
+      options: ['El prefijo de su país', 'La dirección', 'La edad'], answer: 0 },
+    { type: 'mcq', q: '¿Qué quiere decir el profesor al final?',
+      options: ['Que uno aprende lo de aquí y olvida lo de allí', 'Que nadie estudia', 'Que el prefijo no importa'], answer: 0 },
+    { type: 'short', q: '¿Cuántos son en la clase? (una palabra)', accept: ['cinco', '5'] },
+    { type: 'translate', line: 'Cada uno escribió en la pizarra su nombre, su edad y su lugar de nacimiento.', model: 'Each of us wrote our name, age and place of birth on the board.' }
+  ]
+},
+
+{
+  id: 'a2-ident-vecina', title: 'La señora del segundo', level: 2, theme: 'identidad',
+  tenses: ['presente', 'preterito'],
+  text: 'La señora del segundo piso se llama Amparo. Es viuda desde hace ocho años y tiene ochenta y dos. Conoce el nombre, el apellido y el número de teléfono de todos los vecinos del edificio, y también la dirección de sus hijos. Cuando llega una carta sin código postal, ella sabe para quién es. El señor del primero es extranjero y no habla mucho español; Amparo le escribió la dirección electrónica del casero en un papel.',
+  gloss: [ { es: 'es viuda desde hace', en: 'has been a widow for' },
+           { es: 'el casero', en: 'landlord' },
+           { es: 'sin', en: 'without' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué sabe Amparo?',
+      options: ['Los datos de todos los vecinos', 'Solo su dirección', 'Nada del edificio'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hizo por el señor del primero?',
+      options: ['Le escribió una dirección', 'Le habló en su idioma', 'Le dio dinero'], answer: 0 },
+    { type: 'short', q: '¿Cuántos años tiene Amparo? (tres palabras)', accept: ['ochenta y dos', '82'] },
+    { type: 'translate', line: 'La señora del segundo piso se llama Amparo.', model: 'The lady on the second floor is called Amparo.' }
+  ]
+},
+
+{
+  id: 'a2-medios-postal', title: 'Una postal desde la playa', level: 2, theme: 'medios',
+  tenses: ['presente', 'preterito'],
+  text: 'Mi tía nos escribió una postal desde la playa. Compró el sello en el estanco y la echó en el buzón de la plaza. Llegó nueve días después de volver ella. Antes de eso quisimos escribir una postal nosotros, enviar una carta y hasta dejar un mensaje en su teléfono. Ella prefiere recibir una postal y responder a una postal, nunca responder a un correo. Dice que un correo se lee y se olvida, y que una postal se queda en la nevera un año. Para escribir un mensaje electrónico, dice, ya está su hija.',
+  gloss: [ { es: 'el sello', en: 'stamp' },
+           { es: 'el estanco', en: 'tobacconist' },
+           { es: 'el buzón', en: 'postbox' },
+           { es: 'la nevera', en: 'fridge' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuándo llegó la postal?',
+      options: ['Después de volver la tía', 'Antes de volver', 'El mismo día'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué prefiere las postales?',
+      options: ['Porque se quedan a la vista', 'Porque son baratas', 'Porque no usa internet'], answer: 0 },
+    { type: 'short', q: '¿Dónde compró el sello? (dos palabras)', accept: ['el estanco', 'en el estanco', 'estanco'] },
+    { type: 'translate', line: 'Mi tía nos escribió una postal desde la playa.', model: 'My aunt wrote us a postcard from the beach.' }
+  ]
+},
+
+{
+  id: 'a2-medios-television', title: 'La tele de las nueve', level: 2, theme: 'medios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'En casa de mis padres ver la televisión es una costumbre fija. A las nueve cenan y la encienden. Mi padre escucha la radio por la mañana y ve las noticias por la noche; mi madre prefiere una página web con vídeos. Los anuncios son lo único que los dos ven juntos. Escuchar la radio a las siete y ver la televisión a las nueve: eso no cambia. Ayer les llamé a las nueve y cinco. Nadie respondió a la llamada. A las diez me dejaron un mensaje en el buzón de voz: «Estábamos viendo la tele.»',
+  gloss: [ { es: 'la encienden', en: 'they turn it on' },
+           { es: 'lo único', en: 'the only thing' },
+           { es: 'nadie respondió', en: 'nobody answered' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué ven juntos?',
+      options: ['Los anuncios', 'Las noticias', 'Los vídeos'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué no respondieron al teléfono?',
+      options: ['Estaban viendo la televisión', 'No estaban en casa', 'No oyeron'], answer: 0 },
+    { type: 'short', q: '¿A qué hora cenan? (dos palabras)', accept: ['las nueve', 'a las nueve', 'nueve'] },
+    { type: 'translate', line: 'Nadie respondió a la llamada.', model: 'Nobody answered the call.' }
+  ]
+},
+
+{
+  id: 'a2-medios-arroba', title: 'Dictar un correo por teléfono', level: 2, theme: 'medios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: '—¿Me da su dirección electrónica? —Sí: ana, guión bajo, martínez, arroba, correo, punto, es. —¿Guión bajo o guión? —Guión bajo. —Ya está. Le enviamos la información a esa dirección de internet esta tarde, y también una carta con un sello, como antes. —¿Y si no llega? —Mire en el correo basura. Y si no aparece, puede llamar por teléfono otra vez o dejar un mensaje. Ana colgó y pensó que en la cabina de la esquina, hace veinte años, esto era una tarjeta telefónica y treinta segundos.',
+  gloss: [ { es: 'la arroba', en: 'the @ sign' },
+           { es: 'guión bajo', en: 'underscore' },
+           { es: 'colgó', en: 'she hung up' },
+           { es: 'la cabina', en: 'phone box' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le piden a Ana?',
+      options: ['Su dirección electrónica', 'Su teléfono', 'Su dirección postal'], answer: 0 },
+    { type: 'mcq', q: '¿Qué piensa Ana al final?',
+      options: ['Que antes era más rápido', 'Que el sistema es mejor', 'Que la llamada fue cara'], answer: 0 },
+    { type: 'short', q: '¿Dónde debe mirar si no llega? (dos palabras)', accept: ['el correo basura', 'correo basura'] },
+    { type: 'translate', line: '¿Me da su dirección electrónica?', model: 'Could you give me your email address?' }
+  ]
+},
+
+{
+  id: 'a2-compras-rebajas', title: 'El primer día de rebajas', level: 2, theme: 'compras',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El lunes fui de compras con mi hermana. Ella buscaba una falda y un jersey; yo, unos vaqueros y una camisa. En la primera tienda había una oferta en abrigos y un descuento del cuarenta por ciento en los pantalones. El vendedor nos dijo que la marca era buena. Compramos una bufanda, unos guantes y un pañuelo que no necesitábamos. Luego pasamos por la panadería, por la frutería y por el estanco, y volvimos sin el jersey.',
+  gloss: [ { es: 'las rebajas', en: 'the sales' },
+           { es: 'por ciento', en: 'per cent' },
+           { es: 'no necesitábamos', en: 'we did not need' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué buscaba la hermana?',
+      options: ['Una falda y un jersey', 'Unos vaqueros', 'Un abrigo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué compraron al final?',
+      options: ['Cosas que no necesitaban', 'El jersey', 'Nada'], answer: 0 },
+    { type: 'short', q: '¿De cuánto era el descuento? (dos palabras)', accept: ['cuarenta por ciento', 'del cuarenta por ciento', 'cuarenta'] },
+    { type: 'translate', line: 'El lunes fui de compras con mi hermana.', model: 'On Monday I went shopping with my sister.' }
+  ]
+},
+
+{
+  id: 'a2-compras-barrio', title: 'La compra de los martes', level: 2, theme: 'compras',
+  tenses: ['presente', 'preterito'],
+  text: 'Mi padre hace la compra los martes y siempre en el mismo orden: la panadería, la frutería y la carnicería. Al supermercado va solo si falta algo. Conoce al panadero, al frutero y al carnicero por su nombre. Dice que en el mercado el comprador y el vendedor se miran a la cara. Mi madre prefiere el supermercado, la oferta de la semana y la salida rápida. Los dos llegan a casa con lo mismo y con una hora de diferencia.',
+  gloss: [ { es: 'si falta algo', en: 'if something is missing' },
+           { es: 'se miran a la cara', en: 'look each other in the face' },
+           { es: 'de diferencia', en: 'apart' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuándo va al supermercado el padre?',
+      options: ['Solo si falta algo', 'Todos los martes', 'Nunca'], answer: 0 },
+    { type: 'mcq', q: '¿Qué contrasta el texto?',
+      options: ['Dos maneras de comprar lo mismo', 'Dos barrios', 'Dos precios'], answer: 0 },
+    { type: 'short', q: '¿Qué día hace la compra? (una palabra)', accept: ['martes', 'los martes', 'el martes'] },
+    { type: 'translate', line: 'Los dos llegan a casa con lo mismo', model: 'They both get home with the same things' }
+  ]
+},
+
+{
+  id: 'a2-compras-peluqueria', title: 'Una mañana de recados', level: 3, theme: 'compras',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El sábado por la mañana tuve que ir a cuatro sitios. Primero a la peluquería, después a la papelería a por un cuaderno, luego a una agencia para mirar hoteles y al final al estanco. En la papelería había una oferta de mochilas y compré una que no me hacía falta. El vendedor me dio información sobre un hotel barato y un folleto de la peluquería de al lado. Compré también unos guantes y una gorra en el mercado. La salida del centro comercial estaba cerrada y di la vuelta entera. Llegué a casa a las dos.',
+  gloss: [ { es: 'los recados', en: 'errands' },
+           { es: 'a por', en: 'to fetch' },
+           { es: 'no me hacía falta', en: 'I did not need' },
+           { es: 'di la vuelta', en: 'I went all the way round' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué compró sin necesitarlo?',
+      options: ['Una mochila', 'Un cuaderno', 'Un billete'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pasó en el centro comercial?',
+      options: ['La salida estaba cerrada', 'Estaba cerrado', 'Perdió la cartera'], answer: 0 },
+    { type: 'short', q: '¿A cuántos sitios fue? (una palabra)', accept: ['cuatro', '4'] },
+    { type: 'translate', line: 'El sábado por la mañana tuve que ir a cuatro sitios.', model: 'On Saturday morning I had to go to four places.' }
+  ]
+},
+
+{
+  id: 'a2-econ-alquiler', title: 'La factura de la luz', level: 2, theme: 'economia',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Este mes la factura de la luz ha subido treinta euros y el alquiler sube en enero. Mi salario es el mismo desde hace dos años. He hecho un presupuesto en un papel: alquiler, luz, comida, transporte y el seguro del coche. Queda poco para el ahorro. Mi compañera de piso dice que la economía va bien; el anuncio de la tele dice lo mismo. Nosotros pagamos la deuda del sofá con un cheque, en doce meses. El préstamo del banco lo terminamos en marzo y el impuesto del coche llega en abril.',
+  gloss: [ { es: 'ha subido', en: 'has gone up' },
+           { es: 'queda poco', en: 'there is little left' },
+           { es: 'los intereses', en: 'interest' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué ha cambiado este mes?',
+      options: ['La factura de la luz', 'El salario', 'El alquiler'], answer: 0 },
+    { type: 'mcq', q: '¿Qué contraste hay en el texto?',
+      options: ['Entre lo que dicen y lo que él vive', 'Entre dos pisos', 'Entre dos salarios'], answer: 0 },
+    { type: 'short', q: '¿Cuánto ha subido la luz? (dos palabras)', accept: ['treinta euros', '30 euros', 'treinta'] },
+    { type: 'translate', line: 'Mi salario es el mismo desde hace dos años.', model: 'My salary has been the same for two years.' }
+  ]
+},
+
+{
+  id: 'a2-econ-granja', title: 'La granja de mi tío', level: 2, theme: 'economia',
+  tenses: ['presente', 'perfecto'],
+  text: 'Mi tío es agricultor y tiene también doce cerdos y cuatro corderos. Cada mes hace las facturas en la cocina, con un cheque encima de la mesa y la calculadora del móvil. Dice que el trabajo es el mismo que hace treinta años y que el salario, no. El seguro ha subido, el préstamo del tractor termina en marzo y el precio de la carne lo decide una compañía de la capital. No es pobre. Está cansado.',
+  gloss: [ { es: 'la granja', en: 'farm' },
+           { es: 'el tractor', en: 'tractor' },
+           { es: 'lo decide', en: 'is decided by' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién decide el precio de la carne?',
+      options: ['Una compañía de la capital', 'Su tío', 'El banco'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo termina el texto?',
+      options: ['Distinguiendo pobreza y cansancio', 'Diciendo que es pobre', 'Diciendo que gana mucho'], answer: 0 },
+    { type: 'short', q: '¿Cuántos cerdos tiene? (una palabra)', accept: ['doce', '12'] },
+    { type: 'translate', line: 'No es pobre. Está cansado.', model: 'He is not poor. He is tired.' }
+  ]
+},
+
+{
+  id: 'a2-econ-primer-sueldo', title: 'El primer sueldo', level: 2, theme: 'economia',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Cobré mi primer salario en junio: novecientos euros. Pagué el alquiler, una factura del móvil, el seguro de la moto y un préstamo pequeño. La economía de mi casa cabía en una hoja. Me quedaron ciento veinte. Mi madre me habló del ahorro y le hice caso: veinte euros. Con un salario así no hay riqueza ni hay pobreza, hay cuentas. Al mes siguiente el alquiler subió. Ahora entiendo el presupuesto que mi padre escribía cada domingo en una hoja, y que a mí de pequeño me parecía la cosa más aburrida del mundo.',
+  gloss: [ { es: 'cobré', en: 'I got paid' },
+           { es: 'me quedaron', en: 'I had left' },
+           { es: 'le hice caso', en: 'I did as she said' },
+           { es: 'la hoja', en: 'sheet of paper' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto le quedó después de pagar?',
+      options: ['Ciento veinte euros', 'Novecientos', 'Veinte'], answer: 0 },
+    { type: 'mcq', q: '¿Qué entiende ahora?',
+      options: ['Por qué su padre hacía un presupuesto', 'Por qué el alquiler sube', 'Por qué su madre ahorra'], answer: 0 },
+    { type: 'short', q: '¿Cuánto guardó para el ahorro? (dos palabras)', accept: ['veinte euros', '20 euros', 'veinte'] },
+    { type: 'translate', line: 'Cobré mi primer salario en junio', model: 'I got my first salary in June' }
+  ]
+},
+
+{
+  id: 'a2-edu-primer-dia', title: 'El primer día de instituto', level: 2, theme: 'educacion',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El lunes fue el primer día de instituto. En la mochila llevaba dos cuadernos, tres bolígrafos, un lápiz, una goma y una regla. El aula estaba en el segundo piso. El director habló diez minutos y después el profesor nos puso en parejas para un ejercicio de la primera lección. Mi compañero de clase se llama Iván y no dijo ni una palabra. En la biblioteca, a la hora de comer, hablamos veinte minutos de matemáticas.',
+  gloss: [ { es: 'el instituto', en: 'secondary school' },
+           { es: 'nos puso en parejas', en: 'put us in pairs' },
+           { es: 'ni una palabra', en: 'not one word' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde hablaron por fin?',
+      options: ['En la biblioteca', 'En el aula', 'En el pasillo'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo era Iván al principio?',
+      options: ['Callado', 'Hablador', 'Antipático'], answer: 0 },
+    { type: 'short', q: '¿En qué piso estaba el aula? (dos palabras)', accept: ['el segundo', 'segundo piso', 'segundo'] },
+    { type: 'translate', line: 'El lunes fue el primer día de instituto.', model: 'Monday was the first day of secondary school.' }
+  ]
+},
+
+{
+  id: 'a2-edu-curso', title: 'Un curso de tres meses', level: 2, theme: 'educacion',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'En septiembre decidí hacer un curso de contabilidad en una academia del barrio. Pagué la matrícula en dos veces. Éramos nueve alumnos y el programa tenía doce unidades. La profesora daba clases los martes y los jueves y nos hacía trabajar en grupos. Al final del curso te dan un diploma, no un certificado oficial. Cometer un error en clase no costaba nada; ir a clase después de nueve horas de trabajo, bastante. Terminé en diciembre.',
+  gloss: [ { es: 'la contabilidad', en: 'accountancy' },
+           { es: 'en dos veces', en: 'in two payments' },
+           { es: 'no costaba nada', en: 'cost nothing' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué te dan al final?',
+      options: ['Un diploma, no un certificado oficial', 'Un certificado oficial', 'Nada'], answer: 0 },
+    { type: 'mcq', q: '¿Qué era lo difícil del curso?',
+      options: ['Ir a clase después de trabajar', 'El programa', 'Los compañeros'], answer: 0 },
+    { type: 'short', q: '¿Cuántos alumnos eran? (una palabra)', accept: ['nueve', '9'] },
+    { type: 'translate', line: 'Pagué la matrícula en dos veces.', model: 'I paid the enrolment fee in two instalments.' }
+  ]
+},
+
+{
+  id: 'a2-viv-piso', title: 'Un piso sin amueblar', level: 2, theme: 'vivienda',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Vimos el piso un jueves por la tarde. Estaba sin amueblar: una cocina, un baño, dos habitaciones, un pasillo largo y una terraza pequeña. El suelo estaba en buen estado y el techo, no. No había ascensor y vivíamos en el cuarto, así que la escalera iba a ser nuestra. El propietario nos dio las llaves el día uno. Compramos una cama, una mesa, cuatro sillas y poco más. Dos años después seguimos sin sofá.',
+  gloss: [ { es: 'sin amueblar', en: 'unfurnished' },
+           { es: 'en buen estado', en: 'in good condition' },
+           { es: 'el día uno', en: 'on the first' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué no estaba en buen estado?',
+      options: ['El techo', 'El suelo', 'La cocina'], answer: 0 },
+    { type: 'mcq', q: '¿Qué sugiere la última frase?',
+      options: ['Que amueblar cuesta tiempo y dinero', 'Que no les gusta el sofá', 'Que se van a mudar'], answer: 0 },
+    { type: 'short', q: '¿En qué piso vivían? (dos palabras)', accept: ['el cuarto', 'cuarto', 'en el cuarto'] },
+    { type: 'translate', line: 'Vimos el piso un jueves por la tarde.', model: 'We saw the flat on a Thursday afternoon.' }
+  ]
+},
+
+{
+  id: 'a2-viv-compartir', title: 'Compartir piso', level: 2, theme: 'vivienda',
+  tenses: ['presente', 'preterito'],
+  text: 'Comparto piso con dos personas. Yo tengo el dormitorio pequeño, con una cama, una silla y una ventana a la calle. El dormitorio de invitados es ahora un estudio. La sala de estar la usamos poco; el pasillo, mucho. La cocina siempre está limpia y el baño, a veces sucio. Tenemos una terraza con un jardín de macetas que nadie riega. El garaje del edificio no lo usamos porque ninguno tiene coche. La llave del portal la perdí en marzo.',
+  gloss: [ { es: 'las macetas', en: 'plant pots' },
+           { es: 'riega', en: 'waters' },
+           { es: 'el portal', en: 'main entrance' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué habitación usan poco?',
+      options: ['La sala de estar', 'La cocina', 'El pasillo'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué no usan el garaje?',
+      options: ['Nadie tiene coche', 'Está ocupado', 'Es caro'], answer: 0 },
+    { type: 'short', q: '¿Qué perdió en marzo? (dos palabras)', accept: ['la llave', 'llave'] },
+    { type: 'translate', line: 'La cocina siempre está limpia y el baño, a veces sucio.', model: 'The kitchen is always clean and the bathroom sometimes dirty.' }
+  ]
+},
+
+{
+  id: 'a2-viajes-tren', title: 'Perdimos el tren', level: 2, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Llegamos a la estación con las maletas a las siete y el tren salía a las siete menos cinco. Hicimos las maletas tarde y el taxi tardó. Compramos un billete nuevo para las nueve y esperamos en la sala con un mapa y un plano de la ciudad. Mi hermano quería coger el metro hasta el puerto y volver; yo dije que no. A las nueve subimos, y en el viaje él durmió y yo miré la carretera desde la ventana.',
+  gloss: [ { es: 'menos cinco', en: 'five to' },
+           { es: 'tardó', en: 'was late' },
+           { es: 'subimos', en: 'we got on' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué perdieron el tren?',
+      options: ['Prepararon el equipaje tarde', 'Se equivocaron de estación', 'No tenían billete'], answer: 0 },
+    { type: 'mcq', q: '¿Qué quería hacer el hermano mientras esperaban?',
+      options: ['Ir al puerto en metro', 'Dormir', 'Comer'], answer: 0 },
+    { type: 'short', q: '¿A qué hora salía el primer tren? (cuatro palabras)', accept: ['las siete menos cinco', 'siete menos cinco'] },
+    { type: 'translate', line: 'Llegamos a la estación con las maletas a las siete', model: 'We got to the station with the suitcases at seven' }
+  ]
+},
+
+{
+  id: 'a2-viajes-camping', title: 'Diez días de campin', level: 2, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
+  text: 'El verano pasado fuimos de campin a la montaña en vez de ir a la playa. Reservamos un billete de autobús y un sitio para diez días. No había pensión completa ni media pensión: cocinábamos nosotros. El conductor del autobús paró tres veces en la carretera. En la parada final nos esperaba un guía turístico que no habíamos pedido. Llevé un gorro que perdí el primer día. Volvimos en tren, con una maleta más y el mapa entero usado.',
+  gloss: [ { es: 'en vez de', en: 'instead of' },
+           { es: 'paró', en: 'stopped' },
+           { es: 'no habíamos pedido', en: 'we had not asked for' } ],
+  questions: [
+    { type: 'mcq', q: '¿Adónde fueron?',
+      options: ['A la montaña', 'A la playa', 'Al puerto'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pasó con la comida?',
+      options: ['Cocinaban ellos', 'Estaba incluida', 'Comían en un bar'], answer: 0 },
+    { type: 'short', q: '¿Cuántos días estuvieron? (una palabra)', accept: ['diez', '10'] },
+    { type: 'translate', line: 'El verano pasado fuimos de campin a la montaña', model: 'Last summer we went camping in the mountains' }
+  ]
 }
 ];
