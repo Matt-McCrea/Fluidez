@@ -9775,5 +9775,282 @@ window.PASSAGES = [
     { type: 'short', q: '¿De quién era la cámara? (dos palabras)', accept: ['su abuelo', 'del abuelo', 'abuelo'] },
     { type: 'translate', line: 'El domingo fuimos a la catedral y a un palacio del siglo dieciséis.', model: 'On Sunday we went to the cathedral and to a sixteenth-century palace.' }
   ]
+},
+
+{
+  id: 'a1-relig-clase', title: 'Cuatro amigos', level: 1, theme: 'religion',
+  tenses: ['presente', 'preterito'],
+  text: 'El martes hablamos de religión en clase. Nadia es musulmana y le gusta ir a la mezquita. David es judío y le gusta ir a la sinagoga. Marta es cristiana y le gusta ir a la iglesia. Kim es budista. Yo no dije nada. Hablamos de la Navidad, del Ramadán y del sabbat.',
+  gloss: [ { es: 'hablamos', en: 'we talked' },
+           { es: 'le gusta', en: 'he/she likes' },
+           { es: 'no dije nada', en: 'I said nothing' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién va a la sinagoga?',
+      options: ['Nadia', 'David', 'Marta'], answer: 1 },
+    { type: 'mcq', q: '¿Qué hizo el narrador?',
+      options: ['Habló mucho', 'No dijo nada', 'No fue a clase'], answer: 1 },
+    { type: 'short', q: '¿Qué día hablaron? (una palabra)', accept: ['martes', 'el martes'] },
+    { type: 'translate', line: 'El martes hablamos de religión en clase.', model: 'On Tuesday we talked about religion in class.' }
+  ]
+},
+
+{
+  id: 'a1-relig-navidad', title: 'La Navidad de mi familia', level: 1, theme: 'religion',
+  tenses: ['presente', 'preterito'],
+  text: 'En Navidad mi abuela quiso ir a la iglesia. Es cristiana, como casi todos los cristianos del pueblo. Mi padre no tiene religión y no fue. Mi tío es musulmán y cenó con nosotros; en Ramadán cena tarde. Mi prima es budista. Un amigo judío llamó por el sabbat.',
+  gloss: [ { es: 'fue', en: 'went' },
+           { es: 'cenó con nosotros', en: 'had dinner with us' },
+           { es: 'después', en: 'afterwards' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién fue a la iglesia?',
+      options: ['La abuela', 'El padre', 'El tío'], answer: 0 },
+    { type: 'mcq', q: '¿De qué hablaron después de cenar?',
+      options: ['De religión', 'De la comida', 'Del trabajo'], answer: 0 },
+    { type: 'short', q: '¿Qué es la prima? (una palabra)', accept: ['budista', 'es budista'] },
+    { type: 'translate', line: 'En Navidad mi abuela quiso ir a la iglesia.', model: 'At Christmas my grandmother wanted to go to church.' }
+  ]
+},
+
+{
+  id: 'a1-relig-calle', title: 'Tres puertas', level: 1, theme: 'religion',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'En mi calle hay una iglesia, una mezquita y una sinagoga. El viernes un vecino musulmán quiso ir a la mezquita. El sábado un vecino judío quiso ir a la sinagoga, por el sabbat. El domingo mi madre decidió ir a la iglesia con otros cristianos. La budista del tercero no salió. Nadie ha hablado nunca de religión aquí.',
+  gloss: [ { es: 'quiso', en: 'wanted' },
+           { es: 'el tercero', en: 'the third floor' },
+           { es: 'ha hablado', en: 'has talked' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué día fue la madre a la iglesia?',
+      options: ['El viernes', 'El sábado', 'El domingo'], answer: 2 },
+    { type: 'mcq', q: '¿Cómo viven los vecinos?',
+      options: ['Sin problemas', 'Mal', 'No se conocen'], answer: 0 },
+    { type: 'short', q: '¿Cuántas puertas hay en la calle? (una palabra)', accept: ['tres', '3'] },
+    { type: 'translate', line: 'El viernes un vecino musulmán quiso ir a la mezquita.', model: 'On Friday a Muslim neighbour wanted to go to the mosque.' }
+  ]
+},
+
+{
+  id: 'a1-relig-libro', title: 'Un libro de religión', level: 1, theme: 'religion',
+  tenses: ['presente', 'preterito'],
+  text: 'Ayer compré un libro sobre la religión. Habla de los cristianos, de los judíos, de los musulmanes y de los budistas. Leí veinte páginas. Aprendí qué es el Ramadán, qué es el sabbat y qué es la Navidad. Mi hermana me preguntó si prefiero ir a la iglesia o ir a la mezquita.',
+  gloss: [ { es: 'compré', en: 'I bought' },
+           { es: 'leí', en: 'I read' },
+           { es: 'aprendí', en: 'I learned' },
+           { es: 'alguna vez', en: 'ever' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué aprendió?',
+      options: ['Qué es el Ramadán y el sabbat', 'A leer', 'Nada'], answer: 0 },
+    { type: 'mcq', q: '¿Cuándo fue a una iglesia?',
+      options: ['En Navidad', 'Ayer', 'Nunca'], answer: 0 },
+    { type: 'short', q: '¿Cuántas páginas leyó? (una palabra)', accept: ['veinte', '20'] },
+    { type: 'translate', line: 'Ayer compré un libro sobre la religión.', model: 'Yesterday I bought a book about religion.' }
+  ]
+},
+
+{
+  id: 'a1-relig-abuela', title: 'La abuela y la iglesia', level: 1, theme: 'religion',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Mi abuela ha ido a la iglesia toda su vida, como muchos cristianos y algún judío de su edad. El domingo quiso ir a la iglesia conmigo. Vimos a un señor musulmán: buscó la mezquita y no la encontró. Le explicamos cómo ir a la mezquita. Después hablamos de religión, de la Navidad, del Ramadán y del sabbat.',
+  gloss: [ { es: 'toda su vida', en: 'all her life' },
+           { es: 'no encontró', en: 'she could not find' },
+           { es: 'el camino', en: 'the way' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué buscaba la señora?',
+      options: ['La mezquita', 'La iglesia', 'Una tienda'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hizo la abuela?',
+      options: ['Le explicó el camino', 'No le habló', 'La llevó en coche'], answer: 0 },
+    { type: 'short', q: '¿Cuánto tiempo hablaron? (dos palabras)', accept: ['media hora', 'una hora', 'media'] },
+    { type: 'translate', line: 'Mi abuela ha ido a la iglesia toda su vida', model: 'My grandmother has gone to church all her life' }
+  ]
+},
+
+{
+  id: 'a1-relig-viaje', title: 'Un viaje y tres ciudades', level: 1, theme: 'religion',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'El verano pasado visité tres ciudades. Pude ir a la iglesia grande, quise ir a la mezquita y no pude, y no llegué a ir a la sinagoga. No soy cristiano, ni judío, ni musulmán, ni budista, y la religión no es mi tema. He vuelto con cien fotos y una postal de Navidad.',
+  gloss: [ { es: 'visité', en: 'I visited' },
+           { es: 'entré', en: 'I went into' },
+           { es: 'no pude', en: 'I could not' },
+           { es: 'he vuelto', en: 'I have come back' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué vio en la segunda ciudad?',
+      options: ['Una iglesia', 'Una mezquita', 'Una sinagoga'], answer: 1 },
+    { type: 'mcq', q: '¿Es religioso el narrador?',
+      options: ['No, pero le interesó', 'Sí, es cristiano', 'Sí, es budista'], answer: 0 },
+    { type: 'short', q: '¿Cuántas ciudades visitó? (una palabra)', accept: ['tres', '3'] },
+    { type: 'translate', line: 'El verano pasado visité tres ciudades.', model: 'Last summer I visited three cities.' }
+  ]
+},
+
+{
+  id: 'a1-cuerpo-caida', title: 'Me caí en la calle', level: 1, theme: 'cuerpo',
+  tenses: ['presente', 'preterito'],
+  text: 'Ayer me caí en la calle. Me hice daño en la mano, en el brazo, en el codo y en la rodilla. Me di un golpe en la cabeza y en la cara. Hoy me duele la espalda, el cuello y el estómago. Los dedos del pie y las dos piernas están bien.',
+  gloss: [ { es: 'me caí', en: 'I fell' },
+           { es: 'me hice daño', en: 'I hurt myself' },
+           { es: 'me di un golpe', en: 'I banged' },
+           { es: 'el codo', en: 'elbow' } ],
+  questions: [
+    { type: 'mcq', q: '¿Se rompió algo?',
+      options: ['No', 'Sí, el brazo', 'Sí, la pierna'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le duele hoy?',
+      options: ['La espalda y el cuello', 'La cabeza', 'Nada'], answer: 0 },
+    { type: 'short', q: '¿Dónde se cayó? (dos palabras)', accept: ['en la calle', 'la calle', 'calle'] },
+    { type: 'translate', line: 'Ayer me caí en la calle.', model: 'Yesterday I fell over in the street.' }
+  ]
+},
+
+{
+  id: 'a1-cuerpo-foto', title: 'Una foto vieja', level: 1, theme: 'cuerpo',
+  tenses: ['presente', 'perfecto'],
+  text: 'He encontrado una foto de mi padre a los veinte años. Tiene el pelo largo, la cara delgada, la nariz grande, los ojos abiertos y el cuello fino. La mano derecha está en el bolsillo, el brazo izquierdo no se ve y los pies tampoco. Llevó barba y bigote dos años y una pierna escayolada. Nunca llevó gafas.',
+  gloss: [ { es: 'he encontrado', en: 'I have found' },
+           { es: 'abiertos', en: 'wide open' },
+           { es: 'fino', en: 'thin, slender' },
+           { es: 'el bolsillo', en: 'pocket' } ],
+  questions: [
+    { type: 'mcq', q: '¿Llevó gafas el padre?',
+      options: ['No, nunca', 'Sí, siempre', 'Solo dos años'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hizo la madre?',
+      options: ['Se echó a reír', 'Se enfadó', 'No dijo nada'], answer: 0 },
+    { type: 'short', q: '¿Cuántos años tiene el padre en la foto? (una palabra)', accept: ['veinte', '20'] },
+    { type: 'translate', line: 'He encontrado una foto de mi padre a los veinte años.', model: 'I have found a photo of my father at twenty.' }
+  ]
+},
+
+{
+  id: 'a1-cuerpo-medico', title: 'En el médico', level: 1, theme: 'cuerpo',
+  tenses: ['presente', 'preterito'],
+  text: 'Fui al médico el lunes. Me miró la garganta, los ojos, la nariz y el oído derecho. Me tocó el estómago, la espalda y el cuello. Me preguntó si me duele la cabeza. Le dije que no. Me miró la mano y la rodilla otra vez. Salí a las cinco con dos papeles.',
+  gloss: [ { es: 'me tocó', en: 'he pressed, he felt' },
+           { es: 'le dije', en: 'I told him' },
+           { es: 'salí', en: 'I left' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le preguntó el médico?',
+      options: ['Si le duele la cabeza de noche', 'Si come bien', 'Si fuma'], answer: 0 },
+    { type: 'mcq', q: '¿Qué oído le miró?',
+      options: ['El derecho', 'El izquierdo', 'Los dos'], answer: 0 },
+    { type: 'short', q: '¿Qué día fue al médico? (una palabra)', accept: ['lunes', 'el lunes'] },
+    { type: 'translate', line: 'Fui al médico el lunes.', model: 'I went to the doctor on Monday.' }
+  ]
+},
+
+{
+  id: 'a1-cuerpo-partido', title: 'Después del partido', level: 1, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'El sábado jugué al fútbol. Corrí una hora. Después me dolieron las dos piernas, la rodilla izquierda, la espalda, el cuello, la cara y los pies. El domingo no me pude levantar. Hasta la cabeza me dolió. Mi hermano se ha reído de mí. Él tiene el corazón, la mano y los brazos de un chico de veinte.',
+  gloss: [ { es: 'corrí', en: 'I ran' },
+           { es: 'me dolieron', en: 'they hurt' },
+           { es: 'no me pude levantar', en: 'I could not get up' },
+           { es: 'se ha reído', en: 'he has laughed' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pasó el domingo?',
+      options: ['No se pudo levantar', 'Jugó otra vez', 'Fue al médico'], answer: 0 },
+    { type: 'mcq', q: '¿Qué edad tiene el narrador?',
+      options: ['Cuarenta', 'Veinte', 'No lo dice'], answer: 0 },
+    { type: 'short', q: '¿Cuánto tiempo corrió? (dos palabras)', accept: ['una hora', 'hora'] },
+    { type: 'translate', line: 'El sábado jugué al fútbol.', model: 'On Saturday I played football.' }
+  ]
+},
+
+{
+  id: 'a1-cuerpo-peluqueria', title: 'Pelo corto', level: 1, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'El jueves fui a la peluquería. Me corté el pelo muy corto, la barba y el bigote. Mi hija me miró la cara y dijo: «Ahora tienes la cabeza pequeña.» La nariz está igual, los ojos también, el cuello, la garganta y el oído derecho se ven más, y la mano me tembló. Mi mujer no ha dicho nada.',
+  gloss: [ { es: 'me corté', en: 'I had cut' },
+           { es: 'las orejas', en: 'ears' },
+           { es: 'en el mismo sitio', en: 'in the same place' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué dijo la hija?',
+      options: ['Que tiene la cabeza pequeña', 'Que está guapo', 'Nada'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hizo la mujer?',
+      options: ['No ha dicho nada', 'Se rio', 'Le gustó'], answer: 0 },
+    { type: 'short', q: '¿Qué día fue a la peluquería? (una palabra)', accept: ['jueves', 'el jueves'] },
+    { type: 'translate', line: 'El jueves fui a la peluquería.', model: 'On Thursday I went to the hairdresser.' }
+  ]
+},
+
+{
+  id: 'a1-caracter-companero', title: 'El chico nuevo', level: 1, theme: 'caracter',
+  tenses: ['presente', 'preterito'],
+  text: 'El lunes llegó un chico nuevo. No habló con nadie y todos dijeron que es antipático. El martes me habló media hora. No es antipático: es tímido. Es simpático, es alegre, es sociable con dos personas, es muy trabajador y es amable. Es generoso y no es egoísta. El serio de la clase soy yo.',
+  gloss: [ { es: 'llegó', en: 'arrived' },
+           { es: 'el patio', en: 'playground' },
+           { es: 'todos dijeron', en: 'everyone said' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es el chico nuevo?',
+      options: ['Tímido', 'Antipático', 'Serio'], answer: 0 },
+    { type: 'mcq', q: '¿Cuándo hablaron?',
+      options: ['El martes', 'El lunes', 'El miércoles'], answer: 0 },
+    { type: 'short', q: '¿Dónde hablaron? (dos palabras)', accept: ['en el patio', 'el patio', 'patio'] },
+    { type: 'translate', line: 'No es antipático: es tímido.', model: 'He is not unfriendly: he is shy.' }
+  ]
+},
+
+{
+  id: 'a1-caracter-hermanos', title: 'Dos hermanos', level: 1, theme: 'caracter',
+  tenses: ['presente', 'preterito'],
+  text: 'Mis dos hermanos son diferentes. Aitor es sociable, alegre, amable y simpático con todos. Pablo es tímido, serio y reservado. Ayer fueron los dos a una fiesta. Aitor volvió a las tres y Pablo a las once. Ninguno es antipático ni egoísta, y los dos son generosos. El trabajador de la casa soy yo.',
+  gloss: [ { es: 'diferentes', en: 'different' },
+           { es: 'volvió', en: 'came back' },
+           { es: 'ninguna', en: 'neither' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién volvió antes?',
+      options: ['Pablo', 'Aitor', 'Los dos igual'], answer: 0 },
+    { type: 'mcq', q: '¿Qué tienen en común?',
+      options: ['Son generosos', 'Son tímidos', 'Son serios'], answer: 0 },
+    { type: 'short', q: '¿A qué hora volvió Aitor? (dos palabras)', accept: ['las tres', 'a las tres', 'tres'] },
+    { type: 'translate', line: 'Aitor es sociable, alegre, amable y simpático con todos.', model: 'Aitor is outgoing, cheerful, kind and friendly with everyone.' }
+  ]
+},
+
+{
+  id: 'a1-caracter-profesor', title: 'Un profesor serio', level: 1, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Este año he tenido un profesor muy serio. El primer día pensé que es antipático. Me equivoqué. Es tímido, es amable, es generoso, es simpático y es muy trabajador. No es sociable con todos, pero ayudó a tres compañeros. Un chico dijo que es egoísta. Ese chico no es nada alegre.',
+  gloss: [ { es: 'me equivoqué', en: 'I was wrong' },
+           { es: 'ha ayudado', en: 'he has helped' },
+           { es: 'ese chico', en: 'that boy' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pensó el primer día?',
+      options: ['Que es antipático', 'Que es tímido', 'Que es amable'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hizo el profesor?',
+      options: ['Ayudó a tres compañeros', 'No habló con nadie', 'Suspendió a todos'], answer: 0 },
+    { type: 'short', q: '¿A cuántos compañeros ha ayudado? (una palabra)', accept: ['tres', '3'] },
+    { type: 'translate', line: 'El primer día pensé que es antipático.', model: 'On the first day I thought he was unfriendly.' }
+  ]
+},
+
+{
+  id: 'a1-caracter-abuelo', title: 'Mi abuelo alegre', level: 1, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Mi abuelo ha sido siempre alegre, sociable y simpático. Habló con todo el pueblo. No fue nunca antipático ni egoísta. Fue generoso con el dinero, amable con los vecinos y trabajador toda su vida. Su hermano es lo contrario: serio, tímido y muy reservado. Ayer comí con los dos.',
+  gloss: [ { es: 'ha sido', en: 'he has been' },
+           { es: 'todo el pueblo', en: 'the whole town' },
+           { es: 'juntos', en: 'together' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es su hermano?',
+      options: ['Serio y tímido', 'Más alegre', 'Antipático'], answer: 0 },
+    { type: 'mcq', q: '¿Con quién comió ayer?',
+      options: ['Con los dos', 'Con su abuelo', 'Con nadie'], answer: 0 },
+    { type: 'short', q: '¿Cuándo comió con ellos? (una palabra)', accept: ['ayer'] },
+    { type: 'translate', line: 'Mi abuelo ha sido siempre alegre, sociable y simpático.', model: 'My grandfather has always been cheerful, outgoing and friendly.' }
+  ]
+},
+
+{
+  id: 'a1-caracter-fiesta', title: 'Una fiesta el sábado', level: 1, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'El sábado fui a una fiesta. Conocí a un chico simpático, a una chica muy sociable y a un señor antipático. El chico tímido de la esquina no habló en tres horas. Yo he hablado con él diez minutos: es alegre, es generoso, es amable y es el más trabajador de todos. No es serio, es callado.',
+  gloss: [ { es: 'conocí', en: 'I met' },
+           { es: 'la esquina', en: 'corner' },
+           { es: 'el más … de todos', en: 'the most … of all' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es el chico de la esquina?',
+      options: ['Tímido pero alegre', 'Antipático', 'Serio y egoísta'], answer: 0 },
+    { type: 'mcq', q: '¿Cuánto habló el narrador con él?',
+      options: ['Diez minutos', 'Tres horas', 'Nada'], answer: 0 },
+    { type: 'short', q: '¿Qué día fue la fiesta? (una palabra)', accept: ['sábado', 'el sábado'] },
+    { type: 'translate', line: 'El sábado fui a una fiesta.', model: 'On Saturday I went to a party.' }
+  ]
 }
 ];
