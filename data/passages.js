@@ -9042,5 +9042,324 @@ window.PASSAGES = [
     { type: 'short', q: '¿Qué le dio la chica? (dos palabras)', accept: ['un plano', 'plano'] },
     { type: 'translate', line: 'Un turista entró en la oficina de turismo el lunes.', model: 'A tourist came into the tourist office on Monday.' }
   ]
+},
+
+{
+  id: 'a2-serv-banco', title: 'Cambiar dinero', level: 2, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Fui al banco a cambiar dinero y no había nadie en la ventanilla. Me pidieron el documento de identidad y la nacionalidad. Saqué también cien euros del cajero automático, porque en el mercado no aceptan tarjeta y siempre falta un céntimo. Después pasé por correos a echar una carta y una postal. La empleada me preguntó si quería el envío rápido. Dije que no: la carta es para mi hermano y mi hermano no lee nada rápido.',
+  gloss: [ { es: 'la ventanilla', en: 'counter window' },
+           { es: 'saqué', en: 'I took out' },
+           { es: 'echar una carta', en: 'to post a letter' },
+           { es: 'el envío', en: 'delivery' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le pidieron en el banco?',
+      options: ['El documento de identidad', 'Una carta', 'Una tarjeta nueva'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué sacó dinero del cajero?',
+      options: ['Porque el banco estaba cerrado', 'Porque en el mercado no aceptan tarjeta', 'Porque perdió la tarjeta'], answer: 1 },
+    { type: 'short', q: '¿Cuántos euros sacó? (una palabra)', accept: ['cien', '100'] },
+    { type: 'translate', line: 'Fui al banco a cambiar dinero', model: 'I went to the bank to change money' }
+  ]
+},
+
+{
+  id: 'a2-serv-emergencia', title: 'El número de emergencias', level: 2, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El sábado por la noche hubo un accidente pequeño en mi calle. Una señora llamó al teléfono de emergencias y pidió socorro. Vino una ambulancia con dos enfermeras en seis minutos. También vinieron dos bomberos, aunque no había fuego. La policía llegó después. Un vigilante del banco salió a mirar. No hubo ladrón ni robo. Al final no fue nada grave: un chico se cayó de la bicicleta. En la comisaría estuvimos veinte minutos y volvimos a casa.',
+  gloss: [ { es: 'pidió socorro', en: 'she called for help' },
+           { es: 'se cayó', en: 'he fell' },
+           { es: 'se hizo daño', en: 'he hurt himself' },
+           { es: 'no fue nada grave', en: 'it was nothing serious' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto tardó la ambulancia?',
+      options: ['Seis minutos', 'Veinte minutos', 'Una hora'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le pasó al chico?',
+      options: ['Se hizo daño en el brazo', 'Nada', 'Se rompió la pierna'], answer: 0 },
+    { type: 'short', q: '¿Quién llamó al teléfono de emergencias? (dos palabras)', accept: ['una señora', 'la señora', 'señora'] },
+    { type: 'translate', line: 'Una señora llamó al teléfono de emergencias y pidió socorro.', model: 'A lady rang the emergency number and called for help.' }
+  ]
+},
+
+{
+  id: 'a2-serv-correos', title: 'Una carta a Perú', level: 3, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Mi abuela escribe cartas. No usa el móvil ni el correo electrónico. Cada mes va a correos con una carta para su hermana, que vive en Perú, y con una postal para mí. La empleada de correos ya la conoce. Le cobra los euros y los céntimos exactos, le da el recibo y le dice cuánto va a tardar. Le guarda hasta la moneda del cambio. Ayer la acompañé. Me pidió el documento porque yo pagué con tarjeta y en el cajero automático no había dinero. Tardó cuarenta minutos y ella salió contenta.',
+  gloss: [ { es: 'le cobra', en: 'she charges her' },
+           { es: 'el recibo', en: 'receipt' },
+           { es: 'la acompañé', en: 'I went with her' },
+           { es: 'tardar', en: 'to take (time)' } ],
+  questions: [
+    { type: 'mcq', q: '¿Para quién es la carta?',
+      options: ['Para su hermana', 'Para su nieto', 'Para la empleada'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué le pidieron el documento al nieto?',
+      options: ['Porque pagó con tarjeta', 'Porque era extranjero', 'Porque la carta era internacional'], answer: 0 },
+    { type: 'short', q: '¿Dónde vive la hermana de la abuela? (una palabra)', accept: ['Perú', 'peru', 'en Perú'] },
+    { type: 'translate', line: 'No usa el móvil ni el correo electrónico.', model: 'She does not use a mobile or email.' }
+  ]
+},
+
+{
+  id: 'a2-serv-documento', title: 'El documento perdido', level: 2, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Perdí el documento de identidad en el autobús y fui a la comisaría. Un policía muy amable me hizo tres preguntas y escribió mi nombre y mi nacionalidad. Me explicó que el teléfono de emergencias no es para esto, que eso es para la ambulancia y los bomberos. Después fui al banco, porque dentro estaba también la tarjeta, y pagué doce euros por una nueva. En el cajero automático de la esquina no funcionaba nada ese día.',
+  gloss: [ { es: 'perdí', en: 'I lost' },
+           { es: 'me hizo tres preguntas', en: 'he asked me three questions' },
+           { es: 'dentro', en: 'inside' },
+           { es: 'no funcionaba', en: 'wasn\'t working' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde perdió el documento?',
+      options: ['En el autobús', 'En el banco', 'En la comisaría'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le explicó el policía?',
+      options: ['Que no llamara a emergencias por eso', 'Que volviera mañana', 'Que buscara en el autobús'], answer: 0 },
+    { type: 'short', q: '¿Cuánto pagó por la tarjeta nueva? (dos palabras)', accept: ['doce euros', '12 euros', 'doce'] },
+    { type: 'translate', line: 'Perdí el documento de identidad en el autobús', model: 'I lost my ID card on the bus' }
+  ]
+},
+
+{
+  id: 'a2-salud-gripe', title: 'Tres días en la cama', level: 2, theme: 'salud',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'La semana pasada tuve gripe. Tenía fiebre, tos y dolor de cabeza. No fui al hospital: fui a la farmacia y compré un jarabe y unas pastillas. El farmacéutico me dijo que con fiebre el jueves hay que ir al médico. No hizo falta. Mi madre vino con una toalla y un jabón, me lavó la cara y me dijo que un enfermo también se lava los dientes y se lava las manos. Trajo también una crema y un gel del armario del baño. Tres días en la cama y el viernes ya estaba bien.',
+  gloss: [ { es: 'el jarabe', en: 'cough syrup' },
+           { es: 'las pastillas', en: 'tablets' },
+           { es: 'no hizo falta', en: 'it was not necessary' },
+           { es: 'seguía', en: 'continued' } ],
+  questions: [
+    { type: 'mcq', q: '¿Adónde fue primero?',
+      options: ['Al hospital', 'A la farmacia', 'Al médico'], answer: 1 },
+    { type: 'mcq', q: '¿Fue al médico al final?',
+      options: ['Sí, el jueves', 'No, no hizo falta', 'Sí, el viernes'], answer: 1 },
+    { type: 'short', q: '¿Cuántos días estuvo en la cama? (una palabra)', accept: ['tres', '3'] },
+    { type: 'translate', line: 'La semana pasada tuve gripe.', model: 'Last week I had the flu.' }
+  ]
+},
+
+{
+  id: 'a2-salud-dentista', title: 'La cita con el dentista', level: 2, theme: 'salud',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Tenía una cita médica con el dentista a las cinco y llegué tarde. El enfermero me dio una toalla de papel y un jabón para lavarme las manos. El dentista me miró la boca dos minutos y me preguntó si me cepillo los dientes por la noche. Dije que sí. Me miró otra vez y no dijo nada. Salí de allí con un cepillo nuevo, un champú, una crema para la piel seca y la sensación de haber mentido un poco. En la farmacia de al lado compré el gel.',
+  gloss: [ { es: 'llegué tarde', en: 'I arrived late' },
+           { es: 'me lavara', en: 'to wash' },
+           { es: 'me cepillo', en: 'I brush' },
+           { es: 'haber mentido', en: 'having lied' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le preguntó el dentista?',
+      options: ['Si se cepilla los dientes de noche', 'Si le dolía algo', 'Si fumaba'], answer: 0 },
+    { type: 'mcq', q: '¿Qué sugiere el final?',
+      options: ['Que no dijo toda la verdad', 'Que el dentista se equivocó', 'Que estaba enfermo'], answer: 0 },
+    { type: 'short', q: '¿A qué hora era la cita? (dos palabras)', accept: ['las cinco', 'a las cinco', 'cinco'] },
+    { type: 'translate', line: 'Tenía una cita médica con el dentista a las cinco', model: 'I had an appointment with the dentist at five' }
+  ]
+},
+
+{
+  id: 'a2-salud-bano', title: 'El armario del baño', level: 2, theme: 'salud',
+  tenses: ['presente', 'perfecto'],
+  text: 'En el armario del baño de mi hermana hay tres champús, dos geles, cuatro cremas, una colonia, dos desodorantes y un cepillo de dientes viejo. En el mío hay un jabón. Ella dice que yo no llevo una vida sana y que un día voy a terminar en el hospital. Yo le digo que el jabón y una toalla limpia son suficientes. La semana pasada me regaló un gel y una crema. No los he abierto.',
+  gloss: [ { es: 'el mío', en: 'mine' },
+           { es: 'suficientes', en: 'enough' },
+           { es: 'me regaló', en: 'she gave me' },
+           { es: 'no los he abierto', en: 'I haven\'t opened them' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué hay en el armario del narrador?',
+      options: ['Un jabón', 'Tres champús', 'Nada'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hizo con el regalo?',
+      options: ['No lo ha usado', 'Lo devolvió', 'Lo usó enseguida'], answer: 0 },
+    { type: 'short', q: '¿Cuántas cremas hay en el armario de la hermana? (una palabra)', accept: ['cuatro', '4'] },
+    { type: 'translate', line: 'Yo le digo que el jabón y una toalla limpia son suficientes.', model: 'I tell her that soap and a clean towel are enough.' }
+  ]
+},
+
+{
+  id: 'a2-salud-abuelo', title: 'Una vida sana, según mi abuelo', level: 3, theme: 'salud',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Mi abuelo tiene ochenta y cuatro años y no ha ido nunca a urgencias. Dice que lleva una vida sana, pero su vida sana consiste en andar cuatro kilómetros, cenar poco y no ir al médico. Cuando tiene tos, toma una infusión. Cuando tiene fiebre, se acuesta. No pisa la farmacia y no ha visto a un dentista desde 1994. Se lava la cara con jabón y una toalla vieja. El año pasado fue al hospital por una cita médica que le pidió mi madre, y el enfermero le dijo que estaba mejor que yo. Yo tengo treinta y un años.',
+  gloss: [ { es: 'consiste en', en: 'consists of' },
+           { es: 'andar', en: 'to walk' },
+           { es: 'se acuesta', en: 'he goes to bed' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué hace el abuelo cuando tiene fiebre?',
+      options: ['Va al médico', 'Se acuesta', 'Toma una medicina'], answer: 1 },
+    { type: 'mcq', q: '¿Qué tono tiene el final?',
+      options: ['Irónico', 'Triste', 'Enfadado'], answer: 0 },
+    { type: 'short', q: '¿Cuántos kilómetros anda? (una palabra)', accept: ['cuatro', '4'] },
+    { type: 'translate', line: 'Mi abuelo tiene ochenta y cuatro años y no ha ido nunca a urgencias.', model: 'My grandfather is eighty-four and has never been to A&E.' }
+  ]
+},
+
+{
+  id: 'a2-ciencia-movil', title: 'El móvil de mi madre', level: 2, theme: 'ciencia',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Mi madre compró un móvil nuevo en enero y me llamó cuatro veces la primera semana. No sabía la contraseña del wifi, no encontraba el correo electrónico y la pantalla se apagaba sola. Le escribí todo en un papel. Ahora hace videollamadas con su hermana, guarda las fotos en un archivo y hasta ha entrado en una red social. Ya no me llama. El ordenador viejo y el pc de la oficina siguen en el pasillo, sin abrir.',
+  gloss: [ { es: 'se apagaba sola', en: 'turned itself off' },
+           { es: 'guarda', en: 'she saves' },
+           { es: 'ha entrado en', en: 'she has joined' },
+           { es: 'sin abrir', en: 'unopened' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué llamaba la madre al principio?',
+      options: ['Por problemas con el móvil', 'Porque estaba sola', 'Por el ordenador'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hace ahora?',
+      options: ['Videollamadas y fotos', 'Nada', 'Solo llamar'], answer: 0 },
+    { type: 'short', q: '¿En qué mes compró el móvil? (una palabra)', accept: ['enero', 'en enero'] },
+    { type: 'translate', line: 'Mi madre compró un móvil nuevo en enero', model: 'My mother bought a new mobile in January' }
+  ]
+},
+
+{
+  id: 'a2-ciencia-clase', title: 'La clase de informática', level: 2, theme: 'ciencia',
+  tenses: ['presente', 'preterito'],
+  text: 'El martes tuvimos clase de informática. El profesor, que es informático y muy buen científico, nos enseñó a navegar por internet sin dar los datos personales y a elegir una contraseña larga. Un compañero preguntó por el correo basura. Otro, por la copia de seguridad de las fotos. Yo pregunté por qué el wifi de la escuela no funciona nunca. El profesor se rio y dijo que eso no es ciencia, es política. La clase terminó a las seis.',
+  gloss: [ { es: 'nos enseñó a', en: 'he taught us to' },
+           { es: 'elegir', en: 'to choose' },
+           { es: 'se rio', en: 'he laughed' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué enseñó el profesor?',
+      options: ['A navegar sin dar datos personales', 'A reparar ordenadores', 'A escribir correos'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo contestó a la pregunta del wifi?',
+      options: ['Con una broma', 'Con enfado', 'No contestó'], answer: 0 },
+    { type: 'short', q: '¿Qué día fue la clase? (una palabra)', accept: ['martes', 'el martes'] },
+    { type: 'translate', line: 'El martes tuvimos clase de informática.', model: 'On Tuesday we had a computing class.' }
+  ]
+},
+
+{
+  id: 'a2-ciencia-portatil', title: 'El portátil que no arranca', level: 2, theme: 'ciencia',
+  tenses: ['presente', 'imperfecto'],
+  text: 'El portátil de mi hermano no arrancó el domingo. La pantalla estaba negra. Probamos con otro cable, miramos en internet desde mi ordenador, le escribimos un correo electrónico a un amigo informático y luego lo llamamos al móvil. El wifi tampoco iba. Él preguntó por la copia de seguridad. No había. Preguntó por el archivo del trabajo. Estaba dentro. Al final lo llevamos a una tienda y el técnico lo arregló en dos horas por treinta euros. Mi hermano ahora guarda todo en una red social, que tampoco es la solución.',
+  gloss: [ { es: 'no arrancó', en: 'wouldn\'t start' },
+           { es: 'el cable', en: 'cable' },
+           { es: 'lo arregló', en: 'he fixed it' },
+           { es: 'tampoco', en: 'not … either' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué preguntó primero el amigo?',
+      options: ['Por la copia de seguridad', 'Por el precio', 'Por la marca'], answer: 0 },
+    { type: 'mcq', q: '¿Qué opina el narrador de la nueva costumbre de su hermano?',
+      options: ['Que tampoco está bien', 'Que es perfecta', 'No dice nada'], answer: 0 },
+    { type: 'short', q: '¿Cuánto costó la reparación? (dos palabras)', accept: ['treinta euros', '30 euros', 'treinta'] },
+    { type: 'translate', line: 'El portátil de mi hermano no arrancó el domingo.', model: 'My brother\'s laptop would not start on Sunday.' }
+  ]
+},
+
+{
+  id: 'a2-pol-alcalde', title: 'El día de las elecciones', level: 2, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El domingo pasado hubo elecciones en mi pueblo. Mi padre votó a las diez, mi madre a las doce y mi abuela no votó, porque dice que la política no cambia nada. Ganó un partido político nuevo. El presidente del gobierno vino un mes antes y habló media hora en la plaza sobre la educación y la ley nueva. En mi pueblo no hay ni rey ni reina ni ministro, y aquel domingo todos hablaban de la capital y del ejército.',
+  gloss: [ { es: 'votó', en: 'he voted' },
+           { es: 'ganó', en: 'won' },
+           { es: 'aquel domingo', en: 'that Sunday' },
+           { es: 'como si los hubiera', en: 'as if there were' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué no votó la abuela?',
+      options: ['Porque estaba enferma', 'Porque cree que no cambia nada', 'Porque era tarde'], answer: 1 },
+    { type: 'mcq', q: '¿De qué habló el presidente?',
+      options: ['De la educación y una ley', 'Del rey', 'Del pueblo'], answer: 0 },
+    { type: 'short', q: '¿A qué hora votó el padre? (dos palabras)', accept: ['las diez', 'a las diez', 'diez'] },
+    { type: 'translate', line: 'El domingo pasado hubo elecciones en mi pueblo.', model: 'Last Sunday there were elections in my town.' }
+  ]
+},
+
+{
+  id: 'a2-pol-historia', title: 'Una clase de historia', level: 3, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'En clase estudiamos la guerra y después la paz. La profesora nos explicó qué es un gobierno, qué hace un ministro y por qué la capital de un país no es siempre la ciudad más grande. Una compañera preguntó si el rey y la reina mandan de verdad. La profesora dijo que no, que manda el parlamento, y que la ley es igual para el príncipe y para el ejército. Nadie preguntó nada más. Era viernes a las dos.',
+  gloss: [ { es: 'mandan', en: 'are in charge' },
+           { es: 'de verdad', en: 'really' },
+           { es: 'igual para', en: 'the same for' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué contestó la profesora sobre el rey?',
+      options: ['Que manda el parlamento', 'Que manda el rey', 'Que no lo sabía'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué no preguntó nadie más?',
+      options: ['Era viernes a última hora', 'La profesora se enfadó', 'Nadie entendió'], answer: 0 },
+    { type: 'short', q: '¿Qué estudiaron después de la guerra? (una palabra)', accept: ['la paz', 'paz'] },
+    { type: 'translate', line: 'la ley es igual para el príncipe y para el ejército', model: 'the law is the same for the prince and for the army' }
+  ]
+},
+
+{
+  id: 'a2-arte-museo', title: 'Una tarde en el museo', level: 2, theme: 'arte',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El sábado fuimos a ver una exposición de dibujo y fotografía. Hicimos fotos con la cámara del móvil hasta que un señor nos dijo que no. Vimos una estatua enorme, tres cuadros de un pintor mexicano y el retrato de un escritor con cara de cansado. Después pasamos por la catedral y por el palacio viejo. Mi hermana quería ir al cine y al teatro también, pero eran las ocho y teníamos hambre.',
+  gloss: [ { es: 'hasta que', en: 'until' },
+           { es: 'el retrato', en: 'portrait' },
+           { es: 'pasamos por', en: 'we went past' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué dejaron de hacer fotos?',
+      options: ['Un señor se lo dijo', 'Se quedaron sin batería', 'Estaba prohibido fotografiar la estatua'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué no fueron al cine?',
+      options: ['Era tarde y tenían hambre', 'No había entradas', 'No quisieron'], answer: 0 },
+    { type: 'short', q: '¿De qué era la exposición? (dos palabras)', accept: ['dibujo y fotografía', 'dibujo', 'fotografía'] },
+    { type: 'translate', line: 'El sábado fuimos a ver una exposición de dibujo y fotografía.', model: 'On Saturday we went to see an exhibition of drawing and photography.' }
+  ]
+},
+
+{
+  id: 'a2-arte-guitarra', title: 'La guitarra del abuelo', level: 2, theme: 'arte',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Mi abuelo tocaba la guitarra y cantaba flamenco en las fiestas del pueblo. No sabía nada de música, ni de piano ni de violín, pero era el mejor músico que he oído. Mi hermana estudió piano ocho años en una academia y dice lo mismo. También canta, y el tango se lo enseñó él. En casa escuchamos rock, pop y algo de jazz; él solo escuchaba una cosa. Cuando murió, mi padre guardó la guitarra encima del armario. Nadie la ha tocado desde entonces.',
+  gloss: [ { es: 'tocaba', en: 'he played' },
+           { es: 'las fiestas', en: 'town festival' },
+           { es: 'guardó', en: 'put away' },
+           { es: 'desde entonces', en: 'since then' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué dice la hermana, que estudió piano?',
+      options: ['Lo mismo que el narrador', 'Que el abuelo tocaba mal', 'Que prefiere el violín'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pasó con la guitarra?',
+      options: ['Nadie la toca', 'La vendieron', 'La toca el padre'], answer: 0 },
+    { type: 'short', q: '¿Cuántos años estudió piano la hermana? (una palabra)', accept: ['ocho', '8'] },
+    { type: 'translate', line: 'Mi abuelo tocaba la guitarra y cantaba flamenco en las fiestas del pueblo.', model: 'My grandfather played the guitar and sang flamenco at the town festival.' }
+  ]
+},
+
+{
+  id: 'a2-arte-cuento', title: 'Un cuento en el teatro', level: 2, theme: 'arte',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El colegio nos llevó al teatro a ver un cuento con actores y una cantante. La actriz principal era una señora mayor con una voz enorme. Había un piano, un violín y un músico con una cámara que hacía fotos del público. Al final salió un dibujo grande de un castillo. A mí me gustó la música; a mi amigo, la historia; a la profesora, todo. En el autobús de vuelta no hablamos de nada más.',
+  gloss: [ { es: 'nos llevó', en: 'took us' },
+           { es: 'la voz', en: 'voice' },
+           { es: 'el público', en: 'the audience' },
+           { es: 'de vuelta', en: 'on the way back' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo era la actriz principal?',
+      options: ['Una señora mayor con voz enorme', 'Una chica joven', 'Un actor'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le gustó al narrador?',
+      options: ['La música', 'La historia', 'El castillo'], answer: 0 },
+    { type: 'short', q: '¿Qué salió al final? (dos palabras)', accept: ['un dibujo', 'un castillo', 'dibujo'] },
+    { type: 'translate', line: 'A mí me gustó la música; a mi amigo, la historia', model: 'I liked the music; my friend liked the story' }
+  ]
+},
+
+{
+  id: 'a2-relig-navidad', title: 'La Navidad en mi casa', level: 2, theme: 'religion',
+  tenses: ['presente', 'preterito'],
+  text: 'En mi casa la Navidad empieza el veinticuatro por la noche. Mi abuela es católica y le gusta ir a misa; mi padre es ateo y no va. El sacerdote de la iglesia la conoce bien. Los dos cenan juntos y nadie discute. Mi tío es musulmán desde hace diez años y viene también. El año pasado cayó en Ramadán y él cenó a las nueve, con nosotros. Ella cree en Dios y él cree en Alá. En esa mesa caben un cristiano, un judío y un musulmán sin problema. Mi abuela dice que un santo no mira el reloj.',
+  gloss: [ { es: 'discute', en: 'argues' },
+           { es: 'desde hace diez años', en: 'for ten years' },
+           { es: 'cayó en', en: 'fell during' },
+           { es: 'caben', en: 'there is room for' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué ocurre en la cena del veinticuatro?',
+      options: ['Cenan juntos sin discutir', 'El padre no va', 'Cada uno cena aparte'], answer: 0 },
+    { type: 'mcq', q: '¿Qué quiere decir la abuela al final?',
+      options: ['Que el horario no es lo importante', 'Que hay que cenar pronto', 'Que su hermano llega tarde'], answer: 0 },
+    { type: 'short', q: '¿Qué día empieza la Navidad en su casa? (una palabra)', accept: ['veinticuatro', 'el veinticuatro', '24'] },
+    { type: 'translate', line: 'Mi abuela es católica y le gusta ir a misa', model: 'My grandmother is Catholic and likes going to mass' }
+  ]
+},
+
+{
+  id: 'a2-relig-barrio', title: 'Tres puertas en la misma calle', level: 2, theme: 'religion',
+  tenses: ['presente'],
+  text: 'En mi calle hay una iglesia, una mezquita pequeña y, dos portales más allá, una sinagoga. Los viernes veo a los vecinos ir a la mezquita; los sábados, ir a la sinagoga; los domingos, ir a la iglesia. Un cristiano, un judío y un musulmán esperan el autobús juntos cada mañana y hablan del fútbol. La budista del tercero no va a ninguna parte y dice que cree en la reencarnación. El sacerdote la saluda igual.',
+  gloss: [ { es: 'el portal', en: 'doorway, entrance' },
+           { es: 'más allá', en: 'further along' },
+           { es: 'la saluda', en: 'greets her' } ],
+  questions: [
+    { type: 'mcq', q: '¿De qué hablan los vecinos en la parada?',
+      options: ['De fútbol', 'De religión', 'Del barrio'], answer: 0 },
+    { type: 'mcq', q: '¿Qué sugiere el texto sobre la calle?',
+      options: ['Que la convivencia es normal y sin ruido', 'Que hay conflictos', 'Que nadie se habla'], answer: 0 },
+    { type: 'short', q: '¿Qué día van a la mezquita? (una palabra)', accept: ['viernes', 'los viernes', 'el viernes'] },
+    { type: 'translate', line: 'En mi calle hay una iglesia, una mezquita pequeña', model: 'On my street there is a church, a small mosque' }
+  ]
 }
 ];
