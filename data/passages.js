@@ -10052,5 +10052,305 @@ window.PASSAGES = [
     { type: 'short', q: '¿Qué día fue la fiesta? (una palabra)', accept: ['sábado', 'el sábado'] },
     { type: 'translate', line: 'El sábado fui a una fiesta.', model: 'On Saturday I went to a party.' }
   ]
+},
+
+{
+  id: 'a1-medios-quiosco', title: 'El quiosco de la plaza', level: 1, theme: 'medios',
+  tenses: ['presente', 'preterito'],
+  text: 'Ayer fui al quiosco. Compré un sello y un periódico. El señor escuchó la radio toda la mañana. Por la tarde vi la televisión: los anuncios, el presentador y una entrevista. A mi padre le gusta leer un periódico cada día y escuchar la radio. Yo prefiero ver la televisión.',
+  gloss: [ { es: 'el quiosco', en: 'newspaper kiosk' },
+           { es: 'el sello', en: 'stamp' },
+           { es: 'los anuncios', en: 'the adverts' },
+           { es: 'la entrevista', en: 'interview' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué compró en el quiosco?',
+      options: ['Un sello y un periódico', 'Una radio', 'Una televisión'], answer: 0 },
+    { type: 'mcq', q: '¿Quién lee el periódico cada día?',
+      options: ['El padre', 'El narrador', 'El señor del quiosco'], answer: 0 },
+    { type: 'short', q: '¿Qué compró en el quiosco? (dos cosas)', accept: ['un sello y un periódico', 'sello y periódico', 'un sello'] },
+    { type: 'translate', line: 'Ayer fui al quiosco.', model: 'Yesterday I went to the kiosk.' }
+  ]
+},
+
+{
+  id: 'a1-medios-correo', title: 'Mi primera dirección', level: 1, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'El lunes escribí mi primer mensaje electrónico. Mi hija me explicó la arroba, el punto y el guión bajo. También el guión normal. Después entré en una página web y en un foro. He recibido un correo con un virus y he hablado por chat con mi hermano. La televisión y la radio son más fáciles.',
+  gloss: [ { es: 'la arroba', en: 'the @ sign' },
+           { es: 'guión bajo', en: 'underscore' },
+           { es: 'el foro', en: 'forum' },
+           { es: 'el virus', en: 'virus' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién le explicó la arroba?',
+      options: ['Su hija', 'Su hermano', 'Nadie'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le parece más fácil?',
+      options: ['La televisión y la radio', 'El correo', 'El chat'], answer: 0 },
+    { type: 'short', q: '¿Qué día escribió el mensaje? (una palabra)', accept: ['lunes', 'el lunes'] },
+    { type: 'translate', line: 'El lunes escribí mi primer mensaje electrónico.', model: 'On Monday I wrote my first email.' }
+  ]
+},
+
+{
+  id: 'a1-medios-postal', title: 'Una postal y un sello', level: 1, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'En agosto quise escribir una postal a mi abuela. Compré el sello en el quiosco. También quise enviar una postal a mi tío y no encontré su dirección. Mi abuela ha recibido la postal y prefirió responder a una postal, no dejar un mensaje. No usa una página web ni un chat. Ve la televisión y escucha la radio.',
+  gloss: [ { es: 'quise', en: 'I wanted to' },
+           { es: 'no encontré', en: 'I could not find' },
+           { es: 'ha recibido', en: 'has received' },
+           { es: 'me ha dejado', en: 'she has left me' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué no envió la segunda postal?',
+      options: ['No tenía la dirección', 'No había sellos', 'No quiso'], answer: 0 },
+    { type: 'mcq', q: '¿Qué usa la abuela?',
+      options: ['El teléfono', 'La radio', 'Internet'], answer: 0 },
+    { type: 'short', q: '¿En qué mes fue? (una palabra)', accept: ['agosto', 'en agosto'] },
+    { type: 'translate', line: 'Compré el sello en el quiosco.', model: 'I bought the stamp at the kiosk.' }
+  ]
+},
+
+{
+  id: 'a1-medios-radio', title: 'La radio del taller', level: 1, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Mi tío ha escuchado la radio en el taller treinta años. Ayer le regalé una tarjeta telefónica y se echó a reír: ya nadie usa una cabina. El presentador hizo una entrevista larga. La escuchó entera, leyó un periódico del quiosco y por la noche quiso ver la televisión. Compró un sello para escribir una postal.',
+  gloss: [ { es: 'el taller', en: 'workshop' },
+           { es: 'le regalé', en: 'I gave him' },
+           { es: 'la cabina', en: 'phone box' },
+           { es: 'entera', en: 'the whole thing' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué se echó a reír el tío?',
+      options: ['Porque ya nadie usa cabinas', 'Por la entrevista', 'Por el periódico'], answer: 0 },
+    { type: 'mcq', q: '¿Ve la televisión?',
+      options: ['No', 'Sí, mucho', 'Solo el fin de semana'], answer: 0 },
+    { type: 'short', q: '¿Cuántos años ha escuchado la radio? (una palabra)', accept: ['treinta', '30'] },
+    { type: 'translate', line: 'Mi tío ha escuchado la radio en el taller treinta años.', model: 'My uncle has listened to the radio in the workshop for thirty years.' }
+  ]
+},
+
+{
+  id: 'a1-medios-clase', title: 'Un trabajo de clase', level: 1, theme: 'medios',
+  tenses: ['presente', 'preterito'],
+  text: 'La semana pasada hicimos un trabajo sobre los medios. Un grupo habló de la televisión, otro de la radio y otro de una página web. Yo hablé del quiosco y del periódico. Escribimos la dirección de internet con la arroba, el punto y el guión bajo en la pizarra. El presentador del vídeo habló muy rápido.',
+  gloss: [ { es: 'hicimos un trabajo', en: 'we did a project' },
+           { es: 'el grupo', en: 'group' },
+           { es: 'la pizarra', en: 'the board' },
+           { es: 'muy rápido', en: 'very fast' } ],
+  questions: [
+    { type: 'mcq', q: '¿De qué habló el narrador?',
+      options: ['Del quiosco y el periódico', 'De la radio', 'De la televisión'], answer: 0 },
+    { type: 'mcq', q: '¿Qué escribieron en la pizarra?',
+      options: ['Una dirección de internet', 'Un periódico', 'Una entrevista'], answer: 0 },
+    { type: 'short', q: '¿Cuándo hicieron el trabajo? (tres palabras)', accept: ['la semana pasada', 'semana pasada'] },
+    { type: 'translate', line: 'La semana pasada hicimos un trabajo sobre los medios.', model: 'Last week we did a project about the media.' }
+  ]
+},
+
+{
+  id: 'a1-pol-elecciones', title: 'El domingo votamos', level: 1, theme: 'politica',
+  tenses: ['presente', 'preterito'],
+  text: 'El domingo hubo elecciones. Mi padre votó por la mañana. Habló del gobierno, de la ley nueva y de la educación. Mi madre votó a otro partido político. El presidente salió en la televisión desde la capital. En mi pueblo el ayuntamiento es pequeño. No hay rey, ni reina, ni ministro, ni ejército.',
+  gloss: [ { es: 'hubo', en: 'there were' },
+           { es: 'votó', en: 'voted' },
+           { es: 'salió', en: 'appeared' },
+           { es: 'el ayuntamiento', en: 'town hall' } ],
+  questions: [
+    { type: 'mcq', q: '¿Votaron lo mismo los padres?',
+      options: ['No', 'Sí', 'No votaron'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde salió el presidente?',
+      options: ['En la televisión', 'En el pueblo', 'En el ayuntamiento'], answer: 0 },
+    { type: 'short', q: '¿Qué día hubo elecciones? (una palabra)', accept: ['domingo', 'el domingo'] },
+    { type: 'translate', line: 'El domingo hubo elecciones.', model: 'On Sunday there was an election.' }
+  ]
+},
+
+{
+  id: 'a1-pol-clase', title: 'El rey y el presidente', level: 1, theme: 'politica',
+  tenses: ['presente', 'preterito'],
+  text: 'Ayer estudiamos el gobierno en clase. El profesor habló del rey, de la reina, del príncipe y de la princesa. También del presidente, de un ministro y de una juez. Pregunté quién manda. Dijo que la ley. Hablamos de la guerra, de la paz, del ejército y de la capital. La política es difícil.',
+  gloss: [ { es: 'manda', en: 'is in charge' },
+           { es: 'la juez', en: 'judge' },
+           { es: 'difícil', en: 'difficult' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué contestó el profesor?',
+      options: ['Que manda la ley', 'Que manda el rey', 'Que manda el presidente'], answer: 0 },
+    { type: 'mcq', q: '¿Qué opina el narrador?',
+      options: ['Que la política es difícil', 'Que es fácil', 'Que es aburrida'], answer: 0 },
+    { type: 'short', q: '¿Qué estudiaron ayer? (dos palabras)', accept: ['el gobierno', 'gobierno'] },
+    { type: 'translate', line: 'Ayer estudiamos el gobierno en clase.', model: 'Yesterday we studied government in class.' }
+  ]
+},
+
+{
+  id: 'a1-pol-ayuntamiento', title: 'Una carta al ayuntamiento', level: 1, theme: 'politica',
+  tenses: ['presente', 'preterito'],
+  text: 'Mi vecino escribió una carta al ayuntamiento. Habló de la educación de sus hijos y de una ley nueva del gobierno. El ministro no contestó. Un señor del partido político vino al pueblo y prometió mucho. Después no volvió. Mi vecino dijo que el presidente, el rey y la reina viven muy lejos de la capital.',
+  gloss: [ { es: 'prometió', en: 'he promised' },
+           { es: 'no volvió', en: 'he did not come back' },
+           { es: 'lejos', en: 'far' } ],
+  questions: [
+    { type: 'mcq', q: '¿Contestó el ministro?',
+      options: ['No', 'Sí', 'Vino al pueblo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué quiere decir el vecino?',
+      options: ['Que nadie escucha al pueblo', 'Que la capital es bonita', 'Que el rey es bueno'], answer: 0 },
+    { type: 'short', q: '¿A quién escribió la carta? (dos palabras)', accept: ['al ayuntamiento', 'el ayuntamiento', 'ayuntamiento'] },
+    { type: 'translate', line: 'Mi vecino escribió una carta al ayuntamiento.', model: 'My neighbour wrote a letter to the town hall.' }
+  ]
+},
+
+{
+  id: 'a1-pol-television', title: 'Una noche de política', level: 1, theme: 'politica',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Anoche vi la televisión con mi abuelo. Salió el presidente, salió un ministro y salió una juez. Hablaron del gobierno, de la ley, de la educación y de la paz. Mi abuelo ha visto mucha política y mucha guerra. Dijo tres palabras: «El ejército, no.» Después cambió de canal y vimos el fútbol.',
+  gloss: [ { es: 'anoche', en: 'last night' },
+           { es: 'salió', en: 'appeared' },
+           { es: 'cambió de canal', en: 'he changed channel' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué dijo el abuelo?',
+      options: ['«El ejército, no»', 'Nada', 'Que le gusta el presidente'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hicieron después?',
+      options: ['Vieron el fútbol', 'Se acostaron', 'Siguieron con la política'], answer: 0 },
+    { type: 'short', q: '¿Con quién vio la televisión? (dos palabras)', accept: ['su abuelo', 'con su abuelo', 'abuelo'] },
+    { type: 'translate', line: 'Anoche vi la televisión con mi abuelo.', model: 'Last night I watched television with my grandfather.' }
+  ]
+},
+
+{
+  id: 'a1-pol-capital', title: 'Un viaje a la capital', level: 1, theme: 'politica',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'El mes pasado fui a la capital. Vi el edificio del gobierno y el palacio del rey y de la reina. No vi al presidente ni a ningún ministro. Un guía habló del ejército, de la guerra, de la paz y de una ley muy antigua. Compré un libro de política. He leído diez páginas.',
+  gloss: [ { es: 'el edificio', en: 'building' },
+           { es: 'el guía', en: 'guide' },
+           { es: 'antigua', en: 'old' },
+           { es: 'he leído', en: 'I have read' } ],
+  questions: [
+    { type: 'mcq', q: '¿A quién no vio?',
+      options: ['Al presidente', 'Al rey', 'Al guía'], answer: 0 },
+    { type: 'mcq', q: '¿Cuánto ha leído del libro?',
+      options: ['Diez páginas', 'Todo', 'Nada'], answer: 0 },
+    { type: 'short', q: '¿Cuándo fue a la capital? (tres palabras)', accept: ['el mes pasado', 'mes pasado'] },
+    { type: 'translate', line: 'El mes pasado fui a la capital.', model: 'Last month I went to the capital.' }
+  ]
+},
+
+{
+  id: 'a1-serv-banco', title: 'En el banco', level: 1, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'El martes fui al banco a cambiar dinero. Saqué cincuenta euros del cajero automático. Una moneda de un céntimo se cayó al suelo. Después pasé por correos con una carta y una postal. La empleada de correos me habló del envío rápido. Dije que no. He pagado ocho euros por todo.',
+  gloss: [ { es: 'saqué', en: 'I took out' },
+           { es: 'se cayó', en: 'fell' },
+           { es: 'el envío', en: 'delivery' },
+           { es: 'he pagado', en: 'I have paid' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto sacó del cajero?',
+      options: ['Cincuenta euros', 'Ocho euros', 'Un céntimo'], answer: 0 },
+    { type: 'mcq', q: '¿Aceptó el envío rápido?',
+      options: ['No', 'Sí', 'No se lo ofrecieron'], answer: 0 },
+    { type: 'short', q: '¿Qué día fue al banco? (una palabra)', accept: ['martes', 'el martes'] },
+    { type: 'translate', line: 'El martes fui al banco a cambiar dinero.', model: 'On Tuesday I went to the bank to change money.' }
+  ]
+},
+
+{
+  id: 'a1-serv-ambulancia', title: 'Llamamos a la ambulancia', level: 1, theme: 'servicios',
+  tenses: ['presente', 'preterito'],
+  text: 'El sábado un señor se cayó en la calle. Llamé al teléfono de emergencias y pedí socorro. Vino una ambulancia con una enfermera y un bombero. Pensé en llamar a la policía y en llamar a los bomberos otra vez. En la comisaría no pagué ni un euro ni un céntimo.',
+  gloss: [ { es: 'se cayó', en: 'fell' },
+           { es: 'pedí socorro', en: 'I called for help' },
+           { es: 'vino', en: 'came' },
+           { es: 'pensé en', en: 'I thought about' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién vino primero?',
+      options: ['La ambulancia', 'La policía', 'Los bomberos'], answer: 0 },
+    { type: 'mcq', q: '¿Cuánto pagó?',
+      options: ['Nada', 'Cincuenta euros', 'No lo dice'], answer: 0 },
+    { type: 'short', q: '¿Qué día se cayó el señor? (una palabra)', accept: ['sábado', 'el sábado'] },
+    { type: 'translate', line: 'Llamé al teléfono de emergencias y pedí socorro.', model: 'I rang the emergency number and called for help.' }
+  ]
+},
+
+{
+  id: 'a1-serv-correos', title: 'Ir a correos', level: 1, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Mi abuelo ha ido a correos cada lunes veinte años. Ayer fui con él. Llevó una carta y dos postales. Pagó tres euros y veinte céntimos con una moneda vieja. La empleada se echó a reír. Después pasamos por el banco y sacamos dinero del cajero automático. No quiso cambiar dinero.',
+  gloss: [ { es: 'llevó', en: 'he took' },
+           { es: 'la moneda', en: 'coin' },
+           { es: 'sacamos', en: 'we took out' },
+           { es: 'no quiso', en: 'he did not want to' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto pagó el abuelo?',
+      options: ['Tres euros y veinte céntimos', 'Veinte euros', 'Nada'], answer: 0 },
+    { type: 'mcq', q: '¿Qué día va a correos?',
+      options: ['El lunes', 'El sábado', 'Cada día'], answer: 0 },
+    { type: 'short', q: '¿Cuántas postales llevó? (una palabra)', accept: ['dos', '2'] },
+    { type: 'translate', line: 'Mi abuelo ha ido a correos cada lunes veinte años.', model: 'My grandfather has gone to the post office every Monday for twenty years.' }
+  ]
+},
+
+{
+  id: 'a1-serv-bomberos', title: 'Los bomberos del pueblo', level: 1, theme: 'servicios',
+  tenses: ['presente', 'preterito'],
+  text: 'En mi pueblo hay cuatro bomberos y una enfermera. El jueves hubo humo en una casa. Alguien quiso llamar a los bomberos y otro quiso llamar a la policía. Nadie pidió socorro al teléfono de emergencias. No hubo fuego: fue el horno. La ambulancia no salió de la comisaría. El señor pagó cero euros y cero céntimos.',
+  gloss: [ { es: 'el humo', en: 'smoke' },
+           { es: 'el horno', en: 'oven' },
+           { es: 'no salió', en: 'did not go out' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pasó de verdad?',
+      options: ['Fue el horno', 'Hubo un fuego grande', 'No pasó nada'], answer: 0 },
+    { type: 'mcq', q: '¿Salió la ambulancia?',
+      options: ['No', 'Sí', 'Solo la enfermera'], answer: 0 },
+    { type: 'short', q: '¿Cuántos bomberos hay? (una palabra)', accept: ['cuatro', '4'] },
+    { type: 'translate', line: 'Alguien quiso llamar a los bomberos y otro quiso llamar a la policía.', model: 'Someone wanted to call the fire brigade and someone else wanted to call the police.' }
+  ]
+},
+
+{
+  id: 'a1-ident-carne', title: 'Perdí la cartera', level: 1, theme: 'identidad',
+  tenses: ['presente', 'preterito'],
+  text: 'Ayer perdí la cartera con el carné, el pasaporte, las llaves, las gafas y la tarjeta de crédito. Dentro puse mi nombre, mi dirección, el código postal y el número de teléfono. Un chico joven la encontró en el paseo y la llevó a mi piso. Le di las gracias. Tiene mi edad.',
+  gloss: [ { es: 'la cartera', en: 'wallet' },
+           { es: 'dentro', en: 'inside' },
+           { es: 'la encontró', en: 'found it' },
+           { es: 'le di las gracias', en: 'I thanked him' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién encontró la cartera?',
+      options: ['Un chico joven', 'Un señor', 'Nadie'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde la encontró?',
+      options: ['En el paseo', 'En el piso', 'En la plaza'], answer: 0 },
+    { type: 'short', q: '¿Qué llevaba dentro además del carné? (una palabra)', accept: ['el pasaporte', 'pasaporte', 'llaves', 'gafas'] },
+    { type: 'translate', line: 'Ayer perdí la cartera', model: 'Yesterday I lost my wallet' }
+  ]
+},
+
+{
+  id: 'a1-ident-ficha', title: 'Una ficha de la academia', level: 1, theme: 'identidad',
+  tenses: ['presente', 'preterito'],
+  text: 'El lunes escribí mi nombre, el primer apellido y el segundo apellido en una ficha. También la fecha de nacimiento, el lugar de nacimiento y la edad. Después la dirección: avenida del Norte, número seis, tercer piso, y el código postal. En estado civil puse soltero. El señor me pidió el carné.',
+  gloss: [ { es: 'la ficha', en: 'form' },
+           { es: 'puse', en: 'I put' },
+           { es: 'me pidió', en: 'he asked me for' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué puso en estado civil?',
+      options: ['Soltero', 'Casado', 'Viudo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le pidió el señor?',
+      options: ['El carné', 'El pasaporte', 'Dinero'], answer: 0 },
+    { type: 'short', q: '¿En qué piso vive? (dos palabras)', accept: ['tercer piso', 'el tercero', 'tercero'] },
+    { type: 'translate', line: 'El lunes escribí mi nombre, el primer apellido y el segundo apellido en una ficha.', model: 'On Monday I wrote my first name and both surnames on a form.' }
+  ]
+},
+
+{
+  id: 'a1-ident-clase', title: 'Cinco chicos y una chica', level: 1, theme: 'identidad',
+  tenses: ['presente', 'preterito'],
+  text: 'En mi clase hay un chico alemán, un chico mexicano, un chico japonés, un chico marroquí y una chica de mi pueblo. Ayer cada uno dijo su nombre, su edad y su lugar de nacimiento. Yo soy extranjero también. El señor de la puerta pidió el pasaporte a dos y el carné a los demás.',
+  gloss: [ { es: 'cada uno', en: 'each one' },
+           { es: 'extranjero', en: 'foreign, a foreigner' },
+           { es: 'a los demás', en: 'to the others' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué dijo cada uno?',
+      options: ['Nombre, edad y lugar de nacimiento', 'Solo el nombre', 'Su dirección'], answer: 0 },
+    { type: 'mcq', q: '¿A cuántos pidió el pasaporte?',
+      options: ['A dos', 'A todos', 'A ninguno'], answer: 0 },
+    { type: 'short', q: '¿De dónde es la chica? (dos palabras)', accept: ['de mi pueblo', 'mi pueblo', 'pueblo'] },
+    { type: 'translate', line: 'Ayer cada uno dijo su nombre, su edad y su lugar de nacimiento.', model: 'Yesterday each of us said our name, age and place of birth.' }
+  ]
 }
 ];

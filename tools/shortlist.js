@@ -69,12 +69,16 @@ function report(t) {
   console.log(`\n═══ ${band} · ${t} — ${mine.length}/${TARGET} passages` +
     (mine.length < TARGET ? `  (need ${TARGET - mine.length} more)` : '  ✓') +
     `   ${words.length} words at or below ${band}, ${fresh.length} unused`);
-  if (!words.length) { console.log('  (no vocabulary at this band — see the header)'); return; }
-
   const line = w => `${w.es}${w.cefr && w.cefr !== band ? ' [' + w.cefr + ']' : ''} — ${w.en}`;
-  console.log('  UNUSED:');
-  (fresh.length ? fresh : [{ es: '(none)', en: 'every word of this theme is already in a passage here' }])
-    .forEach(w => console.log('    · ' + line(w)));
+  /* An empty band is exactly the case the widening below exists for —
+   * `economia` has no A1 vocabulary at all — so do not return here. Say so and
+   * fall through to the band above. */
+  if (!words.length) console.log('  (nothing at this band at all)');
+  else console.log('  UNUSED:');
+  if (words.length) {
+    (fresh.length ? fresh : [{ es: '(none)', en: 'every word of this theme is already in a passage here' }])
+      .forEach(w => console.log('    · ' + line(w)));
+  }
   if (all && seen.length) {
     console.log('  ALREADY USED HERE:');
     seen.forEach(w => console.log('    · ' + line(w)));
