@@ -10352,5 +10352,290 @@ window.PASSAGES = [
     { type: 'short', q: '¿De dónde es la chica? (dos palabras)', accept: ['de mi pueblo', 'mi pueblo', 'pueblo'] },
     { type: 'translate', line: 'Ayer cada uno dijo su nombre, su edad y su lugar de nacimiento.', model: 'Yesterday each of us said our name, age and place of birth.' }
   ]
+},
+
+{
+  id: 'a1-viajes-tren', title: 'Perdimos el tren', level: 1, theme: 'viajes',
+  tenses: ['presente', 'preterito'],
+  text: 'Ayer perdimos el tren. Fuimos en taxi al aeropuerto y no en metro. El conductor paró en la carretera. Vimos el plano, la parada y el aparcamiento, y compré un billete nuevo. Llevé el carné de identidad y el carné de conducir. El viaje terminó bien.',
+  gloss: [ { es: 'perdimos', en: 'we missed' },
+           { es: 'paró', en: 'stopped' },
+           { es: 'el plano', en: 'street map' },
+           { es: 'terminó', en: 'ended' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo fueron al aeropuerto?',
+      options: ['En taxi', 'En metro', 'Andando'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo terminó el viaje?',
+      options: ['Bien', 'Mal', 'No lo dice'], answer: 0 },
+    { type: 'short', q: '¿Qué compró? (dos palabras)', accept: ['un billete', 'billete'] },
+    { type: 'translate', line: 'Ayer perdimos el tren.', model: 'Yesterday we missed the train.' }
+  ]
+},
+
+{
+  id: 'a1-viajes-playa', title: 'Ir a la playa en agosto', level: 1, theme: 'viajes',
+  tenses: ['presente', 'preterito'],
+  text: 'En agosto quisimos ir a la playa y al final fuimos a la montaña. Fuimos en coche por la carretera. Dormimos en un campin cerca del puerto. Mi padre llevó el carné de conducir y un plano viejo. Volvimos en tren: primero en metro hasta la parada y después en autobús.',
+  gloss: [ { es: 'quisimos', en: 'we wanted to' },
+           { es: 'al final', en: 'in the end' },
+           { es: 'el campin', en: 'campsite' },
+           { es: 'volvimos', en: 'we came back' } ],
+  questions: [
+    { type: 'mcq', q: '¿Adónde fueron al final?',
+      options: ['A la montaña', 'A la playa', 'Al puerto'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo volvieron?',
+      options: ['En tren', 'En coche', 'En avión'], answer: 0 },
+    { type: 'short', q: '¿Dónde durmieron? (dos palabras)', accept: ['un campin', 'en un campin', 'campin'] },
+    { type: 'translate', line: 'En agosto quisimos ir a la playa', model: 'In August we wanted to go to the beach' }
+  ]
+},
+
+{
+  id: 'a1-viajes-hotel', title: 'Una habitación con baño', level: 1, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'El viaje fue corto. Llegamos al aeropuerto, cogimos un taxi y no el metro. Pedimos una habitación con baño y con televisión. El conductor nos dio un plano de la ciudad y nos habló del aparcamiento y de la parada del autobús. Compré un billete para ir al puerto. He vuelto con el carné perdido.',
+  gloss: [ { es: 'cogimos', en: 'we took' },
+           { es: 'nos dio', en: 'gave us' },
+           { es: 'perdido', en: 'lost' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pidieron en el hotel?',
+      options: ['Una habitación con baño', 'Dos habitaciones', 'Un aparcamiento'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pasó con el carné?',
+      options: ['Lo perdió', 'Lo dejó en casa', 'Se lo dio al conductor'], answer: 0 },
+    { type: 'short', q: '¿Qué les dio el conductor? (dos palabras)', accept: ['un plano', 'plano'] },
+    { type: 'translate', line: 'Llegamos al aeropuerto, cogimos un taxi y no el metro.', model: 'We got to the airport, took a taxi and not the metro.' }
+  ]
+},
+
+{
+  id: 'a1-econ-granja', title: 'El agricultor y el cerdo', level: 1, theme: 'economia',
+  tenses: ['presente', 'preterito'],
+  text: 'Mi tío es agricultor. El lunes vendió un cerdo y un cordero. Escribió la factura y cobró con un cheque. Habló del salario de su empleado, del alquiler del campo y de la economía del pueblo. Vio un anuncio en el periódico. Dijo que no es pobre, pero que el dinero no llega.',
+  gloss: [ { es: 'vendió', en: 'he sold' },
+           { es: 'cobró', en: 'he got paid' },
+           { es: 'el empleado', en: 'employee' },
+           { es: 'no llega', en: 'is not enough' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué vendió el lunes?',
+      options: ['Un cerdo y un cordero', 'Un campo', 'Una casa'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dijo del dinero?',
+      options: ['Que no llega', 'Que es rico', 'Que es pobre'], answer: 0 },
+    { type: 'short', q: '¿Cómo cobró? (dos palabras)', accept: ['un cheque', 'con un cheque', 'cheque'] },
+    { type: 'translate', line: 'El lunes vendió un cerdo y un cordero.', model: 'On Monday he sold a pig and a lamb.' }
+  ]
+},
+
+{
+  id: 'a1-econ-factura', title: 'La factura de enero', level: 1, theme: 'economia',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'En enero pagué una factura muy grande. Mi salario no cambió. El alquiler sí: ha subido. Escribí un presupuesto en un papel: alquiler, comida, seguro. No hubo ahorro. Vi un anuncio de un préstamo del banco y no lo quise. La economía de mi casa cabe en una hoja. No soy pobre.',
+  gloss: [ { es: 'ha subido', en: 'has gone up' },
+           { es: 'el presupuesto', en: 'budget' },
+           { es: 'el préstamo', en: 'loan' },
+           { es: 'la hoja', en: 'sheet of paper' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué subió?',
+      options: ['El alquiler', 'El salario', 'El ahorro'], answer: 0 },
+    { type: 'mcq', q: '¿Aceptó el préstamo?',
+      options: ['No', 'Sí', 'No lo dice'], answer: 0 },
+    { type: 'short', q: '¿En qué mes pagó la factura? (una palabra)', accept: ['enero', 'en enero'] },
+    { type: 'translate', line: 'En enero pagué una factura muy grande.', model: 'In January I paid a very big bill.' }
+  ]
+},
+
+{
+  id: 'a1-econ-primer-sueldo', title: 'Mi primer salario', level: 1, theme: 'economia',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Cobré mi primer salario en junio. Pagué el alquiler, una factura y el seguro de la moto. Firmé un cheque por primera vez. Mi jefe habló del empleado nuevo y de la economía de la empresa. No hubo ahorro ese mes. Vi un anuncio de un préstamo y no lo he pedido. No soy pobre, pero casi.',
+  gloss: [ { es: 'cobré', en: 'I got paid' },
+           { es: 'firmé', en: 'I signed' },
+           { es: 'la empresa', en: 'company' },
+           { es: 'casi', en: 'almost' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pagó con el primer salario?',
+      options: ['El alquiler y una factura', 'Un coche', 'Nada'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hizo con el préstamo?',
+      options: ['No lo ha pedido', 'Lo pidió', 'Lo pagó'], answer: 0 },
+    { type: 'short', q: '¿En qué mes cobró? (una palabra)', accept: ['junio', 'en junio'] },
+    { type: 'translate', line: 'Cobré mi primer salario en junio.', model: 'I got my first salary in June.' }
+  ]
+},
+
+{
+  id: 'a1-alim-bar', title: 'Un bocadillo en el bar', level: 1, theme: 'alimentacion',
+  tenses: ['presente', 'preterito'],
+  text: 'Ayer comí en un bar. Pedí un bocadillo de queso, una ensalada y una cerveza. Mi amigo pidió sopa, tortilla y vino. Después tomamos té. Miré el menú: paella, sándwich y hamburguesa. Pedí la cuenta. Pagué con la sal, el azúcar y el cuchillo todavía en la mesa.',
+  gloss: [ { es: 'pedí', en: 'I ordered' },
+           { es: 'el menú', en: 'set menu' },
+           { es: 'la cuenta', en: 'the bill' },
+           { es: 'todavía', en: 'still' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pidió el narrador?',
+      options: ['Un bocadillo de queso', 'Sopa', 'Paella'], answer: 0 },
+    { type: 'mcq', q: '¿Qué tomaron después?',
+      options: ['Té', 'Café', 'Vino'], answer: 0 },
+    { type: 'short', q: '¿Qué pidió al final? (dos palabras)', accept: ['la cuenta', 'cuenta'] },
+    { type: 'translate', line: 'Ayer comí en un bar.', model: 'Yesterday I ate in a bar.' }
+  ]
+},
+
+{
+  id: 'a1-alim-cena', title: 'La cena del domingo', level: 1, theme: 'alimentacion',
+  tenses: ['presente', 'preterito'],
+  text: 'El domingo hice la cena. Puse en la mesa un cuchillo, un tenedor y una cuchara para cada uno. Hice una tortilla con huevos, una sopa y una ensalada. Mi padre trajo vino y cerveza. Comimos con pan. Nadie usó la sal ni el azúcar. De merienda tomamos queso y té.',
+  gloss: [ { es: 'hice', en: 'I made' },
+           { es: 'para cada uno', en: 'for each person' },
+           { es: 'trajo', en: 'brought' },
+           { es: 'de merienda', en: 'for the afternoon snack' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué trajo el padre?',
+      options: ['Vino y cerveza', 'Pan', 'Queso'], answer: 0 },
+    { type: 'mcq', q: '¿Qué no usó nadie?',
+      options: ['La sal y el azúcar', 'El tenedor', 'El pan'], answer: 0 },
+    { type: 'short', q: '¿Qué día hizo la cena? (una palabra)', accept: ['domingo', 'el domingo'] },
+    { type: 'translate', line: 'El domingo hice la cena.', model: 'On Sunday I made dinner.' }
+  ]
+},
+
+{
+  id: 'a1-ciencia-movil', title: 'El móvil nuevo', level: 1, theme: 'ciencia',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Mi madre compró un móvil en enero. No supo la contraseña del wifi. Le escribí el correo electrónico en un papel. Hizo una videollamada con su hermana. Después entró en una red social y en la pantalla del ordenador vio un archivo viejo. Ha aprendido a navegar por internet y a chatear. El pc no lo usa.',
+  gloss: [ { es: 'no supo', en: 'she did not know' },
+           { es: 'el archivo', en: 'file' },
+           { es: 'ha aprendido', en: 'she has learned' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué no supo al principio?',
+      options: ['La contraseña del wifi', 'Su nombre', 'El correo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ha aprendido?',
+      options: ['A navegar por internet y a chatear', 'A comprar', 'Nada'], answer: 0 },
+    { type: 'short', q: '¿En qué mes compró el móvil? (una palabra)', accept: ['enero', 'en enero'] },
+    { type: 'translate', line: 'Mi madre compró un móvil en enero.', model: 'My mother bought a mobile in January.' }
+  ]
+},
+
+{
+  id: 'a1-ciencia-clase', title: 'Clase de informática', level: 1, theme: 'ciencia',
+  tenses: ['presente', 'preterito'],
+  text: 'El martes tuve clase de informática. El informático nos habló de la ciencia, del ordenador y del pc. Escribí la contraseña y el correo electrónico. Vimos la pantalla grande, un archivo, una red social y un cd-rom viejo. Aprendí a navegar por internet. No hubo wifi en media hora.',
+  gloss: [ { es: 'el informático', en: 'the IT teacher' },
+           { es: 'el cd-rom', en: 'CD-ROM' },
+           { es: 'aprendí', en: 'I learned' },
+           { es: 'no hubo', en: 'there was no' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué no hubo?',
+      options: ['Wifi', 'Ordenadores', 'Profesor'], answer: 0 },
+    { type: 'mcq', q: '¿Qué aprendió?',
+      options: ['A navegar por internet', 'A escribir', 'A chatear'], answer: 0 },
+    { type: 'short', q: '¿Qué día tuvo clase? (una palabra)', accept: ['martes', 'el martes'] },
+    { type: 'translate', line: 'El martes tuve clase de informática.', model: 'On Tuesday I had a computing class.' }
+  ]
+},
+
+{
+  id: 'a1-arte-museo', title: 'Un sábado en el museo', level: 1, theme: 'arte',
+  tenses: ['presente', 'preterito'],
+  text: 'El sábado fui al museo. Vi una exposición, una estatua grande y un dibujo muy bonito. Después pasé por la catedral, por el palacio y por el castillo. Por la noche fui al cine y no al teatro. Un actor y una actriz hablaron después de la película. Compré un libro de arte.',
+  gloss: [ { es: 'la estatua', en: 'statue' },
+           { es: 'el dibujo', en: 'drawing' },
+           { es: 'el castillo', en: 'castle' },
+           { es: 'compré', en: 'I bought' } ],
+  questions: [
+    { type: 'mcq', q: '¿Adónde fue por la noche?',
+      options: ['Al cine', 'Al teatro', 'Al museo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué compró?',
+      options: ['Un libro de arte', 'Un dibujo', 'Una entrada'], answer: 0 },
+    { type: 'short', q: '¿Qué día fue al museo? (una palabra)', accept: ['sábado', 'el sábado'] },
+    { type: 'translate', line: 'El sábado fui al museo.', model: 'On Saturday I went to the museum.' }
+  ]
+},
+
+{
+  id: 'a1-arte-musica', title: 'La guitarra de mi hermano', level: 1, theme: 'arte',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Mi hermano ha tocado la guitarra diez años. También toca el piano y un poco el violín. Ayer escuché música con él: flamenco, rock, pop, jazz y un tango. Es músico y quiere ser cantante. Fuimos al teatro y no al cine. Un escritor leyó un cuento antes de la música.',
+  gloss: [ { es: 'ha tocado', en: 'has played' },
+           { es: 'escuché', en: 'I listened to' },
+           { es: 'el cuento', en: 'short story' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué instrumento toca hace diez años?',
+      options: ['La guitarra', 'El piano', 'El violín'], answer: 0 },
+    { type: 'mcq', q: '¿Adónde fueron?',
+      options: ['Al teatro', 'Al cine', 'Al museo'], answer: 0 },
+    { type: 'short', q: '¿Qué quiere ser? (una palabra)', accept: ['cantante', 'músico'] },
+    { type: 'translate', line: 'Mi hermano ha tocado la guitarra diez años.', model: 'My brother has played the guitar for ten years.' }
+  ]
+},
+
+{
+  id: 'a1-nat-tormenta', title: 'Una tormenta en verano', level: 1, theme: 'naturaleza',
+  tenses: ['presente', 'preterito'],
+  text: 'En verano hubo una tormenta en el pueblo. Hizo mal tiempo dos días. Antes hizo sol y calor; después hizo viento y frío. Vi el cielo, la lluvia y el mar desde la ventana. Un árbol de la plaza se cayó. El perro y el gato de mi vecina no salieron. La playa quedó vacía.',
+  gloss: [ { es: 'hizo mal tiempo', en: 'the weather was bad' },
+           { es: 'se cayó', en: 'fell down' },
+           { es: 'no salieron', en: 'did not go out' },
+           { es: 'vacía', en: 'empty' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tiempo hizo antes de la tormenta?',
+      options: ['Sol y calor', 'Viento y frío', 'Lluvia'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pasó en la plaza?',
+      options: ['Se cayó un árbol', 'No pasó nada', 'Se fue la luz'], answer: 0 },
+    { type: 'short', q: '¿Cuántos días hizo mal tiempo? (una palabra)', accept: ['dos', '2'] },
+    { type: 'translate', line: 'En verano hubo una tormenta en el pueblo.', model: 'In summer there was a storm in the town.' }
+  ]
+},
+
+{
+  id: 'a1-nat-campo', title: 'Un día en el campo', level: 1, theme: 'naturaleza',
+  tenses: ['presente', 'preterito'],
+  text: 'El domingo fuimos al campo, al sur de la ciudad. Hizo buen tiempo y hizo sol. Vimos un caballo, una vaca, dos ovejas y un pájaro muy grande. Mi hija cogió una flor y una planta pequeña. Comimos debajo de un árbol. En primavera la tierra y el cielo son de otro color.',
+  gloss: [ { es: 'cogió', en: 'she picked' },
+           { es: 'la planta', en: 'plant' },
+           { es: 'debajo de', en: 'under' },
+           { es: 'de otro color', en: 'a different colour' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tiempo hizo?',
+      options: ['Buen tiempo y sol', 'Lluvia', 'Viento'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde comieron?',
+      options: ['Debajo de un árbol', 'En casa', 'En un bar'], answer: 0 },
+    { type: 'short', q: '¿Qué cogió la hija? (dos palabras)', accept: ['una flor', 'flor', 'una planta'] },
+    { type: 'translate', line: 'El domingo fuimos al campo, al sur de la ciudad.', model: 'On Sunday we went to the countryside, south of the city.' }
+  ]
+},
+
+{
+  id: 'a1-compras-tienda', title: 'Unos pantalones nuevos', level: 1, theme: 'compras',
+  tenses: ['presente', 'preterito'],
+  text: 'El viernes fui de compras. Compré unos pantalones, un jersey y una falda para mi hermana. En el supermercado compré pan de la panadería. El vendedor me habló de una oferta y de un descuento. Pagué con tarjeta. No encontré la salida y pregunté en información. Vaqueros no compré.',
+  gloss: [ { es: 'la oferta', en: 'special offer' },
+           { es: 'el descuento', en: 'discount' },
+           { es: 'no encontré', en: 'I could not find' },
+           { es: 'información', en: 'information desk' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué no compró?',
+      options: ['Vaqueros', 'Un jersey', 'Pan'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo pagó?',
+      options: ['Con tarjeta', 'Con dinero', 'No pagó'], answer: 0 },
+    { type: 'short', q: '¿Para quién es la falda? (dos palabras)', accept: ['su hermana', 'para su hermana', 'hermana'] },
+    { type: 'translate', line: 'El viernes fui de compras.', model: 'On Friday I went shopping.' }
+  ]
+},
+
+{
+  id: 'a1-salud-gripe', title: 'Tres días malo', level: 1, theme: 'salud',
+  tenses: ['presente', 'preterito'],
+  text: 'La semana pasada estuve malo. Tuve fiebre, tos y dolor. No fui al hospital. Fui a la farmacia y tomé una medicina. Un enfermero me habló de llevar una vida sana. Me lavé la cara, me lavé las manos y me lavé los dientes con un cepillo nuevo. Usé jabón, gel y una toalla limpia.',
+  gloss: [ { es: 'estuve malo', en: 'I was ill' },
+           { es: 'la tos', en: 'cough' },
+           { es: 'tomé', en: 'I took' },
+           { es: 'limpia', en: 'clean' } ],
+  questions: [
+    { type: 'mcq', q: '¿Adónde fue?',
+      options: ['A la farmacia', 'Al hospital', 'A urgencias'], answer: 0 },
+    { type: 'mcq', q: '¿De qué le habló el enfermero?',
+      options: ['De llevar una vida sana', 'De la fiebre', 'Del hospital'], answer: 0 },
+    { type: 'short', q: '¿Cuántos días estuvo malo? (una palabra)', accept: ['tres', '3'] },
+    { type: 'translate', line: 'La semana pasada estuve malo.', model: 'Last week I was ill.' }
+  ]
 }
 ];
