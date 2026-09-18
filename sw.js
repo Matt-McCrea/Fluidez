@@ -14,7 +14,7 @@
  * ASSETS must mirror every <script>/<link> in index.html. No bundler here —
  * keep this list in sync by hand when a new data/js file is added there.
  * ========================================================================== */
-var CACHE_VERSION = 'cee7d5887';
+var CACHE_VERSION = 'c2e0afd08';
 var CACHE_NAME = 'fluidez-' + CACHE_VERSION;
 
 var ASSETS = [

@@ -63,7 +63,14 @@ const NOUN_HOMOGRAPHS = new Set([
   'cosa', 'cosas', 'nieve', 'alegre', 'informe',
   // same batch, second pass (temer, moler, tramitar): more everyday nouns
   // shadowed.
-  'tema', 'muela', 'trámite'
+  'tema', 'muela', 'trámite',
+  /* Surfaced writing the A1/A2 food batches. These two are the hardest kind:
+   * the spellings are genuinely identical, so the accent rule in tenseAt
+   * cannot separate them. `sal` is salt and salir's tú imperative; `sed` is
+   * thirst and ser's vosotros imperative. Both are core beginner vocabulary —
+   * `la sal` and `tener sed` are A1 entries in data/vocab.js — so a gate that
+   * banned them from A1 texts would be banning the words the band is for. */
+  'sal', 'sed'
 ]);
 
 const DETERMINERS = new Set([
@@ -107,9 +114,29 @@ module.exports = function makeScanner(E, TENSE_LEVEL, SEED_ORDER) {
   }
 
   /* The cheapest tense this token admits, or null if it is not a verb form
-   * (or is a noun standing where a noun stands). */
+   * (or is a noun standing where a noun stands).
+   *
+   * ACCENTS DECIDE. The engine matches a token to a paradigm ignoring accents
+   * and records on each analysis whether they actually agreed
+   * (`accentExact`). A token whose ONLY readings are inexact is not that verb:
+   * `este` is not `esté`, `seria` is not `sería`, `practica` — as it happens —
+   * is not `práctica`. Dropping those readings is safe because accents in this
+   * corpus are not optional: tools/lint-spanish.js fails the build on a
+   * dropped one, adjudicating against these same paradigms. So if the text
+   * says `este`, it has already been verified to mean `este`.
+   *
+   * This is not a new idea, it is an existing one applied consistently —
+   * js/engine.js already filters analyses this way for its function words.
+   * Without it the demonstrative `este` forces level 4 (estar's present
+   * subjunctive), which is why it appears in 102 passages and in not one
+   * below level 4: an A1 word, taught in gr-demostrativos-distribucion-a1,
+   * that no A1 text could contain. It also retires five entries that had been
+   * added to NOUN_HOMOGRAPHS one collision at a time — práctica, público,
+   * artículo, género, trámite — all of which are this same case. */
   function tenseAt(toks, i) {
-    const analyses = E.analyzeToken(toks[i]);
+    let analyses = E.analyzeToken(toks[i]);
+    if (analyses.some(a => a.accentExact)) analyses = analyses.filter(a => a.accentExact);
+    else analyses = [];
     if (!analyses.length) return null;
     if (isNounHere(toks, i)) return null;
     let best = null;
