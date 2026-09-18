@@ -8416,5 +8416,175 @@ window.PASSAGES = [
       options: ['Que se adapte perfectamente a la vida actual', 'Que admita ser reorganizada más adelante', 'Que tenga más habitaciones'], answer: 1 },
     { type: 'translate', line: 'la vivienda dura sesenta años y las costumbres cambian en diez', model: 'housing lasts sixty years and habits change in ten' }
   ]
+},
+
+{
+  id: 'c1-serv-repartidor', title: 'El último kilómetro', level: 8, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'plusc'],
+  text: 'La parte más cara de un envío es la última, y es también la única que el comprador considera gratuita. Llevar un paquete desde una fábrica al otro extremo del continente cuesta, por unidad, una fracción de lo que cuesta subirlo cuatro pisos a las siete de la tarde de un martes. Esa desproporción explica casi todo lo que ha ocurrido en el sector en quince años. La empresa de mensajería que gana el contrato no compite por el transporte, que está resuelto desde hace décadas; compite por comprimir el coste del tramo donde hay una persona llamando a un telefonillo que no contesta. Los mecanismos de esa compresión son conocidos y se describen con un vocabulario deliberadamente neutro. El repartidor pasa de empleado a autónomo, los gastos de envío se trasladan al vehículo propio, y la entrega se mide en paradas por hora, cifra que no distingue entre un bloque con ascensor y un chalé con verja. Correos, con sus carteros de plantilla y su red heredada, opera bajo reglas distintas y ha visto cómo el negocio rentable se le iba precisamente por donde su estructura no podía seguir. Conviene decir qué hay realmente en discusión, porque no es la tecnología. Una empresa que reparte cuatro millones de paquetes al día podría absorber el coste del tramo final sin dejar de ganar dinero; lo que ocurre es que la competencia se libra en un precio visible al cliente, y el tiempo del repartidor es la única variable que no aparece en ese precio. El consumidor que pulsa «entrega en veinticuatro horas» no está eligiendo entre pagar y no pagar. Está eligiendo quién paga. Hay una señal que merece atención y que casi nadie lee como lo que es: la reaparición de los puntos de recogida. Una tienda, un estanco, una papelería donde el paquete espera dos días y donde el cobro contra entrega se hace con tarjeta o en euros, como toda la vida. Se presenta como una comodidad para el cliente y es, sobre todo, una manera de devolver el último kilómetro a una infraestructura que ya existía y que nunca dejó de funcionar. Que la solución más moderna consista en volver a usar el comercio de barrio dice bastante sobre lo que se había calculado mal.',
+  questions: [
+    { type: 'mcq', q: '¿Dónde sitúa el texto el verdadero coste de un envío?',
+      options: ['En el transporte internacional', 'En el tramo final hasta la puerta', 'En el almacenamiento'], answer: 1 },
+    { type: 'mcq', q: '¿Qué critica del vocabulario con que se describe el sector?',
+      options: ['Que sea técnico', 'Que su neutralidad oculta un traslado de costes', 'Que sea incomprensible'], answer: 1 },
+    { type: 'mcq', q: '¿Qué implica que el cliente «elige quién paga»?',
+      options: ['Que la rapidez tiene un coste que recae en otro', 'Que los envíos deberían ser más caros', 'Que nadie paga realmente'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo interpreta los puntos de recogida?',
+      options: ['Como una innovación tecnológica', 'Como el regreso a una infraestructura que ya existía', 'Como una molestia para el cliente'], answer: 1 },
+    { type: 'translate', line: 'no está eligiendo entre pagar y no pagar. Está eligiendo quién paga', model: 'is not choosing between paying and not paying. They are choosing who pays' }
+  ]
+},
+
+{
+  id: 'c1-serv-voluntariado', title: 'Ayudar por turnos', level: 9, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'presubj'],
+  text: 'Los servicios sociales de cualquier ciudad europea descansan, en una proporción que rara vez se hace pública, sobre gente que no cobra. Quien colabora como voluntario en un comedor, acompaña a una persona mayor a una clínica, escribe una carta por quien ya no ve bien o atiende un teléfono de emergencia está cubriendo una función que el presupuesto no cubre, y lo hace con una regularidad que permite planificar sobre ella. Esa dependencia plantea un problema que las organizaciones conocen bien y discuten poco, porque discutirlo en voz alta suena a desagradecimiento. Si la colaboración es estructural, entonces no es un extra: es plantilla sin contrato. Conviene distinguir dos situaciones que se confunden. Hay tareas donde el hecho de que la persona no cobre forma parte de lo que se ofrece —acompañar a alguien que sabe que no estás allí por dinero cambia la naturaleza de la compañía— y hay otras donde el voluntario hace exactamente el trabajo de un profesional ausente —de un psicólogo, de una enfermera, de un empleado de correos— con menos formación y sin ninguna responsabilidad exigible. La primera es un valor difícil de sustituir. La segunda es un ahorro presentado como virtud cívica. La ayuda económica que una administración deja de dar y el hueco que un voluntariado llena son, con frecuencia, la misma cifra mirada desde dos sitios. Hay además un efecto de composición que merece atención. El voluntariado disponible no se reparte por igual: abunda donde hay jubilados con un ingreso suficiente y estudiantes con tiempo, cerca del banco y del semáforo del centro, y escasea precisamente en los barrios donde la necesidad es mayor y todo el mundo trabaja a turnos. Un sistema que se apoya en la colaboración gratuita reproduce por tanto la desigualdad que dice corregir, y lo hace sin que nadie lo decida. Nada de esto es un argumento contra el voluntariado, que sostiene cosas valiosas y que además produce un beneficio real en quien lo practica. Es un argumento contra un uso concreto de él: el que consiste en incorporarlo al cálculo de lo que un servicio público necesita, y después llamar solidaridad a lo que en la hoja de cálculo figura como una partida que no hizo falta financiar.',
+  questions: [
+    { type: 'mcq', q: '¿Qué distinción propone entre tipos de voluntariado?',
+      options: ['Entre urbano y rural', 'Entre aquel cuyo carácter gratuito aporta algo y aquel que sustituye a un profesional', 'Entre jóvenes y jubilados'], answer: 1 },
+    { type: 'mcq', q: '¿Qué es el «efecto de composición» que señala?',
+      options: ['Que el voluntariado escasea donde más se necesita', 'Que los voluntarios se cansan', 'Que las ONG compiten entre sí'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué dice que el asunto se discute poco?',
+      options: ['Porque no hay datos', 'Porque plantearlo parece desagradecido', 'Porque no interesa a nadie'], answer: 1 },
+    { type: 'mcq', q: '¿Contra qué se dirige exactamente su crítica?',
+      options: ['Contra el voluntariado en general', 'Contra contarlo de antemano en el presupuesto público', 'Contra las administraciones locales'], answer: 1 },
+    { type: 'translate', line: 'Si la colaboración es estructural, entonces no es un extra: es plantilla sin contrato.', model: 'If the help is structural, then it is not an extra: it is staff without a contract.' }
+  ]
+},
+
+{
+  id: 'c1-compras-garantia', title: 'La garantía y la vida útil', level: 8, theme: 'compras',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro'],
+  text: 'Comprar una lavadora en 1985 y comprarla hoy son dos operaciones que se parecen en la superficie y difieren en lo esencial. Aquel aparato costaba, en horas de trabajo, bastante más que el actual, y se compraba una vez. El vendedor de la tienda conocía tres modelos y podía explicar por qué uno duraba más; la garantía era corta y casi irrelevante porque lo que fallaba se arreglaba. Hoy el precio ha bajado de forma espectacular, la garantía se ha alargado por ley y la reparación ha dejado de tener sentido económico en casi todos los casos. Ese conjunto de cambios se presenta habitualmente como una mejora para el comprador, y en términos de acceso lo es sin ninguna duda. Lo que se ha modificado, sin que nadie lo anunciara, es qué se está comprando. Un electrodoméstico ya no es un bien duradero con un mantenimiento asociado, sino un servicio de siete años con un objeto incluido. La consecuencia visible está en las tiendas: desapareció el técnico que reparaba y quedó el que sustituye. La consecuencia invisible está en el diseño, donde la decisión de soldar una pieza en lugar de atornillarla ahorra céntimos por unidad y elimina la reparación como posibilidad física. Conviene resistirse a la explicación conspirativa, que es popular y perezosa. Nadie se reúne a decidir que un aparato dure poco; lo que ocurre es que cada decisión aislada, tomada por un ingeniero al que se le pide bajar el coste, apunta en la misma dirección, y que ningún departamento tiene como objetivo la durabilidad porque ningún cliente la ve en el escaparate. El derecho a reparar que empieza a legislarse en Europa ataca ese punto y no el precio: obliga a publicar cuánto cuesta una pieza y durante cuántos años estará disponible. Es una medida modesta y bien dirigida. Convierte en información lo que hoy se descubre a los seis años, cuando ya es tarde y la respuesta del servicio técnico consiste en ofrecer un descuento sobre el modelo nuevo.',
+  questions: [
+    { type: 'mcq', q: '¿Qué ha cambiado, según el texto, en lo que se compra?',
+      options: ['El precio únicamente', 'Un bien duradero se ha convertido en un servicio con objeto incluido', 'La calidad de los materiales'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué rechaza la explicación conspirativa?',
+      options: ['Porque las empresas son honestas', 'Porque el resultado surge de decisiones aisladas sin coordinación', 'Porque no hay pruebas'], answer: 1 },
+    { type: 'mcq', q: '¿Qué ataca el derecho a reparar, según el autor?',
+      options: ['El precio de venta', 'La falta de información sobre piezas y plazos', 'La publicidad engañosa'], answer: 1 },
+    { type: 'mcq', q: '¿Qué tono emplea al describir la respuesta del servicio técnico?',
+      options: ['Irónico', 'Indignado', 'Neutral'], answer: 0 },
+    { type: 'translate', line: 'ningún departamento tiene como objetivo la durabilidad porque ningún cliente la ve en el escaparate', model: 'no department has durability as its target because no customer can see it in the shop window' }
+  ]
+},
+
+{
+  id: 'c1-compras-probador', title: 'Delante del espejo del probador', level: 9, theme: 'compras',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
+  text: 'El probador de una tienda de ropa es uno de los pocos lugares del comercio moderno diseñados para que alguien cambie de opinión, y está construido con un cuidado que no suele atribuírsele. La luz, la altura del espejo, la distancia a la puerta y hasta el número de perchas que se permiten entrar responden a decisiones estudiadas. Nada de esto es secreto ni especialmente escandaloso: cualquier espacio comercial está organizado, y quien entra en una peluquería o en una frutería también atraviesa un orden que alguien pensó. Lo que hace del probador un caso interesante es que es el único sitio donde el cliente se ve a sí mismo. Ahí se decide una proporción altísima de las compras de una falda, un abrigo o unos vaqueros, y ahí ocurre algo que los datos de devolución han hecho visible: cuando la prueba desaparece, la compra se vuelve provisional. Un pedido de tres tallas por internet no es una compra con dudas, es una prueba domiciliaria con derecho a deshacerla, y ese cambio de naturaleza tiene consecuencias que van bastante más allá del comercio. Conviene señalar una que rara vez se menciona. Probarse algo delante de un espejo en una tienda es una experiencia incómoda y breve; probárselo en casa, durante cuatro días, delante de una cámara y con opinión ajena disponible, es otra cosa. La incomodidad de tres minutos tenía un límite temporal claro, y su sustituto no lo tiene. No es evidente que el cambio haya sido benigno para quien compra, aunque sí lo haya sido para quien vende, que ha trasladado el coste del espacio, la luz y el personal al domicilio del cliente y ha descubierto de paso que una prenda que ha dormido cuatro días en una casa se devuelve con menos frecuencia de la que cabría esperar. La tienda física responde ahora con lo único que tiene: un probador mejor, una persona que ayuda, la garantía de salir con la bolsa. Es una posición defendible y bastante estrecha.',
+  questions: [
+    { type: 'mcq', q: '¿Qué hace singular al probador, según el texto?',
+      options: ['Su coste de mantenimiento', 'Que es el único sitio donde el cliente se ve a sí mismo', 'Su tamaño reducido'], answer: 1 },
+    { type: 'mcq', q: '¿Qué cambia cuando la prueba ocurre en casa?',
+      options: ['La compra pasa a ser provisional y sin límite temporal claro', 'El precio sube', 'La calidad se juzga peor'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ha descubierto el vendedor, según el autor?',
+      options: ['Que la prenda convivida se devuelve menos', 'Que los clientes mienten', 'Que conviene cerrar las tiendas'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo valora la respuesta de la tienda física?',
+      options: ['Como una solución definitiva', 'Como defendible pero de recorrido corto', 'Como un error'], answer: 1 },
+    { type: 'translate', line: 'ha trasladado el coste del espacio, la luz y el personal al domicilio del cliente', model: 'it has shifted the cost of the space, the lighting and the staff to the customer’s home' }
+  ]
+},
+
+{
+  id: 'c1-salud-vacuna', title: 'La duda razonable y la otra', level: 8, theme: 'salud',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj'],
+  text: 'Conviene empezar por una distinción que el debate público borra sistemáticamente. Una cosa es la desconfianza organizada, minoritaria y en buena medida impermeable al dato, y otra bastante distinta es la duda de una persona que acude al centro de salud, escucha una explicación de noventa segundos y sale con una pastilla, una vacuna, una crema y la sensación de no haber preguntado lo que quería preguntar. En la farmacia tampoco se atreve. Tratar a las dos con la misma estrategia comunicativa ha sido, durante veinte años, el error más caro y más repetido de la salud pública. La segunda no es una versión suave de la primera; en muchos casos es su antesala, y lo que la convierte en eso es precisamente el modo en que se la despacha. Hay datos bastante sólidos sobre qué funciona y son poco espectaculares. No funciona repetir la cifra de eficacia más alto. Funciona que el enfermero que pone la vacuna disponga de cuatro minutos en lugar de uno, que la respuesta empiece reconociendo lo que no se sabe, y que la persona que responde sea la misma que estará allí el mes que viene. Es decir: funciona la continuidad, que es exactamente el recurso que los sistemas sanitarios han ido recortando al organizarse por episodios. Merece la pena mirar el fondo del asunto sin indulgencia hacia ninguna de las partes. Un paciente que pide información sobre una herida mal curada, un corte, una fiebre que no baja, un análisis o una pastilla nueva está pidiendo, casi siempre, otra cosa además de la información: alguna señal de que quien decide lo ha pensado para él y no para una población. Esa señal es cara de dar y no figura en ningún indicador. Un sistema que mide consultas por hora la destruye sin proponérselo, y después financia campañas para reparar la confianza que sus propios indicadores erosionan. La contradicción no está en la ciencia, que es sólida y se explica bien cuando hay tiempo. Está en pedirle a un profesional que genere confianza en un formato diseñado para producir volumen.',
+  questions: [
+    { type: 'mcq', q: '¿Qué distinción considera decisiva el autor?',
+      options: ['Entre médicos y enfermeros', 'Entre la desconfianza organizada y la duda ordinaria', 'Entre vacunas antiguas y nuevas'], answer: 1 },
+    { type: 'mcq', q: '¿Qué recurso identifica como eficaz?',
+      options: ['La continuidad del profesional y el tiempo', 'Las campañas informativas', 'La repetición de las cifras'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pide el paciente además de información?',
+      options: ['Una segunda opinión', 'Una señal de que se ha pensado en él y no en una población', 'Un tratamiento más caro'], answer: 1 },
+    { type: 'mcq', q: '¿Dónde localiza la contradicción del sistema?',
+      options: ['En la ciencia', 'En exigir confianza a un formato diseñado para el volumen', 'En los propios pacientes'], answer: 1 },
+    { type: 'translate', line: 'financia campañas para reparar la confianza que sus propios indicadores erosionan', model: 'it funds campaigns to repair the trust that its own indicators erode' }
+  ]
+},
+
+{
+  id: 'c1-salud-espejo', title: 'El cuarto de baño como industria', level: 9, theme: 'salud',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj'],
+  text: 'Abra alguien el armario de un cuarto de baño cualquiera y encontrará entre veinte y cuarenta productos: champú, gel, jabón, crema, desodorante, colonia, espuma de afeitar, maquinilla, cepillo, peine, secador de pelo, alguna cuchilla y varios frascos cuyo propósito su propietario no sabría explicar con precisión. Hace sesenta años ese mismo espacio contenía cuatro cosas. El cambio no responde a un descubrimiento sobre la higiene, que estaba esencialmente resuelta en 1960, sino a un mecanismo comercial bien documentado: la segmentación. Un producto único se divide en categorías —cabello graso, piel sensible, uso nocturno— y cada división multiplica el número de envases sin aumentar apreciablemente el efecto. La descripción es correcta y, tomada sola, resulta condescendiente. Conviene añadir lo que esa historia omite. Buena parte del consumo de estos productos no busca un efecto médico y nunca lo prometió: la colonia no cura nada y cortarse el pelo tampoco. Lo que se compra ahí es un ritual, y los rituales cotidianos hacen un trabajo psicológico real, particularmente en los extremos del día. Despreciarlo como consumismo es tan superficial como el discurso publicitario que lo envuelve, y bastante menos honesto, porque quien lo desprecia suele conservar los suyos y llamarlos de otro modo. Donde el asunto deja de ser inocuo es en la frontera, es decir, allí donde un producto cosmético adopta el vocabulario de la clínica. Una crema que habla de dermatólogos, un suplemento que menciona un análisis, una tirita que promete lo que corresponde a una cita médica: en ese terreno la segmentación deja de repartir rituales y empieza a sustituir decisiones sanitarias por compras. La regulación europea distingue con cierto cuidado entre cosmético y medicamento, y la distinción sobrevive mal al escaparate de una farmacia, donde la aspirina, el termómetro y unas gotas comparten estantería con un frasco que promete firmeza, y donde el cliente, razonablemente, supone que estar allí significa algo. Quien quiera comprobarlo no necesita ningún estudio: basta con preguntar en el mostrador por qué una crema concreta está donde está, y contar cuántas veces la respuesta distingue entre lo que cura y lo que acompaña.',
+  questions: [
+    { type: 'mcq', q: '¿A qué atribuye el aumento de productos?',
+      options: ['A avances en higiene', 'A la segmentación comercial', 'A la mejora del nivel de vida'], answer: 1 },
+    { type: 'mcq', q: '¿Qué matiz añade a la crítica del consumismo?',
+      options: ['Que los rituales cotidianos cumplen una función real', 'Que los productos son baratos', 'Que nadie compra tanto'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde deja de parecerle inocuo el fenómeno?',
+      options: ['Cuando el precio sube', 'Cuando el cosmético adopta el lenguaje clínico', 'Cuando se compra por internet'], answer: 1 },
+    { type: 'mcq', q: '¿Qué le reprocha a quien desprecia estos hábitos?',
+      options: ['Que conserva los suyos bajo otro nombre', 'Que no tiene datos', 'Que exagera'], answer: 0 },
+    { type: 'translate', line: 'deja de repartir rituales y empieza a sustituir decisiones sanitarias por compras', model: 'it stops handing out rituals and starts replacing health decisions with purchases' }
+  ]
+},
+
+{
+  id: 'c1-viajes-equipaje', title: 'El equipaje y lo que cuesta llevarlo', level: 8, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'plusc'],
+  text: 'Pocas cosas revelan tan bien cómo funciona un precio como la maleta de un avión. Durante décadas, el billete incluía el equipaje porque incluirlo era lo normal y porque nadie había calculado por separado lo que pesaba. Cuando alguien lo calculó, el sector descubrió una variable manipulable: se podía anunciar un precio mucho más bajo y cobrar aparte lo que antes iba dentro. El resultado es que hoy comprar un billete exige tres decisiones donde antes había una, y que el precio anunciado ha dejado de ser comparable con nada. Se llama a esto transparencia, con cierta ironía involuntaria, porque el cliente ve ahora cada componente y es considerablemente menos capaz de saber qué va a pagar. Lo interesante es el efecto secundario, que nadie diseñó. Al encarecer la maleta facturada, la gente empezó a subir el equipaje a la cabina, y la cabina no da para todos: se producen retrasos en el embarque, discusiones en la puerta y un procedimiento nuevo consistente en obligar a facturar gratis lo que el pasajero había pagado por no facturar. Un sistema pensado para cobrar por un servicio ha terminado regalándolo en el peor momento posible. Merece la pena extender la observación más allá del avión. El desglose de un precio se presenta siempre como una ganancia de libertad —pague solo por lo que usa— y produce con frecuencia lo contrario: aumenta la carga mental de cada compra, premia a quien tiene tiempo para estudiar las condiciones y desplaza el coste hacia quien no lo tiene. Un hotel con media pensión, un alquiler de coche con seguro incluido o una excursión con guía turístico y entradas ofrecen algo que los componentes sueltos no ofrecen, y que no es solo comodidad: es la garantía de no descubrir en el aeropuerto, con la cola detrás, que lo que uno creía comprado no lo estaba. Quien viaja con dos niños, un plano turístico y un carné de identidad que hay que buscar en el fondo del bolso agradece esa certeza mucho más que la diferencia de precio, y el sector lo sabe: por eso el paquete cerrado no ha desaparecido, sino que se ha vuelto caro.',
+  questions: [
+    { type: 'mcq', q: '¿Qué permitió el cálculo separado del equipaje?',
+      options: ['Reducir el peso de los aviones', 'Anunciar un precio más bajo y cobrar aparte', 'Mejorar la seguridad'], answer: 1 },
+    { type: 'mcq', q: '¿Qué ironía señala en la palabra «transparencia»?',
+      options: ['Que el cliente ve más y entiende menos', 'Que nadie lee las condiciones', 'Que las aerolíneas mienten'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es el efecto secundario no previsto?',
+      options: ['Que se acabó regalando en la puerta lo que se cobraba', 'Que bajaron los precios', 'Que la gente viaja con menos ropa'], answer: 0 },
+    { type: 'mcq', q: '¿Qué defiende sobre los paquetes cerrados?',
+      options: ['Que son más baratos', 'Que evitan descubrir tarde lo que no estaba incluido', 'Que son obligatorios'], answer: 1 },
+    { type: 'translate', line: 'el precio anunciado ha dejado de ser comparable con nada', model: 'the advertised price has stopped being comparable with anything' }
+  ]
+},
+
+{
+  id: 'c1-viajes-arena', title: 'El pueblo que vive de agosto', level: 9, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'presubj'],
+  text: 'Hay pueblos en la costa española donde el censo se multiplica por doce entre julio y septiembre, y donde la economía entera —el hotel con su conserje y su media pensión, el campin, la agencia de viajes, el conductor del autobús de la playa, la parada del taxi, el aparcamiento, el mecánico que trabaja el triple— depende de nueve semanas. Describir eso como una suerte o como una desgracia es igual de superficial. Lo que interesa es qué le hace a un sitio vivir así. Lo primero, y menos visible, es que la temporada organiza el calendario emocional del lugar. En un pueblo de este tipo nadie se casa en agosto, nadie se opera en agosto y ninguna decisión familiar se toma entre el veinte de junio y el diez de septiembre, porque el año se juega ahí. Los conflictos se posponen, lo cual no es lo mismo que resolverlos, y en octubre reaparecen con una puntualidad que cualquier vecino confirmará. Lo segundo es una asimetría de información que sorprende poco cuando se piensa: quien pasa quince días en la arena conoce la parte del pueblo construida para él, que es literalmente eso, construida para él, y sale convencido de haber conocido un sitio. Conviene evitar la moral fácil sobre el turista, que paga y no engaña a nadie. El problema, cuando lo hay, es de estructura y no de comportamiento. Una localidad que concentra sus ingresos en dos meses no puede diversificar aunque quiera, porque el suelo, los locales y la mano de obra están capturados por un uso que rinde muchísimo durante nueve semanas y nada las cuarenta y tres restantes. Las alternativas que se proponen —turismo de invierno, congresos, deporte— chocan con esa misma rigidez. Lo que sí se observa en los pocos sitios que lo han conseguido no es una idea brillante sino una decisión antipática tomada a tiempo: limitar el número de plazas cuando todavía sobraba demanda, es decir, renunciar a dinero presente para conservar la posibilidad de decidir más adelante. Es exactamente el tipo de medida que ningún ayuntamiento gana unas elecciones defendiendo.',
+  questions: [
+    { type: 'mcq', q: '¿Qué efecto menos visible describe primero?',
+      options: ['El aumento de precios', 'Que la temporada ordena el calendario emocional del pueblo', 'La suciedad de las playas'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué dice que el turista «no engaña a nadie»?',
+      options: ['Para desplazar el problema del comportamiento a la estructura', 'Para elogiar el turismo', 'Para criticar a los vecinos'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué no puede diversificarse ese tipo de localidad?',
+      options: ['Por falta de ideas', 'Porque sus recursos están capturados por un uso muy rentable y breve', 'Por el clima'], answer: 1 },
+    { type: 'mcq', q: '¿Qué caracteriza a la medida que funciona, según el texto?',
+      options: ['Que es innovadora', 'Que es impopular y hay que tomarla antes de necesitarla', 'Que es barata'], answer: 1 },
+    { type: 'translate', line: 'renunciar a dinero presente para conservar la posibilidad de decidir más adelante', model: 'giving up money now in order to keep the possibility of deciding later' }
+  ]
+},
+
+{
+  id: 'c1-econ-hipoteca', title: 'Una hipoteca es una apuesta sobre uno mismo', level: 8, theme: 'economia',
+  tenses: ['presente', 'preterito', 'futuro', 'condicional', 'presubj', 'condperf'],
+  text: 'Firmar una hipoteca a treinta años es la decisión financiera más grande que tomará la mayoría de la gente, y se toma con una información sobre uno mismo que sería inaceptable en cualquier otra inversión. El préstamo se calcula sobre unos ingresos actuales y un tipo de interés conocido, y la parte que decide si sale bien —seguir teniendo ese empleo, no separarse, no enfermar, no mudarse de ciudad— no aparece en ninguna casilla del documento. El banco lo sabe y por eso pide una entrada: no mide la capacidad de pagar, mide la probabilidad de que uno aguante. Conviene desmontar el argumento que más se repite en España, que es cultural antes que económico: alquilar es tirar el dinero. La frase compara el alquiler con la parte del pago que amortiza capital y olvida las demás. Los intereses de los primeros años, el seguro, el impuesto, la comunidad y el mantenimiento no construyen riqueza; son el precio de habitar, exactamente igual que un alquiler. Lo que la compra añade de verdad es otra cosa, y merece defenderse con el nombre correcto: es un ahorro forzoso. Una persona que no habría apartado doscientos euros al mes los aparta porque hay una letra, y a los veinte años tiene un patrimonio que no habría acumulado de otro modo. Ese argumento es sólido y bastante menos épico que el de tirar el dinero. Queda un punto que casi nunca se discute y que pesa más que los tipos de interés: la hipoteca no solo financia una vivienda, también fija una ciudad. Quien debe dinero sobre un piso en una localidad donde el empleo se contrae acepta trabajos peores antes que mudarse, porque vender con pérdidas es más difícil que aguantar. La riqueza inmobiliaria de las familias españolas, que es alta en comparación europea, convive con una movilidad laboral baja, y no es casualidad que las dos cosas aparezcan juntas. Conviene añadir que nada de esto convierte la compra en un error: para una familia que va a quedarse donde está, el ahorro forzoso y la protección frente a una subida del alquiler son ventajas reales y medibles. Lo que no debería hacerse es presentar como una decisión puramente financiera algo que compromete además dónde se va a vivir y con qué margen se podrá cambiar de idea.',
+  questions: [
+    { type: 'mcq', q: '¿Qué mide realmente la entrada que pide el banco, según el texto?',
+      options: ['La capacidad de pago', 'La probabilidad de que el comprador aguante', 'La calidad del inmueble'], answer: 1 },
+    { type: 'mcq', q: '¿Qué error atribuye a la frase «alquilar es tirar el dinero»?',
+      options: ['Que ignora los costes de la compra que tampoco crean riqueza', 'Que es falsa por completo', 'Que solo vale para las ciudades grandes'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es, para el autor, la verdadera ventaja de comprar?',
+      options: ['La revalorización', 'El ahorro forzoso', 'La seguridad jurídica'], answer: 1 },
+    { type: 'mcq', q: '¿Qué relación sugiere entre propiedad y empleo?',
+      options: ['Que la propiedad reduce la movilidad laboral', 'Que la propiedad mejora los salarios', 'Que no hay relación'], answer: 0 },
+    { type: 'translate', line: 'la hipoteca no solo financia una vivienda, también fija una ciudad', model: 'a mortgage does not only finance a home, it also fixes a city' }
+  ]
+},
+
+{
+  id: 'c1-econ-pesca', title: 'La flota que se quedó sin relevo', level: 9, theme: 'economia',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'En los puertos del norte peninsular se repite una escena que resume mejor que cualquier informe lo que le ocurre a la pesca: barcos de pesca en buen estado, cuota disponible, la lonja abierta, y ningún pescador de treinta años dispuesto a embarcar. La explicación que primero se ofrece —los jóvenes no quieren trabajar duro— resulta cómoda y se desmiente con facilidad, porque esos mismos jóvenes aceptan jornadas igual de exigentes en la construcción o en la hostelería. Lo que rechazan no es el esfuerzo. Es una combinación concreta: ingresos variables que dependen de la captura, ausencias de doce días, una seguridad laboral que ha mejorado mucho y sigue siendo la peor del país, y una expectativa razonable de que el sector se contraiga durante toda su vida activa. Conviene mirar este caso porque ilustra un mecanismo que se repite en la agricultura, en la ganadería y en buena parte de la industria que produce materia prima. Un sector puede ser rentable y no tener futuro al mismo tiempo, y quien decide a los veinte años no invierte en una ganancia presente sino en una trayectoria; el gasto de hoy y las pérdidas de dentro de quince años entran en la misma cuenta. Las ayudas que se diseñan suelen actuar sobre lo primero —una subvención al gasoil, un préstamo blando para renovar el barco, un seguro más barato— y no tocan lo segundo, que es lo que decide. Hay una consecuencia de política pública que se enuncia poco y con desgana. Si un sector no va a mantener su tamaño, sostenerlo con dinero público durante veinte años sin decirlo produce el peor de los resultados posibles: una generación que entra creyendo una promesa que nadie pensaba cumplir. La alternativa honesta no es abandonarlo, sino financiar explícitamente la transición de quien está dentro y dejar de reclutar a quien no lo está. Cuesta exactamente lo mismo y se puede defender en voz alta, que es lo que suele faltar. Un puerto que pierde su flota pierde también la fábrica de hielo, el taller, la lonja y el vocabulario, y eso no se recupera con un plan, porque el plan llega cuando ya no queda nadie a quien aplicárselo.',
+  questions: [
+    { type: 'mcq', q: '¿Por qué desmiente la explicación del esfuerzo?',
+      options: ['Porque los jóvenes aceptan trabajos igual de duros en otros sectores', 'Porque los salarios son altos', 'Porque hay muchos candidatos'], answer: 0 },
+    { type: 'mcq', q: '¿Qué distingue el texto en la decisión de un joven?',
+      options: ['Entre rentabilidad presente y trayectoria previsible', 'Entre mar y tierra', 'Entre formación y experiencia'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le reprocha a las ayudas existentes?',
+      options: ['Que son escasas', 'Que actúan sobre la rentabilidad y no sobre la expectativa', 'Que llegan tarde'], answer: 1 },
+    { type: 'mcq', q: '¿Cuál es la alternativa que propone?',
+      options: ['Abandonar el sector', 'Financiar la transición y dejar de reclutar', 'Aumentar las subvenciones'], answer: 1 },
+    { type: 'translate', line: 'Un sector puede ser rentable y no tener futuro al mismo tiempo', model: 'An industry can be profitable and have no future at the same time' }
+  ]
 }
 ];
