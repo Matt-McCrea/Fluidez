@@ -8246,5 +8246,175 @@ window.PASSAGES = [
       options: ['Que el hogar es el actor con menos medios de toda la cadena', 'Que las empresas tiran más', 'Que la culpa no cambia el comportamiento'], answer: 0 },
     { type: 'translate', line: 'Pedirles responsabilidad sin darles el procedimiento es exigir el resultado sin el medio.', model: 'To ask them for responsibility without giving them the method is to demand the result without the means.' }
   ]
+},
+
+{
+  id: 'c1-edu-corregir', title: 'Corregir un examen', level: 8, theme: 'educacion',
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'presubj', 'perfsubj'],
+  text: 'Cualquier profesor que haya corregido un examen en la mesa de despacho un jueves a las once de la noche reconocerá el fenómeno, aunque casi nunca se escriba: la nota que pone depende, en un margen incómodo, del orden en que le haya tocado el ejercicio. Los trabajos que caen después de uno excelente reciben décimas de menos; los que siguen a un desastre, décimas de más. El efecto está medido desde hace cuarenta años, se reproduce con quien lo conoce y con quien no, y resulta indiferente a la buena voluntad de quien corrige. Se sabe además que el cansancio comprime la escala: hacia la hoja número treinta casi todo se parece a un cinco. Lo que interesa aquí no es denunciar a nadie. Es observar qué hace una institución cuando descubre que su instrumento de medida se mueve. La respuesta habitual en el bachillerato y en la universidad consiste en aumentar la formalidad: rúbricas más detalladas, criterios por apartados, dos correctores en las pruebas que deciden una beca o una matrícula. Todo ello reduce el efecto y ninguna de esas medidas es gratuita, porque una rúbrica muy detallada premia al estudiante que sabe qué se está puntuando, que no siempre es el que ha entendido la lección. Conviene por eso mirar una alternativa menos vistosa y bastante más eficaz: corregir la misma pregunta en los treinta exámenes seguidos, en lugar de los treinta exámenes seguidos. El orden deja de comparar personas y pasa a comparar respuestas, la escala se estabiliza sola y la corrección se acelera. Es un cambio que no cuesta dinero, no requiere ningún acuerdo de centro y no se puede inaugurar. Queda una cuestión de fondo que ninguna técnica resuelve. Un examen mide lo que el alumno hizo esa mañana con ese enunciado, y el certificado que se emite a partir de ahí se lee durante décadas como si midiera otra cosa. El profesor que afina su método está mejorando la fiabilidad de un instrumento cuya validez nadie ha discutido en la misma reunión. Merece la pena hacerlo igualmente: un instrumento impreciso y mal usado es peor que uno impreciso y usado con cuidado, y de momento no hay un tercero.',
+  questions: [
+    { type: 'mcq', q: '¿Qué distingue el autor en su último párrafo?',
+      options: ['Entre profesores buenos y malos', 'Entre la fiabilidad de un examen y su validez', 'Entre bachillerato y universidad'], answer: 1 },
+    { type: 'mcq', q: '¿Qué objeción pone a las rúbricas muy detalladas?',
+      options: ['Que llevan mucho tiempo', 'Que benefician a quien sabe qué se puntúa', 'Que los alumnos no las leen'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué destaca que su propuesta «no se puede inaugurar»?',
+      options: ['Porque es difícil de aplicar', 'Porque no ofrece rédito visible a quien la adopta', 'Porque ya está implantada'], answer: 1 },
+    { type: 'mcq', q: '¿Qué postura final adopta sobre los exámenes?',
+      options: ['Que deberían suprimirse', 'Que conviene cuidarlos aunque sean imperfectos', 'Que son plenamente fiables'], answer: 1 },
+    { type: 'translate', line: 'El orden deja de comparar personas y pasa a comparar respuestas', model: 'The sequence stops comparing people and starts comparing answers' }
+  ]
+},
+
+{
+  id: 'c1-edu-doctorado', title: 'Lo que se aprende en un doctorado', level: 9, theme: 'educacion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Se suele describir el doctorado como el último peldaño de una escalera: bachillerato, licenciado, máster, doctor. La imagen es cómoda y desorienta a casi todo el que la cree, porque los tres primeros escalones consisten en aprender lo que ya se sabe y el cuarto consiste en otra cosa bastante distinta. Un estudiante brillante que ha pasado dieciocho años resolviendo ejercicios con solución conocida llega al campus, se matricula, y descubre a los ocho meses que nadie va a decirle si va bien. No hay hoja de respuestas. El malestar que eso produce se confunde con frecuencia con falta de capacidad, y es simplemente el efecto de un cambio de género que la institución no anuncia. Hay una segunda sorpresa, más incómoda de admitir. La mayor parte del trabajo de investigación no se parece al descubrimiento sino a la administración: pedir una beca, ordenar datos, repetir un procedimiento que ya falló dos veces, corregir una tabla en la biblioteca a las nueve de la noche, mandar un correo a una secretaría que no contesta. Quien entra buscando la escena que ha visto en los documentales encuentra, durante cuatro años, algo mucho más parecido a un oficio. Los que terminan no suelen ser los más inteligentes del grupo; son los que toleraron mejor esa proporción. Merece la pena decir en voz alta la consecuencia que casi nadie dice en las jornadas de puertas abiertas. Un doctorado es una formación excelente para una cantidad muy pequeña de puestos y una inversión discutible para casi todos los demás, y el mercado laboral lo ha entendido antes que las universidades, que siguen formando doctores a un ritmo que sus propios departamentos no pueden absorber. Nada de esto es un argumento para no hacerlo. Es un argumento para hacerlo sabiendo lo que se hace, que es distinto de hacerlo porque era el escalón siguiente. Lo que se aprende ahí, cuando sale bien, no es una materia: es la tolerancia a trabajar durante meses sin saber si el camino lleva a alguna parte, y esa competencia, que no aparece en ningún diploma, resulta ser la única que se transfiere entera a cualquier otro sitio.',
+  questions: [
+    { type: 'mcq', q: '¿Por qué le parece engañosa la imagen de la escalera?',
+      options: ['Porque hay más niveles', 'Porque el último escalón es de otra naturaleza', 'Porque no todos la suben'], answer: 1 },
+    { type: 'mcq', q: '¿A qué atribuye el malestar del estudiante brillante?',
+      options: ['A su falta de capacidad', 'A un cambio de género que nadie le anuncia', 'A la mala dirección de tesis'], answer: 1 },
+    { type: 'mcq', q: '¿Qué reproche dirige a las universidades?',
+      options: ['Que formen más doctores de los que pueden absorber', 'Que exijan demasiado', 'Que no den becas'], answer: 0 },
+    { type: 'mcq', q: '¿Qué considera el verdadero aprendizaje del doctorado?',
+      options: ['El dominio de una materia', 'La tolerancia a la incertidumbre prolongada', 'La capacidad de publicar'], answer: 1 },
+    { type: 'translate', line: 'hacerlo sabiendo lo que se hace, que es distinto de hacerlo porque era el escalón siguiente', model: 'doing it knowing what one is doing, which is different from doing it because it was the next step up' }
+  ]
+},
+
+{
+  id: 'c1-trab-entrevista', title: 'La entrevista y lo que mide', level: 8, theme: 'trabajo',
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
+  text: 'De todos los instrumentos que una empresa emplea para decidir a quién contrata, el más usado es también el que peor predice el resultado. La entrevista de trabajo no estructurada —la conversación de cuarenta minutos en un despacho, con un currículum sobre la mesa de despacho y un traje con corbata que nadie lleva ya el resto del año— tiene una capacidad predictiva que la literatura sitúa muy por debajo de una prueba de muestra del propio trabajo. Esto se sabe desde hace décadas y se publica con regularidad. La entrevista sigue en todas partes. Explicarlo por ignorancia no funciona, porque quienes la mantienen suelen conocer el dato. Funciona mejor observar qué hace la entrevista además de predecir. Da a quien decide la sensación de haber conocido a alguien, que es psicológicamente muy difícil de renunciar; reparte la responsabilidad de un error futuro entre varias personas que estuvieron presentes; y permite al candidato sentir que ha tenido una oportunidad de explicarse, lo cual importa incluso cuando no cambia nada. Un proceso puramente técnico sería mejor y a casi nadie le parecería justo. Hay además un efecto sobre quién entra que conviene nombrar. Una conversación abierta premia al que habla con soltura, comparte referencias con el entrevistador y sabe qué se espera oír; es decir, premia la semejanza. En una empresa mediana eso no se nota de una en una, y se nota mucho a los diez años, cuando el departamento entero ha estudiado en tres sitios: ni el dependiente, ni el funcionario, ni el comercial de una multinacional escapan del mecanismo. Las alternativas existen y son conocidas: pedir una muestra del trabajo real, hacer las mismas preguntas a todo el mundo en el mismo orden, puntuar antes de comentar. Ninguna es cara. Lo que las frena no es el coste sino que retiran autoridad a quien entrevista, y el jefe de un despacho pequeño rara vez vota a favor de un sistema que reduce su margen de apreciación. La costumbre no se sostiene porque funcione, sino porque reparte bien el poder de decidir, que es un criterio distinto y en ningún sitio escrito.',
+  questions: [
+    { type: 'mcq', q: '¿Por qué persiste la entrevista, según el autor?',
+      options: ['Porque predice bien', 'Por funciones distintas de la predicción', 'Porque es barata'], answer: 1 },
+    { type: 'mcq', q: '¿Qué efecto de fondo señala sobre quién acaba contratado?',
+      options: ['Se premia la semejanza con el entrevistador', 'Se premia la experiencia', 'Se premia la formación'], answer: 0 },
+    { type: 'mcq', q: '¿Qué frena la adopción de alternativas mejores?',
+      options: ['Su coste', 'Que restan poder a quien entrevista', 'La legislación laboral'], answer: 1 },
+    { type: 'mcq', q: '¿Qué implica decir que un proceso técnico «a casi nadie le parecería justo»?',
+      options: ['Que la justicia percibida y la eficacia no coinciden', 'Que sería ilegal', 'Que los candidatos no lo aceptarían nunca'], answer: 0 },
+    { type: 'translate', line: 'no se sostiene porque funcione, sino porque reparte bien el poder de decidir', model: 'it does not hold up because it works, but because it distributes the power to decide conveniently' }
+  ]
+},
+
+{
+  id: 'c1-trab-paro', title: 'Estar en paro y decirlo', level: 9, theme: 'trabajo',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj'],
+  text: 'Hay una pregunta que en español se formula casi siempre igual y que encierra más de lo que parece: «¿A qué te dedicas?» No pregunta qué haces con tus días, sino qué eres, y por eso resulta tan difícil de contestar para quien está en paro. Decir que uno es ingeniero sin trabajar de ello suena a impostura; decir que no hace nada es falso y además injusto con quien lleva cinco meses mandando currículums, haciendo un curso y ocupándose de una casa. El idioma no ofrece una tercera opción cómoda, y esa ausencia no es casual: refleja con precisión una sociedad donde el empleo hace de documento de identidad. Las consecuencias son concretas y están documentadas. El desempleo prolongado deteriora la salud por vías que no se explican solo por el dinero, y el deterioro empieza antes de que el dinero falte. Se ha observado también que la pérdida del empleo afecta de forma distinta según cómo se explicara la persona a sí misma: quien se identificaba con la profesión cae más que quien se identificaba con el oficio, y mucho más que quien se identificaba con la nómina. El empresario que se arruina y el funcionario que pierde la plaza no viven el mismo acontecimiento. Conviene resistirse a dos discursos igualmente cómodos. El primero dice que el trabajo no debería definir a nadie, lo cual es un deseo razonable presentado como si fuera una descripción; mientras la vivienda, la pensión y buena parte de las relaciones dependan del empleo, decir que no define es una observación de salón. El segundo dice que el mercado laboral premia al que se esfuerza, y quien ha estado en paro con cuarenta y ocho años y un despido a la espalda conoce la parte del proceso que ese eslogan omite. Lo que sí parece útil, y es pequeño, es cambiar la pregunta. «¿En qué andas?» admite un curso, un proyecto parado, una mudanza y una búsqueda. No resuelve el desempleo ni lo pretende. Ahorra, eso sí, una humillación diaria que no estaba en el precio.',
+  questions: [
+    { type: 'mcq', q: '¿Qué revela, según el texto, la pregunta «¿a qué te dedicas?»?',
+      options: ['Curiosidad legítima', 'Que el empleo funciona como documento de identidad', 'Falta de educación'], answer: 1 },
+    { type: 'mcq', q: '¿Qué hallazgo cita sobre el impacto del desempleo?',
+      options: ['Que depende de con qué se identificaba la persona', 'Que afecta igual a todos', 'Que solo importa el dinero'], answer: 0 },
+    { type: 'mcq', q: '¿Qué critica del primer discurso que rechaza?',
+      options: ['Que sea falso', 'Que presente un deseo como si fuera una descripción', 'Que venga de los sindicatos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué alcance atribuye a su propia propuesta final?',
+      options: ['Limitado y deliberadamente modesto', 'Decisivo', 'Irónico, no la propone en serio'], answer: 0 },
+    { type: 'translate', line: 'decir que no define es una observación de salón', model: 'saying that it does not define anyone is a drawing-room remark' }
+  ]
+},
+
+{
+  id: 'c1-ocio-arbitro', title: 'El árbitro y el espectador', level: 8, theme: 'ocio',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  text: 'Un partido de fútbol es uno de los pocos acontecimientos donde decenas de miles de personas observan el mismo hecho y producen dos relatos incompatibles con total sinceridad. El aficionado que jura haber visto una falta no miente; la vio. Lo que ocurre en el campo de fútbol es un caso de manual de percepción condicionada por la expectativa, y es tan robusto que se reproduce en el laboratorio con espectadores que no saben que están siendo estudiados. La consecuencia práctica es que el árbitro ocupa un puesto imposible por construcción: se le exige neutralidad ante un público que es incapaz de reconocerla. La introducción del vídeo prometía cerrar la discusión y ha hecho algo más interesante. Ha eliminado una parte de los errores materiales —el balón que entró, el jugador que estaba adelantado— y ha dejado intacta, o la ha agravado, la discusión sobre lo que requiere criterio, que es la mayoría. Ahora se discute con la misma pasión y con una imagen delante, lo cual añade a la disputa una capa de autoridad falsa: quien ve la repetición cree estar viendo el hecho y está viendo una elección de plano. Merece la pena preguntarse qué se compra con una entrada. Buena parte del placer de ser espectador consiste en la parcialidad, es decir, en el permiso social de ser injusto durante noventa minutos sin consecuencias. Un ganador y un perdedor, una fila que se levanta a la vez, un entrenador que protesta lo que sabe que no va a cambiar. Nada de eso funcionaría si todo el mundo tuviera razón al mismo tiempo. El deporte profesional ha respondido a esta tensión con una estrategia que conviene mirar de cerca: no reduce la discusión, la administra. Los tiempos de revisión, las repeticiones en la pantalla grande y las explicaciones posteriores están calculados para sostener la polémica dentro de un margen que no rompa el espectáculo. Es un equilibrio deliberado. Quien pide que el vídeo lo resuelva todo pide, sin saberlo, un producto que nadie ha querido nunca comprar.',
+  questions: [
+    { type: 'mcq', q: '¿Qué explica el desacuerdo entre espectadores?',
+      options: ['La mala fe de los aficionados', 'Que la expectativa condiciona lo que se percibe', 'La distancia al campo'], answer: 1 },
+    { type: 'mcq', q: '¿Qué efecto atribuye al vídeo?',
+      options: ['Ha resuelto la discusión', 'Corrige errores materiales y añade autoridad falsa al resto', 'No ha cambiado nada'], answer: 1 },
+    { type: 'mcq', q: '¿En qué consiste, según el texto, buena parte del placer del espectador?',
+      options: ['En el permiso de ser parcial sin consecuencias', 'En el resultado', 'En la compañía'], answer: 0 },
+    { type: 'mcq', q: '¿Qué sugiere la frase final?',
+      options: ['Que el vídeo debería retirarse', 'Que una justicia perfecta destruiría el espectáculo', 'Que los árbitros deberían decidir solos'], answer: 1 },
+    { type: 'translate', line: 'quien ve la repetición cree estar viendo el hecho y está viendo una elección de plano', model: 'whoever watches the replay believes they are seeing the event and is seeing a choice of camera angle' }
+  ]
+},
+
+{
+  id: 'c1-ocio-cola', title: 'Hacer cola para descansar', level: 9, theme: 'ocio',
+  tenses: ['presente', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
+  text: 'Conviene observar sin ironía un fenómeno que suele describirse con ella: la cantidad de esfuerzo que la gente dedica a su tiempo libre. Alguien que trabaja cuarenta horas semanales se levanta el sábado a las seis, conduce ciento veinte kilómetros, hace cola cuarenta minutos en una pista de tenis o en la entrada de una piscina, y sube ochocientos metros de desnivel con el chándal puesto, todo ello voluntariamente y llamándolo descanso. La primera explicación que se ofrece —que la gente no sabe descansar— es la menos interesante de todas y probablemente falsa. Lo que distingue ese esfuerzo del otro no es la cantidad sino quién fija las condiciones. Hacer senderismo cinco horas cansa más que una jornada en una oficina y se experimenta de otra manera porque uno decide cuándo para, con quién va y si mañana lo repite. La investigación sobre bienestar lleva décadas señalando la misma variable, que no es el reposo sino el control. Una actividad exigente elegida repara; una actividad cómoda impuesta, no. Hay sin embargo un punto donde el argumento se vuelve contra sí mismo, y es donde el ocio adopta la forma de lo que dice compensar. Cuando practicar un deporte requiere inscribirse con cuatro meses de antelación, cuando la vacación se planifica con hoja de cálculo, cuando la jardinería y el bricolaje se convierten en una lista de tareas con fecha y cuando hasta hacer un picnic exige una invitación con dos semanas de margen, el control ha vuelto a salir del sujeto sin que nadie se lo haya quitado explícitamente. La forma se ha mantenido y el contenido se ha invertido. Quien reconozca esto en su propio calendario no necesita ninguna reforma espectacular. Basta con una prueba barata: reservar una tarde sin ningún compromiso y observar honestamente cuánto tarda en aparecer la incomodidad. Si aparece a los veinte minutos, el problema no era la falta de tiempo libre. Lo interesante de esa prueba es que no se puede pasar del todo. La incomodidad aparece siempre, y lo que cambia con la práctica no es que desaparezca, sino que uno deja de interpretarla como una señal de que hay algo pendiente.',
+  questions: [
+    { type: 'mcq', q: '¿Qué variable señala como decisiva?',
+      options: ['La cantidad de reposo', 'El control sobre las condiciones', 'El coste de la actividad'], answer: 1 },
+    { type: 'mcq', q: '¿Cuándo se vuelve el argumento contra sí mismo?',
+      options: ['Cuando el ocio se organiza como el trabajo', 'Cuando cuesta demasiado dinero', 'Cuando se practica solo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué indica, según el texto, que la incomodidad aparezca a los veinte minutos?',
+      options: ['Que hace falta más tiempo libre', 'Que el problema no era la falta de tiempo', 'Que la actividad elegida era mala'], answer: 1 },
+    { type: 'mcq', q: '¿Qué dice que cambia con la práctica?',
+      options: ['Que la incomodidad desaparece', 'La interpretación que se hace de ella', 'La duración del descanso'], answer: 1 },
+    { type: 'translate', line: 'Una actividad exigente elegida repara; una actividad cómoda impuesta, no.', model: 'A demanding activity that is chosen restores you; a comfortable one that is imposed does not.' }
+  ]
+},
+
+{
+  id: 'c1-medios-portada', title: 'Lo que decide una portada', level: 8, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'perfsubj'],
+  text: 'Durante buena parte del siglo pasado, la jerarquía de la prensa era un objeto físico. Alguien decidía qué iba arriba en la portada y ese alguien respondía de la decisión con su nombre en la última página. El lector recibía un paquete cerrado donde la posición de una noticia comunicaba tanto como la noticia misma. Hoy la cadena ha cambiado y conviene describir el cambio con precisión, porque la descripción más común —que ahora decide el algoritmo— es demasiado corta. Lo que decide es una combinación: un equipo fija el orden de la página web durante unas horas, un sistema mide qué se lee y reordena, y un tercer actor, la búsqueda y las redes, entrega a la mayoría de los lectores una pieza suelta que llega sin portada de ninguna clase. La consecuencia menos comentada es la desaparición del contexto silencioso. Un lector que en 1994 abría el periódico veía, sin leer nada, que aquel asunto ocupaba una columna y aquel otro media página, y esa proporción era una información. El mismo lector recibe hoy la pieza de media página y la de una columna con exactamente el mismo aspecto, en el mismo aparato, separadas por un anuncio. La jerarquía no se ha suprimido; se ha vuelto invisible, que es distinto y peor. Hay una segunda consecuencia sobre quien escribe. Un periodista que sabe que su texto llegará suelto escribe un titular que funcione solo, lo cual es razonable y tiene un efecto acumulado: el titular deja de resumir el texto y pasa a competir con otros titulares. Nadie ha decidido ese desplazamiento y todos los incentivos apuntan hacia él. La respuesta de algunos medios ha consistido en reconstruir el paquete —una edición cerrada por la mañana, un boletín que termina— y los datos de fidelidad que publican sugieren que a una parte del público le interesa. Es una vuelta parcial y llamativa: después de veinte años vendiendo la ventaja de leer lo que uno quiera cuando quiera, se descubre que buena parte del valor de un periódico estaba en que alguien hubiera decidido por ti y firmara la decisión.',
+  questions: [
+    { type: 'mcq', q: '¿Por qué le parece corta la explicación del algoritmo?',
+      options: ['Porque los algoritmos no deciden nada', 'Porque la decisión se reparte entre varios actores', 'Porque los periodistas siguen mandando'], answer: 1 },
+    { type: 'mcq', q: '¿Qué es el «contexto silencioso» que se ha perdido?',
+      options: ['Las secciones del periódico', 'La proporción visible entre unas noticias y otras', 'Los editoriales'], answer: 1 },
+    { type: 'mcq', q: '¿Qué efecto tiene sobre los titulares que el texto llegue suelto?',
+      options: ['Compiten entre sí en lugar de resumir', 'Se vuelven más largos', 'Desaparecen'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo interpreta el autor el regreso a las ediciones cerradas?',
+      options: ['Como un fracaso del periodismo digital', 'Como el redescubrimiento de un valor que se había dado por prescindible', 'Como una moda pasajera'], answer: 1 },
+    { type: 'translate', line: 'La jerarquía no se ha suprimido; se ha vuelto invisible, que es distinto y peor.', model: 'The hierarchy has not been abolished; it has become invisible, which is a different thing and a worse one.' }
+  ]
+},
+
+{
+  id: 'c1-medios-carta', title: 'La carta que ya nadie escribe', level: 9, theme: 'medios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'perfsubj'],
+  text: 'Quedan personas que escriben cartas y casi todas ellas superan los setenta años. El dato invita a una nostalgia que conviene evitar, porque el correo postal era lento, caro y bastante peor que casi todo lo que vino después. Lo que merece atención no es el soporte sino un rasgo que el soporte imponía y que nada ha sustituido: la carta obligaba a escribir sin respuesta. Entre echar una carta y recibir la contestación pasaban diez días, de modo que el remitente tenía que anticipar lo que el destinatario ya sabría, aclarar lo ambiguo y cerrar el asunto en un solo movimiento. Esa restricción producía una prosa determinada. El saludo y la despedida, que hoy parecen pura ceremonia, cumplían una función real de encuadre, y hasta la posdata era un recurso técnico: lo que se había olvidado no podía enviarse cinco segundos después. Comparado con eso, el intercambio actual es una conversación troceada donde cada mensaje delega en el siguiente lo que no está claro. Es más rápido y notablemente menos preciso. Cualquiera que haya intentado resolver un asunto complicado a base de mensajes cortos sabe que en algún momento alguien escribe «te llamo», que es el reconocimiento de que el medio no daba para tanto. Nada de esto justifica volver al sello ni al buzón, y quien lo propone suele estar hablando de otra cosa. Lo que sí parece recuperable es el ejercicio. Escribir una vez al mes un texto largo dirigido a una persona concreta, sin esperar contestación inmediata, produce un efecto que quienes lo hacen describen de manera sospechosamente parecida: se descubre, escribiendo, lo que se pensaba. No es un descubrimiento nuevo y tampoco es exclusivo de las cartas. Ocurre que la carta era el único artefacto social que lo imponía a gente que no tenía ninguna intención de escribir, y ese trabajo lo hacía sin que nadie se lo hubiera encargado. Cuando desapareció el artefacto, el hábito quedó disponible solo para quien lo busca a propósito, que es siempre mucha menos gente.',
+  questions: [
+    { type: 'mcq', q: '¿Qué rasgo de la carta le interesa al autor?',
+      options: ['El papel y el sello', 'Que obligaba a escribir sin respuesta inmediata', 'Su coste'], answer: 1 },
+    { type: 'mcq', q: '¿Qué función atribuye al saludo y la despedida?',
+      options: ['Pura cortesía vacía', 'Encuadrar el mensaje', 'Ocupar espacio'], answer: 1 },
+    { type: 'mcq', q: '¿Qué significa, según él, escribir «te llamo»?',
+      options: ['Que el medio no daba para el asunto', 'Que hay prisa', 'Que se desconfía del otro'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es la pérdida que lamenta al final?',
+      options: ['El correo postal', 'Que un hábito útil dejara de estar impuesto por una costumbre común', 'La lentitud de antes'], answer: 1 },
+    { type: 'translate', line: 'se descubre, escribiendo, lo que se pensaba', model: 'you discover, in the writing, what you thought' }
+  ]
+},
+
+{
+  id: 'c1-viv-casero', title: 'El casero y la ley', level: 8, theme: 'vivienda',
+  tenses: ['presente', 'preterito', 'condicional', 'presubj', 'impsubj', 'perfsubj'],
+  text: 'La relación entre quien alquila un piso y quien lo posee está regulada con un detalle considerable y se vive, en la práctica, como una negociación privada donde la ley aparece mencionada y casi nunca aplicada. Cualquiera que haya vivido de alquiler reconoce la escena: una nevera o una lavadora que llevan tres semanas estropeadas, una ducha que no calienta, un casero que promete un técnico, un inquilino que calcula en silencio si merece la pena insistir estando el contrato a cinco meses de renovarse. Ese cálculo es el verdadero mecanismo del mercado del alquiler, y no aparece en ninguna estadística. Conviene ser exacto sobre dónde está la asimetría, porque el debate público suele situarla mal. No está principalmente en el dinero: hay propietarios modestos con un solo piso y inquilinos con sueldos altos. Está en las consecuencias de romper la relación. Para el propietario, un mes vacío; para quien vive allí, una mudanza, un camión, el sofá que no cabe por la escalera, un colegio nuevo y la pérdida del vecindario. Dos partes con derechos formalmente equivalentes y salidas radicalmente distintas no negocian en igualdad, aunque ningún artículo diga lo contrario. Las soluciones que se ensayan reflejan esa diferencia con desigual fortuna. Limitar el precio produce efectos discutidos y bien estudiados, y tiende a beneficiar a quien ya está dentro. Alargar la duración obligatoria del contrato toca directamente la variable que importa —el coste de irse— y por eso encuentra más resistencia de la que su modestia técnica haría prever. Hay además un elemento cultural que ninguna norma alcanza: en España la vivienda en propiedad no es solo un activo, es una biografía, y eso convierte cualquier discusión sobre el alquiler en una conversación sobre lo que se le debe a la generación anterior. Lo que no resulta sostenible es el estado actual del argumento, donde una parte habla de derechos y la otra de riesgos como si describieran mercados distintos. Describen el mismo, y en él una avería en la nevera es, para uno, una factura, y para el otro, la pregunta de si conviene molestar.',
+  questions: [
+    { type: 'mcq', q: '¿Dónde sitúa el autor la asimetría principal?',
+      options: ['En los ingresos de las partes', 'En lo que le cuesta a cada una romper la relación', 'En el desconocimiento de la ley'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué encuentra resistencia alargar la duración del contrato?',
+      options: ['Porque es técnicamente complejo', 'Porque toca la variable que de verdad importa', 'Porque perjudica a los inquilinos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué añade el factor cultural que menciona?',
+      options: ['Que la propiedad se vive como biografía y no solo como activo', 'Que los españoles no alquilan', 'Que la ley es antigua'], answer: 0 },
+    { type: 'mcq', q: '¿Qué critica del debate público?',
+      options: ['Que sea demasiado técnico', 'Que cada parte describa el mismo mercado como si fueran dos', 'Que no haya datos'], answer: 1 },
+    { type: 'translate', line: 'una avería en la nevera es, para uno, una factura, y para el otro, la pregunta de si conviene molestar', model: 'a broken fridge is, for one of them, an invoice, and for the other, the question of whether it is worth making a fuss' }
+  ]
+},
+
+{
+  id: 'c1-viv-pasillo', title: 'La casa que ya no se construye', level: 9, theme: 'vivienda',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
+  text: 'Un piso español de 1975 y otro de 2020 con los mismos metros cuadrados se distinguen a primera vista por una cosa: el pasillo. El antiguo lo tiene, largo y oscuro, y a partir de él reparte cuatro habitaciones cerradas con puerta. El nuevo lo ha eliminado casi por completo y ha fundido cocina, comedor y sala de estar en un espacio único que los anuncios llaman diáfano. El cambio se presenta siempre como una mejora de la luz y del aprovechamiento, y en ambos sentidos lo es. Lo que rara vez se dice es qué se ha eliminado además del pasillo. Una casa con puertas permite que dos personas hagan cosas distintas a la misma hora sin negociarlo. El adolescente que estudia, el padre que ve una película, alguien que habla por teléfono: en el piso de 1975 eso ocurre en paralelo y en silencio, y en el diáfano requiere un acuerdo. Durante años ese coste fue invisible porque la vida de la casa estaba muy repartida entre el exterior y el interior. Dejó de serlo cuando el trabajo entró en la vivienda, y desde entonces el dormitorio hace de despacho, la terraza hace de sala de reuniones y el sillón se ocupa por turnos. Conviene evitar la conclusión fácil de que se construía mejor antes. Aquellos pisos tenían cocinas minúsculas porque se daba por supuesto que dentro habría siempre una mujer, y baños únicos para seis personas por razones que nadie echa de menos. El diseño abierto no llegó por capricho: respondía a familias más pequeñas, a otra manera de comer y a una idea de la vida doméstica menos jerárquica. Lo que ocurre es que la vivienda dura sesenta años y las costumbres cambian en diez, de modo que cualquier casa termina alojando una vida para la que no fue pensada. Eso sugiere un criterio distinto del que domina el mercado. Un piso valioso no es el que resuelve perfectamente la vida de hoy, sino el que admite ser reorganizado cuando esa vida cambie: tabiques que se puedan mover, instalaciones accesibles, una habitación más pequeña de lo necesario en lugar de un salón más grande de lo previsible.',
+  questions: [
+    { type: 'mcq', q: '¿Qué se eliminó junto con el pasillo, según el texto?',
+      options: ['La luz natural', 'La posibilidad de hacer cosas distintas sin negociarlo', 'El espacio de almacenaje'], answer: 1 },
+    { type: 'mcq', q: '¿Cuándo se hizo visible ese coste?',
+      options: ['Cuando el trabajo entró en casa', 'Cuando subieron los precios', 'Cuando se redujeron los metros'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué rechaza la idea de que antes se construía mejor?',
+      options: ['Porque los pisos antiguos eran caros', 'Porque respondían a supuestos que nadie echa de menos', 'Porque no tenían luz'], answer: 1 },
+    { type: 'mcq', q: '¿Qué criterio propone para valorar una vivienda?',
+      options: ['Que se adapte perfectamente a la vida actual', 'Que admita ser reorganizada más adelante', 'Que tenga más habitaciones'], answer: 1 },
+    { type: 'translate', line: 'la vivienda dura sesenta años y las costumbres cambian en diez', model: 'housing lasts sixty years and habits change in ten' }
+  ]
 }
 ];
