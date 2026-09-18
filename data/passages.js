@@ -9673,5 +9673,107 @@ window.PASSAGES = [
     { type: 'short', q: '¿Cuántos días estuvieron? (una palabra)', accept: ['diez', '10'] },
     { type: 'translate', line: 'El verano pasado fuimos de campin a la montaña', model: 'Last summer we went camping in the mountains' }
   ]
+},
+
+{
+  id: 'a2-pol-ley-nueva', title: 'Una ley que nadie leyó', level: 2, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
+  text: 'En el bar del pueblo todos hablaban de la ley nueva. Un señor dijo que el gobierno la había hecho mal. Otro dijo que la culpa era del ministro. Mi vecino, que es de un partido político y lo dice siempre, contestó que el problema es la educación. La camarera preguntó si alguien la había leído. Nadie contestó. En la capital el presidente habló de la paz y de la guerra en otro país. Aquí seguimos con la ley y el café.',
+  gloss: [ { es: 'la culpa', en: 'the fault' },
+           { es: 'contestó', en: 'replied' },
+           { es: 'seguimos con', en: 'we carried on with' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué preguntó la camarera?',
+      options: ['Si alguien había leído la ley', 'Qué querían tomar', 'De qué partido eran'], answer: 0 },
+    { type: 'mcq', q: '¿Qué sugiere que nadie contestara?',
+      options: ['Que discutían sin saber', 'Que no la oyeron', 'Que la ley era secreta'], answer: 0 },
+    { type: 'short', q: '¿Dónde hablaba el presidente? (dos palabras)', accept: ['la capital', 'en la capital', 'capital'] },
+    { type: 'translate', line: 'La camarera preguntó si alguien la había leído.', model: 'The waitress asked whether anyone had read it.' }
+  ]
+},
+
+{
+  id: 'a2-pol-reyes', title: 'El rey en el libro de texto', level: 2, theme: 'politica',
+  tenses: ['presente', 'preterito'],
+  text: 'Mi hija estudia el rey, la reina, el príncipe y la princesa en clase de historia. También el gobierno, el ministro y la ley. Ayer me preguntó quién manda más. Le dije que el presidente. Me preguntó por qué entonces el rey sale primero en el libro. No supe contestar. Después preguntó qué es el ejército, qué es la guerra y por qué la paz no sale en ningún capítulo con nombre propio. Tiene nueve años y pregunta mejor que yo.',
+  gloss: [ { es: 'manda', en: 'is in charge' },
+           { es: 'no supe contestar', en: 'I didn\'t know what to say' },
+           { es: 'el capítulo', en: 'chapter' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué no supo contestar el padre?',
+      options: ['Por qué el rey sale primero', 'Quién manda más', 'Qué es el ejército'], answer: 0 },
+    { type: 'mcq', q: '¿Qué opina el padre de su hija?',
+      options: ['Que hace buenas preguntas', 'Que estudia poco', 'Que no entiende nada'], answer: 0 },
+    { type: 'short', q: '¿Cuántos años tiene la hija? (una palabra)', accept: ['nueve', '9'] },
+    { type: 'translate', line: 'Tiene nueve años y pregunta mejor que yo.', model: 'She is nine and asks better questions than I do.' }
+  ]
+},
+
+{
+  id: 'a2-relig-abuela-boda', title: 'Una boda en septiembre', level: 2, theme: 'religion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Mi prima se casó en septiembre. Ella es católica y su marido es judío, así que hubo dos ceremonias: primero en la iglesia, con un sacerdote, y por la tarde con un rabino. Mi tío, que es ateo, fue a las dos y no dijo nada en ninguna. Un amigo musulmán vino desde Madrid y no pudo quedarse a cenar porque era Ramadán. El santo del pueblo caía ese mismo día. Mi abuela dice que celebrar una boda así es lo más cristiano que ha visto nunca.',
+  gloss: [ { es: 'la ceremonia', en: 'ceremony' },
+           { es: 'el rabino', en: 'rabbi' },
+           { es: 'quedarse', en: 'to stay' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántas ceremonias hubo?',
+      options: ['Dos', 'Una', 'Tres'], answer: 0 },
+    { type: 'mcq', q: '¿Qué quiere decir la abuela?',
+      options: ['Que lo importante fue el respeto', 'Que la boda fue un error', 'Que prefiere la iglesia'], answer: 0 },
+    { type: 'short', q: '¿En qué mes fue la boda? (una palabra)', accept: ['septiembre', 'en septiembre'] },
+    { type: 'translate', line: 'Mi prima se casó en septiembre.', model: 'My cousin got married in September.' }
+  ]
+},
+
+{
+  id: 'a2-relig-calendario', title: 'El calendario de la cocina', level: 2, theme: 'religion',
+  tenses: ['presente'],
+  text: 'En la cocina hay un calendario con tres colores. En rojo, la Navidad y el santo de cada uno. En verde, el Ramadán: mi cuñado es musulmán. En azul, el sabbat, porque los padres de mi hermana son judíos. Mi padre, que es ateo y no es creyente de nada, es el que lo escribe cada enero. Dice que él no cree pero sí cree en las cenas. Mi madre va a misa a la iglesia de al lado y no discute eso. El sacerdote tampoco.',
+  gloss: [ { es: 'el cuñado', en: 'brother-in-law' },
+           { es: 'cada enero', en: 'every January' },
+           { es: 'no discute eso', en: 'does not argue with that' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién escribe el calendario?',
+      options: ['El padre, que es ateo', 'La madre', 'El cuñado'], answer: 0 },
+    { type: 'mcq', q: '¿Qué muestra el calendario?',
+      options: ['Que la familia organiza el año juntos', 'Que discuten mucho', 'Que nadie cree en nada'], answer: 0 },
+    { type: 'short', q: '¿De qué color está el Ramadán? (una palabra)', accept: ['verde', 'en verde'] },
+    { type: 'translate', line: 'él no cree pero sí cree en las cenas', model: 'he does not believe but he does believe in dinners' }
+  ]
+},
+
+{
+  id: 'a2-ciencia-contrasena', title: 'La contraseña del wifi', level: 2, theme: 'ciencia',
+  tenses: ['presente', 'preterito'],
+  text: 'Mi padre apuntó la contraseña del wifi en un papel y lo pegó en la pantalla del ordenador. Le dije que eso no es seguro y que los datos personales se protegen mejor. Él contestó que en su casa no entra ningún informático a robar nada. La semana pasada le llegó un correo basura con un virus y me llamó al móvil a las once. Ahora tiene la contraseña en la cabeza, el correo electrónico limpio y una copia de seguridad que hice yo.',
+  gloss: [ { es: 'apuntó', en: 'wrote down' },
+           { es: 'lo pegó', en: 'stuck it' },
+           { es: 'no es seguro', en: 'is not safe' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué cambió de opinión al padre?',
+      options: ['Un correo con un virus', 'Un consejo del hijo', 'Una noticia'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde tiene ahora la contraseña?',
+      options: ['En la cabeza', 'En un papel', 'En el móvil'], answer: 0 },
+    { type: 'short', q: '¿A qué hora llamó al hijo? (dos palabras)', accept: ['las once', 'a las once', 'once'] },
+    { type: 'translate', line: 'Mi padre apuntó la contraseña del wifi en un papel', model: 'My father wrote the wifi password down on a piece of paper' }
+  ]
+},
+
+{
+  id: 'a2-arte-foto', title: 'Hacer fotos en la catedral', level: 2, theme: 'arte',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El domingo fuimos a la catedral y a un palacio del siglo dieciséis. Mi hermano llevaba una cámara vieja de su abuelo y quería hacer fotos de todo: la estatua de la puerta, el dibujo del techo, un monumento pequeño en el jardín. Un señor le dijo que dentro no se puede fotografiar. En la calle hizo una foto buena. Por la tarde vimos una exposición de un fotógrafo mexicano y mi hermano no dijo ni una palabra en media hora.',
+  gloss: [ { es: 'el siglo dieciséis', en: 'the sixteenth century' },
+           { es: 'dentro', en: 'inside' },
+           { es: 'el monumento', en: 'monument' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le dijo el señor?',
+      options: ['Que no se puede fotografiar dentro', 'Que la cámara era vieja', 'Que pagara la entrada'], answer: 0 },
+    { type: 'mcq', q: '¿Qué sugiere su silencio en la exposición?',
+      options: ['Que le impresionó', 'Que se aburrió', 'Que estaba enfadado'], answer: 0 },
+    { type: 'short', q: '¿De quién era la cámara? (dos palabras)', accept: ['su abuelo', 'del abuelo', 'abuelo'] },
+    { type: 'translate', line: 'El domingo fuimos a la catedral y a un palacio del siglo dieciséis.', model: 'On Sunday we went to the cathedral and to a sixteenth-century palace.' }
+  ]
 }
 ];
