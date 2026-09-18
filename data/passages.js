@@ -1812,7 +1812,7 @@ window.PASSAGES = [
 
 {
   id: 'por-para-contraste', title: 'Por y para: dos preposiciones, un dolor de cabeza', level: 2, theme: 'educacion',
-  tenses: ['presente', 'preterito', 'presubj'],
+  tenses: ['presente', 'preterito'],
   text: 'Estudio español para conseguir un mejor trabajo, y también para viajar sin problemas. Uso para cuando hablo de un objetivo o un destino: un tren sale para Madrid a las ocho. En cambio, uso por para hablar de una causa o un intercambio: perdí el autobús por llegar tarde. También digo gracias por tu ayuda, porque agradezco lo que alguien hizo por mí. Caminamos por el parque durante una hora, sin destino fijo. Con práctica, la diferencia entre por y para deja de ser un problema.',
   gloss: [
     { es: 'el objetivo', en: 'the goal' },
@@ -2154,7 +2154,7 @@ window.PASSAGES = [
 
 {
   id: 'jubilacion-planes-l5', title: 'Cuando llegue la jubilación', level: 5, theme: 'trabajo',
-  tenses: ['presente', 'futuro', 'condicional', 'presubj', 'impsubj', 'futperf', 'condperf', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'futuro', 'condicional', 'presubj', 'impsubj', 'futperf', 'condperf', 'perfsubj'],
   text: 'Cuando mi abuelo deje de trabajar el próximo año, habrá trabajado más de cuarenta años en la misma empresa. Él dice que, si hubiera empezado su propio negocio, quizás habría ganado más dinero, pero también habría tenido mucho más estrés. Sus compañeros esperan que, para su fiesta de despedida, todos hayan preparado algo especial. Mi abuela cree que, para entonces, ya habrán terminado de pagar la casa y podrán viajar juntos por fin. Ojalá que esta nueva etapa les traiga mucha felicidad.',
   gloss: [
     { es: 'la empresa', en: 'the company' },
@@ -2189,7 +2189,7 @@ window.PASSAGES = [
 
 {
   id: 'subida-precios', title: 'La subida de precios en el supermercado', level: 5, theme: 'economia',
-  tenses: ['presente', 'perfecto', 'futuro', 'condicional', 'presubj', 'futperf', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'presubj', 'futperf', 'condperf'],
   text: 'Este mes, los precios de los alimentos básicos han subido más que en los últimos diez años. Para finales de año, muchas familias ya habrán reducido su gasto en comida considerablemente. Los economistas dudan que esta subida se deba solo a la guerra en otros países; también influyen los costes de producción y transporte. Algunos creen que una mejor planificación habría evitado parte de esta subida. Las asociaciones de consumidores piden que se controlen los precios de los productos esenciales. Muchos ciudadanos habrían preferido pequeñas subidas graduales en vez de este cambio tan repentino.',
   gloss: [
     { es: 'alimentos', en: 'food' },
@@ -2225,7 +2225,7 @@ window.PASSAGES = [
 
 {
   id: 'vuelo-cancelado', title: 'Un vuelo cancelado en el último momento', level: 4, theme: 'viajes',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'plusc'],
   text: 'Cuando Elena y su marido llegaron al aeropuerto, ya habían facturado las maletas cuando anunciaron que su vuelo se cancelaba por mal tiempo. La aerolínea les pidió que esperaran en una sala especial mientras buscaban una solución. Elena estaba furiosa porque llevaban meses planeando ese viaje a Portugal. Es normal que la gente se enfade en estas situaciones, dijo el empleado, intentando calmarla. Finalmente, les ofrecieron un vuelo para el día siguiente y una noche gratis en un hotel cercano. Aunque perdieron un día de vacaciones, Elena reconoce que la aerolínea gestionó bien el problema.',
   gloss: [
     { es: 'facturado', en: 'checked in (luggage)' },
@@ -2275,7 +2275,7 @@ window.PASSAGES = [
 
 {
   id: 'desperdicio-comida', title: 'El desperdicio de comida', level: 5, theme: 'alimentacion',
-  tenses: ['presente', 'futuro', 'condicional', 'presubj', 'futperf', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'futuro', 'condicional', 'presubj', 'futperf', 'perfsubj'],
   text: 'Cada año, las familias españolas tiran a la basura miles de toneladas de comida en buen estado. Para finales de este año, varias ciudades ya habrán aprobado leyes que obligan a los supermercados a donar los alimentos que no venden. Muchos expertos dudan que estas leyes solucionen el problema por completo, pero creen que es un buen primer paso. Si las familias planificaran mejor sus compras semanales, se reduciría bastante el desperdicio. Algunas organizaciones piden que se enseñe en las escuelas a aprovechar mejor los alimentos. Ojalá que estas iniciativas hayan cambiado la situación dentro de unos años.',
   gloss: [
     { es: 'toneladas', en: 'tons' },
@@ -2292,7 +2292,7 @@ window.PASSAGES = [
 
 {
   id: 'nuevo-hobby-ceramica', title: 'Un nuevo hobby: la cerámica', level: 4, theme: 'arte',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'plusc'],
   text: 'Hace seis meses, Julia empezó a ir a clases de cerámica los sábados por la mañana. Al principio, sus manos no sabían cómo controlar el barro y todo le salía torcido. La profesora le recomendó que practicara en casa con una pequeña rueda que se compró después. Julia nunca había hecho nada parecido antes, pero ahora dice que es la actividad que más disfruta de toda la semana. Sus amigos esperan que algún día venda sus piezas, aunque ella todavía no se atreve. Es probable que el próximo mes empiece un curso más avanzado para mejorar su técnica.',
   gloss: [
     { es: 'el barro', en: 'clay' },
@@ -2309,7 +2309,7 @@ window.PASSAGES = [
 
 {
   id: 'pedido-perdido', title: 'Un pedido que nunca llegó', level: 4, theme: 'compras',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'plusc'],
   text: 'El mes pasado, Diego compró unos auriculares por internet, pero el paquete nunca llegó a su casa. Cuando escribió a la empresa, le pidieron que esperara dos semanas más antes de reclamar el dinero. Diego estaba furioso porque ya había esperado casi un mes sin ninguna explicación clara. Finalmente, un empleado le confirmó que el paquete se había perdido durante el transporte. Es normal que este tipo de errores ocurra alguna vez, le explicaron, pero Diego seguía muy enfadado. Al final, le devolvieron el dinero y le ofrecieron un descuento para la próxima compra.',
   gloss: [
     { es: 'auriculares', en: 'headphones' },
@@ -2342,7 +2342,7 @@ window.PASSAGES = [
 
 {
   id: 'elecciones-renidas', title: 'Las elecciones más reñidas en años', level: 5, theme: 'politica',
-  tenses: ['presente', 'perfecto', 'futuro', 'condicional', 'presubj', 'futperf', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'presubj', 'futperf', 'condperf'],
   text: 'Las últimas elecciones municipales han sido las más reñidas de los últimos veinte años. Para cuando se cierren todos los colegios electorales, millones de ciudadanos ya habrán votado en todo el país. Los analistas dudan que se sepa el resultado final esa misma noche, debido a lo ajustado de las encuestas. Muchos votantes esperan que el nuevo ayuntamiento resuelva por fin el problema del transporte público. Algunos creen que campañas menos agresivas habrían generado más confianza en la política. Sea cual sea el resultado, está claro que la participación ha aumentado mucho respecto a las elecciones anteriores.',
   gloss: [
     { es: 'reñidas', en: 'closely contested' },
@@ -2359,7 +2359,7 @@ window.PASSAGES = [
 
 {
   id: 'osos-pirineos', title: 'Los osos que vuelven a los Pirineos', level: 5, theme: 'naturaleza',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'futperf', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'futperf', 'condperf'],
   text: 'Hace treinta años, casi no quedaban osos pardos en los Pirineos, pero la población ha crecido gracias a varios programas de protección. Para el próximo censo, los expertos ya habrán contado más de setenta ejemplares en la zona. Algunos ganaderos temen que los osos ataquen a sus animales, aunque los estudios muestran que estos casos son raros. Los ecologistas esperan que este éxito anime a proteger otras especies en peligro de extinción. Sin estos programas, los osos probablemente habrían desaparecido de la región para siempre. Ahora, ver un oso en libertad ya no es algo tan extraordinario como antes.',
   gloss: [
     { es: 'osos pardos', en: 'brown bears' },
@@ -2376,7 +2376,7 @@ window.PASSAGES = [
 
 {
   id: 'apellido-historia', title: 'Un apellido con historia', level: 5, theme: 'identidad',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'plusc', 'futperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'plusc', 'futperf'],
   text: 'Cuando Sofía empezó a investigar el origen de su apellido, descubrió que su familia había llegado desde Italia hace más de cien años. Para cuando terminó la investigación, ya habrá encontrado documentos de al menos cinco generaciones distintas. Al principio, dudaba que encontrara información tan antigua, pero un archivo local guardaba registros sorprendentes. Sus abuelos nunca le habían contado estos detalles porque, según ellos, no eran importantes. Ahora Sofía siente que entiende mejor quién es y de dónde viene su familia. Espera que sus hijos también quieran conocer esta historia algún día.',
   gloss: [
     { es: 'apellido', en: 'surname' },
@@ -2393,7 +2393,7 @@ window.PASSAGES = [
 
 {
   id: 'cuadro-robado', title: 'El cuadro robado', level: 5, theme: 'arte',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj', 'plusc', 'futperf'],
+  tenses: ['presente', 'imperfecto', 'futuro', 'condicional', 'impsubj', 'plusc', 'futperf'],
   text: 'Hace treinta años, un cuadro famoso desapareció de un museo europeo sin dejar ninguna pista. Para sorpresa de todos, la policía anunció ayer que ya habrá recuperado la obra completa antes del fin de semana. Los investigadores dudaban que el cuadro siguiera en buen estado después de tanto tiempo escondido. Un coleccionista privado lo había comprado sin saber que era robado, según la policía. Los expertos del museo esperan que la restauración no dañe más el cuadro de lo que ya está. Sin este golpe de suerte, la obra probablemente habría permanecido perdida para siempre.',
   gloss: [
     { es: 'pista', en: 'clue, lead' },
@@ -2410,7 +2410,7 @@ window.PASSAGES = [
 
 {
   id: 'banco-cerrado', title: 'El banco que cerró sin avisar', level: 5, theme: 'servicios',
-  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'presubj', 'impsubj', 'futperf', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'presubj', 'futperf', 'condperf'],
   text: 'La semana pasada, la única sucursal bancaria del pueblo cerró sus puertas sin ningún aviso previo. Para cuando los vecinos protestaron frente al edificio, el banco ya habrá trasladado todo el personal a la ciudad más cercana. Muchos ancianos del pueblo dudan que puedan hacer sus gestiones fácilmente por internet, ya que casi nadie les enseñó a usarlo. El alcalde pidió que el banco cambiara la decisión, pero de momento no ha recibido respuesta. Es lamentable que las zonas rurales pierdan cada vez más servicios básicos como este. Sin una solución rápida, muchos vecinos habrían tenido que viajar una hora para hacer cualquier trámite.',
   gloss: [
     { es: 'sucursal', en: 'branch (of a bank)' },
@@ -2427,7 +2427,7 @@ window.PASSAGES = [
 
 {
   id: 'debate-electoral', title: 'El debate que nadie vio venir', level: 5, theme: 'politica',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj', 'futperf', 'condperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj', 'futperf', 'condperf'],
   text: 'Durante el debate electoral de anoche, dos candidatos que normalmente evitan discutir se enfrentaron directamente por primera vez. Los espectadores no esperaban que el debate se pusiera tan tenso desde el principio. Para cuando terminó, millones de personas ya habrán visto el debate en directo o en redes sociales. Los analistas dudan que este momento cambie mucho el resultado final de las elecciones. Algunos periodistas creen que un debate más largo habría permitido hablar más de las propuestas. Es evidente que este tipo de enfrentamientos generan mucho más interés que los discursos tradicionales.',
   gloss: [
     { es: 'se enfrentaron', en: 'confronted each other' },
@@ -2444,7 +2444,7 @@ window.PASSAGES = [
 
 {
   id: 'compra-falsa-internet', title: 'Una compra que no era lo que parecía', level: 5, theme: 'compras',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj', 'futperf', 'condperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj', 'futperf', 'condperf'],
   text: 'El mes pasado, Iván compró unas zapatillas deportivas muy baratas en una página web desconocida. Cuando llegó el paquete, descubrió que las zapatillas eran falsas y de muy mala calidad. Para cuando intentó reclamar, la página web ya habrá desaparecido de internet sin dejar rastro. Iván dudaba que pudiera recuperar su dinero, pero decidió denunciarlo de todas formas. Los expertos en seguridad recomiendan que la gente compre solo en páginas web conocidas y de confianza. Una tienda oficial le habría costado más, pero le habría ahorrado todos estos problemas.',
   gloss: [
     { es: 'rastro', en: 'trace' },
@@ -2478,7 +2478,7 @@ window.PASSAGES = [
 
 {
   id: 'mural-barrio', title: 'Un mural en el barrio', level: 4, theme: 'arte',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj'],
   text: 'El ayuntamiento pidió a varios artistas locales que pintaran un mural en la fachada de un edificio abandonado. Antes de este proyecto, esa pared llevaba años cubierta de pintadas sin ningún sentido artístico. Algunos vecinos dudaban que un mural pudiera cambiar realmente el aspecto del barrio. Sin embargo, después de dos semanas de trabajo, el resultado sorprendió a todos por su belleza y color. Es maravilloso que el arte pueda transformar así un espacio olvidado, comentó una vecina emocionada. Ahora el mural se ha convertido en un lugar popular para hacerse fotos.',
   gloss: [
     { es: 'fachada', en: 'facade' },
@@ -2529,7 +2529,7 @@ window.PASSAGES = [
 ,
 {
   id: 'tren-nocturno-b1', title: 'El tren nocturno', level: 4, theme: 'viajes',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
   text: 'Cuando llegué a la estación, el tren nocturno ya había salido sin mí por segunda vez ese mes. El siguiente no pasaba hasta las seis de la mañana, así que decidí buscar un banco tranquilo para esperar. Una señora mayor, sentada a mi lado, me contó que había perdido el mismo tren tres veces en su vida, siempre por el mismo motivo: se quedaba dormida leyendo. Nos reímos juntos y compartimos un café mientras esperábamos el amanecer. Cuando por fin subí al tren, prometí comprarme un despertador nuevo antes del próximo viaje.',
   gloss: [
     { es: 'la estación', en: 'the station' },
@@ -2563,7 +2563,7 @@ window.PASSAGES = [
 
 {
   id: 'incendio-bosque-cercano', title: 'El incendio del bosque cercano', level: 4, theme: 'naturaleza',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'plusc'],
   text: 'El bosque cerca de mi pueblo nunca había sufrido un incendio tan grande hasta que llegó el verano pasado. Los bomberos trabajaron tres días sin descanso para apagar las llamas antes de que alcanzaran las primeras casas. Mis vecinos temían que el fuego llegara hasta el pueblo, así que muchos prepararon el coche por si tenían que salir corriendo. Por suerte, el viento cambió de dirección y el incendio se apagó a tiempo. Ahora el ayuntamiento planea plantar árboles nuevos en la zona quemada. Algunos vecinos dudan que el bosque recupere su aspecto original en menos de treinta años.',
   gloss: [
     { es: 'las llamas', en: 'the flames' },
@@ -2580,7 +2580,7 @@ window.PASSAGES = [
 
 {
   id: 'dolor-espalda-cronico', title: 'El dolor de espalda que no se iba', level: 4, theme: 'salud',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'plusc'],
   text: 'Elena nunca había tenido problemas de espalda hasta que empezó a trabajar desde casa hace dos años. Al principio pensaba que el dolor desaparecería solo, pero cada mes se sentía peor. Su médico le recomendó que cambiara la silla y que hiciera pausas cada hora para levantarse y estirar las piernas. También le sugirió que caminara media hora todos los días, aunque al principio le costaba encontrar el tiempo. Después de tres meses siguiendo esos consejos, Elena nota que el dolor ha bajado bastante. Ahora recomienda a todos sus compañeros que cuiden su postura desde el primer día de trabajo.',
   gloss: [
     { es: 'estirar', en: 'to stretch' },
@@ -2597,7 +2597,7 @@ window.PASSAGES = [
 
 {
   id: 'tesis-doctoral-tarde', title: 'La tesis que se alargó', level: 4, theme: 'educacion',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'plusc'],
   text: 'Marcos empezó su tesis doctoral con la idea de terminarla en tres años, pero las cosas no salieron como esperaba. Para cuando defendió el trabajo ante el tribunal, ya había cambiado de tema dos veces y había perdido casi todo el dinero de la beca. Sus compañeros de laboratorio le decían que era normal que un doctorado se retrasara, aunque a él le costaba creerlo cada vez que veía a otros compañeros graduarse antes. El día de la defensa, sin embargo, todo salió mejor de lo previsto: el tribunal elogió la originalidad de su investigación. Marcos aprendió que la ciencia rara vez sigue el calendario que uno imagina al principio.',
   gloss: [
     { es: 'el tribunal', en: 'the examining panel' },
@@ -2614,7 +2614,7 @@ window.PASSAGES = [
 
 {
   id: 'empresa-familiar-cierre', title: 'La empresa familiar que cerró', level: 4, theme: 'economia',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'plusc'],
   text: 'Para cuando la familia Ortiz decidió cerrar la ferretería, el negocio ya había perdido dinero durante cuatro años seguidos. El abuelo la había abierto en 1965 y siempre soñó con que sus nietos la continuaran, pero ninguno quiso dedicarse al comercio. Los precios de los grandes almacenes cercanos habían bajado tanto que ya no podían competir. La familia lamenta la decisión, aunque entiende que no había otra opción razonable. Muchos vecinos del barrio, tristes por la noticia, prometieron comprar allí sus últimas semanas, hasta que bajara definitivamente la persiana. El local, dicen, se convertirá pronto en una cafetería.',
   gloss: [
     { es: 'la ferretería', en: 'the hardware store' },
@@ -2631,7 +2631,7 @@ window.PASSAGES = [
 
 {
   id: 'confesion-hermano', title: 'Lo que me confesó mi hermano', level: 4, theme: 'relaciones',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'plusc', 'condperf'],
   text: 'Mi hermano me llamó anoche y me dijo que había dejado su trabajo hace un mes sin decírselo a nadie de la familia. Me explicó que había estado muy infeliz durante el último año y que había preferido resolverlo solo antes de preocupar a nuestros padres. Le pregunté por qué no había confiado en mí antes, y me respondió que temía que yo tratara de convencerlo de quedarse. Le dije que entendía su decisión, aunque me habría gustado saberlo desde el principio. Ahora está buscando algo que realmente le haga feliz, y toda la familia espera que lo encuentre pronto.',
   gloss: [
     { es: 'preocupar', en: 'to worry (someone)' },
@@ -2648,7 +2648,7 @@ window.PASSAGES = [
 
 {
   id: 'periodista-fuente-secreta', title: 'La fuente que nadie esperaba', level: 4, theme: 'medios',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'plusc'],
   text: 'La periodista publicó el reportaje después de meses de investigación sobre la empresa de transporte municipal. Me contó que había hablado con un exempleado que había guardado documentos internos durante años sin saber muy bien por qué. Ese empleado le dijo que había decidido hablar porque ya no soportaba ver cómo se repetían los mismos errores. El periódico protegió su identidad durante todo el proceso, como exige la ley en estos casos. Tras la publicación, el ayuntamiento anunció que abriría una investigación oficial sobre el asunto. La periodista desea que este caso anime a otras personas a denunciar irregularidades similares.',
   gloss: [
     { es: 'el reportaje', en: 'the (news) report' },
@@ -2665,7 +2665,7 @@ window.PASSAGES = [
 
 {
   id: 'primera-exposicion-pintora', title: 'Su primera exposición', level: 4, theme: 'arte',
-  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'impsubj', 'plusc'],
   text: 'Era la primera vez que Nuria exponía sus cuadros fuera de la escuela de arte donde había estudiado. Durante semanas había pintado sin descanso, buscando el estilo que mejor la representara. La noche de la inauguración llegaron más de cien personas, muchas más de las que ella había imaginado. Un crítico local se acercó y le preguntó de dónde había sacado la inspiración para la serie sobre el puerto de su ciudad. Nuria respondió que llevaba toda la vida mirando ese puerto desde la ventana de su casa. Al final de la noche, había vendido tres cuadros, algo que jamás había esperado.',
   gloss: [
     { es: 'la inauguración', en: 'the opening (of an exhibition)' },
@@ -2699,7 +2699,7 @@ window.PASSAGES = [
 
 {
   id: 'coche-segunda-mano-averiado', title: 'El coche que no era una ganga', level: 4, theme: 'compras',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
   text: 'Si Diego hubiera sabido lo que le esperaba, nunca habría comprado ese coche de segunda mano por internet. El vendedor le aseguró que el motor estaba en perfecto estado, pero a la semana empezó a hacer un ruido extraño cada vez que arrancaba. El mecánico le explicó que arreglarlo costaría casi la mitad de lo que había pagado por el coche. Diego intentó contactar con el vendedor, pero el número de teléfono ya no funcionaba. Ahora aconseja a todo el mundo que revise cualquier coche con un mecánico de confianza y no pague nada hasta estar seguro. Al menos, dice riendo, aprendió la lección más cara de su vida.',
   gloss: [
     { es: 'una ganga', en: 'a bargain' },
@@ -2716,7 +2716,7 @@ window.PASSAGES = [
 
 {
   id: 'piso-con-humedades', title: 'El piso con un secreto', level: 4, theme: 'vivienda',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
   text: 'Si Marta hubiera sabido que el piso tenía humedades, jamás habría firmado el contrato tan rápido. Descubrió el problema el segundo invierno, cuando una mancha oscura apareció en la pared del salón. El casero insistía en que era algo nuevo, pero un vecino le contó que el piso de abajo ya se había quejado del mismo problema años atrás. Marta contrató a un perito para que revisara el edificio entero antes de tomar cualquier decisión legal. El informe confirmó que la humedad venía de una tubería rota que nadie había reparado nunca. Ahora, con esa prueba, Marta espera que el casero por fin arregle el problema de raíz.',
   gloss: [
     { es: 'las humedades', en: 'damp problems' },
@@ -2733,7 +2733,7 @@ window.PASSAGES = [
 
 {
   id: 'laboratorio-cerrado-descubrimiento', title: 'El laboratorio que habían cerrado', level: 4, theme: 'ciencia',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc'],
   text: 'Los investigadores volvieron a analizar las muestras del laboratorio que habían cerrado por falta de fondos hace diez años. Nadie esperaba encontrar nada útil entre esas cajas olvidadas, pero un joven científico insistió en revisarlas en vez de tirarlas directamente a la basura. Descubrió que varias muestras contenían una bacteria que podría ayudar a desarrollar un nuevo tratamiento. El equipo publicó los resultados en una revista internacional, y varias universidades se mostraron interesadas en financiar la investigación. Es sorprendente que un descubrimiento tan importante viniera de un lugar que todos habían dado por perdido. El científico bromea diciendo que a veces la ciencia premia a los que no tiran nada.',
   gloss: [
     { es: 'las muestras', en: 'the samples' },
@@ -2750,7 +2750,7 @@ window.PASSAGES = [
 
 {
   id: 'ley-transporte-aprobada', title: 'La ley que habían discutido durante años', level: 4, theme: 'politica',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'plusc'],
   text: 'El parlamento aprobó por fin la ley de transporte público que habían discutido durante casi cinco años sin llegar a un acuerdo. Los partidos de la oposición votaron en contra, alegando que el plan costaría demasiado dinero al ayuntamiento. Los defensores de la ley respondieron que el transporte gratuito para menores de dieciocho años reduciría el tráfico en el centro. Muchos vecinos, cansados de tantos debates, simplemente desean que la ley se aplique cuanto antes. El alcalde prometió que los nuevos autobuses eléctricos empezarían a circular antes de fin de año. Los periódicos locales seguirán de cerca si esa promesa se cumple.',
   gloss: [
     { es: 'el parlamento', en: 'the parliament' },
@@ -2767,7 +2767,7 @@ window.PASSAGES = [
 ,
 {
   id: 'si-tuviera-otro-cuerpo', title: 'Si pudiera cambiar algo', level: 4, theme: 'cuerpo',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'impsubj'],
+  tenses: ['presente', 'perfecto', 'imperfecto', 'condicional', 'impsubj'],
   text: 'Mi abuela siempre dice que si tuviera veinte años menos, correría todas las mañanas por el parque como hacía antes. Ahora camina despacio porque le duelen las rodillas, pero no se queja nunca. Cada semana va a una clase de gimnasia suave pensada para personas mayores, y allí ha hecho varias amigas nuevas. El médico le explicó que mantener el cuerpo en movimiento es más importante que hacerlo rápido. A ella le gustaría tener la energía de antes, pero prefiere disfrutar de lo que su cuerpo todavía le permite hacer. Cada domingo, eso sí, insiste en subir sola las escaleras de su edificio.',
   gloss: [
     { es: 'las rodillas', en: 'the knees' },
@@ -2784,7 +2784,7 @@ window.PASSAGES = [
 
 {
   id: 'si-tuviera-mas-paciencia', title: 'Un carácter que cuesta cambiar', level: 4, theme: 'caracter',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'impsubj'],
   text: 'Pablo reconoce que si tuviera más paciencia, discutiría mucho menos con sus compañeros de piso. Se enfada con facilidad cuando algo no sale como esperaba, aunque después siempre se arrepiente. Su terapeuta le sugirió que contara hasta diez y esperara un momento para responder cuando sintiera que se enfadaba. Al principio le parecía una tontería, pero con el tiempo ha notado que realmente funciona. Sus amigos dicen que Pablo ha cambiado mucho este último año, aunque él cree que todavía le queda trabajo por hacer. De momento, se conforma con discutir un poco menos cada mes.',
   gloss: [
     { es: 'se arrepiente', en: 'he regrets it' },
@@ -2801,7 +2801,7 @@ window.PASSAGES = [
 
 {
   id: 'ojala-recordara-mas', title: 'Ojalá recordara más', level: 4, theme: 'identidad',
-  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj', 'impsubj', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'presubj', 'condperf'],
   text: 'Ojalá recordara mejor los primeros años de mi vida, pero solo me quedan algunas imágenes sueltas. Mi madre cuenta historias que yo no recuerdo en absoluto, como el día en que aprendí a caminar en la playa. A veces me pregunto cuánto de lo que creo saber sobre mí mismo viene de mis propios recuerdos y cuánto viene de lo que me han contado otros. Un psicólogo me explicó que esto es completamente normal: casi nadie guarda recuerdos de sus primeros tres años de vida. Aun así, me habría gustado guardar más recuerdos propios de esa época tan importante. Por eso, ahora escribo un diario cada noche, para que mis hijos no tengan el mismo problema.',
   gloss: [
     { es: 'sueltas', en: 'scattered, loose' },
@@ -2835,7 +2835,7 @@ window.PASSAGES = [
 
 {
   id: 'me-pidio-plan-jubilacion', title: 'Lo que me pidió mi jefa', level: 4, theme: 'servicios',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'plusc'],
   text: 'Mi jefa me pidió que organizara el archivo de reclamaciones del ayuntamiento antes de que llegara la inspección anual. Nunca había visto tantos papeles desordenados en un solo despacho, así que tardé casi una semana en clasificarlo todo por temas. Los vecinos habían presentado quejas sobre el agua, la limpieza de las calles y la recogida de basura, entre muchas otras cosas. Al terminar, mi jefa me pidió también que preparara un resumen breve para el inspector. El día de la visita, todo estuvo listo a tiempo y el inspector felicitó al departamento por el orden del archivo. Desde entonces, me han pedido que revise el sistema una vez al mes.',
   gloss: [
     { es: 'las reclamaciones', en: 'the complaints (formal)' },
@@ -2852,7 +2852,7 @@ window.PASSAGES = [
 
 {
   id: 'me-pidio-que-rezara', title: 'Lo que me pidió mi abuelo', level: 4, theme: 'religion',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'impsubj'],
   text: 'Poco antes del final, mi abuelo me pidió que rezara por él cada domingo, aunque yo nunca fui una persona muy religiosa. Al principio me sentía extraño haciéndolo, como si estuviera representando un papel que no me correspondía. Con el tiempo, sin embargo, ese momento de silencio se convirtió en algo importante para mí, aunque no supiera bien explicar por qué. No creo que necesite compartir las mismas creencias que tenía mi abuelo para respetar lo que me pidió. Mi madre dice que cada persona encuentra su propia forma de recordar a quienes ya no están. Yo he encontrado la mía en ese pequeño ritual de los domingos por la mañana.',
   gloss: [
     { es: 'representando un papel', en: 'playing a role' },
@@ -2869,7 +2869,7 @@ window.PASSAGES = [
 
 {
   id: 'como-si-nada-hubiera-pasado', title: 'Como si nada hubiera pasado', level: 4, theme: 'relaciones',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj', 'plusc', 'perfsubj'],
   text: 'Después de la discusión, mi compañera de trabajo me saludó al día siguiente como si nada hubiera pasado entre nosotras. Al principio pensé que seguía enfadada y que solo fingía calma, pero después de hablar entendí que de verdad lo había olvidado. Ella me explicó que prefiere no guardar rencor porque le quita energía para el resto del día. Yo, en cambio, necesito hablar las cosas para poder pasar página completamente. Aprendimos que cada una gestiona los conflictos de forma distinta, y eso está bien. Ahora, cuando discutimos por algo del proyecto, buscamos un punto intermedio entre su calma y mi necesidad de hablarlo todo.',
   gloss: [
     { es: 'fingía', en: 'she was pretending' },
@@ -2903,7 +2903,7 @@ window.PASSAGES = [
 
 {
   id: 'aunque-fuera-dificil-emigrar', title: 'Aunque fuera difícil, se fue', level: 4, theme: 'viajes',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'impsubj'],
   text: 'Aunque fuera difícil dejar a su familia, Teresa decidió mudarse a otro país para estudiar un máster en ingeniería. Sus padres le pidieron que lo pensara bien antes de tomar una decisión tan grande a los veintitrés años. Ella respondió que, aunque fuera duro al principio, prefería intentarlo y equivocarse a quedarse siempre con la duda. Los primeros meses fueron los más complicados: no conocía a nadie y todo, hasta hacer la compra, le parecía nuevo y confuso. Con el tiempo hizo amigos en la universidad y empezó a sentirse como en casa. Ahora, un año después, le dice a cualquiera que se lo pregunte que fue la mejor decisión de su vida.',
   gloss: [
     { es: 'el máster', en: 'the master’s degree' },
@@ -2920,7 +2920,7 @@ window.PASSAGES = [
 
 {
   id: 'aunque-fuera-caro-invertir', title: 'Aunque fuera caro, invirtió', level: 4, theme: 'economia',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj'],
   text: 'Aunque fuera caro modernizar toda la maquinaria, el dueño de la fábrica decidió invertir el dinero ahorrado durante años. Sus socios dudaban de la decisión, pues temían que la empresa no recuperara la inversión a tiempo. Él insistía en que, aunque fuera un riesgo grande, quedarse con las máquinas antiguas sería un riesgo aún mayor a largo plazo. Los primeros meses fueron difíciles porque los empleados necesitaron formación para aprender a usar los equipos nuevos. Sin embargo, la producción aumentó un cuarenta por ciento en menos de un año. Ahora, sus socios reconocen que aunque pareciera arriesgado entonces, fue la decisión correcta para la empresa.',
   gloss: [
     { es: 'la maquinaria', en: 'the machinery' },
@@ -2937,7 +2937,7 @@ window.PASSAGES = [
 
 {
   id: 'buscaba-un-medico-que-escuchara', title: 'Buscaba un médico que la escuchara', level: 4, theme: 'medios',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional'],
   text: 'La redactora buscaba a alguien que le explicara con claridad las nuevas normas de privacidad de las redes sociales, sin usar un lenguaje demasiado técnico. Después de contactar con varios expertos que solo repetían términos legales, encontró a una abogada joven especializada en tecnología. La abogada le explicó cada punto con ejemplos sencillos, comparando las normas con situaciones cotidianas que cualquier lector entendería. Gracias a esa entrevista, el artículo se convirtió en uno de los más leídos del mes en el periódico digital. Muchos lectores escribieron para agradecer que por fin alguien explicara el tema sin complicarlo innecesariamente. La redactora dice que ese es, precisamente, el trabajo que más le gusta hacer.',
   gloss: [
     { es: 'la redactora', en: 'the (female) writer/editor' },
@@ -2954,7 +2954,7 @@ window.PASSAGES = [
 
 {
   id: 'buscaba-planta-que-resistiera', title: 'Buscaba una planta que resistiera la sequía', level: 4, theme: 'naturaleza',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj'],
   text: 'El biólogo buscaba desde hacía años una planta que resistiera largos periodos de sequía sin necesitar apenas agua. Viajó por varias regiones áridas del país tomando muestras y hablando con agricultores locales sobre las especies que mejor sobrevivían. En un pueblo pequeño, un anciano le mostró una planta silvestre que su familia usaba desde generaciones para épocas de escasez. El biólogo analizó la planta en su laboratorio y descubrió que podría adaptarse a otras zonas afectadas por el cambio climático. Publicó sus resultados con la esperanza de que ayudaran a otros agricultores a enfrentar los veranos cada vez más secos. Para él, esa planta representa una pequeña victoria frente a un problema enorme.',
   gloss: [
     { es: 'áridas', en: 'arid' },
@@ -3073,7 +3073,7 @@ window.PASSAGES = [
 
 {
   id: 'quienquiera-que-gane-elecciones', title: 'Quienquiera que gane', level: 4, theme: 'ciencia',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
   text: 'Los científicos del instituto de investigación climática han pedido que, quienquiera que gane las próximas elecciones, mantenga el presupuesto destinado a sus proyectos. Durante los últimos diez años, el equipo ha estudiado cómo el aumento de la temperatura afecta a los glaciares de la región. Los resultados han sido publicados en revistas internacionales y citados por otros grupos de investigación en varios países. Sin embargo, cada cambio de gobierno trae consigo el riesgo de recortes que podrían dejar el proyecto a medias. Los investigadores explican que quienquiera que tome la decisión debería entender que estos estudios necesitan décadas, no solo unos meses, para dar resultados fiables. Por ahora, siguen trabajando con los medios que tienen, esperando que la política no interrumpa lo que la ciencia ha construido con tanto esfuerzo.',
   gloss: [
     { es: 'el presupuesto', en: 'the budget' },
@@ -3090,7 +3090,7 @@ window.PASSAGES = [
 
 {
   id: 'hasta-que-no-firmen-acuerdo', title: 'Hasta que no firmen el acuerdo', level: 4, theme: 'trabajo',
-  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'presubj'],
+  tenses: ['presente', 'perfecto', 'futuro', 'presubj'],
   text: 'Los trabajadores de la fábrica han anunciado que seguirán en huelga hasta que no firmen un acuerdo salarial que consideren justo. La empresa ofrece un aumento del dos por ciento, mientras que el sindicato pide al menos un cinco por ciento para compensar la subida de los precios. Ambas partes se reunieron esta semana, pero la reunión terminó sin ningún acuerdo tras casi seis horas de negociación. Los trabajadores insisten en que no volverán a las máquinas hasta que no vean una propuesta razonable sobre la mesa. La dirección, por su parte, advierte que la huelga está afectando gravemente la producción y los pedidos internacionales. Un mediador contratado por el ayuntamiento intentará acercar posturas la próxima semana, aunque nadie sabe cuánto tiempo más durará el conflicto.',
   gloss: [
     { es: 'la huelga', en: 'the strike' },
@@ -3107,7 +3107,7 @@ window.PASSAGES = [
 
 {
   id: 'firme-aqui-imperativo', title: 'Firme aquí, para que quede constancia', level: 4, theme: 'servicios',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'impsubj', 'plusc'],
   text: 'El funcionario le explicó al ciudadano: "Firme aquí, por favor, para que quede constancia de que ha recibido toda la información." El trámite, que en teoría dura quince minutos, llevaba ya más de una hora debido a un problema con el sistema informático de la oficina. El ciudadano, cansado de esperar, preguntó si podía volver otro día para terminarlo con más calma. El funcionario le pidió que tuviera un poco más de paciencia, porque el sistema estaba a punto de volver a funcionar. Finalmente, tras otros veinte minutos de espera, pudo firmar los últimos documentos y salir de la oficina con su nuevo permiso. Al salir, comentó a su pareja que nunca había entendido por qué algo tan simple podía complicarse tanto.',
   gloss: [
     { es: 'que quede constancia', en: 'so there is a record' },
@@ -3175,7 +3175,7 @@ window.PASSAGES = [
 
 {
   id: 'no-creo-que-cierre-la-tienda', title: 'No creo que cierre tan pronto', level: 4, theme: 'compras',
-  tenses: ['presente', 'perfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj'],
   text: 'El dueño de la tienda de barrio insiste en que no cree que su negocio cierre pronto, a pesar de la competencia de los grandes supermercados. Reconoce que las ventas han bajado en los últimos años, pero destaca que muchos clientes siguen prefiriendo un trato más cercano y personal. Sus clientes más fieles no creen que un supermercado grande pueda ofrecer nunca el mismo servicio que reciben en la tienda del barrio, donde el dueño conoce a cada familia por su nombre. Aun así, ha empezado a vender también productos por internet para llegar a más gente. No cree que esta nueva estrategia sustituya a la tienda física, pero desea que ayude a mantener el negocio a flote. Para él, cada cliente que entra por la puerta es una razón más para seguir adelante.',
   gloss: [
     { es: 'la competencia', en: 'the competition' },
@@ -3209,7 +3209,7 @@ window.PASSAGES = [
 ,
 {
   id: 'para-diciembre-habran-terminado-puente', title: 'Para diciembre, el puente estará listo', level: 5, theme: 'ciencia',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'futperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'futperf'],
   text: 'Los ingenieros calculan que, para diciembre, ya habrán terminado la construcción del nuevo puente que conectará los dos barrios separados por el río. El proyecto, que lleva año y medio en obras, ha usado una técnica poco habitual en la región para reducir el impacto ambiental durante la construcción. Para cuando el puente abra al tráfico, los ingenieros habrán probado su resistencia con varios ensayos de carga, simulando el peso de camiones y autobuses. Los vecinos de ambos barrios llevan meses esperando este momento, ya que hasta ahora tenían que dar un rodeo de veinte minutos en coche. El ayuntamiento ha prometido que, para cuando termine el año, también habrá terminado de iluminar toda la zona cercana al puente. Los ingenieros están convencidos de que esta obra cambiará la vida diaria de miles de personas.',
   gloss: [
     { es: 'las obras', en: 'the construction works' },
@@ -3226,7 +3226,7 @@ window.PASSAGES = [
 
 {
   id: 'para-junio-habre-ahorrado', title: 'Para junio, habré ahorrado lo suficiente', level: 5, theme: 'economia',
-  tenses: ['presente', 'perfecto', 'futuro', 'presubj', 'futperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'futperf'],
   text: 'Marina calcula que, para junio, ya habrá ahorrado lo suficiente para dar la entrada de un piso pequeño en las afueras. Lleva dos años apuntando cada gasto en una aplicación del móvil y ha reducido al mínimo las salidas a restaurantes los fines de semana. Sus padres le han ofrecido prestarle una parte del dinero, pero ella prefiere demostrarse a sí misma que puede lograrlo sola. Para cuando llegue el verano, también habrá terminado de comparar hipotecas entre varios bancos, algo que le está costando más de lo esperado. Sus amigos bromean diciendo que, para cuando por fin compre el piso, ya se habrá convertido en una experta en finanzas personales. Marina se ríe, pero admite que ha aprendido mucho sobre dinero en este proceso.',
   gloss: [
     { es: 'la entrada', en: 'the down payment' },
@@ -3243,7 +3243,7 @@ window.PASSAGES = [
 
 {
   id: 'para-los-juegos-habran-entrenado', title: 'Para los juegos, habrán entrenado durante años', level: 5, theme: 'ocio',
-  tenses: ['presente', 'perfecto', 'futuro', 'condicional', 'presubj', 'impsubj', 'futperf', 'condperf', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'presubj', 'futperf', 'condperf', 'perfsubj'],
   text: 'Los organizadores calculan que, para el inicio de los juegos regionales, los atletas más jóvenes habrán entrenado durante casi cuatro años bajo el nuevo programa deportivo del ayuntamiento. El programa, pensado para niños de barrios con pocos recursos, ofrece entrenamiento gratuito y transporte hasta las instalaciones deportivas. Para cuando lleguen las primeras competiciones, varios entrenadores habrán identificado ya a los talentos con más posibilidades de representar a la ciudad en el futuro. Una de las participantes, de solo trece años, ha mejorado tanto su marca en salto de altura que ya compite con chicas de dieciséis. Sus padres, emocionados, dicen que jamás habrían imaginado que su hija llegara tan lejos en tan poco tiempo. El ayuntamiento espera que, para dentro de unos años, el programa haya cambiado por completo el deporte local.',
   gloss: [
     { es: 'las instalaciones', en: 'the facilities' },
@@ -3260,7 +3260,7 @@ window.PASSAGES = [
 
 {
   id: 'no-contesta-habra-salido-cita', title: 'No contesta: habrá salido ya', level: 5, theme: 'relaciones',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'plusc', 'futperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'plusc', 'futperf'],
   text: 'Llevo toda la tarde llamando a mi hermana y no contesta, así que supongo que habrá salido sin el teléfono otra vez, como suele hacer los sábados. Quedamos para cenar juntas a las nueve, pero ya son las ocho y media y todavía no sé nada de ella. Mi madre dice que no me preocupe, que seguramente habrá perdido la noción del tiempo hablando con alguna amiga en la calle. Yo, sin embargo, empiezo a pensar que quizás se habrá olvidado por completo de nuestro plan, algo que ya ha pasado antes. Justo cuando decido llamar a un par de amigas suyas para preguntar, ella me escribe un mensaje diciendo que llega en diez minutos. Al final, resulta que se había quedado dormida después de una siesta demasiado larga.',
   gloss: [
     { es: 'la noción del tiempo', en: 'track of time' },
@@ -3294,7 +3294,7 @@ window.PASSAGES = [
 
 {
   id: 'en-cuanto-hayan-terminado-cosecha', title: 'En cuanto hayan terminado la cosecha', level: 5, theme: 'naturaleza',
-  tenses: ['presente', 'perfecto', 'futuro', 'presubj', 'futperf', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'presubj', 'futperf', 'perfsubj'],
   text: 'Los agricultores de la zona desean que, en cuanto hayan terminado la cosecha de este año, los precios del trigo suban un poco tras una temporada especialmente seca. Para cuando llegue octubre, ya habrán recogido casi toda la producción, aunque el rendimiento ha sido menor de lo esperado debido a la falta de lluvias. Uno de los agricultores más veteranos explica que, en cuanto hayan terminado de vender la cosecha, empezarán a planificar el próximo año con cultivos que necesiten menos agua. El gobierno regional ha prometido ayudas económicas para quienes decidan cambiar a técnicas de riego más eficientes. Los agricultores más jóvenes, sin embargo, dudan que esas ayudas lleguen a tiempo para la próxima siembra. Todos coinciden en que, para cuando pase esta crisis, el campo tendrá que adaptarse definitivamente al nuevo clima.',
   gloss: [
     { es: 'la cosecha', en: 'the harvest' },
@@ -3311,7 +3311,7 @@ window.PASSAGES = [
 
 {
   id: 'habria-votado-distinto-referendum', title: 'Habría votado distinto, pero no tenía toda la información', level: 5, theme: 'politica',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
   text: 'Mi vecino admite ahora que habría votado distinto en el referéndum del año pasado si hubiera tenido toda la información sobre el impacto económico de la nueva ley. En su momento, se dejó llevar por lo que decían sus amigos y por algunos titulares que después resultaron ser exagerados. Yo, en cambio, había investigado bastante antes de votar, así que mi decisión no cambió cuando aparecieron los nuevos datos. Le expliqué que habría sido mejor que se informara con varias fuentes distintas antes de decidir, en lugar de fiarse solo de una opinión. Él reconoce que, con toda la polémica de aquel momento, habría sido difícil mantenerse completamente objetivo. Ahora, antes de cualquier votación importante, dice que se toma más tiempo para leer distintas versiones de la misma noticia.',
   gloss: [
     { es: 'los titulares', en: 'the headlines' },
@@ -3345,7 +3345,7 @@ window.PASSAGES = [
 
 {
   id: 'yo-que-tu-habria-consultado-medico', title: 'Yo que tú, habría consultado antes', level: 5, theme: 'salud',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf'],
   text: 'Cuando le conté a mi amiga, que es enfermera, que llevaba semanas tomando un suplemento que encontré recomendado en internet, me miró seria y me dijo: "Yo que tú, habría consultado a un médico antes de tomar nada sin receta." Me explicó que algunos suplementos pueden interactuar de forma peligrosa con otros medicamentos, incluso si parecen completamente naturales. Reconocí que no había investigado mucho, simplemente confié en los comentarios positivos que había leído en una página web. Ella insistió en que, aunque el producto pareciera inofensivo, siempre es mejor pedir opinión profesional antes de empezar un tratamiento nuevo. Al final decidí dejar de tomarlo y pedir cita con mi médico de cabecera para que revisara mi caso. Ahora entiendo que, en temas de salud, más vale prevenir que confiar ciegamente en internet.',
   gloss: [
     { es: 'el suplemento', en: 'the supplement' },
@@ -3396,7 +3396,7 @@ window.PASSAGES = [
 
 {
   id: 'para-cuando-el-satelite-habra-orbitado', title: 'Para entonces, el satélite ya habrá orbitado la Tierra miles de veces', level: 5, theme: 'ciencia',
-  tenses: ['presente', 'imperfecto', 'futuro', 'presubj', 'plusc', 'futperf', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'plusc', 'futperf', 'perfsubj'],
   text: 'Los científicos del proyecto espacial calculan que, para cuando termine la misión dentro de tres años, el satélite ya habrá orbitado la Tierra varias decenas de miles de veces, recogiendo datos sobre el nivel de los océanos. El equipo, formado por investigadores de cinco países distintos, lleva más de una década preparando esta misión conjunta. Para cuando lleguen los primeros resultados completos, los ingenieros habrán tenido que resolver problemas técnicos que nadie había anticipado, como interferencias inesperadas en las señales. Una de las investigadoras principales explica que, en cuanto hayan analizado los primeros meses de datos, publicarán un informe preliminar para la comunidad científica internacional. Los gobiernos que financian el proyecto esperan que, para cuando concluya la misión, se hayan tomado decisiones más informadas sobre el cambio climático. El equipo trabaja con la convicción de que cada dato recogido puede marcar una diferencia real.',
   gloss: [
     { es: 'orbitado', en: 'orbited' },
@@ -3533,7 +3533,7 @@ window.PASSAGES = [
 
 {
   id: 'correos-paquete-a2', title: 'Un paquete perdido', level: 3, theme: 'servicios',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'plusc'],
   text: 'La semana pasada envié un paquete importante desde la oficina de correos. Pagué un poco más para que llegara rápido, pero después de cinco días todavía no había llegado. Llamé a la oficina y me dijeron que revisarían el problema. Al día siguiente, me informaron que el paquete se había quedado en otra ciudad por error. Por suerte, lo enviaron de nuevo y llegó dos días después sin ningún daño. La empleada me pidió disculpas y me devolvió parte del dinero que pagué.',
   gloss: [
     { es: 'la oficina de correos', en: 'the post office' },
@@ -3550,7 +3550,7 @@ window.PASSAGES = [
 
 {
   id: 'robot-limpieza-a2', title: 'El robot que limpia solo', level: 2, theme: 'ciencia',
-  tenses: ['presente', 'preterito', 'imperfecto'],
+  tenses: ['presente', 'imperfecto'],
   text: 'Mi hermano compró un pequeño robot que limpia el suelo de la casa. Al principio, no confiaba mucho en la máquina porque parecía muy simple. El robot conoce toda la casa gracias a un mapa que hace la primera vez que funciona. Cada mañana, empieza a limpiar solo mientras mi hermano está en el trabajo. Cuando la batería está baja, vuelve solo a su base para cargarse. Ahora mi hermano dice que no puede vivir sin él.',
   gloss: [
     { es: 'confiaba', en: 'he trusted' },
@@ -3618,7 +3618,7 @@ window.PASSAGES = [
 
 {
   id: 'alcalde-nuevo-a2', title: 'El nuevo alcalde', level: 2, theme: 'politica',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'imperfecto'],
   text: 'El mes pasado, el pueblo eligió a un alcalde nuevo después de muchos años con el mismo. Mucha gente votó porque quería cambios en el transporte público. El nuevo alcalde prometió construir más autobuses y mejorar las calles del centro. Algunos vecinos están contentos con la promesa, pero otros creen que no se va a cumplir tan rápido. La semana pasada, el alcalde organizó una reunión para escuchar las opiniones de todos. Ahora esperamos ver si los cambios llegan pronto.',
   gloss: [
     { es: 'el alcalde', en: 'the mayor' },
@@ -3703,7 +3703,7 @@ window.PASSAGES = [
 
 {
   id: 'perro-perdido-a2', title: 'El perro perdido', level: 2, theme: 'naturaleza',
-  tenses: ['preterito', 'imperfecto'],
+  tenses: ['presente', 'preterito', 'imperfecto'],
   text: 'Ayer por la tarde, un perro pequeño apareció en nuestro jardín sin dueño. Le dimos agua y un poco de comida mientras pensábamos qué hacer. Mi hijo hizo carteles con una foto del perro y los puso por todo el barrio. Dos días después, una vecina llamó porque reconoció al perro en uno de los carteles. La familia del perro vino a buscarlo y nos dieron las gracias muchas veces. Mi hijo estaba un poco triste, pero contento de haber ayudado.',
   gloss: [
     { es: 'sin dueño', en: 'without an owner' },
@@ -3720,7 +3720,7 @@ window.PASSAGES = [
 
 {
   id: 'tormenta-noche-a2', title: 'Una tormenta por la noche', level: 2, theme: 'naturaleza',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'imperfecto'],
   text: 'Anoche hubo una tormenta muy fuerte con mucho viento y lluvia. Los truenos eran tan fuertes que mi hija pequeña se despertó asustada. La abracé y le expliqué que las tormentas no duran mucho tiempo. Nos sentamos juntas cerca de la ventana y contamos los segundos entre el rayo y el trueno. Poco a poco, la tormenta se alejó y mi hija se durmió otra vez. Por la mañana, el cielo estaba limpio y el jardín olía a lluvia.',
   gloss: [
     { es: 'los truenos', en: 'the thunder' },
@@ -3754,7 +3754,7 @@ window.PASSAGES = [
 
 {
   id: 'abuela-recetas-a2', title: 'Las recetas de mi abuela', level: 3, theme: 'identidad',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'plusc'],
   text: 'Cuando era pequeña, pasaba muchas tardes en la cocina con mi abuela. Ella me enseñaba a preparar platos que había aprendido de su propia madre. Nunca escribía las cantidades exactas porque decía que la cocina se aprende con las manos. El año pasado decidí escribir sus recetas en un cuaderno antes de que se olvidaran. Ahora cocino esos platos para mi propia familia y siento que ella sigue presente. Creo que la comida guarda una parte importante de quiénes somos.',
   gloss: [
     { es: 'las cantidades', en: 'the quantities' },
@@ -3788,7 +3788,7 @@ window.PASSAGES = [
 
 {
   id: 'examen-conducir-a2', title: 'El examen de conducir', level: 3, theme: 'educacion',
-  tenses: ['preterito', 'imperfecto', 'futuro', 'presubj'],
+  tenses: ['preterito', 'imperfecto', 'futuro'],
   text: 'La semana pasada hice mi examen de conducir por segunda vez. La primera vez, me puse muy nerviosa y cometí varios errores pequeños. Esta vez, practiqué mucho más con mi padre los fines de semana. El examinador me pidió aparcar el coche entre dos líneas, algo que siempre me costaba. Por suerte, esta vez lo hice bien y aprobé el examen sin problemas. Ahora podré conducir sola y ya no dependeré tanto de mis padres.',
   gloss: [
     { es: 'el examinador', en: 'the examiner' },
@@ -3839,7 +3839,7 @@ window.PASSAGES = [
 
 {
   id: 'gripe-invierno-a2', title: 'La gripe de invierno', level: 2, theme: 'salud',
-  tenses: ['preterito', 'imperfecto'],
+  tenses: ['presente', 'preterito', 'imperfecto'],
   text: 'La semana pasada tuve la gripe y no pude ir a trabajar durante tres días. Al principio solo tenía un poco de dolor de garganta, pero después me subió la fiebre. Mi madre me trajo una sopa recién hecha y me dijo que debía descansar todo lo posible. Tomé la medicina que me recetó el médico dos veces al día. Poco a poco, la fiebre bajó y empecé a sentirme mejor. El fin de semana ya pude salir a caminar un poco por el barrio.',
   gloss: [
     { es: 'la garganta', en: 'the throat' },
@@ -4026,7 +4026,7 @@ window.PASSAGES = [
 
 {
   id: 'huerto-comunitario-a2', title: 'Un huerto comunitario', level: 2, theme: 'naturaleza',
-  tenses: ['presente', 'presubj'],
+  tenses: ['presente', 'preterito'],
   text: 'Hace poco, los vecinos de mi calle decidimos crear un huerto comunitario en un terreno vacío. Cada familia cuida una pequeña parte y plantamos verduras y hierbas diferentes. Los sábados por la mañana, varios vecinos se reúnen para regar las plantas juntos. Mi hija de siete años ahora sabe reconocer varias verduras solo por sus hojas. La semana pasada cosechamos los primeros tomates y los compartimos entre todos. El huerto ha unido mucho más a los vecinos de la calle.',
   gloss: [
     { es: 'el huerto', en: 'the (vegetable) garden' },
@@ -4136,7 +4136,7 @@ window.PASSAGES = [
 
 {
   id: 'vacunas-como-funcionan-b2', title: 'Cómo funcionan realmente las vacunas', level: 6, theme: 'ciencia',
-  tenses: ['presente', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'condicional', 'presubj'],
   text: 'Se suele explicar que una vacuna "protege" contra una enfermedad, pero pocas veces se detalla cómo consigue exactamente ese efecto. En realidad, una vacuna no ataca al virus directamente; lo que hace es enseñarle al propio sistema inmunitario a reconocerlo antes de que llegue una infección real.\n\nPara entender el proceso, hay que dividirlo en tres fases. En primer lugar, la vacuna introduce en el cuerpo una versión debilitada, inactiva o parcial del patógeno, que resulta inofensiva por sí sola. En segundo lugar, el sistema inmunitario detecta esos fragmentos como algo extraño y fabrica anticuerpos específicos para combatirlos, exactamente como haría frente a una infección de verdad. Por último, y esto es lo más importante, una parte de esas células queda almacenada como "memoria" durante meses o incluso años.\n\nCuando el organismo se encuentra después con el virus auténtico, no necesita empezar desde cero: las células de memoria reconocen la amenaza casi al instante y producen anticuerpos mucho más rápido de lo que tardarían sin haber sido vacunadas antes. Es precisamente esa rapidez la que suele evitar que la enfermedad llegue a desarrollarse, o que lo haga solo de forma leve.\n\nEsto explica también por qué algunas vacunas requieren varias dosis: cada dosis adicional refuerza esa memoria inmunitaria, de manera que el cuerpo responda con mayor intensidad y durante más tiempo. No se trata, por tanto, de repetir el mismo procedimiento por precaución, sino de completar un proceso de aprendizaje que, en muchos casos, necesita más de un contacto para consolidarse del todo.',
   gloss: [
     { es: 'el sistema inmunitario', en: 'el conjunto de células y órganos que defienden el cuerpo de infecciones' },
@@ -4192,7 +4192,7 @@ window.PASSAGES = [
 
 {
   id: 'panaderia-familiar-economia-b2', title: 'La panadería que casi cierra', level: 6, theme: 'economia',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
   text: 'Para cuando Rosario decidió pedir un préstamo, la panadería familiar llevaba ya dos años perdiendo clientes frente al supermercado nuevo del barrio, que vendía pan más barato aunque de peor calidad. Su padre había abierto el negocio hace treinta y cinco años, y la idea de cerrarlo le resultaba, sencillamente, inaceptable.\n\nEl banco le ofreció un crédito a un interés razonable, pero solo lo aprobó una vez que ella presentó un plan de negocio detallado. Rosario pasó semanas enteras estudiando qué hacían las panaderías que sí sobrevivían a la competencia de las grandes cadenas: casi todas habían encontrado un nicho concreto, en lugar de intentar competir directamente en precio. Decidió entonces especializarse en pan artesano de fermentación lenta, algo que ningún supermercado de la zona podía ofrecer.\n\nLos primeros meses fueron difíciles. Había invertido gran parte del préstamo en un horno nuevo y en ingredientes de mejor calidad, y las ventas tardaron en reflejar ese cambio. Sin embargo, poco a poco, empezaron a llegar clientes de otros barrios, atraídos por las reseñas que circulaban de boca en boca y, más tarde, por internet. Un año después de pedir el crédito, la panadería ya facturaba un veinte por ciento más que en el año previo a la reforma.\n\nHoy, Rosario reconoce que estuvo a punto de rendirse varias veces durante ese primer año. Lo que finalmente la convenció de seguir adelante no fueron los números, que en su momento resultaban desalentadores, sino la certeza de que competir en calidad, y no en precio, era la única estrategia con verdadero futuro para un negocio tan pequeño frente a una cadena tan grande.',
   gloss: [
     { es: 'un préstamo', en: 'una cantidad de dinero que un banco presta, y que hay que devolver con intereses' },
@@ -4230,7 +4230,7 @@ window.PASSAGES = [
 
 {
   id: 'sistema-inmunitario-salud-b2', title: 'Las alergias: un sistema de defensa confundido', level: 6, theme: 'salud',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'impsubj'],
   text: 'Cada primavera, millones de personas sufren estornudos, picor de ojos y congestión nasal al entrar en contacto con el polen, una sustancia que, en sí misma, resulta completamente inofensiva. La pregunta que muchos se hacen es evidente: si el polen no representa ningún peligro real, ¿por qué el cuerpo reacciona como si lo fuera?\n\nLa respuesta tiene que ver con un error de identificación por parte del sistema inmunitario. En una persona alérgica, el organismo clasifica erróneamente el polen como una amenaza, de forma parecida a como reaccionaría frente a un parásito o una bacteria peligrosa. Como consecuencia, libera histamina y otras sustancias químicas cuya función normal es defender el cuerpo, pero que en este contexto solo producen inflamación, picor y exceso de mucosidad sin ningún beneficio real.\n\nUna teoría bastante extendida entre los investigadores, conocida como la "hipótesis de la higiene", sugiere que este tipo de errores se han vuelto más frecuentes precisamente porque el sistema inmunitario moderno se enfrenta a muchos menos parásitos e infecciones reales que hace un siglo, sobre todo durante la infancia. Sin exposición temprana a según qué amenazas genuinas, el sistema inmunitario tendería a "aburrirse" y a reaccionar de forma exagerada frente a sustancias inofensivas como el polen, el polvo o determinados alimentos.\n\nEsta hipótesis no está exenta de críticas ni de matices, y los propios investigadores reconocen que probablemente explica solo una parte del aumento de las alergias registrado en las últimas décadas. Aun así, ofrece una perspectiva útil: una alergia no es, en el fondo, un sistema de defensa débil, sino uno que defiende con demasiado entusiasmo algo que nunca debería haber considerado un enemigo.',
   gloss: [
     { es: 'el polen', en: 'un polvo fino producido por las plantas, necesario para su reproducción' },
@@ -4287,7 +4287,7 @@ window.PASSAGES = [
 /* Batch 2 of 8. */
 {
   id: 'camino-santiago-religion-b2', title: 'Los últimos kilómetros del Camino', level: 6, theme: 'religion',
-  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj', 'plusc', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'impsubj', 'plusc', 'perfsubj'],
   text: 'Cuando emprendí el Camino de Santiago, no lo hice por motivos religiosos, sino porque necesitaba tiempo a solas después de un año especialmente difícil. Sin embargo, cuanto más avanzaba, más notaba que la experiencia se parecía menos a una simple caminata larga y más a algo que costaba definir con palabras exactas.\n\nEl último día, al acercarme a Santiago, empecé a caminar como si aquellos últimos kilómetros importaran mucho más que los cientos anteriores, aunque objetivamente no fueran distintos. A mi alrededor, otros peregrinos avanzaban en silencio, algunos claramente emocionados, otros aparentemente tan sorprendidos como yo de sentir algo tan intenso al final de una caminata que, sobre el papel, era solo eso: caminar.\n\nEn el albergue de la noche anterior había conocido a una mujer alemana que llevaba el Camino tres veces ya, y que me explicó algo que entonces no entendí del todo: cada peregrino, decía, acaba encontrando en el Camino justo aquello que necesitaba encontrar, independientemente de lo que hubiera venido buscando al principio. Yo había salido buscando silencio, y en cambio encontré una extraña sensación de pertenencia a un grupo de desconocidos unidos únicamente por el mismo esfuerzo físico.\n\nAl llegar por fin a la plaza del Obradoiro, frente a la catedral, no sentí la euforia que había imaginado, sino algo más parecido al alivio y, curiosamente, a cierta tristeza por que la experiencia hubiera terminado. Me senté en el suelo de piedra, rodeado de otros peregrinos igual de agotados, y solo entonces comprendí que lo que de verdad había cambiado no era el paisaje a mi alrededor, sino la forma en que había aprendido a estar conmigo mismo durante aquellas semanas.',
   gloss: [
     { es: 'emprender (un viaje)', en: 'empezar a hacer algo, normalmente algo largo o importante' },
@@ -4380,7 +4380,7 @@ window.PASSAGES = [
 
 {
   id: 'reconciliacion-hermanos-relaciones-b2', title: 'Diez años sin hablarse', level: 6, theme: 'relaciones',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
   text: 'Si alguien le hubiera dicho a Marta, hace un año, que volvería a hablar con su hermano Diego, probablemente no lo habría creído. Llevaban más de una década sin dirigirse la palabra, desde una discusión por la herencia de sus padres que, con el tiempo, había dejado de tratarse realmente sobre dinero para convertirse en algo mucho más difícil de nombrar.\n\nFue la enfermedad grave de una tía común la que finalmente los obligó a coincidir en el mismo hospital, sentados en la misma sala de espera durante horas. Al principio apenas cruzaron palabra, más allá de los saludos estrictamente necesarios. Sin embargo, algo cambió cuando Diego, sin que nadie se lo pidiera, empezó a contarle a Marta detalles de su vida de los últimos años que ella desconocía por completo: un divorcio complicado, un cambio de trabajo, una operación que había ocultado a casi toda la familia.\n\nMarta se dio cuenta, escuchándolo, de que llevaba diez años imaginando a un hermano que quizás ya no existía del todo: seguía viendo al Diego arrogante y desconsiderado de aquella discusión antigua, sin haber contemplado siquiera que la persona real podía haber cambiado en todo ese tiempo. Aquella tarde en el hospital no resolvió de golpe todos los conflictos pendientes entre ambos, pero sí abrió una grieta por la que, poco a poco, empezó a colarse algo parecido a una conversación real.\n\nHoy se llaman una vez por semana, y aunque ninguno de los dos ha mencionado directamente aquella vieja discusión, ambos parecen haber decidido, sin decirlo en voz alta, que diez años de silencio ya habían sido, de largo, un precio demasiado alto por un desacuerdo que ya casi ni recuerdan con precisión.',
   gloss: [
     { es: 'la herencia', en: 'los bienes o el dinero que se reciben de un familiar tras su muerte' },
@@ -4453,7 +4453,7 @@ window.PASSAGES = [
 
 {
   id: 'garantia-electrodomestico-servicios-b2', title: 'La batalla por una garantía de dos años', level: 6, theme: 'servicios',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
   text: 'Cuando la lavadora de Pilar dejó de funcionar catorce meses después de comprarla, ella asumió que la reparación o la sustitución del aparato correrían por cuenta del fabricante, ya que la garantía legal en España cubre dos años completos desde la compra. La tienda donde la había adquirido, sin embargo, le informó de que solo ofrecían garantía comercial de un año, y que a partir de ese momento cualquier reparación correría por cuenta suya.\n\nPilar, que había trabajado brevemente en el sector de consumo años atrás, sabía que la ley española distingue precisamente entre la garantía comercial que ofrece voluntariamente cada tienda y la garantía legal, obligatoria por ley, que protege al consumidor durante dos años frente a cualquier defecto de fabricación. Aun así, la vendedora insistió varias veces en que "la garantía ya había caducado", como si el plazo legal simplemente no existiera.\n\nEn lugar de discutir más con la vendedora, Pilar decidió presentar una reclamación formal por escrito, citando expresamente el artículo correspondiente de la ley de garantías vigente. Adjuntó copia del ticket de compra y explicó con detalle la avería, un fallo en el motor que ningún uso indebido por su parte podía haber provocado.\n\nDos semanas después, recibió una llamada del servicio de atención al cliente de la cadena, disculpándose por la confusión inicial y ofreciéndole la reparación gratuita del electrodoméstico. Pilar sospecha que si hubiera aceptado sin más la primera respuesta de la vendedora, como probablemente hacen muchos consumidores por simple desconocimiento, habría acabado pagando una reparación que, legalmente, nunca le correspondía asumir.',
   gloss: [
     { es: 'la garantía legal', en: 'la protección mínima que la ley obliga a ofrecer al comprador de un producto' },
@@ -4490,7 +4490,7 @@ window.PASSAGES = [
 
 {
   id: 'introvertido-retrato-caracter-b2', title: 'El silencio de Óscar no es timidez', level: 6, theme: 'caracter',
-  tenses: ['presente', 'perfecto', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'presubj', 'impsubj'],
   text: 'Quienes conocen a Óscar desde hace poco suelen confundir su silencio con timidez, o incluso con desinterés, pero quienes lo tratan desde hace años saben que se trata de algo bastante distinto. Óscar es, sencillamente, una persona profundamente introvertida: no le incomoda hablar en público cuando resulta necesario, pero necesita después largos periodos de soledad para recuperar la energía que ese tipo de situaciones le consume.\n\nEn una reunión de trabajo, mientras otros compañeros piensan en voz alta y van construyendo sus ideas sobre la marcha, Óscar prefiere escuchar primero, procesar toda la información en silencio, y solo entonces intervenir con una opinión ya bastante elaborada. Esto ha llevado, más de una vez, a que algunos jefes lo consideraran poco participativo, sin darse cuenta de que su forma de aportar simplemente sigue un ritmo distinto al de la mayoría.\n\nFuera del trabajo, Óscar tiene un grupo reducido de amigos con los que mantiene relaciones muy profundas, y evita sistemáticamente las fiestas multitudinarias que a otros les resultan estimulantes. Una noche de conversación tranquila con dos o tres personas le proporciona mucha más satisfacción que cualquier evento social masivo, por animado que este resulte para los demás asistentes.\n\nLo que distingue realmente a Óscar no es, por tanto, la falta de habilidades sociales, sino una forma distinta de gestionar su energía social: mientras que una persona extrovertida se recarga precisamente en compañía de otros, Óscar necesita la soledad para recuperarse, y el contacto social prolongado, por agradable que sea, termina agotándolo de una manera que a muchos les resulta difícil de comprender del todo.',
   gloss: [
     { es: 'introvertido', en: 'que prefiere la reflexión interior y necesita soledad para recuperar energía' },
@@ -4508,7 +4508,7 @@ window.PASSAGES = [
 
 {
   id: 'torneo-ajedrez-ocio-b2', title: 'El torneo que casi no gana nadie', level: 6, theme: 'ocio',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'plusc', 'perfsubj'],
   text: 'Cuando se organizó el primer torneo de ajedrez del barrio, nadie esperaba que la final acabara decidiéndose, literalmente, por sorteo. Participaron cuarenta y dos vecinos de edades muy distintas, desde adolescentes que apenas conocían las reglas básicas hasta jubilados que llevaban jugando desde niños, y el formato elegido —eliminación directa a una sola partida— garantizaba sorpresas desde la primera ronda.\n\nLa gran sorpresa del torneo llegó en cuartos de final, cuando una chica de catorce años eliminó al que hasta entonces se consideraba favorito indiscutible, un jubilado que había jugado en competiciones federadas durante décadas. Ella misma reconoció después que ni siquiera esperaba ganar aquella partida, y que se limitó a jugar con calma mientras su rival, quizás confiado en exceso, cometía un error que ella supo aprovechar sin dudarlo.\n\nLa final, sin embargo, se complicó de una forma que nadie había previsto en el reglamento: tras casi tres horas de partida, ambos finalistas llegaron al límite de tiempo asignado con posiciones prácticamente idénticas de material, sin que ninguno lograra ninguna ventaja decisiva. El reglamento, redactado deprisa por los organizadores, no contemplaba ningún desempate para esa situación exacta.\n\nTras una breve deliberación entre los organizadores, y con el acuerdo explícito de ambos finalistas, se decidió resolver el empate lanzando una moneda al aire en mitad de la plaza, ante el aplauso y las risas de todos los espectadores presentes. El ganador, un adolescente de dieciséis años, admitió con humor que aquella era, con diferencia, la victoria menos merecida de toda su vida ajedrecística, aunque el trofeo, dijo entre risas, pesaba exactamente lo mismo que si la hubiera ganado jugando.',
   gloss: [
     { es: 'un sorteo', en: 'un método para decidir algo al azar, sin que dependa de habilidad' },
@@ -4526,7 +4526,7 @@ window.PASSAGES = [
 
 {
   id: 'covivienda-mayores-vivienda-b2', title: 'Envejecer juntos, pero cada uno en su casa', level: 6, theme: 'vivienda',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'impsubj', 'plusc'],
   text: 'A las afueras de Zaragoza, un grupo de veintiséis personas mayores de sesenta y cinco años ha construido, literalmente desde cero, una alternativa a la residencia tradicional y a la soledad del piso individual: una cooperativa de covivienda pensada específicamente para envejecer acompañado sin renunciar a la independencia. Cada residente tiene su propio apartamento privado, con cocina y baño completos, pero el edificio comparte también amplias zonas comunes: comedor colectivo, biblioteca, huerto y una sala de cuidados para quien lo necesite temporalmente.\n\nEl edificio se distribuye en tres plantas alrededor de un patio central luminoso, con pasillos anchos pensados para sillas de ruedas y andadores, y sin ningún escalón que pudiera suponer una barrera para la movilidad reducida. Los apartamentos individuales resultan más pequeños que una vivienda convencional, pero a cambio los residentes disfrutan de espacios comunes mucho más amplios de lo que cualquiera de ellos podría permitirse viviendo solo.\n\nLa decisión más importante, según cuentan varios de los fundadores del proyecto, no fue arquitectónica sino social: establecer desde el principio unas normas claras de convivencia y turnos rotatorios para las tareas compartidas, de manera que nadie sintiera que cargaba con más responsabilidad que los demás. Cada residente dedica unas horas semanales a tareas colectivas, desde cocinar para el grupo hasta organizar actividades culturales o gestionar pequeñas reparaciones del edificio.\n\nLo que más valoran quienes viven allí no es tanto el ahorro económico, que también existe, sino la sensación de tener vecinos con quienes de verdad se puede contar en caso de enfermedad o de soledad repentina, algo que muchos de ellos, tras enviudar o ver a sus hijos mudarse lejos, habían dejado de imaginar posible a esta edad.',
   gloss: [
     { es: 'una cooperativa de covivienda', en: 'un proyecto residencial en el que los vecinos comparten propiedad y espacios comunes' },
@@ -4544,7 +4544,7 @@ window.PASSAGES = [
 
 {
   id: 'moda-rapida-compras-b2', title: '¿Merece la pena una camiseta de tres euros?', level: 7, theme: 'compras',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
   text: 'Se ha calculado que la industria textil produce hoy más del doble de prendas de ropa que hace apenas veinte años, impulsada en gran parte por el modelo conocido como "moda rápida": colecciones nuevas cada pocas semanas, precios extraordinariamente bajos, y una expectativa implícita de que cada prenda se use solo unas pocas veces antes de descartarse.\n\nLos defensores de este modelo argumentan que ha democratizado el acceso a la moda, permitiendo que personas con ingresos modestos vistan siguiendo tendencias que antes estaban reservadas a quienes podían permitirse ropa de diseñador. Es innegable que una camiseta de tres euros resulta, en términos puramente económicos, mucho más accesible que una alternativa producida de forma ética y sostenible, que fácilmente puede costar diez o veinte veces más.\n\nSin embargo, ese precio tan bajo esconde costes que el comprador final rara vez ve reflejados en la etiqueta. Diversas investigaciones periodísticas han documentado condiciones laborales precarias en fábricas textiles de varios países asiáticos, con jornadas extenuantes y salarios muy por debajo de lo necesario para cubrir necesidades básicas. A esto se suma el impacto ambiental: la industria textil genera, según distintas estimaciones, más emisiones de gases de efecto invernadero que los vuelos internacionales y el transporte marítimo combinados.\n\nNo se trata de sugerir que cada consumidor individual sea responsable de un sistema industrial global tan complejo, ni de negar que muchas familias dependen de esos precios bajos para vestir a sus hijos. Aun así, cada vez más voces dentro del propio sector textil defienden que comprar menos prendas, pero de mejor calidad y duración, terminaría resultando más barato a largo plazo, además de reducir de forma sustancial tanto el sufrimiento humano como el daño ambiental asociados a este modelo de consumo.',
   gloss: [
     { es: 'una prenda (de ropa)', en: 'cada pieza individual de vestimenta' },
@@ -4562,7 +4562,7 @@ window.PASSAGES = [
 
 {
   id: 'como-se-hace-una-ley-politica-b2', title: 'El largo camino de una idea hasta convertirse en ley', level: 7, theme: 'politica',
-  tenses: ['presente', 'presubj'],
+  tenses: ['presente', 'preterito', 'presubj'],
   text: 'Cuando un ciudadano piensa en cómo se aprueba una ley, suele imaginar un proceso relativamente sencillo: un partido propone una idea, el parlamento vota, y la idea se convierte automáticamente en norma vigente. La realidad, sin embargo, resulta considerablemente más larga y llena de etapas intermedias que rara vez aparecen reflejadas en un titular de prensa.\n\nTodo empieza con un anteproyecto de ley, normalmente redactado por el ministerio competente en la materia, que debe pasar primero por un proceso de consulta pública en el que cualquier ciudadano u organización puede presentar alegaciones. Solo después de incorporar, o rechazar de forma justificada, esas alegaciones, el texto se convierte formalmente en un proyecto de ley que el gobierno remite al parlamento.\n\nEn la cámara baja, el proyecto se divide en artículos que se debaten y votan, en ocasiones, uno por uno, mientras los distintos grupos parlamentarios presentan enmiendas para modificar aspectos concretos del texto. Una vez aprobado por la cámara baja, el proyecto pasa a la cámara alta, donde puede sufrir modificaciones adicionales, y solo entonces regresa a la primera cámara para una votación final sobre esos cambios.\n\nLo que muchos ciudadanos ignoran es que, incluso después de superar todas estas fases, una ley aprobada puede todavía ser recurrida ante el tribunal constitucional si algún grupo considera que vulnera derechos fundamentales, un proceso que puede alargar la incertidumbre legal durante meses o incluso años adicionales. Entre la idea inicial de un ministerio y la aplicación efectiva de la norma en la vida cotidiana de los ciudadanos, pueden llegar a transcurrir, sin ninguna anomalía en el proceso, más de dos años completos.',
   gloss: [
     { es: 'un anteproyecto de ley', en: 'el primer borrador oficial de una futura ley, antes de su tramitación formal' },
@@ -4725,7 +4725,7 @@ window.PASSAGES = [
 
 {
   id: 'restauracion-mural-arte-b2', title: 'Descubrir un mural bajo veinte capas de pintura', level: 6, theme: 'arte',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj'],
   text: 'Durante unas obras rutinarias de reforma en un antiguo edificio municipal, los operarios encontraron algo que nadie esperaba: bajo casi veinte capas sucesivas de pintura blanca, aplicadas a lo largo de un siglo entero de reformas administrativas, apareció un mural completo pintado directamente sobre la pared, probablemente encargado a comienzos del siglo veinte y olvidado después por completo.\n\nEl ayuntamiento contrató de inmediato a un equipo de restauradores especializados en pintura mural, conscientes de que cualquier error en el proceso de retirada de las capas superpuestas podría destruir definitivamente la obra original. El trabajo, que se calculó inicialmente en unos tres meses, acabó extendiéndose durante casi un año entero, ya que cada capa debía retirarse manualmente con disolventes específicos, milímetro a milímetro, bajo la supervisión constante de un historiador del arte.\n\nLo que finalmente emergió tras meses de trabajo minucioso fue una escena alegórica que representaba el progreso industrial de la ciudad, con obreros, maquinaria y edificios que ya no existen representados con un estilo que los expertos han logrado relacionar con un pintor local relativamente desconocido fuera de la región. Ningún documento municipal conservado mencionaba la existencia de este mural, y solo gracias a un archivo personal de un antiguo funcionario municipal se pudo confirmar aproximadamente la fecha y la autoría probable de la obra.\n\nEl ayuntamiento ha decidido abrir el edificio al público durante varios fines de semana al mes, específicamente para que los vecinos puedan contemplar una obra que, durante generaciones enteras, estuvo literalmente delante de sus ojos sin que nadie sospechara jamás su existencia bajo tantas capas de pintura administrativa.',
   gloss: [
     { es: 'un mural', en: 'una pintura realizada directamente sobre una pared o un muro' },
@@ -4761,7 +4761,7 @@ window.PASSAGES = [
 
 {
   id: 'segunda-mano-compras-b2', title: 'Comprar ropa usada dejó de ser un tabú', level: 6, theme: 'compras',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'plusc'],
   text: 'Hace apenas una década, comprar ropa de segunda mano se asociaba todavía, para buena parte de la población, con la necesidad económica más que con una elección deliberada de consumo. Hoy, sin embargo, las tiendas de ropa usada y las aplicaciones especializadas en compraventa entre particulares han experimentado un crecimiento que ningún analista del sector había anticipado con tanta claridad hace apenas cinco años.\n\nUna encuesta reciente entre consumidores menores de treinta años reveló que casi la mitad había comprado ropa de segunda mano durante el último año, y que la mayoría de ellos lo hacía por motivos que combinaban la preocupación ambiental con el simple deseo de encontrar prendas originales que nadie más en su entorno llevara puestas. Para esta generación, señalan varios estudios de mercado, la ropa usada ha dejado de percibirse como una alternativa forzada por falta de recursos, para convertirse en una opción deliberadamente preferida frente a la ropa nueva.\n\nLas propias marcas de moda tradicionales han empezado a reaccionar ante este cambio de mentalidad, algunas lanzando sus propias plataformas de reventa de prendas usadas de su propia marca, y otras incorporando directamente secciones de ropa reacondicionada dentro de sus tiendas físicas habituales. Esta estrategia responde tanto a una demanda genuina de los consumidores como a la necesidad de mejorar una imagen de marca cada vez más cuestionada por su impacto ambiental.\n\nAún queda por ver si esta tendencia se consolidará a largo plazo o si, como ha ocurrido con otras modas de consumo consciente, acabará perdiendo fuerza una vez que la novedad social deje de resultar atractiva. Por el momento, sin embargo, los datos disponibles apuntan hacia un cambio genuino y duradero en la forma en que al menos una generación entera entiende la relación entre el precio, la originalidad y el impacto ambiental de lo que decide vestir.',
   gloss: [
     { es: 'un tabú', en: 'un tema o comportamiento que socialmente se evita o se considera incómodo' },
@@ -4797,7 +4797,7 @@ window.PASSAGES = [
 
 {
   id: 'perfeccionista-caracter-b2', title: 'Nunca es suficientemente bueno para ella', level: 6, theme: 'caracter',
-  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'presubj', 'imperativo'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'imperativo'],
   text: 'Beatriz revisa cada correo electrónico profesional al menos cuatro veces antes de enviarlo, y aun así, con frecuencia, siente que podría haberlo redactado mejor. Su perfeccionismo, que ella misma reconoce como un rasgo tanto útil como agotador, la acompaña desde que tiene memoria, y le ha proporcionado tanto reconocimiento profesional como más de una noche de insomnio innecesario.\n\nEn el trabajo, sus compañeros valoran enormemente la fiabilidad de cualquier proyecto que pase por sus manos, conscientes de que Beatriz detectará errores que a cualquier otra persona se le habrían escapado sin dificultad. Sin embargo, esa misma exigencia le impide delegar tareas con facilidad, convencida casi siempre de que nadie más las hará exactamente como ella considera que deberían hacerse.\n\nUn psicólogo al que consultó hace un par de años le explicó algo que a Beatriz le costó bastante aceptar: existe una diferencia real entre buscar la excelencia, que resulta generalmente saludable y productiva, y el perfeccionismo propiamente dicho, que fija un estándar imposible de alcanzar y convierte cualquier logro real en una fuente de insatisfacción crónica en lugar de en un motivo genuino de orgullo.\n\nDesde entonces, Beatriz ha empezado a practicar, con resultados todavía desiguales, algo que describe como "suficientemente bueno por hoy": terminar una tarea, revisarla una sola vez, y forzarse conscientemente a enviarla sin la cuarta o quinta revisión que su instinto le sigue pidiendo. No siempre lo consigue, admite con una sonrisa algo resignada, pero al menos ahora es capaz de reconocer el patrón exacto en el momento en que empieza a repetirse.',
   gloss: [
     { es: 'el perfeccionismo', en: 'la tendencia a exigirse a uno mismo un nivel de exigencia excesivo o poco realista' },
@@ -4815,7 +4815,7 @@ window.PASSAGES = [
 
 {
   id: 'abejas-polinizacion-naturaleza-b2', title: 'Sin abejas, medias frutas', level: 7, theme: 'naturaleza',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
   text: 'Cerca de un tercio de todos los alimentos que consumimos habitualmente depende, en mayor o menor medida, de la polinización realizada por abejas y otros insectos, un servicio ecológico gratuito que la agricultura moderna ha dado durante décadas prácticamente por garantizado. En los últimos años, sin embargo, distintas poblaciones de abejas silvestres y domesticadas han sufrido descensos preocupantes en numerosas regiones del planeta, un fenómeno que los científicos atribuyen a una combinación de factores más que a una causa única e identificable.\n\nEntre las causas más citadas figuran el uso extendido de ciertos pesticidas que afectan al sistema nervioso de los insectos, la pérdida de hábitats naturales ricos en flores silvestres, y la propagación de parásitos y enfermedades favorecida, en parte, por el propio transporte comercial de colmenas entre distintas regiones agrícolas. Ningún factor aislado explica por sí solo la magnitud del declive observado, lo que complica considerablemente el diseño de soluciones eficaces.\n\nAlgunos agricultores han empezado a experimentar con la polinización manual como alternativa parcial, una tarea extraordinariamente laboriosa que en algunas regiones de China, donde el declive de abejas ha sido particularmente severo, ya se realiza a gran escala mediante trabajadores que polinizan flor por flor con pequeños pinceles. El coste económico y humano de sustituir así, artesanalmente, un servicio que la naturaleza proporcionaba gratuitamente resulta, según reconocen los propios agricultores, difícilmente sostenible a gran escala.\n\nMás allá de las soluciones técnicas puntuales, la mayoría de los expertos coincide en que solo una combinación de medidas —reducción del uso de pesticidas más dañinos, restauración de hábitats naturales, y una regulación más estricta del transporte comercial de colmenas— podría revertir a medio plazo una tendencia que, de continuar sin control, tendría consecuencias directas sobre buena parte de la producción mundial de frutas y verduras.',
   gloss: [
     { es: 'la polinización', en: 'el proceso por el que el polen se transporta entre flores, permitiendo la reproducción de las plantas' },
@@ -4834,7 +4834,7 @@ window.PASSAGES = [
 /* Batch 5 of 8. */
 {
   id: 'amistad-distancia-relaciones-b2', title: 'Amigas a ocho mil kilómetros', level: 6, theme: 'relaciones',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'condperf'],
   text: 'Cuando Noelia se mudó a Buenos Aires hace seis años, la mayoría de la gente de su entorno dio por hecho que su amistad de toda la vida con Carla, que se quedó en Sevilla, se iría diluyendo poco a poco, como suele ocurrir con tantas relaciones que sobreviven al principio a la distancia gracias al entusiasmo inicial, pero se enfrían después con el paso de los meses.\n\nSin embargo, ambas encontraron pronto una rutina que ha resistido, contra todo pronóstico, más de seis años completos: una videollamada fija cada domingo por la tarde, sin excepciones salvo causa mayor, en la que se cuentan con detalle la semana entera, por insignificante que parezca la mayoría de lo que tienen que contarse. Ninguna de las dos recuerda con exactitud cuántos domingos han fallado a la cita en todo este tiempo, aunque ambas coinciden en que apenas han sido un puñado de ocasiones.\n\nCarla reconoce que, al principio, temía que la diferencia horaria de cuatro horas complicara demasiado mantener la costumbre, sobre todo una vez que Noelia empezara a formar una vida social nueva en Argentina que inevitablemente no incluiría a su amiga de siempre. Lo que ninguna de las dos anticipó fue que, precisamente, esa cita semanal fija se convertiría en un ancla que les permitía seguir sintiéndose cerca, incluso cuando ambas atravesaban etapas vitales completamente distintas: un divorcio, un cambio de carrera, la llegada de una sobrina.\n\nAmbas coinciden en que la clave no ha sido tanto la tecnología en sí misma, que cualquiera tiene hoy a su alcance sin ningún esfuerzo, sino la decisión deliberada de proteger ese hueco semanal frente a cualquier otro compromiso, tratándolo con la misma seriedad con la que tratarían una cita médica importante. Sin ese compromiso mutuo, ambas admiten, la amistad probablemente se habría diluido hace años, exactamente como todo el mundo pronosticaba cuando Noelia hizo las maletas.',
   gloss: [
     { es: 'diluirse (una relación)', en: 'perder fuerza o intensidad poco a poco, hasta casi desaparecer' },
@@ -4870,7 +4870,7 @@ window.PASSAGES = [
 
 {
   id: 'donacion-medula-cuerpo-b2', title: 'Un pinchazo que le salvó la vida a un desconocido', level: 6, theme: 'cuerpo',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj'],
   text: 'Hace tres años, Pablo se apuntó como donante de médula ósea casi sin pensarlo demasiado, animado por una campaña universitaria que consistía simplemente en tomar una muestra de saliva y rellenar un formulario. Nunca esperó realmente que llegaran a llamarlo, ya que le explicaron que la probabilidad de encontrar compatibilidad genética con algún paciente concreto era, estadísticamente, bastante reducida.\n\nHace apenas dos meses, sin embargo, recibió una llamada del registro de donantes: existía compatibilidad total con un paciente de leucemia, y debían confirmar si seguía dispuesto a donar. Pablo aceptó de inmediato, aunque admite que tuvo que investigar bastante por su cuenta para entender exactamente en qué consistiría el procedimiento médico real.\n\nContrariamente a lo que mucha gente imagina, la donación de médula ósea no siempre requiere una operación quirúrgica invasiva: en la mayoría de los casos actuales, como el suyo, el procedimiento consiste en administrar previamente un medicamento que estimula la producción de células madre, que después se extraen directamente de la sangre mediante un proceso similar a una donación de plasma prolongada, sin necesidad de anestesia general ni de tocar literalmente el hueso.\n\nPablo nunca sabrá con certeza si el trasplante funcionó, ya que el protocolo internacional exige mantener el anonimato durante al menos dos años, y solo si ambas partes lo desean expresamente podrán conocerse después de ese plazo. Reconoce que la incertidumbre le resulta, en cierto modo, más difícil de sobrellevar que la propia donación, pero también que, si volviera a recibir esa llamada mañana mismo, no dudaría ni un segundo en repetir exactamente lo mismo.',
   gloss: [
     { es: 'la médula ósea', en: 'el tejido dentro de los huesos que produce las células de la sangre' },
@@ -4906,7 +4906,7 @@ window.PASSAGES = [
 
 {
   id: 'edificio-pasivo-vivienda-b2', title: 'La casa que casi no necesita calefacción', level: 7, theme: 'vivienda',
-  tenses: ['presente', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'imperfecto'],
   text: 'En las afueras de Vitoria, un pequeño edificio de doce viviendas construido según los estándares de la llamada "casa pasiva" apenas consume energía para mantener una temperatura interior confortable durante todo el año, incluso en pleno invierno vasco, sin depender de un sistema tradicional de calefacción como el que utiliza la inmensa mayoría de los edificios residenciales del país.\n\nEl principio detrás de este tipo de construcción no depende de ninguna tecnología especialmente novedosa ni costosa, sino de un aislamiento térmico extraordinariamente cuidado en cada punto del edificio: paredes mucho más gruesas de lo habitual, ventanas con triple cristal que impiden casi por completo la fuga de calor, y una hermeticidad al aire tan estricta que prácticamente ninguna corriente entra o sale del edificio sin pasar antes por un sistema de ventilación controlada que recupera el calor del aire viciado antes de expulsarlo.\n\nLos residentes de este edificio concreto informan de facturas energéticas hasta un ochenta por ciento inferiores a las que pagaban en sus viviendas anteriores, una reducción que, según los promotores del proyecto, compensa con el tiempo el sobrecoste inicial de construcción, generalmente entre un cinco y un diez por ciento superior al de un edificio convencional equivalente.\n\nA pesar de estas ventajas relativamente bien documentadas, este tipo de construcción sigue representando una fracción minúscula del total de viviendas que se construyen anualmente en España, un fenómeno que los arquitectos especializados en el sector atribuyen sobre todo a la falta de formación específica entre constructores tradicionales y a una regulación urbanística que todavía no exige, salvo excepciones puntuales, estándares energéticos tan exigentes como los que sí obligan ya en países como Alemania o Austria.',
   gloss: [
     { es: 'el aislamiento térmico', en: 'los materiales o técnicas que impiden la pérdida o entrada de calor en un edificio' },
@@ -4960,7 +4960,7 @@ window.PASSAGES = [
 
 {
   id: 'algoritmo-redes-medios-b2', title: 'Lo que el algoritmo decide que veas', level: 7, theme: 'medios',
-  tenses: ['presente', 'perfecto', 'futuro', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'presubj'],
   text: 'Cada vez que un usuario abre una red social, un sistema algorítmico decide, entre miles de publicaciones posibles, cuáles exactamente aparecerán en su pantalla y en qué orden, una decisión que se toma en fracciones de segundo basándose en cientos de señales de comportamiento recopiladas previamente sobre esa misma persona. Pocos usuarios son plenamente conscientes de hasta qué punto esta selección invisible determina, en la práctica, qué información consideran relevante sobre el mundo que les rodea.\n\nEl objetivo declarado de estos algoritmos no es, contrariamente a lo que muchos usuarios asumen, mostrar el contenido más importante o más veraz disponible, sino maximizar el tiempo que cada persona permanece dentro de la plataforma, un objetivo comercial que no siempre coincide con lo que resultaría más beneficioso para el propio usuario o para el debate público en general. Contenido que genera indignación o sorpresa suele obtener, según diversas investigaciones, mayor circulación algorítmica que contenido meramente informativo o matizado.\n\nUna consecuencia bien documentada de este diseño es la llamada "burbuja de filtro": con el tiempo, el algoritmo aprende qué tipo de contenido genera más interacción por parte de cada usuario concreto, y tiende a mostrarle cada vez más contenido similar, reforzando gradualmente sus opiniones previas en lugar de exponerlo a perspectivas distintas que podrían matizarlas o cuestionarlas.\n\nAlgunas plataformas han empezado a experimentar, presionadas por la crítica pública y por cierta regulación incipiente, con opciones que permiten al usuario elegir voluntariamente un feed cronológico simple, sin intervención algorítmica alguna. La adopción de estas alternativas, sin embargo, sigue siendo minoritaria, en parte porque el propio diseño de las plataformas dificulta deliberadamente encontrar esa opción, y en parte porque el contenido seleccionado algorítmicamente resulta, admiten muchos usuarios, más entretenido a corto plazo que un simple orden cronológico.',
   gloss: [
     { es: 'un algoritmo', en: 'un conjunto de reglas automáticas que un sistema sigue para tomar decisiones' },
@@ -4996,7 +4996,7 @@ window.PASSAGES = [
 
 {
   id: 'referendum-local-politica-b2', title: 'Cuando un pueblo entero vota sobre su propio futuro', level: 6, theme: 'politica',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'plusc'],
   text: 'Un pequeño municipio de menos de dos mil habitantes convocó recientemente un referéndum local, poco habitual en su escala, para decidir si aceptaba o rechazaba la instalación de un parque eólico que una empresa energética había propuesto construir en terrenos comunales cercanos al pueblo, a cambio de una compensación económica anual destinada directamente a las arcas municipales.\n\nEl debate previo al referéndum dividió profundamente a una comunidad acostumbrada, según reconocen varios vecinos, a decidir la mayoría de los asuntos locales mediante consenso informal más que mediante votaciones formales estrictamente reguladas. Quienes defendían aceptar el proyecto insistían en que la compensación económica permitiría finalmente renovar infraestructuras básicas que el ayuntamiento llevaba años sin poder financiar por falta de presupuesto suficiente.\n\nLos vecinos opuestos al parque eólico, por su parte, argumentaban que el impacto visual y sonoro de decenas de aerogeneradores alteraría de forma permanente un paisaje que consideraban parte esencial de la identidad del pueblo, además de expresar dudas razonables sobre el efecto real que tendría la instalación sobre las aves rapaces que anidan habitualmente en la zona propuesta.\n\nCon una participación que superó el ochenta por ciento del censo electoral local, algo excepcional incluso para elecciones nacionales, el proyecto fue finalmente rechazado por un estrecho margen de apenas cuarenta votos de diferencia. La empresa energética ha anunciado ya que estudiará terrenos alternativos en municipios vecinos, mientras que en el propio pueblo persiste, según reconocen ambos bandos, cierta tensión residual entre vecinos que, hasta la convocatoria de este referéndum, habían mantenido durante décadas una convivencia notablemente pacífica.',
   gloss: [
     { es: 'un referéndum', en: 'una votación popular directa sobre una cuestión concreta' },
@@ -5051,7 +5051,7 @@ window.PASSAGES = [
 
 {
   id: 'conversion-fe-religion-b2', title: 'De atea convencida a creyente practicante', level: 6, theme: 'religion',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj'],
   text: 'Durante casi treinta años, Isabel se definió públicamente como atea convencida, e incluso llegó a discutir abiertamente con familiares creyentes en más de una comida navideña sobre lo que ella consideraba, en aquella época, la irracionalidad evidente de cualquier fe religiosa organizada. Nada en su biografía anterior anticipaba que, a los cuarenta y ocho años, acabaría bautizándose voluntariamente en una parroquia católica de su barrio.\n\nEl proceso, según cuenta ella misma, no partió de ninguna experiencia mística repentina ni de ningún acontecimiento traumático que buscara explicación en lo sobrenatural, como suele presuponerse en este tipo de conversiones. Empezó, más bien, acompañando por pura curiosidad intelectual a una amiga a un grupo de estudio sobre filosofía y espiritualidad, sin ninguna intención inicial de participar más allá de aquella primera sesión puntual.\n\nLo que mantuvo a Isabel volviendo semana tras semana no fueron tanto los argumentos teológicos concretos, reconoce con cierta sorpresa retrospectiva, sino la experiencia comunitaria en sí misma: un espacio donde personas de edades y trasfondos completamente distintos se reunían regularmente para hablar abiertamente sobre preguntas existenciales que ella llevaba años evitando por considerarlas, hasta entonces, propias de mentes poco críticas.\n\nHoy, Isabel practica su fe con una intensidad que ella misma describe como moderada, sin ningún ánimo de convencer a nadie de su entorno de que siga el mismo camino, y reconoce abiertamente que buena parte de sus antiguas objeciones intelectuales hacia la religión organizada siguen pareciéndole, en gran medida, tan válidas como entonces. Lo que ha cambiado, insiste, no es tanto lo que piensa sobre las grandes preguntas filosóficas, sino su relación personal con la comunidad y con cierta práctica ritual que, admite, le proporciona una estructura y un consuelo que antes simplemente no buscaba.',
   gloss: [
     { es: 'una parroquia', en: 'la comunidad y el edificio de una iglesia local' },
@@ -5069,7 +5069,7 @@ window.PASSAGES = [
 
 {
   id: 'nombre-cambiado-identidad-b2', title: 'El nombre que eligió para sí misma', level: 6, theme: 'identidad',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj', 'plusc'],
   text: 'A los treinta y dos años, Lucía decidió tramitar legalmente el cambio de su nombre de nacimiento, uno que sus padres eligieron pensando en una abuela fallecida antes de que ella naciera, pero que nunca sintió verdaderamente propio desde que tiene memoria de sí misma. El proceso administrativo, cuenta ella, resultó sorprendentemente más sencillo de lo que había anticipado durante los años en que solo se había atrevido a plantearlo como una posibilidad remota.\n\nDurante toda su infancia y adolescencia, Lucía usó únicamente el diminutivo de aquel nombre original entre amigos cercanos, reservando la versión completa exclusivamente para documentos oficiales y para presentaciones formales que la incomodaban visiblemente cada vez que tenía que pronunciarla en voz alta ante desconocidos. Nunca llegó a identificar con claridad, hasta bastante entrada la edad adulta, por qué exactamente aquel nombre le generaba tanta incomodidad persistente.\n\nUna terapeuta a la que consultó por otros motivos completamente distintos fue quien primero le sugirió, casi de pasada, que explorara conscientemente esa incomodidad en lugar de simplemente convivir con ella de manera resignada, como había hecho durante más de tres décadas. Tras varios meses de reflexión, Lucía llegó a la conclusión de que el nombre nunca le había resultado ajeno por ninguna razón estética o práctica, sino porque sentía que llevaba, sin haberlo elegido nunca, la identidad de otra persona completamente distinta a ella misma.\n\nEl día en que finalmente recibió el documento oficial con su nuevo nombre legal, Lucía admite haber llorado de una forma que no esperaba en absoluto, una reacción que ella misma describe como la sensación física, tangible, de que algo que llevaba encima desde hacía más de tres décadas por fin encajaba correctamente. Sus padres, aunque inicialmente sorprendidos y algo dolidos por la decisión, terminaron aceptándola sin ninguna objeción seria una vez que ella les explicó con calma el motivo real detrás del cambio.',
   gloss: [
     { es: 'tramitar', en: 'realizar los pasos administrativos necesarios para conseguir algo' },
@@ -5123,7 +5123,7 @@ window.PASSAGES = [
 
 {
   id: 'bilinguismo-infantil-educacion-b2', title: '¿Confunde a los niños crecer con dos idiomas?', level: 6, theme: 'educacion',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
   text: 'Durante buena parte del siglo veinte, muchos pedagogos y médicos desaconsejaban activamente criar a los niños en un entorno bilingüe, convencidos de que exponerlos simultáneamente a dos idiomas desde la primera infancia retrasaría su desarrollo lingüístico general y podría generar una confusión cognitiva duradera. Décadas de investigación posterior en neurociencia y en psicología del desarrollo han desmontado casi por completo esta idea, que hoy se considera, en el mejor de los casos, una simplificación excesiva.\n\nLos estudios actuales muestran que los niños criados en entornos verdaderamente bilingües sí pueden mostrar, durante los primeros años, un vocabulario ligeramente menor en cada idioma individual comparado con niños monolingües de la misma edad. Sin embargo, cuando se suma el vocabulario total que manejan en ambas lenguas combinadas, la diferencia con los niños monolingües prácticamente desaparece, lo que sugiere que no existe ningún retraso real, sino simplemente una distribución distinta del mismo conocimiento lingüístico entre dos sistemas.\n\nMás interesante todavía resulta la evidencia acumulada sobre ciertas ventajas cognitivas asociadas específicamente al bilingüismo temprano: una mayor flexibilidad para cambiar de una tarea mental a otra, y una capacidad superior para ignorar información irrelevante mientras se concentra en lo verdaderamente importante, habilidades que algunos investigadores relacionan directamente con la práctica constante que supone alternar entre dos sistemas lingüísticos distintos desde una edad muy temprana.\n\nLos especialistas actuales coinciden en que la clave para un desarrollo bilingüe saludable no reside en evitar la exposición a dos idiomas, sino en garantizar que ambas lenguas se presenten de forma consistente y con suficiente exposición real, idealmente a través de personas distintas asociadas de forma estable a cada idioma concreto, en lugar de mezclar ambas lenguas de manera aleatoria dentro de una misma conversación cotidiana.',
   gloss: [
     { es: 'un pedagogo', en: 'un especialista en la educación y el aprendizaje' },
@@ -5141,7 +5141,7 @@ window.PASSAGES = [
 
 {
   id: 'mediador-vecinal-servicios-b2', title: 'El vecino que resuelve conflictos sin ir a juicio', level: 6, theme: 'servicios',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj'],
   text: 'Cuando dos vecinos de un mismo edificio llevan meses sin hablarse por una disputa sobre ruidos, filtraciones de agua o gastos comunitarios mal repartidos, la vía judicial tradicional no siempre resulta la opción más rápida ni más barata disponible. Un servicio municipal de mediación vecinal, presente ya en varias ciudades españolas, ofrece una alternativa gratuita que, según sus propios datos, resuelve satisfactoriamente más del setenta por ciento de los casos que llegan a tramitarse.\n\nEl proceso de mediación reúne a ambas partes en presencia de un mediador profesional formado específicamente en resolución de conflictos, cuya función no consiste en dictar quién tiene razón, como haría un juez, sino en facilitar que ambas partes encuentren por sí mismas una solución que consideren aceptable. Esta diferencia resulta, según los propios mediadores, fundamental para el éxito del proceso: una solución impuesta desde fuera rara vez logra restaurar realmente la convivencia futura entre vecinos que, guste o no, seguirán viviendo puerta con puerta durante años.\n\nUn caso relativamente habitual involucra a comunidades enteras divididas por la instalación de un ascensor, donde algunos vecinos de plantas bajas se niegan a asumir un coste que consideran innecesario para ellos, mientras que vecinos de pisos superiores, especialmente personas mayores con movilidad reducida, defienden la instalación como una necesidad prácticamente vital. La mediación, en estos casos, no busca simplemente repartir costes de forma matemáticamente equitativa, sino explorar fórmulas de pago escalonado o aplazado que ambas partes puedan aceptar sin sentir que han perdido frente al otro bando.\n\nLo que distingue especialmente a este tipo de servicio, según reconocen los propios mediadores tras años de experiencia acumulada, no es tanto la solución técnica alcanzada en cada caso concreto, sino haber conseguido que ambas partes vuelvan a saludarse por el rellano sin la tensión evidente que caracterizaba la relación antes de acudir al servicio.',
   gloss: [
     { es: 'una filtración (de agua)', en: 'un escape de agua a través de una pared o techo dañados' },
@@ -5159,7 +5159,7 @@ window.PASSAGES = [
 
 {
   id: 'donacion-plasma-cuerpo-b2', title: 'Su sangre lleva anticuerpos que otros necesitan', level: 6, theme: 'cuerpo',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'impsubj'],
   text: 'Tras superar una infección poco habitual hace dos años, los médicos descubrieron que la sangre de Fernando contenía una concentración especialmente alta de anticuerpos específicos contra esa enfermedad concreta, un hallazgo que lo convirtió, sin que él mismo lo esperara en absoluto, en uno de los pocos donantes de plasma hiperinmune disponibles en toda la región para tratar a otros pacientes gravemente afectados por la misma infección.\n\nA diferencia de una donación de sangre convencional, que dura apenas unos minutos, la donación de plasma mediante un proceso llamado aféresis requiere que Fernando permanezca conectado a una máquina especializada durante casi una hora completa. Este dispositivo extrae la sangre, separa mecánicamente el plasma de los glóbulos rojos, y devuelve estos últimos directamente al cuerpo del donante, lo que permite donar plasma con mucha mayor frecuencia de la que sería posible con sangre completa.\n\nCada donación de Fernando puede llegar a tratar potencialmente a varios pacientes distintos, dependiendo de la dosis concreta que necesite cada uno según la gravedad de su caso particular. Los médicos le explicaron que sus anticuerpos, administrados a un paciente que todavía no ha desarrollado los suyos propios, pueden proporcionar una protección inmediata mientras el propio sistema inmunitario del receptor aprende a defenderse por sí mismo frente a la infección.\n\nFernando dona plasma cada dos semanas desde hace ya dieciocho meses, y reconoce que, al principio, la idea de que su propia sangre pudiera literalmente salvar la vida de completos desconocidos le resultaba difícil de asimilar del todo. Hoy lo describe simplemente como parte de su rutina habitual, aunque admite sentir una satisfacción difícil de explicar cada vez que el hospital le informa, de forma anónima, que otro paciente más ha superado la enfermedad gracias, en parte, a una donación suya.',
   gloss: [
     { es: 'el plasma (sanguíneo)', en: 'la parte líquida de la sangre, sin los glóbulos rojos ni blancos' },
@@ -5177,7 +5177,7 @@ window.PASSAGES = [
 
 {
   id: 'bromista-tension-caracter-b2', title: 'El chiste que llega justo en el peor momento', level: 6, theme: 'caracter',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj'],
   text: 'En cualquier reunión familiar tensa, basta con que alguien mencione un tema delicado para que Rodrigo, inevitablemente, suelte un comentario gracioso que rebaja de golpe la tensión acumulada en la sala, para alivio de unos y ligera irritación de otros, que en ocasiones preferirían abordar el conflicto directamente en lugar de esquivarlo con humor.\n\nQuienes lo conocen desde hace años coinciden en que Rodrigo no bromea porque el conflicto le resulte indiferente, sino más bien todo lo contrario: la tensión ajena le genera un malestar físico casi inmediato, y el chiste funciona, según le explicó una vez a su hermana, como una especie de válvula de escape que le permite soportar una situación que de otro modo encontraría casi insoportable.\n\nEsta estrategia, sin embargo, no siempre resulta bien recibida. En una discusión familiar particularmente seria sobre la herencia de sus padres, un chiste de Rodrigo llegado en el momento menos oportuno estuvo a punto de provocar que su hermana mayor abandonara la mesa completamente indignada, convencida de que él se estaba burlando de un asunto que a ella le importaba profundamente resolver con seriedad.\n\nTras aquel incidente concreto, Rodrigo ha empezado a hacer un esfuerzo consciente por distinguir entre las tensiones que realmente se benefician de un poco de humor liberador y aquellas otras, más graves, que exigen simplemente escuchar en silencio sin intentar aligerar nada. Reconoce que todavía falla en este intento con cierta frecuencia, pero también que, por primera vez en su vida adulta, ha empezado a preguntarse activamente si cada chiste concreto ayuda de verdad a la situación, o si simplemente le sirve a él mismo para evitar sentir una incomodidad que preferiría no afrontar.',
   gloss: [
     { es: 'esquivar (un conflicto)', en: 'evitar enfrentarse directamente a algo' },
@@ -5196,7 +5196,7 @@ window.PASSAGES = [
 /* Batch 7 of 8. */
 {
   id: 'autobus-turistico-viajes-b2', title: 'Ver una ciudad entera en noventa minutos', level: 6, theme: 'viajes',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
   text: 'Cada mañana, decenas de autobuses turísticos de dos pisos recorren las mismas catorce paradas del centro histórico, cargados de visitantes que, auriculares puestos, escuchan una narración grabada en catorce idiomas distintos mientras fotografían monumentos desde la ventanilla sin bajarse siquiera del vehículo en la mayoría de los casos. Para muchos guías turísticos tradicionales, este modelo de turismo representa exactamente lo contrario de lo que ellos mismos consideran una visita genuina a una ciudad.\n\nLos defensores de este formato, sin embargo, señalan que no todos los visitantes disponen del mismo tiempo ni de la misma movilidad física para recorrer una ciudad a pie durante horas enteras. Para una familia con niños pequeños, o para una persona mayor con dificultades de movilidad, noventa minutos sentado cómodamente, con la posibilidad de bajarse y volver a subir en cualquier parada según el billete adquirido, puede resultar la única manera realista de conocer, aunque sea superficialmente, los puntos más emblemáticos de una ciudad desconocida.\n\nLos guías turísticos tradicionales, por su parte, insisten en que ninguna narración grabada, por bien producida que esté, puede adaptarse a las preguntas espontáneas de un grupo concreto, ni transmitir la misma pasión genuina que un guía humano local siente hacia su propia ciudad. Además, argumentan, el turismo en autobús concentra a los visitantes exclusivamente en los puntos ya masificados del centro histórico, sin redirigir jamás ni un solo euro hacia barrios menos conocidos que también merecerían atención turística.\n\nAlgunos ayuntamientos han empezado a intervenir directamente en este debate, limitando el número de licencias disponibles para estos autobuses o restringiendo las rutas permitidas en las zonas más congestionadas del centro histórico. La tensión de fondo, sin embargo, sigue sin resolverse del todo: entre un turismo más accesible para quienes tienen limitaciones reales de tiempo o movilidad, y un turismo que muchos residentes consideran que reduce ciudades enteras a una simple sucesión de fotografías tomadas desde la ventanilla de un autobús en movimiento.',
   gloss: [
     { es: 'emblemático', en: 'que representa de forma característica algo, en este caso una ciudad' },
@@ -5214,7 +5214,7 @@ window.PASSAGES = [
 
 {
   id: 'escalada-miedo-ocio-b2', title: 'Superar el vértigo colgada de una roca', level: 6, theme: 'ocio',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'condperf'],
   text: 'La primera vez que Nuria se colgó de un arnés de escalada, a casi veinte metros del suelo, sintió un pánico tan intenso que apenas podía respirar con normalidad, convencida durante varios minutos de que jamás lograría soltar las manos de la roca para continuar ascendiendo ni un solo metro más. Su instructor, sin embargo, insistió en que aquella reacción era completamente normal, y que el miedo inicial disminuía notablemente con la práctica repetida, no porque el peligro objetivo desapareciera, sino porque el cuerpo aprendía gradualmente a confiar en el propio equipo de seguridad.\n\nDos años después de aquella primera experiencia paralizante, Nuria escala regularmente rutas bastante exigentes, y reconoce que el vértigo inicial nunca ha desaparecido del todo, sino que simplemente ha aprendido a convivir con él de una forma que antes le habría resultado completamente inimaginable. Describe la sensación como una especie de miedo controlado, presente siempre en algún rincón de la mente, pero ya no lo suficientemente paralizante como para impedirle disfrutar genuinamente de la actividad.\n\nLo que más le sorprendió a Nuria durante este proceso no fue tanto la superación gradual del miedo físico, sino descubrir hasta qué punto la escalada le exigía una concentración mental total, incompatible con cualquier otra preocupación cotidiana: mientras busca dónde colocar la siguiente presa para la mano, no queda literalmente espacio mental para pensar en el trabajo, en pagos pendientes o en cualquier otra fuente habitual de ansiedad en su vida diaria.\n\nMuchos escaladores experimentados coinciden con la experiencia de Nuria: la escalada funciona, para bastantes de ellos, casi como una forma de meditación forzada, donde el cuerpo y la mente deben concentrarse exclusivamente en el instante presente, precisamente porque cualquier distracción real podría tener consecuencias físicas inmediatas y tangibles sobre la propia roca.',
   gloss: [
     { es: 'un arnés', en: 'un equipo de seguridad que sujeta el cuerpo durante la escalada' },
@@ -5232,7 +5232,7 @@ window.PASSAGES = [
 
 {
   id: 'okupacion-vivienda-vivienda-b2', title: 'El piso vacío que llevaba tres años sin nadie', level: 7, theme: 'vivienda',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'condperf'],
   text: 'Cuando Fernando heredó el piso de su tía en un barrio periférico de Madrid, decidió dejarlo vacío durante casi tres años mientras terminaba de decidir si quería venderlo, alquilarlo o mudarse él mismo, sin sospechar en ningún momento que aquella indecisión prolongada acabaría convirtiéndose en un problema legal considerablemente más complicado de lo que jamás había imaginado.\n\nUna mañana cualquiera, al pasar casualmente por delante del edificio, Fernando descubrió que la cerradura original había sido cambiada, y que varias personas desconocidas entraban y salían del piso con normalidad, como si vivieran allí desde hacía tiempo. Había sido ocupado ilegalmente, según pudo confirmar después con la policía, aproximadamente cuatro meses antes de que él mismo se percatara de la situación durante aquel paseo casual.\n\nLo que Fernando descubrió a continuación le resultó tan frustrante como inesperado: recuperar legalmente la posesión de una vivienda ocupada en España puede llevar, dependiendo de la vía legal utilizada y de la saturación de los juzgados de la zona concreta, entre varios meses y, en los casos más complicados, más de un año completo, durante el cual Fernando seguía siendo legalmente responsable de los gastos de comunidad y de ciertos impuestos asociados a una propiedad que ya no podía ni siquiera visitar con normalidad.\n\nTras contratar a un abogado especializado específicamente en este tipo de casos, Fernando finalmente recuperó el piso ocho meses después de haber descubierto la ocupación, mediante un procedimiento judicial exprés diseñado precisamente para viviendas de propietarios particulares, más rápido que el procedimiento estándar pero todavía considerablemente más lento de lo que a él le habría gustado. Hoy, Fernando ha decidido alquilar el piso de inmediato en lugar de dejarlo vacío nunca más, convencido de que un piso vacío, por su propia naturaleza, termina resultando mucho más vulnerable de lo que la mayoría de los propietarios asume hasta que les ocurre algo parecido a lo suyo.',
   gloss: [
     { es: 'una cerradura', en: 'el mecanismo que permite cerrar una puerta con llave' },
@@ -5250,7 +5250,7 @@ window.PASSAGES = [
 
 {
   id: 'suscripciones-minimalismo-compras-b2', title: 'Cancelar todo lo que pagas sin usar', level: 6, theme: 'compras',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
   text: 'Cuando Diego decidió finalmente revisar con calma todos los cargos recurrentes que aparecían mensualmente en su cuenta bancaria, descubrió con cierta vergüenza que pagaba, entre suscripciones diversas de streaming, aplicaciones de productividad y gimnasios que apenas pisaba desde hacía meses, casi ciento veinte euros al mes en servicios que, en la práctica, utilizaba con una frecuencia mínima o directamente nula.\n\nEl fenómeno que Diego descubrió en sí mismo tiene incluso nombre propio entre economistas conductuales: la "suscripción olvidada" ocurre precisamente porque el coste de cada servicio individual resulta lo bastante bajo como para no justificar el esfuerzo mental de cancelarlo activamente, mientras que las propias empresas diseñan deliberadamente procesos de cancelación mucho más largos y confusos que el proceso original de contratación.\n\nTras aquel descubrimiento inicial, Diego se propuso un ejercicio sencillo: durante un mes entero, apuntó en una lista cada vez que realmente utilizaba cada uno de sus servicios de suscripción activos, sin excepción alguna. El resultado confirmó sus sospechas iniciales: de las nueve suscripciones distintas que mantenía activas, solo cuatro las había utilizado realmente más de una vez durante ese mes completo de seguimiento.\n\nCancelar las cinco suscripciones restantes le llevó, en conjunto, casi dos horas repartidas entre varias llamadas telefónicas y formularios online deliberadamente tediosos, una fricción que, según reconoce el propio Diego, explica perfectamente por qué había seguido pagando durante tanto tiempo sin plantearse siquiera la cancelación. El ahorro mensual resultante, algo más de setenta euros, no cambió drásticamente su situación económica, pero Diego insiste en que lo más valioso del ejercicio no fue tanto el dinero ahorrado, sino haber tomado conciencia real de en qué gastaba, sin darse cuenta, buena parte de su salario mensual.',
   gloss: [
     { es: 'un cargo recurrente', en: 'un pago que se repite automáticamente cada cierto periodo' },
@@ -5268,7 +5268,7 @@ window.PASSAGES = [
 
 {
   id: 'sindicato-reparto-trabajo-b2', title: 'Los repartidores que se organizaron', level: 6, theme: 'trabajo',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'impsubj'],
   text: 'Durante los primeros años de las aplicaciones de reparto de comida a domicilio, la inmensa mayoría de los repartidores trabajaban como autónomos individuales, sin ningún tipo de organización colectiva que les permitiera negociar condiciones con las propias plataformas que les asignaban los pedidos y determinaban, unilateralmente, buena parte de sus ingresos mensuales.\n\nTodo empezó a cambiar cuando un grupo reducido de repartidores de una misma ciudad empezó a coordinarse informalmente a través de grupos de mensajería, inicialmente solo para compartir información práctica sobre rutas o restaurantes problemáticos, pero progresivamente también para comparar tarifas recibidas por pedidos aparentemente idénticos, descubriendo así diferencias notables que ninguna plataforma explicaba con claridad a sus propios trabajadores.\n\nAquellas conversaciones informales acabaron derivando en la creación de una asociación formal de repartidores, que empezó exigiendo transparencia sobre el cálculo exacto de las tarifas, y terminó negociando directamente con varias plataformas locales mejoras concretas: un seguro obligatorio contra accidentes durante el reparto, una tarifa mínima garantizada independiente de las condiciones meteorológicas, y un canal formal de reclamaciones para disputas sobre pagos no recibidos correctamente.\n\nNo todas las plataformas aceptaron negociar de la misma manera, y varias disputas legales sobre la verdadera naturaleza laboral de estos trabajadores —autónomos genuinos o empleados encubiertos bajo una apariencia de autonomía— siguen resolviéndose todavía, caso por caso, en tribunales de distintos países europeos. Los propios repartidores organizados reconocen que el proceso ha sido lento y desigual según la ciudad y la plataforma concreta, pero insisten en que la simple existencia de una organización colectiva ha cambiado ya, de forma permanente, la relación de fuerzas frente a empresas que antes negociaban exclusivamente con trabajadores completamente aislados entre sí.',
   gloss: [
     { es: 'un autónomo', en: 'un trabajador que ejerce su actividad por cuenta propia, sin un contrato de empleado' },
@@ -5286,7 +5286,7 @@ window.PASSAGES = [
 
 {
   id: 'bateria-litio-ciencia-b2', title: 'Por qué tu móvil dura menos con el tiempo', level: 7, theme: 'ciencia',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'perfsubj'],
   text: 'Cualquier persona que haya usado el mismo teléfono móvil durante más de dos años ha notado probablemente que la batería, que al principio duraba cómodamente un día entero de uso normal, apenas aguanta ya media jornada sin necesitar una recarga adicional. Este deterioro progresivo no se debe a ningún fallo de fabricación, sino a un proceso químico inevitable inherente al propio funcionamiento de las baterías de iones de litio que equipan prácticamente todos los dispositivos electrónicos modernos.\n\nCada vez que una batería de litio se carga y se descarga por completo, los iones de litio que transportan la energía se desplazan físicamente entre dos electrodos internos, un proceso que, con el tiempo, provoca cambios estructurales microscópicos e irreversibles en los materiales de esos electrodos. Estos cambios reducen gradualmente la capacidad real de la batería para almacenar energía, incluso cuando el indicador del teléfono sigue mostrando aparentemente una capacidad del cien por cien tras cada carga completa.\n\nCiertos hábitos de uso aceleran notablemente este deterioro natural: mantener el teléfono conectado al cargador durante toda la noche una vez alcanzado ya el cien por cien, dejar que la batería llegue repetidamente al cero por ciento sin recargarla enseguida, o exponer el dispositivo a temperaturas extremas, especialmente al calor directo, degradan la batería considerablemente más rápido que un uso más moderado y consciente.\n\nLos fabricantes han empezado a incorporar software específicamente diseñado para ralentizar este proceso, limitando de forma inteligente la carga máxima real del dispositivo cuando detectan patrones de uso especialmente perjudiciales para la batería. Aun así, ningún software puede evitar por completo un proceso químico fundamentalmente inevitable: toda batería de litio, sin excepción, perderá capacidad de forma gradual con el tiempo, y la única variable real que el usuario puede controlar es la velocidad exacta a la que ese deterioro natural se produce.',
   gloss: [
     { es: 'un ion', en: 'un átomo o molécula con carga eléctrica' },
@@ -5304,7 +5304,7 @@ window.PASSAGES = [
 
 {
   id: 'listas-cremallera-politica-b2', title: 'Por qué las listas electorales alternan hombres y mujeres', level: 7, theme: 'politica',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj'],
   text: 'Desde hace más de dos décadas, la legislación electoral española obliga a que las listas de candidatos presentadas por los partidos políticos a determinadas elecciones alternen obligatoriamente hombres y mujeres, un sistema conocido popularmente como "lista cremallera" por la forma en que ambos sexos se intercalan, uno detrás de otro, a lo largo de toda la candidatura completa.\n\nEn el periodo previo a la introducción de esta obligación legal, era extremadamente habitual que los partidos políticos colocaran a las mujeres candidatas en los últimos puestos de sus listas, precisamente aquellos con menor probabilidad real de obtener finalmente un escaño, mientras reservaban los primeros puestos, con posibilidades reales de resultar elegidos, casi exclusivamente para candidatos hombres.\n\nLos defensores de la ley sostienen que la representación política equilibrada entre ambos sexos no llega de forma espontánea simplemente esperando un cambio cultural gradual, sino que requiere, al menos durante un periodo de transición, una intervención legal explícita que corrija activamente un desequilibrio histórico demasiado arraigado como para revertirse por sí solo. Los datos disponibles parecen respaldar parcialmente este argumento: el porcentaje de mujeres en cargos electos aumentó de forma notable y relativamente rápida tras la entrada en vigor de esta legislación.\n\nLos críticos de esta medida, por su parte, argumentan que imponer cuotas legales por sexo, en lugar de dejar que cada partido decida libremente su propia composición interna, distorsiona artificialmente un proceso que debería basarse exclusivamente en el mérito individual de cada candidato, independientemente de su sexo. Otros críticos, desde una perspectiva distinta, señalan que la ley solo garantiza formalmente presencia en las listas electorales, sin asegurar en absoluto que esa representación numérica se traduzca después en una influencia real dentro de las estructuras internas de poder de cada partido, donde las decisiones verdaderamente importantes a menudo siguen tomándose al margen de cualquier cuota legal.',
   gloss: [
     { es: 'una candidatura (electoral)', en: 'el conjunto de personas que un partido presenta para unas elecciones' },
@@ -5322,7 +5322,7 @@ window.PASSAGES = [
 
 {
   id: 'noticias-falsas-medios-b2', title: 'Por qué compartimos noticias sin comprobarlas', level: 6, theme: 'medios',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'perfecto', 'imperfecto', 'presubj'],
   text: 'Un estudio ampliamente citado, publicado en la revista Science, analizó más de ciento veinte mil noticias difundidas en redes sociales durante más de una década y llegó a una conclusión incómoda para cualquiera que confíe en el sentido común colectivo de los usuarios: las noticias falsas se difunden, de media, significativamente más rápido y llegan a muchas más personas que las noticias verdaderas sobre el mismo tema exacto.\n\nLos investigadores descartaron explicaciones sencillas como la actuación de cuentas automatizadas, ya que el patrón se mantenía prácticamente idéntico incluso al eliminar del análisis toda la actividad identificada como no humana. La explicación que mejor encajaba con los datos observados resultó ser, sencillamente, que las noticias falsas suelen resultar más novedosas y sorprendentes que las verdaderas, precisamente porque quien las inventa no está limitado por los hechos reales y puede diseñar deliberadamente la versión más llamativa posible del relato.\n\nEsa novedad y esa capacidad de generar una reacción emocional intensa —indignación, sorpresa, miedo— parece ser exactamente lo que impulsa a las personas a compartir contenido con mayor rapidez, mucho antes de que exista tiempo real para verificar si la información es cierta. Compartir una noticia impactante, sugieren los propios autores del estudio, funciona en las redes sociales casi como una moneda social: otorga a quien comparte una sensación de estar aportando información valiosa y relevante a su círculo de contactos.\n\nCorregir este patrón no resulta sencillo, precisamente porque contradice un instinto humano bastante básico: reaccionar y compartir de inmediato ante algo sorprendente. Algunas plataformas han empezado a introducir pequeñas fricciones deliberadas, como preguntar explícitamente al usuario si ha leído el artículo completo antes de compartirlo, una medida modesta que, según ciertos estudios preliminares, consigue reducir de forma medible, aunque no elimina en absoluto, la velocidad de propagación de contenido falso o engañoso.',
   gloss: [
     { es: 'difundir (una noticia)', en: 'hacer que algo se extienda y llegue a mucha gente' },
@@ -5340,7 +5340,7 @@ window.PASSAGES = [
 
 {
   id: 'falsificacion-arte-b2', title: 'El falsificador que engañó a los museos', level: 7, theme: 'arte',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'plusc', 'condperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'plusc', 'condperf'],
   text: 'Durante casi cuarenta años, un pintor sin ningún reconocimiento público bajo su propio nombre consiguió vender cientos de cuadros falsos atribuidos a grandes maestros del siglo veinte, algunos de los cuales llegaron a exponerse durante años en museos reputados de varios países, hasta que un análisis químico rutinario del material utilizado reveló finalmente la impostura.\n\nLo que distinguía a este falsificador concreto de otros casos similares no era únicamente su habilidad técnica, notable pero no excepcional según reconocieron después varios expertos, sino su conocimiento profundo y minucioso de los materiales exactos que cada pintor específico habría tenido realmente disponibles en la época concreta en que se suponía que había pintado cada obra falsificada. Evitaba sistemáticamente cualquier pigmento sintético inventado después de la fecha atribuida a la obra, un error frecuente y relativamente fácil de detectar que arruina a falsificadores menos meticulosos.\n\nSu caída, paradójicamente, no llegó a través de ningún análisis exhaustivo de expertos en arte, sino gracias a un análisis químico rutinario solicitado por un comprador especialmente cauteloso que quería asegurarse bien de todo previamente, dado el valor considerable de la compra. El laboratorio detectó trazas mínimas de un pigmento industrial que, sencillamente, no existía todavía en el año en que la obra decía haber sido pintada, un descubrimiento que desencadenó una investigación mucho más amplia sobre el resto de su producción artística fraudulenta.\n\nDurante el juicio posterior, varios coleccionistas y directores de museos reconocieron públicamente, con evidente incomodidad, que habían llegado a admirar genuinamente la calidad artística de aquellas obras, sin saber todavía que eran falsificaciones, una confesión que reabrió un debate filosófico más amplio sobre si el valor estético real de una obra depende exclusivamente de quién la creó, o si, en cierto sentido incómodo de aceptar, la belleza percibida sigue siendo genuina independientemente de la identidad verdadera del autor.',
   gloss: [
     { es: 'un falsificador', en: 'una persona que crea imitaciones fraudulentas presentándolas como auténticas' },
@@ -5395,7 +5395,7 @@ window.PASSAGES = [
 
 {
   id: 'diagnostico-tardio-salud-b2', title: 'Diez años buscando un nombre para su dolor', level: 6, theme: 'salud',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'plusc', 'condperf'],
   text: 'Durante casi diez años, Cristina visitó a más de una docena de especialistas distintos intentando encontrar una explicación al dolor crónico generalizado que la acompañaba prácticamente a diario, sin que ninguno de ellos lograra ofrecerle un diagnóstico claro más allá de sugerencias vagas sobre estrés, ansiedad o, en más de una ocasión según recuerda con cierta amargura, comentarios que insinuaban que el dolor era, en gran medida, "cosa de su cabeza".\n\nLa fibromialgia, la enfermedad que finalmente le diagnosticaron tras años de pruebas y descartes sucesivos, resulta particularmente difícil de identificar precisamente porque no existe ningún análisis de sangre ni ninguna prueba de imagen que la confirme de manera directa e inequívoca. El diagnóstico depende, en gran medida, de descartar metódicamente otras posibles causas del dolor y de evaluar un patrón específico de puntos sensibles repartidos por todo el cuerpo, un proceso que puede alargarse considerablemente si el médico consultado no está familiarizado con el protocolo diagnóstico específico de esta enfermedad.\n\nCristina reconoce que el momento del diagnóstico, paradójicamente, le produjo un alivio casi inmediato, a pesar de tratarse de una enfermedad crónica sin cura conocida hasta la fecha: por fin existía un nombre concreto para lo que llevaba sufriendo durante toda una década, y esa simple validación médica formal cambió notablemente su relación con el propio dolor, que ya no tenía que justificar constantemente ante médicos escépticos ni ante familiares que, sin mala intención, habían llegado a dudar de la gravedad real de su malestar.\n\nHoy, Cristina participa activamente en una asociación de pacientes que ayuda a otras personas a navegar ese mismo proceso diagnóstico frustrante, insistiendo siempre en un mensaje que a ella misma le habría gustado escuchar mucho antes: un dolor crónico sin explicación médica inmediata no significa, en absoluto, que el dolor no sea completamente real.',
   gloss: [
     { es: 'la fibromialgia', en: 'una enfermedad crónica que causa dolor generalizado por todo el cuerpo' },
@@ -5431,7 +5431,7 @@ window.PASSAGES = [
 
 {
   id: 'apellido-materno-identidad-b2', title: 'Por qué eligió llevar el apellido de su madre primero', level: 6, theme: 'identidad',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj'],
   text: 'Cuando nació su primera hija, Marta y su pareja decidieron hacer algo que en España sigue siendo minoritario, aunque legalmente posible desde hace más de una década: invertir el orden tradicional de los apellidos, de manera que la niña llevara primero el apellido materno y después el paterno, en lugar de seguir la costumbre histórica que colocaba automáticamente el apellido del padre en primer lugar.\n\nLa ley española permite desde 2013 que los padres elijan libremente el orden de los apellidos de sus hijos, siempre que ambos progenitores estén de acuerdo con la decisión tomada; en caso de desacuerdo entre ellos, se mantiene todavía el orden tradicional por defecto, salvo intervención judicial expresa. Antes de esta reforma legal concreta, el apellido paterno precedía automáticamente al materno en prácticamente todos los casos, sin ninguna posibilidad real de elección para las familias.\n\nPara Marta, la decisión no respondía a ningún gesto puramente simbólico o reivindicativo, sino a una reflexión bastante más personal: su propio apellido materno, que ella lleva en segundo lugar desde que nació, desaparecería probablemente de la memoria familiar en apenas dos generaciones más, ya que sus hijos, de mantenerse el orden tradicional, ni siquiera lo llevarían ya en sus propios documentos de identidad.\n\nLa decisión generó, sin embargo, cierta incomprensión inicial entre algunos familiares mayores, que interpretaron el cambio como una especie de desaire hacia la línea paterna de la familia, algo que Marta ha tenido que explicar pacientemente en más de una reunión familiar. Hoy, varios años después, admite que la reacción inicial de sorpresa se ha convertido, en la mayoría de los casos, en una curiosidad genuina sobre por qué esta práctica, tan sencilla de aplicar, sigue resultando tan poco habitual todavía en la sociedad española en general.',
   gloss: [
     { es: 'un progenitor', en: 'el padre o la madre de una persona' },
@@ -5449,7 +5449,7 @@ window.PASSAGES = [
 
 {
   id: 'padre-ausente-relaciones-b2', title: 'La carta que nunca llegó a enviar', level: 6, theme: 'relaciones',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'condperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'plusc', 'condperf'],
   text: 'Durante más de veinte años, Andrés escribió cartas dirigidas a un padre que había abandonado a la familia cuando él tenía apenas seis años, cartas que nunca llegó a enviar realmente porque, admite ahora, ni siquiera conocía con certeza una dirección postal actualizada a la que hacerlo, y porque, en el fondo, tampoco estaba del todo seguro de querer una respuesta real a lo que escribía.\n\nAquellas cartas nunca enviadas funcionaban, según le explicó después una terapeuta a la que finalmente consultó ya entrada su vida adulta, como una forma de procesar un abandono que Andrés jamás había tenido oportunidad real de discutir directamente con la persona responsable de él. Escribía sobre cumpleaños celebrados sin la presencia paterna, sobre logros académicos que le habría gustado compartir con alguien que ya no formaba parte de su vida cotidiana, y sobre una rabia que, con los años, se había ido transformando gradualmente en una tristeza más silenciosa y menos explosiva que la que sentía de adolescente.\n\nUn primo lejano localizó finalmente a su padre, ya mayor y con problemas de salud considerables, viviendo en otra ciudad completamente distinta, y le preguntó a Andrés si quería que le facilitara el contacto directo. Andrés tardó casi seis meses enteros en decidirse a escribirle, esta vez de verdad, una única carta real que sí llegó finalmente a su destinatario.\n\nEl reencuentro que siguió, tras el envío de aquella carta, no fue el momento catártico y perfectamente resolutivo que las películas suelen representar en situaciones parecidas: su padre reconoció el abandono, pero ofreció explicaciones que a Andrés le parecieron, en el mejor de los casos, insuficientes para justificar veinte años enteros de ausencia total. Aun así, Andrés reconoce que necesitaba escuchar esas explicaciones imperfectas, precisamente para poder finalmente dejar de escribir cartas que nunca llegaban a ningún sitio.',
   gloss: [
     { es: 'el abandono', en: 'el hecho de dejar a alguien, especialmente a un hijo, sin cuidado ni presencia' },
@@ -5467,7 +5467,7 @@ window.PASSAGES = [
 
 {
   id: 'huerto-urbano-alimentacion-b2', title: 'Tomates en el tejado del bloque', level: 6, theme: 'alimentacion',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
   text: 'En el tejado de un bloque de viviendas de ocho plantas en pleno centro de Madrid, un grupo de veinticinco vecinos ha transformado lo que antes era un espacio vacío, ocupado únicamente por antenas y depósitos de agua, en un huerto urbano comunitario donde cultivan, entre todos, tomates, pimientos, lechugas y varias hierbas aromáticas que después se reparten equitativamente según un sistema rotatorio de turnos semanales.\n\nEl proyecto surgió inicialmente de una conversación casual entre dos vecinas jubiladas que, tras años sin apenas conocer a nadie más del edificio a pesar de vivir allí durante décadas, decidieron proponer la idea directamente en una junta de propietarios convocada por otro motivo completamente distinto. Contra todo pronóstico inicial, la propuesta obtuvo una aprobación prácticamente unánime, en parte porque no exigía ninguna inversión económica considerable por parte de la comunidad.\n\nCultivar en un tejado presenta, sin embargo, desafíos específicos que ningún huerto tradicional a nivel del suelo tiene que afrontar: el viento resulta mucho más intenso a esa altura, lo que obliga a proteger cuidadosamente las plantas más frágiles, y el peso total de la tierra y el agua debe calcularse con precisión para no sobrecargar la estructura original del edificio, un cálculo que requirió, en este caso concreto, la contratación de un ingeniero estructural antes de aprobar definitivamente el proyecto.\n\nMás allá de la propia cosecha, que ningún vecino describe como el verdadero motivo por el que sigue participando activamente año tras año, el huerto se ha convertido en el punto de encuentro semanal donde vecinos que antes apenas se saludaban en el ascensor ahora comparten herramientas, consejos de jardinería y, cada vez con más frecuencia, comidas improvisadas preparadas con lo que la propia cosecha del tejado ha dado esa semana concreta.',
   gloss: [
     { es: 'un depósito (de agua)', en: 'un contenedor grande donde se almacena agua' },
@@ -5485,7 +5485,7 @@ window.PASSAGES = [
 
 {
   id: 'repetir-curso-educacion-b2', title: '¿Sirve para algo repetir curso?', level: 7, theme: 'educacion',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'plusc'],
   text: 'España presenta, en comparación con la mayoría de países de su entorno europeo, uno de los índices más altos de repetición de curso en la educación secundaria, una práctica que durante décadas se ha dado prácticamente por sentada como la respuesta lógica y natural ante un rendimiento académico insuficiente, sin que se cuestionara demasiado su eficacia real a largo plazo.\n\nDiversos estudios comparativos internacionales, sin embargo, arrojan resultados que contradicen bastante esa intuición extendida: los alumnos que repiten curso no suelen mejorar, en términos generales, su rendimiento académico de forma significativa al año siguiente, y en un porcentaje nada desdeñable de casos incluso empeoran ligeramente, en parte porque repetir el mismo contenido exacto con el mismo enfoque pedagógico que ya había fracasado la primera vez rara vez soluciona la causa real del problema original.\n\nMás preocupante todavía resulta el efecto que numerosos estudios han documentado sobre la autoestima y la motivación de los alumnos que repiten, especialmente cuando esto ocurre durante la adolescencia temprana: separarse del grupo de amigos con quienes han compartido aula durante años, y quedar etiquetados, de forma más o menos explícita según el centro educativo concreto, como alumnos de rendimiento inferior, puede generar un daño emocional que se prolonga bastante más allá del curso académico concreto que se repite.\n\nLos países que han reducido drásticamente la repetición de curso, sustituyéndola por sistemas de refuerzo individualizado dentro del propio curso correspondiente a la edad del alumno, no han observado, en general, ningún empeoramiento del nivel educativo medio, lo que sugiere que el problema de fondo quizás nunca fue tanto la falta de repetición en sí misma, sino la ausencia de un apoyo pedagógico realmente adaptado a las necesidades específicas de cada alumno concreto.',
   gloss: [
     { es: 'arrojar (resultados)', en: 'producir o dar como resultado, en el contexto de un estudio' },
@@ -5521,7 +5521,7 @@ window.PASSAGES = [
 
 {
   id: 'transplante-cara-cuerpo-b2', title: 'La cara que ya no era la suya', level: 7, theme: 'cuerpo',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
   text: 'Tras sufrir quemaduras graves que le desfiguraron por completo el rostro en un accidente industrial, Miguel se convirtió, hace seis años, en uno de los pocos pacientes del mundo en recibir un trasplante de cara completo, un procedimiento quirúrgico extraordinariamente complejo que sustituye piel, músculos e incluso parte del hueso facial del receptor por tejido procedente de un donante fallecido compatible genéticamente.\n\nA diferencia de un trasplante de órgano interno convencional, un trasplante de cara plantea desafíos psicológicos únicos que ningún otro procedimiento médico similar tiene que afrontar de la misma manera: el paciente debe adaptarse no solo a la recuperación física, larga y dolorosa, sino también a mirarse al espejo cada mañana y ver un rostro que, aunque funcionalmente suyo, presenta rasgos que nunca antes había visto reflejados en ningún espejo de su propia vida.\n\nLos equipos médicos que realizan este tipo de intervenciones incluyen, de forma sistemática, un apoyo psicológico intensivo tanto antes como después de la operación, precisamente porque numerosos pacientes previos han reportado una sensación de disociación inicial considerable entre su propia identidad interna y la nueva apariencia física con la que deben aprender a convivir día tras día durante el resto de su vida.\n\nMiguel reconoce que necesitó casi dos años completos de terapia especializada antes de sentir que aquel rostro, con rasgos que combinan de forma sutil elementos genéticos del donante original con su propia estructura ósea subyacente, era genuinamente el suyo propio, y no una máscara ajena colocada temporalmente sobre su verdadera identidad. Hoy participa activamente en programas de apoyo para futuros pacientes que se enfrentan al mismo procedimiento, insistiendo siempre en que la recuperación física, por compleja que resulte médicamente, termina siendo, en su experiencia personal, mucho más sencilla de superar que la propia reconciliación psicológica con la propia imagen reflejada en el espejo.',
   gloss: [
     { es: 'desfigurar', en: 'alterar gravemente la forma o el aspecto normal de algo, especialmente el rostro' },
@@ -5569,7 +5569,7 @@ window.PASSAGES = [
 
 {
   id: 'arnm-vacunas-ciencia-c1', title: 'El mensajero que tardó treinta años en llegar', level: 8, theme: 'ciencia',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'condperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj', 'condperf'],
   text: 'Se entiende por ARN mensajero una molécula que actúa como intermediaria entre el ADN, encerrado en el núcleo de la célula, y la maquinaria celular que fabrica proteínas fuera de él: transporta, en esencia, las instrucciones necesarias sin que el propio ADN tenga que desplazarse nunca de su ubicación protegida.\n\nLa idea de aprovechar esta molécula para fabricar vacunas no nació, como muchos asumieron erróneamente durante la pandemia, en 2020, sino que llevaba décadas desarrollándose entre bambalinas, financiada de forma intermitente y con escaso reconocimiento público, principalmente porque el ARN mensajero resultaba, durante los años noventa, extraordinariamente inestable: se degradaba antes de que el cuerpo tuviera tiempo de aprovecharlo.\n\nEl avance decisivo llegó de la mano de una investigadora que, tras ver rechazada su financiación en repetidas ocasiones y perder incluso su puesto en la universidad donde trabajaba, persistió en encontrar una modificación química capaz de estabilizar la molécula lo suficiente como para que el sistema inmunitario pudiera reaccionar ante ella sin descomponerla de inmediato. Aquella modificación, publicada en un artículo que apenas generó interés en su momento, resultaría ser, años después, la pieza que faltaba para que la tecnología funcionara.\n\nUna vez resuelto ese problema técnico, la principal ventaja de esta clase de vacuna sobre las tradicionales resultó evidente: en lugar de cultivar un virus debilitado o fragmentos de proteína durante meses en laboratorios especializados, basta con sintetizar la secuencia genética correspondiente, un proceso que puede completarse en cuestión de días una vez identificado el patógeno. Esto explica por qué, cuando surgió una emergencia sanitaria global, ya existía la base tecnológica necesaria para acelerar drásticamente lo que habría llevado años bajo el modelo anterior.\n\nHoy se investiga activamente si el mismo mecanismo podría aplicarse más allá de las enfermedades infecciosas: varios ensayos clínicos en curso exploran vacunas de ARN mensajero personalizadas contra ciertos tipos de cáncer, diseñadas a partir de las mutaciones específicas del tumor de cada paciente. Para dentro de una década, es probable que sepamos con bastante más certeza si esta tecnología, que tardó treinta años en encontrar su primer gran uso, tiene tanto recorrido futuro como sus defensores más optimistas anticipan.',
   questions: [
     { type: 'mcq', q: '¿Qué idea corrige el texto sobre el origen de la tecnología de ARN mensajero?', options: ['Que se inventó por completo durante la pandemia de 2020', 'Que llevaba décadas desarrollándose antes de encontrar su primer gran uso', 'Que fue idea de un solo laboratorio gubernamental'], answer: 1 },
@@ -5593,7 +5593,7 @@ window.PASSAGES = [
 
 {
   id: 'semana-cuatro-dias-economia-c1', title: 'Menos horas, ¿la misma productividad?', level: 8, theme: 'economia',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'plusc'],
   text: 'Una consultora de tamaño medio decidió, hace poco más de un año, reducir la jornada laboral de sus doscientos empleados de cinco a cuatro días semanales, manteniendo el salario íntegro, con el único requisito explícito de mantener el mismo nivel de producción que antes del cambio.\n\nLos responsables de la empresa reconocen que la decisión no partió de ningún estudio previo exhaustivo, sino de una intuición bastante extendida entre el equipo directivo: sospechaban que buena parte de la jornada tradicional se consumía en reuniones poco productivas y en un ritmo de trabajo deliberadamente pausado para llenar las ocho horas exigidas, más que en trabajo genuinamente necesario.\n\nDoce meses después de implantar el cambio, los datos internos de la empresa muestran que la producción medida en proyectos entregados no solo se mantuvo, sino que aumentó ligeramente respecto al año anterior con jornada de cinco días, un resultado que ni los propios directivos esperaban de forma tan clara. Según explican, los empleados empezaron a priorizar de forma mucho más estricta qué reuniones merecían realmente su tiempo, y las que se mantuvieron pasaron a durar, de media, bastante menos de lo habitual.\n\nNo todos los departamentos experimentaron el mismo efecto, sin embargo: el equipo de atención al cliente, que depende directamente de la disponibilidad horaria frente al usuario final, tuvo que reorganizar completamente sus turnos para cubrir el mismo horario de atención con un día menos por persona, lo que exigió contratar a tres empleados adicionales, un coste que la dirección no había anticipado del todo al diseñar inicialmente el proyecto.\n\nOtras empresas del sector observan el experimento con un interés genuino, aunque también con cierta cautela: varios directivos consultados admiten que replicarían la medida sin dudarlo si dispusieran de un margen de beneficio parecido al de esta consultora, pero dudan de que el mismo modelo resulte igual de viable en sectores con márgenes mucho más ajustados, donde cualquier coste adicional imprevisto podría comprometer seriamente la viabilidad del negocio completo.',
   questions: [
     { type: 'mcq', q: '¿Qué sugieren los datos internos de la empresa tras doce meses de jornada reducida?', options: ['Que la producción bajó notablemente', 'Que la producción se mantuvo e incluso aumentó ligeramente', 'Que no hubo ningún cambio medible en absoluto'], answer: 1 },
@@ -5617,7 +5617,7 @@ window.PASSAGES = [
 
 {
   id: 'ultimo-monje-religion-c1', title: 'El monasterio que se queda sin voces', level: 9, theme: 'religion',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'plusc'],
   text: 'Cuando el hermano Anselmo murió, hace tres meses, el monasterio que había sido su hogar durante cuarenta y dos años se quedó, de la noche a la mañana, con un único monje residente, el hermano Bernardo, que a sus ochenta y un años reconoce abiertamente que probablemente será el último en apagar las luces de un edificio con más de ochocientos años de historia continuada.\n\nEl monasterio, fundado en el siglo XII y habitado sin interrupción hasta hace apenas una década por una comunidad de hasta veinticinco monjes, ha ido perdiendo miembros progresivamente conforme los más ancianos fallecían sin que ningún novicio nuevo llegara a sustituirlos, un patrón que se repite en buena parte de las órdenes contemplativas de la región desde hace ya varias décadas.\n\nEl hermano Bernardo no oculta cierta melancolía cuando habla del futuro inmediato del lugar, pero tampoco se permite demasiado sentimentalismo: explica que la orden ya ha iniciado conversaciones con la diócesis para decidir qué ocurrirá con el edificio y su extensa biblioteca una vez que él, inevitablemente, ya no esté allí para mantenerlo habitado. Algunas opciones que se barajan incluyen convertirlo en centro cultural, en residencia para investigadores, o, la que él mismo confiesa preferir en el fondo, mantenerlo como lugar de retiro espiritual abierto a laicos, aunque sin ninguna comunidad monástica permanente que lo habite ya de forma continua.\n\nLo que más lamenta el hermano Bernardo no es tanto la desaparición previsible de su propia forma de vida, que él mismo eligió libremente hace más de medio siglo y que no cambiaría, sino la pérdida de un tipo de silencio muy particular que solo se genera, según explica, cuando varias personas conviven durante décadas bajo una misma regla y un mismo horario de oración compartido: un silencio colectivo, dice, que ningún visitante ocasional ni ningún monje solitario puede ya recrear por sí solo, por mucho empeño que le ponga.\n\nDentro de pocos años, cuando el hermano Bernardo también falte, es probable que el edificio conserve las piedras, la biblioteca y quizás incluso el horario de campanas, pero difícilmente conservará ya aquello que, a su juicio, hacía del lugar un monasterio de verdad y no simplemente un edificio antiguo con forma de monasterio.',
   questions: [
     { type: 'mcq', q: '¿Qué es lo que más lamenta el hermano Bernardo, según el texto?', options: ['El fin de su propia vocación personal, que lamenta haber elegido', 'La pérdida de un silencio colectivo que solo genera la vida comunitaria compartida', 'El estado de conservación física del edificio'], answer: 1 },
@@ -5653,7 +5653,7 @@ window.PASSAGES = [
 
 {
   id: 'ascenso-inesperado-trabajo-c1', title: 'El ascenso que nadie había pedido', level: 9, theme: 'trabajo',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'plusc', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'plusc', 'condperf'],
   text: '¿A que no sabes lo que me pasó la semana pasada en la oficina? No te lo vas a creer. Llevaba ya cuatro años exactamente en el mismo puesto, sin ninguna expectativa concreta de cambio a corto plazo, cuando me llamaron de recursos humanos un lunes a primera hora, algo que en mi empresa nunca ha sido buena señal históricamente.\n\nY nada, cuando ya me había resignado mentalmente a escuchar algún tipo de mala noticia, resulta que me ofrecen dirigir un departamento entero que ni siquiera sabía que se estaba creando, con seis personas a mi cargo y un presupuesto propio que jamás había manejado antes. Mi primera reacción, te lo confieso, fue de pánico absoluto más que de alegría.\n\nLo más raro de todo es que el puesto, según me explicaron después, se había diseñado pensando en un perfil bastante distinto al mío: buscaban a alguien con experiencia previa en gestión de equipos grandes, algo que yo nunca había tenido la oportunidad de demostrar formalmente en esta empresa. Al parecer, mi antiguo jefe había insistido personalmente en proponerme a mí de todos modos, convencido de que yo aprendería sobre la marcha lo que me faltaba en experiencia formal.\n\nLos primeros días fueron, para qué negarlo, un desastre bastante incómodo: cometí errores que un gestor con más experiencia jamás habría cometido, y en más de una reunión noté cómo algunos miembros del nuevo equipo dudaban abiertamente de mi criterio, sobre todo los que llevaban más años que yo en la empresa y que probablemente esperaban el puesto para ellos mismos.\n\nPoco a poco, sin embargo, las cosas empezaron a encajar: aprendí a delegar tareas que antes habría intentado hacer yo sola, y descubrí que se me daba sorprendentemente bien mediar en los desacuerdos entre compañeros, algo que nunca había tenido ocasión de practicar en mi puesto anterior. Hoy, seis meses después de aquel lunes que empezó con pánico puro, diría que el departamento funciona mejor de lo que ninguno de nosotros esperaba, aunque sigo sin tener del todo claro si merecía el puesto tanto como quienes dudaron de mí al principio.',
   questions: [
     { type: 'mcq', q: '¿Cuál fue la primera reacción de la narradora al recibir la oferta del nuevo puesto?', options: ['Alegría inmediata y total confianza', 'Pánico, más que alegría', 'Indiferencia completa'], answer: 1 },
@@ -5689,7 +5689,7 @@ window.PASSAGES = [
 
 {
   id: 'tatuaje-borrado-cuerpo-c1', title: 'La piel que quiso volver atrás', level: 8, theme: 'cuerpo',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'imperativo', 'plusc', 'condperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'imperativo', 'plusc', 'condperf'],
   text: 'Eliminar un tatuaje resulta, contra lo que sugiere la sencillez del proceso publicitado por muchas clínicas estéticas, bastante más lento y doloroso que hacérselo en primer lugar: mientras que grabar la tinta en la piel puede completarse en una única sesión de un par de horas, borrarla por completo exige, según el color y la profundidad del pigmento original, entre seis y quince sesiones espaciadas cada varias semanas.\n\nEl láser utilizado en estos tratamientos funciona fragmentando las partículas de tinta en fragmentos microscópicos que el propio sistema linfático del cuerpo se encarga de eliminar de forma gradual, un proceso biológico que ninguna tecnología actual puede acelerar significativamente sin arriesgar quemaduras graves en la piel circundante. Los tatuajes de colores oscuros, especialmente el negro, responden generalmente mejor al tratamiento que los tonos claros como el amarillo o el blanco, que absorben mucha menos energía láser y por tanto se eliminan con mayor dificultad.\n\nDaniela, que decidió eliminarse un tatuaje que se había hecho a los diecinueve años con el nombre de una pareja de entonces, admite que subestimó completamente tanto el dolor del proceso, que describe como bastante más intenso que el propio tatuaje original, como el tiempo que le llevaría ver resultados visibles: tras ocho sesiones repartidas a lo largo de casi un año, el nombre sigue siendo parcialmente legible bajo cierta luz, aunque considerablemente más tenue que al principio.\n\nLos dermatólogos consultados advierten, además, de un efecto que pocos pacientes anticipan correctamente: la piel tratada con láser durante un periodo tan prolongado puede quedar, una vez completado el proceso, con una textura o pigmentación ligeramente distinta a la piel circundante, un cambio permanente que sustituye a otro cambio permanente sin devolver realmente la piel a su estado original.\n\nDaniela reconoce que, de haber sabido todo esto con antelación, probablemente habría optado por cubrir el tatuaje antiguo con un diseño nuevo en lugar de intentar borrarlo por completo, una opción que sus amigas le sugirieron desde el principio y que ella, entonces, descartó sin pensarlo demasiado.',
   questions: [
     { type: 'mcq', q: '¿Qué tipo de tatuajes responden peor al tratamiento láser, según el texto?', options: ['Los de colores oscuros como el negro', 'Los de tonos claros como el amarillo o el blanco', 'Todos responden exactamente igual'], answer: 1 },
@@ -5737,7 +5737,7 @@ window.PASSAGES = [
 
 {
   id: 'disenadora-escape-room-ocio-c1', title: 'Diseñar el enigma perfecto', level: 8, theme: 'ocio',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'imperativo', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'imperativo', 'plusc'],
   text: 'Claudia lleva ya siete años diseñando salas de escape, un oficio que prácticamente no existía cuando terminó sus estudios de arquitectura y que descubrió casi por casualidad, tras participar como jugadora en una de las primeras salas que abrieron en su ciudad y quedar fascinada, más que por el reto en sí, por la ingeniería narrativa que sostenía cada mecanismo.\n\nSu trabajo, explica, combina elementos que en la universidad jamás imaginó que llegaría a necesitar simultáneamente: conocimientos básicos de electrónica para diseñar los mecanismos que se activan al resolver cada enigma, sensibilidad narrativa para que la historia que envuelve la sala resulte convincente, y, quizás lo más difícil de todo, una capacidad casi psicológica para calibrar exactamente el nivel de dificultad que mantendrá a un grupo de jugadores desafiado sin llegar nunca a frustrarlo por completo.\n\nEl proceso de diseño de una sala nueva, cuenta, empieza siempre por la historia, nunca por los enigmas: antes de decidir qué candado o qué mecanismo electrónico usará en una habitación concreta, Claudia necesita tener clara la narrativa completa que el jugador experimentará, porque un enigma técnicamente ingenioso pero narrativamente injustificado resulta, según su experiencia, mucho menos satisfactorio para el jugador final que uno más sencillo pero coherente con la historia que lo rodea.\n\nUno de los mayores desafíos del oficio, admite, consiste en testar cada sala nueva con jugadores reales antes de abrirla al público, un proceso que puede revelar problemas completamente invisibles para el propio equipo de diseño: en una ocasión, un enigma que su equipo consideraba razonablemente sencillo resultó bloquear a prácticamente todos los grupos de prueba durante más de media hora, simplemente porque la pista visual que debía guiarlos hacia la solución pasaba desapercibida bajo cierta iluminación que nadie del equipo había probado antes.\n\nHoy, con casi veinte salas diseñadas a sus espaldas repartidas por varias ciudades del país, Claudia insiste en que lo que más le sigue apasionando del oficio, pasados ya siete años, es precisamente ese momento imposible de fabricar artificialmente en el que un grupo de completos desconocidos resuelve, juntos y en tiempo real, algo que ella misma tardó meses en construir.',
   questions: [
     { type: 'mcq', q: '¿Por qué empieza Claudia siempre por la historia y no por los enigmas al diseñar una sala?', options: ['Porque es más rápido diseñar así', 'Porque un enigma técnicamente ingenioso pero narrativamente injustificado resulta menos satisfactorio', 'Porque los enigmas se generan automáticamente después'], answer: 1 },
@@ -5749,7 +5749,7 @@ window.PASSAGES = [
 
 {
   id: 'pisos-turisticos-vivienda-c1', title: 'El barrio que se quedó sin vecinos', level: 9, theme: 'vivienda',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj'],
   text: 'El ayuntamiento de un barrio histórico muy visitado ha anunciado recientemente un límite estricto al número de licencias para pisos turísticos, alegando que la proliferación descontrolada de este tipo de alojamiento ha expulsado, en poco más de una década, a una parte considerable de la población que llevaba generaciones enteras residiendo en la zona.\n\nQuienes defienden la medida sostienen que el argumento del libre mercado, esgrimido habitualmente por las plataformas de alquiler turístico, ignora deliberadamente una externalidad negativa evidente: cuando un propietario alquila su vivienda por noches a turistas, obtiene una rentabilidad considerablemente superior a la del alquiler tradicional a largo plazo, lo que empuja al alza el precio de todo el mercado residencial del barrio, expulsando gradualmente a quienes no pueden competir con esos precios inflados por una demanda que, en rigor, ni siquiera necesita residir allí de forma permanente.\n\nLas asociaciones de propietarios y algunas plataformas digitales del sector, por su parte, sostienen que limitar las licencias no resolverá el problema de fondo, que atribuyen más bien a una escasez estructural de vivienda nueva, y que la medida simplemente trasladará el negocio hacia el mercado informal, sin licencia ni regulación alguna, dificultando todavía más su control por parte de las autoridades municipales.\n\nSi bien es cierto que la escasez estructural de vivienda constituye, sin duda, un problema real y de fondo que ninguna medida sobre licencias turísticas resolverá por sí sola, no olvidemos que ambos problemas pueden coexistir perfectamente sin que uno anule la necesidad de atajar el otro: reconocer que faltan viviendas nuevas no obliga a ignorar que las existentes se están desviando, de forma masiva, hacia un uso que expulsa a la población residente original.\n\nAlgunos vecinos del barrio, entrevistados por medios locales, describen una sensación bastante extendida de haber quedado desplazados dentro de su propio barrio de toda la vida: calles que hace veinte años estaban llenas de comercios de proximidad hoy albergan principalmente tiendas de souvenirs y alojamientos vacacionales, un cambio que, señalan, ha ocurrido demasiado rápido como para que ninguna generación pudiera adaptarse a él con normalidad.',
   questions: [
     { type: 'mcq', q: '¿Qué externalidad negativa señalan los defensores del límite a las licencias turísticas?', options: ['Que el alquiler turístico eleva los precios y expulsa a la población residente', 'Que el alquiler turístico reduce el turismo en la zona', 'Que las plataformas digitales no pagan ningún impuesto'], answer: 0 },
@@ -5761,7 +5761,7 @@ window.PASSAGES = [
 
 {
   id: 'partida-nacimiento-servicios-c1', title: 'Un papel que nadie sabía dónde estaba', level: 8, theme: 'servicios',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'condperf'],
   text: '¿A que no sabes la odisea que tuve que pasar para conseguir la partida de nacimiento de mi abuela? No te lo vas a creer. Necesitaba el documento para completar un trámite de doble nacionalidad, y como ella nació en un pueblo pequeño que desde entonces ha cambiado tres veces de provincia administrativa, nadie parecía tener muy claro en qué archivo exacto debía buscar.\n\nEmpecé, como es lógico, por el registro civil del pueblo actual, donde me confirmaron amablemente que los archivos anteriores a cierta fecha se habían trasladado, hacía ya bastantes años, a un archivo provincial centralizado situado a más de dos horas de distancia. Cuando por fin conseguí cita allí, tras semanas de llamadas sin respuesta, me explicaron que ese lote concreto de documentos, por una reorganización administrativa que nadie supo detallarme con precisión, había sido digitalizado y trasladado a un servidor central gestionado por otro organismo completamente distinto.\n\nY nada, cuando ya empezaba a sospechar que el documento se había perdido definitivamente en alguna transición burocrática mal documentada, un funcionario especialmente paciente decidió, por iniciativa propia, buscar directamente en un microfilm antiguo que nadie había digitalizado todavía, y allí apareció, finalmente, la partida original con la caligrafía manuscrita de un párroco de hace casi un siglo.\n\nLo más increíble de toda la historia es que, según me confesó después el propio funcionario, el documento llevaba más de quince años clasificado bajo el nombre de un pueblo vecino homónimo, un simple error de transcripción de hacía décadas que había bastado para que generaciones de solicitantes anteriores, presumiblemente, se rindieran antes de encontrarlo.\n\nCuando finalmente tuve el papel en la mano, tan frágil que temía que se deshiciera con solo tocarlo, no pude evitar pensar en cuántas otras familias habrían abandonado trámites parecidos por culpa de errores idénticos, documentos perfectamente existentes pero clasificados bajo el nombre equivocado en algún archivo que nadie había vuelto a revisar en generaciones.',
   questions: [
     { type: 'mcq', q: '¿Por qué resultó tan difícil localizar la partida de nacimiento, según el texto?', options: ['Porque se había destruido definitivamente en un incendio', 'Porque estaba clasificada bajo el nombre equivocado por un error de transcripción antiguo', 'Porque la abuela nunca llegó a registrarse legalmente'], answer: 1 },
@@ -5797,7 +5797,7 @@ window.PASSAGES = [
 
 {
   id: 'alcalde-autopista-politica-c1', title: 'El alcalde que dijo que no', level: 9, theme: 'politica',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
   text: '¿A que no sabes lo que hizo el alcalde en el pleno de ayer? No te lo vas a creer, sobre todo viniendo de él. Llevaba dos años enteros defendiendo públicamente, en cada entrevista y cada debate municipal, la construcción de una autopista de circunvalación que su propio partido había prometido en la última campaña electoral como solución definitiva a los atascos del centro.\n\nY nada, cuando todo el mundo esperaba ya la votación favorable de siempre, el alcalde se levanta en mitad del pleno y anuncia que retira personalmente el proyecto, alegando un informe medioambiental que, según reconoce él mismo, llevaba meses encima de su mesa sin que se hubiera molestado en leerlo con detenimiento hasta la semana anterior.\n\nEl informe en cuestión, elaborado por técnicos independientes contratados por la propia diputación provincial, advertía de un impacto sobre un acuífero cercano bastante más grave del que el propio ayuntamiento había reconocido públicamente hasta entonces, un dato que, de haberse conocido antes de la campaña electoral, probablemente habría cambiado el tono de varias promesas hechas entonces sin matiz alguno.\n\nSus propios compañeros de partido, visiblemente incómodos durante el pleno, no ocultaban cierta irritación: algunos concejales llevaban meses defendiendo el proyecto ante vecinos y empresarios locales, y ahora tenían que explicar públicamente un giro de ciento ochenta grados que ninguno de ellos había anticipado ni preparado de antemano con sus propios votantes.\n\nEl alcalde, por su parte, insiste en que prefiere la incomodidad de reconocer un error de cálculo político antes que la responsabilidad de haber autorizado, a sabiendas del riesgo real, un proyecto que podría comprometer el abastecimiento de agua de la comarca durante décadas. Los vecinos que se oponían desde el principio a la autopista celebran la decisión con cierta cautela, conscientes de que un alcalde capaz de un giro tan brusco en una dirección también podría, en teoría, dar otro igual de brusco en sentido contrario si la presión política cambiara de nuevo.',
   questions: [
     { type: 'mcq', q: '¿Qué motivo dio el alcalde para retirar el proyecto de la autopista?', options: ['La falta de presupuesto municipal', 'Un informe medioambiental sobre el riesgo para un acuífero cercano', 'La oposición de su propio partido desde el principio'], answer: 1 },
@@ -5809,7 +5809,7 @@ window.PASSAGES = [
 
 {
   id: 'cesta-compra-inflacion-economia-c1', title: 'La cesta que cuesta lo mismo pero pesa menos', level: 8, theme: 'economia',
-  tenses: ['presente', 'perfecto', 'futuro', 'presubj', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'presubj', 'perfsubj'],
   text: 'Se entiende por reducflación una práctica cada vez más habitual entre los fabricantes de productos de consumo masivo, consistente en mantener el precio de venta de un artículo prácticamente invariable mientras se reduce, de forma discreta y casi imperceptible para el consumidor medio, la cantidad real de producto contenida en el mismo envase.\n\nUna asociación de consumidores ha publicado recientemente un estudio comparativo que documenta, con fotografías y pesajes verificados, decenas de productos habituales de supermercado cuyo contenido neto ha disminuido entre un cinco y un veinte por ciento en apenas dos años, sin que el precio final pagado por el cliente haya reflejado jamás esa reducción proporcional de cantidad.\n\nLos fabricantes consultados por el estudio justifican la práctica alegando el encarecimiento generalizado de materias primas, energía y transporte, argumentando que reducir la cantidad de producto resulta, desde su perspectiva comercial, preferible a subir directamente el precio unitario, una medida que consideran psicológicamente mucho más perjudicial para la fidelidad de sus clientes habituales que una discreta reducción de gramaje que la mayoría ni siquiera llega a notar.\n\nLos economistas consultados coinciden, sin embargo, en que esta estrategia, aunque legal, constituye en esencia una subida de precio encubierta que distorsiona además las estadísticas oficiales de inflación, calculadas normalmente sobre el precio por unidad de producto y no sobre el precio real por gramo o por mililitro efectivamente adquirido, lo que hace que la inflación percibida por el consumidor en su cesta de la compra habitual resulte sistemáticamente superior a la que reflejan las cifras gubernamentales publicadas.\n\nAlgunas administraciones europeas han empezado a exigir a los fabricantes que señalicen explícitamente, mediante una etiqueta visible junto al precio, cualquier reducción de contenido que no venga acompañada de una reducción proporcional equivalente, una medida que los defensores del consumidor celebran, aunque advierten de que su eficacia dependerá enteramente de si los propios clientes se detienen a leer, en el pasillo del supermercado, una etiqueta adicional entre decenas de estímulos visuales compitiendo por su atención.',
   questions: [
     { type: 'mcq', q: '¿Qué es la reducflación, según el texto?', options: ['Una subida directa y explícita del precio de un producto', 'Reducir la cantidad de producto manteniendo el precio prácticamente invariable', 'Una bajada general de precios en el supermercado'], answer: 1 },
@@ -5821,7 +5821,7 @@ window.PASSAGES = [
 
 {
   id: 'fosil-inesperado-ciencia-c1', title: 'Lo que había debajo del aparcamiento', level: 8, theme: 'ciencia',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'plusc'],
   text: 'Un equipo de obreros que excavaba los cimientos de un aparcamiento subterráneo se topó, a poco más de tres metros de profundidad, con lo que en un primer momento confundieron con simples rocas de forma irregular, hasta que uno de ellos, aficionado ocasional a la paleontología, reconoció en aquellas piezas la disposición característica de una columna vertebral fosilizada.\n\nLa paralización inmediata de las obras, obligatoria por ley ante cualquier hallazgo de este tipo, permitió que un equipo de paleontólogos de la universidad cercana llegara al lugar en cuestión de horas, y lo que encontraron superó con creces cualquier expectativa razonable para una excavación urbana: un esqueleto casi completo de un mamífero marino de gran tamaño, extinguido desde hace millones de años, extraordinariamente bien conservado gracias a la composición mineral específica del terreno donde había quedado sepultado.\n\nSegún explican los propios investigadores, hallazgos de esta magnitud en pleno centro urbano resultan estadísticamente muy poco frecuentes, no porque los fósiles escaseen en la zona, sino porque la mayoría de las construcciones nunca excavan lo suficientemente hondo como para alcanzar los estratos geológicos donde este tipo de restos suele conservarse, de modo que muchos hallazgos similares probablemente permanecen todavía enterrados bajo edificios ya construidos, sin que nadie llegue jamás a descubrirlos.\n\nLa promotora responsable del aparcamiento, obligada a suspender las obras durante varios meses mientras se completaba la extracción cuidadosa de los restos, ha declarado públicamente que asumirá el coste adicional sin oponerse legalmente, una postura que algunos analistas del sector atribuyen tanto a la presión mediática generada por el hallazgo como al valor publicitario que la propia empresa puede obtener asociando su nombre a un descubrimiento científico de esta relevancia.\n\nLos restos, una vez completado el proceso de extracción, se trasladarán al museo de ciencias naturales de la región, donde permanecerán expuestos junto a un panel explicativo que detallará, entre otras cosas, la curiosa circunstancia urbana de su descubrimiento bajo lo que iba a ser, simplemente, la segunda planta de un aparcamiento de coches.',
   questions: [
     { type: 'mcq', q: '¿Por qué son tan poco frecuentes hallazgos de esta magnitud en zonas urbanas, según el texto?', options: ['Porque los fósiles escasean genuinamente en esas zonas', 'Porque la mayoría de construcciones no excavan lo suficientemente hondo', 'Porque las leyes prohíben buscar fósiles en ciudades'], answer: 1 },
@@ -5881,7 +5881,7 @@ window.PASSAGES = [
 
 {
   id: 'riders-reparto-trabajo-c1', title: '¿De quién es realmente la bicicleta?', level: 9, theme: 'trabajo',
-  tenses: ['presente', 'perfecto', 'futuro', 'condicional', 'presubj', 'impsubj', 'perfsubj'],
+  tenses: ['presente', 'perfecto', 'futuro', 'condicional', 'presubj', 'perfsubj'],
   text: 'Un tribunal laboral ha dictaminado recientemente que varios repartidores de una conocida plataforma de comida a domicilio deben ser considerados empleados con contrato formal, y no autónomos independientes como la propia empresa sostiene desde su fundación, una sentencia que podría sentar un precedente considerable para todo el sector de la llamada economía de plataformas.\n\nEl argumento central de la sentencia se apoya en un aspecto que, a primera vista, podría parecer meramente técnico, pero que resulta decisivo desde el punto de vista legal: aunque los repartidores puedan formalmente rechazar pedidos sin sanción explícita alguna, el algoritmo de la aplicación penaliza en la práctica, mediante una reducción progresiva de pedidos futuros asignados, a quienes rechazan trabajos con demasiada frecuencia, generando así una subordinación real que contradice la supuesta libertad plena que caracteriza legalmente a un trabajador autónomo genuino.\n\nLa empresa, que ya ha anunciado su intención de recurrir la sentencia ante instancias superiores, sostiene que convertir a los repartidores en empleados formales encarecería tanto el servicio que buena parte de ellos, según sus propios estudios internos, preferirían perder la flexibilidad horaria actual antes que ganar la estabilidad contractual que la sentencia pretende imponerles sin haberles consultado directamente al respecto.\n\nLos propios repartidores, sin embargo, aparecen divididos en sus reacciones ante la noticia: algunos, sobre todo quienes compaginan el reparto con estudios u otro empleo, valoran precisamente la flexibilidad actual y temen perderla bajo un contrato formal con horarios fijos; otros, que dependen del reparto como única fuente de ingresos, celebran la sentencia como el reconocimiento tardío de una precariedad que llevan denunciando desde hace años sin que nadie con poder real de decisión les prestara atención suficiente.\n\nDentro de pocos meses, cuando el recurso de la empresa haya sido resuelto por el tribunal superior correspondiente, sabremos si esta sentencia concreta se queda en un caso aislado sin mayor recorrido, o si, por el contrario, termina forzando una reforma legal mucho más amplia de cómo se regula el trabajo en plataformas digitales de reparto.',
   questions: [
     { type: 'mcq', q: '¿En qué se apoya principalmente el argumento de la sentencia judicial?', options: ['En que los repartidores usan uniforme de la empresa', 'En que el algoritmo penaliza en la práctica rechazar pedidos, generando subordinación real', 'En que la empresa no paga impuestos'], answer: 1 },
@@ -5893,7 +5893,7 @@ window.PASSAGES = [
 
 {
   id: 'diagnostico-tardio-educacion-c1', title: 'Lo que nadie supo ver durante veinte años', level: 8, theme: 'educacion',
-  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'plusc'],
   text: 'A sus treinta y cuatro años, y tras toda una vida entera considerándose simplemente «poco aplicada» para la lectura, Elena recibió por fin un diagnóstico de dislexia que ningún profesor, psicopedagogo ni orientador escolar había detectado jamás durante los doce años completos que pasó cursando la educación obligatoria.\n\nEl diagnóstico llegó, de forma bastante casual, a raíz de una conversación con su propia hija, a quien sí se le había detectado la condición con apenas ocho años gracias a un protocolo de detección precoz que no existía todavía cuando Elena cursaba primaria. Al leer la lista de síntomas que la orientadora de su hija le entregó como información general, Elena reconoció, con una mezcla de alivio y una tristeza retrospectiva considerable, prácticamente cada una de las dificultades que había arrastrado durante toda su etapa escolar sin que nadie las nombrara jamás correctamente.\n\nDurante su infancia, recuerda, sus profesores atribuían sistemáticamente sus dificultades lectoras a una falta de esfuerzo o de interés genuino por los estudios, una explicación que ella misma acabó internalizando hasta el punto de construir buena parte de su identidad adulta alrededor de la idea, completamente errónea según ahora sabe, de que simplemente no era una persona inteligente en el sentido académico tradicional del término.\n\nEl propio especialista que finalmente le confirmó el diagnóstico le explicó que, durante las décadas en las que Elena cursó primaria y secundaria, la formación específica del profesorado sobre trastornos del aprendizaje resultaba prácticamente inexistente en la mayoría de centros públicos, lo que explica, aunque no justifica del todo, que generaciones enteras de alumnos con dificultades similares pasaran por el sistema educativo sin recibir jamás el apoyo específico que sí reciben hoy los niños diagnosticados a tiempo.\n\nHoy, Elena reconoce sentir una mezcla compleja de emociones contradictorias: alivio genuino por entender finalmente el origen real de unas dificultades que la acompañaron toda la vida, pero también una rabia contenida hacia un sistema educativo que, durante dos décadas enteras, prefirió etiquetarla como poco capaz antes que investigar seriamente por qué una alumna aparentemente inteligente en todo lo demás no lograba leer con la fluidez esperada.',
   questions: [
     { type: 'mcq', q: '¿Cómo explicaban los profesores de Elena sus dificultades lectoras durante la infancia?', options: ['Como un posible trastorno del aprendizaje sin diagnosticar', 'Como una falta de esfuerzo o interés genuino por los estudios', 'Como un problema de visión no corregido'], answer: 1 },
@@ -5929,7 +5929,7 @@ window.PASSAGES = [
 
 {
   id: 'adn-padre-biologico-identidad-c1', title: 'El test que cambió a mi padre de sitio', level: 9, theme: 'identidad',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj', 'plusc'],
   text: 'Regina compró el kit de análisis genético por pura curiosidad, animada por una amiga que ya había descubierto primos lejanos gracias a la misma prueba, sin sospechar remotamente que el resultado le revelaría algo bastante más profundo que un simple árbol genealógico ampliado con parientes desconocidos.\n\nEl informe, recibido por correo electrónico casi dos meses después de enviar la muestra de saliva, mostraba una coincidencia genética prácticamente nula con el hombre que Regina había llamado padre durante sus cuarenta y dos años de vida, junto a una coincidencia parcial mucho más alta con un apellido que jamás había escuchado en su vida familiar hasta ese preciso momento.\n\nLa confrontación posterior con su madre, ya bastante mayor y con la salud considerablemente debilitada, resultó tan dolorosa como Regina había anticipado que sería: su madre confesó, entre lágrimas, una relación breve mantenida décadas atrás que nunca llegó a mencionar a nadie, ni siquiera al propio hombre que crió a Regina como si fuera suya sin sospechar jamás la verdad genética del asunto.\n\nRegina reconoce que, en las semanas posteriores a la revelación, sintió una necesidad casi obsesiva de localizar a su padre biológico, un hombre que resultó seguir vivo y residiendo en otra ciudad, y con quien mantuvo finalmente un primer encuentro cargado de una tensión considerable por ambas partes, ninguna de las cuales sabía muy bien qué esperar exactamente de aquella conversación tan tardía.\n\nLo que más le sorprendió a Regina, sin embargo, no fue tanto el encuentro en sí, sino descubrir que su vínculo emocional con el hombre que la crió, aquel al que seguirá llamando padre el resto de su vida, permanecía completamente intacto pese a la ausencia total de conexión genética entre ambos, una certeza que le confirmó algo que sospechaba pero que necesitaba comprobar por sí misma: que la paternidad real se construye con presencia sostenida a lo largo del tiempo, no con un simple porcentaje de coincidencia en un informe de laboratorio.',
   questions: [
     { type: 'mcq', q: '¿Qué reveló el análisis genético de Regina?', options: ['Que tenía primos lejanos desconocidos, nada más', 'Que el hombre que la crió no era su padre biológico', 'Que su madre había fallecido hace años'], answer: 1 },
@@ -5941,7 +5941,7 @@ window.PASSAGES = [
 
 {
   id: 'incapaz-decir-no-caracter-c1', title: 'La mujer que nunca decía que no', level: 8, theme: 'caracter',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional'],
   text: 'Sonia acabó, sin haberlo decidido conscientemente en ningún momento concreto, coordinando simultáneamente tres comités distintos del colegio de sus hijos, organizando la cena de navidad de toda su familia extendida, y cubriendo turnos adicionales en el trabajo cada vez que algún compañero se lo pedía, todo ello mientras seguía repitiéndose a sí misma que en algún momento tendría que aprender a decir que no.\n\nSu incapacidad para rechazar peticiones ajenas, según reconoce ahora tras un proceso terapéutico de casi un año, no nacía de un exceso genuino de generosidad, como ella misma prefería interpretarlo durante mucho tiempo, sino de un miedo profundo, apenas consciente, a que negarse a ayudar provocara un rechazo o una decepción que consideraba, en el fondo, insoportable de gestionar emocionalmente.\n\nEl colapso llegó de forma bastante repentina un martes cualquiera, sin ningún desencadenante especialmente dramático: simplemente, incapaz de levantarse de la cama con la energía suficiente para afrontar otra jornada más de compromisos acumulados, Sonia se dio cuenta de que llevaba meses enteros viviendo exclusivamente para las necesidades ajenas, sin haber dedicado ni un solo momento consciente a preguntarse qué necesitaba realmente ella misma.\n\nLa terapeuta que empezó a tratarla poco después le propuso un ejercicio que a Sonia le pareció, al principio, absurdamente sencillo: practicar frases breves de rechazo ante peticiones de bajo riesgo, como declinar una invitación social sin ofrecer ninguna excusa elaborada, simplemente afirmando que prefería no asistir, sin más justificación añadida.\n\nSonia admite que todavía hoy, meses después de iniciar aquel proceso, sigue sintiendo una punzada de culpa cada vez que rechaza una petición ajena, pero insiste en que esa incomodidad momentánea resulta considerablemente más soportable que el agotamiento sostenido que experimentaba antes de empezar a poner límites, y que ya no está dispuesta a normalizar de nuevo bajo ninguna circunstancia.',
   questions: [
     { type: 'mcq', q: '¿Cuál era la verdadera raíz de la incapacidad de Sonia para decir que no, según el texto?', options: ['Un exceso genuino de generosidad natural', 'Un miedo profundo a provocar rechazo o decepción ajena', 'La presión económica de su familia'], answer: 1 },
@@ -5989,7 +5989,7 @@ window.PASSAGES = [
 
 {
   id: 'geocaching-hallazgo-ocio-c1', title: 'Lo que había dentro de la caja de metal', level: 8, theme: 'ocio',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'impsubj', 'plusc'],
   text: 'Un grupo de aficionados al geocaching que llevaba meses recorriendo rutas rurales en busca de cachés escondidos por otros jugadores se topó, mientras rastreaba unas coordenadas concretas en un bosque poco transitado, con una caja metálica que, a diferencia de los recipientes habituales del pasatiempo, no llevaba ningún código de registro asociado a la comunidad oficial de geocachers.\n\nDentro, según relatan los propios descubridores, encontraron un conjunto de objetos que claramente no pertenecían a ningún juego contemporáneo: fotografías en blanco y negro considerablemente deterioradas por la humedad acumulada durante décadas, una carta manuscrita sin destinatario claro, y un pequeño objeto metálico que resultó ser, tras una identificación posterior, una medalla militar de una unidad disuelta hace más de setenta años.\n\nEl grupo, consciente de que aquello podía tener un valor histórico genuino más allá del simple hallazgo casual propio de su afición, decidió no reclamar los objetos como si fueran un premio más del juego, y en su lugar los entregó al archivo histórico municipal más cercano, cuyos técnicos identificaron finalmente, gracias a un nombre parcialmente legible en la carta, a la familia de un soldado que había combatido en la zona durante un conflicto ya prácticamente olvidado por la memoria colectiva local.\n\nLos descendientes de aquel soldado, localizados tras una investigación genealógica que se prolongó varios meses, desconocían por completo la existencia de aquella caja, y suponen que fue enterrada deliberadamente por el propio combatiente o por algún familiar cercano poco después del conflicto, quizás como una cápsula del tiempo improvisada que nadie llegó jamás a recuperar en su momento original.\n\nEl grupo de geocachers, lejos de sentirse decepcionado por no poder quedarse con ningún objeto de valor material real, insiste en que aquel hallazgo concreto se ha convertido en la anécdota más memorable de toda su afición, precisamente por la sensación irrepetible de haber conectado, de forma completamente accidental, con una historia familiar ajena que llevaba décadas enteras esperando ser descubierta por alguien.',
   questions: [
     { type: 'mcq', q: '¿Qué decidió hacer el grupo con los objetos encontrados en la caja?', options: ['Quedárselos como premio del juego', 'Entregarlos al archivo histórico municipal', 'Venderlos a un coleccionista privado'], answer: 1 },
@@ -6001,7 +6001,7 @@ window.PASSAGES = [
 
 {
   id: 'viviendas-contenedor-vivienda-c1', title: 'La casa que llegó en un camión', level: 8, theme: 'vivienda',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional'],
   text: 'Un ayuntamiento de tamaño medio, incapaz de resolver en un plazo razonable la lista de espera de vivienda social para jóvenes que llevaba años acumulándose sin apenas avanzar, decidió recurrir a una solución que hasta hace poco se consideraba, en el mejor de los casos, una curiosidad arquitectónica marginal: construir un bloque residencial completo a partir de contenedores marítimos reciclados.\n\nCada vivienda, resultado de acoplar entre dos y tres contenedores estándar previamente utilizados para transporte de mercancías, se fabrica casi por completo en una nave industrial situada a las afueras de la ciudad, donde se instalan ya el aislamiento térmico, la fontanería y la instalación eléctrica, y solo entonces se traslada el módulo completo hasta el solar definitivo mediante un simple transporte por carretera.\n\nEsta forma de construcción modular reduce drásticamente los plazos habituales del sector: mientras que un edificio residencial convencional de este tamaño exige normalmente entre dieciocho y veinticuatro meses de obra continuada, el bloque de contenedores se completó, desde el primer diseño hasta la entrega de llaves, en poco más de siete meses, una diferencia que los responsables municipales atribuyen principalmente a que buena parte del proceso ocurre simultáneamente en fábrica, en lugar de esperar secuencialmente a que cada fase de la obra tradicional termine para poder empezar la siguiente.\n\nLos primeros inquilinos, jóvenes de entre veinticinco y treinta y cinco años seleccionados mediante sorteo público entre los solicitantes que cumplían los requisitos económicos exigidos, reconocen que el aspecto exterior del edificio, con las marcas de desgaste original de los contenedores todavía visibles bajo la pintura, generó cierto escepticismo inicial entre sus propias familias, más habituadas a asociar la vivienda social con bloques de ladrillo convencional.\n\nEl coste final por vivienda, considerablemente inferior al de una construcción tradicional equivalente, ha llevado ya a otros tres ayuntamientos de la región a solicitar formalmente el mismo proyecto arquitectónico, aunque los propios promotores del sistema admiten que su margen de ahorro depende, en gran medida, de conseguir contenedores usados a precios razonables, un suministro que no siempre resulta tan estable ni predecible como el propio proyecto necesitaría para escalarse con garantías.',
   questions: [
     { type: 'mcq', q: '¿Por qué se completó tan rápido el bloque de contenedores, según el texto?', options: ['Porque se contrató el doble de obreros de lo habitual', 'Porque buena parte del proceso ocurre simultáneamente en fábrica, no de forma secuencial', 'Porque se usaron materiales de menor calidad'], answer: 1 },
@@ -6013,7 +6013,7 @@ window.PASSAGES = [
 
 {
   id: 'chatbot-atencion-servicios-c1', title: 'Cuando el robot no entiende la pregunta', level: 8, theme: 'servicios',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'plusc'],
   text: '¿A que no sabes cuánto tardé en conseguir que me devolvieran el dinero de un vuelo cancelado? No te lo vas a creer. Todo empezó con el chatbot de atención al cliente de la aerolínea, que en teoría debía resolver el trámite en cuestión de minutos, según prometía la propia página web de la compañía.\n\nEl chatbot, tras entender correctamente que mi vuelo había sido cancelado, me ofrecía sistemáticamente tres opciones predefinidas —reprogramar el vuelo, solicitar un bono para futuros viajes, o consultar la política de cancelaciones— sin incluir jamás, entre esas opciones, la simple posibilidad de solicitar directamente el reembolso íntegro al que la ley me daba derecho en aquellas circunstancias concretas.\n\nCada vez que intentaba escribir manualmente la palabra «reembolso», el sistema respondía con una disculpa automática seguida de las mismas tres opciones anteriores, en un bucle que se repitió, según pude contar después revisando la conversación completa, hasta en once ocasiones distintas antes de que lograra, finalmente, encontrar una opción oculta para hablar con un agente humano real.\n\nEl propio agente humano, cuando finalmente conseguí contactar con uno tras casi cuarenta minutos de espera adicional, reconoció con cierta resignación que el chatbot llevaba meses generando quejas idénticas a la mía, y que el departamento técnico responsable de programarlo llevaba, según sus propias palabras, «bastante retraso» en implementar la opción de reembolso directo que la normativa exigía desde hacía ya más de un año.\n\nLo más frustrante de toda la experiencia, reflexiono ahora con cierta distancia, no fue tanto la cancelación del vuelo en sí misma, un contratiempo perfectamente comprensible dadas las circunstancias meteorológicas de aquel día, sino comprobar que la propia empresa había diseñado deliberadamente un sistema automatizado que dificultaba, en la práctica, ejercer un derecho legal perfectamente reconocido, simplemente porque resultaba más barato gestionar bonos internos que reembolsos reales en efectivo.',
   questions: [
     { type: 'mcq', q: '¿Qué opción no ofrecía nunca el chatbot entre sus alternativas predefinidas?', options: ['Reprogramar el vuelo', 'Solicitar directamente el reembolso íntegro', 'Consultar la política de cancelaciones'], answer: 1 },
@@ -6037,7 +6037,7 @@ window.PASSAGES = [
 
 {
   id: 'presupuesto-sorteo-politica-c1', title: 'Cuarenta vecinos elegidos por sorteo', level: 9, theme: 'politica',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc'],
   text: 'Un ayuntamiento de tamaño medio decidió, ante el escaso éxito de participación que sus anteriores consultas públicas habían cosechado, sustituir el proceso habitual de presupuestos participativos por un mecanismo bastante menos convencional: sortear entre el censo electoral completo a cuarenta vecinos, representativos por edad, barrio y nivel de estudios, que decidirían colectivamente en qué invertir una partida de varios millones de euros.\n\nLos cuarenta seleccionados, convocados mediante carta certificada y con derecho a rechazar la participación sin ninguna penalización, se reunieron durante cinco sábados consecutivos con técnicos municipales que les explicaron, con un nivel de detalle que ningún ciudadano medio suele recibir habitualmente, las limitaciones legales y presupuestarias reales que condicionan cualquier decisión de este tipo.\n\nEl resultado sorprendió tanto a los propios responsables municipales como a algunos concejales inicialmente escépticos ante el experimento: en lugar de priorizar, como cabría esperar, proyectos vistosos y visibles como parques o instalaciones deportivas nuevas, el grupo sorteado destinó la mayor parte del presupuesto a renovar la red de saneamiento de varios barrios periféricos, una infraestructura invisible pero deficiente que ningún proceso electoral convencional había priorizado jamás en las últimas dos décadas.\n\nLos defensores de este modelo, conocido técnicamente como sorteo cívico o minipúblico deliberativo, sostienen que evita precisamente el sesgo estructural de la participación voluntaria tradicional, en la que solo acuden habitualmente los vecinos ya politizados o directamente afectados por un proyecto concreto, dejando fuera sistemáticamente a la mayoría silenciosa que, paradójicamente, termina siendo la más beneficiada por decisiones tomadas sin su voz directa.\n\nLos críticos, por su parte, cuestionan si cuarenta ciudadanos sin formación técnica previa están realmente capacitados para tomar decisiones presupuestarias complejas tras apenas cinco sábados de formación acelerada, y advierten del riesgo de que el propio proceso, presentado como participación directa, termine legitimando decisiones que técnicos municipales ya habían preseleccionado de antemano mediante la información parcial que decidieron proporcionar al grupo.',
   questions: [
     { type: 'mcq', q: '¿En qué invirtió finalmente la mayor parte del presupuesto el grupo sorteado?', options: ['En parques e instalaciones deportivas nuevas y vistosas', 'En renovar la red de saneamiento de barrios periféricos', 'En campañas publicitarias del propio ayuntamiento'], answer: 1 },
@@ -6049,7 +6049,7 @@ window.PASSAGES = [
 
 {
   id: 'renta-basica-piloto-economia-c1', title: 'Mil euros al mes, sin ninguna condición', level: 9, theme: 'economia',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'plusc'],
   text: 'Durante dos años completos, mil habitantes seleccionados aleatoriamente de un municipio de tamaño medio recibieron, sin ninguna condición asociada ni obligación de justificar su uso, una transferencia mensual fija destinada a comprobar en condiciones reales los efectos de una renta básica universal, un debate que hasta entonces había circulado casi exclusivamente en el terreno de la teoría económica abstracta.\n\nLos resultados, publicados recientemente por el equipo investigador responsable del seguimiento, contradicen bastante el temor más repetido entre los críticos habituales de esta medida: la hipótesis de que un ingreso garantizado desincentivaría masivamente la búsqueda de empleo remunerado no se confirmó en absoluto entre los participantes del estudio, cuya tasa de empleo se mantuvo prácticamente idéntica a la del grupo de control que no recibió ninguna transferencia.\n\nLo que sí cambió de forma notable, según documenta el propio informe, fue el tipo de empleo que muchos participantes terminaron aceptando: liberados de la presión inmediata de aceptar cualquier oferta disponible por pura necesidad económica urgente, un porcentaje considerable de beneficiarios invirtió parte de aquel margen temporal adicional en formación complementaria o en la búsqueda de un puesto mejor ajustado a sus propias capacidades, en lugar de aceptar el primer empleo precario disponible simplemente para llegar a fin de mes.\n\nLos indicadores de salud mental de los participantes, medidos mediante cuestionarios estandarizados aplicados periódicamente durante todo el experimento, mostraron además una mejora estadísticamente significativa frente al grupo de control, un resultado que los investigadores atribuyen principalmente a la reducción del estrés financiero crónico asociado a la incertidumbre económica cotidiana, más que a ningún otro factor considerado en el diseño del propio estudio.\n\nA pesar de estos resultados favorables, el gobierno regional que financió el experimento ha declarado que extenderlo permanentemente a toda la población exigiría una reforma fiscal considerablemente más ambiciosa de la que el clima político actual, según reconocen los propios responsables, parece dispuesto a asumir a corto plazo.',
   questions: [
     { type: 'mcq', q: '¿Qué contradicen los resultados del experimento sobre la renta básica universal?', options: ['Que mejora la salud mental de los participantes', 'La hipótesis de que desincentivaría masivamente la búsqueda de empleo', 'Que resulta más barata que otras ayudas sociales'], answer: 1 },
@@ -6061,7 +6061,7 @@ window.PASSAGES = [
 
 {
   id: 'deepfake-electoral-medios-c1', title: 'El vídeo que nunca ocurrió', level: 9, theme: 'medios',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'plusc'],
   text: 'A cuarenta y ocho horas exactas de la jornada electoral, un vídeo que mostraba a uno de los principales candidatos supuestamente admitiendo, en una conversación privada grabada sin su conocimiento, planes para recortar drásticamente el gasto sanitario público, empezó a circular con una velocidad alarmante por aplicaciones de mensajería instantánea, acumulando cientos de miles de reproducciones sin que ningún medio de comunicación tradicional llegara siquiera a verificarlo.\n\nEl vídeo, según determinaría después un análisis forense digital encargado con carácter de urgencia, resultó ser un deepfake extraordinariamente sofisticado, generado mediante inteligencia artificial a partir de horas enteras de apariciones públicas reales del candidato, cuya voz y gestos faciales habían sido recombinados digitalmente para pronunciar frases que, en realidad, jamás llegó a decir en ningún momento ni contexto verificable.\n\nPara cuando la propia campaña del candidato afectado logró desmentir públicamente la autenticidad del material y aportar el análisis forense correspondiente, el vídeo ya se había compartido, según estimaciones posteriores nada conservadoras, varios millones de veces, y buena parte de esas reproducciones habían ocurrido precisamente en el tramo final de la campaña electoral, el momento en que numerosos votantes indecisos suelen terminar de formar su decisión definitiva.\n\nLos organismos electorales, sorprendidos por la velocidad y sofisticación del ataque, reconocieron públicamente que ninguno de los protocolos existentes hasta entonces contemplaba un escenario de desinformación generada mediante inteligencia artificial con tan poca antelación respecto al día de la votación, dejando en la práctica un vacío legal y operativo que ningún organismo estaba plenamente preparado para gestionar con la urgencia requerida.\n\nTras las elecciones, cuyo resultado final varios analistas consideran que pudo haberse visto afectado por el propio incidente sin que exista, sin embargo, ninguna forma rigurosa de cuantificarlo con precisión, el parlamento ha empezado a tramitar de urgencia una legislación específica que exigiría a las plataformas digitales retirar en cuestión de horas cualquier contenido generado por inteligencia artificial que suplante la identidad de un candidato durante el periodo electoral.',
   questions: [
     { type: 'mcq', q: '¿Qué reveló finalmente el análisis forense digital sobre el vídeo?', options: ['Que era completamente auténtico y sin manipular', 'Que era un deepfake generado mediante inteligencia artificial', 'Que había sido grabado por el propio candidato por error'], answer: 1 },
@@ -6073,7 +6073,7 @@ window.PASSAGES = [
 
 {
   id: 'retractacion-estudio-ciencia-c1', title: 'El estudio que había que retirar', level: 10, theme: 'ciencia',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'plusc'],
   text: 'Una revista científica de prestigio considerable se vio obligada, tras casi dos años de investigación interna, a retractar formalmente un estudio ampliamente citado sobre los efectos de cierto compuesto en el tratamiento de una enfermedad neurodegenerativa, después de que un grupo independiente de investigadores detectara inconsistencias estadísticas que ningún revisor había identificado durante el proceso original de evaluación previa a la publicación.\n\nLas irregularidades, según documenta el informe final de la investigación interna, no correspondían a un simple error metodológico involuntario, sino a una manipulación deliberada de los datos originales: varias mediciones que contradecían la hipótesis central del estudio habían sido excluidas del análisis final sin ninguna justificación estadística explícita, y algunas cifras presentadas en las tablas de resultados no se correspondían con los datos brutos que el propio equipo entregó posteriormente, ya bajo investigación, a los responsables de la revista.\n\nEl caso resulta especialmente preocupante, según reconocen varios especialistas consultados, porque el estudio original había sido citado ya en más de doscientas publicaciones posteriores, algunas de las cuales habían empezado a diseñar, basándose en aquellos resultados fraudulentos, ensayos clínicos con pacientes reales que ahora tendrán que reevaluarse por completo, dejando en suspenso cualquier fase posterior de investigación.\n\nEl propio investigador principal, que sigue negando cualquier intención deliberada de fraude y atribuye las irregularidades a lo que describe como «errores de gestión de datos por parte de colaboradores junior», ha sido suspendido temporalmente de sus funciones académicas mientras se completa una investigación adicional, más amplia, sobre el resto de su producción científica previa.\n\nEste caso ha reavivado un debate ya recurrente en la comunidad científica sobre la presión estructural que empuja a ciertos investigadores hacia resultados espectaculares y publicables, en detrimento de una ciencia más lenta, menos vistosa y, según coinciden buena parte de los especialistas consultados, considerablemente más fiable a largo plazo que la que actualmente premian tanto las revistas de mayor impacto como los propios sistemas de financiación pública de la investigación.',
   questions: [
     { type: 'mcq', q: '¿Qué tipo de irregularidad reveló finalmente la investigación interna?', options: ['Un simple error metodológico involuntario', 'Una manipulación deliberada de los datos originales', 'Un problema puramente técnico del software estadístico'], answer: 1 },
@@ -6121,7 +6121,7 @@ window.PASSAGES = [
 
 {
   id: 'inflacion-notas-educacion-c1', title: 'Todos sobresaliente, ¿todos excelentes?', level: 9, theme: 'educacion',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
   text: 'Un análisis reciente de las calificaciones otorgadas por distintas universidades del país durante la última década revela una tendencia difícil de explicar exclusivamente por una mejora real y sostenida del nivel académico del alumnado: el porcentaje de estudiantes que obtiene la calificación máxima ha aumentado de forma constante año tras año, mientras que las pruebas externas estandarizadas, aplicadas de forma independiente al margen de cada universidad concreta, no muestran ninguna mejora comparable en el dominio efectivo de las competencias evaluadas.\n\nA mi juicio, la explicación más plausible de este desajuste no reside tanto en un supuesto declive generalizado del rigor docente, como sostienen algunos críticos con cierta ligereza, sino en un conjunto de incentivos estructurales que empujan, de forma casi inevitable, hacia calificaciones progresivamente más generosas: las propias universidades compiten entre sí por atraer estudiantes en un mercado educativo cada vez más competitivo, y unas calificaciones más altas mejoran, en la práctica, tanto la empleabilidad percibida de sus egresados como la propia reputación institucional medida en rankings internacionales.\n\nAlgunos profesores consultados admiten, además, una presión bastante menos abstracta y mucho más inmediata: las evaluaciones docentes que el propio alumnado realiza al finalizar cada curso, cada vez más determinantes para la renovación contractual de profesores no permanentes, correlacionan de forma consistente con la generosidad de las calificaciones otorgadas, generando un incentivo perverso que ningún profesor precario puede permitirse ignorar completamente sin arriesgar su propia continuidad laboral.\n\nSi bien es cierto que exigir un rigor excesivo sin ningún matiz puede perjudicar injustamente a estudiantes que, por circunstancias personales concretas, no rinden en un examen puntual todo lo que su capacidad real permitiría, no olvidemos que una calificación que deja de discriminar genuinamente entre distintos niveles de dominio real pierde, en la práctica, buena parte de su utilidad informativa tanto para empleadores como para los propios estudiantes que necesitan saber honestamente en qué áreas concretas deben seguir mejorando.\n\nAlgunas universidades europeas han empezado a experimentar con sistemas de calificación normalizada, que fuerzan estadísticamente una distribución más realista de notas dentro de cada asignatura, aunque el profesorado consultado reconoce que la resistencia del propio alumnado ante calificaciones más bajas de las que consideran merecidas complica considerablemente la implementación generalizada de este tipo de reformas.',
   questions: [
     { type: 'mcq', q: '¿Qué explicación propone el autor para el aumento de calificaciones máximas?', options: ['Una mejora real y sostenida del nivel académico', 'Un conjunto de incentivos estructurales que empujan hacia calificaciones más generosas', 'Un error sistemático en las pruebas externas'], answer: 1 },
@@ -6157,7 +6157,7 @@ window.PASSAGES = [
 
 {
   id: 'ramadan-oficina-religion-c1', title: 'Ayunar entre reuniones de trabajo', level: 8, theme: 'religion',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj'],
   text: 'Cuando Yasmin empezó a trabajar en la empresa hace cuatro años, ninguna política interna contemplaba de forma explícita cómo gestionar el mes de Ramadán, un periodo en el que millones de musulmanes practicantes ayunan desde el amanecer hasta la puesta de sol, sin ingerir alimento ni agua durante ese intervalo, mientras mantienen su rutina laboral habitual con normalidad aparente.\n\nDurante sus primeros años en el puesto, Yasmin gestionaba el mes por su cuenta, evitando programar reuniones importantes durante las horas de mayor cansancio físico hacia el final de la tarde, y ajustando discretamente su propio horario para poder romper el ayuno puntualmente a la hora exacta marcada por el calendario, sin pedir jamás ninguna adaptación formal que pudiera, según temía entonces, hacerla parecer menos comprometida profesionalmente que sus compañeros no practicantes.\n\nEl cambio llegó cuando un nuevo responsable de recursos humanos, tras una conversación informal con varios empleados musulmanes de distintos departamentos, propuso formalizar una política de flexibilidad horaria específica para el mes de Ramadán, permitiendo desplazar la jornada laboral completa una hora antes de lo habitual, de manera que los empleados practicantes pudieran salir también antes y llegar a casa con margen suficiente para preparar la comida con la que romperían el ayuno en familia.\n\nAlgunos compañeros no musulmanes, consultados informalmente durante el proceso de diseño de la política, expresaron cierta incomodidad inicial ante lo que percibían como un trato diferenciado no extensible a otras celebraciones religiosas o personales igualmente relevantes para ellos, una objeción que la empresa terminó resolviendo ampliando la misma flexibilidad horaria, de forma genérica, a cualquier empleado que necesitara adaptar puntualmente su jornada por motivos religiosos o personales debidamente justificados, sin limitarla exclusivamente al Ramadán.\n\nYasmin reconoce que, más allá de la propia flexibilidad horaria en sí misma, lo que más valora del cambio es algo bastante más simbólico: ya no siente la necesidad de ocultar ni minimizar una práctica central de su propia identidad religiosa para encajar profesionalmente, una carga que llevaba sosteniendo, sin plena conciencia de su peso acumulado, durante los primeros años enteros de su trayectoria en la empresa.',
   questions: [
     { type: 'mcq', q: '¿Cómo gestionaba Yasmin el Ramadán antes de la nueva política, según el texto?', options: ['Pedía formalmente adaptaciones desde el primer año', 'Lo gestionaba por su cuenta, sin pedir ninguna adaptación formal', 'Se tomaba el mes completo de vacaciones'], answer: 1 },
@@ -6169,7 +6169,7 @@ window.PASSAGES = [
 
 {
   id: 'nombre-doble-bilingue-identidad-c1', title: 'La persona que respondía a dos nombres', level: 9, theme: 'identidad',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj'],
   text: 'Para su familia y sus amigos de la infancia, Iker sigue siendo Iker, el nombre vasco que sus padres eligieron deliberadamente para él; para prácticamente todos sus compañeros de trabajo en la empresa multinacional donde lleva ya seis años, sin embargo, es Mike, una versión angloparlante que él mismo empezó a usar de forma progresiva tras notar, en sus primeros meses allí, que ningún colega extranjero lograba pronunciar correctamente su nombre original sin varios intentos fallidos.\n\nLo que empezó como una simple concesión práctica para facilitar la comunicación cotidiana, cuenta ahora Iker con cierta sorpresa retrospectiva, terminó convirtiéndose en algo bastante más complejo de gestionar internamente: con el paso de los años, ha empezado a notar que se comporta de forma sutilmente distinta según qué nombre esté usando en cada contexto concreto, más directo y desenfadado como Mike en las reuniones internacionales, más reservado y formal como Iker en las conversaciones con su familia.\n\nUn estudio reciente sobre bilingüismo y personalidad, que Iker descubrió casualmente mientras buscaba información sobre su propia experiencia, respalda parcialmente esta sensación personal suya: numerosos hablantes bilingües reportan efectivamente ligeras variaciones de personalidad percibida según el idioma que estén usando en cada momento, un fenómeno que los investigadores atribuyen tanto a diferencias culturales asociadas a cada lengua concreta como a las distintas normas sociales implícitas que cada idioma lleva consigo.\n\nLo que más le inquieta a Iker, sin embargo, no es tanto esta variación de comportamiento en sí misma, bastante común según parece entre personas en situaciones similares, sino una pregunta bastante más incómoda que ha empezado a plantearse recientemente: si sus propios padres, al ver a su versión profesional como Mike en una videollamada casual, llegaran a reconocer plenamente a su propio hijo, o si más bien percibirían a alguien parcialmente distinto del que ellos mismos criaron.\n\nIker ha decidido, tras meses dándole vueltas al asunto, empezar a insistir gradualmente en que sus compañeros más cercanos aprendan a pronunciar correctamente su nombre original, no por rechazo hacia el apodo que él mismo popularizó voluntariamente en su día, sino por una necesidad creciente de que ambas versiones de sí mismo dejen de sentirse, con el paso del tiempo, tan completamente separadas la una de la otra.',
   questions: [
     { type: 'mcq', q: '¿Por qué empezó Iker a usar el nombre "Mike" en el trabajo?', options: ['Porque prefería ese nombre desde niño', 'Porque ningún colega extranjero lograba pronunciar correctamente su nombre original', 'Porque se lo exigió la empresa formalmente'], answer: 1 },
@@ -6193,7 +6193,7 @@ window.PASSAGES = [
 
 {
   id: 'prosopagnosia-cuerpo-c1', title: 'La cara que no lograba recordar', level: 9, theme: 'cuerpo',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'impsubj', 'plusc'],
   text: 'Durante buena parte de su vida adulta, Teresa atribuyó su incapacidad recurrente para reconocer a conocidos por la calle a una simple mala memoria o a una falta de atención que consideraba, en el fondo, un defecto de carácter del que se sentía vagamente culpable cada vez que saludaba con excesiva cautela a alguien que resultaba ser, después, un antiguo compañero de trabajo con quien había compartido despacho durante años.\n\nEl diagnóstico llegó, ya pasados los cuarenta años, casi por casualidad: tras leer un artículo divulgativo sobre prosopagnosia, un trastorno neurológico que impide reconocer rostros con normalidad pese a conservar intactas el resto de capacidades cognitivas y visuales, Teresa reconoció con una claridad inquietante prácticamente cada síntoma descrito, desde confundir a personajes de una misma película hasta necesitar, en reuniones familiares numerosas, escuchar primero la voz de alguien antes de poder identificarlo con seguridad razonable.\n\nLa neuróloga que finalmente le confirmó el diagnóstico mediante pruebas específicas le explicó que el cerebro humano procesa habitualmente los rostros mediante una región especializada que, en el caso de Teresa, no funciona con la eficiencia esperable, obligándola a compensar de forma inconsciente reconociendo a las personas por rasgos alternativos menos fiables: la forma de caminar, un peinado característico, o el tono particular de una voz reconocible.\n\nEsta estrategia compensatoria, desarrollada durante décadas enteras sin que Teresa fuera plenamente consciente de estar haciéndolo, funciona razonablemente bien en contextos previsibles donde ya conoce el peinado o la forma de caminar de alguien, pero falla estrepitosamente ante cualquier cambio inesperado: un corte de pelo nuevo, un abrigo distinto al habitual, o simplemente encontrarse con un conocido en un contexto completamente ajeno a donde suele verlo normalmente.\n\nHoy, tras compartir abiertamente su diagnóstico con amigos y compañeros de trabajo, Teresa reconoce sentir un alivio considerable al no tener ya que fingir un reconocimiento social que durante años le costaba genuinamente un esfuerzo cognitivo enorme, y explica sin ninguna vergüenza que, si alguna vez no la saluda por la calle, probablemente no se trate de un desprecio deliberado, sino simplemente de que no ha logrado reconocer su rostro a tiempo.',
   questions: [
     { type: 'mcq', q: '¿A qué atribuía Teresa su dificultad para reconocer rostros antes del diagnóstico?', options: ['A una mala memoria o falta de atención', 'A un problema de visión que necesitaba gafas', 'A la timidez social'], answer: 0 },
@@ -6205,7 +6205,7 @@ window.PASSAGES = [
 
 {
   id: 'custodia-nido-relaciones-c1', title: 'Los hijos se quedan, los padres se turnan', level: 9, theme: 'relaciones',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj'],
   text: 'Tras su separación, Marta y Roberto adoptaron un modelo de custodia compartida bastante menos habitual que el tradicional intercambio semanal de los hijos entre dos viviendas distintas: en lugar de que los niños se trasladaran cada semana, mantuvieron una única vivienda familiar donde los propios hijos permanecen de forma permanente, mientras que son los propios padres quienes se turnan, alternándose semanalmente, para habitar esa misma casa junto a ellos.\n\nEste modelo, conocido informalmente como custodia en nido, exige que cada progenitor mantenga además una segunda vivienda propia, considerablemente más pequeña, donde se traslada durante las semanas en las que no le corresponde convivir con los hijos, un arreglo que implica, evidentemente, un coste económico adicional considerable frente al modelo tradicional de custodia compartida.\n\nMarta y Roberto reconocen que optaron por este sistema, pese al gasto extra que supone mantener tres viviendas simultáneas en lugar de dos, precisamente para evitar que sus hijos, entonces de siete y diez años, experimentaran el desarraigo repetido semanal de cambiar constantemente de habitación, de rutina doméstica y de entorno físico inmediato, un factor que ambos consideraban, tras consultar con varios especialistas en psicología infantil, considerablemente más perjudicial a largo plazo que el propio coste económico añadido.\n\nEl modelo, sin embargo, no está exento de complicaciones prácticas considerables: ambos progenitores deben coordinar minuciosamente el estado en que dejan la vivienda familiar al finalizar su semana correspondiente, evitando fricciones sobre cuestiones tan cotidianas como el orden doméstico, la compra de alimentos pendiente, o pequeñas reparaciones domésticas que uno de los dos podría considerar urgentes y el otro completamente prescindibles.\n\nAmbos coinciden, tres años después de implementar el sistema, en que el modelo exige un nivel de comunicación constante y cordial entre ellos considerablemente superior al que muchas parejas separadas logran sostener, pero insisten en que ver a sus hijos crecer sin haber tenido que cambiar jamás de habitación propia por culpa de la separación de sus padres justifica ampliamente cualquier complicación logística adicional que el propio modelo les exige gestionar semana tras semana.',
   questions: [
     { type: 'mcq', q: '¿En qué consiste principalmente la "custodia en nido", según el texto?', options: ['Los hijos se trasladan cada semana entre dos viviendas', 'Los hijos permanecen en una única vivienda y son los padres quienes se turnan', 'Los hijos viven con un solo progenitor de forma permanente'], answer: 1 },
@@ -6217,7 +6217,7 @@ window.PASSAGES = [
 
 {
   id: 'banco-semillas-alimentacion-c1', title: 'El trigo que casi nadie recuerda', level: 9, theme: 'alimentacion',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'impsubj'],
   text: 'Cuando Ramón heredó la pequeña explotación agrícola familiar hace ya veinte años, decidió algo que en su momento le pareció a buena parte de sus vecinos agricultores una decisión comercialmente absurda: en lugar de sustituir las variedades tradicionales de trigo que su propia familia llevaba cultivando durante generaciones enteras por las semillas híbridas de alto rendimiento que dominaban ya casi por completo el mercado agrícola de la región, decidió conservarlas y seguir cultivándolas exactamente como siempre.\n\nAquellas variedades tradicionales, explica Ramón, producen un rendimiento considerablemente inferior por hectárea cultivada que las semillas comerciales modernas, y resultan además bastante más vulnerables a ciertas plagas frente a las que la industria agrícola ha desarrollado, con el paso de las décadas, variedades específicamente resistentes, dos desventajas que explican perfectamente por qué la inmensa mayoría de agricultores de la comarca abandonó estas variedades antiguas hace ya varias décadas sin mirar demasiado atrás.\n\nLo que Ramón considera, sin embargo, una ventaja decisiva que ninguna semilla híbrida moderna puede ofrecer todavía es la diversidad genética que estas variedades tradicionales conservan intacta, un patrimonio biológico que resulta extraordinariamente valioso precisamente porque las variedades comerciales dominantes, cultivadas de forma prácticamente idéntica en explotaciones agrícolas de medio mundo, comparten una base genética tan estrecha que una única plaga o enfermedad emergente podría, en teoría, comprometer simultáneamente buena parte de la producción mundial de trigo si esa base genética resultara vulnerable frente a ella.\n\nInvestigadores de un banco de semillas nacional, que documenta y conserva variedades agrícolas tradicionales en peligro de desaparición, han empezado a visitar regularmente la explotación de Ramón para recolectar y catalogar muestras de sus variedades, considerándolas ya un recurso genético de valor considerable para futuros programas de mejora vegetal que podrían necesitar, en algún momento no del todo predecible, precisamente los genes de resistencia que estas variedades antiguas conservan y que las modernas perdieron hace ya generaciones enteras.\n\nRamón, que sigue vendiendo su cosecha con un margen de beneficio considerablemente inferior al de sus vecinos que optaron por semillas comerciales, insiste en que no cambiaría de método aunque pudiera, convencido de que está conservando algo bastante más valioso a largo plazo que el propio beneficio económico inmediato que sus vecinos obtienen cada temporada.',
   questions: [
     { type: 'mcq', q: '¿Qué desventaja tienen las variedades tradicionales de trigo que cultiva Ramón?', options: ['Ningún rendimiento inferior, son igual de productivas', 'Un rendimiento inferior por hectárea y mayor vulnerabilidad a ciertas plagas', 'Requieren mucha más agua que las variedades modernas'], answer: 1 },
@@ -6265,7 +6265,7 @@ window.PASSAGES = [
 
 {
   id: 'dupe-culture-compras-c1', title: 'El mismo bolso, por una décima parte del precio', level: 8, theme: 'compras',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'condperf'],
   text: 'Un vídeo publicado hace apenas unos meses por una joven creadora de contenido, comparando lado a lado un bolso de lujo de una firma reconocida internacionalmente con una imitación considerablemente más económica que replicaba, según ella misma demostraba con detalle, prácticamente todos los rasgos visuales distintivos del original, acumuló varios millones de reproducciones en cuestión de días, convirtiéndose en uno de los ejemplos más citados de un fenómeno de consumo conocido informalmente como cultura del dupe.\n\nEsta tendencia, cuyo propio nombre es una abreviatura informal del término inglés para «duplicado», consiste en buscar deliberadamente y compartir públicamente en redes sociales alternativas notablemente más baratas a productos de marca reconocida, presentadas explícitamente no como falsificaciones que intentan hacerse pasar por el original, sino como productos legítimos e independientes que simplemente replican, de forma abierta y sin ningún engaño, la estética o funcionalidad de un artículo más caro y deseado.\n\nLas propias marcas afectadas por esta tendencia mantienen posturas considerablemente divididas al respecto: algunas han optado por emprender acciones legales contra los fabricantes de estas imitaciones cuando consideran que se aproximan peligrosamente a una infracción real de propiedad intelectual, mientras que otras firmas, sorprendentemente, han preferido ignorar el fenómeno o incluso, en algún caso puntual ya documentado, aprovecharlo comercialmente lanzando líneas propias deliberadamente más económicas dirigidas a un público que de otro modo jamás habría podido acceder a ninguno de sus productos originales.\n\nLos defensores de esta práctica de consumo, muy activos en redes sociales, argumentan que democratiza el acceso a determinadas estéticas y tendencias que, de otro modo, quedarían reservadas exclusivamente a quienes disponen de un poder adquisitivo considerablemente superior al de la media, mientras que sus críticos sostienen que normaliza, en la práctica, una cultura de imitación constante que termina perjudicando precisamente a los diseñadores originales cuyo trabajo creativo genuino resulta sistemáticamente copiado sin ninguna compensación económica real por su esfuerzo.\n\nAlgunos analistas del sector consideran, con todo, que el fenómeno del dupe refleja sobre todo un cambio generacional más profundo en la propia relación con el estatus social asociado a las marcas de lujo tradicionales, cada vez menos determinante, según sugieren diversos estudios de consumo recientes, entre las generaciones más jóvenes que las anteriores.',
   questions: [
     { type: 'mcq', q: '¿Cómo se presentan los productos "dupe", según el texto, a diferencia de una falsificación?', options: ['Como falsificaciones que intentan hacerse pasar por el original', 'Como productos legítimos e independientes que replican la estética sin ningún engaño', 'Como productos exclusivos de edición limitada'], answer: 1 },
@@ -6277,7 +6277,7 @@ window.PASSAGES = [
 
 {
   id: 'voto-residentes-extranjeros-politica-c1', title: 'Llevan veinte años aquí, pero no pueden votar', level: 9, theme: 'politica',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj', 'impsubj'],
   text: 'Un colectivo de residentes extranjeros que llevan, en algunos casos, más de dos décadas viviendo, trabajando y pagando impuestos en el mismo municipio sin haber obtenido nunca la nacionalidad correspondiente, ha lanzado una campaña reclamando el derecho a votar en las elecciones municipales, alegando que la ausencia de reciprocidad legal entre países específicos deja a muchos de ellos completamente excluidos del proceso democrático local pese a su arraigo evidente en la comunidad.\n\nLa legislación vigente permite actualmente el voto municipal de extranjeros solo cuando existe un acuerdo bilateral explícito de reciprocidad entre el país de origen y el país de residencia, un requisito que deja fuera, según denuncian los propios afectados, a colectivos numerosos procedentes de países sin ningún tratado de este tipo firmado, independientemente de cuántos años lleven exactamente residiendo de forma legal e ininterrumpida en el municipio en cuestión.\n\nLos defensores de ampliar el derecho al voto sostienen que la legitimidad democrática de un ayuntamiento debería fundamentarse, ante todo, en representar a quienes efectivamente conviven, trabajan y utilizan los servicios públicos de un municipio concreto, con independencia de su nacionalidad de origen, y que exigir la nacionalización previa como requisito único para votar penaliza injustamente a residentes plenamente integrados que, por motivos personales o burocráticos diversos, no han completado todavía ese trámite concreto.\n\nLos partidos políticos más reticentes a la reforma argumentan, por su parte, que la ciudadanía plena conlleva deberes y compromisos, como el servicio militar en algunos países o determinadas obligaciones fiscales específicas, que no deberían separarse del derecho al voto sin generar una asimetría legal problemática entre quienes votan y quienes asumen plenamente esas obligaciones asociadas a la nacionalidad.\n\nAlgunos ayuntamientos, mientras tanto, han empezado a experimentar con consejos consultivos de residentes extranjeros sin derecho a voto formal pero con capacidad real de proponer e influir sobre determinadas políticas municipales, una solución intermedia que ni los propios colectivos afectados ni los partidos más reticentes a la reforma consideran, sin embargo, plenamente satisfactoria a largo plazo para resolver el debate de fondo.',
   questions: [
     { type: 'mcq', q: '¿Qué requisito exige actualmente la legislación para que un extranjero pueda votar en elecciones municipales?', options: ['Haber residido más de diez años en el municipio', 'Un acuerdo bilateral explícito de reciprocidad entre países', 'Hablar el idioma local con fluidez certificada'], answer: 1 },
@@ -6289,7 +6289,7 @@ window.PASSAGES = [
 
 {
   id: 'crispr-embriones-ciencia-c1', title: '¿Hasta dónde se puede editar un embrión?', level: 10, theme: 'ciencia',
-  tenses: ['presente', 'preterito', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'condicional'],
   text: 'La técnica de edición genética conocida como CRISPR permite, con una precisión y un coste considerablemente inferiores a los de cualquier tecnología anterior, modificar secuencias específicas del ADN de un organismo vivo, incluyendo, al menos en teoría, embriones humanos en fases tempranas de desarrollo, una posibilidad que ha reavivado un debate bioético que la comunidad científica lleva ya años intentando resolver sin demasiado consenso.\n\nLa distinción central de este debate, según explican los especialistas consultados, separa dos aplicaciones con implicaciones éticas radicalmente distintas: la edición somática, que modifica células de un individuo ya nacido sin afectar a su descendencia futura, genera un consenso bioético relativamente amplio a favor de su desarrollo controlado; la edición germinal, que modifica embriones o células reproductivas de manera que el cambio genético se transmite a todas las generaciones posteriores, concentra en cambio la práctica totalidad de la controversia internacional.\n\nUn caso ya ampliamente documentado, en el que un científico modificó genéticamente embriones humanos que llegaron a nacer con el objetivo declarado de conferirles resistencia natural frente al virus del VIH, generó una condena prácticamente unánime por parte de la comunidad científica internacional, no tanto por la viabilidad técnica del procedimiento en sí, sino por haberlo realizado sin la supervisión ética ni la transparencia que un experimento de estas características irreversibles exigiría como mínimo indispensable.\n\nLos defensores de una eventual regulación permisiva sostienen que la edición germinal podría, en teoría, eliminar de la línea genética familiar enfermedades hereditarias graves y bien caracterizadas genéticamente, evitando sufrimiento considerable a generaciones futuras enteras; los críticos, por su parte, advierten del riesgo genuino de que la misma tecnología termine empleándose, más allá de la prevención estricta de enfermedades, para seleccionar rasgos no médicos deseables, abriendo la puerta a una forma de eugenesia tecnológicamente sofisticada que buena parte de la comunidad científica internacional considera, hoy por hoy, categóricamente inaceptable.\n\nLa mayoría de países con capacidad tecnológica suficiente para aplicar esta técnica mantienen actualmente moratorias explícitas sobre la edición germinal humana, aunque varios especialistas consultados coinciden en que la propia velocidad del avance tecnológico podría, en cuestión de pocos años, dejar considerablemente desactualizado el marco regulatorio internacional vigente.',
   questions: [
     { type: 'mcq', q: '¿Qué distingue a la edición germinal de la edición somática, según el texto?', options: ['La edición germinal es más barata de realizar', 'La edición germinal se transmite a todas las generaciones posteriores, la somática no', 'No existe ninguna diferencia relevante entre ambas'], answer: 1 },
@@ -6301,7 +6301,7 @@ window.PASSAGES = [
 
 {
   id: 'incendios-abandono-rural-naturaleza-c1', title: 'El monte que ya nadie limpia', level: 9, theme: 'naturaleza',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj'],
   text: 'Los grandes incendios forestales que arrasan cada verano extensiones cada vez mayores de superficie boscosa no responden, contra lo que buena parte de la opinión pública tiende a asumir simplificadamente, únicamente al cambio climático y las temperaturas cada vez más extremas, sino también, según coinciden numerosos expertos forestales consultados, a una transformación social mucho más silenciosa y menos mediática: el abandono progresivo y sostenido del medio rural durante las últimas décadas.\n\nHasta hace dos o tres generaciones, el propio uso tradicional del monte por parte de la población rural, mediante el pastoreo extensivo de ganado, la recolección regular de leña, o el cultivo de pequeñas parcelas dispersas entre la vegetación forestal, mantenía de forma natural una discontinuidad de la masa forestal que dificultaba considerablemente la propagación de cualquier incendio que llegara a iniciarse por causas naturales o accidentales.\n\nCon el éxodo masivo hacia las ciudades que caracterizó las décadas centrales del siglo pasado y que continúa, aunque a menor ritmo, hasta la actualidad, buena parte de aquel mosaico rural tradicional se ha ido sustituyendo progresivamente por una masa forestal continua y densa, sin apenas gestión activa alguna, que constituye en la práctica un combustible acumulado durante décadas enteras a la espera únicamente de la chispa adecuada para propagarse sin apenas obstáculos naturales que puedan frenarla.\n\nAlgunas administraciones forestales han empezado a experimentar con programas de pastoreo dirigido, recuperando artificialmente mediante rebaños gestionados aquella discontinuidad protectora que la propia actividad rural tradicional generaba antes de forma espontánea, una solución que los propios técnicos forestales consideran considerablemente más eficaz a largo plazo, y también más barata, que limitarse a combatir cada incendio únicamente una vez que este ya se ha iniciado y propagado.\n\nLos defensores de esta perspectiva insisten en que ninguna estrategia de extinción, por sofisticada tecnológicamente que resulte, puede sustituir plenamente la función preventiva que cumplía antes la propia presencia humana activa y cotidiana sobre el territorio rural, y que revertir parcialmente el abandono demográfico del campo debería considerarse, en consecuencia, una medida genuina de prevención de incendios forestales, no solo una cuestión de política social o económica aparentemente ajena al problema.',
   questions: [
     { type: 'mcq', q: '¿Qué factor menos mediático contribuye a los grandes incendios forestales, según el texto?', options: ['Únicamente el cambio climático', 'El abandono progresivo del medio rural durante las últimas décadas', 'La falta de tecnología de extinción moderna'], answer: 1 },
@@ -6313,7 +6313,7 @@ window.PASSAGES = [
 
 {
   id: 'economia-sumergida-economia-c1', title: 'El dinero que nunca aparece en ningún papel', level: 9, theme: 'economia',
-  tenses: ['presente', 'perfecto', 'futuro', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'presubj'],
   text: 'Se entiende por economía sumergida el conjunto de actividades económicas legales que se realizan deliberadamente al margen del control fiscal y laboral oficial, sin declarar ingresos ni cotizar por el trabajo efectivamente realizado, una práctica que según las estimaciones más recientes del propio ministerio de hacienda representa todavía un porcentaje considerable del producto interior bruto del país, muy superior al de otras economías europeas comparables.\n\nEl fenómeno afecta de forma especialmente intensa a determinados sectores concretos, como la hostelería estacional, la construcción de pequeña escala o el servicio doméstico, donde la contratación informal permite tanto al empleador como, en ocasiones, al propio trabajador evitar cargas fiscales y cotizaciones sociales que ambas partes consideran, según diversas encuestas del sector, excesivamente elevadas en relación con los ingresos reales que genera la propia actividad.\n\nLas consecuencias de esta práctica, sin embargo, van considerablemente más allá de la simple pérdida de recaudación fiscal que sufre directamente el estado: los trabajadores empleados de forma completamente informal carecen, en la práctica, de cualquier protección legal real ante un despido improcedente, un accidente laboral, o una eventual jubilación, quedando además excluidos de prestaciones por desempleo que nunca llegarán a poder solicitar por no haber cotizado formalmente durante los años trabajados.\n\nAlgunas administraciones han empezado a experimentar con incentivos fiscales específicamente diseñados para facilitar la transición gradual hacia la formalidad, como reducciones temporales de cotizaciones sociales durante los primeros meses de regularización de un trabajador, en lugar de recurrir exclusivamente al enfoque sancionador tradicional que, según reconocen los propios inspectores de trabajo consultados, resulta considerablemente más difícil de aplicar en sectores altamente fragmentados y dispersos geográficamente por todo el territorio nacional.\n\nLos economistas consultados coinciden en que reducir significativamente la economía sumergida exigiría, más allá de cualquier incentivo puntual concreto, una reforma fiscal y laboral considerablemente más amplia que simplifique genuinamente las cargas administrativas que actualmente desincentivan, especialmente entre pequeños negocios familiares con márgenes de beneficio ya de por sí muy ajustados, la propia formalización completa de su actividad económica cotidiana.',
   questions: [
     { type: 'mcq', q: '¿Qué consecuencia sufren los trabajadores empleados de forma completamente informal, según el texto?', options: ['Ninguna consecuencia relevante para ellos', 'Carecen de protección legal ante despido, accidente laboral o jubilación', 'Reciben automáticamente más salario neto'], answer: 1 },
@@ -6325,7 +6325,7 @@ window.PASSAGES = [
 
 {
   id: 'periodico-local-cierre-medios-c1', title: 'Ochenta años de noticias, apagados de golpe', level: 9, theme: 'medios',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'plusc'],
   text: 'Tras casi ochenta años de publicación ininterrumpida, el periódico local de una comarca de tamaño medio anunció hace unas semanas el cese definitivo de su edición impresa, una decisión que sus propios responsables atribuyen a una caída sostenida de ingresos publicitarios que ninguna estrategia editorial, por creativa que resultara, logró revertir en los últimos años de funcionamiento.\n\nEl cierre, lejos de constituir un caso aislado, se enmarca dentro de una tendencia mucho más amplia que numerosos estudios sobre el sector han documentado con creciente preocupación: la desaparición progresiva de medios de comunicación estrictamente locales ha generado, en amplias zonas rurales de distintos países, auténticos «desiertos informativos» donde ningún medio profesional cubre ya con regularidad la actividad municipal, los juicios locales o las decisiones administrativas que afectan directamente a la vida cotidiana de sus habitantes.\n\nLos periodistas que trabajaban en el periódico cerrado señalan que la pérdida no es meramente sentimental ni nostálgica: durante décadas, aquel medio había ejercido una función de control informativo sobre el propio ayuntamiento y otras instituciones locales que ningún medio nacional, centrado lógicamente en asuntos de mayor alcance, tenía ni el interés ni los recursos necesarios para replicar a esa escala tan local y específica.\n\nAlgunos periodistas del equipo despedido han decidido lanzar, con recursos considerablemente más limitados, un boletín digital de suscripción directa que prescinde por completo tanto de publicidad tradicional como de la propia edición en papel, apostando por un modelo de financiación basado exclusivamente en las aportaciones voluntarias de lectores dispuestos a pagar directamente por un periodismo local que consideran, pese a todo, todavía imprescindible para la propia salud democrática de su comunidad.\n\nLos primeros meses de este nuevo proyecto digital, según reconocen sus propios impulsores, sugieren un panorama moderadamente esperanzador pero lejos todavía de garantizar la sostenibilidad económica a largo plazo: el número de suscriptores crece de forma constante pero considerablemente más lenta de lo que el propio equipo necesitaría para poder recuperar, siquiera parcialmente, los puestos de trabajo que el cierre del periódico original eliminó de golpe.',
   questions: [
     { type: 'mcq', q: '¿A qué atribuyen los responsables del periódico su cierre definitivo?', options: ['Una caída sostenida de ingresos publicitarios', 'Una decisión política del ayuntamiento', 'La falta de periodistas cualificados disponibles'], answer: 0 },
@@ -6337,7 +6337,7 @@ window.PASSAGES = [
 
 {
   id: 'boda-interreligiosa-religion-c1', title: 'Dos ceremonias para una sola boda', level: 9, theme: 'religion',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf'],
   text: 'Cuando Rania, de familia musulmana practicante, y Daniel, criado en una familia católica aunque no especialmente observante, decidieron casarse, se enfrentaron a una negociación bastante más compleja de lo que ninguno de los dos había anticipado inicialmente: cómo diseñar una ceremonia que respetara genuinamente ambas tradiciones religiosas sin que ninguna de las dos familias sintiera que la suya propia había quedado relegada a un papel meramente simbólico o secundario.\n\nTras varias conversaciones iniciales bastante tensas con ambas familias, la pareja optó finalmente por celebrar dos ceremonias religiosas completamente distintas, separadas por apenas un día de diferencia: una ceremonia nikah tradicional, oficiada según el rito musulmán habitual en presencia de la familia de Rania, seguida al día siguiente por una misa católica considerablemente más reducida, celebrada en la parroquia familiar de Daniel con la presencia de sus propios parientes más cercanos.\n\nEl mayor desafío práctico, según cuenta ahora la propia pareja con cierta distancia irónica, no fue tanto encontrar oficiantes religiosos dispuestos a colaborar en un proceso de este tipo, sino gestionar las expectativas encontradas de ambas familias sobre elementos aparentemente menores pero cargados de significado simbólico considerable: qué música resultaba apropiada para cada ceremonia concreta, qué tipo de comida se serviría en cada celebración posterior, o incluso qué fotografías conjuntas se compartirían públicamente después en redes sociales.\n\nLos hijos que la pareja espera tener en el futuro, un tema que ambos reconocen haber discutido extensamente ya antes incluso de casarse, se criarán, según han acordado explícitamente entre ambos, con un conocimiento genuino de las dos tradiciones religiosas familiares, sin que ninguna de las dos deba imponerse necesariamente sobre la otra, dejando a los propios hijos, cuando alcancen una edad suficiente para comprenderlo plenamente, la decisión final sobre con cuál de ambas tradiciones, si alguna, prefieren identificarse personalmente.\n\nAmbas familias, inicialmente escépticas ante un acuerdo que ninguna de las dos consideraba del todo ideal, reconocen ahora, año y medio después de la doble boda, que el propio proceso de negociación, por complicado que resultara en su momento, terminó fortaleciendo considerablemente los vínculos entre ambas familias políticas, obligadas a conocerse y respetarse mutuamente bastante más de lo que una boda convencional dentro de una única tradición religiosa probablemente habría exigido.',
   questions: [
     { type: 'mcq', q: '¿Qué decisión final tomó la pareja sobre la ceremonia de boda?', options: ['Celebrar una única ceremonia mixta simplificada', 'Celebrar dos ceremonias religiosas distintas, separadas por un día', 'Renunciar a cualquier ceremonia religiosa'], answer: 1 },
@@ -6361,7 +6361,7 @@ window.PASSAGES = [
 
 {
   id: 'pasaporte-inversion-viajes-c1', title: 'La ciudadanía que se puede comprar', level: 10, theme: 'viajes',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
   text: 'Varios países de tamaño reducido, especialmente en el Caribe y algunas jurisdicciones europeas menores, ofrecen desde hace ya más de una década programas de ciudadanía por inversión, mediante los cuales cualquier persona dispuesta a realizar una inversión económica significativa, ya sea en forma de donación directa a un fondo estatal, adquisición inmobiliaria o creación de empleo local, puede obtener la nacionalidad correspondiente en cuestión de meses, sin necesidad de residir jamás físicamente en el país en cuestión.\n\nEl atractivo principal de estos programas, según explican los propios asesores especializados en gestionar este tipo de trámites para clientes adinerados, no reside habitualmente en el propio país que otorga la nacionalidad, sino en el valor práctico del pasaporte resultante: determinados pasaportes obtenidos mediante inversión permiten viajar sin visado previo a decenas de países adicionales respecto al pasaporte original del solicitante, una ventaja considerable para empresarios internacionales que viajan con frecuencia entre jurisdicciones con restricciones migratorias complicadas.\n\nLos críticos de esta práctica, cada vez más numerosos según diversos organismos internacionales de transparencia financiera, advierten de que estos programas facilitan en la práctica que individuos con patrimonios considerables, incluyendo en algunos casos ya documentados a personas bajo investigación por delitos económicos graves en su país de origen, obtengan una nueva identidad legal que dificulta considerablemente el rastreo internacional de sus activos financieros y su propia responsabilidad penal pendiente.\n\nAlgunos países que tradicionalmente ofrecían acceso preferencial a estos pasaportes han empezado a restringir el acceso a sus territorios para titulares de ciudadanías obtenidas por esta vía, precisamente ante la creciente preocupación por el uso indebido documentado en determinados casos concretos, lo que ha reducido considerablemente, según reconocen los propios países emisores, el atractivo comercial de sus programas frente a la competencia de otras jurisdicciones todavía sin restricciones equivalentes.\n\nLos defensores de mantener estos programas, sin embargo, insisten en que la inmensa mayoría de solicitantes utiliza el mecanismo con fines perfectamente legítimos, y que los ingresos que estas inversiones generan resultan, para economías de países pequeños con escasas fuentes alternativas de financiación pública, considerablemente más significativos de lo que la controversia mediática asociada a algunos casos puntuales suele reconocer.',
   questions: [
     { type: 'mcq', q: '¿Dónde reside el atractivo principal de estos programas, según los asesores especializados?', options: ['En el propio país que otorga la nacionalidad', 'En el valor práctico del pasaporte resultante para viajar sin visado', 'En el clima favorable de los países emisores'], answer: 1 },
@@ -6373,7 +6373,7 @@ window.PASSAGES = [
 
 {
   id: 'brecha-salarial-genero-trabajo-c1', title: 'El mismo puesto, distinto sueldo', level: 9, theme: 'trabajo',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'plusc'],
   text: 'Una auditoría salarial interna, encargada voluntariamente por una empresa mediana tras varios años de presión sindical sostenida, reveló una diferencia salarial media del catorce por ciento entre hombres y mujeres que ocupaban puestos formalmente idénticos, con responsabilidades comparables y antigüedad similar dentro de la propia organización, un resultado que sorprendió incluso a la propia dirección de recursos humanos, convencida hasta entonces de que su política retributiva era genuinamente neutral respecto al género.\n\nEl análisis detallado posterior, encargado a una consultora externa especializada precisamente en este tipo de auditorías, reveló que la diferencia no respondía a ninguna discriminación explícita y deliberada en las decisiones salariales individuales, sino a un patrón bastante más sutil y acumulativo: las mujeres de la empresa negociaban, de media, incrementos salariales porcentualmente inferiores a los de sus compañeros varones en cada revisión anual, una diferencia pequeña en cada ocasión concreta pero que, compuesta año tras año a lo largo de una carrera profesional completa, terminaba generando la brecha final observada.\n\nLos especialistas en negociación salarial consultados atribuyen este patrón a factores culturales y sociales considerablemente más amplios que trascienden con creces el ámbito de una empresa concreta: numerosos estudios previos han documentado que las mujeres, socializadas desde edades tempranas para evitar comportamientos percibidos socialmente como excesivamente agresivos, tienden a negociar con menos frecuencia y con menos firmeza que sus compañeros varones, mientras que, paradójicamente, las mujeres que sí negocian con firmeza equivalente reciben a menudo, según revelan estudios de percepción social, valoraciones bastante más negativas por parte de sus propios superiores que hombres que negocian exactamente de la misma manera.\n\nLa empresa, tras conocer estos resultados, ha implementado un sistema de bandas salariales fijas y no negociables individualmente para cada puesto y nivel de responsabilidad, eliminando por completo el margen de negociación individual que, paradójicamente, era precisamente el mecanismo que había generado la propia brecha salarial documentada.\n\nLos primeros resultados de esta reforma, apenas dieciocho meses después de su implementación, muestran ya una reducción significativa de la brecha salarial original, aunque los propios responsables de recursos humanos reconocen que corregir décadas enteras de diferencias acumuladas en la trayectoria profesional previa de las empleadas actuales exigirá, inevitablemente, bastante más tiempo del que cualquier reforma puntual concreta puede lograr por sí sola.',
   questions: [
     { type: 'mcq', q: '¿A qué atribuyó el análisis detallado la brecha salarial encontrada?', options: ['A una discriminación explícita y deliberada en cada decisión salarial', 'A que las mujeres negociaban incrementos porcentualmente inferiores en cada revisión anual', 'A que las mujeres trabajaban menos horas de media'], answer: 1 },
@@ -6397,7 +6397,7 @@ window.PASSAGES = [
 
 {
   id: 'cambio-genero-documento-identidad-c1', title: 'El nombre que por fin coincidía', level: 9, theme: 'identidad',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj'],
   text: 'Adrián tardó casi tres años completos en reunir toda la documentación médica y legal que la administración exigía para poder rectificar oficialmente la mención de sexo y el nombre que figuraban en su documento de identidad, un proceso que describe ahora, con cierta distancia irónica, como considerablemente más burocrático que la propia transición médica y personal que llevaba ya bastante más tiempo atravesando.\n\nDurante aquellos tres años de trámites, Adrián se vio obligado repetidamente a presentar, ante funcionarios distintos y en ventanillas distintas, un documento de identidad que mostraba un nombre y una fotografía que ya no correspondían en absoluto con su presentación física y social cotidiana, generando situaciones incómodas recurrentes que iban desde miradas de desconcierto hasta preguntas directas y considerablemente invasivas por parte de personal administrativo sin ninguna formación específica sobre cómo gestionar este tipo de trámites con la sensibilidad requerida.\n\nLa legislación vigente en su país exigía, hasta una reforma legal relativamente reciente, un informe médico que certificara disforia de género junto a un periodo mínimo de tratamiento hormonal documentado, un requisito que numerosas organizaciones de defensa de derechos trans llevaban años denunciando como innecesariamente patologizante, al obligar a las personas solicitantes a demostrar ante terceros un sufrimiento psicológico específico simplemente para acceder a un documento que reflejara correctamente su propia identidad.\n\nUna reforma legal posterior, aprobada tras considerable debate parlamentario, sustituyó finalmente aquel requisito médico por un procedimiento de autodeterminación de género basado exclusivamente en la declaración personal del propio solicitante ante notario, sin necesidad de aportar ningún informe médico ni de acreditar tratamiento hormonal alguno, un cambio que Adrián, aunque llegó demasiado tarde para beneficiarle directamente a él mismo, celebra sinceramente por las personas que atravesarán el mismo proceso en el futuro.\n\nHoy, con su documento de identidad finalmente actualizado tras aquellos tres años de trámites, Adrián reconoce que el simple hecho de que un funcionario lea en voz alta su nombre correcto durante cualquier gestión administrativa cotidiana, algo que la mayoría de la población nunca tiene motivo alguno para valorar especialmente, sigue proporcionándole una sensación de alivio genuino que no esperaba sentir con tanta intensidad tras tanto tiempo de espera acumulada.',
   questions: [
     { type: 'mcq', q: '¿Qué exigía la legislación anterior para rectificar el documento de identidad?', options: ['Solo una declaración personal ante notario', 'Un informe médico de disforia de género y tratamiento hormonal documentado', 'Ningún requisito específico'], answer: 1 },
@@ -6409,7 +6409,7 @@ window.PASSAGES = [
 
 {
   id: 'acumulacion-compulsiva-caracter-c1', title: 'La casa que ya no tenía sitio para nadie', level: 9, theme: 'caracter',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'plusc'],
   text: 'Cuando los hijos de Fermina finalmente consiguieron convencerla de que aceptara ayuda profesional, el pasillo de su vivienda llevaba ya varios años reducido a un estrecho sendero entre columnas de periódicos antiguos, cajas sin abrir y objetos diversos acumulados durante décadas, un espacio tan invadido que ni siquiera resultaba ya posible acceder con normalidad a dos de las tres habitaciones originales de la casa.\n\nEl trastorno de acumulación compulsiva, según explica la terapeuta que finalmente empezó a tratar a Fermina, no responde, contra lo que buena parte de la opinión pública asume simplificadamente al ver programas de televisión sobre el tema, a una simple falta de orden o de voluntad personal, sino a una relación emocional genuinamente compleja con los propios objetos materiales, en la que cada elemento acumulado representa, para quien lo conserva, un valor sentimental o una utilidad futura potencial que resulta extraordinariamente difícil de descartar racionalmente sin experimentar una angustia considerable.\n\nFermina reconoce que cada intento previo de deshacerse de algún objeto concreto, incluso de piezas evidentemente inútiles como envases vacíos o publicidad antigua, le generaba una ansiedad desproporcionada que terminaba invariablemente convenciéndola de conservarlo «por si acaso», una frase que repite todavía hoy con cierta autoconsciencia irónica sobre su propio patrón de pensamiento durante tantos años.\n\nEl proceso terapéutico, considerablemente más lento de lo que sus propios hijos habían anticipado inicialmente, avanza mediante sesiones semanales en las que Fermina practica, acompañada por la propia terapeuta, la toma de pequeñas decisiones progresivas sobre qué conservar y qué descartar, empezando deliberadamente por categorías de objetos con menor carga emocional asociada antes de abordar, mucho más adelante, aquellas posesiones vinculadas a recuerdos familiares genuinamente significativos.\n\nSus hijos, que durante años evitaron invitar a nadie a la vivienda familiar por la vergüenza acumulada ante el estado del hogar, insisten en que lo más difícil de todo el proceso no ha sido tanto ayudar físicamente a vaciar espacios concretos, sino aprender ellos mismos a no presionar excesivamente a su madre para acelerar un proceso que, según les ha explicado repetidamente la propia terapeuta, exige necesariamente su propio ritmo interno para resultar genuinamente sostenible a largo plazo.',
   questions: [
     { type: 'mcq', q: '¿A qué responde realmente el trastorno de acumulación compulsiva, según la terapeuta?', options: ['A una simple falta de orden o voluntad personal', 'A una relación emocional compleja con los objetos materiales', 'A la falta de espacio físico disponible en la vivienda'], answer: 1 },
@@ -6421,7 +6421,7 @@ window.PASSAGES = [
 
 {
   id: 'sinestesia-cuerpo-c1', title: 'El número siete siempre fue verde', level: 9, theme: 'cuerpo',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'perfsubj'],
   text: 'Hasta bien entrada su vida adulta, Lucía asumió que todo el mundo percibía los números y los días de la semana asociados a colores específicos y consistentes, del mismo modo que ella misma llevaba experimentándolo con total naturalidad desde su más temprana infancia: el número siete siempre había sido verde para ella, el martes un tono anaranjado apagado, y ciertas palabras concretas provocaban, de forma automática e involuntaria, una sensación gustativa específica en su propia boca.\n\nEl descubrimiento de que aquella percepción no era en absoluto universal llegó durante una conversación casual con una amiga, cuando Lucía mencionó despreocupadamente el color de un número concreto y su interlocutora, genuinamente desconcertada, le preguntó a qué se refería exactamente con semejante afirmación, un momento que Lucía recuerda todavía hoy como el instante preciso en que comprendió que su propia forma de percibir el mundo no era, ni de lejos, tan compartida como siempre había asumido implícitamente.\n\nLa sinestesia, según explican los neurocientíficos que estudian este fenómeno, consiste en una conexión perceptiva involuntaria entre dos o más sentidos que en la mayoría de las personas permanecen completamente separados entre sí, un fenómeno neurológico documentado en numerosas variantes distintas: algunas personas sinestésicas asocian colores a sonidos musicales concretos, otras experimentan sabores específicos al leer determinadas palabras, y otras, como el propio caso de Lucía, perciben colores consistentes asociados a números, letras o días de la semana.\n\nLejos de considerarlo una discapacidad o un trastorno que requiera tratamiento alguno, la propia comunidad científica especializada en el fenómeno tiende actualmente a describir la sinestesia como una variación neurológica más dentro del amplio espectro de la percepción humana normal, y numerosos artistas, músicos y escritores a lo largo de la historia han declarado abiertamente experimentar alguna forma de sinestesia, que muchos de ellos consideran, además, una fuente genuina de inspiración creativa más que una limitación cognitiva de ningún tipo.\n\nLucía, que hoy comparte abiertamente su experiencia sinestésica sin ningún reparo, reconoce que lo que más le costó asimilar tras el descubrimiento no fue tanto la propia peculiaridad neurológica en sí misma, sino la idea, considerablemente más inquietante en su momento, de que buena parte de su experiencia subjetiva cotidiana durante toda su vida anterior podría diferir radicalmente de la de cualquier otra persona sin que ella hubiera tenido jamás forma alguna de saberlo con certeza.',
   questions: [
     { type: 'mcq', q: '¿Cómo describe la comunidad científica la sinestesia actualmente, según el texto?', options: ['Como una discapacidad que requiere tratamiento', 'Como una variación neurológica dentro del espectro normal de percepción', 'Como un trastorno mental grave'], answer: 1 },
@@ -6433,7 +6433,7 @@ window.PASSAGES = [
 
 {
   id: 'cuidador-hermano-discapacidad-relaciones-c1', title: 'El hermano mayor que también fue tutor', level: 9, theme: 'relaciones',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'plusc'],
   text: 'Desde que sus padres fallecieron en un accidente de tráfico hace ya ocho años, Ignacio asumió, con apenas veinticuatro años recién cumplidos, la tutela legal y el cuidado cotidiano de su hermano pequeño, que vive con una discapacidad intelectual moderada que le exige un nivel de apoyo diario considerablemente superior al que Ignacio, en aquel momento todavía estudiante universitario, había anticipado tener que asumir tan pronto en su propia vida adulta.\n\nLa transición de hermano mayor convencional a cuidador principal y tutor legal, cuenta Ignacio con una honestidad considerable, generó durante los primeros meses una confusión emocional que ninguna guía práctica sobre tutela legal le había preparado para gestionar adecuadamente: seguía sintiéndose, en el fondo, el hermano mayor de siempre, pero ahora debía además tomar decisiones médicas, económicas y educativas que correspondían legalmente a una figura bastante más parecida a la de un padre que a la de un simple hermano.\n\nEl propio hermano de Ignacio, que hoy tiene veintidós años, participa activamente, dentro de sus propias capacidades, en las decisiones que afectan directamente a su vida cotidiana, un equilibrio que Ignacio ha ido ajustando progresivamente con el paso de los años tras varias conversaciones con profesionales especializados en discapacidad intelectual, que le advirtieron desde el principio del riesgo genuino de ejercer una tutela excesivamente protectora que terminara limitando innecesariamente la autonomía que su hermano sí es perfectamente capaz de ejercer en numerosos aspectos concretos de su propia vida.\n\nLo que más le preocupa a Ignacio de cara al futuro, más incluso que la propia carga cotidiana actual del cuidado, es una pregunta que evita compartir abiertamente incluso con sus amigos más cercanos: qué ocurrirá con su hermano el día en que él mismo, por edad o por cualquier circunstancia imprevista, ya no pueda seguir asumiendo personalmente aquella responsabilidad que lleva sosteniendo, prácticamente en solitario, desde una edad todavía considerablemente temprana para afrontar semejante nivel de responsabilidad.\n\nIgnacio ha empezado recientemente, tras superar cierta resistencia inicial a delegar cualquier parte del cuidado, a explorar junto a otros familiares más lejanos y ciertos recursos comunitarios de apoyo, la posibilidad de construir una red de cuidado compartida y sostenible, convencido de que ninguna responsabilidad de esta magnitud debería, a largo plazo, recaer indefinidamente sobre una sola persona sin ningún respaldo adicional.',
   questions: [
     { type: 'mcq', q: '¿Qué le advirtieron a Ignacio los profesionales especializados en discapacidad intelectual?', options: ['Que debía tomar todas las decisiones sin consultar a su hermano', 'Del riesgo de ejercer una tutela excesivamente protectora que limitara la autonomía de su hermano', 'Que debía renunciar a la tutela legal'], answer: 1 },
@@ -6445,7 +6445,7 @@ window.PASSAGES = [
 
 {
   id: 'critico-anosmia-alimentacion-c1', title: 'El crítico gastronómico que dejó de oler', level: 9, theme: 'alimentacion',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'plusc'],
   text: 'Tras una infección viral aparentemente banal que apenas le mantuvo unos días en cama, Óscar, crítico gastronómico de considerable prestigio profesional durante más de quince años, descubrió con una angustia creciente que había perdido, de forma aparentemente repentina y sin ningún aviso previo, la capacidad de percibir olores, un sentido que resulta, según explican los especialistas consultados posteriormente, absolutamente indispensable para experimentar la mayor parte de lo que coloquialmente llamamos sabor.\n\nLo que la mayoría de la gente entiende simplemente como «gusto», explica la otorrinolaringóloga que finalmente atendió a Óscar, depende en realidad mayoritariamente del olfato: la lengua humana solo distingue, de forma puramente gustativa y sin ninguna intervención del olfato, cinco sabores básicos —dulce, salado, ácido, amargo y umami—, mientras que la enorme variedad de matices que asociamos habitualmente a un plato concreto llega en realidad, casi en su totalidad, a través de los receptores olfativos situados en la parte posterior de la cavidad nasal.\n\nÓscar, incapaz durante meses enteros de distinguir siquiera entre un vino de considerable calidad y otro claramente defectuoso, tuvo que suspender temporalmente su columna gastronómica semanal, incapaz de ejercer honestamente una profesión que dependía por completo de una capacidad sensorial que, de la noche a la mañana, había desaparecido sin que ningún tratamiento probado hasta entonces lograra revertir la pérdida de forma inmediata.\n\nDurante su proceso de recuperación, considerablemente más lento y menos completo de lo que él mismo había esperado inicialmente, Óscar empezó a practicar un entrenamiento olfativo específico recomendado por su especialista, consistente en exponerse deliberadamente, varias veces al día, a aromas intensos y ya conocidos previamente —café molido, limón fresco, clavo de olor— con el objetivo de estimular la regeneración de las conexiones neuronales dañadas por la propia infección viral original.\n\nDos años después de aquella pérdida súbita, Óscar ha recuperado ya una parte considerable, aunque todavía no completa, de su capacidad olfativa original, y reconoce que la experiencia ha transformado profundamente su propia forma de escribir sobre comida: hoy dedica bastante más atención, en sus columnas actuales, a la textura, la temperatura y la presentación visual de cada plato, aspectos que durante sus primeros quince años de carrera profesional consideraba, en comparación con el aroma, secundarios y apenas dignos de mención detallada.',
   questions: [
     { type: 'mcq', q: '¿Qué sabores distingue la lengua humana sin ninguna intervención del olfato, según el texto?', options: ['Dulce, salado, ácido, amargo y umami', 'Todos los sabores posibles sin excepción', 'Solo dulce y salado'], answer: 0 },
@@ -6457,7 +6457,7 @@ window.PASSAGES = [
 
 {
   id: 'pajareo-gran-ano-ocio-c1', title: 'Trescientas especies antes de que acabe el año', level: 8, theme: 'ocio',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'plusc', 'condperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'plusc', 'condperf'],
   text: 'El primero de enero, a las seis y media de la mañana y con temperaturas todavía bajo cero, Beatriz salió a observar aves silvestres con un único objetivo personal ambicioso para los siguientes doce meses: identificar y registrar, siguiendo un protocolo estricto de verificación fotográfica, el mayor número posible de especies distintas dentro de los límites de su propia comunidad autónoma, un reto conocido entre la comunidad de observadores de aves como «gran año».\n\nLa modalidad, tomada originalmente de una tradición mucho más extendida en otros países, exige un compromiso considerablemente más serio de lo que su nombre informal podría sugerir a cualquier persona ajena a la afición: implica levantarse regularmente antes del amanecer para aprovechar la franja horaria de mayor actividad de determinadas especies, desplazarse con frecuencia considerable a hábitats muy distintos entre sí —desde marismas costeras hasta bosques de alta montaña—, y mantener un registro meticuloso, verificable por otros observadores expertos, de cada avistamiento concreto realizado a lo largo de todo el año.\n\nBeatriz reconoce que la parte más frustrante de su reto particular no fueron las especies genuinamente raras o difíciles de localizar, para las que ya contaba con expectativas realistas desde el principio del año, sino algunas especies teóricamente comunes que, por pura mala suerte acumulada durante meses, sistemáticamente evitó cruzarse en su camino, obligándola a organizar salidas específicas de última hora, ya entrado diciembre, exclusivamente dedicadas a localizar aves que cualquier observador ocasional habría podido identificar sin ningún esfuerzo especial en cualquier parque urbano cercano.\n\nLa comunidad de observadores de aves de su región, lejos de tratarse de una afición puramente solitaria, mantiene un grupo de mensajería instantánea extraordinariamente activo donde los propios participantes comparten en tiempo prácticamente real avistamientos poco habituales, generando una red de colaboración espontánea que permitió a Beatriz, en más de una ocasión, desplazarse con apenas un par de horas de margen hasta el lugar exacto donde otro observador había avistado recientemente una especie que ella todavía necesitaba registrar para completar su propio reto anual.\n\nBeatriz cerró finalmente el año con doscientas noventa y siete especies distintas registradas y verificadas, tres menos del objetivo redondo de trescientas que se había propuesto inicialmente, un resultado que, lejos de decepcionarla genuinamente, considera ya suficiente motivo para plantearse, con renovado entusiasmo, un segundo intento el próximo año.',
   questions: [
     { type: 'mcq', q: '¿Qué resultó más frustrante para Beatriz durante su reto, según el texto?', options: ['Las especies genuinamente raras y difíciles de localizar', 'Algunas especies teóricamente comunes que evitó cruzarse por mala suerte', 'El frío de las salidas matutinas'], answer: 1 },
@@ -6469,7 +6469,7 @@ window.PASSAGES = [
 
 {
   id: 'okupacion-debate-vivienda-c1', title: '¿De quién es la casa vacía?', level: 10, theme: 'vivienda',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'plusc'],
   text: 'Un matrimonio jubilado regresó de unas vacaciones de tres semanas para descubrir que su segunda vivienda, heredada de los padres de él y utilizada habitualmente solo durante los meses de verano, había sido ocupada en su ausencia por un grupo de personas que, cambiada ya la cerradura y presentando ante la policía un supuesto contrato de alquiler que la familia asegura completamente falsificado, se negó a abandonar voluntariamente el inmueble.\n\nEl caso, ampliamente cubierto por medios de comunicación nacionales, reavivó un debate público que lleva ya años dividiendo tanto a la opinión pública como al propio ámbito jurídico especializado: la legislación vigente en el país, diseñada originalmente para proteger el derecho constitucional a una vivienda digna frente a desahucios arbitrarios, establece un procedimiento judicial de desalojo que, en la práctica, puede prolongarse legalmente durante meses e incluso años, dejando durante todo ese periodo al propietario legítimo completamente privado del uso de su propio inmueble.\n\nLos defensores de mantener las garantías procesales actuales, considerablemente amplias, argumentan que endurecer excesivamente la legislación contra la ocupación ilegal terminaría inevitablemente perjudicando también a inquilinos legítimos con contrato de alquiler formal que se retrasan puntualmente en el pago por dificultades económicas genuinas, un colectivo bastante más numeroso, insisten, que el de ocupantes ilegales propiamente dichos que actúan mediante documentación falsificada como en el caso mediático mencionado.\n\nLos críticos de la legislación actual, por su parte, sostienen que la distinción legal entre ocupación de una primera vivienda habitual, considerablemente más protegida por la ley vigente, y ocupación de una segunda residencia como la del matrimonio afectado, resulta moralmente arbitraria desde la perspectiva exclusiva del propietario legítimo, que en ambos casos se ve privado, de igual manera, del uso pleno de una propiedad que legalmente le pertenece sin ninguna duda razonable.\n\nAlgunas comunidades autónomas han empezado a implementar, dentro de sus propias competencias limitadas en materia de vivienda, protocolos de actuación policial más ágiles específicamente diseñados para casos de ocupación reciente detectada dentro de las primeras cuarenta y ocho horas, un margen temporal considerablemente más breve que permite, según defienden sus impulsores, actuar con mayor celeridad sin necesidad de modificar la legislación estatal de fondo que continúa generando este debate tan polarizado entre ambos sectores enfrentados.',
   questions: [
     { type: 'mcq', q: '¿Qué argumento oponen los defensores de las garantías procesales actuales?', options: ['Que endurecer la ley perjudicaría también a inquilinos legítimos con dificultades económicas genuinas', 'Que la ocupación ilegal no representa ningún problema real', 'Que los propietarios siempre tienen razón en cualquier disputa'], answer: 0 },
@@ -6493,7 +6493,7 @@ window.PASSAGES = [
 
 {
   id: 'compra-ahora-paga-despues-compras-c1', title: 'Cuatro plazos, sin preguntas', level: 9, theme: 'compras',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj', 'condperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj', 'condperf'],
   text: 'Un estudio reciente sobre hábitos de consumo entre adultos jóvenes revela que casi la mitad de los encuestados ha utilizado ya, al menos en alguna ocasión, servicios de pago aplazado ofrecidos directamente durante el proceso de compra online, que permiten fraccionar el importe total de cualquier adquisición en varios plazos reducidos, habitualmente sin intereses adicionales aparentes y con una aprobación prácticamente instantánea que, a diferencia de una tarjeta de crédito tradicional, no exige ningún trámite adicional de verificación crediticia detallada.\n\nEste tipo de servicio financiero, presentado publicitariamente como una alternativa moderna, cómoda y aparentemente gratuita frente al crédito bancario convencional, genera sin embargo una preocupación creciente entre economistas y asociaciones de defensa del consumidor: la facilidad extrema con la que se aprueba cada compra individual, combinada con la sensación psicológica de estar gestionando cantidades pequeñas y manejables en cada plazo concreto, puede llevar fácilmente a los consumidores a acumular, sin plena conciencia del total agregado, varios compromisos de pago simultáneos repartidos entre distintos comercios y proveedores de este mismo servicio.\n\nA diferencia de una tarjeta de crédito tradicional, sujeta habitualmente a un límite único y centralizado que el propio usuario puede monitorizar con relativa facilidad, estos servicios de pago aplazado, ofrecidos por múltiples empresas distintas y sin ninguna obligación legal actual de compartir información crediticia entre sí, permiten en la práctica que un mismo consumidor acumule compromisos de pago considerablemente superiores a los que jamás habría podido obtener mediante una única línea de crédito bancario convencional sujeta a un análisis de solvencia más riguroso.\n\nLos impagos derivados de este tipo de servicio, según documentan ya varios estudios preliminares del sector financiero, generan además comisiones por retraso y penalizaciones que, aunque individualmente moderadas en cada caso concreto, pueden acumularse rápidamente hasta alcanzar cifras considerablemente superiores al coste del producto originalmente adquirido, especialmente cuando el consumidor afectado mantiene simultáneamente varios compromisos de pago distintos que resulta cada vez más difícil gestionar con claridad suficiente.\n\nAlgunos reguladores financieros han empezado a estudiar la posibilidad de exigir a estas empresas los mismos requisitos de verificación crediticia y transparencia informativa que ya se aplican obligatoriamente a las tarjetas de crédito tradicionales, aunque el propio sector, todavía relativamente nuevo y en rápida expansión comercial, se resiste activamente a una regulación que considera excesivamente restrictiva para un modelo de negocio que defiende como genuinamente beneficioso para la inmensa mayoría de sus usuarios habituales.',
   questions: [
     { type: 'mcq', q: '¿Qué preocupación genera este tipo de servicio de pago aplazado, según economistas consultados?', options: ['Que resulte demasiado caro desde el primer plazo', 'Que los consumidores acumulen varios compromisos de pago simultáneos sin plena conciencia del total', 'Que ningún comercio quiera ofrecerlo'], answer: 1 },
@@ -6518,7 +6518,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-cuerpo-fisio', title: 'Lo que dijo el fisioterapeuta', level: 4, theme: 'cuerpo',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj'],
   text: 'Marta llevaba meses con dolor en la espalda y en el cuello. Su médica le recomendó un fisioterapeuta del barrio, aunque ella dudaba que cuatro sesiones sirvieran de algo. En la primera visita él no le tocó la espalda: le pidió que caminara por la sala y que se sentara como se sienta en la oficina. «El problema no está en los huesos», le dijo. «Está en la postura y en unos músculos que casi nunca usas.» Le enseñó dos ejercicios para los hombros, uno para la cintura y otro para las piernas, y le advirtió que al principio notaría molestias en los brazos. También le mandó dar un paseo de media hora cada tarde. Dos meses después, Marta subía las escaleras sin apoyar la mano en la pared.',
   gloss: [ { es: 'llevaba meses con', en: 'had had … for months' },
            { es: 'sirvieran de algo', en: 'would be any use' },
@@ -6557,7 +6557,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-cuerpo-natacion', title: 'Volver a la piscina', level: 4, theme: 'cuerpo',
-  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro'],
   text: 'Cuando Álvaro volvió a nadar tenía cuarenta y un años y una lista larga de excusas. La primera semana terminaba cada largo con los pulmones ardiendo, los brazos pesados y el corazón a mil. El monitor le dijo que no mirara el reloj: «Si cuentas los minutos, el cuerpo se cansa antes.» Le corrigió la posición de la cabeza, que él sacaba demasiado del agua, y le explicó que la fuerza no sale de los hombros sino de la cintura y de las piernas. Poco a poco dejó de dolerle el cuello, y la rodilla que le molestaba al correr dejó de aparecer en la conversación. A los tres meses nadaba mil metros seguidos y notaba los músculos de la espalda de una manera que no recordaba desde el instituto. Lo que más le sorprendió no fue la forma física, sino dormir de un tirón por primera vez en años.',
   gloss: [ { es: 'un largo', en: 'a length (of the pool)' },
            { es: 'ardiendo', en: 'burning' },
@@ -6576,7 +6576,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-religion-semana-santa', title: 'La cofradía del pueblo', level: 4, theme: 'religion',
-  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'perfecto', 'condicional', 'presubj'],
   text: 'En el pueblo de mi madre la Semana Santa se prepara desde enero. La cofradía se reúne en una sala detrás de la iglesia de san Roque y discute cosas que a un forastero le parecerían mínimas: a qué hora sale el santo, qué calle se recorre primero, quién lleva la cruz. Mi tío, que es ateo declarado, lleva veinte años cargando el paso. Cuando alguien le pregunta por qué, contesta que él dejó de ir a misa a los quince, pero que la procesión no es solo de los creyentes: es del pueblo entero. El sacerdote nunca le ha discutido el argumento, y eso que la religión es su oficio. La noche del Viernes Santo la plaza se queda en silencio, y da igual que uno sea católico, protestante o nada: allí no habla nadie.',
   gloss: [ { es: 'la cofradía', en: 'brotherhood (that organises processions)' },
            { es: 'el forastero', en: 'outsider' },
@@ -6595,7 +6595,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-religion-calendarios', title: 'Tres calendarios en un piso', level: 5, theme: 'religion',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'plusc', 'futperf'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'plusc', 'futperf'],
   text: 'Comparto piso con Yasmin y con Daniel desde octubre. Ella es musulmana, él es judío, y yo me crié entre católicos y hace años que no piso una iglesia. Al principio me preocupaba meter la pata, pero resultó más sencillo de lo que había imaginado. En Ramadán Yasmin cena tardísimo y nosotros procuramos no cocinar a mediodía. Daniel no trabaja el sábado y ese día cocina él, de modo que el sabbat en esta casa huele a cebolla. En Navidad me voy a casa de mis padres. Ninguno de los tres intenta convencer a nadie: ni de creer en Dios, ni de dejar de hacerlo. He leído que los musulmanes, los judíos y los cristianos discuten desde hace siglos sobre lo mismo, y aquí la religión cabe entera en un calendario de cocina. Para entonces yo ya habré aprendido que convivir no exige creer lo mismo, sino saber qué día no conviene poner la lavadora.',
   gloss: [ { es: 'meter la pata', en: 'to put my foot in it' },
            { es: 'procuramos', en: 'we try to' },
@@ -6614,7 +6614,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-religion-abuela', title: 'La abuela y el ateo', level: 4, theme: 'religion',
-  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'plusc'],
   text: 'Mi abuela tenía una biblia en la mesilla y la leía todas las noches, aunque decía que ya se la sabía entera. Nunca me preguntó si yo creía en Dios. Cuando le confesé a los diecisiete años que era ateo, esperaba una discusión y me encontré con un encogimiento de hombros. «Tú sigue portándote bien», me dijo, «que de lo demás ya hablaremos». No dejó de ir a misa los domingos, y llevaba con ella a una amiga protestante a quien el sacerdote de la iglesia saludaba por su nombre. De los santos hablaba como de vecinos; del papa, casi nunca; del infierno, jamás. Lo que ella practicaba no se parecía mucho a lo que yo había leído sobre la religión en el instituto, ni a lo que discutían en la tele los católicos de profesión. Cuando murió encontramos la biblia llena de fotos y de recibos: la usaba de álbum.',
   gloss: [ { es: 'la mesilla', en: 'bedside table' },
            { es: 'un encogimiento de hombros', en: 'a shrug' },
@@ -6671,7 +6671,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-identidad-formulario', title: 'Un formulario de cuatro páginas', level: 4, theme: 'identidad',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj', 'plusc'],
   text: 'El formulario pedía el nombre y los dos apellidos, la fecha de nacimiento, el lugar de nacimiento, la dirección completa con el código postal y el número de teléfono. Hasta ahí, bien. El problema empezó en el estado civil, porque Luis se había separado en marzo y no sabía si ya podía escribir «soltero» o si seguía siendo casado a efectos del papeleo. En la ventanilla la señora le explicó que hasta que no hubiera sentencia pusiera lo segundo. Luego venía la nacionalidad, y ahí Luis tardó otro rato: nació en Alemania, es español desde los cuatro años y en el trabajo todos lo tratan de extranjero por el apellido. Escribió «española», entregó las cuatro páginas y salió a la plaza con la sensación de no haber dicho la verdad del todo.',
   gloss: [ { es: 'los apellidos', en: 'surnames' },
            { es: 'a efectos del papeleo', en: 'as far as the paperwork is concerned' },
@@ -6786,7 +6786,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-edu-nota', title: 'La nota que no explicaba nada', level: 4, theme: 'educacion',
-  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'impsubj'],
   text: 'El examen de junio le salió mal y la nota llegó sin comentarios: un número y nada más. Lucía se pasó el verano convencida de que no servía para la universidad. En septiembre fue a la biblioteca de la facultad, sacó el cuaderno del curso y repasó el programa lección por lección, marcando con lápiz lo que de verdad no entendía. Eran cuatro páginas, no doscientas. Su compañera de clase le enseñó a hacer los ejercicios en voz alta, como si se los explicara a otro. Lo que la hundió no fue cometer errores, sino no saber cuáles. Aprobó en enero. Desde entonces, cuando alguien le pregunta cómo le fue, contesta que no fue cuestión de estudiar más horas, sino de que alguien le dijera dónde estaba el problema.',
   gloss: [ { es: 'le salió mal', en: 'went badly for her' },
            { es: 'la facultad', en: 'university department' },
@@ -6879,7 +6879,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-viv-gotera', title: 'La gotera del quinto', level: 4, theme: 'vivienda',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'plusc'],
   text: 'La mancha apareció en el techo del baño en noviembre y creció despacio, con una paciencia que daba rabia. El propietario dijo por teléfono que seguramente no era nada y que ya mandaría a alguien. En enero el suelo del pasillo estaba mojado cada mañana y el agua había llegado a la cocina. Los vecinos del quinto no abrían la puerta. Cuando por fin subió el fontanero, tardó veinte minutos en encontrar el tubo roto y cuatro semanas en volver a taparlo. Lo que más me sorprendió de aquellos meses no fue la humedad, ni la escalera llena de cubos, sino descubrir que en un edificio de veinte pisos nadie tenía el teléfono de nadie. Ahora el vecindario tiene un grupo y un cuaderno con las llaves de quien se va de viaje.',
   gloss: [ { es: 'la gotera', en: 'leak (from above)' },
            { es: 'la mancha', en: 'stain, patch' },
@@ -6916,7 +6916,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-serv-correos', title: 'El último cartero del pueblo', level: 4, theme: 'servicios',
-  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
   text: 'Don Emilio fue cartero cuarenta y un años y se jubiló en marzo. En el pueblo no hay oficina de correos desde 2011, de modo que ir a correos significa coger el autobús hasta la capital y volver con el día perdido. Él lo resolvía a su manera: si alguien le daba una carta por la mañana, él la llevaba. No era su obligación y lo hizo durante una década. Ahora viene un mensajero de una empresa privada tres veces por semana y deja los paquetes en el bar. Las postales, que siguen llegando en agosto, tardan lo que tardan. Un empleado de correos de la capital le mandó una tarjeta cuando se jubiló, con un billete de cinco euros dentro para el primer café; en el sobre, en lugar de la dirección, habían escrito solo su nombre y el del pueblo. Llegó igual.',
   gloss: [ { es: 'se jubiló', en: 'he retired' },
            { es: 'a su manera', en: 'in his own way' },
@@ -6934,7 +6934,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-serv-voluntaria', title: 'Dos tardes a la semana', level: 4, theme: 'servicios',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  tenses: ['presente', 'perfecto', 'imperfecto'],
   text: 'Elena colabora como voluntaria en una ONG del barrio desde que se quedó sin trabajo, y ha seguido después de encontrarlo. Dos tardes a la semana acompaña a gente mayor a los servicios sociales y les ayuda con los papeles: el documento de identidad, la nacionalidad, el permiso de residencia de un hijo, la tarjeta del banco bloqueada, una solicitud de ayuda económica que nadie sabe rellenar. Dice que la colaboración funciona porque no promete nada: ella no decide, solo traduce el idioma de la ventanilla. Un psicólogo pasa los jueves. Al principio Elena creía que lo importante era conseguir la ayuda; ahora piensa que la mitad de la gente vuelve por tener una hora fija en la semana en la que alguien espera verla.',
   gloss: [ { es: 'una ONG', en: 'an NGO, charity' },
            { es: 'acompaña', en: 'she goes with' },
@@ -6971,7 +6971,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-viajes-guia', title: 'La guía turística que no lee nadie', level: 4, theme: 'viajes',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  tenses: ['presente', 'perfecto', 'imperfecto'],
   text: 'Nuria sacó el título de guía turístico hace once años y trabaja en Granada. Dice que su oficio ha cambiado más en diez años que en los cincuenta anteriores. Antes la gente llegaba en autobús con un plano doblado y un mapa de la región comprado en el hotel, y preguntaba dónde estaba todo; ahora llegan en taxi desde el aeropuerto con el metro estudiado, la excursión reservada y una lista de fotos pendientes. Hacer una reserva lleva cuarenta segundos y comprar un billete de avión, menos. Lo que no ha cambiado, cuenta ella, es lo que la gente pregunta cuando se cansa: dónde se come bien y si merece la pena subir andando. Ha dejado de repetir fechas. Ahora empieza cada excursión contando quién vivía en esa calle en 1930, y dice que desde entonces la gente levanta la vista del teléfono.',
   gloss: [ { es: 'doblado', en: 'folded' },
            { es: 'pendientes', en: 'outstanding, still to do' },
@@ -7063,7 +7063,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-caracter-timidez', title: 'La timidez no es frialdad', level: 4, theme: 'caracter',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'impsubj'],
   text: 'Durante años creí que ser tímido era un defecto que se corregía con esfuerzo, como la mala letra. Me apuntaron a teatro a los doce para que me hiciera sociable. No funcionó, y tardé en entender por qué: yo no era antipático ni reservado por decisión, simplemente tardaba más que los demás en soltarme. Un introvertido en una fiesta no está sufriendo necesariamente; está calculando. Lo que sí me hizo daño fue que todo el mundo llamara egoísta al silencio y generoso al ruido. Ahora, de adulto, sigo siendo el último en hablar en las reuniones, pero he dejado de disculparme por ello. Quien me conoce dice que soy agradable y bastante alegre; quien me ve diez minutos sigue diciendo que soy serio. Con los años he cambiado el ruido por una tranquilidad que no pienso justificar. Con eso he aprendido a vivir.',
   gloss: [ { es: 'la mala letra', en: 'bad handwriting' },
            { es: 'me apuntaron a', en: 'they signed me up for' },
@@ -7081,7 +7081,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-ident-dos-pueblos', title: 'De dónde eres, exactamente', level: 4, theme: 'identidad',
-  tenses: ['presente', 'preterito', 'perfecto', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'impsubj'],
   text: 'A Samir le preguntan de dónde es tres o cuatro veces por semana y ha dejado de contestar lo mismo. En la plaza del pueblo dice el nombre de la calle. En Madrid dice el pueblo. Fuera de España dice «español», y entonces alguien pregunta por el apellido y la conversación empieza otra vez. Nació aquí, sus padres son marroquíes, y en los papeles todo está clarísimo: nombre, fecha de nacimiento, nacionalidad española, estado civil soltero, dirección con su código postal. La edad, treinta y uno. Ninguno de esos datos contesta la pregunta que le hacen de verdad. Lo dice sin queja, casi con humor: «Soy el único de mi edificio que tiene que explicar su segundo apellido en el gimnasio.»',
   gloss: [ { es: 'clarísimo', en: 'perfectly clear' },
            { es: 'los datos', en: 'the details, the data' },
@@ -7098,7 +7098,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-ident-apellidos', title: 'Dos apellidos y una firma', level: 4, theme: 'identidad',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj'],
   text: 'Cuando mi madre se casó en 1979 nadie le pidió que cambiara de nombre, cosa que a mis amigas extranjeras todavía les sorprende. En España los dos apellidos son suyos de por vida, y el primer apellido de cada hijo viene del padre solo porque así se ha hecho siempre. Desde 2017 los señores que inscriben a un bebé pueden elegir el orden. Mi hermana lo hizo: sus hijos llevan primero el apellido de ella. En la escuela nadie ha dicho nada; en el hospital, el segundo día, una señora del mostrador preguntó dos veces si estaba segura. Cuando mi sobrino tenga que escribir su nombre completo en un formulario, con la dirección y el número de teléfono, no le parecerá nada raro. Eso es exactamente lo que quería su madre.',
   gloss: [ { es: 'de por vida', en: 'for life' },
            { es: 'inscriben', en: 'register' },
@@ -7116,7 +7116,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-medios-quiosco', title: 'El último quiosco de la avenida', level: 4, theme: 'medios',
-  tenses: ['presente', 'preterito', 'perfecto', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'impsubj'],
   text: 'El quiosco de la esquina cerró en marzo después de cuarenta años vendiendo periódicos, sellos y tarjetas telefónicas. Su dueño, Paco, dice sin dramatismo que los medios de comunicación no se han muerto: se han mudado. Ahora la gente lee la misma noticia en una página web, la comenta en un foro o en un chat y se olvida antes de comer. Él mantiene la radio encendida todo el día y ve la televisión por la noche, sobre todo los anuncios, que según él dicen más del país que el presentador. Lo que echa de menos no es vender: es que alguien le diera su opinión sobre una noticia en voz alta y esperara la suya. «En internet nadie responde a nadie», dice. «Se contesta, que no es lo mismo.»',
   gloss: [ { es: 'sin dramatismo', en: 'without any drama' },
            { es: 'se han mudado', en: 'they have moved house' },
@@ -7224,7 +7224,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-salud-chequeo', title: 'El chequeo de los cincuenta', level: 4, theme: 'salud',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'plusc'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'plusc'],
   text: 'Mi padre no había pisado un hospital en veinte años cuando le llegó la carta del chequeo. Fue de mal humor. Le sacaron sangre, le miraron la tensión y un enfermero le preguntó por el estrés en el trabajo, cosa que él consideró una impertinencia. No había usado el seguro médico ni para la gripe. Todo salió bien menos una cifra. Desde entonces lleva una vida más sana por pura cabezonería: ha dejado el azúcar, va andando a todas partes y se ha comprado una crema para el sol que usa incluso en marzo. Lo curioso es que la ansiedad que le daba el médico se le ha pasado. Ahora tiene la cita médica en el calendario de la cocina, en rojo, y llama a la farmacia si le falta alguna medicina antes de que se le acabe. Hasta ha vuelto al dentista.',
   gloss: [ { es: 'la tensión', en: 'blood pressure' },
            { es: 'una impertinencia', en: 'an impertinent question' },
@@ -7242,7 +7242,7 @@ window.PASSAGES = [
 
 {
   id: 'b1-nat-tormenta', title: 'La tormenta del catorce de agosto', level: 4, theme: 'naturaleza',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro'],
   text: 'Aquella tarde el cielo se puso de un color que nadie del pueblo recordaba: ni gris ni negro, algo entre los dos, y el mar se quedó liso como una mesa. Mi tío, que llevaba cuarenta años mirando nubes desde el mismo sitio, metió las vacas y las ovejas antes de que sonara el primer trueno. A las siete cayó la tormenta. Duró cuarenta minutos y se llevó dos árboles, medio tejado y la luz de toda la noche. Al día siguiente salió el sol como si nada y la tierra olía de una manera que no he vuelto a oler. Ahora hablamos mucho del medio ambiente en la ciudad, con razón, pero aquella tarde aprendí algo distinto: que el campo no discute con el cielo, lo mira y actúa.',
   gloss: [ { es: 'liso', en: 'flat, smooth' },
            { es: 'metió', en: 'brought in' },
@@ -7260,7 +7260,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-ocio-aficion', title: 'La afición que no rinde cuentas', level: 6, theme: 'ocio',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
   text: 'Hay una pregunta que se ha vuelto casi obligatoria cuando alguien menciona una afición: «¿Y eso te da algo?» Quien hace jardinería en una terraza de ocho metros acaba explicando cuánto ahorra en tomates; quien practica un deporte sin competir tiene que justificar el gimnasio con una analítica. El bricolaje se defiende por lo que cuesta un carpintero, y hasta hacer crucigramas se ha reconvertido en prevención del deterioro cognitivo. Nada de esto es falso, y ahí está el problema: que sea verdad no significa que sea la razón. Conviene recordar que el tiempo libre se llamó así precisamente porque no rendía cuentas a nadie. Un domingo dedicado a montar en bicicleta sin destino, a hacer senderismo por un camino que ya se conoce o a ver una película mediocre desde el mismo sillón no produce nada, y esa improductividad no es un defecto del descanso sino su definición. Quien convierte la afición en un segundo oficio suele descubrir, a los pocos meses, que ha perdido las dos cosas: ya no descansa y todavía no cobra. La sospecha de fondo es que nos cuesta aceptar el placer sin factura. Preferimos decir que hacemos turismo para conocer otras culturas antes que admitir que nos apetecía cambiar de asiento durante una semana. Puede que la pregunta correcta no sea qué nos da una afición, sino qué nos quitaría dejarla.',
   gloss: [ { es: 'rendir cuentas', en: 'tener que explicar o justificar lo que uno hace ante otra persona' },
            { es: 'una analítica', en: 'un análisis de sangre que mide el estado de salud' },
@@ -7400,7 +7400,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-compras-rebajas', title: 'Cómo se fabrica un descuento', level: 6, theme: 'compras',
-  tenses: ['presente', 'imperfecto', 'futuro', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional'],
   text: 'Una oferta bien construida no consiste en bajar el precio: consiste en construir el precio desde el que se baja. El mecanismo es conocido y sigue funcionando. Durante unas semanas, un vestido figura a ciento veinte euros en el escaparate, sin que nadie espere venderlo a ese precio; después aparece tachado, con un cuarenta por ciento de descuento, y se vende. Lo que el comprador compara no es el precio con el valor de la prenda, sino el precio con el otro precio. El supermercado hace lo mismo con otra gramática: tres unidades por el precio de dos, cantidades que obligan a llevar más de lo que se necesita, y una salida que pasa obligatoriamente por delante de lo que no se pensaba comprar. Sería cómodo concluir que el consumidor es un ingenuo, pero la mayoría de la gente conoce el truco y cae igual, lo que sugiere que el problema no es de información. Quien entra en unas rebajas con una lista concreta y sale con ella cumplida es, estadísticamente, una rareza. Lo interesante del pequeño comercio no es que no use estas técnicas —el estanco, la carnicería y la panadería también saben colocar el producto—, sino que a esa escala el engaño se paga: quien vende mal una vez pierde a un cliente al que verá pasar por su puerta todos los días durante quince años.',
   gloss: [ { es: 'el escaparate', en: 'el cristal de una tienda donde se muestran los productos a la calle' },
            { es: 'tachado', en: 'marcado con una raya encima para indicar que ya no es válido' },
@@ -7420,7 +7420,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-compras-uniforme', title: 'Un armario cada vez más igual', level: 7, theme: 'compras',
-  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'condperf'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'condperf'],
   text: 'Si alguien comparara una fotografía de una calle comercial de 1994 con otra tomada el mes pasado en la misma esquina, encontraría menos diferencias en los edificios que en la ropa de la gente, y no en el sentido que cabría esperar. Los abrigos son parecidos entre sí, los vaqueros son casi idénticos y la gorra, la bufanda y la cazadora se repiten con una uniformidad que hace treinta años habría resultado llamativa. La explicación habitual culpa a las grandes cadenas, y algo hay de eso. Pero conviene mirar también hacia el otro lado del mostrador. Comprar ropa exigía antes una negociación con un vendedor que conocía el género y que, a menudo, desaconsejaba la compra; ese diálogo desapareció con el autoservicio y con él una parte del criterio. Hoy la información llega antes de entrar en la tienda, ya filtrada, ya ordenada por lo que otros compraron. Nadie impone el pijama gris ni el jersey azul marino: se eligen libremente, uno detrás de otro, hasta formar un paisaje sin decisiones visibles. Lo que resulta más difícil de sostener es la idea de que esto sea una señal de libertad de elección. Elegir entre catorce versiones de la misma camisa se parece bastante a no elegir, con la diferencia de que uno sale de la tienda convencido de haberlo hecho.',
   gloss: [ { es: 'llamativa', en: 'que atrae la atención por ser poco habitual' },
            { es: 'el mostrador', en: 'la mesa alta que separa al vendedor del cliente en una tienda' },
@@ -7440,7 +7440,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-viajes-conserje', title: 'Lo que sabe el conserje', level: 6, theme: 'viajes',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
   text: 'En el hotel donde me alojé el mes pasado, el conserje llevaba veintiséis años detrás del mismo mostrador y sabía, con una precisión que ningún buscador reproduce, a qué hora conviene salir hacia la estación un viernes, qué taxi acepta tarjeta sin poner mala cara y cuál de los dos aparcamientos del barrio cierra antes de lo que anuncia. Le pregunté si la gente le consultaba menos que antes. Me contestó que le consultan distinto: ya nadie pide un plano ni pregunta dónde se come bien, porque eso viene decidido desde casa, pero suben a recepción en cuanto algo se tuerce. Un vuelo cancelado, una maleta que no llega, una excursión que no aparece por ningún lado. En otras palabras, el viajero ha externalizado la planificación y ha conservado al conserje para las averías. Él lo dice sin resentimiento, casi divertido, aunque señala una consecuencia incómoda: cuando alguien pregunta solo en las emergencias, las respuestas llegan tarde. La media hora de conversación al llegar, que antes servía para corregir un itinerario imposible, ya no se produce. Hacer una reserva se ha vuelto tan fácil que se hacen reservas que no encajan entre sí, y el error se descubre con la maleta hecha y el taxi esperando en la puerta.',
   gloss: [ { es: 'el conserje', en: 'la persona que atiende la recepción de un hotel o un edificio' },
            { es: 'poner mala cara', en: 'mostrar con el gesto que algo no gusta' },
@@ -7460,7 +7460,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-viajes-dni', title: 'Dos horas antes, por si acaso', level: 6, theme: 'viajes',
-  tenses: ['presente', 'perfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj'],
   text: 'Conozco a dos personas que representan bien los extremos. Una llega al aeropuerto tres horas antes con el carné de identidad, el pasaporte y una copia impresa de todo, por si el teléfono se queda sin batería. La otra hace las maletas veinte minutos antes de coger un taxi y ha perdido dos vuelos en cinco años, cosa que considera un balance aceptable. Lo llamativo es que ninguna de las dos esté dispuesta a discutirlo: cada una vive convencida de que su método es el sensato y de que la otra tiene un problema. Los números, si a alguien le interesan, dan un empate raro. La primera ha pasado, calculo, unos doce días completos de su vida esperando en salas de embarque. La segunda ha pagado dos billetes nuevos y una noche de hotel. La diferencia real no está en el coste sino en qué tipo de incomodidad prefiere cada una, y eso no se decide con una hoja de cálculo. Quien viaja con margen no compra tiempo: compra la ausencia de una escena concreta, la de correr por una terminal con la maleta detrás. Quien viaja justo tampoco compra tiempo: compra no tener que estar sentado en un sitio horrible mirando el reloj. Las dos pagan por lo mismo, que es no sentirse de una determinada manera.',
   gloss: [ { es: 'por si acaso', en: 'por precaución, ante la posibilidad de que algo ocurra' },
            { es: 'un balance', en: 'el resultado que queda al comparar lo bueno y lo malo' },
@@ -7480,7 +7480,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-viajes-carretera', title: 'El país visto desde la carretera', level: 7, theme: 'viajes',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
   text: 'Hay un país que solo existe a ciento veinte kilómetros por hora y que desaparece en cuanto uno se baja del coche. Está hecho de gasolineras iguales, de áreas de servicio con el mismo café, de carteles que anuncian un castillo que nunca se visita y de pueblos cuyo nombre se lee dos segundos antes de dejarlos atrás. Quien viaja en avión no lo ve; quien viaja en tren lo ve a trozos y sin volante. Conducir una travesía larga produce una forma de atención muy particular: se está despierto sin pensar en nada concreto, lo cual explica que tanta gente afirme que las mejores conversaciones de su vida han ocurrido con los dos mirando al frente. Conviene desconfiar un poco de esa nostalgia. La carretera de la que hablan mis padres tenía el doble de muertos y un mecánico cada cuarenta kilómetros porque hacía falta. El aparcamiento de un área de servicio moderna es más seguro, más limpio y más aburrido, y esas tres cosas van juntas. Aun así, algo se ha perdido que no es solo peligro. Cuando la ruta la decide una aplicación que corrige el itinerario cada once minutos, el conductor deja de elegir el camino y pasa a supervisar una decisión ajena, que es exactamente lo contrario de lo que la gente dice ir a buscar cuando dice que le gusta conducir.',
   gloss: [ { es: 'el área de servicio', en: 'la zona de descanso junto a una autopista, con gasolinera y cafetería' },
            { es: 'el volante', en: 'la rueda con que se dirige un coche' },
@@ -7500,7 +7500,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-cuerpo-postura', title: 'Ocho horas en la misma silla', level: 6, theme: 'cuerpo',
-  tenses: ['presente', 'perfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj'],
   text: 'La medicina laboral lleva veinte años repitiendo lo mismo y el mensaje sigue sin calar: el daño de una jornada de oficina no está en ningún esfuerzo, sino en su ausencia. La espalda, el cuello y los hombros aguantan mal la inmovilidad, y la rodilla y el tobillo se quejan antes de lo que cabría esperar en alguien que no ha hecho nada. Los síntomas llegan desordenados. Primero la muñeca y el codo del brazo que usa el ratón; después la cabeza, casi siempre atribuida al ojo o a la falta de sueño; más tarde la barriga, porque la digestión también se resiente de la postura. Nada de esto es grave por separado, y de ahí que se consulte tarde. Lo que ha cambiado en los últimos años es la respuesta de las empresas, que han apostado por el mobiliario: sillas caras, mesas que suben y bajan, informes internos con fotografías. Es una mejora real y una coartada perfecta. La silla no decide cuántas horas se pasa sentado en ella. Quien firma una compra de cien mesas regulables y mantiene reuniones de tres horas sin pausa ha resuelto el problema en el papel, y solo ahí. Dar un paseo de diez minutos cada hora sigue siendo, por un margen enorme, la medida más eficaz y la única que cuesta tiempo en lugar de dinero.',
   gloss: [ { es: 'calar', en: 'llegar de verdad a quien escucha y quedarse' },
            { es: 'la inmovilidad', en: 'el hecho de permanecer sin moverse durante mucho tiempo' },
@@ -7540,7 +7540,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-caracter-etiquetas', title: 'El test que lo explica todo', level: 6, theme: 'caracter',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
   text: 'Hay una industria entera dedicada a decirle a la gente cómo es. Los test de personalidad que se usan en selección de personal reparten a los candidatos en cuatro o dieciséis casillas y devuelven un informe donde uno resulta ser el introvertido analítico, el hablador con tendencia arrogante o el reservado de carácter fuerte. El atractivo es evidente: por fin alguien pone nombre a lo que uno sospechaba. El problema empieza cuando la casilla deja de describir y pasa a explicar. Que alguien sea impaciente no explica que haya interrumpido a un compañero; la impaciencia es el nombre que le damos a haber interrumpido varias veces. Usarlo como causa es dar una vuelta y volver al mismo sitio. En la práctica estas etiquetas hacen dos cosas incompatibles. Sirven para hablar con cierta rapidez de personas que apenas se conocen, lo que tiene valor en una empresa grande. Y sirven, con la misma facilidad, para congelar a alguien: quien ha sido clasificado como el vago, el inseguro o el serio arrastra esa clasificación en cada reunión posterior, y el sistema no ofrece ningún procedimiento para dejar de serlo. Ningún test recoge que el tímido de la primera planta se vuelva sociable y hasta alegre al noveno mes porque le han dado un trabajo que le importa. Los rasgos existen, pero son mucho menos estables y mucho más dependientes del sitio de lo que cualquier informe está dispuesto a admitir.',
   gloss: [ { es: 'una casilla', en: 'cada uno de los cuadros de una clasificación' },
            { es: 'el atractivo', en: 'lo que hace que algo resulte deseable o interesante' },
@@ -7560,7 +7560,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-caracter-humor', title: 'Tener sentido del humor', level: 6, theme: 'caracter',
-  tenses: ['presente', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'impsubj'],
   text: 'De todas las cualidades que la gente dice buscar en otra persona, tener sentido del humor es la que menos significa y la que más se repite. Nadie declara lo contrario. Y sin embargo, cuando se pregunta por casos concretos, se descubre que la expresión designa cosas incompatibles: para unos es reírse mucho, para otros es hacer reír, y para un tercer grupo, probablemente el más numeroso, es reírse de lo mismo que ellos. Nadie describe a un serio diciendo que tiene sentido del humor. Ese último sentido es el que hace trabajo de verdad. El humor compartido funciona como una contraseña. Señala qué se puede decir y qué no, quién está dentro y quién mira desde fuera, y por eso una broma que en un grupo resulta amable puede sonar arrogante en otro sin que cambie una sola palabra. Quien llega nuevo a una oficina lo nota enseguida: puede ser simpático, tolerante, generoso, trabajador y alegre, y aun así tardar meses en entender de qué se ríen los demás; si además es tímido, más. La paciencia se le agota antes que la amabilidad. Conviene por tanto desconfiar del elogio cuando se usa como descripción de carácter. Decir de alguien que tiene mucho sentido del humor rara vez informa sobre esa persona; informa sobre la relación que quien habla tiene con ella.',
   gloss: [ { es: 'designar', en: 'referirse a algo, darle nombre' },
            { es: 'una contraseña', en: 'una palabra o señal que solo conocen los del grupo' },
@@ -7580,7 +7580,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-ident-pasaporte', title: 'Lo que cabe en un pasaporte', level: 6, theme: 'identidad',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
   text: 'Un pasaporte contiene una cantidad sorprendentemente pequeña de información: un nombre, una fecha de nacimiento, un lugar de nacimiento, un número y una fotografía tomada en condiciones que nadie elegiría. Nada de eso dice gran cosa sobre nadie, y sin embargo el documento decide, en la práctica, a qué mitad del planeta puede viajar su titular sin pedir permiso. La desproporción entre lo que el papel dice y lo que el papel hace es el rasgo más interesante de los sistemas de identidad modernos. Lo mismo ocurre a menor escala en cualquier ventanilla. Un formulario pide dirección, código postal, número de teléfono, estado civil —soltero, casado, viudo, divorciado— y a veces todavía una casilla para el marido. Esa lista no describe una vida: la traduce a las categorías que la administración sabe procesar. Quien lleva ocho años con la misma persona sin haberse casado ocupa la misma casilla que quien no ha convivido nunca con nadie, y ninguna de las dos situaciones queda registrada. No es un fallo de diseño, es el diseño. Un sistema de identidad no está hecho para reconocer a alguien; está hecho para distinguirlo de los demás con el menor número de datos posible. Conviene recordar la diferencia cuando el carné no coincide del todo con quien lo lleva encima.',
   gloss: [ { es: 'el titular', en: 'la persona a cuyo nombre está un documento' },
            { es: 'la desproporción', en: 'la falta de relación razonable entre dos cosas' },
@@ -7720,7 +7720,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-edu-matricula', title: 'Lo que cuesta empezar de nuevo', level: 7, theme: 'educacion',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
   text: 'Pagar la matrícula de una carrera a los cuarenta y tres años tiene poco que ver con hacerlo a los dieciocho, y no principalmente por el dinero. A los dieciocho el coste es de tiempo que todavía no vale nada; a los cuarenta y tres el coste es de horas que ya están asignadas a otras personas. Quien se matricula en una universidad, decide hacer un curso en una academia o vuelve a pisar una biblioteca a esa edad ha tenido que negociar con alguien, aunque no lo cuente. Las cifras de abandono lo reflejan con crudeza. La causa más frecuente no es una nota baja ni el precio, sino un cambio de horario en el trabajo, un padre enfermo o un hijo que empieza el colegio. Nada de esto aparece en los folletos, que siguen hablando de vocación y de oportunidades como si el obstáculo fuera la falta de ganas. Hay una consecuencia práctica que las instituciones tardan en asumir: un programa pensado para adultos que trabajan debería medirse por cuántos terminan, no por cuántos se inscriben, y debería permitir parar y volver sin perder el diploma, el certificado ni el derecho a la beca. Los pocos centros que lo han intentado obtienen resultados llamativamente mejores. Siguen siendo pocos, entre otras cosas porque el que abandona no reclama: se va convencido de que el problema era suyo.',
   gloss: [ { es: 'asignadas', en: 'ya destinadas o comprometidas para algo' },
            { es: 'el abandono', en: 'el hecho de dejar unos estudios antes de terminarlos' },
@@ -7760,7 +7760,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-trab-teletrabajo', title: 'Cuatro años de teletrabajo', level: 6, theme: 'trabajo',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'perfecto', 'imperfecto', 'presubj'],
   text: 'Ahora que el teletrabajo lleva suficientes años funcionando para poder juzgarlo, las conclusiones son menos entusiastas y bastante más interesantes de lo que preveían los dos bandos. No ha destruido la vida de oficina ni ha liberado a nadie. Lo que ha hecho, sobre todo, es redistribuir ventajas de una manera que casi nadie anticipó. Quien tiene un despacho en casa y una hipoteca en las afueras ha ganado dos horas diarias; quien comparte un piso pequeño ha perdido el único sitio donde podía concentrarse. El debate público, dominado por quienes pertenecen al primer grupo, ha tardado en registrar al segundo. Hay un segundo efecto, más lento y peor documentado, que empieza a aparecer en los informes internos: la formación. Un empleado nuevo aprende una parte considerable de su oficio escuchando cómo resuelve un problema la persona sentada al lado, y eso no tiene sustituto en una videollamada convocada para un asunto concreto. Las empresas lo notan dos años después, cuando les toca promover a alguien y descubren que la competencia técnica está intacta y el criterio no se ha formado. Nada de esto justifica volver a obligar a todo el mundo a cruzar la ciudad cada mañana. Sí sugiere que el teletrabajo se diseñó pensando en quien ya sabía hacer su trabajo, y que el coste lo está pagando quien acaba de empezar.',
   gloss: [ { es: 'los bandos', en: 'los grupos que defienden posturas opuestas en una discusión' },
            { es: 'redistribuir', en: 'repartir de nuevo y de otra manera' },
@@ -7800,7 +7800,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-medios-entrevista', title: 'Las preguntas que ya traía escritas', level: 7, theme: 'medios',
-  tenses: ['presente', 'perfecto', 'presubj', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj', 'perfsubj'],
   text: 'Hay dos maneras de hacer una entrevista y la diferencia se nota en el minuto cuatro. En la primera, el periodista llega con ocho preguntas y las hace en orden, aunque la tercera respuesta haya vuelto irrelevantes las cinco siguientes. En la segunda, llega con una sola cosa que quiere entender y con la disposición a tirar el guión entero. La televisión favorece la primera por razones que no son de pereza: un programa con una duración exacta y un presentador que debe dar paso a la publicidad en el minuto veintidós no puede permitirse una digresión que quizá no lleve a ninguna parte. El formato decide antes que la persona. Lo que resulta más llamativo es que el entrevistado también lo sabe. Quien acude a una cadena con cierta frecuencia ha aprendido a reconocer la pregunta preparada y a contestar a la anterior, y esa maniobra funciona casi siempre porque el periodista, atento a su lista, no vuelve sobre ella. El resultado es una conversación que suena a conversación y donde nadie ha respondido a nada. No hace falta acusar a nadie de mala fe. Basta observar que el género premia a quien llena el tiempo y no a quien lo emplea, y que dar una noticia y hacer un programa entretenido son dos oficios que solo coinciden por casualidad.',
   gloss: [ { es: 'la disposición', en: 'la voluntad de hacer algo si hace falta' },
            { es: 'una digresión', en: 'una salida del tema principal de la conversación' },
@@ -7820,7 +7820,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-serv-ventanilla', title: 'La ventanilla y el trámite', level: 6, theme: 'servicios',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
   text: 'Cualquiera que haya tenido que renovar un permiso de residencia conoce la secuencia: una cita que se pide con dos meses de antelación, un documento que no se sabía que hacía falta, una firma digital que caducó sin avisar y una segunda cita. La burocracia española no destaca por su lentitud, que es media, sino por su costumbre de repartir el mismo trámite entre tres organismos que no se hablan entre sí. El coste de esa fragmentación no lo paga la administración. Lo paga quien tiene que pedir tres mañanas libres en el trabajo, y lo paga de forma muy desigual: el funcionario con horario flexible resuelve por la mañana lo que a un empleado de turno partido le cuesta una semana de favores. La digitalización ha mejorado las cosas para quien ya tenía facilidad y las ha empeorado para quien no. Un cajero automático y una oficina de correos son, todavía hoy, los dos servicios públicos que mejor funcionan en este país, y ninguno de los dos exige entender nada. No es casualidad. Un buen servicio no es el que ofrece más opciones, sino el que se puede usar sin haber aprendido a usarlo, y eso incluye a quien llega con la nacionalidad recién concedida y a quien lleva ochenta años aquí.',
   gloss: [ { es: 'con antelación', en: 'con tiempo, antes de la fecha' },
            { es: 'caducar', en: 'dejar de tener validez al pasar el plazo' },
@@ -7880,7 +7880,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-ciencia-metodo', title: 'Lo que un experimento no demuestra', level: 7, theme: 'ciencia',
-  tenses: ['presente', 'preterito', 'condicional', 'impsubj'],
+  tenses: ['presente', 'futuro', 'condicional'],
   text: 'Un descubrimiento llega al público a través de una cadena de traducciones, y en cada una pierde una condición. El científico escribe que en una muestra de cuarenta ratones se observó una reducción; el gabinete de prensa de la universidad titula que un invento de la informática médica podría frenar la enfermedad; el periódico recorta el condicional porque no cabe; y la red social se queda con el titular sin el periódico. Nadie ha mentido en ningún paso y el resultado final es falso. La responsabilidad se reparte peor de lo que suele decirse. Es cómodo culpar al periodismo, pero el método que produce la noticia empieza en el propio centro de investigación, donde la ciencia compite por financiación y sabe que un experimento bien explicado y poco llamativo no consigue ninguna. También conviene mirar al lector, que en la pantalla del ordenador o del portátil premia con su atención exactamente los titulares que después denuncia, y los reparte por correo electrónico sin abrirlos. Lo que falta en esa cadena no es rigor, que sobra en el primer eslabón, sino un hábito: decir en voz alta lo que un resultado no demuestra. Un buen artículo científico dedica un apartado entero a sus propias limitaciones, y ese apartado es el único que nunca se traduce. Si un solo eslabón lo conservara, el resto de la cadena funcionaría razonablemente bien.',
   gloss: [ { es: 'el gabinete de prensa', en: 'el servicio que comunica a los medios lo que hace una institución' },
            { es: 'el condicional', en: 'la forma verbal que indica que algo es posible, no seguro' },
@@ -7920,7 +7920,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-pol-cortesia', title: 'La amabilidad como argumento', level: 6, theme: 'politica',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj'],
   text: 'Se repite a menudo que en la vida pública se ha perdido la cortesía y que el debate sería mejor si los ministros y los diputados se trataran con más amabilidad. La queja es comprensible y bastante tramposa. La cortesía en el congreso nunca fue un signo de acuerdo: fue un procedimiento que permitía desacuerdos profundos sin que nadie tuviera que irse. Confundir las dos cosas lleva a un error que se ve todos los meses: se considera educado a quien no dice nada sustancial y agresivo a quien contradice con datos. Un ciudadano razonable puede preferir a alguien maleducado que responde a la pregunta antes que a una buena persona que tarda cuatro minutos en no contestarla. Hay además un uso más interesado de la queja. Pedir cortesía es, con frecuencia, pedir silencio, y suele pedirla quien tiene la posición más cómoda. La sociología lleva décadas observando que en cualquier institución las normas de trato favorecen a quien ya está dentro. Nada de esto justifica el insulto, que empobrece la discusión y ahuyenta a quien podría aportar algo. Sí sugiere que la educación no es el problema ni la solución, y que un debate donde todos se tratan de usted puede ser exactamente igual de vacío que uno donde se gritan.',
   gloss: [ { es: 'tramposo', en: 'que engaña con apariencia de razonable' },
            { es: 'sustancial', en: 'que tiene contenido real e importante' },
@@ -7940,7 +7940,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-arte-museo', title: 'Once segundos delante de un cuadro', level: 6, theme: 'arte',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro'],
   text: 'Los estudios de comportamiento en museos coinciden en una cifra incómoda: el visitante medio dedica entre once y diecisiete segundos a cada obra, y una parte de ese tiempo la emplea en leer la cartela. Quien ha recorrido una exposición grande en hora y media reconocerá el dato sin discutirlo. La reacción institucional ha consistido en producir más contexto: audioguías, paneles, aplicaciones que reconocen el cuadro con la cámara. Todo ello añade información y no cambia el número, porque el problema no era de información. Hay un experimento sencillo que casi nadie hace y que suele producir un efecto desproporcionado: quedarse delante de una sola obra durante diez minutos. No es una recomendación estética, es casi mecánica. Pasados los primeros dos o tres minutos, cuando ya se ha agotado lo que se reconoce, empieza a verse la composición, el orden en que el pintor quiso que se mirara, lo que está a medio terminar. El museo moderno está organizado para lo contrario: un recorrido, una salida por la tienda y la sensación de haber cubierto el edificio. Una catedral, un palacio o un castillo funcionan igual. Nadie ha decidido que la cultura se visite de esta manera; simplemente es la única que cabe en una mañana de sábado y en el precio de la entrada.',
   gloss: [ { es: 'la cartela', en: 'el cartel pequeño que explica una obra junto a ella' },
            { es: 'la audioguía', en: 'el aparato que explica la visita mientras se recorre' },
@@ -8000,7 +8000,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-salud-urgencias', title: 'El centro de salud que cierra a las tres', level: 6, theme: 'salud',
-  tenses: ['presente', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'condicional', 'presubj'],
   text: 'Una parte considerable de lo que llega a urgencias un martes por la tarde no es una urgencia. Es una fiebre de dos días, una herida que necesita tres puntos, un corte que sangra poco y asusta mucho, una gripe que lleva una semana. El personal lo sabe y lo dice con menos reproche del que cabría esperar, porque también sabe dónde está el origen: el centro de salud de ese barrio cierra a las tres y la cita médica más próxima es para dentro de once días. Llamar a esto mal uso del sistema por parte del paciente es describir el efecto y llamarlo causa. Nadie con un trabajo de ocho a cinco y un dolor que no se va elige razonablemente esperar once días. La consecuencia es económica antes que sanitaria: atender una quemadura leve en urgencias cuesta varias veces lo que costaría en atención primaria, y el enfermero que la atiende no está atendiendo otra cosa. Las campañas que piden al ciudadano que use bien los servicios llevan treinta años sin efecto medible, lo cual, después de treinta años, ya no es un dato sobre el ciudadano. Ampliar el horario de un centro de salud es caro, poco vistoso y no se inaugura. Es también, en casi todas las cuentas publicadas, más barato que la alternativa.',
   gloss: [ { es: 'los puntos', en: 'las costuras con que se cierra una herida' },
            { es: 'el reproche', en: 'la crítica que se hace a alguien por lo que ha hecho' },
@@ -8020,7 +8020,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-econ-factura', title: 'Quién paga de verdad un impuesto', level: 7, theme: 'economia',
-  tenses: ['presente', 'presubj'],
+  tenses: ['presente', 'preterito', 'presubj'],
   text: 'Hay una diferencia que la economía enseña en la primera semana y que casi nunca aparece en la discusión pública: quien entrega el dinero a la administración no es necesariamente quien soporta el coste. Un impuesto sobre una compañía puede acabar pagándolo el cliente en la factura, el empleado en su salario o el propietario en su beneficio, y cuál de los tres ocurre no depende de lo que diga la ley sino de quién puede marcharse a otro sitio. Es un asunto técnico con consecuencias muy poco técnicas. Sin él, cualquier discusión sobre pagar impuestos se convierte en una pelea de titulares. Subir el impuesto sobre la renta a las rentas altas y subir el impuesto al consumo se presentan a veces como decisiones del mismo tipo, cuando la segunda recae sobre quien gasta todo lo que ingresa y la primera no. La riqueza y la pobreza no cambian por el nombre del tributo, sino por dónde acaba la carga. Lo que un presupuesto público hace con el dinero es una discusión legítima y distinta; se puede sostener que una deuda alta es peligrosa o que la jubilación necesita otro esquema, y esas son posiciones defendibles. Lo que no se sostiene es discutir quién debe pagar sin preguntarse antes quién termina pagando.',
   gloss: [ { es: 'soportar el coste', en: 'ser quien realmente pierde el dinero al final' },
            { es: 'el beneficio', en: 'la ganancia que obtiene una empresa' },
@@ -8040,7 +8040,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-econ-catalogo', title: 'El catálogo y el escaparate', level: 6, theme: 'economia',
-  tenses: ['presente', 'preterito', 'perfecto', 'presubj'],
+  tenses: ['presente', 'perfecto', 'presubj'],
   text: 'Una tienda pequeña que vende por internet compite en un terreno que no diseñó y cuyas reglas no puede negociar. Su catálogo aparece junto al de una compañía capaz de perder dinero durante cuatro años en una categoría entera para quedarse con ella, y esa asimetría no se resuelve con mejor márquetin. Conviene decirlo porque la conversación pública sobre el pequeño comercio se ha llenado de consejos —un buen folleto, presencia en redes, una exhibición cuidada— que dan por supuesto que el problema es de habilidad. El comercio de proximidad tiene, sin embargo, dos ventajas que ninguna organización grande puede comprar: la devolución sin trámite y el conocimiento del cliente. Quien vende en la misma calle desde hace veinte años sabe qué se llevó mal el año pasado, qué factura no se cobró y a quién no conviene fiarle, y no vuelve a ofrecerlo. Lo que ha ido desapareciendo no es el comercio, que resiste mejor de lo que suele decirse, sino el intermedio: la compañía mediana, con quince empleados, demasiado grande para vivir del barrio y demasiado pequeña para negociar con un fabricante. Una economía sin ese tramo se vuelve frágil de una manera que tarda en notarse, porque lo que se pierde no son tiendas sino la posibilidad de que una tienda crezca sin venderse.',
   gloss: [ { es: 'la asimetría', en: 'la diferencia de fuerza entre dos partes' },
            { es: 'dar por supuesto', en: 'aceptar algo sin comprobarlo' },
@@ -8060,7 +8060,7 @@ window.PASSAGES = [
 
 {
   id: 'b2-relig-asignatura', title: 'La hora de religión', level: 6, theme: 'religion',
-  tenses: ['presente', 'perfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj'],
   text: 'Pocos asuntos escolares han producido tanto ruido y tan poca discusión útil como la hora de religión. El debate se plantea una y otra vez en los mismos términos —si la asignatura debe existir y si debe contar para la nota— y rara vez se pregunta qué se enseña en ella. Conviene separar dos asuntos que se confunden a diario. Una es la catequesis: enseñar el cristianismo desde dentro, con la biblia como fuente y el objetivo de formar creyentes. Otra es la historia de las religiones, que trata el islamismo, el budismo, el hinduismo, el protestantismo y el ateísmo como hechos culturales que han organizado calendarios, leyes y guerras durante siglos. La primera pertenece a una comunidad; la segunda, a cualquier educación razonable. Un alumno que termina el instituto sin saber qué es el corán, quién es el papa o por qué el sabbat cae en sábado no está siendo protegido de nada: está siendo privado de la mitad de las claves para leer un periódico. La objeción previsible es que la línea entre ambas resulta difícil de mantener en un aula, y es cierta. También lo es en las clases de historia reciente, y a nadie se le ha ocurrido suprimirlas por eso. Que algo sea difícil de hacer bien no es un argumento para no hacerlo.',
   gloss: [ { es: 'la catequesis', en: 'la enseñanza de una fe a quienes van a practicarla' },
            { es: 'la fuente', en: 'el texto o el origen de donde se saca una información' },
@@ -8080,7 +8080,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-cuerpo-dolor', title: 'El dolor que no se puede medir', level: 8, theme: 'cuerpo',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'impsubj'],
   text: 'De todas las cosas que un médico necesita saber, la intensidad del dolor es la única que solo puede obtener preguntando. No hay análisis que la revele. El esqueleto se fotografía, el hígado y el riñón se analizan, la columna se mide con precisión milimétrica, y sin embargo lo que lleva al paciente a la consulta —que le duele la espalda de una manera que no le deja dormir— sigue dependiendo de una escala del uno al diez que todo el mundo interpreta a su manera. Un profesional experimentado sabe que esa cifra dice tanto del carácter de quien la pronuncia como de su columna. Esto tendría poca importancia si las consecuencias se repartieran por igual, pero no es el caso. Diversos estudios llevan tres décadas documentando que el dolor referido por unas personas se registra sistemáticamente con más peso que el de otras, y que la variable que mejor predice ese trato no es la gravedad sino quién habla. Lo que describen esos trabajos no es mala fe. Es algo bastante peor de corregir: una escucha desigual que se produce en médicos convencidos de estar aplicando el mismo criterio a todo el mundo, y que se sostiene precisamente porque la queja no deja huella en ninguna prueba. Quien insiste demasiado pasa a ser un paciente difícil; quien no insiste, uno que ya está mejor. La respuesta institucional ha consistido, casi siempre, en refinar la escala: dibujos de caras, cuestionarios más largos, aplicaciones donde el enfermo registra a qué hora le duele la rodilla o el cuello. Nada de eso corrige el problema, porque el problema no está en cómo se recoge el dato sino en cómo se pondera una vez recogido. Hay un cambio pequeño que la evidencia respalda mejor que cualquier cuestionario: preguntar qué ha dejado de hacer el paciente. Si alguien ha renunciado a subir las escaleras, a coger a un nieto en brazos o a dar un paseo de veinte minutos, esa respuesta es verificable, no depende de la elocuencia de quien la da y resulta mucho más difícil de descontar. Se sigue sin medir el dolor, que probablemente no se puede medir. Se mide, en cambio, lo que el dolor ha ido ocupando, y eso basta para tomar casi todas las decisiones que hay que tomar.',
   questions: [
     { type: 'mcq', q: '¿Dónde sitúa el autor el origen de la desigualdad que describe?',
@@ -8114,7 +8114,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-caracter-constancia', title: 'La constancia y sus imitaciones', level: 8, theme: 'caracter',
-  tenses: ['presente', 'imperfecto', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj'],
   text: 'Hay una virtud que todo el mundo dice admirar y que casi nadie sabe reconocer cuando la tiene delante: la constancia. Se la confunde habitualmente con la ambición, con la que comparte apariencia y muy poco más, y se la contrapone a la inconstancia como si fueran dos temperamentos fijos repartidos al nacer. Ninguna de las dos operaciones resiste el examen. La ambición mira un resultado y calcula la distancia; la constancia mira una tarea y deja de calcular. Quien persevera en algo durante once años rara vez lo hace sostenido por una imagen del final, entre otras cosas porque esa imagen se desgasta en el tercer año y hay que sustituirla por otra cosa. Esa otra cosa suele ser mucho menos épica de lo que el relato posterior sugiere: un horario, un cuaderno, dos personas que preguntan. Conviene desconfiar, por eso, de las biografías que explican una trayectoria larga apelando a la fuerza de voluntad. La responsabilidad y la irresponsabilidad, la seriedad y la curiosidad se describen en esos textos como propiedades del sujeto, cuando lo que la investigación disponible sugiere es que se comportan mucho más como propiedades de una situación. El mismo hombre que abandona tres proyectos seguidos termina el cuarto sin haber cambiado de carácter, porque en el cuarto había alguien esperándolo los martes. No se trata de negar que existan diferencias individuales, que existen y son notables. Se trata de observar que el vocabulario con que hablamos de ellas —el vago, el trabajador, el inseguro, el de carácter fuerte— está construido para atribuir al interior lo que buena parte del tiempo ocurre fuera, y que esa atribución tiene consecuencias prácticas. Quien cree que la constancia es un rasgo se limita a buscarla en los demás y a lamentar su ausencia en sí mismo. Quien sospecha que es un arreglo hace algo distinto y bastante más útil: se rodea de los elementos que la producen y no espera a sentirla. La sensación llega después, si llega, y el trabajo ya está hecho. Es una tesis poco lucida, difícil de convertir en discurso de graduación, y sospechosamente parecida a lo que dice, cuando se le pregunta en serio, casi cualquiera que haya sostenido algo durante mucho tiempo.',
   questions: [
     { type: 'mcq', q: '¿Cómo distingue el texto la constancia de la ambición?',
@@ -8165,7 +8165,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-ident-nombre', title: 'Cambiarse el nombre', level: 9, theme: 'identidad',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj', 'impsubj'],
   text: 'El expediente para cambiarse el nombre es, en casi todos los países europeos, más largo que el necesario para casarse y considerablemente más corto que el previsto para cambiar de nacionalidad. Esa posición intermedia no es casual: revela con bastante exactitud cuánto pesa el nombre en la arquitectura administrativa de una vida. Ni tanto como el estado civil, ni tan poco como una dirección. Lo interesante aparece al examinar los motivos que la ley considera suficientes. Un nombre ridículo, un apellido que expone a burla, una discordancia entre el pasaporte y el uso continuado, un carné que no coincide con la tarjeta de visita: las causas admitidas comparten un rasgo, y es que todas apelan a un perjuicio verificable desde fuera. La voluntad, por sí sola, no basta. Quien solicita el cambio ha de demostrar que sufre, no que prefiere. Cabría pensar que esa cautela protege la seguridad jurídica, y en parte es así. Un sistema donde cualquiera se renombrase a voluntad complicaría la vida de los acreedores y de los tribunales, lo cual no es un argumento despreciable. Pero conviene mirar la asimetría completa antes de darse por satisfecho. Un recién nacido recibe su nombre de dos personas que no lo conocen todavía y que se lo ponen, con frecuencia, por motivos que a él no le conciernen: una abuela, una moda, un compromiso entre dos familias. Ni la fecha de nacimiento ni el lugar de nacimiento ni la edad admiten discusión, y es razonable que no la admitan; el nombre parecería otra clase de dato. Esa decisión, tomada por terceros y sin ningún control, es firme. La decisión posterior del interesado, tomada con cuarenta años de conocimiento de causa, está sometida a escrutinio. Se ha invertido la carga de la prueba, y se ha invertido en el sentido menos intuitivo. Hay un argumento honesto a favor del sistema actual que nadie suele formular en voz alta, quizá por antipático: el nombre no es del todo propio. Sirve para que los demás se refieran a uno —el señor tal, la señora cual— y los demás tienen algún interés legítimo en que no cambie cada pocos años, igual que lo tienen en que uno avise cuando cambia de dirección. Es una tesis defendible. Lo que no resulta defendible es sostenerla y al mismo tiempo mantener la retórica según la cual la identidad es un asunto estrictamente personal, porque las dos cosas no pueden ser verdad a la vez y el ordenamiento, cuando se le lee con atención, ya ha elegido una.',
   questions: [
     { type: 'mcq', q: '¿Qué comparten los motivos que la ley admite?',
@@ -8233,7 +8233,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-alim-sobras', title: 'Lo que se tira', level: 9, theme: 'alimentacion',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
   text: 'Las cifras sobre desperdicio alimentario circulan con una seguridad que no siempre merecen, pero el orden de magnitud no está en discusión: una parte considerable de lo que se produce para comer no se come. Lo interesante empieza cuando se pregunta dónde se tira, porque la respuesta contradice la intuición y también buena parte de las campañas. En los países ricos, el grueso del desperdicio se produce en el último tramo de la cadena, es decir, en casa. En los países pobres se produce antes, entre el campo y el mercado, por falta de transporte y de frío. Son dos problemas distintos que comparten nombre, y tratarlos con la misma retórica moral no ayuda a ninguno de los dos. En el caso doméstico, la explicación que más se repite —la gente es descuidada— explica poco. Quien tira media lechuga y un yogur caducado cada semana no lo hace por indiferencia; lo hace porque compró para una previsión que no se cumplió, y la previsión no se cumplió porque la vida de una familia moderna se decide con dos días de antelación. A eso se suma un diseño comercial que empuja en la misma dirección: el formato grande sale mejor de precio, la oferta va por unidades y el envase de mayonesa que sobra no es el que nadie quería comprar, sino el único disponible. Hay además un factor de conocimiento que ha ido desapareciendo y que rara vez se menciona en las campañas. Saber qué hacer con lo que sobra es una competencia técnica, no una virtud: una merienda que resuelve un trozo de pan duro, una sartén con las verduras del martes, un bocadillo que justifica media cebolla. Esa competencia se transmitía mirando cocinar a alguien a diario, y la mayoría de los adultos de cuarenta años no ha tenido esa experiencia. Pedirles responsabilidad sin darles el procedimiento es exigir el resultado sin el medio. Conviene por último resistirse a la culpa individual como estrategia, que es cómoda y poco eficaz. El hogar tira mucho, sí, y también es el único actor de toda la cadena que no tiene ni economías de escala, ni cámaras frigoríficas, ni un departamento dedicado a calcular la demanda.',
   questions: [
     { type: 'mcq', q: '¿Qué distinción establece entre países ricos y pobres?',
@@ -8301,7 +8301,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-trab-paro', title: 'Estar en paro y decirlo', level: 9, theme: 'trabajo',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj', 'impsubj'],
   text: 'Hay una pregunta que en español se formula casi siempre igual y que encierra más de lo que parece: «¿A qué te dedicas?» No pregunta qué haces con tus días, sino qué eres, y por eso resulta tan difícil de contestar para quien está en paro. Decir que uno es ingeniero sin trabajar de ello suena a impostura; decir que no hace nada es falso y además injusto con quien lleva cinco meses mandando currículums, haciendo un curso y ocupándose de una casa. El idioma no ofrece una tercera opción cómoda, y esa ausencia no es casual: refleja con precisión una sociedad donde el empleo hace de documento de identidad. Las consecuencias son concretas y están documentadas. El desempleo prolongado deteriora la salud por vías que no se explican solo por el dinero, y el deterioro empieza antes de que el dinero falte. Se ha observado también que la pérdida del empleo afecta de forma distinta según cómo se explicara la persona a sí misma: quien se identificaba con la profesión cae más que quien se identificaba con el oficio, y mucho más que quien se identificaba con la nómina. El empresario que se arruina y el funcionario que pierde la plaza no viven el mismo acontecimiento. Conviene resistirse a dos discursos igualmente cómodos. El primero dice que el trabajo no debería definir a nadie, lo cual es un deseo razonable presentado como si fuera una descripción; mientras la vivienda, la pensión y buena parte de las relaciones dependan del empleo, decir que no define es una observación de salón. El segundo dice que el mercado laboral premia al que se esfuerza, y quien ha estado en paro con cuarenta y ocho años y un despido a la espalda conoce la parte del proceso que ese eslogan omite. Lo que sí parece útil, y es pequeño, es cambiar la pregunta. «¿En qué andas?» admite un curso, un proyecto parado, una mudanza y una búsqueda. No resuelve el desempleo ni lo pretende. Ahorra, eso sí, una humillación diaria que no estaba en el precio.',
   questions: [
     { type: 'mcq', q: '¿Qué revela, según el texto, la pregunta «¿a qué te dedicas?»?',
@@ -8352,7 +8352,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-medios-portada', title: 'Lo que decide una portada', level: 8, theme: 'medios',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'perfsubj'],
   text: 'Durante buena parte del siglo pasado, la jerarquía de la prensa era un objeto físico. Alguien decidía qué iba arriba en la portada y ese alguien respondía de la decisión con su nombre en la última página. El lector recibía un paquete cerrado donde la posición de una noticia comunicaba tanto como la noticia misma. Hoy la cadena ha cambiado y conviene describir el cambio con precisión, porque la descripción más común —que ahora decide el algoritmo— es demasiado corta. Lo que decide es una combinación: un equipo fija el orden de la página web durante unas horas, un sistema mide qué se lee y reordena, y un tercer actor, la búsqueda y las redes, entrega a la mayoría de los lectores una pieza suelta que llega sin portada de ninguna clase. La consecuencia menos comentada es la desaparición del contexto silencioso. Un lector que en 1994 abría el periódico veía, sin leer nada, que aquel asunto ocupaba una columna y aquel otro media página, y esa proporción era una información. El mismo lector recibe hoy la pieza de media página y la de una columna con exactamente el mismo aspecto, en el mismo aparato, separadas por un anuncio. La jerarquía no se ha suprimido; se ha vuelto invisible, que es distinto y peor. Hay una segunda consecuencia sobre quien escribe. Un periodista que sabe que su texto llegará suelto escribe un titular que funcione solo, lo cual es razonable y tiene un efecto acumulado: el titular deja de resumir el texto y pasa a competir con otros titulares. Nadie ha decidido ese desplazamiento y todos los incentivos apuntan hacia él. La respuesta de algunos medios ha consistido en reconstruir el paquete —una edición cerrada por la mañana, un boletín que termina— y los datos de fidelidad que publican sugieren que a una parte del público le interesa. Es una vuelta parcial y llamativa: después de veinte años vendiendo la ventaja de leer lo que uno quiera cuando quiera, se descubre que buena parte del valor de un periódico estaba en que alguien hubiera decidido por ti y firmara la decisión.',
   questions: [
     { type: 'mcq', q: '¿Por qué le parece corta la explicación del algoritmo?',
@@ -8386,7 +8386,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-viv-casero', title: 'El casero y la ley', level: 8, theme: 'vivienda',
-  tenses: ['presente', 'condicional', 'presubj', 'impsubj', 'perfsubj'],
+  tenses: ['presente', 'preterito', 'condicional', 'presubj', 'impsubj', 'perfsubj'],
   text: 'La relación entre quien alquila un piso y quien lo posee está regulada con un detalle considerable y se vive, en la práctica, como una negociación privada donde la ley aparece mencionada y casi nunca aplicada. Cualquiera que haya vivido de alquiler reconoce la escena: una nevera o una lavadora que llevan tres semanas estropeadas, una ducha que no calienta, un casero que promete un técnico, un inquilino que calcula en silencio si merece la pena insistir estando el contrato a cinco meses de renovarse. Ese cálculo es el verdadero mecanismo del mercado del alquiler, y no aparece en ninguna estadística. Conviene ser exacto sobre dónde está la asimetría, porque el debate público suele situarla mal. No está principalmente en el dinero: hay propietarios modestos con un solo piso y inquilinos con sueldos altos. Está en las consecuencias de romper la relación. Para el propietario, un mes vacío; para quien vive allí, una mudanza, un camión, el sofá que no cabe por la escalera, un colegio nuevo y la pérdida del vecindario. Dos partes con derechos formalmente equivalentes y salidas radicalmente distintas no negocian en igualdad, aunque ningún artículo diga lo contrario. Las soluciones que se ensayan reflejan esa diferencia con desigual fortuna. Limitar el precio produce efectos discutidos y bien estudiados, y tiende a beneficiar a quien ya está dentro. Alargar la duración obligatoria del contrato toca directamente la variable que importa —el coste de irse— y por eso encuentra más resistencia de la que su modestia técnica haría prever. Hay además un elemento cultural que ninguna norma alcanza: en España la vivienda en propiedad no es solo un activo, es una biografía, y eso convierte cualquier discusión sobre el alquiler en una conversación sobre lo que se le debe a la generación anterior. Lo que no resulta sostenible es el estado actual del argumento, donde una parte habla de derechos y la otra de riesgos como si describieran mercados distintos. Describen el mismo, y en él una avería en la nevera es, para uno, una factura, y para el otro, la pregunta de si conviene molestar.',
   questions: [
     { type: 'mcq', q: '¿Dónde sitúa el autor la asimetría principal?',
@@ -8454,7 +8454,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-compras-garantia', title: 'La garantía y la vida útil', level: 8, theme: 'compras',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro'],
   text: 'Comprar una lavadora en 1985 y comprarla hoy son dos operaciones que se parecen en la superficie y difieren en lo esencial. Aquel aparato costaba, en horas de trabajo, bastante más que el actual, y se compraba una vez. El vendedor de la tienda conocía tres modelos y podía explicar por qué uno duraba más; la garantía era corta y casi irrelevante porque lo que fallaba se arreglaba. Hoy el precio ha bajado de forma espectacular, la garantía se ha alargado por ley y la reparación ha dejado de tener sentido económico en casi todos los casos. Ese conjunto de cambios se presenta habitualmente como una mejora para el comprador, y en términos de acceso lo es sin ninguna duda. Lo que se ha modificado, sin que nadie lo anunciara, es qué se está comprando. Un electrodoméstico ya no es un bien duradero con un mantenimiento asociado, sino un servicio de siete años con un objeto incluido. La consecuencia visible está en las tiendas: desapareció el técnico que reparaba y quedó el que sustituye. La consecuencia invisible está en el diseño, donde la decisión de soldar una pieza en lugar de atornillarla ahorra céntimos por unidad y elimina la reparación como posibilidad física. Conviene resistirse a la explicación conspirativa, que es popular y perezosa. Nadie se reúne a decidir que un aparato dure poco; lo que ocurre es que cada decisión aislada, tomada por un ingeniero al que se le pide bajar el coste, apunta en la misma dirección, y que ningún departamento tiene como objetivo la durabilidad porque ningún cliente la ve en el escaparate. El derecho a reparar que empieza a legislarse en Europa ataca ese punto y no el precio: obliga a publicar cuánto cuesta una pieza y durante cuántos años estará disponible. Es una medida modesta y bien dirigida. Convierte en información lo que hoy se descubre a los seis años, cuando ya es tarde y la respuesta del servicio técnico consiste en ofrecer un descuento sobre el modelo nuevo.',
   questions: [
     { type: 'mcq', q: '¿Qué ha cambiado, según el texto, en lo que se compra?',
@@ -8488,7 +8488,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-salud-vacuna', title: 'La duda razonable y la otra', level: 8, theme: 'salud',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'futuro', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj'],
   text: 'Conviene empezar por una distinción que el debate público borra sistemáticamente. Una cosa es la desconfianza organizada, minoritaria y en buena medida impermeable al dato, y otra bastante distinta es la duda de una persona que acude al centro de salud, escucha una explicación de noventa segundos y sale con una pastilla, una vacuna, una crema y la sensación de no haber preguntado lo que quería preguntar. En la farmacia tampoco se atreve. Tratar a las dos con la misma estrategia comunicativa ha sido, durante veinte años, el error más caro y más repetido de la salud pública. La segunda no es una versión suave de la primera; en muchos casos es su antesala, y lo que la convierte en eso es precisamente el modo en que se la despacha. Hay datos bastante sólidos sobre qué funciona y son poco espectaculares. No funciona repetir la cifra de eficacia más alto. Funciona que el enfermero que pone la vacuna disponga de cuatro minutos en lugar de uno, que la respuesta empiece reconociendo lo que no se sabe, y que la persona que responde sea la misma que estará allí el mes que viene. Es decir: funciona la continuidad, que es exactamente el recurso que los sistemas sanitarios han ido recortando al organizarse por episodios. Merece la pena mirar el fondo del asunto sin indulgencia hacia ninguna de las partes. Un paciente que pide información sobre una herida mal curada, un corte, una fiebre que no baja, un análisis o una pastilla nueva está pidiendo, casi siempre, otra cosa además de la información: alguna señal de que quien decide lo ha pensado para él y no para una población. Esa señal es cara de dar y no figura en ningún indicador. Un sistema que mide consultas por hora la destruye sin proponérselo, y después financia campañas para reparar la confianza que sus propios indicadores erosionan. La contradicción no está en la ciencia, que es sólida y se explica bien cuando hay tiempo. Está en pedirle a un profesional que genere confianza en un formato diseñado para producir volumen.',
   questions: [
     { type: 'mcq', q: '¿Qué distinción considera decisiva el autor?',
@@ -8539,7 +8539,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-viajes-arena', title: 'El pueblo que vive de agosto', level: 9, theme: 'viajes',
-  tenses: ['presente', 'perfecto', 'futuro', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'presubj'],
   text: 'Hay pueblos en la costa española donde el censo se multiplica por doce entre julio y septiembre, y donde la economía entera —el hotel con su conserje y su media pensión, el campin, la agencia de viajes, el conductor del autobús de la playa, la parada del taxi, el aparcamiento, el mecánico que trabaja el triple— depende de nueve semanas. Describir eso como una suerte o como una desgracia es igual de superficial. Lo que interesa es qué le hace a un sitio vivir así. Lo primero, y menos visible, es que la temporada organiza el calendario emocional del lugar. En un pueblo de este tipo nadie se casa en agosto, nadie se opera en agosto y ninguna decisión familiar se toma entre el veinte de junio y el diez de septiembre, porque el año se juega ahí. Los conflictos se posponen, lo cual no es lo mismo que resolverlos, y en octubre reaparecen con una puntualidad que cualquier vecino confirmará. Lo segundo es una asimetría de información que sorprende poco cuando se piensa: quien pasa quince días en la arena conoce la parte del pueblo construida para él, que es literalmente eso, construida para él, y sale convencido de haber conocido un sitio. Conviene evitar la moral fácil sobre el turista, que paga y no engaña a nadie. El problema, cuando lo hay, es de estructura y no de comportamiento. Una localidad que concentra sus ingresos en dos meses no puede diversificar aunque quiera, porque el suelo, los locales y la mano de obra están capturados por un uso que rinde muchísimo durante nueve semanas y nada las cuarenta y tres restantes. Las alternativas que se proponen —turismo de invierno, congresos, deporte— chocan con esa misma rigidez. Lo que sí se observa en los pocos sitios que lo han conseguido no es una idea brillante sino una decisión antipática tomada a tiempo: limitar el número de plazas cuando todavía sobraba demanda, es decir, renunciar a dinero presente para conservar la posibilidad de decidir más adelante. Es exactamente el tipo de medida que ningún ayuntamiento gana unas elecciones defendiendo.',
   questions: [
     { type: 'mcq', q: '¿Qué efecto menos visible describe primero?',
@@ -8556,7 +8556,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-econ-hipoteca', title: 'Una hipoteca es una apuesta sobre uno mismo', level: 8, theme: 'economia',
-  tenses: ['presente', 'futuro', 'condicional', 'presubj', 'condperf'],
+  tenses: ['presente', 'preterito', 'futuro', 'condicional', 'presubj', 'condperf'],
   text: 'Firmar una hipoteca a treinta años es la decisión financiera más grande que tomará la mayoría de la gente, y se toma con una información sobre uno mismo que sería inaceptable en cualquier otra inversión. El préstamo se calcula sobre unos ingresos actuales y un tipo de interés conocido, y la parte que decide si sale bien —seguir teniendo ese empleo, no separarse, no enfermar, no mudarse de ciudad— no aparece en ninguna casilla del documento. El banco lo sabe y por eso pide una entrada: no mide la capacidad de pagar, mide la probabilidad de que uno aguante. Conviene desmontar el argumento que más se repite en España, que es cultural antes que económico: alquilar es tirar el dinero. La frase compara el alquiler con la parte del pago que amortiza capital y olvida las demás. Los intereses de los primeros años, el seguro, el impuesto, la comunidad y el mantenimiento no construyen riqueza; son el precio de habitar, exactamente igual que un alquiler. Lo que la compra añade de verdad es otra cosa, y merece defenderse con el nombre correcto: es un ahorro forzoso. Una persona que no habría apartado doscientos euros al mes los aparta porque hay una letra, y a los veinte años tiene un patrimonio que no habría acumulado de otro modo. Ese argumento es sólido y bastante menos épico que el de tirar el dinero. Queda un punto que casi nunca se discute y que pesa más que los tipos de interés: la hipoteca no solo financia una vivienda, también fija una ciudad. Quien debe dinero sobre un piso en una localidad donde el empleo se contrae acepta trabajos peores antes que mudarse, porque vender con pérdidas es más difícil que aguantar. La riqueza inmobiliaria de las familias españolas, que es alta en comparación europea, convive con una movilidad laboral baja, y no es casualidad que las dos cosas aparezcan juntas. Conviene añadir que nada de esto convierte la compra en un error: para una familia que va a quedarse donde está, el ahorro forzoso y la protección frente a una subida del alquiler son ventajas reales y medibles. Lo que no debería hacerse es presentar como una decisión puramente financiera algo que compromete además dónde se va a vivir y con qué margen se podrá cambiar de idea.',
   questions: [
     { type: 'mcq', q: '¿Qué mide realmente la entrada que pide el banco, según el texto?',
@@ -8573,7 +8573,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-econ-pesca', title: 'La flota que se quedó sin relevo', level: 9, theme: 'economia',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
   text: 'En los puertos del norte peninsular se repite una escena que resume mejor que cualquier informe lo que le ocurre a la pesca: barcos de pesca en buen estado, cuota disponible, la lonja abierta, y ningún pescador de treinta años dispuesto a embarcar. La explicación que primero se ofrece —los jóvenes no quieren trabajar duro— resulta cómoda y se desmiente con facilidad, porque esos mismos jóvenes aceptan jornadas igual de exigentes en la construcción o en la hostelería. Lo que rechazan no es el esfuerzo. Es una combinación concreta: ingresos variables que dependen de la captura, ausencias de doce días, una seguridad laboral que ha mejorado mucho y sigue siendo la peor del país, y una expectativa razonable de que el sector se contraiga durante toda su vida activa. Conviene mirar este caso porque ilustra un mecanismo que se repite en la agricultura, en la ganadería y en buena parte de la industria que produce materia prima. Un sector puede ser rentable y no tener futuro al mismo tiempo, y quien decide a los veinte años no invierte en una ganancia presente sino en una trayectoria; el gasto de hoy y las pérdidas de dentro de quince años entran en la misma cuenta. Las ayudas que se diseñan suelen actuar sobre lo primero —una subvención al gasoil, un préstamo blando para renovar el barco, un seguro más barato— y no tocan lo segundo, que es lo que decide. Hay una consecuencia de política pública que se enuncia poco y con desgana. Si un sector no va a mantener su tamaño, sostenerlo con dinero público durante veinte años sin decirlo produce el peor de los resultados posibles: una generación que entra creyendo una promesa que nadie pensaba cumplir. La alternativa honesta no es abandonarlo, sino financiar explícitamente la transición de quien está dentro y dejar de reclutar a quien no lo está. Cuesta exactamente lo mismo y se puede defender en voz alta, que es lo que suele faltar. Un puerto que pierde su flota pierde también la fábrica de hielo, el taller, la lonja y el vocabulario, y eso no se recupera con un plan, porque el plan llega cuando ya no queda nadie a quien aplicárselo.',
   questions: [
     { type: 'mcq', q: '¿Por qué desmiente la explicación del esfuerzo?',
@@ -8590,7 +8590,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-ciencia-copia', title: 'La copia de seguridad que nadie ha probado', level: 8, theme: 'ciencia',
-  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
   text: 'Cualquier informático con años de oficio sabe que la frase más peligrosa de su profesión no es «no tenemos copia de seguridad», sino «sí, hacemos copia de seguridad todas las noches». La primera describe un riesgo conocido, y un riesgo conocido se gestiona. La segunda describe una tranquilidad que casi nunca se ha verificado, porque hacer una copia es un proceso automático y restaurarla es un procedimiento manual que alguien tiene que ensayar un día en que no ha pasado nada. Casi ninguna organización lo ensaya. La copia se escribe cada noche en un archivo que nadie abre, el programa instalado en el pc de la esquina informa en la pantalla de que ha terminado correctamente, y ese informe se confunde durante años con una garantía. Basta con hacer clic en aceptar. Conviene generalizar el caso, porque no es un asunto de ordenadores. Un extintor, un plan de evacuación, una contraseña de recuperación, la actualización del navegador que nadie revisa, un seguro cuyas condiciones nadie ha leído: todos comparten la misma estructura. Son dispositivos que solo se usan en el peor momento posible, cuyo estado no se puede conocer sin probarlos, y cuya prueba cuesta tiempo en un día en que nada urge. La consecuencia es que el mantenimiento de estas cosas compite siempre contra tareas que sí tienen plazo, y pierde. La respuesta que funciona no es la concienciación. Es convertir la prueba en un acontecimiento con fecha y con nombre, exactamente como un simulacro: el primer martes de cada trimestre alguien borra un archivo de verdad y lo recupera delante de otras dos personas. Las organizaciones que hacen esto descubren, con una regularidad que ya nadie considera sorprendente, que entre un tercio y la mitad de sus copias no servían: se guardaban en el mismo edificio, no incluían la base de datos que importaba, dependían de un wifi que ya no existe, o requerían una clave que se fue con un usuario dado de baja en 2019. El hallazgo no es un fracaso del sistema técnico. Es el único momento en que ese sistema deja de ser una hipótesis. Una copia de seguridad que no se ha restaurado nunca no es una copia de seguridad: es una declaración de intenciones con marca de tiempo.',
   questions: [
     { type: 'mcq', q: '¿Por qué le parece más peligrosa la segunda frase?',
@@ -8641,7 +8641,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-pol-embajada', title: 'Lo que hace un cónsul', level: 9, theme: 'politica',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
   text: 'La imagen popular de una embajada es la de un edificio donde se celebran recepciones y se negocian asuntos de Estado. La realidad diaria de un consulado se parece bastante más a una oficina de registro civil con horario reducido, y esa distancia entre la imagen y la función explica buena parte de los malentendidos que rodean al servicio exterior. Un cónsul dedica la mayor parte de su jornada a expedir documentos, inscribir nacimientos, tramitar la nacionalidad de hijos de emigrantes y, con una frecuencia que sorprende a quien no lo ha visto, a ocuparse de compatriotas detenidos, hospitalizados o arruinados a cuatro mil kilómetros de su provincia. Nada de eso aparece en los presupuestos como política exterior, y sin embargo es lo que la mayoría de los ciudadanos de un país llega a conocer jamás de su diplomacia. El malentendido tiene consecuencias presupuestarias que se pueden enumerar. Cuando un ministerio recorta, lo hace sobre lo que resulta menos visible, y lo menos visible es precisamente el personal de ventanilla de un consulado en una ciudad mediana. La consecuencia se manifiesta años después en forma de una cita a seis meses vista y de una emigración reciente que no consigue inscribir a sus hijos. Entretanto, la representación ante la unión europea y el viaje oficial de un embajador conservan su dotación, porque son lo que un ministro puede enseñar. Conviene resistirse a la conclusión populista, que sería suprimir lo segundo. La negociación permanente en foros multilaterales produce resultados enormes y completamente invisibles: una norma técnica que no se aprueba, un asunto que se retira del orden del día, una posición que se construye durante cuatro años. Un país que solo financiara la atención al ciudadano perdería eso, y lo perdería sin enterarse, porque las victorias de ese tipo no se pueden anunciar. Lo verdaderamente difícil del servicio exterior es que sus dos mitades son invisibles de maneras distintas: una porque ocurre lejos y en silencio, y la otra porque solo la ve quien ha tenido un problema. Ninguna de las dos genera una fotografía, y los presupuestos se defienden con fotografías.',
   questions: [
     { type: 'mcq', q: '¿Qué contraste organiza el texto?',
@@ -8658,7 +8658,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-arte-traductor', title: 'El nombre que no aparece en la portada', level: 8, theme: 'arte',
-  tenses: ['presente', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
   text: 'Una novela extranjera que un lector español considera bien escrita ha sido escrita, en el sentido literal de las palabras que tiene delante, por una persona cuyo nombre figura en la página cuatro en cuerpo ocho. El traductor ocupa una posición singular entre los oficios artísticos: se le juzga por no notarse. Cuando hace bien su trabajo, el lector atribuye el ritmo, la ironía y la elección exacta de un adjetivo al escritor original; cuando lo hace mal, se dice que la novela era mala. No hay ningún otro caso donde el éxito consista en la desaparición del autor del texto que uno está leyendo. Conviene precisar en qué consiste realmente la tarea, porque la idea popular —sustituir cada palabra por su equivalente— describe lo que hace un programa y no lo que hace un profesional. Un traductor decide a qué registro pertenece el narrador, qué hace con un juego de palabras que en español no existe, si un personaje que en el original suena de clase alta debe sonar aquí de clase alta o de otra cosa, y qué se pierde necesariamente en cada una de esas decisiones. Traducir un poema o una obra de teatro obliga además a elegir entre el sentido, la música y la longitud, tres cosas que rara vez caben juntas. La consecuencia económica de esa invisibilidad es bastante brutal y está documentada. Los contratos habituales en España pagan por página y ceden los derechos durante plazos largos, de modo que un traductor cuya versión se reimprime durante treinta años no participa de ese éxito, mientras el escritor sí. Las asociaciones del sector llevan años pidiendo dos cosas modestas: el nombre en la cubierta y un porcentaje. La primera no cuesta dinero y se concede con extraordinaria lentitud, lo cual sugiere que lo que está en juego no es el coste sino una idea sobre quién es el autor de un libro. Un lector que comparase dos traducciones del mismo cuento resolvería la cuestión en veinte minutos, y precisamente por eso casi ninguna edición lo pone fácil.',
   questions: [
     { type: 'mcq', q: '¿Qué hace singular al oficio de traductor?',
@@ -8675,7 +8675,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-arte-orquesta', title: 'Detrás del director de orquesta', level: 9, theme: 'arte',
-  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj', 'impsubj', 'perfsubj'],
+  tenses: ['presente', 'perfecto', 'condicional', 'presubj', 'impsubj', 'perfsubj'],
   text: 'Pocas figuras concentran tanta autoridad simbólica con una función tan discutida como el director de orquesta. Se coloca de espaldas al público, no produce ningún sonido y aparece en la fotografía. La pregunta de si hace falta se plantea con cierta regularidad, y quienes la formulan suelen apoyarse en un argumento real: una orquesta profesional que ha ensayado una sinfonía conocida puede tocarla entera sin nadie delante, y de hecho lo hace en algunas formaciones que han suprimido el puesto por convicción. El argumento demuestra menos de lo que parece. Lo que un director aporta no se ve durante el concierto sino durante los ensayos, y consiste sobre todo en tomar decisiones que de otro modo habría que negociar. Cuánto dura un silencio, si la cuerda cede ante el viento en un pasaje concreto, qué se hace en el compás donde el compositor dejó una indicación ambigua: son cuestiones sin respuesta correcta, y una orquesta de ochenta personas que las resolviera por acuerdo necesitaría el triple de tiempo. La autoridad del director es, en ese sentido, un procedimiento de ahorro, no una verdad estética. Hay una segunda función, más difícil de defender en público y probablemente más importante. Un músico profesional de nivel alto ha tocado la misma obra ochenta veces, y el peligro de una carrera larga no es el error sino la corrección indiferente. Lo que un buen director hace con un violinista que se sabe la parte de memoria es convencerle de que esta vez importa, y esa tarea no es musical: es exactamente lo mismo que hace un entrenador con un deportista veterano. Quien haya visto una orquesta cambiar de sonido en cuatro compases al entrar alguien distinto sabe que el fenómeno existe y que no se explica solo por los gestos. Las agrupaciones que han eliminado la figura obtienen resultados excelentes en repertorio breve y bien conocido, y encuentran dificultades crecientes según aumenta la duración y la ambigüedad de la obra. Eso no resuelve el debate. Sugiere, con bastante claridad, que lo que está en discusión no es un puesto sino cuánta indeterminación puede sostener un grupo sin alguien que la cierre.',
   questions: [
     { type: 'mcq', q: '¿Qué concede el autor al argumento contra el director?',
@@ -8692,7 +8692,7 @@ window.PASSAGES = [
 
 {
   id: 'c1-relig-agnostico', title: 'La casilla que falta', level: 8, theme: 'religion',
-  tenses: ['presente', 'perfecto', 'condicional', 'presubj', 'impsubj'],
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj', 'impsubj'],
   text: 'Las encuestas sobre religión en España llevan décadas ofreciendo las mismas opciones: católico practicante, católico no practicante, creyente de otra religión, agnóstico, ateo. La lista parece exhaustiva y deja fuera a una proporción considerable de la población, que no se reconoce en ninguna de las cinco. Se trata de gente que no tiene fe en ningún sentido que un teólogo aceptaría, que no pisa una iglesia salvo para celebrar una boda o un bautizo, y que sin embargo no se llamaría atea ni agnóstica porque ambas palabras le suenan a tomar partido en una discusión que no le interesa. El catolicismo, para esas personas, no es una creencia sino un calendario, un vocabulario y una manera de organizar el duelo. Conviene evitar dos lecturas apresuradas. La primera, habitual entre creyentes, interpreta esa posición como una fe debilitada que podría reactivarse, y los datos de tres generaciones sugieren lo contrario: no hay reactivación, hay sustitución lenta de un contenido por una costumbre. La segunda, habitual entre ateos militantes, la lee como incoherencia o cobardía intelectual, lo cual supone que la relación de una persona con el cristianismo, el islamismo o el budismo debe pasar necesariamente por la pregunta sobre si sus proposiciones son verdaderas. Para una parte enorme de la humanidad no ha pasado nunca por ahí. El problema de la casilla ausente no es estadístico, aunque también lo sea. Es que las dos posiciones bien representadas —el creyente y el ateo— comparten un supuesto que la mayoría no comparte: que lo relevante de una religión es lo que afirma sobre el mundo. Quien va a misa el día del santo del pueblo sin creer una palabra del credo no está fingiendo; está haciendo otra cosa, una cosa que el vocabulario disponible describe mal. La filosofía lleva un siglo largo discutiendo si esa otra cosa merece llamarse religión, y mientras tanto el párroco del pueblo, que no ha leído esa discusión, decide cada año cuántas sillas saca a la plaza, y acierta.',
   questions: [
     { type: 'mcq', q: '¿Qué grupo señala el texto como mal representado?',
@@ -8755,6 +8755,292 @@ window.PASSAGES = [
     { type: 'mcq', q: '¿Qué revela, según el autor, el éxito del argumento turístico?',
       options: ['Que la fauna no importa a nadie', 'Que lo que mueve una decisión no siempre es la razón de fondo', 'Que el turismo resuelve los problemas ambientales'], answer: 1 },
     { type: 'translate', line: 'Nadie echa de menos un cielo que no ha tenido.', model: 'Nobody misses a sky they have never had.' }
+  ]
+},
+
+{
+  id: 'a2-cuerpo-carnet', title: 'El chico de la foto', level: 2, theme: 'cuerpo',
+  tenses: ['presente', 'imperfecto'],
+  text: 'Este es Diego, mi primo. En la foto era bajo y delgado, tenía el pelo largo y rizado y llevaba gafas. Ahora es alto, lleva barba y bigote y ya no lleva gafas. Tiene los ojos verdes como su madre y la cara redonda como su padre. Tiene la nariz de la familia y el cuello largo de su padre. Los hombros los tiene anchos ahora y la cabeza, igual de grande. La mano derecha la lleva en el bolsillo y los dedos de la otra están borrosos. De pequeño era muy guapo; ahora tiene cara de sueño.',
+  gloss: [ { es: 'rizado', en: 'curly' },
+           { es: 'redonda', en: 'round' },
+           { es: 'el bolsillo', en: 'pocket' },
+           { es: 'de pequeño', en: 'as a little boy' },
+           { es: 'cara de sueño', en: 'a sleepy face' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es Diego ahora?',
+      options: ['Bajo y delgado', 'Alto y con barba', 'Rubio y con gafas'], answer: 1 },
+    { type: 'mcq', q: '¿De quién tiene los ojos?',
+      options: ['De su madre', 'De su padre', 'De su abuela'], answer: 0 },
+    { type: 'short', q: '¿Qué llevaba Diego en la foto? (una palabra)', accept: ['gafas', 'las gafas'] },
+    { type: 'translate', line: 'Tiene los ojos verdes como su madre', model: 'He has green eyes like his mother' }
+  ]
+},
+
+{
+  id: 'a2-cuerpo-gimnasio', title: 'Me duele todo', level: 2, theme: 'cuerpo',
+  tenses: ['presente', 'preterito'],
+  text: 'Ayer fui al gimnasio por primera vez en dos años. Hoy me duele la espalda, me duelen las dos piernas y me duele hasta el cuello. Tengo los brazos cansados, no puedo levantar la mano derecha y me duele la cabeza desde el desayuno. Los dedos del pie izquierdo también, y la rodilla derecha, y eso no lo entiendo. Mi hermano se ríe de mí: él va todos los martes y dice que la primera semana siempre es así. El corazón, por lo menos, va bien. Mañana vuelvo.',
+  gloss: [ { es: 'me duele', en: 'it hurts (me)' },
+           { es: 'levantar', en: 'to lift, to raise' },
+           { es: 'se ríe de mí', en: 'he laughs at me' },
+           { es: 'por lo menos', en: 'at least' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuándo fue al gimnasio?',
+      options: ['Hoy', 'Ayer', 'El martes'], answer: 1 },
+    { type: 'mcq', q: '¿Qué va a hacer mañana?',
+      options: ['Descansar', 'Volver al gimnasio', 'Ir al médico'], answer: 1 },
+    { type: 'short', q: '¿Qué mano no puede levantar? (dos palabras)', accept: ['la derecha', 'la mano derecha', 'derecha'] },
+    { type: 'translate', line: 'Ayer fui al gimnasio por primera vez en dos años.', model: 'Yesterday I went to the gym for the first time in two years.' }
+  ]
+},
+
+{
+  id: 'a2-cuerpo-peluqueria', title: 'En la peluquería', level: 2, theme: 'cuerpo',
+  tenses: ['presente', 'imperfecto'],
+  text: '—Buenos días. ¿Cómo lo quiere? —Corto, por favor. Tengo el pelo muy largo. —¿Y la barba? —La barba también, pero el bigote no. —Usted tiene el pelo liso y la cabeza pequeña, es fácil. Mi marido es calvo y no viene nunca. —Con las gafas no veo nada mientras me corta. —El cuello un poco abajo, por favor. Y los hombros. —Vengo cada dos meses. Antes tenía el pelo rizado. —¿Y los ojos? —Los ojos y la nariz. La cara, dice mi madre. Hasta la barbilla y los dedos. —Pues con el pelo corto va a estar más guapo.',
+  gloss: [ { es: '¿Cómo lo quiere?', en: 'How would you like it?' },
+           { es: 'liso', en: 'straight' },
+           { es: 'calvo', en: 'bald' },
+           { es: 'la cara entera', en: 'your whole face' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué no se corta el cliente?',
+      options: ['El pelo', 'La barba', 'El bigote'], answer: 2 },
+    { type: 'mcq', q: '¿Por qué no va el marido de la peluquera?',
+      options: ['Porque es calvo', 'Porque no tiene tiempo', 'Porque va a otro sitio'], answer: 0 },
+    { type: 'short', q: '¿Cada cuánto viene el cliente? (tres palabras)', accept: ['cada dos meses', 'dos meses'] },
+    { type: 'translate', line: 'Tengo el pelo muy largo.', model: 'My hair is very long.' }
+  ]
+},
+
+{
+  id: 'a2-cuerpo-medico', title: 'No es nada grave', level: 3, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'La médica me miró la garganta y el oído derecho. Después me tocó el estómago y me preguntó si me dolía. Le dije que no. Me miró los ojos, me miró la nariz, me pidió abrir la boca otra vez y escribió algo. «Tiene usted una garganta de fumador», dijo. Yo no fumo. «Pues entonces es el aire seco de la oficina.» Me miró la espalda y el cuello, me tomó la mano para el pulso, me dijo que el corazón estaba perfecto y que la cabeza me dolía por dormir mal. Salí con una receta y una duda.',
+  gloss: [ { es: 'me tocó', en: 'she felt, she pressed' },
+           { es: 'fumador', en: 'smoker' },
+           { es: 'seco', en: 'dry' },
+           { es: 'el pulso', en: 'pulse' },
+           { es: 'la receta', en: 'prescription' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le dijo primero la médica?',
+      options: ['Que tenía garganta de fumador', 'Que estaba sano', 'Que fuera al hospital'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo sale el paciente de la consulta?',
+      options: ['Tranquilo', 'Con una duda', 'Enfadado'], answer: 1 },
+    { type: 'short', q: '¿Qué oído le miró? (dos palabras)', accept: ['el derecho', 'el oído derecho', 'derecho'] },
+    { type: 'translate', line: 'La médica me miró la garganta y el oído derecho.', model: 'The doctor looked at my throat and my right ear.' }
+  ]
+},
+
+{
+  id: 'a2-caracter-vecino', title: 'Mi vecino de arriba', level: 2, theme: 'caracter',
+  tenses: ['presente', 'preterito'],
+  text: 'Mi vecino parece antipático y no lo es. Es reservado, serio y poco sociable en el ascensor, pero también es generoso y muy amable. La semana pasada estuve enfermo y me subió la compra. Su hijo es lo contrario. Es alegre, es abierto, es tolerante con todo el mundo y bastante hablador. El padre es trabajador y el hijo es un poco vago, dice mi madre. Yo creo que los dos tienen buen carácter. Ninguno es egoísta, y eso, en un edificio de veinte pisos, no es poco.',
+  gloss: [ { es: 'parece', en: 'seems' },
+           { es: 'me subió la compra', en: 'he brought my shopping up' },
+           { es: 'lo contrario', en: 'the opposite' },
+           { es: 'no es poco', en: 'is no small thing' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es realmente el vecino?',
+      options: ['Antipático', 'Reservado pero generoso', 'Hablador'], answer: 1 },
+    { type: 'mcq', q: '¿Qué hizo el vecino la semana pasada?',
+      options: ['Le subió la compra', 'Se quejó del ruido', 'Habló en el ascensor'], answer: 0 },
+    { type: 'short', q: '¿Cómo es el hijo? (una palabra)', accept: ['abierto', 'alegre', 'sociable', 'hablador'] },
+    { type: 'translate', line: 'Mi vecino parece antipático y no lo es.', model: 'My neighbour seems unfriendly and he is not.' }
+  ]
+},
+
+{
+  id: 'a2-caracter-examen', title: 'Antes del examen', level: 2, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Ayer Marta estaba nerviosa y preocupada. Tenía el examen a las nueve y no durmió bien: tenía sueño, tenía frío y le dolía la cabeza. Su amigo Luis estaba tranquilo, porque es optimista y nada nervioso. Es inteligente, es vago, es sociable y es bastante egoísta con el cuaderno. No es antipático: es alegre y hasta generoso, pero no es nada trabajador. Marta lo odia un poco por eso. Tienen un carácter muy distinto. Salieron contentos los dos del examen. Ella sacó un nueve y él, un seis, y ninguno estaba cansado.',
+  gloss: [ { es: 'nerviosa', en: 'nervous' },
+           { es: 'no durmió bien', en: 'she didn\'t sleep well' },
+           { es: 'sacó un nueve', en: 'she got nine out of ten' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo estaba Luis antes del examen?',
+      options: ['Nervioso', 'Tranquilo', 'Triste'], answer: 1 },
+    { type: 'mcq', q: '¿Quién sacó mejor nota?',
+      options: ['Marta', 'Luis', 'Los dos igual'], answer: 0 },
+    { type: 'short', q: '¿A qué hora era el examen? (dos palabras)', accept: ['las nueve', 'a las nueve', 'nueve'] },
+    { type: 'translate', line: 'Ayer Marta estaba nerviosa y preocupada.', model: 'Yesterday Marta was nervous and worried.' }
+  ]
+},
+
+{
+  id: 'a2-caracter-jefe', title: 'Un jefe serio', level: 3, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Mi jefe es un hombre serio y muy trabajador. Al principio pensé que era antipático, pero estaba equivocado: es reservado, no es sociable y no habla nunca del fin de semana. Es abierto con las dudas y duro con las excusas. Es generoso con el tiempo y bastante tolerante con los errores nuevos, no con los viejos. No es egoísta ni es antipático. Es alegre en la comida de Navidad y solo ahí. Nunca lo he visto enfadado ni cansado, y llevo aquí dos años. Tiene un carácter difícil de explicar.',
+  gloss: [ { es: 'estaba equivocado', en: 'I was wrong' },
+           { es: 'duro', en: 'tough, hard' },
+           { es: 'las excusas', en: 'excuses' },
+           { es: 'llevo aquí', en: 'I\'ve been here' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pensó al principio?',
+      options: ['Que era reservado', 'Que era antipático', 'Que era alegre'], answer: 1 },
+    { type: 'mcq', q: '¿Con qué es duro el jefe?',
+      options: ['Con las dudas', 'Con las excusas', 'Con los horarios'], answer: 1 },
+    { type: 'short', q: '¿Cuánto tiempo lleva él en la empresa? (dos palabras)', accept: ['dos años', 'dos'] },
+    { type: 'translate', line: 'Es abierto con las dudas y duro con las excusas.', model: 'He is open to questions and hard on excuses.' }
+  ]
+},
+
+{
+  id: 'a2-caracter-hermano', title: 'Mi hermano pequeño', level: 2, theme: 'caracter',
+  tenses: ['presente', 'imperfecto'],
+  text: 'Mi hermano tiene ocho años y un carácter difícil. Es inteligente, es muy gracioso y es bastante egoísta con sus cosas. No es vago: es trabajador cuando algo le interesa y nada trabajador cuando no. Ayer estaba enfadado porque no quería prestarme el ordenador. Media hora después estaba contento otra vez. Es abierto con los desconocidos y reservado conmigo, que es raro. Con los amigos es generoso y muy sociable. Mi madre dice que yo era igual a su edad. No la creo.',
+  gloss: [ { es: 'gracioso', en: 'funny' },
+           { es: 'prestarme', en: 'to lend me' },
+           { es: 'los desconocidos', en: 'strangers' },
+           { es: 'no la creo', en: 'I don\'t believe her' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué estaba enfadado el hermano?',
+      options: ['Por el ordenador', 'Por la comida', 'Por el colegio'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dice la madre?',
+      options: ['Que el hermano es difícil', 'Que el narrador era igual', 'Que los dos son iguales ahora'], answer: 1 },
+    { type: 'short', q: '¿Cuántos años tiene el hermano? (una palabra)', accept: ['ocho', '8'] },
+    { type: 'translate', line: 'Ayer estaba enfadado porque no quería prestarme el ordenador.', model: 'Yesterday he was angry because he did not want to lend me the computer.' }
+  ]
+},
+
+{
+  id: 'a2-alim-bocadillo', title: 'El bocadillo de las once', level: 2, theme: 'alimentacion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'En mi oficina todos bajamos al bar a las once. Yo tomo un bocadillo de tomate y queso y un café con leche. Ana toma una infusión, un zumo de fruta y a veces un té, porque no toma café. Pedro pide siempre lo mismo: un sándwich de pollo, agua y una manzana. Ayer probé la hamburguesa y no me gustó nada. El pan estaba duro y la lechuga, vieja. Hoy he vuelto al bocadillo de siempre y he pedido también una botella de agua.',
+  gloss: [ { es: 'bajamos', en: 'we go down' },
+           { es: 'probé', en: 'I tried' },
+           { es: 'duro', en: 'hard, stale' },
+           { es: 'no me gustó', en: 'I didn\'t like it' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué toma Ana?',
+      options: ['Café con leche', 'Una infusión y un zumo', 'Un sándwich'], answer: 1 },
+    { type: 'mcq', q: '¿Qué pasó ayer?',
+      options: ['Probó la hamburguesa y no le gustó', 'No bajó al bar', 'Comió con Pedro'], answer: 0 },
+    { type: 'short', q: '¿A qué hora bajan al bar? (dos palabras)', accept: ['las once', 'a las once', 'once'] },
+    { type: 'translate', line: 'Ayer probé la hamburguesa y no me gustó nada.', model: 'Yesterday I tried the burger and I did not like it at all.' }
+  ]
+},
+
+{
+  id: 'a2-alim-cena', title: 'Una cena sin carne', level: 2, theme: 'alimentacion',
+  tenses: ['presente', 'preterito'],
+  text: 'Mi hermana es vegetariana desde marzo. El domingo vino a cenar y preparé lechuga, tomate, zanahoria, huevos, queso y pan. No puse ni pescado ni pollo. Ella trajo una botella de vino, una lata de aceitunas y un plátano para cada uno. Puse la sal en la mesa y nadie la tocó. Comimos mucho y bien, y después tomamos un café. Mi padre, que come carne todos los días, repitió dos veces y no dijo nada. Mi madre preguntó por la receta.',
+  gloss: [ { es: 'preparé', en: 'I made' },
+           { es: 'trajo', en: 'she brought' },
+           { es: 'las aceitunas', en: 'olives' },
+           { es: 'repitió', en: 'he had seconds' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué trajo la hermana?',
+      options: ['Pan y huevos', 'Vino y aceitunas', 'Pescado'], answer: 1 },
+    { type: 'mcq', q: '¿Qué hizo el padre?',
+      options: ['Repitió sin decir nada', 'Se quejó', 'No comió'], answer: 0 },
+    { type: 'short', q: '¿Desde qué mes es vegetariana? (una palabra)', accept: ['marzo', 'desde marzo'] },
+    { type: 'translate', line: 'El domingo vino a cenar', model: 'On Sunday she came for dinner' }
+  ]
+},
+
+{
+  id: 'a2-alim-mercado', title: 'La lista de la compra', level: 2, theme: 'alimentacion',
+  tenses: ['presente', 'perfecto'],
+  text: 'Esta mañana he ido al mercado con una lista corta: pan, leche, fruta, huevos y la sal. He vuelto con dos manzanas, un plátano, medio pollo, medio kilo de pescado, una botella de agua, una lata de tomate y un bote de café. La sal se me ha olvidado otra vez. Es la tercera semana. Mi mujer ya no me pregunta: mira la bolsa, saca el queso y el pan y se va a la cocina sin decir nada.',
+  gloss: [ { es: 'medio kilo', en: 'half a kilo' },
+           { es: 'un bote', en: 'a jar, a tin' },
+           { es: 'se me ha olvidado', en: 'I forgot it' },
+           { es: 'la bolsa', en: 'bag' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué ha olvidado?',
+      options: ['El pan', 'La sal', 'La leche'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué ya no le pregunta su mujer?',
+      options: ['Porque siempre olvida lo mismo', 'Porque no le importa', 'Porque compra ella'], answer: 0 },
+    { type: 'short', q: '¿Cuántas manzanas ha comprado? (una palabra)', accept: ['dos', '2'] },
+    { type: 'translate', line: 'Esta mañana he ido al mercado con una lista corta', model: 'This morning I went to the market with a short list' }
+  ]
+},
+
+{
+  id: 'a2-alim-restaurante', title: 'Tengo sed', level: 2, theme: 'alimentacion',
+  tenses: ['presente', 'preterito'],
+  text: '—¿Qué van a tomar? —Yo, agua. Tengo sed. —Para mí, una cerveza y luego un café. —¿Y de comer? —Yo tengo hambre: un bocadillo de queso, una ensalada de lechuga y tomate y un huevo. —Yo no tengo hambre. Solo un té con una manzana. —¿Pan para los dos? —Sí, y una botella de agua grande. —Muy bien. ¿Y de postre? —Después vemos. El camarero se fue y volvió con todo en tres minutos.',
+  gloss: [ { es: '¿Qué van a tomar?', en: 'What would you like?' },
+           { es: 'de postre', en: 'for dessert' },
+           { es: 'después vemos', en: 'we\'ll see later' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién tiene hambre?',
+      options: ['La persona del agua', 'La persona de la cerveza', 'Nadie'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pide la segunda persona de comer?',
+      options: ['Un bocadillo', 'Solo un té y una manzana', 'Una ensalada'], answer: 1 },
+    { type: 'short', q: '¿Cuánto tardó el camarero? (dos palabras)', accept: ['tres minutos', '3 minutos', 'tres'] },
+    { type: 'translate', line: 'Yo, agua. Tengo sed.', model: 'Water for me. I am thirsty.' }
+  ]
+},
+
+{
+  id: 'a2-ocio-sabado', title: 'Un sábado normal', level: 2, theme: 'ocio',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El sábado pasado fuimos al parque por la mañana y jugamos con la pelota. Mi hermano quería practicar un deporte de verdad y montó en bicicleta una hora. Después de comer vimos una película en casa. Por la tarde fuimos a un café y luego al cine, pero las entradas estaban agotadas. Al final fuimos a un bar y hablamos de la piscina nueva: mi padre quiere natación y mi madre, gimnasio. En casa terminamos con un juego de mesa. Mi hermana quería ir a una discoteca y nadie quiso. Un sábado normal, en el tiempo libre de todos.',
+  gloss: [ { es: 'agotadas', en: 'sold out' },
+           { es: 'al final', en: 'in the end' },
+           { es: 'nadie quiso', en: 'nobody wanted to' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué no fueron al cine?',
+      options: ['No había entradas', 'Era tarde', 'No les gustaba la película'], answer: 0 },
+    { type: 'mcq', q: '¿Qué quería la hermana?',
+      options: ['Ir al parque', 'Ir a una discoteca', 'Volver a casa'], answer: 1 },
+    { type: 'short', q: '¿Con qué jugaron en el parque? (dos palabras)', accept: ['la pelota', 'pelota'] },
+    { type: 'translate', line: 'El sábado pasado fuimos al parque por la mañana', model: 'Last Saturday we went to the park in the morning' }
+  ]
+},
+
+{
+  id: 'a2-ocio-aficion', title: 'Mi afición nueva', level: 2, theme: 'ocio',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Desde enero practico un deporte nuevo: la natación. Voy a la piscina tres días por semana, después del trabajo, y el sábado juego al tenis con un compañero. Antes mi único hobby era leer el periódico y leer una revista en el sofá. Mi mujer monta en bicicleta los domingos y este mes hemos hecho senderismo dos veces. La semana pasada fuimos al gimnasio juntos y no me gustó. Tengo cuarenta y siete años, poco tiempo libre y nunca he estado mejor.',
+  gloss: [ { es: 'desde enero', en: 'since January' },
+           { es: 'único', en: 'only' },
+           { es: 'juntos', en: 'together' },
+           { es: 'nunca he estado mejor', en: 'I\'ve never been better' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál era su hobby antes?',
+      options: ['La natación', 'Leer el periódico', 'La bicicleta'], answer: 1 },
+    { type: 'mcq', q: '¿Qué hace su mujer los domingos?',
+      options: ['Monta en bicicleta', 'Nada', 'Lee'], answer: 0 },
+    { type: 'short', q: '¿Cuántos días por semana va a la piscina? (una palabra)', accept: ['tres', '3'] },
+    { type: 'translate', line: 'Desde enero practico un deporte nuevo', model: 'Since January I have been doing a new sport' }
+  ]
+},
+
+{
+  id: 'a2-ocio-concierto', title: 'Una invitación', level: 2, theme: 'ocio',
+  tenses: ['presente', 'preterito'],
+  text: '—Tengo dos entradas para un concierto el viernes. ¿Vienes? —¿Qué tipo de música? —Jazz. —No sé. Prefiero ir a un museo, ver una película o ir al teatro. —El mes pasado fuimos a una obra de teatro y te dormiste. —Trabajé doce horas ese día. —Ya. ¿Vienes o no? —Voy. Pero después vamos a un restaurante, no a un bar. Y el sábado te vienes al parque conmigo, que no tienes ninguna afición y no practicas ningún deporte. —Trato hecho.',
+  gloss: [ { es: 'te dormiste', en: 'you fell asleep' },
+           { es: 'Ya.', en: 'Right.' },
+           { es: 'te vienes', en: 'you\'re coming' },
+           { es: 'trato hecho', en: 'it\'s a deal' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué prefiere la segunda persona?',
+      options: ['El jazz', 'Un museo o el teatro', 'Quedarse en casa'], answer: 1 },
+    { type: 'mcq', q: '¿Qué pasó el mes pasado en el teatro?',
+      options: ['Se durmió', 'No fueron', 'Llegaron tarde'], answer: 0 },
+    { type: 'short', q: '¿Qué día es el concierto? (una palabra)', accept: ['viernes', 'el viernes'] },
+    { type: 'translate', line: 'Tengo dos entradas para un concierto el viernes.', model: 'I have two tickets for a concert on Friday.' }
+  ]
+},
+
+{
+  id: 'a2-ocio-turista', title: 'En la oficina de turismo', level: 2, theme: 'ocio',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Un turista entró en la oficina de turismo el lunes. Quería ir a un museo, ver el parque grande, ir al teatro y comer bien. La chica le dio un plano y le dijo que el museo cierra los lunes. Le habló de una obra de teatro y de un concierto del viernes. El turista fue al parque, vio a unos chicos con una pelota, comió en un bar del centro y compró una entrada para el martes. Por la noche vio una película en el hotel.',
+  gloss: [ { es: 'un plano', en: 'a street map' },
+           { es: 'le habló de', en: 'she told him about' },
+           { es: 'cierra', en: 'closes' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué no fue al museo?',
+      options: ['Porque cierra los lunes', 'Porque estaba lejos', 'Porque era caro'], answer: 0 },
+    { type: 'mcq', q: '¿Qué compró al final?',
+      options: ['Un plano', 'Una entrada para el martes', 'Una comida'], answer: 1 },
+    { type: 'short', q: '¿Qué le dio la chica? (dos palabras)', accept: ['un plano', 'plano'] },
+    { type: 'translate', line: 'Un turista entró en la oficina de turismo el lunes.', model: 'A tourist came into the tourist office on Monday.' }
   ]
 }
 ];

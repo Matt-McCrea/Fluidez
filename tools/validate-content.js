@@ -472,16 +472,20 @@ function checkProbes(l, tag) {
     });
     { const m = addressMix(p.text);
       ok(!m, `${tag}: mixes tú (${m ? m.tu.join(', ') : ''}) and vosotros (${m ? m.vos.join(', ') : ''}) address`); }
-    // level gate: every recognized verb form must be usable at this level
+    /* Level gate: every recognised verb form must be usable at this level.
+     *
+     * Read through SCAN.tenseAt rather than calling the engine directly, so
+     * this decision and the `tenses` field checked just below are made by the
+     * same code. They used to be made by two copies that agreed until one of
+     * them learned something — the accent rule in tools/lib/tense-scan.js —
+     * and then quietly disagreed about `este`. */
     const ptoks = E.tokenize(p.text);
     ptoks.forEach((tok, ti) => {
-      const analyses = E.analyzeToken(tok);
-      if (!analyses.length) return;
-      if (isNounHere(ptoks, ti)) return;      // "la vista" is the noun, not vestir
-
-      const minLevel = Math.min(...analyses.map(a => TENSE_LEVEL[a.tense] || 1));
-      ok(minLevel <= p.level, `${tag}: verb "${tok}" needs level ${minLevel} ` +
-        `(${analyses.map(a => a.tense).join('/')}) but passage is level ${p.level}`);
+      const tk = SCAN.tenseAt(ptoks, ti);
+      if (!tk) return;                        // not a verb here, or a noun homograph
+      const minLevel = TENSE_LEVEL[tk] || 1;
+      ok(minLevel <= p.level,
+         `${tag}: verb "${tok}" needs level ${minLevel} (${tk}) but passage is level ${p.level}`);
     });
     /* `tenses` is what js/session.js withholds a passage on, and it is
      * GENERATED (tools/tense-index.js) — so the only thing worth checking is

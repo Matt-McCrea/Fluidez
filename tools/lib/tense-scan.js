@@ -116,14 +116,14 @@ module.exports = function makeScanner(E, TENSE_LEVEL, SEED_ORDER) {
   /* The cheapest tense this token admits, or null if it is not a verb form
    * (or is a noun standing where a noun stands).
    *
-   * ACCENTS DECIDE. The engine matches a token to a paradigm ignoring accents
-   * and records on each analysis whether they actually agreed
-   * (`accentExact`). A token whose ONLY readings are inexact is not that verb:
-   * `este` is not `esté`, `seria` is not `sería`, `practica` — as it happens —
-   * is not `práctica`. Dropping those readings is safe because accents in this
-   * corpus are not optional: tools/lint-spanish.js fails the build on a
-   * dropped one, adjudicating against these same paradigms. So if the text
-   * says `este`, it has already been verified to mean `este`.
+   * ACCENTS DECIDE WHETHER IT IS A VERB. The engine matches a token to a
+   * paradigm ignoring accents and records on each analysis whether they
+   * actually agreed (`accentExact`). A token whose ONLY readings are inexact
+   * is not that verb: `este` is not `esté`, `seria` is not `sería`,
+   * `practica` is not `práctica`. Discarding those tokens is safe because
+   * accents in this corpus are not optional — tools/lint-spanish.js fails the
+   * build on a dropped one, adjudicating against these same paradigms — so if
+   * the text says `este`, it has already been verified to mean `este`.
    *
    * This is not a new idea, it is an existing one applied consistently —
    * js/engine.js already filters analyses this way for its function words.
@@ -134,10 +134,17 @@ module.exports = function makeScanner(E, TENSE_LEVEL, SEED_ORDER) {
    * added to NOUN_HOMOGRAPHS one collision at a time — práctica, público,
    * artículo, género, trámite — all of which are this same case. */
   function tenseAt(toks, i) {
-    let analyses = E.analyzeToken(toks[i]);
-    if (analyses.some(a => a.accentExact)) analyses = analyses.filter(a => a.accentExact);
-    else analyses = [];
+    const analyses = E.analyzeToken(toks[i]);
     if (!analyses.length) return null;
+    /* Applied ONLY to decide whether this is a verb at all, never to narrow
+     * which tense it is. A token with no exact reading is not a verb; a token
+     * that has one keeps every reading it admits, inexact ones included, so
+     * the generous minimum below is exactly as generous as it has always been.
+     * Narrowing here instead would quietly tighten the level gate — `entre`
+     * has an exact reading as entrar's subjunctive and an inexact one as
+     * `entré`, and dropping the second would make the preposition cost level
+     * 4 in every passage that has ever used it. */
+    if (!analyses.some(a => a.accentExact)) return null;
     if (isNounHere(toks, i)) return null;
     let best = null;
     analyses.forEach(a => {
