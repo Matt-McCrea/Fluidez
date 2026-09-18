@@ -6705,5 +6705,556 @@ window.PASSAGES = [
     { type: 'short', q: '¿Cómo se llama su hermano? (una palabra)', accept: ['Jon', 'jon'] },
     { type: 'translate', line: 'llevo toda la vida deletreando mi nombre por teléfono', model: 'I have spent my whole life spelling out my name on the phone' }
   ]
+},
+
+{
+  id: 'b1-alim-vegetariano', title: 'El primer domingo sin carne', level: 4, theme: 'alimentacion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj'],
+  text: 'Cuando Rubén anunció en la cena de Nochebuena que era vegetariano, su abuela lo interpretó como una crítica a cuarenta años de cocina. El domingo siguiente puso en la mesa el pollo de siempre, un pescado enorme y, en un plato pequeño y aparte, arroz con verduras. «Come lo que quieras», dijo, «pero que nadie diga que en esta casa se pasa hambre.» Rubén comió el arroz, repitió dos veces y alabó el queso. Con los meses la cosa se invirtió sin que nadie lo decidiera: ahora hay huevos rellenos, hay lentejas, y la carne ha quedado reducida a una fuente que casi siempre sobra. Su abuela sigue sin llamarlo por su nombre en la cocina: dice «el del arroz». El vino, eso sí, no se ha discutido nunca.',
+  gloss: [ { es: 'Nochebuena', en: 'Christmas Eve' },
+           { es: 'aparte', en: 'separately, to one side' },
+           { es: 'alabó', en: 'he praised' },
+           { es: 'se invirtió', en: 'reversed itself' },
+           { es: 'la fuente', en: 'serving dish' },
+           { es: 'sobra', en: 'is left over' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo entendió la abuela el anuncio de Rubén?',
+      options: ['Como un ataque a su forma de cocinar', 'Como una broma', 'Como un problema de salud'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ha pasado con el tiempo?',
+      options: ['Rubén ha vuelto a comer carne', 'La mesa de la familia ha cambiado poco a poco', 'La abuela dejó de cocinar'], answer: 1 },
+    { type: 'short', q: '¿Cómo llama la abuela a Rubén en la cocina? (tres palabras)', accept: ['el del arroz', 'del arroz'] },
+    { type: 'translate', line: 'Come lo que quieras', model: 'Eat whatever you like' }
+  ]
+},
+
+{
+  id: 'b1-alim-mercado-lunes', title: 'El mercado de los lunes', level: 4, theme: 'alimentacion',
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj', 'perfsubj'],
+  text: 'Los lunes el mercado está medio vacío y por eso mi madre va ese día. Compra la fruta en el primer puesto, siempre el mismo: manzanas si están duras, nada si no. Luego la verdura, el pan de la esquina y, en la pescadería, lo que haya quedado del sábado, que según ella es lo mejor y más barato. Nunca lleva lista. Cuando le pregunto por qué compra dos botellas de leche y una lata de tomate cada semana sin falta, me contesta que así no tiene que pensarlo. En casa el azúcar dura meses y el queso no llega al jueves. Yo he intentado hacer la compra por internet dos veces; las dos me llegó fruta perfecta, cara y sin sabor a nada, y volví al puesto del primer pasillo.',
+  gloss: [ { es: 'el puesto', en: 'market stall' },
+           { es: 'duras', en: 'firm, hard' },
+           { es: 'la pescadería', en: 'fishmonger' },
+           { es: 'sin falta', en: 'without fail' },
+           { es: 'el pasillo', en: 'aisle' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué va la madre los lunes?',
+      options: ['Porque hay menos gente', 'Porque es más barato ese día', 'Porque cierra el resto de la semana'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué compra siempre lo mismo?',
+      options: ['Porque no hay más variedad', 'Para no tener que decidir cada vez', 'Porque se lo pide su hija'], answer: 1 },
+    { type: 'short', q: '¿Qué compra en el primer puesto? (una palabra)', accept: ['la fruta', 'fruta'] },
+    { type: 'translate', line: 'Nunca lleva lista.', model: 'She never takes a list.' }
+  ]
+},
+
+{
+  id: 'b1-alim-sarten', title: 'La sartén de mi padre', level: 5, theme: 'alimentacion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'imperativo', 'plusc', 'condperf'],
+  text: 'Mi padre cocinaba mal y lo sabía. Su repertorio entero cabía en una sartén negra que no había fregado nunca con jabón: huevos fritos, arroz recalentado y, los domingos, una carne dura y sin sal que llegaba al plato antes que el tenedor. Aun así, cuando me fui de casa me la llevé. Le pregunté cómo se hacía la cena de los domingos y me dio tres instrucciones y ninguna cantidad. Para cuando entendí la primera ya habría estropeado kilo y medio de ternera. Ahora esa sartén es lo único de la cocina que no cambiaría, aunque tenga un cuchillo mejor y aunque el pan lo compre hecho. La uso para el desayuno casi todos los días. No cocino mucho mejor que él, pero por lo menos ya sé de quién he heredado el defecto.',
+  gloss: [ { es: 'fregado', en: 'scrubbed, washed up' },
+           { es: 'recalentado', en: 'reheated' },
+           { es: 'aun así', en: 'even so' },
+           { es: 'la ternera', en: 'beef, veal' },
+           { es: 'he heredado', en: 'I have inherited' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué valor tiene la sartén para el narrador?',
+      options: ['Práctico: cocina mejor que las nuevas', 'Sentimental: lo une a su padre', 'Ninguno, la quiere tirar'], answer: 1 },
+    { type: 'mcq', q: '¿Qué tono usa el narrador al hablar de su padre?',
+      options: ['Cariñoso y algo burlón', 'Resentido', 'Indiferente'], answer: 0 },
+    { type: 'short', q: '¿Para qué comida usa ahora la sartén casi a diario? (una palabra)', accept: ['el desayuno', 'desayuno'] },
+    { type: 'translate', line: 'me dio tres instrucciones y ninguna cantidad', model: 'he gave me three instructions and not one quantity' }
+  ]
+},
+
+{
+  id: 'b1-alim-merienda', title: 'A las seis, merienda', level: 4, theme: 'alimentacion',
+  tenses: ['presente', 'preterito', 'imperfecto', 'presubj'],
+  text: 'Lo que más le costó a Karin al mudarse a Valencia no fue el horario de la cena, sino la merienda. A las seis de la tarde toda la oficina bajaba a por un café, una infusión o un zumo, y ella, que en su país come a las siete y se acuesta pronto, no entendía para qué servía aquello. Tardó un año en verlo: la merienda no es una comida, es una excusa. Allí se decide quién hace qué y quién está enfadado con quién. Ahora baja siempre, aunque pida un té y no tenga hambre. Los viernes la cosa se alarga y aparece una botella de cerveza, o de cava si alguien cumple años; el vino se queda para la cena, que sigue siendo a las diez y le sigue pareciendo tardísimo.',
+  gloss: [ { es: 'le costó', en: 'was hard for her' },
+           { es: 'a por', en: 'to fetch' },
+           { es: 'se alarga', en: 'goes on longer' },
+           { es: 'cumple años', en: 'has a birthday' },
+           { es: 'tardísimo', en: 'terribly late' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué descubrió Karin sobre la merienda?',
+      options: ['Que es la comida principal', 'Que su función es social, no alimentaria', 'Que es obligatoria en su empresa'], answer: 1 },
+    { type: 'mcq', q: '¿Qué sigue sin gustarle?',
+      options: ['La hora de la cena', 'El café español', 'Sus compañeros'], answer: 0 },
+    { type: 'short', q: '¿Qué aparece los viernes? (dos palabras, con artículo)', accept: ['una botella', 'una cerveza', 'la cerveza'] },
+    { type: 'translate', line: 'la merienda no es una comida, es una excusa', model: 'the afternoon snack is not a meal, it is an excuse' }
+  ]
+},
+
+{
+  id: 'b1-edu-nota', title: 'La nota que no explicaba nada', level: 4, theme: 'educacion',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'impsubj'],
+  text: 'El examen de junio le salió mal y la nota llegó sin comentarios: un número y nada más. Lucía se pasó el verano convencida de que no servía para la universidad. En septiembre fue a la biblioteca de la facultad, sacó el cuaderno del curso y repasó el programa lección por lección, marcando con lápiz lo que de verdad no entendía. Eran cuatro páginas, no doscientas. Su compañera de clase le enseñó a hacer los ejercicios en voz alta, como si se los explicara a otro. Lo que la hundió no fue cometer errores, sino no saber cuáles. Aprobó en enero. Desde entonces, cuando alguien le pregunta cómo le fue, contesta que no fue cuestión de estudiar más horas, sino de que alguien le dijera dónde estaba el problema.',
+  gloss: [ { es: 'le salió mal', en: 'went badly for her' },
+           { es: 'la facultad', en: 'university department' },
+           { es: 'repasó', en: 'she revised' },
+           { es: 'la hundió', en: 'crushed her' },
+           { es: 'aprobó', en: 'she passed' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál era el problema real, según el texto?',
+      options: ['Que estudiaba pocas horas', 'Que la nota no le decía qué había fallado', 'Que el programa era demasiado largo'], answer: 1 },
+    { type: 'mcq', q: '¿Qué técnica le enseñó su compañera?',
+      options: ['Explicar los ejercicios en voz alta', 'Memorizar el libro entero', 'Estudiar de noche'], answer: 0 },
+    { type: 'short', q: '¿Cuántas páginas no entendía de verdad? (una palabra)', accept: ['cuatro', 'cuatro páginas'] },
+    { type: 'translate', line: 'Lo que la hundió no fue cometer errores, sino no saber cuáles.', model: 'What crushed her was not making mistakes, but not knowing which ones.' }
+  ]
+},
+
+{
+  id: 'b1-edu-academia', title: 'La academia de los martes', level: 4, theme: 'educacion',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj'],
+  text: 'La academia ocupa un piso encima de una farmacia y el aula grande tiene ocho sillas. Me matriculé en octubre pensando que un curso de contabilidad me abriría puertas; pagué la matrícula de golpe para no poder arrepentirme. El director da él mismo las clases de los martes y no usa internet para nada: fotocopias y pizarra. Trabajamos en parejas media hora y en grupos la otra media, y las actividades son siempre sobre facturas de verdad. Al final te dan un diploma que, según nos advirtió el primer día, no vale como certificado oficial en ninguna parte. Aun así el aula sigue llena en marzo, cosa que no pasaba en la universidad. Quien enseña ahí sabe exactamente para qué sirve lo que está explicando.',
+  gloss: [ { es: 'la contabilidad', en: 'accountancy' },
+           { es: 'de golpe', en: 'in one go' },
+           { es: 'arrepentirme', en: 'to change my mind, regret it' },
+           { es: 'las fotocopias', en: 'photocopies' },
+           { es: 'nos advirtió', en: 'he warned us' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué pagó la matrícula de una vez?',
+      options: ['Para obtener un descuento', 'Para obligarse a terminar el curso', 'Porque era obligatorio'], answer: 1 },
+    { type: 'mcq', q: '¿Qué explica que el aula siga llena en marzo?',
+      options: ['Que el diploma tiene valor oficial', 'Que lo que se enseña se aplica a casos reales', 'Que las clases son gratuitas'], answer: 1 },
+    { type: 'short', q: '¿Qué día da clase el director? (una palabra)', accept: ['martes', 'los martes', 'el martes'] },
+    { type: 'translate', line: 'no vale como certificado oficial en ninguna parte', model: 'it does not count as an official certificate anywhere' }
+  ]
+},
+
+{
+  id: 'b1-edu-mochila', title: 'La mochila de septiembre', level: 4, theme: 'educacion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  text: 'Cada septiembre se repite la misma escena en esta casa. Compramos la mochila nueva, dos cuadernos, una goma, una regla y un lápiz que desaparecerá antes de noviembre, y mi hija los coloca en el escritorio como si fueran instrumentos quirúrgicos. Dura una semana. Para octubre el bolígrafo está sin capucha, la regla se ha partido y nadie sabe dónde está el segundo cuaderno. Lo que sí dura es otra cosa. Este año volvió de ir a clase el primer día contando que la profesora había escrito una pregunta en la pizarra y había dejado que los alumnos discutieran la respuesta veinte minutos antes de decir nada. No ha vuelto a mencionar el material escolar. De la escuela habla todos los días.',
+  gloss: [ { es: 'quirúrgicos', en: 'surgical' },
+           { es: 'la capucha', en: 'cap, lid' },
+           { es: 'se ha partido', en: 'has snapped' },
+           { es: 'el material escolar', en: 'school supplies' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué contrasta el texto?',
+      options: ['Lo caro y lo barato del curso', 'El material, que dura poco, y la clase, que la marca', 'Dos escuelas distintas'], answer: 1 },
+    { type: 'mcq', q: '¿Qué hizo la profesora el primer día?',
+      options: ['Dejó que los alumnos discutieran antes de dar la respuesta', 'Repartió los libros', 'Puso un examen'], answer: 0 },
+    { type: 'short', q: '¿Qué se ha partido para octubre? (una palabra, con artículo)', accept: ['la regla', 'regla'] },
+    { type: 'translate', line: 'De la escuela habla todos los días.', model: 'She talks about school every day.' }
+  ]
+},
+
+{
+  id: 'b1-viv-compartir', title: 'Cuatro llaves, un pasillo', level: 4, theme: 'vivienda',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional'],
+  text: 'Compartir piso a los treinta y cuatro no estaba en mis planes. El apartamento tiene tres dormitorios, un baño que no da abasto y un pasillo largo donde se oye todo. El propietario lo alquiló amueblado, lo cual significa que la mesa cojea y que en la sala de estar hay un sofá que nadie elegiría. Nos repartimos la cocina por horas sin haberlo hablado nunca: es un acuerdo que existe y que no se ha escrito. La terraza es lo que salva la casa; en abril cenamos allí casi todas las noches. Lo peor no es el ruido ni el ascensor estropeado, sino no poder volver y encontrarte la casa como la dejaste. Lo mejor es que, cuando llego tarde, hay luz encendida.',
+  gloss: [ { es: 'no da abasto', en: 'can\'t cope with the demand' },
+           { es: 'cojea', en: 'wobbles' },
+           { es: 'nos repartimos', en: 'we divide up between us' },
+           { es: 'estropeado', en: 'broken down' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo se organizan la cocina?',
+      options: ['Con un horario escrito en la pared', 'Por costumbre, sin haberlo acordado', 'No se organizan'], answer: 1 },
+    { type: 'mcq', q: '¿Qué es lo que peor lleva el narrador?',
+      options: ['El ruido del pasillo', 'La falta de un espacio suyo', 'El precio del alquiler'], answer: 1 },
+    { type: 'short', q: '¿Qué parte de la casa salva el piso? (una palabra, con artículo)', accept: ['la terraza', 'terraza'] },
+    { type: 'translate', line: 'cuando llego tarde, hay luz encendida', model: 'when I get home late, there is a light on' }
+  ]
+},
+
+{
+  id: 'b1-viv-mudanza', title: 'Cambiarse de casa a los sesenta', level: 4, theme: 'vivienda',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'plusc'],
+  text: 'Mis padres se cambiaron de casa el año pasado, después de treinta y un años en el mismo piso. Dejaron un tercero sin ascensor por un chalé pequeño en las afueras, con jardín, garaje y un suelo que no cruje. Yo pensaba que echarían de menos el vecindario; ellos pensaban que echarían de menos la calle. Lo que echan de menos, resulta, es el techo alto del dormitorio viejo. Mi madre ha puesto la misma mesa y las mismas sillas en la sala de estar, y desde la puerta la escena es casi idéntica. Mi padre, que nunca había tenido jardín, sale a mirarlo por la mañana como quien vigila una obra. Ninguno de los dos ha dicho todavía si ha merecido la pena.',
+  gloss: [ { es: 'un tercero', en: 'a third-floor flat' },
+           { es: 'las afueras', en: 'the outskirts' },
+           { es: 'cruje', en: 'creaks' },
+           { es: 'echarían de menos', en: 'they would miss' },
+           { es: 'ha merecido la pena', en: 'it has been worth it' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué echan de menos en realidad?',
+      options: ['El vecindario', 'La calle', 'El techo alto del dormitorio antiguo'], answer: 2 },
+    { type: 'mcq', q: '¿Qué sugiere que la mudanza no está del todo resuelta?',
+      options: ['Que ninguno dice si ha valido la pena', 'Que quieren volver', 'Que han vendido los muebles'], answer: 0 },
+    { type: 'short', q: '¿Cuántos años vivieron en el piso? (dos palabras)', accept: ['treinta y un', 'treinta y uno', '31'] },
+    { type: 'translate', line: 'sale a mirarlo por la mañana como quien vigila una obra', model: 'he goes out to look at it in the morning like someone keeping an eye on building work' }
+  ]
+},
+
+{
+  id: 'b1-viv-gotera', title: 'La gotera del quinto', level: 4, theme: 'vivienda',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'plusc'],
+  text: 'La mancha apareció en el techo del baño en noviembre y creció despacio, con una paciencia que daba rabia. El propietario dijo por teléfono que seguramente no era nada y que ya mandaría a alguien. En enero el suelo del pasillo estaba mojado cada mañana y el agua había llegado a la cocina. Los vecinos del quinto no abrían la puerta. Cuando por fin subió el fontanero, tardó veinte minutos en encontrar el tubo roto y cuatro semanas en volver a taparlo. Lo que más me sorprendió de aquellos meses no fue la humedad, ni la escalera llena de cubos, sino descubrir que en un edificio de veinte pisos nadie tenía el teléfono de nadie. Ahora el vecindario tiene un grupo y un cuaderno con las llaves de quien se va de viaje.',
+  gloss: [ { es: 'la gotera', en: 'leak (from above)' },
+           { es: 'la mancha', en: 'stain, patch' },
+           { es: 'daba rabia', en: 'was infuriating' },
+           { es: 'el fontanero', en: 'plumber' },
+           { es: 'los cubos', en: 'buckets' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué descubrió el narrador durante la avería?',
+      options: ['Que el edificio era muy antiguo', 'Que los vecinos no se conocían entre ellos', 'Que el propietario vivía allí'], answer: 1 },
+    { type: 'mcq', q: '¿Qué contraste señala sobre el fontanero?',
+      options: ['Encontró la avería rápido y tardó semanas en arreglarla', 'No supo encontrarla', 'Cobró demasiado'], answer: 0 },
+    { type: 'short', q: '¿En qué mes apareció la mancha? (una palabra)', accept: ['noviembre', 'en noviembre'] },
+    { type: 'translate', line: 'nadie tenía el teléfono de nadie', model: 'nobody had anybody else’s phone number' }
+  ]
+},
+
+{
+  id: 'b1-serv-urgencias', title: 'Seis horas en urgencias', level: 4, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'presubj'],
+  text: 'Llamamos al teléfono de emergencias a las once y la ambulancia llegó en doce minutos, cosa que nadie esperaba un sábado. En la clínica nos pidieron el documento de identidad y la tarjeta sanitaria y nos dijeron que había que ir a urgencias del hospital grande, así que volvimos a esperar. Una enfermera nos explicó el sistema con una franqueza que se agradecía: quien llega peor, pasa antes, y mi padre, por suerte, no llegaba tan mal. Estar en urgencias un sábado por la noche se parece bastante a estar en una comisaría: nadie te explica nada y todo el mundo espera. Estuvimos seis horas. En ese tiempo vi entrar a un bombero con la mano quemada y a una mujer que pedía socorro en un idioma que nadie identificaba. Nos fuimos a las cinco de la mañana con tres pastillas y la sensación rara de haber tenido suerte.',
+  gloss: [ { es: 'la franqueza', en: 'frankness' },
+           { es: 'se agradecía', en: 'was appreciated' },
+           { es: 'quemada', en: 'burned' },
+           { es: 'las pastillas', en: 'pills' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué esperaron tanto?',
+      options: ['Porque no había médicos', 'Porque se atiende primero a quien está peor', 'Porque llegaron sin cita'], answer: 1 },
+    { type: 'mcq', q: '¿Con qué sensación se van?',
+      options: ['De haber tenido suerte, pese a la espera', 'De enfado con el personal', 'De miedo'], answer: 0 },
+    { type: 'short', q: '¿Cuánto tardó la ambulancia? (dos palabras)', accept: ['doce minutos', '12 minutos', 'doce'] },
+    { type: 'translate', line: 'quien llega peor, pasa antes', model: 'whoever arrives in a worse state goes in first' }
+  ]
+},
+
+{
+  id: 'b1-serv-correos', title: 'El último cartero del pueblo', level: 4, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
+  text: 'Don Emilio fue cartero cuarenta y un años y se jubiló en marzo. En el pueblo no hay oficina de correos desde 2011, de modo que ir a correos significa coger el autobús hasta la capital y volver con el día perdido. Él lo resolvía a su manera: si alguien le daba una carta por la mañana, él la llevaba. No era su obligación y lo hizo durante una década. Ahora viene un mensajero de una empresa privada tres veces por semana y deja los paquetes en el bar. Las postales, que siguen llegando en agosto, tardan lo que tardan. Un empleado de correos de la capital le mandó una tarjeta cuando se jubiló, con un billete de cinco euros dentro para el primer café; en el sobre, en lugar de la dirección, habían escrito solo su nombre y el del pueblo. Llegó igual.',
+  gloss: [ { es: 'se jubiló', en: 'he retired' },
+           { es: 'a su manera', en: 'in his own way' },
+           { es: 'una década', en: 'a decade' },
+           { es: 'el sobre', en: 'envelope' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué hacía Don Emilio que no era su obligación?',
+      options: ['Abrir la oficina los domingos', 'Llevar él mismo las cartas a la capital', 'Repartir paquetes privados'], answer: 1 },
+    { type: 'mcq', q: '¿Qué demuestra la anécdota del sobre final?',
+      options: ['Que el correo funciona mal', 'Que en el pueblo todo el mundo lo conocía', 'Que se equivocaron de dirección'], answer: 1 },
+    { type: 'short', q: '¿Dónde deja los paquetes el mensajero? (dos palabras)', accept: ['en el bar', 'el bar', 'bar'] },
+    { type: 'translate', line: 'Las postales, que siguen llegando en agosto, tardan lo que tardan.', model: 'The postcards, which still arrive in August, take as long as they take.' }
+  ]
+},
+
+{
+  id: 'b1-serv-voluntaria', title: 'Dos tardes a la semana', level: 4, theme: 'servicios',
+  tenses: ['presente', 'perfecto', 'imperfecto'],
+  text: 'Elena colabora como voluntaria en una ONG del barrio desde que se quedó sin trabajo, y ha seguido después de encontrarlo. Dos tardes a la semana acompaña a gente mayor a los servicios sociales y les ayuda con los papeles: el documento de identidad, la nacionalidad, el permiso de residencia de un hijo, la tarjeta del banco bloqueada, una solicitud de ayuda económica que nadie sabe rellenar. Dice que la colaboración funciona porque no promete nada: ella no decide, solo traduce el idioma de la ventanilla. Un psicólogo pasa los jueves. Al principio Elena creía que lo importante era conseguir la ayuda; ahora piensa que la mitad de la gente vuelve por tener una hora fija en la semana en la que alguien espera verla.',
+  gloss: [ { es: 'una ONG', en: 'an NGO, charity' },
+           { es: 'acompaña', en: 'she goes with' },
+           { es: 'la solicitud', en: 'application form' },
+           { es: 'rellenar', en: 'to fill in' },
+           { es: 'la ventanilla', en: 'service counter' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo describe Elena su papel?',
+      options: ['Decide qué ayudas se conceden', 'Traduce el lenguaje administrativo', 'Sustituye a los servicios sociales'], answer: 1 },
+    { type: 'mcq', q: '¿Qué ha cambiado en su forma de ver el trabajo?',
+      options: ['Ahora valora más la compañía que el resultado', 'Ahora le parece inútil', 'Ahora cobra por hacerlo'], answer: 0 },
+    { type: 'short', q: '¿Qué día pasa el psicólogo? (una palabra)', accept: ['jueves', 'los jueves', 'el jueves'] },
+    { type: 'translate', line: 'ella no decide, solo traduce el idioma de la ventanilla', model: 'she does not decide, she only translates the language of the service counter' }
+  ]
+},
+
+{
+  id: 'b1-viajes-carretera', title: 'Ochocientos kilómetros en agosto', level: 4, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj', 'plusc'],
+  text: 'El coche salió del aparcamiento a las cinco de la mañana con dos niños dormidos y un mapa de papel que mi padre no llegó a abrir. Tenía el carné de conducir desde los dieciocho y la carretera de agosto desde siempre. El plan era llegar al puerto a mediodía y coger un barco a las tres; el plan duró hasta la primera parada. Hicimos las maletas la noche anterior, pero nadie había mirado la rueda de repuesto, y a las nueve estábamos en el arcén mirándola los cuatro. Vino un conductor que paraba por costumbre y nos ayudó sin que se lo pidiéramos. Perdimos el barco y dormimos en una pensión con media pensión incluida. Mi hermano todavía lo cuenta como el mejor verano.',
+  gloss: [ { es: 'el arcén', en: 'hard shoulder' },
+           { es: 'la rueda de repuesto', en: 'spare tyre' },
+           { es: 'por costumbre', en: 'out of habit' },
+           { es: 'media pensión', en: 'half board' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué falló en el viaje?',
+      options: ['No comprobaron la rueda de repuesto', 'El coche no arrancó', 'Perdieron el mapa'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué lo recuerda bien el hermano?',
+      options: ['Porque llegaron a tiempo', 'Porque lo que salió mal es lo que quedó', 'Porque nunca más viajaron'], answer: 1 },
+    { type: 'short', q: '¿A qué hora salió el coche? (dos palabras)', accept: ['las cinco', 'a las cinco', 'cinco'] },
+    { type: 'translate', line: 'el plan duró hasta la primera parada', model: 'the plan lasted until the first stop' }
+  ]
+},
+
+{
+  id: 'b1-viajes-guia', title: 'La guía turística que no lee nadie', level: 4, theme: 'viajes',
+  tenses: ['presente', 'perfecto', 'imperfecto'],
+  text: 'Nuria sacó el título de guía turístico hace once años y trabaja en Granada. Dice que su oficio ha cambiado más en diez años que en los cincuenta anteriores. Antes la gente llegaba en autobús con un plano doblado y un mapa de la región comprado en el hotel, y preguntaba dónde estaba todo; ahora llegan en taxi desde el aeropuerto con el metro estudiado, la excursión reservada y una lista de fotos pendientes. Hacer una reserva lleva cuarenta segundos y comprar un billete de avión, menos. Lo que no ha cambiado, cuenta ella, es lo que la gente pregunta cuando se cansa: dónde se come bien y si merece la pena subir andando. Ha dejado de repetir fechas. Ahora empieza cada excursión contando quién vivía en esa calle en 1930, y dice que desde entonces la gente levanta la vista del teléfono.',
+  gloss: [ { es: 'doblado', en: 'folded' },
+           { es: 'pendientes', en: 'outstanding, still to do' },
+           { es: 'merece la pena', en: 'is it worth it' },
+           { es: 'levanta la vista', en: 'looks up' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué ha cambiado en el turismo, según Nuria?',
+      options: ['Los turistas llegan con todo organizado', 'Viene menos gente', 'Los guías cobran más'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hace ella ahora para captar la atención?',
+      options: ['Repetir fechas y datos', 'Contar quién vivía en el sitio', 'Enseñar fotos antiguas'], answer: 1 },
+    { type: 'short', q: '¿En qué ciudad trabaja? (una palabra)', accept: ['Granada', 'granada', 'en Granada'] },
+    { type: 'translate', line: 'lo que la gente pregunta cuando se cansa', model: 'what people ask when they get tired' }
+  ]
+},
+
+{
+  id: 'b1-viajes-avion', title: 'Viajar en avión con miedo', level: 4, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'A Sofía nunca le ha gustado viajar en avión y aun así lo hace ocho veces al año. Tiene un método: hace las maletas dos días antes, coge un taxi cuya parada conoce de memoria, llega tres horas antes y habla con quien se ponga a su lado. Una azafata le explicó una vez que los ruidos que más la asustaban eran justo los normales, y desde entonces los cuenta como quien cuenta ovejas. El piloto anunció turbulencias el mes pasado y ella fue la única de la fila que no levantó la vista. Sigue prefiriendo el tren, que no exige nada: se compra el billete, se sube y ya está; ni carretera, ni conductor, ni mapa. Pero su familia vive a dos mil kilómetros y un ciclista tampoco cruza el mar, dice, así que se sube y respira.',
+  gloss: [ { es: 'la puerta de embarque', en: 'boarding gate' },
+           { es: 'la azafata', en: 'flight attendant' },
+           { es: 'las turbulencias', en: 'turbulence' },
+           { es: 'la fila', en: 'row' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le enseñó la azafata?',
+      options: ['Que los ruidos que la asustaban eran normales', 'Que debía sentarse delante', 'Que el avión es más rápido'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué sigue volando?',
+      options: ['Porque ya no tiene miedo', 'Porque no hay otra forma de ver a su familia', 'Porque le gusta el aeropuerto'], answer: 1 },
+    { type: 'short', q: '¿Cuántas veces al año vuela? (una palabra)', accept: ['ocho', 'ocho veces'] },
+    { type: 'translate', line: 'se compra el billete, se sube y ya está', model: 'you buy the ticket, you get on and that is that' }
+  ]
+},
+
+{
+  id: 'b1-cuerpo-manos', title: 'Las manos de mi abuelo', level: 4, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Mi abuelo tenía las manos más grandes que he visto y ninguna foto suya en la que aparezcan quietas. Trabajó cuarenta años de carpintero, y los dedos, la muñeca y el codo derecho le contaban esa historia mejor que él: tenía la piel de las palmas dura como una suela y el meñique torcido desde un accidente del que nunca dio detalles. De joven fue muy fuerte de espalda y de hombros; de viejo se le quedó el cuello hundido y andaba mirando al suelo. Lo que no perdió nunca fue la mirada. A los ochenta y seis seguía enhebrando una aguja al primer intento, con los ojos que tenía, mientras yo, a los treinta, necesitaba acercarme a la ventana.',
+  gloss: [ { es: 'quietas', en: 'still' },
+           { es: 'la suela', en: 'shoe sole' },
+           { es: 'el meñique', en: 'little finger' },
+           { es: 'torcido', en: 'bent, crooked' },
+           { es: 'enhebrando una aguja', en: 'threading a needle' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué contaban las manos del abuelo?',
+      options: ['Su carácter', 'Su oficio y sus años de trabajo', 'Su origen'], answer: 1 },
+    { type: 'mcq', q: '¿Qué contraste cierra el texto?',
+      options: ['La vista del abuelo mayor frente a la del nieto joven', 'La fuerza de los dos', 'El carácter de los dos'], answer: 0 },
+    { type: 'short', q: '¿De qué trabajó cuarenta años? (una palabra)', accept: ['carpintero', 'de carpintero'] },
+    { type: 'translate', line: 'Lo que no perdió nunca fue la mirada.', model: 'What he never lost was his eyesight.' }
+  ]
+},
+
+{
+  id: 'b1-cuerpo-garganta', title: 'Tres semanas sin voz', level: 5, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj', 'plusc', 'futperf'],
+  text: 'Di clase con la garganta irritada durante dos semanas antes de hacerle caso a nadie. Pensaba que era el estómago, o el oído, o cualquier cosa menos lo evidente. Cuando por fin fui, la médica me miró la garganta, me tocó el cuello y me dijo que llevaba años usando el cuerpo entero para hablar: la barriga apretada, los hombros subidos, el pecho cerrado, la cabeza adelantada y las manos en la espalda. Me mandó callar catorce días. Para el viernes siguiente ya habré cumplido tres semanas sin voz y habré aprendido más sobre mi trabajo que en el curso de formación de septiembre. Se oye distinto desde ahí. Un alumno me escribió en un papel una pregunta que nunca había hecho en voz alta, y ahí entendí que el problema no estaba solo en la garganta.',
+  gloss: [ { es: 'hacerle caso a', en: 'to listen to, to pay attention to' },
+           { es: 'apretada', en: 'tensed, clenched' },
+           { es: 'me mandó callar', en: 'ordered me to keep quiet' },
+           { es: 'catorce', en: 'fourteen' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué diagnóstico le dio la médica?',
+      options: ['Una infección grave', 'Que hablaba forzando todo el cuerpo', 'Un problema de oído'], answer: 1 },
+    { type: 'mcq', q: '¿Qué descubre al quedarse en silencio?',
+      options: ['Que sus alumnos preguntan cosas que antes callaban', 'Que no le gusta su trabajo', 'Que nadie lo escuchaba'], answer: 0 },
+    { type: 'short', q: '¿Cuántos días le mandó callar la médica? (una palabra)', accept: ['catorce', 'catorce días', '14'] },
+    { type: 'translate', line: 'el problema no estaba solo en la garganta', model: 'the problem was not only in his throat' }
+  ]
+},
+
+{
+  id: 'b1-caracter-jefe', title: 'Un jefe tolerante', level: 4, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'plusc'],
+  text: 'En quince años he tenido seis jefes y solo uno me enseñó algo. No era el más inteligente ni el más trabajador; era, con diferencia, el más tolerante con el error ajeno. Cuando alguien metía la pata, preguntaba qué había pasado antes de preguntar quién lo había hecho, y esa diferencia de orden cambiaba la oficina entera. Los sinceros dejaban de tener miedo y los vagos se quedaban sin sitio donde esconderse, porque en una sala donde nadie miente el que no trabaja se ve enseguida. No era simpático: era serio, más bien reservado, y nunca supimos si era optimista o si simplemente le daba igual. El día que se fue, tres personas del equipo que se odiaban cordialmente descubrieron que solo se aguantaban por él.',
+  gloss: [ { es: 'con diferencia', en: 'by a long way' },
+           { es: 'ajeno', en: 'other people\'s' },
+           { es: 'metía la pata', en: 'messed up' },
+           { es: 'cordialmente', en: 'politely, in a civil way' },
+           { es: 'se aguantaban', en: 'they put up with each other' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué hacía distinto a ese jefe?',
+      options: ['Preguntaba qué había pasado antes que quién fue', 'No castigaba nunca', 'Era el más listo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué efecto tenía eso sobre los vagos?',
+      options: ['Los protegía', 'Los dejaba sin excusa, porque todo se sabía', 'No les afectaba'], answer: 1 },
+    { type: 'short', q: '¿Cuántos jefes ha tenido el narrador? (una palabra)', accept: ['seis', '6'] },
+    { type: 'translate', line: 'en una sala donde nadie miente el que no trabaja se ve enseguida', model: 'in a room where nobody lies, the one who is not working shows up straight away' }
+  ]
+},
+
+{
+  id: 'b1-caracter-timidez', title: 'La timidez no es frialdad', level: 4, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'impsubj'],
+  text: 'Durante años creí que ser tímido era un defecto que se corregía con esfuerzo, como la mala letra. Me apuntaron a teatro a los doce para que me hiciera sociable. No funcionó, y tardé en entender por qué: yo no era antipático ni reservado por decisión, simplemente tardaba más que los demás en soltarme. Un introvertido en una fiesta no está sufriendo necesariamente; está calculando. Lo que sí me hizo daño fue que todo el mundo llamara egoísta al silencio y generoso al ruido. Ahora, de adulto, sigo siendo el último en hablar en las reuniones, pero he dejado de disculparme por ello. Quien me conoce dice que soy agradable y bastante alegre; quien me ve diez minutos sigue diciendo que soy serio. Con los años he cambiado el ruido por una tranquilidad que no pienso justificar. Con eso he aprendido a vivir.',
+  gloss: [ { es: 'la mala letra', en: 'bad handwriting' },
+           { es: 'me apuntaron a', en: 'they signed me up for' },
+           { es: 'soltarme', en: 'to loosen up' },
+           { es: 'me hizo daño', en: 'hurt me' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué idea rechaza el narrador?',
+      options: ['Que la timidez sea un defecto que se corrige', 'Que el teatro sirva para algo', 'Que se pueda cambiar de carácter'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le hizo más daño?',
+      options: ['Las clases de teatro', 'Que se confundiera su silencio con egoísmo', 'Que nadie le hablara'], answer: 1 },
+    { type: 'short', q: '¿A qué lo apuntaron a los doce años? (una palabra)', accept: ['teatro', 'al teatro', 'a teatro'] },
+    { type: 'translate', line: 'he dejado de disculparme por ello', model: 'I have stopped apologising for it' }
+  ]
+},
+
+{
+  id: 'b1-ident-dos-pueblos', title: 'De dónde eres, exactamente', level: 4, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'perfecto', 'impsubj'],
+  text: 'A Samir le preguntan de dónde es tres o cuatro veces por semana y ha dejado de contestar lo mismo. En la plaza del pueblo dice el nombre de la calle. En Madrid dice el pueblo. Fuera de España dice «español», y entonces alguien pregunta por el apellido y la conversación empieza otra vez. Nació aquí, sus padres son marroquíes, y en los papeles todo está clarísimo: nombre, fecha de nacimiento, nacionalidad española, estado civil soltero, dirección con su código postal. La edad, treinta y uno. Ninguno de esos datos contesta la pregunta que le hacen de verdad. Lo dice sin queja, casi con humor: «Soy el único de mi edificio que tiene que explicar su segundo apellido en el gimnasio.»',
+  gloss: [ { es: 'clarísimo', en: 'perfectly clear' },
+           { es: 'los datos', en: 'the details, the data' },
+           { es: 'sin queja', en: 'without complaining' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué cambia Samir la respuesta según el sitio?',
+      options: ['Porque no recuerda el dato', 'Porque la pregunta significa algo distinto en cada sitio', 'Porque quiere esconder su origen'], answer: 1 },
+    { type: 'mcq', q: '¿Qué tono usa al final?',
+      options: ['Irónico y tranquilo', 'Muy enfadado', 'Triste'], answer: 0 },
+    { type: 'short', q: '¿Cuántos años tiene? (dos palabras)', accept: ['treinta y uno', 'treinta y un', '31'] },
+    { type: 'translate', line: 'Ninguno de esos datos contesta la pregunta que le hacen de verdad.', model: 'None of those details answers the question they are really asking him.' }
+  ]
+},
+
+{
+  id: 'b1-ident-apellidos', title: 'Dos apellidos y una firma', level: 4, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj'],
+  text: 'Cuando mi madre se casó en 1979 nadie le pidió que cambiara de nombre, cosa que a mis amigas extranjeras todavía les sorprende. En España los dos apellidos son suyos de por vida, y el primer apellido de cada hijo viene del padre solo porque así se ha hecho siempre. Desde 2017 los señores que inscriben a un bebé pueden elegir el orden. Mi hermana lo hizo: sus hijos llevan primero el apellido de ella. En la escuela nadie ha dicho nada; en el hospital, el segundo día, una señora del mostrador preguntó dos veces si estaba segura. Cuando mi sobrino tenga que escribir su nombre completo en un formulario, con la dirección y el número de teléfono, no le parecerá nada raro. Eso es exactamente lo que quería su madre.',
+  gloss: [ { es: 'de por vida', en: 'for life' },
+           { es: 'inscriben', en: 'register' },
+           { es: 'el mostrador', en: 'counter, desk' },
+           { es: 'el sobrino', en: 'nephew' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué cambió en 2017?',
+      options: ['Que las mujeres cambian de apellido al casarse', 'Que los padres pueden elegir el orden de los apellidos', 'Que hay un solo apellido'], answer: 1 },
+    { type: 'mcq', q: '¿Qué espera la hermana del futuro?',
+      options: ['Que a su hijo le parezca normal', 'Que su hijo cambie el orden', 'Que la ley vuelva atrás'], answer: 0 },
+    { type: 'short', q: '¿En qué año se casó la madre? (un número)', accept: ['1979', 'en 1979'] },
+    { type: 'translate', line: 'En la escuela nadie ha dicho nada', model: 'At school nobody has said anything' }
+  ]
+},
+
+{
+  id: 'b1-medios-quiosco', title: 'El último quiosco de la avenida', level: 4, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'impsubj'],
+  text: 'El quiosco de la esquina cerró en marzo después de cuarenta años vendiendo periódicos, sellos y tarjetas telefónicas. Su dueño, Paco, dice sin dramatismo que los medios de comunicación no se han muerto: se han mudado. Ahora la gente lee la misma noticia en una página web, la comenta en un foro o en un chat y se olvida antes de comer. Él mantiene la radio encendida todo el día y ve la televisión por la noche, sobre todo los anuncios, que según él dicen más del país que el presentador. Lo que echa de menos no es vender: es que alguien le diera su opinión sobre una noticia en voz alta y esperara la suya. «En internet nadie responde a nadie», dice. «Se contesta, que no es lo mismo.»',
+  gloss: [ { es: 'sin dramatismo', en: 'without any drama' },
+           { es: 'se han mudado', en: 'they have moved house' },
+           { es: 'el dueño', en: 'the owner' },
+           { es: 'echa de menos', en: 'he misses' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué distingue Paco al final?',
+      options: ['Responder y contestar', 'Leer y escuchar', 'La radio y la televisión'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué ve los anuncios?',
+      options: ['Porque le entretienen', 'Porque cree que retratan el país', 'Porque trabajó en publicidad'], answer: 1 },
+    { type: 'short', q: '¿Cuántos años estuvo abierto el quiosco? (una palabra)', accept: ['cuarenta', '40', 'cuarenta años'] },
+    { type: 'translate', line: 'los medios de comunicación no se han muerto: se han mudado', model: 'the media have not died: they have moved house' }
+  ]
+},
+
+{
+  id: 'b1-medios-cadena', title: 'La misma noticia, tres cadenas', level: 4, theme: 'medios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj'],
+  text: 'En clase de sociales la profesora puso el mismo día tres versiones de una noticia: la de una cadena pública, la de una privada y la de una página web sin presentador ni estudio. El hecho era idéntico y los tres relatos, no. Nos hizo escribir un comentario sobre cuál nos parecía más fiable y por qué, y luego nos enseñó quién era el dueño de cada una. La mitad de la clase cambió de opinión ahí mismo. Lo que nadie esperaba es que la web pequeña, que parecía la más honesta, fuera la que más se equivocaba con los datos. La lección no fue que los medios de comunicación mientan, sino que dar una noticia obliga a elegir qué se cuenta primero, y que esa elección ya es media noticia.',
+  gloss: [ { es: 'sociales', en: 'social studies' },
+           { es: 'el hecho', en: 'the fact, the event' },
+           { es: 'fiable', en: 'reliable' },
+           { es: 'ahí mismo', en: 'right there' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué conclusión saca la clase?',
+      options: ['Que todos los medios mienten', 'Que el orden de lo que se cuenta ya es una interpretación', 'Que solo la televisión pública es fiable'], answer: 1 },
+    { type: 'mcq', q: '¿Qué sorprendió a los alumnos?',
+      options: ['Que la web más honesta tuviera más errores', 'Que la cadena pública no informara', 'Que la noticia fuera falsa'], answer: 0 },
+    { type: 'short', q: '¿Cuántas versiones puso la profesora? (una palabra)', accept: ['tres', '3'] },
+    { type: 'translate', line: 'esa elección ya es media noticia', model: 'that choice is already half the news story' }
+  ]
+},
+
+{
+  id: 'b1-relig-boda', title: 'Celebrar una boda sin iglesia', level: 4, theme: 'religion',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Mis tíos se casaron por lo civil en 1992 y la mitad de la familia no fue. Mi abuela, que era de ir a misa a diario como casi todos los católicos de su generación, sí fue, y aquello se recuerda todavía. Ella decía que celebrar una boda es cosa de dos y que el resto lo arregla cada uno con quien crea que hay que arreglarlo. Treinta años después, mi prima ha hecho lo contrario: se ha casado en la iglesia del pueblo aunque ni ella ni su marido practican la religión, porque su madre lo pidió y porque el sitio les gusta. El sacerdote lo sabía. Se casaron en junio, no en Navidad, y el santo del pueblo no pintaba nada en la ceremonia. Nadie en esa familia se ha llamado nunca ateo ni creyente en voz alta; lo que se hereda no es la fe, es la costumbre de no discutirla.',
+  gloss: [ { es: 'por lo civil', en: 'in a civil ceremony' },
+           { es: 'de misa diaria', en: 'who went to mass every day' },
+           { es: 'lo arregla', en: 'sorts it out' },
+           { es: 'la fe', en: 'faith' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué defendía la abuela?',
+      options: ['Que la boda religiosa era obligatoria', 'Que la decisión era de la pareja', 'Que no había que casarse'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué se casó la prima en la iglesia?',
+      options: ['Por convicción religiosa', 'Por su madre y por el sitio', 'Porque lo exigía la ley'], answer: 1 },
+    { type: 'short', q: '¿En qué año se casaron los tíos? (un número)', accept: ['1992', 'en 1992'] },
+    { type: 'translate', line: 'lo que se hereda no es la fe, es la costumbre de no discutirla', model: 'what gets inherited is not the faith, it is the habit of not arguing about it' }
+  ]
+},
+
+{
+  id: 'b1-relig-corte', title: 'Un curso sobre libros que no había leído', level: 5, theme: 'religion',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'condperf'],
+  text: 'Me apunté a un curso de historia de las religiones sin más motivo que un horario que me venía bien. Éramos catorce: dos que iban a misa, un musulmán practicante, una budista de manual y el resto, como yo, gente que se habría llamado atea sin haber leído jamás una página de la biblia ni del corán ni de la Torá. El profesor empezó por el calendario, no por la fe, que fue una decisión inteligente: es más fácil discutir por qué el ramadán se mueve cada año que por si Dios existe. Para cuando llegamos a diciembre ya habríamos comparado tres relatos del mismo diluvio. No salí creyente. Salí sabiendo que llamar cristiano a medio continente explica bastante menos de lo que yo pensaba.',
+  gloss: [ { es: 'me venía bien', en: 'suited me' },
+           { es: 'de manual', en: 'textbook, by the book' },
+           { es: 'jamás', en: 'never' },
+           { es: 'el diluvio', en: 'the flood' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué empezó el profesor por el calendario?',
+      options: ['Porque era lo más fácil de recordar', 'Porque se puede discutir sin hablar de creencias', 'Porque era lo único que sabía'], answer: 1 },
+    { type: 'mcq', q: '¿Qué se llevó el narrador del curso?',
+      options: ['La fe', 'La sospecha de que las etiquetas explican poco', 'Ganas de discutir'], answer: 1 },
+    { type: 'short', q: '¿Cuántos alumnos eran? (una palabra)', accept: ['catorce', '14'] },
+    { type: 'translate', line: 'No salí creyente.', model: 'I did not come out a believer.' }
+  ]
+},
+
+{
+  id: 'b1-trabajo-curriculum', title: 'Cuarenta currículums', level: 4, theme: 'trabajo',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'plusc'],
+  text: 'Después del despido, Marcos mandó cuarenta currículums en dos meses y recibió tres respuestas. Había sido cocinero doce años, con contrato y un sueldo razonable, y de pronto su carrera entera cabía en una página que nadie leía entera. Un amigo funcionario le dijo que el problema era el formato; una antigua clienta del restaurante le dijo que el problema era que no llamaba por teléfono. Tenía razón la clienta. El trabajo que encontró en marzo no salió de ningún portal de empleo: se lo ofreció un camarero al que había formado en 2015. El sueldo es algo peor y el horario, mucho mejor. Ahora cuando alguien del barrio se queda en el desempleo, Marcos le pide la lista de la gente con la que ha trabajado antes que el currículum.',
+  gloss: [ { es: 'el despido', en: 'being made redundant, dismissal' },
+           { es: 'de pronto', en: 'suddenly' },
+           { es: 'el portal de empleo', en: 'job website' },
+           { es: 'había formado', en: 'he had trained' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo encontró trabajo al final?',
+      options: ['Por un portal de empleo', 'Por alguien a quien había formado', 'Por una agencia'], answer: 1 },
+    { type: 'mcq', q: '¿Qué aconseja ahora a los demás?',
+      options: ['Mejorar el formato del currículum', 'Empezar por la gente que ya te conoce', 'Mandar más solicitudes'], answer: 1 },
+    { type: 'short', q: '¿Cuántas respuestas recibió? (una palabra)', accept: ['tres', '3'] },
+    { type: 'translate', line: 'El sueldo es algo peor y el horario, mucho mejor.', model: 'The pay is slightly worse and the hours much better.' }
+  ]
+},
+
+{
+  id: 'b1-compras-barrio', title: 'La calle de las tiendas pequeñas', level: 4, theme: 'compras',
+  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj'],
+  text: 'En mi calle había una frutería, una carnicería, una panadería, una papelería y un estanco. Quedan dos. El frutero se jubiló, el carnicero cerró cuando abrió el supermercado grande y la papelería aguantó hasta que los niños dejaron de comprar cuadernos. Mi madre hace la compra en la panadería y en la frutería nueva, que es de otra familia, y se niega a mirar las ofertas del centro comercial aunque le salga más caro. Dice que en una tienda pequeña te dan el recibo y la conversación. No es solo nostalgia: cuando se rompió la cadera, el panadero le subió el pan a casa durante seis semanas sin que nadie se lo pidiera. En el supermercado tienen mejor marca de café y nadie sabe cómo se llama.',
+  gloss: [ { es: 'aguantó', en: 'held out' },
+           { es: 'se niega a', en: 'she refuses to' },
+           { es: 'le salga más caro', en: 'it works out dearer for her' },
+           { es: 'la cadera', en: 'hip' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué argumento da la madre?',
+      options: ['Que las tiendas pequeñas son más baratas', 'Que dan trato además de producto', 'Que la comida es mejor'], answer: 1 },
+    { type: 'mcq', q: '¿Qué prueba que no es solo nostalgia?',
+      options: ['Que el panadero le llevó el pan a casa', 'Que la frutería es nueva', 'Que el estanco sigue abierto'], answer: 0 },
+    { type: 'short', q: '¿Cuántas tiendas quedan? (una palabra)', accept: ['dos', '2'] },
+    { type: 'translate', line: 'te dan el recibo y la conversación', model: 'they give you the receipt and the conversation' }
+  ]
+},
+
+{
+  id: 'b1-salud-chequeo', title: 'El chequeo de los cincuenta', level: 4, theme: 'salud',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'plusc'],
+  text: 'Mi padre no había pisado un hospital en veinte años cuando le llegó la carta del chequeo. Fue de mal humor. Le sacaron sangre, le miraron la tensión y un enfermero le preguntó por el estrés en el trabajo, cosa que él consideró una impertinencia. No había usado el seguro médico ni para la gripe. Todo salió bien menos una cifra. Desde entonces lleva una vida más sana por pura cabezonería: ha dejado el azúcar, va andando a todas partes y se ha comprado una crema para el sol que usa incluso en marzo. Lo curioso es que la ansiedad que le daba el médico se le ha pasado. Ahora tiene la cita médica en el calendario de la cocina, en rojo, y llama a la farmacia si le falta alguna medicina antes de que se le acabe. Hasta ha vuelto al dentista.',
+  gloss: [ { es: 'la tensión', en: 'blood pressure' },
+           { es: 'una impertinencia', en: 'an impertinent question' },
+           { es: 'la cifra', en: 'figure, number' },
+           { es: 'la cabezonería', en: 'stubbornness' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo fue al chequeo?',
+      options: ['Contento', 'De mala gana', 'Preocupado'], answer: 1 },
+    { type: 'mcq', q: '¿Qué ha cambiado además de sus hábitos?',
+      options: ['Ya no le da ansiedad ir al médico', 'Ha cambiado de trabajo', 'Ha dejado de trabajar'], answer: 0 },
+    { type: 'short', q: '¿Dónde tiene apuntada la cita médica? (tres palabras)', accept: ['en el calendario', 'el calendario', 'calendario'] },
+    { type: 'translate', line: 'lleva una vida más sana por pura cabezonería', model: 'he leads a healthier life out of pure stubbornness' }
+  ]
+},
+
+{
+  id: 'b1-nat-tormenta', title: 'La tormenta del catorce de agosto', level: 4, theme: 'naturaleza',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro'],
+  text: 'Aquella tarde el cielo se puso de un color que nadie del pueblo recordaba: ni gris ni negro, algo entre los dos, y el mar se quedó liso como una mesa. Mi tío, que llevaba cuarenta años mirando nubes desde el mismo sitio, metió las vacas y las ovejas antes de que sonara el primer trueno. A las siete cayó la tormenta. Duró cuarenta minutos y se llevó dos árboles, medio tejado y la luz de toda la noche. Al día siguiente salió el sol como si nada y la tierra olía de una manera que no he vuelto a oler. Ahora hablamos mucho del medio ambiente en la ciudad, con razón, pero aquella tarde aprendí algo distinto: que el campo no discute con el cielo, lo mira y actúa.',
+  gloss: [ { es: 'liso', en: 'flat, smooth' },
+           { es: 'metió', en: 'brought in' },
+           { es: 'el tejado', en: 'roof' },
+           { es: 'como si nada', en: 'as if nothing had happened' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué metió el tío a los animales?',
+      options: ['Porque se lo dijeron por la radio', 'Porque supo leer el cielo', 'Porque era la hora'], answer: 1 },
+    { type: 'mcq', q: '¿Qué contraste plantea el final?',
+      options: ['Entre hablar del clima y responder a él', 'Entre el campo y el mar', 'Entre el verano y el invierno'], answer: 0 },
+    { type: 'short', q: '¿Cuánto duró la tormenta? (dos palabras)', accept: ['cuarenta minutos', '40 minutos', 'cuarenta'] },
+    { type: 'translate', line: 'el campo no discute con el cielo, lo mira y actúa', model: 'the countryside does not argue with the sky, it watches it and acts' }
+  ]
 }
 ];
