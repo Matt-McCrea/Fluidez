@@ -8586,5 +8586,175 @@ window.PASSAGES = [
       options: ['Abandonar el sector', 'Financiar la transición y dejar de reclutar', 'Aumentar las subvenciones'], answer: 1 },
     { type: 'translate', line: 'Un sector puede ser rentable y no tener futuro al mismo tiempo', model: 'An industry can be profitable and have no future at the same time' }
   ]
+},
+
+{
+  id: 'c1-ciencia-copia', title: 'La copia de seguridad que nadie ha probado', level: 8, theme: 'ciencia',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Cualquier informático con años de oficio sabe que la frase más peligrosa de su profesión no es «no tenemos copia de seguridad», sino «sí, hacemos copia de seguridad todas las noches». La primera describe un riesgo conocido, y un riesgo conocido se gestiona. La segunda describe una tranquilidad que casi nunca se ha verificado, porque hacer una copia es un proceso automático y restaurarla es un procedimiento manual que alguien tiene que ensayar un día en que no ha pasado nada. Casi ninguna organización lo ensaya. La copia se escribe cada noche en un archivo que nadie abre, el programa instalado en el pc de la esquina informa en la pantalla de que ha terminado correctamente, y ese informe se confunde durante años con una garantía. Basta con hacer clic en aceptar. Conviene generalizar el caso, porque no es un asunto de ordenadores. Un extintor, un plan de evacuación, una contraseña de recuperación, la actualización del navegador que nadie revisa, un seguro cuyas condiciones nadie ha leído: todos comparten la misma estructura. Son dispositivos que solo se usan en el peor momento posible, cuyo estado no se puede conocer sin probarlos, y cuya prueba cuesta tiempo en un día en que nada urge. La consecuencia es que el mantenimiento de estas cosas compite siempre contra tareas que sí tienen plazo, y pierde. La respuesta que funciona no es la concienciación. Es convertir la prueba en un acontecimiento con fecha y con nombre, exactamente como un simulacro: el primer martes de cada trimestre alguien borra un archivo de verdad y lo recupera delante de otras dos personas. Las organizaciones que hacen esto descubren, con una regularidad que ya nadie considera sorprendente, que entre un tercio y la mitad de sus copias no servían: se guardaban en el mismo edificio, no incluían la base de datos que importaba, dependían de un wifi que ya no existe, o requerían una clave que se fue con un usuario dado de baja en 2019. El hallazgo no es un fracaso del sistema técnico. Es el único momento en que ese sistema deja de ser una hipótesis. Una copia de seguridad que no se ha restaurado nunca no es una copia de seguridad: es una declaración de intenciones con marca de tiempo.',
+  questions: [
+    { type: 'mcq', q: '¿Por qué le parece más peligrosa la segunda frase?',
+      options: ['Porque es mentira', 'Porque produce una tranquilidad no verificada', 'Porque implica más gasto'], answer: 1 },
+    { type: 'mcq', q: '¿Qué comparten el extintor, el seguro y la copia de seguridad?',
+      options: ['Que son caros', 'Que solo se usan cuando ya es tarde y su estado no se conoce sin probarlos', 'Que los exige la ley'], answer: 1 },
+    { type: 'mcq', q: '¿Qué solución propone frente a la concienciación?',
+      options: ['Automatizar más', 'Convertir la prueba en un acto con fecha y testigos', 'Contratar a un especialista'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo interpreta que la mitad de las copias falle en la primera prueba?',
+      options: ['Como un fracaso del sistema', 'Como el momento en que el sistema deja de ser una hipótesis', 'Como prueba de que no sirve de nada'], answer: 1 },
+    { type: 'translate', line: 'no es una copia de seguridad: es una declaración de intenciones con marca de tiempo', model: 'it is not a backup: it is a statement of intent with a timestamp' }
+  ]
+},
+
+{
+  id: 'c1-ciencia-algoritmo', title: 'Lo que el algoritmo aprendió de nosotros', level: 9, theme: 'ciencia',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'condperf', 'perfsubj'],
+  text: 'Se repite con frecuencia que un algoritmo es neutral porque solo hace cuentas, y la frase es cierta y enteramente irrelevante. La aritmética es neutral; los datos con que se alimenta, no. Un método no deja de ser un método por estar escrito en un ordenador. Un sistema de inteligencia artificial entrenado para seleccionar currículums aprende de las decisiones que una empresa tomó durante quince años, de modo que reproduce esas decisiones con una fidelidad notable, incluidas las que nadie habría defendido en voz alta. Los datos personales que se le entregan por correo electrónico no vienen limpios de nada. Lo llamativo del caso no es que el sistema se equivoque, sino en qué sentido acierta: hace exactamente lo que se le pidió, que era predecir a quién habría contratado esa empresa. Conviene detenerse en la consecuencia menos obvia, que es de responsabilidad. Cuando un jefe de departamento descarta una solicitud, existe alguien a quien preguntar por qué, y ese alguien sabe que puede tener que explicarse. Cuando la descarta un modelo, la pregunta se disuelve en una cadena donde cada eslabón señala al siguiente: quien compró el programa no lo escribió, el informático que lo escribió no eligió los datos, quien reunió los datos en un archivo no sabía para qué se usarían, y la copia de seguridad conserva todas las versiones sin distinguir ninguna. Nadie ha decidido nada y el resultado tiene autor. La respuesta técnica habitual consiste en auditar el modelo, y es un avance real que conviene no despreciar: se puede instalar un programa que mida si el sistema trata distinto a dos perfiles idénticos salvo en un dato, y esa medición es más rigurosa que cualquier cosa que se haya hecho jamás con un entrevistador humano. Ahí está la paradoja que suele omitirse en la discusión pública. La automatización hace visible y cuantificable una arbitrariedad que antes existía igual y era inauditable. Un mundo de decisiones humanas opacas no era más justo; era menos medible. De manera que la conclusión razonable no es rechazar estos sistemas ni confiar en ellos, sino exigirles lo que nunca se exigió a lo que sustituyen: que digan sobre qué datos aprendieron, que respondan a una reclamación concreta y que alguien con nombre firme el resultado. Eso no es una limitación tecnológica. Es una decisión sobre quién queremos que tenga que dar explicaciones.',
+  questions: [
+    { type: 'mcq', q: '¿Por qué dice que el sistema «acierta»?',
+      options: ['Porque sus resultados son justos', 'Porque cumple exactamente el objetivo que se le fijó', 'Porque supera al humano'], answer: 1 },
+    { type: 'mcq', q: '¿Cuál es la consecuencia menos obvia que señala?',
+      options: ['El coste', 'La dilución de la responsabilidad', 'La pérdida de empleos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué paradoja identifica?',
+      options: ['Que la automatización hace medible una arbitrariedad que ya existía', 'Que los humanos deciden mejor', 'Que auditar es imposible'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es su conclusión?',
+      options: ['Rechazar estos sistemas', 'Exigirles una rendición de cuentas que antes no se exigía', 'Confiar en las auditorías técnicas'], answer: 1 },
+    { type: 'translate', line: 'Nadie ha decidido nada y el resultado tiene autor.', model: 'Nobody has decided anything and the outcome has an author.' }
+  ]
+},
+
+{
+  id: 'c1-pol-constitucion', title: 'Lo que una constitución no puede hacer', level: 8, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto', 'presubj'],
+  text: 'Una constitución se redacta siempre con la vista puesta en el conflicto anterior. La española de 1978 resolvió con notable eficacia el problema que tenía delante —salir de una dictadura sin repetir una guerra— y organizó para ello una monarquía parlamentaria, un reparto territorial entre el Estado, la provincia y las comunidades, y un sistema de partidos con incentivos hacia el centro. Juzgarla por los problemas de 2026 es un ejercicio anacrónico que se practica a diario en la prensa. Lo que sí resulta legítimo es preguntar qué clase de cosas puede hacer un texto de ese tipo y qué clase de cosas se le atribuyen sin fundamento. Una constitución fija procedimientos y reparte poder. No produce cultura política, no genera cortesía en el parlamento y no fabrica la lealtad de quien no la tiene. Cuando un país funciona razonablemente bien, la tentación consiste en atribuirlo al texto; cuando funciona mal, en pedir que se reforme. Las dos operaciones comparten el mismo error de escala. El congreso, el senado, el ministerio y los tribunales hacen lo que hacen las personas que los ocupan, dentro de unos límites que el texto marca y que son más anchos de lo que la discusión pública suele suponer. Merece la pena observar además una propiedad incómoda de estos documentos. Una constitución rígida, difícil de reformar, protege de mayorías coyunturales y también congela errores; una flexible se adapta y pierde precisamente la función de estar por encima de la disputa diaria. No existe una posición óptima entre esas dos cosas: existe una elección, y cada generación la hereda hecha. Quien pide una reforma profunda y quien defiende el texto sin una coma suelen coincidir en dar por supuesto que el documento decide el comportamiento. La democracia que produce un país no está escrita en su constitución más de lo que la calidad de una casa está escrita en sus planos. Los planos impiden ciertas catástrofes y no garantizan ninguna virtud, y esa asimetría, poco satisfactoria, es lo máximo que un texto puede ofrecer.',
+  questions: [
+    { type: 'mcq', q: '¿Qué error de escala señala el autor?',
+      options: ['Atribuir al texto lo que depende de las personas', 'Comparar países distintos', 'Usar datos antiguos'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dilema plantea sobre la rigidez constitucional?',
+      options: ['Que protege de mayorías pasajeras y congela errores a la vez', 'Que siempre conviene la flexibilidad', 'Que la rigidez es un defecto de diseño'], answer: 0 },
+    { type: 'mcq', q: '¿Qué comparten, según él, reformistas y defensores del texto?',
+      options: ['Su desconocimiento de la historia', 'Suponer que el documento decide el comportamiento', 'Su interés partidista'], answer: 1 },
+    { type: 'mcq', q: '¿Qué función atribuye la comparación con los planos de una casa?',
+      options: ['Ilustrar que impiden desastres sin garantizar calidad', 'Criticar a los arquitectos', 'Defender la reforma'], answer: 0 },
+    { type: 'translate', line: 'Una constitución se redacta siempre con la vista puesta en el conflicto anterior.', model: 'A constitution is always drafted with an eye on the previous conflict.' }
+  ]
+},
+
+{
+  id: 'c1-pol-embajada', title: 'Lo que hace un cónsul', level: 9, theme: 'politica',
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
+  text: 'La imagen popular de una embajada es la de un edificio donde se celebran recepciones y se negocian asuntos de Estado. La realidad diaria de un consulado se parece bastante más a una oficina de registro civil con horario reducido, y esa distancia entre la imagen y la función explica buena parte de los malentendidos que rodean al servicio exterior. Un cónsul dedica la mayor parte de su jornada a expedir documentos, inscribir nacimientos, tramitar la nacionalidad de hijos de emigrantes y, con una frecuencia que sorprende a quien no lo ha visto, a ocuparse de compatriotas detenidos, hospitalizados o arruinados a cuatro mil kilómetros de su provincia. Nada de eso aparece en los presupuestos como política exterior, y sin embargo es lo que la mayoría de los ciudadanos de un país llega a conocer jamás de su diplomacia. El malentendido tiene consecuencias presupuestarias que se pueden enumerar. Cuando un ministerio recorta, lo hace sobre lo que resulta menos visible, y lo menos visible es precisamente el personal de ventanilla de un consulado en una ciudad mediana. La consecuencia se manifiesta años después en forma de una cita a seis meses vista y de una emigración reciente que no consigue inscribir a sus hijos. Entretanto, la representación ante la unión europea y el viaje oficial de un embajador conservan su dotación, porque son lo que un ministro puede enseñar. Conviene resistirse a la conclusión populista, que sería suprimir lo segundo. La negociación permanente en foros multilaterales produce resultados enormes y completamente invisibles: una norma técnica que no se aprueba, un asunto que se retira del orden del día, una posición que se construye durante cuatro años. Un país que solo financiara la atención al ciudadano perdería eso, y lo perdería sin enterarse, porque las victorias de ese tipo no se pueden anunciar. Lo verdaderamente difícil del servicio exterior es que sus dos mitades son invisibles de maneras distintas: una porque ocurre lejos y en silencio, y la otra porque solo la ve quien ha tenido un problema. Ninguna de las dos genera una fotografía, y los presupuestos se defienden con fotografías.',
+  questions: [
+    { type: 'mcq', q: '¿Qué contraste organiza el texto?',
+      options: ['Entre la imagen de la embajada y la función del consulado', 'Entre países ricos y pobres', 'Entre diplomáticos y políticos'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué recae el recorte sobre los consulados?',
+      options: ['Porque cuestan más', 'Porque son lo menos visible', 'Porque son menos necesarios'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué rechaza suprimir la representación multilateral?',
+      options: ['Porque produce resultados grandes e invisibles', 'Porque lo prohíben los tratados', 'Porque es más barata'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es la dificultad de fondo que identifica?',
+      options: ['La falta de personal', 'Que ambas mitades son invisibles de formas distintas', 'La lentitud de los trámites'], answer: 1 },
+    { type: 'translate', line: 'los presupuestos se defienden con fotografías', model: 'budgets are defended with photographs' }
+  ]
+},
+
+{
+  id: 'c1-arte-traductor', title: 'El nombre que no aparece en la portada', level: 8, theme: 'arte',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
+  text: 'Una novela extranjera que un lector español considera bien escrita ha sido escrita, en el sentido literal de las palabras que tiene delante, por una persona cuyo nombre figura en la página cuatro en cuerpo ocho. El traductor ocupa una posición singular entre los oficios artísticos: se le juzga por no notarse. Cuando hace bien su trabajo, el lector atribuye el ritmo, la ironía y la elección exacta de un adjetivo al escritor original; cuando lo hace mal, se dice que la novela era mala. No hay ningún otro caso donde el éxito consista en la desaparición del autor del texto que uno está leyendo. Conviene precisar en qué consiste realmente la tarea, porque la idea popular —sustituir cada palabra por su equivalente— describe lo que hace un programa y no lo que hace un profesional. Un traductor decide a qué registro pertenece el narrador, qué hace con un juego de palabras que en español no existe, si un personaje que en el original suena de clase alta debe sonar aquí de clase alta o de otra cosa, y qué se pierde necesariamente en cada una de esas decisiones. Traducir un poema o una obra de teatro obliga además a elegir entre el sentido, la música y la longitud, tres cosas que rara vez caben juntas. La consecuencia económica de esa invisibilidad es bastante brutal y está documentada. Los contratos habituales en España pagan por página y ceden los derechos durante plazos largos, de modo que un traductor cuya versión se reimprime durante treinta años no participa de ese éxito, mientras el escritor sí. Las asociaciones del sector llevan años pidiendo dos cosas modestas: el nombre en la cubierta y un porcentaje. La primera no cuesta dinero y se concede con extraordinaria lentitud, lo cual sugiere que lo que está en juego no es el coste sino una idea sobre quién es el autor de un libro. Un lector que comparase dos traducciones del mismo cuento resolvería la cuestión en veinte minutos, y precisamente por eso casi ninguna edición lo pone fácil.',
+  questions: [
+    { type: 'mcq', q: '¿Qué hace singular al oficio de traductor?',
+      options: ['Que se le juzga por no notarse', 'Que es mal pagado', 'Que trabaja solo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué idea popular corrige el texto?',
+      options: ['Que traducir es sustituir palabras equivalentes', 'Que los traductores son escritores fracasados', 'Que las máquinas ya traducen bien'], answer: 0 },
+    { type: 'mcq', q: '¿Qué sugiere que el nombre en la cubierta se conceda con lentitud pese a no costar nada?',
+      options: ['Que hay desorganización editorial', 'Que lo que se discute es la autoría, no el dinero', 'Que a los lectores no les importa'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué dice que casi ninguna edición facilita comparar traducciones?',
+      options: ['Por el coste de imprimir dos versiones', 'Porque la comparación haría evidente el papel del traductor', 'Porque no existen dos versiones'], answer: 1 },
+    { type: 'translate', line: 'se le juzga por no notarse', model: 'they are judged by not being noticed' }
+  ]
+},
+
+{
+  id: 'c1-arte-orquesta', title: 'Detrás del director de orquesta', level: 9, theme: 'arte',
+  tenses: ['presente', 'perfecto', 'condicional', 'presubj', 'impsubj', 'perfsubj'],
+  text: 'Pocas figuras concentran tanta autoridad simbólica con una función tan discutida como el director de orquesta. Se coloca de espaldas al público, no produce ningún sonido y aparece en la fotografía. La pregunta de si hace falta se plantea con cierta regularidad, y quienes la formulan suelen apoyarse en un argumento real: una orquesta profesional que ha ensayado una sinfonía conocida puede tocarla entera sin nadie delante, y de hecho lo hace en algunas formaciones que han suprimido el puesto por convicción. El argumento demuestra menos de lo que parece. Lo que un director aporta no se ve durante el concierto sino durante los ensayos, y consiste sobre todo en tomar decisiones que de otro modo habría que negociar. Cuánto dura un silencio, si la cuerda cede ante el viento en un pasaje concreto, qué se hace en el compás donde el compositor dejó una indicación ambigua: son cuestiones sin respuesta correcta, y una orquesta de ochenta personas que las resolviera por acuerdo necesitaría el triple de tiempo. La autoridad del director es, en ese sentido, un procedimiento de ahorro, no una verdad estética. Hay una segunda función, más difícil de defender en público y probablemente más importante. Un músico profesional de nivel alto ha tocado la misma obra ochenta veces, y el peligro de una carrera larga no es el error sino la corrección indiferente. Lo que un buen director hace con un violinista que se sabe la parte de memoria es convencerle de que esta vez importa, y esa tarea no es musical: es exactamente lo mismo que hace un entrenador con un deportista veterano. Quien haya visto una orquesta cambiar de sonido en cuatro compases al entrar alguien distinto sabe que el fenómeno existe y que no se explica solo por los gestos. Las agrupaciones que han eliminado la figura obtienen resultados excelentes en repertorio breve y bien conocido, y encuentran dificultades crecientes según aumenta la duración y la ambigüedad de la obra. Eso no resuelve el debate. Sugiere, con bastante claridad, que lo que está en discusión no es un puesto sino cuánta indeterminación puede sostener un grupo sin alguien que la cierre.',
+  questions: [
+    { type: 'mcq', q: '¿Qué concede el autor al argumento contra el director?',
+      options: ['Que una orquesta puede tocar sin él una obra conocida', 'Que su papel es puramente decorativo', 'Que cobra demasiado'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo describe la autoridad del director?',
+      options: ['Como una verdad estética', 'Como un procedimiento de ahorro de tiempo', 'Como una tradición sin función'], answer: 1 },
+    { type: 'mcq', q: '¿Cuál es el peligro que señala en una carrera larga?',
+      options: ['El error técnico', 'La corrección indiferente', 'La falta de ensayo'], answer: 1 },
+    { type: 'mcq', q: '¿Qué conclusión extrae de las orquestas sin director?',
+      options: ['Que la figura es prescindible', 'Que el límite lo marca la ambigüedad de la obra', 'Que el experimento ha fracasado'], answer: 1 },
+    { type: 'translate', line: 'convencerle de que esta vez importa', model: 'to convince them that this time it matters' }
+  ]
+},
+
+{
+  id: 'c1-relig-agnostico', title: 'La casilla que falta', level: 8, theme: 'religion',
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj', 'impsubj'],
+  text: 'Las encuestas sobre religión en España llevan décadas ofreciendo las mismas opciones: católico practicante, católico no practicante, creyente de otra religión, agnóstico, ateo. La lista parece exhaustiva y deja fuera a una proporción considerable de la población, que no se reconoce en ninguna de las cinco. Se trata de gente que no tiene fe en ningún sentido que un teólogo aceptaría, que no pisa una iglesia salvo para celebrar una boda o un bautizo, y que sin embargo no se llamaría atea ni agnóstica porque ambas palabras le suenan a tomar partido en una discusión que no le interesa. El catolicismo, para esas personas, no es una creencia sino un calendario, un vocabulario y una manera de organizar el duelo. Conviene evitar dos lecturas apresuradas. La primera, habitual entre creyentes, interpreta esa posición como una fe debilitada que podría reactivarse, y los datos de tres generaciones sugieren lo contrario: no hay reactivación, hay sustitución lenta de un contenido por una costumbre. La segunda, habitual entre ateos militantes, la lee como incoherencia o cobardía intelectual, lo cual supone que la relación de una persona con el cristianismo, el islamismo o el budismo debe pasar necesariamente por la pregunta sobre si sus proposiciones son verdaderas. Para una parte enorme de la humanidad no ha pasado nunca por ahí. El problema de la casilla ausente no es estadístico, aunque también lo sea. Es que las dos posiciones bien representadas —el creyente y el ateo— comparten un supuesto que la mayoría no comparte: que lo relevante de una religión es lo que afirma sobre el mundo. Quien va a misa el día del santo del pueblo sin creer una palabra del credo no está fingiendo; está haciendo otra cosa, una cosa que el vocabulario disponible describe mal. La filosofía lleva un siglo largo discutiendo si esa otra cosa merece llamarse religión, y mientras tanto el párroco del pueblo, que no ha leído esa discusión, decide cada año cuántas sillas saca a la plaza, y acierta.',
+  questions: [
+    { type: 'mcq', q: '¿Qué grupo señala el texto como mal representado?',
+      options: ['Los creyentes de otras religiones', 'Quienes no participan de la pregunta sobre la verdad de la fe', 'Los ateos militantes'], answer: 1 },
+    { type: 'mcq', q: '¿Qué muestran los datos de tres generaciones?',
+      options: ['Una reactivación de la fe', 'Una sustitución lenta de creencia por costumbre', 'Un aumento del ateísmo militante'], answer: 1 },
+    { type: 'mcq', q: '¿Qué supuesto comparten creyentes y ateos, según el autor?',
+      options: ['Que lo relevante es lo que la religión afirma sobre el mundo', 'Que la religión está en declive', 'Que las encuestas son fiables'], answer: 0 },
+    { type: 'mcq', q: '¿Qué función tiene la imagen final del párroco y las sillas?',
+      options: ['Ridiculizar la filosofía', 'Mostrar que la práctica se entiende bien sin resolver la discusión', 'Criticar la falta de espacio'], answer: 1 },
+    { type: 'translate', line: 'no es una creencia sino un calendario, un vocabulario y una manera de organizar el duelo', model: 'is not a belief but a calendar, a vocabulary and a way of organising grief' }
+  ]
+},
+
+{
+  id: 'c1-relig-milagro', title: 'El expediente de un milagro', level: 9, theme: 'religion',
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
+  text: 'Para que la Iglesia católica reconozca a alguien como santo hace falta, entre otras cosas, acreditar que ha hecho un milagro, y el procedimiento para acreditarlo resulta considerablemente menos pintoresco de lo que un lector no creyente supondría. El expediente lo instruye un arzobispo con la ayuda del párroco de la diócesis, se remite a Roma y pasa por una comisión médica formada por especialistas que, en una proporción significativa, no son creyentes: se les pide únicamente que certifiquen que una curación no tiene explicación conocida en el estado actual de la medicina. La mayoría de los casos presentados se rechazan. Lo que interesa aquí no es la teología sino la estructura del argumento, porque se parece más de lo que gustaría a otras formas de razonamiento contemporáneo. Quien defiende el milagro sostiene que algo no explicado por la ciencia requiere una explicación de otro orden; quien lo niega sostiene que lo no explicado hoy es simplemente eso, y que la historia de la medicina está llena de cosas que fueron inexplicables durante siglo y medio. Ninguna de las dos posiciones se puede refutar con los datos del caso, y ambas lo saben. Merece la pena reconocer un mérito al procedimiento, y es que se somete a un criterio externo que no controla. Un tribunal que pide a médicos ajenos a la fe que digan si hay explicación natural está aceptando de antemano que una respuesta afirmativa cierra el asunto, y eso, comparado con el modo en que se sostienen muchas creencias contemporáneas —incluidas bastantes que se presentan como racionales—, es una posición metodológicamente honesta. El catolicismo, como el islamismo o el budismo, ha tenido siglos para pulir sus procedimientos de verificación interna, y quien los mira por encima suele ignorar cuánto se parecen a lo que exige a los demás. Nada de esto decide si los milagros ocurren, pregunta que el expediente no formula y que la filosofía no ha cerrado. Decide, si acaso, algo más modesto: que la oposición entre una fe crédula y una razón exigente describe mal a las dos partes, y que quien quiera sostenerla haría bien en leer antes uno de estos expedientes, que están publicados y son aburridísimos.',
+  questions: [
+    { type: 'mcq', q: '¿Qué le interesa al autor del procedimiento?',
+      options: ['Su resultado teológico', 'La estructura del argumento', 'Su coste administrativo'], answer: 1 },
+    { type: 'mcq', q: '¿Qué mérito reconoce al tribunal?',
+      options: ['Que acepta un criterio externo que no controla', 'Que aprueba pocos casos', 'Que es rápido'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pretende mostrar la última frase?',
+      options: ['Que los expedientes son falsos', 'Que la oposición habitual entre fe y razón describe mal a ambas', 'Que nadie lee esos documentos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué actitud mantiene el autor sobre si ocurren los milagros?',
+      options: ['Los afirma', 'Deja la cuestión fuera de su argumento', 'Los niega'], answer: 1 },
+    { type: 'translate', line: 'quien los mira por encima suele ignorar cuánto se parecen a lo que exige a los demás', model: 'whoever looks at them superficially tends not to realise how closely they resemble what they demand of everyone else' }
+  ]
+},
+
+{
+  id: 'c1-nat-bosque', title: 'Un bosque que nadie plantó', level: 8, theme: 'naturaleza',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
+  text: 'España tiene hoy considerablemente más superficie de bosque que hace ochenta años, dato que sorprende a casi todo el mundo y que contradice la intuición formada a base de noticias sobre incendios. La explicación no es una política ambiental afortunada. Es el abandono: cuando un pueblo del interior pierde a sus habitantes, los prados que sostenían vacas y ovejas dejan de pastarse, el monte bajo avanza y en treinta años hay árboles donde había un campo. El país se ha reforestado por despoblación, que es una manera de mejorar un indicador sin que nadie lo haya querido. Conviene mirar de cerca qué clase de bosque produce ese proceso, porque la cifra oculta el asunto. Un monte abandonado crece de forma continua y muy densa, sin los claros que producían el ganado y la leña, y esa continuidad es precisamente lo que convierte un incendio pequeño en uno imposible de detener. El fuego que arrasa una comarca entera no es un fenómeno antiguo que se repite: es un fenómeno nuevo que depende de una estructura del paisaje que tiene cuarenta años. Los bomberos forestales llevan dos décadas repitiendo que el problema se combate en febrero y no en agosto, y el presupuesto sigue concentrado en la extinción, que es lo que sale en la televisión. Merece la pena extraer la conclusión incómoda. La naturaleza que la mayoría de la gente considera deseable en la península —bosque continuo, sin actividad humana, sin ganado— no es el estado original de nada. El paisaje mediterráneo se formó durante milenios con fuego, pastoreo y aprovechamiento, y muchas de las especies que hoy se protegen dependen de espacios abiertos que solo existían porque alguien los mantenía. Proteger un territorio prohibiendo toda actividad produce, al cabo de treinta años, menos diversidad y más riesgo. La ecología del último medio siglo ha ido corrigiendo esa idea con datos, y la corrección ha llegado antes a la literatura científica que a la sensibilidad general, que sigue asociando conservación con abandono y considera que un pastor con doscientas ovejas es un resto del pasado en lugar de una herramienta de gestión razonablemente barata.',
+  questions: [
+    { type: 'mcq', q: '¿A qué atribuye el aumento de bosque?',
+      options: ['A una política ambiental eficaz', 'Al abandono del campo', 'A las repoblaciones'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué son distintos los incendios actuales?',
+      options: ['Porque hace más calor', 'Porque el paisaje continuo es reciente', 'Porque hay menos bomberos'], answer: 1 },
+    { type: 'mcq', q: '¿Qué idea corrige sobre la conservación?',
+      options: ['Que prohibir toda actividad protege mejor', 'Que el ganado daña el monte', 'Que los incendios son naturales'], answer: 0 },
+    { type: 'mcq', q: '¿Qué tono adopta al hablar del pastor con doscientas ovejas?',
+      options: ['Reivindicativo respecto a su función actual', 'Nostálgico', 'Crítico'], answer: 0 },
+    { type: 'translate', line: 'El país se ha reforestado por despoblación', model: 'The country has been reforested by depopulation' }
+  ]
+},
+
+{
+  id: 'c1-nat-estrellas', title: 'La noche que dejó de verse', level: 9, theme: 'naturaleza',
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
+  text: 'Una persona nacida en una ciudad española de tamaño medio en 1995 no ha visto nunca la Vía Láctea desde su casa, y en la mayoría de los casos no sabe que no la ha visto. La contaminación lumínica tiene esa particularidad entre los problemas ambientales: no produce ninguna sensación de pérdida en quien la sufre, porque lo que se pierde es algo que nunca estuvo en su experiencia. Nadie echa de menos un cielo que no ha tenido. Comparada con otras formas de contaminación, tiene además dos rasgos poco frecuentes. El primero es que desaparece por completo en el instante en que se apaga la fuente: no deja residuo, no se acumula en la tierra ni en el mar, y un municipio que cambia sus farolas recupera su cielo esa misma noche. El segundo es que corregirla ahorra dinero desde el primer mes, porque la mitad de la luz que produce el problema es luz emitida hacia arriba, que no ilumina nada y se paga entera. Un problema reversible cuya solución es rentable debería estar resuelto, y no lo está. Las razones de esa resistencia son instructivas y no tienen que ver con la técnica. Una calle más iluminada se percibe como más segura, aunque los estudios sobre la relación entre luz y delincuencia arrojen resultados mucho más ambiguos de lo que cualquier vecino supondría; un alcalde que reduce el alumbrado gana una discusión pública muy difícil aunque tenga los datos de su parte. Hay además un efecto de comparación entre municipios: ninguno quiere ser el oscuro de la comarca. Los pocos sitios donde la cosa ha avanzado lo han hecho por una vía lateral, convirtiendo el cielo en un recurso: un observatorio, un certificado, turismo de invierno en temporada baja. Es un argumento oportunista y funciona. Merece la pena señalar lo que eso revela sobre cómo se protegen las cosas. La fauna nocturna, que sufre de forma documentada la alteración de sus ciclos, no ha bastado como razón en ningún expediente municipal. Bastó, en cambio, la posibilidad de llenar doce casas rurales en noviembre. Uno puede lamentarlo o puede usarlo, y quienes trabajan en esto hace tiempo que decidieron lo segundo.',
+  questions: [
+    { type: 'mcq', q: '¿Qué particularidad atribuye a la contaminación lumínica?',
+      options: ['Que no genera sensación de pérdida', 'Que es irreversible', 'Que afecta solo a las ciudades'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué debería estar resuelta?',
+      options: ['Porque lo exige la ley', 'Porque es reversible y su solución ahorra dinero', 'Porque la población lo reclama'], answer: 1 },
+    { type: 'mcq', q: '¿Qué explica la resistencia a corregirla?',
+      options: ['Dificultades técnicas', 'La percepción de seguridad y la comparación entre municipios', 'El coste de las farolas'], answer: 1 },
+    { type: 'mcq', q: '¿Qué revela, según el autor, el éxito del argumento turístico?',
+      options: ['Que la fauna no importa a nadie', 'Que lo que mueve una decisión no siempre es la razón de fondo', 'Que el turismo resuelve los problemas ambientales'], answer: 1 },
+    { type: 'translate', line: 'Nadie echa de menos un cielo que no ha tenido.', model: 'Nobody misses a sky they have never had.' }
+  ]
 }
 ];
