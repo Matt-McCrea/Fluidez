@@ -203,6 +203,55 @@ window.COURSE = [
       { lesson: 'task-cafe' },
     ] },
 
+  /* ---- the two past tenses, moved into A1 and held apart ----------------
+   * These were the first two units of A2, which put the preterite on day 97
+   * of 671 and the present perfect on day 115. Before them an A1 learner had
+   * ninety passages to read and not one past tense in any of them, so a
+   * beginner could describe a routine for three months and still not answer
+   * "what did you do at the weekend".
+   *
+   * They are placed at SEAMS rather than dropped in together. The preterite
+   * follows "Order and buy" because that unit ends with the learner having
+   * bought something, and "what did you buy" is the next sentence they want;
+   * by then thirty verbs and the whole of "Numbers, time and money" are
+   * behind them. The present perfect follows "Where things are", where
+   * "¿has estado en…?" is the natural question about a place.
+   *
+   * The 24 days between them are deliberate. Taught back to back, two past
+   * tenses that compete for the same recent-past ground teach each other's
+   * exceptions; the gap lets the preterite settle first. The cost is a
+   * stretch where a learner will say "hoy comí" for "hoy he comido", which is
+   * why "Tell me what happened" is anchored on `ayer` and the week before —
+   * see its canDo and task-a2-ayer.
+   *
+   * They keep their `a2-` ids on purpose. A unit id is what
+   * `progress.studied` and the unit checks are keyed on, so renaming them to
+   * `a1-` would read better here and silently reset the progress of anyone
+   * who had already done them. The band tag is what decides which band's
+   * stretch a unit belongs to (COURSE_BANDS is derived from the first `band`
+   * seen), and that IS changed — leaving it at 'A2' would move the start of
+   * A2 back to this line and drag forty A1 days into it.
+   *
+   * The imperfect stays where it was, in A2. Having a past tense and choosing
+   * between two of them are different skills, and only the first one is what
+   * a beginner is missing — see the SEED comment in js/lessons.js.
+   * ---------------------------------------------------------------------- */
+
+  { unit: 'a2-u14', band: 'A1', title: 'Tell me what happened',
+    goal: 'I can say what happened, in order, in the past.',
+    canDo: ['use the preterite for completed events',
+            'chain events with primero, luego, después',
+            'handle fui, hice, tuve, estuve',
+            'vary the verb beyond decir'],
+    days: [
+      { lesson: 'preterito' },
+      { verbs: ['mejorar', 'empeorar', 'aumentar', 'evitar', 'crear'] },
+      { lesson: 'dc-deixis-temporal-a2' },
+      { lesson: 'nt-expresion-verbal-a2' },
+      { practice: true },
+      { lesson: 'task-a2-ayer' },
+    ] },
+
   { unit: 'a1-u07', band: 'A1', title: 'Describe people and things',
     goal: 'I can describe a person, a place or an object so that someone recognises it.',
     canDo: ['make adjectives agree',
@@ -239,6 +288,21 @@ window.COURSE = [
       { lesson: 'task-direcciones' },
     ] },
 
+  { unit: 'a2-u17', band: 'A1', title: 'Have you ever…?',
+    goal: 'I can talk about experience — what I have and have not done.',
+    canDo: ['use the present perfect for experience',
+            'use ya and todavía no',
+            'form the irregular participles',
+            'switch to the preterite when asked when'],
+    days: [
+      { lesson: 'gr-preterito-perfecto-a2' },
+      { verbs: ['imaginar', 'dudar', 'notar', 'observar', 'comparar'] },
+      { lesson: 'nt-anterioridad-a2' },
+      { lesson: 'nt-existencia-inexistencia-a2' },
+      { practice: true },
+      { lesson: 'task-a2-experiencia' },
+    ] },
+
   { unit: 'a1-u09', band: 'A1', title: 'Your day',
     goal: 'I can describe my daily routine and say how often I do things.',
     canDo: ['use reflexive verbs with their pronoun',
@@ -255,56 +319,6 @@ window.COURSE = [
       { lesson: 'task-rutina' },
     ] },
 
-
-  /* ---- the past tense, moved into A1 -------------------------------------
-   * These two units were the first two of A2, which put the preterite on day
-   * 97 of 671 and the present perfect on day 115. Before them an A1 learner
-   * had ninety passages to read and not one past tense in any of them, so a
-   * beginner could describe a routine for three months and still not answer
-   * "what did you do at the weekend".
-   *
-   * They keep their `a2-` ids on purpose. A unit id is what `progress.studied`
-   * and the unit checks are keyed on, so renaming them to `a1-` would read
-   * better in this file and silently reset the progress of anyone who had
-   * already done them. The band tag is what decides which band's stretch a
-   * unit belongs to (COURSE_BANDS is derived from the first `band` seen), and
-   * that IS changed — leaving it at 'A2' here would move the start of A2 back
-   * to this line and drag forty A1 days into it.
-   *
-   * The imperfect stays where it was, in A2. Having a past tense and choosing
-   * between two of them are different skills, and only the first one is what a
-   * beginner is missing — see the SEED comment in js/lessons.js.
-   * ---------------------------------------------------------------------- */
-
-  { unit: 'a2-u14', band: 'A1', title: 'Tell me what happened',
-    goal: 'I can say what happened, in order, in the past.',
-    canDo: ['use the preterite for completed events',
-            'chain events with primero, luego, después',
-            'handle fui, hice, tuve, estuve',
-            'vary the verb beyond decir'],
-    days: [
-      { lesson: 'preterito' },
-      { verbs: ['mejorar', 'empeorar', 'aumentar', 'evitar', 'crear'] },
-      { lesson: 'dc-deixis-temporal-a2' },
-      { lesson: 'nt-expresion-verbal-a2' },
-      { practice: true },
-      { lesson: 'task-a2-ayer' },
-    ] },
-
-  { unit: 'a2-u17', band: 'A1', title: 'Have you ever…?',
-    goal: 'I can talk about experience — what I have and have not done.',
-    canDo: ['use the present perfect for experience',
-            'use ya and todavía no',
-            'form the irregular participles',
-            'switch to the preterite when asked when'],
-    days: [
-      { lesson: 'gr-preterito-perfecto-a2' },
-      { verbs: ['imaginar', 'dudar', 'notar', 'observar', 'comparar'] },
-      { lesson: 'nt-anterioridad-a2' },
-      { lesson: 'nt-existencia-inexistencia-a2' },
-      { practice: true },
-      { lesson: 'task-a2-experiencia' },
-    ] },
 
   { unit: 'a1-u10', band: 'A1', title: 'Want, need, ask for',
     goal: 'I can say what I want, what I need and what I have to do — and ask for help.',
