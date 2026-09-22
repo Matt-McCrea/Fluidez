@@ -82,9 +82,35 @@ window.Games = (function () {
     { key: 'traduccion', name: 'Traducción', rule: 'inglés → español', icon: '✍️',
       hue: '#1d7f8c', secs: 120, kind: 'translate',
       blurb: 'Escribe el español. Las frases se alargan según aciertas.' },
-    { key: 'escucha', name: 'Escucha', rule: 'óyelo una vez', icon: '🎧',
-      hue: '#7a5bd0', secs: 90, kind: 'listen', needsVoice: true,
-      blurb: 'Una voz lo dice. ¿Qué era? Cada nivel habla más rápido.' },
+    /* ESCUCHA IS GONE, and its slot is where Vocabulario sits. The game was
+     * built on window.speechSynthesis because it is the only thing that works
+     * offline, and the system voice is poor enough that the round taught the
+     * voice rather than the Spanish. It is also the one game that simply does
+     * not exist on a device with no Spanish voice installed, which is most
+     * Android sold in the market this build is for.
+     *
+     * The code is all still here — js/speak.js, the listen generator, the
+     * renderer in js/gameround.js. To bring it back: restore this entry and
+     * set LISTEN_WEIGHT in js/gameitems.js back to 2. */
+
+    /* VOCABULARIO. The generator for this existed since the games were
+     * rewritten and nothing ever dealt from it: GameItems had a `vocab` kind
+     * and no tile asked for one, so 5,820 words plus 1,166 verbs sat in the
+     * index reachable only as distractors for other questions.
+     *
+     * Conjugación's other half — the same jump from meaning to Spanish,
+     * stopping before the verb is conjugated. Typed when the answer is three
+     * words or fewer, tapped when it is longer, and the article is optional
+     * either way: not knowing `mesa` and not knowing whether it takes el or la
+     * are two different gaps and only one is being asked about.
+     *
+     * The only game with no band ceiling, and the only one that should have
+     * none. Elsewhere the cap protects you from a question you cannot yet
+     * answer; there is no such question here, because a word above your level
+     * is just a word you do not know yet. */
+    { key: 'vocabulario', name: 'Vocabulario', rule: 'la palabra, sin conjugar', icon: '📖',
+      hue: '#6f8f2a', secs: 90, kind: 'vocab', maxRung: 10, anyBand: true,
+      blurb: 'De la palabra inglesa a la española, verbos incluidos. Todos los niveles.' },
     /* Called Verbos until there was a second game made of verbs. The name has
      * to say which half of the problem it is: this one is the FORM, and the
      * key stays `verbos` so nobody's record is orphaned by a rename. */
@@ -102,15 +128,6 @@ window.Games = (function () {
      * words or fewer and tapped when it is longer, and the article is optional
      * either way, because knowing `mesa` and not knowing whether it takes el
      * or la are two different gaps and only one of them is being asked about. */
-    /* The only game with no band ceiling (`anyBand` + `maxRung`), and the only
-     * one that should have none. Everywhere else the cap is protecting you
-     * from a question you cannot yet answer; here there is no such question,
-     * because a word above your level is just a word you do not know yet. The
-     * ladder still starts at your own band and only climbs on correct answers,
-     * so the hard vocabulary is earned rather than dealt. */
-    { key: 'vocabulario', name: 'Vocabulario', rule: 'la palabra, sin conjugar', icon: '📖',
-      hue: '#6f8f2a', secs: 90, kind: 'vocab', maxRung: 10, anyBand: true,
-      blurb: 'De la palabra inglesa a la española, verbos incluidos. Todos los niveles.' },
     { key: 'gramatica', name: 'Gramática', rule: '¿cuál va aquí?', icon: '🎯',
       hue: '#2f7fb8', secs: 90, kind: 'grammar',
       blurb: 'Ser o estar, por o para, indicativo o subjuntivo. Noventa segundos.' },
@@ -367,12 +384,15 @@ window.Games = (function () {
   /* Open one game straight from somewhere else in the app — the home screen
    * does this, so its chips are one tap from playing rather than one tap from
    * a menu. "Back" from inside still means the Games list. */
-  function open(key, back) {
+  /* `extra` is merged into the round's config — how the arcade passes a focus
+   * that a game can act on rather than merely lean towards (see js/arcade.js:
+   * a theme or a verbs-only restriction on Vocabulario). */
+  function open(key, back, extra) {
     exitAll = back || function () { window.Shell.closeOverlay(); window.Shell.go('inicio'); };
     window.Shell.openOverlay(false);
     if (key === GS.dailyKey()) return startDaily();
     var g = byKey(key);
-    if (g) start(g); else render(host(), exitAll);
+    if (g) start(g, extra); else render(host(), exitAll);
   }
 
   /* ===========================================================================

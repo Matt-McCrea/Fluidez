@@ -186,6 +186,20 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   /* VOCABULARIO — Conjugación's other half. Its generator existed from the
    * rewrite and no tile ever dealt from it, so 5,820 words were reachable only
    * as distractors for other people's questions. */
+  /* Escucha was retired: the system voice made the round a test of the voice,
+   * and on most Android in the market this build targets there is no Spanish
+   * voice at all. Removing the tile is only half of it — the mixed games would
+   * have gone on dealing listen items to a learner who no longer had the game. */
+  ok(!byKey('escucha'), 'Escucha is back in the games list');
+  {
+    let heard = 0;
+    for (let i = 0; i < 300; i++) {
+      const it = W.GameItems.next('mixed', 1 + (i % 10), rng, {});
+      if (it && it.kind === 'listen') heard++;
+    }
+    ok(heard === 0, `${heard} listen items still turn up inside the mixed games`);
+  }
+
   const voc = byKey('vocabulario');
   ok(!!voc, 'Vocabulario is not in the games list');
   ok(voc && voc.kind === 'vocab', 'Vocabulario must deal vocabulary items');
@@ -249,6 +263,35 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     ok(above({}) === 0, 'vocabulary reached above your band without anyBand — the cap is not working');
     W.Profile.set('B2');
     W.GameItems.reset();
+
+    /* A theme and a verbs-only choice are REAL filters on this game, not the
+     * bias a focus applies elsewhere: the vocabulary is big enough to stand
+     * being narrowed, where a translation round narrowed to one tense would
+     * exhaust its sentences and repeat. Assert both actually narrow. */
+    {
+      const VERB = /^[a-záéíóúñ]+(ar|er|ir)(se)?$/;
+      const sampleWith = (opts, n2) => {
+        const out = { n: 0, verbs: 0, themes: {} };
+        for (let r = 1; r <= 10; r++) {
+          for (let k = 0; k < n2; k++) {
+            const it = W.GameItems.next('vocab', r, rng, Object.assign({ anyBand: true }, opts));
+            if (!it) continue;
+            out.n++;
+            const w = it.play === 'type' ? it.answer : it.prompt;
+            if (VERB.test(String(w))) out.verbs++;
+          }
+        }
+        return out;
+      };
+      const plain = sampleWith({}, 15);
+      const onlyV = sampleWith({ only: 'verbs' }, 15);
+      ok(plain.n > 50 && onlyV.n > 50, 'not enough vocab items to judge the filters');
+      const plainShare = plain.verbs / plain.n, verbShare = onlyV.verbs / onlyV.n;
+      ok(verbShare > 0.9, `"solo verbos" dealt ${Math.round(verbShare * 100)}% verbs — it is not filtering`);
+      ok(plainShare < 0.5, `the unfiltered pool is ${Math.round(plainShare * 100)}% verbs, so the filter proves nothing`);
+      console.log('  vocab filters: unfiltered ' + Math.round(plainShare * 100) +
+                  '% verbs, "solo verbos" ' + Math.round(verbShare * 100) + '%');
+    }
 
     ok(n > 100, `only ${n} vocab items dealt`);
     ok(noAnswer === 0, `${noAnswer} vocab items had no answer`);
@@ -498,9 +541,14 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     ok(picks.length >= 3, `the focus picker offered ${picks.length} options`);
     ok(picks[0].textContent.indexOf('Todo') !== -1, '"Todo" is not the first option');
 
-    // Choose a tense and check it reaches the generator, not just the store.
-    const tense = picks[picks.length - 1];
-    const label = tense.textContent;
+    /* Choose a TENSE deliberately rather than by position — the picker also
+     * offers themes and "solo verbos" now, and grabbing the last row silently
+     * tested something else. */
+    const tenseLabelOf = k => (W.ENGINE.TENSE_LABEL && W.ENGINE.TENSE_LABEL[k]) || k;
+    const want = tenseLabelOf(W.ENGINE.TENSES[1].key);
+    const tense = picks.filter(p2 => p2.textContent.indexOf(want) === 0)[0];
+    ok(!!tense, `the focus picker offers no row for the tense "${want}"`);
+    const label = want;
     tense.click();
     const saved = JSON.parse(localStorage.getItem('fluidez.arcade') || '{}');
     ok(saved.focus && saved.focus.kind === 'tense', 'choosing a tense stored nothing');
@@ -513,8 +561,22 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     /* The consequence: an item on that topic must now be PREFERRED over one
      * that is not. GameItems.best() is what does it, and it is only reachable
      * through a draw, so draw a batch and check the topic is over-represented
-     * against an unfocused control. */
-    const t = saved.focus.tense;
+     * against an unfocused control.
+     *
+     * The tense is CHOSEN FROM WHAT THE POOL ACTUALLY CONTAINS rather than
+     * named here. Picking one by hand tested nothing twice: the first pick was
+     * whichever tense happened to be last in the engine's list, and the second
+     * was a tense with no cloze items at this rung at all, so both ends of the
+     * comparison were zero and the check passed by accident. */
+    W.GameItems.setFocus(null);
+    const seenTopics = {};
+    for (let i = 0; i < 300; i++) {
+      const it = W.GameItems.next('grammar', 6, rng, {});
+      if (it && /^tense:/.test(it.topic || '')) seenTopics[it.topic] = (seenTopics[it.topic] || 0) + 1;
+    }
+    const common = Object.keys(seenTopics).sort((a, b) => seenTopics[b] - seenTopics[a])[0];
+    ok(!!common, 'no grammar item carries a tense topic, so focus cannot be tested');
+    const t = common.replace(/^tense:/, '');
     function share(n) {
       let on = 0, total = 0;
       for (let i = 0; i < n; i++) {
@@ -558,8 +620,11 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     const tenseCount = W.ENGINE.TENSES.length;
     ok(picks.length >= tenseCount + 1,
        `the focus picker offered ${picks.length} options at A1; every tense (${tenseCount}) plus Todo should be reachable`);
-    ok(STAGE.all(n => n.cls().includes('arc-group')).length === 1,
-       'untaught tenses are not separated from taught ones, so the offer is not honest about where you are');
+    const groups = STAGE.all(n => n.cls().includes('arc-group'));
+    ok(groups.length >= 2,
+       'the picker should separate untaught tenses and themes into their own groups');
+    ok(groups.some(g => /Tema/i.test(g.textContent)),
+       'the picker offers no themes');
 
     // Changing level from the arcade must actually move the band.
     W.Shell.go();

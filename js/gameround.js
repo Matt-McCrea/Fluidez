@@ -296,7 +296,7 @@ window.GameRound = (function () {
         var got = cfg.topic ? GI.weakItem(cfg.topic, rung, rng)
                             : GI.next(cfg.kind, rung, rng,
                                 { silent: cfg.silent, tense: cfg.lockTense, tenses: cfg.tenses,
-                                  anyBand: cfg.anyBand });
+                                  anyBand: cfg.anyBand, theme: cfg.theme, only: cfg.only });
         if (!got) continue;
         fallback = got;
         if (!usedPrompts[keyOf(got)]) { item = got; break; }

@@ -109,11 +109,29 @@
   function tenseLabel(k) {
     return (window.ENGINE && window.ENGINE.TENSE_LABEL && window.ENGINE.TENSE_LABEL[k]) || k;
   }
+  function themeLabel(id) {
+    var t = (window.THEMES || []).filter(function (x) { return x.id === id; })[0];
+    return t ? (t.short || t.es || id) : id;
+  }
   function focusLabel(f) {
     if (!f) return 'Todo';
     if (f.kind === 'tense') return tenseLabel(f.tense);
+    if (f.kind === 'theme') return themeLabel(f.theme);
+    if (f.kind === 'verbs') return 'Solo verbos';
     if (f.kind === 'weak') return 'Mis fallos';
     return 'Todo';
+  }
+  /* What a focus means to the round that is about to start. A tense biases
+   * every game and locks Conjugación; a theme or a verbs-only choice is a real
+   * filter and only Vocabulario can honour it, because it is the only pool
+   * with a theme on every row. Returned as round config rather than applied
+   * globally, so a focus cannot silently change a game it does not fit. */
+  function roundExtras(g) {
+    var f = currentFocus();
+    if (!f || g.kind !== 'vocab') return null;
+    if (f.kind === 'verbs') return { only: 'verbs' };
+    if (f.kind === 'theme') return { theme: f.theme };
+    return null;
   }
   // Push the choice into the item generator. Called on load and on every change,
   // so a round started from anywhere is already pointed the right way.
@@ -193,7 +211,8 @@
     top.appendChild(el('h2', null, 'Enfoque'));
     wrap.appendChild(top);
     wrap.appendChild(el('p', 'arc-sub',
-      'Verbos se bloquea en el tiempo que elijas. Los demás juegos lo prefieren cuando pueden.'));
+      'Un tiempo verbal bloquea Conjugación y orienta los demás juegos. Un tema o ' +
+      '“solo verbos” filtran Vocabulario, que es el único juego que puede hacerlo.'));
 
     var list = el('div', 'arc-picks');
     function pick(label, note, f, on) {
@@ -208,6 +227,8 @@
     }
     var cur = currentFocus();
     pick('Todo', 'sin preferencia', null, !cur);
+    pick('Solo verbos', '1.166 verbos, solo su significado',
+         { kind: 'verbs' }, !!(cur && cur.kind === 'verbs'));
     var wk = weakTopic();
     if (wk) {
       pick('Mis fallos', wk.n + ' fallos en ' + (window.Games.topicLabel ? window.Games.topicLabel(wk.key) : wk.key),
@@ -232,14 +253,27 @@
     if (rest.length) {
       wrap.appendChild(el('div', 'arc-group', 'Todavía no los has estudiado'));
       var more = el('div', 'arc-picks');
-      var list0 = list;
       list = more;
       rest.forEach(function (t) {
         pick(tenseLabel(t), null, { kind: 'tense', tense: t },
              !!(cur && cur.kind === 'tense' && cur.tense === t));
       });
-      list = list0;
       wrap.appendChild(more);
+    }
+
+    /* Themes. Only Vocabulario can act on one — it is the only pool with a
+     * theme on every row — and the heading says so rather than leaving you to
+     * discover it by playing Traducción and noticing nothing changed. */
+    var themes = window.THEMES || [];
+    if (themes.length) {
+      wrap.appendChild(el('div', 'arc-group', 'Temas · solo en Vocabulario'));
+      var tl = el('div', 'arc-picks');
+      list = tl;
+      themes.forEach(function (t) {
+        pick(t.short || t.es || t.id, t.en || null, { kind: 'theme', theme: t.id },
+             !!(cur && cur.kind === 'theme' && cur.theme === t.id));
+      });
+      wrap.appendChild(tl);
     }
     h.appendChild(wrap);
   }
@@ -391,7 +425,7 @@
       var r = G.openTense(f.tense, 'Conjugación · ' + tenseLabel(f.tense), board);
       if (r !== null) return;                    // null = the lock was refused
     }
-    G.open(g.key, board);
+    G.open(g.key, board, roundExtras(g));
   }
 
   /* ---- the numbers -------------------------------------------------------

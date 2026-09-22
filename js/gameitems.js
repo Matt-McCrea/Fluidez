@@ -1087,7 +1087,15 @@ window.GameItems = (function () {
    * the prompt shows it in one — knowing Spanish is using it, not glossing it. */
   function vocabItem(rung, rng, opts) {
     var idx = index(), band = bandOf(rung);
-    var got = fromBands(idx.vocab, band, rng);
+    /* A REAL filter, not the usual bias. Everywhere else a focus only tips the
+     * choice between equally good candidates, because narrowing a translation
+     * round to one tense would exhaust the sentences and start repeating. The
+     * vocabulary is big enough to stand being narrowed: 1,166 verbs on their
+     * own, and every theme with dozens of words per band. */
+    var pool = idx.vocab;
+    if (opts && opts.only === 'verbs') pool = idx.byTheme.verbos || pool;
+    else if (opts && opts.theme && idx.byTheme[opts.theme]) pool = idx.byTheme[opts.theme];
+    var got = fromBands(pool, band, rng);
     if (!got) return null;
     var wd = got.item;
     /* `anyBand` lifts Profile.wordAllowed's ceiling, and only the vocabulary
@@ -1165,11 +1173,18 @@ window.GameItems = (function () {
   // Racha and the daily challenge draw from everything. The weights shift up
   // the ladder: recognition early, production and the ear later, because that
   // is also the order those skills become possible.
+  /* Zero since Escucha was retired (js/games.js). Removing the tile and
+   * leaving this at 2 would have taken the game away and kept the robot voice,
+   * turning up unannounced in one Racha question in six. Set it back to 2 to
+   * restore listening everywhere at once. */
+  var LISTEN_WEIGHT = 0;
+
   function mixedItem(rung, rng, opts) {
     var canHear = window.Speak && window.Speak.available() && !(opts && opts.silent);
+    var hear = canHear ? LISTEN_WEIGHT : 0;
     var table = rung <= 3
-      ? [['vocab', 3], ['grammar', 3], ['translate', 2], ['verb', 1], ['listen', canHear ? 2 : 0]]
-      : [['translate', 3], ['grammar', 3], ['verb', 2], ['vocab', 1], ['listen', canHear ? 2 : 0]];
+      ? [['vocab', 3], ['grammar', 3], ['translate', 2], ['verb', 1], ['listen', hear]]
+      : [['translate', 3], ['grammar', 3], ['verb', 2], ['vocab', 1], ['listen', hear]];
     var total = table.reduce(function (n, r) { return n + r[1]; }, 0);
     for (var attempt = 0; attempt < 6; attempt++) {
       var r = rnd(rng) * total, kind = table[0][0];
