@@ -814,12 +814,19 @@ window.GameItems = (function () {
   function contrastIndex() {
     if (CIDX) return CIDX;
     var idx = index();
-    CIDX = { 'ser-estar': emptyBuckets(), 'por-para': emptyBuckets(), 'pasado': emptyBuckets() };
+    /* Two past buckets, not one. Even with the ambiguity bug fixed the corpus
+     * leans narrative and therefore preterite; drawing from a single pool
+     * would still let "always pick the preterite" score well, which is the
+     * one thing a contrast game must not reward. Keeping them apart lets the
+     * draw alternate. */
+    CIDX = { 'ser-estar': emptyBuckets(), 'por-para': emptyBuckets(),
+             'pasado-pret': emptyBuckets(), 'pasado-imp': emptyBuckets() };
     BANDS.forEach(function (band) {
       var full = function () {
         return CIDX['ser-estar'][band].length >= CONTRAST_CAP &&
                CIDX['por-para'][band].length >= CONTRAST_CAP &&
-               CIDX['pasado'][band].length >= CONTRAST_CAP;
+               CIDX['pasado-pret'][band].length >= CONTRAST_CAP &&
+               CIDX['pasado-imp'][band].length >= CONTRAST_CAP;
       };
       (idx.pairs[band] || []).forEach(function (p) {
         if (full()) return;
@@ -846,10 +853,14 @@ window.GameItems = (function () {
             }
             continue;
           }
-          if (PAST_LOOK.test(low) && countWord(toks, low) === 1 && pastSwap(low)) {
-            if (CIDX['pasado'][band].length < CONTRAST_CAP) {
-              CIDX['pasado'][band].push({ es: p.es, en: p.en, at: i, word: w });
-              return;
+          if (PAST_LOOK.test(low) && countWord(toks, low) === 1) {
+            var sw = pastSwap(low, toks, i);
+            if (sw) {
+              var bucket = sw.tense === 'preterito' ? 'pasado-pret' : 'pasado-imp';
+              if (CIDX[bucket][band].length < CONTRAST_CAP) {
+                CIDX[bucket][band].push({ es: p.es, en: p.en, at: i, word: w });
+                return;
+              }
             }
             continue;
           }
@@ -866,24 +877,68 @@ window.GameItems = (function () {
     return n;
   }
 
-  /* The same verb and person in the OTHER past tense, or null when the token
-   * is not an unambiguous preterite/imperfect of a verb we can conjugate.
-   * Ambiguity is fatal here: if the form reads as two different verbs, the
-   * "wrong" option may be right under the other reading. */
-  function pastSwap(low) {
+  /* The same verb in the OTHER past tense, or null when the token is not a
+   * past form we can swap safely.
+   *
+   * THE AMBIGUITY THAT MATTERS IS TENSE, NOT PERSON. This first demanded a
+   * single analysis, which sounds careful and quietly threw away almost every
+   * imperfect in the corpus: every regular imperfect singular is spelled the
+   * same for `yo` and `él/ella` — `tenía` is both — so it always analysed
+   * twice and was always rejected, while `tuve` and `tuvo` are distinct and
+   * always passed. Measured at B2 before the fix: 121 preterite questions to
+   * 15 imperfect, which teaches "pick the preterite" rather than the contrast.
+   *
+   * So: every reading must agree on the TENSE (two tenses really would make
+   * the wrong option right), and the verb must be one we can conjugate. Where
+   * readings differ only in person the counterpart differs too — tenía gives
+   * tuve for yo and tuvo for él/ella — and the SUBJECT SLOT is the tiebreak:
+   * a `yo` in the two tokens before the verb picks the first person, anything
+   * else takes the narrative third. Scanning the whole sentence for `yo` was
+   * the first attempt and it read across clause boundaries: "Ella ＿＿＿ su
+   * turno; mientras tanto, yo empezaba el mío" was offered `terminé`, wrong in
+   * person as well as tense, which lets the answer be found without thinking
+   * about aspect at all. The answer is unaffected either way; this only keeps
+   * the distractor wrong about exactly one thing. */
+  /* The engine conjugates a reflexive verb WITH its clitic — mudarse in the
+   * imperfect is "se mudaba" — and the sentence being blanked already has the
+   * `se` in it: "La familia se ＿＿＿ al campo". Offering the full form as an
+   * option produced "se se mudaba", which is not Spanish and gives the answer
+   * away by being obviously broken. The gap holds ONE token, so the
+   * counterpart has to be one token too: keep the verb, drop the clitic the
+   * sentence already supplies. */
+  function bareForm(f) {
+    return f ? String(f).trim().split(/\s+/).pop() : null;
+  }
+
+  function pastSwap(low, toks, at) {
     var an = (E.analyzeToken(low) || []).filter(function (a) {
       return a.tense === 'preterito' || a.tense === 'imperfecto';
     });
-    if (an.length !== 1) return null;
-    var a = an[0];
+    if (!an.length) return null;
+    var tense = an[0].tense;
+    for (var k = 1; k < an.length; k++) if (an[k].tense !== tense) return null;
+
+    var a = null;
+    if (an.length > 1) {
+      var yo = false;
+      if (toks && typeof at === 'number') {
+        for (var t = Math.max(0, at - 2); t < at; t++) {
+          if (toks[t].replace(/[.,;:!?¿¡"“”()]/g, '').toLowerCase() === 'yo') { yo = true; break; }
+        }
+      }
+      a = an.filter(function (x) { return x.person === (yo ? 'yo' : 'él/ella'); })[0] || an[0];
+    } else {
+      a = an[0];
+    }
     if (a.inf === 'ser' || a.inf === 'estar' || a.inf === 'ir') return null;  // their own game
     var v = E.verbByInf(a.inf);
     if (!v) return null;
-    var other = a.tense === 'preterito' ? 'imperfecto' : 'preterito';
-    var i = E.personsFor(a.tense).indexOf(a.person);
+    var other = tense === 'preterito' ? 'imperfecto' : 'preterito';
+    var i = E.personsFor(tense).indexOf(a.person);
     if (i < 0) return null;
-    var form = E.conjugate(v, other)[i];
-    return (form && form.toLowerCase() !== low) ? form : null;
+    var form = bareForm(E.conjugate(v, other)[i]);
+    if (!form || form.toLowerCase() === low) return null;
+    return { form: form, tense: tense };
   }
 
   function serEstarSwap(low) {
@@ -895,29 +950,42 @@ window.GameItems = (function () {
     var other = E.verbByInf(a.inf === 'ser' ? 'estar' : 'ser');
     var i = E.personsFor(a.tense).indexOf(a.person);
     if (!other || i < 0) return null;
-    var form = E.conjugate(other, a.tense)[i];
+    var form = bareForm(E.conjugate(other, a.tense)[i]);
     return (form && form.toLowerCase() !== low) ? form : null;
   }
 
   var CONTRAST_META = {
-    'ser-estar': { topic: 'lesson:ser-estar', bonus: 55 },
-    'por-para':  { topic: 'lesson:por-para',  bonus: 40 },
-    'pasado':    { topic: 'lesson:preterite-imperfect', bonus: 60 }
+    'ser-estar':   { topic: 'lesson:ser-estar', bonus: 55 },
+    'por-para':    { topic: 'lesson:por-para',  bonus: 40 },
+    'pasado-pret': { topic: 'lesson:preterite-imperfect', bonus: 60 },
+    'pasado-imp':  { topic: 'lesson:preterite-imperfect', bonus: 60 }
   };
 
   function contrastItem(rung, rng) {
     var ci = contrastIndex(), band = bandOf(rung);
     // Try the kinds in a shuffled order so no one contrast dominates a round.
+    /* Three contrasts, evenly. The past split lives INSIDE its own draw rather
+     * than as two entries here — putting both buckets in the shuffle balanced
+     * preterite against imperfect and quietly gave the past contrast half of
+     * every round, which is the same kind of skew one layer up. */
     var kinds = E.shuffle(['ser-estar', 'por-para', 'pasado'], rng);
     for (var k = 0; k < kinds.length; k++) {
       var kind = kinds[k];
-      var got = fromBands(ci[kind], band, rng);
+      var order = kind !== 'pasado' ? [kind]
+        : (rnd(rng) < 0.5 ? ['pasado-imp', 'pasado-pret'] : ['pasado-pret', 'pasado-imp']);
+      var got = null;
+      for (var b = 0; b < order.length && !got; b++) {
+        got = fromBands(ci[order[b]], band, rng);
+        if (got) kind = order[b];
+      }
       if (!got) continue;
       var row = got.item;
       var low = row.word.toLowerCase();
+      var toks0 = row.es.split(/\s+/);
+      var sw2 = kind.indexOf('pasado') === 0 ? pastSwap(low, toks0, row.at) : null;
       var alt = kind === 'ser-estar' ? serEstarSwap(low)
               : kind === 'por-para'  ? (low === 'por' ? 'para' : 'por')
-              : pastSwap(low);
+              : (sw2 && sw2.form);
       if (!alt) continue;
       var toks = row.es.split(/\s+/);
       var shown = toks.slice();

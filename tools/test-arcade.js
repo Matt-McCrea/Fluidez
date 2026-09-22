@@ -210,6 +210,67 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     }
   }
   ok(dealt >= 55, `Uno u otro dealt only ${dealt} of 60 attempts`);
+
+  /* ---- the contrast must actually be a contrast -------------------------
+   * At B2 this game asked for the preterite in 121 of 136 past questions,
+   * because pastSwap demanded a single morphological reading and EVERY
+   * regular imperfect singular has two — `tenía` is both yo and él/ella,
+   * while `tuve` and `tuvo` are distinct. A binary game whose answer is
+   * nearly always the same option teaches the option, not the distinction. */
+  {
+    const sample = (band, rung, n) => {
+      W.Profile.set(band);
+      W.GameItems.reset();
+      const topic = {}, past = { preterito: 0, imperfecto: 0 };
+      let bad = 0, persons = 0;
+      for (let i = 0; i < n; i++) {
+        const it = W.GameItems.next('contrast', rung, rng, {});
+        if (!it) continue;
+        topic[it.topic] = (topic[it.topic] || 0) + 1;
+        if (it.topic !== 'lesson:preterite-imperfect') continue;
+        const other = it.options.filter(o => o !== it.answer)[0];
+        const A = W.ENGINE.analyzeToken(it.answer.toLowerCase())
+                    .filter(a => a.tense === 'preterito' || a.tense === 'imperfecto');
+        const B = W.ENGINE.analyzeToken(String(other).toLowerCase())
+                    .filter(a => a.tense === 'preterito' || a.tense === 'imperfecto');
+        if (!A.length || !B.length) { bad++; continue; }
+        past[A[0].tense] = (past[A[0].tense] || 0) + 1;
+        // Same verb, other tense: the distractor must be wrong about aspect
+        // and nothing else, or it can be eliminated without thinking about it.
+        if (A[0].inf !== B[0].inf) bad++;
+        if (A[0].tense === B[0].tense) bad++;
+        /* An explicit third-person subject in the slot before the gap must
+         * not be answered with a first-person distractor — "Ella ＿＿＿ su
+         * turno … yo empezaba el mío" was offered `terminé`, which reads as
+         * a typo and gives the answer away. */
+        const before = it.prompt.split(/\s+/)[it.prompt.split(/\s+/).indexOf('＿＿＿') - 1] || '';
+        if (/^(ella|él|el)$/i.test(before.replace(/[.,;:]/g, ''))) {
+          if (!B.some(x => x.person === 'él/ella')) persons++;
+        }
+      }
+      return { topic, past, bad, persons };
+    };
+
+    [['A2', 3], ['B1', 5], ['B2', 7], ['C1', 9]].forEach(([band, rung]) => {
+      const r = sample(band, rung, 400);
+      const p = r.past.preterito || 0, q = r.past.imperfecto || 0;
+      const share = q / Math.max(1, p + q);
+      ok(share > 0.3 && share < 0.7,
+         `${band}: the past contrast is ${Math.round(share * 100)}% imperfect — one option dominates`);
+      ok(r.bad === 0, `${band}: ${r.bad} past questions whose two options are not the same verb in two tenses`);
+      ok(r.persons === 0, `${band}: ${r.persons} questions gave a first-person distractor after an explicit él/ella`);
+      // All three contrasts should keep roughly a third each.
+      const total = Object.keys(r.topic).reduce((n, k) => n + r.topic[k], 0);
+      ['lesson:ser-estar', 'lesson:por-para', 'lesson:preterite-imperfect'].forEach(t => {
+        const sh = (r.topic[t] || 0) / Math.max(1, total);
+        ok(sh > 0.2 && sh < 0.5,
+           `${band}: ${t} is ${Math.round(sh * 100)}% of the round — the three contrasts should be even`);
+      });
+    });
+    W.Profile.set('C1');
+    W.GameItems.reset();
+    console.log('  contrast balance checked across A2-C1');
+  }
   ok(Object.keys(topics).length === 3,
      'Uno u otro is not covering all three contrasts: ' + Object.keys(topics).join(', '));
 
