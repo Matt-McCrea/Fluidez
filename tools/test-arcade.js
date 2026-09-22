@@ -216,6 +216,40 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
         }
       }
     }
+    /* Verbs have to be reachable AS WORDS. 1,158 of the 1,166 appear nowhere
+     * in this app except conjugated, which made Conjugación and Traducción ask
+     * two questions at once and mark you wrong on the second when you failed
+     * the first. */
+    let asWords = 0;
+    for (let i = 0; i < 400; i++) {
+      const it = W.GameItems.next('vocab', 4 + (i % 7), rng, { anyBand: true });
+      if (!it) continue;
+      const word = it.play === 'type' ? it.answer : it.prompt;
+      if (/^[a-záéíóúñ]+(ar|er|ir)(se)?$/.test(String(word))) asWords++;
+    }
+    ok(asWords > 15, `only ${asWords} of 400 vocab draws were verbs — they should be learnable as words`);
+
+    /* And the vocabulary game is the one with no band ceiling: a word above
+     * your level is just a word you do not know yet, where a TENSE above it is
+     * noise. Assert both halves of that policy. */
+    W.Profile.set('A2');
+    W.GameItems.reset();
+    const BANDS2 = ['A1', 'A2', 'B1', 'B2', 'C1'];
+    const above = (opts) => {
+      let hi = 0;
+      for (let r = 1; r <= 10; r++) {
+        for (let k = 0; k < 20; k++) {
+          const it = W.GameItems.next('vocab', r, rng, opts);
+          if (it && BANDS2.indexOf(it.cefr) > BANDS2.indexOf('A2')) hi++;
+        }
+      }
+      return hi;
+    };
+    ok(above({ anyBand: true }) > 0, 'anyBand did not let the vocabulary game reach above your band');
+    ok(above({}) === 0, 'vocabulary reached above your band without anyBand — the cap is not working');
+    W.Profile.set('B2');
+    W.GameItems.reset();
+
     ok(n > 100, `only ${n} vocab items dealt`);
     ok(noAnswer === 0, `${noAnswer} vocab items had no answer`);
     ok(longTyped === 0, `${longTyped} typed vocab answers are longer than three words`);

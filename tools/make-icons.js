@@ -13,15 +13,14 @@
  * rots. So the PNGs are written here with nothing but node's own zlib: an
  * RGBA buffer, a deflate, four chunks and a CRC.
  *
- * TO CHANGE THE ICON, edit PALETTE or FLAME below and run it again. --preview
+ * TO CHANGE THE ICON, edit PALETTE, FLAME or INNER below and run it again. --preview
  * shows the silhouette in the terminal, which is the fastest way to judge a
  * shape change; the colours need a real look.
  *
- * WHAT IT DRAWS. A flame, split down the middle: ice on the left, fire on the
- * right, on the arcade's own near-black. One shape, two temperatures — the
- * app is the calm blue-green thing and this is the one you open to burn
- * ninety seconds. It has to read at 48 pixels on a home screen, which is why
- * it is a single silhouette and not a scene.
+ * WHAT IT DRAWS. A flame, pale gold on a burnt-orange ground. The app is the
+ * calm blue-green thing; this is the one you open to burn ninety seconds. It
+ * has to read at 48 pixels on a home screen, which is why it is a single
+ * silhouette and not a scene.
  * ========================================================================== */
 'use strict';
 const fs = require('fs'), path = require('path'), zlib = require('zlib');
@@ -29,13 +28,22 @@ const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'juegos', 'icons');
 
 /* ---- the bits you change ------------------------------------------------- */
+/* Fire on orange. The first version split the flame ice/fire on near-black,
+ * which was a nice idea and the wrong one: at 48 pixels the cold half read as
+ * a separate object and the whole thing looked like a raindrop someone had
+ * coloured in. One temperature is legible; two are a puzzle.
+ *
+ * The flame is the PALE thing here, not the orange one. An orange flame on an
+ * orange ground has nothing to separate it — so the ground takes the burnt end
+ * of the range and the flame takes cream and gold, which is also the right way
+ * round physically: the hot part is the bright part. */
 const PALETTE = {
-  bg:      [10, 13, 19],        // the arcade's --bg
-  glow:    [24, 38, 58],        // faint radial lift behind the flame
-  iceTop:  [150, 240, 250],     // flame, left side, near the tip
-  iceLow:  [40, 120, 220],      // flame, left side, at the base
-  fireTop: [255, 214, 120],     // flame, right side, near the tip
-  fireLow: [226, 60, 32]        // flame, right side, at the base
+  bgCentre:  [240, 138, 56],    // orange ground, lit from the middle
+  bgEdge:    [146, 50, 14],     // burnt at the corners, so the tile has depth
+  tipLeft:   [255, 250, 226],   // flame: near-white at the tip
+  baseLeft:  [255, 186, 38],    // deepening to gold at the base
+  tipRight:  [255, 240, 186],   // the right side is a shade warmer, which is
+  baseRight: [255, 146, 24]     // what gives a flat silhouette its roundness
 };
 const FLAME = {
   tipY: -0.92,                  // -1 is the top edge, +1 the bottom
@@ -45,7 +53,19 @@ const FLAME = {
   sway: 0.07,                   // counter-bend in the body, which is what
                                 // separates a flame from a falling droplet
   waist: 0.13,                  // how much the body pinches below the tip
-  blend: 0.11                   // width of the ice/fire crossfade, in units
+  blend: 0.45                   // how soft the left-to-right shading is
+};
+/* The inner flame. This is the whole difference between a flame and a
+ * teardrop: a drop is one closed shape and fire has a core. Without it the
+ * silhouette was legible and kept being read as water, which is the one thing
+ * this icon must not say — the app it sits beside is called Fluidez and has a
+ * wave on it. Same outline, scaled and dropped so its tip sits inside the
+ * body, in the deep orange the ground is made of. */
+const INNER = {
+  scale: 0.44,                  // fraction of the outer flame
+  drop: 0.46,                   // how far down it sits, in the same units
+  top:  [255, 176, 40],         // inner flame at its tip
+  base: [226, 74, 16]           // and at its base
 };
 const SIZES = [
   { file: 'icon-192.png', size: 192, scale: 1 },
@@ -57,9 +77,6 @@ const SIZES = [
 ];
 
 /* ---- the shape ----------------------------------------------------------- */
-/* Flame = a round base with a tapering wedge rising out of it. Two primitives
- * unioned, which is enough silhouette at icon size and stays legible when the
- * launcher shrinks it to a thumbnail. */
 /* THE DIFFERENCE BETWEEN A FLAME AND A RAINDROP is entirely in these two
  * functions, and the first attempt got a raindrop: a straight-sided cone on a
  * ball, symmetrical, with a visible shoulder where the two met.
@@ -88,11 +105,22 @@ function profile(v, side) {
   const waist = 1 - FLAME.waist * Math.sin(Math.PI * Math.pow(v, 1.4));
   return Math.max(0, base * waist);
 }
-/* A plain union of the wedge and the base circle. A p-norm blend was tried
- * here to round the shoulders and did the opposite: where the two outlines are
- * both near the base radius it sums them to about 1.15R and grows a flat wing
- * on each side. max() leaves a faint crease where the outlines cross, which at
- * icon size is a highlight rather than a fault. */
+/* The inner flame, in the outer flame's own coordinates, so one shape function
+ * serves both and they cannot drift apart. */
+function inInner(x, y, s) {
+  return inFlame(x / INNER.scale, (y - INNER.drop / s) / INNER.scale, s);
+}
+function innerColour(y, s) {
+  const span = ((FLAME.baseY - FLAME.tipY) * INNER.scale) / s;
+  const top = (FLAME.tipY * INNER.scale + INNER.drop) / s;
+  return mix(INNER.top, INNER.base, Math.max(0, Math.min(1, (y - top) / span)));
+}
+
+/* A plain union of the tapering wedge and the round base. A p-norm blend was
+ * tried here to soften the shoulders and did the opposite: where the two
+ * outlines are both near the base radius it sums them to about 1.15R and grows
+ * a flat wing on each side. max() leaves a faint crease where they cross,
+ * which at icon size is a highlight rather than a fault. */
 function inFlame(x, y, s) {
   const tipY = FLAME.tipY / s, baseY = FLAME.baseY / s, baseR = FLAME.baseR / s;
   const dx = x - axisAt(y, s);
@@ -107,12 +135,13 @@ function mix(c1, c2, t) { return [lerp(c1[0], c2[0], t), lerp(c1[1], c2[1], t), 
 
 function flameColour(x, y, s) {
   const v = Math.max(0, Math.min(1, (y - FLAME.tipY / s) / ((FLAME.baseY - FLAME.tipY) / s)));
-  const ice = mix(PALETTE.iceTop, PALETTE.iceLow, v);
-  const fire = mix(PALETTE.fireTop, PALETTE.fireLow, v);
-  // A crossfade rather than a hard seam: a hard line reads as two shapes.
+  const left = mix(PALETTE.tipLeft, PALETTE.baseLeft, v);
+  const right = mix(PALETTE.tipRight, PALETTE.baseRight, v);
+  // Wide crossfade: the two sides differ only slightly now, and the point is
+  // a soft roundness across the body rather than a seam down the middle.
   const dx = x - axisAt(y, s);
   const t = Math.max(0, Math.min(1, (dx + FLAME.blend) / (2 * FLAME.blend)));
-  return mix(ice, fire, t);
+  return mix(left, right, t);
 }
 
 /* 3x3 supersampling, because a flame is all diagonals and a hard-edged one
@@ -128,9 +157,12 @@ function render(size, scale) {
           const x = ((px + (sx + 0.5) / SS) / size) * 2 - 1;
           const y = ((py + (sy + 0.5) / SS) / size) * 2 - 1;
           const d = Math.sqrt(x * x + y * y);
-          const bg = mix(PALETTE.glow, PALETTE.bg, Math.min(1, d / 1.15));
+          const bg = mix(PALETTE.bgCentre, PALETTE.bgEdge, Math.min(1, d / 1.25));
           let c = bg;
-          if (inFlame(x, y, scale)) { c = flameColour(x, y, scale); hits++; }
+          if (inFlame(x, y, scale)) {
+            c = inInner(x, y, scale) ? innerColour(y, scale) : flameColour(x, y, scale);
+            hits++;
+          }
           r += c[0]; g += c[1]; b += c[2];
         }
       }
@@ -180,11 +212,11 @@ if (process.argv.indexOf('--preview') !== -1) {
     for (let px = 0; px < N * 2; px++) {
       const x = ((px + 0.5) / (N * 2)) * 2 - 1;
       const y = ((py + 0.5) / N) * 2 - 1;
-      line += inFlame(x, y, 1) ? (x - axisAt(y, 1) < 0 ? '#' : '@') : '.';
+      line += inFlame(x, y, 1) ? (inInner(x, y, 1) ? '@' : '#') : '.';
     }
     console.log(line);
   }
-  console.log('\n# = ice side   @ = fire side   . = background');
+  console.log('\n# = outer flame   @ = inner flame   . = background');
   process.exit(0);
 }
 

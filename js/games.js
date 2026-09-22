@@ -102,9 +102,15 @@ window.Games = (function () {
      * words or fewer and tapped when it is longer, and the article is optional
      * either way, because knowing `mesa` and not knowing whether it takes el
      * or la are two different gaps and only one of them is being asked about. */
+    /* The only game with no band ceiling (`anyBand` + `maxRung`), and the only
+     * one that should have none. Everywhere else the cap is protecting you
+     * from a question you cannot yet answer; here there is no such question,
+     * because a word above your level is just a word you do not know yet. The
+     * ladder still starts at your own band and only climbs on correct answers,
+     * so the hard vocabulary is earned rather than dealt. */
     { key: 'vocabulario', name: 'Vocabulario', rule: 'la palabra, sin conjugar', icon: '📖',
-      hue: '#6f8f2a', secs: 90, kind: 'vocab',
-      blurb: 'De la palabra inglesa a la española. Sin tiempos, sin personas.' },
+      hue: '#6f8f2a', secs: 90, kind: 'vocab', maxRung: 10, anyBand: true,
+      blurb: 'De la palabra inglesa a la española, verbos incluidos. Todos los niveles.' },
     { key: 'gramatica', name: 'Gramática', rule: '¿cuál va aquí?', icon: '🎯',
       hue: '#2f7fb8', secs: 90, kind: 'grammar',
       blurb: 'Ser o estar, por o para, indicativo o subjuntivo. Noventa segundos.' },
@@ -175,6 +181,8 @@ window.Games = (function () {
       duration: g.secs ? g.secs * 1000 : null,
       lives: g.lives || 0, hue: g.hue,
       sudden: !!g.sudden,
+      maxRung: g.maxRung || 0,
+      anyBand: !!g.anyBand,
       silent: GS.silent() || !hasVoice(),
       onExit: backToList
     };

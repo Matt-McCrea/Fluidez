@@ -286,6 +286,28 @@ window.GameItems = (function () {
     });
     }
 
+    /* --- verbs, as WORDS ---------------------------------------------------
+     * 1,158 of the 1,166 verbs appear nowhere in this app except conjugated.
+     * That makes Conjugación and Traducción ask two questions at once — do you
+     * know `jubilarse`, and can you put it in the pluperfect — and marks you
+     * wrong on the second when you failed the first. A verb you have never met
+     * is not a conjugation problem.
+     *
+     * data/verbs.js is ordered by frequency, so its index IS the difficulty
+     * signal, and RUNG_VERBS above already encodes where the bands fall; the
+     * same thresholds are reused here rather than a second opinion about which
+     * verbs are hard. Theme 'verbos' keeps their distractors other verbs,
+     * which is what makes the four-way version a real question. */
+    (window.VERBS || []).forEach(function (v, i) {
+      if (!v.inf || !v.en) return;
+      var band = i < 60 ? 'A1' : i < 150 ? 'A2' : i < 350 ? 'B1' : i < 700 ? 'B2' : 'C1';
+      var row = { es: v.inf, en: v.en, cefr: band, cat: 'verbos', theme: 'verbos', isVerb: true };
+      idx.vocab[band].push(row);
+      if (!idx.byTheme.verbos) idx.byTheme.verbos = emptyBuckets();
+      idx.byTheme.verbos[band].push(row);
+      idx.words[v.inf.toLowerCase()] = 1;
+    });
+
     /* ---- synonyms, derived rather than authored ---------------------------
      * enviar and mandar are both "to send", and a game that accepts only the
      * one its data file happened to store is marking correct Spanish wrong.
@@ -1063,12 +1085,17 @@ window.GameItems = (function () {
    * of a kitchen are a real question; "la sartén / hello / quarterly / to
    * legislate" is a reading-speed test. Where the word carries collocations,
    * the prompt shows it in one — knowing Spanish is using it, not glossing it. */
-  function vocabItem(rung, rng) {
+  function vocabItem(rung, rng, opts) {
     var idx = index(), band = bandOf(rung);
     var got = fromBands(idx.vocab, band, rng);
     if (!got) return null;
     var wd = got.item;
-    if (window.Profile && !window.Profile.wordAllowed(wd)) return null;
+    /* `anyBand` lifts Profile.wordAllowed's ceiling, and only the vocabulary
+     * game sets it. Words have no prerequisites: meeting `desempeñar` above
+     * your band costs nothing, because you either know it or you now do. A
+     * TENSE you have never met is the opposite — there is nothing to recover
+     * from a wrong guess — so the cap stays everywhere else. */
+    if (window.Profile && !(opts && opts.anyBand) && !window.Profile.wordAllowed(wd)) return null;
     var theme = wd.theme || wd.cat || 'otros';
     var siblings = (idx.byTheme[theme] && idx.byTheme[theme][got.cefr]) || [];
     var pool = siblings.length >= 6 ? siblings : idx.vocab[got.cefr];
@@ -1174,7 +1201,7 @@ window.GameItems = (function () {
       case 'verb':      return verbItem(rung, rng, opts);
       case 'grammar':   return grammarItem(rung, rng);
       case 'contrast':  return contrastItem(rung, rng);
-      case 'vocab':     return vocabItem(rung, rng);
+      case 'vocab':     return vocabItem(rung, rng, opts);
       case 'tense':     return tenseItem(rung, rng, opts);
       case 'mixed':     return mixedItem(rung, rng, opts);
       default:          return mixedItem(rung, rng, opts);
