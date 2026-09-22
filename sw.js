@@ -14,7 +14,7 @@
  * ASSETS must mirror every <script>/<link> in index.html. No bundler here —
  * keep this list in sync by hand when a new data/js file is added there.
  * ========================================================================== */
-var CACHE_VERSION = 'c1e0328f8';
+var CACHE_VERSION = 'c408dfa65';
 var CACHE_NAME = 'fluidez-' + CACHE_VERSION;
 
 var ASSETS = [
@@ -31,6 +31,7 @@ var ASSETS = [
   './js/perf.js',
   './data/taxonomy.js',
   './data/connectors.js',
+  './data/rubrics.js',
   './data/verbs.js',
   './data/vocab.js',
   './data/idioms.js',
@@ -61,6 +62,7 @@ var ASSETS = [
   './js/userwords.js',
   './js/phrases.js',
   './js/deck.js',
+  './js/essay.js',
 
   './js/views/review.js',
   './js/views/learn.js',
@@ -117,6 +119,23 @@ self.addEventListener('activate', function (event) {
 // next time). Anything not in ASSETS still gets opportunistically cached.
 self.addEventListener('fetch', function (event) {
   if (event.request.method !== 'GET') return;
+
+  /* HANDS OFF THE ARCADE. This worker's scope is './' — the whole site — and
+   * juegos/ is a separate build with its own worker and its own cache. While
+   * this one answered requests for that page it could hand it a MIXTURE: the
+   * arcade's new files were never in this cache so they arrived fresh, while
+   * shared files like js/gamescore.js were in it and arrived stale. The new
+   * board then called a function the old build had never heard of, and the
+   * page went blank. Ignoring the directory entirely lets the first load of
+   * the arcade come from the network and register its own worker, which then
+   * controls every fetch that page makes.
+   *
+   * Note this must catch the arcade's OWN requests for shared files too, and
+   * it does: once juegos/sw.js is the controller for that client, this worker
+   * never sees them. Before that, the referrer is what distinguishes them —
+   * but a navigation to juegos/ is enough to break the cycle. */
+  if (event.request.url.indexOf('/juegos/') !== -1) return;
+
   event.respondWith(
     caches.match(event.request).then(function (cached) {
       if (cached) return cached;

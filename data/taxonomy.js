@@ -91,8 +91,20 @@ window.SUPPORT = [
  * translates none of them is not teaching them.
  * ------------------------------------------------------------------------ */
 window.STRANDS = [
+  /* `exponents` was deliberately absent here and that was the single costliest
+   * line in this file. A grammar lesson could carry no ready-to-say Spanish
+   * block at all, so its only Spanish was a keyword table and ~3 examples —
+   * which is why the grammar strand had the worst explanation-to-Spanish ratio
+   * in EVERY band (A1 4.17:1 against the notion strand's 2.58) while being 23%
+   * of A1's days. The lessons about the machinery were structurally the
+   * thinnest in the language. See CURRICULUM_AUDIT.md §2.
+   *
+   * No `registerContrast`: a grammar lesson's exponents are the construction
+   * being used, not a social choice between ways of saying it, so demanding
+   * two registers would make them worse. Same reasoning as `notion`. */
   { id: 'grammar',   label: 'Gramática',  inventory: 'gramatica',
-    blocks: ['keywords', 'sections', 'contrasts', 'pitfalls', 'examples'] },
+    blocks: ['keywords', 'sections', 'exponents', 'contrasts', 'pitfalls', 'examples'],
+    exponentsOptional: true },
   { id: 'function',  label: 'Funciones',  inventory: 'funciones',
     blocks: ['keywords', 'sections', 'exponents', 'contrasts', 'pitfalls', 'examples'],
     registerContrast: true },

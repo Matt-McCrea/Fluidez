@@ -584,3 +584,13 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* ---- the ghost -----------------------------------------------------------
+   The PB slot becomes a live gap once there is a record round to race: how
+   far ahead or behind you are RIGHT NOW. Green and red are already "right"
+   and "wrong" everywhere in a round, so the ghost borrows the good colour
+   only for ahead and stays deliberately quiet when behind — being behind is
+   the normal state for most of a round and should not read as a mistake. */
+.g-pb[data-race] { font-variant-numeric:tabular-nums; font-weight:700; }
+.g-pb[data-race="ahead"]  { color:var(--good); }
+.g-pb[data-race="behind"] { color:var(--muted); }

@@ -89,10 +89,49 @@ window.StageReview = (function () {
         kind: 'verb-tense', tense: pick.tense, fixed: true, enrolledOnly: true, hint: E.TENSE_LABEL[pick.tense]
       });
     });
-    /* The phrases every lesson opens with (js/phrases.js). enrolledOnly, so
-     * they are not 5,290 cards dumped into the deck on day one — a phrase
-     * arrives here because a game round put it in play, which means it
-     * arrives because you got it wrong, which is when it is worth asking. */
+    /* CONTRAST cards, scheduled per contrast (`ac:ser-estar`), the same way
+     * the verb+tense pairs above are scheduled per pair — a different real
+     * sentence is drawn each time, the id and so the schedule is stable.
+     *
+     * Without this the schedule was write-only: js/views/apply.js has been
+     * grading `ac:<focus>` on every choice item and nothing anywhere read the
+     * id back, so a learner's record on ser/estar accumulated and was never
+     * used to ask them again. The drill happened once, on the day its lesson
+     * came round, and the contrast never returned.
+     *
+     * Asked as a CHOICE, not typed: the item is two real candidates and the
+     * sentence decides between them, so `probe` carries the options and
+     * resolve() renders it as the multiple choice it was written as. Typing
+     * "está" into a blank box would be a different, easier question.
+     *
+     * Gated by level rather than by taught tense, because a choice item need
+     * not contain a verb at all. */
+    var gate = (P.params() || {}).maxGate || 99;
+    var seenFocus = {};
+    (window.APPLY_ITEMS || []).forEach(function (it) {
+      if (it.type !== 'choice' || !it.focus) return;
+      if ((it.level || 1) > gate) return;
+      if (seenFocus[it.focus]) return; seenFocus[it.focus] = 1;
+      var group = (window.APPLY_ITEMS || []).filter(function (x) {
+        return x.type === 'choice' && x.focus === it.focus && (x.level || 1) <= gate;
+      });
+      var pick = group[Math.floor(Math.random() * group.length)];
+      items.push({
+        id: 'ac:' + it.focus,
+        front: pick.text.replace('___', '＿＿＿'), back: pick.options[pick.answer],
+        kind: 'grammar', fixed: true, enrolledOnly: true, hint: pick.why || null,
+        probe: { kind: 'mcq', options: pick.options, answer: pick.answer }
+      });
+    });
+    /* The Spanish every lesson is built out of — its keyword table and its
+     * exponents (js/phrases.js). enrolledOnly, so they are not 4,681 cards
+     * dumped into the deck on day one; a phrase arrives here once something
+     * has enrolled it, which is now js/views/learn.js on the day its lesson
+     * runs (and still a game round, for anything met that way first).
+     *
+     * Until that enrolment existed this pool was effectively empty for anyone
+     * who did not play the games, which is what CURRICULUM_AUDIT.md §1.1 found:
+     * the review loop carried the grammar point and never the language. */
     (window.Phrases ? window.Phrases.all() : []).forEach(function (ph) {
       items.push({ id: ph.id, es: ph.es, en: ph.en, kind: 'phrase',
                    hint: ph.note || null, enrolledOnly: true });
@@ -289,9 +328,27 @@ window.StageReview = (function () {
       body.appendChild(controls);
       var locked = false, revealed = false;
       function good() { if (locked) return; locked = true; feedback.textContent = '¡Correcto! ' + R.back; feedback.className = 'feedback good'; setTimeout(function () { advance(true); }, 350); }
-      // a two-meaning gloss or a gender bracket accepts any one of its parts
+      /* A two-meaning gloss or a gender bracket accepts any one of its parts.
+       *
+       * Read off `cur`, the pool card, NOT off `R`: resolve() returns only
+       * {front, back, mode, toSpanish, hint}, so `R.kind` was always undefined
+       * and this whole table silently evaluated to false — the review stage
+       * has never once applied meaning-alternatives, while js/deck.js (which
+       * reads cur.kind) always has. Same bug would have swallowed the phrase
+       * leniency below. */
       var MEANING = { vocab: 1, idiom: 1, phrase: 1, capture: 1, verb: 1 };
-      function mOpts() { return { meaning: !!MEANING[R.kind] }; }
+      /* A phrase card is graded generously on purpose: any Spanish the course
+       * glosses the same way passes, and an accent slip passes with the
+       * accented form shown back. See js/checker.js checkExact. */
+      function mOpts() {
+        var o = { meaning: !!MEANING[cur.kind] };
+        if (cur.kind === 'phrase' && R.toSpanish && window.Phrases) {
+          // ...except where the accent is the only thing separating two words
+          if (!window.Phrases.accentCritical(R.back)) o.accents = 'lenient';
+          o.also = window.Phrases.alternatives(R.front);
+        }
+        return o;
+      }
       input.addEventListener('input', function () {
         if (locked || revealed) return;
         if (C.checkExact(input.value, R.back, mOpts()).pass) good();

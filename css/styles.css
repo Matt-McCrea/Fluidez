@@ -908,3 +908,60 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
   .home-extra .he-ico { font-size:1.3rem; }
   .home-extra .he-text b { font-size:1rem; }
 }
+
+/* ---- ESSAY (js/essay.js) — extended B2/C1 writing ------------------------
+   Four phases in one panel. The visual job is to make the PLAN phase feel
+   like a briefing rather than a form: no box on screen, the situation set in
+   body size rather than as a muted caption, because it is the thing being
+   read most carefully. Everything after that reuses the writing vocabulary
+   already defined above (.constraint, .model-answer, .write-counter) — an
+   essay must not look like a different app from the stage it sits in. ---- */
+.essay-eyebrow { text-transform:uppercase; letter-spacing:.08em; font-weight:700; }
+
+.essay-brief {
+  border-left:3px solid var(--accent); background:var(--panel-2);
+  border-radius:0 10px 10px 0; padding:12px 16px; margin:14px 0;
+}
+.essay-brief-label { text-transform:uppercase; letter-spacing:.06em; font-weight:700; margin-bottom:4px; }
+.essay-brief p { margin:0; line-height:1.55; }
+
+.essay-plan { margin:8px 0 0; padding-left:22px; }
+.essay-plan li { padding:5px 0; line-height:1.45; }
+
+.essay-rubric-peek, .essay-brief-fold, .essay-plan-fold { margin:12px 0; }
+.essay-rubric-peek > summary, .essay-brief-fold > summary, .essay-plan-fold > summary {
+  cursor:pointer; color:var(--muted); font-size:.9rem; font-weight:600;
+}
+.essay-rubric-peek[open] > summary, .essay-brief-fold[open] > summary,
+.essay-plan-fold[open] > summary { color:var(--text); }
+
+/* Tall enough that two hundred words do not scroll inside a six-line window —
+   seeing the whole text at once is most of what makes revision possible. */
+.essay-area { min-height:300px; line-height:1.6; }
+.essay-model { line-height:1.6; }
+
+/* ---- the self-assessment rubric ---------------------------------------- */
+.rubric-dim { margin:16px 0 0; padding-top:12px; border-top:1px solid var(--border); }
+.rubric-dim-label { font-weight:700; margin-bottom:6px; }
+
+.rubric-ask {
+  display:flex; gap:10px; align-items:flex-start;
+  padding:7px 0; cursor:pointer; line-height:1.45;
+}
+.rubric-ask input { margin-top:3px; flex:none; width:17px; height:17px; accent-color:var(--accent); }
+
+/* The repair, shown only while the answer is "no". It is indented under its
+   question and coloured as a warning rather than an error: an unticked box is
+   the next edit, not a mistake. */
+.rubric-fix {
+  margin:0 0 6px 27px; padding:6px 10px;
+  border-left:2px solid var(--warn); background:var(--panel-2);
+  border-radius:0 6px 6px 0; line-height:1.45;
+}
+
+.rubric-score { margin:16px 0 4px; font-weight:600; }
+
+/* Essay picker in the Escribir space — a stack of briefs, not a dropdown. */
+.essay-list { display:flex; flex-direction:column; gap:8px; margin:10px 0 22px; }
+.essay-pick { text-align:left; display:block; line-height:1.4; padding:12px 16px; }
+.essay-pick b { display:block; font-weight:600; }

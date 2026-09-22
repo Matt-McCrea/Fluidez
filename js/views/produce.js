@@ -5,6 +5,11 @@
  *   translate : translate an English sentence — LIVE constraint checklist as
  *               you type (engine-verified), then compare with a model
  *   write     : constrained free writing — same live checklist + model compare
+ *   essay     : B2/C1 extended production — plan, draft, model, self-mark,
+ *               revise. Handed to js/essay.js, which owns the four phases;
+ *               this file only decides that an essay is not a `write` with a
+ *               taller box (it was, for one afternoon, and the phases are the
+ *               entire difference).
  *
  * The live checklist is the app's signature: because the engine can analyse
  * any conjugated form, we verify *mechanics* automatically ("uses the
@@ -156,6 +161,7 @@ window.StageProduce = (function () {
       UI.clear(body);
       var next = function (completed) { if (completed !== false) doneCount++; i++; show(); };
       if (t.type === 'build') runBuild(body, t, next);
+      else if (t.type === 'essay' && window.Essay) window.Essay.mount(body, t, { onDone: next });
       else runWrite(body, t, next);
     }
     show();

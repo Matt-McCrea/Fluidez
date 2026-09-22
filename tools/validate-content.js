@@ -19,7 +19,7 @@
 const fs = require('fs'), path = require('path');
 global.window = {};
 function load(rel) { (0, eval)(fs.readFileSync(path.join(__dirname, '..', rel), 'utf8')); }
-['data/taxonomy.js', 'data/connectors.js', 'data/strand-lessons.js', 'data/course.js',
+['data/taxonomy.js', 'data/connectors.js', 'data/rubrics.js', 'data/strand-lessons.js', 'data/course.js',
  'data/verbs.js', 'data/vocab.js', 'data/idioms.js', 'data/grammar-docs.js', 'data/grammar.js',
  'data/passages.js', 'data/apply.js', 'data/writing.js', 'data/topics.js', 'data/resources.js',
  'js/engine.js', 'js/lessons.js', 'js/checker.js'].forEach(load);
@@ -67,6 +67,7 @@ const THEME_IDS = new Set((window.THEMES || []).map(t => t.id));
 const STRAND_IDS = new Set((window.STRANDS || []).map(t => t.id));
 const REGISTER_IDS = new Set((window.REGISTERS || []).map(r => r.id));
 const CONNECTOR_IDS = new Set((window.CONNECTORS || []).map(c => c.id));
+const RUBRIC_IDS = new Set((window.RUBRICS || []).map(r => r.id));
 const tagStats = { seen: 0, cefr: 0, theme: 0, pcic: 0, strand: 0 };
 
 function checkTags(o, tag) {
@@ -105,6 +106,16 @@ function checkStrandBlocks(l) {
   });
 
   if (strand.blocks.indexOf('exponents') !== -1) {
+    /* PERMITTED is not the same as REQUIRED, and only the grammar strand needs
+     * the distinction. Grammar lessons were barred from carrying exponents at
+     * all (data/taxonomy.js), which is why they were the thinnest in usable
+     * Spanish in every band; opening the block up must not retroactively
+     * invalidate ~100 existing lessons that do not carry one yet. A grammar
+     * lesson that DOES carry exponents is still held to every rule below.
+     *
+     * Every other strand keeps the hard floor: a function lesson without
+     * exponents is not a function lesson. */
+    if (strand.exponentsOptional && l.exponents === undefined) return;
     ok(Array.isArray(l.exponents) && l.exponents.length >= 3, `${tag}: needs >=3 exponents`);
     const regs = new Set();
     (l.exponents || []).forEach((e, i) => {
@@ -371,6 +382,32 @@ function checkProbes(l, tag) {
       (e.verbs || []).forEach(inf =>
         ok(!!E.verbByInf(inf), `course[${i}]: verb day names "${inf}", which is not in data/verbs.js`));
     }
+    /* A day may NAME its reading (data/course.js `passage`). Two things can go
+     * wrong with a hand-written id and both are silent at runtime, because
+     * js/session.js falls back to choosing for itself: a typo serves an
+     * unrelated passage, and a legal id whose tenses the learner has not
+     * reached by that day is withheld and never seen. Check both here so the
+     * authored choice either holds or fails loudly. */
+    if (e.passage !== undefined) {
+      const p = (window.PASSAGES || []).find(x => x.id === e.passage);
+      ok(!!p, `course[${i}]: names passage "${e.passage}", which does not exist`);
+      if (p) {
+        const band = (window.LEVELS || []).find(l => l.code === e.band);
+        const gate = band ? band.levels[band.levels.length - 1] : 99;
+        ok((p.level || 1) <= gate,
+           `course[${i}]: passage "${e.passage}" is level ${p.level}, above ${e.band}'s gate ${gate}`);
+        /* The tense must be taught by this day, not merely somewhere on the
+         * course: `presente` is the floor, anything else has to have been
+         * reached. Read the course itself for where each tense lands. */
+        (p.tenses || []).forEach(tk => {
+          if (tk === 'presente') return;
+          const at = course.findIndex(d => d.lesson && (d.lesson === tk ||
+            ((window.ALL_LESSONS || []).find(l => l.id === d.lesson) || {}).tense === tk));
+          ok(at !== -1 && at <= i,
+             `course[${i}]: passage "${e.passage}" needs ${tk}, taught on day ${at + 1} — it would be withheld`);
+        });
+      }
+    }
   });
   /* A lesson has to be REACHABLE, which is not the same as being on the course.
    * Requiring every lesson in COURSE forced the whole 700-lesson knowledge base
@@ -523,6 +560,36 @@ function checkProbes(l, tag) {
       ok(it.instruction && it.from && it.to, `${tag}: missing instruction/from/to`);
       const a = E.analyzeSentence(it.to || '');
       ok(a.verbs.length + a.compounds.length >= 1, `${tag}: target has no recognizable verb`);
+    } else if (it.type === 'choice') {
+      /* The non-verb contrast drill — ser/estar, por/para, lo/le. No engine
+       * answer to check against (there is no paradigm for "which preposition"),
+       * so the checks are on the shape instead: a real gap, at least two real
+       * candidates, an answer that indexes one of them, and a `focus` — which
+       * is what the SRS schedules on (js/views/apply.js choiceId), so a typo'd
+       * focus would silently split one contrast into two review items. */
+      ok(it.text && it.text.indexOf('___') !== -1, `${tag}: text needs ___`);
+      ok(Array.isArray(it.options) && it.options.length >= 2, `${tag}: needs >=2 options`);
+      ok(typeof it.answer === 'number' && it.options && it.answer >= 0 && it.answer < it.options.length,
+         `${tag}: answer ${it.answer} out of range`);
+      ok(new Set(it.options || []).size === (it.options || []).length, `${tag}: duplicate options`);
+      ok(it.focus, `${tag}: missing focus (the contrast this drills)`);
+      ok(it.why, `${tag}: missing why (shown after answering)`);
+      /* A choice item must not smuggle in a verb form the learner has not been
+       * taught. Read it exactly the way the passage gate above does — per
+       * token, through SCAN.tenseAt — so a choice item and a passage cannot
+       * disagree about what "es" is. SCAN.tensesOf is the wrong instrument
+       * here: it answers "which tenses does this text require" for the
+       * generated `tenses` field and reports every reading a form allows, so
+       * it called `es` a present subjunctive and failed a level-1 item. */
+      (it.options || []).forEach(opt => {
+        const toks = E.tokenize(String(it.text || '').replace('___', opt));
+        toks.forEach((tok, ti) => {
+          const tk = SCAN.tenseAt(toks, ti);
+          if (!tk) return;
+          ok((TENSE_LEVEL[tk] || 1) <= it.level,
+             `${tag}: option "${opt}" needs ${tk} (level ${TENSE_LEVEL[tk]}), item is ${it.level}`);
+        });
+      });
     } else ok(false, `${tag}: unknown type`);
   });
 }
@@ -544,8 +611,31 @@ function checkProbes(l, tag) {
       ok(t.en && t.answer && t.answer.split(' ').length >= 3, `${tag}: build needs en + answer of >=3 words`);
       return;
     }
-    ok(t.type === 'translate' || t.type === 'write' || t.type === 'paragraph', `${tag}: unknown type "${t.type}"`);
+    ok(t.type === 'translate' || t.type === 'write' || t.type === 'paragraph' || t.type === 'essay',
+       `${tag}: unknown type "${t.type}"`);
     ok(t.prompt, `${tag}: missing prompt`);
+
+    /* An essay is the only task shape that promises the learner a PROCESS —
+     * plan it, draft it, compare it, mark it — so the four things that process
+     * needs are required rather than optional. A rubric id that resolves to
+     * nothing would leave js/essay.js showing a draft screen with no marking
+     * phase, which is the one part of an essay that does not exist anywhere
+     * else in the app. */
+    if (t.type === 'essay') {
+      ok(t.level >= 6, `${tag}: essays are B2/C1 only (level >= 6), got ${t.level}`);
+      ok(!!t.brief, `${tag}: essay needs a brief (the situation, not the topic)`);
+      ok(Array.isArray(t.plan) && t.plan.length >= 3,
+         `${tag}: essay needs a plan of >= 3 moves`);
+      ok(RUBRIC_IDS.has(t.rubric), `${tag}: unknown rubric "${t.rubric}"`);
+      // The model is the reference for a 150-250 word text; a short one
+      // teaches the learner that the word count was negotiable.
+      (t.models || []).forEach(m => ok(String(m).trim().split(/\s+/).length >= 150,
+        `${tag}: essay model is ${String(m).trim().split(/\s+/).length} words, needs >= 150`));
+      ok((t.constraints || []).some(c => c.type === 'connectorFrom'),
+        `${tag}: an essay must assert at least one connectorFrom — it is what makes it discourse rather than a long paragraph`);
+      ok((t.constraints || []).filter(c => c.type === 'connectorFrom').every(c => !!c.minLevel),
+        `${tag}: connectorFrom without minLevel on an essay is satisfied by "pero"`);
+    }
     ok((t.constraints || []).length >= 1, `${tag}: needs >=1 constraint`);
     ok((t.models || []).length >= 1, `${tag}: needs >=1 model`);
     (t.constraints || []).forEach((c, i) => {
@@ -560,7 +650,19 @@ function checkProbes(l, tag) {
       if (c.type === 'containsWord') ok(!!c.word, `${ct}: missing word`);
       if (c.type === 'containsAny') ok(Array.isArray(c.words) && c.words.length >= 2, `${ct}: needs >=2 words`);
       if (c.type === 'minWords' || c.type === 'maxWords') ok(Number.isInteger(c.n) && c.n > 0, `${ct}: bad n`);
-      if (c.type === 'connectorFrom') ok(CONNECTOR_IDS.has(c.class), `${ct}: unknown connector class "${c.class}"`);
+      if (c.type === 'connectorFrom') {
+        ok(CONNECTOR_IDS.has(c.class), `${ct}: unknown connector class "${c.class}"`);
+        if (c.minLevel !== undefined) {
+          ok(CEFR.has(c.minLevel), `${ct}: bad minLevel "${c.minLevel}"`);
+          // A floor no marker in the class reaches can never be satisfied.
+          const klass = (window.CONNECTORS || []).filter(k => k.id === c.class)[0];
+          const BANDS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+          const reach = klass ? klass.items.filter(it =>
+            BANDS.indexOf(it.level || 'B1') >= BANDS.indexOf(c.minLevel)).length : 0;
+          ok(reach >= (c.n || 1),
+            `${ct}: class "${c.class}" has ${reach} markers at ${c.minLevel}+, task needs ${c.n || 1}`);
+        }
+      }
       if (c.type === 'avoidsAny') ok(Array.isArray(c.words) && c.words.length >= 1, `${ct}: needs words`);
       if (c.type === 'avoidsPerson') ok(!!c.person, `${ct}: missing person`);
       if (c.type === 'subjunctiveAfter') ok(!!c.trigger, `${ct}: missing trigger`);
@@ -571,6 +673,32 @@ function checkProbes(l, tag) {
       const r = C.checkWriting(t, m);
       ok(r.allPass, `${tag}: model "${m}" fails its own constraints ` +
         `(${r.results.filter(x => !x.pass).map(x => strip(x.label)).join('; ')})`);
+    });
+  });
+}
+
+// ---------- rubrics ----------------------------------------------------------
+/* A rubric is read by a learner with a draft in front of them, so the two
+ * things that make it usable are structural and can be checked: every question
+ * carries its repair, and no question is a yes/no about quality ("¿está bien
+ * escrito?"), which the person who just wrote it cannot answer. The second is
+ * caught crudely — a question with no verb of observation is usually an
+ * opinion poll — but crudely is better than not at all. */
+{
+  const seenR = new Set();
+  (window.RUBRICS || []).forEach(r => {
+    const tag = `rubric "${r.id}"`;
+    ok(!!r.id && !seenR.has(r.id), `${tag}: missing or duplicate id`); seenR.add(r.id);
+    ok(!!r.label && !!r.en, `${tag}: needs label + en`);
+    ok(Array.isArray(r.dims) && r.dims.length >= 3, `${tag}: needs >= 3 dimensions`);
+    (r.dims || []).forEach(d => {
+      const dt = `${tag} dim "${d.id}"`;
+      ok(!!d.id && !!d.label && !!d.en, `${dt}: needs id + label + en`);
+      ok(Array.isArray(d.asks) && d.asks.length >= 1, `${dt}: needs >= 1 ask`);
+      (d.asks || []).forEach((a, i) => {
+        ok(!!a.q && /\?/.test(a.q), `${dt} ask[${i}]: must be a question`);
+        ok(!!a.fix && a.fix.length > 10, `${dt} ask[${i}]: every question needs an actionable fix`);
+      });
     });
   });
 }
@@ -670,10 +798,61 @@ function checkProbes(l, tag) {
     names.filter(n => n.endsWith('.js')).forEach(n => onDisk.push(dir + '/' + n));
   });
 
-  onDisk.forEach(f => {
+  /* Files that belong to the ARCADE build (juegos/index.html) and must not be
+   * in the full app. data/game-index.js is the games' question bank
+   * precomputed out of the teaching corpus — the full app already carries that
+   * corpus for the lessons, so loading a second copy of it would cost 2.2 MB
+   * to save a walk it can afford. js/arcade.js is that build's boot. Both are
+   * checked below against the arcade's own page and worker instead. */
+  const ARCADE_ONLY = new Set(['data/game-index.js', 'js/arcade.js']);
+
+  onDisk.filter(f => !ARCADE_ONLY.has(f)).forEach(f => {
     ok(scripts.indexOf(f) !== -1, `index.html does not load ${f} — it will not exist in the browser`);
     ok(sw.indexOf("'./" + f + "'") !== -1, `sw.js does not cache ${f} — offline installs will miss it`);
   });
+  ARCADE_ONLY.forEach(f => {
+    ok(scripts.indexOf(f) === -1,
+       `index.html loads ${f}, which is arcade-only — the full app builds its own index`);
+  });
+
+  /* ---- the arcade build (juegos/) --------------------------------------
+   * Same two failure modes as the app, and they bite harder here: a script in
+   * the page but not the worker works perfectly until the device goes offline,
+   * which is the one condition this build exists for. */
+  {
+    const aHtml = read('juegos/index.html'), aSw = read('juegos/sw.js');
+    ok(!!aHtml && !!aSw, 'the arcade build is missing juegos/index.html or juegos/sw.js');
+    if (aHtml && aSw) {
+      const aScripts = (aHtml.match(/src="([^"]+\.js)"/g) || []).map(m => m.slice(5, -1));
+      aScripts.forEach(f => ok(aSw.indexOf("'" + f + "'") !== -1,
+        `juegos/sw.js does not cache ${f} — the arcade would break offline, which is the only mode it is for`));
+      ok(aScripts.indexOf('../data/game-index.js') !== -1,
+         'juegos/index.html does not load the precomputed index — it would deal no questions at all');
+      // The corpus must stay out, or the whole exercise was pointless.
+      ['strand-lessons', 'passages', 'writing', 'apply', 'vocab', 'idioms'].forEach(f => {
+        ok(aScripts.indexOf('../data/' + f + '.js') === -1,
+           `juegos/index.html loads data/${f}.js — the arcade is built not to need it`);
+      });
+      const av = (aSw.match(/CACHE_VERSION\s*=\s*'([^']+)'/) || [])[1];
+      try {
+        const bump = require('./bump-cache.js');
+        const awant = bump.hash('juegos/sw.js');
+        ok(av === awant,
+          `juegos/sw.js CACHE_VERSION (${av}) is stale. Run: node tools/bump-cache.js   (expected ${awant})`);
+      } catch (e) { ok(false, 'could not check the arcade cache version: ' + e.message); }
+    }
+
+    /* The generated index must match the corpus it was generated from, or the
+     * arcade deals yesterday's questions — silently, and only for the people
+     * who installed it. */
+    try {
+      const out = require('child_process').spawnSync(process.execPath,
+        [path.join(__dirname, 'build-game-index.js'), '--check'], { encoding: 'utf8' });
+      ok(out.status === 0,
+         'data/game-index.js is stale — the corpus changed since it was generated. ' +
+         'Run: node tools/build-game-index.js');
+    } catch (e) { ok(false, 'could not check data/game-index.js: ' + e.message); }
+  }
 
   /* The profiles were renamed from beginner/standard/refresher to A1-C1, and
    * comparisons against the old names do not error — they just quietly stop

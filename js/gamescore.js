@@ -151,7 +151,10 @@ window.GameScore = (function () {
   function load() { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } }
   function save(o) { try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (e) {} }
 
-  function blank() { return { pb: 0, pbDay: null, plays: 0, bestCombo: 0, bestBand: null, bestRun: 0, history: [] }; }
+  function blank() {
+    return { pb: 0, pbDay: null, plays: 0, bestCombo: 0, bestBand: null, bestRun: 0,
+             seen: 0, right: 0, ms: 0, history: [] };
+  }
 
   function stats(key) {
     var s = load()[key];
@@ -161,6 +164,40 @@ window.GameScore = (function () {
     out.history = s.history || [];
     return out;
   }
+
+  /* Evenly across TIME rather than across samples: answers cluster (a combo is
+   * four in twelve seconds) and picking every nth sample would spend the
+   * budget on the busy stretch and leave the quiet one unmapped. */
+  function downsample(curve, n) {
+    if (curve.length <= n) return curve.map(function (p) { return [p.t | 0, p.s | 0]; });
+    var span = curve[curve.length - 1].t || 1, out = [];
+    for (var i = 0; i < n; i++) {
+      var want = span * (i / (n - 1)), best = curve[0];
+      for (var j = 0; j < curve.length; j++) {
+        if (Math.abs(curve[j].t - want) < Math.abs(best.t - want)) best = curve[j];
+      }
+      if (!out.length || out[out.length - 1][0] !== (best.t | 0)) out.push([best.t | 0, best.s | 0]);
+    }
+    return out;
+  }
+
+  /* The record round's score at `ms` into it, interpolated. Null when there is
+   * no record to race — a first attempt has no ghost, and inventing a flat one
+   * would be racing a fiction. */
+  function ghostAt(key, ms) {
+    var c = stats(key).curve;
+    if (!c || c.length < 2) return null;
+    if (ms <= c[0][0]) return c[0][1];
+    for (var i = 1; i < c.length; i++) {
+      if (ms <= c[i][0]) {
+        var t0 = c[i - 1][0], t1 = c[i][0];
+        var f = t1 === t0 ? 1 : (ms - t0) / (t1 - t0);
+        return Math.round(c[i - 1][1] + (c[i][1] - c[i - 1][1]) * f);
+      }
+    }
+    return c[c.length - 1][1];
+  }
+  function hasGhost(key) { var c = stats(key).curve; return !!(c && c.length >= 2); }
 
   function playsOn(key, day) {
     return stats(key).history.filter(function (h) { return h.d === day; });
@@ -185,8 +222,35 @@ window.GameScore = (function () {
     s.bestCombo = Math.max(s.bestCombo || 0, r.combo || 0);
     s.bestRun = Math.max(s.bestRun || 0, r.run || 0);
     if (!s.bestBand || bandIndex(r.band) > bandIndex(s.bestBand)) s.bestBand = r.band || s.bestBand;
-    if (isPb) { s.pb = r.score; s.pbDay = day; }
-    s.history = (s.history || []).concat([{ d: day, s: r.score }]).slice(-60);
+    if (isPb) {
+      s.pb = r.score; s.pbDay = day;
+      /* THE GHOST. Keep the shape of the record round, not just its total, so
+       * the next attempt can be raced against it second by second. A score you
+       * are chasing tells you whether you won at the end; a score you are
+       * chasing IN TIME tells you whether you are winning now, which is the
+       * difference between a leaderboard and an opponent.
+       *
+       * Downsampled to 24 points — enough to interpolate smoothly across a
+       * two-minute round, and small enough that six games of it cost a couple
+       * of kilobytes of a storage budget shared with the SRS. */
+      if (r.curve && r.curve.length) s.curve = downsample(r.curve, 24);
+    }
+
+    /* HOW THE ROUND WENT, not just what it scored. The store kept the score
+     * and nothing else, so nothing could answer the two questions a player
+     * actually has — am I getting more accurate, and am I getting faster — and
+     * a score conflates both with the difficulty you happened to be dealt.
+     * Totals are lifetime; the per-round copies ride along in `history` so a
+     * trend can be drawn. Old entries predate these fields and read as
+     * undefined, which every consumer below treats as "not recorded". */
+    s.seen = (s.seen || 0) + (r.seen || 0);
+    s.right = (s.right || 0) + (r.right || 0);
+    s.ms = (s.ms || 0) + (r.ms || 0);
+    var entry = { d: day, s: r.score };
+    if (r.seen) { entry.n = r.seen; entry.r = r.right || 0; }
+    if (r.ms) entry.ms = r.ms;
+    if (r.band) entry.b = r.band;
+    s.history = (s.history || []).concat([entry]).slice(-60);
     all[key] = s;
     save(all);
 
@@ -211,6 +275,47 @@ window.GameScore = (function () {
      * play again anyway; the best of the last three is not a sentence. */
     var last = s.history[s.history.length - 1].s;
     return last / s.pb;            // 0…1, where ~0.95 means "one more round"
+  }
+
+  /* What a player wants to know about a game, derived rather than stored, so
+   * adding a question here never needs a migration. `null` where there is not
+   * enough evidence yet — a number computed from two rounds is noise wearing a
+   * decimal point, and showing it teaches people to distrust the screen. */
+  function profileOf(key) {
+    var st = stats(key);
+    var h = (st.history || []).filter(function (x) { return x.n; });
+    var recent = h.slice(-10);
+    function acc(rows) {
+      var n = 0, r = 0;
+      rows.forEach(function (x) { n += x.n; r += x.r || 0; });
+      return n >= 20 ? r / n : null;
+    }
+    var perMin = null;
+    var timed = h.filter(function (x) { return x.ms; });
+    if (timed.length >= 3) {
+      var items = 0, ms = 0;
+      timed.forEach(function (x) { items += x.n; ms += x.ms; });
+      if (ms > 0) perMin = items / (ms / 60000);
+    }
+    return {
+      plays: st.plays || 0,
+      pb: st.pb || 0,
+      bestBand: st.bestBand || null,
+      bestCombo: st.bestCombo || 0,
+      bestRun: st.bestRun || 0,
+      accuracy: acc(h),
+      recentAccuracy: acc(recent),
+      perMin: perMin,
+      scores: (st.history || []).map(function (x) { return x.s; }),
+      /* The median of the last ten, not the average: one disastrous round
+       * where the phone rang should not move the number you are chasing. */
+      typical: recent.length >= 3 ? median(recent.map(function (x) { return x.s; })) : null
+    };
+  }
+  function median(a) {
+    var b = a.slice().sort(function (x, y) { return x - y; });
+    var m = Math.floor(b.length / 2);
+    return b.length % 2 ? b[m] : Math.round((b[m - 1] + b[m]) / 2);
   }
 
   // ---- the daily challenge -------------------------------------------------
@@ -337,6 +442,7 @@ window.GameScore = (function () {
     startRung: startRung,
     baseValue: baseValue, award: award, nextRung: nextRung, limitFor: limitFor,
     stats: stats, record: record, pb: pb, todayBest: todayBest, nearMissScore: nearMissScore,
+    profileOf: profileOf, ghostAt: ghostAt, hasGhost: hasGhost,
     dailySeed: dailySeed, dailyKey: dailyKey, dailyLabel: dailyLabel, dailyStreak: dailyStreak,
     weekSummary: weekSummary, today: today, fmt: fmt,
     silent: silent, setSilent: setSilent,

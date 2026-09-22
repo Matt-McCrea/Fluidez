@@ -21,7 +21,7 @@
  *   { type:'regex', pattern:'\\bque\\b', label:'uses “que”' }
  *
  * B2/C1 content asserts things the list above cannot express, so:
- *   { type:'connectorFrom', class:'contraargumentativo', n:1 }
+ *   { type:'connectorFrom', class:'contraargumentativo', n:1, minLevel:'C1' }
  *   { type:'avoidsAny', words:['o sea','vale'] }      register: no colloquialisms
  *   { type:'avoidsPerson', person:'tú' }              register: formal address
  *   { type:'subjunctiveAfter', trigger:'para que' }   a trigger governs a mood
@@ -33,6 +33,86 @@
  * ========================================================================== */
 window.Checker = (function () {
   var E = window.ENGINE;
+
+  /* Lower-cased but WITH accents kept — the tú-pronoun test needs to tell
+   * `tú` from `tu`, which deaccenting destroys. */
+  function deacKeep(s) { return String(s || '').toLowerCase(); }
+
+  // Does a subjunctive at `i` have something governing it? `que` or a negation
+  // within two tokens to its left is the whole of what makes it an address.
+  function subjTriggered(tokens, i) {
+    for (var k = Math.max(0, i - 2); k < i; k++) {
+      var t = String(tokens[k] || '').toLowerCase();
+      if (t === 'que' || t === 'no' || t === 'ni' || t === 'nunca' || t === 'jamás' || t === 'jamas') return true;
+    }
+    return false;
+  }
+
+  /* Every single-word noun the app teaches, plus its regular plural, so a
+   * spelling the vocabulary claims as a noun is not counted as a verb form.
+   * Built once, lazily — VOCAB is 5,822 rows and this must not cost anything
+   * on a keystroke. Accents are dropped on both sides so razón/razones pair up
+   * (the plural of an -ón noun loses the tilde). */
+  var NOUNS = null;
+  function deacLowerWord(s) {
+    return String(s || '').toLowerCase().normalize ?
+      String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') :
+      String(s || '').toLowerCase();
+  }
+  function knownNoun(word) {
+    if (!NOUNS) {
+      NOUNS = {};
+      (window.VOCAB || []).forEach(function (v) {
+        var bare = String(v.es || '').replace(/^(el|la|los|las|un|una)\s+/i, '');
+        if (!bare || /\s/.test(bare)) return;          // single words only
+        var k = deacLowerWord(bare);
+        NOUNS[k] = 1;
+        NOUNS[k + 's'] = 1;                            // casa  -> casas
+        NOUNS[k + 'es'] = 1;                           // razon -> razones
+        if (/s$/.test(k)) NOUNS[k.replace(/e?s$/, '')] = 1;
+      });
+    }
+    var key = deacLowerWord(word);
+    return !!(key && Object.prototype.hasOwnProperty.call(NOUNS, key));
+  }
+
+  /* Is the token at `i` sitting in a NOUN SLOT — directly after a determiner
+   * or a preposition? Spanish does not put a finite verb there: "sin reservas"
+   * and "los importes" are noun phrases, and `sin hablas` / `el hablas` are
+   * not sentences in any register. So a finite reading of a token in this
+   * position can be discarded outright, with no need to guess.
+   *
+   * This is the rule tools/find-homographs.js already uses to find nouns the
+   * analyser reads as verbs; it covers the cases the vocabulary-derived list
+   * cannot, because VOCAB holds what the app TEACHES and prose legitimately
+   * contains nouns it does not teach. `reservas` in "la recomiendo sin
+   * reservas" is exactly that: a real noun, absent from a 5,822-word teaching
+   * vocabulary, failing a formal letter for addressing somebody as tú. */
+  var NOUN_SLOT_BEFORE = {
+    el: 1, la: 1, los: 1, las: 1, un: 1, una: 1, unos: 1, unas: 1, lo: 1,
+    mi: 1, mis: 1, su: 1, sus: 1, nuestro: 1, nuestra: 1, nuestros: 1, nuestras: 1,
+    vuestro: 1, vuestra: 1, vuestros: 1, vuestras: 1,
+    este: 1, esta: 1, estos: 1, estas: 1, ese: 1, esa: 1, esos: 1, esas: 1,
+    aquel: 1, aquella: 1, aquellos: 1, aquellas: 1,
+    de: 1, del: 1, en: 1, con: 1, sin: 1, por: 1, para: 1, sobre: 1, entre: 1,
+    hasta: 1, desde: 1, hacia: 1, ante: 1, tras: 1, segun: 1, al: 1
+  };
+  function inNounSlot(tokens, i) {
+    if (i <= 0) return false;
+    var prev = deacLowerWord(tokens[i - 1]);
+    return Object.prototype.hasOwnProperty.call(NOUN_SLOT_BEFORE, prev);
+  }
+
+  var CONNECTOR_BANDS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+  // Is this marker at or above `floor`? An item with no level recorded counts
+  // as B1 — the band the inventory starts at — rather than being silently
+  // dropped from every levelled check.
+  function connectorAtLeast(item, floor) {
+    if (!floor) return true;
+    var want = CONNECTOR_BANDS.indexOf(floor);
+    var got = CONNECTOR_BANDS.indexOf(item.level || 'B1');
+    return want === -1 || got >= want;
+  }
 
   function personIndex(tense, person) { return E.personsFor(tense).indexOf(person); }
 
@@ -160,15 +240,36 @@ window.Checker = (function () {
       /* ---- B2/C1 constraints ------------------------------------------- */
 
       case 'connectorFrom': {                  // uses a discourse marker of a class
+        /* `minLevel` is what makes this constraint mean something at B2/C1.
+         * Without it, "use a contraargumentativo" is satisfied by `pero` —
+         * which every learner has had since A2 — so a C1 essay task could
+         * assert nothing at all and still pass its own gate. The classes in
+         * data/connectors.js are ordered easiest-first and every item carries
+         * the level it is first expected at, so the band is already in the
+         * data; this only reads it.
+         *
+         * The class is still the unit, not the individual marker: demanding
+         * one exact word teaches the word, whereas demanding one of `ahora
+         * bien / con todo / si bien / antes bien` teaches the MOVE and leaves
+         * the learner the choice, which is the thing being learnt. */
         var klass = (window.CONNECTORS || []).filter(function (k) { return k.id === c.class; })[0];
         var need = c.n || 1;
+        var floor = c.minLevel || null;
         label = label || ('use ' + (need > 1 ? need + ' markers' : 'a marker') +
-                          ' of type <b>' + (klass ? klass.label.toLowerCase() : c.class) + '</b>');
+                          ' of type <b>' + (klass ? klass.label.toLowerCase() : c.class) + '</b>' +
+                          (floor ? ' at ' + floor + ' or above' : ''));
         if (!klass) { pass = false; detail = 'unknown connector class'; break; }
+        var eligible = klass.items.filter(function (it) { return connectorAtLeast(it, floor); });
         var hay = deacLower(rawText);
-        var found = klass.items.filter(function (it) { return hay.indexOf(deacLower(it.es)) !== -1; });
+        var found = eligible.filter(function (it) { return hay.indexOf(deacLower(it.es)) !== -1; });
         pass = found.length >= need;
-        detail = found.length ? found.map(function (f) { return f.es; }).join(', ') : '';
+        if (found.length) detail = found.map(function (f) { return f.es; }).join(', ');
+        else if (floor) {
+          /* Say WHICH markers would count. A learner who wrote "pero" and is
+           * told only that it does not count has been given a puzzle; the
+           * point of the task is the repertoire, so show the repertoire. */
+          detail = 'e.g. ' + eligible.slice(0, 4).map(function (f) { return f.es; }).join(', ');
+        }
         break;
       }
 
@@ -182,16 +283,48 @@ window.Checker = (function () {
 
       case 'avoidsPerson': {                   // register: e.g. no tú in a formal text
         label = label || ('do not address anyone as <b>' + c.person + '</b>');
-        /* Every regular third-person present is spelled like the tú imperative
-         * — habla, vive, trabaja, puede — so counting imperative readings made
-         * "Ella habla español" fail a no-tú check. An imperative reading only
-         * counts when the token has NO other interpretation: ven, haz, pon and
-         * dime are unambiguous, habla is not. */
+        /* Three ways a token gets read as "tú" without anybody being addressed
+         * as tú, all of which reached real content and failed correct texts.
+         *
+         * IMPERATIVES. Every regular third-person present is spelled like the
+         * tú imperative — habla, vive, trabaja, puede — so counting imperative
+         * readings made "Ella habla español" fail a no-tú check. An imperative
+         * reading only counts when the token has NO other interpretation: ven,
+         * haz, pon and dime are unambiguous, habla is not.
+         *
+         * BARE PRESENT SUBJUNCTIVES. Addressing somebody in the subjunctive
+         * needs a trigger — `que vengas`, `no lo hagas`. Without one, a tú
+         * present-subjunctive spelling is not address at all, and in practice
+         * it is usually a plural noun: ocasiones, razones, ataques, importes
+         * are all read as ocasionar/razonar/atacar/importar. So a subjunctive
+         * counts only when `que` or a negation stands within two tokens of it.
+         *
+         * NOUN HOMOGRAPHS. `las bajas`, `el importe`, `la baja` are nouns the
+         * app itself teaches that share a spelling with a tú indicative. The
+         * app's own vocabulary is the list — tools/validate-content.js keeps a
+         * hand-written NOUN_HOMOGRAPHS for the same problem, and a second hand
+         * list would be the one that goes stale. Narrowed so it cannot hide a
+         * real address: it applies only where the text uses no tú PRONOUN
+         * anywhere. Once somebody has written tú or te, the register is
+         * already broken and a homograph is no longer an excuse.
+         *
+         * NOUN SLOTS. The vocabulary list only knows words the app teaches,
+         * and prose contains nouns it does not — `sin reservas` failed a
+         * reference letter. A token directly after a determiner or preposition
+         * is not a finite verb in Spanish at all, so that reading is dropped
+         * outright (see inNounSlot). */
+        var addressed = /(^|[^a-záéíóúñü])(tú|te|ti|contigo|tuy[oa]s?)([^a-záéíóúñü]|$)/i.test(deacKeep(rawText));
+        var tks2 = analysis.tokens || [];
         pass = !analysis.verbs.some(function (w) {
           return w.analyses.some(function (a) {
             if (a.person !== c.person) return false;
-            if (a.tense !== 'imperativo') return true;
-            return !w.analyses.some(function (b) { return b.tense !== 'imperativo'; });
+            if (a.tense === 'imperativo') {
+              return !w.analyses.some(function (b) { return b.tense !== 'imperativo'; });
+            }
+            if (/subj$/.test(a.tense) && !subjTriggered(tks2, w.index)) return false;
+            if (inNounSlot(tks2, w.index)) return false;
+            if (!addressed && knownNoun(w.word || tks2[w.index])) return false;
+            return true;
           });
         });
         break;
@@ -331,12 +464,41 @@ window.Checker = (function () {
     if (opts && opts.meaning) {
       list = list.reduce(function (acc, a) { return acc.concat(meaningAlternatives(a)); }, []);
     }
+    /* Other Spanish the course itself glosses the same way (js/phrases.js).
+     * "then" is taught as both `entonces` and `luego`; whichever one the card
+     * happens to hold, the other is not a mistake. Only the phrase deck passes
+     * this — a verb-form drill must still want the one form it asked for. */
+    if (opts && opts.also && opts.also.length) list = list.concat(opts.also);
     if (list.some(function (a) { return E.normalize(a) === norm; })) return { pass: true, near: false };
     // same answer, different punctuation → a pass, not a near miss
     var bare = depunct(input);
     if (bare && list.some(function (a) { return depunct(a) === bare; })) return { pass: true, near: false };
     // accent-insensitive near miss → encourage a fix rather than mark cold-wrong
     var near = list.some(function (a) { return E.deaccent(depunct(a)) === E.deaccent(bare); });
+    /* `accents: 'lenient'` turns that near miss into a pass, and is set for ONE
+     * card kind: the phrase deck. A phrase card is asking whether the chunk
+     * comes back whole — whether "no hay de qué" is there at all — and failing
+     * it for a missing acute on a phrase the learner otherwise produced
+     * correctly punishes the wrong thing and stops the chunk ever graduating.
+     * The caller still shows the accented form in the pass message, so the
+     * accent is taught rather than merely forgiven.
+     *
+     * Deliberately NOT global. Accents stay a near miss everywhere else —
+     * see depunct() above — because in a verb drill `hablo`/`habló` is the
+     * whole question, and tools/lint-spanish.js exists to keep the content
+     * itself correct. */
+    if (near && opts && opts.accents === 'lenient') return { pass: true, near: true };
+    /* Under the same leniency, ñ and ü fold too — "hasta manana" for
+     * "hasta mañana". E.deaccent deliberately leaves them alone, and that is
+     * right everywhere else: ñ is a letter, not an accent, and año/ano is the
+     * reason to keep it that way. But an English keyboard has no ñ, the accent
+     * bar is a deliberate detour, and refusing the chunk over it fails the
+     * learner for their hardware rather than their Spanish. Folded only here,
+     * and only for the phrase deck. */
+    if (opts && opts.accents === 'lenient') {
+      var fold = function (s) { return E.deaccent(depunct(s)).replace(/ñ/g, 'n').replace(/ü/g, 'u'); };
+      if (bare && list.some(function (a) { return fold(a) === fold(input); })) return { pass: true, near: true };
+    }
     return { pass: false, near: near };
   }
 

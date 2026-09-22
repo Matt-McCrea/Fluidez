@@ -3443,6 +3443,12 @@ window.STRAND_LESSONS = [
     { h: 'Offering a choice', html: '<i>¿... o ...?</i> asks someone to pick: <i>¿Té o café?</i> needs no verb at all.' }
   ],
   exponents: [
+    { es: 'Perdona, no te he entendido.', en: "Sorry, I didn't catch that.", register: 'coloquial', note: 'the everyday repair line' },
+    { es: '¿Puedes repetir, por favor?', en: 'Can you say that again, please?', register: 'coloquial', note: null },
+    { es: 'Más despacio, por favor.', en: 'Slower, please.', register: 'coloquial', note: 'short, and it works' },
+    { es: '¿Cómo se dice en español?', en: 'How do you say it in Spanish?', register: 'neutral', note: 'point at the thing, or say the English word after it' },
+    { es: '¿Qué significa esta palabra?', en: 'What does this word mean?', register: 'neutral', note: null },
+    { es: '¿Cómo se escribe?', en: 'How do you spell it?', register: 'neutral', note: null },
     { es: '¿Quién es?', en: 'Who is it/that?', register: 'neutral' },
     { es: '¿Cómo te llamas?', en: "What's your name?", register: 'coloquial', note: 'tú — among people your own age or already on first-name terms' },
     { es: '¿Dónde vives?', en: 'Where do you live?', register: 'neutral' },
@@ -3998,6 +4004,11 @@ window.STRAND_LESSONS = [
     { h: 'Checking contact', html: 'Tags like <i>¿no?</i> and <i>¿eh?</i> turn a statement into an invitation to agree — they check the listener is still following, not really asking a question.' }
   ],
   exponents: [
+    { es: 'Bueno, no sé.', en: "Well, I don't know.", register: 'coloquial', note: 'bueno buys you a second' },
+    { es: 'Pues no me gusta mucho.', en: "Well, I don't like it much.", register: 'coloquial', note: 'pues opens an answer' },
+    { es: 'O sea, que no vienes.', en: "So, you're not coming.", register: 'coloquial', note: 'o sea rephrases what was just said' },
+    { es: 'Es que no tengo tiempo.', en: "It's just that I don't have time.", register: 'coloquial', note: 'es que softens a refusal' },
+    { es: 'La verdad es que sí.', en: 'Honestly, yes.', register: 'coloquial', note: null },
     { es: 'Tengo dos hermanos y una hermana.', en: 'I have two brothers and a sister.', register: 'neutral', note: 'y — adding' },
     { es: 'Tengo un hijo, pero no estoy casado.', en: "I have a son, but I'm not married.", register: 'neutral', note: 'pero — contrast' },
     { es: 'Estudio español porque quiero viajar a Bolivia.', en: 'I study Spanish because I want to travel to Bolivia.', register: 'neutral', note: 'porque — reason' },
@@ -4748,6 +4759,12 @@ window.STRAND_LESSONS = [
     { h: 'A third option: formal study', html: '<i>¿Has aprendido/estudiado...?</i> asks specifically about something learned through study, distinct from general familiarity.' }
   ],
   exponents: [
+    { es: 'No estoy seguro.', en: "I'm not sure.", register: 'neutral', note: 'segura if you are a woman' },
+    { es: 'Supongo que sí.', en: 'I suppose so.', register: 'coloquial', note: null },
+    { es: 'A lo mejor viene mañana.', en: 'Maybe he\'ll come tomorrow.', register: 'coloquial', note: 'a lo mejor takes the indicative' },
+    { es: 'Puede ser.', en: 'Could be.', register: 'coloquial', note: null },
+    { es: 'Ni idea.', en: 'No idea.', register: 'coloquial', note: 'blunt, very common' },
+    { es: 'Creo que no.', en: "I don't think so.", register: 'neutral', note: null },
     { es: '¿No sabéis bien los verbos?', en: "Don't you (all) know the verbs well?", register: 'coloquial', note: 'sabéis — vosotros, casual classroom register' },
     { es: '¿Conoces bien a Marcos?', en: 'Do you know Marcos well?', register: 'neutral', note: 'conocer + person' },
     { es: '¿No has estudiado latín?', en: "Haven't you studied Latin?", register: 'neutral', note: 'formal learning, present perfect' }
@@ -5094,6 +5111,12 @@ window.STRAND_LESSONS = [
     { h: 'One with a different job', html: '<i>¿Estás bien?</i> is not a general greeting — it checks for a specific problem, usually after noticing something (a face, a tone, an absence).' }
   ],
   exponents: [
+    { es: '¡Qué pena!', en: 'What a shame!', register: 'coloquial', note: 'the standard sympathy line' },
+    { es: '¿En serio?', en: 'Really?', register: 'coloquial', note: null },
+    { es: '¡Qué bien!', en: "That's great!", register: 'coloquial', note: null },
+    { es: 'Menos mal.', en: 'Thank goodness.', register: 'coloquial', note: null },
+    { es: 'Vaya, lo siento.', en: "Oh no, I'm sorry.", register: 'coloquial', note: null },
+    { es: '¡Qué va!', en: 'No way! / Not at all!', register: 'coloquial', note: 'contradicting, friendly' },
     { es: '¿Qué tal estás?', en: 'How are you?', register: 'coloquial' },
     { es: '¿Cómo estás?', en: 'How are you?', register: 'neutral' },
     { es: '¿Estás bien?', en: 'Are you OK?', register: 'coloquial', note: 'checks specifically for a problem, not a general update' }
@@ -7131,6 +7154,15 @@ window.STRAND_LESSONS = [
     { es: 'la casa', en: 'the house' },
     { es: 'el libro', en: 'the book' }
   ],
+  exponents: [
+    { es: 'Es mi casa.', en: "It's my house.", register: 'neutral', note: 'mi never changes for gender' },
+    { es: 'Son mis hermanos.', en: 'They are my brothers.', register: 'neutral', note: 'only the number of things owned changes it' },
+    { es: '¿Es tu coche?', en: 'Is that your car?', register: 'coloquial', note: null },
+    { es: 'Nuestra hija vive en Madrid.', en: 'Our daughter lives in Madrid.', register: 'neutral', note: 'nuestro/nuestra DOES change for gender' },
+    { es: 'Su madre es profesora.', en: 'His mother is a teacher.', register: 'neutral', note: 'su is his, her, their or your (usted)' },
+    { es: '¿De quién es esto?', en: 'Whose is this?', register: 'coloquial', note: 'you cannot ask this with a short possessive' },
+    { es: 'Es de mi hermana.', en: "It's my sister's.", register: 'coloquial', note: 'de + owner, where English uses an apostrophe' }
+  ],
   sections: [
     { h: 'mi, tu, su: agree only with what is owned', html: 'These change for the number of the thing owned, never for gender: <i>mi libro / mis libros</i>, <i>tu casa / tus casas</i>. They stay the same whether one person owns it or several — <i>su casa</i> could be his, hers, yours (usted), or theirs.' },
     { h: 'nuestro, vuestro: agree for gender AND number', html: 'These mark that the OWNER is "we" or "you-all," and they agree fully with the thing owned: <i>nuestro libro, nuestra casa, nuestros libros, nuestras casas</i>.' },
@@ -8848,6 +8880,11 @@ window.STRAND_LESSONS = [
     { h: 'Tener suerte: a different idea entirely', html: '<i>Tener suerte</i> means "to be lucky," not "to need luck" — do not confuse it with the necessity pattern above.' }
   ],
   exponents: [
+    { es: 'Tengo que trabajar mañana.', en: 'I have to work tomorrow.', register: 'neutral', note: 'tener que + infinitive: personal obligation' },
+    { es: 'Hay que reservar antes.', en: 'You have to book in advance.', register: 'neutral', note: 'hay que: nobody in particular' },
+    { es: 'Me hace falta un abrigo.', en: 'I need a coat.', register: 'coloquial', note: 'works like gustar — the thing is the subject' },
+    { es: 'Debo llamar a mi madre.', en: 'I ought to call my mother.', register: 'formal', note: 'deber is weightier than tener que' },
+    { es: 'No hace falta, gracias.', en: "There's no need, thanks.", register: 'coloquial', note: null },
     { es: 'Necesito descansar un poco.', en: 'I need to rest a little.', register: 'neutral', note: 'necesitar — personal subject' },
     { es: 'Es necesario reservar con antelación.', en: 'It is necessary to book in advance.', register: 'neutral', note: 'impersonal — same idea, no subject named' },
     { es: 'Necesitamos más información.', en: 'We need more information.', register: 'neutral' },
@@ -11878,10 +11915,20 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-objeto-directo-a1', canDo: 'replace a noun with lo, la, los or las', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  /* WAS: canDo 'replace a noun with lo, la, los or las', title 'El objeto
+   * directo'. The lesson never taught lo/la/los/las — it teaches the personal
+   * a and the que-clause — and object pronouns are not reached until day 123
+   * (gr-pronombres-atonos-a2), thirty days later. The canDo had been written
+   * from the PCIC inventory line's name rather than from the lesson, and
+   * a1-u11's unit canDo repeated the same false promise.
+   *
+   * Retitled around what it actually does teach, which is worth teaching:
+   * the personal a has no English equivalent at all, and "creo que" cannot
+   * drop its que the way English drops "that". See CURRICULUM_AUDIT.md §4.3. */
+  id: 'gr-objeto-directo-a1', canDo: 'use the personal a, and keep que after creo', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
   pcic: ['gramatica:A1:461', 'gramatica:A1:462', 'gramatica:A1:463'],
-  title: 'El objeto directo',
-  summary: 'Tengo dos hermanos has no preposition before "dos hermanos" even though it names people — the personal a that marks a specific person as direct object does not appear with tener and an indefinite quantity, one of the first exceptions learners meet.',
+  title: 'La a personal: Veo a María',
+  summary: 'Spanish puts an a in front of a specific person who is on the receiving end of the verb — Veo a María — and English has nothing like it. The same a vanishes after tener with a number: Tengo dos hermanos, never *Tengo a dos hermanos.',
   keywords: [
     { es: 'a', en: '(before a specific person, no English word)' },
     { es: 'Veo a María.', en: 'I see María.' },
@@ -11892,10 +11939,19 @@ window.STRAND_LESSONS = [
     { es: 'la idea', en: 'the idea' },
     { es: 'la ciudad', en: 'the city' }
   ],
+  exponents: [
+    { es: '¿Conoces a mi hermano?', en: 'Do you know my brother?', register: 'coloquial', note: 'specific person — a is required' },
+    { es: 'Busco a mi hija.', en: "I'm looking for my daughter.", register: 'neutral', note: null },
+    { es: 'Tengo dos hermanos.', en: 'I have two brothers.', register: 'neutral', note: 'tener + a number: no a' },
+    { es: '¿Tienes coche?', en: 'Do you have a car?', register: 'coloquial', note: 'a thing never takes the personal a' },
+    { es: 'Creo que tienes razón.', en: 'I think you\'re right.', register: 'neutral', note: 'que cannot be dropped' },
+    { es: 'Sé que es difícil.', en: 'I know it\'s hard.', register: 'neutral', note: null },
+    { es: 'Espero que sí.', en: 'I hope so.', register: 'coloquial', note: null }
+  ],
   sections: [
     { h: 'Direct object of a person', html: 'A specific, individual person as direct object normally takes the personal <i>a</i>: <i>Veo a María</i> — I see María. But with <i>tener</i> plus an indefinite number of people, no <i>a</i> appears: <i>Tengo dos hermanos</i> (I have two brothers), not <i>*Tengo a dos hermanos</i>.' },
     { h: 'Direct object of a thing', html: 'A thing as direct object never takes <i>a</i>: <i>No tengo teléfono</i> — I don\'t have a phone.' },
-    { h: 'A whole clause as direct object', html: 'The direct object can be an entire subordinate clause introduced by <i>que</i>: <i>Creo que Barcelona es una ciudad muy bonita</i> — everything after <i>creo</i> is what you believe, functioning as one big direct object.' }
+    { h: 'Creo que… — and you cannot drop the que', html: 'English lets you say "I think Barcelona is pretty", with no "that". Spanish never drops it: <i>Creo que Barcelona es una ciudad muy bonita</i>. The same goes for <i>sé que</i>, <i>dice que</i> and <i>espero que</i> — the <i>que</i> is not optional decoration, and leaving it out is one of the most audible English-speaker mistakes.' }
   ],
   contrasts: [
     { es: 'Tengo dos hermanos.', en: 'I have two brothers.', note: 'tener + indefinite person: no personal a' },
@@ -12629,10 +12685,19 @@ window.STRAND_LESSONS = [
     { es: 'los pies', en: 'the feet' },
     { es: 'la cabeza', en: 'the head' }
   ],
+  exponents: [
+    { es: 'Me gusta el café.', en: 'I like coffee.', register: 'neutral', note: 'one thing — gusta' },
+    { es: 'Me gustan los libros.', en: 'I like books.', register: 'neutral', note: 'more than one — gustan' },
+    { es: '¿Qué te gusta hacer?', en: 'What do you like doing?', register: 'coloquial', note: 'an infinitive counts as one thing' },
+    { es: 'No me gusta nada.', en: "I don't like it at all.", register: 'coloquial', note: null },
+    { es: 'Me encanta viajar.', en: 'I love travelling.', register: 'neutral', note: null },
+    { es: 'A mi hermano le gusta el fútbol.', en: 'My brother likes football.', register: 'neutral', note: 'name the person with a, keep le' },
+    { es: 'Me duele la cabeza.', en: 'I have a headache.', register: 'neutral', note: 'same shape, physical' }
+  ],
   sections: [
-    { h: 'Ordinary transitive and intransitive verbs', html: 'Most verbs either take a direct object (<i>escribir algo, regalar algo a alguien</i>) or do not (<i>correr, nacer, crecer</i>) — the subject is simply whoever does the action, as expected.' },
-    { h: 'Verbs that flip subject and experiencer', html: 'A small "psychological" class — <i>encantar</i> (liking), <i>doler</i> (physical sensation) — puts the thing or cause as the SUBJECT and the person who feels it as an INDIRECT OBJECT: <i>Me encanta el chocolate</i> is closer to "chocolate is delightful to me" than to "I love chocolate."' },
-    { h: 'The verb agrees with the cause, not the person', html: 'Because the cause is the subject, the verb must agree with IT: <i>Me encanta el chocolate</i> (singular) but <i>Me encantan los chocolates</i> (plural) — the person (<i>me</i>) never changes the verb\'s form.' }
+    { h: 'The two shapes', html: 'One thing: <i>Me gusta el café</i> — I like coffee. More than one: <i>Me gustan los libros</i> — I like books. And to ask: <i>¿Qué te gusta?</i> — what do you like? Those three sentences carry the whole pattern, and swapping the noun is all it takes to use it.' },
+    { h: 'Change the little word at the front', html: 'The word in front says who: <i>me gusta</i> (I like), <i>te gusta</i> (you like), <i>le gusta</i> (he/she likes), <i>nos gusta</i> (we like). The verb itself does not move: <i>A mi hermano le gusta el fútbol</i>. The same shape carries <i>encantar</i> (to love) and <i>doler</i> (to hurt): <i>me encanta</i>, <i>me duele</i>.' },
+    { h: 'Why it looks backwards', html: 'The reason, worth having once the shapes are in place: in Spanish the THING is the subject — <i>Me encanta el chocolate</i> is nearer "chocolate delights me" than "I love chocolate". That is why the verb agrees with the chocolate rather than with me, and why <i>Me encantan los chocolates</i> goes plural when the chocolates do.' }
   ],
   contrasts: [
     { es: 'Como una manzana.', en: 'I eat an apple.', note: 'ordinary transitive — yo is the subject, manzana the object' },

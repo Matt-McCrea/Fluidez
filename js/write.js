@@ -13,9 +13,15 @@ window.WriteSpace = (function () {
 
   function load() { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; } }
   function save(a) { try { localStorage.setItem(KEY, JSON.stringify(a)); } catch (e) {} }
-  function add(text, prompt) {
+  /* `marks` is the self-assessment an essay carried when it was saved
+   * ({rubric, yes, total}) — stored so the journal can show what you thought
+   * of the piece at the time, and never aggregated into anything. A score you
+   * gave yourself is evidence about your attention, not your Spanish. */
+  function add(text, prompt, marks) {
     var a = load();
-    a.push({ date: new Date().toISOString().slice(0, 10), text: text, prompt: prompt || '' });
+    var e = { date: new Date().toISOString().slice(0, 10), text: text, prompt: prompt || '' };
+    if (marks) e.marks = marks;
+    a.push(e);
     save(a);
   }
 
@@ -28,10 +34,49 @@ window.WriteSpace = (function () {
   }
 
   function render(host, back) {
+    var backFn = back;
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, UI.t('Escribir', 'Writing')));
     wrap.appendChild(UI.el('p', 'muted', 'The part most learners skip. Take a prompt or write freely — the checklist updates as you type, and everything is saved.'));
+
+    /* ---- extended writing (B2/C1) ----------------------------------------
+     * Essays are offered here as well as on the session's essay day, because
+     * the session decides WHEN and this space exists for deciding to write
+     * anyway. They are listed rather than folded into the prompt dropdown
+     * below: an essay is a different commitment from a journal entry, and a
+     * twenty-minute task hiding as the fortieth option in a <select> is a
+     * twenty-minute task nobody ever picks.
+     *
+     * Gated on level, not offered-and-refused. Somebody at A2 who opens one
+     * gets a 200-word argumentative brief in Spanish and closes the app. */
+    var lvl = (window.Profile && window.Profile.params()) ? window.Profile.params() : null;
+    var band = lvl ? lvl.cefr : 'A1';
+    var essays = (window.WRITING_TASKS || []).filter(function (t) { return t.type === 'essay'; });
+    if (essays.length && (band === 'B2' || band === 'C1') && window.Essay) {
+      wrap.appendChild(UI.el('h3', null, UI.t('Escritura larga', 'Extended writing')));
+      wrap.appendChild(UI.el('p', 'muted small',
+        UI.t('Veinte minutos y una revisión. Plan, borrador, modelo y autoevaluación.',
+             'Twenty minutes and a revision pass. Plan, draft, model, self-assessment.')));
+      var list = UI.el('div', 'essay-list');
+      essays.forEach(function (t) {
+        var b = UI.el('button', 'ghost-btn essay-pick'); b.type = 'button';
+        b.appendChild(UI.el('b', null, t.prompt));
+        b.appendChild(UI.el('span', 'muted small', ' · ' + (t.cefr || '') +
+          ' · ' + (window.Essay.rubricById(t.rubric) || {}).label));
+        b.addEventListener('click', function () {
+          UI.clear(host);
+          var panel = UI.el('div', 'panel');
+          host.appendChild(panel);
+          var back = UI.el('button', 'ghost-btn', UI.t('← Escribir', '← Writing')); back.type = 'button';
+          back.addEventListener('click', function () { render(host, backFn); });
+          window.Essay.mount(panel, t, { onDone: function () { render(host, backFn); } });
+          panel.appendChild(back);
+        });
+        list.appendChild(b);
+      });
+      wrap.appendChild(list);
+    }
 
     // prompt selector: free + the paragraph/write tasks
     var tasks = (window.WRITING_TASKS || []).filter(function (t) { return t.type === 'paragraph' || t.type === 'write'; });
@@ -110,7 +155,8 @@ window.WriteSpace = (function () {
       if (!a.length) { journal.appendChild(UI.el('p', 'muted', 'No entries yet — write your first above.')); return; }
       a.slice().reverse().forEach(function (e, ri) {
         var entry = UI.el('div', 'journal-entry');
-        entry.appendChild(UI.el('div', 'muted small', e.date + (e.prompt ? ' · ' + e.prompt : '')));
+        entry.appendChild(UI.el('div', 'muted small', e.date + (e.prompt ? ' · ' + e.prompt : '') +
+          (e.marks ? ' · ' + e.marks.yes + '/' + e.marks.total : '')));
         entry.appendChild(UI.el('div', 'journal-text', e.text));
         var del = UI.el('button', 'mini-btn', '✕ delete'); del.type = 'button';
         del.addEventListener('click', function () {
@@ -127,5 +173,5 @@ window.WriteSpace = (function () {
     onSelect(); renderJournal(); ta.focus();
   }
 
-  return { render: render, entryCount: function () { return load().length; } };
+  return { render: render, add: add, entryCount: function () { return load().length; } };
 })();

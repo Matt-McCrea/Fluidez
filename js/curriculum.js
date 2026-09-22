@@ -22,9 +22,12 @@ window.Curriculum = (function () {
   function asFocus(e) {
     // `unit` rides along on every focus so a stage can name the unit the day
     // belongs to; it is null for days not yet organised into one.
-    if (e.verbs) return { type: 'verbs', verbs: e.verbs, unit: e.unit || null };
-    if (e.practice) return { type: 'practice', unit: e.unit || null };
-    return { type: 'grammar', id: e.lesson, unit: e.unit || null };
+    // `passage` likewise: the opening two units name their own reading
+    // (data/course.js), and dropping it here is what would make that authored
+    // choice silently do nothing.
+    if (e.verbs) return { type: 'verbs', verbs: e.verbs, unit: e.unit || null, passage: e.passage || null };
+    if (e.practice) return { type: 'practice', unit: e.unit || null, passage: e.passage || null };
+    return { type: 'grammar', id: e.lesson, unit: e.unit || null, passage: e.passage || null };
   }
 
   var CACHE = {};

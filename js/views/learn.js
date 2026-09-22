@@ -312,6 +312,34 @@ window.StageLearn = (function () {
     var l = ctx.lesson;
     if (!l) { done(); return; }
     var wrap = fillLesson(UI.el('div', 'panel lesson'), l, { interactive: true });
+    /* The Spanish this lesson is built out of joins the review deck, the same
+     * way a vocab day's words do (teachVocab above). It is the same act: the
+     * learner has just read the table and the exponents at the top of this
+     * page, so these are things they have met today.
+     *
+     * This is the fix for CURRICULUM_AUDIT.md §1.1. Before it, `recall` was
+     * the only thing a lesson put into review — so what came back for months
+     * was the grammar point, and the ready-to-say Spanish on the same page
+     * came back never. Enrolling here rather than in Phrases.all() keeps the
+     * rule the rest of the app already follows: you review what you were
+     * taught, on the day you were taught it, and nothing else.
+     *
+     * CAPPED, and the cap is the load-bearing part. SRS.enrol sets `due` to
+     * today, so an enrolled phrase is a DUE item, not a "new" one — it is
+     * governed by reviewBatchMax (20 at A1) and not by newPerDay. A lesson
+     * releases a median of 9 phrases and up to 28; adding all of those on top
+     * of the day's vocab, verbs and recall points would put ~25 items a day
+     * into a queue that drains 20, and the overflow only gets rescheduled
+     * (SRS.rescheduleJitter) rather than dropped — so the backlog would grow
+     * every day and everything would read as perpetually overdue.
+     *
+     * Six, exponents first (js/phrases.js forLesson orders them), matching
+     * what teachVocab quizzes from a vocab day. The rest of the table is still
+     * on the page to read, still in the games pool, and still enrols the
+     * moment a game round puts it in play. */
+    if (window.Phrases) {
+      window.Phrases.forLesson(l.id).slice(0, 6).forEach(function (p) { S.enrol(p.id); });
+    }
     /* Every probe gets asked. `srs:false` marks the ones that must not join the
      * review deck, not ones to skip — filtering here meant a comprehension
      * check written for the end of the lesson was silently dropped instead. */

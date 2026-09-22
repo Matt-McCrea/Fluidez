@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fluidez Juegos</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0e7c86">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Juegos">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/games.css">
+  <!-- last, so it reskins the two above rather than fighting them -->
+  <link rel="stylesheet" href="../css/arcade.css">
+</head>
+<body>
+  <!-- No header and no tab bar: the list IS the app, and a round takes the
+       whole screen. See js/arcade.js. -->
+  <main class="app-main">
+    <div id="stage-host"></div>
+  </main>
+
+  <!-- data — the question bank, precomputed by tools/build-game-index.js, plus
+       the verbs the engine conjugates. NOT data/strand-lessons.js (3.4 MB),
+       data/passages.js (1.8 MB), data/vocab.js, data/writing.js or data/apply.js:
+       everything the games read from those is already inside game-index.js. -->
+  <script defer src="../js/perf.js"></script>
+  <script defer src="../data/taxonomy.js"></script>
+  <script defer src="../data/game-index.js"></script>
+  <script defer src="../data/verbs.js"></script>
+
+  <!-- engine + the stores the games share with the full app -->
+  <script defer src="../js/engine.js"></script>
+  <!-- The games need the checker for two things: grade() accepts a typed
+       answer through Checker.checkExact, and the index's synonym map is
+       built with Checker.meaningAlternatives — which fails SILENTLY when it
+       is absent, so "mandar" for "enviar" would simply be marked wrong. -->
+  <script defer src="../js/checker.js"></script>
+  <script defer src="../js/ui.js"></script>
+  <script defer src="../js/srs.js"></script>
+  <script defer src="../js/profile.js"></script>
+  <script defer src="../js/speak.js"></script>
+  <script defer src="../js/accepted.js"></script>
+  <script defer src="../js/errorlog.js"></script>
+
+  <!-- games: score, then items, then the round engine, then the section -->
+  <script defer src="../js/gamescore.js"></script>
+  <script defer src="../js/gameitems.js"></script>
+  <script defer src="../js/gameround.js"></script>
+  <script defer src="../js/games.js"></script>
+  <script defer src="../js/arcade.js"></script>
+</body>
+</html>

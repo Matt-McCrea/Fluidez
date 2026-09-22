@@ -5,6 +5,8 @@
  * triggers) — the bridge between drills and real use. Cloze answers are
  * computed by the engine, so they are always consistent with the tables.
  * Transforms rewrite a sentence per an instruction (tense/person/negation).
+ * Choices pick between two real candidates — ser/estar, por/para, lo/le —
+ * which is the one thing this stage could not ask before.
  * ========================================================================== */
 window.StageApply = (function () {
   var UI = window.UI, E = window.ENGINE, C = window.Checker, S = window.SRS;
@@ -104,11 +106,67 @@ window.StageApply = (function () {
       body.appendChild(UI.nextBtn('Continuar →', done));
     }
 
+    /* A CHOICE item: the blank has two or three real candidates and the
+     * sentence decides which. This is the only apply shape that is not about
+     * verb morphology, and it exists because everything an English speaker
+     * most reliably gets wrong — ser/estar, por/para, lo/le, un/el,
+     * preposition choice, agreement — could not be drilled at all. All 674
+     * items were verb cloze or verb transform, so for those contrasts the
+     * whole pipeline was: explain it, read it, skip Aplicar, write freely
+     * around it (CURRICULUM_AUDIT.md §1.3).
+     *
+     * Scheduled per CONTRAST, not per sentence: `ac:ser-estar` comes back on
+     * the SRS clock however many ser/estar items exist, the same contract
+     * js/views/review.js already runs for verb+tense pairs (`vt:`). */
+    function choiceId(it) { return 'ac:' + (it.focus || E.normalize(it.text)); }
+    function showChoice(it) {
+      body.appendChild(UI.el('div', 'cloze-text',
+        it.text.replace('___', '<span class="blank">＿＿＿</span>')));
+      body.appendChild(UI.el('p', 'muted small', 'Which one does this sentence need?'));
+      var fb = UI.el('div', 'feedback');
+      var row = UI.el('div', 'row-controls');
+      var locked = false;
+      it.options.forEach(function (opt, oi) {
+        var b = UI.el('button', 'ghost-btn', opt); b.type = 'button';
+        b.addEventListener('click', function () {
+          if (locked) return; locked = true;
+          var good = oi === it.answer;
+          if (good) correct++;
+          if (S) { S.enrol(choiceId(it)); S.grade(choiceId(it), good); }
+          if (!good && window.ErrorLog) {
+            window.ErrorLog.record({
+              id: 'err:choice:' + E.normalize(it.text),
+              front: it.text.replace('___', '＿＿＿'), back: it.options[it.answer],
+              hint: it.why || null, kind: 'error', source: 'apply-choice',
+              /* `focus` IS a lesson id, so this lands on the same key the
+               * optional deep units already declare in their `triggers`
+               * (data/course.js) and js/suggest.js already aggregates on.
+               * Without it, missing ser/estar six times could never surface
+               * "Ser and estar, properly" — whose trigger is literally
+               * `lesson:ser-estar`. `source` says which stage produced the
+               * miss, which is no use for noticing a pattern. */
+              topic: 'lesson:' + it.focus, reviewable: true
+            });
+          }
+          fb.className = 'feedback ' + (good ? 'good' : 'bad');
+          fb.innerHTML = '<b>' + it.options[it.answer] + '</b>'
+            + (it.why ? '<br>' + it.why : '')
+            + (it.en ? '<br><span class="muted">' + it.en + '</span>' : '');
+          row.appendChild(UI.nextBtn('Continuar →', function () { i++; show(); }));
+        });
+        row.appendChild(b);
+      });
+      body.appendChild(row);
+      body.appendChild(fb);
+    }
+
     function show() {
       if (i >= items.length) { finish(); return; }
       var it = items[i];
       progress.textContent = 'Frase ' + (i + 1) + ' / ' + items.length;
       UI.clear(body);
+
+      if (it.type === 'choice') { showChoice(it); return; }
 
       var answer, prompt, hintNote;
       if (it.type === 'cloze') {

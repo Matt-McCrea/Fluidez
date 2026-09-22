@@ -23,17 +23,34 @@
 const fs = require('fs'), path = require('path'), crypto = require('crypto');
 
 const ROOT = path.join(__dirname, '..');
-const SW = path.join(ROOT, 'sw.js');
 const PERF = path.join(ROOT, 'js', 'perf.js');
 
 const VERSION_RE = /CACHE_VERSION\s*=\s*'([^']+)'/;
 const BUILD_RE = /BUILD\s*=\s*'([^']+)'/;
 
-// The precache list, read from sw.js itself so the two can never drift.
-function assets() {
-  const src = fs.readFileSync(SW, 'utf8');
+/* TWO WORKERS. The arcade (juegos/) is a separate installable build with its
+ * own service worker, because two workers cannot control one scope. It has
+ * exactly the same staleness problem as the root one and no reason to solve it
+ * differently, so both are handled here. The prefix keeps the two versions
+ * visibly distinct in devtools — 'c…' is the app, 'j…' the arcade. */
+const TARGETS = [
+  { sw: 'sw.js',        prefix: 'c', carriesBuild: true },
+  { sw: 'juegos/sw.js', prefix: 'j', carriesBuild: false }
+];
+
+/* The precache list, read from the worker itself so the two can never drift.
+ * Paths are relative to the WORKER, not the root — the arcade reaches up to
+ * ../data and ../js — so they are resolved before being hashed. */
+function assets(swRel) {
+  const abs = path.join(ROOT, swRel || 'sw.js');
+  const src = fs.readFileSync(abs, 'utf8');
   const block = src.slice(src.indexOf('var ASSETS = ['), src.indexOf('];', src.indexOf('var ASSETS = [')));
-  return [...block.matchAll(/'\.\/([^']*)'/g)].map(m => m[1]).filter(Boolean);
+  const dir = path.dirname(abs);
+  return [...block.matchAll(/'([^']+)'/g)]
+    .map(m => m[1])
+    .filter(f => !f.endsWith('/'))              // './' is the page, not a file
+    .map(f => path.relative(ROOT, path.resolve(dir, f)))
+    .filter(f => f && !f.startsWith('..'));
 }
 
 /* Blank the version out of the two files that carry it: hashing them as-is
@@ -43,32 +60,47 @@ function normalise(rel, text) {
   return text;
 }
 
-function hash() {
+function target(swRel) {
+  return TARGETS.filter(t => t.sw === (swRel || 'sw.js'))[0] || TARGETS[0];
+}
+
+function hash(swRel) {
+  const t = target(swRel);
   const h = crypto.createHash('sha1');
-  for (const rel of assets().sort()) {
+  for (const rel of assets(t.sw).sort()) {
     const abs = path.join(ROOT, rel);
     if (!fs.existsSync(abs)) continue;          // reported separately by the validator
     h.update(rel + '\0');
     h.update(normalise(rel, fs.readFileSync(abs, 'utf8')));
   }
-  return 'c' + h.digest('hex').slice(0, 8);
+  return t.prefix + h.digest('hex').slice(0, 8);
 }
 
-function current() {
-  return (fs.readFileSync(SW, 'utf8').match(VERSION_RE) || [])[1];
+function current(swRel) {
+  const t = target(swRel);
+  return (fs.readFileSync(path.join(ROOT, t.sw), 'utf8').match(VERSION_RE) || [])[1];
 }
 
-function write(v) {
-  fs.writeFileSync(SW, fs.readFileSync(SW, 'utf8').replace(VERSION_RE, `CACHE_VERSION = '${v}'`));
-  fs.writeFileSync(PERF, fs.readFileSync(PERF, 'utf8').replace(BUILD_RE, `BUILD = '${v}'`));
+function write(swRel, v) {
+  const t = target(swRel);
+  const abs = path.join(ROOT, t.sw);
+  fs.writeFileSync(abs, fs.readFileSync(abs, 'utf8').replace(VERSION_RE, `CACHE_VERSION = '${v}'`));
+  // Only the root worker's version is mirrored into the build marker Ajustes
+  // shows; the arcade has no settings screen to show one in.
+  if (t.carriesBuild) fs.writeFileSync(PERF, fs.readFileSync(PERF, 'utf8').replace(BUILD_RE, `BUILD = '${v}'`));
 }
 
-module.exports = { hash, current, assets };
+module.exports = { hash, current, assets, TARGETS };
 
 if (require.main === module) {
-  const want = hash(), have = current();
-  if (want === have) { console.log('cache version already current: ' + have); process.exit(0); }
-  write(want);
-  console.log('cache version ' + have + ' → ' + want);
-  console.log('installed copies of the app will now fetch the new files.');
+  let changed = 0;
+  TARGETS.forEach(t => {
+    if (!fs.existsSync(path.join(ROOT, t.sw))) return;
+    const want = hash(t.sw), have = current(t.sw);
+    if (want === have) { console.log(t.sw + ': already current (' + have + ')'); return; }
+    write(t.sw, want);
+    changed++;
+    console.log(t.sw + ': ' + have + ' → ' + want);
+  });
+  if (changed) console.log('installed copies will now fetch the new files.');
 }

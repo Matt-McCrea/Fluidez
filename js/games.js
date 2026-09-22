@@ -44,7 +44,21 @@ window.Games = (function () {
     if (window.Shell) window.Shell.openOverlay(false);
     return host();
   }
+  /* WHO DRAWS THE LIST A ROUND COMES BACK TO.
+   *
+   * Every exit — the ✕, the end screen, a timed-out round — lands here, and it
+   * used to have exactly two answers: the tab, or this file's own list. The
+   * arcade build (juegos/) has neither. It has a different board, so leaving a
+   * round there rendered the APP's list into the arcade: a second, unstyled
+   * games list appearing out of nowhere, with none of the board's state.
+   *
+   * One seam rather than a branch: whoever owns the list says so once, and the
+   * app says nothing and behaves exactly as before. */
+  var listFn = null;
+  function setListRenderer(fn) { listFn = fn || null; }
+
   function backToList() {
+    if (listFn) { listFn(); return; }
     if (inTab && window.Shell) { window.Shell.closeOverlay(); window.Shell.go('jugar'); return; }
     render(host(), exitAll);
   }
@@ -91,7 +105,38 @@ window.Games = (function () {
       blurb: 'Cualquier cosa, sin avisar. Tres vidas y el reloj corriendo.' },
     { key: 'emparejar', name: 'Emparejar', rule: 'vacía el tablero', icon: '🃏',
       hue: '#2f8f5b', secs: 60, custom: true,
-      blurb: 'Empareja las columnas. Cada tablero es más grande que el anterior.' }
+      blurb: 'Empareja las columnas. Cada tablero es más grande que el anterior.' },
+
+    /* SUPERVIVENCIA. No clock at all: one life, and each ITEM carries the
+     * clock instead, on a window that tightens as you climb (suddenWindow in
+     * js/gameround.js). The round engine has supported this since it was
+     * written and nothing ever used it — a timed sprint asks "how much can you
+     * do in ninety seconds", which is a different question from "how far can
+     * you get", and only the second one has no ceiling.
+     *
+     * Mixed, because a survival run that could be beaten by being good at one
+     * thing is a survival run you beat by waiting for that thing. */
+    { key: 'supervivencia', name: 'Supervivencia', rule: 'una vida, sin reloj', icon: '💀',
+      hue: '#c0392b', kind: 'mixed', sudden: true, lives: 1,
+      blurb: 'Cada pregunta con su propio reloj, y cada una más rápida. ¿Hasta dónde llegas?' },
+
+    /* UNO U OTRO. Two buttons, but the interesting kind.
+     *
+     * This slot was noun gender first, and gender is dull for a reason worth
+     * recording: el/la is ARBITRARY. There is nothing to work out, no rule
+     * that repays attention, and getting one wrong teaches you exactly one
+     * word. The binaries worth sixty seconds are the ones where both options
+     * are correct Spanish and the SENTENCE decides — ser or estar, por or
+     * para, pretérito or imperfecto. Those are what a B2 learner still gets
+     * wrong, and each one you get right is a rule paying off.
+     *
+     * Every question is a real authored sentence with one word removed, and
+     * the alternative is conjugated by the engine rather than stored, so the
+     * wrong answer is wrong in THAT sentence rather than wrong in general —
+     * which is the whole distinction being taught. */
+    { key: 'unouotro', name: 'Uno u otro', rule: 'ser o estar, por o para', icon: '⚔️',
+      hue: '#3f8f7a', secs: 60, kind: 'contrast',
+      blurb: 'Una frase, una palabra fuera, dos candidatas. Las dos son español correcto.' }
   ];
   function byKey(k) { return GAMES.filter(function (g) { return g.key === k; })[0]; }
 
@@ -112,6 +157,7 @@ window.Games = (function () {
       key: g.key, title: g.name, kind: g.kind,
       duration: g.secs ? g.secs * 1000 : null,
       lives: g.lives || 0, hue: g.hue,
+      sudden: !!g.sudden,
       silent: GS.silent() || !hasVoice(),
       onExit: backToList
     };
@@ -850,6 +896,7 @@ window.Games = (function () {
   }
 
   return { render: render, renderTab: renderTab, open: open, openWeak: openWeak, openTense: openTense,
+           setListRenderer: setListRenderer,
            recommend: recommend,
            homeCard: homeCard, tenseCard: tenseCard, tenseCheckCard: tenseCheckCard,
            topicLabel: topicLabel, GAMES: GAMES };

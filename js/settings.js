@@ -24,6 +24,11 @@ window.Settings = (function () {
      * before the rewrite still round-trips and a reset still clears it. */
     'fluidez.gameBest', 'fluidez.games', 'fluidez.gamePrefs', 'fluidez.vetoed',
     'fluidez.accepted', 'fluidez.focus',
+    /* The arcade build's own settings (juegos/). Deliberately NOT
+     * 'fluidez.focus', which belongs to js/focus.js and holds the themed
+     * track — writing a games focus there would silently cancel a track the
+     * learner had started. */
+    'fluidez.arcade',
     'fluidez.onboarded', 'fluidez.voice', 'fluidez.suggest'];
   var KEEP_ON_RESET = { 'fluidez.theme': 1, 'fluidez.voice': 1 };
 

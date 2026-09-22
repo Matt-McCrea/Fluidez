@@ -131,13 +131,21 @@ bands.forEach(b => {
     }
   }
 
-  if (ap.length) {
-    const infs = new Set(ap.map(x => x.inf).filter(Boolean));
-    const ratio = infs.size / ap.length;
+  /* Verb variety is measured over the items that ARE verb drills. A `choice`
+   * item picks between ser/estar or por/para and names no verb of its own, so
+   * counting it in the denominator made the band look like it had lost verb
+   * variety the moment those items were added — the metric measuring its own
+   * blind spot rather than the content. */
+  const apVerbs = ap.filter(x => x.type !== 'choice');
+  if (apVerbs.length) {
+    const infs = new Set(apVerbs.map(x => x.inf).filter(Boolean));
+    const ratio = infs.size / apVerbs.length;
     if (ratio < 0.5) {
       flagged++;
-      console.log(`  ⚠ apply items drill only ${infs.size} distinct verbs across ${ap.length} items`);
+      console.log(`  ⚠ apply items drill only ${infs.size} distinct verbs across ${apVerbs.length} verb items`);
     } else console.log(`  ✓ apply items drill ${infs.size} distinct verbs`);
+    const nChoice = ap.length - apVerbs.length;
+    if (nChoice) console.log(`  · ${nChoice} choice items drill contrasts rather than conjugation`);
   }
 });
 

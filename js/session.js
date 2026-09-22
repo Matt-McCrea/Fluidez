@@ -64,19 +64,74 @@ window.Session = (function () {
    * `presubj` — so the id is not a safe stand-in for the tense key any more. */
   function focusTense(focus) { return focus.tense || focus.id; }
 
-  function passageUsesFocus(p, focus) {
-    if (focus.type === 'grammar' && E.CONCEPTS[focus.id]) return E.CONCEPTS[focus.id].matchesText(p.text);
-    if (focus.type === 'grammar') {
+  /* The Spanish a lesson is built out of, as single content words, for deciding
+   * whether a passage rehearses today's lesson.
+   *
+   * SINGLE WORDS, not the keyword rows themselves: a row like "¿Cómo te
+   * llamas?" only ever matches verbatim, and a passage that says "¿cómo se
+   * llama tu hermana?" is rehearsing exactly the same lesson. Four letters is
+   * the floor because `de`, `que` and `una` appear in every text ever written
+   * and would make every passage look aligned.
+   *
+   * Cached per lesson id: this is a hot path — one session filters every
+   * eligible passage — and a lesson's keyword table does not change. */
+  var LEX_CACHE = Object.create(null);
+  function lessonLex(l) {
+    if (!l) return [];
+    if (LEX_CACHE[l.id]) return LEX_CACHE[l.id];
+    var seen = Object.create(null), out = [];
+    [].concat(l.keywords || [], l.exponents || []).forEach(function (k) {
+      String((k && k.es) || '').split(/[^A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+/).forEach(function (w) {
+        w = w.toLowerCase();
+        if (w.length < 4 || seen[w]) return;
+        seen[w] = 1; out.push(w);
+      });
+    });
+    return (LEX_CACHE[l.id] = out);
+  }
+
+  /* Does this passage rehearse today's lesson?
+   *
+   * The tense test below can only answer for a lesson that HAS a tense, and
+   * most of the course does not: of the 19 lesson-days in the first 24, one
+   * carries a tense and one is a concept lesson. The other 17 teach a function
+   * or a notion, so they fell straight past this test to the theme tier, and
+   * nine of them past that to "any passage at this level" — which is the exact
+   * failure the tier comment further down was written to prevent, still
+   * happening on the days that teach the most useful Spanish.
+   *
+   * So a lesson may also align on its own vocabulary. Read through
+   * js/lexmatch.js rather than a second matcher, for the reason that file
+   * gives: if the app and the checker ever disagree about which words a text
+   * contains, the app teaches words the checker believes are absent.
+   *
+   * Three words, not one. One shared word is a coincidence in a 60-word text;
+   * three is the passage being about the same thing. Measured over the first
+   * 24 days, the threshold moves alignment from 2 days to 16 and leaves the
+   * candidate pools small (1-10 passages) rather than 193. */
+  var LEX_MIN = 3;
+  function passageUsesFocus(p, focus, lesson) {
+    if (focus.type === 'grammar' && E.CONCEPTS[focus.id] && E.CONCEPTS[focus.id].matchesText(p.text)) return true;
+    if (focus.type === 'grammar' && !E.CONCEPTS[focus.id]) {
       var a = E.analyzeSentence(p.text);
       var tk = focusTense(focus);
-      return a.verbs.some(function (v) { return v.analyses.some(function (x) { return x.tense === tk; }); }) ||
-             a.compounds.some(function (c) { return c.parts.some(function (x) { return x.tense === tk; }); });
+      if (a.verbs.some(function (v) { return v.analyses.some(function (x) { return x.tense === tk; }); }) ||
+          a.compounds.some(function (c) { return c.parts.some(function (x) { return x.tense === tk; }); })) return true;
+    }
+    if (focus.type === 'grammar' && window.LexMatch) {
+      var lex = lessonLex(lesson);
+      if (lex.length && window.LexMatch.countIn(p.text, lex) >= LEX_MIN) return true;
     }
     if (focus.type === 'verbs') return E.matchesVerbGroup(p.text, focus.verbs) >= 1;
     if (focus.type === 'vocab') return E.matchesVocabWords(p.text, focus.words) >= 1;
     return false;
   }
   function clozeMatchesFocus(it, focus) {
+    /* A choice item names the contrast it drills (`focus: 'ser-estar'`), so it
+     * aligns by that rather than by tense — it may not contain a verb at all.
+     * Tested first: E.CONCEPTS['ser-estar'].matchesCloze would be asked about
+     * an item with no `inf`, and answer for the wrong reason. */
+    if (it.type === 'choice') return focus.type === 'grammar' && it.focus === focus.id;
     if (focus.type === 'grammar' && E.CONCEPTS[focus.id]) return E.CONCEPTS[focus.id].matchesCloze(it);
     if (focus.type === 'grammar') return it.tense === focusTense(focus);
     if (focus.type === 'verbs') return focus.verbs.indexOf(it.inf) !== -1;
@@ -367,6 +422,7 @@ window.Session = (function () {
     // Never offer content above the level you are studying: a B1 learner should
     // not meet C1 passages just because the lesson ladder ran ahead.
     if (pr.maxGate) level = Math.min(level, pr.maxGate);
+
     return { day: day, pr: pr, prog: prog, studied: studied,
              focus: focus, lesson: lesson, level: level, dayIndex: dayIndex };
   }
@@ -408,13 +464,83 @@ window.Session = (function () {
     var trans = inTheme(writes.filter(function (t) { return t.type === 'translate'; }));
     var frees = inTheme(writes.filter(function (t) { return t.type === 'write'; }));
     var paras = inTheme(writes.filter(function (t) { return t.type === 'paragraph'; }));
+    var essays = inTheme(writes.filter(function (t) { return t.type === 'essay'; }));
+
+    /* ESSAY DAYS. An essay is twenty minutes and a revision pass, so it cannot
+     * be another item appended to a produce stage that already runs six — that
+     * turns every B2 session into forty minutes and the learner stops opening
+     * the app, which is the failure mode this whole section is supposed to fix.
+     *
+     * So it REPLACES rather than adds: on an essay day the two free writes and
+     * the paragraph come out and the essay goes in, leaving the build and the
+     * translation as a warm-up. Session length barely moves; what changes is
+     * that once a week the output is one long text instead of five short ones.
+     *
+     * The clock is `dayIndex`, and WHAT THAT COUNTS IS NOT DAYS. At B1 and up
+     * it is the course position of the learner's next unstudied lesson (see
+     * pickFocus), so it advances when a lesson is finished and not when a
+     * calendar day passes. That is the right clock — somebody who studies
+     * twice a week should meet an essay every seventh LESSON, not have six of
+     * them go by unseen — but it is easy to misread, and the first version of
+     * this was tested against a learner who completed nothing, so dayIndex
+     * never moved, and it served zero essays across 28 B2 and 28 C1 sessions
+     * while every content gate stayed green. tools/test-essay.js now walks a
+     * learner who finishes a lesson each session for exactly that reason.
+     *
+     * Measured over 42 such sessions: 4 essays at B2, 6 at C1, 0 at B1. The
+     * gaps are 6-13 rather than a clean 7 because the non-lesson days in a
+     * unit do not advance the counter.
+     *
+     * A learner parked on one lesson does see the same essay day repeat — but
+     * they are being served the same lesson repeatedly too, which is how the
+     * whole session already behaves, so it needs no state of its own. */
+    var essayDay = level >= 6 && essays.length && (dayIndex % 7 === 0);
     // A long session is the same session with more of it — not extra stages.
     var big = mode === 'larga';
+    /* THE PRODUCE STAGE, BY BAND.
+     *
+     * `produceStyle` declares four values in data/taxonomy.js — build (A1),
+     * guided (A2), full (B1/B2), extended (C1, mapped to full in
+     * js/profile.js). This branched on 'guided' alone, so:
+     *
+     *   · A2 hit the restricted branch and wrote NOTHING for 81 days. Build a
+     *     scrambled sentence, translate a sentence, done. Measured across the
+     *     whole band: 162 tasks served, every one a build or a translation,
+     *     while 215 eligible write/paragraph tasks — 58 of them authored at
+     *     A2's own levels — were never reached once.
+     *   · A1's 'build' was handled nowhere, fell through to the full branch,
+     *     and therefore did MORE free production than the band above it.
+     *
+     * That inversion is fallout from the profiles→levels migration
+     * (tools/ARCHITECTURE_V2.md, decision 4): 'guided' is a SUPPORT value that
+     * ended up in the LEVEL table, so A2 inherited the old beginner profile's
+     * scaffolding as though it were a property of the band.
+     *
+     * All four values are now handled. A2's produce stage goes from two tasks
+     * to four, and that IS a longer session — two was not a shortened form of
+     * writing practice, it was the absence of it, so there was nothing to
+     * trim. It stays one task shorter than B1 (which takes two `write`s), and
+     * the task it gains over A1 is the `paragraph`: the A1→A2 step the CEFR
+     * actually describes is not more writing but CONNECTED writing, the first
+     * point at which the learner has to link sentences to each other.
+     *
+     * A1 keeps what it had. Level 1 excludes paragraphs by the gate below, and
+     * its 156 level-1 `write` tasks were authored for exactly this slot; the
+     * accident produced the right outcome and only the reasoning was missing. */
     var produce;
     if (pr.produceStyle === 'guided') {
-      produce = [].concat(sample(builds, 1, rng))
-        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), big ? 2 : 1, rng));
+      produce = []
+        .concat(sample(builds, 1, rng))
+        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), big ? 2 : 1, rng))
+        .concat(sample(preferAligned(frees, focus, writeMatchesFocus), big ? 2 : 1, rng))
+        .concat(sample(preferAligned(paras, focus, writeMatchesFocus), 1, rng));
+    } else if (essayDay) {
+      produce = []
+        .concat(sample(builds, 1, rng))
+        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), 1, rng))
+        .concat(sample(preferAligned(essays, focus, writeMatchesFocus), 1, rng));
     } else {
+      // 'build' (A1), 'full' (B1/B2), 'extended' → 'full' (C1).
       produce = []
         .concat(sample(builds, 1, rng))
         .concat(sample(preferAligned(trans, focus, writeMatchesFocus), big ? 2 : 1, rng))
@@ -431,7 +557,7 @@ window.Session = (function () {
      * 2. failing that, one on the same theme as today's lesson
      * 3. failing that, anything at this level — and the stage says so, rather
      *    than presenting it as though it followed on. */
-    var aligned = passages.filter(function (x) { return passageUsesFocus(x, focus); });
+    var aligned = passages.filter(function (x) { return passageUsesFocus(x, focus, lesson); });
     var themed = [];
     if (!aligned.length && lesson && lesson.theme) {
       themed = passages.filter(function (x) { return x.theme === lesson.theme; });
@@ -447,10 +573,41 @@ window.Session = (function () {
     if (fTheme) {
       var inF = passages.filter(function (x) { return x.theme === fTheme; });
       if (inF.length) {
-        var both = inF.filter(function (x) { return passageUsesFocus(x, focus); });
+        var both = inF.filter(function (x) { return passageUsesFocus(x, focus, lesson); });
         storyPool = both.length ? both : inF;
         storyTier = both.length ? 'focus' : 'themeFocus';
       }
+    }
+
+    /* Prefer something not read yet.
+     *
+     * Applied to whatever pool the tiers produced, so it never widens the
+     * choice — an unread passage that is wrong for today still loses to the
+     * tier above it. It only breaks the tie the scheduler was previously
+     * breaking by re-serving a favourite.
+     *
+     * Falls back to the whole pool when everything in it has been read, which
+     * is the same bargain taughtTenses and Focus.narrow already make: a stage
+     * that must produce a passage cannot be handed an empty list, and a
+     * repeat is better than nothing. */
+    var alreadyRead = readSet();
+    var unread = storyPool.filter(function (x) { return !alreadyRead[x.id]; });
+    if (unread.length) storyPool = unread;
+
+    /* A day that names its reading (data/course.js `passage`) gets it. Outranks
+     * every tier above, including a chosen theme focus AND the unread
+     * preference: the opening fortnight is authored, day 11 re-reads day 1 on
+     * purpose, and a hand-picked text losing because it has been seen would
+     * defeat the point of writing it down.
+     *
+     * Read out of `passages`, which is already gated by level and by taught
+     * tense, so an id that names something the learner cannot meet yet falls
+     * back to the scheduler rather than serving a text full of unseen tenses.
+     * tools/validate-content.js checks these ids resolve and are legal on
+     * their day, so a fallback here means the gate would have caught it. */
+    if (focus.passage) {
+      var named = passages.filter(function (x) { return x.id === focus.passage; });
+      if (named.length) { storyPool = named; storyTier = 'focus'; }
     }
 
     /* Among passages that are equally right on grammar and theme, prefer the
@@ -492,14 +649,37 @@ window.Session = (function () {
       });
       return n;
     }
+    /* Two stages, because the raw count and the density each answer half of
+     * it and neither answers both.
+     *
+     * The FLOOR is what the raw count was really for: the day's new words are
+     * drawn from this passage, so a text carrying fewer unmet words than the
+     * day's quota cannot overlap with all of them however good it is.
+     *
+     * Above that floor, prefer the DENSER text, not the longer one. Scoring on
+     * the raw count alone made length the dominant term — measured over the
+     * 139 A1 passages, correlation between length and score was +0.51, the 20
+     * top-scoring averaged 77 words against A1's 30-60 target, and NOT ONE of
+     * them was inside it. So the scheduler was systematically picking the
+     * baggiest text available, and any correctly-sized passage written later
+     * would lose to a longer one for being shorter. Normalising flips that to
+     * -0.35, and 16 of the top 20 land in target. */
+    function words(t) { return String(t || '').split(/\s+/).filter(Boolean).length; }
     function richest(pool) {
       if (!pool || !pool.length) return null;
       // Bounded: this runs on a phone, once per session.
       var cand = pool.length > 40 ? sample(pool, 40, rng) : pool;
+      var need = pr.newPerDay || 5;
+      var scored = cand.map(function (p) { return { p: p, n: teaches(p), w: words(p.text) }; });
+      var enough = scored.filter(function (x) { return x.n >= need; });
+      // Below the floor nothing can overlap fully, so there the raw count IS
+      // the right measure — take the one that carries the most.
+      var useDensity = enough.length > 0;
+      var field = useDensity ? enough : scored;
       var best = -1, top = [];
-      cand.forEach(function (p) {
-        var n = teaches(p);
-        if (n > best) { best = n; top = [p]; } else if (n === best) top.push(p);
+      field.forEach(function (x) {
+        var s = useDensity ? x.n / Math.max(x.w, 1) : x.n;
+        if (s > best) { best = s; top = [x.p]; } else if (s === best) top.push(x.p);
       });
       return pick(top, rng);
     }
@@ -555,6 +735,32 @@ window.Session = (function () {
   // ---- progress / streak -------------------------------------------------
   function loadProg() { try { return JSON.parse(localStorage.getItem(PKEY)) || {}; } catch (e) { return {}; } }
   function saveProg(o) { try { localStorage.setItem(PKEY, JSON.stringify(o)); } catch (e) {} }
+
+  /* WHICH PASSAGES HAVE BEEN READ.
+   *
+   * Nothing recorded this, and the cost was severe: over the first 60 days the
+   * scheduler served 45 lesson-days out of 24 distinct passages, one of them
+   * eight times. The preference that picks a passage — most unmet vocabulary
+   * per word read (see `richest`) — has no memory, so the same short, dense
+   * text keeps winning every time it is eligible. Re-reading one passage four
+   * times in a month is a worse failure than a hard passage.
+   *
+   * Recorded when the READING STAGE FINISHES, not when the day is built:
+   * buildContext is deterministic and re-runs on every reload, so marking
+   * there would retire passages the learner never actually read.
+   *
+   * The day is stored rather than a bare flag — it costs the same and leaves
+   * the door open to "offer this again after N days", which is a different
+   * decision from "never again" and should not be foreclosed here. */
+  function markRead(id) {
+    if (!id) return;
+    var p = loadProg();
+    p.read = p.read || {};
+    if (p.read[id]) return;
+    p.read[id] = dayNumber();
+    saveProg(p);
+  }
+  function readSet() { return loadProg().read || {}; }
   function bumpStreak() {
     var p = loadProg(), day = dayNumber();
     // record the active day for the dashboard heatmap (even if already counted today)
@@ -700,6 +906,8 @@ window.Session = (function () {
     var body = UI.el('div', 'stage-body');
     host.appendChild(body);
     stage.run(body, ctx, function () {
+      // A passage counts as read once the reading stage is done with it.
+      if (stage.key === 'comprehend' && ctx.passage) markRead(ctx.passage.id);
       if (stage.key === 'learn') {
         var p = loadProg();
         var pr = window.Profile ? window.Profile.params() : { name: 'standard' };

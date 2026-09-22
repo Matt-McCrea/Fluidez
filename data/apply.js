@@ -859,6 +859,137 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: 'El testigo ___ (identificar) al sospechoso sin ninguna duda.', inf: 'identificar', tense: 'preterito', person: 'él/ella', en: 'The witness identified the suspect without any doubt.' },
   { type: 'cloze', level: 8, text: 'El manual ___ (advertir) claramente de los riesgos del producto.', inf: 'advertir', tense: 'presente', person: 'él/ella', en: 'The manual clearly warns of the risks of the product.' },
   { type: 'transform', level: 9, instruction: 'Rewrite using "cuando" + subjunctive for a future action:', from: 'Recibiremos los resultados. Entonces decidiremos.', to: 'Cuando recibamos los resultados, decidiremos.', en: 'When we receive the results, we will decide.' },
-  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'El equipo técnico solucionó el problema en horas.', to: 'El problema se solucionó en horas.', en: 'The problem was solved within hours.' }
+  { type: 'transform', level: 8, instruction: 'Rewrite as an impersonal "se" construction:', from: 'El equipo técnico solucionó el problema en horas.', to: 'El problema se solucionó en horas.', en: 'The problem was solved within hours.' },
+
+  /* ---- CHOICE items -------------------------------------------------------
+   * The non-verb contrasts. Every item above is a verb cloze or a verb
+   * transform, which meant the Aplicar stage could not ask about ser/estar,
+   * por/para, object pronouns, agreement or preposition choice at all — the
+   * whole list of what an English speaker actually gets wrong. Those topics
+   * got explained, read, and then never drilled (CURRICULUM_AUDIT.md §1.3).
+   *
+   * Weighted to A2 (level 2) on purpose: A2 had 0.36 apply items per day
+   * against A1's 2.05, and the 19 level-2 items that carried a tense were all
+   * `imperfecto` — so the band that teaches the preterite/imperfect choice,
+   * object pronouns, the imperative, comparatives and por/para had no
+   * application stage for any of them.
+   *
+   * `focus` is the lesson id the contrast belongs to, which is both how
+   * js/session.js aligns the item to its teaching day and what the SRS
+   * schedules on (`ac:<focus>`). `why` is shown after answering — one line,
+   * the reason, not a rule.
+   * ------------------------------------------------------------------------ */
+
+  // ser vs estar
+  { type: 'choice', level: 1, focus: 'ser-estar', text: 'Mi hermana ___ profesora de inglés.', options: ['es', 'está'], answer: 0,
+    why: 'A job is what she is, not how she is — ser.', en: 'My sister is an English teacher.' },
+  { type: 'choice', level: 1, focus: 'ser-estar', text: 'La sopa ___ muy rica.', options: ['es', 'está'], answer: 1,
+    why: 'How it tastes right now — estar. With ser it would be a permanent quality.', en: 'The soup is delicious.' },
+  { type: 'choice', level: 1, focus: 'ser-estar', text: '¿Dónde ___ la estación de tren?', options: ['es', 'está'], answer: 1,
+    why: 'Location always takes estar.', en: 'Where is the train station?' },
+  { type: 'choice', level: 1, focus: 'ser-estar', text: 'Hoy ___ martes.', options: ['es', 'está'], answer: 0,
+    why: 'Days and dates take ser, even though they change.', en: 'Today is Tuesday.' },
+  { type: 'choice', level: 1, focus: 'ser-estar', text: 'Mis padres ___ de Sevilla.', options: ['son', 'están'], answer: 0,
+    why: 'Origin is ser — where you are FROM, not where you are.', en: 'My parents are from Seville.' },
+  { type: 'choice', level: 2, focus: 'ser-estar', text: 'Carlos ___ muy callado hoy, ¿le pasa algo?', options: ['es', 'está'], answer: 1,
+    why: 'Estar makes it a change from normal; ser would mean he is a quiet person.', en: 'Carlos is very quiet today, is something wrong?' },
+  { type: 'choice', level: 2, focus: 'ser-estar', text: 'El examen ___ en el aula 12.', options: ['es', 'está'], answer: 0,
+    why: 'An EVENT takes ser even for place: the exam takes place there.', en: 'The exam is in room 12.' },
+
+  // por vs para
+  { type: 'choice', level: 2, focus: 'por-para', text: 'Este regalo es ___ ti.', options: ['por', 'para'], answer: 1,
+    why: 'The recipient — who it is destined for — takes para.', en: 'This present is for you.' },
+  { type: 'choice', level: 2, focus: 'por-para', text: 'Gracias ___ tu ayuda.', options: ['por', 'para'], answer: 0,
+    why: 'The reason you are grateful — por.', en: 'Thanks for your help.' },
+  { type: 'choice', level: 2, focus: 'por-para', text: 'Estudio español ___ trabajar en Chile.', options: ['por', 'para'], answer: 1,
+    why: 'Purpose — what the studying is FOR.', en: 'I study Spanish in order to work in Chile.' },
+  { type: 'choice', level: 2, focus: 'por-para', text: 'Pasamos ___ el centro de camino a casa.', options: ['por', 'para'], answer: 0,
+    why: 'Movement THROUGH a place — por.', en: 'We went through the centre on the way home.' },
+  { type: 'choice', level: 2, focus: 'por-para', text: 'El informe es ___ el lunes.', options: ['por', 'para'], answer: 1,
+    why: 'A deadline takes para.', en: 'The report is due on Monday.' },
+  { type: 'choice', level: 2, focus: 'por-para', text: 'Lo compré ___ veinte euros.', options: ['por', 'para'], answer: 0,
+    why: 'An exchange — what you swapped for it — takes por.', en: 'I bought it for twenty euros.' },
+
+  // direct vs indirect object pronouns
+  { type: 'choice', level: 2, focus: 'gr-pronombres-atonos-a2', text: '¿El libro? Ya ___ he leído.', options: ['lo', 'le'], answer: 0,
+    why: 'El libro is the direct object — lo.', en: 'The book? I have already read it.' },
+  { type: 'choice', level: 2, focus: 'gr-pronombres-atonos-a2', text: 'A mi madre ___ escribo todas las semanas.', options: ['la', 'le'], answer: 1,
+    why: 'You write TO her — indirect object, so le even though she is female.', en: 'I write to my mother every week.' },
+  { type: 'choice', level: 2, focus: 'gr-pronombres-atonos-a2', text: '¿Las llaves? Las dejé ___ la mesa.', options: ['en', 'a'], answer: 0,
+    why: 'Position on a surface — en.', en: 'The keys? I left them on the table.' },
+  { type: 'choice', level: 2, focus: 'gr-pronombres-atonos-a2', text: 'Ese dinero es de Ana: ___ lo doy mañana.', options: ['se', 'le'], answer: 0,
+    why: 'le + lo becomes se lo — le never survives in front of lo/la/los/las.', en: 'That money is Ana\'s: I am giving it to her tomorrow.' },
+  { type: 'choice', level: 2, focus: 'gr-objeto-indirecto-a2', text: '___ di las gracias a los vecinos.', options: ['Les', 'Los'], answer: 0,
+    why: 'You gave thanks TO them — indirect object, les.', en: 'I thanked the neighbours.' },
+  { type: 'choice', level: 2, focus: 'gr-objeto-indirecto-a2', text: 'Compré flores para Marta y ___ las llevé a casa.', options: ['se', 'le'], answer: 0,
+    why: 'le + las becomes se las — le never survives in front of lo/la/los/las.', en: 'I bought flowers for Marta and took them to her house.' },
+
+  // gustar-type agreement
+  { type: 'choice', level: 1, focus: 'gr-verbos-predicativos-tipos-a2', text: 'Me ___ mucho los documentales.', options: ['gusta', 'gustan'], answer: 1,
+    why: 'Los documentales is what the verb agrees with, not "me".', en: 'I really like documentaries.' },
+  { type: 'choice', level: 1, focus: 'gr-verbos-predicativos-tipos-a2', text: 'A mis hermanos ___ encanta viajar.', options: ['les', 'los'], answer: 0,
+    why: 'Gustar-type verbs always take the indirect pronoun — les.', en: 'My brothers love travelling.' },
+  { type: 'choice', level: 2, focus: 'gr-verbos-predicativos-tipos-a2', text: '¿Te ___ la cabeza otra vez?', options: ['duele', 'dueles'], answer: 0,
+    why: 'La cabeza is singular and it is the subject — duele.', en: 'Is your head hurting again?' },
+
+  // personal a
+  { type: 'choice', level: 1, focus: 'gr-objeto-directo-a1', text: 'Conozco ___ tu hermano desde el colegio.', options: ['a', 'al'], answer: 0,
+    why: 'Personal a before a specific person; al only before el.', en: 'I have known your brother since school.' },
+  { type: 'choice', level: 1, focus: 'gr-objeto-directo-a1', text: 'Tengo ___ dos hermanas mayores.', options: ['—', 'a'], answer: 0,
+    why: 'Tener plus a number takes no personal a.', en: 'I have two older sisters.' },
+  { type: 'choice', level: 1, focus: 'gr-objeto-directo-a1', text: 'Creo ___ tienes razón.', options: ['que', '—'], answer: 0,
+    why: 'English can drop "that"; Spanish never drops que.', en: 'I think you are right.' },
+
+  // preterite vs imperfect — the CHOICE, which no item drilled
+  { type: 'choice', level: 2, focus: 'preterite-imperfect', text: 'Ayer ___ a las siete y desayuné rápido.', options: ['me levanté', 'me levantaba'], answer: 0,
+    why: 'One completed event at a stated time — preterite.', en: 'Yesterday I got up at seven and had a quick breakfast.' },
+  { type: 'choice', level: 2, focus: 'preterite-imperfect', text: 'Cuando ___ pequeño, vivíamos en el campo.', options: ['fui', 'era'], answer: 1,
+    why: 'A background state with no endpoint — imperfect.', en: 'When I was little, we lived in the countryside.' },
+  { type: 'choice', level: 2, focus: 'preterite-imperfect', text: 'Yo ___ la tele cuando sonó el teléfono.', options: ['vi', 'veía'], answer: 1,
+    why: 'The ongoing action that got interrupted — imperfect.', en: 'I was watching TV when the phone rang.' },
+  { type: 'choice', level: 2, focus: 'preterite-imperfect', text: 'El año pasado ___ a Portugal tres veces.', options: ['fuimos', 'íbamos'], answer: 0,
+    why: 'A counted number of completed trips — preterite.', en: 'Last year we went to Portugal three times.' },
+  { type: 'choice', level: 2, focus: 'preterite-imperfect', text: 'Todos los veranos ___ en casa de mi abuela.', options: ['estuvimos', 'estábamos'], answer: 1,
+    why: '"Every summer" is a repeated habit — imperfect.', en: 'Every summer we stayed at my grandmother\'s house.' },
+
+  // comparatives
+  { type: 'choice', level: 2, focus: 'gr-comparativos-a2', text: 'Este piso es ___ caro que el otro.', options: ['más', 'tan'], answer: 0,
+    why: 'más … que for an unequal comparison; tan needs como.', en: 'This flat is more expensive than the other one.' },
+  { type: 'choice', level: 2, focus: 'gr-comparativos-a2', text: 'Mi coche no corre ___ como el tuyo.', options: ['tanto', 'tan'], answer: 0,
+    why: 'Tanto modifies a verb; tan would need an adjective after it.', en: 'My car does not go as fast as yours.' },
+  { type: 'choice', level: 2, focus: 'gr-comparativos-a2', text: 'Mi hermana es ___ que yo — tiene treinta años.', options: ['mayor', 'más grande'], answer: 0,
+    why: 'Age between people is mayor/menor; más grande is size.', en: 'My sister is older than me — she is thirty.' },
+
+  // un vs el — the article contrast English gives no help with
+  { type: 'choice', level: 2, focus: 'gr-articulo-definido-distribucion-a2', text: 'No me gusta ___ café, prefiero el té.', options: ['el', 'un'], answer: 0,
+    why: 'A whole category takes the definite article, where English uses none.', en: 'I do not like coffee, I prefer tea.' },
+  { type: 'choice', level: 2, focus: 'gr-articulo-definido-distribucion-a2', text: 'Necesito ___ bolígrafo, ¿tienes uno?', options: ['un', 'el'], answer: 0,
+    why: 'Any pen at all, mentioned for the first time — indefinite.', en: 'I need a pen, do you have one?' },
+  { type: 'choice', level: 2, focus: 'gr-articulo-definido-distribucion-a2', text: 'Me duele ___ cabeza.', options: ['la', 'mi'], answer: 0,
+    why: 'Spanish uses the article, not the possessive, for your own body parts.', en: 'My head hurts.' },
+
+  // muy vs mucho
+  { type: 'choice', level: 1, focus: 'gr-adverbios-lugar-tiempo-cantidad-a1', text: 'Estoy ___ cansada hoy.', options: ['muy', 'mucho'], answer: 0,
+    why: 'Muy goes in front of an adjective; mucho never does.', en: 'I am very tired today.' },
+  { type: 'choice', level: 1, focus: 'gr-adverbios-lugar-tiempo-cantidad-a1', text: 'Trabajo ___ los lunes.', options: ['mucho', 'muy'], answer: 0,
+    why: 'Mucho modifies the verb — how much you work.', en: 'I work a lot on Mondays.' },
+
+  // imperative
+  { type: 'choice', level: 4, focus: 'gr-imperativo-forma-a2', text: '___ la puerta, por favor. (tú)', options: ['Cierra', 'Cierre'], answer: 0,
+    why: 'The tú command is the he/she present form: cierra.', en: 'Close the door, please.' },
+  { type: 'choice', level: 4, focus: 'gr-imperativo-forma-a2', text: 'Señora Ruiz, ___ aquí, por favor. (usted)', options: ['firme', 'firma'], answer: 0,
+    why: 'The usted command swaps the vowel: firmar becomes firme.', en: 'Mrs Ruiz, sign here please.' },
+
+  // conditional si-clause
+  { type: 'choice', level: 3, focus: 'gr-condicionales-a2', text: 'Si ___ tiempo, voy contigo el sábado.', options: ['tengo', 'tendré'], answer: 0,
+    why: 'After si about a real possibility Spanish uses the present, never the future.', en: 'If I have time, I will come with you on Saturday.' },
+  { type: 'choice', level: 3, focus: 'gr-condicionales-a2', text: 'Si llueve, ___ en casa.', options: ['nos quedamos', 'nos quedaríamos'], answer: 0,
+    why: 'A real condition takes present + present or present + future.', en: 'If it rains, we will stay at home.' },
+
+  // gerund — the -ing trap
+  { type: 'choice', level: 2, focus: 'gr-gerundio-a2', text: '___ idiomas es muy útil.', options: ['Aprender', 'Aprendiendo'], answer: 0,
+    why: 'English uses -ing as a noun; Spanish uses the infinitive.', en: 'Learning languages is very useful.' },
+  { type: 'choice', level: 2, focus: 'gr-gerundio-a2', text: 'Estoy ___ la cena ahora mismo.', options: ['preparando', 'preparar'], answer: 0,
+    why: 'After estar, the gerund — something in progress right now.', en: 'I am making dinner right now.' }
 
 ];

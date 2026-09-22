@@ -39,6 +39,7 @@ const ROOT = path.join(__dirname, '..');
 global.window = {};
 const load = f => (0, eval)(fs.readFileSync(path.join(ROOT, f), 'utf8'));
 ['data/verbs.js', 'data/vocab.js', 'data/idioms.js', 'data/connectors.js', 'data/taxonomy.js',
+ 'data/rubrics.js',
  'data/passages.js', 'data/writing.js', 'data/topics.js', 'data/apply.js',
  'data/strand-lessons.js', 'js/engine.js'].forEach(load);
 const E = window.ENGINE;
@@ -80,6 +81,19 @@ if (!only || only === 'passages') (window.PASSAGES || []).forEach(p => {
 if (!only || only === 'writing') (window.WRITING_TASKS || []).forEach(t => {
   (t.models || []).forEach((m, i) => push(`writing ${t.id} model[${i}]`, m));
   push(`writing ${t.id}`, t.answer);
+  // An essay's brief and plan are Spanish the learner READS, not just prompt
+  // scaffolding in English — so they get linted like any other prose.
+  push(`writing ${t.id} brief`, t.brief);
+  (t.plan || []).forEach((s, i) => push(`writing ${t.id} plan[${i}]`, s));
+});
+// Rubrics are read at the moment the learner is deciding whether their own
+// Spanish is right. An accent error in the marking criteria is the worst
+// possible place for one.
+if (!only || only === 'rubrics') (window.RUBRICS || []).forEach(r => {
+  (r.dims || []).forEach(d => (d.asks || []).forEach((a, i) => {
+    push(`rubric ${r.id}/${d.id}[${i}] q`, a.q);
+    push(`rubric ${r.id}/${d.id}[${i}] fix`, a.fix);
+  }));
 });
 if (!only || only === 'apply') (window.APPLY_ITEMS || []).forEach((a, i) => {
   push(`apply[${i}]`, a.text); push(`apply[${i}]`, a.from); push(`apply[${i}]`, a.to);

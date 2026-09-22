@@ -309,6 +309,21 @@
   var ENGLISH_RE = new RegExp('(^|[^a-zá-úñü])(' + ENGLISH_ONLY.join('|') + ')([^a-zá-úñü]|$)', 'i');
   function descriptive(back) { return ENGLISH_RE.test(String(back || '')); }
 
+  /* A Spanish utterance, as opposed to a sentence ABOUT Spanish.
+   *
+   * Needed only to police the longer answers that `reproducible` now allows.
+   * descriptive() above is a list of English words that betray a one-word
+   * gloss, and it is the wrong instrument here: "so-so — neither good nor
+   * bad" and "stating a standing fact about my life" contain none of its
+   * words and are still English prose. So test positively — a real chunk
+   * carries Spanish function words — and reject anything wearing English
+   * ones, which no Spanish utterance of four words or more will. */
+  var ES_FUNCTION = /(^|\s)(de|del|la|el|los|las|un|una|unos|unas|que|qué|en|por|para|con|no|se|te|me|le|lo|y|o|a|al|es|está|están|son|soy|hay|muy|más|menos|ya|si|sí|su|mi|tu|te|nos)(\s|$)/i;
+  var EN_FUNCTION = /(^|[^a-zá-úñü])(the|and|of|for|with|that|which|is|are|was|were|a|an|to|it|my|your|his|her|their|once|new|known|neither|nor|about|means|meaning|when|while|after|before|something|anything|nothing|between|rather|instead|because)([^a-zá-úñü]|$)/i;
+  function spanishUtterance(b) {
+    return ES_FUNCTION.test(b) && !EN_FUNCTION.test(b);
+  }
+
   /* Whatever it asks, an answer you could not type back weeks later is not a
    * card. Review always types a lesson card (js/views/review.js resolves
    * `fixed` to mode 'type'), so a five-word answer is an automatic miss —
@@ -328,7 +343,23 @@
      * después" shows nothing that could produce that answer rather than
      * "luego" or "después", so it is a guess dressed as recall. */
     if ((kind === 'cloze' || String(front || '').indexOf('___') !== -1) && words > 2) return false;
-    return words <= 3;
+    if (words <= 3) return true;
+    /* Was a flat `words <= 3`, and that cap was the single biggest thing
+     * keeping the language out of review: at B2 it rejected 249 probes on
+     * length alone, among them "Tienes toda la razón.", "¿Qué tal estuvo la
+     * excursión?" and "Tengo la impresión de que…" — the formulaic chunks
+     * that ARE upper-intermediate fluency (CURRICULUM_AUDIT.md §7.1). Three
+     * words cannot hold a chunk, so the rule was excluding the unit of
+     * learning it most needed to carry.
+     *
+     * Eight, and only for something that is actually Spanish to say: the
+     * descriptions this filter exists to catch ("Conceder primero, luego
+     * pivotar con pero") are caught by metalinguistic()/descriptive()/
+     * terminology() on the way in, and spanishUtterance() catches the English
+     * prose that slips past those. Eight matches the phrase deck's own
+     * ceiling (js/phrases.js usable), so the two item sources agree on how
+     * much Spanish a learner can reasonably be asked to type back. */
+    return words <= 8 && spanishUtterance(b);
   }
 
   /* Strand lessons author their checks as `probes` — a richer shape carrying
@@ -628,7 +659,39 @@
     { title: 'Preguntas neutras y orientadas', ids: ['dc-interrogativos-neutros-a2', 'dc-interrogativos-orientados-a2'] },
     { title: 'Atenuar: se impersonal e indirectas', ids: ['dc-atenuacion-1apersona-a2', 'dc-atenuacion-acto-indirecto-a2'] },
     { title: 'Tematización y rematización', ids: ['dc-tematizacion-a2', 'dc-rematizacion-a2'] },
-    { title: 'Estructuradores y negación reforzada', ids: ['dc-estructuradores-a2', 'dc-negacion-refuerzo-a2'] }
+    { title: 'Estructuradores y negación reforzada', ids: ['dc-estructuradores-a2', 'dc-negacion-refuerzo-a2'] },
+
+    /* ---- the over-splits the curriculum audit found -----------------------
+     * These are the same disease the B2 block above was written to cure — one
+     * PCIC inventory line, one lesson day — applied where nobody had looked
+     * yet. B2 got "pedir" down from six lessons to one and came out with the
+     * richest lessons in the app (15.4 exponents on average, against B1's
+     * 4.5). B1 still ran four consecutive days on it.
+     * See CURRICULUM_AUDIT.md §7.2 and §4.2. */
+
+    /* Four consecutive days of b1-u32 — help, permission, a favour, an object
+     * — are four inventory lines and one skill: asking someone to do something
+     * without imposing. Their exponents already share the frames (¿Podrías…?,
+     * ¿Te importaría…?, ¿Me dejas…?), and three of the four carried only four
+     * or five exponents each. */
+    { title: 'Pedir: ayuda, permiso, favores y cosas',
+      ids: ['fn-pedir-ayuda-b1', 'fn-pedir-permiso-b1', 'fn-pedir-favor-b1', 'fn-pedir-objetos-b1'] },
+
+    /* A1 taught mi/tu/su over two consecutive days, split into "what they are"
+     * and "where they go" — 387 words of explanation for the least surprising
+     * feature in the A1 syllabus for an English speaker. data/course.js's own
+     * header names this exact pair as the symptom of the old emergent sort;
+     * the order was fixed then and the split was not. */
+    { title: 'Los posesivos: mi, tu, su y dónde van',
+      ids: ['gr-posesivos-forma-a1', 'gr-posesivos-distribucion-a1'] },
+
+    /* C1: two runs of three consecutive days, each splitting one topic by
+     * grammatical category rather than by anything a learner does. */
+    { title: 'Localizar en el tiempo en C1: presente, pasado y futuro',
+      ids: ['nt-localizacion-presente-c1', 'nt-localizacion-pasado-c1', 'nt-localizacion-futuro-c1'] },
+    { title: 'Movimiento en C1: nombrarlo, decirlo, y las locuciones',
+      ids: ['nt-movimiento-estabilidad-sustantivos-c1', 'nt-movimiento-verbos-especificos-c1',
+            'nt-movimiento-locuciones-c1'] }
   ];
 
   function concat(a, b) { return (a || []).concat(b || []); }
@@ -683,6 +746,61 @@
          * items in data/apply.js are invisible to the lesson that teaches
          * them — as were perfecto's 17, plusc's 29 and imperativo's 16. */
         if (p.tense && !out.tense) out.tense = p.tense;
+      });
+      /* Two lessons get merged BECAUSE they overlap, so a straight concat
+       * prints the overlap twice. gr-relativo-que-a1 absorbed
+       * gr-subordinadas-adjetivas-a1 and came out with `que` listed twice in
+       * its keyword table, two sections both titled for subject-or-object,
+       * and four of eight probes asking whether `que` agrees — the single
+       * easiest fact in the lesson, asked four ways, in the longest grammar
+       * lesson in A1 (CURRICULUM_AUDIT.md §4.4).
+       *
+       * Deduped here rather than by hand in the source lessons, because the
+       * absorbed lesson is still a valid standalone lesson — it is reachable
+       * from the index and from `deeper` — and should keep its own complete
+       * set of rows. The duplication is a property of the merge, so it is the
+       * merge's job to resolve.
+       *
+       * Keyed on the Spanish (or the answer), never on the English: the whole
+       * reason two rows survive is that they gloss the same Spanish two ways,
+       * and keeping the first gloss is as good as keeping the second. */
+      function dedupe(rows, keyOf) {
+        var seen = {}, kept = [];
+        (rows || []).forEach(function (r) {
+          var k = E.normalize(String(keyOf(r) || '')).replace(/[.,;:!?¡¿"'’]/g, '').trim();
+          if (!k) { kept.push(r); return; }              // nothing to key on — keep it
+          if (seen[k]) return;
+          seen[k] = 1; kept.push(r);
+        });
+        return kept;
+      }
+      var byEs = function (r) { return r.es; };
+      ['keywords', 'exponents', 'contrasts', 'examples'].forEach(function (k) {
+        out[k] = dedupe(out[k], byEs);
+      });
+      out.pitfalls = dedupe(out.pitfalls, function (p) { return String(p).replace(/<[^>]+>/g, ''); });
+      out.sections = dedupe(out.sections, function (s) { return s.h; });
+      /* Probes and recall key on the ANSWER. "Does que change for gender or
+       * number?" and "Does 'que' change for the gender or number of the noun
+       * before it?" are different strings and the same question; their answers
+       * ("no — it is invariable" / "no — it never changes") are not identical
+       * either, so answer-keying alone would keep both. Key on the answer
+       * reduced to its first three words, which is what the two share. */
+      var gist = function (v) { return String(v || '').split(/\s+/).slice(0, 3).join(' '); };
+      var seenProbe = 0;
+      out.probes = dedupe(out.probes, function (p) {
+        /* A CLOZE is exempt: its value is the sentence, not the answer. Two
+         * gapped sentences both answering "que" are two pieces of practice,
+         * and collapsing them dropped gr-relativo-que-a1 below the 6-probe
+         * floor — the gate catching this rule being too broad, which is the
+         * gate working. Returning a unique key per cloze keeps every one. */
+        if (p.kind === 'cloze') return 'cloze:' + (seenProbe++);
+        return gist(p.kind === 'mcq' ? (p.options || [])[p.answer] : p.back);
+      });
+      var seenRecall = 0;
+      out.recall = dedupe(out.recall, function (r) {
+        if (r.probe && r.probe.kind === 'cloze') return 'cloze:' + (seenRecall++);
+        return gist(r.back);
       });
       // Drop the blocks that stayed empty: the strand gate rejects a block a
       // strand isn't allowed to carry, and an empty [] is still carrying it.

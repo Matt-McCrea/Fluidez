@@ -21,6 +21,11 @@
  *   { verbs: [...] }   a verb day — meet five new verbs by meaning
  *   { practice: true } no new content; consolidate
  *
+ * A day may also carry `passage: 'id'`, naming the reading it should serve
+ * instead of letting js/session.js choose. Used only by the opening two units,
+ * for the reason given there; anywhere else the scheduler picks better than a
+ * hand-written list would stay correct.
+ *
  * COURSE_BANDS gives each CEFR band's start index. "Start at B1" means "start
  * at index 192"; a learner runs off the end of their band straight into
  * the next one, which is what finishing a band should do.
@@ -109,18 +114,47 @@ window.COURSE = [
             'say where I am from and how old I am',
             'say thank you and reply to it',
             'open a conversation and close it'],
+    /* ---- the opening fortnight names its own reading -----------------------
+     * `passage` is the fourth kind of thing a day can carry, and it exists for
+     * the first two units only. Everywhere else the session picks the reading
+     * itself, and does it well: it prefers a passage that uses the day's
+     * grammar, falls back to the day's theme, and chooses between equals by
+     * how much new vocabulary the text would teach per word read.
+     *
+     * The opening is the one stretch where that is not good enough, for a
+     * reason particular to it. Those preferences all need something to bite
+     * on, and on day 2 the lesson is the five vowels, on day 13 it is where
+     * the written accent falls. A pronunciation lesson has no content partner,
+     * so the scheduler was free to hand a beginner a text about a tourist
+     * guide on day 2 and about a king and a president on day 13 — technically
+     * at level, and nothing to do with the fortnight they were living in.
+     *
+     * So these fourteen days say what to read. The rule applied: keep the
+     * learner inside the world of the unit. Unit 1 is people meeting each
+     * other, so every day of it reads somebody meeting somebody. Unit 2 is
+     * asking questions, so its days read dialogues built out of question
+     * words. Where a lesson DOES have a natural partner it gets it —
+     * ser-estar reads the passage written to contrast ser and estar.
+     *
+     * Every one is presente-only on purpose: the preterite is not taught until
+     * day 47, and js/session.js withholds a text whose tenses the learner has
+     * not reached. A named passage that gets withheld is worse than none. */
     days: [
-    { lesson: 'dlg-presentarse' },                        // dial  Dos personas se conocen
-    { lesson: 'gr-sonidos-a1' },                          // gram  Los sonidos: cinco vocales y nada más
+    { lesson: 'dlg-presentarse', passage: 'u1-cafeteria' },            // two students meet: names, origin
+    { lesson: 'gr-sonidos-a1', passage: 'a1-serv-policia' },           // no content partner — picked for the lightest load
     { verbs: ['ser', 'estar', 'llamarse', 'tener', 'haber'] },
-    { lesson: 'presente' },                               // gram  Presente (Present)
-    { lesson: 'fn-responder-saludo-a2' },                 // func  Saludar: en persona y por escrito
-    { lesson: 'ser-estar' },                              // gram  Ser vs. Estar
-    { lesson: 'nt-origen-a1' },                           // noti  De dónde eres y cuántos años tienes
-    { lesson: 'fn-identificar-a1' },                      // func  Identificar: qué es y quién es
-    { lesson: 'fn-agradecer-a1' },                        // func  Dar las gracias
-    { lesson: 'fn-establecer-comunicacion-a1' },          // func  Empezar y terminar una conversación
-    { lesson: 'task-presentarse' },                       // task  Preséntate
+    { lesson: 'presente', passage: 'a1-ident-bolso' },                 // llevo, tengo, es — the present in the first person
+    { lesson: 'fn-responder-saludo-a2', passage: 'u1-recepcion' },     // buenas tardes, at a desk
+    { lesson: 'ser-estar', passage: 'a1-car-javier' },                 // the contrast SHOWN, not stated
+    { lesson: 'nt-origen-a1', passage: 'a1-ident-edad' },              // where from, and how old
+    { lesson: 'fn-identificar-a1', passage: 'a1-ident-vecinos' },      // quién es quién, floor by floor
+    { lesson: 'fn-agradecer-a1', passage: 'u1-vecina' },               // gracias, encantado, hasta luego
+    { lesson: 'fn-establecer-comunicacion-a1', passage: 'a1-rel-vecino-nuevo' },   // an opening and a closing, performed
+    /* Deliberately the same text as day 1. The unit opened with two strangers
+     * meeting; it closes by asking the learner to introduce themselves, and
+     * reading that first passage again with ten days behind them is the point,
+     * not an oversight. */
+    { lesson: 'task-presentarse', passage: 'u1-cafeteria' },
     ] },
 
   { unit: 'a1-u02', band: 'A1', title: 'Ask a question',
@@ -130,10 +164,10 @@ window.COURSE = [
             'say I do not understand and ask for a repeat',
             'ask a stranger for information'],
     days: [
-      { lesson: 'gr-interrogativos-a1' },
-      { lesson: 'gr-acentuacion-a1' },
+      { lesson: 'gr-interrogativos-a1', passage: 'a1-serv-cuenta' },     // the most question-dense text in A1
+      { lesson: 'gr-acentuacion-a1', passage: 'a1-serv-tarjeta' },       // ¿Cuál…? — the accent falls on the question word
       { verbs: ['querer', 'poder', 'ir', 'hacer', 'dar'] },
-      { lesson: 'dc-entonacion-a1' },
+      { lesson: 'dc-entonacion-a1' },   // left to the scheduler: alignment serves this one well enough
       { lesson: 'gr-pronombre-sujeto-a1' },
       { practice: true },
       { lesson: 'fn-pedir-informacion-a1' },
@@ -263,7 +297,6 @@ window.COURSE = [
       { lesson: 'gr-adjetivos-calificativos-a1' },
       { verbs: ['entrar', 'pasar', 'llevar', 'tomar', 'dejar'] },
       { lesson: 'gr-posesivos-forma-a1' },
-      { lesson: 'gr-posesivos-distribucion-a1' },
       { practice: true },
       { lesson: 'gr-demostrativos-distribucion-a1' },
       { lesson: 'nt-familia-a1' },
@@ -335,11 +368,16 @@ window.COURSE = [
       { lesson: 'task-pedir' },
     ] },
 
+  /* The third canDo used to read "replace a noun with lo, la, los, las". No
+   * lesson in this unit teaches object pronouns — gr-objeto-directo-a1 teaches
+   * the personal a — and they are not reached until a2-u18 on day 123. The
+   * promise came from the PCIC inventory line "El objeto directo" rather than
+   * from the day's content. See CURRICULUM_AUDIT.md §4.3. */
   { unit: 'a1-u11', band: 'A1', title: 'Join it up',
     goal: 'I can join short sentences so I sound connected rather than chopped up.',
     canDo: ['link with y, pero, porque, también',
             'use que to join a noun to a clause',
-            'replace a noun with lo, la, los, las',
+            'put the personal a in front of a specific person',
             'say how much with poco and mucho'],
     days: [
       { lesson: 'dc-conectores-a1' },
@@ -687,9 +725,6 @@ window.COURSE = [
             'forbid and warn'],
     days: [
       { lesson: 'fn-pedir-ayuda-b1' },
-      { lesson: 'fn-pedir-permiso-b1' },
-      { lesson: 'fn-pedir-favor-b1' },
-      { lesson: 'fn-pedir-objetos-b1' },
       { practice: true },
       { lesson: 'fn-responder-orden-b1' },
       { lesson: 'fn-rechazar-b1' },
@@ -1402,8 +1437,6 @@ window.COURSE = [
       { lesson: 'nt-grado-c1' },
       { lesson: 'nt-referencias-generales-c1' },
       { lesson: 'nt-localizacion-presente-c1' },
-      { lesson: 'nt-localizacion-pasado-c1' },
-      { lesson: 'nt-localizacion-futuro-c1' },
       { lesson: 'nt-simultaneidad-c1' },
       { lesson: 'nt-anterioridad-c1' },
       { lesson: 'nt-posterioridad-c1' },
@@ -1444,8 +1477,6 @@ window.COURSE = [
       { lesson: 'nt-distancia-c1' },
       { lesson: 'nt-distancia-velocidad-c1' },
       { lesson: 'nt-movimiento-estabilidad-sustantivos-c1' },
-      { lesson: 'nt-movimiento-verbos-especificos-c1' },
-      { lesson: 'nt-movimiento-locuciones-c1' },
       { lesson: 'nt-orientacion-direccion-c1' },
       { lesson: 'nt-orden-c1' },
       { lesson: 'nt-origen-c1' },

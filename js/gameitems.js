@@ -161,19 +161,46 @@ window.GameItems = (function () {
     };
 
     // --- translation / listening pairs ---
+    /* DEDUPED. The same Spanish/English pair reaches this from more than one
+     * source — a lesson example that is also a keyword phrase, an exponent
+     * repeated across two lessons of the same function — and 1,798 of 10,530
+     * were duplicates. A duplicate is not harmless: draws are uniform over the
+     * bucket, so a sentence present twice is dealt twice as often as one
+     * present once, and the corpus quietly reweights itself towards whatever
+     * happens to be repeated.
+     *
+     * The first occurrence wins its BAND (the earliest source is the most
+     * specific), but a later duplicate can still upgrade it: an `id` makes the
+     * item schedulable by the SRS, a higher `bonus` records that somebody
+     * authored it deliberately, and a note is worth having if the incumbent
+     * has none. Dropping those on the floor would have cost the game its
+     * review credit for every phrase that happened to appear in a lesson too. */
+    var pairSeen = {};
     function addPair(band, es, en, note, bonus, id) {
       var p = cleanPair(es, en);
       if (!p) return;
+      var key = p.es + '\u0000' + p.en;
+      var prev = own(pairSeen, key);
+      if (prev) {
+        if (!prev.id && id) prev.id = id;
+        if (!prev.note && note) prev.note = note;
+        if ((bonus || 0) > prev.bonus) prev.bonus = bonus || 0;
+        return;
+      }
       p.note = note || null;
       p.bonus = bonus || 0;
       p.id = id || null;            // set where the item is one the SRS can schedule
+      pairSeen[key] = p;
       idx.pairs[band].push(p);
-      var k = enKey(p.en);
-      if (k) {
-        var list = own(idx.byEnglish, k) || (idx.byEnglish[k] = []);
-        if (list.indexOf(p.es) === -1) list.push(p.es);
-      }
     }
+    /* The two corpus walks are FUNCTIONS rather than statements because the
+     * arcade skips them: tools/build-game-index.js runs them once at build
+     * time and ships the result as data/game-index.js, so a games-only build
+     * needs neither data/strand-lessons.js (3.4 MB) nor data/writing.js nor
+     * data/apply.js. There is still exactly one implementation — the generator
+     * calls this file rather than reimplementing it, which is the only way the
+     * precomputed index cannot drift from the live one. */
+    function walkCorpusPairs() {
     (window.STRAND_LESSONS || []).forEach(function (l) {
       var band = BANDS.indexOf(l.cefr) === -1 ? 'B1' : l.cefr;
       (l.examples || []).forEach(function (x) { addPair(band, x.es, x.en); });
@@ -198,9 +225,14 @@ window.GameItems = (function () {
     (window.Phrases ? window.Phrases.all() : []).forEach(function (ph) {
       addPair(ph.band, ph.es, ph.en, ph.note, 20, ph.id);
     });
+    }
 
-    // --- vocabulary, bucketed by band and by PCIC theme ---
-    (window.VOCAB || []).forEach(function (wd) {
+    /* --- vocabulary, bucketed by band and by PCIC theme ---
+     * The arcade ships a lean copy inside GAME_INDEX (four fields per row)
+     * rather than data/vocab.js, which carries a PCIC id and collocations the
+     * games never read. Same rows, same order, 366 KB lighter. */
+    var VOC = (window.GAME_INDEX && window.GAME_INDEX.vocab) || window.VOCAB || [];
+    VOC.forEach(function (wd) {
       if (!wd.es || !wd.en) return;
       var band = BANDS.indexOf(wd.cefr) === -1 ? 'A1' : wd.cefr;
       idx.vocab[band].push(wd);
@@ -214,6 +246,7 @@ window.GameItems = (function () {
     });
 
     // --- grammar questions, from four sources, all pre-shaped ---
+    function walkCorpusGrammar() {
     (window.STRAND_LESSONS || []).forEach(function (l) {
       var band = BANDS.indexOf(l.cefr) === -1 ? 'B1' : l.cefr;
       (l.probes || []).forEach(function (p) {
@@ -240,7 +273,6 @@ window.GameItems = (function () {
         tense: it.tense, person: it.person, en: it.en, topic: 'tense:' + it.tense,
         cefr: bandForLevel(it.level) };
       idx.grammar[row.cefr].push(row);
-      (idx.byTense[it.tense] = idx.byTense[it.tense] || []).push(row);
     });
     (window.CONCEPT_LESSONS || []).forEach(function (l) {
       var opts = l.id === 'ser-estar' ? ['ser', 'estar']
@@ -252,6 +284,7 @@ window.GameItems = (function () {
           answer: r.back, topic: 'lesson:' + l.id });
       });
     });
+    }
 
     /* ---- synonyms, derived rather than authored ---------------------------
      * enviar and mandar are both "to send", and a game that accepts only the
@@ -285,10 +318,41 @@ window.GameItems = (function () {
       });
     }
     (window.VERBS || []).forEach(function (v) { addGloss(v.inf, v.en); });
-    (window.VOCAB || []).forEach(function (wd) {
+    VOC.forEach(function (wd) {
       addGloss(wd.es, wd.en);
       var bare = wd.es.replace(/^(el|la|los|las)\s+/i, '');
       if (bare !== wd.es) addGloss(bare, wd.en);
+    });
+
+    /* Precomputed if it shipped, walked if it did not. The arcade build ships
+     * it; the full app does not, because it already carries the corpus for the
+     * lessons themselves and a second copy would cost more than the walk. */
+    if (window.GAME_INDEX && window.GAME_INDEX.pairs && window.GAME_INDEX.grammar) {
+      idx.pairs = window.GAME_INDEX.pairs;
+      idx.grammar = window.GAME_INDEX.grammar;
+    } else {
+      walkCorpusPairs();
+      walkCorpusGrammar();
+    }
+
+    /* ---- derived from the above, never shipped ---------------------------
+     * Both of these used to be filled inline as the corpus was walked, which
+     * meant the precomputed path would have silently arrived with neither.
+     * They are one cheap pass each over data already in memory, so building
+     * them here costs nothing and removes them from the shipped file. */
+    idx.pairs && BANDS.forEach(function (b) {
+      (idx.pairs[b] || []).forEach(function (p) {
+        var k = enKey(p.en);
+        if (!k) return;
+        var list = own(idx.byEnglish, k) || (idx.byEnglish[k] = []);
+        if (list.indexOf(p.es) === -1) list.push(p.es);
+      });
+    });
+    BANDS.forEach(function (b) {
+      (idx.grammar[b] || []).forEach(function (row) {
+        if (row.src !== 'apply' || !row.tense) return;
+        (idx.byTense[row.tense] = idx.byTense[row.tense] || []).push(row);
+      });
     });
 
     IDX = idx;
@@ -304,6 +368,7 @@ window.GameItems = (function () {
   // being mixed stops being a game.
   var focus = null;
   function setFocus(f) { focus = f || null; }
+
   function matchesFocus(item) {
     if (!focus || !item) return false;
     if (focus.type === 'grammar' && item.topic) return item.topic === 'tense:' + focus.id || item.topic === 'lesson:' + focus.id;
@@ -692,6 +757,184 @@ window.GameItems = (function () {
     return { right: right, options: E.shuffle([right].concat(others)) };
   }
 
+  /* Noun gender: drillable for ever, and every learner of Spanish gets it
+   * wrong for years. Lifted out of grammarItem (which still deals one in five)
+   * so El/La can be a game of its own — the same question at a completely
+   * different tempo. A two-button answer is sub-second, which is a different
+   * kind of round from one where you type a sentence, and the score already
+   * says so: PLAY_FACTOR pays `choose` 0.6 of `type`. */
+  function genderItem(rung, rng) {
+    var idx = index(), band = bandOf(rung);
+    var g = fromBands(idx.gender, band, rng);
+    if (!g) return null;
+    var plural = /os?$/.test(g.item.art) && /^(los|las)$/.test(g.item.art);
+    return { kind: 'gender', play: 'choose', cefr: g.cefr, bonus: 0,
+      id: 'v:' + g.item.es + ':gender', topic: 'lesson:gender-articles',
+      prompt: g.item.bare + '  —  ' + g.item.en, answer: g.item.art,
+      options: plural ? ['el', 'la', 'los', 'las'] : ['el', 'la'],
+      note: g.item.es };
+  }
+
+  /* ==== UNO U OTRO — the binary choices Spanish actually turns on ==========
+   *
+   * The first attempt at a two-button game was noun gender, and it was dull
+   * for a reason worth writing down: el/la is arbitrary. There is nothing to
+   * work out, no rule that repays attention, and being told you were wrong
+   * teaches you one word. The interesting binaries in Spanish are the ones
+   * where BOTH options are correct Spanish and the sentence decides which —
+   * ser or estar, por or para, preterite or imperfect. Those are the choices
+   * a learner keeps getting wrong at B2, and each one you get right is a rule
+   * paying off rather than a fact recalled.
+   *
+   * Every question is a REAL AUTHORED SENTENCE from the corpus with one word
+   * taken out, so the wrong option is wrong in that sentence rather than wrong
+   * in general — which is the entire distinction being taught. The counterpart
+   * is conjugated by the engine, never stored, so it cannot drift: blank
+   * `estaba` and the alternative is `era`, in the same tense and person.
+   *
+   * Built lazily on first use from idx.pairs, which both the app and the
+   * precomputed arcade index already hold. Costs one pass over 8,732 pairs.
+   * ====================================================================== */
+  var SER_ESTAR = /^(soy|eres|es|somos|sois|son|era|eras|éramos|erais|eran|fui|fuiste|fue|fuimos|fuisteis|fueron|estoy|estás|está|estamos|estáis|están|estaba|estabas|estábamos|estabais|estaban|estuve|estuviste|estuvo|estuvimos|estuvieron)$/i;
+  // Cheap prefilter before the analyser: a past-tense Spanish verb almost
+  // always ends one of these ways, and analyzeToken on every token of every
+  // pair would be 90,000 calls for the handful that qualify.
+  var PAST_LOOK = /(ó|é|aba|abas|ábamos|aban|ía|ías|íamos|ían|aron|ieron|iste|imos)$/i;
+
+  /* Enough is enough: a band with 400 candidates of a kind will not deal the
+   * same question twice in a sixty-second round, and scanning the remaining
+   * pairs to find the 401st costs the learner a visible pause before the
+   * first question. Measured: 150 ms uncapped, 97 ms at 400. Most of what is
+   * left is the morphological analysis the past-tense contrast needs, which is
+   * the price of not storing an answer key.
+   * The scan still runs in band order, so what is kept is not a biased slice
+   * of one source — pairs are bucketed by band, not by where they came from. */
+  var CONTRAST_CAP = 400;
+  var CIDX = null;
+  function contrastIndex() {
+    if (CIDX) return CIDX;
+    var idx = index();
+    CIDX = { 'ser-estar': emptyBuckets(), 'por-para': emptyBuckets(), 'pasado': emptyBuckets() };
+    BANDS.forEach(function (band) {
+      var full = function () {
+        return CIDX['ser-estar'][band].length >= CONTRAST_CAP &&
+               CIDX['por-para'][band].length >= CONTRAST_CAP &&
+               CIDX['pasado'][band].length >= CONTRAST_CAP;
+      };
+      (idx.pairs[band] || []).forEach(function (p) {
+        if (full()) return;
+        var toks = String(p.es).split(/\s+/);
+        if (toks.length < 3 || toks.length > 16) return;       // readable at speed
+        for (var i = 1; i < toks.length; i++) {                // never token 0:
+          var raw = toks[i];                                   // a capital gives it away
+          var w = raw.replace(/[.,;:!?¿¡"“”()]/g, '');
+          if (!w || /^[A-ZÁÉÍÓÚÑ]/.test(w)) continue;
+          var low = w.toLowerCase();
+
+          if (SER_ESTAR.test(low) && countWord(toks, low) === 1) {
+            if (CIDX['ser-estar'][band].length < CONTRAST_CAP) {
+              CIDX['ser-estar'][band].push({ es: p.es, en: p.en, at: i, word: w });
+              return;
+            }
+            continue;
+          }
+          if ((low === 'por' || low === 'para') &&
+              countWord(toks, 'por') + countWord(toks, 'para') === 1) {
+            if (CIDX['por-para'][band].length < CONTRAST_CAP) {
+              CIDX['por-para'][band].push({ es: p.es, en: p.en, at: i, word: w });
+              return;
+            }
+            continue;
+          }
+          if (PAST_LOOK.test(low) && countWord(toks, low) === 1 && pastSwap(low)) {
+            if (CIDX['pasado'][band].length < CONTRAST_CAP) {
+              CIDX['pasado'][band].push({ es: p.es, en: p.en, at: i, word: w });
+              return;
+            }
+            continue;
+          }
+        }
+      });
+    });
+    return CIDX;
+  }
+  function countWord(toks, low) {
+    var n = 0;
+    for (var i = 0; i < toks.length; i++) {
+      if (toks[i].replace(/[.,;:!?¿¡"“”()]/g, '').toLowerCase() === low) n++;
+    }
+    return n;
+  }
+
+  /* The same verb and person in the OTHER past tense, or null when the token
+   * is not an unambiguous preterite/imperfect of a verb we can conjugate.
+   * Ambiguity is fatal here: if the form reads as two different verbs, the
+   * "wrong" option may be right under the other reading. */
+  function pastSwap(low) {
+    var an = (E.analyzeToken(low) || []).filter(function (a) {
+      return a.tense === 'preterito' || a.tense === 'imperfecto';
+    });
+    if (an.length !== 1) return null;
+    var a = an[0];
+    if (a.inf === 'ser' || a.inf === 'estar' || a.inf === 'ir') return null;  // their own game
+    var v = E.verbByInf(a.inf);
+    if (!v) return null;
+    var other = a.tense === 'preterito' ? 'imperfecto' : 'preterito';
+    var i = E.personsFor(a.tense).indexOf(a.person);
+    if (i < 0) return null;
+    var form = E.conjugate(v, other)[i];
+    return (form && form.toLowerCase() !== low) ? form : null;
+  }
+
+  function serEstarSwap(low) {
+    var an = (E.analyzeToken(low) || []).filter(function (a) {
+      return a.inf === 'ser' || a.inf === 'estar';
+    });
+    if (!an.length) return null;
+    var a = an[0];
+    var other = E.verbByInf(a.inf === 'ser' ? 'estar' : 'ser');
+    var i = E.personsFor(a.tense).indexOf(a.person);
+    if (!other || i < 0) return null;
+    var form = E.conjugate(other, a.tense)[i];
+    return (form && form.toLowerCase() !== low) ? form : null;
+  }
+
+  var CONTRAST_META = {
+    'ser-estar': { topic: 'lesson:ser-estar', bonus: 55 },
+    'por-para':  { topic: 'lesson:por-para',  bonus: 40 },
+    'pasado':    { topic: 'lesson:preterite-imperfect', bonus: 60 }
+  };
+
+  function contrastItem(rung, rng) {
+    var ci = contrastIndex(), band = bandOf(rung);
+    // Try the kinds in a shuffled order so no one contrast dominates a round.
+    var kinds = E.shuffle(['ser-estar', 'por-para', 'pasado'], rng);
+    for (var k = 0; k < kinds.length; k++) {
+      var kind = kinds[k];
+      var got = fromBands(ci[kind], band, rng);
+      if (!got) continue;
+      var row = got.item;
+      var low = row.word.toLowerCase();
+      var alt = kind === 'ser-estar' ? serEstarSwap(low)
+              : kind === 'por-para'  ? (low === 'por' ? 'para' : 'por')
+              : pastSwap(low);
+      if (!alt) continue;
+      var toks = row.es.split(/\s+/);
+      var shown = toks.slice();
+      shown[row.at] = shown[row.at].replace(row.word, '＿＿＿');
+      var meta = CONTRAST_META[kind];
+      return {
+        kind: 'contrast', play: 'choose', cefr: got.cefr, bonus: meta.bonus,
+        topic: meta.topic, id: null,
+        prompt: shown.join(' '),
+        answer: row.word,
+        options: E.shuffle([row.word, alt], rng),
+        note: row.en
+      };
+    }
+    return null;
+  }
+
   function grammarItem(rung, rng) {
     var idx = index(), band = bandOf(rung);
     var cands = [];
@@ -699,15 +942,8 @@ window.GameItems = (function () {
       // one question in five is noun gender, which is drillable for ever and
       // which every learner of Spanish gets wrong for years
       if (rnd(rng) < 0.2) {
-        var g = fromBands(idx.gender, band, rng);
-        if (g) {
-          cands.push({ kind: 'grammar', play: 'choose', cefr: g.cefr, bonus: 0,
-            id: 'v:' + g.item.es + ':gender', topic: 'lesson:gender-articles',
-            prompt: g.item.bare + '  —  ' + g.item.en, answer: g.item.art,
-            options: /os?$/.test(g.item.art) ? ['el', 'la', 'los', 'las'] : ['el', 'la'],
-            note: g.item.es });
-          continue;
-        }
+        var g = genderItem(rung, rng);
+        if (g) { cands.push(g); continue; }
       }
       var got = fromBands(idx.grammar, band, rng);
       if (!got) continue;
@@ -843,6 +1079,7 @@ window.GameItems = (function () {
       case 'listen':    return listenItem(rung, rng);
       case 'verb':      return verbItem(rung, rng, opts);
       case 'grammar':   return grammarItem(rung, rng);
+      case 'contrast':  return contrastItem(rung, rng);
       case 'vocab':     return vocabItem(rung, rng);
       case 'tense':     return tenseItem(rung, rng, opts);
       case 'mixed':     return mixedItem(rung, rng, opts);

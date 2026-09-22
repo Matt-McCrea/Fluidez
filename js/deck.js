@@ -63,7 +63,16 @@ window.Deck = (function () {
     function markGood() { if (locked) return; locked = true; feedback.textContent = '¡Correcto! ' + cur.back; feedback.className = 'feedback good'; setTimeout(function () { advance(true); }, 350); }
     // A gloss with two meanings, or a gender bracket, accepts any one of them.
     var MEANING = { vocab: 1, idiom: 1, phrase: 1, capture: 1, verb: 1 };
-    function meaningOpts() { return { meaning: !!MEANING[cur.kind] }; }
+    function meaningOpts() {
+      var o = { meaning: !!MEANING[cur.kind] };
+      // phrase cards are graded generously — see js/checker.js checkExact
+      if (cur.kind === 'phrase' && window.Phrases) {
+        // ...except where the accent is the only thing separating two words
+        if (!window.Phrases.accentCritical(cur.back)) o.accents = 'lenient';
+        o.also = window.Phrases.alternatives(cur.front);
+      }
+      return o;
+    }
     input.addEventListener('input', function () {
       if (locked || revealed) return;
       if (C.checkExact(input.value, cur.back, meaningOpts()).pass) markGood();

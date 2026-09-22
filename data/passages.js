@@ -18,8 +18,27 @@ window.PASSAGES = [
   id: 'u1-cafeteria', title: 'En la cafetería de la facultad', level: 1, theme: 'identidad',
   tenses: ['presente'],
   text: 'Son las nueve de la mañana. Hay dos estudiantes en la cafetería. —Hola, buenos días. ¿Está libre? —Sí, está libre. —Gracias. Me llamo Tom. —Yo soy Ana. Encantada. —Encantado. ¿Eres de Madrid, Ana? —No, soy de Valencia, pero vivo aquí. ¿Y tú? —Soy de Irlanda. Estoy aquí por la universidad. —¡Qué bien! ¡Y hablas español muy bien! —Bueno, un poco. Todavía no hablo rápido.',
-  gloss: [ { es: '¿Está libre?', en: 'Is this seat free?' }, { es: 'Encantada.', en: 'Pleased to meet you. (said by a woman)' },
-           { es: 'pero', en: 'but' }, { es: 'todavía no', en: 'not yet' }, { es: 'un poco', en: 'a little' } ],
+  gloss: [ { es: 'Son las nueve', en: 'It\'s nine o\'clock' },
+           { es: 'la mañana', en: 'the morning' },
+           { es: 'Hay', en: 'there is / there are' },
+           { es: 'los estudiantes', en: 'the students' },
+           { es: 'buenos días', en: 'good morning' },
+           { es: '¿Está libre?', en: 'Is this seat free?' },
+           { es: 'Gracias.', en: 'Thank you.' },
+           { es: 'Me llamo…', en: 'My name is…' },
+           { es: 'Encantada.', en: 'Pleased to meet you. (said by a woman)' },
+           { es: 'Encantado.', en: 'Pleased to meet you. (said by a man)' },
+           { es: '¿Eres de…?', en: 'Are you from…?' },
+           { es: 'soy de', en: 'I\'m from' },
+           { es: 'pero', en: 'but' },
+           { es: 'vivo aquí', en: 'I live here' },
+           { es: '¿Y tú?', en: 'And you?' },
+           { es: 'hablas', en: 'you speak' },
+           { es: 'hablo', en: 'I speak' },
+           { es: 'Bueno', en: 'Well… (filler before an answer)' },
+           { es: 'un poco', en: 'a little' },
+           { es: 'todavía no', en: 'not yet' },
+           { es: 'rápido', en: 'fast' } ],
   questions: [
     { type: 'mcq', q: '¿De dónde es Ana?',
       options: ['De Madrid', 'De Valencia', 'De Irlanda'], answer: 1 },
@@ -34,8 +53,26 @@ window.PASSAGES = [
   id: 'u1-recepcion', title: 'En la recepción', level: 1, theme: 'identidad',
   tenses: ['presente'],
   text: 'Una mujer entra en un hotel pequeño. —Buenas tardes. —Buenas tardes, señora. ¿Tiene una reserva? —Sí. Me llamo Clara Ruiz. —Un momento, por favor... Sí, aquí está. ¿Es usted de aquí, señora Ruiz? —No, soy de Chile. Estoy aquí una semana. —Muy bien. Aquí tiene la llave. Habitación doce. —Muchas gracias. —De nada. Buenas noches.',
-  gloss: [ { es: 'una reserva', en: 'a booking' }, { es: 'un momento', en: 'one moment' },
-           { es: 'la llave', en: 'the key' }, { es: 'habitación', en: 'room' } ],
+  gloss: [ { es: 'una mujer', en: 'a woman' },
+           { es: 'entra en', en: 'goes into' },
+           { es: 'pequeño', en: 'small' },
+           { es: 'Buenas tardes.', en: 'Good afternoon.' },
+           { es: 'la señora', en: 'the lady / madam' },
+           { es: '¿Tiene una reserva?', en: 'Do you have a booking?' },
+           { es: 'Me llamo…', en: 'My name is…' },
+           { es: 'Un momento, por favor.', en: 'One moment, please.' },
+           { es: 'aquí está', en: 'here it is' },
+           { es: '¿Es usted de aquí?', en: 'Are you from here?' },
+           { es: 'soy de', en: 'I\'m from' },
+           { es: 'una semana', en: 'a week' },
+           { es: 'Muy bien.', en: 'Very good.' },
+           { es: 'Aquí tiene', en: 'Here you are' },
+           { es: 'la llave', en: 'the key' },
+           { es: 'la habitación', en: 'the room' },
+           { es: 'doce', en: 'twelve' },
+           { es: 'Muchas gracias.', en: 'Thank you very much.' },
+           { es: 'De nada.', en: 'You\'re welcome.' },
+           { es: 'Buenas noches.', en: 'Good night.' } ],
   questions: [
     { type: 'mcq', q: '¿Cómo trata el recepcionista a Clara?',
       options: ['De tú', 'De usted', 'No la trata de ninguna forma'], answer: 1 },
@@ -51,9 +88,26 @@ window.PASSAGES = [
   id: 'u1-vecina', title: 'La vecina nueva', level: 1, theme: 'identidad',
   tenses: ['presente'],
   text: 'Marcos abre la puerta y ve a una mujer con dos cajas. —Hola. ¿Eres la vecina nueva? —Sí, soy Nadia. Vivo en el cuarto. —Yo soy Marcos, del tercero. Encantado. —Encantada, Marcos. —¿Necesitas ayuda con las cajas? —Ah, muchas gracias, pero no, no hace falta. Son muy ligeras. —Vale. Pues bienvenida. —Gracias, eres muy amable. Hasta luego. —Hasta luego, Nadia.',
-  gloss: [ { es: 'la vecina', en: 'the neighbour (f)' }, { es: 'cajas', en: 'boxes' },
-           { es: 'el cuarto', en: 'the fourth floor' }, { es: 'no hace falta', en: "there's no need" },
-           { es: 'ligeras', en: 'light' }, { es: 'amable', en: 'kind' } ],
+  gloss: [ { es: 'abre la puerta', en: 'opens the door' },
+           { es: 've a', en: 'sees' },
+           { es: 'una mujer', en: 'a woman' },
+           { es: 'las cajas', en: 'the boxes' },
+           { es: 'la vecina', en: 'the (female) neighbour' },
+           { es: 'nueva', en: 'new' },
+           { es: 'Vivo en el cuarto.', en: 'I live on the fourth floor.' },
+           { es: 'del tercero', en: 'from the third floor' },
+           { es: 'Encantado.', en: 'Pleased to meet you. (said by a man)' },
+           { es: 'Encantada.', en: 'Pleased to meet you. (said by a woman)' },
+           { es: '¿Necesitas ayuda?', en: 'Do you need help?' },
+           { es: 'Ah', en: 'Oh' },
+           { es: 'muchas gracias', en: 'thank you very much' },
+           { es: 'no hace falta', en: 'there\'s no need' },
+           { es: 'ligeras', en: 'light (not heavy)' },
+           { es: 'Vale.', en: 'OK.' },
+           { es: 'Pues', en: 'Well then' },
+           { es: 'bienvenida', en: 'welcome' },
+           { es: 'amable', en: 'kind' },
+           { es: 'Hasta luego.', en: 'See you later.' } ],
   questions: [
     { type: 'mcq', q: '¿Acepta Nadia la ayuda de Marcos?',
       options: ['Sí, la acepta', 'No, dice que no hace falta', 'No contesta'], answer: 1 },
@@ -374,12 +428,25 @@ window.PASSAGES = [
   id: 'conversacion-amigas-verbos4', title: 'Una conversación entre amigas', level: 1, theme: 'relaciones',
   tenses: ['presente'],
   text: 'Cuando Elena y Marta se ven, siempre hablan durante horas. Elena dice que quiere cambiar de trabajo pronto, pero no sabe cuál elegir. Marta le da algunos consejos porque conoce bien el sector. A veces, Elena no ve las cosas con claridad y quiere una segunda opinión. Marta siempre dice la verdad, aunque a veces es difícil de escuchar. Al final, Elena sabe que puede confiar en su amiga y le da las gracias por su sinceridad.',
-  gloss: [
-    { es: 'cambiar de trabajo', en: 'to change jobs' },
-    { es: 'una segunda opinión', en: 'a second opinion' },
-    { es: 'la sinceridad', en: 'honesty' },
-    { es: 'confiar en', en: 'to trust' }
-  ],
+  gloss: [ { es: 'se ven', en: 'they see each other' },
+           { es: 'durante horas', en: 'for hours' },
+           { es: 'quiere', en: 'she wants' },
+           { es: 'cambiar de trabajo', en: 'to change jobs' },
+           { es: 'pronto', en: 'soon' },
+           { es: 'no sabe', en: 'she doesn\'t know' },
+           { es: 'elegir', en: 'to choose' },
+           { es: 'le da', en: 'gives her' },
+           { es: 'algunos consejos', en: 'some advice' },
+           { es: 'conoce', en: 'she knows' },
+           { es: 'el sector', en: 'the field' },
+           { es: 'con claridad', en: 'clearly' },
+           { es: 'una segunda opinión', en: 'a second opinion' },
+           { es: 'la verdad', en: 'the truth' },
+           { es: 'aunque', en: 'although' },
+           { es: 'difícil de escuchar', en: 'hard to hear' },
+           { es: 'puede confiar en', en: 'she can trust' },
+           { es: 'le da las gracias', en: 'she thanks her' },
+           { es: 'la sinceridad', en: 'the honesty' } ],
   questions: [
     { type: 'mcq', q: '¿Qué quiere hacer Elena?', options: ['Cambiar de trabajo', 'Mudarse de ciudad', 'Estudiar otro idioma'], answer: 0 },
     { type: 'mcq', q: '¿Por qué le da consejos Marta?', options: ['Conoce bien el sector', 'Es su jefa', 'Tiene el mismo trabajo'], answer: 0 },
@@ -464,12 +531,27 @@ window.PASSAGES = [
   id: 'trabajo-traductora-verbos9', title: 'El trabajo de una traductora', level: 1, theme: 'trabajo',
   tenses: ['presente'],
   text: 'Clara traduce documentos legales para una empresa internacional. Piensa mucho antes de traducir cada frase porque el significado tiene que ser exacto. La empresa produce manuales técnicos en varios idiomas y Clara traduce la mayoría al español. A veces, conduce hasta la oficina central para reunirse con el equipo. Sus compañeros piensan que es muy meticulosa, y ella parece disfrutar de cada proyecto nuevo. Aunque el trabajo parece sencillo, en realidad requiere mucha concentración.',
-  gloss: [
-    { es: 'los documentos legales', en: 'legal documents' },
-    { es: 'el significado', en: 'the meaning' },
-    { es: 'meticulosa', en: 'meticulous' },
-    { es: 'requiere', en: 'it requires' }
-  ],
+  gloss: [ { es: 'traduce', en: 'she translates' },
+           { es: 'los documentos legales', en: 'legal documents' },
+           { es: 'la empresa', en: 'the company' },
+           { es: 'Piensa', en: 'She thinks' },
+           { es: 'antes de', en: 'before' },
+           { es: 'cada frase', en: 'each sentence' },
+           { es: 'el significado', en: 'the meaning' },
+           { es: 'tiene que ser', en: 'has to be' },
+           { es: 'produce', en: 'produces' },
+           { es: 'varios idiomas', en: 'several languages' },
+           { es: 'la mayoría', en: 'most of them' },
+           { es: 'A veces', en: 'Sometimes' },
+           { es: 'conduce', en: 'she drives' },
+           { es: 'reunirse con', en: 'to meet with' },
+           { es: 'el equipo', en: 'the team' },
+           { es: 'sus compañeros', en: 'her colleagues' },
+           { es: 'meticulosa', en: 'meticulous' },
+           { es: 'parece disfrutar', en: 'seems to enjoy' },
+           { es: 'Aunque', en: 'Although' },
+           { es: 'sencillo', en: 'simple' },
+           { es: 'requiere', en: 'requires' } ],
   questions: [
     { type: 'mcq', q: '¿Qué traduce Clara?', options: ['Documentos legales', 'Novelas', 'Poemas'], answer: 0 },
     { type: 'mcq', q: '¿Cómo es Clara según sus compañeros?', options: ['Muy meticulosa', 'Muy desorganizada', 'Muy impaciente'], answer: 0 },
@@ -572,12 +654,24 @@ window.PASSAGES = [
   id: 'cita-con-amigas-verbos15', title: 'Una cita con amigas', level: 1, theme: 'relaciones',
   tenses: ['presente'],
   text: 'Todos los viernes, quedo con mis amigas para tomar algo en el centro. Siempre espero un poco porque alguna llega tarde. Cuando entramos en el café, buscamos la mesa de siempre cerca de la ventana. A veces pasamos horas hablando de todo un poco. Necesito estos momentos porque me ayudan a desconectar de la semana. Al final, siempre quedamos para la semana siguiente antes de despedirnos.',
-  gloss: [
-    { es: 'tomar algo', en: 'to grab a drink' },
-    { es: 'desconectar', en: 'to unwind' },
-    { es: 'despedirnos', en: 'to say goodbye' },
-    { es: 'la mesa de siempre', en: 'our usual table' }
-  ],
+  gloss: [ { es: 'todos los viernes', en: 'every Friday' },
+           { es: 'quedo con', en: 'I meet up with' },
+           { es: 'mis amigas', en: 'my friends' },
+           { es: 'tomar algo', en: 'to have a drink' },
+           { es: 'espero', en: 'I wait' },
+           { es: 'alguna', en: 'one of them' },
+           { es: 'llega tarde', en: 'arrives late' },
+           { es: 'entramos', en: 'we go in' },
+           { es: 'buscamos', en: 'we look for' },
+           { es: 'la mesa de siempre', en: 'our usual table' },
+           { es: 'la ventana', en: 'the window' },
+           { es: 'A veces', en: 'Sometimes' },
+           { es: 'pasamos horas', en: 'we spend hours' },
+           { es: 'Necesito', en: 'I need' },
+           { es: 'me ayudan a', en: 'they help me to' },
+           { es: 'desconectar', en: 'to switch off' },
+           { es: 'la semana siguiente', en: 'the following week' },
+           { es: 'despedirnos', en: 'saying goodbye' } ],
   questions: [
     { type: 'mcq', q: '¿Cuándo queda con sus amigas?', options: ['Los viernes', 'Los lunes', 'Los domingos'], answer: 0 },
     { type: 'mcq', q: '¿Por qué necesita estos momentos?', options: ['La ayudan a desconectar', 'Le dan dinero', 'Practica idiomas'], answer: 0 },
@@ -698,12 +792,26 @@ window.PASSAGES = [
   id: 'cena-vecinos-verbos22', title: 'Una cena con los vecinos', level: 1, theme: 'relaciones',
   tenses: ['presente'],
   text: 'Cada mes, invitamos a los vecinos a cenar en casa. Yo preparo el plato principal y ellos traen el postre. Cuando llegan, siempre saludamos con un abrazo porque ya somos buenos amigos. A veces olvido comprar algún ingrediente, pero mis vecinos me ayudan sin problema. Todos disfrutamos mucho de esas noches porque hablamos de todo un poco. Al final, nunca olvidamos organizar la próxima cena antes de despedirnos.',
-  gloss: [
-    { es: 'el plato principal', en: 'the main course' },
-    { es: 'el postre', en: 'dessert' },
-    { es: 'un abrazo', en: 'a hug' },
-    { es: 'sin problema', en: 'no problem' }
-  ],
+  gloss: [ { es: 'cada mes', en: 'every month' },
+           { es: 'invitamos', en: 'we invite' },
+           { es: 'los vecinos', en: 'the neighbours' },
+           { es: 'cenar', en: 'to have dinner' },
+           { es: 'preparo', en: 'I prepare' },
+           { es: 'el plato principal', en: 'the main course' },
+           { es: 'traen', en: 'they bring' },
+           { es: 'el postre', en: 'the dessert' },
+           { es: 'saludamos', en: 'we greet each other' },
+           { es: 'un abrazo', en: 'a hug' },
+           { es: 'olvido', en: 'I forget' },
+           { es: 'comprar', en: 'to buy' },
+           { es: 'algún ingrediente', en: 'some ingredient' },
+           { es: 'me ayudan', en: 'they help me' },
+           { es: 'sin problema', en: 'no trouble at all' },
+           { es: 'disfrutamos', en: 'we enjoy' },
+           { es: 'las noches', en: 'the evenings' },
+           { es: 'nunca', en: 'never' },
+           { es: 'la próxima cena', en: 'the next dinner' },
+           { es: 'despedirnos', en: 'saying goodbye' } ],
   questions: [
     { type: 'mcq', q: '¿Qué prepara la narradora?', options: ['El plato principal', 'El postre', 'Las bebidas'], answer: 0 },
     { type: 'mcq', q: '¿Qué hacen cuando llegan los vecinos?', options: ['Saludan con un abrazo', 'Se dan la mano', 'No se saludan'], answer: 0 },
@@ -986,12 +1094,27 @@ window.PASSAGES = [
   id: 'primer-dia-vecindario-vocab1', title: 'El primer día en el vecindario', level: 1, theme: 'relaciones',
   tenses: ['presente'],
   text: 'Cuando Marta conoce a su vecina nueva, la saluda con un alegre buenos días. La vecina responde hola y dice que está encantada de conocerla. Marta le pregunta si necesita ayuda, y ella contesta que sí, por favor. Al terminar, Marta se disculpa diciendo perdón por la prisa, y la vecina responde de nada, muchas gracias por todo. Por la noche, ambas se despiden con un simple buenas noches. Al día siguiente, se dicen adiós y prometen tomar un café juntas pronto.',
-  gloss: [
-    { es: 'encantada de conocerla', en: 'pleased to meet her' },
-    { es: 'la prisa', en: 'the hurry' },
-    { es: 'ambas', en: 'both (of them)' },
-    { es: 'prometen', en: 'they promise' }
-  ],
+  gloss: [ { es: 'conoce a', en: 'meets' },
+           { es: 'su vecina nueva', en: 'her new neighbour' },
+           { es: 'la saluda', en: 'greets her' },
+           { es: 'alegre', en: 'cheerful' },
+           { es: 'responde', en: 'replies' },
+           { es: 'encantada de conocerla', en: 'delighted to meet her' },
+           { es: 'le pregunta', en: 'asks her' },
+           { es: 'si necesita ayuda', en: 'whether she needs help' },
+           { es: 'contesta', en: 'answers' },
+           { es: 'Al terminar', en: 'When they finish' },
+           { es: 'se disculpa', en: 'apologises' },
+           { es: 'la prisa', en: 'the rush' },
+           { es: 'de nada', en: 'you\'re welcome' },
+           { es: 'Por la noche', en: 'In the evening' },
+           { es: 'ambas', en: 'both of them' },
+           { es: 'se despiden', en: 'they say goodbye' },
+           { es: 'Al día siguiente', en: 'The next day' },
+           { es: 'se dicen adiós', en: 'they say goodbye' },
+           { es: 'prometen', en: 'they promise' },
+           { es: 'juntas', en: 'together' },
+           { es: 'pronto', en: 'soon' } ],
   questions: [
     { type: 'mcq', q: '¿Cómo saluda Marta a su vecina?', options: ['Con un "buenos días"', 'Con un abrazo', 'Con una carta'], answer: 0 },
     { type: 'mcq', q: '¿Qué dice Marta cuando tiene prisa?', options: ['Perdón', 'Adiós', 'De nada'], answer: 0 },
@@ -1094,12 +1217,26 @@ window.PASSAGES = [
   id: 'numeros-loteria-vocab7', title: 'Los números de la lotería', level: 1, theme: 'ocio',
   tenses: ['presente'],
   text: 'Cada semana, mi padre juega a la lotería con los mismos números: tres, siete y nueve. Compra un billete que cuesta diez euros y sueña con ganar cien mil euros algún día. Mi madre prefiere jugar con cinco números diferentes: uno, dos, cuatro, seis y ocho. Nunca ganan más de mil euros, pero siguen jugando cada semana con ilusión. Para ellos, jugar es más divertido que ganar.',
-  gloss: [
-    { es: 'la lotería', en: 'the lottery' },
-    { es: 'el billete', en: 'the ticket' },
-    { es: 'con ilusión', en: 'hopefully' },
-    { es: 'divertido', en: 'fun' }
-  ],
+  gloss: [ { es: 'cada semana', en: 'every week' },
+           { es: 'juega a la lotería', en: 'plays the lottery' },
+           { es: 'los mismos números', en: 'the same numbers' },
+           { es: 'Compra', en: 'He buys' },
+           { es: 'el billete', en: 'the ticket' },
+           { es: 'cuesta', en: 'it costs' },
+           { es: 'diez euros', en: 'ten euros' },
+           { es: 'sueña con', en: 'he dreams of' },
+           { es: 'ganar', en: 'winning' },
+           { es: 'cien mil', en: 'a hundred thousand' },
+           { es: 'algún día', en: 'one day' },
+           { es: 'mi madre', en: 'my mother' },
+           { es: 'prefiere', en: 'prefers' },
+           { es: 'jugar', en: 'to play' },
+           { es: 'diferentes', en: 'different' },
+           { es: 'Nunca ganan', en: 'They never win' },
+           { es: 'más de', en: 'more than' },
+           { es: 'siguen jugando', en: 'they keep playing' },
+           { es: 'con ilusión', en: 'with excitement' },
+           { es: 'divertido', en: 'fun' } ],
   questions: [
     { type: 'mcq', q: '¿Qué números juega el padre?', options: ['Tres, siete y nueve', 'Uno, dos y tres', 'Cinco, seis y siete'], answer: 0 },
     { type: 'mcq', q: '¿Cuánto cuesta el billete?', options: ['Diez euros', 'Cien euros', 'Cinco euros'], answer: 0 },
@@ -1148,12 +1285,28 @@ window.PASSAGES = [
   id: 'cuadro-pintor-vocab10', title: 'El cuadro del pintor', level: 1, theme: 'arte',
   tenses: ['presente'],
   text: 'El pintor mezcla azul y amarillo para conseguir verde. En su estudio, tiene botes de pintura roja, negra y blanca por todas partes. Para el cielo del cuadro, usa un gris suave, y para las flores, elige rosa y naranja brillante. El marco del cuadro es marrón oscuro, casi del mismo color que la mesa de trabajo. Cuando termina, todos dicen que los colores del cuadro parecen reales.',
-  gloss: [
-    { es: 'el estudio', en: 'the studio' },
-    { es: 'los botes de pintura', en: 'paint cans' },
-    { es: 'el marco', en: 'the frame' },
-    { es: 'oscuro', en: 'dark' }
-  ],
+  gloss: [ { es: 'el pintor', en: 'the painter' },
+           { es: 'mezcla', en: 'mixes' },
+           { es: 'amarillo', en: 'yellow' },
+           { es: 'conseguir', en: 'to get' },
+           { es: 'el estudio', en: 'the studio' },
+           { es: 'los botes de pintura', en: 'the tins of paint' },
+           { es: 'blanca', en: 'white' },
+           { es: 'por todas partes', en: 'everywhere' },
+           { es: 'el cielo', en: 'the sky' },
+           { es: 'el cuadro', en: 'the painting' },
+           { es: 'gris', en: 'grey' },
+           { es: 'suave', en: 'soft' },
+           { es: 'las flores', en: 'the flowers' },
+           { es: 'elige', en: 'chooses' },
+           { es: 'rosa', en: 'pink' },
+           { es: 'naranja', en: 'orange' },
+           { es: 'brillante', en: 'bright' },
+           { es: 'el marco', en: 'the frame' },
+           { es: 'marrón', en: 'brown' },
+           { es: 'oscuro', en: 'dark' },
+           { es: 'termina', en: 'he finishes' },
+           { es: 'parecen reales', en: 'look real' } ],
   questions: [
     { type: 'mcq', q: '¿Qué colores mezcla para conseguir verde?', options: ['Azul y amarillo', 'Azul y blanco', 'Amarillo y rojo'], answer: 0 },
     { type: 'mcq', q: '¿De qué color es el marco?', options: ['Marrón oscuro', 'Negro', 'Blanco'], answer: 0 },
@@ -1274,12 +1427,27 @@ window.PASSAGES = [
   id: 'comprando-piso-vocab17', title: 'Comprando un piso', level: 1, theme: 'vivienda',
   tenses: ['presente'],
   text: 'Buscamos un piso grande para toda la familia, pero los pisos grandes son muy caros. Encontramos uno pequeño y bonito, aunque un poco viejo. El agente dice que no es fácil encontrar algo bueno y barato al mismo tiempo. Visitamos otro piso nuevo, pero nos parece feo en el exterior. Al final, decidir es difícil, pero preferimos algo pequeño y barato antes que algo grande y malo por dentro.',
-  gloss: [
-    { es: 'el agente', en: 'the agent' },
-    { es: 'al mismo tiempo', en: 'at the same time' },
-    { es: 'en el exterior', en: 'on the outside' },
-    { es: 'por dentro', en: 'on the inside' }
-  ],
+  gloss: [ { es: 'Buscamos', en: 'We\'re looking for' },
+           { es: 'un piso', en: 'a flat' },
+           { es: 'toda la familia', en: 'the whole family' },
+           { es: 'caros', en: 'expensive' },
+           { es: 'Encontramos', en: 'We find' },
+           { es: 'pequeño', en: 'small' },
+           { es: 'bonito', en: 'pretty' },
+           { es: 'aunque', en: 'although' },
+           { es: 'viejo', en: 'old' },
+           { es: 'el agente', en: 'the estate agent' },
+           { es: 'no es fácil', en: 'it isn\'t easy' },
+           { es: 'encontrar', en: 'to find' },
+           { es: 'barato', en: 'cheap' },
+           { es: 'al mismo tiempo', en: 'at the same time' },
+           { es: 'Visitamos', en: 'We visit' },
+           { es: 'nos parece', en: 'it seems to us' },
+           { es: 'feo', en: 'ugly' },
+           { es: 'en el exterior', en: 'on the outside' },
+           { es: 'decidir', en: 'to decide' },
+           { es: 'preferimos', en: 'we prefer' },
+           { es: 'por dentro', en: 'inside' } ],
   questions: [
     { type: 'mcq', q: '¿Cómo son los pisos grandes según el texto?', options: ['Muy caros', 'Muy baratos', 'Muy feos'], answer: 0 },
     { type: 'mcq', q: '¿Qué prefieren al final?', options: ['Algo pequeño y barato', 'Algo grande y caro', 'Algo nuevo y caro'], answer: 0 },
@@ -1292,12 +1460,30 @@ window.PASSAGES = [
   id: 'maraton-ciudad-vocab18', title: 'La maratón de la ciudad', level: 1, theme: 'ocio',
   tenses: ['presente'],
   text: 'Los corredores rápidos terminan la maratón en poco tiempo, mientras los más lentos tardan mucho más. Algunos se sienten fuertes al principio, pero al final del recorrido largo se sienten débiles y cansados. Otros prefieren un recorrido más corto para no sufrir tanto. Al cruzar la línea final, unos están felices y otros están tristes porque no consiguen su objetivo. Las botellas de agua están vacías al final, y las calles están llenas de público a pesar del frío de la mañana.',
-  gloss: [
-    { es: 'los corredores', en: 'the runners' },
-    { es: 'el recorrido', en: 'the route' },
-    { es: 'a pesar de', en: 'despite' },
-    { es: 'el público', en: 'the crowd' }
-  ],
+  gloss: [ { es: 'los corredores', en: 'the runners' },
+           { es: 'terminan', en: 'finish' },
+           { es: 'lentos', en: 'slow' },
+           { es: 'tardan', en: 'take longer' },
+           { es: 'se sienten', en: 'they feel' },
+           { es: 'fuertes', en: 'strong' },
+           { es: 'al principio', en: 'at the start' },
+           { es: 'el recorrido', en: 'the route' },
+           { es: 'débiles', en: 'weak' },
+           { es: 'prefieren', en: 'prefer' },
+           { es: 'corto', en: 'short' },
+           { es: 'sufrir', en: 'to suffer' },
+           { es: 'Al cruzar', en: 'On crossing' },
+           { es: 'la línea final', en: 'the finish line' },
+           { es: 'felices', en: 'happy' },
+           { es: 'tristes', en: 'sad' },
+           { es: 'no consiguen', en: 'they don\'t achieve' },
+           { es: 'su objetivo', en: 'their goal' },
+           { es: 'las botellas', en: 'the bottles' },
+           { es: 'vacías', en: 'empty' },
+           { es: 'llenas de', en: 'full of' },
+           { es: 'el público', en: 'the crowd' },
+           { es: 'a pesar de', en: 'in spite of' },
+           { es: 'el frío', en: 'the cold' } ],
   questions: [
     { type: 'mcq', q: '¿Cómo se sienten algunos al final del recorrido largo?', options: ['Débiles y cansados', 'Muy rápidos', 'Muy felices'], answer: 0 },
     { type: 'mcq', q: '¿Cómo están las botellas de agua al final?', options: ['Vacías', 'Llenas', 'Rotas'], answer: 0 },
@@ -1346,12 +1532,25 @@ window.PASSAGES = [
   id: 'guia-turistica-vocab21', title: 'Una guía turística', level: 1, theme: 'viajes',
   tenses: ['presente'],
   text: 'Aquí, cerca del hotel, hay muy poca gente por la mañana, pero allí, en el centro, hay mucho turismo todo el año. Recomiendo comer aquí porque la comida está muy bien, aunque hay menos variedad que en otros restaurantes. Si prefieres estar lejos del ruido, aquella zona es mejor, aunque queda un poco más lejos del centro. Todo el mundo dice que la vista de allí es la mejor de la ciudad, aunque a mí no me parece mal ninguna parte.',
-  gloss: [
-    { es: 'el turismo', en: 'tourism' },
-    { es: 'la variedad', en: 'variety' },
-    { es: 'la zona', en: 'the area' },
-    { es: 'la vista', en: 'the view' }
-  ],
+  gloss: [ { es: 'cerca del hotel', en: 'near the hotel' },
+           { es: 'poca gente', en: 'not many people' },
+           { es: 'allí', en: 'over there' },
+           { es: 'el turismo', en: 'tourism' },
+           { es: 'todo el año', en: 'all year round' },
+           { es: 'Recomiendo', en: 'I recommend' },
+           { es: 'la comida', en: 'the food' },
+           { es: 'está muy bien', en: 'is very good' },
+           { es: 'aunque', en: 'although' },
+           { es: 'menos variedad', en: 'less variety' },
+           { es: 'Si prefieres', en: 'If you prefer' },
+           { es: 'lejos del ruido', en: 'away from the noise' },
+           { es: 'aquella zona', en: 'that area' },
+           { es: 'queda', en: 'it is (located)' },
+           { es: 'Todo el mundo', en: 'Everybody' },
+           { es: 'la vista', en: 'the view' },
+           { es: 'la ciudad', en: 'the city' },
+           { es: 'no me parece mal', en: 'doesn\'t seem bad to me' },
+           { es: 'ninguna parte', en: 'any of them' } ],
   questions: [
     { type: 'mcq', q: '¿Cómo es la comida aquí según el texto?', options: ['Muy buena', 'Muy mala', 'Normal'], answer: 0 },
     { type: 'mcq', q: '¿Qué zona recomienda si prefieres estar lejos del ruido?', options: ['Aquella zona', 'El centro', 'El hotel'], answer: 0 },
@@ -1364,12 +1563,26 @@ window.PASSAGES = [
   id: 'casa-vacia-vocab22', title: 'Una casa vacía', level: 1, theme: 'vivienda',
   tenses: ['presente'],
   text: 'Cuando llego a casa y no hay nadie, siento algo extraño en el silencio. A veces pienso que alguien va a aparecer de repente, pero no pasa nada. Prefiero cuando hay alguien esperándome, incluso si es solo el gato. Si necesito algo, no tengo a nadie cerca para pedir ayuda, así que aprendo a resolver todo solo.',
-  gloss: [
-    { es: 'el silencio', en: 'the silence' },
-    { es: 'de repente', en: 'suddenly' },
-    { es: 'esperándome', en: 'waiting for me' },
-    { es: 'resolver', en: 'to solve' }
-  ],
+  gloss: [ { es: 'llego a casa', en: 'I get home' },
+           { es: 'no hay nadie', en: 'there\'s nobody there' },
+           { es: 'siento', en: 'I feel' },
+           { es: 'extraño', en: 'strange' },
+           { es: 'el silencio', en: 'the silence' },
+           { es: 'A veces', en: 'Sometimes' },
+           { es: 'pienso', en: 'I think' },
+           { es: 'alguien', en: 'somebody' },
+           { es: 'va a aparecer', en: 'is going to appear' },
+           { es: 'de repente', en: 'suddenly' },
+           { es: 'no pasa nada', en: 'nothing happens' },
+           { es: 'esperándome', en: 'waiting for me' },
+           { es: 'incluso si', en: 'even if' },
+           { es: 'el gato', en: 'the cat' },
+           { es: 'cerca', en: 'nearby' },
+           { es: 'pedir ayuda', en: 'to ask for help' },
+           { es: 'así que', en: 'so' },
+           { es: 'aprendo a', en: 'I learn to' },
+           { es: 'resolver', en: 'to sort out' },
+           { es: 'solo', en: 'on my own' } ],
   questions: [
     { type: 'mcq', q: '¿Qué siente cuando no hay nadie en casa?', options: ['Algo extraño en el silencio', 'Mucha alegría', 'Nada especial'], answer: 0 },
     { type: 'mcq', q: '¿A quién prefiere tener cerca?', options: ['A alguien, incluso si es el gato', 'A sus padres', 'A un vecino'], answer: 0 },
@@ -1436,12 +1649,25 @@ window.PASSAGES = [
   id: 'rebajas-tienda-vocab26', title: 'Las rebajas de la tienda', level: 1, theme: 'compras',
   tenses: ['presente'],
   text: 'Durante las rebajas, la tienda ofrece un buen descuento en varias marcas conocidas. Reviso el precio antes de comprar para asegurarme de que es una oferta real. Después de pagar, siempre guardo el recibo por si necesito devolver algo. Mi marca favorita de zapatos tiene un descuento del cincuenta por ciento esta semana. Comparo precios en varias tiendas antes de decidir dónde comprar.',
-  gloss: [
-    { es: 'las rebajas', en: 'the sales' },
-    { es: 'asegurarme', en: 'to make sure' },
-    { es: 'devolver', en: 'to return' },
-    { es: 'comparo', en: 'I compare' }
-  ],
+  gloss: [ { es: 'las rebajas', en: 'the sales' },
+           { es: 'ofrece', en: 'offers' },
+           { es: 'un descuento', en: 'a discount' },
+           { es: 'varias marcas', en: 'several brands' },
+           { es: 'conocidas', en: 'well known' },
+           { es: 'Reviso', en: 'I check' },
+           { es: 'el precio', en: 'the price' },
+           { es: 'antes de comprar', en: 'before buying' },
+           { es: 'asegurarme', en: 'to make sure' },
+           { es: 'una oferta real', en: 'a genuine offer' },
+           { es: 'Después de pagar', en: 'After paying' },
+           { es: 'guardo', en: 'I keep' },
+           { es: 'el recibo', en: 'the receipt' },
+           { es: 'por si', en: 'in case' },
+           { es: 'devolver', en: 'to return' },
+           { es: 'mi marca favorita', en: 'my favourite brand' },
+           { es: 'cincuenta por ciento', en: 'fifty per cent' },
+           { es: 'Comparo', en: 'I compare' },
+           { es: 'decidir', en: 'to decide' } ],
   questions: [
     { type: 'mcq', q: '¿Qué hace antes de comprar?', options: ['Revisa el precio', 'Pregunta a un amigo', 'Compra sin mirar'], answer: 0 },
     { type: 'mcq', q: '¿Por qué guarda el recibo?', options: ['Por si necesita devolver algo', 'Para el banco', 'Por costumbre'], answer: 0 },
@@ -1472,12 +1698,27 @@ window.PASSAGES = [
   id: 'horario-semanal-vocab-time2', title: 'Mi horario semanal', level: 1, theme: 'trabajo',
   tenses: ['presente'],
   text: 'Los lunes y los martes trabajo temprano porque tengo reuniones importantes. Los miércoles suelo llegar un poco más tarde a la oficina. Los jueves y los viernes son mis días más tranquilos de la semana. Los sábados me despierto tarde y disfruto de la mañana sin prisa. Los domingos, en cambio, me levanto temprano para hacer deporte antes de empezar la semana otra vez.',
-  gloss: [
-    { es: 'suelo llegar', en: 'I usually arrive' },
-    { es: 'sin prisa', en: 'without hurry' },
-    { es: 'en cambio', en: 'on the other hand' },
-    { es: 'hacer deporte', en: 'to exercise' }
-  ],
+  gloss: [ { es: 'los lunes', en: 'on Mondays' },
+           { es: 'temprano', en: 'early' },
+           { es: 'porque', en: 'because' },
+           { es: 'las reuniones', en: 'the meetings' },
+           { es: 'los miércoles', en: 'on Wednesdays' },
+           { es: 'suelo llegar', en: 'I usually arrive' },
+           { es: 'tarde', en: 'late' },
+           { es: 'los jueves', en: 'on Thursdays' },
+           { es: 'los viernes', en: 'on Fridays' },
+           { es: 'tranquilos', en: 'quiet' },
+           { es: 'la semana', en: 'the week' },
+           { es: 'los sábados', en: 'on Saturdays' },
+           { es: 'me despierto', en: 'I wake up' },
+           { es: 'disfruto de', en: 'I enjoy' },
+           { es: 'sin prisa', en: 'without rushing' },
+           { es: 'los domingos', en: 'on Sundays' },
+           { es: 'en cambio', en: 'on the other hand' },
+           { es: 'me levanto', en: 'I get up' },
+           { es: 'hacer deporte', en: 'to do sport' },
+           { es: 'empezar', en: 'to start' },
+           { es: 'otra vez', en: 'again' } ],
   questions: [
     { type: 'mcq', q: '¿Qué días trabaja temprano?', options: ['Lunes y martes', 'Sábado y domingo', 'Solo los viernes'], answer: 0 },
     { type: 'mcq', q: '¿Cómo son los jueves y viernes?', options: ['Los días más tranquilos', 'Los más ocupados', 'Iguales que el lunes'], answer: 0 },
@@ -1652,12 +1893,28 @@ window.PASSAGES = [
   id: 'planificacion-financiera-vocab-fin1', title: 'La planificación financiera', level: 1, theme: 'economia',
   tenses: ['presente'],
   text: 'Cada mes, pago la hipoteca y el seguro del coche antes que cualquier otro gasto. Reviso mi presupuesto para saber cuánto ahorro me queda después de pagar el alquiler y las facturas. Pienso en abrir una inversión pequeña para el futuro, aunque todavía tengo una deuda del préstamo del coche. También pago un impuesto especial por trabajar de forma independiente. Mi salario cubre todo esto, pero ahorro poco para la jubilación.',
-  gloss: [
-    { es: 'el gasto', en: 'the expense' },
-    { es: 'de forma independiente', en: 'self-employed' },
-    { es: 'cubre', en: 'covers' },
-    { es: 'todavía', en: 'still' }
-  ],
+  gloss: [ { es: 'cada mes', en: 'every month' },
+           { es: 'la hipoteca', en: 'the mortgage' },
+           { es: 'el seguro', en: 'the insurance' },
+           { es: 'cualquier otro gasto', en: 'any other expense' },
+           { es: 'Reviso', en: 'I go over' },
+           { es: 'el presupuesto', en: 'the budget' },
+           { es: 'saber', en: 'to know' },
+           { es: 'el ahorro', en: 'savings' },
+           { es: 'me queda', en: 'I have left' },
+           { es: 'el alquiler', en: 'the rent' },
+           { es: 'las facturas', en: 'the bills' },
+           { es: 'Pienso en', en: 'I\'m thinking about' },
+           { es: 'abrir', en: 'to open' },
+           { es: 'el futuro', en: 'the future' },
+           { es: 'todavía', en: 'still' },
+           { es: 'la deuda', en: 'the debt' },
+           { es: 'el préstamo', en: 'the loan' },
+           { es: 'el impuesto', en: 'the tax' },
+           { es: 'de forma independiente', en: 'self-employed' },
+           { es: 'el salario', en: 'the salary' },
+           { es: 'cubre', en: 'covers' },
+           { es: 'la jubilación', en: 'retirement' } ],
   questions: [
     { type: 'mcq', q: '¿Qué paga antes que cualquier otro gasto?', options: ['La hipoteca y el seguro', 'El alquiler', 'Las facturas'], answer: 0 },
     { type: 'mcq', q: '¿Por qué paga un impuesto especial?', options: ['Trabaja de forma independiente', 'Tiene un coche nuevo', 'Vive en otro país'], answer: 0 },
@@ -1796,12 +2053,29 @@ window.PASSAGES = [
   id: 'ser-estar-contraste', title: 'Ser y estar: dos maneras de ser', level: 1, theme: 'caracter',
   tenses: ['presente'],
   text: 'Mi amiga Laura es alta, morena y muy inteligente; esas son características que no cambian. Pero hoy Laura está cansada porque trabaja mucho los fines de semana. Ser describe quién es alguien de forma permanente, mientras que estar describe cómo se encuentra en un momento concreto. Por ejemplo, Madrid es la capital de España, pero ahora mismo está lloviendo allí. Otro ejemplo: mi hermano es médico, y también está muy ocupado esta semana en el hospital. Aprender cuándo usar ser y cuándo usar estar es clave para hablar bien español.',
-  gloss: [
-    { es: 'de forma permanente', en: 'permanently' },
-    { es: 'un momento concreto', en: 'a specific moment' },
-    { es: 'la capital', en: 'the capital' },
-    { es: 'clave', en: 'key' }
-  ],
+  gloss: [ { es: 'mi amiga', en: 'my friend' },
+           { es: 'alta', en: 'tall' },
+           { es: 'morena', en: 'dark-haired' },
+           { es: 'las características', en: 'the features' },
+           { es: 'no cambian', en: 'don\'t change' },
+           { es: 'cansada', en: 'tired' },
+           { es: 'porque', en: 'because' },
+           { es: 'los fines de semana', en: 'at weekends' },
+           { es: 'describe', en: 'describes' },
+           { es: 'alguien', en: 'somebody' },
+           { es: 'de forma permanente', en: 'permanently' },
+           { es: 'mientras que', en: 'whereas' },
+           { es: 'se encuentra', en: 'he or she is feeling' },
+           { es: 'un momento concreto', en: 'one particular moment' },
+           { es: 'Por ejemplo', en: 'For example' },
+           { es: 'la capital', en: 'the capital' },
+           { es: 'ahora mismo', en: 'right now' },
+           { es: 'está lloviendo', en: 'it\'s raining' },
+           { es: 'mi hermano', en: 'my brother' },
+           { es: 'el médico', en: 'the doctor' },
+           { es: 'ocupado', en: 'busy' },
+           { es: 'Aprender', en: 'Learning' },
+           { es: 'clave', en: 'key' } ],
   questions: [
     { type: 'mcq', q: '¿Qué usamos para describir características permanentes?', options: ['Ser', 'Estar', 'Los dos igual'], answer: 0 },
     { type: 'mcq', q: '¿Qué usamos para describir un estado temporal?', options: ['Estar', 'Ser', 'Ninguno'], answer: 0 },
@@ -1868,12 +2142,26 @@ window.PASSAGES = [
   id: 'ropa-invierno', title: 'Ropa para el invierno', level: 1, theme: 'compras',
   tenses: ['presente'],
   text: 'Marta necesita ropa nueva para el invierno. Va a una tienda grande en el centro con su hermana. Primero, busca un abrigo grueso y unos zapatos cómodos. Después, mira unas camisas de muchos colores: azul, verde y negro. El vestido rojo es bonito, pero es un poco caro. Al final, compra el abrigo y los zapatos. Paga con tarjeta y sale muy contenta de la tienda.',
-  gloss: [
-    { es: 'el abrigo', en: 'the coat' },
-    { es: 'grueso', en: 'thick' },
-    { es: 'cómodos', en: 'comfortable' },
-    { es: 'al final', en: 'in the end' }
-  ],
+  gloss: [ { es: 'la ropa', en: 'clothes' },
+           { es: 'el invierno', en: 'the winter' },
+           { es: 'la tienda', en: 'the shop' },
+           { es: 'su hermana', en: 'her sister' },
+           { es: 'busca', en: 'she looks for' },
+           { es: 'el abrigo', en: 'the coat' },
+           { es: 'grueso', en: 'thick' },
+           { es: 'los zapatos', en: 'the shoes' },
+           { es: 'cómodos', en: 'comfortable' },
+           { es: 'las camisas', en: 'the shirts' },
+           { es: 'azul', en: 'blue' },
+           { es: 'verde', en: 'green' },
+           { es: 'negro', en: 'black' },
+           { es: 'el vestido', en: 'the dress' },
+           { es: 'rojo', en: 'red' },
+           { es: 'caro', en: 'expensive' },
+           { es: 'al final', en: 'in the end' },
+           { es: 'Paga con tarjeta', en: 'She pays by card' },
+           { es: 'sale', en: 'she leaves' },
+           { es: 'contenta', en: 'pleased' } ],
   questions: [
     { type: 'mcq', q: '¿Qué busca primero Marta?', options: ['Un vestido', 'Un abrigo y zapatos', 'Una camisa'], answer: 1 },
     { type: 'mcq', q: '¿De qué color es el vestido?', options: ['Azul', 'Rojo', 'Verde'], answer: 1 },
@@ -10324,9 +10612,27 @@ window.PASSAGES = [
   id: 'a1-ident-ficha', title: 'Una ficha de la academia', level: 1, theme: 'identidad',
   tenses: ['presente', 'preterito'],
   text: 'El lunes escribí mi nombre, el primer apellido y el segundo apellido en una ficha. También la fecha de nacimiento, el lugar de nacimiento y la edad. Después la dirección: avenida del Norte, número seis, tercer piso, y el código postal. En estado civil puse soltero. El señor me pidió el carné.',
-  gloss: [ { es: 'la ficha', en: 'form' },
+  gloss: [ { es: 'el lunes', en: 'on Monday' },
+           { es: 'escribí', en: 'I wrote' },
+           { es: 'el nombre', en: 'the first name' },
+           { es: 'el primer apellido', en: 'the first surname' },
+           { es: 'el segundo apellido', en: 'the second surname' },
+           { es: 'la ficha', en: 'the form' },
+           { es: 'la fecha de nacimiento', en: 'the date of birth' },
+           { es: 'el lugar de nacimiento', en: 'the place of birth' },
+           { es: 'la edad', en: 'the age' },
+           { es: 'Después', en: 'Then' },
+           { es: 'la dirección', en: 'the address' },
+           { es: 'la avenida', en: 'the avenue' },
+           { es: 'el norte', en: 'the north' },
+           { es: 'tercer piso', en: 'third floor' },
+           { es: 'el código postal', en: 'the postcode' },
+           { es: 'el estado civil', en: 'marital status' },
            { es: 'puse', en: 'I put' },
-           { es: 'me pidió', en: 'he asked me for' } ],
+           { es: 'soltero', en: 'single' },
+           { es: 'el señor', en: 'the man' },
+           { es: 'me pidió', en: 'asked me for' },
+           { es: 'el carné', en: 'the ID card' } ],
   questions: [
     { type: 'mcq', q: '¿Qué puso en estado civil?',
       options: ['Soltero', 'Casado', 'Viudo'], answer: 0 },
@@ -10637,5 +10943,3682 @@ window.PASSAGES = [
     { type: 'short', q: '¿Cuántos días estuvo malo? (una palabra)', accept: ['tres', '3'] },
     { type: 'translate', line: 'La semana pasada estuve malo.', model: 'Last week I was ill.' }
   ]
+},
+
+{
+  id: 'a1-serv-cuenta', title: 'En el banco', level: 1, theme: 'servicios',
+  tenses: ['presente'],
+  text: 'Marta está en el banco. Quiere cambiar dinero y abrir una cuenta. —Buenos días. ¿Puedo cambiar dinero aquí? —Sí. ¿Tiene un documento de identidad? —Sí, mi pasaporte y el permiso de residencia. —¿Cuántos euros quiere? —Doscientos. ¿Hay un cajero automático cerca? —Sí, al lado de los aseos. También puede pagar con la tarjeta.',
+  gloss: [ { es: 'el banco', en: 'the bank' },
+           { es: 'quiere', en: 'she wants' },
+           { es: 'cambiar dinero', en: 'to change money' },
+           { es: 'abrir una cuenta', en: 'to open an account' },
+           { es: 'buenos días', en: 'good morning' },
+           { es: '¿Puedo…?', en: 'Can I…?' },
+           { es: 'aquí', en: 'here' },
+           { es: '¿Tiene…?', en: 'Do you have…?' },
+           { es: 'el documento de identidad', en: 'the identity document' },
+           { es: 'el pasaporte', en: 'the passport' },
+           { es: 'el permiso de residencia', en: 'the residence permit' },
+           { es: '¿Cuántos euros?', en: 'How many euros?' },
+           { es: 'doscientos', en: 'two hundred' },
+           { es: '¿Hay…?', en: 'Is there…?' },
+           { es: 'el cajero automático', en: 'the cash machine' },
+           { es: 'cerca', en: 'nearby' },
+           { es: 'al lado de', en: 'next to' },
+           { es: 'los aseos', en: 'the toilets' },
+           { es: 'puede pagar', en: 'you can pay' },
+           { es: 'la tarjeta', en: 'the card' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde está el cajero automático?',
+      options: ['Al lado de los aseos', 'En la calle', 'No hay'], answer: 0 },
+    { type: 'mcq', q: '¿Qué documento tiene Marta?',
+      options: ['El carné', 'El pasaporte', 'La tarjeta de estudiante'], answer: 1 },
+    { type: 'short', q: '¿Cuántos euros quiere cambiar? (un número)', accept: ['doscientos', '200'] },
+    { type: 'translate', line: '¿Hay un cajero automático cerca?', model: 'Is there a cash machine nearby?' }
+  ]
+},
+
+{
+  id: 'a1-serv-carta-postal', title: 'Una carta y una postal', level: 1, theme: 'servicios',
+  tenses: ['presente'],
+  text: 'Hoy voy a correos. Tengo una carta para mi madre y una postal para mi amiga. La carta cuesta dos euros y la postal ochenta céntimos. El empleado de correos es muy amable. El cartero llega el martes. Pago con la tarjeta porque no tengo moneda. Los aseos están al lado.',
+  gloss: [ { es: 'correos', en: 'the post office' },
+           { es: 'la postal', en: 'the postcard' },
+           { es: 'el céntimo', en: 'the cent' },
+           { es: 'la moneda', en: 'the coin' } ],
+  questions: [
+    { type: 'mcq', q: '¿Para quién es la postal?',
+      options: ['Para su madre', 'Para su amiga', 'Para el empleado'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo paga?',
+      options: ['Con moneda', 'Con la tarjeta', 'No paga'], answer: 1 },
+    { type: 'short', q: '¿Qué día llega el cartero? (un día)', accept: ['el martes', 'martes'] },
+    { type: 'translate', line: 'Tengo una carta para mi madre y una postal para mi amiga.', model: 'I have a letter for my mother and a postcard for my friend.' }
+  ]
+},
+
+{
+  id: 'a1-serv-emergencia', title: 'Una llamada urgente', level: 1, theme: 'servicios',
+  tenses: ['presente'],
+  text: 'Hay un problema en la calle, cerca del semáforo. Un hombre llama al teléfono de emergencia. —¡Socorro! Necesito una ambulancia. —¿Dónde está usted? —En la plaza, al lado de la comisaría. —Bien. Vamos a llamar a los bomberos también. La enfermera habla con él y después va a urgencias. El vigilante y el cartero ayudan.',
+  gloss: [ { es: 'el socorro', en: 'help (as a shout)' },
+           { es: 'la ambulancia', en: 'the ambulance' },
+           { es: 'la comisaría', en: 'the police station' },
+           { es: 'el bombero', en: 'the firefighter' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué necesita el hombre?',
+      options: ['Una ambulancia', 'Un taxi', 'Un médico privado'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde está el hombre?',
+      options: ['En el banco', 'En la plaza', 'En casa'], answer: 1 },
+    { type: 'short', q: '¿Quién habla con el hombre? (una palabra)', accept: ['la enfermera', 'enfermera'] },
+    { type: 'translate', line: 'Necesito una ambulancia.', model: 'I need an ambulance.' }
+  ]
+},
+
+{
+  id: 'a1-serv-tarjeta', title: 'La tarjeta no funciona', level: 1, theme: 'servicios',
+  tenses: ['presente'],
+  text: '—Buenas tardes. Mi tarjeta no funciona en el cajero automático y quiero cambiar dinero. —¿Tiene un documento de identidad? —Sí, mi carné y el permiso de residencia. —¿Cuál es su nacionalidad? —Soy italiana. —Un momento. Ahora funciona. Puede sacar euros aquí o abrir una cuenta en el banco.',
+  gloss: [ { es: 'Buenas tardes.', en: 'Good afternoon.' },
+           { es: 'mi tarjeta', en: 'my card' },
+           { es: 'no funciona', en: 'it doesn\'t work' },
+           { es: 'el cajero automático', en: 'the cash machine' },
+           { es: 'quiero', en: 'I want' },
+           { es: 'cambiar dinero', en: 'to change money' },
+           { es: '¿Tiene…?', en: 'Do you have…?' },
+           { es: 'el documento de identidad', en: 'the identity document' },
+           { es: 'mi carné', en: 'my ID card' },
+           { es: 'el permiso de residencia', en: 'the residence permit' },
+           { es: '¿Cuál es su nacionalidad?', en: 'What is your nationality?' },
+           { es: 'italiana', en: 'Italian (a woman)' },
+           { es: 'Un momento.', en: 'One moment.' },
+           { es: 'Ahora funciona.', en: 'It works now.' },
+           { es: 'Puede sacar', en: 'You can take out' },
+           { es: 'los euros', en: 'the euros' },
+           { es: 'abrir una cuenta', en: 'to open an account' },
+           { es: 'el banco', en: 'the bank' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es el problema?',
+      options: ['La tarjeta no funciona', 'No tiene dinero', 'El banco está cerrado'], answer: 0 },
+    { type: 'mcq', q: '¿De dónde es la mujer?',
+      options: ['De España', 'De Italia', 'De Francia'], answer: 1 },
+    { type: 'short', q: '¿Qué dos documentos tiene? (uno vale)', accept: ['el carné', 'carné', 'carne', 'el permiso de residencia', 'permiso de residencia'] },
+    { type: 'translate', line: 'Mi tarjeta no funciona en el cajero automático y quiero cambiar dinero.', model: 'My card does not work in the cash machine and I want to change money.' }
+  ]
+},
+
+{
+  id: 'a1-serv-policia', title: 'En la comisaría', level: 1, theme: 'servicios',
+  tenses: ['presente'],
+  text: 'Ana está en la comisaría. —Buenos días. Hay un robo: no tengo mi cartera. —¿Qué hay en la cartera? —Mi documento de identidad, una tarjeta y treinta euros. —¿Cuál es su nacionalidad? —Soy mexicana. —Vamos a llamar a la policía del barrio. ¿Tiene el permiso de residencia? —Sí, aquí está. Y el número de la tarjeta del banco.',
+  gloss: [ { es: 'la comisaría', en: 'the police station' },
+           { es: 'buenos días', en: 'good morning' },
+           { es: 'un robo', en: 'a robbery' },
+           { es: 'no tengo', en: 'I don\'t have' },
+           { es: 'la cartera', en: 'the wallet' },
+           { es: '¿Qué hay en…?', en: 'What is there in…?' },
+           { es: 'el documento de identidad', en: 'the identity document' },
+           { es: 'una tarjeta', en: 'a card' },
+           { es: 'treinta euros', en: 'thirty euros' },
+           { es: '¿Cuál es…?', en: 'What / which is…?' },
+           { es: 'la nacionalidad', en: 'nationality' },
+           { es: 'mexicana', en: 'Mexican (a woman)' },
+           { es: 'Vamos a llamar', en: 'We\'re going to call' },
+           { es: 'la policía', en: 'the police' },
+           { es: 'el barrio', en: 'the neighbourhood' },
+           { es: '¿Tiene…?', en: 'Do you have…? (polite)' },
+           { es: 'el permiso de residencia', en: 'the residence permit' },
+           { es: 'aquí está', en: 'here it is' },
+           { es: 'el número', en: 'the number' },
+           { es: 'el banco', en: 'the bank' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué problema tiene Ana?',
+      options: ['No tiene su cartera', 'No tiene pasaporte', 'No habla español'], answer: 0 },
+    { type: 'mcq', q: '¿Cuántos euros hay en la cartera?',
+      options: ['Trece', 'Treinta', 'Trescientos'], answer: 1 },
+    { type: 'short', q: '¿De dónde es Ana? (una palabra)', accept: ['mexicana', 'méxico', 'mexico', 'de méxico'] },
+    { type: 'translate', line: 'Mi documento de identidad, una tarjeta y treinta euros.', model: 'My identity document, a card and thirty euros.' }
+  ]
+},
+
+{
+  id: 'a1-serv-enfermera', title: 'El primer día de trabajo', level: 1, theme: 'servicios',
+  tenses: ['presente'],
+  text: 'Lucía es enfermera en una clínica pequeña. Hoy es su primer día. Su hermano es bombero y su padre trabaja en un banco. Ella también colabora como voluntario en los servicios sociales. Lleva su documento de identidad y el permiso de residencia. A las ocho llega la primera ambulancia y van a urgencias.',
+  gloss: [ { es: 'la enfermera', en: 'the nurse' },
+           { es: 'el bombero', en: 'the firefighter' },
+           { es: 'nerviosa', en: 'nervous' },
+           { es: 'llevar', en: 'to carry, to take with you' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es el trabajo de Lucía?',
+      options: ['Enfermera', 'Bombera', 'Empleada de banco'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde trabaja su padre?',
+      options: ['En un hospital', 'En un banco', 'En correos'], answer: 1 },
+    { type: 'short', q: '¿A qué hora llega la primera ambulancia? (un número)', accept: ['a las ocho', 'ocho', '8', 'las ocho'] },
+    { type: 'translate', line: 'Hoy es su primer día.', model: 'Today is her first day.' }
+  ]
+},
+
+{
+  id: 'a1-salud-farmacia', title: 'En la farmacia', level: 1, theme: 'salud',
+  tenses: ['presente'],
+  text: '—Buenos días. Tengo tos, fiebre y dolor de garganta. —¿Gripe? —Creo que sí. —Puede tomar esta pastilla, una aspirina y estas gotas. Con el termómetro mira la fiebre. —¿Y un antibiótico? —No. Si sigue mal, tiene que ir al hospital o a urgencias. —Gracias. ¿Tiene jabón, crema y un cepillo?',
+  gloss: [ { es: 'la tos', en: 'the cough' },
+           { es: 'estar resfriado', en: 'to have a cold' },
+           { es: 'la pastilla', en: 'the tablet' },
+           { es: 'la receta', en: 'the prescription' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tiene el hombre?',
+      options: ['Tos, fiebre y dolor de garganta', 'Dolor de espalda', 'Una herida'], answer: 0 },
+    { type: 'mcq', q: '¿Necesita un antibiótico?',
+      options: ['Sí', 'No', 'No lo dice'], answer: 1 },
+    { type: 'short', q: '¿Con qué mira la fiebre? (una palabra)', accept: ['el termómetro', 'termómetro', 'termometro'] },
+    { type: 'translate', line: 'Tengo tos, fiebre y dolor de garganta.', model: 'I have a cough, a temperature and a sore throat.' }
+  ]
+},
+
+{
+  id: 'a1-salud-cita', title: 'Pedir cita', level: 1, theme: 'salud',
+  tenses: ['presente'],
+  text: 'Elena llama al centro de salud. —Quiero pedir cita. Tengo fiebre y mucho dolor. —Hay una cita médica a las seis con el enfermero. —¿Necesito el seguro médico? —Sí. Después va usted al análisis. —¿Y el dentista? —Otro día. Elena busca la medicina en la farmacia: una pastilla y una crema.',
+  gloss: [ { es: 'pedir cita', en: 'to make an appointment' },
+           { es: 'el centro de salud', en: 'the health centre' },
+           { es: 'sentirse mal', en: 'to feel ill' },
+           { es: 'el seguro médico', en: 'health insurance' } ],
+  questions: [
+    { type: 'mcq', q: '¿A qué hora es la cita médica?',
+      options: ['A las cinco', 'A las seis', 'A las siete'], answer: 1 },
+    { type: 'mcq', q: '¿Con quién es la cita?',
+      options: ['Con el médico', 'Con el enfermero', 'Con el dentista'], answer: 1 },
+    { type: 'short', q: '¿Dónde busca Elena la medicina? (dos palabras)', accept: ['en la farmacia', 'la farmacia', 'farmacia'] },
+    { type: 'translate', line: 'Quiero pedir cita.', model: 'I want to make an appointment.' }
+  ]
+},
+
+{
+  id: 'a1-salud-vidasana', title: 'Una vida sana', level: 1, theme: 'salud',
+  tenses: ['presente'],
+  text: 'Mi abuelo tiene ochenta años y buena salud. Nunca va al hospital ni a urgencias. No toma medicina: solo una aspirina o una pastilla si tiene fiebre o dolor. Cada año hace un chequeo y un análisis en el centro de salud. No tiene estrés ni ansiedad, y no necesita terapia ni vacuna.',
+  gloss: [ { es: 'llevar una vida sana', en: 'to live healthily' },
+           { es: 'el chequeo', en: 'the check-up' },
+           { es: 'fumar', en: 'to smoke' },
+           { es: 'descansar', en: 'to rest' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántos años tiene el abuelo?',
+      options: ['Setenta', 'Ochenta', 'Noventa'], answer: 1 },
+    { type: 'mcq', q: '¿Qué toma si tiene fiebre?',
+      options: ['Un antibiótico', 'Una aspirina o una pastilla', 'Nada'], answer: 1 },
+    { type: 'short', q: '¿Cada cuánto hace un chequeo? (dos palabras)', accept: ['cada año', 'un año', 'cada ano'] },
+    { type: 'translate', line: 'Mi abuelo tiene ochenta años y buena salud.', model: 'My grandfather is eighty and in good health.' }
+  ]
+},
+
+{
+  id: 'a1-salud-herida', title: 'Un corte en la mano', level: 1, theme: 'salud',
+  tenses: ['presente', 'preterito'],
+  text: 'Pablo tiene una herida en la mano: un corte pequeño y una quemadura. Su hermana busca el alcohol, el agua oxigenada, una tirita y una crema. —¿Vamos a urgencias? —No. —¿Y al centro de salud? —Tampoco. En el baño hay jabón, una toalla y un cepillo. No necesita antibiótico ni pastilla.',
+  gloss: [ { es: 'hacerse una herida', en: 'to injure yourself' },
+           { es: 'el corte', en: 'the cut' },
+           { es: 'la tirita', en: 'the plaster' },
+           { es: 'el agua oxigenada', en: 'hydrogen peroxide' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tiene Pablo en la mano?',
+      options: ['Una herida', 'Una alergia', 'Fiebre'], answer: 0 },
+    { type: 'mcq', q: '¿Van a urgencias?',
+      options: ['Sí', 'No', 'No lo dice'], answer: 1 },
+    { type: 'short', q: '¿Quién busca el alcohol? (dos palabras)', accept: ['su hermana', 'la hermana', 'hermana'] },
+    { type: 'translate', line: 'Pablo tiene una herida en la mano: un corte pequeño y una quemadura.', model: 'Pablo has an injury on his hand: a small cut and a burn.' }
+  ]
+},
+
+{
+  id: 'a1-salud-bano', title: 'En el baño', level: 1, theme: 'salud',
+  tenses: ['presente'],
+  text: 'En mi baño hay una bañera, dos toallas y mucho jabón. Uso champú y gel todos los días. Mi hermana tiene crema, colonia, desodorante y un cepillo para el pelo. Por la mañana me lavo la cara y me lavo los dientes. Después me lavo las manos otra vez.',
+  gloss: [ { es: 'la bañera', en: 'the bath' },
+           { es: 'la toalla', en: 'the towel' },
+           { es: 'el gel', en: 'shower gel' },
+           { es: 'el desodorante', en: 'the deodorant' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántas toallas hay?',
+      options: ['Una', 'Dos', 'Tres'], answer: 1 },
+    { type: 'mcq', q: '¿Qué usa todos los días?',
+      options: ['Champú y gel', 'Colonia', 'Crema'], answer: 0 },
+    { type: 'short', q: '¿Qué se lava por la mañana primero? (dos palabras)', accept: ['la cara', 'cara'] },
+    { type: 'translate', line: 'Por la mañana me lavo la cara y me lavo los dientes.', model: 'In the morning I wash my face and brush my teeth.' }
+  ]
+},
+
+{
+  id: 'a1-salud-alergia', title: 'Una alergia', level: 1, theme: 'salud',
+  tenses: ['presente'],
+  text: '—Tienes los ojos rojos. —Es alergia, no gripe. —¿Tomas algo? —Unas gotas, una pastilla y a veces una aspirina. Con el termómetro veo que no tengo fiebre. —¿Vas al centro de salud? —Si hay mucho dolor, sí, o a urgencias. El enfermero dice que no es una enfermedad grave y que no necesito antibiótico.',
+  gloss: [ { es: 'tener alergia', en: 'to have an allergy' },
+           { es: 'las gotas', en: 'the drops' },
+           { es: 'pedir hora', en: 'to book an appointment' },
+           { es: 'grave', en: 'serious' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tiene?',
+      options: ['Gripe', 'Alergia', 'Fiebre'], answer: 1 },
+    { type: 'mcq', q: '¿Necesita antibiótico?',
+      options: ['Sí', 'No', 'A veces'], answer: 1 },
+    { type: 'short', q: '¿Quién dice que no es grave? (dos palabras)', accept: ['el enfermero', 'enfermero'] },
+    { type: 'translate', line: 'Es alergia, no gripe.', model: 'It is an allergy, not flu.' }
+  ]
+},
+
+{
+  id: 'a1-cuerpo-retrato', title: '¿Quién es?', level: 1, theme: 'cuerpo',
+  tenses: ['presente'],
+  text: '—¿Quién es tu profesor? Tiene el pelo corto y gafas. —Sí. La cara es larga, la nariz grande y los ojos verdes. —¿Y la barba? —Tiene barba. Es alto: piernas largas, brazos largos, hombros anchos. Tiene una mirada tranquila. Cuando habla mueve la cabeza y las manos. El cuello y la espalda siempre rectos.',
+  gloss: [ { es: 'delgado', en: 'slim' },
+           { es: 'moreno', en: 'dark-haired' },
+           { es: 'la barba', en: 'the beard' },
+           { es: 'estar de pie', en: 'to be standing' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo tiene el pelo?',
+      options: ['Largo', 'Corto', 'Rizado'], answer: 1 },
+    { type: 'mcq', q: '¿De qué color tiene los ojos?',
+      options: ['Verdes', 'Oscuros', 'Azules'], answer: 0 },
+    { type: 'short', q: '¿Qué mueve cuando habla? (dos cosas, una vale)', accept: ['la cabeza', 'cabeza', 'las manos', 'manos', 'la cabeza y las manos'] },
+    { type: 'translate', line: 'Tiene el pelo corto y gafas.', model: 'He has short hair and glasses.' }
+  ]
+},
+
+{
+  id: 'a1-cuerpo-gimnasio', title: 'En el gimnasio', level: 1, theme: 'cuerpo',
+  tenses: ['presente'],
+  text: 'Los martes hago deporte. Después me duele todo: las piernas, la espalda, los hombros, el cuello, las rodillas y los tobillos. También los brazos, los codos y las muñecas. El corazón va rápido y los músculos y los huesos dicen basta. Pero la cabeza está contenta y mi postura es mejor.',
+  gloss: [ { es: 'hacer deporte', en: 'to do sport' },
+           { es: 'hacer gimnasia', en: 'to do gym work' },
+           { es: 'los hombros', en: 'the shoulders' },
+           { es: 'la rodilla', en: 'the knee' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué día hace deporte?',
+      options: ['Los lunes', 'Los martes', 'Los domingos'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo está la cabeza?',
+      options: ['Cansada', 'Contenta', 'Mal'], answer: 1 },
+    { type: 'short', q: '¿Qué va rápido? (dos palabras)', accept: ['el corazón', 'corazón', 'el corazon', 'corazon'] },
+    { type: 'translate', line: 'Los martes hago deporte.', model: 'On Tuesdays I do sport.' }
+  ]
+},
+
+{
+  id: 'a1-cuerpo-dentista', title: 'Me duele una muela', level: 1, theme: 'cuerpo',
+  tenses: ['presente'],
+  text: '—¿Qué te pasa? —Me duele una muela y también el oído. —¿Y la garganta? —Mal. Y el estómago. —¿La cabeza? —Un poco. —¿El cuello? —Cuando muevo la cara, sí. —¿Y la espalda? —También. —Tienes el pelo sucio, los ojos rojos y mala cara. Las manos frías y los pies fríos.',
+  gloss: [ { es: 'la muela', en: 'the back tooth' },
+           { es: 'el oído', en: 'the ear (inner)' },
+           { es: 'la garganta', en: 'the throat' },
+           { es: 'el cuello', en: 'the neck' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le duele primero?',
+      options: ['Una muela', 'La cabeza', 'La espalda'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo tiene los ojos?',
+      options: ['Verdes', 'Rojos', 'Grandes'], answer: 1 },
+    { type: 'short', q: '¿Cómo tiene las manos? (una palabra)', accept: ['frías', 'frias', 'frío', 'frio'] },
+    { type: 'translate', line: 'Me duele una muela y también el oído.', model: 'One of my back teeth hurts and my ear does too.' }
+  ]
+},
+
+{
+  id: 'a1-cuerpo-familia', title: 'Una foto de familia', level: 1, theme: 'cuerpo',
+  tenses: ['presente'],
+  text: 'En esta foto está mi familia. Mi padre es calvo: no tiene pelo. Tiene la cara redonda, la nariz grande, la barriga gorda y el cuello corto. Mi madre tiene el pelo largo, los ojos oscuros, la piel morena y las manos pequeñas. Mi hermano tiene los brazos y las piernas largos.',
+  gloss: [ { es: 'calvo', en: 'bald' },
+           { es: 'el pelo liso', en: 'straight hair' },
+           { es: 'la gorra', en: 'the cap' },
+           { es: 'estar sentado', en: 'to be sitting' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es el padre?',
+      options: ['Tiene el pelo largo', 'Es calvo', 'Es moreno'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo tiene la piel la madre?',
+      options: ['Clara', 'Morena', 'Roja'], answer: 1 },
+    { type: 'short', q: '¿Cómo tiene los hombros el hermano? (una palabra)', accept: ['anchos', 'ancho'] },
+    { type: 'translate', line: 'Mi padre es calvo: no tiene pelo.', model: 'My father is bald: he has no hair.' }
+  ]
+},
+
+{
+  id: 'a1-cuerpo-manos', title: 'Manos limpias', level: 1, theme: 'cuerpo',
+  tenses: ['presente', 'preterito'],
+  text: 'Mi hija juega en el parque. Después tiene las manos sucias, la cara sucia, los dedos sucios y hasta el pelo sucio. —¡A lavarse! Tiene los ojos grandes, la nariz pequeña y una mirada alegre. Corre con las piernas rápidas y nunca le duelen los pies, ni las rodillas, ni la espalda.',
+  gloss: [ { es: 'sucio', en: 'dirty' },
+           { es: 'lavarse las manos', en: 'to wash your hands' },
+           { es: 'el pelo rizado', en: 'curly hair' },
+           { es: 'para su edad', en: 'for her age' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde juega la hija?',
+      options: ['En el parque', 'En casa', 'En el jardín'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo tiene los ojos?',
+      options: ['Pequeños', 'Grandes', 'Rojos'], answer: 1 },
+    { type: 'short', q: '¿Cómo tiene la nariz? (una palabra)', accept: ['pequeña', 'pequena', 'pequeno', 'pequeño'] },
+    { type: 'translate', line: 'Después tiene las manos sucias, la cara sucia, los dedos sucios y hasta el pelo sucio.', model: 'Afterwards her hands are dirty, her face is dirty, her fingers are dirty and even her hair is dirty.' }
+  ]
+},
+
+{
+  id: 'a1-cuerpo-paseo', title: 'Un paseo largo', level: 1, theme: 'cuerpo',
+  tenses: ['presente'],
+  text: 'El domingo doy un paseo largo. Al final me duelen los pies, los tobillos y las rodillas. La espalda y el cuello también, porque llevo mochila. Tengo la piel morena y la cara roja. El corazón va rápido, los músculos cansados y los huesos viejos. Pero la cabeza está bien.',
+  gloss: [ { es: 'doy un paseo', en: 'I go for a walk' },
+           { es: 'largo', en: 'long' },
+           { es: 'al final', en: 'at the end' },
+           { es: 'me duelen', en: 'they hurt' },
+           { es: 'los pies', en: 'the feet' },
+           { es: 'los tobillos', en: 'the ankles' },
+           { es: 'las rodillas', en: 'the knees' },
+           { es: 'la espalda', en: 'the back' },
+           { es: 'el cuello', en: 'the neck' },
+           { es: 'llevo mochila', en: 'I\'m carrying a rucksack' },
+           { es: 'la piel', en: 'the skin' },
+           { es: 'morena', en: 'tanned' },
+           { es: 'la cara', en: 'the face' },
+           { es: 'roja', en: 'red' },
+           { es: 'el corazón', en: 'the heart' },
+           { es: 'rápido', en: 'fast' },
+           { es: 'los músculos', en: 'the muscles' },
+           { es: 'cansados', en: 'tired' },
+           { es: 'los huesos', en: 'the bones' },
+           { es: 'la cabeza', en: 'the head' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué día da el paseo?',
+      options: ['El sábado', 'El domingo', 'El lunes'], answer: 1 },
+    { type: 'mcq', q: '¿Por qué le duele la espalda?',
+      options: ['Por la mochila', 'Por el sol', 'Por los zapatos'], answer: 0 },
+    { type: 'short', q: '¿Cómo tiene la piel? (una palabra)', accept: ['morena', 'moreno'] },
+    { type: 'translate', line: 'Al final me duelen los pies, los tobillos y las rodillas.', model: 'At the end my feet, my ankles and my knees hurt.' }
+  ]
 }
+,
+
+{
+  id: 'a1-ident-ficha2', title: 'Una ficha nueva', level: 1, theme: 'identidad',
+  tenses: ['presente', 'preterito'],
+  text: '—Su nombre, por favor. —Ana Ruiz. —¿El segundo apellido? —Soler. —¿La dirección? —Avenida del Paseo, número doce, piso tres. —¿Código postal? —Veintiocho mil. —¿Lugar de nacimiento? —Un pueblo de Alemania. —¿Fecha de nacimiento? —El seis de mayo. —¿Estado civil? —Soltera. —¿Número de teléfono y dirección electrónica? —Sí, un momento.',
+  gloss: [ { es: 'el apellido', en: 'the surname' },
+           { es: 'el código postal', en: 'the postcode' },
+           { es: 'el lugar de nacimiento', en: 'place of birth' },
+           { es: 'el estado civil', en: 'marital status' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es su estado civil?',
+      options: ['Casada', 'Soltera', 'Viuda'], answer: 1 },
+    { type: 'mcq', q: '¿En qué piso vive?',
+      options: ['En el dos', 'En el tres', 'En el doce'], answer: 1 },
+    { type: 'short', q: '¿De dónde es? (una palabra)', accept: ['alemania', 'de alemania', 'alemana'] },
+    { type: 'translate', line: '¿Lugar de nacimiento?', model: 'Place of birth?' }
+  ]
+},
+
+{
+  id: 'a1-ident-bolso', title: '¿Qué llevas en el bolso?', level: 1, theme: 'identidad',
+  tenses: ['presente'],
+  text: 'En mi bolso llevo el pasaporte, el carné, las llaves, la cartera y las gafas. También una agenda pequeña, una tarjeta de crédito, la tarjeta de estudiante y la tarjeta de la biblioteca. Si llueve, llevo el paraguas. Mi marido lleva un maletín con tarjetas de visita y un anillo en el dedo.',
+  gloss: [ { es: 'el bolso', en: 'the handbag' },
+           { es: 'llevo', en: 'I carry / I take with me' },
+           { es: 'el pasaporte', en: 'the passport' },
+           { es: 'el carné', en: 'the ID card' },
+           { es: 'las llaves', en: 'the keys' },
+           { es: 'la cartera', en: 'the wallet' },
+           { es: 'las gafas', en: 'the glasses' },
+           { es: 'también', en: 'also' },
+           { es: 'la agenda', en: 'the diary' },
+           { es: 'pequeña', en: 'small' },
+           { es: 'la tarjeta de crédito', en: 'the credit card' },
+           { es: 'la tarjeta de estudiante', en: 'the student card' },
+           { es: 'la biblioteca', en: 'the library' },
+           { es: 'Si llueve', en: 'If it rains' },
+           { es: 'el paraguas', en: 'the umbrella' },
+           { es: 'mi marido', en: 'my husband' },
+           { es: 'lleva', en: 'he carries' },
+           { es: 'el maletín', en: 'the briefcase' },
+           { es: 'tarjetas de visita', en: 'business cards' },
+           { es: 'un anillo', en: 'a ring' },
+           { es: 'el dedo', en: 'the finger' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué lleva si llueve?',
+      options: ['El paraguas', 'Las gafas', 'La agenda'], answer: 0 },
+    { type: 'mcq', q: '¿Qué lleva su marido?',
+      options: ['Un bolso', 'Un maletín', 'Una agenda'], answer: 1 },
+    { type: 'short', q: '¿Qué lleva en el dedo? (dos palabras)', accept: ['un anillo', 'anillo', 'el anillo'] },
+    { type: 'translate', line: 'En mi bolso llevo el pasaporte, el carné, las llaves, la cartera y las gafas.', model: 'In my bag I carry my passport, my ID card, my keys, my wallet and my glasses.' }
+  ]
+},
+
+{
+  id: 'a1-ident-vecinos', title: 'Los vecinos del piso', level: 1, theme: 'identidad',
+  tenses: ['presente'],
+  text: 'En mi piso hay gente muy diferente. El señor del primer piso es viudo y muy mayor. La señora del segundo está divorciada y tiene un bebé. En el tercero vive un chico japonés y una chica marroquí. Yo soy española y mi marido es mexicano. No somos del mismo país, pero somos buenos vecinos.',
+  gloss: [ { es: 'mi piso', en: 'my building / my flat' },
+           { es: 'la gente', en: 'the people' },
+           { es: 'diferente', en: 'different' },
+           { es: 'el señor', en: 'the gentleman' },
+           { es: 'el primer piso', en: 'the first floor' },
+           { es: 'viudo', en: 'widowed' },
+           { es: 'mayor', en: 'elderly' },
+           { es: 'la señora', en: 'the lady' },
+           { es: 'el segundo', en: 'the second (floor)' },
+           { es: 'divorciada', en: 'divorced' },
+           { es: 'un bebé', en: 'a baby' },
+           { es: 'el tercero', en: 'the third (floor)' },
+           { es: 'vive', en: 'lives' },
+           { es: 'japonés', en: 'Japanese' },
+           { es: 'marroquí', en: 'Moroccan' },
+           { es: 'española', en: 'Spanish (a woman)' },
+           { es: 'mi marido', en: 'my husband' },
+           { es: 'mexicano', en: 'Mexican (a man)' },
+           { es: 'el mismo país', en: 'the same country' },
+           { es: 'los vecinos', en: 'the neighbours' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo está la señora del segundo?',
+      options: ['Casada', 'Divorciada', 'Viuda'], answer: 1 },
+    { type: 'mcq', q: '¿De dónde es el marido?',
+      options: ['De España', 'De México', 'De Japón'], answer: 1 },
+    { type: 'short', q: '¿Quién vive en el primer piso? (dos palabras)', accept: ['un señor', 'el señor', 'un viudo', 'señor'] },
+    { type: 'translate', line: 'El señor del primer piso es viudo y muy mayor.', model: 'The gentleman on the first floor is widowed and very elderly.' }
+  ]
+},
+
+{
+  id: 'a1-ident-edad', title: 'La edad de cada uno', level: 1, theme: 'identidad',
+  tenses: ['presente'],
+  text: 'En mi familia hay un bebé, un adolescente y una persona mayor. El bebé es un recién nacido. El joven tiene quince años. Mi abuelo es un anciano de noventa. Mi hermana es una chica de veinte y mi hermano un chico de trece. Yo soy el mayor de los tres, y el señor mayor del piso de arriba es mi abuelo.',
+  gloss: [ { es: 'mi familia', en: 'my family' },
+           { es: 'un bebé', en: 'a baby' },
+           { es: 'un adolescente', en: 'a teenager' },
+           { es: 'una persona mayor', en: 'an elderly person' },
+           { es: 'el recién nacido', en: 'the newborn' },
+           { es: 'el joven', en: 'the young man' },
+           { es: 'tiene quince años', en: 'he is fifteen' },
+           { es: 'mi abuelo', en: 'my grandfather' },
+           { es: 'un anciano', en: 'an old man' },
+           { es: 'noventa', en: 'ninety' },
+           { es: 'mi hermana', en: 'my sister' },
+           { es: 'una chica', en: 'a girl' },
+           { es: 'veinte', en: 'twenty' },
+           { es: 'mi hermano', en: 'my brother' },
+           { es: 'un chico', en: 'a boy' },
+           { es: 'trece', en: 'thirteen' },
+           { es: 'el mayor', en: 'the eldest' },
+           { es: 'el piso de arriba', en: 'the flat upstairs' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántos años tiene el joven?',
+      options: ['Trece', 'Quince', 'Veinte'], answer: 1 },
+    { type: 'mcq', q: '¿Cuántos años tiene el abuelo?',
+      options: ['Ochenta', 'Noventa', 'Setenta'], answer: 1 },
+    { type: 'short', q: '¿Cuántos años tiene la chica? (un número)', accept: ['veinte', '20'] },
+    { type: 'translate', line: 'En mi familia hay un bebé, un adolescente y una persona mayor.', model: 'In my family there is a baby, a teenager and an elderly person.' }
+  ]
+},
+
+{
+  id: 'a1-ident-carta', title: 'Una dirección nueva', level: 1, theme: 'identidad',
+  tenses: ['presente'],
+  text: 'Escribo mi dirección nueva: calle de la Plaza, número ocho, piso dos. El código postal es cuarenta y uno mil. Mi dirección electrónica lleva una arroba. El prefijo del país es el treinta y cuatro y mi número de teléfono tiene nueve números. El pueblo es pequeño y la avenida corta.',
+  gloss: [ { es: 'Escribo', en: 'I write' },
+           { es: 'la dirección', en: 'the address' },
+           { es: 'nueva', en: 'new' },
+           { es: 'la calle', en: 'the street' },
+           { es: 'la plaza', en: 'the square' },
+           { es: 'el número', en: 'the number' },
+           { es: 'el piso', en: 'the floor / the flat' },
+           { es: 'el código postal', en: 'the postcode' },
+           { es: 'cuarenta y uno mil', en: 'forty-one thousand' },
+           { es: 'la dirección electrónica', en: 'the email address' },
+           { es: 'lleva', en: 'it has / it carries' },
+           { es: 'la arroba', en: 'the @ sign' },
+           { es: 'el prefijo', en: 'the dialling code' },
+           { es: 'el país', en: 'the country' },
+           { es: 'el teléfono', en: 'the telephone' },
+           { es: 'el pueblo', en: 'the village' },
+           { es: 'pequeño', en: 'small' },
+           { es: 'la avenida', en: 'the avenue' },
+           { es: 'corta', en: 'short' } ],
+  questions: [
+    { type: 'mcq', q: '¿En qué piso vive?',
+      options: ['En el ocho', 'En el dos', 'En el uno'], answer: 1 },
+    { type: 'mcq', q: '¿Cuántos números tiene el teléfono?',
+      options: ['Ocho', 'Nueve', 'Diez'], answer: 1 },
+    { type: 'short', q: '¿Cuál es el prefijo del país? (un número)', accept: ['treinta y cuatro', '34'] },
+    { type: 'translate', line: 'Escribo mi dirección nueva: calle de la Plaza, número ocho, piso dos.', model: 'I am writing my new address: Plaza Street, number eight, second floor.' }
+  ]
+},
+
+{
+  id: 'a1-ident-joyas', title: 'Un regalo', level: 1, theme: 'identidad',
+  tenses: ['presente'],
+  text: 'Para el cumpleaños de mi madre busco una joya. Hay anillos, pendientes, pulseras y collares. Una señora mayor mira un anillo. Un chico joven compra unos pendientes para una chica. Yo llevo la cartera, la tarjeta de crédito y el carné. Al final compro una pulsera y pago con tarjeta.',
+  gloss: [ { es: 'la joya', en: 'the piece of jewellery' },
+           { es: 'los pendientes', en: 'the earrings' },
+           { es: 'la pulsera', en: 'the bracelet' },
+           { es: 'el collar', en: 'the necklace' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué compra al final?',
+      options: ['Un anillo', 'Una pulsera', 'Un collar'], answer: 1 },
+    { type: 'mcq', q: '¿Para quién es el regalo?',
+      options: ['Para su madre', 'Para una chica', 'Para su hermana'], answer: 0 },
+    { type: 'short', q: '¿Cómo paga? (dos palabras)', accept: ['con tarjeta', 'con la tarjeta', 'tarjeta'] },
+    { type: 'translate', line: 'Hay anillos, pendientes, pulseras y collares.', model: 'There are rings, earrings, bracelets and necklaces.' }
+  ]
+},
+
+{
+  id: 'a1-car-clase', title: 'Mis compañeros', level: 1, theme: 'caracter',
+  tenses: ['presente'],
+  text: 'En mi clase hay de todo. Pedro es simpático y muy hablador. Marta es tímida y reservada, pero muy inteligente. Luis es trabajador y serio; nunca está cansado. Ana es alegre, sociable y generosa. Hay un chico antipático y un poco arrogante, y una chica egoísta. Yo soy paciente y bastante optimista.',
+  gloss: [ { es: 'hablador', en: 'talkative' },
+           { es: 'reservado', en: 'reserved' },
+           { es: 'generoso', en: 'generous' },
+           { es: 'arrogante', en: 'arrogant' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es Marta?',
+      options: ['Habladora', 'Tímida y reservada', 'Antipática'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo es Luis?',
+      options: ['Alegre', 'Trabajador y serio', 'Egoísta'], answer: 1 },
+    { type: 'short', q: '¿Cómo es Ana? (una palabra)', accept: ['alegre', 'sociable', 'generosa'] },
+    { type: 'translate', line: 'Marta es tímida y reservada, pero muy inteligente.', model: 'Marta is shy and reserved, but very intelligent.' }
+  ]
+},
+
+{
+  id: 'a1-car-hoy', title: 'Mucho carácter', level: 1, theme: 'caracter',
+  tenses: ['presente'],
+  text: 'Mi familia tiene mucho carácter. Mi hermana es alegre, sociable y muy habladora. Mi padre es serio, trabajador y bastante conservador. Mi madre es paciente, tolerante y agradable con todos. Mi hermano es tímido, reservado e inseguro, pero muy sincero. Yo soy impaciente y un poco vago, aunque amable y generoso.',
+  gloss: [ { es: 'mucho carácter', en: 'a lot of character' },
+           { es: 'mi hermana', en: 'my sister' },
+           { es: 'alegre', en: 'cheerful' },
+           { es: 'habladora', en: 'talkative' },
+           { es: 'mi padre', en: 'my father' },
+           { es: 'serio', en: 'serious' },
+           { es: 'trabajador', en: 'hard-working' },
+           { es: 'bastante', en: 'quite' },
+           { es: 'conservador', en: 'conservative' },
+           { es: 'mi madre', en: 'my mother' },
+           { es: 'paciente', en: 'patient' },
+           { es: 'tolerante', en: 'tolerant' },
+           { es: 'agradable', en: 'pleasant' },
+           { es: 'mi hermano', en: 'my brother' },
+           { es: 'tímido', en: 'shy' },
+           { es: 'reservado', en: 'reserved' },
+           { es: 'inseguro', en: 'insecure' },
+           { es: 'sincero', en: 'sincere' },
+           { es: 'impaciente', en: 'impatient' },
+           { es: 'vago', en: 'lazy' },
+           { es: 'aunque', en: 'although' },
+           { es: 'amable', en: 'kind' },
+           { es: 'generoso', en: 'generous' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es la hermana?',
+      options: ['Seria', 'Alegre y sociable', 'Tímida'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo es el hermano?',
+      options: ['Hablador', 'Tímido y reservado', 'Arrogante'], answer: 1 },
+    { type: 'short', q: '¿Cómo es la madre con todos? (una palabra)', accept: ['paciente', 'tolerante', 'agradable'] },
+    { type: 'translate', line: 'Mi padre es serio, trabajador y bastante conservador.', model: 'My father is serious, hard-working and quite conservative.' }
+  ]
+},
+
+{
+  id: 'a1-car-amigos', title: 'Dos amigos diferentes', level: 1, theme: 'caracter',
+  tenses: ['presente'],
+  text: 'Tengo dos amigos muy diferentes. Carlos es abierto, sociable y tiene mucho carácter. Es impaciente, pero muy generoso y amable. Diego es introvertido y reservado. Es paciente, tolerante y muy sincero. Carlos tiene sentido del humor; Diego es más serio. Los dos son inteligentes y ninguno es egoísta ni antipático.',
+  gloss: [ { es: 'dos amigos', en: 'two friends' },
+           { es: 'diferentes', en: 'different' },
+           { es: 'abierto', en: 'outgoing' },
+           { es: 'sociable', en: 'sociable' },
+           { es: 'mucho carácter', en: 'a strong personality' },
+           { es: 'impaciente', en: 'impatient' },
+           { es: 'generoso', en: 'generous' },
+           { es: 'amable', en: 'kind' },
+           { es: 'introvertido', en: 'introverted' },
+           { es: 'reservado', en: 'reserved' },
+           { es: 'paciente', en: 'patient' },
+           { es: 'tolerante', en: 'tolerant' },
+           { es: 'sincero', en: 'sincere' },
+           { es: 'sentido del humor', en: 'a sense of humour' },
+           { es: 'serio', en: 'serious' },
+           { es: 'inteligentes', en: 'intelligent' },
+           { es: 'ninguno', en: 'neither of them' },
+           { es: 'egoísta', en: 'selfish' },
+           { es: 'antipático', en: 'unfriendly' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es Diego?',
+      options: ['Abierto y sociable', 'Introvertido y reservado', 'Impaciente'], answer: 1 },
+    { type: 'mcq', q: '¿Quién tiene sentido del humor?',
+      options: ['Carlos', 'Diego', 'Los dos'], answer: 0 },
+    { type: 'short', q: '¿Cómo son los dos? (una palabra)', accept: ['inteligentes', 'inteligente'] },
+    { type: 'translate', line: 'Carlos es abierto, sociable y tiene mucho carácter.', model: 'Carlos is outgoing, sociable and has a strong personality.' }
+  ]
+},
+
+{
+  id: 'a1-car-miedo', title: 'Mi hermano pequeño', level: 1, theme: 'caracter',
+  tenses: ['presente'],
+  text: 'Mi hermano pequeño es muy tímido, reservado e inseguro. No es nada hablador con la gente nueva. Pero con nosotros es alegre, sociable, generoso y muy sincero. Nunca es egoísta ni antipático. Es un niño amable, paciente y tolerante. Yo soy más impaciente y a veces arrogante, la verdad.',
+  gloss: [ { es: 'mi hermano pequeño', en: 'my little brother' },
+           { es: 'tímido', en: 'shy' },
+           { es: 'reservado', en: 'reserved' },
+           { es: 'inseguro', en: 'insecure' },
+           { es: 'No es nada', en: 'He is not at all' },
+           { es: 'hablador', en: 'talkative' },
+           { es: 'la gente', en: 'people' },
+           { es: 'alegre', en: 'cheerful' },
+           { es: 'sociable', en: 'sociable' },
+           { es: 'generoso', en: 'generous' },
+           { es: 'sincero', en: 'sincere' },
+           { es: 'Nunca', en: 'Never' },
+           { es: 'egoísta', en: 'selfish' },
+           { es: 'ni', en: 'nor' },
+           { es: 'antipático', en: 'unfriendly' },
+           { es: 'amable', en: 'kind' },
+           { es: 'paciente', en: 'patient' },
+           { es: 'tolerante', en: 'tolerant' },
+           { es: 'impaciente', en: 'impatient' },
+           { es: 'a veces', en: 'sometimes' },
+           { es: 'la verdad', en: 'to be honest' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es con la gente nueva?',
+      options: ['Habladora', 'Tímida', 'Antipática'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo es con la familia?',
+      options: ['Egoísta', 'Alegre y sociable', 'Arrogante'], answer: 1 },
+    { type: 'short', q: '¿Cómo se describe quien habla? (una palabra)', accept: ['impaciente', 'arrogante'] },
+    { type: 'translate', line: 'Mi hermano pequeño es muy tímido, reservado e inseguro.', model: 'My little brother is very shy, reserved and insecure.' }
+  ]
+},
+
+{
+  id: 'a1-car-jefe', title: 'Un jefe tranquilo', level: 1, theme: 'caracter',
+  tenses: ['presente', 'preterito'],
+  text: 'Mi jefe es una persona muy tranquila. Nunca está enfadado ni nervioso. Es amable, agradable y tolerante con todos. Es trabajador y serio, pero también alegre. No es arrogante ni antipático. Cuando hay estrés, él está contento y con paciencia. Yo estoy preocupado a veces, pero con él nunca estoy estresado.',
+  gloss: [ { es: 'tranquilo', en: 'calm' },
+           { es: 'agradable', en: 'pleasant' },
+           { es: 'tolerante', en: 'tolerant' },
+           { es: 'la paciencia', en: 'patience' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es el jefe?',
+      options: ['Nervioso', 'Tranquilo', 'Arrogante'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo está cuando hay estrés?',
+      options: ['Enfadado', 'Contento', 'Preocupado'], answer: 1 },
+    { type: 'short', q: '¿Cómo es con todos? (una palabra)', accept: ['amable', 'agradable', 'tolerante'] },
+    { type: 'translate', line: 'Nunca está enfadado ni nervioso.', model: 'He is never angry or nervous.' }
+  ]
+},
+
+{
+  id: 'a1-car-cambio', title: 'En el trabajo', level: 1, theme: 'caracter',
+  tenses: ['presente', 'preterito'],
+  text: 'En el trabajo hay de todo. El jefe es serio pero amable y muy tolerante. Una compañera es optimista, alegre y habladora. Otro es reservado, introvertido y bastante vago. Hay un chico arrogante y una chica egoísta, pero también gente generosa, sincera y trabajadora. Con paciencia, todos somos agradables.',
+  gloss: [ { es: 'el jefe', en: 'the boss' },
+           { es: 'la compañera', en: 'the colleague' },
+           { es: 'introvertido', en: 'introverted' },
+           { es: 'la paciencia', en: 'patience' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es el jefe?',
+      options: ['Arrogante', 'Serio pero amable', 'Vago'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo es la compañera?',
+      options: ['Reservada', 'Optimista y alegre', 'Egoísta'], answer: 1 },
+    { type: 'short', q: '¿Cómo es el otro compañero? (una palabra)', accept: ['reservado', 'introvertido', 'vago'] },
+    { type: 'translate', line: 'El jefe es serio pero amable y muy tolerante.', model: 'The boss is serious but kind and very tolerant.' }
+  ]
+}
+,
+
+{
+  id: 'a1-medios-casa', title: 'Los medios en casa', level: 1, theme: 'medios',
+  tenses: ['presente'],
+  text: 'En casa vemos las noticias en la televisión. Mi padre escucha la radio y compra el periódico en el quiosco. Mi madre ve una serie: hoy es el capítulo cinco. Mi hermano ve un documental en otro canal. Hay muchos anuncios. El presentador habla rápido y no entiendo la noticia.',
+  gloss: [ { es: 'el quiosco', en: 'the newsstand' },
+           { es: 'el capítulo', en: 'the episode' },
+           { es: 'el canal', en: 'the channel' },
+           { es: 'el presentador', en: 'the presenter' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde compra el periódico el padre?',
+      options: ['En el quiosco', 'En la tienda', 'En casa'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ve el hermano?',
+      options: ['Una serie', 'Un documental', 'Las noticias'], answer: 1 },
+    { type: 'short', q: '¿Qué capítulo ve la madre? (un número)', accept: ['cinco', '5', 'el cinco'] },
+    { type: 'translate', line: 'En casa vemos las noticias en la televisión.', model: 'At home we watch the news on television.' }
+  ]
+},
+
+{
+  id: 'a1-medios-carta', title: 'Una carta al buzón', level: 1, theme: 'medios',
+  tenses: ['presente'],
+  text: 'Escribo una carta. Pongo el sobre, el sello y la firma. Arriba escribo el remitente y abajo el destinatario. Al final añado una posdata y una despedida corta. Después voy al buzón de la plaza. También mando un correo: la dirección lleva una arroba, un guión y un punto.',
+  gloss: [ { es: 'el sobre', en: 'the envelope' },
+           { es: 'el remitente', en: 'the sender' },
+           { es: 'el destinatario', en: 'the addressee' },
+           { es: 'la posdata', en: 'the postscript' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué escribe arriba?',
+      options: ['El remitente', 'El destinatario', 'La firma'], answer: 0 },
+    { type: 'mcq', q: '¿Adónde va después?',
+      options: ['Al quiosco', 'Al buzón', 'A la cabina'], answer: 1 },
+    { type: 'short', q: '¿Qué lleva la dirección de correo? (una palabra)', accept: ['una arroba', 'arroba', 'la arroba'] },
+    { type: 'translate', line: 'Pongo el sobre, el sello y la firma.', model: 'I put on the envelope, the stamp and the signature.' }
+  ]
+},
+
+{
+  id: 'a1-medios-telefono', title: 'Una llamada', level: 1, theme: 'medios',
+  tenses: ['presente'],
+  text: 'Mi teléfono no tiene batería. Busco una cabina, pero ya no hay. La línea está mal y la llamada se corta. Al final mando un mensaje por el chat. Mi amiga ve el comentario y responde en el foro. Hay muchas opiniones, un virus en un anuncio y un antivirus nuevo.',
+  gloss: [ { es: 'la batería', en: 'the battery' },
+           { es: 'la cabina', en: 'the phone box' },
+           { es: 'la línea', en: 'the line' },
+           { es: 'el foro', en: 'the forum' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué problema tiene el teléfono?',
+      options: ['No tiene batería', 'Está roto', 'No es suyo'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo manda el mensaje?',
+      options: ['Por la cabina', 'Por el chat', 'Por carta'], answer: 1 },
+    { type: 'short', q: '¿Qué hay en un anuncio del foro? (una palabra)', accept: ['un virus', 'virus', 'el virus'] },
+    { type: 'translate', line: 'Mi teléfono no tiene batería.', model: 'My phone has no battery.' }
+  ]
+},
+
+{
+  id: 'a1-medios-prensa', title: 'La prensa del domingo', level: 1, theme: 'medios',
+  tenses: ['presente'],
+  text: 'Los domingos compro la prensa. El periódico trae un suplemento y la cartelera del cine. Leo la editorial, una entrevista larga y una opinión sobre la televisión. La periodista escribe muy bien. Hay un debate en la radio y un documental por la noche en otra emisora. Las noticias son tristes.',
+  gloss: [ { es: 'el suplemento', en: 'the supplement' },
+           { es: 'la cartelera', en: 'the listings' },
+           { es: 'la editorial', en: 'the editorial' },
+           { es: 'la emisora', en: 'the station' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué día compra la prensa?',
+      options: ['El sábado', 'El domingo', 'El lunes'], answer: 1 },
+    { type: 'mcq', q: '¿Quién escribe muy bien?',
+      options: ['El presentador', 'La periodista', 'El locutor'], answer: 1 },
+    { type: 'short', q: '¿Qué trae el periódico además del suplemento? (una palabra)', accept: ['la cartelera', 'cartelera'] },
+    { type: 'translate', line: 'Los domingos compro la prensa.', model: 'On Sundays I buy the papers.' }
+  ]
+},
+
+{
+  id: 'a1-medios-serie', title: 'Mi serie favorita', level: 1, theme: 'medios',
+  tenses: ['presente'],
+  text: 'Veo una serie española. Cada episodio dura una hora. No es una telenovela ni un culebrón: es un drama bueno. En la televisión hay mucha telebasura, pero esta cadena tiene buenos documentales. Uso un buscador para ver la cartelera. El antivirus funciona bien y no hay virus.',
+  gloss: [ { es: 'el episodio', en: 'the episode' },
+           { es: 'el culebrón', en: 'the soap opera' },
+           { es: 'la telebasura', en: 'trash TV' },
+           { es: 'el buscador', en: 'the search engine' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto dura cada episodio?',
+      options: ['Media hora', 'Una hora', 'Dos horas'], answer: 1 },
+    { type: 'mcq', q: '¿Qué tiene esta cadena?',
+      options: ['Telebasura', 'Buenos documentales', 'Culebrones'], answer: 1 },
+    { type: 'short', q: '¿Qué usa para ver la cartelera? (una palabra)', accept: ['un buscador', 'buscador', 'el buscador'] },
+    { type: 'translate', line: 'Veo una serie española.', model: 'I watch a Spanish series.' }
+  ]
+},
+
+{
+  id: 'a1-medios-radio-coche', title: 'La radio del coche', level: 1, theme: 'medios',
+  tenses: ['presente'],
+  text: 'En el coche escucho la radio. El locutor de la emisora pone música y las noticias cada hora. Hay una entrevista con una periodista y después un debate. Mi padre prefiere la televisión; yo prefiero la radio porque no hay anuncios largos. La cadena tiene un programa bueno a las ocho.',
+  gloss: [ { es: 'el locutor', en: 'the presenter' },
+           { es: 'la emisora', en: 'the radio station' },
+           { es: 'el debate', en: 'the debate' },
+           { es: 'la cadena', en: 'the network' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde escucha la radio?',
+      options: ['En casa', 'En el coche', 'En el trabajo'], answer: 1 },
+    { type: 'mcq', q: '¿Qué prefiere el padre?',
+      options: ['La radio', 'La televisión', 'El periódico'], answer: 1 },
+    { type: 'short', q: '¿A qué hora es el programa bueno? (un número)', accept: ['a las ocho', 'ocho', '8', 'las ocho'] },
+    { type: 'translate', line: 'En el coche escucho la radio.', model: 'In the car I listen to the radio.' }
+  ]
+},
+
+{
+  id: 'a1-eco-facturas', title: 'Las facturas del mes', level: 1, theme: 'economia',
+  tenses: ['presente', 'preterito'],
+  text: 'Cada mes pago el alquiler, la factura de la energía y el seguro del coche. El salario no es grande y no hay mucho ahorro. Tengo un préstamo pequeño y una deuda con el banco. Hago un presupuesto: los impuestos, la comida y el transporte. La economía de casa es difícil.',
+  gloss: [ { es: 'el alquiler', en: 'the rent' },
+           { es: 'el ahorro', en: 'savings' },
+           { es: 'el préstamo', en: 'the loan' },
+           { es: 'el presupuesto', en: 'the budget' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué paga cada mes?',
+      options: ['El alquiler y la factura', 'Solo el alquiler', 'Nada'], answer: 0 },
+    { type: 'mcq', q: '¿Con quién tiene una deuda?',
+      options: ['Con un amigo', 'Con el banco', 'Con la empresa'], answer: 1 },
+    { type: 'short', q: '¿Cómo es la economía de casa? (una palabra)', accept: ['difícil', 'dificil'] },
+    { type: 'translate', line: 'Cada mes pago el alquiler, la factura de la energía y el seguro del coche.', model: 'Every month I pay the rent, the energy bill and the car insurance.' }
+  ]
+},
+
+{
+  id: 'a1-eco-pueblo', title: 'El trabajo del pueblo', level: 1, theme: 'economia',
+  tenses: ['presente'],
+  text: 'En mi pueblo hay agricultura y ganadería. Mi tío es agricultor y tiene un cerdo y un cordero. Otro vecino es pescador y trabaja en la pesca. También hay industria y construcción. El comercio es pequeño: una tienda y poco más. Muchos jóvenes buscan trabajo en la capital.',
+  gloss: [ { es: 'la ganadería', en: 'livestock farming' },
+           { es: 'el agricultor', en: 'the farmer' },
+           { es: 'el pescador', en: 'the fisherman' },
+           { es: 'el comercio', en: 'trade, shops' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué es el tío?',
+      options: ['Pescador', 'Agricultor', 'Empleado'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo es el comercio?',
+      options: ['Grande', 'Pequeño', 'No hay'], answer: 1 },
+    { type: 'short', q: '¿Dónde buscan trabajo los jóvenes? (dos palabras)', accept: ['en la capital', 'la capital', 'capital'] },
+    { type: 'translate', line: 'En mi pueblo hay agricultura y ganadería.', model: 'In my village there is farming and livestock.' }
+  ]
+},
+
+{
+  id: 'a1-eco-anuncio', title: 'Un anuncio en la calle', level: 1, theme: 'economia',
+  tenses: ['presente'],
+  text: 'En la calle hay un cartel grande y un folleto con el catálogo. Es publicidad de una compañía nueva. El anuncio dice que la venta empieza hoy. Un empleado da folletos. Hay una exhibición pequeña de la producción y de la fabricación. La organización es buena y el márquetin también.',
+  gloss: [ { es: 'el cartel', en: 'the poster' },
+           { es: 'el folleto', en: 'the leaflet' },
+           { es: 'la venta', en: 'the sale' },
+           { es: 'la fabricación', en: 'manufacturing' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué hay en la calle?',
+      options: ['Un cartel y un folleto', 'Una tienda', 'Un mercado'], answer: 0 },
+    { type: 'mcq', q: '¿Cuándo empieza la venta?',
+      options: ['Mañana', 'Hoy', 'El lunes'], answer: 1 },
+    { type: 'short', q: '¿Quién da folletos? (dos palabras)', accept: ['un empleado', 'el empleado', 'empleado'] },
+    { type: 'translate', line: 'Es publicidad de una compañía nueva.', model: 'It is advertising for a new company.' }
+  ]
+},
+
+{
+  id: 'a1-eco-pobreza', title: 'Ricos y pobres', level: 1, theme: 'economia',
+  tenses: ['presente'],
+  text: 'En muchos países hay pobreza y también riqueza. Hay gente pobre sin trabajo y sin ahorro. La economía crece, pero el salario no. Una economista habla en la radio de la jubilación, de los impuestos y de la deuda. Dice que la industria y el comercio tienen que dar más trabajo.',
+  gloss: [ { es: 'la pobreza', en: 'poverty' },
+           { es: 'la riqueza', en: 'wealth' },
+           { es: 'la jubilación', en: 'retirement' },
+           { es: 'crecer', en: 'to grow' } ],
+  questions: [
+    { type: 'mcq', q: '¿De qué habla la economista?',
+      options: ['De la jubilación y los impuestos', 'Del cine', 'Del tiempo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué crece?',
+      options: ['El salario', 'La economía', 'El ahorro'], answer: 1 },
+    { type: 'short', q: '¿Qué tienen que dar más trabajo? (dos palabras)', accept: ['la industria y el comercio', 'la industria', 'el comercio', 'industria', 'comercio'] },
+    { type: 'translate', line: 'En muchos países hay pobreza y también riqueza.', model: 'In many countries there is poverty and also wealth.' }
+  ]
+},
+
+{
+  id: 'a1-eco-transporte', title: 'Energía y transportes', level: 1, theme: 'economia',
+  tenses: ['presente', 'preterito'],
+  text: 'La energía es cara este año y el transporte también. La compañía sube el precio y la factura llega más alta. Para la exportación y la importación hace falta el puerto. La producción de la industria baja y el comercio pequeño tiene una deuda. El presupuesto del pueblo es pobre.',
+  gloss: [ { es: 'la energía', en: 'energy' },
+           { es: 'la exportación', en: 'exports' },
+           { es: 'la importación', en: 'imports' },
+           { es: 'hacer falta', en: 'to be needed' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué es caro este año?',
+      options: ['La energía', 'La comida', 'La ropa'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hace falta para la exportación?',
+      options: ['El puerto', 'El aeropuerto', 'La estación'], answer: 0 },
+    { type: 'short', q: '¿Cómo es el presupuesto del pueblo? (una palabra)', accept: ['pobre'] },
+    { type: 'translate', line: 'La energía es cara este año y el transporte también.', model: 'Energy is expensive this year and so is transport.' }
+  ]
+},
+
+{
+  id: 'a1-eco-trabajo', title: 'Un empleado nuevo', level: 1, theme: 'economia',
+  tenses: ['presente'],
+  text: 'La compañía busca un empleado. El anuncio está en el catálogo y en un cartel. El salario no es alto, pero hay un seguro y una jubilación buena. La organización es grande y la producción crece. El empleado nuevo hace el presupuesto, mira las facturas y habla con el economista.',
+  gloss: [ { es: 'el empleado', en: 'the employee' },
+           { es: 'el seguro', en: 'the insurance' },
+           { es: 'la organización', en: 'the organisation' },
+           { es: 'la factura', en: 'the invoice' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es el salario?',
+      options: ['Alto', 'No muy alto', 'No lo dice'], answer: 1 },
+    { type: 'mcq', q: '¿Qué crece?',
+      options: ['El salario', 'La producción', 'La deuda'], answer: 1 },
+    { type: 'short', q: '¿Con quién habla el empleado nuevo? (dos palabras)', accept: ['el economista', 'con el economista', 'economista'] },
+    { type: 'translate', line: 'La compañía busca un empleado.', model: 'The company is looking for an employee.' }
+  ]
+},
+
+{
+  id: 'a1-pol-reunion-distrito', title: 'En el ayuntamiento', level: 1, theme: 'politica',
+  tenses: ['presente'],
+  text: 'Voy al ayuntamiento de mi distrito. Hay una reunión sobre la educación y el progreso del barrio. Un político habla de la ley nueva y de los derechos y deberes del ciudadano. Una juez escucha. El ministro no viene. Después hay una manifestación pequeña y tranquila en la plaza.',
+  gloss: [ { es: 'el ayuntamiento', en: 'the town hall' },
+           { es: 'el distrito', en: 'the district' },
+           { es: 'los deberes', en: 'duties' },
+           { es: 'la manifestación', en: 'the demonstration' } ],
+  questions: [
+    { type: 'mcq', q: '¿De qué habla el político?',
+      options: ['De la ley nueva', 'Del cine', 'Del tiempo'], answer: 0 },
+    { type: 'mcq', q: '¿Quién no viene?',
+      options: ['La juez', 'El ministro', 'El ciudadano'], answer: 1 },
+    { type: 'short', q: '¿Dónde es la manifestación? (dos palabras)', accept: ['en la plaza', 'la plaza', 'plaza'] },
+    { type: 'translate', line: 'Voy al ayuntamiento de mi distrito.', model: 'I am going to my district\'s town hall.' }
+  ]
+},
+
+{
+  id: 'a1-pol-reyes', title: 'Un país con rey', level: 1, theme: 'politica',
+  tenses: ['presente'],
+  text: 'España es una monarquía: hay un rey y una reina, y también un príncipe y una princesa. El gobierno está en la capital. El presidente vive allí y el parlamento también. Otros países son una república. Hay democracia, no dictadura. La constitución es del año setenta y ocho.',
+  gloss: [ { es: 'la monarquía', en: 'the monarchy' },
+           { es: 'el parlamento', en: 'parliament' },
+           { es: 'la república', en: 'the republic' },
+           { es: 'la constitución', en: 'the constitution' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué es España?',
+      options: ['Una república', 'Una monarquía', 'Una dictadura'], answer: 1 },
+    { type: 'mcq', q: '¿Dónde está el gobierno?',
+      options: ['En el pueblo', 'En la capital', 'En la provincia'], answer: 1 },
+    { type: 'short', q: '¿De qué año es la constitución? (un número)', accept: ['setenta y ocho', '78', '1978'] },
+    { type: 'translate', line: 'El gobierno está en la capital.', model: 'The government is in the capital.' }
+  ]
+},
+
+{
+  id: 'a1-pol-paz', title: 'Guerra y paz', level: 1, theme: 'politica',
+  tenses: ['presente'],
+  text: 'En las noticias hablan de una guerra lejos de aquí. Hay soldados, un general y mucho ejército. Un embajador va a la embajada y el cónsul al consulado. La gente quiere la paz. Hay una manifestación grande y muchos ciudadanos con carteles. El presidente habla en el congreso.',
+  gloss: [ { es: 'el soldado', en: 'the soldier' },
+           { es: 'el ejército', en: 'the army' },
+           { es: 'la embajada', en: 'the embassy' },
+           { es: 'el congreso', en: 'congress' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué quiere la gente?',
+      options: ['La guerra', 'La paz', 'Una ley'], answer: 1 },
+    { type: 'mcq', q: '¿Dónde habla el presidente?',
+      options: ['En la embajada', 'En el congreso', 'En el ayuntamiento'], answer: 1 },
+    { type: 'short', q: '¿Adónde va el cónsul? (dos palabras)', accept: ['al consulado', 'el consulado', 'consulado'] },
+    { type: 'translate', line: 'La gente quiere la paz.', model: 'People want peace.' }
+  ]
+},
+
+{
+  id: 'a1-pol-votar-nacion', title: 'Un día de votar', level: 1, theme: 'politica',
+  tenses: ['presente'],
+  text: 'Hoy vota la nación. Hay un partido socialista, uno comunista, uno liberal y uno republicano. Cada ciudadano tiene derechos. La política del país no es fácil. En mi provincia gana el candidato del ayuntamiento. El senado y el parlamento cambian. No hay ninguna manifestación: todo tranquilo.',
+  gloss: [ { es: 'votar', en: 'to vote' },
+           { es: 'la nación', en: 'the nation' },
+           { es: 'la provincia', en: 'the province' },
+           { es: 'el senado', en: 'the senate' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pasa hoy?',
+      options: ['Vota la nación', 'Hay una guerra', 'Hay una manifestación'], answer: 0 },
+    { type: 'mcq', q: '¿Hay manifestación?',
+      options: ['Sí', 'No', 'No lo dice'], answer: 1 },
+    { type: 'short', q: '¿Quién gana en su provincia? (dos palabras)', accept: ['el candidato', 'candidato', 'el candidato del ayuntamiento'] },
+    { type: 'translate', line: 'Cada ciudadano tiene derechos.', model: 'Every citizen has rights.' }
+  ]
+},
+
+{
+  id: 'a1-pol-escuela', title: 'La educación del país', level: 1, theme: 'politica',
+  tenses: ['presente'],
+  text: 'El ministerio habla de la educación. Una historiadora y un sociólogo están en el debate. Dicen que la sociedad y la comunidad necesitan más escuelas. El gobierno tiene una ley nueva. El ciudadano paga y el político decide. En la capital hay crisis, pero también progreso. La amabilidad no cuesta nada.',
+  gloss: [ { es: 'el ministerio', en: 'the ministry' },
+           { es: 'el sociólogo', en: 'the sociologist' },
+           { es: 'la comunidad', en: 'the community' },
+           { es: 'la crisis', en: 'the crisis' } ],
+  questions: [
+    { type: 'mcq', q: '¿De qué habla el ministerio?',
+      options: ['De la educación', 'Del ejército', 'Del rey'], answer: 0 },
+    { type: 'mcq', q: '¿Qué necesitan la sociedad y la comunidad?',
+      options: ['Más escuelas', 'Más dinero', 'Más leyes'], answer: 0 },
+    { type: 'short', q: '¿Quién decide? (dos palabras)', accept: ['el político', 'político', 'el politico'] },
+    { type: 'translate', line: 'El ministerio habla de la educación.', model: 'The ministry is talking about education.' }
+  ]
+},
+
+{
+  id: 'a1-pol-barrio', title: 'Los vecinos y la ley', level: 1, theme: 'politica',
+  tenses: ['presente'],
+  text: 'En mi comunidad hay un club de vecinos. Hablamos con el ayuntamiento del distrito. La ley dice que hay derechos y deberes. Un ciudadano es muy educado y habla con cortesía; otro no. El político del barrio escucha. No queremos una manifestación, queremos progreso y paz en la sociedad.',
+  gloss: [ { es: 'el club', en: 'the club, the association' },
+           { es: 'la cortesía', en: 'politeness' },
+           { es: 'educado', en: 'well-mannered' },
+           { es: 'el progreso', en: 'progress' } ],
+  questions: [
+    { type: 'mcq', q: '¿Con quién hablan los vecinos?',
+      options: ['Con el ayuntamiento', 'Con el rey', 'Con el ejército'], answer: 0 },
+    { type: 'mcq', q: '¿Qué quieren?',
+      options: ['Una manifestación', 'Progreso y paz', 'Una ley nueva'], answer: 1 },
+    { type: 'short', q: '¿Qué dice la ley que hay? (dos palabras)', accept: ['derechos y deberes', 'derechos', 'deberes'] },
+    { type: 'translate', line: 'No queremos una manifestación, queremos progreso y paz en la sociedad.', model: 'We do not want a demonstration, we want progress and peace in society.' }
+  ]
+},
+
+{
+  id: 'a1-via-aeropuerto', title: 'En el aeropuerto', level: 1, theme: 'viajes',
+  tenses: ['presente'],
+  text: 'Estoy en la terminal del aeropuerto con el equipaje y una maleta grande. En la ventanilla dan el billete del vuelo. La azafata y el piloto pasan. Busco la puerta: primero el pasaporte y el visado. Después un taxi al hotel, o el metro si hay mucho tráfico.',
+  gloss: [ { es: 'la terminal', en: 'the terminal' },
+           { es: 'el equipaje', en: 'the luggage' },
+           { es: 'la ventanilla', en: 'the desk, the window' },
+           { es: 'el visado', en: 'the visa' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué dan en la ventanilla?',
+      options: ['El billete', 'El pasaporte', 'La maleta'], answer: 0 },
+    { type: 'mcq', q: '¿Qué coge si hay mucho tráfico?',
+      options: ['Un taxi', 'El metro', 'El autobús'], answer: 1 },
+    { type: 'short', q: '¿Quién pasa además del piloto? (dos palabras)', accept: ['la azafata', 'azafata'] },
+    { type: 'translate', line: 'Estoy en la terminal del aeropuerto con el equipaje y una maleta grande.', model: 'I am in the airport terminal with my luggage and a big suitcase.' }
+  ]
+},
+
+{
+  id: 'a1-via-tren', title: 'El tren de las siete', level: 1, theme: 'viajes',
+  tenses: ['presente'],
+  text: 'En la estación busco el andén del tren. El billete es barato. Hay un viajero con una maleta y otro con una manta. El conductor habla por la ventanilla. Pasamos un túnel largo y una vía vieja. En la parada siguiente hay un tranvía y una boca de metro.',
+  gloss: [ { es: 'el andén', en: 'the platform' },
+           { es: 'el viajero', en: 'the traveller' },
+           { es: 'la manta', en: 'the blanket' },
+           { es: 'la vía', en: 'the track' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué busca en la estación?',
+      options: ['El andén', 'El hotel', 'El taxi'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo es el billete?',
+      options: ['Caro', 'Barato', 'Gratis'], answer: 1 },
+    { type: 'short', q: '¿Qué pasan durante el viaje? (dos palabras)', accept: ['un túnel', 'un tunel', 'túnel', 'tunel', 'un túnel largo'] },
+    { type: 'translate', line: 'En la estación busco el andén del tren.', model: 'At the station I look for the train platform.' }
+  ]
+},
+
+{
+  id: 'a1-via-hotel', title: 'En la recepción', level: 1, theme: 'viajes',
+  tenses: ['presente'],
+  text: 'Llego al hostal y voy a la recepción. La recepcionista pide el dni. La pensión es completa y la sala está abajo. El conserje sube la maleta. La habitación tiene baño y televisión. Al lado hay un aparcamiento pequeño, una parada de autobús y una gasolinera.',
+  gloss: [ { es: 'el hostal', en: 'the guesthouse' },
+           { es: 'la recepcionista', en: 'the receptionist' },
+           { es: 'el conserje', en: 'the porter' },
+           { es: 'la gasolinera', en: 'the petrol station' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pide la recepcionista?',
+      options: ['El dni', 'El billete', 'La maleta'], answer: 0 },
+    { type: 'mcq', q: '¿Quién sube la maleta?',
+      options: ['La recepcionista', 'El conserje', 'El viajero'], answer: 1 },
+    { type: 'short', q: '¿Qué tiene la habitación además de baño? (una palabra)', accept: ['televisión', 'television', 'la televisión'] },
+    { type: 'translate', line: 'Llego al hostal y voy a la recepción.', model: 'I arrive at the guesthouse and go to reception.' }
+  ]
+},
+
+{
+  id: 'a1-via-playa', title: 'Un día de playa', level: 1, theme: 'viajes',
+  tenses: ['presente'],
+  text: 'En la playa hay arena, olas y mucha gente. Llevo sandalias, una sombrilla y un gorro. Un buceador entra en el agua y una barca pasa cerca. Más allá está el puerto con un marinero y un capitán. Por la tarde hay una excursión en piragua.',
+  gloss: [ { es: 'la arena', en: 'the sand' },
+           { es: 'la sombrilla', en: 'the parasol' },
+           { es: 'el buceador', en: 'the diver' },
+           { es: 'la piragua', en: 'the canoe' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué lleva a la playa?',
+      options: ['Sandalias y una sombrilla', 'Una maleta', 'Una manta'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hay por la tarde?',
+      options: ['Una excursión', 'Una fiesta', 'Nada'], answer: 0 },
+    { type: 'short', q: '¿Quién entra en el agua? (dos palabras)', accept: ['un buceador', 'el buceador', 'buceador'] },
+    { type: 'translate', line: 'En la playa hay arena, olas y mucha gente.', model: 'On the beach there is sand, waves and a lot of people.' }
+  ]
+},
+
+{
+  id: 'a1-via-coche', title: 'Un problema en la carretera', level: 1, theme: 'viajes',
+  tenses: ['presente'],
+  text: 'Voy por la autopista con el coche. Hay mucha circulación y un accidente en otro carril. Paro en la gasolinera para la gasolina. El mecánico mira una rueda y el maletero. El cinturón está bien. Después cojo la carretera vieja: hay menos tráfico y un paso estrecho.',
+  gloss: [ { es: 'la autopista', en: 'the motorway' },
+           { es: 'la circulación', en: 'the traffic' },
+           { es: 'el carril', en: 'the lane' },
+           { es: 'el maletero', en: 'the boot' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué hay en otro carril?',
+      options: ['Un accidente', 'Una gasolinera', 'Un taxi'], answer: 0 },
+    { type: 'mcq', q: '¿Qué mira el mecánico?',
+      options: ['El cinturón', 'Una rueda y el maletero', 'La carretera'], answer: 1 },
+    { type: 'short', q: '¿Por qué coge la carretera vieja? (dos palabras)', accept: ['menos tráfico', 'hay menos tráfico', 'menos trafico'] },
+    { type: 'translate', line: 'Hay mucha circulación y un accidente en otro carril.', model: 'There is a lot of traffic and an accident in another lane.' }
+  ]
+},
+
+{
+  id: 'a1-via-montana', title: 'Una excursión', level: 1, theme: 'viajes',
+  tenses: ['presente'],
+  text: 'El domingo hay una excursión a la montaña. Un montañero, una senderista y un escalador van juntos. Llevo el mapa, el plano y un gorro. Vamos en autobús hasta la parada y después andando. El campin está cerca. No hay tráfico ni carretera, solo un paso pequeño.',
+  gloss: [ { es: 'el montañero', en: 'the mountaineer' },
+           { es: 'la senderista', en: 'the hiker' },
+           { es: 'el escalador', en: 'the climber' },
+           { es: 'el campin', en: 'the campsite' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué día es la excursión?',
+      options: ['El sábado', 'El domingo', 'El lunes'], answer: 1 },
+    { type: 'mcq', q: '¿Cómo van hasta la parada?',
+      options: ['Andando', 'En autobús', 'En coche'], answer: 1 },
+    { type: 'short', q: '¿Qué lleva además del mapa? (una palabra)', accept: ['el plano', 'plano', 'un gorro', 'gorro'] },
+    { type: 'translate', line: 'El domingo hay una excursión a la montaña.', model: 'On Sunday there is a trip to the mountains.' }
+  ]
+}
+,
+
+{
+  id: 'a2-via-perdimos', title: 'Perdimos el vuelo', level: 2, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El año pasado perdimos el vuelo. Llegamos tarde a la terminal porque había mucho tráfico en la autopista y un accidente en un carril. En la ventanilla nos dijeron que el avión ya estaba en la pista. Teníamos el equipaje, dos maletas y el visado en regla, pero no el billete correcto. Al final dormimos en un hostal cerca del aeropuerto y cogimos otro vuelo por la mañana. El conserje nos dejó una manta.',
+  gloss: [ { es: 'perder el vuelo', en: 'to miss the flight' },
+           { es: 'la ventanilla', en: 'the desk' },
+           { es: 'en regla', en: 'in order' },
+           { es: 'la manta', en: 'the blanket' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué llegaron tarde?',
+      options: ['Por el tráfico', 'Por el equipaje', 'Por el visado'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde durmieron?',
+      options: ['En el aeropuerto', 'En un hostal', 'En el avión'], answer: 1 },
+    { type: 'short', q: '¿Qué les dejó el conserje? (una palabra)', accept: ['una manta', 'manta', 'la manta'] },
+    { type: 'translate', line: 'El año pasado perdimos el vuelo.', model: 'Last year we missed our flight.' }
+  ]
+},
+
+{
+  id: 'a2-via-interrail', title: 'Un mes en tren', level: 2, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Cuando tenía veinte años viajé un mes en tren por Europa. Dormía en la estación o en un campin barato, y a veces en una pensión. Llevaba una maleta pequeña, un mapa de papel y un plano de cada ciudad. En cada andén había viajeros con la misma cara de sueño. No usaba el metro para ahorrar. Fue el mejor viaje de mi vida y el más barato.',
+  gloss: [ { es: 'el campin', en: 'the campsite' },
+           { es: 'la pensión', en: 'the guesthouse' },
+           { es: 'el andén', en: 'the platform' },
+           { es: 'ahorrar', en: 'to save money' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántos años tenía?',
+      options: ['Dieciocho', 'Veinte', 'Treinta'], answer: 1 },
+    { type: 'mcq', q: '¿Dónde dormía?',
+      options: ['En hoteles', 'En la estación o en un campin', 'En casa de amigos'], answer: 1 },
+    { type: 'short', q: '¿Por qué no usaba el metro? (una palabra)', accept: ['para ahorrar', 'ahorrar'] },
+    { type: 'translate', line: 'Cuando tenía veinte años viajé un mes en tren por Europa.', model: 'When I was twenty I travelled around Europe by train for a month.' }
+  ]
+},
+
+{
+  id: 'a2-via-averia', title: 'Una avería en la carretera', level: 2, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Íbamos por la carretera vieja cuando el coche paró de repente. Una rueda estaba mal y el maletero no abría. No había ninguna gasolinera cerca y quedaba muy poca gasolina en el depósito. Llamamos a un mecánico y esperamos casi una hora sentados en el arcén. Mientras esperábamos, pasó un ciclista y nos dio agua. El mecánico llegó, cambió la rueda y seguimos hasta el puerto.',
+  gloss: [ { es: 'la avería', en: 'the breakdown' },
+           { es: 'la rueda', en: 'the wheel' },
+           { es: 'el maletero', en: 'the boot' },
+           { es: 'el mecánico', en: 'the mechanic' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué estaba mal?',
+      options: ['Una rueda', 'El motor', 'El cinturón'], answer: 0 },
+    { type: 'mcq', q: '¿Quién les dio agua?',
+      options: ['El mecánico', 'Un ciclista', 'Un conductor'], answer: 1 },
+    { type: 'short', q: '¿Cuánto esperaron? (dos palabras)', accept: ['una hora', 'hora'] },
+    { type: 'translate', line: 'Íbamos por la carretera vieja cuando el coche paró de repente.', model: 'We were going along the old road when the car suddenly stopped.' }
+  ]
+},
+
+{
+  id: 'a2-via-hotel-mal', title: 'El hotel no era así', level: 2, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Reservamos una habitación con baño y aire acondicionado, pero el hotel no era así. La recepcionista nos dio una habitación sin ventana y el aparcamiento estaba lleno. La sala olía mal y no había ninguna manta. Hablamos con el conserje, que llamó al director. Al final nos cambiaron a otra habitación con televisión y balcón al puerto. La pensión completa sí estaba bien.',
+  gloss: [ { es: 'reservar', en: 'to book' },
+           { es: 'oler mal', en: 'to smell bad' },
+           { es: 'el conserje', en: 'the porter' },
+           { es: 'las vistas', en: 'the views' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué problema tenía la primera habitación?',
+      options: ['No tenía ventana', 'Era cara', 'No tenía cama'], answer: 0 },
+    { type: 'mcq', q: '¿Quién llamó al director?',
+      options: ['La recepcionista', 'El conserje', 'El viajero'], answer: 1 },
+    { type: 'short', q: '¿Qué sí estaba bien? (dos palabras)', accept: ['la pensión completa', 'pensión completa', 'la pension completa'] },
+    { type: 'translate', line: 'Reservamos una habitación con baño y aire acondicionado, pero el hotel no era así.', model: 'We booked a room with a bathroom and air conditioning, but the hotel was not like that.' }
+  ]
+},
+
+{
+  id: 'a2-via-excursion3', title: 'La excursión del sábado', level: 3, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El sábado hicimos una excursión a la montaña. Salimos temprano en autobús desde la parada del pueblo y después fuimos andando. Un montañero nos explicó el camino con un plano; una senderista llevaba el mapa. Hacía frío y el gorro fue necesario. Comimos cerca de un campin y volvimos en tranvía hasta la estación. El viaje duró nueve horas y valió la pena.',
+  gloss: [ { es: 'el montañero', en: 'the mountaineer' },
+           { es: 'la senderista', en: 'the hiker' },
+           { es: 'el tranvía', en: 'the tram' },
+           { es: 'valer la pena', en: 'to be worth it' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo salieron del pueblo?',
+      options: ['En autobús', 'Andando', 'En tren'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo volvieron?',
+      options: ['En autobús', 'En tranvía', 'Andando'], answer: 1 },
+    { type: 'short', q: '¿Cuántas horas duró? (un número)', accept: ['nueve', '9'] },
+    { type: 'translate', line: 'El sábado hicimos una excursión a la montaña.', model: 'On Saturday we went on a trip to the mountains.' }
+  ]
+},
+
+{
+  id: 'a2-via-playa3', title: 'Aquel verano en la playa', level: 3, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'De niño pasaba los veranos en la playa con mis abuelos. Había arena por todas partes, olas grandes y una sombrilla vieja. Yo llevaba sandalias todo el día. Mi abuelo conocía a un marinero del puerto que nos dejaba subir a su barca. Una vez vimos a un buceador y a un capitán discutiendo. Aquel verano aprendí a nadar y nunca lo he olvidado.',
+  gloss: [ { es: 'la arena', en: 'the sand' },
+           { es: 'las olas', en: 'the waves' },
+           { es: 'la barca', en: 'the small boat' },
+           { es: 'discutir', en: 'to argue' } ],
+  questions: [
+    { type: 'mcq', q: '¿Con quién pasaba los veranos?',
+      options: ['Con sus padres', 'Con sus abuelos', 'Solo'], answer: 1 },
+    { type: 'mcq', q: '¿A quién conocía el abuelo?',
+      options: ['A un marinero', 'A un capitán', 'A un buceador'], answer: 0 },
+    { type: 'short', q: '¿Qué aprendió aquel verano? (una palabra)', accept: ['a nadar', 'nadar'] },
+    { type: 'translate', line: 'De niño pasaba los veranos en la playa con mis abuelos.', model: 'As a child I used to spend the summers at the beach with my grandparents.' }
+  ]
+},
+
+{
+  id: 'a2-serv-cola', title: 'Una mañana de trámites', level: 2, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Ayer pasé la mañana haciendo trámites. Primero fui al banco a cambiar dinero y a abrir una cuenta; había mucha gente y el cajero automático no funcionaba. Después fui a correos con una carta y una postal, pero el empleado de correos me dijo que faltaba un sello. Al final pasé por la comisaría porque perdí la cartera con el documento de identidad y la tarjeta.',
+  gloss: [ { es: 'los trámites', en: 'the paperwork' },
+           { es: 'faltar', en: 'to be missing' },
+           { es: 'la comisaría', en: 'the police station' },
+           { es: 'perder', en: 'to lose' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué no funcionaba en el banco?',
+      options: ['El cajero automático', 'La tarjeta', 'El teléfono'], answer: 0 },
+    { type: 'mcq', q: '¿Qué faltaba en la carta?',
+      options: ['La dirección', 'Un sello', 'La firma'], answer: 1 },
+    { type: 'short', q: '¿Por qué fue a la comisaría? (dos palabras)', accept: ['perdió la cartera', 'la cartera', 'perdi la cartera', 'perdió la cartera con el documento'] },
+    { type: 'translate', line: 'Ayer pasé la mañana haciendo trámites.', model: 'Yesterday I spent the morning doing paperwork.' }
+  ]
+},
+
+{
+  id: 'a2-serv-antes', title: 'Antes todo era papel', level: 2, theme: 'servicios',
+  tenses: ['presente', 'imperfecto'],
+  text: 'Antes todo era papel. Para cualquier trámite había que ir al banco o a correos y esperar. El cartero traía la carta y una postal de vez en cuando. No existía el cajero automático: cambiar dinero era una mañana entera. Mi madre guardaba cada documento de identidad, cada moneda extranjera y cada recibo. Ahora casi todo se hace desde casa, aunque para el permiso de residencia todavía hay cola.',
+  gloss: [ { es: 'de vez en cuando', en: 'now and then' },
+           { es: 'guardar', en: 'to keep' },
+           { es: 'el recibo', en: 'the receipt' },
+           { es: 'la cola', en: 'the queue' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué traía el cartero?',
+      options: ['La carta', 'El dinero', 'El documento'], answer: 0 },
+    { type: 'mcq', q: '¿Qué no existía antes?',
+      options: ['El banco', 'El cajero automático', 'Correos'], answer: 1 },
+    { type: 'short', q: '¿Para qué todavía hay cola? (tres palabras)', accept: ['el permiso de residencia', 'permiso de residencia', 'para el permiso de residencia'] },
+    { type: 'translate', line: 'Antes todo era papel.', model: 'Everything used to be on paper.' }
+  ]
+},
+
+{
+  id: 'a2-serv-robo', title: 'Un robo en el portal', level: 2, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El martes hubo un robo en mi portal. El ladrón entró por la noche y el vigilante no vio nada. Llamamos a la policía y vino una patrulla de la comisaría. Mi vecina, que es enfermera, estaba en urgencias y no se enteró hasta la mañana. Un voluntario de los servicios sociales nos ayudó con el documento de identidad y con el banco. Perdimos unos euros, una tarjeta y las llaves.',
+  gloss: [ { es: 'el portal', en: 'the entrance hall' },
+           { es: 'el ladrón', en: 'the thief' },
+           { es: 'el vigilante', en: 'the security guard' },
+           { es: 'enterarse', en: 'to find out' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuándo entró el ladrón?',
+      options: ['Por la noche', 'Por la mañana', 'Por la tarde'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde estaba la vecina?',
+      options: ['En casa', 'En urgencias', 'En la comisaría'], answer: 1 },
+    { type: 'short', q: '¿Qué perdieron? (tres cosas, una vale)', accept: ['unos euros', 'una tarjeta', 'las llaves', 'euros', 'tarjeta', 'llaves'] },
+    { type: 'translate', line: 'El martes hubo un robo en mi portal.', model: 'On Tuesday there was a burglary in my entrance hall.' }
+  ]
+},
+
+{
+  id: 'a2-serv-ong', title: 'Colaborar como voluntario', level: 2, theme: 'servicios',
+  tenses: ['presente', 'imperfecto'],
+  text: 'Mi hermana colabora como voluntario en una ong del barrio. Antes trabajaba en un banco, pero lo dejó. Ahora da ayuda económica a gente que la necesita y los servicios sociales mandan los casos. Una psicóloga va los jueves. A veces acompaña a alguien a la clínica, a urgencias o a la comisaría, y otras veces al ayuntamiento con un documento de identidad. La colaboración de los vecinos es lo que más funciona.',
+  gloss: [ { es: 'la ong', en: 'the charity, NGO' },
+           { es: 'dejar', en: 'to leave (a job)' },
+           { es: 'la ayuda económica', en: 'financial help' },
+           { es: 'acompañar', en: 'to go with someone' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde trabajaba antes?',
+      options: ['En un banco', 'En una clínica', 'En correos'], answer: 0 },
+    { type: 'mcq', q: '¿Quién va los jueves?',
+      options: ['Una enfermera', 'Una psicóloga', 'Un vigilante'], answer: 1 },
+    { type: 'short', q: '¿Qué es lo que más funciona? (dos palabras)', accept: ['la colaboración', 'la colaboración de los vecinos', 'colaboración', 'la colaboracion'] },
+    { type: 'translate', line: 'Mi hermana colabora como voluntario en una ong del barrio.', model: 'My sister volunteers at a charity in the neighbourhood.' }
+  ]
+},
+
+{
+  id: 'a2-serv-cuenta3', title: 'Abrir una cuenta', level: 3, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Fui al banco para abrir una cuenta y no fue tan fácil como pensaba. Me pidieron el documento de identidad, el permiso de residencia y un papel del ayuntamiento. Como no lo llevaba, tuve que volver al día siguiente. El empleado de correos de al lado me lo explicó mejor. Cuando por fin firmé, me dieron una tarjeta que llegó por correo una semana después. Ahora uso el cajero automático y cambiar dinero es rápido.',
+  gloss: [ { es: 'pedir', en: 'to ask for' },
+           { es: 'al día siguiente', en: 'the next day' },
+           { es: 'por fin', en: 'finally' },
+           { es: 'reconocer', en: 'to recognise' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué tuvo que volver?',
+      options: ['No llevaba un papel', 'El banco cerraba', 'No tenía dinero'], answer: 0 },
+    { type: 'mcq', q: '¿Quién le explicó mejor el trámite?',
+      options: ['El empleado de correos', 'El director', 'Un vecino'], answer: 0 },
+    { type: 'short', q: '¿Cuánto tardó la tarjeta? (dos palabras)', accept: ['una semana', 'semana', 'una semana después'] },
+    { type: 'translate', line: 'Fui al banco para abrir una cuenta y no fue tan fácil como pensaba.', model: 'I went to the bank to open an account and it was not as easy as I thought.' }
+  ]
+},
+
+{
+  id: 'a2-serv-emergencia3', title: 'La noche de la ambulancia', level: 3, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Aquella noche mi padre se puso muy malo y llamamos al teléfono de emergencia. Mientras esperábamos la ambulancia, mi madre buscaba el documento de identidad y la tarjeta del seguro, y yo pedía socorro por la ventana. Vinieron una enfermera y dos bomberos porque la calle estaba cortada. En urgencias todo fue rápido y la clínica nos llamó al día siguiente. Nunca he agradecido tanto un servicio público.',
+  gloss: [ { es: 'ponerse malo', en: 'to be taken ill' },
+           { es: 'pedir socorro', en: 'to call for help' },
+           { es: 'cortada', en: 'closed off' },
+           { es: 'agradecer', en: 'to be grateful for' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué buscaba la madre?',
+      options: ['El documento de identidad', 'El teléfono', 'La ambulancia'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué vinieron los bomberos?',
+      options: ['Por el fuego', 'Porque la calle estaba cortada', 'Por la enfermera'], answer: 1 },
+    { type: 'short', q: '¿Quién los llamó al día siguiente? (dos palabras)', accept: ['la clínica', 'clínica', 'la clinica'] },
+    { type: 'translate', line: 'Aquella noche mi padre se puso muy malo y llamamos al teléfono de emergencia.', model: 'That night my father was taken very ill and we rang the emergency number.' }
+  ]
+}
+,
+
+{
+  id: 'a2-salud-urgencias', title: 'Una noche en urgencias', level: 2, theme: 'salud',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El sábado fui a urgencias con fiebre muy alta y mucho dolor de garganta. La enfermera me puso el termómetro y esperé dos horas. El médico dijo que era gripe y me mandó un antibiótico. En la farmacia compré la medicina, unas pastillas y unas gotas. El domingo ya me sentía mejor, aunque todavía tenía tos. El lunes pedí cita en el centro de salud para un análisis.',
+  gloss: [ { es: 'urgencias', en: 'A&E' },
+           { es: 'el termómetro', en: 'the thermometer' },
+           { es: 'el antibiótico', en: 'the antibiotic' },
+           { es: 'el análisis', en: 'the test' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué dijo el médico que era?',
+      options: ['Gripe', 'Alergia', 'Nada'], answer: 0 },
+    { type: 'mcq', q: '¿Cuánto esperó?',
+      options: ['Una hora', 'Dos horas', 'Tres horas'], answer: 1 },
+    { type: 'short', q: '¿Para qué pidió cita el lunes? (dos palabras)', accept: ['un análisis', 'análisis', 'para un análisis', 'un analisis'] },
+    { type: 'translate', line: 'El sábado fui a urgencias con fiebre muy alta y mucho dolor de garganta.', model: 'On Saturday I went to A&E with a very high temperature and a bad sore throat.' }
+  ]
+},
+
+{
+  id: 'a2-salud-abuela', title: 'La salud de mi abuela', level: 2, theme: 'salud',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Mi abuela tenía muy buena salud. Nunca tomaba medicina y solo iba al médico para el chequeo. Llevaba una vida sana. Cuando tenía dolor se ponía una crema, y si había fiebre, una aspirina y ya está. A los ochenta empezó con la tensión y desde entonces toma una pastilla al día. Todavía va sola a la farmacia y al centro de salud, y no ha pisado nunca urgencias ni un hospital.',
+  gloss: [ { es: 'el chequeo', en: 'the check-up' },
+           { es: 'llevar una vida sana', en: 'to live healthily' },
+           { es: 'la tensión', en: 'blood pressure' },
+           { es: 'desde entonces', en: 'since then' } ],
+  questions: [
+    { type: 'mcq', q: '¿Para qué iba al médico?',
+      options: ['Para el chequeo', 'Por dolor', 'Nunca iba'], answer: 0 },
+    { type: 'mcq', q: '¿Qué toma ahora?',
+      options: ['Un antibiótico', 'Una pastilla al día', 'Nada'], answer: 1 },
+    { type: 'short', q: '¿Cuántas horas dormía? (un número)', accept: ['ocho', '8'] },
+    { type: 'translate', line: 'Mi abuela tenía muy buena salud.', model: 'My grandmother was in very good health.' }
+  ]
+},
+
+{
+  id: 'a2-salud-dolor-dientes', title: 'El dentista, por fin', level: 2, theme: 'salud',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Llevaba meses con dolor de dientes y no iba al dentista. Al final pedí cita porque ya no podía comer. La cita médica era a las nueve, en la clínica del centro de salud. Me pusieron una vacuna para el dolor y salí con una receta: un antibiótico, una pastilla y una crema. En la farmacia me dieron también un cepillo nuevo. Ahora me cepillo los dientes tres veces al día.',
+  gloss: [ { es: 'pedir hora', en: 'to make an appointment' },
+           { es: 'la radiografía', en: 'the X-ray' },
+           { es: 'la receta', en: 'the prescription' },
+           { es: 'cepillarse los dientes', en: 'to brush your teeth' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué pidió hora al final?',
+      options: ['Ya no podía comer', 'Tenía fiebre', 'Por el chequeo'], answer: 0 },
+    { type: 'mcq', q: '¿A qué hora era la cita?',
+      options: ['A las ocho', 'A las nueve', 'A las diez'], answer: 1 },
+    { type: 'short', q: '¿Cuántas veces al día se cepilla los dientes? (un número)', accept: ['tres', '3'] },
+    { type: 'translate', line: 'Llevaba meses con dolor de dientes y no iba al dentista.', model: 'I had had toothache for months and was not going to the dentist.' }
+  ]
+},
+
+{
+  id: 'a2-salud-estres', title: 'Demasiado estrés', level: 2, theme: 'salud',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El año pasado tuve mucho estrés en el trabajo. Dormía mal, tenía ansiedad y mucho dolor de espalda. Fui al centro de salud y el médico me mandó a terapia. También me dijo que era mejor hacer ejercicio que tomar una pastilla. Empecé a andar una hora al día y dejé el café. Ahora tengo buena salud, no tomo ninguna medicina y no piso la farmacia. El chequeo del año salió perfecto.',
+  gloss: [ { es: 'el estrés', en: 'stress' },
+           { es: 'la ansiedad', en: 'anxiety' },
+           { es: 'la terapia', en: 'therapy' },
+           { es: 'dejar', en: 'to give up' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le pasaba el año pasado?',
+      options: ['Tenía mucho estrés', 'Estaba de vacaciones', 'Tenía gripe'], answer: 0 },
+    { type: 'mcq', q: '¿Qué empezó a hacer?',
+      options: ['Tomar medicina', 'Andar una hora al día', 'Trabajar más'], answer: 1 },
+    { type: 'short', q: '¿Qué dejó?', accept: ['el café', 'café', 'el cafe'] },
+    { type: 'translate', line: 'Dormía mal, tenía ansiedad y mucho dolor de espalda.', model: 'I slept badly, I had anxiety and a lot of back pain.' }
+  ]
+},
+
+{
+  id: 'a2-salud-nino3', title: 'Cuando los niños se ponen malos', level: 3, theme: 'salud',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Cuando mis hijos eran pequeños se ponían malos cada invierno. Siempre era lo mismo: tos, fiebre y una semana en casa. Yo les daba una aspirina infantil y mucha agua, y llamaba al centro de salud si la fiebre subía. Una vez fuimos a urgencias de noche porque el pequeño tenía una alergia fuerte. El enfermero nos tranquilizó, nos dio una crema y unas gotas, y todo quedó en un susto. No hizo falta ni hospital ni antibiótico.',
+  gloss: [ { es: 'ponerse malo', en: 'to fall ill' },
+           { es: 'subir', en: 'to go up' },
+           { es: 'tranquilizar', en: 'to calm someone down' },
+           { es: 'quedar en un susto', en: 'to turn out to be nothing serious' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuándo se ponían malos?',
+      options: ['Cada invierno', 'Cada verano', 'Nunca'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué fueron a urgencias?',
+      options: ['Por la tos', 'Por una alergia fuerte', 'Por la fiebre'], answer: 1 },
+    { type: 'short', q: '¿Quién los tranquilizó? (dos palabras)', accept: ['el enfermero', 'enfermero'] },
+    { type: 'translate', line: 'Cuando mis hijos eran pequeños se ponían malos cada invierno.', model: 'When my children were small they used to fall ill every winter.' }
+  ]
+},
+
+{
+  id: 'a2-salud-vacuna3', title: 'La vacuna del viaje', level: 3, theme: 'salud',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro'],
+  text: 'Antes de viajar tuve que ponerme una vacuna. Pedí cita en el centro de salud y me atendió una enfermera muy amable. Me explicó que podía tener un poco de fiebre y dolor en el brazo durante un día. Me dio una crema y me dijo que tomara una aspirina si me encontraba mal. En la farmacia compré también unas gotas y una pastilla por si acaso. Al final no me pasó nada.',
+  gloss: [ { es: 'ponerse una vacuna', en: 'to get vaccinated' },
+           { es: 'atender', en: 'to see, to attend to' },
+           { es: 'encontrarse mal', en: 'to feel unwell' },
+           { es: 'más de lo normal', en: 'more than usual' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué tuvo que hacer antes de viajar?',
+      options: ['Ponerse una vacuna', 'Ir a urgencias', 'Comprar medicina'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le pasó al final?',
+      options: ['Tuvo fiebre', 'No le pasó nada', 'Fue al hospital'], answer: 1 },
+    { type: 'short', q: '¿Qué le dio la enfermera? (dos palabras)', accept: ['una crema', 'crema', 'la crema'] },
+    { type: 'translate', line: 'Antes de viajar tuve que ponerme una vacuna.', model: 'Before travelling I had to get vaccinated.' }
+  ]
+},
+
+{
+  id: 'a2-ident-papeles', title: 'Renovar el pasaporte', level: 2, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
+  text: 'La semana pasada renové el pasaporte. Pedí cita por internet y llevé el carné, una foto y el documento antiguo. El funcionario comprobó mi nombre, mi apellido, mi fecha de nacimiento y mi lugar de nacimiento. Me preguntó por la dirección, el código postal y el número de teléfono, porque había cambiado de dirección. El pasaporte nuevo llegó en diez días. También renové la tarjeta de la biblioteca y la tarjeta de estudiante.',
+  gloss: [ { es: 'renovar', en: 'to renew' },
+           { es: 'el funcionario', en: 'the official' },
+           { es: 'comprobar', en: 'to check' },
+           { es: 'cambiar de dirección', en: 'to move house' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué renovó?',
+      options: ['El pasaporte', 'El carné de conducir', 'La cartera'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué le preguntó por la dirección?',
+      options: ['Porque había cambiado de dirección', 'Porque no la sabía', 'Por la foto'], answer: 0 },
+    { type: 'short', q: '¿En cuántos días llegó? (un número)', accept: ['diez', '10'] },
+    { type: 'translate', line: 'La semana pasada renové el pasaporte.', model: 'Last week I renewed my passport.' }
+  ]
+},
+
+{
+  id: 'a2-ident-mudanza', title: 'Una dirección nueva', level: 2, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Cuando me mudé tuve que cambiar la dirección en todas partes. Antes vivía en las afueras, en un piso pequeño de una avenida larga. Ahora vivo en el centro, en una plaza con mucho ruido. Cambié el código postal, el número de teléfono y la dirección electrónica del trabajo. Perdí las llaves dos veces la primera semana. El señor de la portería me ayudó con el bolso y el maletín.',
+  gloss: [ { es: 'mudarse', en: 'to move house' },
+           { es: 'las afueras', en: 'the outskirts' },
+           { es: 'el ruido', en: 'the noise' },
+           { es: 'la portería', en: 'the concierge\'s office' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde vivía antes?',
+      options: ['En las afueras', 'En el centro', 'En un pueblo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué perdió dos veces?',
+      options: ['El bolso', 'Las llaves', 'El maletín'], answer: 1 },
+    { type: 'short', q: '¿Cómo es la plaza donde vive ahora? (dos palabras)', accept: ['con mucho ruido', 'mucho ruido', 'ruidosa'] },
+    { type: 'translate', line: 'Cuando me mudé tuve que cambiar la dirección en todas partes.', model: 'When I moved I had to change my address everywhere.' }
+  ]
+},
+
+{
+  id: 'a2-ident-nombre', title: 'Mi nombre y mis apellidos', level: 2, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Mi nombre es corriente, pero mi segundo apellido no lo es. Mi abuela era marroquí y mi abuelo alemán, así que en el pasaporte aparece algo que nadie sabe escribir. De pequeño me daba vergüenza; ahora me gusta. Cuando era adolescente quería ser solo el chico del primer apellido. Mi hermana, que es más joven, siempre estuvo orgullosa de los dos.',
+  gloss: [ { es: 'corriente', en: 'ordinary' },
+           { es: 'aparecer', en: 'to appear' },
+           { es: 'dar vergüenza', en: 'to embarrass' },
+           { es: 'orgulloso', en: 'proud' } ],
+  questions: [
+    { type: 'mcq', q: '¿De dónde era la abuela?',
+      options: ['De Marruecos', 'De Alemania', 'De España'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo se sentía de pequeño?',
+      options: ['Orgulloso', 'Con vergüenza', 'Contento'], answer: 1 },
+    { type: 'short', q: '¿Quién estuvo siempre orgullosa? (dos palabras)', accept: ['su hermana', 'la hermana', 'hermana', 'mi hermana'] },
+    { type: 'translate', line: 'Mi nombre es corriente, pero mi segundo apellido no lo es.', model: 'My first name is ordinary, but my second surname is not.' }
+  ]
+},
+
+{
+  id: 'a2-ident-cartera', title: 'Perdí la cartera', level: 2, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El viernes perdí la cartera en el autobús. Dentro llevaba el carné, la tarjeta de crédito, la tarjeta de estudiante, las llaves y algo de dinero. Lo peor no era el dinero: era el documento de identidad. Llamé al ayuntamiento y di mi nombre, el número de teléfono y la fecha de nacimiento. El lunes una señora mayor la devolvió con todo dentro, incluso las gafas y la agenda.',
+  gloss: [ { es: 'dentro', en: 'inside' },
+           { es: 'lo peor', en: 'the worst part' },
+           { es: 'devolver', en: 'to give back' },
+           { es: 'incluso', en: 'even' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde perdió la cartera?',
+      options: ['En el autobús', 'En el metro', 'En la calle'], answer: 0 },
+    { type: 'mcq', q: '¿Qué era lo peor?',
+      options: ['El dinero', 'El documento', 'Las gafas'], answer: 1 },
+    { type: 'short', q: '¿Quién la devolvió? (tres palabras)', accept: ['una señora mayor', 'señora mayor', 'una señora'] },
+    { type: 'translate', line: 'El viernes perdí la cartera en el autobús.', model: 'On Friday I lost my wallet on the bus.' }
+  ]
+},
+
+{
+  id: 'a2-ident-extranjero3', title: 'Ser extranjero aquí', level: 3, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Cuando llegué era extranjero en todo: en el idioma, en la comida y en el estado civil que ponían en los papeles. Tenía veintitrés años, un pasaporte con el segundo apellido mal escrito y una tarjeta de estudiante que caducaba pronto. Cada año pedía la nacionalidad y cada año me pedían otro documento: el carné, la dirección, el lugar de nacimiento. Ahora tengo la nacionalidad y se me olvida que fui el chico del acento raro.',
+  gloss: [ { es: 'caducar', en: 'to expire' },
+           { es: 'la renovación', en: 'the renewal' },
+           { es: 'distinto', en: 'different' },
+           { es: 'el acento', en: 'the accent' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántos años tenía cuando llegó?',
+      options: ['Veintitrés', 'Veinte', 'Treinta'], answer: 0 },
+    { type: 'mcq', q: '¿Qué tiene ahora?',
+      options: ['Una tarjeta de estudiante', 'La nacionalidad', 'Un pasaporte nuevo'], answer: 1 },
+    { type: 'short', q: '¿Qué le pedían cada año? (dos palabras)', accept: ['un documento', 'un documento distinto', 'documento'] },
+    { type: 'translate', line: 'Ahora tengo la nacionalidad y se me olvida que fui el chico del acento raro.', model: 'Now I have citizenship and I forget that I was once the boy with the odd accent.' }
+  ]
+},
+
+{
+  id: 'a2-ident-bodas3', title: 'Estado civil', level: 3, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'En mi familia hay de todo: un soltero convencido, dos casados, una viuda, un viudo y un separado que vive con su pareja de hecho. Mi tío estuvo divorciado veinte años y se volvió a casar a los setenta con una señora del pueblo. Cuando yo era joven, el estado civil aparecía en cada documento junto al nombre y la fecha de nacimiento. Ahora importa menos y nadie pregunta por el marido de nadie.',
+  gloss: [ { es: 'convencido', en: 'confirmed, convinced' },
+           { es: 'la pareja de hecho', en: 'civil partnership' },
+           { es: 'volverse a casar', en: 'to remarry' },
+           { es: 'con cuidado', en: 'carefully' } ],
+  questions: [
+    { type: 'mcq', q: '¿A qué edad se volvió a casar el tío?',
+      options: ['A los sesenta', 'A los setenta', 'A los cincuenta'], answer: 1 },
+    { type: 'mcq', q: '¿Cuántas opciones había antes en los papeles?',
+      options: ['Dos', 'Tres', 'Cuatro'], answer: 1 },
+    { type: 'short', q: '¿Cuántos casados hay en la familia? (un número)', accept: ['dos', '2'] },
+    { type: 'translate', line: 'Ahora importa menos y nadie pregunta por el marido de nadie.', model: 'Now it matters less and nobody asks about anybody\'s husband.' }
+  ]
+}
+,
+
+{
+  id: 'a2-cuerpo-lesion', title: 'Una lesión jugando', level: 2, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El domingo jugando al fútbol me hice daño en la rodilla. Al principio solo me dolía un poco la pierna, pero después no podía andar. Tenía el tobillo hinchado y la espalda rara. Un compañero me llevó en coche. Ahora hago ejercicio suave: muevo el cuello, los hombros, los brazos y las muñecas, y camino diez minutos. Los músculos y los huesos están mejor, pero el pie todavía me molesta.',
+  gloss: [ { es: 'hacerse daño', en: 'to hurt yourself' },
+           { es: 'hinchado', en: 'swollen' },
+           { es: 'suave', en: 'gentle' },
+           { es: 'molestar', en: 'to bother, to ache' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde se hizo daño?',
+      options: ['En la rodilla', 'En la cabeza', 'En la mano'], answer: 0 },
+    { type: 'mcq', q: '¿Qué tenía hinchado?',
+      options: ['El codo', 'El tobillo', 'El cuello'], answer: 1 },
+    { type: 'short', q: '¿Cuántos minutos camina? (un número)', accept: ['diez', '10'] },
+    { type: 'translate', line: 'El domingo jugando al fútbol me hice daño en la rodilla.', model: 'On Sunday playing football I hurt my knee.' }
+  ]
+},
+
+{
+  id: 'a2-cuerpo-abuelo', title: 'Como era mi abuelo', level: 2, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Mi abuelo era un hombre grande. Tenía las manos enormes, los hombros anchos, el pecho fuerte y los brazos de trabajar. Nunca fue guapo, decía él, pero tenía una mirada muy buena y los ojos claros. Era casi calvo desde joven y llevaba bigote. De mayor la espalda se le puso curva y andaba con las piernas separadas. Yo tengo su nariz, sus dedos y su cara cuando me enfado.',
+  gloss: [ { es: 'enorme', en: 'huge' },
+           { es: 'la mirada', en: 'the look in someone\'s eyes' },
+           { es: 'curvo', en: 'bent' },
+           { es: 'separado', en: 'apart' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo tenía las manos?',
+      options: ['Enormes', 'Pequeñas', 'Finas'], answer: 0 },
+    { type: 'mcq', q: '¿Qué llevaba?',
+      options: ['Barba', 'Bigote', 'Gafas'], answer: 1 },
+    { type: 'short', q: '¿Qué tiene el nieto de él? (una palabra)', accept: ['la nariz', 'nariz', 'los dedos', 'dedos'] },
+    { type: 'translate', line: 'Mi abuelo era un hombre grande.', model: 'My grandfather was a big man.' }
+  ]
+},
+
+{
+  id: 'a2-cuerpo-gimnasio2', title: 'Volver al gimnasio', level: 2, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Volví al gimnasio después de dos años. El primer día hice ejercicio media hora y al día siguiente no me podía mover: las piernas, los brazos, la espalda, el cuello, todo. Antes hacía deporte tres veces por semana y tenía otro tipo. Ahora voy despacio: primero muevo los hombros y las rodillas, después los codos y las muñecas. El corazón y los pulmones lo agradecen.',
+  gloss: [ { es: 'al día siguiente', en: 'the next day' },
+           { es: 'despacio', en: 'slowly' },
+           { es: 'el pulmón', en: 'the lung' },
+           { es: 'agradecer', en: 'to appreciate' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto tiempo estuvo sin ir?',
+      options: ['Dos años', 'Un año', 'Seis meses'], answer: 0 },
+    { type: 'mcq', q: '¿Cuántas veces por semana hacía deporte antes?',
+      options: ['Dos', 'Tres', 'Cuatro'], answer: 1 },
+    { type: 'short', q: '¿Qué mueve primero? (dos palabras)', accept: ['los hombros', 'hombros', 'los hombros y las rodillas'] },
+    { type: 'translate', line: 'Volví al gimnasio después de dos años.', model: 'I went back to the gym after two years.' }
+  ]
+},
+
+{
+  id: 'a2-cuerpo-foto', title: 'Una foto antigua', level: 2, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Encontré una foto de cuando tenía quince años. Estaba delgado, tenía el pelo largo y rizado, la cara redonda y la piel clara. Llevaba gafas enormes. Mi hermana, a mi lado, era más baja y tenía las piernas finas y los brazos flacos. Ahora está morena y lleva el pelo corto. Los ojos, la nariz y las manos son los mismos; hasta los dedos y los pies. El resto, no.',
+  gloss: [ { es: 'encontrar', en: 'to find' },
+           { es: 'claro', en: 'pale, light' },
+           { es: 'redondo', en: 'round' },
+           { es: 'el resto', en: 'the rest' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo tenía el pelo a los quince?',
+      options: ['Largo y rizado', 'Corto', 'Liso'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo es la hermana ahora?',
+      options: ['Más baja', 'Más alta', 'Igual'], answer: 1 },
+    { type: 'short', q: '¿Qué son los mismos? (una cosa vale)', accept: ['los ojos', 'la nariz', 'las manos', 'ojos', 'nariz', 'manos'] },
+    { type: 'translate', line: 'Encontré una foto de cuando tenía quince años.', model: 'I found a photo from when I was fifteen.' }
+  ]
+},
+
+{
+  id: 'a2-cuerpo-postura3', title: 'La postura del trabajo', level: 3, theme: 'cuerpo',
+  tenses: ['presente', 'perfecto', 'imperfecto'],
+  text: 'Desde que trabajo sentado me duele todo. Antes estaba de pie ocho horas y llegaba cansado a casa, pero la espalda estaba bien. Ahora tengo el cuello duro, los hombros altos y las muñecas mal de escribir. La postura es lo peor: la cabeza hacia delante y la cintura torcida. He puesto la pantalla más arriba y muevo las piernas cada media hora. Los músculos ya lo notan.',
+  gloss: [ { es: 'duro', en: 'stiff' },
+           { es: 'hacia delante', en: 'forwards' },
+           { es: 'torcido', en: 'twisted' },
+           { es: 'notar', en: 'to notice' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo trabajaba antes?',
+      options: ['De pie', 'Sentado', 'En casa'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ha cambiado en la mesa?',
+      options: ['La silla', 'La pantalla', 'El teclado'], answer: 1 },
+    { type: 'short', q: '¿Cada cuánto mueve las piernas? (dos palabras)', accept: ['cada media hora', 'media hora', 'cada media'] },
+    { type: 'translate', line: 'Desde que trabajo sentado me duele todo.', model: 'Since I started working sitting down, everything hurts.' }
+  ]
+},
+
+{
+  id: 'a2-cuerpo-hijo3', title: 'Cómo crece un niño', level: 3, theme: 'cuerpo',
+  tenses: ['presente', 'perfecto', 'imperfecto'],
+  text: 'Mi hijo ha crecido mucho. Hace doce meses tenía cara de bebé; ahora los brazos, las piernas y el cuello le han crecido de golpe. Tiene los pies enormes para su edad, las manos grandes y los dedos largos. El pelo y la piel se le han puesto más oscuros, y los hombros se le han abierto. Dice que le duelen los huesos y la espalda por la noche, y creo que es verdad.',
+  gloss: [ { es: 'crecer', en: 'to grow' },
+           { es: 'de golpe', en: 'all at once' },
+           { es: 'parecer otro', en: 'to look like a different person' },
+           { es: 'oscuro', en: 'dark' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo era hace doce meses?',
+      options: ['Bajo', 'Alto', 'Igual'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo tiene los pies?',
+      options: ['Pequeños', 'Enormes', 'Normales'], answer: 1 },
+    { type: 'short', q: '¿Qué le duele por la noche? (dos palabras)', accept: ['los huesos', 'huesos'] },
+    { type: 'translate', line: 'Mi hijo ha crecido mucho.', model: 'My son has grown a lot.' }
+  ]
+},
+
+{
+  id: 'a2-car-jefe2', title: 'Dos jefes', level: 2, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'He tenido dos jefes muy distintos. El primero era serio, reservado y bastante arrogante; nunca fue amable con nadie. El segundo es alegre, sociable y muy tolerante, aunque un poco vago. Con el primero aprendí mucho pero estaba siempre tenso. Con el segundo trabajo peor y vivo mejor. Mis compañeros dicen que yo soy impaciente y hablador, y creo que tienen razón.',
+  gloss: [ { es: 'distinto', en: 'different' },
+           { es: 'tenso', en: 'tense' },
+           { es: 'el compañero', en: 'the colleague' },
+           { es: 'tener razón', en: 'to be right' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo era el primer jefe?',
+      options: ['Serio y reservado', 'Alegre', 'Tolerante'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo es el segundo?',
+      options: ['Arrogante', 'Alegre y sociable', 'Serio'], answer: 1 },
+    { type: 'short', q: '¿Cómo dicen los compañeros que es él? (una palabra)', accept: ['impaciente', 'hablador'] },
+    { type: 'translate', line: 'He tenido dos jefes muy distintos.', model: 'I have had two very different bosses.' }
+  ]
+},
+
+{
+  id: 'a2-car-cambio2', title: 'He cambiado', level: 2, theme: 'caracter',
+  tenses: ['presente', 'perfecto', 'imperfecto'],
+  text: 'De joven era muy tímido e inseguro. No hablaba con nadie y me parecía que todo el mundo era más inteligente que yo. Con los años me he vuelto más abierto y bastante sociable. Sigo siendo impaciente, eso no cambia, pero soy más paciente con la gente que con las máquinas. Mis amigos dicen que soy generoso y sincero, y que de vago no tengo nada.',
+  gloss: [ { es: 'volverse', en: 'to become' },
+           { es: 'seguir siendo', en: 'to still be' },
+           { es: 'la máquina', en: 'the machine' },
+           { es: 'de vago no tengo nada', en: 'I am not lazy at all' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo era de joven?',
+      options: ['Tímido e inseguro', 'Abierto', 'Hablador'], answer: 0 },
+    { type: 'mcq', q: '¿Qué no ha cambiado?',
+      options: ['La timidez', 'La impaciencia', 'La generosidad'], answer: 1 },
+    { type: 'short', q: '¿Cómo dicen los amigos que es? (una palabra)', accept: ['generoso', 'sincero'] },
+    { type: 'translate', line: 'De joven era muy tímido e inseguro.', model: 'When I was young I was very shy and insecure.' }
+  ]
+},
+
+{
+  id: 'a2-car-vecino', title: 'El vecino de arriba', level: 2, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El vecino de arriba parecía antipático y bastante egoísta. Nunca saludaba y siempre estaba serio. Un día se nos rompió una tubería y subió con las herramientas. Resultó ser el hombre más generoso, amable y tolerante del edificio: solo era tímido, reservado e inseguro. Ahora es el más hablador y el más alegre de todos, y muy paciente con los niños.',
+  gloss: [ { es: 'saludar', en: 'to greet' },
+           { es: 'la tubería', en: 'the pipe' },
+           { es: 'las herramientas', en: 'the tools' },
+           { es: 'resultar ser', en: 'to turn out to be' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pensaban de él al principio?',
+      options: ['Que era antipático', 'Que era simpático', 'Que era vago'], answer: 0 },
+    { type: 'mcq', q: '¿Qué era en realidad?',
+      options: ['Arrogante', 'Tímido y reservado', 'Egoísta'], answer: 1 },
+    { type: 'short', q: '¿Con qué subió? (dos palabras)', accept: ['las herramientas', 'herramientas', 'con las herramientas'] },
+    { type: 'translate', line: 'El vecino de arriba parecía antipático y bastante egoísta.', model: 'The neighbour upstairs seemed unfriendly and quite selfish.' }
+  ]
+},
+
+{
+  id: 'a2-car-hermanos', title: 'Dos hermanos, dos caracteres', level: 2, theme: 'caracter',
+  tenses: ['presente', 'imperfecto'],
+  text: 'Mis dos hijos no se parecen en nada. El mayor es serio, trabajador y muy paciente; de pequeño era tímido y bastante inseguro. El pequeño es alegre, hablador y sociable, pero también impaciente y un poco travieso. Los dos son generosos y ninguno es egoísta. Cuando eran niños, el mayor leía y el pequeño no paraba quieto. Ahora se llevan muy bien.',
+  gloss: [ { es: 'parecerse', en: 'to look alike' },
+           { es: 'travieso', en: 'naughty' },
+           { es: 'no parar quieto', en: 'to never sit still' },
+           { es: 'llevarse bien', en: 'to get on well' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es el mayor?',
+      options: ['Serio y trabajador', 'Hablador', 'Travieso'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo son los dos?',
+      options: ['Egoístas', 'Generosos', 'Impacientes'], answer: 1 },
+    { type: 'short', q: '¿Qué hacía el mayor de niño? (una palabra)', accept: ['leía', 'leer', 'leia'] },
+    { type: 'translate', line: 'Mis dos hijos no se parecen en nada.', model: 'My two sons are nothing alike.' }
+  ]
+},
+
+{
+  id: 'a2-car-amistad3', title: 'Una amistad larga', level: 3, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Conozco a Javier desde el colegio. Él siempre fue el sociable, el hablador, el optimista; yo era el reservado y el introvertido. Nunca entendí cómo aguantaba mi carácter. Con los años he visto que era más inseguro de lo que parecía y que yo era menos tímido de lo que creía. La amistad duró porque los dos somos sinceros y ninguno es arrogante ni egoísta.',
+  gloss: [ { es: 'aguantar', en: 'to put up with' },
+           { es: 'de lo que parecía', en: 'than he seemed' },
+           { es: 'durar', en: 'to last' },
+           { es: 'la amistad', en: 'friendship' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo era Javier?',
+      options: ['Sociable y hablador', 'Reservado', 'Arrogante'], answer: 0 },
+    { type: 'mcq', q: '¿Qué descubrió con los años?',
+      options: ['Que Javier era egoísta', 'Que Javier era más inseguro de lo que parecía', 'Que no eran amigos'], answer: 1 },
+    { type: 'short', q: '¿Por qué duró la amistad? (una palabra)', accept: ['sinceros', 'sinceridad', 'son sinceros'] },
+    { type: 'translate', line: 'Conozco a Javier desde el colegio.', model: 'I have known Javier since school.' }
+  ]
+},
+
+{
+  id: 'a2-car-trabajo3', title: 'Carácter y trabajo', level: 3, theme: 'caracter',
+  tenses: ['presente'],
+  text: 'En mi equipo hay de todo y funciona bien precisamente por eso. Marta es optimista, sociable y muy habladora: ella habla con los clientes. Diego es serio, paciente y reservado: él revisa los números. Hay un compañero impaciente que empuja cuando nos dormimos, y una compañera tolerante y amable que calma cuando alguien se pone nervioso. Nadie es arrogante ni egoísta, y todos son generosos con el tiempo.',
+  gloss: [ { es: 'precisamente', en: 'precisely' },
+           { es: 'revisar', en: 'to check' },
+           { es: 'empujar', en: 'to push' },
+           { es: 'calmar', en: 'to calm things down' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién habla con los clientes?',
+      options: ['Marta', 'Diego', 'El jefe'], answer: 0 },
+    { type: 'mcq', q: '¿Quién revisa los números?',
+      options: ['Marta', 'Diego', 'La compañera tolerante'], answer: 1 },
+    { type: 'short', q: '¿Cómo es el compañero que empuja? (una palabra)', accept: ['impaciente'] },
+    { type: 'translate', line: 'En mi equipo hay de todo y funciona bien precisamente por eso.', model: 'In my team there is a bit of everything and it works well precisely because of that.' }
+  ]
+}
+,
+
+{
+  id: 'a2-medios-serie2', title: 'La serie de la que todos hablan', level: 2, theme: 'medios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
+  text: 'Todo el mundo hablaba de una serie y yo no la había visto. Empecé un domingo y vi cinco capítulos seguidos. No es una telenovela ni un culebrón: es un drama con buenos actores. La cadena la puso los martes y la prensa escribió mucho sobre ella. Leí una entrevista con la directora en un suplemento y después un comentario en un foro.',
+  gloss: [ { es: 'seguidos', en: 'in a row' },
+           { es: 'la cadena', en: 'the channel' },
+           { es: 'el suplemento', en: 'the supplement' },
+           { es: 'el comentario', en: 'the comment' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántos capítulos vio el domingo?',
+      options: ['Cinco', 'Dos', 'Diez'], answer: 0 },
+    { type: 'mcq', q: '¿Qué día la ponía la cadena?',
+      options: ['Los lunes', 'Los martes', 'Los domingos'], answer: 1 },
+    { type: 'short', q: '¿Dónde leyó la entrevista? (dos palabras)', accept: ['un suplemento', 'en un suplemento', 'suplemento'] },
+    { type: 'translate', line: 'Todo el mundo hablaba de una serie y yo no la había visto.', model: 'Everyone was talking about a series and I had not seen it.' }
+  ]
+},
+
+{
+  id: 'a2-medios-antes2', title: 'Antes solo había dos canales', level: 2, theme: 'medios',
+  tenses: ['presente', 'imperfecto'],
+  text: 'Cuando yo era niño en casa solo había dos canales de televisión. Veíamos las noticias a las nueve y después una película. Mi padre compraba el periódico y un suplemento en el quiosco cada mañana, y escuchaba la radio en el coche. No existía internet ni ningún buscador: si querías un dato, mirabas en un libro. El presentador de la cadena era el mismo durante años y la prensa hablaba de él.',
+  gloss: [ { es: 'el canal', en: 'the channel' },
+           { es: 'el quiosco', en: 'the newsstand' },
+           { es: 'el dato', en: 'a fact' },
+           { es: 'el presentador', en: 'the presenter' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántos canales había?',
+      options: ['Dos', 'Tres', 'Cuatro'], answer: 0 },
+    { type: 'mcq', q: '¿A qué hora veían las noticias?',
+      options: ['A las ocho', 'A las nueve', 'A las diez'], answer: 1 },
+    { type: 'short', q: '¿Dónde compraba el periódico? (dos palabras)', accept: ['en el quiosco', 'el quiosco', 'quiosco'] },
+    { type: 'translate', line: 'Cuando yo era niño en casa solo había dos canales de televisión.', model: 'When I was a child we only had two television channels at home.' }
+  ]
+},
+
+{
+  id: 'a2-medios-bulo', title: 'Una noticia falsa', level: 2, theme: 'medios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'La semana pasada un amigo me mandó una noticia por el chat. Decía algo enorme y yo casi la reenvié. Antes de hacerlo la busqué en un buscador y no aparecía en ninguna prensa seria, ni en la radio, ni en la televisión. Era falsa. El anuncio de abajo tenía un virus y mi antivirus lo paró. Ahora miro quién la firma y qué agencia o periódico la publica.',
+  gloss: [ { es: 'reenviar', en: 'to forward' },
+           { es: 'el buscador', en: 'the search engine' },
+           { es: 'falso', en: 'false' },
+           { es: 'firmar', en: 'to sign, to byline' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué hizo antes de reenviarla?',
+      options: ['La buscó', 'La borró', 'La creyó'], answer: 0 },
+    { type: 'mcq', q: '¿Qué tenía el anuncio?',
+      options: ['Una foto', 'Un virus', 'Un vídeo'], answer: 1 },
+    { type: 'short', q: '¿Qué mira ahora primero? (dos palabras)', accept: ['quién lo firma', 'quien lo firma', 'la firma', 'quién la firma'] },
+    { type: 'translate', line: 'La semana pasada un amigo me mandó una noticia por el chat.', model: 'Last week a friend sent me a news story on the chat.' }
+  ]
+},
+
+{
+  id: 'a2-medios-radio2', title: 'La emisora de la mañana', level: 2, theme: 'medios',
+  tenses: ['presente', 'imperfecto'],
+  text: 'Cada mañana escucho la misma emisora mientras desayuno. El locutor da las noticias, hay una entrevista corta y después un debate con dos periodistas. Antes ponía la televisión, pero había demasiados anuncios y el presentador hablaba muy rápido. La radio me deja hacer otro trabajo a la vez. Los domingos compro la prensa y leo la editorial y la cartelera.',
+  gloss: [ { es: 'la emisora', en: 'the radio station' },
+           { es: 'el locutor', en: 'the presenter' },
+           { es: 'la editorial', en: 'the editorial' },
+           { es: 'la cartelera', en: 'the listings' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué escucha mientras desayuna?',
+      options: ['La radio', 'La televisión', 'Música'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué dejó la televisión?',
+      options: ['Era cara', 'Había demasiados anuncios', 'No funcionaba'], answer: 1 },
+    { type: 'short', q: '¿Qué compra los domingos? (dos palabras)', accept: ['la prensa', 'prensa', 'el periódico'] },
+    { type: 'translate', line: 'Cada mañana escucho la misma emisora mientras desayuno.', model: 'Every morning I listen to the same station while I have breakfast.' }
+  ]
+},
+
+{
+  id: 'a2-medios-carta3', title: 'La última carta', level: 3, theme: 'medios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El otro día encontré una carta de mi abuela de hace veinte años. Tenía sobre, sello y una firma temblorosa, con una posdata sobre el tiempo. Escribía el remitente arriba y el destinatario abajo, y el saludo y la despedida siempre iguales. Ahora mando un mensaje electrónico en diez segundos y recibo una llamada por el chat, pero no guardo nada. Aquella carta estuvo en un buzón días y llegó igual.',
+  gloss: [ { es: 'tembloroso', en: 'shaky' },
+           { es: 'la posdata', en: 'the postscript' },
+           { es: 'el remitente', en: 'the sender' },
+           { es: 'guardar', en: 'to keep' } ],
+  questions: [
+    { type: 'mcq', q: '¿De cuándo era la carta?',
+      options: ['De hace veinte años', 'De hace dos años', 'De este año'], answer: 0 },
+    { type: 'mcq', q: '¿Sobre qué era la posdata?',
+      options: ['Sobre la familia', 'Sobre el tiempo', 'Sobre el dinero'], answer: 1 },
+    { type: 'short', q: '¿Qué no guarda ahora? (una palabra)', accept: ['nada'] },
+    { type: 'translate', line: 'El otro día encontré una carta de mi abuela de hace veinte años.', model: 'The other day I found a letter from my grandmother from twenty years ago.' }
+  ]
+},
+
+{
+  id: 'a2-medios-debate3', title: 'Un debate en la tele', level: 3, theme: 'medios',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Anoche vi un debate en la televisión y acabé enfadado. Había cuatro personas hablando a la vez y un presentador que no cortaba a nadie. Una periodista intentó dar un dato y nadie la escuchó. En la prensa del día siguiente cada editorial contaba una noticia distinta. Al final apagué la televisión, cambié de canal y puse la radio, donde el locutor de la emisora deja terminar las frases.',
+  gloss: [ { es: 'a la vez', en: 'at the same time' },
+           { es: 'cortar', en: 'to interrupt' },
+           { es: 'el dato', en: 'a fact' },
+           { es: 'por lo menos', en: 'at least' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántas personas hablaban a la vez?',
+      options: ['Cuatro', 'Dos', 'Tres'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hizo al final?',
+      options: ['Apagó la televisión', 'Llamó a la cadena', 'Se durmió'], answer: 0 },
+    { type: 'short', q: '¿Quién intentó dar un dato? (dos palabras)', accept: ['una periodista', 'la periodista', 'periodista'] },
+    { type: 'translate', line: 'Anoche vi un debate en la televisión y acabé enfadado.', model: 'Last night I watched a debate on television and ended up annoyed.' }
+  ]
+},
+
+{
+  id: 'a2-eco-subida', title: 'Todo ha subido', level: 2, theme: 'economia',
+  tenses: ['presente', 'perfecto', 'imperfecto'],
+  text: 'Este año el alquiler ha subido dos veces y la factura de la energía también. El salario sigue igual y los impuestos no bajan. Antes ahorraba algo cada mes; ahora el ahorro es cero y tengo una deuda con el banco. He hecho un presupuesto nuevo y he quitado lo que no es necesario. El seguro del coche lo he cambiado de compañía y pago menos.',
+  gloss: [ { es: 'subir', en: 'to go up' },
+           { es: 'seguir igual', en: 'to stay the same' },
+           { es: 'quitar', en: 'to cut out' },
+           { es: 'la compañía', en: 'the company' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántas veces ha subido el alquiler?',
+      options: ['Dos', 'Una', 'Tres'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ha cambiado de compañía?',
+      options: ['La energía', 'El seguro del coche', 'El banco'], answer: 1 },
+    { type: 'short', q: '¿Cuánto es el ahorro ahora? (una palabra)', accept: ['cero', '0', 'nada'] },
+    { type: 'translate', line: 'Este año el alquiler ha subido dos veces y la factura de la energía también.', model: 'This year the rent has gone up twice and the energy bill has too.' }
+  ]
+},
+
+{
+  id: 'a2-eco-pueblo2', title: 'El pueblo se vació', level: 2, theme: 'economia',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Mi pueblo vivía de la agricultura y de la ganadería. Había un agricultor en cada casa y un pescador en el puerto. Cuando cerró la industria pequeña, la gente joven se fue a la capital a buscar trabajo. El comercio bajó y la construcción paró. Ahora queda poca producción y mucha pobreza, pero el año pasado abrió una compañía nueva y hay trabajo para veinte empleados.',
+  gloss: [ { es: 'vivir de', en: 'to live off' },
+           { es: 'cerrar', en: 'to close down' },
+           { es: 'parar', en: 'to stop' },
+           { es: 'quedar', en: 'to be left' } ],
+  questions: [
+    { type: 'mcq', q: '¿De qué vivía el pueblo?',
+      options: ['De la agricultura y la ganadería', 'Del turismo', 'De la industria'], answer: 0 },
+    { type: 'mcq', q: '¿Adónde se fue la gente joven?',
+      options: ['Al puerto', 'A la capital', 'Al extranjero'], answer: 1 },
+    { type: 'short', q: '¿Para cuántos empleados hay trabajo? (un número)', accept: ['veinte', '20'] },
+    { type: 'translate', line: 'Mi pueblo vivía de la agricultura y de la ganadería.', model: 'My village lived off farming and livestock.' }
+  ]
+},
+
+{
+  id: 'a2-eco-primer', title: 'Mi primer salario', level: 2, theme: 'economia',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Mi primer salario fue muy pequeño. Pagaba el alquiler de una habitación, la factura del teléfono y poco más. No tenía ahorro ni seguro, y la jubilación me parecía un cuento. Un mes me equivoqué con el presupuesto y tuve que pedir un préstamo a mi hermano. Aprendí a mirar cada anuncio y cada catálogo antes de comprar. Todavía miro el precio dos veces.',
+  gloss: [ { es: 'el cuento', en: 'a fairy tale' },
+           { es: 'equivocarse', en: 'to get it wrong' },
+           { es: 'el préstamo', en: 'the loan' },
+           { es: 'el catálogo', en: 'the catalogue' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo era el primer salario?',
+      options: ['Muy pequeño', 'Muy grande', 'Normal'], answer: 0 },
+    { type: 'mcq', q: '¿A quién pidió un préstamo?',
+      options: ['Al banco', 'A su hermano', 'A un amigo'], answer: 1 },
+    { type: 'short', q: '¿Qué mira todavía dos veces? (dos palabras)', accept: ['el precio', 'precio'] },
+    { type: 'translate', line: 'Mi primer salario fue muy pequeño.', model: 'My first salary was very small.' }
+  ]
+},
+
+{
+  id: 'a2-eco-publicidad', title: 'Demasiada publicidad', level: 2, theme: 'economia',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'Ayer conté los anuncios de un día y me asusté. Un cartel en la parada, un folleto en el buzón, un catálogo en el correo y publicidad en cada página. La compañía que hace el márquetin sabe lo que compro mejor que yo. La venta de este año ha subido un diez por ciento y la producción también. El empleado del comercio dice que la exhibición del sábado fue enorme.',
+  gloss: [ { es: 'asustarse', en: 'to get a fright' },
+           { es: 'el folleto', en: 'the leaflet' },
+           { es: 'el márquetin', en: 'marketing' },
+           { es: 'la exhibición', en: 'the display, the show' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué contó ayer?',
+      options: ['Los anuncios de un día', 'El dinero', 'Las facturas'], answer: 0 },
+    { type: 'mcq', q: '¿Cuánto ha subido la venta?',
+      options: ['Un cinco por ciento', 'Un diez por ciento', 'Un veinte por ciento'], answer: 1 },
+    { type: 'short', q: '¿Dónde encontró un folleto? (dos palabras)', accept: ['en el buzón', 'el buzón', 'buzón', 'en el buzon'] },
+    { type: 'translate', line: 'Ayer conté los anuncios de un día y me asusté.', model: 'Yesterday I counted the adverts in one day and got a fright.' }
+  ]
+},
+
+{
+  id: 'a2-eco-crisis3', title: 'Aquella crisis', level: 3, theme: 'economia',
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
+  text: 'En aquella crisis mi padre perdió el trabajo y estuvo dos años sin nada. La construcción paró de golpe y la industria del pueblo cerró. Vivíamos del salario de mi madre, que era pequeño, y de algún préstamo. No había ahorro, había deuda. Recuerdo a mi padre mirando cada factura y cada anuncio de trabajo del periódico. Cuando por fin encontró algo, la economía ya había cambiado y el comercio era otro.',
+  gloss: [ { es: 'de golpe', en: 'all at once' },
+           { es: 'vivir de', en: 'to live off' },
+           { es: 'recordar', en: 'to remember' },
+           { es: 'por fin', en: 'finally' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto tiempo estuvo sin trabajo el padre?',
+      options: ['Dos años', 'Un año', 'Seis meses'], answer: 0 },
+    { type: 'mcq', q: '¿De qué vivían?',
+      options: ['Del ahorro', 'Del salario de la madre', 'De la familia'], answer: 1 },
+    { type: 'short', q: '¿Qué miraba el padre en el periódico? (tres palabras)', accept: ['los anuncios de trabajo', 'anuncios de trabajo', 'cada anuncio de trabajo'] },
+    { type: 'translate', line: 'En aquella crisis mi padre perdió el trabajo y estuvo dos años sin nada.', model: 'In that crisis my father lost his job and was two years with nothing.' }
+  ]
+},
+
+{
+  id: 'a2-eco-impuestos3', title: 'La primera declaración', level: 3, theme: 'economia',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El año pasado hice mi primera declaración y no entendí nada. Me hablaron de impuestos, de la jubilación, del seguro y de un presupuesto que no era mío. Una economista del barrio me lo explicó en media hora con un folleto y un catálogo de casos. Descubrí que el salario que veía no era el salario real y que la deuda del préstamo también contaba. Ahora guardo cada factura.',
+  gloss: [ { es: 'la declaración', en: 'the tax return' },
+           { es: 'descubrir', en: 'to discover' },
+           { es: 'real', en: 'actual' },
+           { es: 'contar', en: 'to count' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué hizo el año pasado?',
+      options: ['Su primera declaración', 'Un préstamo', 'Un presupuesto'], answer: 0 },
+    { type: 'mcq', q: '¿Quién se lo explicó?',
+      options: ['Un amigo', 'Una economista', 'El banco'], answer: 1 },
+    { type: 'short', q: '¿Qué guarda ahora? (dos palabras)', accept: ['cada factura', 'las facturas', 'factura', 'facturas'] },
+    { type: 'translate', line: 'El año pasado hice mi primera declaración y no entendí nada.', model: 'Last year I did my first tax return and understood nothing.' }
+  ]
+},
+
+{
+  id: 'a2-pol-obras', title: 'Las obras del centro', level: 2, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Hace dos años el ayuntamiento cerró el centro al tráfico. Al principio hubo una manifestación y muchos comerciantes estaban en contra. El político del distrito vino a explicar la ley y casi nadie le escuchó. Ahora hay terrazas y el comercio vende más. El gobierno de la comunidad y el ministerio dicen que es un progreso; algunos ciudadanos todavía no están de acuerdo y hablan de una crisis de educación cívica.',
+  gloss: [ { es: 'estar en contra', en: 'to be against' },
+           { es: 'el comerciante', en: 'the shopkeeper' },
+           { es: 'pasear', en: 'to stroll' },
+           { es: 'estar de acuerdo', en: 'to agree' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué hizo el ayuntamiento?',
+      options: ['Cerró el centro al tráfico', 'Abrió una calle', 'Subió los impuestos'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pasa ahora con el comercio?',
+      options: ['Vende menos', 'Vende más', 'Ha cerrado'], answer: 1 },
+    { type: 'short', q: '¿Quién vino a explicar la ley? (dos palabras)', accept: ['el político', 'político', 'el politico'] },
+    { type: 'translate', line: 'Hace dos años el ayuntamiento cerró el centro al tráfico.', model: 'Two years ago the council closed the centre to traffic.' }
+  ]
+},
+
+{
+  id: 'a2-pol-votar2', title: 'La primera vez que voté', level: 2, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'La primera vez que voté tenía dieciocho años y no sabía nada de política. Mi padre era de un partido político y mi madre de otro, y en casa no se hablaba del gobierno ni del presidente. Fui al colegio del barrio, di mi nombre, y metí el papel en la urna. Salí con la sensación de ser un ciudadano de la nación, con derechos y deberes, y pensé en la democracia y en la constitución.',
+  gloss: [ { es: 'la urna', en: 'the ballot box' },
+           { es: 'la sensación', en: 'the feeling' },
+           { es: 'de verdad', en: 'for real' },
+           { es: 'los deberes', en: 'duties' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántos años tenía?',
+      options: ['Dieciocho', 'Veinte', 'Veintiuno'], answer: 0 },
+    { type: 'mcq', q: '¿De qué no se hablaba en casa?',
+      options: ['Del dinero', 'Del gobierno', 'Del trabajo'], answer: 1 },
+    { type: 'short', q: '¿Dónde votó? (tres palabras)', accept: ['en el colegio', 'el colegio del barrio', 'colegio', 'en el colegio del barrio'] },
+    { type: 'translate', line: 'La primera vez que voté tenía dieciocho años y no sabía nada de política.', model: 'The first time I voted I was eighteen and knew nothing about politics.' }
+  ]
+},
+
+{
+  id: 'a2-pol-guerra2', title: 'Lo que contaba mi abuelo', level: 2, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Mi abuelo vivió una guerra de niño. Contaba que había soldados en la plaza, un general en el ayuntamiento y que el ejército entró un domingo. Su padre era político y tuvo que irse. Después de muchos años llegó la paz, y más tarde la democracia, una constitución y un parlamento. Él decía que una dictadura se reconoce en seguida y que el ciudadano lo sabe aunque calle.',
+  gloss: [ { es: 'contar', en: 'to tell' },
+           { es: 'irse', en: 'to leave' },
+           { es: 'en seguida', en: 'straight away' },
+           { es: 'aunque', en: 'even though' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué vivió el abuelo de niño?',
+      options: ['Una guerra', 'Una manifestación', 'Una crisis'], answer: 0 },
+    { type: 'mcq', q: '¿Qué era su padre?',
+      options: ['Soldado', 'Político', 'General'], answer: 1 },
+    { type: 'short', q: '¿Qué llegó después de muchos años? (una palabra)', accept: ['la paz', 'paz'] },
+    { type: 'translate', line: 'Mi abuelo vivió una guerra de niño.', model: 'My grandfather lived through a war as a child.' }
+  ]
+},
+
+{
+  id: 'a2-pol-vecinos2', title: 'La reunión de vecinos', level: 2, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'El jueves hubo una reunión en la comunidad. Queríamos hablar con el ayuntamiento del distrito sobre la educación de los niños del barrio y sobre una ley nueva. Vino una concejala del gobierno local y también un sociólogo. Discutimos con cortesía, aunque un ciudadano se puso nervioso. Al final firmamos un papel. No queremos una manifestación: queremos progreso y que alguien nos escuche.',
+  gloss: [ { es: 'la concejala', en: 'the councillor' },
+           { es: 'discutir', en: 'to argue, to debate' },
+           { es: 'la cortesía', en: 'politeness' },
+           { es: 'firmar', en: 'to sign' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué día fue la reunión?',
+      options: ['El jueves', 'El viernes', 'El martes'], answer: 0 },
+    { type: 'mcq', q: '¿Quién vino del gobierno local?',
+      options: ['Un ministro', 'Una concejala', 'El presidente'], answer: 1 },
+    { type: 'short', q: '¿Qué firmaron al final? (dos palabras)', accept: ['un papel', 'papel'] },
+    { type: 'translate', line: 'El jueves hubo una reunión en la comunidad.', model: 'On Thursday there was a meeting of the residents\' association.' }
+  ]
+},
+
+{
+  id: 'a2-pol-ley3', title: 'Una ley que cambió las cosas', level: 3, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Hace veinte años el parlamento aprobó una ley que cambió la vida de mucha gente. Al principio hubo debate en el congreso, en el senado y una manifestación grande en la capital. Unos decían que era un progreso para la sociedad; otros, que el gobierno y el ministerio iban demasiado deprisa. La juez que la aplicó salió en toda la prensa. Hoy casi ningún ciudadano se acuerda de aquella discusión.',
+  gloss: [ { es: 'aprobar', en: 'to pass (a law)' },
+           { es: 'deprisa', en: 'fast' },
+           { es: 'aplicar', en: 'to apply' },
+           { es: 'acordarse de', en: 'to remember' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién aprobó la ley?',
+      options: ['El parlamento', 'El rey', 'El ayuntamiento'], answer: 0 },
+    { type: 'mcq', q: '¿Quién salió en toda la prensa?',
+      options: ['El presidente', 'La juez', 'El ministro'], answer: 1 },
+    { type: 'short', q: '¿Dónde fue la manifestación? (dos palabras)', accept: ['en la capital', 'la capital', 'capital'] },
+    { type: 'translate', line: 'Hace veinte años el parlamento aprobó una ley que cambió la vida de mucha gente.', model: 'Twenty years ago parliament passed a law that changed many people\'s lives.' }
+  ]
+},
+
+{
+  id: 'a2-pol-embajada3', title: 'Un papel en la embajada', level: 3, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
+  text: 'Cuando vivía en el extranjero tuve que ir a la embajada por un papel. El cónsul no estaba y me atendió un funcionario que llevaba veinte años en el consulado. Me explicó que la ley de la nación había cambiado, que el ministerio pedía otro documento y que el gobierno lo había aprobado en el congreso. Volví tres veces. Entendí por qué un ciudadano se cansa de la política.',
+  gloss: [ { es: 'el cónsul', en: 'the consul' },
+           { es: 'el funcionario', en: 'the official' },
+           { es: 'hacer falta', en: 'to be needed' },
+           { es: 'conseguir', en: 'to get, to manage' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién le atendió?',
+      options: ['Un funcionario', 'El cónsul', 'El embajador'], answer: 0 },
+    { type: 'mcq', q: '¿Cuántas veces volvió?',
+      options: ['Dos', 'Tres', 'Cuatro'], answer: 1 },
+    { type: 'short', q: '¿Qué había cambiado? (dos palabras)', accept: ['la ley', 'ley', 'la ley del país'] },
+    { type: 'translate', line: 'Cuando vivía en el extranjero tuve que ir a la embajada por un papel.', model: 'When I lived abroad I had to go to the embassy for a document.' }
+  ]
+}
+,
+
+{
+  id: 'b1-via-cancelado', title: 'Vuelo cancelado', level: 4, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'impsubj'],
+  text: 'Llevábamos dos horas en la terminal cuando anunciaron que el vuelo estaba cancelado. La compañía dijo que nos daría alojamiento y desayuno, pero en la ventanilla había cien viajeros y dos empleados. Una mujer con dos niños pedía que le buscaran cualquier avión; otro hombre exigía que le devolvieran el billete entero. Nosotros cogimos el equipaje y un taxi hasta un hostal del centro, y a la mañana siguiente salimos en tren. La estación estaba llena y el andén helado, pero el viaje fue tranquilo. Cuando por fin llegamos, la maleta apareció tres días después, en otro aeropuerto y con el candado roto.',
+  gloss: [ { es: 'anunciar', en: 'to announce' },
+           { es: 'exigir', en: 'to demand' },
+           { es: 'helado', en: 'freezing' },
+           { es: 'el candado', en: 'the padlock' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué prometió la compañía?',
+      options: ['Alojamiento y desayuno', 'Otro vuelo inmediato', 'Dinero'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo salieron al día siguiente?',
+      options: ['En avión', 'En tren', 'En autobús'], answer: 1 },
+    { type: 'short', q: '¿Cuándo apareció la maleta? (tres palabras)', accept: ['tres días después', 'tres dias despues', 'tres días'] },
+    { type: 'translate', line: 'Llevábamos dos horas en la terminal cuando anunciaron que el vuelo estaba cancelado.', model: 'We had been in the terminal for two hours when they announced the flight was cancelled.' }
+  ]
+},
+
+{
+  id: 'b1-via-carretera', title: 'Por la carretera vieja', level: 4, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc'],
+  text: 'Mi padre no soportaba la autopista. Decía que la circulación te lleva pero no te enseña nada, y que si un día tuviera tiempo iría por la carretera vieja hasta el puerto. Cuando yo era niño lo hicimos: tres días de curvas, una gasolinera cada cincuenta kilómetros y un mecánico que nos cambió una rueda en un pueblo sin nombre. Dormíamos en pensiones donde el conserje nos daba una manta extra y el desayuno estaba incluido. No había aparcamiento, ni prisa, ni carril rápido. Cuando llegamos al mar, mi padre aparcó, miró el agua y dijo que el viaje ya había terminado.',
+  gloss: [ { es: 'no soportar', en: 'to not stand' },
+           { es: 'las curvas', en: 'the bends' },
+           { es: 'incluido', en: 'included' },
+           { es: 'la prisa', en: 'the rush' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué no le gustaba la autopista?',
+      options: ['No enseña nada', 'Era cara', 'Había accidentes'], answer: 0 },
+    { type: 'mcq', q: '¿Cuántos días duró el viaje?',
+      options: ['Dos', 'Tres', 'Cuatro'], answer: 1 },
+    { type: 'short', q: '¿Quién les daba una manta extra? (dos palabras)', accept: ['el conserje', 'conserje'] },
+    { type: 'translate', line: 'Mi padre no soportaba la autopista.', model: 'My father could not stand the motorway.' }
+  ]
+},
+
+{
+  id: 'b1-via-hostal', title: 'El hostal del puerto', level: 5, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'condperf', 'perfsubj'],
+  text: 'Si hubiéramos reservado antes, no habríamos acabado en aquel hostal. La recepcionista nos dijo que la habitación tenía baño y vistas, y en realidad daba a un aparcamiento. El conserje subió el equipaje sin que nadie se lo pidiera y nos dejó dos mantas, porque la calefacción llevaba meses rota. Aun así fue el mejor alojamiento del viaje: el marinero de la barca de al lado nos llevó a ver el puerto de madrugada, y el capitán nos explicó por qué aquel muelle ya no se usa. La pensión completa era mala, pero a nadie le importó. Volvería mañana. El aparcamiento estaba siempre lleno y el conserje aparcaba los coches él mismo.',
+  gloss: [ { es: 'dar a', en: 'to look out onto' },
+           { es: 'aun así', en: 'even so' },
+           { es: 'de madrugada', en: 'at dawn' },
+           { es: 'el muelle', en: 'the quay' } ],
+  questions: [
+    { type: 'mcq', q: '¿A qué daba la habitación?',
+      options: ['A un aparcamiento', 'Al mar', 'A la plaza'], answer: 0 },
+    { type: 'mcq', q: '¿Quién les enseñó el puerto?',
+      options: ['El conserje', 'El marinero', 'La recepcionista'], answer: 1 },
+    { type: 'short', q: '¿Qué llevaba meses rota? (dos palabras)', accept: ['la calefacción', 'calefacción', 'la calefaccion'] },
+    { type: 'translate', line: 'Si hubiéramos reservado antes, no habríamos acabado en aquel hostal.', model: 'If we had booked earlier, we would not have ended up in that guesthouse.' }
+  ]
+},
+
+{
+  id: 'b1-via-montana2', title: 'La excursión que salió mal', level: 4, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto', 'impsubj', 'plusc'],
+  text: 'El montañero nos había avisado de que saliéramos temprano, pero nos dormimos. Cuando llegamos a la parada del autobús ya era mediodía y el sol pegaba fuerte. Una senderista del grupo llevaba el mapa; un escalador, el plano del refugio. A media tarde el camino se perdió entre las piedras y alguien propuso que volviéramos. Discutimos media hora. Al final bajamos por otra vía hasta un campin donde nos dieron agua y nos dejaron llamar. El conductor del último autobús nos esperó diez minutos, algo que todavía le agradezco. Desde entonces salgo siempre a la hora que dice quien sabe del monte.',
+  gloss: [ { es: 'avisar', en: 'to warn' },
+           { es: 'pegar fuerte', en: 'to beat down' },
+           { es: 'el refugio', en: 'the mountain hut' },
+           { es: 'proponer', en: 'to suggest' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué llegaron tarde?',
+      options: ['Se durmieron', 'Perdieron el autobús', 'Llovía'], answer: 0 },
+    { type: 'mcq', q: '¿Qué propuso alguien a media tarde?',
+      options: ['Seguir', 'Que volvieran', 'Acampar'], answer: 1 },
+    { type: 'short', q: '¿Cuántos minutos les esperó el conductor? (un número)', accept: ['diez', '10'] },
+    { type: 'translate', line: 'El montañero nos había avisado de que saliéramos temprano, pero nos dormimos.', model: 'The mountaineer had warned us to set off early, but we overslept.' }
+  ]
+},
+
+{
+  id: 'b1-serv-reclamacion', title: 'Una reclamación que funcionó', level: 4, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj'],
+  text: 'Llevaba tres meses pagando una factura que no me correspondía. Llamé al banco, fui a la oficina y hablé con tres empleados distintos; todos me dijeron que lo mirarían. Cuando entendí que nadie lo miraría, pedí una hoja de reclamaciones. El empleado cambió de cara. Me pidió que esperara, llamó a alguien y en veinte minutos el cargo había desaparecido. No me devolvieron los tres meses hasta que escribí una carta a la dirección, con copia al ayuntamiento y a los servicios sociales del distrito. Aprendí dos cosas: que hay que pedir el papel, y que conviene guardar cada documento. Ahora guardo cada factura, cada carta, cada postal y cada documento de identidad en una carpeta, y cuando voy al banco o a correos pido siempre un papel firmado. El empleado de correos ya me conoce, el cajero automático también, y la tarjeta la reviso cada mes.',
+  gloss: [ { es: 'corresponder', en: 'to be due from someone' },
+           { es: 'la hoja de reclamaciones', en: 'the complaints form' },
+           { es: 'el cargo', en: 'the charge' },
+           { es: 'convenir', en: 'to be advisable' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto tiempo pagó la factura?',
+      options: ['Tres meses', 'Un mes', 'Un año'], answer: 0 },
+    { type: 'mcq', q: '¿Qué cambió la situación?',
+      options: ['Una llamada', 'Pedir la hoja de reclamaciones', 'Ir al banco'], answer: 1 },
+    { type: 'short', q: '¿Qué escribió para recuperar el dinero? (dos palabras)', accept: ['una carta', 'carta', 'una carta a la dirección'] },
+    { type: 'translate', line: 'Llevaba tres meses pagando una factura que no me correspondía.', model: 'I had been paying a bill that was not mine for three months.' }
+  ]
+},
+
+{
+  id: 'b1-serv-cita-online', title: 'La cita que no existía', level: 4, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'impsubj'],
+  text: 'La página del ayuntamiento decía que había citas libres, pero cada vez que elegía una, el sistema me pedía que empezara otra vez. Después de cuarenta minutos llamé por teléfono y una voz grabada me dijo que pidiera la cita por internet. Al día siguiente fui en persona a la comisaría con el documento de identidad y el permiso de residencia. Un vigilante me explicó que muchos mayores del barrio llevaban semanas igual y que un voluntario de una ong iba los martes a ayudarles. Me pareció bien que alguien lo hiciera, y mal que hiciera falta. Al final conseguí la cita para renovar el carné y de paso cambiar dinero en el banco. Salí de la comisaría con el documento de identidad y la tarjeta en la mano, pasé por correos a echar una carta y un socorro mental me subió el ánimo: los servicios sociales del barrio también ayudan con esto.',
+  gloss: [ { es: 'la voz grabada', en: 'the recorded voice' },
+           { es: 'en persona', en: 'in person' },
+           { es: 'llevar semanas', en: 'to have spent weeks' },
+           { es: 'hacer falta', en: 'to be necessary' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué le pedía el sistema?',
+      options: ['Que empezara otra vez', 'Su documento', 'Dinero'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le dijo la voz grabada?',
+      options: ['Que fuera en persona', 'Que pidiera la cita por internet', 'Que esperara'], answer: 1 },
+    { type: 'short', q: '¿Qué día va el voluntario? (dos palabras)', accept: ['los martes', 'martes', 'el martes'] },
+    { type: 'translate', line: 'Me pareció bien que alguien lo hiciera, y mal que hiciera falta.', model: 'I thought it was good that somebody did it, and bad that it was needed.' }
+  ]
+},
+
+{
+  id: 'b1-serv-correos2', title: 'El paquete perdido', level: 4, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
+  text: 'El paquete salió de correos un lunes y desapareció. La empresa decía que lo había entregado; el cartero, que nunca lo había visto. Pasé una semana llamando y escribiendo hasta que una empleada de correos, harta de mi voz, buscó el código a mano y lo encontró en otra provincia. Me pidió disculpas y me explicó que si el destinatario no firma, el paquete vuelve al remitente sin aviso. Cuando por fin llegó, llevaba tres sellos distintos y el sobre roto. Dentro estaba el documento que necesitaba para renovar el permiso de residencia, intacto. Desde entonces mando todo certificado y guardo el resguardo. En correos me explicaron que si hubiera puesto bien el nombre del destinatario, el cartero lo habría entregado a la primera. Ahora pongo dos sellos, escribo la dirección dos veces y, si es un documento de identidad o una tarjeta, lo llevo yo al banco en mano. Una postal se puede perder; un documento, no.',
+  gloss: [ { es: 'entregar', en: 'to deliver' },
+           { es: 'harto', en: 'fed up' },
+           { es: 'a mano', en: 'by hand' },
+           { es: 'intacto', en: 'untouched' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién encontró el paquete?',
+      options: ['Una empleada de correos', 'El cartero', 'La empresa'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pasa si el destinatario no firma?',
+      options: ['Se pierde', 'Vuelve al remitente', 'Lo guardan'], answer: 1 },
+    { type: 'short', q: '¿Cómo llegó el sobre? (una palabra)', accept: ['roto'] },
+    { type: 'translate', line: 'El paquete salió de correos un lunes y desapareció.', model: 'The parcel left the post office on a Monday and disappeared.' }
+  ]
+},
+
+{
+  id: 'b1-serv-urgencias2', title: 'Lo que aprendí en urgencias', level: 5, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'condperf', 'perfsubj'],
+  text: 'Si hubiera sabido lo que sé ahora, habría llamado antes al teléfono de emergencia. Aquella noche pensé que se me pasaría y esperé cuatro horas. Cuando por fin llamamos, la ambulancia tardó ocho minutos y la enfermera que venía dentro me dijo, sin reñirme, que el tiempo es lo único que no se recupera. En urgencias había un vigilante cansado, dos bomberos que traían a otro paciente y una psicóloga hablando con una familia. Nadie corría, pero nadie perdía un segundo. Desde entonces, cuando dudo, llamo. Prefiero que me digan que no era nada. Al salir, un voluntario de una ong nos ofreció café. En la clínica del barrio me hicieron el seguimiento una semana después. La enfermera me dio el teléfono de emergencia escrito a mano, me recordó que el socorro se pide pronto o no sirve de nada. En la comisaría de al lado, un empleado repartía folletos con los servicios sociales del distrito.',
+  gloss: [ { es: 'pasarse', en: 'to go away (of pain)' },
+           { es: 'reñir', en: 'to tell off' },
+           { es: 'recuperar', en: 'to get back' },
+           { es: 'dudar', en: 'to be unsure' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto esperó antes de llamar?',
+      options: ['Cuatro horas', 'Ocho minutos', 'Un día'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le dijo la enfermera?',
+      options: ['Que había hecho bien', 'Que el tiempo no se recupera', 'Que volviera a casa'], answer: 1 },
+    { type: 'short', q: '¿Cuánto tardó la ambulancia? (dos palabras)', accept: ['ocho minutos', '8 minutos', 'ocho'] },
+    { type: 'translate', line: 'Si hubiera sabido lo que sé ahora, habría llamado antes al teléfono de emergencia.', model: 'If I had known what I know now, I would have rung the emergency number sooner.' }
+  ]
+},
+
+{
+  id: 'b1-salud-espalda', title: 'La espalda y el trabajo', level: 4, theme: 'salud',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'impsubj'],
+  text: 'El médico del centro de salud me dijo que no tomara más pastillas y que cambiara de vida. Yo esperaba una receta y salí con una lista de ejercicios. Al principio me pareció poco: ningún antibiótico, ninguna medicina, solo andar media hora y moverme cada rato. Tardé dos meses en notar algo. El dolor no desapareció del todo, pero pasé de pensar en la espalda cada hora a no acordarme en toda la mañana. En la última cita médica me hicieron un análisis y un chequeo, y la enfermera me dijo que siguiera igual. Ahora voy al centro de salud solo para el chequeo anual. La farmacia de la esquina, donde antes compraba una medicina cada semana, ya casi no me ve. El dolor vuelve si paso muchas horas sentado, pero sé qué hacer y ya no pienso en el hospital.',
+  gloss: [ { es: 'cada rato', en: 'every so often' },
+           { es: 'tardar en', en: 'to take (time) to' },
+           { es: 'del todo', en: 'completely' },
+           { es: 'acordarse', en: 'to remember' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué esperaba del médico?',
+      options: ['Una receta', 'Una operación', 'Un análisis'], answer: 0 },
+    { type: 'mcq', q: '¿Cuánto tardó en notar algo?',
+      options: ['Dos semanas', 'Dos meses', 'Un año'], answer: 1 },
+    { type: 'short', q: '¿Qué le dijo la enfermera en la última cita? (dos palabras)', accept: ['que siguiera igual', 'siguiera igual', 'que siguiera'] },
+    { type: 'translate', line: 'El médico del centro de salud me dijo que no tomara más pastillas y que cambiara de vida.', model: 'The doctor at the health centre told me to stop taking pills and to change my life.' }
+  ]
+},
+
+{
+  id: 'b1-salud-gripe', title: 'La gripe de enero', level: 4, theme: 'salud',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'plusc'],
+  text: 'En enero cayó media oficina con gripe. Los que se habían puesto la vacuna en octubre pasaron una semana con tos; los demás, dos con fiebre alta. Yo fui de los segundos. Mi médico me mandó reposo y nada más: ni antibiótico, ni jarabe, solo agua, una aspirina si el dolor era fuerte y el termómetro a mano. Me costó aceptar que contra un virus no hay medicina. Lo peor no fue la fiebre sino la semana siguiente, cuando ya no estaba enfermo pero todavía no era yo. El año que viene me pondré la vacuna en octubre. En la farmacia me dieron unas gotas para la garganta y una crema, poco más. La enfermera del centro de salud me explicó que la vacuna no evita el virus pero sí la peor parte, y que el año pasado media ciudad estuvo en urgencias por lo mismo.',
+  gloss: [ { es: 'caer', en: 'to go down (with an illness)' },
+           { es: 'el reposo', en: 'rest' },
+           { es: 'el jarabe', en: 'the syrup' },
+           { es: 'a mano', en: 'to hand' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quiénes pasaron solo una semana?',
+      options: ['Los que se habían vacunado', 'Los más jóvenes', 'Nadie'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le mandó el médico?',
+      options: ['Un antibiótico', 'Reposo', 'Un análisis'], answer: 1 },
+    { type: 'short', q: '¿Cuándo se pondrá la vacuna? (una palabra)', accept: ['en octubre', 'octubre'] },
+    { type: 'translate', line: 'Me costó aceptar que contra un virus no hay medicina.', model: 'It was hard for me to accept that there is no medicine against a virus.' }
+  ]
+},
+
+{
+  id: 'b1-salud-ansiedad', title: 'Cuando pedí ayuda', level: 5, theme: 'salud',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'condperf', 'perfsubj'],
+  text: 'Habría pedido ayuda mucho antes si alguien me hubiera dicho que la ansiedad también es salud. Durante un año dormí mal, tenía dolor de estómago cada mañana y le echaba la culpa al café. Fui al centro de salud por lo del estómago y salí con una cita de terapia. La psicóloga no me dio ninguna pastilla: me pidió que escribiera lo que pensaba a las tres de la madrugada. Tardé meses. Ahora tengo malas semanas, como todo el mundo, pero sé qué hacer con ellas y a quién llamar si el estrés vuelve. También me cambió la salud física: dejé de tener dolor de estómago, empecé a dormir y en el chequeo del centro de salud todo salió bien. Nunca tomé ninguna medicina, ni una pastilla, ni un antibiótico. A veces pienso en la gente que no pide la cita médica.',
+  gloss: [ { es: 'echar la culpa a', en: 'to blame' },
+           { es: 'lo del estómago', en: 'the stomach business' },
+           { es: 'la madrugada', en: 'the small hours' },
+           { es: 'tardar', en: 'to take a long time' } ],
+  questions: [
+    { type: 'mcq', q: '¿A qué le echaba la culpa?',
+      options: ['Al café', 'Al trabajo', 'Al sueño'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le pidió la psicóloga?',
+      options: ['Que tomara pastillas', 'Que escribiera lo que pensaba', 'Que descansara'], answer: 1 },
+    { type: 'short', q: '¿Por qué fue al centro de salud? (dos palabras)', accept: ['por el estómago', 'el estómago', 'lo del estómago', 'por lo del estómago'] },
+    { type: 'translate', line: 'Habría pedido ayuda mucho antes si alguien me hubiera dicho que la ansiedad también es salud.', model: 'I would have asked for help much sooner if somebody had told me that anxiety is health too.' }
+  ]
+},
+
+{
+  id: 'b1-salud-dieta', title: 'El chequeo de los cuarenta', level: 4, theme: 'salud',
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro'],
+  text: 'A los cuarenta me hicieron el primer chequeo serio. El análisis salió casi bien: una cosa alta, nada grave, pero suficiente para que el médico me mirara por encima de las gafas. Me dijo que llevara una vida sana sin decirme cómo, así que empecé por lo evidente: menos alcohol, más verdura, andar. La enfermera me tomó la tensión cada mes durante medio año. No he vuelto a tener dolor de cabeza por la tarde y duermo mejor. Lo único que echo de menos es la costumbre de tomar algo al salir del trabajo. En la farmacia me pesan cada mes y en el centro de salud me repiten el análisis en primavera. Mi médico dice que la mejor medicina es la que no hace falta comprar, y que un chequeo a tiempo evita muchas pastillas y alguna visita a urgencias.',
+  gloss: [ { es: 'por encima de', en: 'over the top of' },
+           { es: 'lo evidente', en: 'the obvious' },
+           { es: 'la tensión', en: 'blood pressure' },
+           { es: 'echar de menos', en: 'to miss' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo salió el análisis?',
+      options: ['Casi bien', 'Muy mal', 'Perfecto'], answer: 0 },
+    { type: 'mcq', q: '¿Cada cuánto le tomaba la tensión la enfermera?',
+      options: ['Cada semana', 'Cada mes', 'Cada año'], answer: 1 },
+    { type: 'short', q: '¿Qué echa de menos? (tres palabras)', accept: ['tomar algo al salir', 'la costumbre', 'tomar algo'] },
+    { type: 'translate', line: 'A los cuarenta me hicieron el primer chequeo serio.', model: 'At forty I had my first proper check-up.' }
+  ]
+}
+,
+
+{
+  id: 'b1-ident-nacionalidad', title: 'Pedir la nacionalidad', level: 4, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro'],
+  text: 'Cuando decidí pedir la nacionalidad llevaba once años aquí. Me pidieron el pasaporte, el carné, el certificado de nacimiento con el lugar de nacimiento y la fecha de nacimiento, y un papel que demostrara mi dirección. Cambié de dirección en mitad del proceso y tuve que empezar otra vez: nuevo código postal, nueva avenida, nuevo número de teléfono. El funcionario me dijo que era normal y que no me preocupara. Hice un examen sobre la constitución y otro de idioma. El día que me llamaron para decirme que ya era español, yo estaba en el trabajo con la agenda abierta y no supe qué contestar. Ahora, cuando alguien me pregunta de dónde soy, tardo un segundo de más.',
+  gloss: [ { es: 'demostrar', en: 'to prove' },
+           { es: 'en mitad de', en: 'halfway through' },
+           { es: 'el proceso', en: 'the process' },
+           { es: 'tardar', en: 'to take (time)' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántos años llevaba aquí?',
+      options: ['Once', 'Diez', 'Cinco'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué tuvo que empezar otra vez?',
+      options: ['Perdió los papeles', 'Cambió de dirección', 'Suspendió el examen'], answer: 1 },
+    { type: 'short', q: '¿Sobre qué hizo un examen? (dos palabras)', accept: ['la constitución', 'constitución', 'la constitucion'] },
+    { type: 'translate', line: 'Cuando decidí pedir la nacionalidad llevaba once años aquí.', model: 'When I decided to apply for citizenship I had been here eleven years.' }
+  ]
+},
+
+{
+  id: 'b1-ident-dos-apellidos', title: 'Dos apellidos', level: 4, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj'],
+  text: 'Fuera de España nadie entiende que tengamos dos apellidos. En cada formulario extranjero hay una casilla para el nombre y otra para el apellido, y yo nunca sé cuál poner. En el pasaporte aparecen los dos; en la tarjeta de crédito, solo el primero; en la tarjeta de estudiante de aquella universidad, los dos juntos y sin espacio, como si fueran una palabra. Una vez un empleado de un banco me dijo que el segundo apellido era mi estado civil. Le expliqué que era el apellido de mi madre y que aquí no se pierde cuando alguien se casa. Se quedó pensando y me dijo que le parecía mejor sistema. Desde entonces escribo los dos apellidos en la misma casilla y que cada uno lo entienda como quiera. En el carné y en el documento de identidad, al menos, están los dos, junto al lugar de nacimiento y la fecha de nacimiento.',
+  gloss: [ { es: 'la casilla', en: 'the box' },
+           { es: 'el formulario', en: 'the form' },
+           { es: 'juntos', en: 'together' },
+           { es: 'quedarse pensando', en: 'to be left thinking' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué aparece en la tarjeta de crédito?',
+      options: ['Solo el primer apellido', 'Los dos', 'Ninguno'], answer: 0 },
+    { type: 'mcq', q: '¿Qué creía el empleado del banco?',
+      options: ['Que era el nombre', 'Que era el estado civil', 'Que era un error'], answer: 1 },
+    { type: 'short', q: '¿De quién es el segundo apellido? (dos palabras)', accept: ['de su madre', 'su madre', 'la madre', 'de la madre'] },
+    { type: 'translate', line: 'Fuera de España nadie entiende que tengamos dos apellidos.', model: 'Outside Spain nobody understands that we have two surnames.' }
+  ]
+},
+
+{
+  id: 'b1-ident-mudanzas', title: 'Siete direcciones', level: 5, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'condperf'],
+  text: 'Si contara todas las direcciones en las que he vivido, saldrían siete. Un piso en las afueras con un código postal que nunca aprendí; una habitación en una avenida ruidosa; un pueblo donde el número de la casa no servía de nada porque todos sabían quién era el extranjero. Cada mudanza significaba cambiar el carné, la dirección electrónica del trabajo, la tarjeta de la biblioteca y avisar al banco. Siempre perdía algo: las llaves, el paraguas, una agenda con teléfonos que ya no existen. Habría jurado que la octava sería la definitiva, pero de momento sigo guardando las cajas. Mi hermana dice que no me mudo de casa, me mudo de vida.',
+  gloss: [ { es: 'la mudanza', en: 'the house move' },
+           { es: 'avisar', en: 'to notify' },
+           { es: 'jurar', en: 'to swear' },
+           { es: 'de momento', en: 'for now' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántas direcciones ha tenido?',
+      options: ['Siete', 'Ocho', 'Cinco'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dice su hermana?',
+      options: ['Que se muda demasiado', 'Que no se muda de casa sino de vida', 'Que debería quedarse'], answer: 1 },
+    { type: 'short', q: '¿Qué sigue guardando? (dos palabras)', accept: ['las cajas', 'cajas'] },
+    { type: 'translate', line: 'Si contara todas las direcciones en las que he vivido, saldrían siete.', model: 'If I counted all the addresses I have lived at, it would come to seven.' }
+  ]
+},
+
+{
+  id: 'b1-ident-documento', title: 'El día que perdí el documento', level: 4, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'futuro', 'impsubj'],
+  text: 'Perdí el documento de identidad un viernes por la tarde, justo antes de un viaje. En la comisaría me dijeron que pidiera un duplicado y que tardaría diez días, o que solicitara un documento provisional en el momento. Elegí lo segundo. Me hicieron una foto horrible, comprobaron mi nombre, mis dos apellidos, la fecha de nacimiento y la dirección, y me dieron un papel con un número. Con ese papel viajé, abrí una cuenta y hasta entré en un edificio oficial. El carné definitivo llegó tres semanas más tarde. Lo guardo ahora en la cartera con el pasaporte, la tarjeta de crédito y una foto de mi hija, que es lo único que no se puede renovar.',
+  gloss: [ { es: 'el duplicado', en: 'the duplicate' },
+           { es: 'provisional', en: 'temporary' },
+           { es: 'solicitar', en: 'to request' },
+           { es: 'definitivo', en: 'permanent' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué eligió?',
+      options: ['Un documento provisional', 'Esperar diez días', 'No hacer nada'], answer: 0 },
+    { type: 'mcq', q: '¿Cuándo llegó el carné definitivo?',
+      options: ['En diez días', 'Tres semanas más tarde', 'Nunca'], answer: 1 },
+    { type: 'short', q: '¿Qué es lo único que no se puede renovar? (tres palabras)', accept: ['una foto de su hija', 'la foto de su hija', 'la foto', 'una foto'] },
+    { type: 'translate', line: 'Perdí el documento de identidad un viernes por la tarde, justo antes de un viaje.', model: 'I lost my ID card on a Friday afternoon, just before a trip.' }
+  ]
+},
+
+{
+  id: 'b1-cuerpo-operacion', title: 'La rodilla', level: 4, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional'],
+  text: 'Me operaron de la rodilla a los treinta y cinco. Antes de la operación no podía doblar la pierna ni subir escaleras, y el dolor me subía hasta la cintura y la espalda. El médico me dijo que si no quería pasarme la vida así, tendría que operarme. Después vinieron tres meses de ejercicios: mover el tobillo, el pie, los dedos, estirar los músculos, cuidar la postura. Aprendí más de huesos y músculos en ese trimestre que en toda mi vida. Ahora corro otra vez, despacio, y noto la rodilla solo cuando cambia el tiempo. El cuerpo perdona, pero se acuerda.',
+  gloss: [ { es: 'doblar', en: 'to bend' },
+           { es: 'estirar', en: 'to stretch' },
+           { es: 'el trimestre', en: 'the three months' },
+           { es: 'perdonar', en: 'to forgive' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué no podía hacer antes?',
+      options: ['Doblar la pierna', 'Andar', 'Dormir'], answer: 0 },
+    { type: 'mcq', q: '¿Cuánto duraron los ejercicios?',
+      options: ['Un mes', 'Tres meses', 'Un año'], answer: 1 },
+    { type: 'short', q: '¿Cuándo nota la rodilla ahora? (tres palabras)', accept: ['cuando cambia el tiempo', 'cuando cambia el tiempo.', 'al cambiar el tiempo'] },
+    { type: 'translate', line: 'El cuerpo perdona, pero se acuerda.', model: 'The body forgives, but it remembers.' }
+  ]
+},
+
+{
+  id: 'b1-cuerpo-retrato2', title: 'El retrato de mi madre', level: 4, theme: 'cuerpo',
+  tenses: ['presente', 'perfecto', 'imperfecto', 'condicional', 'impsubj'],
+  text: 'Si alguien me pidiera que describiera a mi madre, no empezaría por la cara. Empezaría por las manos: grandes, con los dedos fuertes de cortar verdura durante cincuenta años. Tenía el pelo oscuro hasta los sesenta y luego blanco de golpe, la piel muy clara y unos ojos que no se perdían nada. Era baja, de hombros estrechos y espalda recta hasta el final. Andaba rápido, con las piernas cortas, y siempre iba dos metros por delante. De la cara recuerdo sobre todo la mirada, que decía más que la boca. Yo he heredado su nariz y, dicen mis hijos, su manera de mover la cabeza cuando algo no me convence.',
+  gloss: [ { es: 'estrecho', en: 'narrow' },
+           { es: 'recto', en: 'straight' },
+           { es: 'heredar', en: 'to inherit' },
+           { es: 'convencer', en: 'to convince' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por dónde empezaría la descripción?',
+      options: ['Por las manos', 'Por la cara', 'Por el pelo'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo se le puso el pelo a los sesenta?',
+      options: ['Más oscuro', 'Blanco de golpe', 'Corto'], answer: 1 },
+    { type: 'short', q: '¿Qué ha heredado de ella? (dos palabras)', accept: ['su nariz', 'la nariz', 'nariz'] },
+    { type: 'translate', line: 'Si alguien me pidiera que describiera a mi madre, no empezaría por la cara.', model: 'If somebody asked me to describe my mother, I would not start with her face.' }
+  ]
+},
+
+{
+  id: 'b1-cuerpo-deporte2', title: 'Volver a mover el cuerpo', level: 5, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
+  text: 'Habría empezado mucho antes si hubiera sabido lo que iba a cambiar. Llevaba años sentado ocho horas al día, con el cuello duro, los hombros subidos y las muñecas mal. Empecé a hacer ejercicio sin ninguna ambición: veinte minutos, mover los brazos, las piernas, la cintura, estirar la espalda. Al mes ya dormía mejor. A los seis meses había perdido la barriga que creía definitiva y el corazón me iba más despacio en reposo. Lo que más me sorprendió no fue el tipo ni la figura, sino la cabeza: los músculos cansados por la tarde me dejaban la mente tranquila por la noche. El cuerpo y la cabeza son el mismo aparato.',
+  gloss: [ { es: 'la ambición', en: 'ambition' },
+           { es: 'en reposo', en: 'at rest' },
+           { es: 'sorprender', en: 'to surprise' },
+           { es: 'el aparato', en: 'the machine' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántas horas pasaba sentado?',
+      options: ['Ocho', 'Seis', 'Diez'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le sorprendió más?',
+      options: ['El tipo', 'El efecto en la cabeza', 'El corazón'], answer: 1 },
+    { type: 'short', q: '¿Cuánto duraba el ejercicio al principio? (dos palabras)', accept: ['veinte minutos', '20 minutos', 'veinte'] },
+    { type: 'translate', line: 'El cuerpo y la cabeza son el mismo aparato.', model: 'The body and the mind are the same machine.' }
+  ]
+},
+
+{
+  id: 'b1-cuerpo-edad2', title: 'Cumplir años por dentro', level: 4, theme: 'cuerpo',
+  tenses: ['presente', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Nadie te avisa de que la edad se nota primero por dentro. La cara tarda; la piel aguanta; el pelo, según la suerte de cada uno. Pero los huesos por la mañana, la espalda después de un viaje largo, la rodilla al bajar escaleras: eso llega antes. Mi padre decía a los cincuenta que estaba igual que a los treinta, y era verdad de cuello para arriba. De cuello para abajo se levantaba como quien negocia. Yo he aprendido a hacer gimnasia sin que nadie me lo pida y a mirar la postura cuando trabajo. No quiero tener buen tipo; quiero llegar a los ochenta moviendo los brazos y las piernas sin pensarlo.',
+  gloss: [ { es: 'avisar', en: 'to warn' },
+           { es: 'aguantar', en: 'to hold up' },
+           { es: 'según', en: 'depending on' },
+           { es: 'negociar', en: 'to negotiate' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde se nota la edad primero?',
+      options: ['Por dentro', 'En la cara', 'En el pelo'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo era su padre de cuello para arriba a los cincuenta?',
+      options: ['Cansado', 'Igual que a los treinta', 'Mayor'], answer: 1 },
+    { type: 'short', q: '¿Qué quiere hacer a los ochenta? (dos palabras)', accept: ['moverse', 'moviendo los brazos', 'mover los brazos', 'moverse sin pensarlo'] },
+    { type: 'translate', line: 'Nadie te avisa de que la edad se nota primero por dentro.', model: 'Nobody warns you that age shows on the inside first.' }
+  ]
+},
+
+{
+  id: 'b1-car-cambiar', title: '¿Se cambia de carácter?', level: 4, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj'],
+  text: 'Mi hermano era el niño más tímido del colegio. No hablaba con nadie, se ponía rojo si un profesor le preguntaba y sus notas decían siempre lo mismo: inteligente pero muy reservado. A los veinte se fue a vivir fuera y volvió siendo otro: sociable, hablador, hasta un poco arrogante. Mi madre dice que no cambió, que solo dejó de tener miedo. Yo creo que las dos cosas son verdad. Sigue siendo paciente y generoso, como siempre, y sigue sin soportar a la gente egoísta. Lo que cambió fue lo de fuera. Lo de dentro, el carácter serio y sincero que tenía a los ocho años, sigue exactamente igual.',
+  gloss: [ { es: 'ponerse rojo', en: 'to blush' },
+           { es: 'las notas', en: 'school reports' },
+           { es: 'dejar de', en: 'to stop doing' },
+           { es: 'lo de fuera', en: 'the outside' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo era el hermano de niño?',
+      options: ['Muy tímido', 'Hablador', 'Arrogante'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dice la madre?',
+      options: ['Que cambió mucho', 'Que solo dejó de tener miedo', 'Que sigue siendo tímido'], answer: 1 },
+    { type: 'short', q: '¿A qué gente sigue sin soportar? (una palabra)', accept: ['egoísta', 'la gente egoísta', 'egoista'] },
+    { type: 'translate', line: 'Mi hermano era el niño más tímido del colegio.', model: 'My brother was the shyest child at school.' }
+  ]
+},
+
+{
+  id: 'b1-car-equipo2', title: 'Contratar por el carácter', level: 4, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'En mi empresa hemos aprendido a contratar por el carácter. El currículum dice si alguien sabe hacer el trabajo; la entrevista, si vamos a poder trabajar con esa persona dos años. Buscamos gente sincera, tolerante y bastante paciente, porque aquí nada sale a la primera. Un candidato brillante y arrogante hace más daño que uno normal y generoso. Tampoco queremos que todos sean iguales: hace falta alguien impaciente que empuje y alguien reservado que piense antes de hablar. La última vez elegimos a una mujer tímida frente a un hombre muy hablador, y fue la mejor decisión del año. Era tímida en la entrevista y resultó ser la persona más trabajadora, alegre y amable del equipo. El jefe, que es optimista por naturaleza, dice que el carácter se ve en la tercera semana, cuando algo sale mal y hay que ser sincero.',
+  gloss: [ { es: 'contratar', en: 'to hire' },
+           { es: 'el currículum', en: 'the CV' },
+           { es: 'a la primera', en: 'first time' },
+           { es: 'frente a', en: 'rather than' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué dice el currículum?',
+      options: ['Si sabe hacer el trabajo', 'Cómo es la persona', 'Nada'], answer: 0 },
+    { type: 'mcq', q: '¿Quién hace más daño?',
+      options: ['Uno normal y generoso', 'Uno brillante y arrogante', 'Uno impaciente'], answer: 1 },
+    { type: 'short', q: '¿A quién eligieron la última vez? (dos palabras)', accept: ['una mujer tímida', 'a una mujer tímida', 'la mujer tímida', 'una mujer'] },
+    { type: 'translate', line: 'En mi empresa hemos aprendido a contratar por el carácter.', model: 'At my company we have learned to hire for character.' }
+  ]
+},
+
+{
+  id: 'b1-car-paciencia', title: 'La paciencia se aprende', level: 5, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'condperf', 'perfsubj'],
+  text: 'De joven yo era impaciente con todo y con todos. Si alguien me hubiera dicho que la paciencia se aprende, no lo habría creído: pensaba que uno nace tranquilo o nace nervioso. Después tuve hijos. Con el primero seguí siendo el mismo hombre intolerante que esperaba que un niño de tres años fuera razonable. Con el segundo entendí algo: no es que me haya vuelto más paciente, es que he dejado de creer que la prisa sirve para algo. Sigo siendo poco sociable y bastante reservado, y eso no ha cambiado. Pero de aquel carácter fuerte y arrogante queda menos de lo que yo creía. Mis hijos dicen que soy amable y tolerante; mis compañeros, que soy serio y poco hablador. Las dos cosas son ciertas. Un carácter no es una etiqueta: es lo que uno hace cuando está cansado y nadie lo mira.',
+  gloss: [ { es: 'razonable', en: 'reasonable' },
+           { es: 'volverse', en: 'to become' },
+           { es: 'la prisa', en: 'rushing' },
+           { es: 'quedar', en: 'to be left' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pensaba de joven?',
+      options: ['Que uno nace tranquilo o nervioso', 'Que la paciencia se aprende', 'Que no importaba'], answer: 0 },
+    { type: 'mcq', q: '¿Qué entendió con el segundo hijo?',
+      options: ['Que era más paciente', 'Que la prisa no sirve', 'Que era intolerante'], answer: 1 },
+    { type: 'short', q: '¿Qué no ha cambiado en él? (dos palabras)', accept: ['poco sociable', 'reservado', 'ser reservado', 'bastante reservado'] },
+    { type: 'translate', line: 'De joven yo era impaciente con todo y con todos.', model: 'When I was young I was impatient with everything and everyone.' }
+  ]
+},
+
+{
+  id: 'b1-car-amigos2', title: 'El amigo difícil', level: 4, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'presubj', 'perfsubj'],
+  text: 'Todos tenemos un amigo difícil. El mío es generoso hasta lo absurdo y al mismo tiempo el hombre más egoísta que conozco con su tiempo. Es alegre y sociable en una fiesta, y luego desaparece dos meses sin contestar. Es sincero, a veces demasiado: dice lo que piensa aunque nadie se lo haya pedido. Mucha gente lo encuentra antipático y arrogante; yo sé que es profundamente inseguro. Con los años he dejado de esperar que sea otro. No es paciente, no es tolerante y no va a cambiar. Pero el día que se me murió mi padre, apareció a las seis de la mañana sin que nadie lo llamara.',
+  gloss: [ { es: 'hasta lo absurdo', en: 'to an absurd degree' },
+           { es: 'desaparecer', en: 'to disappear' },
+           { es: 'profundamente', en: 'deeply' },
+           { es: 'aparecer', en: 'to turn up' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es en una fiesta?',
+      options: ['Alegre y sociable', 'Reservado', 'Antipático'], answer: 0 },
+    { type: 'mcq', q: '¿Qué cree el narrador que es en realidad?',
+      options: ['Arrogante', 'Profundamente inseguro', 'Egoísta'], answer: 1 },
+    { type: 'short', q: '¿A qué hora apareció cuando murió su padre? (dos palabras)', accept: ['a las seis', 'las seis', 'seis'] },
+    { type: 'translate', line: 'Todos tenemos un amigo difícil.', model: 'We all have a difficult friend.' }
+  ]
+}
+,
+
+{
+  id: 'b1-medios-dejar', title: 'Dejar las redes', level: 4, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Dejé las redes hace dos años y todavía me preguntan si me arrepiento. La verdad es que al principio fue raro: me enteraba de las noticias un día tarde y no sabía de qué hablaba la gente. Ahora leo la prensa por la mañana, escucho una emisora mientras cocino y veo un documental en la televisión los domingos. Lo que he ganado no es tiempo, es atención. Antes leía cuarenta titulares y no recordaba ninguno; ahora leo tres artículos y me acuerdo. Mi hermana dice que me he vuelto aburrido, y puede que tenga razón, pero ya no discuto con nadie en ningún foro a las dos de la mañana. El quiosco de la esquina me ve más que antes: compro el periódico del domingo con su suplemento y de vez en cuando una revista. En la cadena pública hay un debate que no me pierdo y un buen locutor de radio.',
+  gloss: [ { es: 'arrepentirse', en: 'to regret' },
+           { es: 'enterarse', en: 'to find out' },
+           { es: 'el titular', en: 'the headline' },
+           { es: 'puede que', en: 'it may be that' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué dice que ha ganado?',
+      options: ['Atención', 'Tiempo', 'Dinero'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dice su hermana?',
+      options: ['Que tiene razón', 'Que se ha vuelto aburrido', 'Que vuelva'], answer: 1 },
+    { type: 'short', q: '¿Qué escucha mientras cocina? (dos palabras)', accept: ['una emisora', 'la radio', 'emisora', 'una emisora de radio'] },
+    { type: 'translate', line: 'Lo que he ganado no es tiempo, es atención.', model: 'What I have gained is not time, it is attention.' }
+  ]
+},
+
+{
+  id: 'b1-medios-periodista', title: 'Una entrevista difícil', level: 4, theme: 'medios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional'],
+  text: 'Mi prima es periodista en una cadena local y hace un año le tocó una entrevista complicada. El entrevistado, un político del ayuntamiento, quería que le mandaran las preguntas antes. Ella dijo que no. La dirección de la emisora le pidió que lo pensara, porque era el mejor programa del año y la audiencia importaba. Ella siguió diciendo que no y la entrevista se hizo igual, en directo, sin preguntas pactadas. Al día siguiente la prensa habló más del método que del contenido. Ella dice que el periodismo empieza justo ahí: en decir que no a quien puede darte un titular. La cadena repitió la entrevista en el informativo de la noche y el canal de la competencia habló de ella en su tertulia. Un locutor de otra emisora dijo en la radio que ningún periodista debería aceptar preguntas pactadas, y la prensa escrita publicó una editorial en la misma línea. La audiencia fue la mejor del año.',
+  gloss: [ { es: 'tocarle a alguien', en: 'to fall to someone' },
+           { es: 'la audiencia', en: 'the audience figures' },
+           { es: 'pactado', en: 'agreed in advance' },
+           { es: 'el contenido', en: 'the content' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué quería el político?',
+      options: ['Las preguntas antes', 'Más tiempo', 'Otro presentador'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo se hizo la entrevista?',
+      options: ['Grabada', 'En directo', 'No se hizo'], answer: 1 },
+    { type: 'short', q: '¿De qué habló la prensa al día siguiente? (dos palabras)', accept: ['del método', 'el método', 'método', 'el metodo'] },
+    { type: 'translate', line: 'El entrevistado, un político del ayuntamiento, quería que le mandaran las preguntas antes.', model: 'The interviewee, a councillor, wanted the questions sent to him in advance.' }
+  ]
+},
+
+{
+  id: 'b1-medios-antes3', title: 'El quiosco de la esquina', level: 5, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
+  text: 'Si me hubieran dicho a los veinte años que el quiosco de mi calle cerraría, no lo habría creído. Allí compraba el periódico, el suplemento del domingo y una revista que ya no existe. El quiosquero sabía qué cadena veía cada vecino y qué emisora escuchaba. Cuando cerró, la prensa en papel ya llevaba años bajando: la gente leía las noticias en el móvil y el anuncio había cambiado de sitio. No echo de menos el papel, echo de menos al hombre que le decía a uno si el titular de portada era exagerado. Un buscador nunca me ha dicho eso. Ahora el anuncio vive en la pantalla y la noticia se lee en el móvil, sin portada y sin quiosquero.',
+  gloss: [ { es: 'el quiosquero', en: 'the newsagent' },
+           { es: 'bajar', en: 'to decline' },
+           { es: 'la portada', en: 'the front page' },
+           { es: 'exagerado', en: 'over the top' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué compraba en el quiosco?',
+      options: ['El periódico y el suplemento', 'Solo tabaco', 'Libros'], answer: 0 },
+    { type: 'mcq', q: '¿Qué echa de menos?',
+      options: ['El papel', 'Al quiosquero', 'La revista'], answer: 1 },
+    { type: 'short', q: '¿Dónde lee la gente las noticias ahora? (dos palabras)', accept: ['en el móvil', 'el móvil', 'móvil', 'en el movil'] },
+    { type: 'translate', line: 'Un buscador nunca me ha dicho eso.', model: 'A search engine has never told me that.' }
+  ]
+},
+
+{
+  id: 'b1-medios-doblaje', title: 'En versión original', level: 4, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Empecé a ver la televisión en versión original para aprender idiomas y acabé cambiando de gustos. Los primeros capítulos de una serie fueron durísimos: leía los subtítulos y no miraba la imagen. A los dos meses ya no leía todo. Ahora veo un documental sin subtítulos y una película con ellos, según el acento. La cadena pública tiene un canal donde se puede elegir, y eso me ha ahorrado mucha discusión en casa. Mi madre dice que el doblaje de aquí es el mejor del mundo, y puede que sea verdad, pero prefiero oír la voz del actor aunque entienda la mitad. El presentador de un programa de la radio decía que el doblaje nos ha dado una prensa audiovisual cómoda pero sorda. La emisora recibió cien llamadas y un foro entero se llenó de comentarios.',
+  gloss: [ { es: 'durísimo', en: 'extremely hard' },
+           { es: 'los subtítulos', en: 'the subtitles' },
+           { es: 'según', en: 'depending on' },
+           { es: 'el doblaje', en: 'dubbing' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué empezó a ver en versión original?',
+      options: ['Para aprender idiomas', 'Por gusto', 'Por el doblaje'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dice su madre?',
+      options: ['Que es mejor con subtítulos', 'Que el doblaje de aquí es el mejor', 'Que no importa'], answer: 1 },
+    { type: 'short', q: '¿Cuánto tardó en dejar de leer todo? (dos palabras)', accept: ['dos meses', 'a los dos meses', 'dos'] },
+    { type: 'translate', line: 'A los dos meses ya no leía todo.', model: 'After two months I was no longer reading all of it.' }
+  ]
+},
+
+{
+  id: 'b1-eco-hipoteca', title: 'La hipoteca y el miedo', level: 4, theme: 'economia',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj'],
+  text: 'Firmamos la hipoteca sin entender la mitad de lo que firmábamos. El empleado del banco hablaba de tipo de interés, de seguro y de un préstamo a treinta años como quien habla del tiempo. Nos dijo que si subían los intereses la cuota subiría un poco. Subió bastante más que un poco. Durante dos años el presupuesto de casa fue el alquiler que no pagábamos, la factura de la energía y poco más: ningún ahorro, ninguna vacación. Ahora la deuda baja y respiramos. Lo que aprendí no es que la hipoteca sea mala, sino que hay que entender el papel antes de firmarlo, aunque tarde una tarde entera.',
+  gloss: [ { es: 'la cuota', en: 'the monthly payment' },
+           { es: 'el tipo de interés', en: 'the interest rate' },
+           { es: 'respirar', en: 'to breathe' },
+           { es: 'tardar', en: 'to take (time)' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué dijo el empleado del banco?',
+      options: ['Que la cuota subiría un poco', 'Que no subiría', 'Que bajaría'], answer: 0 },
+    { type: 'mcq', q: '¿Qué aprendió?',
+      options: ['Que la hipoteca es mala', 'Que hay que entender el papel antes de firmarlo', 'Que no hay que comprar'], answer: 1 },
+    { type: 'short', q: '¿Cuántos años era el préstamo? (un número)', accept: ['treinta', '30'] },
+    { type: 'translate', line: 'Firmamos la hipoteca sin entender la mitad de lo que firmábamos.', model: 'We signed the mortgage without understanding half of what we were signing.' }
+  ]
+},
+
+{
+  id: 'b1-eco-negocio', title: 'Un negocio pequeño', level: 4, theme: 'economia',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Mi tía abrió una tienda con cuarenta años y sin saber nada de comercio. El primer presupuesto lo hizo en una servilleta: el alquiler del local, la factura de la luz, el salario de una empleada y el préstamo del banco. La producción la compraba a un agricultor del pueblo y a un pescador del puerto, sin intermediarios. El primer año perdió dinero. El segundo, la venta subió lo suficiente para pagar la deuda. Dice que lo difícil no fue el márquetin ni el catálogo, sino aguantar catorce meses sin saber si la economía de su casa iba a sobrevivir.',
+  gloss: [ { es: 'la servilleta', en: 'the napkin' },
+           { es: 'el intermediario', en: 'the middleman' },
+           { es: 'lo suficiente', en: 'enough' },
+           { es: 'sobrevivir', en: 'to survive' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde hizo el primer presupuesto?',
+      options: ['En una servilleta', 'En el ordenador', 'En el banco'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pasó el segundo año?',
+      options: ['Perdió dinero', 'La venta subió', 'Cerró'], answer: 1 },
+    { type: 'short', q: '¿Cuántos meses aguantó sin saber? (un número)', accept: ['catorce', '14'] },
+    { type: 'translate', line: 'Mi tía abrió una tienda con cuarenta años y sin saber nada de comercio.', model: 'My aunt opened a shop at forty knowing nothing about trade.' }
+  ]
+},
+
+{
+  id: 'b1-eco-sueldo', title: 'Hablar del salario', level: 5, theme: 'economia',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj', 'condperf', 'perfsubj'],
+  text: 'En mi primer trabajo nadie hablaba del salario. Si alguien hubiera dicho en voz alta cuánto ganaba, habría sido casi un escándalo. Cuando cambié de empresa descubrí que un compañero con menos años cobraba un veinte por ciento más que yo, y entendí a quién beneficiaba aquel silencio. Ahora, cuando alguien joven me pregunta, se lo digo. Le explico también lo que no se ve: el seguro, la jubilación, los impuestos que se pagan sobre el salario y la diferencia enorme entre lo que la compañía gasta y lo que llega a la cuenta. No es una cuestión de dinero, es una cuestión de información. Le enseño también el folleto del convenio, el catálogo de categorías y la factura mensual que la compañía paga por cada empleado. La economía de una casa no se entiende mirando solo el ahorro: hay que ver la deuda, el alquiler y el presupuesto entero.',
+  gloss: [ { es: 'en voz alta', en: 'out loud' },
+           { es: 'cobrar', en: 'to earn, to be paid' },
+           { es: 'beneficiar', en: 'to benefit' },
+           { es: 'la cuestión', en: 'the matter' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué descubrió al cambiar de empresa?',
+      options: ['Que un compañero cobraba más', 'Que ganaba bien', 'Que nadie cobraba'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hace ahora si alguien joven le pregunta?',
+      options: ['No contesta', 'Se lo dice', 'Cambia de tema'], answer: 1 },
+    { type: 'short', q: '¿Cuánto más cobraba el compañero? (tres palabras)', accept: ['un veinte por ciento', 'veinte por ciento', 'un 20 por ciento'] },
+    { type: 'translate', line: 'No es una cuestión de dinero, es una cuestión de información.', model: 'It is not a question of money, it is a question of information.' }
+  ]
+},
+
+{
+  id: 'b1-eco-pueblo3', title: 'La fábrica que se fue', level: 4, theme: 'economia',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'La industria que daba trabajo a medio pueblo cerró en marzo. Doscientos empleados a la calle y un comercio que vivía de ellos. La construcción ya estaba parada y la agricultura da poco. Al principio hubo enfado; después, silencio. Mucha gente joven se fue a la capital y algunas casas llevan dos años vacías. El ayuntamiento habla de un plan para traer otra compañía, pero un plan no paga una factura. Lo raro es que la economía del país crece, según dicen. Aquí la riqueza de las noticias y la pobreza de la calle no se parecen en nada. Un economista de la televisión explicó que la producción del país sube porque la industria se ha movido a otra provincia. Aquí eso no es un dato: es una casa vacía por calle.',
+  gloss: [ { es: 'a la calle', en: 'out of work' },
+           { es: 'el enfado', en: 'anger' },
+           { es: 'vacío', en: 'empty' },
+           { es: 'parecerse', en: 'to resemble' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuántos empleados perdieron el trabajo?',
+      options: ['Doscientos', 'Cien', 'Cincuenta'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dice del plan del ayuntamiento?',
+      options: ['Que funcionará', 'Que un plan no paga una factura', 'Que es caro'], answer: 1 },
+    { type: 'short', q: '¿Adónde se fue la gente joven? (dos palabras)', accept: ['a la capital', 'la capital', 'capital'] },
+    { type: 'translate', line: 'La industria que daba trabajo a medio pueblo cerró en marzo.', model: 'The industry that gave work to half the village closed in March.' }
+  ]
+},
+
+{
+  id: 'b1-pol-concejala', title: 'Una concejala en el bar', level: 4, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj'],
+  text: 'La concejala de mi distrito viene al bar de abajo los jueves. No es un acto ni una campaña: se sienta y escucha. Al principio la gente iba a protestar por una ley del ayuntamiento y por el ruido; ahora van a contarle cosas que ningún ministerio sabría. Un día le dijeron que el autobús de las siete no servía porque nadie del barrio trabaja a esa hora. Lo cambió en un mes. Yo no estoy de acuerdo con su partido político casi en nada, pero creo que la democracia se parece más a eso que a un debate en el congreso. Un sociólogo del ayuntamiento vino un jueves a escuchar y dijo que aquello era más útil que una encuesta. La ley se hace en el parlamento, pero la sociedad se explica en un bar de barrio, con la cortesía justa y un ciudadano hablando de la educación de sus hijos.',
+  gloss: [ { es: 'el acto', en: 'the official event' },
+           { es: 'la campaña', en: 'the campaign' },
+           { es: 'protestar', en: 'to complain' },
+           { es: 'parecerse a', en: 'to resemble' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué día viene la concejala?',
+      options: ['Los jueves', 'Los martes', 'Los viernes'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pasó con el autobús de las siete?',
+      options: ['Lo quitaron', 'Lo cambió en un mes', 'Nada'], answer: 1 },
+    { type: 'short', q: '¿Está de acuerdo con su partido? (una palabra)', accept: ['no'] },
+    { type: 'translate', line: 'La concejala de mi distrito viene al bar de abajo los jueves.', model: 'The councillor for my district comes to the bar downstairs on Thursdays.' }
+  ]
+},
+
+{
+  id: 'b1-pol-abuela', title: 'El primer voto de mi abuela', level: 4, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto', 'plusc'],
+  text: 'Mi abuela votó por primera vez a los cuarenta y tres años. Había vivido una guerra de niña y una dictadura entera de adulta, y contaba que en su casa no se hablaba del gobierno ni delante de los hijos. Cuando llegó la democracia y se aprobó la constitución, se puso el abrigo bueno para ir al colegio electoral. Decía que aquel día entendió la palabra ciudadano. Nunca nos dijo a qué partido votaba: sostenía que eso era suyo. Murió a los noventa sin faltar a una sola votación, ni municipal, ni del parlamento, ni de la comunidad. En su casa se guardaba la constitución en un cajón, junto al documento y las llaves. Decía que un ciudadano sin derechos no es un ciudadano, y que los deberes también contaban. Nunca fue a una manifestación ni a un acto de ningún partido político, pero jamás faltó a una votación del ayuntamiento.',
+  gloss: [ { es: 'el abrigo bueno', en: 'one\'s best coat' },
+           { es: 'el colegio electoral', en: 'the polling station' },
+           { es: 'sostener', en: 'to maintain' },
+           { es: 'faltar a', en: 'to miss' } ],
+  questions: [
+    { type: 'mcq', q: '¿A qué edad votó por primera vez?',
+      options: ['A los cuarenta y tres', 'A los dieciocho', 'A los treinta'], answer: 0 },
+    { type: 'mcq', q: '¿Decía a quién votaba?',
+      options: ['Sí', 'No', 'Solo a la familia'], answer: 1 },
+    { type: 'short', q: '¿Qué se puso para ir a votar? (tres palabras)', accept: ['el abrigo bueno', 'abrigo bueno', 'el abrigo'] },
+    { type: 'translate', line: 'Mi abuela votó por primera vez a los cuarenta y tres años.', model: 'My grandmother voted for the first time at forty-three.' }
+  ]
+},
+
+{
+  id: 'b1-pol-ley4', title: 'Cuando la ley llega tarde', level: 5, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'presubj', 'impsubj', 'plusc', 'condperf', 'perfsubj'],
+  text: 'Si el parlamento hubiera aprobado aquella ley diez años antes, mucha gente se habría ahorrado mucho. El debate en el congreso duró dos legislaturas y cada gobierno lo dejó para el siguiente. Hubo manifestación tras manifestación y el ministerio prometía que lo estaba estudiando. Cuando por fin salió, la mitad de los ciudadanos que la habían pedido ya no la necesitaba. No es que la democracia sea lenta: es que lo urgente para un ciudadano casi nunca es urgente para un político. La juez que tuvo que aplicarla el primer año dijo en la prensa que llegaba tarde pero que llegaba, y en eso tenía razón.',
+  gloss: [ { es: 'la legislatura', en: 'the parliamentary term' },
+           { es: 'dejar para', en: 'to leave to' },
+           { es: 'tras', en: 'after' },
+           { es: 'urgente', en: 'urgent' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuánto duró el debate?',
+      options: ['Dos legislaturas', 'Un año', 'Diez años'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dijo la juez?',
+      options: ['Que era mala', 'Que llegaba tarde pero que llegaba', 'Que no servía'], answer: 1 },
+    { type: 'short', q: '¿Quién prometía que lo estaba estudiando? (dos palabras)', accept: ['el ministerio', 'ministerio'] },
+    { type: 'translate', line: 'Si el parlamento hubiera aprobado aquella ley diez años antes, mucha gente se habría ahorrado mucho.', model: 'If parliament had passed that law ten years earlier, many people would have been spared a lot.' }
+  ]
+},
+
+{
+  id: 'b1-pol-embajada4', title: 'Un ciudadano fuera', level: 4, theme: 'politica',
+  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'impsubj'],
+  text: 'Vivir fuera te enseña lo que es un país cuando lo miras desde la embajada. La primera vez que fui al consulado a votar, había tres personas y un funcionario aburrido. La segunda vez, con una crisis en medio, la cola daba la vuelta al edificio. El cónsul salió a explicar el procedimiento y alguien le gritó que el gobierno no se acordaba de los que estaban fuera. Él contestó con mucha cortesía que él no era el gobierno, y tenía razón. Desde entonces voto siempre por correo y leo el programa de cada partido político como quien lee un contrato. Leo el programa de cada partido y sigo el debate del congreso por internet, aunque el parlamento quede a tres mil kilómetros. La democracia, vista desde fuera, se parece mucho a un trámite: hay que hacerlo aunque nadie te vea.',
+  gloss: [ { es: 'dar la vuelta a', en: 'to go right round' },
+           { es: 'el procedimiento', en: 'the procedure' },
+           { es: 'gritar', en: 'to shout' },
+           { es: 'el contrato', en: 'the contract' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo estaba el consulado la segunda vez?',
+      options: ['Lleno', 'Vacío', 'Cerrado'], answer: 0 },
+    { type: 'mcq', q: '¿Qué contestó el cónsul?',
+      options: ['Que tenían razón', 'Que él no era el gobierno', 'Que volvieran otro día'], answer: 1 },
+    { type: 'short', q: '¿Cómo vota ahora? (dos palabras)', accept: ['por correo', 'correo'] },
+    { type: 'translate', line: 'Desde entonces voto siempre por correo y leo el programa de cada partido político como quien lee un contrato.', model: 'Since then I always vote by post and read every party\'s manifesto the way you read a contract.' }
+  ]
+}
+,
+
+{
+  id: 'b2-via-turismo', title: 'El pueblo que se llenó', level: 6, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto'],
+  text: 'Hace quince años, aquel pueblo del interior tenía dos calles, un hostal con seis habitaciones y una pensión que cerraba en invierno. El alojamiento no era un negocio: era un favor que la familia del conserje hacía a los pocos viajeros que se perdían por la carretera vieja. Después llegó un reportaje, y detrás del reportaje llegaron los coches. Hoy hay cuatro aparcamientos, una terminal de autobuses que no existía y un tráfico que en agosto colapsa la única vía de entrada. Los vecinos se dividen. Unos recuerdan que antes no había trabajo y que los jóvenes cogían el tren y no volvían; ahora la recepcionista del hotel nuevo es la hija del panadero y se ha quedado. Otros señalan que el alquiler se ha triplicado, que ningún conductor local encuentra sitio para aparcar y que el puerto de montaña, antes silencioso, se ha convertido en una cola de excursiones. La discusión rara vez se plantea bien. No se trata de elegir entre el pueblo vacío y el pueblo lleno, sino de decidir quién pone las condiciones: cuántas plazas de campin se autorizan, qué parte del beneficio se queda, si el andén de la estación se reabre o si todo el mundo debe llegar en coche. Donde eso se ha decidido con calma, el turismo ha sido una oportunidad. Donde no, ha sido una mudanza colectiva con maletas ajenas.',
+  gloss: [ { es: 'colapsar', en: 'bloquear por completo el paso, hasta que nada circula' },
+           { es: 'triplicarse', en: 'multiplicarse por tres' },
+           { es: 'plantear', en: 'presentar o formular un asunto para discutirlo' },
+           { es: 'ajeno', en: 'que pertenece a otra persona' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué había en el pueblo hace quince años?',
+      options: ['Un hostal y una pensión', 'Cuatro aparcamientos', 'Una terminal'], answer: 0 },
+    { type: 'mcq', q: 'Según el texto, ¿cuál es la verdadera cuestión?',
+      options: ['Elegir entre lleno y vacío', 'Quién pone las condiciones', 'Cerrar la carretera'], answer: 1 },
+    { type: 'short', q: '¿Quién es la recepcionista del hotel nuevo? (cuatro palabras)', accept: ['la hija del panadero', 'hija del panadero', 'la hija del panadero.'] },
+    { type: 'translate', line: 'No se trata de elegir entre el pueblo vacío y el pueblo lleno, sino de decidir quién pone las condiciones: cuántas plazas de campin se autorizan, qué parte del beneficio se queda, si el andén de la estación se reabre o si todo el mundo debe llegar en coche.', model: 'It is not about choosing between the empty village and the full one, but about deciding who sets the terms: how many campsite pitches are authorised, what share of the profit stays, whether the station platform reopens or whether everyone has to arrive by car.' }
+  ]
+},
+
+{
+  id: 'b2-serv-ventanilla-algoritmo', title: 'La ventanilla y el algoritmo', level: 6, theme: 'servicios',
+  tenses: ['presente', 'perfecto', 'presubj'],
+  text: 'La administración ha hecho un cálculo razonable y ha llegado a una conclusión equivocada. El cálculo es que casi todo el mundo tiene un móvil, que una cita por internet cuesta una fracción de lo que cuesta una ventanilla abierta, y que digitalizar un trámite ahorra millones. La conclusión equivocada es que, por tanto, la ventanilla sobra. Quien diseña un formulario no suele ser quien lo rellena. El documento de identidad caducado, el permiso de residencia que exige un papel del ayuntamiento que a su vez exige el permiso, la firma que no se acepta porque el archivo pesa demasiado: cada uno de esos obstáculos es trivial para quien tiene banda ancha, tiempo y costumbre, y es un muro para quien no. En mi barrio, un voluntario de una ong pasa los martes por el centro cívico y dedica la mañana a rellenar solicitudes ajenas. Ha sustituido, sin cobrar, al empleado que el Estado retiró. Nadie discute que un cajero automático sea más cómodo que una cola en el banco, ni que pedir cita desde casa sea preferible a madrugar. El error está en confundir el canal mayoritario con el canal único. Un servicio público se mide por lo que ocurre en el peor caso, no en el más frecuente: por la persona mayor sin correo electrónico, por el que acaba de llegar, por quien llama al teléfono de emergencia y necesita que responda una voz.',
+  gloss: [ { es: 'digitalizar', en: 'convertir un trámite en papel en uno electrónico' },
+           { es: 'sobrar', en: 'resultar innecesario, estar de más' },
+           { es: 'banda ancha', en: 'conexión rápida y estable a internet' },
+           { es: 'mayoritario', en: 'que corresponde a la mayoría' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es, según el texto, la conclusión equivocada?',
+      options: ['Que la ventanilla sobra', 'Que digitalizar ahorra', 'Que todos tienen móvil'], answer: 0 },
+    { type: 'mcq', q: '¿Cómo se mide un servicio público?',
+      options: ['Por el caso más frecuente', 'Por lo que ocurre en el peor caso', 'Por el coste'], answer: 1 },
+    { type: 'short', q: '¿Qué día pasa el voluntario? (dos palabras)', accept: ['los martes', 'martes', 'el martes'] },
+    { type: 'translate', line: 'Quien diseña un formulario no suele ser quien lo rellena.', model: 'Whoever designs a form is not usually the person who fills it in.' }
+  ]
+},
+
+{
+  id: 'b2-salud-espera', title: 'Las listas de espera', level: 6, theme: 'salud',
+  tenses: ['presente', 'perfecto', 'futuro', 'presubj'],
+  text: 'Cuando se discute sobre la sanidad, la conversación se atasca casi siempre en el mismo punto: la lista de espera. Es un número cómodo porque se puede publicar, comparar y exigir, y engañoso por la misma razón. Detrás de una media de noventa días hay pacientes a los que se atiende en una semana y otros que llevan un año esperando una cita médica que ya no les servirá igual. Quien ha pasado por urgencias un sábado por la noche sabe que el sistema funciona asombrosamente bien cuando algo es grave y asombrosamente mal cuando algo es lento. El dolor crónico, la ansiedad, la terapia que nunca empieza: ahí es donde el centro de salud se queda corto, porque nada de eso entra por la puerta de urgencias. La solución que se propone suele ser contratar a más personal, y hace falta. Pero también hace falta preguntarse por qué un chequeo genera tres pruebas, por qué un análisis se repite en dos hospitales distintos y por qué una enfermera dedica media jornada a rellenar papeles. Un sistema que se defiende solo con más dinero acaba defendiéndose peor. La medicina que más salud produce no es la que llega tarde con un antibiótico, sino la que evita que alguien tenga que pedirlo.',
+  gloss: [ { es: 'atascarse', en: 'quedarse detenido en un punto sin avanzar' },
+           { es: 'engañoso', en: 'que induce a error aunque parezca claro' },
+           { es: 'crónico', en: 'que dura mucho tiempo o no se cura del todo' },
+           { es: 'quedarse corto', en: 'resultar insuficiente' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué es engañoso el número de la lista de espera?',
+      options: ['Porque esconde casos muy distintos', 'Porque es falso', 'Porque nadie lo publica'], answer: 0 },
+    { type: 'mcq', q: '¿Cuándo funciona mal el sistema, según el texto?',
+      options: ['Cuando algo es grave', 'Cuando algo es lento', 'Los sábados'], answer: 1 },
+    { type: 'short', q: '¿A qué dedica media jornada una enfermera? (dos palabras)', accept: ['rellenar papeles', 'a rellenar papeles', 'papeles'] },
+    { type: 'translate', line: 'Un sistema que se defiende solo con más dinero acaba defendiéndose peor.', model: 'A system defended only with more money ends up being defended worse.' }
+  ]
+},
+
+{
+  id: 'b2-via-equipaje', title: 'Viajar con poco', level: 7, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'imperfecto'],
+  text: 'Tardé veinte años en aprender a hacer el equipaje. Durante la primera década viajaba con una maleta enorme que no cabía en ningún maletero, que el conductor del autobús miraba con odio y que me obligaba a coger un taxi cada vez que el hostal quedaba a dos calles del andén. Llevaba ropa para un clima que no existía, tres libros que no abría y un adaptador para cada país del mundo. La segunda década la pasé corrigiendo el error en la dirección contraria, con una mochila tan pequeña que cualquier cambio de plan se convertía en una compra. Hoy viajo con lo justo, y lo justo no es una cifra: es una decisión sobre qué problemas estoy dispuesto a resolver en el destino. Llevo un plano de papel aunque el móvil funcione, porque un callejero no se queda sin batería en una estación desconocida. No llevo sombrilla, ni gorro, ni sandalias: eso se compra donde hace falta y suele salir más barato. Lo verdaderamente difícil no es reducir el peso, sino aceptar que un viaje bien hecho incluye una cierta cantidad de incomodidad, y que la maleta grande no la evita: solo la traslada al hombro del que la arrastra por el puerto a las seis de la mañana.',
+  gloss: [ { es: 'caber', en: 'tener espacio suficiente para entrar en algo' },
+           { es: 'el adaptador', en: 'pieza que permite enchufar un aparato en otro país' },
+           { es: 'lo justo', en: 'la cantidad exacta que se necesita, sin nada de más' },
+           { es: 'arrastrar', en: 'llevar algo por el suelo tirando de ello' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué llevaba en la primera década?',
+      options: ['Una maleta enorme', 'Una mochila pequeña', 'Nada'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué lleva un plano de papel?',
+      options: ['Por costumbre', 'Porque no se queda sin batería', 'Porque es más barato'], answer: 1 },
+    { type: 'short', q: '¿Cuántos años tardó en aprender? (un número)', accept: ['veinte', '20'] },
+    { type: 'translate', line: 'Hoy viajo con lo justo, y lo justo no es una cifra: es una decisión sobre qué problemas estoy dispuesto a resolver en el destino.', model: 'Today I travel with just enough, and just enough is not a number: it is a decision about which problems I am willing to solve once I arrive.' }
+  ]
+},
+
+{
+  id: 'b2-serv-confianza', title: 'El cartero y la confianza', level: 7, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
+  text: 'Durante casi dos siglos, el correo funcionó sobre una idea sencilla y extraordinaria: que un desconocido llevaría un sobre cerrado desde una ventanilla hasta una casa a seiscientos kilómetros sin abrirlo. Nadie firmaba un contrato con el cartero. La confianza estaba en el sistema, no en la persona, y por eso funcionaba incluso cuando la persona cambiaba. Hoy ese mismo mecanismo se ha trasladado a otros servicios sin que nos demos cuenta. Cuando alguien mete la tarjeta en un cajero automático a las tres de la madrugada, o cuando llama al teléfono de emergencia desde una carretera sin saber dónde está exactamente, está apoyándose en una cadena larguísima de gente que no conoce: el empleado que actualizó el sistema, la enfermera que cogió el turno de noche, el vigilante que dejó pasar a la ambulancia. Lo interesante es lo poco que pensamos en ello hasta que falla. Un paquete perdido, una comisaría que no contesta, un permiso de residencia que lleva ocho meses parado: entonces recordamos de golpe que un servicio no es una aplicación, sino una promesa sostenida por miles de personas que hacen su trabajo aunque nadie las mire. Cuidar esa promesa cuesta dinero y da pocos titulares. Romperla, en cambio, es rapidísimo y casi siempre se descubre tarde.',
+  gloss: [ { es: 'el siglo', en: 'periodo de cien años' },
+           { es: 'trasladarse', en: 'pasar de un sitio o un ámbito a otro' },
+           { es: 'apoyarse en', en: 'depender de algo o de alguien para sostenerse' },
+           { es: 'sostener', en: 'mantener algo para que no caiga o no falle' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde estaba la confianza, según el texto?',
+      options: ['En el sistema', 'En el cartero', 'En el contrato'], answer: 0 },
+    { type: 'mcq', q: '¿Cuándo pensamos en la cadena de servicios?',
+      options: ['Siempre', 'Cuando falla', 'Nunca'], answer: 1 },
+    { type: 'short', q: '¿Cuánto lleva parado el permiso de residencia del ejemplo? (dos palabras)', accept: ['ocho meses', '8 meses', 'ocho'] },
+    { type: 'translate', line: 'Cuidar esa promesa cuesta dinero y da pocos titulares.', model: 'Looking after that promise costs money and generates few headlines.' }
+  ]
+},
+
+{
+  id: 'b2-salud-prevenir', title: 'Lo que no se ve en el chequeo', level: 7, theme: 'salud',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Se ha impuesto la idea de que la salud consiste en hacerse pruebas. El chequeo anual, el análisis completo, la revisión que detecta algo antes de que duela: todo eso suena a prudencia y en buena medida lo es. Pero la medicina preventiva que más años añade no cabe en ningún informe. Es dormir siete horas, no fumar, moverse media hora al día y tener a alguien a quien llamar un martes por la noche. Nada de eso se factura, nada genera una cita médica y por eso ocupa poco espacio en la conversación pública. Hay además un efecto perverso en el exceso de pruebas: cuanto más se busca, más se encuentra, y no todo lo que se encuentra merece tratarse. Un hallazgo menor puede desencadenar una segunda prueba, una tercera, una ansiedad de seis semanas y a veces una intervención que no hacía falta. Los sistemas sanitarios buenos llevan años intentando explicar esto sin que suene a recorte. El equilibrio es delicado. Nadie propone dejar de vigilar, y a nadie le han dado las gracias nunca por el tumor que se detectó a tiempo gracias a una revisión rutinaria. Pero conviene recordar que la farmacia, el hospital y el centro de salud entran en escena cuando lo demás ya ha fallado, y que lo demás ocurre en casa, todos los días, sin termómetro.',
+  gloss: [ { es: 'imponerse', en: 'llegar a ser dominante o aceptado por todos' },
+           { es: 'facturar', en: 'cobrar por un servicio mediante una factura' },
+           { es: 'perverso', en: 'que produce un efecto contrario al que se buscaba' },
+           { es: 'desencadenar', en: 'provocar una serie de consecuencias' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué medicina preventiva añade más años?',
+      options: ['La que no cabe en un informe', 'El análisis completo', 'La revisión anual'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es el efecto perverso del exceso de pruebas?',
+      options: ['Cuesta dinero', 'Cuanto más se busca, más se encuentra', 'Tarda mucho'], answer: 1 },
+    { type: 'short', q: '¿Cuántas horas de sueño menciona? (un número)', accept: ['siete', '7'] },
+    { type: 'translate', line: 'Es dormir siete horas, no fumar, moverse media hora al día y tener a alguien a quien llamar un martes por la noche.', model: 'It is sleeping seven hours, not smoking, moving for half an hour a day and having somebody to call on a Tuesday night.' }
+  ]
+},
+
+{
+  id: 'b2-via-volver', title: 'Volver al sitio de siempre', level: 6, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'impsubj'],
+  text: 'Existe un tipo de viajero al que nadie dedica reportajes: el que vuelve todos los años al mismo sitio. No tiene mapa que consultar ni plano que estudiar, no busca alojamiento porque ya sabe qué hostal tiene las mantas buenas, y en la estación saluda al conserje por su nombre. Visto desde fuera parece una falta de ambición. Visto desde dentro es exactamente lo contrario. Un destino nuevo se entrega entero el primer día y luego ya no tiene nada más que dar: uno ve la playa, la arena, las olas, el puerto, hace la excursión que recomienda el guía turístico y se marcha con una carpeta de fotos parecidas a las de todo el mundo. Un destino repetido se abre despacio. El tercer año aparece el marinero que explica por qué aquel muelle ya no se usa; el quinto, la senderista que conoce un camino sin señalizar; el octavo, la conversación en la que alguien cuenta lo que pasó en el pueblo hace treinta años. Nada de eso está en ninguna guía, y no se puede comprar con un billete de avión. El viaje rápido enseña sitios. El viaje repetido enseña gente, que es más lento y dura mucho más.',
+  gloss: [ { es: 'entregarse', en: 'mostrarse por completo, sin reservas' },
+           { es: 'la carpeta', en: 'conjunto de archivos guardados juntos' },
+           { es: 'señalizar', en: 'marcar un camino con señales' },
+           { es: 'la guía', en: 'libro con información para el viajero' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué no necesita este viajero?',
+      options: ['Mapa ni plano', 'Dinero', 'Tiempo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué enseña el viaje repetido?',
+      options: ['Sitios', 'Gente', 'Idiomas'], answer: 1 },
+    { type: 'short', q: '¿Qué aparece el tercer año? (dos palabras)', accept: ['el marinero', 'un marinero', 'marinero'] },
+    { type: 'translate', line: 'Un destino repetido se abre despacio.', model: 'A repeated destination opens up slowly.' }
+  ]
+},
+
+{
+  id: 'b2-serv-cola2', title: 'Una mañana en la comisaría', level: 6, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'impsubj'],
+  text: 'El número que me dieron era el ciento cuarenta y tres y en la pantalla iba el noventa y ocho. A mi lado, un hombre con un permiso de residencia caducado repasaba una carpeta de documentos por quinta vez. Delante, una mujer explicaba a su madre, en voz baja y con mucha paciencia, que el papel que traían no era el que pedían. Un vigilante iba diciendo a cada recién llegado que sin cita no se atiende, y cada recién llegado contestaba que la página no daba cita. Lo curioso de una cola así es que nadie se enfada con quien está detrás del cristal. Todo el mundo entiende que el empleado de la ventanilla lleva cuatro horas repitiendo la misma frase y que el problema es de otro sitio, de alguien que decidió cuántos funcionarios hacían falta mirando un presupuesto y no una sala. Cuando por fin me tocó, el trámite duró seis minutos. Seis minutos y tres horas de espera. Al salir me crucé con un voluntario de una ong que entraba con dos personas mayores y un montón de solicitudes. Le pregunté si iba mucho por allí. Me dijo que cada semana, y que en agosto hacía falta el doble. A la salida hay un cajero automático y una oficina de correos donde la cola es otra, más corta y más amable. Pensé que el banco de enfrente, con su ventanilla y su empleado, resolvía en diez minutos lo que aquí lleva media mañana, y que la diferencia no está en la tecnología sino en cuántas personas decide cada uno poner a atender. Un socorro administrativo, si existiera, debería empezar por ahí: por la enfermera, el bombero y el funcionario que sostienen los servicios sociales de cualquier barrio.',
+  gloss: [ { es: 'caducado', en: 'que ha perdido su validez por haber pasado la fecha' },
+           { es: 'repasar', en: 'volver a mirar algo para comprobarlo' },
+           { es: 'el cristal', en: 'la separación transparente de una ventanilla' },
+           { es: 'cruzarse con', en: 'encontrarse con alguien al pasar' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué decía el vigilante?',
+      options: ['Que sin cita no se atiende', 'Que volvieran mañana', 'Que la cola era corta'], answer: 0 },
+    { type: 'mcq', q: '¿Con quién no se enfada la gente?',
+      options: ['Con el gobierno', 'Con quien está detrás del cristal', 'Con el vigilante'], answer: 1 },
+    { type: 'short', q: '¿Cuánto duró el trámite? (dos palabras)', accept: ['seis minutos', '6 minutos', 'seis'] },
+    { type: 'translate', line: 'Seis minutos y tres horas de espera.', model: 'Six minutes, and three hours of waiting.' }
+  ]
+},
+
+{
+  id: 'b2-salud-ansiedad2', title: 'Hablar de la cabeza', level: 6, theme: 'salud',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj'],
+  text: 'Hasta hace poco, en casi todas las familias había una tía que estaba delicada de los nervios y un tío que trabajaba demasiado. Nadie decía ansiedad ni depresión: se decía que uno era así. La palabra terapia sonaba a lujo extranjero y la consulta del psicólogo quedaba fuera de lo que el centro de salud ofrecía y de lo que el vecindario comentaba. Eso ha cambiado deprisa, y el cambio tiene dos caras. La buena es evidente: un adolescente puede hoy decir que no está bien sin que eso signifique nada terrible, y pedir una cita médica por algo que no se ve en un análisis ni sube en el termómetro. La cara menos buena es que el vocabulario se ha extendido más rápido que los servicios. Se habla de salud mental en los anuncios, en los institutos y en la prensa, mientras la lista de espera para una primera consulta sigue midiéndose en meses y mucha gente acaba pagando en privado lo que no puede esperar. Nombrar un problema es el primer paso y no es ninguno de los siguientes. Si el sistema no acompaña, la conversación pública corre el riesgo de convertirse en una forma elegante de dejar a cada uno con lo suyo. Mientras tanto, la farmacia vende más pastillas para dormir que nunca, el hospital deriva lo que puede y el enfermero de urgencias acaba haciendo de psicólogo a las cuatro de la mañana. Ninguna medicina arregla eso, y ningún chequeo lo detecta. Hace falta una consulta con tiempo, una terapia que empiece antes de que el dolor sea crónico y un médico que pueda escuchar más de siete minutos.',
+  gloss: [ { es: 'delicado de los nervios', en: 'manera antigua de decir que alguien sufría ansiedad' },
+           { es: 'el lujo', en: 'algo caro que no es necesario' },
+           { es: 'extenderse', en: 'ocupar cada vez más espacio o llegar a más gente' },
+           { es: 'acompañar', en: 'aquí, responder y sostener con medios reales' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo se hablaba antes de la ansiedad?',
+      options: ['Se decía que uno era así', 'Se llamaba depresión', 'No existía'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es la cara menos buena del cambio?',
+      options: ['Que se habla demasiado', 'Que el vocabulario va más rápido que los servicios', 'Que es caro'], answer: 1 },
+    { type: 'short', q: '¿En qué se mide la lista de espera? (una palabra)', accept: ['meses', 'en meses'] },
+    { type: 'translate', line: 'Nombrar un problema es el primer paso y no es ninguno de los siguientes.', model: 'Naming a problem is the first step and it is none of the ones that follow.' }
+  ]
+}
+,
+
+{
+  id: 'b2-ident-papeles2', title: 'El peso de un papel', level: 6, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj', 'impsubj'],
+  text: 'Hay una diferencia enorme entre quien nunca ha tenido que demostrar quién es y quien lo hace cada pocos meses. Para el primero, el documento de identidad es una tarjeta que se renueva sin pensar, junto al carné y el pasaporte, en un trámite de veinte minutos. Para el segundo, el papel organiza la vida entera: sin el permiso de residencia no hay contrato, sin contrato no hay dirección estable, y sin dirección estable el código postal que aparece en la solicitud deja de ser válido antes de que la resuelvan. He visto a gente con estudios, idiomas y trabajo pasar dos años atrapada en ese círculo por una fecha de nacimiento mal transcrita. Lo que más sorprende desde fuera es la desproporción: un error de un funcionario cansado cuesta meses de vida a una familia, y corregirlo exige más energía que cometerlo mil veces. Por eso me irrita un poco la frase de que los papeles no definen a nadie. Es verdad en el sentido profundo y falsa en todos los demás. Un nombre, dos apellidos, un lugar de nacimiento y un número: con eso se abre una cuenta, se alquila un piso, se pide una cita médica y se entra en un país. Quien tiene esos datos en orden puede permitirse decir que son solo datos.',
+  gloss: [ { es: 'transcribir', en: 'copiar un dato de un documento a otro' },
+           { es: 'atrapado', en: 'que no puede salir de una situación' },
+           { es: 'la desproporción', en: 'falta de equilibrio entre dos cosas' },
+           { es: 'irritar', en: 'producir enfado o molestia' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué crea el círculo del que habla el texto?',
+      options: ['La falta de permiso de residencia', 'La falta de idiomas', 'El precio del piso'], answer: 0 },
+    { type: 'mcq', q: '¿Qué dice de la frase \'los papeles no definen a nadie\'?',
+      options: ['Que es totalmente cierta', 'Que es verdad en el sentido profundo y falsa en los demás', 'Que es absurda'], answer: 1 },
+    { type: 'short', q: '¿Qué dato estaba mal transcrito? (tres palabras)', accept: ['la fecha de nacimiento', 'fecha de nacimiento', 'una fecha de nacimiento'] },
+    { type: 'translate', line: 'Quien tiene esos datos en orden puede permitirse decir que son solo datos.', model: 'Anyone whose details are in order can afford to say they are only details.' }
+  ]
+},
+
+{
+  id: 'b2-ident-nombres', title: 'Cómo nos llamamos', level: 6, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'condperf'],
+  text: 'Los nombres cuentan la historia de un país mejor que muchos libros. En España, una generación entera se llama como los santos del calendario, la siguiente como los actores de una serie y la de ahora como algo corto que funcione en varios idiomas. Mi abuela se llamaba igual que su madre y que su abuela; a nadie se le ocurría otra cosa. Mi sobrina lleva un nombre que sus bisabuelos no habrían sabido pronunciar. Los apellidos, en cambio, apenas se mueven, y ahí está lo interesante: el segundo apellido, el de la madre, sobrevive a un matrimonio, a una separación y a un divorcio, y aparece en el documento de identidad de gente que ya no recuerda de dónde venía. En los formularios internacionales ese sistema provoca confusión constante. Un empleado extranjero ve dos palabras después del nombre y decide que una es el estado civil o un error de escritura. He aprendido a explicarlo en treinta segundos y a aceptar que en la tarjeta de crédito aparezca solo la mitad de mí. Lo que no he aprendido es a contestar bien cuando alguien me pregunta cuál es mi apellido de verdad, porque los dos lo son, y porque la pregunta lleva dentro una idea de familia que no es la mía. En el pasaporte, en el carné y en cualquier documento de identidad aparecen los dos, junto al lugar de nacimiento, la fecha de nacimiento y una dirección que ya he cambiado tres veces. El soltero, el casado y el viudo de mi familia comparten segundo apellido y poco más.',
+  gloss: [ { es: 'el santo', en: 'la persona a la que el calendario dedica un día' },
+           { es: 'el bisabuelo', en: 'el padre del abuelo' },
+           { es: 'sobrevivir a', en: 'seguir existiendo después de algo' },
+           { es: 'provocar', en: 'causar, dar lugar a' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo se llamaba la abuela?',
+      options: ['Igual que su madre y su abuela', 'Como una actriz', 'Con un nombre corto'], answer: 0 },
+    { type: 'mcq', q: '¿Qué decide a veces un empleado extranjero?',
+      options: ['Que falta un dato', 'Que un apellido es el estado civil', 'Que el nombre está mal'], answer: 1 },
+    { type: 'short', q: '¿Qué aparece solo a medias en la tarjeta de crédito? (una palabra)', accept: ['el apellido', 'su nombre', 'el nombre', 'apellido'] },
+    { type: 'translate', line: 'Los nombres cuentan la historia de un país mejor que muchos libros.', model: 'Names tell a country\'s history better than many books do.' }
+  ]
+},
+
+{
+  id: 'b2-cuerpo-imagen', title: 'El cuerpo como escaparate', level: 6, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'perfecto', 'presubj'],
+  text: 'Nunca ha habido tantas imágenes de cuerpos y nunca hemos estado tan poco de acuerdo sobre qué es un cuerpo normal. Basta abrir una pantalla para ver piel sin marcas, cintura estrecha, hombros trabajados y una postura que nadie sostiene diez minutos seguidos. Lo llamativo no es la exageración, que siempre existió en la pintura y en el cine, sino la escala y la edad a la que llega. Un niño de once años ya sabe qué significa tener buen tipo, aunque no sepa qué hacen sus pulmones. Conviene separar dos cosas que suelen ir juntas en la discusión. Una es la salud: el corazón, los huesos, los músculos, la espalda que aguanta cuarenta años sentada. Otra es el aspecto: el pelo, la cara, la nariz, el peso. La primera se cuida haciendo ejercicio, durmiendo y moviendo los brazos y las piernas con cierta regularidad. La segunda depende de la genética, de la edad y de una industria enorme interesada en que nadie esté conforme. Confundirlas tiene un coste claro: gente que corre para verse de otra manera y lo deja en cuanto no lo consigue, en lugar de correr porque a los sesenta quiere poder subir una escalera sin pensarlo.',
+  gloss: [ { es: 'el escaparate', en: 'el cristal de una tienda donde se exhibe el producto' },
+           { es: 'llamativo', en: 'que atrae la atención' },
+           { es: 'la escala', en: 'el tamaño o alcance de algo' },
+           { es: 'conforme', en: 'satisfecho, de acuerdo' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué es lo llamativo, según el texto?',
+      options: ['La escala y la edad a la que llega', 'La exageración', 'La pintura'], answer: 0 },
+    { type: 'mcq', q: '¿De qué depende el aspecto?',
+      options: ['Solo del ejercicio', 'De la genética, la edad y una industria', 'De la postura'], answer: 1 },
+    { type: 'short', q: '¿Qué sabe un niño de once años? (cuatro palabras)', accept: ['qué significa tener buen tipo', 'tener buen tipo', 'que significa tener buen tipo'] },
+    { type: 'translate', line: 'Nunca ha habido tantas imágenes de cuerpos y nunca hemos estado tan poco de acuerdo sobre qué es un cuerpo normal.', model: 'There have never been so many images of bodies and we have never agreed so little about what a normal body is.' }
+  ]
+},
+
+{
+  id: 'b2-cuerpo-sentado', title: 'Ocho horas sentados', level: 7, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'perfecto'],
+  text: 'La silla ha hecho más daño a la espalda europea que cualquier trabajo físico del siglo pasado. Es una frase exagerada y, como casi todas las exageraciones útiles, contiene algo cierto. El cuerpo humano está preparado para andar, agacharse, levantar peso y descansar; no para mantener el cuello, los hombros y la cintura en la misma postura desde las nueve hasta las seis. Los síntomas son tan comunes que ya no los contamos como síntomas: dolor entre los hombros a media tarde, muñecas cansadas, rodillas duras al levantarse, una espalda que protesta en cuanto uno coge una maleta. Lo curioso es que la solución no está en una silla mejor, aunque ayude, sino en interrumpir. Diez minutos de pie cada hora hacen más por los músculos y por el corazón que una hora de gimnasio a las nueve de la noche, porque el problema no es la falta de esfuerzo sino la inmovilidad continuada. Hay empresas que lo han entendido y han cambiado la mesa por otra que sube y baja; hay otras que han puesto una clase de gimnasia los jueves y siguen premiando a quien no se levanta nunca. Cuidar el cuerpo en una oficina no es un asunto de voluntad individual: es una decisión sobre cómo se organiza el día.',
+  gloss: [ { es: 'agacharse', en: 'bajar el cuerpo doblando las rodillas' },
+           { es: 'el síntoma', en: 'señal de que algo no funciona bien en el cuerpo' },
+           { es: 'la inmovilidad', en: 'el hecho de no moverse' },
+           { es: 'premiar', en: 'recompensar, tratar mejor' } ],
+  questions: [
+    { type: 'mcq', q: '¿Para qué está preparado el cuerpo humano?',
+      options: ['Para andar y levantar peso', 'Para estar sentado', 'Para correr solo'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde está la solución?',
+      options: ['En una silla mejor', 'En interrumpir', 'En el gimnasio'], answer: 1 },
+    { type: 'short', q: '¿Cuántos minutos de pie cada hora propone? (un número)', accept: ['diez', '10'] },
+    { type: 'translate', line: 'porque el problema no es la falta de esfuerzo sino la inmovilidad continuada', model: 'because the problem is not a lack of effort but continuous immobility' }
+  ]
+},
+
+{
+  id: 'b2-cuerpo-mayor', title: 'Envejecer por dentro', level: 6, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'imperfecto', 'presubj', 'plusc'],
+  text: 'Cuando alguien dice que se conserva bien, casi siempre habla de la cara: la piel, el pelo, la ausencia de marcas. Es lo que se ve y lo que menos importa. Lo que decide cómo van a ser los últimos veinte años de una vida no es el aspecto sino tres cosas bastante aburridas: la fuerza de las piernas, el equilibrio y los huesos. Una persona de ochenta años que puede levantarse de una silla sin apoyar las manos vive en un mundo distinto de otra que no puede, aunque las dos tengan la misma cara en una foto. La medicina lleva décadas repitiéndolo y la conversación social sigue en otro sitio. Perder músculo a partir de los cincuenta es normal; perderlo deprisa, no. Y lo que lo frena no es nada sofisticado: cargar peso, subir escaleras, andar, mover los brazos y las piernas contra alguna resistencia dos veces por semana. A mi padre le explicaron esto a los setenta y dos, después de una caída que le rompió la muñeca. Empezó tarde y aun así recuperó lo suficiente para volver a coger a sus nietos en brazos. Dice que nadie le había hablado nunca de los músculos como de algo que se entrena, solo como de algo que se tiene.',
+  gloss: [ { es: 'conservarse', en: 'mantenerse en buen estado con el paso del tiempo' },
+           { es: 'el equilibrio', en: 'la capacidad de no caerse' },
+           { es: 'frenar', en: 'hacer que algo vaya más despacio' },
+           { es: 'la resistencia', en: 'la fuerza contraria contra la que se trabaja' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué decide cómo van los últimos veinte años?',
+      options: ['Las piernas, el equilibrio y los huesos', 'La cara', 'El pelo'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le pasó al padre a los setenta y dos?',
+      options: ['Se jubiló', 'Tuvo una caída', 'Empezó a andar'], answer: 1 },
+    { type: 'short', q: '¿Qué se rompió? (dos palabras)', accept: ['la muñeca', 'muñeca', 'la muneca'] },
+    { type: 'translate', line: 'Perder músculo a partir de los cincuenta es normal; perderlo deprisa, no.', model: 'Losing muscle from fifty onwards is normal; losing it fast is not.' }
+  ]
+},
+
+{
+  id: 'b2-car-primera', title: 'La primera impresión', level: 6, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
+  text: 'Formamos una opinión sobre alguien en menos de un minuto y después dedicamos meses a defenderla. Es un mecanismo antiguo y útil, porque hubo un tiempo en que decidir deprisa si un desconocido era peligroso salvaba la vida, y es un desastre en una oficina. El que llega tímido y reservado pasa por antipático; el hablador y sociable parece inteligente aunque no haya dicho nada; el que sonríe poco se gana fama de arrogante en tres días y de serio en tres años. Lo peor no es equivocarse, sino lo que viene después: una vez formada la impresión, leemos todo lo demás para confirmarla. Si hemos decidido que alguien es egoísta, su generosidad nos parece interesada. Si hemos decidido que es generoso, su egoísmo nos parece un mal día. He trabajado con una persona a la que todo el equipo consideraba impaciente y bastante maleducada. Tardé un año en entender que era sorda de un oído y que giraba la cara para escuchar, y que aquel gesto, que leíamos como desprecio, era exactamente lo contrario. No hay una conclusión cómoda. Solo una regla que intento aplicar: la primera impresión merece confianza para decidir dónde me siento en un tren, y ninguna para decidir quién es alguien.',
+  gloss: [ { es: 'el mecanismo', en: 'proceso automático de la mente o de una máquina' },
+           { es: 'ganarse fama de', en: 'empezar a ser considerado de cierta manera' },
+           { es: 'interesado', en: 'que busca un beneficio propio' },
+           { es: 'el desprecio', en: 'falta de respeto o de consideración' } ],
+  questions: [
+    { type: 'mcq', q: '¿En cuánto tiempo formamos una opinión?',
+      options: ['En menos de un minuto', 'En un día', 'En una semana'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué giraba la cara la compañera?',
+      options: ['Por desprecio', 'Porque era sorda de un oído', 'Por timidez'], answer: 1 },
+    { type: 'short', q: '¿Cuánto tardó en entenderlo? (dos palabras)', accept: ['un año', 'año', 'tardé un año'] },
+    { type: 'translate', line: 'Formamos una opinión sobre alguien en menos de un minuto y después dedicamos meses a defenderla.', model: 'We form an opinion about somebody in under a minute and then spend months defending it.' }
+  ]
+},
+
+{
+  id: 'b2-car-optimismo', title: 'El optimismo obligatorio', level: 7, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'impsubj', 'plusc'],
+  text: 'Hay un tipo de optimismo que se ha vuelto casi obligatorio y que tiene poco que ver con ser una persona alegre. Consiste en responder a cualquier problema con una frase positiva y en tratar la tristeza como un fallo de actitud. Quien lo practica suele ser sociable, hablador y bastante generoso, y sin embargo deja a su alrededor un vacío curioso: nadie se atreve a contarle que algo va mal. Yo he sido ese hombre durante años. Creía que ser tolerante y paciente era no dejar que nadie se hundiera, y lo que hacía en realidad era interrumpir a la gente en mitad de una frase con un ánimo que no había pedido. Una amiga, que es más sincera que amable, me lo dijo claro: no quieres que yo esté mejor, quieres dejar de estar incómodo. Tenía razón. El optimismo que sirve es otro: el que aguanta la mala noticia sin adornarla, el que se queda callado veinte minutos y el que, tres semanas después, se acuerda de preguntar. No exige ser una persona reservada ni especialmente seria. Exige la paciencia de no arreglar nada, que es lo más difícil para quien se considera a sí mismo alguien positivo.',
+  gloss: [ { es: 'la actitud', en: 'la manera de enfrentarse a algo' },
+           { es: 'hundirse', en: 'venirse abajo emocionalmente' },
+           { es: 'adornar', en: 'añadir elementos para que algo parezca mejor' },
+           { es: 'exigir', en: 'requerir de manera necesaria' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo trata la tristeza ese optimismo?',
+      options: ['Como un fallo de actitud', 'Como algo normal', 'Como una enfermedad'], answer: 0 },
+    { type: 'mcq', q: '¿Qué le dijo su amiga?',
+      options: ['Que era generoso', 'Que no quería que ella estuviera mejor, sino dejar de estar incómodo', 'Que hablaba poco'], answer: 1 },
+    { type: 'short', q: '¿Qué exige el optimismo que sirve? (tres palabras)', accept: ['la paciencia de no arreglar nada', 'no arreglar nada', 'la paciencia'] },
+    { type: 'translate', line: 'Exige la paciencia de no arreglar nada, que es lo más difícil para quien se considera a sí mismo alguien positivo.', model: 'It demands the patience not to fix anything, which is hardest for anyone who thinks of themselves as a positive person.' }
+  ]
+},
+
+{
+  id: 'b2-car-timido', title: 'En defensa del reservado', level: 6, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Casi todo en la vida laboral está diseñado para el que habla. La reunión premia a quien piensa en voz alta, la entrevista a quien cuenta bien lo que hizo, y la palabra sociable aparece en tantas ofertas de empleo que ya casi significa apto. El tímido, el introvertido, el reservado, arrastran una sospecha que rara vez se dice en voz alta: que si no habla, es que no tiene nada. Mi experiencia dice lo contrario con bastante insistencia. La persona más inteligente con la que he trabajado tardaba dos días en contestar un correo y cuando contestaba no había nada que añadir. En las reuniones no decía prácticamente nada; después mandaba tres líneas que cambiaban la decisión. Era paciente, poco hablador y muy sincero, y a punto estuvimos de no contratarla porque en la entrevista pareció fría. Nada de esto significa que el carácter abierto sea un defecto. Significa que hemos construido un sistema que mide una sola forma de inteligencia y luego se sorprende de encontrar siempre el mismo tipo de gente. Cambiar eso no cuesta dinero: basta con mandar el orden del día por adelantado y aceptar que alguien conteste mañana. Quien es tímido no es necesariamente inseguro, igual que quien es hablador no es necesariamente alegre ni generoso. Son ejes distintos, y confundirlos sale caro.',
+  gloss: [ { es: 'apto', en: 'que vale para el puesto' },
+           { es: 'arrastrar', en: 'llevar consigo algo pesado o molesto' },
+           { es: 'la sospecha', en: 'idea negativa que se tiene sin pruebas' },
+           { es: 'el orden del día', en: 'la lista de temas de una reunión' } ],
+  questions: [
+    { type: 'mcq', q: '¿Para quién está diseñada la vida laboral?',
+      options: ['Para el que habla', 'Para el que escucha', 'Para el que escribe'], answer: 0 },
+    { type: 'mcq', q: '¿Qué pasó en la entrevista de aquella persona?',
+      options: ['Habló mucho', 'Pareció fría', 'No fue'], answer: 1 },
+    { type: 'short', q: '¿Qué propone mandar por adelantado? (cuatro palabras)', accept: ['el orden del día', 'orden del día', 'el orden del dia'] },
+    { type: 'translate', line: 'Casi todo en la vida laboral está diseñado para el que habla.', model: 'Almost everything in working life is designed for the person who talks.' }
+  ]
+},
+
+{
+  id: 'b2-ident-generacion', title: 'La generación de los papeles', level: 7, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro'],
+  text: 'Mis abuelos vivieron y murieron con un solo documento de identidad y una dirección. Mis padres cambiaron dos veces de piso y una de provincia, y guardaban cada papel en una caja de galletas: el carné viejo, el pasaporte caducado, la cartilla del banco, la tarjeta de la biblioteca de un pueblo donde ya no vivía nadie. Yo llevo siete direcciones, tres números de teléfono y un correo electrónico que no me representa desde hace una década. Mis hijos tendrán una identidad todavía más repartida: nombre en un sitio, apellido en otro, fecha de nacimiento verificada por una empresa que no conocen. Lo interesante no es la nostalgia, que además es barata, sino la pregunta práctica: ¿quién guarda ahora la caja de galletas? Cuando un documento estaba en un cajón, uno sabía dónde estaba. Cuando está en catorce servicios distintos, nadie lo tiene entero y todos tienen un trozo. Renovar un permiso de residencia, cambiar de dirección o demostrar un lugar de nacimiento se ha vuelto más rápido y, a la vez, más frágil. Mi madre todavía me pregunta si tengo copia en papel de las cosas importantes. Durante años me pareció una manía de otra época. Últimamente he empezado a imprimir.',
+  gloss: [ { es: 'la cartilla', en: 'libreta antigua donde el banco anotaba los movimientos' },
+           { es: 'repartido', en: 'dividido entre varios sitios' },
+           { es: 'frágil', en: 'que se rompe o falla con facilidad' },
+           { es: 'la manía', en: 'costumbre rara que alguien repite' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde guardaban los papeles sus padres?',
+      options: ['En una caja de galletas', 'En el banco', 'En un cajón del ayuntamiento'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ha empezado a hacer últimamente?',
+      options: ['Tirar papeles', 'Imprimir', 'Cambiar de dirección'], answer: 1 },
+    { type: 'short', q: '¿Cuántas direcciones lleva él? (un número)', accept: ['siete', '7'] },
+    { type: 'translate', line: 'Cuando está en catorce servicios distintos, nadie lo tiene entero y todos tienen un trozo.', model: 'When it is spread across fourteen different services, nobody has it whole and everybody has a piece.' }
+  ]
+}
+,
+
+{
+  id: 'b2-medios-atencion', title: 'La economía de la atención', level: 6, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj'],
+  text: 'Cuando un servicio es gratis, lo que se vende es el tiempo del que mira. Esa frase se repite tanto que ha perdido filo, y sin embargo explica casi todo lo que ha pasado con la prensa en veinte años. Un periódico en papel cobraba al lector y al anunciante, y el equilibrio entre los dos mantenía cierta independencia. Una página web que vive solo del anuncio depende de una sola cosa: que la gente entre y se quede. A partir de ahí, la lógica se impone sola. El titular deja de resumir la noticia y pasa a prometerla. El debate sustituye al reportaje porque cuesta menos y dura más. La entrevista se graba pensando en el minuto que circulará después. Nada de esto requiere mala fe de ningún periodista; basta con medir la audiencia cada hora y premiar lo que sube. Lo llamativo es que el lector participa encantado: comparte lo que le indigna, comenta lo que no ha leído entero y luego se queja de la calidad de la prensa. Conozco pocas soluciones y ninguna cómoda. Pagar por lo que uno lee es la más obvia y la que menos gusta. Leer tres artículos al día en lugar de cuarenta titulares es gratis y resulta aún más difícil. El quiosco cerró, la radio aguanta, la cadena pública emite un documental que nadie comenta y el foro sustituye a la tertulia. El presentador, el locutor y el periodista siguen ahí; lo que ha cambiado es quién paga y, por tanto, para quién trabajan.',
+  gloss: [ { es: 'perder filo', en: 'dejar de tener fuerza por repetirse demasiado' },
+           { es: 'imponerse', en: 'llegar a dominar sin que nadie lo decida' },
+           { es: 'la mala fe', en: 'la intención deliberada de engañar' },
+           { es: 'indignar', en: 'producir enfado moral' } ],
+  questions: [
+    { type: 'mcq', q: '¿De qué depende una web que vive del anuncio?',
+      options: ['De que la gente entre y se quede', 'De la calidad', 'Del papel'], answer: 0 },
+    { type: 'mcq', q: '¿Qué hace el lector, según el texto?',
+      options: ['Protesta y se va', 'Participa encantado y luego se queja', 'Paga siempre'], answer: 1 },
+    { type: 'short', q: '¿Cuántos artículos al día propone leer? (un número)', accept: ['tres', '3'] },
+    { type: 'translate', line: 'El titular deja de resumir la noticia y pasa a prometerla.', model: 'The headline stops summarising the story and starts promising it.' }
+  ]
+},
+
+{
+  id: 'b2-medios-local', title: 'Cuando cierra el periódico local', level: 6, theme: 'medios',
+  tenses: ['presente', 'preterito', 'imperfecto', 'condicional', 'condperf'],
+  text: 'La desaparición de la prensa local es el tipo de noticia que no sale en ningún informativo, porque precisamente lo que se pierde es quien la habría contado. Un periódico de provincia no cubría guerras ni grandes entrevistas: mandaba a una periodista al pleno del ayuntamiento un martes por la tarde y publicaba doce líneas sobre un contrato de basuras. Esas doce líneas costaban dinero y no las leía casi nadie. Su valor no estaba en el lector, sino en el concejal que sabía que alguien iba a estar allí sentado. Cuando esa silla se vacía, no pasa nada visible durante un año o dos. Después empiezan a aparecer decisiones que nadie explicó, un canal de televisión autonómico que repite la nota de prensa oficial y un foro vecinal donde se mezclan datos, rumores y comentarios sin ninguna firma. La radio aguanta algo más porque cuesta menos, y el quiosco que queda vende sobre todo revistas. No creo que esto se arregle con nostalgia ni pidiendo a la gente que compre el periódico por deber cívico. Pero conviene entender qué se está comprando cuando se paga por un medio local: no información, sino una silla ocupada en una sala donde se decide algo.',
+  gloss: [ { es: 'el pleno', en: 'la reunión oficial de todos los concejales' },
+           { es: 'la nota de prensa', en: 'texto que una institución manda ya redactado a los medios' },
+           { es: 'el rumor', en: 'información que circula sin estar comprobada' },
+           { es: 'el deber cívico', en: 'obligación moral como ciudadano' } ],
+  questions: [
+    { type: 'mcq', q: '¿Dónde estaba el valor de las doce líneas?',
+      options: ['En el concejal que sabía que alguien miraba', 'En el lector', 'En el precio'], answer: 0 },
+    { type: 'mcq', q: '¿Qué se compra al pagar por un medio local?',
+      options: ['Información', 'Una silla ocupada en una sala', 'Publicidad'], answer: 1 },
+    { type: 'short', q: '¿Qué vende sobre todo el quiosco que queda? (una palabra)', accept: ['revistas', 'las revistas'] },
+    { type: 'translate', line: 'La desaparición de la prensa local es el tipo de noticia que no sale en ningún informativo, porque precisamente lo que se pierde es quien la habría contado.', model: 'The disappearance of the local press is the kind of story that appears in no news bulletin, because what is lost is precisely whoever would have reported it.' }
+  ]
+},
+
+{
+  id: 'b2-medios-verificar', title: 'Antes de compartir', level: 7, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
+  text: 'Casi todo el mundo cree que sabe distinguir una noticia falsa y casi nadie comprueba nada. No es un problema de inteligencia sino de velocidad: el mensaje llega por el chat de la familia, produce una reacción física inmediata y el dedo pulsa antes de que el resto de la cabeza llegue. Los mecanismos son siempre parecidos. Una imagen verdadera de otro año, un dato real sacado de contexto, una cifra enorme sin fuente, un titular que dice lo que uno ya pensaba. La prensa seria comete errores y los corrige; la máquina de la desinformación no comete errores, porque no pretende acertar. Existen remedios modestos y eficaces. Mirar quién firma. Buscar el mismo asunto en un buscador y ver si alguna agencia lo recoge. Desconfiar de todo lo que produce mucha rabia, que es precisamente lo que se comparte solo. Y un remedio incómodo: aceptar que un bulo que confirma nuestras ideas nos parece razonable, y que el filtro tiene que aplicarse sobre todo ahí. Lo he aprendido a mi costa, reenviando un vídeo que un periodista desmontó en dos horas. Ahora espero un día antes de mandar nada que me haya puesto nervioso. La televisión y la radio también se equivocan, y una cadena seria rectifica en el informativo siguiente. Esa diferencia, aburrida y poco vistosa, es casi lo único que separa a un medio de una máquina de anuncios.',
+  gloss: [ { es: 'pulsar', en: 'apretar un botón o una pantalla' },
+           { es: 'sacado de contexto', en: 'separado de la situación que le daba sentido' },
+           { es: 'el bulo', en: 'noticia falsa que circula deliberadamente' },
+           { es: 'desmontar', en: 'demostrar que algo es falso' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cuál es el problema principal?',
+      options: ['La velocidad', 'La inteligencia', 'La falta de prensa'], answer: 0 },
+    { type: 'mcq', q: '¿De qué hay que desconfiar especialmente?',
+      options: ['De lo aburrido', 'De lo que produce mucha rabia', 'De lo largo'], answer: 1 },
+    { type: 'short', q: '¿Cuánto espera ahora antes de mandar algo? (dos palabras)', accept: ['un día', 'día', 'un dia'] },
+    { type: 'translate', line: 'La prensa seria comete errores y los corrige; la máquina de la desinformación no comete errores, porque no pretende acertar.', model: 'Serious journalism makes mistakes and corrects them; the disinformation machine makes none, because it is not trying to get anything right.' }
+  ]
+},
+
+{
+  id: 'b2-eco-vivienda', title: 'El precio de un piso', level: 6, theme: 'economia',
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'presubj', 'condperf'],
+  text: 'Explicar por qué la vivienda es cara resulta sencillo hasta que uno intenta hacerlo sin culpar a nadie. Hay menos casas de las que hacen falta donde la gente quiere vivir; la construcción lleva años por debajo de lo necesario; una parte del parque existente ha salido del alquiler ordinario hacia el turístico; los tipos de interés subieron y con ellos la cuota de cada hipoteca; y el salario, mientras tanto, se ha movido mucho menos que el precio. Cada uno de esos factores es real y ninguno explica el conjunto por sí solo. Lo que sí se puede afirmar es la consecuencia. Una generación entera dedica al alquiler una proporción de su sueldo que sus padres habrían considerado imposible, y eso no es un problema de vivienda: es un problema de economía general, porque el dinero que se va en el piso no va al comercio, ni al ahorro, ni a la jubilación futura. Las soluciones que se proponen suelen ser parciales y se presentan como totales. Limitar el alquiler turístico ayuda donde hay turismo y no hace nada en una provincia vacía. Construir funciona a diez años vista y no paga la factura de este mes. La única respuesta honesta es que hará falta más de una medida y bastante más tiempo del que dura una legislatura. Mientras tanto, el seguro sube, la factura de la energía sube y el presupuesto familiar se estrecha por los dos lados. Un empleado con un buen salario y una deuda razonable puede encontrarse sin ahorro ninguno al final del mes, y eso ya no es un caso raro.',
+  gloss: [ { es: 'el parque', en: 'aquí, el conjunto de viviendas existentes' },
+           { es: 'la cuota', en: 'cantidad que se paga cada mes' },
+           { es: 'parcial', en: 'que solo cubre una parte' },
+           { es: 'a diez años vista', en: 'con efecto dentro de diez años' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué ha subido menos que el precio?',
+      options: ['El salario', 'El interés', 'El alquiler'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es la respuesta honesta?',
+      options: ['Una medida basta', 'Harán falta varias medidas y más tiempo', 'No hay solución'], answer: 1 },
+    { type: 'short', q: '¿Dónde no ayuda limitar el alquiler turístico? (tres palabras)', accept: ['en una provincia vacía', 'una provincia vacía', 'provincia vacía'] },
+    { type: 'translate', line: 'Una generación entera dedica al alquiler una proporción de su sueldo que sus padres habrían considerado imposible', model: 'A whole generation spends a proportion of its salary on rent that its parents would have thought impossible' }
+  ]
+},
+
+{
+  id: 'b2-eco-jornada', title: 'Trabajar menos horas', level: 7, theme: 'economia',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj'],
+  text: 'Los experimentos con la jornada de cuatro días han dado resultados buenos y se han contado peor. En casi todos, la producción se mantuvo o subió, el empleado declaró menos estrés y la compañía ahorró en bajas. Quien cita esos datos suele olvidar dos detalles importantes. El primero es dónde se hicieron: oficinas, consultoras, empresas de servicios donde se medía mal el tiempo y bien el resultado. El segundo es que reducir la jornada sin reducir el trabajo no es un regalo, es una forma elegante de subir la presión. En una cocina, en una planta de fabricación o en la agricultura, la hora es el producto: si una industria necesita cubrir un turno, hace falta contratar a otra persona, y eso afecta al presupuesto, al salario y al precio final. Nada de eso invalida la idea. Significa que la conversación seria empieza cuando se distingue entre sectores en lugar de generalizar desde el caso más cómodo. Y conviene recordar algo que se dice poco: la jornada de cinco días tampoco cayó del cielo. Se consiguió discutiendo, con datos discutibles y mucha resistencia, y quien la defendía entonces también oía que arruinaría la economía del país. Quien defienda hoy una jornada más corta tendrá que explicar cómo afecta al salario, al presupuesto de una compañía pequeña y a la jubilación de quien cotiza menos horas. Son preguntas legítimas y tienen respuesta; lo que no la tiene es despacharlas con un eslogan.',
+  gloss: [ { es: 'la baja', en: 'ausencia del trabajo por enfermedad' },
+           { es: 'la consultora', en: 'empresa que asesora a otras' },
+           { es: 'el turno', en: 'periodo de trabajo que alguien debe cubrir' },
+           { es: 'invalidar', en: 'quitar validez a algo' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué pasó con la producción en los experimentos?',
+      options: ['Se mantuvo o subió', 'Bajó mucho', 'No se midió'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ocurre si se reduce la jornada sin reducir el trabajo?',
+      options: ['Es un regalo', 'Sube la presión', 'No cambia nada'], answer: 1 },
+    { type: 'short', q: '¿Qué es la hora en una cocina? (dos palabras)', accept: ['el producto', 'producto', 'es el producto'] },
+    { type: 'translate', line: 'Y conviene recordar algo que se dice poco: la jornada de cinco días tampoco cayó del cielo.', model: 'And it is worth remembering something rarely said: the five-day week did not fall from the sky either.' }
+  ]
+},
+
+{
+  id: 'b2-eco-deuda', title: 'Vivir con una deuda', level: 6, theme: 'economia',
+  tenses: ['presente', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
+  text: 'Una deuda no pesa por lo que cuesta, sino por lo que impide. El préstamo que pedimos para el coche no era grande y la cuota cabía en el presupuesto; lo que no cabía era la idea de que durante cuatro años cualquier decisión tendría que pasar por ahí. Cambiar de trabajo, mudarse, aguantar tres meses de menos salario: todo eso deja de ser una opción y se convierte en un riesgo. Eso es lo que no aparece en ningún cálculo de intereses. Hay un momento, además, en que la deuda cambia de naturaleza. Mientras se paga con el ahorro que sobra, es una herramienta. Cuando obliga a pedir otro préstamo para llegar a fin de mes, se ha convertido en otra cosa, y casi nadie identifica con claridad el día en que cruzó esa línea. Los bancos lo saben y por eso ofrecen ampliar el plazo justo entonces, cuando una cuota más pequeña parece un alivio y en realidad alarga la jaula. No estoy en contra del crédito; sin él, casi nadie compraría una vivienda ni montaría un comercio. Estoy a favor de decirlo entero: un préstamo no compra un coche, compra tiempo, y el tiempo se paga con libertad futura. Conviene además mirar la factura entera: el seguro del coche, el impuesto anual, la energía que gasta y lo que la compañía cobra por cada gestión. La economía doméstica no se arruina por una hipoteca grande, sino por seis cosas pequeñas que nadie sumó en el mismo presupuesto.',
+  gloss: [ { es: 'impedir', en: 'hacer imposible algo' },
+           { es: 'la naturaleza', en: 'aquí, el carácter o la esencia de algo' },
+           { es: 'el plazo', en: 'el tiempo acordado para pagar' },
+           { es: 'la jaula', en: 'metáfora de una situación de la que no se puede salir' } ],
+  questions: [
+    { type: 'mcq', q: '¿Por qué pesa una deuda, según el texto?',
+      options: ['Por lo que impide', 'Por el interés', 'Por el banco'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ofrecen los bancos en el peor momento?',
+      options: ['Perdonar la deuda', 'Ampliar el plazo', 'Bajar el interés'], answer: 1 },
+    { type: 'short', q: '¿Cuántos años duraba el préstamo del coche? (un número)', accept: ['cuatro', '4'] },
+    { type: 'translate', line: 'un préstamo no compra un coche, compra tiempo, y el tiempo se paga con libertad futura.', model: 'A loan does not buy a car, it buys time, and time is paid for with future freedom.' }
+  ]
+},
+
+{
+  id: 'b2-pol-local2', title: 'Lo que decide un ayuntamiento', level: 6, theme: 'politica',
+  tenses: ['presente', 'presubj'],
+  text: 'La política que más afecta a la vida diaria casi nunca sale en el informativo nacional. Un gobierno decide grandes cosas cada varios años; un ayuntamiento decide cada semana dónde para el autobús, a qué hora abre el centro de salud, si una calle se peatonaliza y cuántas plazas de escuela infantil hay en un distrito. Esas decisiones no se anuncian en el congreso ni las firma ningún ministro, y sin embargo determinan si una familia llega a tiempo al trabajo. La paradoja es conocida: la participación baja precisamente donde el ciudadano tiene más capacidad de influir. A una manifestación por una ley nacional acuden miles de personas; a un pleno municipal donde se aprueba el presupuesto del barrio no va nadie. Parte de la culpa es del lenguaje. Un concejal habla de ordenanzas y partidas cuando quiere decir que va a haber o no va a haber una guardería. Parte es del horario: los plenos se celebran a las once de la mañana de un martes. Y parte, hay que decirlo, es nuestra, porque resulta más cómodo indignarse con la política lejana que discutir con el vecino sobre la comunidad y el distrito en el que uno vive. Un ministerio queda lejos; la comunidad y el distrito, no. Y sin embargo la ley que más se comenta es siempre la que menos nos toca.',
+  gloss: [ { es: 'peatonalizar', en: 'cerrar una calle al tráfico para los peatones' },
+           { es: 'la paradoja', en: 'situación que parece contradecirse a sí misma' },
+           { es: 'la ordenanza', en: 'norma que aprueba un ayuntamiento' },
+           { es: 'la partida', en: 'cantidad de dinero asignada a algo en un presupuesto' } ],
+  questions: [
+    { type: 'mcq', q: '¿Con qué frecuencia decide un ayuntamiento?',
+      options: ['Cada semana', 'Cada varios años', 'Nunca'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde baja la participación?',
+      options: ['En lo nacional', 'Donde el ciudadano más puede influir', 'En las manifestaciones'], answer: 1 },
+    { type: 'short', q: '¿A qué hora se celebran los plenos? (tres palabras)', accept: ['a las once', 'las once de la mañana', 'a las once de la mañana', 'once'] },
+    { type: 'translate', line: 'La política que más afecta a la vida diaria casi nunca sale en el informativo nacional.', model: 'The politics that most affects daily life almost never appears on the national news.' }
+  ]
+},
+
+{
+  id: 'b2-pol-acuerdo', title: 'El pacto tiene mala prensa', level: 7, theme: 'politica',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj'],
+  text: 'Pactar se ha convertido en una acusación. Un político que llega a un acuerdo con otro partido aparece en la prensa como alguien que ha traicionado algo, y quien no cede jamás recibe el elogio de ser coherente. Es una inversión extraña de lo que la democracia dice de sí misma, porque un parlamento existe precisamente para que gente que no está de acuerdo tenga que producir una ley común. La explicación es más sencilla de lo que parece. Ceder en público obliga a reconocer que el otro tenía parte de razón, y eso, en un sistema donde cada declaración se mide por la reacción que provoca, se lee como derrota. El resultado es conocido: leyes que duran una legislatura y se derogan en la siguiente, un congreso donde el debate sirve para grabar el minuto que circulará después, y un ciudadano que oye hablar de la nación entera mientras su comunidad espera diez años una decisión. Ninguna constitución puede arreglar eso, porque no es un problema jurídico sino de incentivos. Mientras el que pacta pierda y el que bloquea gane, el gobierno y la oposición harán exactamente lo que les conviene, y seguiremos llamándolo falta de altura cuando en realidad es aritmética.',
+  gloss: [ { es: 'traicionar', en: 'fallar a quien confiaba en uno' },
+           { es: 'el elogio', en: 'palabras de alabanza' },
+           { es: 'derogar', en: 'anular una ley existente' },
+           { es: 'el incentivo', en: 'aquello que empuja a actuar de cierta manera' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo aparece en la prensa quien pacta?',
+      options: ['Como alguien que ha traicionado algo', 'Como coherente', 'Como valiente'], answer: 0 },
+    { type: 'mcq', q: '¿Qué tipo de problema es, según el texto?',
+      options: ['Jurídico', 'De incentivos', 'De constitución'], answer: 1 },
+    { type: 'short', q: '¿Cuánto duran esas leyes? (dos palabras)', accept: ['una legislatura', 'legislatura', 'una legislatura.'] },
+    { type: 'translate', line: 'Mientras el que pacta pierda y el que bloquea gane, el gobierno y la oposición harán exactamente lo que les conviene, y seguiremos llamándolo falta de altura cuando en realidad es aritmética.', model: 'As long as the one who compromises loses and the one who blocks wins, government and opposition will do exactly what suits them, and we will go on calling it a lack of stature when it is really arithmetic.' }
+  ]
+},
+
+{
+  id: 'b2-pol-jovenes', title: '¿Se han ido los jóvenes de la política?', level: 6, theme: 'politica',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Cada cierto tiempo alguien publica que la juventud ha perdido el interés por la política. Suele acompañarse de un dato sobre la participación electoral y de una frase sobre las redes. Merece la pena mirarlo más despacio, porque lo que ha cambiado no es el interés sino la forma. La generación de mis padres se afiliaba a un partido político y permanecía allí treinta años, con carné y cuota. Se iba a la sede, se discutía y se aceptaba una disciplina. Mucha gente joven de ahora no se afilia a nada y sin embargo organiza una manifestación por el clima en cuatro días, boicotea a una compañía en una semana o consigue que un ayuntamiento cambie una ordenanza con doscientas firmas. Es una participación intensa, concreta y breve, que se disuelve en cuanto el asunto se resuelve o se enfría. Tiene una ventaja evidente: reacciona rápido y no depende de ninguna estructura. Y tiene un coste que se ve a los diez años: nadie se queda a hacer el trabajo lento de redactar una ley, negociar con quien piensa distinto y aguantar dos legislaturas en el congreso. La democracia necesita las dos cosas, y de momento tenemos mucha de la primera. El resultado es una sociedad con muchos ciudadanos activos y pocos militantes, un parlamento que envejece y un gobierno que habla de la juventud sin tenerla dentro. La constitución no dice nada de esto porque no puede: es un problema de costumbre, no de norma.',
+  gloss: [ { es: 'afiliarse', en: 'hacerse miembro de una organización' },
+           { es: 'la sede', en: 'el local donde se reúne una organización' },
+           { es: 'disolverse', en: 'deshacerse, desaparecer poco a poco' },
+           { es: 'redactar', en: 'escribir un texto oficial' } ],
+  questions: [
+    { type: 'mcq', q: '¿Qué ha cambiado, según el texto?',
+      options: ['La forma, no el interés', 'El interés', 'Nada'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es el coste de la participación breve?',
+      options: ['Es lenta', 'Nadie hace el trabajo lento', 'Cuesta dinero'], answer: 1 },
+    { type: 'short', q: '¿Con cuántas firmas se cambia una ordenanza en el ejemplo? (un número)', accept: ['doscientas', '200'] },
+    { type: 'translate', line: 'La democracia necesita las dos cosas, y de momento tenemos mucha de la primera.', model: 'Democracy needs both, and for now we have plenty of the first.' }
+  ]
+}
+,
+
+{
+  id: 'c1-via-sobreturismo', title: 'El derecho a quedarse', level: 8, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj', 'perfsubj'],
+  text: 'Conviene empezar admitiendo lo evidente: el turismo ha sacado de la pobreza a comarcas enteras que ninguna política industrial consiguió rescatar. Quien haya visto un pueblo de montaña donde el único futuro era coger el tren y no volver entenderá por qué la llegada de viajeros se recibió, durante décadas, como una bendición sin condiciones. El problema no es que aquello fuera falso, sino que la frase se ha quedado congelada mientras la realidad seguía moviéndose. Hoy, en determinadas ciudades y en ciertos tramos de costa, la discusión ya no consiste en atraer visitantes sino en decidir cuántos caben y a costa de qué. El mecanismo es conocido y apenas requiere mala intención por parte de nadie. Un piso alquilado por semanas renta más que uno alquilado por años; a partir de cierto umbral, el parque residencial se desplaza hacia el alojamiento turístico; el precio del alquiler ordinario sube; los trabajadores que sostienen el hotel, el hostal, la recepción y la limpieza acaban viviendo a cuarenta minutos en autobús de la ciudad que limpian. A eso se le ha llamado con acierto una expulsión silenciosa: nadie la ordena, nadie la firma, y sin embargo ocurre con la regularidad de una ley física. Las respuestas ensayadas hasta ahora oscilan entre lo simbólico y lo tardío. Limitar las licencias funciona si se hace antes de que el mercado se haya reorganizado, y llega tarde en casi todas partes. Las tasas por visitante recaudan, pero no alteran el cálculo de quien puede pagarlas. Prohibir el acceso a determinados enclaves protege la piedra y no la vivienda. Lo que casi nunca se discute, porque obliga a repartir poder y no solo dinero, es quién decide: si la comunidad que habita un lugar tiene alguna capacidad real de fijar el ritmo al que su propio barrio se transforma, o si esa decisión se toma en despachos que no pisan nunca el andén de esa estación. Mientras eso no se resuelva, seguiremos midiendo el éxito de un destino por el número de viajeros que llegan y no por el de vecinos que pueden quedarse.',
+  questions: [
+    { type: 'mcq', q: '¿Qué admite el texto al empezar?',
+      options: ['Que el turismo ha sacado de la pobreza a comarcas enteras', 'Que el turismo siempre fue malo', 'Que nadie viaja'], answer: 0 },
+    { type: 'mcq', q: '¿Qué es lo que casi nunca se discute?',
+      options: ['El precio', 'Quién decide', 'Las tasas'], answer: 1 },
+    { type: 'short', q: '¿Cómo se llama a ese proceso en el texto? (tres palabras)', accept: ['una expulsión silenciosa', 'expulsión silenciosa', 'expulsion silenciosa'] },
+    { type: 'translate', line: 'Mientras eso no se resuelva, seguiremos midiendo el éxito de un destino por el número de viajeros que llegan y no por el de vecinos que pueden quedarse.', model: 'Until that is settled, we will go on measuring a destination\'s success by the number of travellers who arrive and not by the number of residents who can stay.' }
+  ]
+},
+
+{
+  id: 'c1-serv-administracion', title: 'La cortesía del Estado', level: 8, theme: 'servicios',
+  tenses: ['presente', 'perfecto', 'imperfecto', 'condicional', 'presubj', 'perfsubj'],
+  text: 'Hay una forma de maltrato administrativo que no aparece en ninguna estadística porque no deja herida visible. Consiste en exigir a un ciudadano que demuestre algo que la propia administración ya sabe. El caso clásico es el certificado que un organismo pide y que otro organismo, a doscientos metros, emite: dos ventanillas, dos colas, dos mañanas de trabajo perdidas, y ningún dato nuevo en todo el proceso. Cualquiera que haya renovado un permiso de residencia, tramitado una herencia o intentado inscribir a un hijo en un colegio conoce esa sensación de estar transportando papeles de un cajón a otro por cuenta propia. La digitalización prometía terminar con eso y en buena medida lo ha conseguido para quien tiene conexión, certificado electrónico, un rato libre a media mañana y la costumbre de leer instrucciones escritas en un idioma que no es exactamente el español corriente. Para quien no reúne esas cuatro condiciones, el efecto ha sido el contrario: la cola se ha vuelto invisible y por tanto incontable. Antes había doscientas personas esperando en la acera y eso salía en la prensa local; ahora hay doscientas personas que no consiguen cita y no aparecen en ningún sitio. Se objetará, con razón, que los recursos son finitos y que atender presencialmente a todo el mundo es carísimo. Es verdad. Pero el argumento se vuelve tramposo cuando se usa para justificar que el coste, en lugar de desaparecer, simplemente se traslada: del presupuesto público al tiempo privado del más vulnerable, que es precisamente quien menos puede permitírselo. Un banco que cierra sucursales hace un cálculo comercial y responde ante sus accionistas. Una administración que cierra ventanillas hace un cálculo idéntico y responde ante alguien que no puede cambiarse de administración. Esa asimetría es la razón de que, en lo público, la eficiencia sin acompañamiento no sea una virtud sino una forma elegante de descargar el problema en el usuario y llamarlo modernización. Conviene recordar además qué se juega cada cual. Quien acude a una comisaría por un robo, a correos por un paquete perdido, a urgencias con un familiar o a una clínica con un parte médico no está eligiendo proveedor: está ejerciendo un derecho. El cartero, el empleado de la ventanilla, el vigilante, la enfermera y el bombero son, en ese momento, la cara entera del Estado. Por eso el servicio público se mide siempre por el peor caso y nunca por el promedio, y por eso la ayuda de un voluntario de una ong los martes por la mañana, siendo admirable, debería avergonzar a quien diseñó el sistema.',
+  questions: [
+    { type: 'mcq', q: '¿En qué consiste ese maltrato administrativo?',
+      options: ['En exigir demostrar algo que la administración ya sabe', 'En cobrar tasas', 'En tardar mucho'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ha pasado con la cola?',
+      options: ['Ha desaparecido', 'Se ha vuelto invisible e incontable', 'Ha crecido en la acera'], answer: 1 },
+    { type: 'short', q: '¿Ante quién responde un banco que cierra sucursales? (dos palabras)', accept: ['sus accionistas', 'los accionistas', 'accionistas'] },
+    { type: 'translate', line: 'Esa asimetría es la razón de que, en lo público, la eficiencia sin acompañamiento no sea una virtud sino una forma elegante de descargar el problema en el usuario y llamarlo modernización.', model: 'That asymmetry is why, in the public sphere, efficiency without support is not a virtue but an elegant way of offloading the problem onto the user and calling it modernisation.' }
+  ]
+},
+
+{
+  id: 'c1-salud-prioridades', title: 'Decidir a quién se trata antes', level: 8, theme: 'salud',
+  tenses: ['presente', 'preterito', 'futuro', 'condicional'],
+  text: 'Ningún sistema sanitario del mundo puede atender todo lo que se le pide en el momento en que se le pide. Esa frase, que resulta incómoda en un debate televisado, es el punto de partida de cualquier conversación seria sobre la sanidad pública. La pregunta relevante no es si habrá que priorizar, porque se prioriza siempre, sino mediante qué criterio y con cuánta transparencia. Un sistema que no lo explica no deja de elegir: simplemente elige de forma opaca. El criterio real acaba siendo entonces la insistencia del paciente, su capacidad para conseguir una segunda cita o la buena voluntad de un médico concreto. Conviene distinguir dos escaseces que suelen confundirse. Una es la de recursos: camas, quirófanos, profesionales formados que tardan una década en producirse. Otra es la de organización: pruebas que se repiten en dos hospitales porque los sistemas no se hablan, consultas de seis minutos que generan tres visitas más, personal cualificado dedicado a tareas administrativas. La primera se resuelve con presupuesto y con tiempo. La segunda se resuelve con decisiones que cuestan poco dinero y mucho conflicto, razón por la cual se posponen indefinidamente. Hay además una tercera cuestión, la más delicada, que casi nunca se plantea en público: qué parte de la demanda sanitaria es propiamente sanitaria. Una proporción considerable de las consultas de atención primaria responde a soledad, a precariedad laboral, a vivienda inadecuada o a un dolor crónico que ningún antibiótico resolverá. Medicalizar esos problemas tiene una ventaja evidente para todos los implicados, porque convierte una cuestión social sin responsable claro en una cuestión clínica con un profesional al que reclamar. Y tiene un coste que pagamos entre todos en forma de listas de espera. Reconocer esto no es un argumento contra la sanidad pública; es probablemente la única manera de defenderla con algo más que buenas intenciones. Queda una última consideración, de orden práctico. Cualquier reforma tendrá que convivir con lo que ya existe: un centro de salud saturado, una farmacia que dispensa más medicina de la que nadie desearía, un hospital que absorbe lo que la atención primaria no puede y unas urgencias que funcionan como válvula de escape de todo el sistema. Ninguna enfermera y ningún médico podrán compensar indefinidamente un diseño que les entrega los problemas cuando ya son graves. El chequeo que se hace a tiempo, el análisis que no se repite y la cita médica que llega en dos semanas cuestan mucho menos que la operación que evitan.',
+  questions: [
+    { type: 'mcq', q: '¿Cuál es la pregunta relevante?',
+      options: ['Con qué criterio y transparencia se prioriza', 'Si hay que priorizar', 'Cuánto cuesta'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué se posponen las decisiones de organización?',
+      options: ['Cuestan mucho dinero', 'Cuestan poco dinero y mucho conflicto', 'No se conocen'], answer: 1 },
+    { type: 'short', q: '¿Cuántas escaseces distingue primero el texto? (un número)', accept: ['dos', '2'] },
+    { type: 'translate', line: 'Un sistema que no lo explica no deja de elegir: simplemente elige de forma opaca.', model: 'A system that does not explain it does not stop choosing: it simply chooses opaquely, and then the real criterion ends up being the patient\'s persistence.' }
+  ]
+},
+
+{
+  id: 'c1-via-nostalgia', title: 'El viaje como mercancía', level: 9, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'plusc'],
+  text: 'Hubo un tiempo, no tan lejano, en que viajar implicaba aceptar una cantidad considerable de incertidumbre. Uno llegaba a una estación sin saber si habría alojamiento, preguntaba en una pensión, consultaba un plano de papel que no siempre coincidía con la ciudad real y, con bastante frecuencia, acababa durmiendo en un sitio que no había elegido. Esa fricción, que entonces se padecía, hoy se recuerda con una ternura sospechosa. Conviene desconfiar de la nostalgia: casi todo lo que hemos ganado en previsibilidad ha sido una ganancia real, y quien añore la incertidumbre suele ser quien podía permitirse resolverla. Dicho esto, algo se ha perdido, y merece la pena nombrarlo con precisión en lugar de suspirar por ello. Lo que la organización total del viaje elimina no es la incomodidad, que era secundaria, sino el encuentro no programado. Un itinerario cerrado, con el billete comprado, el hotel confirmado y la excursión reservada, produce un recorrido en el que todas las personas con las que uno habla están profesionalmente obligadas a hablarle: el recepcionista, el guía turístico, el conductor, el camarero. Son conversaciones amables y no son un encuentro. Lo otro, la conversación con el marinero del puerto que explica por qué aquel muelle ya no se usa, con la senderista que conoce un camino sin señalizar, con el vecino que cuenta lo que ocurrió allí hace treinta años, requiere una condición que la industria del viaje no puede vender: tiempo sin asignar. Por eso el viajero contemporáneo vuelve a casa con un archivo enorme de imágenes y una sensación difusa de no haber estado del todo. No es culpa del teléfono, ni de las aerolíneas, ni del turismo como categoría abstracta. Es la consecuencia lógica de haber convertido en producto algo cuyo valor dependía precisamente de no estar terminado antes de empezar. Nada de esto es un argumento contra reservar un hotel o comprar un billete con antelación. Quien viaja con niños, con poco dinero o con dos días libres necesita exactamente esa previsibilidad, y sostener lo contrario es un lujo de quien puede perder una tarde. La cuestión es más modesta: dejar sin llenar una parte del itinerario, no consultar el plano durante una hora, bajarse en una parada que no estaba prevista. El margen no se compra en ninguna agencia, pero tampoco cuesta nada, y suele ser lo único que después se recuerda con nombre propio.',
+  questions: [
+    { type: 'mcq', q: '¿De qué conviene desconfiar?',
+      options: ['De la nostalgia', 'Del plano de papel', 'De las pensiones'], answer: 0 },
+    { type: 'mcq', q: '¿Qué elimina la organización total del viaje?',
+      options: ['La incomodidad', 'El encuentro no programado', 'El precio'], answer: 1 },
+    { type: 'short', q: '¿Qué condición no puede vender la industria del viaje? (tres palabras)', accept: ['tiempo sin asignar', 'tiempo sin asignar.', 'el tiempo sin asignar'] },
+    { type: 'translate', line: 'Conviene desconfiar de la nostalgia: casi todo lo que hemos ganado en previsibilidad ha sido una ganancia real', model: 'It is worth distrusting nostalgia: almost everything we have gained in predictability has been a real gain' }
+  ]
+},
+
+{
+  id: 'c1-serv-confianza2', title: 'La infraestructura invisible', level: 9, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj'],
+  text: 'Una sociedad se sostiene sobre una cantidad de confianza que resultaría inverosímil si se enunciara explícitamente. Cuando alguien introduce una tarjeta en un cajero automático de madrugada, está dando por supuesto el funcionamiento correcto de una cadena de decisiones que no ha supervisado: alguien actualizó un sistema el mes pasado, alguien revisó una cifra, alguien decidió no recortar en un departamento que nadie ve. Lo mismo ocurre cuando se marca un teléfono de emergencia desde una carretera sin saber con exactitud dónde se está: la llamada se apoya en un vigilante despierto, una enfermera que aceptó el turno de noche y un conductor de ambulancia que conoce una vía secundaria. Ninguno de ellos aparecerá en la prensa si todo sale bien. Esa es precisamente la característica definitoria de la infraestructura: solo se vuelve visible cuando falla. De ahí se deriva un problema político de primer orden, porque los incentivos de quien gobierna están alineados con lo contrario. Inaugurar un edificio produce una fotografía; mantener en buen estado una red de alcantarillado, ninguna. Contratar a treinta funcionarios más para una oficina de extranjería no genera titulares, mientras que anunciar una aplicación nueva sí. El resultado, repetido durante décadas y en países muy distintos, es un patrón reconocible: inversión generosa en lo inaugurable y desgaste lento de lo que sostiene. El desgaste no se nota durante mucho tiempo, y esa es su trampa. Un servicio público puede funcionar con plantilla insuficiente durante años gracias a la disposición de gente concreta a trabajar por encima de lo exigible, hasta que un día esa gente se jubila, enferma o simplemente deja de estar dispuesta. Entonces el deterioro aparece de golpe y se atribuye a la coyuntura, cuando llevaba quince años fabricándose. Cuidar lo invisible es, por eso, una de las tareas más difíciles de cualquier administración: exige gastar hoy en algo cuyo único resultado exitoso consiste en que no ocurra nada digno de mención. Basta pensar en lo que ocurre cuando falla de verdad. Un paquete que correos no entrega, una comisaría que no responde, un cajero automático sin dinero el día de cobro, una ambulancia que tarda cuarenta minutos: cada uno de esos episodios erosiona algo que no se reconstruye con una campaña. La enfermera, el bombero, el cartero y el empleado de la ventanilla no son piezas intercambiables de un organigrama; son el lugar exacto donde una promesa abstracta se convierte en un servicio concreto, o deja de hacerlo.',
+  questions: [
+    { type: 'mcq', q: '¿Cuándo se vuelve visible la infraestructura?',
+      options: ['Cuando falla', 'Cuando se inaugura', 'Nunca'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es la trampa del desgaste?',
+      options: ['Que es caro', 'Que no se nota durante mucho tiempo', 'Que es rápido'], answer: 1 },
+    { type: 'short', q: '¿Qué produce inaugurar un edificio? (dos palabras)', accept: ['una fotografía', 'fotografía', 'una fotografia'] },
+    { type: 'translate', line: 'Cuidar lo invisible es, por eso, una de las tareas más difíciles de cualquier administración', model: 'Looking after the invisible is, for that reason, one of the hardest tasks any administration has' }
+  ]
+},
+
+{
+  id: 'c1-salud-mental', title: 'Nombrar no es tratar', level: 9, theme: 'salud',
+  tenses: ['presente', 'perfecto', 'futuro', 'condicional', 'presubj', 'condperf', 'perfsubj'],
+  text: 'En poco más de una década, el vocabulario de la salud mental ha pasado de la consulta privada a la conversación ordinaria. Palabras que hace veinte años habrían resultado impropias en una mesa familiar (ansiedad, terapia, depresión, burnout) circulan hoy con una naturalidad que conviene celebrar sin ingenuidad. El beneficio es incuestionable: un adolescente puede decir que no está bien sin que eso implique una catástrofe, y un adulto puede pedir una cita médica por algo que ningún análisis detecta y ningún termómetro mide. Reducir el estigma tiene efectos medibles sobre la mortalidad, y quien haya acompañado a alguien en ese estado sabe que no es una cuestión retórica. El problema aparece cuando el vocabulario avanza más deprisa que los servicios. Se habla de salud mental en campañas institucionales, en institutos y en anuncios de empresas, mientras la primera consulta en el sistema público se mide en meses y buena parte de la población acaba pagando en privado lo que no puede esperar. En ese desajuste se produce un efecto perverso: la responsabilidad se individualiza. Si el discurso público insiste en que hay que pedir ayuda y la ayuda no existe en plazos razonables, el mensaje implícito que recibe quien no mejora es que no ha pedido lo suficiente. Hay además una deriva más sutil, y es la progresiva medicalización del malestar ordinario. No todo sufrimiento es un trastorno, y tratar como clínico lo que es laboral, económico o social tiene una ventaja administrativa considerable: convierte un problema sin responsable en uno con paciente. Un contrato precario, una vivienda impagable o una jornada de doce horas producen síntomas perfectamente reales que ninguna pastilla corregirá, porque su origen no está en la cabeza de quien los padece. Reconocerlo no supone negar la existencia de la enfermedad mental ni restar importancia a la terapia. Supone, más bien, aceptar que nombrar un problema es el primer paso y no es ninguno de los siguientes, y que una sociedad que solo domina el primero corre el riesgo de confundir el diagnóstico con el tratamiento.',
+  questions: [
+    { type: 'mcq', q: '¿Qué beneficio destaca el texto?',
+      options: ['Que se puede decir que uno no está bien', 'Que hay más pastillas', 'Que hay menos consultas'], answer: 0 },
+    { type: 'mcq', q: '¿Qué efecto perverso se produce?',
+      options: ['La responsabilidad se individualiza', 'Nadie habla del tema', 'Bajan las listas'], answer: 1 },
+    { type: 'short', q: '¿En qué se mide la primera consulta pública? (una palabra)', accept: ['meses', 'en meses'] },
+    { type: 'translate', line: 'nombrar un problema es el primer paso y no es ninguno de los siguientes', model: 'naming a problem is the first step and it is none of the ones that follow' }
+  ]
+}
+,
+
+{
+  id: 'c1-ident-burocracia', title: 'Quien no cabe en la casilla', level: 8, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'impsubj'],
+  text: 'Todo formulario es una teoría sobre la realidad, y como toda teoría deja fuera lo que no previó. Una casilla para el nombre y otra para el apellido presupone que hay uno de cada; un desplegable de estado civil con cuatro opciones presupone que soltero, casado, viudo y divorciado agotan las formas de convivir; una pregunta por el lugar de nacimiento presupone que ese sitio sigue llamándose igual. La mayoría de la población pasa por esas casillas sin notarlas, y ese es exactamente el problema: quien encaja no percibe que había un borde. Los que no encajan lo saben desde muy pronto. El que tiene dos apellidos en un país que espera uno, el que nació en un lugar que cambió de nombre o de frontera, el que vive con su pareja de hecho desde hace veinte años y no encuentra la opción, el que ha renovado un permiso de residencia cinco veces y cada vez ha tenido que explicar lo mismo a un funcionario distinto. En todos esos casos la solución consiste en forzar el dato hasta que entre, y ese forzamiento deja huella: un carné con un apellido partido por la mitad, una tarjeta de crédito con la mitad de un nombre, un documento de identidad que no coincide con el pasaporte y obliga a dar explicaciones en cada frontera. Conviene no romantizar el asunto. Un sistema administrativo necesita categorías, y ninguna categoría puede recoger la totalidad de los casos sin volverse inservible. La cuestión no es eliminar las casillas sino reconocer su naturaleza provisional y abaratar la corrección. Hoy ocurre lo contrario: cometer el error cuesta un segundo de distracción de un empleado cansado y enmendarlo cuesta meses, varias solicitudes y a veces un abogado. Esa asimetría no es técnica; es una decisión sobre a quién se le hace pagar la imperfección del sistema. Y se paga, casi siempre, en la vida de quien ya venía con la identidad complicada de antes.',
+  questions: [
+    { type: 'mcq', q: '¿Qué es todo formulario, según el texto?',
+      options: ['Una teoría sobre la realidad', 'Un trámite inútil', 'Un documento legal'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es la asimetría que denuncia?',
+      options: ['Que los formularios son largos', 'Que el error cuesta un segundo y enmendarlo meses', 'Que faltan funcionarios'], answer: 1 },
+    { type: 'short', q: '¿Cuántas opciones de estado civil menciona? (un número)', accept: ['cuatro', '4'] },
+    { type: 'translate', line: 'La mayoría de la población pasa por esas casillas sin notarlas, y ese es exactamente el problema: quien encaja no percibe que había un borde.', model: 'Most people pass through those boxes without noticing them, and that is exactly the problem: whoever fits does not notice that there was an edge.' }
+  ]
+},
+
+{
+  id: 'c1-ident-pertenencia', title: 'De dónde es uno', level: 9, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj'],
+  text: 'La pregunta por el origen parece inocente y casi nunca lo es del todo. Cuando alguien pregunta de dónde eres, a veces quiere saber dónde naciste, a veces dónde vives, a veces por qué tienes ese acento y, con cierta frecuencia, cuándo piensas volver. La misma frase funciona como cortesía, como curiosidad genuina o como recordatorio, y el que la recibe aprende a distinguir el tono mucho antes que las palabras. Existe una respuesta administrativa, que es la más sencilla y la menos interesante: el lugar de nacimiento que figura en el documento de identidad, la nacionalidad que uno tiene o ha pedido, la dirección donde está empadronado. Nada de eso explica gran cosa. Conozco a gente nacida a doscientos metros de su casa actual que no sabría decir cómo se llama la calle paralela, y a otros que llegaron con treinta años y conocen el barrio, sus horarios y sus tres generaciones mejor que nadie. La pertenencia se parece más a un hábito que a un certificado. Lo que complica el asunto es que la pregunta rara vez se dirige a todo el mundo por igual. Hay apellidos que nunca la provocan y otros que la provocan siempre; hay acentos que pasan inadvertidos y acentos que abren conversación en cada ventanilla. Por eso quien responde con impaciencia no suele estar reaccionando a esa pregunta concreta, sino a las cuatrocientas anteriores. Y sin embargo no veo manera de prohibirla ni motivo para hacerlo. Preguntar de dónde viene alguien es una de las pocas puertas que quedan abiertas entre desconocidos, y renunciar a ella nos dejaría a todos un poco más solos. Lo que sí se puede es escuchar la respuesta entera, incluida la parte en que alguien dice que es de dos sitios a la vez o de ninguno del todo, sin tratar eso como una evasiva ni como un problema pendiente de resolver. Queda el asunto práctico, que es el que uno resuelve en una ventanilla y no en un ensayo. Ahí la pertenencia se reduce a un documento de identidad, un pasaporte, un carné con una dirección y un código postal, una fecha de nacimiento y, si hace falta, un permiso de residencia. Ese expediente no dice nada de nadie y sin embargo abre todas las puertas. Uno puede sentirse de un sitio durante veinte años y seguir necesitando un papel del ayuntamiento para demostrar que vive donde vive. El soltero, el casado, el viudo y el separado de una misma familia comparten un segundo apellido y poco más, y ninguna de esas cuatro palabras dice de dónde es nadie.',
+  questions: [
+    { type: 'mcq', q: '¿Qué aprende a distinguir quien recibe la pregunta?',
+      options: ['El tono antes que las palabras', 'El idioma', 'La intención legal'], answer: 0 },
+    { type: 'mcq', q: '¿A qué se parece la pertenencia?',
+      options: ['A un certificado', 'A un hábito', 'A una nacionalidad'], answer: 1 },
+    { type: 'short', q: '¿A qué reacciona quien responde con impaciencia? (tres palabras)', accept: ['a las cuatrocientas anteriores', 'las cuatrocientas anteriores', 'a las anteriores'] },
+    { type: 'translate', line: 'La pertenencia se parece más a un hábito que a un certificado.', model: 'Belonging is more like a habit than a certificate.' }
+  ]
+},
+
+{
+  id: 'c1-ident-datos', title: 'La identidad repartida', level: 9, theme: 'identidad',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj', 'perfsubj'],
+  text: 'Durante siglos, la identidad de una persona cupo en un armario. Un documento de identidad, una partida de nacimiento, un pasaporte si acaso, y el conjunto de cosas que los vecinos sabían de uno. Esa segunda parte, la reputación, era lenta de construir y prácticamente imposible de trasladar: quien se mudaba empezaba de cero y esa era a la vez la condena y la oportunidad de cambiar de sitio. Hoy la identidad está repartida entre centenares de servicios que ninguna persona controla ni conoce por entero. El nombre está en un sitio, la fecha de nacimiento en otro, la dirección en un tercero que se la vendió a un cuarto; una empresa que nadie eligió verifica quién es uno para permitirle entrar en una plataforma que tampoco eligió del todo. El cambio tiene ventajas enormes y se nota sobre todo en lo cotidiano: abrir una cuenta en diez minutos, renovar un carné sin pedir cita, demostrar un lugar de nacimiento sin viajar al pueblo. Pero conviene mirar también la otra cara, porque es la que no aparece en ningún folleto. Cuando la identidad vivía en un cajón, un error se corregía tachando y escribiendo al lado. Ahora un dato equivocado se propaga por copia automática a catorce bases distintas y corregirlo en una no lo corrige en las demás. Quien haya intentado arreglar un apellido mal transcrito sabe que la palabra sistema es aquí un eufemismo: no hay tal sistema, hay un archipiélago. Y hay algo más, menos visible y quizá más serio. Aquella reputación lenta de los vecinos tenía una virtud que hemos perdido casi sin discutirla: prescribía. La gente olvidaba. Un error de juventud dejaba de importar a los diez años porque nadie lo recordaba con precisión. Los registros actuales no olvidan nada y no distinguen entre lo que fue importante y lo que fue una tarde mala. La identidad, que era un relato que uno podía ir corrigiendo con los años, se ha convertido en un expediente que otros consultan. Hay además una asimetría que conviene nombrar. Quien tiene el nombre, los dos apellidos, la dirección y la fecha de nacimiento en orden puede permitirse considerar todo esto un asunto abstracto. Quien arrastra un carné con un apellido partido, un pasaporte que no coincide con el documento de identidad o un permiso de residencia pendiente desde hace ocho meses vive dentro del problema, y descubre que un lugar de nacimiento mal escrito pesa más que cualquier biografía. También la cartera lo cuenta: dentro hay una tarjeta de crédito con medio nombre, una tarjeta de estudiante caducada y unas llaves de un piso del que uno ya se ha mudado dos veces.',
+  questions: [
+    { type: 'mcq', q: '¿Qué virtud tenía la reputación de los vecinos?',
+      options: ['Prescribía', 'Era exacta', 'Era pública'], answer: 0 },
+    { type: 'mcq', q: '¿Qué palabra le parece un eufemismo?',
+      options: ['Identidad', 'Sistema', 'Registro'], answer: 1 },
+    { type: 'short', q: '¿En qué se ha convertido la identidad? (dos palabras)', accept: ['un expediente', 'expediente', 'en un expediente'] },
+    { type: 'translate', line: 'no hay tal sistema, hay un archipiélago', model: 'there is no such system, there is an archipelago' }
+  ]
+},
+
+{
+  id: 'c1-cuerpo-longevidad', title: 'Añadir años o añadir vida', level: 8, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'presubj'],
+  text: 'La esperanza de vida ha crecido tanto en un siglo que el dato ha dejado de impresionarnos, y esa indiferencia tiene consecuencias. Hemos organizado la conversación pública alrededor de cuántos años vivimos y apenas hemos empezado a discutir en qué estado los vivimos, que es una pregunta bastante distinta. Una persona de ochenta y cinco años que puede levantarse de una silla sin apoyar las manos, subir un tramo de escaleras y cargar la compra habita un mundo que no tiene nada que ver con el de otra de la misma edad que no puede hacer ninguna de esas tres cosas, aunque las dos aparezcan idénticas en una estadística. Lo interesante es que la diferencia entre ambas situaciones se decide mucho antes de lo que suele creerse, y no depende principalmente de la genética. A partir de los cincuenta, la pérdida de músculo es fisiológicamente normal; su velocidad, en cambio, es en buena medida negociable. Lo mismo ocurre con la densidad de los huesos, con el equilibrio y con la capacidad del corazón y de los pulmones. Ninguna de esas tres cosas mejora sola, y las tres responden razonablemente bien a un estímulo aburrido y barato: cargar peso, subir escaleras, andar, moverse contra alguna resistencia un par de veces por semana. El problema es que la conversación sobre el cuerpo está colonizada por el aspecto. Se habla de la piel, del pelo, de la cara y de la cintura, es decir, de lo que se fotografía, y muy poco de la fuerza de las piernas, que es lo que decide si alguien podrá vivir solo a los ochenta y siete. Un gimnasio vende resultados visibles en doce semanas porque es lo que se compra; nadie ha construido nunca un negocio próspero prometiendo que dentro de treinta años una caída no acabará en una muñeca rota y seis meses de dependencia. Y sin embargo esa es, con diferencia, la mejor inversión que puede hacer un cuerpo de cuarenta años.',
+  questions: [
+    { type: 'mcq', q: '¿Qué pregunta apenas se discute?',
+      options: ['En qué estado vivimos esos años', 'Cuántos años vivimos', 'Cuánto cuesta'], answer: 0 },
+    { type: 'mcq', q: '¿Qué es negociable a partir de los cincuenta?',
+      options: ['La pérdida de músculo', 'La velocidad de esa pérdida', 'La genética'], answer: 1 },
+    { type: 'short', q: '¿Qué decide si alguien podrá vivir solo a los ochenta y siete? (cuatro palabras)', accept: ['la fuerza de las piernas', 'fuerza de las piernas', 'las piernas'] },
+    { type: 'translate', line: 'Ninguna de esas tres cosas mejora sola, y las tres responden razonablemente bien a un estímulo aburrido y barato', model: 'None of those three things improves on its own, and all three respond reasonably well to a dull, cheap stimulus' }
+  ]
+},
+
+{
+  id: 'c1-cuerpo-dolor-cronico', title: 'El dolor que no se ve', level: 9, theme: 'cuerpo',
+  tenses: ['presente', 'perfecto', 'futuro', 'presubj'],
+  text: 'El dolor crónico ocupa en la medicina un lugar incómodo porque no encaja del todo en el modelo que la sostiene. Ese modelo busca una lesión, la localiza y la corrige: hay un hueso roto, una muela infectada, un músculo desgarrado. Funciona admirablemente en urgencias y falla con una regularidad desalentadora cuando alguien lleva cuatro años con dolor de espalda y todas las pruebas salen normales. Entonces empieza una carrera de consultas en la que el paciente repite su historia a un especialista tras otro, cada uno mira una parte (la rodilla, el cuello, el estómago) y ninguno mira a la persona entera. Lo que la investigación de las últimas décadas ha ido mostrando, con más solidez de la que ha llegado a la conversación corriente, es que el dolor no es una señal que viaja desde un tejido dañado hasta la cabeza como el agua por una tubería. Es una construcción que el sistema nervioso elabora teniendo en cuenta la señal, sí, pero también el contexto, la expectativa, el miedo, el sueño y la historia previa. Eso no significa en absoluto que el dolor sea imaginario, y conviene decirlo con claridad porque esa es la lectura torpe y la que más daño ha hecho. Significa lo contrario: que es completamente real y que su causa no está solo donde duele. De ahí se deriva algo prácticamente relevante. A un paciente con dolor persistente le suele servir más entender el mecanismo, recuperar movimiento gradual y dormir bien que someterse a una quinta prueba de imagen cuyo hallazgo menor abrirá una sexta. Pero explicar eso requiere tiempo de consulta, que es exactamente el recurso que ningún centro de salud tiene, y aceptar una incertidumbre que ni el médico ni el enfermo desean. Es más rápido mandar una resonancia. Es más rápido y, en un número considerable de casos, empeora el problema que pretendía resolver. Conviene añadir algo sobre el vocabulario. Un paciente que oye hablar de desgaste, de huesos gastados y de una espalda que no tiene arreglo sale de la consulta con un músculo más rígido del que entró, porque el miedo cambia la postura y la postura alimenta el dolor. Nombrar bien importa: la rodilla, el cuello y el estómago de una persona de cincuenta años se parecen a los de cualquier otra de cincuenta, y casi ninguna imagen predice quién tendrá dolor y quién no. La piel envejece a la vista, el pelo también, y de los pulmones y del corazón no se queja nadie hasta que fallan; la espalda, en cambio, avisa durante años a quien quiera escucharla.',
+  questions: [
+    { type: 'mcq', q: '¿Dónde falla el modelo médico habitual?',
+      options: ['En el dolor crónico sin lesión visible', 'En urgencias', 'En las fracturas'], answer: 0 },
+    { type: 'mcq', q: '¿Qué es el dolor según la investigación citada?',
+      options: ['Una señal que viaja por una tubería', 'Una construcción del sistema nervioso', 'Algo imaginario'], answer: 1 },
+    { type: 'short', q: '¿Qué recurso no tiene ningún centro de salud? (tres palabras)', accept: ['tiempo de consulta', 'el tiempo de consulta', 'tiempo'] },
+    { type: 'translate', line: 'Significa lo contrario: que es completamente real y que su causa no está solo donde duele.', model: 'It means the opposite: that it is entirely real and that its cause is not only where it hurts.' }
+  ]
+},
+
+{
+  id: 'c1-cuerpo-trabajo', title: 'El cuerpo en la oficina', level: 9, theme: 'cuerpo',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj'],
+  text: 'Durante el siglo veinte, la salud laboral se ocupó de accidentes: máquinas sin protección, caídas, sustancias tóxicas, pérdidas de un dedo o de un brazo. Eran daños visibles, atribuibles y por tanto legislables, y la legislación funcionó. Lo que ha sustituido a aquello en una parte creciente de la economía es mucho más difícil de fotografiar: una postura mantenida ocho horas, un cuello inclinado hacia una pantalla, unas muñecas apoyadas en el borde de una mesa, una espalda que no cambia de posición entre las nueve y las seis. No hay un momento del accidente. Hay una acumulación de veinte años y un día en que alguien no puede girar la cabeza. La respuesta habitual de las empresas ha consistido en comprar sillas mejores y organizar una charla anual, que es la versión moderna de lavarse las manos. Sirve de algo y no aborda el mecanismo, porque el problema no es la silla sino la inmovilidad continuada, y ninguna silla, por cara que sea, resuelve ocho horas sin levantarse. Lo que sí funciona es tan simple que resulta difícil de vender: interrumpir. Unos minutos de pie cada hora hacen más por los músculos, por la espalda y por el corazón que una sesión intensa de gimnasia a las diez de la noche, porque lo que daña no es la falta de esfuerzo sino la ausencia de variación. Hay aquí una hipocresía organizativa que conviene nombrar. Muchas empresas han incorporado el vocabulario del bienestar y siguen premiando exactamente lo contrario: la reunión que se alarga, la disponibilidad permanente, el que no se mueve de su sitio en toda la jornada. Mientras la cultura real recompense la inmovilidad, la fruta gratis de los jueves y la clase de yoga del viernes seguirán siendo lo que son, un gesto barato. Cuidar el cuerpo de quien trabaja sentado no es una cuestión de voluntad individual ni de equipamiento: es una decisión sobre cómo se organiza el tiempo, y esa decisión la toma siempre alguien que no es el que va a tener dolor de cuello a los cincuenta.',
+  questions: [
+    { type: 'mcq', q: '¿De qué se ocupó la salud laboral en el siglo veinte?',
+      options: ['De accidentes visibles', 'De la postura', 'Del estrés'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es el problema real?',
+      options: ['La silla', 'La inmovilidad continuada', 'La falta de esfuerzo'], answer: 1 },
+    { type: 'short', q: '¿Qué funciona, según el texto? (una palabra)', accept: ['interrumpir'] },
+    { type: 'translate', line: 'No hay un momento del accidente. Hay una acumulación de veinte años y un día en que alguien no puede girar la cabeza.', model: 'There is no moment of the accident. There is a twenty-year accumulation and a day when somebody cannot turn their head.' }
+  ]
+},
+
+{
+  id: 'c1-car-etiquetas', title: 'Las etiquetas del carácter', level: 8, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'plusc'],
+  text: 'Vivimos un momento de enorme apetito por clasificar el carácter. Los tipos de personalidad, los perfiles de equipo, los tests que reparten a la gente en cuatro colores y las categorías tomadas de la psicología clínica y usadas a la ligera en conversaciones de oficina han encontrado un público extraordinario. La razón del éxito es comprensible: entender a los demás es difícil y una etiqueta convierte ese problema en algo manejable. Decir que alguien es introvertido explica una conducta en dos palabras, y explicar en dos palabras produce un alivio considerable. El problema aparece cuando la etiqueta deja de ser una descripción provisional y pasa a funcionar como causa. Una cosa es observar que alguien se muestra reservado en las reuniones y otra muy distinta concluir que es reservado y que, por tanto, no le interesan las reuniones, no quiere responsabilidades o no conviene ponerlo delante de un cliente. En el primer caso se describe una conducta en un contexto; en el segundo se ha fabricado una esencia. Y las esencias, a diferencia de las conductas, no admiten prueba en contra: si el tímido habla mucho un día, se interpreta como excepción; si calla, como confirmación. He visto esto arruinar carreras con una suavidad notable, sin que nadie actuara de mala fe. El compañero paciente al que se deja siempre la tarea ingrata porque no protesta. La persona sincera a la que se etiqueta de maleducada y deja de decir lo que ve. El impaciente que empuja al equipo y acaba con fama de arrogante. Nada de esto significa que no exista una variación real y estable entre las personas, porque existen y se notan a los diez minutos. Significa que el carácter es mucho más dependiente de la situación de lo que nuestras etiquetas permiten, y que un sistema que clasifica a la gente pronto acabará encontrando siempre lo que ya había decidido buscar. Existe por último un efecto sobre el propio etiquetado. Quien se describe como tímido, introvertido o impaciente acaba encontrando en su carácter la explicación de cualquier cosa que no hizo, y una etiqueta usada así deja de ser un espejo y se convierte en una coartada muy cómoda. Nadie se describe nunca como egoísta, antipático, arrogante o vago; esas palabras se reservan siempre para los demás, mientras que uno se considera a sí mismo sincero, generoso y bastante tolerante.',
+  questions: [
+    { type: 'mcq', q: '¿Por qué tienen éxito las etiquetas?',
+      options: ['Convierten un problema en algo manejable', 'Son científicas', 'Son baratas'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ocurre cuando la etiqueta pasa a funcionar como causa?',
+      options: ['Se describe mejor', 'Se fabrica una esencia', 'Se corrige sola'], answer: 1 },
+    { type: 'short', q: '¿Qué no admiten las esencias? (tres palabras)', accept: ['prueba en contra', 'una prueba en contra', 'pruebas en contra'] },
+    { type: 'translate', line: 'En el primer caso se describe una conducta en un contexto; en el segundo se ha fabricado una esencia.', model: 'In the first case a behaviour in a context is described; in the second an essence has been manufactured.' }
+  ]
+},
+
+{
+  id: 'c1-car-cambio3', title: '¿Cambia alguien de verdad?', level: 9, theme: 'caracter',
+  tenses: ['presente', 'preterito', 'futuro', 'presubj'],
+  text: 'La pregunta de si una persona puede cambiar tiene dos respuestas y las dos son parcialmente ciertas, lo cual explica por qué la discusión no termina nunca. Quien sostiene que no cambia nadie suele tener a la vista el temperamento: la velocidad de reacción, el umbral de irritación, la tendencia a la tristeza o al optimismo, la cantidad de gente que uno aguanta antes de necesitar silencio. Esas cosas se manifiestan muy pronto, se reconocen en fotografías de la infancia y se mantienen con una obstinación considerable durante ochenta años. Quien sostiene lo contrario suele tener a la vista otra cosa, igualmente real: lo que alguien hace con ese temperamento. El impaciente de veinte años sigue sintiendo exactamente la misma prisa a los cincuenta; lo que puede haber aprendido es que expresarla no acelera nada y arruina bastantes conversaciones. El tímido no se convierte en sociable, pero descubre que un grupo pequeño le resulta tolerable y que hablar el segundo en una reunión es más fácil que hablar el quinto. Llamar a eso cambiar de carácter es exagerado; llamarlo seguir igual es falso. La distinción tiene consecuencias prácticas que van más allá de lo semántico. Cuando esperamos de alguien un cambio de temperamento, le pedimos algo que no puede darnos y acabamos acusándolo de mala voluntad. Cuando aceptamos que solo cambian las conductas, la exigencia se vuelve razonable y, curiosamente, más eficaz: a una persona reservada se le puede pedir que mande sus observaciones por escrito después de la reunión, y lo hará; pedirle que sea espontánea en voz alta no producirá más que incomodidad y una espontaneidad falsa. Lo mismo vale para uno mismo, que es el caso más difícil, porque la tentación de exigirse ser otro es enorme y casi siempre estéril. Hay un consuelo pequeño en todo esto. Uno no elige su temperamento, de modo que tampoco tiene demasiado sentido avergonzarse de él; lo que sí elige, y eso sí se le puede reprochar, es lo que hace con él un martes por la tarde cuando está cansado. Todo esto vale igual para las virtudes. Alguien generoso, amable, sincero o tolerante tampoco lo es de manera uniforme: lo es más por la mañana, con quien le cae bien y cuando nadie le está midiendo. El carácter no es una sustancia que uno lleva encima, sino el promedio de una serie larga de decisiones tomadas en condiciones muy distintas.',
+  questions: [
+    { type: 'mcq', q: '¿Qué tiene a la vista quien dice que nadie cambia?',
+      options: ['El temperamento', 'Las conductas', 'La educación'], answer: 0 },
+    { type: 'mcq', q: '¿Qué ocurre cuando esperamos un cambio de temperamento?',
+      options: ['Se consigue', 'Pedimos algo que no pueden darnos', 'Nada'], answer: 1 },
+    { type: 'short', q: '¿Qué se le puede pedir a una persona reservada? (cuatro palabras)', accept: ['que mande sus observaciones por escrito', 'mandar sus observaciones por escrito', 'que escriba sus observaciones', 'por escrito'] },
+    { type: 'translate', line: 'Llamar a eso cambiar de carácter es exagerado; llamarlo seguir igual es falso.', model: 'Calling that a change of character is an exaggeration; calling it staying the same is false.' }
+  ]
+},
+
+{
+  id: 'c1-car-amabilidad', title: 'La amabilidad como sistema', level: 9, theme: 'caracter',
+  tenses: ['presente', 'perfecto', 'presubj', 'perfsubj'],
+  text: 'Tendemos a pensar la amabilidad como un rasgo de carácter, algo que unos tienen y otros no, y esa manera de verla oculta lo más interesante del asunto. Casi todo el mundo es amable cuando ha dormido, tiene tiempo y no le están evaluando. Casi nadie lo es a las once de la noche de un jueves después de catorce horas, con una lista de tareas imposible y alguien exigiéndole una respuesta inmediata. Si esto es así, la pregunta útil no es quién es una persona generosa, sino en qué condiciones cualquiera deja de serlo. Los sistemas, y no los individuos, producen la mayor parte del trato que recibimos. Una ventanilla con la mitad de personal genera empleados secos, y no porque los haya seleccionado antipáticos. Un hospital que da consultas de seis minutos genera médicos que interrumpen, y muchos de ellos lo saben y lo padecen. Una empresa que premia la disponibilidad permanente acaba llena de gente impaciente que contesta mal por escrito y luego se disculpa en persona. Cuando el maltrato es frecuente en un lugar concreto, la hipótesis de que allí se ha concentrado por azar la gente maleducada del país es, estadísticamente, la menos probable. Esto no disuelve la responsabilidad individual, que existe y es intransferible: en las mismas condiciones atroces hay quien conserva la cortesía y quien no, y la diferencia importa y se nota. Pero atribuir todo el resultado al carácter de quien atiende es una comodidad conceptual que beneficia siempre a quien diseñó las condiciones. Es más barato pedir a los empleados que sonrían que contratar a dos más. De ahí una conclusión modesta y poco heroica: si uno quiere una sociedad más amable, conviene dedicar menos energía a juzgar el carácter ajeno y algo más a mirar los horarios, las plantillas y los incentivos, que es donde la amabilidad se fabrica o se destruye mucho antes de que nadie abra la boca. Hay una prueba sencilla que casi nunca se hace. Si en un equipo todo el mundo empieza sociable, paciente y generoso y al cabo de un año la mitad se ha vuelto seca, reservada o arrogante, la hipótesis del carácter individual ha quedado descartada por los propios datos. Ninguna persona tolerante aguanta indefinidamente un sistema intolerante, y ninguna etiqueta explica por qué el mismo empleado es amable en enero e impaciente en noviembre.',
+  questions: [
+    { type: 'mcq', q: '¿Cuál es la pregunta útil, según el texto?',
+      options: ['En qué condiciones cualquiera deja de ser amable', 'Quién es generoso', 'Quién es maleducado'], answer: 0 },
+    { type: 'mcq', q: '¿Qué genera una ventanilla con la mitad de personal?',
+      options: ['Más clientes', 'Empleados secos', 'Mejor servicio'], answer: 1 },
+    { type: 'short', q: '¿Qué es más barato que contratar a dos más? (cuatro palabras)', accept: ['pedir a los empleados que sonrían', 'que sonrían', 'pedir que sonrían'] },
+    { type: 'translate', line: 'Los sistemas, y no los individuos, producen la mayor parte del trato que recibimos.', model: 'Systems, not individuals, produce most of the treatment we receive.' }
+  ]
+}
+,
+
+{
+  id: 'c1-medios-modelo', title: 'Quién paga la noticia', level: 8, theme: 'medios',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'presubj', 'impsubj'],
+  text: 'Toda discusión sobre la calidad del periodismo que no empiece por el modelo de negocio acaba siendo una conversación moral sobre gente concreta, y eso rara vez explica nada. Un periódico del siglo pasado cobraba dos veces: al lector en el quiosco y al anunciante en la página siguiente. Ese doble ingreso no garantizaba independencia, pero repartía la presión. Cuando el ejemplar en papel dejó de venderse, la presión se concentró en un único punto, y la lógica que se impuso después no necesitó que ningún director tomara una decisión deshonesta. Bastó con medir la audiencia hora a hora y premiar lo que subía. Las consecuencias son observables sin necesidad de suponer mala fe. El titular abandona su función de resumen y adopta la de promesa. El debate desplaza al reportaje porque cuesta una décima parte y llena el doble de minutos. La entrevista se concibe pensando en el fragmento que circulará después, no en la conversación entera. La cadena que emite un documental caro compite con otra que emite tres tertulias, y la aritmética decide sola. Nada de esto es responsabilidad del periodista que cubre un pleno municipal por un sueldo modesto. Lo interesante, y lo incómodo, es el papel del público. Compartimos aquello que nos indigna, comentamos lo que no hemos leído entero, seguimos a quien confirma lo que ya pensábamos y después nos quejamos de la prensa como si fuera un fenómeno meteorológico. Un medio que vive de la atención se adapta a lo que la atención premia, y la atención la ponemos nosotros. Existen remedios y ninguno es cómodo. Pagar por lo que uno lee, que es la manera menos romántica y más eficaz de cambiar a quién responde un periódico. Leer tres artículos completos en lugar de cuarenta titulares. Desconfiar del contenido que produce una emoción inmediata, que es exactamente el que está diseñado para circular. Ninguna de esas tres cosas es una virtud extraordinaria. Son hábitos, y su ausencia explica más del estado de la prensa que cualquier teoría sobre la maldad ajena.',
+  questions: [
+    { type: 'mcq', q: '¿Por dónde debe empezar la discusión?',
+      options: ['Por el modelo de negocio', 'Por la ética', 'Por la tecnología'], answer: 0 },
+    { type: 'mcq', q: '¿Qué bastó para que se impusiera la nueva lógica?',
+      options: ['Una decisión deshonesta', 'Medir la audiencia y premiar lo que subía', 'Una ley'], answer: 1 },
+    { type: 'short', q: '¿Qué función adopta el titular? (una palabra)', accept: ['promesa', 'la de promesa', 'de promesa'] },
+    { type: 'translate', line: 'Un medio que vive de la atención se adapta a lo que la atención premia, y la atención la ponemos nosotros.', model: 'A medium that lives on attention adapts to what attention rewards, and we are the ones who supply the attention.' }
+  ]
+},
+
+{
+  id: 'c1-medios-local3', title: 'La silla vacía', level: 9, theme: 'medios',
+  tenses: ['presente', 'imperfecto', 'futuro', 'condicional', 'presubj', 'condperf', 'perfsubj'],
+  text: 'La desaparición de la prensa local es la única noticia que no llega a contarse, porque lo que se pierde es precisamente quien la habría contado. Un periódico de provincia nunca destapó grandes escándalos ni ganó premios internacionales; hacía algo más modesto y más difícil de sustituir. Mandaba a una periodista al pleno del ayuntamiento un martes por la tarde y publicaba catorce líneas sobre un contrato de basuras que no leía casi nadie. El valor de esas catorce líneas no residía en el lector, que en efecto no existía, sino en el concejal que sabía que alguien estaría allí sentado tomando notas. Cuando esa silla se vacía no ocurre nada durante un año o dos. Después empiezan a aparecer síntomas que nadie relaciona con la causa: adjudicaciones que no se explican, un canal autonómico que reproduce la nota de prensa oficial sin modificar una coma, un foro vecinal donde circulan a la vez un dato correcto, un rumor y una acusación sin firma. La radio aguanta algo más porque es barata; el quiosco que sobrevive vende revistas y lotería. Quien haya trabajado en un medio pequeño sabe que la defensa habitual de este oficio suena a corporativismo, y con frecuencia lo es. Conviene por eso decirlo sin épica. Nadie tiene el deber moral de comprar un periódico. Lo que sí merece la pena entender es qué se está financiando cuando se paga por un medio local: no un producto informativo, que casi siempre podría obtenerse gratis en otra parte, sino la presencia física de una persona en una sala donde se decide algo que afectará a la calle de uno. Es un servicio parecido al alumbrado público. Nadie lo echa de menos mientras funciona, nadie sabría decir cuánto cuesta, y su ausencia no se nota la primera noche sino al cabo de varios inviernos, cuando ya cuesta mucho más volver a encenderlo. Entretanto, la cadena autonómica emite un documental caro a las once de la noche y una tertulia barata en horario central, el locutor de la emisora local lee la agenda del ayuntamiento y el periodismo que queda se hace desde una redacción de cuatro personas.',
+  questions: [
+    { type: 'mcq', q: '¿Dónde residía el valor de las catorce líneas?',
+      options: ['En el concejal que sabía que alguien miraba', 'En el lector', 'En el premio'], answer: 0 },
+    { type: 'mcq', q: '¿A qué servicio se compara?',
+      options: ['Al transporte', 'Al alumbrado público', 'A la sanidad'], answer: 1 },
+    { type: 'short', q: '¿Qué vende el quiosco que sobrevive? (dos cosas, una vale)', accept: ['revistas', 'lotería', 'revistas y lotería', 'loteria'] },
+    { type: 'translate', line: 'Nadie tiene el deber moral de comprar un periódico.', model: 'Nobody has a moral duty to buy a newspaper.' }
+  ]
+},
+
+{
+  id: 'c1-eco-vivienda2', title: 'Una generación sin llave', level: 8, theme: 'economia',
+  tenses: ['presente', 'preterito', 'perfecto', 'futuro', 'condicional', 'presubj', 'condperf'],
+  text: 'Explicar el precio de la vivienda sin convertirlo en una acusación exige cierta disciplina, porque cada factor real tiene detrás a alguien a quien resulta cómodo culpar. Hay menos casas de las necesarias donde la gente quiere vivir. La construcción lleva más de una década por debajo del ritmo que exigiría la formación de hogares. Una parte del parque residencial se ha desplazado hacia el alquiler turístico en determinadas ciudades, y en otras eso no ha ocurrido en absoluto. Los tipos de interés subieron y con ellos la cuota de cada hipoteca firmada a tipo variable. El salario, mientras tanto, se ha movido mucho menos que el precio. Cada uno de esos elementos es verificable y ninguno explica el conjunto por sí solo, razón por la cual las soluciones de una sola medida fracasan con una regularidad notable. Lo que sí puede afirmarse sin matices es la consecuencia. Una proporción del sueldo que la generación anterior habría considerado sencillamente imposible se destina hoy al alquiler o a la cuota, y ese dinero no desaparece: deja de ir al comercio, al ahorro, al presupuesto de una familia que se plantea tener hijos y a la jubilación futura de quien cotiza. Un país que dedica esa parte de su renta a pagar por el suelo que pisa está tomando, sin discutirlo, una decisión económica de primer orden. Conviene además desconfiar de dos consuelos frecuentes. El primero es que basta con construir: funciona, y a diez años vista, lo cual no paga la factura de este mes. El segundo es que basta con limitar el alquiler turístico: ayuda donde hay turismo y no hace absolutamente nada en una provincia que se vacía. La respuesta honesta, que no sirve para un eslogan, es que harán falta varias medidas aplicadas a la vez, durante más tiempo del que dura una legislatura, y que buena parte del beneficio lo recogerá quien gobierne después. Ese es, seguramente, el verdadero motivo por el que nada de esto avanza.',
+  questions: [
+    { type: 'mcq', q: '¿Por qué fracasan las soluciones de una sola medida?',
+      options: ['Ningún factor explica el conjunto por sí solo', 'Son caras', 'Nadie las aplica'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es el verdadero motivo por el que nada avanza?',
+      options: ['Falta de dinero', 'El beneficio lo recoge quien gobierne después', 'Falta de suelo'], answer: 1 },
+    { type: 'short', q: '¿A qué plazo funciona construir? (tres palabras)', accept: ['a diez años vista', 'diez años vista', 'diez años'] },
+    { type: 'translate', line: 'Un país que dedica esa parte de su renta a pagar por el suelo que pisa está tomando, sin discutirlo, una decisión económica de primer orden.', model: 'A country that devotes that share of its income to paying for the ground it stands on is taking, without debating it, an economic decision of the first order.' }
+  ]
+},
+
+{
+  id: 'c1-eco-trabajo2', title: 'Medir lo que no se ve', level: 9, theme: 'economia',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'condicional', 'presubj'],
+  text: 'La productividad es uno de esos conceptos que todo el mundo invoca y casi nadie define en voz alta, y esa vaguedad resulta enormemente útil para quien la invoca. En una fábrica el asunto era sencillo: piezas por hora. En una oficina, en un hospital o en un aula, la unidad de producto se vuelve escurridiza, y lo que suele ocurrir entonces es que se mide lo que se puede contar en lugar de lo que importa. Horas de presencia, correos enviados, pacientes atendidos por jornada, alumnos por grupo. Todas esas cifras son reales y ninguna captura la diferencia entre una consulta de seis minutos que genera tres visitas más y una de veinte que resuelve el problema. Los experimentos con jornadas reducidas han iluminado el asunto más de lo que sus defensores suelen reconocer. En casi todos, la producción se mantuvo o subió y el empleado declaró menos estrés, pero se realizaron sobre todo en consultoras y empresas de servicios, es decir, allí donde se medía mal el tiempo y razonablemente bien el resultado. Ese detalle no invalida la conclusión: la matiza y la hace más interesante. Lo que esos ensayos demuestran no es que trabajar menos sea gratis, sino que en determinados sectores existía una cantidad considerable de tiempo que no producía nada y que nadie contabilizaba como pérdida porque figuraba como presencia. En una cocina, en una planta de fabricación, en la agricultura o en la pesca, la hora sí es el producto, y reducir la jornada exige contratar, lo cual afecta al salario, al presupuesto de la compañía y al precio final. Conviene por eso desconfiar de quien generaliza desde el caso más cómodo, y también de quien usa ese argumento para cerrar la discusión entera. La jornada de cinco días tampoco cayó del cielo: se consiguió con datos discutibles, mucha resistencia y la advertencia solemne de que arruinaría la economía del país. Y conviene añadir un matiz que suele perderse: el ahorro de una compañía en bajas y en rotación es un beneficio real que casi nunca aparece en el presupuesto del departamento que paga el salario. La economía de una empresa, como la de una casa, se contabiliza por partidas que no se hablan entre sí, y eso explica por qué una industria puede perder dinero durante años sin que ningún empleado sepa dónde.',
+  questions: [
+    { type: 'mcq', q: '¿Qué se mide en lugar de lo que importa?',
+      options: ['Lo que se puede contar', 'El resultado', 'El beneficio'], answer: 0 },
+    { type: 'mcq', q: '¿Qué demuestran los ensayos, según el texto?',
+      options: ['Que trabajar menos es gratis', 'Que había tiempo que no producía nada', 'Que nada funciona'], answer: 1 },
+    { type: 'short', q: '¿Dónde sí es la hora el producto? (una palabra vale)', accept: ['en una cocina', 'cocina', 'la agricultura', 'la pesca', 'una planta de fabricación'] },
+    { type: 'translate', line: 'La jornada de cinco días tampoco cayó del cielo: se consiguió con datos discutibles, mucha resistencia y la advertencia solemne de que arruinaría la economía del país.', model: 'The five-day week did not fall from the sky either: it was won with debatable data, a great deal of resistance and the solemn warning that it would ruin the country\'s economy.' }
+  ]
+},
+
+{
+  id: 'c1-pol-consenso', title: 'El precio de no ceder', level: 8, theme: 'politica',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'futuro', 'condicional', 'presubj'],
+  text: 'En algún momento de las últimas décadas, pactar dejó de ser una virtud parlamentaria y pasó a funcionar como acusación. El político que alcanza un acuerdo con otro partido aparece descrito en la prensa como alguien que ha traicionado a los suyos, mientras que quien no cede jamás recibe el elogio de la coherencia. Se trata de una inversión curiosa, porque un parlamento existe exactamente para que personas que no están de acuerdo produzcan una ley común, y un congreso donde todos piensan igual no tendría ninguna función que cumplir. La explicación es menos noble y más aritmética de lo que parece. Ceder en público obliga a reconocer que el adversario tenía parte de razón, y en un sistema donde cada declaración se evalúa por la reacción que provoca en las siguientes tres horas, ese reconocimiento se contabiliza como derrota. El incentivo individual de cada diputado empuja por tanto en dirección contraria al interés colectivo del que forma parte, que es la definición misma de un problema de diseño. Las consecuencias se acumulan despacio y se notan todas juntas. Leyes que duran una legislatura y se derogan en la siguiente, de modo que ningún ayuntamiento, ninguna comunidad y ninguna empresa puede planificar a diez años. Un debate parlamentario concebido para generar el fragmento que circulará después. Un ciudadano que oye discutir sobre la nación entera mientras su distrito espera doce años una decisión sobre un centro de salud. Ninguna constitución puede corregir esto, porque no se trata de un defecto jurídico sino de un sistema de recompensas. Mientras el que pacta pierda y el que bloquea gane, el gobierno y la oposición seguirán haciendo exactamente lo que les conviene, y seguiremos atribuyéndolo a una falta de altura moral de los dirigentes cuando en realidad es la respuesta racional a los incentivos que nosotros mismos premiamos cada vez que aplaudimos a quien no se mueve un milímetro. Conviene además recordar que el ciudadano no es un espectador neutral de este mecanismo. Cada vez que un partido político sube en las encuestas tras negarse a pactar, el sistema recibe la confirmación de que funciona, y el gobierno siguiente tomará nota.',
+  questions: [
+    { type: 'mcq', q: '¿Cómo se describe al político que pacta?',
+      options: ['Como alguien que ha traicionado a los suyos', 'Como coherente', 'Como valiente'], answer: 0 },
+    { type: 'mcq', q: '¿Qué tipo de problema es?',
+      options: ['Jurídico', 'De diseño y de incentivos', 'De educación'], answer: 1 },
+    { type: 'short', q: '¿Cuánto duran esas leyes? (dos palabras)', accept: ['una legislatura', 'legislatura'] },
+    { type: 'translate', line: 'un parlamento existe exactamente para que personas que no están de acuerdo produzcan una ley común', model: 'a parliament exists precisely so that people who disagree produce a common law' }
+  ]
+},
+
+{
+  id: 'c1-pol-participacion', title: 'Donde más se decide', level: 9, theme: 'politica',
+  tenses: ['presente', 'futuro', 'condicional', 'presubj'],
+  text: 'Existe una paradoja bien documentada y poco discutida: la participación política disminuye precisamente allí donde el ciudadano tiene más capacidad real de influir. A una manifestación por una ley nacional acuden decenas de miles de personas; a un pleno municipal donde se aprueba el presupuesto del barrio no acude prácticamente nadie, y sin embargo es en ese segundo lugar donde se decide a qué hora abre el centro de salud, dónde para el autobús, cuántas plazas de escuela infantil habrá en el distrito y si una calle se peatonaliza. Un gobierno decide cosas enormes cada cuatro años. Un ayuntamiento decide cosas pequeñas todas las semanas, y la suma de esas cosas pequeñas determina si una familia llega a tiempo al trabajo. Parte de la explicación es lingüística y no debería subestimarse. Un concejal habla de ordenanzas, partidas presupuestarias y modificaciones de crédito cuando lo que quiere decir es que habrá o no habrá una guardería. Ese vocabulario no se elige para excluir, pero excluye. Otra parte es de horario: los plenos se celebran a las once de la mañana de un martes, lo cual selecciona con bastante eficacia quién puede asistir y quién no. Y una tercera parte, que conviene no ahorrarse, es nuestra. Resulta considerablemente más cómodo indignarse con la política lejana, donde uno no tiene ninguna responsabilidad ni posibilidad de error, que discutir con un vecino concreto sobre la comunidad en la que ambos viven. Lo primero se hace desde el sofá y produce una satisfacción moral inmediata; lo segundo obliga a negociar con alguien que seguirá viviendo en el mismo edificio mañana. La democracia, en su nivel más útil, se parece mucho menos a un debate en el congreso que a una reunión de escalera a la que nadie quiere ir. Hay por último un efecto acumulativo. Cuando nadie acude, el concejal deja de anunciar, el ayuntamiento se acostumbra a decidir sin público y la comunidad pierde el hábito de aparecer. Recuperar esa costumbre cuesta años, y no hay ninguna ley ni ninguna constitución que pueda sustituirla.',
+  questions: [
+    { type: 'mcq', q: '¿Dónde disminuye la participación?',
+      options: ['Donde el ciudadano más puede influir', 'En lo nacional', 'En las redes'], answer: 0 },
+    { type: 'mcq', q: '¿A qué se parece la democracia útil?',
+      options: ['A un debate en el congreso', 'A una reunión de escalera', 'A una manifestación'], answer: 1 },
+    { type: 'short', q: '¿A qué hora se celebran los plenos? (tres palabras)', accept: ['a las once', 'las once de la mañana', 'a las once de la mañana', 'once'] },
+    { type: 'translate', line: 'Ese vocabulario no se elige para excluir, pero excluye.', model: 'That vocabulary is not chosen in order to exclude, but it excludes.' }
+  ]
+},
+
+{
+  id: 'c1-via-frontera', title: 'El pasaporte y la suerte', level: 9, theme: 'viajes',
+  tenses: ['presente', 'preterito', 'perfecto', 'imperfecto', 'presubj'],
+  text: 'Pocas cosas reparten el mundo con tanta eficacia como el documento que uno lleva en el bolsillo al llegar a una frontera. Dos viajeros con el mismo dinero, la misma maleta y el mismo motivo pueden vivir experiencias incomparables en el mismo aeropuerto: uno cruza un control automático en cuarenta segundos y el otro explica en una ventanilla, por tercera vez, la finalidad de su viaje, el nombre de su hotel y la fecha de su vuelo de regreso. Ninguno de los dos ha hecho nada para merecer su posición. La diferencia la decidió un lugar de nacimiento sobre el que nadie ha votado nunca. Quien viaja con el pasaporte cómodo tiende a no percibir esto, del mismo modo que uno no percibe el idioma en el que piensa. La libertad de movimiento se experimenta como ausencia de obstáculo, es decir, como nada, y nada es lo más difícil de ver. Solo cuando algo falla (un visado denegado, una terminal en la que a uno lo apartan de la cola, una azafata que pide un documento que a los demás no se les ha pedido) aparece de golpe la arquitectura entera que estaba ahí todo el tiempo. He acompañado alguna vez a alguien en esa situación y lo que más impresiona no es la injusticia, que es evidente, sino la cortesía. Nadie grita. El funcionario cumple un procedimiento, el viajero contesta con amabilidad, y la conversación entera transcurre en un tono civilizado que hace todavía más visible la asimetría. Uno de los dos puede irse cuando quiera. Nada de esto significa que las fronteras deban desaparecer mañana, ni que un país no pueda decidir quién entra. Significa algo más modesto: que quien viaja sin fricción está usando un privilegio heredado, no un mérito, y que confundir las dos cosas explica buena parte de la incomprensión con que a veces se habla de quien llega. Y hay un detalle final que casi nunca se menciona. Quien cruza sin problema no recuerda después ni la terminal, ni la ventanilla, ni la cola; el viaje empieza para él en la salida del aeropuerto. Quien no cruza sin problema recuerda cada una de esas tres cosas durante años, y las recuerda con el nombre del funcionario.',
+  questions: [
+    { type: 'mcq', q: '¿Qué decidió la diferencia entre los dos viajeros?',
+      options: ['Un lugar de nacimiento', 'El dinero', 'El equipaje'], answer: 0 },
+    { type: 'mcq', q: '¿Qué es lo que más impresiona al acompañar a alguien?',
+      options: ['La injusticia', 'La cortesía', 'El ruido'], answer: 1 },
+    { type: 'short', q: '¿Cómo se experimenta la libertad de movimiento? (cuatro palabras)', accept: ['como ausencia de obstáculo', 'ausencia de obstáculo', 'como nada'] },
+    { type: 'translate', line: 'que quien viaja sin fricción está usando un privilegio heredado, no un mérito', model: 'that whoever travels without friction is using an inherited privilege, not a merit' }
+  ]
+},
+
+{
+  id: 'c1-serv-ong2', title: 'Lo que sostiene el voluntario', level: 9, theme: 'servicios',
+  tenses: ['presente', 'preterito', 'perfecto', 'condicional', 'presubj', 'impsubj'],
+  text: 'En el centro cívico de mi barrio, un voluntario de una ong dedica las mañanas de los martes a rellenar solicitudes ajenas. Ayuda a pedir una cita en la comisaría, a renovar un permiso de residencia, a entender por qué una ayuda económica se ha denegado y a localizar un paquete que correos dio por entregado. Lo hace bien, con una paciencia que nadie le paga, y las personas que salen de allí con el trámite resuelto le están sinceramente agradecidas. Cada vez que paso por delante pienso dos cosas a la vez y no consigo que ninguna de ellas desplace a la otra. La primera es admiración, que no necesita explicación. La segunda es que ese hombre está sustituyendo, gratis, a un empleado que la administración retiró, y que su eficacia contribuye a que la ausencia de ese empleado no produzca ningún escándalo. El voluntariado tiene esa doble condición incómoda: resuelve el caso concreto y amortigua la señal que debería llegar a quien decide. Si las doscientas personas que él atiende cada mes se agolparan en una ventanilla sin resolver, existiría un problema visible, contable y políticamente costoso. Resueltas de una en una por alguien que no cobra, el problema desaparece de las estadísticas y permanece intacto en la realidad. No conozco ninguna salida limpia de esta paradoja, y desconfío de quien la plantea como si la hubiera. Decirle a ese hombre que deje de ayudar para que el sistema se rompa antes es una crueldad razonada, de las peores que existen. Seguir como estamos convierte una obligación pública en una virtud privada y traslada el coste a quien menos puede permitírselo, que es siempre el mismo. Lo único que puede hacerse, y es poco, consiste en nombrarlo con precisión cada vez que se agradece: esto no es solidaridad, es un servicio que alguien decidió no prestar. Mientras tanto, la cola de la comisaría sigue siendo la misma, el cajero automático del banco de al lado atiende a más gente que la ventanilla, y el teléfono de emergencia funciona impecablemente porque nadie se ha atrevido todavía a recortar ahí. La enfermera, el bombero y el cartero siguen sosteniendo su parte. Este hombre sostiene la que se cayó.',
+  questions: [
+    { type: 'mcq', q: '¿Qué hace el voluntario los martes?',
+      options: ['Rellena solicitudes ajenas', 'Da clases', 'Reparte comida'], answer: 0 },
+    { type: 'mcq', q: '¿Cuál es la doble condición del voluntariado?',
+      options: ['Es caro y lento', 'Resuelve el caso y amortigua la señal', 'Es ilegal'], answer: 1 },
+    { type: 'short', q: '¿A cuántas personas atiende cada mes? (un número)', accept: ['doscientas', '200'] },
+    { type: 'translate', line: 'esto no es solidaridad, es un servicio que alguien decidió no prestar', model: 'this is not solidarity, it is a service somebody decided not to provide' }
+  ]
+},
+
+{
+  id: 'c1-salud-desigualdad', title: 'El código postal y la esperanza de vida', level: 9, theme: 'salud',
+  tenses: ['presente', 'preterito', 'presubj', 'impsubj'],
+  text: 'Uno de los hallazgos más sólidos y peor asimilados de la epidemiología contemporánea es que la esperanza de vida varía varios años entre barrios de una misma ciudad separados por veinte minutos de metro. No entre países, ni entre continentes: entre un distrito y el siguiente. El dato se repite con una consistencia incómoda en ciudades muy distintas, y resiste cualquier intento de explicarlo únicamente por el acceso a la sanidad, porque en buena parte de esos lugares el hospital, el centro de salud y la farmacia están igual de cerca para todos. Lo que cambia no es principalmente el tratamiento, sino todo lo anterior. Cambia el tipo de trabajo, y con él la probabilidad de pasar treinta años levantando peso o respirando algo. Cambia la vivienda, su humedad, su ruido y las horas de sueño que permite. Cambia la disponibilidad de tiempo, que es lo que determina si alguien puede cocinar, andar media hora o pedir una cita médica un martes por la mañana sin perder medio jornal. Cambia también, y esto se menciona menos, la cantidad de trámites que hay que hacer para obtener lo que a otros les llega solo. Ninguno de esos factores es clínico y todos acaban en la consulta. De ahí se sigue una conclusión que los sistemas sanitarios llevan décadas enunciando y que ningún presupuesto refleja del todo: la mayor parte de la salud se produce fuera del hospital, y el hospital es el lugar al que llega la factura. Un antibiótico no compensa una vivienda inadecuada, y una lista de espera más corta no sustituye a un contrato que permita dormir. Reconocerlo no supone restar importancia a la medicina, que salva vidas todos los días con una eficacia impresionante. Supone aceptar que pedirle a la sanidad que corrija por sí sola una desigualdad fabricada durante veinte años en otros sitios es, además de injusto para quien trabaja en ella, una manera bastante eficaz de no arreglar nada. Hay además un efecto sobre el propio sistema. Un centro de salud situado en el barrio equivocado recibe a pacientes más enfermos, con menos tiempo y más trámites pendientes, y sus profesionales se queman antes; el hospital de referencia absorbe lo que la atención primaria no pudo, y urgencias acaba funcionando como el último filtro de todo. Ninguna medicina, ningún análisis y ninguna vacuna corrige eso.',
+  questions: [
+    { type: 'mcq', q: '¿Entre qué varía la esperanza de vida en el ejemplo?',
+      options: ['Entre barrios de una misma ciudad', 'Entre países', 'Entre continentes'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde se produce la mayor parte de la salud?',
+      options: ['En el hospital', 'Fuera del hospital', 'En la farmacia'], answer: 1 },
+    { type: 'short', q: '¿Qué no compensa una vivienda inadecuada? (dos palabras)', accept: ['un antibiótico', 'antibiótico', 'un antibiotico'] },
+    { type: 'translate', line: 'la mayor parte de la salud se produce fuera del hospital, y el hospital es el lugar al que llega la factura', model: 'most health is produced outside the hospital, and the hospital is where the bill arrives' }
+  ]
+}
+,
+
+{
+  id: 'a1-car-javier', title: 'Cómo es Javier, cómo está hoy', level: 1, theme: 'caracter',
+  tenses: ['presente'],
+  text: 'Mi amigo Javier es simpático, sociable y muy inteligente. Es paciente, amable y nunca es egoísta ni arrogante. Normalmente no es serio: es alegre y optimista. Pero hoy está serio y está cansado, porque trabaja mucho. Mañana está bien otra vez. El carácter no cambia; el día sí.',
+  gloss: [ { es: 'mi amigo', en: 'my friend' },
+           { es: 'simpático', en: 'nice, likeable' },
+           { es: 'sociable', en: 'sociable' },
+           { es: 'inteligente', en: 'intelligent' },
+           { es: 'paciente', en: 'patient' },
+           { es: 'amable', en: 'kind' },
+           { es: 'nunca', en: 'never' },
+           { es: 'ni', en: 'nor' },
+           { es: 'egoísta', en: 'selfish' },
+           { es: 'arrogante', en: 'arrogant' },
+           { es: 'normalmente', en: 'usually' },
+           { es: 'serio', en: 'serious' },
+           { es: 'alegre', en: 'cheerful' },
+           { es: 'optimista', en: 'optimistic' },
+           { es: 'Pero hoy', en: 'But today' },
+           { es: 'cansado', en: 'tired' },
+           { es: 'porque', en: 'because' },
+           { es: 'trabaja', en: 'he works' },
+           { es: 'mañana', en: 'tomorrow' },
+           { es: 'otra vez', en: 'again' },
+           { es: 'el carácter', en: 'character — the way somebody is' },
+           { es: 'no cambia', en: 'does not change' },
+           { es: 'el día', en: 'the day' } ],
+  questions: [
+    { type: 'mcq', q: '¿Cómo es Javier normalmente?',
+      options: ['Alegre y optimista', 'Serio y cansado', 'Egoísta'], answer: 0 },
+    { type: 'mcq', q: '¿Por qué está serio hoy?',
+      options: ['Porque es serio', 'Porque trabaja mucho', 'Porque está solo'], answer: 1 },
+    { type: 'short', q: '¿Qué no cambia? (dos palabras)', accept: ['el carácter', 'carácter', 'el caracter', 'caracter'] },
+    { type: 'translate', line: 'Normalmente no es serio: es alegre y optimista.', model: 'He is not usually serious: he is cheerful and optimistic.' }
+  ]
+},
+
+{
+  id: 'a1-rel-vecino-nuevo', title: 'Hola y adiós en la escalera', level: 1, theme: 'relaciones',
+  tenses: ['presente'],
+  text: '—¡Hola, buenos días! ¿Eres el vecino nuevo? —Sí, soy Daniel. Y tú, ¿cómo te llamas? —Marta, del tercero. —Perdón, Marta, ¿hay una tienda cerca? —Sí, en la plaza. —Muchas gracias. —De nada. ¿Tienes familia aquí? —Mi hermana y mi madre. —Bueno, hasta luego. —Adiós, Marta. Buenas tardes.',
+  gloss: [ { es: '¡Hola!', en: 'Hello!' },
+           { es: 'buenos días', en: 'good morning' },
+           { es: 'el vecino', en: 'the neighbour' },
+           { es: 'nuevo', en: 'new' },
+           { es: '¿cómo te llamas?', en: 'what\'s your name?' },
+           { es: 'del tercero', en: 'from the third floor' },
+           { es: 'Perdón', en: 'Excuse me' },
+           { es: '¿hay…?', en: 'is there…?' },
+           { es: 'una tienda', en: 'a shop' },
+           { es: 'cerca', en: 'nearby' },
+           { es: 'la plaza', en: 'the square' },
+           { es: 'Muchas gracias.', en: 'Thank you very much.' },
+           { es: 'De nada.', en: 'You\'re welcome.' },
+           { es: '¿Tienes familia?', en: 'Do you have family?' },
+           { es: 'mi hermana', en: 'my sister' },
+           { es: 'mi madre', en: 'my mother' },
+           { es: 'Bueno', en: 'Right then' },
+           { es: 'Hasta luego.', en: 'See you later.' },
+           { es: 'Adiós.', en: 'Goodbye.' },
+           { es: 'Buenas tardes.', en: 'Good afternoon.' } ],
+  questions: [
+    { type: 'mcq', q: '¿Quién es el vecino nuevo?',
+      options: ['Daniel', 'Marta', 'La hermana'], answer: 0 },
+    { type: 'mcq', q: '¿Dónde está la tienda?',
+      options: ['En el tercero', 'En la plaza', 'Cerca del hotel'], answer: 1 },
+    { type: 'short', q: '¿Quién vive con Daniel? (dos personas, una vale)', accept: ['su hermana', 'su madre', 'la hermana', 'la madre', 'hermana', 'madre'] },
+    { type: 'translate', line: 'Perdón, Marta, ¿hay una tienda cerca?', model: 'Excuse me, Marta, is there a shop nearby?' }
+  ]
+}
+
 ];

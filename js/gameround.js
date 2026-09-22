@@ -58,6 +58,12 @@ window.GameRound = (function () {
     var livesLeft = lives;
     var perItemClock = !cfg.duration;
 
+    var startedAt = Date.now();
+    /* The round's own shape, sampled at every score change, so a record round
+       can be raced by the next one. Only timed rounds carry a ghost: in sudden
+       death the thing you are chasing is how FAR you got, and there is no
+       shared clock to line two runs up against. */
+    var curve = [], ghost = !!(cfg.duration && GS.hasGhost(cfg.key));
     var score = 0, shownScore = 0, combo = 0, bestCombo = 0, bestRung = rung;
     var comboBefore = 0, rungBefore = rung;
     var seen = 0, right = 0, runLen = 0, bestRun = 0, misses = [], usedPrompts = {};
@@ -67,7 +73,13 @@ window.GameRound = (function () {
     var raf = null, pendingContinue = null, lastTyped = '';
 
     if (window.GameItems && cfg.focus !== false) {
-      try { GI.setFocus(window.Session ? window.Session.today().focus : null); } catch (e) { GI.setFocus(null); }
+      /* In the app the focus is the day's lesson, set here on every round. In
+       * the arcade there is no Session and the PLAYER chooses it, so leave
+       * whatever js/arcade.js set: overwriting it with null on every round is
+       * how the arcade's own focus control would silently do nothing. */
+      if (window.Session) {
+        try { GI.setFocus(window.Session.today().focus); } catch (e) { GI.setFocus(null); }
+      }
     }
 
     // ---- chrome ------------------------------------------------------------
@@ -190,6 +202,17 @@ window.GameRound = (function () {
         secsEl.textContent = secs;
         clock.dataset.urgent = left <= 10000 ? '1' : '';
         shell.dataset.urgent = left <= 10000 ? '1' : '';
+        /* Racing the record, in the slot that used to hold its total. "PB
+         * 8 420" is information you can do nothing with at second forty; "+340"
+         * is the whole game. */
+        if (ghost) {
+          var g = GS.ghostAt(cfg.key, cfg.duration - left);
+          if (g != null) {
+            var d = score - g;
+            pbEl.textContent = (d >= 0 ? '▲ +' : '▼ ') + GS.fmt(Math.abs(d));
+            pbEl.dataset.race = d >= 0 ? 'ahead' : 'behind';
+          }
+        }
       }
       if (left <= 0 && !paused) {
         if (perItemClock) { if (!resolved) timeOut(); }
@@ -214,6 +237,7 @@ window.GameRound = (function () {
 
     // ---- score -------------------------------------------------------------
     function tweenScore() {
+      if (cfg.duration) curve.push({ t: cfg.duration - remaining(), s: score });
       var from = shownScore, to = score, t0 = Date.now(), dur = 420;
       (function step() {
         var p = Math.min(1, (Date.now() - t0) / dur);
@@ -664,7 +688,15 @@ window.GameRound = (function () {
       if (ended) return;
       stop();
       var band0 = GS.bandForRung(bestRung);
-      var res = GS.record(cfg.key, { score: score, combo: bestCombo, band: band0, run: bestRun });
+      /* Everything the round already knew and used to throw away: how many
+       * items were dealt, how many were right, and how long it actually ran
+       * (the clock, or the wall time for a sudden-death round with no clock). */
+      var res = GS.record(cfg.key, {
+        score: score, combo: bestCombo, band: band0, run: bestRun,
+        seen: seen, right: right,
+        ms: cfg.duration || (startedAt ? Date.now() - startedAt : 0),
+        curve: curve
+      });
       // the daily challenge is one shared round; rating it would mean rating
       // everyone against the same draw, which is a different thing
       var rated = cfg.key === GS.dailyKey() ? null : GS.rate(cfg.key, score);
