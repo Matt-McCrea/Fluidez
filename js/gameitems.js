@@ -1078,7 +1078,14 @@ window.GameItems = (function () {
      * and anything carrying notation is not a word. Those still make perfectly
      * good four-way questions, so they fall back to choosing rather than
      * being dropped. */
-    var typed = (rung >= 5 || rnd(rng) < 0.35) && TYPEABLE.test(wd.es) && !/^\*/.test(wd.es);
+    /* Type it only if it is short enough to type under a clock. 553 of the
+     * 5,820 entries are four words or more — "el impuesto sobre la renta" is a
+     * real term and a fair thing to RECOGNISE, but asking for it letter by
+     * letter at second fifty is a typing test rather than a vocabulary one.
+     * Those still make good four-way questions, so they fall through to
+     * choosing rather than being dropped. */
+    var short = wd.es.trim().split(/\s+/).length <= 3;
+    var typed = short && (rung >= 5 || rnd(rng) < 0.35) && TYPEABLE.test(wd.es) && !/^\*/.test(wd.es);
     var item = { kind: 'vocab', cefr: got.cefr, bonus: 0, id: 'v:' + wd.es + ':meaning',
                  topic: null, note: (wd.collocations && wd.collocations[0]) || null };
     if (typed) {

@@ -90,6 +90,10 @@ payload.vocab = (window.VOCAB || []).map(w => {
   if (w.cefr) o.cefr = w.cefr;
   if (w.cat) o.cat = w.cat;
   if (w.theme) o.theme = w.theme;
+  // The Vocabulario game shows a collocation as its hint — "desempeñar un
+  // cargo" tells you far more about `cargo` than a one-word gloss does. Only
+  // 410 rows carry one, so it is a few kilobytes for the game's best feature.
+  if (w.collocations && w.collocations.length) o.collocations = w.collocations.slice(0, 1);
   return o;
 });
 

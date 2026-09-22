@@ -85,9 +85,26 @@ window.Games = (function () {
     { key: 'escucha', name: 'Escucha', rule: 'óyelo una vez', icon: '🎧',
       hue: '#7a5bd0', secs: 90, kind: 'listen', needsVoice: true,
       blurb: 'Una voz lo dice. ¿Qué era? Cada nivel habla más rápido.' },
-    { key: 'verbos', name: 'Verbos', rule: '“he ate” → comió', icon: '⚡',
+    /* Called Verbos until there was a second game made of verbs. The name has
+     * to say which half of the problem it is: this one is the FORM, and the
+     * key stays `verbos` so nobody's record is orphaned by a rename. */
+    { key: 'verbos', name: 'Conjugación', rule: '“he ate” → comió', icon: '⚡',
       hue: '#b5711a', secs: 90, kind: 'verb',
       blurb: 'Del significado a la forma, sin etiquetas gramaticales.' },
+
+    /* VOCABULARIO. The generator for this has existed since the games were
+     * rewritten and nothing ever dealt from it: GameItems had a `vocab` kind
+     * and no tile asked for one, so 5,820 words sat in the index reachable
+     * only as distractors for other questions.
+     *
+     * It is Conjugación's other half — the same jump from meaning to Spanish,
+     * stopping before the verb is conjugated. Typed when the answer is three
+     * words or fewer and tapped when it is longer, and the article is optional
+     * either way, because knowing `mesa` and not knowing whether it takes el
+     * or la are two different gaps and only one of them is being asked about. */
+    { key: 'vocabulario', name: 'Vocabulario', rule: 'la palabra, sin conjugar', icon: '📖',
+      hue: '#6f8f2a', secs: 90, kind: 'vocab',
+      blurb: 'De la palabra inglesa a la española. Sin tiempos, sin personas.' },
     { key: 'gramatica', name: 'Gramática', rule: '¿cuál va aquí?', icon: '🎯',
       hue: '#2f7fb8', secs: 90, kind: 'grammar',
       blurb: 'Ser o estar, por o para, indicativo o subjuntivo. Noventa segundos.' },
@@ -502,7 +519,7 @@ window.Games = (function () {
     clear(h);
     var g = byKey('verbos');
     window.GameRound.run(h, {
-      key: 'verbos', title: label || 'Verbos', kind: 'verb', duration: 90000,
+      key: 'verbos', title: label || 'Conjugación', kind: 'verb', duration: 90000,
       hue: g ? g.hue : '#b5711a', lockTense: tense,
       silent: GS.silent() || !hasVoice(),
       onExit: back || backToList

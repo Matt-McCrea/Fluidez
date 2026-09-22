@@ -388,7 +388,7 @@
       return;
     }
     if (f && f.kind === 'tense' && g.key === 'verbos' && G.openTense) {
-      var r = G.openTense(f.tense, 'Verbos · ' + tenseLabel(f.tense), board);
+      var r = G.openTense(f.tense, 'Conjugación · ' + tenseLabel(f.tense), board);
       if (r !== null) return;                    // null = the lock was refused
     }
     G.open(g.key, board);

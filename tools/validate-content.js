@@ -727,6 +727,39 @@ function checkProbes(l, tag) {
         `vocab "${w.es}": malformed collocation "${c}"`));
     }
   });
+  /* GLUED VERB PHRASES. The PCIC harvest produced a handful of entries where a
+   * multi-word expression arrived as one token with an article bolted on:
+   * `el serjusto` for "to be (un)fair", `el quedarcampeón`, `serlegal`. They
+   * are invisible in a reading exercise and unanswerable in a vocabulary game,
+   * which is how they survived — nothing asked the learner to produce them
+   * until Vocabulario existed.
+   *
+   * The signature is precise, so this can be a gate rather than a review list:
+   * one token, glossed as a verb ("to …"), starting with a whole infinitive
+   * the engine knows, and continuing with something that is itself a word. It
+   * clears comerciar (remainder "ciar" is nothing) and serpiente, and catches
+   * every real case. */
+  {
+    const INFS = (window.VERBS || []).map(v => v.inf).filter(i => i && i.length >= 3);
+    const WORDS = new Set();
+    (window.VOCAB || []).forEach(w => {
+      String(w.es || '').toLowerCase().replace(/^(el|la|los|las|un|una)\s+/, '')
+        .split(/\s+/).forEach(t => { if (t.length > 1) WORDS.add(t); });
+    });
+    ['lo', 'la', 'le', 'se', 'me', 'te', 'nos', 'bien', 'mal'].forEach(t => WORDS.add(t));
+    (window.VOCAB || []).forEach(w => {
+      const bare = String(w.es || '').toLowerCase().replace(/^(el|la|los|las|un|una)\s+/, '');
+      if (/\s/.test(bare) || bare.length < 8) return;
+      if (!/^to\s/.test(String(w.en || ''))) return;
+      INFS.forEach(inf => {
+        if (bare.length <= inf.length + 1 || bare.slice(0, inf.length) !== inf) return;
+        const rest = bare.slice(inf.length);
+        ok(!WORDS.has(rest),
+          `vocab "${w.es}": looks like "${inf} ${rest}" run together — a verb phrase, not a word`);
+      });
+    });
+  }
+
   const seenI = new Set();
   (window.IDIOMS || []).forEach((x, i) => {
     ok(x.es && x.en, `idiom[${i}]: missing es/en`);

@@ -183,6 +183,46 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   ok(surv && surv.sudden && surv.lives === 1 && !surv.secs,
      'Supervivencia must be one life with no round clock — the per-item clock is the game');
 
+  /* VOCABULARIO — Conjugación's other half. Its generator existed from the
+   * rewrite and no tile ever dealt from it, so 5,820 words were reachable only
+   * as distractors for other people's questions. */
+  const voc = byKey('vocabulario');
+  ok(!!voc, 'Vocabulario is not in the games list');
+  ok(voc && voc.kind === 'vocab', 'Vocabulario must deal vocabulary items');
+
+  const conj = byKey('verbos');
+  ok(conj && conj.name === 'Conjugación',
+     'the verb game should be called Conjugación now that a second verb game exists');
+  ok(!!conj, 'renaming the verb game must not change its key — records are stored under it');
+
+  {
+    let n = 0, longTyped = 0, artReq = 0, noAnswer = 0;
+    for (let rung = 1; rung <= 10; rung++) {
+      for (let k = 0; k < 25; k++) {
+        const it = W.GameItems.next('vocab', rung, rng, {});
+        if (!it) continue;
+        n++;
+        if (!it.answer) { noAnswer++; continue; }
+        if (it.play === 'type') {
+          /* Three words is the cap. "el impuesto sobre la renta" is a fair
+           * thing to recognise and a typing test to spell at second fifty. */
+          if (String(it.answer).trim().split(/\s+/).length > 3) longTyped++;
+          // The article must be optional: not knowing `mesa` and not knowing
+          // whether it takes el or la are two different gaps.
+          if (/^(el|la|los|las)\s/.test(it.answer) &&
+              W.GameItems.grade(it, it.answer.replace(/^(el|la|los|las)\s+/, '')) !== 'good') artReq++;
+        } else {
+          ok(it.options && it.options.length >= 2, 'a vocab choose item has no options');
+        }
+      }
+    }
+    ok(n > 100, `only ${n} vocab items dealt`);
+    ok(noAnswer === 0, `${noAnswer} vocab items had no answer`);
+    ok(longTyped === 0, `${longTyped} typed vocab answers are longer than three words`);
+    ok(artReq === 0, `${artReq} vocab items required the article to be typed`);
+    console.log('  vocab: ' + n + ' items, none typed over three words, article always optional');
+  }
+
   const duo = byKey('unouotro');
   ok(!!duo, 'Uno u otro is not in the games list');
   ok(duo && duo.kind === 'contrast' && duo.secs === 60, 'Uno u otro must be a 60-second contrast round');
