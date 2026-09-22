@@ -285,6 +285,49 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   });
 }
 
+/* ---- what the answer box demands ------------------------------------------
+ * Two different things look alike here and only one of them is optional.
+ *
+ * A SUBJECT PRONOUN is never required — Spanish drops it, so "como paella"
+ * and "yo como paella" are both right and only one is in the data file.
+ * GameItems.grade strips a leading pronoun from both sides.
+ *
+ * A CLITIC is not a subject pronoun. `se había jubilado` without its `se` is
+ * `había jubilado`, a different verb. So it stays required — and the prompt
+ * has to say so, which for 141 of the 226 pronominal verbs it did not: their
+ * English gloss has nothing reflexive in it ("to retire", "to stay"), and 59
+ * of those have a non-reflexive twin in the dataset with the same gloss. */
+{
+  W.Profile.set('C1');
+  const CLITIC = /^(me|te|se|nos|os)\s+/i;
+  let clitic = 0, unmarked = 0, dropOk = 0;
+  let pron = 0, pronAddNo = 0, pronDropNo = 0;
+
+  for (let i = 0; i < 600; i++) {
+    const it = W.GameItems.next('verb', 1 + (i % 10), rng, {});
+    if (!it || typeof it.answer !== 'string') continue;
+
+    if (CLITIC.test(it.answer)) {
+      clitic++;
+      if (it.prompt.indexOf('-se') === -1) unmarked++;
+      if (W.GameItems.grade(it, it.answer.replace(CLITIC, '')) === 'good') dropOk++;
+    }
+    pron++;
+    if (W.GameItems.grade(it, 'Nosotros ' + it.answer) !== 'good') pronAddNo++;
+    if (/^(yo|tú|él|ella|nosotros|vosotros|ellos)\s+/i.test(it.answer) &&
+        W.GameItems.grade(it, it.answer.replace(/^\S+\s+/, '')) !== 'good') pronDropNo++;
+  }
+
+  ok(clitic > 20, `only ${clitic} pronominal verb items sampled — not enough to judge`);
+  ok(unmarked === 0,
+     `${unmarked} of ${clitic} pronominal items give no sign in the prompt that a clitic is wanted`);
+  ok(dropOk === 0,
+     `${dropOk} pronominal items accepted the answer without its clitic — that is a different verb`);
+  ok(pronAddNo === 0, `${pronAddNo} of ${pron} items rejected a leading subject pronoun, which is always optional`);
+  ok(pronDropNo === 0, `${pronDropNo} items required a leading subject pronoun`);
+  console.log('  verbs: ' + clitic + ' pronominal items, all marked (-se); subject pronoun optional in ' + pron);
+}
+
 /* ---- the ghost ---------------------------------------------------------- */
 {
   const key = 'ghost-test';

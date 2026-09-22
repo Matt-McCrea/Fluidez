@@ -676,9 +676,28 @@ window.GameItems = (function () {
     perfecto: 45, plusc: 70, futperf: 90, condperf: 90, presubj: 90, impsubj: 110,
     perfsubj: 120, imperativo: 60, impneg: 70 };
 
+  /* The English side of a Verbos question — and, for a pronominal verb, the
+   * fact that it IS one.
+   *
+   * 226 of the 1,166 verbs are reflexive, and 141 of those carry an English
+   * gloss with nothing reflexive in it: jubilarse is "to retire", quedarse is
+   * "to stay". Fifty-nine of them have a non-reflexive twin in the same
+   * dataset with the same gloss — quedar is also "to stay" — so "he/she had
+   * retired" was asking for `se había jubilado` while giving the learner no
+   * way to know the `se` was wanted. Typing the form without it is then marked
+   * wrong for a decision they were never shown.
+   *
+   * The clitic genuinely is required — `había jubilado` is a different verb,
+   * jubilar, which is what a company does to you — so the answer stays as it
+   * is and the PROMPT is what changes. Marked `(-se)`, the way a dictionary
+   * marks it, rather than "(reflexive)": this game's whole proposition is
+   * "del significado a la forma, sin etiquetas gramaticales", and a grammar
+   * label in the prompt would be the one place it broke its own rule. */
   function conjPrompt(v, tk, i) {
     var p = E.enPhrase(v, tk, i);
-    return p.text + (p.marker ? ' (' + p.marker + ')' : '');
+    var out = p.text + (p.marker ? ' (' + p.marker + ')' : '');
+    if (/se$/.test(v.inf || '') && out.indexOf('-se') === -1) out += ' (-se)';
+    return out;
   }
 
   function verbItem(rung, rng, opts) {
