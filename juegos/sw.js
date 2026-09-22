@@ -15,7 +15,7 @@
  * ASSETS must mirror every <script>/<link> in juegos/index.html. It is
  * deliberately short — that shortness is the entire feature.
  * ========================================================================== */
-var CACHE_VERSION = 'j7360770c';
+var CACHE_VERSION = 'jc504f52d';
 var CACHE_NAME = 'fluidez-juegos-' + CACHE_VERSION;
 
 var ASSETS = [
