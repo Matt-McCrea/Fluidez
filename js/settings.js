@@ -29,6 +29,8 @@ window.Settings = (function () {
      * track — writing a games focus there would silently cancel a track the
      * learner had started. */
     'fluidez.arcade',
+    // whether today's study pack has been finished (js/study.js)
+    'fluidez.study',
     'fluidez.onboarded', 'fluidez.voice', 'fluidez.suggest'];
   var KEEP_ON_RESET = { 'fluidez.theme': 1, 'fluidez.voice': 1 };
 

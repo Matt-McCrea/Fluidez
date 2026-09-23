@@ -1044,6 +1044,36 @@ window.GameItems = (function () {
     return null;
   }
 
+  /* A round dealt from a FIXED list — the pack you just studied (js/study.js).
+   * Not a draw from the index: the point is to use these twelve words while
+   * they are still warm, so the deck is the pool and the ladder has nothing to
+   * climb. Distractors still come from the index, because a four-way question
+   * whose wrong answers were all in the pack you just read is a memory test of
+   * the last ninety seconds rather than of the words. */
+  function deckItem(deck, rng) {
+    if (!deck || !deck.length) return null;
+    var c = pick(deck, rng);
+    if (!c || !c.es || !c.en) return null;
+    var typed = TYPEABLE.test(c.es) && c.es.trim().split(/\s+/).length <= 3;
+    var base = { kind: 'vocab', cefr: c.cefr || 'B1', bonus: 0, id: c.id,
+                 topic: null, es: c.es, en: c.en, note: null };
+    if (typed) {
+      base.play = 'type'; base.prompt = c.en; base.answer = c.es;
+      base.accept = [c.es, c.es.replace(/^(el|la|los|las)\s+/i, '')];
+      return base;
+    }
+    var idx = index(), wrong = [];
+    for (var i = 0; i < 24 && wrong.length < 3; i++) {
+      var got = fromBands(idx.vocab, base.cefr, rng);
+      var o = got && got.item;
+      if (o && o.en && o.en !== c.en && wrong.indexOf(o.en) === -1) wrong.push(o.en);
+    }
+    if (wrong.length < 3) return null;
+    base.play = 'choose'; base.prompt = c.es; base.answer = c.en;
+    base.options = E.shuffle([c.en].concat(wrong), rng);
+    return base;
+  }
+
   function grammarItem(rung, rng) {
     var idx = index(), band = bandOf(rung);
     var cands = [];
@@ -1237,7 +1267,7 @@ window.GameItems = (function () {
 
   return {
     draw: draw, next: next, grade: grade, reset: reset, index: index, words: words,
-    setFocus: setFocus, weakItem: weakItem, conjPrompt: conjPrompt,
+    setFocus: setFocus, weakItem: weakItem, deckItem: deckItem, conjPrompt: conjPrompt,
     listenRate: listenRate, bandForLevel: bandForLevel,
     enKey: enKey, altsFor: altsFor
   };

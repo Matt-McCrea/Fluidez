@@ -359,6 +359,28 @@
     daily.addEventListener('click', function () { G.open(dailyKey, board); });
     wrap.appendChild(daily);
 
+    /* THE DAY'S PACK, above the games. It sits here rather than among the tiles
+     * because it is not one: no clock, no score, no record to beat. The tiles
+     * are things you play against yourself and this is the thing you do first.
+     *
+     * Shown as done rather than hidden once finished — hiding it would leave
+     * the board looking like it had lost a feature, and the state is worth
+     * seeing. */
+    var packed = window.Study ? window.Study.pack() : [];
+    if (packed.length) {
+      var done = window.Study.doneToday();
+      var st = el('button', 'arc-study' + (done ? ' done' : ''));
+      st.type = 'button';
+      st.appendChild(el('span', 'arc-study-k', done ? 'Hecho hoy' : 'Hoy'));
+      st.appendChild(el('b', null, packed.length + (packed.length === 1 ? ' palabra' : ' palabras')));
+      var fallos = packed.filter(function (c) { return c.source === 'fallo'; }).length;
+      st.appendChild(el('span', 'arc-study-s',
+        fallos ? fallos + (fallos === 1 ? ' que fallaste' : ' que fallaste') + ', y lo que toca hoy'
+               : 'Apréndelas y luego juégalas'));
+      st.addEventListener('click', study);
+      wrap.appendChild(st);
+    }
+
     // the focus chip: what this arcade is pointed at, and the way to change it
     var f = currentFocus();
     var chip = el('button', 'arc-focus' + (f ? ' on' : ''));
@@ -426,6 +448,25 @@
       if (r !== null) return;                    // null = the lock was refused
     }
     G.open(g.key, board, roundExtras(g));
+  }
+
+  /* The pack: flashcards first, then the same words as a round. The round is
+   * dealt from the deck rather than the index (cfg.deck), so it is those
+   * twelve words and nothing else — the whole point is using them while they
+   * are still warm. */
+  function study() {
+    if (!window.Study) return;
+    pushView('study');
+    window.Study.render(host(), {
+      onExit: goBack,
+      onPlay: function (cards) {
+        VIEW = 'round';
+        window.GameRound.run(host(), {
+          key: 'estudio', title: 'Hoy', kind: 'vocab', deck: cards,
+          duration: 90000, hue: '#c98a1f', silent: true, onExit: board
+        });
+      }
+    });
   }
 
   /* ---- the numbers -------------------------------------------------------

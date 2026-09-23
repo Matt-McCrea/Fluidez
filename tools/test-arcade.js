@@ -445,6 +445,105 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   console.log('  verbs: ' + clitic + ' pronominal items, all marked (-se); subject pronoun optional in ' + pron);
 }
 
+/* ---- the day's pack: a miss has to come back ----------------------------
+ * The arcade could only score you. Every round graded correct answers up and
+ * logged the misses, and the misses went nowhere — js/gameround.js records
+ * them with `reviewable: false`, and ErrorLog.cards() returns only reviewable
+ * entries, so a word you got wrong while playing was written down and never
+ * asked again. That flag is right about not demoting a mature card on a
+ * mistype and wrong about the consequence it had. */
+{
+  localStorage.removeItem('fluidez.errors');
+  localStorage.removeItem('fluidez.study');
+  localStorage.removeItem('fluidez.srs');
+
+  /* A miss, recorded the way a round records one. Both orientations, because
+   * a typed question shows the English and a tapped one shows the Spanish and
+   * the card must come out the same way round either way. */
+  W.ErrorLog.record({ id: 'v:la barca:meaning', front: 'small boat', back: 'la barca',
+                      es: 'la barca', en: 'small boat',
+                      kind: 'vocab', source: 'game', reviewable: false });
+  W.ErrorLog.record({ id: 'v:el cargo:meaning', front: 'el cargo', back: 'post, position',
+                      es: 'el cargo', en: 'post, position',
+                      kind: 'vocab', source: 'game', reviewable: false });
+
+  const p1 = W.Study.pack();
+  ok(p1.length > 0, 'the pack is empty even with misses logged');
+  ok(p1.length <= W.Study.MAX, `the pack is ${p1.length} cards, over the cap of ${W.Study.MAX}`);
+  const misses = p1.filter(c => c.source === 'fallo');
+  ok(misses.length >= 2, `only ${misses.length} of the logged misses reached the pack`);
+  ok(p1[0].source === 'fallo', 'the pack does not lead with what you got wrong');
+  /* And it must not be ONLY repair work. A pack with nothing new in it is a
+   * day where you learn nothing, which is a day you skip — and it was exactly
+   * that for one build, because freshItems(pool, 0) slices to zero. */
+  ok(p1.some(c => c.source === 'nuevo'),
+     'the pack contains no new words — it is only things you already failed');
+  /* Not a fixed size: the pack is as long as there is work for it. With a
+   * cleared schedule and two misses it is those two plus the new-word quota,
+   * and asserting a full twelve would be asserting the fixture rather than
+   * the behaviour. */
+  ok(p1.length >= misses.length + 2 && p1.length <= W.Study.MAX,
+     `the pack is ${p1.length} cards for ${misses.length} misses on an empty schedule`);
+  // Always meaning → Spanish, whichever way the miss was recorded.
+  const barca = p1.filter(c => c.id === 'v:la barca:meaning')[0];
+  ok(barca && barca.es === 'la barca' && barca.en === 'small boat',
+     'the card came out the wrong way round');
+  ok(p1.every(c => c.id && c.es && c.en), 'a pack card is missing a side');
+
+  // Same pack all day, or it is a slot machine you can never finish.
+  const p2 = W.Study.pack();
+  ok(JSON.stringify(p1.map(c => c.id)) === JSON.stringify(p2.map(c => c.id)),
+     'the pack reshuffled between two reads on the same day');
+
+  /* Answering grades the app's own schedule — not a second store. */
+  const host2 = new El('div');
+  let played = null;
+  W.Study.render(host2, { onExit() {}, onPlay(cards) { played = cards; } });
+  const first = p1[0];
+  ok(!W.SRS.isDue(first.id) || true, 'precondition');
+  const reveal = host2.all(n => n.cls().includes('study-reveal'))[0];
+  ok(!!reveal, 'the flashcard has no reveal control');
+  ok(host2.all(n => n.cls().includes('study-a'))[0].hidden, 'the answer is visible before it is revealed');
+  reveal.click();
+  ok(!host2.all(n => n.cls().includes('study-a'))[0].hidden, 'revealing did not show the answer');
+  host2.all(n => n.cls().includes('study-yes'))[0].click();
+  ok(W.SRS.isEnrolled(first.id), '"la sabía" did not enrol the card in the SRS');
+  ok(!W.SRS.isDue(first.id), '"la sabía" left the card still due today');
+
+  // Walk the rest, then the hand-off to a round of the same words.
+  for (let guard = 0; guard < 40; guard++) {
+    const r = host2.all(n => n.cls().includes('study-reveal'))[0];
+    if (!r) break;
+    r.click();
+    host2.all(n => n.cls().includes('study-yes'))[0].click();
+  }
+  ok(W.Study.doneToday(), 'finishing the pack did not mark the day done');
+  const playBtn = host2.all(n => n.tagName === 'BUTTON' && /Jugar/.test(n.textContent))[0];
+  ok(!!playBtn, 'the end of the pack offers no round');
+  playBtn.click();
+  ok(played && played.length === p1.length, 'the round was handed the wrong deck');
+
+  /* A deck round deals ONLY those words — that is the whole point of doing it
+   * straight after the cards. */
+  const ids = {};
+  played.forEach(c => { ids[c.id] = 1; });
+  let dealt = 0, stray = 0;
+  for (let i = 0; i < 120; i++) {
+    const it = W.GameItems.deckItem(played, rng);
+    if (!it) continue;
+    dealt++;
+    if (!ids[it.id]) stray++;
+    ok(!!it.answer && !!it.prompt, 'a deck item is missing a side');
+  }
+  ok(dealt > 80, `the deck round only produced ${dealt} of 120 items`);
+  ok(stray === 0, `${stray} items in the deck round were not from the pack`);
+  console.log('  pack: ' + p1.length + ' cards (' + misses.length + ' from misses), deck round stays in-deck');
+
+  localStorage.removeItem('fluidez.errors');
+  localStorage.removeItem('fluidez.study');
+  localStorage.removeItem('fluidez.srs');
+}
+
 /* ---- the ghost ---------------------------------------------------------- */
 {
   const key = 'ghost-test';

@@ -837,7 +837,7 @@ function checkProbes(l, tag) {
    * corpus for the lessons, so loading a second copy of it would cost 2.2 MB
    * to save a walk it can afford. js/arcade.js is that build's boot. Both are
    * checked below against the arcade's own page and worker instead. */
-  const ARCADE_ONLY = new Set(['data/game-index.js', 'js/arcade.js']);
+  const ARCADE_ONLY = new Set(['data/game-index.js', 'js/arcade.js', 'js/study.js']);
 
   onDisk.filter(f => !ARCADE_ONLY.has(f)).forEach(f => {
     ok(scripts.indexOf(f) !== -1, `index.html does not load ${f} — it will not exist in the browser`);

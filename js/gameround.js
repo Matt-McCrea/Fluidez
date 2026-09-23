@@ -274,8 +274,22 @@ window.GameRound = (function () {
       }
       if (S) S.enrol(item.id);                 // eligible sooner, but not lapsed
       if (window.ErrorLog) {
+        /* es/en as well as front/back. The orientation of a game item flips
+         * with how it was played — a typed vocab question shows the English
+         * and a tapped one shows the Spanish — so front/back alone cannot say
+         * which side is which, and js/study.js needs to know in order to build
+         * a card that always asks meaning → Spanish. Derived rather than
+         * demanded, so no generator has to remember to supply it.
+         *
+         * `reviewable` stays false on purpose: that flag makes ErrorLog grade
+         * the card DOWN, and a mistype at second 58 must not demote something
+         * you know. Coming back and being demoted are different things, and
+         * the pack is how a game miss now comes back. */
+        var side = item.play === 'type';
         window.ErrorLog.record({
           id: item.id, front: item.prompt || item.es || '', back: item.answer,
+          es: item.es || (side ? item.answer : item.prompt),
+          en: item.en || (side ? item.prompt : item.answer),
           kind: item.kind, source: 'game', topic: item.topic || null, reviewable: false
         });
       }
@@ -293,7 +307,8 @@ window.GameRound = (function () {
        * twice in ninety seconds. */
       var item = null, fallback = null;
       for (var i = 0; i < 8; i++) {
-        var got = cfg.topic ? GI.weakItem(cfg.topic, rung, rng)
+        var got = cfg.deck ? GI.deckItem(cfg.deck, rng)
+                : cfg.topic ? GI.weakItem(cfg.topic, rung, rng)
                             : GI.next(cfg.kind, rung, rng,
                                 { silent: cfg.silent, tense: cfg.lockTense, tenses: cfg.tenses,
                                   anyBand: cfg.anyBand, theme: cfg.theme, only: cfg.only });
