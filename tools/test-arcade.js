@@ -445,6 +445,39 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   console.log('  verbs: ' + clitic + ' pronominal items, all marked (-se); subject pronoun optional in ' + pron);
 }
 
+/* ---- a miss comes back inside ordinary rounds ---------------------------
+ * The end screen used to say misses were "in Puntos débiles". What that meant
+ * was: their TOPIC became eligible for a round you had to go and choose, once
+ * three misses shared one. The words themselves were queued nowhere an
+ * ordinary round would reach — measured over 600 vocabulary draws, a word
+ * missed moments earlier came back zero times, because best() only prefers a
+ * due item among the two or three candidates a draw already produced and the
+ * pool runs to thousands. */
+{
+  localStorage.removeItem('fluidez.errors');
+  const mk = (id, es, en, kind) => W.ErrorLog.record({
+    id: id, front: en, back: es, es: es, en: en, kind: kind, source: 'game', reviewable: false });
+  mk('v:la barca:meaning', 'la barca', 'small boat', 'vocab');
+  mk('v:el cargo:meaning', 'el cargo', 'post, position', 'vocab');
+  mk('vt:jubilarse:plusc', 'se había jubilado', 'he/she had retired', 'verb');
+
+  // The deck is per game kind, because a cloze gap is not a question once the
+  // sentence it belonged to is off screen.
+  ok(W.GameItems.missDeck('vocab', 20).length === 2, 'the vocab miss deck is the wrong size');
+  ok(W.GameItems.missDeck('verb', 20).length === 1, 'the verb miss deck is the wrong size');
+  ok(W.GameItems.missDeck('mixed', 20).length === 3, 'a mixed round should draw on every revisitable kind');
+  ok(W.GameItems.missDeck('grammar', 20).length === 0,
+     'grammar misses should not be revisited out of context');
+
+  // And an entry becomes a real question again.
+  const deck = W.GameItems.missDeck('vocab', 20);
+  const it = W.GameItems.deckItem(deck, rng);
+  ok(!!it && !!it.prompt && !!it.answer, 'a miss did not turn back into a question');
+  ok(deck.some(c => c.id === it.id), 'the revisit item is not from the miss deck');
+
+  localStorage.removeItem('fluidez.errors');
+}
+
 /* ---- the day's pack: a miss has to come back ----------------------------
  * The arcade could only score you. Every round graded correct answers up and
  * logged the misses, and the misses went nowhere — js/gameround.js records

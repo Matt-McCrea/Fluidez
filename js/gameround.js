@@ -305,8 +305,34 @@ window.GameRound = (function () {
        * but take a repeat over stalling: the pools are large, and a round that
        * ends early because the draw was unlucky is worse than seeing a word
        * twice in ninety seconds. */
+      /* ONE IN FOUR IS SOMETHING YOU GOT WRONG.
+       *
+       * The end screen used to promise that misses were "in Puntos débiles",
+       * and what that meant in practice was: the TOPIC became eligible for a
+       * round you had to go and choose, once three misses shared it. The words
+       * themselves were not queued anywhere a normal round would reach.
+       *
+       * So a quarter of the items are now drawn from your own error log
+       * instead of the pool. A quarter rather than all of them because a round
+       * that is only your mistakes is a punishment and you stop opening it;
+       * this way the miss comes back while the game is still a game. Never in
+       * a deck round (that already IS a fixed list) and never twice in one
+       * round. */
+      var revisit = null;
+      if (!cfg.deck && !cfg.topic && seen > 0 && seen % 4 === 3 && GI.missDeck) {
+        /* Checked AFTER building the item, not before: usedPrompts is keyed by
+         * keyOf(), which is the prompt as it ends up on screen, and a deck
+         * entry does not know yet whether it will be asked typed or tapped. */
+        var deck = GI.missDeck(cfg.kind, 20);
+        for (var d = 0; d < 6 && deck.length; d++) {
+          var cand = GI.deckItem(deck, rng);
+          if (cand && !usedPrompts[keyOf(cand)]) { revisit = cand; break; }
+        }
+      }
+
       var item = null, fallback = null;
-      for (var i = 0; i < 8; i++) {
+      if (revisit) { item = revisit; }
+      for (var i = 0; !item && i < 8; i++) {
         var got = cfg.deck ? GI.deckItem(cfg.deck, rng)
                 : cfg.topic ? GI.weakItem(cfg.topic, rung, rng)
                             : GI.next(cfg.kind, rung, rng,
@@ -774,7 +800,11 @@ window.GameRound = (function () {
           list.appendChild(r);
         });
         over.appendChild(list);
-        over.appendChild(el('p', 'g-over-note', 'Ya están en Puntos débiles.'));
+        /* Says what actually happens now. It used to claim these were "in
+         * Puntos débiles", which was true only of their topic, only once three
+         * misses shared one, and only in a round you had to go and pick. */
+        over.appendChild(el('p', 'g-over-note',
+          'Volverán: una de cada cuatro preguntas sale de tus fallos.'));
       }
 
       /* The rematch. Chess's post-game analysis works because it is a story

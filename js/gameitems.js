@@ -1074,6 +1074,35 @@ window.GameItems = (function () {
     return base;
   }
 
+  /* YOUR OWN MISSES, as a deck a round can deal from.
+   *
+   * Missing something used to change almost nothing about what you were dealt
+   * next. best() prefers an item the SRS says is due, but only among the two
+   * or three candidates a draw already produced, and the pools run to
+   * thousands — measured over 600 vocabulary draws, a word missed moments
+   * earlier came back zero times. And on a word you already KNEW, a game miss
+   * changes nothing at all by design: it enrols the card and never grades it
+   * down, so it is not due and is not preferred.
+   *
+   * Only kinds whose two sides survive being taken out of context: a
+   * vocabulary, verb or translation miss is a question again as it stands,
+   * while a cloze miss is a gap in a sentence that is no longer on screen.
+   * Those come back through the pack and the weak-spot round instead. */
+  var REVISITABLE = { vocab: 1, verb: 1, translate: 1 };
+  function missDeck(kind, max) {
+    if (!window.ErrorLog) return [];
+    var out = [];
+    window.ErrorLog.list().forEach(function (e) {
+      if (out.length >= (max || 20)) return;
+      if (!REVISITABLE[e.kind]) return;
+      if (kind && kind !== 'mixed' && kind !== e.kind) return;
+      var es = e.es || e.back, en = e.en || e.front;
+      if (!es || !en || !e.id) return;
+      out.push({ id: e.id, es: String(es), en: String(en), cefr: e.cefr || 'B1' });
+    });
+    return out;
+  }
+
   function grammarItem(rung, rng) {
     var idx = index(), band = bandOf(rung);
     var cands = [];
@@ -1267,7 +1296,8 @@ window.GameItems = (function () {
 
   return {
     draw: draw, next: next, grade: grade, reset: reset, index: index, words: words,
-    setFocus: setFocus, weakItem: weakItem, deckItem: deckItem, conjPrompt: conjPrompt,
+    setFocus: setFocus, weakItem: weakItem, deckItem: deckItem, missDeck: missDeck,
+    conjPrompt: conjPrompt,
     listenRate: listenRate, bandForLevel: bandForLevel,
     enKey: enKey, altsFor: altsFor
   };
