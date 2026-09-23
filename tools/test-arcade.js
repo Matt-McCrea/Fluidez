@@ -655,6 +655,56 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   const fresh = W.GameScore.profileOf('never-played-key');
   ok(fresh.accuracy === null && fresh.perMin === null && fresh.typical === null,
      'profileOf invented figures for a game with no history');
+  /* ---- "mis fallos" means your mistakes ---------------------------------
+   * It used to mean something else: it found the topic behind your most
+   * frequent misses, needed three of them to agree, and ran a GRAMMAR round on
+   * that topic — so it was a subject you had been bad at rather than your
+   * mistakes, and for someone who only played Vocabulario it never appeared. */
+  {
+    localStorage.removeItem('fluidez.arcade');
+    localStorage.removeItem('fluidez.errors');
+    W.Shell.go();
+
+    // With no misses at all it must not be offered.
+    STAGE.all(n => n.cls().includes('arc-focus'))[0].click();
+    ok(!STAGE.all(n => n.cls().includes('arc-pick'))
+         .some(p2 => /Mis fallos/.test(p2.textContent)),
+       '"Mis fallos" is offered with nothing in the error log');
+    STAGE.all(n => n.cls().includes('arc-back'))[0].click();
+
+    const mk = (id, es, en, kind) => W.ErrorLog.record({
+      id, front: en, back: es, es, en, kind, source: 'game', reviewable: false });
+    mk('v:la barca:meaning', 'la barca', 'small boat', 'vocab');
+    mk('v:el cargo:meaning', 'el cargo', 'post, position', 'vocab');
+
+    // One miss is enough — no waiting for three to share a topic.
+    W.Shell.go();
+    STAGE.all(n => n.cls().includes('arc-focus'))[0].click();
+    const row = STAGE.all(n => n.cls().includes('arc-pick'))
+                     .filter(p2 => /Mis fallos/.test(p2.textContent))[0];
+    ok(!!row, '"Mis fallos" is not offered even with misses logged');
+    ok(/2/.test(row.textContent), 'the option does not say how many mistakes there are');
+    row.click();
+
+    // The chip carries the count, so the board reads without opening the picker.
+    const chip = STAGE.all(n => n.cls().includes('arc-focus'))[0];
+    ok(/Mis fallos/.test(chip.textContent) && /2/.test(chip.textContent),
+       `the chip reads "${chip.textContent}" and should carry the count`);
+
+    /* A game with no misses of its kind must say so rather than quietly
+     * dealing an ordinary round, which looks like the setting being ignored. */
+    const tilesNow = STAGE.all(n => n.cls().includes('arc-tile'));
+    const voc = tilesNow.filter(t => /Vocabulario/.test(t.textContent))[0];
+    const conj = tilesNow.filter(t => /Conjugación/.test(t.textContent))[0];
+    ok(voc && !voc.disabled, 'Vocabulario is disabled despite having vocabulary misses');
+    ok(/2 fallos tuyos/.test(voc.textContent), `the Vocabulario tile reads "${voc.textContent}"`);
+    ok(conj && conj.disabled, 'Conjugación is playable under "mis fallos" with no verb misses');
+
+    localStorage.removeItem('fluidez.arcade');
+    localStorage.removeItem('fluidez.errors');
+    W.Shell.go();
+  }
+
   /* ---- the arcade's own focus -----------------------------------------
    * A control that persists a choice and then fails to apply it looks
    * perfectly correct on screen, which is exactly how the first version of

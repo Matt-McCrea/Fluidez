@@ -118,7 +118,10 @@
     if (f.kind === 'tense') return tenseLabel(f.tense);
     if (f.kind === 'theme') return themeLabel(f.theme);
     if (f.kind === 'verbs') return 'Solo verbos';
-    if (f.kind === 'weak') return 'Mis fallos';
+    if (f.kind === 'weak') {
+      var n = missCount('mixed');
+      return n ? 'Mis fallos · ' + n : 'Mis fallos';
+    }
     return 'Todo';
   }
   /* What a focus means to the round that is about to start. A tense biases
@@ -142,16 +145,20 @@
     else window.GameItems.setFocus(null);
   }
 
-  /* The topic behind the most logged misses, when one stands out. The error
-   * log is the app's own — a word missed in yesterday's session is a candidate
-   * here, which is the point of sharing the store. */
-  function weakTopic() {
-    if (!window.ErrorLog) return null;
-    var n = {}, best = null;
-    try { window.ErrorLog.cards().forEach(function (c) { if (c.topic) n[c.topic] = (n[c.topic] || 0) + 1; }); }
-    catch (e) { return null; }
-    Object.keys(n).forEach(function (k) { if (!best || n[k] > best.n) best = { key: k, n: n[k] }; });
-    return best && best.n >= 3 ? best : null;
+  /* HOW MANY OF YOUR OWN MISTAKES THIS GAME COULD ASK YOU ABOUT.
+   *
+   * "Mis fallos" used to mean something else: it found the TOPIC behind your
+   * most frequent misses, needed three of them to agree, and then ran a
+   * grammar round on that topic (Games.openWeak, kind 'grammar'). So it was
+   * not your mistakes, it was a subject you had been bad at — and for a
+   * vocabulary player it never appeared at all.
+   *
+   * It now means what it says: every question comes from your error log. The
+   * machinery already exists — a round dealt from a fixed deck is what the
+   * study pack uses — so this is missDeck() into cfg.deck and nothing new. */
+  function missCount(kind) {
+    if (!window.GameItems || !window.GameItems.missDeck) return 0;
+    try { return window.GameItems.missDeck(kind, 999).length; } catch (e) { return 0; }
   }
 
   /* ---- the level ---------------------------------------------------------
@@ -229,10 +236,11 @@
     pick('Todo', 'sin preferencia', null, !cur);
     pick('Solo verbos', '1.166 verbos, solo su significado',
          { kind: 'verbs' }, !!(cur && cur.kind === 'verbs'));
-    var wk = weakTopic();
-    if (wk) {
-      pick('Mis fallos', wk.n + ' fallos en ' + (window.Games.topicLabel ? window.Games.topicLabel(wk.key) : wk.key),
-           { kind: 'weak', topic: wk.key }, !!(cur && cur.kind === 'weak'));
+    var total = missCount('mixed');
+    if (total) {
+      pick('Mis fallos', 'todas las preguntas salen de tus ' + total +
+           (total === 1 ? ' fallo' : ' fallos'),
+           { kind: 'weak' }, !!(cur && cur.kind === 'weak'));
     }
     /* Taught first, then the rest. Profile.tenses() is what the COURSE has
      * reached, and at A1/A2 that is the present alone — the right answer for
@@ -401,9 +409,19 @@
       var ok = playable(g);
       if (!ok) tile.disabled = true;
 
+      /* Under a "mis fallos" focus a tile with no misses of its kind would
+       * silently deal an ordinary round, which looks like the setting being
+       * ignored. Say so on the tile instead, and take it out of play. */
+      var weak = currentFocus() && currentFocus().kind === 'weak';
+      var mine = weak ? missCount(g.kind) : 0;
+      if (weak && !mine) { tile.disabled = true; ok = false; }
+
       tile.appendChild(el('span', 'arc-ico', g.icon));
       tile.appendChild(el('span', 'arc-name', g.name));
-      tile.appendChild(el('span', 'arc-rule', ok ? g.rule : 'sin voz en este dispositivo'));
+      tile.appendChild(el('span', 'arc-rule',
+        !ok && g.needsVoice ? 'sin voz en este dispositivo'
+        : weak ? (mine ? mine + (mine === 1 ? ' fallo tuyo' : ' fallos tuyos') : 'ningún fallo aquí')
+        : g.rule));
 
       var pb = el('span', 'arc-pb' + (p.pb ? '' : ' none'), p.pb ? num(p.pb) : 'sin récord');
       tile.appendChild(pb);
@@ -439,9 +457,16 @@
   function play(g) {
     pushView('round');
     var f = currentFocus();
-    if (f && f.kind === 'weak' && G.openWeak) {
-      G.openWeak(f.topic, G.topicLabel ? G.topicLabel(f.topic) : 'Mis fallos');
-      return;
+    /* Every question from your own error log, for THIS game's kind. A deck
+     * round, which is the same path the study pack takes — and which also
+     * turns off the one-in-four revisit, correctly: there is nothing to mix
+     * back in when the whole round is already the mixture. */
+    if (f && f.kind === 'weak') {
+      var deck = window.GameItems.missDeck(g.kind, 40);
+      if (deck.length) {
+        G.open(g.key, board, { deck: deck, title: g.name + ' · tus fallos' });
+        return;
+      }
     }
     if (f && f.kind === 'tense' && g.key === 'verbos' && G.openTense) {
       var r = G.openTense(f.tense, 'Conjugación · ' + tenseLabel(f.tense), board);
