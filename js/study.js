@@ -194,6 +194,9 @@ window.Study = (function () {
         /* The same call the daily session makes, so studying here genuinely
          * removes the card from tomorrow's review rather than shadowing it. */
         if (S) { S.enrol(c.id); S.grade(c.id, ok); }
+        // A card known three times running leaves the mistake list, whether it
+        // was answered here or in a round — one counter, both doors.
+        if (window.ErrorLog && window.ErrorLog.credit && ok) window.ErrorLog.credit({ id: c.id });
         if (ok) knew++;
         i++; show();
       }

@@ -277,6 +277,12 @@ window.GameRound = (function () {
        * empty however much you played. */
       if (result === 'good' || result === 'near') {
         if (item.id && S) { S.enrol(item.id); S.grade(item.id, true); }
+        // Getting it right is how a mistake stops being one. Same shape as the
+        // record below, so ErrorLog files both under the same key.
+        if (window.ErrorLog && window.ErrorLog.credit) {
+          window.ErrorLog.credit({ id: item.id || null, kind: item.kind,
+                                   front: item.prompt || item.es || '', back: item.answer });
+        }
         return;
       }
       if (item.id && S) S.enrol(item.id);      // eligible sooner, but not lapsed

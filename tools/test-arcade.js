@@ -507,6 +507,41 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   localStorage.removeItem('fluidez.errors');
 }
 
+/* ---- and stops coming back once you know it -----------------------------
+ * Entries only ever grew: record() incremented a count and nothing removed
+ * one, so a word missed once was still top of Mis fallos months later and
+ * still taking a quarter of every round. */
+{
+  localStorage.removeItem('fluidez.errors');
+  const E1 = { id: 'v:la barca:meaning', kind: 'vocab', front: 'small boat', back: 'la barca' };
+  W.ErrorLog.record({ id: E1.id, kind: 'vocab', front: E1.front, back: E1.back,
+                      es: 'la barca', en: 'small boat', source: 'game', reviewable: false });
+  const here = () => W.ErrorLog.list().filter(e => e.id === E1.id).length;
+  ok(here() === 1, 'the miss was not recorded');
+  for (let i = 1; i < W.ErrorLog.RECOVER; i++) {
+    W.ErrorLog.credit(E1);
+    ok(here() === 1, `the entry left after only ${i} correct answer(s)`);
+  }
+  W.ErrorLog.credit(E1);
+  ok(here() === 0, `${W.ErrorLog.RECOVER} correct in a row did not retire the entry`);
+
+  // A fresh miss puts it back, and back to zero — not one credit from leaving.
+  W.ErrorLog.record({ id: E1.id, kind: 'vocab', front: E1.front, back: E1.back, source: 'game' });
+  W.ErrorLog.credit(E1);
+  W.ErrorLog.credit(E1);
+  ok(here() === 1, 'a fresh miss did not reset the recovery run');
+
+  // Works for an entry with no SRS id, which is most of Uno u otro.
+  localStorage.removeItem('fluidez.errors');
+  const gap = { id: null, kind: 'contrast', front: 'Se acercó ＿＿＿ ver mejor.', back: 'para' };
+  W.ErrorLog.record({ id: null, kind: gap.kind, front: gap.front, back: gap.back,
+                      options: ['por', 'para'], source: 'game' });
+  ok(W.ErrorLog.list().length === 1, 'the idless miss was not recorded');
+  for (let i = 0; i < W.ErrorLog.RECOVER; i++) W.ErrorLog.credit(gap);
+  ok(W.ErrorLog.list().length === 0, 'an idless entry cannot be retired');
+  localStorage.removeItem('fluidez.errors');
+}
+
 /* ---- the day's pack: a miss has to come back ----------------------------
  * The arcade could only score you. Every round graded correct answers up and
  * logged the misses, and the misses went nowhere — js/gameround.js records

@@ -14,10 +14,46 @@ window.ErrorLog = (function () {
   var KEY = 'fluidez.errors';
   var S = window.SRS;
 
+  /* Correct answers needed, in a row, before a mistake stops being one.
+   *
+   * Entries only ever grew before this: record() incremented a count and
+   * nothing ever removed one, so a word missed once in week one was still at
+   * the top of Mis fallos in week ten and still taking a quarter of every
+   * round. A list of mistakes that never forgets stops being a list of your
+   * mistakes and becomes a list of your history.
+   *
+   * Three because the whole point of the list is things you keep getting
+   * wrong, and one lucky tap on a two-option question is not evidence of
+   * anything. A fresh miss puts the entry straight back at zero. */
+  var RECOVER = 3;
+
   function load() { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } }
   function save(o) { try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (e) {} }
 
   // Record a miss. `e` = { id, front, back, kind, source, reviewable, hint }.
+  /* The key an entry is filed under. Shared by record() and credit() so the
+   * two can never disagree about which entry they are talking about — which
+   * they would the moment one of them was changed alone. */
+  function keyFor(e) {
+    if (!e) return null;
+    return e.id || ('miss:' + (e.kind || 'x') + ':' +
+                    String(e.front || e.back || '').slice(0, 60));
+  }
+
+  /* A correct answer on something you had got wrong. Three in a row and the
+   * entry goes; anything less just moves it closer. Cheap on purpose — this
+   * runs on every right answer in every round. */
+  function credit(e) {
+    var id = keyFor(e);
+    if (!id) return;
+    var s = load();
+    var it = s[id];
+    if (!it) return;                            // not a known mistake; nothing to do
+    it.ok = (it.ok || 0) + 1;
+    if (it.ok >= RECOVER) delete s[id]; else s[id] = it;
+    save(s);
+  }
+
   function record(e) {
     if (!e) return;
     /* A MISS WITHOUT AN ID IS STILL A MISS. This required one, which is right
@@ -28,8 +64,7 @@ window.ErrorLog = (function () {
      * dropped on the floor and "Mis fallos" could stay empty however much you
      * played. Synthesised from what the question was, and prefixed so it can
      * never collide with a real SRS id. */
-    var id = e.id || ('miss:' + (e.kind || 'x') + ':' +
-                      String(e.front || e.back || '').slice(0, 60));
+    var id = keyFor(e);
     if (!id) return;
     var s = load();
     var prev = s[id];
@@ -53,6 +88,8 @@ window.ErrorLog = (function () {
                (prev && prev.options) || null,
       reviewable: !!e.reviewable,
       count: (prev ? prev.count : 0) + 1,
+      ok: 0,                                     // a miss resets the recovery run
+
       lastDay: S ? S.today() : 0
     };
     save(s);
@@ -82,5 +119,5 @@ window.ErrorLog = (function () {
   function clearAll() { save({}); }
   function count() { return Object.keys(load()).length; }
 
-  return { record: record, cards: cards, list: list, remove: remove, clearAll: clearAll, count: count };
+  return { record: record, credit: credit, keyFor: keyFor, RECOVER: RECOVER, cards: cards, list: list, remove: remove, clearAll: clearAll, count: count };
 })();
