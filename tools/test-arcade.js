@@ -467,7 +467,36 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   ok(W.GameItems.missDeck('verb', 20).length === 1, 'the verb miss deck is the wrong size');
   ok(W.GameItems.missDeck('mixed', 20).length === 3, 'a mixed round should draw on every revisitable kind');
   ok(W.GameItems.missDeck('grammar', 20).length === 0,
-     'grammar misses should not be revisited out of context');
+     'a gap with no options recorded cannot be re-asked and should not be offered');
+
+  /* THE CASE THAT STARTED THIS. Uno u otro carries an SRS id on none of its
+   * items and Traducción on half, and writeBack returned early without one —
+   * so a whole game's mistakes were thrown away and "Mis fallos" stayed empty
+   * however much you played. A miss now files under a synthesised key, and a
+   * gap comes back with its options rather than as a typed guess, because por
+   * and para both fit most sentences until you see that those are the two
+   * choices. */
+  {
+    W.ErrorLog.record({
+      id: null,                                   // exactly what a contrast item has
+      front: 'Se acercó a la ventana ＿＿＿ ver mejor.', back: 'para',
+      options: ['por', 'para'], kind: 'contrast', source: 'game', reviewable: false
+    });
+    const all = W.ErrorLog.list();
+    const rec = all.filter(e => /ventana/.test(e.front || ''))[0];
+    ok(!!rec, 'a miss on an item with no SRS id was not recorded at all');
+    ok(/^miss:/.test(rec.id), `the synthesised key should be prefixed to avoid colliding with an SRS id (got "${rec.id}")`);
+    ok(rec.options && rec.options.length === 2, 'the options were not kept, so the gap cannot be re-asked');
+
+    const cd = W.GameItems.missDeck('contrast', 20);
+    ok(cd.length === 1, `the contrast miss deck has ${cd.length} entries`);
+    const back = W.GameItems.deckItem(cd, rng);
+    ok(back && back.play === 'choose', 'the gap came back as something other than a tap');
+    ok(back && back.prompt.indexOf('＿＿＿') !== -1, 'the gap lost its sentence');
+    ok(back && back.options.length === 2 && back.options.indexOf('para') !== -1,
+       'the gap came back without the two choices it was asked with');
+    ok(back && back.answer === 'para', 'the gap came back with the wrong answer');
+  }
 
   // And an entry becomes a real question again.
   const deck = W.GameItems.missDeck('vocab', 20);

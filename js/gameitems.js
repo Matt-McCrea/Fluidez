@@ -1053,7 +1053,15 @@ window.GameItems = (function () {
   function deckItem(deck, rng) {
     if (!deck || !deck.length) return null;
     var c = pick(deck, rng);
-    if (!c || !c.es || !c.en) return null;
+    if (!c) return null;
+    /* A gap comes back exactly as it was asked, options and all. Rebuilding it
+     * as anything else changes the question. */
+    if (c.options && c.options.length > 1 && c.prompt && c.answer) {
+      return { kind: 'contrast', play: 'choose', cefr: c.cefr || 'B1', bonus: 30,
+               id: c.id, topic: c.topic || null, prompt: c.prompt, answer: c.answer,
+               options: E.shuffle(c.options.slice(), rng), note: null };
+    }
+    if (!c.es || !c.en) return null;
     var typed = TYPEABLE.test(c.es) && c.es.trim().split(/\s+/).length <= 3;
     var base = { kind: 'vocab', cefr: c.cefr || 'B1', bonus: 0, id: c.id,
                  topic: null, es: c.es, en: c.en, note: null };
@@ -1084,21 +1092,31 @@ window.GameItems = (function () {
    * changes nothing at all by design: it enrols the card and never grades it
    * down, so it is not due and is not preferred.
    *
-   * Only kinds whose two sides survive being taken out of context: a
-   * vocabulary, verb or translation miss is a question again as it stands,
-   * while a cloze miss is a gap in a sentence that is no longer on screen.
-   * Those come back through the pack and the weak-spot round instead. */
-  var REVISITABLE = { vocab: 1, verb: 1, translate: 1 };
+   * Whether a miss can be re-asked is a PROPERTY of the entry, not of its
+   * kind. This began as a list — vocab, verb, translate — on the reasoning
+   * that a cloze is a gap in a sentence no longer on screen. That is wrong
+   * about cloze and contrast items: their prompt IS the whole sentence, gap
+   * and all, so they are self-contained in a way a vocabulary card is not.
+   * What they need is their OPTIONS, because "the missing word" typed into an
+   * empty box is a different question — por and para both fit most gaps until
+   * you see that those are the two choices.
+   *
+   * So there are two shapes of revisitable miss:
+   *   a WORD  — es and en both known, asked meaning → Spanish either way round
+   *   a GAP   — a prompt, an answer and the options it was tapped from */
   function missDeck(kind, max) {
     if (!window.ErrorLog) return [];
     var out = [];
     window.ErrorLog.list().forEach(function (e) {
       if (out.length >= (max || 20)) return;
-      if (!REVISITABLE[e.kind]) return;
+      if (!e.id) return;
       if (kind && kind !== 'mixed' && kind !== e.kind) return;
-      var es = e.es || e.back, en = e.en || e.front;
-      if (!es || !en || !e.id) return;
-      out.push({ id: e.id, es: String(es), en: String(en), cefr: e.cefr || 'B1' });
+      if (e.es && e.en) {
+        out.push({ id: e.id, es: String(e.es), en: String(e.en), cefr: e.cefr || 'B1' });
+      } else if (e.front && e.back && e.options && e.options.length > 1) {
+        out.push({ id: e.id, prompt: String(e.front), answer: String(e.back),
+                   options: e.options.slice(), cefr: e.cefr || 'B1', topic: e.topic || null });
+      }
     });
     return out;
   }

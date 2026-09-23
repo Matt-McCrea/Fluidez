@@ -267,12 +267,19 @@ window.GameRound = (function () {
 
     // ---- SRS: credit generously, never punish ------------------------------
     function writeBack(item, result) {
-      if (!item.id) return;
+      /* AN ITEM WITHOUT AN SRS ID IS STILL A MISTAKE. This returned early on
+       * one, which is correct for the SRS — the id IS the scheduling key and
+       * there is nothing to schedule without it — and was silently wrong for
+       * the error log, which only needs something stable to file the entry
+       * under. Measured over 300 draws each: Uno u otro carries an id on 0% of
+       * its items and Traducción on 49%, so a whole game's mistakes were
+       * being thrown away and half of another's, and "Mis fallos" could stay
+       * empty however much you played. */
       if (result === 'good' || result === 'near') {
-        if (S) { S.enrol(item.id); S.grade(item.id, true); }
+        if (item.id && S) { S.enrol(item.id); S.grade(item.id, true); }
         return;
       }
-      if (S) S.enrol(item.id);                 // eligible sooner, but not lapsed
+      if (item.id && S) S.enrol(item.id);      // eligible sooner, but not lapsed
       if (window.ErrorLog) {
         /* es/en as well as front/back. The orientation of a game item flips
          * with how it was played — a typed vocab question shows the English
@@ -285,13 +292,28 @@ window.GameRound = (function () {
          * the card DOWN, and a mistype at second 58 must not demote something
          * you know. Coming back and being demoted are different things, and
          * the pack is how a game miss now comes back. */
+        /* es/en only where the two sides really ARE a Spanish word and its
+         * meaning. For a vocabulary or translation item the orientation flips
+         * with how it was played, so it has to be derived; for a contrast item
+         * the prompt is a Spanish sentence and the answer a Spanish word, and
+         * calling either of them "the English" would put the card in the pack
+         * backwards. Those fall back to front/back, which is already the right
+         * way round: the gapped sentence, then the word that fills it. */
         var side = item.play === 'type';
-        window.ErrorLog.record({
-          id: item.id, front: item.prompt || item.es || '', back: item.answer,
-          es: item.es || (side ? item.answer : item.prompt),
-          en: item.en || (side ? item.prompt : item.answer),
-          kind: item.kind, source: 'game', topic: item.topic || null, reviewable: false
-        });
+        var pair = item.kind === 'vocab' || item.kind === 'translate' || item.kind === 'verb';
+        var rec = {
+          // No id on many items (contrast carries none at all); ErrorLog
+          // synthesises one from the question rather than dropping the miss.
+          id: item.id || null,
+          front: item.prompt || item.es || '', back: item.answer,
+          kind: item.kind, source: 'game', topic: item.topic || null, reviewable: false,
+          options: item.options || null
+        };
+        if (pair) {
+          rec.es = item.es || (side ? item.answer : item.prompt);
+          rec.en = item.en || (side ? item.prompt : item.answer);
+        }
+        window.ErrorLog.record(rec);
       }
     }
 
