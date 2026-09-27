@@ -940,6 +940,7 @@ window.Session = (function () {
     if (r.review) lines.push('Reviewed <b>' + r.review.seen + '</b> items — ' + r.review.correct + ' right');
     // Only name a focus if the lesson stage actually ran; a quick review has none.
     if (r.learn || modeDef().keys.indexOf('learn') !== -1) lines.push('Lesson: <b>' + focusLabel(ctx) + '</b>');
+    if (r.learn && r.learn.total) lines.push('Quick check: <b>' + r.learn.correct + '/' + r.learn.total + '</b>');
     if (r.comprehend) lines.push('Reading: <b>' + r.comprehend.correct + '/' + r.comprehend.total + '</b>');
     if (r.apply) lines.push('Grammar in context: <b>' + r.apply.correct + '/' + r.apply.total + '</b>');
     if (r.produce) lines.push('Wrote <b>' + r.produce.done + '</b> ' + (r.produce.done === 1 ? 'thing' : 'things') + ' of your own');
@@ -965,6 +966,33 @@ window.Session = (function () {
     if (window.Games && window.Games.tenseCard && ctx.lesson) {
       var tc = window.Games.tenseCard(ctx.lesson, function () { window.App.go('home'); });
       if (tc) wrap.appendChild(tc);
+    }
+    /* The day in one paste-able block, offered the moment it is finished.
+     * Everything in it was on screen a second ago and about to be discarded;
+     * a person waiting for your message is the cheapest reason there is to
+     * come back tomorrow. See js/report.js.
+     *
+     * The modal comes up on its own, and the button below is how you get it
+     * back — dismissing it must not be the same as losing it. */
+    var reportData = {
+      kind: 'session',
+      dateLabel: ctx.dateLabel,
+      band: window.Profile ? window.Profile.current() : null,
+      dayNumber: ctx.dayIndex != null ? ctx.dayIndex + 1 : null,
+      unit: unitLabel(ctx),
+      lessonTitle: (r.learn || modeDef().keys.indexOf('learn') !== -1) ? focusLabel(ctx) : null,
+      lessonCanDo: ctx.lesson ? ctx.lesson.canDo : null,
+      passage: (r.comprehend && ctx.passage) ? ctx.passage : null,
+      results: r,
+      rhythm: rh
+    };
+    if (window.Report) {
+      var reopen = UI.el('button', 'ghost-btn report-reopen',
+        '📨 ' + T('Cópialo y mándaselo a Matthew', 'Copy and send to Matthew'));
+      reopen.type = 'button';
+      reopen.addEventListener('click', function () { window.Report.show(reportData); });
+      wrap.appendChild(reopen);
+      window.Report.showAfter(reportData, wrap);
     }
     wrap.appendChild(UI.el('p', 'muted', T('Hasta mañana — tomorrow rotates to new material.', 'See you tomorrow — it rotates to new material.')));
     var homeB = UI.nextBtn('← ' + T('Volver al inicio', 'Back to home'), function () { window.App.go('home'); });

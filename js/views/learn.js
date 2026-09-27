@@ -343,7 +343,7 @@ window.StageLearn = (function () {
     /* Every probe gets asked. `srs:false` marks the ones that must not join the
      * review deck, not ones to skip — filtering here meant a comprehension
      * check written for the end of the lesson was silently dropped instead. */
-    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, l.recall || [], 'grammar', done); }));
+    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, l.recall || [], 'grammar', done, ctx); }));
     host.appendChild(wrap);
   }
 
@@ -359,7 +359,7 @@ window.StageLearn = (function () {
     wrap.appendChild(UI.el('div', null, listTable(words.map(function (w) { return [w.es, w.en]; }))));
     words.forEach(function (w) { S.enrol('v:' + w.es + ':meaning'); });
     var check = words.slice(0, 6).map(function (w) { return qcItem('v:' + w.es + ':meaning', w.es, w.en); });
-    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, check, 'vocab', done); }));
+    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, check, 'vocab', done, ctx); }));
     host.appendChild(wrap);
   }
 
@@ -372,7 +372,7 @@ window.StageLearn = (function () {
     wrap.appendChild(UI.el('div', null, listTable(verbs.map(function (v) { return [v.inf, v.en]; }))));
     verbs.forEach(function (v) { S.enrol('vm:' + v.inf); });
     var check = verbs.map(function (v) { return qcItem('vm:' + v.inf, v.inf, v.en); });
-    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, check, 'verb', done); }));
+    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, check, 'verb', done, ctx); }));
     host.appendChild(wrap);
   }
 
@@ -386,11 +386,18 @@ window.StageLearn = (function () {
     host.appendChild(wrap);
   }
 
-  // Active recall over a set of items, enrolling them into review. `kind` tags
-  // the error-log entries. Shared by grammar recall, vocab days and verb days.
-  function quickCheckItems(host, items, kind, done) {
+  /* Active recall over a set of items, enrolling them into review. `kind` tags
+   * the error-log entries. Shared by grammar recall, vocab days and verb days.
+   *
+   * `ctx` is only used to leave the score behind in ctx.results.learn. Every
+   * other stage already reported its score and this one did not, so the one
+   * stage that measures whether today's teaching landed was the one stage
+   * invisible to the completion screen and to js/report.js. Optional, because
+   * nothing here needs it to run. */
+  function quickCheckItems(host, items, kind, done, ctx) {
     items = (items || []).slice();
     if (!items.length) { done(); return; }
+    var asked = 0, right = 0;
 
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
@@ -403,6 +410,7 @@ window.StageLearn = (function () {
 
     function show() {
       if (i >= items.length) {
+        if (ctx && ctx.results) ctx.results.learn = { correct: right, total: asked };
         // srs:false items are comprehension checks, not review cards — asked
         // once, never enrolled, so they cannot come back weeks later as a miss
         var kept = items.filter(function (r) { return r.srs !== false; });
@@ -419,8 +427,13 @@ window.StageLearn = (function () {
       form.appendChild(UI.el('div', 'card-front small', it.front));
       var fb = UI.el('div', 'feedback');
 
+      /* Every route out of a probe goes through here — typed-correct, wrong
+       * mcq, and Reveal — so it is the only place the score can be counted
+       * once and only once. A revealed answer counts as asked and not right,
+       * which is what revealing it means. */
       function next(good) {
         if (it.srs !== false) { S.enrol(it.id); if (!good) S.grade(it.id, false); }
+        asked++; if (good) right++;
         i++; show();
       }
       function logMiss() {

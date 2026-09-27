@@ -257,6 +257,26 @@ window.LessonRun = (function () {
       wrap.appendChild(UI.el('div', 'big-check', '✓'));
       wrap.appendChild(UI.el('h1', null, UI.t('Lección terminada', 'Lesson done')));
       wrap.appendChild(UI.el('p', 'muted', 'You worked through ' + title + ' — taught, read, applied and written.'));
+      /* Same block of paste-able text the daily session offers (js/report.js).
+       * A lesson taken on demand has no Repasar stage, so the only recall
+       * figure it can report is the quick check at the end of Aprender — which
+       * is a series of its own there and is compared only against itself. */
+      if (window.Report) {
+        var reportData = {
+          kind: 'lesson',
+          band: window.Profile ? window.Profile.current() : null,
+          lessonTitle: title,
+          lessonCanDo: lesson ? lesson.canDo : null,
+          passage: (ctx.results.comprehend && ctx.passage) ? ctx.passage : null,
+          results: ctx.results
+        };
+        var reopen = UI.el('button', 'ghost-btn report-reopen',
+          '📨 ' + UI.t('Cópialo y mándaselo a Matthew', 'Copy and send to Matthew'));
+        reopen.type = 'button';
+        reopen.addEventListener('click', function () { window.Report.show(reportData); });
+        wrap.appendChild(reopen);
+        window.Report.showAfter(reportData, wrap);
+      }
       // a tense lesson earns a drill on that tense, right now, against a clock
       if (window.Games && window.Games.tenseCard && ctx && ctx.lesson) {
         var tc = window.Games.tenseCard(ctx.lesson, back);

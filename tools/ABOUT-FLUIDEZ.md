@@ -81,15 +81,15 @@ postura antes del final del primer párrafo?") and carries a repair for each.
 `connectorFrom` takes a `minLevel` — without it, "use a contraargumentativo" is
 satisfied by `pero` and an advanced task asserts nothing.
 
-**6. Nothing is trusted; seven gates decide.** Run them all before and after any
+**6. Nothing is trusted; eight gates decide.** Run them all before and after any
 change, and **check exit codes directly** — piping to `tail` reports `tail`'s
 status and has hidden a real failure before:
 
 ```
 node tools/validate-content.js && node tools/test-checker.js \
   && node tools/lint-spanish.js && node tools/audit-verbs.js \
-  && node tools/test-essay.js && node tools/test-arcade.js \
-  && node tools/build-game-index.js --check
+  && node tools/test-essay.js && node tools/test-report.js \
+  && node tools/test-arcade.js && node tools/build-game-index.js --check
 ```
 
 - `validate-content` — ids, tags, levels, stale `tenses`, the course placing
@@ -99,6 +99,11 @@ node tools/validate-content.js && node tools/test-checker.js \
 - `lint-spanish` — accent errors, adjudicated against the engine's paradigms
 - `audit-verbs` — verb classification against 11,834 real sentences
 - `test-essay` — drives the essay screen and the session's essay cadence
+- `test-report` — drives the end-of-session report: the recall arithmetic (up,
+  down, steady against a pooled baseline), the bookkeeping (one sample a day,
+  today never in its own baseline, tiny samples shown but never recorded) and
+  the dialog. It is the one module that makes a claim ABOUT THE LEARNER, and a
+  wrong claim there is worse than a blank screen
 - `test-arcade` — 933 checks: every game deals with no corpus loaded, the board
   renders, back navigation lands, the error log retires
 - `build-game-index --check` — the precomputed question bank matches the corpus
@@ -162,6 +167,7 @@ js/session.js       the daily orchestrator
 js/views/*.js       one file per stage
 js/checker.js       constraint verification for free-written Spanish
 js/essay.js         the four-phase extended writing runner
+js/report.js        the end-of-session "copy and send to Matthew" summary
 js/gameitems.js     where every game question comes from
 js/gameround.js     one universal round (clock, combo, ghost, revisits)
 js/arcade.js        the arcade's board, stats and focus
