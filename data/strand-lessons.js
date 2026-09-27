@@ -6580,9 +6580,6 @@ window.STRAND_LESSONS = [
     { es: 'Por último, guarda los cambios.', en: 'Finally, save the changes.' }
   ],
   probes: [
-    { id: 'p:instruccionesa2:orden', kind: 'mcq',
-      q: 'What happens if you shuffle the steps in a set of instructions?',
-      options: ['nothing — order does not matter', 'they can stop working', 'they sound more formal'], answer: 1 },
     { id: 'p:instruccionesa2:modo', kind: 'mcq',
       q: 'Which verb form does Spanish use for instructions — haz, corta, añade?',
       options: ['the indicative', 'the imperative', 'the subjunctive'], answer: 1 },
@@ -6633,9 +6630,6 @@ window.STRAND_LESSONS = [
     { id: 'p:presentacionpublicaa2:estructura', kind: 'mcq',
       q: 'What are the three parts of a short talk?',
       options: ['opening, body, close', 'greeting, question, answer', 'title, picture, date'], answer: 0 },
-    { id: 'p:presentacionpublicaa2:visual', kind: 'mcq',
-      q: 'What are the slides for in a short talk?',
-      options: ['decoration', 'carrying some of the information, so your spoken Spanish carries less', 'nothing useful'], answer: 1 },
     { id: 'p:presentacionpublicaa2:cloze', kind: 'cloze',
       text: 'Hoy os voy a ___ de mi ciudad.', accept: ['hablar'] },
     { id: 'p:presentacionpublicaa2:recall', kind: 'recall',

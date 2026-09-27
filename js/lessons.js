@@ -277,11 +277,55 @@
    * and without a bracketed hint there is usually more than one right
    * answer: "___ llegar tarde." is Siento, and equally Lamento or Perdona
    * por. Marking one of those wrong, then asking again next week, is the
-   * app being wrong at the learner repeatedly. */
+   * app being wrong at the learner repeatedly.
+   *
+   * SENTENCE, not front. This said "opens its sentence" and tested only
+   * whether the gap opened the whole card, so a probe that set one sentence
+   * of context and then gapped the start of the next one walked straight
+   * past it:
+   *   "Nací en Sevilla. ___ pasé toda mi infancia."   -> Allí
+   *   "—Gracias. —A usted. ___."                      -> Adiós
+   * The first sentence says what the passage is about and nothing about
+   * which word opens the second, so Ahí and Allá are as right as Allí, and
+   * Hasta luego is as right as Adiós. Three cards, each of them the app
+   * being wrong at the learner on a schedule. A gap with a bracketed hint
+   * still passes: the hint is what pins it.
+   *
+   * ¿ AND ¡ STILL OPEN A SENTENCE THIS RULE DOES NOT TOUCH, and that is not
+   * an oversight — the first version of this widening ate 15 good cards,
+   * among them "¿___ hora es?" -> qué, "¡___ cumpleaños!" -> Feliz and
+   * "¿___ tal estás?" -> Qué. A gap is only unanswerable when nothing on
+   * either side fixes it, and in a Spanish question or exclamation the rest
+   * of the sentence fixes it completely: there is no second word that can
+   * open "___ hora es?". metalinguistic() above carries the same exemption
+   * after the same mistake in the other direction, so both rules now agree
+   * that an opening ¿ marks a sentence with a hole, not a hole with a
+   * sentence after it. */
   function ambiguousOpener(front) {
     var f = String(front || '');
     if (/\([^)]*\)/.test(f)) return false;
-    return /^(_{2,}|＿+)/.test(f.replace(/^[^\wáéíóúñ¿¡_＿]*/, ''));
+    f = f.replace(/^[^\wáéíóúñ¿¡_＿]*/, '');
+    return /(^|[.!?]\s+)[«"“\s]*(_{2,}|＿+)/.test(f);
+  }
+
+  /* THREE THINGS IS NOT ONE ANSWER. "The three reliable moves of a short
+   * public presentation" -> "introducción, desarrollo, cierre" asks the
+   * learner to type three separate words in the right order, from a prompt
+   * that names none of them. Getting two of three is a miss, so the card
+   * lapses on a day the learner remembered most of it, and the SRS reads
+   * that as forgetting.
+   *
+   * Not caught by reproducible(): that returns true immediately at three
+   * words or fewer, and a three-item list of one-word items is exactly three
+   * words. Seven cards were going into the deck this way, including two
+   * asking for "anclaje, aspectualización, puesta en relación" verbatim.
+   *
+   * Commas, not conjunctions: "pan y agua" is one answer with two nouns in
+   * it, while "bien, mal, regular, así así" is four answers in a trench
+   * coat. The lesson still asks it, where the list is on the page above and
+   * Reveal is one tap away — this only keeps it out of the deck. */
+  function listAnswer(back) {
+    return String(back || '').split(/\s*,\s*/).filter(Boolean).length >= 3;
   }
 
   /* An ENDING is not a word. "Presente: -ar ending for yo" -> "o" asks the
@@ -386,6 +430,7 @@
                  !terminology(card.back, card.front, p.kind) &&
                  !ambiguousOpener(card.front) &&
                  !morphemeOnly(card.front) &&
+                 !listAnswer(card.back) &&
                  reproducible(card.back, p.kind, card.front);
       return card;
     }));
@@ -411,6 +456,7 @@
               !terminology(r.back, r.front, probeKind) &&
               !ambiguousOpener(r.front) &&
               !morphemeOnly(r.front) &&
+              !listAnswer(r.back) &&
               reproducible(r.back, probeKind, r.front);
     });
     return l;

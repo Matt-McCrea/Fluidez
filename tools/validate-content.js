@@ -304,8 +304,53 @@ function checkProbes(l, tag) {
       ok(/^[gp]:/.test(r.id), `recall "${r.id}" (lesson ${l.id}): id must start with "g:" or "p:"`);
       ok(!recallIds.has(r.id), `recall duplicate id "${r.id}"`); recallIds.add(r.id);
       ok(r.front && r.back, `recall "${r.id}": missing front/back`);
+
+      /* WHAT REACHES THE REVIEW DECK. js/lessons.js grades every card with
+       * seven predicates and sets r.srs; a card with srs false is still
+       * asked at the end of its own lesson, where the table is on the page
+       * above it and Reveal is one tap away, and simply never becomes a
+       * flashcard. The predicates are the interesting part and nothing was
+       * checking them, so the two below are the failure modes that had
+       * actually leaked, pinned so they cannot leak again.
+       *
+       * Review TYPES the answer (js/views/review.js resolves `fixed` to
+       * mode 'type'), which is what makes both of these unanswerable
+       * rather than merely hard. */
+      if (r.srs) {
+        // Three items is not one answer: two of three right is a miss, and
+        // the card lapses on a day the learner remembered most of it.
+        ok(String(r.back).split(/\s*,\s*/).filter(Boolean).length < 3,
+           `recall "${r.id}" (lesson ${l.id}) is in the review deck with a list for an answer ` +
+           `("${r.back}") — typing three items in order is not recall`);
+        // A gap opening a sentence, with no bracketed hint, has nothing
+        // before it to pin it down: "Nací en Sevilla. ___ pasé toda mi
+        // infancia." is Allí, and equally Ahí or Allá.
+        if (!/\([^)]*\)/.test(r.front)) {
+          ok(!/(^|[.!?]\s+)[«"“\s]*(_{2,}|＿+)/.test(String(r.front).replace(/^[^\wáéíóúñ¿¡_＿]*/, '')),
+             `recall "${r.id}" (lesson ${l.id}) is in the review deck with an unhinted gap opening ` +
+             `a sentence ("${r.front}") — more than one word fits`);
+        }
+      }
     });
   });
+
+  /* …and the other direction, because the rule above has eaten good cards
+   * twice now. A gap that opens a Spanish question or exclamation IS pinned,
+   * by the rest of the sentence: nothing but "qué" opens "¿___ hora es?".
+   * Both times the fix was a sharper rule rather than a looser one, and this
+   * is what stops the next widening from being a blunter one. */
+  {
+    const pinned = ['¿___ hora es?', '¡___ cumpleaños!', '¿___ tal estás?'];
+    const byFront = {};
+    lessons.forEach(l => (l.recall || []).forEach(r => { byFront[String(r.front).trim()] = r; }));
+    pinned.forEach(f => {
+      const r = byFront[f];
+      if (!r) return;                    // the card may legitimately be rewritten
+      ok(r.srs === true,
+         `recall "${r.id}" ("${f}") was dropped from the review deck — a gap opening a ¿…? ` +
+         `or ¡…! is fixed by the rest of the sentence and belongs in review`);
+    });
+  }
   /* A seed id still has to resolve to something teachable — but "something"
    * now includes the lesson that absorbed it. Six tenses were being formed
    * twice (once by the generated ladder lesson, once by a PCIC strand lesson
