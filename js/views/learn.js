@@ -487,7 +487,14 @@ window.StageLearn = (function () {
         if (e.key !== 'Enter') return;
         e.preventDefault();
         if (revealed) { next(false); return; }
-        var r = C.checkExact(input.value, accepted, { meaning: it.kind !== 'grammar' });
+        /* Same leniency the review stage gives a lesson card: an answer the
+         * author wrote out with a slash or a bracket is accepted in the
+         * forms a person would type it in. Nothing but this card's own
+         * answer feeds it — see C.answerForms. */
+        var r = C.checkExact(input.value, accepted, {
+          meaning: it.kind !== 'grammar',
+          also: C.answerForms ? C.answerForms(it.back) : null
+        });
         if (r.pass) { fb.textContent = '¡Correcto!'; fb.className = 'feedback good'; setTimeout(function () { next(true); }, 300); }
         else { fb.textContent = r.near ? 'Nearly — accents' : 'Not quite'; fb.className = 'feedback bad'; }
       });

@@ -347,6 +347,13 @@ window.StageReview = (function () {
           if (!window.Phrases.accentCritical(R.back)) o.accents = 'lenient';
           o.also = window.Phrases.alternatives(R.front);
         }
+        /* A lesson answer written out for a reader rather than for a text
+         * box. "quizá(s)" demanded the brackets back and "encantado /
+         * encantada" demanded the slash, so both could only be failed or
+         * revealed. C.answerForms derives the forms a person would actually
+         * type, from that card's OWN answer and nothing else — see the
+         * comment there for why each rule is as narrow as it is. */
+        if (cur.kind === 'lesson' && C.answerForms) o.also = C.answerForms(R.back);
         return o;
       }
       input.addEventListener('input', function () {

@@ -101,6 +101,54 @@ ok(C.checkExact('comí', 'comí').pass === true, 'exact match passes');
 ok(C.checkExact('comi', 'comí').pass === false && C.checkExact('comi', 'comí').near === true, 'accent-missing is a near miss');
 ok(C.checkExact('  Comí ', ['fui', 'comí']).pass === true, 'trims/lowercases and accepts a list');
 
+/* --- answerForms: the answer as a person would type it ---------------------
+ *
+ * These are the forms a learner can be marked RIGHT for, so the interesting
+ * assertions are the NEGATIVE ones. Every rule here was narrowed after a
+ * first version accepted something nobody should pass on. */
+{
+  const forms = b => C.answerForms(b).map(x => x.toLowerCase());
+  const takes = (b, x, why) => ok(forms(b).indexOf(x.toLowerCase()) !== -1,
+    `answerForms("${b}") should accept "${x}" — ${why}`);
+  const refuses = (b, x, why) => ok(forms(b).indexOf(x.toLowerCase()) === -1,
+    `answerForms("${b}") must NOT accept "${x}" — ${why}`);
+
+  // an optional suffix written into the word
+  takes('quizá(s)', 'quizá', 'the bracket means the s is optional');
+  takes('quizá(s)', 'quizás', 'and the long form is equally right');
+  refuses('quizá(s)', 's', 'the bracket contents are a suffix, not an answer');
+
+  // a bracketed aside is metadata
+  takes('apellido (surname)', 'apellido', 'the gloss is for the reader, not the box');
+  takes('accent (tilde)', 'tilde', 'a one-word aside is the same answer in Spanish');
+  refuses('(Le saluda) atentamente,', 'le saluda',
+    'a multi-word aside is half a phrase, and half the phrase is not the closing');
+  takes('(Le saluda) atentamente,', 'atentamente', 'the closing itself');
+
+  // a slash separating two whole answers
+  takes('encantado / encantada', 'encantado', 'either gender is the right set phrase');
+  takes('encantado / encantada', 'encantada', 'and so is the other');
+  takes('libre/ocupado', 'libre', 'an unspaced slash in a single token is still two answers');
+  takes('de repente / de pronto', 'de pronto', 'a two-word part is short enough to be an answer');
+
+  // ...and a slash that is just punctuation inside one answer
+  refuses('¿Has aprendido/estudiado...?', 'estudiado...?', 'that is a fragment, not an answer');
+  refuses('¿Has aprendido/estudiado...?', '¿has aprendido', 'and so is the other half');
+  refuses('ser bueno para/en', 'en', 'a preposition alone answers nothing');
+  refuses('Logros o fracasos ambiciosos/competitivos', 'competitivos', 'an adjective alone is not the category');
+
+  // a plain answer is left exactly as it is — nothing here may loosen a drill
+  ok(C.answerForms('comí').length === 1, 'a plain answer derives no alternatives');
+  ok(C.answerForms('habría hablado').length === 1, 'nor does a plain two-word answer');
+  ok(C.answerForms('').length === 0, 'an empty answer derives nothing');
+
+  // and the forms actually reach checkExact through `also`
+  ok(C.checkExact('quizás', 'quizá(s)', { also: C.answerForms('quizá(s)') }).pass === true,
+     'checkExact accepts a derived form when it is passed as `also`');
+  ok(C.checkExact('quizás', 'quizá(s)').pass === false,
+     'and still refuses it when it is not — nothing is loosened globally');
+}
+
 // --- authored writing tasks (if present) are self-consistent ----------------
 try {
   load('data/writing.js');

@@ -330,6 +330,28 @@ function checkProbes(l, tag) {
              `recall "${r.id}" (lesson ${l.id}) is in the review deck with an unhinted gap opening ` +
              `a sentence ("${r.front}") — more than one word fits`);
         }
+
+        /* AN ANSWER WRITTEN OUT FOR A READER IS NOT AN ANSWER FOR A TEXT BOX.
+         * A slash or a bracket is the signal: it says "either of these" to a
+         * person and "type this exactly" to the checker. "quizá(s)" sat in
+         * the review deck demanding the brackets back, which nobody types,
+         * so the card could only ever be failed or revealed.
+         *
+         * The response is NOT to drop the card. js/checker.js answerForms
+         * derives the forms a person would type — quizá and quizás, either
+         * side of a spaced slash, the answer without its bracketed aside —
+         * and review passes them to checkExact. What has to hold is that a
+         * reasonable response EXISTS: if the derivation yields nothing but
+         * the raw string back, the punctuation is load-bearing prose rather
+         * than an "either of these", and the card is unanswerable. Six were,
+         * and the fix for each was in the content — three answers rewritten,
+         * three prose explanations vetoed out of the deck with srs:false. */
+        if (/\/|\([^)]*\)/.test(r.back) && C && C.answerForms) {
+          ok(C.answerForms(r.back).length > 1,
+             `recall "${r.id}" (lesson ${l.id}) is in the review deck demanding its own ` +
+             `punctuation back ("${r.back}") — no reasonable typed answer passes it. ` +
+             `Rewrite the answer, or set srs:false on the probe`);
+        }
       }
     });
   });

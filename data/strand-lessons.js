@@ -4787,7 +4787,7 @@ window.STRAND_LESSONS = [
     { id: 'p:preguntarconocimiento:cloze', kind: 'cloze',
       text: '¿No ___ estudiado latín?', accept: ['has'] },
     { id: 'p:preguntarconocimiento:recall', kind: 'recall',
-      front: 'Question form for something learned specifically through formal study', back: '¿Has aprendido/estudiado...?' }
+      front: 'Question form for something learned specifically through formal study', back: '¿Has estudiado...?' }
   ]
 },
 
@@ -9916,7 +9916,7 @@ window.STRAND_LESSONS = [
     { id: 'p:causalB1:sujeto', kind: 'mcq', q: '"Perdió el tren ___ llegar tarde." (same subject cause)',
       options: ['porque', 'por', 'como'], answer: 1 },
     { id: 'p:causalB1:cloze', kind: 'cloze', text: '___ no venías, empecé a cenar. (since, opening the sentence)', accept: ['Como', 'como'] },
-    { id: 'p:causalB1:recall', kind: 'recall', front: 'por + infinitivo (cause) vs para + infinitivo — what does para mark instead?', back: 'purpose/goal, not cause' }
+    { id: 'p:causalB1:recall', kind: 'recall', front: 'por + infinitivo (cause) vs para + infinitivo — what does para mark instead?', back: 'purpose' }
   ]
 },
 
@@ -11120,7 +11120,7 @@ window.STRAND_LESSONS = [
     { id: 'p:exitutilB1:bueno', kind: 'mcq', q: '"She\'s good at maths":',
       options: ['Es buena en matemáticas.', 'Es buena de matemáticas.', 'Es buena por matemáticas.'], answer: 0 },
     { id: 'p:exitutilB1:cloze', kind: 'cloze', text: '¡Me da ___ ir al cine o no! (I don\'t mind)', accept: ['igual'] },
-    { id: 'p:exitutilB1:recall', kind: 'recall', front: 'servir para vs ser bueno para — which one describes a PERSON\'s ability?', back: 'ser bueno para/en' }
+    { id: 'p:exitutilB1:recall', kind: 'recall', front: 'servir para vs ser bueno para — which one describes a PERSON\'s ability?', back: 'ser bueno para / ser bueno en' }
   ]
 },
 
@@ -17505,7 +17505,7 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:permanencia:colocacion', kind: 'mcq', q: '¿Qué adjetivo va mejor con "trabajo"?', options: ['estable', 'inmortal', 'asqueroso'], answer: 0 },
-    { id: 'p:permanencia:sobrevivir', kind: 'mcq', q: '"Sobrevivir a algo" implica...', options: ['que la cosa podría haber terminado/desaparecido', 'que la cosa es aburrida', 'que la cosa es nueva'], answer: 0 },
+    { id: 'p:permanencia:sobrevivir', kind: 'mcq', srs: false, q: '"Sobrevivir a algo" implica...', options: ['que la cosa podría haber terminado/desaparecido', 'que la cosa es aburrida', 'que la cosa es nueva'], answer: 0 },
     { id: 'p:permanencia:cloze', kind: 'cloze', text: 'El edificio ___ el terremoto sin sufrir daños. (withstood)', accept: ['resistió'] },
     { id: 'p:permanencia:recall', kind: 'recall', front: '"Fijo" suele referirse a...', back: 'un lugar u horario que no cambia' }
   ]
@@ -17813,7 +17813,7 @@ window.STRAND_LESSONS = [
     { id: 'p:facilidad:complejo', kind: 'mcq', q: '"Complejo" implica sobre todo...', options: ['muchas partes interrelacionadas', 'que requiere mucho tiempo', 'que es caro'], answer: 0 },
     { id: 'p:facilidad:verbo', kind: 'mcq', q: '¿Cuál hace que algo sea MÁS fácil para otra persona?', options: ['complicar', 'facilitar', 'resistir'], answer: 1 },
     { id: 'p:facilidad:cloze', kind: 'cloze', text: 'Tiene mucha ___ para las matemáticas. (a knack)', accept: ['facilidad'] },
-    { id: 'p:facilidad:recall', kind: 'recall', front: '"Tener facilidad para algo" describe...', back: 'una habilidad/talento personal para esa cosa' }
+    { id: 'p:facilidad:recall', kind: 'recall', srs: false, front: '"Tener facilidad para algo" describe...', back: 'una habilidad/talento personal para esa cosa' }
   ]
 },
 
@@ -24436,7 +24436,7 @@ window.STRAND_LESSONS = [
   probes: [
     { id: 'p:exitologroB2:llegaraser', kind: 'mcq', q: '¿Qué implica "llegar a ser" que "hacerse" no siempre implica?',
       options: ['Rapidez', 'Un proceso gradual, con esfuerzo', 'Casualidad'], answer: 1 },
-    { id: 'p:exitologroB2:triunfarfracasar', kind: 'mcq', q: '¿"Triunfar/fracasar" son apropiados para...?',
+    { id: 'p:exitologroB2:triunfarfracasar', kind: 'mcq', srs: false, q: '¿"Triunfar/fracasar" son apropiados para...?',
       options: ['Cualquier resultado pequeño', 'Logros o fracasos ambiciosos/competitivos', 'Solo deportes'], answer: 1 },
     { id: 'p:exitologroB2:cloze', kind: 'cloze', text: 'El proyecto ___ por falta de apoyo. (fracasar)', accept: ['fracasó'] },
     { id: 'p:exitologroB2:recall', kind: 'recall', front: '¿Qué frase describe reaching the top rankings?', back: 'alcanzar los primeros puestos' }

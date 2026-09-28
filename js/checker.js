@@ -441,6 +441,82 @@ window.Checker = (function () {
     return out;
   }
 
+  /* THE FORMS OF AN ANSWER THAT A PERSON WOULD ACTUALLY TYPE.
+   *
+   * A lesson card is checked strictly, which is right for a verb drill and
+   * wrong the moment the author wrote the answer out for a reader rather
+   * than for a text box. "quizá(s)" was in the review deck demanding the
+   * literal string quizá(s), brackets included — nobody types that, so the
+   * card could only ever be failed or revealed. Same for "encantado /
+   * encantada", "apellido (surname)" and "accent (tilde)": the answer is
+   * there, wearing punctuation that says "either of these" to a human and
+   * "type this exactly" to the checker.
+   *
+   * A SLASH OR A BRACKET IS THE SIGNAL, and the response is to accept the
+   * reasonable answer rather than to drop the card. Four rules, each kept
+   * narrow because every form added here is a form the learner can be marked
+   * RIGHT for, and a rule that is too generous passes somebody who did not
+   * know it:
+   *
+   * 1. An optional suffix — "quizá(s)", no space before the bracket — is
+   *    both quizá and quizás. The bracket's contents alone are NOT added:
+   *    that rule would accept "s".
+   * 2. A bracketed aside is metadata. "apellido (surname)" accepts apellido;
+   *    the aside on its own is accepted only when it is a SINGLE word, so
+   *    "accent (tilde)" takes tilde while "(Le saluda) atentamente" does not
+   *    take "Le saluda", which is not the closing and not an answer.
+   * 3. A slash separates whole answers only when it is SPACED, or when the
+   *    answer is a single token. "encantado / encantada" and "libre/ocupado"
+   *    are two answers; "¿Has aprendido/estudiado...?" and "ser bueno
+   *    para/en" are one answer with a slash inside it, and splitting those
+   *    yields "estudiado...?" and "en", which are not answers to anything.
+   * 4. A split part counts only if it is four words or fewer — long enough
+   *    for "de repente", short enough to keep a clause out.
+   *
+   * Only ever derived from the card's OWN answer, so nothing here can make a
+   * different answer pass. tools/validate-content.js checks that every card
+   * in the review deck with a slash or a bracket yields at least one form
+   * shorter than the raw string — a card that demands its punctuation back
+   * is a card nobody can answer. */
+  function answerForms(back) {
+    var raw = String(back == null ? '' : back).replace(/\s+/g, ' ').trim();
+    if (!raw) return [];
+    var out = [], seen = {};
+    function add(x) {
+      var t = String(x).replace(/\s+/g, ' ').replace(/\s+([,;.:])/g, '$1')
+                       .replace(/^[\s,;]+|[\s,;]+$/g, '').trim();
+      if (!t) return;
+      var k = E.normalize(t);
+      if (k && !seen[k]) { seen[k] = 1; out.push(t); }
+    }
+    add(raw);
+
+    // 1. an optional suffix written into the word itself
+    var SUFFIX = /(\S)\(([^)\s]{1,4})\)/;
+    if (SUFFIX.test(raw)) {
+      add(raw.replace(/\(([^)\s]{1,4})\)/g, ''));
+      add(raw.replace(/\(([^)\s]{1,4})\)/g, '$1'));
+    }
+    // 2. a bracketed aside
+    if (/\([^)]*\)/.test(raw)) {
+      add(raw.replace(/\([^)]*\)/g, ' '));
+      (raw.match(/\(([^)]*)\)/g) || []).forEach(function (g) {
+        var inner = g.slice(1, -1).trim();
+        if (inner && inner.split(/\s+/).length === 1 && !SUFFIX.test(raw)) add(inner);
+      });
+    }
+    // 3 + 4. either side of a slash that really is separating answers
+    if (/\//.test(raw) && (/\s\/|\/\s/.test(raw) || !/\s/.test(raw))) {
+      raw.split('/').forEach(function (part) {
+        part = part.trim();
+        if (!part || part.split(/\s+/).length > 4) return;
+        add(part);
+        add(part.replace(/\([^)]*\)/g, ' '));
+      });
+    }
+    return out;
+  }
+
   /* Punctuation is not the thing being tested. E.normalize lowercases and
    * collapses spaces, so capitals were already forgiven — but a trailing full
    * stop was not, and "Ella no tiene hambre." was marked cold-wrong against
@@ -502,5 +578,6 @@ window.Checker = (function () {
     return { pass: false, near: near };
   }
 
-  return { checkWriting: checkWriting, checkExact: checkExact, meaningAlternatives: meaningAlternatives, evaluate: evaluate, expectedForm: expectedForm };
+  return { checkWriting: checkWriting, checkExact: checkExact, meaningAlternatives: meaningAlternatives,
+    answerForms: answerForms, evaluate: evaluate, expectedForm: expectedForm };
 })();
