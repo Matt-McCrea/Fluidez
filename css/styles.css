@@ -321,34 +321,6 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
 .res-label { font-weight:650; }
 .res-note { font-size:.85rem; }
 
-/* ---- songs (Recursos › Canciones) ---- */
-.song-controls { display:flex; flex-wrap:wrap; gap:8px; margin:4px 0 12px; }
-.song-card { border:1px solid var(--border); background:var(--panel-2); border-radius:12px; padding:14px 16px; margin-bottom:12px; scroll-margin-top:12px; }
-.song-head { display:flex; flex-direction:column; gap:2px; }
-.song-title { font-size:1.15rem; font-weight:700; }
-.song-en { color:var(--muted); font-style:italic; }
-.song-artist { margin:2px 0 8px; }
-.song-about { margin:0 0 10px; }
-.song-vocab { display:flex; flex-direction:column; border-top:1px solid var(--border); }
-.song-pair { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:12px; padding:7px 0; border-bottom:1px solid var(--border); }
-.song-es { font-weight:600; overflow-wrap:anywhere; }
-.song-gloss { color:var(--muted); overflow-wrap:anywhere; }
-.song-note { margin:10px 0 0; }
-.song-links { display:flex; flex-wrap:wrap; gap:16px; margin-top:10px; }
-.song-links a { color:var(--accent); text-decoration:none; font-weight:600; }
-.song-hidden { color:transparent !important; background:var(--border); border-radius:6px; cursor:pointer; user-select:none; min-height:1.2em; }
-.song-nav { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:12px; }
-.song-lyrics { margin-top:10px; }
-.song-lyrics-details summary { cursor:pointer; font-weight:650; padding:4px 0; }
-.song-lyric-lines { margin:6px 0 8px; border-top:1px solid var(--border); }
-.song-line { padding:5px 0; }
-.song-verse-gap { height:14px; border-bottom:1px solid var(--border); }
-.song-edit { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:6px 0; }
-.song-textarea { width:100%; box-sizing:border-box; padding:10px; border:2px solid var(--border); border-radius:10px;
-  background:var(--panel); color:var(--text); font:inherit; font-size:.92rem; resize:vertical; }
-.song-lyrics .primary-btn, .song-lyrics .ghost-btn { width:auto; margin-top:0; }
-@media (max-width:480px){ .song-pair { grid-template-columns:1fr; gap:2px; }  .song-edit { grid-template-columns:1fr; } }
-
 /* ---- write space / journal ---- */
 .write-select { width:100%; padding:10px 12px; border:2px solid var(--border); border-radius:10px;
   background:var(--panel); color:var(--text); font-size:.95rem; margin-bottom:6px; }
