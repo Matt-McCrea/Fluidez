@@ -31,6 +31,8 @@ window.Settings = (function () {
     'fluidez.arcade',
     // whether today's study pack has been finished (js/study.js)
     'fluidez.study',
+    // lyrics the learner pasted into Recursos › Canciones (js/resources.js)
+    'fluidez.lyrics',
     'fluidez.onboarded', 'fluidez.voice', 'fluidez.suggest'];
   var KEEP_ON_RESET = { 'fluidez.theme': 1, 'fluidez.voice': 1 };
 
