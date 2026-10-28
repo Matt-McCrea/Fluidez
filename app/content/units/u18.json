@@ -1,0 +1,119 @@
+{
+ "id": "u18",
+ "band": "A2",
+ "title": "On the road",
+ "theme": "14. Viajes, alojamiento y transporte: bus terminals, flights, hotels, luggage, the road to Medellín",
+ "canDo": "I can travel by bus or plane, book a room, and sort out tickets, luggage and directions.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:por-para-1"
+   ],
+   "chunks": [
+    "c:buen-viaje",
+    "c:ida-y-vuelta",
+    "c:a-nombre-de"
+   ],
+   "lexemes": [],
+   "chapter": "ch048"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:por-para-1",
+    "g:cuando-indicative",
+    "x:por-para"
+   ],
+   "chunks": [
+    "c:le-ayudo",
+    "c:quieres-que-te-ayude",
+    "c:ya-llegue"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:commands-with-pronouns"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:commands-with-pronouns",
+    "g:por-para-1"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch049"
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:llevar-traer"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch050"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:possessives-stressed"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch051"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:possessives-stressed",
+    "g:commands-with-pronouns",
+    "x:mi-mio"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:por-para-1",
+    "g:commands-with-pronouns",
+    "g:possessives-stressed"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u18-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:por-para-1",
+    "g:commands-with-pronouns",
+    "g:possessives-stressed",
+    "x:pret-imp",
+    "x:por-para",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "The trip to Medellín: the Salitre bus terminal at dawn, nine hours of curves, a lost suitcase and a hotel with a view of the cable cars. Vale's family is loud, warm and talks to Tomás in a Spanish full of \"vos\" and \"pues\" that he can barely follow. Vale's mother pulls him aside: Rosa visited her once, years ago, and told her something about a brother on the coast.",
+ "quota": {
+  "bankSentences": 363,
+  "chapters": 4,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

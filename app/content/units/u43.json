@@ -1,0 +1,143 @@
+{
+ "id": "u43",
+ "band": "B2",
+ "title": "What would have happened",
+ "theme": "14 + 4: decisions, turning points, alternative histories",
+ "canDo": "I can talk about what would have happened if things had gone differently, and hedge about what probably did.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:pluperfect-subj"
+   ],
+   "chunks": [
+    "c:no-esta-nada-mal",
+    "c:ni-modo",
+    "c:que-le-vamos-a-hacer"
+   ],
+   "lexemes": [],
+   "chapter": "ch130"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:pluperfect-subj",
+    "g:softening"
+   ],
+   "chunks": [
+    "c:no-hay-nada-que-hacer",
+    "c:eso-espero",
+    "c:hacer-todo-lo-posible"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:es-una-lastima-que",
+    "p:me-decepciono-que",
+    "p:pasarla-bien-mal",
+    "p:tener-pensado-previsto",
+    "p:sonar-con-ganas",
+    "p:decidirse-atreverse-a",
+    "p:arrepentirse-de"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch131"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:conditional-perfect"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch132"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:conditional-perfect",
+    "g:pluperfect-subj"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:llevar-sin-inf",
+    "p:llegar-a-ser",
+    "p:ser-capaz-de",
+    "p:ocurrirsele",
+    "p:a-ultima-hora",
+    "p:ojala-hubiera",
+    "p:te-habria-gustado-que",
+    "p:no-deberias-haberlo-hecho",
+    "p:me-parecio-mal-que",
+    "p:siento-mucho-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:pluperfect-subj",
+    "g:conditional-perfect",
+    "g:si-past-unreal"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch133",
+   "scene": "sc-u43-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:si-past-unreal"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch134"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:si-past-unreal",
+    "g:conditional-perfect",
+    "x:si-past-present-unreal",
+    "p:salirle-bien",
+    "p:sobrevivir-a",
+    "p:habria-sido-mejor",
+    "x:llevar-gerundio-sin",
+    "x:hacerse-llegar-a-ser",
+    "x:talento-capacidad",
+    "x:deberias-vs-deberias-haber"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u43-b"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:pluperfect-subj",
+    "g:conditional-perfect",
+    "g:si-past-unreal",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "If Rosa had posted one of those letters, would Joaquín have come back? If Tomás had taken the Toronto job, which finally offered him a contract last month, where would the café be now? Everyone has a version of what would have happened. Meanwhile Yesid arrives in Bogotá, freezing, and asks if it is always this cold.",
+ "quota": {
+  "bankSentences": 618,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 5
+ }
+}

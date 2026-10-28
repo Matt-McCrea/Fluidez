@@ -1,0 +1,111 @@
+{
+ "id": "u11",
+ "band": "A1",
+ "title": "How life used to be",
+ "theme": "4. Relaciones personales + 6. Educación: childhood, school, old habits, comparing then and now",
+ "canDo": "I can describe what my life used to be like and compare it with now.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:imperfect-habitual"
+   ],
+   "chunks": [
+    "c:es-lo-mismo",
+    "c:me-quedo-con"
+   ],
+   "lexemes": [],
+   "chapter": "ch027"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:imperfect-habitual",
+    "g:direct-objects"
+   ],
+   "chunks": [
+    "c:cuando-era-nino"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:preterite-spelling-stem"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:preterite-spelling-stem",
+    "g:imperfect-habitual"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:parecerse-a",
+    "p:medir-pesar",
+    "p:dejar-de-inf"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch028"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:comparatives"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch029"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:comparatives",
+    "g:preterite-spelling-stem",
+    "p:gustar-mas-que",
+    "p:mas-de-number"
+   ],
+   "chunks": [
+    "c:en-cambio",
+    "c:no-hay-comparacion"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:imperfect-habitual",
+    "g:preterite-spelling-stem",
+    "g:comparatives"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u11-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:imperfect-habitual",
+    "g:preterite-spelling-stem",
+    "g:comparatives"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Tomás remembers Sundays at the café when he was six: he used to sit on the counter while Rosa sang, and his father used to take him to see the planes. Then they moved to Toronto and the Sundays stopped. A woman at the counter recognises him from those Sundays: Mariana Cifuentes, the neighbour's daughter, now a journalist. She is investigating why Grupo Altamira is buying every old house in the area.",
+ "quota": {
+  "bankSentences": 435,
+  "chapters": 3,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

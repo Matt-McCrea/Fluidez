@@ -1,0 +1,111 @@
+{
+ "id": "u04",
+ "band": "A1",
+ "title": "The weekend",
+ "theme": "8. Ocio + 12. Compras: the market (Paloquemao), shopping basics, past time words (ayer, anoche, el sábado)",
+ "canDo": "I can say what I did yesterday and last weekend, in order.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:preterite-ar"
+   ],
+   "chunks": [
+    "c:que-tal-el-fin",
+    "c:a-como-esta",
+    "c:me-hace-una-rebajita"
+   ],
+   "lexemes": [],
+   "chapter": "ch007"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:preterite-ar",
+    "g:ir-a-plans"
+   ],
+   "chunks": [
+    "c:algo-mas",
+    "c:aqui-tiene"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:preterite-er-ir"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:preterite-er-ir",
+    "g:preterite-ar"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:costar-pagar",
+    "p:time-pasado-que-viene",
+    "p:gracias-por",
+    "p:estar-a-price"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch008"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:preterite-ser-ir-hacer"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-er-ir"
+   ],
+   "chunks": [
+    "c:como-te-fue"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u04-a"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u04-c"
+  }
+ ],
+ "storyArc": "Saturday is chaos. On Friday Tomás went to Paloquemao market and bought forty kilos of the wrong flour; the espresso machine died at 7:05; Vale made coffee in a pot like Rosa used to. Then Hernando's taxi-driver friends arrived, then their wives, and by Sunday night they had sold three hundred tintos. Tomás writes the total on the wall: $412.000. Twenty-eight days to go.",
+ "quota": {
+  "bankSentences": 426,
+  "chapters": 2,
+  "scenes": 2,
+  "writingTasks": 3
+ }
+}

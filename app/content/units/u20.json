@@ -1,0 +1,120 @@
+{
+ "id": "u20",
+ "band": "A2",
+ "title": "Guesses and predictions",
+ "theme": "20. Geografía y naturaleza (weather, climate) + 8. Ocio: forecasts, promises, the future",
+ "canDo": "I can guess what's going on, make predictions and promises, and give advice with \"would\" and \"should\".",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:future-conjecture"
+   ],
+   "chunks": [
+    "c:puede-ser",
+    "c:supongo-que",
+    "c:a-lo-mejor"
+   ],
+   "lexemes": [],
+   "chapter": "ch055"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:future-conjecture",
+    "g:article-uses"
+   ],
+   "chunks": [
+    "c:de-pronto",
+    "c:lo-mejor-es",
+    "c:te-lo-prometo"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:future-promises"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:future-promises",
+    "g:future-conjecture",
+    "x:ir-a-future",
+    "x:future-prediction-conjecture",
+    "x:si-clause-no-future"
+   ],
+   "chunks": [
+    "c:todo-saldra-bien"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch056"
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch057"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:conditional"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch058"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:conditional",
+    "g:future-promises"
+   ],
+   "chunks": [
+    "c:yo-que-tu"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:future-conjecture",
+    "g:future-promises",
+    "g:conditional"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u20-a"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:future-conjecture",
+    "g:future-promises",
+    "g:conditional"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u20-c"
+  }
+ ],
+ "storyArc": "Simón disappears. Where can he be? With Hernando? Has someone taken him? Everyone has a theory, and Hernando promises he will find him before the rains. Three days later the parrot turns up in the lobby of Grupo Altamira's offices, shouting the only English phrase he knows: Tomás's \"I'm only here for a few months\". Vale laughs for the first time in a week.",
+ "quota": {
+  "bankSentences": 360,
+  "chapters": 4,
+  "scenes": 2,
+  "writingTasks": 3
+ }
+}

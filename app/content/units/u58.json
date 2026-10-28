@@ -1,0 +1,146 @@
+{
+ "id": "u58",
+ "band": "C1",
+ "title": "Precision",
+ "theme": "20. Geografía y naturaleza + 16: landscape, physical properties, time, change",
+ "canDo": "I can describe the physical and temporal world with native precision.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:temporal-advanced"
+   ],
+   "chunks": [
+    "c:diamante-en-bruto",
+    "c:dar-un-giro-de-180",
+    "c:frio-que-cala-los-huesos"
+   ],
+   "lexemes": [],
+   "chapter": "ch205"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:temporal-advanced",
+    "g:comparative-advanced-c1",
+    "p:agarrar-velocidad",
+    "p:dar-a",
+    "p:lo-primero-que",
+    "p:fruto-fruta",
+    "p:el-frente-la-frente",
+    "x:al-tiempo-que-a-medida-que"
+   ],
+   "chunks": [
+    "c:al-rojo-vivo",
+    "c:quedar-ensopado",
+    "c:a-la-vuelta-de-la-esquina",
+    "c:de-un-momento-a-otro"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:sin-rumbo-fijo",
+    "p:dar-marcha-atras",
+    "p:dar-un-rodeo",
+    "p:fuerte-como-un-roble",
+    "p:a-reventar",
+    "p:encarecer-abaratar",
+    "p:a-eso-de",
+    "p:a-ojo"
+   ],
+   "chunks": [
+    "c:a-simple-vista"
+   ],
+   "lexemes": [],
+   "chapter": "ch206"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:agreement-tricky"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch207"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:agreement-tricky",
+    "g:temporal-advanced"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:los-celos-los-restos",
+    "p:que-x-este",
+    "p:un-amor-de-persona",
+    "p:se-me-involuntary",
+    "p:ni-aunque",
+    "p:al-tacto",
+    "p:inclinado-torcido",
+    "p:al-alcance-de",
+    "p:a-la-altura-de",
+    "p:a-cuadras-de"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:temporal-advanced",
+    "g:agreement-tricky",
+    "g:ser-estar-c1"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch208",
+   "scene": "sc-u58-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:ser-estar-c1"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch209"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:ser-estar-c1",
+    "g:agreement-tricky"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u58-b"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:temporal-advanced",
+    "g:agreement-tricky",
+    "g:ser-estar-c1",
+    "x:pret-imp",
+    "x:por-para",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "The restoration begins: the cracked beam replaced, the original tiles cleaned, the jukebox repaired. Tomás describes every stage for the cooperative's newsletter with an engineer's precision and a poet's patience. Vale designs the new menu around Rosa's recipes, and there is a bench outside now with a small plaque for Hernando.",
+ "quota": {
+  "bankSentences": 663,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 6
+ }
+}

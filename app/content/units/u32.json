@@ -1,0 +1,134 @@
+{
+ "id": "u32",
+ "band": "B1",
+ "title": "Advice and plans",
+ "theme": "7. Trabajo + 15. Economía (small business): business plans, advice, timing",
+ "canDo": "I can give advice at different levels of directness and talk about plans that depend on when things happen.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-influence"
+   ],
+   "chunks": [
+    "c:tengo-que-pedirte-un-favor",
+    "c:me-echas-una-mano",
+    "c:lo-siento-pero-no-puedo"
+   ],
+   "lexemes": [],
+   "chapter": "ch095"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-influence",
+    "g:reported-backshift",
+    "p:confiar-en-que"
+   ],
+   "chunks": [
+    "c:otra-vez-sera",
+    "c:bueno-si-insistes",
+    "c:apurate"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:te-propongo-que",
+    "p:podriamos-deberiamos",
+    "p:tendrias-que",
+    "p:me-temo-que",
+    "p:pensar-inf",
+    "p:quedar-en"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch096"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-cuando-future"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch097"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-cuando-future",
+    "g:subj-influence",
+    "x:cuando-ind-subj",
+    "p:no-hasta",
+    "x:que-tal-si-vs-te-propongo-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:seguir-gerundio",
+    "p:decadas-siglos",
+    "p:actualmente",
+    "p:cumplir-anos",
+    "p:parecer-vs-parecerse",
+    "p:contar-dos-sentidos",
+    "p:me-haces-el-favor-de",
+    "p:te-importaria-inf"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-purpose-full"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-purpose-full",
+    "g:subj-cuando-future",
+    "x:seguir-dejar-de"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u32-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:subj-influence",
+    "g:subj-cuando-future",
+    "g:subj-purpose-full"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u32-a"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:subj-influence",
+    "g:subj-cuando-future",
+    "g:subj-purpose-full"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u32-c"
+  }
+ ],
+ "storyArc": "A lawyer, Dra. Beatriz Uribe, gives them clear advice: if they find Joaquín or his heirs, the family can claim the building and Altamira's lease is worthless. She recommends that they move fast, before the hearing. Vale writes a business plan for when the café is theirs. Tomás writes a list of everything they need to do before the lease ends.",
+ "quota": {
+  "bankSentences": 576,
+  "chapters": 3,
+  "scenes": 3,
+  "writingTasks": 4
+ }
+}

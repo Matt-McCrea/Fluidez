@@ -1,0 +1,4667 @@
+{
+ "nodes": [
+  {
+   "id": "d:explain-tense-choice",
+   "kind": "cando",
+   "title": "I can choose a tense or mood on purpose and explain why I chose it.",
+   "es": "",
+   "en": "",
+   "unit": 52,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "tacticas_pragmaticas:C1:275",
+    "tacticas_pragmaticas:C1:276",
+    "tacticas_pragmaticas:C1:277",
+    "tacticas_pragmaticas:C1:278",
+    "tacticas_pragmaticas:C1:271",
+    "tacticas_pragmaticas:C1:272",
+    "tacticas_pragmaticas:C1:273",
+    "tacticas_pragmaticas:C1:274"
+   ],
+   "sources": [
+    "task-c1-verbos",
+    "dc-indefinido-perfecto-c1",
+    "dc-imperfecto-modal-c1"
+   ],
+   "note": "Annotated-writing task: one line per finite verb saying why this tense/mood and not the nearest one."
+  },
+  {
+   "id": "d:tell-anecdote",
+   "kind": "cando",
+   "title": "I can tell an anecdote with a hook, a complication, a twist at the end and the dialogue reported inside it.",
+   "es": "",
+   "en": "",
+   "unit": 52,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "generos_discursivos:C1:784",
+    "generos_discursivos:C1:785",
+    "generos_discursivos:C1:786",
+    "generos_discursivos:C1:787",
+    "generos_discursivos:C1:788",
+    "generos_discursivos:C1:789",
+    "generos_discursivos:C1:790",
+    "generos_discursivos:C1:791",
+    "generos_discursivos:C1:792"
+   ],
+   "sources": [
+    "gn-narrativa-c1",
+    "fn-introducir-relato-atencion-c1"
+   ],
+   "note": "Five stages: situation, complication, action, resolution, final twist."
+  },
+  {
+   "id": "d:hold-the-floor",
+   "kind": "cando",
+   "title": "I can introduce a story, check that my listener is following, change the subject and close a conversation politely.",
+   "es": "",
+   "en": "",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:1239",
+    "funciones:C1:1241",
+    "funciones:C1:1242",
+    "funciones:C1:1243",
+    "funciones:C1:1245",
+    "funciones:C1:1247",
+    "funciones:C1:1264",
+    "funciones:C1:1265",
+    "funciones:C1:1266",
+    "funciones:C1:1273",
+    "funciones:C1:1274",
+    "funciones:C1:1275",
+    "funciones:C1:1276",
+    "funciones:C1:1287",
+    "funciones:C1:1288",
+    "funciones:C1:1289",
+    "funciones:C1:1290",
+    "funciones:C1:1318",
+    "funciones:C1:1319",
+    "funciones:C1:1320",
+    "funciones:C1:1321",
+    "funciones:C1:1332",
+    "funciones:C1:1333",
+    "funciones:C1:1334",
+    "funciones:C1:1337",
+    "funciones:C1:1338",
+    "funciones:C1:1339"
+   ],
+   "sources": [
+    "fn-introducir-relato-atencion-c1",
+    "fn-destacar-silencio-tema-cierre-c1",
+    "fn-estado-general-cosas-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:report-without-vouching",
+   "kind": "cando",
+   "title": "I can pass on claims and rumours without vouching for them myself.",
+   "es": "",
+   "en": "",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "tacticas_pragmaticas:C1:86",
+    "tacticas_pragmaticas:C1:87",
+    "tacticas_pragmaticas:C1:88",
+    "tacticas_pragmaticas:C1:89",
+    "tacticas_pragmaticas:C1:90",
+    "tacticas_pragmaticas:C1:91"
+   ],
+   "sources": [
+    "task-c1-decirlo",
+    "dc-citas-encubiertas-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:criticise-without-pointing",
+   "kind": "cando",
+   "title": "I can criticise or correct something firmly without pointing a finger at anyone.",
+   "es": "",
+   "en": "",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "tacticas_pragmaticas:C1:288",
+    "tacticas_pragmaticas:C1:289",
+    "tacticas_pragmaticas:C1:291",
+    "tacticas_pragmaticas:C1:295"
+   ],
+   "sources": [
+    "dc-atenuacion-c1",
+    "task-c1-decirlo"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:report-with-a-verdict",
+   "kind": "cando",
+   "title": "I can report what someone said and, through the verb I choose, show how it should be taken.",
+   "es": "",
+   "en": "",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "tacticas_pragmaticas:C1:79",
+    "tacticas_pragmaticas:C1:80",
+    "tacticas_pragmaticas:C1:81",
+    "tacticas_pragmaticas:C1:83",
+    "tacticas_pragmaticas:C1:84",
+    "tacticas_pragmaticas:C1:85"
+   ],
+   "sources": [
+    "dc-estilo-indirecto-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:rephrase",
+   "kind": "cando",
+   "title": "I can rephrase, correct myself, sum up, or set an objection aside without answering it.",
+   "es": "",
+   "en": "",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "tacticas_pragmaticas:C1:22",
+    "tacticas_pragmaticas:C1:23",
+    "tacticas_pragmaticas:C1:24",
+    "tacticas_pragmaticas:C1:25"
+   ],
+   "sources": [
+    "dc-reformuladores-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:check-what-i-heard",
+   "kind": "cando",
+   "title": "I can check what I've heard indirectly, confirm it, or let someone know I suspect what they're implying.",
+   "es": "",
+   "en": "",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:96",
+    "funciones:C1:99",
+    "funciones:C1:100",
+    "funciones:C1:102",
+    "funciones:C1:103",
+    "funciones:C1:104",
+    "funciones:C1:105",
+    "funciones:C1:106",
+    "funciones:C1:108",
+    "funciones:C1:109",
+    "funciones:C1:110",
+    "funciones:C1:112",
+    "funciones:C1:113",
+    "funciones:C1:114",
+    "funciones:C1:130",
+    "funciones:C1:131",
+    "funciones:C1:132",
+    "funciones:C1:133"
+   ],
+   "sources": [
+    "fn-pedir-confirmacion-c1",
+    "fn-confirmar-informacion-previa-c1",
+    "fn-pedir-informacion-c1",
+    "fn-dar-informacion-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:grade-certainty",
+   "kind": "cando",
+   "title": "I can say exactly how sure I am — from proven fact to hunch — and what I do and don't know.",
+   "es": "",
+   "en": "",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:277",
+    "funciones:C1:278",
+    "funciones:C1:279",
+    "funciones:C1:281",
+    "funciones:C1:282",
+    "funciones:C1:283",
+    "funciones:C1:284",
+    "funciones:C1:285",
+    "funciones:C1:286",
+    "funciones:C1:298",
+    "funciones:C1:299",
+    "funciones:C1:300",
+    "funciones:C1:301",
+    "funciones:C1:302",
+    "funciones:C1:303",
+    "funciones:C1:304",
+    "funciones:C1:311",
+    "funciones:C1:312",
+    "funciones:C1:313",
+    "funciones:C1:314",
+    "funciones:C1:317",
+    "funciones:C1:318",
+    "funciones:C1:319"
+   ],
+   "sources": [
+    "fn-certeza-evidencia-c1",
+    "fn-conocimiento-desconocimiento-c1",
+    "fn-hipotesis-posibilidad-c1",
+    "fn-recordar-olvidar-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:use-and-catch-irony",
+   "kind": "cando",
+   "title": "I can be ironic in Spanish, and I can tell when someone is being ironic with me.",
+   "es": "",
+   "en": "",
+   "unit": 54,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "tacticas_pragmaticas:C1:152",
+    "tacticas_pragmaticas:C1:153",
+    "tacticas_pragmaticas:C1:154",
+    "tacticas_pragmaticas:C1:155",
+    "tacticas_pragmaticas:C1:156",
+    "tacticas_pragmaticas:C1:158"
+   ],
+   "sources": [
+    "task-c1-ironia",
+    "dc-ironia-c1",
+    "dc-intensificacion-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:say-no-without-no",
+   "kind": "cando",
+   "title": "I can deny, refuse or contradict without a plain 'no' — from a softened 'no digo que…' to '¡ni loco!'.",
+   "es": "",
+   "en": "",
+   "unit": 54,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "tacticas_pragmaticas:C1:125",
+    "tacticas_pragmaticas:C1:126",
+    "tacticas_pragmaticas:C1:127",
+    "tacticas_pragmaticas:C1:129",
+    "tacticas_pragmaticas:C1:130",
+    "tacticas_pragmaticas:C1:131",
+    "tacticas_pragmaticas:C1:132",
+    "tacticas_pragmaticas:C1:134",
+    "tacticas_pragmaticas:C1:135",
+    "tacticas_pragmaticas:C1:136",
+    "tacticas_pragmaticas:C1:137"
+   ],
+   "sources": [
+    "dc-negacion-c1",
+    "fn-dar-informacion-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:say-it-with-force",
+   "kind": "cando",
+   "title": "I can say something with real force — or with pointed understatement — and judge people in a single image.",
+   "es": "",
+   "en": "",
+   "unit": 54,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "tacticas_pragmaticas:C1:240",
+    "tacticas_pragmaticas:C1:241",
+    "tacticas_pragmaticas:C1:242",
+    "tacticas_pragmaticas:C1:244",
+    "tacticas_pragmaticas:C1:245",
+    "tacticas_pragmaticas:C1:246",
+    "tacticas_pragmaticas:C1:247",
+    "tacticas_pragmaticas:C1:248",
+    "tacticas_pragmaticas:C1:147",
+    "tacticas_pragmaticas:C1:148",
+    "tacticas_pragmaticas:C1:149",
+    "tacticas_pragmaticas:C1:150",
+    "tacticas_pragmaticas:C1:151"
+   ],
+   "sources": [
+    "dc-intensificacion-c1",
+    "dc-focalizacion-c1",
+    "dc-metaforas-c1",
+    "dc-valores-ilocutivos-c1",
+    "task-c1-idiom"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:write-institutional",
+   "kind": "cando",
+   "title": "I can write to an institution in a consistent formal register without sounding like a form.",
+   "es": "",
+   "en": "",
+   "unit": 55,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:1",
+    "funciones:C1:2",
+    "funciones:C1:3",
+    "funciones:C1:5",
+    "funciones:C1:6",
+    "funciones:C1:7",
+    "funciones:C1:8"
+   ],
+   "sources": [
+    "task-c1-formal",
+    "fn-identificar-c1",
+    "fn-obligacion-necesidad-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:write-sales-letter",
+   "kind": "cando",
+   "title": "I can write a commercial letter that gets attention, builds interest and desire, then asks for action.",
+   "es": "",
+   "en": "",
+   "unit": 55,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "generos_discursivos:C1:402",
+    "generos_discursivos:C1:405",
+    "generos_discursivos:C1:415",
+    "generos_discursivos:C1:424",
+    "generos_discursivos:C1:428",
+    "generos_discursivos:C1:430",
+    "generos_discursivos:C1:434",
+    "generos_discursivos:C1:439",
+    "generos_discursivos:C1:442",
+    "generos_discursivos:C1:445",
+    "generos_discursivos:C1:449",
+    "generos_discursivos:C1:452",
+    "generos_discursivos:C1:454",
+    "generos_discursivos:C1:459"
+   ],
+   "sources": [
+    "gn-carta-comercial-c1",
+    "task-c1-formal"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:write-complaint",
+   "kind": "cando",
+   "title": "I can write a complaint letter that gives the context, states each problem precisely and proposes a concrete solution.",
+   "es": "",
+   "en": "",
+   "unit": 55,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "generos_discursivos:C1:504",
+    "generos_discursivos:C1:509",
+    "generos_discursivos:C1:512",
+    "generos_discursivos:C1:517",
+    "generos_discursivos:C1:520"
+   ],
+   "sources": [
+    "gn-carta-reclamacion-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:argue-essay",
+   "kind": "cando",
+   "title": "I can write a sustained argumentative essay: the contested question, my position, the strongest counter-case and an honest reservation.",
+   "es": "",
+   "en": "",
+   "unit": 56,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "generos_discursivos:C1:919",
+    "generos_discursivos:C1:920",
+    "generos_discursivos:C1:921",
+    "generos_discursivos:C1:922",
+    "generos_discursivos:C1:923",
+    "generos_discursivos:C1:924",
+    "generos_discursivos:C1:925",
+    "generos_discursivos:C1:926",
+    "generos_discursivos:C1:927",
+    "generos_discursivos:C1:956",
+    "generos_discursivos:C1:957",
+    "generos_discursivos:C1:958",
+    "generos_discursivos:C1:929",
+    "generos_discursivos:C1:934",
+    "generos_discursivos:C1:937",
+    "generos_discursivos:C1:939",
+    "generos_discursivos:C1:941",
+    "generos_discursivos:C1:944",
+    "generos_discursivos:C1:945",
+    "generos_discursivos:C1:949",
+    "generos_discursivos:C1:950",
+    "generos_discursivos:C1:952"
+   ],
+   "sources": [
+    "task-c1-ensayo",
+    "gn-argumentativa-c1",
+    "gn-argumentativa-conectores-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:write-academic",
+   "kind": "cando",
+   "title": "I can write an academic or expository text with a narrowing introduction, a stated roadmap and a conclusion that names what is still unresolved.",
+   "es": "",
+   "en": "",
+   "unit": 56,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "generos_discursivos:C1:571",
+    "generos_discursivos:C1:574",
+    "generos_discursivos:C1:582",
+    "generos_discursivos:C1:586",
+    "generos_discursivos:C1:590",
+    "generos_discursivos:C1:594",
+    "generos_discursivos:C1:608",
+    "generos_discursivos:C1:611",
+    "generos_discursivos:C1:614",
+    "generos_discursivos:C1:619",
+    "generos_discursivos:C1:624",
+    "generos_discursivos:C1:526",
+    "generos_discursivos:C1:529",
+    "generos_discursivos:C1:537",
+    "generos_discursivos:C1:541",
+    "generos_discursivos:C1:545",
+    "generos_discursivos:C1:550",
+    "generos_discursivos:C1:564",
+    "generos_discursivos:C1:567",
+    "generos_discursivos:C1:837",
+    "generos_discursivos:C1:838",
+    "generos_discursivos:C1:852",
+    "generos_discursivos:C1:854",
+    "generos_discursivos:C1:855",
+    "generos_discursivos:C1:856",
+    "generos_discursivos:C1:857",
+    "generos_discursivos:C1:860",
+    "generos_discursivos:C1:861",
+    "generos_discursivos:C1:862",
+    "generos_discursivos:C1:863"
+   ],
+   "sources": [
+    "gn-trabajo-academico-c1",
+    "gn-composicion-escrita-c1",
+    "gn-expositiva-c1",
+    "gn-generos-escritos-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:agree-disagree-nuanced",
+   "kind": "cando",
+   "title": "I can agree fully or partly, disagree softly or flatly, and concede a point before I counter it.",
+   "es": "",
+   "en": "",
+   "unit": 56,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:186",
+    "funciones:C1:188",
+    "funciones:C1:190",
+    "funciones:C1:191",
+    "funciones:C1:193",
+    "funciones:C1:195",
+    "funciones:C1:196",
+    "funciones:C1:198",
+    "funciones:C1:199",
+    "funciones:C1:200",
+    "funciones:C1:201",
+    "funciones:C1:202",
+    "funciones:C1:204",
+    "funciones:C1:205",
+    "funciones:C1:206",
+    "funciones:C1:223",
+    "funciones:C1:225",
+    "funciones:C1:228",
+    "funciones:C1:229",
+    "funciones:C1:230",
+    "funciones:C1:231",
+    "funciones:C1:232",
+    "funciones:C1:233",
+    "funciones:C1:234",
+    "funciones:C1:236",
+    "funciones:C1:237",
+    "funciones:C1:239",
+    "funciones:C1:240",
+    "funciones:C1:241",
+    "funciones:C1:242",
+    "funciones:C1:260",
+    "funciones:C1:261",
+    "funciones:C1:262",
+    "funciones:C1:268",
+    "funciones:C1:269",
+    "funciones:C1:270",
+    "funciones:C1:271"
+   ],
+   "sources": [
+    "fn-expresar-acuerdo-c1",
+    "fn-expresar-desacuerdo-c1",
+    "fn-escepticismo-contraargumento-c1",
+    "dc-atenuacion-dialogica-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:opinion-with-weight",
+   "kind": "cando",
+   "title": "I can ask for and give opinions with the right weight for the setting, from an interview to a chat.",
+   "es": "",
+   "en": "",
+   "unit": 56,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:137",
+    "funciones:C1:138",
+    "funciones:C1:139",
+    "funciones:C1:140",
+    "funciones:C1:144",
+    "funciones:C1:145",
+    "funciones:C1:146",
+    "funciones:C1:147"
+   ],
+   "sources": [
+    "fn-pedir-dar-opinion-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:speak-in-meeting",
+   "kind": "cando",
+   "title": "I can take part in a formal meeting or public debate on my own field and defend a position.",
+   "es": "",
+   "en": "",
+   "unit": 56,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "generos_discursivos:C1:88",
+    "generos_discursivos:C1:90",
+    "generos_discursivos:C1:91",
+    "generos_discursivos:C1:96",
+    "generos_discursivos:C1:102"
+   ],
+   "sources": [
+    "gn-generos-orales-c1"
+   ],
+   "note": "Lectures and sermons are reception only."
+  },
+  {
+   "id": "d:express-mixed-emotion",
+   "kind": "cando",
+   "title": "I can express a complicated or mixed emotion precisely, including through understatement and the body.",
+   "es": "",
+   "en": "",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:513",
+    "funciones:C1:514",
+    "funciones:C1:515",
+    "funciones:C1:516",
+    "funciones:C1:518",
+    "funciones:C1:519",
+    "funciones:C1:520",
+    "funciones:C1:521",
+    "funciones:C1:530",
+    "funciones:C1:531",
+    "funciones:C1:532",
+    "funciones:C1:663",
+    "funciones:C1:664",
+    "funciones:C1:665",
+    "funciones:C1:666",
+    "funciones:C1:668",
+    "funciones:C1:669",
+    "funciones:C1:670",
+    "funciones:C1:672",
+    "funciones:C1:673",
+    "funciones:C1:674",
+    "funciones:C1:675",
+    "funciones:C1:685",
+    "funciones:C1:686",
+    "funciones:C1:687"
+   ],
+   "sources": [
+    "task-c1-emocion",
+    "task-c1-idiom",
+    "fn-tristeza-placer-c1",
+    "fn-estado-animo-alegria-c1",
+    "fn-gustos-aversion-c1",
+    "fn-sorpresa-admiracion-c1",
+    "fn-afecto-sensaciones-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:regret-and-resignation",
+   "kind": "cando",
+   "title": "I can talk about regret, embarrassment, disappointment and resignation.",
+   "es": "",
+   "en": "",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:634",
+    "funciones:C1:635",
+    "funciones:C1:636",
+    "funciones:C1:637",
+    "funciones:C1:638",
+    "funciones:C1:639",
+    "funciones:C1:640",
+    "funciones:C1:646",
+    "funciones:C1:647",
+    "funciones:C1:648",
+    "funciones:C1:649",
+    "funciones:C1:650",
+    "funciones:C1:651",
+    "funciones:C1:652",
+    "funciones:C1:622",
+    "funciones:C1:623",
+    "funciones:C1:624",
+    "funciones:C1:627",
+    "funciones:C1:628",
+    "funciones:C1:629",
+    "funciones:C1:630"
+   ],
+   "sources": [
+    "fn-arrepentimiento-verguenza-c1",
+    "fn-decepcion-resignacion-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:fear-anger-relief",
+   "kind": "cando",
+   "title": "I can say how scared, fed up, angry or relieved I am at native strength.",
+   "es": "",
+   "en": "",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:564",
+    "funciones:C1:565",
+    "funciones:C1:566",
+    "funciones:C1:567",
+    "funciones:C1:568",
+    "funciones:C1:569",
+    "funciones:C1:570",
+    "funciones:C1:571",
+    "funciones:C1:572",
+    "funciones:C1:573",
+    "funciones:C1:583",
+    "funciones:C1:584",
+    "funciones:C1:585",
+    "funciones:C1:586",
+    "funciones:C1:587",
+    "funciones:C1:588",
+    "funciones:C1:589",
+    "funciones:C1:539",
+    "funciones:C1:540",
+    "funciones:C1:541",
+    "funciones:C1:545",
+    "funciones:C1:546",
+    "funciones:C1:547",
+    "funciones:C1:548",
+    "funciones:C1:549",
+    "funciones:C1:550"
+   ],
+   "sources": [
+    "fn-miedo-nerviosismo-c1",
+    "fn-hartazgo-enfado-c1",
+    "fn-empatia-alivio-esperanza-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:comfort-and-encourage",
+   "kind": "cando",
+   "title": "I can show empathy, calm someone down and push them to go for it.",
+   "es": "",
+   "en": "",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:1009",
+    "funciones:C1:1011",
+    "funciones:C1:1013",
+    "funciones:C1:1014",
+    "funciones:C1:1015",
+    "funciones:C1:1016",
+    "funciones:C1:1017",
+    "funciones:C1:1018",
+    "funciones:C1:1019",
+    "funciones:C1:1029",
+    "funciones:C1:1031",
+    "funciones:C1:1033",
+    "funciones:C1:1034",
+    "funciones:C1:1035",
+    "funciones:C1:1037"
+   ],
+   "sources": [
+    "fn-empatia-alivio-esperanza-c1",
+    "fn-tranquilizar-animar-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:wishes-plans-preferences",
+   "kind": "cando",
+   "title": "I can talk about longings, half-formed plans, firm resolutions, preferences and indifference.",
+   "es": "",
+   "en": "",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:460",
+    "funciones:C1:461",
+    "funciones:C1:462",
+    "funciones:C1:463",
+    "funciones:C1:464",
+    "funciones:C1:465",
+    "funciones:C1:466",
+    "funciones:C1:476",
+    "funciones:C1:477",
+    "funciones:C1:478",
+    "funciones:C1:479",
+    "funciones:C1:480",
+    "funciones:C1:431",
+    "funciones:C1:432",
+    "funciones:C1:433",
+    "funciones:C1:434",
+    "funciones:C1:437",
+    "funciones:C1:438",
+    "funciones:C1:439",
+    "funciones:C1:446",
+    "funciones:C1:447",
+    "funciones:C1:448",
+    "funciones:C1:449",
+    "funciones:C1:450"
+   ],
+   "sources": [
+    "fn-deseos-planes-c1",
+    "fn-preferencia-indiferencia-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:describe-precisely",
+   "kind": "cando",
+   "title": "I can describe a person, an object or a place in a structured way: anchor it, detail it, then relate it to something beyond it.",
+   "es": "",
+   "en": "",
+   "unit": 58,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "generos_discursivos:C1:627",
+    "generos_discursivos:C1:628",
+    "generos_discursivos:C1:629",
+    "generos_discursivos:C1:630",
+    "generos_discursivos:C1:631",
+    "generos_discursivos:C1:632",
+    "generos_discursivos:C1:633",
+    "generos_discursivos:C1:634",
+    "generos_discursivos:C1:635",
+    "generos_discursivos:C1:636",
+    "generos_discursivos:C1:644",
+    "generos_discursivos:C1:645",
+    "generos_discursivos:C1:732",
+    "generos_discursivos:C1:733",
+    "generos_discursivos:C1:734",
+    "generos_discursivos:C1:735",
+    "generos_discursivos:C1:736",
+    "generos_discursivos:C1:737",
+    "generos_discursivos:C1:738",
+    "generos_discursivos:C1:739",
+    "generos_discursivos:C1:740",
+    "generos_discursivos:C1:741",
+    "generos_discursivos:C1:749",
+    "generos_discursivos:C1:750"
+   ],
+   "sources": [
+    "gn-descriptiva-personas-c1",
+    "gn-descriptiva-objetos-c1",
+    "gn-descriptiva-lugares-c1",
+    "task-c1-precision"
+   ],
+   "note": "Pick objective or subjective and stay in it."
+  },
+  {
+   "id": "d:social-rituals-register",
+   "kind": "cando",
+   "title": "I can greet, answer 'how are things?', congratulate, thank, apologise, give condolences and say goodbye at the right register.",
+   "es": "",
+   "en": "",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:1044",
+    "funciones:C1:1045",
+    "funciones:C1:1046",
+    "funciones:C1:1047",
+    "funciones:C1:1048",
+    "funciones:C1:1049",
+    "funciones:C1:1128",
+    "funciones:C1:1129",
+    "funciones:C1:1131",
+    "funciones:C1:1132",
+    "funciones:C1:1133",
+    "funciones:C1:1134",
+    "funciones:C1:1140",
+    "funciones:C1:1142",
+    "funciones:C1:1143",
+    "funciones:C1:1144",
+    "funciones:C1:1151",
+    "funciones:C1:1152",
+    "funciones:C1:1153",
+    "funciones:C1:1154",
+    "funciones:C1:1110",
+    "funciones:C1:1111",
+    "funciones:C1:1112",
+    "funciones:C1:1113",
+    "funciones:C1:1115",
+    "funciones:C1:1116",
+    "funciones:C1:1121",
+    "funciones:C1:1122",
+    "funciones:C1:1123"
+   ],
+   "sources": [
+    "fn-saludar-c1",
+    "fn-responder-saludo-dirigirse-c1",
+    "fn-felicitar-despedirse-c1",
+    "fn-agradecer-pesame-c1",
+    "fn-disculparse-responder-c1",
+    "fn-estado-general-cosas-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:order-and-request-ladder",
+   "kind": "cando",
+   "title": "I can give orders and make requests anywhere on the scale from blunt to ceremonious, and answer them.",
+   "es": "",
+   "en": "",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:723",
+    "funciones:C1:724",
+    "funciones:C1:726",
+    "funciones:C1:727",
+    "funciones:C1:728",
+    "funciones:C1:729",
+    "funciones:C1:730",
+    "funciones:C1:732",
+    "funciones:C1:733",
+    "funciones:C1:734",
+    "funciones:C1:735",
+    "funciones:C1:736",
+    "funciones:C1:737",
+    "funciones:C1:738",
+    "funciones:C1:739",
+    "funciones:C1:740",
+    "funciones:C1:742",
+    "funciones:C1:753",
+    "funciones:C1:754",
+    "funciones:C1:755",
+    "funciones:C1:756",
+    "funciones:C1:757",
+    "funciones:C1:759",
+    "funciones:C1:766",
+    "funciones:C1:767",
+    "funciones:C1:768",
+    "funciones:C1:769",
+    "funciones:C1:770",
+    "funciones:C1:771",
+    "funciones:C1:776",
+    "funciones:C1:777",
+    "funciones:C1:778",
+    "funciones:C1:780",
+    "funciones:C1:806",
+    "funciones:C1:807",
+    "funciones:C1:808",
+    "funciones:C1:809",
+    "funciones:C1:811",
+    "funciones:C1:812",
+    "funciones:C1:813",
+    "funciones:C1:814",
+    "funciones:C1:816",
+    "funciones:C1:817",
+    "funciones:C1:819",
+    "funciones:C1:820",
+    "funciones:C1:821",
+    "funciones:C1:822",
+    "funciones:C1:823"
+   ],
+   "sources": [
+    "fn-orden-instruccion-c1",
+    "fn-favor-objetos-ayuda-c1",
+    "fn-repetir-orden-c1",
+    "fn-responder-orden-peticion-c1",
+    "fn-permiso-prohibicion-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:propose-accept-refuse",
+   "kind": "cando",
+   "title": "I can invite and propose, and accept or refuse with or without conditions.",
+   "es": "",
+   "en": "",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:900",
+    "funciones:C1:901",
+    "funciones:C1:902",
+    "funciones:C1:903",
+    "funciones:C1:904",
+    "funciones:C1:905",
+    "funciones:C1:906",
+    "funciones:C1:910",
+    "funciones:C1:911",
+    "funciones:C1:915",
+    "funciones:C1:916",
+    "funciones:C1:918",
+    "funciones:C1:923",
+    "funciones:C1:924",
+    "funciones:C1:925",
+    "funciones:C1:926",
+    "funciones:C1:928",
+    "funciones:C1:929",
+    "funciones:C1:935",
+    "funciones:C1:936",
+    "funciones:C1:937",
+    "funciones:C1:938",
+    "funciones:C1:939"
+   ],
+   "sources": [
+    "fn-proponer-ofrecer-confirmar-c1",
+    "fn-aceptar-rechazar-propuesta-c1",
+    "fn-permiso-prohibicion-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:advise-warn-reproach",
+   "kind": "cando",
+   "title": "I can advise, warn, threaten, reproach and offer help, and hear which of these someone is doing.",
+   "es": "",
+   "en": "",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:944",
+    "funciones:C1:945",
+    "funciones:C1:946",
+    "funciones:C1:947",
+    "funciones:C1:948",
+    "funciones:C1:949",
+    "funciones:C1:953",
+    "funciones:C1:954",
+    "funciones:C1:955",
+    "funciones:C1:956",
+    "funciones:C1:963",
+    "funciones:C1:964",
+    "funciones:C1:965",
+    "funciones:C1:966",
+    "funciones:C1:975",
+    "funciones:C1:976",
+    "funciones:C1:977",
+    "funciones:C1:978",
+    "funciones:C1:979",
+    "funciones:C1:980",
+    "funciones:C1:981",
+    "funciones:C1:993",
+    "funciones:C1:994",
+    "funciones:C1:995",
+    "funciones:C1:996",
+    "funciones:C1:997",
+    "funciones:C1:998",
+    "funciones:C1:999",
+    "funciones:C1:1001",
+    "funciones:C1:1002"
+   ],
+   "sources": [
+    "fn-aconsejar-advertir-amenazar-c1",
+    "fn-reprochar-ofrecerse-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:write-review",
+   "kind": "cando",
+   "title": "I can write a critical review in my own voice, with a clear verdict backed by evidence from the work.",
+   "es": "",
+   "en": "",
+   "unit": 60,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "generos_discursivos:C1:44",
+    "generos_discursivos:C1:116",
+    "generos_discursivos:C1:118",
+    "generos_discursivos:C1:119",
+    "generos_discursivos:C1:120",
+    "generos_discursivos:C1:127",
+    "generos_discursivos:C1:128"
+   ],
+   "sources": [
+    "gn-resena-c1",
+    "task-c1-final",
+    "gn-generos-escritos-c1",
+    "fn-valorar-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:give-presentation",
+   "kind": "cando",
+   "title": "I can give a structured public presentation: opening, hook, signposted development and a close that earns its warmth.",
+   "es": "",
+   "en": "",
+   "unit": 60,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "generos_discursivos:C1:143",
+    "generos_discursivos:C1:147",
+    "generos_discursivos:C1:156",
+    "generos_discursivos:C1:159",
+    "generos_discursivos:C1:161",
+    "generos_discursivos:C1:168",
+    "generos_discursivos:C1:178",
+    "generos_discursivos:C1:190",
+    "generos_discursivos:C1:191",
+    "generos_discursivos:C1:192",
+    "generos_discursivos:C1:194",
+    "generos_discursivos:C1:203",
+    "generos_discursivos:C1:236",
+    "generos_discursivos:C1:238",
+    "generos_discursivos:C1:249"
+   ],
+   "sources": [
+    "gn-presentacion-publica-c1",
+    "gn-presentacion-publica-c2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:approve-condemn",
+   "kind": "cando",
+   "title": "I can judge something publicly — approve it, find it in poor taste, or condemn it.",
+   "es": "",
+   "en": "",
+   "unit": 60,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "funciones:C1:153",
+    "funciones:C1:154",
+    "funciones:C1:155",
+    "funciones:C1:159",
+    "funciones:C1:160",
+    "funciones:C1:161",
+    "funciones:C1:162",
+    "funciones:C1:163",
+    "funciones:C1:164",
+    "funciones:C1:165",
+    "funciones:C1:166",
+    "funciones:C1:167"
+   ],
+   "sources": [
+    "fn-valorar-c1",
+    "fn-aprobacion-desaprobacion-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "p:imperfecto-sorpresa",
+   "kind": "pattern",
+   "title": "Surprise at what you'd assumed: ¿Tú no tenías un examen mañana?",
+   "es": "¿(Tú) no + imperfecto…? — ¿Tú no tenías un examen mañana? / Anda, ¿no te habías ido?",
+   "en": "Didn't you have…? (I'd assumed so): Don't you have an exam tomorrow? / Wait, hadn't you left?",
+   "unit": 52,
+   "requires": [
+    "g:tense-modal-uses"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:explain-tense-choice",
+    "d:check-what-i-heard"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-imperfecto-modal-c1",
+    "fn-pedir-confirmacion-c1"
+   ],
+   "note": "Imperfecto de sorpresa. Often a reproach dressed as a question (= go and study). Answering 'sí, lo tenía' misses the point. Also the excuse '¡Y yo qué sabía!' (chunk)."
+  },
+  {
+   "id": "p:imperfecto-cortesia-venia",
+   "kind": "pattern",
+   "title": "Approaching politely with the imperfect: venía a ver si…, le escribía para…",
+   "es": "Venía a + inf / Le escribía para + inf — Venía a ver si me podían atender. / Le escribía para preguntar por mi solicitud.",
+   "en": "I've come to… / I'm writing to… (softened): I was wondering if you could see me.",
+   "unit": 52,
+   "requires": [
+    "g:tense-modal-uses",
+    "g:softening"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:explain-tense-choice",
+    "d:write-institutional"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-imperfecto-modal-c1"
+   ],
+   "note": "Present in meaning; the imperfect distances the speaker from the request. Extends quería pedirle (g:softening). Do not use it for a firm statement — it sounds unsure. 'Interesarme por el estado del expediente' → in LatAm letters 'consultar el estado de mi trámite'."
+  },
+  {
+   "id": "p:perfecto-still-live",
+   "kind": "pattern",
+   "title": "An opinion that still holds about something finished: siempre he pensado que fue un error",
+   "es": "perfecto (still true now) + pretérito (closed event) — Siempre he pensado que fue un error. / Este año no he podido descansar.",
+   "en": "I've always thought it was a mistake. / I haven't been able to rest this year.",
+   "unit": 52,
+   "requires": [
+    "g:perfecto-experience",
+    "g:tense-modal-uses"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:explain-tense-choice"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-indefinido-perfecto-c1"
+   ],
+   "note": "LatAm framing: the preterite covers finished events; the perfect marks something still open or persisting. The Peninsular 'hoy he comido' default and its expressive deviations are recognition only (g:spain-pasts). Do not 'correct' LatAm speakers who use the preterite."
+  },
+  {
+   "id": "p:dativo-aspectual",
+   "kind": "pattern",
+   "title": "Doing the whole thing: me comí un pollo entero, me leí el libro en una noche",
+   "es": "me/te/se + verb + bounded object — Me leí el libro en una noche. / Se tomó dos cervezas y se fue.",
+   "en": "I read the whole book in one night. / He downed two beers and left.",
+   "unit": 52,
+   "requires": [
+    "g:reflexive-routine",
+    "g:pret-vs-imperfect"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:explain-tense-choice",
+    "d:tell-anecdote"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-deixis-c1"
+   ],
+   "note": "The 'se' needs a bounded object: *me comí pollo ✗ / me comí un pollo ✓. It adds completeness and personal involvement, not reflexivity. "
+  },
+  {
+   "id": "p:no-te-imaginas-lo-que",
+   "kind": "pattern",
+   "title": "Hooking the listener: no te imaginas lo que me pasó",
+   "es": "No te (puedes ni) imagina(s) + lo que / lo + adj + que — No te imaginas lo que me encontré al llegar. / No sabes lo mal que la pasamos.",
+   "en": "You can't imagine what I found. / You've no idea how bad it was.",
+   "unit": 52,
+   "requires": [
+    "g:lo-que-intensity"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:tell-anecdote"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-introducir-relato-atencion-c1",
+    "gn-narrativa-c1",
+    "dc-intensificacion-c1"
+   ],
+   "note": "Opens the complication stage of an anecdote. LatAm: 'la pasamos' (not 'lo pasamos')."
+  },
+  {
+   "id": "p:habria-que",
+   "kind": "pattern",
+   "title": "Softening by moving the person: habría que…, ¿y si lo dejamos…?",
+   "es": "Habría que / Convendría / Sería bueno + inf — Habría que revisarlo otra vez. / Quizás convendría replantear el enfoque. / ¿Y si lo dejamos para mañana?",
+   "en": "It ought to be checked again. / It might be wise to rethink the approach.",
+   "unit": 53,
+   "requires": [
+    "g:conditional",
+    "g:impersonal-obligation",
+    "g:si-present",
+    "g:softening"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:criticise-without-pointing",
+    "d:order-and-request-ladder"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-atenuacion-c1",
+    "fn-orden-instruccion-c1",
+    "task-c1-decirlo",
+    "dc-valores-ilocutivos-c1"
+   ],
+   "note": "The softening comes from losing the subject, not from the conditional: 'podrías revisarlo' still targets you; 'habría que revisarlo' targets nobody. Also a covert order from a boss. Sociative 'we' turns your instruction into a shared task; warm from a colleague, patronising from a stranger."
+  },
+  {
+   "id": "p:que-yo-sepa",
+   "kind": "pattern",
+   "title": "Limiting a claim to what you know: que yo sepa, que yo recuerde",
+   "es": "que yo + sepa / recuerde / tenga entendido; si mal no recuerdo — Que yo sepa, no ha llamado nadie. / Que yo recuerde, la reunión era a las cinco.",
+   "en": "As far as I know, nobody's called. / As far as I remember, the meeting was at five.",
+   "unit": 53,
+   "requires": [
+    "g:subj-doubt",
+    "g:hedging-distance"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:grade-certainty",
+    "d:report-without-vouching"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-negacion-c1",
+    "fn-recordar-olvidar-c1"
+   ],
+   "note": "Fixed subjunctive in a restrictive 'que'. Never *que yo sé. 'Que yo sepa, no' = a cautious denial."
+  },
+  {
+   "id": "p:tengo-entendido-que",
+   "kind": "pattern",
+   "title": "Fishing for confirmation: tengo entendido que…",
+   "es": "Tengo entendido que / Me contaron que / Supe por X que + indicative — Tengo entendido que se aplazó la reunión. / Supe por Marta que se mudan el otro mes.",
+   "en": "I understand that the meeting was postponed. / I heard from Marta that you're moving next month.",
+   "unit": 53,
+   "requires": [
+    "g:that-clauses"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:check-what-i-heard",
+    "d:report-without-vouching"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-pedir-confirmacion-c1"
+   ],
+   "note": "A statement that invites confirmation or denial — no question mark needed. Source's 'he sabido… os mudáis' converted to LatAm preterite + ustedes. Suspicion counterpart: '¿No estarás insinuando que…?' (future of conjecture as reproach)."
+  },
+  {
+   "id": "p:imperfecto-citativo",
+   "kind": "pattern",
+   "title": "Passing on news you won't vouch for: Ernesto llegaba mañana",
+   "es": "imperfect for a reported present/future event — Ernesto llegaba mañana de Medellín, ¿no? / El concierto era el sábado, según me dicen.",
+   "en": "Ernesto's arriving tomorrow (or so I'm told). / The concert's on Saturday, apparently.",
+   "unit": 53,
+   "requires": [
+    "g:tense-modal-uses",
+    "g:hedging-distance"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:report-without-vouching"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-citas-encubiertas-c1"
+   ],
+   "note": "Not a past tense; 'llegaba mañana' is about tomorrow. Withholds the speaker's commitment. Used for your own claims it sounds evasive."
+  },
+  {
+   "id": "p:verbo-que-interpreta",
+   "kind": "pattern",
+   "title": "Reporting with a verdict: me soltó que…, me reprochó que…",
+   "es": "soltar que + indic / aclarar que + indic / reprochar que + subj / insinuar que + indic — Me soltó que ya se encargaría otro. / Me reprochó que no hubiera ido.",
+   "en": "He came out with the fact that someone else would handle it. / She reproached me for not going.",
+   "unit": 53,
+   "requires": [
+    "g:reporting-verbs-mood",
+    "g:reported-speech-full"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:report-with-a-verdict"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-estilo-indirecto-c1"
+   ],
+   "note": "The reporting verb is YOUR characterisation and you can be held to it. Some verbs (cantar, recitar) only take direct speech. Imperatives report as subjunctive, never infinitive: *me dijo llamarlo."
+  },
+  {
+   "id": "p:el-x-de-y",
+   "kind": "pattern",
+   "title": "Slipping in your opinion: el bobo de mi hermano, el tipo ese",
+   "es": "el/la + evaluative noun/adj + de + person — El bobo de mi hermano se olvidó las llaves. / La pobre de Ana no sabía nada. / No me hables del tipo ese. / ¿Y ese qué se cree?",
+   "en": "My idiot brother forgot the keys. / Poor Ana didn't know a thing.",
+   "unit": 53,
+   "requires": [
+    "g:article-uses",
+    "g:demonstratives"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:report-with-a-verdict",
+    "d:say-it-with-force"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-estilo-indirecto-c1",
+    "dc-deixis-c1",
+    "fn-identificar-c1"
+   ],
+   "note": "The article agrees with the person: el bobo de Ana? no — la boba de Ana. Source 'el canalla de Alberto' kept as a model; 'bobo' is the everyday LatAm insult. Postposed 'ese' is pejorative only with people."
+  },
+  {
+   "id": "p:en-cualquier-caso",
+   "kind": "pattern",
+   "title": "Setting objections aside: en cualquier caso, de todos modos",
+   "es": "En cualquier caso / De todos modos / En todo caso, + conclusion — Es caro y queda lejos. —En cualquier caso, es la única opción. / Al fin y al cabo, nadie lo obligó a firmar.",
+   "en": "It's expensive and far away. —In any case, it's the only option.",
+   "unit": 53,
+   "requires": [
+    "g:reformulation"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:rephrase"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-reformuladores-c1"
+   ],
+   "note": "Distancing reformulator: concedes everything said might be true and rules it irrelevant. It does not answer the objection — can read as evasive. Recapitulative cousins: al fin y al cabo, en resumidas cuentas, en pocas palabras (sum up rather than dismiss)."
+  },
+  {
+   "id": "p:o-sea-que",
+   "kind": "pattern",
+   "title": "Drawing the conclusion out loud: o sea que no vienes",
+   "es": "O sea que + conclusion / Mejor dicho, … — O sea que no vienes. / O sea que todo fue culpa mía, ¿no?",
+   "en": "So you're not coming, then. / So it was all my fault, was it?",
+   "unit": 53,
+   "requires": [
+    "g:reformulation"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:rephrase",
+    "d:check-what-i-heard"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-reformuladores-c1"
+   ],
+   "note": "LatAm equivalent of Peninsular 'Vamos, que…'. Infers the point behind what the other person said. Overused 'o sea' marks a vague speaker; in reports use 'es decir'. Rectifiers 'mejor dicho / más bien' REPLACE what was said ('No es tímido; más bien es reservado') — not softeners."
+  },
+  {
+   "id": "p:sin-animo-de",
+   "kind": "pattern",
+   "title": "Announcing a disagreement before you make it: sin ánimo de ofender…",
+   "es": "Sin ánimo de + inf / Con todo respeto / Si me permite la observación, … — Sin ánimo de contradecirlo, creo que hay un error. / Con todo respeto, el cálculo no está bien.",
+   "en": "With no wish to contradict you, I think there's a mistake.",
+   "unit": 53,
+   "requires": [
+    "g:softening"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:agree-disagree-nuanced",
+    "d:criticise-without-pointing"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-atenuacion-dialogica-c1"
+   ],
+   "note": "Formal flags that disagreement follows — stronger than they look. Among friends they sound sarcastic. Casual cousin: 'No es por nada, pero…' (chunk). Plead uncertainty: 'Puede que me equivoque, pero…'."
+  },
+  {
+   "id": "p:no-digo-que-pero",
+   "kind": "pattern",
+   "title": "Denying an accusation nobody made: no digo que esté mal, pero…",
+   "es": "(Yo) no digo que + subj, pero… — No digo que esté mal, pero yo no lo haría. / No, si yo no digo que sea mala, pero es muy larga.",
+   "en": "I'm not saying it's wrong, but I wouldn't do it.",
+   "unit": 53,
+   "requires": [
+    "g:subj-perception-negated"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:agree-disagree-nuanced",
+    "d:say-no-without-no"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-atenuacion-dialogica-c1",
+    "dc-negacion-c1",
+    "fn-expresar-acuerdo-c1",
+    "fn-escepticismo-contraargumento-c1",
+    "fn-expresar-desacuerdo-c1"
+   ],
+   "note": "Always subjunctive: *no digo que está mal. The 'pero' half is the real message. The 'No, si yo no digo que…' variant is the veiled negation (negación velada). Cousin: 'No se puede decir que no lo haya intentado' (qualifies without denying)."
+  },
+  {
+   "id": "p:no-me-cabe-duda",
+   "kind": "pattern",
+   "title": "Certainty you can stand behind: no me cabe la menor duda de que…",
+   "es": "No me cabe (la menor) duda de que / Me consta que / Es innegable que + indic — No me cabe la menor duda de que actuó de buena fe. / Me consta que lo avisaron.",
+   "en": "I haven't the slightest doubt he acted in good faith. / I know for a fact they told him.",
+   "unit": 53,
+   "requires": [
+    "g:that-clauses"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:grade-certainty"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-certeza-evidencia-c1",
+    "dc-intensificacion-c1"
+   ],
+   "note": "'Me consta' = I have evidence; stronger and more formal than 'estoy seguro'."
+  },
+  {
+   "id": "p:juraria-que",
+   "kind": "pattern",
+   "title": "Strong but unverified: juraría que…, sospecho que…",
+   "es": "Juraría que / Sospecho que / Me da la impresión de que + indic — Juraría que dejé las llaves en la mesa. / Sospecho que no nos está contando todo.",
+   "en": "I could swear I left the keys on the table. / I suspect he isn't telling us everything.",
+   "unit": 53,
+   "requires": [
+    "g:conditional"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:grade-certainty"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-certeza-evidencia-c1",
+    "fn-pedir-dar-opinion-c1"
+   ],
+   "note": "Subjective certainty that may be wrong. 'Sospechar' usually leans negative. Lexical trio for authors: intuir (no reasoning), prever (from evidence, conj. like ver), presentir (premonition)."
+  },
+  {
+   "id": "p:no-tengo-tan-claro",
+   "kind": "pattern",
+   "title": "Doubting or challenging a claim: no tengo tan claro que…, pongo en duda que…",
+   "es": "No tengo (tan) claro que / Pongo en duda que / Cuestiono que + subj — No tengo tan claro que sea la mejor solución. / El informe pone en duda que la medida funcione.",
+   "en": "I'm not so sure it's the best solution. / The report questions whether the measure works.",
+   "unit": 53,
+   "requires": [
+    "g:subj-doubt"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:grade-certainty",
+    "d:agree-disagree-nuanced"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-certeza-evidencia-c1",
+    "fn-escepticismo-contraargumento-c1"
+   ],
+   "note": "'Cuestionar/poner en duda' actively challenges; 'no tener claro' only doubts. 'Tengo mis dudas' (chunk) is the softest. Softest: 'Tengo mis dudas (al respecto)'; 'No me convence del todo'."
+  },
+  {
+   "id": "p:para-mi-que",
+   "kind": "pattern",
+   "title": "A personal hunch: para mí que…",
+   "es": "Para mí que + indic — Para mí que aquí pasa algo raro. / Para mí que no sabe nada.",
+   "en": "If you ask me, something odd is going on.",
+   "unit": 53,
+   "requires": [
+    "g:that-clauses"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:grade-certainty"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-hipotesis-posibilidad-c1"
+   ],
+   "note": "Colloquial, very common in LatAm. Not a reasoned opinion — a suspicion you can't prove."
+  },
+  {
+   "id": "p:cabe-la-posibilidad",
+   "kind": "pattern",
+   "title": "Possibility in formal terms: cabe la posibilidad de que…",
+   "es": "Cabe la posibilidad de que / Pudiera ser que / No se descarta que + subj — Cabe la posibilidad de que se retrase el vuelo. / No se descarta que haya más afectados.",
+   "en": "There is a possibility the flight may be delayed. / Further victims cannot be ruled out.",
+   "unit": 53,
+   "requires": [
+    "g:subj-doubt"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:grade-certainty"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-hipotesis-posibilidad-c1"
+   ],
+   "note": "Formal/objective; 'pudiera ser que' is slightly literary. 'No se descarta que' is the press formula."
+  },
+  {
+   "id": "p:conocimiento-formal",
+   "kind": "pattern",
+   "title": "Knowing and not knowing, formally: tenemos conocimiento de…, desconocemos…",
+   "es": "Tener conocimiento de que / Desconocer + noun / Lo ignoro — Tenemos conocimiento de que se detectaron varios casos. / Desconocemos el paradero de los responsables.",
+   "en": "We are aware that several cases were detected. / The whereabouts of those responsible are unknown.",
+   "unit": 55,
+   "requires": [
+    "g:that-clauses"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:grade-certainty",
+    "d:write-institutional"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-conocimiento-desconocimiento-c1"
+   ],
+   "note": "'Ignorar' here means not to know (not to ignore someone). Colloquial counterpart: '¿Supiste lo de…?' (see p:lo-de-noun)."
+  },
+  {
+   "id": "p:como-que-echo",
+   "kind": "pattern",
+   "title": "Echoing what they said: ¡¿Cómo que no vienes?!, ¿Que si me gusta?",
+   "es": "¡¿Cómo que + what they said?! (¡Pero) si + fact! — ¡¿Cómo que no vienes?! ¡Si lo prometiste! / ¿Cómo que me calle? / ¿Que si me gusta? ¡Me encanta!",
+   "en": "What do you mean you're not coming?! You promised!",
+   "unit": 54,
+   "requires": [
+    "g:emphatic-structures",
+    "g:indirect-questions"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-no-without-no",
+    "d:check-what-i-heard",
+    "d:say-it-with-force"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-dar-informacion-c1",
+    "dc-valores-ilocutivos-c1",
+    "dc-intensificacion-c1",
+    "fn-responder-orden-peticion-c1"
+   ],
+   "note": "Repeats the other's words almost literally, then corrects with 'si…'. Works on affirmative and negative statements and on orders. Also '¿Que no ha llovido? Imposible.' '¿Que si…?' echoes an understood question to launch an emphatic answer (echo recapitulativo)."
+  },
+  {
+   "id": "p:que-si-que-si",
+   "kind": "pattern",
+   "title": "Insisting: que sí, mamá, que sí",
+   "es": "Que sí/no + (statement), que sí/no — Que sí, mamá, que ya te llamo. / Que no llovió, hombre, que no.",
+   "en": "Yes, Mum, I SAID I'll call you. / It didn't rain, I'm telling you.",
+   "unit": 54,
+   "requires": [
+    "g:emphatic-structures"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-it-with-force",
+    "d:check-what-i-heard"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-intensificacion-c1",
+    "fn-dar-informacion-c1",
+    "fn-confirmar-informacion-previa-c1"
+   ],
+   "note": "Presupposes it's been said before: impatient repetition. Colloquial only."
+  },
+  {
+   "id": "p:ser-un-noun",
+   "kind": "pattern",
+   "title": "Judging a person in one noun: es un lince, es una fiera",
+   "es": "ser + un/una + evaluative noun (+ para + noun/inf) — Es una fiera para los números. / Ese man es un lince. / Es un gallina, no se atreve.",
+   "en": "She's a whiz with numbers. / That guy's razor-sharp. / He's a chicken.",
+   "unit": 54,
+   "requires": [
+    "g:article-uses",
+    "g:adjective-agreement"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-it-with-force"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-metaforas-c1",
+    "fn-habilidad-c1"
+   ],
+   "note": "The article agrees with the PERSON: un gallina (a man). Spain's 'es un plomo/un hacha' → LatAm 'es un crack', Colombian 'es un teso/una tesa para…' (story dialogue/recognition); 'man' is Colombian slang."
+  },
+  {
+   "id": "p:ironic-praise",
+   "kind": "pattern",
+   "title": "Praise nobody could mean: ¡Qué detalle! / Gracias por tu ayuda…",
+   "es": "over-generous praise/thanks in a context that refutes it — ¡Qué detalle avisarme con tanta anticipación! / Gracias por tu ayuda, no sé qué habría hecho sin ti.",
+   "en": "How thoughtful to warn me so far ahead! / Thanks for your help, I don't know what I'd have done without you.",
+   "unit": 54,
+   "requires": [
+    "g:exclamations"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:use-and-catch-irony"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-ironia-c1",
+    "task-c1-ironia"
+   ],
+   "note": "If every word makes sense and the sentence clashes with the facts, assume irony. Among friends it's affectionate. Formal version: 'Cabe felicitar a los responsables por su extraordinaria previsión.' Peninsular '¡Menudo/vaya negocio!' → LatAm '¡Tremendo negocio!' / '¡Qué negociazo!' said ironically."
+  },
+  {
+   "id": "p:como-viene-tanto",
+   "kind": "pattern",
+   "title": "Trailing off ironically: Sí, como viene tanto…",
+   "es": "Sí, como + obviously false claim… — —Pídele ayuda a Javier. —Sí, como ayuda tanto… / Sí, claro, como siempre llega a tiempo…",
+   "en": "Yeah, since he helps SO much…",
+   "unit": 54,
+   "requires": [
+    "g:cause-result"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:use-and-catch-irony"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-ironia-c1",
+    "task-c1-ironia"
+   ],
+   "note": "The unsaid half carries the meaning; the voice falls away. Trailing off is deliberate, not a failure to finish. Cousins: 'Ya, claro.' / 'No, y encima…'."
+  },
+  {
+   "id": "p:suspended-intensifier",
+   "kind": "pattern",
+   "title": "Leaving it hanging: ¡Hacía un frío…! ¡Tengo unos nervios…!",
+   "es": "¡+ tanto/un(a) + noun…! (result unsaid) — ¡Llovía tanto aquella tarde…! / ¡Tengo unos nervios que ni te imaginas! / ¡Hacía un frío…!",
+   "en": "It was raining SO hard that afternoon…! / I'm SO nervous!",
+   "unit": 54,
+   "requires": [
+    "g:consequence-connectors"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-it-with-force",
+    "d:express-mixed-emotion"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-intensificacion-c1",
+    "fn-miedo-nerviosismo-c1"
+   ],
+   "note": "The consequence clause is cut off; the silence does the work. A suspended comparative with rising tone ('Javier es más chistoso…') means the opposite."
+  },
+  {
+   "id": "p:el-frio-que-hace",
+   "kind": "pattern",
+   "title": "Exclaiming with the article: no sabes el frío que hace",
+   "es": "(No sabes / ¡Mira!) + el/la/los + noun + que + verb — No sabes el frío que hace afuera. / ¡La cara que puso cuando se lo dijiste! / ¡La cantidad de gente que había!",
+   "en": "You've no idea how cold it is out there. / The face he pulled!",
+   "unit": 54,
+   "requires": [
+    "g:lo-que-intensity"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-it-with-force"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-intensificacion-c1",
+    "dc-focalizacion-c1"
+   ],
+   "note": "Noun version of 'lo difícil que es'. Spain's '¡La de cosas que…!' → LatAm '¡La cantidad de cosas que…!'. 'Afuera' is LatAm for 'ahí fuera'."
+  },
+  {
+   "id": "p:como-me-entere",
+   "kind": "pattern",
+   "title": "A threat left hanging: como me entere de que…",
+   "es": "Como + subj…, (ya verás) — Como me entere de que no fuiste a clase… / Como no me devuelvas la plata esta semana, se acabó.",
+   "en": "If I find out you didn't go to class… / If you don't pay me back this week, that's it.",
+   "unit": 54,
+   "requires": [
+    "g:mood-choice-fine"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:advise-warn-reproach",
+    "d:say-it-with-force"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-intensificacion-c1",
+    "fn-aconsejar-advertir-amenazar-c1",
+    "dc-imperfecto-modal-c1"
+   ],
+   "note": "'Como' + subjunctive = condition-as-threat (always subj; 'como' + indic is causal). Left unfinished, the silence completes the threat. Also 'Como se haya olvidado, no llegamos' (como + perfect subj)."
+  },
+  {
+   "id": "p:ni-emphatic",
+   "kind": "pattern",
+   "title": "Refusing with 'ni': ni pensarlo, ni una palabra, ni siquiera",
+   "es": "ni + inf / ni + noun / ni siquiera — —¿Vamos a cine? —Ni pensarlo, mañana madrugo. / Ni una palabra a nadie. / —¿Estás triste? —Ni siquiera.",
+   "en": "No way, I'm up early tomorrow. / Not a word to anyone. / —Are you sad? —Not even that.",
+   "unit": 54,
+   "requires": [
+    "g:negation-words"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-no-without-no",
+    "d:propose-accept-refuse"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-negacion-c1",
+    "fn-responder-orden-peticion-c1",
+    "fn-aceptar-rechazar-propuesta-c1"
+   ],
+   "note": "Escalating refusals: ni hablar < ni loco < ni amarrado (LatAm for Spain's 'ni atado'). Bare 'Ni siquiera' denies even the premise. LatAm 'ir a cine' (no article) is Colombian. Also 'ni mucho menos', 'para nada', 'ni por asomo'."
+  },
+  {
+   "id": "p:la-menor-idea",
+   "kind": "pattern",
+   "title": "Words that need a 'no': no tengo la menor idea, en mi vida…",
+   "es": "no + verb + la menor idea / gran cosa / en mi vida / el más mínimo… — No tengo la menor idea de qué pasa. / No es gran cosa. / En mi vida había visto algo así.",
+   "en": "I haven't the faintest idea. / It's no big deal. / Never in my life had I seen anything like it.",
+   "unit": 54,
+   "requires": [
+    "g:negation-words"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-no-without-no"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-negacion-c1",
+    "fn-conocimiento-desconocimiento-c1"
+   ],
+   "note": "Negative-polarity items: *lo he visto en mi vida is ungrammatical. Fronted 'en mi vida' replaces 'no'. Strongest colloquial: 'No tengo ni la más remota idea'."
+  },
+  {
+   "id": "p:en-modo-alguno",
+   "kind": "pattern",
+   "title": "Negating in formal writing: en modo alguno, en ningún momento",
+   "es": "En modo alguno / En ningún momento / En parte alguna + verb (no 'no') — En modo alguno vamos a permitir que se cancele el proyecto. / En ningún momento se informó a los afectados.",
+   "en": "Under no circumstances will we allow… / At no point were those affected informed.",
+   "unit": 55,
+   "requires": [
+    "g:negation-words"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-no-without-no",
+    "d:write-institutional"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-negacion-c1"
+   ],
+   "note": "Postposed 'alguno' = 'ninguno'. Literary/formal; in speech use plain 'no'."
+  },
+  {
+   "id": "p:si-algo-es",
+   "kind": "pattern",
+   "title": "Isolating the one thing: si algo tengo claro es que…",
+   "es": "Si algo/alguien/de algo + verb…, es/fue + focus — Si algo tengo claro es que no vuelvo. / Si de algo estoy seguro es de su honestidad.",
+   "en": "If there's one thing I'm sure of, it's that I'm not going back.",
+   "unit": 54,
+   "requires": [
+    "g:cleft-focus"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-it-with-force",
+    "d:argue-essay"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-rematizacion-tematizacion-c1"
+   ],
+   "note": "Conditional equational structure: presupposes the rest is known and spotlights one item. Watch the preposition repeat: de algo… es de…"
+  },
+  {
+   "id": "p:como-es-que",
+   "kind": "pattern",
+   "title": "Asking why, with surprise: ¿cómo es que…?, ¿a qué viene…?",
+   "es": "¿Cómo es que + indic? / ¿Cómo se explica que + subj? — ¿Cómo es que no viniste el sábado? / ¿Cómo se explica que nadie avisara a tiempo? / ¿A qué viene esa cara larga? / ¿A qué se debe el retraso? (neutral, formal)",
+   "en": "How come you didn't come on Saturday? / How can it be explained that nobody warned in time?",
+   "unit": 54,
+   "requires": [
+    "g:questions",
+    "g:subj-value",
+    "g:questions-prepositions"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:check-what-i-heard"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-pedir-informacion-c1"
+   ],
+   "note": "'¿Y eso?' (chunk) is the short form. The formal version takes the subjunctive. '¿A qué viene…?' = surprise/reproach; '¿A qué se debe…?' = neutral cause."
+  },
+  {
+   "id": "p:empenarse-en",
+   "kind": "pattern",
+   "title": "A question that is really a criticism: ¿Por qué te empeñas en…?",
+   "es": "¿Por qué te empeñas en + inf? / ¿Es que no te cae bien? — ¿Por qué te empeñas siempre en ser tan pesimista? / Fuiste duro con él. ¿Es que no te cae bien?",
+   "en": "Why do you insist on being so pessimistic? / You were hard on him. Don't you like him?",
+   "unit": 54,
+   "requires": [
+    "g:verbs-prepositions"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:advise-warn-reproach",
+    "d:say-it-with-force"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-valores-ilocutivos-c1"
+   ],
+   "note": "Marked only by falling intonation and speed; on paper it looks neutral. '¿Es que…?' proposes the listener's hidden reason and doubts it at once."
+  },
+  {
+   "id": "p:el-suscrito",
+   "kind": "pattern",
+   "title": "Identifying yourself in official writing: el suscrito, los abajo firmantes",
+   "es": "El/La suscrito/a / Los abajo firmantes + hacer constar que / certificar que — El suscrito certifica que la señora Pérez trabaja en esta entidad. / Los abajo firmantes hacemos constar nuestro desacuerdo.",
+   "en": "The undersigned certifies that… / We, the undersigned, record our disagreement.",
+   "unit": 55,
+   "requires": [
+    "g:formal-letter-grammar"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-institutional"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-identificar-c1",
+    "dc-deixis-c1",
+    "dc-estilo-indirecto-c1"
+   ],
+   "note": "'El suscrito' is the standard Colombian certificate/legal formula ('el que suscribe' is the Peninsular/general variant). Strictly written; in speech it's ironic."
+  },
+  {
+   "id": "p:en-relacion-con",
+   "kind": "pattern",
+   "title": "Opening a formal letter: en relación con…, con respecto a…",
+   "es": "En relación con / Con respecto a / En atención a + noun, … — En relación con su comunicación del 3 de mayo, les informamos que… / Les escribo con respecto al pedido n.º 4521.",
+   "en": "With reference to your letter of 3 May… / I'm writing regarding order no. 4521.",
+   "unit": 55,
+   "requires": [
+    "g:formal-letter-grammar",
+    "g:nominalisation"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-institutional",
+    "d:write-complaint",
+    "d:write-sales-letter"
+   ],
+   "pcic": [],
+   "sources": [
+    "task-c1-formal",
+    "gn-carta-reclamacion-c1"
+   ],
+   "note": "Contextualise (date, order, contract number) before the complaint or request."
+  },
+  {
+   "id": "p:solicitar",
+   "kind": "pattern",
+   "title": "Formal requests: solicito…, solicitamos su autorización para…",
+   "es": "Solicito + noun / Solicito su autorización para + inf / Solicito que + subj — Solicito la revisión del expediente. / Solicitamos su autorización para usar su nombre. / Solicito la sustitución de la unidad defectuosa en un plazo máximo de diez días hábiles.",
+   "en": "I request a review of the file. / We request your permission to use your name.",
+   "unit": 55,
+   "requires": [
+    "g:formal-letter-grammar",
+    "g:subj-influence",
+    "g:nominalisation"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-institutional",
+    "d:order-and-request-ladder",
+    "d:write-complaint"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-permiso-prohibicion-c1",
+    "fn-identificar-c1",
+    "task-c1-formal",
+    "gn-carta-reclamacion-c1",
+    "fn-proponer-ofrecer-confirmar-c1"
+   ],
+   "note": "Institutional register; the nominalised object (la revisión de…) is the C1 touch. In a complaint, end with the concrete remedy + deadline; 'días hábiles' is LatAm standard. Formal proposal: 'Me permito sugerirles que + subj'."
+  },
+  {
+   "id": "p:se-ruega",
+   "kind": "pattern",
+   "title": "Instructions without an author: se ruega…",
+   "es": "Se ruega + inf / Se ruega a + group + que + subj — Se ruega no fumar en las instalaciones. / Se ruega a los asistentes que apaguen el celular.",
+   "en": "Please refrain from smoking. / Attendees are asked to switch off their phones.",
+   "unit": 55,
+   "requires": [
+    "g:se-impersonal",
+    "g:subj-influence"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-institutional",
+    "d:criticise-without-pointing"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-atenuacion-c1",
+    "fn-destacar-silencio-tema-cierre-c1"
+   ],
+   "note": "Notices and ceremonies. Peninsular 'móvil' → 'celular'."
+  },
+  {
+   "id": "p:no-dude-en",
+   "kind": "pattern",
+   "title": "Offering service formally: no dude en…, quedamos a su disposición",
+   "es": "No dude en + inf / Quedamos a su disposición para + noun/inf — No dude en contactarnos si surge cualquier problema. / Estoy a su disposición para cualquier consulta.",
+   "en": "Don't hesitate to contact us. / I am at your disposal for any query.",
+   "unit": 55,
+   "requires": [
+    "g:negative-commands",
+    "g:commands-usted"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-sales-letter",
+    "d:advise-warn-reproach"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-reprochar-ofrecerse-c1",
+    "gn-carta-comercial-c1"
+   ],
+   "note": "Formal; the warm counterpart is 'Cuenta conmigo' (chunk). Colombian business close: 'Quedo atento' (chunk)."
+  },
+  {
+   "id": "p:tener-el-gusto-de",
+   "kind": "pattern",
+   "title": "Formal pleasure: tengo el gusto de…, nos complace…",
+   "es": "Tengo el gusto/placer de + inf / Nos complace + inf — Tengo el gusto de presentarles a nuestra nueva directora. / Nos complace invitarlos a la presentación de nuestra nueva línea.",
+   "en": "It is my pleasure to introduce… / We are pleased to invite you to…",
+   "unit": 55,
+   "requires": [
+    "g:formal-letter-grammar"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-sales-letter",
+    "d:give-presentation"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-estado-animo-alegria-c1",
+    "gn-carta-comercial-c1"
+   ],
+   "note": "Presentations, invitations and sales letters. Odd among friends."
+  },
+  {
+   "id": "p:obligacion-origen",
+   "kind": "pattern",
+   "title": "Where the duty comes from: es mi obligación vs. el contrato me obliga a",
+   "es": "Es mi obligación / Estoy obligado a + inf (own duty) / X me obliga a + inf (outside force) / Nada me obliga a + inf — Es su obligación informar a los socios. / Las circunstancias nos obligaron a cambiar de planes. / Nada me obliga a aceptarlo.",
+   "en": "It's his duty to inform members. / Circumstances forced us to change plans. / Nothing obliges me to accept it.",
+   "unit": 55,
+   "requires": [
+    "g:impersonal-obligation",
+    "g:verbs-prepositions"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-institutional"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-obligacion-necesidad-c1"
+   ],
+   "note": "Obligación (duty) ≠ necesidad (a real lack). 'No tienes obligación de quedarte' = you don't have to."
+  },
+  {
+   "id": "p:basta-con",
+   "kind": "pattern",
+   "title": "Just the minimum: basta con que firmes aquí",
+   "es": "Basta con + inf / Basta con que + subj — Basta con llenar este formulario. / Basta con que firmes aquí.",
+   "en": "All you need to do is fill in this form. / You just need to sign here.",
+   "unit": 55,
+   "requires": [
+    "g:subj-value"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-institutional",
+    "d:order-and-request-ladder"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-obligacion-necesidad-c1"
+   ],
+   "note": "Threshold, not obligation: ≠ 'tienes que'. Peninsular 'rellenar' → 'llenar'."
+  },
+  {
+   "id": "p:condenar",
+   "kind": "pattern",
+   "title": "Institutional disapproval: condena rotundamente…",
+   "es": "X condena / rechaza rotundamente + noun / Me parece lamentable que + subj — La organización condena rotundamente estos actos. / Nos parece lamentable que no se aumente el presupuesto.",
+   "en": "The organisation strongly condemns these acts. / We find it regrettable that the budget is not being increased.",
+   "unit": 55,
+   "requires": [
+    "g:subj-value"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:approve-condemn",
+    "d:write-institutional"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-aprobacion-desaprobacion-c1"
+   ],
+   "note": "'Condenar' for a dish or a joke sounds absurd. Personal version: 'Me opongo a…'."
+  },
+  {
+   "id": "p:si-bien-no-olvidemos",
+   "kind": "pattern",
+   "title": "Conceding, then the real objection: si bien es cierto que…, no olvidemos que…",
+   "es": "Si bien es cierto que + indic, no olvidemos/no hay que olvidar que… — Si bien es cierto que el proyecto es caro, no olvidemos que generará empleo.",
+   "en": "While it is true that the project is expensive, let us not forget that it will create jobs.",
+   "unit": 56,
+   "requires": [
+    "g:concessive-advanced"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:argue-essay"
+   ],
+   "pcic": [],
+   "sources": [
+    "gn-argumentativa-conectores-c1",
+    "task-c1-ensayo",
+    "fn-escepticismo-contraargumento-c1"
+   ],
+   "note": "'No olvidemos que' marks exactly where the objection begins. Written register. Essay 'reserva': 'No hay duda de que…, a no ser que + subj' / 'si excluimos…'."
+  },
+  {
+   "id": "p:no-te-falta-razon",
+   "kind": "pattern",
+   "title": "Granting a point before turning: no te falta razón; ahora bien…",
+   "es": "No te/le falta razón / En eso me convenciste / Algo de razón tienes + pero / ahora bien / sin embargo — No te falta razón; ahora bien, hay que pensar en el costo.",
+   "en": "You've got a point; that said, we have to think about the cost.",
+   "unit": 56,
+   "requires": [
+    "g:argument-markers"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:agree-disagree-nuanced",
+    "d:argue-essay"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-escepticismo-contraargumento-c1",
+    "fn-expresar-acuerdo-c1"
+   ],
+   "note": "Partial agreement, not full: compare 'tienes toda la razón'. 'Costo' is LatAm for 'coste'."
+  },
+  {
+   "id": "p:coincidir-en",
+   "kind": "pattern",
+   "title": "Agreeing on a precise point: coincido contigo en que…",
+   "es": "Coincido contigo en que + indic / en (lo de) + inf / No coincido en que + subj — Coincido contigo en que hace falta más financiación. / No coincido contigo en que sea la única opción. / Estoy de acuerdo en todo, salvo en el plazo.",
+   "en": "I agree with you that more funding is needed. / I don't agree that it's the only option.",
+   "unit": 56,
+   "requires": [
+    "g:verbs-prepositions",
+    "g:subj-opinion-negated"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:agree-disagree-nuanced"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-expresar-acuerdo-c1",
+    "fn-expresar-desacuerdo-c1"
+   ],
+   "note": "Preposition is 'en', never *coincido que. Negated → subjunctive. Partial: 'salvo en / excepto en' delimits the disagreement."
+  },
+  {
+   "id": "p:una-cosa-es-otra",
+   "kind": "pattern",
+   "title": "Pulling two things apart: una cosa es… y otra muy distinta…",
+   "es": "Una cosa es + inf / que + subj, y otra (muy distinta) + inf / que + subj — Una cosa es llegar tarde y otra muy distinta no avisar. / Una cosa es que no estés de acuerdo y otra que lo insultes.",
+   "en": "It's one thing to be late and quite another not to let anyone know.",
+   "unit": 56,
+   "requires": [
+    "g:mood-choice-fine"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:agree-disagree-nuanced",
+    "d:argue-essay"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-dar-informacion-c1"
+   ],
+   "note": "With a 'que' clause both halves take the subjunctive."
+  },
+  {
+   "id": "p:cabe-preguntarse",
+   "kind": "pattern",
+   "title": "Raising a question in writing: cabe preguntarse si…, conviene matizar que…",
+   "es": "Cabe preguntarse si / Cabe señalar que / Conviene matizar que / Todo apunta a que — Cabe preguntarse si la medida resulta proporcionada. / Todo apunta a que el plan fracasará.",
+   "en": "One might ask whether the measure is proportionate. / Everything points to the plan failing.",
+   "unit": 56,
+   "requires": [
+    "g:indirect-questions",
+    "g:impersonal-register"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:argue-essay",
+    "d:criticise-without-pointing"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-atenuacion-c1",
+    "task-c1-ensayo",
+    "gn-argumentativa-c1",
+    "gn-trabajo-academico-c1"
+   ],
+   "note": "Far more weight than 'yo creo que' in written argument."
+  },
+  {
+   "id": "p:en-la-medida-en-que",
+   "kind": "pattern",
+   "title": "Insofar as: en la medida en que…",
+   "es": "en la medida en que + indic/subj — La medida es útil en la medida en que reduce los tiempos de espera. / Te ayudaré en la medida en que pueda.",
+   "en": "The measure is useful insofar as it reduces waiting times. / I'll help you as far as I can.",
+   "unit": 56,
+   "requires": [
+    "g:argument-markers",
+    "g:mood-choice-fine"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:argue-essay"
+   ],
+   "pcic": [],
+   "sources": [
+    "task-c1-ensayo",
+    "gn-argumentativa-conectores-c1"
+   ],
+   "note": "Indicative for an established fact, subjunctive for an open extent."
+  },
+  {
+   "id": "p:a-mi-juicio",
+   "kind": "pattern",
+   "title": "Opinions with weight: a mi juicio, a su entender, en mi modesta opinión",
+   "es": "A mi juicio / A mi entender / En mi modesta opinión + statement; A su entender, ¿…? — A mi juicio, la decisión fue precipitada. / A su entender, ¿cuáles son los retos? / En mi humilde opinión, esa polémica es artificial.",
+   "en": "In my judgement, the decision was rushed. / In your view, what are the challenges?",
+   "unit": 56,
+   "requires": [
+    "g:argument-markers"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:opinion-with-weight",
+    "d:write-review"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-pedir-dar-opinion-c1",
+    "task-c1-final"
+   ],
+   "note": "Interview/debate register; artificial among friends. 'En mi modesta opinión' usually precedes something blunt."
+  },
+  {
+   "id": "p:el-presente-trabajo",
+   "kind": "pattern",
+   "title": "Mapping a paper: el presente trabajo se propone…; en primer lugar se expondrá…",
+   "es": "El presente trabajo / Este escrito se propone + inf / se centra en; En primer lugar se expondrá(n)…, a continuación…, por último… — El presente trabajo se centra en la vivienda informal en Bogotá. En primer lugar se expondrá el marco teórico.",
+   "en": "This paper focuses on informal housing in Bogotá. First, the theoretical framework will be set out.",
+   "unit": 56,
+   "requires": [
+    "g:passive-se",
+    "g:discourse-structure"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-academic"
+   ],
+   "pcic": [],
+   "sources": [
+    "gn-trabajo-academico-c1",
+    "gn-composicion-escrita-c1",
+    "gn-expositiva-c1"
+   ],
+   "note": "Introduction moves: general context → specific angle → objective → roadmap."
+  },
+  {
+   "id": "p:queda-por-resolver",
+   "kind": "pattern",
+   "title": "Naming what's still open: queda por resolver si…",
+   "es": "Queda(n) por + inf + noun/si… — Queda por resolver si el efecto se mantiene a largo plazo. / Quedan por estudiar los casos rurales.",
+   "en": "It remains to be established whether the effect lasts. / Rural cases are yet to be studied.",
+   "unit": 56,
+   "requires": [
+    "g:indirect-questions"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-academic"
+   ],
+   "pcic": [],
+   "sources": [
+    "gn-trabajo-academico-c1"
+   ],
+   "note": "The academic conclusion evaluates implications and names what remains — it does not merely summarise."
+  },
+  {
+   "id": "p:se-entiende-por",
+   "kind": "pattern",
+   "title": "Defining and classifying: se entiende por…, consta de…",
+   "es": "Se entiende por X + noun / X consta de / se compone de / es el caso de — Se entiende por economía informal el conjunto de… / El proceso consta de tres fases.",
+   "en": "Informal economy is understood as… / The process consists of three stages.",
+   "unit": 56,
+   "requires": [
+    "g:se-impersonal",
+    "g:verbs-prepositions"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-academic"
+   ],
+   "pcic": [],
+   "sources": [
+    "gn-expositiva-c1"
+   ],
+   "note": "Exposition toolkit: define, classify, exemplify ('es el caso de'), compare, cite ('X señala que')."
+  },
+  {
+   "id": "p:se-me-body",
+   "kind": "pattern",
+   "title": "Emotion through the body: se me partió el corazón, se me puso la piel de gallina",
+   "es": "se me + verb + body part — Se me parte el corazón al verlo tan solo. / Se me hizo un nudo en la garganta. / Se me pusieron los pelos de punta.",
+   "en": "It breaks my heart to see him so alone. / I got a lump in my throat. / My hair stood on end.",
+   "unit": 57,
+   "requires": [
+    "g:se-accidental",
+    "g:possessive-dative"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:express-mixed-emotion",
+    "d:fear-anger-relief"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-tristeza-placer-c1",
+    "fn-miedo-nerviosismo-c1",
+    "task-c1-emocion"
+   ],
+   "note": "Involuntary reactions; the body part takes the article, not a possessive. Also 'se me encogió el estómago'."
+  },
+  {
+   "id": "p:morirse-de",
+   "kind": "pattern",
+   "title": "Hyperbole with morirse de: me muero de risa, de vergüenza, de ganas de…",
+   "es": "morirse de + noun / de ganas de + inf / de que + subj — Me muero de la risa cada vez que veo ese video. / Casi me muero de vergüenza. / Me muero de ganas de que llegue diciembre.",
+   "en": "I die laughing every time I see that video. / I nearly died of embarrassment. / I can't wait for December.",
+   "unit": 57,
+   "requires": [
+    "g:reflexive-routine",
+    "g:subj-wanting"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:express-mixed-emotion",
+    "d:wishes-plans-preferences"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-tristeza-placer-c1",
+    "fn-deseos-planes-c1",
+    "fn-arrepentimiento-verguenza-c1",
+    "fn-afecto-sensaciones-c1",
+    "fn-miedo-nerviosismo-c1"
+   ],
+   "note": "Spain's 'me parto de risa' → LatAm 'me muero de la risa'. Colloquial; formally 'me hizo mucha gracia'."
+  },
+  {
+   "id": "p:me-sorprende-me-sorprendo",
+   "kind": "pattern",
+   "title": "Who's the subject of the feeling: me sorprende vs. me sorprendo de",
+   "es": "Me sorprende/entristece + thing / Me sorprendo de / Me entristecí al + inf — Me sorprende lo rápido que aprende. / Me sorprendí de que la estación estuviera vacía. / Me entristecí al recordarlo.",
+   "en": "It surprises me how fast she learns. / I was surprised the station was empty. / I grew sad remembering it.",
+   "unit": 57,
+   "requires": [
+    "g:subj-emotion",
+    "g:gustar-full",
+    "g:se-meaning-change"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:express-mixed-emotion"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-sorpresa-admiracion-c1",
+    "fn-tristeza-placer-c1",
+    "fn-arrepentimiento-verguenza-c1",
+    "fn-estado-animo-alegria-c1",
+    "fn-hartazgo-enfado-c1"
+   ],
+   "note": "Pair: thing as subject (me sorprende, me sonroja) vs. person reacting (me sorprendo de, me sonrojo). Spain 'alucinar con' → LatAm recognition only. Elevated variant: 'Me llena de orgullo que + subj'. Also 'quedarse de piedra / con la boca abierta' vs 'me dejaste sin palabras'."
+  },
+  {
+   "id": "p:parece-mentira-que",
+   "kind": "pattern",
+   "title": "Hard to believe: ¡parece mentira que…!",
+   "es": "¡Parece mentira que + subj! / ¡Es increíble que + subj! — ¡Parece mentira que ya haya pasado un año! / Parece mentira que todavía pase eso.",
+   "en": "I can't believe a year has gone by already!",
+   "unit": 57,
+   "requires": [
+    "g:subj-value",
+    "g:subj-perfect"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:express-mixed-emotion"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-sorpresa-admiracion-c1"
+   ],
+   "note": "Also reproachful: 'Parece mentira que no lo sepas a tu edad'."
+  },
+  {
+   "id": "p:arrepentirse-de-haber",
+   "kind": "pattern",
+   "title": "Regretting what you did or didn't do: me arrepiento de no haber…",
+   "es": "Me arrepiento de (no) haber + participle / No debí + inf / Tendría que haber + participle — Me arrepiento de no haberle dicho nada. / No debí haber ido. / Tendría que haberme quedado.",
+   "en": "I regret not telling him anything. / I shouldn't have gone. / I should have stayed.",
+   "unit": 57,
+   "requires": [
+    "g:infinitive-perfect",
+    "g:conditional-perfect"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:regret-and-resignation"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-arrepentimiento-verguenza-c1",
+    "task-c1-emocion"
+   ],
+   "note": "Pronoun goes on 'haber': haberle, haberme."
+  },
+  {
+   "id": "p:si-volviera-a-nacer",
+   "kind": "pattern",
+   "title": "Imagining a second chance: si volviera a nacer…",
+   "es": "Si volviera a nacer / Si pudiera devolver el tiempo / Si tuviera otra oportunidad, + conditional — Si volviera a nacer, estudiaría otra cosa.",
+   "en": "If I had my life over, I'd study something else.",
+   "unit": 57,
+   "requires": [
+    "g:si-hypothetical"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:regret-and-resignation"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-arrepentimiento-verguenza-c1",
+    "task-c1-emocion"
+   ],
+   "note": "Scope differs: one chance / one moment / the whole life. 'Dar marcha atrás' (Spain) → 'devolver el tiempo' is common in LatAm."
+  },
+  {
+   "id": "p:no-queda-de-otra",
+   "kind": "pattern",
+   "title": "Nothing for it: no hay más remedio que…, toca…",
+   "es": "No hay más remedio que / No queda de otra que + inf / (Col.) Toca + inf — No hay más remedio que esperar hasta mañana. / Toca madrugar.",
+   "en": "There's nothing for it but to wait till tomorrow. / We'll have to get up early.",
+   "unit": 57,
+   "requires": [
+    "g:tener-que-hay-que"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:regret-and-resignation"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-decepcion-resignacion-c1",
+    "fn-permiso-prohibicion-c1"
+   ],
+   "note": "'No queda de otra' is LatAm; 'toca + inf' is everyday Colombian (story dialogue). 'Me resigné a + inf' implies a slow acceptance."
+  },
+  {
+   "id": "p:ya-era-hora-de-que",
+   "kind": "pattern",
+   "title": "Relief with an edge: ¡ya era hora de que…!",
+   "es": "¡Ya era hora (de que + imperf subj)! — ¡Ya era hora de que llegaras! / ¡Ya era hora de que arreglaran la calle!",
+   "en": "About time you got here! / About time they fixed the street!",
+   "unit": 57,
+   "requires": [
+    "g:subj-past-triggers"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:fear-anger-relief"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-empatia-alivio-esperanza-c1"
+   ],
+   "note": "≠ '¡por fin!': adds accumulated impatience/reproach."
+  },
+  {
+   "id": "p:no-me-extrana-que",
+   "kind": "pattern",
+   "title": "Validating someone's reaction: no me extraña que estés así",
+   "es": "No me extraña (nada) que + subj / Me imagino lo que + verb — No me extraña que estés tan disgustado. / Me imagino lo que debes de estar pasando.",
+   "en": "No wonder you're so upset. / I can imagine what you must be going through.",
+   "unit": 57,
+   "requires": [
+    "g:subj-emotion",
+    "g:deber-modal"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:comfort-and-encourage"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-empatia-alivio-esperanza-c1"
+   ],
+   "note": "'Te compadezco' can sound distant or condescending; prefer these or 'me pongo en tu lugar'."
+  },
+  {
+   "id": "p:hasta-la-coronilla",
+   "kind": "pattern",
+   "title": "Fed up and furious: estoy hasta la coronilla, me saca de quicio",
+   "es": "Estoy hasta la coronilla de + noun / de que + subj — Estoy hasta la coronilla de sus excusas. / Estoy hasta la coronilla de que me llamen a las diez de la noche. / Me saca de quicio que llegue siempre tarde. / Me puso de mal genio que…",
+   "en": "I'm sick to death of his excuses.",
+   "unit": 57,
+   "requires": [
+    "g:subj-emotion",
+    "g:verbs-of-change"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:fear-anger-relief"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-hartazgo-enfado-c1",
+    "task-c1-idiom",
+    "fn-miedo-nerviosismo-c1"
+   ],
+   "note": "Understood across LatAm. Spain's 'hasta las narices' dropped. Colombian 'estoy mamado de…' is strongly colloquial (story dialogue/recognition). Spain 'de un humor de perros' → LatAm 'de mal genio'."
+  },
+  {
+   "id": "p:quien-tuviera",
+   "kind": "pattern",
+   "title": "Wishing you had what someone else has: ¡quién tuviera…!",
+   "es": "¡Quién + imperf subj…! — ¡Quién tuviera tiempo para viajar como tú! / ¡Quién pudiera dormir así!",
+   "en": "I wish I had time to travel like you! / If only I could sleep like that!",
+   "unit": 57,
+   "requires": [
+    "g:wish-exclamatives",
+    "g:imperfect-subj"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:wishes-plans-preferences"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-deseos-planes-c1"
+   ],
+   "note": "Present-time wish; the past version (¡quién lo hubiera dicho!) is g:wish-exclamatives. Also suspended '¡Si pudiera…!'."
+  },
+  {
+   "id": "p:estar-por",
+   "kind": "pattern",
+   "title": "Plans from half-formed to firm: estoy por…, me hice el propósito de…",
+   "es": "estar por + inf — Estoy por dejarlo todo y empezar de cero. / Estoy por decirle que no. / Me hice el firme propósito de aprender otro idioma.",
+   "en": "I'm half-minded to drop everything and start over.",
+   "unit": 57,
+   "requires": [
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:wishes-plans-preferences"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-deseos-planes-c1"
+   ],
+   "note": "Intention still forming; compare firm 'tengo pensado / me hice el propósito de + inf'. Firm end: 'me hice el propósito de / tengo pensado + inf'; failed plans: 'Pese a haberme propuesto…'."
+  },
+  {
+   "id": "p:si-quieres-que",
+   "kind": "pattern",
+   "title": "Indifference as permission: si quiere decírselo, que se lo diga",
+   "es": "Si + present, imperative / que + subj — Si quieres comprártelo, cómpratelo. / Si quiere ir, que vaya; a mí me da igual.",
+   "en": "If you want to buy it, buy it. / If he wants to go, let him go — I don't mind.",
+   "unit": 57,
+   "requires": [
+    "g:que-wishes-commands",
+    "g:si-present"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:wishes-plans-preferences"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-preferencia-indiferencia-c1"
+   ],
+   "note": "The structure itself says 'whatever you like'. Can sound cold. Firm preference: 'No lo cambio por nada del mundo'; 'Si me dan a elegir, me quedo con…'."
+  },
+  {
+   "id": "p:y-si-hubieramos",
+   "kind": "pattern",
+   "title": "Wondering about a different past: ¿y si hubiéramos…?",
+   "es": "¿Y si + pluperfect subj? / ¿Y si + imperf subj? — ¿Y si hubiéramos llegado cinco minutos antes? / ¿Y si apareciera mañana en la puerta?",
+   "en": "What if we'd arrived five minutes earlier? / What if he turned up at the door tomorrow?",
+   "unit": 57,
+   "requires": [
+    "g:pluperfect-subj",
+    "g:si-past-unreal"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:regret-and-resignation",
+    "d:grade-certainty"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-hipotesis-posibilidad-c1"
+   ],
+   "note": "Open hypothesis with no main clause. Distinguish from ¿Y si + present? (a suggestion)."
+  },
+  {
+   "id": "p:dar-a",
+   "kind": "pattern",
+   "title": "Which way a place faces: la ventana da a la calle",
+   "es": "dar a + place — La terraza da al parque. / El cuarto da a un patio interior.",
+   "en": "The balcony overlooks the park. / The bedroom looks onto an inner courtyard.",
+   "unit": 58,
+   "requires": [
+    "g:estar-location-states"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-precisely"
+   ],
+   "pcic": [],
+   "sources": [
+    "gn-descriptiva-lugares-c1"
+   ],
+   "note": "Not 'mirar a'. Pair with participle descriptions: bordeado de, rodeado de."
+  },
+  {
+   "id": "p:lo-primero-que",
+   "kind": "pattern",
+   "title": "Anchoring a description: lo primero que llama la atención es…",
+   "es": "Lo primero que llama la atención / A primera vista / Visto desde afuera, … — Lo primero que llama la atención es el silencio. / A primera vista parece un edificio cualquiera.",
+   "en": "The first thing that strikes you is the silence. / At first sight it looks like any old building.",
+   "unit": 58,
+   "requires": [
+    "g:relatives-donde-lo-que",
+    "g:cleft-focus"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-precisely"
+   ],
+   "pcic": [],
+   "sources": [
+    "gn-descriptiva-personas-c1",
+    "gn-descriptiva-lugares-c1",
+    "gn-descriptiva-objetos-c1",
+    "task-c1-precision"
+   ],
+   "note": "Anchor → detail (aspectualización) → relate. Move from outside in, general to parts."
+  },
+  {
+   "id": "p:orden-sin-imperativo",
+   "kind": "pattern",
+   "title": "Orders without the imperative: tú te callas, harás lo que te diga",
+   "es": "tú + present / future 2nd person / ¡Andando! — Tú te quedas aquí. / Harás lo que te diga. / ¡Andando, que se hace tarde!",
+   "en": "You stay here. / You'll do as I say. / Let's go, it's getting late!",
+   "unit": 59,
+   "requires": [
+    "g:future-promises",
+    "g:commands-tu"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:order-and-request-ladder"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-orden-instruccion-c1"
+   ],
+   "note": "Blunter than the imperative: a statement leaves no room. Bottom of the courtesy ladder."
+  },
+  {
+   "id": "p:serias-tan-amable",
+   "kind": "pattern",
+   "title": "Top of the courtesy ladder: ¿serías tan amable de…?, ¿sería mucho pedir que…?",
+   "es": "¿Sería(s) tan amable de + inf? / ¿Tendría la bondad de + inf? / ¿Sería mucho pedir que + imperf subj? — ¿Sería tan amable de bajar el volumen? / ¿Sería mucho pedir que, por una vez, llegaras puntual?",
+   "en": "Would you be so kind as to turn it down? / Would it be too much to ask for you to be on time for once?",
+   "unit": 59,
+   "requires": [
+    "g:conditional",
+    "g:imperfect-subj"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:order-and-request-ladder"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-orden-instruccion-c1",
+    "fn-favor-objetos-ayuda-c1",
+    "fn-permiso-prohibicion-c1"
+   ],
+   "note": "Ceremonious; among friends it sounds ironic. '¿Sería mucho pedir…?' often carries a reproach."
+  },
+  {
+   "id": "p:me-hace-el-favor",
+   "kind": "pattern",
+   "title": "Asking a favour the Colombian way: ¿me hace el favor y…?",
+   "es": "¿Me hace(s) el favor de + inf? / (Col.) ¿Me hace el favor y + present? / Hazme el favor de + inf (exasperated) — ¿Me hace el favor y me pasa la sal? / Hazme el favor de bajar la voz.",
+   "en": "Would you pass me the salt, please? / Do me a favour and keep your voice down.",
+   "unit": 59,
+   "requires": [
+    "g:commands-tu",
+    "g:indirect-objects"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:order-and-request-ladder"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-orden-instruccion-c1",
+    "fn-favor-objetos-ayuda-c1"
+   ],
+   "note": "'¿Me hace el favor y…?' is everyday Colombian politeness; 'Hazme el favor de…' with a sharp tone is an order. Spain's 'echar un cable' → 'echar una mano'."
+  },
+  {
+   "id": "p:cuantas-veces-tengo-que",
+   "kind": "pattern",
+   "title": "Repeating an order in exasperation: ¿cuántas veces te tengo que decir que…?",
+   "es": "¿Cuántas veces te tengo que decir que + subj? / Que + subj, te dije / Por última vez: + imperative — ¿Cuántas veces te tengo que decir que cierres la puerta? / Que te sientes, te dije.",
+   "en": "How many times do I have to tell you to shut the door? / Sit down, I said.",
+   "unit": 59,
+   "requires": [
+    "g:reported-requests",
+    "g:que-wishes-commands"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:order-and-request-ladder"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-repetir-orden-c1"
+   ],
+   "note": "Rhetorical; no number expected. The verb of saying + subj because it's an order."
+  },
+  {
+   "id": "p:sintiendolo-mucho",
+   "kind": "pattern",
+   "title": "Refusing with regret: sintiéndolo mucho, me resulta imposible…",
+   "es": "Sintiéndolo mucho / Me temo que + no va a ser posible / me resulta imposible + inf — Sintiéndolo mucho, me resulta imposible acompañarte ese día. / Me temo que no voy a poder.",
+   "en": "Much as I regret it, I can't go with you that day. / I'm afraid I won't be able to.",
+   "unit": 59,
+   "requires": [
+    "g:gerund-ways"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:order-and-request-ladder",
+    "d:propose-accept-refuse"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-responder-orden-peticion-c1",
+    "fn-aceptar-rechazar-propuesta-c1"
+   ],
+   "note": "Give a concrete reason after it. 'Veré qué puedo hacer' = deliberately vague (chunk-like)."
+  },
+  {
+   "id": "p:digas-lo-que-digas",
+   "kind": "pattern",
+   "title": "No matter what: digas lo que digas…",
+   "es": "subj + lo que / como + same subj — Digas lo que digas, voy a ir. / Te pongas como te pongas, no lo voy a hacer.",
+   "en": "Whatever you say, I'm going. / However you carry on, I won't do it.",
+   "unit": 59,
+   "requires": [
+    "g:subj-free-relatives"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:propose-accept-refuse",
+    "d:say-no-without-no"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-permiso-prohibicion-c1",
+    "fn-responder-orden-peticion-c1"
+   ],
+   "note": "Reduplicated subjunctive pre-empts every objection. 'Porque tú lo digas' rejects the speaker's authority."
+  },
+  {
+   "id": "p:si-pero-que",
+   "kind": "pattern",
+   "title": "Permission with a condition: sí, pero que no se entere nadie",
+   "es": "Sí, pero que + subj / Listo, siempre que + subj — Sí, pero que no se entere tu papá. / Listo, siempre que estés de vuelta antes de medianoche.",
+   "en": "Yes, but your dad mustn't find out. / OK, as long as you're back by midnight.",
+   "unit": 59,
+   "requires": [
+    "g:que-wishes-commands",
+    "g:subj-conditions"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:propose-accept-refuse"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-permiso-prohibicion-c1",
+    "fn-aceptar-rechazar-propuesta-c1"
+   ],
+   "note": "Spain's 'vale' → 'listo'. Also suspended conditions: 'Mientras no me lleves al sitio de siempre…'."
+  },
+  {
+   "id": "p:ni-se-te-ocurra",
+   "kind": "pattern",
+   "title": "The strongest warning: ni se te ocurra…",
+   "es": "Ni se te ocurra + inf — Ni se te ocurra contárselo. / Ni se le ocurra tocar eso.",
+   "en": "Don't you dare tell him. / Don't even think of touching that.",
+   "unit": 59,
+   "requires": [
+    "g:se-accidental",
+    "g:negation-words"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:advise-warn-reproach"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-aconsejar-advertir-amenazar-c1"
+   ],
+   "note": "Near-prohibition, much stronger than 'no deberías'."
+  },
+  {
+   "id": "p:lo-mas-recomendable",
+   "kind": "pattern",
+   "title": "Advising from a distance: lo más recomendable es que…",
+   "es": "Lo más recomendable / Lo único que puedo aconsejarte es que + subj / Siempre puedes + inf — Lo más recomendable es que consultes a un especialista. / Siempre puedes decirle la verdad. / ¿Me permites darte un consejo?",
+   "en": "The best thing would be to see a specialist. / You can always tell him the truth.",
+   "unit": 59,
+   "requires": [
+    "g:lo-adjective",
+    "g:subj-influence",
+    "g:softening"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:advise-warn-reproach",
+    "d:criticise-without-pointing"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-aconsejar-advertir-amenazar-c1",
+    "fn-pedir-informacion-c1"
+   ],
+   "note": "Ask first with '¿Me aceptas un consejo?'. Pre-sequence '¿Me permites + inf?' cushions advice, a delicate question or a criticism."
+  },
+  {
+   "id": "p:me-hubieras-dicho",
+   "kind": "pattern",
+   "title": "Reproaching what someone didn't do: ¡me hubieras dicho!",
+   "es": "¡(Me) hubieras + participle! / Podrías haber + participle / Si (no) hubieras…, … — ¡Me hubieras dicho y te ayudaba! / Podrías haberme avisado. / Si no hubieras cerrado la puerta, habríamos oído los gritos.",
+   "en": "You should have told me and I'd have helped! / You could have let me know.",
+   "unit": 59,
+   "requires": [
+    "g:pluperfect-subj",
+    "g:si-past-unreal"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:advise-warn-reproach"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-reprochar-ofrecerse-c1",
+    "fn-estado-animo-alegria-c1"
+   ],
+   "note": "'¡Me hubieras dicho!' is the everyday LatAm reproach. The full si-clause is itself a reproach, not a neutral hypothesis. Delay reproach: '¿Qué haces que todavía no estás listo?' / '¿Se puede saber por qué…?'."
+  },
+  {
+   "id": "p:disculpa-que",
+   "kind": "pattern",
+   "title": "Apologising for what you did: disculpa que no te haya llamado",
+   "es": "Disculpa/Disculpe + noun / que + subj — Disculpa que no te haya saludado antes. / Disculpen las molestias.",
+   "en": "Sorry I didn't say hello earlier. / We apologise for the inconvenience.",
+   "unit": 59,
+   "requires": [
+    "g:subj-perfect",
+    "g:commands-usted"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:social-rituals-register"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-disculparse-responder-c1"
+   ],
+   "note": "noun = something that happened; que + subj = your own action."
+  },
+  {
+   "id": "p:lo-de-noun",
+   "kind": "pattern",
+   "title": "The business about…: ¿supiste lo de Pedro?, ¿y lo tuyo qué tal?",
+   "es": "lo de + noun / inf — ¿Supiste lo de Pedro? / Coincido contigo en lo de no ir. / Bien, ¿y lo tuyo del trabajo, qué tal?",
+   "en": "Did you hear about Pedro? / I agree about not going. / Fine — and how's your work thing going?",
+   "unit": 59,
+   "requires": [
+    "g:article-uses",
+    "g:lo-adjective"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:social-rituals-register",
+    "d:hold-the-floor"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-estado-general-cosas-c1",
+    "fn-conocimiento-desconocimiento-c1",
+    "fn-expresar-acuerdo-c1"
+   ],
+   "note": "Spain '¿te has enterado de lo de…?' → LatAm preterite '¿Supiste / te enteraste de lo de…?'. Returning the question closes the ritual."
+  },
+  {
+   "id": "p:resulta-adj-que",
+   "kind": "pattern",
+   "title": "Judging as a conclusion: resulta vergonzoso que…",
+   "es": "Resulta + adj/noun + inf / que + subj — Resulta absurdo que nadie se diera cuenta antes. / A la larga resulta más barato reparar que comprar. / Me parece de muy mal gusto reírse de eso.",
+   "en": "It is absurd that nobody noticed before. / In the long run it works out cheaper to repair.",
+   "unit": 60,
+   "requires": [
+    "g:subj-value",
+    "g:parecer-quedar"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:approve-condemn",
+    "d:write-review"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-valorar-c1"
+   ],
+   "note": "Presents the verdict as following from reflection — subtler than 'es + adj'. 'De buen/mal/pésimo gusto' judges social appropriateness, not quality."
+  },
+  {
+   "id": "p:haces-bien-en",
+   "kind": "pattern",
+   "title": "Approving what someone does: haces bien en…",
+   "es": "Haces bien/mal en + inf — Haces bien en no responder a sus provocaciones. / Hace mal en negarse a admitirlo.",
+   "en": "You're right not to rise to his provocations. / He's wrong to refuse to admit it.",
+   "unit": 60,
+   "requires": [
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:approve-condemn"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-aprobacion-desaprobacion-c1"
+   ],
+   "note": "Source also gives 'haces bien callándote'; 'en + inf' is the safer frame. Immediate approval: '¡Así se hace!'; passive: 'No tengo nada que objetar'."
+  },
+  {
+   "id": "p:lo-mejor-de",
+   "kind": "pattern",
+   "title": "The verdict line of a review: lo mejor de… es…; donde falla es…",
+   "es": "Lo mejor/peor de + noun + es + noun/que… / Donde falla es en… — Lo mejor de la película es la fotografía; donde falla es en el desenlace, que resulta precipitado.",
+   "en": "The best thing about the film is the cinematography; where it fails is the rushed ending.",
+   "unit": 60,
+   "requires": [
+    "g:lo-adjective",
+    "g:cleft-focus"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-review"
+   ],
+   "pcic": [],
+   "sources": [
+    "gn-resena-c1",
+    "fn-valorar-c1",
+    "fn-identificar-c1"
+   ],
+   "note": "Every judgement needs a concrete example from the work. 'Deja mucho que desear' (chunk) for the weak point. Contrastive identification: 'Esto, y no lo que se dijo, es lo que pasó'."
+  },
+  {
+   "id": "p:sencillamente",
+   "kind": "pattern",
+   "title": "Ruling out every other judgement: es sencillamente inaceptable",
+   "es": "sencillamente / simplemente + adj/clause — Su oferta es sencillamente inaceptable. / Vendrán simplemente Marta y Pepe, nadie más.",
+   "en": "Their offer is simply unacceptable. / Only Marta and Pepe will come.",
+   "unit": 60,
+   "requires": [
+    "g:evaluative-adverbs"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:write-review",
+    "d:approve-condemn"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-focalizacion-c1",
+    "dc-rematizacion-tematizacion-c1"
+   ],
+   "note": "Exclusive focus: doesn't describe manner, excludes alternatives."
+  },
+  {
+   "id": "p:plata-no-hay",
+   "kind": "pattern",
+   "title": "Fronting a bare noun: plata no hay, café no tomo",
+   "es": "bare noun + (no) verb, no clitic — Plata no hay. / Café no tomo, prefiero el té. / Discos tiene por montones.",
+   "en": "Money, there isn't any. / Coffee I don't drink.",
+   "unit": 60,
+   "requires": [
+    "g:topic-fronting",
+    "g:word-order-style"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-it-with-force",
+    "d:write-review"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-rematizacion-tematizacion-c1"
+   ],
+   "note": "Indefinite/generic object fronted WITHOUT a pronoun; definite objects still double (el café no lo tomo frío)."
+  },
+  {
+   "id": "p:a-lo-largo-de-esta-charla",
+   "kind": "pattern",
+   "title": "Signposting a talk: a lo largo de esta charla…, para ir cerrando…",
+   "es": "Antes que nada, quisiera agradecer… / A lo largo de esta charla + future / Comenzaremos por…, lo que nos llevará a… / Para ir cerrando, … — A lo largo de esta charla veremos tres casos. Para ir cerrando, quisiera dejarles una pregunta.",
+   "en": "First of all, I'd like to thank… / Over the course of this talk we'll look at three cases. To wrap up, …",
+   "unit": 60,
+   "requires": [
+    "g:discourse-structure",
+    "g:conditional"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:give-presentation",
+    "d:speak-in-meeting"
+   ],
+   "pcic": [],
+   "sources": [
+    "gn-presentacion-publica-c1",
+    "gn-presentacion-publica-c2"
+   ],
+   "note": "Opening (thanks, duration, questions) → hook → mapped development → synthesis + questions + recognisable close. 'Ustedes conocen sobradamente…' presupposes knowledge in the polished version."
+  },
+  {
+   "id": "c:y-yo-que-sabia",
+   "kind": "chunk",
+   "title": "¡Y yo qué sabía!",
+   "es": "¡Y yo qué sabía!",
+   "en": "How was I supposed to know!",
+   "unit": 52,
+   "requires": [
+    "g:tense-modal-uses"
+   ],
+   "contrasts": [],
+   "unpacks": "g:tense-modal-uses",
+   "serves": [
+    "d:explain-tense-choice"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-imperfecto-modal-c1"
+   ],
+   "note": "Imperfecto de excusa — a defence, not a report."
+  },
+  {
+   "id": "c:total-que",
+   "kind": "chunk",
+   "title": "Total, que…",
+   "es": "Total, que al final no fuimos.",
+   "en": "So anyway, in the end we didn't go.",
+   "unit": 52,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:tell-anecdote"
+   ],
+   "pcic": [],
+   "sources": [
+    "gn-narrativa-c1"
+   ],
+   "note": "Resumes the story after a digression and jumps to the outcome."
+  },
+  {
+   "id": "c:no-es-por-nada-pero",
+   "kind": "chunk",
+   "title": "No es por nada, pero…",
+   "es": "No es por nada, pero ese color no te queda.",
+   "en": "I'm not saying it for any reason, but that colour doesn't suit you.",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:criticise-without-pointing"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-atenuacion-dialogica-c1"
+   ],
+   "note": "Casual pre-criticism disclaimer; the formal cousin is 'sin ánimo de ofender'."
+  },
+  {
+   "id": "c:no-creas",
+   "kind": "chunk",
+   "title": "Bueno, no creas… / Tanto como eso, no",
+   "es": "—Debe estar destapada la carretera. —Bueno, no creas, está bastante bien. / Tanto como eso, no.",
+   "en": "Well, I wouldn't say that… / Not THAT much.",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:agree-disagree-nuanced",
+    "d:say-no-without-no"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-atenuacion-dialogica-c1",
+    "fn-expresar-desacuerdo-c1"
+   ],
+   "note": "Shrinks the other's claim instead of contradicting it. 'No es para tanto' is the same move."
+  },
+  {
+   "id": "c:dicho-sea-de-paso",
+   "kind": "chunk",
+   "title": "Dicho sea de paso",
+   "es": "Y dicho sea de paso, nadie me avisó.",
+   "en": "And incidentally, nobody told me.",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:rephrase",
+    "d:criticise-without-pointing"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-destacar-silencio-tema-cierre-c1"
+   ],
+   "note": "Parenthetical aside, often slipping in a pointed remark. Not in the source lessons; added per brief."
+  },
+  {
+   "id": "c:asi-es",
+   "kind": "chunk",
+   "title": "Así es. / Efectivamente.",
+   "es": "—¿Ya lo sabe? —Así es, se lo dijeron ayer.",
+   "en": "That's right. / Precisely.",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:check-what-i-heard"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-confirmar-informacion-previa-c1"
+   ],
+   "note": "Formal confirmation; casual '¡Claro que sí!'. Spain's '¡Y tanto!' dropped (Peninsular)."
+  },
+  {
+   "id": "c:punta-de-la-lengua",
+   "kind": "chunk",
+   "title": "Lo tengo en la punta de la lengua.",
+   "es": "¿Cómo se llamaba ese actor? Lo tengo en la punta de la lengua.",
+   "en": "It's on the tip of my tongue.",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:grade-certainty"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-recordar-olvidar-c1"
+   ],
+   "note": "You know it but can't retrieve it. Also 'Me quedé en blanco' (went blank), 'No me dice nada' (rings no bell)."
+  },
+  {
+   "id": "c:ni-amarrado",
+   "kind": "chunk",
+   "title": "¡Ni amarrado!",
+   "es": "¿Ir con ellos al concierto? ¡Ni amarrado!",
+   "en": "Not a chance! (not even if you tied me up)",
+   "unit": 54,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:say-no-without-no",
+    "d:propose-accept-refuse"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-aceptar-rechazar-propuesta-c1"
+   ],
+   "note": "LatAm equivalent of Spain's '¡Ni atado!'. Top of the ni-scale."
+  },
+  {
+   "id": "c:que-ya-es-algo",
+   "kind": "chunk",
+   "title": "…, que ya es algo.",
+   "es": "Al menos llegó, que ya es algo.",
+   "en": "…, which is something.",
+   "unit": 54,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:comfort-and-encourage"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-focalizacion-c1",
+    "fn-tranquilizar-animar-c1"
+   ],
+   "note": "Tag that salvages one positive. Frame: Al menos / Por lo menos + clause, que ya es algo — exclusive focus; also comforts."
+  },
+  {
+   "id": "c:su-platica",
+   "kind": "chunk",
+   "title": "Eso vale su platica.",
+   "es": "Me gusta, pero vale su platica.",
+   "en": "It costs a pretty penny.",
+   "unit": 54,
+   "requires": [
+    "g:diminutives"
+   ],
+   "contrasts": [],
+   "unpacks": "g:diminutives",
+   "serves": [
+    "d:say-it-with-force"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-intensificacion-c1"
+   ],
+   "note": "Colombian: the diminutive here intensifies, not reduces (cf. Spain 'un dinerillo'). Regional — recognition/story dialogue."
+  },
+  {
+   "id": "c:mamar-gallo",
+   "kind": "chunk",
+   "title": "Mamar gallo / tomar el pelo",
+   "es": "Tranquilo, te estoy mamando gallo.",
+   "en": "To pull someone's leg.",
+   "unit": 54,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:use-and-catch-irony"
+   ],
+   "pcic": [],
+   "sources": [
+    "dc-metaforas-c1"
+   ],
+   "note": "'Tomar el pelo' is general; 'mamar gallo' is Colombian banter — story dialogue/recognition (unit 54 theme). Frozen metaphors for vocab: costar un ojo de la cara, llover a cántaros, tener los pies en la tierra."
+  },
+  {
+   "id": "c:sin-otro-particular",
+   "kind": "chunk",
+   "title": "Sin otro particular…",
+   "es": "Sin otro particular, me despido atentamente.",
+   "en": "With nothing further to add…",
+   "unit": 55,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:write-institutional"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-felicitar-despedirse-c1",
+    "task-c1-formal"
+   ],
+   "note": "Written only. In Colombian correspondence the usual close is 'Cordialmente,'."
+  },
+  {
+   "id": "c:quedo-atento",
+   "kind": "chunk",
+   "title": "Quedo atento a sus comentarios.",
+   "es": "Quedo atento a sus comentarios. Cordialmente, …",
+   "en": "I look forward to your comments.",
+   "unit": 55,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:write-institutional",
+    "d:write-sales-letter"
+   ],
+   "pcic": [],
+   "sources": [
+    "task-c1-formal",
+    "gn-carta-comercial-c1"
+   ],
+   "note": "Colombian business-email close (atenta for women). Replaces Spain's 'Quedo a la espera de su respuesta'."
+  },
+  {
+   "id": "c:mi-mas-sentido-pesame",
+   "kind": "chunk",
+   "title": "Mi más sentido pésame.",
+   "es": "Quisiera expresarle mi más sentido pésame.",
+   "en": "My deepest condolences.",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:social-rituals-register",
+    "d:comfort-and-encourage"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-agradecer-pesame-c1"
+   ],
+   "note": "Ritual; also 'Te acompaño en el sentimiento' and warmer 'Estoy contigo'."
+  },
+  {
+   "id": "c:que-sea-lo-que-dios-quiera",
+   "kind": "chunk",
+   "title": "Que sea lo que Dios quiera.",
+   "es": "Ya hice todo lo que pude; que sea lo que Dios quiera.",
+   "en": "Whatever will be, will be.",
+   "unit": 57,
+   "requires": [
+    "g:que-wishes-commands"
+   ],
+   "contrasts": [],
+   "unpacks": "g:que-wishes-commands",
+   "serves": [
+    "d:regret-and-resignation"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-decepcion-resignacion-c1"
+   ],
+   "note": "Fatalistic formula, not necessarily religious."
+  },
+  {
+   "id": "c:que-embarrada",
+   "kind": "chunk",
+   "title": "¡Qué embarrada!",
+   "es": "¿Se canceló el viaje? ¡Qué embarrada!",
+   "en": "What a bummer!",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:regret-and-resignation"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-decepcion-resignacion-c1"
+   ],
+   "note": "Colombian disappointment — replaces Spain's '¡Vaya, hombre!'. General: '¡Qué lástima! / ¡Qué decepción!'. Story dialogue/recognition."
+  },
+  {
+   "id": "c:cruzo-los-dedos",
+   "kind": "chunk",
+   "title": "Cruzo los dedos. / Toco madera.",
+   "es": "Cruzo los dedos para que todo salga bien mañana.",
+   "en": "Fingers crossed. / Touch wood.",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:fear-anger-relief",
+    "d:comfort-and-encourage"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-empatia-alivio-esperanza-c1"
+   ],
+   "note": "Protects a fragile hope. 'La esperanza es lo último que se pierde.'"
+  },
+  {
+   "id": "c:no-te-lo-tomes-a-pecho",
+   "kind": "chunk",
+   "title": "No te lo tomes a pecho.",
+   "es": "Tranquilo, no te lo tomes a pecho.",
+   "en": "Don't take it to heart.",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:comfort-and-encourage"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-tranquilizar-animar-c1",
+    "task-c1-emocion"
+   ],
+   "note": "With 'No es el fin del mundo' for perspective."
+  },
+  {
+   "id": "c:el-no-ya-lo-tienes",
+   "kind": "chunk",
+   "title": "El no ya lo tienes.",
+   "es": "Pregúntale; el no ya lo tienes.",
+   "en": "The worst they can say is no.",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:comfort-and-encourage"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-tranquilizar-animar-c1"
+   ],
+   "note": "An argument to try, not consolation after failure."
+  },
+  {
+   "id": "c:hagale",
+   "kind": "chunk",
+   "title": "¡Dale! / ¡Hágale!",
+   "es": "¿Te da miedo? ¡Hágale, que usted puede!",
+   "en": "Go for it!",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:comfort-and-encourage"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-tranquilizar-animar-c1"
+   ],
+   "note": "Replaces Spain's '¡A por ello!'. '¡Hágale!' is Colombian (story dialogue). Also 'No te dé pena' for Spain's 'no te cortes'."
+  },
+  {
+   "id": "c:estoy-molido",
+   "kind": "chunk",
+   "title": "Estoy molido. / Estoy muerto.",
+   "es": "Estoy molido después del trasteo.",
+   "en": "I'm wiped out.",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:express-mixed-emotion"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-afecto-sensaciones-c1",
+    "task-c1-idiom"
+   ],
+   "note": "For Spain's 'estoy hecho polvo / no puedo con mi alma'. 'Trasteo' = house move (Colombia). Also 'Se me cierran los ojos'."
+  },
+  {
+   "id": "c:me-importa-un-comino",
+   "kind": "chunk",
+   "title": "Me importa un comino.",
+   "es": "Me importa un comino lo que digan.",
+   "en": "I couldn't care less.",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:wishes-plans-preferences"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-preferencia-indiferencia-c1"
+   ],
+   "note": "For Spain's 'un pimiento'. Rude in formal settings — use 'me resulta indiferente'. Milder: '¡Qué más da!'."
+  },
+  {
+   "id": "c:a-simple-vista",
+   "kind": "chunk",
+   "title": "A simple vista / al ojo",
+   "es": "A simple vista parece nuevo. / Lo calculé al ojo.",
+   "en": "At a glance / by eye.",
+   "unit": 58,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:describe-precisely"
+   ],
+   "pcic": [],
+   "sources": [
+    "task-c1-precision"
+   ],
+   "note": "'Al ojo' is LatAm for Spain's 'a ojo'. Also 'por un pelo' (by the skin of your teeth), 'de antemano', 'a la larga', 'cuatro gatos'. Also 'con lujo de detalles' (Spain 'con pelos y señales')."
+  },
+  {
+   "id": "c:que-es-de-tu-vida",
+   "kind": "chunk",
+   "title": "¿Qué es de tu vida?",
+   "es": "¡Hola! ¿Qué es de tu vida? ¡Cuánto tiempo!",
+   "en": "What have you been up to all this time?",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:social-rituals-register"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-saludar-c1"
+   ],
+   "note": "Only after a long time apart. Formal: 'Es un placer saludarlo después de tanto tiempo'."
+  },
+  {
+   "id": "c:ahi-vamos",
+   "kind": "chunk",
+   "title": "Ahí vamos.",
+   "es": "—¿Qué tal? —Ahí vamos, no me puedo quejar.",
+   "en": "Getting by.",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:social-rituals-register"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-responder-saludo-dirigirse-c1",
+    "fn-estado-general-cosas-c1"
+   ],
+   "note": "LatAm for Spain's 'seguimos tirando'. Scale: Sin novedad < No me puedo quejar < Ahí vamos < Qué quieres que te diga (things aren't great). "
+  },
+  {
+   "id": "c:no-te-hubieras-molestado",
+   "kind": "chunk",
+   "title": "No te hubieras molestado.",
+   "es": "¡Qué detalle! No te hubieras molestado.",
+   "en": "You shouldn't have.",
+   "unit": 59,
+   "requires": [
+    "g:pluperfect-subj"
+   ],
+   "contrasts": [],
+   "unpacks": "g:pluperfect-subj",
+   "serves": [
+    "d:social-rituals-register"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-agradecer-pesame-c1"
+   ],
+   "note": "LatAm form of 'No tenías que haberte molestado'. Thanks, not a reproach. Also '¿Qué haría yo sin ti?'."
+  },
+  {
+   "id": "c:faltaba-mas",
+   "kind": "chunk",
+   "title": "¡Faltaba más!",
+   "es": "—¿Me ayudas? —¡Faltaba más!",
+   "en": "Of course! / Don't mention it!",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:order-and-request-ladder",
+    "d:social-rituals-register"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-responder-orden-peticion-c1",
+    "fn-agradecer-pesame-c1",
+    "fn-permiso-prohibicion-c1"
+   ],
+   "note": "LatAm 'faltaba más' (Spain 'faltaría más'). Also 'Eso ni se pregunta' for obvious permission."
+  },
+  {
+   "id": "c:mil-disculpas",
+   "kind": "chunk",
+   "title": "Mil disculpas.",
+   "es": "Mil disculpas por la demora.",
+   "en": "I'm so sorry.",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:social-rituals-register"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-disculparse-responder-c1"
+   ],
+   "note": "LatAm prefers 'mil disculpas' to Spain's 'mil perdones'. Reply with conditions: 'Por esta vez te la paso, pero que no se repita.'"
+  },
+  {
+   "id": "c:no-te-voy-a-decir-que-no",
+   "kind": "chunk",
+   "title": "No te voy a decir que no.",
+   "es": "¿Un tinto? No te voy a decir que no.",
+   "en": "I won't say no.",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:propose-accept-refuse"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-aceptar-rechazar-propuesta-c1"
+   ],
+   "note": "ACCEPTS through double negation. Also '¿Qué esperamos?' (enthusiastic) and 'Otra vez será' (refusal)."
+  },
+  {
+   "id": "c:te-animas",
+   "kind": "chunk",
+   "title": "¿Te animas? / ¿Te le mides?",
+   "es": "Vamos a cine el viernes, ¿te animas?",
+   "en": "Are you in?",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:propose-accept-refuse"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-proponer-ofrecer-confirmar-c1"
+   ],
+   "note": "LatAm for Spain's '¿Te apuntas?'. '¿Te le mides?' is Colombian (dare/up for it) — story dialogue. Pressure invite: 'No puedes faltar / No te lo puedes perder'; soften with 'No sé qué planes tengas, pero…'."
+  },
+  {
+   "id": "c:alla-tu",
+   "kind": "chunk",
+   "title": "Allá tú.",
+   "es": "Allá tú, pero abrígate, que hace frío.",
+   "en": "That's up to you.",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:advise-warn-reproach"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-aconsejar-advertir-amenazar-c1"
+   ],
+   "note": "Warning (concern) or threat (resentment) depending on what follows. Paisa voseo 'allá vos' — recognition (unit 59). Pair: 'Luego no digas que no te avisé.'"
+  },
+  {
+   "id": "c:cuenta-conmigo",
+   "kind": "chunk",
+   "title": "Cuenta conmigo. / Ya sabes dónde estoy.",
+   "es": "Cuenta conmigo para lo que necesites.",
+   "en": "Count on me. / You know where to find me.",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:advise-warn-reproach",
+    "d:comfort-and-encourage"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-reprochar-ofrecerse-c1",
+    "fn-felicitar-despedirse-c1"
+   ],
+   "note": "Warm; formal counterpart 'Estoy a su disposición'."
+  },
+  {
+   "id": "c:me-sigues",
+   "kind": "chunk",
+   "title": "¿Me sigues? / ¿No te enredé?",
+   "es": "¿Me sigues, o te enredé con tanto detalle?",
+   "en": "Are you with me? / Have I lost you?",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:hold-the-floor"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-introducir-relato-atencion-c1"
+   ],
+   "note": "LatAm 'enredar' for Spain's 'liar'. Different checks: following the thread vs. confused by a point."
+  },
+  {
+   "id": "c:sin-ir-mas-lejos",
+   "kind": "chunk",
+   "title": "Sin ir más lejos…",
+   "es": "Sin ir más lejos, esta misma mañana lo hablé con él.",
+   "en": "To take an obvious example…",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:hold-the-floor",
+    "d:write-review"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-destacar-silencio-tema-cierre-c1",
+    "task-c1-final"
+   ],
+   "note": "Introduces an immediate, close-to-hand example."
+  },
+  {
+   "id": "c:bueno-te-dejo",
+   "kind": "chunk",
+   "title": "Bueno, te dejo.",
+   "es": "Bueno, te dejo, que me están llamando por la otra línea.",
+   "en": "Right, I'll let you go.",
+   "unit": 59,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:hold-the-floor"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-destacar-silencio-tema-cierre-c1"
+   ],
+   "note": "Closing with a reason. Also '¡En fin!' and topic shifts 'A propósito de…', 'En otro orden de cosas'."
+  },
+  {
+   "id": "c:deja-mucho-que-desear",
+   "kind": "chunk",
+   "title": "Deja mucho que desear.",
+   "es": "El servicio deja mucho que desear.",
+   "en": "It leaves a lot to be desired.",
+   "unit": 60,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:write-review",
+    "d:approve-condemn"
+   ],
+   "pcic": [],
+   "sources": [
+    "fn-aprobacion-desaprobacion-c1",
+    "gn-resena-c1",
+    "fn-expresar-desacuerdo-c1"
+   ],
+   "note": "Measured negative verdict for reviews. Indignation: '¡No hay derecho a que…!'. Dismissal: 'No tiene ni pies ni cabeza'."
+  },
+  {
+   "id": "x:imperfecto-tres-usos",
+   "kind": "contrast",
+   "title": "The imperfect that isn't past: surprise, politeness or hearsay?",
+   "es": "¿Tú no tenías examen? / Venía a ver si… / Ernesto llegaba mañana.",
+   "en": "Surprise / polite approach / relayed news",
+   "unit": 53,
+   "requires": [
+    "p:imperfecto-sorpresa",
+    "p:imperfecto-cortesia-venia",
+    "p:imperfecto-citativo"
+   ],
+   "contrasts": [
+    "p:imperfecto-sorpresa",
+    "p:imperfecto-cortesia-venia",
+    "p:imperfecto-citativo"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "dc-imperfecto-modal-c1",
+    "dc-citas-encubiertas-c1"
+   ],
+   "note": "Mixed recognition practice: what is the speaker doing with the imperfect?"
+  },
+  {
+   "id": "x:juraria-vs-me-consta",
+   "kind": "contrast",
+   "title": "Sure because I feel it vs sure because I know it",
+   "es": "Juraría que… / No me cabe duda… / Me consta que…",
+   "en": "I could swear… vs I know for a fact…",
+   "unit": 53,
+   "requires": [
+    "p:juraria-que",
+    "p:no-me-cabe-duda"
+   ],
+   "contrasts": [
+    "p:juraria-que",
+    "p:no-me-cabe-duda"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "fn-certeza-evidencia-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "x:para-mi-que-vs-cabe",
+   "kind": "contrast",
+   "title": "A hunch vs a formal possibility",
+   "es": "Para mí que no viene. / Cabe la posibilidad de que no venga.",
+   "en": "If you ask me… vs There is a possibility that…",
+   "unit": 53,
+   "requires": [
+    "p:para-mi-que",
+    "p:cabe-la-posibilidad"
+   ],
+   "contrasts": [
+    "p:para-mi-que",
+    "p:cabe-la-posibilidad"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "fn-hipotesis-posibilidad-c1"
+   ],
+   "note": "Register and mood: para mí que + indic; cabe la posibilidad de que + subj."
+  },
+  {
+   "id": "x:reformular-vs-descartar",
+   "kind": "contrast",
+   "title": "Rephrasing vs setting aside",
+   "es": "Es decir / mejor dicho… vs En cualquier caso…",
+   "en": "Restating or replacing vs ruling the objection irrelevant",
+   "unit": 53,
+   "requires": [
+    "g:reformulation",
+    "p:en-cualquier-caso"
+   ],
+   "contrasts": [
+    "g:reformulation",
+    "p:en-cualquier-caso"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "dc-reformuladores-c1"
+   ],
+   "note": "Choosing the wrong class misreports your intention."
+  },
+  {
+   "id": "x:parcial-vs-total",
+   "kind": "contrast",
+   "title": "Agreeing partly vs fully",
+   "es": "No te falta razón, ahora bien… / Coincido contigo en que…",
+   "en": "You've got a point, but… vs I agree that…",
+   "unit": 56,
+   "requires": [
+    "p:no-te-falta-razon",
+    "p:coincidir-en"
+   ],
+   "contrasts": [
+    "p:no-te-falta-razon",
+    "p:coincidir-en"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "fn-expresar-acuerdo-c1",
+    "fn-escepticismo-contraargumento-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "x:orden-escalera",
+   "kind": "contrast",
+   "title": "Blunt order vs ceremonious request",
+   "es": "Tú te callas. / ¿Sería tan amable de guardar silencio?",
+   "en": "You be quiet. / Would you be so kind as to be quiet?",
+   "unit": 59,
+   "requires": [
+    "p:orden-sin-imperativo",
+    "p:serias-tan-amable"
+   ],
+   "contrasts": [
+    "p:orden-sin-imperativo",
+    "p:serias-tan-amable"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "fn-orden-instruccion-c1",
+    "fn-favor-objetos-ayuda-c1"
+   ],
+   "note": "Same content, opposite ends of the ladder; register-matching practice."
+  }
+ ],
+ "triage": [
+  {
+   "lesson": "task-c1-idiom",
+   "verdict": "task",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "SEQ optional idiom track. Serves d:express-mixed-emotion; idioms converted to LatAm (hecho polvo → molido; humor de perros → mal genio)."
+  },
+  {
+   "lesson": "task-c1-ironia",
+   "verdict": "task",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "task-c1-decirlo",
+   "verdict": "task",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "task-c1-formal",
+   "verdict": "task",
+   "patterns": 2,
+   "chunks": 2,
+   "wordThemes": [],
+   "note": "Spain 'adjunto remito / quedo a la espera' → Colombian 'Quedo atento', 'Cordialmente'."
+  },
+  {
+   "lesson": "task-c1-verbos",
+   "verdict": "task",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "task-c1-emocion",
+   "verdict": "task",
+   "patterns": 3,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "task-c1-ensayo",
+   "verdict": "task",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "task-c1-precision",
+   "verdict": "task",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "Fixed expressions converted: a ojo → al ojo, por los pelos → por un pelo, con pelos y señales → con lujo de detalles; 'un frío que pela' and 'para chuparse los dedos' left for vocab."
+  },
+  {
+   "lesson": "task-c1-final",
+   "verdict": "task",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "dc-atenuacion-c1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "dc-reformuladores-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "o sea, es decir, mejor dicho already in g:reformulation; mined the distancing and recapitulative classes and 'o sea que' (LatAm for Peninsular 'vamos, que')."
+  },
+  {
+   "lesson": "dc-estilo-indirecto-c1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Tense/deixis shift already g:reported-speech-full."
+  },
+  {
+   "lesson": "dc-citas-encubiertas-c1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Concessive future 'será muy lista, pero…' already in g:tense-modal-uses; not duplicated."
+  },
+  {
+   "lesson": "dc-atenuacion-dialogica-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 2,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "dc-metaforas-c1",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [
+    "frozen metaphors (llover a cántaros, tener los pies en la tierra)"
+   ],
+   "note": "Spain items (plomo, ¡menudo lío!) replaced; 'como si' already g:como-si."
+  },
+  {
+   "lesson": "dc-ironia-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "'¡Pues vaya negocio!' (Peninsular) → ironic '¡Tremendo negocio!' in note."
+  },
+  {
+   "lesson": "dc-imperfecto-modal-c1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "dc-indefinido-perfecto-c1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Peninsular hoy-he/ayer-fui system is recognition only (g:spain-pasts); mined only the LatAm-valid 'still live' perfect."
+  },
+  {
+   "lesson": "dc-mantenimiento-referente-c1",
+   "verdict": "skip",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Optional deep unit; globalizing proforms (todo ello, este/aquel, dicho) already covered by g:referring-back. Nothing new worth a node."
+  },
+  {
+   "lesson": "dc-deixis-c1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Optional deep unit; mined pronoun disambiguation, dativo aspectual, pejorative ese, el suscrito."
+  },
+  {
+   "lesson": "dc-rematizacion-tematizacion-c1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Optional deep unit; subject postposition in indirect questions left to g:indirect-questions."
+  },
+  {
+   "lesson": "dc-valores-ilocutivos-c1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "dc-negacion-c1",
+   "verdict": "patterns",
+   "patterns": 5,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "dc-intensificacion-c1",
+   "verdict": "patterns",
+   "patterns": 7,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "Spain 'dinerillo', 'de narices', 'como la copa de un pino' dropped; Colombian 'su platica' added."
+  },
+  {
+   "lesson": "dc-focalizacion-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "Optional deep unit; right dislocation is oral-only, not noded."
+  },
+  {
+   "lesson": "fn-identificar-c1",
+   "verdict": "function",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Cleft 'lo que… es' already g:cleft-focus; cuyo already g:cuyo-relatives."
+  },
+  {
+   "lesson": "fn-pedir-informacion-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "fn-dar-informacion-c1",
+   "verdict": "function",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-pedir-informacion-c1; its ¡¿Cómo que…?! and 'una cosa es… y otra…' frames kept as patterns."
+  },
+  {
+   "lesson": "fn-pedir-confirmacion-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "'He sabido… os mudáis' converted to LatAm."
+  },
+  {
+   "lesson": "fn-confirmar-informacion-previa-c1",
+   "verdict": "chunks",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-pedir-confirmacion-c1. Spain '¡Y tanto!' dropped; 'de hecho' already g:argument-markers."
+  },
+  {
+   "lesson": "fn-pedir-dar-opinion-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "fn-valorar-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-aprobacion-desaprobacion-c1."
+  },
+  {
+   "lesson": "fn-aprobacion-desaprobacion-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "fn-expresar-acuerdo-c1",
+   "verdict": "function",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-expresar-desacuerdo-c1; acuerdo/desacuerdo share one can-do."
+  },
+  {
+   "lesson": "fn-expresar-desacuerdo-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 2,
+   "wordThemes": [],
+   "note": "Spain '¡De eso nada!' not noded; '¡Para nada!' noted."
+  },
+  {
+   "lesson": "fn-escepticismo-contraargumento-c1",
+   "verdict": "function",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "fn-certeza-evidencia-c1",
+   "verdict": "function",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "fn-hipotesis-posibilidad-c1",
+   "verdict": "function",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "'En el caso de haberlo sabido' already g:conditional-advanced."
+  },
+  {
+   "lesson": "fn-obligacion-necesidad-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Peninsular 'rellenar' → 'llenar'."
+  },
+  {
+   "lesson": "fn-conocimiento-desconocimiento-c1",
+   "verdict": "function",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "'¿Te has enterado de lo de…?' → LatAm preterite '¿Supiste lo de…?'."
+  },
+  {
+   "lesson": "fn-habilidad-c1",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "ability (competente, hábil, torpe para)"
+   ],
+   "note": "SEQ optional idiom track. Peninsular 'ser un hacha / patoso / manitas' dropped; LatAm 'es un crack', Colombian 'es un teso', 'todero' noted in p:ser-un-noun."
+  },
+  {
+   "lesson": "fn-recordar-olvidar-c1",
+   "verdict": "chunks",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "SEQ optional idiom track. 'Se me fue el santo al cielo' (Spain-leaning) left out; general LatAm items kept."
+  },
+  {
+   "lesson": "fn-gustos-aversion-c1",
+   "verdict": "wordlist",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [
+    "graded likes and dislikes (agradar, adorar, aborrecer, repugnar, dar náuseas)"
+   ],
+   "note": "SEQ merged into fn-tristeza-placer-c1. Graded verbs (agradar, adorar, aborrecer, repugnar, dar náuseas) are a scale of lexis; grammar already g:gustar-full/g:subj-emotion."
+  },
+  {
+   "lesson": "fn-preferencia-indiferencia-c1",
+   "verdict": "function",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-deseos-planes-c1. Spain 'un pimiento' → 'un comino'."
+  },
+  {
+   "lesson": "fn-deseos-planes-c1",
+   "verdict": "function",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "fn-estado-animo-alegria-c1",
+   "verdict": "mixed",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [
+    "joy and mood (eufórico, de buenas, dar saltos de alegría)"
+   ],
+   "note": "SEQ merged into fn-tristeza-placer-c1. Spain 'como loco de contento / encantado de la vida' left as vocab."
+  },
+  {
+   "lesson": "fn-tristeza-placer-c1",
+   "verdict": "function",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Spain 'me parto de risa', 'lo pasamos' → 'me muero de la risa', 'la pasamos'."
+  },
+  {
+   "lesson": "fn-hartazgo-enfado-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Spain 'hasta las narices', 'humor de perros' replaced (mal genio)."
+  },
+  {
+   "lesson": "fn-miedo-nerviosismo-c1",
+   "verdict": "function",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Spain 'estar como un flan', 'corazón en un puño' dropped."
+  },
+  {
+   "lesson": "fn-empatia-alivio-esperanza-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-miedo-nerviosismo-c1."
+  },
+  {
+   "lesson": "fn-decepcion-resignacion-c1",
+   "verdict": "function",
+   "patterns": 1,
+   "chunks": 2,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-arrepentimiento-verguenza-c1. Spain '¡Vaya, hombre!' → Colombian '¡Qué embarrada!'."
+  },
+  {
+   "lesson": "fn-arrepentimiento-verguenza-c1",
+   "verdict": "function",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "'Dar marcha atrás' → 'devolver el tiempo'; 'me pongo colorado' kept as vocab."
+  },
+  {
+   "lesson": "fn-sorpresa-admiracion-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Spain 'alucinar' recognition only."
+  },
+  {
+   "lesson": "fn-afecto-sensaciones-c1",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [
+    "physical sensations (sediento, tiritando, malestar, pinchazo)",
+    "affection (cariño, afecto, simpatía)"
+   ],
+   "note": "Spain 'hecho polvo / no puedo con mi alma' → 'molido / muerto'. Body-sensation lexis to vocab."
+  },
+  {
+   "lesson": "fn-orden-instruccion-c1",
+   "verdict": "function",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Spain 'bolso' etc. not reused."
+  },
+  {
+   "lesson": "fn-favor-objetos-ayuda-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-responder-orden-peticion-c1. Spain 'echar un cable', 'cargador de móvil' converted (echar una mano, celular)."
+  },
+  {
+   "lesson": "fn-repetir-orden-c1",
+   "verdict": "function",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-orden-instruccion-c1."
+  },
+  {
+   "lesson": "fn-responder-orden-peticion-c1",
+   "verdict": "function",
+   "patterns": 4,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "Spain 'faltaría más' → LatAm 'faltaba más'."
+  },
+  {
+   "lesson": "fn-permiso-prohibicion-c1",
+   "verdict": "function",
+   "patterns": 5,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "'Sí/vale, pero que…' → 'Sí/listo, pero que…'."
+  },
+  {
+   "lesson": "fn-proponer-ofrecer-confirmar-c1",
+   "verdict": "function",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "Spain '¿Te apuntas?' → '¿Te animas?' / Col. '¿Te le mides?'."
+  },
+  {
+   "lesson": "fn-aceptar-rechazar-propuesta-c1",
+   "verdict": "function",
+   "patterns": 3,
+   "chunks": 2,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-proponer-ofrecer-confirmar-c1. '¡Ni atado!' → '¡Ni amarrado!'; 'me dejéis' → 'me dejen'."
+  },
+  {
+   "lesson": "fn-aconsejar-advertir-amenazar-c1",
+   "verdict": "function",
+   "patterns": 3,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "Spain 'jersey' not reused."
+  },
+  {
+   "lesson": "fn-reprochar-ofrecerse-c1",
+   "verdict": "function",
+   "patterns": 2,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "fn-tranquilizar-animar-c1",
+   "verdict": "chunks",
+   "patterns": 0,
+   "chunks": 4,
+   "wordThemes": [],
+   "note": "Spain '¡A por ello!', 'no te cortes' → '¡Dale!/¡Hágale!', 'no te dé pena'."
+  },
+  {
+   "lesson": "fn-saludar-c1",
+   "verdict": "chunks",
+   "patterns": 0,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "Spain '¿Qué pasa?' as greeting not noded; 'señora ministra' left as vocab note."
+  },
+  {
+   "lesson": "fn-responder-saludo-dirigirse-c1",
+   "verdict": "chunks",
+   "patterns": 0,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-saludar-c1. Spain 'seguimos tirando' → 'Ahí vamos'; 'guapa' as address dropped."
+  },
+  {
+   "lesson": "fn-disculparse-responder-c1",
+   "verdict": "function",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-agradecer-pesame-c1. 'Mil perdones' → 'Mil disculpas'; 'por esta vez pase' → 'te la paso'."
+  },
+  {
+   "lesson": "fn-agradecer-pesame-c1",
+   "verdict": "chunks",
+   "patterns": 0,
+   "chunks": 3,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "fn-felicitar-despedirse-c1",
+   "verdict": "chunks",
+   "patterns": 0,
+   "chunks": 2,
+   "wordThemes": [],
+   "note": "'Que cumplas muchos más' / '¡Choca esos cinco!' left as vocab-level formulas."
+  },
+  {
+   "lesson": "fn-estado-general-cosas-c1",
+   "verdict": "function",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "fn-introducir-relato-atencion-c1",
+   "verdict": "function",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "Spain '¡Hala!', '¿no te he liado?' → '¿No te enredé?'."
+  },
+  {
+   "lesson": "fn-destacar-silencio-tema-cierre-c1",
+   "verdict": "chunks",
+   "patterns": 1,
+   "chunks": 3,
+   "wordThemes": [],
+   "note": "SEQ merged into fn-introducir-relato-atencion-c1. Spain 'no habléis todos a la vez' dropped."
+  },
+  {
+   "lesson": "gn-generos-orales-c1",
+   "verdict": "genre",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-generos-escritos-c1",
+   "verdict": "genre",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-presentacion-publica-c1",
+   "verdict": "genre",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-presentacion-publica-c2",
+   "verdict": "genre",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Same can-do as gn-presentacion-publica-c1 (polished end)."
+  },
+  {
+   "lesson": "gn-carta-comercial-c1",
+   "verdict": "genre",
+   "patterns": 2,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-carta-reclamacion-c1",
+   "verdict": "genre",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-composicion-escrita-c1",
+   "verdict": "genre",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-trabajo-academico-c1",
+   "verdict": "genre",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-descriptiva-personas-c1",
+   "verdict": "genre",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-descriptiva-objetos-c1",
+   "verdict": "genre",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by d:describe-precisely with persons/places."
+  },
+  {
+   "lesson": "gn-descriptiva-lugares-c1",
+   "verdict": "genre",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-narrativa-c1",
+   "verdict": "genre",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-expositiva-c1",
+   "verdict": "genre",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-argumentativa-c1",
+   "verdict": "genre",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-argumentativa-conectores-c1",
+   "verdict": "genre",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "gn-resena-c1",
+   "verdict": "genre",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  }
+ ]
+}

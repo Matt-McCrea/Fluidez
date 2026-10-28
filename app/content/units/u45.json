@@ -1,0 +1,135 @@
+{
+ "id": "u45",
+ "band": "B2",
+ "title": "The news",
+ "theme": "9. Información y medios de comunicación: journalism, investigations, sources, allegations",
+ "canDo": "I can follow and write a news report, including what is only alleged.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:future-perfect"
+   ],
+   "chunks": [
+    "c:quien-sabe"
+   ],
+   "lexemes": [],
+   "chapter": "ch140"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:future-perfect",
+    "g:argument-markers"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:no-tener-ni-idea-de",
+    "p:estar-al-tanto-de",
+    "p:es-verdad-eso-de-que",
+    "p:de-verdad-que",
+    "p:habria-que-ver-si",
+    "p:lo-mas-probable-es-que",
+    "p:news-quantities",
+    "p:cabe-destacar"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch141"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:conditional-rumour"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch142"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:conditional-rumour",
+    "g:future-perfect",
+    "p:presuntamente-al-parecer"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:si-solo-si-siempre-y-cuando",
+    "p:hay-que-tener-en-cuenta",
+    "p:no-crees-que",
+    "p:solo-que",
+    "p:mientras-subj",
+    "p:para-ser",
+    "p:provocar-ocasionar",
+    "p:aproximar-cifras",
+    "p:indice-tasa",
+    "p:duplicarse"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:future-perfect",
+    "g:conditional-rumour",
+    "g:impersonal-register"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch143",
+   "scene": "sc-u45-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:impersonal-register"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch144"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:impersonal-register",
+    "g:conditional-rumour",
+    "x:mientras-ind-subj",
+    "p:ocurrir-producirse",
+    "p:encontrarse-hallarse",
+    "p:me-contaron-que"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u45-b"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:future-perfect",
+    "g:conditional-rumour",
+    "g:impersonal-register",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Mariana's source says that Altamira allegedly paid the suspended official; the official reportedly has left the country. The newspapers report it carefully; social media does not. Then a smaller news item: according to Altamira's press office, the company \"will have finished\" the hotel next door before the decision arrives.",
+ "quota": {
+  "bankSentences": 618,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 5
+ }
+}

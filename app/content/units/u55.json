@@ -1,0 +1,138 @@
+{
+ "id": "u55",
+ "band": "C1",
+ "title": "Institutional Spanish",
+ "theme": "17 + 15: cooperatives, statutes, legal and administrative texts",
+ "canDo": "I can read and write institutional and legal Spanish without sounding like a form.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:cuyo-relatives"
+   ],
+   "chunks": [
+    "c:a-precio-de-costo",
+    "c:sin-otro-particular"
+   ],
+   "lexemes": [],
+   "chapter": "ch190"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:cuyo-relatives",
+    "g:wish-exclamatives",
+    "p:obligacion-origen",
+    "p:basta-con",
+    "p:condenar",
+    "p:el-orden-la-orden"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:por-orden-de",
+    "p:agilizar-tramites",
+    "p:conocimiento-formal",
+    "p:en-modo-alguno",
+    "p:el-suscrito",
+    "p:se-ruega",
+    "p:no-dude-en",
+    "p:tener-el-gusto-de"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch191"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:nominalisation"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch192"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:nominalisation",
+    "g:cuyo-relatives",
+    "p:en-relacion-con",
+    "p:solicitar"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:yo-ni-loco",
+    "p:para-que-rhetorical",
+    "p:constar-de",
+    "p:dar-comienzo-poner-fin",
+    "p:vencer-plazo",
+    "p:con-antelacion",
+    "p:aplazar-posponer",
+    "p:ajustarse-a",
+    "p:por-consenso",
+    "p:a-partes-iguales"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:cuyo-relatives",
+    "g:nominalisation",
+    "g:absolute-constructions"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch193",
+   "scene": "sc-u55-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:absolute-constructions"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch194"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:absolute-constructions",
+    "g:nominalisation",
+    "x:antemano-antelacion"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u55-b"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:cuyo-relatives",
+    "g:nominalisation",
+    "g:absolute-constructions",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "The heritage decision arrives: the building is protected. Now the family must formalise ownership: Tomás, Yesid and the descendants of Rosa and Joaquín create a cooperative with the neighbours. Statutes, legal Spanish, quorums, \"el que no cumpliere\". Yesid moves to Bogotá for six months and teaches Jhon Fredy to dive in the municipal pool.",
+ "quota": {
+  "bankSentences": 642,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 6
+ }
+}

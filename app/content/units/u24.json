@@ -1,0 +1,119 @@
+{
+ "id": "u24",
+ "band": "A2",
+ "title": "Reasons and choices",
+ "theme": "10. Vivienda: moving, comparing flats, pros and cons, neighbourhoods of Bogotá",
+ "canDo": "I can explain a decision, weigh reasons for and against, and correct what someone assumed.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:pero-sino"
+   ],
+   "chunks": [
+    "c:lo-bueno-es",
+    "c:por-un-lado",
+    "c:no-me-convence"
+   ],
+   "lexemes": [],
+   "chapter": "ch070"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:pero-sino",
+    "g:hace-que-desde",
+    "x:pero-sino"
+   ],
+   "chunks": [
+    "c:la-idea-es",
+    "c:que-va"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:aunque-indicative"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:aunque-indicative",
+    "g:pero-sino"
+   ],
+   "chunks": [
+    "c:igual"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch071"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:depende-de",
+    "p:tiene-mucha-luz",
+    "p:preferir-a"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:tanto-como"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch072"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:tanto-como",
+    "g:aunque-indicative",
+    "x:tan-tanto"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:pero-sino",
+    "g:aunque-indicative",
+    "g:tanto-como"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u24-a"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:pero-sino",
+    "g:aunque-indicative",
+    "g:tanto-como"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u24-c"
+  }
+ ],
+ "storyArc": "Altamira makes a generous offer: a bigger, modern space in Chapinero, rent-free for two years, if they leave the corner. Doña Gloria wants Tomás to take a bigger flat; Vale's mother wants Vale back in Medellín. Tomás and Vale weigh it all up on a napkin, reason by reason, and say no. Altamira smiles and says that's a pity.",
+ "quota": {
+  "bankSentences": 393,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 3
+ }
+}

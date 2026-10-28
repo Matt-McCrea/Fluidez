@@ -1,0 +1,124 @@
+{
+ "id": "u17",
+ "band": "A2",
+ "title": "Making plans",
+ "theme": "8. Ocio: invitations, events, cinema, football, salsa, timing words",
+ "canDo": "I can make, accept and turn down plans, and talk about conditions and timing.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:si-present"
+   ],
+   "chunks": [
+    "c:me-parece-bien",
+    "c:me-encantaria",
+    "c:sera-otro-dia"
+   ],
+   "lexemes": [],
+   "chapter": "ch045"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:si-present",
+    "g:double-pronouns"
+   ],
+   "chunks": [
+    "c:que-plan",
+    "c:cuadremos",
+    "c:me-avisas",
+    "c:dale"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:prep-infinitive"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:prep-infinitive",
+    "g:si-present"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:no-se-que-hacer",
+    "p:entonces-quedamos"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch046"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:que-tal-si",
+    "p:por-que-no",
+    "p:te-invito-a",
+    "p:refuse-es-que",
+    "p:durar-durante",
+    "p:event-ser-en"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:cuando-indicative"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch047"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:cuando-indicative",
+    "g:prep-infinitive",
+    "x:ser-event-estar-location"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:si-present",
+    "g:prep-infinitive",
+    "g:cuando-indicative"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u17-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:si-present",
+    "g:prep-infinitive",
+    "g:cuando-indicative",
+    "x:ser-estar-adj"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Invitations multiply: Mariana invites Tomás to a salsa night, if he can learn three steps by Friday; Vale invites him to her sister's engagement party in Medellín next month. Hernando wants everyone at the football on Sunday. Tomás tries to say yes to everything, and before the salsa night he spends two hours on YouTube and still steps on Mariana's feet.",
+ "quota": {
+  "bankSentences": 474,
+  "chapters": 3,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "id": "u48",
+ "band": "B2",
+ "title": "Describing precisely",
+ "theme": "16. Ciencia y tecnología + 10: buildings, materials, processes, measurements",
+ "canDo": "I can describe objects, places and processes precisely in writing.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:relatives-formal"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch155"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:relatives-formal",
+    "g:lo-que-intensity",
+    "p:lo-que-cosa-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:synonym-hypernym",
+    "p:se-divide-en",
+    "p:en-comparacion-con",
+    "p:describe-with-images",
+    "p:presenting-to-audience",
+    "p:consistir-en",
+    "p:plural-one-object",
+    "p:azul-oscuro-invariable"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch156"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:participle-gerund-clauses"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch157"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:participle-gerund-clauses",
+    "g:relatives-formal",
+    "x:lo-que-el-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:tener-forma-de",
+    "p:fabricado-con-contener",
+    "p:colores-compuestos",
+    "p:pesar-pesarse",
+    "p:resistente-a",
+    "p:a-lo-largo-de",
+    "p:le-falta-sal",
+    "p:caracterizarse-por",
+    "p:detenerse-estar-parado",
+    "p:los-de-la-camiseta"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:relatives-formal",
+    "g:participle-gerund-clauses",
+    "g:infinitive-perfect"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch158",
+   "scene": "sc-u48-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:infinitive-perfect"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch159"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:infinitive-perfect",
+    "g:participle-gerund-clauses",
+    "p:same-subject-haber"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u48-b"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:relatives-formal",
+    "g:participle-gerund-clauses",
+    "g:infinitive-perfect"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u48-c"
+  }
+ ],
+ "storyArc": "An architect surveys the 1920s building: adobe walls sixty centimetres thick, original tiles, a cracked beam caused by the vibrations of the demolition next door. Her report, measured and precise, is the evidence they needed. Hernando insists on being present and gets told off for leaning on the cracked wall.",
+ "quota": {
+  "bankSentences": 582,
+  "chapters": 5,
+  "scenes": 3,
+  "writingTasks": 5
+ }
+}

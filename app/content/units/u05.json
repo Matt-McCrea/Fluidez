@@ -1,0 +1,124 @@
+{
+ "id": "u05",
+ "band": "A1",
+ "title": "People in my life",
+ "theme": "4. Relaciones personales + 1. Individuo: dimensión física: family, physical description, personality adjectives, numbers to 100, ages",
+ "canDo": "I can describe my family and friends: who they are, what they look like, what they're like and how old they are.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:yo-irregular"
+   ],
+   "chunks": [
+    "c:tienes-hermanos",
+    "c:hijo-unico",
+    "c:como-es"
+   ],
+   "lexemes": [],
+   "chapter": "ch009"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:yo-irregular",
+    "g:preterite-ser-ir-hacer"
+   ],
+   "chunks": [
+    "c:buena-gente",
+    "c:si-soy-yo"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:adjective-agreement"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:adjective-agreement",
+    "g:yo-irregular"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:personal-a",
+    "p:numbers-un-una"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch010"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:somos-cuatro",
+    "p:tener-anos",
+    "p:es-tiene-lleva",
+    "p:no-es-x-es-y",
+    "p:bien-bueno",
+    "p:tener-razon"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:possessives"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch011"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:possessives",
+    "g:adjective-agreement",
+    "p:mayor-menor",
+    "p:masculine-plural-mixed",
+    "p:te-presento-a",
+    "p:de-owner"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:yo-irregular",
+    "g:adjective-agreement",
+    "g:possessives"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u05-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:yo-irregular",
+    "g:adjective-agreement",
+    "g:possessives"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Vale video-calls her sister Camila in Medellín and her mother, who wants to know whether \"el canadiense\" is handsome (Camila thinks so; Vale says he is \"normal\"). Hernando shows off his grandchildren. Tomás opens Rosa's photo album and finds the family he barely remembers, plus a young man with his own nose and chin who is not his grandfather. Nobody will tell him who he is.",
+ "quota": {
+  "bankSentences": 540,
+  "chapters": 3,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

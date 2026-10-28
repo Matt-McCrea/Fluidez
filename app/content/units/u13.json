@@ -1,0 +1,127 @@
+{
+ "id": "u13",
+ "band": "A1",
+ "title": "Around the city",
+ "theme": "14. Viajes, alojamiento y transporte: TransMilenio, buses, taxis, directions (cuadra, esquina, carrera/calle), places",
+ "canDo": "I can ask for and give directions, use public transport, and tell a friend or a stranger what to do.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:commands-tu"
+   ],
+   "chunks": [
+    "c:oiga-oye",
+    "c:con-permiso",
+    "c:me-deja-en"
+   ],
+   "lexemes": [],
+   "chapter": "ch033"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:commands-tu",
+    "g:that-clauses"
+   ],
+   "chunks": [
+    "c:ojo",
+    "c:oye-mira"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:commands-usted"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:commands-usted",
+    "g:commands-tu",
+    "x:tu-usted",
+    "x:commands-tu-usted"
+   ],
+   "chunks": [
+    "c:siga-siga"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:street-names"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch034"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:ir-venir",
+    "p:transport-en",
+    "p:subirse-bajarse",
+    "p:directions-cuadras",
+    "p:tardar-en",
+    "p:request-ladder"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:indirect-objects"
+   ],
+   "chunks": [
+    "c:cuanto-se-demora"
+   ],
+   "lexemes": [],
+   "chapter": "ch035"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:indirect-objects",
+    "g:commands-usted",
+    "x:lo-le",
+    "p:preguntar-pedir"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:indirect-objects"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u13-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:commands-tu",
+    "g:commands-usted",
+    "g:indirect-objects"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Tomás crosses the city to the notary's office in the north to find the property papers: two TransMilenios, the wrong direction, a street vendor who gives perfect directions, a lady who gives very different ones. In the end Hernando picks him up in his ancient yellow taxi, which he calls \"la Burra\". At the notary's they tell him to come back with Rosa's original deed.",
+ "quota": {
+  "bankSentences": 492,
+  "chapters": 3,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

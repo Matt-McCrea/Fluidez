@@ -1,0 +1,116 @@
+{
+ "id": "u08",
+ "band": "A1",
+ "title": "Have you ever…?",
+ "theme": "14. Viajes: Colombian places (Cartagena, Medellín, the coffee region), experiences, abilities",
+ "canDo": "I can talk about places I've been and things I've done or haven't done yet, and say what I can and know how to do.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:perfecto-experience"
+   ],
+   "chunks": [
+    "c:ni-idea",
+    "c:que-envidia"
+   ],
+   "lexemes": [],
+   "chapter": "ch018"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:perfecto-experience",
+    "g:quantifiers",
+    "x:pret-perfecto-latam",
+    "x:perfecto-preterito"
+   ],
+   "chunks": [
+    "c:todavia-no",
+    "c:una-vez"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:negation-words"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:negation-words",
+    "g:perfecto-experience"
+   ],
+   "chunks": [
+    "c:nunca-en-la-vida"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch019"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:verb-infinitive"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch020"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:verb-infinitive",
+    "g:negation-words",
+    "x:saber-poder",
+    "x:saber-conocer",
+    "p:saber-conocer",
+    "p:tener-ganas-de",
+    "p:para-inf",
+    "p:es-adj-inf"
+   ],
+   "chunks": [
+    "c:vale-la-pena"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:perfecto-experience",
+    "g:negation-words",
+    "g:verb-infinitive"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u08-a"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:perfecto-experience",
+    "g:negation-words",
+    "g:verb-infinitive"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u08-c"
+  }
+ ],
+ "storyArc": "Vale and Hernando are horrified by everything Tomás has never done: never tried ajiaco, never played tejo, never climbed Monserrate. He has not read the café's lease yet either. Then a man in a beautiful suit orders a cappuccino, tips too much, and asks Tomás: \"¿Ha pensado en vender?\". His name is Ricardo Altamira. The month ends: they have taken $2.130.000. Tomás has lost the bet, and he is oddly happy about it.",
+ "quota": {
+  "bankSentences": 426,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 3
+ }
+}

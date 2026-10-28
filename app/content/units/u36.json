@@ -1,0 +1,120 @@
+{
+ "id": "u36",
+ "band": "B1",
+ "title": "Work and money",
+ "theme": "15. Economía e industria: money, prices, sales, banks, figures and trends",
+ "canDo": "I can talk about money, prices and results, compare figures and draw conclusions.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:passive-se"
+   ],
+   "chunks": [
+    "c:bien-hecho"
+   ],
+   "lexemes": [],
+   "chapter": "ch107"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:passive-se",
+    "g:deber-modal"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:contar-con",
+    "p:mas-de-lo-que"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch108"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:comparatives-advanced"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch109"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:comparatives-advanced",
+    "g:passive-se",
+    "x:mas-que-mas-de-lo-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:estar-a",
+    "p:la-mayoria-de",
+    "p:por-ciento",
+    "p:subir-subida",
+    "p:fracciones-de",
+    "p:a-cuanto-esta",
+    "p:en-oferta",
+    "p:agotarse"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:consequence-connectors"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:consequence-connectors",
+    "g:comparatives-advanced"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u36-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:passive-se",
+    "g:comparatives-advanced",
+    "g:consequence-connectors"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u36-a"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:passive-se",
+    "g:comparatives-advanced",
+    "g:consequence-connectors"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u36-c"
+  }
+ ],
+ "storyArc": "Tomás and Vale go through the numbers: sales have doubled since the blogger's review, Vale's pastries are half the income, but the fines and the lawyer have eaten the profit. The more they earn, the more they owe. Mariana suggests crowdfunding the legal costs; in a week neighbours, regulars and strangers raise twice what they asked for.",
+ "quota": {
+  "bankSentences": 456,
+  "chapters": 3,
+  "scenes": 3,
+  "writingTasks": 4
+ }
+}

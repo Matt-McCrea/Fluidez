@@ -1,0 +1,180 @@
+u01 [A1] sessions 1-10 | Hello — who I am | 3. Identidad personal: greetings, names, countries and nationalities, jobs, numbers 0–20, café basics (tinto, agua, pan)
+   can-do: I can greet someone, say who I am, where I'm from and what I do, and ask them the same.
+   grammar: 1:g:ser-identity, 3:g:sounds-letters, 6:g:gender-articles, 8:g:present-ar
+u02 [A1] sessions 11-19 | My day-to-day | 7. Trabajo + 3. Identidad personal: workplaces, everyday verbs (-ar/-er/-ir), places in the city, how you are (states)
+   can-do: I can say where I live and work, what I do on a normal day and how I am, and ask simple questions.
+   grammar: 11:g:present-er-ir, 13:g:estar-location-states, 16:g:questions
+u03 [A1] sessions 20-28 | Likes, wants and plans | 8. Ocio: free-time activities, food and drink likes, days of the week, weekend plans
+   can-do: I can say what I like, want and can do, and what I'm going to do this weekend.
+   grammar: 20:g:gustar-basic, 22:g:stem-boot, 25:g:ir-a-plans
+u04 [A1] sessions 29-37 | The weekend | 8. Ocio + 12. Compras: the market (Paloquemao), shopping basics, past time words (ayer, anoche, el sábado)
+   can-do: I can say what I did yesterday and last weekend, in order.
+   grammar: 29:g:preterite-ar, 31:g:preterite-er-ir, 34:g:preterite-ser-ir-hacer
+u05 [A1] sessions 38-47 | People in my life | 4. Relaciones personales + 1. Individuo: dimensión física: family, physical description, personality adjectives, numbers to 100, ages
+   can-do: I can describe my family and friends: who they are, what they look like, what they're like and how old they are.
+   grammar: 38:g:yo-irregular, 40:g:adjective-agreement, 44:g:possessives
+u06 [A1] sessions 48-56 | How it was | 10. Vivienda (the café and the street, then and now) + time: decades, old things, years
+   can-do: I can describe what a place or a person was like and say what happened there and how long ago.
+   grammar: 48:g:imperfect-states, 50:g:preterite-irregular-strong, 53:g:hace-ago
+u07 [A1] sessions 57-66 | Where I live | 10. Vivienda: rooms, furniture, the neighbourhood (tienda, panadería, droguería), renting (arriendo)
+   can-do: I can say what there is in my home and neighbourhood, where things are, and how much of everything there is.
+   grammar: 57:g:hay-vs-esta, 59:g:demonstratives, 63:g:quantifiers
+u08 [A1] sessions 67-75 | Have you ever…? | 14. Viajes: Colombian places (Cartagena, Medellín, the coffee region), experiences, abilities
+   can-do: I can talk about places I've been and things I've done or haven't done yet, and say what I can and know how to do.
+   grammar: 67:g:perfecto-experience, 69:g:negation-words, 72:g:verb-infinitive
+u09 [A1] sessions 76-85 | My routine | 13. Salud e higiene (aseo) + 7. Trabajo: daily routine, telling the time, frequency, chores
+   can-do: I can describe my whole day, say what I'm doing right now and what I have to do.
+   grammar: 76:g:reflexive-routine, 78:g:estar-gerund, 82:g:tener-que-hay-que
+u10 [A1] sessions 86-95 | Food and ordering | 5. Alimentación: Colombian food (ajiaco, arepa, bandeja, jugos), café and restaurant, tastes, quantities
+   can-do: I can order food and drink, say what I and other people like, and ask for what's missing.
+   grammar: 86:g:gustar-full, 88:g:stem-e-i, 92:g:direct-objects
+u11 [A1] sessions 96-104 | How life used to be | 4. Relaciones personales + 6. Educación: childhood, school, old habits, comparing then and now
+   can-do: I can describe what my life used to be like and compare it with now.
+   grammar: 96:g:imperfect-habitual, 98:g:preterite-spelling-stem, 101:g:comparatives
+u12 [A1] sessions 105-114 | Telling a story | 8. Ocio + 2. Individuo (emotions basic): events, surprises, weather, story time words
+   can-do: I can tell a short story: what happened, what it was like, and what was going on when it happened.
+   grammar: 105:g:pret-vs-imperfect, 107:g:imperfect-progressive, 111:g:that-clauses
+u13 [A1] sessions 115-124 | Around the city | 14. Viajes, alojamiento y transporte: TransMilenio, buses, taxis, directions (cuadra, esquina, carrera/calle), places
+   can-do: I can ask for and give directions, use public transport, and tell a friend or a stranger what to do.
+   grammar: 115:g:commands-tu, 117:g:commands-usted, 121:g:indirect-objects
+u14 [A1] sessions 125-133 | Joining it up | 9. Información y medios: messages, notes, WhatsApp, describing things with detail, reasons
+   can-do: I can write a connected message with reasons and details instead of short separate sentences.
+   grammar: 125:g:relative-que, 127:g:cause-result, 130:g:prep-pronouns
+u15 [A2] sessions 134-143 | How are you feeling? | 2. Individuo: dimensión perceptiva y anímica + 13. Salud: moods, body, aches, states, opinions of things
+   can-do: I can say how I and others feel, physically and emotionally, and say what I think of things.
+   grammar: 134:g:ser-estar-adjectives, 136:g:estar-participle, 140:g:parecer-quedar
+u16 [A2] sessions 144-153 | Shopping | 12. Compras, tiendas y establecimientos: clothes, sizes, colours, materials, prices, returns
+   can-do: I can shop for clothes and other things: ask, compare, try on, pay and return something.
+   grammar: 144:g:object-pronoun-position, 146:g:superlatives, 150:g:double-pronouns
+u17 [A2] sessions 154-163 | Making plans | 8. Ocio: invitations, events, cinema, football, salsa, timing words
+   can-do: I can make, accept and turn down plans, and talk about conditions and timing.
+   grammar: 154:g:si-present, 156:g:prep-infinitive, 160:g:cuando-indicative
+u18 [A2] sessions 164-173 | On the road | 14. Viajes, alojamiento y transporte: bus terminals, flights, hotels, luggage, the road to Medellín
+   can-do: I can travel by bus or plane, book a room, and sort out tickets, luggage and directions.
+   grammar: 164:g:por-para-1, 166:g:commands-with-pronouns, 170:g:possessives-stressed
+u19 [A2] sessions 174-183 | Work and studies | 7. Trabajo + 6. Educación: jobs, job ads, workplace, courses, skills
+   can-do: I can talk about my job and studies, read a job ad, and say what a workplace needs.
+   grammar: 174:g:se-impersonal, 176:g:relatives-donde-lo-que, 180:g:article-uses
+u20 [A2] sessions 184-193 | Guesses and predictions | 20. Geografía y naturaleza (weather, climate) + 8. Ocio: forecasts, promises, the future
+   can-do: I can guess what's going on, make predictions and promises, and give advice with "would" and "should".
+   grammar: 184:g:future-conjecture, 186:g:future-promises, 190:g:conditional
+u21 [A2] sessions 194-203 | What I want you to do | 4. Relaciones personales + 7. Trabajo: requests, favours, rules at work, partnerships
+   can-do: I can ask someone to do something, say what I need from them, and tell them not to do something.
+   grammar: 194:g:subj-wanting, 196:g:subj-irregulars, 200:g:negative-commands
+u22 [A2] sessions 204-213 | Good news, bad news | 4. Relaciones personales: celebrations, birthdays, weddings, condolences, Colombian holidays
+   can-do: I can congratulate, wish someone well, react to good and bad news, and send a warm message.
+   grammar: 204:g:subj-wishes, 206:g:exclamations, 210:g:diminutives
+u23 [A2] sessions 214-223 | Sorting things out | 11. Servicios: bank, phone company, repairs, paperwork (cédula, trámites), complaints
+   can-do: I can deal with a bank, a phone company or a repair: explain the problem, how long it's lasted, and what I need.
+   grammar: 214:g:que-vs-cual, 216:g:indefinites, 220:g:hace-que-desde
+u24 [A2] sessions 224-233 | Reasons and choices | 10. Vivienda: moving, comparing flats, pros and cons, neighbourhoods of Bogotá
+   can-do: I can explain a decision, weigh reasons for and against, and correct what someone assumed.
+   grammar: 224:g:pero-sino, 226:g:aunque-indicative, 230:g:tanto-como
+u25 [A2] sessions 234-243 | Places and people in detail | 20. Geografía y naturaleza + 4: Medellín, landscapes, climate, people described in depth
+   can-do: I can describe a place and a person in detail and pass on what someone told me.
+   grammar: 234:g:le-doubling, 236:g:adverbs-mente, 240:g:reported-past-basic
+u26 [A2] sessions 244-253 | Telling it well | 8. Ocio + 2: anecdotes, surprises, mishaps, reactions to a story
+   can-do: I can tell an anecdote in a clear order, say how it happened, and react to someone else's.
+   grammar: 244:g:gerund-ways, 246:g:time-sequence, 250:g:acabar-de-ya-todavia
+u27 [A2] sessions 254-263 | Writing it down | 9. Información y medios de comunicación: emails, reviews, messages, notices, social media
+   can-do: I can write a short email, review or message at paragraph length, with a purpose and reactions.
+   grammar: 254:g:written-register-a2, 256:g:para-que, 260:g:subj-emotion-intro
+u28 [B1] sessions 264-273 | What I think | 17. Gobierno, política y sociedad: the neighbourhood, city problems, public space, opinions
+   can-do: I can give and ask for opinions, judge situations, and say what I don't think.
+   grammar: 264:g:subj-opinion-negated, 267:g:subj-value, 270:g:lo-adjective
+u29 [B1] sessions 274-283 | Agreeing and arguing | 9. Información y medios: debates, rumours, likelihood, certainty
+   can-do: I can agree, disagree, doubt and concede without turning it into a fight.
+   grammar: 274:g:subj-doubt, 277:g:quizas-a-lo-mejor, 280:g:conditional-past-guess
+u30 [B1] sessions 284-293 | Feelings | 2. Individuo: dimensión perceptiva y anímica: emotions, character change, reactions
+   can-do: I can say how other people's actions make me feel, and describe how people change.
+   grammar: 284:g:subj-emotion, 287:g:verbs-of-change, 290:g:se-meaning-change
+u31 [B1] sessions 294-303 | A longer story | 4. Relaciones personales: family history, letters, memories, the 1970s–80s in Bogotá
+   can-do: I can tell a story that reaches back before its own beginning, and report what people said.
+   grammar: 294:g:pluperfect, 297:g:narrative-pasts, 300:g:reported-backshift
+u32 [B1] sessions 304-313 | Advice and plans | 7. Trabajo + 15. Economía (small business): business plans, advice, timing
+   can-do: I can give advice at different levels of directness and talk about plans that depend on when things happen.
+   grammar: 304:g:subj-influence, 307:g:subj-cuando-future, 310:g:subj-purpose-full
+u33 [B1] sessions 314-323 | Looking for something | 10. Vivienda + 12: premises, requirements, real-estate ads, specifications
+   can-do: I can describe exactly what I'm looking for, even when I don't know if it exists.
+   grammar: 314:g:subj-relative, 317:g:relatives-prepositions, 320:g:cada-cualquier
+u34 [B1] sessions 324-333 | Mishaps | 11. Servicios + 1: accidents, losses, breakages, insurance, the police report (denuncia)
+   can-do: I can explain an accident or a mishap, what got lost or broken, and ask for help.
+   grammar: 324:g:se-accidental, 327:g:possessive-dative, 330:g:subj-perfect
+u35 [B1] sessions 334-343 | At the doctor | 13. Salud e higiene: symptoms, the EPS and the clinic, medicines, healthy habits, rules
+   can-do: I can explain symptoms, understand advice and instructions, and talk about rules.
+   grammar: 334:g:por-para-2, 337:g:impersonal-obligation, 340:g:deber-modal
+u36 [B1] sessions 344-353 | Work and money | 15. Economía e industria: money, prices, sales, banks, figures and trends
+   can-do: I can talk about money, prices and results, compare figures and draw conclusions.
+   grammar: 344:g:passive-se, 347:g:comparatives-advanced, 350:g:consequence-connectors
+u37 [B1] sessions 354-363 | Keeping a conversation going | 9. Información y medios: phone calls, messages, conversation management
+   can-do: I can keep a conversation going: show interest, interrupt, check I understood and pass on messages.
+   grammar: 354:g:questions-prepositions, 357:g:reported-requests, 360:g:indirect-questions
+u38 [B1] sessions 364-373 | In the news | 9. Información y medios de comunicación: news, press, events, causes and consequences
+   can-do: I can follow a news story, say what happened and why, and react to it.
+   grammar: 364:g:passive-ser, 367:g:causal-advanced, 370:g:concession-despite
+u39 [B1] sessions 374-383 | Joining ideas | 6. Educación: essays, presentations, structure, study
+   can-do: I can write a connected text with an introduction, a development and a conclusion.
+   grammar: 374:g:infinitive-subject, 377:g:discourse-structure, 380:g:referring-back
+u40 [B1] sessions 384-393 | If things were different | 20. Geografía y naturaleza: the Caribbean coast, sea, climate, nature, imaginary journeys
+   can-do: I can talk about imaginary situations and say what I would do.
+   grammar: 384:g:imperfect-subj, 387:g:si-hypothetical, 390:g:como-si
+u41 [B1] sessions 394-403 | Wishes and regrets | 4. Relaciones personales: family reunions, reconciliation, requests in the past
+   can-do: I can say what I wish were different and report what people asked me to do.
+   grammar: 394:g:subj-past-triggers, 397:g:ojala-past, 400:g:reported-commands-past
+u42 [B2] sessions 404-413 | One thing, five ways | 4 + 7: register, politeness, formality ladders, Colombian courtesy
+   can-do: I can make the same request at five levels of formality and know which one fits.
+   grammar: 404:g:register-ladder, 409:g:softening
+u43 [B2] sessions 414-423 | What would have happened | 14 + 4: decisions, turning points, alternative histories
+   can-do: I can talk about what would have happened if things had gone differently, and hedge about what probably did.
+   grammar: 414:g:pluperfect-subj, 417:g:conditional-perfect, 421:g:si-past-unreal
+u44 [B2] sessions 424-433 | Making the case | 17. Gobierno, política y sociedad: heritage, urban development, rights, public hearings
+   can-do: I can argue a position with evidence, conditions and concessions.
+   grammar: 424:g:subj-concessive, 427:g:subj-conditions, 431:g:argument-markers
+u45 [B2] sessions 434-443 | The news | 9. Información y medios de comunicación: journalism, investigations, sources, allegations
+   can-do: I can follow and write a news report, including what is only alleged.
+   grammar: 434:g:future-perfect, 437:g:conditional-rumour, 441:g:impersonal-register
+u46 [B2] sessions 444-453 | Who said what | 17 + 9: meetings, testimonies, quotes, minutes
+   can-do: I can report a whole conversation accurately, and distance myself from what was said.
+   grammar: 444:g:reported-speech-full, 447:g:reporting-verbs-mood, 451:g:subj-perception-negated
+u47 [B2] sessions 454-463 | Putting the weight where you want it | 18. Actividades artísticas: podcasts, interviews, storytelling, emphasis
+   can-do: I can move the emphasis in a sentence so my point lands where I want it.
+   grammar: 454:g:cleft-focus, 457:g:topic-fronting, 461:g:lo-que-intensity
+u48 [B2] sessions 464-473 | Describing precisely | 16. Ciencia y tecnología + 10: buildings, materials, processes, measurements
+   can-do: I can describe objects, places and processes precisely in writing.
+   grammar: 464:g:relatives-formal, 467:g:participle-gerund-clauses, 471:g:infinitive-perfect
+u49 [B2] sessions 474-483 | Formal writing | 7. Trabajo + 15. Economía: applications, complaints, formal requests, contracts
+   can-do: I can write a formal letter: an application, a complaint and a request.
+   grammar: 474:g:formal-letter-grammar, 479:g:verbs-prepositions
+u50 [B2] sessions 484-493 | Hard conversations | 4. Relaciones personales: conflict, negotiation, apologies, boundaries
+   can-do: I can handle a conversation where we want different things, and keep it civil.
+   grammar: 484:g:subj-free-relatives, 487:g:subj-future-in-past, 491:g:que-wishes-commands
+u51 [B2] sessions 494-503 | Spanish beyond Colombia | 14. Viajes + referentes culturales: Spain, regional variation, the Spanish-speaking world
+   can-do: I can read Spanish from Spain and other countries, and understand vosotros and Spain's use of the past.
+   grammar: 494:g:vosotros-recognition, 497:g:spain-pasts, 501:g:se-form-recognition
+u52 [C1] sessions 504-513 | The whole verb system | 18. Actividades artísticas: memoir, oral history, narrative craft
+   can-do: I can choose any tense or mood deliberately and explain why I chose it.
+   grammar: 506:g:tense-modal-uses, 511:g:mood-choice-fine
+u53 [C1] sessions 514-523 | Saying it without owning it | 17. Gobierno, política y sociedad: claims, rumours, institutions, accountability
+   can-do: I can report claims, rumours and other people's ideas without vouching for them.
+   grammar: 516:g:hedging-distance, 521:g:reformulation
+u54 [C1] sessions 524-533 | Irony and what's left unsaid | 2 + 18: humour, irony, Colombian wit (mamar gallo), implicature
+   can-do: I can use and catch irony, understatement and implied meaning.
+   grammar: 526:g:emphatic-structures, 531:g:wish-exclamatives
+u55 [C1] sessions 534-543 | Institutional Spanish | 17 + 15: cooperatives, statutes, legal and administrative texts
+   can-do: I can read and write institutional and legal Spanish without sounding like a form.
+   grammar: 534:g:cuyo-relatives, 537:g:nominalisation, 541:g:absolute-constructions
+u56 [C1] sessions 544-553 | The essay | 19. Religión y filosofía + 16: ideas, ethics of cities, progress and memory
+   can-do: I can write a sustained argumentative essay and defend it.
+   grammar: 546:g:concessive-advanced, 551:g:consecutive-advanced
+u57 [C1] sessions 554-563 | Emotion at native pitch | 2. Individuo: dimensión perceptiva y anímica: regret, resignation, relief, nostalgia, grief
+   can-do: I can express complex emotions precisely: regret, resignation, relief, mixed feelings.
+   grammar: 556:g:conditional-advanced, 561:g:comparative-advanced-c1
+u58 [C1] sessions 564-573 | Precision | 20. Geografía y naturaleza + 16: landscape, physical properties, time, change
+   can-do: I can describe the physical and temporal world with native precision.
+   grammar: 564:g:temporal-advanced, 567:g:agreement-tricky, 571:g:ser-estar-c1
+u59 [C1] sessions 574-583 | Voices of Colombia | 3 + referentes culturales: regional Colombia (paisa, costeño, rolo), music, literature
+   can-do: I can understand regional Colombian voices and adapt my own register to who I'm talking to.
+   grammar: 576:g:voseo-recognition, 581:g:future-subj-recognition
+u60 [C1] sessions 584-593 | A critical voice | 18. Actividades artísticas: reviews, criticism, culture, the café as a cultural place
+   can-do: I can write and defend a critical review in my own voice.
+   grammar: 586:g:word-order-style, 591:g:evaluative-adverbs

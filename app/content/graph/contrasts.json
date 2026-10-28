@@ -1,0 +1,2338 @@
+[
+ {
+  "id": "x:tener-estar-states",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 17,
+  "title": "Tengo frío or estoy cansado?",
+  "es": "Tengo hambre / sed / sueño / frío (nouns) vs Estoy cansado / enfermo / aburrido (adjectives).",
+  "en": "I'm hungry / thirsty / sleepy / cold vs I'm tired / ill / bored.",
+  "requires": [
+   "p:tener-hambre",
+   "g:estar-location-states"
+  ],
+  "contrasts": [
+   "p:tener-hambre",
+   "g:estar-location-states"
+  ],
+  "serves": [],
+  "pcic": [
+   "funciones:A2:245",
+   "funciones:A2:246",
+   "funciones:A2:248",
+   "funciones:A2:249",
+   "funciones:A2:250",
+   "funciones:A2:251"
+  ],
+  "placement": "pcic",
+  "note": "Mix the two in one drill: learners say *estoy hambre and *tengo cansado.",
+  "sources": [
+   "fn-sensaciones-fisicas-a2"
+  ]
+ },
+ {
+  "id": "x:hay-esta",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 58,
+  "title": "\"There is\" or \"it's there\"?",
+  "es": "Hay un banco cerca. / El banco está cerca.",
+  "requires": [
+   "g:hay-vs-esta",
+   "g:estar-location-states"
+  ],
+  "contrasts": [
+   "g:hay-vs-esta",
+   "g:estar-location-states"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:muy-mucho",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 64,
+  "title": "muy or mucho?",
+  "es": "Es muy caro. / Cuesta mucho. / Hay mucha gente.",
+  "requires": [
+   "g:quantifiers",
+   "g:adjective-agreement"
+  ],
+  "contrasts": [
+   "g:quantifiers",
+   "g:adjective-agreement"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:perfecto-preterito",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 68,
+  "title": "He ido vs fui: experience vs a dated past",
+  "es": "¿Has estado en Cartagena? —Sí, fui el año pasado.",
+  "en": "Have you been to Cartagena? — Yes, I went last year.",
+  "requires": [
+   "g:perfecto-experience",
+   "g:preterite-ser-ir-hacer"
+  ],
+  "contrasts": [
+   "g:perfecto-experience",
+   "g:preterite-ser-ir-hacer"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "LatAm: preterite for any finished event including today (Hoy fui al banco); perfecto for experience/'ever' and 'not yet' (¿Has ido a Cartagena? Todavía no he ido). Drop the old lesson's Peninsular 'hoy he…' framing.",
+  "sources": [
+   "gr-preterito-perfecto-a2",
+   "gr-preterito-indefinido-a2"
+  ]
+ },
+ {
+  "id": "x:pret-perfecto-latam",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 68,
+  "title": "Did or have done? Hoy fui… vs ¿Has ido alguna vez?",
+  "es": "Hoy fui al banco. / ¿Has ido alguna vez a Leticia?",
+  "requires": [
+   "g:preterite-ser-ir-hacer",
+   "g:perfecto-experience"
+  ],
+  "contrasts": [
+   "g:preterite-ser-ir-hacer",
+   "g:perfecto-experience"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "The core LatAm rule: finished = preterite, even today; perfecto only for experience / not yet.",
+  "sources": []
+ },
+ {
+  "id": "x:saber-conocer",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 73,
+  "title": "Know: sé or conozco?",
+  "es": "Conozco a Vale, pero no sé dónde vive.",
+  "requires": [
+   "g:yo-irregular",
+   "g:verb-infinitive"
+  ],
+  "contrasts": [
+   "g:yo-irregular",
+   "g:verb-infinitive"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:saber-poder",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 73,
+  "title": "Can: sé nadar or puedo nadar?",
+  "es": "Sé nadar, pero hoy no puedo.",
+  "requires": [
+   "g:verb-infinitive",
+   "g:stem-boot"
+  ],
+  "contrasts": [
+   "g:verb-infinitive",
+   "g:stem-boot"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:body-article-possessive",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 79,
+  "title": "Me lavo las manos, not *mis manos",
+  "es": "Me duele la cabeza. Me lavo el pelo. / Mi casa es grande.",
+  "en": "My head hurts. I wash my hair. / My house is big.",
+  "requires": [
+   "p:lavarse-las-manos",
+   "g:possessives"
+  ],
+  "contrasts": [
+   "p:lavarse-las-manos",
+   "g:possessives"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "With body parts and clothes the pronoun says whose; the noun takes the article. Possessives stay for things that aren't 'part of you' or for contrast.",
+  "sources": [
+   "gr-articulo-definido-valores-a2",
+   "gr-posesivo-dativo-b1"
+  ]
+ },
+ {
+  "id": "x:ing-infinitive-gerund",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 79,
+  "title": "English -ing: estudiar or estudiando?",
+  "es": "Nadar es bueno. / Estoy nadando.",
+  "en": "Swimming is good. / I'm swimming.",
+  "requires": [
+   "g:verb-infinitive",
+   "g:estar-gerund"
+  ],
+  "contrasts": [
+   "g:verb-infinitive",
+   "g:estar-gerund"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "-ing as a noun (subject/object, after prepositions and gustar) = infinitive: Me gusta nadar, Antes de salir, Fumar es malo. Only 'be doing' = estar + gerund.",
+  "sources": [
+   "gr-infinitivo-usos-a1",
+   "gr-gerundio-a2"
+  ]
+ },
+ {
+  "id": "x:present-progressive",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 79,
+  "title": "trabajo or estoy trabajando?",
+  "es": "Trabajo en un café. / Ahora estoy trabajando.",
+  "requires": [
+   "g:present-er-ir",
+   "g:estar-gerund"
+  ],
+  "contrasts": [
+   "g:present-er-ir",
+   "g:estar-gerund"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:perdon-lo-siento",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 83,
+  "title": "Perdón, disculpe or lo siento?",
+  "es": "Perdón / Disculpe (small bump, getting past, attention) vs Lo siento (real harm, sympathy) vs Siento + infinitive (naming the thing).",
+  "en": "Excuse me / sorry vs I'm sorry vs I'm sorry for…",
+  "requires": [
+   "c:perdon-disculpe",
+   "p:siento-llegar-tarde"
+  ],
+  "contrasts": [
+   "c:perdon-disculpe",
+   "p:siento-llegar-tarde"
+  ],
+  "serves": [],
+  "pcic": [
+   "funciones:A2:381",
+   "funciones:A2:382",
+   "funciones:A2:383"
+  ],
+  "placement": "pcic",
+  "note": "Lo siento for bumping into someone sounds heavy; perdón for bad news sounds dismissive.",
+  "sources": [
+   "fn-disculparse-a2"
+  ]
+ },
+ {
+  "id": "x:yo-vs-a-mi-tambien",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 87,
+  "title": "Me too: yo también or a mí también?",
+  "es": "—Vivo en Bogotá. —Yo también. / —Me encanta el ajiaco. —A mí también.",
+  "en": "I live in Bogotá. — Me too. / I love ajiaco. — Me too.",
+  "requires": [
+   "p:tambien-tampoco",
+   "g:gustar-full"
+  ],
+  "contrasts": [
+   "p:tambien-tampoco",
+   "g:gustar-full"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Echo the shape of the statement: Trabajo aquí → Yo también; Me gusta → A mí también; No me gusta → A mí tampoco. *Yo también after me gusta is a top A1 error.",
+  "sources": [
+   "gr-adverbios-afirmacion-negacion-a1",
+   "gr-pronombres-tonicos-a2"
+  ]
+ },
+ {
+  "id": "x:pedir-preguntar",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 89,
+  "title": "Ask for or ask: pedir or preguntar?",
+  "es": "Pedí la cuenta. / Pregunté el precio.",
+  "requires": [
+   "g:stem-e-i",
+   "g:questions"
+  ],
+  "contrasts": [
+   "g:stem-e-i",
+   "g:questions"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:pret-imp",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 106,
+  "title": "What happened or what it was like? (the two pasts)",
+  "es": "Llovía cuando llegué.",
+  "requires": [
+   "g:preterite-irregular-strong",
+   "g:imperfect-habitual",
+   "g:pret-vs-imperfect"
+  ],
+  "contrasts": [
+   "g:preterite-irregular-strong",
+   "g:imperfect-habitual",
+   "g:pret-vs-imperfect"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Big five: re-drilled every review day from u12 to C1.",
+  "sources": []
+ },
+ {
+  "id": "x:commands-tu-usted",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 118,
+  "title": "Ven vs venga: telling a friend vs a stranger",
+  "es": "Ven, siéntate. / Venga, siéntese.",
+  "en": "Come, sit down (friend / stranger).",
+  "requires": [
+   "g:commands-tu",
+   "g:commands-usted"
+  ],
+  "contrasts": [
+   "g:commands-tu",
+   "g:commands-usted"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "tú = él-form of the present (habla, come) + 8 irregulars; usted swaps the vowel (hable, coma). In Bogotá usted is common even among friends — choose by the relationship already in use. No vosotros forms.",
+  "sources": [
+   "gr-imperativo-forma-a2"
+  ]
+ },
+ {
+  "id": "x:tu-usted",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 118,
+  "title": "tú or usted?",
+  "es": "¿Quieres algo? / ¿Quiere algo?",
+  "requires": [
+   "g:commands-tu",
+   "g:commands-usted"
+  ],
+  "contrasts": [
+   "g:commands-tu",
+   "g:commands-usted"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Colombia: usted is common even among friends and family; follow the other person.",
+  "sources": []
+ },
+ {
+  "id": "x:lo-le",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 122,
+  "title": "lo/la or le?",
+  "es": "La vi ayer. / Le dije la verdad.",
+  "requires": [
+   "g:direct-objects",
+   "g:indirect-objects"
+  ],
+  "contrasts": [
+   "g:direct-objects",
+   "g:indirect-objects"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Standard LatAm: lo/la for the thing or person, le for to/for whom. No leísmo.",
+  "sources": []
+ },
+ {
+  "id": "x:que-three-ways",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 126,
+  "title": "Three que's: ¿qué?, el que relative, creo que",
+  "es": "¿Qué libro? / El libro que leo. / Creo que es bueno.",
+  "en": "Which book? / The book I'm reading. / I think it's good.",
+  "requires": [
+   "g:questions",
+   "g:relative-que",
+   "g:that-clauses"
+  ],
+  "contrasts": [
+   "g:questions",
+   "g:relative-que",
+   "g:that-clauses"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Accent only on the question/exclamation word (¿Qué…?, No sé qué…, ¡Qué…!); relative que (el libro que leo) and conjunction que (creo que…) carry none and are never dropped.",
+  "sources": [
+   "gr-relativo-que-a1",
+   "gr-interrogativos-a1",
+   "gr-subordinadas-adjetivas-a1",
+   "gr-objeto-directo-a1",
+   "gr-adverbios-relativos-b1"
+  ]
+ },
+ {
+  "id": "x:para-porque",
+  "kind": "contrast",
+  "band": "A1",
+  "priority": 131,
+  "title": "Para or porque?",
+  "es": "Estudio español para trabajar aquí (purpose, + infinitive) vs Estudio español porque quiero trabajar aquí (reason, + clause).",
+  "en": "I study Spanish to work here vs because I want to work here.",
+  "requires": [
+   "p:para-inf-purpose",
+   "c:porque"
+  ],
+  "contrasts": [
+   "p:para-inf-purpose",
+   "c:porque"
+  ],
+  "serves": [],
+  "pcic": [
+   "funciones:A1:53",
+   "funciones:A1:57",
+   "funciones:A1:59",
+   "funciones:A1:61",
+   "funciones:A1:63"
+  ],
+  "placement": "pcic",
+  "note": "Learners use porque for both and lose the difference; also *para quiero.",
+  "sources": [
+   "fn-dar-informacion-a1",
+   "task-a2-razones"
+  ]
+ },
+ {
+  "id": "x:ser-estar-adj",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 135,
+  "title": "es or está with a description?",
+  "es": "Es aburrido. / Está aburrido.",
+  "requires": [
+   "g:ser-identity",
+   "g:ser-estar-adjectives"
+  ],
+  "contrasts": [
+   "g:ser-identity",
+   "g:ser-estar-adjectives"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Big five.",
+  "sources": []
+ },
+ {
+  "id": "x:ser-estar-place",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 135,
+  "title": "Where it is or where it takes place?",
+  "es": "El café está en la 11. / La fiesta es en el café.",
+  "requires": [
+   "g:estar-location-states",
+   "g:ser-estar-adjectives"
+  ],
+  "contrasts": [
+   "g:estar-location-states",
+   "g:ser-estar-adjectives"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:participle-agreement",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 137,
+  "title": "Estoy cansada vs he estado cansada",
+  "es": "Las tiendas están cerradas. / Han cerrado las tiendas.",
+  "en": "The shops are closed. / They've closed the shops.",
+  "requires": [
+   "g:estar-participle",
+   "g:perfecto-experience"
+  ],
+  "contrasts": [
+   "g:estar-participle",
+   "g:perfecto-experience"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Participle after estar/ser/noun agrees like an adjective (cansada, cerradas); after haber it never changes (he cerrado las ventanas).",
+  "sources": [
+   "gr-participio-adjetival-a1",
+   "gr-preterito-perfecto-a2"
+  ]
+ },
+ {
+  "id": "x:le-se-lo",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 151,
+  "title": "Le doy el libro → se lo doy (never *le lo)",
+  "es": "Le doy el libro. → Se lo doy.",
+  "en": "I give him the book. → I give it to him.",
+  "requires": [
+   "g:indirect-objects",
+   "g:double-pronouns"
+  ],
+  "contrasts": [
+   "g:indirect-objects",
+   "g:double-pronouns"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "le/les becomes se before lo/la/los/las; the pair stays together (se lo voy a dar / voy a dárselo).",
+  "sources": [
+   "gr-pronombres-atonos-a2",
+   "gr-pronombres-combinados-b1"
+  ]
+ },
+ {
+  "id": "x:ser-event-estar-location",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 161,
+  "title": "La fiesta es en… vs la casa está en…",
+  "es": "La fiesta es en mi casa. Mi casa está en Chapinero.",
+  "en": "The party is at my place. My place is in Chapinero.",
+  "requires": [
+   "p:event-ser-en",
+   "g:estar-location-states"
+  ],
+  "contrasts": [
+   "p:event-ser-en",
+   "g:estar-location-states"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Events take place → ser; people and things are located → estar. ¿Dónde es la fiesta? / ¿Dónde está tu casa?",
+  "sources": [
+   "gr-sustantivos-especiales-a2",
+   "gr-nucleo-verbal-a1"
+  ]
+ },
+ {
+  "id": "x:por-para",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 165,
+  "title": "por or para?",
+  "es": "Gracias por el regalo. / Es para ti.",
+  "requires": [
+   "g:por-para-1"
+  ],
+  "contrasts": [
+   "g:por-para-1"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Big five; re-drilled after g:por-para-2.",
+  "sources": []
+ },
+ {
+  "id": "x:mi-mio",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 171,
+  "title": "Mi vs mío: my book vs a friend of mine",
+  "es": "mi amigo / un amigo mío / Es mío. / El mío es azul.",
+  "en": "my friend / a friend of mine / It's mine. / Mine is blue.",
+  "requires": [
+   "g:possessives",
+   "g:possessives-stressed"
+  ],
+  "contrasts": [
+   "g:possessives",
+   "g:possessives-stressed"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "mi/tu/su before the noun, never alone; mío/tuyo/suyo after the noun, after ser, or with el/la to stand alone. *es mi, *el mi libro.",
+  "sources": [
+   "gr-posesivos-tonicos-a2",
+   "gr-posesivos-distribucion-a1",
+   "gr-restrictivos-nominales-a2"
+  ]
+ },
+ {
+  "id": "x:future-prediction-conjecture",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 187,
+  "title": "Estará en casa: will be or probably is?",
+  "es": "Mañana lloverá. / ¿Dónde está Vale? —Estará en el trabajo.",
+  "en": "It'll rain tomorrow. / Where's Vale? — She's probably at work.",
+  "requires": [
+   "g:future-promises",
+   "g:future-conjecture"
+  ],
+  "contrasts": [
+   "g:future-promises",
+   "g:future-conjecture"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Same form, two times: Mañana estará en casa (prediction) vs No contesta… estará dormido (guess about now). Time words decide.",
+  "sources": [
+   "gr-futuro-imperfecto-b1"
+  ]
+ },
+ {
+  "id": "x:ir-a-future",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 187,
+  "title": "voy a llamar or llamaré?",
+  "es": "Mañana te voy a llamar. / Te prometo que te llamaré.",
+  "requires": [
+   "g:ir-a-plans",
+   "g:future-promises"
+  ],
+  "contrasts": [
+   "g:ir-a-plans",
+   "g:future-promises"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:si-clause-no-future",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 187,
+  "title": "Si llueve, not *si lloverá",
+  "es": "Si llueve, no iré. / *Si lloverá, no iré.",
+  "en": "If it rains, I won't go.",
+  "requires": [
+   "g:si-present",
+   "g:future-promises"
+  ],
+  "contrasts": [
+   "g:si-present",
+   "g:future-promises"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Real conditions: si + present always; the future (or imperative / present) goes only in the other half: Si tengo tiempo, iré.",
+  "sources": [
+   "gr-condicionales-b1",
+   "gr-condicionales-a2"
+  ]
+ },
+ {
+  "id": "x:inf-vs-que-subj",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 195,
+  "title": "quiero ir or quiero que vayas?",
+  "es": "Quiero ir. / Quiero que vayas.",
+  "requires": [
+   "g:verb-infinitive",
+   "g:subj-wanting"
+  ],
+  "contrasts": [
+   "g:verb-infinitive",
+   "g:subj-wanting"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:se-three-ways",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 211,
+  "title": "Three se's: se levanta, se conocieron, se vende",
+  "es": "Se levanta a las seis. / Se conocieron en 2010. / Se arrienda apartamento.",
+  "en": "He gets up at six. / They met in 2010. / Apartment for rent.",
+  "requires": [
+   "g:reflexive-routine",
+   "p:se-reciproco",
+   "g:se-impersonal"
+  ],
+  "contrasts": [
+   "g:reflexive-routine",
+   "p:se-reciproco",
+   "g:se-impersonal"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Reflexive (to oneself), reciprocal (to each other, plural), impersonal (nobody in particular). Ask: one person, two acting on each other, or no one named?",
+  "sources": [
+   "gr-se-multiuso-b1",
+   "gr-pronombre-se-a1"
+  ]
+ },
+ {
+  "id": "x:hace-desde-hace",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 221,
+  "title": "Hace dos años or desde hace dos años?",
+  "es": "Llegué hace dos años (a point in the past) vs Vivo aquí desde hace dos años / Hace dos años que vivo aquí (still going).",
+  "en": "I arrived two years ago vs I've been living here for two years.",
+  "requires": [
+   "g:hace-ago",
+   "g:hace-que-desde"
+  ],
+  "contrasts": [
+   "g:hace-ago",
+   "g:hace-que-desde"
+  ],
+  "serves": [],
+  "pcic": [
+   "nociones_generales:A2:148",
+   "nociones_generales:A2:149",
+   "nociones_generales:A2:150",
+   "nociones_generales:A2:151"
+  ],
+  "placement": "pcic",
+  "note": "*Vivo aquí hace dos años is the typical slip. Standard Spanish keeps hace invariable (hace dos años, not *hacen).",
+  "sources": [
+   "nt-localizacion-tiempo-a2"
+  ]
+ },
+ {
+  "id": "x:pero-sino",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 225,
+  "title": "pero or sino?",
+  "es": "No es caro, pero es malo. / No es caro, sino barato.",
+  "requires": [
+   "g:pero-sino",
+   "g:cause-result"
+  ],
+  "contrasts": [
+   "g:pero-sino",
+   "g:cause-result"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:tan-tanto",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 231,
+  "title": "Tan vs tanto: as tall as, as much as",
+  "es": "Es tan alto como tú. / Tiene tanta paciencia como tú. / Trabaja tanto como yo.",
+  "en": "He's as tall as you. / She has as much patience as you. / He works as much as I do.",
+  "requires": [
+   "g:comparatives",
+   "g:tanto-como"
+  ],
+  "contrasts": [
+   "g:comparatives",
+   "g:tanto-como"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "tan + adjective/adverb (invariable); tanto/a/os/as + noun (agrees); verb + tanto como (invariable). *tan gente, *tanto alto.",
+  "sources": [
+   "gr-comparativos-a2",
+   "gr-comparativo-a2"
+  ]
+ },
+ {
+  "id": "x:para-inf-que",
+  "kind": "contrast",
+  "band": "A2",
+  "priority": 257,
+  "title": "para + verb or para que?",
+  "es": "Vine para ayudar. / Vine para que me ayudes.",
+  "requires": [
+   "g:por-para-1",
+   "g:para-que"
+  ],
+  "contrasts": [
+   "g:por-para-1",
+   "g:para-que"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:creo-no-creo",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 265,
+  "title": "creo que es or no creo que sea?",
+  "es": "Creo que es verdad. / No creo que sea verdad.",
+  "requires": [
+   "g:that-clauses",
+   "g:subj-opinion-negated"
+  ],
+  "contrasts": [
+   "g:that-clauses",
+   "g:subj-opinion-negated"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Big five (mood).",
+  "sources": []
+ },
+ {
+  "id": "x:fact-value",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 268,
+  "title": "es verdad que or es bueno que?",
+  "es": "Es verdad que cerraron. / Es bueno que cierren.",
+  "requires": [
+   "g:subj-value",
+   "g:that-clauses"
+  ],
+  "contrasts": [
+   "g:subj-value",
+   "g:that-clauses"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:supongo-vs-dudo",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 275,
+  "title": "Guessing vs doubting: supongo que llega vs dudo que llegue",
+  "es": "Supongo que llega hoy. / Dudo que llegue hoy.",
+  "en": "I suppose he arrives today. / I doubt he'll arrive today.",
+  "requires": [
+   "c:supongo-que",
+   "g:subj-doubt"
+  ],
+  "contrasts": [
+   "c:supongo-que",
+   "g:subj-doubt"
+  ],
+  "serves": [],
+  "pcic": [
+   "funciones:B1:329",
+   "funciones:B1:330",
+   "funciones:B1:331",
+   "funciones:B1:332",
+   "funciones:B1:375",
+   "funciones:B1:378",
+   "funciones:B1:381",
+   "funciones:B1:382",
+   "funciones:B1:385",
+   "funciones:B1:386"
+  ],
+  "placement": "pcic",
+  "note": "Both uncertain; only doubt takes the subjunctive.",
+  "sources": [
+   "fn-falta-certeza-b1",
+   "fn-mostrar-escepticismo-b1"
+  ]
+ },
+ {
+  "id": "x:dar-igual-parecer-bien",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 278,
+  "title": "Don't mind vs approve: me da igual / me parece bien",
+  "es": "",
+  "en": "",
+  "requires": [
+   "p:dar-igual",
+   "g:parecer-quedar"
+  ],
+  "contrasts": [
+   "p:dar-igual",
+   "g:parecer-quedar"
+  ],
+  "serves": [],
+  "pcic": [
+   "nociones_generales:B2:1004",
+   "nociones_generales:B2:1006",
+   "nociones_generales:B2:1008"
+  ],
+  "placement": "pcic",
+  "note": "Indifference can sound dismissive where approval is expected.",
+  "sources": [
+   "nt-importancia-normalidad-b2"
+  ]
+ },
+ {
+  "id": "x:a-favor-vs-de-acuerdo",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 281,
+  "title": "Taking a side vs agreeing with a claim",
+  "es": "Estoy a favor de la ciclovía. / No estoy de acuerdo con lo que dijiste.",
+  "en": "I'm for the bike lane. / I don't agree with what you said.",
+  "requires": [
+   "p:estar-a-favor-de",
+   "p:estar-de-acuerdo-con-en"
+  ],
+  "contrasts": [
+   "p:estar-a-favor-de",
+   "p:estar-de-acuerdo-con-en"
+  ],
+  "serves": [],
+  "pcic": [
+   "funciones:B1:221",
+   "funciones:B1:224",
+   "funciones:B1:227"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "fn-posicionarse-b1"
+  ]
+ },
+ {
+  "id": "x:future-guess-present-past",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 281,
+  "title": "Guessing now or guessing then: estará or estaría?",
+  "es": "Estará en casa. / Estaría en casa.",
+  "requires": [
+   "g:future-conjecture",
+   "g:conditional-past-guess"
+  ],
+  "contrasts": [
+   "g:future-conjecture",
+   "g:conditional-past-guess"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:molesta-vs-no-soporto",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 288,
+  "title": "Gradable vs absolute: me molesta un poco vs no soporto",
+  "es": "Me molesta un poco que… / No soporto que…",
+  "en": "It bothers me a bit that… / I can't stand it when…",
+  "requires": [
+   "g:subj-emotion-intro",
+   "p:no-soportar-que"
+  ],
+  "contrasts": [
+   "g:subj-emotion-intro",
+   "p:no-soportar-que"
+  ],
+  "serves": [],
+  "pcic": [
+   "funciones:B1:552",
+   "funciones:B1:554",
+   "funciones:B1:557",
+   "funciones:B1:560"
+  ],
+  "placement": "pcic",
+  "note": "Molestar grades (un poco, muchísimo); odiar / no soportar do not.",
+  "sources": [
+   "fn-aversion-b1"
+  ]
+ },
+ {
+  "id": "x:pena-vs-rabia",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 288,
+  "title": "Sad vs mad: me da pena que vs me da rabia que",
+  "es": "Me da pena que se vaya. / Me da rabia que se vaya sin avisar.",
+  "en": "It's sad she's leaving. / It makes me mad she's leaving without telling anyone.",
+  "requires": [
+   "p:me-da-pena-que",
+   "p:me-da-rabia-que"
+  ],
+  "contrasts": [
+   "p:me-da-pena-que",
+   "p:me-da-rabia-que"
+  ],
+  "serves": [],
+  "pcic": [
+   "funciones:B1:698",
+   "funciones:B1:699",
+   "funciones:B1:700",
+   "funciones:B1:707",
+   "funciones:B1:710",
+   "funciones:B1:711",
+   "funciones:B1:714",
+   "funciones:B1:760",
+   "funciones:B1:761",
+   "funciones:B1:762",
+   "funciones:B1:763",
+   "funciones:B1:764",
+   "funciones:B1:765",
+   "funciones:B1:766",
+   "funciones:B1:767"
+  ],
+  "placement": "pcic",
+  "note": "Same frame, opposite feeling; mixed practice stops learners defaulting to one.",
+  "sources": [
+   "fn-tristeza-afliccion-b1",
+   "fn-enfado-indignacion-b1"
+  ]
+ },
+ {
+  "id": "x:ir-irse",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 291,
+  "title": "voy or me voy? (and other se pairs)",
+  "es": "Voy al centro. / Me voy.",
+  "requires": [
+   "g:se-meaning-change",
+   "g:reflexive-routine"
+  ],
+  "contrasts": [
+   "g:se-meaning-change",
+   "g:reflexive-routine"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:pluperfect-preterite",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 295,
+  "title": "fue or había sido?",
+  "es": "Cuando llegué, se fue. / Cuando llegué, ya se había ido.",
+  "requires": [
+   "g:preterite-ser-ir-hacer",
+   "g:pluperfect"
+  ],
+  "contrasts": [
+   "g:preterite-ser-ir-hacer",
+   "g:pluperfect"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:cuando-ind-subj",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 308,
+  "title": "cuando llego or cuando llegue?",
+  "es": "Cuando llego, lo llamo. / Cuando llegue, lo llamo.",
+  "requires": [
+   "g:cuando-indicative",
+   "g:subj-cuando-future"
+  ],
+  "contrasts": [
+   "g:cuando-indicative",
+   "g:subj-cuando-future"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:que-tal-si-vs-te-propongo-que",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 308,
+  "title": "Suggesting with indicative vs proposing with subjunctive",
+  "es": "¿Qué tal si vamos? / Te propongo que vayamos.",
+  "en": "How about we go? / I suggest we go.",
+  "requires": [
+   "p:que-tal-si",
+   "p:te-propongo-que"
+  ],
+  "contrasts": [
+   "p:que-tal-si",
+   "p:te-propongo-que"
+  ],
+  "serves": [],
+  "pcic": [
+   "funciones:B1:1136",
+   "funciones:B1:1138",
+   "funciones:B1:1139",
+   "funciones:B1:1141",
+   "funciones:B1:1142",
+   "funciones:B1:1143",
+   "funciones:B1:1144",
+   "funciones:B1:1145",
+   "funciones:B1:1146",
+   "funciones:B1:1148"
+  ],
+  "placement": "pcic",
+  "note": "Si never takes the present subjunctive.",
+  "sources": [
+   "fn-proponer-sugerir-b1"
+  ]
+ },
+ {
+  "id": "x:seguir-dejar-de",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 311,
+  "title": "Still doing it or stopped? sigo yendo / dejé de ir",
+  "es": "",
+  "en": "",
+  "requires": [
+   "p:seguir-gerundio",
+   "p:dejar-de-inf"
+  ],
+  "contrasts": [
+   "p:seguir-gerundio",
+   "p:dejar-de-inf"
+  ],
+  "serves": [],
+  "pcic": [
+   "nociones_generales:B1:532",
+   "nociones_generales:B1:534",
+   "nociones_generales:B1:548"
+  ],
+  "placement": "pcic",
+  "note": "Mixed practice: same event, opposite ends. Gerund after seguir, de + infinitive after dejar.",
+  "sources": [
+   "nt-ciclo-accion-b1"
+  ]
+ },
+ {
+  "id": "x:relative-ind-subj",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 315,
+  "title": "que tiene or que tenga?",
+  "es": "Busco el local que tiene cocina. / Busco un local que tenga cocina.",
+  "requires": [
+   "g:relative-que",
+   "g:subj-relative"
+  ],
+  "contrasts": [
+   "g:relative-que",
+   "g:subj-relative"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:medir-caber",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 318,
+  "title": "How big vs does it fit: mide / cabe",
+  "es": "",
+  "en": "",
+  "requires": [
+   "p:medir",
+   "p:caber"
+  ],
+  "contrasts": [
+   "p:medir",
+   "p:caber"
+  ],
+  "serves": [],
+  "pcic": [
+   "nociones_generales:B1:188",
+   "nociones_generales:B1:192",
+   "nociones_generales:B1:195"
+  ],
+  "placement": "pcic",
+  "note": "Measurement fact vs fit in a specific space.",
+  "sources": [
+   "nt-medidas-tamano-superficie-b1"
+  ]
+ },
+ {
+  "id": "x:permitir-inf-que",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 338,
+  "title": "Le permito ir vs le permito que vaya",
+  "es": "Le recomiendo descansar. / Le recomiendo que descanse.",
+  "en": "I recommend you rest (both).",
+  "requires": [
+   "p:permitir-inf",
+   "g:subj-influence"
+  ],
+  "contrasts": [
+   "p:permitir-inf",
+   "g:subj-influence"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Both correct; mixed practice on choosing and forming either.",
+  "sources": [
+   "gr-formas-no-personales-b2"
+  ]
+ },
+ {
+  "id": "x:tener-que-deber",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 341,
+  "title": "tengo que or debo / debería?",
+  "es": "Tengo que pagar. / Deberías pagar.",
+  "requires": [
+   "g:tener-que-hay-que",
+   "g:deber-modal"
+  ],
+  "contrasts": [
+   "g:tener-que-hay-que",
+   "g:deber-modal"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:mas-que-mas-de-lo-que",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 348,
+  "title": "Más que vs más de lo que",
+  "es": "Gana más que yo. / Gana más de lo que dice.",
+  "en": "He earns more than me. / He earns more than he says.",
+  "requires": [
+   "g:comparatives",
+   "p:mas-de-lo-que"
+  ],
+  "contrasts": [
+   "g:comparatives",
+   "p:mas-de-lo-que"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Noun/pronoun → que; clause → de lo que.",
+  "sources": [
+   "gr-sub-adv-comparativas-c1"
+  ]
+ },
+ {
+  "id": "x:segun-depende",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 355,
+  "title": "Según vs depende de",
+  "es": "Según el día. / Depende del día.",
+  "en": "Depending on the day. / It depends on the day.",
+  "requires": [
+   "c:segun",
+   "p:depender-de"
+  ],
+  "contrasts": [
+   "c:segun",
+   "p:depender-de"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "según needs no verb and no de; depender always takes de (*depende según).",
+  "sources": [
+   "gr-subordinadas-modo-b2"
+  ]
+ },
+ {
+  "id": "x:tardar-llegar-tarde",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 355,
+  "title": "Taking long vs being late: se demoró / llegó tarde",
+  "es": "",
+  "en": "",
+  "requires": [
+   "p:tardar-en",
+   "p:llegar-a-tiempo"
+  ],
+  "contrasts": [
+   "p:tardar-en",
+   "p:llegar-a-tiempo"
+  ],
+  "serves": [],
+  "pcic": [
+   "nociones_generales:B1:524",
+   "nociones_generales:B1:526",
+   "nociones_generales:B1:528"
+  ],
+  "placement": "pcic",
+  "note": "Duration vs lateness against a schedule; English 'late' covers both.",
+  "sources": [
+   "nt-puntualidad-retraso-b1"
+  ]
+ },
+ {
+  "id": "x:decir-que-ind-subj",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 358,
+  "title": "dice que vienes or dice que vengas?",
+  "es": "Dice que vienes mañana. / Dice que vengas mañana.",
+  "requires": [
+   "g:reported-past-basic",
+   "g:reported-requests"
+  ],
+  "contrasts": [
+   "g:reported-past-basic",
+   "g:reported-requests"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:ser-estar-participle",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 365,
+  "title": "fue cerrado or estaba cerrado?",
+  "es": "El café fue cerrado por la alcaldía. / El café estaba cerrado.",
+  "requires": [
+   "g:passive-ser",
+   "g:estar-participle"
+  ],
+  "contrasts": [
+   "g:passive-ser",
+   "g:estar-participle"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:por-inf-para-inf",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 368,
+  "title": "Por + verb (because) vs para + verb (in order to)",
+  "es": "Lo multaron por manejar rápido. / Manejó rápido para llegar a tiempo.",
+  "en": "He was fined for driving fast. / He drove fast to arrive on time.",
+  "requires": [
+   "g:causal-advanced",
+   "p:para-inf"
+  ],
+  "contrasts": [
+   "g:causal-advanced",
+   "p:para-inf"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "por looks back at a cause, para forward to a goal: Lo despidieron por llegar tarde / Madrugó para llegar temprano.",
+  "sources": [
+   "gr-causales-b1",
+   "gr-oraciones-finales-a1"
+  ]
+ },
+ {
+  "id": "x:darse-cuenta-enterarse",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 371,
+  "title": "Realise vs find out: me di cuenta / me enteré",
+  "es": "",
+  "en": "",
+  "requires": [
+   "p:darse-cuenta-de",
+   "p:enterarse-de"
+  ],
+  "contrasts": [
+   "p:darse-cuenta-de",
+   "p:enterarse-de"
+  ],
+  "serves": [],
+  "pcic": [
+   "nociones_generales:B2:1034",
+   "nociones_generales:B2:1037",
+   "nociones_generales:B2:1040",
+   "nociones_generales:B1:1025",
+   "nociones_generales:B1:1027"
+  ],
+  "placement": "pcic",
+  "note": "Realising by yourself vs being told; English 'realise' is often over-used for both.",
+  "sources": [
+   "nt-reflexion-conocimiento-b2",
+   "nt-reflexion-expresion-b1"
+  ]
+ },
+ {
+  "id": "x:es-en-esta-en",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 371,
+  "title": "Where events are vs where things are: es en vs está en",
+  "es": "La fiesta es en el salón. / El salón está en el segundo piso.",
+  "en": "The party is in the hall. / The hall is on the second floor.",
+  "requires": [
+   "p:ser-event-location",
+   "g:estar-location-states"
+  ],
+  "contrasts": [
+   "p:ser-event-location",
+   "g:estar-location-states"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Event → ser; place/thing → estar.",
+  "sources": [
+   "gr-nucleo-verbal-copulativos-b2"
+  ]
+ },
+ {
+  "id": "x:gracias-a-debido-a",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 371,
+  "title": "Thanks to vs due to: gracias a / por culpa de / debido a",
+  "es": "Gracias a la lluvia… / Por culpa de la lluvia… / Debido a la lluvia…",
+  "en": "Thanks to / because of (blame) / due to the rain…",
+  "requires": [
+   "p:gracias-a-por-culpa-de",
+   "g:causal-advanced"
+  ],
+  "contrasts": [
+   "p:gracias-a-por-culpa-de",
+   "g:causal-advanced"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Choose by value: positive, negative or neutral.",
+  "sources": [
+   "gr-sub-adv-causales-c1"
+  ]
+ },
+ {
+  "id": "x:dificil-de-es-dificil",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 378,
+  "title": "Hard to do: \"esto es difícil de hacer\" vs \"es difícil hacer esto\"",
+  "es": "Este texto es difícil de entender. / Es difícil entender este texto.",
+  "en": "This text is hard to understand. / It's hard to understand this text.",
+  "requires": [
+   "p:dificil-de-inf",
+   "g:infinitive-subject"
+  ],
+  "contrasts": [
+   "p:dificil-de-inf",
+   "g:infinitive-subject"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "de only when the thing is the subject.",
+  "sources": [
+   "gr-complementos-sa-b2"
+  ]
+ },
+ {
+  "id": "x:si-real-unreal",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 388,
+  "title": "si tengo or si tuviera?",
+  "es": "Si tengo tiempo, voy. / Si tuviera tiempo, iría.",
+  "requires": [
+   "g:si-present",
+   "g:si-hypothetical"
+  ],
+  "contrasts": [
+   "g:si-present",
+   "g:si-hypothetical"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:subj-present-past",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 395,
+  "title": "que venga or que viniera?",
+  "es": "Quiero que venga. / Quería que viniera.",
+  "requires": [
+   "g:subj-wanting",
+   "g:subj-past-triggers"
+  ],
+  "contrasts": [
+   "g:subj-wanting",
+   "g:subj-past-triggers"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:te-importa-si-vs-te-importaria-que",
+  "kind": "contrast",
+  "band": "B1",
+  "priority": 401,
+  "title": "Do you mind if… vs would you mind if…",
+  "es": "¿Te importa si abro? / ¿Te importaría que abriera?",
+  "en": "Do you mind if I open it? / Would you mind if I opened it?",
+  "requires": [
+   "p:te-importa-si",
+   "p:te-importaria-que"
+  ],
+  "contrasts": [
+   "p:te-importa-si",
+   "p:te-importaria-que"
+  ],
+  "serves": [],
+  "pcic": [
+   "funciones:B1:1079",
+   "funciones:B1:1080",
+   "funciones:B1:1081",
+   "funciones:B1:1083",
+   "funciones:B1:1086"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "fn-pedir-permiso-b1"
+  ]
+ },
+ {
+  "id": "x:no-hace-falta-vs-prohibido",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 410,
+  "title": "Not necessary vs not allowed: no hace falta que vs está prohibido que",
+  "es": "No hace falta que vengas (opcional) / Está prohibido que entres (no puedes).",
+  "en": "You don't need to come / You're not allowed in.",
+  "requires": [
+   "p:no-hace-falta-que",
+   "p:esta-prohibido-que"
+  ],
+  "contrasts": [
+   "p:no-hace-falta-que",
+   "p:esta-prohibido-que"
+  ],
+  "serves": [
+   "d:permission-rules"
+  ],
+  "pcic": [
+   "funciones:B2:430",
+   "funciones:B2:431",
+   "funciones:B2:432",
+   "funciones:B2:1125",
+   "funciones:B2:1126",
+   "funciones:B2:1127",
+   "funciones:B2:1128"
+  ],
+  "placement": "pcic",
+  "note": "English 'you don't have to' vs 'you mustn't' maps onto this.",
+  "sources": [
+   "fn-falta-obligacion-b2",
+   "fn-prohibir-b2"
+  ]
+ },
+ {
+  "id": "x:deberias-vs-deberias-haber",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 422,
+  "title": "Advice or reproach: deberías hacerlo vs deberías haberlo hecho",
+  "es": "Deberías llamarla (aún puedes) / Deberías haberla llamado (ya es tarde).",
+  "en": "You should call her / You should have called her.",
+  "requires": [
+   "g:deber-modal",
+   "p:no-deberias-haberlo-hecho"
+  ],
+  "contrasts": [
+   "g:deber-modal",
+   "p:no-deberias-haberlo-hecho"
+  ],
+  "serves": [
+   "d:reproach-approve"
+  ],
+  "pcic": [
+   "funciones:B2:217",
+   "funciones:B2:218",
+   "funciones:B2:219",
+   "funciones:B2:220",
+   "funciones:B2:1240",
+   "funciones:B2:1243",
+   "funciones:B2:1244",
+   "funciones:B2:1246"
+  ],
+  "placement": "pcic",
+  "note": "Classic slip: simple infinitive for something already done.",
+  "sources": [
+   "fn-aprobacion-desaprobacion-b2",
+   "fn-reprochar-b2"
+  ]
+ },
+ {
+  "id": "x:hacerse-llegar-a-ser",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 422,
+  "title": "Becoming: se hizo rico / llegó a ser rico",
+  "es": "",
+  "en": "",
+  "requires": [
+   "g:verbs-of-change",
+   "p:llegar-a-ser"
+  ],
+  "contrasts": [
+   "g:verbs-of-change",
+   "p:llegar-a-ser"
+  ],
+  "serves": [],
+  "pcic": [
+   "nociones_generales:B2:971",
+   "nociones_generales:B2:972",
+   "nociones_generales:B2:973"
+  ],
+  "placement": "pcic",
+  "note": "Llegar a ser = gradual achievement; hacerse = effort/choice; volverse = change of character; ponerse = temporary.",
+  "sources": [
+   "nt-exito-logro-b2"
+  ]
+ },
+ {
+  "id": "x:llevar-gerundio-sin",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 422,
+  "title": "Been doing vs been without: llevo un año estudiando / llevo un año sin estudiar",
+  "es": "",
+  "en": "",
+  "requires": [
+   "p:llevar-tiempo-gerundio",
+   "p:llevar-sin-inf"
+  ],
+  "contrasts": [
+   "p:llevar-tiempo-gerundio",
+   "p:llevar-sin-inf"
+  ],
+  "serves": [],
+  "pcic": [
+   "nociones_generales:B2:475",
+   "nociones_generales:B2:477",
+   "nociones_generales:B2:480"
+  ],
+  "placement": "pcic",
+  "note": "Learners negate with no + gerund; the absence form is sin + infinitive.",
+  "sources": [
+   "nt-localizacion-tiempo-b2"
+  ]
+ },
+ {
+  "id": "x:si-past-present-unreal",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 422,
+  "title": "si tuviera or si hubiera tenido?",
+  "es": "Si tuviera plata… / Si hubiera tenido plata…",
+  "requires": [
+   "g:si-hypothetical",
+   "g:si-past-unreal"
+  ],
+  "contrasts": [
+   "g:si-hypothetical",
+   "g:si-past-unreal"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:talento-capacidad",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 422,
+  "title": "Good at it vs able to: se me da bien / soy capaz de / soy bueno para",
+  "es": "",
+  "en": "",
+  "requires": [
+   "p:darsele-bien",
+   "p:ser-capaz-de",
+   "p:ser-bueno-para"
+  ],
+  "contrasts": [
+   "p:darsele-bien",
+   "p:ser-capaz-de",
+   "p:ser-bueno-para"
+  ],
+  "serves": [],
+  "pcic": [
+   "nociones_generales:B2:991",
+   "nociones_generales:B2:993",
+   "nociones_generales:B2:994",
+   "nociones_generales:B1:966",
+   "nociones_generales:B1:969"
+  ],
+  "placement": "pcic",
+  "note": "Natural aptitude vs one specific act vs general skill.",
+  "sources": [
+   "nt-capacidad-competencia-b2",
+   "nt-exito-utilidad-importancia-b1"
+  ]
+ },
+ {
+  "id": "x:aunque-ind-subj",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 425,
+  "title": "aunque llueve or aunque llueva?",
+  "es": "Aunque llueve, salgo. / Aunque llueva, saldré.",
+  "requires": [
+   "g:aunque-indicative",
+   "g:subj-concessive"
+  ],
+  "contrasts": [
+   "g:aunque-indicative",
+   "g:subj-concessive"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:habria-que-vs-deberias",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 428,
+  "title": "Naming no one or naming you: habría que vs deberías",
+  "es": "Habría que llamarla (nadie en concreto) / Deberías llamarla (tú).",
+  "en": "Someone should call her / You should call her.",
+  "requires": [
+   "p:habria-que",
+   "g:deber-modal"
+  ],
+  "contrasts": [
+   "p:habria-que",
+   "g:deber-modal"
+  ],
+  "serves": [
+   "d:propose"
+  ],
+  "pcic": [
+   "funciones:B2:1151",
+   "funciones:B2:1153",
+   "funciones:B2:1156",
+   "funciones:B2:1157"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "fn-proponer-sugerir-b2"
+  ]
+ },
+ {
+  "id": "x:impresion-vs-no-estoy-seguro",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 432,
+  "title": "A hunch or a doubt: tengo la impresión de que + indicativo vs no estoy seguro de que + subjuntivo",
+  "es": "Tengo la impresión de que no vendrá / No estoy seguro de que venga.",
+  "en": "I have a feeling he won't come / I'm not sure he'll come.",
+  "requires": [
+   "p:tengo-la-impresion-de-que",
+   "p:no-estoy-seguro-de-que"
+  ],
+  "contrasts": [
+   "p:tengo-la-impresion-de-que",
+   "p:no-estoy-seguro-de-que"
+  ],
+  "serves": [
+   "d:certainty-doubt"
+  ],
+  "pcic": [
+   "funciones:B2:387",
+   "funciones:B2:388",
+   "funciones:B2:389",
+   "funciones:B2:391"
+  ],
+  "placement": "pcic",
+  "note": "Mood follows commitment: the hunch asserts, the doubt doesn't.",
+  "sources": [
+   "fn-falta-certeza-b2"
+  ]
+ },
+ {
+  "id": "x:modo-de-ver-vs-yo-diria",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 432,
+  "title": "Assertive or tentative opinion: a mi modo de ver vs yo diría que",
+  "es": "A mi modo de ver, es la mejor opción / Yo diría que es la mejor opción.",
+  "en": "The way I see it… / I'd say…",
+  "requires": [
+   "p:a-mi-modo-de-ver",
+   "p:yo-diria-que"
+  ],
+  "contrasts": [
+   "p:a-mi-modo-de-ver",
+   "p:yo-diria-que"
+  ],
+  "serves": [
+   "d:opinions"
+  ],
+  "pcic": [
+   "funciones:B2:143",
+   "funciones:B2:144",
+   "funciones:B2:145",
+   "funciones:B2:146"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "fn-dar-opinion-b2"
+  ]
+ },
+ {
+  "id": "x:mientras-ind-subj",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 442,
+  "title": "Mientras: \"while\" vs \"as long as\"",
+  "es": "Mientras cocinas, pongo la mesa. / Mientras cocines tú, yo lavo.",
+  "en": "While you cook, I'll set the table. / As long as you cook, I'll wash up.",
+  "requires": [
+   "p:mientras-subj",
+   "g:cuando-indicative"
+  ],
+  "contrasts": [
+   "p:mientras-subj",
+   "g:cuando-indicative"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Indicative = time; subjunctive = condition.",
+  "sources": [
+   "gr-sub-adv-temporales-c1"
+  ]
+ },
+ {
+  "id": "x:me-suena-vs-recuerdo",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 448,
+  "title": "Half-remembering vs remembering: me suena vs me acuerdo",
+  "es": "Su cara me suena / Me acuerdo perfectamente de su cara.",
+  "en": "Her face rings a bell / I remember her face perfectly.",
+  "requires": [
+   "c:me-suena",
+   "p:recordar-acordarse"
+  ],
+  "contrasts": [
+   "c:me-suena",
+   "p:recordar-acordarse"
+  ],
+  "serves": [
+   "d:remember"
+  ],
+  "pcic": [
+   "funciones:B2:516",
+   "funciones:B2:517",
+   "funciones:B2:518",
+   "funciones:B2:508"
+  ],
+  "placement": "pcic",
+  "note": "Also mixes gustar-type and reflexive grammar.",
+  "sources": [
+   "fn-me-suena-b2",
+   "fn-expresar-recordar-b2"
+  ]
+ },
+ {
+  "id": "x:tras-al-inf",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 452,
+  "title": "After vs on: tras firmar vs al firmar",
+  "es": "Tras firmar, se fue. / Al firmar, se dio cuenta del error.",
+  "en": "After signing, he left. / On signing (as he signed), he noticed the mistake.",
+  "requires": [
+   "p:tras-inf",
+   "g:prep-infinitive"
+  ],
+  "contrasts": [
+   "p:tras-inf",
+   "g:prep-infinitive"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "tras = después de (sequence); al = at the moment of / when.",
+  "sources": [
+   "gr-sub-adv-temporales-c1",
+   "gr-formas-no-personales-c1"
+  ]
+ },
+ {
+  "id": "x:tan-que-como-para",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 458,
+  "title": "So … that vs … enough to: tan cansado que / tan cansado como para",
+  "es": "Estaba tan cansado que me dormí. / No estaba tan cansado como para dormirme.",
+  "en": "I was so tired I fell asleep. / I wasn't tired enough to fall asleep.",
+  "requires": [
+   "g:consequence-connectors",
+   "p:como-para"
+  ],
+  "contrasts": [
+   "g:consequence-connectors",
+   "p:como-para"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "que = a real result; como para = a threshold, often negated.",
+  "sources": [
+   "gr-sub-adv-consecutivas-c1"
+  ]
+ },
+ {
+  "id": "x:lo-que-el-que",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 468,
+  "title": "Which (the whole idea) vs which (a noun): lo que vs el que",
+  "es": "No vino, lo que me molestó. / La casa en la que vivo es vieja.",
+  "en": "He didn't come, which annoyed me. / The house I live in is old.",
+  "requires": [
+   "p:lo-que-cosa-que",
+   "g:relatives-prepositions"
+  ],
+  "contrasts": [
+   "p:lo-que-cosa-que",
+   "g:relatives-prepositions"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Clause antecedent → lo que/lo cual; noun antecedent → el/la que.",
+  "sources": [
+   "gr-relativos-c1"
+  ]
+ },
+ {
+  "id": "x:no-recuerdo-que-vs-haber",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 475,
+  "title": "Whose action: no recuerdo haber dicho eso vs no recuerdo que él dijera eso",
+  "es": "No recuerdo haber dicho eso (yo) / No recuerdo que él dijera eso (otro).",
+  "en": "I don't remember saying that / I don't remember him saying that.",
+  "requires": [
+   "p:same-subject-haber",
+   "p:no-recuerdo-que-subj"
+  ],
+  "contrasts": [
+   "p:same-subject-haber",
+   "p:no-recuerdo-que-subj"
+  ],
+  "serves": [
+   "d:remember"
+  ],
+  "pcic": [
+   "funciones:B2:525",
+   "funciones:B2:526",
+   "funciones:B2:527"
+  ],
+  "placement": "pcic",
+  "note": "Same subject → infinitive; different subject → que + subjunctive.",
+  "sources": [
+   "fn-no-recuerdo-elaborado-b2"
+  ]
+ },
+ {
+  "id": "x:siento-que-vs-siento-no-haber",
+  "kind": "contrast",
+  "band": "B2",
+  "priority": 492,
+  "title": "Sorry for them or sorry for what I did: siento que… vs siento no haber…",
+  "es": "Siento que hayas llegado tarde (tu situación) / Siento haber llegado tarde (mi culpa).",
+  "en": "I'm sorry you were late / I'm sorry I was late.",
+  "requires": [
+   "p:siento-mucho-que",
+   "p:siento-no-haber"
+  ],
+  "contrasts": [
+   "p:siento-mucho-que",
+   "p:siento-no-haber"
+  ],
+  "serves": [
+   "d:apologise"
+  ],
+  "pcic": [
+   "funciones:B2:1341",
+   "funciones:B2:1343",
+   "funciones:B2:1344",
+   "funciones:B2:1346",
+   "funciones:B2:850",
+   "funciones:B2:851",
+   "funciones:B2:852"
+  ],
+  "placement": "pcic",
+  "note": "Using que + subjunctive for your own action is the common slip.",
+  "sources": [
+   "fn-disculparse-b2",
+   "fn-expresar-arrepentimiento-b2"
+  ]
+ },
+ {
+  "id": "x:acabar-por-llegar-a",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 512,
+  "title": "Ending up doing vs going as far as: acabó por / llegó a",
+  "es": "Acabó por aceptarlo (tras resistirse). / Llegó a odiarlo (punto extremo).",
+  "en": "He ended up accepting it / He even came to hate it.",
+  "requires": [
+   "p:acabar-por-inf",
+   "p:llegar-a-inf"
+  ],
+  "contrasts": [
+   "p:acabar-por-inf",
+   "p:llegar-a-inf"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Both 'end-state' periphrases; learners swap them.",
+  "sources": []
+ },
+ {
+  "id": "x:juraria-vs-me-consta",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 517,
+  "title": "Sure because I feel it vs sure because I know it",
+  "es": "Juraría que… / No me cabe duda… / Me consta que…",
+  "en": "I could swear… vs I know for a fact…",
+  "requires": [
+   "p:juraria-que",
+   "p:no-me-cabe-duda"
+  ],
+  "contrasts": [
+   "p:juraria-que",
+   "p:no-me-cabe-duda"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": [
+   "fn-certeza-evidencia-c1"
+  ]
+ },
+ {
+  "id": "x:imperfecto-tres-usos",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 522,
+  "title": "The imperfect that isn't past: surprise, politeness or hearsay?",
+  "es": "¿Tú no tenías examen? / Venía a ver si… / Ernesto llegaba mañana.",
+  "en": "Surprise / polite approach / relayed news",
+  "requires": [
+   "p:imperfecto-sorpresa",
+   "p:imperfecto-cortesia-venia",
+   "p:imperfecto-citativo"
+  ],
+  "contrasts": [
+   "p:imperfecto-sorpresa",
+   "p:imperfecto-cortesia-venia",
+   "p:imperfecto-citativo"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Mixed recognition practice: what is the speaker doing with the imperfect?",
+  "sources": [
+   "dc-imperfecto-modal-c1",
+   "dc-citas-encubiertas-c1"
+  ]
+ },
+ {
+  "id": "x:para-mi-que-vs-cabe",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 522,
+  "title": "A hunch vs a formal possibility",
+  "es": "Para mí que no viene. / Cabe la posibilidad de que no venga.",
+  "en": "If you ask me… vs There is a possibility that…",
+  "requires": [
+   "p:para-mi-que",
+   "p:cabe-la-posibilidad"
+  ],
+  "contrasts": [
+   "p:para-mi-que",
+   "p:cabe-la-posibilidad"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Register and mood: para mí que + indic; cabe la posibilidad de que + subj.",
+  "sources": [
+   "fn-hipotesis-posibilidad-c1"
+  ]
+ },
+ {
+  "id": "x:reformular-vs-descartar",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 523,
+  "title": "Rephrasing vs setting aside",
+  "es": "Es decir / mejor dicho… vs En cualquier caso…",
+  "en": "Restating or replacing vs ruling the objection irrelevant",
+  "requires": [
+   "g:reformulation",
+   "p:en-cualquier-caso"
+  ],
+  "contrasts": [
+   "g:reformulation",
+   "p:en-cualquier-caso"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Choosing the wrong class misreports your intention.",
+  "sources": [
+   "dc-reformuladores-c1"
+  ]
+ },
+ {
+  "id": "x:antemano-antelacion",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 542,
+  "title": "Thanks in advance vs booking in advance: de antemano / con antelación",
+  "es": "Gracias de antemano. / Reserve con antelación.",
+  "en": "Thanks in advance / Book in advance.",
+  "requires": [
+   "c:gracias-de-antemano",
+   "p:con-antelacion"
+  ],
+  "contrasts": [
+   "c:gracias-de-antemano",
+   "p:con-antelacion"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "De antemano = knowing/thanking beforehand; con antelación = acting with margin before a deadline.",
+  "sources": []
+ },
+ {
+  "id": "x:parcial-vs-total",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 547,
+  "title": "Agreeing partly vs fully",
+  "es": "No te falta razón, ahora bien… / Coincido contigo en que…",
+  "en": "You've got a point, but… vs I agree that…",
+  "requires": [
+   "p:no-te-falta-razon",
+   "p:coincidir-en"
+  ],
+  "contrasts": [
+   "p:no-te-falta-razon",
+   "p:coincidir-en"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": [
+   "fn-expresar-acuerdo-c1",
+   "fn-escepticismo-contraargumento-c1"
+  ]
+ },
+ {
+  "id": "x:vista-gorda-pasar-por-alto",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 552,
+  "title": "Turning a blind eye vs overlooking: hacer la vista gorda / pasar por alto",
+  "es": "Hizo la vista gorda (lo vio y lo toleró). / Pasó por alto el dato (no lo vio o lo dejó de lado).",
+  "en": "He turned a blind eye / He overlooked the figure.",
+  "requires": [
+   "p:hacer-la-vista-gorda",
+   "p:pasar-por-alto"
+  ],
+  "contrasts": [
+   "p:hacer-la-vista-gorda",
+   "p:pasar-por-alto"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "sources": []
+ },
+ {
+  "id": "x:conformarse-no-remedio",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 562,
+  "title": "Settling for vs having no choice: conformarse con / no quedar más remedio",
+  "es": "Me conformo con poco. / No me quedó más remedio que irme.",
+  "en": "I'm happy with little / I had no choice but to leave.",
+  "requires": [
+   "p:conformarse-con",
+   "p:no-quedar-mas-remedio"
+  ],
+  "contrasts": [
+   "p:conformarse-con",
+   "p:no-quedar-mas-remedio"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Different structures (con + noun vs que + inf) for overlapping resignation meanings.",
+  "sources": []
+ },
+ {
+  "id": "x:al-tiempo-que-a-medida-que",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 565,
+  "title": "At the same time as vs as (progressively): al tiempo que / a medida que",
+  "es": "Sube la producción al tiempo que cae la demanda. / A medida que avanza la tarde, baja la temperatura.",
+  "en": "Production rises while demand falls / As the afternoon goes on, it gets colder.",
+  "requires": [
+   "p:al-tiempo-que",
+   "g:temporal-advanced"
+  ],
+  "contrasts": [
+   "p:al-tiempo-que",
+   "g:temporal-advanced"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Simultaneous (often contrasting) facts vs parallel progression.",
+  "sources": []
+ },
+ {
+  "id": "x:orden-escalera",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 582,
+  "title": "Blunt order vs ceremonious request",
+  "es": "Tú te callas. / ¿Sería tan amable de guardar silencio?",
+  "en": "You be quiet. / Would you be so kind as to be quiet?",
+  "requires": [
+   "p:orden-sin-imperativo",
+   "p:serias-tan-amable"
+  ],
+  "contrasts": [
+   "p:orden-sin-imperativo",
+   "p:serias-tan-amable"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Same content, opposite ends of the ladder; register-matching practice.",
+  "sources": [
+   "fn-orden-instruccion-c1",
+   "fn-favor-objetos-ayuda-c1"
+  ]
+ },
+ {
+  "id": "x:cualquier-dia-un-dia-cualquiera",
+  "kind": "contrast",
+  "band": "C1",
+  "priority": 587,
+  "title": "Cualquier día vs un día cualquiera",
+  "es": "Ven cualquier día. / Era un día cualquiera.",
+  "en": "Come any day. / It was an ordinary day.",
+  "requires": [
+   "g:cada-cualquier",
+   "p:un-x-cualquiera"
+  ],
+  "contrasts": [
+   "g:cada-cualquier",
+   "p:un-x-cualquiera"
+  ],
+  "serves": [],
+  "pcic": [],
+  "placement": "pcic",
+  "note": "Before the noun: any (cualquier); after: ordinary (cualquiera).",
+  "sources": [
+   "gr-cuantificadores-propios-c1"
+  ]
+ }
+]

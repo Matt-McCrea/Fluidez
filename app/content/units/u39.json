@@ -1,0 +1,121 @@
+{
+ "id": "u39",
+ "band": "B1",
+ "title": "Joining ideas",
+ "theme": "6. Educación: essays, presentations, structure, study",
+ "canDo": "I can write a connected text with an introduction, a development and a conclusion.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:infinitive-subject"
+   ],
+   "chunks": [
+    "c:sabian-que",
+    "c:gracias-por-su-atencion"
+   ],
+   "lexemes": [],
+   "chapter": "ch116"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:infinitive-subject",
+    "g:concession-despite"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:dificil-de-inf"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch117"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:discourse-structure"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch118"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:discourse-structure",
+    "g:infinitive-subject",
+    "x:dificil-de-es-dificil"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:hoy-les-voy-a-hablar",
+    "p:para-terminar",
+    "p:se-trata-de",
+    "p:hay-varios-tipos",
+    "p:adj-de-inf",
+    "p:a-la-vez",
+    "p:formar-parte-de",
+    "p:tratar-de"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:referring-back"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:referring-back",
+    "g:discourse-structure"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u39-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:infinitive-subject",
+    "g:discourse-structure",
+    "g:referring-back"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u39-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:infinitive-subject",
+    "g:discourse-structure",
+    "g:referring-back",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "The heritage committee asks for a written statement explaining why the café matters. Tomás writes it in Spanish, with Vale and Mariana as editors: an introduction, the history, the community, the evidence, a conclusion. It is the longest thing he has ever written in any language. Hernando reads it and says \"Rosa would have liked this\", then pretends he has something in his eye.",
+ "quota": {
+  "bankSentences": 447,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 4
+ }
+}

@@ -1,0 +1,2638 @@
+{
+ "nodes": [
+  {
+   "id": "p:contar-con",
+   "kind": "pattern",
+   "title": "Counting on someone: cuento contigo",
+   "es": "contar con + persona/cosa: Cuento contigo para el sábado. La oficina cuenta con parqueadero. Contamos con que llegues temprano.",
+   "en": "to count on / rely on; (of places) to have: I'm counting on you for Saturday. The office has parking. We're counting on you arriving early.",
+   "unit": 36,
+   "requires": [
+    "g:prep-pronouns"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-what-depends"
+   ],
+   "pcic": [
+    "gramatica:B2:636",
+    "gramatica:B2:638"
+   ],
+   "sources": [
+    "gr-complemento-preposicional-regido-b2"
+   ],
+   "note": "Pitfall: plain contar = to tell / to count (te cuento una historia); dropping \"con\" gives a real but different verb. contar con que + subjunctive when someone else acts. \"Cuenta con\" = \"has/features\" is very common in ads and formal descriptions."
+  },
+  {
+   "id": "p:depender-de",
+   "kind": "pattern",
+   "title": "It depends: depende de ti, depende de si llueve",
+   "es": "depender de + noun / de si… / de cómo…: Depende de ti. Depende de si llueve. Todo depende de cómo lo digas.",
+   "en": "to depend on: It's up to you. It depends on whether it rains. It all depends on how you say it.",
+   "unit": 32,
+   "requires": [
+    "g:si-present"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-what-depends"
+   ],
+   "pcic": [
+    "gramatica:B2:636"
+   ],
+   "sources": [
+    "gr-complemento-preposicional-regido-b2"
+   ],
+   "note": "Pitfall: English \"depend ON\" → Spanish \"de\", never *depender en. \"Depende\" alone is a full answer. With a question word: depende de cuánto cueste (subjunctive when the amount is open). Contrast with según."
+  },
+  {
+   "id": "p:consistir-en",
+   "kind": "pattern",
+   "title": "Saying what something involves: consiste en…",
+   "es": "consistir en + noun / infinitive: El trabajo consiste en atender a los clientes. ¿En qué consiste el proceso? La prueba consiste en traducir un texto.",
+   "en": "to consist of / involve: The job involves serving customers. What does the process involve? The test consists of translating a text.",
+   "unit": 48,
+   "requires": [
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-what-depends"
+   ],
+   "pcic": [
+    "gramatica:B2:636",
+    "gramatica:B2:637"
+   ],
+   "sources": [
+    "gr-complemento-preposicional-regido-b2"
+   ],
+   "note": "Pitfall: *consistir de (calque of \"consist of\"). Spanish uses \"en\". Question form ¿En qué consiste…? is the natural way to ask what something involves."
+  },
+  {
+   "id": "p:tratar-de",
+   "kind": "pattern",
+   "title": "Trying, and what it's about: trato de…, se trata de…",
+   "es": "tratar de + infinitive = try to; se trata de + noun/infinitive = it's about / it's a matter of: Trato de llegar temprano. La película trata de una familia en Cali. No se trata de plata, se trata de respeto.",
+   "en": "to try to; to be about; it's a matter of: I try to arrive early. The film is about a family in Cali. It isn't about money, it's about respect.",
+   "unit": 39,
+   "requires": [
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:636",
+    "gramatica:B2:637"
+   ],
+   "sources": [
+    "gr-complemento-preposicional-regido-b2"
+   ],
+   "note": "Three uses, one preposition: tratar de + inf (try), [algo] trata de (a book/film is about), se trata de (impersonal: it's a question of — never with a subject: *la película se trata de is common but non-standard; teach \"la película trata de\"). Contrast with intentar (no preposition)."
+  },
+  {
+   "id": "p:decidirse-atreverse-a",
+   "kind": "pattern",
+   "title": "Finally making up your mind, daring to: me decidí a…, no me atreví a…",
+   "es": "decidirse a / atreverse a + infinitive: Por fin me decidí a cambiar de trabajo. No me atreví a decirle la verdad. ¿Te atreves a manejar en Bogotá?",
+   "en": "to make up your mind to / to dare to: I finally made up my mind to change jobs. I didn't dare tell him the truth. Do you dare drive in Bogotá?",
+   "unit": 43,
+   "requires": [
+    "g:reflexive-routine",
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:637",
+    "gramatica:C1:629"
+   ],
+   "sources": [
+    "gr-complemento-preposicional-regido-b2",
+    "gr-complementos-verbales-c1"
+   ],
+   "note": "decidir + inf (no prep) = decide; decidirse a = finally bring yourself to (after hesitation). atreverse a vs (literary) osar + inf. The preposition comes with the pronominal verb: the \"se\" form brings \"a\"."
+  },
+  {
+   "id": "p:arrepentirse-de",
+   "kind": "pattern",
+   "title": "Regretting something: me arrepiento de…",
+   "es": "arrepentirse de + noun / infinitive: Me arrepiento de lo que dije. No me arrepiento de nada. Se arrepintió de no haber estudiado.",
+   "en": "to regret: I regret what I said. I don't regret anything. He regretted not having studied.",
+   "unit": 43,
+   "requires": [
+    "g:reflexive-routine"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:636",
+    "gramatica:B2:637"
+   ],
+   "sources": [
+    "gr-complemento-preposicional-regido-b2"
+   ],
+   "note": "Always pronominal and always \"de\". Pairs naturally with the perfect infinitive (de no haber ido, g:infinitive-perfect, u48) — recycle it there. Not to be confused with lamentar (formal, + que + subjunctive)."
+  },
+  {
+   "id": "p:fijarse-reparar-en",
+   "kind": "pattern",
+   "title": "Noticing details: fíjate en…, no me fijé",
+   "es": "fijarse en / reparar en + noun: ¿Te fijaste en el color del carro? No me fijé en la placa. Nadie reparó en el detalle.",
+   "en": "to notice / pay attention to: Did you notice the colour of the car? I didn't notice the plate. Nobody noticed the detail.",
+   "unit": 46,
+   "requires": [
+    "g:reflexive-routine"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:638",
+    "gramatica:B2:639"
+   ],
+   "sources": [
+    "gr-complemento-preposicional-regido-b2"
+   ],
+   "note": "Testimony frame (who saw what). reparar en = notice (formal/written) vs plain reparar = to repair — the preposition changes the verb. darse cuenta de = realise (a fact), fijarse en = look carefully at (a detail). \"Fíjate\" alone is also a discourse opener (see c:fijese-que)."
+  },
+  {
+   "id": "p:renunciar-a",
+   "kind": "pattern",
+   "title": "Giving something up, resigning: renunciar a…",
+   "es": "renunciar a + noun / infinitive; renunciar (alone) = to resign: Renunció a su cargo. No pienso renunciar a mis vacaciones. Presenté la renuncia y renuncié el viernes.",
+   "en": "to give up / renounce; to resign: She resigned from her post. I'm not giving up my holiday. I handed in my resignation and quit on Friday.",
+   "unit": 49,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:636"
+   ],
+   "sources": [
+    "gr-complemento-preposicional-regido-b2"
+   ],
+   "note": "Colombian work vocabulary: renunciar (to quit a job) is the everyday verb; \"pasar la carta de renuncia\". Pitfall: *renunciar mi trabajo — the \"a\" is needed before what you give up."
+  },
+  {
+   "id": "p:dificil-de-inf",
+   "kind": "pattern",
+   "title": "Hard to believe, easy to fix: difícil de + verb",
+   "es": "cosa + ser + adjetivo + de + infinitive: Esta palabra es difícil de pronunciar. El problema es fácil de resolver. Es una historia difícil de creer.",
+   "en": "hard/easy to do: This word is hard to pronounce. The problem is easy to fix. It's a hard story to believe.",
+   "unit": 39,
+   "requires": [
+    "g:verb-infinitive",
+    "g:infinitive-subject"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:587",
+    "gramatica:C1:670"
+   ],
+   "sources": [
+    "gr-complementos-sa-b2",
+    "gr-sub-sustantivas-c1"
+   ],
+   "note": "Contrast with the impersonal \"Es difícil pronunciar esta palabra\" (no de). Rule of thumb: thing as subject → de; \"it is\" with no subject → no preposition. Same frame: imposible de olvidar, agradable de leer."
+  },
+  {
+   "id": "p:capaz-dispuesto-a",
+   "kind": "pattern",
+   "title": "Able and willing: capaz de, dispuesto a",
+   "es": "ser capaz de + inf; estar dispuesto a + inf / a que + subj: No soy capaz de decirle que no. Estoy dispuesto a negociar. ¿Estaría dispuesto a que lo revisemos juntos?",
+   "en": "able to / capable of; willing to: I can't bring myself to say no to him. I'm willing to negotiate. Would you be willing for us to go over it together?",
+   "unit": 50,
+   "requires": [
+    "g:verb-infinitive",
+    "g:subj-influence"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:hold-my-ground"
+   ],
+   "pcic": [
+    "gramatica:B2:587",
+    "gramatica:B2:588"
+   ],
+   "sources": [
+    "gr-complementos-sa-b2",
+    "gr-sub-sustantivas-c1"
+   ],
+   "note": "capaz de (ser) vs dispuesto a (estar) — prepositions differ and so does the verb. In LatAm \"capaz que…\" = maybe (capaz que llueva) is colloquial — recognition. \"¡Es capaz de todo!\" = he'd stop at nothing."
+  },
+  {
+   "id": "p:harto-de",
+   "kind": "pattern",
+   "title": "Fed up: estoy harto de…",
+   "es": "estar harto/a de + noun / infinitive / que + subjunctive: Estoy harta del tráfico. Estoy harto de esperar. Estamos hartos de que nos traten así.",
+   "en": "to be fed up with / sick of: I'm fed up with the traffic. I'm sick of waiting. We're fed up with being treated like this.",
+   "unit": 30,
+   "requires": [
+    "g:subj-emotion",
+    "g:adjective-agreement"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:hold-my-ground"
+   ],
+   "pcic": [
+    "gramatica:B2:587",
+    "gramatica:B2:589"
+   ],
+   "sources": [
+    "gr-complementos-sa-b2"
+   ],
+   "note": "Agrees with the speaker (harta/hartos). de + inf when the same person; de que + subjunctive when someone else does it (ties to x:inf-vs-que-subj). Colombian alternatives: mamado/a de (colloquial, recognition only)."
+  },
+  {
+   "id": "p:interesado-en",
+   "kind": "pattern",
+   "title": "Interested in: estoy interesado en…",
+   "es": "estar interesado/a en + noun / infinitive / que + subjunctive: Estoy interesada en el cargo. Estamos interesados en invertir. Están interesados en que participemos.",
+   "en": "to be interested in: I'm interested in the position. We're interested in investing. They're interested in our taking part.",
+   "unit": 49,
+   "requires": [
+    "g:subj-influence"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:587",
+    "gramatica:B2:589",
+    "gramatica:C1:569"
+   ],
+   "sources": [
+    "gr-complementos-sa-b2",
+    "gr-complementos-adjetival-c1"
+   ],
+   "note": "Application letters: \"Me dirijo a ustedes porque estoy interesada en…\". Pitfall: *interesado de / *interesado por + inf is less natural; en is the safe choice. Me interesa + inf is the everyday alternative."
+  },
+  {
+   "id": "p:de-lo-mas-adj",
+   "kind": "pattern",
+   "title": "Extremely, in a review voice: de lo más interesante",
+   "es": "de lo más + adjective: Fue una noche de lo más divertida. Un libro de lo más original. La reunión estuvo de lo más tensa.",
+   "en": "really / extremely (lively register): It was a really fun night. A most original book. The meeting was extremely tense.",
+   "unit": 60,
+   "requires": [
+    "g:superlatives"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:571",
+    "gramatica:C1:572"
+   ],
+   "sources": [
+    "gr-complementos-adjetival-c1"
+   ],
+   "note": "Agreement wavers: una película de lo más divertido / divertida — both accepted; teach the agreeing form. \"Estoy lo más de bien\" type (lo más = muy) is regional (recognition only). Peninsular quantifiers la mar de / la tira de dropped (not LatAm); LatAm uses un montón de."
+  },
+  {
+   "id": "p:el-capital-la-capital",
+   "kind": "pattern",
+   "title": "Money or city: el capital / la capital",
+   "es": "el capital = money invested; la capital = capital city: Bogotá es la capital de Colombia. La empresa necesita más capital. El capital inicial fue de cien millones.",
+   "en": "the capital (money) vs the capital (city): Bogotá is the capital of Colombia. The company needs more capital. The starting capital was a hundred million.",
+   "unit": 45,
+   "requires": [
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:10"
+   ],
+   "sources": [
+    "gr-genero-sustantivos-c1"
+   ],
+   "note": "The article is the only signal. Adjectives agree accordingly: el capital necesario / la capital colombiana."
+  },
+  {
+   "id": "p:el-orden-la-orden",
+   "kind": "pattern",
+   "title": "Order and orders: el orden / la orden, el corte / la corte",
+   "es": "el orden = sequence, tidiness; la orden = a command; el corte = a cut; la corte = a court: Pónganlos en orden alfabético. Fue una orden del juez. La Corte Constitucional falló ayer. Hubo un corte de luz.",
+   "en": "order (sequence) vs an order (command); a cut vs a court: Put them in alphabetical order. It was a judge's order. The Constitutional Court ruled yesterday. There was a power cut.",
+   "unit": 55,
+   "requires": [
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:10",
+    "gramatica:C1:11"
+   ],
+   "sources": [
+    "gr-genero-sustantivos-c1"
+   ],
+   "note": "Institutional Spanish: el orden del día (agenda), la orden de captura, la Corte Suprema. Also ¡A la orden! (Colombian shop formula) = at your service — the command noun, feminine."
+  },
+  {
+   "id": "p:fruto-fruta",
+   "kind": "pattern",
+   "title": "The fruit you eat and the fruit of your work: la fruta / el fruto",
+   "es": "la fruta = fruit to eat (mass); el fruto = result, or botanical fruit; la leña / el leño: Compré fruta en Paloquemao. Es el fruto de muchos años de trabajo. Trae leña para la chimenea.",
+   "en": "fruit (food) vs fruit (result); firewood vs a log: I bought fruit at Paloquemao. It's the fruit of many years of work. Bring firewood for the fireplace.",
+   "unit": 58,
+   "requires": [
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:8",
+    "gramatica:C1:9"
+   ],
+   "sources": [
+    "gr-genero-sustantivos-c1"
+   ],
+   "note": "Closed list, not a productive rule (individual vs mass: el leño/la leña; small vs large: el huerto/la huerta). Teach fruta/fruto first; the rest recognition."
+  },
+  {
+   "id": "p:el-frente-la-frente",
+   "kind": "pattern",
+   "title": "Same word, different thing: la frente / el frente, el cura / la cura, la coma / el coma",
+   "es": "la frente = forehead / el frente = front; el cura = priest / la cura = cure; la coma = comma / el coma = coma: Tiene una cicatriz en la frente. Llega un frente frío. Todavía no hay cura. Estuvo en coma tres días.",
+   "en": "forehead vs front; priest vs cure; comma vs coma: He has a scar on his forehead. A cold front is coming. There's no cure yet. She was in a coma for three days.",
+   "unit": 58,
+   "requires": [
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:11",
+    "gramatica:C1:12"
+   ],
+   "sources": [
+    "gr-genero-sustantivos-c1"
+   ],
+   "note": "Unrelated meanings sharing a form. el mar / la mar and el/la azúcar are true variants (meaning unchanged) — keep adjective agreement consistent: la azúcar morena / el azúcar moreno."
+  },
+  {
+   "id": "p:los-celos-los-restos",
+   "kind": "pattern",
+   "title": "Plurals with their own meaning: los celos, los restos, las esposas",
+   "es": "los celos = jealousy; los restos = remains; las esposas = handcuffs (also wives): Tiene celos de su hermano. Encontraron restos arqueológicos. Le pusieron las esposas.",
+   "en": "jealousy; remains; handcuffs: He's jealous of his brother. They found archaeological remains. They handcuffed him.",
+   "unit": 57,
+   "requires": [
+    "g:article-uses"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:18",
+    "gramatica:C1:19"
+   ],
+   "sources": [
+    "gr-numero-sustantivos-c1",
+    "gr-numero-sustantivos-b2"
+   ],
+   "note": "Not \"several celos\": tener celos / estar celoso. el resto (the rest) vs los restos (what is left after destruction or death). Emotion unit: celos sits with envidia (tener envidia)."
+  },
+  {
+   "id": "p:plural-one-object",
+   "kind": "pattern",
+   "title": "One object, plural noun: las gafas, las tijeras, los pantalones",
+   "es": "las gafas / los lentes, las tijeras, los pantalones, las escaleras, los alicates: ¿Dónde dejé las gafas? Pásame las tijeras. Bajó por las escaleras.",
+   "en": "one object named in the plural: Where did I leave my glasses? Pass me the scissors. She went down the stairs.",
+   "unit": 48,
+   "requires": [
+    "g:article-uses"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:20",
+    "gramatica:B2:28",
+    "gramatica:C1:17"
+   ],
+   "sources": [
+    "gr-numero-sustantivos-b2",
+    "gr-numero-sustantivos-c1"
+   ],
+   "note": "unas gafas = one pair; \"un pantalón\" (singular) also normal in LatAm. Also invariable plurals: la crisis / las crisis, el virus / los virus, el análisis / los análisis; stress-shifting plurals el carácter / los caracteres, el régimen / los regímenes — mention in the pitfall slot."
+  },
+  {
+   "id": "p:azul-oscuro-invariable",
+   "kind": "pattern",
+   "title": "Two-word colours don't change: camisas azul oscuro",
+   "es": "noun + colour + colour/qualifier (invariable): unas camisas azul oscuro, zapatos verde botella, dos carros gris plata.",
+   "en": "compound colours stay the same in the plural: some dark-blue shirts, bottle-green shoes, two silver-grey cars.",
+   "unit": 48,
+   "requires": [
+    "g:adjective-agreement"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:24"
+   ],
+   "sources": [
+    "gr-clases-adjetivos-c1"
+   ],
+   "note": "Pitfall: *camisas azules oscuras. The two-word colour is a fixed label. Also colours named by a noun stay invariable: camisas naranja / naranjas (both heard), vestidos rosa."
+  },
+  {
+   "id": "p:un-x-cualquiera",
+   "kind": "pattern",
+   "title": "Just any old…: un día cualquiera, no es un libro cualquiera",
+   "es": "un/una + noun + cualquiera (after the noun) = ordinary, any old: Era un martes cualquiera. No es una película cualquiera. Dame un lápiz cualquiera.",
+   "en": "any old / ordinary: It was just an ordinary Tuesday. It isn't just any film. Give me any pencil.",
+   "unit": 60,
+   "requires": [
+    "g:cada-cualquier"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:171",
+    "gramatica:C1:150"
+   ],
+   "sources": [
+    "gr-cuantificadores-propios-c1",
+    "gr-cuantificadores-numerales-cualquier-b2"
+   ],
+   "note": "Position decides meaning: cualquier día (any day — before the noun, shortened) vs un día cualquiera (an ordinary day — after, full form). Pitfall: *cualquiera persona. \"Es un cualquiera\" (a nobody) is pejorative — recognition."
+  },
+  {
+   "id": "p:cada-quien",
+   "kind": "pattern",
+   "title": "To each their own: cada quien, cada uno con lo suyo",
+   "es": "cada quien / cada uno + 3rd person singular: Cada quien tiene su versión. Cada uno paga lo suyo. Cada quien con su cuento.",
+   "en": "each person / to each their own: Everyone has their own version. Everyone pays for their own. Each to their own story.",
+   "unit": 53,
+   "requires": [
+    "g:cada-cualquier"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:152",
+    "gramatica:C1:153"
+   ],
+   "sources": [
+    "gr-cuantificadores-propios-c1"
+   ],
+   "note": "cada quien is the common LatAm form (Spain prefers cada uno). Verb singular even though it means \"everyone\". For a group of women, cada una: cada una se fue a su casa."
+  },
+  {
+   "id": "p:mas-de-lo-que",
+   "kind": "pattern",
+   "title": "More than you'd think: más de lo que esperaba",
+   "es": "más / menos + de lo que + clause: Cuesta más de lo que pensábamos. Sabe más de lo que parece. Gastamos menos de lo que creíamos.",
+   "en": "more/less than + clause: It costs more than we thought. He knows more than he lets on. We spent less than we thought.",
+   "unit": 36,
+   "requires": [
+    "g:comparatives",
+    "g:relatives-donde-lo-que"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:161",
+    "gramatica:C1:847",
+    "gramatica:C1:260"
+   ],
+   "sources": [
+    "gr-cuantificadores-propios-c1",
+    "gr-sub-adv-comparativas-c1",
+    "gr-relativos-c1"
+   ],
+   "note": "Pitfall: *más que lo que pensábamos. With a clause after the comparison, \"de lo que\" (or de la que / del que with a noun: más plata de la que tengo). C1 nuance: \"no cuesta más de lo que esperaba\" = it costs at most that."
+  },
+  {
+   "id": "p:lo-de",
+   "kind": "pattern",
+   "title": "That business with…: lo de ayer, lo del contrato",
+   "es": "lo de + noun/adverb/infinitive: ¿Supiste lo de Andrés? Perdón por lo de ayer. Lo del contrato ya está listo.",
+   "en": "the thing about / what happened with: Did you hear about Andrés? Sorry about yesterday. The contract thing is sorted.",
+   "unit": 37,
+   "requires": [
+    "g:lo-adjective"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:74"
+   ],
+   "sources": [
+    "gr-articulo-definido-valores-b2"
+   ],
+   "note": "Lets you refer to a shared topic without naming it — very frequent in conversation. Neuter: never *el de ayer for a situation. Also lo de que + clause: lo de que se van a mudar."
+  },
+  {
+   "id": "p:lo-mio-lo-tuyo",
+   "kind": "pattern",
+   "title": "That's your thing / I had my share: lo tuyo, pasé lo mío",
+   "es": "lo + stressed possessive: Lo tuyo es la cocina. Yo ya pasé lo mío. Cada uno a lo suyo.",
+   "en": "your thing / my share (of trouble) / minding your own business: Cooking is your thing. I've been through my share. Everyone minding their own business.",
+   "unit": 52,
+   "requires": [
+    "g:possessives-stressed",
+    "g:lo-adjective"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:124",
+    "gramatica:C1:125"
+   ],
+   "sources": [
+    "gr-posesivos-c1"
+   ],
+   "note": "The referent stays deliberately vague. \"Lo nuestro\" = our relationship (very common in songs). Memoir unit: \"Mi abuela sufrió lo suyo\"."
+  },
+  {
+   "id": "p:tener-su-gracia",
+   "kind": "pattern",
+   "title": "Understatement: tiene su truco, tiene su gracia",
+   "es": "tener + su + noun = it has quite a bit of…: Esto tiene su truco. Manejar en Bogotá tiene su ciencia. El plan tiene sus riesgos.",
+   "en": "there's a knack to it / it's not as simple as it looks: There's a trick to this. Driving in Bogotá is an art. The plan has its risks.",
+   "unit": 54,
+   "requires": [
+    "g:possessives"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:react-natively"
+   ],
+   "pcic": [
+    "gramatica:C1:123"
+   ],
+   "sources": [
+    "gr-posesivos-c1"
+   ],
+   "note": "The possessive owns nothing; it quantifies with understatement (\"quite a lot of\"). Irony unit: \"Tiene su gracia\" = it's funny, in its way / ironic. Set phrases: tiene su chiste (Col.), tiene su complicación."
+  },
+  {
+   "id": "p:lo-antes-posible",
+   "kind": "pattern",
+   "title": "As soon as possible: lo antes posible, lo más rápido que pueda",
+   "es": "lo + más/antes + posible / que + poder: Llámeme lo antes posible. Vine lo más rápido que pude. Hágalo lo mejor que pueda.",
+   "en": "as … as possible / as I can: Call me as soon as possible. I came as fast as I could. Do it as well as you can.",
+   "unit": 42,
+   "requires": [
+    "g:superlatives",
+    "g:lo-adjective"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:61"
+   ],
+   "sources": [
+    "gr-articulo-definido-c1"
+   ],
+   "note": "Request-ladder material (lo antes posible / cuanto antes / apenas pueda). With poder: present for future (que pueda), preterite for past (que pude). Pitfall: *tan pronto posible."
+  },
+  {
+   "id": "p:la-cara-que-puso",
+   "kind": "pattern",
+   "title": "The sheer…!: ¡La cara que puso!, ¡tienes cada idea!",
+   "es": "¡el/la + noun + que + verb!; ¡tener cada + noun!: ¡La cara que puso! ¡Las cosas que dices! ¡Tienes cada idea! ¡Con el frío que hace!",
+   "en": "exclamations of degree with a noun: You should have seen his face! The things you say! The ideas you come up with! In this cold!",
+   "unit": 47,
+   "requires": [
+    "g:exclamations",
+    "g:relative-que"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:react-natively"
+   ],
+   "pcic": [
+    "gramatica:C1:59",
+    "gramatica:C1:800"
+   ],
+   "sources": [
+    "gr-articulo-definido-c1",
+    "gr-sub-adv-consecutivas-c1",
+    "gr-sub-adv-concesivas-c1"
+   ],
+   "note": "The article does not identify anything; it intensifies. cada + noun (\"tiene cada salida…\") is often left hanging. Natural in Colombia. Pairs with g:lo-que-intensity (lo difícil que es)."
+  },
+  {
+   "id": "p:como-cuanto-verbo",
+   "kind": "pattern",
+   "title": "How it rains!: ¡cómo llueve!, ¡cuánto sabe!",
+   "es": "¡Cómo + verb! / ¡Cuánto + verb! / ¡Cuántos + noun!: ¡Cómo llueve! ¡Cómo canta esa mujer! ¡Cuánto sabe de café! ¡Cuántas cosas han cambiado!",
+   "en": "how / how much …!: It's pouring! How that woman sings! He knows so much about coffee! So many things have changed!",
+   "unit": 47,
+   "requires": [
+    "g:exclamations"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:react-natively"
+   ],
+   "pcic": [
+    "gramatica:B2:296",
+    "gramatica:B2:297",
+    "gramatica:C1:307"
+   ],
+   "sources": [
+    "gr-exclamativos-b2",
+    "gr-exclamativos-c1"
+   ],
+   "note": "qué + adjective/adverb (¡qué bien canta!) vs cómo + verb (¡cómo canta!). cuánto is invariable before a verb, agrees before a noun. Nothing goes between the exclamative and the verb: *¡Cómo esa mujer canta!"
+  },
+  {
+   "id": "p:que-x-este",
+   "kind": "pattern",
+   "title": "Nostalgia and exasperation: ¡qué tiempos aquellos!, ¡este muchacho…!",
+   "es": "¡Qué + noun + este/aquel!; este/esta + noun… (trailing off): ¡Qué tiempos aquellos! ¡Qué mujer esta! Este muchacho… no aprende.",
+   "en": "those were the days! / what a woman! / honestly, this boy…: Those were the days! What a woman! This boy… he never learns.",
+   "unit": 57,
+   "requires": [
+    "g:demonstratives",
+    "g:exclamations"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:113",
+    "gramatica:C1:115"
+   ],
+   "sources": [
+    "gr-demostrativos-c1"
+   ],
+   "note": "Postposed demonstrative only in exclamations. The trailing \"este muchacho…\" carries resigned affection — intonation does the work. Nostalgia lesson: ¡qué épocas aquellas!"
+  },
+  {
+   "id": "p:eso-de-que",
+   "kind": "pattern",
+   "title": "Distancing from a claim: eso de que…",
+   "es": "eso de que + clause / eso que dices: Eso de que va a renunciar es puro chisme. Eso que dices no tiene sentido. ¿Qué es eso de que no hay plata?",
+   "en": "this business about… / what you're saying: This story about him resigning is pure gossip. What you're saying makes no sense. What's all this about there being no money?",
+   "unit": 53,
+   "requires": [
+    "g:demonstratives",
+    "g:that-clauses"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:111",
+    "gramatica:C1:112"
+   ],
+   "sources": [
+    "gr-demostrativos-c1"
+   ],
+   "note": "Neuter eso packages someone else's claim so you can dismiss or question it. Indicative after \"eso de que\" (you are quoting a claim). Fits the u53 can-do (not vouching)."
+  },
+  {
+   "id": "p:un-tal",
+   "kind": "pattern",
+   "title": "A certain…: un tal Pedro",
+   "es": "un tal / una tal + name: Llamó un tal Rodríguez. Me lo dijo una tal Marcela. Lo firmó un tal doctor Peña.",
+   "en": "a certain / someone called: Someone called Rodríguez rang. A certain Marcela told me. A Dr Peña, or so he called himself, signed it.",
+   "unit": 53,
+   "requires": [
+    "g:article-uses"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:81",
+    "gramatica:C1:82"
+   ],
+   "sources": [
+    "gr-articulo-indefinido-c1"
+   ],
+   "note": "Signals the listener (and often the speaker) doesn't know the person — mildly distancing, can sound dismissive. Not for someone already introduced. Other indefinite-with-name use: \"tiene un Botero en la sala\" (a work by) — recognition."
+  },
+  {
+   "id": "p:un-amor-de-persona",
+   "kind": "pattern",
+   "title": "A sweetheart of a person: es un amor de persona",
+   "es": "un/una + evaluative noun + de + noun (no article): Es un amor de persona. Fue un desastre de reunión. ¡Qué belleza de casa!",
+   "en": "a … of a …: She's a lovely person. It was a disaster of a meeting. What a beautiful house!",
+   "unit": 57,
+   "requires": [
+    "g:article-uses"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:84",
+    "gramatica:C1:85"
+   ],
+   "sources": [
+    "gr-articulo-indefinido-c1"
+   ],
+   "note": "Second noun takes no article: *un amor de la persona. Very natural in Colombia (\"un amor de persona\", \"una belleza de…\", \"un berraco de tipo\" — last one regional slang)."
+  },
+  {
+   "id": "p:personalmente-tecnicamente",
+   "kind": "pattern",
+   "title": "Framing a claim: personalmente…, técnicamente…, oficialmente…",
+   "es": "viewpoint adverb + comma + statement: Personalmente, no estoy de acuerdo. Técnicamente, el contrato ya venció. Oficialmente no ha renunciado.",
+   "en": "speaking personally / technically / officially: Personally, I don't agree. Technically, the contract has already expired. Officially, he hasn't resigned.",
+   "unit": 53,
+   "requires": [
+    "g:adverbs-mente"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:346",
+    "gramatica:C1:351"
+   ],
+   "sources": [
+    "gr-adverbios-frecuencia-topico-b2",
+    "gr-adverbios-externos-c1"
+   ],
+   "note": "They frame the whole sentence from an angle; set off with a comma. \"Oficialmente…\" implies \"unofficially, something else\" — a distancing device. Related g:evaluative-adverbs (u60) covers judgement adverbs."
+  },
+  {
+   "id": "p:precisamente-concretamente",
+   "kind": "pattern",
+   "title": "Pinpointing: precisamente por eso, concretamente",
+   "es": "precisamente / justamente + focus; concretamente / en concreto: Precisamente por eso no fui. Justamente de eso quería hablarte. Necesitamos ayuda, concretamente con la logística.",
+   "en": "exactly / specifically: That's exactly why I didn't go. That's just what I wanted to talk to you about. We need help — with the logistics, specifically.",
+   "unit": 47,
+   "requires": [
+    "g:adverbs-mente"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:357",
+    "gramatica:B2:358"
+   ],
+   "sources": [
+    "gr-adverbios-enunciacion-b2"
+   ],
+   "note": "False friend: casualmente = by coincidence, not \"casually\" (Llegó, casualmente, el mismo día que yo). Emphasis unit: these put the spotlight on one phrase, like a cleft."
+  },
+  {
+   "id": "p:solo-que",
+   "kind": "pattern",
+   "title": "Yes, except that…: solo que…",
+   "es": "statement + solo que + clause: El plan es bueno, solo que llega tarde. Me encantaría ir, solo que no tengo plata. Tenía buena intención, solo que no me expliqué bien.",
+   "en": "except that / only: The plan's good, it's just late. I'd love to go, only I have no money. I meant well, I just didn't explain myself.",
+   "unit": 44,
+   "requires": [
+    "g:pero-sino"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:375"
+   ],
+   "sources": [
+    "gr-adverbios-conjuntivos-c1"
+   ],
+   "note": "Softer than pero: keeps the first statement and adds one limitation, often half-apologising. Very natural in LatAm speech."
+  },
+  {
+   "id": "p:no-porque-sino-porque",
+   "kind": "pattern",
+   "title": "Not because…, but because…: no porque sea…, sino porque…",
+   "es": "no + porque + subjunctive, sino porque + indicative: No lo digo porque sea mi amigo, sino porque es verdad. No estudia porque tenga miedo, sino porque le interesa.",
+   "en": "not because… but because…: I'm not saying it because he's my friend, but because it's true. She doesn't study out of fear, she studies because she's interested.",
+   "unit": 56,
+   "requires": [
+    "g:cause-result",
+    "g:pero-sino",
+    "g:mood-choice-fine"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:461",
+    "gramatica:C1:462"
+   ],
+   "sources": [
+    "gr-tiempos-subjuntivo-c1"
+   ],
+   "note": "The subjunctive marks the rejected cause; the real cause stays indicative. Compare \"No se va porque está cansado\" (he isn't leaving; he is tired) vs \"No se va porque esté cansado\" (he is leaving, but not for that reason)."
+  },
+  {
+   "id": "p:lo-que-cosa-que",
+   "kind": "pattern",
+   "title": "Commenting on the whole thing: …, lo que me molestó",
+   "es": "clause + coma + lo que / lo cual / cosa que + verb: No llamó, lo que me molestó bastante. El vuelo se retrasó, lo cual complicó todo. Se quejó de todo, cosa que nos cansó.",
+   "en": "which (referring to the whole previous idea): He didn't call, which annoyed me quite a bit. The flight was delayed, which complicated everything. She complained about everything, which wore us out.",
+   "unit": 48,
+   "requires": [
+    "g:relatives-donde-lo-que",
+    "g:relatives-formal"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:268",
+    "gramatica:C1:686"
+   ],
+   "sources": [
+    "gr-relativos-c1",
+    "gr-sub-adjetivas-relativo-c1"
+   ],
+   "note": "Pitfall: *…, el que me molestó / *…, que me molestó for a whole clause — English \"which\" maps to lo que. lo cual is more written; cosa que is colloquial."
+  },
+  {
+   "id": "p:se-me-involuntary",
+   "kind": "pattern",
+   "title": "It happens to your body: se me cierran los ojos, se me pone la piel de gallina",
+   "es": "se + me/te/le + body reaction verb + body part: Se me cierran los ojos. Se me puso la piel de gallina. Se me hace agua la boca. Se le aguaron los ojos.",
+   "en": "involuntary reactions: My eyes are closing. I got goosebumps. My mouth is watering. Her eyes welled up.",
+   "unit": 57,
+   "requires": [
+    "g:se-accidental",
+    "g:possessive-dative"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:228",
+    "gramatica:B2:220"
+   ],
+   "sources": [
+    "gr-pronombre-personal-c1",
+    "gr-pronombre-personal-b2"
+   ],
+   "note": "No agent, no blame — the same se + dative as se me cayó, applied to the body. \"Se le aguaron los ojos\" is very Colombian. Order always se + me/te/le (*me se)."
+  },
+  {
+   "id": "p:comerse-todo",
+   "kind": "pattern",
+   "title": "Eating it all up: me comí toda la torta",
+   "es": "comerse / tomarse / leerse + a delimited object: Me comí toda la torta. Se tomó dos cervezas. Me leí el libro en un día.",
+   "en": "to eat up / drink / read the whole thing: I ate the whole cake. He downed two beers. I read the book in a day.",
+   "unit": 30,
+   "requires": [
+    "g:se-meaning-change",
+    "g:reflexive-routine"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:626",
+    "gramatica:C1:99"
+   ],
+   "sources": [
+    "gr-complementos-verbales-c1",
+    "gr-nombres-escuetos-c1"
+   ],
+   "note": "With se the object must be bounded: *me comí torta is out; \"comí torta\" is fine. The se adds completeness/relish. "
+  },
+  {
+   "id": "p:la-vi-salir",
+   "kind": "pattern",
+   "title": "Seeing someone do it: la vi salir, lo oí llegar",
+   "es": "ver / oír + object + infinitive: La vi salir del edificio. Lo oí llegar a las tres. Nunca la había visto llorar.",
+   "en": "to see/hear someone do something: I saw her leave the building. I heard him come in at three. I'd never seen her cry.",
+   "unit": 46,
+   "requires": [
+    "g:direct-objects",
+    "g:object-pronoun-position"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:630",
+    "gramatica:C1:205"
+   ],
+   "sources": [
+    "gr-complementos-verbales-c1",
+    "gr-pronombre-personal-c1"
+   ],
+   "note": "Testimony frame. Pronoun goes before ver/oír (la vi salir; also he visto hacerlo when shared). With a gerund (la vi saliendo) it's ambiguous who was leaving — prefer the infinitive."
+  },
+  {
+   "id": "p:la-nombraron-directora",
+   "kind": "pattern",
+   "title": "Naming and declaring: la nombraron directora",
+   "es": "nombrar / elegir / declarar + object + bare noun or adjective: La nombraron directora. Lo eligieron presidente de la junta. Declararon la zona en emergencia.",
+   "en": "to appoint / elect / declare someone something: She was appointed director. He was elected chair of the board. They declared the area an emergency zone.",
+   "unit": 55,
+   "requires": [
+    "g:direct-objects"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:621",
+    "gramatica:C1:98"
+   ],
+   "sources": [
+    "gr-complementos-verbales-c1",
+    "gr-nombres-escuetos-c1"
+   ],
+   "note": "No article before the role (*la nombraron una directora). Same frame: considerar a alguien capaz, dejar a alguien encargado. Institutional texts."
+  },
+  {
+   "id": "p:imperativo-y-veras",
+   "kind": "pattern",
+   "title": "Try it and you'll see: pruébalo y verás",
+   "es": "imperative + y + future: Pruébalo y verás. Llámala y vas a ver que no está brava. Dile eso y te mata.",
+   "en": "do X and (then) Y = if you do X, Y: Try it and you'll see. Call her and you'll see she isn't angry. Tell him that and he'll kill you.",
+   "unit": 32,
+   "requires": [
+    "g:commands-tu",
+    "g:si-present"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:499",
+    "gramatica:C1:788"
+   ],
+   "sources": [
+    "gr-imperativo-c1",
+    "gr-sub-adv-condicionales-c1"
+   ],
+   "note": "The imperative works as an \"if\" clause; only with y + future/present. brava = angry (Colombia). The threat version (Dile eso y te mata) is never a real command."
+  },
+  {
+   "id": "p:mira-que",
+   "kind": "pattern",
+   "title": "Reproach and admiration: ¡mira que eres terco!",
+   "es": "¡Mira que + verb!; ¡mira cómo…!: Mira que eres terco. Mira que te lo dije. ¡Mira cómo quedó!",
+   "en": "you really are…! / I did tell you…: You're so stubborn! I did tell you! Look how it turned out!",
+   "unit": 54,
+   "requires": [
+    "g:commands-tu"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:react-natively"
+   ],
+   "pcic": [
+    "gramatica:C1:501",
+    "gramatica:C1:503"
+   ],
+   "sources": [
+    "gr-imperativo-c1",
+    "gr-imperativo-valores-b2"
+   ],
+   "note": "No one is asked to look. Usted form: mire que… Other non-command imperatives for recognition: ¡Vaya, vaya! (mainly Spain; LatAm: ¡ah, bueno!), ¡anda! (Spain). In Colombia ¡dale! = sure/go ahead, not irritation (see c:dale)."
+  },
+  {
+   "id": "p:siempre-gerundio",
+   "kind": "pattern",
+   "title": "Always complaining!: ¡siempre quejándote!",
+   "es": "(¡Siempre / Todo el día) + gerund!: ¡Siempre llegando tarde! ¡Todo el día pegado al celular! ¡Otra vez quejándote!",
+   "en": "reproach about a habit: Always late! Glued to your phone all day! Complaining again!",
+   "unit": 50,
+   "requires": [
+    "g:gerund-ways"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:524"
+   ],
+   "sources": [
+    "gr-formas-no-personales-c1"
+   ],
+   "note": "No conjugated verb — the bare gerund carries the reproach. Hard conversations: name it, then soften (Perdón, pero es que siempre llegas tarde)."
+  },
+  {
+   "id": "p:yo-ni-loco",
+   "kind": "pattern",
+   "title": "Me? No way!: ¿Yo, pedirle perdón? ¡Ni loco!",
+   "es": "¿Yo + infinitive/gerund? ¡Ni loco/a! ; ¡infinitive!: ¿Yo, pedirle perdón? ¡Ni loca! ¿Yo pagando eso? ¡Jamás! ¡Descansar tres meses! ¡Qué suerte!",
+   "en": "indignant rejection / envious exclamation: Me, apologise to him? No way! Me, paying for that? Never! Three months off! Lucky you!",
+   "unit": 54,
+   "requires": [
+    "g:infinitive-subject",
+    "g:gerund-ways"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:react-natively"
+   ],
+   "pcic": [
+    "gramatica:C1:517",
+    "gramatica:C1:524"
+   ],
+   "sources": [
+    "gr-formas-no-personales-c1"
+   ],
+   "note": "Bare infinitive questions repeat the idea back to reject it. ¡Ni loco/a! agrees with the speaker. ¡Ni de riesgos! is a Colombian equivalent (recognition)."
+  },
+  {
+   "id": "p:para-que-rhetorical",
+   "kind": "pattern",
+   "title": "Why bother?: ¿para qué me molesto?",
+   "es": "¿Para qué + verb… si…?: ¿Para qué me esfuerzo si nadie lo nota? ¿Para qué te arreglas tanto? ¿Y para qué le dijiste?",
+   "en": "rhetorical \"what for\": Why do I bother if nobody notices? Why are you getting so dressed up? And why on earth did you tell her?",
+   "unit": 54,
+   "requires": [
+    "g:questions-prepositions"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:react-natively"
+   ],
+   "pcic": [
+    "gramatica:C1:774",
+    "gramatica:C1:775"
+   ],
+   "sources": [
+    "gr-sub-adv-finales-c1"
+   ],
+   "note": "No answer expected — implies \"there's no point\" or a hidden criticism. Answering literally sounds odd. Implicature unit."
+  },
+  {
+   "id": "p:permitir-inf",
+   "kind": "pattern",
+   "title": "Letting and advising with an infinitive: me permitieron entrar, le recomiendo descansar",
+   "es": "permitir / prohibir / recomendar / aconsejar + (indirect object) + infinitive: Le recomiendo descansar. No me permitieron entrar. El médico me prohibió el azúcar y me prohibió fumar.",
+   "en": "to let / forbid / advise someone to do: I recommend you rest. They didn't let me in. The doctor banned me from sugar and from smoking.",
+   "unit": 35,
+   "requires": [
+    "g:indirect-objects",
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:546",
+    "gramatica:C1:663"
+   ],
+   "sources": [
+    "gr-formas-no-personales-b2",
+    "gr-sub-sustantivas-c1"
+   ],
+   "note": "The infinitive's doer is the object (le recomiendo descansar = you rest). Alternates with que + subjunctive (le recomiendo que descanse, g:subj-influence, u32). Doctor unit."
+  },
+  {
+   "id": "p:dice-ser",
+   "kind": "pattern",
+   "title": "Claiming to be: dice ser médico, afirmó no saber nada",
+   "es": "decir / afirmar / asegurar / reconocer + infinitive (same subject): El detenido dijo ser inocente. Afirmó no saber nada. Reconoció haber recibido el dinero.",
+   "en": "to claim to / say that one…: The detainee said he was innocent. He claimed to know nothing. She admitted having received the money.",
+   "unit": 45,
+   "requires": [
+    "g:that-clauses",
+    "g:reported-past-basic"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:662",
+    "gramatica:C1:663"
+   ],
+   "sources": [
+    "gr-sub-sustantivas-c1"
+   ],
+   "note": "News register; only when the subject is the same (dijo ser = dijo que él era). Pairs with the perfect infinitive later (reconoció haber…). Everyday speech prefers dijo que era."
+  },
+  {
+   "id": "p:miedo-a",
+   "kind": "pattern",
+   "title": "Fear of: miedo a perder / miedo de que te vayas",
+   "es": "miedo a + infinitive (same person) / miedo de que + subjunctive (someone else): Tengo miedo a equivocarme. Le da miedo manejar. Tengo miedo de que se entere.",
+   "en": "fear of / being afraid that: I'm afraid of getting it wrong. Driving scares her. I'm afraid he'll find out.",
+   "unit": 30,
+   "requires": [
+    "g:subj-emotion"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:556",
+    "gramatica:C1:665"
+   ],
+   "sources": [
+    "gr-complementos-nominal-c1",
+    "gr-sub-sustantivas-c1"
+   ],
+   "note": "Same-subject → infinitive; different subject → que + subjunctive (feeds x:inf-vs-que-subj). miedo a / miedo de both heard before a noun or infinitive. Same pattern: la idea de mudarme, el deseo de volver."
+  },
+  {
+   "id": "p:tras-inf",
+   "kind": "pattern",
+   "title": "Formal \"after\": tras firmar el acuerdo",
+   "es": "tras + infinitive / noun: Tras firmar el acuerdo, el ministro habló con la prensa. Tras la reunión, se suspendió el paro. Renunció tras haber sido denunciado.",
+   "en": "after (news/formal register): After signing the agreement, the minister spoke to the press. After the meeting, the strike was called off. He resigned after being reported.",
+   "unit": 45,
+   "requires": [
+    "g:prep-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:723"
+   ],
+   "sources": [
+    "gr-sub-adv-temporales-c1"
+   ],
+   "note": "= después de, but written/news register. Unlike después de que + subjunctive, tras + infinitive allows a different subject only when clear from context. Not *tras de."
+  },
+  {
+   "id": "p:hasta-que-no",
+   "kind": "pattern",
+   "title": "Not until you…: hasta que no me pagues, no empiezo",
+   "es": "hasta que no + subjunctive, no + verb: Hasta que no me pagues, no empiezo. No me voy hasta que no lo vea. Hasta que no llegue el jefe, no se firma nada.",
+   "en": "not until: I'm not starting until you pay me. I'm not leaving until I see it. Nothing gets signed until the boss arrives.",
+   "unit": 50,
+   "requires": [
+    "g:subj-cuando-future"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:739",
+    "gramatica:C1:740"
+   ],
+   "sources": [
+    "gr-sub-adv-temporales-c1"
+   ],
+   "note": "The \"no\" after hasta que is expletive — it doesn't negate. Without it the meaning is the same (hasta que me pagues). Translating it literally inverts the sense. Natural in Colombia. Setting boundaries in a negotiation."
+  },
+  {
+   "id": "p:mientras-subj",
+   "kind": "pattern",
+   "title": "As long as: mientras haya plata, me quedo",
+   "es": "mientras + subjunctive = as long as: Mientras haya trabajo, me quedo. Puedes usar el carro mientras lo cuides. Mientras no llueva, jugamos.",
+   "en": "as long as / provided that: As long as there's work, I'm staying. You can use the car as long as you look after it. As long as it doesn't rain, we play.",
+   "unit": 44,
+   "requires": [
+    "g:cuando-indicative",
+    "g:subj-cuando-future"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:hold-my-ground"
+   ],
+   "pcic": [
+    "gramatica:C1:733",
+    "gramatica:C1:734"
+   ],
+   "sources": [
+    "gr-sub-adv-temporales-c1"
+   ],
+   "note": "mientras + indicative = while (time); + subjunctive = as long as (condition). Belongs with siempre que / con tal de que (g:subj-conditions)."
+  },
+  {
+   "id": "p:gracias-a-por-culpa-de",
+   "kind": "pattern",
+   "title": "Thanks to, because of (blame): gracias a, por culpa de",
+   "es": "gracias a + noun / a que + indicative (good outcome); por culpa de + noun / de que + indicative (bad outcome): Gracias a ti llegamos a tiempo. Perdimos el vuelo por culpa del trancón. Gracias a que llovió, se salvó la cosecha.",
+   "en": "thanks to / because of (someone's fault): Thanks to you we made it on time. We missed the flight because of the traffic jam. Thanks to the rain, the harvest was saved.",
+   "unit": 38,
+   "requires": [
+    "g:causal-advanced"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:753",
+    "gramatica:C1:754"
+   ],
+   "sources": [
+    "gr-sub-adv-causales-c1"
+   ],
+   "note": "Same position, opposite value: gracias a = positive, por culpa de = blame, a causa de / debido a = neutral. trancón = traffic jam (Colombia)."
+  },
+  {
+   "id": "p:para-ser",
+   "kind": "pattern",
+   "title": "Not bad for a beginner: para ser…",
+   "es": "no + está/es + mal + para + ser / llevar…: No está mal para ser la primera vez. Para ser tan joven, sabe mucho. Habla muy bien para llevar solo un año aquí.",
+   "en": "for (considering): Not bad for a first time. For someone so young, she knows a lot. He speaks very well considering he's only been here a year.",
+   "unit": 44,
+   "requires": [
+    "g:por-para-1"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:763"
+   ],
+   "sources": [
+    "gr-sub-adv-finales-c1"
+   ],
+   "note": "Not purpose but concession (\"considering that\"). Para ser sincero is a separate set phrase (c:para-serte-sincero)."
+  },
+  {
+   "id": "p:como-para",
+   "kind": "pattern",
+   "title": "Enough to / not so … as to: como para…",
+   "es": "tan / tanto / lo suficiente + como para + infinitive / que + subjunctive: No es tan grave como para cancelar. Sabe lo suficiente como para dar la clase. No es tan ingenuo como para creerse eso.",
+   "en": "enough to / not so … that: It isn't serious enough to cancel. She knows enough to teach the class. He isn't naive enough to believe that.",
+   "unit": 47,
+   "requires": [
+    "g:tanto-como",
+    "g:consequence-connectors"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:806",
+    "gramatica:C1:853"
+   ],
+   "sources": [
+    "gr-sub-adv-consecutivas-c1",
+    "gr-sub-adv-comparativas-c1"
+   ],
+   "note": "Same subject → infinitive; different subject → que + subjunctive (trabaja tanto como para que le suban el sueldo). Also \"¡Es como para matarlo!\" (enough to make you…). Contrast with tan… que (real result)."
+  },
+  {
+   "id": "p:pase-lo-que-pase",
+   "kind": "pattern",
+   "title": "Whatever happens: pase lo que pase, digan lo que digan",
+   "es": "subjunctive + lo que / donde / como + same subjunctive: Pase lo que pase, te apoyo. Digan lo que digan, voy a ir. Vayas donde vayas, llámame.",
+   "en": "whatever / wherever / however: Whatever happens, I've got your back. Whatever they say, I'm going. Wherever you go, call me.",
+   "unit": 50,
+   "requires": [
+    "g:subj-free-relatives"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:hold-my-ground"
+   ],
+   "pcic": [
+    "gramatica:C1:856",
+    "gramatica:C1:857"
+   ],
+   "sources": [
+    "gr-sub-adv-concesivas-c1"
+   ],
+   "note": "The same verb repeats; you cannot swap the second one. Productive: cueste lo que cueste, sea como sea, quieras o no."
+  },
+  {
+   "id": "p:ni-aunque",
+   "kind": "pattern",
+   "title": "Not even if…: ni aunque me lo pidiera de rodillas",
+   "es": "ni aunque / ni siquiera si + imperfect subjunctive, conditional: Ni aunque me lo pidiera de rodillas lo perdonaría. Ni siquiera si me pagaran el doble volvería. No vuelvo ni aunque me paguen.",
+   "en": "not even if: I wouldn't forgive him even if he begged on his knees. I wouldn't go back even if they paid me double. I'm not going back, not even if they pay me.",
+   "unit": 57,
+   "requires": [
+    "g:subj-concessive",
+    "g:si-hypothetical"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:hold-my-ground"
+   ],
+   "pcic": [
+    "gramatica:C1:862",
+    "gramatica:C1:863"
+   ],
+   "sources": [
+    "gr-sub-adv-concesivas-c1"
+   ],
+   "note": "Takes the hypothesis to the extreme to make the refusal absolute. Present subjunctive for an open future (ni aunque me paguen), imperfect for the unreal. Resignation/boundary language."
+  },
+  {
+   "id": "p:ser-event-location",
+   "kind": "pattern",
+   "title": "Where an event happens: la reunión es en la sala 3",
+   "es": "event + ser + en + place (vs place + estar + en): La reunión es en la sala 3. El concierto fue en el Movistar Arena. ¿Dónde es la fiesta?",
+   "en": "where an event takes place: The meeting is in room 3. The concert was at the Movistar Arena. Where's the party?",
+   "unit": 38,
+   "requires": [
+    "g:estar-location-states",
+    "g:ser-estar-adjectives"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:609",
+    "gramatica:B2:610"
+   ],
+   "sources": [
+    "gr-nucleo-verbal-copulativos-b2"
+   ],
+   "note": "Pitfall: *la fiesta está en mi casa (when meaning where it takes place). Things/places: estar; events: ser. News unit: \"El accidente fue en la Autopista Norte\"."
+  },
+  {
+   "id": "p:amable-de-su-parte",
+   "kind": "pattern",
+   "title": "That's kind of you: muy amable de su parte",
+   "es": "ser + adjective + de su parte / al + infinitive: Muy amable de su parte. Fue muy generoso al invitarnos. Qué detalle de tu parte.",
+   "en": "that's kind of you / it was kind of him to…: That's very kind of you. It was very generous of him to invite us. How thoughtful of you.",
+   "unit": 42,
+   "requires": [
+    "g:prep-infinitive",
+    "g:ser-estar-adjectives"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:600"
+   ],
+   "sources": [
+    "gr-nucleo-verbal-c1"
+   ],
+   "note": "ser (not estar) because the kindness IS the act: ha sido muy amable al invitarme; estar amable = was being nice on one occasion. \"Muy amable\" alone is a stock Colombian thanks. Politeness ladder."
+  },
+  {
+   "id": "p:segun",
+   "kind": "pattern",
+   "title": "Depending on / according to: según el día, según él",
+   "es": "según + noun / pronoun / clause; \"Según.\" as an answer: Según el día, voy en bici o en bus. Según él, todo está bien. —¿Vas a ir? —Según.",
+   "en": "depending on / according to: Depending on the day, I go by bike or bus. According to him, everything is fine. —Are you going? —Depends.",
+   "unit": 37,
+   "requires": [
+    "g:that-clauses"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:837",
+    "gramatica:B2:838"
+   ],
+   "sources": [
+    "gr-subordinadas-modo-b2"
+   ],
+   "note": "According to: según él / según dicen (subject pronoun after según: según tú, never *según ti). Depending on: según + noun, or \"según cómo / según lo que\" + clause. Contrast with depender de."
+  },
+  {
+   "id": "p:echo-question",
+   "kind": "pattern",
+   "title": "You did WHAT?: ¿que hiciste qué?",
+   "es": "statement repeated with the question word last: —Me voy a vivir a Leticia. —¿Te vas a vivir adónde? ¿Que le dijiste qué? ¿Llegaron cuándo?",
+   "en": "echo questions (surprise or not hearing): —I'm moving to Leticia. —You're moving WHERE? You told him WHAT? They got here WHEN?",
+   "unit": 37,
+   "requires": [
+    "g:questions"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:287"
+   ],
+   "sources": [
+    "gr-orden-interrogativos-b2"
+   ],
+   "note": "The question word stays in the slot of the surprising word, at the end, with a rise. Often prefaced by ¿Que…? (¿Que se casan?) — \"que\" repeats what was said. Conversation management."
+  },
+  {
+   "id": "c:dale",
+   "kind": "chunk",
+   "title": "¡Dale! — sure, go ahead",
+   "es": "¡Dale! / Dale, nos vemos a las ocho. —¿Pedimos pizza? —¡Dale!",
+   "en": "OK / sure / go for it: Sure, see you at eight. —Shall we order pizza? —Let's do it!",
+   "unit": 42,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:react-natively"
+   ],
+   "pcic": [
+    "gramatica:C1:496",
+    "gramatica:C1:498"
+   ],
+   "sources": [
+    "gr-imperativo-c1"
+   ],
+   "note": "LatAm (Colombia, Argentina, etc.) agreement chunk, informal. In Spain ¡dale! can express irritation at insistence (recognition). Register ladder: dale < listo < de acuerdo < con mucho gusto."
+  },
+  {
+   "id": "c:siga-siga",
+   "kind": "chunk",
+   "title": "¡Siga, siga! — come in, go ahead",
+   "es": "¡Siga, siga! / Siga, por favor. / Siga, que está abierto.",
+   "en": "come in / go ahead / after you: Come in, come in! Go ahead, please.",
+   "unit": 42,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:521",
+    "gramatica:B2:523"
+   ],
+   "sources": [
+    "gr-imperativo-valores-b2"
+   ],
+   "note": "Colombian courtesy: the doubled usted imperative invites, it does not command (same doubling as pasa, pasa). Also \"siga derecho\" = go straight on."
+  },
+  {
+   "id": "c:fijese-que",
+   "kind": "chunk",
+   "title": "Fíjese que… — guess what / you know what",
+   "es": "Fíjese que… / Fíjate que…: Fíjese que no pude ir. Fíjate que se casó Juliana.",
+   "en": "you know what / imagine: You know, I couldn't make it. Guess what — Juliana got married.",
+   "unit": 37,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:521",
+    "gramatica:B2:523"
+   ],
+   "sources": [
+    "gr-imperativo-valores-b2"
+   ],
+   "note": "Imperative used as a news opener, no command. Common in Colombia and Central America. Related p:fijarse-reparar-en (to notice)."
+  },
+  {
+   "id": "c:como-asi",
+   "kind": "chunk",
+   "title": "¿Cómo así? — what do you mean?",
+   "es": "¿Cómo así? / ¿Cómo así que se fue?",
+   "en": "how so? / what do you mean?: What do you mean, he left?",
+   "unit": 37,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:react-natively"
+   ],
+   "pcic": [
+    "gramatica:C1:292",
+    "gramatica:C1:293"
+   ],
+   "sources": [
+    "gr-interrogativos-c1"
+   ],
+   "note": "Colombian staple for asking for clarification with surprise; neutral elsewhere: ¿Cómo es eso? / ¿Cómo es que…?"
+  },
+  {
+   "id": "c:resulta-que",
+   "kind": "chunk",
+   "title": "Resulta que… — it turns out / the thing is",
+   "es": "Resulta que… / Y resulta que…: Resulta que el vuelo estaba cancelado. Y resulta que era su hermano.",
+   "en": "it turns out / so, the thing is: It turns out the flight was cancelled. And it turns out he was her brother.",
+   "unit": 31,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B2:679",
+    "gramatica:B2:680"
+   ],
+   "sources": [
+    "gr-subordinadas-sustantivas-b2"
+   ],
+   "note": "Story-telling engine; indicative always. Also \"resultó que…\" (past)."
+  },
+  {
+   "id": "c:de-ser-asi",
+   "kind": "chunk",
+   "title": "De ser así… — if that's the case",
+   "es": "De ser así, … / De no ser así, …: De ser así, tendríamos que repetir la votación.",
+   "en": "if so / if that's the case: If so, we'd have to repeat the vote.",
+   "unit": 53,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:517",
+    "gramatica:C1:518"
+   ],
+   "sources": [
+    "gr-formas-no-personales-c1"
+   ],
+   "note": "Formal conditional with de + infinitive; unpacked by g:conditional-advanced (u57: de haberlo sabido).",
+   "unpacks": "g:conditional-advanced"
+  },
+  {
+   "id": "c:para-serte-sincero",
+   "kind": "chunk",
+   "title": "Para serte sincero… — to be honest",
+   "es": "Para serte sincero/a, … / Para ser sinceros, … / Para que sepas, …",
+   "en": "to be honest / just so you know: To be honest, I didn't like it. Just so you know, I already paid.",
+   "unit": 42,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:756",
+    "gramatica:C1:758"
+   ],
+   "sources": [
+    "gr-sub-adv-finales-c1"
+   ],
+   "note": "Parenthetical purpose clauses used as softeners/discourse markers. Usted: para serle sincero."
+  },
+  {
+   "id": "c:no-se-queda-atras",
+   "kind": "chunk",
+   "title": "No se queda atrás — doesn't lag behind",
+   "es": "X tampoco se queda atrás. / Y ella no se queda atrás.",
+   "en": "is just as good / gives as good as she gets: And she's no slouch either.",
+   "unit": 54,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:374",
+    "gramatica:C1:375"
+   ],
+   "sources": [
+    "gr-adverbios-conjuntivos-c1"
+   ],
+   "note": "tampoco here doesn't negate; it equates (Si él habla mucho, ella tampoco se queda atrás). Often ironic."
+  },
+  {
+   "id": "c:como-el-que-mas",
+   "kind": "chunk",
+   "title": "Como el que más — as much as anyone",
+   "es": "Trabaja como el que más. / Sufrió como el que más.",
+   "en": "as hard as anyone / like nobody's business: She works as hard as anyone.",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:828",
+    "gramatica:C1:829"
+   ],
+   "sources": [
+    "gr-sub-adv-comparativas-c1"
+   ],
+   "note": "Fixed comparative; also tan … como el que más."
+  },
+  {
+   "id": "c:esta-que-arde",
+   "kind": "chunk",
+   "title": "Está que arde — is fuming / it's heated",
+   "es": "Está que arde. / Mi mamá está que echa chispas.",
+   "en": "he's fuming / things are heated: My mum is absolutely fuming.",
+   "unit": 57,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:583",
+    "gramatica:C1:586"
+   ],
+   "sources": [
+    "gr-nucleo-verbal-c1"
+   ],
+   "note": "estar que + verb = intensified state. Natural across LatAm."
+  },
+  {
+   "id": "c:hablando-se-entiende-la-gente",
+   "kind": "chunk",
+   "title": "Hablando se entiende la gente — let's talk it through",
+   "es": "Hablando se entiende la gente.",
+   "en": "people understand each other by talking: Let's talk it through.",
+   "unit": 50,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:C1:517",
+    "gramatica:C1:518",
+    "gramatica:C1:777",
+    "gramatica:C1:779"
+   ],
+   "sources": [
+    "gr-formas-no-personales-c1",
+    "gr-sub-adv-condicionales-c1"
+   ],
+   "note": "Gerund as a condition (\"if you talk…\"). Useful opener for a hard conversation."
+  },
+  {
+   "id": "d:say-what-depends",
+   "kind": "cando",
+   "title": "I can say exactly what a job or process involves, what it depends on and what it needs.",
+   "es": "Consiste en…, depende de…, cuenta con…",
+   "en": "",
+   "unit": 48,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-complemento-preposicional-regido-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:hold-my-ground",
+   "kind": "cando",
+   "title": "I can set conditions and limits and hold my position, politely, whatever happens.",
+   "es": "Mientras…, hasta que no…, pase lo que pase…, estoy dispuesto a…, ni aunque…",
+   "en": "",
+   "unit": 50,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-sub-adv-concesivas-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:react-natively",
+   "kind": "cando",
+   "title": "I can react to people and news the way Colombians do: exclamations, ironic imperatives and understatement.",
+   "es": "¡Mira que…!, ¡la cara que puso!, tiene su truco, ¿cómo así?, ¡dale!",
+   "en": "",
+   "unit": 54,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-imperativo-c1",
+    "gr-exclamativos-c1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "x:dificil-de-es-dificil",
+   "kind": "contrast",
+   "title": "Hard to do: \"esto es difícil de hacer\" vs \"es difícil hacer esto\"",
+   "es": "Este texto es difícil de entender. / Es difícil entender este texto.",
+   "en": "This text is hard to understand. / It's hard to understand this text.",
+   "unit": 39,
+   "requires": [
+    "p:dificil-de-inf",
+    "g:infinitive-subject"
+   ],
+   "contrasts": [
+    "p:dificil-de-inf",
+    "g:infinitive-subject"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-complementos-sa-b2"
+   ],
+   "note": "de only when the thing is the subject."
+  },
+  {
+   "id": "x:mientras-ind-subj",
+   "kind": "contrast",
+   "title": "Mientras: \"while\" vs \"as long as\"",
+   "es": "Mientras cocinas, pongo la mesa. / Mientras cocines tú, yo lavo.",
+   "en": "While you cook, I'll set the table. / As long as you cook, I'll wash up.",
+   "unit": 44,
+   "requires": [
+    "p:mientras-subj",
+    "g:cuando-indicative"
+   ],
+   "contrasts": [
+    "p:mientras-subj",
+    "g:cuando-indicative"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-sub-adv-temporales-c1"
+   ],
+   "note": "Indicative = time; subjunctive = condition."
+  },
+  {
+   "id": "x:tras-al-inf",
+   "kind": "contrast",
+   "title": "After vs on: tras firmar vs al firmar",
+   "es": "Tras firmar, se fue. / Al firmar, se dio cuenta del error.",
+   "en": "After signing, he left. / On signing (as he signed), he noticed the mistake.",
+   "unit": 45,
+   "requires": [
+    "p:tras-inf",
+    "g:prep-infinitive"
+   ],
+   "contrasts": [
+    "p:tras-inf",
+    "g:prep-infinitive"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-sub-adv-temporales-c1",
+    "gr-formas-no-personales-c1"
+   ],
+   "note": "tras = después de (sequence); al = at the moment of / when."
+  },
+  {
+   "id": "x:permitir-inf-que",
+   "kind": "contrast",
+   "title": "Le permito ir vs le permito que vaya",
+   "es": "Le recomiendo descansar. / Le recomiendo que descanse.",
+   "en": "I recommend you rest (both).",
+   "unit": 35,
+   "requires": [
+    "p:permitir-inf",
+    "g:subj-influence"
+   ],
+   "contrasts": [
+    "p:permitir-inf",
+    "g:subj-influence"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-formas-no-personales-b2"
+   ],
+   "note": "Both correct; mixed practice on choosing and forming either."
+  },
+  {
+   "id": "x:lo-que-el-que",
+   "kind": "contrast",
+   "title": "Which (the whole idea) vs which (a noun): lo que vs el que",
+   "es": "No vino, lo que me molestó. / La casa en la que vivo es vieja.",
+   "en": "He didn't come, which annoyed me. / The house I live in is old.",
+   "unit": 48,
+   "requires": [
+    "p:lo-que-cosa-que",
+    "g:relatives-prepositions"
+   ],
+   "contrasts": [
+    "p:lo-que-cosa-que",
+    "g:relatives-prepositions"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-relativos-c1"
+   ],
+   "note": "Clause antecedent → lo que/lo cual; noun antecedent → el/la que."
+  },
+  {
+   "id": "x:segun-depende",
+   "kind": "contrast",
+   "title": "Según vs depende de",
+   "es": "Según el día. / Depende del día.",
+   "en": "Depending on the day. / It depends on the day.",
+   "unit": 37,
+   "requires": [
+    "p:segun",
+    "p:depender-de"
+   ],
+   "contrasts": [
+    "p:segun",
+    "p:depender-de"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-subordinadas-modo-b2"
+   ],
+   "note": "según needs no verb and no de; depender always takes de (*depende según)."
+  },
+  {
+   "id": "x:cualquier-dia-un-dia-cualquiera",
+   "kind": "contrast",
+   "title": "Cualquier día vs un día cualquiera",
+   "es": "Ven cualquier día. / Era un día cualquiera.",
+   "en": "Come any day. / It was an ordinary day.",
+   "unit": 60,
+   "requires": [
+    "g:cada-cualquier",
+    "p:un-x-cualquiera"
+   ],
+   "contrasts": [
+    "g:cada-cualquier",
+    "p:un-x-cualquiera"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-cuantificadores-propios-c1"
+   ],
+   "note": "Before the noun: any (cualquier); after: ordinary (cualquiera)."
+  },
+  {
+   "id": "x:tan-que-como-para",
+   "kind": "contrast",
+   "title": "So … that vs … enough to: tan cansado que / tan cansado como para",
+   "es": "Estaba tan cansado que me dormí. / No estaba tan cansado como para dormirme.",
+   "en": "I was so tired I fell asleep. / I wasn't tired enough to fall asleep.",
+   "unit": 47,
+   "requires": [
+    "g:consequence-connectors",
+    "p:como-para"
+   ],
+   "contrasts": [
+    "g:consequence-connectors",
+    "p:como-para"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-sub-adv-consecutivas-c1"
+   ],
+   "note": "que = a real result; como para = a threshold, often negated."
+  },
+  {
+   "id": "x:mas-que-mas-de-lo-que",
+   "kind": "contrast",
+   "title": "Más que vs más de lo que",
+   "es": "Gana más que yo. / Gana más de lo que dice.",
+   "en": "He earns more than me. / He earns more than he says.",
+   "unit": 36,
+   "requires": [
+    "g:comparatives",
+    "p:mas-de-lo-que"
+   ],
+   "contrasts": [
+    "g:comparatives",
+    "p:mas-de-lo-que"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-sub-adv-comparativas-c1"
+   ],
+   "note": "Noun/pronoun → que; clause → de lo que."
+  },
+  {
+   "id": "x:es-en-esta-en",
+   "kind": "contrast",
+   "title": "Where events are vs where things are: es en vs está en",
+   "es": "La fiesta es en el salón. / El salón está en el segundo piso.",
+   "en": "The party is in the hall. / The hall is on the second floor.",
+   "unit": 38,
+   "requires": [
+    "p:ser-event-location",
+    "g:estar-location-states"
+   ],
+   "contrasts": [
+    "p:ser-event-location",
+    "g:estar-location-states"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-nucleo-verbal-copulativos-b2"
+   ],
+   "note": "Event → ser; place/thing → estar."
+  },
+  {
+   "id": "x:gracias-a-debido-a",
+   "kind": "contrast",
+   "title": "Thanks to vs due to: gracias a / por culpa de / debido a",
+   "es": "Gracias a la lluvia… / Por culpa de la lluvia… / Debido a la lluvia…",
+   "en": "Thanks to / because of (blame) / due to the rain…",
+   "unit": 38,
+   "requires": [
+    "p:gracias-a-por-culpa-de",
+    "g:causal-advanced"
+   ],
+   "contrasts": [
+    "p:gracias-a-por-culpa-de",
+    "g:causal-advanced"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-sub-adv-causales-c1"
+   ],
+   "note": "Choose by value: positive, negative or neutral."
+  }
+ ],
+ "triage": [
+  {
+   "lesson": "gr-el-que-relativos-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "covered by g:relatives-prepositions (u33) and g:subj-free-relatives (el que quiera)"
+  },
+  {
+   "lesson": "gr-que-explicativo-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "specifying vs explanatory relatives: covered by g:relatives-formal (u48)"
+  },
+  {
+   "lesson": "gr-quien-quienes-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "covered by g:relatives-formal and g:subj-free-relatives"
+  },
+  {
+   "lesson": "gr-orden-interrogativos-b2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "echo questions mined; vosotros example converted; frequency-adverb-in-question point dropped (marginal)"
+  },
+  {
+   "lesson": "gr-adverbios-frecuencia-topico-b2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "personalmente framing mined; *muy diariamente point is label-heavy, left to note"
+  },
+  {
+   "lesson": "gr-adverbios-evaluativos-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "covered by g:evaluative-adverbs (u60)"
+  },
+  {
+   "lesson": "gr-adverbios-enunciacion-b2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "precisamente/concretamente + casualmente false friend"
+  },
+  {
+   "lesson": "gr-relativo-donde-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "donde relative covered by g:relatives-donde-lo-que; Toledo example irrelevant"
+  },
+  {
+   "lesson": "gr-condicional-compuesto-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "g:conditional-perfect / g:si-past-unreal"
+  },
+  {
+   "lesson": "gr-futuro-perfecto-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "g:future-perfect; móvil/hacer la compra are Peninsular"
+  },
+  {
+   "lesson": "gr-impsubj-valores-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "g:imperfect-subj, g:se-form-recognition, g:softening (quisiera), g:subj-past-triggers"
+  },
+  {
+   "lesson": "gr-perfsubj-valores-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "g:subj-perfect"
+  },
+  {
+   "lesson": "gr-pluscuamsubj-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "g:pluperfect-subj, g:si-past-unreal"
+  },
+  {
+   "lesson": "gr-concordancia-sn-verbo-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "g:agreement-tricky (u58)"
+  },
+  {
+   "lesson": "gr-complementos-sa-b2",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "adjective + preposition frames"
+  },
+  {
+   "lesson": "gr-complemento-preposicional-regido-b2",
+   "verdict": "patterns",
+   "patterns": 8,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "one node per verb family; also feeds g:verbs-prepositions"
+  },
+  {
+   "lesson": "gr-subordinadas-lugar-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "donde + ind/subj covered by g:subj-free-relatives (donde quieras)"
+  },
+  {
+   "lesson": "gr-subordinadas-modo-b2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "según frame mined; como + subj covered by g:subj-free-relatives"
+  },
+  {
+   "lesson": "gr-numero-sustantivos-b2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "one-object plurals; invariable plurals folded into note; vowel-name plurals (las íes) skipped as trivia"
+  },
+  {
+   "lesson": "gr-articulo-definido-valores-b2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "lo de; generic article covered by g:article-uses; el porqué left out"
+  },
+  {
+   "lesson": "gr-articulo-indefinido-valores-b2",
+   "verdict": "skip",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "restrictions on un + mass/event nouns are analytic, no teachable frame beyond g:article-uses"
+  },
+  {
+   "lesson": "gr-nombres-escuetos-b2",
+   "verdict": "skip",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "bare-noun licensing is terminology-heavy; tener lugar/dar clase collocations left to vocab; \"Se necesita mesero\" covered by g:se-impersonal"
+  },
+  {
+   "lesson": "gr-posesivos-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "g:possessives-stressed; Muy señor mío is Peninsular/obsolete; ¡Dios mío! is a chunk likely mined elsewhere"
+  },
+  {
+   "lesson": "gr-cuantificadores-numerales-cualquier-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "cualquier/cualquiera frame; partitives/multiplicatives covered by g:comparatives-advanced; sendos dropped (rare)"
+  },
+  {
+   "lesson": "gr-pronombre-personal-b2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "accidental se covered by g:se-accidental; body-reaction se me… frame; lo soy replacing an adjective left in note-level (minor)"
+  },
+  {
+   "lesson": "gr-exclamativos-b2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "¡cómo/cuánto + verb!; ¡qué bien que + subj! covered by g:subj-emotion-intro; ¡quién pudiera! by g:wish-exclamatives"
+  },
+  {
+   "lesson": "gr-adverbios-nucleares-b2",
+   "verdict": "skip",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "adverb combinability (*muy encimísima) is label-level; desesperado ≈ desesperadamente too minor"
+  },
+  {
+   "lesson": "gr-imperativo-valores-b2",
+   "verdict": "chunks",
+   "patterns": 1,
+   "chunks": 2,
+   "wordThemes": [],
+   "note": "¡Anda!/¡Vaya!/¡Venga! are Peninsular — replaced by LatAm siga, siga / fíjese que; urgency doubling kept in c:siga-siga"
+  },
+  {
+   "lesson": "gr-formas-no-personales-b2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "object-controlled infinitive (recomendar/permitir); gerund-of-posteriority error belongs in g:participle-gerund-clauses notes"
+  },
+  {
+   "lesson": "gr-complementos-nominales-b2",
+   "verdict": "skip",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "ambiguity of tus informes / restrictive commas: analysis only"
+  },
+  {
+   "lesson": "gr-nucleo-verbal-copulativos-b2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "ser for events; change verbs covered by g:verbs-of-change, deber de by g:deber-modal"
+  },
+  {
+   "lesson": "gr-subordinadas-sustantivas-b2",
+   "verdict": "mixed",
+   "patterns": 0,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "resulta que chunk; mood logic covered by g:subj-perception-negated / g:subj-influence"
+  },
+  {
+   "lesson": "gr-subordinadas-relativas-tipos-b2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "g:relatives-formal, g:subj-relative; vosotros example dropped"
+  },
+  {
+   "lesson": "gr-genero-sustantivos-c1",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "four tight gender-meaning pairs"
+  },
+  {
+   "lesson": "gr-numero-sustantivos-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "los celos/los restos; stress-shift plurals and dynasties as notes"
+  },
+  {
+   "lesson": "gr-clases-adjetivos-c1",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "compound colours; cuyo covered by g:cuyo-relatives; empresa/cara familiar too minor"
+  },
+  {
+   "lesson": "gr-articulo-definido-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "¡la cara que puso!, lo antes posible; el que + subj as subject covered by g:mood-choice-fine"
+  },
+  {
+   "lesson": "gr-articulo-indefinido-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "un tal, un amor de persona; un Picasso → un Botero kept as recognition note"
+  },
+  {
+   "lesson": "gr-nombres-escuetos-c1",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "nombrar + bare noun, comerse + bounded object; en tren vs en el tren left to A2 strands"
+  },
+  {
+   "lesson": "gr-demostrativos-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "¡qué tiempos aquellos!, eso de que; este/aquel discourse anaphora covered by g:referring-back"
+  },
+  {
+   "lesson": "gr-posesivos-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "lo tuyo / pasé lo mío; tiene su truco; hija mía as note"
+  },
+  {
+   "lesson": "gr-cuantificadores-propios-c1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "cada quien, un X cualquiera, más de lo que; cuanto quieras covered by g:subj-free-relatives"
+  },
+  {
+   "lesson": "gr-interrogativos-c1",
+   "verdict": "skip",
+   "patterns": 0,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "coordination restrictions on interrogatives are label-level; ¿cómo así? chunk added as LatAm counterpart of ¿cómo es que…?"
+  },
+  {
+   "lesson": "gr-exclamativos-c1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "merged into p:como-cuanto-verbo; ¡dónde habré dejado…! covered by g:future-perfect conjecture"
+  },
+  {
+   "lesson": "gr-pronombre-personal-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "body se me…, la vi salir; coged/cogedla (vosotros, coger) dropped; se + a impersonal and consigo too formal/minor"
+  },
+  {
+   "lesson": "gr-relativos-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "lo que / lo cual for a whole clause; rest covered by g:relatives-formal"
+  },
+  {
+   "lesson": "gr-adverbios-nucleares-c1",
+   "verdict": "skip",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "manner-adverb position for evaluation is analysis; feeds g:word-order-style lightly"
+  },
+  {
+   "lesson": "gr-adverbios-externos-c1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "técnicamente/oficialmente framing; evaluatives covered by g:evaluative-adverbs"
+  },
+  {
+   "lesson": "gr-adverbios-conjuntivos-c1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "solo que; tampoco se queda atrás chunk; consecuentemente covered by g:consecutive-advanced; ahora bien by g:argument-markers"
+  },
+  {
+   "lesson": "gr-tiempos-indicativo-c1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "g:tense-modal-uses, g:spain-pasts (note: LatAm preterite for today is the norm in this course)"
+  },
+  {
+   "lesson": "gr-tiempos-subjuntivo-c1",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "no porque + subj, sino porque; rest covered by g:mood-choice-fine, g:subj-perception-negated, g:que-wishes-commands"
+  },
+  {
+   "lesson": "gr-imperativo-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "imperative + y verás, mira que…, ¡dale! (LatAm meaning); ¡vaya, vaya! recognition only"
+  },
+  {
+   "lesson": "gr-formas-no-personales-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 2,
+   "wordThemes": [],
+   "note": "siempre + gerund reproach, ¿yo…? ¡ni loco!, de ser así; absolute participles covered by g:absolute-constructions"
+  },
+  {
+   "lesson": "gr-complementos-nominal-c1",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "miedo a / miedo de que; objective/subjective de and relational-adjective order skipped as analysis"
+  },
+  {
+   "lesson": "gr-complementos-adjetival-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "de lo más + adj; la mar de / la tira de dropped as Peninsular"
+  },
+  {
+   "lesson": "gr-nucleo-verbal-c1",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "amable de su parte (ser + act), está que arde; passives covered by g:passive-ser; estar por/para by g:ser-estar-c1"
+  },
+  {
+   "lesson": "gr-complementos-verbales-c1",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "leísmo/laísmo/loísmo dropped per brief; nombrar + predicative, comerse + bounded object, la vi salir, decidirse/atreverse a"
+  },
+  {
+   "lesson": "gr-concordancia-oracional-c1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "g:agreement-tricky"
+  },
+  {
+   "lesson": "gr-sub-sustantivas-c1",
+   "verdict": "patterns",
+   "patterns": 5,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "dice ser / afirmó no saber; difícil de; permitir + inf"
+  },
+  {
+   "lesson": "gr-sub-adjetivas-relativo-c1",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "cosa que / lo cual; rest analytic or covered by g:relatives-formal / g:cuyo-relatives"
+  },
+  {
+   "lesson": "gr-sub-adv-temporales-c1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "hasta que no, mientras + subj, tras + inf; hyperbolic antes de dropped"
+  },
+  {
+   "lesson": "gr-sub-adv-lugar-modo-c1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "como si covered by g:como-si; para donde covered by g:subj-free-relatives"
+  },
+  {
+   "lesson": "gr-sub-adv-causales-c1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "gracias a / por culpa de"
+  },
+  {
+   "lesson": "gr-sub-adv-finales-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "para ser (concessive), ¿para qué…? rhetorical, para serte sincero; DNI → cédula if reused"
+  },
+  {
+   "lesson": "gr-sub-adv-condicionales-c1",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "imperative/gerund as condition mined; como + subj, en caso de covered by g:conditional-advanced / g:subj-conditions"
+  },
+  {
+   "lesson": "gr-sub-adv-consecutivas-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "como para, ¡tienes cada…!; de ahí que covered by g:consecutive-advanced"
+  },
+  {
+   "lesson": "gr-sub-adv-comparativas-c1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "más de lo que, como el que más; a lo + name left out"
+  },
+  {
+   "lesson": "gr-sub-adv-concesivas-c1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "pase lo que pase, ni aunque; si bien/aun cuando covered by g:concessive-advanced"
+  }
+ ],
+ "grammarSources": {
+  "gr-el-que-relativos-b2": [
+   "g:relatives-prepositions",
+   "g:subj-free-relatives"
+  ],
+  "gr-que-explicativo-b2": [
+   "g:relatives-formal"
+  ],
+  "gr-quien-quienes-b2": [
+   "g:relatives-formal",
+   "g:subj-free-relatives"
+  ],
+  "gr-orden-interrogativos-b2": [],
+  "gr-adverbios-frecuencia-topico-b2": [
+   "g:evaluative-adverbs"
+  ],
+  "gr-adverbios-evaluativos-b2": [
+   "g:evaluative-adverbs"
+  ],
+  "gr-adverbios-enunciacion-b2": [
+   "g:evaluative-adverbs",
+   "g:reformulation"
+  ],
+  "gr-relativo-donde-b2": [
+   "g:relatives-donde-lo-que"
+  ],
+  "gr-condicional-compuesto-b2": [
+   "g:conditional-perfect",
+   "g:si-past-unreal"
+  ],
+  "gr-futuro-perfecto-b2": [
+   "g:future-perfect"
+  ],
+  "gr-impsubj-valores-b2": [
+   "g:imperfect-subj",
+   "g:se-form-recognition",
+   "g:softening",
+   "g:subj-past-triggers"
+  ],
+  "gr-perfsubj-valores-b2": [
+   "g:subj-perfect"
+  ],
+  "gr-pluscuamsubj-b2": [
+   "g:pluperfect-subj",
+   "g:si-past-unreal"
+  ],
+  "gr-concordancia-sn-verbo-b2": [
+   "g:agreement-tricky"
+  ],
+  "gr-complementos-sa-b2": [],
+  "gr-complemento-preposicional-regido-b2": [
+   "g:verbs-prepositions"
+  ],
+  "gr-subordinadas-lugar-b2": [
+   "g:subj-free-relatives"
+  ],
+  "gr-subordinadas-modo-b2": [
+   "g:subj-free-relatives"
+  ],
+  "gr-numero-sustantivos-b2": [],
+  "gr-articulo-definido-valores-b2": [
+   "g:article-uses",
+   "g:lo-adjective"
+  ],
+  "gr-articulo-indefinido-valores-b2": [
+   "g:article-uses"
+  ],
+  "gr-nombres-escuetos-b2": [
+   "g:article-uses"
+  ],
+  "gr-posesivos-b2": [
+   "g:possessives-stressed"
+  ],
+  "gr-cuantificadores-numerales-cualquier-b2": [
+   "g:cada-cualquier",
+   "g:comparatives-advanced"
+  ],
+  "gr-pronombre-personal-b2": [
+   "g:se-accidental"
+  ],
+  "gr-exclamativos-b2": [
+   "g:exclamations",
+   "g:subj-emotion-intro",
+   "g:wish-exclamatives"
+  ],
+  "gr-adverbios-nucleares-b2": [
+   "g:adverbs-mente"
+  ],
+  "gr-imperativo-valores-b2": [],
+  "gr-formas-no-personales-b2": [
+   "g:infinitive-perfect",
+   "g:participle-gerund-clauses",
+   "g:passive-ser"
+  ],
+  "gr-complementos-nominales-b2": [],
+  "gr-nucleo-verbal-copulativos-b2": [
+   "g:verbs-of-change",
+   "g:ser-estar-adjectives",
+   "g:deber-modal"
+  ],
+  "gr-subordinadas-sustantivas-b2": [
+   "g:subj-perception-negated",
+   "g:subj-influence"
+  ],
+  "gr-subordinadas-relativas-tipos-b2": [
+   "g:relatives-formal",
+   "g:subj-relative"
+  ],
+  "gr-genero-sustantivos-c1": [],
+  "gr-numero-sustantivos-c1": [],
+  "gr-clases-adjetivos-c1": [
+   "g:cuyo-relatives"
+  ],
+  "gr-articulo-definido-c1": [
+   "g:lo-que-intensity",
+   "g:mood-choice-fine"
+  ],
+  "gr-articulo-indefinido-c1": [],
+  "gr-nombres-escuetos-c1": [
+   "g:article-uses"
+  ],
+  "gr-demostrativos-c1": [
+   "g:referring-back"
+  ],
+  "gr-posesivos-c1": [],
+  "gr-cuantificadores-propios-c1": [
+   "g:cada-cualquier",
+   "g:subj-free-relatives"
+  ],
+  "gr-interrogativos-c1": [],
+  "gr-exclamativos-c1": [
+   "g:future-perfect"
+  ],
+  "gr-pronombre-personal-c1": [
+   "g:topic-fronting"
+  ],
+  "gr-relativos-c1": [
+   "g:relatives-formal",
+   "g:subj-free-relatives"
+  ],
+  "gr-adverbios-nucleares-c1": [
+   "g:word-order-style"
+  ],
+  "gr-adverbios-externos-c1": [
+   "g:evaluative-adverbs"
+  ],
+  "gr-adverbios-conjuntivos-c1": [
+   "g:consecutive-advanced",
+   "g:argument-markers"
+  ],
+  "gr-tiempos-indicativo-c1": [
+   "g:tense-modal-uses",
+   "g:spain-pasts"
+  ],
+  "gr-tiempos-subjuntivo-c1": [
+   "g:mood-choice-fine",
+   "g:subj-perception-negated",
+   "g:que-wishes-commands",
+   "g:wish-exclamatives"
+  ],
+  "gr-imperativo-c1": [],
+  "gr-formas-no-personales-c1": [
+   "g:participle-gerund-clauses",
+   "g:absolute-constructions",
+   "g:infinitive-subject"
+  ],
+  "gr-complementos-nominal-c1": [],
+  "gr-complementos-adjetival-c1": [],
+  "gr-nucleo-verbal-c1": [
+   "g:passive-ser",
+   "g:ser-estar-c1"
+  ],
+  "gr-complementos-verbales-c1": [],
+  "gr-concordancia-oracional-c1": [
+   "g:agreement-tricky"
+  ],
+  "gr-sub-sustantivas-c1": [
+   "g:mood-choice-fine"
+  ],
+  "gr-sub-adjetivas-relativo-c1": [
+   "g:relatives-formal",
+   "g:cuyo-relatives"
+  ],
+  "gr-sub-adv-temporales-c1": [
+   "g:temporal-advanced"
+  ],
+  "gr-sub-adv-lugar-modo-c1": [
+   "g:como-si",
+   "g:subj-free-relatives"
+  ],
+  "gr-sub-adv-causales-c1": [
+   "g:causal-advanced"
+  ],
+  "gr-sub-adv-finales-c1": [
+   "g:subj-purpose-full"
+  ],
+  "gr-sub-adv-condicionales-c1": [
+   "g:conditional-advanced",
+   "g:subj-conditions",
+   "g:wish-exclamatives"
+  ],
+  "gr-sub-adv-consecutivas-c1": [
+   "g:consecutive-advanced"
+  ],
+  "gr-sub-adv-comparativas-c1": [
+   "g:comparative-advanced-c1"
+  ],
+  "gr-sub-adv-concesivas-c1": [
+   "g:concessive-advanced",
+   "g:subj-concessive"
+  ]
+ }
+}

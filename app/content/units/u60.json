@@ -1,0 +1,128 @@
+{
+ "id": "u60",
+ "band": "C1",
+ "title": "A critical voice",
+ "theme": "18. Actividades artísticas: reviews, criticism, culture, the café as a cultural place",
+ "canDo": "I can write and defend a critical review in my own voice.",
+ "days": [
+  {
+   "type": "input",
+   "focus": [
+    "p:haces-bien-en",
+    "p:lo-mejor-de",
+    "p:a-lo-largo-de-esta-charla",
+    "p:de-lo-mas-adj",
+    "p:un-x-cualquiera"
+   ],
+   "chunks": [
+    "c:en-pleno-auge",
+    "c:a-la-perfeccion",
+    "c:para-chuparse-los-dedos"
+   ],
+   "lexemes": [],
+   "chapter": "ch215"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:word-order-style",
+    "g:evaluative-adverbs"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch216",
+   "scene": "sc-u60-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:word-order-style"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch217"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:word-order-style",
+    "g:future-subj-recognition",
+    "x:cualquier-dia-un-dia-cualquiera"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:plata-no-hay"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch218"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:dejar-mucho-que-desear",
+    "p:ser-un-acierto",
+    "p:dar-en-el-clavo",
+    "p:fuera-de-serie",
+    "p:saltar-a-la-vista",
+    "p:calidad-dudosa",
+    "p:rozar-el-ridiculo",
+    "p:ameno-pesado",
+    "p:no-servir-para-nada",
+    "p:resulta-adj-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:word-order-style",
+    "g:evaluative-adverbs"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u60-b"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:evaluative-adverbs"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch219"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:evaluative-adverbs",
+    "g:word-order-style",
+    "p:sencillamente"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:word-order-style",
+    "g:evaluative-adverbs"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u60-c"
+  }
+ ],
+ "storyArc": "La Esquina de Rosa reopens as a café and cultural space, with Hernando's book on the counter and Rosa's letters framed on the wall. A well-known critic writes a mixed review; Tomás writes his reply, in his own voice. Vale asks him whether he is still \"only here for a few months\". Before he can answer, Simón does it for him: \"¡Qué pena con usted!\".",
+ "quota": {
+  "bankSentences": 503,
+  "chapters": 5,
+  "scenes": 3,
+  "writingTasks": 6
+ }
+}

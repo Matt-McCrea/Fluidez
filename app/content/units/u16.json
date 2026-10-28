@@ -1,0 +1,123 @@
+{
+ "id": "u16",
+ "band": "A2",
+ "title": "Shopping",
+ "theme": "12. Compras, tiendas y establecimientos: clothes, sizes, colours, materials, prices, returns",
+ "canDo": "I can shop for clothes and other things: ask, compare, try on, pay and return something.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:object-pronoun-position"
+   ],
+   "chunks": [
+    "c:en-que-le-puedo-servir",
+    "c:solo-estoy-mirando",
+    "c:me-lo-llevo"
+   ],
+   "lexemes": [],
+   "chapter": "ch042"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:object-pronoun-position",
+    "g:parecer-quedar"
+   ],
+   "chunks": [
+    "c:me-lo-puedo-medir",
+    "c:tarjeta-o-efectivo",
+    "c:a-cuantas-cuotas",
+    "c:que-este-bien"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:superlatives"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:superlatives",
+    "g:object-pronoun-position"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch043"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:ser-de-material",
+    "p:talla-numero",
+    "p:cambiar-de-por",
+    "p:el-azul",
+    "p:colour-claro-oscuro",
+    "p:el-rojo-la-grande"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:double-pronouns"
+   ],
+   "chunks": [
+    "c:tiene-otra-talla"
+   ],
+   "lexemes": [],
+   "chapter": "ch044"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:double-pronouns",
+    "g:superlatives",
+    "x:le-se-lo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:object-pronoun-position",
+    "g:superlatives",
+    "g:double-pronouns"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u16-a"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:object-pronoun-position",
+    "g:superlatives",
+    "g:double-pronouns"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u16-c"
+  }
+ ],
+ "storyArc": "With the café doing well, Vale and Tomás go shopping in San Victorino for uniforms, chairs and a new grinder. Tomás haggles badly, Vale haggles brilliantly, and Tomás buys a purple velvet armchair that he insists will become \"iconic\". It doesn't fit through the door. Returning it is the hardest Spanish conversation of his life.",
+ "quota": {
+  "bankSentences": 450,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 3
+ }
+}

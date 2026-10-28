@@ -1,0 +1,141 @@
+{
+ "id": "u46",
+ "band": "B2",
+ "title": "Who said what",
+ "theme": "17 + 9: meetings, testimonies, quotes, minutes",
+ "canDo": "I can report a whole conversation accurately, and distance myself from what was said.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:reported-speech-full"
+   ],
+   "chunks": [
+    "c:antes-de-que-se-me-olvide",
+    "c:dejame-terminar",
+    "c:en-que-ibamos"
+   ],
+   "lexemes": [],
+   "chapter": "ch145"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:reported-speech-full",
+    "g:impersonal-register"
+   ],
+   "chunks": [
+    "c:no-hablemos-de-eso"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:recordar-acordarse",
+    "p:no-me-olvido-de",
+    "p:por-cierto-hablando-de",
+    "p:en-cuanto-a",
+    "p:perdona-que-te-interrumpa",
+    "p:como-decia",
+    "p:fijarse-reparar-en",
+    "p:la-vi-salir"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch146"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:reporting-verbs-mood"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch147"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:reporting-verbs-mood",
+    "g:reported-speech-full",
+    "x:me-suena-vs-recuerdo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:el-capital-la-capital",
+    "p:dice-ser",
+    "p:tras-inf",
+    "p:asistir-faltar",
+    "p:hacia-las-nueve",
+    "p:concretar",
+    "p:quieres-decir-que",
+    "p:que-no-dice-que-si",
+    "p:segun-dicen",
+    "p:reporting-verbs-stance"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:reported-speech-full",
+    "g:reporting-verbs-mood",
+    "g:subj-perception-negated"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch148",
+   "scene": "sc-u46-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-perception-negated"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch149"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-perception-negated",
+    "g:reporting-verbs-mood",
+    "x:tras-al-inf",
+    "p:alcanzar-a-distinguir",
+    "p:negar-confesar",
+    "p:no-es-que-sino-que",
+    "p:no-recuerdo-que-subj"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u46-b"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:reported-speech-full",
+    "g:reporting-verbs-mood",
+    "g:subj-perception-negated",
+    "x:pret-imp",
+    "x:por-para",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Vale discovers that Yesid had a meeting with Altamira, and confronts him. Yesid tells his side: Altamira offered him double the value of his share, told him the café would close anyway, and asked him to keep it quiet. Yesid swears he said no. Tomás has to report the whole conversation to the lawyer, word by word, and decide whether he believes him.",
+ "quota": {
+  "bankSentences": 636,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 5
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "id": "u25",
+ "band": "A2",
+ "title": "Places and people in detail",
+ "theme": "20. Geografía y naturaleza + 4: Medellín, landscapes, climate, people described in depth",
+ "canDo": "I can describe a place and a person in detail and pass on what someone told me.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:le-doubling"
+   ],
+   "chunks": [
+    "c:segun",
+    "c:buen-clima",
+    "c:pan-de-dios"
+   ],
+   "lexemes": [],
+   "chapter": "ch073"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:le-doubling",
+    "g:tanto-como"
+   ],
+   "chunks": [
+    "c:dizque",
+    "c:queda-a-una-hora"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:adverbs-mente"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:adverbs-mente",
+    "g:le-doubling"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch074"
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:de-los-ojos-azules"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch075"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:reported-past-basic"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch076"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:reported-past-basic",
+    "g:adverbs-mente"
+   ],
+   "chunks": [
+    "c:me-conto-que"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:le-doubling",
+    "g:adverbs-mente",
+    "g:reported-past-basic"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u25-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:le-doubling",
+    "g:adverbs-mente",
+    "g:reported-past-basic",
+    "x:ser-estar-adj"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Second trip to Medellín, for the Feria de las Flores. The city is all flowers, music and steep hills. Vale's mother finally tells them what Rosa said: that she had a younger brother, Joaquín, who went to Santa Marta after a terrible fight and never came back, and that Rosa \"never forgave herself\". On the way home Hernando, who came along, is very quiet.",
+ "quota": {
+  "bankSentences": 363,
+  "chapters": 4,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

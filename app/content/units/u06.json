@@ -1,0 +1,110 @@
+{
+ "id": "u06",
+ "band": "A1",
+ "title": "How it was",
+ "theme": "10. Vivienda (the café and the street, then and now) + time: decades, old things, years",
+ "canDo": "I can describe what a place or a person was like and say what happened there and how long ago.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:imperfect-states"
+   ],
+   "chunks": [
+    "c:cuanto-tiempo"
+   ],
+   "lexemes": [],
+   "chapter": "ch012"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:imperfect-states",
+    "g:possessives"
+   ],
+   "chunks": [
+    "c:en-esa-epoca",
+    "c:ya-no",
+    "c:como-era"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:preterite-irregular-strong"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:preterite-irregular-strong",
+    "g:imperfect-states"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:los-garcia",
+    "p:viejo-antiguo-mayor",
+    "p:dates-years"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch013"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:hace-ago"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch014"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:hace-ago",
+    "g:preterite-irregular-strong",
+    "p:naci-en"
+   ],
+   "chunks": [
+    "c:hace-rato"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:imperfect-states",
+    "g:preterite-irregular-strong",
+    "g:hace-ago"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u06-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:imperfect-states",
+    "g:preterite-irregular-strong",
+    "g:hace-ago"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Hernando tells them how the café was when he first came in 1979: there was a jukebox, Rosa was thirty and had a temper, and the whole street smelled of her pandeyucas. Repairing the counter, Tomás pulls out a loose brick and finds Rosa's recipe notebook, and inside it an unsent letter, forty-seven years old, addressed to \"Joaquín\". Vale reads the first line and goes pale.",
+ "quota": {
+  "bankSentences": 420,
+  "chapters": 3,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "id": "u49",
+ "band": "B2",
+ "title": "Formal writing",
+ "theme": "7. Trabajo + 15. Economía: applications, complaints, formal requests, contracts",
+ "canDo": "I can write a formal letter: an application, a complaint and a request.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:formal-letter-grammar"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch160"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:formal-letter-grammar",
+    "g:infinitive-perfect",
+    "x:no-recuerdo-que-vs-haber"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:entre-las-ventajas-destaca",
+    "p:darsele-bien-mal",
+    "p:renunciar-a",
+    "p:interesado-en"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch161"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:dirigirse-a",
+    "p:fuera-de-servicio",
+    "p:gasto-inversion",
+    "p:entregar-recoger",
+    "p:estimado-colon",
+    "p:me-permito",
+    "p:adjunto-envio",
+    "p:por-todo-lo-anterior-solicito",
+    "p:le-ruego-que",
+    "p:solicitamos-su-colaboracion"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:formal-letter-grammar",
+    "g:verbs-prepositions"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch162",
+   "scene": "sc-u49-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:verbs-prepositions"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch163"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:verbs-prepositions",
+    "g:formal-letter-grammar"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:disponer-de",
+    "p:dedicarse-a"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch164"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:formal-letter-grammar",
+    "g:verbs-prepositions"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u49-b"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:formal-letter-grammar",
+    "g:verbs-prepositions",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Formal writing week: a complaint to the mayor's office about the demolition, an application for heritage protection, and a formal letter to Yesid's family proposing a cooperative. Tomás discovers Colombian formal Spanish: \"me permito informarle\", \"quedo atento\", \"cordialmente\". Vale says his emails now sound like her bank.",
+ "quota": {
+  "bankSentences": 482,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 5
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "id": "u07",
+ "band": "A1",
+ "title": "Where I live",
+ "theme": "10. Vivienda: rooms, furniture, the neighbourhood (tienda, panadería, droguería), renting (arriendo)",
+ "canDo": "I can say what there is in my home and neighbourhood, where things are, and how much of everything there is.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:hay-vs-esta"
+   ],
+   "chunks": [
+    "c:siga",
+    "c:esta-en-su-casa",
+    "c:por-aca"
+   ],
+   "lexemes": [],
+   "chapter": "ch015"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:hay-vs-esta",
+    "g:hace-ago",
+    "x:hay-esta"
+   ],
+   "chunks": [
+    "c:mas-o-menos"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:demonstratives"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:demonstratives",
+    "g:hay-vs-esta"
+   ],
+   "chunks": [
+    "c:que-es-esto"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:ordinals-primer-tercer"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch016"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:position-de",
+    "p:quedar-cerca",
+    "p:lugar-tiene",
+    "p:ordinal-floor",
+    "p:aqui-ahi-alla",
+    "p:cerca-de"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:quantifiers"
+   ],
+   "chunks": [
+    "c:queda-cerquita"
+   ],
+   "lexemes": [],
+   "chapter": "ch017"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:quantifiers",
+    "g:demonstratives",
+    "x:muy-mucho",
+    "p:la-gente-singular",
+    "p:unos-approx",
+    "p:poco-un-poco"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:hay-vs-esta",
+    "g:demonstratives",
+    "g:quantifiers"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u07-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:hay-vs-esta",
+    "g:demonstratives",
+    "g:quantifiers"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Tomás leaves the hostel and rents a room from Doña Gloria above a bakery, two blocks away: a bed, a desk, a window onto the cathedral, and a shower that works one day in three. Exploring the neighbourhood, he notices two men in Grupo Altamira vests measuring the street, the café's facade and the house next door. Hernando spits on the pavement when he sees the logo.",
+ "quota": {
+  "bankSentences": 516,
+  "chapters": 3,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

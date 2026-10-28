@@ -1,0 +1,127 @@
+{
+ "id": "u31",
+ "band": "B1",
+ "title": "A longer story",
+ "theme": "4. Relaciones personales: family history, letters, memories, the 1970s–80s in Bogotá",
+ "canDo": "I can tell a story that reaches back before its own beginning, and report what people said.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:pluperfect"
+   ],
+   "chunks": [
+    "c:no-te-lo-vas-a-creer"
+   ],
+   "lexemes": [],
+   "chapter": "ch092"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:pluperfect",
+    "g:se-meaning-change",
+    "x:pluperfect-preterite",
+    "p:al-final-en-resumen",
+    "p:llevar-tiempo-gerundio"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:comerse-todo",
+    "p:miedo-a",
+    "p:extranar",
+    "p:entonces-de-repente",
+    "p:ponerse-a",
+    "p:pensaba-pero"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch093"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:narrative-pasts"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch094"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:narrative-pasts",
+    "g:pluperfect"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:me-sorprende-que",
+    "p:entiendo-que-subj",
+    "p:ponerse-en-el-lugar",
+    "p:animarse-a",
+    "p:enamorarse-de",
+    "p:oler-a-saber-a",
+    "p:me-aburre",
+    "p:costarle"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:reported-backshift"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:reported-backshift",
+    "g:narrative-pasts"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u31-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:pluperfect",
+    "g:narrative-pasts",
+    "g:reported-backshift"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u31-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:pluperfect",
+    "g:narrative-pasts",
+    "g:reported-backshift",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Tomás finally reads all of Rosa's letters to Joaquín, never sent. By 1978 the siblings had bought the building together with their parents' savings; Joaquín had borrowed money he could not repay and wanted to sell; Rosa refused, they fought, and he left that night. Hernando tells them what Rosa had told him years later: that she had written to him every year and never had the courage to post a single letter.",
+ "quota": {
+  "bankSentences": 546,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 4
+ }
+}

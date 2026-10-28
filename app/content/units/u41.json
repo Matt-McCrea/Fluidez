@@ -1,0 +1,117 @@
+{
+ "id": "u41",
+ "band": "B1",
+ "title": "Wishes and regrets",
+ "theme": "4. Relaciones personales: family reunions, reconciliation, requests in the past",
+ "canDo": "I can say what I wish were different and report what people asked me to do.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-past-triggers"
+   ],
+   "chunks": [
+    "c:no-hay-derecho",
+    "c:cuenta-conmigo"
+   ],
+   "lexemes": [],
+   "chapter": "ch122"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-past-triggers",
+    "g:como-si",
+    "x:subj-present-past"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch123"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:ojala-past"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch124"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:ojala-past",
+    "g:subj-past-triggers"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:te-importaria-que",
+    "p:podrias-haber",
+    "p:brindo-por",
+    "p:cumplirse-un-sueno",
+    "p:estrenar"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:reported-commands-past"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:reported-commands-past",
+    "g:ojala-past",
+    "x:te-importa-si-vs-te-importaria-que"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u41-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:subj-past-triggers",
+    "g:ojala-past",
+    "g:reported-commands-past"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u41-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:subj-past-triggers",
+    "g:ojala-past",
+    "g:reported-commands-past",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Yesid's grandmother tells them that Joaquín wished he had gone back to Bogotá, and that he asked her, before he died, to make sure the family made peace. Yesid wants to help, but he also wants to know what is in it for him. Tomás promises nothing he cannot keep. Before they leave, Yesid agrees to come to Bogotá for the hearing.",
+ "quota": {
+  "bankSentences": 387,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 4
+ }
+}

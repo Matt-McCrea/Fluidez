@@ -1,0 +1,146 @@
+{
+ "id": "u59",
+ "band": "C1",
+ "title": "Voices of Colombia",
+ "theme": "3 + referentes culturales: regional Colombia (paisa, costeño, rolo), music, literature",
+ "canDo": "I can understand regional Colombian voices and adapt my own register to who I'm talking to.",
+ "days": [
+  {
+   "type": "input",
+   "focus": [
+    "p:si-pero-que",
+    "p:lo-mas-recomendable",
+    "p:me-hubieras-dicho",
+    "p:disculpa-que",
+    "p:lo-de-noun"
+   ],
+   "chunks": [
+    "c:costar-un-platal",
+    "c:ser-todero",
+    "c:manos-de-mantequilla",
+    "c:la-hora-colombiana",
+    "c:pasar-raspando"
+   ],
+   "lexemes": [],
+   "chapter": "ch210"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:voseo-recognition",
+    "g:future-subj-recognition"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch211",
+   "scene": "sc-u59-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:voseo-recognition"
+   ],
+   "chunks": [
+    "c:a-cada-rato",
+    "c:donde-el-diablo-perdio-el-poncho",
+    "c:un-despelote"
+   ],
+   "lexemes": [],
+   "chapter": "ch212"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:voseo-recognition",
+    "g:ser-estar-c1"
+   ],
+   "chunks": [
+    "c:a-la-topa-tolondra",
+    "c:que-es-de-tu-vida",
+    "c:no-te-hubieras-molestado",
+    "c:faltaba-mas"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [
+    "c:mil-disculpas",
+    "c:no-te-voy-a-decir-que-no",
+    "c:te-animas",
+    "c:alla-tu",
+    "c:me-sigues"
+   ],
+   "lexemes": [],
+   "chapter": "ch213"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:estar-regalado",
+    "p:ser-un-duro",
+    "p:tener-buena-mano",
+    "p:enredarse",
+    "p:orden-sin-imperativo",
+    "p:serias-tan-amable",
+    "p:me-hace-el-favor",
+    "p:cuantas-veces-tengo-que",
+    "p:sintiendolo-mucho",
+    "p:digas-lo-que-digas"
+   ],
+   "chunks": [
+    "c:sin-ir-mas-lejos",
+    "c:bueno-te-dejo"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:voseo-recognition",
+    "g:future-subj-recognition"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u59-b"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:future-subj-recognition"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch214"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:future-subj-recognition",
+    "g:voseo-recognition",
+    "x:orden-escalera"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:voseo-recognition",
+    "g:future-subj-recognition",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "To celebrate, the group travels: Carnaval in Barranquilla with Yesid's family, a week in Medellín with Vale's, a night in a village in Boyacá where everyone says \"sumercé\". Tomás learns to hear the regions in people's voices, and to change his own register depending on who he is talking to.",
+ "quota": {
+  "bankSentences": 569,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 6
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "id": "u21",
+ "band": "A2",
+ "title": "What I want you to do",
+ "theme": "4. Relaciones personales + 7. Trabajo: requests, favours, rules at work, partnerships",
+ "canDo": "I can ask someone to do something, say what I need from them, and tell them not to do something.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-wanting"
+   ],
+   "chunks": [
+    "c:me-haces-un-favor",
+    "c:sin-problema",
+    "c:no-te-preocupes"
+   ],
+   "lexemes": [],
+   "chapter": "ch059"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-wanting",
+    "g:conditional",
+    "x:inf-vs-que-subj"
+   ],
+   "chunks": [
+    "c:bueno-no-se",
+    "c:que-pena-molestarlo",
+    "c:hagame-el-favor"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-irregulars"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-irregulars",
+    "g:subj-wanting"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch060"
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:te-importaria"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch061"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:negative-commands"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch062"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:negative-commands",
+    "g:subj-irregulars"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:subj-wanting",
+    "g:subj-irregulars",
+    "g:negative-commands"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u21-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:subj-wanting",
+    "g:subj-irregulars",
+    "g:negative-commands",
+    "x:ser-estar-adj"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Tomás asks Vale to become his partner in the café, fifty-fifty. She wants him to put it in writing, to promise he will stay longer than a year and, above all, not to sign anything Altamira sends him. Tomás wants her to trust him. Hernando wants them both to stop shouting in front of the customers.",
+ "quota": {
+  "bankSentences": 363,
+  "chapters": 4,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

@@ -1,0 +1,144 @@
+{
+ "id": "u50",
+ "band": "B2",
+ "title": "Hard conversations",
+ "theme": "4. Relaciones personales: conflict, negotiation, apologies, boundaries",
+ "canDo": "I can handle a conversation where we want different things, and keep it civil.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-free-relatives"
+   ],
+   "chunks": [
+    "c:que-no-se-vuelva-a-repetir",
+    "c:no-me-da-la-gana",
+    "c:no-puedo-mas"
+   ],
+   "lexemes": [],
+   "chapter": "ch165"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-free-relatives",
+    "g:verbs-prepositions"
+   ],
+   "chunks": [
+    "c:ya-paso",
+    "c:todo-tiene-solucion",
+    "c:animo-ya-falta-poco",
+    "c:te-entiendo-perfectamente"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:reproach-questions",
+    "p:lo-mejor-seria-que",
+    "p:ojo-con-no-confies",
+    "p:no-tengas-miedo-de",
+    "p:capaz-dispuesto-a",
+    "p:siempre-gerundio",
+    "p:hasta-que-no",
+    "p:pase-lo-que-pase"
+   ],
+   "chunks": [
+    "c:a-mi-me-pasa-lo-mismo",
+    "c:hablando-se-entiende-la-gente"
+   ],
+   "lexemes": [],
+   "chapter": "ch166"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-future-in-past"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch167"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-future-in-past",
+    "g:subj-free-relatives"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:tener-la-mania-de",
+    "p:darle-importancia",
+    "p:repartir-entre",
+    "p:siento-no-haber",
+    "p:lamento-lo-de",
+    "p:estar-harto-de-que",
+    "p:me-pone-nervioso-que",
+    "p:me-da-rabia-me-indigna",
+    "p:tengo-miedo-de-que",
+    "p:me-da-verguenza"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:subj-free-relatives",
+    "g:subj-future-in-past",
+    "g:que-wishes-commands"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch168",
+   "scene": "sc-u50-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:que-wishes-commands"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch169"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:que-wishes-commands",
+    "g:subj-future-in-past",
+    "p:a-gritos",
+    "p:que-subj-repeated-order",
+    "x:siento-que-vs-siento-no-haber"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u50-b"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:subj-free-relatives",
+    "g:subj-future-in-past",
+    "g:que-wishes-commands",
+    "x:pret-imp",
+    "x:por-para",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Vale gets an offer: an investor in Medellín will finance her own bakery. She wants it. Tomás wants her to stay and says so badly, and they have the worst argument of their lives. Hernando, meanwhile, has his own hard conversation with his daughter, who wants him to move in with her. Both conversations end with someone slamming a door.",
+ "quota": {
+  "bankSentences": 636,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 5
+ }
+}

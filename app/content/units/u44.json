@@ -1,0 +1,147 @@
+{
+ "id": "u44",
+ "band": "B2",
+ "title": "Making the case",
+ "theme": "17. Gobierno, política y sociedad: heritage, urban development, rights, public hearings",
+ "canDo": "I can argue a position with evidence, conditions and concessions.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-concessive"
+   ],
+   "chunks": [
+    "c:lo-tengo-clarisimo",
+    "c:la-raiz-del-problema",
+    "c:a-largo-plazo"
+   ],
+   "lexemes": [],
+   "chapter": "ch135"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-concessive",
+    "g:si-past-unreal",
+    "x:aunque-ind-subj"
+   ],
+   "chunks": [
+    "c:pues-si",
+    "c:desde-luego",
+    "c:sin-duda-alguna",
+    "c:yo-no-lo-veo-asi"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:que-opinas-de-que",
+    "p:lo-veo-dificil",
+    "p:que-subj-me-parece",
+    "p:habria-que",
+    "p:estaria-bien-que",
+    "p:preferiria-que"
+   ],
+   "chunks": [
+    "c:si-tu-lo-dices",
+    "c:puede-que-me-equivoque"
+   ],
+   "lexemes": [],
+   "chapter": "ch136"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-conditions"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch137"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-conditions",
+    "g:subj-concessive",
+    "x:habria-que-vs-deberias"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:valer-la-pena",
+    "p:estar-convencido-de",
+    "p:imprescindible",
+    "p:comparto-su-punto-de-vista",
+    "p:tienes-toda-la-razon",
+    "p:no-estoy-seguro-de-que",
+    "p:tengo-la-impresion-de-que",
+    "p:voy-a-defender-que",
+    "p:un-estudio-muestra-que",
+    "p:a-mi-modo-de-ver"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:subj-concessive",
+    "g:subj-conditions",
+    "g:argument-markers"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch138",
+   "scene": "sc-u44-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:argument-markers"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch139"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:argument-markers",
+    "g:subj-conditions",
+    "p:coincidir-con-en",
+    "p:a-primera-vista",
+    "p:en-lineas-generales",
+    "p:concede-pero",
+    "p:se-podria-objetar-que",
+    "p:ahora-bien-dicho-esto",
+    "x:impresion-vs-no-estoy-seguro",
+    "x:modo-de-ver-vs-yo-diria"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u44-b"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:subj-concessive",
+    "g:subj-conditions",
+    "g:argument-markers"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u44-c"
+  }
+ ],
+ "storyArc": "The public hearing at the heritage institute. Altamira's lawyers argue that the building is unsafe and has no value; Tomás, Yesid and the neighbours argue that it does, with documents, photos, Rosa's letters and Hernando's testimony. Even if they lose, Tomás says, they will have told the truth. The decision is postponed for three months.",
+ "quota": {
+  "bankSentences": 666,
+  "chapters": 5,
+  "scenes": 3,
+  "writingTasks": 5
+ }
+}

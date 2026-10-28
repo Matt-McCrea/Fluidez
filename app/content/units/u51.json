@@ -1,0 +1,117 @@
+{
+ "id": "u51",
+ "band": "B2",
+ "title": "Spanish beyond Colombia",
+ "theme": "14. Viajes + referentes culturales: Spain, regional variation, the Spanish-speaking world",
+ "canDo": "I can read Spanish from Spain and other countries, and understand vosotros and Spain's use of the past.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:vosotros-recognition"
+   ],
+   "chunks": [
+    "c:vale-spain",
+    "c:que-rollo-spain",
+    "c:anda-spain"
+   ],
+   "lexemes": [],
+   "chapter": "ch170"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:vosotros-recognition",
+    "g:que-wishes-commands"
+   ],
+   "chunks": [
+    "c:echar-de-menos-spain"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch171"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:spain-pasts"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch172"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:spain-pasts",
+    "g:vosotros-recognition"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:adaptarse-a",
+    "p:proceder-de"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:vosotros-recognition",
+    "g:spain-pasts",
+    "g:se-form-recognition"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch173",
+   "scene": "sc-u51-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:se-form-recognition"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch174"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:se-form-recognition",
+    "g:spain-pasts"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u51-b"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:vosotros-recognition",
+    "g:spain-pasts",
+    "g:se-form-recognition",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Lucía, a food blogger from Madrid, visits with friends who say \"vosotros\", \"vale\" and \"hoy he desayunado\" every two sentences; Tomás realises he understands everything and that his Spanish now sounds Colombian. Vale accepts the Medellín offer for a trial month. The café feels enormous without her.",
+ "quota": {
+  "bankSentences": 336,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 5
+ }
+}

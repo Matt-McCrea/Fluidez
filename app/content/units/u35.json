@@ -1,0 +1,123 @@
+{
+ "id": "u35",
+ "band": "B1",
+ "title": "At the doctor",
+ "theme": "13. Salud e higiene: symptoms, the EPS and the clinic, medicines, healthy habits, rules",
+ "canDo": "I can explain symptoms, understand advice and instructions, and talk about rules.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:por-para-2"
+   ],
+   "chunks": [
+    "c:ni-se-te-ocurra",
+    "c:hacer-fila"
+   ],
+   "lexemes": [],
+   "chapter": "ch104"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:por-para-2",
+    "g:subj-perfect"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:madrugar-trasnochar",
+    "p:permitir-inf"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch105"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:impersonal-obligation"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch106"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:impersonal-obligation",
+    "g:por-para-2",
+    "x:permitir-inf-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:te-importa-si",
+    "p:se-puede-me-dejas",
+    "p:esta-prohibido",
+    "p:ten-cuidado-con",
+    "p:no-vayas-a",
+    "p:sentirse-mal",
+    "p:es-obligatorio",
+    "p:postura"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:deber-modal"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:deber-modal",
+    "g:impersonal-obligation",
+    "x:tener-que-deber"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u35-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:por-para-2",
+    "g:impersonal-obligation",
+    "g:deber-modal"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u35-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:por-para-2",
+    "g:impersonal-obligation",
+    "g:deber-modal",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Hernando collapses behind the chess table. At the clinic the doctor explains his heart problem in words Tomás has to ask her to repeat, and tells him to rest, eat less salt and take his pills three times a day. Hernando says he will rest when he is dead. Vale says that can be arranged and confiscates his salt shaker.",
+ "quota": {
+  "bankSentences": 462,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 4
+ }
+}

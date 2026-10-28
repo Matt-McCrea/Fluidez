@@ -1,0 +1,113 @@
+{
+ "id": "u14",
+ "band": "A1",
+ "title": "Joining it up",
+ "theme": "9. Información y medios: messages, notes, WhatsApp, describing things with detail, reasons",
+ "canDo": "I can write a connected message with reasons and details instead of short separate sentences.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:relative-que"
+   ],
+   "chunks": [
+    "c:por-ejemplo",
+    "c:ademas",
+    "c:o-sea"
+   ],
+   "lexemes": [],
+   "chapter": "ch036"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:relative-que",
+    "g:indirect-objects",
+    "x:que-three-ways"
+   ],
+   "chunks": [
+    "c:pues",
+    "c:te-cuento-que",
+    "c:querido-querida",
+    "c:un-abrazo"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:cause-result"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:cause-result",
+    "g:relative-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:para-inf-purpose"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch037"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:prep-pronouns"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch038"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:prep-pronouns",
+    "g:cause-result",
+    "p:para-mi",
+    "x:para-porque"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:relative-que",
+    "g:cause-result",
+    "g:prep-pronouns"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u14-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:relative-que",
+    "g:cause-result",
+    "g:prep-pronouns",
+    "x:pret-imp",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Tomás writes Vale a long message, the first one with reasons and details instead of short sentences: the lease that Altamira has bought expires in a year, but the letter to Joaquín says the building itself was bought by Rosa AND her brother, so maybe the building isn't Altamira's to take. He signs off: \"Me quedo un año. Creo que tenemos una oportunidad.\" She replies with one word: \"Listo.\"",
+ "quota": {
+  "bankSentences": 402,
+  "chapters": 3,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "id": "u19",
+ "band": "A2",
+ "title": "Work and studies",
+ "theme": "7. Trabajo + 6. Educación: jobs, job ads, workplace, courses, skills",
+ "canDo": "I can talk about my job and studies, read a job ad, and say what a workplace needs.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:se-impersonal"
+   ],
+   "chunks": [
+    "c:alo",
+    "c:de-parte-de-quien",
+    "c:con-el-ella"
+   ],
+   "lexemes": [],
+   "chapter": "ch052"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:se-impersonal",
+    "g:possessives-stressed"
+   ],
+   "chunks": [
+    "c:se-busca",
+    "c:se-puede",
+    "c:le-dejo-razon",
+    "c:un-momentico"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:relatives-donde-lo-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:relatives-donde-lo-que",
+    "g:se-impersonal"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch053"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:presentation-frame",
+    "p:trabajar-de"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:article-uses"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch054"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:article-uses",
+    "g:relatives-donde-lo-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:se-impersonal",
+    "g:relatives-donde-lo-que",
+    "g:article-uses"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u19-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:se-impersonal",
+    "g:relatives-donde-lo-que",
+    "g:article-uses",
+    "x:ser-estar-adj"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Back in Bogotá they need help. They post their first job ad and hire Jhon Fredy, nineteen, an engineering student who works fast and talks faster. Then a man from the city council arrives: the café has no up-to-date permits, and without them it can be closed. Mariana thinks it is no coincidence that the inspection came right after Altamira's visit.",
+ "quota": {
+  "bankSentences": 384,
+  "chapters": 3,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

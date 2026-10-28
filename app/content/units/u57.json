@@ -1,0 +1,151 @@
+{
+ "id": "u57",
+ "band": "C1",
+ "title": "Emotion at native pitch",
+ "theme": "2. Individuo: dimensión perceptiva y anímica: regret, resignation, relief, nostalgia, grief",
+ "canDo": "I can express complex emotions precisely: regret, resignation, relief, mixed feelings.",
+ "days": [
+  {
+   "type": "input",
+   "focus": [
+    "p:salir-adelante",
+    "p:se-me-body",
+    "p:me-sorprende-me-sorprendo",
+    "p:parece-mentira-que",
+    "p:arrepentirse-de-haber",
+    "p:si-volviera-a-nacer",
+    "p:no-queda-de-otra",
+    "p:ya-era-hora-de-que"
+   ],
+   "chunks": [
+    "c:guardar-las-formas",
+    "c:consultarlo-con-la-almohada",
+    "c:eso-si-que-no",
+    "c:el-no-ya-lo-tienes",
+    "c:el-pan-de-cada-dia"
+   ],
+   "lexemes": [],
+   "chapter": "ch200"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:conditional-advanced",
+    "g:comparative-advanced-c1"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch201",
+   "scene": "sc-u57-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:conditional-advanced"
+   ],
+   "chunks": [
+    "c:mi-mas-sentido-pesame",
+    "c:que-sea-lo-que-dios-quiera",
+    "c:que-embarrada"
+   ],
+   "lexemes": [],
+   "chapter": "ch202"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:conditional-advanced",
+    "g:consecutive-advanced"
+   ],
+   "chunks": [
+    "c:cruzo-los-dedos",
+    "c:no-te-lo-tomes-a-pecho",
+    "c:hagale",
+    "c:estoy-molido"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:no-me-extrana-que",
+    "p:hasta-la-coronilla",
+    "p:quien-tuviera",
+    "p:estar-por",
+    "p:si-quieres-que",
+    "p:y-si-hubieramos"
+   ],
+   "chunks": [
+    "c:me-importa-un-comino",
+    "c:como-el-que-mas",
+    "c:esta-que-arde"
+   ],
+   "lexemes": [],
+   "chapter": "ch203"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:no-porque-sino-porque",
+    "p:no-quedar-mas-remedio",
+    "p:conformarse-con",
+    "p:aguantar-conservar-la-calma",
+    "p:cargo-de-conciencia",
+    "p:no-estar-para",
+    "p:entrarle-algo",
+    "p:quedar-grabado",
+    "p:romperse-la-cabeza",
+    "p:caer-en-cuenta"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:conditional-advanced",
+    "g:comparative-advanced-c1"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u57-b"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:comparative-advanced-c1"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch204"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:comparative-advanced-c1",
+    "g:conditional-advanced",
+    "x:conformarse-no-remedio"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:conditional-advanced",
+    "g:comparative-advanced-c1",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Hernando dies in his sleep the week his memoir goes to print. The café closes for a day; three hundred taxi drivers drive past honking. Tomás feels grief, regret for every chess game he lost on purpose, relief that the book arrived in time, and anger that it all happened at once. Vale comes back from Medellín for the funeral, and does not go back.",
+ "quota": {
+  "bankSentences": 680,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 6
+ }
+}

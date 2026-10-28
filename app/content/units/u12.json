@@ -1,0 +1,117 @@
+{
+ "id": "u12",
+ "band": "A1",
+ "title": "Telling a story",
+ "theme": "8. Ocio + 2. Individuo (emotions basic): events, surprises, weather, story time words",
+ "canDo": "I can tell a short story: what happened, what it was like, and what was going on when it happened.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:pret-vs-imperfect"
+   ],
+   "chunks": [
+    "c:de-repente",
+    "c:y-que-paso",
+    "c:en-serio"
+   ],
+   "lexemes": [],
+   "chapter": "ch030"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:pret-vs-imperfect",
+    "g:comparatives",
+    "x:pret-imp"
+   ],
+   "chunks": [
+    "c:una-vez-story",
+    "c:que-bien",
+    "c:menos-mal",
+    "c:al-final"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:imperfect-progressive"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:imperfect-progressive",
+    "g:pret-vs-imperfect"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch031"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:hace-frio",
+    "p:volver-a-inf"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:that-clauses"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch032"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:that-clauses",
+    "g:imperfect-progressive"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:pret-vs-imperfect",
+    "g:imperfect-progressive",
+    "g:that-clauses"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u12-a"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:pret-vs-imperfect",
+    "g:imperfect-progressive",
+    "g:that-clauses"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u12-c"
+  }
+ ],
+ "storyArc": "One night in the rainy season the power goes out. Tomás was closing up and Vale was counting the money when they heard a noise at the back: someone was trying to pull the bricks out of the wall where the notebook had been. The intruder ran off, leaving a muddy footprint and a cap with an Altamira logo. Simón had been shouting \"¡A la orden!\" at him the whole time.",
+ "quota": {
+  "bankSentences": 402,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 3
+ }
+}

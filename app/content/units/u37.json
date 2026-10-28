@@ -1,0 +1,133 @@
+{
+ "id": "u37",
+ "band": "B1",
+ "title": "Keeping a conversation going",
+ "theme": "9. Información y medios: phone calls, messages, conversation management",
+ "canDo": "I can keep a conversation going: show interest, interrupt, check I understood and pass on messages.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:questions-prepositions"
+   ],
+   "chunks": [
+    "c:y-entonces",
+    "c:me-explico",
+    "c:por-cierto"
+   ],
+   "lexemes": [],
+   "chapter": "ch110"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:questions-prepositions",
+    "g:consequence-connectors",
+    "x:tardar-llegar-tarde",
+    "x:segun-depende"
+   ],
+   "chunks": [
+    "c:me-escuchas",
+    "c:no-se-encuentra",
+    "c:numero-equivocado",
+    "c:eso-seria-todo"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [
+    "c:asi-esta-bien",
+    "c:me-suena",
+    "c:fijese-que",
+    "c:como-asi"
+   ],
+   "lexemes": [],
+   "chapter": "ch111"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:reported-requests"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch112"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:reported-requests",
+    "g:questions-prepositions",
+    "x:decir-que-ind-subj"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:podria-hablar-con",
+    "p:queria-cortesia",
+    "p:perdona-que-interrumpa",
+    "p:sobre-todo-solo",
+    "p:ver-oir-bien-mal",
+    "p:equivocarse-de",
+    "p:echo-question",
+    "p:lo-de"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:indirect-questions"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:indirect-questions",
+    "g:reported-requests",
+    "p:por-casualidad"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u37-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:questions-prepositions",
+    "g:reported-requests",
+    "g:indirect-questions"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u37-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:questions-prepositions",
+    "g:reported-requests",
+    "g:indirect-questions",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Phone calls, messages and voice notes fly to the coast: a cousin of a friend of Hernando's knows a fisherman in Taganga whose grandfather was called Herrera. Tomás learns to keep a conversation going with people who interrupt, mishear and pass the phone to someone else. Finally a man calls back: \"Dígale a Tomás que lo llame. Yesid. Él sabe.\"",
+ "quota": {
+  "bankSentences": 501,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 4
+ }
+}

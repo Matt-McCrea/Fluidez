@@ -1,0 +1,135 @@
+{
+ "id": "u56",
+ "band": "C1",
+ "title": "The essay",
+ "theme": "19. Religión y filosofía + 16: ideas, ethics of cities, progress and memory",
+ "canDo": "I can write a sustained argumentative essay and defend it.",
+ "days": [
+  {
+   "type": "input",
+   "focus": [
+    "p:prever-prevenir",
+    "p:al-tiempo-que",
+    "p:ir-en-aumento",
+    "p:no-te-falta-razon",
+    "p:coincidir-en",
+    "p:una-cosa-es-otra",
+    "p:cabe-preguntarse",
+    "p:en-la-medida-en-que"
+   ],
+   "chunks": [
+    "c:sin-lugar-a-dudas",
+    "c:tarde-o-temprano"
+   ],
+   "lexemes": [],
+   "chapter": "ch195"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:concessive-advanced",
+    "g:consecutive-advanced"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch196",
+   "scene": "sc-u56-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:concessive-advanced"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch197"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:concessive-advanced",
+    "g:absolute-constructions",
+    "x:parcial-vs-total"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:si-bien-no-olvidemos",
+    "p:a-mi-juicio",
+    "p:el-presente-trabajo",
+    "p:queda-por-resolver",
+    "p:se-entiende-por"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch198"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:la-nombraron-directora",
+    "p:surgir-de",
+    "p:tener-su-raiz-en",
+    "p:por-lo-general",
+    "p:a-grandes-rasgos",
+    "p:en-gran-medida",
+    "p:propio-de",
+    "p:plazos",
+    "p:hacer-frente-a",
+    "p:pasar-por-alto"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:concessive-advanced",
+    "g:consecutive-advanced"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u56-b"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:consecutive-advanced"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch199"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:consecutive-advanced",
+    "g:concessive-advanced",
+    "p:dar-lugar-a",
+    "x:vista-gorda-pasar-por-alto"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:concessive-advanced",
+    "g:consecutive-advanced"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u56-c"
+  }
+ ],
+ "storyArc": "A city newspaper runs an essay competition on \"La ciudad y la memoria\". Tomás writes about progress and forgetting, about who owns a street, and about his grandmother's unsent letters. He argues it, defends it in a public reading and, to his own surprise, wins second prize.",
+ "quota": {
+  "bankSentences": 602,
+  "chapters": 5,
+  "scenes": 3,
+  "writingTasks": 6
+ }
+}

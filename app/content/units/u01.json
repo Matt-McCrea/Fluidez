@@ -1,0 +1,158 @@
+{
+ "id": "u01",
+ "band": "A1",
+ "title": "Hello — who I am",
+ "theme": "3. Identidad personal: greetings, names, countries and nationalities, jobs, numbers 0–20, café basics (tinto, agua, pan)",
+ "canDo": "I can greet someone, say who I am, where I'm from and what I do, and ask them the same.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:ser-identity"
+   ],
+   "chunks": [
+    "c:hola-buenos-dias",
+    "c:me-llamo",
+    "c:soy-de",
+    "c:mucho-gusto",
+    "c:como-estas"
+   ],
+   "lexemes": [],
+   "chapter": "ch001"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:ser-identity"
+   ],
+   "chunks": [
+    "c:gracias-de-nada",
+    "c:por-favor",
+    "c:no-entiendo",
+    "c:como-se-dice",
+    "c:mas-despacio"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:sounds-letters"
+   ],
+   "chunks": [
+    "c:quiero",
+    "c:me-gustaria",
+    "c:me-regala",
+    "c:cuanto-cuesta",
+    "c:tengo"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:sounds-letters",
+    "g:ser-identity"
+   ],
+   "chunks": [
+    "c:hay",
+    "c:donde-esta",
+    "c:puedo",
+    "c:me-puede-ayudar",
+    "c:perdon-disculpe"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [
+    "c:me-gusta",
+    "c:me-encanta",
+    "c:trabajo-en",
+    "c:vivo-en",
+    "c:tengo-anos"
+   ],
+   "lexemes": [],
+   "chapter": "ch002"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:gender-articles"
+   ],
+   "chunks": [
+    "c:voy-a",
+    "c:vamos-a",
+    "c:tengo-que",
+    "c:chao-nos-vemos",
+    "c:que-pena"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:gender-articles",
+    "g:sounds-letters",
+    "p:ser-profession-no-article"
+   ],
+   "chunks": [
+    "c:hay-que",
+    "c:fui",
+    "c:comi",
+    "c:compre-trabaje",
+    "c:ayer-anoche"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:present-ar"
+   ],
+   "chunks": [
+    "c:que-hiciste",
+    "c:era",
+    "c:estuvo",
+    "c:ya-comiste",
+    "c:a-la-orden"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:present-ar",
+    "g:gender-articles"
+   ],
+   "chunks": [
+    "c:creo-que",
+    "c:porque",
+    "c:es-que",
+    "c:entonces-bueno",
+    "c:claro-listo"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:ser-identity",
+    "g:sounds-letters",
+    "g:gender-articles",
+    "g:present-ar"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u01-a"
+  }
+ ],
+ "storyArc": "Tomás lands at El Dorado with a headache from the altitude and one suitcase. A notary tells him that his grandmother Rosa has left him La Esquina de Rosa, a tiny café in La Candelaria that has been closed since her funeral. At the door he meets Vale, who takes him for a lost tourist and answers his textbook Spanish in slow English, until he says \"Soy el nieto de Rosa\". Don Hernando taps on the window for his tinto, closed or not, and from a cage in the corner Simón the parrot shouts \"¡Qué pena con usted!\".",
+ "quota": {
+  "bankSentences": 655,
+  "chapters": 2,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

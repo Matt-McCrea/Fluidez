@@ -1,0 +1,137 @@
+{
+ "id": "u30",
+ "band": "B1",
+ "title": "Feelings",
+ "theme": "2. Individuo: dimensión perceptiva y anímica: emotions, character change, reactions",
+ "canDo": "I can say how other people's actions make me feel, and describe how people change.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-emotion"
+   ],
+   "chunks": [
+    "c:que-alivio",
+    "c:que-rabia",
+    "c:me-imagino"
+   ],
+   "lexemes": [],
+   "chapter": "ch089"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-emotion",
+    "g:conditional-past-guess"
+   ],
+   "chunks": [
+    "c:no-es-para-tanto",
+    "c:ya-veras-que-todo-sale-bien",
+    "c:animo",
+    "c:ahi-vamos"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:me-da-pena-que",
+    "p:me-duele-que",
+    "p:me-da-rabia-que",
+    "p:no-soportar-que",
+    "p:estar-harto-de"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch090"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:verbs-of-change"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch091"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:verbs-of-change",
+    "g:subj-emotion",
+    "p:me-pongo-triste-cuando",
+    "p:enojarse-con",
+    "x:molesta-vs-no-soporto",
+    "x:pena-vs-rabia"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:alegrarse-de-que",
+    "p:contento-con-de",
+    "p:estar-orgulloso-de",
+    "p:es-increible-como",
+    "p:me-emociona-que",
+    "p:me-da-miedo-que",
+    "p:me-preocupa-que",
+    "p:me-pone-nervioso"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:se-meaning-change"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:se-meaning-change",
+    "g:verbs-of-change",
+    "x:ir-irse",
+    "p:aburrir-aburrirse"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u30-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:subj-emotion",
+    "g:verbs-of-change",
+    "g:se-meaning-change"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u30-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:subj-emotion",
+    "g:verbs-of-change",
+    "g:se-meaning-change",
+    "x:pret-imp",
+    "x:por-para",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Feelings run high. It scares Vale that they could lose everything; it infuriates Hernando that Tomás is even considering the money; it surprises Tomás how much he cares. He is changing: he has gone quiet and serious, and Jhon Fredy says he has become \"a real rolo\". Vale catches herself missing him on his day off.",
+ "quota": {
+  "bankSentences": 582,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 4
+ }
+}

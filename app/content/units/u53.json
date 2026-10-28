@@ -1,0 +1,145 @@
+{
+ "id": "u53",
+ "band": "C1",
+ "title": "Saying it without owning it",
+ "theme": "17. Gobierno, política y sociedad: claims, rumours, institutions, accountability",
+ "canDo": "I can report claims, rumours and other people's ideas without vouching for them.",
+ "days": [
+  {
+   "type": "input",
+   "focus": [
+    "p:rectificar-reparar",
+    "p:tengo-entendido-que",
+    "p:verbo-que-interpreta",
+    "p:el-x-de-y",
+    "p:sin-animo-de",
+    "p:no-digo-que-pero",
+    "p:no-me-cabe-duda",
+    "p:juraria-que"
+   ],
+   "chunks": [
+    "c:en-paradero-desconocido",
+    "c:sin-precedentes",
+    "c:no-es-por-nada-pero",
+    "c:no-creas",
+    "c:dicho-sea-de-paso"
+   ],
+   "lexemes": [],
+   "chapter": "ch180"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:hedging-distance",
+    "g:reformulation"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch181",
+   "scene": "sc-u53-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:hedging-distance"
+   ],
+   "chunks": [
+    "c:asi-es",
+    "c:punta-de-la-lengua",
+    "c:de-ser-asi"
+   ],
+   "lexemes": [],
+   "chapter": "ch182"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:hedging-distance",
+    "g:mood-choice-fine",
+    "x:juraria-vs-me-consta"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:imperfecto-citativo",
+    "p:no-tengo-tan-claro",
+    "p:para-mi-que",
+    "p:cada-quien"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch183"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:cabe-la-posibilidad",
+    "p:sembrar-la-duda",
+    "p:dar-por-sentado",
+    "p:tener-la-sensacion",
+    "p:en-apariencia",
+    "p:salir-a-la-luz",
+    "p:hacer-la-vista-gorda",
+    "p:ponerse-al-tanto",
+    "p:hasta-la-fecha",
+    "p:sostener-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:hedging-distance",
+    "g:reformulation"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u53-b"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:reformulation"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch184"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:reformulation",
+    "g:hedging-distance",
+    "p:en-cualquier-caso",
+    "p:o-sea-que",
+    "x:imperfecto-tres-usos",
+    "x:para-mi-que-vs-cabe"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:hedging-distance",
+    "g:reformulation",
+    "x:reformular-vs-descartar",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Rumours everywhere: that the café will close, that Altamira has a judge in his pocket, that Tomás is going back to Canada. Supposedly. Apparently. People say. Tomás learns to report what is said without owning it, and to answer the rumours without repeating them. The council official is arrested at Miami airport.",
+ "quota": {
+  "bankSentences": 638,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 6
+ }
+}

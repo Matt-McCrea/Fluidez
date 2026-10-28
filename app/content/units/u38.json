@@ -1,0 +1,121 @@
+{
+ "id": "u38",
+ "band": "B1",
+ "title": "In the news",
+ "theme": "9. Información y medios de comunicación: news, press, events, causes and consequences",
+ "canDo": "I can follow a news story, say what happened and why, and react to it.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:passive-ser"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch113"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:passive-ser",
+    "g:indirect-questions",
+    "x:ser-estar-participle"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch114"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:causal-advanced"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch115"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:causal-advanced",
+    "g:passive-ser",
+    "x:por-inf-para-inf"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:oir-hablar-de",
+    "p:enterarse-de",
+    "p:tener-lugar",
+    "p:resultar-ser",
+    "p:quedar-participio",
+    "p:inevitable",
+    "p:gracias-a-por-culpa-de",
+    "p:ser-event-location"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:concession-despite"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:concession-despite",
+    "g:causal-advanced",
+    "x:darse-cuenta-enterarse",
+    "x:es-en-esta-en",
+    "x:gracias-a-debido-a"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u38-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:passive-ser",
+    "g:causal-advanced",
+    "g:concession-despite"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u38-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:passive-ser",
+    "g:causal-advanced",
+    "g:concession-despite",
+    "x:pret-imp",
+    "x:por-para",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Mariana's investigation is published: Grupo Altamira bought six buildings in La Candelaria using permits signed by the same official, and two old houses were demolished at night. The story goes viral, the official is suspended, and Altamira tells the press that the article is \"fiction\". The café is packed with reporters asking Tomás what he thinks.",
+ "quota": {
+  "bankSentences": 420,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 4
+ }
+}

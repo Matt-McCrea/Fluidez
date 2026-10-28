@@ -1,0 +1,144 @@
+{
+ "id": "u42",
+ "band": "B2",
+ "title": "One thing, five ways",
+ "theme": "4 + 7: register, politeness, formality ladders, Colombian courtesy",
+ "canDo": "I can make the same request at five levels of formality and know which one fits.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:register-ladder"
+   ],
+   "chunks": [
+    "c:empuje-hale",
+    "c:pedir-un-domicilio",
+    "c:cuando-quieras"
+   ],
+   "lexemes": [],
+   "chapter": "ch125"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:register-ladder",
+    "g:reported-commands-past"
+   ],
+   "chunks": [
+    "c:ya-veremos",
+    "c:si-no-hay-mas-remedio",
+    "c:que-sea-la-ultima-vez",
+    "c:no-se-como-agradecertelo"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:no-hace-falta-que",
+    "p:dejame-que-te-ayude",
+    "p:lo-de-topic",
+    "p:don-dona-nombre",
+    "p:saludos-de-mi-parte",
+    "p:te-lo-agradezco",
+    "p:me-comunica-con",
+    "p:lo-antes-posible"
+   ],
+   "chunks": [
+    "c:crucemos-los-dedos",
+    "c:le-deseo-lo-mejor",
+    "c:permitame-un-momento",
+    "c:para-serte-sincero"
+   ],
+   "lexemes": [],
+   "chapter": "ch126"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:apropiado-para",
+    "p:darsele-bien",
+    "p:lo-que-pasa-es-que",
+    "p:supongo-imagino-tag",
+    "p:generic-tu-uno",
+    "p:nosotros-instructions",
+    "p:le-agradeceria-que",
+    "p:me-harias-un-favor",
+    "p:seria-posible",
+    "p:esta-prohibido-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:register-ladder",
+    "g:softening"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch127",
+   "scene": "sc-u42-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:softening"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch128"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:softening",
+    "g:register-ladder",
+    "x:no-hace-falta-vs-prohibido"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:dar-tiempo",
+    "p:puedo-hacerte-una-pregunta",
+    "p:amable-de-su-parte"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch129"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:register-ladder",
+    "g:softening"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u42-b"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:register-ladder",
+    "g:softening",
+    "x:pret-imp",
+    "x:por-para",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Now they need everyone: a notary who must be asked very formally, a judge's clerk who must be asked even more formally, Yesid who must be asked as a friend, and Altamira's polished assistant, who must be asked with a smile and a recorder running. Tomás practises the same request in five registers, and Simón learns \"le agradecería que…\".",
+ "quota": {
+  "bankSentences": 623,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 5
+ }
+}

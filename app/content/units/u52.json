@@ -1,0 +1,129 @@
+{
+ "id": "u52",
+ "band": "C1",
+ "title": "The whole verb system",
+ "theme": "18. Actividades artísticas: memoir, oral history, narrative craft",
+ "canDo": "I can choose any tense or mood deliberately and explain why I chose it.",
+ "days": [
+  {
+   "type": "input",
+   "focus": [
+    "p:dativo-aspectual",
+    "p:no-te-imaginas-lo-que",
+    "p:lo-mio-lo-tuyo"
+   ],
+   "chunks": [
+    "c:toda-una-odisea",
+    "c:de-la-noche-a-la-manana",
+    "c:nunca-en-mi-vida",
+    "c:con-pelos-y-senales",
+    "c:por-un-pelo"
+   ],
+   "lexemes": [],
+   "chapter": "ch175"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:tense-modal-uses",
+    "g:mood-choice-fine"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch176",
+   "scene": "sc-u52-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:tense-modal-uses"
+   ],
+   "chunks": [
+    "c:manos-a-la-obra"
+   ],
+   "lexemes": [],
+   "chapter": "ch177"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:tense-modal-uses",
+    "g:se-form-recognition"
+   ],
+   "chunks": [
+    "c:y-yo-que-sabia"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch178"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:en-tiempos-de",
+    "p:traer-recuerdos",
+    "p:acabar-por-inf",
+    "p:llegar-a-inf",
+    "p:echarse-romper-a",
+    "p:estallar-desencadenarse",
+    "p:dar-la-casualidad",
+    "p:imperfecto-sorpresa",
+    "p:imperfecto-cortesia-venia",
+    "p:perfecto-still-live"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:tense-modal-uses",
+    "g:mood-choice-fine"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u52-b"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:mood-choice-fine"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch179"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:mood-choice-fine",
+    "g:tense-modal-uses",
+    "x:acabar-por-llegar-a"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:tense-modal-uses",
+    "g:mood-choice-fine"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u52-c"
+  }
+ ],
+ "storyArc": "With Vale away, Hernando asks Tomás to help him write his memoir: fifty years of Bogotá from the front seat of a taxi and the corner table of a café. Choosing every tense on purpose becomes their game: what happened, what used to happen, what would have happened if he had told Rosa. Hernando's chapters are funnier and sadder than anything Tomás has read.",
+ "quota": {
+  "bankSentences": 467,
+  "chapters": 5,
+  "scenes": 3,
+  "writingTasks": 6
+ }
+}

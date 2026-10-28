@@ -1,0 +1,127 @@
+{
+ "id": "u29",
+ "band": "B1",
+ "title": "Agreeing and arguing",
+ "theme": "9. Información y medios: debates, rumours, likelihood, certainty",
+ "canDo": "I can agree, disagree, doubt and concede without turning it into a fight.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-doubt"
+   ],
+   "chunks": [
+    "c:ni-hablar",
+    "c:tu-crees",
+    "c:que-yo-sepa"
+   ],
+   "lexemes": [],
+   "chapter": "ch086"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-doubt",
+    "g:lo-adjective",
+    "x:supongo-vs-dudo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:dar-igual"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch087"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:quizas-a-lo-mejor"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch088"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:quizas-a-lo-mejor",
+    "g:subj-doubt",
+    "p:de-pronto-igual",
+    "p:seguramente-probablemente",
+    "x:dar-igual-parecer-bien"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:estar-de-acuerdo-con-en",
+    "p:tener-razon-pero",
+    "p:tener-en-cuenta",
+    "p:equivocarse",
+    "p:estar-seguro-de-que",
+    "p:esta-claro-que",
+    "p:repeticion-claro-claro",
+    "p:darse-cuenta-de"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:conditional-past-guess"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:conditional-past-guess",
+    "g:quizas-a-lo-mejor",
+    "x:future-guess-present-past",
+    "x:a-favor-vs-de-acuerdo"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u29-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:subj-doubt",
+    "g:quizas-a-lo-mejor",
+    "g:conditional-past-guess"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u29-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:subj-doubt",
+    "g:quizas-a-lo-mejor",
+    "g:conditional-past-guess",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Vale and Tomás argue about whether to accept Altamira's money if the legal fight looks hopeless. Mariana doubts that Altamira's permits are legal and suspects someone at the city council is helping him. Maybe they can win, maybe not; Hernando says it is possible that both of them are right, and that he doubts either of them has eaten today.",
+ "quota": {
+  "bankSentences": 483,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 4
+ }
+}

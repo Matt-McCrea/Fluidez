@@ -1,0 +1,4638 @@
+[
+ {
+  "id": "g:ser-identity",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 1,
+  "title": "Saying who you are and where you're from",
+  "es": "Soy Tomás. Soy de Toronto. ¿Y tú, de dónde eres?",
+  "en": "I'm Tomás. I'm from Toronto. And you, where are you from?",
+  "requires": [],
+  "contrasts": [],
+  "serves": [
+   "d:u01-hello-who-i-am"
+  ],
+  "pcic": [
+   "gramatica:12.1",
+   "gramatica:12.2.1"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dlg-presentarse",
+   "fn-identificar-a1",
+   "gr-atributo-a1",
+   "gr-genero-adjetivo-a1",
+   "gr-nucleo-verbal-a1",
+   "gr-pronombre-sujeto-a1",
+   "nt-origen-a1",
+   "ser-estar"
+  ]
+ },
+ {
+  "id": "g:sounds-letters",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 3,
+  "title": "Reading Spanish aloud: five vowels, the letters that surprise you, and the stress mark",
+  "es": "café, mamá, teléfono, perro / pero, jugo, calle",
+  "requires": [],
+  "contrasts": [],
+  "serves": [
+   "d:u01-hello-who-i-am"
+  ],
+  "pcic": [
+   "pronunciacion",
+   "ortografia"
+  ],
+  "placement": "pcic",
+  "note": "Text-only: describe sounds against English; teach the written accent as a typing skill the checker will hold them to.",
+  "sources": [
+   "dc-entonacion-a1",
+   "gr-acentuacion-a1",
+   "gr-sonidos-a1"
+  ]
+ },
+ {
+  "id": "g:gender-articles",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 6,
+  "title": "Every noun is \"el\" or \"la\": the, a, and how to guess which",
+  "es": "el café, la mesa, un carro, una ciudad, el día, la mano",
+  "en": "the coffee, the table, a car, a city, the day, the hand",
+  "requires": [],
+  "contrasts": [],
+  "serves": [
+   "d:u01-hello-who-i-am"
+  ],
+  "pcic": [
+   "gramatica:1.2",
+   "gramatica:3.1",
+   "gramatica:3.2"
+  ],
+  "placement": "pcic",
+  "note": "Flag el día, la mano, el problema, la foto. Always teach nouns with their article from here on.",
+  "sources": [
+   "gender-articles",
+   "gr-articulo-definido-a1",
+   "gr-articulo-definido-distribucion-a2",
+   "gr-articulo-indefinido-a1",
+   "gr-genero-especial-b1",
+   "gr-genero-sustantivos-a1",
+   "gr-masculino-a2",
+   "gr-numero-sustantivos-a1",
+   "gr-numero-sustantivos-b1"
+  ]
+ },
+ {
+  "id": "g:present-ar",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 8,
+  "title": "Talking about what you do: -ar verbs (hablo, hablas, habla)",
+  "es": "Trabajo en un café. ¿Hablas inglés? Vale cocina muy bien.",
+  "en": "I work in a café. Do you speak English? Vale cooks very well.",
+  "requires": [
+   "g:ser-identity"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u01-hello-who-i-am"
+  ],
+  "pcic": [
+   "gramatica:9.1.1"
+  ],
+  "placement": "pcic",
+  "note": "Ustedes forms only; vosotros never produced.",
+  "sources": [
+   "gr-presente-indicativo-valores-a1",
+   "gr-pronombre-sujeto-a1",
+   "presente"
+  ]
+ },
+ {
+  "id": "g:present-er-ir",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 11,
+  "title": "The other regular verbs: -er and -ir (como, vivo)",
+  "es": "Vivo en Bogotá. Comemos a la una. ¿Lees en español?",
+  "en": "I live in Bogotá. We eat at one. Do you read in Spanish?",
+  "requires": [
+   "g:present-ar"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u02-my-day-to-day"
+  ],
+  "pcic": [
+   "gramatica:9.1.1"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-presente-indicativo-valores-a1",
+   "presente"
+  ]
+ },
+ {
+  "id": "g:estar-location-states",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 13,
+  "title": "Where something is and how someone is: estar",
+  "es": "El café está en La Candelaria. ¿Cómo estás? Estoy cansado.",
+  "en": "The café is in La Candelaria. How are you? I'm tired.",
+  "requires": [
+   "g:ser-identity"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u02-my-day-to-day"
+  ],
+  "pcic": [
+   "gramatica:12.1",
+   "gramatica:9.1.1"
+  ],
+  "placement": "pcic",
+  "note": "Only location and a small set of states (bien, mal, cansado, enfermo, feliz). ser vs estar with adjectives comes at A2 (g:ser-estar-adjectives).",
+  "sources": [
+   "gr-nucleo-verbal-a1",
+   "nt-localizacion-a1",
+   "ser-estar"
+  ]
+ },
+ {
+  "id": "g:questions",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 16,
+  "title": "Asking questions: qué, quién, dónde, cuándo, cómo, cuánto, por qué",
+  "es": "¿Dónde vives? ¿Cuántos años tienes? ¿Por qué estás aquí?",
+  "en": "Where do you live? How old are you? Why are you here?",
+  "requires": [
+   "g:present-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u02-my-day-to-day"
+  ],
+  "pcic": [
+   "gramatica:7.3",
+   "gramatica:8.8"
+  ],
+  "placement": "pcic",
+  "note": "¿ ? marks, accents on question words, intonation questions (¿Tienes hambre?).",
+  "sources": [
+   "dc-entonacion-a1",
+   "fn-pedir-informacion-a1",
+   "gr-adverbios-relativos-b1",
+   "gr-interrogativos-a1",
+   "gr-oraciones-actitud-hablante-a1"
+  ]
+ },
+ {
+  "id": "g:gustar-basic",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 20,
+  "title": "Saying what you like: me gusta, me gustan, ¿te gusta?",
+  "es": "Me gusta el café. No me gustan los lunes. ¿Te gusta bailar?",
+  "en": "I like coffee. I don't like Mondays. Do you like dancing?",
+  "requires": [
+   "g:gender-articles",
+   "g:present-ar"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u03-likes-wants-and-plans"
+  ],
+  "pcic": [
+   "gramatica:12.1",
+   "gramatica:7.1.3"
+  ],
+  "placement": "pcic",
+  "note": "Unpacks c:me-gusta. Only me/te here; le/les/nos and encantar/doler in g:gustar-full.",
+  "sources": [
+   "fn-expresar-gustos-a2",
+   "fn-preguntar-gustos-a2",
+   "gr-articulo-definido-a1",
+   "gr-nucleo-verbal-a1",
+   "gr-verbos-predicativos-tipos-a2",
+   "task-gustos"
+  ]
+ },
+ {
+  "id": "g:stem-boot",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 22,
+  "title": "Verbs that change inside: quiero, puedo, prefiero, duermo (the \"boot\" verbs)",
+  "es": "¿Quieres un tinto? No puedo hoy. Prefiero el té. Duermo poco.",
+  "en": "Do you want a coffee? I can't today. I prefer tea. I sleep little.",
+  "requires": [
+   "g:present-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u03-likes-wants-and-plans"
+  ],
+  "pcic": [
+   "gramatica:9.1.1"
+  ],
+  "placement": "pcic",
+  "note": "e→ie and o→ue (and jugar u→ue). Unpacks c:quiero and c:puedo. e→i comes later (g:stem-e-i).",
+  "sources": [
+   "gr-presente-irregular-a2",
+   "presente"
+  ]
+ },
+ {
+  "id": "g:ir-a-plans",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 25,
+  "title": "Talking about plans: voy a + verb",
+  "es": "Voy a abrir el café el lunes. ¿Qué vas a hacer mañana?",
+  "en": "I'm going to open the café on Monday. What are you going to do tomorrow?",
+  "requires": [
+   "g:present-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u03-likes-wants-and-plans"
+  ],
+  "pcic": [
+   "gramatica:9.1.1"
+  ],
+  "placement": "pcic",
+  "note": "Unpacks c:voy-a. Ir a is THE future of everyday Latin American Spanish; the -ré future is taught later for guesses and promises. SEQ new lesson(s): gr-ir-a-infinitivo-a1.",
+  "sources": [
+   "fn-expresar-planes-b1",
+   "gr-infinitivo-usos-a1"
+  ]
+ },
+ {
+  "id": "g:preterite-ar",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 29,
+  "title": "Saying what you did: -ar verbs in the past (hablé, hablaste, habló)",
+  "es": "Ayer trabajé hasta las nueve. ¿Compraste el pan? Vale cerró temprano.",
+  "en": "Yesterday I worked until nine. Did you buy the bread? Vale closed early.",
+  "requires": [
+   "g:present-ar"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u04-the-weekend"
+  ],
+  "pcic": [
+   "gramatica:9.1.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "LatAm: the preterite is THE past, including for today (Hoy trabajé mucho). Unpacks c:compre-trabaje. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-preterito-indefinido-a2",
+   "preterito",
+   "task-a2-ayer"
+  ]
+ },
+ {
+  "id": "g:preterite-er-ir",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 31,
+  "title": "The past of -er and -ir verbs (comí, viviste, salió)",
+  "es": "Comí arepas. ¿Saliste anoche? Simón aprendió una palabra nueva.",
+  "en": "I ate arepas. Did you go out last night? Simón learned a new word.",
+  "requires": [
+   "g:preterite-ar",
+   "g:present-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u04-the-weekend"
+  ],
+  "pcic": [
+   "gramatica:9.1.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "Unpacks c:comi. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-preterito-indefinido-a2",
+   "preterito"
+  ]
+ },
+ {
+  "id": "g:preterite-ser-ir-hacer",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 34,
+  "title": "The three past forms you'll use most: fui, fue, hice",
+  "es": "Fui al mercado. Fue un desastre. ¿Qué hiciste el sábado?",
+  "en": "I went to the market. It was a disaster. What did you do on Saturday?",
+  "requires": [
+   "g:preterite-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u04-the-weekend"
+  ],
+  "pcic": [
+   "gramatica:9.1.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "fui = I went AND I was; context decides. Unpacks c:fui and c:que-hiciste. SEQ new lesson(s): gr-indefinido-irregular-a2. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-preterito-indefinido-a2",
+   "preterito"
+  ]
+ },
+ {
+  "id": "g:yo-irregular",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 38,
+  "title": "Verbs with an odd \"I\" form: tengo, hago, salgo, conozco, sé",
+  "es": "Tengo dos hermanos. Salgo a las seis. No conozco a nadie aquí. No sé.",
+  "en": "I have two brothers. I leave at six. I don't know anyone here. I don't know.",
+  "requires": [
+   "g:stem-boot"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u05-people-in-my-life"
+  ],
+  "pcic": [
+   "gramatica:9.1.1"
+  ],
+  "placement": "pcic",
+  "note": "Unpacks c:tengo and c:no-se. tener also e→ie (tienes, tiene). SEQ new lesson(s): gr-presente-yo-irregular-a1.",
+  "sources": [
+   "gr-presente-irregular-a2"
+  ]
+ },
+ {
+  "id": "g:adjective-agreement",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 40,
+  "title": "Describing people and things: alto/alta, simpáticos, inteligente",
+  "es": "Mi hermana es alta y muy simpática. Los buñuelos están deliciosos.",
+  "en": "My sister is tall and very nice. The buñuelos are delicious.",
+  "requires": [
+   "g:gender-articles"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u05-people-in-my-life"
+  ],
+  "pcic": [
+   "gramatica:2.2",
+   "gramatica:2.3",
+   "gramatica:1.3",
+   "gramatica:10.3"
+  ],
+  "placement": "pcic",
+  "note": "Plurals of nouns and adjectives together; adjective after the noun by default.",
+  "sources": [
+   "gn-describir-persona-a1",
+   "gr-adjetivos-calificativos-a1",
+   "gr-atributo-a1",
+   "gr-genero-adjetivo-a1",
+   "gr-numero-sustantivos-a1"
+  ]
+ },
+ {
+  "id": "g:possessives",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 44,
+  "title": "Whose is it: mi, tu, su, nuestro",
+  "es": "Mi abuela tenía un café. ¿Tu hermana vive en Medellín? Su perro es enorme.",
+  "en": "My grandmother had a café. Does your sister live in Medellín? His dog is huge.",
+  "requires": [
+   "g:adjective-agreement"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u05-people-in-my-life"
+  ],
+  "pcic": [
+   "gramatica:5"
+  ],
+  "placement": "pcic",
+  "note": "su = his/her/their/your (usted); disambiguate with de él / de ella.",
+  "sources": [
+   "gr-posesivos-distribucion-a1",
+   "gr-posesivos-forma-a1",
+   "nt-familia-a1"
+  ]
+ },
+ {
+  "id": "g:imperfect-states",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 48,
+  "title": "Setting the scene in the past: era, estaba, tenía, había",
+  "es": "El café era pequeño. Había una mesa al lado de la ventana. Mi abuela tenía sesenta años.",
+  "en": "The café was small. There was a table by the window. My grandmother was sixty.",
+  "requires": [
+   "g:preterite-ser-ir-hacer",
+   "g:estar-location-states"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u06-how-it-was"
+  ],
+  "pcic": [
+   "gramatica:9.1.2"
+  ],
+  "placement": "teaching_choice",
+  "note": "Only state verbs (ser, estar, tener, haber, querer, saber, poder). Full imperfect at g:imperfect-habitual. Unpacks c:era. SEQ new lesson(s): gr-imperfecto-estados-a1. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-preterito-imperfecto-a2",
+   "imperfecto"
+  ]
+ },
+ {
+  "id": "g:preterite-irregular-strong",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 50,
+  "title": "Irregular pasts: tuve, estuve, pude, puse, vine, quise, dije, traje",
+  "es": "Tuve que salir. Estuvimos dos horas en el trancón. No pude dormir. ¿Qué te dijo?",
+  "en": "I had to leave. We were in the traffic jam for two hours. I couldn't sleep. What did he tell you?",
+  "requires": [
+   "g:preterite-ser-ir-hacer"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u06-how-it-was"
+  ],
+  "pcic": [
+   "gramatica:9.1.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "Teach the shared endings (-e, -iste, -o, -imos, -ieron; dijeron/trajeron). Includes dar/ver. SEQ new lesson(s): gr-indefinido-irregular-a2. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-preterito-indefinido-a2",
+   "preterito"
+  ]
+ },
+ {
+  "id": "g:hace-ago",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 53,
+  "title": "How long ago: hace + time",
+  "es": "Llegué hace dos semanas. Mi abuela abrió el café hace cuarenta años.",
+  "en": "I arrived two weeks ago. My grandmother opened the café forty years ago.",
+  "requires": [
+   "g:preterite-ar"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u06-how-it-was"
+  ],
+  "pcic": [
+   "gramatica:9.1.3",
+   "nociones_generales"
+  ],
+  "placement": "teaching_choice",
+  "note": "Also hace + time + que + present (Hace un mes que vivo aquí) as a frame. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "dc-deixis-temporal-a2",
+   "nt-localizacion-tiempo-a2"
+  ]
+ },
+ {
+  "id": "g:hay-vs-esta",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 57,
+  "title": "\"There is\" vs \"it's there\": hay un banco / el banco está…",
+  "es": "Hay una panadería en la esquina. La panadería está al lado del café.",
+  "en": "There's a bakery on the corner. The bakery is next to the café.",
+  "requires": [
+   "g:estar-location-states",
+   "g:gender-articles"
+  ],
+  "contrasts": [
+   "x:hay-esta"
+  ],
+  "serves": [
+   "d:u07-where-i-live"
+  ],
+  "pcic": [
+   "gramatica:12.1",
+   "nociones_generales"
+  ],
+  "placement": "pcic",
+  "note": "hay + un/una/numbers/nothing; está/están + el/la/names. hay is never plural (hay dos).",
+  "sources": [
+   "gn-describir-lugar-a1",
+   "gr-articulo-indefinido-a1",
+   "nt-existencia-a1",
+   "nt-existencia-inexistencia-a2"
+  ]
+ },
+ {
+  "id": "g:demonstratives",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 59,
+  "title": "This, that, that one over there: este, ese, aquel (and esto, eso)",
+  "es": "Este apartamento es caro. ¿Y ese? ¿Qué es eso?",
+  "en": "This apartment is expensive. And that one? What is that?",
+  "requires": [
+   "g:adjective-agreement"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u07-where-i-live"
+  ],
+  "pcic": [
+   "gramatica:4"
+  ],
+  "placement": "pcic",
+  "note": "ese covers most \"that\" in speech; aquel for far away and far back in time.",
+  "sources": [
+   "dc-deixis-espacial-a1",
+   "gr-demostrativos-a2",
+   "gr-demostrativos-distribucion-a1",
+   "gr-demostrativos-valores-a2"
+  ]
+ },
+ {
+  "id": "g:quantifiers",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 63,
+  "title": "How much and how many: mucho, poco, bastante, demasiado — and muy vs mucho",
+  "es": "Hay mucha gente. El arriendo es muy caro. Tengo demasiadas cosas.",
+  "en": "There are a lot of people. The rent is very expensive. I have too many things.",
+  "requires": [
+   "g:adjective-agreement"
+  ],
+  "contrasts": [
+   "x:muy-mucho"
+  ],
+  "serves": [
+   "d:u07-where-i-live"
+  ],
+  "pcic": [
+   "gramatica:6.1"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-adverbios-lugar-tiempo-cantidad-a1",
+   "gr-cuantificadores-a2",
+   "gr-cuantificadores-no-universales-a1",
+   "nt-cantidad-relativa-a1"
+  ]
+ },
+ {
+  "id": "g:perfecto-experience",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 67,
+  "title": "Have you ever…? Experience and \"not yet\": he estado, todavía no he…",
+  "es": "¿Has estado en Cartagena? Nunca he probado el ajiaco. Todavía no he visto el contrato.",
+  "en": "Have you been to Cartagena? I've never tried ajiaco. I haven't seen the contract yet.",
+  "requires": [
+   "g:preterite-ser-ir-hacer"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u08-have-you-ever"
+  ],
+  "pcic": [
+   "gramatica:9.1.6",
+   "gramatica:9.4.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "LatAm scope ONLY: life experience (alguna vez, nunca), ya / todavía no, and situations still open. Never for finished events today: Hoy fui al banco, not Hoy he ido. Unpacks c:has-estado. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-participio-adjetival-a1",
+   "gr-preterito-perfecto-a2",
+   "nt-anterioridad-a2",
+   "perfecto",
+   "task-a2-experiencia"
+  ]
+ },
+ {
+  "id": "g:negation-words",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 69,
+  "title": "Saying no to everything: nada, nadie, nunca, tampoco, ningún",
+  "es": "No hay nadie. No como nunca carne. —No tengo hambre. —Yo tampoco.",
+  "en": "There's nobody. I never eat meat. —I'm not hungry. —Me neither.",
+  "requires": [
+   "g:present-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u08-have-you-ever"
+  ],
+  "pcic": [
+   "gramatica:6.1",
+   "gramatica:8.2",
+   "gramatica:13.3"
+  ],
+  "placement": "pcic",
+  "note": "Double negative is required (no… nada). también/tampoco.",
+  "sources": [
+   "dc-negacion-a1",
+   "dc-negacion-refuerzo-a2",
+   "gr-adverbios-afirmacion-negacion-a1",
+   "gr-adverbios-circunstanciales-a2",
+   "gr-cuantificadores-a2",
+   "gr-indefinidos-negativos-b1"
+  ]
+ },
+ {
+  "id": "g:verb-infinitive",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 72,
+  "title": "Verb + verb: puedo ir, sé nadar, necesito dormir, pienso volver",
+  "es": "¿Sabes manejar? Necesito descansar. Pienso volver en diciembre.",
+  "en": "Can you drive? I need to rest. I'm planning to come back in December.",
+  "requires": [
+   "g:stem-boot",
+   "g:yo-irregular"
+  ],
+  "contrasts": [
+   "x:saber-poder"
+  ],
+  "serves": [
+   "d:u08-have-you-ever"
+  ],
+  "pcic": [
+   "gramatica:9.4.1",
+   "gramatica:15.1.1"
+  ],
+  "placement": "pcic",
+  "note": "saber + inf = know how to; poder = be able / be allowed.",
+  "sources": [
+   "fn-habilidad-b1",
+   "gr-formas-no-personales-b1",
+   "gr-infinitivo-usos-a1",
+   "gr-subordinadas-sustantivas-a1"
+  ]
+ },
+ {
+  "id": "g:reflexive-routine",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 76,
+  "title": "Your daily routine: me levanto, te duchas, se acuesta",
+  "es": "Me levanto a las cinco. Vale se acuesta tarde. ¿A qué hora te despiertas?",
+  "en": "I get up at five. Vale goes to bed late. What time do you wake up?",
+  "requires": [
+   "g:stem-boot",
+   "g:present-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u09-my-routine"
+  ],
+  "pcic": [
+   "gramatica:7.1.4"
+  ],
+  "placement": "pcic",
+  "note": "Unpacks c:me-llamo. Pronoun before the conjugated verb; attached to the infinitive (voy a levantarme).",
+  "sources": [
+   "gr-oraciones-simples-a2",
+   "gr-pronombre-se-a1",
+   "task-rutina"
+  ]
+ },
+ {
+  "id": "g:estar-gerund",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 78,
+  "title": "What's happening right now: estoy trabajando",
+  "es": "Estoy trabajando, te llamo luego. ¿Qué estás haciendo?",
+  "en": "I'm working, I'll call you later. What are you doing?",
+  "requires": [
+   "g:estar-location-states",
+   "g:present-er-ir"
+  ],
+  "contrasts": [
+   "x:present-progressive"
+  ],
+  "serves": [
+   "d:u09-my-routine"
+  ],
+  "pcic": [
+   "gramatica:9.4.2",
+   "gramatica:12.1"
+  ],
+  "placement": "pcic",
+  "note": "Use only for right-now/temporary; plain present for habits and many \"now\" uses.",
+  "sources": [
+   "gr-gerundio-a2",
+   "gr-presente-indicativo-valores-a1"
+  ]
+ },
+ {
+  "id": "g:tener-que-hay-que",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 82,
+  "title": "What you have to do: tengo que, hay que, necesito",
+  "es": "Tengo que abrir a las seis. Hay que limpiar la máquina. No tienes que pagar.",
+  "en": "I have to open at six. The machine needs cleaning. You don't have to pay.",
+  "requires": [
+   "g:yo-irregular"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u09-my-routine"
+  ],
+  "pcic": [
+   "gramatica:12.1",
+   "nociones_generales"
+  ],
+  "placement": "pcic",
+  "note": "Unpacks c:tengo-que and c:hay-que. no tener que = don't have to (not \"must not\"). SEQ new lesson(s): gr-tener-que-hay-que-a1.",
+  "sources": [
+   "fn-obligacion-necesidad-b1",
+   "gr-perifrasis-verbales-b1",
+   "nt-necesidad-obligacion-a2"
+  ]
+ },
+ {
+  "id": "g:gustar-full",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 86,
+  "title": "Likes for everyone: le gusta, nos encanta, les interesa — and a mí también",
+  "es": "A Vale le encantan los buñuelos. A mí no me gusta el picante. —A mí tampoco.",
+  "en": "Vale loves buñuelos. I don't like spicy food. —Me neither.",
+  "requires": [
+   "g:gustar-basic"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u10-food-and-ordering"
+  ],
+  "pcic": [
+   "gramatica:7.1.3",
+   "gramatica:7.1.6"
+  ],
+  "placement": "pcic",
+  "note": "encantar, interesar, importar, doler (me duele la cabeza). Reading practice so learners don't read le as the subject. SEQ new lesson(s): gr-pronombres-me-te-nos-a1.",
+  "sources": [
+   "fn-preferencia-comparativa-a2",
+   "gr-objeto-indirecto-a2",
+   "gr-pronombres-tonicos-a2",
+   "gr-verbos-predicativos-tipos-a2",
+   "task-gustos"
+  ]
+ },
+ {
+  "id": "g:stem-e-i",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 88,
+  "title": "More inside-changers: pido, sirvo, sigo, repito",
+  "es": "Siempre pido lo mismo. ¿Me repites? Aquí sirven el mejor ajiaco.",
+  "en": "I always order the same thing. Can you repeat that? They serve the best ajiaco here.",
+  "requires": [
+   "g:stem-boot"
+  ],
+  "contrasts": [
+   "x:pedir-preguntar"
+  ],
+  "serves": [
+   "d:u10-food-and-ordering"
+  ],
+  "pcic": [
+   "gramatica:9.1.1"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-presente-irregular-a2"
+  ]
+ },
+ {
+  "id": "g:direct-objects",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 92,
+  "title": "Not repeating the noun: lo, la, los, las (and the personal a)",
+  "es": "—¿El jugo? —Lo quiero sin azúcar. ¿Conoces a Vale? La conocí ayer.",
+  "en": "—The juice? —I want it without sugar. Do you know Vale? I met her yesterday.",
+  "requires": [
+   "g:gustar-full",
+   "g:preterite-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u10-food-and-ordering"
+  ],
+  "pcic": [
+   "gramatica:7.1.2",
+   "gramatica:12.2.2"
+  ],
+  "placement": "teaching_choice",
+  "note": "lo/la standard (no leísmo). Comprehension first: \"who did what to whom?\" (Lo ve María). PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-objeto-directo-a1",
+   "gr-pronombres-atonos-a2",
+   "task-a2-pronombres"
+  ]
+ },
+ {
+  "id": "g:imperfect-habitual",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 96,
+  "title": "What used to happen: the full \"used to\" past (trabajaba, comía, vivía)",
+  "es": "De niño iba al café todos los domingos. Mi abuela cocinaba y yo comía.",
+  "en": "As a kid I used to go to the café every Sunday. My grandmother cooked and I ate.",
+  "requires": [
+   "g:imperfect-states"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u11-how-life-used-to-be"
+  ],
+  "pcic": [
+   "gramatica:9.1.2"
+  ],
+  "placement": "teaching_choice",
+  "note": "Only three irregulars: ser, ir, ver. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-preterito-imperfecto-a2",
+   "imperfecto",
+   "task-a2-antes"
+  ]
+ },
+ {
+  "id": "g:preterite-spelling-stem",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 98,
+  "title": "Past-tense surprises: busqué, llegué, empecé, leyó, pidió, durmió",
+  "es": "Llegué tarde. Busqué las llaves. Vale pidió un aumento. Don Hernando se durmió.",
+  "en": "I arrived late. I looked for the keys. Vale asked for a raise. Don Hernando fell asleep.",
+  "requires": [
+   "g:preterite-irregular-strong",
+   "g:stem-e-i"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u11-how-life-used-to-be"
+  ],
+  "pcic": [
+   "gramatica:9.1.3",
+   "ortografia"
+  ],
+  "placement": "teaching_choice",
+  "note": "SEQ new lesson(s): gr-indefinido-irregular-a2. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "preterito"
+  ]
+ },
+ {
+  "id": "g:comparatives",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 101,
+  "title": "Comparing: más… que, menos… que, tan… como, mejor, peor",
+  "es": "Bogotá es más fría que Medellín. Este café es mejor que el otro. No es tan caro como dicen.",
+  "en": "Bogotá is colder than Medellín. This coffee is better than the other one. It's not as expensive as they say.",
+  "requires": [
+   "g:adjective-agreement"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u11-how-life-used-to-be"
+  ],
+  "pcic": [
+   "gramatica:2.5"
+  ],
+  "placement": "teaching_choice",
+  "note": "mayor/menor for age. más de + number. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-comparativas-b1",
+   "gr-comparativo-a2",
+   "gr-comparativos-a2",
+   "task-a2-comparar"
+  ]
+ },
+ {
+  "id": "g:pret-vs-imperfect",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 105,
+  "title": "Two pasts in one story: what happened vs what things were like",
+  "es": "Era tarde y llovía. De repente alguien tocó la puerta.",
+  "en": "It was late and it was raining. Suddenly someone knocked on the door.",
+  "requires": [
+   "g:imperfect-habitual",
+   "g:preterite-irregular-strong"
+  ],
+  "contrasts": [
+   "x:pret-imp"
+  ],
+  "serves": [
+   "d:u12-telling-a-story"
+  ],
+  "pcic": [
+   "gramatica:9.1.2",
+   "gramatica:9.1.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "Blocked here, then interleaved across sessions; one of the big five, recycled to C1. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gn-narrar-anecdota-a2",
+   "gr-preterito-imperfecto-a2",
+   "preterite-imperfect",
+   "task-a2-anecdota"
+  ]
+ },
+ {
+  "id": "g:imperfect-progressive",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 107,
+  "title": "Was doing it when…: estaba cocinando cuando sonó el teléfono",
+  "es": "Estaba cerrando el café cuando llegó el señor Altamira.",
+  "en": "I was closing the café when Mr Altamira arrived.",
+  "requires": [
+   "g:pret-vs-imperfect",
+   "g:estar-gerund"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u12-telling-a-story"
+  ],
+  "pcic": [
+   "gramatica:9.4.2",
+   "gramatica:15.3.1"
+  ],
+  "placement": "teaching_choice",
+  "note": "PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-gerundio-a2",
+   "preterite-imperfect"
+  ]
+ },
+ {
+  "id": "g:that-clauses",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 111,
+  "title": "Saying what you think, know and heard: creo que, sé que, dice que",
+  "es": "Creo que tienes razón. Dice que viene mañana. Sabía que ibas a decir eso.",
+  "en": "I think you're right. She says she's coming tomorrow. I knew you were going to say that.",
+  "requires": [
+   "g:verb-infinitive"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u12-telling-a-story"
+  ],
+  "pcic": [
+   "gramatica:15.1.2"
+  ],
+  "placement": "pcic",
+  "note": "que is never dropped (unlike English \"I think you're right\"). Unpacks c:creo-que. SEQ new lesson(s): gr-creo-que-dice-que-a1.",
+  "sources": [
+   "gr-objeto-directo-a1",
+   "gr-subordinadas-sustantivas-a1"
+  ]
+ },
+ {
+  "id": "g:commands-tu",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 115,
+  "title": "Telling a friend what to do: ven, mira, espera, dime",
+  "es": "Mira esto. Ven conmigo. Sigue derecho y voltea a la izquierda.",
+  "en": "Look at this. Come with me. Go straight on and turn left.",
+  "requires": [
+   "g:present-er-ir",
+   "g:yo-irregular"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u13-around-the-city"
+  ],
+  "pcic": [
+   "gramatica:9.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "Regular = él form; 8 irregulars (ven, ten, pon, sal, haz, di, ve, sé). PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gn-instrucciones-a2",
+   "gr-imperativo-forma-a2",
+   "gr-imperativo-valores-b1",
+   "imperativo",
+   "task-direcciones"
+  ]
+ },
+ {
+  "id": "g:commands-usted",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 117,
+  "title": "Telling a stranger (or a group) what to do: siga, voltee, vengan",
+  "es": "Siga derecho dos cuadras. Tome la TransMilenio. Pasen, sigan.",
+  "en": "Go straight two blocks. Take the TransMilenio. Come in, come in.",
+  "requires": [
+   "g:commands-tu"
+  ],
+  "contrasts": [
+   "x:tu-usted"
+  ],
+  "serves": [
+   "d:u13-around-the-city"
+  ],
+  "pcic": [
+   "gramatica:9.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "Colombia uses usted widely; ustedes is the only plural. Taught as \"the opposite vowel\" before the subjunctive exists. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-imperativo-forma-a2",
+   "gr-imperativo-valores-b1",
+   "imperativo",
+   "nt-movimiento-estabilidad-a2",
+   "nt-orientacion-direccion-a1"
+  ]
+ },
+ {
+  "id": "g:indirect-objects",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 121,
+  "title": "To whom, for whom: le, les (le pregunto, les explico)",
+  "es": "Le pregunté al señor dónde estaba la estación. ¿Les explico el camino?",
+  "en": "I asked the man where the station was. Shall I explain the way to you?",
+  "requires": [
+   "g:gustar-full",
+   "g:direct-objects"
+  ],
+  "contrasts": [
+   "x:lo-le"
+  ],
+  "serves": [
+   "d:u13-around-the-city"
+  ],
+  "pcic": [
+   "gramatica:7.1.3",
+   "gramatica:12.2.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "Doubling with a + name is normal (le dije a Vale). PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-objeto-indirecto-a2",
+   "gr-pronombres-atonos-a2"
+  ]
+ },
+ {
+  "id": "g:relative-que",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 125,
+  "title": "Adding detail with que: el señor que vende arepas",
+  "es": "El señor que vende arepas es mi vecino. La receta que encontré es de 1975.",
+  "en": "The man who sells arepas is my neighbour. The recipe I found is from 1975.",
+  "requires": [
+   "g:that-clauses"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u14-joining-it-up"
+  ],
+  "pcic": [
+   "gramatica:7.2",
+   "gramatica:15.2"
+  ],
+  "placement": "pcic",
+  "note": "que for people and things; never dropped.",
+  "sources": [
+   "gr-relativas-b1",
+   "gr-relativo-que-a1",
+   "gr-subordinadas-adjetivas-a1"
+  ]
+ },
+ {
+  "id": "g:cause-result",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 127,
+  "title": "Why and so: porque, como, por eso, así que",
+  "es": "Como llovía, no salimos. No tengo plata, por eso no voy. Estoy cansado, así que me voy.",
+  "en": "As it was raining, we didn't go out. I have no money, that's why I'm not going. I'm tired, so I'm leaving.",
+  "requires": [
+   "g:that-clauses"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u14-joining-it-up"
+  ],
+  "pcic": [
+   "gramatica:15.3.4",
+   "gramatica:15.3.7"
+  ],
+  "placement": "teaching_choice",
+  "note": "como (cause) goes first; porque goes second. PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "dc-conectores-a1",
+   "gr-causales-a2",
+   "gr-causales-b1",
+   "gr-consecutivas-b1",
+   "task-contar"
+  ]
+ },
+ {
+  "id": "g:prep-pronouns",
+  "kind": "grammar",
+  "band": "A1",
+  "priority": 130,
+  "title": "After for, with, to: para mí, contigo, sin ti",
+  "es": "¿Esto es para mí? ¿Vienes conmigo? Sin ti no puedo.",
+  "en": "Is this for me? Are you coming with me? I can't without you.",
+  "requires": [
+   "g:gustar-full"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u14-joining-it-up"
+  ],
+  "pcic": [
+   "gramatica:7.1.6"
+  ],
+  "placement": "teaching_choice",
+  "note": "PCIC/programmes place this at A2; taught at A1 here.",
+  "sources": [
+   "gr-pronombres-tonicos-a2"
+  ]
+ },
+ {
+  "id": "g:ser-estar-adjectives",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 134,
+  "title": "\"Is\" for what it's like vs \"is\" for how it is right now: es aburrido / está aburrido",
+  "es": "Don Hernando es muy tranquilo, pero hoy está nervioso. La sopa está rica.",
+  "en": "Don Hernando is very calm, but today he's nervous. The soup is delicious.",
+  "requires": [
+   "g:estar-location-states",
+   "g:adjective-agreement"
+  ],
+  "contrasts": [
+   "x:ser-estar-adj"
+  ],
+  "serves": [
+   "d:u15-how-are-you-feeling"
+  ],
+  "pcic": [
+   "gramatica:12.2.1"
+  ],
+  "placement": "pcic",
+  "note": "Big five. Weight reading toward estar. Meaning-changers: aburrido, listo, rico, malo, vivo. SEQ new lesson(s): gr-ser-estar-adjetivos-a2.",
+  "sources": [
+   "gr-nucleo-verbal-copulativos-b2",
+   "ser-estar"
+  ]
+ },
+ {
+  "id": "g:estar-participle",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 136,
+  "title": "The state something is in: está cerrado, está roto, estoy preocupado",
+  "es": "La máquina está dañada. La puerta estaba abierta. Estamos muy preocupados.",
+  "en": "The machine is broken. The door was open. We're very worried.",
+  "requires": [
+   "g:ser-estar-adjectives",
+   "g:perfecto-experience"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u15-how-are-you-feeling"
+  ],
+  "pcic": [
+   "gramatica:9.4.3",
+   "gramatica:12.1"
+  ],
+  "placement": "pcic",
+  "note": "Participle agrees like an adjective.",
+  "sources": [
+   "gr-participio-adjetival-a1",
+   "nt-acabado-b1"
+  ]
+ },
+ {
+  "id": "g:parecer-quedar",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 140,
+  "title": "More \"backwards\" verbs: me parece, me queda, me cae bien, me hace falta",
+  "es": "Me parece una buena idea. Esa chaqueta te queda grande. Tu amigo me cae muy bien.",
+  "en": "It seems like a good idea to me. That jacket is too big for you. I really like your friend.",
+  "requires": [
+   "g:gustar-full"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u15-how-are-you-feeling"
+  ],
+  "pcic": [
+   "gramatica:12.1",
+   "gramatica:7.1.3"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "fn-valorar-a1",
+   "gr-verbos-predicativos-tipos-a2"
+  ]
+ },
+ {
+  "id": "g:object-pronoun-position",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 144,
+  "title": "Where the little words go: lo voy a comprar = voy a comprarlo",
+  "es": "Lo voy a pensar. = Voy a pensarlo. ¿Me estás escuchando?",
+  "en": "I'm going to think about it. Are you listening to me?",
+  "requires": [
+   "g:direct-objects",
+   "g:indirect-objects",
+   "g:ir-a-plans"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u16-shopping"
+  ],
+  "pcic": [
+   "gramatica:7.1.2",
+   "gramatica:7.1.3"
+  ],
+  "placement": "pcic",
+  "note": "Before the conjugated verb or glued to the infinitive/gerund; both correct. SEQ new lesson(s): gr-pronombres-posicion-a2.",
+  "sources": [
+   "gr-pronombres-atonos-a2",
+   "gr-pronombres-combinados-b1"
+  ]
+ },
+ {
+  "id": "g:superlatives",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 146,
+  "title": "The best, the cheapest, super-cheap: el más barato, carísimo",
+  "es": "Es el café más viejo del barrio. Esos zapatos están carísimos.",
+  "en": "It's the oldest café in the neighbourhood. Those shoes are really expensive.",
+  "requires": [
+   "g:comparatives"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u16-shopping"
+  ],
+  "pcic": [
+   "gramatica:2.5"
+  ],
+  "placement": "pcic",
+  "note": "de, not \"in\", after a superlative. -ísimo spelling (riquísimo, larguísimo).",
+  "sources": [
+   "fn-valorar-a2",
+   "gr-adjetivos-calificativos-a1",
+   "gr-comparativos-a2",
+   "gr-modificadores-adverbios-b1"
+  ]
+ },
+ {
+  "id": "g:double-pronouns",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 150,
+  "title": "Two little words together: me lo, te la, se lo",
+  "es": "—¿Me empaca la camisa? —Claro, ya se la empaco. ¿Me lo prestas?",
+  "en": "—Can you wrap the shirt for me? —Of course, I'll wrap it for you. Will you lend it to me?",
+  "requires": [
+   "g:object-pronoun-position"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u16-shopping"
+  ],
+  "pcic": [
+   "gramatica:7.1.5"
+  ],
+  "placement": "teaching_choice",
+  "note": "le/les → se before lo/la. Comprehension first; production lags. PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "gr-pronombres-atonos-a2",
+   "gr-pronombres-combinados-b1"
+  ]
+ },
+ {
+  "id": "g:si-present",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 154,
+  "title": "If… then: si quieres, vamos; si llueve, me quedo",
+  "es": "Si quieres, vamos al cine. Si llueve, nos quedamos en casa. Si ves a Vale, dile que la llamo.",
+  "en": "If you want, we'll go to the cinema. If it rains, we'll stay home. If you see Vale, tell her I'll call her.",
+  "requires": [
+   "g:ir-a-plans",
+   "g:commands-tu"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u17-making-plans"
+  ],
+  "pcic": [
+   "gramatica:15.3.6"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-condicionales-a2",
+   "gr-condicionales-b1"
+  ]
+ },
+ {
+  "id": "g:prep-infinitive",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 156,
+  "title": "Before leaving, after eating, on arriving: antes de, después de, al + verb",
+  "es": "Antes de salir, cierra la puerta. Después de comer, tomamos tinto. Al llegar, me llamas.",
+  "en": "Before leaving, close the door. After eating, we have coffee. When you arrive, call me.",
+  "requires": [
+   "g:verb-infinitive"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u17-making-plans"
+  ],
+  "pcic": [
+   "gramatica:9.4.1",
+   "gramatica:15.3.1"
+  ],
+  "placement": "pcic",
+  "note": "Spanish uses the infinitive where English uses -ing.",
+  "sources": [
+   "gr-infinitivo-usos-a1",
+   "nt-duracion-transcurso-a1"
+  ]
+ },
+ {
+  "id": "g:cuando-indicative",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 160,
+  "title": "When, while, every time: cuando, mientras, siempre que + present or past",
+  "es": "Cuando llego, Vale ya está aquí. Mientras yo cocinaba, él lavaba. Cuando era niño, vivía en Toronto.",
+  "en": "When I arrive, Vale is already here. While I was cooking, he was washing up. When I was a kid I lived in Toronto.",
+  "requires": [
+   "g:pret-vs-imperfect"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u17-making-plans"
+  ],
+  "pcic": [
+   "gramatica:15.3.1"
+  ],
+  "placement": "pcic",
+  "note": "Only habitual/past cuando here; cuando + future meaning waits for the subjunctive (g:subj-cuando-future).",
+  "sources": [
+   "dc-deixis-temporal-a2",
+   "gr-temporales-b1"
+  ]
+ },
+ {
+  "id": "g:por-para-1",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 164,
+  "title": "For and by, part 1: para (destination, purpose, deadline) vs por (through, because of, per)",
+  "es": "Salimos para Medellín por la mañana. Gracias por todo. Es para el viernes.",
+  "en": "We leave for Medellín in the morning. Thanks for everything. It's for Friday.",
+  "requires": [
+   "g:prep-infinitive"
+  ],
+  "contrasts": [
+   "x:por-para"
+  ],
+  "serves": [
+   "d:u18-on-the-road"
+  ],
+  "pcic": [
+   "gramatica:12.2.4"
+  ],
+  "placement": "pcic",
+  "note": "Rules of thumb only; second pass at B1, third at B2.",
+  "sources": [
+   "gr-causales-a2",
+   "gr-oraciones-finales-a1",
+   "por-para"
+  ]
+ },
+ {
+  "id": "g:commands-with-pronouns",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 166,
+  "title": "Commands with the little words: dímelo, siéntese, tráiganmelo",
+  "es": "Siéntese, por favor. Dímelo. Bájese en la próxima. Tráiganmelo mañana.",
+  "en": "Sit down, please. Tell me. Get off at the next one. Bring it to me tomorrow.",
+  "requires": [
+   "g:commands-usted",
+   "g:double-pronouns"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u18-on-the-road"
+  ],
+  "pcic": [
+   "gramatica:9.3",
+   "gramatica:7.1.5"
+  ],
+  "placement": "pcic",
+  "note": "Glued on in positive commands, with an accent to keep the stress. SEQ new lesson(s): gr-pronombres-posicion-a2.",
+  "sources": [
+   "gr-imperativo-forma-a2",
+   "imperativo"
+  ]
+ },
+ {
+  "id": "g:possessives-stressed",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 170,
+  "title": "Mine, yours, his: mío, tuyo, suyo (un amigo mío)",
+  "es": "—¿Esta maleta es suya? —No, la mía es la roja. Un amigo mío vive en Santa Marta.",
+  "en": "—Is this suitcase yours? —No, mine is the red one. A friend of mine lives in Santa Marta.",
+  "requires": [
+   "g:possessives"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u18-on-the-road"
+  ],
+  "pcic": [
+   "gramatica:5"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-posesivo-dativo-b1",
+   "gr-posesivos-b2",
+   "gr-posesivos-tonicos-a2",
+   "gr-restrictivos-nominales-a2"
+  ]
+ },
+ {
+  "id": "g:se-impersonal",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 174,
+  "title": "People in general: se habla, se vende, se necesita, se puede",
+  "es": "Se necesita mesero. Aquí se habla inglés. ¿Se puede pagar con tarjeta?",
+  "en": "Waiter needed. English spoken here. Can you pay by card?",
+  "requires": [
+   "g:reflexive-routine"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u19-work-and-studies"
+  ],
+  "pcic": [
+   "gramatica:7.1.4"
+  ],
+  "placement": "teaching_choice",
+  "note": "Plural agreement with plural things (se venden arepas). PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "gr-oraciones-simples-a2",
+   "gr-se-multiuso-b1"
+  ]
+ },
+ {
+  "id": "g:relatives-donde-lo-que",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 176,
+  "title": "Where, who and the thing that: donde, quien, lo que",
+  "es": "Es el lugar donde trabajé. Lo que necesito es tiempo. Es la persona con quien hablé.",
+  "en": "It's the place where I worked. What I need is time. She's the person I spoke with.",
+  "requires": [
+   "g:relative-que"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u19-work-and-studies"
+  ],
+  "pcic": [
+   "gramatica:7.2",
+   "gramatica:15.2"
+  ],
+  "placement": "pcic",
+  "note": "lo que = \"what\" in statements (not qué).",
+  "sources": [
+   "fn-identificar-b1",
+   "gr-adverbios-relativos-b1",
+   "gr-relativas-b1",
+   "gr-relativo-donde-b2"
+  ]
+ },
+ {
+  "id": "g:article-uses",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 180,
+  "title": "When Spanish says \"the\" and English doesn't (and the reverse)",
+  "es": "Me gusta el café. Soy ingeniero. Los lunes trabajo. Juego al fútbol. Es la una.",
+  "en": "I like coffee. I'm an engineer. On Mondays I work. I play football. It's one o'clock.",
+  "requires": [
+   "g:gender-articles"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u19-work-and-studies"
+  ],
+  "pcic": [
+   "gramatica:3.1",
+   "gramatica:3.3"
+  ],
+  "placement": "pcic",
+  "note": "General statements take the article; no article with professions after ser; el agua.",
+  "sources": [
+   "gr-articulo-anaforico-escuetos-b1",
+   "gr-articulo-definido-a1",
+   "gr-articulo-definido-distribucion-a2",
+   "gr-articulo-definido-valores-a2",
+   "gr-articulo-definido-valores-b2",
+   "gr-articulo-indefinido-valores-a2",
+   "gr-articulo-indefinido-valores-b2",
+   "gr-nombres-escuetos-a2",
+   "gr-nombres-escuetos-b2",
+   "gr-nombres-escuetos-c1",
+   "gr-nombres-propios-a1",
+   "gr-nombres-propios-b1",
+   "gr-sustantivos-especiales-a2"
+  ]
+ },
+ {
+  "id": "g:future-conjecture",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 184,
+  "title": "Guessing out loud: ¿Dónde estará? Serán las tres. Tendrá unos sesenta años.",
+  "es": "¿Dónde estará Simón? Estará con Don Hernando. Serán las once.",
+  "en": "Where can Simón be? He's probably with Don Hernando. It must be about eleven.",
+  "requires": [
+   "g:ir-a-plans",
+   "g:yo-irregular"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u20-guesses-and-predictions"
+  ],
+  "pcic": [
+   "gramatica:9.1.4"
+  ],
+  "placement": "teaching_choice",
+  "note": "In LatAm speech the -ré future is mostly for guesses. Forms are taught here through the guess use: one set of endings on the whole infinitive, twelve short stems (tendr-, pondr-, sabr-, habr-…). PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "futuro",
+   "gr-futuro-imperfecto-b1",
+   "gr-modalidad-b1"
+  ]
+ },
+ {
+  "id": "g:future-promises",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 186,
+  "title": "Promises, predictions and formal plans: te llamaré, lloverá, será difícil",
+  "es": "Te prometo que volveré. Mañana lloverá en Bogotá. No será fácil.",
+  "en": "I promise I'll come back. Tomorrow it will rain in Bogotá. It won't be easy.",
+  "requires": [
+   "g:future-conjecture"
+  ],
+  "contrasts": [
+   "x:ir-a-future"
+  ],
+  "serves": [
+   "d:u20-guesses-and-predictions"
+  ],
+  "pcic": [
+   "gramatica:9.1.4"
+  ],
+  "placement": "teaching_choice",
+  "note": "ir a stays the default for plans; -ré for promises, forecasts, written plans and the news. PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "fn-expresar-planes-b1",
+   "futuro",
+   "gr-futuro-imperfecto-b1",
+   "task-b1-planes"
+  ]
+ },
+ {
+  "id": "g:conditional",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 190,
+  "title": "Would: me encantaría, podrías, deberías — and yo que tú…",
+  "es": "Me encantaría ir. ¿Podrías ayudarme? Deberías descansar. Yo que tú, no firmaría.",
+  "en": "I'd love to go. Could you help me? You should rest. If I were you, I wouldn't sign.",
+  "requires": [
+   "g:future-conjecture"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u20-guesses-and-predictions"
+  ],
+  "pcic": [
+   "gramatica:9.1.5"
+  ],
+  "placement": "teaching_choice",
+  "note": "Same stems as the future. Unpacks c:me-gustaria and c:podria. SEQ new lesson(s): fn-cortesia-condicional-a1. PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "condicional",
+   "fn-aconsejar-a2",
+   "gr-condicional-simple-b1"
+  ]
+ },
+ {
+  "id": "g:subj-wanting",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 194,
+  "title": "Wanting someone else to do something: quiero que vengas",
+  "es": "Quiero que trabajes conmigo. Necesito que me ayudes. Prefiero que lo hablemos.",
+  "en": "I want you to work with me. I need you to help me. I'd rather we talk about it.",
+  "requires": [
+   "g:that-clauses",
+   "g:commands-usted",
+   "g:verb-infinitive"
+  ],
+  "contrasts": [
+   "x:inf-vs-que-subj"
+  ],
+  "serves": [
+   "d:u21-what-i-want-you-to-do"
+  ],
+  "pcic": [
+   "gramatica:9.2.1",
+   "gramatica:15.1.2"
+  ],
+  "placement": "teaching_choice",
+  "note": "The subjunctive enters with ONE trigger (wanting) and the \"opposite vowel\" forms they already know from usted commands. Different subject → que + subjunctive; same subject → infinitive. PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "fn-expresar-deseos-b1",
+   "gr-presente-subjuntivo-b1",
+   "gr-subordinadas-sustantivas-b1",
+   "presubj",
+   "task-b1-deseos"
+  ]
+ },
+ {
+  "id": "g:subj-irregulars",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 196,
+  "title": "The irregular \"wish\" forms: sea, vaya, tenga, haga, sepa, esté, haya",
+  "es": "Quiero que seas sincero. Necesito que vayas al banco. Espero que haya tiempo.",
+  "en": "I want you to be honest. I need you to go to the bank. I hope there's time.",
+  "requires": [
+   "g:subj-wanting"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u21-what-i-want-you-to-do"
+  ],
+  "pcic": [
+   "gramatica:9.2.1"
+  ],
+  "placement": "teaching_choice",
+  "note": "Built on the yo form (tengo → tenga) plus six true irregulars. SEQ new lesson(s): gr-formulas-subjuntivo-a2. PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "gr-presente-subjuntivo-b1",
+   "presubj"
+  ]
+ },
+ {
+  "id": "g:negative-commands",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 200,
+  "title": "Telling someone not to: no toques, no se preocupe, no lo hagan",
+  "es": "No toques eso. No se preocupe. No me digas. No lo firmen todavía.",
+  "en": "Don't touch that. Don't worry. You don't say. Don't sign it yet.",
+  "requires": [
+   "g:subj-irregulars",
+   "g:commands-with-pronouns"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u21-what-i-want-you-to-do"
+  ],
+  "pcic": [
+   "gramatica:9.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "Pronouns go BEFORE the verb in negative commands. PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "gr-imperativo-valores-b1",
+   "impneg"
+  ]
+ },
+ {
+  "id": "g:subj-wishes",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 204,
+  "title": "Wishing: ojalá, espero que, que te vaya bien",
+  "es": "Ojalá no llueva. Espero que te guste. ¡Que te mejores! ¡Que les vaya bien!",
+  "en": "I hope it doesn't rain. I hope you like it. Get well soon! Good luck, all of you!",
+  "requires": [
+   "g:subj-irregulars"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u22-good-news-bad-news"
+  ],
+  "pcic": [
+   "gramatica:9.2.1"
+  ],
+  "placement": "teaching_choice",
+  "note": "Unpacks c:ojala and c:que-te-mejores. SEQ new lesson(s): gr-formulas-subjuntivo-a2. PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "fn-buenos-deseos-a2",
+   "fn-buenos-deseos-b1",
+   "fn-espero-esperanza-b1"
+  ]
+ },
+ {
+  "id": "g:exclamations",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 206,
+  "title": "Reacting: ¡Qué bueno!, ¡Qué pena!, ¡Qué tan lindo!, ¡Cuánta gente!",
+  "es": "¡Qué bueno verte! ¡Qué casa tan bonita! ¡Cuánto tiempo!",
+  "en": "How good to see you! What a lovely house! Long time no see!",
+  "requires": [
+   "g:adjective-agreement"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u22-good-news-bad-news"
+  ],
+  "pcic": [
+   "gramatica:7.4"
+  ],
+  "placement": "pcic",
+  "note": "¡Qué + noun + tan/más + adj! Accent marks on exclamative qué/cuánto.",
+  "sources": [
+   "fn-felicitar-a2",
+   "fn-valorar-a2",
+   "gr-exclamativos-b2",
+   "gr-interrogativos-exclamativos-a2",
+   "task-a2-animo"
+  ]
+ },
+ {
+  "id": "g:diminutives",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 210,
+  "title": "Making it small and friendly: un tintico, ahorita, un momentico",
+  "es": "¿Me regala un tintico? Espérame un momentico. Ahorita voy.",
+  "en": "Could I have a little coffee? Wait a moment. I'm coming (in a bit).",
+  "requires": [
+   "g:gender-articles"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u22-good-news-bad-news"
+  ],
+  "pcic": [
+   "gramatica:1.1.2",
+   "morfologia"
+  ],
+  "placement": "pcic",
+  "note": "Colombia: -ico after t (momentico, ratico, gatico); -ito elsewhere. Warmth and politeness, not only size. ahorita = soon/now depending on region.",
+  "sources": [
+   "gr-sustantivos-especiales-a2"
+  ]
+ },
+ {
+  "id": "g:que-vs-cual",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 214,
+  "title": "What or which: ¿qué? vs ¿cuál?",
+  "es": "¿Cuál es tu número de celular? ¿Qué quieres tomar? ¿Cuál prefieres?",
+  "en": "What's your phone number? What would you like to drink? Which one do you prefer?",
+  "requires": [
+   "g:questions"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u23-sorting-things-out"
+  ],
+  "pcic": [
+   "gramatica:7.3"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-interrogativos-neutros-a2",
+   "gr-interrogativos-b1",
+   "gr-interrogativos-exclamativos-a2"
+  ]
+ },
+ {
+  "id": "g:indefinites",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 216,
+  "title": "Some, any, none: algún, alguien, algo — ningún, nadie, nada",
+  "es": "¿Hay algún problema? No tengo ninguna queja. ¿Alguien sabe algo?",
+  "en": "Is there any problem? I don't have any complaints. Does anyone know anything?",
+  "requires": [
+   "g:negation-words"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u23-sorting-things-out"
+  ],
+  "pcic": [
+   "gramatica:6.1",
+   "gramatica:7"
+  ],
+  "placement": "teaching_choice",
+  "note": "alguno/ninguno shorten before a masculine noun. PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "gr-cuantificadores-a2",
+   "gr-cuantificadores-b1",
+   "gr-indefinidos-negativos-b1"
+  ]
+ },
+ {
+  "id": "g:hace-que-desde",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 220,
+  "title": "How long it's been going on: hace un año que…, desde hace…, llevo…",
+  "es": "Hace tres meses que vivo aquí. Trabajo aquí desde hace un año. Llevo una hora esperando.",
+  "en": "I've lived here for three months. I've worked here for a year. I've been waiting for an hour.",
+  "requires": [
+   "g:hace-ago",
+   "g:estar-gerund"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u23-sorting-things-out"
+  ],
+  "pcic": [
+   "nociones_generales",
+   "gramatica:9.1.1"
+  ],
+  "placement": "pcic",
+  "note": "English present perfect → Spanish PRESENT here.",
+  "sources": [
+   "gr-oraciones-simples-a2",
+   "nt-inicio-duracion-fin-a2",
+   "nt-localizacion-tiempo-a2",
+   "nt-referencias-generales-a2"
+  ]
+ },
+ {
+  "id": "g:pero-sino",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 224,
+  "title": "But and but rather: pero vs sino (no es caro, sino barato)",
+  "es": "No es colombiano, sino canadiense. No quiero té sino café. Es caro, pero vale la pena.",
+  "en": "He isn't Colombian but Canadian. I don't want tea, I want coffee. It's expensive, but it's worth it.",
+  "requires": [
+   "g:negation-words"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u24-reasons-and-choices"
+  ],
+  "pcic": [
+   "gramatica:14.3"
+  ],
+  "placement": "pcic",
+  "note": "sino que before a verb.",
+  "sources": [
+   "dc-conectores-a1",
+   "gr-oraciones-simples-a2"
+  ]
+ },
+ {
+  "id": "g:aunque-indicative",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 226,
+  "title": "Even though: aunque + a fact",
+  "es": "Aunque es tarde, el café está lleno. Aunque no me gusta, lo hago.",
+  "en": "Even though it's late, the café is full. Even though I don't like it, I do it.",
+  "requires": [
+   "g:cause-result"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u24-reasons-and-choices"
+  ],
+  "pcic": [
+   "gramatica:15.3.9"
+  ],
+  "placement": "teaching_choice",
+  "note": "aunque + subjunctive (hypothetical) waits until B2 (g:subj-concessive). PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "gr-concesivas-b1"
+  ]
+ },
+ {
+  "id": "g:tanto-como",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 230,
+  "title": "As much as, as many as: tanto como, tanta gente, igual de",
+  "es": "Trabajo tanto como tú. No hay tantos clientes como antes. Es igual de caro.",
+  "en": "I work as much as you. There aren't as many customers as before. It's just as expensive.",
+  "requires": [
+   "g:comparatives"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u24-reasons-and-choices"
+  ],
+  "pcic": [
+   "gramatica:2.5",
+   "gramatica:15.3.8"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-comparativas-b1",
+   "gr-comparativo-a2",
+   "gr-comparativos-a2"
+  ]
+ },
+ {
+  "id": "g:le-doubling",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 234,
+  "title": "Saying who twice: le di el libro a Vale",
+  "es": "Le di la llave a Vale. ¿Le dijiste a tu mamá? A mí me parece bien.",
+  "en": "I gave the key to Vale. Did you tell your mom? I think it's fine.",
+  "requires": [
+   "g:indirect-objects"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u25-places-and-people-in-detail"
+  ],
+  "pcic": [
+   "gramatica:7.1.3"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-tematizacion-a2",
+   "gr-objeto-indirecto-a2"
+  ]
+ },
+ {
+  "id": "g:adverbs-mente",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 236,
+  "title": "How you do it: -mente (rápidamente, realmente) and other ways to say how",
+  "es": "Habla lentamente. Realmente no sé. Lo hizo rápido y bien.",
+  "en": "She speaks slowly. I really don't know. He did it quickly and well.",
+  "requires": [
+   "g:adjective-agreement"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u25-places-and-people-in-detail"
+  ],
+  "pcic": [
+   "gramatica:8.1"
+  ],
+  "placement": "pcic",
+  "note": "Feminine form + -mente; keeps the accent. In speech LatAm often uses the adjective (habla rápido).",
+  "sources": [
+   "gr-adverbios-circunstanciales-a2",
+   "gr-adverbios-lugar-tiempo-cantidad-a1",
+   "gr-adverbios-modo-cantidad-b1",
+   "gr-adverbios-nucleares-b2",
+   "gr-modificadores-adverbios-b1"
+  ]
+ },
+ {
+  "id": "g:reported-past-basic",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 240,
+  "title": "Telling what someone said: me dijo que estaba cansado, me preguntó si…",
+  "es": "Me dijo que estaba cansado. Le pregunté si quería venir. Me contó que se iba a Cali.",
+  "en": "He told me he was tired. I asked her if she wanted to come. She told me she was going to Cali.",
+  "requires": [
+   "g:that-clauses",
+   "g:pret-vs-imperfect"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u25-places-and-people-in-detail"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas:1.5.2",
+   "gramatica:15.1.2"
+  ],
+  "placement": "teaching_choice",
+  "note": "Only the easy shifts: present → imperfect, ir a → iba a. Backshift with había/vendría at B1. PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "fn-dar-informacion-a2",
+   "nt-expresion-verbal-a2"
+  ]
+ },
+ {
+  "id": "g:gerund-ways",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 244,
+  "title": "By doing, while doing: aprendí leyendo, sigue lloviendo, va mejorando",
+  "es": "Aprendí español viendo novelas. Sigue lloviendo. El café va mejorando.",
+  "en": "I learned Spanish by watching soaps. It's still raining. The café is getting better.",
+  "requires": [
+   "g:estar-gerund"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u26-telling-it-well"
+  ],
+  "pcic": [
+   "gramatica:9.4.2"
+  ],
+  "placement": "pcic",
+  "note": "Gerund = by/while -ing; never as a noun (Nadar es bueno, not *Nadando es bueno).",
+  "sources": [
+   "gr-formas-no-personales-b1",
+   "gr-gerundio-a2",
+   "gr-perifrasis-verbales-b1",
+   "nt-ciclo-accion-b1"
+  ]
+ },
+ {
+  "id": "g:time-sequence",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 246,
+  "title": "Keeping a story in order: primero, luego, al final, ese día, al día siguiente",
+  "es": "Ese día llegué tarde. Al día siguiente, todo cambió. Dos semanas después…",
+  "en": "That day I arrived late. The next day, everything changed. Two weeks later…",
+  "requires": [
+   "g:pret-vs-imperfect"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u26-telling-it-well"
+  ],
+  "pcic": [
+   "nociones_generales",
+   "tacticas_pragmaticas"
+  ],
+  "placement": "pcic",
+  "note": "Shifts deixis (hoy → ese día, mañana → al día siguiente); needed for reported speech.",
+  "sources": [
+   "dc-deixis-temporal-a2",
+   "dc-estructuradores-a2",
+   "gn-narrar-anecdota-a2",
+   "gr-adverbios-circunstanciales-a2",
+   "gr-adverbios-modo-cantidad-b1",
+   "nt-tiempo-referencias-futuro-pasado-presente-b1"
+  ]
+ },
+ {
+  "id": "g:acabar-de-ya-todavia",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 250,
+  "title": "Just, already, still, not yet: acabo de, ya, todavía, ya no",
+  "es": "Acabo de llegar. ¿Ya comiste? Todavía no. Ya no trabajo allá.",
+  "en": "I've just arrived. Have you eaten yet? Not yet. I don't work there any more.",
+  "requires": [
+   "g:perfecto-experience",
+   "g:preterite-er-ir"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u26-telling-it-well"
+  ],
+  "pcic": [
+   "nociones_generales"
+  ],
+  "placement": "pcic",
+  "note": "LatAm: ¿Ya comiste? (preterite) is the everyday form; unpacks c:ya-comiste.",
+  "sources": [
+   "gr-perifrasis-verbales-b1",
+   "nt-anterioridad-a2",
+   "nt-inicio-duracion-fin-a2"
+  ]
+ },
+ {
+  "id": "g:written-register-a2",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 254,
+  "title": "Messages, emails and reviews: openings, closings and usted in writing",
+  "es": "Estimada señora Ruiz: Le escribo para… Quedo atenta a su respuesta. Un abrazo,",
+  "en": "Dear Mrs Ruiz: I am writing to… I look forward to your reply. Hugs,",
+  "requires": [
+   "g:indirect-objects",
+   "g:conditional"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u27-writing-it-down"
+  ],
+  "pcic": [
+   "generos_discursivos",
+   "gramatica:7.1.1"
+  ],
+  "placement": "pcic",
+  "note": "Punctuation of letters (colon after the greeting), usted forms in formal mail.",
+  "sources": [
+   "fn-saludar-escrito-a2",
+   "gn-generos-escritos-a1",
+   "gn-generos-escritos-a2",
+   "task-a2-escribir"
+  ]
+ },
+ {
+  "id": "g:para-que",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 256,
+  "title": "So that: para + verb vs para que + someone else",
+  "es": "Te escribo para pedirte un favor. Te escribo para que me ayudes.",
+  "en": "I'm writing to ask you a favour. I'm writing so that you'll help me.",
+  "requires": [
+   "g:subj-irregulars",
+   "g:por-para-1"
+  ],
+  "contrasts": [
+   "x:para-inf-que"
+  ],
+  "serves": [
+   "d:u27-writing-it-down"
+  ],
+  "pcic": [
+   "gramatica:15.3.5"
+  ],
+  "placement": "teaching_choice",
+  "note": "Same rule as quiero / quiero que. PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "gr-oraciones-finales-a1",
+   "gr-sub-adv-finales-c1"
+  ]
+ },
+ {
+  "id": "g:subj-emotion-intro",
+  "kind": "grammar",
+  "band": "A2",
+  "priority": 260,
+  "title": "Reacting to what others do: me alegra que, me molesta que, qué bueno que",
+  "es": "Me alegra que estés aquí. Qué bueno que viniste… / que vinieras. Me molesta que llegue tarde.",
+  "en": "I'm glad you're here. How good that you came. It bothers me that he arrives late.",
+  "requires": [
+   "g:subj-wishes",
+   "g:parecer-quedar"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u27-writing-it-down"
+  ],
+  "pcic": [
+   "gramatica:9.2.1"
+  ],
+  "placement": "teaching_choice",
+  "note": "Same \"backwards\" verbs as gustar, now with que + subjunctive. Present-reference only. PCIC/programmes place this at B1; taught at A2 here.",
+  "sources": [
+   "fn-contento-encantado-b1",
+   "fn-me-alegro-b1",
+   "gr-exclamativos-b2",
+   "gr-ser-impersonal-b1",
+   "gr-subordinadas-sustantivas-b1"
+  ]
+ },
+ {
+  "id": "g:subj-opinion-negated",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 264,
+  "title": "I think so / I don't think so: creo que es… vs no creo que sea…",
+  "es": "Creo que tienes razón. No creo que tengas razón. Me parece que sí. No me parece que sea justo.",
+  "en": "I think you're right. I don't think you're right. I think so. I don't think it's fair.",
+  "requires": [
+   "g:subj-irregulars",
+   "g:that-clauses"
+  ],
+  "contrasts": [
+   "x:creo-no-creo"
+  ],
+  "serves": [
+   "d:u28-what-i-think"
+  ],
+  "pcic": [
+   "gramatica:9.2.1",
+   "gramatica:15.1.2"
+  ],
+  "placement": "pcic",
+  "note": "Big five. Statement = indicative; denial = subjunctive.",
+  "sources": [
+   "fn-dar-opinion-b1",
+   "gr-presente-subjuntivo-b1",
+   "gr-subordinadas-sustantivas-b1",
+   "task-b1-opinion"
+  ]
+ },
+ {
+  "id": "g:subj-value",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 267,
+  "title": "Judging: es importante que, es mejor que, es normal que, es una pena que",
+  "es": "Es importante que lo leas. Es mejor que esperemos. Es una pena que cierren.",
+  "en": "It's important that you read it. It's better for us to wait. It's a shame they're closing.",
+  "requires": [
+   "g:subj-opinion-negated"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u28-what-i-think"
+  ],
+  "pcic": [
+   "gramatica:9.2.1"
+  ],
+  "placement": "pcic",
+  "note": "Es verdad/cierto/obvio que + indicative (a fact) vs value + subjunctive.",
+  "sources": [
+   "fn-valorar-b1",
+   "gr-presente-subjuntivo-b1",
+   "gr-ser-impersonal-b1",
+   "nt-evaluacion-valor-b1",
+   "nt-exito-utilidad-importancia-b1"
+  ]
+ },
+ {
+  "id": "g:lo-adjective",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 270,
+  "title": "The good thing, the worst part: lo bueno, lo malo, lo mejor es que",
+  "es": "Lo bueno es que tenemos clientes. Lo peor fue la espera. Lo importante es seguir.",
+  "en": "The good thing is we have customers. The worst part was the wait. What matters is to keep going.",
+  "requires": [
+   "g:relatives-donde-lo-que"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u28-what-i-think"
+  ],
+  "pcic": [
+   "gramatica:3.1"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-intensificacion-discurso-b1",
+   "gr-articulo-definido-valores-b2"
+  ]
+ },
+ {
+  "id": "g:subj-doubt",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 274,
+  "title": "Doubt and possibility: dudo que, es posible que, puede que",
+  "es": "Dudo que Altamira cambie de idea. Es posible que llueva. Puede que tengas razón.",
+  "en": "I doubt Altamira will change his mind. It might rain. You may be right.",
+  "requires": [
+   "g:subj-opinion-negated"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u29-agreeing-and-arguing"
+  ],
+  "pcic": [
+   "gramatica:9.2.1"
+  ],
+  "placement": "pcic",
+  "note": "subjunctive refers to present or future here.",
+  "sources": [
+   "fn-certeza-evidencia-b1",
+   "fn-mostrar-escepticismo-b1",
+   "fn-posibilidad-b1",
+   "gr-subordinadas-sustantivas-b1"
+  ]
+ },
+ {
+  "id": "g:quizas-a-lo-mejor",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 277,
+  "title": "Maybe: quizás, tal vez + either mood; a lo mejor + fact form",
+  "es": "Quizás venga mañana. A lo mejor está enfermo. Tal vez tienes razón.",
+  "en": "Maybe he'll come tomorrow. Maybe he's sick. Maybe you're right.",
+  "requires": [
+   "g:subj-doubt"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u29-agreeing-and-arguing"
+  ],
+  "pcic": [
+   "gramatica:9.2.1",
+   "gramatica:8.4"
+  ],
+  "placement": "pcic",
+  "note": "a lo mejor always indicative; quizás/tal vez: subjunctive = less sure.",
+  "sources": [
+   "fn-posibilidad-b1",
+   "gr-modalidad-b1"
+  ]
+ },
+ {
+  "id": "g:conditional-past-guess",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 280,
+  "title": "Guessing about the past: serían las diez, tendría veinte años",
+  "es": "Serían las diez cuando llegó. Tendría unos veinte años. ¿Por qué lo haría?",
+  "en": "It must have been about ten when he arrived. She'd have been about twenty. Why would he have done it?",
+  "requires": [
+   "g:future-conjecture",
+   "g:conditional"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u29-agreeing-and-arguing"
+  ],
+  "pcic": [
+   "gramatica:9.1.5"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "condicional",
+   "gr-condicional-simple-b1"
+  ]
+ },
+ {
+  "id": "g:subj-emotion",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 284,
+  "title": "Feelings about what others do, fully: me da miedo que, me sorprende que, siento que",
+  "es": "Me da miedo que vendan el edificio. Me sorprende que no lo sepas. Siento que te sientas así.",
+  "en": "I'm scared they'll sell the building. I'm surprised you don't know. I'm sorry you feel that way.",
+  "requires": [
+   "g:subj-emotion-intro"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u30-feelings"
+  ],
+  "pcic": [
+   "gramatica:9.2.1"
+  ],
+  "placement": "pcic",
+  "note": "Same subject → infinitive (me alegra verte).",
+  "sources": [
+   "fn-empatia-b1",
+   "fn-enfado-indignacion-b1",
+   "fn-me-alegro-b1",
+   "fn-miedo-ansiedad-preocupacion-b1",
+   "fn-sorpresa-extraneza-b1"
+  ]
+ },
+ {
+  "id": "g:verbs-of-change",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 287,
+  "title": "Becoming: ponerse nervioso, quedarse callado, volverse famoso, hacerse rico",
+  "es": "Me puse rojo. Se quedó callado. Se volvió muy serio. Quiere hacerse médico.",
+  "en": "I went red. He went quiet. He became very serious. She wants to become a doctor.",
+  "requires": [
+   "g:reflexive-routine",
+   "g:ser-estar-adjectives"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u30-feelings"
+  ],
+  "pcic": [
+   "gramatica:12.1"
+  ],
+  "placement": "teaching_choice",
+  "note": "ponerse = sudden mood/colour; quedarse = result; volverse = character; hacerse = effort/career. PCIC/programmes place this at B2; taught at B1 here.",
+  "sources": [
+   "gr-nucleo-verbal-copulativos-b2",
+   "nt-cambio-a2",
+   "nt-cambio-c1"
+  ]
+ },
+ {
+  "id": "g:se-meaning-change",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 290,
+  "title": "When \"se\" changes the meaning: ir/irse, dormir/dormirse, quedar/quedarse",
+  "es": "Me voy. Me dormí en la reunión. Nos quedamos en casa. Quedamos a las seis.",
+  "en": "I'm off. I fell asleep in the meeting. We stayed at home. We agreed to meet at six.",
+  "requires": [
+   "g:reflexive-routine"
+  ],
+  "contrasts": [
+   "x:ir-irse"
+  ],
+  "serves": [
+   "d:u30-feelings"
+  ],
+  "pcic": [
+   "gramatica:7.1.4"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-se-multiuso-b1",
+   "nt-movimiento-estabilidad-a2"
+  ]
+ },
+ {
+  "id": "g:pluperfect",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 294,
+  "title": "Had already happened: había llegado, ya se habían ido",
+  "es": "Cuando llegué, Vale ya se había ido. Nunca había visto tanta gente.",
+  "en": "When I arrived, Vale had already left. I had never seen so many people.",
+  "requires": [
+   "g:pret-vs-imperfect",
+   "g:perfecto-experience"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u31-a-longer-story"
+  ],
+  "pcic": [
+   "gramatica:9.1.8"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-pluscuamperfecto-b1",
+   "plusc",
+   "task-b1-relato"
+  ]
+ },
+ {
+  "id": "g:narrative-pasts",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 297,
+  "title": "Telling a story with all your pasts: what happened, what it was like, what had happened before",
+  "es": "Era domingo. Tomás abrió la caja que había encontrado y vio una carta.",
+  "en": "It was Sunday. Tomás opened the box he had found and saw a letter.",
+  "requires": [
+   "g:pluperfect"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u31-a-longer-story"
+  ],
+  "pcic": [
+   "gramatica:9.1.2",
+   "gramatica:9.1.3",
+   "gramatica:9.1.8"
+  ],
+  "placement": "pcic",
+  "note": "Foreground/background; the LatAm perfecto only for open-ended experience. SEQ new lesson(s): gr-pasados-repaso-b1.",
+  "sources": [
+   "fn-concluir-relato-b1",
+   "fn-introducir-tema-relato-b1",
+   "gn-narrar-estructura-b1"
+  ]
+ },
+ {
+  "id": "g:reported-backshift",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 300,
+  "title": "Reporting further back: dijo que había llamado, que vendría",
+  "es": "Dijo que había llamado tres veces. Prometió que vendría. Me explicó que no lo sabía.",
+  "en": "She said she had called three times. He promised he would come. He explained that he didn't know.",
+  "requires": [
+   "g:reported-past-basic",
+   "g:pluperfect",
+   "g:conditional"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u31-a-longer-story"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas:1.5.2"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-cita-b2",
+   "nt-expresion-verbal-a2",
+   "nt-reflexion-expresion-b1"
+  ]
+ },
+ {
+  "id": "g:subj-influence",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 304,
+  "title": "Advising and asking: te recomiendo que, te pido que, le aconsejo que",
+  "es": "Te recomiendo que hables con un abogado. Le pido que me escuche. No dejes que te asuste.",
+  "en": "I recommend you talk to a lawyer. I'm asking you to listen to me. Don't let him scare you.",
+  "requires": [
+   "g:subj-wanting",
+   "g:indirect-objects"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u32-advice-and-plans"
+  ],
+  "pcic": [
+   "gramatica:9.2.1"
+  ],
+  "placement": "pcic",
+  "note": "Indirect object + que + subjunctive.",
+  "sources": [
+   "fn-aconsejar-b1",
+   "fn-proponer-sugerir-b1",
+   "gr-subordinadas-sustantivas-b2",
+   "task-b1-consejo"
+  ]
+ },
+ {
+  "id": "g:subj-cuando-future",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 307,
+  "title": "When it happens (it hasn't yet): cuando llegues, en cuanto sepa, hasta que vuelva",
+  "es": "Cuando llegues, llámame. En cuanto sepa algo, te aviso. No me voy hasta que vuelva.",
+  "en": "When you arrive, call me. As soon as I know anything, I'll let you know. I'm not leaving until he comes back.",
+  "requires": [
+   "g:subj-irregulars",
+   "g:cuando-indicative"
+  ],
+  "contrasts": [
+   "x:cuando-ind-subj"
+  ],
+  "serves": [
+   "d:u32-advice-and-plans"
+  ],
+  "pcic": [
+   "gramatica:15.3.1"
+  ],
+  "placement": "pcic",
+  "note": "antes de que always subjunctive.",
+  "sources": [
+   "gr-temporales-b1"
+  ]
+ },
+ {
+  "id": "g:subj-purpose-full",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 310,
+  "title": "Purpose and plans for others: para que, sin que, antes de que",
+  "es": "Lo dejo aquí para que lo veas. Salió sin que nadie lo viera… / sin que nadie lo note.",
+  "en": "I'll leave it here so you can see it. He left without anyone noticing.",
+  "requires": [
+   "g:para-que",
+   "g:subj-cuando-future"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u32-advice-and-plans"
+  ],
+  "pcic": [
+   "gramatica:15.3.5"
+  ],
+  "placement": "pcic",
+  "note": "Present-tense frames only at this point.",
+  "sources": [
+   "gr-oraciones-finales-a1",
+   "gr-sub-adv-finales-c1"
+  ]
+ },
+ {
+  "id": "g:subj-relative",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 314,
+  "title": "Looking for one that…: busco un local que tenga ventanas",
+  "es": "Buscamos un local que tenga cocina. ¿Conoces a alguien que sepa de leyes? No hay nada que podamos hacer.",
+  "en": "We're looking for a place that has a kitchen. Do you know anyone who knows about law? There's nothing we can do.",
+  "requires": [
+   "g:relatives-donde-lo-que",
+   "g:subj-irregulars"
+  ],
+  "contrasts": [
+   "x:relative-ind-subj"
+  ],
+  "serves": [
+   "d:u33-looking-for-something"
+  ],
+  "pcic": [
+   "gramatica:15.2"
+  ],
+  "placement": "pcic",
+  "note": "Known thing = indicative; unknown/non-existent = subjunctive.",
+  "sources": [
+   "gr-relativas-b1",
+   "gr-subordinadas-relativas-tipos-b2"
+  ]
+ },
+ {
+  "id": "g:relatives-prepositions",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 317,
+  "title": "Relatives after a preposition: el local en el que, la gente con la que, a quien",
+  "es": "Es el edificio en el que nació mi abuela. La persona a quien le escribí no contestó.",
+  "en": "It's the building my grandmother was born in. The person I wrote to didn't answer.",
+  "requires": [
+   "g:relatives-donde-lo-que"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u33-looking-for-something"
+  ],
+  "pcic": [
+   "gramatica:7.2",
+   "gramatica:15.2"
+  ],
+  "placement": "teaching_choice",
+  "note": "Spanish never strands the preposition. PCIC/programmes place this at B2; taught at B1 here.",
+  "sources": [
+   "gr-el-que-relativos-b2",
+   "gr-quien-quienes-b2",
+   "gr-relativo-donde-b2"
+  ]
+ },
+ {
+  "id": "g:cada-cualquier",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 320,
+  "title": "Each, any at all: cada, cualquier, cualquiera, todo/toda",
+  "es": "Cada mesa tiene su historia. Cualquier persona puede venir. Me sirve cualquiera.",
+  "en": "Each table has its story. Anyone can come. Any one will do.",
+  "requires": [
+   "g:quantifiers"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u33-looking-for-something"
+  ],
+  "pcic": [
+   "gramatica:6.1"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-cuantificadores-b1",
+   "gr-cuantificadores-numerales-cualquier-b2",
+   "gr-cuantificadores-propios-c1",
+   "gr-indefinidos-negativos-b1"
+  ]
+ },
+ {
+  "id": "g:se-accidental",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 324,
+  "title": "It just happened to me: se me olvidó, se me cayó, se nos dañó",
+  "es": "Se me olvidaron las llaves. Se le cayó el celular. Se nos dañó la nevera.",
+  "en": "I forgot my keys. She dropped her phone. Our fridge broke down.",
+  "requires": [
+   "g:indirect-objects",
+   "g:se-impersonal"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u34-mishaps"
+  ],
+  "pcic": [
+   "gramatica:7.1.4"
+  ],
+  "placement": "teaching_choice",
+  "note": "The thing is the subject; the person is the indirect object. Very common in Colombia. PCIC/programmes place this at B2; taught at B1 here.",
+  "sources": [
+   "gr-posesivo-dativo-b1",
+   "gr-pronombre-personal-b2"
+  ]
+ },
+ {
+  "id": "g:possessive-dative",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 327,
+  "title": "Body parts and belongings without \"my\": me duele la espalda, le robaron el celular",
+  "es": "Me corté el dedo. Le robaron la billetera. Me lavo el pelo.",
+  "en": "I cut my finger. They stole his wallet. I wash my hair.",
+  "requires": [
+   "g:se-accidental"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u34-mishaps"
+  ],
+  "pcic": [
+   "gramatica:7.1.3"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "fn-sensaciones-fisicas-b1",
+   "gr-articulo-definido-valores-a2",
+   "gr-objeto-indirecto-a2",
+   "gr-posesivo-dativo-b1"
+  ]
+ },
+ {
+  "id": "g:subj-perfect",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 330,
+  "title": "Hoping or doubting it has happened: espero que hayas llegado bien",
+  "es": "Espero que no se haya perdido. No creo que lo hayan leído. Me alegra que hayas venido.",
+  "en": "I hope he hasn't got lost. I don't think they've read it. I'm glad you came.",
+  "requires": [
+   "g:subj-doubt",
+   "g:perfecto-experience"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u34-mishaps"
+  ],
+  "pcic": [
+   "gramatica:9.2.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "In LatAm this also covers the recent finished past under a trigger (Me alegra que hayas venido). PCIC/programmes place this at B2; taught at B1 here.",
+  "sources": [
+   "gr-perfsubj-valores-b2",
+   "perfsubj"
+  ]
+ },
+ {
+  "id": "g:por-para-2",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 334,
+  "title": "For and by, part 2: por + time/means/exchange, para + opinion/comparison",
+  "es": "Lo tomas tres veces por día. Para mí, es grave. Para ser lunes, hay mucha gente. Lo cambié por otro.",
+  "en": "You take it three times a day. For me, it's serious. For a Monday, there are a lot of people. I swapped it for another.",
+  "requires": [
+   "g:por-para-1"
+  ],
+  "contrasts": [
+   "x:por-para"
+  ],
+  "serves": [
+   "d:u35-at-the-doctor"
+  ],
+  "pcic": [
+   "gramatica:12.2.4"
+  ],
+  "placement": "pcic",
+  "note": "SEQ new lesson(s): gr-por-para-b1.",
+  "sources": [
+   "por-para"
+  ]
+ },
+ {
+  "id": "g:impersonal-obligation",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 337,
+  "title": "General advice and rules: hay que, se debe, uno tiene que, conviene",
+  "es": "Hay que tomar mucha agua. No se debe fumar aquí. Uno nunca sabe.",
+  "en": "You need to drink lots of water. Smoking isn't allowed here. You never know.",
+  "requires": [
+   "g:se-impersonal",
+   "g:tener-que-hay-que"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u35-at-the-doctor"
+  ],
+  "pcic": [
+   "gramatica:7.1.4",
+   "nociones_generales"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "fn-falta-obligacion-b2",
+   "fn-obligacion-necesidad-c1",
+   "nt-necesidad-obligacion-b1"
+  ]
+ },
+ {
+  "id": "g:deber-modal",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 340,
+  "title": "Should, must, must be: debes, deberías, debe de ser",
+  "es": "Debes descansar. Deberías ir al médico. Debe de estar cansada.",
+  "en": "You must rest. You should see a doctor. She must be tired.",
+  "requires": [
+   "g:conditional"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u35-at-the-doctor"
+  ],
+  "pcic": [
+   "gramatica:12.1"
+  ],
+  "placement": "pcic",
+  "note": "deber de = conjecture (formal); everyday speech often uses deber for both — accept both, teach the distinction.",
+  "sources": [
+   "fn-aconsejar-b1",
+   "gr-modalidad-b1",
+   "gr-nucleo-verbal-copulativos-b2"
+  ]
+ },
+ {
+  "id": "g:passive-se",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 344,
+  "title": "Things done (who did it doesn't matter): se vendieron, se construyó, se firmarán",
+  "es": "Se vendieron todos los almuerzos. El edificio se construyó en 1920. Se firmará el lunes.",
+  "en": "All the lunches were sold. The building was built in 1920. It will be signed on Monday.",
+  "requires": [
+   "g:se-impersonal"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u36-work-and-money"
+  ],
+  "pcic": [
+   "gramatica:7.1.4"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-pronombre-personal-b2",
+   "gr-se-multiuso-b1"
+  ]
+ },
+ {
+  "id": "g:comparatives-advanced",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 347,
+  "title": "Comparing in numbers and degrees: el doble, más de la mitad, cada vez más, cuanto más…",
+  "es": "Ganamos el doble que el año pasado. Cada vez hay más turistas. Cuanto más trabajo, menos duermo.",
+  "en": "We earn twice as much as last year. There are more and more tourists. The more I work, the less I sleep.",
+  "requires": [
+   "g:tanto-como"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u36-work-and-money"
+  ],
+  "pcic": [
+   "gramatica:2.5",
+   "gramatica:15.3.8"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-comparativas-b1",
+   "gr-cuantificadores-numerales-cualquier-b2",
+   "gr-modificadores-adverbios-b1",
+   "nt-aumento-proporcion-grado-b1",
+   "nt-cantidad-numerica-relativa-b1"
+  ]
+ },
+ {
+  "id": "g:consequence-connectors",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 350,
+  "title": "So, therefore, so much that: por lo tanto, de modo que, tan… que",
+  "es": "Las ventas bajaron; por lo tanto, cerramos los lunes. Estaba tan cansado que se durmió.",
+  "en": "Sales fell; therefore we close on Mondays. He was so tired that he fell asleep.",
+  "requires": [
+   "g:cause-result"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u36-work-and-money"
+  ],
+  "pcic": [
+   "gramatica:15.3.7"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-marcadores-discurso-b1",
+   "gr-consecutivas-b1"
+  ]
+ },
+ {
+  "id": "g:questions-prepositions",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 354,
+  "title": "Questions with a preposition first: ¿con quién?, ¿de qué?, ¿para qué?, ¿a qué hora?",
+  "es": "¿Con quién hablaste? ¿De qué se trata? ¿Para qué sirve esto?",
+  "en": "Who did you talk to? What's it about? What's this for?",
+  "requires": [
+   "g:que-vs-cual"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u37-keeping-a-conversation-going"
+  ],
+  "pcic": [
+   "gramatica:7.3"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-interrogativos-b1",
+   "gr-orden-interrogativos-b2"
+  ]
+ },
+ {
+  "id": "g:reported-requests",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 357,
+  "title": "Passing on requests: dice que vengas, me pide que lo llame",
+  "es": "Vale dice que la llames. Mi mamá me pide que vaya el domingo. Dile que espere.",
+  "en": "Vale says to call her. My mom is asking me to go on Sunday. Tell him to wait.",
+  "requires": [
+   "g:subj-influence",
+   "g:reported-past-basic"
+  ],
+  "contrasts": [
+   "x:decir-que-ind-subj"
+  ],
+  "serves": [
+   "d:u37-keeping-a-conversation-going"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas:1.5.2",
+   "gramatica:9.2.1"
+  ],
+  "placement": "pcic",
+  "note": "decir que + indicative = report; + subjunctive = request.",
+  "sources": [
+   "fn-pedir-ayuda-b1",
+   "fn-responder-orden-b1"
+  ]
+ },
+ {
+  "id": "g:indirect-questions",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 360,
+  "title": "Asking politely and reporting questions: ¿sabe si…?, no sé dónde…, quería saber cuándo…",
+  "es": "¿Sabe si está abierto? No sé dónde lo dejé. Quería saber cuánto cuesta.",
+  "en": "Do you know if it's open? I don't know where I left it. I wanted to know how much it costs.",
+  "requires": [
+   "g:reported-past-basic",
+   "g:questions-prepositions"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u37-keeping-a-conversation-going"
+  ],
+  "pcic": [
+   "gramatica:15.1.2"
+  ],
+  "placement": "pcic",
+  "note": "Accent stays on the question word.",
+  "sources": [
+   "fn-conocimiento-desconocimiento-b1",
+   "fn-pedir-informacion-b1",
+   "gr-formas-no-personales-b1"
+  ]
+ },
+ {
+  "id": "g:passive-ser",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 364,
+  "title": "The news voice: fue construido, serán juzgados, está prohibido",
+  "es": "El edificio fue declarado patrimonio. Los responsables serán investigados.",
+  "en": "The building was declared heritage. Those responsible will be investigated.",
+  "requires": [
+   "g:passive-se",
+   "g:estar-participle"
+  ],
+  "contrasts": [
+   "x:ser-estar-participle"
+  ],
+  "serves": [
+   "d:u38-in-the-news"
+  ],
+  "pcic": [
+   "gramatica:12.1"
+  ],
+  "placement": "teaching_choice",
+  "note": "Mostly written/news; speech prefers se or ellos. PCIC/programmes place this at B2; taught at B1 here.",
+  "sources": [
+   "gn-expositiva-b2",
+   "gr-formas-no-personales-b2",
+   "gr-nucleo-verbal-c1"
+  ]
+ },
+ {
+  "id": "g:causal-advanced",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 367,
+  "title": "Giving causes in writing: ya que, puesto que, debido a, a causa de, por + verb",
+  "es": "Ya que estás aquí, ayúdame. Cerraron debido a la lluvia. La multaron por no tener permiso.",
+  "en": "Since you're here, help me. They closed because of the rain. They fined her for not having a permit.",
+  "requires": [
+   "g:cause-result"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u38-in-the-news"
+  ],
+  "pcic": [
+   "gramatica:15.3.4"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-causales-b1",
+   "gr-sub-adv-causales-c1"
+  ]
+ },
+ {
+  "id": "g:concession-despite",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 370,
+  "title": "Despite: a pesar de, a pesar de que, sin embargo, aun así",
+  "es": "A pesar de la lluvia, vinieron. Es caro; sin embargo, vale la pena. Aun así, no firmo.",
+  "en": "Despite the rain, they came. It's expensive; however, it's worth it. Even so, I'm not signing.",
+  "requires": [
+   "g:aunque-indicative"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u38-in-the-news"
+  ],
+  "pcic": [
+   "gramatica:15.3.9"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-marcadores-discurso-b1",
+   "fn-contraargumento-b1",
+   "gr-concesivas-b1"
+  ]
+ },
+ {
+  "id": "g:infinitive-subject",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 374,
+  "title": "Doing things as subjects: fumar es malo, me encanta cocinar, el no saber",
+  "es": "Cocinar para tanta gente no es fácil. Me molesta tener que esperar.",
+  "en": "Cooking for so many people isn't easy. Having to wait bothers me.",
+  "requires": [
+   "g:gustar-full",
+   "g:verb-infinitive"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u39-joining-ideas"
+  ],
+  "pcic": [
+   "gramatica:9.4.1"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-formas-no-personales-b1",
+   "gr-formas-no-personales-c1",
+   "gr-infinitivo-usos-a1",
+   "gr-sub-sustantivas-c1",
+   "gr-subordinadas-sustantivas-a1",
+   "gr-subordinadas-sustantivas-b1"
+  ]
+ },
+ {
+  "id": "g:discourse-structure",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 377,
+  "title": "Organising a text: en primer lugar, además, por un lado… por otro, en resumen",
+  "es": "En primer lugar, el local es nuestro. Además, el barrio nos apoya. En resumen, no vendemos.",
+  "en": "Firstly, the premises are ours. Besides, the neighbourhood supports us. In short, we're not selling.",
+  "requires": [
+   "g:consequence-connectors"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u39-joining-ideas"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas",
+   "generos_discursivos"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-estructuradores-a2",
+   "dc-marcadores-discurso-b1",
+   "gn-composicion-escrita-b1",
+   "gn-exponer-tema-b1"
+  ]
+ },
+ {
+  "id": "g:referring-back",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 380,
+  "title": "Not repeating yourself in a text: este, ese, aquel, dicho, el mismo, lo anterior",
+  "es": "El alcalde y el concejal hablaron; este dijo que… Dicho proyecto fue aprobado.",
+  "en": "The mayor and the councillor spoke; the latter said… The said project was approved.",
+  "requires": [
+   "g:demonstratives"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u39-joining-ideas"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-mantenimiento-referente-a2",
+   "dc-mantenimiento-referente-b1",
+   "gr-demostrativos-c1",
+   "gr-demostrativos-valores-a2"
+  ]
+ },
+ {
+  "id": "g:imperfect-subj",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 384,
+  "title": "The \"if only\" forms: fuera, tuviera, pudiera (from the past form)",
+  "es": "Si tuviera plata, compraría el edificio. Ojalá pudiera ayudarte.",
+  "en": "If I had money, I'd buy the building. I wish I could help you.",
+  "requires": [
+   "g:preterite-spelling-stem",
+   "g:conditional",
+   "g:subj-wishes"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u40-if-things-were-different"
+  ],
+  "pcic": [
+   "gramatica:9.2.2"
+  ],
+  "placement": "teaching_choice",
+  "note": "Built from ellos preterite (tuvieron → tuviera). -ra for production; -se recognised (g:se-form-recognition). PCIC/programmes place this at B2; taught at B1 here.",
+  "sources": [
+   "gr-impsubj-valores-b2",
+   "impsubj"
+  ]
+ },
+ {
+  "id": "g:si-hypothetical",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 387,
+  "title": "If things were different: si fuera… sería…",
+  "es": "Si fuera tú, hablaría con ella. Si no lloviera, abriríamos la terraza.",
+  "en": "If I were you, I'd talk to her. If it weren't raining, we'd open the terrace.",
+  "requires": [
+   "g:imperfect-subj",
+   "g:si-present"
+  ],
+  "contrasts": [
+   "x:si-real-unreal"
+  ],
+  "serves": [
+   "d:u40-if-things-were-different"
+  ],
+  "pcic": [
+   "gramatica:15.3.6"
+  ],
+  "placement": "teaching_choice",
+  "note": "Never conditional after si (*si tendría). PCIC/programmes place this at B2; taught at B1 here.",
+  "sources": [
+   "gr-condicionales-b1",
+   "task-b1-hipotesis"
+  ]
+ },
+ {
+  "id": "g:como-si",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 390,
+  "title": "As if: como si fuera, como si nada",
+  "es": "Habla como si fuera el dueño. Siguió como si nada.",
+  "en": "He talks as if he were the owner. She carried on as if nothing had happened.",
+  "requires": [
+   "g:imperfect-subj"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u40-if-things-were-different"
+  ],
+  "pcic": [
+   "gramatica:15.3.3"
+  ],
+  "placement": "teaching_choice",
+  "note": "PCIC/programmes place this at B2; taught at B1 here.",
+  "sources": [
+   "gr-sub-adv-lugar-modo-c1",
+   "gr-subordinadas-modo-b2"
+  ]
+ },
+ {
+  "id": "g:subj-past-triggers",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 394,
+  "title": "Wanting, asking, feeling — in the past: quería que, me pidió que, me alegró que",
+  "es": "Quería que vinieras. Me pidió que la llamara. Me alegró que ganaran.",
+  "en": "I wanted you to come. She asked me to call her. I was glad they won.",
+  "requires": [
+   "g:imperfect-subj",
+   "g:subj-influence"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u41-wishes-and-regrets"
+  ],
+  "pcic": [
+   "gramatica:9.2.2"
+  ],
+  "placement": "teaching_choice",
+  "note": "Sequence of tenses: past trigger → -ra form. PCIC/programmes place this at B2; taught at B1 here.",
+  "sources": [
+   "gr-impsubj-valores-b2",
+   "impsubj"
+  ]
+ },
+ {
+  "id": "g:ojala-past",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 397,
+  "title": "Wishing things were different: ojalá + fuera / tuviera",
+  "es": "Ojalá estuvieras aquí. Ojalá fuera tan fácil. Quisiera tener más tiempo.",
+  "en": "I wish you were here. If only it were that easy. I wish I had more time.",
+  "requires": [
+   "g:imperfect-subj"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u41-wishes-and-regrets"
+  ],
+  "pcic": [
+   "gramatica:9.2.2"
+  ],
+  "placement": "teaching_choice",
+  "note": "ojalá + present (hope) vs + -ra (wish). PCIC/programmes place this at B2; taught at B1 here.",
+  "sources": [
+   "fn-deseos-b2",
+   "fn-expresar-deseos-b1"
+  ]
+ },
+ {
+  "id": "g:reported-commands-past",
+  "kind": "grammar",
+  "band": "B1",
+  "priority": 400,
+  "title": "Reporting orders and requests: me dijo que fuera, les pidió que esperaran",
+  "es": "Me dijo que fuera a la reunión. Les pidió que esperaran afuera.",
+  "en": "He told me to go to the meeting. She asked them to wait outside.",
+  "requires": [
+   "g:subj-past-triggers",
+   "g:reported-requests"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u41-wishes-and-regrets"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas:1.5.2"
+  ],
+  "placement": "teaching_choice",
+  "note": "PCIC/programmes place this at B2; taught at B1 here.",
+  "sources": [
+   "dc-cita-b2",
+   "dc-estilo-indirecto-c1"
+  ]
+ },
+ {
+  "id": "g:register-ladder",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 404,
+  "title": "Saying the same thing five ways: from \"pásame eso\" to \"le agradecería que…\"",
+  "es": "Pásame la sal. / ¿Me pasas la sal? / ¿Me podría pasar la sal? / Le agradecería que me enviara el documento.",
+  "en": "Pass me the salt. / Could you pass the salt? / Would you be so kind… / I would be grateful if you sent me the document.",
+  "requires": [
+   "g:subj-past-triggers",
+   "g:conditional"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u42-one-thing-five-ways"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas",
+   "funciones"
+  ],
+  "placement": "pcic",
+  "note": "Includes usted-to-tú negotiation and Colombian over-politeness (¿será que me puede…?).",
+  "sources": [
+   "dc-atenuacion-b2",
+   "fn-pedir-ayuda-b2",
+   "fn-pedir-permiso-b2",
+   "task-b2-registro"
+  ]
+ },
+ {
+  "id": "g:softening",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 409,
+  "title": "Softening: quería pedirle, ¿será que…?, un poquito, me imagino que",
+  "es": "Quería preguntarle algo. ¿Será que me puede ayudar? Me imagino que está ocupado.",
+  "en": "I wanted to ask you something. Could you possibly help me? I imagine you're busy.",
+  "requires": [
+   "g:register-ladder"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u42-one-thing-five-ways"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas:2"
+  ],
+  "placement": "pcic",
+  "note": "Imperfect of politeness, future of softening (¿será que…?, very Colombian).",
+  "sources": [
+   "dc-atenuacion-1apersona-a2",
+   "dc-atenuacion-acto-indirecto-a2",
+   "dc-atenuacion-b1",
+   "dc-atenuacion-b2",
+   "gr-impsubj-valores-b2"
+  ]
+ },
+ {
+  "id": "g:pluperfect-subj",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 414,
+  "title": "Had it happened: hubiera llegado, hubiéramos sabido",
+  "es": "Ojalá lo hubiera sabido. No creí que hubieran vendido.",
+  "en": "I wish I had known. I didn't believe they had sold.",
+  "requires": [
+   "g:imperfect-subj",
+   "g:pluperfect"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u43-what-would-have-happened"
+  ],
+  "pcic": [
+   "gramatica:9.2.4"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-impsubj-valores-b2",
+   "gr-pluscuamsubj-b2"
+  ]
+ },
+ {
+  "id": "g:conditional-perfect",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 417,
+  "title": "Would have: habría ido, lo habría hecho",
+  "es": "Yo habría dicho que no. ¿Qué habrías hecho tú?",
+  "en": "I would have said no. What would you have done?",
+  "requires": [
+   "g:conditional",
+   "g:pluperfect"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u43-what-would-have-happened"
+  ],
+  "pcic": [
+   "gramatica:9.1.10"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "condperf",
+   "gr-condicional-compuesto-b2"
+  ]
+ },
+ {
+  "id": "g:si-past-unreal",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 421,
+  "title": "If it had happened: si hubiera sabido, habría venido (and mixed: hoy estaría…)",
+  "es": "Si hubiera sabido, habría venido antes. Si no hubiéramos firmado, hoy estaríamos tranquilos.",
+  "en": "If I had known, I would have come sooner. If we hadn't signed, we'd be fine today.",
+  "requires": [
+   "g:pluperfect-subj",
+   "g:conditional-perfect",
+   "g:si-hypothetical"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u43-what-would-have-happened"
+  ],
+  "pcic": [
+   "gramatica:15.3.6"
+  ],
+  "placement": "pcic",
+  "note": "Colloquial LatAm also uses hubiera… hubiera (si hubiera sabido, hubiera venido): accept it.",
+  "sources": [
+   "gr-condicional-compuesto-b2",
+   "gr-pluscuamsubj-b2",
+   "gr-sub-adv-condicionales-c1",
+   "task-b2-hipotesis"
+  ]
+ },
+ {
+  "id": "g:subj-concessive",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 424,
+  "title": "Even if: aunque llueva, por más que insista",
+  "es": "Aunque me ofrezcan un millón, no vendo. Por más que insista, no voy a firmar.",
+  "en": "Even if they offer me a million, I'm not selling. However much he insists, I'm not going to sign.",
+  "requires": [
+   "g:aunque-indicative",
+   "g:subj-irregulars"
+  ],
+  "contrasts": [
+   "x:aunque-ind-subj"
+  ],
+  "serves": [
+   "d:u44-making-the-case"
+  ],
+  "pcic": [
+   "gramatica:15.3.9"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "fn-contraargumento-b1",
+   "gr-concesivas-b1",
+   "gr-sub-adv-concesivas-c1"
+  ]
+ },
+ {
+  "id": "g:subj-conditions",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 427,
+  "title": "Only if, unless, in case: a menos que, con tal de que, siempre que, en caso de que",
+  "es": "Firmo con tal de que nos dejen quedarnos. No cerramos a menos que llueva. En caso de que llamen, avísame.",
+  "en": "I'll sign as long as they let us stay. We don't close unless it rains. In case they call, let me know.",
+  "requires": [
+   "g:subj-concessive",
+   "g:si-present"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u44-making-the-case"
+  ],
+  "pcic": [
+   "gramatica:15.3.6"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-condicionales-b1",
+   "gr-sub-adv-condicionales-c1"
+  ]
+ },
+ {
+  "id": "g:argument-markers",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 431,
+  "title": "Building an argument: es cierto que…, pero; no solo… sino también; en cambio; de hecho",
+  "es": "Es cierto que necesitamos dinero, pero no a cualquier precio. De hecho, las ventas suben.",
+  "en": "It's true we need money, but not at any price. In fact, sales are going up.",
+  "requires": [
+   "g:discourse-structure",
+   "g:concession-despite"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u44-making-the-case"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas",
+   "generos_discursivos"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-marcadores-discurso-b2",
+   "gn-argumentativa-b2",
+   "gn-composicion-argumentativa-b2",
+   "gr-adverbios-conjuntivos-c1",
+   "task-b2-argumento"
+  ]
+ },
+ {
+  "id": "g:future-perfect",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 434,
+  "title": "Guessing about what has happened: habrá salido, se habrán equivocado",
+  "es": "No contesta; se habrá dormido. Habrán llegado ya.",
+  "en": "He's not answering; he must have fallen asleep. They'll have arrived by now.",
+  "requires": [
+   "g:future-conjecture",
+   "g:perfecto-experience"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u45-the-news"
+  ],
+  "pcic": [
+   "gramatica:9.1.9"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "futperf",
+   "gr-exclamativos-c1",
+   "gr-futuro-perfecto-b2"
+  ]
+ },
+ {
+  "id": "g:conditional-rumour",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 437,
+  "title": "Reporting without vouching: según fuentes, el alcalde habría firmado",
+  "es": "Según el diario, la empresa habría pagado sobornos. El acusado estaría fuera del país.",
+  "en": "According to the paper, the company allegedly paid bribes. The accused is reportedly abroad.",
+  "requires": [
+   "g:conditional-perfect"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u45-the-news"
+  ],
+  "pcic": [
+   "gramatica:9.1.5",
+   "tacticas_pragmaticas"
+  ],
+  "placement": "teaching_choice",
+  "note": "Journalistic; recognise and use in reporting. PCIC/programmes place this at C1; taught at B2 here.",
+  "sources": [
+   "dc-citas-encubiertas-c1",
+   "fn-dar-informacion-b2",
+   "task-b2-noticia"
+  ]
+ },
+ {
+  "id": "g:impersonal-register",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 441,
+  "title": "Who did it? Hiding the doer: dicen que, se cree que, uno, la gente",
+  "es": "Dicen que el alcalde renunció. Se cree que fue un error. Uno no puede saberlo todo.",
+  "en": "They say the mayor resigned. It's believed it was a mistake. One can't know everything.",
+  "requires": [
+   "g:passive-ser",
+   "g:impersonal-obligation"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u45-the-news"
+  ],
+  "pcic": [
+   "gramatica:7.1.4"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-citas-encubiertas-c1",
+   "gr-se-multiuso-b1",
+   "nt-expresion-verbal-b2"
+  ]
+ },
+ {
+  "id": "g:reported-speech-full",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 444,
+  "title": "Reporting a whole conversation: tenses, times and places shift",
+  "es": "\"Mañana vengo\" → Dijo que al día siguiente vendría. \"¿Dónde está?\" → Preguntó dónde estaba.",
+  "en": "\"I'll come tomorrow\" → He said he would come the next day. \"Where is it?\" → She asked where it was.",
+  "requires": [
+   "g:reported-commands-past",
+   "g:time-sequence",
+   "g:indirect-questions"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u46-who-said-what"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas:1.5.2"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-cita-b2",
+   "dc-estilo-indirecto-c1",
+   "dc-perspectiva-temporal-b2",
+   "task-b2-citar"
+  ]
+ },
+ {
+  "id": "g:reporting-verbs-mood",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 447,
+  "title": "Verbs that report and verbs that request: advertir que, recordar que, insistir en que",
+  "es": "Me advirtió que era peligroso. / Me advirtió que no fuera. Insistió en que pagáramos.",
+  "en": "He warned me it was dangerous. / He warned me not to go. She insisted that we pay.",
+  "requires": [
+   "g:reported-speech-full"
+  ],
+  "contrasts": [
+   "x:decir-que-ind-subj"
+  ],
+  "serves": [
+   "d:u46-who-said-what"
+  ],
+  "pcic": [
+   "gramatica:15.1.2",
+   "gramatica:9.2.2"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-subordinadas-sustantivas-b2",
+   "nt-expresion-verbal-b2"
+  ]
+ },
+ {
+  "id": "g:subj-perception-negated",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 451,
+  "title": "Not seeing, not noticing, not saying: no vi que…, no dijo que…, no es que…",
+  "es": "No es que no quiera, es que no puedo. No noté que estuviera enojada.",
+  "en": "It's not that I don't want to, it's that I can't. I didn't notice she was angry.",
+  "requires": [
+   "g:subj-opinion-negated",
+   "g:imperfect-subj"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u46-who-said-what"
+  ],
+  "pcic": [
+   "gramatica:9.2.1",
+   "gramatica:9.2.2"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-subordinadas-sustantivas-b2",
+   "gr-tiempos-subjuntivo-c1"
+  ]
+ },
+ {
+  "id": "g:cleft-focus",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 454,
+  "title": "Putting the spotlight on one part: fue Vale quien…, lo que necesito es…, aquí es donde…",
+  "es": "Fue Vale quien encontró la carta. Lo que no entiendo es por qué. Es aquí donde todo empezó.",
+  "en": "It was Vale who found the letter. What I don't understand is why. This is where it all began.",
+  "requires": [
+   "g:relatives-prepositions",
+   "g:lo-adjective"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u47-putting-the-weight-where-you-want-it"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas",
+   "gramatica:15.2"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-focalizacion-b1",
+   "dc-focalizacion-b2",
+   "dc-rematizacion-tematizacion-b2"
+  ]
+ },
+ {
+  "id": "g:topic-fronting",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 457,
+  "title": "Starting with the topic: el contrato lo firmé yo; a Vale no le dije nada",
+  "es": "El contrato lo firmé yo. A Vale no le dije nada. Eso no lo sabía.",
+  "en": "I'm the one who signed the contract. I didn't tell Vale anything. That I didn't know.",
+  "requires": [
+   "g:le-doubling",
+   "g:direct-objects"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u47-putting-the-weight-where-you-want-it"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas",
+   "gramatica:13.2"
+  ],
+  "placement": "pcic",
+  "note": "A fronted object needs its pronoun.",
+  "sources": [
+   "dc-rematizacion-tematizacion-b2",
+   "dc-tematizacion-a2",
+   "gr-complementos-verbales-c1",
+   "gr-pronombre-personal-c1"
+  ]
+ },
+ {
+  "id": "g:lo-que-intensity",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 461,
+  "title": "How very…!: lo difícil que es, lo bien que cocina, con lo cansado que estoy",
+  "es": "No sabes lo difícil que es. ¡Lo bien que cocina tu mamá! Con lo cansado que estoy…",
+  "en": "You don't know how hard it is. How well your mom cooks! Tired as I am…",
+  "requires": [
+   "g:lo-adjective"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u47-putting-the-weight-where-you-want-it"
+  ],
+  "pcic": [
+   "gramatica:3.1",
+   "gramatica:7.4"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-intensificacion-b2",
+   "gr-articulo-definido-c1",
+   "gr-articulo-definido-valores-b2",
+   "gr-exclamativos-b2"
+  ]
+ },
+ {
+  "id": "g:relatives-formal",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 464,
+  "title": "Formal relatives: el cual, la cual, lo cual, quien(es)",
+  "es": "Firmaron un acuerdo, lo cual nos sorprendió. Su abuela, quien fundó el café, murió en 2019.",
+  "en": "They signed an agreement, which surprised us. His grandmother, who founded the café, died in 2019.",
+  "requires": [
+   "g:relatives-prepositions"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u48-describing-precisely"
+  ],
+  "pcic": [
+   "gramatica:7.2",
+   "gramatica:15.2"
+  ],
+  "placement": "teaching_choice",
+  "note": "Commas change meaning (explicativas). PCIC/programmes place this at C1; taught at B2 here.",
+  "sources": [
+   "gr-que-explicativo-b2",
+   "gr-quien-quienes-b2",
+   "gr-relativos-c1",
+   "gr-sub-adjetivas-relativo-c1",
+   "gr-subordinadas-relativas-tipos-b2"
+  ]
+ },
+ {
+  "id": "g:participle-gerund-clauses",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 467,
+  "title": "Compact descriptions: una vez terminado, siendo tan tarde, construido en 1920",
+  "es": "Construido en 1920, el edificio es patrimonio. Siendo tan tarde, preferimos esperar.",
+  "en": "Built in 1920, the building is heritage. It being so late, we'd rather wait.",
+  "requires": [
+   "g:passive-ser",
+   "g:gerund-ways"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u48-describing-precisely"
+  ],
+  "pcic": [
+   "gramatica:9.4.2",
+   "gramatica:9.4.3"
+  ],
+  "placement": "pcic",
+  "note": "Avoid the \"gerund of afterwards\" (*Llegó, sentándose después).",
+  "sources": [
+   "gr-formas-no-personales-b2",
+   "gr-formas-no-personales-c1"
+  ]
+ },
+ {
+  "id": "g:infinitive-perfect",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 471,
+  "title": "Having done: después de haber firmado, por no haber llamado",
+  "es": "Después de haber firmado, se arrepintió. Me multaron por no haber pagado.",
+  "en": "After having signed, he regretted it. They fined me for not having paid.",
+  "requires": [
+   "g:perfecto-experience",
+   "g:prep-infinitive"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u48-describing-precisely"
+  ],
+  "pcic": [
+   "gramatica:9.4.1"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-formas-no-personales-b2"
+  ]
+ },
+ {
+  "id": "g:formal-letter-grammar",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 474,
+  "title": "Formal letters: le agradecería que, me dirijo a usted, adjunto le envío",
+  "es": "Me dirijo a ustedes para presentar una queja. Le agradecería que me respondiera antes del viernes.",
+  "en": "I am writing to you to make a complaint. I would be grateful if you replied before Friday.",
+  "requires": [
+   "g:register-ladder"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u49-formal-writing"
+  ],
+  "pcic": [
+   "generos_discursivos",
+   "gramatica:9.2.2"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gn-carta-solicitud-trabajo-b2",
+   "gn-generos-escritos-b2",
+   "gn-reclamacion-b2",
+   "task-b2-formal"
+  ]
+ },
+ {
+  "id": "g:verbs-prepositions",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 479,
+  "title": "Verbs that bring their own preposition: contar con, depender de, tratarse de, consistir en",
+  "es": "Contamos con su apoyo. Depende de ti. Se trata de un error. Consiste en tres partes.",
+  "en": "We count on your support. It depends on you. It's a mistake. It consists of three parts.",
+  "requires": [
+   "g:relatives-prepositions"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u49-formal-writing"
+  ],
+  "pcic": [
+   "gramatica:12.2.5"
+  ],
+  "placement": "pcic",
+  "note": "Grammar node for the principle; each verb is a pattern node.",
+  "sources": [
+   "gr-complemento-preposicional-regido-b2",
+   "gr-complementos-sa-b2"
+  ]
+ },
+ {
+  "id": "g:subj-free-relatives",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 484,
+  "title": "Whoever, wherever, whatever: el que quiera, donde quieras, lo que sea",
+  "es": "El que quiera venir, que venga. Siéntate donde quieras. Haré lo que sea necesario.",
+  "en": "Whoever wants to come can come. Sit wherever you like. I'll do whatever is necessary.",
+  "requires": [
+   "g:subj-relative"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u50-hard-conversations"
+  ],
+  "pcic": [
+   "gramatica:15.2",
+   "gramatica:15.3.2"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-cuantificadores-propios-c1",
+   "gr-el-que-relativos-b2",
+   "gr-quien-quienes-b2",
+   "gr-relativos-c1",
+   "gr-sub-adjetivas-relativo-c1",
+   "gr-sub-adv-lugar-modo-c1",
+   "gr-subordinadas-lugar-b2",
+   "gr-subordinadas-modo-b2"
+  ]
+ },
+ {
+  "id": "g:subj-future-in-past",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 487,
+  "title": "When it would happen: dijo que me llamaría cuando llegara",
+  "es": "Me dijo que me llamaría cuando llegara. Íbamos a esperar hasta que bajaran los precios.",
+  "en": "He said he would call me when he arrived. We were going to wait until prices fell.",
+  "requires": [
+   "g:subj-cuando-future",
+   "g:subj-past-triggers"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u50-hard-conversations"
+  ],
+  "pcic": [
+   "gramatica:9.2.2",
+   "gramatica:15.3.1"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-sub-adv-temporales-c1",
+   "gr-tiempos-subjuntivo-c1"
+  ]
+ },
+ {
+  "id": "g:que-wishes-commands",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 491,
+  "title": "Que + wish or order: que entre, que lo haga él, que no se repita",
+  "es": "—Está aquí el abogado. —Que entre. Que lo haga él. Que no vuelva a pasar.",
+  "en": "—The lawyer is here. —Show him in. Let him do it. Don't let it happen again.",
+  "requires": [
+   "g:subj-wishes",
+   "g:negative-commands"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u50-hard-conversations"
+  ],
+  "pcic": [
+   "gramatica:9.2.1",
+   "gramatica:9.3"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "fn-ordenar-directo-b1",
+   "gr-imperativo-valores-b1",
+   "gr-imperativo-valores-b2",
+   "gr-tiempos-subjuntivo-c1"
+  ]
+ },
+ {
+  "id": "g:vosotros-recognition",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 494,
+  "title": "Reading Spain's Spanish: vosotros, habéis, id, os",
+  "es": "¿Vosotros qué queréis? Os lo dije. Venid mañana.",
+  "en": "What do you (all) want? I told you. Come tomorrow.",
+  "requires": [
+   "g:subj-irregulars",
+   "g:commands-tu"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u51-spanish-beyond-colombia"
+  ],
+  "pcic": [
+   "gramatica:7.1.1",
+   "gramatica:9.1.1"
+  ],
+  "placement": "teaching_choice",
+  "note": "Recognition only. Learners keep producing ustedes; Peninsular answers are accepted everywhere. PCIC/programmes place this at A1; taught at B2 here.",
+  "sources": [
+   "gr-pronombre-personal-c1",
+   "gr-pronombre-sujeto-a1"
+  ]
+ },
+ {
+  "id": "g:spain-pasts",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 497,
+  "title": "Spain's \"today\" past: hoy he ido = hoy fui",
+  "es": "(España) Esta mañana he ido al médico. = (Colombia) Esta mañana fui al médico.",
+  "en": "This morning I went to the doctor.",
+  "requires": [
+   "g:perfecto-experience",
+   "g:vosotros-recognition"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u51-spanish-beyond-colombia"
+  ],
+  "pcic": [
+   "gramatica:9.1.6"
+  ],
+  "placement": "teaching_choice",
+  "note": "Recognition + accepted as answers; the Peninsular perfecto/indefinido split is explained, not produced. SEQ new lesson(s): gr-perfecto-vs-indefinido-a2. PCIC/programmes place this at C1; taught at B2 here.",
+  "sources": [
+   "dc-indefinido-perfecto-c1",
+   "gr-tiempos-indicativo-c1"
+  ]
+ },
+ {
+  "id": "g:se-form-recognition",
+  "kind": "grammar",
+  "band": "B2",
+  "priority": 501,
+  "title": "The other \"if only\" form: hubiese, fuese, tuviese",
+  "es": "Si lo hubiese sabido… = Si lo hubiera sabido…",
+  "en": "If I had known…",
+  "requires": [
+   "g:pluperfect-subj"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u51-spanish-beyond-colombia"
+  ],
+  "pcic": [
+   "gramatica:9.2.2"
+  ],
+  "placement": "pcic",
+  "note": "Recognition; -se is mostly written in LatAm.",
+  "sources": [
+   "gr-impsubj-valores-b2",
+   "gr-pluscuamsubj-b2",
+   "impsubj"
+  ]
+ },
+ {
+  "id": "g:tense-modal-uses",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 506,
+  "title": "Tenses that don't mean their time: quería pedirte, será caro pero…, mañana viajo",
+  "es": "Quería pedirte un favor. Será muy rico, pero no tiene modales. En 1810 se firma el acta.",
+  "en": "I wanted to ask you a favour. He may be rich, but he has no manners. In 1810 the act is signed.",
+  "requires": [
+   "g:softening",
+   "g:future-perfect"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u52-the-whole-verb-system"
+  ],
+  "pcic": [
+   "gramatica:9.1",
+   "gramatica:9.1.2",
+   "gramatica:9.1.4"
+  ],
+  "placement": "pcic",
+  "note": "Historic present, imperfect of politeness and of plans (iba a…), future of concession.",
+  "sources": [
+   "dc-imperfecto-modal-c1",
+   "gr-presente-indicativo-valores-a1",
+   "gr-tiempos-indicativo-c1"
+  ]
+ },
+ {
+  "id": "g:mood-choice-fine",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 511,
+  "title": "Choosing the mood on purpose: el hecho de que, lo que digas, como no vengas",
+  "es": "El hecho de que no llamara me preocupa. Haz lo que te digan. Como no vengas, me enojo.",
+  "en": "The fact that he didn't call worries me. Do what they tell you. If you don't come, I'll get angry.",
+  "requires": [
+   "g:subj-free-relatives",
+   "g:subj-concessive"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u52-the-whole-verb-system"
+  ],
+  "pcic": [
+   "gramatica:9.2",
+   "gramatica:15.1.2"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-articulo-definido-c1",
+   "gr-sub-sustantivas-c1",
+   "gr-tiempos-subjuntivo-c1",
+   "task-c1-verbos"
+  ]
+ },
+ {
+  "id": "g:hedging-distance",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 516,
+  "title": "Distancing yourself from a claim: al parecer, supuestamente, por lo visto, no es que…",
+  "es": "Al parecer, el permiso era falso. Supuestamente iban a demoler. No es que dude de ti.",
+  "en": "Apparently the permit was fake. They were supposedly going to demolish. It's not that I doubt you.",
+  "requires": [
+   "g:conditional-rumour",
+   "g:subj-perception-negated"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u53-saying-it-without-owning-it"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-atenuacion-c1",
+   "dc-atenuacion-dialogica-c1",
+   "dc-citas-encubiertas-c1",
+   "task-c1-decirlo"
+  ]
+ },
+ {
+  "id": "g:reformulation",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 521,
+  "title": "Saying it again, better: o sea, es decir, mejor dicho, en otras palabras",
+  "es": "Es caro; o sea, no lo podemos pagar. Mejor dicho: no queremos.",
+  "en": "It's expensive; I mean, we can't pay for it. Or rather: we don't want to.",
+  "requires": [
+   "g:discourse-structure"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u53-saying-it-without-owning-it"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-reformuladores-c1",
+   "fn-escepticismo-contraargumento-c1",
+   "gr-adverbios-enunciacion-b2"
+  ]
+ },
+ {
+  "id": "g:emphatic-structures",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 526,
+  "title": "Saying it with force: ¡si ya te lo dije!, ¡qué va!, ¡pues claro que sí!",
+  "es": "¡Si ya te lo dije! ¿Que si me gusta? ¡Me encanta! ¡Pues claro que voy!",
+  "en": "But I already told you! Do I like it? I love it! Of course I'm going!",
+  "requires": [
+   "g:si-present",
+   "g:indirect-questions"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u54-irony-and-what-s-left-unsaid"
+  ],
+  "pcic": [
+   "tacticas_pragmaticas",
+   "gramatica:13.3"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-intensificacion-c1",
+   "dc-ironia-c1",
+   "dc-valores-ilocutivos-c1",
+   "task-c1-ironia"
+  ]
+ },
+ {
+  "id": "g:wish-exclamatives",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 531,
+  "title": "Wishes and regrets as exclamations: ¡quién lo hubiera dicho!, ¡si lo hubiera sabido!",
+  "es": "¡Quién lo hubiera dicho! ¡Si al menos llamara! ¡Ojalá nunca lo hubiera firmado!",
+  "en": "Who would have thought it! If only he'd call! I wish I'd never signed it!",
+  "requires": [
+   "g:pluperfect-subj",
+   "g:ojala-past"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u54-irony-and-what-s-left-unsaid"
+  ],
+  "pcic": [
+   "gramatica:7.4",
+   "gramatica:9.2.4"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "fn-arrepentimiento-verguenza-c1",
+   "fn-sorpresa-admiracion-c1",
+   "gr-exclamativos-b2",
+   "gr-exclamativos-c1",
+   "gr-sub-adv-condicionales-c1",
+   "gr-tiempos-subjuntivo-c1"
+  ]
+ },
+ {
+  "id": "g:cuyo-relatives",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 534,
+  "title": "Whose: cuyo, cuya (and how people avoid it)",
+  "es": "El edificio, cuyos dueños viven en Miami, será vendido.",
+  "en": "The building, whose owners live in Miami, will be sold.",
+  "requires": [
+   "g:relatives-formal"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u55-institutional-spanish"
+  ],
+  "pcic": [
+   "gramatica:2.1.3"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-clases-adjetivos-c1",
+   "gr-relativos-c1",
+   "gr-sub-adjetivas-relativo-c1"
+  ]
+ },
+ {
+  "id": "g:nominalisation",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 537,
+  "title": "Turning actions into nouns: la firma del contrato, el cierre, la toma de decisiones",
+  "es": "Tras la firma del contrato, se anunció el cierre del local.",
+  "en": "After the contract was signed, the closure of the premises was announced.",
+  "requires": [
+   "g:passive-ser",
+   "g:verbs-prepositions"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u55-institutional-spanish"
+  ],
+  "pcic": [
+   "gramatica:10.2",
+   "generos_discursivos"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gn-carta-comercial-c1",
+   "gr-complementos-modificadores-b1",
+   "gr-complementos-nominal-c1",
+   "gr-complementos-nominales-b2"
+  ]
+ },
+ {
+  "id": "g:absolute-constructions",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 541,
+  "title": "Once done: una vez firmado el contrato, terminada la reunión, dicho esto",
+  "es": "Una vez aprobado el plan, comenzarán las obras. Dicho esto, pasemos al siguiente punto.",
+  "en": "Once the plan is approved, work will begin. Having said that, let's move on.",
+  "requires": [
+   "g:participle-gerund-clauses"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u55-institutional-spanish"
+  ],
+  "pcic": [
+   "gramatica:9.4.3"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-formas-no-personales-c1"
+  ]
+ },
+ {
+  "id": "g:concessive-advanced",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 546,
+  "title": "Conceding like a writer: si bien, aun cuando, por mucho que, por muy… que",
+  "es": "Si bien el plan es ambicioso, es viable. Por muy rico que sea, no puede comprarlo todo.",
+  "en": "Although the plan is ambitious, it is feasible. However rich he may be, he can't buy everything.",
+  "requires": [
+   "g:subj-concessive"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u56-the-essay"
+  ],
+  "pcic": [
+   "gramatica:15.3.9"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gn-argumentativa-c1",
+   "gn-argumentativa-conectores-c1",
+   "gr-sub-adv-concesivas-c1"
+  ]
+ },
+ {
+  "id": "g:consecutive-advanced",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 551,
+  "title": "Results in writing: de ahí que, de manera que, así pues, por consiguiente",
+  "es": "No hubo acuerdo; de ahí que la reunión se aplazara. Así pues, la decisión es nuestra.",
+  "en": "There was no agreement; hence the meeting was postponed. Thus, the decision is ours.",
+  "requires": [
+   "g:consequence-connectors",
+   "g:imperfect-subj"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u56-the-essay"
+  ],
+  "pcic": [
+   "gramatica:15.3.7"
+  ],
+  "placement": "pcic",
+  "note": "de ahí que + subjunctive.",
+  "sources": [
+   "gn-expositiva-c1",
+   "gr-adverbios-conjuntivos-c1",
+   "gr-sub-adv-consecutivas-c1"
+  ]
+ },
+ {
+  "id": "g:conditional-advanced",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 556,
+  "title": "Conditions with style: de haberlo sabido, como no llegues, a no ser que, siempre y cuando",
+  "es": "De haberlo sabido, no habría venido. Como no llegues a tiempo, nos vamos sin ti.",
+  "en": "Had I known, I wouldn't have come. If you're not on time, we're leaving without you.",
+  "requires": [
+   "g:si-past-unreal",
+   "g:subj-conditions"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u57-emotion-at-native-pitch"
+  ],
+  "pcic": [
+   "gramatica:15.3.6"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "fn-hipotesis-posibilidad-c1",
+   "gr-sub-adv-condicionales-c1"
+  ]
+ },
+ {
+  "id": "g:comparative-advanced-c1",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 561,
+  "title": "Fine comparisons: cuanto más… menos, ni que fuera, más vale que",
+  "es": "Cuanto más lo pienso, menos lo entiendo. ¡Ni que fuera el presidente! Más vale que llegues temprano.",
+  "en": "The more I think about it, the less I understand. As if he were the president! You'd better get here early.",
+  "requires": [
+   "g:comparatives-advanced",
+   "g:imperfect-subj"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u57-emotion-at-native-pitch"
+  ],
+  "pcic": [
+   "gramatica:15.3.8"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-sub-adv-comparativas-c1"
+  ]
+ },
+ {
+  "id": "g:temporal-advanced",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 564,
+  "title": "Exact timing: nada más llegar, apenas, en cuanto, una vez que, a medida que",
+  "es": "Nada más llegar, se fue la luz. A medida que avanzaba la noche, llegaba más gente.",
+  "en": "As soon as we arrived, the power went out. As the night went on, more people arrived.",
+  "requires": [
+   "g:subj-cuando-future"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u58-precision"
+  ],
+  "pcic": [
+   "gramatica:15.3.1"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-sub-adv-temporales-c1",
+   "nt-localizacion-presente-c1"
+  ]
+ },
+ {
+  "id": "g:agreement-tricky",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 567,
+  "title": "Agreement when sense beats grammar: la mayoría piensa(n), el resto, la gente",
+  "es": "La mayoría de los vecinos votó (votaron) en contra. Un grupo de turistas llegó.",
+  "en": "Most of the neighbours voted against. A group of tourists arrived.",
+  "requires": [
+   "g:adjective-agreement"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u58-precision"
+  ],
+  "pcic": [
+   "gramatica:10.4",
+   "gramatica:13.1"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "gr-concordancia-oracional-c1",
+   "gr-concordancia-sn-verbo-b2"
+  ]
+ },
+ {
+  "id": "g:ser-estar-c1",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 571,
+  "title": "Ser and estar at the edges: está de mesero, es de madera, estar para / estar por",
+  "es": "Ahora está de mesero en Cartagena. Está para llover. Eso está por verse.",
+  "en": "He's working as a waiter in Cartagena now. It's about to rain. That remains to be seen.",
+  "requires": [
+   "g:ser-estar-adjectives",
+   "g:passive-ser"
+  ],
+  "contrasts": [
+   "x:ser-estar-adj"
+  ],
+  "serves": [
+   "d:u58-precision"
+  ],
+  "pcic": [
+   "gramatica:12.1"
+  ],
+  "placement": "pcic",
+  "note": "SEQ new lesson(s): gr-ser-estar-adjetivos-a2.",
+  "sources": [
+   "gr-nucleo-verbal-c1",
+   "ser-estar"
+  ]
+ },
+ {
+  "id": "g:voseo-recognition",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 576,
+  "title": "Hearing paisas (and Argentines): vos tenés, vos sabés, vení",
+  "es": "¿Vos qué querés? Vení, sentate. ¿Sabés qué?",
+  "en": "What do you want? Come, sit down. You know what?",
+  "requires": [
+   "g:vosotros-recognition",
+   "g:commands-tu"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u59-voices-of-colombia"
+  ],
+  "pcic": [
+   "gramatica:7.1.1",
+   "referentes_culturales"
+  ],
+  "placement": "pcic",
+  "note": "Recognition only (Medellín story dialogue); never required in production. Also usted among family in Bogotá/Boyacá.",
+  "sources": [
+   "gr-pronombre-personal-c1"
+  ]
+ },
+ {
+  "id": "g:future-subj-recognition",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 581,
+  "title": "Old and legal Spanish: quien hiciere, si así fuere",
+  "es": "El que no cumpliere será sancionado. Adonde fueres, haz lo que vieres.",
+  "en": "Whoever fails to comply will be penalised. When in Rome, do as the Romans do.",
+  "requires": [
+   "g:subj-free-relatives"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u59-voices-of-colombia"
+  ],
+  "pcic": [
+   "gramatica:9.2.5"
+  ],
+  "placement": "pcic",
+  "note": "Recognition only (legal texts, proverbs).",
+  "sources": [
+   "gr-tiempos-subjuntivo-c1"
+  ]
+ },
+ {
+  "id": "g:word-order-style",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 586,
+  "title": "Word order for effect: Mucho ha cambiado el barrio; poco importa ya",
+  "es": "Mucho ha cambiado el barrio desde entonces. Difícil es decirlo. Poco importa ya.",
+  "en": "The neighbourhood has changed a lot since then. It's hard to say. It hardly matters now.",
+  "requires": [
+   "g:topic-fronting",
+   "g:cleft-focus"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u60-a-critical-voice"
+  ],
+  "pcic": [
+   "gramatica:13.2",
+   "tacticas_pragmaticas"
+  ],
+  "placement": "pcic",
+  "sources": [
+   "dc-focalizacion-c1",
+   "dc-rematizacion-tematizacion-c1",
+   "gr-adverbios-externos-c1",
+   "gr-adverbios-nucleares-c1"
+  ]
+ },
+ {
+  "id": "g:evaluative-adverbs",
+  "kind": "grammar",
+  "band": "C1",
+  "priority": 591,
+  "title": "Commenting on your own sentence: lamentablemente, francamente, por suerte, sinceramente",
+  "es": "Lamentablemente, el café cerró. Francamente, no me sorprende. Por suerte, nadie salió herido.",
+  "en": "Sadly, the café closed. Frankly, I'm not surprised. Luckily, nobody was hurt.",
+  "requires": [
+   "g:adverbs-mente"
+  ],
+  "contrasts": [],
+  "serves": [
+   "d:u60-a-critical-voice"
+  ],
+  "pcic": [
+   "gramatica:8.3",
+   "gramatica:8.4"
+  ],
+  "placement": "teaching_choice",
+  "note": "Placed with the critical-review unit where it does most work. PCIC/programmes place this at B2; taught at C1 here.",
+  "sources": [
+   "gr-adverbios-conjuntivos-c1",
+   "gr-adverbios-enunciacion-b2",
+   "gr-adverbios-evaluativos-b2",
+   "gr-adverbios-externos-c1",
+   "gr-adverbios-frecuencia-topico-b2"
+  ]
+ }
+]

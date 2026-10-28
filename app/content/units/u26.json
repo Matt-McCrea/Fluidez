@@ -1,0 +1,120 @@
+{
+ "id": "u26",
+ "band": "A2",
+ "title": "Telling it well",
+ "theme": "8. Ocio + 2: anecdotes, surprises, mishaps, reactions to a story",
+ "canDo": "I can tell an anecdote in a clear order, say how it happened, and react to someone else's.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:gerund-ways"
+   ],
+   "chunks": [
+    "c:sabes-que-me-paso",
+    "c:no-me-digas",
+    "c:resulta-que"
+   ],
+   "lexemes": [],
+   "chapter": "ch077"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:gerund-ways",
+    "g:reported-past-basic"
+   ],
+   "chunks": [
+    "c:que-oso",
+    "c:imaginate",
+    "c:total-que",
+    "c:que-de-malas"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:time-sequence"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:time-sequence",
+    "g:gerund-ways"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch078"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:pasarla-bien",
+    "p:horas-y-horas",
+    "p:ponerse-a-inf",
+    "p:dentro-de-vs-despues"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:acabar-de-ya-todavia"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch079"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:acabar-de-ya-todavia",
+    "g:time-sequence"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:gerund-ways",
+    "g:time-sequence",
+    "g:acabar-de-ya-todavia"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u26-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:gerund-ways",
+    "g:time-sequence",
+    "g:acabar-de-ya-todavia",
+    "x:pret-imp",
+    "x:por-para",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "At a long dinner Hernando tells his best anecdote: the day in 1983 when Rosa threw a bucket of mop water over a senator who refused to pay. Then, without the jokes, he tells the other story: he had loved Rosa for forty years and never told her. Tomás learns that Joaquín left after Rosa refused to sell the building to pay his debts.",
+ "quota": {
+  "bankSentences": 414,
+  "chapters": 3,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

@@ -1,0 +1,2694 @@
+{
+ "nodes": [
+  {
+   "id": "p:ser-profession-no-article",
+   "kind": "pattern",
+   "title": "Saying someone's job: es profesora (no 'a')",
+   "es": "ser + profesión sin artículo: Mario es cocinero. Soy ingeniera. — pero: Es un cocinero excelente.",
+   "en": "to be + job with no 'a': Mario is a cook. I'm an engineer. — but: He's an excellent cook.",
+   "unit": 1,
+   "requires": [
+    "g:ser-identity",
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:458",
+    "gramatica:A1:459",
+    "gramatica:A1:460"
+   ],
+   "sources": [
+    "gr-atributo-a1",
+    "gr-articulo-indefinido-valores-a2"
+   ],
+   "note": "Pitfall: *Es un profesor. The article comes back only when the noun is modified (un profesor excelente). Same for nationality and religion nouns."
+  },
+  {
+   "id": "p:senor-don-article",
+   "kind": "pattern",
+   "title": "Talking to vs about someone: Buenos días, señor García / El señor García no está",
+   "es": "el señor / la señora + apellido al hablar DE alguien; sin artículo al hablarLE: El señor Ruiz no está. — Buenos días, señor Ruiz. ¿Don Jorge está?",
+   "en": "Mr/Mrs + surname takes 'the' when you talk about someone, not when you talk to them.",
+   "unit": 2,
+   "requires": [
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:1",
+    "gramatica:A1:2",
+    "gramatica:A1:4"
+   ],
+   "sources": [
+    "gr-nombres-propios-a1",
+    "gr-articulo-definido-valores-a2"
+   ],
+   "note": "Never *la María / *el Fernández with bare names in neutral Spanish. Colombian colour: don/doña + first name (don Jorge, doña Marta) — no article, used both to and about someone. Pair with El Salvador keeping its article."
+  },
+  {
+   "id": "p:bien-mal-vs-bueno-malo",
+   "kind": "pattern",
+   "title": "Well vs good: está bien, canta mal, un libro bueno",
+   "es": "bien/mal (cómo se hace o cómo está) vs bueno/malo (cómo es): Estoy bien. Canta muy mal. Es un libro muy bueno.",
+   "en": "bien/mal say how something is done or how it is; bueno/malo say what something is like: I'm fine. He sings badly. It's a really good book.",
+   "unit": 2,
+   "requires": [
+    "g:estar-location-states"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:298",
+    "gramatica:A1:299"
+   ],
+   "sources": [
+    "gr-adverbios-lugar-tiempo-cantidad-a1"
+   ],
+   "note": "Pitfalls: *un libro bien, *estoy bueno (means 'I'm hot/attractive' — a classic embarrassing slip). Bien/mal never agree. Está bien = OK / that's fine."
+  },
+  {
+   "id": "p:ir-a-venir-de-place",
+   "kind": "pattern",
+   "title": "Going to and coming from: voy al banco, vengo del trabajo",
+   "es": "ir a + lugar / venir de + lugar (a + el = al, de + el = del): Voy al centro. Vengo del trabajo. ¿Adónde vas? — ¿Dónde estás?",
+   "en": "going to / coming from a place: I'm going downtown. I'm coming from work. Where are you going? — Where are you?",
+   "unit": 3,
+   "requires": [
+    "g:ir-a-plans",
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:78",
+    "gramatica:A1:80",
+    "gramatica:B1:374"
+   ],
+   "sources": [
+    "gr-articulo-definido-a1",
+    "gr-adverbios-relativos-b1"
+   ],
+   "note": "al/del contraction is obligatory (*a el banco) except with names that include El (Voy a El Salvador). ¿Adónde? / ¿A dónde? only with movement; static location is ¿Dónde? Note ir a + place vs ir a + infinitive (plans)."
+  },
+  {
+   "id": "p:jugar-a",
+   "kind": "pattern",
+   "title": "Playing a sport or game: juego al fútbol",
+   "es": "jugar a + el/la + deporte o juego: Juego al fútbol los sábados. ¿Juegas al tenis? Jugamos a las cartas.",
+   "en": "play + sport/game: I play football on Saturdays.",
+   "unit": 3,
+   "requires": [
+    "g:stem-boot",
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A2:91"
+   ],
+   "sources": [
+    "gr-articulo-definido-distribucion-a2"
+   ],
+   "note": "Pitfall: *juego fútbol is the English calque. Colloquial LatAm often drops a+article (juego fútbol) — accept it, but teach jugar al fútbol. Contrast tocar la guitarra (instruments), not *jugar la guitarra."
+  },
+  {
+   "id": "p:days-el-lunes",
+   "kind": "pattern",
+   "title": "On Monday, on Mondays: el lunes / los lunes",
+   "es": "el + día = 'on' ese día; los + día = cada semana: El lunes tengo clase. Los sábados juego fútbol. Hoy es martes.",
+   "en": "day + 'the' means 'on': On Monday I have class. On Saturdays I play football. Today is Tuesday.",
+   "unit": 3,
+   "requires": [
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-articulo-definido-valores-a2",
+    "gr-presente-indicativo-valores-a1",
+    "gr-nucleo-verbal-a1",
+    "gr-numero-sustantivos-a1"
+   ],
+   "note": "Pitfalls: *en lunes; no capital letters on days; days ending in -s don't change in the plural (el lunes / los lunes). Es + day with no article: Hoy es viernes."
+  },
+  {
+   "id": "p:tambien-tampoco",
+   "kind": "pattern",
+   "title": "Me too, me neither: yo también / yo tampoco",
+   "es": "también para sumarse a algo positivo, tampoco a algo negativo: —Trabajo los sábados. —Yo también. —No tengo carro. —Yo tampoco.",
+   "en": "Me too / me neither.",
+   "unit": 3,
+   "requires": [
+    "g:present-ar"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:301",
+    "gramatica:A1:302",
+    "gramatica:A1:303"
+   ],
+   "sources": [
+    "gr-adverbios-afirmacion-negacion-a1"
+   ],
+   "note": "Pitfall: *yo no también. With gustar-type verbs it becomes a mí también / a mí tampoco (see x:yo-vs-a-mi-tambien). After the verb tampoco needs no: No fumo tampoco."
+  },
+  {
+   "id": "p:estar-a-price",
+   "kind": "pattern",
+   "title": "Asking the going price: ¿a cómo está?",
+   "es": "estar a + precio (precio que cambia): ¿A cómo está el kilo de tomate? —Está a cuatro mil pesos. Hoy el dólar está a…",
+   "en": "the going price: How much is a kilo of tomatoes today? — It's at four thousand pesos.",
+   "unit": 4,
+   "requires": [
+    "g:estar-location-states"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:601"
+   ],
+   "sources": [
+    "gr-ser-impersonal-b1"
+   ],
+   "note": "Market language (Paloquemao). ¿Cuánto cuesta/vale? = fixed price; ¿A cómo está? = today's price. Old lesson used euros — use pesos."
+  },
+  {
+   "id": "p:tener-hambre-sed",
+   "kind": "pattern",
+   "title": "Being hungry, thirsty, cold: tengo hambre",
+   "es": "tener + hambre / sed / frío / calor / sueño / miedo (+ mucho/mucha): Tengo mucha hambre. ¿Tienes frío? No tengo sueño.",
+   "en": "be hungry / thirsty / cold / hot / sleepy / scared: I'm really hungry.",
+   "unit": 5,
+   "requires": [
+    "g:yo-irregular"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:172"
+   ],
+   "sources": [
+    "gr-cuantificadores-no-universales-a1",
+    "gr-numero-sustantivos-b1",
+    "gr-adverbios-afirmacion-negacion-a1"
+   ],
+   "note": "Pitfalls: *estoy hambre, *soy frío; intensify with mucho/mucha agreeing with the noun (mucha hambre, mucha sed, mucho frío), never *muy hambre. Hambre is feminine (mucha hambre) despite 'el hambre'. Sed has no plural. Contrast hace frío (weather) / tengo frío (me) / está frío (the soup)."
+  },
+  {
+   "id": "p:tener-anos",
+   "kind": "pattern",
+   "title": "Saying your age: tengo treinta años",
+   "es": "tener + número + años: ¿Cuántos años tienes? —Tengo treinta y un años. Mi abuela tiene noventa.",
+   "en": "to be X years old: How old are you? — I'm thirty-one.",
+   "unit": 5,
+   "requires": [
+    "g:yo-irregular",
+    "g:questions"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:270"
+   ],
+   "sources": [
+    "gr-interrogativos-a1"
+   ],
+   "note": "Pitfall: *soy treinta. cuántos agrees with años. treinta y un años (uno shortens before a masculine noun). Accent: años vs anos."
+  },
+  {
+   "id": "p:tener-razon",
+   "kind": "pattern",
+   "title": "Being right: tienes razón",
+   "es": "tener razón / no tener razón: Tienes razón. Creo que tiene razón. Él no tiene razón.",
+   "en": "to be right / wrong: You're right.",
+   "unit": 5,
+   "requires": [
+    "g:yo-irregular"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-pronombre-sujeto-a1",
+    "gr-objeto-directo-a1"
+   ],
+   "note": "Pitfall: *eres correcto / *estás correcto as calque of 'you're right'. Tiene razón is ambiguous (you/he/she) — usted takes the él form."
+  },
+  {
+   "id": "p:de-owner",
+   "kind": "pattern",
+   "title": "Whose is it? ¿De quién es? — Es de mi hermana",
+   "es": "¿De quién es…? / Es de + dueño / la casa de ella: ¿De quién es este celular? —Es de Vale. Es la casa de ella, no la de él. —¿Es tuyo? —Sí, es mío.",
+   "en": "Whose is…? / It's Vale's. / It's her house, not his.",
+   "unit": 5,
+   "requires": [
+    "g:possessives"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:say-whose"
+   ],
+   "pcic": [
+    "gramatica:A1:149",
+    "gramatica:A1:146"
+   ],
+   "sources": [
+    "gr-posesivos-distribucion-a1",
+    "gr-posesivos-forma-a1",
+    "gr-posesivos-tonicos-a2"
+   ],
+   "note": "No apostrophe-s: el carro de Andrés. Pitfalls: *¿Quién es este libro?, *Es mi (for 'it's mine'). de él / de ella resolve the ambiguity of su. *la casa de mí does not exist — la casa mía / mi casa."
+  },
+  {
+   "id": "p:personal-a",
+   "kind": "pattern",
+   "title": "People need 'a': conozco a tu hermano",
+   "es": "a + persona concreta como objeto directo: ¿Conoces a mi hermano? Busco a mi hija. Visito a mis papás. — pero: Tengo dos hermanos. Busco un mesero.",
+   "en": "Spanish marks a specific person as the object with 'a': Do you know my brother? I'm looking for my daughter.",
+   "unit": 5,
+   "requires": [
+    "g:yo-irregular"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:461",
+    "gramatica:A1:462",
+    "gramatica:B1:269"
+   ],
+   "sources": [
+    "gr-objeto-directo-a1",
+    "gr-interrogativos-b1",
+    "gr-indefinidos-negativos-b1"
+   ],
+   "note": "No a with tener + people (tengo dos hijos), nor with an unspecified person (busco un profesor). Yes with alguien/nadie (¿Conoces a alguien?) and in questions (¿A quién viste?). Full grammar arrives in g:direct-objects; teach the frame early with conocer/visitar/buscar/llamar."
+  },
+  {
+   "id": "p:numbers-un-una",
+   "kind": "pattern",
+   "title": "21, 31, 100: veintiún libros, treinta y una casas, cien",
+   "es": "uno → un / una ante el sustantivo, también en compuestos; cien sola, ciento + más: veintiún años, treinta y una personas, cien pesos, ciento veinte.",
+   "en": "uno shortens and agrees in compound numbers; 100 is cien on its own, ciento in 101–199.",
+   "unit": 5,
+   "requires": [
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:165",
+    "gramatica:A1:166"
+   ],
+   "sources": [
+    "gr-numerales-a1"
+   ],
+   "note": "Only uno and its compounds agree (and -cientos from 200: doscientas personas). Pitfalls: *veintiuno libros, *ciento pesos, *cien y uno. Mil doesn't take un."
+  },
+  {
+   "id": "p:los-garcia",
+   "kind": "pattern",
+   "title": "The whole family: los García",
+   "es": "los + apellido (el apellido no cambia): Los García viven arriba. Vamos donde los Rodríguez.",
+   "en": "the Garcías, the Rodríguez family.",
+   "unit": 5,
+   "requires": [
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:1",
+    "gramatica:B1:2"
+   ],
+   "sources": [
+    "gr-nombres-propios-b1"
+   ],
+   "note": "Pitfall: *los Garcías / *los Rodrígueces — only the article pluralizes. Colombian 'donde los Rodríguez' = at the Rodríguezes' place (recognition)."
+  },
+  {
+   "id": "p:dates-years",
+   "kind": "pattern",
+   "title": "Dates and years: el 5 de mayo de 1998",
+   "es": "el + día + de + mes (+ de + año); en + año: Nací el 3 de marzo de 1990. Hoy es 5 de mayo. El café abrió en 1978.",
+   "en": "dates and years: I was born on 3 March 1990. Today is May 5th. The café opened in 1978.",
+   "unit": 6,
+   "requires": [
+    "g:ser-identity",
+    "g:preterite-er-ir"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-nucleo-verbal-a1",
+    "gr-preterito-indefinido-a2"
+   ],
+   "note": "Pitfalls: *en el 5 de mayo, *mayo 5; months lowercase; years read as numbers (mil novecientos noventa), not in pairs; el primero de mayo (LatAm) / el uno de mayo both heard. ¿Qué fecha es hoy?"
+  },
+  {
+   "id": "p:aqui-ahi-alla",
+   "kind": "pattern",
+   "title": "Here, there, over there: aquí, ahí, allá",
+   "es": "aquí (cerca de mí) / ahí (cerca de ti) / allá o allí (lejos de los dos), como este/ese/aquel: Ponlo ahí. Vivo aquí cerca. El banco queda allá.",
+   "en": "here / there (by you) / over there.",
+   "unit": 7,
+   "requires": [
+    "g:demonstratives"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:291",
+    "gramatica:A1:292"
+   ],
+   "sources": [
+    "gr-adverbios-lugar-tiempo-cantidad-a1",
+    "gr-adverbios-circunstanciales-a2"
+   ],
+   "note": "Parallel to este/ese/aquel. LatAm prefers allá (also acá ≈ aquí, recognition). Muy cerca / muy lejos."
+  },
+  {
+   "id": "p:cerca-de",
+   "kind": "pattern",
+   "title": "Near, inside, in front of: cerca de, dentro de, delante de",
+   "es": "adverbio de lugar + de + sustantivo: Vivo cerca de la universidad. Está dentro de la caja. Hay una tienda al lado de mi casa. — sin sustantivo: Vivo cerca.",
+   "en": "near / inside / in front of / next to + noun.",
+   "unit": 7,
+   "requires": [
+    "g:estar-location-states",
+    "g:hay-vs-esta"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A2:304",
+    "gramatica:A2:305"
+   ],
+   "sources": [
+    "gr-adverbios-circunstanciales-a2"
+   ],
+   "note": "Pitfall: *cerca la casa (de is required before a noun; dropped when nothing follows). de + el → del: al lado del banco. Include encima de, debajo de, detrás de, al frente de (LatAm) / enfrente de."
+  },
+  {
+   "id": "p:ordinals-primer-tercer",
+   "kind": "pattern",
+   "title": "First, second, third floor: el primer piso, la segunda vez",
+   "es": "ordinales que concuerdan; primero/tercero → primer/tercer ante sustantivo masculino singular: Vivo en el tercer piso. Es la primera vez. el primer día.",
+   "en": "first/second/third: I live on the third floor. It's the first time.",
+   "unit": 7,
+   "requires": [
+    "g:adjective-agreement"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:167",
+    "gramatica:A1:168"
+   ],
+   "sources": [
+    "gr-numerales-a1",
+    "gr-indefinidos-negativos-b1"
+   ],
+   "note": "Same shortening as uno→un, alguno→algún, bueno→buen. *el primero día is wrong; la primera vez keeps -a. Beyond décimo, people use cardinals (el piso 15). Floor = piso in LatAm."
+  },
+  {
+   "id": "p:unos-approx",
+   "kind": "pattern",
+   "title": "About, roughly: unas veinte personas",
+   "es": "unos / unas + número = aproximadamente: Había unas veinte personas. Cuesta unos diez mil pesos. Tiene unos sesenta años.",
+   "en": "unos + number = about: There were about twenty people.",
+   "unit": 7,
+   "requires": [
+    "g:quantifiers",
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A2:111"
+   ],
+   "sources": [
+    "gr-articulo-indefinido-valores-a2"
+   ],
+   "note": "Agrees with the noun (unas personas, unos pesos). Alternatives: más o menos, como (colloquial LatAm: como veinte personas). Links forward to the future of conjecture (tendrá unos sesenta años)."
+  },
+  {
+   "id": "p:poco-un-poco",
+   "kind": "pattern",
+   "title": "A little vs not much: un poco / poco",
+   "es": "poco (= no suficiente, tono negativo) vs un poco (= algo, neutro): Duermo poco. Hablo un poco de español. Estudié poco para el examen.",
+   "en": "poco = not much (a complaint); un poco = a bit (neutral): I don't sleep much. I speak a little Spanish.",
+   "unit": 7,
+   "requires": [
+    "g:quantifiers"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:313"
+   ],
+   "sources": [
+    "gr-cuantificadores-b1",
+    "gr-adverbios-modo-cantidad-b1"
+   ],
+   "note": "Before nouns: poca gente, pocos amigos (agrees); un poco de + mass noun (un poco de azúcar, never *un poca). Softer still: algo (Lee algo). Diminutive un poquito / un poquitico (Colombian)."
+  },
+  {
+   "id": "p:para-inf",
+   "kind": "pattern",
+   "title": "In order to: para + verb",
+   "es": "para + infinitivo (mismo sujeto) / ser para + infinitivo (función): Estudio español para trabajar en Bogotá. Esta tarjeta es para pagar el bus.",
+   "en": "in order to / (it's) for doing: I study Spanish to work in Bogotá. This card is for paying the bus.",
+   "unit": 8,
+   "requires": [
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:531",
+    "gramatica:A1:533",
+    "gramatica:A1:535"
+   ],
+   "sources": [
+    "gr-oraciones-finales-a1",
+    "gr-causales-b1"
+   ],
+   "note": "Pitfalls: *para trabajo (conjugated), *por trabajar for purpose. Different subject → para que + subj later (x:para-inf-que). Por + infinitive = cause, not purpose (x:por-inf-para-inf). Replace 'boli/gafas' examples with esfero/lapicero."
+  },
+  {
+   "id": "p:tener-ganas-de",
+   "kind": "pattern",
+   "title": "Feeling like doing something: tengo ganas de…",
+   "es": "tener (muchas) ganas de + infinitivo / sustantivo: Tengo ganas de salir. No tengo ganas de cocinar. ¡Qué ganas de verte!",
+   "en": "to feel like / look forward to: I feel like going out. I can't wait to see you!",
+   "unit": 8,
+   "requires": [
+    "g:verb-infinitive",
+    "g:yo-irregular"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:18"
+   ],
+   "sources": [
+    "gr-numero-sustantivos-b1",
+    "gr-cuantificadores-no-universales-a1"
+   ],
+   "note": "Ganas is always plural in this sense (*una gana); intensify with muchas, pocas (pocas ganas). Different subject → tener ganas de que + subj (later)."
+  },
+  {
+   "id": "p:es-adj-inf",
+   "kind": "pattern",
+   "title": "It's hard to…: es difícil aprender",
+   "es": "es + adjetivo + infinitivo (verdad general): Es difícil aprender idiomas. Es importante dormir bien. Hablar español es útil.",
+   "en": "It's hard / important / useful to…: It's important to sleep well.",
+   "unit": 8,
+   "requires": [
+    "g:verb-infinitive",
+    "g:ser-identity"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:376",
+    "gramatica:A1:506"
+   ],
+   "sources": [
+    "gr-infinitivo-usos-a1",
+    "gr-subordinadas-sustantivas-a1"
+   ],
+   "note": "Pitfalls: *Es difícil de aprender idiomas (no de here); *Estudiando es importante (infinitive, not gerund, for '-ing' as subject). Verb stays singular: Hablar idiomas es útil. With a specific person → es importante que + subj (g:subj-value)."
+  },
+  {
+   "id": "p:telling-time",
+   "kind": "pattern",
+   "title": "Telling the time: es la una, son las tres, a las ocho",
+   "es": "Es la una. Son las dos y media / las tres menos cuarto. ¿A qué hora…? —A las ocho. Eran las cinco cuando… / Serán las once.",
+   "en": "It's one o'clock. It's half past two. At what time? — At eight.",
+   "unit": 9,
+   "requires": [
+    "g:ser-identity",
+    "g:gender-articles"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:tell-time"
+   ],
+   "pcic": [],
+   "sources": [
+    "gr-articulo-definido-valores-a2",
+    "gr-preterito-imperfecto-a2",
+    "gr-futuro-imperfecto-b1"
+   ],
+   "note": "la/las because 'hora(s)' is understood; es only with la una (and mediodía/medianoche). Past = imperfect (eran las cinco), never *fueron. LatAm also: un cuarto para las tres, veinte para las ocho (recognition + use); de la mañana / de la tarde / de la noche."
+  },
+  {
+   "id": "p:por-la-manana",
+   "kind": "pattern",
+   "title": "In the morning, on Tuesday afternoon: por la mañana, el martes por la tarde",
+   "es": "por la mañana / por la tarde / por la noche; a las ocho de la mañana; el martes por la tarde: Me ducho por la mañana. Trabajo hasta las seis de la tarde.",
+   "en": "in the morning / afternoon / at night.",
+   "unit": 9,
+   "requires": [
+    "g:present-ar"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:tell-time"
+   ],
+   "pcic": [],
+   "sources": [
+    "gr-sustantivos-especiales-a2",
+    "gr-oraciones-simples-a2"
+   ],
+   "note": "por la mañana (part of the day) vs de la mañana (after a clock time). LatAm also uses en la mañana / en la tarde — teach both. mañana = tomorrow vs la mañana = the morning; pasado mañana."
+  },
+  {
+   "id": "p:es-de-noche-tarde",
+   "kind": "pattern",
+   "title": "It's late, it's night: es tarde, ya es de noche",
+   "es": "ser impersonal sin sujeto: Es tarde. Ya es de noche. Es temprano. Todavía es de día.",
+   "en": "It's late. It's already dark. It's early.",
+   "unit": 9,
+   "requires": [
+    "g:ser-identity"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:tell-time"
+   ],
+   "pcic": [
+    "gramatica:B1:598"
+   ],
+   "sources": [
+    "gr-ser-impersonal-b1",
+    "gr-pronombre-sujeto-a1"
+   ],
+   "note": "No subject, no 'it' (*Ello es tarde). Contrast llegar tarde (verb + adverb). Se me hizo tarde (recognition, later)."
+  },
+  {
+   "id": "p:soler-inf",
+   "kind": "pattern",
+   "title": "What you usually do: suelo + verb",
+   "es": "soler + infinitivo: Suelo desayunar a las siete. Los domingos solemos ir donde mi abuela. Antes solía correr.",
+   "en": "to usually do: I usually have breakfast at seven.",
+   "unit": 9,
+   "requires": [
+    "g:verb-infinitive",
+    "g:stem-boot"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:594"
+   ],
+   "sources": [
+    "gr-perifrasis-verbales-b1"
+   ],
+   "note": "o→ue boot verb (suelo, sueles). Only present and imperfect (solía); never *solí. Alternatives: por lo general, normalmente."
+  },
+  {
+   "id": "p:todos-los-dias",
+   "kind": "pattern",
+   "title": "Every day, the whole day: todos los días / todo el día",
+   "es": "todo + artículo + sustantivo: Trabajo todos los días. Estuve todo el día en casa. todas las semanas, toda la noche.",
+   "en": "every day (todos los días) vs all day (todo el día).",
+   "unit": 9,
+   "requires": [
+    "g:quantifiers"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A2:176",
+    "gramatica:A2:94"
+   ],
+   "sources": [
+    "gr-cuantificadores-a2",
+    "gr-articulo-definido-distribucion-a2",
+    "gr-presente-indicativo-valores-a1"
+   ],
+   "note": "Pitfalls: *todo días, *los todos días; the plural = every, the singular = the whole. cada día ≈ todos los días. todo el mundo = everybody (singular verb)."
+  },
+  {
+   "id": "p:lavarse-las-manos",
+   "kind": "pattern",
+   "title": "Washing your hands, brushing your teeth: me lavo las manos",
+   "es": "verbo reflexivo + artículo + parte del cuerpo/ropa: Me lavo los dientes. Se puso la chaqueta. Lávate las manos.",
+   "en": "I brush my teeth. She put her jacket on. Wash your hands.",
+   "unit": 9,
+   "requires": [
+    "g:reflexive-routine"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A2:89"
+   ],
+   "sources": [
+    "gr-articulo-definido-valores-a2",
+    "gr-objeto-indirecto-a2"
+   ],
+   "note": "Pitfall: *me lavo mis manos — the 'me' already says whose. Singular per person: Se quitaron el sombrero (each has one)."
+  },
+  {
+   "id": "p:otro-no-article",
+   "kind": "pattern",
+   "title": "Another one: otro tinto, otra vez",
+   "es": "otro / otra sin un: ¿Me regala otro tinto? Otra vez, por favor. Quiero otra.",
+   "en": "Another coffee, please. Again, please.",
+   "unit": 10,
+   "requires": [
+    "g:quantifiers"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A2:177"
+   ],
+   "sources": [
+    "gr-cuantificadores-a2"
+   ],
+   "note": "Pitfall: *un otro café — the commonest transfer error. Plural otros: otros dos tintos (number after otros). el otro / la otra = the other one."
+  },
+  {
+   "id": "p:el-agua-fria",
+   "kind": "pattern",
+   "title": "El agua, but cold: el agua fría",
+   "es": "el + sustantivo femenino con a- tónica (singular), pero sigue siendo femenino: el agua fría, las aguas, el hambre (mucha hambre), el área.",
+   "en": "Feminine nouns starting with a stressed a- take 'el' but stay feminine.",
+   "unit": 10,
+   "requires": [
+    "g:gender-articles",
+    "g:adjective-agreement"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A2:82",
+    "gramatica:A2:83"
+   ],
+   "sources": [
+    "gr-articulo-definido-distribucion-a2"
+   ],
+   "note": "Pitfalls: *el agua frío, *la agua. Also un agua (un agua de panela). Adjective and plural reveal the feminine. esta agua (demonstratives don't change)."
+  },
+  {
+   "id": "p:dejar-de-inf",
+   "kind": "pattern",
+   "title": "Stopping a habit: dejé de fumar",
+   "es": "dejar de + infinitivo: Dejé de fumar hace dos años. Ya no tomo gaseosa, dejé de tomarla. No dejes de llamarme.",
+   "en": "to stop doing: I stopped smoking two years ago.",
+   "unit": 11,
+   "requires": [
+    "g:verb-infinitive",
+    "g:preterite-ar"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:596"
+   ],
+   "sources": [
+    "gr-perifrasis-verbales-b1"
+   ],
+   "note": "de is required (*dejé fumar = I let smoke). Contrast dejar + noun (dejé las llaves). No dejes de… = be sure to…"
+  },
+  {
+   "id": "p:mas-de-number",
+   "kind": "pattern",
+   "title": "More than + a number: más de cien",
+   "es": "más / menos de + número (cantidad) vs más que (comparar con otra cosa): Cuesta más de cien mil pesos. Había menos de diez personas. — Sabe más que yo.",
+   "en": "more/less than + number: It costs more than 100,000 pesos.",
+   "unit": 11,
+   "requires": [
+    "g:comparatives"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:791",
+    "gramatica:B1:156"
+   ],
+   "sources": [
+    "gr-comparativas-b1",
+    "gr-cuantificadores-b1"
+   ],
+   "note": "Pitfall: *más que cien. Exception: no… más que = only (No tengo más que diez mil = I only have 10,000) — recognition."
+  },
+  {
+   "id": "p:mayor-menor",
+   "kind": "pattern",
+   "title": "Older, younger: mi hermano mayor",
+   "es": "mayor / menor para la edad; más grande / más pequeño para el tamaño: Mi hermana menor vive en Cali. Soy dos años mayor que él. — Esta casa es más grande.",
+   "en": "older/younger (age) vs bigger/smaller (size).",
+   "unit": 11,
+   "requires": [
+    "g:comparatives"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A2:66"
+   ],
+   "sources": [
+    "gr-comparativo-a2"
+   ],
+   "note": "Colloquial LatAm uses más grande / más chiquito for age with kids (recognition). el/la mayor = the eldest. una persona mayor = an elderly person."
+  },
+  {
+   "id": "p:hace-frio-weather",
+   "kind": "pattern",
+   "title": "Talking about the weather: hace frío, llueve, está nublado",
+   "es": "hace + frío / calor / sol / buen tiempo; llueve / está lloviendo; está nublado: Hoy hace mucho frío. Ayer hizo sol. Cuando llegamos, llovía.",
+   "en": "It's cold. It rained. It was raining when we arrived.",
+   "unit": 12,
+   "requires": [
+    "g:preterite-ser-ir-hacer",
+    "g:imperfect-states"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:talk-weather"
+   ],
+   "pcic": [
+    "gramatica:B1:206"
+   ],
+   "sources": [
+    "gr-oraciones-simples-a2",
+    "gr-se-multiuso-b1",
+    "gr-pronombre-sujeto-a1",
+    "gr-condicionales-a2",
+    "gr-preterito-indefinido-a2"
+   ],
+   "note": "No subject, no 'it'; hace stays singular. mucho frío (not *muy frío). Contrast tengo frío (me) / hace frío (weather) / está frío (the thing). Bogotá: hace frío, está haciendo sol, va a llover; 'tiempo' = weather and time."
+  },
+  {
+   "id": "p:volver-a-inf",
+   "kind": "pattern",
+   "title": "Doing something again: volvió a llamar",
+   "es": "volver a + infinitivo: Volvió a llamar. No vuelvo a comer ahí. ¿Puede volver a explicarlo?",
+   "en": "to do again: He called again. I'm never eating there again.",
+   "unit": 12,
+   "requires": [
+    "g:verb-infinitive",
+    "g:preterite-ar"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:595"
+   ],
+   "sources": [
+    "gr-perifrasis-verbales-b1"
+   ],
+   "note": "≈ otra vez / de nuevo. No vuelvo a + inf = never again. Contrast volver = come back (Volvió a casa). Pronouns: lo volvió a hacer / volvió a hacerlo."
+  },
+  {
+   "id": "p:creo-que-si",
+   "kind": "pattern",
+   "title": "I think so, I hope so: creo que sí / espero que no",
+   "es": "creo que sí / creo que no / espero que sí / dice que no; y creo que + frase (el que nunca se omite): Creo que tienes razón. —¿Viene? —Creo que sí.",
+   "en": "I think so / I don't think so / I hope so.",
+   "unit": 12,
+   "requires": [
+    "g:that-clauses"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:463"
+   ],
+   "sources": [
+    "gr-objeto-directo-a1"
+   ],
+   "note": "Pitfalls: *creo así (calque of 'I think so'), and dropping que (*creo tienes razón)."
+  },
+  {
+   "id": "p:street-names",
+   "kind": "pattern",
+   "title": "Addresses in Bogotá: queda en la carrera Séptima con calle 72",
+   "es": "¿Dónde queda…? —Queda en la calle 26 con carrera 7. la carrera Séptima, la avenida Boyacá (sin de): Vivo en la calle 45 # 13-20.",
+   "en": "Where is…? — It's on 26th Street at 7th Avenue.",
+   "unit": 13,
+   "requires": [
+    "g:estar-location-states",
+    "g:hay-vs-esta"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A2:410"
+   ],
+   "sources": [
+    "gr-restrictivos-nominales-a2"
+   ],
+   "note": "Apposition: no de between the type and the name (calle Alcalá, *calle de Alcalá; mi hermano Juan). quedar + place = to be located (permanent places); estar also fine. Reading addresses: calle 45 número 13-20."
+  },
+  {
+   "id": "p:me-duele",
+   "kind": "pattern",
+   "title": "Saying what hurts: me duele la cabeza",
+   "es": "me / te / le duele(n) + el/la + parte del cuerpo: Me duele la espalda. Le duelen los pies. ¿Te duele algo?",
+   "en": "My head hurts. His feet hurt. Does anything hurt?",
+   "unit": 15,
+   "requires": [
+    "g:gustar-full"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A2:437"
+   ],
+   "sources": [
+    "gr-verbos-predicativos-tipos-a2",
+    "gr-objeto-indirecto-a2",
+    "gr-articulo-definido-valores-a2",
+    "gr-articulo-indefinido-valores-a2"
+   ],
+   "note": "Like gustar: verb agrees with the body part (duelen los pies). Pitfall *me duele mi cabeza. Me duele un dedo = one of my fingers. Tener dolor de cabeza as alternative."
+  },
+  {
+   "id": "p:me-da-miedo",
+   "kind": "pattern",
+   "title": "It scares me, it makes me sad: me da miedo / me da pena",
+   "es": "me da + miedo / pena / rabia / pereza + infinitivo o sustantivo: Me da miedo hablar en público. Me da pereza salir. Me dan miedo las alturas.",
+   "en": "It scares me to speak in public. I can't be bothered to go out.",
+   "unit": 15,
+   "requires": [
+    "g:gustar-full",
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:664"
+   ],
+   "sources": [
+    "gr-subordinadas-sustantivas-b1"
+   ],
+   "note": "Same 'backwards' shape as gustar: verb agrees with what causes it (me dan miedo los perros). Colombian pena = embarrassment (me da pena = I'm embarrassed), not only sadness; pereza very common. Different subject → me da miedo que + subj (g:subj-emotion)."
+  },
+  {
+   "id": "p:el-rojo-la-grande",
+   "kind": "pattern",
+   "title": "The red one, the big one: el rojo, la grande",
+   "es": "artículo + adjetivo sin sustantivo (= 'the … one'); colores como nombres son masculinos: —¿Cuál camisa? —La azul. Me llevo el grande. Prefiero el verde. ¿La tiene en negro?",
+   "en": "the blue one, the big one; I prefer green.",
+   "unit": 16,
+   "requires": [
+    "g:adjective-agreement",
+    "g:demonstratives"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A1:46",
+    "gramatica:A2:28"
+   ],
+   "sources": [
+    "gr-adjetivos-calificativos-a1",
+    "gr-articulo-indefinido-valores-a2",
+    "gr-masculino-a2"
+   ],
+   "note": "No 'one': *la azul una. Agreement follows the omitted noun (la azul = la camisa azul). Colour named as itself is masculine (el rosado, el naranja). Possessive can't do this (*mi azul → la mía). Una está rota = one of them is broken."
+  },
+  {
+   "id": "p:event-ser-en",
+   "kind": "pattern",
+   "title": "Where an event takes place: la fiesta es en mi casa",
+   "es": "evento + ser + en/lugar o tiempo: La fiesta es en mi casa. El concierto es el sábado. ¿Dónde es la reunión? Hubo un accidente en la Séptima.",
+   "en": "The party is at my house. The concert is on Saturday. There was an accident on 7th.",
+   "unit": 17,
+   "requires": [
+    "g:ser-identity",
+    "g:estar-location-states",
+    "g:preterite-ser-ir-hacer"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:A2:18"
+   ],
+   "sources": [
+    "gr-sustantivos-especiales-a2"
+   ],
+   "note": "Events (fiesta, concierto, reunión, clase, partido) 'take place' with ser; people and things are located with estar. Hubo (not *había) for a one-off event in a story."
+  },
+  {
+   "id": "p:no-se-que-hacer",
+   "kind": "pattern",
+   "title": "I don't know what to do: no sé qué hacer",
+   "es": "no sé + qué / dónde / cómo / si + infinitivo: No sé qué hacer. No sé si ir. No sabía cómo decírselo.",
+   "en": "I don't know what to do / whether to go / how to tell him.",
+   "unit": 17,
+   "requires": [
+    "g:verb-infinitive",
+    "g:questions"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:529"
+   ],
+   "sources": [
+    "gr-formas-no-personales-b1"
+   ],
+   "note": "Question word keeps its accent (qué, cómo); si (whether) has none. Same subject only. Leads into indirect questions (g:indirect-questions)."
+  },
+  {
+   "id": "p:entonces-quedamos",
+   "kind": "pattern",
+   "title": "So, then: entonces / o sea que",
+   "es": "entonces (conclusión, confirmar un plan) / o sea que (es decir, la conclusión): Entonces quedamos el sábado, ¿no? Tengo mucho trabajo, o sea que no puedo salir.",
+   "en": "So we're meeting Saturday, right? I've got loads of work, so I can't go out.",
+   "unit": 17,
+   "requires": [
+    "g:cause-result"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:781"
+   ],
+   "sources": [
+    "gr-consecutivas-b1"
+   ],
+   "note": "Entonces is the everyday Colombian conversation glue (¿Entonces qué? = so what's the plan / what's up). o sea is also a filler — the reformulation sense comes later (g:reformulation). Always indicative."
+  },
+  {
+   "id": "p:trabajar-de",
+   "kind": "pattern",
+   "title": "Working as (for now): trabaja de mesero",
+   "es": "trabajar de + profesión (sin artículo): Trabaja de mesero los fines de semana. Trabajé de profesora en un colegio.",
+   "en": "to work as: He works as a waiter on weekends.",
+   "unit": 19,
+   "requires": [
+    "g:present-ar",
+    "g:ser-identity"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:607"
+   ],
+   "sources": [
+    "gr-ser-impersonal-b1"
+   ],
+   "note": "Pitfalls: *trabaja como un mesero (como is possible, without article); trabajar en = place (trabajo en un banco). Old lesson said camarero → mesero. Está de mesero (estar de) comes later (g:ser-estar-c1)."
+  },
+  {
+   "id": "p:te-importaria",
+   "kind": "pattern",
+   "title": "Would you mind…? ¿Te importaría…? / ¿Podrías…?",
+   "es": "¿Podrías / Podría + infinitivo? ¿Te / Le importaría + infinitivo?: ¿Podrías prestarme el cargador? ¿Le importaría cerrar la ventana?",
+   "en": "Could you…? Would you mind…?",
+   "unit": 21,
+   "requires": [
+    "g:conditional"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:422"
+   ],
+   "sources": [
+    "gr-condicional-simple-b1"
+   ],
+   "note": "Softer than ¿Puedes…? Answer to ¿Te importaría…? is No, para nada / Claro (careful: 'sí' means 'yes I'd mind'). Colombian ¿Será que me podría…? comes with g:softening."
+  },
+  {
+   "id": "p:se-reciproco",
+   "kind": "pattern",
+   "title": "Each other: se conocieron, nos queremos",
+   "es": "nos / se + verbo = el uno al otro: Se conocieron en la universidad. Nos escribimos todos los días. Se ayudan (el uno al otro).",
+   "en": "They met at university. We write to each other every day.",
+   "unit": 22,
+   "requires": [
+    "g:reflexive-routine",
+    "g:preterite-er-ir"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:650",
+    "gramatica:B1:651"
+   ],
+   "sources": [
+    "gr-se-multiuso-b1"
+   ],
+   "note": "Plural only. Add el uno al otro / entre ellos to disambiguate from reflexive (se miran = look at themselves / each other). Relationship verbs: conocerse, casarse, separarse, verse, llamarse."
+  },
+  {
+   "id": "p:de-los-ojos-azules",
+   "kind": "pattern",
+   "title": "The girl with blue eyes: la chica de los ojos azules",
+   "es": "persona + de + el/la + rasgo + adjetivo: la chica del pelo largo, el señor de la camisa roja, el de las gafas.",
+   "en": "the girl with long hair, the man in the red shirt, the one with glasses.",
+   "unit": 25,
+   "requires": [
+    "g:adjective-agreement",
+    "g:relative-que"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:564"
+   ],
+   "sources": [
+    "gr-complementos-modificadores-b1"
+   ],
+   "note": "de, not con, when it identifies someone (con is also heard for the feature itself). The adjective is required (*la chica de los ojos). el de… / la de… = the one with…"
+  },
+  {
+   "id": "p:ponerse-a-inf",
+   "kind": "pattern",
+   "title": "Suddenly starting: se puso a llorar",
+   "es": "ponerse a + infinitivo (empezar de repente): Se puso a llover. Me puse a estudiar a las diez. Se pusieron a gritar.",
+   "en": "to start (doing): It started to rain. They started shouting.",
+   "unit": 26,
+   "requires": [
+    "g:verb-infinitive",
+    "g:preterite-irregular-strong"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:593"
+   ],
+   "sources": [
+    "gr-perifrasis-verbales-b1"
+   ],
+   "note": "More sudden/agentive than empezar a. Don't confuse with ponerse + adjective (ponerse nervioso, g:verbs-of-change)."
+  },
+  {
+   "id": "p:dentro-de-vs-despues",
+   "kind": "pattern",
+   "title": "In two days vs two days later: dentro de / después",
+   "es": "dentro de + tiempo (desde ahora) vs tiempo + después / más tarde (desde un punto del relato); la semana pasada vs la semana anterior: Vuelvo dentro de una hora. Llegó el lunes y dos días después se fue.",
+   "en": "in an hour (from now) vs two days later (in a story).",
+   "unit": 26,
+   "requires": [
+    "g:time-sequence"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:304",
+    "gramatica:B1:305"
+   ],
+   "sources": [
+    "gr-adverbios-modo-cantidad-b1"
+   ],
+   "note": "Pitfall: *en dos horas for 'in two hours' (heard in LatAm; teach dentro de, accept en). In past stories use después / al día siguiente / la semana anterior, not dentro de / mañana / la semana pasada (prepares reported speech shifts)."
+  },
+  {
+   "id": "p:infinitive-instructions",
+   "kind": "pattern",
+   "title": "Signs and instructions: No fumar. Marcar el número.",
+   "es": "infinitivo como instrucción general (letreros, recetas, formularios): No fumar. Mantener la puerta cerrada. Pelar y picar la cebolla.",
+   "en": "No smoking. Keep the door closed. Peel and chop the onion.",
+   "unit": 27,
+   "requires": [
+    "g:verb-infinitive",
+    "g:written-register-a2"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:528"
+   ],
+   "sources": [
+    "gr-formas-no-personales-b1"
+   ],
+   "note": "Impersonal, addressed to anyone; not a rude tú command. In speech use the imperative or se (se pela la cebolla)."
+  },
+  {
+   "id": "p:yo-diria-que",
+   "kind": "pattern",
+   "title": "Softening your opinion: yo diría que…",
+   "es": "yo diría que / yo no diría eso / me parece que: Yo diría que es más caro. Yo no diría que es malo, pero…",
+   "en": "I'd say it's more expensive. I wouldn't say it's bad, but…",
+   "unit": 28,
+   "requires": [
+    "g:conditional",
+    "g:that-clauses"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:423"
+   ],
+   "sources": [
+    "gr-condicional-simple-b1"
+   ],
+   "note": "Modesty conditional — sounds less blunt than digo que. Indicative after yo diría que."
+  },
+  {
+   "id": "p:seguramente-probablemente",
+   "kind": "pattern",
+   "title": "Probably, surely: seguramente, probablemente",
+   "es": "seguramente / probablemente / posiblemente + indicativo (más seguro) o subjuntivo (menos seguro): Seguramente está en la oficina. Probablemente llegue tarde. —¿Viene? —Posiblemente.",
+   "en": "He's probably at the office. She'll probably be late.",
+   "unit": 29,
+   "requires": [
+    "g:quizas-a-lo-mejor",
+    "g:subj-irregulars"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:348",
+    "gramatica:B1:349"
+   ],
+   "sources": [
+    "gr-modalidad-b1"
+   ],
+   "note": "seguramente = 'most likely', NOT 'surely/certainly'. Mood choice is free; indicative is the safer default. Contrast a lo mejor (always indicative)."
+  },
+  {
+   "id": "p:encontrar-participle",
+   "kind": "pattern",
+   "title": "Finding things in a state: encontré la puerta abierta",
+   "es": "verbo + objeto + participio que concuerda: Encontré la puerta abierta. Dejé el carro mal parqueado. Llegó cansada.",
+   "en": "I found the door open. I left the car badly parked. She arrived tired.",
+   "unit": 34,
+   "requires": [
+    "g:estar-participle",
+    "g:preterite-er-ir"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "gramatica:B1:541"
+   ],
+   "sources": [
+    "gr-formas-no-personales-b1",
+    "gr-participio-adjetival-a1"
+   ],
+   "note": "Participle agrees with what it describes (la puerta abierta, las ventanas rotas). Useful for police reports/mishaps."
+  },
+  {
+   "id": "c:siga-siga",
+   "kind": "chunk",
+   "title": "Come in! Siga, siga / Pase, pase",
+   "es": "¡Siga, siga! ¡Pase! ¡Siga, por favor!",
+   "en": "Come in! Go ahead! (welcoming someone)",
+   "unit": 13,
+   "requires": [
+    "g:commands-usted"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-imperativo-valores-b1"
+   ],
+   "note": "Colombian welcome (siga = come in / go ahead); doubling = warmth, not an order. Tú: pasa, pasa. Peninsular venga/anda dropped.",
+   "unpacks": "g:commands-usted"
+  },
+  {
+   "id": "c:oye-mira",
+   "kind": "chunk",
+   "title": "Getting attention: oye, mira, dime",
+   "es": "Oye, ¿tienes un minuto? Mira, el problema es… —Laura. —Dime.",
+   "en": "Hey, have you got a minute? Look, the thing is… — Go ahead.",
+   "unit": 13,
+   "requires": [
+    "g:commands-tu"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-imperativo-valores-b1"
+   ],
+   "note": "Usted: oiga, mire, dígame (also on the phone). Fillers, not real commands.",
+   "unpacks": "g:commands-tu"
+  },
+  {
+   "id": "c:todo-saldra-bien",
+   "kind": "chunk",
+   "title": "Everything will be OK: todo va a salir bien",
+   "es": "Tranquilo, todo va a salir bien. Todo saldrá bien.",
+   "en": "Don't worry, everything will be fine.",
+   "unit": 20,
+   "requires": [
+    "g:future-promises"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-futuro-imperfecto-b1"
+   ],
+   "note": "Reassurance formula; va a salir is more conversational, saldrá more solemn.",
+   "unpacks": "g:future-promises"
+  },
+  {
+   "id": "d:say-whose",
+   "kind": "cando",
+   "title": "I can ask and say whose something is.",
+   "es": "¿De quién es? —Es de mi hermana. Es mío.",
+   "en": "",
+   "unit": 5,
+   "requires": [
+    "g:possessives"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-posesivos-distribucion-a1",
+    "gr-posesivos-forma-a1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:tell-time",
+   "kind": "cando",
+   "title": "I can ask and tell the time and say when things happen in my day.",
+   "es": "¿Qué hora es? —Son las tres y media. ¿A qué hora…? —A las ocho de la mañana.",
+   "en": "",
+   "unit": 9,
+   "requires": [
+    "g:ser-identity"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-articulo-definido-valores-a2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:talk-weather",
+   "kind": "cando",
+   "title": "I can talk about the weather today and what it was like.",
+   "es": "Hoy hace frío. Ayer llovió todo el día.",
+   "en": "",
+   "unit": 12,
+   "requires": [
+    "g:preterite-ser-ir-hacer"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-oraciones-simples-a2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "x:yo-vs-a-mi-tambien",
+   "kind": "contrast",
+   "title": "Me too: yo también or a mí también?",
+   "es": "—Vivo en Bogotá. —Yo también. / —Me encanta el ajiaco. —A mí también.",
+   "en": "I live in Bogotá. — Me too. / I love ajiaco. — Me too.",
+   "unit": 10,
+   "requires": [],
+   "contrasts": [
+    "p:tambien-tampoco",
+    "g:gustar-full"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-adverbios-afirmacion-negacion-a1",
+    "gr-pronombres-tonicos-a2"
+   ],
+   "note": "Echo the shape of the statement: Trabajo aquí → Yo también; Me gusta → A mí también; No me gusta → A mí tampoco. *Yo también after me gusta is a top A1 error."
+  },
+  {
+   "id": "x:por-inf-para-inf",
+   "kind": "contrast",
+   "title": "Por + verb (because) vs para + verb (in order to)",
+   "es": "Lo multaron por manejar rápido. / Manejó rápido para llegar a tiempo.",
+   "en": "He was fined for driving fast. / He drove fast to arrive on time.",
+   "unit": 38,
+   "requires": [],
+   "contrasts": [
+    "g:causal-advanced",
+    "p:para-inf"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-causales-b1",
+    "gr-oraciones-finales-a1"
+   ],
+   "note": "por looks back at a cause, para forward to a goal: Lo despidieron por llegar tarde / Madrugó para llegar temprano."
+  },
+  {
+   "id": "x:que-three-ways",
+   "kind": "contrast",
+   "title": "Three que's: ¿qué?, el que relative, creo que",
+   "es": "¿Qué libro? / El libro que leo. / Creo que es bueno.",
+   "en": "Which book? / The book I'm reading. / I think it's good.",
+   "unit": 14,
+   "requires": [],
+   "contrasts": [
+    "g:questions",
+    "g:relative-que",
+    "g:that-clauses"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-relativo-que-a1",
+    "gr-interrogativos-a1",
+    "gr-subordinadas-adjetivas-a1",
+    "gr-objeto-directo-a1",
+    "gr-adverbios-relativos-b1"
+   ],
+   "note": "Accent only on the question/exclamation word (¿Qué…?, No sé qué…, ¡Qué…!); relative que (el libro que leo) and conjunction que (creo que…) carry none and are never dropped."
+  },
+  {
+   "id": "x:perfecto-preterito",
+   "kind": "contrast",
+   "title": "He ido vs fui: experience vs a dated past",
+   "es": "¿Has estado en Cartagena? —Sí, fui el año pasado.",
+   "en": "Have you been to Cartagena? — Yes, I went last year.",
+   "unit": 8,
+   "requires": [],
+   "contrasts": [
+    "g:perfecto-experience",
+    "g:preterite-ser-ir-hacer"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-preterito-perfecto-a2",
+    "gr-preterito-indefinido-a2"
+   ],
+   "note": "LatAm: preterite for any finished event including today (Hoy fui al banco); perfecto for experience/'ever' and 'not yet' (¿Has ido a Cartagena? Todavía no he ido). Drop the old lesson's Peninsular 'hoy he…' framing."
+  },
+  {
+   "id": "x:pluperfect-preterite",
+   "kind": "contrast",
+   "title": "Ya se había ido vs se fue",
+   "es": "Cuando llegué, ya se había ido. / Cuando llegué, se fue.",
+   "en": "When I arrived, he had already left. / When I arrived, he left.",
+   "unit": 31,
+   "requires": [],
+   "contrasts": [
+    "g:pluperfect",
+    "g:preterite-er-ir"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-pluscuamperfecto-b1"
+   ],
+   "note": "Cuando llegamos, se fue (he left as we arrived) vs ya se había ido (he'd left before). Pluperfect needs a second past anchor; it does not mean 'long ago'."
+  },
+  {
+   "id": "x:future-prediction-conjecture",
+   "kind": "contrast",
+   "title": "Estará en casa: will be or probably is?",
+   "es": "Mañana lloverá. / ¿Dónde está Vale? —Estará en el trabajo.",
+   "en": "It'll rain tomorrow. / Where's Vale? — She's probably at work.",
+   "unit": 20,
+   "requires": [],
+   "contrasts": [
+    "g:future-promises",
+    "g:future-conjecture"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-futuro-imperfecto-b1"
+   ],
+   "note": "Same form, two times: Mañana estará en casa (prediction) vs No contesta… estará dormido (guess about now). Time words decide."
+  },
+  {
+   "id": "x:si-clause-no-future",
+   "kind": "contrast",
+   "title": "Si llueve, not *si lloverá",
+   "es": "Si llueve, no iré. / *Si lloverá, no iré.",
+   "en": "If it rains, I won't go.",
+   "unit": 20,
+   "requires": [],
+   "contrasts": [
+    "g:si-present",
+    "g:future-promises"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-condicionales-b1",
+    "gr-condicionales-a2"
+   ],
+   "note": "Real conditions: si + present always; the future (or imperative / present) goes only in the other half: Si tengo tiempo, iré."
+  },
+  {
+   "id": "x:ing-infinitive-gerund",
+   "kind": "contrast",
+   "title": "English -ing: estudiar or estudiando?",
+   "es": "Nadar es bueno. / Estoy nadando.",
+   "en": "Swimming is good. / I'm swimming.",
+   "unit": 9,
+   "requires": [],
+   "contrasts": [
+    "g:verb-infinitive",
+    "g:estar-gerund"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-infinitivo-usos-a1",
+    "gr-gerundio-a2"
+   ],
+   "note": "-ing as a noun (subject/object, after prepositions and gustar) = infinitive: Me gusta nadar, Antes de salir, Fumar es malo. Only 'be doing' = estar + gerund."
+  },
+  {
+   "id": "x:se-three-ways",
+   "kind": "contrast",
+   "title": "Three se's: se levanta, se conocieron, se vende",
+   "es": "Se levanta a las seis. / Se conocieron en 2010. / Se arrienda apartamento.",
+   "en": "He gets up at six. / They met in 2010. / Apartment for rent.",
+   "unit": 22,
+   "requires": [],
+   "contrasts": [
+    "g:reflexive-routine",
+    "p:se-reciproco",
+    "g:se-impersonal"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-se-multiuso-b1",
+    "gr-pronombre-se-a1"
+   ],
+   "note": "Reflexive (to oneself), reciprocal (to each other, plural), impersonal (nobody in particular). Ask: one person, two acting on each other, or no one named?"
+  },
+  {
+   "id": "x:tan-tanto",
+   "kind": "contrast",
+   "title": "Tan vs tanto: as tall as, as much as",
+   "es": "Es tan alto como tú. / Tiene tanta paciencia como tú. / Trabaja tanto como yo.",
+   "en": "He's as tall as you. / She has as much patience as you. / He works as much as I do.",
+   "unit": 24,
+   "requires": [],
+   "contrasts": [
+    "g:comparatives",
+    "g:tanto-como"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-comparativos-a2",
+    "gr-comparativo-a2"
+   ],
+   "note": "tan + adjective/adverb (invariable); tanto/a/os/as + noun (agrees); verb + tanto como (invariable). *tan gente, *tanto alto."
+  },
+  {
+   "id": "x:mi-mio",
+   "kind": "contrast",
+   "title": "Mi vs mío: my book vs a friend of mine",
+   "es": "mi amigo / un amigo mío / Es mío. / El mío es azul.",
+   "en": "my friend / a friend of mine / It's mine. / Mine is blue.",
+   "unit": 18,
+   "requires": [],
+   "contrasts": [
+    "g:possessives",
+    "g:possessives-stressed"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-posesivos-tonicos-a2",
+    "gr-posesivos-distribucion-a1",
+    "gr-restrictivos-nominales-a2"
+   ],
+   "note": "mi/tu/su before the noun, never alone; mío/tuyo/suyo after the noun, after ser, or with el/la to stand alone. *es mi, *el mi libro."
+  },
+  {
+   "id": "x:ser-event-estar-location",
+   "kind": "contrast",
+   "title": "La fiesta es en… vs la casa está en…",
+   "es": "La fiesta es en mi casa. Mi casa está en Chapinero.",
+   "en": "The party is at my place. My place is in Chapinero.",
+   "unit": 17,
+   "requires": [],
+   "contrasts": [
+    "p:event-ser-en",
+    "g:estar-location-states"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-sustantivos-especiales-a2",
+    "gr-nucleo-verbal-a1"
+   ],
+   "note": "Events take place → ser; people and things are located → estar. ¿Dónde es la fiesta? / ¿Dónde está tu casa?"
+  },
+  {
+   "id": "x:le-se-lo",
+   "kind": "contrast",
+   "title": "Le doy el libro → se lo doy (never *le lo)",
+   "es": "Le doy el libro. → Se lo doy.",
+   "en": "I give him the book. → I give it to him.",
+   "unit": 16,
+   "requires": [],
+   "contrasts": [
+    "g:indirect-objects",
+    "g:double-pronouns"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-pronombres-atonos-a2",
+    "gr-pronombres-combinados-b1"
+   ],
+   "note": "le/les becomes se before lo/la/los/las; the pair stays together (se lo voy a dar / voy a dárselo)."
+  },
+  {
+   "id": "x:commands-tu-usted",
+   "kind": "contrast",
+   "title": "Ven vs venga: telling a friend vs a stranger",
+   "es": "Ven, siéntate. / Venga, siéntese.",
+   "en": "Come, sit down (friend / stranger).",
+   "unit": 13,
+   "requires": [],
+   "contrasts": [
+    "g:commands-tu",
+    "g:commands-usted"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-imperativo-forma-a2"
+   ],
+   "note": "tú = él-form of the present (habla, come) + 8 irregulars; usted swaps the vowel (hable, coma). In Bogotá usted is common even among friends — choose by the relationship already in use. No vosotros forms."
+  },
+  {
+   "id": "x:body-article-possessive",
+   "kind": "contrast",
+   "title": "Me lavo las manos, not *mis manos",
+   "es": "Me duele la cabeza. Me lavo el pelo. / Mi casa es grande.",
+   "en": "My head hurts. I wash my hair. / My house is big.",
+   "unit": 9,
+   "requires": [],
+   "contrasts": [
+    "p:lavarse-las-manos",
+    "g:possessives"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-articulo-definido-valores-a2",
+    "gr-posesivo-dativo-b1"
+   ],
+   "note": "With body parts and clothes the pronoun says whose; the noun takes the article. Possessives stay for things that aren't 'part of you' or for contrast."
+  },
+  {
+   "id": "x:participle-agreement",
+   "kind": "contrast",
+   "title": "Estoy cansada vs he estado cansada",
+   "es": "Las tiendas están cerradas. / Han cerrado las tiendas.",
+   "en": "The shops are closed. / They've closed the shops.",
+   "unit": 15,
+   "requires": [],
+   "contrasts": [
+    "g:estar-participle",
+    "g:perfecto-experience"
+   ],
+   "serves": [],
+   "pcic": [],
+   "sources": [
+    "gr-participio-adjetival-a1",
+    "gr-preterito-perfecto-a2"
+   ],
+   "note": "Participle after estar/ser/noun agrees like an adjective (cansada, cerradas); after haber it never changes (he cerrado las ventanas)."
+  }
+ ],
+ "triage": [
+  {
+   "lesson": "gr-sonidos-a1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:sounds-letters. Fix: lesson says the app voice is peninsular (th) — Fluidez 2 is LatAm seseo; mention distinción only as recognition."
+  },
+  {
+   "lesson": "gr-acentuacion-a1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Merged into g:sounds-letters (stress rules, tilde diacrítica)."
+  },
+  {
+   "lesson": "gr-demostrativos-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Fully covered by g:demonstratives."
+  },
+  {
+   "lesson": "gr-nombres-propios-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:article-uses; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-genero-sustantivos-a1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:gender-articles (la moto/foto, el día/mapa/problema)."
+  },
+  {
+   "lesson": "gr-numero-sustantivos-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:gender-articles, g:adjective-agreement; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-adjetivos-calificativos-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:adjective-agreement, g:superlatives; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-genero-adjetivo-a1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:adjective-agreement (nationality -a)."
+  },
+  {
+   "lesson": "gr-articulo-definido-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:gender-articles, g:article-uses, g:gustar-basic; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-articulo-indefinido-a1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:gender-articles / g:hay-vs-esta (first vs second mention)."
+  },
+  {
+   "lesson": "gr-posesivos-distribucion-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:possessives; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-posesivos-forma-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:possessives; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-cuantificadores-no-universales-a1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:quantifiers; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-numerales-a1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds ; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-pronombre-se-a1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:reflexive-routine; drop os levantáis."
+  },
+  {
+   "lesson": "gr-pronombre-sujeto-a1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:ser-identity, g:present-ar; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-comparativo-a2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:comparatives, g:tanto-como; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-articulo-definido-valores-a2",
+   "verdict": "patterns",
+   "patterns": 5,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:article-uses, g:possessive-dative; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-articulo-indefinido-valores-a2",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:article-uses; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-nombres-escuetos-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Optional deep content; feeds g:article-uses."
+  },
+  {
+   "lesson": "gr-interrogativos-exclamativos-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:que-vs-cual and g:exclamations."
+  },
+  {
+   "lesson": "gr-cuantificadores-a2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:quantifiers, g:negation-words, g:indefinites; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-pronombres-atonos-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by object-pronoun grammar nodes; contrast x:le-se-lo added."
+  },
+  {
+   "lesson": "gr-pronombres-tonicos-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:prep-pronouns."
+  },
+  {
+   "lesson": "gr-condicionales-a2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:si-present; si/sí accent note."
+  },
+  {
+   "lesson": "gr-causales-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:cause-result."
+  },
+  {
+   "lesson": "gr-presente-subjuntivo-b1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Overview lesson split across the subjunctive nodes."
+  },
+  {
+   "lesson": "gr-imperativo-valores-b1",
+   "verdict": "chunks",
+   "patterns": 0,
+   "chunks": 2,
+   "wordThemes": [],
+   "note": "Covered by g:commands-tu, g:commands-usted"
+  },
+  {
+   "lesson": "gr-pronombres-combinados-b1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:double-pronouns."
+  },
+  {
+   "lesson": "gr-condicionales-b1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:si-present"
+  },
+  {
+   "lesson": "gr-concesivas-b1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:aunque-indicative."
+  },
+  {
+   "lesson": "gr-temporales-b1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:subj-cuando-future."
+  },
+  {
+   "lesson": "gr-consecutivas-b1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:cause-result, g:consequence-connectors; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-comparativas-b1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:tanto-como, g:comparatives; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-causales-b1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:cause-result, g:causal-advanced; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-relativas-b1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:relative-que / g:relatives-donde-lo-que."
+  },
+  {
+   "lesson": "gr-interrogativos-b1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:questions-prepositions."
+  },
+  {
+   "lesson": "gr-subordinadas-sustantivas-b1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:subj-wanting, g:subj-emotion-intro, g:infinitive-subject, g:subj-doubt; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-perifrasis-verbales-b1",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:acabar-de-ya-todavia, g:gerund-ways, g:tener-que-hay-que; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-ser-impersonal-b1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:subj-value; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-se-multiuso-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:se-impersonal, g:passive-se; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-modalidad-b1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:quizas-a-lo-mejor; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-adverbios-relativos-b1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:relatives-donde-lo-que, g:questions; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-indefinidos-negativos-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:indefinites, g:cada-cualquier; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-articulo-anaforico-escuetos-b1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Optional deep; feeds g:article-uses. Replace coger with tomar."
+  },
+  {
+   "lesson": "gr-pluscuamperfecto-b1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:pluperfect."
+  },
+  {
+   "lesson": "gr-posesivo-dativo-b1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:possessive-dative."
+  },
+  {
+   "lesson": "gr-modificadores-adverbios-b1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:comparatives-advanced / g:adverbs-mente / g:superlatives (no *muy enorme). Euros → pesos."
+  },
+  {
+   "lesson": "gr-demostrativos-distribucion-a1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:demonstratives."
+  },
+  {
+   "lesson": "gr-relativo-que-a1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:relative-que."
+  },
+  {
+   "lesson": "gr-adverbios-afirmacion-negacion-a1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:negation-words; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-adverbios-lugar-tiempo-cantidad-a1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:quantifiers; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-presente-indicativo-valores-a1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:present-ar, g:present-er-ir; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-infinitivo-usos-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:verb-infinitive, g:infinitive-subject; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-participio-adjetival-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:estar-participle; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-atributo-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:ser-identity, g:adjective-agreement; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-objeto-directo-a1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:direct-objects, g:that-clauses; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-oraciones-actitud-hablante-a1",
+   "verdict": "skip",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Cut: sentence-type terminology; ¿…? spelling folds into g:questions."
+  },
+  {
+   "lesson": "gr-oraciones-finales-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:para-que, g:por-para-1; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-masculino-a2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:gender-articles; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-articulo-definido-distribucion-a2",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:gender-articles, g:article-uses; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-posesivos-tonicos-a2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:possessives-stressed; whose-frame in p:de-owner."
+  },
+  {
+   "lesson": "gr-comparativos-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:comparatives / g:tanto-como; x:tan-tanto."
+  },
+  {
+   "lesson": "gr-preterito-imperfecto-a2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by imperfect nodes; drop vosotros."
+  },
+  {
+   "lesson": "gr-preterito-indefinido-a2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by preterite nodes."
+  },
+  {
+   "lesson": "gr-preterito-perfecto-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Peninsular 'hoy/esta semana' perfecto must be removed: LatAm perfecto = experience/not yet only. x:perfecto-preterito."
+  },
+  {
+   "lesson": "gr-imperativo-forma-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by command nodes; drop vosotros (hablad)."
+  },
+  {
+   "lesson": "gr-gerundio-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:estar-gerund."
+  },
+  {
+   "lesson": "gr-restrictivos-nominales-a2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:possessives-stressed; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-nucleo-verbal-tipos-a2",
+   "verdict": "skip",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Skip: verb-type terminology only."
+  },
+  {
+   "lesson": "gr-verbos-predicativos-tipos-a2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:gustar-basic, g:gustar-full; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-objeto-indirecto-a2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:indirect-objects, g:le-doubling, g:possessive-dative, g:gustar-full; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-cuantificadores-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Merged with gr-cuantificadores-a2."
+  },
+  {
+   "lesson": "gr-condicional-simple-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:conditional."
+  },
+  {
+   "lesson": "gr-futuro-imperfecto-b1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": "Feeds g:future-promises, g:future-conjecture; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-complementos-modificadores-b1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:nominalisation; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-interrogativos-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:questions; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-nucleo-verbal-a1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:ser-identity, g:estar-location-states, g:gustar-basic; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-subordinadas-sustantivas-a1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:verb-infinitive, g:that-clauses, g:infinitive-subject; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-subordinadas-adjetivas-a1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Duplicate of gr-relativo-que-a1 → g:relative-que."
+  },
+  {
+   "lesson": "gr-sustantivos-especiales-a2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:article-uses; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-demostrativos-valores-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:referring-back."
+  },
+  {
+   "lesson": "gr-adverbios-circunstanciales-a2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:negation-words, g:time-sequence; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-oraciones-simples-a2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:reflexive-routine, g:hace-que-desde; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-nombres-propios-b1",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:article-uses; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-genero-especial-b1",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Optional deep (epicenos, el manzano/la manzana, el/la colega) — recognition notes for g:gender-articles."
+  },
+  {
+   "lesson": "gr-numero-sustantivos-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:gender-articles; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-adverbios-modo-cantidad-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:adverbs-mente, g:time-sequence; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-formas-no-personales-b1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Feeds g:gerund-ways, g:verb-infinitive, g:indirect-questions; frames mined into pattern nodes."
+  },
+  {
+   "lesson": "gr-presente-irregular-a2",
+   "verdict": "duplicate",
+   "patterns": 0,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Covered by g:stem-boot / g:yo-irregular / g:stem-e-i. coger→cojo example: replace with escoger→escojo."
+  }
+ ],
+ "grammarSources": {
+  "gr-sonidos-a1": [
+   "g:sounds-letters"
+  ],
+  "gr-acentuacion-a1": [
+   "g:sounds-letters"
+  ],
+  "gr-demostrativos-a2": [
+   "g:demonstratives"
+  ],
+  "gr-nombres-propios-a1": [
+   "g:article-uses"
+  ],
+  "gr-genero-sustantivos-a1": [
+   "g:gender-articles"
+  ],
+  "gr-numero-sustantivos-a1": [
+   "g:gender-articles",
+   "g:adjective-agreement"
+  ],
+  "gr-adjetivos-calificativos-a1": [
+   "g:adjective-agreement",
+   "g:superlatives"
+  ],
+  "gr-genero-adjetivo-a1": [
+   "g:adjective-agreement",
+   "g:ser-identity"
+  ],
+  "gr-articulo-definido-a1": [
+   "g:gender-articles",
+   "g:article-uses",
+   "g:gustar-basic"
+  ],
+  "gr-articulo-indefinido-a1": [
+   "g:gender-articles",
+   "g:hay-vs-esta"
+  ],
+  "gr-posesivos-distribucion-a1": [
+   "g:possessives"
+  ],
+  "gr-posesivos-forma-a1": [
+   "g:possessives"
+  ],
+  "gr-cuantificadores-no-universales-a1": [
+   "g:quantifiers"
+  ],
+  "gr-numerales-a1": [],
+  "gr-pronombre-se-a1": [
+   "g:reflexive-routine"
+  ],
+  "gr-pronombre-sujeto-a1": [
+   "g:ser-identity",
+   "g:present-ar"
+  ],
+  "gr-comparativo-a2": [
+   "g:comparatives",
+   "g:tanto-como"
+  ],
+  "gr-articulo-definido-valores-a2": [
+   "g:article-uses",
+   "g:possessive-dative"
+  ],
+  "gr-articulo-indefinido-valores-a2": [
+   "g:article-uses"
+  ],
+  "gr-nombres-escuetos-a2": [
+   "g:article-uses"
+  ],
+  "gr-interrogativos-exclamativos-a2": [
+   "g:que-vs-cual",
+   "g:exclamations"
+  ],
+  "gr-cuantificadores-a2": [
+   "g:quantifiers",
+   "g:negation-words",
+   "g:indefinites"
+  ],
+  "gr-pronombres-atonos-a2": [
+   "g:direct-objects",
+   "g:indirect-objects",
+   "g:double-pronouns"
+  ],
+  "gr-pronombres-tonicos-a2": [
+   "g:prep-pronouns",
+   "g:gustar-full"
+  ],
+  "gr-condicionales-a2": [
+   "g:si-present"
+  ],
+  "gr-causales-a2": [
+   "g:cause-result",
+   "g:por-para-1"
+  ],
+  "gr-presente-subjuntivo-b1": [
+   "g:subj-wanting",
+   "g:subj-irregulars",
+   "g:subj-opinion-negated",
+   "g:subj-value"
+  ],
+  "gr-imperativo-valores-b1": [
+   "g:commands-tu",
+   "g:commands-usted"
+  ],
+  "gr-pronombres-combinados-b1": [
+   "g:double-pronouns",
+   "g:object-pronoun-position"
+  ],
+  "gr-condicionales-b1": [
+   "g:si-present"
+  ],
+  "gr-concesivas-b1": [
+   "g:aunque-indicative"
+  ],
+  "gr-temporales-b1": [
+   "g:subj-cuando-future",
+   "g:cuando-indicative"
+  ],
+  "gr-consecutivas-b1": [
+   "g:cause-result",
+   "g:consequence-connectors"
+  ],
+  "gr-comparativas-b1": [
+   "g:tanto-como",
+   "g:comparatives"
+  ],
+  "gr-causales-b1": [
+   "g:cause-result",
+   "g:causal-advanced"
+  ],
+  "gr-relativas-b1": [
+   "g:relative-que",
+   "g:relatives-donde-lo-que"
+  ],
+  "gr-interrogativos-b1": [
+   "g:questions-prepositions",
+   "g:que-vs-cual"
+  ],
+  "gr-subordinadas-sustantivas-b1": [
+   "g:subj-wanting",
+   "g:subj-emotion-intro",
+   "g:infinitive-subject",
+   "g:subj-doubt"
+  ],
+  "gr-perifrasis-verbales-b1": [
+   "g:acabar-de-ya-todavia",
+   "g:gerund-ways",
+   "g:tener-que-hay-que"
+  ],
+  "gr-ser-impersonal-b1": [
+   "g:subj-value"
+  ],
+  "gr-se-multiuso-b1": [
+   "g:se-impersonal",
+   "g:passive-se"
+  ],
+  "gr-modalidad-b1": [
+   "g:quizas-a-lo-mejor"
+  ],
+  "gr-adverbios-relativos-b1": [
+   "g:relatives-donde-lo-que",
+   "g:questions"
+  ],
+  "gr-indefinidos-negativos-b1": [
+   "g:indefinites",
+   "g:cada-cualquier"
+  ],
+  "gr-articulo-anaforico-escuetos-b1": [
+   "g:article-uses"
+  ],
+  "gr-pluscuamperfecto-b1": [
+   "g:pluperfect"
+  ],
+  "gr-posesivo-dativo-b1": [
+   "g:possessive-dative",
+   "g:possessives-stressed"
+  ],
+  "gr-modificadores-adverbios-b1": [
+   "g:comparatives-advanced",
+   "g:adverbs-mente",
+   "g:superlatives"
+  ],
+  "gr-demostrativos-distribucion-a1": [
+   "g:demonstratives"
+  ],
+  "gr-relativo-que-a1": [
+   "g:relative-que"
+  ],
+  "gr-adverbios-afirmacion-negacion-a1": [
+   "g:negation-words"
+  ],
+  "gr-adverbios-lugar-tiempo-cantidad-a1": [
+   "g:quantifiers"
+  ],
+  "gr-presente-indicativo-valores-a1": [
+   "g:present-ar",
+   "g:present-er-ir"
+  ],
+  "gr-infinitivo-usos-a1": [
+   "g:verb-infinitive",
+   "g:infinitive-subject"
+  ],
+  "gr-participio-adjetival-a1": [
+   "g:estar-participle"
+  ],
+  "gr-atributo-a1": [
+   "g:ser-identity",
+   "g:adjective-agreement"
+  ],
+  "gr-objeto-directo-a1": [
+   "g:direct-objects",
+   "g:that-clauses"
+  ],
+  "gr-oraciones-actitud-hablante-a1": [
+   "g:questions"
+  ],
+  "gr-oraciones-finales-a1": [
+   "g:para-que",
+   "g:por-para-1"
+  ],
+  "gr-masculino-a2": [
+   "g:gender-articles"
+  ],
+  "gr-articulo-definido-distribucion-a2": [
+   "g:gender-articles",
+   "g:article-uses"
+  ],
+  "gr-posesivos-tonicos-a2": [
+   "g:possessives-stressed"
+  ],
+  "gr-comparativos-a2": [
+   "g:comparatives",
+   "g:tanto-como"
+  ],
+  "gr-preterito-imperfecto-a2": [
+   "g:imperfect-states",
+   "g:imperfect-habitual",
+   "g:pret-vs-imperfect"
+  ],
+  "gr-preterito-indefinido-a2": [
+   "g:preterite-ar",
+   "g:preterite-er-ir",
+   "g:preterite-ser-ir-hacer",
+   "g:preterite-irregular-strong"
+  ],
+  "gr-preterito-perfecto-a2": [
+   "g:perfecto-experience"
+  ],
+  "gr-imperativo-forma-a2": [
+   "g:commands-tu",
+   "g:commands-usted",
+   "g:commands-with-pronouns"
+  ],
+  "gr-gerundio-a2": [
+   "g:estar-gerund",
+   "g:gerund-ways"
+  ],
+  "gr-restrictivos-nominales-a2": [
+   "g:possessives-stressed"
+  ],
+  "gr-nucleo-verbal-tipos-a2": [],
+  "gr-verbos-predicativos-tipos-a2": [
+   "g:gustar-basic",
+   "g:gustar-full"
+  ],
+  "gr-objeto-indirecto-a2": [
+   "g:indirect-objects",
+   "g:le-doubling",
+   "g:possessive-dative",
+   "g:gustar-full"
+  ],
+  "gr-cuantificadores-b1": [
+   "g:indefinites",
+   "g:cada-cualquier"
+  ],
+  "gr-condicional-simple-b1": [
+   "g:conditional"
+  ],
+  "gr-futuro-imperfecto-b1": [
+   "g:future-promises",
+   "g:future-conjecture"
+  ],
+  "gr-complementos-modificadores-b1": [
+   "g:nominalisation"
+  ],
+  "gr-interrogativos-a1": [
+   "g:questions"
+  ],
+  "gr-nucleo-verbal-a1": [
+   "g:ser-identity",
+   "g:estar-location-states",
+   "g:gustar-basic"
+  ],
+  "gr-subordinadas-sustantivas-a1": [
+   "g:verb-infinitive",
+   "g:that-clauses",
+   "g:infinitive-subject"
+  ],
+  "gr-subordinadas-adjetivas-a1": [
+   "g:relative-que"
+  ],
+  "gr-sustantivos-especiales-a2": [
+   "g:article-uses"
+  ],
+  "gr-demostrativos-valores-a2": [
+   "g:demonstratives",
+   "g:referring-back"
+  ],
+  "gr-adverbios-circunstanciales-a2": [
+   "g:negation-words",
+   "g:time-sequence"
+  ],
+  "gr-oraciones-simples-a2": [
+   "g:reflexive-routine",
+   "g:hace-que-desde"
+  ],
+  "gr-nombres-propios-b1": [
+   "g:article-uses"
+  ],
+  "gr-genero-especial-b1": [
+   "g:gender-articles"
+  ],
+  "gr-numero-sustantivos-b1": [
+   "g:gender-articles"
+  ],
+  "gr-adverbios-modo-cantidad-b1": [
+   "g:adverbs-mente",
+   "g:time-sequence"
+  ],
+  "gr-formas-no-personales-b1": [
+   "g:gerund-ways",
+   "g:verb-infinitive",
+   "g:indirect-questions"
+  ],
+  "gr-presente-irregular-a2": [
+   "g:stem-boot",
+   "g:yo-irregular",
+   "g:stem-e-i"
+  ]
+ }
+}

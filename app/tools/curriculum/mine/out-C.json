@@ -1,0 +1,4472 @@
+{
+ "nodes": [
+  {
+   "id": "p:en-general",
+   "kind": "pattern",
+   "title": "Talking about the usual case: en general, por lo general",
+   "es": "En general / Por lo general / Por norma general + statement: En general, la gente del barrio es muy amable. Por lo general llego a las ocho.",
+   "en": "in general / usually / as a rule: In general, people in the neighbourhood are very friendly. I usually get in at eight.",
+   "unit": 28,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:44",
+    "nociones_generales:B1:45",
+    "nociones_generales:B1:47",
+    "nociones_generales:B2:1004",
+    "nociones_generales:B2:1006"
+   ],
+   "sources": [
+    "nt-cualidad-generalidad-b1",
+    "nt-importancia-normalidad-b2",
+    "nt-generalidad-especificidad-b2"
+   ],
+   "note": "Pitfall: en general makes a claim about the typical case, not one instance. Pair with en concreto later (p:concretar). Con normalidad = 'without incident' (La reunión se desarrolló con normalidad), not 'normally'."
+  },
+  {
+   "id": "p:sobre-todo",
+   "kind": "pattern",
+   "title": "Picking out the main case: sobre todo",
+   "es": "general claim + sobre todo + the standout case: Me preocupa el barrio, sobre todo la seguridad. Me gustan los deportes, sobre todo el fútbol.",
+   "en": "especially / above all: The neighbourhood worries me, especially safety.",
+   "unit": 28,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:157",
+    "nociones_generales:B1:158",
+    "nociones_generales:B1:166"
+   ],
+   "sources": [
+    "nt-aumento-proporcion-grado-b1"
+   ],
+   "note": "Not a literal 'on top of everything'. Also works alone after a clause: Lo hago por mi familia, sobre todo."
+  },
+  {
+   "id": "p:encontrar-ver-adj",
+   "kind": "pattern",
+   "title": "Giving a verdict on something: lo encuentro caro, la veo cansada",
+   "es": "encontrar / ver + object pronoun + adjective: Lo encuentro un poco caro para lo que es. Te veo muy bien. ¿Cómo me ves?",
+   "en": "find / think something looks + adjective: I find it a bit expensive for what it is. You look really well.",
+   "unit": 28,
+   "requires": [
+    "g:direct-objects",
+    "g:adjective-agreement"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:890",
+    "nociones_generales:B1:891",
+    "nociones_generales:B1:893"
+   ],
+   "sources": [
+    "nt-evaluacion-valor-b1"
+   ],
+   "note": "Unlike me parece (gustar pattern, thing = subject), encontrar/ver take the person as subject and the thing as direct object. The adjective agrees with the object: la encuentro cara. Rich verdict nouns fit here too: fue un desastre, es una maravilla."
+  },
+  {
+   "id": "p:pensar-en",
+   "kind": "pattern",
+   "title": "Thinking about vs thinking that: pensar en / pensar que",
+   "es": "pensar en + noun/inf (have in mind) vs pensar que + opinion vs pensar + inf (plan): Pienso mucho en mi abuela. Pienso que es un error. Pienso mudarme.",
+   "en": "think about / think that / plan to: I think about my grandmother a lot. I think it's a mistake. I'm planning to move.",
+   "unit": 28,
+   "requires": [
+    "g:that-clauses",
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:1025",
+    "nociones_generales:B1:1027",
+    "nociones_generales:B1:1030"
+   ],
+   "sources": [
+    "nt-reflexion-expresion-b1"
+   ],
+   "note": "Pitfall: *pienso sobre ti / *pienso de ti for 'think about'. ¿Qué piensas de…? asks for an opinion. No pienso que + subjunctive (g:subj-opinion-negated)."
+  },
+  {
+   "id": "p:esta-claro-que",
+   "kind": "pattern",
+   "title": "Saying something is obvious: está claro que, es evidente que",
+   "es": "Está claro que / Es evidente que / Es obvio que + indicative; no está claro que + subjunctive: Está claro que no va a venir. No está claro que funcione.",
+   "en": "it's clear / obvious that…: It's clear he's not coming. It's not clear that it will work.",
+   "unit": 29,
+   "requires": [
+    "g:subj-doubt"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:certainty-necessity"
+   ],
+   "pcic": [
+    "nociones_generales:B1:70",
+    "nociones_generales:B1:71",
+    "nociones_generales:B1:75",
+    "nociones_generales:B2:77",
+    "nociones_generales:B2:78"
+   ],
+   "sources": [
+    "nt-certeza-realidad-b1",
+    "nt-certeza-b2"
+   ],
+   "note": "The certainty side of the doubt scale; negate it and the subjunctive comes back. Also estar seguro de que (de is needed: *estoy seguro que is widely heard but avoid in writing)."
+  },
+  {
+   "id": "p:de-pronto-igual",
+   "kind": "pattern",
+   "title": "Maybe, the casual way: de pronto, igual",
+   "es": "De pronto / Igual + indicative: De pronto llueve más tarde. Igual no viene, no sé.",
+   "en": "maybe / it could be that: Maybe it'll rain later. He might not come, I don't know.",
+   "unit": 29,
+   "requires": [
+    "g:quizas-a-lo-mejor"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:certainty-necessity"
+   ],
+   "pcic": [
+    "nociones_generales:B2:77",
+    "nociones_generales:B2:78",
+    "nociones_generales:B2:79",
+    "nociones_generales:B1:70",
+    "nociones_generales:B1:71"
+   ],
+   "sources": [
+    "nt-certeza-b2",
+    "nt-certeza-realidad-b1"
+   ],
+   "note": "Colombian 'de pronto' = maybe (not only 'suddenly'); igual = maybe, colloquial. Both behave like a lo mejor: indicative. Recognition: in Spain 'igual' is common too. Do not confuse igual 'maybe' with igual 'the same'."
+  },
+  {
+   "id": "p:dar-igual",
+   "kind": "pattern",
+   "title": "Saying you don't mind: me da igual, me da lo mismo",
+   "es": "(a alguien) le da igual / lo mismo + noun / inf / que + subjunctive: Me da igual ir al cine o quedarnos en la casa. Me da lo mismo lo que decidas.",
+   "en": "I don't mind / it's all the same to me: I don't mind whether we go to the cinema or stay home.",
+   "unit": 29,
+   "requires": [
+    "g:gustar-full",
+    "g:subj-emotion-intro"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:966",
+    "nociones_generales:B1:969",
+    "nociones_generales:B1:977",
+    "nociones_generales:B2:1004",
+    "nociones_generales:B2:1006"
+   ],
+   "sources": [
+    "nt-exito-utilidad-importancia-b1",
+    "nt-importancia-normalidad-b2"
+   ],
+   "note": "Gustar pattern: *yo doy igual is wrong. Pitfall: it signals indifference, not approval — as an answer to a suggestion it can sound dismissive; me parece bien is the approving answer. 'Que + subjunctive' after it: Me da igual que llegues tarde."
+  },
+  {
+   "id": "p:darse-cuenta-de",
+   "kind": "pattern",
+   "title": "Saying you realised: me di cuenta de",
+   "es": "darse cuenta de + noun / de que + clause: Me di cuenta de mi error demasiado tarde. ¿No te das cuenta de que te está mintiendo?",
+   "en": "to realise / notice: I realised my mistake too late. Don't you realise he's lying to you?",
+   "unit": 29,
+   "requires": [
+    "g:that-clauses",
+    "g:reflexive-routine"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:realise-findout"
+   ],
+   "pcic": [
+    "nociones_generales:B1:1025",
+    "nociones_generales:B1:1027",
+    "nociones_generales:B1:1030",
+    "nociones_generales:B2:1034",
+    "nociones_generales:B2:1037"
+   ],
+   "sources": [
+    "nt-reflexion-expresion-b1",
+    "nt-reflexion-conocimiento-b2"
+   ],
+   "note": "Reflexive and the de is obligatory: *me di cuenta que is common in speech but marked in writing; never *realicé (realizar = to carry out). Contrast with enterarse de (find out) and ser consciente de (be aware)."
+  },
+  {
+   "id": "p:oler-a-saber-a",
+   "kind": "pattern",
+   "title": "Saying what something smells or tastes of: huele a café, sabe a ajo",
+   "es": "oler a / saber a / tener sabor a + noun (no article for substances): Huele a gas en la cocina. Esta salsa sabe a ajo. Huele a quemado.",
+   "en": "to smell of / taste of: It smells of gas in the kitchen. This sauce tastes of garlic. Something's burning.",
+   "unit": 30,
+   "requires": [
+    "g:stem-boot"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:senses"
+   ],
+   "pcic": [
+    "nociones_generales:B1:777",
+    "nociones_generales:B1:780",
+    "nociones_generales:B1:804",
+    "nociones_generales:B2:832",
+    "nociones_generales:B2:833"
+   ],
+   "sources": [
+    "nt-sentidos-b1",
+    "nt-sabor-olor-b2"
+   ],
+   "note": "With a, saber is no longer 'to know'. Oler is irregular: huelo, hueles, huele, olemos, huelen. Pitfall: the a is needed (*huele quemado). Huele rico / huele feo / sabe rico = Colombian everyday verdicts."
+  },
+  {
+   "id": "p:dejar-de-inf",
+   "kind": "pattern",
+   "title": "Saying you've stopped doing something: dejé de fumar",
+   "es": "dejar de + infinitive: Dejó de fumar hace dos años. No dejes de llamarme. Ya dejó de llover.",
+   "en": "to stop doing / quit: He quit smoking two years ago. Don't forget to call me. It's stopped raining.",
+   "unit": 30,
+   "requires": [
+    "g:verb-infinitive",
+    "g:acabar-de-ya-todavia"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:duration-change"
+   ],
+   "pcic": [
+    "nociones_generales:B1:532",
+    "nociones_generales:B1:534",
+    "nociones_generales:B1:548"
+   ],
+   "sources": [
+    "nt-ciclo-accion-b1"
+   ],
+   "note": "Bare dejar = leave/let (dejé las llaves; déjame ir) — the de + infinitive changes the meaning. No dejes de + inf = 'be sure to'. Opposite pole of seguir + gerund (x:seguir-dejar-de)."
+  },
+  {
+   "id": "p:ponerse-a-inf",
+   "kind": "pattern",
+   "title": "Suddenly starting to do something: se puso a llorar",
+   "es": "ponerse a + infinitive: Cuando le dije la noticia, se puso a llorar. Me puse a estudiar a las diez.",
+   "en": "to start / burst into doing: When I told her the news, she burst into tears. I got down to studying at ten.",
+   "unit": 30,
+   "requires": [
+    "g:verbs-of-change"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:duration-change"
+   ],
+   "pcic": [
+    "nociones_generales:B1:532",
+    "nociones_generales:B1:534",
+    "nociones_generales:B1:548"
+   ],
+   "sources": [
+    "nt-ciclo-accion-b1"
+   ],
+   "note": "More sudden or deliberate than empezar a. Do not confuse with ponerse + adjective (ponerse nervioso, g:verbs-of-change): same verb, different frame."
+  },
+  {
+   "id": "p:me-aburre",
+   "kind": "pattern",
+   "title": "What bores or motivates you: me aburre, me motiva",
+   "es": "(a alguien) le aburre / le motiva / le cansa + noun or infinitive: Me aburre oír siempre lo mismo. Le motiva mucho el proyecto nuevo.",
+   "en": "bores me / motivates me / tires me: It bores me to hear the same thing all the time.",
+   "unit": 30,
+   "requires": [
+    "g:gustar-full"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:senses"
+   ],
+   "pcic": [
+    "nociones_generales:B2:961",
+    "nociones_generales:B2:962",
+    "nociones_generales:B2:963"
+   ],
+   "sources": [
+    "nt-interes-b2"
+   ],
+   "note": "Gustar pattern: *yo aburro means 'I bore people'. Contrast with aburrirse (me aburrí en la clase = I got bored) and estar aburrido vs ser aburrido (g:ser-estar-adjectives). Interesarse por = take an interest in."
+  },
+  {
+   "id": "p:costarle",
+   "kind": "pattern",
+   "title": "Saying something is hard for you: me cuesta madrugar",
+   "es": "(a alguien) le cuesta (trabajo) + infinitive / noun: Me cuesta madrugar. Le costó mucho adaptarse. No me cuesta nada.",
+   "en": "to find it hard to…: I find it hard to get up early. It was really hard for her to adapt.",
+   "unit": 30,
+   "requires": [
+    "g:gustar-full"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:abilities"
+   ],
+   "pcic": [
+    "nociones_generales:B2:1019",
+    "nociones_generales:B2:1020",
+    "nociones_generales:B2:1021"
+   ],
+   "sources": [
+    "nt-facilidad-b2"
+   ],
+   "note": "Gustar pattern again; the person is the indirect object. Opposite: tener facilidad para (p:darsele-bien). Costar here is effort, not price. Active counterparts: facilitar / complicar algo a alguien; no te compliques la vida."
+  },
+  {
+   "id": "p:llevar-tiempo-gerundio",
+   "kind": "pattern",
+   "title": "Saying how long you've been doing something: llevo un año trabajando aquí",
+   "es": "llevar + time + gerund: Llevo un año trabajando en esta empresa. ¿Cuánto tiempo llevas viviendo en Bogotá?",
+   "en": "to have been doing something for…: I've been working at this company for a year. How long have you been living in Bogotá?",
+   "unit": 31,
+   "requires": [
+    "g:hace-que-desde",
+    "g:gerund-ways"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:duration-change"
+   ],
+   "pcic": [
+    "nociones_generales:B1:414",
+    "nociones_generales:B1:415",
+    "nociones_generales:B1:465"
+   ],
+   "sources": [
+    "nt-tiempo-referencias-futuro-pasado-presente-b1"
+   ],
+   "note": "Ongoing up to now: contrast Trabajé un año aquí (closed). Also with places/states without gerund: llevo dos horas aquí. Past version: llevaba un año trabajando cuando… Mirror pattern at B2: llevar + sin + inf."
+  },
+  {
+   "id": "p:seguir-gerundio",
+   "kind": "pattern",
+   "title": "Saying you're still doing something: sigo trabajando",
+   "es": "seguir / continuar + gerund: Sigo yendo al gimnasio tres veces por semana. ¿Sigues viviendo en Chapinero?",
+   "en": "to still be doing / keep doing: I still go to the gym three times a week. Do you still live in Chapinero?",
+   "unit": 31,
+   "requires": [
+    "g:gerund-ways"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:duration-change"
+   ],
+   "pcic": [
+    "nociones_generales:B1:532",
+    "nociones_generales:B1:534",
+    "nociones_generales:B1:548"
+   ],
+   "sources": [
+    "nt-ciclo-accion-b1"
+   ],
+   "note": "Gerund, never infinitive (*sigo ir). Seguir + adjective/place also works: sigue cerrado, sigo en la oficina. Negative: sigo sin entender (= todavía no entiendo)."
+  },
+  {
+   "id": "p:volver-a-inf",
+   "kind": "pattern",
+   "title": "Doing something again: volví a llamar",
+   "es": "volver a + infinitive: Volví a llamarla, pero no contestó. Nunca volvió a escribirme. No lo vuelvo a hacer.",
+   "en": "to do again: I called her again, but she didn't answer. He never wrote to me again. I won't do it again.",
+   "unit": 31,
+   "requires": [
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:duration-change"
+   ],
+   "pcic": [
+    "nociones_generales:B1:532",
+    "nociones_generales:B1:534",
+    "nociones_generales:B1:548",
+    "nociones_generales:B2:628",
+    "nociones_generales:B2:629"
+   ],
+   "sources": [
+    "nt-ciclo-accion-b1",
+    "nt-repeticion-b2"
+   ],
+   "note": "More natural than adding otra vez to everything. Nunca volver a = never again. Pitfall: volver alone = return."
+  },
+  {
+   "id": "p:decadas-siglos",
+   "kind": "pattern",
+   "title": "Placing things in decades and centuries: en los años ochenta, a finales de los setenta",
+   "es": "en los (años) ochenta / en la década de los cincuenta / en el siglo XX / a principios, a mediados, a finales de + period: Mis papás se conocieron a finales de los setenta.",
+   "en": "in the eighties / in the 20th century / in the early, mid, late…: My parents met in the late seventies.",
+   "unit": 31,
+   "requires": [
+    "g:imperfect-habitual"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:duration-change"
+   ],
+   "pcic": [
+    "nociones_generales:B1:414",
+    "nociones_generales:B1:415",
+    "nociones_generales:B1:465",
+    "nociones_generales:B2:428",
+    "nociones_generales:B2:429"
+   ],
+   "sources": [
+    "nt-tiempo-referencias-futuro-pasado-presente-b1",
+    "nt-referencias-generales-b2",
+    "nt-localizacion-tiempo-b2"
+   ],
+   "note": "Siglo in Roman numerals, read as cardinals: el siglo veinte. a mediados de semana/mes/año works for any period. Antiguamente / en esa época = back then."
+  },
+  {
+   "id": "p:actualmente",
+   "kind": "pattern",
+   "title": "Now vs actually: actualmente, en realidad, últimamente",
+   "es": "actualmente / hoy en día (now) vs en realidad / de hecho (actually) vs últimamente (lately): Actualmente vivo en Bogotá. En realidad no es tan caro. Últimamente tengo mucho trabajo.",
+   "en": "currently / actually / lately: I currently live in Bogotá. Actually, it's not that expensive. I've had a lot of work lately.",
+   "unit": 31,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:414",
+    "nociones_generales:B1:415",
+    "nociones_generales:B1:465",
+    "nociones_generales:B2:475",
+    "nociones_generales:B2:477"
+   ],
+   "sources": [
+    "nt-tiempo-referencias-futuro-pasado-presente-b1",
+    "nt-localizacion-tiempo-b2"
+   ],
+   "note": "False friend: actualmente never means 'actually'. En la actualidad is the written variant. Últimamente goes with present or perfecto in LatAm open situations: últimamente he dormido mal."
+  },
+  {
+   "id": "p:cumplir-anos",
+   "kind": "pattern",
+   "title": "Turning an age: cumple treinta años",
+   "es": "cumplir + number + años (the event) vs tener + años (the fact): Mi hermana cumple veinte años mañana. ¿Cuántos años cumples?",
+   "en": "to turn / have a birthday: My sister turns twenty tomorrow. How old are you turning?",
+   "unit": 31,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:860",
+    "nociones_generales:B1:861",
+    "nociones_generales:B1:862",
+    "nociones_generales:B2:864",
+    "nociones_generales:B2:866"
+   ],
+   "sources": [
+    "nt-edad-vejez-b1",
+    "nt-edad-vejez-b2"
+   ],
+   "note": "Cumpleaños is the party/day; aniversario is any yearly anniversary (de bodas, de la empresa). Cumplir also = keep (una promesa) and cumplirse = come true (p:cumplirse-un-sueno)."
+  },
+  {
+   "id": "p:parecer-vs-parecerse",
+   "kind": "pattern",
+   "title": "Seeming vs looking like someone: parece cansado / se parece a su papá",
+   "es": "parecer + adjective / noun (an impression) vs parecerse a + person (a resemblance): Parece cansado hoy. Parece un adolescente. Se parece mucho a su papá.",
+   "en": "to seem / look (like) vs to resemble: He seems tired today. He looks like a teenager. He looks a lot like his dad.",
+   "unit": 31,
+   "requires": [
+    "g:parecer-quedar"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:44",
+    "nociones_generales:B1:45",
+    "nociones_generales:B1:47",
+    "nociones_generales:B1:860",
+    "nociones_generales:B1:861"
+   ],
+   "sources": [
+    "nt-cualidad-generalidad-b1",
+    "nt-edad-vejez-b1",
+    "nt-formas-materia-b1"
+   ],
+   "note": "Pitfall: *parece a su papá / *se parece cansado. Parecer + noun for a visual impression: esa nube parece un elefante. Nos parecemos mucho = we're alike."
+  },
+  {
+   "id": "p:contar-dos-sentidos",
+   "kind": "pattern",
+   "title": "Telling and counting: contar un chiste, contar la plata",
+   "es": "contar + story/joke/news (tell) vs contar + money/people (count): Siempre cuenta unos chistes buenísimos. Cuéntame qué pasó. Contó la plata dos veces.",
+   "en": "to tell / to count: He always tells great jokes. Tell me what happened. She counted the money twice.",
+   "unit": 31,
+   "requires": [
+    "g:stem-boot",
+    "g:indirect-objects"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:1025",
+    "nociones_generales:B1:1027",
+    "nociones_generales:B1:1030"
+   ],
+   "sources": [
+    "nt-reflexion-expresion-b1"
+   ],
+   "note": "Cuéntame = tell me (very common opener). Third meaning contar con = rely on (c:cuenta-conmigo, g:verbs-prepositions)."
+  },
+  {
+   "id": "p:depender-de",
+   "kind": "pattern",
+   "title": "Saying it depends: depende del clima",
+   "es": "depender de + noun / de si + clause / de que + subjunctive: Depende del clima. Depende de si me dan el préstamo. Todo depende de ti.",
+   "en": "to depend on: It depends on the weather. It depends on whether they give me the loan. It's all up to you.",
+   "unit": 32,
+   "requires": [
+    "g:si-present"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:schedule-timing"
+   ],
+   "pcic": [
+    "nociones_generales:B1:105",
+    "nociones_generales:B1:106",
+    "nociones_generales:B1:107",
+    "nociones_generales:B2:111",
+    "nociones_generales:B2:112"
+   ],
+   "sources": [
+    "nt-necesidad-obligacion-b1",
+    "nt-necesidad-contingencia-b2"
+   ],
+   "note": "De is obligatory (*depende el clima). Depende alone is a complete answer. Depende de que + subjunctive at this unit with g:subj-influence nearby."
+  },
+  {
+   "id": "p:adelantar-aplazar",
+   "kind": "pattern",
+   "title": "Moving a date earlier or later: adelantar, aplazar, correr la cita",
+   "es": "adelantar / aplazar / posponer / correr + event + para + new date: Adelantamos la reunión para el lunes. Toca aplazar el viaje. ¿Podemos correr la cita para las cuatro?",
+   "en": "to bring forward / postpone / move: We brought the meeting forward to Monday. We'll have to postpone the trip.",
+   "unit": 32,
+   "requires": [
+    "g:por-para-1"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:schedule-timing"
+   ],
+   "pcic": [
+    "nociones_generales:B2:586",
+    "nociones_generales:B2:587",
+    "nociones_generales:B2:588",
+    "nociones_generales:B2:66",
+    "nociones_generales:B2:67"
+   ],
+   "sources": [
+    "nt-anticipacion-b2",
+    "nt-acontecimiento-b2"
+   ],
+   "note": "Correr (la cita) = move it, Colombian/LatAm everyday. Results: el reloj está adelantado / atrasado. Related: pagar por adelantado (in advance), salir con tiempo (with time to spare), antes de tiempo (early, often too soon). Spain uses 'para' too."
+  },
+  {
+   "id": "p:llegar-a-tiempo",
+   "kind": "pattern",
+   "title": "On time or late: llegar a tiempo, salir retrasado",
+   "es": "llegar a tiempo / temprano / tarde; salir / llegar con retraso, retrasado: El vuelo salió con retraso por la niebla. Por suerte llegamos a tiempo.",
+   "en": "to arrive on time / early / late; leave late, be delayed: The flight left late because of the fog. Luckily we arrived on time.",
+   "unit": 32,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:schedule-timing"
+   ],
+   "pcic": [
+    "nociones_generales:B1:524",
+    "nociones_generales:B1:526",
+    "nociones_generales:B1:528"
+   ],
+   "sources": [
+    "nt-puntualidad-retraso-b1"
+   ],
+   "note": "Retraso is about the schedule; the person's hurry is tener afán / estar de afán (Col.) or tener prisa (c:apurate). Puntual describes people and transport."
+  },
+  {
+   "id": "p:intentar-conseguir",
+   "kind": "pattern",
+   "title": "Trying vs managing: intenté… pero no lo logré",
+   "es": "intentar + inf (attempt) vs conseguir / lograr + inf or noun (achieve): Intenté llamarte, pero no lo logré. Por fin consiguió trabajo.",
+   "en": "to try vs to manage / get: I tried to call you but couldn't get through. She finally got a job.",
+   "unit": 32,
+   "requires": [
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:abilities"
+   ],
+   "pcic": [
+    "nociones_generales:B1:966",
+    "nociones_generales:B1:969",
+    "nociones_generales:B1:977",
+    "nociones_generales:B2:971",
+    "nociones_generales:B2:972"
+   ],
+   "sources": [
+    "nt-exito-utilidad-importancia-b1",
+    "nt-exito-logro-b2"
+   ],
+   "note": "Pitfall: *traté de y lo hice — use conseguir/lograr for success. Tratar de + inf = intentar. Triunfar / fracasar are bigger, dramatic success and failure."
+  },
+  {
+   "id": "p:ser-bueno-para",
+   "kind": "pattern",
+   "title": "Saying what someone is good at: es buena para los idiomas",
+   "es": "ser bueno / malo para + noun or infinitive / en + subject: Es muy buena para los idiomas. Soy malo para recordar nombres. Es bueno en matemáticas.",
+   "en": "to be good / bad at: She's very good at languages. I'm bad at remembering names.",
+   "unit": 32,
+   "requires": [
+    "g:adjective-agreement"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:abilities"
+   ],
+   "pcic": [
+    "nociones_generales:B1:966",
+    "nociones_generales:B1:969",
+    "nociones_generales:B1:977"
+   ],
+   "sources": [
+    "nt-exito-utilidad-importancia-b1"
+   ],
+   "note": "LatAm favours para (soy malo para…); en for school subjects. Compare servir para (what a THING is for, p:servir-para). Later: dársele bien (p:darsele-bien). Ser listo (clever) vs estar listo (ready) — ser/estar meaning change."
+  },
+  {
+   "id": "p:lleno-libre",
+   "kind": "pattern",
+   "title": "Full vs free: está lleno, pero hay un puesto libre",
+   "es": "lleno / vacío (what's in it) vs libre / ocupado / disponible (can you use it): El bus iba lleno, pero había un puesto libre. El baño está ocupado.",
+   "en": "full / empty vs free / taken / available: The bus was full but there was a free seat.",
+   "unit": 33,
+   "requires": [
+    "g:estar-location-states"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-space"
+   ],
+   "pcic": [
+    "nociones_generales:B1:1",
+    "nociones_generales:B1:2",
+    "nociones_generales:B1:14",
+    "nociones_generales:B2:35",
+    "nociones_generales:B2:36"
+   ],
+   "sources": [
+    "nt-existencia-disponibilidad-b1",
+    "nt-disponibilidad-b2"
+   ],
+   "note": "Two different questions — not synonyms. Colombia: 'puesto' for a seat. Desocupado = vacant (room); vacante = an unfilled job. Lleno de + noun: lleno de gente."
+  },
+  {
+   "id": "p:quedar-faltar-sobrar",
+   "kind": "pattern",
+   "title": "What's left, missing or extra: quedan dos, nos faltan sillas, sobra comida",
+   "es": "(nos) quedan / faltan / sobran + noun: Quedan solo dos apartamentos. Nos faltan diez sillas. Sobró mucha comida. Faltan veinte kilómetros para llegar.",
+   "en": "there are … left / we're … short / there's … extra: There are only two flats left. We're ten chairs short.",
+   "unit": 33,
+   "requires": [
+    "g:gustar-full"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-space"
+   ],
+   "pcic": [
+    "nociones_generales:B1:1",
+    "nociones_generales:B1:2",
+    "nociones_generales:B1:14",
+    "nociones_generales:B2:35",
+    "nociones_generales:B2:36"
+   ],
+   "sources": [
+    "nt-existencia-disponibilidad-b1",
+    "nt-disponibilidad-b2",
+    "nt-distancia-b2"
+   ],
+   "note": "All three agree with the thing: quedan dos. Faltar also for remaining time/distance: faltan cinco minutos para las tres. Mixing faltar and sobrar reverses the meaning."
+  },
+  {
+   "id": "p:medir",
+   "kind": "pattern",
+   "title": "Giving measurements: mide dos metros de largo",
+   "es": "medir + number (+ de largo / de ancho / de alto) ; X metros cuadrados: Mido 1,70. La mesa mide dos metros de largo. El apartamento mide 70 metros cuadrados.",
+   "en": "to be … tall / long / wide; … square metres: I'm 1.70 m. The table is two metres long. The flat is 70 square metres.",
+   "unit": 33,
+   "requires": [
+    "g:stem-e-i"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-space"
+   ],
+   "pcic": [
+    "nociones_generales:B1:188",
+    "nociones_generales:B1:192",
+    "nociones_generales:B1:195",
+    "nociones_generales:B1:213",
+    "nociones_generales:B1:216"
+   ],
+   "sources": [
+    "nt-medidas-tamano-superficie-b1",
+    "nt-temperatura-velocidad-volumen-b1"
+   ],
+   "note": "Medir is e→i (mido, mide). No verb 'to be' for size: *es dos metros. Area always metros cuadrados (*70 metros). ¿Cuánto mides? = how tall are you? B2 extension at u48."
+  },
+  {
+   "id": "p:caber",
+   "kind": "pattern",
+   "title": "Saying whether something fits: no cabe por la puerta",
+   "es": "caber + en / por: El sofá no cabe por la puerta. ¿Cabemos todos en el carro? No quepo en estos pantalones.",
+   "en": "to fit: The sofa doesn't fit through the door. Do we all fit in the car?",
+   "unit": 33,
+   "requires": [
+    "g:yo-irregular"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-space"
+   ],
+   "pcic": [
+    "nociones_generales:B1:188",
+    "nociones_generales:B1:192",
+    "nociones_generales:B1:195",
+    "nociones_generales:B1:213",
+    "nociones_generales:B1:216"
+   ],
+   "sources": [
+    "nt-medidas-tamano-superficie-b1",
+    "nt-temperatura-velocidad-volumen-b1"
+   ],
+   "note": "Irregular: quepo, cupo (pret.), quepa. Different question from medir (x:medir-caber). Clothes fit = quedar (me queda grande), not caber unless it won't go on at all."
+  },
+  {
+   "id": "p:posicion-precisa",
+   "kind": "pattern",
+   "title": "Placing something precisely: al fondo, junto a, en medio de",
+   "es": "al fondo de / en medio de / junto a / frente a / alrededor de + place: La cocina está al fondo del pasillo. Hay un parque frente al edificio.",
+   "en": "at the back of / in the middle of / next to / opposite / around: The kitchen is at the end of the corridor.",
+   "unit": 33,
+   "requires": [
+    "g:hay-vs-esta"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-space"
+   ],
+   "pcic": [
+    "nociones_generales:B1:271",
+    "nociones_generales:B1:273",
+    "nociones_generales:B1:289",
+    "nociones_generales:B2:300",
+    "nociones_generales:B2:301"
+   ],
+   "sources": [
+    "nt-localizacion-posicion-b1",
+    "nt-posicion-relativa-b2"
+   ],
+   "note": "All keep de (or a) before the landmark: al fondo DEL pasillo, junto A la ventana. Junto a is closer than al lado de. Céntrico = centrally located."
+  },
+  {
+   "id": "p:quedar-a-distancia",
+   "kind": "pattern",
+   "title": "Saying how far away it is: queda a cinco cuadras",
+   "es": "estar / quedar a + distance or time + de: El local queda a cinco cuadras del parque. Está a diez minutos caminando. ¿A cuánto queda Medellín?",
+   "en": "to be … away: The premises are five blocks from the park. It's ten minutes' walk.",
+   "unit": 33,
+   "requires": [
+    "g:estar-location-states"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-space"
+   ],
+   "pcic": [
+    "nociones_generales:B1:317",
+    "nociones_generales:B1:319",
+    "nociones_generales:B1:331",
+    "nociones_generales:B2:276",
+    "nociones_generales:B2:277"
+   ],
+   "sources": [
+    "nt-distancia-movimiento-b1",
+    "nt-localizacion-b2",
+    "nt-distancia-b2",
+    "nt-presencia-ausencia-b2"
+   ],
+   "note": "Quedar for a fixed location is very LatAm (¿Dónde queda el banco?). Same 'estar a' frame as temperature (p:estar-a-grados) and prices (p:a-cuanto-esta). Fixed phrase a distancia: una relación a distancia, estudiar a distancia; de lejos / de cerca."
+  },
+  {
+   "id": "p:recien-participio",
+   "kind": "pattern",
+   "title": "Just done: recién pintado, recién llegado",
+   "es": "recién + participle: Apartamento recién pintado. Los recién casados. Es un recién nacido. Recién llegué (LatAm: I just arrived).",
+   "en": "freshly / newly / just: Freshly painted flat. The newly-weds.",
+   "unit": 33,
+   "requires": [
+    "g:estar-participle"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-space"
+   ],
+   "pcic": [
+    "nociones_generales:B2:864",
+    "nociones_generales:B2:866",
+    "nociones_generales:B2:868",
+    "nociones_generales:B1:737",
+    "nociones_generales:B1:738"
+   ],
+   "sources": [
+    "nt-edad-vejez-b2",
+    "nt-acabado-b1"
+   ],
+   "note": "Only with a participle (*recién come). LatAm also uses recién with finite verbs (recién llegué = acabo de llegar) — mark as LatAm usage. Remodelado, amoblado are typical ad words."
+  },
+  {
+   "id": "p:ninguna-parte",
+   "kind": "pattern",
+   "title": "Nowhere and everywhere: no lo encuentro por ningún lado",
+   "es": "no … en ninguna parte / por ningún lado; por todas partes: No encuentro las llaves por ningún lado. Había gente por todas partes.",
+   "en": "nowhere / anywhere / everywhere: I can't find my keys anywhere. There were people everywhere.",
+   "unit": 34,
+   "requires": [
+    "g:negation-words"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:mishap-detail"
+   ],
+   "pcic": [
+    "nociones_generales:B1:271",
+    "nociones_generales:B1:273",
+    "nociones_generales:B1:289"
+   ],
+   "sources": [
+    "nt-localizacion-posicion-b1"
+   ],
+   "note": "Double negative is required: no … en ninguna parte. Por ningún lado is the everyday LatAm choice."
+  },
+  {
+   "id": "p:ir-a-velocidad",
+   "kind": "pattern",
+   "title": "Saying how fast: iba a 80 kilómetros por hora",
+   "es": "ir a + number + kilómetros por hora / a toda velocidad / despacio: Iba a 80 por hora cuando lo paró la policía.",
+   "en": "to be going at … km/h / at full speed: He was going at 80 km/h when the police stopped him.",
+   "unit": 34,
+   "requires": [
+    "g:imperfect-progressive"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:mishap-detail"
+   ],
+   "pcic": [
+    "nociones_generales:B1:213",
+    "nociones_generales:B1:216",
+    "nociones_generales:B1:220"
+   ],
+   "sources": [
+    "nt-temperatura-velocidad-volumen-b1"
+   ],
+   "note": "Same 'a + measure' preposition as estar a. Rápido as an adverb is fine in speech (maneja muy rápido); rápidamente / despacio in writing."
+  },
+  {
+   "id": "p:acercarse-alejarse",
+   "kind": "pattern",
+   "title": "Moving toward or away: se acercó a, se alejó de",
+   "es": "acercarse a / alejarse de + place or person; acercar / alejar + object: El carro se acercó a la casa. Se alejó de la puerta. Acercó la silla a la ventana.",
+   "en": "to come up to / move away from; to bring closer / move away: The car approached the house. She moved away from the door.",
+   "unit": 34,
+   "requires": [
+    "g:reflexive-routine"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:mishap-detail"
+   ],
+   "pcic": [
+    "nociones_generales:B1:317",
+    "nociones_generales:B1:319",
+    "nociones_generales:B1:331",
+    "nociones_generales:B2:322",
+    "nociones_generales:B2:323"
+   ],
+   "sources": [
+    "nt-distancia-movimiento-b1",
+    "nt-distancia-b2"
+   ],
+   "note": "Each keeps its own preposition: *acercarse de, *alejarse a. Without se the subject moves something else: ¿Me acercas la sal? (pass/bring it over). For relationships: distanciarse de (p:juntarse-distanciarse). Relationships: distanciarse de, juntarse con (= hang out with, LatAm)."
+  },
+  {
+   "id": "p:caerse-lastimarse",
+   "kind": "pattern",
+   "title": "Falling and getting hurt: se cayó de la moto",
+   "es": "caerse de / en / por + place; (no) hacerse daño / lastimarse / golpearse + body part: Se cayó de la bicicleta, pero no se lastimó. Me golpeé la cabeza.",
+   "en": "to fall off / down; to get hurt: She fell off her bike but didn't get hurt. I hit my head.",
+   "unit": 34,
+   "requires": [
+    "g:possessive-dative",
+    "g:reflexive-routine"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:mishap-detail"
+   ],
+   "pcic": [
+    "nociones_generales:B1:317",
+    "nociones_generales:B1:319",
+    "nociones_generales:B1:331"
+   ],
+   "sources": [
+    "nt-distancia-movimiento-b1"
+   ],
+   "note": "Caerse = fall (accident), caer = fall (rain, prices, a date). Lastimarse is the everyday LatAm 'get hurt'; hacerse daño is understood everywhere. Body part with article, not possessive."
+  },
+  {
+   "id": "p:seguir-por",
+   "kind": "pattern",
+   "title": "Naming the route: siga por la Séptima",
+   "es": "seguir / continuar / bajar / subir / ir + por + route; ir por la derecha: Siga por la Séptima hasta la calle 72. Iba por la Caracas cuando pasó.",
+   "en": "to carry on along / go down / up a road; keep right: Carry on along Seventh Avenue to 72nd Street.",
+   "unit": 34,
+   "requires": [
+    "g:commands-usted",
+    "g:por-para-1"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:mishap-detail"
+   ],
+   "pcic": [
+    "nociones_generales:B1:371",
+    "nociones_generales:B1:373",
+    "nociones_generales:B1:375",
+    "nociones_generales:B2:300",
+    "nociones_generales:B2:301"
+   ],
+   "sources": [
+    "nt-orientacion-orden-b1",
+    "nt-posicion-relativa-b2"
+   ],
+   "note": "Por names the route (*seguir la Séptima in this sense). Por + place = through (fuimos por el centro) vs en + place = at a fixed point. Colombia drives on the right: se maneja por la derecha."
+  },
+  {
+   "id": "p:servir-para",
+   "kind": "pattern",
+   "title": "What it's for and whether it works: ¿para qué sirve?, ya no sirve",
+   "es": "servir para + inf / noun; no servir; utilizarse / usarse para: ¿Para qué sirve este botón? Este cargador ya no sirve. Se usa para limpiar.",
+   "en": "to be for / to be (no) good: What's this button for? This charger doesn't work any more.",
+   "unit": 34,
+   "requires": [
+    "g:se-impersonal"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:mishap-detail"
+   ],
+   "pcic": [
+    "nociones_generales:B1:966",
+    "nociones_generales:B1:969",
+    "nociones_generales:B1:977",
+    "nociones_generales:B2:980",
+    "nociones_generales:B2:981"
+   ],
+   "sources": [
+    "nt-exito-utilidad-importancia-b1",
+    "nt-utilidad-uso-b2"
+   ],
+   "note": "'No sirve' = it's broken / useless (very LatAm everyday). Funcionar = to work. Contrast with ser bueno para (people's ability). Por orden alfabético / en primer puesto are set phrases (vocab)."
+  },
+  {
+   "id": "p:mancharse",
+   "kind": "pattern",
+   "title": "Getting something dirty: me manché la camisa",
+   "es": "mancharse / ensuciarse + item (+ de + substance) vs manchar / ensuciar + object: Me manché la camisa de café. Se ensució las manos. Manché el mantel con vino.",
+   "en": "to get a stain on / get dirty: I got coffee on my shirt. She got her hands dirty.",
+   "unit": 34,
+   "requires": [
+    "g:possessive-dative"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:mishap-detail"
+   ],
+   "pcic": [
+    "nociones_generales:B2:884",
+    "nociones_generales:B2:885",
+    "nociones_generales:B2:886"
+   ],
+   "sources": [
+    "nt-limpieza-b2"
+   ],
+   "note": "Reflexive when it lands on you/your things; no possessive (*mi camisa). Una mancha de café. Limpiar a fondo = deep clean; lavar en seco = dry-clean. Asqueroso is strong: genuine filth only."
+  },
+  {
+   "id": "p:cargar-descargar",
+   "kind": "pattern",
+   "title": "Charging and running out: se me descargó el celular",
+   "es": "cargar / descargar + object; descargarse (battery): Se me descargó el celular. ¿Dónde puedo cargar el celular? Descargué la aplicación. Descargaron el camión.",
+   "en": "to charge / download / unload; (battery) to die: My phone died. Where can I charge my phone?",
+   "unit": 34,
+   "requires": [
+    "g:se-accidental"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:mishap-detail"
+   ],
+   "pcic": [
+    "nociones_generales:B2:248",
+    "nociones_generales:B2:249",
+    "nociones_generales:B2:250"
+   ],
+   "sources": [
+    "nt-peso-b2"
+   ],
+   "note": "One verb family across loads, batteries and files. Se me descargó = accidental se. La carga = the load / the charge."
+  },
+  {
+   "id": "p:es-obligatorio",
+   "kind": "pattern",
+   "title": "Official rules: es obligatorio, está prohibido",
+   "es": "es obligatorio / está prohibido / no está permitido + infinitive; es obligatorio que + subjunctive: Es obligatorio llevar casco. Está prohibido fumar. No es obligatorio, pero se recomienda.",
+   "en": "it's compulsory / forbidden / not allowed to…: Wearing a helmet is compulsory.",
+   "unit": 35,
+   "requires": [
+    "g:impersonal-obligation"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:105",
+    "nociones_generales:B1:106",
+    "nociones_generales:B1:107"
+   ],
+   "sources": [
+    "nt-necesidad-obligacion-b1"
+   ],
+   "note": "Obligatorio is official; necesario is a general need. Infinitive with no article after these. Imprescindible (essential) comes at u44."
+  },
+  {
+   "id": "p:postura",
+   "kind": "pattern",
+   "title": "Body positions: acuéstese boca arriba",
+   "es": "estar / ponerse / quedarse + acostado, de pie, sentado, de rodillas, boca arriba, boca abajo, de lado: Acuéstese boca arriba, por favor. Duerme boca abajo. Se puso de rodillas.",
+   "en": "lying down / standing / kneeling / face up / face down / on your side: Lie down face up, please.",
+   "unit": 35,
+   "requires": [
+    "g:commands-usted",
+    "g:estar-participle"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:283",
+    "nociones_generales:B2:284",
+    "nociones_generales:B2:285"
+   ],
+   "sources": [
+    "nt-posicion-absoluta-b2"
+   ],
+   "note": "LatAm acostado for 'lying down' (Spain tumbado — recognition only). Objects: al revés (inside out / upside down / back to front), en posición vertical."
+  },
+  {
+   "id": "p:madrugar-trasnochar",
+   "kind": "pattern",
+   "title": "Early and late nights: me toca madrugar",
+   "es": "madrugar / trasnochar; me toca + infinitive: Mañana me toca madrugar. No es bueno trasnochar tanto.",
+   "en": "to get up very early / stay up late: I have to get up really early tomorrow.",
+   "unit": 35,
+   "requires": [
+    "g:gustar-full"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:586",
+    "nociones_generales:B2:587",
+    "nociones_generales:B2:588"
+   ],
+   "sources": [
+    "nt-anticipacion-b2"
+   ],
+   "note": "Me toca = it's my turn / I have to (very Colombian). Madrugar is getting up early, not just being early (llegar temprano)."
+  },
+  {
+   "id": "p:la-mayoria-de",
+   "kind": "pattern",
+   "title": "Most of them: la mayoría de los clientes",
+   "es": "la mayoría de + article + plural noun (verb singular or plural): La mayoría de mis compañeros ya se fue / se fueron. La mayoría de la gente paga en efectivo.",
+   "en": "most (of): Most of my colleagues have already left. Most people pay cash.",
+   "unit": 36,
+   "requires": [
+    "g:article-uses"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:figures-prices"
+   ],
+   "pcic": [
+    "nociones_generales:B1:129",
+    "nociones_generales:B1:130",
+    "nociones_generales:B1:133"
+   ],
+   "sources": [
+    "nt-cantidad-numerica-relativa-b1"
+   ],
+   "note": "De is obligatory (*la mayoría clientes), like una botella de. Casi todos / casi nadie / casi nada sit at the ends of the scale. Agreement detail returns at C1 (g:agreement-tricky)."
+  },
+  {
+   "id": "p:por-ciento",
+   "kind": "pattern",
+   "title": "Percentages and totals: subió un 5 %, en total",
+   "es": "(un) número + por ciento (de); subir / bajar un X %; en total: Los precios subieron un 5 %. El 30 % de los clientes compra por internet. ¿Cuánto es en total?",
+   "en": "per cent; to go up / down by…; in total: Prices went up 5%. 30% of customers buy online.",
+   "unit": 36,
+   "requires": [
+    "g:comparatives-advanced"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:figures-prices"
+   ],
+   "pcic": [
+    "nociones_generales:B1:129",
+    "nociones_generales:B1:130",
+    "nociones_generales:B1:133",
+    "nociones_generales:B2:134",
+    "nociones_generales:B2:135"
+   ],
+   "sources": [
+    "nt-cantidad-numerica-relativa-b1",
+    "nt-cantidad-numerica-b2"
+   ],
+   "note": "Article before the figure: el 30 %, un 5 %. Decimal comma in Colombia: 1,6 %. Rate = la tasa / el índice (p:indice-tasa)."
+  },
+  {
+   "id": "p:subir-subida",
+   "kind": "pattern",
+   "title": "Rises and falls as verbs or nouns: subieron / hubo un alza",
+   "es": "aumentar, subir, bajar, disminuir (verbs) ↔ el aumento, el alza, la subida, la bajada, la disminución (nouns): Los precios aumentaron un 10 %. Hubo un alza del 10 % en los precios.",
+   "en": "to rise / fall ↔ a rise / fall: Prices rose 10%. There was a 10% rise in prices.",
+   "unit": 36,
+   "requires": [
+    "g:comparatives-advanced"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:figures-prices"
+   ],
+   "pcic": [
+    "nociones_generales:B1:157",
+    "nociones_generales:B1:158",
+    "nociones_generales:B1:166",
+    "nociones_generales:B2:160",
+    "nociones_generales:B2:161"
+   ],
+   "sources": [
+    "nt-aumento-proporcion-grado-b1",
+    "nt-aumento-disminucion-b2"
+   ],
+   "note": "El alza (feminine, el before stressed a) is common in Colombian press. Same fact, two grammatical shapes — key for writing summaries. Rebaja is only a price cut."
+  },
+  {
+   "id": "p:fracciones-de",
+   "kind": "pattern",
+   "title": "Fractions: la mitad de, un tercio de, la quinta parte de",
+   "es": "la mitad / un tercio / un cuarto / dos tercios / la quinta parte + de + group: La mitad de los empleados trabaja desde la casa. Dos tercios de la población apoya la medida.",
+   "en": "half / a third / two thirds / a fifth of: Half the staff work from home.",
+   "unit": 36,
+   "requires": [
+    "g:comparatives-advanced"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:figures-prices"
+   ],
+   "pcic": [
+    "nociones_generales:B1:157",
+    "nociones_generales:B1:158",
+    "nociones_generales:B1:166",
+    "nociones_generales:B2:169",
+    "nociones_generales:B2:170"
+   ],
+   "sources": [
+    "nt-aumento-proporcion-grado-b1",
+    "nt-proporcion-b2"
+   ],
+   "note": "De is obligatory, like la mayoría de. Ordinal + parte for any fraction: la décima parte. Medio (adj.) vs la mitad (noun): medio kilo / la mitad del kilo."
+  },
+  {
+   "id": "p:a-cuanto-esta",
+   "kind": "pattern",
+   "title": "Prices that change: ¿a cuánto está el dólar?",
+   "es": "¿A cuánto está(n) + item? / Está(n) a + price: ¿A cuánto está el dólar hoy? El aguacate está a cinco mil el kilo.",
+   "en": "What's the price of … today? / It's going for…: What's the dollar at today?",
+   "unit": 36,
+   "requires": [
+    "g:estar-location-states"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:figures-prices"
+   ],
+   "pcic": [
+    "nociones_generales:B1:890",
+    "nociones_generales:B1:891",
+    "nociones_generales:B1:893"
+   ],
+   "sources": [
+    "nt-evaluacion-valor-b1"
+   ],
+   "note": "For fluctuating prices (market, currency); fixed prices use costar / valer (¿Cuánto vale?). Same estar a frame as distance and temperature."
+  },
+  {
+   "id": "p:en-oferta",
+   "kind": "pattern",
+   "title": "Deals and discounts: está en oferta, con descuento",
+   "es": "estar en oferta / en promoción / rebajado / con (un) X % de descuento: Estos zapatos están en oferta. Tiene un 20 % de descuento. Salió más barato.",
+   "en": "to be on offer / on sale / discounted: These shoes are on sale.",
+   "unit": 36,
+   "requires": [
+    "g:estar-participle"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:figures-prices"
+   ],
+   "pcic": [
+    "nociones_generales:B1:890",
+    "nociones_generales:B1:891",
+    "nociones_generales:B1:893",
+    "nociones_generales:B2:909",
+    "nociones_generales:B2:911"
+   ],
+   "sources": [
+    "nt-evaluacion-valor-b1",
+    "nt-valor-precio-b2"
+   ],
+   "note": "Las rebajas = the sales (more Spain); LatAm promoción / descuento / oferta. Salir caro / barato = work out expensive / cheap (p:gasto-inversion)."
+  },
+  {
+   "id": "p:agotarse",
+   "kind": "pattern",
+   "title": "Selling out and running out: se agotaron las boletas",
+   "es": "agotarse (event) / estar agotado (state): Se agotaron las boletas en dos horas. Ese modelo está agotado. Se me agotó la paciencia.",
+   "en": "to sell out / run out: The tickets sold out in two hours. That model is out of stock.",
+   "unit": 36,
+   "requires": [
+    "g:se-accidental",
+    "g:estar-participle"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:figures-prices"
+   ],
+   "pcic": [
+    "nociones_generales:B1:1",
+    "nociones_generales:B1:2",
+    "nociones_generales:B1:14",
+    "nociones_generales:B2:35",
+    "nociones_generales:B2:36"
+   ],
+   "sources": [
+    "nt-existencia-disponibilidad-b1",
+    "nt-disponibilidad-b2"
+   ],
+   "note": "Colombia: boletas (Spain entradas). Estar agotado also = exhausted (person). Escasear / la escasez = shortage."
+  },
+  {
+   "id": "p:ver-oir-bien-mal",
+   "kind": "pattern",
+   "title": "How well you can see or hear: no te oigo bien",
+   "es": "ver / oír / escuchar + bien / mal / nada; se oye / se ve + bien / mal; en voz alta / baja: No te oigo bien, se oye muy mal. ¿Puede hablar en voz más alta? Desde aquí no se ve nada.",
+   "en": "I can't hear you well / the line is bad / speak louder: I can't hear you, the line's really bad.",
+   "unit": 37,
+   "requires": [
+    "g:se-impersonal"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:phone-practical"
+   ],
+   "pcic": [
+    "nociones_generales:B1:777",
+    "nociones_generales:B1:780",
+    "nociones_generales:B1:804",
+    "nociones_generales:B2:813",
+    "nociones_generales:B2:814"
+   ],
+   "sources": [
+    "nt-sentidos-b1",
+    "nt-audibilidad-audicion-b2"
+   ],
+   "note": "Se oye mal = impersonal se. Escuchar is used for 'hear' on the phone in LatAm (no te escucho). En voz alta = aloud/loudly — not alto (tall/high)."
+  },
+  {
+   "id": "p:equivocarse-de",
+   "kind": "pattern",
+   "title": "Getting the wrong one: me equivoqué de número",
+   "es": "equivocarse de + noun (no article) / equivocarse en + thing: Perdón, me equivoqué de número. Nos equivocamos de bus. Me equivoqué en la cuenta.",
+   "en": "to get the wrong…: Sorry, wrong number. We got on the wrong bus.",
+   "unit": 37,
+   "requires": [
+    "g:reflexive-routine"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:phone-practical"
+   ],
+   "pcic": [
+    "nociones_generales:B1:934",
+    "nociones_generales:B1:936",
+    "nociones_generales:B1:940",
+    "nociones_generales:B2:943",
+    "nociones_generales:B2:944"
+   ],
+   "sources": [
+    "nt-conformidad-correccion-precision-b1",
+    "nt-correccion-precision-b2"
+   ],
+   "note": "Very productive frame: equivocarse de día, de casa, de persona. Corregir un error; un fallo (technical), estar equivocado (to be wrong)."
+  },
+  {
+   "id": "p:tardar-en",
+   "kind": "pattern",
+   "title": "How long it takes: ¿cuánto se demora?, tardaste mucho en contestar",
+   "es": "tardar / demorarse + time + en + infinitive: ¿Cuánto se demora el pedido? Tardaste mucho en contestar. Me demoré dos horas en llegar.",
+   "en": "to take (time) to: How long will the order take? You took ages to answer.",
+   "unit": 37,
+   "requires": [
+    "g:verb-infinitive"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:phone-practical",
+    "d:schedule-timing"
+   ],
+   "pcic": [
+    "nociones_generales:B1:524",
+    "nociones_generales:B1:526",
+    "nociones_generales:B1:528"
+   ],
+   "sources": [
+    "nt-puntualidad-retraso-b1"
+   ],
+   "note": "Demorarse is the everyday Colombian verb; tardar is general. Duration, not lateness against a schedule (x:tardar-llegar-tarde). ¡No me demoro! = I'll be right back."
+  },
+  {
+   "id": "p:por-casualidad",
+   "kind": "pattern",
+   "title": "By any chance: ¿por casualidad sabe…?",
+   "es": "¿Por casualidad + question? / por casualidad (by chance): ¿Por casualidad sabe dónde queda la notaría? Nos encontramos por casualidad en el aeropuerto.",
+   "en": "by any chance / by chance: Do you happen to know where the notary's office is?",
+   "unit": 37,
+   "requires": [
+    "g:indirect-questions"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:phone-practical"
+   ],
+   "pcic": [
+    "nociones_generales:B2:111",
+    "nociones_generales:B2:112",
+    "nociones_generales:B2:113",
+    "nociones_generales:B2:66",
+    "nociones_generales:B2:67"
+   ],
+   "sources": [
+    "nt-necesidad-contingencia-b2",
+    "nt-acontecimiento-b2"
+   ],
+   "note": "A softener in questions, not doubt about the listener. Casualidad = coincidence, false friend for 'casualty'. ¡Qué casualidad! is the reaction."
+  },
+  {
+   "id": "p:tener-lugar",
+   "kind": "pattern",
+   "title": "Saying an event takes place: tuvo lugar, se realizó",
+   "es": "event + tener lugar / realizarse / celebrarse / ser + place/date: La reunión tuvo lugar el día 15. El concierto se realizó en el Parque Simón Bolívar. La boda fue en Cartagena.",
+   "en": "to take place / be held: The meeting took place on the 15th.",
+   "unit": 38,
+   "requires": [
+    "g:passive-se"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:news-figures"
+   ],
+   "pcic": [
+    "nociones_generales:B1:62",
+    "nociones_generales:B1:63",
+    "nociones_generales:B1:64",
+    "nociones_generales:B2:66",
+    "nociones_generales:B2:67"
+   ],
+   "sources": [
+    "nt-acontecimiento-b1",
+    "nt-acontecimiento-b2"
+   ],
+   "note": "Pitfall: *hay la reunión el día 15 — hay introduces new things, not scheduled events (Hay una reunión el 15 is fine with indefinite). Ser for events: ¿Dónde es la fiesta? Celebrarse = planned events only."
+  },
+  {
+   "id": "p:enterarse-de",
+   "kind": "pattern",
+   "title": "Finding out: me enteré por las noticias",
+   "es": "enterarse de + noun / de que + clause / por + source: ¿Te enteraste de lo del alcalde? Me enteré por la radio. Me enteré de que se casaba.",
+   "en": "to find out / hear about: Did you hear about the mayor? I found out on the radio.",
+   "unit": 38,
+   "requires": [
+    "g:that-clauses",
+    "g:reflexive-routine"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:realise-findout"
+   ],
+   "pcic": [
+    "nociones_generales:B2:1034",
+    "nociones_generales:B2:1037",
+    "nociones_generales:B2:1040"
+   ],
+   "sources": [
+    "nt-reflexion-conocimiento-b2"
+   ],
+   "note": "Moment of getting information. Ser consciente de = ongoing awareness; darse cuenta de = realising by yourself (x:darse-cuenta-enterarse). LatAm conversational opener: ¿Supiste que…? (saber in preterite = found out). Creerse algo (too readily): se cree el mejor."
+  },
+  {
+   "id": "p:resultar-ser",
+   "kind": "pattern",
+   "title": "How it turned out: resultó ser falso",
+   "es": "resultar (ser) + adjective/noun; resulta que + clause: La noticia resultó ser falsa. El ladrón resultó ser el vecino. Resulta que nadie sabía nada.",
+   "en": "to turn out (to be): The story turned out to be false. It turns out nobody knew anything.",
+   "unit": 38,
+   "requires": [
+    "g:narrative-pasts"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:realise-findout"
+   ],
+   "pcic": [
+    "nociones_generales:B2:97",
+    "nociones_generales:B2:98",
+    "nociones_generales:B2:99",
+    "nociones_generales:B2:896",
+    "nociones_generales:B2:897"
+   ],
+   "sources": [
+    "nt-realidad-ficcion-b2",
+    "nt-evaluacion-general-b2"
+   ],
+   "note": "Resulta que… is a key storytelling and news connector. Adjective agrees with the subject: resultó falsa."
+  },
+  {
+   "id": "p:quedar-participio",
+   "kind": "pattern",
+   "title": "The state it was left in: quedó destruido",
+   "es": "quedar + participle / adjective: La casa quedó destruida. El asunto quedó resuelto. El contrato quedó firmado ayer.",
+   "en": "to end up / be left + state: The house was left destroyed. The matter was settled.",
+   "unit": 38,
+   "requires": [
+    "g:estar-participle",
+    "g:se-meaning-change"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:news-figures"
+   ],
+   "pcic": [
+    "nociones_generales:B1:737",
+    "nociones_generales:B1:738",
+    "nociones_generales:B1:739"
+   ],
+   "sources": [
+    "nt-acabado-b1"
+   ],
+   "note": "Like estar + participle (result state) but stressing the outcome is final. Pitfall: está pintando (process) vs está pintada (result). Participle agrees with the noun."
+  },
+  {
+   "id": "p:inevitable",
+   "kind": "pattern",
+   "title": "It couldn't be avoided: era inevitable",
+   "es": "es / era inevitable (que + subjunctive); inevitablemente; tarde o temprano: Era inevitable. Inevitablemente, los precios van a subir. Es inevitable que haya retrasos.",
+   "en": "it's / it was inevitable (that): Inevitably, prices are going to go up.",
+   "unit": 38,
+   "requires": [
+    "g:subj-value"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:news-figures"
+   ],
+   "pcic": [
+    "nociones_generales:B1:105",
+    "nociones_generales:B1:106",
+    "nociones_generales:B1:107",
+    "nociones_generales:B2:111",
+    "nociones_generales:B2:112"
+   ],
+   "sources": [
+    "nt-necesidad-obligacion-b1",
+    "nt-necesidad-contingencia-b2"
+   ],
+   "note": "Past version (era inevitable que pasara) needs g:imperfect-subj (u40) — introduce as a chunk here. Por suerte is the luck counterpart (c:por-suerte)."
+  },
+  {
+   "id": "p:adj-de-inf",
+   "kind": "pattern",
+   "title": "Easy to understand, hard to explain: fácil de entender",
+   "es": "adjective + de + infinitive: Es fácil de entender. Es un tema difícil de explicar. Su discurso fue complicado de seguir.",
+   "en": "easy to understand / hard to explain: It's a topic that's hard to explain.",
+   "unit": 39,
+   "requires": [
+    "g:infinitive-subject"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:934",
+    "nociones_generales:B1:936",
+    "nociones_generales:B1:940",
+    "nociones_generales:B2:1019",
+    "nociones_generales:B2:1020"
+   ],
+   "sources": [
+    "nt-conformidad-correccion-precision-b1",
+    "nt-facilidad-b2"
+   ],
+   "note": "Contrast: Es difícil explicar este tema (infinitive is the subject, no de) vs Este tema es difícil de explicar (the noun is the subject). Complejo = many interacting parts, not just difícil."
+  },
+  {
+   "id": "p:a-la-vez",
+   "kind": "pattern",
+   "title": "At the same time: a la vez, mientras tanto",
+   "es": "a la vez / al mismo tiempo (one subject, two actions) vs mientras tanto (two subjects, two clauses): Estudia y trabaja a la vez. Yo preparaba la comida; mientras tanto, ella ponía la mesa.",
+   "en": "at the same time / meanwhile: She studies and works at the same time. I was cooking; meanwhile she set the table.",
+   "unit": 39,
+   "requires": [
+    "g:cuando-indicative",
+    "g:discourse-structure"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:552",
+    "nociones_generales:B2:553",
+    "nociones_generales:B2:554"
+   ],
+   "sources": [
+    "nt-simultaneidad-b2"
+   ],
+   "note": "A la vez also = 'and also, at once' with adjectives: es útil y a la vez bonito. Simultáneo = designed to run in parallel (traducción simultánea). Entretanto = written."
+  },
+  {
+   "id": "p:formar-parte-de",
+   "kind": "pattern",
+   "title": "Belonging to a group: forma parte de, pertenece a",
+   "es": "formar parte de / pertenecer a + group: Bogotá forma parte de la región andina. El barrio pertenece a la localidad de Chapinero.",
+   "en": "to be part of / belong to: The neighbourhood belongs to the Chapinero district.",
+   "unit": 39,
+   "requires": [
+    "g:discourse-structure"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:50",
+    "nociones_generales:B2:51",
+    "nociones_generales:B2:52"
+   ],
+   "sources": [
+    "nt-cualidad-general-b2"
+   ],
+   "note": "Pertenecer: pertenezco. Formar parte agrees with the subject (formamos parte). Componerse de / consistir en (what it's made up of) come at u48."
+  },
+  {
+   "id": "p:estar-a-grados",
+   "kind": "pattern",
+   "title": "Giving the temperature: estamos a 30 grados",
+   "es": "estar a / hacer + number + grados (bajo cero): Hoy estamos a 30 grados. En Cartagena hace 32 grados. Anoche estuvo a dos grados bajo cero en el páramo.",
+   "en": "it's … degrees: It's 30 degrees today. Last night it was minus two on the páramo.",
+   "unit": 40,
+   "requires": [
+    "g:estar-location-states"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:climate"
+   ],
+   "pcic": [
+    "nociones_generales:B1:213",
+    "nociones_generales:B1:216",
+    "nociones_generales:B1:220"
+   ],
+   "sources": [
+    "nt-temperatura-velocidad-volumen-b1"
+   ],
+   "note": "Both estar a and hacer are natural in LatAm. Bajo cero for negatives. Same a-frame as distance and prices. Calentar(se) / enfriar(se) for the processes."
+  },
+  {
+   "id": "p:humedo-mojado",
+   "kind": "pattern",
+   "title": "Humid vs wet: un clima húmedo, la ropa mojada",
+   "es": "húmedo (lasting dampness, climate, walls) vs mojado / empapado (wet now, from water or rain): El clima en Barranquilla es muy húmedo. Llegué empapado, salí sin paraguas. La ropa todavía está mojada.",
+   "en": "humid / damp vs wet / soaked: Barranquilla's climate is very humid. I got soaked.",
+   "unit": 40,
+   "requires": [
+    "g:ser-estar-adjectives"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:climate"
+   ],
+   "pcic": [
+    "nociones_generales:B1:710",
+    "nociones_generales:B1:711",
+    "nociones_generales:B1:713",
+    "nociones_generales:B2:751",
+    "nociones_generales:B2:754"
+   ],
+   "sources": [
+    "nt-textura-consistencia-b1",
+    "nt-humedad-sequedad-b2"
+   ],
+   "note": "Húmedo = lasting condition or slight damp; mojado = temporary wetness. Scale: húmedo → mojado → empapado. Verbs: mojarse, empaparse, secar(se). Sequía = drought. Sudar = sweat (transpirar is formal)."
+  },
+  {
+   "id": "p:cumplirse-un-sueno",
+   "kind": "pattern",
+   "title": "A dream coming true: se cumplió su sueño",
+   "es": "cumplirse + sueño / deseo / profecía; cumplir + promesa / palabra: Por fin se le cumplió el sueño de viajar. Ojalá se te cumplan todos tus deseos. Cumplió su palabra.",
+   "en": "to come true; to keep a promise: Her dream of travelling finally came true.",
+   "unit": 41,
+   "requires": [
+    "g:ojala-past",
+    "g:subj-wishes"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:97",
+    "nociones_generales:B2:98",
+    "nociones_generales:B2:99",
+    "nociones_generales:B1:860",
+    "nociones_generales:B1:861"
+   ],
+   "sources": [
+    "nt-realidad-ficcion-b2",
+    "nt-edad-vejez-b1"
+   ],
+   "note": "Not for finishing tasks (terminar). Se le cumplió = the dream is the subject, person as indirect object."
+  },
+  {
+   "id": "p:estrenar",
+   "kind": "pattern",
+   "title": "Using something for the first time: estrenar ropa",
+   "es": "estrenar + object; estrenarse (a film, a person in a role): Estrenó vestido en la boda. En diciembre todo el mundo estrena. La película se estrena el viernes.",
+   "en": "to wear / use for the first time; to premiere: She wore a new dress for the first time at the wedding.",
+   "unit": 41,
+   "requires": [
+    "g:direct-objects"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:864",
+    "nociones_generales:B2:866",
+    "nociones_generales:B2:868"
+   ],
+   "sources": [
+    "nt-edad-vejez-b2"
+   ],
+   "note": "No single English verb. Estrenar ropa en Navidad / el 24 is a Colombian custom. Placed early (B2 source) because it is high-frequency and needs no new grammar."
+  },
+  {
+   "id": "p:apropiado-para",
+   "kind": "pattern",
+   "title": "Whether it fits the situation: apropiado para, fuera de lugar",
+   "es": "apropiado / adecuado + para + noun or inf; estar fuera de lugar: No llevaba ropa apropiada para la entrevista. Ese comentario estuvo fuera de lugar.",
+   "en": "suitable / appropriate for; out of place: His comment was out of place.",
+   "unit": 42,
+   "requires": [
+    "g:register-ladder"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:931",
+    "nociones_generales:B2:932",
+    "nociones_generales:B2:933"
+   ],
+   "sources": [
+    "nt-adecuacion-b2"
+   ],
+   "note": "Judges fit to context, not general quality (not = bueno). Conveniente = advisable, not 'convenient' (práctico / cómodo)."
+  },
+  {
+   "id": "p:darsele-bien",
+   "kind": "pattern",
+   "title": "Natural talent: se me da bien, tiene facilidad para",
+   "es": "(a alguien) se le da bien / mal + noun or inf; tener facilidad para: Se le da muy bien organizar eventos. A mí se me dan mal los números. Tiene facilidad para los idiomas.",
+   "en": "to be (naturally) good / bad at: She's really good at organising events. I'm bad with numbers.",
+   "unit": 42,
+   "requires": [
+    "g:indirect-objects",
+    "g:se-accidental"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:abilities"
+   ],
+   "pcic": [
+    "nociones_generales:B2:991",
+    "nociones_generales:B2:993",
+    "nociones_generales:B2:994",
+    "nociones_generales:B2:1019",
+    "nociones_generales:B2:1020"
+   ],
+   "sources": [
+    "nt-capacidad-competencia-b2",
+    "nt-facilidad-b2"
+   ],
+   "note": "Gustar pattern with se: *ella da bien. Plural with plural nouns: se me dan mal. Dominar (master), saber de memoria (know by heart), ser experto en."
+  },
+  {
+   "id": "p:dar-tiempo",
+   "kind": "pattern",
+   "title": "Having enough time: no me alcanza el tiempo",
+   "es": "no me alcanza el tiempo (para + inf); no me da tiempo de / a + inf: No me alcanza el tiempo para terminar hoy. ¿Te da tiempo de pasar por la tienda?",
+   "en": "I don't have time to / I won't make it: I won't have time to finish today.",
+   "unit": 42,
+   "requires": [
+    "g:indirect-objects",
+    "g:softening"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:428",
+    "nociones_generales:B2:429",
+    "nociones_generales:B2:431"
+   ],
+   "sources": [
+    "nt-referencias-generales-b2"
+   ],
+   "note": "Impersonal, gustar-type: *yo no doy tiempo. LatAm prefers no me alcanza el tiempo; dar tiempo is understood everywhere. A polite way to decline. Dedicar tiempo a is the choosing counterpart (p:dedicarse-a)."
+  },
+  {
+   "id": "p:llevar-sin-inf",
+   "kind": "pattern",
+   "title": "How long since you last did something: llevo tres años sin fumar",
+   "es": "llevar + time + sin + infinitive: Llevo tres semanas sin fumar. Llevábamos años sin vernos. ¿Cuánto llevas sin dormir?",
+   "en": "to have gone … without / not have done … for: I haven't smoked for three weeks. We hadn't seen each other for years.",
+   "unit": 43,
+   "requires": [
+    "g:hace-que-desde"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:outcomes-worth"
+   ],
+   "pcic": [
+    "nociones_generales:B2:475",
+    "nociones_generales:B2:477",
+    "nociones_generales:B2:480"
+   ],
+   "sources": [
+    "nt-localizacion-tiempo-b2"
+   ],
+   "note": "Not *llevo tres semanas no fumando. Mirror of llevar + gerund (x:llevar-gerundio-sin)."
+  },
+  {
+   "id": "p:salirle-bien",
+   "kind": "pattern",
+   "title": "How it turned out for someone: me salió bien, le fue mal",
+   "es": "(a alguien) le sale / le va + bien / mal + thing: Me salió muy bien la entrevista. ¿Cómo te fue en el examen? Les ha ido muy bien con el negocio.",
+   "en": "it went well / badly for someone: My interview went really well. How did your exam go?",
+   "unit": 43,
+   "requires": [
+    "g:indirect-objects",
+    "g:si-past-unreal"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:outcomes-worth"
+   ],
+   "pcic": [
+    "nociones_generales:B2:896",
+    "nociones_generales:B2:897",
+    "nociones_generales:B2:899"
+   ],
+   "sources": [
+    "nt-evaluacion-general-b2"
+   ],
+   "note": "Gustar pattern: *yo salí bien (that means 'I came out well', e.g. in a photo). Irle bien a alguien en / con. Salir caro = work out expensive. No está nada mal = understated praise (c:no-esta-nada-mal)."
+  },
+  {
+   "id": "p:llegar-a-ser",
+   "kind": "pattern",
+   "title": "Becoming something over time: llegó a ser directora",
+   "es": "llegar a ser + noun/adjective; llegar a + infinitive (got as far as): Llegó a ser una de las científicas más reconocidas del país. Llegué a pensar que no volvería.",
+   "en": "to (eventually) become; to go so far as to: She became one of the country's best-known scientists.",
+   "unit": 43,
+   "requires": [
+    "g:verbs-of-change"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:outcomes-worth"
+   ],
+   "pcic": [
+    "nociones_generales:B2:971",
+    "nociones_generales:B2:972",
+    "nociones_generales:B2:973"
+   ],
+   "sources": [
+    "nt-exito-logro-b2"
+   ],
+   "note": "Gradual achievement through effort, vs hacerse (choice/effort, quicker) and volverse (change of character). Triunfar / fracasar = dramatic success / failure. Alcanzar los primeros puestos."
+  },
+  {
+   "id": "p:ser-capaz-de",
+   "kind": "pattern",
+   "title": "Being able to bring yourself to: no fui capaz de decírselo",
+   "es": "ser (in)capaz de + infinitive: No fui capaz de decirle la verdad. Es capaz de todo. ¿Serías capaz de vivir sin celular?",
+   "en": "to be able to / bring yourself to; capable of: I couldn't bring myself to tell him the truth. He's capable of anything.",
+   "unit": 43,
+   "requires": [
+    "g:conditional-perfect"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:abilities",
+    "d:outcomes-worth"
+   ],
+   "pcic": [
+    "nociones_generales:B2:991",
+    "nociones_generales:B2:993",
+    "nociones_generales:B2:994"
+   ],
+   "sources": [
+    "nt-capacidad-competencia-b2"
+   ],
+   "note": "One specific act (often needing nerve), not general talent (dársele bien). Es capaz de que… (Col./Mex. colloquial 'it may well be that') — recognition only."
+  },
+  {
+   "id": "p:ocurrirsele",
+   "kind": "pattern",
+   "title": "An idea coming to you: se me ocurrió una idea",
+   "es": "(a alguien) se le ocurre + noun / infinitive / que: Se me ocurrió una solución mientras dormía. ¿Cómo se te ocurre decir eso? No se me ocurrió llamarte.",
+   "en": "it occurred to me / I thought of: A solution came to me while I was sleeping. How could you think of saying that?",
+   "unit": 43,
+   "requires": [
+    "g:se-accidental",
+    "g:indirect-objects"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:outcomes-worth"
+   ],
+   "pcic": [
+    "nociones_generales:B2:1034",
+    "nociones_generales:B2:1037",
+    "nociones_generales:B2:1040"
+   ],
+   "sources": [
+    "nt-reflexion-conocimiento-b2"
+   ],
+   "note": "The idea is the subject: *yo ocurrí una idea. ¿Cómo se te ocurre…? = a reproach. Plural: se me ocurrieron dos cosas."
+  },
+  {
+   "id": "p:a-ultima-hora",
+   "kind": "pattern",
+   "title": "At the very last moment: a última hora, a primera hora",
+   "es": "a última hora / a primera hora (de la mañana) / en el último minuto / de madrugada: Cancelaron a última hora. Salimos a primera hora. Llegó de madrugada.",
+   "en": "at the last minute / first thing / in the small hours: They cancelled at the last minute.",
+   "unit": 43,
+   "requires": [
+    "g:pluperfect"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:428",
+    "nociones_generales:B2:429",
+    "nociones_generales:B2:431"
+   ],
+   "sources": [
+    "nt-referencias-generales-b2"
+   ],
+   "note": "Fixed phrases; no article in a última hora. Hacia las nueve / a eso de las nueve approximate clock time (p:hacia-las-nueve)."
+  },
+  {
+   "id": "p:sobrevivir-a",
+   "kind": "pattern",
+   "title": "Coming through something: sobrevivió a la crisis",
+   "es": "sobrevivir a + threat; resistir + pressure; aguantar: La empresa sobrevivió a la crisis. El puente resistió el terremoto. No aguanté más.",
+   "en": "to survive / withstand / put up with: The company survived the crisis.",
+   "unit": 43,
+   "requires": [
+    "g:si-past-unreal"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:683",
+    "nociones_generales:B2:684",
+    "nociones_generales:B2:685"
+   ],
+   "sources": [
+    "nt-permanencia-b2"
+   ],
+   "note": "Sobrevivir a takes a (personal-a-like): *sobrevivió la crisis is heard but a is standard. Resistir doesn't imply mortal risk. Aguantar is the everyday LatAm verb. Collocations: trabajo estable, contrato a término fijo / indefinido, horario fijo."
+  },
+  {
+   "id": "p:valer-la-pena",
+   "kind": "pattern",
+   "title": "Worth it: vale la pena",
+   "es": "(no) vale la pena + infinitive / que + subjunctive / noun: No vale la pena discutir por esto. Vale la pena que lo pienses bien. El viaje valió la pena.",
+   "en": "to be worth it / worth doing: It's not worth arguing about this.",
+   "unit": 44,
+   "requires": [
+    "g:subj-value"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:outcomes-worth",
+    "d:certainty-necessity"
+   ],
+   "pcic": [
+    "nociones_generales:B2:896",
+    "nociones_generales:B2:897",
+    "nociones_generales:B2:899",
+    "nociones_generales:B1:890",
+    "nociones_generales:B1:891"
+   ],
+   "sources": [
+    "nt-evaluacion-general-b2",
+    "nt-evaluacion-valor-b1"
+   ],
+   "note": "LatAm valer la pena; merecer la pena is Spain-leaning (recognition). Worth relative to effort, not quality."
+  },
+  {
+   "id": "p:estar-convencido-de",
+   "kind": "pattern",
+   "title": "Being convinced: estoy convencido de que",
+   "es": "estar convencido / seguro de + noun / de que + indicative; no estar convencido de que + subjunctive: Estoy convencido de que dice la verdad. No estoy seguro de que sea buena idea.",
+   "en": "to be convinced / sure that: I'm convinced she's telling the truth.",
+   "unit": 44,
+   "requires": [
+    "g:subj-doubt"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:certainty-necessity"
+   ],
+   "pcic": [
+    "nociones_generales:B2:77",
+    "nociones_generales:B2:78",
+    "nociones_generales:B2:79"
+   ],
+   "sources": [
+    "nt-certeza-b2"
+   ],
+   "note": "De before que is needed here (queísmo error: *estoy seguro que in writing). Sin duda (alguna) asserts; sin dudar(lo) = without hesitating (manner). Lo tengo clarísimo (c:lo-tengo-clarisimo)."
+  },
+  {
+   "id": "p:imprescindible",
+   "kind": "pattern",
+   "title": "Essential, can't do without: es imprescindible, prescindir de",
+   "es": "es imprescindible / fundamental / esencial + inf / que + subjunctive; (no) poder prescindir de: Es imprescindible revisar el contrato antes de firmar. No podemos prescindir de su experiencia.",
+   "en": "it's essential (that); to do without: We can't do without her experience.",
+   "unit": 44,
+   "requires": [
+    "g:subj-value"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:certainty-necessity"
+   ],
+   "pcic": [
+    "nociones_generales:B2:111",
+    "nociones_generales:B2:112",
+    "nociones_generales:B2:113",
+    "nociones_generales:B2:1004",
+    "nociones_generales:B2:1006"
+   ],
+   "sources": [
+    "nt-necesidad-contingencia-b2",
+    "nt-importancia-normalidad-b2",
+    "nt-necesidad-obligacion-b1"
+   ],
+   "note": "Ladder: conveniente < necesario < imprescindible; obligatorio = official. Fundamental vs secundario rank importance. Timing frame a corto / mediano / largo plazo (c:a-largo-plazo)."
+  },
+  {
+   "id": "p:coincidir-con-en",
+   "kind": "pattern",
+   "title": "Agreeing on a point: coincido contigo en que",
+   "es": "coincidir con + person + en + noun / en que + clause; coincidir (schedules): Coincido contigo en que el problema es el transporte. Nuestros horarios coinciden los martes.",
+   "en": "to agree with someone on / to coincide: I agree with you that the problem is transport.",
+   "unit": 44,
+   "requires": [
+    "g:argument-markers",
+    "g:prep-pronouns"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:certainty-necessity"
+   ],
+   "pcic": [
+    "nociones_generales:B2:552",
+    "nociones_generales:B2:553",
+    "nociones_generales:B2:554"
+   ],
+   "sources": [
+    "nt-simultaneidad-b2"
+   ],
+   "note": "Coincidir also = run into someone by chance (coincidimos en la fiesta). Coincidencia = chance overlap."
+  },
+  {
+   "id": "p:a-primera-vista",
+   "kind": "pattern",
+   "title": "At first sight: a primera vista parece…, pero",
+   "es": "a primera vista / a simple vista + parece…, pero…: A primera vista parece una buena idea, pero tiene problemas. A simple vista no se nota.",
+   "en": "at first sight / to the naked eye: At first sight it seems like a good idea, but…",
+   "unit": 44,
+   "requires": [
+    "g:argument-markers"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:certainty-necessity"
+   ],
+   "pcic": [
+    "nociones_generales:B2:786",
+    "nociones_generales:B2:791",
+    "nociones_generales:B2:793"
+   ],
+   "sources": [
+    "nt-visibilidad-vision-b2"
+   ],
+   "note": "Flags an unverified impression, so it sets up a 'but'. A simple vista = with the naked eye. Notarse = be noticeable (se nota que…)."
+  },
+  {
+   "id": "p:ocurrir-producirse",
+   "kind": "pattern",
+   "title": "Saying something happened, news style: ocurrió, se produjo",
+   "es": "pasar (speech) / ocurrir, suceder (neutral) / producirse (news): ¿Qué pasó? El accidente ocurrió de madrugada. La explosión se produjo por causas desconocidas.",
+   "en": "to happen / occur / take place: The explosion happened for unknown reasons.",
+   "unit": 45,
+   "requires": [
+    "g:passive-se",
+    "g:impersonal-register"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:news-figures"
+   ],
+   "pcic": [
+    "nociones_generales:B1:62",
+    "nociones_generales:B1:63",
+    "nociones_generales:B1:64",
+    "nociones_generales:B2:66",
+    "nociones_generales:B2:67"
+   ],
+   "sources": [
+    "nt-acontecimiento-b1",
+    "nt-acontecimiento-b2"
+   ],
+   "note": "A register ladder for the same event. Producirse only with events (accidents, changes), never people. Suspender / aplazar / desconvocar for events called off."
+  },
+  {
+   "id": "p:provocar-ocasionar",
+   "kind": "pattern",
+   "title": "Saying what caused it: provocó una polémica",
+   "es": "provocar / ocasionar / causar / generar + effect: El retraso ocasionó muchas quejas. Sus declaraciones provocaron una gran polémica. La lluvia causó inundaciones.",
+   "en": "to cause / bring about / spark: His statements sparked a huge controversy.",
+   "unit": 45,
+   "requires": [
+    "g:causal-advanced"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:news-figures"
+   ],
+   "pcic": [
+    "nociones_generales:B2:7",
+    "nociones_generales:B2:8",
+    "nociones_generales:B2:9"
+   ],
+   "sources": [
+    "nt-existencia-b2"
+   ],
+   "note": "Provocar can be deliberate or inflammatory; ocasionar neutral; generar very common in LatAm press. Surgir = arise (surgió un problema)."
+  },
+  {
+   "id": "p:aproximar-cifras",
+   "kind": "pattern",
+   "title": "Approximate figures: alrededor de, unos, entre… y…",
+   "es": "alrededor de / cerca de / unos + number; entre X y Y; al menos / como mínimo / como máximo; como (colloquial): Asistieron alrededor de cien personas. Llegaron entre treinta y cuarenta mil. Le puse como 250 gramos.",
+   "en": "around / about / between / at least / at most: About a hundred people attended.",
+   "unit": 45,
+   "requires": [
+    "g:conditional-rumour"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:news-figures"
+   ],
+   "pcic": [
+    "nociones_generales:B2:147",
+    "nociones_generales:B2:148",
+    "nociones_generales:B2:151",
+    "nociones_generales:B2:134",
+    "nociones_generales:B2:135"
+   ],
+   "sources": [
+    "nt-cantidad-relativa-b2",
+    "nt-cantidad-numerica-b2"
+   ],
+   "note": "Como + number is colloquial; in writing alrededor de / aproximadamente. Al menos is a floor, como máximo a ceiling. News hedge: habría unas cien personas."
+  },
+  {
+   "id": "p:indice-tasa",
+   "kind": "pattern",
+   "title": "Rates and figures: la tasa de desempleo, la cifra de",
+   "es": "la tasa / el índice / la cifra / el porcentaje + de + noun: La tasa de desempleo bajó un 2 %. La cifra de muertos aumentó. Un millar de personas.",
+   "en": "the rate / index / figure of: The unemployment rate fell 2%.",
+   "unit": 45,
+   "requires": [
+    "g:passive-se"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:news-figures"
+   ],
+   "pcic": [
+    "nociones_generales:B2:134",
+    "nociones_generales:B2:135",
+    "nociones_generales:B2:136"
+   ],
+   "sources": [
+    "nt-cantidad-numerica-b2"
+   ],
+   "note": "Índice vs número: a rate is not 'un número'. Cardinal + de picks a subset: dos de mis hermanos (I have more). Par / impar."
+  },
+  {
+   "id": "p:duplicarse",
+   "kind": "pattern",
+   "title": "Doubling and multiplying: se duplicó, cinco veces más",
+   "es": "duplicarse / triplicarse; X veces más / menos (que); crecer, caer: Las ventas se duplicaron este año. Ahora gano cinco veces más que antes. La economía creció un 3 %.",
+   "en": "to double / triple; X times more: Sales doubled this year.",
+   "unit": 45,
+   "requires": [
+    "g:comparatives-advanced"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:news-figures"
+   ],
+   "pcic": [
+    "nociones_generales:B2:160",
+    "nociones_generales:B2:161",
+    "nociones_generales:B2:162"
+   ],
+   "sources": [
+    "nt-aumento-disminucion-b2"
+   ],
+   "note": "X veces más is an exact multiple; cada vez más is a trend (g:comparatives-advanced). Crecimiento, disminución as nouns."
+  },
+  {
+   "id": "p:encontrarse-hallarse",
+   "kind": "pattern",
+   "title": "Formal 'is located': se encuentra fuera del país",
+   "es": "encontrarse / hallarse + place or state (formal estar); estar situado en: La cantante se encuentra fuera del país. El hotel está situado a pocos kilómetros del pueblo. El paciente se encuentra estable.",
+   "en": "to be (located) / to be (in a state), formal: The singer is currently abroad.",
+   "unit": 45,
+   "requires": [
+    "g:impersonal-register"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:news-figures"
+   ],
+   "pcic": [
+    "nociones_generales:B2:276",
+    "nociones_generales:B2:277",
+    "nociones_generales:B2:278"
+   ],
+   "sources": [
+    "nt-localizacion-b2"
+   ],
+   "note": "Sounds stilted in casual speech. Participles of placement: guardado, parqueado (LatAm; Spain aparcado), instalado."
+  },
+  {
+   "id": "p:asistir-faltar",
+   "kind": "pattern",
+   "title": "Attending and missing: asistió a la reunión, faltó a clase",
+   "es": "asistir a / faltar a + event; los asistentes: Asistieron más de cien personas. Faltó a la reunión sin avisar. Faltó tres veces a clase.",
+   "en": "to attend / to miss (something you were expected at): She missed the meeting without telling anyone.",
+   "unit": 46,
+   "requires": [
+    "g:reported-speech-full"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:meeting-report"
+   ],
+   "pcic": [
+    "nociones_generales:B2:20",
+    "nociones_generales:B2:22",
+    "nociones_generales:B2:23"
+   ],
+   "sources": [
+    "nt-presencia-ausencia-b2"
+   ],
+   "note": "Asistir = attend, not 'assist' (ayudar). Faltar a implies an expected presence. En presencia de un notario (formal)."
+  },
+  {
+   "id": "p:hacia-las-nueve",
+   "kind": "pattern",
+   "title": "Around a time: hacia las nueve, a eso de las nueve",
+   "es": "hacia / a eso de / como a + clock time: Llegó hacia las nueve. Nos vimos a eso de las tres. Salió como a las diez.",
+   "en": "around / at about: He arrived at around nine.",
+   "unit": 46,
+   "requires": [
+    "g:reported-speech-full"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:meeting-report"
+   ],
+   "pcic": [
+    "nociones_generales:B2:428",
+    "nociones_generales:B2:429",
+    "nociones_generales:B2:431"
+   ],
+   "sources": [
+    "nt-referencias-generales-b2"
+   ],
+   "note": "For testimony and approximate timing; a las nueve en punto for exact. Como a las diez is the everyday Colombian choice."
+  },
+  {
+   "id": "p:alcanzar-a-distinguir",
+   "kind": "pattern",
+   "title": "Managing to make something out: no alcancé a ver",
+   "es": "alcanzar a + infinitive (manage to, just about); distinguir / reconocer; verse de lejos / de cerca: No alcancé a ver quién era. Desde aquí no distingo si es él. La torre se ve de lejos.",
+   "en": "to (just) manage to / make out: I didn't manage to see who it was. I can't make out if it's him.",
+   "unit": 46,
+   "requires": [
+    "g:subj-perception-negated"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:meeting-report"
+   ],
+   "pcic": [
+    "nociones_generales:B2:786",
+    "nociones_generales:B2:791",
+    "nociones_generales:B2:793"
+   ],
+   "sources": [
+    "nt-visibilidad-vision-b2"
+   ],
+   "note": "Alcanzar a + inf is everyday LatAm (no alcancé a llegar = I didn't make it). Distinguir claims telling apart, stronger than ver. Ver borroso; no ver bien de cerca."
+  },
+  {
+   "id": "p:negar-confesar",
+   "kind": "pattern",
+   "title": "Denying and admitting: negó haberlo hecho, confesó que",
+   "es": "negar + infinitive (perfect) / que + subjunctive; confesar / admitir / reconocer que + indicative: Negó haber estado allí. Negó que fuera suyo. Al final confesó que había sido él.",
+   "en": "to deny / admit / confess: He denied having been there. In the end he admitted it was him.",
+   "unit": 46,
+   "requires": [
+    "g:reporting-verbs-mood",
+    "g:subj-perception-negated"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:meeting-report"
+   ],
+   "pcic": [
+    "nociones_generales:B2:1063",
+    "nociones_generales:B2:1073",
+    "nociones_generales:B2:1074"
+   ],
+   "sources": [
+    "nt-expresion-verbal-b2"
+   ],
+   "note": "Negar que pulls the subjunctive (it denies the fact); admitir/reconocer keep the indicative. Confesar implies reluctance. Negar haber + participle anticipates g:infinitive-perfect (u48) — teach as a chunk here. Prometer, asegurar, afirmar add information decir leaves flat."
+  },
+  {
+   "id": "p:concretar",
+   "kind": "pattern",
+   "title": "Pinning it down: en concreto, ¿podemos concretar?",
+   "es": "en concreto / concretamente; concretar + fecha / detalles; no generalizar: Necesito que concretemos la fecha. En concreto, ¿qué propone? No generalices, no todos piensan igual.",
+   "en": "specifically / to pin down / don't generalise: We need to pin down the date.",
+   "unit": 46,
+   "requires": [
+    "g:subj-influence"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:meeting-report"
+   ],
+   "pcic": [
+    "nociones_generales:B2:118",
+    "nociones_generales:B2:119",
+    "nociones_generales:B2:120"
+   ],
+   "sources": [
+    "nt-generalidad-especificidad-b2"
+   ],
+   "note": "Generalizar often implies criticism. Particular is not 'fussy' (= exigente / quisquilloso)."
+  },
+  {
+   "id": "p:intensificadores",
+   "kind": "pattern",
+   "title": "Beyond muy: realmente, totalmente, súper",
+   "es": "realmente / increíblemente / sumamente + adj; totalmente / completamente / absolutamente + absolute adj; súper + adj (colloquial): Fue realmente divertido. Es totalmente falso. Es súper difícil. Muy / demasiado + adj + para: Está muy alto para su edad. Es demasiado tarde para llamar.",
+   "en": "really / totally / super: It's totally false. It's super hard. Very / too … for: He's very tall for his age.",
+   "unit": 47,
+   "requires": [
+    "g:lo-que-intensity"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:181",
+    "nociones_generales:B2:182",
+    "nociones_generales:B2:183"
+   ],
+   "sources": [
+    "nt-grado-b2"
+   ],
+   "note": "Absolutes take totalmente, not muy (*muy falso is weak). Súper is colloquial; avoid in formal writing (sumamente). Colombian: re- / requete- recognition. Muy + adj + para implies comparison with expectations."
+  },
+  {
+   "id": "p:tener-forma-de",
+   "kind": "pattern",
+   "title": "Describing a shape: tiene forma de corazón",
+   "es": "tener forma de + noun / tener forma + adjective: La piscina tiene forma de riñón. La mesa tiene forma rectangular. El lago tiene una forma irregular.",
+   "en": "to be shaped like / to be … in shape: The pool is kidney-shaped.",
+   "unit": 48,
+   "requires": [
+    "g:relatives-formal"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-object"
+   ],
+   "pcic": [
+    "nociones_generales:B1:689",
+    "nociones_generales:B1:691",
+    "nociones_generales:B1:695",
+    "nociones_generales:B2:699",
+    "nociones_generales:B2:701"
+   ],
+   "sources": [
+    "nt-formas-materia-b1",
+    "nt-formas-figuras-b2"
+   ],
+   "note": "Fallback for any shape without a simple name. Shape nouns (círculo, cuadrado…) are vocabulary; the frame is the point. Hacer una curva / un arco."
+  },
+  {
+   "id": "p:ser-de-material",
+   "kind": "pattern",
+   "title": "What it's made of: es de madera, está hecho de acero",
+   "es": "ser de + material / estar hecho de + material (no article): La mesa es de madera. El anillo está hecho de plata. Está hecha a mano.",
+   "en": "to be made of: The table is made of wood. It's handmade.",
+   "unit": 48,
+   "requires": [
+    "g:estar-participle"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-object"
+   ],
+   "pcic": [
+    "nociones_generales:B1:689",
+    "nociones_generales:B1:691",
+    "nociones_generales:B1:695",
+    "nociones_generales:B2:768",
+    "nociones_generales:B2:769"
+   ],
+   "sources": [
+    "nt-formas-materia-b1",
+    "nt-materia-b2",
+    "nt-cualidad-general-b2",
+    "nt-textura-acabado-b2"
+   ],
+   "note": "No article before the material (*es de la madera). Hecho agrees: la mesa está hecha de. Sintético / natural. Bañado en oro = gold-plated. Finishes: bañado en oro; darle una mano de pintura / una capa de barniz."
+  },
+  {
+   "id": "p:fabricado-con-contener",
+   "kind": "pattern",
+   "title": "Manufactured with vs contains: está fabricado con, contiene",
+   "es": "estar fabricado con + materials (objects) vs contener + ingredient (substances): Está fabricado con una mezcla de algodón y licra. Esta crema contiene avena. Relleno de plumas.",
+   "en": "to be made from / to contain: It's made from a cotton–lycra blend. This cream contains oats.",
+   "unit": 48,
+   "requires": [
+    "g:participle-gerund-clauses"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-object"
+   ],
+   "pcic": [
+    "nociones_generales:B2:768",
+    "nociones_generales:B2:769",
+    "nociones_generales:B2:770"
+   ],
+   "sources": [
+    "nt-materia-b2"
+   ],
+   "note": "*La chaqueta contiene poliéster. Materia prima = raw material before processing."
+  },
+  {
+   "id": "p:colores-compuestos",
+   "kind": "pattern",
+   "title": "Colours precisely: es de color azul, zapatos azul oscuro",
+   "es": "ser de color / de forma / de tamaño + adj; compound colours stay invariable: Es de color naranja, de tamaño mediano. Unos zapatos azul oscuro, unas cortinas verde oliva.",
+   "en": "to be … in colour / shape / size; compound colours don't agree: It's orange, medium-sized. Navy shoes, olive-green curtains.",
+   "unit": 48,
+   "requires": [
+    "g:adjective-agreement"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-object"
+   ],
+   "pcic": [
+    "nociones_generales:B2:849",
+    "nociones_generales:B2:851",
+    "nociones_generales:B2:852",
+    "nociones_generales:B2:50",
+    "nociones_generales:B2:51"
+   ],
+   "sources": [
+    "nt-color-b2",
+    "nt-cualidad-general-b2"
+   ],
+   "note": "*zapatos azules oscuros. Colours from nouns often stay invariable too (camisas rosa / color café). Teñirse el pelo de rubio; en blanco y negro."
+  },
+  {
+   "id": "p:pesar-pesarse",
+   "kind": "pattern",
+   "title": "Weight: pesa 20 kilos, me peso los lunes",
+   "es": "pesar + amount (be heavy); pesar + object (weigh it); pesarse (weigh yourself): La maleta pesa 23 kilos. Pesé la maleta antes de salir. Me peso todos los lunes.",
+   "en": "to weigh: The suitcase weighs 23 kilos. I weigh myself every Monday.",
+   "unit": 48,
+   "requires": [
+    "g:reflexive-routine"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-object"
+   ],
+   "pcic": [
+    "nociones_generales:B2:248",
+    "nociones_generales:B2:249",
+    "nociones_generales:B2:250"
+   ],
+   "sources": [
+    "nt-peso-b2"
+   ],
+   "note": "No 'ser': *es 23 kilos. ¿Cuánto pesa? Peso exacto vs aproximado. Tonelada, carga. Pesado also = annoying (Col. 'qué pesado')."
+  },
+  {
+   "id": "p:resistente-a",
+   "kind": "pattern",
+   "title": "Resistant to: resistente al agua",
+   "es": "resistente a / la resistencia a + threat; a prueba de + noun: Es resistente al agua. Este material resiste temperaturas extremas. Un vidrio a prueba de balas.",
+   "en": "resistant to / -proof: It's water-resistant. Bulletproof glass.",
+   "unit": 48,
+   "requires": [
+    "g:relatives-formal"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-object"
+   ],
+   "pcic": [
+    "nociones_generales:B2:716",
+    "nociones_generales:B2:717",
+    "nociones_generales:B2:719"
+   ],
+   "sources": [
+    "nt-consistencia-resistencia-b2"
+   ],
+   "note": "Name the threat (a + noun). Frágil, duro, denso / espeso / líquido are a scale. LatAm vidrio (cristal = fine glassware / Spain)."
+  },
+  {
+   "id": "p:a-lo-largo-de",
+   "kind": "pattern",
+   "title": "Along and across: a lo largo de, al otro lado de",
+   "es": "a lo largo de / al otro lado de / a través de / en lo alto de + place: Caminamos a lo largo de la playa. El campamento está al otro lado del río. A lo largo del año.",
+   "en": "along / on the other side of / through / at the top of: We walked along the beach.",
+   "unit": 48,
+   "requires": [
+    "g:participle-gerund-clauses"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-object"
+   ],
+   "pcic": [
+    "nociones_generales:B2:300",
+    "nociones_generales:B2:301",
+    "nociones_generales:B2:305",
+    "nociones_generales:B2:428",
+    "nociones_generales:B2:429"
+   ],
+   "sources": [
+    "nt-posicion-relativa-b2",
+    "nt-referencias-generales-b2"
+   ],
+   "note": "A lo largo de traces a whole extent (space or time), not a point. Delantero / trasero (asiento trasero), anterior / posterior."
+  },
+  {
+   "id": "p:le-falta-sal",
+   "kind": "pattern",
+   "title": "Precise taste: le falta sal, está desabrido",
+   "es": "le falta + ingredient; está desabrido / salado / picante; tiene un toque + adj: La sopa está desabrida, le falta sal. Tiene un toque agridulce. Huele a quemado.",
+   "en": "it needs salt / it's bland / it has a hint of: The soup is bland, it needs salt.",
+   "unit": 48,
+   "requires": [
+    "g:gustar-full"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-object"
+   ],
+   "pcic": [
+    "nociones_generales:B2:832",
+    "nociones_generales:B2:833",
+    "nociones_generales:B2:834"
+   ],
+   "sources": [
+    "nt-sabor-olor-b2"
+   ],
+   "note": "Colombian desabrido / simple = bland (Spain soso). Aroma = pleasant; olor = neutral."
+  },
+  {
+   "id": "p:caracterizarse-por",
+   "kind": "pattern",
+   "title": "Defining traits and parts: se caracteriza por, se compone de",
+   "es": "caracterizarse por + noun; componerse de / estar compuesto por + parts; consistir en + content: El edificio se caracteriza por su fachada de ladrillo. El comité se compone de cinco miembros. El proyecto consiste en tres fases.",
+   "en": "to be characterised by / made up of / consist of: The building is known for its brick façade.",
+   "unit": 48,
+   "requires": [
+    "g:relatives-formal"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-object"
+   ],
+   "pcic": [
+    "nociones_generales:B2:50",
+    "nociones_generales:B2:51",
+    "nociones_generales:B2:52"
+   ],
+   "sources": [
+    "nt-cualidad-general-b2"
+   ],
+   "note": "Consistir en introduces content / plan, not physical material (≠ estar hecho de). Placed at u48 though g:verbs-prepositions is u49: introduce these as frames here."
+  },
+  {
+   "id": "p:detenerse-estar-parado",
+   "kind": "pattern",
+   "title": "Stopping vs being stopped: se detuvo / estaba parado",
+   "es": "detenerse / pararse (event) vs estar parado / quieto (state); quedarse quieto: La máquina se detuvo de repente. El carro estaba parado en el semáforo. Quédate quieto.",
+   "en": "to stop vs to be stationary / still: The machine suddenly stopped. The car was stopped at the lights.",
+   "unit": 48,
+   "requires": [
+    "g:participle-gerund-clauses"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:describe-object"
+   ],
+   "pcic": [
+    "nociones_generales:B2:353",
+    "nociones_generales:B2:354",
+    "nociones_generales:B2:358"
+   ],
+   "sources": [
+    "nt-movimiento-estabilidad-b2"
+   ],
+   "note": "Event vs resulting state, like most estar + participle. LatAm: estar parado also = standing up (recognition). Arrancar, acelerar, frenar, adelantar (overtake) are vehicle phases."
+  },
+  {
+   "id": "p:dirigirse-a",
+   "kind": "pattern",
+   "title": "Heading for and addressing: me dirijo a usted",
+   "es": "dirigirse a + place (head for) / a + person (address): Se dirigió a la salida. Me dirijo a ustedes para solicitar… Se dirigió a mí en tono formal.",
+   "en": "to head for / to address: I am writing to you to request…",
+   "unit": 49,
+   "requires": [
+    "g:formal-letter-grammar"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:formal-services"
+   ],
+   "pcic": [
+    "nociones_generales:B2:378",
+    "nociones_generales:B2:383",
+    "nociones_generales:B2:384"
+   ],
+   "sources": [
+    "nt-orientacion-direccion-b2"
+   ],
+   "note": "Same verb, two meanings; context decides. En dirección a = heading towards."
+  },
+  {
+   "id": "p:disponer-de",
+   "kind": "pattern",
+   "title": "What you have available: contamos con, disponemos de",
+   "es": "contar con / disponer de / tener acceso a + resource: Contamos con el apoyo de todo el equipo. El apartamento dispone de parqueadero. No dispongo de tiempo.",
+   "en": "to have (available) / rely on: The flat has a parking space.",
+   "unit": 49,
+   "requires": [
+    "g:verbs-prepositions"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:formal-services"
+   ],
+   "pcic": [
+    "nociones_generales:B2:35",
+    "nociones_generales:B2:36",
+    "nociones_generales:B2:37"
+   ],
+   "sources": [
+    "nt-disponibilidad-b2"
+   ],
+   "note": "Formal versions of tener. Contar con ≠ count. Disponible / a mano (to hand)."
+  },
+  {
+   "id": "p:fuera-de-servicio",
+   "kind": "pattern",
+   "title": "Out of service: está fuera de servicio",
+   "es": "estar fuera de servicio / de uso / dañado: El ascensor está fuera de servicio desde el lunes. El cajero está dañado.",
+   "en": "to be out of order / broken: The lift has been out of order since Monday.",
+   "unit": 49,
+   "requires": [
+    "g:formal-letter-grammar"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:formal-services"
+   ],
+   "pcic": [
+    "nociones_generales:B2:980",
+    "nociones_generales:B2:981",
+    "nociones_generales:B2:982"
+   ],
+   "sources": [
+    "nt-utilidad-uso-b2"
+   ],
+   "note": "Implies it used to work. Colombian dañado = broken (Spain estropeado). Utilizar / emplear + para."
+  },
+  {
+   "id": "p:dedicarse-a",
+   "kind": "pattern",
+   "title": "What you do / devote time to: me dedico a, dedicar tiempo a",
+   "es": "dedicarse a + profession / inf; dedicar + tiempo / esfuerzo + a + noun/inf: Me dedico a la docencia desde 2015. Me gustaría dedicar más tiempo a mi familia.",
+   "en": "to do for a living / to devote time to: I have worked in teaching since 2015.",
+   "unit": 49,
+   "requires": [
+    "g:verbs-prepositions"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:formal-services"
+   ],
+   "pcic": [
+    "nociones_generales:B2:428",
+    "nociones_generales:B2:429",
+    "nociones_generales:B2:431",
+    "nociones_generales:B2:980",
+    "nociones_generales:B2:981"
+   ],
+   "sources": [
+    "nt-referencias-generales-b2",
+    "nt-utilidad-uso-b2"
+   ],
+   "note": "¿A qué te dedicas? is the everyday 'what do you do?'. Aprovechar / perder el tiempo."
+  },
+  {
+   "id": "p:gasto-inversion",
+   "kind": "pattern",
+   "title": "Spending vs investing: salir caro, ganar valor",
+   "es": "un gasto vs una inversión; salir caro / barato; ganar / perder valor; ser rentable: Lo barato sale caro. La casa ha ganado mucho valor. No es un gasto, es una inversión.",
+   "en": "an expense vs an investment; to work out expensive; to gain / lose value: Buy cheap, pay twice.",
+   "unit": 49,
+   "requires": [
+    "g:formal-letter-grammar"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:formal-services"
+   ],
+   "pcic": [
+    "nociones_generales:B2:909",
+    "nociones_generales:B2:911",
+    "nociones_generales:B2:913"
+   ],
+   "sources": [
+    "nt-valor-precio-b2"
+   ],
+   "note": "Inversión implies a return — a persuasive framing. Lo barato sale caro is a common saying."
+  },
+  {
+   "id": "p:entregar-recoger",
+   "kind": "pattern",
+   "title": "Delivering and collecting: entregar, recoger, a domicilio",
+   "es": "entregar + thing (a alguien); recoger + thing / person; servicio a domicilio: Le entregamos el pedido a domicilio. Paso a recoger los documentos el viernes.",
+   "en": "to hand over / deliver vs to collect / pick up; home delivery: I'll come and pick up the documents on Friday.",
+   "unit": 49,
+   "requires": [
+    "g:formal-letter-grammar"
+   ],
+   "contrasts": [],
+   "serves": [
+    "d:formal-services"
+   ],
+   "pcic": [
+    "nociones_generales:B2:378",
+    "nociones_generales:B2:383",
+    "nociones_generales:B2:384"
+   ],
+   "sources": [
+    "nt-orientacion-direccion-b2"
+   ],
+   "note": "Colombia: un domicilio = a delivery; el domiciliario = delivery rider (c:pedir-un-domicilio). Opposite directions of one transaction."
+  },
+  {
+   "id": "p:tener-la-mania-de",
+   "kind": "pattern",
+   "title": "Annoying habits: tienes la manía de",
+   "es": "tener la manía / la costumbre / el vicio de + infinitive: Tienes la manía de revisar el celular cada cinco minutos. Tiene la costumbre de llegar tarde.",
+   "en": "to have the (annoying) habit of: You have this habit of checking your phone every five minutes.",
+   "unit": 50,
+   "requires": [
+    "g:infinitive-subject"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:628",
+    "nociones_generales:B2:629",
+    "nociones_generales:B2:630"
+   ],
+   "sources": [
+    "nt-repeticion-b2"
+   ],
+   "note": "Hábito / costumbre neutral, manía quirky-obsessive, vicio negative (fumar es un vicio). Use with care in a conflict — it can sound like an accusation."
+  },
+  {
+   "id": "p:darle-importancia",
+   "kind": "pattern",
+   "title": "Making a big deal (or not): no le des importancia",
+   "es": "darle importancia a + noun / a que + subjunctive; no tener importancia: No le des importancia, fue un malentendido. Le das demasiada importancia a lo que dice la gente.",
+   "en": "to attach importance to / make a big deal of: Don't make a big deal of it, it was a misunderstanding.",
+   "unit": 50,
+   "requires": [
+    "g:le-doubling",
+    "g:negative-commands"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:966",
+    "nociones_generales:B1:969",
+    "nociones_generales:B1:977",
+    "nociones_generales:B2:1004",
+    "nociones_generales:B2:1006"
+   ],
+   "sources": [
+    "nt-exito-utilidad-importancia-b1",
+    "nt-importancia-normalidad-b2"
+   ],
+   "note": "Le doubling is standard (darle importancia a algo). No pasa nada / no importa are lighter."
+  },
+  {
+   "id": "p:a-gritos",
+   "kind": "pattern",
+   "title": "Shouting and loud: a gritos, a todo volumen",
+   "es": "hablar a gritos / pegar un grito; poner la música a todo volumen; bajarle el volumen: Los vecinos hablan a gritos todo el día. ¿Le puedes bajar a la música?",
+   "en": "to shout / at full blast; turn it down: Could you turn the music down?",
+   "unit": 50,
+   "requires": [
+    "g:que-wishes-commands"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:813",
+    "nociones_generales:B2:814",
+    "nociones_generales:B2:817"
+   ],
+   "sources": [
+    "nt-audibilidad-audicion-b2"
+   ],
+   "note": "Bajarle (a la música) is very LatAm. Sonar takes the source as subject (sonó el timbre). Sordo / mudo."
+  },
+  {
+   "id": "p:repartir-entre",
+   "kind": "pattern",
+   "title": "Splitting and sharing out: repartir entre, partir por la mitad",
+   "es": "partir / dividir en + parts (the act) vs repartir / distribuir entre + recipients: Partimos la cuenta por la mitad. Repartieron la herencia entre los hijos.",
+   "en": "to split vs to share out: We split the bill in half. They shared the inheritance among the children.",
+   "unit": 50,
+   "requires": [
+    "g:subj-free-relatives"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:169",
+    "nociones_generales:B2:170",
+    "nociones_generales:B2:172"
+   ],
+   "sources": [
+    "nt-proporcion-b2"
+   ],
+   "note": "Repartir = who gets what. Dividir la cuenta / pagar a medias."
+  },
+  {
+   "id": "p:adaptarse-a",
+   "kind": "pattern",
+   "title": "Adapting: adaptarse al clima",
+   "es": "adaptarse a + noun / inf; acostumbrarse a: Le costó adaptarse al horario de España. Ya me acostumbré a la comida. Un periodo de adaptación.",
+   "en": "to adapt / get used to: It was hard for her to adapt to Spain's timetable.",
+   "unit": 51,
+   "requires": [
+    "g:spain-pasts"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:931",
+    "nociones_generales:B2:932",
+    "nociones_generales:B2:933"
+   ],
+   "sources": [
+    "nt-adecuacion-b2"
+   ],
+   "note": "The a is obligatory (*adaptarse el clima). Encajar = fit in."
+  },
+  {
+   "id": "p:proceder-de",
+   "kind": "pattern",
+   "title": "Where it comes from: proviene de, tiene su origen en",
+   "es": "proceder / provenir de; tener su origen en; remontarse a + time: Muchas palabras provienen del árabe. La costumbre tiene su origen en la Edad Media. Se remonta al siglo XVI.",
+   "en": "to come from / originate in / date back to: Many words come from Arabic.",
+   "unit": 51,
+   "requires": [
+    "g:vosotros-recognition"
+   ],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:410",
+    "nociones_generales:B2:411",
+    "nociones_generales:B2:412"
+   ],
+   "sources": [
+    "nt-origen-b2"
+   ],
+   "note": "Formal; venir de in speech. La procedencia (origin). La raíz del problema (c:la-raiz-del-problema)."
+  },
+  {
+   "id": "c:asi-esta-bien",
+   "kind": "chunk",
+   "title": "Closing politely: No, así está bien, gracias",
+   "es": "—¿Algo más? —No, así está bien, gracias. / Nada más, gracias.",
+   "en": "No, that's fine, thanks. / That's all, thanks.",
+   "unit": 37,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:phone-practical"
+   ],
+   "pcic": [
+    "nociones_generales:B1:934",
+    "nociones_generales:B1:936",
+    "nociones_generales:B1:940"
+   ],
+   "sources": [
+    "nt-conformidad-correccion-precision-b1"
+   ],
+   "note": "Fixed closing that declines more without rejecting. Así está bien."
+  },
+  {
+   "id": "c:por-suerte",
+   "kind": "chunk",
+   "title": "Luckily: por suerte",
+   "es": "Por suerte no le pasó nada. ¡Qué suerte!",
+   "en": "Luckily nothing happened to him. What luck!",
+   "unit": 34,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:mishap-detail"
+   ],
+   "pcic": [
+    "nociones_generales:B1:105",
+    "nociones_generales:B1:106",
+    "nociones_generales:B1:107"
+   ],
+   "sources": [
+    "nt-necesidad-obligacion-b1"
+   ],
+   "note": "Also menos mal (que…) — very common in Colombia."
+  },
+  {
+   "id": "c:me-suena",
+   "kind": "chunk",
+   "title": "That rings a bell: me suena",
+   "es": "Ese nombre me suena. —¿Conoces a Andrés? —No me suena.",
+   "en": "That name rings a bell. — No, doesn't ring a bell.",
+   "unit": 37,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:phone-practical"
+   ],
+   "pcic": [
+    "nociones_generales:B2:813",
+    "nociones_generales:B2:814",
+    "nociones_generales:B2:817"
+   ],
+   "sources": [
+    "nt-audibilidad-audicion-b2"
+   ],
+   "note": "Sonar (gustar pattern). Sonar also: sonó el timbre / el celular (source as subject).",
+   "unpacks": "g:gustar-full"
+  },
+  {
+   "id": "c:no-esta-nada-mal",
+   "kind": "chunk",
+   "title": "Not bad at all: no está nada mal",
+   "es": "No está nada mal para ser la primera vez.",
+   "en": "Not bad at all for a first try.",
+   "unit": 43,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:outcomes-worth"
+   ],
+   "pcic": [
+    "nociones_generales:B2:896",
+    "nociones_generales:B2:897",
+    "nociones_generales:B2:899"
+   ],
+   "sources": [
+    "nt-evaluacion-general-b2"
+   ],
+   "note": "Understated praise."
+  },
+  {
+   "id": "c:cuenta-conmigo",
+   "kind": "chunk",
+   "title": "Count on me: cuenta conmigo",
+   "es": "Si necesitas algo, cuenta conmigo. Cuento contigo.",
+   "en": "If you need anything, count on me.",
+   "unit": 41,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:35",
+    "nociones_generales:B2:36",
+    "nociones_generales:B2:37",
+    "nociones_generales:B1:1025",
+    "nociones_generales:B1:1027"
+   ],
+   "sources": [
+    "nt-disponibilidad-b2",
+    "nt-reflexion-expresion-b1"
+   ],
+   "note": "Seeds contar con (rely on).",
+   "unpacks": "g:verbs-prepositions"
+  },
+  {
+   "id": "c:se-me-hizo-tarde",
+   "kind": "chunk",
+   "title": "I'm running late: se me hizo tarde",
+   "es": "Perdón, se me hizo tarde. ¡Ya voy!",
+   "en": "Sorry, I lost track of time / I'm late.",
+   "unit": 34,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:schedule-timing"
+   ],
+   "pcic": [
+    "nociones_generales:B1:524",
+    "nociones_generales:B1:526",
+    "nociones_generales:B1:528"
+   ],
+   "sources": [
+    "nt-puntualidad-retraso-b1"
+   ],
+   "note": "Extends the puntualidad lesson; very common LatAm excuse.",
+   "unpacks": "g:se-accidental"
+  },
+  {
+   "id": "c:apurate",
+   "kind": "chunk",
+   "title": "Hurry up: ¡apúrate!",
+   "es": "¡Apúrate, que vamos tarde! Estoy de afán. No hay afán.",
+   "en": "Hurry up, we're late! I'm in a rush. There's no rush.",
+   "unit": 32,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:schedule-timing"
+   ],
+   "pcic": [
+    "nociones_generales:B1:524",
+    "nociones_generales:B1:526",
+    "nociones_generales:B1:528"
+   ],
+   "sources": [
+    "nt-puntualidad-retraso-b1"
+   ],
+   "note": "Replaces Spain's date prisa. Afán is Colombian; tener prisa understood everywhere.",
+   "unpacks": "g:commands-with-pronouns"
+  },
+  {
+   "id": "c:una-y-otra-vez",
+   "kind": "chunk",
+   "title": "Over and over: una y otra vez",
+   "es": "Lo intentamos una y otra vez hasta que funcionó.",
+   "en": "We tried over and over until it worked.",
+   "unit": 47,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:628",
+    "nociones_generales:B2:629",
+    "nociones_generales:B2:630"
+   ],
+   "sources": [
+    "nt-repeticion-b2"
+   ],
+   "note": "Also una vez más, de nuevo (nuevamente = more formal)."
+  },
+  {
+   "id": "c:lo-tengo-clarisimo",
+   "kind": "chunk",
+   "title": "I'm absolutely sure: lo tengo clarísimo",
+   "es": "Lo tengo clarísimo: no voy a cambiar de opinión.",
+   "en": "I'm absolutely clear on that.",
+   "unit": 44,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:certainty-necessity"
+   ],
+   "pcic": [
+    "nociones_generales:B2:943",
+    "nociones_generales:B2:944",
+    "nociones_generales:B2:945"
+   ],
+   "sources": [
+    "nt-correccion-precision-b2"
+   ],
+   "note": "Tenerlo (muy) claro = be sure, not about eyesight."
+  },
+  {
+   "id": "c:la-raiz-del-problema",
+   "kind": "chunk",
+   "title": "The root of the problem: la raíz del problema",
+   "es": "Hay que atacar la raíz del problema, no los síntomas.",
+   "en": "We need to tackle the root of the problem, not the symptoms.",
+   "unit": 44,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:410",
+    "nociones_generales:B2:411",
+    "nociones_generales:B2:412"
+   ],
+   "sources": [
+    "nt-origen-b2"
+   ],
+   "note": "Fixed metaphor; do not extend raíz to every 'origin'."
+  },
+  {
+   "id": "c:empuje-hale",
+   "kind": "chunk",
+   "title": "Door signs: Empuje / Hale",
+   "es": "EMPUJE / HALE. Para abrir hay que halar.",
+   "en": "PUSH / PULL.",
+   "unit": 42,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:378",
+    "nociones_generales:B2:383",
+    "nociones_generales:B2:384"
+   ],
+   "sources": [
+    "nt-orientacion-direccion-b2"
+   ],
+   "note": "Colombia: halar / jalar for pull (Spain tirar — recognition). Classic sign mix-up."
+  },
+  {
+   "id": "c:pedir-un-domicilio",
+   "kind": "chunk",
+   "title": "Ordering delivery: ¿pedimos un domicilio?",
+   "es": "¿Pedimos un domicilio? El domicilio cuesta tres mil.",
+   "en": "Shall we order delivery? Delivery costs three thousand.",
+   "unit": 42,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:378",
+    "nociones_generales:B2:383",
+    "nociones_generales:B2:384"
+   ],
+   "sources": [
+    "nt-orientacion-direccion-b2"
+   ],
+   "note": "Colombian domicilio = home delivery. Story dialogue / everyday."
+  },
+  {
+   "id": "c:hacer-fila",
+   "kind": "chunk",
+   "title": "Queuing: hacer fila",
+   "es": "Toca hacer fila para la cita. Había una fila enorme.",
+   "en": "We have to queue for the appointment. There was a huge queue.",
+   "unit": 35,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:371",
+    "nociones_generales:B1:373",
+    "nociones_generales:B1:375",
+    "nociones_generales:B2:399",
+    "nociones_generales:B2:400"
+   ],
+   "sources": [
+    "nt-orientacion-orden-b1",
+    "nt-orden-b2"
+   ],
+   "note": "LatAm hacer fila (Spain hacer cola). En orden / por orden alfabético. Ordering phrases: por orden alfabético, en primer lugar / puesto, quedar de tercero (Col.)."
+  },
+  {
+   "id": "x:seguir-dejar-de",
+   "kind": "contrast",
+   "title": "Still doing it or stopped? sigo yendo / dejé de ir",
+   "es": "",
+   "en": "",
+   "unit": 31,
+   "requires": [],
+   "contrasts": [
+    "p:seguir-gerundio",
+    "p:dejar-de-inf"
+   ],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:532",
+    "nociones_generales:B1:534",
+    "nociones_generales:B1:548"
+   ],
+   "sources": [
+    "nt-ciclo-accion-b1"
+   ],
+   "note": "Mixed practice: same event, opposite ends. Gerund after seguir, de + infinitive after dejar."
+  },
+  {
+   "id": "x:llevar-gerundio-sin",
+   "kind": "contrast",
+   "title": "Been doing vs been without: llevo un año estudiando / llevo un año sin estudiar",
+   "es": "",
+   "en": "",
+   "unit": 43,
+   "requires": [],
+   "contrasts": [
+    "p:llevar-tiempo-gerundio",
+    "p:llevar-sin-inf"
+   ],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:475",
+    "nociones_generales:B2:477",
+    "nociones_generales:B2:480"
+   ],
+   "sources": [
+    "nt-localizacion-tiempo-b2"
+   ],
+   "note": "Learners negate with no + gerund; the absence form is sin + infinitive."
+  },
+  {
+   "id": "x:darse-cuenta-enterarse",
+   "kind": "contrast",
+   "title": "Realise vs find out: me di cuenta / me enteré",
+   "es": "",
+   "en": "",
+   "unit": 38,
+   "requires": [],
+   "contrasts": [
+    "p:darse-cuenta-de",
+    "p:enterarse-de"
+   ],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:1034",
+    "nociones_generales:B2:1037",
+    "nociones_generales:B2:1040",
+    "nociones_generales:B1:1025",
+    "nociones_generales:B1:1027"
+   ],
+   "sources": [
+    "nt-reflexion-conocimiento-b2",
+    "nt-reflexion-expresion-b1"
+   ],
+   "note": "Realising by yourself vs being told; English 'realise' is often over-used for both."
+  },
+  {
+   "id": "x:medir-caber",
+   "kind": "contrast",
+   "title": "How big vs does it fit: mide / cabe",
+   "es": "",
+   "en": "",
+   "unit": 33,
+   "requires": [],
+   "contrasts": [
+    "p:medir",
+    "p:caber"
+   ],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:188",
+    "nociones_generales:B1:192",
+    "nociones_generales:B1:195"
+   ],
+   "sources": [
+    "nt-medidas-tamano-superficie-b1"
+   ],
+   "note": "Measurement fact vs fit in a specific space."
+  },
+  {
+   "id": "x:tardar-llegar-tarde",
+   "kind": "contrast",
+   "title": "Taking long vs being late: se demoró / llegó tarde",
+   "es": "",
+   "en": "",
+   "unit": 37,
+   "requires": [],
+   "contrasts": [
+    "p:tardar-en",
+    "p:llegar-a-tiempo"
+   ],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:524",
+    "nociones_generales:B1:526",
+    "nociones_generales:B1:528"
+   ],
+   "sources": [
+    "nt-puntualidad-retraso-b1"
+   ],
+   "note": "Duration vs lateness against a schedule; English 'late' covers both."
+  },
+  {
+   "id": "x:hacerse-llegar-a-ser",
+   "kind": "contrast",
+   "title": "Becoming: se hizo rico / llegó a ser rico",
+   "es": "",
+   "en": "",
+   "unit": 43,
+   "requires": [],
+   "contrasts": [
+    "g:verbs-of-change",
+    "p:llegar-a-ser"
+   ],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:971",
+    "nociones_generales:B2:972",
+    "nociones_generales:B2:973"
+   ],
+   "sources": [
+    "nt-exito-logro-b2"
+   ],
+   "note": "Llegar a ser = gradual achievement; hacerse = effort/choice; volverse = change of character; ponerse = temporary."
+  },
+  {
+   "id": "x:talento-capacidad",
+   "kind": "contrast",
+   "title": "Good at it vs able to: se me da bien / soy capaz de / soy bueno para",
+   "es": "",
+   "en": "",
+   "unit": 43,
+   "requires": [],
+   "contrasts": [
+    "p:darsele-bien",
+    "p:ser-capaz-de",
+    "p:ser-bueno-para"
+   ],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:991",
+    "nociones_generales:B2:993",
+    "nociones_generales:B2:994",
+    "nociones_generales:B1:966",
+    "nociones_generales:B1:969"
+   ],
+   "sources": [
+    "nt-capacidad-competencia-b2",
+    "nt-exito-utilidad-importancia-b1"
+   ],
+   "note": "Natural aptitude vs one specific act vs general skill."
+  },
+  {
+   "id": "x:dar-igual-parecer-bien",
+   "kind": "contrast",
+   "title": "Don't mind vs approve: me da igual / me parece bien",
+   "es": "",
+   "en": "",
+   "unit": 29,
+   "requires": [],
+   "contrasts": [
+    "p:dar-igual",
+    "g:parecer-quedar"
+   ],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:1004",
+    "nociones_generales:B2:1006",
+    "nociones_generales:B2:1008"
+   ],
+   "sources": [
+    "nt-importancia-normalidad-b2"
+   ],
+   "note": "Indifference can sound dismissive where approval is expected."
+  },
+  {
+   "id": "d:senses",
+   "kind": "cando",
+   "title": "I can say what something looks, sounds, smells and tastes like, and what bores me or costs me effort.",
+   "es": "",
+   "en": "",
+   "unit": 30,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:777",
+    "nociones_generales:B1:780",
+    "nociones_generales:B1:804",
+    "nociones_generales:B2:961",
+    "nociones_generales:B2:962"
+   ],
+   "sources": [
+    "nt-sentidos-b1",
+    "nt-interes-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:duration-change",
+   "kind": "cando",
+   "title": "I can say how long I've been doing something, and what I still do, have stopped doing or have started again.",
+   "es": "",
+   "en": "",
+   "unit": 31,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:414",
+    "nociones_generales:B1:415",
+    "nociones_generales:B1:465",
+    "nociones_generales:B1:532",
+    "nociones_generales:B1:534"
+   ],
+   "sources": [
+    "nt-tiempo-referencias-futuro-pasado-presente-b1",
+    "nt-ciclo-accion-b1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:schedule-timing",
+   "kind": "cando",
+   "title": "I can say whether something is on time, late, brought forward or postponed, and how long it takes.",
+   "es": "",
+   "en": "",
+   "unit": 32,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:524",
+    "nociones_generales:B1:526",
+    "nociones_generales:B1:528",
+    "nociones_generales:B2:586",
+    "nociones_generales:B2:587"
+   ],
+   "sources": [
+    "nt-puntualidad-retraso-b1",
+    "nt-anticipacion-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:abilities",
+   "kind": "cando",
+   "title": "I can say what I and others are good at, find hard, tried to do or managed to do.",
+   "es": "",
+   "en": "",
+   "unit": 32,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:966",
+    "nociones_generales:B1:969",
+    "nociones_generales:B1:977",
+    "nociones_generales:B2:991",
+    "nociones_generales:B2:993"
+   ],
+   "sources": [
+    "nt-exito-utilidad-importancia-b1",
+    "nt-capacidad-competencia-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:describe-space",
+   "kind": "cando",
+   "title": "I can describe a space I'm looking for: its size, what fits, where exactly things are, and what's free, full or left.",
+   "es": "",
+   "en": "",
+   "unit": 33,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:188",
+    "nociones_generales:B1:192",
+    "nociones_generales:B1:195",
+    "nociones_generales:B1:1",
+    "nociones_generales:B1:2"
+   ],
+   "sources": [
+    "nt-medidas-tamano-superficie-b1",
+    "nt-existencia-disponibilidad-b1",
+    "nt-localizacion-posicion-b1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:mishap-detail",
+   "kind": "cando",
+   "title": "I can explain in detail how a mishap happened: where, how fast, what fell, got dirty, broke or went missing.",
+   "es": "",
+   "en": "",
+   "unit": 34,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:317",
+    "nociones_generales:B1:319",
+    "nociones_generales:B1:331",
+    "nociones_generales:B2:884",
+    "nociones_generales:B2:885"
+   ],
+   "sources": [
+    "nt-distancia-movimiento-b1",
+    "nt-limpieza-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:figures-prices",
+   "kind": "cando",
+   "title": "I can give figures, percentages and proportions, and talk about changing prices, deals and things selling out.",
+   "es": "",
+   "en": "",
+   "unit": 36,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:129",
+    "nociones_generales:B1:130",
+    "nociones_generales:B1:133",
+    "nociones_generales:B1:157",
+    "nociones_generales:B1:158"
+   ],
+   "sources": [
+    "nt-cantidad-numerica-relativa-b1",
+    "nt-aumento-proporcion-grado-b1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:phone-practical",
+   "kind": "cando",
+   "title": "I can sort out practical problems in a call: a bad line, a wrong number, a delay, a polite question.",
+   "es": "",
+   "en": "",
+   "unit": 37,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:777",
+    "nociones_generales:B1:780",
+    "nociones_generales:B1:804",
+    "nociones_generales:B1:934",
+    "nociones_generales:B1:936"
+   ],
+   "sources": [
+    "nt-sentidos-b1",
+    "nt-conformidad-correccion-precision-b1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:realise-findout",
+   "kind": "cando",
+   "title": "I can say when I realised or found out something, and how it turned out.",
+   "es": "",
+   "en": "",
+   "unit": 38,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:1025",
+    "nociones_generales:B1:1027",
+    "nociones_generales:B1:1030",
+    "nociones_generales:B2:1034",
+    "nociones_generales:B2:1037"
+   ],
+   "sources": [
+    "nt-reflexion-expresion-b1",
+    "nt-reflexion-conocimiento-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:climate",
+   "kind": "cando",
+   "title": "I can describe temperature, humidity and how a climate feels.",
+   "es": "",
+   "en": "",
+   "unit": 40,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B1:213",
+    "nociones_generales:B1:216",
+    "nociones_generales:B1:220",
+    "nociones_generales:B2:751",
+    "nociones_generales:B2:754"
+   ],
+   "sources": [
+    "nt-temperatura-velocidad-volumen-b1",
+    "nt-humedad-sequedad-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:outcomes-worth",
+   "kind": "cando",
+   "title": "I can say how something turned out for someone, what they became, and whether it was worth it.",
+   "es": "",
+   "en": "",
+   "unit": 43,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:896",
+    "nociones_generales:B2:897",
+    "nociones_generales:B2:899",
+    "nociones_generales:B2:971",
+    "nociones_generales:B2:972"
+   ],
+   "sources": [
+    "nt-evaluacion-general-b2",
+    "nt-exito-logro-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:certainty-necessity",
+   "kind": "cando",
+   "title": "I can say how sure I am and how necessary something is, from 'maybe' to 'essential'.",
+   "es": "",
+   "en": "",
+   "unit": 44,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:77",
+    "nociones_generales:B2:78",
+    "nociones_generales:B2:79",
+    "nociones_generales:B2:111",
+    "nociones_generales:B2:112"
+   ],
+   "sources": [
+    "nt-certeza-b2",
+    "nt-necesidad-contingencia-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:news-figures",
+   "kind": "cando",
+   "title": "I can report events, their causes and approximate figures in a news style.",
+   "es": "",
+   "en": "",
+   "unit": 45,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:66",
+    "nociones_generales:B2:67",
+    "nociones_generales:B2:68",
+    "nociones_generales:B2:147",
+    "nociones_generales:B2:148"
+   ],
+   "sources": [
+    "nt-acontecimiento-b2",
+    "nt-cantidad-relativa-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:meeting-report",
+   "kind": "cando",
+   "title": "I can say who attended or missed something, when, what people could make out, and what they admitted or denied.",
+   "es": "",
+   "en": "",
+   "unit": 46,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:20",
+    "nociones_generales:B2:22",
+    "nociones_generales:B2:23",
+    "nociones_generales:B2:1063",
+    "nociones_generales:B2:1073"
+   ],
+   "sources": [
+    "nt-presencia-ausencia-b2",
+    "nt-expresion-verbal-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:describe-object",
+   "kind": "cando",
+   "title": "I can describe an object precisely: shape, size, weight, material, colour, taste and how it holds up.",
+   "es": "",
+   "en": "",
+   "unit": 48,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:699",
+    "nociones_generales:B2:701",
+    "nociones_generales:B2:703",
+    "nociones_generales:B2:768",
+    "nociones_generales:B2:769"
+   ],
+   "sources": [
+    "nt-formas-figuras-b2",
+    "nt-materia-b2",
+    "nt-peso-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "d:formal-services",
+   "kind": "cando",
+   "title": "I can deal formally with services and contracts: what's available, what's out of order, delivery and pickup.",
+   "es": "",
+   "en": "",
+   "unit": 49,
+   "requires": [],
+   "contrasts": [],
+   "serves": [],
+   "pcic": [
+    "nociones_generales:B2:35",
+    "nociones_generales:B2:36",
+    "nociones_generales:B2:37",
+    "nociones_generales:B2:980",
+    "nociones_generales:B2:981"
+   ],
+   "sources": [
+    "nt-disponibilidad-b2",
+    "nt-utilidad-uso-b2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "c:a-largo-plazo",
+   "kind": "chunk",
+   "title": "In the short and long term: a corto plazo, a largo plazo",
+   "es": "A corto plazo no hay solución, pero a largo plazo sí. Es una inversión a largo plazo.",
+   "en": "In the short term there's no solution, but in the long term there is.",
+   "unit": 44,
+   "requires": [],
+   "contrasts": [],
+   "serves": [
+    "d:certainty-necessity"
+   ],
+   "pcic": [
+    "nociones_generales:B2:475",
+    "nociones_generales:B2:477",
+    "nociones_generales:B2:480"
+   ],
+   "sources": [
+    "nt-localizacion-tiempo-b2"
+   ],
+   "note": "LatAm a mediano plazo (Spain medio plazo). Classifies timing, not importance."
+  }
+ ],
+ "triage": [
+  {
+   "lesson": "nt-existencia-disponibilidad-b1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-cualidad-generalidad-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-certeza-realidad-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Subjunctive-trigger content is g:quizas-a-lo-mejor / g:subj-doubt; mined the certainty frame only. real vs realista left as vocab."
+  },
+  {
+   "lesson": "nt-necesidad-obligacion-b1",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-acontecimiento-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-cantidad-numerica-relativa-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-aumento-proporcion-grado-b1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-medidas-tamano-superficie-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-temperatura-velocidad-volumen-b1",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Llenar/vaciar, poco a poco left as vocab."
+  },
+  {
+   "lesson": "nt-localizacion-posicion-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-distancia-movimiento-b1",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-orientacion-orden-b1",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [
+    "ordenado/desordenado, organizado"
+   ],
+   "note": "Sequencing (primero, luego, en primer lugar) is g:time-sequence / g:discourse-structure — not duplicated. Spain 'cola' → LatAm 'fila'."
+  },
+  {
+   "lesson": "nt-tiempo-referencias-futuro-pasado-presente-b1",
+   "verdict": "mixed",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [
+    "time units: segundo, década, siglo; pasado mañana, anteayer"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-ciclo-accion-b1",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-puntualidad-retraso-b1",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 2,
+   "wordThemes": [],
+   "note": "Spain 'date prisa' replaced by ¡apúrate! / estar de afán."
+  },
+  {
+   "lesson": "nt-formas-materia-b1",
+   "verdict": "mixed",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [
+    "shapes: círculo, cuadrado, rectángulo, triángulo, redondo, rectangular",
+    "materials: madera, plata, acero, concreto, lana, tela, algodón"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-textura-consistencia-b1",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "texture/consistency: duro, blando, suave, liso, frágil, flexible, sólido, líquido"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-sentidos-b1",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "luminoso, oscuro"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-edad-vejez-b1",
+   "verdict": "mixed",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [
+    "juventud, vejez, de mediana edad, envejecer"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-evaluacion-valor-b1",
+   "verdict": "mixed",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [
+    "strong verdicts: un desastre, una maravilla, buenísimo, fatal, fenomenal"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-conformidad-correccion-precision-b1",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 1,
+   "wordThemes": [
+    "claro, sencillo, complicado, exacto, aproximadamente"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-exito-utilidad-importancia-b1",
+   "verdict": "mixed",
+   "patterns": 5,
+   "chunks": 0,
+   "wordThemes": [
+    "normal, raro, extraño, útil, inútil"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-reflexion-expresion-b1",
+   "verdict": "mixed",
+   "patterns": 3,
+   "chunks": 1,
+   "wordThemes": [
+    "entender, comprender, adivinar, suponer, gritar, callado"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-acabado-b1",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "finishes: liso, rugoso, brillante, mate"
+   ],
+   "note": "Core estar + participio is g:estar-participle (u15); mined quedar + participio and recién."
+  },
+  {
+   "lesson": "nt-peso-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "weight: tonelada, carga, báscula, ligero, pesado"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-posicion-absoluta-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "orientation: vertical, horizontal, diagonal, recto, doblado"
+   ],
+   "note": "Spain 'tumbado' → LatAm 'acostado'; del revés → al revés."
+  },
+  {
+   "lesson": "nt-anticipacion-b2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-permanencia-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "permanente, duradero, temporal, inmortal"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-repeticion-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 1,
+   "wordThemes": [
+    "rutina, ciclo, ritmo, rutinario, repetitivo, cíclico"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-simultaneidad-b2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-limpieza-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "cleaning: suciedad, mancha, barro, asqueroso"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-adecuacion-b2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-interes-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "aburrimiento, motivación, sorprendente, entretenido"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-facilidad-b2",
+   "verdict": "mixed",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [
+    "complejidad, simplicidad"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-existencia-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "inexistente, aparición, desaparecer"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-presencia-ausencia-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "ausente, presente, asistente"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-disponibilidad-b2",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-cualidad-general-b2",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-acontecimiento-b2",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-certeza-b2",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-realidad-ficcion-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "invención, fantasía, ficticio, surrealista, abstracto, concreto"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-necesidad-contingencia-b2",
+   "verdict": "patterns",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-generalidad-especificidad-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "particular, universal, individual, determinado"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-cantidad-numerica-b2",
+   "verdict": "mixed",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [
+    "número par/impar/decimal, millar"
+   ],
+   "note": "Cardinal + de subset (dos de mis hermanos) folded into p:indice-tasa note."
+  },
+  {
+   "lesson": "nt-cantidad-relativa-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "collective nouns: asociación, conjunto, banda, ejército"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-aumento-disminucion-b2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-proporcion-b2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-grado-b2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "¡Cuánto me alegro! is g:exclamations."
+  },
+  {
+   "lesson": "nt-localizacion-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "situado, colocado, instalado, guardado, parqueado"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-posicion-relativa-b2",
+   "verdict": "mixed",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [
+    "delantero, trasero, central, anterior, posterior"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-distancia-b2",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-movimiento-estabilidad-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "driving: arrancar, acelerar, frenar, adelantar; huir, trasladarse, circular"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-orientacion-direccion-b2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 2,
+   "wordThemes": [],
+   "note": "Spain 'tirar' (pull) → Colombian 'halar/jalar'; 'coger la autopista' dropped."
+  },
+  {
+   "lesson": "nt-orden-b2",
+   "verdict": "mixed",
+   "patterns": 0,
+   "chunks": 1,
+   "wordThemes": [
+    "puesto (rank), posición, colocado/descolocado, clasificar"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-origen-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [
+    "antepasado, originario de"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-referencias-generales-b2",
+   "verdict": "patterns",
+   "patterns": 6,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-localizacion-tiempo-b2",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 1,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-formas-figuras-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "contours: figura, perfil, onda, curva, arco, irregular, desigual"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-consistencia-resistencia-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "fragilidad, dureza, densidad, elasticidad, rigidez; denso, espeso, fluido"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-textura-acabado-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "texture: áspero, peludo, arrugado; una mano de pintura, una capa de barniz, plastificar, impermeabilizar"
+   ],
+   "note": "'una mano de pintura' kept as vocab note rather than a node (low priority)."
+  },
+  {
+   "lesson": "nt-humedad-sequedad-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "sequía, inundado, sudar, deshidratarse, evaporarse, absorber"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-materia-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "materials: bronce, cobre, plomo, mármol, cemento, ladrillo, cerámica, barro, cera"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-visibilidad-vision-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "vista, ciego, borroso"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-audibilidad-audicion-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 1,
+   "wordThemes": [
+    "sordo, mudo, grabar, grave/agudo, timbre"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-sabor-olor-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "taste: sabroso, agrio, agridulce, picante, insípido; aroma vs olor"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-color-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [
+    "colores cálidos/fríos, tono, mate/brillante"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-edad-vejez-b2",
+   "verdict": "mixed",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [
+    "fresco, podrido, maduro, anciano, de mediana edad, generación"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-evaluacion-general-b2",
+   "verdict": "mixed",
+   "patterns": 3,
+   "chunks": 1,
+   "wordThemes": [
+    "excelente, magnífico, genial, ridículo, absurdo"
+   ],
+   "note": "'merecer la pena' marked Spain-leaning; LatAm valer la pena."
+  },
+  {
+   "lesson": "nt-valor-precio-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "coste, rentable, inversión"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-correccion-precision-b2",
+   "verdict": "mixed",
+   "patterns": 1,
+   "chunks": 1,
+   "wordThemes": [
+    "falta, fallo, equivocación, imperfecto, exacto vs correcto"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-exito-logro-b2",
+   "verdict": "mixed",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [
+    "triunfar, fracasar, logro, fracaso"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-utilidad-uso-b2",
+   "verdict": "mixed",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [
+    "útil, inútil, imprescindible, funcional, aparato"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-capacidad-competencia-b2",
+   "verdict": "patterns",
+   "patterns": 2,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-importancia-normalidad-b2",
+   "verdict": "mixed",
+   "patterns": 4,
+   "chunks": 0,
+   "wordThemes": [
+    "fundamental, básico, secundario"
+   ],
+   "note": ""
+  },
+  {
+   "lesson": "nt-reflexion-conocimiento-b2",
+   "verdict": "patterns",
+   "patterns": 3,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": ""
+  },
+  {
+   "lesson": "nt-expresion-verbal-b2",
+   "verdict": "patterns",
+   "patterns": 1,
+   "chunks": 0,
+   "wordThemes": [],
+   "note": "Reporting verbs are mostly g:reporting-verbs-mood (u46); only negar/confesar mood frame mined."
+  }
+ ]
+}

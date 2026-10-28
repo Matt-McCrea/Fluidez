@@ -1,0 +1,137 @@
+{
+ "id": "u47",
+ "band": "B2",
+ "title": "Putting the weight where you want it",
+ "theme": "18. Actividades artísticas: podcasts, interviews, storytelling, emphasis",
+ "canDo": "I can move the emphasis in a sentence so my point lands where I want it.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:cleft-focus"
+   ],
+   "chunks": [
+    "c:una-y-otra-vez",
+    "c:tienes-un-minutico",
+    "c:ya-me-imagino"
+   ],
+   "lexemes": [],
+   "chapter": "ch150"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:cleft-focus",
+    "g:subj-perception-negated"
+   ],
+   "chunks": [
+    "c:quedarse-de-piedra",
+    "c:me-haces-mucha-falta"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:me-pone-de-buen-genio",
+    "p:orgulloso-admiracion",
+    "p:me-extrana-que",
+    "p:pasar-hambre-frio",
+    "p:la-cara-que-puso",
+    "p:como-cuanto-verbo",
+    "p:precisamente-concretamente",
+    "p:como-para"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch151"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:topic-fronting"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch152"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:topic-fronting",
+    "g:cleft-focus",
+    "x:tan-que-como-para"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:presente-narrativo",
+    "p:focus-adverbs",
+    "p:pues-claro-que",
+    "p:turning-it-up",
+    "p:de-ninguna-manera",
+    "p:si-yo-no-fui",
+    "p:entusiasmar-fascinar",
+    "p:no-soporto-que",
+    "p:prefiero-que-a-que",
+    "p:me-aburre-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:cleft-focus",
+    "g:topic-fronting",
+    "g:lo-que-intensity"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch153",
+   "scene": "sc-u47-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:lo-que-intensity"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch154"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:lo-que-intensity",
+    "g:topic-fronting",
+    "p:intensificadores"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u47-b"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:cleft-focus",
+    "g:topic-fronting",
+    "g:lo-que-intensity",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Mariana records a podcast episode about the café: it was Rosa who kept the corner alive, it is the neighbours who are fighting for it, and what nobody expected is that a parrot would become its symbol. Tomás learns to put the emphasis exactly where he wants it. The episode reaches number one in Colombia.",
+ "quota": {
+  "bankSentences": 597,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 5
+ }
+}

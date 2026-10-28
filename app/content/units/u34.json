@@ -1,0 +1,127 @@
+{
+ "id": "u34",
+ "band": "B1",
+ "title": "Mishaps",
+ "theme": "11. Servicios + 1: accidents, losses, breakages, insurance, the police report (denuncia)",
+ "canDo": "I can explain an accident or a mishap, what got lost or broken, and ask for help.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:se-accidental"
+   ],
+   "chunks": [
+    "c:no-fue-mi-intencion",
+    "c:no-tiene-importancia",
+    "c:son-cosas-que-pasan"
+   ],
+   "lexemes": [],
+   "chapter": "ch101"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:se-accidental",
+    "g:cada-cualquier"
+   ],
+   "chunks": [
+    "c:que-no-se-te-olvide",
+    "c:por-suerte"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:cargar-descargar",
+    "p:encontrar-participle"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch102"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:possessive-dative"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch103"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:possessive-dative",
+    "g:se-accidental",
+    "p:mancharse"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:sentir-lo-de",
+    "p:pedir-disculpas-por",
+    "p:por-culpa-de",
+    "p:ninguna-parte",
+    "p:ir-a-velocidad",
+    "p:acercarse-alejarse",
+    "p:caerse-lastimarse",
+    "p:seguir-por"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-perfect"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-perfect",
+    "g:possessive-dative"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u34-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:se-accidental",
+    "g:possessive-dative",
+    "g:subj-perfect"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u34-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:se-accidental",
+    "g:possessive-dative",
+    "g:subj-perfect",
+    "x:pret-imp",
+    "x:por-para",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Everything goes wrong at once. Tomás's phone gets stolen on the bus, the espresso machine breaks again, Vale cuts her finger slicing guava, and someone throws a stone through the window. At the police station, filling in the report, Tomás realises the stone had a note: \"Vendan.\"",
+ "quota": {
+  "bankSentences": 495,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 4
+ }
+}

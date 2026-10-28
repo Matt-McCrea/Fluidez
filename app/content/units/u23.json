@@ -1,0 +1,114 @@
+{
+ "id": "u23",
+ "band": "A2",
+ "title": "Sorting things out",
+ "theme": "11. Servicios: bank, phone company, repairs, paperwork (cédula, trámites), complaints",
+ "canDo": "I can deal with a bank, a phone company or a repair: explain the problem, how long it's lasted, and what I need.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:que-vs-cual"
+   ],
+   "chunks": [
+    "c:queria-preguntar",
+    "c:no-sirve",
+    "c:que-tengo-que-hacer"
+   ],
+   "lexemes": [],
+   "chapter": "ch066"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:que-vs-cual",
+    "g:diminutives"
+   ],
+   "chunks": [
+    "c:me-toca",
+    "c:ahorita",
+    "c:me-colabora"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:indefinites"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:indefinites",
+    "g:que-vs-cual"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch067"
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch068"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:hace-que-desde"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch069"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:hace-que-desde",
+    "g:indefinites",
+    "x:hace-desde-hace"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:que-vs-cual",
+    "g:indefinites",
+    "g:hace-que-desde"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u23-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:que-vs-cual",
+    "g:indefinites",
+    "g:hace-que-desde",
+    "x:ser-estar-adj"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Paperwork week: the bank wants three documents that require four other documents; the phone company has been charging Rosa's old line for twelve years; the deeds office has had \"the system down\" for a month. Tomás discovers that the café has been without a proper title since 1978, the year Joaquín left.",
+ "quota": {
+  "bankSentences": 348,
+  "chapters": 4,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

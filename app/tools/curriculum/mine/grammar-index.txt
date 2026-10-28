@@ -1,0 +1,172 @@
+g:ser-identity (u1) — Saying who you are and where you're from
+g:sounds-letters (u1) — Reading Spanish aloud: five vowels, the letters that surprise you, and the stress mark
+g:gender-articles (u1) — Every noun is "el" or "la": the, a, and how to guess which
+g:present-ar (u1) — Talking about what you do: -ar verbs (hablo, hablas, habla)
+g:present-er-ir (u2) — The other regular verbs: -er and -ir (como, vivo)
+g:estar-location-states (u2) — Where something is and how someone is: estar
+g:questions (u2) — Asking questions: qué, quién, dónde, cuándo, cómo, cuánto, por qué
+g:gustar-basic (u3) — Saying what you like: me gusta, me gustan, ¿te gusta?
+g:stem-boot (u3) — Verbs that change inside: quiero, puedo, prefiero, duermo (the "boot" verbs)
+g:ir-a-plans (u3) — Talking about plans: voy a + verb
+g:preterite-ar (u4) — Saying what you did: -ar verbs in the past (hablé, hablaste, habló)
+g:preterite-er-ir (u4) — The past of -er and -ir verbs (comí, viviste, salió)
+g:preterite-ser-ir-hacer (u4) — The three past forms you'll use most: fui, fue, hice
+g:yo-irregular (u5) — Verbs with an odd "I" form: tengo, hago, salgo, conozco, sé
+g:adjective-agreement (u5) — Describing people and things: alto/alta, simpáticos, inteligente
+g:possessives (u5) — Whose is it: mi, tu, su, nuestro
+g:imperfect-states (u6) — Setting the scene in the past: era, estaba, tenía, había
+g:preterite-irregular-strong (u6) — Irregular pasts: tuve, estuve, pude, puse, vine, quise, dije, traje
+g:hace-ago (u6) — How long ago: hace + time
+g:hay-vs-esta (u7) — "There is" vs "it's there": hay un banco / el banco está…
+g:demonstratives (u7) — This, that, that one over there: este, ese, aquel (and esto, eso)
+g:quantifiers (u7) — How much and how many: mucho, poco, bastante, demasiado — and muy vs mucho
+g:perfecto-experience (u8) — Have you ever…? Experience and "not yet": he estado, todavía no he…
+g:negation-words (u8) — Saying no to everything: nada, nadie, nunca, tampoco, ningún
+g:verb-infinitive (u8) — Verb + verb: puedo ir, sé nadar, necesito dormir, pienso volver
+g:reflexive-routine (u9) — Your daily routine: me levanto, te duchas, se acuesta
+g:estar-gerund (u9) — What's happening right now: estoy trabajando
+g:tener-que-hay-que (u9) — What you have to do: tengo que, hay que, necesito
+g:gustar-full (u10) — Likes for everyone: le gusta, nos encanta, les interesa — and a mí también
+g:stem-e-i (u10) — More inside-changers: pido, sirvo, sigo, repito
+g:direct-objects (u10) — Not repeating the noun: lo, la, los, las (and the personal a)
+g:imperfect-habitual (u11) — What used to happen: the full "used to" past (trabajaba, comía, vivía)
+g:preterite-spelling-stem (u11) — Past-tense surprises: busqué, llegué, empecé, leyó, pidió, durmió
+g:comparatives (u11) — Comparing: más… que, menos… que, tan… como, mejor, peor
+g:pret-vs-imperfect (u12) — Two pasts in one story: what happened vs what things were like
+g:imperfect-progressive (u12) — Was doing it when…: estaba cocinando cuando sonó el teléfono
+g:that-clauses (u12) — Saying what you think, know and heard: creo que, sé que, dice que
+g:commands-tu (u13) — Telling a friend what to do: ven, mira, espera, dime
+g:commands-usted (u13) — Telling a stranger (or a group) what to do: siga, voltee, vengan
+g:indirect-objects (u13) — To whom, for whom: le, les (le pregunto, les explico)
+g:relative-que (u14) — Adding detail with que: el señor que vende arepas
+g:cause-result (u14) — Why and so: porque, como, por eso, así que
+g:prep-pronouns (u14) — After for, with, to: para mí, contigo, sin ti
+g:ser-estar-adjectives (u15) — "Is" for what it's like vs "is" for how it is right now: es aburrido / está aburrido
+g:estar-participle (u15) — The state something is in: está cerrado, está roto, estoy preocupado
+g:parecer-quedar (u15) — More "backwards" verbs: me parece, me queda, me cae bien, me hace falta
+g:object-pronoun-position (u16) — Where the little words go: lo voy a comprar = voy a comprarlo
+g:superlatives (u16) — The best, the cheapest, super-cheap: el más barato, carísimo
+g:double-pronouns (u16) — Two little words together: me lo, te la, se lo
+g:si-present (u17) — If… then: si quieres, vamos; si llueve, me quedo
+g:prep-infinitive (u17) — Before leaving, after eating, on arriving: antes de, después de, al + verb
+g:cuando-indicative (u17) — When, while, every time: cuando, mientras, siempre que + present or past
+g:por-para-1 (u18) — For and by, part 1: para (destination, purpose, deadline) vs por (through, because of, per)
+g:commands-with-pronouns (u18) — Commands with the little words: dímelo, siéntese, tráiganmelo
+g:possessives-stressed (u18) — Mine, yours, his: mío, tuyo, suyo (un amigo mío)
+g:se-impersonal (u19) — People in general: se habla, se vende, se necesita, se puede
+g:relatives-donde-lo-que (u19) — Where, who and the thing that: donde, quien, lo que
+g:article-uses (u19) — When Spanish says "the" and English doesn't (and the reverse)
+g:future-conjecture (u20) — Guessing out loud: ¿Dónde estará? Serán las tres. Tendrá unos sesenta años.
+g:future-promises (u20) — Promises, predictions and formal plans: te llamaré, lloverá, será difícil
+g:conditional (u20) — Would: me encantaría, podrías, deberías — and yo que tú…
+g:subj-wanting (u21) — Wanting someone else to do something: quiero que vengas
+g:subj-irregulars (u21) — The irregular "wish" forms: sea, vaya, tenga, haga, sepa, esté, haya
+g:negative-commands (u21) — Telling someone not to: no toques, no se preocupe, no lo hagan
+g:subj-wishes (u22) — Wishing: ojalá, espero que, que te vaya bien
+g:exclamations (u22) — Reacting: ¡Qué bueno!, ¡Qué pena!, ¡Qué tan lindo!, ¡Cuánta gente!
+g:diminutives (u22) — Making it small and friendly: un tintico, ahorita, un momentico
+g:que-vs-cual (u23) — What or which: ¿qué? vs ¿cuál?
+g:indefinites (u23) — Some, any, none: algún, alguien, algo — ningún, nadie, nada
+g:hace-que-desde (u23) — How long it's been going on: hace un año que…, desde hace…, llevo…
+g:pero-sino (u24) — But and but rather: pero vs sino (no es caro, sino barato)
+g:aunque-indicative (u24) — Even though: aunque + a fact
+g:tanto-como (u24) — As much as, as many as: tanto como, tanta gente, igual de
+g:le-doubling (u25) — Saying who twice: le di el libro a Vale
+g:adverbs-mente (u25) — How you do it: -mente (rápidamente, realmente) and other ways to say how
+g:reported-past-basic (u25) — Telling what someone said: me dijo que estaba cansado, me preguntó si…
+g:gerund-ways (u26) — By doing, while doing: aprendí leyendo, sigue lloviendo, va mejorando
+g:time-sequence (u26) — Keeping a story in order: primero, luego, al final, ese día, al día siguiente
+g:acabar-de-ya-todavia (u26) — Just, already, still, not yet: acabo de, ya, todavía, ya no
+g:written-register-a2 (u27) — Messages, emails and reviews: openings, closings and usted in writing
+g:para-que (u27) — So that: para + verb vs para que + someone else
+g:subj-emotion-intro (u27) — Reacting to what others do: me alegra que, me molesta que, qué bueno que
+g:subj-opinion-negated (u28) — I think so / I don't think so: creo que es… vs no creo que sea…
+g:subj-value (u28) — Judging: es importante que, es mejor que, es normal que, es una pena que
+g:lo-adjective (u28) — The good thing, the worst part: lo bueno, lo malo, lo mejor es que
+g:subj-doubt (u29) — Doubt and possibility: dudo que, es posible que, puede que
+g:quizas-a-lo-mejor (u29) — Maybe: quizás, tal vez + either mood; a lo mejor + fact form
+g:conditional-past-guess (u29) — Guessing about the past: serían las diez, tendría veinte años
+g:subj-emotion (u30) — Feelings about what others do, fully: me da miedo que, me sorprende que, siento que
+g:verbs-of-change (u30) — Becoming: ponerse nervioso, quedarse callado, volverse famoso, hacerse rico
+g:se-meaning-change (u30) — When "se" changes the meaning: ir/irse, dormir/dormirse, quedar/quedarse
+g:pluperfect (u31) — Had already happened: había llegado, ya se habían ido
+g:narrative-pasts (u31) — Telling a story with all your pasts: what happened, what it was like, what had happened before
+g:reported-backshift (u31) — Reporting further back: dijo que había llamado, que vendría
+g:subj-influence (u32) — Advising and asking: te recomiendo que, te pido que, le aconsejo que
+g:subj-cuando-future (u32) — When it happens (it hasn't yet): cuando llegues, en cuanto sepa, hasta que vuelva
+g:subj-purpose-full (u32) — Purpose and plans for others: para que, sin que, antes de que
+g:subj-relative (u33) — Looking for one that…: busco un local que tenga ventanas
+g:relatives-prepositions (u33) — Relatives after a preposition: el local en el que, la gente con la que, a quien
+g:cada-cualquier (u33) — Each, any at all: cada, cualquier, cualquiera, todo/toda
+g:se-accidental (u34) — It just happened to me: se me olvidó, se me cayó, se nos dañó
+g:possessive-dative (u34) — Body parts and belongings without "my": me duele la espalda, le robaron el celular
+g:subj-perfect (u34) — Hoping or doubting it has happened: espero que hayas llegado bien
+g:por-para-2 (u35) — For and by, part 2: por + time/means/exchange, para + opinion/comparison
+g:impersonal-obligation (u35) — General advice and rules: hay que, se debe, uno tiene que, conviene
+g:deber-modal (u35) — Should, must, must be: debes, deberías, debe de ser
+g:passive-se (u36) — Things done (who did it doesn't matter): se vendieron, se construyó, se firmarán
+g:comparatives-advanced (u36) — Comparing in numbers and degrees: el doble, más de la mitad, cada vez más, cuanto más…
+g:consequence-connectors (u36) — So, therefore, so much that: por lo tanto, de modo que, tan… que
+g:questions-prepositions (u37) — Questions with a preposition first: ¿con quién?, ¿de qué?, ¿para qué?, ¿a qué hora?
+g:reported-requests (u37) — Passing on requests: dice que vengas, me pide que lo llame
+g:indirect-questions (u37) — Asking politely and reporting questions: ¿sabe si…?, no sé dónde…, quería saber cuándo…
+g:passive-ser (u38) — The news voice: fue construido, serán juzgados, está prohibido
+g:causal-advanced (u38) — Giving causes in writing: ya que, puesto que, debido a, a causa de, por + verb
+g:concession-despite (u38) — Despite: a pesar de, a pesar de que, sin embargo, aun así
+g:infinitive-subject (u39) — Doing things as subjects: fumar es malo, me encanta cocinar, el no saber
+g:discourse-structure (u39) — Organising a text: en primer lugar, además, por un lado… por otro, en resumen
+g:referring-back (u39) — Not repeating yourself in a text: este, ese, aquel, dicho, el mismo, lo anterior
+g:imperfect-subj (u40) — The "if only" forms: fuera, tuviera, pudiera (from the past form)
+g:si-hypothetical (u40) — If things were different: si fuera… sería…
+g:como-si (u40) — As if: como si fuera, como si nada
+g:subj-past-triggers (u41) — Wanting, asking, feeling — in the past: quería que, me pidió que, me alegró que
+g:ojala-past (u41) — Wishing things were different: ojalá + fuera / tuviera
+g:reported-commands-past (u41) — Reporting orders and requests: me dijo que fuera, les pidió que esperaran
+g:register-ladder (u42) — Saying the same thing five ways: from "pásame eso" to "le agradecería que…"
+g:softening (u42) — Softening: quería pedirle, ¿será que…?, un poquito, me imagino que
+g:pluperfect-subj (u43) — Had it happened: hubiera llegado, hubiéramos sabido
+g:conditional-perfect (u43) — Would have: habría ido, lo habría hecho
+g:si-past-unreal (u43) — If it had happened: si hubiera sabido, habría venido (and mixed: hoy estaría…)
+g:subj-concessive (u44) — Even if: aunque llueva, por más que insista
+g:subj-conditions (u44) — Only if, unless, in case: a menos que, con tal de que, siempre que, en caso de que
+g:argument-markers (u44) — Building an argument: es cierto que…, pero; no solo… sino también; en cambio; de hecho
+g:future-perfect (u45) — Guessing about what has happened: habrá salido, se habrán equivocado
+g:conditional-rumour (u45) — Reporting without vouching: según fuentes, el alcalde habría firmado
+g:impersonal-register (u45) — Who did it? Hiding the doer: dicen que, se cree que, uno, la gente
+g:reported-speech-full (u46) — Reporting a whole conversation: tenses, times and places shift
+g:reporting-verbs-mood (u46) — Verbs that report and verbs that request: advertir que, recordar que, insistir en que
+g:subj-perception-negated (u46) — Not seeing, not noticing, not saying: no vi que…, no dijo que…, no es que…
+g:cleft-focus (u47) — Putting the spotlight on one part: fue Vale quien…, lo que necesito es…, aquí es donde…
+g:topic-fronting (u47) — Starting with the topic: el contrato lo firmé yo; a Vale no le dije nada
+g:lo-que-intensity (u47) — How very…!: lo difícil que es, lo bien que cocina, con lo cansado que estoy
+g:relatives-formal (u48) — Formal relatives: el cual, la cual, lo cual, quien(es)
+g:participle-gerund-clauses (u48) — Compact descriptions: una vez terminado, siendo tan tarde, construido en 1920
+g:infinitive-perfect (u48) — Having done: después de haber firmado, por no haber llamado
+g:formal-letter-grammar (u49) — Formal letters: le agradecería que, me dirijo a usted, adjunto le envío
+g:verbs-prepositions (u49) — Verbs that bring their own preposition: contar con, depender de, tratarse de, consistir en
+g:subj-free-relatives (u50) — Whoever, wherever, whatever: el que quiera, donde quieras, lo que sea
+g:subj-future-in-past (u50) — When it would happen: dijo que me llamaría cuando llegara
+g:que-wishes-commands (u50) — Que + wish or order: que entre, que lo haga él, que no se repita
+g:vosotros-recognition (u51) — Reading Spain's Spanish: vosotros, habéis, id, os
+g:spain-pasts (u51) — Spain's "today" past: hoy he ido = hoy fui
+g:se-form-recognition (u51) — The other "if only" form: hubiese, fuese, tuviese
+g:tense-modal-uses (u52) — Tenses that don't mean their time: quería pedirte, será caro pero…, mañana viajo
+g:mood-choice-fine (u52) — Choosing the mood on purpose: el hecho de que, lo que digas, como no vengas
+g:hedging-distance (u53) — Distancing yourself from a claim: al parecer, supuestamente, por lo visto, no es que…
+g:reformulation (u53) — Saying it again, better: o sea, es decir, mejor dicho, en otras palabras
+g:emphatic-structures (u54) — Saying it with force: ¡si ya te lo dije!, ¡qué va!, ¡pues claro que sí!
+g:wish-exclamatives (u54) — Wishes and regrets as exclamations: ¡quién lo hubiera dicho!, ¡si lo hubiera sabido!
+g:cuyo-relatives (u55) — Whose: cuyo, cuya (and how people avoid it)
+g:nominalisation (u55) — Turning actions into nouns: la firma del contrato, el cierre, la toma de decisiones
+g:absolute-constructions (u55) — Once done: una vez firmado el contrato, terminada la reunión, dicho esto
+g:concessive-advanced (u56) — Conceding like a writer: si bien, aun cuando, por mucho que, por muy… que
+g:consecutive-advanced (u56) — Results in writing: de ahí que, de manera que, así pues, por consiguiente
+g:conditional-advanced (u57) — Conditions with style: de haberlo sabido, como no llegues, a no ser que, siempre y cuando
+g:comparative-advanced-c1 (u57) — Fine comparisons: cuanto más… menos, ni que fuera, más vale que
+g:temporal-advanced (u58) — Exact timing: nada más llegar, apenas, en cuanto, una vez que, a medida que
+g:agreement-tricky (u58) — Agreement when sense beats grammar: la mayoría piensa(n), el resto, la gente
+g:ser-estar-c1 (u58) — Ser and estar at the edges: está de mesero, es de madera, estar para / estar por
+g:voseo-recognition (u59) — Hearing paisas (and Argentines): vos tenés, vos sabés, vení
+g:future-subj-recognition (u59) — Old and legal Spanish: quien hiciere, si así fuere
+g:word-order-style (u60) — Word order for effect: Mucho ha cambiado el barrio; poco importa ya
+g:evaluative-adverbs (u60) — Commenting on your own sentence: lamentablemente, francamente, por suerte, sinceramente

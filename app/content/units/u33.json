@@ -1,0 +1,126 @@
+{
+ "id": "u33",
+ "band": "B1",
+ "title": "Looking for something",
+ "theme": "10. Vivienda + 12: premises, requirements, real-estate ads, specifications",
+ "canDo": "I can describe exactly what I'm looking for, even when I don't know if it exists.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-relative"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch098"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-relative",
+    "g:subj-purpose-full",
+    "x:relative-ind-subj",
+    "p:quedar-a-distancia",
+    "p:recien-participio"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:lleno-libre",
+    "p:el-que-la-que",
+    "p:quedar-faltar-sobrar",
+    "p:medir",
+    "p:caber",
+    "p:posicion-precisa"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch099"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:relatives-prepositions"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch100"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:relatives-prepositions",
+    "g:subj-relative",
+    "x:medir-caber"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:ser-bueno-para",
+    "p:depender-de",
+    "p:adelantar-aplazar",
+    "p:llegar-a-tiempo",
+    "p:intentar-conseguir",
+    "p:imperativo-y-veras",
+    "p:medir-pesar-caber",
+    "p:estar-hecho-de"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:cada-cualquier"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:cada-cualquier",
+    "g:relatives-prepositions"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u33-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:subj-relative",
+    "g:relatives-prepositions",
+    "g:cada-cualquier"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u33-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:subj-relative",
+    "g:relatives-prepositions",
+    "g:cada-cualquier",
+    "x:ser-estar-adj",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "The search begins. They are looking for anyone who knew a Joaquín Herrera who arrived in Santa Marta around 1978. Mariana posts in Facebook groups; Hernando calls old taxi friends who moved to the coast. Meanwhile, just in case, Vale looks for a new space that has a proper kitchen and a rent they can pay. Nothing seems to exist.",
+ "quota": {
+  "bankSentences": 540,
+  "chapters": 3,
+  "scenes": 2,
+  "writingTasks": 4
+ }
+}

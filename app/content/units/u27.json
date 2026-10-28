@@ -1,0 +1,122 @@
+{
+ "id": "u27",
+ "band": "A2",
+ "title": "Writing it down",
+ "theme": "9. Información y medios de comunicación: emails, reviews, messages, notices, social media",
+ "canDo": "I can write a short email, review or message at paragraph length, with a purpose and reactions.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:written-register-a2"
+   ],
+   "chunks": [
+    "c:cordial-saludo",
+    "c:quedo-atento",
+    "c:gracias-de-antemano"
+   ],
+   "lexemes": [],
+   "chapter": "ch080"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:written-register-a2",
+    "g:acabar-de-ya-todavia"
+   ],
+   "chunks": [
+    "c:adjunto",
+    "c:atentamente",
+    "c:lo-recomiendo",
+    "c:que-bueno-que"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:para-que"
+   ],
+   "chunks": [
+    "c:con-un-poco-de-suerte",
+    "c:que-descanses",
+    "c:que-te-diviertas"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:para-que",
+    "g:written-register-a2",
+    "x:para-inf-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch081"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:le-escribo-para",
+    "p:que-subj-deseo",
+    "p:infinitive-instructions"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-emotion-intro"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch082"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-emotion-intro",
+    "g:para-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:written-register-a2",
+    "g:para-que",
+    "g:subj-emotion-intro"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u27-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:written-register-a2",
+    "g:para-que",
+    "g:subj-emotion-intro",
+    "x:ser-estar-adj"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Everyone is writing: Tomás answers online reviews, Vale writes the café's first newsletter, Mariana sends her draft article about Altamira's purchases for comments. Then a formal letter arrives from Altamira's lawyers: the lease ends in six months, and \"the owners\" want vacant possession. Who are the owners? The letter does not say.",
+ "quota": {
+  "bankSentences": 417,
+  "chapters": 3,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

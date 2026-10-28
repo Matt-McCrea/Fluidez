@@ -1,0 +1,153 @@
+{
+ "id": "u54",
+ "band": "C1",
+ "title": "Irony and what's left unsaid",
+ "theme": "2 + 18: humour, irony, Colombian wit (mamar gallo), implicature",
+ "canDo": "I can use and catch irony, understatement and implied meaning.",
+ "days": [
+  {
+   "type": "input",
+   "focus": [
+    "p:ser-un-noun",
+    "p:ironic-praise",
+    "p:como-viene-tanto",
+    "p:suspended-intensifier",
+    "p:el-frio-que-hace",
+    "p:como-me-entere",
+    "p:ni-emphatic",
+    "p:la-menor-idea"
+   ],
+   "chunks": [
+    "c:para-variar",
+    "c:dale-que-dale",
+    "c:cuatro-gatos",
+    "c:ni-un-alma",
+    "c:brillar-por-su-ausencia"
+   ],
+   "lexemes": [],
+   "chapter": "ch185"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:emphatic-structures",
+    "g:wish-exclamatives"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch186",
+   "scene": "sc-u54-a"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:emphatic-structures"
+   ],
+   "chunks": [
+    "c:hablar-por-los-codos",
+    "c:no-tener-pelos-en-la-lengua",
+    "c:por-ti-no-pasan-los-anos"
+   ],
+   "lexemes": [],
+   "chapter": "ch187"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:emphatic-structures",
+    "g:reformulation"
+   ],
+   "chunks": [
+    "c:tener-doble-sentido",
+    "c:que-barbaridad",
+    "c:fuera-de-lugar",
+    "c:costar-un-ojo-de-la-cara"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:que-si-que-si",
+    "p:si-algo-es",
+    "p:como-es-que",
+    "p:empenarse-en",
+    "p:tener-su-gracia",
+    "p:mira-que"
+   ],
+   "chunks": [
+    "c:ni-amarrado",
+    "c:que-ya-es-algo",
+    "c:su-platica",
+    "c:mamar-gallo",
+    "c:no-se-queda-atras"
+   ],
+   "lexemes": [],
+   "chapter": "ch188"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:eso-de-que",
+    "p:un-tal",
+    "p:personalmente-tecnicamente",
+    "p:importar-un-comino",
+    "p:mirar-por-encima-del-hombro",
+    "p:morirse-de",
+    "p:pasarse-la-vida",
+    "p:a-lo-grande",
+    "p:estar-hecho-un-desastre",
+    "p:como-que-echo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:emphatic-structures",
+    "g:wish-exclamatives"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u54-b"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:wish-exclamatives"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch189"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:wish-exclamatives",
+    "g:emphatic-structures"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:emphatic-structures",
+    "g:wish-exclamatives",
+    "x:pret-imp",
+    "x:por-para",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "Altamira opens the hotel next door anyway, with a rooftop bar overlooking the café's patio. Hernando starts writing \"jokes of the day\" on the chalkboard aimed at the hotel guests; they become famous on social media. Irony, understatement and mamadera de gallo turn out to be the best weapons the café has.",
+ "quota": {
+  "bankSentences": 692,
+  "chapters": 5,
+  "scenes": 2,
+  "writingTasks": 6
+ }
+}

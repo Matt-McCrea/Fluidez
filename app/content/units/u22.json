@@ -1,0 +1,121 @@
+{
+ "id": "u22",
+ "band": "A2",
+ "title": "Good news, bad news",
+ "theme": "4. Relaciones personales: celebrations, birthdays, weddings, condolences, Colombian holidays",
+ "canDo": "I can congratulate, wish someone well, react to good and bad news, and send a warm message.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-wishes"
+   ],
+   "chunks": [
+    "c:feliz-cumpleanos",
+    "c:que-te-vaya-bien",
+    "c:que-la-pases-bien"
+   ],
+   "lexemes": [],
+   "chapter": "ch063"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-wishes",
+    "g:negative-commands"
+   ],
+   "chunks": [
+    "c:mucha-suerte",
+    "c:me-alegro",
+    "c:sentido-pesame",
+    "c:feliz-navidad"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:exclamations"
+   ],
+   "chunks": [
+    "c:que-tengas-buen-dia"
+   ],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:exclamations",
+    "g:subj-wishes"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch064"
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:felicitaciones-por",
+    "p:se-reciproco"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:diminutives"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch065"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:diminutives",
+    "g:exclamations",
+    "x:se-three-ways"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:subj-wishes",
+    "g:exclamations",
+    "g:diminutives"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u22-a"
+  },
+  {
+   "type": "review",
+   "focus": [
+    "g:subj-wishes",
+    "g:exclamations",
+    "g:diminutives",
+    "x:pret-imp",
+    "x:por-para",
+    "x:lo-le"
+   ],
+   "chunks": [],
+   "lexemes": []
+  }
+ ],
+ "storyArc": "A week of news. Good: Vale's birthday, a surprise party with Mariana and Jhon Fredy, and the partnership is signed. Bad: the inspection fines them, and Hernando's oldest friend from the taxi rank dies. Tomás learns how to congratulate, console and write a condolence message, and discovers that Hernando has kept every Christmas card Rosa ever gave him.",
+ "quota": {
+  "bankSentences": 390,
+  "chapters": 3,
+  "scenes": 1,
+  "writingTasks": 3
+ }
+}

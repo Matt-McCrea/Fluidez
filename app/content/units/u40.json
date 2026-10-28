@@ -1,0 +1,110 @@
+{
+ "id": "u40",
+ "band": "B1",
+ "title": "If things were different",
+ "theme": "20. Geografía y naturaleza: the Caribbean coast, sea, climate, nature, imaginary journeys",
+ "canDo": "I can talk about imaginary situations and say what I would do.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:imperfect-subj"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch119"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:imperfect-subj",
+    "g:referring-back"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch120"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:si-hypothetical"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch121"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:si-hypothetical",
+    "g:imperfect-subj",
+    "x:si-real-unreal"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:sonar-con",
+    "p:estar-a-grados",
+    "p:humedo-mojado"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:como-si"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:como-si",
+    "g:si-hypothetical"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u40-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:imperfect-subj",
+    "g:si-hypothetical",
+    "g:como-si"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u40-a"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:imperfect-subj",
+    "g:si-hypothetical",
+    "g:como-si"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u40-c"
+  }
+ ],
+ "storyArc": "Tomás, Vale and Mariana travel to the Caribbean coast. Santa Marta is hot, slow and blindingly blue. In Taganga they meet Yesid Herrera, twenty-six, a diving instructor and the grandson of Joaquín, who died in 2010. If Joaquín were alive, Yesid says, he would be ashamed of the fight; if Yesid had money, he would buy his own boat. On the beach at night Tomás and Vale almost kiss, and then Mariana arrives with three beers.",
+ "quota": {
+  "bankSentences": 345,
+  "chapters": 3,
+  "scenes": 3,
+  "writingTasks": 4
+ }
+}

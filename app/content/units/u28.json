@@ -1,0 +1,121 @@
+{
+ "id": "u28",
+ "band": "B1",
+ "title": "What I think",
+ "theme": "17. Gobierno, política y sociedad: the neighbourhood, city problems, public space, opinions",
+ "canDo": "I can give and ask for opinions, judge situations, and say what I don't think.",
+ "days": [
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-opinion-negated"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch083"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-opinion-negated",
+    "g:subj-emotion-intro",
+    "x:creo-no-creo"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "input",
+   "focus": [
+    "p:en-general",
+    "p:sobre-todo",
+    "p:encontrar-ver-adj",
+    "p:pensar-en"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch084"
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:subj-value"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "chapter": "ch085"
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:subj-value",
+    "g:subj-opinion-negated",
+    "x:fact-value"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "patterns",
+   "focus": [
+    "p:en-mi-opinion",
+    "p:que-opinas-de",
+    "p:me-parece-bien-que",
+    "p:te-parece-bien-que",
+    "p:estar-a-favor-de",
+    "p:lo-que-mas-me-gusta",
+    "p:me-encanta-que",
+    "p:yo-diria-que"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "introduce",
+   "focus": [
+    "g:lo-adjective"
+   ],
+   "chunks": [],
+   "lexemes": []
+  },
+  {
+   "type": "drill",
+   "focus": [
+    "g:lo-adjective",
+    "g:subj-value"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u28-b"
+  },
+  {
+   "type": "output",
+   "focus": [
+    "g:subj-opinion-negated",
+    "g:subj-value",
+    "g:lo-adjective"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u28-a"
+  },
+  {
+   "type": "checkpoint",
+   "focus": [
+    "g:subj-opinion-negated",
+    "g:subj-value",
+    "g:lo-adjective"
+   ],
+   "chunks": [],
+   "lexemes": [],
+   "scene": "sc-u28-c"
+  }
+ ],
+ "storyArc": "The neighbourhood holds a meeting about Altamira's plan for a hotel taking up the whole block. Some neighbours think it is progress; the bakery thinks it is the end; Doña Gloria thinks it is important that everyone says what they think, loudly. Tomás stands up and, in a Spanish that surprises everyone, says he doesn't think it is fair that a corner with a hundred years of history becomes a lobby.",
+ "quota": {
+  "bankSentences": 480,
+  "chapters": 3,
+  "scenes": 3,
+  "writingTasks": 4
+ }
+}
