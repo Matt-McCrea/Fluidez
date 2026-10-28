@@ -184,8 +184,9 @@ window.GameScore = (function () {
   /* The record round's score at `ms` into it, interpolated. Null when there is
    * no record to race — a first attempt has no ghost, and inventing a flat one
    * would be racing a fiction. */
-  function ghostAt(key, ms) {
-    var c = stats(key).curve;
+  function ghostAt(key, ms) { return curveAt(stats(key).curve, ms); }
+  // Any stored curve, not only your own — js/liga.js races a friend's.
+  function curveAt(c, ms) {
     if (!c || c.length < 2) return null;
     if (ms <= c[0][0]) return c[0][1];
     for (var i = 1; i < c.length; i++) {
@@ -443,6 +444,7 @@ window.GameScore = (function () {
     baseValue: baseValue, award: award, nextRung: nextRung, limitFor: limitFor,
     stats: stats, record: record, pb: pb, todayBest: todayBest, nearMissScore: nearMissScore,
     profileOf: profileOf, ghostAt: ghostAt, hasGhost: hasGhost,
+    curveAt: curveAt, downsample: downsample,
     dailySeed: dailySeed, dailyKey: dailyKey, dailyLabel: dailyLabel, dailyStreak: dailyStreak,
     weekSummary: weekSummary, today: today, fmt: fmt,
     silent: silent, setSilent: setSilent,

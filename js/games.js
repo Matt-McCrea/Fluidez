@@ -291,6 +291,9 @@ window.Games = (function () {
     rt.appendChild(el('span', null, 'tu nivel · sube y baja con cada partida'));
     page.appendChild(rt);
 
+    // ---- the league, above everything you play alone ----
+    if (window.Liga) page.appendChild(window.Liga.card());
+
     // ---- today's challenge ----
     page.appendChild(dailyCard());
 
@@ -369,6 +372,16 @@ window.Games = (function () {
     go.addEventListener('click', startDaily);
     card.appendChild(go);
     return card;
+  }
+
+  /* A round somebody else configured. js/liga.js brings its own dealer,
+   * scoring and end line, and needs only the full-screen host and the same
+   * way back as every other round. */
+  function openRound(cfg) {
+    var h = roundHost();
+    clear(h);
+    if (!cfg.onExit) cfg.onExit = backToList;
+    window.GameRound.run(h, cfg);
   }
 
   function startDaily() {
@@ -940,7 +953,8 @@ window.Games = (function () {
     tick();
   }
 
-  return { render: render, renderTab: renderTab, open: open, openWeak: openWeak, openTense: openTense,
+  return { render: render, renderTab: renderTab, open: open, openRound: openRound,
+           openWeak: openWeak, openTense: openTense,
            setListRenderer: setListRenderer,
            recommend: recommend,
            homeCard: homeCard, tenseCard: tenseCard, tenseCheckCard: tenseCheckCard,

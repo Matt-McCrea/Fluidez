@@ -15,7 +15,7 @@
  * ASSETS must mirror every <script>/<link> in juegos/index.html. It is
  * deliberately short — that shortness is the entire feature.
  * ========================================================================== */
-var CACHE_VERSION = 'j8c220f57';
+var CACHE_VERSION = 'jede44f2f';
 var CACHE_NAME = 'fluidez-juegos-' + CACHE_VERSION;
 
 var ASSETS = [
@@ -48,6 +48,7 @@ var ASSETS = [
   '../js/gameitems.js',
   '../js/gameround.js',
   '../js/games.js',
+  '../js/liga.js',
   '../js/study.js',
   '../js/arcade.js'
 ];
@@ -74,6 +75,8 @@ self.addEventListener('activate', function (event) {
 // every question comes from a file that is either cached or not there at all.
 self.addEventListener('fetch', function (event) {
   if (event.request.method !== 'GET') return;
+  // The league's board comes from Supabase and must never be served from here.
+  if (new URL(event.request.url).origin !== self.location.origin) return;
   event.respondWith(
     caches.match(event.request).then(function (cached) {
       if (cached) return cached;

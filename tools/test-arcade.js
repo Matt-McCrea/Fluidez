@@ -991,6 +991,92 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   console.log('  board drew ' + tiles.length + ' tiles; stats panel renders and returns');
 }
 
+/* ---- the league (js/liga.js) ---------------------------------------------
+ * The server half is tested against Postgres when server/league.sql changes;
+ * what matters here is the half that has to agree across devices: the pools,
+ * the seeded dealer, the week, and the pop-up rule. */
+{
+  const L = W.Liga;
+  ok(!!L, 'js/liga.js did not load in the arcade build');
+  global.fetch = () => Promise.reject(new Error('offline in tests'));
+
+  const pools = L._pools();
+  ok(pools.length === 10, 'the league should have ten steps, two per band');
+  pools.forEach((p, i) => {
+    ok(p.list.length > 300, `league step ${i + 1} has only ${p.list.length} sentences`);
+    // the upper step of a band is the longer half of it, or promotion within
+    // a band would deal exactly the same round
+    if (i % 2 === 1) {
+      const lowMax = Math.max(...pools[i - 1].list.map(x => x.n));
+      const highMin = Math.min(...p.list.map(x => x.n));
+      ok(highMin >= lowMax, `step ${i + 1} is not the longer half of ${p.cefr}`);
+    }
+  });
+
+  // Same seed, same sentences — on every device, every attempt.
+  const deal = (step, seedStr, n) => {
+    const r = W.UI.seededRandom(seedStr), d = L._dealer(step), out = [];
+    for (let i = 0; i < n; i++) out.push(d(r));
+    return out;
+  };
+  const a = deal(3, 'liga-2026-10-26-3', 40), b = deal(3, 'liga-2026-10-26-3', 40);
+  ok(a.map(x => x.prompt).join('|') === b.map(x => x.prompt).join('|'), 'the league dealer is not reproducible from its seed');
+  ok(deal(4, 'liga-2026-10-26-4', 40).map(x => x.prompt).join('|') !== a.map(x => x.prompt).join('|'),
+     'two steps dealt the same round');
+  const many = deal(3, 'liga-share', 2000);
+  const share = many.filter(x => x.ligaNext).length / many.length;
+  ok(share > 0.15 && share < 0.25, `next-step share is ${(share * 100).toFixed(1)}%, wanted about 20%`);
+  ok(many.every(x => x.ligaStep === (x.ligaNext ? 4 : 3)), 'a next-step item came from the wrong pool');
+  ok(deal(10, 'liga-top', 300).every(x => !x.ligaNext), 'the top step dealt from a step that does not exist');
+  ok(many.every(x => (x.play === 'type') === (x.n < 6)), 'league items are not typed/built on the games\' own line');
+  const typed = many.filter(x => x.play === 'type').slice(0, 50);
+  ok(typed.every(x => W.GameItems.grade(x, x.answer) === 'good'), 'a correct league answer did not grade as good');
+
+  // Words, not points.
+  const it = many.find(x => x.n >= 5);
+  ok(L._award(it, 'good').points === it.n && L._award(it, 'near').points === Math.floor(it.n / 2) &&
+     L._award(it, 'wrong').points === 0, 'league scoring is not words translated');
+
+  // The week ends at midnight on Sunday in London, summer time included.
+  ok(L.weekOf(new Date('2026-10-28T12:00:00Z')) === '2026-10-26', 'weekOf: a Wednesday');
+  ok(L.weekOf(new Date('2026-11-01T23:30:00Z')) === '2026-10-26', 'weekOf: Sunday night, GMT');
+  ok(L.weekOf(new Date('2026-11-02T00:30:00Z')) === '2026-11-02', 'weekOf: Monday, GMT');
+  ok(L.weekOf(new Date('2026-07-05T22:30:00Z')) === '2026-06-29', 'weekOf: Sunday 23:30 BST');
+  ok(L.weekOf(new Date('2026-07-05T23:30:00Z')) === '2026-07-06', 'weekOf: Monday 00:30 BST');
+
+  // The pop-up: only for somebody passing you, only against what you last saw.
+  const wk = '2026-10-26', row = (id, best) => ({ player_id: id, name: id, best: best, days: 0 });
+  const was = { week: wk, best: { me: 50, ana: 40, tom: 70 } };
+  const said = L._overtaken(was, [row('me', 50), row('ana', 60), row('tom', 70)], wk, 'me');
+  ok(said.length === 1 && /ana te ha adelantado/.test(said[0].text), 'overtaking did not raise exactly one pop-up');
+  ok(L._overtaken(was, [row('me', 55), row('ana', 52), row('tom', 70)], wk, 'me').length === 0,
+     'a pop-up for somebody who is still behind you');
+  ok(L._overtaken({ week: '2026-10-19', best: {} }, [row('me', 0), row('ana', 60)], wk, 'me').length === 0,
+     'a new week replayed every round as pop-ups');
+
+  // A league round deals the seeded sentences, not the ladder's.
+  store['fluidez.liga'] = JSON.stringify({
+    auth: { access: 'x', refresh: 'y', exp: Date.now() + 3600e3, uid: 'me' }, name: 'Yo', step: 3,
+    board: { week: L.weekOf(), at: Date.now(), rows: [row('me', 0), row('ana', 30)] }
+  });
+  STAGE.children.length = 0;
+  L.play();
+  const first = deal(3, 'liga-' + L.weekOf() + '-3', 1)[0];
+  const prompt = STAGE.all(n => n.cls().includes('g-prompt'))[0];
+  ok(!!prompt && prompt.textContent.indexOf(first.prompt.replace(/\s*\([^()]*\)\s*([.!?]?)$/, '$1')) === 0,
+     'the league round did not open on its seeded first sentence');
+  STAGE.children.length = 0;
+  const card = L.card();
+  ok(card.all(n => n.cls().includes('liga-row') && !n.cls().includes('liga-hdr')).length === 2,
+     'the league card did not draw one row per player');
+  ok(card.textContent.indexOf('A2') !== -1, 'the league card does not show the player\'s level');
+  delete store['fluidez.liga'];
+  ok(L.card().all(n => n.cls().includes('liga-join')).length === 1, 'an unjoined device is not offered the join form');
+
+  console.log('  league: 10 steps, seeded dealer reproducible, ~' + Math.round(share * 100) +
+              '% next-step, week in London time, pop-up rule holds');
+}
+
 console.log('\nChecks run: ' + checks);
 if (failures) { console.error('\n❌ ' + failures + ' failure(s).'); process.exit(1); }
 console.log('\n✅ Arcade OK — every game deals from the precomputed index, with no teaching corpus loaded.');

@@ -31,8 +31,12 @@ window.Settings = (function () {
     'fluidez.arcade',
     // whether today's study pack has been finished (js/study.js)
     'fluidez.study',
-    'fluidez.onboarded', 'fluidez.voice', 'fluidez.suggest'];
-  var KEEP_ON_RESET = { 'fluidez.theme': 1, 'fluidez.voice': 1 };
+    'fluidez.onboarded', 'fluidez.voice', 'fluidez.suggest',
+    /* The league (js/liga.js): who you are on the server and the rounds not
+     * yet sent. Kept on reset — starting your Spanish over is not leaving the
+     * league, and the identity cannot be recovered once it is gone. */
+    'fluidez.liga', 'fluidez.liga.outbox'];
+  var KEEP_ON_RESET = { 'fluidez.theme': 1, 'fluidez.voice': 1, 'fluidez.liga': 1, 'fluidez.liga.outbox': 1 };
 
   function exportData() {
     var out = { app: 'fluidez', exportedAt: new Date().toISOString(), data: {} };

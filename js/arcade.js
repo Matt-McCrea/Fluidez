@@ -354,6 +354,9 @@
     top.appendChild(lvl);
     wrap.appendChild(top);
 
+    // the league: the one number here that somebody else can beat
+    if (window.Liga) wrap.appendChild(window.Liga.card({ before: function () { pushView('round'); } }));
+
     // today's challenge
     var dailyKey = GS.dailyKey();
     var playedToday = GS.todayBest(dailyKey);

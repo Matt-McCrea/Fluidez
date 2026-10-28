@@ -594,3 +594,95 @@
 .g-pb[data-race] { font-variant-numeric:tabular-nums; font-weight:700; }
 .g-pb[data-race="ahead"]  { color:var(--good); }
 .g-pb[data-race="behind"] { color:var(--muted); }
+
+/* ------------------------------------------------------------------ la liga */
+/* js/liga.js. Drawn in the app's Jugar tab and on the arcade board, so it
+   leans on the shared tokens only and lets each build's palette carry it. */
+.liga {
+  background: var(--panel); border: 1px solid var(--border);
+  border-top: 3px solid var(--accent); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 18px 20px 14px; margin: 0 0 22px; color: var(--text);
+}
+.liga-head { display: flex; align-items: baseline; gap: 12px; }
+.liga-k {
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .1em;
+  font-weight: 750; color: var(--accent);
+}
+.liga-when { margin-left: auto; color: var(--muted); font-size: .82rem; }
+.liga-rule { margin: 8px 0 12px; color: var(--muted); font-size: .9rem; line-height: 1.4; }
+.liga-table { display: flex; flex-direction: column; gap: 2px; margin-bottom: 14px; }
+.liga-row {
+  display: grid; grid-template-columns: 1.6em 1fr 4.6em 3em; align-items: center; gap: 8px;
+  padding: 7px 8px; border-radius: 8px; font-variant-numeric: tabular-nums;
+}
+.liga-row.me { background: var(--panel-2); }
+.liga-hdr { padding-top: 0; padding-bottom: 2px; }
+.liga-hdr span { font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); text-align: right; }
+.liga-pos { color: var(--muted); font-weight: 700; }
+.liga-who { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
+.liga-who b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 650; }
+.liga-step {
+  font-size: .7rem; font-weight: 700; color: var(--accent);
+  border: 1px solid var(--border); border-radius: 6px; padding: 1px 6px; flex: none;
+}
+.liga-best { text-align: right; font-size: 1.15rem; font-weight: 750; }
+.liga-days { text-align: right; color: var(--muted); font-size: .85rem; }
+.liga-go {
+  border: none; background: var(--accent); color: #fff; font: inherit;
+  font-weight: 650; font-size: 1rem; padding: 11px 22px; border-radius: 10px; cursor: pointer;
+}
+.liga-go:hover { background: var(--accent-2); }
+.liga-go:disabled { opacity: .6; cursor: default; }
+.liga-sync { margin: 10px 0 0; color: var(--muted); font-size: .78rem; line-height: 1.4; }
+.liga-err { margin: 8px 0 0; color: var(--bad); font-size: .85rem; min-height: 1em; }
+.liga-join { display: flex; flex-wrap: wrap; gap: 8px; }
+.liga-input {
+  flex: 1 1 8em; min-width: 0; font: inherit; font-size: 1rem; padding: 10px 12px;
+  border: 1px solid var(--border); border-radius: 10px; background: var(--panel-2); color: var(--text);
+}
+.liga-votes { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px; }
+.liga-votes-h { margin: 0; font-size: .95rem; }
+.liga-claim {
+  display: flex; flex-direction: column; gap: 3px; margin-top: 12px;
+  padding: 10px 12px; border-radius: 10px; background: var(--panel-2);
+}
+.liga-claim-en { color: var(--muted); font-size: .85rem; }
+.liga-claim-es { font-size: 1rem; }
+.liga-claim-exp { color: var(--muted); font-size: .8rem; font-style: italic; }
+.liga-claim-btns { display: flex; gap: 8px; margin-top: 6px; }
+.liga-vote {
+  font: inherit; font-size: .88rem; padding: 6px 12px; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--panel); color: var(--text);
+}
+.liga-vote:hover { border-color: var(--accent); }
+
+/* the end-screen line a league round puts in place of the personal best */
+.liga-over { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.liga-mini {
+  list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap;
+  justify-content: center; gap: 6px 16px; font-variant-numeric: tabular-nums;
+}
+.liga-mini li { display: flex; gap: 6px; color: var(--muted); }
+.liga-mini li b { color: var(--text); }
+.liga-mini li.me, .liga-mini li.me b { color: var(--accent); }
+.liga-mini li:first-child::before { content: '🥇'; }
+
+/* the pop-ups */
+.liga-toasts {
+  position: fixed; left: 16px; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  z-index: 1000; pointer-events: none;
+}
+.liga-toast {
+  pointer-events: auto; max-width: 30rem; width: 100%; text-align: left; cursor: pointer;
+  display: flex; gap: 10px; align-items: baseline; font: inherit; font-size: .92rem;
+  background: var(--panel); color: var(--text); border: 1px solid var(--border);
+  border-left: 3px solid var(--accent); border-radius: 12px; padding: 12px 14px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.18); animation: liga-in .25s ease-out;
+}
+.liga-toast-k {
+  font-size: .66rem; font-weight: 750; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent); flex: none;
+}
+@keyframes liga-in { from { transform: translateY(12px); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .liga-toast { animation: none; } }

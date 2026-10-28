@@ -928,6 +928,10 @@ window.Session = (function () {
     var p = bumpStreak();
     // A session that finished is what a focus is counted in — see js/focus.js.
     if (window.Focus) window.Focus.tick();
+    // ...and what the league's «días» column counts — see js/liga.js.
+    if (window.Liga && ctx.results) {
+      window.Liga.sessionDone(ctx.results.review ? ctx.results.review.correct : 0);
+    }
     UI.clear(host);
     var wrap = UI.el('div', 'panel intro complete');
     wrap.appendChild(UI.el('div', 'big-check', '✓'));

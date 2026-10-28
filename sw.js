@@ -14,7 +14,7 @@
  * ASSETS must mirror every <script>/<link> in index.html. No bundler here —
  * keep this list in sync by hand when a new data/js file is added there.
  * ========================================================================== */
-var CACHE_VERSION = 'c975436e8';
+var CACHE_VERSION = 'cdb4407c2';
 var CACHE_NAME = 'fluidez-' + CACHE_VERSION;
 
 var ASSETS = [
@@ -89,6 +89,7 @@ var ASSETS = [
   './js/gameitems.js',
   './js/gameround.js',
   './js/games.js',
+  './js/liga.js',
   './js/quickplay.js',
 
   './js/session.js',
@@ -136,6 +137,11 @@ self.addEventListener('fetch', function (event) {
    * never sees them. Before that, the referrer is what distinguishes them —
    * but a navigation to juegos/ is enough to break the cycle. */
   if (event.request.url.indexOf('/juegos/') !== -1) return;
+
+  /* HANDS OFF OTHER ORIGINS. The league (js/liga.js) reads its board from
+   * Supabase, and a cache-first worker would answer every later read with
+   * the first one — a leaderboard frozen at the moment you joined. */
+  if (new URL(event.request.url).origin !== self.location.origin) return;
 
   event.respondWith(
     caches.match(event.request).then(function (cached) {

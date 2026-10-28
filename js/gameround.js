@@ -63,7 +63,11 @@ window.GameRound = (function () {
        can be raced by the next one. Only timed rounds carry a ghost: in sudden
        death the thing you are chasing is how FAR you got, and there is no
        shared clock to line two runs up against. */
-    var curve = [], ghost = !!(cfg.duration && GS.hasGhost(cfg.key));
+    var curve = [], ghost = !!(cfg.duration && (cfg.ghostAt || GS.hasGhost(cfg.key)));
+    /* Whose round the ghost is. Your own record by default; js/liga.js passes
+     * a friend's curve, and names them, because "▼ 12" against an unnamed
+     * opponent is a number and "Ana ▼ 12" is a race. */
+    var ghostAt = cfg.ghostAt || function (ms) { return GS.ghostAt(cfg.key, ms); };
     var score = 0, shownScore = 0, combo = 0, bestCombo = 0, bestRung = rung;
     var comboBefore = 0, rungBefore = rung;
     var seen = 0, right = 0, runLen = 0, bestRun = 0, misses = [], usedPrompts = {};
@@ -167,8 +171,8 @@ window.GameRound = (function () {
       resolve(r);
     });
 
-    var pb = GS.pb(cfg.key);
-    pbEl.textContent = pb ? 'PB ' + GS.fmt(pb) : '';
+    var pb = cfg.pb != null ? cfg.pb : GS.pb(cfg.key);
+    pbEl.textContent = pb ? (cfg.pbLabel || 'PB') + ' ' + GS.fmt(pb) : '';
     if (perItemClock) { secsEl.classList.add('g-run'); }
     function drawLives() {
       if (!lives) return;
@@ -206,10 +210,11 @@ window.GameRound = (function () {
          * 8 420" is information you can do nothing with at second forty; "+340"
          * is the whole game. */
         if (ghost) {
-          var g = GS.ghostAt(cfg.key, cfg.duration - left);
+          var g = ghostAt(cfg.duration - left);
           if (g != null) {
             var d = score - g;
-            pbEl.textContent = (d >= 0 ? '▲ +' : '▼ ') + GS.fmt(Math.abs(d));
+            pbEl.textContent = (cfg.ghostName ? cfg.ghostName + ' ' : '') +
+                               (d >= 0 ? '▲ +' : '▼ ') + GS.fmt(Math.abs(d));
             pbEl.dataset.race = d >= 0 ? 'ahead' : 'behind';
           }
         }
@@ -259,7 +264,8 @@ window.GameRound = (function () {
     function setCombo(n) {
       combo = n;
       bestCombo = Math.max(bestCombo, n);
-      comboPill.hidden = n < 2;
+      // a round with its own scoring (cfg.award) has no multiplier to show
+      comboPill.hidden = n < 2 || !!cfg.award;
       comboPill.textContent = '×' + (1 + Math.min(n, 10) * 0.1).toFixed(1);
       comboPill.dataset.hot = n >= 5 ? '1' : '';
       if (n >= 2) { comboPill.classList.remove('beat'); void comboPill.offsetWidth; comboPill.classList.add('beat'); }
@@ -347,7 +353,7 @@ window.GameRound = (function () {
        * a deck round (that already IS a fixed list) and never twice in one
        * round. */
       var revisit = null;
-      if (!cfg.deck && !cfg.topic && seen > 0 && seen % 4 === 3 && GI.missDeck) {
+      if (!cfg.deck && !cfg.topic && !cfg.draw && seen > 0 && seen % 4 === 3 && GI.missDeck) {
         /* Checked AFTER building the item, not before: usedPrompts is keyed by
          * keyOf(), which is the prompt as it ends up on screen, and a deck
          * entry does not know yet whether it will be asked typed or tapped. */
@@ -361,7 +367,11 @@ window.GameRound = (function () {
       var item = null, fallback = null;
       if (revisit) { item = revisit; }
       for (var i = 0; !item && i < 8; i++) {
-        var got = cfg.deck ? GI.deckItem(cfg.deck, rng)
+        /* cfg.draw: the round's own dealer. js/liga.js deals from fixed
+         * steps rather than the ladder, and must deal the SAME sentences to
+         * everyone on a seed — so no error-log revisits either (above). */
+        var got = cfg.draw ? cfg.draw(rng)
+                : cfg.deck ? GI.deckItem(cfg.deck, rng)
                 : cfg.topic ? GI.weakItem(cfg.topic, rung, rng)
                             : GI.next(cfg.kind, rung, rng,
                                 { silent: cfg.silent, tense: cfg.lockTense, tenses: cfg.tenses,
@@ -394,7 +404,7 @@ window.GameRound = (function () {
       comboBefore = combo;
       rungBefore = rung;
       seen++;
-      var a = GS.award(item, result, ms, combo);
+      var a = cfg.award ? cfg.award(item, result, ms, combo) : GS.award(item, result, ms, combo);
 
       if (result === 'wrong') {
         setCombo(0);
@@ -412,10 +422,11 @@ window.GameRound = (function () {
         if (!recordHit && pb && score > pb) {
           recordHit = true;
           shell.dataset.record = '1';
-          pop('¡RÉCORD!', 'record');
+          pop(cfg.recordText || '¡RÉCORD!', 'record');
         }
       }
       writeBack(item, result);
+      if (cfg.onResolve) cfg.onResolve(item, result);
       rung = GS.nextRung(rung, result, rungCap, item && item.play);
       bestRung = Math.max(bestRung, rung);
 
@@ -531,13 +542,23 @@ window.GameRound = (function () {
         mine.addEventListener('click', function () {
           window.Accepted.add(item.prompt, lastTyped.trim());
           mine.disabled = true;
-          mine.textContent = 'anotado — contará la próxima vez';
+          mine.textContent = cfg.claimText || 'anotado — contará la próxima vez';
           /* Kept, not awarded. Scoring it now would price an answer nobody
            * graded; keeping the combo and the rung means the round stops
            * punishing you for being right. */
           combo = comboBefore;
           rung = rungBefore;
           shell.dataset.state = 'near';
+          /* Unless somebody WILL grade it. A league round scores the claim
+           * now and sends it to the other players, whose 👎 takes it back
+           * (js/liga.js) — so there it is priced, just later. */
+          var claimed = cfg.onClaim ? cfg.onClaim(item, lastTyped.trim()) : 0;
+          if (claimed) {
+            score += claimed;
+            right++;
+            tweenScore();
+            pop('+' + GS.fmt(claimed) + '  por revisar', 'near');
+          }
         });
         row2.appendChild(mine);
       }
@@ -769,7 +790,14 @@ window.GameRound = (function () {
       });
       // the daily challenge is one shared round; rating it would mean rating
       // everyone against the same draw, which is a different thing
-      var rated = cfg.key === GS.dailyKey() ? null : GS.rate(cfg.key, score);
+      var rated = cfg.key === GS.dailyKey() || cfg.award ? null : GS.rate(cfg.key, score);
+      /* A round that answers to somebody else says so here, in place of the
+       * personal-best line: js/liga.js files the round and returns where it
+       * leaves you in the week. */
+      var said = cfg.onFinish ? cfg.onFinish({
+        score: score, seen: seen, right: right, curve: curve,
+        ms: cfg.duration || (startedAt ? Date.now() - startedAt : 0)
+      }) : null;
 
       clear(host);
       var over = el('div', 'g-over');
@@ -779,7 +807,9 @@ window.GameRound = (function () {
       var big = el('div', 'g-over-score', GS.fmt(score));
       over.appendChild(big);
 
-      if (res.isPb) {
+      if (said) {
+        over.appendChild(said);
+      } else if (res.isPb) {
         over.appendChild(el('div', 'g-over-verdict pb',
           res.prevPb ? '¡Récord! ' + GS.fmt(res.gap) + ' más que antes' : 'Tu primer récord'));
       } else if (res.pb) {
@@ -799,9 +829,9 @@ window.GameRound = (function () {
         over.appendChild(rEl);
       }
 
-      var again = el('button', 'g-again', 'Otra vez');
+      var again = el('button', 'g-again', cfg.againLabel || 'Otra vez');
       again.type = 'button';
-      again.addEventListener('click', function () { run(host, cfg); });
+      again.addEventListener('click', function () { if (cfg.again) cfg.again(); else run(host, cfg); });
       over.appendChild(again);
 
       var stats = el('div', 'g-over-stats');
@@ -813,8 +843,10 @@ window.GameRound = (function () {
       }
       stat(seen ? Math.round(100 * right / seen) + '%' : '—', 'precisión');
       if (lives) stat(String(bestRun), 'mejor racha');
-      stat('×' + (1 + Math.min(bestCombo, 10) * 0.1).toFixed(1), 'mejor combo');
-      stat(band0, 'llegaste a');
+      // A round with its own scoring has no multiplier, and one with its own
+      // dealer has no ladder to have climbed (js/liga.js has both).
+      if (!cfg.award) stat('×' + (1 + Math.min(bestCombo, 10) * 0.1).toFixed(1), 'mejor combo');
+      if (!cfg.draw) stat(band0, 'llegaste a');
       stat(String(res.todayBest ? GS.fmt(res.todayBest) : '—'), 'mejor de hoy');
       over.appendChild(stats);
 
