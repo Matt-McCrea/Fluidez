@@ -34,11 +34,12 @@ const W = window;
 const BANDS = ['A1', 'A2', 'B1', 'B2', 'C1'];
 const LIMITS = {
   lesson: {
-    phrases:   { A1: 10, A2: 12, B1: 14, B2: 16, C1: 18 },
-    keywords:  { A1: 8, A2: 8, B1: 10, B2: 10, C1: 12 },
-    enWords:   { A1: 150, A2: 180, B1: 220, B2: 260, C1: 280 },
-    sections:  { A1: 3, A2: 3, B1: 4, B2: 5, C1: 5 },
-    jargon:    { A1: 0, A2: 0, B1: 2, B2: 4, C1: Infinity },
+    // diagnostics, not targets: "look if above"
+    phrases:   { A1: 14, A2: 14, B1: 16, B2: 18, C1: 20 },
+    enWords:   { A1: 250, A2: 250, B1: 280, B2: 300, C1: 300 },
+    sections:  { A1: 4, A2: 4, B1: 5, B2: 5, C1: 5 },
+    // Spanish-language terminology (complemento directo…) stays out of A1–B1
+    jargon:    { A1: 0, A2: 0, B1: 0, B2: Infinity, C1: Infinity },
     probes: 3,
     produced:  { A1: 1, A2: 1, B1: 2, B2: 2, C1: 2 }
   },
@@ -98,15 +99,50 @@ W.COURSE_DAYS.forEach((d, day) => {
   const jargon = (visible.match(ES_JARGON) || []).length;
   const heads = [l.title].concat((l.sections || []).map(s => s.h)).join(' | ');
   const probes = l.probes || [];
-  record('lesson: phrases to learn', band, phrases <= L.phrases[band], id, phrases + ' > ' + L.phrases[band]);
-  record('lesson: new keywords', band, (l.keywords || []).length <= L.keywords[band], id, (l.keywords || []).length + ' > ' + L.keywords[band]);
-  record('lesson: English words', band, english(prose) <= L.enWords[band], id, english(prose) + ' > ' + L.enWords[band]);
-  record('lesson: sections', band, (l.sections || []).length <= L.sections[band], id, (l.sections || []).length + ' > ' + L.sections[band]);
-  record('lesson: Spanish grammar terms', band, jargon <= L.jargon[band], id, jargon + ' terms');
+  record('look: phrases to learn', band, phrases <= L.phrases[band], id, phrases + ' > ' + L.phrases[band]);
+  record('look: English words', band, english(prose) <= L.enWords[band], id, english(prose) + ' > ' + L.enWords[band]);
+  record('look: sections', band, (l.sections || []).length <= L.sections[band], id, (l.sections || []).length + ' > ' + L.sections[band]);
+  record('lesson: no Spanish terminology A1–B1', band, jargon <= L.jargon[band], id, jargon + ' terms');
   record('lesson: no abbreviations in headings', band, !ABBREV.test(heads), id, (heads.match(ABBREV) || [])[0]);
   record('lesson: ≥3 probes', band, probes.length >= L.probes, id, probes.length + ' probes');
   const produced = probes.filter(p => p.kind === 'cloze').length;
   record('lesson: produced answers', band, produced >= L.produced[band], id, produced + ' typed');
+});
+
+/* ---- the grammar spine --------------------------------------------------
+ * The headline target in TEACHING_STANDARDS.md: by which day each core tool
+ * has been taught. A tool counts as taught on the first day any of its
+ * lessons appears. A tool with no lesson (ir a + infinitive, today) is
+ * reported as missing. Keep this table and the one in the standards together. */
+const SPINE = [
+  ['Present tense, regular verbs', 3, ['presente']],
+  ['Ser and estar', 5, ['ser-estar']],
+  ['Gender, articles, plurals', 6, ['gender-articles', 'gr-genero-sustantivos-a1', 'gr-numero-sustantivos-a1', 'gr-articulo-definido-a1']],
+  ['Adjective agreement', 8, ['gr-genero-adjetivo-a1']],
+  ['Questions and negation', 8, ['gr-interrogativos-a1']],
+  ['Irregular and stem-changing present', 12, ['gr-presente-irregular-a2']],
+  ['Gustar and verbs like it', 15, ['gr-verbos-predicativos-tipos-a2']],
+  ['Ir a + infinitive', 15, []],
+  ['Reflexive verbs', 18, ['gr-pronombre-se-a1']],
+  ['Possessives and demonstratives', 20, ['gr-posesivos-forma-a1', 'gr-demostrativos-distribucion-a1']],
+  ['Direct object pronouns, personal a', 25, ['gr-objeto-directo-a1', 'gr-pronombres-atonos-a2']],
+  ['Preterite', 30, ['preterito']],
+  ['Imperfect', 40, ['imperfecto']],
+  ['Preterite vs imperfect', 45, ['preterite-imperfect']],
+  ['Indirect object pronouns, se lo', 50, ['gr-objeto-indirecto-a2', 'gr-pronombres-combinados-b1']],
+  ['Present perfect', 50, ['gr-preterito-perfecto-a2']],
+  ['Affirmative commands', 55, ['gr-imperativo-forma-a2']],
+  ['Comparatives; por and para', 60, ['gr-comparativos-a2', 'por-para']],
+  ['Present subjunctive', 80, ['gr-presente-subjuntivo-b1']],
+  ['Future and conditional', 90, ['futuro', 'condicional']],
+  ['Negative commands; relative clauses', 100, ['impneg', 'gr-relativas-b1']],
+  ['Imperfect subjunctive, compound tenses', 130, ['impsubj', 'gr-pluscuamperfecto-b1', 'futperf', 'condperf', 'perfsubj']]
+];
+const dayOf = {}; W.COURSE_DAYS.forEach((d, i) => { if (d.lesson && !(d.lesson in dayOf)) dayOf[d.lesson] = i; });
+// a tool with several lessons is fully taught when its LAST lesson has appeared
+const spine = SPINE.map(([tool, target, ids]) => {
+  const days = ids.map(id => dayOf[id]).filter(x => x != null);
+  return { tool, target, day: days.length === ids.length && ids.length ? Math.max(...days) : null };
 });
 
 /* ---- passages ------------------------------------------------------------ */
@@ -144,8 +180,13 @@ if (failsFor) {
   });
   process.exit(0);
 }
+console.log('Grammar spine — day each core tool is fully taught (target in brackets)');
+spine.forEach(r => console.log('  ' + (r.day != null && r.day <= r.target ? '✓' : '✗') + ' ' + String(r.tool).padEnd(42) +
+  String(r.day == null ? 'missing' : 'day ' + r.day).padEnd(12) + '(' + r.target + ')'));
+console.log('  ' + spine.filter(r => r.day != null && r.day <= r.target).length + ' of ' + spine.length + ' on time\n');
 const pct = b => b ? Math.round(100 * b.pass / b.n) + '%' : '—';
 const pad = (s, n) => String(s).padEnd(n);
+console.log('"look:" rows are diagnostics, not targets.');
 console.log(pad('check (share passing)', 40) + BANDS.map(b => pad(b, 7)).join(''));
 Object.keys(results).forEach(check => console.log(pad(check, 40) + BANDS.map(b => pad(pct(results[check][b]), 7)).join('')));
 console.log(pad('writing: tasks at band length', 40) + BANDS.map(b => {

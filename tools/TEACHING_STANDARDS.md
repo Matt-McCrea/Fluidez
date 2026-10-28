@@ -10,32 +10,39 @@ minutes a day at A1, rising to thirty at B2 and above.
 
 ---
 
-## Part 3 first — the principle: phrases before rules
+## Part 3 first — the principle: give adults the tools early
 
-At A1 and most of A2 the learner is collecting **ready-made phrases** that do a
-job, not learning a grammar system. *Me llamo Ana* is taught as "this is how you
-say your name", not as a reflexive verb. *Tengo treinta años* is "this is how you
-say your age", not as a lesson on *tener* idioms. *¿Me pone un café?* is how you
-order. The grammar inside those phrases is named later, once the learner owns
-several phrases that share it and needs the rule to make new sentences.
+The learner is an intelligent adult. Adults learn rules quickly, and explicit
+grammar teaching works for them: it lets one rule generate hundreds of
+sentences instead of memorising each one. So the course hands over the
+**grammar toolkit early and fast**, and spends the rest of its time making the
+learner fluent with it.
+
+Fixed phrases still have a job, but a narrower one: getting the learner talking
+on day one, before the tools exist, and carrying things whose grammar is
+genuinely out of reach for now.
 
 Concretely:
 
-1. **A1 teaches phrases by default.** A rule is explained only when the lesson's
-   own task needs the learner to build new sentences with it (the present-tense
-   endings, gender agreement), and then in three sentences or fewer, after the
-   examples, not before.
-2. **Grammar arrives as a reveal, not a prerequisite.** When a rule is finally
-   taught, it opens with phrases the learner already knows: "You have been saying
-   *me llamo*, *me levanto*, *me gusta*. Here is what that *me* is."
-3. **A form above the learner's level is allowed only as a fixed phrase,**
-   glossed as a whole and not analysed (*¡Que te vaya bien!* at A1 is fine; a
-   subjunctive explanation is not).
-4. **One lesson, one job.** One communicative goal or one grammar point. Two only
+1. **A grammar spine, front-loaded.** The core tools (Part 1, "Grammar spine")
+   arrive on a schedule measured in days, not hundreds of days. Every other
+   lesson (functions, topics, genres) is where those tools get used.
+2. **Short, sharp explanations.** A rule is explained in plain English with a
+   pattern table and three to five examples, then practised at once. Precise
+   is better than long: one well-chosen table beats three paragraphs.
+3. **Phrases first, then the reveal, quickly.** Week one runs on survival
+   phrases (*me llamo*, *tengo treinta años*, *¿me pone un café?*). Within days
+   the grammar inside them is named: "*me llamo* is literally 'I call myself' —
+   here is how *me*, *te*, *se* work." The phrase is the hook, not a substitute
+   for the rule.
+4. **A form beyond the toolkit appears only as a fixed phrase,** glossed whole
+   (*¡Que te vaya bien!* before the subjunctive has been taught).
+5. **One lesson, one job.** One grammar point or one communicative goal. Two only
    when they are halves of the same idea (asking for information / giving it).
-5. **Talk to a person, not a syllabus.** Titles and headings say what the learner
-   can now do, in plain English or very simple Spanish. Abbreviations and PCIC
-   labels never reach the screen.
+6. **Talk to a person, not a syllabus.** Titles and headings say what the learner
+   can now do. Grammar terms are fine when they help (an adult benefits from
+   knowing the word *preterite*), but each is explained in plain words the
+   first time, and abbreviations and PCIC labels never reach the screen.
 
 ---
 
@@ -46,24 +53,60 @@ Measured per lesson (or passage, or task) by `tools/audit-standards.js`.
 each. Examples and contrast lines illustrate them and are not counted. A fixed
 phrase (*¿Cómo te llamas?*) counts as one.
 
+### Grammar spine — the headline target
+
+The day (in course order, one lesson a day) by which each core tool has been
+taught. These are the targets the course is judged on first; everything else
+in Part 1 is secondary. "Today" is the day the last lesson for that tool
+appears in `data/course.js` now; `tools/audit-standards.js` prints both.
+
+| Tool | Target day | Today |
+|---|---|---|
+| Present tense, regular verbs | 3 | 3 |
+| Ser and estar | 5 | 5 |
+| Gender, articles, plurals | 6 | 99 |
+| Adjective agreement | 8 | 52 |
+| Questions and negation | 8 | 11 |
+| Key irregular presents (tener, ir, hacer…) and stem changes (quiero, puedo) | 12 | 179 |
+| *Gustar* and verbs like it | 15 | 33 |
+| *Ir a* + infinitive (the everyday future) | 15 | no lesson |
+| Reflexive verbs | 18 | 75 |
+| Possessives and demonstratives | 20 | 57 |
+| Direct object pronouns, personal *a* | 25 | 121 |
+| Preterite, regular and key irregulars | 30 | 46 |
+| Imperfect | 40 | 107 |
+| Preterite vs imperfect | 45 | 113 |
+| Indirect object pronouns, *se lo* | 50 | 304 |
+| Present perfect | 50 | 69 |
+| Affirmative commands | 55 | 126 |
+| Comparatives; *por* and *para* | 60 | 159 |
+| Present subjunctive (wishes, *cuando* + future, *ojalá*) | 80 | 188 |
+| Future and conditional | 90 | 217 |
+| Negative commands; relative clauses | 100 | 297 |
+| Imperfect subjunctive, *si* clauses, compound tenses | 130 | 342 |
+
+So every main tense and mood by about day 130, against day 342 now. Learners
+who want to go faster can take more than one lesson a day; the course already
+offers the next lesson when one is finished.
+
 ### Lessons
+
+These are diagnostics, not targets. A long lesson is fine if it teaches one
+thing well; a short one that bundles three unrelated topics is not. The audit
+reports them so a reviewer knows where to look.
 
 | Measure | A1 | A2 | B1 | B2 | C1 |
 |---|---|---|---|---|---|
-| Phrases to learn (max) | 10 | 12 | 14 | 16 | 18 |
-| New keywords (max) | 8 | 8 | 10 | 10 | 12 |
-| English explanation words (max) | 150 | 180 | 220 | 260 | 280 |
-| Teaching sections (max) | 3 | 3 | 4 | 5 | 5 |
-| Spanish grammar terms visible to learner | 0 | 0 | ≤2, each glossed | ≤4 | free |
+| Phrases to learn (look if above) | 14 | 14 | 16 | 18 | 20 |
+| English explanation words (look if above) | 250 | 250 | 280 | 300 | 300 |
+| Teaching sections (look if above) | 4 | 4 | 5 | 5 | 5 |
 | Abbreviations (OD, OI, CD…) in titles/headings | 0 | 0 | 0 | 0 | 0 |
 | Probes that test the lesson's own point | ≥3 | ≥3 | ≥3 | ≥3 | ≥3 |
 | Probes requiring production (typed, not chosen) | ≥1 | ≥1 | ≥2 | ≥2 | ≥2 |
 
-English grammar words allowed in explanations at A1–A2, with no gloss needed:
-*verb, noun, ending, question, singular, plural, masculine, feminine, formal,
-informal, past, present, future*. Anything else (*clause, object, pronoun,
-reflexive, subjunctive, auxiliary…*) needs a plain-words gloss with an example
-the first time it appears in a lesson, and at A1 should be avoided altogether.
+Grammar terms are allowed at every level, as long as each is explained in plain
+words with an example the first time a lesson uses it. Spanish-language
+terminology (*complemento directo*, *oración subordinada*) stays out of A1–B1.
 
 ### Reading passages
 
@@ -120,7 +163,7 @@ nothing below 2.** Reviewers quote the line that justifies any score of 1 or 2.
 |---|---|---|---|---|---|
 | A | **Sounds like a teacher** | Reads as a person talking to the learner; warm, plain, direct | Clear but a little stiff | Reads like reference notes; lists, slashes, notation | Reads like a database or a syllabus inventory |
 | B | **One clear job** | One goal, obvious from the title | One main goal plus a closely related second | Two unrelated points, or a goal hidden in the detail | Several topics with no common thread |
-| C | **Phrase or rule, right for the level** | Teaches as phrases or as rules exactly as Part 3 says for this band | Mostly right; one rule explained a band early | Explains machinery a learner does not need yet | A1/A2 learner is given grammar analysis instead of something to say |
+| C | **Gives the learner a tool** | States the rule clearly and briefly, with a pattern the learner can use at once to make new sentences | Clear rule, but longer or later than it needs to be | Rule buried in detail, or a list to memorise where a rule would do | No usable rule; or terminology and analysis with nothing to say |
 | D | **Natural Spanish** | Every line is something a native speaker (Spain) would say in that situation | Natural with one stilted line | Several textbook-only lines | Unnatural or wrong |
 | E | **Worth learning now** | High-frequency, useful in the learner's first real conversations at this band | Useful, slightly niche | Low value at this band | Learner would rarely meet it |
 | F | **Examples teach** | Examples run simple to harder, in a believable context, and show the point | Good examples, little progression | Examples are isolated or too long for the band | Examples don't show the point |
