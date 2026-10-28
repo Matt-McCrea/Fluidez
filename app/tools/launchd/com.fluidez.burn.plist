@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Template. install.sh fills in __CLAUDE__, __PATH__, __HOME__, __REPO__ and copies
+  the result to ~/Library/LaunchAgents/com.fluidez.burn.plist.
+  Every 15 min: one headless /burn tick. burn.lock prevents overlapping runs.
+  If the claude binary moved (VS Code extension update), the tick falls back to
+  the newest extension binary, then to `claude` on PATH.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.fluidez.burn</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-c</string>
+    <string>LOG="__REPO__/app/content/_queue/burn.log"; CLAUDE="__CLAUDE__"; [ -x "$CLAUDE" ] || CLAUDE="$(ls -t "$HOME"/.vscode/extensions/anthropic.claude-code-*/resources/native-binary/claude 2>/dev/null | head -1)"; [ -x "$CLAUDE" ] || CLAUDE="$(command -v claude)"; if [ -f "$LOG" ] &amp;&amp; [ "$(stat -f %z "$LOG")" -gt 5000000 ]; then tail -c 2000000 "$LOG" &gt; "$LOG.tmp" &amp;&amp; mv "$LOG.tmp" "$LOG"; fi; echo "=== $(date '+%Y-%m-%d %H:%M:%S') tick ($CLAUDE)" &gt;&gt; "$LOG"; cd "__REPO__" &amp;&amp; "$CLAUDE" -p "/burn" --permission-mode bypassPermissions &gt;&gt; "$LOG" 2&gt;&amp;1</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>__REPO__</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>__PATH__</string>
+    <key>HOME</key>
+    <string>__HOME__</string>
+  </dict>
+
+  <key>StartInterval</key>
+  <integer>900</integer>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <!-- launchd's own stdout/stderr (only errors from zsh itself; the tick logs to burn.log). -->
+  <key>StandardOutPath</key>
+  <string>__REPO__/app/content/_queue/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>__REPO__/app/content/_queue/launchd.err.log</string>
+
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>LowPriorityIO</key>
+  <false/>
+</dict>
+</plist>

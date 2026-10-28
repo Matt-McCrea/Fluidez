@@ -1,0 +1,7 @@
+queue.lock
+burn.lock
+burn.log
+last-gate.txt
+runs/
+*.tmp-*
+launchd.*.log
