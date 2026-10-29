@@ -1,0 +1,232 @@
+{
+  "id": "sc-u20-f",
+  "unit": "u20",
+  "title": "Doña Gloria waits up",
+  "brief": "You're Tomás. It's late, you're back at Doña Gloria's house, and she has waited up for you with news. Listen, talk about tomorrow's weather and agree on a plan. She's your landlady and older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, por fin. Escuche: esta tarde un vecino vio un pájaro verde en el parque de los Periodistas.",
+      "npcEn": "Tomás, at last. Listen: this afternoon a neighbour saw a green bird in the Parque de los Periodistas.",
+      "intent": "Wonder aloud whether it could be Simón.",
+      "accept": [
+        "¿Será Simón?",
+        "¿Será él?",
+        "¡No! ¿Será Simón?"
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "ser",
+          "tense": "futuro",
+          "label": "wondering: ¿será Simón? (could it be)"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:future-conjecture",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "No sé, mijo. Pero dicen que gritaba en inglés.",
+      "npcEn": "I don't know, son. But they say it was shouting in English.",
+      "intent": "Say then it's probably him, and you'll go early tomorrow.",
+      "accept": [
+        "Entonces será él. Mañana iré temprano.",
+        "Será Simón. Iré mañana temprano.",
+        "Entonces es él. Mañana iré temprano al parque."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ir",
+          "tense": "futuro",
+          "person": "yo",
+          "label": "I'll go: iré"
+        }
+      ],
+      "focus": "g:future-promises",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Pues lleve chaqueta. El pronóstico dice que mañana estará nublado y lloverá por la tarde.",
+      "npcEn": "Well, take a jacket. The forecast says tomorrow will be cloudy and it'll rain in the afternoon.",
+      "intent": "Ask her if it will be very cold tomorrow.",
+      "accept": [
+        "¿Mañana hará mucho frío?",
+        "¿Y hará mucho frío?",
+        "¿Hará mucho frío mañana?"
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "hacer",
+          "tense": "futuro",
+          "label": "will it be cold: ¿hará frío?"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:future-promises",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Sí, en la mañana hará mucho frío. Ah, y otra cosa, mijo: el pájaro entró en un edificio grande de la Séptima.",
+      "npcEn": "Yes, in the morning it'll be very cold. Oh, and another thing, son: the bird went into a big building on Séptima.",
+      "intent": "Guess: then Simón is probably in the Altamira building.",
+      "accept": [
+        "Entonces Simón estará en el edificio de Altamira.",
+        "Estará en el edificio de Altamira.",
+        "Entonces estará en el edificio de Altamira."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "estar",
+          "tense": "futuro",
+          "label": "a guess: estará (he's probably)"
+        }
+      ],
+      "focus": "g:future-conjecture",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Altamira? ¡Esa gente! Mijo, yo que usted, iría con don Hernando.",
+      "npcEn": "Altamira? Those people! Son, if I were you, I'd go with Don Hernando.",
+      "intent": "Ask her if she could call Don Hernando tonight.",
+      "accept": [
+        "¿Usted podría llamar a don Hernando esta noche?",
+        "¿Podría llamar a don Hernando esta noche?",
+        "¿Podría llamarlo esta noche?"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "poder",
+          "tense": "condicional",
+          "person": "él/ella",
+          "label": "could you, to her: podría (usted)"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Claro, ya mismo lo llamo. Y usted, a dormir. Mañana será un día largo.",
+      "npcEn": "Of course, I'll call him right now. And you, off to bed. Tomorrow will be a long day.",
+      "intent": "Say good night and promise her you'll bring Simón home.",
+      "accept": [
+        "Buenas noches, doña Gloria. Mañana traeré a Simón, se lo prometo.",
+        "Buenas noches. Mañana traeré a Simón, se lo prometo.",
+        "Buenas noches. Se lo prometo, traeré a Simón a casa."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "traer",
+          "tense": "futuro",
+          "person": "yo",
+          "label": "I'll bring: traeré"
+        }
+      ],
+      "focus": "g:future-promises",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:hola-buenos-dias",
+    "c:no-se",
+    "c:pues",
+    "g:commands-usted",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:object-pronoun-position",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:buena",
+    "l:casa",
+    "l:chaqueta",
+    "l:claro",
+    "l:cosa",
+    "l:decir",
+    "l:dormir",
+    "l:día",
+    "l:edificio",
+    "l:entrar",
+    "l:escuchar",
+    "l:estar",
+    "l:fin",
+    "l:frío",
+    "l:gente",
+    "l:grande",
+    "l:gritar",
+    "l:hacer",
+    "l:inglés",
+    "l:ir",
+    "l:largo",
+    "l:llamar",
+    "l:llevar",
+    "l:llover",
+    "l:mañana",
+    "l:mijo",
+    "l:noche",
+    "l:nublado",
+    "l:parque",
+    "l:poder",
+    "l:prometer",
+    "l:pronóstico",
+    "l:pájaro",
+    "l:saber",
+    "l:ser",
+    "l:tarde",
+    "l:temprano",
+    "l:traer",
+    "l:vecino",
+    "l:ver",
+    "l:verde",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:es-tiene-lleva",
+    "p:hace-frio",
+    "p:la-gente-singular",
+    "p:llevar-traer",
+    "p:los-garcia",
+    "p:otro-no-article",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:se-puede-me-dejas",
+    "p:senor-don-article",
+    "p:te-importaria"
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "sc-u20-d",
+  "unit": "u20",
+  "title": "A hundred thousand pesos",
+  "brief": "You're Tomás. Jhon Fredy, the new waiter, is making signs about Simón on his phone between customers. Help him get them right and decide where they go. You're the boss and he's nineteen, so use tú; he calls you usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Jefe, el letrero ya casi está. ¿Ofrecemos plata?",
+      "npcEn": "Boss, the sign's nearly done. Do we offer money?",
+      "intent": "Say yes: you will pay a hundred thousand pesos.",
+      "accept": [
+        "Sí. Pagaré cien mil pesos.",
+        "Sí, daremos cien mil pesos por Simón.",
+        "Sí, pagaremos cien mil pesos."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "futuro",
+          "label": "a promise: pagaré (I will pay)"
+        }
+      ],
+      "focus": "g:future-promises",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¡Uy, cien mil! Con eso, mañana vendrán veinte personas con pájaros verdes.",
+      "npcEn": "Wow, a hundred thousand! With that, twenty people will turn up tomorrow with green birds.",
+      "intent": "Say maybe, but Simón talks and the others don't.",
+      "accept": [
+        "A lo mejor. Pero Simón habla, y los otros no.",
+        "Puede ser, pero Simón habla. Los otros no.",
+        "Puede ser. Pero los otros pájaros no hablan."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ba lo mejor\\b|\\bpuede ser\\b",
+          "flags": "i",
+          "label": "maybe: a lo mejor or puede ser"
+        }
+      ],
+      "focus": "c:puede-ser",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Verdad. ¿Y dónde ponemos los letreros? Tengo treinta.",
+      "npcEn": "True. And where do we put the signs? I've got thirty.",
+      "intent": "Say the best thing is to put them up in the Chorro de Quevedo.",
+      "accept": [
+        "Lo mejor es ponerlos en el Chorro de Quevedo.",
+        "Lo mejor es poner los letreros en el Chorro de Quevedo.",
+        "En el Chorro de Quevedo. Lo mejor es ponerlos allá."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\blo mejor es\\b",
+          "flags": "i",
+          "label": "the best thing is: lo mejor es + infinitive"
+        }
+      ],
+      "focus": "c:lo-mejor-es",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Listo. Ah, jefe, una cosa. Ayer vi a un señor de Altamira con una caja grande, aquí en la esquina.",
+      "npcEn": "Done. Oh, boss, one thing. Yesterday I saw a man from Altamira with a big box, right here on the corner.",
+      "intent": "Wonder aloud what could be in the box.",
+      "accept": [
+        "¿Qué habrá en la caja?",
+        "¿Y qué habrá en esa caja?",
+        "¿Qué tendrá en la caja?"
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "futuro",
+          "label": "wondering: qué habrá (what could there be)"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:future-conjecture",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "No sé, jefe. Pero era grande, como para un perro, o para un pájaro.",
+      "npcEn": "I don't know, boss. But it was big, like for a dog, or for a bird.",
+      "intent": "Tell him that if you were him, you wouldn't tell Vale yet.",
+      "accept": [
+        "Yo que tú, no se lo diría a Vale.",
+        "Yo que tú, todavía no se lo diría a Vale.",
+        "Yo que tú, no se lo diría todavía."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "decir",
+          "tense": "condicional",
+          "person": "yo",
+          "label": "I wouldn't tell: no se lo diría"
+        }
+      ],
+      "focus": "c:yo-que-tu",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Tiene razón, jefe. Bueno, salgo con los letreros. Vuelvo en una hora.",
+      "npcEn": "You're right, boss. Right, I'm heading out with the signs. I'll be back in an hour.",
+      "intent": "Thank him and say that if Simón comes back, you'll call him.",
+      "accept": [
+        "Gracias, Jhon Fredy. Si Simón vuelve, te llamo.",
+        "Gracias. Si vuelve, te llamaré.",
+        "Listo, gracias. Si Simón vuelve, te llamaré."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi (sim[oó]n )?vuelve\\b",
+          "flags": "i",
+          "label": "if he comes back: si vuelve, in the present"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "si volverá",
+            "si simón volverá"
+          ],
+          "label": "after si, no future: si vuelve"
+        }
+      ],
+      "focus": "x:si-clause-no-future",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-lo-mejor",
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:lo-mejor-es",
+    "c:no-se",
+    "c:puede-ser",
+    "c:tengo",
+    "c:tienes",
+    "c:todavia-no",
+    "c:yo-que-tu",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:imperfect-states",
+    "g:lo-adjective",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:quizas-a-lo-mejor",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "l:allá",
+    "l:aquí",
+    "l:ayer",
+    "l:bueno",
+    "l:caja",
+    "l:cosa",
+    "l:dar",
+    "l:decir",
+    "l:dónde",
+    "l:esquina",
+    "l:estar",
+    "l:grande",
+    "l:hablar",
+    "l:hora",
+    "l:jefe",
+    "l:letrero",
+    "l:listo",
+    "l:llamar",
+    "l:mañana",
+    "l:mejor",
+    "l:ofrecer",
+    "l:pagar",
+    "l:perro",
+    "l:persona",
+    "l:peso",
+    "l:plata",
+    "l:poder",
+    "l:poner",
+    "l:pájaro",
+    "l:qué",
+    "l:razón",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:señor",
+    "l:tener",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "l:verde",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:con-sin",
+    "p:costar-pagar",
+    "p:demonstratives-basic",
+    "p:me-te-nos-objects",
+    "p:numbers-un-una",
+    "p:otro-no-article",
+    "p:para-inf",
+    "p:personal-a",
+    "p:tener-razon",
+    "p:ya-todavia-basic"
+  ]
+}

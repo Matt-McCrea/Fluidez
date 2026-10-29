@@ -1,0 +1,239 @@
+{
+  "id": "sc-u20-c",
+  "unit": "u20",
+  "title": "Grupo Altamira, ground floor",
+  "brief": "You're Tomás. On the third day, Grupo Altamira's reception calls the café: there's a green bird in their building, talking in English. Go and get him back. The receptionist is a stranger, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenas tardes. Usted será el señor del café, ¿no? Lo esperamos desde las dos.",
+      "npcEn": "Good afternoon. You must be the man from the café, right? We've been expecting you since two.",
+      "intent": "Say yes, you're Tomás, and ask where the bird is.",
+      "accept": [
+        "Sí, soy Tomás. ¿Dónde está el pájaro?",
+        "Sí, me llamo Tomás. ¿Dónde está Simón?",
+        "Sí, soy yo, Tomás. ¿Dónde está el pájaro?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:questions",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Está arriba, en la oficina del director. Nadie lo puede bajar.",
+      "npcEn": "He's upstairs, in the director's office. Nobody can get him down.",
+      "intent": "Say that if he sees you, he'll come down.",
+      "accept": [
+        "Si me ve, bajará.",
+        "Tranquila. Si me ve, bajará.",
+        "Si me ve, va a bajar."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsi me ve\\b",
+          "flags": "i",
+          "label": "if he sees me: si me ve, in the present"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "si me verá"
+          ],
+          "label": "after si, no future: si me ve"
+        }
+      ],
+      "focus": "x:si-clause-no-future",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Bueno, subimos. Él habla en inglés todo el día. ¿Dónde lo aprendió?",
+      "npcEn": "All right, let's go up. He talks in English all day. Where did he learn it?",
+      "intent": "Say you suppose he learned it from you.",
+      "accept": [
+        "Supongo que lo aprendió de mí.",
+        "No sé. Supongo que lo aprendió de mí.",
+        "Supongo que lo aprendió en el café, de mí."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsupongo que\\b",
+          "flags": "i",
+          "label": "I suppose: supongo que"
+        }
+      ],
+      "focus": "c:supongo-que",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Mire, ahí está! Y dice lo mismo toda la mañana: «I'm only here for a few months».",
+      "npcEn": "Look, there he is! And he's said the same thing all morning: \"I'm only here for a few months\".",
+      "intent": "Say that phrase is yours: you said it when you arrived in Bogotá.",
+      "accept": [
+        "Esa frase es mía. La dije cuando llegué a Bogotá.",
+        "¡Es mi frase! La dije cuando llegué a Bogotá.",
+        "Esa frase es mía, la dije cuando llegué a Bogotá."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "decir",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I said it: la dije"
+        }
+      ],
+      "focus": "g:preterite-irregular-strong",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Pues el director está feliz. Dice que es un mensaje: ustedes se irán del barrio en unos meses.",
+      "npcEn": "Well, the director is delighted. He says it's a message: you'll all leave the neighbourhood in a few months.",
+      "intent": "Say no: you'll stay in La Candelaria, and the café will too.",
+      "accept": [
+        "No. Nos quedaremos en La Candelaria, y el café también.",
+        "No, me quedaré en La Candelaria. El café también se quedará.",
+        "Pues no. El café se quedará en La Candelaria, y yo también."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "futuro",
+          "label": "a promise: nos quedaremos (we will stay)"
+        }
+      ],
+      "focus": "g:future-promises",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Bueno, yo no sé nada de eso. Aquí está su pájaro. ¿Le pido un taxi?",
+      "npcEn": "Well, I don't know anything about that. Here's your bird. Shall I call you a taxi?",
+      "intent": "Say no thanks, you'd like to walk; it's close.",
+      "accept": [
+        "No, gracias. Me gustaría caminar, está cerca.",
+        "No, gracias, me gustaría ir a pie. Está cerca.",
+        "Muchas gracias, pero me gustaría caminar. Está cerca."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme gustar[ií]a\\b",
+          "flags": "i",
+          "label": "I'd like to: me gustaría"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:me-gustaria",
+    "c:me-llamo",
+    "c:no-cierto",
+    "c:no-hay-nada",
+    "c:no-se",
+    "c:pues",
+    "c:si-soy-yo",
+    "c:supongo-que",
+    "c:tranquilo",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:possessives-stressed",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:ahí",
+    "l:aprender",
+    "l:aquí",
+    "l:arriba",
+    "l:bajar",
+    "l:barrio",
+    "l:buena",
+    "l:bueno",
+    "l:café",
+    "l:caminar",
+    "l:cerca",
+    "l:decir",
+    "l:director",
+    "l:día",
+    "l:dónde",
+    "l:esperar",
+    "l:estar",
+    "l:feliz",
+    "l:frase",
+    "l:gustar",
+    "l:hablar",
+    "l:i",
+    "l:inglés",
+    "l:ir",
+    "l:irse",
+    "l:llamarse",
+    "l:llegar",
+    "l:m",
+    "l:mañana",
+    "l:mensaje",
+    "l:mes",
+    "l:mirar",
+    "l:oficina",
+    "l:pedir",
+    "l:pie",
+    "l:poder",
+    "l:pájaro",
+    "l:quedarse",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:subir",
+    "l:suponer",
+    "l:tarde",
+    "l:taxi",
+    "l:tranquilo",
+    "l:ver",
+    "p:aqui-ahi-alla",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:de-owner",
+    "p:demonstratives-basic",
+    "p:hedge-knowledge",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:preguntar-pedir",
+    "p:question-word-order",
+    "p:tambien-tampoco",
+    "p:todos-los-dias",
+    "p:transport-en"
+  ]
+}

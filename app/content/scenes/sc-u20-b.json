@@ -1,0 +1,241 @@
+{
+  "id": "sc-u20-b",
+  "unit": "u20",
+  "title": "Before the rains",
+  "brief": "You're Tomás. It's the second day without Simón, and Don Hernando has come into the café with a plan. Listen to his promise, and help him without letting him do anything silly. He's older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, mijo. Ya sé que Simón no aparece. Yo lo voy a encontrar antes de las lluvias. Se lo prometo.",
+      "npcEn": "Good morning, son. I know Simón still hasn't turned up. I'm going to find him before the rains. I promise you.",
+      "intent": "Thank him and ask when the rains will start.",
+      "accept": [
+        "Gracias, don Hernando. ¿Cuándo empezarán las lluvias?",
+        "Muchas gracias. ¿Y cuándo empezarán las lluvias?",
+        "Gracias. ¿Cuándo empezarán?"
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "empezar",
+          "tense": "futuro",
+          "label": "when will they start: empezarán"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:future-promises",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "El pronóstico dice que lloverá el viernes. Hoy es martes. Tengo tres días.",
+      "npcEn": "The forecast says it'll rain on Friday. Today is Tuesday. I've got three days.",
+      "intent": "Ask him where he will look first.",
+      "accept": [
+        "¿Y dónde buscará primero?",
+        "¿Dónde lo buscará primero?",
+        "¿Dónde buscará usted primero?"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "buscar",
+          "tense": "futuro",
+          "person": "él/ella",
+          "label": "use usted: buscará, not buscarás"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:future-promises",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Primero en la Plaza de Bolívar. Allá hay muchos pájaros. Simón tendrá amigos.",
+      "npcEn": "First in the Plaza de Bolívar. There are lots of birds there. Simón must have friends.",
+      "intent": "Guess that he's probably very hungry by now.",
+      "accept": [
+        "Ay, Simón. Ya tendrá mucha hambre.",
+        "Tendrá mucha hambre, ¿no?",
+        "Ya tendrá mucha hambre, don Hernando."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "tener",
+          "tense": "futuro",
+          "label": "a guess: tendrá hambre (he's probably hungry)"
+        }
+      ],
+      "focus": "g:future-conjecture",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Y esta noche voy a dormir en el parque, para escucharlo si grita.",
+      "npcEn": "And tonight I'm going to sleep in the park, so I can hear him if he shouts.",
+      "intent": "Tell him that if you were him, you wouldn't sleep in the park.",
+      "accept": [
+        "Yo que usted, no dormiría en el parque.",
+        "Don Hernando, yo que usted no dormiría en el parque.",
+        "No, yo que usted, no dormiría allá."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\byo que usted\\b",
+          "flags": "i",
+          "label": "if I were you, to him: yo que usted"
+        },
+        {
+          "type": "verbForm",
+          "inf": "dormir",
+          "tense": "condicional",
+          "person": "yo",
+          "label": "I wouldn't sleep: no dormiría"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Por qué no? Tengo mi chaqueta y un tinto.",
+      "npcEn": "Why not? I've got my jacket and a coffee.",
+      "intent": "Say that tonight it will be very cold.",
+      "accept": [
+        "Esta noche hará mucho frío.",
+        "Hará mucho frío esta noche, don Hernando.",
+        "Pero esta noche hará mucho frío."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "hacer",
+          "tense": "futuro",
+          "label": "a forecast: hará frío (it will be cold)"
+        }
+      ],
+      "focus": "g:future-promises",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Bueno. Tiene razón. Entonces mañana a las seis empiezo. ¿Usted viene conmigo?",
+      "npcEn": "All right. You're right. Then tomorrow I start at six. Will you come with me?",
+      "intent": "Say you'd love to, and you'll bring the coffee.",
+      "accept": [
+        "Me encantaría. Yo llevaré el tinto.",
+        "Claro, me encantaría. Llevaré el tinto.",
+        "Me encantaría, don Hernando. Llevaré el tinto."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bme encantar[ií]a\\b",
+          "flags": "i",
+          "label": "I'd love to: me encantaría"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-encantaria",
+    "c:no-cierto",
+    "c:tengo",
+    "c:tienes",
+    "c:voy-a",
+    "g:conditional",
+    "g:direct-objects",
+    "g:double-pronouns",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:si-present",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:allá",
+    "l:amigo",
+    "l:antes",
+    "l:aparecer",
+    "l:bueno",
+    "l:buscar",
+    "l:chaqueta",
+    "l:claro",
+    "l:cuándo",
+    "l:decir",
+    "l:dormir",
+    "l:día",
+    "l:dónde",
+    "l:empezar",
+    "l:encantar",
+    "l:encontrar",
+    "l:escuchar",
+    "l:frío",
+    "l:gritar",
+    "l:hacer",
+    "l:hambre",
+    "l:hoy",
+    "l:ir",
+    "l:llevar",
+    "l:llover",
+    "l:lluvia",
+    "l:martes",
+    "l:mañana",
+    "l:mijo",
+    "l:noche",
+    "l:parque",
+    "l:prometer",
+    "l:pronóstico",
+    "l:pájaro",
+    "l:qué",
+    "l:razón",
+    "l:saber",
+    "l:ser",
+    "l:tener",
+    "l:tinto",
+    "l:venir",
+    "l:viernes",
+    "p:aqui-ahi-alla",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:don-dona-nombre",
+    "p:el-agua-fria",
+    "p:hace-frio",
+    "p:ir-venir",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:tener-hambre",
+    "p:tener-razon",
+    "p:time-sequence-basic"
+  ]
+}

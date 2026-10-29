@@ -1,0 +1,229 @@
+{
+  "id": "sc-u20-a",
+  "unit": "u20",
+  "title": "The empty perch",
+  "brief": "You're Tomás. It's seven in the morning, you've just opened the café, and Simón isn't in his usual spot. Work out with Vale where he can be and what to do. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, ¿dónde está Simón? Siempre me habla cuando llego, y hoy no.",
+      "npcEn": "Tomás, where's Simón? He always talks to me when I arrive, and today he doesn't.",
+      "intent": "Say you don't know; he's probably with Don Hernando.",
+      "accept": [
+        "No sé. Estará con don Hernando.",
+        "No sé, estará con Hernando.",
+        "Estará con don Hernando, no sé."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "estar",
+          "tense": "futuro",
+          "label": "a guess: estará (he's probably), not está"
+        }
+      ],
+      "focus": "g:future-conjecture",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Con Hernando? Hernando no vino ayer. ¿Y la ventana de atrás? ¿Quién la abrió?",
+      "npcEn": "With Hernando? Hernando didn't come yesterday. And the back window? Who opened it?",
+      "intent": "Guess: maybe Simón opened it himself.",
+      "accept": [
+        "A lo mejor la abrió Simón.",
+        "A lo mejor Simón la abrió solo.",
+        "No sé. A lo mejor la abrió él."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\ba lo mejor\\b",
+          "flags": "i",
+          "label": "maybe: a lo mejor"
+        }
+      ],
+      "focus": "c:a-lo-mejor",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¡Claro, ese pájaro abre todo! ¿Y ahora qué hacemos? Tengo veinte pasteles para las diez.",
+      "npcEn": "Of course, that bird opens everything! So what do we do now? I've got twenty cakes for ten o'clock.",
+      "intent": "Promise her you'll look for him in the street.",
+      "accept": [
+        "Yo lo buscaré en la calle, te lo prometo.",
+        "Te prometo que lo buscaré en la calle.",
+        "Yo lo buscaré en la calle, Vale."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "buscar",
+          "tense": "futuro",
+          "person": "yo",
+          "label": "a promise: lo buscaré (I will look)"
+        }
+      ],
+      "focus": "g:future-promises",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Gracias. ¿Y yo qué hago? ¿Llamo a Mariana? Ella conoce a todo el mundo.",
+      "npcEn": "Thanks. And what do I do? Shall I call Mariana? She knows everybody.",
+      "intent": "Say yes: if you were her, you'd call Mariana.",
+      "accept": [
+        "Sí, yo que tú, llamaría a Mariana.",
+        "Yo que tú, la llamaría.",
+        "Sí. Yo que tú, llamaría a Mariana ya."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\byo que t[uú](?![a-z])",
+          "flags": "i",
+          "label": "if I were you: yo que tú"
+        },
+        {
+          "type": "verbFormAny",
+          "inf": "llamar",
+          "tense": "condicional",
+          "label": "I'd call: llamaría"
+        }
+      ],
+      "focus": "c:yo-que-tu",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Escuchaste? Algo hace ruido arriba. ¿Será él?",
+      "npcEn": "Did you hear that? Something's making a noise upstairs. Could it be him?",
+      "intent": "Say it could be, but it's probably the neighbour's cat.",
+      "accept": [
+        "Puede ser. Pero será el gato del vecino.",
+        "Puede ser, pero será el gato de la vecina.",
+        "Puede ser. O será el gato del vecino."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "ser",
+          "tense": "futuro",
+          "label": "a guess: será (it's probably)"
+        }
+      ],
+      "focus": "g:future-conjecture",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Sí, es el gato. Qué pena. Bueno, toma un tinto antes de salir. Lo vas a necesitar.",
+      "npcEn": "Yes, it's the cat. What a shame. Right, have a coffee before you go out. You're going to need it.",
+      "intent": "Thank her and promise you'll be back before twelve.",
+      "accept": [
+        "Gracias. Volveré antes de las doce, te lo prometo.",
+        "Muchas gracias. Volveré antes de las doce.",
+        "Gracias, Vale. Te prometo que volveré antes de las doce."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "volver",
+          "tense": "futuro",
+          "person": "yo",
+          "label": "a promise: volveré (I'll be back)"
+        }
+      ],
+      "focus": "g:future-promises",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-lo-mejor",
+    "c:ayer-anoche",
+    "c:claro-listo",
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:no-se",
+    "c:puede-ser",
+    "c:que-pena",
+    "c:te-lo-prometo",
+    "c:tengo",
+    "c:voy-vas",
+    "c:yo-que-tu",
+    "g:conditional",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:quizas-a-lo-mejor",
+    "g:ser-identity",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:abrir",
+    "l:ahora",
+    "l:antes",
+    "l:arriba",
+    "l:atrás",
+    "l:ayer",
+    "l:bueno",
+    "l:buscar",
+    "l:calle",
+    "l:claro",
+    "l:conocer",
+    "l:dónde",
+    "l:escuchar",
+    "l:estar",
+    "l:gato",
+    "l:hablar",
+    "l:hacer",
+    "l:hoy",
+    "l:ir",
+    "l:llamar",
+    "l:llegar",
+    "l:mejor",
+    "l:mundo",
+    "l:necesitar",
+    "l:pastel",
+    "l:pena",
+    "l:poder",
+    "l:prometer",
+    "l:pájaro",
+    "l:quién",
+    "l:qué",
+    "l:ruido",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:siempre",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:vecino",
+    "l:venir",
+    "l:ventana",
+    "l:volver",
+    "p:cuando-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:personal-a",
+    "p:question-word-order",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:todos-los-dias"
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "id": "sc-u20-e",
+  "unit": "u20",
+  "title": "Mariana's theory",
+  "brief": "You're Tomás. Mariana has heard about Simón and comes into the café with a theory and a notebook. Answer her, say what you think, and stop her from publishing too soon. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, ¡qué pena! Me contaron de Simón. ¿Y Vale cómo está?",
+      "npcEn": "Tomás, I'm so sorry! They told me about Simón. And how's Vale?",
+      "intent": "Say badly: she's probably crying in the kitchen.",
+      "accept": [
+        "Mal. Estará llorando en la cocina.",
+        "Mal, estará llorando en la cocina.",
+        "No muy bien. Estará llorando en la cocina."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "estar",
+          "tense": "futuro",
+          "label": "a guess: estará llorando (she's probably crying)"
+        }
+      ],
+      "focus": "g:future-conjecture",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Ay, Vale. Escucha, yo tengo una teoría. Altamira quiere el café, ¿no? Pues se llevaron a Simón para asustarlos.",
+      "npcEn": "Oh, Vale. Listen, I have a theory. Altamira wants the café, right? Well, they took Simón to scare you all.",
+      "intent": "Say it could be, but you suppose he went out of the window on his own.",
+      "accept": [
+        "Puede ser, pero supongo que se fue solo por la ventana.",
+        "Puede ser. Pero supongo que salió solo por la ventana.",
+        "Puede ser. Supongo que se fue solo por la ventana."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bsupongo que\\b",
+          "flags": "i",
+          "label": "I suppose: supongo que"
+        }
+      ],
+      "focus": "c:supongo-que",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿Solo? Tomás, por favor. Mañana voy a escribir un artículo.",
+      "npcEn": "On his own? Tomás, please. Tomorrow I'm going to write an article.",
+      "intent": "Tell her that if you were her, you wouldn't write it yet.",
+      "accept": [
+        "Yo que tú, no lo escribiría todavía.",
+        "Yo que tú, todavía no lo escribiría.",
+        "Mariana, yo que tú, no lo escribiría todavía."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "escribir",
+          "tense": "condicional",
+          "person": "yo",
+          "label": "I wouldn't write it: no lo escribiría"
+        }
+      ],
+      "focus": "c:yo-que-tu",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Por qué no? Es una historia muy buena.",
+      "npcEn": "Why not? It's a really good story.",
+      "intent": "Say that without photos, nobody would believe her.",
+      "accept": [
+        "Sin fotos, nadie te creería.",
+        "Porque sin fotos nadie te creería.",
+        "Sin fotos, nadie te creería, Mariana."
+      ],
+      "require": [
+        {
+          "type": "verbFormAny",
+          "inf": "creer",
+          "tense": "condicional",
+          "label": "nobody would believe: nadie te creería"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Tienes razón. Entonces buscaré las fotos. Las cámaras de la esquina tendrán algo.",
+      "npcEn": "You're right. Then I'll look for the photos. The cameras on the corner will probably have something.",
+      "intent": "Ask her if she could send you the photos too.",
+      "accept": [
+        "¿Me podrías mandar las fotos también?",
+        "¿Podrías mandarme las fotos a mí también?",
+        "¿Podrías mandarme las fotos también?"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "poder",
+          "tense": "condicional",
+          "person": "tú",
+          "label": "could you: podrías"
+        },
+        {
+          "type": "question",
+          "label": "ask: end with a question"
+        }
+      ],
+      "focus": "g:conditional",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Claro. Te lo prometo: esta noche te mando las fotos. Y tranquilo, Simón volverá.",
+      "npcEn": "Of course. I promise: tonight I'll send you the photos. And don't worry, Simón will come back.",
+      "intent": "Thank her and say everything will turn out fine.",
+      "accept": [
+        "Gracias, Mariana. Todo saldrá bien.",
+        "Gracias. Sí, todo va a salir bien.",
+        "Muchas gracias. Todo saldrá bien."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\btodo (saldr[aá]|va a salir) bien\\b",
+          "flags": "i",
+          "label": "everything will be fine: todo saldrá bien"
+        }
+      ],
+      "focus": "c:todo-saldra-bien",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-mi-tambien",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:como-estas",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:no-cierto",
+    "c:por-favor",
+    "c:porque",
+    "c:puede-ser",
+    "c:pues",
+    "c:que-pena",
+    "c:supongo-que",
+    "c:te-lo-prometo",
+    "c:tengo",
+    "c:tienes",
+    "c:todavia-no",
+    "c:todo-saldra-bien",
+    "c:tranquilo",
+    "c:voy-a",
+    "c:yo-que-tu",
+    "g:cause-result",
+    "g:conditional",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:future-promises",
+    "g:gender-articles",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:por-para-1",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:artículo",
+    "l:asustarse",
+    "l:bien",
+    "l:buena",
+    "l:buscar",
+    "l:café",
+    "l:claro",
+    "l:cocina",
+    "l:contar",
+    "l:creer",
+    "l:cámara",
+    "l:cómo",
+    "l:escribir",
+    "l:escuchar",
+    "l:esquina",
+    "l:estar",
+    "l:favor",
+    "l:foto",
+    "l:historia",
+    "l:ir",
+    "l:irse",
+    "l:llevarse",
+    "l:llorar",
+    "l:mal",
+    "l:mandar",
+    "l:mañana",
+    "l:noche",
+    "l:pena",
+    "l:poder",
+    "l:prometer",
+    "l:querer",
+    "l:qué",
+    "l:razón",
+    "l:salir",
+    "l:ser",
+    "l:suponer",
+    "l:tener",
+    "l:teoría",
+    "l:tranquilo",
+    "l:ventana",
+    "l:volver",
+    "p:demonstratives-basic",
+    "p:indefinites-basic",
+    "p:me-te-nos-objects",
+    "p:para-inf",
+    "p:para-inf-purpose",
+    "p:personal-a",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:request-ladder",
+    "p:te-importaria",
+    "p:tendrias-que",
+    "p:tener-razon",
+    "p:ya-todavia-basic"
+  ]
+}
