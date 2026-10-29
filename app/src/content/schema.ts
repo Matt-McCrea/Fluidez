@@ -40,6 +40,9 @@ export const GraphNode = z.object({
   // lint exempts content written for these on purpose.
   variety: z.enum(['neutral', 'peninsular', 'voseo']).default('neutral'),
   match: z.array(z.string()).optional(), // chunks: exact surface patterns the tagger matches
+  // Aligned translation pairs. Cards use these, never es/en split by hand: each
+  // pair's English is the exact translation of its Spanish.
+  forms: z.array(z.object({ es: z.string(), en: z.string() })).optional(),
   tags: z.array(z.string()).optional(),  // tagger feature keys this node owns
 });
 export type GraphNode = z.infer<typeof GraphNode>;
