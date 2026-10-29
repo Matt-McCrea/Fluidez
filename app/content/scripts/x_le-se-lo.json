@@ -1,0 +1,103 @@
+{
+  "node": "x:le-se-lo",
+  "hook": {
+    "line": "Tomás has to tell Vale he gave the money back to the shop owner. He knows *le* for to her and *la* for it, so out comes *le la di*. Every Bogotano winces: put together, *le* turns into *se*.",
+    "es": "¿La plata? Ya se la di a la señora.",
+    "en": "The money? I already gave it to the lady."
+  },
+  "examples": [
+    { "es": "¿Y Tomás? Le di la plata.", "en": "And Tomás? I gave him the money." },
+    { "es": "¿Y Tomás? Se la di ayer.", "en": "And Tomás? I gave it to him yesterday." },
+    { "es": "Les mostré las sillas.", "en": "I showed them the chairs." },
+    { "es": "Se las mostré.", "en": "I showed them to them." },
+    { "es": "¿Y Vale? ¿Le dijiste la verdad?\nSí, ya se la dije.", "en": "And Vale? Did you tell her the truth?\nYes, I already told her." },
+    { "es": "Se lo di a ella, no a él.", "en": "I gave it to her, not to him." },
+    { "es": "¿Y don Hernando? Se lo voy a decir mañana.", "en": "And don Hernando? I'm going to tell him tomorrow." }
+  ],
+  "rule": "On its own, to him or to her is *le*, and to them is *les*: *le di la plata*. But put *le* or *les* right in front of *lo*, *la*, *los* or *las*, and Spanish swaps it for *se*: *se la di*. Never *le la*, never *le lo*. It's only a sound thing; the meaning doesn't change.\n\nSo this *se* covers a lot: to him, to her, to you (*usted*), to them, to you all. Usually the conversation makes it clear. When it doesn't, add who at the end: *se lo di a ella*, *se lo doy a usted*.\n\nOnly *le* and *les* change. *Me lo*, *te lo* and *nos lo* stay as they are.\n\nThe pair still moves together: *se lo voy a decir* or *voy a decírselo*.",
+  "smallPrint": "Teachers sometimes call this the false *se* (*se espurio*): it's just *le* or *les* in disguise, nothing to do with the *se* in *se llama*.",
+  "readAndPick": [
+    { "es": "Le di la plata.", "options": ["I gave him the money.", "I gave it to him."], "answer": 0 },
+    { "es": "Se la di.", "options": ["I gave him the money.", "I gave it to him.", "He gave it to me."], "answer": 1 },
+    { "es": "Se lo di a ella, no a él.", "options": ["I gave it to him, not to her.", "I gave it to her, not to him."], "answer": 1 },
+    { "es": "Les mostré las sillas.", "options": ["I showed them the chairs.", "I showed them to them."], "answer": 0 },
+    { "es": "Se las mostré.", "options": ["I showed them the chairs.", "I showed them to them."], "answer": 1 },
+    { "es": "Se lo doy a usted.", "options": ["I'll give it to you. (formal)", "I'll give it to him.", "You'll give it to me. (formal)"], "answer": 0 },
+    { "es": "¿Se la muestro?", "options": ["Will you show it to me? (formal)", "Shall I show it to you? (formal)"], "answer": 1 },
+    { "es": "¿Y Mariana? Se lo pregunté ayer.", "options": ["And Mariana? She asked me yesterday.", "And Mariana? I asked her yesterday."], "answer": 1 },
+    { "es": "Ya se lo pagué.", "options": ["I already paid it to him.", "He already paid it to me."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *le* or *se* and type the whole sentence: ¿Y Tomás? ___ di la plata ayer. (And Tomás? I gave him the money yesterday.)",
+      "answer": "¿Y Tomás? Le di la plata ayer.",
+      "accept": [],
+      "why": "The money is named, so there's no *lo* or *la* next to it: plain *le*."
+    },
+    {
+      "prompt": "Choose *le* or *se* and type the whole sentence: ¿La plata? Ya ___ la di. (The money? I already gave it to him.)",
+      "answer": "¿La plata? Ya se la di.",
+      "accept": [],
+      "why": "Right in front of *la*, *le* turns into *se*."
+    },
+    {
+      "prompt": "Say: I gave it to her, not to him. (it = *el libro*)",
+      "answer": "Se lo di a ella, no a él.",
+      "accept": [],
+      "why": "*Se lo* for it to someone, then *a ella* and *a él* make clear who."
+    },
+    {
+      "prompt": "Ask a customer (formal): Shall I show it to you? (the jacket, *la chaqueta*)",
+      "answer": "¿Se la muestro?",
+      "accept": ["¿Se la muestro a usted?"],
+      "why": "To you (*usted*) is *le*, and next to *la* it becomes *se*."
+    },
+    {
+      "prompt": "Say: And don Hernando? I'm going to tell him tomorrow. (use *decir* and *lo*)",
+      "answer": "¿Y don Hernando? Se lo voy a decir mañana.",
+      "accept": ["¿Y don Hernando? Voy a decírselo mañana."],
+      "why": "To him plus it: *se lo*, together in front of *voy* or glued onto *decir*."
+    },
+    {
+      "prompt": "Swap the money for a little word: *Le di la plata.*",
+      "answer": "Se la di.",
+      "accept": [],
+      "why": "*La plata* becomes *la*, and *le* in front of it becomes *se*."
+    },
+    {
+      "prompt": "Swap the chairs for a little word: *Les mostré las sillas.*",
+      "answer": "Se las mostré.",
+      "accept": [],
+      "why": "*Les* becomes *se* too, with no plural: *se las*."
+    },
+    {
+      "prompt": "Move the pair to the end: *Se lo voy a decir mañana.*",
+      "answer": "Voy a decírselo mañana.",
+      "accept": [],
+      "why": "Glued on together, with an accent to keep the stress: *decírselo*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Le lo di.",
+      "right": "Se lo di.",
+      "why": "Almost. *Le* can't sit in front of *lo*: it turns into *se*."
+    },
+    {
+      "wrong": "Les las mostré.",
+      "right": "Se las mostré.",
+      "why": "*Les* changes too, and this *se* has no plural: just *se*."
+    },
+    {
+      "wrong": "Lo le di.",
+      "right": "Se lo di.",
+      "why": "The person goes first, and next to *lo* the person is *se*."
+    },
+    {
+      "wrong": "Le voy a decirlo.",
+      "right": "Se lo voy a decir.",
+      "why": "The pair never splits across the two verbs, and together *le* is *se*."
+    }
+  ],
+  "personal": "Think of something you gave someone recently. Say it twice: first with the thing named (*Le di…*), then with the little word (*Se lo di…* or *Se la di…*)."
+}

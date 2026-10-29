@@ -1,0 +1,97 @@
+{
+  "node": "g:double-pronouns",
+  "hook": {
+    "line": "In a shop you hear it all day: can I try it on, I'll explain it to you, will you lend it to me. Spanish says the it and the to me with two little words, side by side, in front of the verb.",
+    "es": "¿Me la puedo medir?",
+    "en": "Can I try it on? (a shirt)"
+  },
+  "examples": [
+    { "es": "¿Me lo prestas?", "en": "Will you lend it to me? (to a friend)" },
+    { "es": "Te lo explico.", "en": "I'll explain it to you. (to a friend)" },
+    { "es": "¿El saco? Me lo regaló mi abuela.", "en": "The jacket? My grandmother gave it to me." },
+    { "es": "¿Las llaves? Te las dejo en la mesa.", "en": "The keys? I'll leave them for you on the table." },
+    { "es": "Nos los vendieron muy baratos.", "en": "They sold them to us really cheap." },
+    { "es": "¿La cuenta? Se la di a don Hernando.", "en": "The bill? I gave it to don Hernando." },
+    { "es": "Te lo voy a dar mañana.", "en": "I'm going to give it to you tomorrow." }
+  ],
+  "rule": "Look at the order: the person first, then the thing. *Me lo* is it to me, *te la* is it to you, *nos los* is them to us. Never the other way round: not *lo me*.\n\nThe thing word still follows the thing: *lo* for *el saco*, *la* for *la cuenta*, *los* and *las* for more than one.\n\nOne swap: *le* and *les* can't sit in front of *lo* or *la*. They turn into *se*: *se la di* is I gave it to him (or to her, or to them). That gets its own lesson next.\n\nWith two verbs, the pair travels together, like any little word: *Te lo voy a dar* or *Voy a dártelo*. Glued on, it needs an accent to keep the stress where it was: *dártelo*.",
+  "smallPrint": "Teachers call these combined object pronouns: an indirect object (*me*, *te*, *se*, *nos*) followed by a direct object (*lo*, *la*, *los*, *las*).",
+  "readAndPick": [
+    { "es": "Te lo explico.", "options": ["You'll explain it to me.", "I'll explain it to you."], "answer": 1 },
+    { "es": "¿Me lo prestas?", "options": ["Will you lend it to me?", "Shall I lend it to you?"], "answer": 0 },
+    { "es": "¿El saco? Me lo regaló mi abuela.", "options": ["The jacket? My grandmother gave it to me.", "The jacket? I gave it to my grandmother."], "answer": 0 },
+    { "es": "¿Las llaves? Te las dejo en la mesa.", "options": ["The keys? I'll leave it for you on the table.", "The keys? I'll leave them for you on the table.", "The keys? You leave them for me on the table."], "answer": 1 },
+    { "es": "Nos los vendieron muy baratos.", "options": ["They sold them to me really cheap.", "They sold it to us really cheap.", "They sold them to us really cheap."], "answer": 2 },
+    { "es": "¿La cuenta? Se la di a don Hernando.", "options": ["The bill? I gave it to don Hernando.", "The bill? Don Hernando gave it to me."], "answer": 0 },
+    { "es": "¿Quién te la vendió?", "options": ["Who did you sell it to?", "Who sold it to you?"], "answer": 1 },
+    { "es": "Te lo voy a dar mañana.", "options": ["You're going to give it to me tomorrow.", "I'm going to give it to you tomorrow."], "answer": 1 },
+    { "es": "Voy a mostrárselo.", "options": ["I'm going to show it to him.", "He's going to show it to me."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *te lo* or *lo te* and type the whole sentence: ¿El precio? Ya ___ dije. (The price? I already told you.)",
+      "answer": "¿El precio? Ya te lo dije.",
+      "accept": [],
+      "why": "Person first, then the thing: *te lo*."
+    },
+    {
+      "prompt": "Choose *me la* or *me lo* and type the whole sentence: ¿La chaqueta? ¿___ prestas? (The jacket? Will you lend it to me?)",
+      "answer": "¿La chaqueta? ¿Me la prestas?",
+      "accept": [],
+      "why": "*La chaqueta* is a *la* word, so it to me is *me la*."
+    },
+    {
+      "prompt": "Ask a friend: Will you lend it to me? (a book, *el libro*)",
+      "answer": "¿Me lo prestas?",
+      "accept": [],
+      "why": "To me is *me*, the book is *lo*, and *me* goes first."
+    },
+    {
+      "prompt": "Say to a friend: I'll explain it to you.",
+      "answer": "Te lo explico.",
+      "accept": [],
+      "why": "To you is *te*, it is *lo*, both in front of the verb."
+    },
+    {
+      "prompt": "Say: My grandmother gave them to me as a present. (the boots, *las botas*)",
+      "answer": "Me las regaló mi abuela.",
+      "accept": ["Mi abuela me las regaló."],
+      "why": "*Las botas* are *las*, and to me comes first: *me las*."
+    },
+    {
+      "prompt": "Move the pair to the end: *Te lo voy a dar mañana.*",
+      "answer": "Voy a dártelo mañana.",
+      "accept": [],
+      "why": "The pair moves together onto *dar*, and the accent keeps the stress: *dártelo*."
+    },
+    {
+      "prompt": "Make it about us instead of me: *Me los vendieron muy baratos.*",
+      "answer": "Nos los vendieron muy baratos.",
+      "accept": [],
+      "why": "To us is *nos*; the thing word *los* stays the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Lo te doy.",
+      "right": "Te lo doy.",
+      "why": "Almost. The person comes first, then the thing: *te lo*."
+    },
+    {
+      "wrong": "Le lo di.",
+      "right": "Se lo di.",
+      "why": "*Le* can't sit in front of *lo*; it turns into *se*."
+    },
+    {
+      "wrong": "Te voy a darlo.",
+      "right": "Te lo voy a dar.",
+      "why": "The pair never splits: both in front, or both glued on (*voy a dártelo*)."
+    },
+    {
+      "wrong": "Voy a dartelo.",
+      "right": "Voy a dártelo.",
+      "why": "Two little words on the end move the stress, so *dártelo* needs its accent."
+    }
+  ],
+  "personal": "Think of something someone gave you or lent you. Say who, with the pair in front: *Me lo regaló…* or *Me la prestó…*"
+}
