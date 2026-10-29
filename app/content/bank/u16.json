@@ -476,18 +476,21 @@
   },
   {
     "id": "u16-0023",
-    "es": "¿De qué material es el suéter?",
-    "en": "What material is the sweater?",
+    "es": "El suéter es de lana, pero el material es malo.",
+    "en": "The sweater is wool, but the material is poor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:lana",
+      "l:malo",
       "l:material",
-      "l:qué",
       "l:ser",
       "l:suéter",
-      "p:prep-questions-basic",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:estar-hecho-de",
       "p:ser-de-material"
     ],
     "targets": [
@@ -495,7 +498,7 @@
       "l:suéter",
       "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "clothes shop basics",
     "source": "gen"
@@ -1390,18 +1393,21 @@
   },
   {
     "id": "u16-0062",
-    "es": "Cargan la camisa a mi tarjeta.",
-    "en": "They charge the shirt to my card.",
+    "es": "Tomás tiene que cargar las camisas, y Vale paga.",
+    "en": "Tomás has to carry the shirts, and Vale pays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
       "g:present-ar",
+      "g:stem-boot",
+      "g:verb-infinitive",
       "l:camisa",
       "l:cargar",
-      "l:tarjeta",
-      "p:cargar-descargar",
-      "p:possessives-basic"
+      "l:pagar",
+      "l:tener",
+      "p:cargar-descargar"
     ],
     "targets": [
       "l:camisa",
@@ -1658,7 +1664,7 @@
   {
     "id": "u16-0074",
     "es": "La ropa nacional es más barata.",
-    "en": "National clothing is cheaper.",
+    "en": "Colombian-made clothes are cheaper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1682,7 +1688,7 @@
   {
     "id": "u16-0075",
     "es": "La ropa internacional es mucho más cara.",
-    "en": "International clothing is much more expensive.",
+    "en": "Clothes from abroad are much more expensive.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1972,16 +1978,17 @@
   },
   {
     "id": "u16-0088",
-    "es": "¿Por qué? Solo estoy mirando.",
-    "en": "Why? I'm just looking.",
+    "es": "Tranquilo, joven, solo estoy mirando.",
+    "en": "It's fine, young man, I'm just looking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:solo-estoy-mirando",
+      "c:tranquilo",
       "l:estar",
+      "l:joven",
       "l:mirar",
-      "l:qué",
-      "p:prep-questions-basic"
+      "l:tranquilo"
     ],
     "targets": [
       "c:solo-estoy-mirando"
@@ -5185,17 +5192,21 @@
   },
   {
     "id": "u16-0216",
-    "es": "A Vale le parece muy caro.",
-    "en": "It seems very expensive to Vale.",
+    "es": "A Vale le parece que el vendedor habla demasiado.",
+    "en": "Vale thinks the salesman talks too much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:gustar-full",
       "g:parecer-quedar",
+      "g:present-ar",
       "g:present-er-ir",
-      "l:caro",
+      "g:quantifiers",
+      "g:that-clauses",
+      "l:hablar",
       "l:parecer",
-      "p:quantifiers-basic"
+      "l:vendedor"
     ],
     "targets": [
       "g:parecer-quedar"
@@ -5229,16 +5240,18 @@
   },
   {
     "id": "u16-0218",
-    "es": "A ellos les parece barato.",
-    "en": "It seems cheap to them.",
+    "es": "A los turistas todo les parece barato.",
+    "en": "Everything seems cheap to the tourists.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:gustar-full",
       "g:parecer-quedar",
       "g:present-er-ir",
       "l:barato",
-      "l:parecer"
+      "l:parecer",
+      "l:turista"
     ],
     "targets": [
       "g:parecer-quedar"
@@ -8391,7 +8404,7 @@
   {
     "id": "u16-0354",
     "es": "¿Me lo dice mañana?",
-    "en": "Will you tell me tomorrow?",
+    "en": "Will you tell me tomorrow? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8437,7 +8450,7 @@
   {
     "id": "u16-0356",
     "es": "¿Me los devuelve mañana?",
-    "en": "Will you give them back to me tomorrow?",
+    "en": "Will you give them back to me tomorrow? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8933,14 +8946,16 @@
   },
   {
     "id": "u16-0379",
-    "es": "Se lo enseñé a Tomás.",
-    "en": "I showed it to Tomás.",
+    "es": "¿El carro? Se lo presté a Tomás.",
+    "en": "The car? I lent it to Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:double-pronouns",
+      "g:gender-articles",
       "g:preterite-ar",
-      "l:enseñar"
+      "l:carro",
+      "l:prestar"
     ],
     "targets": [
       "g:double-pronouns"
@@ -8952,15 +8967,15 @@
   },
   {
     "id": "u16-0380",
-    "es": "Se lo enseño a usted ahora.",
-    "en": "I'll show it to you now. (polite)",
+    "es": "Ya se lo muestro, señora.",
+    "en": "I'll show it to you right away, madam.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:double-pronouns",
-      "g:present-ar",
-      "l:ahora",
-      "l:enseñar"
+      "g:stem-boot",
+      "l:mostrar",
+      "l:señora"
     ],
     "targets": [
       "g:double-pronouns"
@@ -9159,7 +9174,7 @@
   {
     "id": "u16-0390",
     "es": "Se la dejo en la mesa.",
-    "en": "I'll leave it for you on the table.",
+    "en": "I'll leave it for you on the table. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10781,8 +10796,8 @@
   },
   {
     "id": "u16-0459",
-    "es": "¿Cuál vas a llevar?\nLa chaqueta gris.",
-    "en": "Which one are you going to wear?\nThe grey jacket.",
+    "es": "¿Cuál chaqueta vas a llevar?\nLa gris, la de lana.",
+    "en": "Which jacket are you going to take?\nThe grey one, the wool one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10794,7 +10809,11 @@
       "l:cuál",
       "l:gris",
       "l:ir",
-      "l:llevar"
+      "l:lana",
+      "l:llevar",
+      "p:el-azul",
+      "p:el-rojo-la-grande",
+      "p:los-de-la-camiseta"
     ],
     "targets": [
       "l:chaqueta",
@@ -11223,19 +11242,20 @@
   },
   {
     "id": "u16-0478",
-    "es": "Quiero una camisa roja oscura.",
+    "es": "Quiero una camisa rojo oscuro.",
     "en": "I want a dark red shirt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quiero",
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:stem-boot",
       "l:camisa",
       "l:oscuro",
       "l:querer",
       "l:rojo",
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
       "p:colour-claro-oscuro"
     ],
     "targets": [
@@ -11576,7 +11596,7 @@
   {
     "id": "u16-0492",
     "es": "El rosado me parece muy claro.",
-    "en": "The pink looks too light to me.",
+    "en": "The pink one seems very light to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11853,18 +11873,19 @@
   },
   {
     "id": "u16-0503",
-    "es": "¿De qué material es el bolso?",
-    "en": "What material is the bag?",
+    "es": "El bolso no es de cuero: el material es plástico.",
+    "en": "The bag isn't leather: the material is plastic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:bolso",
+      "l:cuero",
       "l:material",
-      "l:qué",
+      "l:plástico",
       "l:ser",
-      "p:prep-questions-basic",
+      "p:estar-hecho-de",
       "p:ser-de-material"
     ],
     "targets": [
@@ -11872,7 +11893,7 @@
       "l:material",
       "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "colours, clothes and materials",
     "source": "gen"
@@ -11977,83 +11998,94 @@
   },
   {
     "id": "u16-0508",
-    "es": "¿De qué son las medias?",
-    "en": "What are the socks made of?",
+    "es": "Las medias de lana son para el frío de Bogotá.",
+    "en": "The wool socks are for the Bogotá cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:frío",
+      "l:lana",
       "l:media",
-      "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:para-inf"
     ],
     "targets": [
       "l:media"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "colours, clothes and materials",
     "source": "gen"
   },
   {
     "id": "u16-0509",
-    "es": "¿De qué es la mesa?",
-    "en": "What is the table made of?",
+    "es": "La mesa no es de plástico, ¿verdad?",
+    "en": "The table isn't plastic, is it?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:gender-articles",
       "g:ser-identity",
       "l:mesa",
-      "l:qué",
+      "l:plástico",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:verdad",
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "colours, clothes and materials",
     "source": "gen"
   },
   {
     "id": "u16-0510",
-    "es": "¿De qué es la mochila?",
-    "en": "What is the backpack made of?",
+    "es": "Mi mochila es de tela y tiene diez años.",
+    "en": "My backpack is made of fabric and it's ten years old.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:tienes",
       "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
       "l:mochila",
-      "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:tela",
+      "l:tener",
+      "p:estar-hecho-de",
+      "p:possessives-basic",
+      "p:ser-de-material",
+      "p:tener-anos"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "colours, clothes and materials",
     "source": "gen"
   },
   {
     "id": "u16-0511",
-    "es": "¿De qué es esta bolsa?",
-    "en": "What is this bag made of?",
+    "es": "¿Esta bolsa es de papel o de plástico?",
+    "en": "Is this bag paper or plastic?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
       "l:bolsa",
-      "l:qué",
+      "l:papel",
+      "l:plástico",
       "l:ser",
       "p:demonstratives-basic",
-      "p:prep-questions-basic",
-      "p:question-word-order",
+      "p:estar-hecho-de",
       "p:ser-de-material"
     ],
     "targets": [
@@ -12087,23 +12119,24 @@
   },
   {
     "id": "u16-0513",
-    "es": "¿De qué material es la silla?",
-    "en": "What material is the chair?",
+    "es": "Para las sillas del café, ¿qué material es mejor?",
+    "en": "For the café chairs, which material is better?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:questions",
       "g:ser-identity",
+      "l:café",
       "l:material",
+      "l:mejor",
       "l:qué",
       "l:ser",
       "l:silla",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "p:para-inf"
     ],
     "targets": [
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
     "kind": "question",
     "unit": "u16",
@@ -12112,26 +12145,27 @@
   },
   {
     "id": "u16-0514",
-    "es": "¿De qué material son las botas?",
-    "en": "What material are the boots?",
+    "es": "Las botas son baratas porque el material no es cuero.",
+    "en": "The boots are cheap because the material isn't leather.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:porque",
+      "g:adjective-agreement",
+      "g:cause-result",
       "g:gender-articles",
       "g:ser-identity",
+      "l:barato",
       "l:bota",
+      "l:cuero",
       "l:material",
-      "l:qué",
-      "l:ser",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "l:ser"
     ],
     "targets": [
       "l:bota",
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "colours, clothes and materials",
     "source": "gen"
@@ -12878,11 +12912,12 @@
   },
   {
     "id": "u16-0545",
-    "es": "Cambié de carro por uno más grande.",
-    "en": "I changed to a bigger car.",
+    "es": "Cambié el carro por uno más grande.",
+    "en": "I traded the car for a bigger one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:preterite-ar",
       "l:cambiar",
       "l:carro",
@@ -12922,15 +12957,17 @@
   },
   {
     "id": "u16-0547",
-    "es": "Necesito cambiar de color.",
-    "en": "I need to change colour.",
+    "es": "En un minuto, el cielo cambió de color.",
+    "en": "In a minute, the sky changed colour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:present-ar",
+      "g:gender-articles",
+      "g:preterite-ar",
       "l:cambiar",
+      "l:cielo",
       "l:color",
-      "l:necesitar",
+      "l:minuto",
       "p:cambiar-de-por"
     ],
     "targets": [
@@ -13212,7 +13249,7 @@
   {
     "id": "u16-0560",
     "es": "Se lo cambio por otro.",
-    "en": "I'll exchange it for another one for you.",
+    "en": "I'll exchange it for another one for you. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13508,16 +13545,16 @@
   },
   {
     "id": "u16-0573",
-    "es": "No acepto devoluciones sin la tarjeta.",
-    "en": "I don't accept returns without the card.",
+    "es": "No aceptamos devoluciones sin recibo.",
+    "en": "We don't accept returns without a receipt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
       "l:aceptar",
       "l:devolución",
-      "l:tarjeta"
+      "l:recibo",
+      "p:con-sin"
     ],
     "targets": [],
     "kind": "statement",
@@ -13527,14 +13564,15 @@
   },
   {
     "id": "u16-0574",
-    "es": "Tienen una semana para devolver el producto.",
-    "en": "You have a week to return the product.",
+    "es": "Los clientes tienen una semana para devolver un producto.",
+    "en": "Customers have a week to return a product.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
       "g:stem-boot",
+      "l:cliente",
       "l:devolver",
       "l:producto",
       "l:semana",
@@ -13738,16 +13776,19 @@
   },
   {
     "id": "u16-0583",
-    "es": "Me gusta tu conversación, Hernando.",
-    "en": "I like your conversation, Hernando.",
+    "es": "Don Hernando le saca conversación a todo el mundo.",
+    "en": "Don Hernando strikes up a conversation with everyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
-      "g:gustar-basic",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:present-ar",
       "l:conversación",
-      "l:gustar",
-      "p:possessives-basic"
+      "l:mundo",
+      "l:sacar",
+      "p:senor-don-article",
+      "p:todos-los-dias"
     ],
     "targets": [
       "l:conversación"
@@ -13983,7 +14024,7 @@
   {
     "id": "u16-0594",
     "es": "Detienen a un hombre en la plaza.",
-    "en": "They stop a man in the square.",
+    "en": "They arrest a man in the square.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14300,7 +14341,7 @@
   {
     "id": "u16-0608",
     "es": "Compro café nacional en el mercado.",
-    "en": "I buy national coffee at the market.",
+    "en": "I buy Colombian coffee at the market.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15376,7 +15417,7 @@
   {
     "id": "u16-0656",
     "es": "El almacén vende ropa nacional e internacional.",
-    "en": "The store sells national and international clothing.",
+    "en": "The store sells Colombian and international clothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15912,7 +15953,7 @@
   {
     "id": "u16-0680",
     "es": "Tranquila, solo estoy mirando.",
-    "en": "It's fine, I'm just looking. (a woman speaking)",
+    "en": "Don't worry, I'm just looking. (to a woman)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15932,12 +15973,15 @@
   },
   {
     "id": "u16-0681",
-    "es": "Solo estoy mirando, pero gracias.",
-    "en": "I'm just looking, but thanks.",
+    "es": "Ahorita no, solo estoy mirando.",
+    "en": "Not right now, I'm just looking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ahorita",
       "c:solo-estoy-mirando",
+      "g:diminutives",
+      "l:ahorita",
       "l:estar",
       "l:mirar"
     ],
@@ -16545,13 +16589,15 @@
   },
   {
     "id": "u16-0708",
-    "es": "¿Efectivo o tarjeta? Con tarjeta.",
-    "en": "Cash or card? By card.",
+    "es": "¿Efectivo o tarjeta?\nCon tarjeta débito, por favor.",
+    "en": "Cash or card?\nBy debit card, please.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:por-favor",
       "c:tarjeta-o-efectivo",
       "l:efectivo",
+      "l:favor",
       "l:tarjeta"
     ],
     "targets": [
@@ -16587,14 +16633,17 @@
   },
   {
     "id": "u16-0710",
-    "es": "¿Efectivo o tarjeta?\nTarjeta.",
-    "en": "Cash or card?\nCard.",
+    "es": "¿Efectivo o tarjeta?\nEfectivo. No tengo tarjeta.",
+    "en": "Cash or card?\nCash. I don't have a card.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tarjeta-o-efectivo",
+      "c:tengo",
+      "g:yo-irregular",
       "l:efectivo",
-      "l:tarjeta"
+      "l:tarjeta",
+      "l:tener"
     ],
     "targets": [
       "c:tarjeta-o-efectivo",
@@ -17167,17 +17216,21 @@
   },
   {
     "id": "u16-0736",
-    "es": "¿Lo tiene en otra talla más grande?",
-    "en": "Do you have it in a bigger size? (polite)",
+    "es": "¿Lo tiene en otra talla? Esta me queda grande.",
+    "en": "Do you have it in another size? This one is too big for me. (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tiene-otra-talla",
       "c:tienes",
+      "g:parecer-quedar",
+      "g:present-ar",
       "g:stem-boot",
       "l:grande",
+      "l:quedar",
       "l:talla",
-      "l:tener"
+      "l:tener",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "c:tiene-otra-talla",
@@ -17415,305 +17468,320 @@
   },
   {
     "id": "u16-0746",
-    "es": "¿De qué color es la camisa de Vale?",
-    "en": "What colour is Vale's shirt?",
+    "es": "Vale tiene una camisa verde oscuro.",
+    "en": "Vale has a dark green shirt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
       "l:camisa",
-      "l:color",
-      "l:qué",
-      "l:ser",
-      "p:colour-claro-oscuro",
-      "p:prep-questions-basic"
+      "l:oscuro",
+      "l:tener",
+      "l:verde",
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
+      "p:colour-claro-oscuro"
     ],
     "targets": [
       "l:camisa",
-      "l:color",
+      "l:verde",
       "p:colour-claro-oscuro"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0747",
-    "es": "¿De qué color es el sillón?",
-    "en": "What colour is the armchair?",
+    "es": "El color del sillón es morado oscuro.",
+    "en": "The armchair's colour is dark purple.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:color",
-      "l:qué",
+      "l:morado",
+      "l:oscuro",
       "l:ser",
       "l:sillón",
-      "p:colour-claro-oscuro",
-      "p:prep-questions-basic"
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
+      "p:colour-claro-oscuro"
     ],
     "targets": [
       "l:color",
       "p:colour-claro-oscuro"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0748",
-    "es": "¿De qué color es tu mochila?",
-    "en": "What colour is your backpack?",
+    "es": "Mi mochila era azul oscuro, pero ahora tiene otro color.",
+    "en": "My backpack was dark blue, but now it's a different colour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
+      "c:tienes",
+      "g:imperfect-states",
       "g:ser-identity",
+      "g:stem-boot",
+      "l:ahora",
+      "l:azul",
       "l:color",
       "l:mochila",
-      "l:qué",
+      "l:oscuro",
       "l:ser",
+      "l:tener",
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
       "p:colour-claro-oscuro",
-      "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:otro-no-article",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:color",
       "p:colour-claro-oscuro"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0749",
-    "es": "¿De qué color es el uniforme?",
-    "en": "What colour is the uniform?",
+    "es": "Para el uniforme, Vale quiere un color oscuro.",
+    "en": "For the uniform, Vale wants a dark colour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
       "l:color",
-      "l:qué",
-      "l:ser",
+      "l:oscuro",
+      "l:querer",
       "l:uniforme",
-      "p:colour-claro-oscuro",
-      "p:prep-questions-basic"
+      "p:para-inf"
     ],
     "targets": [
-      "l:color",
-      "p:colour-claro-oscuro"
+      "l:color"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0750",
-    "es": "¿De qué color es la puerta del café?",
-    "en": "What colour is the café door?",
+    "es": "El color de la puerta del café es azul claro.",
+    "en": "The colour of the café door is light blue.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
       "g:gender-articles",
       "g:ser-identity",
+      "l:azul",
       "l:café",
+      "l:claro",
       "l:color",
       "l:puerta",
-      "l:qué",
       "l:ser",
-      "p:colour-claro-oscuro",
-      "p:prep-questions-basic"
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
+      "p:colour-claro-oscuro"
     ],
     "targets": [
       "l:color",
       "p:colour-claro-oscuro"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0751",
-    "es": "¿De qué color son los ojos de Simón?",
-    "en": "What colour are Simón's eyes?",
+    "es": "Los ojos de Simón tienen un color café oscuro.",
+    "en": "Simón's eyes are a dark brown colour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
+      "l:café",
       "l:color",
       "l:ojo",
-      "l:qué",
-      "l:ser",
-      "p:colour-claro-oscuro",
-      "p:prep-questions-basic"
+      "l:oscuro",
+      "l:tener",
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
+      "p:colour-claro-oscuro"
     ],
     "targets": [
       "l:color",
       "p:colour-claro-oscuro"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0752",
-    "es": "¿De qué color son tus medias?",
-    "en": "What colour are your socks?",
+    "es": "Tus medias son de dos colores distintos.",
+    "en": "Your socks are two different colours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:ser-identity",
       "l:color",
+      "l:distinto",
       "l:media",
-      "l:qué",
       "l:ser",
-      "p:colour-claro-oscuro",
-      "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:color",
-      "l:media",
-      "p:colour-claro-oscuro"
+      "l:media"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0753",
-    "es": "¿De qué color son las paredes?",
-    "en": "What colour are the walls?",
+    "es": "Vamos a pintar las paredes de un color más claro.",
+    "en": "We're going to paint the walls a lighter colour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
+      "c:vamos-a",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:ir-a-plans",
+      "l:claro",
       "l:color",
+      "l:ir",
       "l:pared",
-      "l:qué",
-      "l:ser",
-      "p:colour-claro-oscuro",
-      "p:prep-questions-basic"
+      "l:pintar"
     ],
     "targets": [
-      "l:color",
-      "p:colour-claro-oscuro"
+      "l:color"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0754",
-    "es": "¿De qué color es el taxi de Hernando?",
-    "en": "What colour is Hernando's taxi?",
+    "es": "El taxi de Hernando es amarillo, el color de todos los taxis.",
+    "en": "Hernando's taxi is yellow, the colour of all taxis.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:amarillo",
       "l:color",
-      "l:qué",
       "l:ser",
-      "l:taxi",
-      "p:colour-claro-oscuro",
-      "p:prep-questions-basic"
+      "l:taxi"
     ],
     "targets": [
-      "l:color",
-      "p:colour-claro-oscuro"
+      "l:color"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0755",
-    "es": "¿De qué color es el bolso de Mariana?",
-    "en": "What colour is Mariana's bag?",
+    "es": "Mariana compró el mismo bolso en dos colores.",
+    "en": "Mariana bought the same bag in two colours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:preterite-ar",
       "l:bolso",
       "l:color",
-      "l:qué",
-      "l:ser",
-      "p:colour-claro-oscuro",
-      "p:prep-questions-basic"
+      "l:comprar"
     ],
     "targets": [
       "l:bolso",
-      "l:color",
-      "p:colour-claro-oscuro"
+      "l:color"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0756",
-    "es": "¿De qué color es la taza?",
-    "en": "What colour is the cup?",
+    "es": "Me gusta el color de esta taza: es verde claro.",
+    "en": "I like the colour of this cup: it's light green.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
+      "c:me-gusta",
       "g:gender-articles",
+      "g:gustar-basic",
       "g:ser-identity",
+      "l:claro",
       "l:color",
-      "l:qué",
+      "l:gustar",
       "l:ser",
       "l:taza",
+      "l:verde",
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
       "p:colour-claro-oscuro",
-      "p:prep-questions-basic"
+      "p:demonstratives-basic"
     ],
     "targets": [
       "l:color",
       "p:colour-claro-oscuro"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0757",
-    "es": "¿De qué color es esa chaqueta?",
-    "en": "What colour is that jacket?",
+    "es": "Esa chaqueta tiene un color muy bonito.",
+    "en": "That jacket is a really nice colour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:demonstratives",
-      "g:ser-identity",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:bonito",
       "l:chaqueta",
       "l:color",
-      "l:qué",
-      "l:ser",
-      "p:colour-claro-oscuro",
-      "p:prep-questions-basic"
+      "l:tener",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:chaqueta",
-      "l:color",
-      "p:colour-claro-oscuro"
+      "l:color"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
@@ -17772,19 +17840,22 @@
   },
   {
     "id": "u16-0760",
-    "es": "¿De qué color te gusta más?",
-    "en": "What colour do you like most? (to a friend)",
+    "es": "¿Qué color te gusta más, el gris o el negro?",
+    "en": "Which colour do you like better, grey or black? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
+      "g:gender-articles",
       "g:gustar-basic",
+      "g:questions",
       "l:color",
+      "l:gris",
       "l:gustar",
+      "l:negro",
       "l:qué",
       "p:colour-claro-oscuro",
-      "p:gustar-mas-que",
-      "p:prep-questions-basic"
+      "p:gustar-mas-que"
     ],
     "targets": [
       "l:color",
@@ -17797,25 +17868,27 @@
   },
   {
     "id": "u16-0761",
-    "es": "¿De qué color es tu casa?",
-    "en": "What colour is your house?",
+    "es": "Mi casa es blanca, pero quiero otro color.",
+    "en": "My house is white, but I want another colour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:quiero",
+      "g:adjective-agreement",
       "g:ser-identity",
+      "g:stem-boot",
+      "l:blanco",
       "l:casa",
       "l:color",
-      "l:qué",
+      "l:querer",
       "l:ser",
-      "p:colour-claro-oscuro",
-      "p:possessives-basic",
-      "p:prep-questions-basic"
+      "p:otro-no-article",
+      "p:possessives-basic"
     ],
     "targets": [
-      "l:color",
-      "p:colour-claro-oscuro"
+      "l:color"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
@@ -17850,8 +17923,8 @@
   },
   {
     "id": "u16-0763",
-    "es": "¿De qué color es el cielo hoy?",
-    "en": "What colour is the sky today?",
+    "es": "Hoy el cielo de Bogotá es gris oscuro, el color de siempre.",
+    "en": "Today the Bogotá sky is dark grey, the usual colour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17859,17 +17932,21 @@
       "g:ser-identity",
       "l:cielo",
       "l:color",
+      "l:gris",
       "l:hoy",
-      "l:qué",
+      "l:oscuro",
       "l:ser",
+      "l:siempre",
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
       "p:colour-claro-oscuro",
-      "p:prep-questions-basic"
+      "p:frequency-scale"
     ],
     "targets": [
       "l:color",
       "p:colour-claro-oscuro"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
@@ -18050,8 +18127,8 @@
   },
   {
     "id": "u16-0770",
-    "es": "Tengo una camisa en otro color.",
-    "en": "I have a shirt in another colour.",
+    "es": "Tengo la misma camisa en otro color.",
+    "en": "I have the same shirt in another colour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18270,25 +18347,25 @@
   },
   {
     "id": "u16-0779",
-    "es": "No me gusta este color, quiero otro color.",
-    "en": "I don't like this colour, I want another colour.",
+    "es": "No me gusta este color. ¿Tiene otro?",
+    "en": "I don't like this colour. Do you have another one? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
-      "c:quiero",
+      "c:tienes",
       "g:gustar-basic",
       "g:stem-boot",
       "l:color",
       "l:gustar",
-      "l:querer",
+      "l:tener",
       "p:demonstratives-basic",
       "p:otro-no-article"
     ],
     "targets": [
       "l:color"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u16",
     "theme": "what colour and what is it made of",
     "source": "gen"
@@ -18347,18 +18424,19 @@
   },
   {
     "id": "u16-0782",
-    "es": "Tomás busca una chaqueta azul oscura.",
+    "es": "Tomás busca una chaqueta azul oscuro.",
     "en": "Tomás is looking for a dark blue jacket.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:present-ar",
       "l:azul",
       "l:buscar",
       "l:chaqueta",
       "l:oscuro",
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
       "p:colour-claro-oscuro"
     ],
     "targets": [
@@ -18373,19 +18451,20 @@
   },
   {
     "id": "u16-0783",
-    "es": "Compré una falda gris oscura.",
+    "es": "Compré una falda gris oscuro.",
     "en": "I bought a dark grey skirt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:compre-trabaje",
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:preterite-ar",
       "l:comprar",
       "l:falda",
       "l:gris",
       "l:oscuro",
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
       "p:colour-claro-oscuro"
     ],
     "targets": [
@@ -18427,7 +18506,7 @@
   },
   {
     "id": "u16-0785",
-    "es": "Quiero unas botas marrón oscuro.",
+    "es": "Quiero unas botas café oscuro.",
     "en": "I want some dark brown boots.",
     "accept": [],
     "acceptEn": [],
@@ -18436,7 +18515,7 @@
       "g:gender-articles",
       "g:stem-boot",
       "l:bota",
-      "l:marrón",
+      "l:café",
       "l:oscuro",
       "l:querer",
       "p:azul-oscuro-invariable",
@@ -19117,12 +19196,13 @@
   },
   {
     "id": "u16-0815",
-    "es": "Quiero una camiseta de algodón blanco.",
+    "es": "Quiero una camiseta blanca de algodón.",
     "en": "I want a white cotton T-shirt.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:quiero",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:stem-boot",
       "l:algodón",
@@ -19735,16 +19815,20 @@
   },
   {
     "id": "u16-0842",
-    "es": "Quiero ropa internacional.",
-    "en": "I want international clothing.",
+    "es": "Vale no compra ropa internacional; prefiere la nacional.",
+    "en": "Vale doesn't buy international clothes; she prefers Colombian ones.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:quiero",
+      "g:gender-articles",
+      "g:present-ar",
       "g:stem-boot",
+      "l:comprar",
       "l:internacional",
-      "l:querer",
-      "l:ropa"
+      "l:nacional",
+      "l:preferir",
+      "l:ropa",
+      "p:prefieres-x-o-y"
     ],
     "targets": [
       "l:internacional",
@@ -19825,17 +19909,16 @@
   },
   {
     "id": "u16-0846",
-    "es": "Vamos a detener el trancón.",
-    "en": "We're going to stop the traffic jam.",
+    "es": "La lluvia detiene el tráfico en la Séptima.",
+    "en": "The rain is holding up the traffic on the Séptima.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:vamos-a",
       "g:gender-articles",
-      "g:ir-a-plans",
+      "g:stem-boot",
       "l:detener",
-      "l:ir",
-      "l:trancón"
+      "l:lluvia",
+      "l:tráfico"
     ],
     "targets": [
       "l:detener"
@@ -20953,17 +21036,21 @@
   },
   {
     "id": "u16-0892",
-    "es": "¿Te parece caro el café?",
-    "en": "Does the coffee seem expensive to you? (to a friend)",
+    "es": "¿Te parece que el sillón cabe en el café?",
+    "en": "Do you think the armchair fits in the café? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:parecer-quedar",
       "g:present-er-ir",
+      "g:that-clauses",
+      "l:caber",
       "l:café",
-      "l:caro",
-      "l:parecer"
+      "l:parecer",
+      "l:sillón",
+      "p:caber",
+      "p:medir-pesar-caber"
     ],
     "targets": [
       "g:parecer-quedar"
@@ -20975,17 +21062,17 @@
   },
   {
     "id": "u16-0893",
-    "es": "¿Le parece caro el precio?",
-    "en": "Does the price seem expensive to you? (polite)",
+    "es": "¿Le parece bonito el sillón?",
+    "en": "Does the armchair seem pretty to you? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:parecer-quedar",
       "g:present-er-ir",
-      "l:caro",
+      "l:bonito",
       "l:parecer",
-      "l:precio"
+      "l:sillón"
     ],
     "targets": [
       "g:parecer-quedar"
@@ -20997,15 +21084,17 @@
   },
   {
     "id": "u16-0894",
-    "es": "¿Le parece barato?",
-    "en": "Does it seem cheap to you? (polite)",
+    "es": "¿Le parece alto el precio?",
+    "en": "Does the price seem high to you? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:parecer-quedar",
       "g:present-er-ir",
-      "l:barato",
-      "l:parecer"
+      "l:alto",
+      "l:parecer",
+      "l:precio"
     ],
     "targets": [
       "g:parecer-quedar"
@@ -21061,16 +21150,21 @@
   },
   {
     "id": "u16-0897",
-    "es": "A Vale le parece caro.",
-    "en": "It seems expensive to Vale.",
+    "es": "A Vale el primer precio siempre le parece caro.",
+    "en": "The first price always seems expensive to Vale.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gustar-full",
+      "g:gender-articles",
       "g:parecer-quedar",
       "g:present-er-ir",
       "l:caro",
-      "l:parecer"
+      "l:parecer",
+      "l:precio",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer"
     ],
     "targets": [
       "g:parecer-quedar"
@@ -21152,8 +21246,8 @@
   },
   {
     "id": "u16-0901",
-    "es": "A ustedes les parece caro, ¿verdad?",
-    "en": "It seems expensive to you, doesn't it? (you all)",
+    "es": "A ustedes les parece barato, ¿verdad?",
+    "en": "It seems cheap to you, doesn't it? (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21161,7 +21255,7 @@
       "g:gustar-full",
       "g:parecer-quedar",
       "g:present-er-ir",
-      "l:caro",
+      "l:barato",
       "l:parecer",
       "l:verdad"
     ],
@@ -21220,17 +21314,20 @@
   },
   {
     "id": "u16-0904",
-    "es": "Las botas me parecen caras.",
-    "en": "The boots seem expensive to me.",
+    "es": "Las botas me parecen perfectas para la lluvia.",
+    "en": "The boots seem perfect for the rain to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:parecer-quedar",
       "g:present-er-ir",
       "l:bota",
-      "l:cara",
-      "l:parecer"
+      "l:lluvia",
+      "l:parecer",
+      "l:perfecto",
+      "p:para-inf"
     ],
     "targets": [
       "g:parecer-quedar",
@@ -22134,8 +22231,8 @@
   },
   {
     "id": "u16-0943",
-    "es": "A mí me parece feo.",
-    "en": "It seems ugly to me.",
+    "es": "A mí me parece elegante.",
+    "en": "It seems elegant to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -22143,7 +22240,7 @@
       "g:parecer-quedar",
       "g:prep-pronouns",
       "g:present-er-ir",
-      "l:feo",
+      "l:elegante",
       "l:parecer"
     ],
     "targets": [
@@ -22156,14 +22253,14 @@
   },
   {
     "id": "u16-0944",
-    "es": "¿Te parece feo?",
-    "en": "Does it seem ugly to you?",
+    "es": "¿Te parece demasiado?",
+    "en": "Does it seem like too much to you?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:parecer-quedar",
       "g:present-er-ir",
-      "l:feo",
+      "g:quantifiers",
       "l:parecer"
     ],
     "targets": [
@@ -22196,14 +22293,14 @@
   },
   {
     "id": "u16-0946",
-    "es": "No me parece feo.",
-    "en": "It doesn't seem ugly to me.",
+    "es": "No me parece tan grande.",
+    "en": "It doesn't seem that big to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:parecer-quedar",
       "g:present-er-ir",
-      "l:feo",
+      "l:grande",
       "l:parecer"
     ],
     "targets": [
@@ -22357,147 +22454,170 @@
   },
   {
     "id": "u16-0953",
-    "es": "¿De qué es la silla de Tomás?",
-    "en": "What is Tomás's chair made of?",
+    "es": "La silla de Tomás es de plástico, pero a él le encanta.",
+    "en": "Tomás's chair is plastic, but he loves it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:gustar-full",
+      "g:present-ar",
       "g:ser-identity",
-      "l:qué",
+      "l:encantar",
+      "l:plástico",
       "l:ser",
       "l:silla",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0954",
-    "es": "¿De qué es el reloj de Hernando?",
-    "en": "What is Hernando's watch made of?",
+    "es": "El reloj de Hernando es de plata y era de su papá.",
+    "en": "Hernando's watch is silver and it was his dad's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:ser-identity",
-      "l:qué",
+      "l:papá",
+      "l:plata",
       "l:reloj",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:possessives-basic",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0955",
-    "es": "¿De qué es la taza de Rosa?",
-    "en": "What is Rosa's cup made of?",
+    "es": "Nadie toma tinto en la taza de Rosa.",
+    "en": "Nobody drinks coffee from Rosa's cup.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
-      "l:qué",
-      "l:ser",
+      "g:present-ar",
       "l:taza",
-      "p:container-de",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:tinto",
+      "l:tomar",
+      "p:container-de"
     ],
     "targets": [],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0956",
-    "es": "¿De qué es el plato?",
-    "en": "What is the plate made of?",
+    "es": "Los platos de papel son para la fiesta.",
+    "en": "The paper plates are for the party.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:fiesta",
+      "l:papel",
       "l:plato",
-      "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:container-de",
+      "p:para-inf"
     ],
     "targets": [],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0957",
-    "es": "¿De qué es la cuchara?",
-    "en": "What is the spoon made of?",
+    "es": "Simón tiene una cuchara de plástico y la usa como juguete.",
+    "en": "Simón has a plastic spoon and uses it as a toy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
+      "g:direct-objects",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:present-ar",
+      "g:stem-boot",
       "l:cuchara",
-      "l:qué",
-      "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:juguete",
+      "l:plástico",
+      "l:tener",
+      "l:usar"
     ],
     "targets": [],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0958",
-    "es": "¿De qué es el sofá?",
-    "en": "What is the sofa made of?",
+    "es": "El sofá de la sala es de cuero viejo.",
+    "en": "The living-room sofa is old leather.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:qué",
+      "l:cuero",
+      "l:sala",
       "l:ser",
       "l:sofá",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:viejo",
+      "p:estar-hecho-de",
+      "p:ser-de-material",
+      "p:viejo-antiguo-mayor"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0959",
-    "es": "¿De qué es el armario?",
-    "en": "What is the wardrobe made of?",
+    "es": "¿El armario es de plástico? ¡Qué barato!",
+    "en": "Is the wardrobe plastic? How cheap!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:armario",
+      "l:barato",
+      "l:plástico",
       "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:exclamations-basic",
+      "p:ser-de-material"
     ],
-    "targets": [],
+    "targets": [
+      "p:ser-de-material"
+    ],
     "kind": "question",
     "unit": "u16",
     "theme": "what is it made of",
@@ -22505,18 +22625,19 @@
   },
   {
     "id": "u16-0960",
-    "es": "¿De qué es esta botella?",
-    "en": "What is this bottle made of?",
+    "es": "¿La botella de agua es de plástico?",
+    "en": "Is the water bottle plastic?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
+      "l:agua",
       "l:botella",
-      "l:qué",
+      "l:plástico",
       "l:ser",
-      "p:demonstratives-basic",
-      "p:prep-questions-basic",
-      "p:question-word-order",
+      "p:container-de",
+      "p:estar-hecho-de",
       "p:ser-de-material"
     ],
     "targets": [
@@ -22529,102 +22650,119 @@
   },
   {
     "id": "u16-0961",
-    "es": "¿De qué es tu maleta?",
-    "en": "What is your suitcase made of?",
+    "es": "Mi maleta es de tela y es muy vieja.",
+    "en": "My suitcase is fabric and very old.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:ser-identity",
       "l:maleta",
-      "l:qué",
       "l:ser",
+      "l:tela",
+      "l:viejo",
+      "p:estar-hecho-de",
       "p:possessives-basic",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:quantifiers-basic",
+      "p:ser-de-material",
+      "p:viejo-antiguo-mayor"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0962",
-    "es": "¿De qué es el vaso?",
-    "en": "What is the glass made of?",
+    "es": "En el bar, los vasos son de plástico.",
+    "en": "At the bar, the glasses are plastic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:qué",
+      "l:bar",
+      "l:plástico",
       "l:ser",
       "l:vaso",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0963",
-    "es": "¿De qué es la mochila de Vale?",
-    "en": "What is Vale's backpack made of?",
+    "es": "La mochila de Vale es de cuero y tiene muchas historias.",
+    "en": "Vale's backpack is leather and has a lot of stories.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:gender-articles",
       "g:ser-identity",
+      "g:stem-boot",
+      "l:cuero",
+      "l:historia",
       "l:mochila",
-      "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:tener",
+      "p:estar-hecho-de",
+      "p:quantifiers-basic",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0964",
-    "es": "¿De qué es la gorra?",
-    "en": "What is the cap made of?",
+    "es": "La gorra de Simón es de papel.",
+    "en": "Simón's cap is made of paper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:gorra",
-      "l:qué",
+      "l:papel",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0965",
-    "es": "¿De qué es ese pantalón?",
-    "en": "What are those trousers made of?",
+    "es": "Ese pantalón es de jean, ¿no?",
+    "en": "Those trousers are denim, aren't they?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:no-cierto",
       "g:demonstratives",
       "g:ser-identity",
+      "l:jean",
       "l:pantalón",
-      "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order",
       "p:ser-de-material"
     ],
     "targets": [
@@ -22638,49 +22776,56 @@
   },
   {
     "id": "u16-0966",
-    "es": "¿De qué es el vestido rosado?",
-    "en": "What is the pink dress made of?",
+    "es": "El vestido rosado es de algodón y cuesta poco.",
+    "en": "The pink dress is cotton and costs little.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
-      "l:qué",
+      "l:algodón",
+      "l:cuesta",
       "l:rosado",
       "l:ser",
       "l:vestido",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:quantifiers-basic",
+      "p:ser-de-material"
     ],
     "targets": [
       "l:rosado",
-      "l:vestido"
+      "l:vestido",
+      "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0967",
-    "es": "¿De qué es la chaqueta que llevas?",
-    "en": "What is the jacket you're wearing made of?",
+    "es": "Me encanta la chaqueta que llevas. ¿Es de cuero?",
+    "en": "I love the jacket you're wearing. Is it leather?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-encanta",
       "g:gender-articles",
+      "g:gustar-full",
       "g:present-ar",
       "g:relative-que",
       "g:ser-identity",
       "l:chaqueta",
+      "l:cuero",
+      "l:encantar",
       "l:llevar",
-      "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
     "targets": [
-      "l:chaqueta"
+      "l:chaqueta",
+      "p:ser-de-material"
     ],
     "kind": "question",
     "unit": "u16",
@@ -22689,107 +22834,120 @@
   },
   {
     "id": "u16-0968",
-    "es": "¿De qué es el uniforme del café?",
-    "en": "What is the café uniform made of?",
+    "es": "El uniforme del café es de algodón, porque en la cocina hace calor.",
+    "en": "The café uniform is cotton, because it's hot in the kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:porque",
+      "g:cause-result",
       "g:gender-articles",
+      "g:present-er-ir",
       "g:ser-identity",
+      "l:algodón",
       "l:café",
-      "l:qué",
+      "l:calor",
+      "l:cocina",
+      "l:hacer",
       "l:ser",
       "l:uniforme",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:hace-frio",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0969",
-    "es": "¿De qué son estos tenis?",
-    "en": "What are these sneakers made of?",
+    "es": "Estos tenis son de tela, no de cuero.",
+    "en": "These sneakers are fabric, not leather.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:ser-identity",
-      "l:qué",
+      "l:cuero",
       "l:ser",
+      "l:tela",
       "l:tenis",
-      "p:prep-questions-basic",
-      "p:question-word-order",
+      "p:estar-hecho-de",
       "p:ser-de-material"
     ],
     "targets": [
       "l:tenis",
       "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0970",
-    "es": "¿De qué son las sillas?",
-    "en": "What are the chairs made of?",
+    "es": "Las sillas nuevas son de plástico negro.",
+    "en": "The new chairs are black plastic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
-      "l:qué",
+      "l:negro",
+      "l:nuevo",
+      "l:plástico",
       "l:ser",
       "l:silla",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0971",
-    "es": "¿De qué son los platos?",
-    "en": "What are the plates made of?",
+    "es": "Rosa no usaba platos de plástico en el café.",
+    "en": "Rosa didn't use plastic plates in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:imperfect-habitual",
+      "l:café",
       "l:plato",
-      "l:qué",
-      "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:plástico",
+      "l:usar",
+      "p:container-de"
     ],
     "targets": [],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0972",
-    "es": "¿De qué son las medias de Simón?",
-    "en": "What are Simón's socks made of?",
+    "es": "¿Unas medias de lana en Cartagena? ¡Qué calor!",
+    "en": "Wool socks in Cartagena? So hot!",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "l:calor",
+      "l:lana",
       "l:media",
       "l:qué",
-      "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:exclamations-basic"
     ],
     "targets": [
       "l:media"
@@ -22801,94 +22959,107 @@
   },
   {
     "id": "u16-0973",
-    "es": "¿De qué son tus botas?",
-    "en": "What are your boots made of?",
+    "es": "Mis botas son de cuero, pero ya tienen veinte años.",
+    "en": "My boots are leather, but they're already twenty years old.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
       "l:bota",
-      "l:qué",
+      "l:cuero",
       "l:ser",
+      "l:tener",
+      "p:estar-hecho-de",
       "p:possessives-basic",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:ser-de-material",
+      "p:tener-anos"
     ],
     "targets": [
-      "l:bota"
+      "l:bota",
+      "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0974",
-    "es": "¿De qué son esas bolsas?",
-    "en": "What are those bags made of?",
+    "es": "Aquí las bolsas son de papel, no de plástico.",
+    "en": "Here the bags are paper, not plastic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
+      "g:gender-articles",
       "g:ser-identity",
+      "l:aquí",
       "l:bolsa",
-      "l:qué",
+      "l:papel",
+      "l:plástico",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order",
+      "p:aqui-ahi-alla",
+      "p:estar-hecho-de",
       "p:ser-de-material"
     ],
     "targets": [
       "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0975",
-    "es": "¿De qué son los jeans?",
-    "en": "What are the jeans made of?",
+    "es": "Los jeans son de algodón, claro.",
+    "en": "Jeans are cotton, of course.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
       "g:gender-articles",
       "g:ser-identity",
+      "l:algodón",
+      "l:claro",
       "l:jean",
-      "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0976",
-    "es": "¿De qué material es este bolso?",
-    "en": "What material is this bag?",
+    "es": "Me gusta el bolso, pero el material no me parece bueno.",
+    "en": "I like the bag, but the material doesn't seem good to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:ser-identity",
+      "c:me-gusta",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:parecer-quedar",
+      "g:present-er-ir",
       "l:bolso",
+      "l:bueno",
+      "l:gustar",
       "l:material",
-      "l:qué",
-      "l:ser",
-      "p:demonstratives-basic",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "l:parecer"
     ],
     "targets": [
       "l:bolso",
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
@@ -22921,126 +23092,125 @@
   },
   {
     "id": "u16-0978",
-    "es": "¿De qué material es el abrigo?",
-    "en": "What material is the coat?",
+    "es": "El abrigo es bonito, pero el material es muy delgado.",
+    "en": "The coat is nice, but the material is very thin.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:abrigo",
+      "l:bonito",
+      "l:delgado",
       "l:material",
-      "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "p:es-tiene-lleva",
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0979",
-    "es": "¿De qué material son los tenis?",
-    "en": "What material are the sneakers?",
+    "es": "En los tenis, el material es más importante que el color.",
+    "en": "In sneakers, the material is more important than the colour.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:comparatives",
       "g:gender-articles",
       "g:ser-identity",
+      "l:color",
+      "l:importante",
       "l:material",
-      "l:qué",
       "l:ser",
-      "l:tenis",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "l:tenis"
     ],
     "targets": [
       "l:material",
-      "l:tenis",
-      "p:ser-de-material"
+      "l:tenis"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0980",
-    "es": "¿De qué material son las cucharas?",
-    "en": "What material are the spoons?",
+    "es": "Las cucharas parecen de plata, pero el material es otro.",
+    "en": "The spoons look like silver, but the material is something else.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-er-ir",
       "g:ser-identity",
       "l:cuchara",
       "l:material",
-      "l:qué",
+      "l:parecer",
+      "l:plata",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "p:otro-no-article"
     ],
     "targets": [
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0981",
-    "es": "¿De qué material es la maleta?",
-    "en": "What material is the suitcase?",
+    "es": "La maleta es fea, pero el material es muy bueno.",
+    "en": "The suitcase is ugly, but the material is very good.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
+      "l:bueno",
+      "l:feo",
       "l:maleta",
       "l:material",
-      "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
   },
   {
     "id": "u16-0982",
-    "es": "¿De qué material es el piso?",
-    "en": "What material is the floor?",
+    "es": "El vendedor no sabe nada del material.",
+    "en": "The salesman knows nothing about the material.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:negation-words",
+      "g:present-er-ir",
       "l:material",
-      "l:piso",
-      "l:qué",
-      "l:ser",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "l:saber",
+      "l:vendedor",
+      "p:saber-conocer"
     ],
     "targets": [
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "what is it made of",
     "source": "gen"
@@ -23219,24 +23389,20 @@
   },
   {
     "id": "u16-0990",
-    "es": "Disculpe, ¿de qué material es?",
-    "en": "Excuse me, what material is it?",
+    "es": "El color es perfecto, pero ¿y el material?",
+    "en": "The colour is perfect, but what about the material?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:perdon-disculpe",
-      "g:commands-usted",
+      "g:gender-articles",
       "g:ser-identity",
-      "l:disculpar",
+      "l:color",
       "l:material",
-      "l:qué",
-      "l:ser",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "l:perfecto",
+      "l:ser"
     ],
     "targets": [
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
     "kind": "dialogue",
     "unit": "u16",
@@ -25112,21 +25278,24 @@
   },
   {
     "id": "u16-1065",
-    "es": "Necesito una talla más grande de zapato.",
-    "en": "I need a bigger shoe size.",
+    "es": "Este zapato me queda pequeño: necesito un número más grande.",
+    "en": "This shoe is too small for me: I need a bigger size.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:parecer-quedar",
       "g:present-ar",
       "l:grande",
       "l:necesitar",
-      "l:talla",
+      "l:número",
+      "l:pequeño",
+      "l:quedar",
       "l:zapato",
+      "p:demonstratives-basic",
       "p:talla-numero"
     ],
     "targets": [
-      "l:talla",
       "l:zapato",
       "p:talla-numero"
     ],
@@ -26148,7 +26317,7 @@
   {
     "id": "u16-1106",
     "es": "Hernando cambió de carro cuando se jubiló.",
-    "en": "Hernando changed car when he retired.",
+    "en": "Hernando changed cars when he retired.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26692,50 +26861,49 @@
   },
   {
     "id": "u16-1127",
-    "es": "Mi mamá pregunta: ¿de qué es el abrigo?",
-    "en": "My mum asks: what is the coat made of?",
+    "es": "A mi mamá le encanta la ropa de algodón.",
+    "en": "My mum loves cotton clothes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:gustar-full",
       "g:present-ar",
-      "g:ser-identity",
-      "l:abrigo",
+      "l:algodón",
+      "l:encantar",
       "l:mamá",
-      "l:preguntar",
-      "l:qué",
-      "l:ser",
-      "p:possessives-basic",
-      "p:preguntar-pedir",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:ropa",
+      "p:possessives-basic"
     ],
     "targets": [],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "material questions in context",
     "source": "gen"
   },
   {
     "id": "u16-1128",
-    "es": "Antes de pagar, ¿de qué es la chaqueta?",
-    "en": "Before I pay, what is the jacket made of?",
+    "es": "Antes de pagar, ¿la chaqueta es de cuero de verdad?",
+    "en": "Before I pay, is the jacket really leather?",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:en-serio",
       "g:gender-articles",
       "g:prep-infinitive",
       "g:ser-identity",
       "l:antes",
       "l:chaqueta",
+      "l:cuero",
       "l:pagar",
-      "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:verdad",
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
     "targets": [
-      "l:chaqueta"
+      "l:chaqueta",
+      "p:ser-de-material"
     ],
     "kind": "question",
     "unit": "u16",
@@ -26744,22 +26912,24 @@
   },
   {
     "id": "u16-1129",
-    "es": "Hernando, ¿de qué es tu reloj viejo?",
-    "en": "Hernando, what is your old watch made of?",
+    "es": "Don Hernando, ¿su reloj es de plata?",
+    "en": "Don Hernando, is your watch silver? (formal)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
-      "l:qué",
+      "l:plata",
       "l:reloj",
       "l:ser",
-      "l:viejo",
+      "p:don-dona-nombre",
+      "p:estar-hecho-de",
       "p:possessives-basic",
-      "p:prep-questions-basic",
-      "p:question-word-order",
-      "p:viejo-antiguo-mayor"
+      "p:senor-don-article",
+      "p:ser-de-material"
     ],
-    "targets": [],
+    "targets": [
+      "p:ser-de-material"
+    ],
     "kind": "question",
     "unit": "u16",
     "theme": "material questions in context",
@@ -26767,81 +26937,84 @@
   },
   {
     "id": "u16-1130",
-    "es": "Dime, ¿de qué es la caja?",
-    "en": "Tell me, what is the box made of?",
+    "es": "La caja del sillón es de papel, y Simón ya la rompió.",
+    "en": "The armchair's box is made of paper, and Simón has already broken it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:oye-mira",
+      "g:direct-objects",
       "g:gender-articles",
+      "g:preterite-er-ir",
       "g:ser-identity",
       "l:caja",
-      "l:decir",
-      "l:qué",
+      "l:papel",
+      "l:romper",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:sillón",
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "material questions in context",
     "source": "gen"
   },
   {
     "id": "u16-1131",
-    "es": "Mariana, ¿de qué es esa bolsa?",
-    "en": "Mariana, what is that bag made of?",
+    "es": "Mariana, esa bolsa de tela es lindísima.",
+    "en": "Mariana, that fabric bag is gorgeous.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:demonstratives",
       "g:ser-identity",
+      "g:superlatives",
       "l:bolsa",
-      "l:qué",
+      "l:lindo",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order",
-      "p:ser-de-material"
+      "l:tela",
+      "p:container-de"
     ],
-    "targets": [
-      "p:ser-de-material"
-    ],
-    "kind": "question",
+    "targets": [],
+    "kind": "statement",
     "unit": "u16",
     "theme": "material questions in context",
     "source": "gen"
   },
   {
     "id": "u16-1132",
-    "es": "¿De qué es la camiseta que lleva Simón?",
-    "en": "What is the T-shirt Simón is wearing made of?",
+    "es": "La camiseta de Tomás es de algodón y dice «Toronto».",
+    "en": "Tomás's T-shirt is cotton and says \"Toronto\".",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
-      "g:relative-que",
       "g:ser-identity",
+      "g:stem-e-i",
+      "l:algodón",
       "l:camiseta",
-      "l:llevar",
-      "l:qué",
+      "l:decir",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
     "targets": [
-      "l:camiseta"
+      "l:camiseta",
+      "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "material questions in context",
     "source": "gen"
   },
   {
     "id": "u16-1133",
-    "es": "¿De qué es la nueva maleta de Tomás?",
-    "en": "What is Tomás's new suitcase made of?",
+    "es": "La maleta nueva de Tomás es de plástico y es roja.",
+    "en": "Tomás's new suitcase is plastic and it's red.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -26850,82 +27023,90 @@
       "g:ser-identity",
       "l:maleta",
       "l:nuevo",
-      "l:qué",
+      "l:plástico",
+      "l:rojo",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "material questions in context",
     "source": "gen"
   },
   {
     "id": "u16-1134",
-    "es": "¿De qué es el delantal del café?",
-    "en": "What is the café apron made of?",
+    "es": "Los delantales del café son de algodón negro.",
+    "en": "The café aprons are black cotton.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:algodón",
       "l:café",
       "l:delantal",
-      "l:qué",
+      "l:negro",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "material questions in context",
     "source": "gen"
   },
   {
     "id": "u16-1135",
-    "es": "¿De qué material son los platos de Rosa?",
-    "en": "What material are Rosa's plates?",
+    "es": "Los platos de Rosa son viejos, pero el material es excelente.",
+    "en": "Rosa's plates are old, but the material is excellent.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
+      "l:excelente",
       "l:material",
       "l:plato",
-      "l:qué",
       "l:ser",
+      "l:viejo",
       "p:container-de",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "material questions in context",
     "source": "gen"
   },
   {
     "id": "u16-1136",
-    "es": "¿Y de qué es la taza azul?",
-    "en": "And what is the blue cup made of?",
+    "es": "¿Y la taza azul? ¿Es de plástico?",
+    "en": "And the blue cup? Is it plastic?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:questions",
       "g:ser-identity",
       "l:azul",
-      "l:qué",
+      "l:plástico",
       "l:ser",
-      "l:taza"
+      "l:taza",
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
     "targets": [
-      "l:azul"
+      "l:azul",
+      "p:ser-de-material"
     ],
     "kind": "question",
     "unit": "u16",
@@ -27045,205 +27226,231 @@
   },
   {
     "id": "u16-1142",
-    "es": "¿De qué es el cuchillo de la cocina?",
-    "en": "What is the kitchen knife made of?",
+    "es": "En la cocina de Vale, nada es de plástico.",
+    "en": "In Vale's kitchen, nothing is plastic.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:cocina",
-      "l:cuchillo",
-      "l:qué",
+      "l:plástico",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1143",
-    "es": "¿De qué es la lámpara de la sala?",
-    "en": "What is the living room lamp made of?",
+    "es": "La lámpara de la sala es de papel.",
+    "en": "The living-room lamp is made of paper.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:lámpara",
-      "l:qué",
+      "l:papel",
       "l:sala",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1144",
-    "es": "¿De qué es el letrero del café?",
-    "en": "What is the café sign made of?",
+    "es": "El letrero del café es de plástico, y a Vale no le gusta.",
+    "en": "The café sign is plastic, and Vale doesn't like it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:gustar-basic",
+      "g:gustar-full",
+      "g:present-ar",
       "g:ser-identity",
       "l:café",
+      "l:gustar",
       "l:letrero",
-      "l:qué",
+      "l:plástico",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1145",
-    "es": "¿De qué es la nevera?",
-    "en": "What is the fridge made of?",
+    "es": "La nevera nueva es gris claro.",
+    "en": "The new fridge is light grey.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:claro-listo",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
+      "l:claro",
+      "l:gris",
       "l:nevera",
-      "l:qué",
+      "l:nuevo",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
+      "p:colour-claro-oscuro"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:colour-claro-oscuro"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1146",
-    "es": "¿De qué es este pantalón de Vale?",
-    "en": "What are these trousers of Vale's made of?",
+    "es": "Este pantalón de Vale es de lana, para el frío.",
+    "en": "These trousers of Vale's are wool, for the cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:ser-identity",
+      "l:frío",
+      "l:lana",
       "l:pantalón",
-      "l:qué",
       "l:ser",
       "p:demonstratives-basic",
-      "p:prep-questions-basic",
-      "p:question-word-order",
+      "p:estar-hecho-de",
+      "p:para-inf",
       "p:ser-de-material"
     ],
     "targets": [
       "l:pantalón",
       "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1147",
-    "es": "¿De qué es tu bufanda favorita?",
-    "en": "What is your favourite scarf made of?",
+    "es": "Mi bufanda favorita es de lana y era de mi abuela.",
+    "en": "My favourite scarf is wool and it was my grandmother's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:adjective-agreement",
+      "g:imperfect-states",
       "g:ser-identity",
+      "l:abuela",
       "l:bufanda",
       "l:favorito",
-      "l:qué",
+      "l:lana",
       "l:ser",
+      "p:estar-hecho-de",
       "p:possessives-basic",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1148",
-    "es": "¿De qué es el sofá de la abuela?",
-    "en": "What is Grandma's sofa made of?",
+    "es": "El sofá de la abuela es de cuero, y Simón duerme ahí.",
+    "en": "Grandma's sofa is leather, and Simón sleeps there.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "g:stem-boot",
       "l:abuela",
-      "l:qué",
+      "l:ahí",
+      "l:cuero",
+      "l:dormir",
       "l:ser",
       "l:sofá",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:aqui-ahi-alla",
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1149",
-    "es": "¿De qué es el bolso que busca Mariana?",
-    "en": "What is the bag Mariana is looking for made of?",
+    "es": "Mariana busca un bolso de tela, grande y barato.",
+    "en": "Mariana is looking for a fabric bag, big and cheap.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:relative-que",
-      "g:ser-identity",
+      "l:barato",
       "l:bolso",
       "l:buscar",
-      "l:qué",
-      "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:grande",
+      "l:tela"
     ],
     "targets": [
       "l:bolso"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1150",
-    "es": "¿De qué es esa falda azul oscura?",
-    "en": "What is that dark blue skirt made of?",
+    "es": "Esa falda azul oscuro es de algodón.",
+    "en": "That dark blue skirt is cotton.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:demonstratives",
       "g:ser-identity",
+      "l:algodón",
       "l:azul",
       "l:falda",
       "l:oscuro",
-      "l:qué",
       "l:ser",
+      "p:azul-oscuro-invariable",
+      "p:colores-compuestos",
       "p:colour-claro-oscuro",
-      "p:prep-questions-basic",
-      "p:question-word-order",
+      "p:estar-hecho-de",
       "p:ser-de-material"
     ],
     "targets": [
@@ -27252,26 +27459,27 @@
       "p:colour-claro-oscuro",
       "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1151",
-    "es": "¿De qué material son los vasos del bar?",
-    "en": "What material are the glasses at the bar?",
+    "es": "Las mesas del bar son de plástico: es un material barato.",
+    "en": "The bar's tables are plastic: it's a cheap material.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:bar",
+      "l:barato",
       "l:material",
-      "l:qué",
+      "l:mesa",
+      "l:plástico",
       "l:ser",
-      "l:vaso",
-      "p:prep-questions-basic",
+      "p:estar-hecho-de",
       "p:ser-de-material"
     ],
     "targets": [
@@ -27279,83 +27487,88 @@
       "l:material",
       "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1152",
-    "es": "¿De qué material es la caja de Simón?",
-    "en": "What material is Simón's box?",
+    "es": "Simón rompe todo; necesita una caja de otro material.",
+    "en": "Simón breaks everything; he needs a box made of another material.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:present-ar",
+      "g:present-er-ir",
       "l:caja",
       "l:material",
-      "l:qué",
-      "l:ser",
+      "l:necesitar",
+      "l:romper",
       "p:container-de",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "p:otro-no-article"
     ],
     "targets": [
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1153",
-    "es": "¿De qué material es la ventana?",
-    "en": "What material is the window?",
+    "es": "El material de la ventana es malo, y entra el frío.",
+    "en": "The window's material is poor, and the cold gets in.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:present-ar",
       "g:ser-identity",
+      "l:entrar",
+      "l:frío",
+      "l:malo",
       "l:material",
-      "l:qué",
       "l:ser",
       "l:ventana",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo"
     ],
     "targets": [
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
   },
   {
     "id": "u16-1154",
-    "es": "¿De qué material es el mapa?",
-    "en": "What material is the map?",
+    "es": "El mapa viejo de Rosa es de tela, un material muy fuerte.",
+    "en": "Rosa's old map is made of cloth, a very strong material.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "l:fuerte",
       "l:mapa",
       "l:material",
-      "l:qué",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "l:tela",
+      "l:viejo",
+      "p:estar-hecho-de",
+      "p:quantifiers-basic",
+      "p:ser-de-material",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "l:material",
       "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "made of what",
     "source": "gen"
@@ -27487,17 +27700,18 @@
   },
   {
     "id": "u16-1160",
-    "es": "Perdí una media blanca en el taxi.",
-    "en": "I lost a white sock in the taxi.",
+    "es": "Hoy Tomás lleva una media blanca y una negra.",
+    "en": "Today Tomás is wearing one white sock and one black one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:preterite-er-ir",
+      "g:present-ar",
       "l:blanco",
-      "l:perder",
-      "l:taxi"
+      "l:hoy",
+      "l:llevar",
+      "l:negro"
     ],
     "targets": [
       "l:blanco"
@@ -27549,94 +27763,101 @@
   },
   {
     "id": "u16-1163",
-    "es": "¿De qué es el uniforme que prefieres?",
-    "en": "What is the uniform you prefer made of?",
+    "es": "Prefiero el uniforme de algodón; el otro me da calor.",
+    "en": "I prefer the cotton uniform; the other one makes me hot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:me-regala",
       "g:gender-articles",
-      "g:relative-que",
-      "g:ser-identity",
       "g:stem-boot",
+      "l:algodón",
+      "l:calor",
+      "l:dar",
       "l:preferir",
-      "l:qué",
-      "l:ser",
       "l:uniforme",
-      "p:prefieres-x-o-y",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:otro-no-article",
+      "p:prefieres-x-o-y"
     ],
     "targets": [],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "last touches",
     "source": "gen"
   },
   {
     "id": "u16-1164",
-    "es": "¿De qué es la camisa del vendedor?",
-    "en": "What is the salesman's shirt made of?",
+    "es": "El vendedor dice que la camisa es de algodón, pero no le creo.",
+    "en": "The salesman says the shirt is cotton, but I don't believe him.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:indirect-objects",
+      "g:present-er-ir",
       "g:ser-identity",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:algodón",
       "l:camisa",
-      "l:qué",
+      "l:creer",
+      "l:decir",
       "l:ser",
       "l:vendedor",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
     "targets": [
-      "l:camisa"
+      "l:camisa",
+      "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "last touches",
     "source": "gen"
   },
   {
     "id": "u16-1165",
-    "es": "¿De qué material es la camisa de Hernando?",
-    "en": "What material is Hernando's shirt?",
+    "es": "La camisa de Hernando tiene cuarenta años, y el material está perfecto.",
+    "en": "Hernando's shirt is forty years old, and the material is perfect.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
+      "g:estar-location-states",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:stem-boot",
+      "l:año",
       "l:camisa",
+      "l:estar",
       "l:material",
-      "l:qué",
-      "l:ser",
-      "p:prep-questions-basic",
-      "p:ser-de-material"
+      "l:perfecto",
+      "l:tener",
+      "p:tener-anos"
     ],
     "targets": [
       "l:camisa",
-      "l:material",
-      "p:ser-de-material"
+      "l:material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "last touches",
     "source": "gen"
   },
   {
     "id": "u16-1166",
-    "es": "¿De qué es esta chaqueta tan cara?",
-    "en": "What is this very expensive jacket made of?",
+    "es": "¿Esta chaqueta tan cara es de plástico?",
+    "en": "This really expensive jacket is plastic?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:ser-identity",
       "l:cara",
       "l:chaqueta",
-      "l:qué",
+      "l:plástico",
       "l:ser",
       "p:demonstratives-basic",
-      "p:prep-questions-basic",
-      "p:question-word-order",
+      "p:estar-hecho-de",
       "p:ser-de-material"
     ],
     "targets": [
@@ -27650,8 +27871,8 @@
   },
   {
     "id": "u16-1167",
-    "es": "¿De qué es la bolsa de Mariana, de cuero?",
-    "en": "What is Mariana's bag made of, leather?",
+    "es": "¿Es de cuero la bolsa de Mariana?",
+    "en": "Is Mariana's bag leather?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27659,14 +27880,14 @@
       "g:ser-identity",
       "l:bolsa",
       "l:cuero",
-      "l:qué",
       "l:ser",
       "p:container-de",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
     "targets": [
-      "l:cuero"
+      "l:cuero",
+      "p:ser-de-material"
     ],
     "kind": "question",
     "unit": "u16",
@@ -27675,16 +27896,17 @@
   },
   {
     "id": "u16-1168",
-    "es": "Perdí una media debajo de la cama.",
-    "en": "I lost a sock under the bed.",
+    "es": "Encontré tres medias de Tomás debajo de la cama.",
+    "en": "I found three of Tomás's socks under the bed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
+      "g:preterite-ar",
       "l:cama",
       "l:debajo",
-      "l:perder",
+      "l:encontrar",
+      "l:media",
       "p:cerca-de",
       "p:position-de"
     ],
@@ -27793,92 +28015,104 @@
   },
   {
     "id": "u16-1173",
-    "es": "¿De qué es la mesa de Hernando?",
-    "en": "What is Hernando's table made of?",
+    "es": "La mesa de Hernando es de plástico, pero es la mejor del café.",
+    "en": "Hernando's table is plastic, but it's the best in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
+      "g:superlatives",
+      "l:café",
+      "l:mejor",
       "l:mesa",
-      "l:qué",
+      "l:plástico",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material"
     ],
-    "targets": [],
-    "kind": "question",
+    "targets": [
+      "p:ser-de-material"
+    ],
+    "kind": "statement",
     "unit": "u16",
     "theme": "last touches 2",
     "source": "gen"
   },
   {
     "id": "u16-1174",
-    "es": "¿De qué es esa mochila verde?",
-    "en": "What is that green backpack made of?",
+    "es": "Esa mochila verde es de tela y no cuesta mucho.",
+    "en": "That green backpack is fabric and doesn't cost much.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:ser-identity",
+      "g:stem-boot",
+      "l:costar",
       "l:mochila",
-      "l:qué",
       "l:ser",
+      "l:tela",
       "l:verde",
-      "p:prep-questions-basic",
-      "p:question-word-order",
+      "p:estar-hecho-de",
+      "p:quantifiers-basic",
       "p:ser-de-material"
     ],
     "targets": [
       "l:verde",
       "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "last touches 2",
     "source": "gen"
   },
   {
     "id": "u16-1175",
-    "es": "¿De qué es la bolsa del mercado?",
-    "en": "What is the market bag made of?",
+    "es": "Para el mercado, uso una bolsa de tela.",
+    "en": "For the market, I use a cloth bag.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:ser-identity",
+      "g:present-ar",
       "l:bolsa",
       "l:mercado",
-      "l:qué",
-      "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "l:tela",
+      "l:usar",
+      "p:container-de",
+      "p:para-inf"
     ],
     "targets": [],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "last touches 3",
     "source": "gen"
   },
   {
     "id": "u16-1176",
-    "es": "¿De qué es el bolso de Rosa?",
-    "en": "What is Rosa's bag made of?",
+    "es": "El bolso de Rosa es de cuero y todavía está en el café.",
+    "en": "Rosa's bag is leather and it's still at the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:estar-location-states",
       "g:gender-articles",
       "g:ser-identity",
       "l:bolso",
-      "l:qué",
+      "l:café",
+      "l:cuero",
+      "l:estar",
       "l:ser",
-      "p:prep-questions-basic",
-      "p:question-word-order"
+      "p:estar-hecho-de",
+      "p:ser-de-material",
+      "p:ya-todavia-basic"
     ],
     "targets": [
-      "l:bolso"
+      "l:bolso",
+      "p:ser-de-material"
     ],
-    "kind": "question",
+    "kind": "statement",
     "unit": "u16",
     "theme": "last touches 3",
     "source": "gen"

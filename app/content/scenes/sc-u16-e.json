@@ -2,24 +2,24 @@
   "id": "sc-u16-e",
   "unit": "u16",
   "title": "Iconic",
-  "brief": "You're Tomás. Your new purple chair is out on the pavement in front of the café, and Don Hernando has just seen it. Defend your taste, admit the problem, and keep him on your side. He's older than you, so use usted.",
+  "brief": "You're Tomás. Your new purple armchair is out on the pavement in front of the café, and Don Hernando has just seen it. Defend your taste, admit the problem, and keep him on your side. He's older than you, so use usted.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Tomás, ¿qué es eso? ¿Una silla morada en el café de Rosa?",
-      "npcEn": "Tomás, what is that? A purple chair in Rosa's café?",
-      "intent": "Say yes, and that it's the prettiest chair in the neighbourhood.",
+      "npc": "Tomás, ¿qué es eso? ¿Un sillón morado en el café de Rosa?",
+      "npcEn": "Tomás, what is that? A purple armchair in Rosa's café?",
+      "intent": "Say yes, and that it's the prettiest armchair in the neighbourhood.",
       "accept": [
-        "Sí, es la silla más bonita del barrio.",
-        "Sí. ¡Es la más bonita del barrio!",
-        "Claro, es la silla más bonita del barrio."
+        "Sí, es el sillón más bonito del barrio.",
+        "Sí. ¡Es el más bonito del barrio!",
+        "Claro, es el sillón más bonito del barrio."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "la (silla )?m[aá]s bonita",
+          "pattern": "el (sill[oó]n )?m[aá]s bonito",
           "flags": "i",
-          "label": "the prettiest: la más bonita del barrio"
+          "label": "the prettiest: el más bonito del barrio"
         }
       ],
       "focus": "g:superlatives",
@@ -27,7 +27,7 @@
     },
     {
       "id": "t2",
-      "npc": "¿Bonita? Mijo, a mí me parece muy fea. ¿Y a usted, Simón?\n¡Fea! ¡Fea!",
+      "npc": "¿Bonito? Mijo, a mí me parece muy feo. ¿Y a usted, Simón?\n¡Feo! ¡Feo!",
       "npcEn": "Pretty? Son, to me it seems very ugly. And you, Simón?\nUgly! Ugly!",
       "intent": "Say that to you it seems very elegant.",
       "accept": [
@@ -59,7 +59,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "muy grande",
+          "pattern": "(muy|demasiado|tan) grande|no cabe",
           "flags": "i",
           "label": "too big: muy grande"
         }
@@ -69,20 +69,20 @@
     },
     {
       "id": "t4",
-      "npc": "¡Ay, mijo! ¿Y ahora? ¿La va a devolver?",
+      "npc": "¡Ay, mijo! ¿Y ahora? ¿Lo va a devolver?",
       "npcEn": "Oh, son! And now what? Are you going to return it?",
       "intent": "Say yes, you have to return it tomorrow.",
       "accept": [
-        "Sí, la tengo que devolver mañana.",
-        "Sí. Tengo que devolverla mañana.",
-        "Sí, mañana la tengo que devolver."
+        "Sí, lo tengo que devolver mañana.",
+        "Sí. Tengo que devolverlo mañana.",
+        "Sí, mañana lo tengo que devolver."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "la tengo que devolver|tengo que devolverla",
+          "pattern": "lo tengo que devolver|tengo que devolverlo",
           "flags": "i",
-          "label": "return it: la tengo que devolver, or tengo que devolverla"
+          "label": "return it: lo tengo que devolver, or tengo que devolverlo (el sillón, so lo)"
         }
       ],
       "focus": "g:object-pronoun-position",
@@ -94,7 +94,7 @@
       "npcEn": "Relax, son. I'll talk to Vale. But you owe me a tinto.",
       "intent": "Thank him, and say you'll bring it to him right now.",
       "accept": [
-        "Gracias, Hernando. Ya se lo llevo.",
+        "Gracias, don Hernando. Ya se lo llevo.",
         "Gracias. Ahora mismo se lo llevo.",
         "Muchas gracias. Ya se lo llevo."
       ],
@@ -127,7 +127,6 @@
     "c:tengo",
     "c:tengo-que",
     "c:tranquilo",
-    "g:adjective-agreement",
     "g:cause-result",
     "g:direct-objects",
     "g:double-pronouns",
@@ -162,17 +161,20 @@
     "l:ir",
     "l:llevar",
     "l:mañana",
-    "l:morada",
+    "l:mijo",
+    "l:morado",
     "l:parecer",
     "l:puerta",
     "l:qué",
     "l:ser",
-    "l:silla",
+    "l:sillón",
     "l:tener",
     "l:tinto",
     "l:tranquilo",
+    "p:don-dona-nombre",
     "p:me-te-nos-objects",
     "p:para-inf",
-    "p:quantifiers-basic"
+    "p:quantifiers-basic",
+    "p:senor-don-article"
   ]
 }

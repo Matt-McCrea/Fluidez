@@ -1,29 +1,106 @@
 {
   "node": "p:el-azul",
   "hook": {
-    "line": "Tomás is standing in front of three jackets and the assistant is waiting. Nobody says the black jacket twice. Spanish drops the noun and keeps the article, which still remembers whether it was *la chaqueta* or *el saco*.",
+    "line": "Tomás is at a shoe stall in San Victorino with three pairs of boots in front of him and the assistant waiting. Nobody says the black boots twice. Spanish drops the noun and keeps the article, which still remembers whether it was *la chaqueta* or *el suéter*.",
     "es": "¿Cuál prefiere?\nLa negra.",
     "en": "Which one do you prefer? (formal)\nThe black one."
   },
   "examples": [
-    { "es": "Me llevo el más barato.", "en": "I'll take the cheapest one." },
-    { "es": "Quiero la de cuero.", "en": "I want the leather one." },
-    { "es": "¿Qué camisa te gusta?\nLa roja.", "en": "Which shirt do you like?\nThe red one." },
-    { "es": "Los grandes son para Tomás.", "en": "The big ones are for Tomás." },
-    { "es": "Prefiero las de algodón.", "en": "I prefer the cotton ones." },
-    { "es": "Me gusta más el de Vale.", "en": "I like Vale's better." }
+    {
+      "es": "Me llevo el más barato.",
+      "en": "I'll take the cheapest one."
+    },
+    {
+      "es": "Quiero la de cuero.",
+      "en": "I want the leather one."
+    },
+    {
+      "es": "¿Cuáles botas quiere?\nLas más baratas.",
+      "en": "Which boots do you want? (formal)\nThe cheapest ones."
+    },
+    {
+      "es": "Prefiero las de algodón.",
+      "en": "I prefer the cotton ones."
+    },
+    {
+      "es": "Me gusta más el de Vale.",
+      "en": "I like Vale's better."
+    },
+    {
+      "es": "La negra es la más cara.",
+      "en": "The black one is the most expensive."
+    }
   ],
-  "rule": "English needs one: the black one, the cheapest one. Spanish drops the noun and keeps the article: *la negra*, *el más barato*. There's no word for one at all.\nThe article and adjective still match the noun you dropped: *la azul* (*la camisa*), *el azul* (*el saco*), *las negras* (*las botas*).\nIt works with *más*: *el más barato*, the cheapest one. And with *de*: *la de cuero*, the leather one; *el de Vale*, Vale's.\nOnce it's clear what you're talking about, repeating the noun sounds stiff.",
+  "rule": "English needs one: the black one, the cheapest one. Spanish drops the noun and keeps the article: *la negra*, *el más barato*. There's no word for one at all.\nThe article and adjective still match the noun you dropped: *la azul* (*la camisa*), *el azul* (*el suéter*), *las negras* (*las botas*).\nIt works with *más*: *el más barato*, the cheapest one. And with *de*: *la de cuero*, the leather one; *el de Vale*, Vale's.\nOnce it's clear what you're talking about, repeating the noun sounds stiff.",
   "smallPrint": "Grammars call this dropping the noun. Don't add *uno*: *la azul*, never *la azul una*.",
   "readAndPick": [
-    { "es": "Me llevo la azul.", "options": ["I'll take the blue one (the shirt).", "I'll take the blue one (the sweater)."], "answer": 0 },
-    { "es": "Me llevo el negro.", "options": ["I'll take the black one (the jacket).", "I'll take the black one (the sweater)."], "answer": 1 },
-    { "es": "Me llevo los más baratos.", "options": ["I'll take the cheapest one.", "I'll take the cheapest ones.", "I'll take the cheaper ones."], "answer": 1 },
-    { "es": "Quiero la de cuero.", "options": ["I want leather.", "I want the leather one.", "I want the leather."], "answer": 1 },
-    { "es": "Prefiero las blancas.", "options": ["I prefer the white ones (the boots).", "I prefer the white one (the bag)."], "answer": 0 },
-    { "es": "¿Cuál quiere?\nEl de lana.", "options": ["Which one do you want? (formal)\nWool.", "Which one do you want? (formal)\nThe wool one."], "answer": 1 },
-    { "es": "La más barata es la roja.", "options": ["The red one is cheaper.", "The cheaper one is red.", "The cheapest one is the red one."], "answer": 2 },
-    { "es": "Me gusta más el de Vale.", "options": ["I like Vale more.", "I like Vale's better."], "answer": 1 }
+    {
+      "es": "Me llevo la azul.",
+      "options": [
+        "I'll take the blue one (the shirt).",
+        "I'll take the blue one (the sweater)."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me llevo el negro.",
+      "options": [
+        "I'll take the black one (the jacket).",
+        "I'll take the black one (the sweater)."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me llevo los más baratos.",
+      "options": [
+        "I'll take the cheapest one.",
+        "I'll take the cheapest ones.",
+        "I'll take the cheaper ones."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Quiero la de cuero.",
+      "options": [
+        "I want leather.",
+        "I want the leather one.",
+        "I want the leather."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Prefiero las blancas.",
+      "options": [
+        "I prefer the white ones (the boots).",
+        "I prefer the white one (the bag)."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuál quiere?\nEl de lana.",
+      "options": [
+        "Which one do you want? (formal)\nWool.",
+        "Which one do you want? (formal)\nThe wool one."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La más barata es la roja.",
+      "options": [
+        "The red one is cheaper.",
+        "The cheaper one is red.",
+        "The cheapest one is the red one."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Me gusta más el de Vale.",
+      "options": [
+        "I like Vale more.",
+        "I like Vale's better."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
@@ -33,10 +110,10 @@
       "why": "*La camisa*, so *la azul*."
     },
     {
-      "prompt": "Talking about sweaters. Pick and type the whole sentence: *Prefiero ___ negro.* (*el* or *la*) I prefer the black one.",
-      "answer": "Prefiero el negro.",
+      "prompt": "Talking about boots. Say: The cheapest ones are the black ones.",
+      "answer": "Las más baratas son las negras.",
       "accept": [],
-      "why": "*El suéter*, so *el negro*."
+      "why": "*Las botas*, so *las* both times, and *baratas* and *negras* agree with them."
     },
     {
       "prompt": "Talking about jackets. Say: I'll take the cheapest one.",
@@ -76,9 +153,9 @@
       "why": "Almost. Spanish has no word for one here; the article does the work."
     },
     {
-      "wrong": "¿La camisa? Me llevo el azul.",
-      "right": "¿La camisa? Me llevo la azul.",
-      "why": "Close. The article keeps the gender of the noun you dropped: *la camisa*, *la azul*."
+      "wrong": "Me gusta más el Vale.",
+      "right": "Me gusta más el de Vale.",
+      "why": "Close. For whose it is, keep *de*: *el de Vale* is Vale's."
     },
     {
       "wrong": "Quiero la cuero.",

@@ -44,7 +44,7 @@
         },
         {
           "type": "question",
-          "label": "ask her: end with a question"
+          "label": "ask: end with a question"
         }
       ],
       "focus": "p:ser-de-material",
@@ -69,7 +69,7 @@
         },
         {
           "type": "question",
-          "label": "ask her: end with a question"
+          "label": "ask: end with a question"
         }
       ],
       "focus": "g:object-pronoun-position",
@@ -106,11 +106,11 @@
       "id": "t5",
       "npc": "Tengo unas grises, pero solo en 41. Lo siento.",
       "npcEn": "I have some grey ones, but only in a 41. I'm sorry.",
-      "intent": "Say what a shame; then you'll take the black ones.",
+      "intent": "Say that's no problem; then you'll take the black ones.",
       "accept": [
-        "¡Qué pena! Entonces me llevo las negras.",
+        "No hay problema. Entonces me llevo las negras.",
         "Bueno, entonces me llevo las negras.",
-        "Qué pena. Entonces las negras. Me las llevo."
+        "No importa. Entonces las negras. Me las llevo."
       ],
       "require": [
         {
@@ -125,8 +125,8 @@
     },
     {
       "id": "t6",
-      "npc": "Muy bien. Son doscientos mil. ¿Tarjeta o efectivo?\n¿Crédito? ¿A cuántas cuotas?",
-      "npcEn": "Very good. That's two hundred thousand. Card or cash?\nCredit? How many instalments?",
+      "npc": "Muy bien. Son doscientos mil. ¿Efectivo o tarjeta? Con crédito puede pagar a cuotas.",
+      "npcEn": "Very good. That's two hundred thousand. Cash or card? With credit you can pay in instalments.",
       "intent": "Say by credit card, in three instalments.",
       "accept": [
         "Con tarjeta de crédito, a tres cuotas.",
@@ -155,9 +155,9 @@
     "c:hay",
     "c:hola-buenos-dias",
     "c:lo-siento-pero-no-puedo",
+    "c:no-te-preocupes",
     "c:por-favor",
     "c:puedo",
-    "c:que-pena",
     "c:solo-estoy-mirando",
     "c:tarjeta-o-efectivo",
     "c:tengo",
@@ -191,7 +191,6 @@
     "l:crédito",
     "l:cuero",
     "l:cuota",
-    "l:cuánto",
     "l:cómo",
     "l:descuento",
     "l:efectivo",
@@ -199,15 +198,17 @@
     "l:favor",
     "l:gris",
     "l:hoy",
+    "l:importar",
     "l:listo",
     "l:llevarse",
     "l:medir",
     "l:mirar",
     "l:negro",
     "l:número",
-    "l:pena",
+    "l:pagar",
     "l:poder",
     "l:probarse",
+    "l:problema",
     "l:quedar",
     "l:qué",
     "l:sentir",

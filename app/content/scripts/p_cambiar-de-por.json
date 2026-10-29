@@ -6,29 +6,104 @@
     "en": "I want to exchange this shirt for a bigger size."
   },
   "examples": [
-    { "es": "Cambié de trabajo el año pasado.", "en": "I changed jobs last year." },
-    { "es": "¿Dónde puedo cambiar dólares por pesos?", "en": "Where can I change dollars into pesos?" },
-    { "es": "Mariana cambió de opinión.", "en": "Mariana changed her mind." },
-    { "es": "Vale cambió de apartamento en enero.", "en": "Vale moved to a different apartment in January." },
-    { "es": "Quiero cambiar estos tenis por otros.", "en": "I want to exchange these trainers for another pair." }
+    {
+      "es": "Cambié de trabajo el año pasado.",
+      "en": "I changed jobs last year."
+    },
+    {
+      "es": "¿Dónde puedo cambiar dólares por pesos?",
+      "en": "Where can I change dollars into pesos?"
+    },
+    {
+      "es": "Mariana cambió de opinión.",
+      "en": "Mariana changed her mind."
+    },
+    {
+      "es": "Vale cambió de apartamento en enero.",
+      "en": "Vale moved to a different apartment in January."
+    },
+    {
+      "es": "Quiero cambiar estos tenis por otros.",
+      "en": "I want to exchange these trainers for another pair."
+    }
   ],
   "rule": "*Cambiar* has two jobs, and the word after it tells you which.\n*Cambiar de* plus a noun: switch to a different one. *Cambié de trabajo*, *cambió de opinión*. No article after *de*, and no *mi* or *su* where English says my or her.\n*Cambiar* one thing *por* another: a real exchange, one out, one in. *Cambiar dólares por pesos*, *cambiar esta camisa por una más grande*.\nSo at the shop counter, it's *por*. A new job, apartment or mind: *de*.",
   "smallPrint": "Grammars say the verb takes these prepositions. With nothing after it, *cambiar* just means change: *el barrio cambió mucho*.",
   "readAndPick": [
-    { "es": "Cambié de trabajo.", "options": ["I changed jobs.", "I exchanged my job for money."], "answer": 0 },
-    { "es": "Cambié la camisa por una talla M.", "options": ["I changed my shirt.", "I exchanged the shirt for a medium."], "answer": 1 },
-    { "es": "Mariana cambió de opinión.", "options": ["Mariana changed her mind.", "Mariana changed someone's mind.", "Mariana swapped opinions."], "answer": 0 },
-    { "es": "¿Dónde puedo cambiar dólares por pesos?", "options": ["Where can I spend dollars?", "Where can I change dollars into pesos?", "Where can I change pesos into dollars?"], "answer": 1 },
-    { "es": "Vale cambió de apartamento.", "options": ["Vale changed her apartment around.", "Vale moved to a different apartment."], "answer": 1 },
-    { "es": "Cambié pesos por dólares.", "options": ["I changed pesos into dollars.", "I changed dollars into pesos."], "answer": 0 },
-    { "es": "Hernando no quiere cambiar de barrio.", "options": ["Hernando doesn't want to move to another neighbourhood.", "Hernando doesn't want the neighbourhood to change."], "answer": 0 },
-    { "es": "¿Puedo cambiar la chaqueta por otra?", "options": ["Can I change the colour of the jacket?", "Can I exchange the jacket for another one?"], "answer": 1 }
+    {
+      "es": "Cambié de trabajo.",
+      "options": [
+        "I changed jobs.",
+        "I exchanged my job for money."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cambié la camisa por una talla M.",
+      "options": [
+        "I changed my shirt.",
+        "I exchanged the shirt for a medium."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mariana cambió de opinión.",
+      "options": [
+        "Mariana changed her mind.",
+        "Mariana changed someone's mind.",
+        "Mariana swapped opinions."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Dónde puedo cambiar dólares por pesos?",
+      "options": [
+        "Where can I spend dollars?",
+        "Where can I change dollars into pesos?",
+        "Where can I change pesos into dollars?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale cambió de apartamento.",
+      "options": [
+        "Vale changed her apartment around.",
+        "Vale moved to a different apartment."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cambié pesos por dólares.",
+      "options": [
+        "I changed pesos into dollars.",
+        "I changed dollars into pesos."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hernando no quiere cambiar de barrio.",
+      "options": [
+        "Hernando doesn't want to move to another neighbourhood.",
+        "Hernando doesn't want the neighbourhood to change."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Puedo cambiar la chaqueta por otra?",
+      "options": [
+        "Can I change the colour of the jacket?",
+        "Can I exchange the jacket for another one?"
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
       "prompt": "Pick and type the whole sentence: *Cambié ___ trabajo el año pasado.* (*de* or *por*) I changed jobs last year.",
       "answer": "Cambié de trabajo el año pasado.",
-      "accept": ["El año pasado cambié de trabajo."],
+      "accept": [
+        "El año pasado cambié de trabajo."
+      ],
       "why": "Switching to a new job, no swap: *cambiar de*."
     },
     {
@@ -40,13 +115,17 @@
     {
       "prompt": "Tell a friend: I changed my mind.",
       "answer": "Cambié de opinión.",
-      "accept": ["Cambié de idea."],
+      "accept": [
+        "Cambié de idea."
+      ],
       "why": "Changing your mind is *cambiar de opinión*, with no *mi*."
     },
     {
-      "prompt": "Ask at a shoe shop (formal): Can I exchange these trainers for a bigger size?",
+      "prompt": "Ask at a shoe shop: Can I exchange these trainers for a bigger size?",
       "answer": "¿Puedo cambiar estos tenis por un número más grande?",
-      "accept": [],
+      "accept": [
+        "¿Puedo cambiar estos tenis por unos más grandes?"
+      ],
       "why": "A real exchange, so *por*; and shoes go by *número*, not *talla*."
     },
     {

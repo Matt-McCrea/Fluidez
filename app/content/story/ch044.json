@@ -2,7 +2,7 @@
   "id": "ch044",
   "unit": "u16",
   "title": "Nuestra esquina",
-  "text": "El sillón morado pasó la noche en la calle, y Hernando pasó la noche en el sillón.\nHernando: Dormí mejor que en mi cama, mijo.\nVale: Tu problema, tu español, Tomás. Yo me quedo en el café.\nHernando y Tomás lo subieron a la Burra, con Simón arriba.\nEn el almacén, el vendedor del jueves estaba en la caja.\nVendedor: ¡El señor de los setecientos mil! ¿Y hoy en qué le puedo servir?\nTomás: Buenos días. Me quiero devolver.\nVendedor: ¿Usted se devuelve? ¿A Toronto?\nTomás: No, señor. Quiero devolver el sillón morado. Es más grande que la puerta del café.\nVendedor: Aquí no devolvemos plata.\nTomás: ¿Y no lo tiene en otra talla?\nVendedor: ¿Talla? Es un sillón, no una camisa.\nSimón: ¡Me quiero devolver!\nTomás habló despacio, con todo su español.\nTomás: Señor, es muy bonito. Es el más bonito de San Victorino. Pero mi café es pequeño, y mi puerta es la más pequeña de La Candelaria.\nVendedor: Bueno. Plata no, pero cambios sí. ¿Qué necesita?\nTomás: Una máquina de café. La nuestra no funciona.\nVendedor: Tengo una máquina internacional. Es la mejor del almacén. Se la doy, y usted me deja el sillón.\nTomás: ¿Me hace un descuento?\nVendedor: Hoy hay rebaja. Usted me pagó setecientos, y la máquina vale seiscientos. Le devuelvo cien mil. Es justo.\nTomás: ¿Me los da en efectivo?\nVendedor: Se los doy en efectivo, claro.\nUna conversación difícil, toda en español, ¡y Tomás ganó!\nVendedor: Ya tengo un cliente. Un señor de Altamira quiere doce iguales para su hotel nuevo en La Candelaria.\nTomás: ¿Un hotel? ¿Dónde?\nVendedor: Calle 11 con carrera 4. En la esquina.\nHernando miró a Tomás.\nHernando: Mijo, esa es nuestra esquina.",
+  "text": "El sillón morado pasó la noche en la calle, y Hernando pasó la noche en el sillón.\nHernando: Dormí mejor que en mi cama, mijo.\nVale: Tu problema, tu español, Tomás. Yo me quedo en el café.\nHernando y Tomás lo subieron a la Burra, con Simón arriba.\nEn el almacén, el vendedor del jueves estaba en la caja.\nVendedor: ¡El señor de los setecientos mil! ¿Y hoy en qué le puedo servir?\nTomás: Buenos días. Me quiero devolver.\nVendedor: ¿Usted se devuelve? ¿A Toronto?\nTomás: No, señor. Quiero devolver el sillón morado. Es más grande que la puerta del café.\nVendedor: Aquí no devolvemos plata.\nTomás: ¿Y no lo tiene en otra talla?\nVendedor: ¿Talla? Es un sillón, no una camisa.\nSimón: ¡Me quiero devolver!\nTomás habló despacio, con todo su español.\nTomás: Señor, es muy bonito. Es el más bonito de San Victorino. Pero mi café es pequeño, y mi puerta es la más pequeña de La Candelaria.\nVendedor: Bueno. Plata no, pero cambios sí. ¿Qué necesita?\nTomás: Una máquina de café. La nuestra no funciona.\nVendedor: Tengo una máquina internacional. Es la mejor del almacén. Se la doy, y usted me deja el sillón.\nTomás: ¿Me hace un descuento?\nVendedor: ¿Descuento? Mejor todavía: hoy la máquina tiene rebaja. Usted me pagó setecientos, y con la rebaja la máquina vale seiscientos. Le devuelvo cien mil. Es justo.\nHernando: Es justo, mijo. Acepte.\nTomás: ¿Me los da en efectivo?\nVendedor: Se los doy en efectivo, claro.\nUna conversación difícil, toda en español, ¡y Tomás ganó!\nVendedor: Ya tengo un cliente. Un señor de Altamira quiere doce iguales para su hotel nuevo en La Candelaria.\nTomás: ¿Un hotel? ¿Dónde?\nVendedor: Calle 11 con carrera 4. En la esquina.\nHernando miró a Tomás.\nHernando: Mijo, esa es nuestra esquina.",
   "gloss": [
     {
       "es": "mijo",
@@ -121,7 +121,6 @@
     "c:claro-listo",
     "c:en-que-le-puedo-servir",
     "c:entonces-bueno",
-    "c:hay",
     "c:hola-buenos-dias",
     "c:me-hace-una-rebajita",
     "c:puedo",
@@ -131,13 +130,13 @@
     "c:tienes",
     "c:vale-spain",
     "g:adjective-agreement",
+    "g:commands-usted",
     "g:comparatives",
     "g:demonstratives",
     "g:direct-objects",
     "g:double-pronouns",
     "g:estar-location-states",
     "g:gender-articles",
-    "g:hay-vs-esta",
     "g:imperfect-states",
     "g:indirect-objects",
     "g:possessives",
@@ -159,9 +158,11 @@
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:street-names",
-    "p:talla-numero"
+    "p:talla-numero",
+    "p:ya-todavia-basic"
   ],
   "lexemes": [
+    "l:aceptar",
     "l:almacén",
     "l:aquí",
     "l:arriba",
@@ -202,6 +203,7 @@
     "l:jueves",
     "l:justo",
     "l:mejor",
+    "l:mijo",
     "l:mirar",
     "l:morado",
     "l:máquina",

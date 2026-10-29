@@ -42,46 +42,41 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Buenas tardes. Busco una chaqueta azul oscuro, talla M. ¿La tiene en otro color? Me gusta mucho, pero creo que me queda grande. ¿Me la puedo medir?",
+    "model": "Buenas tardes. Busco una chaqueta para el frío, talla M. Me gusta esta azul oscuro, pero ¿la tiene en otro color? Algo más claro, por favor.",
     "focus": "c:en-que-le-puedo-servir",
     "requires": [
-      "c:creo-que",
+      "c:algo-mas",
+      "c:claro-listo",
       "c:hola-buenos-dias",
       "c:me-gusta",
-      "c:me-lo-puedo-medir",
-      "c:puedo",
+      "c:por-favor",
       "c:tienes",
       "g:direct-objects",
-      "g:double-pronouns",
       "g:gender-articles",
       "g:gustar-basic",
-      "g:parecer-quedar",
       "g:present-ar",
       "g:stem-boot",
-      "g:that-clauses",
-      "g:verb-infinitive",
       "l:azul",
       "l:buena",
       "l:buscar",
       "l:chaqueta",
+      "l:claro",
       "l:color",
-      "l:creer",
-      "l:grande",
+      "l:favor",
+      "l:frío",
       "l:gustar",
-      "l:medir",
       "l:oscuro",
-      "l:poder",
-      "l:quedar",
       "l:talla",
       "l:tarde",
       "l:tener",
       "p:azul-oscuro-invariable",
       "p:colores-compuestos",
       "p:colour-claro-oscuro",
+      "p:demonstratives-basic",
       "p:el-azul",
       "p:el-rojo-la-grande",
       "p:otro-no-article",
-      "p:quantifiers-basic",
+      "p:para-inf",
       "p:talla-numero"
     ]
   },
@@ -108,7 +103,14 @@
           "rojos",
           "morados",
           "amarillos",
-          "rosados"
+          "rosados",
+          "cafés",
+          "negras",
+          "blancas",
+          "rojas",
+          "moradas",
+          "amarillas",
+          "rosadas"
         ],
         "label": "name a colour"
       },
@@ -172,8 +174,8 @@
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\b\\w+[aei]r(lo|la|los|las)\\b",
-        "label": "attach a pronoun to an infinitive (comprarlas, verlas)"
+        "pattern": "\\b\\w+[aei]r(lo|la|los|las)\\b|\\b(lo|la|los|las)\\s+(quiero|queremos|voy|vamos|puedo|podemos|puedes|necesito|necesitamos|tengo|tenemos)\\b",
+        "label": "use lo/la/los/las with two verbs (comprarlas, or las quiero comprar)"
       },
       {
         "type": "question",
@@ -223,7 +225,7 @@
   {
     "id": "w-u16-04",
     "unit": "u16",
-    "prompt": "Mariana sent you a photo and asked how you look. You tried on a red dress for a friend's party. Reply to her (a friend): say how it fits, say whether you like it, and say what you will do.",
+    "prompt": "You're trying on a red dress for a friend's party, and Mariana (a friend) texts to ask how it's going. Reply: say how it fits, say whether you like it, and say what you will do.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -299,29 +301,36 @@
         "n": 3
       }
     ],
-    "model": "Mariana, fui a San Victorino. Es el mercado más grande de Bogotá y todo es baratísimo. La tienda de zapatos es la mejor del centro. Te recomiendo ir temprano.",
+    "model": "Mariana, fui a San Victorino. Es el mercado más grande de Bogotá y todo es baratísimo. La tienda de zapatos es la mejor del centro. Tienes que ir temprano, porque a las diez hay muchísima gente.",
     "focus": "g:superlatives",
     "requires": [
       "c:fui",
+      "c:hay",
+      "c:porque",
+      "c:tienes",
       "g:adjective-agreement",
+      "g:cause-result",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "g:stem-boot",
       "g:superlatives",
+      "g:verb-infinitive",
       "l:barato",
       "l:centro",
+      "l:gente",
       "l:grande",
       "l:ir",
       "l:mejor",
       "l:mercado",
-      "l:recomendar",
       "l:ser",
       "l:temprano",
+      "l:tener",
       "l:tienda",
       "l:zapatos",
-      "p:me-te-nos-objects",
-      "p:permitir-inf"
+      "p:la-gente-singular",
+      "p:telling-time"
     ]
   },
   {
@@ -401,10 +410,6 @@
           "le las"
         ],
         "label": "no \"le lo\": it becomes \"se lo\""
-      },
-      {
-        "type": "negation",
-        "label": "say something negative"
       }
     ],
     "model": "Mariana, ya compré el regalo de Vale. Se lo doy el viernes en el café. No era barato, pero creo que le va a gustar.",
@@ -451,14 +456,21 @@
         "type": "containsAny",
         "words": [
           "negro",
+          "negra",
           "azul",
           "rojo",
+          "roja",
           "verde",
           "morado",
+          "morada",
           "amarillo",
+          "amarilla",
           "blanco",
+          "blanca",
           "gris",
-          "rosado"
+          "rosado",
+          "rosada",
+          "café"
         ],
         "label": "give the colour"
       },
@@ -499,7 +511,7 @@
   {
     "id": "w-u16-09",
     "unit": "u16",
-    "prompt": "You bought an armchair yesterday and it does not fit through your door. Go back to the shop and tell the manager (a stranger, usted) what happened, then ask to exchange it for a smaller one.",
+    "prompt": "You bought an armchair yesterday and it does not fit in your café. Go back to the shop and tell the manager (a stranger, usted) what happened, then ask to exchange it for a smaller one.",
     "minWords": 25,
     "maxWords": 60,
     "constraints": [
@@ -530,7 +542,7 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Buenas tardes. Compré este sillón ayer, pero no cabe en mi apartamento. Es morado y muy grande. Quiero cambiarlo por uno más pequeño. Todavía no lo usé. ¿Es posible?",
+    "model": "Buenas tardes. Compré este sillón ayer, pero no cabe en mi café. Es morado y muy grande. Quiero cambiarlo por uno más pequeño. Todavía no lo usé. ¿Es posible?",
     "focus": "p:cambiar-de-por",
     "requires": [
       "c:ayer-anoche",
@@ -545,10 +557,10 @@
       "g:ser-identity",
       "g:stem-boot",
       "g:verb-infinitive",
-      "l:apartamento",
       "l:ayer",
       "l:buena",
       "l:caber",
+      "l:café",
       "l:cambiar",
       "l:comprar",
       "l:grande",
@@ -708,13 +720,12 @@
         "label": "say which you prefer"
       }
     ],
-    "model": "Vale, encontré los pantalones. Los tienen en gris claro y en azul oscuro. Prefiero el azul oscuro porque me parece más elegante. Son muy bonitos y cuestan treinta mil pesos.",
+    "model": "Vale, encontré el pantalón del uniforme. Lo tienen en gris claro y en azul oscuro. Prefiero el azul oscuro porque me parece más elegante. Es muy bonito y cuesta treinta mil pesos.",
     "focus": "p:colour-claro-oscuro",
     "requires": [
       "c:claro-listo",
       "c:porque",
       "c:tienes",
-      "g:adjective-agreement",
       "g:cause-result",
       "g:direct-objects",
       "g:gender-articles",
@@ -731,19 +742,19 @@
       "l:encontrar",
       "l:gris",
       "l:oscuro",
-      "l:pantalones",
+      "l:pantalón",
       "l:parecer",
       "l:peso",
       "l:preferir",
       "l:ser",
       "l:tener",
+      "l:uniforme",
       "p:azul-oscuro-invariable",
       "p:colores-compuestos",
       "p:colour-claro-oscuro",
       "p:costar-pagar",
       "p:el-azul",
       "p:el-rojo-la-grande",
-      "p:plural-one-object",
       "p:prefieres-x-o-y",
       "p:quantifiers-basic"
     ]
@@ -838,7 +849,7 @@
         "label": "ask about the grey one"
       }
     ],
-    "model": "Buenas tardes. Solo estoy mirando, gracias. Un momento, perdón, ¿tiene este saco en gris? Me gusta mucho y creo que me queda bien. ¿Cuánto cuesta? Está bien, me lo llevo.",
+    "model": "Buenas tardes. Solo estoy mirando, gracias. Un momento, perdón, ¿tiene esta chaqueta en gris? Me gusta mucho y creo que me queda bien. ¿Cuánto cuesta? Está bien, me la llevo.",
     "focus": "c:solo-estoy-mirando",
     "requires": [
       "c:bien-y-tu",
@@ -861,6 +872,7 @@
       "g:that-clauses",
       "l:bien",
       "l:buena",
+      "l:chaqueta",
       "l:costar",
       "l:creer",
       "l:cuánto",
@@ -872,7 +884,6 @@
       "l:momento",
       "l:perdón",
       "l:quedar",
-      "l:saco",
       "l:tarde",
       "l:tener",
       "p:bien-bueno",

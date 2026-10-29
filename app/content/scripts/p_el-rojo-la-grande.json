@@ -1,28 +1,100 @@
 {
   "node": "p:el-rojo-la-grande",
   "hook": {
-    "line": "Tomás and Vale are in San Victorino buying shirts for the café. Once everyone knows you're talking about shirts, nobody says shirt again: you just point and say the blue one.",
+    "line": "Vale holds up two shirts in San Victorino, a red one and a white one, and asks Tomás which. He says *me gusta el rojo*, and she laughs: he's just told her he likes the colour red. One little article makes the difference.",
     "es": "¿Cuál camisa?\nLa azul.",
     "en": "Which shirt?\nThe blue one."
   },
   "examples": [
-    { "es": "Me llevo el grande.", "en": "I'll take the big one." },
-    { "es": "Me gusta más la roja.", "en": "I like the red one better." },
-    { "es": "No quiero los negros, quiero los blancos.", "en": "I don't want the black ones, I want the white ones." },
-    { "es": "La camisa azul es bonita, pero la blanca es más barata.", "en": "The blue shirt is nice, but the white one is cheaper." },
-    { "es": "¿Te gustan las verdes o las amarillas?", "en": "Do you like the green ones or the yellow ones? (to a friend)" }
+    {
+      "es": "Me llevo el grande.",
+      "en": "I'll take the big one."
+    },
+    {
+      "es": "Me gusta más la roja.",
+      "en": "I like the red one better."
+    },
+    {
+      "es": "No quiero los negros, quiero los blancos.",
+      "en": "I don't want the black ones, I want the white ones."
+    },
+    {
+      "es": "La camisa azul es bonita, pero la blanca es más barata.",
+      "en": "The blue shirt is nice, but the white one is cheaper."
+    },
+    {
+      "es": "¿Te gustan las verdes o las amarillas?",
+      "en": "Do you like the green ones or the yellow ones? (to a friend)"
+    }
   ],
-  "rule": "English needs the word one: the blue one, the big ones. Spanish just drops the noun and keeps the rest: *la azul*, *los grandes*. There's no word for one here.\n\nThe *el*, *la*, *los* or *las* still remembers the noun you dropped, and so does the ending: *la roja* is a shirt (*la camisa*), *el rojo* is a jacket (*el saco*), *los rojos* are a few of them.\n\nOne twist: a colour talked about as a colour is always *el*. *Me gusta el rojo* is I like red; *me gusta la roja* is I like the red one.",
+  "rule": "You've met *la negra* and *el más barato*. The same trick works with any describing word: *el grande*, *la pequeña*, *los nuevos*. The article and the ending still follow the noun you dropped: *la roja* is a shirt (*la camisa*), *el rojo* is a sweater (*el suéter*), *los rojos* are a few of them.\n\nNow the twist. A colour talked about as a colour is always *el*, whatever it's on: *me gusta el rojo* is I like red; *me gusta la roja* is I like the red one.\n\nAnd keep the article: I prefer red is *prefiero el rojo*, never just *prefiero rojo*.",
   "smallPrint": "Teachers call this an adjective used as a noun (*adjetivo sustantivado*): the article plus the adjective stands in for the whole phrase.",
   "readAndPick": [
-    { "es": "¿El saco o la camisa? Me llevo la blanca.", "options": ["The jacket or the shirt? I'll take the white jacket.", "The jacket or the shirt? I'll take the white shirt."], "answer": 1 },
-    { "es": "¿El saco o la camisa? Me llevo el negro.", "options": ["The jacket or the shirt? I'll take the black jacket.", "The jacket or the shirt? I'll take the black shirt."], "answer": 0 },
-    { "es": "Me gusta el rojo.", "options": ["I like red.", "I like the red shirt."], "answer": 0 },
-    { "es": "Me gusta la roja.", "options": ["I like red.", "I like the red one."], "answer": 1 },
-    { "es": "Los grandes son más baratos.", "options": ["The big one is cheaper.", "The big ones are cheaper."], "answer": 1 },
-    { "es": "La pequeña es para mi hermana.", "options": ["The small one is for my sister.", "The small ones are for my sister."], "answer": 0 },
-    { "es": "¿Te gustan las verdes o las amarillas?", "options": ["Do you like green or yellow?", "Do you like the green one or the yellow one?", "Do you like the green ones or the yellow ones?"], "answer": 2 },
-    { "es": "¿Los tenis? Quiero los blancos.", "options": ["The sneakers? I want the white one.", "The sneakers? I want the white ones."], "answer": 1 }
+    {
+      "es": "¿El suéter o la camisa? Me llevo la blanca.",
+      "options": [
+        "The sweater or the shirt? I'll take the white sweater.",
+        "The sweater or the shirt? I'll take the white shirt."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿El suéter o la camisa? Me llevo el negro.",
+      "options": [
+        "The sweater or the shirt? I'll take the black sweater.",
+        "The sweater or the shirt? I'll take the black shirt."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me gusta el rojo.",
+      "options": [
+        "I like red.",
+        "I like the red shirt."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me gusta la roja.",
+      "options": [
+        "I like red.",
+        "I like the red one."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los grandes son más baratos.",
+      "options": [
+        "The big one is cheaper.",
+        "The big ones are cheaper."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La pequeña es para mi hermana.",
+      "options": [
+        "The small one is for my sister.",
+        "The small ones are for my sister."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Te gustan las verdes o las amarillas?",
+      "options": [
+        "Do you like green or yellow?",
+        "Do you like the green one or the yellow one?",
+        "Do you like the green ones or the yellow ones?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Los tenis? Quiero los blancos.",
+      "options": [
+        "The trainers? I want the white one.",
+        "The trainers? I want the white ones."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
@@ -32,21 +104,23 @@
       "why": "*Camisa* is a *la* word, so the blue one is *la azul*."
     },
     {
-      "prompt": "Choose *los blancos* or *las blancas* and type the whole sentence: ¿Los tenis? Quiero ___. (The sneakers? I want the white ones.)",
+      "prompt": "Choose *los blancos* or *las blancas* and type the whole sentence: ¿Los tenis? Quiero ___. (The trainers? I want the white ones.)",
       "answer": "¿Los tenis? Quiero los blancos.",
       "accept": [],
       "why": "*Los tenis* is an *el* word in the plural, so the ending is *los blancos*."
     },
     {
-      "prompt": "Say: I'll take the big one. (a jacket, *el saco*)",
+      "prompt": "Say: I'll take the big one. (a sweater, *el suéter*)",
       "answer": "Me llevo el grande.",
       "accept": [],
-      "why": "Drop *saco* and keep *el*: *el grande*."
+      "why": "Drop *suéter* and keep *el*: *el grande*."
     },
     {
       "prompt": "Say: I like the red one better. (a skirt, *la falda*)",
       "answer": "Me gusta más la roja.",
-      "accept": ["La roja me gusta más."],
+      "accept": [
+        "La roja me gusta más."
+      ],
       "why": "*Falda* is a *la* word, so red becomes *roja* and the article is *la*."
     },
     {
@@ -70,9 +144,9 @@
   ],
   "pitfalls": [
     {
-      "wrong": "Me llevo la azul una.",
-      "right": "Me llevo la azul.",
-      "why": "Almost. Spanish has no word for one here: the article and the colour are enough."
+      "wrong": "Prefiero rojo.",
+      "right": "Prefiero el rojo.",
+      "why": "Almost. A colour as a thing takes *el*: *el rojo*, where English has no word at all."
     },
     {
       "wrong": "¿La camisa? Me llevo el rojo.",

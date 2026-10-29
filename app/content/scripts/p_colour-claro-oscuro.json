@@ -6,24 +6,104 @@
     "en": "I'm looking for a light blue jacket."
   },
   "examples": [
-    { "es": "Busco una camisa azul claro.", "en": "I'm looking for a light blue shirt." },
-    { "es": "Me compré una chaqueta verde oscuro.", "en": "I bought myself a dark green jacket." },
-    { "es": "Tengo dos camisas azul oscuro.", "en": "I have two dark blue shirts." },
-    { "es": "Vale tiene los ojos café claro.", "en": "Vale has light brown eyes." },
-    { "es": "¿Lo tiene en otro color?", "en": "Do you have it in another colour? (formal)" },
-    { "es": "La habitación es muy oscura.", "en": "The room is very dark." }
+    {
+      "es": "Busco una camisa azul claro.",
+      "en": "I'm looking for a light blue shirt."
+    },
+    {
+      "es": "Me compré una chaqueta verde oscuro.",
+      "en": "I bought myself a dark green jacket."
+    },
+    {
+      "es": "Tengo dos camisas azul oscuro.",
+      "en": "I have two dark blue shirts."
+    },
+    {
+      "es": "Vale tiene los ojos café claro.",
+      "en": "Vale has light brown eyes."
+    },
+    {
+      "es": "¿Lo tiene en otro color?",
+      "en": "Do you have it in another colour? (formal)"
+    },
+    {
+      "es": "La habitación es muy oscura.",
+      "en": "The room is very dark."
+    }
   ],
   "rule": "Put *claro* (light) or *oscuro* (dark) after the colour: *azul claro*, *verde oscuro*. English puts light first; Spanish puts it second.\nThe surprise: that pair never changes. *Una camisa azul claro*, *dos camisas azul oscuro*, never *azul clara* or *azules oscuras*. Think of it as a paint name.\nOn their own, *claro* and *oscuro* agree like any adjective: *la habitación es muy oscura*.\nIn Colombia brown is *café*. To ask for a different one: *¿Lo tiene en otro color?*",
   "smallPrint": "Grammars call these compound colours, and they don't agree. You'll also hear *de color* before a colour: *una chaqueta de color café*. And red wine is *vino tinto*, never *vino rojo*.",
   "readAndPick": [
-    { "es": "Busco una camisa azul oscuro.", "options": ["I'm looking for a dark blue shirt.", "I'm looking for a light blue shirt.", "I'm looking for a blue shirt."], "answer": 0 },
-    { "es": "Tengo unos tenis verde claro.", "options": ["I have some dark green trainers.", "I have some light green trainers."], "answer": 1 },
-    { "es": "La cocina es muy clara.", "options": ["The kitchen is very bright.", "The kitchen is very dark.", "The kitchen is light green."], "answer": 0 },
-    { "es": "Vale tiene los ojos café oscuro.", "options": ["Vale has light brown eyes.", "Vale has dark brown eyes.", "Vale has black eyes."], "answer": 1 },
-    { "es": "¿Lo tiene en otro color?", "options": ["What colour is it? (formal)", "Do you have it in another size? (formal)", "Do you have it in another colour? (formal)"], "answer": 2 },
-    { "es": "Mi carro es rojo oscuro.", "options": ["My car is light red.", "My car is red.", "My car is dark red."], "answer": 2 },
-    { "es": "Las paredes son amarillo claro.", "options": ["The walls are light yellow.", "The walls are dark yellow."], "answer": 0 },
-    { "es": "Busco una chaqueta de color café.", "options": ["I'm looking for a jacket in the café.", "I'm looking for a brown jacket.", "I'm looking for a coffee."], "answer": 1 }
+    {
+      "es": "Busco una camisa azul oscuro.",
+      "options": [
+        "I'm looking for a dark blue shirt.",
+        "I'm looking for a light blue shirt.",
+        "I'm looking for a blue shirt."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo unos tenis verde claro.",
+      "options": [
+        "I have some dark green trainers.",
+        "I have some light green trainers."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La cocina es muy clara.",
+      "options": [
+        "The kitchen is very bright.",
+        "The kitchen is very dark.",
+        "The kitchen is light green."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Vale tiene los ojos café oscuro.",
+      "options": [
+        "Vale has light brown eyes.",
+        "Vale has dark brown eyes.",
+        "Vale has black eyes."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Lo tiene en otro color?",
+      "options": [
+        "What colour is it? (formal)",
+        "Do you have it in another size? (formal)",
+        "Do you have it in another colour? (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mi carro es rojo oscuro.",
+      "options": [
+        "My car is light red.",
+        "My car is red.",
+        "My car is dark red."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Las paredes son amarillo claro.",
+      "options": [
+        "The walls are light yellow.",
+        "The walls are dark yellow."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Busco una chaqueta de color café.",
+      "options": [
+        "I'm looking for a jacket in the café.",
+        "I'm looking for a brown jacket.",
+        "I'm looking for a coffee."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
@@ -41,19 +121,26 @@
     {
       "prompt": "Say: I'm looking for a dark green jacket.",
       "answer": "Busco una chaqueta verde oscuro.",
-      "accept": ["Estoy buscando una chaqueta verde oscuro."],
+      "accept": [
+        "Estoy buscando una chaqueta verde oscuro."
+      ],
       "why": "Colour first, then *oscuro*, and the pair doesn't change for *chaqueta*."
     },
     {
       "prompt": "You're holding a shirt. Ask the shop assistant (formal): Do you have it in another colour?",
       "answer": "¿La tiene en otro color?",
-      "accept": [],
+      "accept": [
+        "¿Lo tiene en otro color?",
+        "¿La tiene de otro color?"
+      ],
       "why": "*La camisa*, so *la tiene*; another colour is *otro color*, with no *un*."
     },
     {
       "prompt": "Say: The room is very dark.",
       "answer": "La habitación es muy oscura.",
-      "accept": ["El cuarto es muy oscuro."],
+      "accept": [
+        "El cuarto es muy oscuro."
+      ],
       "why": "On its own, *oscura* agrees with *la habitación*."
     },
     {

@@ -6,43 +6,136 @@
     "en": "I wear a medium, but this jacket is too big for me."
   },
   "examples": [
-    { "es": "¿Qué talla usa?\nTalla M.", "en": "What size do you wear? (formal)\nA medium." },
-    { "es": "¿Qué número calzas?\nCalzo 38.", "en": "What shoe size are you? (to a friend)\nI'm a 38." },
-    { "es": "Tomás usa talla L.", "en": "Tomás wears a large." },
-    { "es": "Esta chaqueta me queda grande.", "en": "This jacket is too big for me." },
-    { "es": "Estos tenis me quedan pequeños.", "en": "These trainers are too small for me." },
-    { "es": "Esa camisa te queda muy bien.", "en": "That shirt looks really good on you." }
+    {
+      "es": "¿Qué talla usa?\nTalla M.",
+      "en": "What size do you wear? (formal)\nA medium."
+    },
+    {
+      "es": "¿Qué número calzas?\nCalzo 38.",
+      "en": "What shoe size are you? (to a friend)\nI'm a 38."
+    },
+    {
+      "es": "Tomás usa talla L.",
+      "en": "Tomás wears a large."
+    },
+    {
+      "es": "Esta chaqueta me queda grande.",
+      "en": "This jacket is too big for me."
+    },
+    {
+      "es": "Estos tenis me quedan pequeños.",
+      "en": "These trainers are too small for me."
+    },
+    {
+      "es": "Esa camisa te queda muy bien.",
+      "en": "That shirt looks really good on you."
+    }
   ],
   "rule": "Spanish keeps two words for size. Clothes have a *talla*: *¿Qué talla usa?* *Talla M.* Shoes have a *número*: *¿Qué número calza?* *Calzo 38.* Don't swap them.\n*Calzar* is a verb just for shoe size: *calzo*, *calzas*, *calza*. For clothes, use *usar*: *uso talla M*.\nFor how something fits, use *quedar*, which works like *gustar*: *me queda grande* (too big), *me queda pequeño* (too small), *me queda bien* (it fits). There's no word for too: *grande* does the job. Several things: *me quedan*.",
   "smallPrint": "Teachers file this under size and measurement. In Colombia clothes come in letters (S, M, L) or numbers (*talla 10*), and shoes use the European number, so a US 8 is about a *41*.",
   "readAndPick": [
-    { "es": "¿Qué número calza?", "options": ["What size clothes do you wear? (formal)", "What shoe size are you? (formal)"], "answer": 1 },
-    { "es": "¿Qué talla usas?", "options": ["What size clothes do you wear? (to a friend)", "What shoe size are you? (to a friend)"], "answer": 0 },
-    { "es": "Esta camisa me queda grande.", "options": ["This shirt is too small for me.", "This shirt is too big for me.", "This shirt fits me well."], "answer": 1 },
-    { "es": "Los tenis me quedan bien.", "options": ["The trainers fit me well.", "The trainers are too big for me.", "The trainers look good on you."], "answer": 0 },
-    { "es": "La chaqueta te queda pequeña.", "options": ["The jacket is too small for me.", "The jacket is too big for you.", "The jacket is too small for you."], "answer": 2 },
-    { "es": "Calzo 40.", "options": ["I wear a size 40 in clothes.", "I'm a size 40 in shoes."], "answer": 1 },
-    { "es": "A Vale le queda grande.", "options": ["It's too big for Vale.", "It's too small for Vale.", "It's too big for me."], "answer": 0 },
-    { "es": "Me quedan pequeños.", "options": ["It's too small for me.", "They're too small for you.", "They're too small for me."], "answer": 2 },
-    { "es": "¿Tiene una talla más pequeña?", "options": ["Do you have a bigger size? (formal)", "Do you have a smaller size? (formal)"], "answer": 1 }
+    {
+      "es": "¿Qué número calza?",
+      "options": [
+        "What size clothes do you wear? (formal)",
+        "What shoe size are you? (formal)"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué talla usas?",
+      "options": [
+        "What size clothes do you wear? (to a friend)",
+        "What shoe size are you? (to a friend)"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Esta camisa me queda grande.",
+      "options": [
+        "This shirt is too small for me.",
+        "This shirt is too big for me.",
+        "This shirt fits me well."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los tenis me quedan bien.",
+      "options": [
+        "The trainers fit me well.",
+        "The trainers are too big for me.",
+        "The trainers look good on you."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La chaqueta te queda pequeña.",
+      "options": [
+        "The jacket is too small for me.",
+        "The jacket is too big for you.",
+        "The jacket is too small for you."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Calzo 40.",
+      "options": [
+        "I wear a size 40 in clothes.",
+        "I'm a size 40 in shoes."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Vale le queda grande.",
+      "options": [
+        "It's too big for Vale.",
+        "It's too small for Vale.",
+        "It's too big for me."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me quedan pequeños.",
+      "options": [
+        "It's too small for me.",
+        "They're too small for you.",
+        "They're too small for me."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Tiene una talla más pequeña?",
+      "options": [
+        "Do you have a bigger size? (formal)",
+        "Do you have a smaller size? (formal)"
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
-      "prompt": "Pick and type the whole sentence: *¿Qué ___ usa?* (*talla* or *número*) A shop assistant asks a customer what size shirt they wear.",
+      "prompt": "A shop assistant asks a customer what size shirt they wear. Pick and type the whole sentence: *¿Qué ___ usa?* (*talla* or *número*)",
       "answer": "¿Qué talla usa?",
-      "accept": ["¿Qué talla usa usted?"],
+      "accept": [
+        "¿Qué talla usa usted?"
+      ],
       "why": "Clothes have a *talla*."
     },
     {
       "prompt": "Pick and type the whole sentence: *¿Qué ___ calza?* (*talla* or *número*) What shoe size are you? (formal)",
       "answer": "¿Qué número calza?",
-      "accept": ["¿Qué número calza usted?"],
+      "accept": [
+        "¿Qué número calza usted?"
+      ],
       "why": "Shoes have a *número*, and *calzar* is the shoe verb."
     },
     {
       "prompt": "Tell the shop assistant: I'm a 39 in shoes. (write the number in digits)",
       "answer": "Calzo 39.",
-      "accept": ["Calzo el 39."],
+      "accept": [
+        "Calzo el 39.",
+        "Calzo treinta y nueve."
+      ],
       "why": "For shoes, *calzo* plus the number."
     },
     {
@@ -54,7 +147,9 @@
     {
       "prompt": "Tell a friend: That shirt looks really good on you.",
       "answer": "Esa camisa te queda muy bien.",
-      "accept": ["Esa camisa te queda bien."],
+      "accept": [
+        "Esa camisa te queda bien."
+      ],
       "why": "On you, to a friend, is *te queda*; looks good is *bien*."
     },
     {
@@ -66,7 +161,9 @@
     {
       "prompt": "Make it formal, for a customer: *¿Qué talla usas?*",
       "answer": "¿Qué talla usa?",
-      "accept": ["¿Qué talla usa usted?"],
+      "accept": [
+        "¿Qué talla usa usted?"
+      ],
       "why": "With *usted*, *usas* becomes *usa*."
     }
   ],

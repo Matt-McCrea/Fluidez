@@ -44,7 +44,7 @@
         },
         {
           "type": "question",
-          "label": "ask her: end with a question"
+          "label": "ask: end with a question"
         }
       ],
       "focus": "p:ser-de-material",
@@ -69,7 +69,7 @@
         },
         {
           "type": "question",
-          "label": "ask her: end with a question"
+          "label": "ask: end with a question"
         }
       ],
       "focus": "c:tiene-otra-talla",

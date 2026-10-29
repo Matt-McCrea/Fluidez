@@ -2,24 +2,24 @@
   "id": "sc-u16-c",
   "unit": "u16",
   "title": "The purple chair goes back",
-  "brief": "You're Tomás. The purple chair you called iconic is too big for the café's door, so you're back in San Victorino to return it. Be polite, explain, and leave with something that fits. The seller is older than you, so use usted.",
+  "brief": "You're Tomás. The purple armchair you called iconic is too big for the café's door, so you're back in San Victorino to return it. Be polite, explain, and leave with something that fits. The seller is older than you, so use usted.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Buenas tardes. ¡Ah, el señor de la silla morada! ¿Y ahora qué necesita?",
-      "npcEn": "Good afternoon. Ah, the purple chair man! And what do you need now?",
+      "npc": "Buenas tardes. ¡Ah, el señor del sillón morado! ¿Y ahora qué necesita?",
+      "npcEn": "Good afternoon. Ah, the purple armchair man! And what do you need now?",
       "intent": "Say you want to return it: it's too big for the café's door.",
       "accept": [
-        "Quiero devolverla. Es muy grande para la puerta del café.",
-        "La quiero devolver. Es muy grande para la puerta.",
-        "Buenas tardes. Quiero devolverla, porque es muy grande para la puerta del café."
+        "Quiero devolverlo. Es muy grande para la puerta del café.",
+        "Lo quiero devolver. Es muy grande para la puerta.",
+        "Buenas tardes. Quiero devolverlo, porque es muy grande para la puerta del café."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "devolverla|la quiero devolver",
+          "pattern": "devolverlo|lo quiero devolver",
           "flags": "i",
-          "label": "return it: quiero devolverla, or la quiero devolver"
+          "label": "return it: quiero devolverlo, or lo quiero devolver (el sillón, so lo)"
         }
       ],
       "focus": "g:object-pronoun-position",
@@ -27,20 +27,20 @@
     },
     {
       "id": "t2",
-      "npc": "¿Devolverla? Pero usted dijo que es la silla más bonita de Bogotá.",
-      "npcEn": "Return it? But you said it's the prettiest chair in Bogotá.",
+      "npc": "¿Devolverlo? Pero usted dijo que es el sillón más bonito de Bogotá.",
+      "npcEn": "Return it? But you said it's the prettiest armchair in Bogotá.",
       "intent": "Say yes, it's the prettiest, but it's also the biggest.",
       "accept": [
-        "Sí, es la más bonita, pero también es la más grande.",
-        "Es la más bonita, sí. Pero también es la más grande.",
-        "Claro, pero también es la silla más grande de Bogotá."
+        "Sí, es el más bonito, pero también es el más grande.",
+        "Es el más bonito, sí. Pero también es el más grande.",
+        "Claro, pero también es el sillón más grande de Bogotá."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "la (silla )?m[aá]s grande",
+          "pattern": "el (sill[oó]n )?m[aá]s grande",
           "flags": "i",
-          "label": "the biggest: la más grande"
+          "label": "the biggest: el más grande"
         }
       ],
       "focus": "g:superlatives",
@@ -48,20 +48,20 @@
     },
     {
       "id": "t3",
-      "npc": "Bueno. Aquí no devolvemos plata, señor. Pero se la puedo cambiar por otra.",
+      "npc": "Bueno. Aquí no devolvemos plata, señor. Pero se lo puedo cambiar por otro.",
       "npcEn": "Well. We don't give money back here, sir. But I can exchange it for another one for you.",
       "intent": "Say OK, you want to exchange it for a smaller one.",
       "accept": [
-        "Bueno, quiero cambiarla por una más pequeña.",
-        "Está bien. La quiero cambiar por una más pequeña.",
-        "Listo. Quiero cambiarla por una silla más pequeña."
+        "Bueno, quiero cambiarlo por uno más pequeño.",
+        "Está bien. Lo quiero cambiar por uno más pequeño.",
+        "Listo. Quiero cambiarlo por un sillón más pequeño."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "cambiar(la)? por",
+          "pattern": "cambiar(lo)? por",
           "flags": "i",
-          "label": "exchange it for: cambiarla por una más pequeña"
+          "label": "exchange it for: cambiarlo por uno más pequeño"
         }
       ],
       "focus": "p:cambiar-de-por",
@@ -69,24 +69,24 @@
     },
     {
       "id": "t4",
-      "npc": "Mire esta gris. Es de cuero y es más pequeña. Es un poco más cara, eso sí.",
+      "npc": "Mire este gris. Es de cuero y es más pequeño. Es un poco más caro, eso sí.",
       "npcEn": "Look at this grey one. It's leather and it's smaller. It's a bit more expensive, mind you.",
       "intent": "Say you'll take it, and ask if he can bring it to you at the café tomorrow.",
       "accept": [
-        "Me la llevo. ¿Me la puede llevar al café mañana?",
-        "Bueno, me la llevo. ¿Puede llevármela mañana al café?",
-        "Perfecto, me la llevo. ¿Me la lleva al café mañana?"
+        "Me lo llevo. ¿Me lo puede llevar al café mañana?",
+        "Bueno, me lo llevo. ¿Puede llevármelo mañana al café?",
+        "Perfecto, me lo llevo. ¿Me lo lleva al café mañana?"
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "me la (puede )?lleva|llev[aá]rmela",
+          "pattern": "me lo (puede )?lleva|llev[aá]rmelo",
           "flags": "i",
-          "label": "bring it to me: me la lleva (me first, then la)"
+          "label": "bring it to me: me lo lleva (me first, then lo)"
         },
         {
           "type": "question",
-          "label": "ask her: end with a question"
+          "label": "ask him: end with a question"
         }
       ],
       "focus": "g:double-pronouns",
@@ -94,13 +94,13 @@
     },
     {
       "id": "t5",
-      "npc": "Sí, mañana se la llevo. Oiga, una cosa: mi esposa vio la silla morada y le encanta.",
-      "npcEn": "Yes, I'll bring it to you tomorrow. Listen, one thing: my wife saw the purple chair and she loves it.",
-      "intent": "Say that to you it seems perfect for his house.",
+      "npc": "Sí, mañana se lo llevo. Oiga, una cosa: mi esposa vio el sillón morado y le encanta.",
+      "npcEn": "Yes, I'll bring it to you tomorrow. Listen, one thing: my wife saw the purple armchair and she loves it.",
+      "intent": "Say that it seems like a great idea to you.",
       "accept": [
-        "Me parece perfecta para su casa.",
-        "¡Qué bien! Me parece perfecta para su casa.",
-        "A mí me parece perfecta para su casa."
+        "Me parece una gran idea.",
+        "¡Qué bien! Me parece una idea excelente.",
+        "A mí me parece una gran idea."
       ],
       "require": [
         {
@@ -115,8 +115,8 @@
     },
     {
       "id": "t6",
-      "npc": "¡Tiene razón! Entonces la silla morada se va para mi casa. Que esté muy bien, joven.",
-      "npcEn": "You're right! So the purple chair is going to my house. Take good care, young man.",
+      "npc": "¡Tiene razón! Entonces el sillón morado se va para mi casa. Que esté muy bien, joven.",
+      "npcEn": "You're right! So the purple armchair is going to my house. Take good care, young man.",
       "intent": "Tell him he's the best salesman in San Victorino, and thank him.",
       "accept": [
         "Usted es el mejor vendedor de San Victorino. Gracias.",
@@ -143,13 +143,13 @@
     "c:hola-buenos-dias",
     "c:me-lo-llevo",
     "c:oiga-oye",
+    "c:por-un-lado",
     "c:porque",
     "c:puedo",
     "c:que-bien",
     "c:que-este-bien",
     "c:quiero",
     "c:tienes",
-    "g:adjective-agreement",
     "g:cause-result",
     "g:direct-objects",
     "g:double-pronouns",
@@ -179,7 +179,7 @@
     "l:bueno",
     "l:café",
     "l:cambiar",
-    "l:cara",
+    "l:caro",
     "l:casa",
     "l:claro",
     "l:cosa",
@@ -189,8 +189,11 @@
     "l:encantar",
     "l:esposa",
     "l:estar",
+    "l:excelente",
+    "l:gran",
     "l:grande",
     "l:gris",
+    "l:idea",
     "l:irse",
     "l:joven",
     "l:listo",
@@ -199,7 +202,7 @@
     "l:mañana",
     "l:mejor",
     "l:mirar",
-    "l:morada",
+    "l:morado",
     "l:necesitar",
     "l:oír",
     "l:parecer",
@@ -213,7 +216,7 @@
     "l:razón",
     "l:ser",
     "l:señor",
-    "l:silla",
+    "l:sillón",
     "l:tarde",
     "l:tener",
     "l:vendedor",
@@ -226,7 +229,6 @@
     "p:demonstratives-basic",
     "p:estar-hecho-de",
     "p:me-te-nos-objects",
-    "p:otro-no-article",
     "p:para-inf",
     "p:personal-a",
     "p:poco-un-poco",

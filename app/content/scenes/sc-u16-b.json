@@ -54,8 +54,8 @@
     },
     {
       "id": "t3",
-      "npc": "¿La gris? Es la más cara, claro. Es carísima. ¿Cuántas necesitamos?",
-      "npcEn": "The grey one? It's the most expensive, of course. It's really pricey. How many do we need?",
+      "npc": "¿La gris? Es la más cara, claro. Es carísima. Mejor las negras. ¿Cuántas necesitamos?",
+      "npcEn": "The grey one? It's the most expensive, of course. It's really pricey. The black ones are better. How many do we need?",
       "intent": "Say you need twelve, and ask if she's going to buy them today.",
       "accept": [
         "Necesitamos doce. ¿Las vas a comprar hoy?",
@@ -79,8 +79,8 @@
     },
     {
       "id": "t4",
-      "npc": "Ya las compré. Doce sillas grises, trescientos mil. El señor quería quinientos.",
-      "npcEn": "I've already bought them. Twelve grey chairs, three hundred thousand. The man wanted five hundred.",
+      "npc": "Ya las compré. Doce sillas negras, seiscientos sesenta mil. El señor quería novecientos sesenta.",
+      "npcEn": "I've already bought them. Twelve black chairs, six hundred and sixty thousand. The man wanted nine hundred and sixty.",
       "intent": "Tell her she's the best.",
       "accept": [
         "¡Eres la mejor!",

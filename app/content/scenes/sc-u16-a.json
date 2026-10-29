@@ -100,12 +100,12 @@
       "accept": [
         "Con tarjeta. ¿Me las pone en una bolsa?",
         "Tarjeta, por favor. ¿Me las puede poner en una bolsa?",
-        "Con tarjeta. ¿Me las pone en una bolsa, por favor?"
+        "Con tarjeta. ¿Me las empaca, por favor?"
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "me las (puede )?pone",
+          "pattern": "me las (puede )?(pone|empaca)|(poné|empacá)rmelas",
           "flags": "i",
           "label": "put them in a bag for me: me las pone (me first, then las)"
         }
