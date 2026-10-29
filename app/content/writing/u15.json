@@ -1,0 +1,743 @@
+[
+  {
+    "id": "w-u15-01",
+    "unit": "u15",
+    "prompt": "You wake up with a fever and can't go to the café. Text Vale (someone your age): say how you feel, name one thing that is wrong with you, and ask her to open the café for you.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "yo",
+        "label": "say how you are with estoy"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "fiebre",
+          "tos",
+          "gripa",
+          "cansancio",
+          "cansado",
+          "cansada",
+          "enfermo",
+          "enferma"
+        ],
+        "label": "name what is wrong"
+      },
+      {
+        "type": "question",
+        "label": "ask Vale for the favour"
+      }
+    ],
+    "model": "Vale, estoy muy cansado y tengo fiebre desde anoche. Hoy no puedo ir al café porque me siento mal. ¿Puedes abrirlo tú, por favor? Mañana te escribo otra vez.",
+    "focus": "g:ser-estar-adjectives",
+    "requires": [
+      "c:ayer-anoche",
+      "c:me-siento-mal",
+      "c:por-favor",
+      "c:porque",
+      "c:puedo",
+      "c:tengo",
+      "g:cause-result",
+      "g:direct-objects",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:object-pronoun-position",
+      "g:present-er-ir",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:abrir",
+      "l:anoche",
+      "l:café",
+      "l:cansado",
+      "l:escribir",
+      "l:estar",
+      "l:favor",
+      "l:fiebre",
+      "l:hoy",
+      "l:ir",
+      "l:mal",
+      "l:mañana",
+      "l:poder",
+      "l:sentirse",
+      "l:tener",
+      "l:vez",
+      "p:ir-a-venir-de-place",
+      "p:me-te-nos-objects",
+      "p:otro-no-article",
+      "p:quantifiers-basic",
+      "p:request-ladder"
+    ]
+  },
+  {
+    "id": "w-u15-02",
+    "unit": "u15",
+    "prompt": "Mariana asks if you want to meet at the café tonight. Reply to her (a friend) in three or four sentences: say you are tired and stressed, say why, and suggest another day.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "yo",
+        "label": "say how you are with estoy"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "estrés",
+          "estresado",
+          "estresada",
+          "cansado",
+          "cansada",
+          "cansancio"
+        ],
+        "label": "say you are tired or stressed"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "mañana",
+          "viernes",
+          "sábado",
+          "domingo",
+          "lunes",
+          "martes",
+          "miércoles",
+          "jueves"
+        ],
+        "label": "suggest another day"
+      }
+    ],
+    "model": "Mariana, hoy estoy muy cansado y tengo mucho estrés en el trabajo. Esta noche quiero descansar en casa. ¿Podemos vernos mañana en el café? Por la mañana estoy mejor.",
+    "focus": "g:ser-estar-adjectives",
+    "requires": [
+      "c:quiero",
+      "c:tengo",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:object-pronoun-position",
+      "g:present-er-ir",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:café",
+      "l:cansado",
+      "l:casa",
+      "l:descansar",
+      "l:estar",
+      "l:estrés",
+      "l:hoy",
+      "l:mañana",
+      "l:mejor",
+      "l:noche",
+      "l:poder",
+      "l:querer",
+      "l:tener",
+      "l:trabajo",
+      "l:ver",
+      "p:demonstratives-basic",
+      "p:me-te-nos-objects",
+      "p:por-la-manana",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u15-03",
+    "unit": "u15",
+    "prompt": "Don Hernando seems nervous today and won't say why. Write him a short, kind note (he is older, so use usted): ask if something is wrong and tell him he doesn't need to worry.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tú",
+          "te pasa",
+          "estás",
+          "tienes",
+          "eres"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(le pasa algo|le pasa|está bien|está nervioso)\\b",
+        "label": "ask about him with usted (¿le pasa algo?)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "tranquilo",
+          "tranquila"
+        ],
+        "label": "tell him to relax"
+      }
+    ],
+    "model": "Don Hernando, ¿le pasa algo? Hoy está muy nervioso y casi no habla. Tranquilo, aquí todos estamos con usted. Aquí estoy siempre para usted, de verdad.",
+    "focus": "c:te-pasa-algo",
+    "requires": [
+      "c:en-serio",
+      "c:tranquilo",
+      "g:estar-location-states",
+      "g:indirect-objects",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "l:aquí",
+      "l:estar",
+      "l:hablar",
+      "l:hoy",
+      "l:nervioso",
+      "l:parar",
+      "l:pasar",
+      "l:siempre",
+      "l:tranquilo",
+      "l:verdad",
+      "p:aqui-ahi-alla",
+      "p:don-dona-nombre",
+      "p:frequency-scale",
+      "p:indefinites-basic",
+      "p:quantifiers-basic",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u15-04",
+    "unit": "u15",
+    "prompt": "A friend asks whether you think the new coffee is good. Answer in three or four sentences with your opinion: use ser or estar with an adjective, and give a reason.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(es|está|son|están)\\s+(muy |demasiado |bastante |un poco )?\\S+",
+        "label": "opinion with es or está plus an adjective"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "rico",
+          "rica",
+          "malo",
+          "mala",
+          "bueno",
+          "buena",
+          "fuerte",
+          "caro",
+          "barato"
+        ],
+        "label": "use an adjective of opinion"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "porque",
+          "pero",
+          "y"
+        ],
+        "label": "give a reason or a contrast"
+      }
+    ],
+    "model": "El café nuevo es muy rico, pero es un poco caro. Para mí está perfecto por la mañana, porque es fuerte y no es malo. Y a ti, ¿te gusta?",
+    "focus": "g:ser-estar-adjectives",
+    "requires": [
+      "c:a-mi-tambien",
+      "c:me-gusta",
+      "c:porque",
+      "g:cause-result",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "l:café",
+      "l:caro",
+      "l:estar",
+      "l:fuerte",
+      "l:gustar",
+      "l:malo",
+      "l:mañana",
+      "l:nuevo",
+      "l:perfecto",
+      "l:rico",
+      "l:ser",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:para-inf",
+      "p:para-mi",
+      "p:poco-un-poco",
+      "p:por-la-manana",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u15-05",
+    "unit": "u15",
+    "prompt": "Your friend Vale says the soup you made yesterday was boring. Write back to her (someone your age) in three or four sentences: say you disagree, say how the soup is today, and mention the soup is not bad at all.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bno estoy de acuerdo\\b",
+        "label": "say you disagree (no estoy de acuerdo)"
+      },
+      {
+        "type": "negation",
+        "label": "use a negative (no, para nada)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "sopa"
+        ],
+        "label": "mention the soup"
+      }
+    ],
+    "model": "No estoy de acuerdo, Vale. La sopa de ayer no es para nada aburrida y hoy está todavía más rica. Pero depende del gusto de la gente. ¿Quieres probarla otra vez?",
+    "focus": "c:estoy-de-acuerdo",
+    "requires": [
+      "c:ayer-anoche",
+      "c:depende",
+      "c:estoy-de-acuerdo",
+      "c:para-nada",
+      "g:adjective-agreement",
+      "g:direct-objects",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:negation-words",
+      "g:object-pronoun-position",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:aburrido",
+      "l:acuerdo",
+      "l:ayer",
+      "l:depender",
+      "l:estar",
+      "l:gente",
+      "l:gusto",
+      "l:hoy",
+      "l:probarse",
+      "l:querer",
+      "l:rico",
+      "l:ser",
+      "l:sopa",
+      "l:vez",
+      "p:aburrir-aburrirse",
+      "p:la-gente-singular",
+      "p:otro-no-article",
+      "p:ya-todavia-basic"
+    ]
+  },
+  {
+    "id": "w-u15-06",
+    "unit": "u15",
+    "prompt": "You come back to the café and everything is tidy. Write Vale (someone your age) a message of three or four sentences saying what is done: the door is closed, the chairs are ready, and thank her.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(está|están)\\s+(\\S+\\s+)?\\S+(ado|ada|ados|adas|ido|ida|idos|idas)\\b",
+        "label": "estar plus a participle (cerrada, preparadas...)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "cerrada",
+          "cerrado",
+          "preparadas",
+          "preparados",
+          "ordenadas",
+          "ordenado"
+        ],
+        "label": "say what is closed or ready"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "gracias"
+        ],
+        "label": "thank her"
+      }
+    ],
+    "model": "Vale, la puerta está cerrada y las sillas están ordenadas. Las mesas están ordenadas y la cocina está lista. Todo está perfecto. Muchas gracias por tu ayuda.",
+    "focus": "g:estar-participle",
+    "requires": [
+      "c:abierto-cerrado",
+      "c:gracias-de-nada",
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:estar-participle",
+      "g:gender-articles",
+      "l:ayuda",
+      "l:cerrar",
+      "l:cocina",
+      "l:estar",
+      "l:listo",
+      "l:mesa",
+      "l:ordenar",
+      "l:perfecto",
+      "l:puerta",
+      "l:silla",
+      "p:gracias-por",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u15-07",
+    "unit": "u15",
+    "prompt": "You are lost on the way to the doctor. Text Mariana in three or four sentences: say you are lost, say you are worried, and ask where she is.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "perdido",
+          "perdida"
+        ],
+        "label": "say you are lost (perdido/perdida)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "preocupado",
+          "preocupada",
+          "nervioso",
+          "nerviosa",
+          "cansado",
+          "cansada"
+        ],
+        "label": "say how you feel"
+      },
+      {
+        "type": "question",
+        "label": "ask where she is"
+      }
+    ],
+    "model": "Mariana, estoy perdido y estoy un poco nervioso. No encuentro la calle del doctor y mi celular no funciona. ¿Dónde estás tú ahora? Estoy cerca del parque.",
+    "focus": "g:estar-participle",
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:questions",
+      "g:stem-boot",
+      "l:ahora",
+      "l:calle",
+      "l:celular",
+      "l:cerca",
+      "l:doctor",
+      "l:dónde",
+      "l:encontrar",
+      "l:estar",
+      "l:funcionar",
+      "l:nervioso",
+      "l:parque",
+      "l:perder",
+      "p:cerca-de",
+      "p:poco-un-poco",
+      "p:position-de",
+      "p:possessives-basic",
+      "p:quantifiers-basic",
+      "p:question-word-order"
+    ]
+  },
+  {
+    "id": "w-u15-08",
+    "unit": "u15",
+    "prompt": "Your friend asks what you think of her new cap. Tell her in three or four sentences how it looks on her: use \"te queda\" or \"te ve\" and give your opinion.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bte (queda|quedan|parece|parecen)\\b",
+        "label": "te queda / te parece"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "bien",
+          "mal",
+          "bonita",
+          "bonito",
+          "genial",
+          "perfecta",
+          "perfecto",
+          "grande",
+          "pequeña",
+          "pequeño"
+        ],
+        "label": "say how it looks"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "La gorra te queda muy bien, de verdad. Me parece muy bonita y el color es perfecto para ti. La camisa no me parece tan buena, pero la gorra es genial. ¿Dónde la compraste?",
+    "focus": "g:parecer-quedar",
+    "requires": [
+      "c:bien-y-tu",
+      "c:en-serio",
+      "g:adjective-agreement",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:parecer-quedar",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:preterite-ar",
+      "g:questions",
+      "g:ser-identity",
+      "l:bien",
+      "l:bonito",
+      "l:buena",
+      "l:camisa",
+      "l:color",
+      "l:comprar",
+      "l:dónde",
+      "l:genial",
+      "l:gorra",
+      "l:parecer",
+      "l:perfecto",
+      "l:quedar",
+      "l:ser",
+      "l:verdad",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:para-inf",
+      "p:quantifiers-basic",
+      "p:talla-numero"
+    ]
+  },
+  {
+    "id": "w-u15-09",
+    "unit": "u15",
+    "prompt": "Don Hernando asks your opinion of the idea of moving the café. Reply to him politely (use usted) in three or four sentences: say what you think of the idea and that you are not sure.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tú",
+          "tienes",
+          "eres",
+          "piensas"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(me parece|me parecen)\\b",
+        "label": "give your opinion with me parece"
+      },
+      {
+        "type": "negation",
+        "label": "say what you are not sure of"
+      }
+    ],
+    "model": "Don Hernando, me parece una idea difícil pero muy bonita. No estoy seguro todavía, porque el café es muy importante para todos. ¿Y usted está contento con la idea?",
+    "focus": "g:parecer-quedar",
+    "requires": [
+      "c:bien-y-tu",
+      "c:porque",
+      "g:adjective-agreement",
+      "g:cause-result",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:parecer-quedar",
+      "g:present-er-ir",
+      "g:ser-identity",
+      "l:bonito",
+      "l:café",
+      "l:contento",
+      "l:difícil",
+      "l:estar",
+      "l:idea",
+      "l:importante",
+      "l:parecer",
+      "l:seguro",
+      "l:ser",
+      "p:contento-con-de",
+      "p:don-dona-nombre",
+      "p:para-inf",
+      "p:quantifiers-basic",
+      "p:senor-don-article",
+      "p:ya-todavia-basic"
+    ]
+  },
+  {
+    "id": "w-u15-10",
+    "unit": "u15",
+    "prompt": "Write to Tomás (a friend) who has a headache and a sore back. In three or four sentences tell him what hurts you today and ask what hurts him.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (duele|duelen)\\b",
+        "label": "say what hurts you (me duele / me duelen)"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bte (duele|duelen)\\b",
+        "label": "ask what hurts him (te duele)"
+      },
+      {
+        "type": "question",
+        "label": "ask a question"
+      }
+    ],
+    "model": "Tomás, hoy me duele la espalda y me duele un poco la cabeza. Tengo mucho estrés y estoy cansado. Y a ti, ¿qué te duele? ¿Te duele mucho?",
+    "focus": "p:me-duele",
+    "requires": [
+      "c:a-mi-tambien",
+      "c:tengo",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:prep-pronouns",
+      "g:questions",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:cabeza",
+      "l:cansado",
+      "l:doler",
+      "l:espalda",
+      "l:estar",
+      "l:estrés",
+      "l:hoy",
+      "l:qué",
+      "l:tener",
+      "p:doler",
+      "p:me-duele",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u15-11",
+    "unit": "u15",
+    "prompt": "You are at the doctor's with a sore stomach. Explain to the doctor (use usted) in three or four sentences where it hurts and how long you have felt ill.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (duele|duelen)\\b",
+        "label": "say where it hurts (me duele)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "estómago",
+          "cabeza",
+          "espalda",
+          "pecho",
+          "rodilla",
+          "cuello",
+          "pierna"
+        ],
+        "label": "name a body part"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "mal",
+          "enfermo",
+          "enferma",
+          "fiebre"
+        ],
+        "label": "say you feel ill"
+      }
+    ],
+    "model": "Me duele el estómago desde ayer. Me siento mal y tengo fiebre. No me duele la cabeza, pero estoy muy cansado. ¿Es una gripa? Estoy preocupado.",
+    "focus": "c:me-siento-mal",
+    "requires": [
+      "c:ayer-anoche",
+      "c:me-siento-mal",
+      "c:tengo",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:gustar-full",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:yo-irregular",
+      "l:ayer",
+      "l:cabeza",
+      "l:cansado",
+      "l:doler",
+      "l:estar",
+      "l:estómago",
+      "l:fiebre",
+      "l:gripa",
+      "l:mal",
+      "l:preocupado",
+      "l:sentirse",
+      "l:ser",
+      "l:tener",
+      "p:doler",
+      "p:me-duele",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u15-12",
+    "unit": "u15",
+    "prompt": "A friend asks what scares you. Write back in three or four sentences: say what gives you fear and one thing that is not scary at all.",
+    "minWords": 25,
+    "maxWords": 60,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (da|dan) (miedo|pena|rabia|pereza)\\b",
+        "label": "me da miedo / me dan miedo"
+      },
+      {
+        "type": "negation",
+        "label": "say what is not scary"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Me dan miedo las alturas y los perros. Hablar en público no me da miedo, pero a veces tengo vergüenza. Y a ti, ¿qué te da miedo?",
+    "focus": "p:me-da-miedo",
+    "requires": [
+      "c:a-mi-tambien",
+      "c:me-regala",
+      "c:tengo",
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:present-ar",
+      "g:questions",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:altura",
+      "l:dar",
+      "l:hablar",
+      "l:miedo",
+      "l:perro",
+      "l:público",
+      "l:qué",
+      "l:tener",
+      "l:vergüenza",
+      "l:vez",
+      "p:frequency-scale",
+      "p:me-da-miedo",
+      "p:me-da-miedo-que",
+      "p:me-te-nos-objects"
+    ]
+  }
+]
