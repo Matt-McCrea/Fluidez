@@ -11,8 +11,8 @@
       "intent": "Say yes, you sold all the mangoes.",
       "accept": [
         "Sí, vendimos todos los mangos.",
-        "Sí, señor. Vendimos todo el mango.",
-        "Sí, vendimos todo."
+        "Sí, señor. Vendimos todo el mango en dos días.",
+        "Sí, vendí todo."
       ],
       "require": [
         {
@@ -33,6 +33,7 @@
       "accept": [
         "¿A cómo está la fresa?",
         "¿A cómo está la libra de fresa?",
+        "¿A cómo están las fresas?",
         "¿Cuánto cuesta la libra de fresa?"
       ],
       "require": [
@@ -40,8 +41,12 @@
           "type": "question"
         },
         {
-          "type": "containsWord",
-          "word": "fresa"
+          "type": "containsAny",
+          "words": [
+            "fresa",
+            "fresas"
+          ],
+          "label": "ask about the strawberries: la fresa"
         }
       ],
       "focus": "p:estar-a-price",
@@ -54,13 +59,19 @@
       "intent": "Say that's expensive and ask for a little discount.",
       "accept": [
         "¡Qué caro! ¿Me hace una rebajita?",
-        "Es muy caro. ¿Me hace una rebajita?",
+        "Uy, está muy caro. ¿Me hace una rebajita?",
         "Muy caro, señor. ¿Me hace una rebajita?"
       ],
       "require": [
         {
-          "type": "containsWord",
-          "word": "caro"
+          "type": "containsAny",
+          "words": [
+            "caro",
+            "cara",
+            "caros",
+            "caras"
+          ],
+          "label": "say it's expensive: caro"
         },
         {
           "type": "containsWord",
@@ -188,6 +199,7 @@
     "l:ver",
     "l:vuelta",
     "p:exclamations-basic",
+    "p:prep-questions-basic",
     "p:quantifiers-basic",
     "p:time-pasado-que-viene"
   ]

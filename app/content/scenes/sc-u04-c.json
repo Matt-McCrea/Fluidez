@@ -33,11 +33,11 @@
       "id": "t2",
       "npc": "¿El sábado? ¿Y usted qué hizo?",
       "npcEn": "On Saturday? And what did you do?",
-      "intent": "Say you called Don Hernando, and Vale made tinto like Rosa.",
+      "intent": "Say Vale made tinto like Rosa, and Don Hernando called the taxi drivers.",
       "accept": [
-        "Llamé a don Hernando y Vale hizo tinto como Rosa.",
-        "Vale hizo tinto como Rosa, y yo llamé a don Hernando.",
-        "Yo llamé a don Hernando. Vale hizo tinto como Rosa."
+        "Vale hizo tinto como Rosa y don Hernando llamó a los taxistas.",
+        "Don Hernando llamó a los taxistas, y Vale hizo tinto como Rosa.",
+        "Vale hizo tinto como Rosa. Y don Hernando llamó a los taxistas."
       ],
       "require": [
         {
@@ -51,8 +51,8 @@
           "type": "verbForm",
           "inf": "llamar",
           "tense": "preterito",
-          "person": "yo",
-          "label": "I called: llamé"
+          "person": "él/ella",
+          "label": "Don Hernando called: llamó"
         }
       ],
       "focus": "g:preterite-ser-ir-hacer",
@@ -62,7 +62,7 @@
       "id": "t3",
       "npc": "¿Tinto sin máquina? ¿Y vendieron algo?",
       "npcEn": "Tinto without a machine? And did you sell anything?",
-      "intent": "Say yes, the taxi drivers arrived and you all sold a lot of tinto.",
+      "intent": "Say yes, the taxi drivers came and you all sold a lot of tinto.",
       "accept": [
         "Sí, llegaron los taxistas y vendimos mucho tinto.",
         "Sí. Llegaron los taxistas, y vendimos mucho tinto.",
@@ -82,8 +82,8 @@
     },
     {
       "id": "t4",
-      "npc": "¡Uy! Esta máquina es de 1975. Una máquina nueva está a dos millones.",
-      "npcEn": "Wow! This machine is from 1975. A new machine goes for two million.",
+      "npc": "¡Uy! Esta máquina es de 1975. Una máquina nueva cuesta dos millones.",
+      "npcEn": "Wow! This machine is from 1975. A new machine costs two million.",
       "intent": "Say that's expensive and ask if there's something cheaper.",
       "accept": [
         "¡Qué caro! ¿Hay algo más barato?",
@@ -95,8 +95,12 @@
           "type": "question"
         },
         {
-          "type": "containsWord",
-          "word": "barato"
+          "type": "containsAny",
+          "words": [
+            "barato",
+            "barata"
+          ],
+          "label": "ask for something cheaper: más barato"
         }
       ],
       "focus": "p:costar-pagar",
@@ -104,8 +108,8 @@
     },
     {
       "id": "t5",
-      "npc": "Sí: yo trabajo con esta máquina. Son cien mil pesos, y mañana funciona.",
-      "npcEn": "Yes: I work with this machine. It's a hundred thousand pesos, and tomorrow it works.",
+      "npc": "Sí: mi trabajo. Son cien mil pesos, y mañana funciona.",
+      "npcEn": "Yes: my work. It's a hundred thousand pesos, and tomorrow it works.",
       "intent": "Agree, and thank him for the help.",
       "accept": [
         "Listo. Gracias por la ayuda.",
@@ -131,7 +135,6 @@
     "c:hay",
     "c:hola-buenos-dias",
     "g:adjective-agreement",
-    "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
     "g:present-ar",
@@ -147,8 +150,8 @@
     "l:café",
     "l:caro",
     "l:claro",
+    "l:cuesta",
     "l:día",
-    "l:estar",
     "l:funcionar",
     "l:hacer",
     "l:listo",
@@ -165,12 +168,13 @@
     "l:sábado",
     "l:taxista",
     "l:tinto",
-    "l:trabajar",
+    "l:trabajo",
     "l:vender",
     "p:demonstratives-basic",
     "p:exclamations-basic",
     "p:gracias-por",
     "p:indefinites-basic",
+    "p:possessives-basic",
     "p:quantifiers-basic"
   ]
 }

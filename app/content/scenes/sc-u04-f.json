@@ -33,18 +33,20 @@
       "id": "t2",
       "npc": "Trescientos. ¿Y cuánto pagaste por el mango el viernes?",
       "npcEn": "Three hundred. And how much did you pay for the mango on Friday?",
-      "intent": "Say the mango cost eighty thousand pesos.",
+      "intent": "Say the mango cost seventy thousand pesos.",
       "accept": [
-        "El mango costó ochenta mil pesos.",
-        "Costó ochenta mil pesos.",
-        "Ochenta mil. El mango costó ochenta mil pesos."
+        "El mango costó setenta mil pesos.",
+        "Costó setenta mil pesos.",
+        "Setenta mil. El mango costó setenta mil pesos."
       ],
       "require": [
         {
-          "type": "verbFormAny",
-          "inf": "costar",
-          "tense": "preterito",
-          "label": "it cost: costó"
+          "type": "containsAny",
+          "words": [
+            "costó",
+            "pagué"
+          ],
+          "label": "what you paid: costó, or pagué"
         }
       ],
       "focus": "p:costar-pagar",
@@ -52,8 +54,8 @@
     },
     {
       "id": "t3",
-      "npc": "¿Ochenta mil? Pero fue un precio barato, ¿no?",
-      "npcEn": "Eighty thousand? But it was a cheap price, right?",
+      "npc": "¿Setenta mil? Bueno, el precio fue bueno, ¿no?",
+      "npcEn": "Seventy thousand? Well, the price was good, right?",
       "intent": "Say yes, because you bought forty pounds.",
       "accept": [
         "Sí, porque compré cuarenta libras.",
@@ -140,7 +142,6 @@
     "g:ser-identity",
     "l:ayudar",
     "l:banco",
-    "l:barato",
     "l:bien",
     "l:bueno",
     "l:cansado",

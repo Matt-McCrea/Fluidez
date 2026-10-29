@@ -61,7 +61,7 @@
       "accept": [
         "Sí, abrimos a las seis, pero la máquina no funcionó.",
         "Sí. Abrimos a las seis, pero la máquina de café no funcionó.",
-        "Abrimos a las seis, pero la máquina no funcionó."
+        "Abrimos a las seis, pero la cafetera no funcionó."
       ],
       "require": [
         {
@@ -175,6 +175,7 @@
     "l:barrio",
     "l:bien",
     "l:bueno",
+    "l:cafetera",
     "l:café",
     "l:chévere",
     "l:claro",

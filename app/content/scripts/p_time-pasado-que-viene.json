@@ -6,38 +6,168 @@
     "en": "Last weekend we sold three hundred black coffees."
   },
   "examples": [
-    { "es": "El sábado pasado compré flores en Paloquemao.", "en": "Last Saturday I bought flowers at Paloquemao." },
-    { "es": "La semana pasada no salimos.", "en": "We didn't go out last week." },
-    { "es": "El año pasado Tomás vivió en Toronto.", "en": "Last year Tomás lived in Toronto." },
-    { "es": "El próximo sábado vamos a bailar.", "en": "Next Saturday we're going to dance." },
-    { "es": "La próxima semana empiezo un curso.", "en": "Next week I start a course." },
-    { "es": "El jueves voy a comprar pan.", "en": "On Thursday I'm going to buy bread." }
+    {
+      "es": "El sábado pasado compré flores en Paloquemao.",
+      "en": "Last Saturday I bought flowers at Paloquemao."
+    },
+    {
+      "es": "La semana pasada no salimos.",
+      "en": "We didn't go out last week."
+    },
+    {
+      "es": "El año pasado Tomás vivió en Toronto.",
+      "en": "Last year Tomás lived in Toronto."
+    },
+    {
+      "es": "El próximo sábado vamos a bailar.",
+      "en": "Next Saturday we're going to dance."
+    },
+    {
+      "es": "La próxima semana empiezo un curso.",
+      "en": "Next week I start a course."
+    },
+    {
+      "es": "El jueves voy a comprar pan.",
+      "en": "On Thursday I'm going to buy bread."
+    }
   ],
   "rule": "For 'last', put *pasado* after the time word. It agrees with it: *el sábado pasado*, *la semana pasada*.\n\nFor 'next', put *próximo* in front: *el próximo año*, *la próxima semana*. You'll also hear *la semana que viene*, which means the same.\n\nA day on its own doesn't set the time; the verb does. *El jueves compré pan* is last Thursday. *El jueves voy a comprar pan* is this coming one.\n\nOnly *hoy*, *ayer* and *mañana* fix the time by themselves.",
   "smallPrint": "*Pasado* and *próximo* are adjectives here, so they take *-a* with *la* words like *semana*.",
   "readAndPick": [
-    { "es": "La semana pasada no salimos.", "options": ["We didn't go out last week.", "We're not going out next week."], "answer": 0 },
-    { "es": "La próxima semana empiezo un curso.", "options": ["I started a course last week.", "I start a course next week."], "answer": 1 },
-    { "es": "El jueves compré pan.", "options": ["I bought bread on Thursday.", "I'm going to buy bread on Thursday."], "answer": 0 },
-    { "es": "El jueves voy a comprar pan.", "options": ["I bought bread on Thursday.", "I'm going to buy bread on Thursday."], "answer": 1 },
-    { "es": "El próximo sábado vamos a bailar.", "options": ["We danced last Saturday.", "We're going to dance next Saturday."], "answer": 1 },
-    { "es": "El año pasado Tomás vivió en Toronto.", "options": ["Last year Tomás lived in Toronto.", "Next year Tomás is going to live in Toronto."], "answer": 0 },
-    { "es": "El próximo año voy a viajar.", "options": ["I travelled last year.", "I'm going to travel next year."], "answer": 1 },
-    { "es": "El lunes pasado llegaron los taxistas.", "options": ["The taxi drivers arrived last Monday.", "The taxi drivers arrive next Monday."], "answer": 0 }
+    {
+      "es": "La semana pasada no salimos.",
+      "options": [
+        "We didn't go out last week.",
+        "We're not going out next week."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La próxima semana empiezo un curso.",
+      "options": [
+        "I started a course last week.",
+        "I start a course next week."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El jueves compré pan.",
+      "options": [
+        "I bought bread on Thursday.",
+        "I'm going to buy bread on Thursday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El jueves voy a comprar pan.",
+      "options": [
+        "I bought bread on Thursday.",
+        "I'm going to buy bread on Thursday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El próximo sábado vamos a bailar.",
+      "options": [
+        "We danced last Saturday.",
+        "We're going to dance next Saturday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El año pasado Tomás vivió en Toronto.",
+      "options": [
+        "Last year Tomás lived in Toronto.",
+        "Next year Tomás is going to live in Toronto."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El próximo año voy a viajar.",
+      "options": [
+        "I travelled last year.",
+        "I'm going to travel next year."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El lunes pasado llegaron los taxistas.",
+      "options": [
+        "The taxi drivers arrived last Monday.",
+        "The taxi drivers arrive next Monday."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
-    { "prompt": "Pick and type the whole sentence: *La semana ___ trabajé mucho.* (*pasado* or *pasada*)", "answer": "La semana pasada trabajé mucho.", "accept": [], "why": "*Semana* is a *la* word, so *pasada*." },
-    { "prompt": "Pick and type the whole sentence: *El ___ año voy a viajar.* (*pasado* or *próximo*)", "answer": "El próximo año voy a viajar.", "accept": [], "why": "*Voy a* is a plan, so 'next': *próximo*, in front." },
-    { "prompt": "Say: Last Saturday I bought flowers.", "answer": "El sábado pasado compré flores.", "accept": ["Compré flores el sábado pasado."], "why": "*Pasado* goes after *sábado*, and *compré* is the past." },
-    { "prompt": "Ask a friend: did you travel last year?", "answer": "¿Viajaste el año pasado?", "accept": ["¿El año pasado viajaste?"], "why": "'Last year' is *el año pasado*, with a past verb." },
-    { "prompt": "Say: Next week we're going to open on Sunday.", "answer": "La próxima semana vamos a abrir el domingo.", "accept": [], "why": "*Próxima* before *semana*, and *vamos a* for the plan." },
-    { "prompt": "Turn it into a plan for next Sunday: *El domingo pasado cociné.*", "answer": "El próximo domingo voy a cocinar.", "accept": ["El próximo domingo cocino."], "why": "Swap *pasado* for *próximo* in front, and move the verb into the future." },
-    { "prompt": "Make it about last week: *La próxima semana voy a trabajar mucho.*", "answer": "La semana pasada trabajé mucho.", "accept": [], "why": "*Pasada* goes after *semana*, and the verb goes into the past." }
+    {
+      "prompt": "Pick and type the whole sentence: *La semana ___ trabajé mucho.* (*pasado* or *pasada*)",
+      "answer": "La semana pasada trabajé mucho.",
+      "accept": [],
+      "why": "*Semana* is a *la* word, so *pasada*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *El ___ año voy a viajar.* (*pasado* or *próximo*)",
+      "answer": "El próximo año voy a viajar.",
+      "accept": [],
+      "why": "*Voy a* is a plan, so 'next': *próximo*, in front."
+    },
+    {
+      "prompt": "Say: Last Saturday I bought flowers.",
+      "answer": "El sábado pasado compré flores.",
+      "accept": [
+        "Compré flores el sábado pasado."
+      ],
+      "why": "*Pasado* goes after *sábado*, and *compré* is the past."
+    },
+    {
+      "prompt": "Ask a friend: did you travel last year?",
+      "answer": "¿Viajaste el año pasado?",
+      "accept": [
+        "¿El año pasado viajaste?"
+      ],
+      "why": "'Last year' is *el año pasado*, with a past verb."
+    },
+    {
+      "prompt": "Say: Next week we're going to open on Sunday.",
+      "answer": "La próxima semana vamos a abrir el domingo.",
+      "accept": [
+        "La semana que viene vamos a abrir el domingo.",
+        "Vamos a abrir el domingo la próxima semana."
+      ],
+      "why": "*Próxima* before *semana*, and *vamos a* for the plan."
+    },
+    {
+      "prompt": "Turn it into a plan for next Sunday: *El domingo pasado cociné.*",
+      "answer": "El próximo domingo voy a cocinar.",
+      "accept": [
+        "El próximo domingo cocino."
+      ],
+      "why": "Swap *pasado* for *próximo* in front, and turn the verb into a plan with *voy a*."
+    },
+    {
+      "prompt": "Make it about last week: *La próxima semana voy a trabajar mucho.*",
+      "answer": "La semana pasada trabajé mucho.",
+      "accept": [],
+      "why": "*Pasada* goes after *semana*, and the verb goes into the past."
+    }
   ],
   "pitfalls": [
-    { "wrong": "La semana pasado no salimos.", "right": "La semana pasada no salimos.", "why": "Almost. *Semana* is a *la* word, so *pasada*." },
-    { "wrong": "La pasada semana compré flores.", "right": "La semana pasada compré flores.", "why": "*Pasado* comes after the time word; it's *próximo* that goes in front." },
-    { "wrong": "La próxima semana trabajé mucho.", "right": "La próxima semana voy a trabajar mucho.", "why": "*Próxima* points forward, so the verb has to point forward too." }
+    {
+      "wrong": "La semana pasado no salimos.",
+      "right": "La semana pasada no salimos.",
+      "why": "Almost. *Semana* is a *la* word, so *pasada*."
+    },
+    {
+      "wrong": "La pasada semana compré flores.",
+      "right": "La semana pasada compré flores.",
+      "why": "*Pasado* comes after the time word; it's *próximo* that goes in front."
+    },
+    {
+      "wrong": "La próxima semana trabajé mucho.",
+      "right": "La próxima semana voy a trabajar mucho.",
+      "why": "*Próxima* points forward, so the verb has to point forward too."
+    }
   ],
   "personal": "Write one thing you did last weekend with *el sábado pasado* or *el domingo pasado*, and one plan with *la próxima semana*."
 }

@@ -2,7 +2,7 @@
   "id": "ch008",
   "unit": "u04",
   "title": "El señor Mango",
-  "text": "Domingo. Llegaron las señoras de los taxistas.\nDoña Marta: Vale, ¿hay verdura? ¿Papa, tomate, cebolla?\nVale: No hay verdura. Solo mango.\nDoña Marta: ¿Mango? Tomás, vamos a la plaza de mercado.\nEn la plaza de mercado, doña Marta habla de precios.\nDoña Marta: ¿A cómo está el kilo de papa?\nVendedor: A dos mil pesos. Aquí vendo barato, señora.\nDoña Marta: ¿Barato? ¡Qué caro! ¿Y la libra de tomate?\nVendedor: Mil quinientos pesos.\nDoña Marta: ¿Y cuánto cuestan los bananos?\nVendedor: El banano está caro.\nTomás: El precio es bueno. El viernes pasado compré cuarenta libras de mango aquí.\nVendedor: ¡Ah! ¿Usted es el señor Mango?\nDoña Marta: Dos kilos de papa y una libra de cebolla. Barato, ¿no?\nDoña Marta pagó con la plata de Vale. Tomás llevó las bolsas: cinco bolsas.\nDiez de la noche. Vale suma la plata.\nVale: Vendimos trescientos tintos, jugo de mango y papa con tomate y cebolla.\nTomás escribe en la pizarra: $412.000.\nTomás: Gracias por todo, Don Hernando.\nHernando: Gracias por el tinto de Rosa.\nSimón: ¿Qué tal el fin de semana? ¿Qué tal el fin de semana?\nTomás: Veintiocho días. Y mañana, ¿la cafetera?",
+  "text": "Doña Marta: Vale, ¿hay verdura? ¿Papa, tomate, cebolla?\nVale: No hay verdura. Solo mango.\nEs domingo. Llegaron las señoras de los taxistas, y tienen hambre.\nDoña Marta: ¿Mango? Tomás, vamos a la plaza de mercado.\nEn la plaza de mercado, doña Marta habla de precios.\nDoña Marta: ¿A cómo está el kilo de papa?\nVendedor: A dos mil pesos. Aquí vendo barato, señora.\nDoña Marta: ¿Barato? ¡Qué caro! ¿Y la libra de tomate?\nVendedor: Mil quinientos pesos.\nDoña Marta: ¿Y cuánto cuestan los bananos?\nVendedor: El banano está caro.\nTomás: El precio es bueno. El viernes compré cuarenta libras de mango aquí.\nVendedor: ¡Ah! ¿Usted es el señor Mango?\nDoña Marta: Dos kilos de papa y una libra de cebolla. Barato, ¿no?\nDoña Marta pagó con la plata de Vale. Tomás llevó las bolsas: cinco bolsas.\nDiez de la noche. Vale suma la plata.\nVale: Vendimos trescientos tintos, jugo de mango y papa con tomate y cebolla.\nTomás escribe en la pizarra: $412.000.\nTomás: Gracias por todo, don Hernando.\nHernando: Gracias por el tinto de Rosa. Y el sábado que viene, ¡más!\nSimón: ¿Qué tal el fin de semana? ¿Qué tal el fin de semana?\nTomás: Veintiocho días. Y mañana, ¿la cafetera?",
   "gloss": [
     {
       "es": "la pizarra",
@@ -115,6 +115,7 @@
     "c:hay",
     "c:no-cierto",
     "c:que-tal-el-fin",
+    "c:tienes",
     "c:vamos-a",
     "g:estar-location-states",
     "g:gender-articles",
@@ -129,6 +130,7 @@
     "g:stem-boot",
     "p:exclamations-basic",
     "p:gracias-por",
+    "p:tener-hambre",
     "p:time-pasado-que-viene"
   ],
   "lexemes": [
@@ -150,6 +152,7 @@
     "l:estar",
     "l:fin",
     "l:hablar",
+    "l:hambre",
     "l:ir",
     "l:jugo",
     "l:kilo",
@@ -162,7 +165,6 @@
     "l:noche",
     "l:pagar",
     "l:papa",
-    "l:pasado",
     "l:peso",
     "l:pizarra",
     "l:plata",
@@ -174,11 +176,14 @@
     "l:señor",
     "l:señora",
     "l:sumar",
+    "l:sábado",
     "l:taxista",
+    "l:tener",
     "l:tinto",
     "l:tomate",
     "l:vendedor",
     "l:vender",
+    "l:venir",
     "l:verdura",
     "l:viernes"
   ]

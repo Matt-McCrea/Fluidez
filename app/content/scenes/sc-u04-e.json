@@ -30,11 +30,11 @@
       "id": "t2",
       "npc": "¿Hasta las once? ¿Y comió algo?",
       "npcEn": "Until eleven? And did he eat anything?",
-      "intent": "Say yes, he ate potatoes with tomato.",
+      "intent": "Say yes, he ate mango. A lot of mango.",
       "accept": [
-        "Sí, comió papa con tomate.",
-        "Sí, señora. Comió papa con tomate.",
-        "Comió papa con tomate."
+        "Sí, comió mango. Mucho mango.",
+        "Sí, señora. Comió mucho mango.",
+        "Comió mango, señora."
       ],
       "require": [
         {
@@ -148,9 +148,9 @@
     "l:hacer",
     "l:llegar",
     "l:llevar",
+    "l:mango",
     "l:noche",
     "l:pagar",
-    "l:papa",
     "l:qué",
     "l:regalar",
     "l:saber",
@@ -161,10 +161,10 @@
     "l:tener",
     "l:tinto",
     "l:tomar",
-    "l:tomate",
     "l:verdad",
     "p:indefinites-basic",
     "p:possessives-basic",
+    "p:quantifiers-basic",
     "p:time-sequence-basic"
   ]
 }

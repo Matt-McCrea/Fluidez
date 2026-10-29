@@ -149,7 +149,7 @@
       "why": "To a friend, you did is *hiciste*."
     },
     {
-      "prompt": "We went to Monserrate on Sunday.",
+      "prompt": "Say: We went to Monserrate on Sunday.",
       "answer": "Fuimos a Monserrate el domingo.",
       "accept": [
         "El domingo fuimos a Monserrate."
@@ -157,7 +157,7 @@
       "why": "We went is *fuimos*."
     },
     {
-      "prompt": "It was cold yesterday.",
+      "prompt": "Say: It was cold yesterday.",
       "answer": "Ayer hizo frío.",
       "accept": [
         "Hizo frío ayer."

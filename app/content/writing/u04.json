@@ -2,7 +2,7 @@
   {
     "id": "w-u04-01",
     "unit": "u04",
-    "prompt": "Mariana, the journalist, texts you: what did you do at the market on Saturday? Write two or three things you did, all with I.",
+    "prompt": "Mariana, the journalist, texts you: what did you do at the market on Friday? Write two or three things you did, all with I.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -21,24 +21,25 @@
         "n": 2
       }
     ],
-    "model": "El sábado caminé en Paloquemao. Compré mangos y hablé con una vendedora.",
+    "model": "El viernes compré mangos en Paloquemao. Hablé con un vendedor muy amable.",
     "focus": "g:preterite-ar",
     "requires": [
       "c:compre-trabaje",
+      "c:muy-amable",
       "g:gender-articles",
       "g:preterite-ar",
-      "l:caminar",
+      "l:amable",
       "l:comprar",
       "l:hablar",
       "l:mango",
-      "l:sábado",
-      "l:vendedor"
+      "l:vendedor",
+      "l:viernes"
     ]
   },
   {
     "id": "w-u04-02",
     "unit": "u04",
-    "prompt": "Vale, your friend, asks how your weekend was. Answer her in two or three short sentences: say it was good, and one thing you did.",
+    "prompt": "Your neighbour, a woman your age, asks how your weekend was. Answer her (tú) in two or three short sentences: say how it was, and one thing you did.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -62,7 +63,7 @@
         "n": 2
       }
     ],
-    "model": "Muy bien, gracias. El sábado trabajé en el café y el domingo comí con Vale.",
+    "model": "Muy bien, gracias. El sábado trabajé en el café y el domingo comí ajiaco.",
     "focus": "c:que-tal-el-fin",
     "requires": [
       "c:bien-y-tu",
@@ -72,6 +73,7 @@
       "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-er-ir",
+      "l:ajiaco",
       "l:bien",
       "l:café",
       "l:comer",
@@ -83,7 +85,7 @@
   {
     "id": "w-u04-03",
     "unit": "u04",
-    "prompt": "A friend your age moved to Bogotá last year. Ask her two questions about yesterday: what she ate, and where she lived before. Use tú.",
+    "prompt": "A friend your age moved to Bogotá last year. Ask her two things: what she ate yesterday, and where she lived before Bogotá. Use tú.",
     "minWords": 6,
     "maxWords": 25,
     "constraints": [
@@ -165,7 +167,7 @@
   {
     "id": "w-u04-05",
     "unit": "u04",
-    "prompt": "Tell Don Hernando, a retired taxi driver and a friend, what you are going to do tomorrow at the market. Two or three sentences.",
+    "prompt": "Tell Don Hernando (usted, he's older) what you are going to do tomorrow at the market. Two or three sentences.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -249,7 +251,7 @@
   {
     "id": "w-u04-07",
     "unit": "u04",
-    "prompt": "Tell Mariana what Hernando's taxi-driver friends did on Saturday night: they arrived, ate and left. Use the they form of the verbs.",
+    "prompt": "Write two lines in the café notebook about Saturday morning: what Hernando's taxi-driver friends did. They arrived, ate and left. Use the they form of the verbs.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -269,20 +271,20 @@
         "n": 2
       }
     ],
-    "model": "Los amigos de Hernando llegaron a las siete. Comieron pan, tomaron tinto y salieron tarde.",
+    "model": "Los taxistas llegaron a las ocho. Comieron pan, tomaron tinto y salieron a trabajar.",
     "focus": "g:preterite-er-ir",
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "g:preterite-er-ir",
-      "l:amigo",
       "l:comer",
       "l:llegar",
       "l:pan",
       "l:salir",
-      "l:tarde",
+      "l:taxista",
       "l:tinto",
-      "l:tomar"
+      "l:tomar",
+      "l:trabajar"
     ]
   },
   {
@@ -330,17 +332,26 @@
   {
     "id": "w-u04-09",
     "unit": "u04",
-    "prompt": "Tell Mariana where you went last weekend and what you are going to do next week.",
+    "prompt": "Write to a friend in Toronto: where you went last weekend, and what you are going to do next week.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
       {
-        "type": "containsWord",
-        "word": "pasado"
+        "type": "containsAny",
+        "words": [
+          "pasado",
+          "pasada"
+        ],
+        "label": "last weekend: el fin de semana pasado"
       },
       {
-        "type": "containsWord",
-        "word": "que viene"
+        "type": "containsAny",
+        "words": [
+          "que viene",
+          "próximo",
+          "próxima"
+        ],
+        "label": "next week: la próxima semana, la semana que viene"
       },
       {
         "type": "regex",
@@ -348,11 +359,12 @@
         "label": "fui (I went)"
       }
     ],
-    "model": "El fin de semana pasado fui a Paloquemao. La semana que viene voy a viajar a Medellín.",
+    "model": "Hola. El fin de semana pasado fui a Paloquemao. La semana que viene voy a viajar a Medellín.",
     "focus": "p:time-pasado-que-viene",
     "requires": [
       "c:ayer-anoche",
       "c:fui",
+      "c:hola-buenos-dias",
       "c:voy-a",
       "g:gender-articles",
       "g:ir-a-plans",
@@ -497,7 +509,7 @@
   {
     "id": "w-u04-13",
     "unit": "u04",
-    "prompt": "Tell Mariana what you and Vale did on Sunday. Use we: one sentence with went, one with did or made.",
+    "prompt": "Tell Mariana what you and a friend did last Sunday. Use we: one sentence with went, one with did or made.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -516,19 +528,18 @@
         "n": 2
       }
     ],
-    "model": "El domingo Vale y yo fuimos al parque. Hicimos pan y vendimos tintos.",
+    "model": "El domingo fuimos a Monserrate con un amigo. Luego hicimos ajiaco en casa.",
     "focus": "g:preterite-ser-ir-hacer",
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
       "g:preterite-ser-ir-hacer",
+      "l:ajiaco",
+      "l:amigo",
+      "l:casa",
       "l:domingo",
       "l:hacer",
       "l:ir",
-      "l:pan",
-      "l:parque",
-      "l:tinto",
-      "l:vender"
+      "p:time-sequence-basic"
     ]
   },
   {

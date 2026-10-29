@@ -60,13 +60,13 @@
       "answer": 1
     },
     {
-      "es": "Un café, por favor.",
+      "es": "Gracias por el café.",
       "options": [
         "Thanks for the coffee.",
-        "Thanks, a coffee.",
-        "A coffee, please."
+        "A coffee, please.",
+        "Thanks, a coffee."
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "es": "Muchas gracias por esperar.",
@@ -119,22 +119,23 @@
       "why": "After *por* the verb stays in its plain form: *venir*."
     },
     {
-      "prompt": "Thank you very much for waiting.",
+      "prompt": "Say: Thank you very much for waiting.",
       "answer": "Muchas gracias por esperar.",
       "accept": [],
       "why": "*Muchas gracias*, then *por* and the plain verb *esperar*."
     },
     {
-      "prompt": "Thanks a million for everything.",
+      "prompt": "Say it the Colombian way: Thanks a million for everything.",
       "answer": "Mil gracias por todo.",
       "accept": [],
       "why": "*Mil gracias* is the Colombian way to say thanks a million, and *todo* is everything."
     },
     {
-      "prompt": "Thanks for calling. (just two ideas: thanks, and calling)",
+      "prompt": "Say: Thanks for calling.",
       "answer": "Gracias por llamar.",
       "accept": [
-        "Muchas gracias por llamar."
+        "Muchas gracias por llamar.",
+        "Mil gracias por llamar."
       ],
       "why": "Calling is an action, so it's the plain verb: *llamar*."
     },

@@ -2,12 +2,12 @@
   "id": "sc-u04-d",
   "unit": "u04",
   "title": "Don Hernando's Sunday",
-  "brief": "You're Tomás. Don Hernando missed the café on Sunday, and this time you ask the questions: what he did, when, and where he went. Then tell him about your own Sunday. He's older than you, so use usted.",
+  "brief": "You're Tomás. Don Hernando only turned up at the café on Sunday night, and this time you ask the questions: what he did all day, and when. Then tell him about your own Sunday. He's older than you, so use usted.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Buenos días, Tomás. Un tinto, por favor. El domingo no salí de mi casa.",
-      "npcEn": "Good morning, Tomás. A tinto, please. On Sunday I didn't leave my house.",
+      "npc": "Buenos días, Tomás. Un tinto, por favor. El domingo no salí de mi casa hasta la noche.",
+      "npcEn": "Good morning, Tomás. A tinto, please. On Sunday I didn't leave my house until the evening.",
       "intent": "Ask him what he did at home.",
       "accept": [
         "¿Y qué hizo en su casa?",
@@ -56,8 +56,8 @@
     },
     {
       "id": "t3",
-      "npc": "A las diez. Y después fuimos a Monserrate. ¿Y usted, qué hizo el domingo?",
-      "npcEn": "At ten. And then we went to Monserrate. And you, what did you do on Sunday?",
+      "npc": "A las diez de la mañana. Y a las siete de la noche, ¡al café! ¿Y usted, qué hizo el domingo?",
+      "npcEn": "At ten in the morning. And at seven in the evening, off to the café! And you, what did you do on Sunday?",
       "intent": "Say you went to the market with Doña Marta and carried five bags.",
       "accept": [
         "Fui al mercado con doña Marta y llevé cinco bolsas.",
@@ -146,12 +146,12 @@
     "l:barato",
     "l:bolsa",
     "l:bueno",
+    "l:café",
     "l:casa",
     "l:comer",
     "l:comprar",
     "l:cuánto",
     "l:cómo",
-    "l:después",
     "l:domingo",
     "l:día",
     "l:estar",
@@ -164,8 +164,10 @@
     "l:kilo",
     "l:llegar",
     "l:llevar",
+    "l:mañana",
     "l:mercado",
     "l:nieto",
+    "l:noche",
     "l:pagar",
     "l:papa",
     "l:peso",
@@ -176,7 +178,6 @@
     "l:taxista",
     "l:tinto",
     "p:gracias-por",
-    "p:possessives-basic",
-    "p:time-sequence-basic"
+    "p:possessives-basic"
   ]
 }

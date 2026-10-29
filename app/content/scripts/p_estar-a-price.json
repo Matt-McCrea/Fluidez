@@ -2,7 +2,7 @@
   "node": "p:estar-a-price",
   "hook": {
     "line": "At Paloquemao nothing has a price tag. Prices move with the season and with whatever truck came in at dawn, so you ask what something is going for today.",
-    "es": "¿A cómo está el aguacate?",
+    "es": "¿A cómo está el aguacate hoy?",
     "en": "How much is the avocado today?"
   },
   "examples": [
@@ -33,8 +33,8 @@
     {
       "es": "¿A cómo están los mangos?",
       "options": [
-        "How much is the mango today?",
-        "How much are the mangoes today?",
+        "How much is the mango?",
+        "How much are the mangoes?",
         "Where are the mangoes?"
       ],
       "answer": 1
@@ -50,7 +50,7 @@
     {
       "es": "El aguacate está a cinco mil.",
       "options": [
-        "The avocado is five thousand today.",
+        "The avocado is five thousand.",
         "There are five thousand avocados."
       ],
       "answer": 0
@@ -118,15 +118,16 @@
     },
     {
       "prompt": "At a market stall: How much is the avocado today?",
-      "answer": "¿A cómo está el aguacate?",
+      "answer": "¿A cómo está el aguacate hoy?",
       "accept": [
-        "¿A cómo está el aguacate hoy?",
-        "¿A cómo está hoy el aguacate?"
+        "¿A cómo está hoy el aguacate?",
+        "¿A cómo está el aguacate?",
+        "¿Cuánto cuesta el aguacate hoy?"
       ],
       "why": "Today's price at a stall is *¿a cómo está?*"
     },
     {
-      "prompt": "The oranges are two thousand a kilo.",
+      "prompt": "Say: The oranges are two thousand a kilo.",
       "answer": "Las naranjas están a dos mil el kilo.",
       "accept": [
         "Las naranjas están a dos mil pesos el kilo."
@@ -134,9 +135,12 @@
       "why": "Oranges are several, so *están a*, then the price."
     },
     {
-      "prompt": "How much is a pound of potatoes?",
+      "prompt": "At the market: How much is a pound of potatoes?",
       "answer": "¿A cómo está la libra de papa?",
-      "accept": [],
+      "accept": [
+        "¿A cómo está la libra de papas?",
+        "¿Cuánto cuesta la libra de papa?"
+      ],
       "why": "One pound, so *está*; at the market, potatoes go by the *libra*."
     },
     {

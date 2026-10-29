@@ -2,7 +2,7 @@
   "id": "ch007",
   "unit": "u04",
   "title": "Cuarenta libras de mango",
-  "text": "Sábado, cinco de la mañana. Hay mangos aquí, mangos ahí, mangos allá.\nVale: Tomás... ¿y los mangos?\nTomás: ¡Compré mango! Ayer fui a Paloquemao.\nVale: ¿Cuántas libras?\nTomás: Cuarenta.\nVale: ¿Cuarenta libras de mango? ¿Y la fresa? ¿Y la naranja? ¿Y el aguacate?\nTomás: Yo: «¿A cómo está el mango?». El señor: «A dos mil la libra». Yo: «¿Me hace una rebajita?». El señor: «¿Cuarenta libras? ¡Claro!».\nSimón: ¡Me hace una rebajita! ¡Me hace una rebajita, señor!\nTomás deja una flor con la fotografía de Rosa. Vale no habla.\n7:05. ¡Pum! La cafetera no trabaja.\nTomás: ¿Y ahora? ¿Y los dos millones?\nVale hace tinto en el chocolatero de Rosa, como Rosa.\nHernando llegó a las siete y diez. Tomó el tinto y no habló.\nHernando: Es el tinto de Rosa. Ya llamé a los taxistas.\nA las ocho llegaron cinco taxistas. A las nueve, doce. Tomaron tinto y jugo de mango.\nVale: Tomás, ¿te gusta el mango?\nTomás: Hoy, sí. ¡Me encanta el mango!\nUn taxista paga.\nSimón: ¿Y me hace una rebajita?\nY los doce taxistas: ¿Me hace una rebajita, Tomás?\nHernando: Y mañana llegan las señoras de los taxistas.",
+  "text": "Sábado, cinco de la mañana. Hay mangos aquí, mangos ahí, mangos allá.\nVale: Tomás... ¿y los mangos?\nTomás: ¡Compré mango! Ayer fui a Paloquemao.\nVale: ¿Cuántas libras?\nTomás: Cuarenta.\nVale: ¿Cuarenta libras de mango? ¿Y la fresa? ¿Y la naranja? ¿Y el aguacate? ¿Y la mazorca?\nTomás: Yo: «¿A cómo está el mango?». El señor: «A dos mil la libra». Yo: «¿Me hace una rebajita?». El señor: «¿Cuarenta libras? ¡Claro!».\nSimón: ¡Me hace una rebajita! ¡Me hace una rebajita, señor!\nTomás deja una flor con la fotografía de Rosa. Vale no habla.\n7:05. ¡Pum! La cafetera no funciona.\nTomás: ¿Y ahora? ¿Y los dos millones?\nVale hace tinto en el chocolatero de Rosa, como Rosa.\n7:10. Llega Hernando. Toma el tinto y no habla.\nHernando: Es el tinto de Rosa. Ya llamé a los taxistas.\nA las ocho llegan cinco taxistas. A las nueve, doce. Toman tinto y jugo de mango.\nVale: Tomás, ¿te gusta el mango?\nTomás: Hoy, sí. ¡Me encanta el mango!\nUn taxista paga.\nSimón: ¿Y me hace una rebajita?\nY los doce taxistas: ¿Me hace una rebajita, Tomás?\nHernando: Y mañana llegan las señoras de los taxistas.",
   "gloss": [
     {
       "es": "la cafetera",
@@ -25,8 +25,8 @@
       "en": "Can you give me a little discount?"
     },
     {
-      "es": "La cafetera no trabaja.",
-      "en": "The espresso machine has stopped working."
+      "es": "La cafetera no funciona.",
+      "en": "The espresso machine stops working."
     }
   ],
   "questions": [
@@ -154,6 +154,7 @@
     "l:flor",
     "l:fotografía",
     "l:fresa",
+    "l:funcionar",
     "l:gustar",
     "l:hablar",
     "l:hacer",
@@ -164,6 +165,7 @@
     "l:llamar",
     "l:llegar",
     "l:mango",
+    "l:mazorca",
     "l:mañana",
     "l:naranja",
     "l:pagar",
@@ -173,7 +175,6 @@
     "l:sábado",
     "l:taxista",
     "l:tinto",
-    "l:tomar",
-    "l:trabajar"
+    "l:tomar"
   ]
 }
