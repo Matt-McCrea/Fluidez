@@ -1,0 +1,193 @@
+{
+  "id": "ch021",
+  "unit": "u09",
+  "title": "Agua fría",
+  "text": "Tomás: ¡Aaay!\nGloria: ¡Hoy sí hay agua, Tomás!\nTomás: ¡Pero está fría! ¿Y el jabón? ¿Y la toalla?\nGloria: El jabón y la toalla están en el armario.\nTomás mira el reloj: son las cinco y veinte. Es el día uno.\nTomás: ¡Uy, se me hizo tarde!\nGloria: ¡Tomás! ¡El pan del café!\nTomás: ¡Ya voy, ya voy!\nTomás baja la escalera con la toalla en la cabeza.\nSon las seis menos cinco. Vale mira el reloj de la pared.\nVale: Llegas temprano, Tomás. Muy temprano.\nTomás: Mañana llego a las cinco.\nSimón: ¡Qué pereza! ¡Qué pereza!\nHernando: ¿Y esa cara, Tomás?\nTomás: Agua fría, don Hernando.\nA las cuatro, Tomás hace las cuentas en la computadora. A las cinco juega parqués con Hernando, y pierde.\nVale saca un reloj viejo de la vitrina.\nVale: Es el reloj de Rosa. Rosa nunca llegó tarde. Ni un día en cuarenta años.\nEn su cuarto, Tomás tiene dos correos. Uno es de Altamira, y Tomás no lo abre. El otro es de Toronto: «Entrevista de trabajo. Jueves, ocho de la noche».\nTomás mira el reloj de Rosa. Después escribe una palabra: «Sí».\nY se va a la cama.",
+  "gloss": [
+    {
+      "es": "¡Aaay!",
+      "en": "Aaargh!"
+    },
+    {
+      "es": "¡Uy, se me hizo tarde!",
+      "en": "Oh no, I'm running late!"
+    },
+    {
+      "es": "parqués",
+      "en": "parqués, a Colombian board game like ludo"
+    },
+    {
+      "es": "Llegas temprano, Tomás. Muy temprano.",
+      "en": "You're early, Tomás. Very early. (she doesn't mean it)"
+    },
+    {
+      "es": "¿Y esa cara, Tomás?",
+      "en": "What's with that face, Tomás?"
+    },
+    {
+      "es": "Ni un día en cuarenta años.",
+      "en": "Not one day in forty years."
+    },
+    {
+      "es": "Y se va a la cama.",
+      "en": "And he goes to bed."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What is wrong with the shower at Gloria's today?",
+      "options": [
+        "There is water, but it is cold",
+        "There is no water at all",
+        "There is no shower in the house",
+        "Pacho the cat is in it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Vale's \"you're early\" funny?",
+      "options": [
+        "Tomás arrives at five to six, and Vale has been there for ages",
+        "Tomás arrives at four in the morning",
+        "Vale arrives after Tomás",
+        "The café is closed today"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale give Tomás from the display case, and why does it matter?",
+      "options": [
+        "Rosa's old watch: Rosa was never late, not once in forty years",
+        "Rosa's letter to Joaquín",
+        "A towel, because Tomás has none",
+        "Altamira's business card"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿De dónde es el correo que Tomás contesta?",
+      "options": [
+        "De Toronto",
+        "De Altamira",
+        "De Medellín"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What has Tomás just agreed to?",
+      "options": [
+        "A job interview from Toronto, on Thursday at eight in the evening",
+        "Selling the café to Altamira",
+        "A game of parqués with Hernando on Thursday",
+        "Arriving at the café at five every day"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomás has said yes to a job interview with a company in Toronto, on Thursday at eight. He has not told Vale, and he is wearing Rosa's watch.",
+  "rereadQuestions": [
+    {
+      "q": "Where are the soap and the towel?",
+      "options": [
+        "In the wardrobe",
+        "In the window",
+        "In the café",
+        "In the kitchen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Tomás go down the stairs?",
+      "options": [
+        "With the towel on his head",
+        "With the bread in his hand",
+        "With Simón on his shoulder",
+        "With the letter in his pocket"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás do with Altamira's email?",
+      "options": [
+        "He doesn't open it",
+        "He answers it",
+        "He shows it to Vale",
+        "He reads it twice"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:hay",
+    "c:oye-mira",
+    "c:que-pereza",
+    "c:se-me-hizo-tarde",
+    "c:tienes",
+    "c:voy-vas",
+    "c:ya-voy",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:se-accidental",
+    "g:ser-identity",
+    "g:stem-boot",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:agua",
+    "l:armario",
+    "l:año",
+    "l:bajar",
+    "l:cabeza",
+    "l:café",
+    "l:cama",
+    "l:cara",
+    "l:computadora",
+    "l:correo",
+    "l:cuenta",
+    "l:después",
+    "l:día",
+    "l:entrevista",
+    "l:escalera",
+    "l:escribir",
+    "l:estar",
+    "l:frío",
+    "l:hacer",
+    "l:hacerse",
+    "l:hoy",
+    "l:ir",
+    "l:irse",
+    "l:jabón",
+    "l:jueves",
+    "l:jugar",
+    "l:llegar",
+    "l:mañana",
+    "l:mirar",
+    "l:noche",
+    "l:palabra",
+    "l:pan",
+    "l:pared",
+    "l:parque",
+    "l:perder",
+    "l:qué",
+    "l:reloj",
+    "l:sacar",
+    "l:ser",
+    "l:tarde",
+    "l:temprano",
+    "l:tener",
+    "l:toalla",
+    "l:trabajo",
+    "l:viejo",
+    "l:vitrina"
+  ]
+}

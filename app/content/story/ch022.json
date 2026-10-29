@@ -1,0 +1,170 @@
+{
+  "id": "ch022",
+  "unit": "u09",
+  "title": "La rutina de la pizarra",
+  "text": "Día quince. En la pizarra del café no hay precios: hay una rutina.\n«5:00: me despierto y me levanto. 5:05: me ducho, me afeito y me peino. 5:15: desayuno. 12:00: almuerzo. 21:00: cena. 21:30: me cepillo los dientes. 22:00: me acuesto y duermo».\nVale: ¿Y no te vas a vestir?\nTomás: Me voy a vestir después del desayuno.\nHernando: Yo me despierto a las cinco y me levanto a las siete. Y no me peino: no tengo pelo.\nVale: ¿Y no te maquillas, Tomás?\nSimón: ¡Me maquillo! ¡Me maquillo!\nHernando: Yo me baño los domingos y me ducho los miércoles.\nVale: ¿Se baña solo dos días, don Hernando?\nHernando: Y me cepillo los dientes. Los seis.\nVale: Tomás, tu desayuno, tu almuerzo y tu cena son pan. Yo almuerzo a las tres, y cuando llego a casa, me acuesto y duermo.\nTomás toma la pizarra y escribe: «21:00: cena con Vale».\nVale mira la pizarra y no cambia nada.\nHernando: ¿Y los jueves, Tomás? Todos los jueves a las ocho, entras al cuarto de la harina y cierras la puerta.\nTomás: Hago las cuentas.\nVale: Las cuentas son a las cuatro.\nJueves, ocho menos cinco. Tomás entra con la computadora y cierra la puerta.",
+  "gloss": [
+    {
+      "es": "la pizarra",
+      "en": "the board"
+    },
+    {
+      "es": "Me voy a vestir después del desayuno.",
+      "en": "I'm going to get dressed after breakfast."
+    },
+    {
+      "es": "Los seis.",
+      "en": "All six of them."
+    },
+    {
+      "es": "el cuarto de la harina",
+      "en": "the flour room (the storeroom)"
+    },
+    {
+      "es": "no cambia nada",
+      "en": "doesn't change a thing"
+    }
+  ],
+  "questions": [
+    {
+      "q": "What has Tomás written on the café's board?",
+      "options": [
+        "His daily routine, minute by minute",
+        "The prices of the day",
+        "Rosa's recipes",
+        "How much money the café made"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why doesn't Hernando comb his hair?",
+      "options": [
+        "He has no hair",
+        "He has no comb",
+        "He gets up too late",
+        "He only does it on Sundays"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does it mean that Vale doesn't change anything on the board?",
+      "options": [
+        "She is happy to have dinner with Tomás",
+        "She hasn't seen the board",
+        "She is angry with Tomás",
+        "She doesn't eat dinner"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hace Tomás todos los jueves a las ocho?",
+      "options": [
+        "Entra al cuarto de la harina y cierra la puerta",
+        "Juega parqués con Hernando",
+        "Hace las cuentas a las cuatro"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "It is Thursday night and Tomás is behind the flour room door again. Tomorrow's bread has to be made tonight, and every bag of flour in the café is in there with him.",
+  "rereadQuestions": [
+    {
+      "q": "When does Hernando have a bath?",
+      "options": [
+        "On Sundays",
+        "Every day",
+        "On Thursdays",
+        "Never"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why can't Tomás be doing the accounts on Thursday at eight?",
+      "options": [
+        "He does the accounts at four",
+        "Vale does the accounts",
+        "The computer is broken",
+        "The accounts are on Fridays"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale do when she gets home?",
+      "options": [
+        "She goes to bed and sleeps",
+        "She has dinner",
+        "She puts on make up",
+        "She has a shower"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:hago-salgo-vengo",
+    "c:hay",
+    "c:oye-mira",
+    "c:tengo",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:negation-words",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "p:cuando-basic",
+    "p:possessives-basic",
+    "p:time-sequence-basic"
+  ],
+  "lexemes": [
+    "l:acostarse",
+    "l:afeitarse",
+    "l:almorzar",
+    "l:almuerzo",
+    "l:bañarse",
+    "l:café",
+    "l:cambiar",
+    "l:casa",
+    "l:cena",
+    "l:cenar",
+    "l:cepillarse",
+    "l:cerrar",
+    "l:computadora",
+    "l:cuenta",
+    "l:desayunar",
+    "l:desayuno",
+    "l:despertarse",
+    "l:después",
+    "l:diente",
+    "l:domingo",
+    "l:dormir",
+    "l:ducharse",
+    "l:día",
+    "l:entrar",
+    "l:escribir",
+    "l:hacer",
+    "l:harina",
+    "l:irse",
+    "l:jueves",
+    "l:levantarse",
+    "l:llegar",
+    "l:maquillarse",
+    "l:mirar",
+    "l:miércoles",
+    "l:pan",
+    "l:peinarse",
+    "l:pelo",
+    "l:pizarra",
+    "l:precio",
+    "l:puerta",
+    "l:rutina",
+    "l:ser",
+    "l:tener",
+    "l:tomar",
+    "l:vestirse"
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "ch023",
+  "unit": "u09",
+  "title": "Ya es tarde",
+  "text": "Vale: Don Hernando, ¿qué hora es?\nHernando: Son las ocho y diez, mija. Y Tomás está en el cuarto pequeño, otra vez.\nVale: Tengo que hacer el pan de mañana, y toda la harina está allá.\nHernando: Hay que esperar un rato, mija.\nVale: No tengo que esperar. Es mi harina.\nSimón: ¡Hay que esperar, Vale! ¡Esperar, esperar!\nVale abre la puerta del cuarto. En la computadora de Tomás hay cuatro caras de Toronto. Tomás habla en inglés y no ve a Vale.\nTomás: I'm only here for a few months.\nVale no entra. No toma la harina. Cierra la puerta sin hablar y sale del café.\nA las nueve, Tomás sale del cuarto.\nTomás: ¿Y Vale? ¿No tiene que hacer el pan?\nHernando: Se fue a la panadería de Gloria. Abrió la puerta, Tomás, y la cerró.\nTomás: Tranquilo, don Hernando. Vale no sabe inglés.\nHernando: ¿Te acuerdas de tu primer día? Vale te habló en inglés.\nTomás mira el reloj de Rosa.\nHernando: Rosa perdió a su hermano, Tomás. ¿Tú vas a perder a Vale?\nTomás: ¿Qué hora es?\nHernando: Tarde, Tomás. Ya es tarde, mijo.",
+  "gloss": [
+    {
+      "es": "mija",
+      "en": "my dear (to a woman)"
+    },
+    {
+      "es": "I'm only here for a few months",
+      "en": "I'm only here for a few months (Tomás says it in English)"
+    },
+    {
+      "es": "cuatro caras de Toronto",
+      "en": "four faces from Toronto"
+    },
+    {
+      "es": "Abrió la puerta, Tomás, y la cerró.",
+      "en": "She opened the door, Tomás, and she closed it."
+    },
+    {
+      "es": "Tarde, Tomás. Ya es tarde, mijo.",
+      "en": "Late, Tomás. It's already late, son. (too late?)"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Vale need to get into the little room?",
+      "options": [
+        "All the flour for tomorrow's bread is in there",
+        "She wants to talk to Toronto",
+        "She has left her phone there",
+        "Simón is shut in there"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Tomás really doing in the room on Thursdays?",
+      "options": [
+        "A video job interview with people in Toronto",
+        "The café's accounts",
+        "Reading Rosa's letter",
+        "Talking to Altamira"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Tomás wrong to feel safe?",
+      "options": [
+        "Vale speaks English: she spoke English to him on his first day",
+        "Vale didn't open the door",
+        "Hernando speaks English too",
+        "Vale was at Gloria's bakery"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué hace Vale después?",
+      "options": [
+        "Cierra la puerta y sale del café",
+        "Entra y toma la harina",
+        "Habla en inglés con Toronto"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Vale heard every word, in a language Tomás forgot she speaks. Tomorrow at five he has a café to open and an apology to make, and Vale is not answering her phone.",
+  "rereadQuestions": [
+    {
+      "q": "What time is it when Vale asks Hernando?",
+      "options": [
+        "Ten past eight",
+        "Eight o'clock",
+        "Nine o'clock",
+        "Five to eight"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Where has Vale gone?",
+      "options": [
+        "To Gloria's bakery",
+        "Home to bed",
+        "To Medellín",
+        "To the market"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who does Hernando compare Tomás to?",
+      "options": [
+        "Rosa, who lost her brother",
+        "Altamira",
+        "Joaquín",
+        "Simón"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:hay",
+    "c:hay-que",
+    "c:oye-mira",
+    "c:que-hora-es",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "c:tranquilo",
+    "c:voy-vas",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:ir-a-plans",
+    "g:prep-infinitive",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:me-te-nos-objects",
+    "p:possessives-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:acordarse",
+    "l:allá",
+    "l:café",
+    "l:cara",
+    "l:cerrar",
+    "l:computadora",
+    "l:día",
+    "l:entrar",
+    "l:esperar",
+    "l:estar",
+    "l:hablar",
+    "l:hacer",
+    "l:harina",
+    "l:hermano",
+    "l:hora",
+    "l:i",
+    "l:inglés",
+    "l:ir",
+    "l:irse",
+    "l:m",
+    "l:mañana",
+    "l:mirar",
+    "l:pan",
+    "l:panadería",
+    "l:pequeño",
+    "l:perder",
+    "l:puerta",
+    "l:qué",
+    "l:rato",
+    "l:reloj",
+    "l:saber",
+    "l:salir",
+    "l:ser",
+    "l:tarde",
+    "l:tener",
+    "l:tomar",
+    "l:tranquilo",
+    "l:ver",
+    "l:vez"
+  ]
+}
