@@ -1,0 +1,191 @@
+{
+  "node": "x:lo-le",
+  "hook": {
+    "line": "Tomás is telling Vale about his trip north: he saw a street vendor and asked him the way. English says him both times. Spanish uses two different little words, and picks by what happened to the man.",
+    "es": "Lo vi en la esquina y le pregunté dónde queda la estación.",
+    "en": "I saw him on the corner and asked him where the station is."
+  },
+  "examples": [
+    {
+      "es": "¿Y Vale? La vi ayer.",
+      "en": "And Vale? I saw her yesterday."
+    },
+    {
+      "es": "¿Y Vale? Le dije la verdad.",
+      "en": "And Vale? I told her the truth."
+    },
+    {
+      "es": "¿Y don Hernando? Lo llamé anoche.",
+      "en": "And don Hernando? I called him last night."
+    },
+    {
+      "es": "¿Y don Hernando? Le di las llaves.",
+      "en": "And don Hernando? I gave him the keys."
+    },
+    {
+      "es": "¿A Mariana? No la conozco.",
+      "en": "Mariana? I don't know her."
+    },
+    {
+      "es": "Les pregunté la hora.",
+      "en": "I asked them the time."
+    },
+    {
+      "es": "Los esperé en la parada.",
+      "en": "I waited for them at the stop."
+    }
+  ],
+  "rule": "Look at Vale and Hernando above. Seeing, calling, knowing, waiting for: the action lands straight on the person, so you use *lo* (him) or *la* (her), *los* or *las* (them).\n\nTelling, giving, asking: something (the truth, the keys, the time) goes to the person. The person gets *le*, and *les* for them.\n\nTwo things change from English. *Lo* and *la* show if it's a man or a woman; *le* doesn't care: *le dije* is I told him or I told her. And there's a quick test: if English could add to (gave the keys to him, told the truth to her), it's *le*.\n\nCareful with wait for: *esperar* already means it, so it's *la esperé*, not *le*.",
+  "smallPrint": "Teachers call *lo*, *la*, *los*, *las* direct object pronouns and *le*, *les* indirect object pronouns. In parts of Spain you'll hear *le vi* for I saw him; in Latin America it's *lo vi*.",
+  "readAndPick": [
+    {
+      "es": "La llamé anoche.",
+      "options": [
+        "I called her last night.",
+        "I called him last night."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Lo vi en la estación.",
+      "options": [
+        "I saw her at the station.",
+        "I saw him at the station."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le escribí ayer.",
+      "options": [
+        "I wrote it yesterday.",
+        "I wrote to him yesterday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo escribí ayer.",
+      "options": [
+        "I wrote it yesterday.",
+        "I wrote to him yesterday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Les di las llaves.",
+      "options": [
+        "I gave him the keys.",
+        "I gave them the keys.",
+        "I gave the keys away."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Los vi en la parada.",
+      "options": [
+        "I saw them at the stop.",
+        "I saw him at the stop."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿El pasaje? Lo pagué yo.",
+      "options": [
+        "The fare? I paid him.",
+        "The fare? I paid for it."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Las esperé en la parada.",
+      "options": [
+        "I waited for him at the stop.",
+        "I waited for her at the stop.",
+        "I waited for them at the stop."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿La moto? La vendí.",
+      "options": [
+        "The motorbike? I sold it.",
+        "The motorbike? I sold it to her."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *lo* or *le* and type the whole sentence: ¿Y don Hernando? ___ vi ayer.",
+      "answer": "¿Y don Hernando? Lo vi ayer.",
+      "accept": [],
+      "why": "You saw him: the seeing lands straight on him, and he's a man, so *lo*."
+    },
+    {
+      "prompt": "Choose *la* or *le* and type the whole sentence: ¿Y Vale? ___ dije la verdad.",
+      "answer": "¿Y Vale? Le dije la verdad.",
+      "accept": [],
+      "why": "The truth went to her, so she gets *le*, even though she's a woman."
+    },
+    {
+      "prompt": "Choose *la* or *le* and type the whole sentence: ¿A Mariana? No ___ conozco.",
+      "answer": "¿A Mariana? No la conozco.",
+      "accept": [],
+      "why": "Knowing someone lands straight on them, and Mariana is a woman, so *la*."
+    },
+    {
+      "prompt": "Say: I called her last night.",
+      "answer": "La llamé anoche.",
+      "accept": [
+        "Anoche la llamé."
+      ],
+      "why": "Calling lands straight on her: *la*, before the verb."
+    },
+    {
+      "prompt": "Say: I gave him the money (use *plata*).",
+      "answer": "Le di la plata.",
+      "accept": [],
+      "why": "The money goes to him, so he gets *le*."
+    },
+    {
+      "prompt": "Make it about two women: *La esperé en la parada.*",
+      "answer": "Las esperé en la parada.",
+      "accept": [],
+      "why": "Two women are *las*; *esperar* already means wait for."
+    },
+    {
+      "prompt": "Make it about them: *Le pregunté la hora.*",
+      "answer": "Les pregunté la hora.",
+      "accept": [],
+      "why": "*Le* just adds an *s* for them: *les*."
+    },
+    {
+      "prompt": "Ask a friend: What did you tell him?",
+      "answer": "¿Qué le dijiste?",
+      "accept": [],
+      "why": "Telling goes to someone, so *le*, and the friend form is *dijiste*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "¿Y Vale? La dije la verdad.",
+      "right": "¿Y Vale? Le dije la verdad.",
+      "why": "Almost. The truth goes to her, so it's *le*, for a woman as much as a man."
+    },
+    {
+      "wrong": "¿Y don Hernando? Le vi ayer.",
+      "right": "¿Y don Hernando? Lo vi ayer.",
+      "why": "Seeing lands straight on him, so in Latin America it's *lo*."
+    },
+    {
+      "wrong": "Le esperé en la parada.",
+      "right": "La esperé en la parada.",
+      "why": "English needs for, but *esperar* takes the person straight on: *la* or *lo*."
+    },
+    {
+      "wrong": "¿Y Vale? Lo llamé anoche.",
+      "right": "¿Y Vale? La llamé anoche.",
+      "why": "*Lo* and *la* follow the person: Vale is a woman, so *la*."
+    }
+  ],
+  "personal": "Think of someone you saw this week and something you told them. Say both: *La vi… Le dije…* or *Lo vi… Le dije…*"
+}

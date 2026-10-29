@@ -1,0 +1,162 @@
+{
+  "node": "p:preguntar-pedir",
+  "hook": {
+    "line": "Lost in the north of the city, Tomás asks everyone: one person for the way, another for a favour. You already split ask in the café. Now add the person you ask.",
+    "es": "Le pregunté dónde queda la estación.",
+    "en": "I asked her where the station is."
+  },
+  "examples": [
+    {
+      "es": "Le pregunté la hora.",
+      "en": "I asked him the time."
+    },
+    {
+      "es": "Le pedí un favor.",
+      "en": "I asked him for a favour."
+    },
+    {
+      "es": "Les pedí ayuda.",
+      "en": "I asked them for help."
+    },
+    {
+      "es": "Me preguntó cuánto cuesta el pasaje.",
+      "en": "She asked me how much the fare costs."
+    },
+    {
+      "es": "Le hice una pregunta.",
+      "en": "I asked her a question."
+    }
+  ],
+  "rule": "Same split as in the café: *pedir* for a thing you want, *preguntar* for an answer.\n\nThe person you ask gets *le* (or *me*, *te*, *nos*, *les*), man or woman: *Le pregunté la hora. Le pedí un favor.* English says asked him; Spanish thinks asked to him.\n\nAfter *preguntar*, put a thing (*la hora*) or a whole question (*dónde queda*, *cuánto cuesta*). After *pedir*, only the thing you want, never a question.\n\nAnd to ask a question is *hacer una pregunta*: *le hice una pregunta*.",
+  "smallPrint": "The person asked is an indirect object, which is why it's *le* and never *lo* or *la*.",
+  "readAndPick": [
+    {
+      "es": "Le pregunté la hora.",
+      "options": [
+        "I asked him the time.",
+        "I asked him for more time."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le pedí la cuenta.",
+      "options": [
+        "I asked her about the bill.",
+        "I asked her for the bill."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Me pidió un favor.",
+      "options": [
+        "I asked her for a favour.",
+        "She asked me for a favour."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Les pregunté dónde queda la estación.",
+      "options": [
+        "I asked them where the station is.",
+        "I asked him where the station is."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Le hice una pregunta.",
+      "options": [
+        "I did him a favour.",
+        "I asked him a question."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Les pedí ayuda.",
+      "options": [
+        "I asked them for help.",
+        "I asked him for help.",
+        "They asked me for help."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué te preguntó?",
+      "options": [
+        "What did she ask you for?",
+        "What did she ask you?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Le pedí el mapa.",
+      "options": [
+        "I asked him about the map.",
+        "I asked him where the map is.",
+        "I asked him for the map."
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Choose *pregunté* or *pedí* and type the whole sentence: Le ___ dónde queda la estación.",
+      "answer": "Le pregunté dónde queda la estación.",
+      "accept": [],
+      "why": "You wanted an answer to a question, so *preguntar*."
+    },
+    {
+      "prompt": "Choose *pregunté* or *pedí* and type the whole sentence: Le ___ un favor.",
+      "answer": "Le pedí un favor.",
+      "accept": [],
+      "why": "A favour is something you want, so *pedir*, with no word for for."
+    },
+    {
+      "prompt": "Say: I asked him the time.",
+      "answer": "Le pregunté la hora.",
+      "accept": [],
+      "why": "The time is an answer, so *preguntar*, and the person asked gets *le*."
+    },
+    {
+      "prompt": "Say: I asked them for help.",
+      "answer": "Les pedí ayuda.",
+      "accept": [],
+      "why": "Help is a thing you want: *pedir*. Them is *les*."
+    },
+    {
+      "prompt": "Say: She asked me how much the fare costs.",
+      "answer": "Me preguntó cuánto cuesta el pasaje.",
+      "accept": [],
+      "why": "A whole question can follow *preguntar*, and me goes before the verb."
+    },
+    {
+      "prompt": "Make it about them: *Le pedí la cuenta.*",
+      "answer": "Les pedí la cuenta.",
+      "accept": [],
+      "why": "Asking more than one person: *le* becomes *les*."
+    },
+    {
+      "prompt": "Say: I asked her a question.",
+      "answer": "Le hice una pregunta.",
+      "accept": [],
+      "why": "Ask a question is *hacer una pregunta*, made a question to her."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Le pedí dónde queda la estación.",
+      "right": "Le pregunté dónde queda la estación.",
+      "why": "Almost. Where something is, is an answer, so it's *preguntar*."
+    },
+    {
+      "wrong": "Le pregunté una pregunta.",
+      "right": "Le hice una pregunta.",
+      "why": "Spanish doesn't ask a question, it makes one: *hacer una pregunta*."
+    },
+    {
+      "wrong": "La pregunté la hora.",
+      "right": "Le pregunté la hora.",
+      "why": "The person you ask always gets *le*, even a woman."
+    }
+  ],
+  "personal": "Think of the last time you were lost or stuck. What did you ask someone, and what did you ask them for? *Le pregunté… Le pedí…*"
+}
