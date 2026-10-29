@@ -16,7 +16,7 @@
   <array>
     <string>/bin/zsh</string>
     <string>-c</string>
-    <string>LOG="__REPO__/app/content/_queue/burn.log"; CLAUDE="__CLAUDE__"; [ -x "$CLAUDE" ] || CLAUDE="$(ls -t "$HOME"/.vscode/extensions/anthropic.claude-code-*/resources/native-binary/claude 2>/dev/null | head -1)"; [ -x "$CLAUDE" ] || CLAUDE="$(command -v claude)"; if [ -f "$LOG" ] &amp;&amp; [ "$(stat -f %z "$LOG")" -gt 5000000 ]; then tail -c 2000000 "$LOG" &gt; "$LOG.tmp" &amp;&amp; mv "$LOG.tmp" "$LOG"; fi; echo "=== $(date '+%Y-%m-%d %H:%M:%S') tick ($CLAUDE)" &gt;&gt; "$LOG"; cd "__REPO__" &amp;&amp; "$CLAUDE" -p "/burn" --permission-mode bypassPermissions &gt;&gt; "$LOG" 2&gt;&amp;1</string>
+    <string>LOG="__REPO__/app/content/_queue/burn.log"; CLAUDE="__CLAUDE__"; [ -x "$CLAUDE" ] || CLAUDE="$(ls -t "$HOME"/.vscode/extensions/anthropic.claude-code-*/resources/native-binary/claude 2>/dev/null | head -1)"; [ -x "$CLAUDE" ] || CLAUDE="$(command -v claude)"; if [ -f "$LOG" ] &amp;&amp; [ "$(stat -f %z "$LOG")" -gt 5000000 ]; then tail -c 2000000 "$LOG" &gt; "$LOG.tmp" &amp;&amp; mv "$LOG.tmp" "$LOG"; fi; echo "=== $(date '+%Y-%m-%d %H:%M:%S') tick ($CLAUDE)" &gt;&gt; "$LOG"; cd "__REPO__" &amp;&amp; "$CLAUDE" -p "/burn" --permission-mode auto --permission-prompts none &gt;&gt; "$LOG" 2&gt;&amp;1</string>
   </array>
 
   <key>WorkingDirectory</key>
@@ -24,6 +24,8 @@
 
   <key>EnvironmentVariables</key>
   <dict>
+    <key>CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS</key>
+    <string>5400000</string>
     <key>PATH</key>
     <string>__PATH__</string>
     <key>HOME</key>

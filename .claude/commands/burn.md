@@ -7,7 +7,7 @@ You are the Fluidez burn runner. This runs **unattended** (headless `claude -p "
 
 Arguments: `$ARGUMENTS`
 
-All commands run from `/Users/Matthew/Fluidez/app`. `Q` below means `npx tsx tools/queue.ts`. Use absolute paths; `cd /Users/Matthew/Fluidez/app &&` at the start of every Bash call.
+All commands run from `/Users/Matthew/Fluidez/app`. **The shell is zsh: an unquoted `$var` holding several paths is NOT split into words.** Pass every output path as its own literal argument, or run any loop inside `bash -c '…'`. `Q` below means `npx tsx tools/queue.ts`. Use absolute paths; `cd /Users/Matthew/Fluidez/app &&` at the start of every Bash call.
 
 ## Mode: `status`
 
@@ -52,7 +52,13 @@ cd /Users/Matthew/Fluidez && git status --porcelain=v1 -uall > app/content/_queu
 
 ### 4. Run the jobs as one Workflow fan-out
 
-Call the **Workflow** tool once with this script and `args: {"jobs": <the leased array, each reduced to {id, kind, band, unit, model, outputs, resolvedPrompt}>}` (pass a real JSON object, not a string):
+First write each job's prompt to its own file, so the Workflow args stay small:
+
+```
+cd /Users/Matthew/Fluidez/app && node -e 'const fs=require("fs");const run=process.argv[1];const j=JSON.parse(fs.readFileSync(`content/_queue/runs/${run}.leased.json`));console.log(JSON.stringify({jobs:j.map(x=>{const f=`content/_queue/runs/${run}.${x.id}.prompt.md`;fs.writeFileSync(f,x.resolvedPrompt);return {id:x.id,kind:x.kind,band:x.band,unit:x.unit,model:x.model,outputs:x.outputs,resolvedPrompt:`Read your full job prompt from /Users/Matthew/Fluidez/app/${f} (read it completely before starting) and follow it.`}})}))' $RUN
+```
+
+Call the **Workflow** tool once with this script and the printed object as `args` (pass a real JSON object, not a string). The Workflow runs in the background: after launching it, **wait for its completion notification** before step 5. Do not end your turn or exit while it runs (in a headless run, keep working only by waiting; if your harness cannot wait, refresh the lock and poll `Q show <id>` is not enough — results only arrive via the notification).
 
 ```js
 export const meta = {
