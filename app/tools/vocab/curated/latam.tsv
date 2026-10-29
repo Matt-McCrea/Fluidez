@@ -163,3 +163,4 @@ fregar	x		drop
 vaqueros	x		drop
 sacapuntas	x		drop
 pajita	x		drop
+video	n:m	video	pen=vídeo

@@ -113,8 +113,8 @@ const CORE_NOUN_M = `costo arriendo trancón parcero celular carro computador ap
   fútbol partido equipo juego deporte gimnasio cine teatro concierto museo viaje paseo pasaje tren avión metro taxi
   camino semáforo carro trancón tráfico tráfico cuerpo brazo pie ojo pelo corazón dolor estómago miedo sueño
   plan proyecto examen trabajo salario sueldo negocio banco cajero billete arepa tinto aguacate plátano banano
-  fríjol maíz mango ajiaco sancocho bocadillo chocolate dulce postre vaso plato tenedor cuchillo almacén`;
-const CORE_NOUN_F = `agua hambre casa calle ciudad plaza tienda oficina universidad escuela clase mamá madre hermana hija abuela tía
+  video chofer coctel mijo parce fríjol maíz mango ajiaco sancocho bocadillo chocolate dulce postre vaso plato tenedor cuchillo almacén`;
+const CORE_NOUN_F = `mija agua hambre casa calle ciudad plaza tienda oficina universidad escuela clase mamá madre hermana hija abuela tía
   prima amiga novia esposa señora mujer niña chica muchacha familia gente persona vida noche tarde mañana semana hora
   vez comida cena bebida agua leche carne fruta verdura papa sopa ensalada cerveza gaseosa torta mesa silla cama
   puerta ventana cocina sala nevera ducha llave ropa camisa camiseta falda chaqueta chompa ruana bolsa maleta plata

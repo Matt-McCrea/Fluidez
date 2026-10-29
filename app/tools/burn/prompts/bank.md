@@ -45,7 +45,7 @@ let bad = 0;
 const lines = readFileSync(0, 'utf8').split('\n').map((s) => s.trim()).filter(Boolean);
 for (const s of lines) {
   const r = tagSentence(s, cur.tagOpts);
-  const spans = r.features.filter((x) => x.key.startsWith('chunk.') && (cur.taughtAt.get(x.node!) ?? 1e9) <= at).map((x) => x.span);
+  const spans = r.features.filter((x) => (x.key.startsWith('chunk.') || x.key.startsWith('pattern.')) && (cur.taughtAt.get(x.node!) ?? 1e9) <= at).map((x) => x.span);
   const out: string[] = [];
   for (const f of r.features) {
     const n = f.node; if (!n || f.key.startsWith('chunk.') || allow.has(n)) continue;

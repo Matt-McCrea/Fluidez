@@ -97,7 +97,7 @@ let words = 0, unk = 0, unG = 0;
 for (const s of splitSentences(text)) {
   const r = tagSentence(s, cur.tagOpts);
   words += r.tokens.filter((w) => !w.punct && w.pos !== 'propn' && w.pos !== 'num').length;
-  const spans = r.features.filter((x) => x.key.startsWith('chunk.') && (cur.taughtAt.get(x.node!) ?? 1e9) <= at).map((x) => x.span);
+  const spans = r.features.filter((x) => (x.key.startsWith('chunk.') || x.key.startsWith('pattern.')) && (cur.taughtAt.get(x.node!) ?? 1e9) <= at).map((x) => x.span);
   const inChunk = (sp: [number, number]) => spans.some(([a, b]) => sp[0] >= a && sp[1] <= b);
   const out: string[] = [];
   for (const ft of r.features) {

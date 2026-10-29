@@ -102148,5 +102148,89 @@
   "pos": "adv",
   "freqRank": 4916,
   "variety": "neutral"
+ },
+ {
+  "id": "l:mijo",
+  "kind": "lexeme",
+  "band": "A2",
+  "priority": 15,
+  "title": "son, dear",
+  "es": "el mijo",
+  "en": "son, dear",
+  "requires": [],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "informal Colombian endearment/address",
+  "sources": [
+   "curated"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "variety": "neutral"
+ },
+ {
+  "id": "l:mija",
+  "kind": "lexeme",
+  "band": "A2",
+  "priority": 15,
+  "title": "daughter, dear",
+  "es": "la mija",
+  "en": "daughter, dear",
+  "requires": [],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "informal Colombian endearment/address",
+  "sources": [
+   "curated"
+  ],
+  "pos": "noun",
+  "gender": "f",
+  "variety": "neutral"
+ },
+ {
+  "id": "l:parce",
+  "kind": "lexeme",
+  "band": "A2",
+  "priority": 15,
+  "title": "mate, buddy",
+  "es": "el parce",
+  "en": "mate, buddy",
+  "requires": [],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "informal Colombian endearment/address",
+  "sources": [
+   "curated"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "variety": "neutral"
+ },
+ {
+  "id": "l:video",
+  "kind": "lexeme",
+  "band": "A2",
+  "priority": 120,
+  "title": "video",
+  "es": "el video",
+  "en": "video",
+  "requires": [],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "LatAm spelling (Spain: vídeo, accepted but not taught)",
+  "sources": [
+   "curated"
+  ],
+  "pos": "noun",
+  "gender": "m",
+  "variety": "neutral"
  }
 ]

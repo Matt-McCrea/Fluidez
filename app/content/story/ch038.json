@@ -1,221 +1,222 @@
 {
- "id": "ch038",
- "unit": "u14",
- "title": "Listo",
- "text": "«Listo».\nUna palabra. Vale la mandó a las cuatro y media de la mañana.\nTomás: ¿Listo? ¿Una palabra? Escribí un mensaje de una hora, ¡y ella me responde con una palabra!\nEn la cocina de doña Gloria, Tomás miraba el celular. Gloria le sirvió un tinto.\nGloria: A ver, mijo. ¿Qué relación tienen ustedes dos?\nTomás: Trabajo con ella. Es una amiga.\nGloria: Claro, mijo. Una amiga que escribe a las cuatro y media de la mañana.\nEn el café, Tomás les mostró el celular a todos.\nHernando: En Colombia, «listo» quiere decir sí. Es una noticia excelente, mijo.\nMariana: No. «Listo» quiere decir: ya entendí, y ya.\nSimón: ¡Listo! ¡Listo!\nHernando: ¿Ve? Simón también lo entiende.\nTomás: Vale suele escribir mucho. Suele mandar diez mensajes, con fotos y audios. ¿Y hoy? Una palabra.\nA las diez sonó el teléfono viejo del café, el teléfono de Rosa.\nVale: ¿Aló? Tomás, ¿me estás escuchando?\nTomás: Sí, te estoy escuchando.\nVale: Leí tu mensaje cinco veces. Tu español no es perfecto, pero tiene corazón.\nVale: «Listo» quiere decir: estoy contigo. Voy a ayudarte con la escritura. Vamos a buscarla.\nVale: Llego mañana a las seis. ¿Me vas a esperar?\nTomás: Te voy a esperar con un tinto. Y con Simón.\nVale: Sin Simón, por favor.\nTomás puso el teléfono en la mesa. Por primera vez en muchos días, tenía paz en el corazón.\nHernando: Cuidado, mijo. Está lloviendo, y usted no tiene chaqueta.\nTomás: Hoy no me importa la lluvia.\nTomás caminó a la casa de Gloria bajo la lluvia, sin chaqueta. Cantaba la canción de Rosa.",
- "gloss": [
-  {
-   "es": "mijo",
-   "en": "son (a fond way to talk to a younger man)"
-  },
-  {
-   "es": "Una amiga que escribe a las cuatro y media de la mañana.",
-   "en": "A friend who writes at half past four in the morning."
-  },
-  {
-   "es": "«Listo» quiere decir: ya entendí, y ya.",
-   "en": "\"Listo\" means: got it, end of story."
-  },
-  {
-   "es": "Tu español no es perfecto, pero tiene corazón.",
-   "en": "Your Spanish isn't perfect, but it has heart."
-  },
-  {
-   "es": "Voy a ayudarte con la escritura.",
-   "en": "I'm going to help you with the deed."
-  },
-  {
-   "es": "tenía paz en el corazón",
-   "en": "his heart was at peace"
-  },
-  {
-   "es": "Hoy no me importa la lluvia.",
-   "en": "Today I don't care about the rain."
-  }
- ],
- "questions": [
-  {
-   "q": "What is Vale's answer to the long message?",
-   "options": [
-    "One word: «Listo»",
-    "A long audio",
-    "A photo",
-    "No answer at all"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "What does Vale say «listo» means, on the phone?",
-   "options": [
-    "I'm with you, and I'll help you find the deed",
-    "I understand, now stop writing",
-    "I'm leaving the café",
-    "I'm tired"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "¿Qué piensa Vale del mensaje de Tomás?",
-   "options": [
-    "No es perfecto, pero tiene corazón",
-    "Es muy aburrido",
-    "Es perfecto",
-    "No lo leyó"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "Why might the last scene be a problem tomorrow?",
-   "options": [
-    "Tomás walks home in the rain without his jacket",
-    "Tomás forgets the coffee",
-    "Vale misses the bus",
-    "Simón has gone"
-   ],
-   "answer": 0
-  }
- ],
- "rereadQuestions": [
-  {
-   "q": "What time did Vale send her answer?",
-   "options": [
-    "Half past four in the morning",
-    "Six in the morning",
-    "Ten o'clock",
-    "Midnight"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "Which phone does Vale call?",
-   "options": [
-    "The café's old phone, Rosa's phone",
-    "Gloria's phone",
-    "Hernando's cell phone",
-    "Mariana's cell phone"
-   ],
-   "answer": 0
-  },
-  {
-   "q": "What does Gloria ask Tomás?",
-   "options": [
-    "What relationship he and Vale have",
-    "Where his jacket is",
-    "When he pays the rent",
-    "Who Joaquín is"
-   ],
-   "answer": 0
-  }
- ],
- "hook": "Vale is back tomorrow at six, and Tomás has promised to be waiting with a coffee. But he walked home soaked to the skin, and by midnight he is shivering.",
- "requires": [
-  "c:a-ver",
-  "c:alo",
-  "c:bien-y-tu",
-  "c:claro-listo",
-  "c:con-el-ella",
-  "c:me-importa-un-comino",
-  "c:ojo",
-  "c:por-favor",
-  "c:tienes",
-  "c:vamos-a",
-  "c:voy-a",
-  "c:voy-vas",
-  "g:direct-objects",
-  "g:estar-gerund",
-  "g:estar-location-states",
-  "g:gender-articles",
-  "g:imperfect-habitual",
-  "g:imperfect-states",
-  "g:indirect-objects",
-  "g:ir-a-plans",
-  "g:object-pronoun-position",
-  "g:prep-pronouns",
-  "g:present-ar",
-  "g:present-er-ir",
-  "g:preterite-ar",
-  "g:preterite-er-ir",
-  "g:preterite-irregular-strong",
-  "g:preterite-spelling-stem",
-  "g:questions",
-  "g:relative-que",
-  "g:ser-identity",
-  "g:stem-boot",
-  "g:verb-infinitive",
-  "p:hace-frio",
-  "p:me-te-nos-objects",
-  "p:ordinal-floor",
-  "p:ordinals-primer-tercer",
-  "p:por-la-manana",
-  "p:possessives-basic",
-  "p:quantifiers-basic",
-  "p:senor-don-article",
-  "p:soler-inf",
-  "p:telling-time",
-  "p:viejo-antiguo-mayor"
- ],
- "lexemes": [
-  "l:amiga",
-  "l:audio",
-  "l:ayudar",
-  "l:buscar",
-  "l:café",
-  "l:caminar",
-  "l:canción",
-  "l:cantar",
-  "l:casa",
-  "l:celular",
-  "l:chaqueta",
-  "l:claro",
-  "l:cocina",
-  "l:corazón",
-  "l:cuidado",
-  "l:decir",
-  "l:día",
-  "l:entender",
-  "l:escribir",
-  "l:escritura",
-  "l:escuchar",
-  "l:español",
-  "l:esperar",
-  "l:estar",
-  "l:excelente",
-  "l:favor",
-  "l:foto",
-  "l:hora",
-  "l:hoy",
-  "l:importar",
-  "l:ir",
-  "l:leer",
-  "l:listo",
-  "l:llegar",
-  "l:llover",
-  "l:lluvia",
-  "l:mandar",
-  "l:mañana",
-  "l:mensaje",
-  "l:mesa",
-  "l:mirar",
-  "l:mostrar",
-  "l:noticia",
-  "l:palabra",
-  "l:paz",
-  "l:perfecto",
-  "l:poner",
-  "l:querer",
-  "l:qué",
-  "l:relación",
-  "l:responder",
-  "l:ser",
-  "l:servir",
-  "l:soler",
-  "l:sonar",
-  "l:teléfono",
-  "l:tener",
-  "l:tinto",
-  "l:trabajar",
-  "l:ver",
-  "l:vez",
-  "l:viejo"
- ]
+  "id": "ch038",
+  "unit": "u14",
+  "title": "Listo",
+  "text": "«Listo».\nUna palabra. Vale la mandó a las cuatro y media de la mañana.\nTomás: ¿Listo? ¿Una palabra? Escribí un mensaje de una hora, ¡y ella me responde con una palabra!\nEn la cocina de doña Gloria, Tomás miraba el celular. Gloria le sirvió un tinto.\nGloria: A ver, mijo. ¿Qué relación tienen ustedes dos?\nTomás: Trabajo con ella. Es una amiga.\nGloria: Claro, mijo. Una amiga que escribe a las cuatro y media de la mañana.\nEn el café, Tomás les mostró el celular a todos.\nHernando: En Colombia, «listo» quiere decir sí. Es una noticia excelente, mijo.\nMariana: No. «Listo» quiere decir: ya entendí, y ya.\nSimón: ¡Listo! ¡Listo!\nHernando: ¿Ve? Simón también lo entiende.\nTomás: Vale suele escribir mucho. Suele mandar diez mensajes, con fotos y audios. ¿Y hoy? Una palabra.\nA las diez sonó el teléfono viejo del café, el teléfono de Rosa.\nVale: ¿Aló? Tomás, ¿me estás escuchando?\nTomás: Sí, te estoy escuchando.\nVale: Leí tu mensaje cinco veces. Tu español no es perfecto, pero tiene corazón.\nVale: «Listo» quiere decir: estoy contigo. Voy a ayudarte con la escritura. Vamos a buscarla.\nVale: Llego mañana a las seis. ¿Me vas a esperar?\nTomás: Te voy a esperar con un tinto. Y con Simón.\nVale: Sin Simón, por favor.\nTomás puso el teléfono en la mesa. Por primera vez en muchos días, tenía paz en el corazón.\nHernando: Cuidado, mijo. Está lloviendo, y usted no tiene chaqueta.\nTomás: Hoy no me importa la lluvia.\nTomás caminó a la casa de Gloria bajo la lluvia, sin chaqueta. Cantaba la canción de Rosa.",
+  "gloss": [
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "Una amiga que escribe a las cuatro y media de la mañana.",
+      "en": "A friend who writes at half past four in the morning."
+    },
+    {
+      "es": "«Listo» quiere decir: ya entendí, y ya.",
+      "en": "\"Listo\" means: got it, end of story."
+    },
+    {
+      "es": "Tu español no es perfecto, pero tiene corazón.",
+      "en": "Your Spanish isn't perfect, but it has heart."
+    },
+    {
+      "es": "Voy a ayudarte con la escritura.",
+      "en": "I'm going to help you with the deed."
+    },
+    {
+      "es": "tenía paz en el corazón",
+      "en": "his heart was at peace"
+    },
+    {
+      "es": "Hoy no me importa la lluvia.",
+      "en": "Today I don't care about the rain."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What is Vale's answer to the long message?",
+      "options": [
+        "One word: «Listo»",
+        "A long audio",
+        "A photo",
+        "No answer at all"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale say «listo» means, on the phone?",
+      "options": [
+        "I'm with you, and I'll help you find the deed",
+        "I understand, now stop writing",
+        "I'm leaving the café",
+        "I'm tired"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué piensa Vale del mensaje de Tomás?",
+      "options": [
+        "No es perfecto, pero tiene corazón",
+        "Es muy aburrido",
+        "Es perfecto",
+        "No lo leyó"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why might the last scene be a problem tomorrow?",
+      "options": [
+        "Tomás walks home in the rain without his jacket",
+        "Tomás forgets the coffee",
+        "Vale misses the bus",
+        "Simón has gone"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What time did Vale send her answer?",
+      "options": [
+        "Half past four in the morning",
+        "Six in the morning",
+        "Ten o'clock",
+        "Midnight"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Which phone does Vale call?",
+      "options": [
+        "The café's old phone, Rosa's phone",
+        "Gloria's phone",
+        "Hernando's cell phone",
+        "Mariana's cell phone"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Gloria ask Tomás?",
+      "options": [
+        "What relationship he and Vale have",
+        "Where his jacket is",
+        "When he pays the rent",
+        "Who Joaquín is"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Vale is back tomorrow at six, and Tomás has promised to be waiting with a coffee. But he walked home soaked to the skin, and by midnight he is shivering.",
+  "requires": [
+    "c:a-ver",
+    "c:alo",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-el-ella",
+    "c:me-importa-un-comino",
+    "c:ojo",
+    "c:por-favor",
+    "c:tienes",
+    "c:vamos-a",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:direct-objects",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:relative-que",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "p:hace-frio",
+    "p:me-te-nos-objects",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:soler-inf",
+    "p:telling-time",
+    "p:viejo-antiguo-mayor"
+  ],
+  "lexemes": [
+    "l:amiga",
+    "l:audio",
+    "l:ayudar",
+    "l:buscar",
+    "l:café",
+    "l:caminar",
+    "l:canción",
+    "l:cantar",
+    "l:casa",
+    "l:celular",
+    "l:chaqueta",
+    "l:claro",
+    "l:cocina",
+    "l:corazón",
+    "l:cuidado",
+    "l:decir",
+    "l:día",
+    "l:entender",
+    "l:escribir",
+    "l:escritura",
+    "l:escuchar",
+    "l:español",
+    "l:esperar",
+    "l:estar",
+    "l:excelente",
+    "l:favor",
+    "l:foto",
+    "l:hora",
+    "l:hoy",
+    "l:importar",
+    "l:ir",
+    "l:leer",
+    "l:listo",
+    "l:llegar",
+    "l:llover",
+    "l:lluvia",
+    "l:mandar",
+    "l:mañana",
+    "l:mensaje",
+    "l:mesa",
+    "l:mijo",
+    "l:mirar",
+    "l:mostrar",
+    "l:noticia",
+    "l:palabra",
+    "l:paz",
+    "l:perfecto",
+    "l:poner",
+    "l:querer",
+    "l:qué",
+    "l:relación",
+    "l:responder",
+    "l:ser",
+    "l:servir",
+    "l:soler",
+    "l:sonar",
+    "l:teléfono",
+    "l:tener",
+    "l:tinto",
+    "l:trabajar",
+    "l:ver",
+    "l:vez",
+    "l:viejo"
+  ]
 }

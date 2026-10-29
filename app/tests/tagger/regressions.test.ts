@@ -1,7 +1,8 @@
 // Misreads found while writing the first Fluidez 2 content (story ch001–ch006, banks u01–u03).
 // Tagged with the real curriculum (graph lexemes, chunks, patterns), as the gate does.
 import { describe, expect, test } from 'vitest';
-import { tagSentence, type TagResult } from '../../src/engine/tagger';
+import { tagSentence, accentLint, type TagResult } from '../../src/engine/tagger';
+import { taughtSpans } from '../../tools/gate/checks';
 import { loadCurriculum } from '../../tools/gate/load';
 import { APP_DIR } from '../../tools/gate';
 
@@ -220,5 +221,39 @@ describe('u04 market and time frames', () => {
       expect(r.requires, s).toContain('p:costar-pagar');
     }
     expect(tag('Caminamos por el parque.').requires).toContain('g:por-para-1');
+  });
+});
+
+describe('LatAm spellings, endearments, chunk precedence', () => {
+  test('video, coctel, chofer are known and the accent lint does not ask for Spain\'s form', () => {
+    for (const s of ['Mira el video.', 'Quiero un coctel.', 'El chofer llega temprano.']) {
+      const r = tag(s);
+      expect(r.lowReasons, s).toEqual([]);
+      expect(accentLint(s, r.tokens), s).toEqual([]);
+    }
+    expect(pos(tag('Mira el video.'), 'video')).toBe('noun');
+    expect(tag('Mira el video.').requires).toContain('l:video');
+    expect(accentLint('Mira el vídeo.')).toEqual([]);
+  });
+  test('p:no-se-que-hacer is found with a capital No, beside c:no-se, and its span exempts the indirect question', () => {
+    for (const s of ['No sé qué hacer.', 'no sé qué hacer', 'Ella no sabe qué hacer.', 'No sé si ir.']) {
+      const r = tag(s);
+      expect(r.requires, s).toContain('p:no-se-que-hacer');
+    }
+    const at = cur.taughtAt.get('p:no-se-que-hacer')!;
+    for (const s of ['No sé qué hacer.', 'Ella no sabe qué hacer.']) {
+      const r = tag(s);
+      const spans = taughtSpans({ cur } as never, r, at);
+      const bad = r.features.filter((f) => f.node && !f.key.startsWith('chunk.') && !f.key.startsWith('pattern.') && cur.graphIds.has(f.node)
+        && (cur.taughtAt.get(f.node) ?? Infinity) > at && !spans.some(([a, b]) => f.span[0] >= a && f.span[1] <= b));
+      expect(bad.map((f) => f.node), s).toEqual([]);
+    }
+  });
+  test('mijo, mija, parce are lexemes', () => {
+    for (const w of ['mijo', 'mija', 'parce']) {
+      const r = tag(`Hola, ${w}.`);
+      expect(r.lowReasons, w).toEqual([]);
+      expect(r.requires, w).toContain('l:' + w);
+    }
   });
 });

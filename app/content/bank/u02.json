@@ -7551,7 +7551,8 @@
     "requires": [
       "c:que-te-mejores",
       "g:subj-wishes",
-      "l:mejorar"
+      "l:mejorar",
+      "l:parce"
     ],
     "targets": [
       "c:que-te-mejores"
@@ -8110,6 +8111,7 @@
       "c:bien-y-tu",
       "c:que-mas",
       "l:bien",
+      "l:parce",
       "l:qué"
     ],
     "targets": [
@@ -8373,6 +8375,7 @@
       "c:como-se-dice",
       "c:es-que",
       "l:amigo",
+      "l:parce",
       "l:qué",
       "l:ser",
       "l:significar"
@@ -9225,6 +9228,7 @@
       "c:con-mucho-gusto",
       "c:mucho-gusto",
       "l:gusto",
+      "l:parce",
       "p:don-dona-nombre",
       "p:senor-don-article"
     ],
@@ -9283,7 +9287,8 @@
     "requires": [
       "c:con-mucho-gusto",
       "c:gracias-de-nada",
-      "l:gusto"
+      "l:gusto",
+      "l:parce"
     ],
     "targets": [
       "c:con-mucho-gusto"
@@ -9330,7 +9335,8 @@
     "requires": [
       "c:bien-y-tu",
       "c:quiubo",
-      "l:bien"
+      "l:bien",
+      "l:parce"
     ],
     "targets": [],
     "kind": "question",
@@ -13914,6 +13920,7 @@
       "l:cómo",
       "l:enfermo",
       "l:estar",
+      "l:mijo",
       "l:sed",
       "l:tener",
       "p:don-dona-nombre",
