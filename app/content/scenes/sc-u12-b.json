@@ -1,0 +1,230 @@
+{
+  "id": "sc-u12-b",
+  "unit": "u12",
+  "title": "Seventy-two",
+  "brief": "You're Tomás. Don Hernando's birthday is tomorrow, and he's in the mood for stories. Listen to his, ask about it, then tell him yours. He's older than you, so use usted.",
+  "turns": [
+    {
+      "npc": "Tomás, mañana es mi cumpleaños. Setenta y dos años.",
+      "npcEn": "Tomás, tomorrow is my birthday. Seventy-two.",
+      "intent": "Say really? and ask him what he wants as a present.",
+      "accept": [
+        "¿En serio? ¿Qué quiere de regalo?",
+        "¿De verdad? ¿Qué quiere de regalo?",
+        "¿En serio? ¿Qué regalo quiere?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "quieres"
+          ],
+          "label": "use usted (quiere), not tú (quieres)"
+        }
+      ],
+      "focus": "c:en-serio",
+      "id": "t1",
+      "next": "t2"
+    },
+    {
+      "npc": "No quiero nada. Pero hace muchos años, en mi cumpleaños, me pasó algo increíble.",
+      "npcEn": "I don't want anything. But many years ago, on my birthday, something incredible happened to me.",
+      "intent": "Ask him what happened.",
+      "accept": [
+        "¿Y qué pasó?",
+        "¿Y entonces?",
+        "¿Y qué pasó después?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        }
+      ],
+      "focus": "c:y-que-paso",
+      "id": "t2",
+      "next": "t3"
+    },
+    {
+      "npc": "Era de noche. Yo estaba en mi taxi, en la Séptima.",
+      "npcEn": "It was night-time. I was in my taxi, on Séptima.",
+      "intent": "Ask him if it was raining.",
+      "accept": [
+        "¿Estaba lloviendo?",
+        "¿Y llovía?",
+        "¿Estaba lloviendo esa noche?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "lloviendo",
+            "llovía"
+          ],
+          "label": "was it raining: ¿estaba lloviendo? or ¿llovía?"
+        }
+      ],
+      "focus": "p:hace-frio",
+      "id": "t3",
+      "next": "t4"
+    },
+    {
+      "npc": "Sí, mucho. De repente una señora entró al taxi con una torta enorme. Era la torta de su esposo, y ella estaba llorando. Al final fui a la fiesta con ella. ¿Y tú? ¿Tienes una historia de cumpleaños?",
+      "npcEn": "Yes, a lot. Suddenly a lady got into the taxi with an enormous cake. It was her husband's cake, and she was crying. In the end I went to the party with her. And you? Do you have a birthday story?",
+      "intent": "Say yes: once, in Toronto, it was very cold.",
+      "accept": [
+        "Sí. Una vez, en Toronto, hacía mucho frío.",
+        "Una vez, en Toronto, hacía mucho frío.",
+        "Sí, un día en Toronto hacía mucho frío."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "una vez",
+            "un día"
+          ],
+          "label": "start the story: una vez or un día"
+        },
+        {
+          "type": "regex",
+          "pattern": "\\bhac[ií]a (mucho )?frío",
+          "flags": "i",
+          "label": "it was cold: hacía frío (the setting)"
+        }
+      ],
+      "focus": "c:una-vez-story",
+      "id": "t4",
+      "next": "t5"
+    },
+    {
+      "npc": "¿Y entonces?",
+      "npcEn": "And then?",
+      "intent": "Say suddenly your grandmother arrived from Bogotá with a cake.",
+      "accept": [
+        "De repente llegó mi abuela de Bogotá con una torta.",
+        "De repente mi abuela llegó de Bogotá con una torta.",
+        "Y de repente llegó mi abuela Rosa de Bogotá, con una torta."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "llegar",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "she arrived: llegó (it happened once)"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "id": "t5",
+      "next": "t6"
+    },
+    {
+      "npc": "¡Qué sorpresa! Rosa nunca me contó eso.",
+      "npcEn": "What a surprise! Rosa never told me that.",
+      "intent": "Say you were very happy that day, and wish him a happy birthday.",
+      "accept": [
+        "Ese día estaba muy feliz. ¡Feliz cumpleaños!",
+        "Estaba muy feliz. ¡Feliz cumpleaños!",
+        "Sí, estaba muy feliz ese día. Feliz cumpleaños, Hernando."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "estar",
+          "tense": "imperfecto",
+          "person": "yo",
+          "label": "I was happy: estaba (how you felt)"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "id": "t6",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:al-final",
+    "c:bien-y-tu",
+    "c:con-el-ella",
+    "c:de-repente",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:feliz-cumpleanos",
+    "c:fui",
+    "c:quiero",
+    "c:tienes",
+    "c:una-vez",
+    "c:y-que-paso",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hace-ago",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:negation-words",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "l:abuela",
+    "l:año",
+    "l:contar",
+    "l:cumpleaños",
+    "l:después",
+    "l:día",
+    "l:enorme",
+    "l:entrar",
+    "l:esposo",
+    "l:estar",
+    "l:feliz",
+    "l:fiesta",
+    "l:final",
+    "l:frío",
+    "l:hacer",
+    "l:historia",
+    "l:increíble",
+    "l:ir",
+    "l:llegar",
+    "l:llorar",
+    "l:llover",
+    "l:mañana",
+    "l:noche",
+    "l:pasar",
+    "l:querer",
+    "l:qué",
+    "l:regalo",
+    "l:repente",
+    "l:ser",
+    "l:serio",
+    "l:señora",
+    "l:sorpresa",
+    "l:taxi",
+    "l:tener",
+    "l:torta",
+    "l:verdad",
+    "l:vez",
+    "p:demonstratives-basic",
+    "p:es-de-noche-tarde",
+    "p:exclamations-basic",
+    "p:frequency-scale",
+    "p:hace-frio",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:me-te-nos-objects",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:time-sequence-basic"
+  ]
+}

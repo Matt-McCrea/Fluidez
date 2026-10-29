@@ -1,0 +1,206 @@
+{
+  "id": "sc-u12-c",
+  "unit": "u12",
+  "title": "Mariana takes notes",
+  "brief": "You're Tomás. Mariana has heard about the night the power went out and wants the whole story for her article. Tell her what happened and what you think. She's your friend, so use tú.",
+  "turns": [
+    {
+      "npc": "Tomás, Gloria me contó todo. ¿Un hombre entró al café? ¿Es verdad?",
+      "npcEn": "Tomás, Gloria told me everything. A man got into the café? Is it true?",
+      "intent": "Say no, it isn't true: he didn't get in.",
+      "accept": [
+        "No, no es verdad. No entró.",
+        "No es verdad, Mariana. El hombre no entró.",
+        "No, no entró al café."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "he didn't get in: no entró"
+        },
+        {
+          "type": "verbForm",
+          "inf": "entrar",
+          "tense": "preterito",
+          "person": "él/ella",
+          "label": "he got in: entró"
+        }
+      ],
+      "focus": "g:preterite-ar",
+      "id": "t1",
+      "next": "t2"
+    },
+    {
+      "npc": "¿No? Entonces, ¿qué estaba haciendo?",
+      "npcEn": "No? So what was he doing?",
+      "intent": "Say he was taking bricks out of the kitchen wall.",
+      "accept": [
+        "Estaba sacando ladrillos de la pared de la cocina.",
+        "Estaba sacando ladrillos de la pared.",
+        "El hombre estaba sacando ladrillos de la pared de la cocina."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bestaba sacando\\b",
+          "flags": "i",
+          "label": "he was taking out: estaba sacando"
+        }
+      ],
+      "focus": "g:imperfect-progressive",
+      "id": "t2",
+      "next": "t3"
+    },
+    {
+      "npc": "¿Ladrillos? ¿Por qué?",
+      "npcEn": "Bricks? Why?",
+      "intent": "Say you think he was looking for Rosa's notebook.",
+      "accept": [
+        "Creo que estaba buscando el cuaderno de Rosa.",
+        "Creo que buscaba el cuaderno de Rosa.",
+        "Creo que buscaba el cuaderno."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "creo que",
+            "pienso que"
+          ],
+          "label": "I think: creo que"
+        }
+      ],
+      "focus": "g:that-clauses",
+      "id": "t3",
+      "next": "t4"
+    },
+    {
+      "npc": "¿Y la policía? ¿Qué dice?",
+      "npcEn": "And the police? What do they say?",
+      "intent": "Say the police say it's nothing, but you don't believe it.",
+      "accept": [
+        "La policía dice que no es nada, pero yo no lo creo.",
+        "Dice que no es nada. Pero yo no lo creo.",
+        "La policía dice que no es nada, pero no lo creo."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "dice que",
+          "label": "they say that: dice que (la policía is singular)"
+        }
+      ],
+      "focus": "g:that-clauses",
+      "id": "t4",
+      "next": "t5"
+    },
+    {
+      "npc": "Pues Gloria dice que vio al hombre en la calle.",
+      "npcEn": "Well, Gloria says she saw the man in the street.",
+      "intent": "Say you didn't know that, and ask what else she saw.",
+      "accept": [
+        "No sabía eso. ¿Qué más vio?",
+        "¿En serio? No sabía. ¿Qué más vio?",
+        "No sabía eso, Mariana. ¿Y qué más vio?"
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "saber",
+          "tense": "imperfecto",
+          "person": "yo",
+          "label": "I didn't know: no sabía (a state, not an event)"
+        },
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "id": "t5",
+      "next": "t6"
+    },
+    {
+      "npc": "Gloria no sabe más. Pero tú, ¿estás bien?",
+      "npcEn": "Gloria doesn't know any more. But you, are you OK?",
+      "intent": "Say you were scared that night, but now you're fine.",
+      "accept": [
+        "Esa noche estaba asustado, pero ahora estoy bien.",
+        "Estaba asustado esa noche. Ahora estoy bien.",
+        "Sí. Esa noche tenía miedo, pero ahora estoy bien."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "imperfecto",
+          "label": "how you felt that night: estaba or tenía"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "id": "t6",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:creo-que",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:no-cierto",
+    "c:pues",
+    "c:que-mas",
+    "c:te-pasa-algo",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:negation-words",
+    "g:present-er-ir",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "l:ahora",
+    "l:asustado",
+    "l:bien",
+    "l:buscar",
+    "l:café",
+    "l:calle",
+    "l:cocina",
+    "l:contar",
+    "l:creer",
+    "l:cuaderno",
+    "l:decir",
+    "l:entrar",
+    "l:estar",
+    "l:hacer",
+    "l:hombre",
+    "l:ladrillo",
+    "l:miedo",
+    "l:noche",
+    "l:pared",
+    "l:policía",
+    "l:qué",
+    "l:saber",
+    "l:sacar",
+    "l:ser",
+    "l:serio",
+    "l:tener",
+    "l:ver",
+    "l:verdad",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:me-te-nos-objects",
+    "p:no-es-x-es-y",
+    "p:personal-a",
+    "p:prep-questions-basic",
+    "p:saber-conocer",
+    "p:tener-hambre"
+  ]
+}

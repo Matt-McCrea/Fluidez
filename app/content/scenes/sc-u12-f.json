@@ -1,0 +1,230 @@
+{
+  "id": "sc-u12-f",
+  "unit": "u12",
+  "title": "Doña Gloria didn't sleep",
+  "brief": "You're Tomás. Doña Gloria, your landlady, didn't sleep last night because Simón was shouting for hours. Explain what was going on. She's older than you, so use usted.",
+  "turns": [
+    {
+      "npc": "Tomás, ¿por qué gritaba tanto Simón anoche? No dormí nada.",
+      "npcEn": "Tomás, why was Simón shouting so much last night? I didn't sleep at all.",
+      "intent": "Say sorry: Simón was shouting because there was a man at the café.",
+      "accept": [
+        "Perdón, Simón estaba gritando porque había un hombre en el café.",
+        "Perdón. Simón gritaba porque había un hombre en el café.",
+        "Perdón. Había un hombre en el café, y Simón estaba gritando."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhabía\\b",
+          "flags": "i",
+          "label": "there was: había (the situation)"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "id": "t1",
+      "next": "t2"
+    },
+    {
+      "npc": "¿Un hombre? ¡Qué horror! ¿Y quién era?",
+      "npcEn": "A man? How awful! And who was he?",
+      "intent": "Say you don't know: there was no light and it was very late.",
+      "accept": [
+        "No sé. No había luz y era muy tarde.",
+        "No sé. No había luz, y era muy tarde.",
+        "No sé. Era muy tarde y no había luz."
+      ],
+      "require": [
+        {
+          "type": "anyVerbInTense",
+          "tense": "imperfecto",
+          "label": "describe the scene: había, era"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "id": "t2",
+      "next": "t3"
+    },
+    {
+      "npc": "Pues yo tengo una idea. El señor de Altamira volvió a venir ayer. Es la cuarta vez.",
+      "npcEn": "Well, I have an idea. The man from Altamira came again yesterday. It's the fourth time.",
+      "intent": "Ask her what he wanted this time.",
+      "accept": [
+        "¿Y qué quería esta vez?",
+        "¿Qué quería esta vez?",
+        "¿Y qué quería el señor esta vez?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "verbFormAny",
+          "inf": "querer",
+          "tense": "imperfecto",
+          "label": "what did he want: quería (wanting is a state)"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "id": "t3",
+      "next": "t4"
+    },
+    {
+      "npc": "Quería mi casa. Otra vez. Pero yo no vendo, Tomás. Esta es mi casa.",
+      "npcEn": "He wanted my house. Again. But I'm not selling, Tomás. This is my house.",
+      "intent": "Say you know she isn't selling, and you're not selling either.",
+      "accept": [
+        "Sé que usted no vende. Yo tampoco vendo.",
+        "Yo sé que usted no vende. Y yo tampoco.",
+        "Sé que no vende. Yo tampoco vendo."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "sé que",
+          "label": "I know that: sé que"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "vendes"
+          ],
+          "label": "use usted (vende), not tú (vendes)"
+        }
+      ],
+      "focus": "g:that-clauses",
+      "id": "t4",
+      "next": "t5"
+    },
+    {
+      "npc": "Bien. Y otra cosa. ¿Por qué Simón gritaba a la orden toda la noche?",
+      "npcEn": "Good. And another thing. Why was Simón shouting \"a la orden\" all night?",
+      "intent": "Say Rosa always used to say that to the customers.",
+      "accept": [
+        "Rosa siempre decía eso a los clientes.",
+        "Porque Rosa siempre decía eso a los clientes.",
+        "Rosa decía eso a todos los clientes."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "decir",
+          "tense": "imperfecto",
+          "person": "él/ella",
+          "label": "she used to say: decía"
+        }
+      ],
+      "focus": "g:imperfect-habitual",
+      "id": "t5",
+      "next": "t6"
+    },
+    {
+      "npc": "¡Ay, Rosa! Es verdad. Bueno, esta noche quiero dormir.",
+      "npcEn": "Oh, Rosa! That's true. Well, tonight I want to sleep.",
+      "intent": "Say sorry again, and offer her a coffee.",
+      "accept": [
+        "Perdón otra vez. ¿Le provoca un tinto?",
+        "Perdón otra vez. ¿Quiere un tinto?",
+        "Otra vez perdón. ¿Le provoca un tinto?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "perdón",
+          "label": "sorry: perdón"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "quieres",
+            "te provoca"
+          ],
+          "label": "use usted, not tú"
+        }
+      ],
+      "focus": "c:perdon-disculpe",
+      "id": "t6",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-la-orden",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:entonces-bueno",
+    "c:era",
+    "c:no-se",
+    "c:perdon-disculpe",
+    "c:porque",
+    "c:pues",
+    "c:que-bien",
+    "c:quiero",
+    "c:tengo",
+    "g:cause-result",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:negation-words",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:preterite-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "l:anoche",
+    "l:ayer",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:casa",
+    "l:cliente",
+    "l:cosa",
+    "l:decir",
+    "l:dormir",
+    "l:estar",
+    "l:gritar",
+    "l:hombre",
+    "l:horror",
+    "l:idea",
+    "l:luz",
+    "l:noche",
+    "l:orden",
+    "l:perdón",
+    "l:provocar",
+    "l:querer",
+    "l:quién",
+    "l:qué",
+    "l:saber",
+    "l:ser",
+    "l:señor",
+    "l:siempre",
+    "l:tarde",
+    "l:tener",
+    "l:tinto",
+    "l:vender",
+    "l:venir",
+    "l:verdad",
+    "l:vez",
+    "l:volver",
+    "p:demonstratives-basic",
+    "p:el-orden-la-orden",
+    "p:es-de-noche-tarde",
+    "p:frequency-scale",
+    "p:ordinal-floor",
+    "p:ordinals-primer-tercer",
+    "p:otro-no-article",
+    "p:possessives-basic",
+    "p:prep-questions-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:tambien-tampoco",
+    "p:todos-los-dias",
+    "p:volver-a-inf"
+  ]
+}

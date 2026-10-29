@@ -1,0 +1,214 @@
+{
+  "id": "sc-u12-e",
+  "unit": "u12",
+  "title": "The man with the toolbox",
+  "brief": "You're Tomás. The lights at the café keep going out, so a technician has come to check. Tell him what happened and what you were doing. He's a stranger, so use usted.",
+  "turns": [
+    {
+      "npc": "Buenas tardes, señor. Vengo a ver la luz. ¿Cuál es el problema?",
+      "npcEn": "Good afternoon, sir. I've come to look at the power. What's the problem?",
+      "intent": "Say the power went out on Saturday, and last night it went out again.",
+      "accept": [
+        "La luz se fue el sábado, y anoche volvió a irse.",
+        "El sábado se fue la luz, y anoche volvió a irse.",
+        "Se fue el sábado. Y anoche volvió a irse."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "volvió a",
+          "label": "it went out again: volvió a irse"
+        }
+      ],
+      "focus": "p:volver-a-inf",
+      "id": "t1",
+      "next": "t2"
+    },
+    {
+      "npc": "¿Y qué estaban haciendo ustedes anoche cuando se fue la luz?",
+      "npcEn": "And what were you doing last night when the power went out?",
+      "intent": "Say you were washing cups and Vale was making bread.",
+      "accept": [
+        "Yo estaba lavando las tazas y Vale estaba haciendo pan.",
+        "Estaba lavando tazas, y Vale estaba haciendo pan.",
+        "Vale estaba haciendo pan y yo estaba lavando las tazas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bestaba lavando\\b",
+          "flags": "i",
+          "label": "I was washing: estaba lavando"
+        }
+      ],
+      "focus": "g:imperfect-progressive",
+      "id": "t2",
+      "next": "t3"
+    },
+    {
+      "npc": "¿Y antes la luz funcionaba bien?",
+      "npcEn": "And before, did the power work OK?",
+      "intent": "Say yes, before it always worked well.",
+      "accept": [
+        "Sí, antes siempre funcionaba bien.",
+        "Sí, antes funcionaba bien.",
+        "Antes siempre funcionaba bien, sí."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "funcionar",
+          "tense": "imperfecto",
+          "person": "él/ella",
+          "label": "it used to work: funcionaba"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "id": "t3",
+      "next": "t4"
+    },
+    {
+      "npc": "Pues alguien cortó esto. No fue la lluvia.",
+      "npcEn": "Well, someone cut this. It wasn't the rain.",
+      "intent": "Say really? and that you think it was the man from Saturday.",
+      "accept": [
+        "¿En serio? Creo que fue el hombre del sábado.",
+        "¿De verdad? Creo que fue el hombre del sábado.",
+        "¿En serio? Yo creo que fue el hombre del sábado."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "creo que",
+            "pienso que"
+          ],
+          "label": "I think: creo que"
+        }
+      ],
+      "focus": "g:that-clauses",
+      "id": "t4",
+      "next": "t5"
+    },
+    {
+      "npc": "¿Qué hombre?",
+      "npcEn": "What man?",
+      "intent": "Say a man came on Saturday, and he had an Altamira cap.",
+      "accept": [
+        "El sábado vino un hombre. Tenía una gorra de Altamira.",
+        "Un hombre vino el sábado, y tenía una gorra de Altamira.",
+        "El sábado vino un hombre aquí. Tenía una gorra de Altamira."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "tener",
+          "tense": "imperfecto",
+          "person": "él/ella",
+          "label": "he had: tenía (describing him)"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "id": "t5",
+      "next": "t6"
+    },
+    {
+      "npc": "Bueno, ya está. Ahora funciona.",
+      "npcEn": "Right, done. It works now.",
+      "intent": "Say great, and ask how much it is.",
+      "accept": [
+        "¡Qué bien! ¿Cuánto es?",
+        "¡Qué bueno! ¿Cuánto es?",
+        "¡Qué bien! Gracias. ¿Cuánto es?"
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "qué bien",
+            "qué bueno"
+          ],
+          "label": "great: ¡qué bien!"
+        }
+      ],
+      "focus": "c:que-bien",
+      "id": "t6",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:a-ver",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:creo-que",
+    "c:cuanto-cuesta",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hago-salgo-vengo",
+    "c:hola-buenos-dias",
+    "c:pues",
+    "c:que-bien",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:ahora",
+    "l:anoche",
+    "l:antes",
+    "l:aquí",
+    "l:bien",
+    "l:buena",
+    "l:bueno",
+    "l:cortar",
+    "l:creer",
+    "l:cuál",
+    "l:cuánto",
+    "l:estar",
+    "l:funcionar",
+    "l:gorra",
+    "l:hacer",
+    "l:hombre",
+    "l:irse",
+    "l:lavar",
+    "l:lluvia",
+    "l:luz",
+    "l:pan",
+    "l:problema",
+    "l:qué",
+    "l:ser",
+    "l:serio",
+    "l:señor",
+    "l:siempre",
+    "l:sábado",
+    "l:tarde",
+    "l:taza",
+    "l:tener",
+    "l:venir",
+    "l:ver",
+    "l:verdad",
+    "l:volver",
+    "p:aqui-ahi-alla",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:indefinites-basic",
+    "p:question-word-order",
+    "p:volver-a-inf"
+  ]
+}

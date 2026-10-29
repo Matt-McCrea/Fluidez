@@ -1,0 +1,192 @@
+{
+  "id": "sc-u12-d",
+  "unit": "u12",
+  "title": "Rainy season",
+  "brief": "You're Tomás. A storm is coming down over La Candelaria, and Don Hernando has just come in from the street. Talk about the weather and compare it with Toronto. He's older than you, so use usted.",
+  "turns": [
+    {
+      "npc": "¡Uy, qué tormenta, Tomás! Hace frío y no tengo chaqueta.",
+      "npcEn": "Wow, what a storm, Tomás! It's cold and I don't have a jacket.",
+      "intent": "Say yes, it's raining a lot today, and offer him a coffee.",
+      "accept": [
+        "Sí, está lloviendo mucho hoy. ¿Quiere un tinto?",
+        "Hoy está lloviendo mucho. ¿Quiere un tinto?",
+        "Sí, hoy llueve mucho. ¿Quiere un tinto?"
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "lloviendo",
+            "llueve"
+          ],
+          "label": "it's raining: está lloviendo"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "quieres"
+          ],
+          "label": "use usted (quiere), not tú (quieres)"
+        }
+      ],
+      "focus": "p:hace-frio",
+      "id": "t1",
+      "next": "t2"
+    },
+    {
+      "npc": "Sí, gracias, un tinto, por favor. ¿En Toronto llueve así?",
+      "npcEn": "Yes, thanks, a coffee, please. Does it rain like this in Toronto?",
+      "intent": "Say no, in Toronto it rains less, but it's colder.",
+      "accept": [
+        "No, en Toronto llueve menos, pero hace más frío.",
+        "No, allá llueve menos. Pero hace más frío.",
+        "No, en Toronto llueve menos. Pero hace más frío."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "más frío",
+          "label": "colder: hace más frío"
+        }
+      ],
+      "focus": "g:comparatives",
+      "id": "t2",
+      "next": "t3"
+    },
+    {
+      "npc": "¿Más frío que Bogotá? ¿En serio?",
+      "npcEn": "Colder than Bogotá? Seriously?",
+      "intent": "Say yes, in January it's very, very cold.",
+      "accept": [
+        "Sí, en enero hace mucho, mucho frío.",
+        "Sí. En enero hace mucho frío.",
+        "Sí, en enero hace mucho frío allá."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bhace\\b.*\\bfrío\\b",
+          "flags": "i",
+          "label": "it's cold: hace frío"
+        }
+      ],
+      "focus": "p:hace-frio",
+      "id": "t3",
+      "next": "t4"
+    },
+    {
+      "npc": "Uy, no. Pues cuando yo era niño, aquí también hacía mucho frío. Y llovía todos los días.",
+      "npcEn": "Oh, no. Well, when I was a boy, it was really cold here too. And it rained every day.",
+      "intent": "Ask him if Bogotá was colder before.",
+      "accept": [
+        "¿Antes Bogotá era más fría?",
+        "¿Bogotá era más fría antes?",
+        "¿Antes hacía más frío en Bogotá?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask it as a question"
+        },
+        {
+          "type": "containsAny",
+          "words": [
+            "más fría",
+            "más frío"
+          ],
+          "label": "colder: más fría (Bogotá) or hacía más frío"
+        }
+      ],
+      "focus": "g:comparatives",
+      "id": "t4",
+      "next": "t5"
+    },
+    {
+      "npc": "Sí, mucho más fría. Bueno, ya no llueve. Me voy antes de la próxima tormenta.",
+      "npcEn": "Yes, much colder. Well, it's not raining any more. I'm off before the next storm.",
+      "intent": "Say you think he's right, and see you tomorrow.",
+      "accept": [
+        "Creo que tiene razón. Nos vemos mañana.",
+        "Creo que usted tiene razón. ¡Hasta mañana!",
+        "Sí, creo que tiene razón. Nos vemos mañana."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "creo que",
+            "pienso que"
+          ],
+          "label": "I think: creo que"
+        }
+      ],
+      "focus": "g:that-clauses",
+      "id": "t5",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:chao-nos-vemos",
+    "c:creo-que",
+    "c:en-serio",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:por-favor",
+    "c:pues",
+    "c:tengo",
+    "c:tienes",
+    "c:voy-vas",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:estar-gerund",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:ir-a-plans",
+    "g:present-er-ir",
+    "g:questions",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:yo-irregular",
+    "l:allá",
+    "l:antes",
+    "l:aquí",
+    "l:bueno",
+    "l:chaqueta",
+    "l:creer",
+    "l:día",
+    "l:enero",
+    "l:estar",
+    "l:favor",
+    "l:frío",
+    "l:hacer",
+    "l:hoy",
+    "l:irse",
+    "l:llover",
+    "l:mañana",
+    "l:niño",
+    "l:próximo",
+    "l:querer",
+    "l:qué",
+    "l:razón",
+    "l:ser",
+    "l:serio",
+    "l:tener",
+    "l:tinto",
+    "l:tormenta",
+    "l:ver",
+    "p:aqui-ahi-alla",
+    "p:cuando-basic",
+    "p:hace-frio",
+    "p:nos-vemos-a-las",
+    "p:quantifiers-basic",
+    "p:tener-razon",
+    "p:todos-los-dias",
+    "p:veces-al"
+  ]
+}

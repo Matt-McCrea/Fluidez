@@ -1,0 +1,214 @@
+{
+  "id": "sc-u12-a",
+  "unit": "u12",
+  "title": "Officer Ríos",
+  "brief": "You're Tomás. It's the morning after the noise at the back of the café, and a police officer has come to take your statement. Tell him what was going on and what you saw. He's a stranger, so use usted.",
+  "turns": [
+    {
+      "npc": "Buenos días. Soy Ríos, de la policía. Usted llamó anoche, ¿cierto?",
+      "npcEn": "Good morning. I'm Ríos, from the police. You called last night, right?",
+      "intent": "Say yes, you called at ten at night.",
+      "accept": [
+        "Sí, llamé a las diez de la noche.",
+        "Sí, señor. Llamé a las diez.",
+        "Llamé a la policía a las diez de la noche."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "llamar",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I called: llamé"
+        }
+      ],
+      "focus": "g:preterite-ar",
+      "id": "t1",
+      "next": "t2"
+    },
+    {
+      "npc": "Bien. ¿Y qué estaba haciendo usted cuando oyó el ruido?",
+      "npcEn": "OK. And what were you doing when you heard the noise?",
+      "intent": "Say you were closing the café.",
+      "accept": [
+        "Estaba cerrando el café.",
+        "Yo estaba cerrando el café.",
+        "Estaba cerrando el café cuando oí el ruido."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bestaba cerrando\\b",
+          "flags": "i",
+          "label": "I was closing: estaba cerrando"
+        }
+      ],
+      "focus": "g:imperfect-progressive",
+      "id": "t2",
+      "next": "t3"
+    },
+    {
+      "npc": "¿Y Vale? ¿Dónde estaba ella?",
+      "npcEn": "And Vale? Where was she?",
+      "intent": "Say she was doing the accounts in the kitchen.",
+      "accept": [
+        "Estaba haciendo las cuentas en la cocina.",
+        "Vale estaba haciendo las cuentas en la cocina.",
+        "Estaba en la cocina. Estaba haciendo las cuentas."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "\\bestaba haciendo\\b",
+          "flags": "i",
+          "label": "she was doing: estaba haciendo"
+        }
+      ],
+      "focus": "g:imperfect-progressive",
+      "id": "t3",
+      "next": "t4"
+    },
+    {
+      "npc": "¿Y usted vio al hombre? ¿Cómo era?",
+      "npcEn": "And did you see the man? What was he like?",
+      "intent": "Say you didn't see his face, but he was tall and had a cap.",
+      "accept": [
+        "No vi su cara, pero era alto y tenía una gorra.",
+        "No vi la cara. Era alto y tenía una gorra.",
+        "No vi su cara, pero era alto y llevaba una gorra."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ver",
+          "tense": "preterito",
+          "person": "yo",
+          "label": "I didn't see: no vi (one moment)"
+        },
+        {
+          "type": "verbForm",
+          "inf": "ser",
+          "tense": "imperfecto",
+          "person": "él/ella",
+          "label": "he was tall: era (a description)"
+        }
+      ],
+      "focus": "g:pret-vs-imperfect",
+      "id": "t4",
+      "next": "t5"
+    },
+    {
+      "npc": "¿Una gorra como esta? Estaba en la calle, delante del café. Es una gorra de Altamira.",
+      "npcEn": "A cap like this one? It was in the street, in front of the café. It's an Altamira cap.",
+      "intent": "Say you think the man is from Altamira.",
+      "accept": [
+        "Creo que el hombre es de Altamira.",
+        "Creo que es de Altamira.",
+        "Creo que trabaja con Altamira."
+      ],
+      "require": [
+        {
+          "type": "containsAny",
+          "words": [
+            "creo que",
+            "pienso que"
+          ],
+          "label": "I think: creo que"
+        }
+      ],
+      "focus": "g:that-clauses",
+      "id": "t5",
+      "next": "t6"
+    },
+    {
+      "npc": "Bueno, gracias. ¿Y ustedes están bien?",
+      "npcEn": "OK, thank you. And are you both OK?",
+      "intent": "Say thank goodness, you're both fine, and thank him.",
+      "accept": [
+        "Sí, menos mal. Estamos bien, gracias.",
+        "Menos mal que estamos bien. Gracias, señor.",
+        "Sí, estamos bien, menos mal. Muchas gracias."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "menos mal",
+          "label": "thank goodness: menos mal"
+        }
+      ],
+      "focus": "c:menos-mal",
+      "id": "t6",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:como-era",
+    "c:creo-que",
+    "c:entonces-bueno",
+    "c:era",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:menos-mal",
+    "c:no-cierto",
+    "g:comparatives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:imperfect-habitual",
+    "g:imperfect-progressive",
+    "g:imperfect-states",
+    "g:present-ar",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-spelling-stem",
+    "g:questions",
+    "g:ser-identity",
+    "g:that-clauses",
+    "l:alto",
+    "l:anoche",
+    "l:bien",
+    "l:bueno",
+    "l:café",
+    "l:calle",
+    "l:cara",
+    "l:cerrar",
+    "l:cocina",
+    "l:creer",
+    "l:cuenta",
+    "l:cómo",
+    "l:delante",
+    "l:día",
+    "l:dónde",
+    "l:estar",
+    "l:gorra",
+    "l:hacer",
+    "l:hombre",
+    "l:llamar",
+    "l:llevar",
+    "l:mal",
+    "l:noche",
+    "l:oír",
+    "l:policía",
+    "l:qué",
+    "l:ruido",
+    "l:ser",
+    "l:señor",
+    "l:tener",
+    "l:trabajar",
+    "l:ver",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:personal-a",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:question-word-order",
+    "p:telling-time"
+  ]
+}
