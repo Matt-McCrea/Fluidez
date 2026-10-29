@@ -2,3 +2,5 @@ node_modules
 dist
 content/_queue/*.lock
 tools/vocab/data/
+test-results
+playwright-report
