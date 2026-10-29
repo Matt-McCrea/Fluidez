@@ -56,7 +56,7 @@
     "l:entregar",
     "l:pesar",
     "l:hermoso",
-    "l:suerte",
+    "l:invitar",
     "l:decisión"
    ]
   },
@@ -68,7 +68,7 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:invitar",
+    "l:suerte",
     "l:durar",
     "l:investigación"
    ]
@@ -81,11 +81,9 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:invitación",
     "l:concierto",
     "l:gol",
     "l:estadio",
-    "l:salsa",
     "l:rumba",
     "l:discoteca",
     "l:entrada",
@@ -95,7 +93,9 @@
     "l:puntual",
     "l:cancelar",
     "l:rechazar",
-    "l:ganas"
+    "l:ganas",
+    "l:sector",
+    "l:reservar"
    ],
    "chapter": "ch046"
   },
@@ -120,7 +120,7 @@
     "l:padres",
     "l:referir",
     "l:dólar",
-    "l:respuesta",
+    "l:preocupar",
     "l:acción"
    ],
    "chapter": "ch047"

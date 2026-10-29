@@ -196,6 +196,8 @@ export const DEFAULT_NODE_MAP: Readonly<Record<string, NodeId | null>> = {
   'prep.por': 'g:por-para-1',
   'prep.para': 'p:para-inf',                     // para + person / verb (session 25); por stays with por-para-1
   'por.fixed': null,
+  'por.gracias': 'p:gracias-por',                // gracias por la ayuda (session 33)
+  'por.price': 'p:costar-pagar',                 // pagué veinte mil por la camisa, a cinco mil por kilo (session 33)
   'comp.mas-que': 'g:comparatives',
   'comp.tan-como': 'g:comparatives',
   'comp.irregular': 'g:comparatives',

@@ -40,3 +40,336 @@ pacto	u03	ch005: the deal Vale proposes
 taxista	s5	the story's first days (u01–u02 writers)
 periodista	s5	the story's first days (u01–u02 writers)
 doña	s15	with p:senor-don-article (u02 day 5)
+# --- pre-burn pass (Oct 2026): words the A1–A2 stories and themes need before their old cards.
+# Each line is "known by the unit's first session" (the chapter day), so the unit's first chapter can
+# use it. Card days that are full keep the card where it was: the word is known-not-carded until then.
+# -- core time words, sequence and everyday verbs/adjectives (u04 writers had to bend around them)
+después	s29	u04: what I did, in order (primero… después… al final)
+antes	s29	u04: sequence; antes de
+final	s29	u04: al final (p:time-sequence-basic)
+primero	s29	u04: primero… luego (sequence adverb)
+último	s29	u04: el último día, la última vez
+mes	s29	u04: el mes pasado; the thirty-day bet is a month
+temprano	s29	daily life since u02; u04 market at dawn
+minuto	s29	u04: the machine died at 7:05; telling time
+momento	s29	un momento; everyday
+grande	s29	core adjective (was u10)
+pequeño	s29	core adjective
+fácil	s29	core adjective
+difícil	s29	core adjective
+interesante	s29	u03 likes; core adjective
+genial	s29	u03 likes; everyday reaction
+favorito	s29	u03 likes
+lleno	s29	the café is full from u04 on
+cerrado	s29	the café was closed (u01) / closes
+abierto	s29	the café opens (u02 on)
+aprender	s29	u04 writers: Tomás learns everything
+preguntar	s29	u04 writers; asking is basic
+probar	s29	u04 writers: try / taste (the flour, the coffee)
+funcionar	s29	u04: the espresso machine stops working
+usar	s29	everyday verb
+morir	s29	u04: the machine died
+perder	s29	the bet (u03 on): ganar / perder
+ganar	s29	the bet: win, earn (two million pesos)
+poner	s29	core verb
+volver	s29	core verb
+oír	s29	core verb
+escuchar	s29	core verb
+pedir	s29	the café: ordering
+pedir#order	s29	the café: ordering
+traer	s29	the café: ¿me trae…?
+servir	s29	the café: serving
+entrar	s29	core verb
+conocer	s29	core verb (carded u04 day 7)
+seguir	s29	core verb
+buscar	s29	core verb (carded u04 day 7)
+llevar	s29	core verb
+pensar	s29	core verb
+responder	s29	u01 arc: answers; core verb
+contestar	s29	answering the phone / a question
+gritar	s29	Simón shouts in every chapter
+faltar	s29	u04: twenty-eight days to go (faltan)
+dinero	s29	money (plata is the everyday word)
+mesa	s29	the café
+puerta	s29	the café door (u01 arc)
+teléfono	s29	everyday object
+mensaje	s29	everyday: WhatsApp messages
+palabra	s29	u04 writers; talking about language
+taxi	s29	u04: Hernando's taxi-driver friends
+mujer	s29	u04: their wives; woman
+esposa	s29	u04: the taxi drivers' wives
+esposo	s29	husband (with esposa)
+marido	s38	husband (u05 family)
+kilo	s29	u04: forty kilos of flour (ch007)
+mercado	s29	u04: Paloquemao market (ch007)
+vender	s29	u04: they sold three hundred tintos (ch007)
+máquina	s29	u04: the espresso machine
+olla	s29	u04: coffee in a pot like Rosa's
+harina	s29	u04: the wrong flour
+pared	s29	u04: the total on the wall
+total	s29	u04: the total on the wall
+equivocado	s29	u04: the wrong flour
+# -- u05 (s38): family, physical description, personality
+familia	s38	u05 theme
+padre	s38	u05 theme
+papá	s38	u05 theme
+madre	s38	u05 theme
+tío	s38	u05 theme
+tía	s38	u05 theme
+abuelo	s38	u05: Rosa's album; grandfather
+hermano	s38	u05: Vale's sister
+niño	s38	u05: Hernando's grandchildren
+niña	s38	u05 family
+chica	s38	u05 people
+chico	s38	u05 people
+gente	s38	u05 people
+joven	s38	u05: a young man in the album
+viejo	s38	u05 description
+edad	s38	u05 ages
+casado	s38	u05 family
+foto	s38	u05: the photo album
+álbum	s38	u05: Rosa's photo album
+recordar	s38	u05: the family he barely remembers
+olvidar	s38	u05 / everyday
+mostrar	s38	u05: Hernando shows off his grandchildren
+mirar	s38	u05 description
+parecerse	s38	u05: a man with his own nose (se parece a)
+llamada	s38	u05: Vale video-calls her sister
+guapo	s38	u05: is el canadiense handsome?
+lindo	s38	u05: Colombian everyday adjective
+feo	s38	u05 description
+normal	s38	u05: Vale says he is normal
+alegre	s38	u05 personality
+feliz	s38	u05 mood; happy
+triste	s38	u05 mood
+rápido	s38	description; everyday
+largo	s38	u05: pelo largo
+corto	s38	u05: pelo corto
+color	s38	u05: eyes, hair colour
+blanco	s38	u05: colour
+negro	s38	u05: pelo negro
+importante	s38	everyday adjective
+cariño	s38	u05 family affection
+cuerpo	s38	u05 physical description (body basics)
+cabeza	s38	body basics
+mano	s38	body basics
+pie	s38	body basics
+cara	s38	u05: face
+nariz	s38	u05: his own nose
+boca	s38	body basics
+brazo	s38	body basics
+pierna	s38	body basics
+espalda	s38	body basics
+corazón	s38	body basics
+explicar	s38	everyday verb
+perro	s38	pets: people in my life
+gato	s38	pets: people in my life
+# -- u06 (s48): the café then and now, the recipe notebook, the letter
+década	s48	u06 theme: decades
+cosa	s48	u06: old things
+historia	s48	u06: Hernando tells the café's story
+antiguo	s48	u06: old
+bravo	s48	u06: Rosa had a temper (Colombian bravo)
+oler	s48	u06: the street smelled of pandeyucas
+olor	s48	u06: smell
+reparar	s48	u06: repairing the counter
+arreglar	s48	u06: fixing the counter
+sacar	s48	u06: pulls out a loose brick
+romper	s48	u06 repairs; everyday
+dentro	s48	u06: inside the notebook
+ladrillo	s48	u06: the loose brick
+receta	s48	u06: Rosa's recipe notebook
+cuaderno	s48	u06: the notebook
+# -- u07 (s57): the room above the bakery, the neighbourhood
+habitación	s57	u07 theme: rooms
+cuarto	s57	u07 theme: rooms
+sala	s57	u07 theme: rooms
+cama	s57	u07: a bed
+cocina	s57	u07 theme: rooms
+ventana	s57	u07: a window onto the cathedral
+escritorio	s57	u07: a desk
+ducha	s57	u07: the shower that works one day in three
+arrendar	s57	u07: renting (arriendo)
+grupo	s57	u07: Grupo Altamira
+medir	s57	u07: measuring the street
+subir	s57	u07: upstairs
+bajar	s57	u07: downstairs
+vecino	s57	u07: the neighbourhood
+# -- u08 (s67): never done, the suit, the tip, the bet lost
+experiencia	s67	u08 theme
+intentar	s67	u08: try
+escalar	s67	u08: climb Monserrate
+hermoso	s67	u08: a beautiful suit
+traje	s67	u08: a man in a beautiful suit
+propina	s67	u08: tips too much
+contrato	s67	u08: the café's lease
+# -- u09 (s76): routine
+rutina	s76	u09 theme
+comenzar	s76	u09: the day starts at five
+entrevista	s76	u09: video interviews
+descansar	s76	u09 routine
+cenar	s76	u09 routine
+internet	s76	u09: video interviews online
+frecuencia	s76	u09 theme: frequency
+# -- u10 (s86): food and ordering
+bandeja	s86	u10 theme: bandeja paisa
+sopa	s86	u10: her soup
+cuenta#bill	s86	u10: the bill
+servicio	s86	u10: the review calls the service surreal
+cobrar	s86	u10 café: charging
+cantidad	s86	u10 theme: quantities
+mitad	s86	u10 quantities
+beber	s86	u10 drinks
+horno	s86	u10: buñuelos, bakery
+reseña	s86	u10: the review
+fila	s86	u10: the queue reaches the corner
+temporada	s86	u10: jugos with what is in season
+huevo	s86	u10 food
+queso	s86	u10 food
+arroz	s86	u10 food
+carne	s86	u10 food
+pollo	s86	u10 food
+azúcar	s86	u10 food
+sal	s86	u10 food
+# -- u11 (s96): childhood, school, then and now
+infancia	s96	u11 theme
+niñez	s96	u11 theme
+escuela	s96	u11 theme
+costumbre	s96	u11 theme: old habits
+hábito	s96	u11 theme
+comparar	s96	u11 theme: comparing then and now
+sentarse	s96	u11: he used to sit on the counter
+sentar	s96	u11: sit
+mudarse	s96	u11: they moved to Toronto
+reconocer	s96	u11: a woman recognises him
+investigar	s96	u11: Mariana is investigating
+zona	s96	u11: every old house in the area
+canción	s96	u11: Rosa sang
+enseñar	s96	u11 school: teach
+# -- u12 (s105): the power cut, the intruder
+sorpresa	s105	u12 theme: surprises
+evento	s105	u12 theme: events
+ruido	s105	u12: a noise at the back
+oscuro	s105	u12: the power goes out
+caer	s105	u12 events
+huella	s105	u12: a muddy footprint
+gorra	s105	u12: a cap with a logo
+llorar	s105	u12 emotions
+sol	s105	u12 weather
+cielo	s105	u12 weather
+lluvia	s105	u12: the rainy season
+# -- u13 (s115): around the city
+transmilenio	s115	u13 theme
+cruzar	s115	u13: crosses the city
+carrera	s115	u13 theme: carrera / calle
+carrera#street	s115	u13 theme: carrera / calle
+norte	s115	u13: the notary in the north
+sur	s115	u13 directions
+papel	s115	u13: the property papers
+propiedad	s115	u13: property papers
+escritura	s115	u13: Rosa's original deed
+original	s115	u13: original deed
+amarillo	s115	u13: his ancient yellow taxi
+moto	s115	u13 transport
+mapa	s115	u13 directions
+perfecto	s115	u13: perfect directions
+# -- u14 (s125): messages, reasons
+detalle	s125	u14 theme: details
+motivo	s125	u14 theme: reasons
+firmar	s125	u14: he signs off
+quizá	s125	u14: maybe the building isn't Altamira's
+respuesta	s125	u14: she replies
+noticia	s125	u14 theme: media
+# -- u15 (s134): feelings, body, aches
+sentimiento	s134	u15 theme
+ánimo	s134	u15 theme: moods
+opinión	s134	u15 theme: opinions
+preocuparse	s134	u15: Vale is not worried
+doctor	s134	u15: a doctor's appointment
+cita	s134	u15: appointment
+negarse	s134	u15: he refuses to talk
+dolor	s134	u15 theme: aches
+# -- u16 (s144): shopping
+material	s144	u16 theme
+devolver	s144	u16: returning the armchair
+morado	s144	u16: a purple velvet armchair
+caber	s144	u16: it doesn't fit through the door
+conversación	s144	u16: the hardest conversation
+tela	s144	u16 theme: materials
+# -- u17 (s154): invitations
+invitación	s154	u17 theme
+salsa	s154	u17: salsa night
+rumba	s154	u17: party
+bar	s154	u17 plans
+# -- u18 (s164): the road to Medellín
+carretera	s164	u18 theme
+vuelo	s164	u18 theme
+equipaje	s164	u18 theme
+recepción	s164	u18 hotel
+reservar	s164	u18 hotel
+tiquete	s164	u18 theme
+vista	s164	u18: a view of the cable cars
+madrugada	s164	u18: the bus terminal at dawn
+ruidoso	s164	u18: Vale's family is loud
+tren	s164	u18 transport
+# -- u19 (s174): work and studies
+habilidad	s174	u19 theme: skills
+anuncio	s174	u19: their first job ad
+empleado	s174	u19 workplace
+salario	s174	u19 jobs
+fecha	s174	u19 paperwork
+permiso	s174	u19: permits
+licencia	s174	u19: permits
+coincidencia	s174	u19: no coincidence
+casualidad	s174	u19: no coincidence
+inspección	s174	u19: the inspection
+alumno	s174	u19 theme: courses
+# -- u20 (s184): guesses and predictions
+pronóstico	s184	u20 theme: forecasts
+prometer	s184	u20: Hernando promises
+promesa	s184	u20 theme: promises
+desaparecer	s184	u20: Simón disappears
+adivinar	s184	u20 theme: guesses
+teoría	s184	u20: everyone has a theory
+reírse	s184	u20: Vale laughs
+# -- u21 (s194): requests, partnership
+socio	s194	u21: partner in the café
+confiar	s194	u21: wants her to trust him
+confianza	s194	u21 trust
+regla	s194	u21 theme: rules at work
+norma	s194	u21 theme: rules at work
+# -- u22 (s204): celebrations and condolences
+celebración	s204	u22 theme
+celebrar	s204	u22 theme
+boda	s204	u22 theme: weddings
+pésame	s204	u22: condolences
+felicitar	s204	u22: congratulate
+navidad	s204	u22: Christmas cards
+consolar	s204	u22: console
+# -- u23 (s214): paperwork
+trámite	s214	u23 theme
+cédula	s214	u23 theme
+reclamo	s214	u23 theme: complaints
+documento	s214	u23: three documents
+# -- u24 (s224): reasons and choices
+ventaja	s224	u24 theme: pros and cons
+lástima	s224	u24: that's a pity
+sonreír	s224	u24: Altamira smiles
+sonrisa	s224	u24
+# -- u25 (s234): Medellín, people in depth
+feria	s234	u25: Feria de las Flores
+colina	s234	u25: steep hills
+pelearse	s234	u25: after a terrible fight
+callado	s234	u25: Hernando is very quiet
+# -- u26 (s244): anecdotes
+anécdota	s244	u26 theme
+chiste	s244	u26: without the jokes
+broma	s244	u26 jokes
+reacción	s244	u26 theme: reactions
+deuda	s244	u26: to pay his debts
+senador	s244	u26: a senator who refused to pay
+# -- u27 (s254): writing it down
+comentario	s254	u27: drafts for comments
+propietario	s254	u27: the owners
+párrafo	s254	u27 theme
+formal	s254	u27: a formal letter

@@ -22,7 +22,16 @@
     "l:verde",
     "l:amarillo",
     "l:blanco",
-    "l:negro"
+    "l:negro",
+    "l:material",
+    "l:devolver",
+    "l:conversación",
+    "l:caber",
+    "l:talla",
+    "l:morado",
+    "l:bar",
+    "l:invitación",
+    "l:salsa"
    ],
    "chapter": "ch042"
   },
@@ -52,11 +61,11 @@
    "chunks": [],
    "lexemes": [
     "l:rosado",
-    "l:morado",
     "l:cuero",
     "l:algodón",
     "l:lana",
-    "l:probarse"
+    "l:probarse",
+    "l:conducir"
    ]
   },
   {
@@ -67,9 +76,9 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:material",
-    "l:opinión",
-    "l:talla"
+    "l:mover",
+    "l:nacional",
+    "l:protección"
    ]
   },
   {
@@ -115,12 +124,12 @@
     "c:tiene-otra-talla"
    ],
    "lexemes": [
-    "l:devolver",
     "l:descuento",
     "l:rebaja",
     "l:almacén",
     "l:cargar",
-    "l:justo"
+    "l:justo",
+    "l:internacional"
    ],
    "chapter": "ch044"
   },

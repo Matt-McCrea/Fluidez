@@ -261,6 +261,7 @@ const DETERMINER_WORDS = S('el la los las un una unos unas mi mis tu tus su sus 
 /** What does this "que" do? */
 export type QueRole = 'relative' | 'lo-que' | 'el-que' | 'prep-rel' | 'complement' | 'comparative' | 'periphrasis' | 'conj' | 'initial';
 const QUE_CONJ_PREV = S('para sin hasta desde ya así porque aunque mientras antes después luego siempre vez medida pesar caso tal menos fin modo manera');
+const QUE_VIENE_N = S('semana semanas mes meses año años lunes martes miércoles jueves viernes sábado domingo verano invierno');
 const COMPARATIVE_WORDS = S('más menos mejor peor mayor menor antes otro otra otros otras distinto distinta diferente mismo misma igual');
 
 export function queRole(words: Word[], q: number): QueRole {
@@ -293,6 +294,9 @@ export function queRole(words: Word[], q: number): QueRole {
   if (QUE_CONJ_PREV.has(pw.w)) return 'conj';
   // hace dos años que..., llevo un mes que...
   if (TIME_N.has(pw.w) && words.slice(Math.max(0, p - 4), p).some((x) => x.w === 'hace' || x.w === 'desde')) return 'conj';
+  // la semana que viene, el año que viene, el lunes que viene: a fixed time expression
+  // (p:time-pasado-que-viene), not a relative clause
+  if (QUE_VIENE_N.has(pw.w) && /^vienen?$/.test(words[q + 1]?.w ?? '')) return 'conj';
   if (pw.w === 'hay' || bareOf(pw.lemma) === 'tener' && (pw.pos === 'verb' || pw.pos === 'inf' || pw.pos === 'ger')) return 'periphrasis';
   // más ... que / mejor que
   for (let j = p; j >= Math.max(0, p - 4); j--) {
@@ -924,6 +928,19 @@ const POR_FIXED = [
   'por completo', 'por cierto', 'por ahora', 'por aquí', 'por allá', 'por allí', 'por teléfono', 'por correo',
 ].map((s) => s.split(' '));
 
+const POR_PER = S('kilo kilos libra libras persona día hora mes noche unidad');
+const POR_PRICE_VERBS = S('pagar vender cambiar cobrar comprar');
+/** The words of the clause before `i` (back to punctuation or a clause link). */
+function clauseBefore(words: Word[], i: number): Word[] {
+  const out: Word[] = [];
+  for (let k = i - 1; k >= 0; k--) {
+    const y = words[k];
+    if (y.punct || ['y', 'pero', 'que', 'porque', 'cuando', 'si'].includes(y.w)) break;
+    out.push(y);
+  }
+  return out;
+}
+
 function miscPass(ctx: FeatureCtx): void {
   const { words } = ctx;
   for (let i = 0; i < words.length; i++) {
@@ -933,6 +950,10 @@ function miscPass(ctx: FeatureCtx): void {
     if (x === 'por' && w.pos === 'prep') {
       const fx = POR_FIXED.find((f) => f.every((t, k) => words[i + k]?.w === t));
       if (fx) add(ctx, 'por.fixed', i, i + fx.length - 1);
+      // gracias por (p:gracias-por, session 33): the thanks frame owns its por
+      else if (words[prevIdx(words, i)]?.w === 'gracias') add(ctx, 'por.gracias', prevIdx(words, i), i);
+      // pagar / vender / cambiar X por Y and "por kilo": the price frame owns its por (p:costar-pagar)
+      else if (POR_PER.has(words[i + 1]?.w ?? '') || clauseBefore(words, i).some((y) => POR_PRICE_VERBS.has(bareOf(y.lemma)))) add(ctx, 'por.price', i, i);
       else add(ctx, 'prep.por', i, i);
     } else if (x === 'para' && w.pos === 'prep' && words[i + 1]?.w !== 'que') add(ctx, 'prep.para', i, i);
     else if (x === 'más' || x === 'menos') {

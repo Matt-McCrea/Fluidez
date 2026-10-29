@@ -120,7 +120,6 @@
     "g:gender-articles",
     "g:hay-vs-esta",
     "g:ir-a-plans",
-    "g:por-para-1",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
@@ -129,7 +128,8 @@
     "g:ser-identity",
     "g:stem-boot",
     "p:exclamations-basic",
-    "p:gracias-por"
+    "p:gracias-por",
+    "p:time-pasado-que-viene"
   ],
   "lexemes": [
     "l:aquí",

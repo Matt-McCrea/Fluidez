@@ -186,3 +186,39 @@ describe('more lexemes', () => {
 test('baila is the verb (no baile from a feminine guess)', () => {
   expect(tag('Vale siente la música y baila.').requires).toContain('l:bailar');
 });
+
+// Misreads the first unattended u04 writers hit (story ch007–ch008, scripts, bank u04).
+describe('u04 market and time frames', () => {
+  test('¿Cuánto cuesta…? is costar, covered by c:cuanto-cuesta', () => {
+    for (const s of ['¿Cuánto cuesta el kilo de tomate?', '¿Cuánto cuesta?', '¿Cuánto cuestan los mangos?']) {
+      const r = tag(s);
+      expect(lemma(r, s.includes('cuestan') ? 'cuestan' : 'cuesta'), s).toBe('costar');
+      expect(r.requires, s).not.toContain('l:cuesta');
+    }
+    expect(tag('¿Cuánto cuesta el kilo de tomate?').requires).toContain('c:cuanto-cuesta');
+    // a verb after the noun keeps the noun reading
+    expect(pos(tag('¿Cuánto trabajo tienes?'), 'trabajo')).toBe('noun');
+  });
+  test('[time noun] que viene is p:time-pasado-que-viene, not a relative clause', () => {
+    for (const s of ['La semana que viene voy al mercado.', 'El año que viene viajo.', 'El sábado que viene abrimos.']) {
+      const r = tag(s);
+      expect(r.requires, s).not.toContain('g:relative-que');
+      expect(r.requires, s).toContain('p:time-pasado-que-viene');
+    }
+    expect(tag('El mes pasado fui a Cali.').requires).toContain('p:time-pasado-que-viene');
+    expect(tag('El señor que viene todos los días es Hernando.').requires).toContain('g:relative-que');
+  });
+  test('gracias por and pagar X por Y own their por', () => {
+    for (const s of ['Gracias por el café.', 'Muchas gracias por venir.']) {
+      const r = tag(s);
+      expect(r.requires, s).not.toContain('g:por-para-1');
+      expect(r.requires, s).toContain('p:gracias-por');
+    }
+    for (const s of ['Pagué veinte mil pesos por la papaya.', 'El mango está a cinco mil por kilo.']) {
+      const r = tag(s);
+      expect(r.requires, s).not.toContain('g:por-para-1');
+      expect(r.requires, s).toContain('p:costar-pagar');
+    }
+    expect(tag('Caminamos por el parque.').requires).toContain('g:por-para-1');
+  });
+});

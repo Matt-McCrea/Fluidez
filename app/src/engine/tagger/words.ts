@@ -267,7 +267,10 @@ export function analyzeWords(text: string): Word[] {
         // tengo frío y sueño: coordinated with a noun is a noun
         // (not when a complement follows: "Soy médico y trabajo en Bogotá")
         const nx1 = toks[i + 1];
-        const complement = !!nx1 && !nx1.punct && (SUBJECT_PRONOUNS.has(nx1.w) || closedClass(nx1.w) === 'prep' || ARTICLE_LIKE.has(nx1.w) || nameLike[i + 1] || closedClass(nx1.w) === 'adv' || lexEntry(nx1.w)?.pos === 'adv');
+        // ¿Cuánto cuesta el kilo? / ¿Cuánto pago? — after interrogative cuánto the verb, when the
+        // clause ends or a noun phrase follows (¿Cuánto trabajo tienes? keeps the noun: a verb follows)
+        if (prev && /^cuánt[oa]s?$/.test(prev.w) && (!nx1 || nx1.punct || ARTICLE_LIKE.has(nx1.w) || closedClass(nx1.w) === 'num' || /^\d/.test(nx1.w) || nameLike[i + 1])) { words.push(asVerb()); continue; }
+        const complement =!!nx1 && !nx1.punct && (SUBJECT_PRONOUNS.has(nx1.w) || closedClass(nx1.w) === 'prep' || ARTICLE_LIKE.has(nx1.w) || nameLike[i + 1] || closedClass(nx1.w) === 'adv' || lexEntry(nx1.w)?.pos === 'adv');
         if (prev && ['y', 'o', 'e', 'u'].includes(prev.w) && words[pIdx - 1]?.pos === 'noun' && nominal === 'noun' && !complement) { words.push(asNominal()); continue; }
         if (prev && (DETERMINER_LIKE.has(prev.w) || prev.pos === 'prep' || prev.pos === 'num')) {
           // after la/los/las a word with a noun reading is the noun (tense-scan rule);

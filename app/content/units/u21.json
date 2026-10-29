@@ -17,7 +17,7 @@
    ],
    "lexemes": [
     "l:fondo",
-    "l:peor",
+    "l:regla",
     "l:rey",
     "l:voz",
     "l:principal",
@@ -77,15 +77,15 @@
    "chunks": [],
    "lexemes": [
     "l:ayuda",
-    "l:regla",
-    "l:norma",
+    "l:peor",
+    "l:oeste",
     "l:prohibir",
-    "l:socio",
+    "l:planta",
     "l:sociedad",
     "l:trato",
     "l:pareja",
-    "l:confiar",
-    "l:confianza",
+    "l:pez",
+    "l:león",
     "l:exigir",
     "l:aconsejar",
     "l:sugerir",
@@ -109,13 +109,13 @@
     "l:separado",
     "l:profesora",
     "l:nieto",
-    "l:pariente",
+    "l:boda",
     "l:cocinero",
     "l:pedido",
     "l:sobrina",
     "l:taxista",
     "l:felicidad",
-    "l:divertirse"
+    "l:celebración"
    ],
    "chapter": "ch061"
   },
@@ -126,7 +126,7 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:desaparecer",
+    "l:mecánico",
     "l:sonar",
     "l:gobierno",
     "l:comprender",
@@ -145,7 +145,7 @@
    "lexemes": [
     "l:guardar",
     "l:cuenta#bill",
-    "l:pájaro"
+    "l:navidad"
    ]
   },
   {

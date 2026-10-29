@@ -6133,7 +6133,7 @@
       "c:cuanto-cuesta",
       "g:gender-articles",
       "g:questions",
-      "l:cuesta",
+      "l:costar",
       "l:cuánto",
       "l:tinto"
     ],
@@ -6158,7 +6158,7 @@
       "c:cuanto-cuesta",
       "g:gender-articles",
       "g:questions",
-      "l:cuesta",
+      "l:costar",
       "l:cuánto",
       "l:pan"
     ],
@@ -6254,7 +6254,7 @@
       "g:gender-articles",
       "g:questions",
       "l:café",
-      "l:cuesta",
+      "l:costar",
       "l:cuánto",
       "l:leche"
     ],
@@ -15784,7 +15784,7 @@
       "g:commands-usted",
       "g:gender-articles",
       "g:questions",
-      "l:cuesta",
+      "l:costar",
       "l:cuánto",
       "l:disculpar",
       "l:pan",
@@ -17912,7 +17912,7 @@
       "c:cuanto-cuesta",
       "g:gender-articles",
       "g:questions",
-      "l:cuesta",
+      "l:costar",
       "l:cuánto",
       "l:jugo"
     ],
@@ -17981,7 +17981,7 @@
       "g:gender-articles",
       "g:questions",
       "l:café",
-      "l:cuesta",
+      "l:costar",
       "l:cuánto"
     ],
     "targets": [

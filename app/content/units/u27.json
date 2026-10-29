@@ -21,7 +21,7 @@
     "l:cordial",
     "l:citar",
     "l:agradable",
-    "l:herir"
+    "l:comentario"
    ],
    "chapter": "ch080"
   },
@@ -84,7 +84,7 @@
     "l:saludo",
     "l:despedida",
     "l:reseña",
-    "l:comentario",
+    "l:herir",
     "l:oscuro",
     "l:aviso",
     "l:seguidor",

@@ -260,7 +260,7 @@ describe('ser and estar', () => {
 
 describe('por/para, comparison, hay, misc', () => {
   run([
-    { es: 'Gracias por todo.', has: ['prep.por'] },
+    { es: 'Gracias por todo.', has: ['por.gracias'], not: ['prep.por'] },
     { es: 'Salimos para Medellín por la mañana.', has: ['prep.para', 'por.fixed'] },
     { es: 'Por favor, cierra la puerta.', has: ['por.fixed', 'cmd.tu.aff'], not: ['prep.por'] },
     { es: '¿Por qué estás triste?', has: ['por.fixed'], not: ['prep.por'] },

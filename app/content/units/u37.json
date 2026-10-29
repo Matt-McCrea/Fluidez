@@ -55,7 +55,6 @@
    ],
    "lexemes": [
     "l:buzón",
-    "l:conversación",
     "l:tema",
     "l:pausa",
     "l:aclarar",
@@ -67,7 +66,8 @@
     "l:agencia",
     "l:capítulo",
     "l:batería",
-    "l:episodio"
+    "l:episodio",
+    "l:requerir"
    ],
    "chapter": "ch111"
   },

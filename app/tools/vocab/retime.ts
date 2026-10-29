@@ -21,14 +21,17 @@
  *     is full, it SWAPS with the rarest word there (rarer than itself, not one
  *     of the unit's theme seeds in curated/units.tsv) that no rule needs that
  *     early: that word is carded on the later day and keeps its old session as
- *     its priority, so it is known exactly when it was before.
+ *     its priority, so it is known exactly when it was before. A swap never pushes a card more
+ *     than MAX_PUSH sessions later.
  *     If every day up to the need is full of needed words, only its priority
  *     moves (the gate treats a lexeme as known from min(card day, priority)).
  *     Day caps (build-config CAP) are never exceeded.
+ *   A unit whose bank is written (content/bank/uNN.json) is frozen: its card lists never change,
+ *   so a word carded there, or needed before any unfrozen day, moves by priority only.
  * Writes only `"priority": N` values in lexemes.json (targeted replacement, the
  * file's formatting is kept) and the units' day `lexemes` arrays.
  * ========================================================================== */
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { tagSentence } from '../../src/engine/tagger';
@@ -54,11 +57,16 @@ registerLexemes(lex.map((n) => ({ lemma: n.id.replace(/^l:/, '').replace(/#.*/, 
 /* ---- sessions and days ---- */
 interface Day { unit: string; band: string; di: number; type: string; session: number; cap: number; ids: string[] }
 const days: Day[] = [];
+// a unit whose bank is written is frozen: its days' card lists stay exactly as they are (content was
+// written against them), so a word carded there, or needed by then, only moves by priority
+const frozen = new Set(units.filter((u) => existsSync(join(APP, 'content', 'bank', u.id + '.json'))).map((u) => u.id));
 {
   let s = 0;
   units.forEach((u, ui) => u.days.forEach((d, di) => {
     s++;
-    days.push({ unit: u.id, band: u.band, di, type: d.type, session: s, cap: CAP[u.band][d.type] ?? 0, ids: rawUnits[ui].days[di].lexemes });
+    const ids = rawUnits[ui].days[di].lexemes;
+    // (a hand-edited day may already hold more than its type's cap: never more than it has)
+    days.push({ unit: u.id, band: u.band, di, type: d.type, session: s, cap: Math.max(CAP[u.band][d.type] ?? 0, ids.length), ids });
   }));
 }
 const unitDays = (id: string) => days.filter((d) => d.unit === id);
@@ -127,6 +135,7 @@ for (const line of readFileSync(join(HERE, 'curated', 'units.tsv'), 'utf8').spli
 }
 
 /* ---- apply ---- */
+const MAX_PUSH = 40;
 const moved: string[] = [];
 const evicted: string[] = [];
 const promoted: string[] = [];
@@ -143,7 +152,8 @@ for (const [id, n] of late) {
   const from = sessionOf(id);
   if (!isTaught(id)) { prio.set(id, n.at); moved.push(`${id} ${from}→${n.at} (${n.why})`); continue; }
   const old = dayOf.get(id)!;
-  const before = days.filter((d) => d.session <= n.at && d.cap > 0);
+  if (frozen.has(old.unit)) { prio.set(id, n.at); moved.push(`${id} ${from}→${n.at} (${n.why}; priority only, carded in written ${old.unit})`); continue; }
+  const before = days.filter((d) => d.session <= n.at && d.cap > 0 && !frozen.has(d.unit));
   const target = [...before].reverse().find((d) => d.ids.length < d.cap);
   if (target) {
     old.ids.splice(old.ids.indexOf(id), 1);
@@ -165,8 +175,11 @@ for (const [id, n] of late) {
   // SWAP with the rarest word on the latest full day on or before the need that nothing needs
   // that early (rarer than this one, not a theme seed of its unit): that word is carded on this
   // word's old day instead, and stays known from its old session (its priority)
+  // (never pushes a card more than MAX_PUSH sessions later: a word known for months with no card is
+  // worse than a story word known-not-carded)
   let swapped = false;
   for (const d of [...before].reverse()) {
+    if (old.session - d.session > MAX_PUSH) break;
     const x = d.ids.filter((y) => needAt(y) > d.session && freqRank(y) > freqRank(id) && !seedOf.get(d.unit)?.has(y) && !swappedOut.has(y) && !moved.some((m) => m.startsWith(y + ' '))).sort((a, b) => freqRank(b) - freqRank(a))[0];
     if (!x) continue;
     d.ids[d.ids.indexOf(x)] = id;

@@ -84,7 +84,7 @@
     "l:pasaporte",
     "l:hostal",
     "l:reserva",
-    "l:reservar",
+    "l:misión",
     "l:recepción",
     "l:carretera",
     "l:regreso",
@@ -110,12 +110,12 @@
     "l:metro",
     "l:tren",
     "l:puerto",
-    "l:plano",
+    "l:prometer",
     "l:publicidad",
-    "l:piloto",
-    "l:mecánico",
-    "l:rueda",
-    "l:probable"
+    "l:salario",
+    "l:desaparecer",
+    "l:habilidad",
+    "l:empleado"
    ],
    "chapter": "ch050"
   },
@@ -146,7 +146,7 @@
    "lexemes": [
     "l:enseñar",
     "l:director",
-    "l:loco"
+    "l:anuncio"
    ]
   },
   {

@@ -203,7 +203,7 @@
       "g:gender-articles",
       "g:questions",
       "l:cebolla",
-      "l:cuesta",
+      "l:costar",
       "l:cuánto",
       "l:kilo"
     ],
@@ -1959,7 +1959,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:cambio",
       "l:señor",
       "p:gracias-por"
@@ -1981,7 +1980,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:ayuda",
       "l:señora",
       "p:gracias-por"
@@ -2001,7 +1999,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
       "p:gracias-por"
     ],
     "targets": [
@@ -2020,7 +2017,6 @@
     "acceptEn": [],
     "requires": [
       "c:gracias-de-nada",
-      "g:por-para-1",
       "l:esperar",
       "p:gracias-por"
     ],
@@ -2041,7 +2037,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:mercado",
       "l:venir",
       "p:gracias-por"
@@ -2063,7 +2058,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:esperar",
       "l:plata",
       "p:gracias-por"
@@ -2086,7 +2080,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:flor",
       "p:gracias-por"
     ],
@@ -2106,7 +2099,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
       "l:llamar",
       "p:gracias-por"
     ],
@@ -2126,7 +2118,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:tomate",
       "p:gracias-por"
     ],
@@ -10967,7 +10958,8 @@
       "l:curso",
       "l:empezar",
       "l:próximo",
-      "l:semana"
+      "l:semana",
+      "p:time-pasado-que-viene"
     ],
     "targets": [],
     "kind": "statement",
@@ -10990,7 +10982,8 @@
       "l:próximo",
       "l:semana",
       "l:trabajar",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:ir-a-plans"
@@ -11012,7 +11005,8 @@
       "g:present-ar",
       "l:próximo",
       "l:semana",
-      "l:viajar"
+      "l:viajar",
+      "p:time-pasado-que-viene"
     ],
     "targets": [],
     "kind": "statement",
@@ -11034,7 +11028,8 @@
       "l:hora",
       "l:ir",
       "l:próximo",
-      "l:sábado"
+      "l:sábado",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:ir-a-plans"
@@ -11081,7 +11076,8 @@
       "l:español",
       "l:estudiar",
       "l:ir",
-      "l:próximo"
+      "l:próximo",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:ir-a-plans"
@@ -11104,7 +11100,8 @@
       "l:ir",
       "l:mercado",
       "l:próximo",
-      "l:sábado"
+      "l:sábado",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:ir-a-plans",
@@ -11128,7 +11125,8 @@
       "l:domingo",
       "l:ir",
       "l:próximo",
-      "l:trabajar"
+      "l:trabajar",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:ir-a-plans"
@@ -11149,7 +11147,8 @@
       "g:present-ar",
       "l:domingo",
       "l:próximo",
-      "l:viajar"
+      "l:viajar",
+      "p:time-pasado-que-viene"
     ],
     "targets": [],
     "kind": "statement",
@@ -11168,7 +11167,8 @@
       "g:present-ar",
       "l:cerrar",
       "l:próximo",
-      "l:viernes"
+      "l:viernes",
+      "p:time-pasado-que-viene"
     ],
     "targets": [],
     "kind": "statement",
@@ -11188,7 +11188,8 @@
       "g:preterite-ser-ir-hacer",
       "l:ir",
       "l:pasado",
-      "l:sábado"
+      "l:sábado",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer",
@@ -11212,7 +11213,8 @@
       "l:día",
       "l:pasado",
       "l:sábado",
-      "l:trabajar"
+      "l:trabajar",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:preterite-ar",
@@ -11235,7 +11237,8 @@
       "l:casa",
       "l:comer",
       "l:domingo",
-      "l:pasado"
+      "l:pasado",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:preterite-er-ir",
@@ -11258,7 +11261,8 @@
       "l:cerrar",
       "l:pasado",
       "l:tarde",
-      "l:viernes"
+      "l:viernes",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:preterite-ar",
@@ -11372,7 +11376,8 @@
       "g:preterite-er-ir",
       "l:año",
       "l:pasado",
-      "l:vivir"
+      "l:vivir",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:preterite-er-ir",
@@ -11418,6 +11423,7 @@
       "l:café",
       "l:día",
       "l:pasado",
+      "p:time-pasado-que-viene",
       "p:todos-los-dias"
     ],
     "targets": [
@@ -11440,7 +11446,8 @@
       "g:preterite-ar",
       "l:año",
       "l:pasado",
-      "l:viajar"
+      "l:viajar",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:preterite-ar",
@@ -11514,7 +11521,8 @@
       "l:fin",
       "l:ir",
       "l:próximo",
-      "l:semana"
+      "l:semana",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:ir-a-plans"
@@ -11538,7 +11546,8 @@
       "l:ir",
       "l:próximo",
       "l:semana",
-      "l:vender"
+      "l:vender",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:ir-a-plans",
@@ -11561,7 +11570,8 @@
       "l:banco",
       "l:hablar",
       "l:lunes",
-      "l:pasado"
+      "l:pasado",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:preterite-ar",
@@ -11583,7 +11593,8 @@
       "g:preterite-ar",
       "l:cerrar",
       "l:martes",
-      "l:pasado"
+      "l:pasado",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:preterite-ar",
@@ -11606,7 +11617,8 @@
       "l:comer",
       "l:jueves",
       "l:pasado",
-      "l:plaza"
+      "l:plaza",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:preterite-er-ir",
@@ -11775,7 +11787,8 @@
       "l:cuándo",
       "l:llegar",
       "l:próximo",
-      "l:semana"
+      "l:semana",
+      "p:time-pasado-que-viene"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -11827,7 +11840,8 @@
       "l:fiesta",
       "l:pasado",
       "l:ser",
-      "l:sábado"
+      "l:sábado",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer",
@@ -11851,7 +11865,8 @@
       "l:año",
       "l:cuándo",
       "l:próximo",
-      "l:viajar"
+      "l:viajar",
+      "p:time-pasado-que-viene"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -12318,7 +12333,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:bolsa",
       "p:gracias-por"
     ],
@@ -12339,7 +12353,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:jugo",
       "p:gracias-por"
     ],
@@ -12359,7 +12372,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:tinto",
       "p:gracias-por"
     ],
@@ -12379,7 +12391,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:flor",
       "p:gracias-por"
     ],
@@ -12400,7 +12411,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:pan",
       "p:gracias-por"
     ],
@@ -12420,7 +12430,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:mazorca",
       "p:gracias-por"
     ],
@@ -12440,7 +12449,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
       "p:gracias-por"
     ],
     "targets": [
@@ -12459,7 +12467,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:ayuda",
       "l:cuenta",
       "p:gracias-por"
@@ -12480,7 +12487,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:tomate",
       "p:gracias-por"
     ],
@@ -12501,7 +12507,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:carta",
       "p:gracias-por"
     ],
@@ -12521,7 +12526,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:fiesta",
       "p:gracias-por"
     ],
@@ -12563,7 +12567,6 @@
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:gender-articles",
-      "g:por-para-1",
       "g:preterite-irregular-strong",
       "l:comida",
       "l:estar",
@@ -12587,7 +12590,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:mazorca",
       "p:gracias-por"
     ],
@@ -12608,7 +12610,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:paseo",
       "p:gracias-por"
     ],
@@ -12627,7 +12628,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
       "l:escribir",
       "p:gracias-por"
     ],
@@ -12646,7 +12646,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
       "l:llamar",
       "p:gracias-por"
     ],
@@ -12665,7 +12664,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
       "l:cocinar",
       "p:gracias-por"
     ],
@@ -12685,7 +12683,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:domingo",
       "l:trabajar",
       "p:gracias-por"
@@ -12706,7 +12703,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:abrir",
       "l:café",
       "p:gracias-por"
@@ -12726,7 +12722,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
       "l:esperar",
       "l:señor",
       "p:gracias-por"
@@ -12747,7 +12742,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
       "l:comprar",
       "l:puesto",
       "p:gracias-por",
@@ -12769,7 +12763,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
       "l:venir",
       "p:gracias-por"
     ],
@@ -12788,7 +12781,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
       "l:hablar",
       "p:gracias-por"
     ],
@@ -12809,7 +12801,6 @@
     "requires": [
       "c:gracias-de-nada",
       "g:gender-articles",
-      "g:por-para-1",
       "l:mango",
       "p:gracias-por"
     ],
@@ -12831,7 +12822,6 @@
     "requires": [
       "c:gracias-de-nada",
       "g:gender-articles",
-      "g:por-para-1",
       "l:cambio",
       "p:gracias-por"
     ],
@@ -12852,7 +12842,6 @@
     "acceptEn": [],
     "requires": [
       "c:gracias-de-nada",
-      "g:por-para-1",
       "p:gracias-por"
     ],
     "targets": [
@@ -12872,7 +12861,6 @@
     "requires": [
       "c:gracias-de-nada",
       "g:gender-articles",
-      "g:por-para-1",
       "l:tinto",
       "p:gracias-por"
     ],
@@ -12893,7 +12881,6 @@
     "requires": [
       "c:gracias-de-nada",
       "g:gender-articles",
-      "g:por-para-1",
       "l:sábado",
       "l:trabajo",
       "p:gracias-por"
@@ -12914,7 +12901,6 @@
     "acceptEn": [],
     "requires": [
       "c:gracias-de-nada",
-      "g:por-para-1",
       "l:cocinar",
       "p:gracias-por",
       "p:para-inf"
@@ -12935,7 +12921,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:ayuda",
       "p:gracias-por"
     ],
@@ -12955,7 +12940,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:pan",
       "p:gracias-por"
     ],
@@ -12975,7 +12959,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:café",
       "l:venir",
       "p:gracias-por"
@@ -12995,7 +12978,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:por-para-1",
       "l:llamar",
       "p:gracias-por"
     ],
@@ -13015,7 +12997,6 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:por-para-1",
       "l:mango",
       "p:gracias-por"
     ],
@@ -13037,7 +13018,6 @@
     "requires": [
       "c:gracias-de-nada",
       "g:gender-articles",
-      "g:por-para-1",
       "l:ayuda",
       "p:gracias-por"
     ],
@@ -13058,7 +13038,6 @@
     "requires": [
       "c:con-mucho-gusto",
       "c:mucho-gusto",
-      "g:por-para-1",
       "l:gusto",
       "l:venir",
       "p:gracias-por"
@@ -13080,7 +13059,6 @@
     "requires": [
       "c:gracias-de-nada",
       "g:gender-articles",
-      "g:por-para-1",
       "l:tinto",
       "p:gracias-por"
     ],
@@ -13102,7 +13080,6 @@
       "c:hay",
       "c:no-te-preocupes",
       "g:hay-vs-esta",
-      "g:por-para-1",
       "l:esperar",
       "l:problema",
       "p:gracias-por"
@@ -13124,7 +13101,6 @@
     "acceptEn": [],
     "requires": [
       "c:gracias-de-nada",
-      "g:por-para-1",
       "p:gracias-por"
     ],
     "targets": [
@@ -14840,7 +14816,8 @@
       "g:gender-articles",
       "l:domingo",
       "l:próximo",
-      "l:ver"
+      "l:ver",
+      "p:time-pasado-que-viene"
     ],
     "targets": [],
     "kind": "statement",
@@ -17924,7 +17901,8 @@
       "l:hacer",
       "l:pasado",
       "l:sábado",
-      "l:tiempo"
+      "l:tiempo",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "g:preterite-ser-ir-hacer",
@@ -18633,7 +18611,8 @@
       "l:pensar",
       "l:próximo",
       "l:sábado",
-      "p:pensar-en"
+      "p:pensar-en",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "l:pensar"

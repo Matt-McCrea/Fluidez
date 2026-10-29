@@ -21,7 +21,7 @@
     "l:destinar",
     "l:venta",
     "l:recuperar",
-    "l:estrella"
+    "l:documento"
    ],
    "chapter": "ch066"
   },
@@ -82,7 +82,7 @@
     "l:recibo",
     "l:cédula",
     "l:trámite",
-    "l:documento",
+    "l:estrella",
     "l:formulario",
     "l:fila",
     "l:queja",
@@ -103,9 +103,9 @@
     "l:operador",
     "l:enfermera",
     "l:bombero",
-    "l:postal",
+    "l:ventaja",
     "l:identidad",
-    "l:ambulancia",
+    "l:feria",
     "l:caliente",
     "l:técnica",
     "l:ejército",
