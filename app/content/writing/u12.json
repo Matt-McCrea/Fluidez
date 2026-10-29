@@ -1,0 +1,616 @@
+[
+  {
+    "id": "w-u12-01",
+    "unit": "u12",
+    "prompt": "Your friend Mariana asks what happened at the café last night. Text her two short sentences: what the weather was like and the sudden thing that happened.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto",
+        "label": "use the imperfect for the weather"
+      },
+      {
+        "type": "containsWord",
+        "word": "repente",
+        "label": "use de repente for the sudden event"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use the preterite for what happened"
+      }
+    ],
+    "model": "Llovía mucho cuando salí del café. De repente se fue la luz.",
+    "focus": "c:de-repente",
+    "requires": [
+      "c:de-repente",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "l:café",
+      "l:irse",
+      "l:llover",
+      "l:luz",
+      "l:repente",
+      "l:salir",
+      "p:cuando-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u12-02",
+    "unit": "u12",
+    "prompt": "Vale calls you while you are working, but you don't answer. Text her two short sentences, someone your age: what you were doing when she called, and how you felt.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bestaba \\w+(ando|iendo|yendo)\\b",
+        "label": "say what you were doing: estaba + -ando/-iendo"
+      },
+      {
+        "type": "verbForm",
+        "inf": "llamar",
+        "tense": "preterito",
+        "person": "tú",
+        "label": "use llamaste (you called)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Estaba cerrando el café cuando llamaste. Estaba muy cansado.",
+    "focus": "g:imperfect-progressive",
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-progressive",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "l:café",
+      "l:cansado",
+      "l:cerrar",
+      "l:estar",
+      "l:llamar",
+      "p:cuando-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u12-03",
+    "unit": "u12",
+    "prompt": "Your older neighbour, whom you call usted, asks what you were doing when the power went out. Answer her in two short sentences.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "imperfecto",
+        "person": "yo",
+        "label": "use estaba (I was)"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(estaba) \\w+(ando|iendo|yendo)\\b",
+        "label": "estaba + -ando/-iendo"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "estoy",
+          "estás"
+        ],
+        "label": "past, not present"
+      }
+    ],
+    "model": "Estaba leyendo en mi apartamento cuando se fue la luz. Y no tenía celular.",
+    "focus": "g:imperfect-progressive",
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-progressive",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-ser-ir-hacer",
+      "l:apartamento",
+      "l:celular",
+      "l:estar",
+      "l:irse",
+      "l:leer",
+      "l:luz",
+      "l:tener",
+      "p:cuando-basic",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u12-04",
+    "unit": "u12",
+    "prompt": "Vale asks you in a message if tomorrow will be a good day for the café. Reply in two sentences: say what you think about the weather, and what Mariana says.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(creo|pienso) que\\b",
+        "label": "say what you think: creo que..."
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bdice que\\b",
+        "label": "pass on what Mariana says: dice que..."
+      },
+      {
+        "type": "containsWord",
+        "word": "Mariana"
+      }
+    ],
+    "model": "Creo que mañana va a llover. Mariana dice que hace mucho frío.",
+    "focus": "g:that-clauses",
+    "requires": [
+      "c:creo-que",
+      "g:ir-a-plans",
+      "g:present-er-ir",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:creer",
+      "l:decir",
+      "l:frío",
+      "l:hacer",
+      "l:ir",
+      "l:llover",
+      "l:mañana",
+      "p:hace-frio",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u12-05",
+    "unit": "u12",
+    "prompt": "Don Hernando, whom you call usted, asks how your last birthday was. Tell him in two short sentences what the day was like and one thing that happened.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto",
+        "label": "use the imperfect for what the day was like"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use the preterite for what happened"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "regalo",
+          "regalos"
+        ],
+        "label": "mention a gift"
+      }
+    ],
+    "model": "Hacía sol y todo era bonito. Mi mamá me dio un regalo.",
+    "focus": "g:pret-vs-imperfect",
+    "requires": [
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:preterite-irregular-strong",
+      "g:ser-identity",
+      "l:bonito",
+      "l:dar",
+      "l:hacer",
+      "l:mamá",
+      "l:regalo",
+      "l:ser",
+      "l:sol",
+      "p:hace-frio",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u12-06",
+    "unit": "u12",
+    "prompt": "The man came back to the back of the café again. Text Vale in two short sentences, someone your age, that it happened again and that you won't do something again.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bvolv[a-zóé]* a [a-zóé]+(ar|er|ir)\\b",
+        "label": "use volver a + infinitive for again"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Anoche el ruido volvió a empezar. No vuelvo a cerrar solo.",
+    "focus": "p:volver-a-inf",
+    "requires": [
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:stem-boot",
+      "l:anoche",
+      "l:cerrar",
+      "l:empezar",
+      "l:ruido",
+      "l:volver",
+      "p:volver-a-inf"
+    ]
+  },
+  {
+    "id": "w-u12-07",
+    "unit": "u12",
+    "prompt": "Mariana is in Medellín and asks what Bogotá is like today. Text her two short sentences about the weather, someone your age.",
+    "minWords": 6,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bhace (mucho |poco )?(frío|calor|sol|viento|buen tiempo|mal tiempo)\\b",
+        "label": "use hace for the weather"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bestá (lloviendo|nublado)\\b",
+        "label": "use está lloviendo or está nublado"
+      }
+    ],
+    "model": "Hoy hace frío y está lloviendo. Yo estoy en el café con un tinto.",
+    "focus": "p:hace-frio",
+    "requires": [
+      "g:estar-gerund",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "l:café",
+      "l:estar",
+      "l:frío",
+      "l:hacer",
+      "l:hoy",
+      "l:llover",
+      "l:tinto",
+      "p:hace-frio"
+    ]
+  },
+  {
+    "id": "w-u12-08",
+    "unit": "u12",
+    "prompt": "Don Hernando, whom you call usted, asks what you did last night. Answer in two short sentences: what you did, and what the weather was like.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "cerrar",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "use cerré (I closed)"
+      },
+      {
+        "type": "verbFormAny",
+        "inf": "llover",
+        "tense": "imperfecto",
+        "label": "use llovía (it was raining)"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "cerraba"
+        ],
+        "label": "cerré, not cerraba, for one finished action"
+      }
+    ],
+    "model": "Anoche cerré el café a las diez. Llovía mucho y no había nadie.",
+    "focus": "g:pret-vs-imperfect",
+    "requires": [
+      "c:ayer-anoche",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:negation-words",
+      "g:preterite-ar",
+      "l:anoche",
+      "l:café",
+      "l:cerrar",
+      "l:llover",
+      "p:quantifiers-basic",
+      "p:telling-time"
+    ]
+  },
+  {
+    "id": "w-u12-09",
+    "unit": "u12",
+    "prompt": "Mariana asks what everyone was doing in the photo from the birthday party. Text her two or three short sentences about what two or three people were doing.",
+    "minWords": 10,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(estaba|estaban) \\w+(ando|iendo|yendo)\\b[^]*\\b(estaba|estaban) \\w+(ando|iendo|yendo)\\b",
+        "label": "say what at least two people were doing"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "Vale",
+          "Simón",
+          "Hernando"
+        ],
+        "label": "mention someone from the café"
+      }
+    ],
+    "model": "Vale estaba cortando el pan y Simón estaba gritando. Yo estaba tomando fotos.",
+    "focus": "g:imperfect-progressive",
+    "requires": [
+      "g:gender-articles",
+      "g:imperfect-progressive",
+      "g:imperfect-states",
+      "l:cortar",
+      "l:estar",
+      "l:foto",
+      "l:gritar",
+      "l:pan",
+      "l:tomar"
+    ]
+  },
+  {
+    "id": "w-u12-10",
+    "unit": "u12",
+    "prompt": "You tell Vale about the night of the noise. In two short sentences, say what you knew and what you believed was happening, someone your age.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bque\\b[^]*\\bque\\b",
+        "label": "use que twice, once for each clause"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto",
+        "label": "use the imperfect for what you knew and thought"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Sabía que Vale estaba en el café. Creía que Mariana no venía.",
+    "focus": "g:that-clauses",
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:imperfect-states",
+      "g:that-clauses",
+      "l:café",
+      "l:creer",
+      "l:estar",
+      "l:saber",
+      "l:venir",
+      "p:saber-conocer"
+    ]
+  },
+  {
+    "id": "w-u12-11",
+    "unit": "u12",
+    "prompt": "Your friend Vale asks if the weather yesterday was worse than today. Reply with two short sentences comparing yesterday with today.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(más|menos) \\w+ que\\b|\\b(más|menos) que\\b",
+        "label": "compare with más or menos ... que"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "ayer",
+          "hoy"
+        ],
+        "label": "mention yesterday or today"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto",
+        "label": "use the imperfect for yesterday's weather"
+      }
+    ],
+    "model": "Ayer llovía más que hoy. Y hacía más frío.",
+    "focus": "g:comparatives",
+    "requires": [
+      "c:ayer-anoche",
+      "g:comparatives",
+      "g:imperfect-habitual",
+      "l:ayer",
+      "l:frío",
+      "l:hacer",
+      "l:hoy",
+      "l:llover"
+    ]
+  },
+  {
+    "id": "w-u12-12",
+    "unit": "u12",
+    "prompt": "Vale tells you that Simón talked to the stranger last night. Text her back, someone your age: show surprise, ask what happened, and say thank goodness.",
+    "minWords": 6,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "question",
+        "label": "ask a question"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "en serio",
+          "de verdad"
+        ],
+        "label": "react with ¿En serio? or ¿De verdad?"
+      },
+      {
+        "type": "containsWord",
+        "word": "pasó",
+        "label": "ask ¿Y qué pasó?"
+      }
+    ],
+    "model": "¿En serio? ¿Y qué pasó después? Menos mal.",
+    "focus": "c:y-que-paso",
+    "requires": [
+      "c:en-serio",
+      "c:menos-mal",
+      "c:y-que-paso",
+      "l:después",
+      "l:mal",
+      "l:pasar",
+      "l:qué",
+      "l:serio",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u12-13",
+    "unit": "u12",
+    "prompt": "Don Hernando, whom you call usted, asks for a story from your life. Tell him a short story in two or three sentences: something that happened once, and how it ended.",
+    "minWords": 10,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "vez",
+        "label": "start with una vez"
+      },
+      {
+        "type": "containsWord",
+        "word": "final",
+        "label": "end with al final"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use the preterite for what happened"
+      }
+    ],
+    "model": "Una vez, en Toronto, perdí mi celular. Al final lo encontré en el bus.",
+    "focus": "c:una-vez-story",
+    "requires": [
+      "c:al-final",
+      "c:una-vez",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:bus",
+      "l:celular",
+      "l:encontrar",
+      "l:final",
+      "l:perder",
+      "l:vez",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u12-14",
+    "unit": "u12",
+    "prompt": "Mariana asks how you felt when you heard the noise. Text her two short sentences, someone your age: how you felt, and what was going on.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "asustado",
+          "preocupado",
+          "sorprendido",
+          "triste",
+          "enojado",
+          "emocionado",
+          "feliz"
+        ],
+        "label": "name a feeling"
+      },
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "imperfecto",
+        "person": "yo",
+        "label": "use estaba (I was)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Estaba muy asustado cuando oí el ruido. Vale estaba preocupada también.",
+    "focus": "g:pret-vs-imperfect",
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "l:asustado",
+      "l:estar",
+      "l:oír",
+      "l:preocupado",
+      "l:ruido",
+      "p:cuando-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u12-15",
+    "unit": "u12",
+    "prompt": "Officer Ríos, a stranger you call usted, asks you to describe the man. Write two short sentences: what you think about him, and what he was doing.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(creo|pienso|vi) que\\b",
+        "label": "use creo que or vi que"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "imperfecto",
+        "label": "use the imperfect for what he was doing"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Creo que el hombre llevaba una gorra. Vi que corría rápido.",
+    "focus": "g:that-clauses",
+    "requires": [
+      "c:creo-que",
+      "g:gender-articles",
+      "g:imperfect-habitual",
+      "g:pret-vs-imperfect",
+      "g:preterite-er-ir",
+      "g:that-clauses",
+      "l:correr",
+      "l:creer",
+      "l:gorra",
+      "l:hombre",
+      "l:llevar",
+      "l:rápido",
+      "l:ver",
+      "p:es-tiene-lleva"
+    ]
+  }
+]
