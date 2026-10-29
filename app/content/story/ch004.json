@@ -2,29 +2,77 @@
   "id": "ch004",
   "unit": "u02",
   "title": "El señor Ruiz",
-  "text": "Vale llega de la tienda y del banco. Hernando está con un tinto.\nHernando: Tomás, tú no hablas español. ¡Tú lees español! Hablas como un profesor de la universidad.\nTomás: Es que estudio español en la computadora.\nHernando: ¿En la computadora? Yo estudio con Simón. ¿Y en Toronto? ¿Trabajas en una oficina?\nTomás: Sí, claro. Trabajo en software, en una empresa de Toronto. Llego a la oficina a las nueve. Leo correos en la computadora. Hablo con el jefe y con los compañeros. Termino a las cinco.\nHernando: El horario de Rosa era de seis a seis.\nLa verdad: no hay oficina. No hay jefe, no hay compañeros, no hay reuniones. No hay trabajo.\nRiiing.\nTomás: ¿Sí? Buenos días, señor Ruiz. Sí, el café de Rosa. ¿Un cliente? ¿Una empresa? ¿Y la empresa compra el café ya? Claro. Listo. Chao, señor Ruiz.\nTomás termina. Vale está en el café, con el pan. Vale está mal.\nVale: ¿Una empresa compra el café, Tomás?\nTomás: Es que... Vale...\nHernando: ¿El señor Ruiz? ¿El señor Ruiz de Altamira?\nTomás: No sé.\nSimón: ¡Chao, señor Ruiz! ¡Chao, chao!",
+  "text": "Viernes. Vale llega del banco con las cuentas del café. Las cuentas de Rosa son un desastre.\nHernando está en su mesa, con su tinto. Hoy el tinto es de Vale.\nHernando: Tomás, tú no hablas español. ¡Tú hablas como un libro!\nTomás: Es que estudio español en la computadora.\nHernando: ¿En la computadora? Yo estudio inglés con los turistas, en el taxi.\nHernando: ¿Y en Toronto, Tomás? ¿Trabajas en una oficina?\nTomás: Sí, claro. Trabajo en una empresa grande, de software. Llego a la oficina a las nueve, leo correos, hablo con mi jefe y con mis compañeros. Termino a las cinco.\nHernando: De nueve a cinco. El horario de Rosa era de seis a seis.\nPero no es verdad. En Toronto, Tomás no tiene oficina, no tiene jefe, no tiene compañeros. No tiene trabajo.\nRiiing. Es el celular de Tomás.\nTomás: ¿Aló? Sí, soy Tomás. Buenos días, señor Ruiz... ¿Un comprador?... ¿Una empresa?... ¿Y compra el café este mes?... Perfecto. Hablamos el lunes. Chao.\nVale está en la puerta, con las cuentas en la mano. Está muy seria.\nVale: ¿Un comprador? Tomás, ¿vendes el café de Rosa?\nTomás: Vale, es que...\nHernando: ¿Una empresa? ¿Altamira?\nTomás: No sé, don Hernando. No sé.\nSimón: ¡Chao, señor Ruiz! ¡Chao!",
   "gloss": [
+    {
+      "es": "las cuentas del café",
+      "en": "the café's accounts"
+    },
+    {
+      "es": "un desastre",
+      "en": "a disaster (Rosa never kept accounts)"
+    },
+    {
+      "es": "en su mesa",
+      "en": "at his usual table"
+    },
+    {
+      "es": "¡Tú hablas como un libro!",
+      "en": "You talk like a book! (too correct, too formal)"
+    },
+    {
+      "es": "con los turistas, en el taxi",
+      "en": "with the tourists, in my taxi (Hernando was a taxi driver)"
+    },
+    {
+      "es": "El horario de Rosa era de seis a seis",
+      "en": "Rosa's hours were six to six"
+    },
     {
       "es": "Riiing",
       "en": "(the phone rings)"
     },
     {
-      "es": "¿Y la empresa compra el café ya?",
-      "en": "And the company would buy the café right away?"
+      "es": "el celular",
+      "en": "the mobile phone"
     },
     {
-      "es": "La verdad: no hay oficina",
-      "en": "The truth is, there's no office"
+      "es": "¿Aló? Sí, soy Tomás.",
+      "en": "Hello? Yes, this is Tomás."
+    },
+    {
+      "es": "¿Un comprador?",
+      "en": "A buyer?"
+    },
+    {
+      "es": "¿Y compra el café este mes?",
+      "en": "And they'd buy the café this month?"
+    },
+    {
+      "es": "Perfecto. Hablamos el lunes.",
+      "en": "Perfect. Talk on Monday."
+    },
+    {
+      "es": "en la puerta",
+      "en": "in the doorway"
+    },
+    {
+      "es": "Está muy seria",
+      "en": "She looks very serious"
+    },
+    {
+      "es": "¿vendes el café de Rosa?",
+      "en": "are you selling Rosa's café?"
     }
   ],
   "questions": [
     {
-      "q": "Why does Hernando say Tomás «reads» Spanish instead of speaking it?",
+      "q": "What does Hernando mean when he says Tomás «talks like a book»?",
       "options": [
-        "He sounds like a university lecturer, very correct and stiff",
+        "His Spanish is too correct and formal",
+        "He talks too much",
         "He reads everything from his phone",
-        "He can't read Spanish at all",
-        "He only speaks English in the café"
+        "He only speaks English"
       ],
       "answer": 0
     },
@@ -32,33 +80,33 @@
       "q": "What is the truth about Tomás's job in Toronto?",
       "options": [
         "There is no job: no office, no boss, no colleagues",
-        "He works from nine to five in an office",
+        "He works nine to five in an office",
         "He is a doctor",
         "He works for Altamira"
       ],
       "answer": 0
     },
     {
-      "q": "What does Mr Ruiz say on the phone?",
+      "q": "What does Mr Ruiz have for Tomás?",
       "options": [
-        "A company wants to buy the café, right away",
-        "Rosa's café is closed for good",
-        "Tomás has a new job in Toronto",
-        "The bank wants money"
+        "A buyer for the café, a company",
+        "A job in Toronto",
+        "A letter from Rosa",
+        "A bill from the bank"
       ],
       "answer": 0
     },
     {
       "q": "¿Cómo está Vale al final?",
       "options": [
-        "Mal",
-        "Bien",
-        "Muy contenta"
+        "Muy seria",
+        "Muy contenta",
+        "Cansada"
       ],
       "answer": 0
     }
   ],
-  "hook": "Vale heard every word. Next time she has a question for Tomás, and then an offer he really doesn't want.",
+  "hook": "Vale heard every word. Tomorrow she has a question for Tomás, and then an offer he really doesn't want.",
   "rereadQuestions": [
     {
       "q": "¿Dónde estudia español Tomás?",
@@ -70,47 +118,51 @@
       "answer": 0
     },
     {
-      "q": "What was Rosa's working day like, according to Hernando?",
+      "q": "Where did Hernando learn his English?",
       "options": [
-        "Six to six",
-        "Nine to five",
-        "Seven to seven",
-        "She didn't work"
+        "From tourists in his taxi",
+        "At university",
+        "From Simón",
+        "In Toronto"
       ],
       "answer": 0
     },
     {
-      "q": "What does Hernando suspect about Mr Ruiz?",
+      "q": "What does Hernando suspect about the buyer?",
       "options": [
-        "That he's from Altamira",
-        "That he's Tomás's boss",
-        "That he's a doctor",
-        "That he's Vale's friend"
+        "That it's Altamira",
+        "That it's Tomás's boss",
+        "That it's Vale",
+        "That it's a bank"
       ],
       "answer": 0
     }
   ],
   "requires": [
+    "c:alo",
     "c:chao-nos-vemos",
     "c:claro-listo",
     "c:era",
     "c:es-que",
-    "c:hay",
     "c:hola-buenos-dias",
-    "c:la-verdad",
     "c:no-se",
+    "c:tienes",
     "c:trabajo-en",
+    "g:adjective-agreement",
     "g:estar-location-states",
     "g:gender-articles",
-    "g:hay-vs-esta",
     "g:imperfect-states",
     "g:present-ar",
     "g:present-er-ir",
     "g:ser-identity",
+    "g:stem-boot",
     "g:yo-irregular",
-    "p:bien-bueno",
-    "p:bien-mal-vs-bueno-malo",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
     "p:desde-hasta",
+    "p:don-dona-nombre",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
     "p:senor-don-article",
     "p:telling-time"
   ],
@@ -118,37 +170,49 @@
     "l:banco",
     "l:bueno",
     "l:café",
+    "l:celular",
     "l:claro",
-    "l:cliente",
     "l:compañero",
+    "l:comprador",
     "l:comprar",
     "l:computadora",
     "l:correo",
+    "l:cuenta",
+    "l:desastre",
     "l:día",
     "l:empresa",
     "l:español",
     "l:estar",
     "l:estudiar",
+    "l:grande",
     "l:hablar",
     "l:horario",
+    "l:hoy",
+    "l:inglés",
     "l:jefe",
     "l:leer",
-    "l:listo",
+    "l:libro",
     "l:llegar",
-    "l:mal",
+    "l:lunes",
+    "l:mano",
+    "l:mes",
+    "l:mesa",
     "l:oficina",
-    "l:pan",
-    "l:profesor",
-    "l:reunión",
+    "l:perfecto",
+    "l:puerta",
     "l:saber",
     "l:ser",
+    "l:serio",
     "l:señor",
+    "l:taxi",
+    "l:tener",
     "l:terminar",
-    "l:tienda",
     "l:tinto",
     "l:trabajar",
     "l:trabajo",
-    "l:universidad",
-    "l:verdad"
+    "l:turista",
+    "l:vender",
+    "l:verdad",
+    "l:viernes"
   ]
 }

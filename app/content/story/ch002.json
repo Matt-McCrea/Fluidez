@@ -2,34 +2,68 @@
   "id": "ch002",
   "unit": "u01",
   "title": "Un tinto, por favor",
-  "text": "Hernando: ¡Buenos días, Tomás! ¿Me regala un tinto, por favor?\nTomás: ¿Tinto? Perdón, no entiendo. Más despacio, por favor.\nHernando: Tiiiinto.\nVale: Tinto es café, Tomás. Café sin leche.\nSimón: ¡Tinto! ¡Tinto!\nHernando: Y pan, por favor. Pan de Vale. ¡Me encanta!\nVale: No hay pan, Don Hernando. Hay agua y jugo.\nHernando: ¿Agua? ¿Jugo? No, gracias. Quiero tinto. Tomás... ¿Herrera es nombre?\nTomás: No. Tomás es nombre. Herrera es apellido.\nHernando: ¿Ciudad? ¿País? ¿Profesión?\nTomás: Vivo en Toronto, en Canadá. Soy ingeniero.\nHernando: ¿Ingeniero? ¡No! Rosa: «Tomás es médico en Canadá».\nTomás: ¿Médico? No, no soy médico. Soy ingeniero... sin trabajo.\nVale: Y Rosa: «Hernando es profesor de tango».\nHernando: ¡Ay, Rosa! Tengo setenta y uno. Y no tengo tinto.\nTomás: Vale, ¿y Altamira? ¿Médico? ¿Ingeniero?\nVale: ¿Altamira? Big problem, Tomás. Big, big problem.",
+  "text": "Hernando: Vale, ¿me regala un tinto, por favor?\nTomás: ¿Tinto? Perdón, no entiendo. ¿Tinto? ¿Rojo?\nHernando: ¿Rojo? ¡No, mijo! Tinto es café. Café negro.\nSimón: ¡Tinto, por favor! ¡Tinto, por favor!\nHernando: Y pan, Vale, por favor.\nVale: Hoy no hay pan, don Hernando. Hay jugo.\nHernando: ¿Jugo? No, gracias. Quiero tinto.\nHernando: Y tú, Tomás... ¿médico?\nTomás: ¿Médico? No. Soy ingeniero. Trabajo en software, en Toronto.\nHernando: ¿Ingeniero? Pero doña Rosa, siempre: «Tomás es médico en Canadá. ¡Médico!».\nTomás: ¿Médico? ¡Ay, abuela!\nVale: Y según doña Rosa, don Hernando es bailarín de tango.\nHernando: ¿Bailarín? Tengo setenta y uno, mija. Y no tengo tinto.\nTomás: Vale... ¿Altamira?\nVale: Hoteles, Tomás. Hoteles, hoteles y más hoteles.\nHernando: Y problemas, mijo.",
   "gloss": [
     {
-      "es": "Tiiiinto",
-      "en": "Hernando, saying «tinto» very, very slowly"
+      "es": "¿Rojo?",
+      "en": "Red? (tinto also means deep red, like red wine)"
     },
     {
-      "es": "Rosa: «Tomás es médico en Canadá»",
-      "en": "Rosa always said: \"Tomás is a doctor in Canada.\""
+      "es": "mijo",
+      "en": "son, lad (warm, from «mi hijo»)"
     },
     {
-      "es": "sin trabajo",
-      "en": "without a job, out of work"
+      "es": "Tinto es café. Café negro.",
+      "en": "Tinto is coffee. Black coffee. (in Colombia, a small black coffee)"
     },
     {
-      "es": "profesor de tango",
-      "en": "tango teacher"
+      "es": "Pero doña Rosa, siempre: «Tomás es médico en Canadá. ¡Médico!»",
+      "en": "But Rosa was always saying: \"Tomás is a doctor in Canada. A doctor!\""
+    },
+    {
+      "es": "¡Ay, abuela!",
+      "en": "Oh, Grandma!"
+    },
+    {
+      "es": "según doña Rosa",
+      "en": "according to Rosa"
+    },
+    {
+      "es": "bailarín de tango",
+      "en": "a tango dancer"
+    },
+    {
+      "es": "mija",
+      "en": "girl, dear (warm, from «mi hija»)"
+    },
+    {
+      "es": "Hoteles, hoteles y más hoteles",
+      "en": "Hotels, hotels and more hotels (Altamira builds hotels)"
     },
     {
       "es": "Tengo setenta y uno",
       "en": "I'm seventy-one"
+    },
+    {
+      "es": "Y problemas",
+      "en": "And trouble"
     }
   ],
   "questions": [
     {
+      "q": "What does Tomás think «tinto» means?",
+      "options": [
+        "Red, the colour",
+        "Black coffee",
+        "Orange juice",
+        "Bread"
+      ],
+      "answer": 0
+    },
+    {
       "q": "What is a «tinto» in Colombia?",
       "options": [
-        "Black coffee",
+        "A small black coffee",
         "Red wine",
         "Coffee with milk",
         "Fruit juice"
@@ -39,19 +73,19 @@
     {
       "q": "Why can't Hernando have bread?",
       "options": [
-        "There isn't any",
-        "Tomás eats it",
+        "There isn't any today",
+        "Tomás ate it",
         "It's too expensive",
         "Simón ate it"
       ],
       "answer": 0
     },
     {
-      "q": "What did Rosa tell everybody about Tomás?",
+      "q": "What did Rosa always tell people about Tomás?",
       "options": [
         "That he was a doctor in Canada",
         "That he was an engineer",
-        "That he was a tango teacher",
+        "That he was a tango dancer",
         "That he lived in Medellín"
       ],
       "answer": 0
@@ -61,35 +95,17 @@
       "options": [
         "Ingeniero",
         "Médico",
-        "Profesor"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "How does Vale describe Altamira?",
-      "options": [
-        "A big problem",
-        "A good doctor",
-        "A new client",
-        "An engineer"
+        "Bailarín"
       ],
       "answer": 0
     }
   ],
-  "hook": "Hernando still has no tinto, and Tomás still hasn't opened Altamira's letter. Next week Vale shows him what a real day in Rosa's café looks like, starting before sunrise.",
+  "hook": "Hernando still has no tinto, and Tomás still hasn't opened Altamira's letter. Tomorrow Vale shows him what a real day in Rosa's café looks like, starting before sunrise.",
   "rereadQuestions": [
-    {
-      "q": "¿Herrera es nombre o apellido?",
-      "options": [
-        "Apellido",
-        "Nombre"
-      ],
-      "answer": 0
-    },
     {
       "q": "What does Hernando refuse?",
       "options": [
-        "Water and juice",
+        "Juice",
         "Black coffee",
         "Bread",
         "A question about his age"
@@ -97,70 +113,74 @@
       "answer": 0
     },
     {
-      "q": "Which joke does Vale make about Hernando?",
+      "q": "According to Rosa, what is Don Hernando?",
       "options": [
-        "Rosa called him a tango teacher",
-        "He is a doctor",
-        "He is from Canada",
-        "He is the parrot's teacher"
+        "A tango dancer",
+        "A doctor",
+        "An engineer",
+        "A taxi driver"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "How does Vale explain Altamira?",
+      "options": [
+        "Hotels, hotels and more hotels",
+        "A new café",
+        "A bank",
+        "A friend of Rosa's"
       ],
       "answer": 0
     }
   ],
   "requires": [
+    "c:bien-y-tu",
     "c:gracias-de-nada",
     "c:hay",
-    "c:hola-buenos-dias",
-    "c:mas-despacio",
-    "c:me-encanta",
     "c:me-regala",
     "c:no-entiendo",
     "c:perdon-disculpe",
     "c:por-favor",
     "c:quiero",
+    "c:segun",
     "c:tengo",
-    "c:vivo-en",
-    "g:gustar-full",
+    "c:trabajo-en",
     "g:hay-vs-esta",
-    "g:present-er-ir",
+    "g:present-ar",
     "g:ser-identity",
     "g:stem-boot",
     "g:yo-irregular",
-    "p:con-sin",
     "p:don-dona-nombre",
-    "p:no-es-x-es-y",
+    "p:frequency-scale",
     "p:numbers-un-una",
     "p:senor-don-article",
     "p:ser-profession-no-article"
   ],
   "lexemes": [
-    "l:agua",
-    "l:apellido",
-    "l:bueno",
+    "l:abuela",
+    "l:bailarín",
     "l:café",
-    "l:ciudad",
-    "l:despacio",
-    "l:día",
-    "l:encantar",
     "l:entender",
     "l:favor",
+    "l:hotel",
+    "l:hoy",
     "l:ingeniero",
     "l:jugo",
-    "l:leche",
+    "l:mija",
+    "l:mijo",
     "l:médico",
-    "l:nombre",
+    "l:negro",
     "l:pan",
-    "l:país",
     "l:perdón",
-    "l:profesión",
-    "l:profesor",
+    "l:problema",
     "l:querer",
     "l:regalar",
+    "l:rojo",
     "l:ser",
+    "l:siempre",
     "l:tango",
     "l:tener",
     "l:tinto",
-    "l:trabajo",
-    "l:vivir"
+    "l:trabajar"
   ]
 }

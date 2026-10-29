@@ -1,29 +1,57 @@
 {
   "id": "ch006",
   "unit": "u03",
-  "title": "El sábado empezamos",
-  "text": "Vale tiene un plan. Hernando tiene un plan. Simón quiere fruta.\nVale: El martes compramos leche y fruta. El miércoles, chocolate. El jueves, pan, pan y pan. El viernes trabajamos y trabajamos. Y el sábado... ¡empezamos!\nTomás: ¿El sábado? ¿Ya?\nHernando: Y el domingo, fútbol. El partido en el café, con cerveza.\nTomás: No me gusta nada el fútbol.\nHernando: ¡No es fútbol, Tomás! Es un partido de Colombia. ¿Y la música? ¿Qué tipo de música te gusta? Yo canto tango.\nSimón: ¡Yo canto! ¡Yo canto!\nVale: Y el fin de semana, música. ¿Te gusta bailar, Tomás?\nTomás: No me gusta nada bailar. Y no canto.\nHernando: ¿Prefieres el cine? Los jueves, cine colombiano: una película y un tinto.\nTomás: Prefiero ver películas solo.\nVale: Tomás, ¿qué te gusta hacer?\nTomás: Me gusta... el chocolate de Vale.\nVale: ¡Qué chévere! Entonces el sábado empiezas a las seis.\nSimón come la fruta de Hernando. Y la fruta de Vale. Y la fruta de Tomás.\nTomás: No... no, no...\nHernando y Simón: ¡De una!\nTomás camina y camina, solo, en La Candelaria. Treinta días. Dos millones. Y un loro.",
+  "title": "El sábado abrimos",
+  "text": "Domingo. Vale tiene un plan. Hernando tiene un plan. Simón quiere arepa.\nVale: El martes compramos leche y harina. El jueves hago pan y buñuelos. Y el viernes, Tomás, tú compras la fruta en Paloquemao.\nTomás: ¿Yo? ¿Solo?\nVale: Solo. Y el sábado... ¡abrimos!\nTomás: ¿El sábado? ¿Ya?\nHernando: Y los domingos, ajedrez y fútbol en la televisión. ¿Te gusta el fútbol, Tomás?\nTomás: No me gusta nada el fútbol.\nHernando: ¿Y la música? ¿Qué tipo de música te gusta? Yo canto tango.\nSimón: ¡Yo canto! ¡Yo canto!\nTomás: No me gusta nada el tango. Y no canto.\nVale: Tomás, ¿qué te gusta hacer?\nTomás: Me gusta... estar solo. Leer. Ver películas en casa.\nVale: Perfecto. Entonces puedes trabajar en la caja. Solo.\nHernando: ¡De una!\nSimón come la arepa de Hernando. Y la arepa de Vale. Y la arepa de Tomás.\nTomás: ¡Simón! ¡Mi arepa no!\nPor la noche, Tomás sale a caminar, solo. Treinta días. Dos millones de pesos. Y un loro.",
   "gloss": [
+    {
+      "es": "Simón quiere arepa",
+      "en": "Simón wants arepa (a corn cake: everybody's breakfast)"
+    },
+    {
+      "es": "harina",
+      "en": "flour"
+    },
+    {
+      "es": "en Paloquemao",
+      "en": "at Paloquemao (Bogotá's big food market)"
+    },
+    {
+      "es": "¡abrimos!",
+      "en": "we open!"
+    },
+    {
+      "es": "ajedrez",
+      "en": "chess"
+    },
+    {
+      "es": "la televisión",
+      "en": "the TV"
+    },
     {
       "es": "Yo canto tango",
       "en": "I sing tango"
     },
     {
-      "es": "un loro",
-      "en": "a parrot"
+      "es": "No me gusta nada",
+      "en": "I don't like it at all"
     },
     {
-      "es": "Dos millones",
-      "en": "Two million (pesos)"
+      "es": "la caja",
+      "en": "the till, the cash register"
     },
     {
-      "es": "Prefiero ver películas solo",
-      "en": "I prefer watching films alone"
+      "es": "Por la noche, Tomás sale a caminar, solo",
+      "en": "That night, Tomás goes out for a walk, alone"
+    },
+    {
+      "es": "Y un loro",
+      "en": "And a parrot"
     }
   ],
   "questions": [
     {
-      "q": "When does the café start again?",
+      "q": "When does the café open again?",
       "options": [
         "On Saturday",
         "On Monday",
@@ -33,9 +61,19 @@
       "answer": 0
     },
     {
+      "q": "What job does Vale give Tomás for Friday?",
+      "options": [
+        "Buying the fruit at Paloquemao, alone",
+        "Baking the bread",
+        "Painting the café",
+        "Calling Mr Ruiz"
+      ],
+      "answer": 0
+    },
+    {
       "q": "What does Hernando want on Sundays?",
       "options": [
-        "The football match in the café, with beer",
+        "Chess and football on TV",
         "Tango classes",
         "A film",
         "To sleep"
@@ -43,30 +81,21 @@
       "answer": 0
     },
     {
-      "q": "What does Tomás like?",
-      "options": [
-        "Vale's hot chocolate",
-        "Football",
-        "Dancing",
-        "Singing"
-      ],
-      "answer": 0
-    },
-    {
       "q": "¿Qué come Simón?",
       "options": [
-        "La fruta de todos",
+        "La arepa de todos",
         "El pan de Vale",
-        "Pizza"
+        "La fruta de Paloquemao"
       ],
       "answer": 0
     },
     {
-      "q": "¿Qué prefiere Tomás?",
+      "q": "Why does Vale put Tomás on the till?",
       "options": [
-        "Ver películas solo",
-        "El cine colombiano en el café",
-        "Bailar el fin de semana"
+        "He says he likes being alone",
+        "He is good with numbers",
+        "He sings well",
+        "Hernando asks her to"
       ],
       "answer": 0
     }
@@ -76,30 +105,29 @@
     {
       "q": "What does Vale plan for Thursday?",
       "options": [
-        "Bread, bread and more bread",
+        "Bread and buñuelos",
         "Fruit and milk",
-        "Chocolate",
+        "Chess",
         "Football"
       ],
       "answer": 0
     },
     {
-      "q": "What happens on Thursdays in Hernando's plan?",
+      "q": "¿Qué tipo de música canta Hernando?",
       "options": [
-        "Colombian cinema: a film and a coffee",
-        "Tango night",
-        "A football match",
-        "Chess"
+        "Tango",
+        "Salsa",
+        "Rock"
       ],
       "answer": 0
     },
     {
-      "q": "What time does Tomás start on Saturday?",
+      "q": "What is on Tomás's mind on his walk that night?",
       "options": [
-        "Six",
-        "Seven",
-        "Nine",
-        "He doesn't know yet"
+        "Thirty days, two million pesos and a parrot",
+        "His flight home",
+        "Mr Ruiz's phone call",
+        "Vale's buñuelos"
       ],
       "answer": 0
     }
@@ -107,64 +135,66 @@
   "requires": [
     "c:claro-listo",
     "c:entonces-bueno",
+    "c:hago-salgo-vengo",
     "c:me-gusta",
     "c:no-me-gusta-nada",
-    "c:que-chevere",
     "c:que-te-gusta-hacer",
     "c:tienes",
+    "g:estar-location-states",
     "g:gender-articles",
     "g:gustar-basic",
     "g:negation-words",
     "g:present-ar",
     "g:present-er-ir",
     "g:questions",
-    "g:ser-identity",
     "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
     "p:days-el-lunes",
-    "p:prefieres-x-o-y",
-    "p:que-tipo-de",
-    "p:repeticion-claro-claro",
-    "p:telling-time"
+    "p:infinitive-instructions",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:que-tipo-de"
   ],
   "lexemes": [
-    "l:bailar",
-    "l:café",
+    "l:abrir",
+    "l:ajedrez",
+    "l:arepa",
+    "l:buñuelo",
+    "l:caja",
     "l:caminar",
     "l:cantar",
-    "l:cerveza",
-    "l:chocolate",
-    "l:chévere",
-    "l:cine",
-    "l:colombiano",
+    "l:casa",
     "l:comer",
     "l:comprar",
     "l:domingo",
     "l:día",
-    "l:empezar",
-    "l:fin",
+    "l:estar",
     "l:fruta",
     "l:fútbol",
     "l:gustar",
     "l:hacer",
+    "l:harina",
     "l:jueves",
     "l:leche",
+    "l:leer",
     "l:loro",
     "l:martes",
-    "l:miércoles",
     "l:música",
+    "l:noche",
     "l:pan",
-    "l:partido",
     "l:película",
+    "l:perfecto",
+    "l:peso",
     "l:plan",
-    "l:preferir",
+    "l:poder",
     "l:querer",
     "l:qué",
-    "l:semana",
-    "l:ser",
+    "l:salir",
     "l:sábado",
     "l:tango",
+    "l:televisión",
     "l:tener",
-    "l:tinto",
     "l:tipo",
     "l:trabajar",
     "l:ver",

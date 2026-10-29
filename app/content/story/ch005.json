@@ -2,28 +2,78 @@
   "id": "ch005",
   "unit": "u03",
   "title": "Treinta días",
-  "text": "6:00. Vale está en el café, pero no hace pan. No hace tinto. Vale está con Tomás. Hernando también.\nVale: Tomás, ¿quién es el señor Ruiz?\nTomás: Un señor de una empresa.\nVale: ¿Cuál empresa? ¿Altamira?\nTomás: No sé, Vale. No sé.\nVale: ¿Y por qué llamas al señor Ruiz?\nTomás: Porque no tengo trabajo. No hay oficina, no hay jefe. En Toronto no tengo trabajo.\nHernando: ¿Y el café, Tomás? ¿Y Rosa?\nTomás: Me da igual.\nVale: ¿Qué? ¿Y el café de Rosa, Tomás?\nTomás: ...\nVale: Bueno. Un pacto.\nTomás: ¿Un pacto?\nVale: Treinta días. ¿El café hace $2.000.000? Tú trabajas aquí trescientos sesenta y cinco días. ¿El café no hace $2.000.000? Llamas al señor Ruiz.\nTomás: ¿Trescientos sesenta y cinco días? ¿Aquí? ¿Con Simón? No me gusta el pacto.\nVale: ¿Te gusta el pan, Tomás?\nTomás: El pan... sí. El pan, sí.\nHernando: ¡Qué chévere! Y yo cocino. Me gusta cocinar.\nTomás: No, no, Hernando. Es que...\nHernando: ¡De una!\nSimón: ¡De una! ¡De una!\nVale: Listo. Treinta días, Tomás.",
+  "text": "Sábado, seis de la mañana. Hoy Vale no hace pan. Espera a Tomás en la puerta, con Hernando.\nVale: Tomás, ¿quién es el señor Ruiz?\nTomás: Un agente. Vende casas, apartamentos... y cafés.\nVale: ¿Y por qué hablas con el señor Ruiz?\nTomás: Porque... es que no tengo trabajo, Vale. En Toronto no tengo oficina, no tengo jefe. No tengo trabajo.\nHernando: ¿Y el café, Tomás? ¿Y Rosa?\nTomás: Rosa no está, don Hernando. Y el café... me da igual.\nVale: ¿Cómo así? ¿El café de tu abuela?\nTomás no contesta.\nVale: Bueno. Entonces, un trato.\nTomás: ¿Un trato?\nVale: Treinta días. ¿El café vende dos millones de pesos en treinta días? Tú trabajas aquí un año. ¿No vende dos millones? Llamas al señor Ruiz y vendes.\nTomás: ¿Un año? ¿Aquí? ¿Con Simón? No me gusta la idea.\nVale: ¿Y mis buñuelos? ¿Te gustan mis buñuelos?\nTomás: Los buñuelos... sí. Los buñuelos me gustan mucho.\nHernando: ¡Qué chévere! Y los domingos, ajedrez en el café. ¡Me encanta el ajedrez!\nTomás: No, no, un momento...\nHernando: ¡De una!\nSimón: ¡De una! ¡De una!\nVale: Listo. Treinta días, Tomás.",
   "gloss": [
     {
-      "es": "un pacto",
-      "en": "a deal, a pact (here: a bet)"
+      "es": "Espera a Tomás en la puerta",
+      "en": "She's waiting for Tomás at the door"
     },
     {
-      "es": "¿El café hace $2.000.000?",
-      "en": "The café takes 2,000,000 pesos? (= if it does…)"
+      "es": "Un agente. Vende casas, apartamentos... y cafés.",
+      "en": "An estate agent. He sells houses, flats... and cafés."
     },
     {
-      "es": "trescientos sesenta y cinco días",
-      "en": "365 days (a whole year)"
+      "es": "Rosa no está",
+      "en": "Rosa's not here any more"
     },
     {
-      "es": "Llamas al señor Ruiz",
-      "en": "You call Mr Ruiz (and sell)"
+      "es": "me da igual",
+      "en": "I don't care"
+    },
+    {
+      "es": "¿Cómo así? ¿El café de tu abuela?",
+      "en": "What do you mean? Your grandmother's café?"
+    },
+    {
+      "es": "Tomás no contesta",
+      "en": "Tomás doesn't answer"
+    },
+    {
+      "es": "un trato",
+      "en": "a deal (here: a bet)"
+    },
+    {
+      "es": "¿El café vende dos millones de pesos en treinta días?",
+      "en": "Does the café sell two million pesos' worth in thirty days? (= if it does...)"
+    },
+    {
+      "es": "Llamas al señor Ruiz y vendes",
+      "en": "You call Mr Ruiz and sell"
+    },
+    {
+      "es": "No me gusta la idea",
+      "en": "I don't like the idea"
+    },
+    {
+      "es": "buñuelos",
+      "en": "buñuelos: fried cheese dough balls, Vale's speciality"
+    },
+    {
+      "es": "ajedrez",
+      "en": "chess"
+    },
+    {
+      "es": "un momento",
+      "en": "hang on a moment"
+    },
+    {
+      "es": "¡De una!",
+      "en": "You're on! Let's do it! (Colombian)"
     }
   ],
   "questions": [
     {
-      "q": "Why did Tomás call Mr Ruiz?",
+      "q": "Who is Mr Ruiz?",
+      "options": [
+        "An estate agent",
+        "Tomás's boss in Toronto",
+        "The owner of Altamira",
+        "A bank manager"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why is Tomás talking to Mr Ruiz?",
       "options": [
         "He has no job in Toronto",
         "He wants a job in Bogotá",
@@ -35,8 +85,8 @@
     {
       "q": "What are the terms of Vale's deal?",
       "options": [
-        "If the café takes 2,000,000 pesos in 30 days, Tomás stays a year; if not, he calls Mr Ruiz",
-        "Tomás pays Vale 2,000,000 pesos",
+        "If the café sells two million pesos in 30 days, Tomás stays a year; if not, he sells",
+        "Tomás pays Vale two million pesos",
         "Tomás works 30 days and then goes home",
         "Hernando buys the café"
       ],
@@ -45,29 +95,20 @@
     {
       "q": "What is the one thing Tomás admits he likes?",
       "options": [
-        "Vale's bread",
+        "Vale's buñuelos",
         "Simón",
-        "Hernando's cooking",
+        "Chess",
         "Mr Ruiz"
       ],
       "answer": 0
     },
     {
-      "q": "¿Quién dice «¡De una!» primero?",
+      "q": "Does Tomás actually agree to the bet?",
       "options": [
-        "Hernando",
-        "Tomás",
-        "Vale"
-      ],
-      "answer": 0
-    },
-    {
-      "q": "Does Tomás actually agree to the deal?",
-      "options": [
-        "Not really. He's still saying no when Hernando says yes for him",
+        "Not really: Hernando and Simón say yes for him",
         "Yes, immediately",
         "No, and Vale cancels it",
-        "Yes, but only for thirty days"
+        "Yes, but only for a year"
       ],
       "answer": 0
     }
@@ -83,7 +124,7 @@
       "answer": 0
     },
     {
-      "q": "What does Tomás say when Hernando asks about Rosa and the café?",
+      "q": "What does Tomás say about Rosa's café?",
       "options": [
         "«Me da igual»: I don't care",
         "«Me gusta»: I like it",
@@ -93,25 +134,25 @@
       "answer": 0
     },
     {
-      "q": "What does Hernando offer to do?",
+      "q": "What does Hernando want on Sundays?",
       "options": [
-        "Cook",
-        "Sing",
-        "Pay",
-        "Call Mr Ruiz"
+        "Chess in the café",
+        "Tango",
+        "Football",
+        "A day off"
       ],
       "answer": 0
     }
   ],
   "requires": [
     "c:claro-listo",
+    "c:como-asi",
     "c:entonces-bueno",
     "c:es-que",
-    "c:hay",
     "c:me-da-igual",
+    "c:me-encanta",
     "c:me-gusta",
     "c:me-regala",
-    "c:no-se",
     "c:porque",
     "c:que-chevere",
     "c:tengo",
@@ -119,46 +160,67 @@
     "g:estar-location-states",
     "g:gender-articles",
     "g:gustar-basic",
-    "g:hay-vs-esta",
+    "g:gustar-full",
     "g:present-ar",
     "g:present-er-ir",
     "g:questions",
     "g:ser-identity",
     "g:yo-irregular",
     "p:aqui-ahi-alla",
+    "p:days-el-lunes",
+    "p:don-dona-nombre",
     "p:personal-a",
+    "p:por-la-manana",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
     "p:question-word-order",
     "p:repeticion-claro-claro",
     "p:senor-don-article"
   ],
   "lexemes": [
+    "l:abuela",
+    "l:agente",
+    "l:ajedrez",
+    "l:apartamento",
     "l:aquí",
+    "l:año",
     "l:bueno",
+    "l:buñuelo",
     "l:café",
+    "l:casa",
     "l:chévere",
-    "l:cocinar",
-    "l:cuál",
+    "l:contestar",
+    "l:cómo",
     "l:dar",
+    "l:domingo",
     "l:día",
-    "l:empresa",
+    "l:encantar",
+    "l:esperar",
     "l:estar",
     "l:gustar",
+    "l:hablar",
     "l:hacer",
+    "l:hoy",
+    "l:idea",
     "l:igual",
     "l:jefe",
     "l:listo",
     "l:llamar",
+    "l:mañana",
+    "l:momento",
     "l:oficina",
-    "l:pacto",
     "l:pan",
+    "l:peso",
+    "l:puerta",
     "l:quién",
     "l:qué",
-    "l:saber",
     "l:ser",
     "l:señor",
+    "l:sábado",
     "l:tener",
-    "l:tinto",
     "l:trabajar",
-    "l:trabajo"
+    "l:trabajo",
+    "l:trato",
+    "l:vender"
   ]
 }

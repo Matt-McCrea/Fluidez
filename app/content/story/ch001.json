@@ -2,30 +2,70 @@
   "id": "ch001",
   "unit": "u01",
   "title": "Hola, Bogotá",
-  "text": "Tomás: Hola. Buenos días.\nVale: Hello. Sorry. Closed. That letter: for Rosa, not for you.\nTomás: Sí, sí. Soy Tomás. Soy de Toronto.\nVale: Oh, Toronto. Very nice. Tourist office: two streets that way.\nTomás: No, no. Soy de Toronto... y soy de Bogotá.\nVale: ¿De Toronto o de Bogotá?\nTomás: Soy nieto de Rosa.\nVale: ¿Tú eres Tomás? ¿Tomás de Rosa?\nTomás: Sí.\nVale: ¡Ay, Tomás! Mucho gusto. Soy Vale. Soy de Medellín.\nHernando: ¡Vale! ¡Buenos días! ¿Y él?\nVale: Es Tomás, Don Hernando. ¡Es Tomás de Rosa!\nHernando: ¡Tomás! Mucho gusto, mucho gusto. Soy Hernando. Soy colombiano y soy de Bogotá.\nSimón: ¡Hola! ¡Hola! ¿De dónde eres?\nTomás: ¿Y él? ¿Es mesero?\nVale: No. Es Simón. Simón es de Rosa.\nSimón: ¡Mucho gusto! ¡Mucho gusto!\nTomás: ¿Altamira? ¿Altamira es colombiano?\nHernando: Sí. Pero Altamira no es bueno, Tomás.\nSimón: ¡Altamira no! ¡Altamira no!",
+  "text": "Bogotá. Domingo, temprano.\nTomás: Hola. Buenos días.\nVale: Buenos días, señor. ¿Usted es turista?\nTomás: No, no soy turista. Me llamo Tomás. Soy de Toronto.\nVale: ¿Tomás? ¿Tomás Herrera? ¿Usted es nieto de doña Rosa?\nTomás: Sí. Soy nieto de Rosa.\nVale: ¡Ay, Tomás! Mucho gusto. Yo soy Vale.\nToc, toc, toc.\nHernando: ¡Vale! ¡Buenos días! ¡Tinto, por favor!\nVale: Don Hernando, él es Tomás. Es nieto de doña Rosa.\nHernando: ¿Tomás? ¡Mucho gusto, mijo! ¡Bienvenido! ¿Cómo estás?\nTomás: Bien, gracias. ¿Y usted?\nSimón: ¡Hola! ¡Hola! ¡Soy Simón! ¿Cómo estás?\nTomás: ¿Y él?\nVale: Es Simón. Simón, hola.\nHernando: Tomás... ¿Altamira?\nTomás: Sí, es de Altamira.\nHernando: ¿De Altamira? Uy, no.\nSimón: ¡Altamira no! ¡Altamira no!",
   "gloss": [
+    {
+      "es": "Domingo, temprano",
+      "en": "Sunday, early morning. Rosa's café, La Esquina de Rosa, is closed."
+    },
+    {
+      "es": "¿Usted es turista?",
+      "en": "Are you a tourist? (polite: she thinks he's lost)"
+    },
+    {
+      "es": "¿Usted es nieto de doña Rosa?",
+      "en": "Are you Mrs Rosa's grandson? (doña: a respectful title for an older woman)"
+    },
     {
       "es": "Soy nieto de Rosa",
       "en": "I'm Rosa's grandson"
     },
     {
+      "es": "Toc, toc, toc",
+      "en": "Knock, knock, knock (on the café window)"
+    },
+    {
+      "es": "¡Tinto, por favor!",
+      "en": "Coffee, please! (tinto: a small black coffee)"
+    },
+    {
+      "es": "Don Hernando",
+      "en": "Mr Hernando (don: a respectful title for an older man). A regular at the café for forty years."
+    },
+    {
+      "es": "mijo",
+      "en": "son, lad (warm, from «mi hijo»)"
+    },
+    {
+      "es": "¡Bienvenido!",
+      "en": "Welcome!"
+    },
+    {
+      "es": "Simón",
+      "en": "Rosa's parrot. He talks. A lot."
+    },
+    {
       "es": "¿Y él?",
-      "en": "And him? (who's he?)"
+      "en": "And who's he?"
     },
     {
-      "es": "Simón es de Rosa",
-      "en": "Simón is Rosa's (he belonged to her)"
+      "es": "Tomás... ¿Altamira?",
+      "en": "Tomás... Altamira? (he has read the name on the envelope in Tomás's hand)"
     },
     {
-      "es": "¡Ay!",
-      "en": "Oh!"
+      "es": "Altamira",
+      "en": "a hotel company that is buying up the street"
+    },
+    {
+      "es": "Uy, no",
+      "en": "Oh dear, no"
     }
   ],
   "questions": [
     {
       "q": "Who does Vale think Tomás is at first?",
       "options": [
-        "A lost tourist",
+        "A tourist",
         "A new waiter",
         "Someone from Altamira",
         "Don Hernando's son"
@@ -33,9 +73,9 @@
       "answer": 0
     },
     {
-      "q": "What makes Vale say «¡Ay, Tomás! Mucho gusto»?",
+      "q": "Why does Vale suddenly say «¡Ay, Tomás! Mucho gusto»?",
       "options": [
-        "He tells her he is Rosa's grandson",
+        "She realises he is Rosa's grandson",
         "He orders a coffee",
         "He says he is from Medellín",
         "Simón says hello to him"
@@ -43,87 +83,100 @@
       "answer": 0
     },
     {
-      "q": "Who is Simón?",
+      "q": "What does Don Hernando want when he knocks?",
       "options": [
-        "The café's parrot, who was Rosa's",
-        "The café's waiter",
-        "Vale's brother",
-        "A neighbour from Bogotá"
+        "A tinto",
+        "The letter",
+        "To meet Tomás",
+        "A table"
       ],
       "answer": 0
     },
     {
-      "q": "¿Tomás es de Toronto o de Bogotá?",
+      "q": "¿De dónde es la carta de Tomás?",
       "options": [
+        "De Altamira",
         "De Toronto",
-        "De Bogotá",
-        "De Toronto y de Bogotá"
+        "De Rosa"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
-      "q": "What do Don Hernando and Simón think of Altamira?",
+      "q": "How do Don Hernando and Simón react to the name Altamira?",
       "options": [
-        "It's bad news",
-        "It's a good friend",
-        "It's the name of the café",
-        "They don't know who it is"
+        "Badly: it's bad news",
+        "Happily: it's a friend",
+        "They don't know the name",
+        "They laugh"
       ],
       "answer": 0
     }
   ],
-  "hook": "Rosa's café is closed, there's a letter from Altamira in Tomás's hand, and Don Hernando hasn't had his morning coffee. That last one is the real emergency.",
+  "hook": "Rosa's café is closed, there's a letter from Altamira in Tomás's hand, and Don Hernando still hasn't had his morning tinto. For Hernando, that last one is the real emergency.",
   "rereadQuestions": [
     {
-      "q": "¿De dónde es Vale?",
+      "q": "¿De dónde es Tomás?",
       "options": [
+        "De Toronto",
         "De Medellín",
-        "De Bogotá",
-        "De Toronto"
+        "De Altamira"
       ],
       "answer": 0
     },
     {
-      "q": "Tomás asks if Simón is a waiter. What does Vale answer?",
+      "q": "How does Vale know who Tomás is?",
       "options": [
-        "No. Simón is Simón, and he was Rosa's",
-        "Yes, the best one in Bogotá",
-        "No, he's Hernando's",
-        "Yes, but only in the morning"
+        "She knows his full name: Tomás Herrera, Rosa's grandson",
+        "He shows her a photo",
+        "Don Hernando tells her",
+        "Simón tells her"
       ],
       "answer": 0
     },
     {
-      "q": "Who is the letter Tomás is holding addressed to?",
+      "q": "Who is Simón?",
       "options": [
-        "Rosa",
-        "Vale",
-        "Tomás",
-        "Don Hernando"
+        "Rosa's parrot",
+        "The café's waiter",
+        "Vale's brother",
+        "A tourist"
       ],
       "answer": 0
     }
   ],
   "requires": [
+    "c:bien-y-tu",
+    "c:como-estas",
+    "c:gracias-de-nada",
     "c:hola-buenos-dias",
+    "c:me-llamo",
     "c:mucho-gusto",
+    "c:por-favor",
     "c:soy-de",
+    "g:estar-location-states",
+    "g:reflexive-routine",
     "g:ser-identity",
-    "p:bien-bueno",
-    "p:bien-mal-vs-bueno-malo",
     "p:don-dona-nombre",
-    "p:repeticion-claro-claro",
-    "p:senor-don-article",
-    "p:ser-profession-no-article"
+    "p:no-es-x-es-y",
+    "p:senor-don-article"
   ],
   "lexemes": [
+    "l:bien",
+    "l:bienvenido",
     "l:bueno",
-    "l:colombiano",
+    "l:cómo",
+    "l:domingo",
     "l:día",
-    "l:dónde",
+    "l:estar",
+    "l:favor",
     "l:gusto",
-    "l:mesero",
+    "l:llamarse",
+    "l:mijo",
     "l:nieto",
-    "l:ser"
+    "l:ser",
+    "l:señor",
+    "l:temprano",
+    "l:tinto",
+    "l:turista"
   ]
 }
