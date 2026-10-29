@@ -1,0 +1,90 @@
+{
+  "node": "p:dates-years",
+  "hook": {
+    "line": "Birthdays, the day the café opened, the year Hernando walked in: dates come up constantly. Spanish builds them in the opposite order to American English, and with no word for on.",
+    "es": "El café abrió en 1978.",
+    "en": "The café opened in 1978."
+  },
+  "examples": [
+    { "es": "Nací el 3 de marzo de 1990.", "en": "I was born on 3 March 1990." },
+    { "es": "Hoy es 5 de mayo.", "en": "Today is the fifth of May." },
+    { "es": "Hernando vino al café en 1979.", "en": "Hernando came to the café in 1979." },
+    { "es": "Vale llegó a Bogotá en enero.", "en": "Vale arrived in Bogotá in January." },
+    { "es": "La foto es de diciembre de 1985.", "en": "The photo is from December 1985." },
+    { "es": "¿Abrieron el primero de abril?", "en": "Did they open on the first of April?" }
+  ],
+  "rule": "Spanish dates go small to big: day, month, year, joined by *de*: *el 3 de marzo de 1990*.\n\nOn a day is just *el*: *el 4 de junio*, no word for on. For a month or a year alone, use *en*: *en enero*, *en 1979*.\n\nMonths take no capital letter: *abril*, not *Abril*.\n\nRead a year as one big number: 1990 is *mil novecientos noventa*, never nineteen ninety. The first of the month is usually *el primero*.",
+  "smallPrint": "When you write the date in numbers, it's the same order: 3/5 is the third of May, not March the fifth.",
+  "readAndPick": [
+    { "es": "El café abrió el 4 de junio.", "options": ["The café opened on 4 June.", "The café opened on 6 April."], "answer": 0 },
+    { "es": "Hoy es 2 de octubre.", "options": ["Today is 10 February.", "Today is 2 October."], "answer": 1 },
+    { "es": "Rosa nació el 12 de agosto.", "options": ["Rosa was born on 8 December.", "Rosa was born on 12 August."], "answer": 1 },
+    { "es": "Llegaron el primero de marzo.", "options": ["They arrived on 1 March.", "They arrived on 3 January."], "answer": 0 },
+    { "es": "Hoy es 11 de septiembre.", "options": ["Today is 9 November.", "Today is 11 September."], "answer": 1 },
+    { "es": "Vale llegó en enero.", "options": ["Vale arrived in January.", "Vale arrived on 1 January."], "answer": 0 },
+    { "es": "Hernando vino en 1979.", "options": ["Hernando came on 19 July.", "Hernando came in 1979."], "answer": 1 },
+    { "es": "La foto es del 6 de mayo.", "options": ["The photo is from 6 May.", "The photo is from 5 June."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Hernando vino ___ 1979.* (*en* or *el*) Hernando came in 1979.",
+      "answer": "Hernando vino en 1979.",
+      "accept": ["En 1979 Hernando vino."],
+      "why": "A year on its own takes *en*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *El café abrió ___ 4 de junio.* (*en el* or *el*) The café opened on 4 June.",
+      "answer": "El café abrió el 4 de junio.",
+      "accept": ["El café abrió el cuatro de junio."],
+      "why": "On a day is just *el*, no *en*."
+    },
+    {
+      "prompt": "Today is the fifth of May.",
+      "answer": "Hoy es 5 de mayo.",
+      "accept": ["Hoy es el 5 de mayo.", "Hoy es cinco de mayo.", "Hoy es el cinco de mayo."],
+      "why": "Day first, then *de* and the month, in lower case."
+    },
+    {
+      "prompt": "I was born on 3 March 1990. (Write the year in numbers.)",
+      "answer": "Nací el 3 de marzo de 1990.",
+      "accept": ["Nací el tres de marzo de 1990."],
+      "why": "*El*, the day, *de* the month, *de* the year."
+    },
+    {
+      "prompt": "Vale arrived in Bogotá in January.",
+      "answer": "Vale llegó a Bogotá en enero.",
+      "accept": ["En enero Vale llegó a Bogotá."],
+      "why": "A month on its own takes *en*."
+    },
+    {
+      "prompt": "Put it in Spanish order: The café opened on December 12.",
+      "answer": "El café abrió el 12 de diciembre.",
+      "accept": ["El café abrió el doce de diciembre."],
+      "why": "Spanish always says the day before the month."
+    },
+    {
+      "prompt": "Fix the capital letter: *Hoy es 8 de Abril.*",
+      "answer": "Hoy es 8 de abril.",
+      "accept": ["Hoy es ocho de abril."],
+      "why": "Months are written in lower case in Spanish."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El café abrió en el 4 de junio.",
+      "right": "El café abrió el 4 de junio.",
+      "why": "Almost. On a day is just *el*; *en* is for a month or a year on its own."
+    },
+    {
+      "wrong": "Hoy es mayo 5.",
+      "right": "Hoy es 5 de mayo.",
+      "why": "Spanish puts the day first, then *de* and the month."
+    },
+    {
+      "wrong": "Vale llegó en Enero.",
+      "right": "Vale llegó en enero.",
+      "why": "Close. Months take no capital letter in Spanish."
+    }
+  ],
+  "personal": "Write your birthday as a full date with *Nací el*, and one year that mattered to you with *en*: where you lived or what you did."
+}

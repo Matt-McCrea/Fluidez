@@ -1,0 +1,105 @@
+{
+  "node": "g:preterite-irregular-strong",
+  "hook": {
+    "line": "Tomás was late opening the café again, and everyone wants the story. Most of the verbs he needs for it change their stem in the past, but they all share one set of endings.",
+    "es": "Tuve que salir y no pude abrir a las siete.",
+    "en": "I had to go out and I couldn't open at seven."
+  },
+  "examples": [
+    { "es": "Tuve que salir.", "en": "I had to go out." },
+    { "es": "Estuvimos dos horas en el trancón.", "en": "We were stuck in traffic for two hours." },
+    { "es": "No pude dormir.", "en": "I couldn't sleep." },
+    { "es": "¿Qué te dijo?", "en": "What did he tell you?" },
+    { "es": "Vale trajo pan.", "en": "Vale brought bread." },
+    { "es": "¿Dónde estuviste anoche?", "en": "Where were you last night? (to a friend)" },
+    { "es": "Hernando vino temprano.", "en": "Hernando came early." },
+    { "es": "Mi abuela me dio una foto.", "en": "My grandmother gave me a photo." }
+  ],
+  "rule": "A group of everyday verbs gets a new stem in the past:\n*tener*: *tuv-*\n*estar*: *estuv-*\n*poder*: *pud-*\n*poner*: *pus-*\n*venir*: *vin-*\n*querer*: *quis-*\n*decir*: *dij-*\n*traer*: *traj-*\n\nThen they all take the same endings: *-e*, *-iste*, *-o*, *-imos*, *-ieron*. So *tuve*, *tuviste*, *tuvo*, *tuvimos*, *tuvieron*.\n\nTwo things look odd. There are no accent marks: it's *tuve* and *pudo*, not *tuvé* or *pudó*. And after a *j*, they lose the *i*: *dijeron*, *trajeron*.\n\n*Dar* and *ver* are short and plain: *di*, *dio*, *dimos*, *dieron*; *vi*, *vio*, *vimos*, *vieron*. Also no accents.\n\n*No pude* is more than I couldn't: it means I tried and it didn't happen.",
+  "smallPrint": "Teachers call these the strong (or irregular) preterites: the stress falls on the stem in *tuve* and *tuvo*, not on the ending.",
+  "soundTip": "Say *tuve* as TOO-beh and *tuvo* as TOO-boh, stress on the first syllable. Compare regular *compré* and *compró*, stressed at the end. That missing accent mark is a stress you don't put there.",
+  "readAndPick": [
+    { "es": "Tuvimos un problema.", "options": ["We had a problem.", "They had a problem.", "I had a problem."], "answer": 0 },
+    { "es": "No pude dormir.", "options": ["She couldn't sleep.", "I couldn't sleep.", "You couldn't sleep."], "answer": 1 },
+    { "es": "¿Qué dijiste?", "options": ["What did he say?", "What did they say?", "What did you say?"], "answer": 2 },
+    { "es": "Vale trajo pan.", "options": ["Vale brought bread.", "I brought bread for Vale.", "Vale brings bread."], "answer": 0 },
+    { "es": "Estuve en casa.", "options": ["She was at home.", "I was at home.", "We were at home."], "answer": 1 },
+    { "es": "Trajeron flores.", "options": ["We brought flowers.", "He brought flowers.", "They brought flowers."], "answer": 2 },
+    { "es": "Hernando vino temprano.", "options": ["Hernando came early.", "I came early with Hernando.", "Hernando comes early."], "answer": 0 },
+    { "es": "No pudimos abrir el café.", "options": ["They couldn't open the café.", "We couldn't open the café.", "I couldn't open the café."], "answer": 1 },
+    { "es": "¿Trajiste el pan?", "options": ["Did he bring the bread?", "Did I bring the bread?", "Did you bring the bread?"], "answer": 2 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: *Ayer ___ que trabajar.* (*tuve* or *tuvo*) I had to work yesterday.",
+      "answer": "Ayer tuve que trabajar.",
+      "accept": ["Tuve que trabajar ayer."],
+      "why": "I had is *tuve*; *tuvo* is he or she."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: *Vale ___ pan.* (*trajo* or *traió*) Vale brought bread.",
+      "answer": "Vale trajo pan.",
+      "accept": [],
+      "why": "*Traer* takes the stem *traj-* and the ending *-o*, with no accent."
+    },
+    {
+      "prompt": "Ask a friend: Where were you last night?",
+      "answer": "¿Dónde estuviste anoche?",
+      "accept": ["¿Dónde estuviste tú anoche?", "Anoche, ¿dónde estuviste?"],
+      "why": "To a friend, you were is *estuviste*."
+    },
+    {
+      "prompt": "I couldn't sleep.",
+      "answer": "No pude dormir.",
+      "accept": ["Yo no pude dormir."],
+      "why": "*Poder* becomes *pud-*, and I is *-e*: *pude*."
+    },
+    {
+      "prompt": "Hernando came early.",
+      "answer": "Hernando vino temprano.",
+      "accept": [],
+      "why": "*Venir* becomes *vin-*, and he is *-o*: *vino*."
+    },
+    {
+      "prompt": "Make it about we: *Tuve un problema.*",
+      "answer": "Tuvimos un problema.",
+      "accept": ["Nosotros tuvimos un problema."],
+      "why": "Same stem, we ending: *tuvimos*."
+    },
+    {
+      "prompt": "Make it negative: *Estuvo en el café.*",
+      "answer": "No estuvo en el café.",
+      "accept": [],
+      "why": "*No* goes right before the verb."
+    },
+    {
+      "prompt": "Ask Don Hernando, politely: Did you bring the photo?",
+      "answer": "¿Trajo usted la foto?",
+      "accept": ["¿Trajo la foto?", "¿Usted trajo la foto?"],
+      "why": "With *usted*, it's the he and she form: *trajo*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo tení que salir.",
+      "right": "Yo tuve que salir.",
+      "why": "Almost. *Tener* changes its stem in the past: *tuve*."
+    },
+    {
+      "wrong": "No pudé dormir.",
+      "right": "No pude dormir.",
+      "why": "Close. These forms have no accent mark, and the stress sits on the stem: *pude*."
+    },
+    {
+      "wrong": "Vale traió pan.",
+      "right": "Vale trajo pan.",
+      "why": "*Traer* uses the stem *traj-*: *trajo*."
+    },
+    {
+      "wrong": "Me dijieron la verdad.",
+      "right": "Me dijeron la verdad.",
+      "why": "Nearly. After the *j* the *i* drops out: *dijeron*."
+    }
+  ],
+  "personal": "Tell the story of a bad day. Write three sentences with *tuve que*, *no pude* and one more from the list (*vine*, *estuve*, *traje*, *dije*)."
+}

@@ -1,0 +1,90 @@
+{
+  "node": "p:ya-todavia-basic",
+  "hook": {
+    "line": "Hernando's favourite subject is what has changed on the block and what hasn't. Four little words carry the whole conversation: already, still, not any more and not yet.",
+    "es": "Ya no hay radio en el café.",
+    "en": "There's no radio in the café any more."
+  },
+  "examples": [
+    { "es": "Ya no vivo en Toronto.", "en": "I don't live in Toronto any more." },
+    { "es": "Hernando todavía viene al café.", "en": "Hernando still comes to the café." },
+    { "es": "¿Ya comiste?\nTodavía no.", "en": "Have you eaten yet?\nNot yet." },
+    { "es": "Vale ya llegó.", "en": "Vale has already arrived." },
+    { "es": "Todavía tengo la foto.", "en": "I still have the photo." },
+    { "es": "¿Todavía vives en Medellín?", "en": "Do you still live in Medellín? (to a friend)" }
+  ],
+  "rule": "Four time words, all about then and now:\n*ya*: already: *Vale ya llegó*.\n*todavía*: still: *Todavía tengo la foto*.\n*ya no*: not any more: *Ya no vivo en Toronto*.\n*todavía no*: not yet: *Todavía no*.\n\nThey usually sit before the verb. English wraps not ... any more around the verb; Spanish keeps *ya no* together in front of it.\n\nWith *ya*, Spanish uses the plain past where English says has or have: *¿Ya comiste?* is have you eaten yet?",
+  "smallPrint": "*Ya* and *todavía* are time adverbs. Later you'll pair *todavía no* with another past form for things that haven't happened yet.",
+  "readAndPick": [
+    { "es": "Ya no vivo en Toronto.", "options": ["I don't live in Toronto any more.", "I still live in Toronto.", "I don't live in Toronto yet."], "answer": 0 },
+    { "es": "Todavía tengo la foto.", "options": ["I already have the photo.", "I still have the photo.", "I don't have the photo any more."], "answer": 1 },
+    { "es": "Todavía no compré el pan.", "options": ["I already bought the bread.", "I don't buy bread any more.", "I haven't bought the bread yet."], "answer": 2 },
+    { "es": "Ya no hay radio en el café.", "options": ["There's still a radio in the café.", "There's no radio in the café any more."], "answer": 1 },
+    { "es": "Hernando todavía viene al café.", "options": ["Hernando still comes to the café.", "Hernando doesn't come to the café any more.", "Hernando already came to the café."], "answer": 0 },
+    { "es": "Vale ya llegó.", "options": ["Vale hasn't arrived yet.", "Vale has already arrived."], "answer": 1 },
+    { "es": "Ya no tengo carro.", "options": ["I don't have a car yet.", "I still have a car.", "I don't have a car any more."], "answer": 2 },
+    { "es": "¿Todavía vives en Medellín?", "options": ["Do you still live in Medellín?", "Do you live in Medellín now?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ vivo en Toronto.* (*Ya no* or *Todavía no*) I don't live in Toronto any more.",
+      "answer": "Ya no vivo en Toronto.",
+      "accept": [],
+      "why": "Not any more is *ya no*; *todavía no* is not yet."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *___ tengo la foto.* (*Ya* or *Todavía*) I still have the photo.",
+      "answer": "Todavía tengo la foto.",
+      "accept": [],
+      "why": "Still is *todavía*."
+    },
+    {
+      "prompt": "Ask a friend: Have you eaten yet?",
+      "answer": "¿Ya comiste?",
+      "accept": [],
+      "why": "*Ya* plus the plain past: *comiste*."
+    },
+    {
+      "prompt": "Hernando still comes to the café.",
+      "answer": "Hernando todavía viene al café.",
+      "accept": ["Todavía Hernando viene al café."],
+      "why": "*Todavía* goes before the verb."
+    },
+    {
+      "prompt": "Vale has already arrived.",
+      "answer": "Vale ya llegó.",
+      "accept": ["Ya llegó Vale."],
+      "why": "*Ya* with the plain past *llegó*; no has in Spanish."
+    },
+    {
+      "prompt": "Say it's changed: *Tengo carro.* (I don't have a car any more.)",
+      "answer": "Ya no tengo carro.",
+      "accept": [],
+      "why": "*Ya no* goes together, right before the verb."
+    },
+    {
+      "prompt": "Say it hasn't happened yet: *Ya compré el pan.*",
+      "answer": "Todavía no compré el pan.",
+      "accept": [],
+      "why": "Not yet is *todavía no*, before the verb."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Todavía no vivo en Toronto.",
+      "right": "Ya no vivo en Toronto.",
+      "why": "Almost. *Todavía no* is not yet; for not any more, Spanish says *ya no*."
+    },
+    {
+      "wrong": "Ya tengo la foto.",
+      "right": "Todavía tengo la foto.",
+      "why": "*Ya* is already; for still, use *todavía*."
+    },
+    {
+      "wrong": "No tengo carro ya.",
+      "right": "Ya no tengo carro.",
+      "why": "Keep *ya no* together in front of the verb, not split around it."
+    }
+  ],
+  "personal": "Write one thing you don't do any more (*ya no*), one thing you still do (*todavía*) and one thing you haven't done yet (*todavía no*)."
+}

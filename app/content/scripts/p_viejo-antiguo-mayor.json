@@ -1,0 +1,90 @@
+{
+  "node": "p:viejo-antiguo-mayor",
+  "hook": {
+    "line": "La Candelaria is full of old things: old houses, old radios, old regulars. English says old for all of them; Spanish picks a different word for each, and picking wrong can be rude.",
+    "es": "La Candelaria tiene casas antiguas.",
+    "en": "La Candelaria has old historic houses."
+  },
+  "examples": [
+    { "es": "Mi abuelo ya es mayor.", "en": "My grandfather is elderly now." },
+    { "es": "Hernando es un señor mayor.", "en": "Hernando is an older gentleman." },
+    { "es": "Este celular está muy viejo.", "en": "This phone is really old." },
+    { "es": "La radio de Rosa es muy antigua.", "en": "Rosa's radio is very old." },
+    { "es": "Es un edificio antiguo.", "en": "It's an old historic building." },
+    { "es": "Es mi antiguo jefe.", "en": "He's my former boss." }
+  ],
+  "rule": "Spanish chooses its old by what is old.\n\n*mayor*: people, said kindly. *Un señor mayor*, *mi abuela ya es mayor*. Never for things.\n*viejo*: things that are worn out: *un carro viejo*, *este celular está muy viejo*. For a person it can sound blunt.\n*antiguo*: things with history: *una casa antigua*, *una radio antigua*.\n\nPut *antiguo* before the noun and it means former: *mi antiguo jefe* is the boss you used to have, whatever his age.",
+  "smallPrint": "In Colombia *mi viejo* and *mi vieja* are an affectionate way to say my dad and my mum. Recognise it; don't try it on Don Hernando.",
+  "readAndPick": [
+    { "es": "Es mi antiguo jefe.", "options": ["He's my former boss.", "He's my elderly boss."], "answer": 0 },
+    { "es": "Hernando es un señor mayor.", "options": ["Hernando is a big man.", "Hernando is an older gentleman."], "answer": 1 },
+    { "es": "Es una casa antigua.", "options": ["It's my former house.", "It's an old historic house."], "answer": 1 },
+    { "es": "Mi antigua casa era pequeña.", "options": ["My former house was small.", "My old historic house was small."], "answer": 0 },
+    { "es": "Este carro está muy viejo.", "options": ["This car is very worn out.", "This car is a valuable antique."], "answer": 0 },
+    { "es": "Mi abuela ya es mayor.", "options": ["My grandmother is the eldest.", "My grandmother is elderly now."], "answer": 1 },
+    { "es": "Es un edificio antiguo.", "options": ["It's a former building.", "It's an old historic building."], "answer": 1 },
+    { "es": "Los cuadros de Rosa son antiguos.", "options": ["Rosa's pictures are old and have history.", "Rosa's pictures are worn out."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Hernando es un señor ___.* (*viejo* or *mayor*) Hernando is an older gentleman, said kindly.",
+      "answer": "Hernando es un señor mayor.",
+      "accept": [],
+      "why": "For people, *mayor* is the respectful word."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *La Candelaria tiene casas ___.* (*mayores* or *antiguas*) La Candelaria has old historic houses.",
+      "answer": "La Candelaria tiene casas antiguas.",
+      "accept": [],
+      "why": "Houses with history are *antiguas*; *mayor* is never for things."
+    },
+    {
+      "prompt": "This phone is really old. (It's worn out.)",
+      "answer": "Este celular está muy viejo.",
+      "accept": ["Este celular es muy viejo."],
+      "why": "Worn out things are *viejo*."
+    },
+    {
+      "prompt": "He's my former boss.",
+      "answer": "Es mi antiguo jefe.",
+      "accept": [],
+      "why": "*Antiguo* before the noun means former."
+    },
+    {
+      "prompt": "It's an old historic building.",
+      "answer": "Es un edificio antiguo.",
+      "accept": [],
+      "why": "A building with history is *antiguo*, after the noun."
+    },
+    {
+      "prompt": "Say it kindly: *Mi abuelo es viejo.*",
+      "answer": "Mi abuelo es mayor.",
+      "accept": ["Mi abuelo ya es mayor."],
+      "why": "*Viejo* can sound blunt about a person; *mayor* is kind."
+    },
+    {
+      "prompt": "Make it plural: *El edificio es antiguo.*",
+      "answer": "Los edificios son antiguos.",
+      "accept": [],
+      "why": "*Antiguo* agrees like any adjective: *antiguos*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La radio de Rosa es mayor.",
+      "right": "La radio de Rosa es antigua.",
+      "why": "Almost. *Mayor* is only for people; an old radio with history is *antigua*."
+    },
+    {
+      "wrong": "Hernando es viejo.",
+      "right": "Hernando es un señor mayor.",
+      "why": "*Viejo* can sound rude about a person; *mayor* says the same thing kindly."
+    },
+    {
+      "wrong": "Es mi jefe antiguo.",
+      "right": "Es mi antiguo jefe.",
+      "why": "For former, *antiguo* goes before the noun."
+    }
+  ],
+  "personal": "Describe two old things in your life: something worn out (*viejo*) and something with history (*antiguo*). Then mention an older person you know, kindly, with *mayor*."
+}

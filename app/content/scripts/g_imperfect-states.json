@@ -1,0 +1,111 @@
+{
+  "node": "g:imperfect-states",
+  "hook": {
+    "line": "Don Hernando has been coming to the café since 1979, and he loves to tell you how it was back then. To describe a place or a person in the past, Spanish has a second kind of past, made for painting the picture.",
+    "es": "En 1979 el café era pequeño y Rosa tenía treinta años.",
+    "en": "In 1979 the café was small and Rosa was thirty."
+  },
+  "examples": [
+    { "es": "El café era pequeño.", "en": "The café was small." },
+    { "es": "Rosa tenía treinta años.", "en": "Rosa was thirty." },
+    { "es": "Había una radio en la pared.", "en": "There was a radio on the wall." },
+    { "es": "No había televisión.", "en": "There was no TV." },
+    { "es": "¿Cómo era Rosa?\nEra muy brava.", "en": "What was Rosa like?\nShe had a real temper." },
+    { "es": "Estábamos cansados.", "en": "We were tired." },
+    { "es": "¿Dónde estabas?", "en": "Where were you? (to a friend)" },
+    { "es": "Hernando era taxista.", "en": "Hernando was a taxi driver." }
+  ],
+  "rule": "English has one *was* for everything. Spanish keeps a special past for describing: what something was like, where it was, how old someone was, what there was. It paints the background, with no start or finish in view.\n\n*ser*: *era*, *eras*, *era*, *éramos*, *eran*\n*estar*: *estaba*, *estabas*, *estaba*, *estábamos*, *estaban*\n*tener*: *tenía*, *tenías*, *tenía*, *teníamos*, *tenían*\n*hay* becomes *había*: there was, there were. One form for both.\n\nNotice that I and he or she are the same here: *era* can be I was or she was. Add *yo* or a name when it matters.\n\nCompare *fue*: *El sábado fue un desastre* sums up an event. *El café era pequeño* describes how it looked. For describing, use *era*.",
+  "smallPrint": "Teachers call this the imperfect (*pretérito imperfecto*). Here you meet it with the describing verbs only; the rest of it comes later.",
+  "soundTip": "The stress sits early: *Era* is EH-rah, *tenía* is teh-NEE-ah, *estaba* is es-TAH-bah. In *estábamos* and *éramos* the stress jumps back a syllable, which is why they carry an accent mark.",
+  "readAndPick": [
+    { "es": "Rosa tenía treinta años.", "options": ["Rosa is thirty.", "Rosa was thirty.", "Rosa is going to be thirty."], "answer": 1 },
+    { "es": "Había una radio en la pared.", "options": ["There was a radio on the wall.", "There is a radio on the wall."], "answer": 0 },
+    { "es": "Éramos muy jóvenes.", "options": ["They were very young.", "I was very young.", "We were very young."], "answer": 2 },
+    { "es": "El café era pequeño.", "options": ["The café is small.", "The café was small."], "answer": 1 },
+    { "es": "¿Dónde estabas?", "options": ["Where were you?", "Where are you?", "Where was she?"], "answer": 0 },
+    { "es": "Estaban en Toronto.", "options": ["We were in Toronto.", "They are in Toronto.", "They were in Toronto."], "answer": 2 },
+    { "es": "No había televisión.", "options": ["There's no TV.", "There was no TV."], "answer": 1 },
+    { "es": "¿Tenías un carro?", "options": ["Did you have a car?", "Did they have a car?", "Do you have a car?"], "answer": 0 },
+    { "es": "Teníamos una máquina de café.", "options": ["They had a coffee machine.", "We had a coffee machine.", "We have a coffee machine."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: *El café ___ pequeño.* (*es* or *era*) The café was small.",
+      "answer": "El café era pequeño.",
+      "accept": [],
+      "why": "It's a description of the past, so *era*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: *Rosa ___ treinta años.* (*fue* or *tenía*) Rosa was thirty.",
+      "answer": "Rosa tenía treinta años.",
+      "accept": [],
+      "why": "Age uses *tener*, even in the past: *tenía*."
+    },
+    {
+      "prompt": "There was a radio on the wall.",
+      "answer": "Había una radio en la pared.",
+      "accept": ["En la pared había una radio."],
+      "why": "There was is *había*."
+    },
+    {
+      "prompt": "We were tired. (a group of men, or a mixed group)",
+      "answer": "Estábamos cansados.",
+      "accept": ["Nosotros estábamos cansados."],
+      "why": "How you felt uses *estar*: *estábamos*, with the accent mark."
+    },
+    {
+      "prompt": "Hernando was a taxi driver.",
+      "answer": "Hernando era taxista.",
+      "accept": [],
+      "why": "What someone was is *era*, and no *un* before the job."
+    },
+    {
+      "prompt": "Make it past: *Hay muchos discos.*",
+      "answer": "Había muchos discos.",
+      "accept": [],
+      "why": "*Hay* becomes *había*, and it stays the same for many things."
+    },
+    {
+      "prompt": "Make it past: *Estoy en casa.*",
+      "answer": "Estaba en casa.",
+      "accept": ["Yo estaba en casa."],
+      "why": "*Estoy* becomes *estaba*."
+    },
+    {
+      "prompt": "Make it about we: *Era joven.*",
+      "answer": "Éramos jóvenes.",
+      "accept": ["Nosotros éramos jóvenes."],
+      "why": "We were is *éramos*, and the adjective goes plural too."
+    },
+    {
+      "prompt": "Ask Don Hernando, politely: How old were you in 1979?",
+      "answer": "¿Cuántos años tenía usted en 1979?",
+      "accept": ["¿Cuántos años tenía en 1979?", "En 1979, ¿cuántos años tenía usted?"],
+      "why": "With *usted*, use the he and she form: *tenía*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Rosa fue treinta años.",
+      "right": "Rosa tenía treinta años.",
+      "why": "Almost. In Spanish you have your years, so age is always *tener*: *tenía*."
+    },
+    {
+      "wrong": "Habían muchos discos.",
+      "right": "Había muchos discos.",
+      "why": "Close. *Había* stays the same for one thing or many, just like *hay*."
+    },
+    {
+      "wrong": "Estabamos cansados.",
+      "right": "Estábamos cansados.",
+      "why": "Nearly. The we form carries an accent mark: *estábamos*, *éramos*."
+    },
+    {
+      "wrong": "El café fue pequeño.",
+      "right": "El café era pequeño.",
+      "why": "*Fue* sums up an event. For what a place was like, Spanish uses *era*."
+    }
+  ],
+  "personal": "Think of a house or a street from your childhood. Write three sentences: what it was like (*era*), what there was (*había*) and how old you were (*tenía*)."
+}

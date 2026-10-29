@@ -1,0 +1,89 @@
+{
+  "node": "p:los-garcia",
+  "hook": {
+    "line": "Every block has its families, and in Bogotá people talk about them by surname: the Garcías upstairs, the Gómez family with the bakery. Spanish does it with one small word and leaves the name alone.",
+    "es": "Los García viven arriba.",
+    "en": "The Garcías live upstairs."
+  },
+  "examples": [
+    { "es": "Los García viven arriba.", "en": "The Garcías live upstairs." },
+    { "es": "Los Gómez tienen una panadería.", "en": "The Gómez family has a bakery." },
+    { "es": "Los Torres eran los dueños de la esquina.", "en": "The Torres family were the owners of the corner shop." },
+    { "es": "¿Conoces a los Martínez?", "en": "Do you know the Martínez family? (to a friend)" },
+    { "es": "La familia López es de Cali.", "en": "The López family is from Cali." }
+  ],
+  "rule": "To talk about a whole family by its surname, put *los* in front and leave the name exactly as it is: *los García*, *los Gómez*, *los Torres*. English adds an *s* (the Garcías); Spanish never touches the name.\n\nOnly *los* tells you it's more than one person, so the verb goes plural: *Los García viven arriba*.\n\nYou can also say *la familia García*. That's one family, so the verb stays singular: *La familia García vive arriba*.\n\nIn Colombia you'll hear *donde los Rodríguez*: at the Rodríguez family's place.",
+  "smallPrint": "Surnames in Spanish don't take a plural ending; the article carries the plural for them.",
+  "readAndPick": [
+    { "es": "Los García viven arriba.", "options": ["The Garcías live upstairs.", "Mr García lives upstairs."], "answer": 0 },
+    { "es": "El señor Gómez tiene una panadería.", "options": ["The Gómez family has a bakery.", "Mr Gómez has a bakery."], "answer": 1 },
+    { "es": "¿Conoces a los Martínez?", "options": ["Do you know Mr Martínez?", "Do you know the Martínez family?"], "answer": 1 },
+    { "es": "La señora López es de Cali.", "options": ["Mrs López is from Cali.", "The López family is from Cali."], "answer": 0 },
+    { "es": "Los Torres eran los dueños.", "options": ["Mr Torres was the owner.", "The Torres family were the owners."], "answer": 1 },
+    { "es": "Hernando es amigo de los Pérez.", "options": ["Hernando is a friend of the Pérez family.", "Hernando is a friend of Mr Pérez."], "answer": 0 },
+    { "es": "El señor Pérez estuvo en el café.", "options": ["The Pérez family was at the café.", "Mr Pérez was at the café."], "answer": 1 },
+    { "es": "Los Gómez son de Medellín.", "options": ["The Gómez family is from Medellín.", "Mr Gómez is from Medellín."], "answer": 0 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *___ viven arriba.* (*Los García* or *Los Garcías*) The Garcías live upstairs.",
+      "answer": "Los García viven arriba.",
+      "accept": [],
+      "why": "The surname never changes; *los* does the plural."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *La familia García ___ arriba.* (*vive* or *viven*) The García family lives upstairs.",
+      "answer": "La familia García vive arriba.",
+      "accept": [],
+      "why": "*La familia* is one family, so the verb is singular."
+    },
+    {
+      "prompt": "The Gómez family has a bakery. (Use *los*.)",
+      "answer": "Los Gómez tienen una panadería.",
+      "accept": [],
+      "why": "*Los Gómez* is they, so *tienen*."
+    },
+    {
+      "prompt": "The López family is from Cali. (Use *los*.)",
+      "answer": "Los López son de Cali.",
+      "accept": [],
+      "why": "*Los López* is plural, so *son*."
+    },
+    {
+      "prompt": "Ask a friend: Do you know the Martínez family? (Use *los*.)",
+      "answer": "¿Conoces a los Martínez?",
+      "accept": [],
+      "why": "Knowing people takes *a*, then *los* and the name as it is."
+    },
+    {
+      "prompt": "Make it the whole family: *El señor Pérez vive en Chapinero.*",
+      "answer": "Los Pérez viven en Chapinero.",
+      "accept": [],
+      "why": "*El señor* becomes *los*, the name stays, and the verb goes plural."
+    },
+    {
+      "prompt": "Say it with *los* instead: *La familia Torres tiene un carro.*",
+      "answer": "Los Torres tienen un carro.",
+      "accept": [],
+      "why": "With *los* it's they, so *tiene* becomes *tienen*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Los Garcías viven arriba.",
+      "right": "Los García viven arriba.",
+      "why": "Almost. Spanish doesn't add an *s* to the surname; *los* already says it's the family."
+    },
+    {
+      "wrong": "Los García vive arriba.",
+      "right": "Los García viven arriba.",
+      "why": "*Los García* is several people, so the verb is plural: *viven*."
+    },
+    {
+      "wrong": "La García familia vive arriba.",
+      "right": "La familia García vive arriba.",
+      "why": "The name comes after *familia*, not before it."
+    }
+  ],
+  "personal": "Write two sentences about your own family with *los* and your surname: where you live and where you're from."
+}
