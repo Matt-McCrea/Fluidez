@@ -2,28 +2,108 @@
   "node": "p:naci-en",
   "hook": {
     "line": "Right after your name, people want to know where you're from, and that soon turns into where you were born. In Spanish that's one short verb, with no was in sight.",
-    "es": "Nací en Toronto, pero mi abuela nació en Bogotá.",
-    "en": "I was born in Toronto, but my grandmother was born in Bogotá."
+    "es": "Vale nació en Medellín, pero vive en Bogotá.",
+    "en": "Vale was born in Medellín, but she lives in Bogotá."
   },
   "examples": [
-    { "es": "Nací en 1992 en Cali.", "en": "I was born in 1992 in Cali." },
-    { "es": "¿Dónde naciste?", "en": "Where were you born? (to a friend)" },
-    { "es": "Hernando nació en 1955 en Bogotá.", "en": "Hernando was born in 1955 in Bogotá." },
-    { "es": "Mi papá nació el 2 de abril de 1960.", "en": "My dad was born on 2 April 1960." },
-    { "es": "Simón nació hace cuarenta años.", "en": "Simón was born forty years ago." },
-    { "es": "¿En qué año nació usted?", "en": "What year were you born? (formal)" }
+    {
+      "es": "Nací en 1992 en Cali.",
+      "en": "I was born in 1992 in Cali."
+    },
+    {
+      "es": "¿Dónde naciste?",
+      "en": "Where were you born? (to a friend)"
+    },
+    {
+      "es": "Hernando nació en 1955 en Bogotá.",
+      "en": "Hernando was born in 1955 in Bogotá."
+    },
+    {
+      "es": "Mi papá nació el 2 de abril de 1960.",
+      "en": "My dad was born on 2 April 1960."
+    },
+    {
+      "es": "Simón nació hace cuarenta años.",
+      "en": "Simón was born forty years ago."
+    },
+    {
+      "es": "¿En qué año nació usted?",
+      "en": "What year were you born? (formal)"
+    }
   ],
   "rule": "English says I was born, two words, as if it happened to you. Spanish uses one plain past verb from *nacer*:\n*nací*: I was born\n*naciste*: you were born\n*nació*: he or she was born, or you (*usted*)\n*nacimos*, *nacieron*: we, they were born\n\nNever *fui nacido*.\n\nThen *en* plus a year or a place: *Nací en 1992, en Cali*. A full date takes *el*: *Nací el 3 de marzo*. And for the end of a life, *murió* (he or she died); learn it whole for now. Both work with *hace*: *nació hace cuarenta años*.",
   "smallPrint": "*Nacer* is a regular *-er* verb in the past, so its endings are the ones you already know from *comí* and *comió*.",
   "readAndPick": [
-    { "es": "Nací en Cali.", "options": ["I was born in Cali.", "She was born in Cali.", "You were born in Cali."], "answer": 0 },
-    { "es": "¿Dónde naciste?", "options": ["Where was he born?", "Where were you born?", "Where were they born?"], "answer": 1 },
-    { "es": "Rosa nació en 1949.", "options": ["You were born in 1949, Rosa.", "Rosa was born in 1949."], "answer": 1 },
-    { "es": "Nacimos en Bogotá.", "options": ["They were born in Bogotá.", "I was born in Bogotá.", "We were born in Bogotá."], "answer": 2 },
-    { "es": "Vale nació el 8 de mayo.", "options": ["Vale was born on 8 May.", "Vale was born on 5 August."], "answer": 0 },
-    { "es": "Nacieron en Medellín.", "options": ["We were born in Medellín.", "They were born in Medellín.", "He was born in Medellín."], "answer": 1 },
-    { "es": "¿En qué año nació usted?", "options": ["What year was I born?", "What year were you born? (to a friend)", "What year were you born? (formal)"], "answer": 2 },
-    { "es": "Mi hija nació hace dos semanas.", "options": ["My daughter was born two weeks ago.", "My daughter is two weeks old.", "My daughter will be born in two weeks."], "answer": 0 }
+    {
+      "es": "Nací en Cali.",
+      "options": [
+        "I was born in Cali.",
+        "She was born in Cali.",
+        "You were born in Cali."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Dónde naciste?",
+      "options": [
+        "Where was he born?",
+        "Where were you born?",
+        "Where were they born?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Rosa nació en 1949.",
+      "options": [
+        "You were born in 1949, Rosa.",
+        "Rosa was born in 1949."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Nacimos en Bogotá.",
+      "options": [
+        "They were born in Bogotá.",
+        "I was born in Bogotá.",
+        "We were born in Bogotá."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale nació el 8 de mayo.",
+      "options": [
+        "Vale was born on 8 May.",
+        "Vale was born on 5 August."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nacieron en Medellín.",
+      "options": [
+        "We were born in Medellín.",
+        "They were born in Medellín.",
+        "He was born in Medellín."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿En qué año nació usted?",
+      "options": [
+        "What year was I born?",
+        "What year were you born? (to a friend)",
+        "What year were you born? (formal)"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Mi hija nació hace dos semanas.",
+      "options": [
+        "My daughter was born two weeks ago.",
+        "My daughter was born two weeks late.",
+        "My daughter will be born in two weeks."
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
     {
@@ -33,39 +113,48 @@
       "why": "A year on its own takes *en*."
     },
     {
-      "prompt": "Pick and type the whole sentence: *Tomás ___ en Toronto.* (*nació* or *fue nacido*) Tomás was born in Toronto.",
-      "answer": "Tomás nació en Toronto.",
+      "prompt": "Pick and type the whole sentence: *Tomás ___ en Bogotá.* (*nació* or *fue nacido*) Tomás was born in Bogotá.",
+      "answer": "Tomás nació en Bogotá.",
       "accept": [],
       "why": "Spanish uses one verb for was born: *nació*."
     },
     {
       "prompt": "Ask a friend: Where were you born?",
       "answer": "¿Dónde naciste?",
-      "accept": ["¿Dónde naciste tú?"],
+      "accept": [
+        "¿Dónde naciste tú?"
+      ],
       "why": "To a friend, you were born is *naciste*."
     },
     {
-      "prompt": "Vale was born in Medellín.",
-      "answer": "Vale nació en Medellín.",
+      "prompt": "Hernando was born in Bogotá.",
+      "answer": "Hernando nació en Bogotá.",
       "accept": [],
-      "why": "She was born is *nació*, then *en* and the place."
+      "why": "He was born is *nació*, then *en* and the place."
     },
     {
       "prompt": "I was born on 3 March. (Write the day in numbers.)",
       "answer": "Nací el 3 de marzo.",
-      "accept": ["Nací el tres de marzo."],
+      "accept": [
+        "Nací el tres de marzo."
+      ],
       "why": "A full date takes *el*, not *en*."
     },
     {
       "prompt": "Make it about we: *Nací en Bogotá.*",
       "answer": "Nacimos en Bogotá.",
-      "accept": ["Nosotros nacimos en Bogotá."],
+      "accept": [
+        "Nosotros nacimos en Bogotá."
+      ],
       "why": "We were born is *nacimos*."
     },
     {
       "prompt": "Ask Don Hernando, politely: Where were you born?",
       "answer": "¿Dónde nació usted?",
-      "accept": ["¿Dónde nació?", "¿Usted dónde nació?"],
+      "accept": [
+        "¿Dónde nació?",
+        "¿Usted dónde nació?"
+      ],
       "why": "With *usted*, it's the he and she form: *nació*."
     }
   ],

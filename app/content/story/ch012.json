@@ -2,7 +2,7 @@
   "id": "ch012",
   "unit": "u06",
   "title": "La máquina de discos",
-  "text": "Hernando vuelve al café con un disco viejo.\nSimón: ¡Cuánto tiempo! ¡Cuánto tiempo!\nHernando: ¿Cuánto tiempo? Salí ayer a las cuatro, Simón.\nHernando pone el disco en la mesa y el tinto en el mostrador. ¡Crac!\nVale: El mostrador de Rosa es un desastre.\nHernando: Tomás, tú quieres una historia. Yo entré al café en 1979. El café era pequeño. Había cuatro mesas y una máquina de discos, allá, en la pared.\nTomás: ¿Una máquina de discos? ¿Y la televisión?\nHernando: No había televisión. Había radio, y el radio era de Rosa.\nVale: ¿Y Rosa? ¿Era simpática?\nHernando: ¿Simpática? No. Rosa tenía treinta años y era muy brava. Pero la calle tenía olor a pandeyuca. Toda la calle.\nSimón: ¡Muy brava! ¡Muy brava!\nHernando: Este es mi recuerdo favorito: Rosa, el radio y su disco de tango.\nTomás: ¿Y el chico de la foto? ¿Estaba en el café?\nHernando mira la pared. Mira el disco. Mira a Tomás.\nHernando: En 1979 él no estaba. Rosa estaba sola. Y estaba triste.\nHernando: El disco era de Rosa. Ahora es tu disco.\nTomás: Gracias, Don Hernando. Quedan veinticuatro días. Mañana reparo el mostrador.\nHernando: Rosa nunca reparó el mostrador. Nunca.",
+  "text": "Hernando vuelve al café con un disco viejo.\nSimón: ¡Cuánto tiempo! ¡Cuánto tiempo!\nHernando: ¿Cuánto tiempo? Salí ayer a las cuatro, Simón.\nHernando pone el disco en la mesa y el tinto en el mostrador. ¡Crac!\nVale: El mostrador de Rosa es un desastre.\nHernando: Tomás, tú quieres una historia. Yo entré al café en 1979. El café era pequeño. Había cuatro mesas y una máquina de discos, allá, en la pared.\nTomás: ¿Una máquina de discos? ¿Y la televisión?\nHernando: No había televisión. Había una radio, y la radio era de Rosa.\nVale: ¿Y Rosa? ¿Era simpática?\nHernando: ¿Simpática? No. Rosa tenía treinta años y era muy brava. Pero la calle tenía olor a pandeyuca. Toda la calle.\nSimón: ¡Muy brava! ¡Muy brava!\nHernando: Este es mi recuerdo favorito: Rosa, la radio y su disco de tango.\nTomás: ¿Y el chico de la foto? ¿Estaba en el café?\nHernando mira la pared. Mira el disco. Mira a Tomás.\nHernando: En 1979 él no estaba. Rosa estaba sola. Y estaba triste.\nHernando: El disco era de Rosa. Ahora es tu disco.\nTomás: Gracias, Don Hernando. Quedan veinticuatro días. Mañana reparo el mostrador.\nHernando: Rosa nunca reparó el mostrador. Nunca.",
   "gloss": [
     {
       "es": "el mostrador",
@@ -105,7 +105,7 @@
       "answer": 1
     },
     {
-      "q": "¿De quién era el radio del café?",
+      "q": "¿De quién era la radio del café?",
       "options": [
         "De Hernando",
         "De Rosa",

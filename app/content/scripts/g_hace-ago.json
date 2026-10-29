@@ -2,60 +2,167 @@
   "node": "g:hace-ago",
   "hook": {
     "line": "Hernando can name the year he first walked into Rosa's café, but most of us just count back from today: two weeks ago, forty years ago. Spanish counts back too, only it puts the ago word first.",
-    "es": "Vine a Bogotá hace tres semanas.",
-    "en": "I came to Bogotá three weeks ago."
+    "es": "Vine a Bogotá hace una semana.",
+    "en": "I came to Bogotá a week ago."
   },
   "examples": [
-    { "es": "Vale llegó hace una hora.", "en": "Vale arrived an hour ago." },
-    { "es": "Hablé con mi mamá hace cinco minutos.", "en": "I talked to my mom five minutes ago." },
-    { "es": "Hernando vino al café hace cuarenta y siete años.", "en": "Hernando came to the café forty-seven years ago." },
-    { "es": "Compramos la máquina hace diez años.", "en": "We bought the machine ten years ago." },
-    { "es": "Hace dos días vi a Mariana en la esquina.", "en": "Two days ago I saw Mariana on the corner." },
-    { "es": "¿Hace cuánto llegaste?", "en": "How long ago did you arrive? (to a friend)" },
-    { "es": "No fue hace un año, fue hace dos.", "en": "It wasn't a year ago, it was two." }
+    {
+      "es": "Vale llegó hace una hora.",
+      "en": "Vale arrived an hour ago."
+    },
+    {
+      "es": "Hablé con mi mamá hace cinco minutos.",
+      "en": "I talked to my mom five minutes ago."
+    },
+    {
+      "es": "Hernando vino al café hace cuarenta y siete años.",
+      "en": "Hernando came to the café forty-seven years ago."
+    },
+    {
+      "es": "Compramos la máquina hace diez años.",
+      "en": "We bought the machine ten years ago."
+    },
+    {
+      "es": "Hace dos días vi a Mariana en la esquina.",
+      "en": "Two days ago I saw Mariana on the corner."
+    },
+    {
+      "es": "¿Hace cuánto llegaste?",
+      "en": "How long ago did you arrive? (to a friend)"
+    },
+    {
+      "es": "No fue hace un año, fue hace dos.",
+      "en": "It wasn't a year ago, it was two."
+    }
   ],
   "rule": "English puts ago after the time: two days ago. Spanish puts *hace* in front of it: *hace dos días*.\n\n*Hace* never changes. It's *hace un minuto*, *hace una hora*, *hace cuarenta años*, whoever did the thing and however much time it was.\n\nBecause it points at a moment that is over, the verb next to it is in the past: *llegó*, *vino*, *compramos*.\n\nThe *hace* chunk can sit at the end or at the start: *Vi a Mariana hace dos días* or *Hace dos días vi a Mariana*. Same meaning.\n\nTo ask how long ago, use *¿Hace cuánto…?*: *¿Hace cuánto llegaste?*\n\nOne thing *hace* is not: before. *Antes* means earlier or before; *hace* means counted back from right now.",
   "smallPrint": "*Hace* is really the verb *hacer* (to make, to do): *hace dos años* is literally something like it makes two years. Grammar books file it under time expressions with *hacer*.",
   "readAndPick": [
-    { "es": "Vale llegó hace una hora.", "options": ["Vale arrived an hour ago.", "Vale arrived an hour late.", "Vale arrives in an hour."], "answer": 0 },
-    { "es": "Llegamos hace tres días.", "options": ["They arrived three days ago.", "We arrived three days ago.", "We're arriving in three days."], "answer": 1 },
-    { "es": "Hace un mes vi a Mariana.", "options": ["I see Mariana every month.", "I haven't seen Mariana for a month.", "I saw Mariana a month ago."], "answer": 2 },
-    { "es": "¿Hace cuánto llegaste?", "options": ["How long ago did you arrive?", "How long are you staying?", "When are you arriving?"], "answer": 0 },
-    { "es": "Compraron la radio hace veinte años.", "options": ["We bought the radio twenty years ago.", "They bought the radio twenty years ago.", "They've had the radio for twenty years."], "answer": 1 },
-    { "es": "Hernando vino hace una semana.", "options": ["Hernando comes every week.", "Hernando is coming in a week.", "Hernando came a week ago."], "answer": 2 },
-    { "es": "Cerraron la panadería hace dos años.", "options": ["They closed the bakery two years ago.", "They're closing the bakery in two years.", "We closed the bakery two years ago."], "answer": 0 },
-    { "es": "Hace diez minutos abrí la puerta.", "options": ["He opened the door ten minutes ago.", "I opened the door ten minutes ago.", "I opened the door for ten minutes."], "answer": 1 },
-    { "es": "Pusieron el letrero hace un mes.", "options": ["They're putting up the sign next month.", "I put up the sign a month ago.", "They put up the sign a month ago."], "answer": 2 }
+    {
+      "es": "Vale llegó hace una hora.",
+      "options": [
+        "Vale arrived an hour ago.",
+        "Vale arrived an hour late.",
+        "Vale arrives in an hour."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Llegamos hace tres días.",
+      "options": [
+        "They arrived three days ago.",
+        "We arrived three days ago.",
+        "We're arriving in three days."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hace un mes vi a Mariana.",
+      "options": [
+        "I'm going to see Mariana in a month.",
+        "I see Mariana every month.",
+        "I saw Mariana a month ago."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Hace cuánto llegaste?",
+      "options": [
+        "How long ago did you arrive?",
+        "How long are you staying?",
+        "When are you arriving?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Compraron la radio hace veinte años.",
+      "options": [
+        "We bought the radio twenty years ago.",
+        "They bought the radio twenty years ago.",
+        "They've had the radio for twenty years."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hernando vino hace una semana.",
+      "options": [
+        "Hernando comes every week.",
+        "Hernando is coming in a week.",
+        "Hernando came a week ago."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Cerraron la panadería hace dos años.",
+      "options": [
+        "They closed the bakery two years ago.",
+        "They're closing the bakery in two years.",
+        "We closed the bakery two years ago."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hace diez minutos abrí la puerta.",
+      "options": [
+        "He opened the door ten minutes ago.",
+        "I opened the door ten minutes ago.",
+        "I opened the door for ten minutes."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pusieron el letrero hace un mes.",
+      "options": [
+        "They're putting up the sign next month.",
+        "I put up the sign a month ago.",
+        "They put up the sign a month ago."
+      ],
+      "answer": 2
+    }
   ],
   "yourTurn": [
     {
       "prompt": "Pick and type the whole sentence: *Vale llegó ___ una hora.* (*hace* or *antes*) Vale arrived an hour ago.",
       "answer": "Vale llegó hace una hora.",
-      "accept": ["Hace una hora llegó Vale.", "Hace una hora Vale llegó."],
+      "accept": [
+        "Hace una hora llegó Vale.",
+        "Hace una hora Vale llegó."
+      ],
       "why": "Ago, counted back from now, is *hace*, and it goes before the time."
     },
     {
       "prompt": "Pick and type the whole sentence: *Hernando ___ hace dos días.* (*vino* or *viene*) Hernando came two days ago.",
       "answer": "Hernando vino hace dos días.",
-      "accept": ["Hace dos días vino Hernando.", "Hace dos días Hernando vino."],
+      "accept": [
+        "Hace dos días vino Hernando.",
+        "Hace dos días Hernando vino."
+      ],
       "why": "*Hace* points at a finished moment, so the verb is in the past: *vino*."
     },
     {
       "prompt": "I talked to my mom five minutes ago.",
       "answer": "Hablé con mi mamá hace cinco minutos.",
-      "accept": ["Hace cinco minutos hablé con mi mamá.", "Hablé con mi mamá hace 5 minutos."],
+      "accept": [
+        "Hace cinco minutos hablé con mi mamá.",
+        "Hablé con mi mamá hace 5 minutos."
+      ],
       "why": "Past verb, then *hace* and the time: *hace cinco minutos*."
     },
     {
       "prompt": "We bought the machine ten years ago.",
       "answer": "Compramos la máquina hace diez años.",
-      "accept": ["Hace diez años compramos la máquina.", "Compramos la máquina hace 10 años."],
+      "accept": [
+        "Hace diez años compramos la máquina.",
+        "Compramos la máquina hace 10 años."
+      ],
       "why": "*Hace* stays the same with years, hours or minutes."
     },
     {
       "prompt": "Ask a friend: How long ago did you arrive?",
       "answer": "¿Hace cuánto llegaste?",
-      "accept": ["¿Hace cuánto tiempo llegaste?"],
+      "accept": [
+        "¿Hace cuánto tiempo llegaste?"
+      ],
       "why": "How long ago is *¿Hace cuánto…?*, and to a friend you arrived is *llegaste*."
     },
     {
@@ -67,7 +174,11 @@
     {
       "prompt": "Make it about they: *Volví hace un año.*",
       "answer": "Volvieron hace un año.",
-      "accept": ["Ellos volvieron hace un año.", "Ellas volvieron hace un año.", "Hace un año volvieron."],
+      "accept": [
+        "Ellos volvieron hace un año.",
+        "Ellas volvieron hace un año.",
+        "Hace un año volvieron."
+      ],
       "why": "Only the verb changes; *hace un año* never does."
     }
   ],

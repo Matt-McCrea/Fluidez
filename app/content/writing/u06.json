@@ -2,7 +2,7 @@
   {
     "id": "w-u06-01",
     "unit": "u06",
-    "prompt": "Mariana, the journalist, is writing about La Candelaria and asks what your street was like in the old days. Answer her in two short sentences, using the past description form.",
+    "prompt": "Don Hernando misses the old Candelaria, and he asks what the street where you grew up was like. Answer him in two short sentences that describe it.",
     "minWords": 8,
     "maxWords": 25,
     "constraints": [
@@ -69,7 +69,7 @@
   {
     "id": "w-u06-03",
     "unit": "u06",
-    "prompt": "Tomás wants to know about Hernando's youth. Hernando is an older man you call usted. Ask him one question about what he was like when he was young, using usted.",
+    "prompt": "You're Tomás, and you want to know about Don Hernando's youth. He's older than you, so use usted. Ask him one question about what he was like when he was young.",
     "minWords": 5,
     "maxWords": 16,
     "constraints": [
@@ -108,7 +108,7 @@
   {
     "id": "w-u06-04",
     "unit": "u06",
-    "prompt": "A friend your age asks if the old jukebox still works at the café. Tell her it no longer works, in one or two short sentences.",
+    "prompt": "A friend asks if the old jukebox is still at the café. Tell her it isn't there any more, in one or two short sentences.",
     "minWords": 5,
     "maxWords": 18,
     "constraints": [
@@ -118,24 +118,24 @@
         "label": "say ya no (not any more)"
       }
     ],
-    "model": "Ya no funciona. Era de los años setenta.",
+    "model": "No, ya no está. Era de los años setenta.",
     "focus": "c:ya-no",
     "requires": [
       "c:era",
       "c:ya-no",
+      "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
-      "g:present-ar",
       "g:ser-identity",
       "l:año",
-      "l:funcionar",
+      "l:estar",
       "l:ser"
     ]
   },
   {
     "id": "w-u06-05",
     "unit": "u06",
-    "prompt": "Simón the parrot's vet asks about your grandmother's café as a child. Write two short sentences about what it had in those days, starting with the time phrase en esa época.",
+    "prompt": "Simón's vet has known the café for years, and she asks what it was like in your grandmother's time. Write two short sentences about what it had back then. Start with the time phrase en esa época.",
     "minWords": 8,
     "maxWords": 25,
     "constraints": [
@@ -150,7 +150,7 @@
         "label": "use the past description form"
       }
     ],
-    "model": "En esa época el café tenía una televisión. Mi abuela tenía treinta años.",
+    "model": "En esa época el café tenía una máquina de discos. Mi abuela tenía treinta años.",
     "focus": "c:en-esa-epoca",
     "requires": [
       "c:en-esa-epoca",
@@ -159,7 +159,8 @@
       "l:abuela",
       "l:año",
       "l:café",
-      "l:televisión",
+      "l:disco",
+      "l:máquina",
       "l:tener",
       "l:época",
       "p:possessives-basic",
@@ -225,13 +226,13 @@
         "n": 2
       }
     ],
-    "model": "Estuve en el café con Vale. Estuvimos allí dos horas.",
+    "model": "Estuve en el café con Vale. Estuvimos allá dos horas.",
     "focus": "g:preterite-irregular-strong",
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
       "g:preterite-irregular-strong",
-      "l:allí",
+      "l:allá",
       "l:café",
       "l:estar",
       "l:hora"
@@ -240,7 +241,7 @@
   {
     "id": "w-u06-08",
     "unit": "u06",
-    "prompt": "Don Hernando, an older man you call usted, asks what you said to the notary. Reply politely in two short sentences, using usted for him.",
+    "prompt": "Don Hernando asks what you said to Mr Ruiz on the phone. He's older than you, so use usted. Reply politely in two short sentences.",
     "minWords": 8,
     "maxWords": 25,
     "constraints": [
@@ -262,14 +263,14 @@
         "label": "usted, not tú"
       }
     ],
-    "model": "Dije la verdad. Don Hernando, usted también estuvo allí.",
+    "model": "Dije la verdad. Usted también estuvo aquí, don Hernando.",
     "focus": "g:preterite-irregular-strong",
     "requires": [
       "c:estuvo",
       "c:la-verdad",
       "g:estar-location-states",
       "g:preterite-irregular-strong",
-      "l:allí",
+      "l:aquí",
       "l:decir",
       "l:estar",
       "l:verdad"
@@ -284,7 +285,7 @@
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\bhace (\\w+ ){0,2}(años|meses|semanas|días)\\b",
+        "pattern": "\\bhace ([^\\s.,!?]+ ){1,4}(años?|mes(es)?|semanas?|días?)\\b",
         "label": "say how long ago with hace"
       },
       {
@@ -317,7 +318,7 @@
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\bhace \\w+ (semanas|meses|años|días)\\b",
+        "pattern": "\\bhace ([^\\s.,!?]+ ){1,4}(años?|mes(es)?|semanas?|días?)\\b",
         "label": "say how long ago with hace"
       },
       {
@@ -345,7 +346,7 @@
   {
     "id": "w-u06-11",
     "unit": "u06",
-    "prompt": "Fill in the form at the notary's office: say where and in what year you were born, then where you live now. Write two short sentences.",
+    "prompt": "You're filling in a form at the bank: say where and in what year you were born, then where you live now. Write two short sentences.",
     "minWords": 8,
     "maxWords": 25,
     "constraints": [
@@ -362,7 +363,7 @@
         "label": "include the year as numbers"
       }
     ],
-    "model": "Nací en 1990 en Toronto. Ahora vivo en Bogotá.",
+    "model": "Nací en Cali en 1990. Ahora vivo en Bogotá.",
     "focus": "p:naci-en",
     "requires": [
       "c:vivo-en",

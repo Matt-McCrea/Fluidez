@@ -2,17 +2,17 @@
   "id": "sc-u06-c",
   "unit": "u06",
   "title": "Mariana hears something",
-  "brief": "You're Tomás. It's the day after you found Rosa's notebook and the letter, and Mariana has noticed that Hernando is very quiet. Tell her what happened and how long ago Rosa wrote the letter. She's your childhood friend, so use tú.",
+  "brief": "You're Tomás. Vale has just read the first line of Rosa's letter and gone pale, and Hernando won't say a word. Mariana walks into the café and notices the silence. Tell her what happened today and how long ago Rosa wrote the letter. She's your childhood friend, so use tú.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Hola, Tomás. Hernando no quiere hablar hoy. ¿Qué pasó ayer?",
-      "npcEn": "Hi, Tomás. Hernando doesn't want to talk today. What happened yesterday?",
+      "npc": "Hola, Tomás. ¿Qué pasa aquí? Hernando no quiere hablar.",
+      "npcEn": "Hi, Tomás. What's going on here? Hernando doesn't want to talk.",
       "intent": "Tell her you found Rosa's notebook, and there was a letter in it.",
       "accept": [
         "Encontré el cuaderno de Rosa. Había una carta.",
-        "Ayer encontré el cuaderno viejo de Rosa, y había una carta.",
-        "Ayer encontré un cuaderno de Rosa. Había una carta en el cuaderno."
+        "Hoy encontré el cuaderno viejo de Rosa, y había una carta.",
+        "Hoy encontré un cuaderno de Rosa. Había una carta en el cuaderno."
       ],
       "require": [
         {
@@ -134,7 +134,6 @@
     }
   ],
   "requires": [
-    "c:ayer-anoche",
     "c:claro-listo",
     "c:gracias-de-nada",
     "c:hola-buenos-dias",
@@ -159,7 +158,6 @@
     "l:abrir",
     "l:abuela",
     "l:aquí",
-    "l:ayer",
     "l:año",
     "l:barrio",
     "l:carta",

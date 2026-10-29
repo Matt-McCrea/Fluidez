@@ -119,13 +119,12 @@
   },
   {
     "id": "u06-0006",
-    "es": "La televisión era blanca y negra.",
+    "es": "La televisión era en blanco y negro.",
     "en": "The television was black and white.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-states",
       "g:ser-identity",
@@ -659,8 +658,8 @@
   },
   {
     "id": "u06-0029",
-    "es": "El jefe del café era un hombre serio.",
-    "en": "The boss of the café was a serious man.",
+    "es": "El dueño de la panadería era un hombre serio.",
+    "en": "The owner of the bakery was a serious man.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -668,9 +667,9 @@
       "g:gender-articles",
       "g:imperfect-states",
       "g:ser-identity",
-      "l:café",
+      "l:dueño",
       "l:hombre",
-      "l:jefe",
+      "l:panadería",
       "l:ser",
       "l:serio"
     ],
@@ -708,12 +707,11 @@
   },
   {
     "id": "u06-0031",
-    "es": "En esa época el café estaba lleno casi siempre.",
-    "en": "Back then the café was full almost always.",
+    "es": "El café siempre estaba lleno de taxistas.",
+    "en": "The café was always full of taxi drivers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:en-esa-epoca",
       "g:estar-location-states",
       "g:gender-articles",
       "g:imperfect-states",
@@ -721,12 +719,10 @@
       "l:estar",
       "l:lleno",
       "l:siempre",
-      "l:época"
+      "l:taxista"
     ],
     "targets": [
-      "c:en-esa-epoca",
-      "g:imperfect-states",
-      "l:época"
+      "g:imperfect-states"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -736,7 +732,7 @@
   {
     "id": "u06-0032",
     "es": "Mi abuela estaba contenta casi siempre.",
-    "en": "My grandmother was happy almost always.",
+    "en": "My grandmother was almost always happy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1319,8 +1315,8 @@
   },
   {
     "id": "u06-0056",
-    "es": "¿Cómo era su barrio, señor Hernando?",
-    "en": "What was your neighbourhood like, Mr. Hernando? (polite)",
+    "es": "¿Cómo era su barrio, don Hernando?",
+    "en": "What was your neighbourhood like, Don Hernando? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1331,7 +1327,6 @@
       "l:barrio",
       "l:cómo",
       "l:ser",
-      "l:señor",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1798,14 +1793,15 @@
   },
   {
     "id": "u06-0077",
-    "es": "Vale hizo pan desde las cinco.",
-    "en": "Vale made bread from five o'clock.",
+    "es": "Vale hizo pan a las cinco de la mañana.",
+    "en": "Vale made bread at five in the morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ser-ir-hacer",
       "l:hacer",
+      "l:mañana",
       "l:pan"
     ],
     "targets": [],
@@ -1962,13 +1958,16 @@
   },
   {
     "id": "u06-0085",
-    "es": "Rosa dijo no.",
-    "en": "Rosa said no.",
+    "es": "Rosa dijo «no», y fue «no».",
+    "en": "Rosa said \"no\", and it was \"no\".",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:preterite-irregular-strong",
-      "l:decir"
+      "g:preterite-ser-ir-hacer",
+      "g:ser-identity",
+      "l:decir",
+      "l:ser"
     ],
     "targets": [
       "g:preterite-irregular-strong"
@@ -2238,20 +2237,21 @@
   },
   {
     "id": "u06-0099",
-    "es": "Di el dinero al dueño.",
-    "en": "I gave the money to the owner.",
+    "es": "Di toda mi plata para el café.",
+    "en": "I gave all my money for the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-irregular-strong",
+      "l:café",
       "l:dar",
-      "l:dinero",
-      "l:dueño"
+      "l:plata",
+      "p:para-inf",
+      "p:possessives-basic"
     ],
     "targets": [
-      "g:preterite-irregular-strong",
-      "l:dueño"
+      "g:preterite-irregular-strong"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -2281,16 +2281,17 @@
   },
   {
     "id": "u06-0101",
-    "es": "Dimos una clase de español.",
-    "en": "We gave a Spanish class.",
+    "es": "Dimos una clase de tango en el café.",
+    "en": "We gave a tango class at the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-irregular-strong",
+      "l:café",
       "l:clase",
       "l:dar",
-      "l:español"
+      "l:tango"
     ],
     "targets": [
       "g:preterite-irregular-strong"
@@ -3024,19 +3025,19 @@
   },
   {
     "id": "u06-0135",
-    "es": "¿Fuiste al mercado?\nSí, fui con mi tía.",
-    "en": "Did you go to the market?\nYes, I went with my aunt.",
+    "es": "¿Fuiste a Paloquemao?\nSí, y esta vez no compré mango.",
+    "en": "Did you go to Paloquemao?\nYes, and this time I didn't buy mango.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:fui",
-      "g:gender-articles",
+      "c:compre-trabaje",
+      "g:preterite-ar",
       "g:preterite-ser-ir-hacer",
+      "l:comprar",
       "l:ir",
-      "l:mercado",
-      "l:ser",
-      "l:tía",
-      "p:possessives-basic"
+      "l:mango",
+      "l:vez",
+      "p:demonstratives-basic"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -3046,17 +3047,21 @@
   },
   {
     "id": "u06-0136",
-    "es": "¿Diste el cuaderno a Tomás?\nSí, ayer di el cuaderno a Tomás.",
-    "en": "Did you give the notebook to Tomás?\nYes, I gave the notebook to Tomás yesterday.",
+    "es": "¿Qué te dio tu abuela?\nUna foto de su café.",
+    "en": "What did your grandmother give you?\nA photo of her café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
       "g:gender-articles",
       "g:preterite-irregular-strong",
-      "l:ayer",
-      "l:cuaderno",
-      "l:dar"
+      "g:questions",
+      "l:abuela",
+      "l:café",
+      "l:dar",
+      "l:foto",
+      "l:qué",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:preterite-irregular-strong"
@@ -3464,21 +3469,19 @@
   },
   {
     "id": "u06-0156",
-    "es": "Los García trajeron mango para todos.",
-    "en": "The Garcías brought mango for everyone.",
+    "es": "Los Martínez trajeron flores para Rosa.",
+    "en": "The Martínez family brought flowers for Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-irregular-strong",
-      "l:mango",
+      "l:flor",
       "l:traer",
-      "p:los-garcia",
       "p:para-inf"
     ],
     "targets": [
-      "g:preterite-irregular-strong",
-      "p:los-garcia"
+      "g:preterite-irregular-strong"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -3509,8 +3512,8 @@
   },
   {
     "id": "u06-0158",
-    "es": "Tomás llegó hace un mes.",
-    "en": "Tomás arrived a month ago.",
+    "es": "Tomás llegó hace una semana.",
+    "en": "Tomás arrived a week ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3520,7 +3523,7 @@
       "g:preterite-ar",
       "l:hacer",
       "l:llegar",
-      "l:mes"
+      "l:semana"
     ],
     "targets": [
       "g:hace-ago"
@@ -3532,8 +3535,8 @@
   },
   {
     "id": "u06-0159",
-    "es": "Mi abuela abrió el café hace cuarenta años.",
-    "en": "My grandmother opened the café forty years ago.",
+    "es": "Mi abuela abrió el café hace cuarenta y ocho años.",
+    "en": "My grandmother opened the café forty-eight years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -3804,8 +3807,8 @@
   },
   {
     "id": "u06-0170",
-    "es": "Hace cinco minutos estaba aquí.",
-    "en": "Five minutes ago he was here.",
+    "es": "Hace cinco minutos Hernando estaba aquí.",
+    "en": "Five minutes ago Hernando was here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4047,12 +4050,11 @@
   },
   {
     "id": "u06-0180",
-    "es": "Hace una década no había celulares aquí.",
-    "en": "A decade ago there were no cell phones here.",
+    "es": "Hace cuatro décadas no había celulares aquí.",
+    "en": "Four decades ago there were no cell phones here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:hace-ago",
       "g:imperfect-states",
       "g:present-er-ir",
@@ -4227,23 +4229,23 @@
   },
   {
     "id": "u06-0187",
-    "es": "Hace cuatro años tuve una carta de Rosa.",
-    "en": "Four years ago I had a letter from Rosa.",
+    "es": "Hace cuatro años Rosa me escribió una carta.",
+    "en": "Four years ago Rosa wrote me a letter.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-ago",
       "g:present-er-ir",
-      "g:preterite-irregular-strong",
+      "g:preterite-er-ir",
       "l:año",
       "l:carta",
+      "l:escribir",
       "l:hacer",
-      "l:tener"
+      "p:me-te-nos-objects"
     ],
     "targets": [
-      "g:hace-ago",
-      "g:preterite-irregular-strong"
+      "g:hace-ago"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -4252,8 +4254,8 @@
   },
   {
     "id": "u06-0188",
-    "es": "Tomás estuvo en Cali hace tres semanas.",
-    "en": "Tomás was in Cali three weeks ago.",
+    "es": "Mariana estuvo en Cali hace tres semanas.",
+    "en": "Mariana was in Cali three weeks ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4330,8 +4332,8 @@
   },
   {
     "id": "u06-0191",
-    "es": "Hace una semana Simón no estaba aquí.",
-    "en": "A week ago Simón wasn't here.",
+    "es": "Hace una semana el letrero nuevo no estaba aquí.",
+    "en": "A week ago the new sign wasn't here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4343,6 +4345,8 @@
       "l:aquí",
       "l:estar",
       "l:hacer",
+      "l:letrero",
+      "l:nuevo",
       "l:semana"
     ],
     "targets": [
@@ -4427,8 +4431,8 @@
   },
   {
     "id": "u06-0195",
-    "es": "¿Cuánto tiempo fue taxista?",
-    "en": "How long was he a taxi driver?",
+    "es": "¿Cuánto tiempo fue taxista Hernando?",
+    "en": "How long was Hernando a taxi driver?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4516,20 +4520,19 @@
   },
   {
     "id": "u06-0199",
-    "es": "¿Cuánto tiempo estuvo Tomás en el hospital?",
-    "en": "How long was Tomás in the hospital?",
+    "es": "¿Cuánto tiempo estuviste en el trancón?",
+    "en": "How long were you in the traffic jam? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:cuanto-tiempo",
-      "c:estuvo",
       "g:estar-location-states",
       "g:gender-articles",
       "g:preterite-irregular-strong",
       "l:cuánto",
       "l:estar",
-      "l:hospital",
-      "l:tiempo"
+      "l:tiempo",
+      "l:trancón"
     ],
     "targets": [
       "c:cuanto-tiempo",
@@ -4542,18 +4545,17 @@
   },
   {
     "id": "u06-0200",
-    "es": "¿Cuánto tiempo estuvieron ustedes en el hospital?",
-    "en": "How long were you all at the hospital?",
+    "es": "¿Cuánto tiempo tuvieron ustedes la panadería?",
+    "en": "How long did you all have the bakery?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:cuanto-tiempo",
-      "g:estar-location-states",
       "g:gender-articles",
       "g:preterite-irregular-strong",
       "l:cuánto",
-      "l:estar",
-      "l:hospital",
+      "l:panadería",
+      "l:tener",
       "l:tiempo"
     ],
     "targets": [
@@ -4631,8 +4633,8 @@
   },
   {
     "id": "u06-0204",
-    "es": "¡Cuánto tiempo, Vale!\nHola, Tomás, ¿cómo estás?",
-    "en": "Long time no see, Vale!\nHello, Tomás, how are you?",
+    "es": "¡Cuánto tiempo, Camila!\nHola, Vale, ¿cómo estás?",
+    "en": "Long time no see, Camila!\nHi, Vale, how are you?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4774,16 +4776,15 @@
   },
   {
     "id": "u06-0211",
-    "es": "¿Cuándo nació usted, señor Hernando?",
-    "en": "When were you born, Mr. Hernando? (polite)",
+    "es": "¿Cuándo nació usted, don Hernando?",
+    "en": "When were you born, Don Hernando? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:preterite-er-ir",
       "g:questions",
       "l:cuándo",
-      "l:nacer",
-      "l:señor"
+      "l:nacer"
     ],
     "targets": [
       "l:nacer"
@@ -4855,8 +4856,8 @@
   },
   {
     "id": "u06-0215",
-    "es": "¿Dónde naciste?\nNací en Toronto, pero mis padres son de Bogotá.",
-    "en": "Where were you born?\nI was born in Toronto, but my parents are from Bogotá.",
+    "es": "¿Dónde naciste?\nNací en Toronto, pero mi mamá es de Cali.",
+    "en": "Where were you born?\nI was born in Toronto, but my mom is from Cali.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4864,8 +4865,8 @@
       "g:questions",
       "g:ser-identity",
       "l:dónde",
+      "l:mamá",
       "l:nacer",
-      "l:padres",
       "l:ser",
       "p:possessives-basic"
     ],
@@ -4977,16 +4978,16 @@
   },
   {
     "id": "u06-0221",
-    "es": "Nací en Canadá, pero soy colombiano.",
-    "en": "I was born in Canada, but I'm Colombian.",
+    "es": "Nací en Bogotá, pero viví muchos años en Canadá.",
+    "en": "I was born in Bogotá, but I lived in Canada for many years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:preterite-er-ir",
-      "g:ser-identity",
-      "l:colombiano",
+      "l:año",
       "l:nacer",
-      "l:ser"
+      "l:vivir",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:nacer"
@@ -5251,16 +5252,17 @@
   },
   {
     "id": "u06-0234",
-    "es": "Hace rato no veo a Hernando.",
-    "en": "I haven't seen Hernando in a while.",
+    "es": "Hace rato no como arepas.",
+    "en": "I haven't had arepas in a while.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hace-rato",
-      "g:yo-irregular",
+      "g:present-er-ir",
+      "l:arepa",
+      "l:comer",
       "l:hacer",
-      "l:rato",
-      "l:ver"
+      "l:rato"
     ],
     "targets": [
       "c:hace-rato"
@@ -5460,8 +5462,8 @@
   },
   {
     "id": "u06-0243",
-    "es": "¿Cuándo llegó Tomás?\nHace un mes, más o menos.",
-    "en": "When did Tomás arrive?\nA month ago, more or less.",
+    "es": "¿Cuándo llegó Tomás?\nHace una semana, más o menos.",
+    "en": "When did Tomás arrive?\nA week ago, more or less.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5474,7 +5476,7 @@
       "l:cuándo",
       "l:hacer",
       "l:llegar",
-      "l:mes"
+      "l:semana"
     ],
     "targets": [
       "g:hace-ago"
@@ -5486,8 +5488,8 @@
   },
   {
     "id": "u06-0244",
-    "es": "¿Cuándo hablaste con tu mamá?\nHace dos días.",
-    "en": "When did you talk to your mom?\nTwo days ago.",
+    "es": "¿Cuándo hablaste con tu papá?\nHace tres días.",
+    "en": "When did you talk to your dad?\nThree days ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5499,7 +5501,7 @@
       "l:día",
       "l:hablar",
       "l:hacer",
-      "l:mamá",
+      "l:papá",
       "p:possessives-basic"
     ],
     "targets": [
@@ -6122,8 +6124,8 @@
   },
   {
     "id": "u06-0274",
-    "es": "Tomás nació en 1990.",
-    "en": "Tomás was born in 1990.",
+    "es": "Tomás nació en 1992.",
+    "en": "Tomás was born in 1992.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6140,8 +6142,8 @@
   },
   {
     "id": "u06-0275",
-    "es": "La carta es de 1978.",
-    "en": "The letter is from 1978.",
+    "es": "La carta es de 1979.",
+    "en": "The letter is from 1979.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6217,20 +6219,18 @@
   },
   {
     "id": "u06-0279",
-    "es": "En 1999 había una radio en todas las mesas.",
-    "en": "In 1999 there was a radio on all the tables.",
+    "es": "En 1999 había una televisión en la pared.",
+    "en": "In 1999 there was a television on the wall.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-states",
-      "l:mesa",
-      "l:radio"
+      "l:pared",
+      "l:televisión"
     ],
     "targets": [
-      "g:imperfect-states",
-      "l:mesa",
-      "l:radio"
+      "g:imperfect-states"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -6260,8 +6260,8 @@
   },
   {
     "id": "u06-0281",
-    "es": "En 1970 Rosa tenía veinte años.",
-    "en": "In 1970 Rosa was twenty years old.",
+    "es": "En 1969 Rosa tenía veinte años.",
+    "en": "In 1969 Rosa was twenty years old.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6347,8 +6347,8 @@
   },
   {
     "id": "u06-0285",
-    "es": "En 1990 Vale tenía dos años.",
-    "en": "In 1990 Vale was two years old.",
+    "es": "En 2008 Vale tenía diez años.",
+    "en": "In 2008 Vale was ten years old.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7234,19 +7234,19 @@
   },
   {
     "id": "u06-0326",
-    "es": "El 31 de octubre es una fiesta.",
-    "en": "October 31st is a holiday.",
+    "es": "El 20 de julio es fiesta en Colombia.",
+    "en": "July 20th is a holiday in Colombia.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:fiesta",
-      "l:octubre",
+      "l:julio",
       "l:ser"
     ],
     "targets": [
-      "l:octubre"
+      "l:julio"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -7277,16 +7277,17 @@
   },
   {
     "id": "u06-0328",
-    "es": "Tomás encontró la carta el 9 de agosto.",
-    "en": "Tomás found the letter on August 9th.",
+    "es": "Mariana terminó su artículo el 9 de agosto.",
+    "en": "Mariana finished her article on August 9th.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:agosto",
-      "l:carta",
-      "l:encontrar"
+      "l:artículo",
+      "l:terminar",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:agosto"
@@ -7342,8 +7343,8 @@
   },
   {
     "id": "u06-0331",
-    "es": "La carta es del 12 de noviembre de 1978.",
-    "en": "The letter is from November 12th, 1978.",
+    "es": "La carta es del 12 de noviembre de 1979.",
+    "en": "The letter is from November 12th, 1979.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7477,8 +7478,8 @@
   },
   {
     "id": "u06-0337",
-    "es": "Hace un año Vale no tenía un café.",
-    "en": "A year ago Vale didn't have a café.",
+    "es": "Hace un año Tomás no tenía un café.",
+    "en": "A year ago Tomás didn't have a café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7954,21 +7955,21 @@
   },
   {
     "id": "u06-0355",
-    "es": "Vale vino a Bogotá hace diez años.",
-    "en": "Vale came to Bogotá ten years ago.",
+    "es": "Vale aprendió a hacer pan hace diez años.",
+    "en": "Vale learned to make bread ten years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:hace-ago",
       "g:present-er-ir",
-      "g:preterite-irregular-strong",
+      "g:preterite-er-ir",
+      "l:aprender",
       "l:año",
       "l:hacer",
-      "l:venir"
+      "l:pan"
     ],
     "targets": [
-      "g:hace-ago",
-      "g:preterite-irregular-strong"
+      "g:hace-ago"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -8055,16 +8056,17 @@
   },
   {
     "id": "u06-0359",
-    "es": "Mariana hizo un artículo hace seis meses.",
-    "en": "Mariana did an article six months ago.",
+    "es": "Mariana escribió un artículo hace seis meses.",
+    "en": "Mariana wrote an article six months ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-ago",
       "g:present-er-ir",
-      "g:preterite-ser-ir-hacer",
+      "g:preterite-er-ir",
       "l:artículo",
+      "l:escribir",
       "l:hacer",
       "l:mes"
     ],
@@ -8214,20 +8216,17 @@
   },
   {
     "id": "u06-0365",
-    "es": "Vimos una película en el cine hace dos años.",
-    "en": "We watched a movie at the cinema two years ago.",
+    "es": "Fuimos a Cartagena hace dos años.",
+    "en": "We went to Cartagena two years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:hace-ago",
       "g:present-er-ir",
-      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
       "l:año",
-      "l:cine",
       "l:hacer",
-      "l:película",
-      "l:ver"
+      "l:ir"
     ],
     "targets": [
       "g:hace-ago"
@@ -8264,8 +8263,8 @@
   },
   {
     "id": "u06-0367",
-    "es": "Pude hablar con Rosa hace una hora.",
-    "en": "I was able to talk to Rosa an hour ago.",
+    "es": "Pude hablar con Mariana hace una hora.",
+    "en": "I was able to talk to Mariana an hour ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8408,19 +8407,20 @@
   },
   {
     "id": "u06-0373",
-    "es": "La carta llegó hace cuarenta y siete años.",
-    "en": "The letter arrived forty-seven years ago.",
+    "es": "Rosa puso la carta en el cuaderno hace cuarenta y siete años.",
+    "en": "Rosa put the letter in the notebook forty-seven years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-ago",
       "g:present-er-ir",
-      "g:preterite-ar",
+      "g:preterite-irregular-strong",
       "l:año",
       "l:carta",
+      "l:cuaderno",
       "l:hacer",
-      "l:llegar"
+      "l:poner"
     ],
     "targets": [
       "g:hace-ago"
@@ -8555,8 +8555,8 @@
   },
   {
     "id": "u06-0379",
-    "es": "Hace mucho tiempo Rosa tuvo un hermano.",
-    "en": "A long time ago Rosa had a brother.",
+    "es": "Hace mucho tiempo Rosa tuvo un perro.",
+    "en": "A long time ago Rosa had a dog.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8565,7 +8565,7 @@
       "g:present-er-ir",
       "g:preterite-irregular-strong",
       "l:hacer",
-      "l:hermano",
+      "l:perro",
       "l:tener",
       "l:tiempo",
       "p:quantifiers-basic"
@@ -8986,17 +8986,18 @@
   },
   {
     "id": "u06-0396",
-    "es": "¿Cuándo hiciste la foto?",
-    "en": "When did you take the photo? (to a friend)",
+    "es": "¿Cuándo pusiste la foto en la pared?",
+    "en": "When did you put the photo on the wall? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
+      "g:preterite-irregular-strong",
       "g:questions",
       "l:cuándo",
       "l:foto",
-      "l:hacer"
+      "l:pared",
+      "l:poner"
     ],
     "targets": [
       "l:foto"
@@ -9110,23 +9111,23 @@
   },
   {
     "id": "u06-0401",
-    "es": "¿Hace cuántos años tenía Hernando su taxi?",
-    "en": "How many years ago did Hernando have his taxi?",
+    "es": "¿Hace cuántos años compró Hernando su taxi?",
+    "en": "How many years ago did Hernando buy his taxi?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-states",
       "g:present-er-ir",
+      "g:preterite-ar",
       "g:questions",
       "l:año",
+      "l:comprar",
       "l:cuánto",
       "l:hacer",
       "l:taxi",
-      "l:tener",
       "p:possessives-basic"
     ],
     "targets": [
-      "g:imperfect-states"
+      "g:present-er-ir"
     ],
     "kind": "question",
     "unit": "u06",
@@ -9469,8 +9470,8 @@
   },
   {
     "id": "u06-0415",
-    "es": "Hace cuatro días vi a Hernando en la esquina.",
-    "en": "Four days ago I saw Hernando on the corner.",
+    "es": "Hace cuatro días vi el letrero viejo en la calle.",
+    "en": "Four days ago I saw the old sign in the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9478,14 +9479,15 @@
       "g:hace-ago",
       "g:present-er-ir",
       "g:preterite-er-ir",
+      "l:calle",
       "l:día",
-      "l:esquina",
       "l:hacer",
-      "l:ver"
+      "l:letrero",
+      "l:ver",
+      "l:viejo"
     ],
     "targets": [
-      "g:hace-ago",
-      "l:esquina"
+      "g:hace-ago"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -9541,23 +9543,19 @@
   },
   {
     "id": "u06-0418",
-    "es": "Los García eran muy amables.",
-    "en": "The Garcías were very kind.",
+    "es": "Los Gómez eran clientes de Rosa.",
+    "en": "The Gómez family were Rosa's customers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-states",
       "g:ser-identity",
-      "l:amable",
-      "l:ser",
-      "p:los-garcia",
-      "p:quantifiers-basic"
+      "l:cliente",
+      "l:ser"
     ],
     "targets": [
-      "g:imperfect-states",
-      "p:los-garcia"
+      "g:imperfect-states"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -9566,21 +9564,18 @@
   },
   {
     "id": "u06-0419",
-    "es": "Los García son nuestros amigos.",
-    "en": "The Garcías are our friends.",
+    "es": "Somos amigos de los Restrepo.",
+    "en": "We're friends of the Restrepo family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:possessives",
       "g:ser-identity",
       "l:amigo",
-      "l:ser",
-      "p:los-garcia"
+      "l:ser"
     ],
     "targets": [
-      "g:possessives",
-      "p:los-garcia"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -9658,8 +9653,8 @@
   },
   {
     "id": "u06-0423",
-    "es": "Los García fueron al cine el sábado.",
-    "en": "The Garcías went to the cinema on Saturday.",
+    "es": "Los Pérez fueron al cine el sábado.",
+    "en": "The Pérez family went to the cinema on Saturday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9667,11 +9662,10 @@
       "g:preterite-ser-ir-hacer",
       "l:cine",
       "l:ir",
-      "l:sábado",
-      "p:los-garcia"
+      "l:sábado"
     ],
     "targets": [
-      "p:los-garcia"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -9680,20 +9674,19 @@
   },
   {
     "id": "u06-0424",
-    "es": "Los García fueron a mi fiesta.",
-    "en": "The Garcías went to my party.",
+    "es": "Los Restrepo me dieron una foto de Rosa.",
+    "en": "The Restrepo family gave me a photo of Rosa.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "l:fiesta",
-      "l:ir",
-      "p:los-garcia",
-      "p:possessives-basic"
+      "g:preterite-irregular-strong",
+      "l:dar",
+      "l:foto",
+      "p:me-te-nos-objects"
     ],
     "targets": [
-      "p:los-garcia"
+      "g:preterite-irregular-strong"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -9748,19 +9741,18 @@
   },
   {
     "id": "u06-0427",
-    "es": "Los García dijeron no.",
-    "en": "The Garcías said no.",
+    "es": "Los Torres no dijeron nada.",
+    "en": "The Torres family said nothing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:negation-words",
       "g:preterite-irregular-strong",
-      "l:decir",
-      "p:los-garcia"
+      "l:decir"
     ],
     "targets": [
-      "g:preterite-irregular-strong",
-      "p:los-garcia"
+      "g:preterite-irregular-strong"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -9816,19 +9808,18 @@
   },
   {
     "id": "u06-0430",
-    "es": "Los García nacieron en Cali.",
-    "en": "The Garcías were born in Cali.",
+    "es": "Los dos hijos de los Pérez nacieron en Cali.",
+    "en": "The Pérez family's two sons were born in Cali.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
-      "l:nacer",
-      "p:los-garcia"
+      "l:hijos",
+      "l:nacer"
     ],
     "targets": [
-      "l:nacer",
-      "p:los-garcia"
+      "l:nacer"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -9837,8 +9828,8 @@
   },
   {
     "id": "u06-0431",
-    "es": "Los García estuvieron en el café anoche.",
-    "en": "The Garcías were at the café last night.",
+    "es": "Anoche estuve en la casa de los Rodríguez.",
+    "en": "Last night I was at the Rodríguez family's house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9847,13 +9838,11 @@
       "g:gender-articles",
       "g:preterite-irregular-strong",
       "l:anoche",
-      "l:café",
-      "l:estar",
-      "p:los-garcia"
+      "l:casa",
+      "l:estar"
     ],
     "targets": [
-      "g:preterite-irregular-strong",
-      "p:los-garcia"
+      "g:preterite-irregular-strong"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -9914,21 +9903,20 @@
   },
   {
     "id": "u06-0434",
-    "es": "Los García trajeron pan para todos.",
-    "en": "The Garcías brought bread for everyone.",
+    "es": "En diciembre, Rosa hizo natilla para los Gómez.",
+    "en": "In December, Rosa made natilla for the Gómez family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-irregular-strong",
-      "l:pan",
-      "l:traer",
-      "p:los-garcia",
+      "g:preterite-ser-ir-hacer",
+      "l:diciembre",
+      "l:hacer",
+      "l:natilla",
       "p:para-inf"
     ],
     "targets": [
-      "g:preterite-irregular-strong",
-      "p:los-garcia"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -9937,20 +9925,19 @@
   },
   {
     "id": "u06-0435",
-    "es": "Los García hablan inglés y español.",
-    "en": "The Garcías speak English and Spanish.",
+    "es": "Los Herrera de Toronto hablan inglés en casa.",
+    "en": "The Herreras in Toronto speak English at home.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "l:español",
+      "l:casa",
       "l:hablar",
-      "l:inglés",
-      "p:los-garcia"
+      "l:inglés"
     ],
     "targets": [
-      "p:los-garcia"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -10027,21 +10014,19 @@
   },
   {
     "id": "u06-0439",
-    "es": "Los García volvieron a Bogotá en enero.",
-    "en": "The Garcías came back to Bogotá in January.",
+    "es": "Los Castro volvieron a Bogotá en enero.",
+    "en": "The Castro family came back to Bogotá in January.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:enero",
-      "l:volver",
-      "p:los-garcia"
+      "l:volver"
     ],
     "targets": [
       "l:enero",
-      "l:volver",
-      "p:los-garcia"
+      "l:volver"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -10190,7 +10175,7 @@
   {
     "id": "u06-0447",
     "es": "Los Cifuentes tienen una casa muy grande.",
-    "en": "The Cifuentes have a very big house.",
+    "en": "The Cifuentes family have a very big house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10211,7 +10196,7 @@
   {
     "id": "u06-0448",
     "es": "Los Cifuentes son amigos de mi familia.",
-    "en": "The Cifuentes are friends of my family.",
+    "en": "The Cifuentes family are friends of my family.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10231,7 +10216,7 @@
   {
     "id": "u06-0449",
     "es": "Los Rodríguez viven en la misma cuadra.",
-    "en": "The Rodríguezes live on the same block.",
+    "en": "The Rodríguez family live on the same block.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10251,7 +10236,7 @@
   {
     "id": "u06-0450",
     "es": "Los Rodríguez tenían un perro negro.",
-    "en": "The Rodríguezes had a black dog.",
+    "en": "The Rodríguez family had a black dog.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10272,7 +10257,7 @@
   {
     "id": "u06-0451",
     "es": "Los Martínez estuvieron en la fiesta.",
-    "en": "The Martínezes were at the party.",
+    "en": "The Martínez family were at the party.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10292,15 +10277,16 @@
   },
   {
     "id": "u06-0452",
-    "es": "Los Gómez tienen tres hijas.",
-    "en": "The Gómezes have three daughters.",
+    "es": "Los Gómez tienen tres hijos y un perro.",
+    "en": "The Gómez family have three children and a dog.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tienes",
       "g:gender-articles",
       "g:stem-boot",
-      "l:hija",
+      "l:hijos",
+      "l:perro",
       "l:tener"
     ],
     "targets": [],
@@ -10312,7 +10298,7 @@
   {
     "id": "u06-0453",
     "es": "Los López son los dueños de la cafetería.",
-    "en": "The Lópezes are the owners of the coffee shop.",
+    "en": "The López family are the owners of the coffee shop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10334,7 +10320,7 @@
   {
     "id": "u06-0454",
     "es": "Los Torres fueron en carro.",
-    "en": "The Torreses went by car.",
+    "en": "The Torres family went by car.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10375,7 +10361,7 @@
   {
     "id": "u06-0456",
     "es": "Vamos a la casa de los Rodríguez mañana.",
-    "en": "We're going to the Rodríguezes' house tomorrow.",
+    "en": "We're going to the Rodríguez family's house tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10740,7 +10726,7 @@
   {
     "id": "u06-0472",
     "es": "¿Los Rodríguez son de Bogotá?\nNo, son de Cali.",
-    "en": "Are the Rodríguezes from Bogotá?\nNo, they're from Cali.",
+    "en": "Are the Rodríguez family from Bogotá?\nNo, they're from Cali.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10868,7 +10854,7 @@
   {
     "id": "u06-0478",
     "es": "¿Quiénes eran los dueños, los García o los López?",
-    "en": "Who were the owners, the Garcías or the Lópezes?",
+    "en": "Who were the owners, the Garcías or the López family?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10939,7 +10925,7 @@
   {
     "id": "u06-0481",
     "es": "¿Los Gómez ya llegaron?",
-    "en": "Have the Gómezes arrived yet?",
+    "en": "Have the Gómez family arrived yet?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10981,21 +10967,21 @@
   },
   {
     "id": "u06-0483",
-    "es": "Los García son personas mayores.",
-    "en": "The Garcías are older people.",
+    "es": "Los abuelos de Mariana son personas mayores.",
+    "en": "Mariana's grandparents are older people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
+      "l:abuelos",
       "l:mayor",
       "l:persona",
-      "l:ser",
-      "p:los-garcia"
+      "l:ser"
     ],
     "targets": [
-      "p:los-garcia"
+      "g:adjective-agreement"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -11028,7 +11014,7 @@
   {
     "id": "u06-0485",
     "es": "Los Cifuentes ya no tienen carro.",
-    "en": "The Cifuentes don't have a car any more.",
+    "en": "The Cifuentes family don't have a car any more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11136,7 +11122,7 @@
   },
   {
     "id": "u06-0490",
-    "es": "Ya no hay trancón a esta hora.",
+    "es": "A esta hora ya no hay trancón.",
     "en": "There's no traffic jam at this hour any more.",
     "accept": [],
     "acceptEn": [],
@@ -11282,13 +11268,15 @@
   },
   {
     "id": "u06-0497",
-    "es": "Ya no vendemos jugo de mango.",
-    "en": "We don't sell mango juice any more.",
+    "es": "En el café ya no vendemos jugo de mango.",
+    "en": "At the café we don't sell mango juice any more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ya-no",
+      "g:gender-articles",
       "g:present-er-ir",
+      "l:café",
       "l:jugo",
       "l:mango",
       "l:vender"
@@ -11324,14 +11312,17 @@
   },
   {
     "id": "u06-0499",
-    "es": "Ya no hablo con Mariana.",
-    "en": "I don't talk to Mariana any more.",
+    "es": "Ya no hablo con mi antiguo jefe.",
+    "en": "I don't talk to my former boss any more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ya-no",
       "g:present-ar",
-      "l:hablar"
+      "l:antiguo",
+      "l:hablar",
+      "l:jefe",
+      "p:possessives-basic"
     ],
     "targets": [
       "c:ya-no"
@@ -11364,8 +11355,8 @@
   },
   {
     "id": "u06-0501",
-    "es": "Ya no escucho la radio.",
-    "en": "I don't listen to the radio any more.",
+    "es": "Mi papá ya no escucha la radio.",
+    "en": "My dad doesn't listen to the radio any more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11373,7 +11364,9 @@
       "g:gender-articles",
       "g:present-ar",
       "l:escuchar",
-      "l:radio"
+      "l:papá",
+      "l:radio",
+      "p:possessives-basic"
     ],
     "targets": [
       "c:ya-no",
@@ -11408,7 +11401,7 @@
   },
   {
     "id": "u06-0503",
-    "es": "Ya no abrimos los lunes.",
+    "es": "Los lunes ya no abrimos.",
     "en": "We don't open on Mondays any more.",
     "accept": [],
     "acceptEn": [],
@@ -11580,8 +11573,8 @@
   },
   {
     "id": "u06-0511",
-    "es": "Ya no estaba contento.",
-    "en": "He wasn't happy any more.",
+    "es": "Hernando ya no estaba contento.",
+    "en": "Hernando wasn't happy any more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11776,15 +11769,16 @@
   },
   {
     "id": "u06-0520",
-    "es": "El café ya no existe.",
-    "en": "The café doesn't exist any more.",
+    "es": "El cine del barrio ya no existe.",
+    "en": "The neighbourhood cinema doesn't exist any more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ya-no",
       "g:gender-articles",
       "g:present-er-ir",
-      "l:café",
+      "l:barrio",
+      "l:cine",
       "l:existir"
     ],
     "targets": [
@@ -12033,14 +12027,16 @@
   },
   {
     "id": "u06-0532",
-    "es": "¿Rosa todavía trabaja?\nNo, ya no.",
-    "en": "Does Rosa still work?\nNo, not any more.",
+    "es": "¿Tu abuelo todavía trabaja?\nNo, ya no.",
+    "en": "Does your grandfather still work?\nNo, not any more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ya-no",
       "g:present-ar",
+      "l:abuelo",
       "l:trabajar",
+      "p:possessives-basic",
       "p:ya-todavia-basic"
     ],
     "targets": [
@@ -12076,8 +12072,8 @@
   },
   {
     "id": "u06-0534",
-    "es": "Todavía trabajamos aquí.",
-    "en": "We still work here.",
+    "es": "Vale y yo todavía trabajamos aquí.",
+    "en": "Vale and I still work here.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12197,14 +12193,13 @@
   },
   {
     "id": "u06-0540",
-    "es": "Hernando todavía viene los jueves.",
-    "en": "Hernando still comes on Thursdays.",
+    "es": "Hernando todavía viene a las siete.",
+    "en": "Hernando still comes at seven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:jueves",
       "l:venir",
       "p:ya-todavia-basic"
     ],
@@ -13126,20 +13121,21 @@
   },
   {
     "id": "u06-0589",
-    "es": "Los García son mayores.",
-    "en": "The Garcías are elderly.",
+    "es": "Los dueños del edificio ya son mayores.",
+    "en": "The owners of the building are elderly now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
       "g:ser-identity",
+      "l:dueño",
+      "l:edificio",
       "l:mayor",
-      "l:ser",
-      "p:los-garcia"
+      "l:ser"
     ],
     "targets": [
-      "p:los-garcia"
+      "g:adjective-agreement"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -13731,20 +13727,19 @@
   },
   {
     "id": "u06-0616",
-    "es": "Hernando es el antiguo dueño.",
-    "en": "Hernando is the former owner.",
+    "es": "Hernando es un antiguo taxista.",
+    "en": "Hernando is a former taxi driver.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:ser-identity",
       "l:antiguo",
-      "l:dueño",
-      "l:ser"
+      "l:ser",
+      "l:taxista"
     ],
     "targets": [
-      "l:antiguo",
-      "l:dueño"
+      "l:antiguo"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -13802,7 +13797,7 @@
   {
     "id": "u06-0619",
     "es": "Mi antiguo trabajo era muy aburrido.",
-    "en": "My old job was very boring.",
+    "en": "My former job was very boring.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14152,8 +14147,8 @@
   },
   {
     "id": "u06-0634",
-    "es": "Nuestro dueño es un señor muy serio.",
-    "en": "Our owner is a very serious man.",
+    "es": "El dueño de nuestro edificio es un señor muy serio.",
+    "en": "The owner of our building is a very serious man.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14161,6 +14156,7 @@
       "g:possessives",
       "g:ser-identity",
       "l:dueño",
+      "l:edificio",
       "l:ser",
       "l:serio",
       "l:señor",
@@ -14201,18 +14197,16 @@
   },
   {
     "id": "u06-0636",
-    "es": "Nuestros clientes son muy simpáticos.",
-    "en": "Our customers are very friendly.",
+    "es": "Hernando es nuestro cliente más antiguo.",
+    "en": "Hernando is our oldest customer.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:possessives",
       "g:ser-identity",
+      "l:antiguo",
       "l:cliente",
-      "l:ser",
-      "l:simpático",
-      "p:quantifiers-basic"
+      "l:ser"
     ],
     "targets": [
       "g:possessives"
@@ -14224,17 +14218,16 @@
   },
   {
     "id": "u06-0637",
-    "es": "Nuestra calle tiene muchas flores.",
-    "en": "Our street has lots of flowers.",
+    "es": "En nuestra calle hay muchas flores.",
+    "en": "There are lots of flowers on our street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
+      "c:hay",
+      "g:hay-vs-esta",
       "g:possessives",
-      "g:stem-boot",
       "l:calle",
       "l:flor",
-      "l:tener",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -14270,17 +14263,17 @@
   },
   {
     "id": "u06-0639",
-    "es": "Nuestra mesa está en la esquina.",
-    "en": "Our table is in the corner.",
+    "es": "La mesa de la esquina es nuestra.",
+    "en": "The table in the corner is ours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
       "g:gender-articles",
       "g:possessives",
+      "g:ser-identity",
       "l:esquina",
-      "l:estar",
-      "l:mesa"
+      "l:mesa",
+      "l:ser"
     ],
     "targets": [
       "g:possessives",
@@ -14294,24 +14287,21 @@
   },
   {
     "id": "u06-0640",
-    "es": "Nuestros discos estaban en la vitrina.",
-    "en": "Our records were in the display case.",
+    "es": "Nuestros discos eran de Rosa.",
+    "en": "Our records were Rosa's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:estar-location-states",
-      "g:gender-articles",
       "g:imperfect-states",
       "g:possessives",
+      "g:ser-identity",
       "l:disco",
-      "l:estar",
-      "l:vitrina"
+      "l:ser"
     ],
     "targets": [
       "g:imperfect-states",
       "g:possessives",
-      "l:disco",
-      "l:vitrina"
+      "l:disco"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -14367,13 +14357,15 @@
   },
   {
     "id": "u06-0643",
-    "es": "Nuestro tío vino de Medellín.",
-    "en": "Our uncle came from Medellín.",
+    "es": "Ayer vino nuestro tío de Medellín.",
+    "en": "Our uncle came from Medellín yesterday.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:ayer-anoche",
       "g:possessives",
       "g:preterite-irregular-strong",
+      "l:ayer",
       "l:tío",
       "l:venir"
     ],
@@ -14439,15 +14431,18 @@
   },
   {
     "id": "u06-0646",
-    "es": "Nuestra clase es a las ocho.",
-    "en": "Our class is at eight.",
+    "es": "¿A qué hora es nuestra clase?",
+    "en": "What time is our class?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "c:a-que-hora",
+      "c:que-hora-es",
       "g:possessives",
       "g:ser-identity",
       "l:clase",
+      "l:hora",
+      "l:qué",
       "l:ser"
     ],
     "targets": [
@@ -14460,15 +14455,19 @@
   },
   {
     "id": "u06-0647",
-    "es": "Nuestra receta es de Rosa.",
-    "en": "Our recipe is Rosa's.",
+    "es": "Esta receta era de Rosa. Ahora es nuestra.",
+    "en": "This recipe was Rosa's. Now it's ours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
+      "g:imperfect-states",
       "g:possessives",
       "g:ser-identity",
+      "l:ahora",
       "l:receta",
-      "l:ser"
+      "l:ser",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:possessives"
@@ -14550,14 +14549,16 @@
   },
   {
     "id": "u06-0651",
-    "es": "Nuestra foto favorita es de 1980.",
-    "en": "Our favourite photo is from 1980.",
+    "es": "La foto favorita de nuestra familia es de 1980.",
+    "en": "Our family's favourite photo is from 1980.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
+      "g:gender-articles",
       "g:possessives",
       "g:ser-identity",
+      "l:familia",
       "l:favorito",
       "l:foto",
       "l:ser"
@@ -14694,7 +14695,7 @@
   {
     "id": "u06-0657",
     "es": "Es un recuerdo de Toronto.",
-    "en": "It's a memory of Toronto.",
+    "en": "It's a souvenir from Toronto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14915,18 +14916,16 @@
   },
   {
     "id": "u06-0667",
-    "es": "¿Acordamos las seis?\nSí, a las seis está bien.",
-    "en": "Shall we agree on six?\nYes, six is fine.",
+    "es": "¿Qué acordaron con Altamira?\nNada. No acordamos nada.",
+    "en": "What did you all agree with Altamira?\nNothing. We didn't agree on anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "g:estar-location-states",
-      "g:gender-articles",
-      "g:present-ar",
+      "g:negation-words",
+      "g:preterite-ar",
+      "g:questions",
       "l:acordar",
-      "l:bien",
-      "l:estar"
+      "l:qué"
     ],
     "targets": [
       "l:acordar"
@@ -15958,14 +15957,18 @@
   },
   {
     "id": "u06-0713",
-    "es": "En esa época no había celulares.",
-    "en": "Back then there were no cell phones.",
+    "es": "En esa época Bogotá era más pequeña.",
+    "en": "Back then Bogotá was smaller.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:en-esa-epoca",
+      "c:era",
+      "g:adjective-agreement",
       "g:imperfect-states",
-      "l:celular",
+      "g:ser-identity",
+      "l:pequeño",
+      "l:ser",
       "l:época"
     ],
     "targets": [
@@ -16154,22 +16157,22 @@
   },
   {
     "id": "u06-0721",
-    "es": "En esa época había un parque en la esquina.",
-    "en": "Back then there was a park on the corner.",
+    "es": "En esa época Hernando tenía el pelo negro.",
+    "en": "Back then Hernando had black hair.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:en-esa-epoca",
       "g:gender-articles",
       "g:imperfect-states",
-      "l:esquina",
-      "l:parque",
+      "l:negro",
+      "l:pelo",
+      "l:tener",
       "l:época"
     ],
     "targets": [
       "c:en-esa-epoca",
       "g:imperfect-states",
-      "l:esquina",
       "l:época"
     ],
     "kind": "statement",
@@ -16363,19 +16366,20 @@
   },
   {
     "id": "u06-0730",
-    "es": "Tomás sacó un ladrillo de la pared.",
-    "en": "Tomás took a brick out of the wall.",
+    "es": "Tomás sacó un ladrillo y encontró un cuaderno.",
+    "en": "Tomás took out a brick and found a notebook.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
+      "l:cuaderno",
+      "l:encontrar",
       "l:ladrillo",
-      "l:pared",
       "l:sacar"
     ],
     "targets": [
-      "l:pared"
+      "g:gender-articles"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -16983,14 +16987,14 @@
   },
   {
     "id": "u06-0757",
-    "es": "Hernando vuelve todos los jueves.",
-    "en": "Hernando comes back every Thursday.",
+    "es": "Vale vuelve a Medellín todos los diciembres.",
+    "en": "Vale goes back to Medellín every December.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:jueves",
+      "l:diciembre",
       "l:volver"
     ],
     "targets": [
@@ -17156,18 +17160,18 @@
   },
   {
     "id": "u06-0765",
-    "es": "Febrero fue mi mes favorito en Toronto.",
-    "en": "February was my favourite month in Toronto.",
+    "es": "Febrero en Toronto era muy frío.",
+    "en": "February in Toronto was very cold.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-ser-ir-hacer",
+      "c:era",
+      "g:imperfect-states",
       "g:ser-identity",
-      "l:favorito",
       "l:febrero",
-      "l:mes",
+      "l:frío",
       "l:ser",
-      "p:possessives-basic"
+      "p:quantifiers-basic"
     ],
     "targets": [
       "l:febrero"
@@ -17220,18 +17224,15 @@
   },
   {
     "id": "u06-0768",
-    "es": "Abril fue el mes del frío.",
-    "en": "April was the cold month.",
+    "es": "En abril llegaron los Gómez.",
+    "en": "In April the Gómez family arrived.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
+      "g:preterite-ar",
       "l:abril",
-      "l:frío",
-      "l:mes",
-      "l:ser"
+      "l:llegar"
     ],
     "targets": [
       "l:abril"
@@ -17288,17 +17289,16 @@
   },
   {
     "id": "u06-0771",
-    "es": "En mayo Mariana vino a Bogotá.",
-    "en": "In May Mariana came to Bogotá.",
+    "es": "En mayo Mariana fue a Cali.",
+    "en": "In May Mariana went to Cali.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-irregular-strong",
-      "l:mayo",
-      "l:venir"
+      "g:preterite-ser-ir-hacer",
+      "l:ir",
+      "l:mayo"
     ],
     "targets": [
-      "g:preterite-irregular-strong",
       "l:mayo"
     ],
     "kind": "statement",
@@ -17329,16 +17329,18 @@
   },
   {
     "id": "u06-0773",
-    "es": "Junio es el mes de Hernando.",
-    "en": "June is Hernando's month.",
+    "es": "En junio Vale tiene dos semanas libres.",
+    "en": "In June Vale has two weeks off.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
-      "g:ser-identity",
+      "c:tienes",
+      "g:adjective-agreement",
+      "g:stem-boot",
       "l:junio",
-      "l:mes",
-      "l:ser"
+      "l:libre",
+      "l:semana",
+      "l:tener"
     ],
     "targets": [
       "l:junio"
@@ -17371,8 +17373,8 @@
   },
   {
     "id": "u06-0775",
-    "es": "Vale nació en junio de 1997.",
-    "en": "Vale was born in June 1997.",
+    "es": "Vale nació en junio de 1998.",
+    "en": "Vale was born in June 1998.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17413,18 +17415,16 @@
   },
   {
     "id": "u06-0777",
-    "es": "Julio fue un mes difícil.",
-    "en": "July was a hard month.",
+    "es": "Hernando nació un domingo de julio.",
+    "en": "Hernando was born on a Sunday in July.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
-      "l:difícil",
+      "g:preterite-er-ir",
+      "l:domingo",
       "l:julio",
-      "l:mes",
-      "l:ser"
+      "l:nacer"
     ],
     "targets": [
       "l:julio"
@@ -17458,14 +17458,16 @@
   },
   {
     "id": "u06-0779",
-    "es": "Tomás vino a Bogotá en julio.",
-    "en": "Tomás came to Bogotá in July.",
+    "es": "Mi primo vino a Bogotá en julio.",
+    "en": "My cousin came to Bogotá in July.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:preterite-irregular-strong",
       "l:julio",
-      "l:venir"
+      "l:primo",
+      "l:venir",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:preterite-irregular-strong",
@@ -17543,19 +17545,18 @@
   },
   {
     "id": "u06-0783",
-    "es": "Septiembre fue un mes tranquilo.",
-    "en": "September was a quiet month.",
+    "es": "En septiembre los días son más cortos en Toronto.",
+    "en": "In September the days are shorter in Toronto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tranquilo",
+      "g:adjective-agreement",
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
       "g:ser-identity",
-      "l:mes",
+      "l:corto",
+      "l:día",
       "l:septiembre",
-      "l:ser",
-      "l:tranquilo"
+      "l:ser"
     ],
     "targets": [
       "l:septiembre"
@@ -17588,8 +17589,8 @@
   },
   {
     "id": "u06-0785",
-    "es": "Tomás volvió a Bogotá en septiembre.",
-    "en": "Tomás went back to Bogotá in September.",
+    "es": "Mariana volvió a Bogotá en septiembre.",
+    "en": "Mariana came back to Bogotá in September.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -17650,16 +17651,18 @@
   },
   {
     "id": "u06-0788",
-    "es": "En octubre Tomás encontró la carta.",
-    "en": "In October Tomás found the letter.",
+    "es": "En octubre Vale encontró una receta nueva.",
+    "en": "In October Vale found a new recipe.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:preterite-ar",
-      "l:carta",
       "l:encontrar",
-      "l:octubre"
+      "l:nuevo",
+      "l:octubre",
+      "l:receta"
     ],
     "targets": [
       "l:octubre"
@@ -17692,18 +17695,17 @@
   },
   {
     "id": "u06-0790",
-    "es": "Noviembre fue un mes de trabajo.",
-    "en": "November was a month of work.",
+    "es": "En noviembre Vale empezó las recetas de diciembre.",
+    "en": "In November Vale started the December recipes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
-      "l:mes",
+      "g:preterite-ar",
+      "l:diciembre",
+      "l:empezar",
       "l:noviembre",
-      "l:ser",
-      "l:trabajo"
+      "l:receta"
     ],
     "targets": [
       "l:noviembre"
@@ -17814,18 +17816,15 @@
   },
   {
     "id": "u06-0795",
-    "es": "Marzo fue un mes largo.",
-    "en": "March was a long month.",
+    "es": "En marzo abrimos a las siete.",
+    "en": "In March we open at seven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
-      "l:largo",
-      "l:marzo",
-      "l:mes",
-      "l:ser"
+      "g:present-er-ir",
+      "l:abrir",
+      "l:marzo"
     ],
     "targets": [
       "l:marzo"
@@ -18004,15 +18003,14 @@
   },
   {
     "id": "u06-0803",
-    "es": "Hernando acordó un precio con Tomás.",
-    "en": "Hernando agreed on a price with Tomás.",
+    "es": "Vale y Tomás acordaron treinta días.",
+    "en": "Vale and Tomás agreed on thirty days.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:preterite-ar",
       "l:acordar",
-      "l:precio"
+      "l:día"
     ],
     "targets": [
       "l:acordar"
@@ -18110,15 +18108,15 @@
   },
   {
     "id": "u06-0808",
-    "es": "Todavía hay mucha gente en la calle.",
-    "en": "There are still lots of people in the street.",
+    "es": "Todavía hay mucha gente en el café.",
+    "en": "There are still lots of people in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "l:calle",
+      "l:café",
       "l:gente",
       "p:quantifiers-basic",
       "p:ya-todavia-basic"
@@ -18324,19 +18322,19 @@
   },
   {
     "id": "u06-0818",
-    "es": "Todavía tienes razón.",
-    "en": "You're still right.",
+    "es": "Todavía tengo tu número.",
+    "en": "I still have your number. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
-      "g:stem-boot",
-      "l:razón",
+      "c:tengo",
+      "g:yo-irregular",
+      "l:número",
       "l:tener",
+      "p:possessives-basic",
       "p:ya-todavia-basic"
     ],
     "targets": [
-      "l:razón",
       "p:ya-todavia-basic"
     ],
     "kind": "statement",
@@ -18696,13 +18694,15 @@
   },
   {
     "id": "u06-0835",
-    "es": "¿Todavía trabaja Vale en Medellín?",
-    "en": "Does Vale still work in Medellín?",
+    "es": "¿Todavía trabaja tu hermana en Medellín?",
+    "en": "Does your sister still work in Medellín? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
+      "l:hermana",
       "l:trabajar",
+      "p:possessives-basic",
       "p:ya-todavia-basic"
     ],
     "targets": [
@@ -18780,8 +18780,8 @@
   },
   {
     "id": "u06-0839",
-    "es": "Hace ocho meses Vale estaba en Medellín.",
-    "en": "Eight months ago Vale was in Medellín.",
+    "es": "Hace ocho meses Mariana estaba en Cartagena.",
+    "en": "Eight months ago Mariana was in Cartagena.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18852,25 +18852,25 @@
   },
   {
     "id": "u06-0842",
-    "es": "Hace quince años Rosa puso el letrero rojo.",
-    "en": "Fifteen years ago Rosa put up the red sign.",
+    "es": "Hace quince años Rosa puso la vitrina nueva.",
+    "en": "Fifteen years ago Rosa put in the new display case.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:hace-ago",
       "g:present-er-ir",
       "g:preterite-irregular-strong",
       "l:año",
       "l:hacer",
-      "l:letrero",
+      "l:nuevo",
       "l:poner",
-      "l:rojo"
+      "l:vitrina"
     ],
     "targets": [
       "g:hace-ago",
       "g:preterite-irregular-strong",
-      "l:letrero",
       "l:poner"
     ],
     "kind": "statement",
@@ -18929,8 +18929,8 @@
   },
   {
     "id": "u06-0845",
-    "es": "Hace veinte minutos Tomás dijo no.",
-    "en": "Twenty minutes ago Tomás said no.",
+    "es": "Hace veinte minutos Simón dijo «Joaquín».",
+    "en": "Twenty minutes ago Simón said \"Joaquín\".",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18977,17 +18977,18 @@
   },
   {
     "id": "u06-0847",
-    "es": "Hace dos siglos todo era diferente.",
-    "en": "Two centuries ago everything was different.",
+    "es": "Hace dos siglos La Candelaria era el centro de todo.",
+    "en": "Two centuries ago La Candelaria was the centre of everything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:era",
+      "g:gender-articles",
       "g:hace-ago",
       "g:imperfect-states",
       "g:present-er-ir",
       "g:ser-identity",
-      "l:diferente",
+      "l:centro",
       "l:hacer",
       "l:ser",
       "l:siglo"
@@ -19031,8 +19032,8 @@
   },
   {
     "id": "u06-0849",
-    "es": "Hace noventa años no había radio en Bogotá.",
-    "en": "Ninety years ago there was no radio in Bogotá.",
+    "es": "Hace cien años no había televisión en Bogotá.",
+    "en": "A hundred years ago there was no television in Bogotá.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19041,12 +19042,11 @@
       "g:present-er-ir",
       "l:año",
       "l:hacer",
-      "l:radio"
+      "l:televisión"
     ],
     "targets": [
       "g:hace-ago",
-      "g:imperfect-states",
-      "l:radio"
+      "g:imperfect-states"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -19081,19 +19081,23 @@
   },
   {
     "id": "u06-0851",
-    "es": "Hace unos años no teníamos clientes.",
-    "en": "A few years ago we had no customers.",
+    "es": "Hace unos años la vitrina era roja.",
+    "en": "A few years ago the display case was red.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:hace-ago",
       "g:imperfect-states",
       "g:present-er-ir",
+      "g:ser-identity",
       "l:año",
-      "l:cliente",
       "l:hacer",
-      "l:tener"
+      "l:rojo",
+      "l:ser",
+      "l:vitrina"
     ],
     "targets": [
       "g:hace-ago",
@@ -19236,23 +19240,22 @@
   },
   {
     "id": "u06-0857",
-    "es": "Hernando dijo la verdad hace diez años.",
-    "en": "Hernando told the truth ten years ago.",
+    "es": "Hernando vendió su taxi hace diez años.",
+    "en": "Hernando sold his taxi ten years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:la-verdad",
       "g:hace-ago",
       "g:present-er-ir",
-      "g:preterite-irregular-strong",
+      "g:preterite-er-ir",
       "l:año",
-      "l:decir",
       "l:hacer",
-      "l:verdad"
+      "l:taxi",
+      "l:vender",
+      "p:possessives-basic"
     ],
     "targets": [
-      "g:hace-ago",
-      "g:preterite-irregular-strong"
+      "g:hace-ago"
     ],
     "kind": "statement",
     "unit": "u06",
@@ -19307,8 +19310,8 @@
   },
   {
     "id": "u06-0860",
-    "es": "¿Por qué estaba la carta en la pared?\nNo sé, pero Rosa tenía sus razones.",
-    "en": "Why was the letter in the wall?\nI don't know, but Rosa had her reasons.",
+    "es": "¿Por qué estaba la carta en el cuaderno?\nNo sé, pero Rosa tenía sus razones.",
+    "en": "Why was the letter in the notebook?\nI don't know, but Rosa had her reasons.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19318,8 +19321,8 @@
       "g:imperfect-states",
       "g:yo-irregular",
       "l:carta",
+      "l:cuaderno",
       "l:estar",
-      "l:pared",
       "l:qué",
       "l:razón",
       "l:saber",
@@ -19329,7 +19332,6 @@
     ],
     "targets": [
       "g:imperfect-states",
-      "l:pared",
       "l:razón"
     ],
     "kind": "dialogue",
@@ -19391,8 +19393,8 @@
   },
   {
     "id": "u06-0863",
-    "es": "¿Cuándo llegaste al café, Hernando?\nEn 1979, con mi taxi.",
-    "en": "When did you come to the café, Hernando?\nIn 1979, in my taxi.",
+    "es": "¿Cuándo llegó usted al café, don Hernando?\nEn 1979, en mi taxi.",
+    "en": "When did you come to the café, Don Hernando?\nIn 1979, in my taxi.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19497,17 +19499,17 @@
   },
   {
     "id": "u06-0867",
-    "es": "Vale, ¿tuviste la carta?\nNo, no supe nada.",
-    "en": "Vale, did you have the letter?\nNo, I knew nothing.",
+    "es": "Vale, ¿Rosa te dijo algo de la carta?\nNo, nunca.",
+    "en": "Vale, did Rosa tell you anything about the letter?\nNo, never.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:negation-words",
       "g:preterite-irregular-strong",
       "l:carta",
-      "l:saber",
-      "l:tener"
+      "l:decir",
+      "p:indefinites-basic",
+      "p:me-te-nos-objects"
     ],
     "targets": [
       "g:preterite-irregular-strong"
@@ -19546,8 +19548,8 @@
   },
   {
     "id": "u06-0869",
-    "es": "¿Cuándo escribió Rosa la carta?\nEn 1978, hace cuarenta y siete años.",
-    "en": "When did Rosa write the letter?\nIn 1978, forty-seven years ago.",
+    "es": "¿Cuándo escribió Rosa la carta?\nEn 1979, hace cuarenta y siete años.",
+    "en": "When did Rosa write the letter?\nIn 1979, forty-seven years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19620,8 +19622,8 @@
   },
   {
     "id": "u06-0872",
-    "es": "¿Hace cuánto vive Simón aquí?\nHace veinte años.",
-    "en": "How long has Simón lived here?\nTwenty years.",
+    "es": "¿Hace cuánto vive Simón aquí?\nHace cuarenta años.",
+    "en": "How long has Simón lived here?\nForty years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19906,20 +19908,20 @@
   },
   {
     "id": "u06-0884",
-    "es": "¿Qué encontró Tomás en la pared?",
-    "en": "What did Tomás find in the wall?",
+    "es": "¿Qué encontró Tomás en el cuaderno?",
+    "en": "What did Tomás find in the notebook?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "g:questions",
+      "l:cuaderno",
       "l:encontrar",
-      "l:pared",
       "l:qué"
     ],
     "targets": [
-      "l:pared"
+      "g:gender-articles"
     ],
     "kind": "question",
     "unit": "u06",
@@ -20038,14 +20040,14 @@
   },
   {
     "id": "u06-0890",
-    "es": "¿Tenía Rosa un hermano?",
-    "en": "Did Rosa have a brother?",
+    "es": "¿Tenía Rosa un novio?",
+    "en": "Did Rosa have a boyfriend?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-states",
-      "l:hermano",
+      "l:novio",
       "l:tener"
     ],
     "targets": [
@@ -20058,15 +20060,15 @@
   },
   {
     "id": "u06-0891",
-    "es": "¿Tomás ya escribió la carta?",
-    "en": "Has Tomás written the letter yet?",
+    "es": "¿Tomás ya abrió la carta?",
+    "en": "Has Tomás opened the letter yet?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
-      "l:carta",
-      "l:escribir"
+      "l:abrir",
+      "l:carta"
     ],
     "targets": [],
     "kind": "question",

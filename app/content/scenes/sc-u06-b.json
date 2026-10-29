@@ -35,7 +35,7 @@
       "id": "t2",
       "npc": "Sí, viejo y feo. Quiero una fecha en el letrero nuevo. ¿Cuándo abrió el café?",
       "npcEn": "Yes, old and ugly. I want a date on the new sign. When did the café open?",
-      "intent": "Say you don't know, but Rosa's notebook has a date: the second of January, 1979.",
+      "intent": "Say you don't know, but Rosa's notebook starts with a date: the second of January, 1979.",
       "accept": [
         "No sé. El cuaderno de Rosa tiene una fecha: 2 de enero de 1979.",
         "No sé, señor. En el cuaderno hay una fecha: el 2 de enero de 1979.",
@@ -55,11 +55,11 @@
       "id": "t3",
       "npc": "¿1979? ¡Yo nací en 1979! ¿Y usted? ¿Dónde nació?",
       "npcEn": "1979? I was born in 1979! And you? Where were you born?",
-      "intent": "Say you were born in Toronto, in Canada.",
+      "intent": "Say you were born in Bogotá, but you lived for many years in Toronto, in Canada.",
       "accept": [
-        "Nací en Toronto, en Canadá.",
-        "Yo nací en Toronto, en Canadá.",
-        "En Toronto. Nací en Toronto, en Canadá."
+        "Nací en Bogotá, pero viví muchos años en Toronto, en Canadá.",
+        "Yo nací aquí en Bogotá. Pero viví muchos años en Canadá, en Toronto.",
+        "Nací en Bogotá, pero viví muchos años en Toronto."
       ],
       "require": [
         {
@@ -68,6 +68,11 @@
           "tense": "preterito",
           "person": "yo",
           "label": "I was born: nací"
+        },
+        {
+          "type": "containsWord",
+          "word": "Bogotá",
+          "label": "Tomás was born here: en Bogotá"
         }
       ],
       "focus": "p:naci-en",
@@ -75,8 +80,8 @@
     },
     {
       "id": "t4",
-      "npc": "¡Uy, Canadá! Mi papá hizo el letrero viejo hace cuarenta años.",
-      "npcEn": "Wow, Canada! My dad made the old sign forty years ago.",
+      "npc": "¡Uy, Toronto! Mi papá hizo el letrero viejo hace cuarenta años.",
+      "npcEn": "Wow, Toronto! My dad made the old sign forty years ago.",
       "intent": "Ask him if his dad still works.",
       "accept": [
         "¿Y su papá todavía trabaja?",
@@ -173,6 +178,7 @@
     "g:yo-irregular",
     "l:abrir",
     "l:apellido",
+    "l:aquí",
     "l:año",
     "l:barrio",
     "l:bien",
@@ -207,6 +213,7 @@
     "l:tinto",
     "l:trabajar",
     "l:viejo",
+    "l:vivir",
     "p:me-te-nos-objects",
     "p:possessives-basic",
     "p:quantifiers-basic",

@@ -6,28 +6,121 @@
     "en": "In 1979 the café was small and Rosa was thirty."
   },
   "examples": [
-    { "es": "El café era pequeño.", "en": "The café was small." },
-    { "es": "Rosa tenía treinta años.", "en": "Rosa was thirty." },
-    { "es": "Había una radio en la pared.", "en": "There was a radio on the wall." },
-    { "es": "No había televisión.", "en": "There was no TV." },
-    { "es": "¿Cómo era Rosa?\nEra muy brava.", "en": "What was Rosa like?\nShe had a real temper." },
-    { "es": "Estábamos cansados.", "en": "We were tired." },
-    { "es": "¿Dónde estabas?", "en": "Where were you? (to a friend)" },
-    { "es": "Hernando era taxista.", "en": "Hernando was a taxi driver." }
+    {
+      "es": "El café era pequeño.",
+      "en": "The café was small."
+    },
+    {
+      "es": "Rosa tenía treinta años.",
+      "en": "Rosa was thirty."
+    },
+    {
+      "es": "Había una radio en la pared.",
+      "en": "There was a radio on the wall."
+    },
+    {
+      "es": "No había televisión.",
+      "en": "There was no TV."
+    },
+    {
+      "es": "¿Cómo era Rosa?\nEra muy brava.",
+      "en": "What was Rosa like?\nShe had a real temper."
+    },
+    {
+      "es": "Estábamos cansados.",
+      "en": "We were tired."
+    },
+    {
+      "es": "¿Dónde estabas?",
+      "en": "Where were you? (to a friend)"
+    },
+    {
+      "es": "Hernando era taxista.",
+      "en": "Hernando was a taxi driver."
+    }
   ],
   "rule": "English has one *was* for everything. Spanish keeps a special past for describing: what something was like, where it was, how old someone was, what there was. It paints the background, with no start or finish in view.\n\n*ser*: *era*, *eras*, *era*, *éramos*, *eran*\n*estar*: *estaba*, *estabas*, *estaba*, *estábamos*, *estaban*\n*tener*: *tenía*, *tenías*, *tenía*, *teníamos*, *tenían*\n*hay* becomes *había*: there was, there were. One form for both.\n\nNotice that I and he or she are the same here: *era* can be I was or she was. Add *yo* or a name when it matters.\n\nCompare *fue*: *El sábado fue un desastre* sums up an event. *El café era pequeño* describes how it looked. For describing, use *era*.",
   "smallPrint": "Teachers call this the imperfect (*pretérito imperfecto*). Here you meet it with the describing verbs only; the rest of it comes later.",
-  "soundTip": "The stress sits early: *Era* is EH-rah, *tenía* is teh-NEE-ah, *estaba* is es-TAH-bah. In *estábamos* and *éramos* the stress jumps back a syllable, which is why they carry an accent mark.",
+  "soundTip": "The stress sits early: *era* is EH-rah, *tenía* is teh-NEE-ah, *estaba* is es-TAH-bah. In *estábamos* and *éramos* the stress stays where it was, but now it lands three syllables from the end, so it needs an accent mark.",
   "readAndPick": [
-    { "es": "Rosa tenía treinta años.", "options": ["Rosa is thirty.", "Rosa was thirty.", "Rosa is going to be thirty."], "answer": 1 },
-    { "es": "Había una radio en la pared.", "options": ["There was a radio on the wall.", "There is a radio on the wall."], "answer": 0 },
-    { "es": "Éramos muy jóvenes.", "options": ["They were very young.", "I was very young.", "We were very young."], "answer": 2 },
-    { "es": "El café era pequeño.", "options": ["The café is small.", "The café was small."], "answer": 1 },
-    { "es": "¿Dónde estabas?", "options": ["Where were you?", "Where are you?", "Where was she?"], "answer": 0 },
-    { "es": "Estaban en Toronto.", "options": ["We were in Toronto.", "They are in Toronto.", "They were in Toronto."], "answer": 2 },
-    { "es": "No había televisión.", "options": ["There's no TV.", "There was no TV."], "answer": 1 },
-    { "es": "¿Tenías un carro?", "options": ["Did you have a car?", "Did they have a car?", "Do you have a car?"], "answer": 0 },
-    { "es": "Teníamos una máquina de café.", "options": ["They had a coffee machine.", "We had a coffee machine.", "We have a coffee machine."], "answer": 1 }
+    {
+      "es": "Rosa tenía treinta años.",
+      "options": [
+        "Rosa is thirty.",
+        "Rosa was thirty.",
+        "Rosa is going to be thirty."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Había una radio en la pared.",
+      "options": [
+        "There was a radio on the wall.",
+        "There is a radio on the wall."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Éramos muy jóvenes.",
+      "options": [
+        "They were very young.",
+        "I was very young.",
+        "We were very young."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "El café era pequeño.",
+      "options": [
+        "The café is small.",
+        "The café was small."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde estabas?",
+      "options": [
+        "Where were you?",
+        "Where are you?",
+        "Where was she?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estaban en Toronto.",
+      "options": [
+        "We were in Toronto.",
+        "They are in Toronto.",
+        "They were in Toronto."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "No había televisión.",
+      "options": [
+        "There's no TV.",
+        "There was no TV."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Tenías un carro?",
+      "options": [
+        "Did you have a car?",
+        "Did they have a car?",
+        "Do you have a car?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Teníamos una máquina de café.",
+      "options": [
+        "They had a coffee machine.",
+        "We had a coffee machine.",
+        "We have a coffee machine."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
@@ -45,13 +138,17 @@
     {
       "prompt": "There was a radio on the wall.",
       "answer": "Había una radio en la pared.",
-      "accept": ["En la pared había una radio."],
+      "accept": [
+        "En la pared había una radio."
+      ],
       "why": "There was is *había*."
     },
     {
       "prompt": "We were tired. (a group of men, or a mixed group)",
       "answer": "Estábamos cansados.",
-      "accept": ["Nosotros estábamos cansados."],
+      "accept": [
+        "Nosotros estábamos cansados."
+      ],
       "why": "How you felt uses *estar*: *estábamos*, with the accent mark."
     },
     {
@@ -69,19 +166,26 @@
     {
       "prompt": "Make it past: *Estoy en casa.*",
       "answer": "Estaba en casa.",
-      "accept": ["Yo estaba en casa."],
+      "accept": [
+        "Yo estaba en casa."
+      ],
       "why": "*Estoy* becomes *estaba*."
     },
     {
       "prompt": "Make it about we: *Era joven.*",
       "answer": "Éramos jóvenes.",
-      "accept": ["Nosotros éramos jóvenes."],
+      "accept": [
+        "Nosotros éramos jóvenes."
+      ],
       "why": "We were is *éramos*, and the adjective goes plural too."
     },
     {
       "prompt": "Ask Don Hernando, politely: How old were you in 1979?",
       "answer": "¿Cuántos años tenía usted en 1979?",
-      "accept": ["¿Cuántos años tenía en 1979?", "En 1979, ¿cuántos años tenía usted?"],
+      "accept": [
+        "¿Cuántos años tenía en 1979?",
+        "En 1979, ¿cuántos años tenía usted?"
+      ],
       "why": "With *usted*, use the he and she form: *tenía*."
     }
   ],
