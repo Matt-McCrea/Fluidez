@@ -1,0 +1,269 @@
+{
+  "id": "ch041",
+  "unit": "u15",
+  "title": "Modo avión",
+  "text": "Era la chaqueta del esposo de Gloria, y era enorme.\nGloria: Es grande, mijo, pero hoy no sale sin chaqueta. No quiero otra gripa en esta casa.\nDespués de tres días en la cama, Tomás llegó al café a las seis. Vale estaba detrás del mostrador.\nVale: ¡Tomás! Con esa chaqueta, pareces turista.\nTomás: Me siento mucho mejor, gracias.\nVale: Me parece que todavía tienes la cara roja.\nGloria entró detrás de él con el pan.\nGloria: Doce llamadas en tres días, Vale. Yo las conté.\nVale: No estaba preocupada. Estaba informada. Es diferente.\nSimón: ¡Informada! ¡Informada!\nVale puso el celular en modo avión.\nMariana llegó con una noticia.\nMariana: Tengo que informarles algo. Altamira compró la casa de don Julio. Ahora tiene cinco casas de ocho. Quiere el control de toda la cuadra.\nTomás: ¿Y la nuestra?\nMariana: Sin la escritura de Rosa, no sé.\nVale: Entonces la buscamos hoy, todos.\nTomás: Estoy de acuerdo, y Simón también.\nHernando no habló de sus nietos. No pidió pan. Tomó su tinto y no dijo una palabra.\nVale: Hernando, ¿le pasa algo?\nHernando: Es personal, mija.\nVale no aceptó la respuesta. Miró a Tomás.\nVale: Tomás, ¿te parece que Hernando está bien?\nTomás: Me parece que sí. Está tranquilo.\nVale: Aprendiste mucho español, Tomás, pero todavía hablas mal cuando no dices la verdad.\nVale fue a la cocina. Hernando miró la puerta de la cocina.\nHernando: Mijo, el jueves a las ocho... ¿viene conmigo? No me gusta ir solo.\nTomás: Claro que sí.\nHernando: Usted me cae bien, mijo. Como Rosa.\nCuando Vale volvió, Tomás tenía un plan.\nTomás: Vale, el jueves por la mañana no estoy. Voy a San Victorino. Necesitamos sillas nuevas.\nVale: ¡Me parece una idea excelente! Voy contigo.\nSimón: ¡Voy contigo! ¡Voy contigo!",
+  "gloss": [
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "mija",
+      "en": "my dear (a fond way to talk to a younger woman)"
+    },
+    {
+      "es": "mostrador",
+      "en": "counter"
+    },
+    {
+      "es": "Estaba informada. Es diferente.",
+      "en": "I was keeping informed. It's different."
+    },
+    {
+      "es": "modo avión",
+      "en": "airplane mode"
+    },
+    {
+      "es": "Ahora tiene cinco casas de ocho.",
+      "en": "Now it has five houses out of eight."
+    },
+    {
+      "es": "pero todavía hablas mal cuando no dices la verdad",
+      "en": "but you still speak badly when you're not telling the truth"
+    },
+    {
+      "es": "Usted me cae bien, mijo.",
+      "en": "I like you, son."
+    },
+    {
+      "es": "San Victorino",
+      "en": "San Victorino (a huge, cheap shopping district in central Bogotá)"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why does Vale put her phone in airplane mode?",
+      "options": [
+        "Gloria has just told everyone she called twelve times in three days",
+        "Mariana is calling",
+        "The internet isn't working",
+        "Simón is playing with it"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is Mariana's news?",
+      "options": [
+        "Altamira bought Don Julio's house and wants control of the whole block",
+        "Altamira has sold its houses",
+        "The notary found the deed",
+        "Don Julio is coming back"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Cómo sabe Vale que Tomás no dice la verdad?",
+      "options": [
+        "Porque Tomás habla mal cuando no dice la verdad",
+        "Porque Simón le dice todo",
+        "Porque Hernando se lo dice",
+        "Porque Gloria contó las llamadas"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Tomás say he's going to San Victorino on Thursday?",
+      "options": [
+        "To hide that he's going with Hernando to the doctor",
+        "Because the café really needs a grinder",
+        "Because Vale asked him to",
+        "To see Mariana"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "Whose jacket is Tomás wearing?",
+      "options": [
+        "Gloria's husband's",
+        "Hernando's",
+        "Rosa's",
+        "Joaquín's"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás tell Vale they need?",
+      "options": [
+        "New chairs",
+        "A new grinder",
+        "New uniforms",
+        "A new phone"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando not do this morning?",
+      "options": [
+        "Talk about his grandchildren or ask for bread",
+        "Drink his coffee",
+        "Say good morning to Simón",
+        "Sit down"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomás has promised to go with Hernando to the heart doctor on Thursday at eight, and told Vale he is shopping for chairs in San Victorino. Vale loves the idea, and she is coming too.",
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:era",
+    "c:estoy-de-acuerdo",
+    "c:gracias-de-nada",
+    "c:la-verdad",
+    "c:me-gusta",
+    "c:me-siento-mal",
+    "c:no-se",
+    "c:quiero",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "c:tranquilo",
+    "c:voy-a",
+    "c:voy-vas",
+    "g:adjective-agreement",
+    "g:demonstratives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:gustar-basic",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:ir-a-plans",
+    "g:object-pronoun-position",
+    "g:parecer-quedar",
+    "g:possessives",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:preterite-ser-ir-hacer",
+    "g:preterite-spelling-stem",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cerca-de",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:es-tiene-lleva",
+    "p:indefinites-basic",
+    "p:ir-a-venir-de-place",
+    "p:ir-venir",
+    "p:masculine-plural-mixed",
+    "p:nos-vemos-a-las",
+    "p:otro-no-article",
+    "p:por-la-manana",
+    "p:position-de",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:time-sequence-basic",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:aceptar",
+    "l:acuerdo",
+    "l:ahora",
+    "l:aprender",
+    "l:avión",
+    "l:bien",
+    "l:buscar",
+    "l:caer",
+    "l:café",
+    "l:cama",
+    "l:cara",
+    "l:casa",
+    "l:celular",
+    "l:chaqueta",
+    "l:claro",
+    "l:cocina",
+    "l:comer",
+    "l:comprar",
+    "l:contar",
+    "l:control",
+    "l:cuadra",
+    "l:decir",
+    "l:después",
+    "l:detrás",
+    "l:diferente",
+    "l:día",
+    "l:enorme",
+    "l:entrar",
+    "l:escritura",
+    "l:español",
+    "l:esposo",
+    "l:estar",
+    "l:excelente",
+    "l:grande",
+    "l:gripa",
+    "l:gustar",
+    "l:hablar",
+    "l:hoy",
+    "l:idea",
+    "l:informar",
+    "l:ir",
+    "l:jueves",
+    "l:llamada",
+    "l:llegar",
+    "l:mal",
+    "l:mañana",
+    "l:mejor",
+    "l:mirar",
+    "l:modo",
+    "l:mostrador",
+    "l:necesitar",
+    "l:nieto",
+    "l:noticia",
+    "l:nuevo",
+    "l:palabra",
+    "l:pan",
+    "l:parecer",
+    "l:pasar",
+    "l:pedir",
+    "l:personal",
+    "l:plan",
+    "l:poner",
+    "l:preocupado",
+    "l:puerta",
+    "l:querer",
+    "l:respuesta",
+    "l:rojo",
+    "l:saber",
+    "l:salir",
+    "l:sentirse",
+    "l:ser",
+    "l:silla",
+    "l:tener",
+    "l:tinto",
+    "l:tomar",
+    "l:tranquilo",
+    "l:turista",
+    "l:venir",
+    "l:verdad",
+    "l:volver"
+  ]
+}

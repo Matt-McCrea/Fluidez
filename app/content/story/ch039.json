@@ -1,0 +1,249 @@
+{
+  "id": "ch039",
+  "unit": "u15",
+  "title": "Treinta y nueve",
+  "text": "Gloria: ¡Tomás! ¿Te pasa algo? Son las cinco, y usted todavía está en la cama.\nTomás: Estoy bien, Gloria. Tengo que abrir el café. Vale llega a las seis.\nTomás se levantó, pero tenía mucha tos y la cara roja. Gloria le puso la mano en la cabeza.\nGloria: Mijo, usted tiene fiebre. Treinta y nueve.\nTomás: No es fiebre. Es cansancio.\nGloria: ¿Cansancio? Usted tiene gripa. Es la lluvia de anoche. Usted es fuerte, pero hoy está enfermo. ¡A la cama!\nA las seis y cinco sonó el celular.\nVale: ¿Aló? Tomás, estoy en el café. No hay tinto, y no hay Tomás.\nTomás: Qué pena, Vale. Estoy enfermo. Tengo gripa.\nVale: ¿Gripa? Bueno. No estoy preocupada. Hoy no trabajas, hoy descansas, ¿de acuerdo?\nTomás: Depende. ¿Quién hace el tinto?\nSimón: ¡Depende! ¡Depende!\nHernando: ¡Yo, mijo! ¡Y mi tinto es mejor que el tinto de Vale!\nVale: No estoy de acuerdo.\nA las nueve, Vale llamó otra vez. A las doce, otra vez. A las tres, otra vez.\nVale: No estoy preocupada, Tomás. Es una pregunta y ya. ¿Todavía tienes fiebre?\nGloria: Cuatro llamadas en un día. Esa niña no está preocupada, claro.\nGloria le subió una aguapanela y le habló del barrio. La señora de la tienda tiene novio. Y don Julio, el vecino de la casa azul, vendió su casa a Altamira.\nTomás: ¿Don Julio? ¿Ya vendió?\nGloria: Ya vendió, mijo. Ahora somos menos en la cuadra.\nLa aguapanela estaba rica.\nGloria: Cuando yo estaba enferma, Rosa me subía aguapanela todos los días. Ahora le subo aguapanela yo.\nGloria: Otra cosa. Don Hernando siempre es tranquilo, pero esta semana está nervioso. Tiene una cita con el médico el jueves, y no habla de eso con nadie.\nTomás: ¿Con nadie?\nGloria: Con nadie. Ni con Vale. Ni conmigo.",
+  "gloss": [
+    {
+      "es": "mijo",
+      "en": "son (a fond way to talk to a younger man)"
+    },
+    {
+      "es": "Treinta y nueve.",
+      "en": "Thirty nine (degrees)."
+    },
+    {
+      "es": "Es la lluvia de anoche.",
+      "en": "It's last night's rain."
+    },
+    {
+      "es": "Qué pena, Vale.",
+      "en": "Sorry, Vale."
+    },
+    {
+      "es": "Es una pregunta y ya.",
+      "en": "It's just a question."
+    },
+    {
+      "es": "Esa niña no está preocupada, claro.",
+      "en": "That girl isn't worried, of course."
+    },
+    {
+      "es": "Ahora somos menos en la cuadra.",
+      "en": "Now there are fewer of us on the block."
+    },
+    {
+      "es": "Rosa me subía aguapanela todos los días",
+      "en": "Rosa brought aguapanela up to me every day"
+    },
+    {
+      "es": "Ahora le subo aguapanela yo.",
+      "en": "Now I'm the one who brings you aguapanela."
+    },
+    {
+      "es": "Ni con Vale. Ni conmigo.",
+      "en": "Not even with Vale. Not even with me."
+    }
+  ],
+  "questions": [
+    {
+      "q": "Why can't Tomás open the café at six?",
+      "options": [
+        "He has the flu, with a fever and a cough",
+        "He has lost the key",
+        "Gloria needs him in the bakery",
+        "He is waiting for Vale's bus"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Vale says she isn't worried. What does she actually do?",
+      "options": [
+        "She calls four times in one day",
+        "She comes to Gloria's house",
+        "She closes the café",
+        "She sends one word"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Qué noticia del barrio cuenta Gloria?",
+      "options": [
+        "Don Julio vendió su casa a Altamira",
+        "Altamira vendió la cuadra",
+        "La tienda está cerrada",
+        "Hernando vendió la Burra"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What is strange about Don Hernando this week?",
+      "options": [
+        "He is nervous, and he won't talk about a doctor's appointment",
+        "He has stopped drinking coffee",
+        "He wants to sell the café",
+        "He is angry with Vale"
+      ],
+      "answer": 0
+    }
+  ],
+  "rereadQuestions": [
+    {
+      "q": "What does Tomás first say his problem is?",
+      "options": [
+        "Tiredness",
+        "A cold",
+        "The rain",
+        "Nothing at all"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Hernando claim about his coffee?",
+      "options": [
+        "It is better than Vale's",
+        "It is the same as Rosa's",
+        "It is too strong",
+        "It is free today"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Who used to bring Gloria aguapanela when she was ill?",
+      "options": [
+        "Rosa",
+        "Vale",
+        "Hernando",
+        "Don Julio"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Tomorrow Hernando comes to visit the patient, with Simón on his shoulder. He has a lot of very strange questions about Tomás's health.",
+  "requires": [
+    "c:alo",
+    "c:ayer-anoche",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:depende",
+    "c:entonces-bueno",
+    "c:estoy-de-acuerdo",
+    "c:hay",
+    "c:me-siento-mal",
+    "c:que-pena",
+    "c:te-pasa-algo",
+    "c:tengo",
+    "c:tengo-que",
+    "c:tienes",
+    "c:tranquilo",
+    "g:adjective-agreement",
+    "g:comparatives",
+    "g:demonstratives",
+    "g:estar-location-states",
+    "g:gender-articles",
+    "g:hay-vs-esta",
+    "g:imperfect-habitual",
+    "g:imperfect-states",
+    "g:indirect-objects",
+    "g:negation-words",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:pret-vs-imperfect",
+    "g:preterite-ar",
+    "g:preterite-er-ir",
+    "g:preterite-irregular-strong",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:verb-infinitive",
+    "g:yo-irregular",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:cuando-basic",
+    "p:days-el-lunes",
+    "p:demonstratives-basic",
+    "p:frequency-scale",
+    "p:lavarse-las-manos",
+    "p:otro-no-article",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:question-word-order",
+    "p:senor-don-article",
+    "p:telling-time",
+    "p:todos-los-dias",
+    "p:veces-al",
+    "p:ya-todavia-basic"
+  ],
+  "lexemes": [
+    "l:abrir",
+    "l:acuerdo",
+    "l:aguapanela",
+    "l:ahora",
+    "l:anoche",
+    "l:azul",
+    "l:barrio",
+    "l:bien",
+    "l:bueno",
+    "l:cabeza",
+    "l:café",
+    "l:cama",
+    "l:cansancio",
+    "l:cara",
+    "l:casa",
+    "l:celular",
+    "l:cita",
+    "l:claro",
+    "l:cosa",
+    "l:cuadra",
+    "l:depender",
+    "l:descansar",
+    "l:día",
+    "l:enfermo",
+    "l:estar",
+    "l:fiebre",
+    "l:fuerte",
+    "l:gripa",
+    "l:hablar",
+    "l:hacer",
+    "l:hoy",
+    "l:jueves",
+    "l:levantarse",
+    "l:llamada",
+    "l:llamar",
+    "l:llegar",
+    "l:lluvia",
+    "l:mano",
+    "l:mejor",
+    "l:médico",
+    "l:nervioso",
+    "l:niña",
+    "l:novio",
+    "l:pasar",
+    "l:pena",
+    "l:poner",
+    "l:pregunta",
+    "l:preocupado",
+    "l:quién",
+    "l:qué",
+    "l:rico",
+    "l:rojo",
+    "l:semana",
+    "l:ser",
+    "l:señora",
+    "l:siempre",
+    "l:sonar",
+    "l:subir",
+    "l:subirse",
+    "l:tener",
+    "l:tienda",
+    "l:tinto",
+    "l:tos",
+    "l:trabajar",
+    "l:tranquilo",
+    "l:vecino",
+    "l:vender",
+    "l:vez"
+  ]
+}
