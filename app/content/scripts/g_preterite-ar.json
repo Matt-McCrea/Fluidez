@@ -1,0 +1,48 @@
+{
+  "node": "g:preterite-ar",
+  "hook": {
+    "line": "Every Monday in Bogotá starts with the same question about your weekend. Today you learn to answer it with what you actually did.",
+    "es": "¿Qué tal el fin de semana?\nTrabajé todo el sábado y todo el domingo.",
+    "en": "How was the weekend?\nI worked all Saturday and all Sunday."
+  },
+  "examples": [
+    { "es": "Ayer trabajé hasta las nueve.", "en": "Yesterday I worked until nine." },
+    { "es": "¿Compraste el pan?", "en": "Did you buy the bread? (to a friend)" },
+    { "es": "Anoche Vale cerró el café a las ocho.", "en": "Last night Vale closed the café at eight." },
+    { "es": "No hablamos con Altamira.", "en": "We didn't talk to Altamira." },
+    { "es": "Los taxistas llegaron a las siete.", "en": "The taxi drivers arrived at seven." },
+    { "es": "Hoy usted pagó dos veces, don Hernando.", "en": "You paid twice today, don Hernando. (polite)" }
+  ],
+  "rule": "To say what you did, Spanish swaps the present ending for a past one. There's no helper word like English 'did': the ending does all the work.\n\n*hablé*: I spoke\n*hablaste*: you spoke\n*habló*: he, she or you (polite) spoke\n*hablamos*: we spoke\n*hablaron*: they or you all spoke\n\nWatch the accent. *Hablo* is 'I speak'; *habló* is 'he spoke'. That little mark changes both who and when.\n\n*Hablamos* is the same in the present and the past, so words like *ayer* or *anoche* tell you which.\n\nQuestions and *no* work as always: *¿Compraste el pan? No trabajé ayer.*\n\nIn Latin America this is the past for anything finished, even earlier today: *Hoy trabajé mucho.*",
+  "smallPrint": "Teachers call this the preterite (*pretérito indefinido* or *pretérito perfecto simple*). A few verbs change their spelling in the *yo* form to keep their sound; you'll meet them later.",
+  "soundTip": "Lean on the accented ending: *ha-BLÉ*, *ha-BLÓ*. In *hablo* (I speak) the weight sits at the front, *HA-blo*. Where the stress falls is how a Bogotano tells 'I speak' from 'he spoke'.",
+  "readAndPick": [
+    { "es": "Habló con Vale.", "options": ["I talk to Vale.", "He talked to Vale.", "I talked to Vale."], "answer": 1 },
+    { "es": "Compré flores para la abuela.", "options": ["I bought flowers for Grandma.", "She bought flowers for Grandma.", "I buy flowers for Grandma."], "answer": 0 },
+    { "es": "¿Cocinaste anoche?", "options": ["Did she cook last night?", "Did I cook last night?", "Did you cook last night?"], "answer": 2 },
+    { "es": "Los taxistas llegaron a las siete.", "options": ["The taxi drivers arrive at seven.", "The taxi drivers arrived at seven.", "The taxi driver arrived at seven."], "answer": 1 },
+    { "es": "Hablo con Vale.", "options": ["I talk to Vale.", "She talked to Vale.", "I talked to Vale."], "answer": 0 },
+    { "es": "Ayer no trabajé.", "options": ["You didn't work yesterday.", "He didn't work yesterday.", "I didn't work yesterday."], "answer": 2 },
+    { "es": "¿Ustedes bailaron el sábado?", "options": ["Did we dance on Saturday?", "Did you all dance on Saturday?", "Do you all dance on Saturdays?"], "answer": 1 },
+    { "es": "Simón cantó toda la mañana.", "options": ["Simón sang all morning.", "I sang all morning.", "Simón sings all morning."], "answer": 0 },
+    { "es": "Trabajaste mucho hoy.", "options": ["I worked a lot today.", "She worked a lot today.", "You worked a lot today."], "answer": 2 },
+    { "es": "Tomás pagó la cuenta.", "options": ["I pay the bill.", "Tomás paid the bill.", "Tomás pays the bill."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the past form and type the whole sentence: *Ayer ___ hasta las nueve.* (*trabajo* or *trabajé*)", "answer": "Ayer trabajé hasta las nueve.", "accept": ["Trabajé hasta las nueve ayer."], "why": "*Ayer* points back, and *-é* is 'I' in the past." },
+    { "prompt": "Pick and type the whole sentence: *Anoche Vale ___ el café a las ocho.* (*cerré* or *cerró*)", "answer": "Anoche Vale cerró el café a las ocho.", "accept": ["Vale cerró el café a las ocho anoche."], "why": "Vale is 'she', so *-ó*. *Cerré* would be 'I closed'." },
+    { "prompt": "Ask a friend: did you buy the bread?", "answer": "¿Compraste el pan?", "accept": [], "why": "'You' (a friend) in the past ends in *-aste*." },
+    { "prompt": "Say: Yesterday we talked to Mariana.", "answer": "Ayer hablamos con Mariana.", "accept": ["Hablamos con Mariana ayer."], "why": "'We' is *-amos*, and *ayer* makes it past." },
+    { "prompt": "Say: The customers paid in cash.", "answer": "Los clientes pagaron en efectivo.", "accept": [], "why": "'They' in the past ends in *-aron*." },
+    { "prompt": "Make it negative: *Cociné anoche.*", "answer": "No cociné anoche.", "accept": ["Anoche no cociné."], "why": "*No* goes right before the verb, just like in the present." },
+    { "prompt": "Make it about 'we': *Bailé el sábado.*", "answer": "Bailamos el sábado.", "accept": ["El sábado bailamos."], "why": "'We' takes *-amos*, the same ending as in the present." },
+    { "prompt": "Ask don Hernando politely the same thing: *¿Pagaste la cuenta?*", "answer": "¿Pagó la cuenta?", "accept": ["¿Usted pagó la cuenta?", "¿Pagó usted la cuenta?"], "why": "*Usted* shares the 'he, she' ending: *-ó*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Ayer hablo con Vale.", "right": "Ayer hablé con Vale.", "why": "Almost. *Ayer* needs a past ending; *hablo* is still 'I speak'." },
+    { "wrong": "Tomás hablo con el jefe.", "right": "Tomás habló con el jefe.", "why": "Without the accent, *hablo* means 'I speak'. The mark on *habló* makes it 'he spoke'." },
+    { "wrong": "Yo compró pan.", "right": "Compré pan.", "why": "*-ó* is for he, she and *usted*. For yourself, the ending is *-é*." },
+    { "wrong": "¿Ustedes trabajaste ayer?", "right": "¿Ustedes trabajaron ayer?", "why": "*Ustedes* takes the 'they' ending, *-aron*." }
+  ],
+  "personal": "What did you do yesterday? Write three things with *-ar* verbs, like *trabajé*, *hablé* or *compré*, and one thing you didn't do."
+}

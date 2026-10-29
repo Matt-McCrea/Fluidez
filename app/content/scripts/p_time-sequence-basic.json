@@ -1,0 +1,42 @@
+{
+  "node": "p:time-sequence-basic",
+  "hook": {
+    "line": "A list of things you did isn't a story yet. Two small words turn it into one, and that's what people want when they ask about your weekend.",
+    "es": "Primero llegaron los taxistas y más tarde llegaron las señoras.",
+    "en": "First the taxi drivers arrived, and later the ladies arrived."
+  },
+  "examples": [
+    { "es": "Primero compré pan y luego abrí el café.", "en": "First I bought bread and then I opened the café." },
+    { "es": "Primero hablé con Mariana y luego llamé a Vale.", "en": "First I talked to Mariana and then I called Vale." },
+    { "es": "El domingo primero caminamos en el parque y luego comimos ajiaco.", "en": "On Sunday we first walked in the park and then had ajiaco." },
+    { "es": "Primero cociné, luego comimos y más tarde bailamos.", "en": "First I cooked, then we ate and later we danced." },
+    { "es": "¿Y luego qué pasó?", "en": "And then what happened?" }
+  ],
+  "rule": "To tell things in order:\n*primero*: first\n*luego*: then, next\n*más tarde*: later\n\nPut them at the start of each step, and keep every verb in the past: *Primero compré pan y luego abrí el café.*\n\n*Primero* never changes, whoever is speaking.\n\n*¿Y luego qué pasó?* (and then what happened?) keeps a friend talking.\n\nSoon you'll add *después* (after that) and *al final* (in the end).",
+  "smallPrint": "Teachers call these sequence connectors.",
+  "readAndPick": [
+    { "es": "Primero comí, luego trabajé.", "options": ["I worked, then I ate.", "I ate, then I worked."], "answer": 1 },
+    { "es": "Primero trabajé, luego comí.", "options": ["I worked, then I ate.", "I ate, then I worked."], "answer": 0 },
+    { "es": "Primero estudié y luego bailé.", "options": ["I danced before I studied.", "I studied before I danced."], "answer": 1 },
+    { "es": "Primero salimos y más tarde cocinamos.", "options": ["We went out first and cooked later.", "We cooked first and went out later."], "answer": 0 },
+    { "es": "Primero llamé a la abuela, luego cociné.", "options": ["I cooked, then called Grandma.", "I called Grandma, then cooked."], "answer": 1 },
+    { "es": "Primero ustedes compraron fruta y luego comieron.", "options": ["You all bought fruit first, then ate.", "You all ate first, then bought fruit."], "answer": 0 },
+    { "es": "El sábado primero abrimos el café y luego llegó don Hernando.", "options": ["Don Hernando arrived before we opened.", "Don Hernando arrived after we opened."], "answer": 1 },
+    { "es": "Primero compramos flores y luego caminamos.", "options": ["We bought flowers, then walked.", "We walked, then bought flowers."], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the word for 'first' and type the whole sentence: *___ compré pan.* (*Primero* or *Luego*)", "answer": "Primero compré pan.", "accept": [], "why": "*Primero* opens the story: it's the first step." },
+    { "prompt": "Pick and type the whole sentence: *Primero trabajé y ___ comí con Vale.* (*primero* or *luego*)", "answer": "Primero trabajé y luego comí con Vale.", "accept": [], "why": "*Luego* is the next step: 'then'." },
+    { "prompt": "Say: First I cooked and then I called Mariana.", "answer": "Primero cociné y luego llamé a Mariana.", "accept": ["Primero cociné, luego llamé a Mariana."], "why": "*Primero* for the first step, *luego* for the next, both verbs in the past." },
+    { "prompt": "Ask a friend: and then what happened?", "answer": "¿Y luego qué pasó?", "accept": ["¿Luego qué pasó?"], "why": "*Luego* plus *qué pasó* asks for the next part of the story." },
+    { "prompt": "Say: Later Simón sang.", "answer": "Más tarde Simón cantó.", "accept": ["Más tarde cantó Simón."], "why": "'Later' is *más tarde*, at the start of the step." },
+    { "prompt": "Say it in the past, about yesterday: *Primero como y luego salgo.*", "answer": "Primero comí y luego salí.", "accept": ["Primero comí, luego salí."], "why": "The order words don't change; only the verbs move into the past." },
+    { "prompt": "Make it about 'we': *Primero caminé en el parque y luego comí ajiaco.*", "answer": "Primero caminamos en el parque y luego comimos ajiaco.", "accept": [], "why": "The order words stay put; the verbs take the 'we' endings *-amos* and *-imos*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Primera compré pan.", "right": "Primero compré pan.", "why": "Almost. *Primero* here means 'first of all' and never changes, even when a woman is speaking." },
+    { "wrong": "Primero compro pan y luego abrí el café.", "right": "Primero compré pan y luego abrí el café.", "why": "The order words don't make anything past; each verb needs its own past ending." },
+    { "wrong": "Primero trabajé y más luego comí.", "right": "Primero trabajé y más tarde comí.", "why": "'Later' is *más tarde*. *Luego* already means 'then' on its own." }
+  ],
+  "personal": "Think of last Saturday. Write three steps in order, starting with *Primero*, then *luego*, then *más tarde*."
+}

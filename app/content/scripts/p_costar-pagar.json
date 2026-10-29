@@ -1,0 +1,42 @@
+{
+  "node": "p:costar-pagar",
+  "hook": {
+    "line": "At Paloquemao the first thing you ask is the price, and the first thing your friends ask afterwards is what you paid. Spanish uses two different verbs for those.",
+    "es": "¿Cuánto cuestan los mangos?\nCuestan cinco mil la libra.",
+    "en": "How much are the mangoes?\nThey're five thousand a pound."
+  },
+  "examples": [
+    { "es": "La libra de fresas cuesta cuatro mil pesos.", "en": "A pound of strawberries is four thousand pesos." },
+    { "es": "Los tomates cuestan poco.", "en": "Tomatoes don't cost much." },
+    { "es": "¿Cuánto pagaste?", "en": "How much did you pay? (to a friend)" },
+    { "es": "Vale pagó diez mil pesos.", "en": "Vale paid ten thousand pesos." },
+    { "es": "Los mangos están muy caros hoy.", "en": "The mangoes are really expensive today." }
+  ],
+  "rule": "The thing costs; the person pays.\n\n*Costar* goes with the thing, and it agrees with it:\n*El mango cuesta mil.* (one thing)\n*Los mangos cuestan cinco mil.* (more than one)\n\n*Pagar* goes with the person: *Vale pagó diez mil pesos.*\n\nSo to ask a price, ask what it costs: *¿Cuánto cuestan las fresas?* *¿Cuánto pagaste?* is for after you've bought it.\n\nTwo things to recognise for now: 'I paid' is *pagué*, with an extra *u*, and what you paid for comes after *por*: *pagó diez mil por las flores*.",
+  "smallPrint": "In Colombia prices are said in thousands: *cinco mil* (5.000 pesos), written with a full stop, not a comma.",
+  "readAndPick": [
+    { "es": "Cuestan cinco mil.", "options": ["It costs five thousand.", "They cost five thousand."], "answer": 1 },
+    { "es": "Cuesta cinco mil.", "options": ["It costs five thousand.", "They cost five thousand."], "answer": 0 },
+    { "es": "Tomás pagó cinco mil.", "options": ["It cost Tomás five thousand.", "Tomás paid five thousand."], "answer": 1 },
+    { "es": "¿Cuánto cuestan las fresas?", "options": ["How much are the strawberries?", "How much did you pay for the strawberries?"], "answer": 0 },
+    { "es": "¿Cuánto pagaste?", "options": ["How much does it cost?", "How much did you pay?"], "answer": 1 },
+    { "es": "La libra de tomate cuesta dos mil pesos.", "options": ["A pound of tomatoes costs two thousand pesos.", "I paid two thousand pesos for a pound of tomatoes."], "answer": 0 },
+    { "es": "Las cebollas cuestan tres mil.", "options": ["The onion costs three thousand.", "The onions cost three thousand."], "answer": 1 },
+    { "es": "¿Cuánto pagaron ustedes?", "options": ["How much did you all pay?", "How much do they cost?"], "answer": 0 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick and type the whole sentence: *Los mangos ___ tres mil.* (*cuesta* or *cuestan*)", "answer": "Los mangos cuestan tres mil.", "accept": [], "why": "More than one mango, so *cuestan*." },
+    { "prompt": "Ask a friend what they paid. Pick and type: *¿Cuánto ___?* (*cuesta* or *pagaste*)", "answer": "¿Cuánto pagaste?", "accept": [], "why": "Your friend is the one who paid, so *pagar*." },
+    { "prompt": "Ask the stallholder: how much are the strawberries?", "answer": "¿Cuánto cuestan las fresas?", "accept": [], "why": "A price belongs to the things, and there's more than one: *cuestan*." },
+    { "prompt": "Say: A pound of tomatoes costs two thousand pesos.", "answer": "La libra de tomate cuesta dos mil pesos.", "accept": ["Una libra de tomate cuesta dos mil pesos.", "La libra de tomates cuesta dos mil pesos."], "why": "The subject is one pound, so *cuesta*." },
+    { "prompt": "Say: Vale paid ten thousand pesos.", "answer": "Vale pagó diez mil pesos.", "accept": [], "why": "Vale is the person, so *pagar*: *pagó*." },
+    { "prompt": "Make it plural: *El aguacate cuesta dos mil.*", "answer": "Los aguacates cuestan dos mil.", "accept": [], "why": "More avocados, so the verb becomes *cuestan*." },
+    { "prompt": "Put it in the past, about yesterday: *Tomás paga en efectivo.*", "answer": "Ayer Tomás pagó en efectivo.", "accept": ["Tomás pagó en efectivo ayer.", "Tomás pagó en efectivo."], "why": "'He paid' is *pagó*, with the accent on the end." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Cuánto pagas los mangos?", "right": "¿Cuánto cuestan los mangos?", "why": "Almost. A price is about the thing, so ask what it costs: *cuestan*." },
+    { "wrong": "Los mangos cuesta tres mil.", "right": "Los mangos cuestan tres mil.", "why": "*Costar* agrees with the thing: more than one mango, *cuestan*." },
+    { "wrong": "Vale costó diez mil pesos.", "right": "Vale pagó diez mil pesos.", "why": "People don't cost, they pay. *Costar* is for the thing." }
+  ],
+  "personal": "Think of something you bought this week. Write what one of them costs with *cuesta* or *cuestan*, and say how much a friend paid with *pagó*."
+}

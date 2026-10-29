@@ -1,0 +1,48 @@
+{
+  "node": "g:preterite-er-ir",
+  "hook": {
+    "line": "In Colombia people check you've eaten the way others ask how you are. Now you can answer with what you ate, and where you went last night.",
+    "es": "¿Ya comiste?\nSí, comí ajiaco con Vale.",
+    "en": "Have you eaten yet?\nYes, I had ajiaco with Vale."
+  },
+  "examples": [
+    { "es": "Comí arepas en el centro.", "en": "I ate arepas downtown." },
+    { "es": "¿Saliste anoche?", "en": "Did you go out last night? (to a friend)" },
+    { "es": "Vale y Tomás abrieron el café a las seis.", "en": "Vale and Tomás opened the café at six." },
+    { "es": "No entendimos la carta de Altamira.", "en": "We didn't understand the letter from Altamira." },
+    { "es": "Mariana escribió un artículo sobre el barrio.", "en": "Mariana wrote an article about the neighbourhood." },
+    { "es": "¿Ustedes vivieron en Toronto?", "en": "Did you all live in Toronto?" }
+  ],
+  "rule": "Good news: *-er* and *-ir* verbs share one set of past endings.\n\n*comí*: I ate\n*comiste*: you ate\n*comió*: he, she or you (polite) ate\n*comimos*: we ate\n*comieron*: they or you all ate\n\n*Salir*, *vivir* and *escribir* work the same: *salí*, *viviste*, *escribió*.\n\nThe *-ar* past had *-é* and *-ó*. Here the 'I' and 'he' forms end in an accented *-í* and *-ió*: *trabajé* but *comí*; *trabajó* but *comió*.\n\nAgain the accent matters: *como* is 'I eat', *comió* is 'he ate'.\n\nFor *-er* verbs, 'we' changes: *comemos* (we eat), *comimos* (we ate). For *-ir* verbs, *vivimos* and *salimos* look the same in both, so the time word tells you.",
+  "smallPrint": "Teachers call this the preterite of regular *-er* and *-ir* verbs.",
+  "soundTip": "The accented endings carry the stress: *co-MÍ*, *co-MIÓ*. In *-ió* the *i* glides into the *o*, like the 'yo' in 'yo-yo', so *comió* has just two beats: *co-MIÓ*.",
+  "readAndPick": [
+    { "es": "Comió arepas.", "options": ["I ate arepas.", "He ate arepas.", "I eat arepas."], "answer": 1 },
+    { "es": "Salí a las siete.", "options": ["I left at seven.", "I leave at seven.", "She left at seven."], "answer": 0 },
+    { "es": "¿Entendiste?", "options": ["Did he understand?", "Do you understand?", "Did you understand?"], "answer": 2 },
+    { "es": "Ayer comimos ajiaco.", "options": ["We eat ajiaco.", "We ate ajiaco yesterday.", "They ate ajiaco yesterday."], "answer": 1 },
+    { "es": "Los clientes comieron arepas.", "options": ["The customers ate arepas.", "The customer ate arepas.", "We ate arepas."], "answer": 0 },
+    { "es": "Mariana entendió todo.", "options": ["I understood everything.", "Mariana understands everything.", "Mariana understood everything."], "answer": 2 },
+    { "es": "Escribí una carta a la abuela.", "options": ["I wrote a letter to Grandma.", "She wrote a letter to Grandma.", "I write a letter to Grandma."], "answer": 0 },
+    { "es": "Anoche salimos con Mariana.", "options": ["Last night they went out with Mariana.", "Last night we went out with Mariana."], "answer": 1 },
+    { "es": "No abrimos el domingo.", "options": ["We didn't open on Sunday.", "You didn't open on Sunday.", "He didn't open on Sunday."], "answer": 0 },
+    { "es": "Tomás vivió en Toronto.", "options": ["I lived in Toronto.", "Tomás lived in Toronto.", "Tomás lives in Toronto."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Pick the past form and type the whole sentence: *Ayer ___ con Vale.* (*como* or *comí*)", "answer": "Ayer comí con Vale.", "accept": ["Comí con Vale ayer."], "why": "*Ayer* points back, and 'I' in the past ends in *-í*." },
+    { "prompt": "Pick and type the whole sentence: *Don Hernando ___ a las siete.* (*salió* or *salí*)", "answer": "Don Hernando salió a las siete.", "accept": [], "why": "He is 'he', so *-ió*. *Salí* would be 'I left'." },
+    { "prompt": "Ask a friend: did you go out last night?", "answer": "¿Saliste anoche?", "accept": ["¿Anoche saliste?"], "why": "'You' (a friend) in the past ends in *-iste*." },
+    { "prompt": "Say: Mariana wrote an article.", "answer": "Mariana escribió un artículo.", "accept": [], "why": "'She' in the past ends in *-ió*." },
+    { "prompt": "Say: The customers ate arepas.", "answer": "Los clientes comieron arepas.", "accept": [], "why": "'They' in the past ends in *-ieron*." },
+    { "prompt": "Make it negative: *Entendí la carta.*", "answer": "No entendí la carta.", "accept": [], "why": "*No* goes right before the verb." },
+    { "prompt": "Make it about 'we': *Comí en el centro.*", "answer": "Comimos en el centro.", "accept": [], "why": "'We' in the past is *-imos*: *comimos*, not *comemos*." },
+    { "prompt": "Ask a group of friends: did you all live in Toronto?", "answer": "¿Ustedes vivieron en Toronto?", "accept": ["¿Vivieron en Toronto?", "¿Vivieron ustedes en Toronto?"], "why": "*Ustedes* takes the 'they' ending, *-ieron*." }
+  ],
+  "pitfalls": [
+    { "wrong": "Ayer comé arepas.", "right": "Ayer comí arepas.", "why": "Almost. *-é* is the *-ar* ending; *-er* and *-ir* verbs use *-í*." },
+    { "wrong": "Vale salio a las seis.", "right": "Vale salió a las seis.", "why": "Without the accent the stress slides to the front; *salió* needs its mark." },
+    { "wrong": "Ayer comemos ajiaco.", "right": "Ayer comimos ajiaco.", "why": "*Comemos* is 'we eat'. The past is *comimos*." },
+    { "wrong": "Los clientes comiron arepas.", "right": "Los clientes comieron arepas.", "why": "'They' takes *-ieron*, with an *e* after the *i*." }
+  ],
+  "personal": "What did you eat yesterday, and did you go out? Write two lines with *comí* and *salí* (or *no salí*), and one about someone you live with."
+}

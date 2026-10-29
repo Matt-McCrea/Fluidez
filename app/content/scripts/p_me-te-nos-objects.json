@@ -1,0 +1,43 @@
+{
+  "node": "p:me-te-nos-objects",
+  "hook": {
+    "line": "At a market stall you will need help, and you will promise to call back. Both come down to three tiny words you already know from *me gusta*.",
+    "es": "¿Me ayudas?\nClaro, te ayudo.",
+    "en": "Will you help me?\nSure, I'll help you."
+  },
+  "examples": [
+    { "es": "Te llamo mañana.", "en": "I'll call you tomorrow. (to a friend)" },
+    { "es": "¿Me das un tinto?", "en": "Can you give me a black coffee? (to a friend)" },
+    { "es": "Vale nos ayudó el sábado.", "en": "Vale helped us on Saturday." },
+    { "es": "No te entiendo.", "en": "I don't understand you. (to a friend)" },
+    { "es": "¿Me llamaste anoche?", "en": "Did you call me last night? (to a friend)" },
+    { "es": "Mariana me regaló una flor.", "en": "Mariana gave me a flower." }
+  ],
+  "rule": "*Me*, *te* and *nos* aren't only for *me gusta*. They are 'me', 'you' and 'us' when someone does something to you or for you.\n\nThey go in front of the verb:\n*Te llamo.* I'll call you.\n*Vale nos ayudó.* Vale helped us.\n\nEnglish puts 'me' after the verb; Spanish puts it before. With *no*, the order is *no*, then *me*, then the verb: *No te entiendo.*\n\n*Me* can also mean 'to me' or 'for me': *¿Me das un tinto?*",
+  "smallPrint": "Teachers call these object pronouns.",
+  "readAndPick": [
+    { "es": "Te llamo mañana.", "options": ["You'll call me tomorrow.", "I'll call you tomorrow."], "answer": 1 },
+    { "es": "¿Me llamas mañana?", "options": ["Will you call me tomorrow?", "Shall I call you tomorrow?"], "answer": 0 },
+    { "es": "Te ayudamos.", "options": ["You help us.", "We'll help you."], "answer": 1 },
+    { "es": "Vale nos ayudó.", "options": ["Vale helped us.", "We helped Vale.", "Vale helped me."], "answer": 0 },
+    { "es": "Mariana te llamó.", "options": ["You called Mariana.", "Mariana called me.", "Mariana called you."], "answer": 2 },
+    { "es": "¿Me esperas?", "options": ["Will you wait for me?", "Shall I wait for you?"], "answer": 0 },
+    { "es": "¿Nos das la cuenta?", "options": ["Can we give you the bill?", "Can you give us the bill?"], "answer": 1 },
+    { "es": "No me entiende.", "options": ["I don't understand him.", "He doesn't understand me."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "Ask a friend to help you. Pick and type the whole question: *¿___ ayudas?* (*Me* or *Te*)", "answer": "¿Me ayudas?", "accept": [], "why": "You want help for yourself, so *me*." },
+    { "prompt": "Tell a friend you'll call them tomorrow. Pick and type: *___ llamo mañana.* (*Me* or *Te*)", "answer": "Te llamo mañana.", "accept": ["Mañana te llamo."], "why": "Your friend gets the call, so *te*." },
+    { "prompt": "Ask a friend: can you give me a black coffee?", "answer": "¿Me das un tinto?", "accept": [], "why": "'Give me' is *me das*: *me* before the verb." },
+    { "prompt": "Say: Vale helped us on Saturday.", "answer": "Vale nos ayudó el sábado.", "accept": ["El sábado Vale nos ayudó."], "why": "'Us' is *nos*, right before *ayudó*." },
+    { "prompt": "Ask a friend: did you call me last night?", "answer": "¿Me llamaste anoche?", "accept": ["¿Anoche me llamaste?"], "why": "*Me* goes in front of *llamaste*." },
+    { "prompt": "Make it negative: *Te entiendo.*", "answer": "No te entiendo.", "accept": [], "why": "*No* comes first, then *te*, then the verb." },
+    { "prompt": "Make it about 'us': *¿Me esperas?* (to a friend)", "answer": "¿Nos esperas?", "accept": [], "why": "Swap *me* for *nos*; the verb stays the same." }
+  ],
+  "pitfalls": [
+    { "wrong": "¿Ayudas me?", "right": "¿Me ayudas?", "why": "Almost. In Spanish, *me* goes in front of the verb." },
+    { "wrong": "Yo te no entiendo.", "right": "No te entiendo.", "why": "*No* comes first, then *te*: nothing goes between *te* and the verb." },
+    { "wrong": "Mariana llamó yo.", "right": "Mariana me llamó.", "why": "*Yo* is the person doing it. For 'me' on the receiving end, use *me* before the verb." }
+  ],
+  "personal": "Who helped you this week? Write one line with *me ayudó*, then ask a friend for something with *¿Me das* or *¿Me ayudas?*"
+}
