@@ -36,6 +36,11 @@ export const GraphNode = z.object({
   gender: z.enum(['m', 'f', 'mf']).optional(),
   freqRank: z.number().int().positive().optional(),
   peninsular: z.string().optional(),    // Peninsular variant, accepted not taught
+  // Nodes taught for recognition only (Spain's vosotros, paisa voseo). The dialect
+  // lint exempts content written for these on purpose.
+  variety: z.enum(['neutral', 'peninsular', 'voseo']).default('neutral'),
+  match: z.array(z.string()).optional(), // chunks: exact surface patterns the tagger matches
+  tags: z.array(z.string()).optional(),  // tagger feature keys this node owns
 });
 export type GraphNode = z.infer<typeof GraphNode>;
 
@@ -76,8 +81,12 @@ export const BankSentence = z.object({
   en: z.string(),
   accept: z.array(z.string()).default([]),   // other correct Spanish for the en prompt
   acceptEn: z.array(z.string()).default([]), // other correct English for the es prompt
-  requires: z.array(NodeId).default([]),     // computed by the tagger, never hand-written
+  requires: z.array(NodeId).default([]),     // grammar/pattern/chunk nodes; computed by the tagger
+  lexemes: z.array(NodeId).default([]),      // l: nodes; computed by the tagger
   targets: z.array(NodeId).default([]),      // nodes this sentence was written to practise
+  kind: z.enum(['statement', 'question', 'dialogue']).optional(),
+  chapter: z.string().optional(),
+  scene: z.string().optional(),
   unit: z.string().optional(),
   theme: z.string().optional(),
   source: z.string().optional(),             // old id it was mined from, or 'gen'
@@ -108,6 +117,11 @@ export const StoryChapter = z.object({
     q: z.string(), options: z.array(z.string()).min(2).optional(), answer: z.union([z.number().int(), z.string()]),
   })).min(3),
   hook: z.string(),                     // the line that sets up tomorrow
+  rereadQuestions: z.array(z.object({    // fresh questions for the deliberate re-read
+    q: z.string(), options: z.array(z.string()).min(2).optional(), answer: z.union([z.number().int(), z.string()]),
+  })).default([]),
+  requires: z.array(NodeId).default([]), // computed by the tagger
+  lexemes: z.array(NodeId).default([]),
 });
 export type StoryChapter = z.infer<typeof StoryChapter>;
 
@@ -128,6 +142,7 @@ export const Scene = z.object({
   title: z.string(),
   brief: z.string(),
   turns: z.array(SceneTurn).min(3),
+  requires: z.array(NodeId).default([]), // computed by the tagger over npc lines and accepts
 });
 export type Scene = z.infer<typeof Scene>;
 
@@ -140,5 +155,6 @@ export const WritingTask = z.object({
   constraints: z.array(z.record(z.string(), z.unknown())).default([]),
   model: z.string(),
   focus: NodeId.optional(),
+  requires: z.array(NodeId).default([]), // computed by the tagger over the model
 });
 export type WritingTask = z.infer<typeof WritingTask>;

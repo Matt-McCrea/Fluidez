@@ -1,0 +1,887 @@
+{
+  "generatedAt": "2026-10-28T23:03:43.263Z",
+  "factor": 3,
+  "source": "synthetic",
+  "days": 1100,
+  "tier": "standard",
+  "profiles": [
+    "fast",
+    "average",
+    "forgetful",
+    "irregular"
+  ],
+  "units": {
+    "u01": {
+      "bankSentences": 1299,
+      "chapters": 2,
+      "scenes": 0,
+      "writingTasks": 15,
+      "maxDemand": {
+        "sentences": 433,
+        "chapters": 2,
+        "scenes": 0,
+        "tasks": 5
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u02": {
+      "bankSentences": 2565,
+      "chapters": 2,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 855,
+        "chapters": 2,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u03": {
+      "bankSentences": 2121,
+      "chapters": 2,
+      "scenes": 3,
+      "writingTasks": 12,
+      "maxDemand": {
+        "sentences": 707,
+        "chapters": 2,
+        "scenes": 1,
+        "tasks": 4
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u04": {
+      "bankSentences": 2076,
+      "chapters": 2,
+      "scenes": 6,
+      "writingTasks": 15,
+      "maxDemand": {
+        "sentences": 692,
+        "chapters": 2,
+        "scenes": 2,
+        "tasks": 5
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u05": {
+      "bankSentences": 2991,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 997,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u06": {
+      "bankSentences": 1698,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 3,
+      "maxDemand": {
+        "sentences": 566,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 1
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u07": {
+      "bankSentences": 2157,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 719,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 2
+    },
+    "u08": {
+      "bankSentences": 2760,
+      "chapters": 3,
+      "scenes": 6,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 920,
+        "chapters": 3,
+        "scenes": 2,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 4
+    },
+    "u09": {
+      "bankSentences": 3279,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 12,
+      "maxDemand": {
+        "sentences": 1093,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 4
+      },
+      "estimated": false,
+      "shortages": 3
+    },
+    "u10": {
+      "bankSentences": 3552,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 3,
+      "maxDemand": {
+        "sentences": 1184,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 1
+      },
+      "estimated": false,
+      "shortages": 8
+    },
+    "u11": {
+      "bankSentences": 2493,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 3,
+      "maxDemand": {
+        "sentences": 831,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 1
+      },
+      "estimated": false,
+      "shortages": 4
+    },
+    "u12": {
+      "bankSentences": 3267,
+      "chapters": 3,
+      "scenes": 6,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1089,
+        "chapters": 3,
+        "scenes": 2,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 11
+    },
+    "u13": {
+      "bankSentences": 2661,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 887,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 8
+    },
+    "u14": {
+      "bankSentences": 2085,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 695,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 8
+    },
+    "u15": {
+      "bankSentences": 4380,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 3,
+      "maxDemand": {
+        "sentences": 1460,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 1
+      },
+      "estimated": false,
+      "shortages": 22
+    },
+    "u16": {
+      "bankSentences": 4227,
+      "chapters": 3,
+      "scenes": 6,
+      "writingTasks": 12,
+      "maxDemand": {
+        "sentences": 1409,
+        "chapters": 3,
+        "scenes": 2,
+        "tasks": 4
+      },
+      "estimated": false,
+      "shortages": 10
+    },
+    "u17": {
+      "bankSentences": 3528,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1176,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 12
+    },
+    "u18": {
+      "bankSentences": 2883,
+      "chapters": 4,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 961,
+        "chapters": 4,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 6
+    },
+    "u19": {
+      "bankSentences": 3555,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 12,
+      "maxDemand": {
+        "sentences": 1185,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 4
+      },
+      "estimated": false,
+      "shortages": 8
+    },
+    "u20": {
+      "bankSentences": 3504,
+      "chapters": 4,
+      "scenes": 6,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1168,
+        "chapters": 4,
+        "scenes": 2,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 14
+    },
+    "u21": {
+      "bankSentences": 3882,
+      "chapters": 4,
+      "scenes": 3,
+      "writingTasks": 12,
+      "maxDemand": {
+        "sentences": 1294,
+        "chapters": 4,
+        "scenes": 1,
+        "tasks": 4
+      },
+      "estimated": false,
+      "shortages": 9
+    },
+    "u22": {
+      "bankSentences": 4977,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 12,
+      "maxDemand": {
+        "sentences": 1659,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 4
+      },
+      "estimated": false,
+      "shortages": 22
+    },
+    "u23": {
+      "bankSentences": 3816,
+      "chapters": 4,
+      "scenes": 3,
+      "writingTasks": 12,
+      "maxDemand": {
+        "sentences": 1272,
+        "chapters": 4,
+        "scenes": 1,
+        "tasks": 4
+      },
+      "estimated": false,
+      "shortages": 7
+    },
+    "u24": {
+      "bankSentences": 3876,
+      "chapters": 3,
+      "scenes": 6,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1292,
+        "chapters": 3,
+        "scenes": 2,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 8
+    },
+    "u25": {
+      "bankSentences": 4107,
+      "chapters": 4,
+      "scenes": 3,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1369,
+        "chapters": 4,
+        "scenes": 1,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 10
+    },
+    "u26": {
+      "bankSentences": 3153,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1051,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 7
+    },
+    "u27": {
+      "bankSentences": 4257,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1419,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 14
+    },
+    "u28": {
+      "bankSentences": 4062,
+      "chapters": 3,
+      "scenes": 6,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1354,
+        "chapters": 3,
+        "scenes": 2,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 14
+    },
+    "u29": {
+      "bankSentences": 5721,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1907,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 21
+    },
+    "u30": {
+      "bankSentences": 3720,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1240,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 10
+    },
+    "u31": {
+      "bankSentences": 3819,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 12,
+      "maxDemand": {
+        "sentences": 1273,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 4
+      },
+      "estimated": false,
+      "shortages": 6
+    },
+    "u32": {
+      "bankSentences": 5841,
+      "chapters": 3,
+      "scenes": 6,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1947,
+        "chapters": 3,
+        "scenes": 2,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 13
+    },
+    "u33": {
+      "bankSentences": 5391,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1797,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 14
+    },
+    "u34": {
+      "bankSentences": 4863,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1621,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 18
+    },
+    "u35": {
+      "bankSentences": 5046,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1682,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 23
+    },
+    "u36": {
+      "bankSentences": 3114,
+      "chapters": 3,
+      "scenes": 6,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1038,
+        "chapters": 3,
+        "scenes": 2,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 10
+    },
+    "u37": {
+      "bankSentences": 4029,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 3,
+      "maxDemand": {
+        "sentences": 1343,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 1
+      },
+      "estimated": false,
+      "shortages": 12
+    },
+    "u38": {
+      "bankSentences": 3984,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 3,
+      "maxDemand": {
+        "sentences": 1328,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 1
+      },
+      "estimated": false,
+      "shortages": 11
+    },
+    "u39": {
+      "bankSentences": 5451,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1817,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 20
+    },
+    "u40": {
+      "bankSentences": 5217,
+      "chapters": 3,
+      "scenes": 6,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1739,
+        "chapters": 3,
+        "scenes": 2,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 25
+    },
+    "u41": {
+      "bankSentences": 2937,
+      "chapters": 3,
+      "scenes": 3,
+      "writingTasks": 3,
+      "maxDemand": {
+        "sentences": 979,
+        "chapters": 3,
+        "scenes": 1,
+        "tasks": 1
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u42": {
+      "bankSentences": 4530,
+      "chapters": 5,
+      "scenes": 6,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1510,
+        "chapters": 5,
+        "scenes": 2,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 2
+    },
+    "u43": {
+      "bankSentences": 3690,
+      "chapters": 5,
+      "scenes": 3,
+      "writingTasks": 12,
+      "maxDemand": {
+        "sentences": 1230,
+        "chapters": 5,
+        "scenes": 1,
+        "tasks": 4
+      },
+      "estimated": false,
+      "shortages": 5
+    },
+    "u44": {
+      "bankSentences": 3993,
+      "chapters": 5,
+      "scenes": 6,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1331,
+        "chapters": 5,
+        "scenes": 2,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 1
+    },
+    "u45": {
+      "bankSentences": 3933,
+      "chapters": 5,
+      "scenes": 3,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1311,
+        "chapters": 5,
+        "scenes": 1,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 2
+    },
+    "u46": {
+      "bankSentences": 5529,
+      "chapters": 5,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1843,
+        "chapters": 5,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 7
+    },
+    "u47": {
+      "bankSentences": 5691,
+      "chapters": 5,
+      "scenes": 3,
+      "writingTasks": 3,
+      "maxDemand": {
+        "sentences": 1897,
+        "chapters": 5,
+        "scenes": 1,
+        "tasks": 1
+      },
+      "estimated": false,
+      "shortages": 6
+    },
+    "u48": {
+      "bankSentences": 3489,
+      "chapters": 5,
+      "scenes": 6,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1163,
+        "chapters": 5,
+        "scenes": 2,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 6
+    },
+    "u49": {
+      "bankSentences": 5439,
+      "chapters": 5,
+      "scenes": 6,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1813,
+        "chapters": 5,
+        "scenes": 2,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 3
+    },
+    "u50": {
+      "bankSentences": 4689,
+      "chapters": 5,
+      "scenes": 3,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 1563,
+        "chapters": 5,
+        "scenes": 1,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u51": {
+      "bankSentences": 4563,
+      "chapters": 5,
+      "scenes": 3,
+      "writingTasks": 6,
+      "maxDemand": {
+        "sentences": 1521,
+        "chapters": 5,
+        "scenes": 1,
+        "tasks": 2
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u52": {
+      "bankSentences": 4386,
+      "chapters": 5,
+      "scenes": 9,
+      "writingTasks": 15,
+      "maxDemand": {
+        "sentences": 1462,
+        "chapters": 5,
+        "scenes": 3,
+        "tasks": 5
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u53": {
+      "bankSentences": 6747,
+      "chapters": 5,
+      "scenes": 6,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 2249,
+        "chapters": 5,
+        "scenes": 2,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 7
+    },
+    "u54": {
+      "bankSentences": 2844,
+      "chapters": 5,
+      "scenes": 6,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 948,
+        "chapters": 5,
+        "scenes": 2,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u55": {
+      "bankSentences": 3237,
+      "chapters": 5,
+      "scenes": 3,
+      "writingTasks": 3,
+      "maxDemand": {
+        "sentences": 1079,
+        "chapters": 5,
+        "scenes": 1,
+        "tasks": 1
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u56": {
+      "bankSentences": 2184,
+      "chapters": 5,
+      "scenes": 9,
+      "writingTasks": 12,
+      "maxDemand": {
+        "sentences": 728,
+        "chapters": 5,
+        "scenes": 3,
+        "tasks": 4
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u57": {
+      "bankSentences": 2394,
+      "chapters": 5,
+      "scenes": 6,
+      "writingTasks": 9,
+      "maxDemand": {
+        "sentences": 798,
+        "chapters": 5,
+        "scenes": 2,
+        "tasks": 3
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u58": {
+      "bankSentences": 2286,
+      "chapters": 5,
+      "scenes": 3,
+      "writingTasks": 3,
+      "maxDemand": {
+        "sentences": 762,
+        "chapters": 5,
+        "scenes": 1,
+        "tasks": 1
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u59": {
+      "bankSentences": 2886,
+      "chapters": 5,
+      "scenes": 6,
+      "writingTasks": 12,
+      "maxDemand": {
+        "sentences": 962,
+        "chapters": 5,
+        "scenes": 2,
+        "tasks": 4
+      },
+      "estimated": false,
+      "shortages": 0
+    },
+    "u60": {
+      "bankSentences": 3420,
+      "chapters": 5,
+      "scenes": 9,
+      "writingTasks": 15,
+      "maxDemand": {
+        "sentences": 1140,
+        "chapters": 5,
+        "scenes": 3,
+        "tasks": 5
+      },
+      "estimated": false,
+      "shortages": 0
+    }
+  },
+  "perNode": {
+    "chunk": {
+      "maxDemand": 107,
+      "p95Demand": 38,
+      "meanDemand": 18.6,
+      "quota": 114
+    },
+    "lexeme": {
+      "maxDemand": 121,
+      "p95Demand": 39,
+      "meanDemand": 19.4,
+      "quota": 117
+    },
+    "grammar": {
+      "maxDemand": 156,
+      "p95Demand": 86,
+      "meanDemand": 60.9,
+      "quota": 258
+    },
+    "pattern": {
+      "maxDemand": 115,
+      "p95Demand": 37,
+      "meanDemand": 19.5,
+      "quota": 111
+    },
+    "contrast": {
+      "maxDemand": 133,
+      "p95Demand": 43,
+      "meanDemand": 20.7,
+      "quota": 129
+    }
+  }
+}

@@ -3,7 +3,11 @@
     "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
     "strict": true,
@@ -12,7 +16,18 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "types": ["node", "vitest/globals"]
+    "types": [
+      "node",
+      "vitest/globals"
+    ]
   },
-  "include": ["src", "tools", "tests", "content/**/*.json"]
+  "include": [
+    "src",
+    "tools",
+    "tests",
+    "content/**/*.json"
+  ],
+  "exclude": [
+    "tools/curriculum"
+  ]
 }
