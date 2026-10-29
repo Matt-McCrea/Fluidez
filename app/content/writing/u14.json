@@ -1,0 +1,523 @@
+[
+  {
+    "id": "w-u14-01",
+    "unit": "u14",
+    "prompt": "Vale asks in WhatsApp which of the customers you like most. Answer her in two or three sentences and describe one person with a detail: \"the man who...\" or \"the woman who...\".",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(el|la|los|las)\\s+\\S+\\s+que\\s+\\S+",
+        "label": "describe someone with que (el señor que...)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "señor",
+          "señora",
+          "chico",
+          "chica",
+          "hombre",
+          "mujer"
+        ],
+        "label": "say who the person is"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Me gusta Don Hernando. Es el señor que viene todos los días.",
+    "focus": "g:relative-que",
+    "requires": [
+      "c:me-gusta",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:relative-que",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:día",
+      "l:gustar",
+      "l:ser",
+      "l:señor",
+      "l:venir",
+      "p:senor-don-article",
+      "p:todos-los-dias",
+      "p:veces-al"
+    ]
+  },
+  {
+    "id": "w-u14-02",
+    "unit": "u14",
+    "prompt": "You are telling your friend Mariana about a book you bought. Write two or three sentences: say what it is, and add a detail with \"that\" (the book that...).",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(el|la|los|las|un|una)\\s+\\S+\\s+que\\s+\\S+",
+        "label": "add a detail with que (el libro que...)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "libro",
+          "libros"
+        ],
+        "label": "mention the book"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Compré un libro. Es el libro que mi amiga me recomendó.",
+    "focus": "g:relative-que",
+    "requires": [
+      "c:compre-trabaje",
+      "g:gender-articles",
+      "g:preterite-ar",
+      "g:relative-que",
+      "g:ser-identity",
+      "l:amiga",
+      "l:comprar",
+      "l:libro",
+      "l:recomendar",
+      "l:ser",
+      "p:me-te-nos-objects",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u14-03",
+    "unit": "u14",
+    "prompt": "A friend asks why you are not going to the party tonight. Reply in two sentences, giving the reason with \"porque\" at the end.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "porque",
+        "label": "give a reason with porque"
+      },
+      {
+        "type": "negation",
+        "label": "say you are not going"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "No voy a la fiesta. Estoy muy cansado porque trabajé todo el día.",
+    "focus": "g:cause-result",
+    "requires": [
+      "c:compre-trabaje",
+      "c:porque",
+      "c:voy-a",
+      "g:cause-result",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:preterite-ar",
+      "l:cansado",
+      "l:día",
+      "l:estar",
+      "l:fiesta",
+      "l:ir",
+      "l:trabajar",
+      "p:ir-a-venir-de-place",
+      "p:quantifiers-basic",
+      "p:todos-los-dias"
+    ]
+  },
+  {
+    "id": "w-u14-04",
+    "unit": "u14",
+    "prompt": "Your neighbour asks why you came home late. Start the reason with \"como\" (since), then say what happened as a result.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "(^|[.!?]\\s*)como\\s+\\S+",
+        "label": "start with como (Como llovía...)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "por eso",
+          "así que"
+        ],
+        "label": "add the result with por eso or así que"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "porque"
+        ],
+        "label": "como goes first, not porque"
+      }
+    ],
+    "model": "Como llovía mucho, salí tarde. Por eso no cené con ustedes.",
+    "focus": "g:cause-result",
+    "requires": [
+      "g:cause-result",
+      "g:imperfect-habitual",
+      "g:prep-pronouns",
+      "g:pret-vs-imperfect",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:cenar",
+      "l:llover",
+      "l:salir",
+      "l:tarde",
+      "p:demonstratives-basic",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u14-05",
+    "unit": "u14",
+    "prompt": "Tomás has to explain to the landlord why he is staying in Bogotá. Write two sentences: a reason, then \"así que\" with what he decides.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "así que",
+        "label": "use así que for the result"
+      },
+      {
+        "type": "minSentences",
+        "n": 1
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "presente",
+        "label": "use the present"
+      }
+    ],
+    "model": "El café es importante para mi familia, así que me quedo un año.",
+    "focus": "g:cause-result",
+    "requires": [
+      "g:cause-result",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:ser-identity",
+      "l:año",
+      "l:café",
+      "l:familia",
+      "l:importante",
+      "l:quedarse",
+      "l:ser",
+      "p:para-inf",
+      "p:possessives-basic"
+    ]
+  },
+  {
+    "id": "w-u14-06",
+    "unit": "u14",
+    "prompt": "Your grandmother's friend Doña Luz gave you a gift. Write her a note in two sentences: tell her you want to give her a hug, and ask her to call you. She is an older woman you call usted.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "le",
+          "la",
+          "lo"
+        ],
+        "label": "use le for usted (le quiero...)"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "te ",
+          "tú",
+          "puedes",
+          "quieres",
+          "llámame"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Doña Luz, quiero darle un abrazo. Voy a llamarla mañana.",
+    "focus": "g:indirect-objects",
+    "requires": [
+      "c:quiero",
+      "c:un-abrazo",
+      "c:voy-a",
+      "g:direct-objects",
+      "g:indirect-objects",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:abrazo",
+      "l:dar",
+      "l:ir",
+      "l:llamar",
+      "l:mañana",
+      "l:querer",
+      "p:don-dona-nombre",
+      "p:senor-don-article"
+    ]
+  },
+  {
+    "id": "w-u14-07",
+    "unit": "u14",
+    "prompt": "Your friend Vale asks about the lease letter you found. Tell her in two sentences that you are going to send it to her and that you want to read it again. Put the little word on the verb in one of them (mandarla, leerla...).",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b\\S+(ar|er|ir)(la|lo|te|me|las|los|se|le)\\b",
+        "label": "glue the little word to the infinitive (mandártela, leerlo)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Voy a mandarte la carta hoy. Quiero leerla otra vez.",
+    "focus": "g:object-pronoun-position",
+    "requires": [
+      "c:quiero",
+      "c:voy-a",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:object-pronoun-position",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:carta",
+      "l:hoy",
+      "l:ir",
+      "l:leer",
+      "l:mandar",
+      "l:querer",
+      "l:vez",
+      "p:me-te-nos-objects",
+      "p:otro-no-article"
+    ]
+  },
+  {
+    "id": "w-u14-08",
+    "unit": "u14",
+    "prompt": "Your coworker asks whether you called the customer yet. Reply in two sentences: say you are going to call him, and why. Put the little word before the verb in one sentence.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(lo|le)\\s+voy\\s+a\\s+\\S+",
+        "label": "put the little word before voy a (lo voy a llamar)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "porque",
+          "por eso",
+          "así que"
+        ],
+        "label": "give a reason"
+      }
+    ],
+    "model": "Lo voy a llamar ahora porque necesita una respuesta.",
+    "focus": "g:object-pronoun-position",
+    "requires": [
+      "c:porque",
+      "c:voy-a",
+      "g:cause-result",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:present-ar",
+      "l:ahora",
+      "l:ir",
+      "l:llamar",
+      "l:necesitar",
+      "l:respuesta"
+    ]
+  },
+  {
+    "id": "w-u14-09",
+    "unit": "u14",
+    "prompt": "Write a short WhatsApp to Mariana saying what you use your phone for. Use \"para\" plus a verb, and give one example with \"por ejemplo\".",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bpara\\s+\\S+(ar|er|ir)\\b",
+        "label": "use para + verb (para llamar)"
+      },
+      {
+        "type": "containsWord",
+        "word": "por ejemplo",
+        "label": "give an example with por ejemplo"
+      }
+    ],
+    "model": "Uso el celular para trabajar. Por ejemplo, para mandar mensajes a Vale.",
+    "focus": "p:para-inf-purpose",
+    "requires": [
+      "c:por-ejemplo",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:celular",
+      "l:ejemplo",
+      "l:mandar",
+      "l:mensaje",
+      "l:trabajar",
+      "l:usar",
+      "p:para-inf",
+      "p:para-inf-purpose"
+    ]
+  },
+  {
+    "id": "w-u14-10",
+    "unit": "u14",
+    "prompt": "Vale asks if the new café is worth it. Answer her in two or three sentences with \"además\" to add a second good reason.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "además",
+        "label": "add a reason with además"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Sí, vale la pena. El café es bueno y, además, queda cerca.",
+    "focus": "c:ademas",
+    "requires": [
+      "c:ademas",
+      "c:vale-la-pena",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity",
+      "l:además",
+      "l:bueno",
+      "l:café",
+      "l:cerca",
+      "l:pena",
+      "l:quedar",
+      "l:ser",
+      "l:valer",
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:cerca-de",
+      "p:quedar-cerca"
+    ]
+  },
+  {
+    "id": "w-u14-11",
+    "unit": "u14",
+    "prompt": "Write a letter-style opening and closing to Don Hernando, an older friend (usted). Start with \"Querido...\", tell him some news with \"te cuento que\"/\"le cuento que\", and end with a hug.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "querido\\s+\\S+",
+        "label": "open with Querido Don Hernando"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "le cuento que",
+          "te cuento que"
+        ],
+        "label": "share news with le cuento que"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "un abrazo"
+        ],
+        "label": "end with Un abrazo"
+      }
+    ],
+    "model": "Querido Don Hernando: le cuento que me quedo un año en el café. Un abrazo.",
+    "focus": "c:te-cuento-que",
+    "requires": [
+      "c:querido-querida",
+      "c:un-abrazo",
+      "g:gender-articles",
+      "g:indirect-objects",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:abrazo",
+      "l:año",
+      "l:café",
+      "l:contar",
+      "l:quedarse",
+      "l:querer"
+    ]
+  },
+  {
+    "id": "w-u14-12",
+    "unit": "u14",
+    "prompt": "Tomás tells Vale the plan in one message: he is staying, the lease is long, and he has a chance. Write three connected sentences using \"que\" for a detail and \"porque\" for a reason.",
+    "minWords": 12,
+    "maxWords": 35,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(el|la|los|las|un|una)\\s+\\S+\\s+que\\s+\\S+",
+        "label": "add a detail with que (la carta que...)"
+      },
+      {
+        "type": "containsWord",
+        "word": "porque",
+        "label": "give a reason with porque"
+      },
+      {
+        "type": "minSentences",
+        "n": 3
+      }
+    ],
+    "model": "Me quedo un año. La carta que encontré dice algo importante. Creo que tenemos una oportunidad porque el edificio es de Rosa.",
+    "focus": "g:relative-que",
+    "requires": [
+      "c:creo-que",
+      "c:porque",
+      "c:tienes",
+      "g:cause-result",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "g:relative-que",
+      "g:ser-identity",
+      "g:stem-e-i",
+      "g:that-clauses",
+      "l:año",
+      "l:carta",
+      "l:creer",
+      "l:decir",
+      "l:edificio",
+      "l:encontrar",
+      "l:importante",
+      "l:oportunidad",
+      "l:quedarse",
+      "l:ser",
+      "l:tener",
+      "p:indefinites-basic"
+    ]
+  }
+]
