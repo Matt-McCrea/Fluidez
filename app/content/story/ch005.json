@@ -2,7 +2,7 @@
   "id": "ch005",
   "unit": "u03",
   "title": "Treinta días",
-  "text": "Sábado, seis de la mañana. Hoy Vale no hace pan. Espera a Tomás en la puerta, con Hernando.\nVale: Tomás, ¿quién es el señor Ruiz?\nTomás: Un agente. Vende casas, apartamentos... y cafés.\nVale: ¿Y por qué hablas con el señor Ruiz?\nTomás: Porque... es que no tengo trabajo, Vale. En Toronto no tengo oficina, no tengo jefe. No tengo trabajo.\nHernando: ¿Y el café, Tomás? ¿Y Rosa?\nTomás: Rosa no está, don Hernando. Y el café... me da igual.\nVale: ¿Cómo así? ¿El café de tu abuela?\nTomás no contesta.\nVale: Bueno. Entonces, un trato.\nTomás: ¿Un trato?\nVale: Treinta días. ¿El café vende dos millones de pesos en treinta días? Tú trabajas aquí un año. ¿No vende dos millones? Llamas al señor Ruiz y vendes.\nTomás: ¿Un año? ¿Aquí? ¿Con Simón? No me gusta la idea.\nVale: ¿Y mis buñuelos? ¿Te gustan mis buñuelos?\nTomás: Los buñuelos... sí. Los buñuelos me gustan mucho.\nHernando: ¡Qué chévere! Y los domingos, ajedrez en el café. ¡Me encanta el ajedrez!\nTomás: No, no, un momento...\nHernando: ¡De una!\nSimón: ¡De una! ¡De una!\nVale: Listo. Treinta días, Tomás.",
+  "text": "Sábado, seis de la mañana. Hoy Vale no hace pan. Espera a Tomás en la puerta, con Hernando.\nVale: Tomás, ¿quién es el señor Ruiz?\nTomás: Un agente. Vende casas, apartamentos... y cafés.\nVale: ¿Y por qué hablas con el señor Ruiz?\nTomás: Porque... es que no tengo trabajo, Vale. En Toronto no tengo oficina, no tengo jefe. No tengo trabajo.\nHernando: ¿Y el café, Tomás? ¿Y Rosa?\nTomás: Rosa no vuelve, don Hernando. Y el café... me da igual.\nVale: ¿Cómo así? ¿El café de tu abuela?\nTomás no contesta.\nVale: Bueno. Entonces, un trato.\nTomás: ¿Un trato?\nVale: Treinta días. ¿El café vende dos millones de pesos en treinta días? Entonces no vendes, y el café abre un año más. ¿No vende dos millones? Llamas al señor Ruiz y vendes.\nTomás: ¿Un año más? ¿Aquí? ¿Con Simón? No me gusta la idea.\nVale: ¿Y mis buñuelos? ¿Te gustan mis buñuelos?\nTomás: Los buñuelos... sí. Los buñuelos me gustan mucho.\nHernando: ¡Qué chévere! Y los domingos, ajedrez en el café. ¡Me encanta el ajedrez!\nTomás: No, no, un momento...\nHernando: ¡De una!\nSimón: ¡De una! ¡De una!\nVale: Listo. Treinta días, Tomás.",
   "gloss": [
     {
       "es": "Espera a Tomás en la puerta",
@@ -13,8 +13,8 @@
       "en": "An estate agent. He sells houses, flats... and cafés."
     },
     {
-      "es": "Rosa no está",
-      "en": "Rosa's not here any more"
+      "es": "Rosa no vuelve",
+      "en": "Rosa isn't coming back"
     },
     {
       "es": "me da igual",
@@ -34,7 +34,11 @@
     },
     {
       "es": "¿El café vende dos millones de pesos en treinta días?",
-      "en": "Does the café sell two million pesos' worth in thirty days? (= if it does...)"
+      "en": "Does the café take two million pesos in thirty days? (= if it does...)"
+    },
+    {
+      "es": "el café abre un año más",
+      "en": "the café stays open for another year"
     },
     {
       "es": "Llamas al señor Ruiz y vendes",
@@ -59,6 +63,10 @@
     {
       "es": "¡De una!",
       "en": "You're on! Let's do it! (Colombian)"
+    },
+    {
+      "es": "Listo",
+      "en": "Done, settled"
     }
   ],
   "questions": [
@@ -85,7 +93,7 @@
     {
       "q": "What are the terms of Vale's deal?",
       "options": [
-        "If the café sells two million pesos in 30 days, Tomás stays a year; if not, he sells",
+        "If the café takes two million pesos in 30 days, it stays open a year; if not, Tomás sells",
         "Tomás pays Vale two million pesos",
         "Tomás works 30 days and then goes home",
         "Hernando buys the café"
@@ -155,7 +163,6 @@
     "c:porque",
     "c:que-chevere",
     "c:tengo",
-    "g:estar-location-states",
     "g:gender-articles",
     "g:gustar-basic",
     "g:present-ar",
@@ -168,6 +175,7 @@
     "p:senor-don-article"
   ],
   "lexemes": [
+    "l:abrir",
     "l:abuela",
     "l:agente",
     "l:ajedrez",
@@ -186,7 +194,6 @@
     "l:día",
     "l:encantar",
     "l:esperar",
-    "l:estar",
     "l:gustar",
     "l:hablar",
     "l:hacer",
@@ -208,9 +215,9 @@
     "l:señor",
     "l:sábado",
     "l:tener",
-    "l:trabajar",
     "l:trabajo",
     "l:trato",
-    "l:vender"
+    "l:vender",
+    "l:volver"
   ]
 }

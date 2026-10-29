@@ -2,7 +2,7 @@
   "id": "ch003",
   "unit": "u02",
   "title": "Las seis",
-  "text": "Lunes, seis de la mañana. El café no abre, pero Vale ya trabaja.\nVale: ¡Tomás! ¡Buenos días! ¿Ya comiste?\nTomás: No. ¿A las seis? En Toronto no trabajo a las seis.\nVale: Aquí sí. Así es un día normal, como con doña Rosa.\nVale hace pan, buñuelos y arepas. Compra la leche en la tienda de la esquina. Prepara el tinto.\nTomás: ¿Y yo?\nVale: Tú preparas el tinto de don Hernando. Llega a las siete. Todos los días.\nA las siete en punto, llega Hernando.\nHernando: ¡Buenos días, Vale! ¿Y el tinto?\nTomás: ¡A la orden, don Hernando! Hoy, tinto de Toronto.\nHernando toma un sorbo. Mira el tinto. Mira a Tomás.\nHernando: Ay, tinto... ¡que te mejores!\nSimón: ¡Que te mejores! ¡Que te mejores!\nVale: La verdad, Tomás, el tinto de Toronto no es tinto.\nHernando: Tomás, ¿y vives aquí, en La Candelaria?\nTomás: Vivo en un hostel, cerca.\nHernando: ¿En un hostel? ¿El nieto de Rosa vive en un hostel?\nTomás: Es que... la verdad, no sé.\nVale mira a Tomás. Tomás no mira a Vale.",
+  "text": "Lunes, seis de la mañana. El café no abre, pero Vale ya trabaja.\nVale: ¡Buenos días, Tomás! ¿Ya comiste?\nTomás: No. Y tengo sueño. En Toronto, a las seis, yo duermo.\nVale: Aquí no. Aquí, a las seis, trabajamos. Así es un día normal con doña Rosa.\nVale hace pan, buñuelos y arepas. Compra la leche en la tienda de la esquina. Prepara el tinto.\nTomás: ¿Y yo?\nVale: Tú preparas el tinto de don Hernando. Llega a las siete. Todos los días.\nA las siete en punto, llega Hernando.\nHernando: ¡Buenos días, Vale! ¿Y mi tinto?\nTomás: ¡A la orden, don Hernando! Hoy, tinto de Toronto.\nHernando toma un sorbo. Mira el tinto. Mira a Tomás.\nHernando: Ay, tinto... ¡que te mejores!\nSimón: ¡Que te mejores! ¡Que te mejores!\nVale: La verdad, Tomás, tu tinto no es tinto.\nHernando: Y tú, mijo, ¿dónde vives? ¿Aquí, en La Candelaria?\nTomás: Sí, en un hostel, aquí cerca.\nHernando: ¿En un hostel? ¿El nieto de Rosa, en un hostel?\nTomás: Es que... son unos días, nada más.\nVale mira a Tomás. Tomás no mira a Vale.",
   "gloss": [
     {
       "es": "Lunes, seis de la mañana",
@@ -13,8 +13,20 @@
       "en": "The café isn't open (not since Rosa's funeral)"
     },
     {
-      "es": "Así es un día normal, como con doña Rosa",
-      "en": "This is a normal day, like with Rosa"
+      "es": "¿Ya comiste?",
+      "en": "Have you eaten yet? (a friendly morning greeting)"
+    },
+    {
+      "es": "tengo sueño",
+      "en": "I'm sleepy"
+    },
+    {
+      "es": "yo duermo",
+      "en": "I'm asleep"
+    },
+    {
+      "es": "Así es un día normal con doña Rosa",
+      "en": "This is what a normal day with Rosa is like"
     },
     {
       "es": "buñuelos y arepas",
@@ -41,6 +53,10 @@
       "en": "At seven on the dot"
     },
     {
+      "es": "¡A la orden",
+      "en": "At your service (what Colombian waiters say)"
+    },
+    {
       "es": "Hernando toma un sorbo. Mira el tinto. Mira a Tomás.",
       "en": "Hernando takes a sip. He looks at the coffee. He looks at Tomás."
     },
@@ -49,8 +65,16 @@
       "en": "get well soon! (what you say to someone who's ill: here, to the coffee)"
     },
     {
-      "es": "un hostel, cerca",
-      "en": "a hostel (cheap shared rooms for backpackers), nearby"
+      "es": "La verdad",
+      "en": "To be honest"
+    },
+    {
+      "es": "un hostel, aquí cerca",
+      "en": "a hostel (cheap shared rooms for backpackers), near here"
+    },
+    {
+      "es": "son unos días, nada más",
+      "en": "it's just a few days"
     },
     {
       "es": "Vale mira a Tomás. Tomás no mira a Vale.",
@@ -98,17 +122,17 @@
       "answer": 0
     },
     {
-      "q": "Why is Hernando surprised at the end?",
+      "q": "Why does Vale look at Tomás at the end?",
       "options": [
-        "Rosa's grandson is living in a hostel",
-        "Tomás is from Toronto",
-        "Vale gets up at six",
+        "He says the hostel is only for a few days",
+        "He says he's from Toronto",
+        "He makes a bad coffee",
         "Simón talks"
       ],
       "answer": 0
     }
   ],
-  "hook": "Tomás says he doesn't know. That isn't quite true: he has a plan, and he hasn't told Vale.",
+  "hook": "Just a few days? Tomás has a plan, and he hasn't told Vale.",
   "rereadQuestions": [
     {
       "q": "What job does Vale give Tomás?",
@@ -131,10 +155,10 @@
       "answer": 0
     },
     {
-      "q": "Tomás says that in Toronto he doesn't work at six. What does Vale answer?",
+      "q": "Tomás says that at six in Toronto he's asleep. What does Vale answer?",
       "options": [
-        "Here he does",
-        "Nobody in Bogotá does",
+        "Here, at six, we work",
+        "Nobody in Bogotá gets up at six",
         "Then he can start at seven",
         "Simón starts at five"
       ],
@@ -146,8 +170,8 @@
     "c:es-que",
     "c:hola-buenos-dias",
     "c:la-verdad",
-    "c:no-se",
     "c:que-te-mejores",
+    "c:tengo",
     "c:vivo-en",
     "c:ya-comiste",
     "g:gender-articles",
@@ -165,7 +189,9 @@
     "l:cerca",
     "l:comer",
     "l:comprar",
+    "l:dormir",
     "l:día",
+    "l:dónde",
     "l:esquina",
     "l:hacer",
     "l:hoy",
@@ -174,6 +200,7 @@
     "l:lunes",
     "l:mañana",
     "l:mejorar",
+    "l:mijo",
     "l:mirar",
     "l:nieto",
     "l:normal",
@@ -181,9 +208,10 @@
     "l:pan",
     "l:preparar",
     "l:punto",
-    "l:saber",
     "l:ser",
     "l:sorbo",
+    "l:sueño",
+    "l:tener",
     "l:tienda",
     "l:tinto",
     "l:tomar",

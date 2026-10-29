@@ -2,58 +2,74 @@
   "id": "ch002",
   "unit": "u01",
   "title": "Un tinto, por favor",
-  "text": "Hernando: Vale, ¿me regala un tinto, por favor?\nTomás: ¿Tinto? Perdón, no entiendo. ¿Tinto? ¿Rojo?\nHernando: ¿Rojo? ¡No, mijo! Tinto es café. Café negro.\nSimón: ¡Tinto, por favor! ¡Tinto, por favor!\nHernando: Y pan, Vale, por favor.\nVale: Hoy no hay pan, don Hernando. Hay jugo.\nHernando: ¿Jugo? No, gracias. Quiero tinto.\nHernando: Y tú, Tomás... ¿médico?\nTomás: ¿Médico? No. Soy ingeniero. Trabajo en software, en Toronto.\nHernando: ¿Ingeniero? Pero doña Rosa, siempre: «Tomás es médico en Canadá. ¡Médico!».\nTomás: ¿Médico? ¡Ay, abuela!\nVale: Y según doña Rosa, don Hernando es bailarín de tango.\nHernando: ¿Bailarín? Tengo setenta y uno, mija. Y no tengo tinto.\nTomás: Vale... ¿Altamira?\nVale: Hoteles, Tomás. Hoteles, hoteles y más hoteles.\nHernando: Y problemas, mijo.",
+  "text": "Hoy el café no abre... pero don Hernando ya está en su mesa.\nHernando: Vale, ¿me regala un tinto, por favor?\nTomás: Perdón, no entiendo. ¿Tinto? ¿Tinto no es rojo?\nHernando: ¿Rojo? ¡No, mijo! Aquí el tinto es café negro.\nSimón: ¡Un tinto, por favor! ¡Un tinto, por favor!\nHernando: Y un pan, Vale, por favor.\nVale: Hoy no hay pan, don Hernando. Hay jugo.\nHernando: ¿Jugo? No, gracias. Yo quiero mi tinto.\nHernando: Y tú, Tomás, eres el médico de Canadá, ¿no?\nTomás: ¿Médico? No, soy ingeniero. Trabajo en software, en Toronto.\nHernando: ¿Ingeniero? Pero según Rosa, eres médico. «Mi nieto, el médico de Canadá».\nTomás: ¡Ay, abuela!\nVale: Y según doña Rosa, don Hernando baila tango.\nHernando: ¿Tango? Mija, tengo setenta y un años. Y no tengo tinto.\nTomás: Vale... ¿y Altamira? ¿Qué es?\nVale: Una empresa de hoteles. Hoteles, hoteles y más hoteles.\nHernando: Y problemas, mijo. Muchos problemas.",
   "gloss": [
     {
-      "es": "¿Rojo?",
-      "en": "Red? (tinto also means deep red, like red wine)"
+      "es": "ya está en su mesa",
+      "en": "is already at his usual table"
+    },
+    {
+      "es": "¿me regala un tinto, por favor?",
+      "en": "could I have a coffee, please? (Colombian: literally «will you give me»)"
+    },
+    {
+      "es": "¿Tinto no es rojo?",
+      "en": "Doesn't tinto mean red? (as in vino tinto, red wine)"
     },
     {
       "es": "mijo",
       "en": "son, lad (warm, from «mi hijo»)"
     },
     {
-      "es": "Tinto es café. Café negro.",
-      "en": "Tinto is coffee. Black coffee. (in Colombia, a small black coffee)"
+      "es": "Aquí el tinto es café negro",
+      "en": "Here, tinto is black coffee (in Colombia, a small black coffee)"
     },
     {
-      "es": "Pero doña Rosa, siempre: «Tomás es médico en Canadá. ¡Médico!»",
-      "en": "But Rosa was always saying: \"Tomás is a doctor in Canada. A doctor!\""
+      "es": "según Rosa, eres médico",
+      "en": "according to Rosa, you're a doctor"
+    },
+    {
+      "es": "«Mi nieto, el médico de Canadá»",
+      "en": "\"My grandson, the doctor in Canada\" (what Rosa told everyone)"
     },
     {
       "es": "¡Ay, abuela!",
       "en": "Oh, Grandma!"
     },
     {
-      "es": "según doña Rosa",
-      "en": "according to Rosa"
+      "es": "baila tango",
+      "en": "dances the tango"
     },
     {
-      "es": "bailarín de tango",
-      "en": "a tango dancer"
+      "es": "Mija",
+      "en": "Dear, girl (warm, from «mi hija»)"
     },
     {
-      "es": "mija",
-      "en": "girl, dear (warm, from «mi hija»)"
+      "es": "tengo setenta y un años",
+      "en": "I'm seventy-one"
+    },
+    {
+      "es": "Una empresa de hoteles",
+      "en": "A hotel company"
     },
     {
       "es": "Hoteles, hoteles y más hoteles",
-      "en": "Hotels, hotels and more hotels (Altamira builds hotels)"
-    },
-    {
-      "es": "Tengo setenta y uno",
-      "en": "I'm seventy-one"
+      "en": "Hotels, hotels and more hotels"
     },
     {
       "es": "Y problemas",
       "en": "And trouble"
+    },
+    {
+      "es": "Muchos problemas",
+      "en": "Lots of trouble"
     }
   ],
   "questions": [
     {
       "q": "What does Tomás think «tinto» means?",
       "options": [
-        "Red, the colour",
+        "Red, as in red wine",
         "Black coffee",
         "Orange juice",
         "Bread"
@@ -64,9 +80,9 @@
       "q": "What is a «tinto» in Colombia?",
       "options": [
         "A small black coffee",
-        "Red wine",
         "Coffee with milk",
-        "Fruit juice"
+        "A glass of juice",
+        "A bread roll"
       ],
       "answer": 0
     },
@@ -81,11 +97,11 @@
       "answer": 0
     },
     {
-      "q": "What did Rosa always tell people about Tomás?",
+      "q": "What did Rosa tell people about Tomás?",
       "options": [
         "That he was a doctor in Canada",
         "That he was an engineer",
-        "That he was a tango dancer",
+        "That he danced the tango",
         "That he lived in Medellín"
       ],
       "answer": 0
@@ -103,7 +119,7 @@
   "hook": "Hernando still has no tinto, and Tomás still hasn't opened Altamira's letter. Tomorrow Vale shows him what a real day in Rosa's café looks like, starting before sunrise.",
   "rereadQuestions": [
     {
-      "q": "What does Hernando refuse?",
+      "q": "What does Hernando turn down?",
       "options": [
         "Juice",
         "Black coffee",
@@ -113,19 +129,19 @@
       "answer": 0
     },
     {
-      "q": "According to Rosa, what is Don Hernando?",
+      "q": "According to Rosa, what does Don Hernando do?",
       "options": [
-        "A tango dancer",
-        "A doctor",
-        "An engineer",
-        "A taxi driver"
+        "He dances the tango",
+        "He works as a doctor",
+        "He sells hotels",
+        "He drives to Canada"
       ],
       "answer": 0
     },
     {
       "q": "How does Vale explain Altamira?",
       "options": [
-        "Hotels, hotels and more hotels",
+        "A hotel company: hotels, hotels and more hotels",
         "A new café",
         "A bank",
         "A friend of Rosa's"
@@ -146,27 +162,34 @@
     "g:ser-identity"
   ],
   "lexemes": [
+    "l:abrir",
     "l:abuela",
-    "l:bailarín",
+    "l:aquí",
+    "l:año",
+    "l:bailar",
     "l:café",
+    "l:empresa",
     "l:entender",
+    "l:estar",
     "l:favor",
     "l:hotel",
     "l:hoy",
     "l:ingeniero",
     "l:jugo",
+    "l:mesa",
     "l:mija",
     "l:mijo",
     "l:médico",
     "l:negro",
+    "l:nieto",
     "l:pan",
     "l:perdón",
     "l:problema",
     "l:querer",
+    "l:qué",
     "l:regalar",
     "l:rojo",
     "l:ser",
-    "l:siempre",
     "l:tango",
     "l:tener",
     "l:tinto",

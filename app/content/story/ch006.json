@@ -2,7 +2,7 @@
   "id": "ch006",
   "unit": "u03",
   "title": "El sábado abrimos",
-  "text": "Domingo. Vale tiene un plan. Hernando tiene un plan. Simón quiere arepa.\nVale: El martes compramos leche y harina. El jueves hago pan y buñuelos. Y el viernes, Tomás, tú compras la fruta en Paloquemao.\nTomás: ¿Yo? ¿Solo?\nVale: Solo. Y el sábado... ¡abrimos!\nTomás: ¿El sábado? ¿Ya?\nHernando: Y los domingos, ajedrez y fútbol en la televisión. ¿Te gusta el fútbol, Tomás?\nTomás: No me gusta nada el fútbol.\nHernando: ¿Y la música? ¿Qué tipo de música te gusta? Yo canto tango.\nSimón: ¡Yo canto! ¡Yo canto!\nTomás: No me gusta nada el tango. Y no canto.\nVale: Tomás, ¿qué te gusta hacer?\nTomás: Me gusta... estar solo. Leer. Ver películas en casa.\nVale: Perfecto. Entonces puedes trabajar en la caja. Solo.\nHernando: ¡De una!\nSimón come la arepa de Hernando. Y la arepa de Vale. Y la arepa de Tomás.\nTomás: ¡Simón! ¡Mi arepa no!\nPor la noche, Tomás sale a caminar, solo. Treinta días. Dos millones de pesos. Y un loro.",
+  "text": "Domingo. Vale tiene un plan. Hernando tiene un plan. Y Simón quiere arepa.\nVale: El martes compramos leche y harina. El jueves hago pan y buñuelos. Y el viernes, Tomás, tú compras la fruta en Paloquemao.\nTomás: ¿Yo? ¿Solo?\nVale: Solo. Y el sábado... ¡abrimos!\nTomás: ¿El sábado? ¿Ya?\nHernando: Y los domingos, ajedrez y fútbol en la televisión. ¿Te gusta el fútbol, Tomás?\nTomás: No me gusta nada el fútbol.\nHernando: ¿Y la música? ¿Qué tipo de música te gusta? Yo canto tango.\nSimón: ¡Yo canto! ¡Yo canto!\nTomás: No me gusta nada el tango. Y no canto.\nVale: Entonces, Tomás, ¿qué te gusta hacer?\nTomás: Me gusta... estar solo. Leer. Ver películas en casa.\nVale: Perfecto. Entonces puedes trabajar en la caja. Solo.\nHernando: ¡De una!\nSimón come la arepa de Hernando. Y la arepa de Vale. Y la arepa de Tomás.\nTomás: ¡Simón! ¡Mi arepa no!\nPor la noche, Tomás sale a caminar, solo. Treinta días. Dos millones de pesos. Y un loro.",
   "gloss": [
     {
       "es": "Simón quiere arepa",
@@ -17,8 +17,16 @@
       "en": "at Paloquemao (Bogotá's big food market)"
     },
     {
+      "es": "¿Solo?",
+      "en": "On my own?"
+    },
+    {
       "es": "¡abrimos!",
       "en": "we open!"
+    },
+    {
+      "es": "¿Ya?",
+      "en": "Already?"
     },
     {
       "es": "ajedrez",
