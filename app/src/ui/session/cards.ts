@@ -53,6 +53,13 @@ export type Card = McqCard | TypeCard | ReadCard;
 const es = (text: string): Txt => ({ text, lang: 'es' });
 const en = (text: string): Txt => ({ text, lang: 'en' });
 const auto = (text: string): Txt => ({ text, lang: looksSpanish(text) ? 'es' : 'en' });
+/** One language for a whole set of options, decided by majority (ties go to the
+ *  answer's): per-option guessing coloured options differently and gave answers away. */
+function sameLang(texts: string[], answer: number): Txt[] {
+  const votes = texts.filter(looksSpanish).length;
+  const lang: Lang = votes * 2 > texts.length ? 'es' : votes * 2 < texts.length ? 'en' : (looksSpanish(texts[answer] ?? '') ? 'es' : 'en');
+  return texts.map((text) => ({ text, lang }));
+}
 
 /** The two questions every card asks, in plain words. */
 export const MEANS = 'What does this mean?';
@@ -137,8 +144,9 @@ function otherNodeSpanish(b: Bundle, node: NodeId, right: string, key: string, n
 
 function mcq(key: string, ask: string, prompt: Txt | undefined, right: Txt, wrong: Txt[], why: string, extra: Partial<McqCard> = {}): McqCard {
   const r = rng(key);
-  const opts = shuffle([right, ...wrong], r);
-  return { type: 'mcq', key, ask, prompt, options: opts, answer: opts.indexOf(right), why, ...extra };
+  const lang = [right, ...wrong].every((t) => t.lang === right.lang) ? null : right.lang;
+  const opts = shuffle([right, ...wrong], r).map((t) => (lang ? { ...t, lang } : t));
+  return { type: 'mcq', key, ask, prompt, options: opts, answer: opts.findIndex((t) => t.text === right.text), why, ...extra };
 }
 
 // ---------------------------------------------------------------- checkers
@@ -256,7 +264,7 @@ export function scriptCard(item: ScriptItem, script: TeachingScript): Card | und
   if (item.op === 'readAndPick') {
     const rp = script.readAndPick[item.index];
     if (!rp) return undefined;
-    const opts = rp.options.map(auto);
+    const opts = sameLang(rp.options, rp.answer);
     return { type: 'mcq', key: item.id, ask: 'Read and pick', prompt: es(rp.es), options: opts, answer: rp.answer, why: `${rp.es} → ${rp.options[rp.answer]}` };
   }
   const yt = script.yourTurn[item.index];
@@ -399,7 +407,7 @@ export function recallCard(item: RecallItem, b: Bundle): Card {
 
 export function questionCard(key: string, q: { q: string; options?: string[]; answer: number | string }): Card {
   if (q.options?.length && typeof q.answer === 'number') {
-    return { type: 'mcq', key, ask: 'Quick question', prompt: auto(q.q), options: q.options.map(auto), answer: q.answer, why: `The story says: ${q.options[q.answer]}.` };
+    return { type: 'mcq', key, ask: 'Quick question', prompt: auto(q.q), options: sameLang(q.options, q.answer), answer: q.answer, why: `The story says: ${q.options[q.answer]}.` };
   }
   const right = String(q.answer);
   const lang: Lang = looksSpanish(right) ? 'es' : 'en';
