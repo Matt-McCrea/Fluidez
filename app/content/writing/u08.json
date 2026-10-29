@@ -1,0 +1,507 @@
+[
+  {
+    "id": "w-u08-01",
+    "unit": "u08",
+    "prompt": "Mariana is planning a feature on the coast and asks if you have been to Cartagena. Text her back, someone your age, in one or two short sentences.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bhe estado\\b",
+        "label": "say you have been there with he estado"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "una vez",
+          "dos veces",
+          "muchas veces"
+        ],
+        "label": "say how many times"
+      }
+    ],
+    "model": "He estado en Cartagena dos veces. Me gusta mucho.",
+    "focus": "c:una-vez",
+    "requires": [
+      "c:me-gusta",
+      "g:gustar-basic",
+      "g:perfecto-experience",
+      "l:estar",
+      "l:gustar",
+      "l:vez",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u08-02",
+    "unit": "u08",
+    "prompt": "Don Hernando, an older man you would call usted, asks whether you have tried ajiaco. Answer that you never have, and say you want to.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "probar",
+        "tense": "perfecto",
+        "person": "yo",
+        "label": "nunca he probado"
+      },
+      {
+        "type": "containsWord",
+        "word": "nunca"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "probé",
+          "probaste"
+        ],
+        "label": "use he probado, not the simple past"
+      }
+    ],
+    "model": "Nunca he probado el ajiaco, pero tengo muchas ganas.",
+    "focus": "g:perfecto-experience",
+    "requires": [
+      "c:tengo",
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "g:yo-irregular",
+      "l:ajiaco",
+      "l:ganas",
+      "l:probarse",
+      "l:tener",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u08-03",
+    "unit": "u08",
+    "prompt": "Vale asks whether you have read the café's lease. You have not. Reply in one short sentence, in a friendly way.",
+    "minWords": 5,
+    "maxWords": 20,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "todavía",
+        "label": "todavía no"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "perfecto",
+        "label": "use he + past participle"
+      },
+      {
+        "type": "negation"
+      }
+    ],
+    "model": "Todavía no he leído el contrato. Lo leo mañana.",
+    "focus": "c:todavia-no",
+    "requires": [
+      "c:todavia-no",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:perfecto-experience",
+      "g:present-er-ir",
+      "l:contrato",
+      "l:leer",
+      "l:mañana"
+    ]
+  },
+  {
+    "id": "w-u08-04",
+    "unit": "u08",
+    "prompt": "You are chatting with Mariana and want to know about her travels. Ask her, as a friend, whether she has ever been to Medellín.",
+    "minWords": 5,
+    "maxWords": 20,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "perfecto",
+        "person": "tú",
+        "label": "has estado"
+      },
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "alguna",
+        "label": "alguna vez"
+      }
+    ],
+    "model": "¿Has estado alguna vez en Medellín?",
+    "focus": "g:perfecto-experience",
+    "requires": [
+      "c:has-estado",
+      "g:indefinites",
+      "g:perfecto-experience",
+      "l:estar",
+      "l:vez"
+    ]
+  },
+  {
+    "id": "w-u08-05",
+    "unit": "u08",
+    "prompt": "A friend at the café wants to know what you did this morning. Tell them in two short sentences where you went today.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ir",
+        "tense": "preterito",
+        "person": "yo",
+        "label": "hoy fui"
+      },
+      {
+        "type": "containsWord",
+        "word": "hoy"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Hoy fui al banco. Después fui al aeropuerto.",
+    "focus": "x:pret-perfecto-latam",
+    "requires": [
+      "c:fui",
+      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
+      "l:aeropuerto",
+      "l:banco",
+      "l:después",
+      "l:hoy",
+      "l:ir",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u08-06",
+    "unit": "u08",
+    "prompt": "Your cousin in Toronto asks what the coast is like. Write two sentences describing it, using muy or mucho.",
+    "minWords": 6,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(muy|mucho|mucha|muchos|muchas|poco|poca|pocos|pocas|bastante|demasiado|demasiada|demasiados|demasiadas)\\b",
+        "label": "use muy, mucho or similar"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "La playa es muy bonita. Hay muchos turistas en el hotel.",
+    "focus": "g:quantifiers",
+    "requires": [
+      "c:hay",
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:hay-vs-esta",
+      "g:ser-identity",
+      "l:bonito",
+      "l:hotel",
+      "l:playa",
+      "l:ser",
+      "l:turista",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u08-07",
+    "unit": "u08",
+    "prompt": "Vale texts you at the café: 'Where are you?' Answer in one short sentence saying what you are doing right now.",
+    "minWords": 5,
+    "maxWords": 20,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "yo",
+        "label": "estoy"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b\\w+(ando|iendo|yendo)\\b",
+        "label": "an -ando or -iendo verb"
+      }
+    ],
+    "model": "Estoy comprando café en el mercado.",
+    "focus": "g:estar-gerund",
+    "requires": [
+      "g:estar-gerund",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:café",
+      "l:comprar",
+      "l:estar",
+      "l:mercado"
+    ]
+  },
+  {
+    "id": "w-u08-08",
+    "unit": "u08",
+    "prompt": "A friend your age calls you from the airport and you want to know what they are doing. Write the question you would ask.",
+    "minWords": 3,
+    "maxWords": 15,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "estar",
+        "tense": "presente",
+        "person": "tú",
+        "label": "estás"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b\\w+(ando|iendo|yendo)\\b",
+        "label": "an -ando or -iendo verb"
+      },
+      {
+        "type": "question"
+      }
+    ],
+    "model": "¿Qué estás haciendo en el aeropuerto?",
+    "focus": "g:estar-gerund",
+    "requires": [
+      "g:estar-gerund",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:questions",
+      "l:aeropuerto",
+      "l:estar",
+      "l:hacer",
+      "l:qué"
+    ]
+  },
+  {
+    "id": "w-u08-09",
+    "unit": "u08",
+    "prompt": "Vale asks whether you have tried her buñuelos. You ate them yesterday. Reply in two short sentences and use lo or los to avoid repeating the word.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(lo|los|la|las)\\s+\\w+",
+        "label": "use lo, la, los or las before the verb"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Sí, los probé ayer. Los comí con Hernando.",
+    "focus": "g:direct-objects",
+    "requires": [
+      "c:ayer-anoche",
+      "c:comi",
+      "g:direct-objects",
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "l:ayer",
+      "l:comer",
+      "l:probar"
+    ]
+  },
+  {
+    "id": "w-u08-10",
+    "unit": "u08",
+    "prompt": "Hernando asks if you know Ricardo Altamira. You met him yesterday at the café. Answer in one or two sentences, using a for the person.",
+    "minWords": 5,
+    "maxWords": 22,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(lo|la)\\s+conoc",
+        "label": "lo or la conocí"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "conocí él",
+          "conocí ella"
+        ],
+        "label": "lo, not él"
+      }
+    ],
+    "model": "Sí, lo conocí ayer en el café. Es muy amable.",
+    "focus": "g:direct-objects",
+    "requires": [
+      "c:ayer-anoche",
+      "c:muy-amable",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:preterite-er-ir",
+      "g:ser-identity",
+      "l:amable",
+      "l:ayer",
+      "l:café",
+      "l:conocer",
+      "l:ser"
+    ]
+  },
+  {
+    "id": "w-u08-11",
+    "unit": "u08",
+    "prompt": "A new neighbour asks what you can do and which places you know. Say one thing you can do and one place or person you know.",
+    "minWords": 8,
+    "maxWords": 28,
+    "constraints": [
+      {
+        "type": "verbFormAny",
+        "inf": "saber",
+        "tense": "presente",
+        "label": "sé for a skill"
+      },
+      {
+        "type": "verbFormAny",
+        "inf": "conocer",
+        "tense": "presente",
+        "label": "conozco for a place or person"
+      }
+    ],
+    "model": "Sé cocinar, pero no conozco bien Cali. Conozco a Vale.",
+    "focus": "p:saber-conocer",
+    "requires": [
+      "c:bien-y-tu",
+      "g:yo-irregular",
+      "l:bien",
+      "l:cocinar",
+      "l:conocer",
+      "l:saber"
+    ]
+  },
+  {
+    "id": "w-u08-12",
+    "unit": "u08",
+    "prompt": "Vale asks what you feel like doing on your day off. Text her one or two sentences saying what you feel like doing.",
+    "minWords": 6,
+    "maxWords": 22,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bganas\\s+de\\s+\\w+",
+        "label": "tengo ganas de + verb"
+      },
+      {
+        "type": "verbForm",
+        "inf": "tener",
+        "tense": "presente",
+        "person": "yo"
+      }
+    ],
+    "model": "Tengo ganas de subir a Monserrate. Todavía no he subido.",
+    "focus": "p:tener-ganas-de",
+    "requires": [
+      "c:tengo",
+      "c:todavia-no",
+      "g:perfecto-experience",
+      "g:yo-irregular",
+      "l:ganas",
+      "l:subir",
+      "l:tener",
+      "p:tener-ganas-de"
+    ]
+  },
+  {
+    "id": "w-u08-13",
+    "unit": "u08",
+    "prompt": "A tourist friend asks for advice before visiting Bogotá. Give one opinion starting with 'Es' plus an adjective and a verb in the infinitive.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bes\\s+(importante|difícil|fácil|útil|bueno|malo|mejor|bonito|necesario|divertido)\\s+\\w+(ar|er|ir)\\b",
+        "label": "es + adjective + infinitive"
+      }
+    ],
+    "model": "Es importante probar el ajiaco. Es difícil comer poco aquí.",
+    "focus": "p:es-adj-inf",
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:ajiaco",
+      "l:aquí",
+      "l:comer",
+      "l:difícil",
+      "l:importante",
+      "l:probarse",
+      "l:ser",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u08-14",
+    "unit": "u08",
+    "prompt": "A colleague at the café is deciding whether to go to Cartagena for a weekend. Tell them, in two short sentences, it is worth it.",
+    "minWords": 5,
+    "maxWords": 22,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "vale la pena",
+        "label": "vale la pena"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Vale la pena ir a Cartagena. La playa es muy bonita.",
+    "focus": "c:vale-la-pena",
+    "requires": [
+      "g:adjective-agreement",
+      "g:gender-articles",
+      "g:ser-identity",
+      "l:bonito",
+      "l:ir",
+      "l:pena",
+      "l:playa",
+      "l:ser",
+      "p:quantifiers-basic"
+    ]
+  },
+  {
+    "id": "w-u08-15",
+    "unit": "u08",
+    "prompt": "A friend sends you a photo of a beach and asks if you have been on a plane to the island. React and say you have never done it, in two short sentences.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "nunca"
+      },
+      {
+        "type": "anyVerbInTense",
+        "tense": "perfecto",
+        "label": "use he + past participle"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "qué envidia",
+          "ni idea"
+        ],
+        "label": "react with qué envidia"
+      }
+    ],
+    "model": "¡Qué envidia! Nunca he viajado en avión.",
+    "focus": "c:que-envidia",
+    "requires": [
+      "c:que-envidia",
+      "g:perfecto-experience",
+      "l:avión",
+      "l:envidia",
+      "l:qué",
+      "l:viajar"
+    ]
+  }
+]
