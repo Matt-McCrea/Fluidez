@@ -1,0 +1,469 @@
+[
+  {
+    "id": "w-u10-01",
+    "unit": "u10",
+    "prompt": "Mariana asks what food you like now that you live in Bogotá. Text her back, someone your age, in two short sentences: one thing you like and one you don't.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (gusta|gustan|encanta|encantan)\\b",
+        "label": "say what you like with me gusta or me gustan"
+      },
+      {
+        "type": "negation",
+        "label": "include one thing you don't like"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "yo gusto",
+          "gusto el",
+          "gusto la",
+          "gusto los",
+          "gusto las"
+        ],
+        "label": "gustar works like \"is pleasing to me\": me gusta, not yo gusto"
+      }
+    ],
+    "model": "Me gustan las arepas con queso. No me gusta el picante.",
+    "focus": "g:gustar-full",
+    "requires": [
+      "c:me-gusta",
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:present-ar",
+      "l:arepa",
+      "l:gustar",
+      "l:picante",
+      "l:queso"
+    ]
+  },
+  {
+    "id": "w-u10-02",
+    "unit": "u10",
+    "prompt": "You have finished eating at a restaurant and the waiter is across the room. Politely ask him (an older stranger you'd call usted) to bring the bill.",
+    "minWords": 4,
+    "maxWords": 15,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "cuenta",
+        "label": "mention la cuenta"
+      },
+      {
+        "type": "question",
+        "label": "ask it as a question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "traes",
+          "regalas",
+          "pasas"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Disculpe, ¿nos trae la cuenta, por favor?",
+    "focus": "c:la-cuenta",
+    "requires": [
+      "c:la-cuenta",
+      "c:perdon-disculpe",
+      "c:por-favor",
+      "g:commands-usted",
+      "g:present-er-ir",
+      "l:cuenta",
+      "l:disculpar",
+      "l:favor",
+      "l:traer",
+      "p:me-te-nos-objects"
+    ]
+  },
+  {
+    "id": "w-u10-03",
+    "unit": "u10",
+    "prompt": "Vale wants to know your usual order at the café. Write her two short sentences about what you always order.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "pedir",
+        "tense": "presente",
+        "person": "yo",
+        "label": "use pido (yo form of pedir)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "pedo",
+          "pedimos",
+          "pedes"
+        ],
+        "label": "pedir changes e to i: pido"
+      }
+    ],
+    "model": "Siempre pido ajiaco. Hoy pido también una limonada.",
+    "focus": "g:stem-e-i",
+    "requires": [
+      "g:gender-articles",
+      "g:stem-e-i",
+      "l:ajiaco",
+      "l:hoy",
+      "l:limonada",
+      "l:pedir",
+      "l:siempre"
+    ]
+  },
+  {
+    "id": "w-u10-04",
+    "unit": "u10",
+    "prompt": "You bought a juice for Vale and want to invite her to the market. Leave her a note, friendly, with the juice and the invitation.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(para ti|para mí|conmigo|contigo|sin ti)\\b",
+        "label": "use para ti, conmigo or contigo"
+      },
+      {
+        "type": "question",
+        "label": "include an invitation as a question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "con mí",
+          "con ti",
+          "para tú",
+          "con yo"
+        ],
+        "label": "conmigo and contigo, not con mí or con ti"
+      }
+    ],
+    "model": "Este jugo es para ti. ¿Vienes conmigo al mercado?",
+    "focus": "g:prep-pronouns",
+    "requires": [
+      "g:gender-articles",
+      "g:prep-pronouns",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:jugo",
+      "l:mercado",
+      "l:ser",
+      "l:venir",
+      "p:demonstratives-basic",
+      "p:para-inf"
+    ]
+  },
+  {
+    "id": "w-u10-05",
+    "unit": "u10",
+    "prompt": "Order a second drink from the waiter at a restaurant. He is an older stranger you'd call usted. Use one short sentence.",
+    "minWords": 4,
+    "maxWords": 15,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (trae|regala|da|pasa)\\b",
+        "label": "ask with me trae or me regala"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\botr[ao]s?\\b",
+        "label": "use otro or otra"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "un otro",
+          "una otra",
+          "otro un",
+          "otra una",
+          "traes"
+        ],
+        "label": "otro already means \"another\": no un or una"
+      }
+    ],
+    "model": "¿Me trae otra limonada, por favor?",
+    "focus": "p:me-trae",
+    "requires": [
+      "c:por-favor",
+      "g:present-er-ir",
+      "l:favor",
+      "l:limonada",
+      "l:traer",
+      "p:me-te-nos-objects",
+      "p:me-trae"
+    ]
+  },
+  {
+    "id": "w-u10-06",
+    "unit": "u10",
+    "prompt": "At a café counter, order for yourself to the server (an older stranger you'd call usted): a black coffee with no sugar and something with cheese.",
+    "minWords": 6,
+    "maxWords": 20,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bsin\\b",
+        "label": "use sin for \"without\""
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bcon\\b",
+        "label": "use con for \"with\""
+      },
+      {
+        "type": "containsWord",
+        "word": "queso",
+        "label": "mention queso"
+      }
+    ],
+    "model": "Un tinto sin azúcar y una arepa con queso, por favor.",
+    "focus": "p:con-sin",
+    "requires": [
+      "c:por-favor",
+      "g:gender-articles",
+      "l:arepa",
+      "l:azúcar",
+      "l:favor",
+      "l:queso",
+      "l:tinto"
+    ]
+  },
+  {
+    "id": "w-u10-07",
+    "unit": "u10",
+    "prompt": "You are at the market and Don Hernando's stall sells everything. Ask him (older, you'd call usted) for a pound of tomatoes and half a dozen eggs.",
+    "minWords": 6,
+    "maxWords": 20,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(libra|botella|vaso|paquete|docena)\\s+de\\b",
+        "label": "use a container word + de (una libra de...)"
+      },
+      {
+        "type": "containsWord",
+        "word": "huevos",
+        "label": "mention huevos"
+      },
+      {
+        "type": "question",
+        "label": "ask politely as a question"
+      }
+    ],
+    "model": "¿Me regala una libra de tomate y media docena de huevos?",
+    "focus": "p:container-de",
+    "requires": [
+      "c:me-regala",
+      "g:gender-articles",
+      "l:docena",
+      "l:huevo",
+      "l:libra",
+      "l:regalar",
+      "l:tomate"
+    ]
+  },
+  {
+    "id": "w-u10-08",
+    "unit": "u10",
+    "prompt": "Write a sign for the café door telling customers the rule: they pay first. Two short sentences, speaking to any customer as tú.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(hay que|tienes que|tiene que)\\b",
+        "label": "use hay que or tienes que"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "pagar",
+          "pagas"
+        ],
+        "label": "mention paying"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Hay que pagar antes de comer. Tienes que esperar en la fila.",
+    "focus": "g:tener-que-hay-que",
+    "requires": [
+      "c:hay",
+      "c:hay-que",
+      "c:tienes",
+      "g:gender-articles",
+      "g:prep-infinitive",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:antes",
+      "l:comer",
+      "l:esperar",
+      "l:fila",
+      "l:pagar",
+      "l:tener"
+    ]
+  },
+  {
+    "id": "w-u10-09",
+    "unit": "u10",
+    "prompt": "Tomás holds up a spoon and asks what it is for. Reply to him in one or two short sentences, as a friend.",
+    "minWords": 5,
+    "maxWords": 20,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bsirve(n)? para\\b",
+        "label": "use sirve para"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "es para servir",
+          "sirve a",
+          "sirve de"
+        ],
+        "label": "what it is for: sirve para + verb or noun"
+      }
+    ],
+    "model": "Esta cuchara sirve para la sopa. Y esa sirve para el postre.",
+    "focus": "p:servir-para",
+    "requires": [
+      "g:demonstratives",
+      "g:gender-articles",
+      "g:stem-e-i",
+      "l:cuchara",
+      "l:postre",
+      "l:servir",
+      "l:sopa",
+      "p:demonstratives-basic",
+      "p:para-inf",
+      "p:servir-para"
+    ]
+  },
+  {
+    "id": "w-u10-10",
+    "unit": "u10",
+    "prompt": "Text Mariana to set up lunch at the café. Suggest a day and a time, someone your age, in one or two sentences.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bnos vemos\\b",
+        "label": "use nos vemos"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\ba las (\\w+)\\b",
+        "label": "give a time with a las"
+      },
+      {
+        "type": "question",
+        "label": "ask it as a question"
+      }
+    ],
+    "model": "¿Nos vemos el sábado a las doce en el café?",
+    "focus": "p:nos-vemos-a-las",
+    "requires": [
+      "c:chao-nos-vemos",
+      "g:gender-articles",
+      "l:café",
+      "l:sábado",
+      "l:ver"
+    ]
+  },
+  {
+    "id": "w-u10-11",
+    "unit": "u10",
+    "prompt": "Tell Mariana, in two short sentences, what two other people at the café like to eat: Don Hernando and Vale.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\ba \\w+ le (gusta|gustan|encanta|encantan)\\b",
+        "label": "use a [name] le gusta or le encanta"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "a él gusta",
+          "a ella gusta",
+          "Vale gusta",
+          "Hernando gusta"
+        ],
+        "label": "le goes before gusta"
+      }
+    ],
+    "model": "A Don Hernando le encanta el ajiaco. A Vale le gustan los buñuelos.",
+    "focus": "g:gustar-full",
+    "requires": [
+      "g:gender-articles",
+      "g:gustar-basic",
+      "g:gustar-full",
+      "g:present-ar",
+      "l:ajiaco",
+      "l:buñuelo",
+      "l:encantar",
+      "l:gustar"
+    ]
+  },
+  {
+    "id": "w-u10-12",
+    "unit": "u10",
+    "prompt": "You are ordering at a busy restaurant. Ask the waiter (older, you'd call usted) what he recommends, and say you want your food to go. Two short sentences.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bqué me recomienda\\b",
+        "label": "ask ¿Qué me recomienda?"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bpara llevar\\b",
+        "label": "say para llevar"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "recomiendas",
+          "quieres"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "¿Qué me recomienda? Quiero una sopa para llevar.",
+    "focus": "c:que-me-recomienda",
+    "requires": [
+      "c:para-llevar",
+      "c:que-me-recomienda",
+      "c:quiero",
+      "g:gender-articles",
+      "g:stem-boot",
+      "l:llevar",
+      "l:querer",
+      "l:qué",
+      "l:recomendar",
+      "l:sopa"
+    ]
+  }
+]
