@@ -1,0 +1,480 @@
+[
+  {
+    "id": "w-u01-01",
+    "unit": "u01",
+    "prompt": "You've just walked into a café in Bogotá. Introduce yourself to the person at the counter: say hello, your name and where you're from.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "me llamo",
+          "soy"
+        ],
+        "label": "say your name (me llamo… or soy…)"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "soy de",
+          "de toronto",
+          "de canadá"
+        ],
+        "label": "say where you're from with de"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Hola, buenos días. Me llamo Sam. Soy de Toronto, en Canadá.",
+    "focus": "g:ser-identity",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:me-llamo",
+      "c:soy-de",
+      "g:adjective-agreement",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:ser-identity"
+    ]
+  },
+  {
+    "id": "w-u01-02",
+    "unit": "u01",
+    "prompt": "Introduce Vale to a friend: who she is, where she's from and where she works.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "presente",
+        "person": "él/ella"
+      },
+      {
+        "type": "verbForm",
+        "inf": "trabajar",
+        "tense": "presente",
+        "person": "él/ella"
+      }
+    ],
+    "model": "Ella es Vale. Es de Medellín, y trabaja en un café en La Candelaria.",
+    "focus": "g:ser-identity",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity"
+    ]
+  },
+  {
+    "id": "w-u01-03",
+    "unit": "u01",
+    "prompt": "A customer thinks you're the waiter. Tell him politely that you're not, and say who you are.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "negation"
+      },
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "presente",
+        "person": "yo"
+      }
+    ],
+    "model": "No, señor, no soy el mesero. Soy Tomás, el señor del café.",
+    "focus": "g:ser-identity",
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity"
+    ]
+  },
+  {
+    "id": "w-u01-04",
+    "unit": "u01",
+    "prompt": "Order for yourself and a friend at La Esquina de Rosa: two different things, politely.",
+    "minWords": 5,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "por favor"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\b(un|una)\\b.*\\b(un|una)\\b",
+        "label": "order two things, each with un or una"
+      }
+    ],
+    "model": "Buenos días. Un tinto y un café con leche, por favor.",
+    "focus": "g:gender-articles",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:por-favor",
+      "g:adjective-agreement",
+      "g:gender-articles"
+    ]
+  },
+  {
+    "id": "w-u01-05",
+    "unit": "u01",
+    "prompt": "Say what you do for a living, and what a friend or family member does. No \"a\" in Spanish!",
+    "minWords": 4,
+    "maxWords": 20,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bes\\b",
+        "label": "say what someone else does (es…)"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "soy un ",
+          "soy una ",
+          "es un médico",
+          "es una médica",
+          "es un ingeniero",
+          "es una ingeniera",
+          "es un profesor",
+          "es una profesora",
+          "es un mesero",
+          "es una mesera",
+          "es un estudiante",
+          "es una estudiante"
+        ],
+        "label": "no un or una before the job"
+      }
+    ],
+    "model": "Soy ingeniero, y Vale es mesera.",
+    "focus": "p:ser-profession-no-article",
+    "requires": [
+      "g:ser-identity"
+    ]
+  },
+  {
+    "id": "w-u01-06",
+    "unit": "u01",
+    "prompt": "Write two questions for an older stranger you'd call usted: ask if he's from Bogotá, and if he works in the neighbourhood.",
+    "minWords": 6,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "usted"
+      },
+      {
+        "type": "verbForm",
+        "inf": "trabajar",
+        "tense": "presente",
+        "person": "él/ella"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "eres",
+          "trabajas"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Perdón, ¿usted es de Bogotá? ¿Trabaja en La Candelaria?",
+    "focus": "g:present-ar",
+    "requires": [
+      "c:perdon-disculpe",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity"
+    ]
+  },
+  {
+    "id": "w-u01-07",
+    "unit": "u01",
+    "prompt": "Tell Vale about your work: where you work and who you work with.",
+    "minWords": 5,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "trabajar",
+        "tense": "presente",
+        "person": "yo"
+      },
+      {
+        "type": "containsWord",
+        "word": "con"
+      }
+    ],
+    "model": "Trabajo en Toronto. Trabajo con ingenieros de Canadá y de México.",
+    "focus": "g:present-ar",
+    "requires": [
+      "c:trabajo-en",
+      "g:present-ar"
+    ]
+  },
+  {
+    "id": "w-u01-08",
+    "unit": "u01",
+    "prompt": "You and Vale run the café together. Tell a new customer about the two of you: where you're from and what you do.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "presente",
+        "person": "nosotros"
+      },
+      {
+        "type": "person",
+        "person": "nosotros",
+        "label": "use a we-form"
+      },
+      {
+        "type": "verbForm",
+        "inf": "trabajar",
+        "tense": "presente",
+        "person": "nosotros"
+      }
+    ],
+    "model": "Somos Vale y Tomás. Somos de Medellín y de Toronto, y trabajamos en el café.",
+    "focus": "g:present-ar",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity"
+    ]
+  },
+  {
+    "id": "w-u01-09",
+    "unit": "u01",
+    "prompt": "Mariana invites you for a drink, but you can't make it today. Write her a short, polite text.",
+    "minWords": 5,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "containsAny",
+        "words": [
+          "no puedo",
+          "qué pena",
+          "que pena"
+        ],
+        "label": "say you can't, or say sorry"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "es que",
+          "tengo que"
+        ],
+        "label": "give a reason with es que… or tengo que…"
+      }
+    ],
+    "model": "Qué pena, Mariana. Hoy no puedo, es que tengo que trabajar mañana. ¡Chao!",
+    "focus": "c:es-que",
+    "requires": [
+      "c:chao-nos-vemos",
+      "c:es-que",
+      "c:puedo",
+      "c:que-oso",
+      "c:que-pena",
+      "c:tengo",
+      "c:tengo-que",
+      "g:questions",
+      "g:ser-identity",
+      "g:stem-boot",
+      "g:tener-que-hay-que",
+      "g:that-clauses",
+      "g:yo-irregular"
+    ]
+  },
+  {
+    "id": "w-u01-10",
+    "unit": "u01",
+    "prompt": "Write Tomás's shopping list for the café as a note to Vale: three things, each with un, una, unos or unas.",
+    "minWords": 5,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(un|una|unos|unas)\\b(.|\\n)*\\b(un|una|unos|unas)\\b(.|\\n)*\\b(un|una|unos|unas)\\b",
+        "label": "three things with un, una, unos or unas"
+      },
+      {
+        "type": "verbFormAny",
+        "inf": "comprar",
+        "tense": "presente"
+      }
+    ],
+    "model": "Vale, compro unos panes, una leche y un jugo. ¿Listo?",
+    "focus": "g:gender-articles",
+    "requires": [
+      "c:claro-listo",
+      "g:gender-articles",
+      "g:present-ar"
+    ]
+  },
+  {
+    "id": "w-u01-11",
+    "unit": "u01",
+    "prompt": "Describe two customers at the café to Vale: where they're from and what they buy.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "presente",
+        "person": "ellos"
+      },
+      {
+        "type": "verbForm",
+        "inf": "comprar",
+        "tense": "presente",
+        "person": "ellos"
+      }
+    ],
+    "model": "Los clientes son de Cali. Compran dos tintos y un pan.",
+    "focus": "g:present-ar",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity"
+    ]
+  },
+  {
+    "id": "w-u01-12",
+    "unit": "u01",
+    "prompt": "Hernando asks what you did yesterday. Tell him two things.",
+    "minWords": 5,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "anyVerbInTense",
+        "tense": "preterito",
+        "label": "use a past form you know (fui, comí, compré…)"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Ayer fui a Monserrate. Anoche comí ajiaco con Vale.",
+    "focus": "c:fui",
+    "requires": [
+      "c:comi",
+      "c:fui",
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer"
+    ]
+  },
+  {
+    "id": "w-u01-13",
+    "unit": "u01",
+    "prompt": "You've just met someone your age at a party. Ask them two things: where they're from and if they work in Bogotá.",
+    "minWords": 5,
+    "maxWords": 25,
+    "constraints": [
+      {
+        "type": "question"
+      },
+      {
+        "type": "containsWord",
+        "word": "eres",
+        "label": "use tú (eres)"
+      },
+      {
+        "type": "verbForm",
+        "inf": "trabajar",
+        "tense": "presente",
+        "person": "tú"
+      }
+    ],
+    "model": "Hola, ¿de dónde eres? ¿Trabajas en Bogotá?",
+    "focus": "g:present-ar",
+    "requires": [
+      "c:hola-buenos-dias",
+      "c:soy-de",
+      "g:present-ar",
+      "g:questions-prepositions",
+      "g:ser-identity"
+    ]
+  },
+  {
+    "id": "w-u01-14",
+    "unit": "u01",
+    "prompt": "Fill in a form for the notary in full sentences: your name, your surname, your nationality.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "nombre"
+      },
+      {
+        "type": "containsWord",
+        "word": "apellido"
+      },
+      {
+        "type": "verbForm",
+        "inf": "ser",
+        "tense": "presente",
+        "person": "yo"
+      }
+    ],
+    "model": "El nombre es Tomás, y el apellido es Herrera. Soy canadiense.",
+    "focus": "g:gender-articles",
+    "requires": [
+      "g:gender-articles",
+      "g:ser-identity"
+    ]
+  },
+  {
+    "id": "w-u01-15",
+    "unit": "u01",
+    "prompt": "Leave a goodbye note for Vale at the end of the day: thank her, say you'll see her, and what you have to do tomorrow.",
+    "minWords": 6,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "containsWord",
+        "word": "gracias"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "chao",
+          "nos vemos"
+        ]
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Muchas gracias, Vale. Tengo que trabajar mañana. ¡Chao, nos vemos!",
+    "focus": "c:chao-nos-vemos",
+    "requires": [
+      "c:chao-nos-vemos",
+      "c:gracias-de-nada",
+      "c:tengo",
+      "c:tengo-que",
+      "g:direct-objects",
+      "g:present-er-ir",
+      "g:tener-que-hay-que",
+      "g:yo-irregular"
+    ]
+  }
+]

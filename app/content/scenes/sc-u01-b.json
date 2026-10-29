@@ -1,0 +1,156 @@
+{
+  "id": "sc-u01-b",
+  "unit": "u01",
+  "title": "Tapping on the window",
+  "brief": "You're Tomás, and the café isn't open yet. An older gentleman is knocking on the glass for his morning tinto, closed or not. He's a regular and he's older than you, so use usted. Find out who he is and send him off happy.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "¡Buenos días! ¿Hay tinto o no hay tinto?",
+      "npcEn": "Morning! Is there coffee or isn't there?",
+      "intent": "Greet him politely and tell him yes, there's coffee.",
+      "accept": [
+        "Buenos días, señor. Sí, hay tinto.",
+        "Buenos días. Sí, señor, hay tinto.",
+        "Hola, buenos días. Sí, hay tinto."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "hay"
+        }
+      ],
+      "focus": "c:hay",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Soy Hernando, cliente de Rosa. ¿Usted es el mesero?",
+      "npcEn": "I'm Hernando, one of Rosa's customers. Are you the waiter?",
+      "intent": "Tell him no, you're not the waiter: you're Tomás, from Toronto.",
+      "accept": [
+        "No, no soy el mesero. Soy Tomás, de Toronto.",
+        "No, señor. Soy Tomás y soy de Toronto.",
+        "No, me llamo Tomás. Soy de Toronto."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "containsWord",
+          "word": "Toronto"
+        }
+      ],
+      "focus": "g:ser-identity",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿De Toronto? ¡Un canadiense en el café de Rosa! Mucho gusto.",
+      "npcEn": "From Toronto? A Canadian in Rosa's café! Nice to meet you.",
+      "intent": "Say it's nice to meet him too, and ask him if he's from Bogotá. Remember: usted.",
+      "accept": [
+        "Mucho gusto, señor Hernando. ¿Usted es de Bogotá?",
+        "Mucho gusto. ¿Es usted de Bogotá?",
+        "Con mucho gusto. ¿Usted es de Bogotá?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "eres"
+          ],
+          "label": "use usted (es), not tú (eres)"
+        }
+      ],
+      "focus": "g:ser-identity",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Claro que sí! Soy de La Candelaria. Bueno, un tinto, por favor.",
+      "npcEn": "Of course! I'm from La Candelaria. Right then, a coffee, please.",
+      "intent": "Say of course, and offer him a bread roll as well.",
+      "accept": [
+        "Claro que sí. ¿Y un pan?",
+        "Claro que sí, señor. ¿Un tinto y un pan?",
+        "Listo. ¿Y un pan, señor?"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "un pan",
+          "label": "offer un pan"
+        }
+      ],
+      "focus": "g:gender-articles",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Pan? ¿Pan de Vale? ¡Me encanta! ¿Cuánto es?",
+      "npcEn": "Bread? Vale's bread? I love it! How much is it?",
+      "intent": "Tell him it's on you: you're giving him the coffee and the bread (use regalar).",
+      "accept": [
+        "Regalo el tinto y el pan, señor.",
+        "No, señor. Regalo el tinto.",
+        "No, señor. Regalo el tinto y el pan."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "regalar",
+          "tense": "presente",
+          "person": "yo"
+        }
+      ],
+      "focus": "g:present-ar",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Gracias, Tomás! Entonces nos vemos mañana, ¿no?",
+      "npcEn": "Thank you, Tomás! See you tomorrow, then?",
+      "intent": "Say you're welcome, and goodbye.",
+      "accept": [
+        "De nada, señor. Chao, nos vemos.",
+        "Con mucho gusto. Nos vemos, señor.",
+        "De nada. ¡Chao!"
+      ],
+      "require": [],
+      "focus": "c:chao-nos-vemos",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:cuanto-cuesta",
+    "c:cuanto-le-debo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:hola-buenos-dias",
+    "c:me-encanta",
+    "c:me-llamo",
+    "c:mucho-gusto",
+    "c:por-favor",
+    "c:soy-de",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:that-clauses"
+  ]
+}

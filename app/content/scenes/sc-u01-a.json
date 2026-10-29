@@ -1,0 +1,164 @@
+{
+  "id": "sc-u01-a",
+  "unit": "u01",
+  "title": "The woman at the door",
+  "brief": "You're Tomás. You've just arrived at your grandmother's closed café in La Candelaria, and a young woman with a tray of bread is staring at you. Find out who she is, tell her who you are, and get her on your side.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Hola, buenos días. ¿Usted es de Altamira?",
+      "npcEn": "Hi, good morning. Are you from Altamira?",
+      "intent": "Say hello, tell her no, and give your name.",
+      "accept": [
+        "Hola, buenos días. No, soy Tomás.",
+        "Buenos días. No, me llamo Tomás.",
+        "Hola. No, no soy de Altamira. Soy Tomás."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "containsWord",
+          "word": "Tomás",
+          "label": "say your name, Tomás"
+        }
+      ],
+      "focus": "g:ser-identity",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Tomás? Mucho gusto. Soy Vale. ¿De dónde eres?",
+      "npcEn": "Tomás? Nice to meet you. I'm Vale. Where are you from?",
+      "intent": "Say it's nice to meet her, and tell her you're from Toronto.",
+      "accept": [
+        "Mucho gusto, Vale. Soy de Toronto.",
+        "Mucho gusto. Soy de Toronto, en Canadá.",
+        "Hola, Vale. Mucho gusto. Soy de Toronto."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "ser",
+          "tense": "presente",
+          "person": "yo"
+        },
+        {
+          "type": "containsWord",
+          "word": "Toronto"
+        }
+      ],
+      "focus": "g:ser-identity",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "¿De Toronto? Entonces eres canadiense.",
+      "npcEn": "From Toronto? So you're Canadian.",
+      "intent": "Say yes, you're Canadian, and ask where she's from.",
+      "accept": [
+        "Sí, soy canadiense. ¿Y tú, de dónde eres?",
+        "Sí, soy canadiense. ¿De dónde eres?",
+        "Sí. ¿Y tú? ¿De dónde eres?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "g:ser-identity",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Soy de Medellín, pero trabajo en Bogotá, en el café. ¿Y tú? ¿Trabajas en Toronto?",
+      "npcEn": "I'm from Medellín, but I work in Bogotá, at the café. And you? Do you work in Toronto?",
+      "intent": "Tell her yes: you work in Toronto, and you're an engineer.",
+      "accept": [
+        "Sí, trabajo en Toronto. Soy ingeniero.",
+        "Sí, soy ingeniero y trabajo en Toronto.",
+        "Sí, trabajo en Toronto, soy ingeniero."
+      ],
+      "require": [
+        {
+          "type": "verbForm",
+          "inf": "trabajar",
+          "tense": "presente",
+          "person": "yo"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "un ingeniero"
+          ],
+          "label": "a job after soy takes no un"
+        }
+      ],
+      "focus": "g:present-ar",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¿Ingeniero? Tomás… ¿Tomás Herrera? ¿Herrera, el apellido de Rosa?",
+      "npcEn": "An engineer? Tomás… Tomás Herrera? Herrera, Rosa's surname?",
+      "intent": "Say yes: your surname is Herrera, like Rosa's.",
+      "accept": [
+        "Sí, soy Tomás Herrera, como Rosa.",
+        "Sí, el apellido es Herrera, como Rosa.",
+        "Sí, soy Herrera, como Rosa."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "Herrera"
+        }
+      ],
+      "focus": "g:ser-identity",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Ay, qué pena! ¿Un tinto, Tomás?",
+      "npcEn": "Oh, how embarrassing! A coffee, Tomás?",
+      "intent": "Accept the coffee, and ask her if she can help you with the café.",
+      "accept": [
+        "Sí, gracias. ¿Me puedes ayudar con el café?",
+        "Claro que sí. Vale, ¿me puedes ayudar con el café?",
+        "Un tinto, por favor. ¿Me puedes ayudar con el café?"
+      ],
+      "require": [
+        {
+          "type": "question"
+        }
+      ],
+      "focus": "c:me-puede-ayudar",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-el-ella",
+    "c:hola-buenos-dias",
+    "c:me-llamo",
+    "c:me-puede-ayudar",
+    "c:mucho-gusto",
+    "c:por-favor",
+    "c:que-oso",
+    "c:que-pena",
+    "c:soy-de",
+    "c:trabajo-en",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:present-ar",
+    "g:questions",
+    "g:questions-prepositions",
+    "g:reflexive-routine",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:that-clauses",
+    "g:verb-infinitive"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "sc-u01-c",
+  "unit": "u01",
+  "title": "The notary's form",
+  "brief": "You're Tomás, at a notary's office in the centre of Bogotá. A clerk is filling in the papers that make La Esquina de Rosa yours. Answer her questions: name, surname, nationality, job. She's a stranger at work, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Buenos días, señor. ¿Cómo se llama usted?",
+      "npcEn": "Good morning. What's your name?",
+      "intent": "Give your full name: Tomás Herrera.",
+      "accept": [
+        "Me llamo Tomás Herrera.",
+        "Soy Tomás Herrera.",
+        "Buenos días. Me llamo Tomás Herrera."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "Herrera"
+        }
+      ],
+      "focus": "c:me-llamo",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "Perdón, ¿el apellido? Más despacio, por favor.",
+      "npcEn": "Sorry, the surname? Slower, please.",
+      "intent": "Tell her your surname again, slowly: Herrera.",
+      "accept": [
+        "El apellido es Herrera.",
+        "Herrera, señora.",
+        "Herrera. Tomás Herrera."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "Herrera"
+        }
+      ],
+      "focus": "g:sounds-letters",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Gracias. ¿Nacionalidad?",
+      "npcEn": "Thank you. Nationality?",
+      "intent": "Say you're Canadian, and Colombian too.",
+      "accept": [
+        "Soy canadiense y colombiano.",
+        "Canadiense y colombiano.",
+        "Soy canadiense, y también colombiano."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "canadiense"
+        },
+        {
+          "type": "containsWord",
+          "word": "colombiano"
+        }
+      ],
+      "focus": "g:ser-identity",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¿Y la profesión?",
+      "npcEn": "And your profession?",
+      "intent": "Say you're an engineer.",
+      "accept": [
+        "Soy ingeniero.",
+        "Ingeniero, señora.",
+        "Soy ingeniero, de Toronto."
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "ingeniero"
+        },
+        {
+          "type": "avoidsAny",
+          "words": [
+            "un ingeniero"
+          ],
+          "label": "a job after soy takes no un"
+        }
+      ],
+      "focus": "p:ser-profession-no-article",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Listo. ¿Y usted trabaja en Bogotá?",
+      "npcEn": "Done. And do you work in Bogotá?",
+      "intent": "Say no: you work in Toronto.",
+      "accept": [
+        "No, trabajo en Toronto.",
+        "No, señora, trabajo en Toronto.",
+        "No, no trabajo en Bogotá. Trabajo en Toronto."
+      ],
+      "require": [
+        {
+          "type": "negation"
+        },
+        {
+          "type": "verbForm",
+          "inf": "trabajar",
+          "tense": "presente",
+          "person": "yo"
+        }
+      ],
+      "focus": "g:present-ar",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Bueno, señor Herrera. La Esquina de Rosa es el café de Tomás Herrera.",
+      "npcEn": "Very well, Mr Herrera. La Esquina de Rosa is Tomás Herrera's café.",
+      "intent": "Thank her politely and say goodbye.",
+      "accept": [
+        "Muchas gracias, señora. Chao.",
+        "Gracias, señora. Nos vemos.",
+        "Muchas gracias. ¡Chao!"
+      ],
+      "require": [
+        {
+          "type": "containsWord",
+          "word": "gracias"
+        }
+      ],
+      "focus": "c:gracias-de-nada",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:bien-y-tu",
+    "c:chao-nos-vemos",
+    "c:claro-listo",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:hola-buenos-dias",
+    "c:mas-despacio",
+    "c:me-llamo",
+    "c:perdon-disculpe",
+    "c:por-favor",
+    "c:soy-de",
+    "c:trabajo-en",
+    "g:adjective-agreement",
+    "g:direct-objects",
+    "g:gender-articles",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:questions",
+    "g:reflexive-routine",
+    "g:ser-identity"
+  ]
+}

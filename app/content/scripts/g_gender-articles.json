@@ -1,0 +1,49 @@
+{
+  "node": "g:gender-articles",
+  "hook": {
+    "line": "Rosa's café runs on four things: el tinto, el pan, la leche, el agua. Each comes with a little word in front, and from today you'll learn every noun with its little word.",
+    "es": "Un tinto y un pan, por favor.",
+    "en": "A black coffee and a bread roll, please."
+  },
+  "examples": [
+    { "es": "El pan y el jugo, por favor.", "en": "The bread and the juice, please." },
+    { "es": "La leche es de Medellín.", "en": "The milk is from Medellín." },
+    { "es": "Es un país, no una ciudad.", "en": "It's a country, not a city." },
+    { "es": "Los nombres y los apellidos.", "en": "The first names and the surnames." },
+    { "es": "Buenos días. El día es bueno.", "en": "Good morning. It's a good day. (día is masculine)" },
+    { "es": "Un agua, por favor.", "en": "A water, please. (agua is feminine, but takes un)" }
+  ],
+  "rule": "Every Spanish noun is either masculine or feminine. It's a label, not a meaning, and it decides the little words in front:\n\nmasculine: el (the), un (a), los (the, plural), unos (some)\nfeminine: la (the), una (a), las (the, plural), unas (some)\n\nHow to guess: -o is usually masculine (el jugo). -a is usually feminine. -ción, -sión and -dad are feminine (la profesión, la ciudad). Anything else, like -e or a consonant, you learn whole: el pan, la leche, el país.\n\nTwo surprises this week: el día is masculine. El agua is feminine, but takes el and un because it starts with a stressed a sound; in the plural it's las aguas.\n\nPeople usually match: el ingeniero, la ingeniera. Words in -ante or -ente don't change, so the article does the job: el estudiante, la estudiante.\n\nFrom now on, learn every noun with its el or la.",
+  "smallPrint": "Grammar books call this grammatical gender. El/la are the definite articles; un/una are the indefinite articles.",
+  "soundTip": "El and la are never stressed. They lean on the next word, so el pan sounds like one word, \"el-PAHN\", and la leche like \"la-LEH-cheh\".",
+  "readAndPick": [
+    { "es": "Una ciudad.", "options": ["a city", "the city", "some cities"], "answer": 0 },
+    { "es": "Las ciudades.", "options": ["a city", "the cities", "some cities"], "answer": 1 },
+    { "es": "Unos panes, por favor.", "options": ["The bread rolls, please.", "A bread roll, please.", "Some bread rolls, please."], "answer": 2 },
+    { "es": "El nombre y el apellido.", "options": ["The first name and the surname.", "A name and a surname.", "Names and surnames."], "answer": 0 },
+    { "es": "La nacionalidad.", "options": ["a nationality", "the nationality", "the nationalities"], "answer": 1 },
+    { "es": "Buenos días.", "options": ["día is masculine, despite the -a", "día is feminine", "días has no gender"], "answer": 0 },
+    { "es": "Un agua, por favor.", "options": ["The water, please.", "Some waters, please.", "A water, please."], "answer": 2 },
+    { "es": "Los jugos.", "options": ["the juices", "a juice", "some juices"], "answer": 0 },
+    { "es": "Una explicación.", "options": ["the explanation", "an explanation", "explanations"], "answer": 1 },
+    { "es": "La estudiante es de Cali.", "options": ["The student (a man) is from Cali.", "The student (a woman) is from Cali.", "The students are from Cali."], "answer": 1 }
+  ],
+  "yourTurn": [
+    { "prompt": "El or la? Type it with the noun: ___ leche", "answer": "la leche", "accept": [], "why": "Leche ends in -e, which gives no clue. It's one to learn whole: la leche." },
+    { "prompt": "El or la? Type it with the noun: ___ profesión", "answer": "la profesión", "accept": [], "why": "Words ending in -ción or -sión are feminine." },
+    { "prompt": "Un or una? Type it with the noun: ___ país", "answer": "un país", "accept": [], "why": "País is masculine: el país, un país." },
+    { "prompt": "Type in Spanish: the day", "answer": "el día", "accept": [], "why": "Día ends in -a but is masculine. That's why it's buenos días, not buenas." },
+    { "prompt": "Type in Spanish: the water", "answer": "el agua", "accept": [], "why": "Agua is feminine, but a stressed a- at the start makes la become el." },
+    { "prompt": "Type in Spanish: a city", "answer": "una ciudad", "accept": [], "why": "-dad words are feminine." },
+    { "prompt": "Make it plural: el nombre", "answer": "los nombres", "accept": [], "why": "El becomes los; a word ending in a vowel just adds -s." },
+    { "prompt": "Make it plural: la profesión", "answer": "las profesiones", "accept": [], "why": "La becomes las. Add -es after a consonant, and the mark goes, because the stress now falls where the rule expects." },
+    { "prompt": "Type in Spanish: A coffee and a bread roll, please.", "answer": "Un café y un pan, por favor.", "accept": ["Un tinto y un pan, por favor."], "why": "Café and pan are both masculine, so both take un." }
+  ],
+  "pitfalls": [
+    { "wrong": "la día", "right": "el día", "why": "Día looks feminine but is masculine." },
+    { "wrong": "la agua", "right": "el agua", "why": "Feminine, but el before a stressed a- sound. The plural goes back to las aguas." },
+    { "wrong": "la país", "right": "el país", "why": "Words ending in a consonant give no clue; país is masculine." },
+    { "wrong": "unos ciudades", "right": "unas ciudades", "why": "Ciudad is feminine, so the plural is unas or las." }
+  ],
+  "personal": "What do you order at a café? Write two things, each with un or una: Un…, por favor."
+}
