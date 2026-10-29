@@ -1,0 +1,221 @@
+{
+  "node": "g:preterite-ser-ir-hacer",
+  "hook": {
+    "line": "Monday at the café, every regular asks about your weekend. To answer, you need three tiny past forms: where you went, what you did and how it was.",
+    "es": "¿Qué hiciste el sábado?\nFui al mercado. Fue un desastre.",
+    "en": "What did you do on Saturday?\nI went to the market. It was a disaster."
+  },
+  "examples": [
+    {
+      "es": "El viernes fui a Paloquemao.",
+      "en": "On Friday I went to Paloquemao."
+    },
+    {
+      "es": "Fue un desastre.",
+      "en": "It was a disaster."
+    },
+    {
+      "es": "¿Qué hiciste el sábado?",
+      "en": "What did you do on Saturday? (to a friend)"
+    },
+    {
+      "es": "Vale hizo el café, como Rosa.",
+      "en": "Vale made the coffee, like Rosa."
+    },
+    {
+      "es": "Fuimos al cine anoche.",
+      "en": "We went to the cinema last night."
+    },
+    {
+      "es": "No fui a la fiesta.",
+      "en": "I didn't go to the party."
+    },
+    {
+      "es": "Ayer hizo frío en Bogotá.",
+      "en": "It was cold in Bogotá yesterday."
+    },
+    {
+      "es": "Hernando y sus amigos fueron al café.",
+      "en": "Hernando and his friends went to the café."
+    }
+  ],
+  "rule": "Three of the busiest verbs break the past-tense rules you just learned.\n\n*Ir* (to go) and *ser* (to be) share one set of past forms:\n*fui*: I went, I was\n*fuiste*: you went, you were\n*fue*: he, she, you (formal) went or was\n*fuimos*: we went, we were\n*fueron*: they, you all went or were\n\nThe rest of the sentence decides. *Fui al mercado*: a place after *a*, so went. *Fue un desastre*: a description, so was.\n\n*Hacer* (to do, to make): *hice*, *hiciste*, *hizo*, *hicimos*, *hicieron*. Note the *z* in *hizo*. *Hacer* also does the weather: *hizo frío*, it was cold.\n\nNone of these carry an accent mark, unlike *compré* or *comió*. And where English needs \"did\" for a question, Spanish just uses the verb: *¿Qué hiciste?*",
+  "smallPrint": "Teachers call this tense the preterite (*pretérito indefinido*), and these are its irregular forms. *Ser* and *ir* really do share every one of them.",
+  "soundTip": "*Fui* is one syllable, close to English *fwee*. *Fue* is one syllable too, like *fweh*. That vowel at the end is the only thing between I and he or she.",
+  "readAndPick": [
+    {
+      "es": "Fuimos al parque.",
+      "options": [
+        "We went to the park.",
+        "They went to the park.",
+        "I went to the park."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Qué hiciste anoche?",
+      "options": [
+        "What did he do last night?",
+        "What did you do last night?",
+        "What did I do last night?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hicieron trescientos tintos.",
+      "options": [
+        "We made three hundred tintos.",
+        "She made three hundred tintos.",
+        "They made three hundred tintos."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Vale fue a Medellín.",
+      "options": [
+        "Vale went to Medellín.",
+        "Vale is going to Medellín.",
+        "I went to Medellín with Vale."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Fue un desastre.",
+      "options": [
+        "I was a disaster.",
+        "It was a disaster.",
+        "They were a disaster."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No fuiste a la fiesta.",
+      "options": [
+        "I didn't go to the party.",
+        "She didn't go to the party.",
+        "You didn't go to the party."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Ayer hizo frío.",
+      "options": [
+        "It was cold yesterday.",
+        "I was cold yesterday.",
+        "It's cold today."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hice el café.",
+      "options": [
+        "He made the coffee.",
+        "I made the coffee.",
+        "You made the coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Fueron al mercado?",
+      "options": [
+        "Did he go to the market?",
+        "Did we go to the market?",
+        "Did they go to the market?"
+      ],
+      "answer": 2
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Ayer ___ al mercado. (fui / fue) I went.",
+      "answer": "Ayer fui al mercado.",
+      "accept": [
+        "Fui al mercado ayer."
+      ],
+      "why": "I went is *fui*; *fue* is he or she."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: El sábado ___ un desastre. (fui / fue) Saturday was a disaster.",
+      "answer": "El sábado fue un desastre.",
+      "accept": [],
+      "why": "The day is an it, so *fue*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: ¿Qué ___ anoche? (hizo / hiciste) Asking a friend.",
+      "answer": "¿Qué hiciste anoche?",
+      "accept": [
+        "¿Qué hiciste tú anoche?"
+      ],
+      "why": "To a friend, you did is *hiciste*."
+    },
+    {
+      "prompt": "We went to Monserrate on Sunday.",
+      "answer": "Fuimos a Monserrate el domingo.",
+      "accept": [
+        "El domingo fuimos a Monserrate."
+      ],
+      "why": "We went is *fuimos*."
+    },
+    {
+      "prompt": "It was cold yesterday.",
+      "answer": "Ayer hizo frío.",
+      "accept": [
+        "Hizo frío ayer."
+      ],
+      "why": "Weather uses *hacer*: *hizo frío*."
+    },
+    {
+      "prompt": "Make it about we: Fui al mercado.",
+      "answer": "Fuimos al mercado.",
+      "accept": [
+        "Nosotros fuimos al mercado."
+      ],
+      "why": "From I to we: *fui* becomes *fuimos*."
+    },
+    {
+      "prompt": "Make it negative: Hice el café.",
+      "answer": "No hice el café.",
+      "accept": [
+        "Yo no hice el café."
+      ],
+      "why": "*No* goes right before the verb."
+    },
+    {
+      "prompt": "Ask Don Hernando, politely: What did you do on Sunday?",
+      "answer": "¿Qué hizo usted el domingo?",
+      "accept": [
+        "¿Qué hizo el domingo?"
+      ],
+      "why": "With *usted*, it's the he and she form: *hizo*."
+    },
+    {
+      "prompt": "Now it's two people: Vale fue al parque. Make it Vale and Tomás.",
+      "answer": "Vale y Tomás fueron al parque.",
+      "accept": [],
+      "why": "Two people means they: *fueron*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Yo fue al mercado.",
+      "right": "Yo fui al mercado.",
+      "why": "Almost. *Fue* is he or she; for I it's *fui*."
+    },
+    {
+      "wrong": "Fuí al mercado.",
+      "right": "Fui al mercado.",
+      "why": "Close. These short forms carry no accent mark: *fui*, *fue*."
+    },
+    {
+      "wrong": "Ayer hació frío.",
+      "right": "Ayer hizo frío.",
+      "why": "Nearly. *Hacer* is irregular in the past: it's *hizo*, with a *z*."
+    },
+    {
+      "wrong": "Fui en el mercado.",
+      "right": "Fui al mercado.",
+      "why": "Going takes *a*, and *a* plus *el* makes *al*."
+    }
+  ],
+  "personal": "What did you do last weekend? Write three sentences: where you went (*fui*), something you did (*hice*) and how it was (*fue*)."
+}

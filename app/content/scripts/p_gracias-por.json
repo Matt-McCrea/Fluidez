@@ -1,0 +1,177 @@
+{
+  "node": "p:gracias-por",
+  "hook": {
+    "line": "Sunday night, three hundred tintos later, Hernando's friends are heading home. A plain *gracias* is fine, but you want to say what you're thankful for, and that takes one small word: *por*.",
+    "es": "Mil gracias por venir.",
+    "en": "Thanks a million for coming."
+  },
+  "examples": [
+    {
+      "es": "Gracias por la ayuda.",
+      "en": "Thanks for the help."
+    },
+    {
+      "es": "Muchas gracias por venir.",
+      "en": "Thank you so much for coming."
+    },
+    {
+      "es": "Mil gracias por todo.",
+      "en": "Thanks a million for everything."
+    },
+    {
+      "es": "Gracias por el café, Vale.",
+      "en": "Thanks for the coffee, Vale."
+    },
+    {
+      "es": "Gracias por esperar, señora.",
+      "en": "Thank you for waiting, ma'am."
+    },
+    {
+      "es": "Gracias por venir.\nCon mucho gusto.",
+      "en": "Thanks for coming.\nMy pleasure."
+    }
+  ],
+  "rule": "To say what the thanks are for, add *por* and then the thing: *gracias por la ayuda*, *gracias por todo*.\n\nFor an action, *por* takes the plain form of the verb, the one ending in *-ar*, *-er* or *-ir*: *gracias por venir*, *gracias por esperar*. English uses the -ing form here (coming, waiting); Spanish never does.\n\nTo turn it up, say *muchas gracias por…* or the very Colombian *mil gracias por…* (a thousand thanks). Never *muy gracias*.\n\nThe replies you already know still work: *de nada*, *con mucho gusto*, *a la orden*.",
+  "smallPrint": "Here *por* gives the reason behind the thanks. Teachers call this *por* of cause; *por* has other jobs you'll meet later.",
+  "readAndPick": [
+    {
+      "es": "Gracias por venir.",
+      "options": [
+        "Thanks for coming.",
+        "Thanks, I'm coming."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Gracias. Voy a esperar.",
+      "options": [
+        "Thanks for waiting.",
+        "Thanks. I'm going to wait."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Mil gracias por todo.",
+      "options": [
+        "Thanks for a thousand things.",
+        "Thanks a million for everything.",
+        "Thanks, that's all."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Un café, por favor.",
+      "options": [
+        "Thanks for the coffee.",
+        "Thanks, a coffee.",
+        "A coffee, please."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Muchas gracias por esperar.",
+      "options": [
+        "Thank you very much for waiting.",
+        "Thanks, I'll wait a lot.",
+        "Thanks, please wait."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Gracias por las flores, Mariana.",
+      "options": [
+        "Thanks, Mariana, I love flowers.",
+        "Thanks for the flowers, Mariana.",
+        "Flowers for Mariana, please."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Gracias por llamar, don Hernando.",
+      "options": [
+        "Call Don Hernando, please.",
+        "Thanks, I'm calling Don Hernando.",
+        "Thanks for calling, Don Hernando."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Gracias por la ayuda.\nDe nada.",
+      "options": [
+        "Thanks for the help.\nYou're welcome.",
+        "Thanks, can you help?\nOf course.",
+        "Help, please.\nThanks."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: Gracias ___ la ayuda. (por / para)",
+      "answer": "Gracias por la ayuda.",
+      "accept": [],
+      "why": "Thanks always take *por*: *gracias por*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: Gracias por ___. (venir / vienes) Thanks for coming.",
+      "answer": "Gracias por venir.",
+      "accept": [],
+      "why": "After *por* the verb stays in its plain form: *venir*."
+    },
+    {
+      "prompt": "Thank you very much for waiting.",
+      "answer": "Muchas gracias por esperar.",
+      "accept": [],
+      "why": "*Muchas gracias*, then *por* and the plain verb *esperar*."
+    },
+    {
+      "prompt": "Thanks a million for everything.",
+      "answer": "Mil gracias por todo.",
+      "accept": [],
+      "why": "*Mil gracias* is the Colombian way to say thanks a million, and *todo* is everything."
+    },
+    {
+      "prompt": "Thanks for calling. (just two ideas: thanks, and calling)",
+      "answer": "Gracias por llamar.",
+      "accept": [
+        "Muchas gracias por llamar."
+      ],
+      "why": "Calling is an action, so it's the plain verb: *llamar*."
+    },
+    {
+      "prompt": "Make it stronger with *muchas*: Gracias por venir.",
+      "answer": "Muchas gracias por venir.",
+      "accept": [
+        "Mil gracias por venir."
+      ],
+      "why": "*Muchas* goes in front of *gracias*; the rest stays the same."
+    },
+    {
+      "prompt": "Thank Don Hernando for the help, with his name at the end.",
+      "answer": "Gracias por la ayuda, don Hernando.",
+      "accept": [
+        "Muchas gracias por la ayuda, don Hernando.",
+        "Mil gracias por la ayuda, don Hernando."
+      ],
+      "why": "The thing you're thankful for comes after *por*: *la ayuda*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Muy gracias por todo.",
+      "right": "Muchas gracias por todo.",
+      "why": "Almost. *Gracias* is a noun, so it takes *muchas*, not *muy*."
+    },
+    {
+      "wrong": "Gracias por vienes.",
+      "right": "Gracias por venir.",
+      "why": "Close. After *por*, the verb stays in its plain form: *venir*, not *vienes*."
+    },
+    {
+      "wrong": "Gracias para la ayuda.",
+      "right": "Gracias por la ayuda.",
+      "why": "Nearly. English says \"for\" both ways, but thanks always take *por*."
+    }
+  ],
+  "personal": "Think of someone who helped you this week. Write them two thank-you lines with *gracias por*: one for a thing, one for something they did."
+}

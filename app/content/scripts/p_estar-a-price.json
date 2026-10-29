@@ -1,0 +1,175 @@
+{
+  "node": "p:estar-a-price",
+  "hook": {
+    "line": "At Paloquemao nothing has a price tag. Prices move with the season and with whatever truck came in at dawn, so you ask what something is going for today.",
+    "es": "¿A cómo está el aguacate?",
+    "en": "How much is the avocado today?"
+  },
+  "examples": [
+    {
+      "es": "¿A cómo está el kilo de tomate?\nEstá a cuatro mil pesos.",
+      "en": "How much is a kilo of tomatoes?\nIt's four thousand pesos."
+    },
+    {
+      "es": "¿A cómo están los mangos hoy?",
+      "en": "How much are the mangoes today?"
+    },
+    {
+      "es": "Las naranjas están a dos mil el kilo.",
+      "en": "The oranges are two thousand a kilo."
+    },
+    {
+      "es": "El banano está a mil la libra.",
+      "en": "Bananas are a thousand a pound."
+    },
+    {
+      "es": "Hoy el dólar está a cuatro mil pesos.",
+      "en": "Today the dollar is at four thousand pesos."
+    }
+  ],
+  "rule": "For prices that change from day to day (fruit, vegetables, the dollar), Spanish uses *estar a* plus the price: *está a cuatro mil*. It's the same *estar* you use for how someone is today: the price right now.\n\nOne thing to watch: *está* for one thing, *están* for several: *¿A cómo están los mangos?*\n\nFor a fixed price, like a coffee in a café, ask *¿cuánto cuesta?* instead.\n\nEnglish has nothing where the *a* goes, so it's easy to drop. Say *está a dos mil*, not *está dos mil*.",
+  "smallPrint": "Grammars file this under *estar* with prices that vary. And in Colombia a full stop marks thousands: $4.000 is four thousand pesos.",
+  "readAndPick": [
+    {
+      "es": "¿A cómo están los mangos?",
+      "options": [
+        "How much is the mango today?",
+        "How much are the mangoes today?",
+        "Where are the mangoes?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde está el tomate?",
+      "options": [
+        "How much are tomatoes today?",
+        "Where's the tomato?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El aguacate está a cinco mil.",
+      "options": [
+        "The avocado is five thousand today.",
+        "There are five thousand avocados."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hoy el dólar está a cuatro mil pesos.",
+      "options": [
+        "Today I have four thousand pesos.",
+        "Today a dollar is four pesos.",
+        "Today the dollar is at four thousand pesos."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Las fresas están a siete mil el kilo.",
+      "options": [
+        "Strawberries are seven thousand a kilo.",
+        "A strawberry is seven thousand.",
+        "There are seven kilos of strawberries."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿A cómo está la libra de cebolla?",
+      "options": [
+        "Where's the pound of onions?",
+        "How much are onions a kilo?",
+        "How much is a pound of onions?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "La papa está barata hoy.",
+      "options": [
+        "Potatoes are three thousand today.",
+        "Potatoes are cheap today.",
+        "The potato is in the bag."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El banano está a mil la libra.",
+      "options": [
+        "Bananas are a thousand a pound.",
+        "There are a thousand bananas.",
+        "The banana weighs a pound."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Fill the gap and type the whole sentence: ¿A cómo ___ los mangos? (está / están)",
+      "answer": "¿A cómo están los mangos?",
+      "accept": [],
+      "why": "Mangoes are several, so it's *están*."
+    },
+    {
+      "prompt": "Fill the gap and type the whole sentence: El tomate está ___ cuatro mil. (a / en)",
+      "answer": "El tomate está a cuatro mil.",
+      "accept": [
+        "El tomate está a cuatro mil pesos."
+      ],
+      "why": "A price that moves takes *estar a*."
+    },
+    {
+      "prompt": "At a market stall: How much is the avocado today?",
+      "answer": "¿A cómo está el aguacate?",
+      "accept": [
+        "¿A cómo está el aguacate hoy?",
+        "¿A cómo está hoy el aguacate?"
+      ],
+      "why": "Today's price at a stall is *¿a cómo está?*"
+    },
+    {
+      "prompt": "The oranges are two thousand a kilo.",
+      "answer": "Las naranjas están a dos mil el kilo.",
+      "accept": [
+        "Las naranjas están a dos mil pesos el kilo."
+      ],
+      "why": "Oranges are several, so *están a*, then the price."
+    },
+    {
+      "prompt": "How much is a pound of potatoes?",
+      "answer": "¿A cómo está la libra de papa?",
+      "accept": [],
+      "why": "One pound, so *está*; at the market, potatoes go by the *libra*."
+    },
+    {
+      "prompt": "Make it plural: ¿A cómo está la fresa?",
+      "answer": "¿A cómo están las fresas?",
+      "accept": [],
+      "why": "Several strawberries: *están*, *las fresas*."
+    },
+    {
+      "prompt": "The vendor asked about one thing. Answer: It's three thousand.",
+      "answer": "Está a tres mil.",
+      "accept": [
+        "Está a tres mil pesos."
+      ],
+      "why": "Keep the *a* before the price: *está a tres mil*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El tomate está cuatro mil.",
+      "right": "El tomate está a cuatro mil.",
+      "why": "Almost. Spanish needs *a* before the price: *está a cuatro mil*."
+    },
+    {
+      "wrong": "¿A cómo es el kilo de tomate?",
+      "right": "¿A cómo está el kilo de tomate?",
+      "why": "Close. Today's price is how things are right now, so it's *está*, not *es*."
+    },
+    {
+      "wrong": "¿A cómo está los mangos?",
+      "right": "¿A cómo están los mangos?",
+      "why": "Nearly. Several mangoes, so the verb is *están*."
+    }
+  ],
+  "personal": "Picture your nearest market. Ask the price of two things you buy every week, one with *¿a cómo está…?* and one with *¿a cómo están…?*, then answer each with a price in pesos."
+}
