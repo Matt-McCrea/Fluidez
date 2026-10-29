@@ -1,0 +1,165 @@
+{
+  "node": "x:ser-event-estar-location",
+  "hook": {
+    "line": "Sunday: the match is at the stadium, Hernando is at the match, and Tomás is somewhere on the wrong bus. Three different things to locate, and Spanish picks the verb by what you're locating.",
+    "es": "El partido es en el estadio, y Hernando ya está en el estadio.",
+    "en": "The match is at the stadium, and Hernando is already at the stadium."
+  },
+  "examples": [
+    {
+      "es": "La fiesta es en mi casa.",
+      "en": "The party is at my place."
+    },
+    {
+      "es": "Mi casa está en Chapinero.",
+      "en": "My place is in Chapinero."
+    },
+    {
+      "es": "Tomás está en la fiesta.",
+      "en": "Tomás is at the party."
+    },
+    {
+      "es": "¿Dónde es el concierto?\nEn el parque, y el parque está cerca.",
+      "en": "Where's the concert?\nIn the park, and the park is close."
+    },
+    {
+      "es": "Mariana no puede hablar, está en una reunión.",
+      "en": "Mariana can't talk, she's in a meeting."
+    },
+    {
+      "es": "La rumba fue en la casa de Vale, y estuvimos ahí hasta tarde.",
+      "en": "The party was at Vale's place, and we were there until late."
+    }
+  ],
+  "rule": "Ask what you're locating.\n\nAn event: *es*. It takes place there.\n*La fiesta es en mi casa.*\n\nA place, a thing or a person: *está*. It's there.\n*Mi casa está en Chapinero.*\n*Las boletas están en mi celular.*\n\nThe trap is a person at an event. The event happens, but the person is simply somewhere, so *está*:\n*Tomás está en la fiesta.* *Mariana está en una reunión.*\n\nSame in questions: *¿Dónde es la fiesta?* asks where it happens. *¿Dónde estás?* asks where you are, even if the answer is at the party.\n\nIn the past it's *fue* for the event and *estuve*, *estuvimos* for the people.",
+  "smallPrint": "Teachers sum it up as: *ser* locates events, *estar* locates everything else.",
+  "readAndPick": [
+    {
+      "es": "Está en el concierto.",
+      "options": [
+        "The concert is at the stadium.",
+        "She's at the concert."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Es en el estadio.",
+      "options": [
+        "The match is at the stadium.",
+        "Hernando is at the stadium."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Está en el estadio.",
+      "options": [
+        "The match is at the stadium.",
+        "Hernando is at the stadium."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde estás?",
+      "options": [
+        "Where's the party?",
+        "Where are you?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde es?",
+      "options": [
+        "Where's the party?",
+        "Where are you?",
+        "Where's your house?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Estamos en clase.",
+      "options": [
+        "The class is here.",
+        "We're in class."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Fue en la casa de Vale.",
+      "options": [
+        "We were at Vale's place.",
+        "The party was at Vale's place."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Estuvimos en la casa de Vale.",
+      "options": [
+        "We were at Vale's place.",
+        "The party was at Vale's place."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *es* or *está* and type the whole sentence: *Tomás ___ en la fiesta.*",
+      "answer": "Tomás está en la fiesta.",
+      "accept": [],
+      "why": "Tomás is a person, and people are somewhere: *está*, even at a party."
+    },
+    {
+      "prompt": "Pick *es* or *está* and type the whole sentence: *La fiesta ___ en mi casa.*",
+      "answer": "La fiesta es en mi casa.",
+      "accept": [],
+      "why": "The party takes place there, so *es*."
+    },
+    {
+      "prompt": "Ask a friend: Where's the concert?",
+      "answer": "¿Dónde es el concierto?",
+      "accept": [],
+      "why": "You want to know where it happens: *es*."
+    },
+    {
+      "prompt": "Ask a friend: Where are you?",
+      "answer": "¿Dónde estás?",
+      "accept": [],
+      "why": "A person's whereabouts always take *estar*."
+    },
+    {
+      "prompt": "Say: The stadium is in the north.",
+      "answer": "El estadio está en el norte.",
+      "accept": [],
+      "why": "A stadium is a place that sits somewhere: *está*."
+    },
+    {
+      "prompt": "Say: Mariana is in a meeting.",
+      "answer": "Mariana está en una reunión.",
+      "accept": [],
+      "why": "The meeting is an event, but you're locating Mariana, so *está*."
+    },
+    {
+      "prompt": "Put it in the past: *La rumba es en la casa de Vale.*",
+      "answer": "La rumba fue en la casa de Vale.",
+      "accept": [],
+      "why": "An event in the past goes from *es* to *fue*."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Tomás es en la fiesta.",
+      "right": "Tomás está en la fiesta.",
+      "why": "Almost. The party takes place, but Tomás just is there, so *está*."
+    },
+    {
+      "wrong": "¿Dónde está la fiesta?",
+      "right": "¿Dónde es la fiesta?",
+      "why": "You're asking where it happens, not where an object sits: *es*."
+    },
+    {
+      "wrong": "Las boletas son en mi celular.",
+      "right": "Las boletas están en mi celular.",
+      "why": "Tickets are things, not events, so *están*."
+    }
+  ],
+  "personal": "Think of the last event you went to. Say where it was with *fue*, and who was there with you with *estuvimos* or *estaba*."
+}

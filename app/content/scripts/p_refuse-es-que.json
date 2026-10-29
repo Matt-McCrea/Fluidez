@@ -1,0 +1,183 @@
+{
+  "node": "p:refuse-es-que",
+  "hook": {
+    "line": "Mariana, Vale and Hernando all want Tomás on the same weekend. He can't say yes to everyone, and in Bogotá a bare *no* lands like a door shut in someone's face. Here's how to say no and keep your friends.",
+    "es": "Qué pena, es que el domingo tengo que trabajar.",
+    "en": "Sorry, it's just that I have to work on Sunday."
+  },
+  "examples": [
+    {
+      "es": "¿Vamos a cine el sábado?\nQué pena, es que tengo que trabajar.",
+      "en": "Shall we go to the cinema on Saturday?\nSorry, it's just that I have to work."
+    },
+    {
+      "es": "Lo siento, pero no puedo, es que tengo una cita.",
+      "en": "I'm sorry, but I can't, it's just that I have an appointment."
+    },
+    {
+      "es": "Me encantaría, pero es que el domingo hay partido.",
+      "en": "I'd love to, but the thing is there's a match on Sunday."
+    },
+    {
+      "es": "Qué pena con usted, es que ya tengo planes.",
+      "en": "I'm so sorry (formal), it's just that I already have plans."
+    },
+    {
+      "es": "Hoy no puedo. ¿Qué tal el domingo?",
+      "en": "I can't today. How about Sunday?"
+    },
+    {
+      "es": "Es que no tengo plata este mes. ¿Otro día?",
+      "en": "The thing is, I don't have any money this month. Another day?"
+    }
+  ],
+  "rule": "A kind Spanish no has three parts.\nThe cushion: *Qué pena* or *Lo siento*.\nThe reason, opened with *es que*: roughly the thing is, or it's just that.\nA new offer: *¿Otro día?* or *¿Qué tal el domingo?*\n\nYou don't always need all three, but a bare *No* or *No quiero* sounds much colder than it does in English. Even a small reason after *es que* softens it.\n\nAnd *Sí, pero más tarde* is still a yes, just with a condition.",
+  "smallPrint": "Teachers file this under declining an invitation. *Es que* is a fixed opener for excuses; you won't find it translated word for word.",
+  "readAndPick": [
+    {
+      "es": "Qué pena, es que tengo una cita.",
+      "options": [
+        "A yes",
+        "A polite no",
+        "A blunt no"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No quiero.",
+      "options": [
+        "A polite no",
+        "A blunt no",
+        "A yes"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Sí, pero más tarde.",
+      "options": [
+        "A yes, with a condition",
+        "A polite no"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Es que tengo que trabajar.",
+      "options": [
+        "It's that work is hard.",
+        "The thing is, I have to work.",
+        "I want to work."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Qué tal el domingo?",
+      "options": [
+        "How was Sunday?",
+        "How about Sunday?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Otro día?",
+      "options": [
+        "Another day?",
+        "The other day?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me encantaría, pero es que estoy muy cansado.",
+      "options": [
+        "I'd love to, and I'm not tired at all.",
+        "I'd love to, but the thing is I'm really tired.",
+        "I love it, but I'm tired."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Lo siento, hoy no puedo. ¿Otro día?",
+      "options": [
+        "Sorry, I can't today. Another day?",
+        "Sorry, I can't. Not ever.",
+        "Sorry, I couldn't come the other day."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick the kind opener and type the whole sentence: *___, es que tengo que trabajar.* (*Qué pena* or *No quiero*)",
+      "answer": "Qué pena, es que tengo que trabajar.",
+      "accept": [],
+      "why": "*Qué pena* cushions the no. *No quiero* followed by an excuse just sounds rude."
+    },
+    {
+      "prompt": "Turn down a friend: Sorry, it's just that I have an appointment.",
+      "answer": "Qué pena, es que tengo una cita.",
+      "accept": [
+        "Lo siento, es que tengo una cita.",
+        "Qué pena, es que tengo cita.",
+        "Lo siento, pero es que tengo una cita."
+      ],
+      "why": "Cushion first, then *es que* and the reason."
+    },
+    {
+      "prompt": "Offer a new day: How about Sunday?",
+      "answer": "¿Qué tal el domingo?",
+      "accept": [
+        "¿Y el domingo?"
+      ],
+      "why": "*¿Qué tal el...?* turns your no into a new plan."
+    },
+    {
+      "prompt": "Say: I'd love to, but the thing is I have to work on Saturday.",
+      "answer": "Me encantaría, pero es que tengo que trabajar el sábado.",
+      "accept": [
+        "Me encantaría, pero es que el sábado tengo que trabajar."
+      ],
+      "why": "*Me encantaría* is the warmest cushion of all, and *pero es que* brings in the reason."
+    },
+    {
+      "prompt": "Make it kinder by adding *Lo siento* and *es que*: *No puedo. Tengo una cita.*",
+      "answer": "Lo siento, pero no puedo, es que tengo una cita.",
+      "accept": [
+        "Lo siento, no puedo, es que tengo una cita."
+      ],
+      "why": "Same facts, but now there's an apology and the reason sounds like an explanation, not a wall."
+    },
+    {
+      "prompt": "Say it to an older man you call *usted*: I'm so sorry, it's just that I already have plans.",
+      "answer": "Qué pena con usted, es que ya tengo planes.",
+      "accept": [
+        "Lo siento, es que ya tengo planes."
+      ],
+      "why": "*Qué pena con usted* is the respectful Colombian way to apologise to someone you call *usted*."
+    },
+    {
+      "prompt": "Say no and suggest something else: Sorry, I can't today. Another day?",
+      "answer": "Lo siento, hoy no puedo. ¿Otro día?",
+      "accept": [
+        "Qué pena, hoy no puedo. ¿Otro día?"
+      ],
+      "why": "A counter-offer shows the no is about today, not about them."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "No quiero.",
+      "right": "Qué pena, es que estoy muy cansado.",
+      "why": "Careful. *No quiero* on its own sounds like you don't like the person. Give a cushion and a reason."
+    },
+    {
+      "wrong": "Es porque tengo que trabajar.",
+      "right": "Es que tengo que trabajar.",
+      "why": "Almost. English says it's because; Spanish excuses start with plain *es que*."
+    },
+    {
+      "wrong": "Estoy ocupado.",
+      "right": "Qué pena, es que estoy ocupado. ¿Qué tal el domingo?",
+      "why": "True, but cold. Wrap the fact in a cushion and offer another day."
+    }
+  ],
+  "personal": "Someone invites you out tonight and you can't go. Turn them down the Bogotá way: a cushion, *es que* with your real reason, and a new day."
+}

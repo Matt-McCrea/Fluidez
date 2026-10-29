@@ -1,0 +1,166 @@
+{
+  "node": "p:event-ser-en",
+  "hook": {
+    "line": "Invitations are piling up, and Tomás keeps losing track. Every plan comes down to two questions: when is it, and where is it? Spanish answers both with *es*.",
+    "es": "¿Cuándo es la fiesta de Mariana?",
+    "en": "When is Mariana's party?"
+  },
+  "examples": [
+    {
+      "es": "El concierto es el sábado.",
+      "en": "The concert is on Saturday."
+    },
+    {
+      "es": "La fiesta es en mi casa.",
+      "en": "The party is at my place."
+    },
+    {
+      "es": "¿A qué hora es el partido?\nEs a las tres.",
+      "en": "What time is the match?\nIt's at three."
+    },
+    {
+      "es": "La reunión no es hoy, es mañana.",
+      "en": "The meeting isn't today, it's tomorrow."
+    },
+    {
+      "es": "¿Dónde fue la fiesta?",
+      "en": "Where was the party?"
+    },
+    {
+      "es": "Hubo un accidente en la Séptima.",
+      "en": "There was an accident on Seventh Avenue."
+    }
+  ],
+  "rule": "A party, a concert, a match, a class or a meeting is something that happens. To say when or where it happens, Spanish uses *es*:\n*El concierto es el sábado.*\n*El partido es a las tres.*\n*La fiesta es en mi casa.*\n\nAsk with *¿Cuándo es...?*, *¿A qué hora es...?* and *¿Dónde es...?*\n\nFor one that's over, use *fue*: *La fiesta fue en el café.* And to say a one-off event happened, use *hubo*: *Hubo un accidente.*",
+  "smallPrint": "Teachers call these event nouns: they name something that takes place, not something that sits somewhere.",
+  "readAndPick": [
+    {
+      "es": "El concierto es el sábado.",
+      "options": [
+        "The concert was on Saturday.",
+        "The concert is on Saturday."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "El concierto fue el sábado.",
+      "options": [
+        "The concert was on Saturday.",
+        "The concert is on Saturday."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿A qué hora es la función?",
+      "options": [
+        "Where is the show?",
+        "What time is the show?",
+        "How long is the show?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Dónde es la reunión?",
+      "options": [
+        "When is the meeting?",
+        "What time is the meeting?",
+        "Where is the meeting?"
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Cuándo es el partido?",
+      "options": [
+        "When is the match?",
+        "Where is the match?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Hubo un concierto en el parque.",
+      "options": [
+        "There's a concert in the park.",
+        "There was a concert in the park."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Hay un concierto en el parque.",
+      "options": [
+        "There's a concert in the park.",
+        "There was a concert in the park."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "La fiesta no es hoy, es mañana.",
+      "options": [
+        "The party isn't today, it's tomorrow.",
+        "The party wasn't today, it was yesterday."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *es* or *está* and type the whole sentence: *El concierto ___ el sábado.*",
+      "answer": "El concierto es el sábado.",
+      "accept": [],
+      "why": "A concert is something that happens, so its day goes with *es*."
+    },
+    {
+      "prompt": "Pick *es* or *está* and type the whole sentence: *¿A qué hora ___ el partido?*",
+      "answer": "¿A qué hora es el partido?",
+      "accept": [],
+      "why": "You're asking when the match happens: *es*."
+    },
+    {
+      "prompt": "Ask a friend: When is the party?",
+      "answer": "¿Cuándo es la fiesta?",
+      "accept": [],
+      "why": "*¿Cuándo es...?* asks for the day of an event."
+    },
+    {
+      "prompt": "Say: The class is at six.",
+      "answer": "La clase es a las seis.",
+      "accept": [],
+      "why": "A class happens at a time, so *es a las seis*."
+    },
+    {
+      "prompt": "Say: There was an accident on Seventh Avenue.",
+      "answer": "Hubo un accidente en la Séptima.",
+      "accept": [],
+      "why": "A one-off event that happened is *hubo*."
+    },
+    {
+      "prompt": "Put it in the past: *La fiesta es en el café.*",
+      "answer": "La fiesta fue en el café.",
+      "accept": [],
+      "why": "The party is over, so *es* becomes *fue*."
+    },
+    {
+      "prompt": "Correct the day: the meeting isn't today, it's tomorrow.",
+      "answer": "La reunión no es hoy, es mañana.",
+      "accept": [],
+      "why": "Both halves are about when the meeting happens, so *es* twice."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "El concierto está el sábado.",
+      "right": "El concierto es el sábado.",
+      "why": "Almost. Events happen, they don't sit anywhere, so *es*."
+    },
+    {
+      "wrong": "Había un accidente en la Séptima.",
+      "right": "Hubo un accidente en la Séptima.",
+      "why": "For one event that happened and is over, Spanish uses *hubo*."
+    },
+    {
+      "wrong": "El partido es en tres.",
+      "right": "El partido es a las tres.",
+      "why": "Clock times take *a las*: *a las tres*, *a las ocho*."
+    }
+  ],
+  "personal": "What's the next plan in your diary? Say what it is, when it is and where it is, all with *es*."
+}

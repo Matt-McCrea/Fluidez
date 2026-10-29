@@ -1,0 +1,171 @@
+{
+  "node": "p:durar-durante",
+  "hook": {
+    "line": "Before Tomás says yes to Mariana's concert, he has one question: how long is he going to be on his feet? Spanish asks it with one verb, *durar*.",
+    "es": "¿Cuánto dura el concierto?",
+    "en": "How long does the concert last?"
+  },
+  "examples": [
+    {
+      "es": "La película dura casi tres horas.",
+      "en": "The film lasts almost three hours."
+    },
+    {
+      "es": "¿Cuánto dura el viaje a Medellín?",
+      "en": "How long is the trip to Medellín?"
+    },
+    {
+      "es": "El partido dura noventa minutos.",
+      "en": "The match lasts ninety minutes."
+    },
+    {
+      "es": "La clase de salsa duró dos horas.",
+      "en": "The salsa class lasted two hours."
+    },
+    {
+      "es": "Durante la semana trabajo mucho.",
+      "en": "During the week I work a lot."
+    },
+    {
+      "es": "Tomás no habló durante la película.",
+      "en": "Tomás didn't talk during the film."
+    }
+  ],
+  "rule": "*Durar* means to last. The length comes straight after it, with nothing in between: *dura dos horas*, not dura for two hours.\n\nTo ask, use *¿Cuánto dura...?* English often says how long is it, but Spanish needs the verb: *¿Cuánto dura el viaje?*\n\n*Durante* means during. Put it before an event or a stretch of time: *durante la película*, *durante la semana*.",
+  "smallPrint": "Teachers file this under duration. *Durar* is a regular *-ar* verb: *dura*, *duran*, *duró*, *duraron*.",
+  "readAndPick": [
+    {
+      "es": "La película dura dos horas.",
+      "options": [
+        "The film lasted two hours.",
+        "The film lasts two hours."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "La reunión duró toda la mañana.",
+      "options": [
+        "The meeting lasted all morning.",
+        "The meeting lasts all morning."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuánto dura el concierto?",
+      "options": [
+        "How much is the concert?",
+        "How long is the concert?",
+        "When is the concert?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Cuánto es el concierto?",
+      "options": [
+        "How long is the concert?",
+        "How much is the concert?"
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Dormí durante el viaje.",
+      "options": [
+        "I slept after the trip.",
+        "I slept before the trip.",
+        "I slept during the trip."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Las clases duran una hora.",
+      "options": [
+        "The classes last an hour.",
+        "The class lasts an hour."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Durante el partido, Hernando no come nada.",
+      "options": [
+        "During the match, Hernando doesn't eat anything.",
+        "After the match, Hernando doesn't eat anything."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "¿Cuánto duró la reunión?",
+      "options": [
+        "How long does the meeting last?",
+        "How long did the meeting last?",
+        "When was the meeting?"
+      ],
+      "answer": 1
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *dura* or *es* and type the whole sentence: *¿Cuánto ___ la película?* (How long is the film?)",
+      "answer": "¿Cuánto dura la película?",
+      "accept": [],
+      "why": "*¿Cuánto es?* asks the price. For how long, you need *dura*."
+    },
+    {
+      "prompt": "Pick *durante* or *dura* and type the whole sentence: *Tomás no habló ___ la película.*",
+      "answer": "Tomás no habló durante la película.",
+      "accept": [],
+      "why": "During the film is *durante*. *Dura* is a verb and needs a subject."
+    },
+    {
+      "prompt": "Say: The match lasts ninety minutes.",
+      "answer": "El partido dura noventa minutos.",
+      "accept": [],
+      "why": "The length comes straight after *dura*, with nothing in between."
+    },
+    {
+      "prompt": "Ask: How long is the trip to Medellín?",
+      "answer": "¿Cuánto dura el viaje a Medellín?",
+      "accept": [
+        "¿Cuánto tiempo dura el viaje a Medellín?"
+      ],
+      "why": "Spanish asks how long with *¿Cuánto dura...?*"
+    },
+    {
+      "prompt": "Say: During the week I work a lot.",
+      "answer": "Durante la semana trabajo mucho.",
+      "accept": [
+        "Trabajo mucho durante la semana."
+      ],
+      "why": "*Durante* goes right before the stretch of time."
+    },
+    {
+      "prompt": "Put it in the past: *La clase de salsa dura dos horas.*",
+      "answer": "La clase de salsa duró dos horas.",
+      "accept": [],
+      "why": "*Durar* is a regular *-ar* verb, so the past is *duró*."
+    },
+    {
+      "prompt": "Make it plural: *La clase dura una hora.*",
+      "answer": "Las clases duran una hora.",
+      "accept": [],
+      "why": "Two classes, so *duran*. The length stays the same."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La película dura por tres horas.",
+      "right": "La película dura tres horas.",
+      "why": "Almost. *Durar* takes the length directly, with no *por* and no *de*."
+    },
+    {
+      "wrong": "¿Cuánto es el viaje?",
+      "right": "¿Cuánto dura el viaje?",
+      "why": "Careful. *¿Cuánto es?* asks how much it costs. For time, use *dura*."
+    },
+    {
+      "wrong": "Mientras la película, Tomás no habló.",
+      "right": "Durante la película, Tomás no habló.",
+      "why": "Before a noun like *la película*, during is *durante*."
+    }
+  ],
+  "personal": "Think of something in your week: your commute, a class, a film you saw. Say how long it lasts with *dura*, and one thing you do *durante* it."
+}

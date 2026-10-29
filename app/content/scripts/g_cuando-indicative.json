@@ -1,0 +1,189 @@
+{
+  "node": "g:cuando-indicative",
+  "hook": {
+    "line": "Mariana asks Tomás how he learnt to dance. He didn't, really. But he can tell her what life was like when he was a kid in Toronto, and what happened when he got to Bogotá. For that, he needs *cuando*, *mientras* and *siempre que*.",
+    "es": "Cuando era niño, vivía en Toronto, y siempre que mi abuela llamaba, hablábamos en español.",
+    "en": "When I was a kid, I lived in Toronto, and whenever my grandmother called, we spoke in Spanish."
+  },
+  "examples": [
+    {
+      "es": "Cuando era niño, vivía en Toronto.",
+      "en": "When I was a kid, I lived in Toronto."
+    },
+    {
+      "es": "Cuando llegué a Bogotá, no conocía a nadie.",
+      "en": "When I got to Bogotá, I didn't know anyone."
+    },
+    {
+      "es": "Mientras yo cocinaba, Hernando lavaba los platos.",
+      "en": "While I was cooking, Hernando was washing the dishes."
+    },
+    {
+      "es": "Siempre que llueve, vendemos más tinto.",
+      "en": "Whenever it rains, we sell more coffee."
+    },
+    {
+      "es": "Siempre que mis padres venían, mi abuela hacía ajiaco.",
+      "en": "Whenever my parents came, my grandmother made ajiaco."
+    },
+    {
+      "es": "¿Dónde vivías cuando eras niña?",
+      "en": "Where did you live when you were a kid? (to a woman, informal)"
+    },
+    {
+      "es": "Cuando terminó la película, fuimos a comer.",
+      "en": "When the film finished, we went to eat."
+    }
+  ],
+  "rule": "You already use *cuando* with the present for routines. With the past, English when hides two meanings, and Spanish splits them.\n\nA stretch of time or an old habit takes the describing past: *Cuando era niño, vivía en Toronto.*\nOne moment takes the event past: *Cuando llegué a Bogotá...*\n\n*Mientras* means while: two things going on at the same time. Both sides usually take the describing past: *Mientras yo cocinaba, él lavaba.*\n\n*Siempre que* means whenever, every time. Use the same tense on both sides: present for habits now (*siempre que llueve, vendemos más*), describing past for old habits (*siempre que venían, hacía ajiaco*).\n\nNo accent on any of them unless you're asking a question: *¿Cuándo llegaste?*",
+  "smallPrint": "Teachers call these time clauses. For something that hasn't happened yet (when I arrive tomorrow), *cuando* needs a different verb form, which comes later.",
+  "readAndPick": [
+    {
+      "es": "Cuando era niño, vivía en Toronto.",
+      "options": [
+        "When I was a kid, I lived in Toronto.",
+        "When I'm a kid, I live in Toronto.",
+        "When he moved to Toronto, he was a kid."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuando llegué, Vale ya estaba ahí.",
+      "options": [
+        "When Vale arrived, I was already there.",
+        "When I arrived, Vale was already there."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Cuando llego, Vale ya está ahí.",
+      "options": [
+        "When I arrive, Vale is already there.",
+        "When I arrived, Vale was already there."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mientras Mariana hablaba, yo miraba el celular.",
+      "options": [
+        "When Mariana spoke, I looked at my phone.",
+        "While Mariana was talking, I was looking at my phone.",
+        "Mariana talked while looking at her phone."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Siempre que llovía, mi abuela hacía chocolate.",
+      "options": [
+        "Whenever it rained, my grandmother made hot chocolate.",
+        "Whenever it rains, my grandmother makes hot chocolate."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Siempre que voy a Medellín, visito a mi hermana.",
+      "options": [
+        "Whenever I went to Medellín, I visited my sister.",
+        "When I went to Medellín, I visited my sister.",
+        "Whenever I go to Medellín, I visit my sister."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Cuando éramos niños, jugábamos en la calle.",
+      "options": [
+        "When we were kids, we played in the street.",
+        "When they were kids, they played in the street."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuando salí del trabajo, llovía.",
+      "options": [
+        "When I left work, it was raining.",
+        "When it rained, I left work.",
+        "Whenever I leave work, it rains."
+      ],
+      "answer": 0
+    }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick *era* or *fui* and type the whole sentence: *Cuando ___ niño, vivía en Toronto.*",
+      "answer": "Cuando era niño, vivía en Toronto.",
+      "accept": [],
+      "why": "Being a kid is a whole stretch of time, so the describing past: *era*."
+    },
+    {
+      "prompt": "Pick *cocinaba* or *cociné* and type the whole sentence: *Mientras yo ___, Hernando lavaba los platos.*",
+      "answer": "Mientras yo cocinaba, Hernando lavaba los platos.",
+      "accept": [],
+      "why": "*Mientras* is two things going on at once, so the describing past on both sides."
+    },
+    {
+      "prompt": "Say: When I got to Bogotá, I didn't know anyone.",
+      "answer": "Cuando llegué a Bogotá, no conocía a nadie.",
+      "accept": [
+        "No conocía a nadie cuando llegué a Bogotá."
+      ],
+      "why": "Arriving is one moment, *llegué*; not knowing anyone was the situation, *conocía*."
+    },
+    {
+      "prompt": "Say: Whenever it rains, we sell more coffee.",
+      "answer": "Siempre que llueve, vendemos más tinto.",
+      "accept": [
+        "Vendemos más tinto siempre que llueve.",
+        "Siempre que llueve, vendemos más café.",
+        "Vendemos más café siempre que llueve."
+      ],
+      "why": "A habit now, so *siempre que* with the present on both sides."
+    },
+    {
+      "prompt": "Ask a friend (a woman): Where did you live when you were a kid?",
+      "answer": "¿Dónde vivías cuando eras niña?",
+      "accept": [
+        "Cuando eras niña, ¿dónde vivías?"
+      ],
+      "why": "Childhood is a stretch of time, so *vivías* and *eras*, and *niña* for a woman."
+    },
+    {
+      "prompt": "Make it an old habit, in the past: *Siempre que llueve, mi abuela hace chocolate.*",
+      "answer": "Siempre que llovía, mi abuela hacía chocolate.",
+      "accept": [
+        "Mi abuela hacía chocolate siempre que llovía."
+      ],
+      "why": "Old habits take the describing past, on both sides of *siempre que*."
+    },
+    {
+      "prompt": "Make it about *we*: *Cuando era niño, jugaba en la calle.*",
+      "answer": "Cuando éramos niños, jugábamos en la calle.",
+      "accept": [
+        "Jugábamos en la calle cuando éramos niños."
+      ],
+      "why": "*Era* becomes *éramos*, *jugaba* becomes *jugábamos*, and *niños* goes plural."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Cuando fui niño, vivía en Toronto.",
+      "right": "Cuando era niño, vivía en Toronto.",
+      "why": "Almost. Childhood isn't one moment, it's a whole stretch, so *era*."
+    },
+    {
+      "wrong": "Mientras cociné, Hernando lavó los platos.",
+      "right": "Mientras yo cocinaba, Hernando lavaba los platos.",
+      "why": "*Mientras* sets two things side by side as they were going on, so the describing past."
+    },
+    {
+      "wrong": "Cuándo llegué a Bogotá, no conocía a nadie.",
+      "right": "Cuando llegué a Bogotá, no conocía a nadie.",
+      "why": "The accent is only for questions. Here *cuando* just joins two ideas."
+    },
+    {
+      "wrong": "Siempre que llovía, mi abuela hace chocolate.",
+      "right": "Siempre que llovía, mi abuela hacía chocolate.",
+      "why": "Keep both sides in the same time: an old habit is *llovía* and *hacía*."
+    }
+  ],
+  "personal": "Tell one small story about when you were a kid: start with *Cuando era niño* or *Cuando era niña*, say what you used to do, and add one *siempre que*."
+}
