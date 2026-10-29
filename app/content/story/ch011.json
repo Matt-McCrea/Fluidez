@@ -1,0 +1,166 @@
+{
+ "id": "ch011",
+ "unit": "u05",
+ "title": "Nadie sabe nada",
+ "text": "Tomás pregunta a todos. Nadie sabe nada.\nTomás: Vale, ¿quién es el hombre de la foto?\nVale: No sé, Tomás. Nunca vi la foto.\nTomás: Don Hernando, usted conoce a todo el barrio.\nHernando: ¿Yo? No conozco a nadie.\nTomás: ¿Qué edad tiene él en la foto? ¿Veinte años?\nHernando: No sé su edad. No sé su nombre. No sé nada.\nSimón: ¡No sé nada! ¡No sé nada!\nTomás: ¿Era un amigo de Rosa? ¿Un cliente?\nHernando: Era un chico tímido. Muy trabajador. Y Rosa...\nHernando no termina.\nTomás: ¿Y Rosa qué, Don Hernando?\nHernando: Nada. Hoy pago yo el tinto. Soy un hombre generoso.\nVale: ¿Usted? ¿Generoso? Usted nunca paga.\nHernando sale del café. Son las cuatro de la tarde. Hernando nunca sale a las cuatro.\nVale: Tomás, tú no eres perezoso. Eres trabajador, como Rosa. Y un poco tímido, como él.\nTomás mira la foto otra vez. En la foto hay un número: 1978.\nTomás: Quedan veinticinco días. Y tengo dos preguntas.",
+ "gloss": [
+  {
+   "es": "Nunca vi la foto",
+   "en": "I've never seen the photo"
+  },
+  {
+   "es": "¿Y Rosa qué?",
+   "en": "And Rosa what?"
+  },
+  {
+   "es": "Hoy pago yo el tinto",
+   "en": "Today the coffee's on me"
+  },
+  {
+   "es": "Quedan veinticinco días",
+   "en": "There are twenty-five days left"
+  }
+ ],
+ "questions": [
+  {
+   "q": "What does Hernando claim about the neighbourhood?",
+   "options": [
+    "He doesn't know anybody",
+    "He knows everybody",
+    "He is moving away",
+    "He is going to buy it"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Why is Simón's «¡No sé nada!» funny?",
+   "options": [
+    "He has learned Hernando's excuse word for word",
+    "He really knows the answer",
+    "He says it in English",
+    "Nobody asked him"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What slip does Hernando make?",
+   "options": [
+    "He describes the young man as a shy, hard-working boy",
+    "He says the man's name",
+    "He says the man is Tomás's grandfather",
+    "He says Rosa was his wife"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "¿A qué hora sale Hernando del café?",
+   "options": [
+    "A las cuatro de la tarde",
+    "A las seis de la mañana",
+    "Con Simón"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What is Tomás's second question at the end?",
+   "options": [
+    "What the number 1978 on the photo means",
+    "How to fix the espresso machine",
+    "Where Hernando lives",
+    "How old Vale is"
+   ],
+   "answer": 0
+  }
+ ],
+ "hook": "Hernando has left early for the first time in forty years, and a photo says 1978. Tomorrow Hernando comes back, and he has a story about the café.",
+ "rereadQuestions": [
+  {
+   "q": "¿Cómo es Tomás, según Vale?",
+   "options": [
+    "Trabajador y un poco tímido",
+    "Perezoso y generoso",
+    "Serio y alto"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Why does Vale laugh at Hernando being «generoso»?",
+   "options": [
+    "He never pays",
+    "He is poor",
+    "He always pays for everyone",
+    "He has no money today"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "How old does Tomás guess the young man is?",
+   "options": [
+    "About twenty",
+    "About fifty",
+    "Seventy-one",
+    "Thirty-four"
+   ],
+   "answer": 0
+  }
+ ],
+ "requires": [
+  "c:era",
+  "c:hay",
+  "c:no-hay-nada",
+  "c:no-se",
+  "c:oye-mira",
+  "c:tengo",
+  "c:tienes",
+  "g:gender-articles",
+  "g:hay-vs-esta",
+  "g:imperfect-states",
+  "g:negation-words",
+  "g:present-ar",
+  "g:present-er-ir",
+  "g:preterite-er-ir",
+  "g:questions",
+  "g:ser-identity",
+  "g:stem-boot",
+  "g:yo-irregular",
+  "p:possessives-basic",
+  "p:quantifiers-basic"
+ ],
+ "lexemes": [
+  "l:amigo",
+  "l:año",
+  "l:barrio",
+  "l:café",
+  "l:chico",
+  "l:cliente",
+  "l:comer",
+  "l:conocer",
+  "l:día",
+  "l:edad",
+  "l:foto",
+  "l:generoso",
+  "l:hombre",
+  "l:hoy",
+  "l:mirar",
+  "l:nombre",
+  "l:número",
+  "l:pagar",
+  "l:perezoso",
+  "l:pregunta",
+  "l:preguntar",
+  "l:quedar",
+  "l:quién",
+  "l:qué",
+  "l:saber",
+  "l:salir",
+  "l:ser",
+  "l:tarde",
+  "l:tener",
+  "l:terminar",
+  "l:tinto",
+  "l:trabajador",
+  "l:tímido",
+  "l:ver",
+  "l:vez"
+ ]
+}

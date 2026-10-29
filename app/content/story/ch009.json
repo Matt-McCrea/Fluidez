@@ -1,0 +1,186 @@
+{
+  "id": "ch009",
+  "unit": "u05",
+  "title": "¿Es guapo?",
+  "text": "Lunes, seis de la mañana. La cafetera no funciona. Tomás hace el tinto en el chocolatero de Rosa.\nTomás: Hago el tinto como Rosa. Pongo el café, pongo el agua... ¿y ahora?\nRiiing. Es el teléfono de Vale.\nVale: ¿Aló? ¡Camila! ¡Y mamá! Tomás, es mi hermana, Camila, y mi mamá. De Medellín.\nMamá: ¿Y él es el canadiense? ¿Cómo es, Vale? ¿Es guapo?\nVale: Es... normal.\nCamila: ¿Normal? Mamá, es alto, no es bajo, y es guapo.\nTomás: Buenos días, señora. Soy Tomás, el canadiense normal.\nSimón: ¡Es normal! ¡Es normal!\nMamá: Tomás, ¿tienes hermanos?\nTomás: No, señora. Soy hijo único.\nMamá: ¿Y tienes novia?\nVale: ¡Mamá!\nTomás: No, señora. Tengo un café, un loro y veintiocho días.\nCamila: Y Vale tampoco tiene novio.\nVale: ¡Camila! Chao, chao.\nVale: Qué pena con usted, Tomás. Mi mamá es así.\nTomás: Tranquila. Yo hablo con mi papá los domingos. Pero nunca hablamos de Rosa.\nHernando: ¡Buenos días! Traigo fotos. ¡Fotos de mis nietos!\nSimón: ¿Tienes novia? ¿Tienes novia?\nVale: Rosa también tiene fotos, Tomás. Un álbum, allá.",
+  "gloss": [
+    {
+      "es": "la cafetera",
+      "en": "the espresso machine"
+    },
+    {
+      "es": "el chocolatero de Rosa",
+      "en": "Rosa's old metal jug for hot chocolate"
+    },
+    {
+      "es": "¿Aló?",
+      "en": "Hello? (answering the phone)"
+    },
+    {
+      "es": "un loro",
+      "en": "a parrot"
+    },
+    {
+      "es": "¿tienes hermanos?",
+      "en": "have you got any brothers or sisters?"
+    },
+    {
+      "es": "Soy hijo único",
+      "en": "I'm an only child"
+    },
+    {
+      "es": "Mi mamá es así",
+      "en": "My mum is like that"
+    },
+    {
+      "es": "Tranquila",
+      "en": "Don't worry (to a woman)"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Who is on the phone from Medellín?",
+      "options": [
+        "Vale's sister and her mother",
+        "Mr Ruiz from Altamira",
+        "Doña Marta",
+        "Tomás's father"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Vale say when her mother asks if Tomás is handsome?",
+      "options": [
+        "That he is normal",
+        "That he is very handsome",
+        "That he is short",
+        "Nothing at all"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Why does Vale shout «¡Mamá!»?",
+      "options": [
+        "Her mother asks Tomás if he has a girlfriend",
+        "Her mother hangs up",
+        "Simón bites her",
+        "The coffee is burning"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "¿Tomás tiene hermanos?",
+      "options": [
+        "No, es hijo único",
+        "Sí, una hermana",
+        "Sí, dos hermanos"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás reveal about his father?",
+      "options": [
+        "They talk on Sundays but never about Rosa",
+        "He lives in Bogotá",
+        "He never phones",
+        "He knew Vale's mother"
+      ],
+      "answer": 0
+    }
+  ],
+  "hook": "Hernando has brought photos of his grandchildren, and the café has an album of Rosa's that Tomás has never opened. Tomorrow he opens it.",
+  "rereadQuestions": [
+    {
+      "q": "¿Cómo hace Tomás el tinto?",
+      "options": [
+        "En el chocolatero de Rosa",
+        "En la cafetera",
+        "En el teléfono"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "According to Camila, what is Tomás like?",
+      "options": [
+        "Tall and handsome",
+        "Short and normal",
+        "Old and serious",
+        "Shy and short"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "What does Tomás say he has, instead of a girlfriend?",
+      "options": [
+        "A café, a parrot and twenty-eight days",
+        "A sister in Toronto",
+        "A job and a car",
+        "Two million pesos"
+      ],
+      "answer": 0
+    }
+  ],
+  "requires": [
+    "c:alo",
+    "c:chao-nos-vemos",
+    "c:como-es",
+    "c:es-que",
+    "c:hago-salgo-vengo",
+    "c:hijo-unico",
+    "c:hola-buenos-dias",
+    "c:que-pena",
+    "c:tengo",
+    "c:tienes",
+    "c:tienes-hermanos",
+    "c:tranquilo",
+    "g:gender-articles",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:yo-irregular",
+    "p:possessives-basic"
+  ],
+  "lexemes": [
+    "l:agua",
+    "l:ahora",
+    "l:allá",
+    "l:alto",
+    "l:bueno",
+    "l:cafetera",
+    "l:café",
+    "l:canadiense",
+    "l:cómo",
+    "l:domingo",
+    "l:día",
+    "l:foto",
+    "l:funcionar",
+    "l:guapo",
+    "l:hablar",
+    "l:hacer",
+    "l:hermana",
+    "l:hermanos",
+    "l:hijo",
+    "l:loro",
+    "l:lunes",
+    "l:mamá",
+    "l:mañana",
+    "l:nieto",
+    "l:normal",
+    "l:novia",
+    "l:novio",
+    "l:papá",
+    "l:pena",
+    "l:poner",
+    "l:qué",
+    "l:ser",
+    "l:señora",
+    "l:teléfono",
+    "l:tener",
+    "l:tinto",
+    "l:traer",
+    "l:tranquilo",
+    "l:álbum",
+    "l:único"
+  ]
+}

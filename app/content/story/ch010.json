@@ -1,0 +1,161 @@
+{
+ "id": "ch010",
+ "unit": "u05",
+ "title": "El álbum de Rosa",
+ "text": "Hernando pone treinta y una fotos en la mesa.\nHernando: Mi familia. Ella es mi hija, Lucía, y él es su esposo. Y aquí están mis nietos. Tengo veintiuno.\nVale: ¿Veintiuno? Su hija tiene seis niños, Don Hernando.\nHernando: Seis nietos, y los primos y las primas. Familia es familia.\nSimón: ¡Veintiuno! ¡Veintiuno!\nTomás: ¿Y su esposa?\nHernando: Mi esposa, Inés. Ella está con Rosa ahora.\nTomás abre el álbum de Rosa.\nVale: Mira, es tu abuela, con su padre y su madre.\nTomás: ¿El padre y la madre de Rosa?\nHernando: Y él es tu abuelo, el esposo de Rosa.\nVale: Y aquí está tu papá, con su mamá. Y con su hermana y su hermano: tu tía Clara y tu tío Jaime.\nTomás: ¿Tengo tía? ¿Tengo tío? ¿Y primos y primas? No conozco a mi tío. Mi papá y mi mamá nunca hablan de su hermano ni de su hermana.\nTomás mira otra foto: un hombre joven con la abuela Rosa. Tiene la nariz y la cara de Tomás.\nTomás: ¿Y él? No es mi abuelo. No es mi papá. ¿Es familia?\nHernando cierra el álbum.\nHernando: Vale, mija, un tinto, por favor.",
+ "gloss": [
+  {
+   "es": "Ella está con Rosa ahora",
+   "en": "She's with Rosa now (she has died too)"
+  },
+  {
+   "es": "Familia es familia",
+   "en": "Family is family"
+  },
+  {
+   "es": "mija",
+   "en": "love, sweetie (from «mi hija»: what older Colombians call a younger woman)"
+  },
+  {
+   "es": "¿Y primos y primas?",
+   "en": "And male and female cousins?"
+  }
+ ],
+ "questions": [
+  {
+   "q": "How many grandchildren does Hernando really have?",
+   "options": [
+    "Six",
+    "Twenty-one",
+    "Thirty-one",
+    "None"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Why does Hernando say he has twenty-one grandchildren?",
+   "options": [
+    "He counts the cousins too: family is family",
+    "He can't count",
+    "He means photos",
+    "Simón told him to"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What surprises Tomás in Rosa's album?",
+   "options": [
+    "He has an aunt and an uncle he has never met",
+    "Rosa was from Toronto",
+    "Hernando is his grandfather",
+    "Vale is in every photo"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "¿Quién es el hombre joven de la foto?",
+   "options": [
+    "Nadie dice quién es",
+    "Es el abuelo de Tomás",
+    "Es el papá de Tomás"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What does Hernando do when Tomás asks about the young man?",
+   "options": [
+    "He closes the album and asks Vale for a coffee",
+    "He tells Tomás his name",
+    "He laughs",
+    "He takes the photo home"
+   ],
+   "answer": 0
+  }
+ ],
+ "hook": "Hernando knows something, and he has run out of ways to change the subject. Tomás is going to ask everybody.",
+ "rereadQuestions": [
+  {
+   "q": "¿Cómo se llama la esposa de Hernando?",
+   "options": [
+    "Inés",
+    "Lucía",
+    "Clara"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "Who are Clara and Jaime?",
+   "options": [
+    "Tomás's father's sister and brother",
+    "Hernando's grandchildren",
+    "Vale's parents",
+    "Rosa's parents"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "What does the young man share with Tomás?",
+   "options": [
+    "His nose and his face",
+    "His name",
+    "His glasses",
+    "His job"
+   ],
+   "answer": 0
+  }
+ ],
+ "requires": [
+  "c:oye-mira",
+  "c:por-favor",
+  "c:tengo",
+  "c:tienes",
+  "g:estar-location-states",
+  "g:gender-articles",
+  "g:present-ar",
+  "g:present-er-ir",
+  "g:ser-identity",
+  "g:stem-boot",
+  "g:yo-irregular",
+  "p:possessives-basic"
+ ],
+ "lexemes": [
+  "l:abrir",
+  "l:abuela",
+  "l:abuelo",
+  "l:ahora",
+  "l:aquí",
+  "l:cara",
+  "l:cerrar",
+  "l:conocer",
+  "l:esposa",
+  "l:esposo",
+  "l:estar",
+  "l:familia",
+  "l:favor",
+  "l:foto",
+  "l:hablar",
+  "l:hermana",
+  "l:hermano",
+  "l:hija",
+  "l:hombre",
+  "l:joven",
+  "l:madre",
+  "l:mamá",
+  "l:mesa",
+  "l:mirar",
+  "l:nariz",
+  "l:nieto",
+  "l:niño",
+  "l:padre",
+  "l:papá",
+  "l:poner",
+  "l:prima",
+  "l:primo",
+  "l:ser",
+  "l:tener",
+  "l:tinto",
+  "l:tía",
+  "l:tío",
+  "l:álbum"
+ ]
+}
