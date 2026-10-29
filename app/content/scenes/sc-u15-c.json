@@ -1,0 +1,223 @@
+{
+  "id": "sc-u15-c",
+  "unit": "u15",
+  "title": "The tasting",
+  "brief": "You're Tomás. You're back at the café after the flu, and Vale wants your honest opinion on the week's new things. Tell her what you think and how you feel. She's your friend, so use tú.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Tomás, prueba esta torta. Es nueva, para el menú de la semana. ¿Está rica o no?",
+      "npcEn": "Tomás, try this cake. It's new, for this week's menu. Is it good or not?",
+      "intent": "Say yes, it's delicious, but it seems very sweet to you.",
+      "accept": [
+        "Sí, está rica, pero me parece muy dulce.",
+        "Está muy rica, pero me parece muy dulce.",
+        "Sí, está rica. Pero me parece muy dulce."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me parece",
+          "flags": "i",
+          "label": "it seems to you: me parece"
+        }
+      ],
+      "focus": "g:parecer-quedar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Dulce? Para nada. Tú todavía estás enfermo, por eso.",
+      "npcEn": "Sweet? Not at all. You're still ill, that's why.",
+      "intent": "Say you're not ill any more; you're fine now.",
+      "accept": [
+        "No, ya no estoy enfermo. Estoy muy bien.",
+        "Ya no estoy enfermo, Vale. Ahora estoy bien.",
+        "No estoy enfermo. Ahora estoy bien."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "say you're not: no estoy…"
+        },
+        {
+          "type": "regex",
+          "pattern": "estoy enfermo",
+          "flags": "i",
+          "label": "ill, right now: estoy enfermo"
+        }
+      ],
+      "focus": "g:ser-estar-adjectives",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "Bueno. Ahora el pan de queso. Lo hice a las cinco. ¿Está frío?",
+      "npcEn": "OK. Now the cheese bread. I made it at five. Is it cold?",
+      "intent": "Say no, it's not cold, it's delicious.",
+      "accept": [
+        "No, no está frío. Está muy rico.",
+        "No, para nada. Está muy rico.",
+        "No está frío, Vale. Está rico."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "est[aá] (muy )?rico",
+          "flags": "i",
+          "label": "how it tastes: está rico"
+        }
+      ],
+      "focus": "g:ser-estar-adjectives",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "¡Las almojábanas! La caja está abierta, y no hay nada. ¿Y Simón? ¿Dónde está?",
+      "npcEn": "The almojábanas! The box is open, and there's nothing in it. And Simón? Where is he?",
+      "intent": "Say he's in the kitchen, and the kitchen door is open.",
+      "accept": [
+        "Está en la cocina, y la puerta está abierta.",
+        "Simón está en la cocina. La puerta de la cocina está abierta.",
+        "En la cocina. La puerta está abierta."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "est[aá] abierta",
+          "flags": "i",
+          "label": "the door is open: está abierta (la puerta, so it ends in -a)"
+        }
+      ],
+      "focus": "g:estar-participle",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "¡Qué rabia! Bueno, la última. Hernando dice que su tinto es mejor que mi tinto. ¿Es verdad?",
+      "npcEn": "How infuriating! OK, the last one. Hernando says his tinto is better than my tinto. Is it true?",
+      "intent": "Say no, you don't agree: his tinto is too strong.",
+      "accept": [
+        "No, no estoy de acuerdo. Su tinto es demasiado fuerte.",
+        "No estoy de acuerdo. El tinto de Hernando es demasiado fuerte.",
+        "No, para nada. Su tinto es demasiado fuerte, Vale."
+      ],
+      "require": [
+        {
+          "type": "negation",
+          "label": "you don't agree: no…"
+        },
+        {
+          "type": "containsWord",
+          "word": "demasiado",
+          "label": "too strong: demasiado fuerte"
+        }
+      ],
+      "focus": "p:no-es-nada-adj",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "¡Gracias! Por fin. ¿Quieres más torta?",
+      "npcEn": "Thank you! At last. Do you want more cake?",
+      "intent": "Say no thanks, your stomach hurts a little.",
+      "accept": [
+        "No, gracias. Me duele un poco el estómago.",
+        "Gracias, pero no. Me duele un poco el estómago.",
+        "No, gracias, Vale. Ahora me duele un poco el estómago."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me duele",
+          "flags": "i",
+          "label": "my stomach hurts: me duele el estómago"
+        }
+      ],
+      "focus": "p:me-duele",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:abierto-cerrado",
+    "c:bien-y-tu",
+    "c:donde-esta",
+    "c:entonces-bueno",
+    "c:estoy-de-acuerdo",
+    "c:gracias-de-nada",
+    "c:hay",
+    "c:me-siento-mal",
+    "c:no-hay-nada",
+    "c:para-nada",
+    "c:que-susto",
+    "c:ya-no",
+    "g:adjective-agreement",
+    "g:cause-result",
+    "g:commands-tu",
+    "g:comparatives",
+    "g:direct-objects",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:hay-vs-esta",
+    "g:negation-words",
+    "g:parecer-quedar",
+    "g:present-er-ir",
+    "g:preterite-ser-ir-hacer",
+    "g:quantifiers",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "l:abrir",
+    "l:acuerdo",
+    "l:ahora",
+    "l:almojábana",
+    "l:bien",
+    "l:bueno",
+    "l:caja",
+    "l:cocina",
+    "l:decir",
+    "l:doler",
+    "l:dulce",
+    "l:dónde",
+    "l:enfermo",
+    "l:estar",
+    "l:estómago",
+    "l:fin",
+    "l:frío",
+    "l:fuerte",
+    "l:hacer",
+    "l:mejor",
+    "l:menú",
+    "l:nuevo",
+    "l:pan",
+    "l:parecer",
+    "l:probar",
+    "l:puerta",
+    "l:querer",
+    "l:queso",
+    "l:qué",
+    "l:rabia",
+    "l:rico",
+    "l:semana",
+    "l:ser",
+    "l:tinto",
+    "l:torta",
+    "l:verdad",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:doler",
+    "p:me-duele",
+    "p:no-es-nada-adj",
+    "p:no-es-x-es-y",
+    "p:para-inf",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:telling-time",
+    "p:ya-todavia-basic"
+  ]
+}

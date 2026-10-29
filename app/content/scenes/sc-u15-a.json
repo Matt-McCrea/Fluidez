@@ -1,0 +1,220 @@
+{
+  "id": "sc-u15-a",
+  "unit": "u15",
+  "title": "Ten to eight",
+  "brief": "You're Tomás. It's Thursday morning, and you're in Doctor Mejía's waiting room with Don Hernando, who says he's perfectly calm. Keep him company, and tell him how things look to you. He's older than you, so use usted.",
+  "turns": [
+    {
+      "id": "t1",
+      "npc": "Mijo, son las ocho menos diez. ¿Usted está nervioso? Yo estoy muy tranquilo.",
+      "npcEn": "Son, it's ten to eight. Are you nervous? I'm very calm.",
+      "intent": "Say no, you're calm, but it seems to you that he's nervous.",
+      "accept": [
+        "No, yo estoy tranquilo. Me parece que usted está nervioso.",
+        "No, estoy bien. Pero usted parece un poco nervioso.",
+        "Para nada. Me parece que usted está nervioso."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "parece",
+          "flags": "i",
+          "label": "it seems to you: me parece que…, or usted parece…"
+        }
+      ],
+      "focus": "g:parecer-quedar",
+      "next": "t2"
+    },
+    {
+      "id": "t2",
+      "npc": "¿Nervioso yo? Para nada. Bueno, un poco. Me duele el brazo.",
+      "npcEn": "Me, nervous? Not at all. Well, a little. My arm hurts.",
+      "intent": "Ask him if his chest hurts too.",
+      "accept": [
+        "¿Le duele el pecho también?",
+        "¿Y el pecho? ¿También le duele?",
+        "¿También le duele el pecho?"
+      ],
+      "require": [
+        {
+          "type": "question",
+          "label": "ask him: end with a question"
+        },
+        {
+          "type": "regex",
+          "pattern": "le duele",
+          "flags": "i",
+          "label": "does it hurt (him, usted): le duele"
+        }
+      ],
+      "focus": "p:me-duele",
+      "next": "t3"
+    },
+    {
+      "id": "t3",
+      "npc": "No, el pecho no. Oiga, ¿y la puerta del doctor? ¿Está abierta?",
+      "npcEn": "No, not my chest. Listen, what about the doctor's door? Is it open?",
+      "intent": "Say no, the door is closed, and the doctor is busy.",
+      "accept": [
+        "No, la puerta está cerrada. El doctor está ocupado.",
+        "Todavía está cerrada. El doctor está ocupado.",
+        "No, está cerrada. El doctor está ocupado."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "est[aá] cerrada",
+          "flags": "i",
+          "label": "the door is closed: está cerrada (la puerta, so it ends in -a)"
+        }
+      ],
+      "focus": "g:estar-participle",
+      "next": "t4"
+    },
+    {
+      "id": "t4",
+      "npc": "Mijo, Vale me llamó dos veces esta mañana. ¿Le parece que ella sabe algo?",
+      "npcEn": "Son, Vale called me twice this morning. Do you think she knows something?",
+      "intent": "Say yes, you think so: Vale is very smart.",
+      "accept": [
+        "Me parece que sí. Vale es muy inteligente.",
+        "Sí, me parece que sí. Ella es muy inteligente.",
+        "Me parece que sí, porque Vale es muy inteligente."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me parece que",
+          "flags": "i",
+          "label": "I think so: me parece que sí"
+        }
+      ],
+      "focus": "g:parecer-quedar",
+      "next": "t5"
+    },
+    {
+      "id": "t5",
+      "npc": "Señor Hernando, el doctor dice que su corazón está perfecto. Todo está bien.\n¡El corazón está perfecto, mijo! ¡Estoy sano!",
+      "npcEn": "Mr Hernando, the doctor says your heart is perfect. Everything is fine.\nMy heart is perfect, son! I'm healthy!",
+      "intent": "Say what a fright, and that you're very happy.",
+      "accept": [
+        "¡Qué susto! Estoy muy contento.",
+        "¡Qué susto! Ahora estoy muy feliz.",
+        "¡Qué bien! Estoy muy contento, pero ¡qué susto!"
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "estoy (muy )?(contento|feliz)",
+          "flags": "i",
+          "label": "how you feel right now: estoy contento"
+        }
+      ],
+      "focus": "g:ser-estar-adjectives",
+      "next": "t6"
+    },
+    {
+      "id": "t6",
+      "npc": "Gracias por venir conmigo. Usted me cae muy bien, mijo. ¿Un tinto? Yo pago.",
+      "npcEn": "Thanks for coming with me. I really like you, son. A tinto? I'm paying.",
+      "intent": "Say yes, thanks, and that you really like him too.",
+      "accept": [
+        "Sí, gracias. Usted también me cae muy bien.",
+        "Claro que sí. Usted también me cae muy bien.",
+        "Con mucho gusto. Y usted me cae muy bien también."
+      ],
+      "require": [
+        {
+          "type": "regex",
+          "pattern": "me cae (muy )?bien",
+          "flags": "i",
+          "label": "I like you: usted me cae bien"
+        }
+      ],
+      "focus": "g:parecer-quedar",
+      "next": null
+    }
+  ],
+  "requires": [
+    "c:abierto-cerrado",
+    "c:bien-y-tu",
+    "c:claro-listo",
+    "c:con-mucho-gusto",
+    "c:entonces-bueno",
+    "c:gracias-de-nada",
+    "c:me-llamo",
+    "c:mucho-gusto",
+    "c:oiga-oye",
+    "c:para-nada",
+    "c:porque",
+    "c:que-bien",
+    "c:que-susto",
+    "c:tranquilo",
+    "g:cause-result",
+    "g:estar-location-states",
+    "g:estar-participle",
+    "g:gender-articles",
+    "g:gustar-full",
+    "g:parecer-quedar",
+    "g:prep-pronouns",
+    "g:present-ar",
+    "g:present-er-ir",
+    "g:ser-identity",
+    "g:stem-boot",
+    "g:stem-e-i",
+    "g:that-clauses",
+    "l:abrir",
+    "l:ahora",
+    "l:bien",
+    "l:brazo",
+    "l:bueno",
+    "l:caer",
+    "l:cerrar",
+    "l:claro",
+    "l:contento",
+    "l:corazón",
+    "l:decir",
+    "l:doctor",
+    "l:doler",
+    "l:estar",
+    "l:feliz",
+    "l:gusto",
+    "l:inteligente",
+    "l:llamar",
+    "l:mañana",
+    "l:nervioso",
+    "l:ocupado",
+    "l:oír",
+    "l:pagar",
+    "l:parecer",
+    "l:pecho",
+    "l:perfecto",
+    "l:puerta",
+    "l:qué",
+    "l:saber",
+    "l:sano",
+    "l:ser",
+    "l:señor",
+    "l:susto",
+    "l:tinto",
+    "l:tranquilo",
+    "l:venir",
+    "l:vez",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
+    "p:demonstratives-basic",
+    "p:doler",
+    "p:gracias-por",
+    "p:indefinites-basic",
+    "p:ir-venir",
+    "p:me-duele",
+    "p:poco-un-poco",
+    "p:possessives-basic",
+    "p:quantifiers-basic",
+    "p:saber-conocer",
+    "p:senor-don-article",
+    "p:tambien-tampoco",
+    "p:telling-time",
+    "p:ya-todavia-basic"
+  ]
+}
