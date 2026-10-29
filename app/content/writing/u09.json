@@ -1,0 +1,459 @@
+[
+  {
+    "id": "w-u09-01",
+    "unit": "u09",
+    "prompt": "Mariana asks what your mornings are like now that you run the café. Text her back, someone your age, in two short sentences.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bme (levanto|despierto|ducho|baño|visto)\\b",
+        "label": "say what you do with me + verb"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "levanto me",
+          "ducho me"
+        ],
+        "label": "me goes before the verb"
+      }
+    ],
+    "model": "Me levanto a las cinco y me ducho. Después desayuno en el café.",
+    "focus": "g:reflexive-routine",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:reflexive-routine",
+      "l:café",
+      "l:desayunar",
+      "l:después",
+      "l:ducharse",
+      "l:levantarse",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u09-02",
+    "unit": "u09",
+    "prompt": "Write Vale a short note about your evening before bed, in two sentences. She is your friend and coworker, so use a friendly tone.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(antes de|después de|al) [a-zñáéíóú]+(ar|er|ir)\\b",
+        "label": "use antes de or después de + a verb"
+      },
+      {
+        "type": "containsWord",
+        "word": "me",
+        "label": "include a reflexive verb with me"
+      }
+    ],
+    "model": "Antes de dormir, me lavo los dientes. Después de cenar, leo un poco.",
+    "focus": "g:prep-infinitive",
+    "requires": [
+      "g:gender-articles",
+      "g:prep-infinitive",
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:reflexive-routine",
+      "l:antes",
+      "l:cenar",
+      "l:después",
+      "l:diente",
+      "l:dormir",
+      "l:lavarse",
+      "l:leer",
+      "p:quantifiers-basic",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u09-03",
+    "unit": "u09",
+    "prompt": "Don Hernando, an older man you would call usted, invites you to play chess tonight. You cannot: you have work to finish. Reply politely in two short sentences.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\btengo que [a-zñáéíóú]+(ar|er|ir)\\b",
+        "label": "say what you have to do with tengo que"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tienes",
+          "puedes",
+          "eres"
+        ],
+        "label": "usted, not tú"
+      }
+    ],
+    "model": "Lo siento, don Hernando, hoy tengo que trabajar hasta tarde. Mañana sí.",
+    "focus": "g:tener-que-hay-que",
+    "requires": [
+      "c:lo-siento-pero-no-puedo",
+      "c:tengo",
+      "c:tengo-que",
+      "g:verb-infinitive",
+      "g:yo-irregular",
+      "l:hoy",
+      "l:mañana",
+      "l:sentir",
+      "l:tarde",
+      "l:tener",
+      "l:trabajar"
+    ]
+  },
+  {
+    "id": "w-u09-04",
+    "unit": "u09",
+    "prompt": "You are leaving two rules on the wall for the new person at the café. Write two short sentences: one rule for everyone and one thing the new person does not have to do (use tú).",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bhay que [a-zñáéíóú]+(ar|er|ir)\\b",
+        "label": "a rule for everyone with hay que"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bno tienes que [a-zñáéíóú]+(ar|er|ir)\\b",
+        "label": "what they don't have to do with no tienes que"
+      }
+    ],
+    "model": "Hay que barrer antes de abrir. No tienes que planchar nada.",
+    "focus": "g:tener-que-hay-que",
+    "requires": [
+      "c:hay",
+      "c:hay-que",
+      "c:tienes",
+      "g:hay-vs-esta",
+      "g:negation-words",
+      "g:prep-infinitive",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:abrir",
+      "l:antes",
+      "l:barrer",
+      "l:planchar",
+      "l:tener"
+    ]
+  },
+  {
+    "id": "w-u09-05",
+    "unit": "u09",
+    "prompt": "Vale asks what your workday looks like. Reply in one or two sentences saying when you start and when you finish.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bempiezo (a|de) [a-zñáéíóú]+",
+        "label": "say when you start with empiezo a"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\btermino (de|a) [a-zñáéíóú]+",
+        "label": "say when you finish with termino de"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\ba las \\w+",
+        "label": "give a time with a las"
+      }
+    ],
+    "model": "Empiezo a trabajar a las siete y termino de trabajar a las cuatro.",
+    "focus": "p:empezar-terminar",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "g:verb-infinitive",
+      "l:empezar",
+      "l:terminar",
+      "l:trabajar"
+    ]
+  },
+  {
+    "id": "w-u09-06",
+    "unit": "u09",
+    "prompt": "You are on the street and your phone is dead. Ask an older stranger, someone you would call usted, for the time, and say you think you are late.",
+    "minWords": 6,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "question"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "tienes",
+          "puedes",
+          "regalas"
+        ],
+        "label": "usted, not tú"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "hora",
+          "la hora"
+        ],
+        "label": "ask for la hora"
+      }
+    ],
+    "model": "Disculpe, ¿tiene la hora? Creo que voy tarde.",
+    "focus": "c:que-hora-es",
+    "requires": [
+      "c:creo-que",
+      "c:perdon-disculpe",
+      "c:se-me-hizo-tarde",
+      "c:tienes",
+      "c:voy-vas",
+      "g:commands-usted",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:stem-boot",
+      "g:that-clauses",
+      "l:creer",
+      "l:disculpar",
+      "l:hora",
+      "l:ir",
+      "l:tarde",
+      "l:tener"
+    ]
+  },
+  {
+    "id": "w-u09-07",
+    "unit": "u09",
+    "prompt": "You overslept and Vale is waiting at the café door. Send her a text: say you are sorry to be late and that you are coming.",
+    "minWords": 6,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bse me hizo tarde\\b",
+        "label": "say se me hizo tarde"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "siento",
+          "perdón",
+          "perdon",
+          "lo siento"
+        ],
+        "label": "say you are sorry"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bya voy\\b",
+        "label": "say ya voy"
+      }
+    ],
+    "model": "Siento llegar tarde. Se me hizo tarde, pero ya voy.",
+    "focus": "p:siento-llegar-tarde",
+    "requires": [
+      "c:se-me-hizo-tarde",
+      "c:voy-vas",
+      "c:ya-voy",
+      "g:ir-a-plans",
+      "g:se-accidental",
+      "g:stem-boot",
+      "l:hacerse",
+      "l:ir",
+      "l:llegar",
+      "l:sentir",
+      "l:tarde",
+      "p:siento-llegar-tarde"
+    ]
+  },
+  {
+    "id": "w-u09-08",
+    "unit": "u09",
+    "prompt": "Mariana asks what you usually do on Sundays. Answer in two short sentences about what you tend to do.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "verbFormAny",
+        "inf": "soler",
+        "tense": "presente"
+      },
+      {
+        "type": "minSentences",
+        "n": 2
+      }
+    ],
+    "model": "Los domingos suelo dormir hasta tarde. Casi nunca trabajo.",
+    "focus": "p:soler-inf",
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:stem-boot",
+      "l:domingo",
+      "l:dormir",
+      "l:soler",
+      "l:tarde",
+      "l:trabajar",
+      "p:soler-inf"
+    ]
+  },
+  {
+    "id": "w-u09-09",
+    "unit": "u09",
+    "prompt": "A friend your age asks how often you go to the gym. Answer in one or two sentences with how many times, and when.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\b(una|dos|tres|cuatro|cinco) veces (a|por) la semana\\b",
+        "label": "say how many times a week"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bpor la (mañana|tarde|noche)\\b",
+        "label": "say when: por la mañana, tarde or noche"
+      }
+    ],
+    "model": "Voy al gimnasio tres veces a la semana, casi siempre por la mañana.",
+    "focus": "p:veces-al",
+    "requires": [
+      "c:voy-vas",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:gimnasio",
+      "l:ir",
+      "l:mañana",
+      "l:semana",
+      "l:siempre",
+      "l:vez"
+    ]
+  },
+  {
+    "id": "w-u09-10",
+    "unit": "u09",
+    "prompt": "Vale calls to ask where you are. You are cleaning the café kitchen right now. Text her what you are doing, and that you are coming.",
+    "minWords": 6,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bestoy [a-zñáéíóú]+(ando|iendo)\\b",
+        "label": "say what you are doing with estoy + -ando or -iendo"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bya voy\\b",
+        "label": "say ya voy"
+      }
+    ],
+    "model": "Estoy limpiando la cocina. Ya voy.",
+    "focus": "x:present-progressive",
+    "requires": [
+      "c:voy-vas",
+      "c:ya-voy",
+      "g:estar-gerund",
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "l:cocina",
+      "l:estar",
+      "l:ir",
+      "l:limpiar"
+    ]
+  },
+  {
+    "id": "w-u09-11",
+    "unit": "u09",
+    "prompt": "A new neighbour asks what you do when you get home after work. Answer in two short sentences, someone your age.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bcuando [a-zñáéíóú]+o\\b",
+        "label": "start with cuando + a present-tense verb"
+      },
+      {
+        "type": "containsWord",
+        "word": "me",
+        "label": "include a reflexive verb with me"
+      },
+      {
+        "type": "avoidsAny",
+        "words": [
+          "llegué",
+          "llegue"
+        ],
+        "label": "present tense for habits"
+      }
+    ],
+    "model": "Cuando llego a casa, me ducho y como algo. Luego me acuesto temprano.",
+    "focus": "p:cuando-basic",
+    "requires": [
+      "g:present-ar",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:acostarse",
+      "l:casa",
+      "l:ducharse",
+      "l:llegar",
+      "l:temprano",
+      "p:cuando-basic",
+      "p:indefinites-basic",
+      "p:time-sequence-basic"
+    ]
+  },
+  {
+    "id": "w-u09-12",
+    "unit": "u09",
+    "prompt": "A friend texts you: \"Is it true you get up at five every day?\" Answer with how you feel about it and when you go to bed. Someone your age, two sentences.",
+    "minWords": 8,
+    "maxWords": 30,
+    "constraints": [
+      {
+        "type": "regex",
+        "pattern": "\\bqué pereza\\b",
+        "label": "react with qué pereza"
+      },
+      {
+        "type": "regex",
+        "pattern": "\\bme (acuesto|duermo)\\b",
+        "label": "say when you go to bed with me acuesto"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "temprano",
+          "tarde",
+          "noche"
+        ],
+        "label": "say how early or late"
+      }
+    ],
+    "model": "¡Qué pereza! Pero sí, me despierto a las cinco y me acuesto temprano.",
+    "focus": "c:que-pereza",
+    "requires": [
+      "c:que-pereza",
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "l:acostarse",
+      "l:despertarse",
+      "l:qué",
+      "l:temprano"
+    ]
+  }
+]
