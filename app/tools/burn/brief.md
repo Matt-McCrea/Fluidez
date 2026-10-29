@@ -20,6 +20,7 @@ Every sentence must use only grammar, patterns and chunks taught **up to the day
 
 ## Natural above all
 Every Spanish line must be something a native speaker would actually write or say in that moment. The gate's limits are there to keep the learner inside what they know, but they never excuse unnatural text.
+- Story chapters may use grammar up to **15 sessions ahead** of their day (articles, *mi*, *este*, *para* from chapter 1). It is glossed reading input, not a requirement. Lessons, banks, scenes and writing stay strictly at level.
 - If a natural line needs a word the learner doesn't know yet, **gloss it** rather than bend the line. Early chapters may gloss up to 20% of their words (sessions under 40) and 10% (under 135). Tap-to-gloss is how the learner reads.
 - Never write telegraphic Spanish ("Simón es de Rosa" for "Simón was Rosa's parrot"), and never use English gimmicks (a character speaking broken English, or "Sorry. Closed." lines) to dodge the limits.
 - Every exchange must make sense: answers answer questions, characters know what they've been told, companies aren't people.

@@ -105,7 +105,6 @@
   ],
   "requires": [
     "c:hay",
-    "c:oye-mira",
     "c:tienes",
     "g:estar-location-states",
     "g:gender-articles",
@@ -115,17 +114,11 @@
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
-    "p:aqui-ahi-alla",
-    "p:lugar-tiene",
-    "p:ordinal-floor",
     "p:ordinals-primer-tercer",
-    "p:otro-no-article",
-    "p:por-la-manana",
     "p:possessives-basic",
     "p:question-word-order",
     "p:senor-don-article",
-    "p:ser-profession-no-article",
-    "p:sobre-todo-solo"
+    "p:ser-profession-no-article"
   ],
   "lexemes": [
     "l:abrir",

@@ -119,9 +119,7 @@
   "requires": [
     "c:era",
     "c:ojo",
-    "c:que-va",
     "c:tienes",
-    "c:tranquilo",
     "c:voy-a",
     "g:commands-usted",
     "g:estar-location-states",

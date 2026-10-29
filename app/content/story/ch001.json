@@ -145,20 +145,12 @@
     }
   ],
   "requires": [
-    "c:bien-y-tu",
     "c:como-estas",
-    "c:gracias-de-nada",
     "c:hola-buenos-dias",
     "c:me-llamo",
     "c:mucho-gusto",
-    "c:por-favor",
     "c:soy-de",
-    "g:estar-location-states",
-    "g:reflexive-routine",
-    "g:ser-identity",
-    "p:don-dona-nombre",
-    "p:no-es-x-es-y",
-    "p:senor-don-article"
+    "g:ser-identity"
   ],
   "lexemes": [
     "l:bien",

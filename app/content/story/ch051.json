@@ -132,11 +132,9 @@
   "hook": "Beatriz has kept Rosa's secret for thirty-six years, and Vale doesn't know a word of it. On Sunday's bus back to Bogotá, Tomás has nine hours of bends to decide whether to tell her.",
   "requires": [
     "c:bien-y-tu",
-    "c:con-el-ella",
     "c:era",
     "c:estuvo",
     "c:hola-buenos-dias",
-    "c:igual",
     "c:pues",
     "c:que-mas",
     "c:una-vez",

@@ -113,7 +113,6 @@
   ],
   "hook": "Tomás is at the far southern end of the city at eight in the morning, the notary closes at noon, and a coffee seller has just asked if he's lost. Tomorrow two strangers give him directions, and they don't agree at all.",
   "requires": [
-    "c:alo",
     "c:bien-y-tu",
     "c:gracias-de-nada",
     "c:me-deja-en",
@@ -121,7 +120,6 @@
     "c:perdon-disculpe",
     "c:por-favor",
     "c:tengo",
-    "c:tranquilo",
     "c:voy-vas",
     "g:commands-tu",
     "g:demonstratives",

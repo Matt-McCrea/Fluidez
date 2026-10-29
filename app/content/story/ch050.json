@@ -136,7 +136,6 @@
   "hook": "The suitcase is coming back on tomorrow's bus, with Rosa's coffee inside, if the passenger keeps his promise. And before the party, Vale's mother wants Tomás alone.",
   "requires": [
     "c:a-ver",
-    "c:alo",
     "c:bien-y-tu",
     "c:en-serio",
     "c:era",

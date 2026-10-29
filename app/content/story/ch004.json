@@ -139,7 +139,6 @@
     }
   ],
   "requires": [
-    "c:alo",
     "c:chao-nos-vemos",
     "c:claro-listo",
     "c:era",
@@ -151,20 +150,12 @@
     "g:adjective-agreement",
     "g:estar-location-states",
     "g:gender-articles",
-    "g:imperfect-states",
     "g:present-ar",
     "g:present-er-ir",
     "g:ser-identity",
-    "g:stem-boot",
-    "g:yo-irregular",
-    "p:days-el-lunes",
     "p:demonstratives-basic",
-    "p:desde-hasta",
-    "p:don-dona-nombre",
     "p:possessives-basic",
-    "p:quantifiers-basic",
-    "p:senor-don-article",
-    "p:telling-time"
+    "p:quantifiers-basic"
   ],
   "lexemes": [
     "l:banco",

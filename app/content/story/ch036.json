@@ -123,7 +123,6 @@
   "requires": [
     "c:ademas",
     "c:al-final",
-    "c:alo",
     "c:donde-esta",
     "c:entonces-bueno",
     "c:era",
@@ -152,7 +151,6 @@
     "g:preterite-er-ir",
     "g:preterite-irregular-strong",
     "g:preterite-spelling-stem",
-    "g:reformulation",
     "g:relative-que",
     "g:ser-identity",
     "g:stem-boot",

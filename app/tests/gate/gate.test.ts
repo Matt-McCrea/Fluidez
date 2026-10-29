@@ -239,13 +239,20 @@ describe('(k) story chapters: words are governed by reading coverage', () => {
     expect(by(r2, 'legality', 'error')).toEqual([]);
     expect(by(r2, 'reading', 'error')).toHaveLength(1);
   });
-  test('grammar is never rescued by a gloss', () => {
+  test('grammar beyond the story lookahead is never rescued by a gloss', () => {
     const fx = withLexemes();
-    const p = fx.write('story/ch001.json', chapter('ch001', 'u01', `${known} Ayer Tomás habló español.`, [{ es: 'Ayer Tomás habló español', en: 'x' }]));
+    const p = fx.write('story/ch001.json', chapter('ch001', 'u01', `${known} Quiero que Tomás hable español.`, [{ es: 'Quiero que Tomás hable español', en: 'x' }]));
     const leg = by(runGate({ appDir: fx.app, paths: [p], fix: true }), 'legality', 'error');
     expect(leg).toHaveLength(1);
     expect(leg[0].path).toMatch(/^text /);                    // the gloss entry itself is not gated
-    expect(leg[0].problem).toMatch(/g:preterite-ar/);
+    expect(leg[0].problem).toMatch(/g:subj-wanting/);
+  });
+  test('grammar a little ahead (within the lookahead) is allowed in a story, and not a requirement', () => {
+    const fx = withLexemes();
+    const p = fx.write('story/ch001.json', chapter('ch001', 'u01', `${known} Ayer Tomás habló español.`, [{ es: 'Ayer Tomás habló español', en: 'x' }]));
+    const r = runGate({ appDir: fx.app, paths: [p], fix: true });
+    expect(by(r, 'legality', 'error')).toEqual([]);
+    expect(JSON.parse(readFileSync(p, 'utf8')).requires).not.toContain('g:preterite-ar');
   });
   test('words inside a taught chunk are known (Me llamo → l:llamarse)', () => {
     const fx = withLexemes();

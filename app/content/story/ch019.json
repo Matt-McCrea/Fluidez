@@ -116,7 +116,6 @@
     "c:bien-y-tu",
     "c:hay",
     "c:nunca-en-la-vida",
-    "c:oye-mira",
     "c:que-envidia",
     "c:todavia-no",
     "c:una-vez",
@@ -134,15 +133,11 @@
     "g:stem-boot",
     "g:verb-infinitive",
     "p:aqui-ahi-alla",
-    "p:con-sin",
     "p:costar-pagar",
     "p:demonstratives-basic",
-    "p:pensar-en",
-    "p:pensar-inf",
     "p:possessives-basic",
     "p:quantifiers-basic",
     "p:question-word-order",
-    "p:saber-conocer",
     "p:senor-don-article"
   ],
   "lexemes": [

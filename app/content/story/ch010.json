@@ -105,7 +105,6 @@
     }
   ],
   "requires": [
-    "c:oye-mira",
     "c:por-favor",
     "c:tengo",
     "c:tienes",
@@ -116,16 +115,9 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:yo-irregular",
-    "p:aqui-ahi-alla",
-    "p:don-dona-nombre",
-    "p:es-tiene-lleva",
-    "p:frequency-scale",
-    "p:masculine-plural-mixed",
     "p:numbers-un-una",
-    "p:otro-no-article",
     "p:personal-a",
     "p:possessives-basic",
-    "p:saber-conocer",
     "p:senor-don-article"
   ],
   "lexemes": [

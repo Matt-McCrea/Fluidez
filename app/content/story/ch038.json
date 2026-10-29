@@ -110,11 +110,8 @@
   "hook": "Vale is back tomorrow at six, and Tomás has promised to be waiting with a coffee. But he walked home soaked to the skin, and by midnight he is shivering.",
   "requires": [
     "c:a-ver",
-    "c:alo",
     "c:bien-y-tu",
     "c:claro-listo",
-    "c:con-el-ella",
-    "c:me-importa-un-comino",
     "c:ojo",
     "c:por-favor",
     "c:tienes",

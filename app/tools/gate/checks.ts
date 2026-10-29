@@ -83,8 +83,14 @@ export function taughtSpans(st: RunState, r: TagResult, at: number): Array<[numb
 /** requires ⊆ taught by pos. Grammar is never rescued; with lexemes: false (story chapters)
  *  words are left to the reading-coverage check, where a gloss can rescue them. Patterns are
  *  detected heuristically, so a pattern before its day is a warning. */
+/** Story chapters are glossed reading input: they may use grammar a little ahead of
+ *  the learner (i+1), so early chapters can be natural Spanish. Lessons, drills and
+ *  banks stay strictly at level. */
+export const STORY_LOOKAHEAD = 15;
+
 export function legality(st: RunState, r: TagResult, pos: Position, file: string, path: string, text: string, o: { lexemes?: boolean } = {}): void {
   const cur = st.cur;
+  const horizon = o.lexemes === false ? pos.at + STORY_LOOKAHEAD : pos.at;
   const chunkSpans = taughtSpans(st, r, pos.at);
   const inChunk = (sp: [number, number]) => chunkSpans.some(([a, b]) => sp[0] >= a && sp[1] <= b);
   const bad: string[] = [];
@@ -110,7 +116,7 @@ export function legality(st: RunState, r: TagResult, pos: Position, file: string
     }
     if (pos.allow?.has(n)) continue;
     const t = cur.taughtAt.get(n);
-    if (t !== undefined && t <= pos.at) continue;
+    if (t !== undefined && t <= horizon) continue;
     if (inChunk(ft.span)) continue;
     seen.add(n);
     bad.push(`${n} "${ft.text}" (${t === undefined ? 'never taught' : 'taught ' + cur.taughtWhere.get(n)})`);
@@ -273,7 +279,11 @@ export function computedRequires(st: RunState, f: Loaded): Array<{ index: number
   if (f.kind === 'story') {
     const c = f.data as StoryChapter;
     const all = union([c.text]);
-    return [{ index: null, requires: all.filter((x) => !x.startsWith('l:')), lexemes: all.filter((x) => x.startsWith('l:')) }];
+    // grammar used inside the lookahead is exposure, not a requirement: the chapter is
+    // served on its own day without waiting for those lessons
+    const pos = positionOf(st, f, null, 'text');
+    const needed = (x: string) => !pos || (st.cur.taughtAt.get(x) ?? -1) <= pos.at;
+    return [{ index: null, requires: all.filter((x) => !x.startsWith('l:') && needed(x)), lexemes: all.filter((x) => x.startsWith('l:')) }];
   }
   if (f.kind === 'scene') {
     const sc = f.data as Scene;

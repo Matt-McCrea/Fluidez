@@ -144,19 +144,13 @@
     "g:ser-identity",
     "g:stem-boot",
     "g:yo-irregular",
-    "p:con-sin",
     "p:dates-years",
     "p:days-el-lunes",
-    "p:frequency-scale",
     "p:ordinal-floor",
     "p:ordinals-primer-tercer",
-    "p:otro-no-article",
     "p:possessives-basic",
     "p:quantifiers-basic",
-    "p:quedar-faltar-sobrar",
-    "p:saber-conocer",
-    "p:senor-don-article",
-    "p:transport-en"
+    "p:senor-don-article"
   ],
   "lexemes": [
     "l:aeropuerto",
