@@ -1,0 +1,90 @@
+{
+  "node": "p:colour-claro-oscuro",
+  "hook": {
+    "line": "Vale wants a new jacket for the kitchen, and not just any blue: the pale blue of a Medellín morning. Spanish adds *claro* or *oscuro* after the colour, and then leaves the pair alone.",
+    "es": "Busco una chaqueta azul claro.",
+    "en": "I'm looking for a light blue jacket."
+  },
+  "examples": [
+    { "es": "Busco una camisa azul claro.", "en": "I'm looking for a light blue shirt." },
+    { "es": "Me compré una chaqueta verde oscuro.", "en": "I bought myself a dark green jacket." },
+    { "es": "Tengo dos camisas azul oscuro.", "en": "I have two dark blue shirts." },
+    { "es": "Vale tiene los ojos café claro.", "en": "Vale has light brown eyes." },
+    { "es": "¿Lo tiene en otro color?", "en": "Do you have it in another colour? (formal)" },
+    { "es": "La habitación es muy oscura.", "en": "The room is very dark." }
+  ],
+  "rule": "Put *claro* (light) or *oscuro* (dark) after the colour: *azul claro*, *verde oscuro*. English puts light first; Spanish puts it second.\nThe surprise: that pair never changes. *Una camisa azul claro*, *dos camisas azul oscuro*, never *azul clara* or *azules oscuras*. Think of it as a paint name.\nOn their own, *claro* and *oscuro* agree like any adjective: *la habitación es muy oscura*.\nIn Colombia brown is *café*. To ask for a different one: *¿Lo tiene en otro color?*",
+  "smallPrint": "Grammars call these compound colours, and they don't agree. You'll also hear *de color* before a colour: *una chaqueta de color café*. And red wine is *vino tinto*, never *vino rojo*.",
+  "readAndPick": [
+    { "es": "Busco una camisa azul oscuro.", "options": ["I'm looking for a dark blue shirt.", "I'm looking for a light blue shirt.", "I'm looking for a blue shirt."], "answer": 0 },
+    { "es": "Tengo unos tenis verde claro.", "options": ["I have some dark green trainers.", "I have some light green trainers."], "answer": 1 },
+    { "es": "La cocina es muy clara.", "options": ["The kitchen is very bright.", "The kitchen is very dark.", "The kitchen is light green."], "answer": 0 },
+    { "es": "Vale tiene los ojos café oscuro.", "options": ["Vale has light brown eyes.", "Vale has dark brown eyes.", "Vale has black eyes."], "answer": 1 },
+    { "es": "¿Lo tiene en otro color?", "options": ["What colour is it? (formal)", "Do you have it in another size? (formal)", "Do you have it in another colour? (formal)"], "answer": 2 },
+    { "es": "Mi carro es rojo oscuro.", "options": ["My car is light red.", "My car is red.", "My car is dark red."], "answer": 2 },
+    { "es": "Las paredes son amarillo claro.", "options": ["The walls are light yellow.", "The walls are dark yellow."], "answer": 0 },
+    { "es": "Busco una chaqueta de color café.", "options": ["I'm looking for a jacket in the café.", "I'm looking for a brown jacket.", "I'm looking for a coffee."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Busco una camisa azul ___.* (*claro* or *clara*) I'm looking for a light blue shirt.",
+      "answer": "Busco una camisa azul claro.",
+      "accept": [],
+      "why": "*Azul claro* is a fixed pair; it doesn't change for *camisa*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Tengo dos camisas ___ oscuro.* (*azul* or *azules*) I have two dark blue shirts.",
+      "answer": "Tengo dos camisas azul oscuro.",
+      "accept": [],
+      "why": "With *oscuro* after it, the colour stays as it is, even for two shirts."
+    },
+    {
+      "prompt": "Say: I'm looking for a dark green jacket.",
+      "answer": "Busco una chaqueta verde oscuro.",
+      "accept": ["Estoy buscando una chaqueta verde oscuro."],
+      "why": "Colour first, then *oscuro*, and the pair doesn't change for *chaqueta*."
+    },
+    {
+      "prompt": "You're holding a shirt. Ask the shop assistant (formal): Do you have it in another colour?",
+      "answer": "¿La tiene en otro color?",
+      "accept": [],
+      "why": "*La camisa*, so *la tiene*; another colour is *otro color*, with no *un*."
+    },
+    {
+      "prompt": "Say: The room is very dark.",
+      "answer": "La habitación es muy oscura.",
+      "accept": ["El cuarto es muy oscuro."],
+      "why": "On its own, *oscura* agrees with *la habitación*."
+    },
+    {
+      "prompt": "Make it plural: *Me gusta la camisa verde claro.*",
+      "answer": "Me gustan las camisas verde claro.",
+      "accept": [],
+      "why": "*Gustan* and *las camisas* change; *verde claro* stays the same."
+    },
+    {
+      "prompt": "Swap light for dark: *Busco unos tenis azul claro.*",
+      "answer": "Busco unos tenis azul oscuro.",
+      "accept": [],
+      "why": "Only *claro* changes to *oscuro*; the colour stays put."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Busco una camisa clara azul.",
+      "right": "Busco una camisa azul claro.",
+      "why": "Close. The colour comes first, then *claro*."
+    },
+    {
+      "wrong": "Tengo dos camisas azules oscuras.",
+      "right": "Tengo dos camisas azul oscuro.",
+      "why": "Almost. A colour with *claro* or *oscuro* never changes: *azul oscuro* for one shirt or ten."
+    },
+    {
+      "wrong": "Busco una chaqueta marrón.",
+      "right": "Busco una chaqueta café.",
+      "why": "People will understand *marrón*, but in Colombia brown is *café*."
+    }
+  ],
+  "personal": "Describe two things you own or are wearing, each with *claro* or *oscuro*: *Tengo una chaqueta azul oscuro…*"
+}

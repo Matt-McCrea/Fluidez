@@ -1,0 +1,104 @@
+{
+  "node": "g:superlatives",
+  "hook": {
+    "line": "Don Hernando has been coming to the café for forty years, and he has a ranking for everything: the best coffee, the oldest street, the most expensive shop. To pick out the top one, Spanish takes the *más* you already know and puts *el* or *la* in front.",
+    "es": "Es el café más viejo del barrio.",
+    "en": "It's the oldest café in the neighbourhood."
+  },
+  "examples": [
+    { "es": "Bogotá es la ciudad más grande de Colombia.", "en": "Bogotá is the biggest city in Colombia." },
+    { "es": "Esta es la tienda más barata del centro.", "en": "This is the cheapest shop in the centre." },
+    { "es": "Es el mejor tinto del barrio.", "en": "It's the best coffee in the neighbourhood." },
+    { "es": "¿Cuál es el plato más rico de la carta?", "en": "What's the tastiest dish on the menu?" },
+    { "es": "Tomás es el mayor de la familia.", "en": "Tomás is the oldest in the family." },
+    { "es": "Esa chaqueta de cuero está carísima.", "en": "That leather jacket is really expensive." },
+    { "es": "Las arepas de Vale están riquísimas.", "en": "Vale's arepas are absolutely delicious." }
+  ],
+  "rule": "To say the most, put *el*, *la*, *los* or *las* before *más* and the adjective: *la ciudad más grande* is the biggest city. The article matches the noun, and the adjective agrees as usual.\nFor in, Spanish uses *de*: *la más grande de Colombia*, *el mejor del barrio* (*de* plus *el* is *del*). Never *en* here.\nBest is just *mejor* with the article: *el mejor tinto*. The same goes for *mayor*: *el mayor* is the oldest.\nThe least works the same way, with *menos*: *la menos cara*.\nFor really, really, swap the last vowel for *ísimo*: *caro* becomes *carísimo*, *rico* becomes *riquísimo* (the c turns into qu to keep its sound). It agrees too: *carísima*, *riquísimas*. Nothing is being compared here; it just means very.",
+  "smallPrint": "Teachers call *el más grande* the superlative, and *carísimo* the absolute superlative.",
+  "soundTip": "In *ísimo* the stress jumps to the *í*: ca RÍ si mo, with an *í* like the ee in *see*.",
+  "readAndPick": [
+    { "es": "Es la tienda más barata del centro.", "options": ["It's the cheapest shop in the centre.", "It's cheaper than the shop in the centre.", "It's a very cheap shop."], "answer": 0 },
+    { "es": "Este café es más barato que el otro.", "options": ["This coffee is the cheapest.", "This coffee is cheaper than the other one."], "answer": 1 },
+    { "es": "Esta chaqueta está carísima.", "options": ["This jacket is the most expensive.", "This jacket is really expensive."], "answer": 1 },
+    { "es": "Es el mejor tinto del barrio.", "options": ["It's better coffee than the neighbourhood's.", "It's a good coffee in the neighbourhood.", "It's the best coffee in the neighbourhood."], "answer": 2 },
+    { "es": "Simón es el menos tranquilo de la casa.", "options": ["Simón is the least calm in the house.", "Simón is the calmest in the house."], "answer": 0 },
+    { "es": "Bogotá es la ciudad más grande de Colombia.", "options": ["Bogotá is a very big city in Colombia.", "Bogotá is the biggest city in Colombia.", "Bogotá is bigger than Colombia."], "answer": 1 },
+    { "es": "Tomás es el mayor de la familia.", "options": ["Tomás is the youngest in the family.", "Tomás is older than his family.", "Tomás is the oldest in the family."], "answer": 2 },
+    { "es": "Las arepas están riquísimas.", "options": ["The arepas are absolutely delicious.", "The arepas are the most delicious.", "The arepas are more delicious."], "answer": 0 },
+    { "es": "Son las camisas más caras de la tienda.", "options": ["The shirts in the shop are very expensive.", "They're the most expensive shirts in the shop.", "They're the cheapest shirts in the shop."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *Es el café más viejo ___ barrio.* (*del* or *en el*) It's the oldest café in the neighbourhood.",
+      "answer": "Es el café más viejo del barrio.",
+      "accept": [],
+      "why": "After the most, in is *de*, and *de* plus *el* is *del*."
+    },
+    {
+      "prompt": "Pick and type the whole sentence: *Es ___ tinto de Bogotá.* (*el más bueno* or *el mejor*) It's the best coffee in Bogotá.",
+      "answer": "Es el mejor tinto de Bogotá.",
+      "accept": [],
+      "why": "Best is *el mejor*."
+    },
+    {
+      "prompt": "Bogotá is the biggest city in Colombia.",
+      "answer": "Bogotá es la ciudad más grande de Colombia.",
+      "accept": [],
+      "why": "*La ciudad más grande*, then *de* for in."
+    },
+    {
+      "prompt": "Say: This shop is the cheapest in the centre.",
+      "answer": "Esta tienda es la más barata del centro.",
+      "accept": [],
+      "why": "*La más barata* agrees with *tienda*, and in the centre is *del centro*."
+    },
+    {
+      "prompt": "Tell a friend: That leather jacket is really expensive. (use *ísimo*)",
+      "answer": "Esa chaqueta de cuero está carísima.",
+      "accept": ["Esa chaqueta de cuero es carísima."],
+      "why": "*Caro* becomes *carísima*, agreeing with *chaqueta*."
+    },
+    {
+      "prompt": "Make it the least: *Es la camisa más cara de la tienda.*",
+      "answer": "Es la camisa menos cara de la tienda.",
+      "accept": [],
+      "why": "The least is *menos*; everything else stays."
+    },
+    {
+      "prompt": "Make it plural: *Es la tienda más barata del barrio.*",
+      "answer": "Son las tiendas más baratas del barrio.",
+      "accept": [],
+      "why": "*Son las tiendas*, and *baratas* agrees; *del barrio* stays."
+    },
+    {
+      "prompt": "Make it really, with *ísimo*: *El tinto está muy rico.*",
+      "answer": "El tinto está riquísimo.",
+      "accept": [],
+      "why": "*Rico* becomes *riquísimo*, and *muy* goes, because *ísimo* already means very."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "Es el café más viejo en el barrio.",
+      "right": "Es el café más viejo del barrio.",
+      "why": "Almost. After the most, in is *de*: *del barrio*."
+    },
+    {
+      "wrong": "Es el más bueno tinto de Bogotá.",
+      "right": "Es el mejor tinto de Bogotá.",
+      "why": "Best has its own word: *el mejor*."
+    },
+    {
+      "wrong": "Bogotá es la más grande ciudad de Colombia.",
+      "right": "Bogotá es la ciudad más grande de Colombia.",
+      "why": "Close. The noun comes first, then *más* and the adjective."
+    },
+    {
+      "wrong": "Las arepas están muy riquísimas.",
+      "right": "Las arepas están riquísimas.",
+      "why": "*Ísimo* already means very, so drop *muy*."
+    }
+  ],
+  "personal": "Name the best place you know for coffee or food, with *el mejor … de…* or *el más … de…*. Then describe something you love with an *ísimo* word."
+}

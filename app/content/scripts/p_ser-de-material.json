@@ -1,0 +1,90 @@
+{
+  "node": "p:ser-de-material",
+  "hook": {
+    "line": "Don Hernando's old jacket is real leather, and he'll tell anyone who asks. To say what something is made of, Spanish uses the same *ser de* you've used since day one to say where you're from.",
+    "es": "¿Esta chaqueta es de cuero?",
+    "en": "Is this jacket leather?"
+  },
+  "examples": [
+    { "es": "El suéter es de lana.", "en": "The sweater is wool." },
+    { "es": "Las camisetas son de algodón.", "en": "The T-shirts are cotton." },
+    { "es": "¿De qué es este bolso?\nEs de cuero.", "en": "What's this bag made of?\nIt's leather." },
+    { "es": "Esta falda no es de cuero, es de plástico.", "en": "This skirt isn't leather, it's plastic." },
+    { "es": "El reloj de Tomás es de plata.", "en": "Tomás's watch is silver." },
+    { "es": "Busco unas botas de cuero.", "en": "I'm looking for some leather boots." }
+  ],
+  "rule": "You already say *soy de Bogotá*. The same *ser de* says what something is made of: *es de cuero*, *son de algodón*.\nEnglish uses the material like an adjective: a wool sweater, it's leather. Spanish keeps *de*, after *es* and right after the noun: *un suéter de lana*, *unas botas de cuero*.\nNo article after *de*: *es de algodón*, never *es de un algodón*.\nTo ask: *¿De qué es?* What's it made of?",
+  "smallPrint": "Grammars list this as *ser de* plus a material. On labels you'll also see *hecho de*, made of. And *plata* is both silver and, in Colombia, money.",
+  "readAndPick": [
+    { "es": "La chaqueta es de Vale.", "options": ["The jacket is Vale's.", "The jacket is made of leather."], "answer": 0 },
+    { "es": "El suéter es de lana.", "options": ["The sweater belongs to Lana.", "The sweater is wool.", "The sweater is from Lana."], "answer": 1 },
+    { "es": "¿De qué es el bolso?", "options": ["Whose bag is it?", "What's the bag made of?", "Where's the bag from?"], "answer": 1 },
+    { "es": "¿De quién es el bolso?", "options": ["Whose bag is it?", "What's the bag made of?"], "answer": 0 },
+    { "es": "Las camisetas no son de algodón.", "options": ["The T-shirts are cotton.", "The T-shirt isn't cotton.", "The T-shirts aren't cotton."], "answer": 2 },
+    { "es": "Las botas son de cuero.", "options": ["The boot is leather.", "The boots are leather."], "answer": 1 },
+    { "es": "El reloj es de plata.", "options": ["The watch is silver.", "The watch costs a lot of money."], "answer": 0 },
+    { "es": "Es la chaqueta de cuero de Tomás.", "options": ["It's the leather from Tomás's jacket.", "It's Tomás's leather jacket.", "It's a leather jacket for Tomás."], "answer": 1 }
+  ],
+  "yourTurn": [
+    {
+      "prompt": "Pick and type the whole sentence: *La camisa es ___ algodón.* (*de* or *en*) The shirt is cotton.",
+      "answer": "La camisa es de algodón.",
+      "accept": [],
+      "why": "Made of is *ser de*, just like where you're from."
+    },
+    {
+      "prompt": "Pick and type the right one: *El suéter es de lana.* or *El suéter es de la lana.* (The sweater is wool.)",
+      "answer": "El suéter es de lana.",
+      "accept": [],
+      "why": "No article between *de* and the material."
+    },
+    {
+      "prompt": "Ask the shop assistant: Is this jacket leather?",
+      "answer": "¿Esta chaqueta es de cuero?",
+      "accept": ["¿Es de cuero esta chaqueta?"],
+      "why": "*Es de cuero*, turned into a question."
+    },
+    {
+      "prompt": "Ask: What's this bag made of?",
+      "answer": "¿De qué es este bolso?",
+      "accept": [],
+      "why": "*De qué* goes first: *¿De qué es?*"
+    },
+    {
+      "prompt": "Say: I want a wool sweater.",
+      "answer": "Quiero un suéter de lana.",
+      "accept": [],
+      "why": "The material goes after the noun, with *de*."
+    },
+    {
+      "prompt": "Make it negative: *Las botas son de cuero.*",
+      "answer": "Las botas no son de cuero.",
+      "accept": [],
+      "why": "*No* goes right before *son*."
+    },
+    {
+      "prompt": "Make it plural: *La camiseta es de algodón.*",
+      "answer": "Las camisetas son de algodón.",
+      "accept": [],
+      "why": "*Las camisetas son*; the material doesn't change."
+    }
+  ],
+  "pitfalls": [
+    {
+      "wrong": "La camisa es algodón.",
+      "right": "La camisa es de algodón.",
+      "why": "Almost. Spanish needs *de* before the material."
+    },
+    {
+      "wrong": "El suéter es de una lana.",
+      "right": "El suéter es de lana.",
+      "why": "Close. No article after *de* here: *de lana*."
+    },
+    {
+      "wrong": "Quiero un cuero bolso.",
+      "right": "Quiero un bolso de cuero.",
+      "why": "The material comes after the noun, with *de*: *un bolso de cuero*."
+    }
+  ],
+  "personal": "Look at what you're wearing right now. Say what two things are made of: *Mi camiseta es de algodón…*"
+}
