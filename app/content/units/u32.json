@@ -17,7 +17,7 @@
    ],
    "lexemes": [
     "l:ambiente",
-    "l:condenar",
+    "l:intención",
     "l:disponible",
     "l:asistente",
     "l:temporada"
@@ -37,7 +37,7 @@
     "c:apurate"
    ],
    "lexemes": [
-    "l:insistir",
+    "l:natación",
     "l:cadena",
     "l:paso"
    ]
@@ -58,7 +58,7 @@
     "l:ganancia",
     "l:pérdida",
     "l:gasto",
-    "l:costo",
+    "l:callar",
     "l:presupuesto",
     "l:inversión",
     "l:invertir",
@@ -80,9 +80,9 @@
    "lexemes": [
     "l:canal",
     "l:mirada",
-    "l:técnica",
+    "l:comisaría",
     "l:camión",
-    "l:nave"
+    "l:adolescente"
    ],
    "chapter": "ch097"
   },

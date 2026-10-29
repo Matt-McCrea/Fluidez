@@ -62,7 +62,7 @@
     "l:cabina",
     "l:foro",
     "l:presentador",
-    "l:serie",
+    "l:respirar",
     "l:prensa",
     "l:agencia",
     "l:capítulo",
@@ -95,7 +95,7 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:interrumpir",
+    "l:reservado",
     "l:ingresar",
     "l:encantador"
    ]
@@ -125,7 +125,7 @@
     "l:vigilancia",
     "l:vacío",
     "l:cirugía",
-    "l:población",
+    "l:sospechoso",
     "l:aplicar"
    ]
   },
@@ -140,7 +140,7 @@
    "lexemes": [
     "l:casualidad",
     "l:alumno",
-    "l:adolescente"
+    "l:nave"
    ],
    "scene": "sc-u37-b"
   },

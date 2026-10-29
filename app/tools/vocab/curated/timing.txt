@@ -1,0 +1,42 @@
+# Timing overrides read by build.ts (NOT a word list: loadCurated never reads this file).
+# lemma <TAB> by <TAB> why
+#   by = uNN  the word is needed by that unit: a taught-tier word goes on a day of the unit (or
+#             earlier); if no card slot is free in time it is receptive from the unit's last day
+#             at the latest
+#   by = sNNN known by that session at the latest (closed words take it as their priority)
+# Chunk and pattern words need no line here: every lexeme in a chunk's or pattern's Spanish is
+# needed by the node's day automatically. Numbers follow NUMBER_UNIT in build.ts.
+#
+# --- the story world (ch001–ch006) and the u01 café: Rosa's café in La Candelaria, Simón the parrot
+café	u01	the café is the story's setting
+tinto	u01	u01 theme: café basics
+pan	u01	u01 theme: café basics
+agua	u01	u01 theme: café basics
+leche	u01	u01 theme: café basics
+jugo	u01	u01 theme: café basics
+día	u01	buenos días; every chapter
+año	u01	c:tengo-anos is taught in u01
+peso	u01	prices from c:cuanto-cuesta (u01 day 3)
+arepa	u01	the café sells them; Colombian staple
+nieto	s5	ch001: Tomás is Rosa's grandson
+abuela	u01	ch001: the café was Rosa's
+loro	u01	ch001: Simón is a parrot
+plata	u03	ch005–ch006: the café's money and the bet
+apuesta	u03	ch005: the thirty-day bet
+casa	u02	daily routine: en casa
+hambre	u02	p:tener-hambre (u02 day 5)
+# --- very common adverbs and time words (function-like, wanted in the first readings)
+aquí	s10	place deixis from the first chapters
+acá	s10	Colombian aquí
+ahí	u02	place deixis
+allí	u02	place deixis
+allá	u02	place deixis
+hoy	u02	daily routine
+mañana	u02	daily routine; tomorrow
+siempre	u02	daily routine: como todos los días / siempre
+bien	s10	¿cómo estás? — bien
+mal	u02	p:bien-mal-vs-bueno-malo (u02 day 5)
+pacto	u03	ch005: the deal Vale proposes
+taxista	s5	the story's first days (u01–u02 writers)
+periodista	s5	the story's first days (u01–u02 writers)
+doña	s15	with p:senor-don-article (u02 day 5)

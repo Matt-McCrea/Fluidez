@@ -17,7 +17,7 @@
    ],
    "lexemes": [
     "l:brindar",
-    "l:culpa",
+    "l:éxito",
     "l:despertar",
     "l:banco#bench",
     "l:llenar",
@@ -40,7 +40,7 @@
    "lexemes": [
     "l:alegrarse",
     "l:navidad",
-    "l:reunir"
+    "l:acompañar"
    ]
   },
   {
@@ -116,7 +116,7 @@
     "l:capaz",
     "l:juez",
     "l:coser",
-    "l:acompañar",
+    "l:reunir",
     "l:revisar"
    ],
    "chapter": "ch065"

@@ -5,7 +5,7 @@ import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative, resolve } from 'node:path';
 import { z } from 'zod';
 import { BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask } from '../../src/content/schema';
-import { closedClass, registerLexemes, registerNames, type ChunkSpec, type TagOptions } from '../../src/engine/tagger';
+import { closedClass, registerLexemes, registerNames, type ChunkSpec, type PatternSpec, type TagOptions } from '../../src/engine/tagger';
 import { kindOf, type Kind } from './extract';
 import type { Finding } from './findings';
 
@@ -131,9 +131,16 @@ export function buildCurriculum(files: Loaded[], contentDir: string, findings: F
     });
     unitEnd.set(u.id, s);
   }
+  // a lexeme met in a chunk or a reading before its card day is known from its priority
+  for (const n of nodes.values()) {
+    if (n.kind !== 'lexeme' || !units.length) continue;
+    const t = taughtAt.get(n.id);
+    if (t !== undefined && n.priority >= 1 && n.priority < t) { taughtAt.set(n.id, n.priority); taughtWhere.set(n.id, `priority ${n.priority} (carded ${taughtWhere.get(n.id)})`); }
+  }
   // nodes no unit schedules fall back to their graph priority
   for (const n of nodes.values()) if (!taughtAt.has(n.id) && units.length) { taughtAt.set(n.id, Math.max(1, n.priority)); taughtWhere.set(n.id, `priority ${n.priority} (not in any unit)`); }
   const chunks: ChunkSpec[] = [...nodes.values()].filter((n) => n.kind === 'chunk' && n.es).map((n) => ({ id: n.id, es: n.es! }));
+  const patterns: PatternSpec[] = [...nodes.values()].filter((n) => n.kind === 'pattern').map((n) => ({ id: n.id, ...(n.match ? { match: n.match } : {}) }));
   let featureMap: Record<string, string | null> | undefined;
   const fm = join(contentDir, 'graph', '_featuremap.json');
   if (existsSync(fm)) {
@@ -152,7 +159,7 @@ export function buildCurriculum(files: Loaded[], contentDir: string, findings: F
   return {
     nodes, graphIds, units, daySession, unitEnd, unitBand, taughtAt, taughtWhere, chapterAt, sceneAt, scriptAt, chunks, featureMap,
     hasLexemes, completeBands,
-    tagOpts: { graphIds, featureMap, chunks },
+    tagOpts: { graphIds, featureMap, chunks, patterns },
   };
 }
 

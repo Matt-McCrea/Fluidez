@@ -1,0 +1,531 @@
+retime: 413 moved earlier, 115 swapped to a later card day (known as before), 0 promoted to fill a slot
+  moved    l:estar 13→1 (c:como-estas)
+  moved    l:bien 12→1 (c:como-estas; u01 day 1)
+  moved    l:noche 63→1 (c:hola-buenos-dias; priority only, still carded u07 day 7)
+  moved    l:llamarse 72→1 (c:me-llamo; priority only, still carded u08 day 6)
+  moved    l:tarde 76→1 (c:hola-buenos-dias; priority only, still carded u09 day 1)
+  moved    l:igualmente 354→1 (c:mucho-gusto; priority only, still carded u37 day 1)
+  moved    l:encantado 386→1 (c:mucho-gusto)
+  moved    l:poder 4→2 (c:mas-despacio; priority only, still carded u01 day 4)
+  moved    l:ayudar 4→2 (c:por-favor; priority only, still carded u01 day 4)
+  moved    l:significar 12→2 (c:como-se-dice; priority only, still carded u02 day 2)
+  moved    l:español 6→2 (c:como-se-dice; priority only, still carded u01 day 6)
+  moved    l:repetir 13→2 (c:mas-despacio; priority only, still carded u02 day 3)
+  moved    l:tinto 5→2 (c:como-se-dice; priority only, still carded u01 day 5)
+  moved    l:ir 25→3 (c:me-gustaria)
+  moved    l:dar 20→3 (c:me-regala; u01 day 3)
+  moved    l:hablar 15→3 (c:quiero; u01 day 3)
+  moved    l:gustar 20→3 (c:me-gustaria)
+  moved    l:valer 73→3 (c:cuanto-cuesta; priority only, still carded u08 day 7)
+  moved    l:cuenta 86→3 (c:me-regala; priority only, still carded u10 day 1)
+  moved    l:café 5→3 (c:me-gustaria; priority only, still carded u01 day 5)
+  moved    l:efectivo 145→3 (c:tengo; priority only, still carded u16 day 2)
+  moved    l:pregunta 337→3 (c:tengo; priority only, still carded u35 day 4)
+  moved    l:leche 5→3 (c:me-gustaria; priority only, still carded u01 day 5)
+  moved    l:jugo 5→3 (c:quiero; priority only, still carded u01 day 5)
+  moved    l:quedar 44→4 (c:donde-esta; priority only, still carded u05 day 7)
+  moved    l:problema 64→4 (c:hay; priority only, still carded u07 day 8)
+  moved    l:hoy 70→4 (c:puedo; priority only, still carded u08 day 4)
+  moved    l:pagar 78→4 (c:puedo; priority only, still carded u09 day 3)
+  moved    l:baño 61→4 (c:donde-esta; priority only, still carded u07 day 5)
+  moved    l:tarjeta 115→4 (c:puedo; priority only, still carded u13 day 1)
+  moved    l:estación 119→4 (c:donde-esta; priority only, still carded u13 day 5)
+  moved    l:permiso 115→4 (c:perdon-disculpe; priority only, still carded u13 day 1)
+  moved    l:pan 5→4 (c:hay; priority only, still carded u01 day 5)
+  moved    l:año 25→3 (c:tengo-anos; u01 day 3)
+  moved    l:mil 148→5 (numbers 0–100, mil (u01))
+  moved    l:estudiar 15→5 (c:trabajo-en; priority only, still carded u02 day 5)
+  moved    l:cien 42→5 (numbers 0–100, mil (u01))
+  moved    l:bailar 24→5 (c:me-encanta; priority only, still carded u03 day 5)
+  moved    l:frío 108→5 (c:me-gusta; priority only, still carded u12 day 4)
+  moved    l:periodista 276→5 (timing.txt s5; priority only, still carded u29 day 3)
+  moved    l:médica 199→5 (feminine of l:médico; priority only, still carded u21 day 6)
+  moved    l:cero 354→5 (numbers 0–100, mil (u01); priority only, still carded u37 day 1)
+  moved    l:treinta 42→5 (numbers 0–100, mil (u01))
+  moved    l:profesora 199→5 (feminine of l:profesor; priority only, still carded u21 day 6)
+  moved    l:nieto 199→5 (timing.txt s5; priority only, still carded u21 day 6)
+  moved    l:cincuenta 42→5 (numbers 0–100, mil (u01))
+  moved    l:cuarenta 42→5 (numbers 0–100, mil (u01))
+  moved    l:diseño 536→5 (c:trabajo-en)
+  moved    l:sesenta 42→5 (numbers 0–100, mil (u01))
+  moved    l:noventa 42→5 (numbers 0–100, mil (u01))
+  moved    l:ochenta 42→5 (numbers 0–100, mil (u01))
+  moved    l:setenta 42→5 (numbers 0–100, mil (u01))
+  moved    l:taxista 199→5 (timing.txt s5; priority only, still carded u21 day 6)
+  moved    l:veinticinco 42→5 (numbers 0–100, mil (u01))
+  moved    l:veinticuatro 42→5 (numbers 0–100, mil (u01))
+  moved    l:veintidós 42→5 (numbers 0–100, mil (u01))
+  moved    l:veintisiete 42→5 (numbers 0–100, mil (u01))
+  moved    l:veintiuno 42→5 (numbers 0–100, mil (u01))
+  moved    l:veintitrés 42→5 (numbers 0–100, mil (u01))
+  moved    l:veintinueve 42→5 (numbers 0–100, mil (u01))
+  moved    l:veintiocho 42→5 (numbers 0–100, mil (u01))
+  moved    l:veintiséis 42→5 (numbers 0–100, mil (u01))
+  moved    l:irse 17→6 (c:tengo-que; priority only, still carded u02 day 7)
+  moved    l:tomar 34→6 (c:vamos-a; priority only, still carded u04 day 6)
+  moved    l:mañana 76→6 (c:chao-nos-vemos; priority only, still carded u09 day 1)
+  moved    l:comer 7→6 (c:voy-a; priority only, still carded u01 day 7)
+  moved    l:pasar 25→7 (c:ayer-anoche; priority only, still carded u03 day 6)
+  moved    l:esperar 31→7 (c:hay-que; priority only, still carded u04 day 3)
+  moved    l:semana 24→7 (c:ayer-anoche; priority only, still carded u03 day 5)
+  moved    l:pasado 32→7 (c:ayer-anoche; priority only, still carded u04 day 4)
+  moved    l:fin 24→7 (c:ayer-anoche; priority only, still carded u03 day 5)
+  moved    l:artículo 366→7 (p:ser-profession-no-article; priority only, still carded u38 day 3)
+  moved    l:centro 11→7 (c:fui; priority only, still carded u02 day 1)
+  moved    l:excelente 33→7 (p:ser-profession-no-article)
+  moved    l:cocinero 199→7 (p:ser-profession-no-article; priority only, still carded u21 day 6)
+  moved    l:ajiaco 90→7 (c:comi; priority only, still carded u10 day 5)
+  moved    l:necesitar 34→8 (c:a-la-orden; priority only, still carded u04 day 6)
+  moved    l:bonito 175→8 (c:era; priority only, still carded u19 day 2)
+  moved    l:amiga 199→8 (feminine of l:amigo; priority only, still carded u21 day 6)
+  moved    l:desastre 324→8 (c:estuvo; priority only, still carded u34 day 1)
+  moved    l:tiempo 31→9 (c:es-que; priority only, still carded u04 day 3)
+  moved    l:cerrar 136→9 (c:creo-que; priority only, still carded u15 day 3)
+  moved    l:ocupado 13→9 (c:es-que; priority only, still carded u02 day 3)
+  moved    l:cansado 13→9 (c:porque; priority only, still carded u02 day 3)
+  moved    l:aquí 17→10 (timing.txt s10; priority only, still carded u02 day 7)
+  moved    l:peso 33→10 (timing.txt u01; priority only, still carded u04 day 5)
+  moved    l:acá 57→10 (timing.txt s10; priority only, still carded u07 day 1)
+  moved    l:abuela 42→10 (timing.txt u01; priority only, still carded u05 day 5)
+  moved    l:arepa 90→10 (timing.txt u01; priority only, still carded u10 day 5)
+  moved    l:ahí 60→12 (c:bien-y-tu; priority only, still carded u07 day 4)
+  moved    l:regular 376→12 (c:bien-y-tu)
+  moved    l:trancón 116→12 (c:que-significa; priority only, still carded u13 day 2)
+  moved    l:caro 33→13 (c:no-cierto; priority only, still carded u04 day 5)
+  moved    l:libro 21→14 (p:bien-mal-vs-bueno-malo; u02 day 4)
+  moved    l:miedo 137→14 (p:tener-hambre; u02 day 4)
+  moved    l:dormir 80→15 (p:tener-hambre; priority only, still carded u09 day 5)
+  moved    l:sueño 200→15 (p:tener-hambre; priority only, still carded u21 day 7)
+  moved    l:soñar 225→15 (p:tener-hambre; priority only, still carded u24 day 2)
+  moved    l:cantar 24→15 (p:bien-mal-vs-bueno-malo; priority only, still carded u03 day 5)
+  moved    l:hambre 264→15 (p:tener-hambre; priority only, still carded u28 day 1)
+  moved    l:calor 109→15 (p:tener-hambre; priority only, still carded u12 day 5)
+  moved    l:prisa 371→15 (p:tener-hambre; priority only, still carded u38 day 8)
+  moved    l:doña 406→15 (timing.txt s15; priority only, still carded u42 day 3)
+  moved    l:hora 64→16 (p:question-word-order; u02 day 6)
+  moved    l:abrir 107→14 (p:question-word-order; u02 day 4)
+  moved    l:hermana 42→17 (p:question-word-order; priority only, still carded u05 day 5)
+  moved    l:siempre 59→16 (timing.txt u02; u02 day 6)
+  moved    l:casa 57→19 (timing.txt u02; priority only, still carded u07 day 1)
+  moved    l:allí 73→19 (timing.txt u02; priority only, still carded u08 day 7)
+  moved    l:allá 60→19 (timing.txt u02; priority only, still carded u07 day 4)
+  moved    l:cine 24→20 (c:de-una; priority only, still carded u03 day 5)
+  moved    l:té 354→20 (c:me-da-igual; priority only, still carded u37 day 1)
+  moved    l:libre 151→21 (c:que-te-gusta-hacer; priority only, still carded u16 day 8)
+  moved    l:parar 128→21 (p:tambien-tampoco; priority only, still carded u14 day 4)
+  moved    l:carro 119→21 (p:tambien-tampoco; priority only, still carded u13 day 5)
+  moved    l:sábado 24→21 (c:hasta-el-lunes; priority only, still carded u03 day 5)
+  moved    l:sumar 337→21 (p:tambien-tampoco; priority only, still carded u35 day 4)
+  moved    l:positivo 366→21 (p:tambien-tampoco)
+  moved    l:negativo 42→21 (p:tambien-tampoco)
+  moved    l:millón 148→24 (hundreds, millón (u03))
+  moved    l:clase 100→23 (p:days-el-lunes; u03 day 4)
+  moved    l:carta 86→24 (p:jugar-a; priority only, still carded u10 day 1)
+  moved    l:juego 100→24 (p:jugar-a; priority only, still carded u11 day 5)
+  moved    l:rojo 144→24 (p:prefieres-x-o-y; priority only, still carded u16 day 1)
+  moved    l:azul 144→24 (p:prefieres-x-o-y; priority only, still carded u16 day 1)
+  moved    l:playa 71→24 (p:prefieres-x-o-y; priority only, still carded u08 day 5)
+  moved    l:montaña 71→24 (p:prefieres-x-o-y; priority only, still carded u08 day 5)
+  moved    l:tenis 148→24 (p:jugar-a; priority only, still carded u16 day 5)
+  moved    l:doscientos 148→24 (hundreds, millón (u03))
+  moved    l:quinientos 148→24 (hundreds, millón (u03))
+  moved    l:trescientos 148→24 (hundreds, millón (u03))
+  moved    l:lugar 63→23 (p:ir-a-venir-de-place; u03 day 4)
+  moved    l:plata 33→28 (timing.txt u03; priority only, still carded u04 day 5)
+  moved    l:especial 125→29 (c:que-tal-el-fin; priority only, still carded u14 day 1)
+  moved    l:libra 33→29 (c:a-como-esta; priority only, still carded u04 day 5)
+  moved    l:paseo 396→29 (c:que-tal-el-fin)
+  moved    l:vuelta 164→30 (c:aqui-tiene; priority only, still carded u18 day 1)
+  moved    l:cambiar 51→33 (p:estar-a-price; priority only, still carded u06 day 4)
+  moved    l:próximo 122→33 (p:time-pasado-que-viene; priority only, still carded u13 day 8)
+  moved    l:viajar 71→33 (p:time-pasado-que-viene; priority only, still carded u08 day 5)
+  moved    l:dólar 160→33 (p:estar-a-price; priority only, still carded u17 day 7)
+  moved    l:curso 178→33 (p:time-pasado-que-viene; priority only, still carded u19 day 5)
+  moved    l:costar 129→33 (p:costar-pagar)
+  moved    l:ayuda 198→33 (p:gracias-por; priority only, still carded u21 day 5)
+  moved    l:camisa 148→33 (p:costar-pagar; priority only, still carded u16 day 5)
+  moved    l:examen 100→35 (c:como-te-fue; priority only, still carded u11 day 5)
+  moved    l:mayor 45→38 (c:tienes-hermanos; priority only, still carded u05 day 8)
+  moved    l:hija 42→38 (c:hijo-unico; priority only, still carded u05 day 5)
+  moved    l:menor 45→38 (c:tienes-hermanos; priority only, still carded u05 day 8)
+  moved    l:hermano 42→38 (c:tienes-hermanos; priority only, still carded u05 day 5)
+  moved    l:mamá 42→38 (c:como-es; priority only, still carded u05 day 5)
+  moved    l:simpático 40→38 (c:como-es; priority only, still carded u05 day 3)
+  moved    l:persona 54→41 (p:numbers-un-una; u05 day 4)
+  moved    l:buscar 54→35 (p:personal-a; u04 day 7)
+  moved    l:visitar 71→42 (p:personal-a; priority only, still carded u08 day 5)
+  moved    l:directo 100→42 (p:personal-a)
+  moved    l:objeto 544→42 (p:personal-a; priority only, still carded u56 day 1)
+  moved    l:concretar 448→42 (p:personal-a; priority only, still carded u46 day 5)
+  moved    l:restaurante 90→43 (p:bien-bueno)
+  moved    l:verde 144→43 (p:es-tiene-lleva; priority only, still carded u16 day 1)
+  moved    l:describir 129→43 (p:bien-bueno; priority only, still carded u14 day 5)
+  moved    l:donar 386→43 (p:bien-bueno)
+  moved    l:gafas 366→43 (p:es-tiene-lleva)
+  moved    l:chaqueta 148→43 (p:es-tiene-lleva; priority only, still carded u16 day 5)
+  moved    l:padres 160→45 (p:masculine-plural-mixed; priority only, still carded u17 day 7)
+  moved    l:dueño 50→45 (p:de-owner; priority only, still carded u06 day 3)
+  moved    l:celular 129→45 (p:de-owner; priority only, still carded u14 day 5)
+  moved    l:gerente 377→45 (p:te-presento-a; priority only, still carded u39 day 4)
+  moved    l:antes 53→49 (c:como-era; priority only, still carded u06 day 6)
+  moved    l:existir 131→49 (c:ya-no; priority only, still carded u14 day 7)
+  moved    l:árbol 189→49 (c:como-era; priority only, still carded u20 day 6)
+  moved    l:mes 93→52 (p:dates-years; priority only, still carded u10 day 8)
+  moved    l:nacer 54→52 (p:dates-years; priority only, still carded u06 day 7)
+  moved    l:arriba 186→52 (p:los-garcia; priority only, still carded u20 day 3)
+  moved    l:física 396→52 (feminine of l:físico)
+  moved    l:out 514→52 (p:viejo-antiguo-mayor)
+  moved    l:morir 97→54 (p:naci-en; priority only, still carded u11 day 2)
+  moved    l:cerca 60→57 (c:por-aca; priority only, still carded u07 day 4)
+  moved    l:cajero 218→57 (c:por-aca; priority only, still carded u23 day 5)
+  moved    l:droguería 58→57 (c:por-aca; priority only, still carded u07 day 2)
+  moved    l:metro 169→58 (c:mas-o-menos; priority only, still carded u18 day 6)
+  moved    l:habitante 239→58 (c:mas-o-menos; priority only, still carded u25 day 6)
+  moved    l:dentro 98→62 (p:cerca-de; priority only, still carded u11 day 3)
+  moved    l:lado 101→62 (p:cerca-de; priority only, still carded u11 day 6)
+  moved    l:difícil 125→62 (p:ordinal-floor; priority only, still carded u14 day 1)
+  moved    l:caja 186→62 (p:cerca-de; priority only, still carded u20 day 3)
+  moved    l:lejos 117→62 (p:aqui-ahi-alla; priority only, still carded u13 day 3)
+  moved    l:encima 216→62 (p:position-de; priority only, still carded u23 day 3)
+  moved    l:detrás 216→62 (p:position-de; priority only, still carded u23 day 3)
+  moved    l:derecha 119→62 (p:ordinal-floor; priority only, still carded u13 day 5)
+  moved    l:debajo 278→62 (p:position-de; priority only, still carded u29 day 5)
+  moved    l:delante 285→62 (p:position-de; priority only, still carded u30 day 2)
+  moved    l:suficiente 128→64 (p:poco-un-poco; priority only, still carded u14 day 4)
+  moved    l:aproximadamente 474→64 (p:unos-approx; priority only, still carded u49 day 1)
+  moved    l:tono 431→64 (p:poco-un-poco; priority only, still carded u44 day 8)
+  moved    l:acuerdo 134→64 (p:la-gente-singular; priority only, still carded u15 day 1)
+  moved    l:suerte 156→67 (c:que-envidia; priority only, still carded u17 day 3)
+  moved    l:probarse 146→70 (c:nunca-en-la-vida; priority only, still carded u16 day 3)
+  moved    l:importante 93→73 (p:es-adj-inf; u08 day 7)
+  moved    l:general 121→72 (p:es-adj-inf; u08 day 6)
+  moved    l:aprender 140→73 (p:es-adj-inf; priority only, still carded u15 day 7)
+  moved    l:función 158→73 (p:para-inf; priority only, still carded u17 day 5)
+  moved    l:útil 321→73 (p:es-adj-inf; priority only, still carded u33 day 8)
+  moved    l:sujeto 386→73 (p:para-inf)
+  moved    l:bus 119→73 (p:para-inf; priority only, still carded u13 day 5)
+  moved    l:ganas 158→73 (p:tener-ganas-de; priority only, still carded u17 day 5)
+  moved    l:ponerse 82→72 (p:lavarse-las-manos; u08 day 6)
+  moved    l:cuerpo 117→77 (p:lavarse-las-manos; priority only, still carded u13 day 3)
+  moved    l:ropa 148→77 (p:lavarse-las-manos; priority only, still carded u16 day 5)
+  moved    l:lavarse 526→77 (p:lavarse-las-manos; priority only, still carded u54 day 3)
+  moved    l:correr 130→79 (p:soler-inf; u09 day 4)
+  moved    l:francés 247→81 (p:hedge-knowledge; priority only, still carded u26 day 4)
+  moved    l:gimnasio 472→81 (p:veces-al; priority only, still carded u48 day 9)
+  moved    l:pescado 90→81 (p:frequency-scale; priority only, still carded u10 day 5)
+  moved    l:molestia 168→81 (p:siento-llegar-tarde)
+  moved    l:llover 109→81 (p:empezar-terminar; priority only, still carded u12 day 5)
+  moved    l:demora 121→81 (p:siento-llegar-tarde; priority only, still carded u13 day 7)
+  moved    l:especialidad 178→86 (c:que-me-recomienda)
+  moved    l:delicioso 89→87 (c:que-rico; priority only, still carded u10 day 4)
+  moved    l:mostrar 101→83 (c:a-ver; u09 day 8)
+  moved    l:empanada 90→88 (c:a-ver; priority only, still carded u10 day 5)
+  moved    l:área 206→91 (p:el-agua-fria; priority only, still carded u22 day 3)
+  moved    l:prestar 216→91 (p:me-trae; priority only, still carded u23 day 3)
+  moved    l:paquete 338→91 (p:container-de; priority only, still carded u35 day 5)
+  moved    l:botella 324→91 (p:container-de; priority only, still carded u34 day 1)
+  moved    l:azúcar 414→91 (p:con-sin; priority only, still carded u43 day 1)
+  moved    l:docena 138→91 (p:container-de)
+  moved    l:sal 468→91 (p:me-trae; priority only, still carded u48 day 5)
+  moved    l:niña 161→97 (c:cuando-era-nino; priority only, still carded u17 day 8)
+  moved    l:medir 437→100 (p:medir-pesar; priority only, still carded u45 day 4)
+  moved    l:fumar 344→100 (p:dejar-de-inf; priority only, still carded u36 day 1)
+  moved    l:interesar 156→99 (p:gustar-mas-que; u11 day 4)
+  moved    l:campo 164→93 (p:gustar-mas-que; u10 day 8)
+  moved    l:cantidad 241→102 (p:mas-de-number; priority only, still carded u25 day 8)
+  moved    l:comparar 228→102 (p:mas-de-number; priority only, still carded u24 day 5)
+  moved    l:duda 276→102 (c:no-hay-comparacion; priority only, still carded u29 day 3)
+  moved    l:luz 128→99 (c:de-repente; u11 day 4)
+  moved    l:teléfono 130→105 (c:de-repente; priority only, still carded u14 day 6)
+  moved    l:sonar 200→105 (c:de-repente; priority only, still carded u21 day 7)
+  moved    l:increíble 248→106 (c:una-vez-story; priority only, still carded u26 day 5)
+  moved    l:horror 366→106 (c:que-bien)
+  moved    l:explicar 129→108 (p:volver-a-inf; u12 day 4)
+  moved    l:viento 188→110 (p:hace-frio; priority only, still carded u20 day 5)
+  moved    l:nublado 188→110 (p:hace-frio; priority only, still carded u20 day 5)
+  moved    l:cuidado 130→116 (c:ojo; priority only, still carded u14 day 6)
+  moved    l:pie 138→120 (p:transport-en; priority only, still carded u15 day 5)
+  moved    l:adelante 206→120 (p:subirse-bajarse; priority only, still carded u22 day 3)
+  moved    l:girar 247→120 (p:directions-cuadras; priority only, still carded u26 day 4)
+  moved    l:tardar 300→120 (p:tardar-en; priority only, still carded u31 day 7)
+  moved    l:saludo 258→126 (c:un-abrazo; priority only, still carded u27 day 5)
+  moved    l:beso 544→126 (c:un-abrazo)
+  moved    l:ahorrar 334→129 (p:para-inf-purpose; priority only, still carded u35 day 1)
+  moved    l:molestar 195→135 (c:para-nada; priority only, still carded u21 day 2)
+  moved    l:vergüenza 248→135 (c:que-susto; priority only, still carded u26 day 5)
+  moved    l:rabia 284→135 (c:que-susto; priority only, still carded u30 day 1)
+  moved    l:fácil 141→136 (p:no-es-nada-adj; u15 day 3)
+  moved    l:solución 266→139 (p:no-es-nada-adj; priority only, still carded u28 day 3)
+  moved    l:altura 338→139 (p:me-da-miedo; priority only, still carded u35 day 5)
+  moved    l:parte 174→139 (p:me-duele; priority only, still carded u19 day 1)
+  moved    l:colaborar 215→144 (c:en-que-le-puedo-servir; priority only, still carded u23 day 2)
+  moved    l:crédito 306→145 (c:a-cuantas-cuotas; priority only, still carded u32 day 3)
+  moved    l:opinión 258→147 (p:cambiar-de-por; u16 day 4)
+  moved    l:pantalones 394→149 (p:colour-claro-oscuro; priority only, still carded u41 day 1)
+  moved    l:raya 426→149 (p:el-azul)
+  moved    l:mochila 566→149 (p:ser-de-material)
+  moved    l:perfecto 161→154 (c:me-parece-bien; u17 day 1)
+  moved    l:confirmar 436→158 (p:entonces-quedamos; priority only, still carded u45 day 3)
+  moved    l:conclusión 376→158 (p:entonces-quedamos; priority only, still carded u39 day 3)
+  moved    l:evento 366→159 (p:event-ser-en)
+  moved    l:accidente 248→159 (p:event-ser-en; priority only, still carded u26 day 5)
+  moved    l:duro 236→159 (p:durar-durante; priority only, still carded u25 day 3)
+  moved    l:sencillo 300→164 (c:ida-y-vuelta; priority only, still carded u31 day 7)
+  moved    l:reserva 168→164 (c:a-nombre-de; priority only, still carded u18 day 5)
+  moved    l:plana 574→169 (feminine of l:plano)
+  moved    l:probable 276→169 (c:puede-ser; u18 day 6)
+  moved    l:preocuparse 201→189 (c:no-te-preocupes; u20 day 6)
+  moved    l:divertirse 397→199 (c:que-la-pases-bien; u21 day 6)
+  moved    l:acompañar 210→205 (c:sentido-pesame; u22 day 2)
+  moved    l:éxito 226→204 (c:mucha-suerte; u22 day 1)
+  moved    l:felicidad 275→199 (p:felicitaciones-por; u21 day 6)
+  moved    l:pedido 297→199 (c:queria-preguntar; u21 day 6)
+  moved    l:ducha 228→214 (c:no-sirve)
+  moved    l:atender 316→215 (c:ahorita)
+  moved    l:firma 366→215 (c:me-colabora; priority only, still carded u38 day 3)
+  moved    l:cédula 218→215 (c:me-colabora; priority only, still carded u23 day 5)
+  moved    l:técnica 307→219 (feminine of l:técnico; u23 day 6)
+  moved    l:mudarse 228→225 (c:la-idea-es; priority only, still carded u24 day 5)
+  moved    l:vista 340→224 (p:tiene-mucha-luz; u24 day 1)
+  moved    l:iluminar 366→229 (p:tiene-mucha-luz)
+  moved    l:cerro 238→229 (p:tiene-mucha-luz; priority only, still carded u25 day 5)
+  moved    l:caliente 390→219 (c:buen-clima; u23 day 6)
+  moved    l:rasgo 547→239 (p:de-los-ojos-azules; u25 day 6)
+  moved    l:mentira 276→239 (c:no-me-digas; u25 day 6)
+  moved    l:imaginarse 336→245 (c:imaginate)
+  moved    l:anterior 475→248 (p:dentro-de-vs-despues; u26 day 5)
+  moved    l:insistir 305→248 (p:horas-y-horas; u26 day 5)
+  moved    l:relato 456→239 (p:dentro-de-vs-despues; u25 day 6)
+  moved    l:estimado 475→248 (c:cordial-saludo; u26 day 5)
+  moved    l:picar 377→258 (p:infinitive-instructions; u27 day 5)
+  moved    l:recetar 396→259 (p:infinitive-instructions)
+  moved    l:biblioteca 328→268 (p:estar-a-favor-de; u28 day 5)
+  moved    l:posiblemente 556→258 (p:seguramente-probablemente; u27 day 5)
+  moved    l:proyecto 426→278 (p:esta-claro-que; u29 day 5)
+  moved    l:costo 306→277 (p:tener-en-cuenta; u29 day 4)
+  moved    l:equivocado 448→258 (p:equivocarse; u27 day 5)
+  moved    l:interrumpir 358→286 (p:no-soportar-que; u30 day 3)
+  moved    l:lástima 415→286 (p:me-da-pena-que; u30 day 3)
+  moved    l:bravo 454→286 (p:enojarse-con; u30 day 3)
+  moved    l:montón 298→286 (p:alegrarse-de-que; u30 day 3)
+  moved    l:impresionante 381→285 (p:es-increible-como; u30 day 2)
+  moved    l:genio 455→258 (p:me-pone-nervioso; u27 day 5)
+  moved    l:serie 356→291 (p:aburrir-aburrirse; u30 day 8)
+  moved    l:aburrir 476→291 (p:aburrir-aburrirse)
+  moved    l:resumen 376→295 (p:al-final-en-resumen; priority only, still carded u39 day 3)
+  moved    l:motivo 437→296 (p:ponerse-a; u31 day 3)
+  moved    l:humo 506→239 (p:entonces-de-repente; u25 day 6)
+  moved    l:sabor 404→298 (p:oler-a-saber-a; u31 day 5)
+  moved    l:enamorado 335→297 (p:enamorarse-de; u31 day 4)
+  moved    l:enamorarse 546→239 (p:enamorarse-de; u25 day 6)
+  moved    l:intención 324→304 (p:pensar-inf; u32 day 1)
+  moved    l:adolescente 361→307 (p:parecer-vs-parecerse; u32 day 4)
+  moved    l:últimamente 471→239 (p:actualmente; u25 day 6)
+  moved    l:local 316→315 (p:quedar-a-distancia; u33 day 2)
+  moved    l:cuadrado 547→316 (p:medir; u33 day 3)
+  moved    l:vaciar 427→290 (p:lleno-libre; u30 day 7)
+  moved    l:ancho 466→239 (p:medir; u25 day 6)
+  moved    l:pasillo 521→239 (p:posicion-precisa; u25 day 6)
+  moved    l:juntar 544→316 (p:posicion-precisa)
+  moved    l:matar 480→318 (p:imperativo-y-veras; u33 day 5)
+  moved    l:madera 364→317 (p:estar-hecho-de; u33 day 4)
+  moved    l:matemáticas 480→316 (p:ser-bueno-para; u33 day 3)
+  moved    l:retrasar 428→239 (p:llegar-a-tiempo; u25 day 6)
+  moved    l:niebla 386→319 (p:llegar-a-tiempo; priority only, still carded u40 day 3)
+  moved    l:posponer 537→319 (p:adelantar-aplazar; priority only, still carded u55 day 4)
+  moved    l:alejarse 350→328 (p:acercarse-alejarse; u34 day 5)
+  moved    l:disculpa 486→326 (p:pedir-disculpas-por; u34 day 3)
+  moved    l:casco 406→326 (p:es-obligatorio; u34 day 3)
+  moved    l:obligatorio 476→339 (p:es-obligatorio)
+  moved    l:computador 554→339 (p:se-puede-me-dejas)
+  moved    l:población 360→348 (p:fracciones-de; u36 day 5)
+  moved    l:disminuir 476→347 (p:subir-subida; u36 day 4)
+  moved    l:paciencia 474→346 (p:agotarse; u36 day 3)
+  moved    l:resolver 486→368 (p:quedar-participio; u38 day 5)
+  moved    l:inevitable 574→369 (p:inevitable)
+  moved    l:respeto 406→379 (p:tratar-de; priority only, still carded u42 day 3)
+  moved    l:mojado 476→389 (p:humedo-mojado)
+  moved    l:estrenar 496→399 (p:estrenar)
+  moved    l:prender 467→405 (p:nosotros-instructions; u42 day 2)
+  moved    l:ascensor 542→391 (p:esta-prohibido-que; u40 day 8)
+  moved    l:arreglo 416→415 (c:no-hay-nada-que-hacer)
+  moved    l:madrugada 584→419 (p:a-ultima-hora)
+  moved    l:pésimo 544→419 (p:me-parecio-mal-que)
+  moved    l:crisis 446→422 (p:sobrevivir-a; u43 day 9)
+  moved    l:terremoto 566→422 (p:sobrevivir-a)
+  moved    l:corto 551→424 (c:a-largo-plazo; u44 day 1)
+  moved    l:institución 514→428 (p:un-estudio-muestra-que; u44 day 5)
+  moved    l:sensación 517→427 (p:tengo-la-impresion-de-que; u44 day 4)
+  moved    l:coincidir 432→427 (p:comparto-su-punto-de-vista; u44 day 4)
+  moved    l:esencial 546→425 (p:imprescindible; u44 day 2)
+  moved    l:timbre 514→429 (p:no-estoy-seguro-de-que)
+  moved    l:tenso 536→429 (p:tengo-la-impresion-de-que)
+  moved    l:simple 565→432 (p:a-primera-vista; u44 day 9)
+  moved    l:aislar 436→432 (p:se-podria-objetar-que)
+  moved    l:teletrabajo 481→432 (p:se-podria-objetar-que; priority only, still carded u49 day 8)
+  moved    l:sede 572→436 (p:es-verdad-eso-de-que; u45 day 3)
+  moved    l:noción 504→436 (p:estar-al-tanto-de)
+  moved    l:limitado 524→439 (p:hay-que-tener-en-cuenta)
+  moved    l:gramo 524→439 (p:aproximar-cifras)
+  moved    l:cantante 457→442 (p:encontrarse-hallarse; u45 day 9)
+  moved    l:perfectamente 485→445 (p:recordar-acordarse; u46 day 2)
+  moved    l:inocente 518→447 (p:dice-ser; u46 day 4)
+  moved    l:atrasado 584→452 (p:no-es-que-sino-que)
+  moved    l:agotar 544→456 (p:pasar-hambre-frio)
+  moved    l:ingenuo 524→456 (p:como-para)
+  moved    l:elemento 466→458 (p:focus-adverbs; u47 day 5)
+  moved    l:increíblemente 566→462 (p:intensificadores)
+  moved    l:toro 531→465 (p:describe-with-images; u48 day 2)
+  moved    l:palo 484→461 (p:describe-with-images; u47 day 8)
+  moved    l:discreto 528→441 (p:synonym-hypernym; u45 day 8)
+  moved    l:vigilante 514→466 (p:describe-with-images)
+  moved    l:veterinario 544→466 (p:synonym-hypernym)
+  moved    l:tijera 554→466 (p:plural-one-object)
+  moved    l:diferencia 496→466 (p:en-comparacion-con; priority only, still carded u51 day 3)
+  moved    l:miembro 486→468 (p:caracterizarse-por; u48 day 5)
+  moved    l:bala 518→467 (p:resistente-a; u48 day 4)
+  moved    l:relleno 574→469 (p:fabricado-con-contener)
+  moved    l:fachada 588→436 (p:caracterizarse-por; u45 day 3)
+  moved    l:interesado 491→476 (p:interesado-en; u49 day 3)
+  moved    l:analista 536→477 (p:me-permito)
+  moved    l:moral 544→488 (p:me-da-rabia-me-indigna; u50 day 5)
+  moved    l:distribuir 528→481 (p:repartir-entre; u49 day 8)
+  moved    l:vicio 574→489 (p:tener-la-mania-de)
+  moved    l:cansarse 514→489 (p:estar-harto-de-que)
+  moved    l:periodo 518→498 (p:adaptarse-a; u51 day 5)
+  moved    l:provenir 591→498 (p:proceder-de; u51 day 5)
+  moved    l:crítica 584→508 (feminine of l:crítico; u52 day 5)
+  moved    l:cálculo 548→511 (p:sin-animo-de; u52 day 8)
+  moved    l:constar 538→511 (p:no-me-cabe-duda; u52 day 8)
+  moved    l:insinuar 524→507 (p:verbo-que-interpreta; u52 day 4)
+  moved    l:responsable 528→518 (p:hasta-la-fecha; u53 day 5)
+  moved    l:honestidad 536→519 (p:sembrar-la-duda)
+  moved    l:charla 584→528 (p:morirse-de; u54 day 5)
+  moved    l:lamentable 544→535 (p:condenar)
+  moved    l:desconocer 584→536 (p:conocimiento-formal)
+  moved    l:aprobación 591→538 (p:por-consenso; u55 day 5)
+  moved    l:constituir 566→539 (p:constar-de)
+  moved    l:disparar 561→544 (p:ir-en-aumento; u56 day 1)
+  moved    l:novela 574→542 (c:sin-lugar-a-dudas; u55 day 9)
+  moved    l:modesto 554→548 (p:a-mi-juicio)
+  moved    l:dificultad 567→548 (p:hacer-frente-a; u56 day 5)
+  moved    l:chispa 584→558 (c:esta-que-arde)
+  moved    l:quebrar 582→558 (p:romperse-la-cabeza; u57 day 5)
+  moved    l:ensayar 591→588 (p:saltar-a-la-vista; u60 day 5)
+  swapped  l:llamar carded u02 day 2 (s12) instead of u01 day 1; still known from s1
+  swapped  l:encantar carded u03 day 1 (s20) instead of u01 day 3; still known from s3
+  swapped  l:vivir carded u02 day 5 (s15) instead of u01 day 3; still known from s3
+  swapped  l:trabajar carded u03 day 6 (s25) instead of u01 day 3; still known from s3
+  swapped  l:don carded u03 day 2 (s21) instead of u02 day 4; still known from s14
+  swapped  l:malo carded u15 day 4 (s137) instead of u02 day 4; still known from s14
+  swapped  l:calle carded u07 day 8 (s64) instead of u02 day 6; still known from s16
+  swapped  l:mal carded u12 day 3 (s107) instead of u02 day 4; still known from s14
+  swapped  l:número carded u07 day 3 (s59) instead of u02 day 6; still known from s16
+  swapped  l:preferir carded u11 day 5 (s100) instead of u03 day 4; still known from s23
+  swapped  l:jugar carded u07 day 7 (s63) instead of u03 day 4; still known from s23
+  swapped  l:razón carded u06 day 7 (s54) instead of u05 day 4; still known from s41
+  swapped  l:seguir carded u06 day 7 (s54) instead of u04 day 7; still known from s35
+  swapped  l:acabar carded u10 day 8 (s93) instead of u08 day 7; still known from s73
+  swapped  l:escuchar carded u13 day 7 (s121) instead of u08 day 6; still known from s72
+  swapped  l:suponer carded u09 day 7 (s82) instead of u08 day 6; still known from s72
+  swapped  l:soler carded u14 day 6 (s130) instead of u09 day 4; still known from s79
+  swapped  l:traer carded u11 day 6 (s101) instead of u09 day 8; still known from s83
+  swapped  l:pesar carded u17 day 3 (s156) instead of u11 day 4; still known from s99
+  swapped  l:oír carded u18 day 1 (s164) instead of u10 day 8; still known from s93
+  swapped  l:chico carded u14 day 4 (s128) instead of u11 day 4; still known from s99
+  swapped  l:cabeza carded u14 day 5 (s129) instead of u12 day 4; still known from s108
+  swapped  l:perdido carded u15 day 8 (s141) instead of u15 day 3; still known from s136
+  swapped  l:oscuro carded u27 day 5 (s258) instead of u16 day 4; still known from s147
+  swapped  l:morirse carded u17 day 8 (s161) instead of u17 day 1; still known from s154
+  swapped  l:excursión carded u29 day 3 (s276) instead of u18 day 6; still known from s169
+  swapped  l:pájaro carded u21 day 8 (s201) instead of u20 day 6; still known from s189
+  swapped  l:suegra carded u41 day 4 (s397) instead of u21 day 6; still known from s199
+  swapped  l:reunir carded u22 day 7 (s210) instead of u22 day 2; still known from s205
+  swapped  l:culpa carded u24 day 3 (s226) instead of u22 day 1; still known from s204
+  swapped  l:nieta carded u29 day 2 (s275) instead of u21 day 6; still known from s199
+  swapped  l:sobrino carded u31 day 4 (s297) instead of u21 day 6; still known from s199
+  swapped  l:comisaría carded u32 day 4 (s307) instead of u23 day 6; still known from s219
+  swapped  l:perdonar carded u35 day 7 (s340) instead of u24 day 1; still known from s224
+  swapped  l:socorro carded u40 day 7 (s390) instead of u23 day 6; still known from s219
+  swapped  l:cuñada carded u56 day 4 (s547) instead of u25 day 6; still known from s239
+  swapped  l:mosca carded u29 day 3 (s276) instead of u25 day 6; still known from s239
+  swapped  l:sociable carded u49 day 2 (s475) instead of u26 day 5; still known from s248
+  swapped  l:natación carded u32 day 2 (s305) instead of u26 day 5; still known from s248
+  swapped  l:otoño carded u47 day 3 (s456) instead of u25 day 6; still known from s239
+  swapped  l:baloncesto carded u49 day 2 (s475) instead of u26 day 5; still known from s248
+  swapped  l:arroba carded u39 day 4 (s377) instead of u27 day 5; still known from s258
+  swapped  l:divertir carded u34 day 5 (s328) instead of u28 day 5; still known from s268
+  swapped  l:quiosco carded u57 day 3 (s556) instead of u27 day 5; still known from s258
+  swapped  l:ocultar carded u44 day 3 (s426) instead of u29 day 5; still known from s278
+  swapped  l:callar carded u32 day 3 (s306) instead of u29 day 4; still known from s277
+  swapped  l:sello carded u46 day 5 (s448) instead of u27 day 5; still known from s258
+  swapped  l:reservado carded u37 day 5 (s358) instead of u30 day 3; still known from s286
+  swapped  l:egoísta carded u43 day 2 (s415) instead of u30 day 3; still known from s286
+  swapped  l:optimista carded u47 day 1 (s454) instead of u30 day 3; still known from s286
+  swapped  l:odiar carded u31 day 5 (s298) instead of u30 day 3; still known from s286
+  swapped  l:harto carded u39 day 8 (s381) instead of u30 day 2; still known from s285
+  swapped  l:guión carded u47 day 2 (s455) instead of u27 day 5; still known from s258
+  swapped  l:respirar carded u37 day 3 (s356) instead of u30 day 8; still known from s291
+  swapped  l:embarazo carded u45 day 4 (s437) instead of u31 day 3; still known from s296
+  swapped  l:oveja carded u52 day 3 (s506) instead of u25 day 6; still known from s239
+  swapped  l:oler carded u42 day 1 (s404) instead of u31 day 5; still known from s298
+  swapped  l:tonto carded u35 day 2 (s335) instead of u31 day 4; still known from s297
+  swapped  l:divorcio carded u56 day 3 (s546) instead of u25 day 6; still known from s239
+  swapped  l:condenar carded u34 day 1 (s324) instead of u32 day 1; still known from s304
+  swapped  l:nave carded u37 day 8 (s361) instead of u32 day 4; still known from s307
+  swapped  l:nieve carded u48 day 8 (s471) instead of u25 day 6; still known from s239
+  swapped  l:sentado carded u33 day 3 (s316) instead of u33 day 2; still known from s315
+  swapped  l:sombrero carded u56 day 4 (s547) instead of u33 day 3; still known from s316
+  swapped  l:disculparse carded u44 day 4 (s427) instead of u30 day 7; still known from s290
+  swapped  l:ratón carded u48 day 3 (s466) instead of u25 day 6; still known from s239
+  swapped  l:margarita carded u53 day 8 (s521) instead of u25 day 6; still known from s239
+  swapped  l:puro carded u49 day 7 (s480) instead of u33 day 5; still known from s318
+  swapped  l:locura carded u38 day 1 (s364) instead of u33 day 4; still known from s317
+  swapped  l:sucio carded u49 day 7 (s480) instead of u33 day 3; still known from s316
+  swapped  l:primavera carded u44 day 5 (s428) instead of u25 day 6; still known from s239
+  swapped  l:lastimar carded u36 day 7 (s350) instead of u34 day 5; still known from s328
+  swapped  l:muela carded u50 day 3 (s486) instead of u34 day 3; still known from s326
+  swapped  l:garganta carded u42 day 3 (s406) instead of u34 day 3; still known from s326
+  swapped  l:sospechoso carded u37 day 7 (s360) instead of u36 day 5; still known from s348
+  swapped  l:roto carded u49 day 3 (s476) instead of u36 day 4; still known from s347
+  swapped  l:cordero carded u49 day 1 (s474) instead of u36 day 3; still known from s346
+  swapped  l:enterar carded u50 day 3 (s486) instead of u38 day 5; still known from s368
+  swapped  l:sincero carded u48 day 4 (s467) instead of u42 day 2; still known from s405
+  swapped  l:acostar carded u55 day 9 (s542) instead of u40 day 8; still known from s391
+  swapped  l:adivinar carded u46 day 3 (s446) instead of u43 day 9; still known from s422
+  swapped  l:pedazo carded u56 day 8 (s551) instead of u44 day 1; still known from s424
+  swapped  l:impresión carded u53 day 1 (s514) instead of u44 day 5; still known from s428
+  swapped  l:vistazo carded u53 day 4 (s517) instead of u44 day 4; still known from s427
+  swapped  l:barra carded u44 day 9 (s432) instead of u44 day 4; still known from s427
+  swapped  l:sonrisa carded u56 day 3 (s546) instead of u44 day 2; still known from s425
+  swapped  l:valiente carded u58 day 2 (s565) instead of u44 day 9; still known from s432
+  swapped  l:desviar carded u58 day 9 (s572) instead of u45 day 3; still known from s436
+  swapped  l:salvaje carded u47 day 4 (s457) instead of u45 day 9; still known from s442
+  swapped  l:dormido carded u50 day 2 (s485) instead of u46 day 2; still known from s445
+  swapped  l:cuerda carded u53 day 5 (s518) instead of u46 day 4; still known from s447
+  swapped  l:escritorio carded u48 day 3 (s466) instead of u47 day 5; still known from s458
+  swapped  l:bote carded u54 day 8 (s531) instead of u48 day 2; still known from s465
+  swapped  l:borracho carded u50 day 1 (s484) instead of u47 day 8; still known from s461
+  swapped  l:bromear carded u54 day 5 (s528) instead of u45 day 8; still known from s441
+  swapped  l:fabricar carded u50 day 3 (s486) instead of u48 day 5; still known from s468
+  swapped  l:esclavo carded u53 day 5 (s518) instead of u48 day 4; still known from s467
+  swapped  l:locutor carded u60 day 5 (s588) instead of u45 day 3; still known from s436
+  swapped  l:pesca carded u50 day 8 (s491) instead of u49 day 3; still known from s476
+  swapped  l:pesadilla carded u56 day 1 (s544) instead of u50 day 5; still known from s488
+  swapped  l:márquetin carded u54 day 5 (s528) instead of u49 day 8; still known from s481
+  swapped  l:relajarse carded u53 day 5 (s518) instead of u51 day 5; still known from s498
+  swapped  l:adaptar carded u60 day 8 (s591) instead of u51 day 5; still known from s498
+  swapped  l:vestuario carded u60 day 1 (s584) instead of u52 day 5; still known from s508
+  swapped  l:confundir carded u56 day 5 (s548) instead of u52 day 8; still known from s511
+  swapped  l:tubo carded u55 day 5 (s538) instead of u52 day 8; still known from s511
+  swapped  l:desencadenar carded u54 day 1 (s524) instead of u52 day 4; still known from s507
+  swapped  l:cañón carded u54 day 5 (s528) instead of u53 day 5; still known from s518
+  swapped  l:callado carded u60 day 1 (s584) instead of u54 day 5; still known from s528
+  swapped  l:ajustar carded u60 day 8 (s591) instead of u55 day 5; still known from s538
+  swapped  l:célula carded u57 day 8 (s561) instead of u56 day 1; still known from s544
+  swapped  l:emocionante carded u59 day 1 (s574) instead of u55 day 9; still known from s542
+  swapped  l:monja carded u58 day 4 (s567) instead of u56 day 5; still known from s548
+  swapped  l:ternura carded u59 day 9 (s582) instead of u57 day 5; still known from s558
+  swapped  l:sinfonía carded u60 day 8 (s591) instead of u60 day 5; still known from s588
+  timing.txt lines with no lexeme in the graph: loro u01, apuesta u03, pacto u03
+wrote 413 priorities and the units' lexemes arrays

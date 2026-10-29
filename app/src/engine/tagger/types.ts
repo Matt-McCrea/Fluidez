@@ -68,10 +68,14 @@ export interface TagResult {
 }
 
 export interface ChunkSpec { id: NodeId; es: string }
+/** A pattern node: matched by its `match` surface patterns, else by its id's words (lemma or form). */
+export interface PatternSpec { id: NodeId; match?: readonly string[] }
 
 export interface TagOptions {
   /** Chunk nodes whose Spanish, when found verbatim, is tagged as the chunk. */
   chunks?: readonly ChunkSpec[];
+  /** Pattern nodes the tagger looks for (heuristic: see index.ts patternPass). */
+  patterns?: readonly PatternSpec[];
   /** Graph node ids that exist: feature keys resolve to the most specific
    *  mapped id present in this set. */
   graphIds?: ReadonlySet<string>;

@@ -1,7 +1,7 @@
 // Per-file checks: accent, dialect, verb coverage, legality, typeability,
 // computed requires, reading coverage, structure.
 import type { BankSentence, Scene, StoryChapter, TeachingScript, WritingTask } from '../../src/content/schema';
-import { accentLint, dialectLint, splitSentences, tagSentence, lemmatize, lexEntry, closedClass, type TagResult } from '../../src/engine/tagger';
+import { accentLint, dialectLint, splitSentences, tagSentence, lemmatize, lexEntry, closedClass, DEFAULT_NODE_MAP, detectablePatterns, type TagResult } from '../../src/engine/tagger';
 import { answerForms, checkWriting, type Constraint } from '../../src/check';
 import { extractSpanish, type EsString } from './extract';
 import { clip, type Finding } from './findings';
@@ -75,15 +75,34 @@ export function positionOf(st: RunState, f: Loaded, item: Record<string, unknown
   }
 }
 
-export function legality(st: RunState, r: TagResult, pos: Position, file: string, path: string, text: string): void {
+/** Token spans covered by chunks and patterns taught by `at`: what is inside is known as part of the whole. */
+export function taughtSpans(st: RunState, r: TagResult, at: number): Array<[number, number]> {
+  return r.features.filter((x) => (x.key.startsWith('chunk.') || x.key.startsWith('pattern.')) && (st.cur.taughtAt.get(x.node!) ?? Infinity) <= at).map((x) => x.span);
+}
+
+/** requires ⊆ taught by pos. Grammar is never rescued; with lexemes: false (story chapters)
+ *  words are left to the reading-coverage check, where a gloss can rescue them. Patterns are
+ *  detected heuristically, so a pattern before its day is a warning. */
+export function legality(st: RunState, r: TagResult, pos: Position, file: string, path: string, text: string, o: { lexemes?: boolean } = {}): void {
   const cur = st.cur;
-  const chunkSpans = r.features.filter((x) => x.key.startsWith('chunk.') && (cur.taughtAt.get(x.node!) ?? Infinity) <= pos.at).map((x) => x.span);
+  const chunkSpans = taughtSpans(st, r, pos.at);
   const inChunk = (sp: [number, number]) => chunkSpans.some(([a, b]) => sp[0] >= a && sp[1] <= b);
   const bad: string[] = [];
+  const early: string[] = [];
   const seen = new Set<string>();
   for (const ft of r.features) {
     const n = ft.node;
     if (!n || seen.has(n) || ft.key.startsWith('chunk.')) continue;   // chunks only ever exempt
+    if (o.lexemes === false && n.startsWith('l:')) {
+      if (!cur.graphIds.has(n) && cur.hasLexemes) st.missingLex.set(n, (st.missingLex.get(n) ?? 0) + 1);
+      continue;
+    }
+    if (ft.key.startsWith('pattern.')) {
+      if (inChunk(ft.span)) continue;                                   // "Me da igual" is c:me-da-igual's
+      const t = cur.taughtAt.get(n);
+      if (t !== undefined && t > pos.at && !pos.allow?.has(n)) { seen.add(n); early.push(`${n} "${ft.text}" (taught ${cur.taughtWhere.get(n)})`); }
+      continue;
+    }
     if (!cur.graphIds.has(n)) {
       if (n.startsWith('l:')) { if (cur.hasLexemes) st.missingLex.set(n, (st.missingLex.get(n) ?? 0) + 1); }
       else if (cur.graphIds.size) st.unmapped.set(n, (st.unmapped.get(n) ?? 0) + 1);
@@ -101,6 +120,13 @@ export function legality(st: RunState, r: TagResult, pos: Position, file: string
       severity: 'error', check: 'legality', file, path,
       problem: `"${clip(text, 60)}" uses what is not taught by ${pos.label}: ${bad.join('; ')}`,
       fix: 'rephrase with taught grammar and words (or teach the chunk first)',
+    });
+  }
+  if (early.length) {
+    st.findings.push({
+      severity: st.strict ? 'error' : 'warning', check: 'legality', file, path,
+      problem: `"${clip(text, 60)}" looks like a pattern not taught by ${pos.label}: ${early.join('; ')}`,
+      fix: 'rephrase, or ignore if the pattern match is a coincidence',
     });
   }
 }
@@ -182,7 +208,8 @@ export function checkStrings(st: RunState, f: Loaded): void {
         if (!recognition) for (const d of dialectLint(sent, r.tokens)) st.findings.push({ severity: d.severity, check: 'dialect', file: f.rel, path: where, problem: d.problem, fix: d.fix });
         verbCoverage(st, r, f.rel, where, f.kind === 'graph' ? 'warning' : 'error');
       }
-      if (pos) legality(st, r, pos, f.rel, where, sent);
+      // a gloss entry is the help, not the text: never gated for legality
+      if (pos && !/^gloss\[/.test(s.path)) legality(st, r, pos, f.rel, where, sent, { lexemes: f.kind !== 'story' });
       if (r.confidence === 'low' && (isBankEs || st.strict)) {
         st.findings.push({ severity: st.strict ? 'error' : 'warning', check: 'tagger', file: f.rel, path: where, problem: `low-confidence tag: ${r.lowReasons.slice(0, 4).join('; ')}`, fix: 'use words in the lexicon and a licensed subjunctive, or add the word to the graph' });
       }
@@ -213,12 +240,75 @@ export function checkBank(st: RunState, f: Loaded, fix: boolean): unknown[] | nu
     }
     for (const t of b.targets) {
       if (!want.includes(t)) {
-        const sev = st.cur.graphIds.has(t) || !st.cur.graphIds.size ? 'error' : 'warning';
+        // targets are author intent: a pattern or contrast (matched heuristically, or never), or a
+        // node no tagger feature maps to (g:sounds-letters), only warns
+        const sev = t.startsWith('p:') || t.startsWith('x:') || !producible(st, t) ? 'warning' : st.cur.graphIds.has(t) || !st.cur.graphIds.size ? 'error' : 'warning';
         st.findings.push({ severity: sev, check: 'requires', file: f.rel, path: `[${i}].targets`, problem: `target ${t} is not in what "${clip(b.es, 50)}" actually contains (${want.filter((x) => !x.startsWith('l:')).join(' ') || 'no grammar nodes'})`, fix: 'rewrite the sentence so it uses the target, or fix targets' });
       }
     }
   });
   return changed ? raw : null;
+}
+
+let PRODUCIBLE: { cur: Curriculum; set: Set<string> } | null = null;
+/** Can the tagger ever put this node in requires? */
+function producible(st: RunState, id: string): boolean {
+  if (id.startsWith('l:') || id.startsWith('c:')) return true;
+  if (PRODUCIBLE?.cur !== st.cur) {
+    const set = new Set<string>([...Object.values(DEFAULT_NODE_MAP), ...Object.values(st.cur.featureMap ?? {})].filter((x): x is string => !!x));
+    for (const p of detectablePatterns(st.cur.tagOpts.patterns ?? [])) set.add(p);
+    PRODUCIBLE = { cur: st.cur, set };
+  }
+  return PRODUCIBLE.set.has(id);
+}
+
+/* ---- story, scene, writing: requires (and a chapter's lexemes) are computed ---- */
+/** The tagger's requires over a file's own Spanish (chapter text, scene npc lines and
+ *  accepts, writing models). Chapters split grammar/chunks (requires) from words (lexemes);
+ *  scenes and writing tasks keep words in requires, as bank sentences do. */
+export function computedRequires(st: RunState, f: Loaded): Array<{ index: number | null; requires: string[]; lexemes?: string[] }> {
+  const union = (texts: string[]) => { const r = new Set<string>(); for (const t of texts) for (const sent of splitSentences(t)) for (const x of tagCached(st, sent).requires) r.add(x); return [...r].sort(); };
+  if (f.kind === 'story') {
+    const c = f.data as StoryChapter;
+    const all = union([c.text]);
+    return [{ index: null, requires: all.filter((x) => !x.startsWith('l:')), lexemes: all.filter((x) => x.startsWith('l:')) }];
+  }
+  if (f.kind === 'scene') {
+    const sc = f.data as Scene;
+    return [{ index: null, requires: union(sc.turns.flatMap((t) => [t.npc, ...t.accept])) }];
+  }
+  if (f.kind === 'writing') return (f.data as WritingTask[]).map((w, i) => ({ index: i, requires: union([w.model]) }));
+  return [];
+}
+
+/** Check (or with fix, write) the computed requires/lexemes of a chapter, scene or writing file. */
+export function checkComputed(st: RunState, f: Loaded, fix: boolean): unknown | null {
+  const raw = f.raw as Record<string, unknown> | Array<Record<string, unknown>>;
+  let out: unknown = raw;
+  let changed = false;
+  for (const want of computedRequires(st, f)) {
+    const row = (want.index === null ? raw : (raw as Array<Record<string, unknown>>)[want.index]) as Record<string, unknown>;
+    const at = want.index === null ? '' : `[${want.index}].`;
+    const fields: Array<[string, string[]]> = [['requires', want.requires], ...(want.lexemes ? [['lexemes', want.lexemes] as [string, string[]]] : [])];
+    let next = row;
+    for (const [k, v] of fields) {
+      const have = Array.isArray(row[k]) ? [...(row[k] as string[])].sort() : [];
+      if (have.join('|') === v.join('|')) continue;
+      if (fix) { next = withField(next, k, v); changed = true; continue; }
+      const missing = v.filter((x) => !have.includes(x)), extra = have.filter((x) => !v.includes(x));
+      st.findings.push({ severity: 'error', check: 'requires', file: f.rel, path: at + k, problem: `${k} is computed by the tagger and differs (${[missing.length ? '+' + missing.slice(0, 8).join(' +') + (missing.length > 8 ? ` …+${missing.length - 8}` : '') : '', extra.length ? '-' + extra.slice(0, 8).join(' -') : ''].filter(Boolean).join(' ')})`, fix: `run: npm run gate -- --fix ${f.rel}` });
+    }
+    if (next !== row) {
+      if (want.index === null) out = next;
+      else (raw as Array<Record<string, unknown>>)[want.index] = next;
+    }
+  }
+  return changed ? out : null;
+}
+
+function withField(row: Record<string, unknown>, key: string, v: string[]): Record<string, unknown> {
+  if (key in row) return Object.fromEntries(Object.entries(row).map(([k, x]) => [k, k === key ? v : x]));
+  return { ...row, [key]: v };
 }
 
 function withRequires(row: Record<string, unknown>, req: string[]): Record<string, unknown> {
@@ -291,8 +381,11 @@ export function readingCoverage(st: RunState, f: Loaded): void {
   for (const sent of splitSentences(c.text)) {
     const r = tagCached(st, sent);
     words += r.tokens.filter((w) => !w.punct && w.pos !== 'propn' && w.pos !== 'num').length;
+    // words inside a chunk or pattern taught by then are known as part of it (Me llamo, ¿Cómo estás?)
+    const spans = taughtSpans(st, r, pos.at);
     for (const ft of r.features) {
       if (!ft.node?.startsWith('l:')) continue;
+      if (spans.some(([a, b]) => ft.span[0] >= a && ft.span[1] <= b)) continue;
       const t = st.cur.taughtAt.get(ft.node);
       if (t !== undefined && t <= pos.at) continue;
       const lemma = ft.node.slice(2);

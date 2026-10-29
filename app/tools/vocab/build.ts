@@ -5,6 +5,11 @@
  *   npx tsx tools/vocab/build.ts            build and write everything
  *   npx tsx tools/vocab/build.ts --dry      build, print the summary, write only tools/vocab/out/
  *
+ * A FRESH BUILD RE-PICKS AND RE-PLACES EVERYTHING. Once content has been written
+ * against lexemes.json, do not rebuild: use tools/vocab/retime.ts, which applies
+ * the same timing rules (chunk/pattern words, curated/timing.txt, numbers) to the
+ * published inventory in place, only ever moving words earlier.
+ *
  * Writes content/graph/lexemes.json, the `lexemes` arrays of
  * content/units/uNN.json (nothing else in those files), and
  * tools/vocab/out/{inventory.tsv,placement.json} for the report.
@@ -104,6 +109,17 @@ for (const line of readFileSync(join(HERE, 'curated', 'units.tsv'), 'utf8').spli
   seeds.set(u, ws.filter((w) => !w.includes('_') && w === w.toLowerCase()));
 }
 const multiwordSeeds = [...readFileSync(join(HERE, 'curated', 'units.tsv'), 'utf8').matchAll(/\t([^\t\n]*_[^\t\n]*)/g)].map((m) => m[1].replace(/_/g, ' '));
+/* Timing overrides (curated/timing.txt): "<lemma> <TAB> <uNN | sNNN> <TAB> why". A word listed
+ * with a unit is needed BY that unit (its theme or its story needs it): a taught-tier word goes on
+ * a day of that unit (or earlier), else it is receptive from the unit's start. A word listed with
+ * a session (s7) is known from that session at the latest: closed words take it as their priority,
+ * open words are placed on or before it. */
+const timing = new Map<string, string>();
+for (const line of readFileSync(join(HERE, 'curated', 'timing.txt'), 'utf8').split('\n')) {
+  if (!line.trim() || line.startsWith('#')) continue;
+  const [lemma, when] = line.split('\t').map((x) => x.trim());
+  if (lemma && when) timing.set(lemma, when);
+}
 
 const dict = dictionary();
 const deck = oldDeck();
@@ -295,6 +311,9 @@ const naturalBand = (c: Cand): Band => {
 /* ---------------------------------------------------------------- need sessions (chunks, patterns, grammar examples) */
 const dayOfNode = new Map<string, number>();
 units.forEach((u) => u.days.forEach((d, i) => { for (const id of [...d.focus, ...d.chunks]) if (!dayOfNode.has(id)) dayOfNode.set(id, sessionOf.get(`${u.id}:${i}`)!); }));
+// the tagger lemmatises the way the gate does once it knows the candidates (the gate registers the graph's lexemes)
+LX.registerLexemes([...cands.values()].map((c) => ({ lemma: c.lemma, pos: c.pos, gender: c.gender })));
+const setNeed = (c: Cand, at: number, where: string) => { if (c.need === undefined || at < c.need) { c.need = at; c.needWhere = where; } };
 // A node needs the words its id names (c:tengo-anos needs tener and año; c:trabajo-en needs trabajar):
 // the words of its Spanish text whose unaccented form is in the id. Example sentences around them do not count.
 for (const n of graph) {
@@ -313,10 +332,35 @@ for (const n of graph) {
       const lemma = FUNCTION_LEMMA[w.w.toLowerCase()] ?? (w.lemma || w.w).toLowerCase();
       const c = cands.get('l:' + lemma.replace(/se$/, '')) ?? cands.get('l:' + lemma);
       if (!c) continue;
-      if (c.need === undefined || at < c.need) { c.need = at; c.needWhere = n.id; }
+      setNeed(c, at, n.id);
+    }
+    // Chunks and patterns are taught with every word of their Spanish: each lexeme in it is needed
+    // by the node's day (c:me-gusta needs café; p:tener-hambre needs hambre, sed, frío, sueño).
+    if (n.kind !== 'chunk' && n.kind !== 'pattern') continue;
+    for (const f of r.features) {
+      if (!f.key.startsWith('lex.')) continue;
+      const lemma = f.key.slice(4);
+      const c = cands.get('l:' + lemma);
+      if (c) setNeed(c, at, n.id);
     }
   }
+  for (const m of n.match ?? []) {
+    if (n.kind !== 'chunk' && n.kind !== 'pattern') break;
+    let r;
+    try { r = tagSentence(m); } catch { continue; }
+    for (const f of r.features) { const c = f.key.startsWith('lex.') ? cands.get('l:' + f.key.slice(4)) : undefined; if (c) setNeed(c, at, n.id); }
+  }
 }
+// curated timing: a unit or a session the word is needed by
+const unitLast = (id: string) => { const u = units.find((x) => x.id === id); return u ? sessionOf.get(`${u.id}:${u.days.length - 1}`)! : undefined; };
+const timingMissing: string[] = [];
+for (const [lemma, when] of timing) {
+  const c = cands.get('l:' + lemma);
+  const at = /^u\d\d$/.test(when) ? unitLast(when) : /^s\d+$/.test(when) ? Number(when.slice(1)) : undefined;
+  if (!c || at === undefined) { timingMissing.push(`${lemma} ${when}`); continue; }
+  setNeed(c, at, 'timing:' + when);
+}
+if (timingMissing.length) console.log('timing.txt entries not applied (no such candidate or unit):', timingMissing.join(', '));
 
 /* ---------------------------------------------------------------- placement */
 interface DaySlot { unit: Unit; di: number; type: string; cap: number; session: number; ids: string[] }
@@ -333,7 +377,7 @@ const eligibleTaught = (c: Cand) => !c.closed && !c.tier && c.pos !== 'x' && c.p
 /** A band floor (matar: B1) moves a word into its band's range instead of to the front of it. */
 const effRank = (c: Cand) => { const r = c.contentRank ?? 1e9; if (!c.floor || bandIdx(c.floor) === 0) return r; const prev = NATURAL[bandIdx(c.floor) - 1][1]; return r <= prev ? prev + r : r; };
 const byRank = (a: Cand, b: Cand) => effRank(a) - effRank(b) || a.id.localeCompare(b.id);
-const report = { needPlacedLate: [] as string[], needPlacedOnTime: 0 };
+const report = { needPlacedLate: [] as string[], needPlacedOnTime: 0, needReceptive: [] as string[] };
 
 // the general stream: frequency order, non-cognates first-class (cognates from the top 400 still go in)
 const stream = [...cands.values()].filter((c) => eligibleTaught(c) && c.contentRank && (!c.cognate || c.contentRank <= 400)).sort(byRank);
@@ -358,7 +402,7 @@ for (const u of units) {
   const first = ss[0].session, last = ss[ss.length - 1].session;
   // 1. words this unit's chunks/patterns/grammar examples need, on or before their day
   const needs = [...cands.values()].filter((c) => eligibleTaught(c) && c.need !== undefined && c.need >= first && c.need <= last
-    && (c.needWhere!.startsWith('c:') || bandIdx(naturalBand(c)) <= bandIdx(band) || c.seedUnits.includes(u.id) || (c.deckBand && bandIdx(c.deckBand) <= bandIdx(band))))
+    && (/^(c:|p:|timing:)/.test(c.needWhere!) || bandIdx(naturalBand(c)) <= bandIdx(band) || c.seedUnits.includes(u.id) || (c.deckBand && bandIdx(c.deckBand) <= bandIdx(band))))
     .sort((a, b) => a.need! - b.need! || byRank(a, b));
   for (const c of needs) {
     const onOrBefore = ss.filter((s) => s.session <= c.need! && free(s) > 0 && s.type !== 'input');
@@ -368,6 +412,14 @@ for (const u of units) {
     // earlier units of the same band with room (the word arrives before the chunk)
     const earlier = slots.filter((s) => s.session < first && s.unit.band === band && free(s) > 0 && s.type !== 'input').pop();
     if (earlier) { place(c, earlier); report.needPlacedOnTime++; continue; }
+    // no card slot in time: a chunk's, pattern's or curated word is still known from the day it is
+    // needed (the node teaches it); it is receptive from then, never later than the node
+    if (/^(c:|p:|timing:)/.test(c.needWhere!)) {
+      c.tier = 'receptive'; c.unit = u.id; c.session = c.need!;
+      c.note = `receptive: needed by ${c.needWhere!.replace(/^timing:/, 'the unit theme, ')} (s${c.need}); no card slot free in time`;
+      report.needReceptive.push(`${c.id} s${c.need} ${c.needWhere}`);
+      continue;
+    }
     const later = ss.find((s) => s.session > c.need! && free(s) > 0 && s.type !== 'input');
     if (later) { place(c, later); report.needPlacedLate.push(`${c.id} needed s${c.need} by ${c.needWhere}, taught s${later.session}`); }
   }
@@ -403,9 +455,9 @@ for (const u of units) {
 
 /* ---------------------------------------------------------------- closed tier */
 const NUMBER_UNIT = (l: string): string | null => {
-  if (/^(uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|trece|catorce|quince|dieciséis|diecisiete|dieciocho|diecinueve|veinte)$/.test(l)) return 'u01';
-  if (/^(veinti.*|treinta|cuarenta|cincuenta|sesenta|setenta|ochenta|noventa|cien)$/.test(l)) return 'u05';
-  if (/^(doscientos|trescientos|quinientos|mil|millón)$/.test(l)) return 'u16';
+  // 0–100 and mil from the first days: prices in a Bogotá café are thousands of pesos (un tinto, dos mil)
+  if (/^(cero|uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|trece|catorce|quince|dieciséis|diecisiete|dieciocho|diecinueve|veinte|veinti.*|treinta|cuarenta|cincuenta|sesenta|setenta|ochenta|noventa|cien|ciento|mil)$/.test(l)) return 'u01';
+  if (/^(doscientos|trescientos|cuatrocientos|quinientos|seiscientos|setecientos|ochocientos|novecientos|millón)$/.test(l)) return 'u03';
   if (/^(primero|segundo|tercero|cuarto|quinto|último)$/.test(l)) return 'u09';
   return null;
 };
@@ -424,9 +476,13 @@ for (const c of cands.values()) {
   // closed words: the first chunk / pattern / grammar example that uses them, else frequency
   const firstUse = Math.min(c.need ?? Infinity, c.seen ?? Infinity);
   c.session = gnode ? gnode.priority : num ? firstInput(units.find((u) => u.id === num)!) : Math.min(firstUse, bandStart.get(byFreq)!);
+  // a grammar verb or number is never later than a chunk or pattern that uses it, nor than its curated timing
+  if (c.need !== undefined && c.need < c.session && !VARIETY[c.lemma]) c.session = c.need;
   if (firstUse < Infinity && firstUse === c.session) { c.need = firstUse; c.needWhere = c.seen === firstUse ? c.seenWhere : c.needWhere; }
   if (VARIETY[c.lemma] && gnode) c.session = gnode.priority;
-  c.note = gnode ? `closed: taught by ${gnode.id}` : num ? 'closed: number, taught with the unit theme' : c.need === c.session ? `closed: first used in ${c.needWhere}` : 'closed: grammar word, placed by frequency';
+  c.note = c.need === c.session && c.needWhere?.startsWith('timing:') ? `closed: needed by ${c.needWhere.slice(7)} (curated timing)`
+    : gnode && c.session === gnode.priority ? `closed: taught by ${gnode.id}` : num && !(c.need === c.session) ? 'closed: number, taught with the unit theme'
+    : c.need === c.session ? `closed: first used in ${c.needWhere}` : 'closed: grammar word, placed by frequency';
 }
 
 /* ---------------------------------------------------------------- receptive tier */
@@ -501,11 +557,11 @@ console.log('session check: graph nodes scheduled before their priority:', sessi
 console.log('per band:', JSON.stringify(perBand));
 let run = 0;
 for (const b of BANDS) { const t = perBand[b]; run += t.taught + t.closed + t.receptive; console.log(`  ${b}: taught ${t.taught}, closed ${t.closed}, receptive ${t.receptive}; cumulative ${run} (target ${CUM_TARGET[b]})`); }
-console.log('candidates', cands.size, 'final', final.length, 'needs on time', report.needPlacedOnTime, 'late', report.needPlacedLate.length, 'seed missing', seedMissing.length);
+console.log('candidates', cands.size, 'final', final.length, 'needs on time', report.needPlacedOnTime, 'receptive at need', report.needReceptive.length, 'late', report.needPlacedLate.length, 'seed missing', seedMissing.length);
 for (const s of slots) if (s.ids.length > s.cap) throw new Error('over cap ' + s.unit.id + ':' + s.di);
 
 writeFileSync(join(OUT, 'placement.json'), JSON.stringify({
-  perBand, late: report.needPlacedLate, seedMissing, multiwordSeeds, sessionMismatch,
+  perBand, late: report.needPlacedLate, needReceptive: report.needReceptive, timingMissing, seedMissing, multiwordSeeds, sessionMismatch,
   units: units.map((u) => ({ id: u.id, band: u.band, days: unitSlots.get(u.id)!.map((s) => ({ type: s.type, session: s.session, cap: s.cap, ids: s.ids })) })),
   receptiveByUnit: Object.fromEntries(units.map((u) => [u.id, final.filter((c) => c.tier === 'receptive' && c.unit === u.id).map((c) => c.id)])),
 }, null, 1));

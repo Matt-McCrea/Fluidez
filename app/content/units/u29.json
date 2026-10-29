@@ -34,7 +34,7 @@
    "chunks": [],
    "lexemes": [
     "l:besar",
-    "l:felicidad",
+    "l:nieta",
     "l:charlar"
    ]
   },
@@ -49,9 +49,9 @@
     "l:discusión",
     "l:rumor",
     "l:chisme",
-    "l:mentira",
+    "l:mosca",
     "l:falso",
-    "l:probable",
+    "l:excursión",
     "l:imposible",
     "l:duda",
     "l:desacuerdo",
@@ -71,7 +71,7 @@
    "lexemes": [
     "l:escenario",
     "l:prueba",
-    "l:callar",
+    "l:costo",
     "l:puente",
     "l:compromiso"
    ],
@@ -90,7 +90,7 @@
    "lexemes": [
     "l:seguramente",
     "l:debajo",
-    "l:ocultar"
+    "l:proyecto"
    ]
   },
   {

@@ -205,6 +205,8 @@ export const DEFAULT_NODE_MAP: Readonly<Record<string, NodeId | null>> = {
   // ---- noun phrase ----
   'np.article': 'g:gender-articles',
   'np.possessive': 'g:possessives',
+  // np.*.basic (mi, este, esto, muy, mucho, algo) resolve to the same nodes for now; a curriculum
+  // pass decides whether the everyday forms get their own (earlier) node — map them here then
   'np.possessive.stressed': 'g:possessives-stressed',
   'np.demonstrative': 'g:demonstratives',
   'np.indefinite': 'g:indefinites',
@@ -265,6 +267,7 @@ function ancestors(key: string): string[] {
 export function resolveNode(key: string, opts: Pick<TagOptions, 'graphIds' | 'featureMap'> = {}): NodeId | null {
   if (key.startsWith('lex.')) return 'l:' + key.slice(4);
   if (key.startsWith('chunk.')) return key.slice(6);
+  if (key.startsWith('pattern.')) return key.slice(8);
   const map = (k: string): NodeId | null | undefined => {
     if (opts.featureMap && k in opts.featureMap) return opts.featureMap[k];
     return k in DEFAULT_NODE_MAP ? DEFAULT_NODE_MAP[k] : undefined;

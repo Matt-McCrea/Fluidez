@@ -59,9 +59,9 @@
     "l:revelar",
     "l:buscador",
     "l:emisora",
-    "l:desviar",
+    "l:sede",
     "l:suplemento",
-    "l:locutor"
+    "l:fachada"
    ],
    "chapter": "ch141"
   },
@@ -76,7 +76,7 @@
     "l:acudir",
     "l:medir",
     "l:cola",
-    "l:motivo"
+    "l:embarazo"
    ],
    "chapter": "ch142"
   },
@@ -130,7 +130,7 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:bromear",
+    "l:discreto",
     "l:valioso",
     "l:alquilar",
     "l:milagro",
@@ -152,7 +152,7 @@
    "lexemes": [
     "l:producir",
     "l:torre",
-    "l:salvaje"
+    "l:cantante"
    ],
    "scene": "sc-u45-b"
   },

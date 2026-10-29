@@ -111,11 +111,11 @@
     "l:nieto",
     "l:pariente",
     "l:cocinero",
-    "l:sobrino",
+    "l:pedido",
     "l:sobrina",
     "l:taxista",
-    "l:nieta",
-    "l:suegra"
+    "l:felicidad",
+    "l:divertirse"
    ],
    "chapter": "ch061"
   },
@@ -145,7 +145,7 @@
    "lexemes": [
     "l:guardar",
     "l:cuenta#bill",
-    "l:preocuparse"
+    "l:pájaro"
    ]
   },
   {

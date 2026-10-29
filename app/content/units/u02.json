@@ -40,7 +40,7 @@
     "c:como-se-escribe"
    ],
    "lexemes": [
-    "l:bien",
+    "l:llamar",
     "l:escribir",
     "l:significar",
     "l:hospital"
@@ -76,9 +76,9 @@
     "c:quiubo"
    ],
    "lexemes": [
-    "l:mal",
-    "l:malo",
-    "l:don",
+    "l:abrir",
+    "l:miedo",
+    "l:libro",
     "l:contento"
    ]
   },
@@ -93,7 +93,7 @@
    "lexemes": [
     "l:oficina",
     "l:estudiar",
-    "l:hablar",
+    "l:vivir",
     "l:leer",
     "l:llegar",
     "l:empezar",
@@ -121,8 +121,8 @@
     "l:tranquilo",
     "l:aburrido",
     "l:nervioso",
-    "l:número",
-    "l:calle"
+    "l:siempre",
+    "l:hora"
    ]
   },
   {

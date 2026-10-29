@@ -96,7 +96,7 @@ describe('tense and verb class', () => {
     { es: 'Puedo ayudarte.', has: ['tense.presente.stem-ue', 'peri.poder', 'clitic.enclitic.inf'] },
     { es: 'Pido la cuenta.', has: ['tense.presente.stem-i'] },
     { es: 'Tengo dos hermanos.', has: ['tense.presente.irregular-yo'] },
-    { es: 'Conozco a tu hermana.', has: ['tense.presente.irregular-yo', 'np.possessive'] },
+    { es: 'Conozco a tu hermana.', has: ['tense.presente.irregular-yo', 'np.possessive.basic'] },
     { es: 'Soy de Toronto.', has: ['tense.presente.irregular.ser', 'ser.origin'] },
     { es: 'Estoy cansado.', has: ['tense.presente.irregular.estar', 'estar.state'] },
     { es: 'Voy al mercado.', has: ['tense.presente.irregular.ir'] },
@@ -192,7 +192,8 @@ describe('pronouns, reflexives, gustar, se', () => {
     { es: 'Se acuesta tarde.', has: ['reflexive'], not: ['se.impersonal'] },
     { es: 'Me llamo Tomás.', has: ['reflexive'] },
     { es: 'Me llama todos los días.', has: ['clitic.personal'], not: ['reflexive'] },
-    { es: 'Me voy.', has: ['reflexive.meaning'] },
+    { es: 'Me voy.', has: ['lex.irse'], not: ['reflexive*'] },          // irse is a word, not the se-meaning lesson
+    { es: 'Me quedo en casa.', has: ['reflexive.meaning'] },
     { es: 'Se puso rojo.', has: ['reflexive.change'] },
     { es: 'Me gusta el café.', has: ['gustar'], not: ['clitic.*'] },
     { es: 'A mí me encanta bailar.', has: ['gustar.like', 'gustar.doubling'] },

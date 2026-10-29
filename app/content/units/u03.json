@@ -16,7 +16,7 @@
     "c:de-una"
    ],
    "lexemes": [
-    "l:dar",
+    "l:encantar",
     "l:igual",
     "l:chévere",
     "l:cocinar",
@@ -39,7 +39,7 @@
    ],
    "lexemes": [
     "l:lunes",
-    "l:libro",
+    "l:don",
     "l:fiesta",
     "l:plan"
    ]
@@ -68,8 +68,8 @@
    "chunks": [],
    "lexemes": [
     "l:tipo",
-    "l:jugar",
-    "l:preferir",
+    "l:lugar",
+    "l:clase",
     "l:pizza"
    ]
   },
@@ -114,7 +114,7 @@
     "l:pasar",
     "l:ahora",
     "l:dejar",
-    "l:año"
+    "l:trabajar"
    ]
   },
   {

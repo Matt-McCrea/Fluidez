@@ -16,7 +16,7 @@
     "c:no-puedo-mas"
    ],
    "lexemes": [
-    "l:palo",
+    "l:borracho",
     "l:asesor",
     "l:maravilla",
     "l:escalar",
@@ -37,7 +37,7 @@
     "c:te-entiendo-perfectamente"
    ],
    "lexemes": [
-    "l:perfectamente",
+    "l:dormido",
     "l:desgracia",
     "l:ira"
    ]
@@ -63,15 +63,15 @@
     "l:pelea",
     "l:negociación",
     "l:ceder",
-    "l:disculpa",
+    "l:muela",
     "l:límite",
     "l:ofender",
     "l:reproche",
     "l:reprochar",
     "l:malentendido",
-    "l:resolver",
+    "l:enterar",
     "l:calmarse",
-    "l:miembro"
+    "l:fabricar"
    ],
    "chapter": "ch166"
   },
@@ -100,7 +100,7 @@
    "lexemes": [
     "l:repartir",
     "l:participación",
-    "l:pesadilla"
+    "l:moral"
    ]
   },
   {
@@ -142,7 +142,7 @@
     "l:crecimiento",
     "l:rescate",
     "l:hielo",
-    "l:interesado",
+    "l:pesca",
     "l:actriz"
    ],
    "chapter": "ch169"

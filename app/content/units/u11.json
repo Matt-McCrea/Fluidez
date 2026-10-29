@@ -63,10 +63,10 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:pesar",
+    "l:interesar",
     "l:enviar",
     "l:importar",
-    "l:chico"
+    "l:luz"
    ]
   },
   {
@@ -82,7 +82,7 @@
     "l:infancia",
     "l:escuela",
     "l:maestro",
-    "l:clase",
+    "l:preferir",
     "l:recreo",
     "l:juego",
     "l:juguete",
@@ -106,7 +106,7 @@
    "lexemes": [
     "l:propio",
     "l:lado",
-    "l:mostrar",
+    "l:traer",
     "l:derecho",
     "l:resultar",
     "l:sacar"

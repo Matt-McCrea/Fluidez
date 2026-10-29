@@ -33,7 +33,7 @@
    "lexemes": [
     "l:recién",
     "l:caber",
-    "l:sentado"
+    "l:local"
    ]
   },
   {
@@ -48,7 +48,7 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:local",
+    "l:sentado",
     "l:requisito",
     "l:condición",
     "l:inmobiliaria",
@@ -58,9 +58,9 @@
     "l:iluminado",
     "l:ubicado",
     "l:ubicación",
-    "l:sucio",
+    "l:matemáticas",
     "l:techo",
-    "l:sombrero",
+    "l:cuadrado",
     "l:propietario"
    ],
    "chapter": "ch099"
@@ -74,7 +74,7 @@
    "lexemes": [
     "l:salón",
     "l:hoja",
-    "l:locura",
+    "l:madera",
     "l:solucionar",
     "l:curar"
    ],
@@ -91,7 +91,7 @@
    "lexemes": [
     "l:voluntad",
     "l:rodar",
-    "l:puro"
+    "l:matar"
    ]
   },
   {

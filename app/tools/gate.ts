@@ -19,13 +19,18 @@
  *   dialect    vosotros/voseo forms and pronouns, Peninsular lexicon,
  *              perfecto for same-day narration (warning)
  *   verbs      every conjugated-looking word is analysable by the engine
- *   legality   tagger.requires ⊆ nodes taught by this unit/day (chunks taught
- *              as wholes are exempt); skipped until content/units exists
+ *   legality   tagger.requires ⊆ nodes taught by this unit/day (what a taught
+ *              chunk or pattern covers is exempt); story chapters leave words to
+ *              the reading check; gloss entries are not gated; a pattern before
+ *              its day warns; skipped until content/units exists
  *   reading    story chapters: ≤2% unknown unglossed lexemes, ≤5% with gloss
+ *              (words inside a taught chunk or pattern are known)
  *   dupe       exact and near-duplicates (token 4-gram Jaccard) corpus-wide
  *   frames     template-frame overuse per unit (warning; error with --strict)
  *   typeable   every answer/accept has a form a learner can type
- *   requires   bank requires == tagger output (--fix writes it); targets ⊆ requires
+ *   requires   bank requires, and chapter/scene/writing requires (+ chapter lexemes),
+ *              == tagger output (--fix writes them); targets ⊆ requires (patterns,
+ *              contrasts and undetectable nodes only warn)
  *   supply     per-unit counts vs Unit.quota (warning until the band is listed
  *              in content/units/_complete.json; error with --strict)
  *   tagger     low-confidence bank sentences (warning; error with --strict)
@@ -33,7 +38,7 @@
 import { existsSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { checkBank, checkStrings, checkStructure, readingCoverage, type RunState } from './gate/checks';
+import { checkBank, checkComputed, checkStrings, checkStructure, readingCoverage, type RunState } from './gate/checks';
 import { collectItems, frameOveruse, nearDuplicates, supply } from './gate/corpus';
 import { render, type Finding } from './gate/findings';
 import { buildCurriculum, listJson, loadFile, resolveTargets, type Loaded } from './gate/load';
@@ -90,6 +95,10 @@ export function runGate(o: GateOptions = {}): GateResult {
       const rewrite = checkBank(st, f, !!o.fix);
       if (rewrite) { writeFileSync(f.abs, JSON.stringify(rewrite, null, 2) + '\n'); fixed.push(f.rel); }
       (f.data as BankSentence[]).forEach((b) => b.unit && touchedUnits.add(b.unit));
+    }
+    if (f.kind === 'story' || f.kind === 'scene' || f.kind === 'writing') {
+      const rewrite = checkComputed(st, f, !!o.fix);
+      if (rewrite) { writeFileSync(f.abs, JSON.stringify(rewrite, null, 2) + '\n'); fixed.push(f.rel); }
     }
     if (f.kind === 'story') { readingCoverage(st, f); touchedUnits.add((f.data as StoryChapter).unit); }
     if (f.kind === 'scene') touchedUnits.add((f.data as Scene).unit);

@@ -18,7 +18,7 @@
    "lexemes": [
     "l:domicilio",
     "l:apropiado",
-    "l:sabor",
+    "l:oler",
     "l:taller",
     "l:combustible"
    ],
@@ -39,7 +39,7 @@
    "lexemes": [
     "l:remedio",
     "l:comunicar",
-    "l:sincero"
+    "l:prender"
    ]
   },
   {
@@ -73,7 +73,7 @@
     "l:laboratorio",
     "l:informe",
     "l:beca",
-    "l:casco"
+    "l:garganta"
    ],
    "chapter": "ch126"
   },

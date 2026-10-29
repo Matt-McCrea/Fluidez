@@ -535,7 +535,9 @@ function verbPass(ctx: FeatureCtx): void {
       const nx = words[i + 1]?.w;
       const goCmd = (w.w === 've' && (nx === 'a' || nx === 'al') && initial && !pc.clitics.length)
         || (['ven', 'haz', 'pon', 'sal'].includes(w.w) && w.sentStart && !/\?/.test(sentenceText(words, i)));
-      if (tuImp && initial && !pc.clitics.length && !pc.neg && (commandContext(words, i) || goCmd)) {
+      // está / ¿está…? is never a tú command in practice, and a question is no command
+      const cmdOk = bareOf(tuImp?.inf ?? '') !== 'estar' && !/\?/.test(sentenceText(words, i));
+      if (tuImp && cmdOk && initial && !pc.clitics.length && !pc.neg && (commandContext(words, i) || goCmd)) {
         const isGo = w.w === 've';
         emitCommand(isGo ? { ...tuImp, inf: 'ir' } : tuImp, false);
         if (isGo) w.lemma = 'ir';
@@ -655,6 +657,8 @@ function pronounPass(ctx: FeatureCtx): void {
         if (m.pos === 'verb' && m.verb?.length) { person = m.verb.find((a) => a.tense === m.tense)?.person ?? m.verb[0].person; break; }
       }
     }
+    // irme / irte / irnos: the word irse with its own pronoun, no pronoun-position grammar
+    if (pos !== 'cmd' && LEXICAL_PRONOMINAL.has(lemma + 'se') && w.enclitics.length === 1 && ['me', 'te', 'se', 'nos'].includes(w.enclitics[0])) { w.lemma = lemma + 'se'; continue; }
     add(ctx, `clitic.enclitic.${pos}`, i, i, { lemma: w.lemma });
     procesClitics(ctx, w.enclitics, i, i, i, lemma, person, pos);
   }
@@ -667,6 +671,7 @@ function pronounPass(ctx: FeatureCtx): void {
   }
 }
 
+const LEXICAL_PRONOMINAL = S('irse');
 const MEANING_CHANGE = S('irse dormirse quedarse llevarse comerse morirse encontrarse parecerse acordarse despedirse');
 const CHANGE_VERBS = S('ponerse volverse hacerse convertirse');
 function procesClitics(ctx: FeatureCtx, cl: string[], a: number, b: number, v: number, lemma: string, person: string, pos: string): void {
@@ -706,7 +711,8 @@ function procesClitics(ctx: FeatureCtx, cl: string[], a: number, b: number, v: n
   if (reflPron && cl.includes(reflPron)) {
     const r = reflexiveOf(lemma);
     if (r) {
-      add(ctx, MEANING_CHANGE.has(r) ? 'reflexive.meaning' : CHANGE_VERBS.has(r) ? 'reflexive.change' : 'reflexive', a, v, { lemma: r });
+      // irse (me voy, tengo que irme) is a word from week one, not the se-meaning lesson
+      if (!LEXICAL_PRONOMINAL.has(r)) add(ctx, MEANING_CHANGE.has(r) ? 'reflexive.meaning' : CHANGE_VERBS.has(r) ? 'reflexive.change' : 'reflexive', a, v, { lemma: r });
       if (vw.lemma === lemma && pos !== 'inf' && pos !== 'ger') vw.lemma = r;
       rest = cl.filter((c, k) => !(c === reflPron && k === cl.indexOf(reflPron)));
     } else if (reflPron === 'se' && pos === 'proclitic' && cl.length === 1) {
@@ -964,6 +970,9 @@ function miscPass(ctx: FeatureCtx): void {
         if (words[j].pos === 'verb') sawVerb = true;
         else if (sawVerb && NEGATIVES.has(words[j].w) && words[j].w !== 'no') { add(ctx, 'neg.double', i, j); break; }
         if (words[j].punct && words[j].w !== ',') break;
+        // a new coordinated clause: "no trabaja los lunes y Vale tampoco" is no double negative
+        if (['y', 'e', 'o', 'u', 'pero'].includes(words[j].w)) break;
+        if (words[j].w === 'no') break;          // "No, no me gusta nada": the second no carries it
       }
     }
   }
@@ -975,6 +984,11 @@ const POSS_SHORT = S('mi mis tu tus su sus nuestro nuestra nuestros nuestras');
 const POSS_LONG = S('mío mía míos mías tuyo tuya tuyos tuyas suyo suya suyos suyas');
 const DEM = S('este esta estos estas ese esa esos esas aquel aquella aquellos aquellas esto eso aquello');
 const INDEF = S('algo alguien algún alguno alguna algunos algunas ningún ninguno ninguna');
+const POSS_BASIC = S('mi mis tu tus su sus');
+const DEM_BASIC = S('este esta esto eso');
+const QUANT_BASIC = S('muy mucho mucha muchos muchas poco poca pocos pocas');
+/** Lexeme of an interrogative: cuántas > cuánto, quiénes > quién. */
+const WH_LEMMA: Record<string, string> = { quiénes: 'quién', cuáles: 'cuál', cuánta: 'cuánto', cuántos: 'cuánto', cuántas: 'cuánto' };
 const QUANT = S('mucho mucha muchos muchas poco poca pocos pocas bastante bastantes demasiado demasiada demasiados demasiadas');
 const WH = S('qué quién quiénes dónde adónde cuándo cómo cuánto cuánta cuántos cuántas cuál cuáles');
 const TIME_N = S('segundo segundos minuto minutos hora horas día días semana semanas mes meses año años rato tiempo siglo siglos década décadas momento');
@@ -1002,15 +1016,18 @@ function npPass(ctx: FeatureCtx): void {
     const p = words[i - 1];
     const nx = words[i + 1];
     if (ART.has(x) && w.pos === 'det') add(ctx, 'np.article', i, i);
-    else if (POSS_SHORT.has(x) && w.pos === 'poss') add(ctx, 'np.possessive', i, i);
+    // the everyday forms (mi, este, esto, muy, mucho, algo) are words from the first week; the
+    // grammar node is the system (nuestro, ese/aquel, demasiado, algún/ningún): .basic maps to no node
+    else if (POSS_SHORT.has(x) && w.pos === 'poss') add(ctx, POSS_BASIC.has(x) ? 'np.possessive.basic' : 'np.possessive', i, i);
     else if (POSS_LONG.has(x)) add(ctx, 'np.possessive.stressed', i, i);
-    else if (DEM.has(x) && (w.pos === 'dem' || w.pos === 'pron')) add(ctx, 'np.demonstrative', i, i);
-    else if (INDEF.has(x)) add(ctx, 'np.indefinite', i, i);
-    else if (QUANT.has(x) || x === 'muy') add(ctx, 'np.quantifier', i, i);
+    else if (DEM.has(x) && (w.pos === 'dem' || w.pos === 'pron')) add(ctx, DEM_BASIC.has(x) ? 'np.demonstrative.basic' : 'np.demonstrative', i, i);
+    else if (INDEF.has(x)) add(ctx, x === 'algo' || x === 'alguien' ? 'np.indefinite.basic' : 'np.indefinite', i, i);
+    else if (QUANT.has(x) || x === 'muy') add(ctx, QUANT_BASIC.has(x) ? 'np.quantifier.basic' : 'np.quantifier', i, i);
     else if (x === 'cada' || /^cualquiera?$/.test(x)) add(ctx, 'np.cada', i, i);
     else if (x === 'sino') add(ctx, 'conj.sino', i, i);
     else if (TONIC.has(x) || (['él', 'ella', 'ellos', 'ellas', 'usted', 'ustedes', 'nosotros'].includes(x) && p?.pos === 'prep' && p.w !== 'a')) add(ctx, 'pron.prep', p?.pos === 'prep' ? i - 1 : i, i);
     if (WH.has(x)) {
+      add(ctx, 'lex.' + (WH_LEMMA[x] ?? x), i, i, { lemma: WH_LEMMA[x] ?? x });
       const qStart = p && (p.w === '¿' || (p.pos === 'prep' && words[i - 2]?.w === '¿'));
       if (p && p.w === '¡' || (x === 'qué' && p?.w === '¡')) add(ctx, 'excl.que', i, i + 1);
       else if (qStart) add(ctx, p.pos === 'prep' ? 'q.wh.prep' : 'q.wh', p.pos === 'prep' ? i - 1 : i, i);
@@ -1037,7 +1054,7 @@ function npPass(ctx: FeatureCtx): void {
     if (/mente$/.test(x) && x.length > 6 && w.pos !== 'verb') add(ctx, 'adv.mente', i, i);
     // diminutives: tintico, momentico, cafecito, ahorita
     const dim = x.match(/^(.+?)(c?it[oa]s?|c?ic[oa]s?)$/);
-    if (dim && x.length > 5 && !lexEntry(x) && w.pos !== 'verb') {
+    if (dim && x.length > 5 && !lexEntry(x) && w.pos !== 'verb' && !NOT_DIMINUTIVE.has(x.replace(/s$/, '').replace(/a$/, 'o')) && !(w.lemma !== x && lexEntry(w.lemma) && ['adj', 'noun'].includes(w.pos))) {
       const b = dim[1];
       if ([b + 'o', b + 'a', b + 'e', b, b.replace(/qu$/, 'c') + 'o', b.replace(/gu$/, 'g') + 'o'].some((c) => lexEntry(c) || isKnownWord(c))) add(ctx, 'np.diminutive', i, i);
     }
@@ -1077,6 +1094,8 @@ function npPass(ctx: FeatureCtx): void {
     if (x === 'como' && w.pos === 'conj' && (!p || p.punct) && words.slice(i + 1, i + 8).some((y) => y.w === ',')) add(ctx, 'conn.cause', i, i);
   }
 }
+/** -ito/-ita words that are not diminutives (favorita is not a little favour). */
+const NOT_DIMINUTIVE = S('favorito bonito maldito erudito exquisito gratuito infinito mosquito apetito circuito distrito requisito exito éxito cito visito necesito marchito fortuito ito');
 const TONIC = S('mí ti conmigo contigo consigo');
 /** Is token i inside an open ¿…? (a direct question: "¿Y tú qué opinas?") */
 function insideQuestion(words: Word[], i: number): boolean {
@@ -1095,6 +1114,8 @@ function lexemePass(ctx: FeatureCtx): void {
     if (w.pos === 'x' && !w.known) continue;
     if (w.pos === 'adv' && !lexEntry(w.lemma) && !/mente$/.test(w.w)) continue;  // closed-class adverbs
     if (LEXEME_STOP.has(w.lemma)) continue;
+    // don / doña before a name is part of the name: don Hernando needs no word
+    if ((w.w === 'don' || w.w === 'doña') && words[i + 1]?.pos === 'propn') continue;
     if (w.pos === 'verb' && w.lemma === 'haber') continue;
     let lemma = w.lemma;
     if (['verb', 'inf', 'ger', 'part'].includes(w.pos)) lemma = w.lemma;
@@ -1105,7 +1126,11 @@ function lexemePass(ctx: FeatureCtx): void {
 
 /* ---- unknown words ----------------------------------------------------------- */
 function unknownPass(ctx: FeatureCtx): void {
+  let quoted = false;
   for (const w of ctx.words) {
+    // a quoted word is a mention, not Spanish to know: dice «thank you», ¿qué significa «trancón»?
+    if (w.punct && /[«»"“”]/.test(w.w)) { quoted = w.w === '«' || w.w === '“' ? true : w.w === '»' || w.w === '”' ? false : !quoted; continue; }
+    if (quoted) continue;
     if (w.pos !== 'unknown' || w.known) continue;
     const inexact = analyzeToken(w.w).filter((a) => !a.accentExact);
     if (inexact.length) ctx.low.push(`accent? "${w.w}" (engine: ${[...new Set(inexact.map((a) => a.form))].slice(0, 3).join(' / ')})`);

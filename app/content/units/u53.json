@@ -30,7 +30,7 @@
     "l:supuesto",
     "l:presunto",
     "l:afirmación",
-    "l:institución",
+    "l:impresión",
     "l:rendición",
     "l:transparencia",
     "l:entidad",
@@ -80,7 +80,7 @@
    "chunks": [],
    "lexemes": [
     "l:posibilidad",
-    "l:sensación"
+    "l:vistazo"
    ]
   },
   {
@@ -94,16 +94,16 @@
    "chunks": [],
    "lexemes": [
     "l:sentencia",
-    "l:inocente",
-    "l:periodo",
+    "l:cuerda",
+    "l:relajarse",
     "l:estatal",
-    "l:cañón",
+    "l:responsable",
     "l:cooperación",
     "l:calendario",
     "l:comunitario",
     "l:criminal",
     "l:diplomático",
-    "l:bala",
+    "l:esclavo",
     "l:igualdad"
    ],
    "chapter": "ch183"
@@ -144,7 +144,7 @@
    "lexemes": [
     "l:escritura",
     "l:manifestar",
-    "l:pasillo",
+    "l:margarita",
     "l:posesión",
     "l:acostumbrado"
    ],

@@ -17,7 +17,7 @@
    ],
    "lexemes": [
     "l:raíz",
-    "l:pedazo",
+    "l:corto",
     "l:brujo",
     "l:espejo",
     "l:lujo"
@@ -38,7 +38,7 @@
     "c:yo-no-lo-veo-asi"
    ],
    "lexemes": [
-    "l:sonrisa",
+    "l:esencial",
     "l:arrojar",
     "l:secuestrar"
    ]
@@ -64,7 +64,7 @@
     "l:urbano",
     "l:construcción",
     "l:demolición",
-    "l:proyecto",
+    "l:ocultar",
     "l:reclamar",
     "l:concejo",
     "l:licencia",
@@ -81,9 +81,9 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:vaciar",
-    "l:vistazo",
-    "l:barra",
+    "l:disculparse",
+    "l:sensación",
+    "l:coincidir",
     "l:ocasionar",
     "l:dormitorio"
    ],
@@ -99,8 +99,8 @@
    "chunks": [],
    "lexemes": [
     "l:defender",
-    "l:impresión",
-    "l:retrasar"
+    "l:institución",
+    "l:primavera"
    ]
   },
   {
@@ -163,9 +163,9 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:coincidir",
+    "l:barra",
     "l:resistencia",
-    "l:valiente"
+    "l:simple"
    ],
    "scene": "sc-u44-b"
   },

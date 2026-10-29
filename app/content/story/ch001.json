@@ -103,5 +103,35 @@
       ],
       "answer": 0
     }
+  ],
+  "requires": [
+    "c:bueno-no-se",
+    "c:bueno-si-insistes",
+    "c:bueno-te-dejo",
+    "c:entonces-bueno",
+    "c:hola-buenos-dias",
+    "c:mucho-gusto",
+    "c:no-cierto",
+    "c:no-creas",
+    "c:pues",
+    "c:que-descanses",
+    "c:que-sea-la-ultima-vez",
+    "c:si-no-hay-mas-remedio",
+    "c:soy-de",
+    "c:ya-veremos",
+    "g:adjective-agreement",
+    "g:quantifiers",
+    "g:questions-prepositions",
+    "g:ser-identity"
+  ],
+  "lexemes": [
+    "l:bueno",
+    "l:colombiano",
+    "l:día",
+    "l:dónde",
+    "l:gusto",
+    "l:mesero",
+    "l:nieto",
+    "l:ser"
   ]
 }

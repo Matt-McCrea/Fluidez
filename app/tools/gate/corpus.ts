@@ -62,6 +62,12 @@ export function collectItems(files: Loaded[]): Item[] {
   return items;
 }
 
+/** A running catchphrase: the same short line of dialogue in two story chapters
+ *  ("Simón: ¡Chao, chao!"). Story lines of ≤ 6 tokens (speaker included) are exempt
+ *  from cross-chapter duplicate checks; bank, scene and story-vs-bank stay strict. */
+export const CATCHPHRASE_MAX = 6;
+const catchphrase = (a: Item, b: Item) => a.kind === 'story' && b.kind === 'story' && a.toks.length <= CATCHPHRASE_MAX && b.toks.length <= CATCHPHRASE_MAX;
+
 export function nearDuplicates(items: Item[], targets: Set<string>, findings: Finding[]): void {
   // exact duplicates
   const exact = new Map<string, Item[]>();
@@ -76,6 +82,7 @@ export function nearDuplicates(items: Item[], targets: Set<string>, findings: Fi
     for (let i = 1; i < group.length; i++) {
       const a = group[0], b = group[i];
       if (a.file === b.file && a.kind === 'story') continue;
+      if (catchphrase(a, b)) continue;
       if (!targets.has(a.file) && !targets.has(b.file)) continue;
       const [x, y] = targets.has(b.file) ? [b, a] : [a, b];
       reported.add(`${a.file}:${a.path}|${b.file}:${b.path}`);
@@ -99,6 +106,7 @@ export function nearDuplicates(items: Item[], targets: Set<string>, findings: Fi
       if (!isTarget[i] && !isTarget[j]) continue;
       const a = items[i], b = items[j];
       if (a.file === b.file && a.kind === 'story') continue;
+      if (catchphrase(a, b)) continue;
       if (a.toks.join(' ') === b.toks.join(' ')) continue;   // exact: reported above
       const J = jaccard(sh[i], sh[j]);
       if (J < DUP_WARN) continue;

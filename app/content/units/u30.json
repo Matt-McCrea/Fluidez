@@ -37,7 +37,7 @@
     "c:ahi-vamos"
    ],
    "lexemes": [
-    "l:harto",
+    "l:impresionante",
     "l:reina",
     "l:delante"
    ]
@@ -63,10 +63,10 @@
     "l:personalidad",
     "l:sensible",
     "l:celoso",
-    "l:odiar",
-    "l:egoísta",
-    "l:optimista",
-    "l:reservado"
+    "l:montón",
+    "l:lástima",
+    "l:bravo",
+    "l:interrumpir"
    ],
    "chapter": "ch090"
   },
@@ -127,7 +127,7 @@
     "l:jardín",
     "l:sobrevivir",
     "l:reunirse",
-    "l:disculparse",
+    "l:vaciar",
     "l:aprovechar"
    ]
   },
@@ -143,7 +143,7 @@
    "lexemes": [
     "l:belleza",
     "l:rendir",
-    "l:respirar"
+    "l:serie"
    ],
    "scene": "sc-u30-b"
   },

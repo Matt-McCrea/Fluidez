@@ -203,7 +203,13 @@ export function closedClass(w: string): Pos | null {
 function restore(cand: string): string | null {
   if (LEX.has(cand)) return cand;
   const r = DEAC_LEMMA.get(deaccent(cand));
-  return r ?? null;
+  if (!r) return null;
+  // an accent the candidate lacks is a different word unless it sits in the last syllable
+  // (inglés > ingleses moves the stress); práctico is not "practica" (he practises)
+  for (let k = 0; k < r.length; k++) {
+    if (/[áéíóú]/.test(r[k]) && cand[k] !== r[k] && /[aeiouáéíóú]/.test(r.slice(k + 1))) return null;
+  }
+  return r;
 }
 
 function singulars(w: string): string[] {
@@ -214,6 +220,8 @@ function singulars(w: string): string[] {
   return out;
 }
 
+/** Feminine endings of person nouns (profesora, médica, amiga, abogada, japonesa). */
+const PERSON_FEM = /(ora|ica|iga|ada|ana|esa|ona|ina|era|ista|ela|ita|ía)$/;
 function mascs(w: string): string[] {
   const out: string[] = [];
   if (w.endsWith('a')) { out.push(w.slice(0, -1) + 'o'); out.push(w.slice(0, -1)); }
@@ -253,7 +261,11 @@ export function lemmatize(w: string): Lemma | null {
     for (const m of mascs(s)) {
       const r = restore(m);
       if (r && isAdjLike(LEX.get(r))) return { lemma: r, entry: LEX.get(r), viaForms: false };
+      // a feminine noun of a person shares the masculine lexeme: profesora > profesor, médica > médico
+      if (r && LEX.get(r)!.pos === 'noun' && (LEX.get(r)!.gender === 'm' || LEX.get(r)!.gender === 'mf') && PERSON_FEM.test(s)) return { lemma: r, entry: LEX.get(r), viaForms: false };
     }
+    // jefa > jefe, presidenta > presidente
+    if (/(jefa|nta)$/.test(s) && !LEX.has(s)) { const r = restore(s.slice(0, -1) + 'e'); if (r && LEX.get(r)!.pos === 'noun') return { lemma: r, entry: LEX.get(r), viaForms: false }; }
   }
   // -mente adverbs from a known adjective (rápida + mente)
   const mente = w.match(/^(.+)mente$/);

@@ -57,7 +57,7 @@
     "l:descansar",
     "l:sano",
     "l:cerrar",
-    "l:perdido"
+    "l:fácil"
    ]
   },
   {
@@ -69,7 +69,7 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:miedo",
+    "l:malo",
     "l:doler",
     "l:ofrecer"
    ]
@@ -133,7 +133,7 @@
    "chunks": [],
    "lexemes": [
     "l:pronto",
-    "l:fácil",
+    "l:perdido",
     "l:doctor"
    ]
   },

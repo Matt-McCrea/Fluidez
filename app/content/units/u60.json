@@ -22,9 +22,9 @@
    "lexemes": [
     "l:chupar",
     "l:perfección",
-    "l:charla",
+    "l:callado",
     "l:auge",
-    "l:crítica",
+    "l:vestuario",
     "l:artista",
     "l:valoración",
     "l:tertulia",
@@ -83,7 +83,7 @@
    "lexemes": [
     "l:verso",
     "l:himno",
-    "l:fachada",
+    "l:locutor",
     "l:trompeta",
     "l:pureza",
     "l:colorido",
@@ -91,7 +91,7 @@
     "l:compás",
     "l:fa",
     "l:coreografía",
-    "l:sinfonía",
+    "l:ensayar",
     "l:monólogo"
    ],
    "chapter": "ch218"
@@ -131,10 +131,10 @@
    "chunks": [],
    "lexemes": [
     "l:mercancía",
-    "l:aprobación",
-    "l:ensayar",
+    "l:ajustar",
+    "l:sinfonía",
     "l:sabana",
-    "l:provenir"
+    "l:adaptar"
    ],
    "chapter": "ch219"
   },

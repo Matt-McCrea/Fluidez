@@ -210,3 +210,98 @@ describe('the CLI contract', () => {
     expect(ko.out).toMatch(/gate: FAIL/);
   }, 30_000);
 });
+
+/* ---- regressions from the first story chapters (ch001–ch006) ---------------------- */
+describe('(k) story chapters: words are governed by reading coverage', () => {
+  const chapter = (id: string, unit: string, text: string, gloss: Array<{ es: string; en: string }> = []) => ({
+    id, unit, title: 't', text, gloss, hook: 'h',
+    questions: [{ q: 'a', options: ['x', 'y'], answer: 0 }, { q: 'b', options: ['x', 'y'], answer: 1 }, { q: 'c', options: ['x', 'y'], answer: 0 }],
+  });
+  const known = 'Tomás habla español. Vale habla español. La casa es grande. Tomás habla en Bogotá. El café es grande. Vale habla en Bogotá. Tomás habla.';
+  const withLexemes = () => {
+    const fx = makeFixture({ lexemes: true });
+    // a graph word taught long after the chapter, and one a chunk carries
+    const lex = ['l:hablar', 'l:español', 'l:café', 'l:querer', 'l:ayer', 'l:mercado', 'l:ir', 'l:casa', 'l:grande', 'l:ser', 'l:vivir', 'l:bogotá'];
+    fx.write('graph/lexemes.json', [...lex.map((id, i) => ({ id, kind: 'lexeme', band: 'A1', priority: 1 + i, title: id, es: id.slice(2) })),
+      { id: 'l:mar', kind: 'lexeme', band: 'A1', priority: 40, title: 'sea', es: 'el mar', pos: 'noun', gender: 'm' },
+      { id: 'l:llamarse', kind: 'lexeme', band: 'A1', priority: 40, title: 'to be called', es: 'llamarse', pos: 'verb' }]);
+    return fx;
+  };
+  test('a glossed graph word above the chapter day is no legality error; unglossed it fails coverage', () => {
+    const fx = withLexemes();
+    const text = `${known} El mar es grande.`;
+    const ok = fx.write('story/ch001.json', chapter('ch001', 'u01', text, [{ es: 'el mar', en: 'the sea' }]));
+    const r1 = runGate({ appDir: fx.app, paths: [ok], fix: true });
+    expect(by(r1, 'legality', 'error').map(fmt)).toEqual([]);
+    expect(by(r1, 'reading', 'error')).toEqual([]);
+    const bad = fx.write('story/ch001.json', chapter('ch001', 'u01', text));
+    const r2 = runGate({ appDir: fx.app, paths: [bad], fix: true });
+    expect(by(r2, 'legality', 'error')).toEqual([]);
+    expect(by(r2, 'reading', 'error')).toHaveLength(1);
+  });
+  test('grammar is never rescued by a gloss', () => {
+    const fx = withLexemes();
+    const p = fx.write('story/ch001.json', chapter('ch001', 'u01', `${known} Ayer Tomás habló español.`, [{ es: 'Ayer Tomás habló español', en: 'x' }]));
+    const leg = by(runGate({ appDir: fx.app, paths: [p], fix: true }), 'legality', 'error');
+    expect(leg).toHaveLength(1);
+    expect(leg[0].path).toMatch(/^text /);                    // the gloss entry itself is not gated
+    expect(leg[0].problem).toMatch(/g:preterite-ar/);
+  });
+  test('words inside a taught chunk are known (Me llamo → l:llamarse)', () => {
+    const fx = withLexemes();
+    const p = fx.write('story/ch001.json', chapter('ch001', 'u01', `${known} —Me llamo Vale. —Me llamo Tomás.`));
+    const r = runGate({ appDir: fx.app, paths: [p], fix: true });
+    expect(by(r, 'reading', 'error')).toEqual([]);
+    expect(by(r, 'legality', 'error')).toEqual([]);
+  });
+  test('a running catchphrase across chapters is no duplicate; a bank sentence still is', () => {
+    const fx = withLexemes();
+    fx.write('story/ch001.json', chapter('ch001', 'u01', `${known} Simón: ¡Tomás habla español!`));
+    const p = fx.write('story/ch002.json', chapter('ch002', 'u02', `${known} Simón: ¡Tomás habla español!`));
+    expect(by(runGate({ appDir: fx.app, paths: [p], fix: true }), 'dupe', 'error')).toEqual([]);
+    fx.write('bank/u01.json', [bank('u01-1', 'Vale vive en Bogotá con Tomás.')]);
+    const b = fx.write('bank/u02.json', [bank('u02-1', 'Vale vive en Bogotá con Tomás.', 'u02')]);
+    expect(by(runGate({ appDir: fx.app, paths: [b], fix: true }), 'dupe', 'error')).toHaveLength(1);
+  });
+  test('--fix writes a chapter\'s requires and lexemes, a scene\'s and a writing task\'s requires', () => {
+    const fx = withLexemes();
+    const ch = fx.write('story/ch001.json', chapter('ch001', 'u01', known));
+    const sc = fx.write('scenes/s01.json', { id: 's01', unit: 'u01', title: 't', brief: 'b', turns: [
+      { id: 't1', npc: 'Hola. ¿Habla español?', npcEn: 'Hi', intent: 'greet', accept: ['Sí, hablo español.'], next: 't2' },
+      { id: 't2', npc: '¿Vive en Bogotá?', npcEn: 'x', intent: 'x', accept: ['Sí, vivo en Bogotá.'], next: 't3' },
+      { id: 't3', npc: 'Listo.', npcEn: 'OK', intent: 'thank', accept: ['Gracias.'], next: null }] });
+    const wr = fx.write('writing/u01.json', [{ id: 'w1', unit: 'u01', prompt: 'p', minWords: 3, maxWords: 20, model: 'Tomás habla español y vive en Bogotá.' }]);
+    const r1 = runGate({ appDir: fx.app, paths: [ch, sc, wr] });
+    expect(by(r1, 'requires', 'error').map((f) => f.file).sort()).toEqual(['content/scenes/s01.json', 'content/story/ch001.json', 'content/story/ch001.json', 'content/writing/u01.json']);
+    const r2 = runGate({ appDir: fx.app, paths: [ch, sc, wr], fix: true });
+    expect(r2.fixed.sort()).toEqual(['content/scenes/s01.json', 'content/story/ch001.json', 'content/writing/u01.json']);
+    const c = JSON.parse(readFileSync(ch, 'utf8'));
+    expect(c.requires).toContain('g:present-ar');
+    expect(c.requires.some((x: string) => x.startsWith('l:'))).toBe(false);
+    expect(c.lexemes).toEqual(expect.arrayContaining(['l:hablar', 'l:casa']));
+    expect(JSON.parse(readFileSync(sc, 'utf8')).requires).toContain('g:present-er-ir');
+    expect(JSON.parse(readFileSync(wr, 'utf8'))[0].requires).toContain('l:vivir');
+    expect(by(runGate({ appDir: fx.app, paths: [ch, sc, wr] }), 'requires')).toEqual([]);
+  });
+  test('a lexeme met before its card day is known from its priority', () => {
+    const fx = withLexemes();
+    // l:casa is carded on u01 day 3 (session 3) but its priority says 1
+    const lex = JSON.parse(readFileSync(join(fx.content, 'graph/lexemes.json'), 'utf8'));
+    lex.find((n: { id: string }) => n.id === 'l:casa').priority = 1;
+    fx.write('graph/lexemes.json', lex);
+    const p = fx.write('bank/u01.json', [bank('u01-1', 'La casa es grande.')]);
+    const r = runGate({ appDir: fx.app, paths: [p], fix: true });
+    expect(by(r, 'legality', 'error').filter((f) => /l:casa/.test(f.problem))).toEqual([]);
+  });
+});
+
+describe('(l) targets are author intent', () => {
+  test('a pattern, contrast or undetectable node as a target only warns', () => {
+    const fx = makeFixture();
+    fx.write('graph/patterns.json', [{ id: 'p:ser-profession-no-article', kind: 'pattern', band: 'A1', priority: 1, title: 't' }]);
+    const p = fx.write('bank/u01.json', [bank('u01-1', 'Tomás habla español.', 'u01', { targets: ['p:ser-profession-no-article', 'x:muy-mucho'] })]);
+    const r = runGate({ appDir: fx.app, paths: [p], fix: true });
+    expect(by(r, 'requires', 'error')).toEqual([]);
+    expect(by(r, 'requires', 'warning')).toHaveLength(2);
+  });
+});

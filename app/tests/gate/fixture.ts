@@ -26,13 +26,13 @@ export function makeFixture(opts: { lexemes?: boolean } = {}): Fixture {
     node('g:present-er-ir', 'grammar', 4), node('g:stem-boot', 'grammar', 20), node('g:preterite-ar', 'grammar', 12),
     node('g:preterite-ser-ir-hacer', 'grammar', 13), node('g:subj-wanting', 'grammar', 90), node('g:that-clauses', 'grammar', 80),
   ]);
-  write('graph/chunks.json', [node('c:quiero', 'chunk', 1, { es: 'Quiero un café. / Quiero hablar con Vale.' })]);
+  write('graph/chunks.json', [node('c:quiero', 'chunk', 1, { es: 'Quiero un café. / Quiero hablar con Vale.' }), node('c:me-llamo', 'chunk', 1, { es: 'Me llamo Tomás. ¿Cómo te llamas?' })]);
   if (opts.lexemes) write('graph/lexemes.json', lex.map((id, i) => node(id, 'lexeme', 1 + i, { es: id.slice(2) })));
   const quota = { bankSentences: 3, chapters: 1, scenes: 0, writingTasks: 0 };
   write('units/u01.json', {
     id: 'u01', band: 'A1', title: 'Hello', theme: 'identidad', canDo: 'I can say who I am', storyArc: 'Tomás arrives in Bogotá and meets Vale at the café. Vale shows Tomás the café.', quota,
     days: [
-      day('introduce', ['g:ser-identity'], ['c:quiero'], lex.slice(0, 6)), day('drill', ['g:gender-articles']), day('introduce', ['g:present-ar'], [], lex.slice(6)),
+      day('introduce', ['g:ser-identity'], ['c:quiero', 'c:me-llamo'], lex.slice(0, 6)), day('drill', ['g:gender-articles']), day('introduce', ['g:present-ar'], [], lex.slice(6)),
       day('drill'), day('input', [], [], [], { chapter: 'ch001' }), day('patterns'), day('review'),
     ],
   });

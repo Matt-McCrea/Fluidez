@@ -31,7 +31,7 @@
    "lexemes": [
     "l:dividir",
     "l:consistir",
-    "l:bote"
+    "l:toro"
    ]
   },
   {
@@ -54,13 +54,13 @@
     "l:metal",
     "l:hierro",
     "l:centímetro",
-    "l:ancho",
+    "l:ratón",
     "l:proceso",
     "l:tecnología",
     "l:estilo",
     "l:copiar",
     "l:electrónico",
-    "l:elemento"
+    "l:escritorio"
    ],
    "chapter": "ch156"
   },
@@ -72,8 +72,8 @@
    "chunks": [],
    "lexemes": [
     "l:campesino",
-    "l:prender",
-    "l:esclavo",
+    "l:sincero",
+    "l:bala",
     "l:escrito",
     "l:rescatar"
    ],
@@ -88,7 +88,7 @@
    ],
    "chunks": [],
    "lexemes": [
-    "l:fabricar",
+    "l:miembro",
     "l:resistente",
     "l:sal"
    ]
@@ -133,7 +133,7 @@
     "l:suelo",
     "l:solar",
     "l:lobo",
-    "l:últimamente"
+    "l:nieve"
    ],
    "chapter": "ch159"
   },

@@ -86,7 +86,7 @@ function nonFinite(w: string): { pos: 'inf' | 'ger'; infs: string[]; enclitics: 
   const bare = tryBase(w, []);
   if (bare) return bare;
   for (const c1 of CL_LIST) {
-    if (!w.endsWith(c1) || w.length <= c1.length + 2) continue;
+    if (!w.endsWith(c1) || w.length < c1.length + 2) continue;   // irme, irte: ir + clitic
     const b1 = w.slice(0, -c1.length);
     const r1 = tryBase(b1, [c1]);
     if (r1) return r1;
@@ -156,6 +156,33 @@ function nominalPos(e: ReturnType<typeof lemmatize>): Pos | null {
   return 'x';
 }
 
+/** After "nada" with no subject, these say "swims": Nada muy bien. Nada en el río. */
+const NADA_VERB_NEXT = new Set(['bien', 'mal', 'muy', 'mucho', 'rápido', 'en', 'todos', 'todas', 'cada', 'poco', 'mejor', 'peor', 'como']);
+
+/** The token after i ends a verbless fragment: ? ! . , : or a coordinator. */
+function isFragmentEnd(toks: Token[], i: number): boolean {
+  const n = toks[i + 1];
+  return !n || (n.punct && /[.?!…,:;]/.test(n.w)) || ['y', 'o', 'e', 'u'].includes(n.w);
+}
+
+const SER_ESTAR_HABER = new Set(['ser', 'estar', 'haber']);
+const ARTICLE_LIKE = new Set(['el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'mi', 'mis', 'tu', 'tus', 'su', 'sus']);
+/** Participles whose adjective is the everyday word (a state of mind or body, a trait), not a result. */
+const ADJECTIVAL_PARTICIPLES = new Set(('cansado ocupado aburrido preocupado enojado emocionado sorprendido interesado casado divorciado separado '
+  + 'equivocado enamorado animado desanimado agotado estresado relajado confundido asustado avergonzado deprimido encantado '
+  + 'despistado atrasado demorado acostumbrado mareado resfriado callado nublado despejado educado organizado desordenado '
+  + 'complicado aburrido molesto dedicado cansada').split(/\s+/));
+/** Is position i (previous word at pIdx) where a bare noun sits: after hay, after a
+ *  non-copular verb, after a quantifier or number, or coordinated with a noun? */
+function nounSlot(words: Word[], pIdx: number, toks: Token[], i: number): boolean {
+  const prev = pIdx >= 0 ? words[pIdx] : undefined;
+  if (!prev) return isFragmentEnd(toks, i);
+  if (prev.w === 'hay' || ['quant', 'num', 'det', 'poss', 'dem', 'prep'].includes(prev.pos)) return true;
+  if ((prev.pos === 'verb' || prev.pos === 'inf') && !SER_ESTAR_HABER.has(prev.lemma)) return true;
+  if (['y', 'o', 'e', 'u', 'ni'].includes(prev.w)) { const p2 = words[pIdx - 1]; return !!p2 && p2.pos === 'noun'; }
+  return false;
+}
+
 export function analyzeWords(text: string): Word[] {
   const toks = tokenize(text);
   // Pass 1: candidate readings for every token
@@ -165,8 +192,10 @@ export function analyzeWords(text: string): Word[] {
   const cc = toks.map((t) => (t.punct ? null : closedClass(t.w)));
   const lem = toks.map((t) => (t.punct ? null : lemmatize(t.w)));
   const homog = toks.map((t, i) => fin[i].length > 0 && (cc[i] !== null || nominalPos(lem[i]) !== null || NOUN_HOMOGRAPHS.has(t.w)));
-  const unamb = toks.map((t, i) => fin[i].length > 0 && !homog[i] && !CLITICS.has(t.w));
-  const cand = toks.map((t, i) => fin[i].length > 0 && !CLITICS.has(t.w));
+  // a capitalised mid-sentence word or a cast name (Vale) is never the clause's other verb
+  const nameLike = toks.map((t) => (t.capMid && !closedClass(t.w)) || (t.cap && isName(t.w)));
+  const unamb = toks.map((t, i) => fin[i].length > 0 && !homog[i] && !CLITICS.has(t.w) && !nameLike[i]);
+  const cand = toks.map((t, i) => fin[i].length > 0 && !CLITICS.has(t.w) && !nameLike[i]);
 
   const words: Word[] = [];
   for (const t of toks) {
@@ -206,6 +235,16 @@ export function analyzeWords(text: string): Word[] {
     if (t.w === 'pese' && toks[i + 1]?.w === 'a') { words.push({ ...base, pos: 'prep', lemma: 'pese a' }); continue; }
     if (fin[i].length) {
       if (cc[i] && cc[i] !== 'clitic' && prev && DETERMINER_LIKE.has(prev.w) && NOUN_HOMOGRAPHS.has(t.w)) { words.push({ ...asNominal(), pos: 'noun' }); continue; }
+      if (t.w === 'nada') {
+        // nada is "nothing" unless a subject or an adverb of manner says swim: Ella nada muy bien.
+        const subj = (x: Word | undefined) => !!x && (SUBJECT_PRONOUNS.has(x.w) || x.pos === 'propn' || x.pos === 'noun');
+        const p2 = pIdx >= 1 ? words[pIdx - 1] : undefined;
+        const next = toks[i + 1];
+        const verbish = subj(prev) || (!!prev && ['no', 'también', 'tampoco', 'siempre', 'nunca', 'ya'].includes(prev.w) && subj(p2))
+          || (!prev && !!next && NADA_VERB_NEXT.has(next.w));
+        words.push(verbish ? asVerb() : asClosed());
+        continue;
+      }
       if (cc[i] && cc[i] !== 'clitic') {
         // FUNCTION-WORD HOMOGRAPH: the function word unless there is evidence
         const cue = prev && (STRONG_VERB_CUES.has(prev.w) || SUBORDINATORS.has(prev.w) && !FUNCTION_HOMOGRAPHS.has(t.w));
@@ -213,7 +252,9 @@ export function analyzeWords(text: string): Word[] {
         const nextNominal = next && !next.punct && (DETERMINER_LIKE.has(next.w) || ['noun', 'x'].includes(nominalPos(lem[i + 1]) ?? ''));
         const startsClause = !prev || CLAUSE_LINKS.has(prev.w);
         const nextEnd = !next || (next.punct && /[.?!…,;:]/.test(next.w));
-        const alone = startsClause && !clauseHasOtherVerb(toks, i, cand) && FUNCTION_HOMOGRAPHS.has(t.w);
+        const alone = startsClause && !clauseHasOtherVerb(toks, i, cand) && FUNCTION_HOMOGRAPHS.has(t.w)
+          // a preposition before an article or a number is the preposition: Entre las dos y las tres.
+          && !(cc[i] === 'prep' && next && (ARTICLE_LIKE.has(next.w) || closedClass(next.w) === 'num' || /^\d/.test(next.w)));
         if (cue || (alone && (nextNominal || nextEnd) && !sentenceHasOtherVerb(toks, i, unamb.map((u, k) => u && !sameClause(toks, i, k))) ) || (alone && nextEnd)) words.push(asVerb());
         else words.push(asClosed());
         continue;
@@ -221,6 +262,13 @@ export function analyzeWords(text: string): Word[] {
       if (CLITICS.has(t.w)) { words.push(asClosed()); continue; }
       if (nominal) {
         // NOUN/ADJECTIVE HOMOGRAPH
+        // ¿Qué compra Vale? — after qué, a verb when a subject follows (¿Qué libro? is the noun)
+        if (prev && prev.w === 'qué' && toks[i + 1] && (nameLike[i + 1] || SUBJECT_PRONOUNS.has(toks[i + 1].w))) { words.push(asVerb()); continue; }
+        // tengo frío y sueño: coordinated with a noun is a noun
+        // (not when a complement follows: "Soy médico y trabajo en Bogotá")
+        const nx1 = toks[i + 1];
+        const complement = !!nx1 && !nx1.punct && (SUBJECT_PRONOUNS.has(nx1.w) || closedClass(nx1.w) === 'prep' || ARTICLE_LIKE.has(nx1.w) || nameLike[i + 1] || closedClass(nx1.w) === 'adv' || lexEntry(nx1.w)?.pos === 'adv');
+        if (prev && ['y', 'o', 'e', 'u'].includes(prev.w) && words[pIdx - 1]?.pos === 'noun' && nominal === 'noun' && !complement) { words.push(asNominal()); continue; }
         if (prev && (DETERMINER_LIKE.has(prev.w) || prev.pos === 'prep' || prev.pos === 'num')) {
           // after la/los/las a word with a noun reading is the noun (tense-scan rule);
           // after "lo" it is the verb (lo is only an article before adjectives)
@@ -230,9 +278,16 @@ export function analyzeWords(text: string): Word[] {
         if (prev && (STRONG_VERB_CUES.has(prev.w) || SUBORDINATORS.has(prev.w))) { words.push(asVerb()); continue; }
         if (prev && prev.pos === 'verb' && prev.aux !== 'haber') { words.push(asNominal()); continue; }
         if (prev && (prev.pos === 'noun' || prev.pos === 'propn')) {
-          words.push(nominal === 'adj' ? asNominal() : asVerb()); continue;
+          // an adjective after a noun, unless the clause would have no verb: El barrio mejora.
+          words.push(nominal === 'adj' && clauseHasOtherVerb(toks, i, cand) ? asNominal() : asVerb()); continue;
         }
         if (clauseHasOtherVerb(toks, i, unamb)) { words.push(asNominal(`"${t.w}" read as ${nominal}: the clause has another verb`)); continue; }
+        // a verbless fragment is a noun: ¿Nombre? / Nombre: Tomás. / Nombre y apellido, por favor.
+        const listed = !!prev && ['y', 'o', 'e', 'u'].includes(prev.w) && words[pIdx - 1]?.pos === 'noun';
+        // (when no reading is a plain statement of a known verb: "Trabajo y estudio." is I work and study)
+        // (a reflexive verb with no clitic before it is no statement either: ¿Apellido?)
+        const weakVerb = fin[i].every((a) => !/^(presente|preterito|imperfecto|futuro|condicional)$/.test(a.tense) || !lexEntry(a.inf) || isReflexive(a.inf));
+        if (nominal === 'noun' && weakVerb && (!prev || listed) && isFragmentEnd(toks, i) && !sentenceHasOtherVerb(toks, i, unamb)) { words.push(asNominal()); continue; }
         words.push(asVerb(`"${t.w}" read as a verb: no other verb in the clause`));
         continue;
       }
@@ -256,6 +311,20 @@ export function analyzeWords(text: string): Word[] {
       const lx = lem[i]?.entry;
       // a participle the lexicon lists as a noun after a determiner is the noun (el estado, el pasado)
       if (lx && lx.pos === 'noun' && prev && DETERMINER_LIKE.has(prev.w)) { words.push(asNominal()); continue; }
+      // ... and where an object or a list item sits: Hay partido. ¿Quién quiere helado? Hay comida y bebida.
+      if (lx && lx.pos === 'noun' && nounSlot(words, pIdx, toks, i)) { words.push(asNominal()); continue; }
+      // a participle lexicalised as an adjective is the adjective: the states of mind and body
+      // anywhere (estoy cansado, está ocupada), any adjective after a non-preterite ser (son
+      // aburridas) — but not a result state after estar (la puerta estaba abierta: g:estar-participle)
+      // nor an agentive or preterite passive (fue cerrada por la policía); haber + participle is undone below
+      if (lx && lx.pos === 'adj' && toks[i + 1]?.w !== 'por') {
+        const masc = lem[i]!.lemma;
+        let k = pIdx;
+        while (k >= 0 && ['adv', 'neg'].includes(words[k].pos)) k--;
+        const cop = k >= 0 ? words[k] : undefined;
+        const serAdj = !!cop && cop.pos === 'verb' && cop.lemma === 'ser' && !cop.verb?.some((a) => /pret|indefinido/.test(a.tense));
+        if (ADJECTIVAL_PARTICIPLES.has(masc) || serAdj) { words.push(asNominal()); continue; }
+      }
       words.push({ ...base, pos: 'part', lemma: part[i][0] });
       continue;
     }
