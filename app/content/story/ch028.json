@@ -2,7 +2,7 @@
   "id": "ch028",
   "unit": "u11",
   "title": "La niña de las gafas",
-  "text": "Mujer: Buenos días. Una almojábana, por favor. La última.\nHernando: ¡Mariana Cifuentes! ¡La hija de los vecinos!\nMariana: Hola, don Hernando. Y tú eres Tomás, el niño travieso del mostrador.\nTomás: Y tú eres la niña de las gafas.\nMariana: Te pareces mucho a tu papá. Antes medías un metro, y ahora mides... ¿un metro ochenta?\nTomás: Un metro ochenta y dos. Y tú ya no te pareces a la niña de las gafas.\nMariana: Ahora tengo otras gafas.\nHernando: Ustedes dos pasaron la niñez en este café.\nMariana: En mi infancia, este café era mi segunda casa. Llegaba del colegio en uniforme, y hacía la tarea en esa mesa. Cuando tenía una nota excelente en un examen, Rosa me regalaba una almojábana.\nTomás: Yo también tenía uniforme en Toronto. Era horrible. Y mis notas no eran excelentes.\nMariana: Y los domingos, tú eras mi enemigo. Mi enemigo favorito. Nuestro juego era «el aeropuerto». Tú eras el avión, y yo era la policía.\nTomás: Era un juego muy serio. Y yo te prestaba mi pelota.\nMariana: Y yo te prestaba mi muñeca. Tú preferías la muñeca.\nSimón: ¡La muñeca! ¡La muñeca!\nTomás: No es verdad. Yo prefería la pelota.\nHernando: Preferías la muñeca, mijo. Era tu juguete favorito.\nMariana: Yo no tenía muchos juguetes. Tenía la calle. En el recreo jugábamos con la pelota, y los sábados mi papá y yo íbamos al campo en bicicleta.\nTomás: En Toronto no había recreo con almojábanas. Toda mi infancia en Toronto, y solo me acuerdo de los domingos aquí.\nMariana: Tú te fuiste a Toronto, Tomás. Y yo te esperaba los domingos en la puerta. Un mes, dos meses. Después dejé de esperar.\nTomás mira el mostrador y no habla.\nHernando: Y yo dejé de fumar en 1990. Nadie me pregunta, pero es importante.\nTomás: ¿Y todavía montas en bicicleta?\nMariana: No. Dejé de montar en bicicleta. Ahora soy periodista. Mi niñez fue el colegio, la tarea, el maestro Ramírez y este café. Hoy el maestro Ramírez ya no vive aquí. Su casa la compró Altamira. Y la casa del campo de mi papá, también.\nMariana saca una lista de su bolsa. Es una lista de casas.\nMariana: Ahora estudio otra materia. Mi materia es Grupo Altamira.\nTomás: ¿Y el examen?\nMariana: El examen es mañana. Y tú me vas a ayudar.",
+  "text": "Mujer: Buenos días. Una almojábana, por favor. La última.\nHernando: ¡Mariana Cifuentes! ¡La hija de los vecinos!\nMariana: Hola, don Hernando. Y tú eres Tomás, el niño travieso del mostrador.\nTomás: Y tú eres la niña de las gafas.\nMariana: Te pareces mucho a tu papá. Antes medías un metro, y ahora mides... ¿un metro ochenta?\nTomás: Un metro ochenta y dos. Y tú ya no te pareces a la niña de las gafas.\nMariana: Ahora tengo otras gafas.\nHernando: Ustedes dos pasaron la niñez en este café. Para ustedes, el domingo era un recreo largo.\nMariana: En mi infancia, este café era mi segunda casa. Llegaba del colegio en uniforme y hacía la tarea en esa mesa. Cuando sacaba una nota alta en un examen, Rosa me regalaba una almojábana.\nTomás: Yo también tenía uniforme en Toronto. Era horrible, y mis notas no eran excelentes. Y en mi infancia en Toronto no había almojábanas.\nMariana: Los domingos, tú eras mi enemigo favorito. Nuestro juego era «el aeropuerto»: tú eras el avión, y yo era la policía.\nTomás: Era un juego muy serio.\nMariana: Yo te prestaba mi muñeca, y tú me prestabas tu pelota. Pero tú preferías la muñeca.\nSimón: ¡La muñeca! ¡La muñeca!\nTomás: No es verdad. Yo prefería la pelota.\nHernando: Preferías la muñeca, mijo. Era tu juguete favorito.\nMariana: Yo no tenía muchos juguetes. Tenía una bicicleta, y los sábados mi papá y yo íbamos al campo en bicicleta.\nTomás: En Toronto, en el recreo, nadie me prestaba una muñeca.\nMariana: Tú te fuiste a Toronto, Tomás. Y yo te esperaba los domingos en la puerta. Un mes, dos meses. Después dejé de esperar.\nTomás mira el mostrador y no habla.\nHernando: Y yo dejé de fumar en 1990. Nadie me pregunta, pero es importante.\nMariana: Bueno. Ahora soy periodista. Mi niñez fue el colegio, la tarea, el maestro Ramírez, el campo y este café. Hoy el maestro Ramírez ya no vive aquí. Su casa la compró Altamira.\nMariana saca una lista de su bolsa. Es una lista de casas.\nMariana: Mi materia ahora es otra. Mi materia es Grupo Altamira.\nTomás: ¿Y el examen?\nMariana: El examen es mañana. Y tú me vas a ayudar.",
   "gloss": [
     {
       "es": "mijo",
@@ -33,8 +33,12 @@
       "en": "His house was bought by Altamira."
     },
     {
-      "es": "Mi materia es Grupo Altamira.",
-      "en": "My subject is Grupo Altamira."
+      "es": "un recreo largo",
+      "en": "one long break (like at school)"
+    },
+    {
+      "es": "Mi materia ahora es otra. Mi materia es Grupo Altamira.",
+      "en": "My subject is a different one now. My subject is Grupo Altamira."
     }
   ],
   "questions": [
@@ -49,7 +53,7 @@
       "answer": 0
     },
     {
-      "q": "What did Rosa use to give Mariana for an excellent mark in an exam?",
+      "q": "What did Rosa use to give Mariana for a high mark in an exam?",
       "options": [
         "An almojábana",
         "A doll",
@@ -124,6 +128,7 @@
   "hook": "Mariana has a list of houses that Altamira has bought, and she says the exam is tomorrow. Tomás is going to help her, and Vale has not met her yet.",
   "requires": [
     "c:bien-y-tu",
+    "c:entonces-bueno",
     "c:era",
     "c:hola-buenos-dias",
     "c:oye-mira",
@@ -139,17 +144,16 @@
     "g:imperfect-states",
     "g:ir-a-plans",
     "g:possessives",
+    "g:prep-pronouns",
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
     "g:preterite-ser-ir-hacer",
     "g:reflexive-routine",
     "g:ser-identity",
-    "g:stem-boot",
     "g:stem-e-i",
     "g:yo-irregular",
     "p:aqui-ahi-alla",
-    "p:con-sin",
     "p:cuando-basic",
     "p:dates-years",
     "p:days-el-lunes",
@@ -164,6 +168,7 @@
     "p:ordinal-floor",
     "p:ordinals-primer-tercer",
     "p:otro-no-article",
+    "p:para-inf",
     "p:parecer-vs-parecerse",
     "p:parecerse-a",
     "p:plural-one-object",
@@ -171,20 +176,17 @@
     "p:prefieres-x-o-y",
     "p:preguntar-pedir",
     "p:quantifiers-basic",
-    "p:recordar-acordarse",
     "p:senor-don-article",
     "p:ser-profession-no-article",
-    "p:sobre-todo-solo",
     "p:tambien-tampoco",
     "p:time-sequence-basic",
-    "p:transport-en",
-    "p:ya-todavia-basic"
+    "p:transport-en"
   ],
   "lexemes": [
-    "l:acordarse",
     "l:aeropuerto",
     "l:ahora",
     "l:almojábana",
+    "l:alto",
     "l:antes",
     "l:aquí",
     "l:avión",
@@ -193,7 +195,6 @@
     "l:bolsa",
     "l:bueno",
     "l:café",
-    "l:calle",
     "l:campo",
     "l:casa",
     "l:colegio",
@@ -204,7 +205,6 @@
     "l:día",
     "l:enemigo",
     "l:esperar",
-    "l:estudiar",
     "l:examen",
     "l:excelente",
     "l:favor",
@@ -221,8 +221,8 @@
     "l:ir",
     "l:irse",
     "l:juego",
-    "l:jugar",
     "l:juguete",
+    "l:largo",
     "l:listo",
     "l:llegar",
     "l:maestro",
@@ -233,7 +233,6 @@
     "l:mesa",
     "l:metro",
     "l:mirar",
-    "l:montar",
     "l:mostrador",
     "l:mujer",
     "l:muñeca",

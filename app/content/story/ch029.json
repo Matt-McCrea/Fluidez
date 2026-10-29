@@ -2,7 +2,7 @@
   "id": "ch029",
   "unit": "u11",
   "title": "Al otro lado",
-  "text": "Vale: Tomás, ¿quién es la mujer de las gafas?\nTomás: Es Mariana, la niña de los domingos. Ahora es periodista.\nVale: ¿Y es más simpática que yo?\nSimón: ¡Más simpática! ¡Más simpática!\nTomás: No, no. Es menos simpática que tú. Bueno... es tan simpática como tú.\nVale: Mal, Tomás. Muy mal.\nMariana trae dos fotos de la cuadra. Las saca de su bolsa y las pone en la mesa.\nMariana: Esta es la cuadra en 1995. Y esta es la cuadra hoy.\nHernando: En 1995 había más gente en la calle, y menos carros. Y yo era más joven y más guapo que Tomás.\nMariana: Todo comenzó con un artículo pequeño. Pero la historia resultó más grande que un artículo. Altamira ya tiene trece casas en la cuadra. Las compró en un año, y paga mejor que el banco.\nTomás: ¿Y la casa de Gloria? ¿Y el café?\nMariana: Gloria no vende. Y el café es más importante que las trece casas. Mira la foto. Las trece casas están a un lado del café, y la casa de Gloria está al otro lado. El café está en la esquina, en el centro. Altamira quiere un hotel en toda la cuadra, y sin la esquina, no hay hotel.\nVale pone una almojábana delante de Mariana. Después pone otra delante de Tomás.\nMariana: Vale, tu almojábana es mejor que la almojábana de Rosa.\nVale: ¿Es mejor? No, Mariana, eso no es verdad.\nMariana: Es verdad. Y Rosa también lo decía.\nVale mira a Mariana un rato. Después sirve un tinto para Mariana.\nHernando: Rosa no quería un hotel. Rosa quería su propio café, en su propia esquina.\nMariana: Y es tu derecho, Tomás. Pero una pregunta: el edificio del café, ¿de quién es? ¿Quién es el dueño?\nTomás: De Rosa, ¿no?\nHernando: No, mijo. Rosa pagaba arriendo. Todos los meses, durante cuarenta años.\nMariana: Entonces el dueño es otra persona. Y Altamira ya está buscando a esa persona.",
+  "text": "Vale: Tomás, ¿quién es la mujer de las gafas?\nTomás: Es Mariana, la niña de los domingos. Ahora es periodista.\nVale: ¿Y es más simpática que yo?\nSimón: ¡Más simpática! ¡Más simpática!\nTomás: No, no. Es menos simpática que tú. Bueno... es tan simpática como tú.\nVale: Mal, Tomás. Muy mal.\nMariana trae dos fotos de la cuadra. Las saca de su bolsa y las pone en la mesa.\nMariana: Bueno, Tomás, el examen. Esta es la cuadra en 1995, y esta es la cuadra hoy.\nHernando: En 1995 había más gente en la calle, y menos carros. Y yo era más joven y más guapo que Tomás.\nMariana: Todo comenzó con un artículo pequeño. Pero la historia resultó más grande que un artículo. Altamira ya tiene trece casas en la cuadra. Las compró en un año, y paga muy bien.\nTomás: ¿Y la casa de Gloria? ¿Y el café?\nMariana: Gloria no vende. Y el café es más importante que las trece casas. Mira la foto. Las trece casas están a un lado del café, y la casa de Gloria está al otro lado. El café está en la esquina, en el centro. Altamira quiere un hotel en toda la cuadra, y sin la esquina, no hay hotel.\nVale pone una almojábana delante de Mariana. Después pone otra delante de Tomás.\nMariana: Vale, tu almojábana es mejor que la almojábana de Rosa.\nVale: ¿Mejor? No, Mariana.\nMariana: Sí, mejor. Rosa también lo decía.\nVale mira a Mariana un rato. Después sirve un tinto para Mariana.\nHernando: Rosa no quería un hotel. Rosa quería su propio café, en su propia esquina.\nMariana: Y es tu derecho, Tomás. Pero una pregunta: el edificio del café, ¿de quién es? ¿Quién es el dueño?\nTomás: De Rosa, ¿no?\nHernando: No, mijo. Rosa pagaba arriendo, todos los meses. Cuarenta y siete años de arriendo. ¿No leíste el contrato?\nTomás: Sí... más o menos. Era largo y aburrido.\nMariana: Entonces el dueño es otra persona. Y Altamira ya está buscando a esa persona.",
   "gloss": [
     {
       "es": "mijo",
@@ -15,10 +15,6 @@
     {
       "es": "La historia resultó más grande que un artículo.",
       "en": "The story turned out bigger than an article."
-    },
-    {
-      "es": "paga mejor que el banco",
-      "en": "pays better than the bank"
     },
     {
       "es": "a un lado del café",
@@ -113,9 +109,11 @@
   ],
   "hook": "Rosa paid rent on the café for forty years, so somebody else owns the corner, and Altamira is already looking for them. Tonight the rain comes, and the lights go out.",
   "requires": [
+    "c:bien-y-tu",
     "c:entonces-bueno",
     "c:era",
     "c:hay",
+    "c:mas-o-menos",
     "c:no-cierto",
     "c:oye-mira",
     "c:tienes",
@@ -132,16 +130,19 @@
     "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
+    "g:preterite-er-ir",
     "g:questions",
     "g:ser-identity",
     "g:stem-boot",
     "g:stem-e-i",
+    "p:aburrir-aburrirse",
+    "p:bien-bueno",
+    "p:bien-mal-vs-bueno-malo",
     "p:cerca-de",
     "p:dates-years",
     "p:days-el-lunes",
     "p:de-owner",
     "p:demonstratives-basic",
-    "p:durar-durante",
     "p:entonces-de-repente",
     "p:es-tiene-lleva",
     "p:la-gente-singular",
@@ -160,18 +161,18 @@
     "p:resulta-adj-que",
     "p:resultar-ser",
     "p:ser-profession-no-article",
-    "p:tienes-toda-la-razon",
     "p:time-sequence-basic",
     "p:todos-los-dias",
     "p:veces-al"
   ],
   "lexemes": [
+    "l:aburrido",
     "l:ahora",
     "l:almojábana",
     "l:arriendo",
     "l:artículo",
     "l:año",
-    "l:banco",
+    "l:bien",
     "l:bolsa",
     "l:bueno",
     "l:buscar",
@@ -182,6 +183,7 @@
     "l:centro",
     "l:comenzar",
     "l:comprar",
+    "l:contrato",
     "l:cuadra",
     "l:decir",
     "l:delante",
@@ -192,6 +194,7 @@
     "l:edificio",
     "l:esquina",
     "l:estar",
+    "l:examen",
     "l:foto",
     "l:gafas",
     "l:gente",
@@ -203,6 +206,8 @@
     "l:importante",
     "l:joven",
     "l:lado",
+    "l:largo",
+    "l:leer",
     "l:mal",
     "l:mejor",
     "l:mes",
@@ -228,7 +233,6 @@
     "l:tener",
     "l:tinto",
     "l:traer",
-    "l:vender",
-    "l:verdad"
+    "l:vender"
   ]
 }

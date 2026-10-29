@@ -6,34 +6,130 @@
     "en": "I arrived late. I looked for the keys for an hour."
   },
   "examples": [
-    { "es": "Llegué a las nueve.", "en": "I arrived at nine." },
-    { "es": "Busqué mi celular en la cocina.", "en": "I looked for my phone in the kitchen." },
-    { "es": "Empecé a trabajar a las seis.", "en": "I started work at six." },
-    { "es": "Vale pidió un tinto.", "en": "Vale ordered a black coffee." },
-    { "es": "Don Hernando durmió en el sofá.", "en": "Don Hernando slept on the sofa." },
-    { "es": "Mariana leyó el artículo.", "en": "Mariana read the article." },
-    { "es": "Los clientes pidieron más pan.", "en": "The customers asked for more bread." },
-    { "es": "¿Jugaste fútbol ayer?\nSí, jugué con mis primos.", "en": "Did you play football yesterday?\nYes, I played with my cousins." }
+    {
+      "es": "Llegué a las nueve.",
+      "en": "I arrived at nine."
+    },
+    {
+      "es": "Busqué mi celular en la cocina.",
+      "en": "I looked for my phone in the kitchen."
+    },
+    {
+      "es": "Empecé a trabajar a las seis.",
+      "en": "I started work at six."
+    },
+    {
+      "es": "Vale pidió un tinto.",
+      "en": "Vale ordered a black coffee."
+    },
+    {
+      "es": "Don Hernando durmió en el sofá.",
+      "en": "Don Hernando slept on the sofa."
+    },
+    {
+      "es": "Mariana leyó el artículo.",
+      "en": "Mariana read the article."
+    },
+    {
+      "es": "Los clientes pidieron más pan.",
+      "en": "The customers asked for more bread."
+    },
+    {
+      "es": "¿Jugaste fútbol ayer?\nSí, jugué con mis primos.",
+      "en": "Did you play football yesterday?\nYes, I played with my cousins."
+    }
   ],
-  "rule": "The endings are the ones you know. Three small things move.\n\n1. Only for I: verbs in *-car*, *-gar* and *-zar* change their spelling to keep their sound.\n*buscar*: *busqué*\n*llegar*: *llegué*\n*empezar*: *empecé*\nEveryone else is normal: *buscaste*, *llegó*, *empezamos*.\n\n2. When the stem ends in a vowel, the i between vowels turns into y: *leer* gives *leyó* and *leyeron*; *creer* gives *creyó*.\n\n3. *-ir* verbs that change their stem in the present change in the past too, but only for he, she, you (formal) and they. The e turns into i, the o into u: *pidió*, *pidieron*, *sirvió*, *repitió*, *durmió*, *murió*. For I, you and we, nothing: *pedí*, *dormimos*.",
+  "rule": "The endings are the ones you know. Three small things move.\n\n1. Only for I: verbs in *-car*, *-gar* and *-zar* change their spelling to keep their sound.\n*buscar*: *busqué*\n*llegar*: *llegué*\n*empezar*: *empecé*\nEveryone else is normal: *buscaste*, *llegó*, *empezamos*.\n\n2. When the stem ends in a vowel, the *i* of the ending turns into y, so it never sits alone between two vowels: *leer* gives *leyó* and *leyeron*; *creer* gives *creyó*.\n\n3. *-ir* verbs that change their stem in the present change in the past too, but only for he, she, you (formal) and they. The e turns into i, the o into u: *pidió*, *pidieron*, *sirvió*, *repitió*, *durmió*, *murió*. For I, you and we, nothing: *pedí*, *dormimos*.",
   "smallPrint": "Teachers call groups 1 and 2 spelling changes (*cambios ortográficos*) and group 3 a stem change in the preterite. In groups 1 and 2 only the letters change, never the sound.",
   "soundTip": "Before e, a Spanish g sounds like a rough h and a c sounds like s. So *llegé* would come out wrong: the u in *llegué* keeps the hard g of *go*, and the *qu* in *busqué* keeps the k sound. The u is silent.",
   "readAndPick": [
-    { "es": "Llegué tarde.", "options": ["I arrived late.", "He arrived late.", "I'm arriving late."], "answer": 0 },
-    { "es": "Pidió la cuenta.", "options": ["I asked for the bill.", "She asked for the bill.", "She's asking for the bill."], "answer": 1 },
-    { "es": "Pidieron la cuenta.", "options": ["We asked for the bill.", "They ask for the bill.", "They asked for the bill."], "answer": 2 },
-    { "es": "Empecé a las ocho.", "options": ["She started at eight.", "I started at eight.", "I start at eight."], "answer": 1 },
-    { "es": "¿Buscaste las llaves?", "options": ["Did you look for the keys?", "Did I look for the keys?", "Are you looking for the keys?"], "answer": 0 },
-    { "es": "Mariana leyó el artículo.", "options": ["Mariana is going to read the article.", "Mariana read the article."], "answer": 1 },
-    { "es": "Pagué con tarjeta.", "options": ["He paid by card.", "I pay by card.", "I paid by card."], "answer": 2 },
-    { "es": "Don Hernando durmió en el sofá.", "options": ["Don Hernando slept on the sofa.", "Don Hernando sleeps on the sofa.", "I slept on the sofa."], "answer": 0 },
-    { "es": "Sirvieron el almuerzo a la una.", "options": ["We served lunch at one.", "They served lunch at one."], "answer": 1 }
+    {
+      "es": "Llegué tarde.",
+      "options": [
+        "I arrived late.",
+        "He arrived late.",
+        "I'm arriving late."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Pidió la cuenta.",
+      "options": [
+        "I asked for the bill.",
+        "She asked for the bill.",
+        "She's asking for the bill."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pidieron la cuenta.",
+      "options": [
+        "We asked for the bill.",
+        "They ask for the bill.",
+        "They asked for the bill."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Empecé a las ocho.",
+      "options": [
+        "She started at eight.",
+        "I started at eight.",
+        "I start at eight."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "¿Buscaste las llaves?",
+      "options": [
+        "Did you look for the keys?",
+        "Did I look for the keys?",
+        "Are you looking for the keys?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Mariana leyó el artículo.",
+      "options": [
+        "Mariana is going to read the article.",
+        "Mariana read the article."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Pagué con tarjeta.",
+      "options": [
+        "He paid by card.",
+        "I pay by card.",
+        "I paid by card."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "Don Hernando durmió en el sofá.",
+      "options": [
+        "Don Hernando slept on the sofa.",
+        "Don Hernando sleeps on the sofa.",
+        "I slept on the sofa."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Sirvieron el almuerzo a la una.",
+      "options": [
+        "We served lunch at one.",
+        "They served lunch at one."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
       "prompt": "Pick and type the whole sentence: *Ayer ___ tarde.* (*llegé* or *llegué*) I arrived late yesterday.",
       "answer": "Ayer llegué tarde.",
-      "accept": ["Llegué tarde ayer."],
+      "accept": [
+        "Llegué tarde ayer."
+      ],
       "why": "The u keeps the hard g sound: *llegué*."
     },
     {
@@ -45,13 +141,17 @@
     {
       "prompt": "I looked for my phone.",
       "answer": "Busqué mi celular.",
-      "accept": ["Yo busqué mi celular."],
+      "accept": [
+        "Yo busqué mi celular."
+      ],
       "why": "For I, the c of *buscar* becomes *qu*: *busqué*."
     },
     {
       "prompt": "I started at six.",
       "answer": "Empecé a las seis.",
-      "accept": ["Yo empecé a las seis."],
+      "accept": [
+        "Yo empecé a las seis."
+      ],
       "why": "For I, the z of *empezar* becomes c: *empecé*."
     },
     {
@@ -63,13 +163,18 @@
     {
       "prompt": "Make it about *they*: *Pidió la cuenta.*",
       "answer": "Pidieron la cuenta.",
-      "accept": ["Ellos pidieron la cuenta.", "Ellas pidieron la cuenta."],
+      "accept": [
+        "Ellos pidieron la cuenta.",
+        "Ellas pidieron la cuenta."
+      ],
       "why": "They gets the i too: *pidieron*."
     },
     {
       "prompt": "Make it about *I*: *Tomás pagó con tarjeta.*",
       "answer": "Pagué con tarjeta.",
-      "accept": ["Yo pagué con tarjeta."],
+      "accept": [
+        "Yo pagué con tarjeta."
+      ],
       "why": "*Pagó* is fine as it is, but for I the g needs a u: *pagué*."
     },
     {

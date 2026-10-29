@@ -2,28 +2,103 @@
   "node": "p:mas-de-number",
   "hook": {
     "line": "Prices, ages, crowds: plenty of the numbers you'll say are more than or fewer than something. English uses *than* for all of it, and that walks you straight into a small trap.",
-    "es": "El café tiene más de cincuenta años.",
-    "en": "The café is more than fifty years old."
+    "es": "El café tiene más de cuarenta años.",
+    "en": "The café is more than forty years old."
   },
   "examples": [
-    { "es": "Cuesta más de cien mil pesos.", "en": "It costs more than a hundred thousand pesos." },
-    { "es": "Hernando tiene más de setenta años.", "en": "Hernando is over seventy." },
-    { "es": "Había menos de diez personas.", "en": "There were fewer than ten people." },
-    { "es": "¿Tienes más de treinta años?", "en": "Are you over thirty?" },
-    { "es": "Altamira compró más de diez casas en el barrio.", "en": "Altamira bought more than ten houses in the neighbourhood." },
-    { "es": "Vale trabaja más que yo.", "en": "Vale works more than me." }
+    {
+      "es": "Cuesta más de cien mil pesos.",
+      "en": "It costs more than a hundred thousand pesos."
+    },
+    {
+      "es": "Hernando tiene más de setenta años.",
+      "en": "Hernando is over seventy."
+    },
+    {
+      "es": "Había menos de diez personas.",
+      "en": "There were fewer than ten people."
+    },
+    {
+      "es": "¿Tienes más de treinta años?",
+      "en": "Are you over thirty?"
+    },
+    {
+      "es": "Altamira compró más de diez casas en el barrio.",
+      "en": "Altamira bought more than ten houses in the neighbourhood."
+    },
+    {
+      "es": "Vale trabaja más que yo.",
+      "en": "Vale works more than me."
+    }
   ],
   "rule": "Before a number, more than is *más de*, and fewer than or less than is *menos de*: *más de cien mil pesos*, *menos de diez personas*. You're giving an amount, not comparing two things.\n\nWhen you compare with someone or something else, it's the *que* you already know: *Vale trabaja más que yo*.\n\nSo the test is simple: is a number next? Then *de*.\n\nOne twist to recognise: *No tengo más que diez mil pesos* means I only have ten thousand pesos.",
   "smallPrint": "Teachers call *más de* and *menos de* comparisons of quantity. English uses *than* for both jobs; Spanish splits them.",
   "readAndPick": [
-    { "es": "Hernando tiene más de setenta años.", "options": ["Hernando is over seventy.", "Hernando is under seventy."], "answer": 0 },
-    { "es": "Había menos de diez personas.", "options": ["There were more than ten people.", "There were fewer than ten people."], "answer": 1 },
-    { "es": "No tengo más que diez mil pesos.", "options": ["I only have ten thousand pesos.", "I have more than ten thousand pesos."], "answer": 0 },
-    { "es": "Tengo más de diez mil pesos.", "options": ["I only have ten thousand pesos.", "I have more than ten thousand pesos."], "answer": 1 },
-    { "es": "Vale trabaja más que yo.", "options": ["I work more than Vale.", "Vale works more than me."], "answer": 1 },
-    { "es": "Altamira compró más de diez casas.", "options": ["Altamira bought more than ten houses.", "Altamira bought fewer than ten houses."], "answer": 0 },
-    { "es": "Cuesta menos de cien mil pesos.", "options": ["It costs more than a hundred thousand pesos.", "It costs a hundred thousand pesos.", "It costs less than a hundred thousand pesos."], "answer": 2 },
-    { "es": "¿Tienes más de treinta años?", "options": ["Are you over thirty?", "Are you under thirty?"], "answer": 0 }
+    {
+      "es": "Hernando tiene más de setenta años.",
+      "options": [
+        "Hernando is over seventy.",
+        "Hernando is under seventy."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Había menos de diez personas.",
+      "options": [
+        "There were more than ten people.",
+        "There were fewer than ten people."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "No tengo más que diez mil pesos.",
+      "options": [
+        "I only have ten thousand pesos.",
+        "I have more than ten thousand pesos."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Tengo más de diez mil pesos.",
+      "options": [
+        "I only have ten thousand pesos.",
+        "I have more than ten thousand pesos."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Vale trabaja más que yo.",
+      "options": [
+        "I work more than Vale.",
+        "Vale works more than me."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Altamira compró más de diez casas.",
+      "options": [
+        "Altamira bought more than ten houses.",
+        "Altamira bought fewer than ten houses."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Cuesta menos de cien mil pesos.",
+      "options": [
+        "It costs more than a hundred thousand pesos.",
+        "It costs a hundred thousand pesos.",
+        "It costs less than a hundred thousand pesos."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Tienes más de treinta años?",
+      "options": [
+        "Are you over thirty?",
+        "Are you under thirty?"
+      ],
+      "answer": 0
+    }
   ],
   "yourTurn": [
     {

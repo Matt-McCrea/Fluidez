@@ -69,13 +69,13 @@
     },
     {
       "id": "t4",
-      "npc": "¿Y este señor? Soy yo. Antes fumaba mucho.",
-      "npcEn": "And this man? It's me. I used to smoke a lot.",
-      "intent": "Ask him if he stopped smoking.",
+      "npc": "¿Y este señor del taxi? Soy yo. Antes trabajaba doce horas al día.",
+      "npcEn": "And this man with the taxi? It's me. I used to work twelve hours a day.",
+      "intent": "Ask him when he stopped working.",
       "accept": [
-        "¿Y usted dejó de fumar?",
-        "¿Ya dejó de fumar, don Hernando?",
-        "¿Usted todavía fuma o dejó de fumar?"
+        "¿Cuándo dejó de trabajar?",
+        "¿Y cuándo dejó de trabajar, don Hernando?",
+        "¿Cuándo dejó de trabajar en el taxi?"
       ],
       "require": [
         {
@@ -84,9 +84,9 @@
         },
         {
           "type": "regex",
-          "pattern": "\\bdej[oó] de fumar\\b",
+          "pattern": "\\bdej[oó] de trabajar\\b",
           "flags": "i",
-          "label": "did you (usted) stop smoking: ¿dejó de fumar?"
+          "label": "when did you (usted) stop working: ¿cuándo dejó de trabajar?"
         }
       ],
       "focus": "p:dejar-de-inf",
@@ -94,8 +94,8 @@
     },
     {
       "id": "t5",
-      "npc": "Sí, hace veinte años. Bueno, ¿y qué te gusta más, Bogotá o Toronto?",
-      "npcEn": "Yes, twenty years ago. Well, and which do you like more, Bogotá or Toronto?",
+      "npc": "Hace diez años. Bueno, ¿y qué te gusta más, Bogotá o Toronto?",
+      "npcEn": "Ten years ago. Well, and which do you like more, Bogotá or Toronto?",
       "intent": "Say you like Bogotá more than Toronto.",
       "accept": [
         "Me gusta más Bogotá que Toronto.",
@@ -115,13 +115,14 @@
     },
     {
       "id": "t6",
-      "npc": "¿Y el tinto? ¿El de Vale es mejor que el de Rosa?",
-      "npcEn": "And the coffee? Is Vale's better than Rosa's?",
-      "intent": "Say there's no comparison: Vale's coffee is better.",
+      "npc": "¿Y las almojábanas? ¿Vale las hace mejor que Rosa?",
+      "npcEn": "And the almojábanas? Does Vale make them better than Rosa?",
+      "intent": "Say there's no comparison: Rosa made them better.",
       "accept": [
-        "No hay comparación. El de Vale es mejor.",
-        "No hay comparación, don Hernando. El tinto de Vale es mejor.",
-        "Es mejor el de Vale. No hay comparación."
+        "No hay comparación. Rosa las hacía mejor.",
+        "No hay comparación, don Hernando. Rosa las hacía mejor.",
+        "Rosa las hacía mejor. No hay comparación.",
+        "No hay comparación. Las de Rosa eran mejores."
       ],
       "require": [
         {
@@ -141,7 +142,6 @@
   ],
   "requires": [
     "c:a-ver",
-    "c:bien-y-tu",
     "c:entonces-bueno",
     "c:hay",
     "c:me-gusta",
@@ -152,13 +152,13 @@
     "c:tienes",
     "g:adjective-agreement",
     "g:comparatives",
+    "g:direct-objects",
     "g:gender-articles",
     "g:gustar-basic",
     "g:hace-ago",
     "g:hay-vs-esta",
     "g:imperfect-habitual",
     "g:imperfect-states",
-    "g:present-ar",
     "g:present-er-ir",
     "g:preterite-ar",
     "g:questions",
@@ -168,6 +168,7 @@
     "g:yo-irregular",
     "l:aeropuerto",
     "l:ahora",
+    "l:almojábana",
     "l:alto",
     "l:antes",
     "l:aquí",
@@ -176,13 +177,15 @@
     "l:bueno",
     "l:café",
     "l:comparación",
+    "l:cuándo",
     "l:dejar",
     "l:domingo",
+    "l:día",
     "l:foto",
-    "l:fumar",
     "l:gustar",
     "l:hacer",
     "l:hacia",
+    "l:hora",
     "l:llevarse",
     "l:mejor",
     "l:mirar",
@@ -193,8 +196,9 @@
     "l:qué",
     "l:ser",
     "l:señor",
+    "l:taxi",
     "l:tener",
-    "l:tinto",
+    "l:trabajar",
     "l:ver",
     "l:viejo",
     "p:aqui-ahi-alla",
@@ -213,7 +217,6 @@
     "p:quantifiers-basic",
     "p:senor-don-article",
     "p:tener-anos",
-    "p:viejo-antiguo-mayor",
-    "p:ya-todavia-basic"
+    "p:viejo-antiguo-mayor"
   ]
 }

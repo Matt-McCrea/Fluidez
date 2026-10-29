@@ -2,7 +2,7 @@
   {
     "id": "w-u11-01",
     "unit": "u11",
-    "prompt": "Mariana asks what your Sundays were like when you were a kid. Text her two short sentences about what you used to do every Sunday.",
+    "prompt": "Vale asks what Sundays at the café were like when you were six. Text her two short sentences, as a friend, about what you used to do every Sunday.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -85,7 +85,7 @@
   {
     "id": "w-u11-03",
     "unit": "u11",
-    "prompt": "Your friend Vale asks whether you were a good kid at school. Reply in two short sentences, someone your age, saying how you were and how you behaved.",
+    "prompt": "Mariana remembers you as the little troublemaker of the café, and asks whether you were a good kid at school in Toronto. Reply in two short sentences, as a friend: what you were like and how you behaved.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -110,10 +110,9 @@
       {
         "type": "avoidsAny",
         "words": [
-          "fui ",
-          "soy "
+          "fui "
         ],
-        "label": "era for how you used to be, not fui or soy"
+        "label": "era for how you used to be, not fui"
       }
     ],
     "model": "De niño era muy travieso. Siempre peleaba con mi hermano.",
@@ -137,48 +136,52 @@
   {
     "id": "w-u11-04",
     "unit": "u11",
-    "prompt": "Text Mariana about your grandmother's café. Say what Rosa used to do there while you sat on the counter, in two short sentences.",
+    "prompt": "Your language exchange partner asks what school was like for you. Write two short sentences, as a friend: what you used to do at recess and which subject you liked.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
       {
-        "type": "verbForm",
-        "inf": "cantar",
+        "type": "anyVerbInTense",
         "tense": "imperfecto",
-        "person": "él/ella",
-        "label": "use cantaba (she used to sing)"
+        "label": "use the imperfect for what you used to do"
+      },
+      {
+        "type": "containsAny",
+        "words": [
+          "recreo",
+          "materia"
+        ],
+        "label": "mention el recreo or una materia"
       },
       {
         "type": "minSentences",
         "n": 2
-      },
-      {
-        "type": "avoidsAny",
-        "words": [
-          "canta ",
-          "cantó"
-        ],
-        "label": "cantaba, not canta or cantó"
       }
     ],
-    "model": "Mi abuela cantaba en el café. Yo me sentaba en el mostrador.",
+    "model": "En el recreo jugaba fútbol con mis amigos. Mi materia favorita era la música.",
     "focus": "g:imperfect-habitual",
     "requires": [
+      "c:era",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:reflexive-routine",
-      "l:abuela",
-      "l:café",
-      "l:cantar",
-      "l:mostrador",
-      "l:sentarse",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:amigo",
+      "l:favorito",
+      "l:fútbol",
+      "l:jugar",
+      "l:materia",
+      "l:música",
+      "l:recreo",
+      "l:ser",
       "p:possessives-basic"
     ]
   },
   {
     "id": "w-u11-05",
     "unit": "u11",
-    "prompt": "Vale notices you no longer drink fizzy drinks. Tell her in two short sentences, as a friend, that you don't drink them now and that you stopped some time ago.",
+    "prompt": "Vale notices you drink your tinto without sugar now. Tell her in two short sentences, as a friend, that you don't take sugar any more and that you stopped some time ago.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -192,19 +195,22 @@
         "label": "say what you no longer do"
       }
     ],
-    "model": "Ya no tomo gaseosa. Dejé de tomar gaseosa hace dos años.",
+    "model": "Ya no tomo azúcar. Dejé de tomar tinto con azúcar hace un mes.",
     "focus": "p:dejar-de-inf",
     "requires": [
       "c:ya-no",
+      "g:gender-articles",
       "g:hace-ago",
       "g:present-ar",
       "g:present-er-ir",
       "g:preterite-ar",
-      "l:año",
+      "l:azúcar",
       "l:dejar",
-      "l:gaseosa",
       "l:hacer",
+      "l:mes",
+      "l:tinto",
       "l:tomar",
+      "p:con-sin",
       "p:dejar-de-inf"
     ]
   },
@@ -255,13 +261,13 @@
   {
     "id": "w-u11-07",
     "unit": "u11",
-    "prompt": "At the café, an older woman you'd call usted asks how tall your son was as a boy. Answer her politely in two sentences: how tall he was at ten and how tall he is now.",
+    "prompt": "An older neighbour (you'd call her usted) hasn't seen your little brother since he was ten. Tell her politely, in two sentences, how tall he was then and how tall he is now.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
       {
         "type": "regex",
-        "pattern": "\\bmid(e|ió|ía)\\b",
+        "pattern": "\\b(mide|medía|midió)",
         "label": "use mide or medía for height"
       },
       {
@@ -278,7 +284,7 @@
         "label": "mide, not es or tiene"
       }
     ],
-    "model": "A los diez años medía un metro treinta. Ahora mide un metro setenta.",
+    "model": "A los diez años medía un metro treinta. Ahora mide un metro ochenta.",
     "focus": "p:medir-pesar",
     "requires": [
       "g:gender-articles",
@@ -294,7 +300,7 @@
   {
     "id": "w-u11-08",
     "unit": "u11",
-    "prompt": "Compare then and now for Tomás's Spanish: write a friend one or two sentences saying your Spanish is better now than before.",
+    "prompt": "A friend in Toronto asks how your Spanish is going. Write one or two sentences saying it's better now than before.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -411,7 +417,7 @@
   {
     "id": "w-u11-11",
     "unit": "u11",
-    "prompt": "You are telling Vale about the café of your childhood and the café now. Write two short sentences using en cambio to set one against the other.",
+    "prompt": "Write to your dad in Toronto about the café: how it was when you were little and how it is now. Two short sentences, using en cambio to set one against the other.",
     "minWords": 8,
     "maxWords": 30,
     "constraints": [
@@ -431,21 +437,24 @@
         "label": "one sentence about before, in the imperfect"
       }
     ],
-    "model": "Antes el café era pequeño. Ahora, en cambio, es grande.",
+    "model": "Antes el café era tranquilo. Ahora, en cambio, hay una fila en la calle.",
     "focus": "c:en-cambio",
     "requires": [
       "c:en-cambio",
       "c:era",
+      "c:hay",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:imperfect-states",
       "g:ser-identity",
       "l:ahora",
       "l:antes",
       "l:café",
+      "l:calle",
       "l:cambio",
-      "l:grande",
-      "l:pequeño",
-      "l:ser"
+      "l:fila",
+      "l:ser",
+      "l:tranquilo"
     ]
   },
   {

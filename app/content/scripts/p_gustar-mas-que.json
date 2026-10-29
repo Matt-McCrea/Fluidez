@@ -6,24 +6,100 @@
     "en": "I like black coffee more than tea."
   },
   "examples": [
-    { "es": "Me gusta más el campo que la ciudad.", "en": "I like the countryside more than the city." },
-    { "es": "Me gusta más leer que ver televisión.", "en": "I like reading more than watching TV." },
-    { "es": "¿Te gusta más el café o el té?", "en": "Do you like coffee or tea more?" },
-    { "es": "Nos gustan más los perros que los gatos.", "en": "We like dogs more than cats." },
-    { "es": "A Vale le gusta más cocinar que lavar los platos.", "en": "Vale likes cooking more than washing the dishes." },
-    { "es": "Prefiero el té al café.", "en": "I prefer tea to coffee." }
+    {
+      "es": "Me gusta más el campo que la ciudad.",
+      "en": "I like the countryside more than the city."
+    },
+    {
+      "es": "Me gusta más leer que ver televisión.",
+      "en": "I like reading more than watching TV."
+    },
+    {
+      "es": "¿Te gusta más el café o el té?",
+      "en": "Do you like coffee or tea more?"
+    },
+    {
+      "es": "Nos gustan más los perros que los gatos.",
+      "en": "We like dogs more than cats."
+    },
+    {
+      "es": "A Vale le gusta más cocinar que lavar los platos.",
+      "en": "Vale likes cooking more than washing the dishes."
+    },
+    {
+      "es": "Prefiero el té al café.",
+      "en": "I prefer tea to coffee."
+    }
   ],
   "rule": "English says I like X more than Y. Spanish keeps the *gusta* frame and puts *más* straight after it: *Me gusta más el campo*. Then *que* (than) brings in the other side: *que la ciudad*.\n\n*Más* appears once. Keep both sides the same kind: two things (*el té que el café*) or two activities (*leer que ver televisión*). Things keep their *el* or *la*.\n\nLiking more than one thing? *Gustan*: *Me gustan más los perros*. Asking? Offer a choice with *o*. *Interesa* works the same way. And *prefiero X a Y* says it too.",
   "smallPrint": "Teachers call this a comparison of preference. The *al* in *Prefiero el té al café* is just *a* + *el* squeezed together.",
   "readAndPick": [
-    { "es": "Me gusta más el campo que la ciudad.", "options": ["I like the city more than the countryside.", "I like the countryside more than the city."], "answer": 1 },
-    { "es": "A Vale le gusta más leer que ver televisión.", "options": ["Vale likes reading more than watching TV.", "Vale likes watching TV more than reading."], "answer": 0 },
-    { "es": "Nos gustan más los perros que los gatos.", "options": ["I like dogs more than cats.", "We like cats more than dogs.", "We like dogs more than cats."], "answer": 2 },
-    { "es": "¿Te gusta más el café o el té?", "options": ["Do you like coffee or tea more?", "Do you like coffee more than tea?"], "answer": 0 },
-    { "es": "Prefiero el té al café.", "options": ["I prefer coffee to tea.", "I prefer tea to coffee."], "answer": 1 },
-    { "es": "A Hernando le gusta más el fútbol que la música.", "options": ["Hernando likes football more than music.", "Hernando likes music more than football."], "answer": 0 },
-    { "es": "Me interesa más la historia.", "options": ["I'm interested in history too.", "I'm more interested in history.", "I'm not interested in history."], "answer": 1 },
-    { "es": "Ahora me gusta más Bogotá que Toronto.", "options": ["Now I like Toronto more than Bogotá.", "Now I like Bogotá more than Toronto."], "answer": 1 }
+    {
+      "es": "Me gusta más el campo que la ciudad.",
+      "options": [
+        "I like the city more than the countryside.",
+        "I like the countryside more than the city."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Vale le gusta más leer que ver televisión.",
+      "options": [
+        "Vale likes reading more than watching TV.",
+        "Vale likes watching TV more than reading."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Nos gustan más los perros que los gatos.",
+      "options": [
+        "I like dogs more than cats.",
+        "We like cats more than dogs.",
+        "We like dogs more than cats."
+      ],
+      "answer": 2
+    },
+    {
+      "es": "¿Te gusta más el café o el té?",
+      "options": [
+        "Do you like coffee or tea more?",
+        "Do you like coffee more than tea?"
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Prefiero el té al café.",
+      "options": [
+        "I prefer coffee to tea.",
+        "I prefer tea to coffee."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "A Hernando le gusta más el fútbol que la música.",
+      "options": [
+        "Hernando likes football more than music.",
+        "Hernando likes music more than football."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Me interesa más la historia.",
+      "options": [
+        "I'm interested in history too.",
+        "I'm more interested in history.",
+        "I'm not interested in history."
+      ],
+      "answer": 1
+    },
+    {
+      "es": "Ahora me gusta más Bogotá que Toronto.",
+      "options": [
+        "Now I like Toronto more than Bogotá.",
+        "Now I like Bogotá more than Toronto."
+      ],
+      "answer": 1
+    }
   ],
   "yourTurn": [
     {
@@ -41,13 +117,18 @@
     {
       "prompt": "I like reading more than watching TV.",
       "answer": "Me gusta más leer que ver televisión.",
-      "accept": ["Me gusta más leer que ver la televisión."],
+      "accept": [
+        "Me gusta más leer que ver la televisión."
+      ],
       "why": "Two activities, so two verbs ending in *r*, and *más* comes straight after *gusta*."
     },
     {
       "prompt": "To a friend: do you like coffee or tea more?",
       "answer": "¿Te gusta más el café o el té?",
-      "accept": [],
+      "accept": [
+        "¿Qué te gusta más, el café o el té?",
+        "¿Te gusta más el té o el café?"
+      ],
       "why": "In a question you offer a choice, so it's *o*, not *que*."
     },
     {

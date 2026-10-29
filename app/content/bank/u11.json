@@ -294,16 +294,16 @@
   },
   {
     "id": "u11-0013",
-    "es": "Siempre bebíamos chocolate con queso.",
+    "es": "Siempre tomábamos chocolate con queso.",
     "en": "We always used to drink hot chocolate with cheese.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
-      "l:beber",
       "l:chocolate",
       "l:queso",
       "l:siempre",
+      "l:tomar",
       "p:con-sin",
       "p:frequency-scale"
     ],
@@ -522,10 +522,8 @@
   {
     "id": "u11-0023",
     "es": "¿Qué hacías los domingos?",
-    "en": "What did you used to do on Sundays? (to a friend)",
-    "accept": [
-      "¿Qué hacías los domingos?"
-    ],
+    "en": "What did you use to do on Sundays? (to a friend)",
+    "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -567,7 +565,7 @@
   {
     "id": "u11-0025",
     "es": "¿Tú cantabas de niña?",
-    "en": "Did you used to sing as a girl? (to a friend)",
+    "en": "Did you use to sing as a girl? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -586,7 +584,7 @@
   {
     "id": "u11-0026",
     "es": "¿Ustedes iban a la playa en vacaciones?",
-    "en": "Did you all used to go to the beach on vacation?",
+    "en": "Did you all use to go to the beach on vacation?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -735,14 +733,15 @@
   },
   {
     "id": "u11-0033",
-    "es": "Vale hacía postres para su mamá.",
-    "en": "Vale used to make desserts for her mom.",
+    "es": "De niña, Vale hacía postres para su mamá.",
+    "en": "As a girl, Vale used to make desserts for her mom.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
       "l:hacer",
       "l:mamá",
+      "l:niña",
       "l:postre",
       "p:para-inf",
       "p:possessives-basic"
@@ -977,17 +976,19 @@
   },
   {
     "id": "u11-0044",
-    "es": "Mi abuela vendía arepas en la esquina.",
-    "en": "My grandmother used to sell arepas on the corner.",
+    "es": "Mi abuela vendía empanadas en el parque los domingos.",
+    "en": "My grandmother used to sell empanadas in the park on Sundays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
       "l:abuela",
-      "l:arepa",
-      "l:esquina",
+      "l:domingo",
+      "l:empanada",
+      "l:parque",
       "l:vender",
+      "p:days-el-lunes",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1166,26 +1167,24 @@
   },
   {
     "id": "u11-0052",
-    "es": "Cuando era niña, me gustaba el recreo.",
-    "en": "When I was a girl, I liked recess.",
+    "es": "En el colegio me gustaba más la música que la historia.",
+    "en": "At school I liked music more than history.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
+      "g:comparatives",
       "g:gender-articles",
       "g:gustar-basic",
       "g:imperfect-habitual",
-      "g:imperfect-states",
-      "g:ser-identity",
+      "l:colegio",
       "l:gustar",
-      "l:niña",
-      "l:recreo",
-      "l:ser",
-      "p:cuando-basic"
+      "l:historia",
+      "l:música",
+      "p:gustar-mas-que"
     ],
     "targets": [
       "g:imperfect-habitual",
-      "l:recreo"
+      "p:gustar-mas-que"
     ],
     "kind": "statement",
     "unit": "u11",
@@ -1219,25 +1218,20 @@
   },
   {
     "id": "u11-0054",
-    "es": "Cuando era niña, siempre hacía la tarea después de comer.",
-    "en": "When I was a girl, I always used to do my homework after eating.",
+    "es": "Siempre hacía la tarea después del almuerzo, en la mesa de la cocina.",
+    "en": "I always used to do my homework after lunch, at the kitchen table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:imperfect-states",
-      "g:prep-infinitive",
-      "g:ser-identity",
-      "l:comer",
+      "l:almuerzo",
+      "l:cocina",
       "l:después",
       "l:hacer",
-      "l:niña",
-      "l:ser",
+      "l:mesa",
       "l:siempre",
       "l:tarea",
-      "p:cuando-basic",
       "p:frequency-scale",
       "p:time-sequence-basic"
     ],
@@ -1252,27 +1246,21 @@
   },
   {
     "id": "u11-0055",
-    "es": "Cuando era niño, vivía en el campo con mi abuelo.",
-    "en": "When I was a boy, I lived in the countryside with my grandfather.",
+    "es": "De pequeño vivía en el campo con mi abuelo.",
+    "en": "When I was little, I lived in the countryside with my grandfather.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:cuando-era-nino",
-      "c:era",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:imperfect-states",
       "l:abuelo",
       "l:campo",
-      "l:niño",
-      "l:ser",
+      "l:pequeño",
       "l:vivir",
       "p:possessives-basic"
     ],
     "targets": [
-      "c:cuando-era-nino",
-      "g:imperfect-habitual",
-      "l:campo"
+      "g:imperfect-habitual"
     ],
     "kind": "statement",
     "unit": "u11",
@@ -1281,24 +1269,22 @@
   },
   {
     "id": "u11-0056",
-    "es": "Cuando era niña, mi maestro me daba un diez en español.",
-    "en": "When I was a girl, my teacher used to give me a ten in Spanish.",
+    "es": "Cuando sacaba una nota alta, el maestro me daba un dulce.",
+    "en": "When I got a high grade, the teacher used to give me a candy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
+      "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:imperfect-states",
       "g:reflexive-routine",
-      "g:ser-identity",
+      "l:alto",
       "l:darse",
-      "l:español",
+      "l:dulce",
       "l:maestro",
-      "l:niña",
-      "l:ser",
-      "p:cuando-basic",
-      "p:possessives-basic"
+      "l:nota",
+      "l:sacar",
+      "p:cuando-basic"
     ],
     "targets": [
       "g:imperfect-habitual",
@@ -1342,22 +1328,17 @@
   },
   {
     "id": "u11-0058",
-    "es": "Cuando era niña, no me gustaban los exámenes.",
-    "en": "When I was a girl, I did not like exams.",
+    "es": "Antes de los exámenes, no dormía nada.",
+    "en": "Before exams, I didn't sleep at all.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "g:gender-articles",
-      "g:gustar-basic",
       "g:imperfect-habitual",
-      "g:imperfect-states",
-      "g:ser-identity",
-      "l:examen",
-      "l:gustar",
-      "l:niña",
-      "l:ser",
-      "p:cuando-basic"
+      "g:negation-words",
+      "l:antes",
+      "l:dormir",
+      "l:examen"
     ],
     "targets": [
       "g:imperfect-habitual",
@@ -1400,22 +1381,18 @@
   },
   {
     "id": "u11-0060",
-    "es": "Cuando era niña, mi mamá cocinaba el almuerzo.",
-    "en": "When I was a girl, my mom used to cook lunch.",
+    "es": "Mi mamá cocinaba y mi papá lavaba los platos.",
+    "en": "My mom used to cook and my dad used to wash the dishes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "g:imperfect-states",
-      "g:ser-identity",
-      "l:almuerzo",
       "l:cocinar",
+      "l:lavar",
       "l:mamá",
-      "l:niña",
-      "l:ser",
-      "p:cuando-basic",
+      "l:papá",
+      "l:plato",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1428,25 +1405,25 @@
   },
   {
     "id": "u11-0061",
-    "es": "Cuando era niño, tenía una bicicleta azul.",
-    "en": "When I was a boy, I had a blue bicycle.",
+    "es": "Mi primera bicicleta era azul y muy fea.",
+    "en": "My first bicycle was blue and very ugly.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:cuando-era-nino",
       "c:era",
-      "g:gender-articles",
+      "g:adjective-agreement",
       "g:imperfect-states",
+      "g:ser-identity",
       "l:azul",
       "l:bicicleta",
-      "l:niño",
+      "l:feo",
       "l:ser",
-      "l:tener"
+      "p:ordinal-floor",
+      "p:ordinals-primer-tercer",
+      "p:possessives-basic",
+      "p:quantifiers-basic"
     ],
-    "targets": [
-      "c:cuando-era-nino",
-      "l:bicicleta"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u11",
     "theme": "school days",
@@ -1482,26 +1459,18 @@
   },
   {
     "id": "u11-0063",
-    "es": "Cuando era niño, mi infancia era sencilla.",
-    "en": "When I was a boy, my childhood was simple.",
+    "es": "De niños no teníamos mucho, pero teníamos tiempo.",
+    "en": "As kids we didn't have much, but we had time.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:cuando-era-nino",
-      "c:era",
-      "g:adjective-agreement",
       "g:imperfect-states",
-      "g:ser-identity",
-      "l:infancia",
       "l:niño",
-      "l:sencillo",
-      "l:ser",
-      "p:possessives-basic"
+      "l:tener",
+      "l:tiempo",
+      "p:quantifiers-basic"
     ],
-    "targets": [
-      "c:cuando-era-nino",
-      "l:infancia"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u11",
     "theme": "school days",
@@ -1531,17 +1500,17 @@
   },
   {
     "id": "u11-0065",
-    "es": "Mi infancia pasó en un pueblo pequeño.",
-    "en": "My childhood went by in a small town.",
+    "es": "Viví toda mi infancia en un pueblo pequeño.",
+    "en": "I lived in a small town my whole childhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:preterite-er-ir",
       "l:infancia",
-      "l:pasar",
       "l:pequeño",
       "l:pueblo",
+      "l:vivir",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1576,18 +1545,17 @@
   },
   {
     "id": "u11-0067",
-    "es": "Mi niñez fue muy tranquila.",
-    "en": "My childhood was very quiet.",
+    "es": "Tuve una niñez muy tranquila.",
+    "en": "I had a very quiet childhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:tranquilo",
-      "g:preterite-ser-ir-hacer",
-      "g:ser-identity",
+      "g:gender-articles",
+      "g:preterite-irregular-strong",
       "l:niñez",
-      "l:ser",
+      "l:tener",
       "l:tranquilo",
-      "p:possessives-basic",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -1600,8 +1568,8 @@
   },
   {
     "id": "u11-0068",
-    "es": "Mi maestro se llamaba señor Rojas.",
-    "en": "My teacher was called Mr. Rojas.",
+    "es": "Mi maestro se llamaba don Rafael.",
+    "en": "My teacher was called Don Rafael.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -1609,7 +1577,6 @@
       "g:reflexive-routine",
       "l:llamarse",
       "l:maestro",
-      "l:señor",
       "p:possessives-basic",
       "p:senor-don-article"
     ],
@@ -1674,18 +1641,19 @@
   },
   {
     "id": "u11-0071",
-    "es": "Mi maestro explicaba la clase en el patio.",
-    "en": "My teacher used to explain the class in the yard.",
+    "es": "Los viernes, el maestro daba la clase en el patio.",
+    "en": "On Fridays, the teacher used to teach in the yard.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
       "l:clase",
-      "l:explicar",
+      "l:dar",
       "l:maestro",
       "l:patio",
-      "p:possessives-basic"
+      "l:viernes",
+      "p:days-el-lunes"
     ],
     "targets": [
       "g:imperfect-habitual",
@@ -1795,18 +1763,19 @@
   },
   {
     "id": "u11-0076",
-    "es": "Mi hermano sacaba una nota baja en todo.",
-    "en": "My brother used to get a low grade in everything.",
+    "es": "Mi hermano nunca sacaba una nota alta.",
+    "en": "My brother never used to get a high grade.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "l:bajo",
+      "l:alto",
       "l:hermano",
       "l:nota",
       "l:sacar",
+      "p:frequency-scale",
       "p:possessives-basic"
     ],
     "targets": [
@@ -1844,15 +1813,14 @@
   },
   {
     "id": "u11-0078",
-    "es": "La nota del examen era muy baja.",
+    "es": "La nota del examen fue muy baja.",
     "en": "The grade on the exam was very low.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:era",
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:imperfect-states",
+      "g:preterite-ser-ir-hacer",
       "g:ser-identity",
       "l:bajo",
       "l:examen",
@@ -2129,18 +2097,21 @@
   },
   {
     "id": "u11-0090",
-    "es": "La pelota siempre llegaba a la calle.",
-    "en": "The ball always used to end up in the street.",
+    "es": "La pelota siempre terminaba debajo de un carro.",
+    "en": "The ball always used to end up under a car.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:imperfect-habitual",
-      "l:calle",
-      "l:llegar",
+      "l:carro",
+      "l:debajo",
       "l:pelota",
       "l:siempre",
-      "p:frequency-scale"
+      "l:terminar",
+      "p:cerca-de",
+      "p:frequency-scale",
+      "p:position-de"
     ],
     "targets": [
       "g:imperfect-habitual",
@@ -2599,19 +2570,17 @@
   },
   {
     "id": "u11-0109",
-    "es": "Una chica nueva llegó a mi clase.",
-    "en": "A new girl came to my class.",
+    "es": "En mi clase había solo una chica.",
+    "en": "There was only one girl in my class.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:imperfect-states",
       "l:chica",
       "l:clase",
-      "l:llegar",
-      "l:nuevo",
-      "p:possessives-basic"
+      "p:possessives-basic",
+      "p:sobre-todo-solo"
     ],
     "targets": [
       "l:chica"
@@ -2748,22 +2717,20 @@
   },
   {
     "id": "u11-0115",
-    "es": "Mi hermano dejó de gritar en el recreo.",
-    "en": "My brother stopped yelling at recess.",
+    "es": "Por fin mi hermano dejó de gritar.",
+    "en": "My brother finally stopped yelling.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:preterite-ar",
       "l:dejar",
+      "l:fin",
       "l:gritar",
       "l:hermano",
-      "l:recreo",
       "p:dejar-de-inf",
       "p:possessives-basic"
     ],
     "targets": [
-      "l:recreo",
       "p:dejar-de-inf"
     ],
     "kind": "statement",
@@ -3180,18 +3147,17 @@
   },
   {
     "id": "u11-0134",
-    "es": "Llamé a la puerta, pero nadie abrió.",
-    "en": "I knocked on the door, but nobody opened.",
+    "es": "Llegué a la casa, pero nadie abrió.",
+    "en": "I got to the house, but nobody opened the door.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
       "g:preterite-er-ir",
+      "g:preterite-spelling-stem",
       "l:abrir",
-      "l:llamar",
-      "l:puerta",
-      "p:personal-a"
+      "l:casa",
+      "l:llegar"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -3653,14 +3619,15 @@
   },
   {
     "id": "u11-0156",
-    "es": "Mariana oyó a Vale dentro de la oficina.",
-    "en": "Mariana heard Vale inside the office.",
+    "es": "Mariana oyó a dos hombres dentro de la oficina.",
+    "en": "Mariana heard two men inside the office.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
       "l:dentro",
+      "l:hombre",
       "l:oficina",
       "l:oír",
       "p:cerca-de",
@@ -3697,15 +3664,15 @@
   },
   {
     "id": "u11-0158",
-    "es": "Simón gritó desde la silla.",
-    "en": "Simón yelled from the chair.",
+    "es": "Simón gritó desde la ventana.",
+    "en": "Simón yelled from the window.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:gritar",
-      "l:silla"
+      "l:ventana"
     ],
     "targets": [],
     "kind": "statement",
@@ -3735,16 +3702,20 @@
   },
   {
     "id": "u11-0160",
-    "es": "Los clientes durmieron en la sala.",
-    "en": "The customers slept in the living room.",
+    "es": "Esa noche, mis primos durmieron en la sala.",
+    "en": "That night, my cousins slept in the living room.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:demonstratives",
       "g:gender-articles",
       "g:preterite-spelling-stem",
-      "l:cliente",
       "l:dormir",
-      "l:sala"
+      "l:noche",
+      "l:primo",
+      "l:sala",
+      "p:masculine-plural-mixed",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:preterite-spelling-stem"
@@ -3897,18 +3868,20 @@
   },
   {
     "id": "u11-0168",
-    "es": "Rosa murió hace dos años.",
-    "en": "Rosa died two years ago.",
+    "es": "Rosa murió hace pocos meses.",
+    "en": "Rosa died a few months ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:hace-ago",
       "g:present-er-ir",
       "g:preterite-spelling-stem",
-      "l:año",
       "l:hacer",
+      "l:mes",
       "l:morir",
-      "p:naci-en"
+      "p:naci-en",
+      "p:poco-un-poco",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:preterite-spelling-stem",
@@ -3948,16 +3921,20 @@
   },
   {
     "id": "u11-0170",
-    "es": "El abuelo de Tomás murió en Toronto.",
-    "en": "Tomás's grandfather died in Toronto.",
+    "es": "Mi abuelo murió en Toronto, lejos de su país.",
+    "en": "My grandfather died in Toronto, far from his country.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:preterite-spelling-stem",
       "l:abuelo",
+      "l:lejos",
       "l:morir",
-      "p:naci-en"
+      "l:país",
+      "p:cerca-de",
+      "p:naci-en",
+      "p:position-de",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:preterite-spelling-stem",
@@ -4014,14 +3991,16 @@
   },
   {
     "id": "u11-0173",
-    "es": "Yo preferí el café con leche.",
-    "en": "I preferred the coffee with milk.",
+    "es": "Al final preferí el café con leche.",
+    "en": "In the end I preferred the coffee with milk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:al-final",
       "g:gender-articles",
       "g:preterite-er-ir",
       "l:café",
+      "l:final",
       "l:leche",
       "l:preferir",
       "p:con-sin",
@@ -4210,13 +4189,15 @@
   },
   {
     "id": "u11-0182",
-    "es": "Creí a Mariana.",
-    "en": "I believed Mariana.",
+    "es": "Creí la historia de Mariana.",
+    "en": "I believed Mariana's story.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:preterite-er-ir",
-      "l:creer"
+      "l:creer",
+      "l:historia"
     ],
     "targets": [],
     "kind": "statement",
@@ -4719,8 +4700,8 @@
   },
   {
     "id": "u11-0205",
-    "es": "¿De qué se trata la carta?",
-    "en": "What is the letter about?",
+    "es": "La carta se trata de la casa.",
+    "en": "The letter is about the house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -4728,9 +4709,10 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:carta",
-      "l:qué",
+      "l:casa",
       "l:tratarse",
-      "p:prep-questions-basic"
+      "p:se-trata-de",
+      "p:tratar-de"
     ],
     "targets": [
       "l:tratarse"
@@ -4765,13 +4747,13 @@
   },
   {
     "id": "u11-0207",
-    "es": "¿De qué se trata la reunión?",
-    "en": "What is the meeting about?",
+    "es": "¿De qué se trataba la reunión?",
+    "en": "What was the meeting about?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:imperfect-habitual",
       "g:reflexive-routine",
       "l:qué",
       "l:reunión",
@@ -5000,7 +4982,7 @@
   {
     "id": "u11-0217",
     "es": "No me importa el precio.",
-    "en": "I do not mind the price.",
+    "en": "The price doesn't matter to me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5279,17 +5261,19 @@
   },
   {
     "id": "u11-0230",
-    "es": "Rosa mantenía la cocina bonita.",
-    "en": "Rosa used to keep the kitchen pretty.",
+    "es": "Rosa mantenía la cocina siempre en orden.",
+    "en": "Rosa always kept the kitchen tidy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "l:bonito",
       "l:cocina",
-      "l:mantener"
+      "l:mantener",
+      "l:orden",
+      "l:siempre",
+      "p:el-orden-la-orden",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:imperfect-habitual",
@@ -5390,8 +5374,8 @@
   },
   {
     "id": "u11-0235",
-    "es": "Tomás consiguió un trabajo nuevo en la panadería.",
-    "en": "Tomás got a new job at the bakery.",
+    "es": "Mi primo consiguió un trabajo nuevo en una panadería.",
+    "en": "My cousin got a new job at a bakery.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5400,8 +5384,10 @@
       "l:conseguir",
       "l:nuevo",
       "l:panadería",
+      "l:primo",
       "l:trabajo",
-      "p:intentar-conseguir"
+      "p:intentar-conseguir",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:conseguir"
@@ -5568,20 +5554,17 @@
   },
   {
     "id": "u11-0243",
-    "es": "Los turistas pidieron una mesa cerca de la ventana.",
-    "en": "The tourists asked for a table near the window.",
+    "es": "Los turistas pidieron la carta en inglés.",
+    "en": "The tourists asked for the menu in English.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
-      "l:cerca",
-      "l:mesa",
+      "l:carta",
+      "l:inglés",
       "l:pedir",
       "l:turista",
-      "l:ventana",
-      "p:cerca-de",
-      "p:position-de",
       "p:preguntar-pedir"
     ],
     "targets": [
@@ -5617,18 +5600,22 @@
   },
   {
     "id": "u11-0245",
-    "es": "Los vecinos se sintieron tristes con Tomás.",
-    "en": "The neighbors felt sad for Tomás.",
+    "es": "Los vecinos se sintieron tristes cuando cerró la panadería.",
+    "en": "The neighbors felt sad when the bakery closed.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
+      "g:preterite-ar",
       "g:preterite-spelling-stem",
       "g:reflexive-routine",
+      "l:cerrar",
+      "l:panadería",
       "l:sentirse",
       "l:triste",
       "l:vecino",
+      "p:cuando-basic",
       "p:sentirse-mal"
     ],
     "targets": [
@@ -5661,15 +5648,14 @@
   },
   {
     "id": "u11-0247",
-    "es": "Rosa prefirió vender el pan en la esquina.",
-    "en": "Rosa preferred to sell the bread on the corner.",
+    "es": "Rosa prefirió no vender la esquina.",
+    "en": "Rosa preferred not to sell the corner.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
       "l:esquina",
-      "l:pan",
       "l:preferir",
       "l:vender",
       "p:prefieres-x-o-y"
@@ -5733,17 +5719,20 @@
   },
   {
     "id": "u11-0250",
-    "es": "El esposo de Rosa murió antes que ella.",
-    "en": "Rosa's husband died before her.",
+    "es": "El viejo taxi de Don Hernando murió en 2010.",
+    "en": "Don Hernando's old taxi died in 2010.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
-      "l:antes",
-      "l:esposo",
       "l:morir",
-      "p:naci-en"
+      "l:taxi",
+      "l:viejo",
+      "p:dates-years",
+      "p:naci-en",
+      "p:senor-don-article",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:preterite-spelling-stem",
@@ -5756,17 +5745,19 @@
   },
   {
     "id": "u11-0251",
-    "es": "Los padres de Vale murieron en Medellín.",
-    "en": "Vale's parents died in Medellín.",
+    "es": "Mis abuelos murieron el mismo año.",
+    "en": "My grandparents died the same year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
+      "l:abuelos",
+      "l:año",
       "l:morir",
-      "l:padres",
       "p:masculine-plural-mixed",
-      "p:naci-en"
+      "p:naci-en",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:preterite-spelling-stem",
@@ -5910,14 +5901,15 @@
   },
   {
     "id": "u11-0258",
-    "es": "Tomás creyó a Don Hernando.",
-    "en": "Tomás believed Don Hernando.",
+    "es": "Tomás no creyó la historia de Hernando.",
+    "en": "Tomás didn't believe Hernando's story.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:preterite-spelling-stem",
       "l:creer",
-      "p:senor-don-article"
+      "l:historia"
     ],
     "targets": [
       "g:preterite-spelling-stem"
@@ -5969,16 +5961,16 @@
   },
   {
     "id": "u11-0261",
-    "es": "Vale oyó una llamada en la cocina.",
-    "en": "Vale heard a call in the kitchen.",
+    "es": "Vale oyó el teléfono en la cocina.",
+    "en": "Vale heard the phone in the kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
       "l:cocina",
-      "l:llamada",
-      "l:oír"
+      "l:oír",
+      "l:teléfono"
     ],
     "targets": [
       "g:preterite-spelling-stem"
@@ -6213,18 +6205,20 @@
   },
   {
     "id": "u11-0272",
-    "es": "Pagué un precio alto por la mesa.",
-    "en": "I paid a high price for the table.",
+    "es": "Pagué demasiado por esa mesa vieja.",
+    "en": "I paid too much for that old table.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:adjective-agreement",
+      "g:demonstratives",
       "g:preterite-spelling-stem",
-      "l:alto",
+      "g:quantifiers",
       "l:mesa",
       "l:pagar",
-      "l:precio",
-      "p:costar-pagar"
+      "l:viejo",
+      "p:costar-pagar",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:preterite-spelling-stem"
@@ -6280,8 +6274,8 @@
   },
   {
     "id": "u11-0275",
-    "es": "Saqué el pan del horno a las siete.",
-    "en": "I took the bread out of the oven at seven.",
+    "es": "A las siete saqué el pan del horno.",
+    "en": "At seven I took the bread out of the oven.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6324,17 +6318,20 @@
   },
   {
     "id": "u11-0277",
-    "es": "Jugué toda la tarde en la calle.",
-    "en": "I played all afternoon in the street.",
+    "es": "El domingo jugué parqués con Don Hernando y perdí.",
+    "en": "On Sunday I played parqués with Don Hernando and lost.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:preterite-er-ir",
       "g:preterite-spelling-stem",
-      "l:calle",
+      "l:domingo",
       "l:jugar",
-      "l:tarde",
-      "p:todos-los-dias"
+      "l:parque",
+      "l:perder",
+      "p:days-el-lunes",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:preterite-spelling-stem"
@@ -6367,8 +6364,8 @@
   },
   {
     "id": "u11-0279",
-    "es": "Empecé a entender la historia de la casa.",
-    "en": "I started to understand the history of the house.",
+    "es": "Poco a poco empecé a entender la historia de la casa.",
+    "en": "Little by little I started to understand the history of the house.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6379,7 +6376,8 @@
       "l:empezar",
       "l:entender",
       "l:historia",
-      "p:empezar-terminar"
+      "p:empezar-terminar",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:preterite-spelling-stem"
@@ -6413,14 +6411,15 @@
   },
   {
     "id": "u11-0281",
-    "es": "Almorcé solo en la plaza.",
-    "en": "I had lunch alone in the plaza.",
+    "es": "Hoy almorcé solo en la plaza.",
+    "en": "Today I had lunch alone in the plaza.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
       "l:almorzar",
+      "l:hoy",
       "l:plaza"
     ],
     "targets": [
@@ -6454,8 +6453,8 @@
   },
   {
     "id": "u11-0283",
-    "es": "Practiqué mi español anoche.",
-    "en": "I practiced my Spanish last night.",
+    "es": "Anoche practiqué mi español con Simón.",
+    "en": "Last night I practiced my Spanish with Simón.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -6782,18 +6781,16 @@
   },
   {
     "id": "u11-0298",
-    "es": "¿Cuánto pagaste por el arriendo?",
-    "en": "How much did you pay for the rent? (to a friend)",
+    "es": "¿Cuánto pagaste de arriendo?",
+    "en": "How much did you pay in rent? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:preterite-ar",
       "g:questions",
       "l:arriendo",
       "l:cuánto",
-      "l:pagar",
-      "p:costar-pagar"
+      "l:pagar"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -6952,15 +6949,17 @@
   },
   {
     "id": "u11-0306",
-    "es": "¿Murió Rosa en el café?",
-    "en": "Did Rosa die at the café?",
+    "es": "¿Quién murió en la película?",
+    "en": "Who died in the movie?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
-      "l:café",
+      "g:questions",
       "l:morir",
+      "l:película",
+      "l:quién",
       "p:naci-en"
     ],
     "targets": [
@@ -6974,19 +6973,21 @@
   },
   {
     "id": "u11-0307",
-    "es": "No, murió en el hospital.",
-    "en": "No, she died in the hospital.",
+    "es": "Murieron todos. Fue muy triste.",
+    "en": "They all died. It was very sad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:preterite-ser-ir-hacer",
       "g:preterite-spelling-stem",
-      "l:hospital",
+      "g:ser-identity",
       "l:morir",
-      "p:naci-en"
+      "l:ser",
+      "l:triste",
+      "p:naci-en",
+      "p:quantifiers-basic"
     ],
     "targets": [
-      "g:preterite-spelling-stem",
       "l:morir"
     ],
     "kind": "dialogue",
@@ -7175,18 +7176,17 @@
   },
   {
     "id": "u11-0317",
-    "es": "Dejé la luz de la sala en la noche.",
-    "en": "I left the living room light on at night.",
+    "es": "Sin luz en la sala, leí en la cocina.",
+    "en": "With no light in the living room, I read in the kitchen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-ar",
-      "l:dejar",
+      "g:preterite-er-ir",
+      "l:cocina",
+      "l:leer",
       "l:luz",
-      "l:noche",
-      "l:sala",
-      "p:por-la-manana"
+      "l:sala"
     ],
     "targets": [
       "l:luz"
@@ -7262,17 +7262,18 @@
   },
   {
     "id": "u11-0321",
-    "es": "Mariana tiene un punto importante.",
-    "en": "Mariana has an important point.",
+    "es": "El café es el punto de reunión del barrio.",
+    "en": "The café is the neighborhood's meeting point.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
       "g:gender-articles",
-      "g:stem-boot",
-      "l:importante",
+      "g:ser-identity",
+      "l:barrio",
+      "l:café",
       "l:punto",
-      "l:tener"
+      "l:reunión",
+      "l:ser"
     ],
     "targets": [
       "l:punto"
@@ -7306,17 +7307,18 @@
   },
   {
     "id": "u11-0323",
-    "es": "Ese es el punto del artículo.",
-    "en": "That is the point of the article.",
+    "es": "Mariana tiene tres puntos en su lista.",
+    "en": "Mariana has three points on her list.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
-      "g:gender-articles",
-      "g:ser-identity",
-      "l:artículo",
+      "c:tienes",
+      "g:adjective-agreement",
+      "g:stem-boot",
+      "l:listo",
       "l:punto",
-      "l:ser"
+      "l:tener",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:punto"
@@ -7328,16 +7330,16 @@
   },
   {
     "id": "u11-0324",
-    "es": "No veo el punto de esperar.",
-    "en": "I do not see the point of waiting.",
+    "es": "Hablamos de todos los puntos del contrato.",
+    "en": "We talked about all the points in the contract.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:yo-irregular",
-      "l:esperar",
-      "l:punto",
-      "l:ver"
+      "g:present-ar",
+      "l:contrato",
+      "l:hablar",
+      "l:punto"
     ],
     "targets": [
       "l:punto"
@@ -7372,18 +7374,17 @@
   },
   {
     "id": "u11-0326",
-    "es": "Tomás no tiene ningún punto fuerte.",
-    "en": "Tomás does not have any strong point.",
+    "es": "Mi equipo necesita un punto más.",
+    "en": "My team needs one more point.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
-      "g:indefinites",
-      "g:negation-words",
-      "g:stem-boot",
-      "l:fuerte",
+      "g:gender-articles",
+      "g:present-ar",
+      "l:equipo",
+      "l:necesitar",
       "l:punto",
-      "l:tener"
+      "p:possessives-basic"
     ],
     "targets": [
       "l:punto"
@@ -7459,8 +7460,8 @@
   },
   {
     "id": "u11-0330",
-    "es": "Toronto es más grande que Bogotá.",
-    "en": "Toronto is bigger than Bogotá.",
+    "es": "Bogotá es más grande que Toronto.",
+    "en": "Bogotá is bigger than Toronto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -7479,15 +7480,19 @@
   },
   {
     "id": "u11-0331",
-    "es": "Bogotá es más grande que Cali.",
-    "en": "Bogotá is bigger than Cali.",
+    "es": "Toronto es más tranquila que Bogotá, pero más aburrida.",
+    "en": "Toronto is quieter than Bogotá, but more boring.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tranquilo",
+      "g:adjective-agreement",
       "g:comparatives",
       "g:ser-identity",
-      "l:grande",
-      "l:ser"
+      "l:aburrido",
+      "l:ser",
+      "l:tranquilo",
+      "p:aburrir-aburrirse"
     ],
     "targets": [
       "g:comparatives"
@@ -7546,19 +7551,19 @@
   },
   {
     "id": "u11-0334",
-    "es": "El centro es menos tranquilo que mi barrio.",
-    "en": "Downtown is less quiet than my neighborhood.",
+    "es": "En el centro hay más bancos que en mi barrio.",
+    "en": "There are more banks downtown than in my neighborhood.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tranquilo",
+      "c:hay",
       "g:comparatives",
       "g:gender-articles",
-      "g:ser-identity",
+      "g:hay-vs-esta",
+      "l:banco",
       "l:barrio",
       "l:centro",
-      "l:ser",
-      "l:tranquilo",
+      "p:lugar-tiene",
       "p:possessives-basic"
     ],
     "targets": [
@@ -7571,15 +7576,18 @@
   },
   {
     "id": "u11-0335",
-    "es": "Cali es menos fría que Bogotá.",
-    "en": "Cali is less cold than Bogotá.",
+    "es": "Cartagena es menos fría que Bogotá, pero mucho más cara.",
+    "en": "Cartagena is less cold than Bogotá, but much more expensive.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
       "g:ser-identity",
+      "l:cara",
+      "l:cartagena",
       "l:frío",
-      "l:ser"
+      "l:ser",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:comparatives"
@@ -7977,18 +7985,19 @@
   },
   {
     "id": "u11-0352",
-    "es": "El bus es tan rápido como el carro.",
-    "en": "The bus is as fast as the car.",
+    "es": "Con el trancón, el carro no es tan rápido como la bicicleta.",
+    "en": "With the traffic, the car isn't as fast as the bicycle.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
       "g:gender-articles",
       "g:ser-identity",
-      "l:bus",
+      "l:bicicleta",
       "l:carro",
       "l:rápido",
-      "l:ser"
+      "l:ser",
+      "l:trancón"
     ],
     "targets": [
       "g:comparatives"
@@ -8301,18 +8310,19 @@
   },
   {
     "id": "u11-0367",
-    "es": "Hoy llegamos más tarde que ayer.",
-    "en": "Today we arrived later than yesterday.",
+    "es": "Hoy los clientes llegaron más temprano que nunca.",
+    "en": "Today the customers arrived earlier than ever.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
       "g:comparatives",
+      "g:gender-articles",
       "g:preterite-ar",
-      "l:ayer",
+      "l:cliente",
       "l:hoy",
       "l:llegar",
-      "l:tarde"
+      "l:temprano",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:comparatives"
@@ -8346,21 +8356,26 @@
   },
   {
     "id": "u11-0369",
-    "es": "Vale es menor que Tomás.",
-    "en": "Vale is younger than Tomás.",
+    "es": "¿Quién es mayor, tu hermano o tú?",
+    "en": "Who is older, your brother or you? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:comparatives",
+      "g:questions",
       "g:ser-identity",
-      "l:menor",
+      "l:hermano",
+      "l:mayor",
+      "l:quién",
       "l:ser",
-      "p:mayor-menor"
+      "p:mayor-menor",
+      "p:possessives-basic",
+      "p:question-word-order",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
-      "g:comparatives"
+      "p:mayor-menor"
     ],
-    "kind": "statement",
+    "kind": "question",
     "unit": "u11",
     "theme": "comparing cities and places",
     "source": "gen"
@@ -8437,12 +8452,13 @@
   },
   {
     "id": "u11-0373",
-    "es": "Mariana es dos años menor que yo.",
-    "en": "Mariana is two years younger than me.",
+    "es": "Mariana es un año menor que Tomás.",
+    "en": "Mariana is one year younger than Tomás.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
+      "g:gender-articles",
       "g:ser-identity",
       "l:año",
       "l:menor",
@@ -8554,17 +8570,18 @@
   },
   {
     "id": "u11-0378",
-    "es": "Vale es más delgada que Mariana.",
-    "en": "Vale is thinner than Mariana.",
+    "es": "Mi perro está más gordo que antes.",
+    "en": "My dog is fatter than before.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:comparatives",
-      "g:ser-identity",
-      "l:delgado",
-      "l:ser",
-      "p:es-tiene-lleva"
+      "g:estar-location-states",
+      "l:antes",
+      "l:estar",
+      "l:gordo",
+      "l:perro",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:comparatives"
@@ -8622,18 +8639,20 @@
   },
   {
     "id": "u11-0381",
-    "es": "Hoy estoy más nervioso que ayer.",
-    "en": "Today I am more nervous than yesterday.",
+    "es": "Antes del examen, estaba más nervioso que nunca.",
+    "en": "Before the exam, I was more nervous than ever.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
       "g:comparatives",
       "g:estar-location-states",
-      "l:ayer",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "l:antes",
       "l:estar",
-      "l:hoy",
-      "l:nervioso"
+      "l:examen",
+      "l:nervioso",
+      "p:frequency-scale"
     ],
     "targets": [
       "g:comparatives"
@@ -8707,17 +8726,18 @@
   },
   {
     "id": "u11-0385",
-    "es": "Mi tío está más enfermo que ayer.",
-    "en": "My uncle is sicker than yesterday.",
+    "es": "Mi tío está más enfermo que la semana pasada.",
+    "en": "My uncle is sicker than last week.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
       "g:comparatives",
       "g:estar-location-states",
-      "l:ayer",
       "l:enfermo",
       "l:estar",
+      "l:pasar",
+      "l:semana",
       "l:tío",
       "p:possessives-basic"
     ],
@@ -8755,8 +8775,8 @@
   },
   {
     "id": "u11-0387",
-    "es": "El tinto está más frío que el jugo.",
-    "en": "The black coffee is colder than the juice.",
+    "es": "¡Este tinto está más frío que el jugo!",
+    "en": "This black coffee is colder than the juice!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8766,7 +8786,8 @@
       "l:estar",
       "l:frío",
       "l:jugo",
-      "l:tinto"
+      "l:tinto",
+      "p:demonstratives-basic"
     ],
     "targets": [
       "g:comparatives"
@@ -8898,21 +8919,22 @@
   },
   {
     "id": "u11-0393",
-    "es": "El ajiaco es más picante que la sopa.",
-    "en": "The ajiaco is spicier than the soup.",
+    "es": "El ajiaco no es picante; la comida de México, en cambio, sí.",
+    "en": "Ajiaco is not spicy; Mexican food, on the other hand, is.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:comparatives",
+      "c:en-cambio",
       "g:gender-articles",
       "g:ser-identity",
       "l:ajiaco",
+      "l:cambio",
+      "l:comida",
       "l:picante",
-      "l:ser",
-      "l:sopa"
+      "l:ser"
     ],
     "targets": [
-      "g:comparatives"
+      "c:en-cambio"
     ],
     "kind": "statement",
     "unit": "u11",
@@ -9018,18 +9040,20 @@
   },
   {
     "id": "u11-0398",
-    "es": "Las empanadas son más ricas que los buñuelos.",
-    "en": "The empanadas are tastier than the buñuelos.",
+    "es": "Antes las empanadas eran más baratas que ahora.",
+    "en": "Empanadas used to be cheaper than now.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:comparatives",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:ser-identity",
-      "l:buñuelo",
+      "l:ahora",
+      "l:antes",
+      "l:barato",
       "l:empanada",
-      "l:rico",
       "l:ser"
     ],
     "targets": [
@@ -9064,17 +9088,15 @@
   },
   {
     "id": "u11-0400",
-    "es": "Mi cama es más grande que mi sofá.",
-    "en": "My bed is bigger than my sofa.",
+    "es": "Mi cuarto en Bogotá es más pequeño que mi cuarto en Toronto.",
+    "en": "My room in Bogotá is smaller than my room in Toronto.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
       "g:ser-identity",
-      "l:cama",
-      "l:grande",
+      "l:pequeño",
       "l:ser",
-      "l:sofá",
       "p:possessives-basic"
     ],
     "targets": [
@@ -9136,17 +9158,21 @@
   },
   {
     "id": "u11-0403",
-    "es": "Mi celular es más caro que tu celular.",
-    "en": "My cell phone is more expensive than your cell phone. (to a friend)",
+    "es": "Mi celular es más viejo que el de mi abuela.",
+    "en": "My cell phone is older than my grandmother's.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
+      "g:gender-articles",
       "g:ser-identity",
-      "l:caro",
+      "l:abuela",
       "l:celular",
       "l:ser",
-      "p:possessives-basic"
+      "l:viejo",
+      "p:los-de-la-camiseta",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:comparatives"
@@ -9158,18 +9184,23 @@
   },
   {
     "id": "u11-0404",
-    "es": "Tu bicicleta es más rápida que mi bicicleta.",
-    "en": "Your bicycle is faster than my bicycle. (to a friend)",
+    "es": "Mi bicicleta vieja era más rápida que esta.",
+    "en": "My old bicycle was faster than this one.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:adjective-agreement",
       "g:comparatives",
+      "g:imperfect-states",
       "g:ser-identity",
       "l:bicicleta",
       "l:rápido",
       "l:ser",
-      "p:possessives-basic"
+      "l:viejo",
+      "p:demonstratives-basic",
+      "p:possessives-basic",
+      "p:viejo-antiguo-mayor"
     ],
     "targets": [
       "g:comparatives",
@@ -9302,8 +9333,8 @@
   },
   {
     "id": "u11-0410",
-    "es": "Es menos difícil que el año pasado.",
-    "en": "It is less difficult than last year.",
+    "es": "Este año el español es menos difícil que el año pasado.",
+    "en": "This year Spanish is less difficult than last year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9312,8 +9343,10 @@
       "g:ser-identity",
       "l:año",
       "l:difícil",
+      "l:español",
       "l:pasado",
       "l:ser",
+      "p:demonstratives-basic",
       "p:time-pasado-que-viene"
     ],
     "targets": [
@@ -9350,23 +9383,20 @@
   },
   {
     "id": "u11-0412",
-    "es": "La clase de hoy fue más corta que la de ayer.",
-    "en": "Today's class was shorter than yesterday's.",
+    "es": "El recreo era más corto que la clase.",
+    "en": "Recess was shorter than class.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ayer-anoche",
-      "g:adjective-agreement",
+      "c:era",
       "g:comparatives",
       "g:gender-articles",
-      "g:preterite-ser-ir-hacer",
+      "g:imperfect-states",
       "g:ser-identity",
-      "l:ayer",
       "l:clase",
       "l:corto",
-      "l:hoy",
-      "l:ser",
-      "p:los-de-la-camiseta"
+      "l:recreo",
+      "l:ser"
     ],
     "targets": [
       "g:comparatives"
@@ -9433,26 +9463,24 @@
   },
   {
     "id": "u11-0415",
-    "es": "Mi nota es más baja que la de mi hermano.",
-    "en": "My grade is lower than my brother's.",
+    "es": "En el colegio, mi hermana era mejor estudiante que yo.",
+    "en": "At school, my sister was a better student than me.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
+      "c:era",
       "g:comparatives",
       "g:gender-articles",
-      "g:ser-identity",
-      "l:bajo",
-      "l:hermano",
-      "l:nota",
+      "g:imperfect-states",
+      "l:colegio",
+      "l:estudiante",
+      "l:hermana",
+      "l:mejor",
       "l:ser",
-      "p:es-tiene-lleva",
-      "p:los-de-la-camiseta",
       "p:possessives-basic"
     ],
     "targets": [
-      "g:comparatives",
-      "l:nota"
+      "g:comparatives"
     ],
     "kind": "statement",
     "unit": "u11",
@@ -9484,16 +9512,19 @@
   },
   {
     "id": "u11-0417",
-    "es": "La película es menos interesante que el libro.",
-    "en": "The movie is less interesting than the book.",
+    "es": "Antes las películas eran más largas que hoy.",
+    "en": "Movies used to be longer than today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:comparatives",
       "g:gender-articles",
+      "g:imperfect-states",
       "g:ser-identity",
-      "l:interesante",
-      "l:libro",
+      "l:antes",
+      "l:hoy",
+      "l:largo",
       "l:película",
       "l:ser"
     ],
@@ -9703,8 +9734,8 @@
   },
   {
     "id": "u11-0426",
-    "es": "Me gusta más el tinto que el jugo.",
-    "en": "I like black coffee more than juice.",
+    "es": "Por la mañana me gusta más el tinto que el jugo.",
+    "en": "In the morning I like black coffee more than juice.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9714,8 +9745,10 @@
       "g:gustar-basic",
       "l:gustar",
       "l:jugo",
+      "l:mañana",
       "l:tinto",
-      "p:gustar-mas-que"
+      "p:gustar-mas-que",
+      "p:por-la-manana"
     ],
     "targets": [
       "g:comparatives"
@@ -9752,16 +9785,18 @@
   },
   {
     "id": "u11-0428",
-    "es": "Me gusta más bailar que cantar.",
-    "en": "I like dancing more than singing.",
+    "es": "En las fiestas me gusta más bailar que cantar.",
+    "en": "At parties I like dancing more than singing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
       "g:comparatives",
+      "g:gender-articles",
       "g:gustar-basic",
       "l:bailar",
       "l:cantar",
+      "l:fiesta",
       "l:gustar",
       "p:gustar-mas-que"
     ],
@@ -9802,8 +9837,8 @@
   },
   {
     "id": "u11-0430",
-    "es": "Me gusta más la arepa que el pan.",
-    "en": "I like the arepa more than bread.",
+    "es": "En el desayuno me gusta más la arepa que el pan.",
+    "en": "At breakfast I like arepa more than bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9812,6 +9847,7 @@
       "g:gender-articles",
       "g:gustar-basic",
       "l:arepa",
+      "l:desayuno",
       "l:gustar",
       "l:pan",
       "p:gustar-mas-que"
@@ -9826,15 +9862,17 @@
   },
   {
     "id": "u11-0431",
-    "es": "Me gusta más el frío que el calor.",
-    "en": "I like the cold more than the heat.",
+    "es": "A mí me gusta más el frío de Bogotá que el calor de Cali.",
+    "en": "I like the cold in Bogotá more than the heat in Cali.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-mi-tambien",
       "c:me-gusta",
       "g:comparatives",
       "g:gender-articles",
       "g:gustar-basic",
+      "g:prep-pronouns",
       "l:calor",
       "l:frío",
       "l:gustar",
@@ -9874,19 +9912,21 @@
   },
   {
     "id": "u11-0433",
-    "es": "Me gustan más las empanadas que los buñuelos.",
-    "en": "I like empanadas more than buñuelos.",
+    "es": "A Don Hernando le gustan más las empanadas que los buñuelos.",
+    "en": "Don Hernando likes empanadas more than buñuelos.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
       "g:gender-articles",
       "g:gustar-basic",
+      "g:gustar-full",
       "g:present-ar",
       "l:buñuelo",
       "l:empanada",
       "l:gustar",
-      "p:gustar-mas-que"
+      "p:gustar-mas-que",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:comparatives"
@@ -9898,8 +9938,8 @@
   },
   {
     "id": "u11-0434",
-    "es": "Me gusta más el mercado que la tienda.",
-    "en": "I like the market more than the store.",
+    "es": "El mercado me gusta más que la tienda.",
+    "en": "I like the market more than the shop.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10381,23 +10421,28 @@
   },
   {
     "id": "u11-0453",
-    "es": "Prefiero el campo a la ciudad.",
-    "en": "I prefer the countryside to the city.",
+    "es": "Prefiero los lunes a los domingos: hay menos gente en el café.",
+    "en": "I prefer Mondays to Sundays: there are fewer people in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:hay",
       "g:gender-articles",
+      "g:hay-vs-esta",
       "g:stem-boot",
-      "l:campo",
-      "l:ciudad",
+      "l:café",
+      "l:domingo",
+      "l:gente",
+      "l:lunes",
       "l:preferir",
+      "p:days-el-lunes",
       "p:gustar-mas-que",
+      "p:la-gente-singular",
       "p:preferir-a",
       "p:prefieres-x-o-y"
     ],
     "targets": [
-      "l:campo",
-      "l:preferir"
+      "p:preferir-a"
     ],
     "kind": "statement",
     "unit": "u11",
@@ -10406,16 +10451,16 @@
   },
   {
     "id": "u11-0454",
-    "es": "Prefiero caminar al bus.",
-    "en": "I prefer walking to the bus.",
+    "es": "Prefiero escribir a hablar por teléfono.",
+    "en": "I prefer writing to talking on the phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:stem-boot",
-      "l:bus",
-      "l:caminar",
+      "l:escribir",
+      "l:hablar",
       "l:preferir",
+      "l:teléfono",
       "p:prefieres-x-o-y"
     ],
     "targets": [
@@ -10428,16 +10473,16 @@
   },
   {
     "id": "u11-0455",
-    "es": "Prefiero la sopa al ajiaco.",
-    "en": "I prefer soup to ajiaco.",
+    "es": "Prefiero el pescado a la carne.",
+    "en": "I prefer fish to meat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
-      "l:ajiaco",
+      "l:carne",
+      "l:pescado",
       "l:preferir",
-      "l:sopa",
       "p:gustar-mas-que",
       "p:preferir-a",
       "p:prefieres-x-o-y"
@@ -10452,17 +10497,19 @@
   },
   {
     "id": "u11-0456",
-    "es": "Prefiero el bus al taxi.",
-    "en": "I prefer the bus to the taxi.",
+    "es": "Mi papá prefiere el taxi al bus.",
+    "en": "My dad prefers the taxi to the bus.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
       "l:bus",
+      "l:papá",
       "l:preferir",
       "l:taxi",
       "p:gustar-mas-que",
+      "p:possessives-basic",
       "p:preferir-a",
       "p:prefieres-x-o-y"
     ],
@@ -10785,8 +10832,8 @@
   },
   {
     "id": "u11-0471",
-    "es": "Tomás mide un metro setenta y cinco.",
-    "en": "Tomás is one meter seventy-five.",
+    "es": "Tomás mide un metro ochenta y dos.",
+    "en": "Tomás is one meter eighty-two.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11028,12 +11075,11 @@
   },
   {
     "id": "u11-0482",
-    "es": "Simón pesa casi un kilo.",
-    "en": "Simón weighs almost a kilo.",
+    "es": "Simón pesa medio kilo.",
+    "en": "Simón weighs half a kilo.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:present-ar",
       "l:kilo",
       "l:pesar",
@@ -11333,15 +11379,15 @@
   },
   {
     "id": "u11-0496",
-    "es": "Se parece a su tía.",
-    "en": "He looks like his aunt.",
+    "es": "Se parece a su papá.",
+    "en": "He looks like his dad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-er-ir",
       "g:reflexive-routine",
+      "l:papá",
       "l:parecerse",
-      "l:tía",
       "p:parecer-vs-parecerse",
       "p:parecerse-a",
       "p:possessives-basic"
@@ -11354,17 +11400,19 @@
   },
   {
     "id": "u11-0497",
-    "es": "Me gusta más leer que escribir.",
-    "en": "I like reading more than writing.",
+    "es": "Siempre me gustó más leer que escribir.",
+    "en": "I always liked reading more than writing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
       "g:comparatives",
       "g:gustar-basic",
+      "g:preterite-ar",
       "l:escribir",
       "l:gustar",
       "l:leer",
+      "l:siempre",
+      "p:frequency-scale",
       "p:gustar-mas-que"
     ],
     "targets": [
@@ -11378,8 +11426,8 @@
   },
   {
     "id": "u11-0498",
-    "es": "Me gusta más viajar que descansar.",
-    "en": "I like traveling more than resting.",
+    "es": "En vacaciones me gusta más viajar que descansar.",
+    "en": "On vacation I like traveling more than resting.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -11388,6 +11436,7 @@
       "g:gustar-basic",
       "l:descansar",
       "l:gustar",
+      "l:vacación",
       "l:viajar",
       "p:gustar-mas-que"
     ],
@@ -11402,17 +11451,18 @@
   },
   {
     "id": "u11-0499",
-    "es": "Me gusta más cantar que hablar.",
-    "en": "I like singing more than talking.",
+    "es": "De niña me gustaba más cantar que hablar.",
+    "en": "As a girl I liked singing more than talking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
       "g:comparatives",
       "g:gustar-basic",
+      "g:imperfect-habitual",
       "l:cantar",
       "l:gustar",
       "l:hablar",
+      "l:niña",
       "p:gustar-mas-que"
     ],
     "targets": [
@@ -11426,21 +11476,20 @@
   },
   {
     "id": "u11-0500",
-    "es": "Me gusta más correr que nadar.",
-    "en": "I like running more than swimming.",
+    "es": "¿Correr o nadar? Me gusta más nadar.",
+    "en": "Running or swimming? I like swimming more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
-      "g:comparatives",
       "g:gustar-basic",
+      "g:verb-infinitive",
       "l:correr",
       "l:gustar",
       "l:nadar",
       "p:gustar-mas-que"
     ],
     "targets": [
-      "g:comparatives",
       "p:gustar-mas-que"
     ],
     "kind": "statement",
@@ -11476,17 +11525,20 @@
   },
   {
     "id": "u11-0502",
-    "es": "Me gusta más dormir que correr.",
-    "en": "I like sleeping more than running.",
+    "es": "Los domingos me gusta más dormir que salir.",
+    "en": "On Sundays I like sleeping more than going out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
       "g:comparatives",
+      "g:gender-articles",
       "g:gustar-basic",
-      "l:correr",
+      "l:domingo",
       "l:dormir",
       "l:gustar",
+      "l:salir",
+      "p:days-el-lunes",
       "p:gustar-mas-que"
     ],
     "targets": [
@@ -11500,19 +11552,19 @@
   },
   {
     "id": "u11-0503",
-    "es": "Me gusta más estudiar de noche que de día.",
-    "en": "I like studying at night more than during the day.",
+    "es": "Mi hermano estudia mejor de noche que de día.",
+    "en": "My brother studies better at night than during the day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
       "g:comparatives",
-      "g:gustar-basic",
+      "g:present-ar",
       "l:día",
       "l:estudiar",
-      "l:gustar",
+      "l:hermano",
+      "l:mejor",
       "l:noche",
-      "p:gustar-mas-que"
+      "p:possessives-basic"
     ],
     "targets": [
       "g:comparatives"
@@ -11524,17 +11576,20 @@
   },
   {
     "id": "u11-0504",
-    "es": "Me gusta más trabajar que esperar.",
-    "en": "I like working more than waiting.",
+    "es": "En la clase de español, me gusta más hablar que escribir.",
+    "en": "In Spanish class, I like speaking more than writing.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
       "g:comparatives",
+      "g:gender-articles",
       "g:gustar-basic",
-      "l:esperar",
+      "l:clase",
+      "l:escribir",
+      "l:español",
       "l:gustar",
-      "l:trabajar",
+      "l:hablar",
       "p:gustar-mas-que"
     ],
     "targets": [
@@ -11570,19 +11625,19 @@
   },
   {
     "id": "u11-0506",
-    "es": "Me gusta más Cali que Cartagena.",
-    "en": "I like Cali more than Cartagena.",
+    "es": "¿Cali o Cartagena? A mí me gusta más Cartagena.",
+    "en": "Cali or Cartagena? I like Cartagena more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-mi-tambien",
       "c:me-gusta",
-      "g:comparatives",
       "g:gustar-basic",
+      "g:prep-pronouns",
       "l:gustar",
       "p:gustar-mas-que"
     ],
     "targets": [
-      "g:comparatives",
       "p:gustar-mas-que"
     ],
     "kind": "statement",
@@ -11663,21 +11718,20 @@
   },
   {
     "id": "u11-0510",
-    "es": "¿Te gusta más bailar que cantar?",
-    "en": "Do you like dancing more than singing? (to a friend)",
+    "es": "¿Te gustaba más la clase o el recreo?",
+    "en": "Did you like class or recess more? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
-      "g:comparatives",
+      "g:gender-articles",
       "g:gustar-basic",
-      "l:bailar",
-      "l:cantar",
+      "g:imperfect-habitual",
+      "l:clase",
       "l:gustar",
+      "l:recreo",
       "p:gustar-mas-que"
     ],
     "targets": [
-      "g:comparatives",
       "p:gustar-mas-que"
     ],
     "kind": "question",
@@ -11687,21 +11741,21 @@
   },
   {
     "id": "u11-0511",
-    "es": "¿Te gusta más escuchar que hablar?",
-    "en": "Do you like listening more than talking? (to a friend)",
+    "es": "¿A ustedes les gusta más el tinto o el chocolate?",
+    "en": "Do you all like black coffee or hot chocolate more?",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
-      "g:comparatives",
+      "g:gender-articles",
       "g:gustar-basic",
-      "l:escuchar",
+      "g:gustar-full",
+      "g:present-ar",
+      "l:chocolate",
       "l:gustar",
-      "l:hablar",
+      "l:tinto",
       "p:gustar-mas-que"
     ],
     "targets": [
-      "g:comparatives",
       "p:gustar-mas-que"
     ],
     "kind": "question",
@@ -11863,21 +11917,19 @@
   },
   {
     "id": "u11-0518",
-    "es": "A mi mamá le gusta más caminar que correr.",
-    "en": "My mom likes walking more than running.",
+    "es": "Nos gusta más el parque que el gimnasio.",
+    "en": "We like the park more than the gym.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
+      "g:gender-articles",
       "g:gustar-basic",
-      "g:gustar-full",
       "g:present-ar",
-      "l:caminar",
-      "l:correr",
+      "l:gimnasio",
       "l:gustar",
-      "l:mamá",
-      "p:gustar-mas-que",
-      "p:possessives-basic"
+      "l:parque",
+      "p:gustar-mas-que"
     ],
     "targets": [
       "g:comparatives",
@@ -11969,17 +12021,19 @@
   },
   {
     "id": "u11-0522",
-    "es": "Nos gusta más bailar que hablar.",
-    "en": "We like dancing more than talking.",
+    "es": "De jóvenes nos gustaba más bailar que hablar.",
+    "en": "When we were young we liked dancing more than talking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:adjective-agreement",
       "g:comparatives",
       "g:gustar-basic",
-      "g:present-ar",
+      "g:imperfect-habitual",
       "l:bailar",
       "l:gustar",
       "l:hablar",
+      "l:joven",
       "p:gustar-mas-que"
     ],
     "targets": [
@@ -12021,18 +12075,18 @@
   },
   {
     "id": "u11-0524",
-    "es": "A ellos les gusta más viajar que trabajar.",
-    "en": "They like traveling more than working.",
+    "es": "A los turistas les gusta más La Candelaria que Chapinero.",
+    "en": "Tourists like La Candelaria more than Chapinero.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
+      "g:gender-articles",
       "g:gustar-basic",
       "g:gustar-full",
       "g:present-ar",
       "l:gustar",
-      "l:trabajar",
-      "l:viajar",
+      "l:turista",
       "p:gustar-mas-que"
     ],
     "targets": [
@@ -12046,18 +12100,20 @@
   },
   {
     "id": "u11-0525",
-    "es": "Les gusta más caminar que sentarse.",
-    "en": "They like walking more than sitting.",
+    "es": "A los niños les gustaba más el recreo que la clase.",
+    "en": "The children liked recess more than class.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
+      "g:gender-articles",
       "g:gustar-basic",
-      "g:present-ar",
-      "g:reflexive-routine",
-      "l:caminar",
+      "g:gustar-full",
+      "g:imperfect-habitual",
+      "l:clase",
       "l:gustar",
-      "l:sentarse",
+      "l:niño",
+      "l:recreo",
       "p:gustar-mas-que"
     ],
     "targets": [
@@ -12096,22 +12152,24 @@
   },
   {
     "id": "u11-0527",
-    "es": "Me gusta más tomar tinto que té.",
-    "en": "I like drinking black coffee more than tea.",
+    "es": "Antes me gustaba más el té. Ahora me gusta más el tinto.",
+    "en": "I used to like tea more. Now I like black coffee more.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-gusta",
-      "g:comparatives",
+      "g:gender-articles",
       "g:gustar-basic",
+      "g:imperfect-habitual",
+      "l:ahora",
+      "l:antes",
       "l:gustar",
       "l:tinto",
-      "l:tomar",
       "l:té",
       "p:gustar-mas-que"
     ],
     "targets": [
-      "g:comparatives"
+      "p:gustar-mas-que"
     ],
     "kind": "statement",
     "unit": "u11",
@@ -12144,18 +12202,23 @@
   },
   {
     "id": "u11-0529",
-    "es": "Me gusta más desayunar que almorzar.",
-    "en": "I like having breakfast more than having lunch.",
+    "es": "A mi papá le gusta más almorzar en casa que en un restaurante.",
+    "en": "My dad likes having lunch at home more than in a restaurant.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
       "g:comparatives",
+      "g:gender-articles",
       "g:gustar-basic",
+      "g:gustar-full",
+      "g:present-ar",
       "l:almorzar",
-      "l:desayunar",
+      "l:casa",
       "l:gustar",
-      "p:gustar-mas-que"
+      "l:papá",
+      "l:restaurante",
+      "p:gustar-mas-que",
+      "p:possessives-basic"
     ],
     "targets": [
       "g:comparatives",
@@ -12192,15 +12255,18 @@
   },
   {
     "id": "u11-0531",
-    "es": "Me gusta más preguntar que contestar.",
-    "en": "I like asking more than answering.",
+    "es": "En las entrevistas, a Mariana le gusta más preguntar que contestar.",
+    "en": "In interviews, Mariana likes asking more than answering.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:me-gusta",
       "g:comparatives",
+      "g:gender-articles",
       "g:gustar-basic",
+      "g:gustar-full",
+      "g:present-ar",
       "l:contestar",
+      "l:entrevista",
       "l:gustar",
       "l:preguntar",
       "p:gustar-mas-que",
@@ -12244,19 +12310,19 @@
   },
   {
     "id": "u11-0533",
-    "es": "Dejé de tomar jugo hace dos años.",
-    "en": "I stopped drinking juice two years ago.",
+    "es": "Dejé de comer azúcar hace dos años.",
+    "en": "I stopped eating sugar two years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:hace-ago",
       "g:present-er-ir",
       "g:preterite-ar",
+      "l:azúcar",
       "l:año",
+      "l:comer",
       "l:dejar",
       "l:hacer",
-      "l:jugo",
-      "l:tomar",
       "p:dejar-de-inf"
     ],
     "targets": [
@@ -12293,8 +12359,8 @@
   },
   {
     "id": "u11-0535",
-    "es": "Dejé de correr en la mañana.",
-    "en": "I stopped running in the morning.",
+    "es": "Con el frío de Bogotá, dejé de correr en la mañana.",
+    "en": "With the cold in Bogotá, I stopped running in the morning.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12302,6 +12368,7 @@
       "g:preterite-ar",
       "l:correr",
       "l:dejar",
+      "l:frío",
       "l:mañana",
       "p:dejar-de-inf",
       "p:por-la-manana"
@@ -12316,20 +12383,19 @@
   },
   {
     "id": "u11-0536",
-    "es": "Dejé de escribir cartas el año pasado.",
-    "en": "I stopped writing letters last year.",
+    "es": "Hace años dejé de escribir cartas.",
+    "en": "Years ago I stopped writing letters.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
+      "g:present-er-ir",
       "g:preterite-ar",
       "l:año",
       "l:carta",
       "l:dejar",
       "l:escribir",
-      "l:pasado",
-      "p:dejar-de-inf",
-      "p:time-pasado-que-viene"
+      "l:hacer",
+      "p:dejar-de-inf"
     ],
     "targets": [
       "p:dejar-de-inf"
@@ -12341,14 +12407,15 @@
   },
   {
     "id": "u11-0537",
-    "es": "Dejé de ver televisión en la noche.",
-    "en": "I stopped watching TV at night.",
+    "es": "En enero dejé de ver televisión en la noche.",
+    "en": "In January I stopped watching TV at night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:dejar",
+      "l:enero",
       "l:noche",
       "l:televisión",
       "l:ver",
@@ -12365,17 +12432,16 @@
   },
   {
     "id": "u11-0538",
-    "es": "Dejé de llamar a mi hermano.",
-    "en": "I stopped calling my brother.",
+    "es": "Mi hermano y yo dejamos de hablar.",
+    "en": "My brother and I stopped talking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-ar",
+      "g:present-ar",
       "l:dejar",
+      "l:hablar",
       "l:hermano",
-      "l:llamar",
       "p:dejar-de-inf",
-      "p:personal-a",
       "p:possessives-basic"
     ],
     "targets": [
@@ -12388,19 +12454,22 @@
   },
   {
     "id": "u11-0539",
-    "es": "Dejé de tomar café después de las seis.",
-    "en": "I stopped drinking coffee after six.",
+    "es": "Dejé de comprar pan en la tienda: ahora lo hace Vale.",
+    "en": "I stopped buying bread at the shop: now Vale makes it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:direct-objects",
       "g:gender-articles",
+      "g:present-er-ir",
       "g:preterite-ar",
-      "l:café",
+      "l:ahora",
+      "l:comprar",
       "l:dejar",
-      "l:después",
-      "l:tomar",
-      "p:dejar-de-inf",
-      "p:time-sequence-basic"
+      "l:hacer",
+      "l:pan",
+      "l:tienda",
+      "p:dejar-de-inf"
     ],
     "targets": [
       "p:dejar-de-inf"
@@ -12412,8 +12481,8 @@
   },
   {
     "id": "u11-0540",
-    "es": "Dejé de comer carne en diciembre.",
-    "en": "I stopped eating meat in December.",
+    "es": "En diciembre dejé de comer carne.",
+    "en": "In December I stopped eating meat.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12434,8 +12503,8 @@
   },
   {
     "id": "u11-0541",
-    "es": "Dejé de bailar cuando me casé.",
-    "en": "I stopped dancing when I got married.",
+    "es": "Cuando me casé, dejé de bailar. ¡Qué triste!",
+    "en": "When I got married, I stopped dancing. How sad!",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12444,8 +12513,11 @@
       "l:bailar",
       "l:casarse",
       "l:dejar",
+      "l:qué",
+      "l:triste",
       "p:cuando-basic",
-      "p:dejar-de-inf"
+      "p:dejar-de-inf",
+      "p:exclamations-basic"
     ],
     "targets": [
       "p:dejar-de-inf"
@@ -12457,19 +12529,19 @@
   },
   {
     "id": "u11-0542",
-    "es": "Dejé de jugar fútbol con mis primos.",
-    "en": "I stopped playing soccer with my cousins.",
+    "es": "¿Fútbol? Dejé de jugar a los quince años.",
+    "en": "Soccer? I stopped playing when I was fifteen.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:preterite-ar",
+      "l:año",
       "l:dejar",
       "l:fútbol",
       "l:jugar",
-      "l:primo",
       "p:dejar-de-inf",
-      "p:masculine-plural-mixed",
-      "p:possessives-basic"
+      "p:jugar-a"
     ],
     "targets": [
       "p:dejar-de-inf"
@@ -12532,18 +12604,24 @@
   },
   {
     "id": "u11-0545",
-    "es": "Dejé de pedir tinto en esa tienda.",
-    "en": "I stopped ordering black coffee at that store.",
+    "es": "En esa tienda dejé de pedir tinto: es muy malo.",
+    "en": "I stopped ordering black coffee at that shop: it's very bad.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
       "g:preterite-ar",
+      "g:ser-identity",
       "l:dejar",
+      "l:malo",
       "l:pedir",
+      "l:ser",
       "l:tienda",
       "l:tinto",
-      "p:dejar-de-inf"
+      "p:bien-bueno",
+      "p:bien-mal-vs-bueno-malo",
+      "p:dejar-de-inf",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "p:dejar-de-inf"
@@ -12555,17 +12633,21 @@
   },
   {
     "id": "u11-0546",
-    "es": "Vale dejó de trabajar en el hotel.",
-    "en": "Vale stopped working at the hotel.",
-    "accept": [],
+    "es": "Mi prima dejó de trabajar en el hotel.",
+    "en": "My cousin stopped working at the hotel.",
+    "accept": [
+      "Mi primo dejó de trabajar en el hotel."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-ar",
       "l:dejar",
       "l:hotel",
+      "l:prima",
       "l:trabajar",
-      "p:dejar-de-inf"
+      "p:dejar-de-inf",
+      "p:possessives-basic"
     ],
     "targets": [
       "p:dejar-de-inf"
@@ -12668,8 +12750,8 @@
   },
   {
     "id": "u11-0551",
-    "es": "Rosa dejó de cantar en el café.",
-    "en": "Rosa stopped singing at the café.",
+    "es": "Rosa nunca dejó de cantar en el café.",
+    "en": "Rosa never stopped singing in the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12678,7 +12760,8 @@
       "l:café",
       "l:cantar",
       "l:dejar",
-      "p:dejar-de-inf"
+      "p:dejar-de-inf",
+      "p:frequency-scale"
     ],
     "targets": [
       "p:dejar-de-inf"
@@ -12690,18 +12773,20 @@
   },
   {
     "id": "u11-0552",
-    "es": "Mi papá dejó de venir a casa.",
-    "en": "My dad stopped coming home.",
+    "es": "Mi papá dejó de venir a almorzar los domingos.",
+    "en": "My dad stopped coming for lunch on Sundays.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:preterite-ar",
-      "l:casa",
+      "l:almorzar",
       "l:dejar",
+      "l:domingo",
       "l:papá",
       "l:venir",
+      "p:days-el-lunes",
       "p:dejar-de-inf",
-      "p:ir-venir",
       "p:possessives-basic"
     ],
     "targets": [
@@ -12940,8 +13025,8 @@
   },
   {
     "id": "u11-0563",
-    "es": "¿Ustedes dejaron de vivir en ese barrio?",
-    "en": "Did you all stop living in that neighborhood?",
+    "es": "¿Ustedes dejaron de ir a ese barrio?",
+    "en": "Did you all stop going to that neighborhood?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -12949,8 +13034,9 @@
       "g:preterite-ar",
       "l:barrio",
       "l:dejar",
-      "l:vivir",
-      "p:dejar-de-inf"
+      "l:ir",
+      "p:dejar-de-inf",
+      "p:ir-a-venir-de-place"
     ],
     "targets": [
       "p:dejar-de-inf"
@@ -13005,13 +13091,15 @@
   },
   {
     "id": "u11-0566",
-    "es": "¿Todavía fumas?",
-    "en": "Do you still smoke? (to a friend)",
+    "es": "¿Todavía montas en bicicleta?",
+    "en": "Do you still ride a bike? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
-      "l:fumar",
+      "l:bicicleta",
+      "l:montar",
+      "p:transport-en",
       "p:ya-todavia-basic"
     ],
     "targets": [],
@@ -13022,14 +13110,17 @@
   },
   {
     "id": "u11-0567",
-    "es": "No, dejé de fumar.",
-    "en": "No, I quit smoking.",
+    "es": "No, dejé de montar hace años.",
+    "en": "No, I stopped riding years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:present-er-ir",
       "g:preterite-ar",
+      "l:año",
       "l:dejar",
-      "l:fumar",
+      "l:hacer",
+      "l:montar",
       "p:dejar-de-inf"
     ],
     "targets": [
@@ -13063,15 +13154,15 @@
   },
   {
     "id": "u11-0569",
-    "es": "Sí, dejé de llamar.",
-    "en": "Yes, I stopped calling.",
+    "es": "Sí, ya no la llamo.",
+    "en": "Yes, I don't call her anymore.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:preterite-ar",
-      "l:dejar",
-      "l:llamar",
-      "p:dejar-de-inf"
+      "c:ya-no",
+      "g:direct-objects",
+      "g:present-ar",
+      "l:llamar"
     ],
     "targets": [
       "p:dejar-de-inf"
@@ -13083,16 +13174,18 @@
   },
   {
     "id": "u11-0570",
-    "es": "Ya no tomo tinto en las noches, dejé de tomar tinto.",
-    "en": "I do not drink black coffee at night anymore, I stopped drinking it.",
+    "es": "Dejé de tomar tinto en la noche. Ahora duermo mejor.",
+    "en": "I stopped drinking black coffee at night. Now I sleep better.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:ya-no",
       "g:gender-articles",
-      "g:present-ar",
       "g:preterite-ar",
+      "g:stem-boot",
+      "l:ahora",
       "l:dejar",
+      "l:dormir",
+      "l:mejor",
       "l:noche",
       "l:tinto",
       "l:tomar",
@@ -13214,7 +13307,7 @@
   },
   {
     "id": "u11-0575",
-    "es": "En cambio, mi abuela cocinaba todos los días.",
+    "es": "Mi abuela, en cambio, cocinaba todos los días.",
     "en": "My grandmother, on the other hand, used to cook every day.",
     "accept": [],
     "acceptEn": [],
@@ -13269,20 +13362,18 @@
   },
   {
     "id": "u11-0577",
-    "es": "Antes tomaba tinto; ahora, en cambio, tomo té.",
-    "en": "I used to drink black coffee; now, on the other hand, I drink tea.",
+    "es": "Rosa abría a las siete; Vale, en cambio, abre a las seis.",
+    "en": "Rosa used to open at seven; Vale, on the other hand, opens at six.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:en-cambio",
+      "g:gender-articles",
       "g:imperfect-habitual",
-      "g:present-ar",
-      "l:ahora",
-      "l:antes",
+      "g:present-er-ir",
+      "l:abrir",
       "l:cambio",
-      "l:tinto",
-      "l:tomar",
-      "l:té"
+      "p:telling-time"
     ],
     "targets": [
       "c:en-cambio",
@@ -13350,21 +13441,19 @@
   },
   {
     "id": "u11-0580",
-    "es": "Antes trabajaba en un banco; ahora, en cambio, trabajo en un café.",
-    "en": "I used to work at a bank; now, on the other hand, I work at a café.",
+    "es": "Antes trabajaba con computadoras; ahora, en cambio, trabajo con pan.",
+    "en": "I used to work with computers; now, on the other hand, I work with bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:en-cambio",
-      "c:trabajo-en",
-      "g:gender-articles",
       "g:imperfect-habitual",
       "g:present-ar",
       "l:ahora",
       "l:antes",
-      "l:banco",
-      "l:café",
       "l:cambio",
+      "l:computadora",
+      "l:pan",
       "l:trabajar"
     ],
     "targets": [
@@ -13378,8 +13467,8 @@
   },
   {
     "id": "u11-0581",
-    "es": "En el pueblo había mucha gente; en la ciudad, en cambio, hay más.",
-    "en": "In the town there were many people; in the city, on the other hand, there are more.",
+    "es": "En el pueblo había poca gente; en la ciudad, en cambio, hay demasiada.",
+    "en": "In the town there were few people; in the city, on the other hand, there are too many.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13388,11 +13477,13 @@
       "g:gender-articles",
       "g:hay-vs-esta",
       "g:imperfect-states",
+      "g:quantifiers",
       "l:cambio",
       "l:ciudad",
       "l:gente",
       "l:pueblo",
       "p:la-gente-singular",
+      "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
@@ -13460,23 +13551,19 @@
   },
   {
     "id": "u11-0584",
-    "es": "Entre el campo y la ciudad, no hay comparación.",
-    "en": "Between the countryside and the city, there is no comparison.",
+    "es": "Entre Toronto y Bogotá en diciembre, no hay comparación.",
+    "en": "Between Toronto and Bogotá in December, there is no comparison.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:hay",
       "c:no-hay-comparacion",
-      "g:gender-articles",
       "g:hay-vs-esta",
-      "l:campo",
-      "l:ciudad",
-      "l:comparación"
+      "l:comparación",
+      "l:diciembre"
     ],
     "targets": [
-      "c:no-hay-comparacion",
-      "l:campo",
-      "l:comparación"
+      "c:no-hay-comparacion"
     ],
     "kind": "statement",
     "unit": "u11",
@@ -13541,8 +13628,8 @@
   },
   {
     "id": "u11-0587",
-    "es": "Entre el bus y el taxi, no hay comparación.",
-    "en": "Between the bus and the taxi, there is no comparison.",
+    "es": "Entre el pan de la tienda y el pan de Vale, no hay comparación.",
+    "en": "Between the shop's bread and Vale's bread, there is no comparison.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13550,9 +13637,9 @@
       "c:no-hay-comparacion",
       "g:gender-articles",
       "g:hay-vs-esta",
-      "l:bus",
       "l:comparación",
-      "l:taxi"
+      "l:pan",
+      "l:tienda"
     ],
     "targets": [
       "c:no-hay-comparacion",
@@ -13659,19 +13746,23 @@
   },
   {
     "id": "u11-0592",
-    "es": "Para mi mamá, no hay comparación con el pan de hoy.",
-    "en": "For my mom, there is no comparison with today's bread.",
+    "es": "Para mi mamá, el pan de antes era mejor. No hay comparación.",
+    "en": "For my mom, the bread of the old days was better. There is no comparison.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "c:hay",
       "c:no-hay-comparacion",
       "g:gender-articles",
       "g:hay-vs-esta",
+      "g:imperfect-states",
+      "l:antes",
       "l:comparación",
-      "l:hoy",
       "l:mamá",
+      "l:mejor",
       "l:pan",
+      "l:ser",
       "p:para-inf",
       "p:possessives-basic"
     ],
@@ -13708,17 +13799,20 @@
   },
   {
     "id": "u11-0594",
-    "es": "Hago una comparación entre dos barrios.",
-    "en": "I am making a comparison between two neighborhoods.",
+    "es": "Mi maestro siempre hacía comparaciones con el inglés.",
+    "en": "My teacher always used to make comparisons with English.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:hago-salgo-vengo",
       "g:gender-articles",
-      "g:yo-irregular",
-      "l:barrio",
+      "g:imperfect-habitual",
       "l:comparación",
-      "l:hacer"
+      "l:hacer",
+      "l:inglés",
+      "l:maestro",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:possessives-basic"
     ],
     "targets": [
       "l:comparación"
@@ -13829,18 +13923,17 @@
   },
   {
     "id": "u11-0600",
-    "es": "¿Voy a la calle o al parque?",
-    "en": "Do I go to the street or to the park?",
-    "accept": [],
+    "es": "¿Pido arepa o pandebono?",
+    "en": "Shall I order an arepa or a pandebono?",
+    "accept": [
+      "¿Pido una arepa o un pandebono?"
+    ],
     "acceptEn": [],
     "requires": [
-      "c:voy-a",
-      "g:gender-articles",
-      "g:ir-a-plans",
-      "l:calle",
-      "l:ir",
-      "l:parque",
-      "p:ir-a-venir-de-place"
+      "g:stem-e-i",
+      "l:arepa",
+      "l:pandebono",
+      "l:pedir"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -13888,7 +13981,7 @@
   {
     "id": "u11-0603",
     "es": "Da lo mismo llegar tarde.",
-    "en": "It makes no difference arriving late.",
+    "en": "Arriving late makes no difference.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -13908,18 +14001,17 @@
   },
   {
     "id": "u11-0604",
-    "es": "Para Tomás es lo mismo ir en bus o en taxi.",
-    "en": "For Tomás it is the same to go by bus or by taxi.",
+    "es": "Para Simón es lo mismo un mango o un banano.",
+    "en": "For Simón, a mango or a banana is all the same.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:es-lo-mismo",
-      "l:bus",
-      "l:ir",
+      "g:gender-articles",
+      "l:banano",
+      "l:mango",
       "l:ser",
-      "l:taxi",
-      "p:para-inf",
-      "p:transport-en"
+      "p:para-inf"
     ],
     "targets": [
       "c:es-lo-mismo"
@@ -13992,24 +14084,20 @@
   },
   {
     "id": "u11-0608",
-    "es": "Es igual: un tinto cuesta lo mismo aquí.",
-    "en": "It is all the same: a black coffee costs the same here.",
+    "es": "Un tinto cuesta lo mismo aquí que en el centro.",
+    "en": "A black coffee costs the same here as downtown.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:es-lo-mismo",
       "g:gender-articles",
       "g:stem-boot",
       "l:aquí",
+      "l:centro",
       "l:costar",
-      "l:igual",
-      "l:ser",
       "l:tinto",
       "p:aqui-ahi-alla"
     ],
-    "targets": [
-      "c:es-lo-mismo"
-    ],
+    "targets": [],
     "kind": "statement",
     "unit": "u11",
     "theme": "preferences, then and now",
@@ -14079,8 +14167,8 @@
   },
   {
     "id": "u11-0612",
-    "es": "Me quedo con el tinto y sin azúcar.",
-    "en": "I'll stay with the black coffee and no sugar.",
+    "es": "Me quedo con el tinto, sin azúcar.",
+    "en": "I'll go with the black coffee, no sugar.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14157,15 +14245,15 @@
   },
   {
     "id": "u11-0616",
-    "es": "Mariana se queda con la entrevista.",
-    "en": "Mariana keeps the interview.",
+    "es": "Mariana se quedó con la última almojábana.",
+    "en": "Mariana took the last almojábana.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:present-ar",
+      "g:preterite-ar",
       "g:reflexive-routine",
-      "l:entrevista",
+      "l:almojábana",
       "l:quedarse"
     ],
     "targets": [],
@@ -14176,8 +14264,8 @@
   },
   {
     "id": "u11-0617",
-    "es": "Don Hernando se queda con el sofá.",
-    "en": "Don Hernando keeps the sofa.",
+    "es": "Don Hernando siempre se queda con la silla de la ventana.",
+    "en": "Don Hernando always takes the chair by the window.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14185,7 +14273,10 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:quedarse",
-      "l:sofá",
+      "l:siempre",
+      "l:silla",
+      "l:ventana",
+      "p:frequency-scale",
       "p:senor-don-article"
     ],
     "targets": [],
@@ -14196,8 +14287,8 @@
   },
   {
     "id": "u11-0618",
-    "es": "Nos quedamos con la mesa de la ventana.",
-    "en": "We'll stay with the table by the window.",
+    "es": "Nos quedamos con la mesa del patio.",
+    "en": "We'll take the table in the yard.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14205,8 +14296,8 @@
       "g:present-ar",
       "g:reflexive-routine",
       "l:mesa",
-      "l:quedarse",
-      "l:ventana"
+      "l:patio",
+      "l:quedarse"
     ],
     "targets": [],
     "kind": "statement",
@@ -14261,7 +14352,7 @@
   {
     "id": "u11-0621",
     "es": "¿Con cuál te quedas?",
-    "en": "Which one do you keep? (to a friend)",
+    "en": "Which one will you take? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14280,7 +14371,7 @@
   {
     "id": "u11-0622",
     "es": "Me quedo con la bicicleta.",
-    "en": "I'll keep the bicycle.",
+    "en": "I'll take the bicycle.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14508,20 +14599,15 @@
   },
   {
     "id": "u11-0632",
-    "es": "No mucho. Mi mamá siempre me hablaba de eso.",
-    "en": "Not much. My mom always used to talk to me about it.",
+    "es": "No. Comía con las manos.",
+    "en": "No. I used to eat with my hands.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:gender-articles",
       "g:imperfect-habitual",
-      "l:hablar",
-      "l:mamá",
-      "l:siempre",
-      "p:demonstratives-basic",
-      "p:frequency-scale",
-      "p:me-te-nos-objects",
-      "p:possessives-basic",
-      "p:quantifiers-basic"
+      "l:comer",
+      "l:mano"
     ],
     "targets": [
       "g:imperfect-habitual"
@@ -14603,8 +14689,8 @@
   },
   {
     "id": "u11-0636",
-    "es": "Era la vecina, ahora es periodista.",
-    "en": "She was the neighbor, now she is a journalist.",
+    "es": "Era la vecina. Ahora es periodista.",
+    "en": "She was the neighbor. Now she is a journalist.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -14718,12 +14804,12 @@
   },
   {
     "id": "u11-0641",
-    "es": "¿Dónde pasabas tu infancia?",
+    "es": "¿Dónde pasaste tu infancia?",
     "en": "Where did you spend your childhood? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:imperfect-habitual",
+      "g:preterite-ar",
       "g:questions",
       "l:dónde",
       "l:infancia",
@@ -14732,7 +14818,6 @@
       "p:question-word-order"
     ],
     "targets": [
-      "g:imperfect-habitual",
       "l:infancia"
     ],
     "kind": "dialogue",
@@ -15104,8 +15189,8 @@
   },
   {
     "id": "u11-0658",
-    "es": "Mi juguete favorito era un carro rojo.",
-    "en": "My favorite toy was a red car.",
+    "es": "Mi juguete favorito era un avión pequeño.",
+    "en": "My favorite toy was a little plane.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15113,10 +15198,10 @@
       "g:gender-articles",
       "g:imperfect-states",
       "g:ser-identity",
-      "l:carro",
+      "l:avión",
       "l:favorito",
       "l:juguete",
-      "l:rojo",
+      "l:pequeño",
       "l:ser",
       "p:possessives-basic"
     ],
@@ -15320,8 +15405,8 @@
   },
   {
     "id": "u11-0667",
-    "es": "Mi niñez pasó entre dos países.",
-    "en": "My childhood went by between two countries.",
+    "es": "Pasé mi niñez entre dos países.",
+    "en": "I spent my childhood between two countries.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -15466,17 +15551,18 @@
   },
   {
     "id": "u11-0673",
-    "es": "Mi mamá vendió la pelota.",
-    "en": "My mom sold the ball.",
+    "es": "Un día, el vecino se quedó con la pelota.",
+    "en": "One day, the neighbor kept the ball.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:preterite-er-ir",
-      "l:mamá",
+      "g:preterite-ar",
+      "g:reflexive-routine",
+      "l:día",
       "l:pelota",
-      "l:vender",
-      "p:possessives-basic"
+      "l:quedarse",
+      "l:vecino"
     ],
     "targets": [
       "l:pelota"
@@ -15657,23 +15743,22 @@
   },
   {
     "id": "u11-0681",
-    "es": "Tomás sacó una nota alta en el examen.",
-    "en": "Tomás got a high grade on the exam.",
+    "es": "Mariana siempre sacaba una nota alta.",
+    "en": "Mariana always used to get a high grade.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:preterite-ar",
+      "g:imperfect-habitual",
       "l:alto",
-      "l:examen",
       "l:nota",
-      "l:sacar"
+      "l:sacar",
+      "l:siempre",
+      "p:frequency-scale"
     ],
     "targets": [
-      "l:examen",
-      "l:nota",
-      "l:sacar"
+      "g:imperfect-habitual"
     ],
     "kind": "statement",
     "unit": "u11",
@@ -15918,18 +16003,18 @@
   },
   {
     "id": "u11-0692",
-    "es": "Los niños obedientes llegaban primero.",
-    "en": "The obedient children used to arrive first.",
+    "es": "Los niños obedientes recibían un dulce.",
+    "en": "The obedient children used to get a candy.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
       "g:imperfect-habitual",
-      "l:llegar",
+      "l:dulce",
       "l:niño",
       "l:obediente",
-      "p:time-sequence-basic"
+      "l:recibir"
     ],
     "targets": [
       "g:imperfect-habitual",
@@ -15942,19 +16027,24 @@
   },
   {
     "id": "u11-0693",
-    "es": "Hoy los niños se portan bien.",
-    "en": "Today the children behave well.",
+    "es": "Hoy los niños se portan bien porque viene la abuela.",
+    "en": "Today the children are behaving well because Grandma is coming.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
+      "c:porque",
+      "g:cause-result",
       "g:gender-articles",
       "g:present-ar",
       "g:reflexive-routine",
+      "g:stem-boot",
+      "l:abuela",
       "l:bien",
       "l:hoy",
       "l:niño",
       "l:portarse",
+      "l:venir",
       "p:bien-bueno",
       "p:bien-mal-vs-bueno-malo"
     ],
@@ -16767,17 +16857,19 @@
   },
   {
     "id": "u11-0728",
-    "es": "Esa es mi propia idea.",
-    "en": "That is my own idea.",
+    "es": "Esta mesa tiene su propia historia.",
+    "en": "This table has its own story.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:tienes",
       "g:adjective-agreement",
-      "g:demonstratives",
-      "g:ser-identity",
-      "l:idea",
+      "g:stem-boot",
+      "l:historia",
+      "l:mesa",
       "l:propio",
-      "l:ser",
+      "l:tener",
+      "p:demonstratives-basic",
       "p:possessives-basic"
     ],
     "targets": [
@@ -16864,17 +16956,17 @@
   },
   {
     "id": "u11-0732",
-    "es": "De un lado está el banco y del otro lado está la panadería.",
-    "en": "On one side is the bank and on the other side is the bakery.",
+    "es": "De un lado está el parque y del otro lado está la plaza.",
+    "en": "On one side is the park and on the other side is the plaza.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
-      "l:banco",
       "l:estar",
       "l:lado",
-      "l:panadería",
+      "l:parque",
+      "l:plaza",
       "p:otro-no-article"
     ],
     "targets": [
@@ -16982,19 +17074,20 @@
   },
   {
     "id": "u11-0737",
-    "es": "La puerta del baño queda a la derecha del patio.",
-    "en": "The bathroom door is on the right of the yard.",
+    "es": "Mi casa era la segunda a la derecha.",
+    "en": "My house was the second one on the right.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:era",
       "g:gender-articles",
-      "g:present-ar",
-      "l:baño",
+      "g:imperfect-states",
+      "g:ser-identity",
+      "l:casa",
       "l:derecha",
-      "l:patio",
-      "l:puerta",
-      "l:quedar",
-      "p:directions-cuadras"
+      "l:ser",
+      "p:directions-cuadras",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "statement",
@@ -17243,17 +17336,18 @@
   },
   {
     "id": "u11-0749",
-    "es": "La reunión resultó muy larga.",
-    "en": "The meeting turned out to be very long.",
+    "es": "La reunión resultó muy aburrida.",
+    "en": "The meeting turned out to be very boring.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
       "g:preterite-ar",
-      "l:largo",
+      "l:aburrido",
       "l:resultar",
       "l:reunión",
+      "p:aburrir-aburrirse",
       "p:quantifiers-basic",
       "p:resultar-ser"
     ],
@@ -17267,18 +17361,22 @@
   },
   {
     "id": "u11-0750",
-    "es": "El viaje resultó muy largo.",
-    "en": "The trip turned out to be very long.",
+    "es": "El viaje resultó más barato que el año pasado.",
+    "en": "The trip turned out cheaper than last year.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:comparatives",
       "g:gender-articles",
       "g:preterite-ar",
-      "l:largo",
+      "l:año",
+      "l:barato",
+      "l:pasado",
       "l:resultar",
       "l:viaje",
-      "p:quantifiers-basic",
-      "p:resultar-ser"
+      "p:resulta-adj-que",
+      "p:resultar-ser",
+      "p:time-pasado-que-viene"
     ],
     "targets": [
       "l:resultar"
@@ -18814,16 +18912,16 @@
   },
   {
     "id": "u11-0819",
-    "es": "Lo oí gritar desde la cocina.",
-    "en": "I heard him yell from the kitchen.",
+    "es": "Lo oí cantar en la ducha.",
+    "en": "I heard him sing in the shower.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
       "g:preterite-er-ir",
-      "l:cocina",
-      "l:gritar",
+      "l:cantar",
+      "l:ducha",
       "l:oír",
       "p:la-vi-salir"
     ],
@@ -19059,20 +19157,19 @@
   },
   {
     "id": "u11-0830",
-    "es": "Don Hernando la sirvió con queso.",
-    "en": "Don Hernando served it with cheese.",
+    "es": "Rosa la servía con queso.",
+    "en": "Rosa used to serve it with cheese.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
-      "g:preterite-spelling-stem",
+      "g:imperfect-habitual",
       "l:queso",
-      "l:servir",
-      "p:senor-don-article"
+      "l:servir"
     ],
     "targets": [
       "g:direct-objects",
-      "g:preterite-spelling-stem"
+      "g:imperfect-habitual"
     ],
     "kind": "statement",
     "unit": "u11",
@@ -19126,14 +19223,15 @@
   },
   {
     "id": "u11-0833",
-    "es": "Ellos lo permitieron hasta las diez.",
-    "en": "They allowed it until ten.",
+    "es": "La música la permitieron hasta las diez.",
+    "en": "They allowed the music until ten.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
       "g:preterite-er-ir",
+      "l:música",
       "l:permitir"
     ],
     "targets": [
@@ -19417,7 +19515,7 @@
   {
     "id": "u11-0846",
     "es": "¿Dónde está la luz?",
-    "en": "Where is the light switch?",
+    "en": "Where is the light?",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19521,7 +19619,7 @@
   {
     "id": "u11-0851",
     "es": "Me quedo con el tinto de siempre.",
-    "en": "I'll stay with the usual black coffee.",
+    "en": "I'll have my usual black coffee.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19542,22 +19640,21 @@
   },
   {
     "id": "u11-0852",
-    "es": "Mi abuela mantenía la casa bonita.",
-    "en": "My grandmother used to keep the house pretty.",
+    "es": "Vale mantiene la vitrina llena todo el día.",
+    "en": "Vale keeps the display case full all day.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
       "g:gender-articles",
-      "g:imperfect-habitual",
-      "l:abuela",
-      "l:bonito",
-      "l:casa",
+      "g:stem-boot",
+      "l:día",
+      "l:lleno",
       "l:mantener",
-      "p:possessives-basic"
+      "l:vitrina",
+      "p:todos-los-dias"
     ],
     "targets": [
-      "g:imperfect-habitual",
       "l:mantener"
     ],
     "kind": "statement",
@@ -19567,17 +19664,18 @@
   },
   {
     "id": "u11-0853",
-    "es": "Mantuvimos el café abierto hasta tarde.",
-    "en": "We kept the café open until late.",
+    "es": "Mantuvimos la puerta cerrada toda la noche.",
+    "en": "We kept the door closed all night.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-irregular-strong",
-      "l:abrir",
-      "l:café",
+      "l:cerrar",
       "l:mantener",
-      "l:tarde"
+      "l:noche",
+      "l:puerta",
+      "p:todos-los-dias"
     ],
     "targets": [
       "l:mantener"
@@ -19610,14 +19708,15 @@
   },
   {
     "id": "u11-0855",
-    "es": "Vale mantuvo el café abierto.",
-    "en": "Vale kept the café open.",
+    "es": "Rosa mantuvo el café abierto cuarenta y siete años.",
+    "en": "Rosa kept the café open for forty-seven years.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-irregular-strong",
       "l:abrir",
+      "l:año",
       "l:café",
       "l:mantener"
     ],
@@ -19631,20 +19730,17 @@
   },
   {
     "id": "u11-0856",
-    "es": "Conseguimos una mesa cerca de la ventana.",
-    "en": "We got a table near the window.",
+    "es": "Por fin conseguimos un taxi.",
+    "en": "We finally got a taxi.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-er-ir",
-      "l:cerca",
       "l:conseguir",
-      "l:mesa",
-      "l:ventana",
-      "p:cerca-de",
-      "p:intentar-conseguir",
-      "p:position-de"
+      "l:fin",
+      "l:taxi",
+      "p:intentar-conseguir"
     ],
     "targets": [
       "l:conseguir"
@@ -19656,16 +19752,19 @@
   },
   {
     "id": "u11-0857",
-    "es": "Metió las llaves dentro de la bolsa.",
-    "en": "He put the keys inside the bag.",
+    "es": "Metí la mano dentro de la caja y encontré una foto.",
+    "en": "I put my hand inside the box and found a photo.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:preterite-ar",
       "g:preterite-er-ir",
-      "l:bolsa",
+      "l:caja",
       "l:dentro",
-      "l:llave",
+      "l:encontrar",
+      "l:foto",
+      "l:mano",
       "l:meter",
       "p:cerca-de",
       "p:position-de"
@@ -19949,16 +20048,15 @@
   },
   {
     "id": "u11-0869",
-    "es": "No nos importa el precio.",
-    "en": "We do not mind the price.",
+    "es": "A Simón no le importa nada.",
+    "en": "Simón doesn't care about anything.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:gustar-full",
+      "g:negation-words",
       "g:present-ar",
-      "l:importar",
-      "l:precio"
+      "l:importar"
     ],
     "targets": [
       "l:importar"
@@ -20015,14 +20113,16 @@
   },
   {
     "id": "u11-0872",
-    "es": "Me gusta más comer que cocinar.",
+    "es": "A mí me gusta más comer que cocinar.",
     "en": "I like eating more than cooking.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:a-mi-tambien",
       "c:me-gusta",
       "g:comparatives",
       "g:gustar-basic",
+      "g:prep-pronouns",
       "l:cocinar",
       "l:comer",
       "l:gustar",
@@ -20094,8 +20194,8 @@
   },
   {
     "id": "u11-0875",
-    "es": "Entre mi niñez y la de mi hija, no hay comparación.",
-    "en": "Between my childhood and my daughter's, there is no comparison.",
+    "es": "Entre Simón y un perro no hay comparación: Simón habla.",
+    "en": "Between Simón and a dog there is no comparison: Simón talks.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20103,16 +20203,13 @@
       "c:no-hay-comparacion",
       "g:gender-articles",
       "g:hay-vs-esta",
+      "g:present-ar",
       "l:comparación",
-      "l:hija",
-      "l:niñez",
-      "p:los-de-la-camiseta",
-      "p:possessives-basic"
+      "l:hablar",
+      "l:perro"
     ],
     "targets": [
-      "c:no-hay-comparacion",
-      "l:comparación",
-      "l:niñez"
+      "c:no-hay-comparacion"
     ],
     "kind": "statement",
     "unit": "u11",
@@ -20294,15 +20391,15 @@
   },
   {
     "id": "u11-0884",
-    "es": "Don Hernando lo oyó desde la cocina.",
-    "en": "Don Hernando heard him from the kitchen.",
+    "es": "Don Hernando lo oyó desde la calle.",
+    "en": "Don Hernando heard him from the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
       "g:preterite-spelling-stem",
-      "l:cocina",
+      "l:calle",
       "l:oír",
       "p:senor-don-article"
     ],
@@ -20317,16 +20414,18 @@
   },
   {
     "id": "u11-0885",
-    "es": "¿Almorzaste con nosotros ayer?",
-    "en": "Did you have lunch with us yesterday? (to a friend)",
+    "es": "¿Almorzaste con tus papás ayer?",
+    "en": "Did you have lunch with your parents yesterday? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:ayer-anoche",
-      "g:prep-pronouns",
       "g:preterite-ar",
       "l:almorzar",
-      "l:ayer"
+      "l:ayer",
+      "l:papá",
+      "p:masculine-plural-mixed",
+      "p:possessives-basic"
     ],
     "targets": [],
     "kind": "dialogue",
@@ -20336,8 +20435,8 @@
   },
   {
     "id": "u11-0886",
-    "es": "Busqué una mesa, pero no la encontré.",
-    "en": "I looked for a table, but I did not find one.",
+    "es": "Busqué la receta de Rosa, pero no la encontré.",
+    "en": "I looked for Rosa's recipe, but I didn't find it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -20347,7 +20446,7 @@
       "g:preterite-spelling-stem",
       "l:buscar",
       "l:encontrar",
-      "l:mesa"
+      "l:receta"
     ],
     "targets": [
       "g:direct-objects",
@@ -20360,18 +20459,18 @@
   },
   {
     "id": "u11-0887",
-    "es": "¿Cuándo murió el esposo de Rosa?",
-    "en": "When did Rosa's husband die?",
+    "es": "¿Cuándo murió tu abuelo?",
+    "en": "When did your grandfather die? (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:gender-articles",
       "g:preterite-spelling-stem",
       "g:questions",
+      "l:abuelo",
       "l:cuándo",
-      "l:esposo",
       "l:morir",
       "p:naci-en",
+      "p:possessives-basic",
       "p:question-word-order"
     ],
     "targets": [
@@ -20385,15 +20484,14 @@
   },
   {
     "id": "u11-0888",
-    "es": "Murió hace muchos años, antes de Tomás.",
-    "en": "He died many years ago, before Tomás.",
+    "es": "Murió hace muchos años.",
+    "en": "He died many years ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:hace-ago",
       "g:present-er-ir",
       "g:preterite-spelling-stem",
-      "l:antes",
       "l:año",
       "l:hacer",
       "l:morir",
@@ -20411,17 +20509,17 @@
   },
   {
     "id": "u11-0889",
-    "es": "Esta semana pedí el tinto con leche.",
-    "en": "This week I ordered my black coffee with milk.",
+    "es": "Esta vez pedí un café con leche.",
+    "en": "This time I ordered a coffee with milk.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-er-ir",
+      "l:café",
       "l:leche",
       "l:pedir",
-      "l:semana",
-      "l:tinto",
+      "l:vez",
       "p:con-sin",
       "p:demonstratives-basic",
       "p:preguntar-pedir"
@@ -20499,16 +20597,19 @@
   },
   {
     "id": "u11-0893",
-    "es": "Tomás leyó la carta de Rosa en la cocina.",
-    "en": "Tomás read Rosa's letter in the kitchen.",
+    "es": "Don Hernando leyó la reseña del café en su celular.",
+    "en": "Don Hernando read the café's review on his phone.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:preterite-spelling-stem",
-      "l:carta",
-      "l:cocina",
-      "l:leer"
+      "l:café",
+      "l:celular",
+      "l:leer",
+      "l:reseña",
+      "p:possessives-basic",
+      "p:senor-don-article"
     ],
     "targets": [
       "g:preterite-spelling-stem"

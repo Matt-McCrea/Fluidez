@@ -1,14 +1,14 @@
 {
   "id": "sc-u11-a",
   "unit": "u11",
-  "title": "Notes for Mariana",
-  "brief": "You're Tomás. Mariana is writing an article about the old Candelaria, and she wants your memories of the café when you were a boy. Tell her what Sundays used to be like and how the street has changed. She's your childhood friend, so use tú.",
+  "title": "Samuel's homework",
+  "brief": "You're Tomás. Samuel, the eight year old from downstairs at Doña Gloria's, has homework: ask a grown-up what life was like when they were a kid. He has picked you. Answer his questions about Sundays at the café and how the street has changed. He's a child, so use tú.",
   "turns": [
     {
       "id": "t1",
-      "npc": "Tomás, estoy escribiendo un artículo sobre la calle y sobre el café. ¿Cómo era todo antes?",
-      "npcEn": "Tomás, I'm writing an article about the street and the café. What was everything like before?",
-      "intent": "Say that when you were a kid you used to come to the café every Sunday.",
+      "npc": "Tomás, es para mi tarea. Cuando eras niño, ¿qué hacías los domingos?",
+      "npcEn": "Tomás, it's for my homework. When you were a kid, what did you use to do on Sundays?",
+      "intent": "Say that when you were a kid you used to come to this café every Sunday.",
       "accept": [
         "Cuando era niño venía al café todos los domingos.",
         "De niño venía aquí todos los domingos.",
@@ -27,8 +27,8 @@
     },
     {
       "id": "t2",
-      "npc": "¿Y qué hacía tu abuela los domingos?",
-      "npcEn": "And what did your grandmother use to do on Sundays?",
+      "npc": "¿Aquí? ¿Y qué hacía tu abuela?",
+      "npcEn": "Here? And what did your grandmother use to do?",
       "intent": "Say she used to sing and make buñuelos.",
       "accept": [
         "Cantaba y hacía buñuelos.",
@@ -49,20 +49,20 @@
     },
     {
       "id": "t3",
-      "npc": "¡Qué bonito! ¿Y por qué dejaste de venir?",
-      "npcEn": "How lovely! And why did you stop coming?",
+      "npc": "¿Y después? ¿Por qué ya no venías?",
+      "npcEn": "And then? Why didn't you come any more?",
       "intent": "Say you stopped coming because your family went to Toronto.",
       "accept": [
         "Dejé de venir porque nos fuimos a Toronto.",
         "Mi familia se fue a Toronto y dejé de venir.",
-        "Dejé de venir a los siete años. Mi familia se fue a Toronto."
+        "Dejamos de venir porque nos fuimos a Toronto."
       ],
       "require": [
         {
           "type": "regex",
-          "pattern": "\\bdej[eé] de venir\\b",
+          "pattern": "\\bdej(é|e|amos) de venir\\b",
           "flags": "i",
-          "label": "I stopped coming: dejé de venir"
+          "label": "stopped coming: dejé de venir (or dejamos de venir)"
         }
       ],
       "focus": "p:dejar-de-inf",
@@ -70,8 +70,8 @@
     },
     {
       "id": "t4",
-      "npc": "¿Y la calle? ¿Es más bonita ahora o antes?",
-      "npcEn": "And the street? Is it prettier now or before?",
+      "npc": "Otra pregunta de la tarea: ¿la calle era más bonita antes o ahora?",
+      "npcEn": "Another homework question: was the street prettier before, or is it now?",
       "intent": "Say it was quieter before, and now there are more cars.",
       "accept": [
         "Antes era más tranquila. Ahora hay más carros.",
@@ -90,13 +90,14 @@
     },
     {
       "id": "t5",
-      "npc": "¿Tú buscaste el contrato del café? Altamira está comprando todas las casas.",
-      "npcEn": "Did you look for the café's contract? Altamira is buying all the houses.",
+      "npc": "Oye, ayer buscaste mi pelota, ¿no? ¿La encontraste?",
+      "npcEn": "Hey, yesterday you looked for my ball, didn't you? Did you find it?",
       "intent": "Say yes, you looked for it yesterday, but you didn't find it.",
       "accept": [
-        "Sí, lo busqué ayer, pero no lo encontré.",
-        "Busqué el contrato ayer, pero no lo encontré.",
-        "Sí, lo busqué ayer. No lo encontré."
+        "Sí, la busqué ayer, pero no la encontré.",
+        "La busqué ayer, pero no la encontré.",
+        "Sí, la busqué. No la encontré.",
+        "Sí, la busqué, pero no la encontré."
       ],
       "require": [
         {
@@ -108,7 +109,7 @@
         },
         {
           "type": "negation",
-          "label": "say you didn't find it: no lo encontré"
+          "label": "say you didn't find it: no la encontré"
         }
       ],
       "focus": "g:preterite-spelling-stem",
@@ -116,13 +117,13 @@
     },
     {
       "id": "t6",
-      "npc": "Bueno, gracias, Tomás. ¿Un tinto o un jugo? Yo pago.",
-      "npcEn": "OK, thanks, Tomás. A coffee or a juice? I'm paying.",
-      "intent": "Thank her and say you'll go with the coffee.",
+      "npc": "Última pregunta: ¿qué es mejor, el recreo o la clase?",
+      "npcEn": "Last question: what's better, recess or class?",
+      "intent": "Say you'd go with recess.",
       "accept": [
-        "Gracias. Me quedo con el tinto.",
-        "Me quedo con el tinto, gracias.",
-        "Gracias, Mariana. Me quedo con el tinto."
+        "Me quedo con el recreo.",
+        "¡Me quedo con el recreo!",
+        "El recreo. Me quedo con el recreo."
       ],
       "require": [
         {
@@ -137,20 +138,18 @@
   ],
   "requires": [
     "c:ayer-anoche",
-    "c:como-era",
     "c:cuando-era-nino",
-    "c:entonces-bueno",
     "c:era",
-    "c:gracias-de-nada",
     "c:hay",
     "c:me-quedo-con",
+    "c:no-cierto",
+    "c:oiga-oye",
     "c:porque",
     "c:tranquilo",
+    "c:ya-no",
     "g:adjective-agreement",
     "g:cause-result",
     "g:direct-objects",
-    "g:estar-gerund",
-    "g:estar-location-states",
     "g:gender-articles",
     "g:hay-vs-esta",
     "g:imperfect-habitual",
@@ -165,48 +164,48 @@
     "l:ahora",
     "l:antes",
     "l:aquí",
-    "l:artículo",
     "l:ayer",
-    "l:año",
     "l:bonito",
-    "l:bueno",
     "l:buscar",
     "l:buñuelo",
     "l:café",
     "l:calle",
     "l:cantar",
     "l:carro",
-    "l:casa",
-    "l:comprar",
-    "l:contrato",
-    "l:cómo",
+    "l:clase",
     "l:dejar",
+    "l:después",
     "l:domingo",
     "l:encontrar",
-    "l:escribir",
-    "l:estar",
     "l:familia",
     "l:hacer",
+    "l:hacia",
     "l:irse",
-    "l:jugo",
+    "l:mejor",
     "l:niño",
-    "l:pagar",
+    "l:oír",
     "l:papá",
+    "l:pelota",
+    "l:pregunta",
     "l:quedarse",
     "l:qué",
+    "l:recreo",
     "l:ser",
     "l:siempre",
-    "l:tinto",
+    "l:tarea",
     "l:tranquilo",
     "l:venir",
     "p:aqui-ahi-alla",
+    "p:cuando-basic",
     "p:days-el-lunes",
     "p:dejar-de-inf",
-    "p:exclamations-basic",
     "p:frequency-scale",
     "p:ir-a-venir-de-place",
+    "p:otro-no-article",
+    "p:para-inf",
     "p:possessives-basic",
-    "p:question-word-order",
+    "p:prep-questions-basic",
+    "p:time-sequence-basic",
     "p:todos-los-dias"
   ]
 }
